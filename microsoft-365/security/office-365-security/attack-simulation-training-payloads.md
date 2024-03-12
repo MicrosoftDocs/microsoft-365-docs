@@ -14,7 +14,7 @@ ms.custom:
 description: Admins can learn how to create and manage payloads for Attack simulation training in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 search.appverid: met150
-ms.date: 6/14/2023
+ms.date: 3/11/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison" target="_blank">Microsoft Defender for Office 365 plan 2</a>
 ---
@@ -27,7 +27,7 @@ In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Offi
 
 For getting started information about Attack simulation training, see [Get started using Attack simulation training](attack-simulation-training-get-started.md).
 
-To see the available payloads, open the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Content library** tab \> and then select **Payloads**. To go directly to the **Content library** tab where you can select **Payloads**, use <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>.
+To see the available payloads, open the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Content library** tab \> and then select **Payloads**. Or, to go directly to the **Content library** tab where you can select **Payloads**, use <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>.
 
 **Payloads** in the **Content library** tab has three tabs:
 
@@ -39,12 +39,6 @@ The following information is shown for each payload on the **Global payloads** a
 
 - **Payload name**
 - **Type**: Currently, this value is always **Social engineering**.
-- **Language**: If the payload contains multiple translations, the first two languages are shown directly. To see the remaining languages, hover over the numeric icon (for example, **+10**).
-- **Source**: For built-in payloads, the value is **Global**. For custom payloads, the value is **Tenant**.
-- **Simulations launched**: The number of launched simulations that use the payload.
-- **Predicted compromised rate (%)**: Historical data across Microsoft 365 that predicts the percentage of people who will be compromised by this payload (users compromised / total number of users who receive the payload). For more information, see [Predicted compromise rate](attack-simulation-training-get-started.md#predicted-compromise-rate).
-- **Created by**: For built-in payloads, the value is **Microsoft**. For custom payloads, the value is the UPN of the user who created the payload.
-- **Last modified**
 - **Technique**: One of the available [social engineering techniques](attack-simulation-training-simulations.md#select-a-social-engineering-technique):
   - **Credential Harvest**
   - **Malware Attachment**
@@ -52,13 +46,19 @@ The following information is shown for each payload on the **Global payloads** a
   - **Link to Malware**
   - **Drive-by URL**
   - **OAuth Consent Grant**
+  - **How-to Guide**
+- **Language**: If the payload contains multiple translations, the first two languages are shown directly. To see the remaining languages, hover over the numeric icon (for example, **+10**).
+- **Simulations launched**: The number of launched simulations that use the payload.
+- **Predicted compromised rate (%)**: Historical data across Microsoft 365 that predicts the percentage of people who will be compromised by this payload (users compromised / total number of users who receive the payload). For more information, see [Predicted compromise rate](attack-simulation-training-get-started.md#predicted-compromise-rate).
+- **Created by**: For built-in payloads, the value is **Microsoft**. For custom payloads, the value is the UPN of the user who created the payload.
+- **Last modified**
 - **Status**: Values are:
   - **Ready**
   - **Draft**: Available only on the **Tenant payloads** tab.
   - **Archive**: Archived payloads are visible only when **Show archived payloads** is toggled on :::image type="icon" source="../../media/scc-toggle-on.png" border="false":::.
 - **⋮** (**Actions** control): Take action on the payload. The available actions depend on the **Status** value of the payload as described in the procedure sections. This control always appears at the end of the payload row.
 
-Select a column header to sort by that column. To add or remove columns, select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns**. By default, the only available column that's not selected is **Platform**.
+Select a column header to sort by that column. To add or remove columns, select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns**. By default, the only available columns that aren't selected are **Platform** and **Source**.
 
 <sup>\*</sup> To see all columns, you likely need to do one or more of the following steps:
 
@@ -71,17 +71,26 @@ To find a payload in the list, type part of the payload name in the :::image typ
 
 Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: to filter the payloads by one or of the following values:
 
+- **Technique**: One of the available [social engineering techniques](attack-simulation-training-simulations.md#select-a-social-engineering-technique):
+  - **Credential Harvest**
+  - **Malware Attachment**
+  - **Link in Attachment**
+  - **Link to Malware**
+  - **Drive-by URL**
+  - **OAuth Consent Grant**
+  - **How-to Guide**
+
 - **Complexity**: Calculated based on the number of indicators in the payload that indicate a possible attack (spelling errors, urgency, etc.). More indicators are easier to identify as an attack and indicate lower complexity. The available values are: **High**, **Medium**, and **Low**.
 
-- **Language**: The available values are: **English**, **Spanish**, **German**, **Japanese**, **French**, **Portuguese**, **Dutch**, **Italian**, **Swedish**, **Chinese (Simplified)**, **Norwegian Bokmål**, **Polish**, **Russian**, **Finnish**, **Korean**, **Turkish**, **Hungarian**, **Hebrew**, **Thai**, **Arabic**, **Vietnamese**, **Slovak**, **Greek**, **Indonesian**, **Romanian**, **Slovenian**, **Croatian**, **Catalan**, or **Other**.
+- **Language**: The available values are: **English**, **Spanish**, **German**, **Japanese**, **French**, **Portuguese**, **Dutch**, **Italian**, **Swedish**, **Chinese (Simplified)**, **Chinese (Traditional, Taiwan)**, **Norwegian Bokmål**, **Polish**, **Russian**, **Finnish**, **Korean**, **Turkish**, **Hungarian**, **Thai**, **Arabic**, **Vietnamese**, **Slovak**, **Greek**, **Indonesian**, **Romanian**, **Slovenian**, **Croatian**, **Catalan**, and **Other**.
 
 - **Add tag(s)**
 
-- **Filter by theme**: The available values are: **Account activation**, **Account verification**, **Billing**, **Clean up mail**, **Document received**, **Expense**, **Fax**, **Finance report**, **Incoming messages**, **Invoice**, **Items received**, **Login alert**, **Mail received**, **Password**, **Payment**, **Payroll**, **Personalized offer**, **Quarantine**, **Remote work**, **Review message**, **Security update**, **Service suspended**, **Signature required**, **Upgrade mailbox storage Verify mailbox**, **Voicemail**, and **Other**.
+- **Filter by theme**: The available values are: **Account Activation**, **Account Verification**, **Billing**, **Clean up Mail**, **Document Received**, **Expense**, **Fax**, **Finance Report**, **Incoming Messages**, **Invoice**, **Item Received**, **Login Alert**, **Mail Received**, **Password**, **Payment**, **Payroll**, **Personalized Offer**, **Quarantine**, **Remote Work**, **Review Message**, **Security Update**, **Service Suspended**, **Signature Required**, **Upgrade Mailbox Storage**, **Verify mailbox**, **Voicemail**, and **Other**.
 
 - **Filter by brand**: The available values are: **American Express**, **Capital One**, **DHL**, **DocuSign**, **Dropbox**, **Facebook**, **First American**, **Microsoft**, **Netflix**, **Scotiabank**, **SendGrid**, **Stewart Title**, **Tesco**, **Wells Fargo**, **Syrinx Cloud**, and **Other**.
 
-- **Filter by industry**: The available values are: **Banking**, **Business services**, **Consumer services**, **Education**, **Energy**, **Construction**, **Consulting**, **Financial services**, **Government**, **Hospitality**, **Insurance**, **Legal**, **Courier services**, **IT**, **Healthcare**, **Manufacturing**, **Retail**, **Telecom**, **Real estate**, and **Other**.
+- **Filter by industry**: The available values are: **Banking**, **Business Services**, **Consumer Services**, **Education**, **Energy**, **Construction**, **Consulting**, **Financial Services**, **Government**, **Hospitality**, **Insurance**, **Legal**, **Courier Services**, **IT**, **Healthcare**, **Manufacturing**, **Retail**, **Telecom**, **Real Estate**, and **Other**.
 
 - **Current event**: The available values are **Yes** or **No**.
 
@@ -97,6 +106,8 @@ When you select a payload by clicking anywhere in the row other than the check b
   - **From email**
   - **Email subject**
   - **Source**: For built-in payloads, the value is **Global**. For custom payloads, the value is **Tenant**.
+  - **Click rate**
+  - **Simulations launched**
   - **Theme**
   - **Brand**
   - **Industry**
@@ -129,7 +140,9 @@ To see payloads that have been archived (the **Status** value is **Archive**), u
    >
    > You can also create payloads during the creation of simulations. For more information, see [Create a simulation: Select a payload and login page](attack-simulation-training-simulations.md#select-a-payload-and-login-page).
 
-2. On the **Select type** page, the only value that you can currently select is **Email**.
+2. On the **Select type** page, select one of the following values:
+   - **Email**
+   - **Teams**: Currently, this value is available only in Private Preview. For more information, see [Microsoft Teams in Attack simulation training](attack-simulation-training-teams.md).
 
    When you're finished on the **Select type** page, select **Next**.
 
@@ -140,6 +153,7 @@ To see payloads that have been archived (the **Status** value is **Archive**), u
    - **Link to Malware**
    - **Drive-by URL**
    - **OAuth Consent Grant**
+   - **How-to Guide**
 
    For more information, see [Simulate a phishing attack with Attack simulation training in Defender for Office 365](attack-simulation-training-simulations.md).
 
@@ -165,7 +179,7 @@ To see payloads that have been archived (the **Status** value is **Archive**), u
      - **Name your attachment**: Enter a filename for the attachment.
      - **Select an attachment type**: Select a filetype for the attachment. Available values are **Docx** or **HTML**.
 
-   - **Link for attachment** section (**Link to Malware** technique only): In the **Select a URL you want to be your malware attachment link** box, select one of the available URLs (the same URLs that are described for the **Phishing link** section). You embed the URL in the body of the message in the **Email message** section.
+   - **Link for attachment** section (**Link to Malware** technique only): Select **Select URL**. In the **Select URL for phishing link** flyout that opens, select one or more of the available URLs (the same URLs are listed in the **Phishing link** section). You embed the URL in the body of the message in the **Email message** section.
 
    - **Phishing link** section (**Credential Harvest**, **Link in Attachment**, **Drive-by URL**, or **OAuth Consent Grant** techniques only):
      - For **Credential Harvest**, **Drive-by URL**, or **OAuth Consent Grant**, the name of the box is **Select a URL you want to be your phishing link**. You embed the URL in the body of the message in the **Email message** section.
@@ -173,30 +187,52 @@ To see payloads that have been archived (the **Status** value is **Archive**), u
 
      Select one of the available URL values:
 
-     - <https://www.mcsharepoint.com>
-     - <https://www.attemplate.com>
-     - <https://www.doctricant.com>
-     - <https://www.mesharepoint.com>
-     - <https://www.officence.com>
-     - <https://www.officenced.com>
-     - <https://www.officences.com>
-     - <https://www.officentry.com>
-     - <https://www.officested.com>
-     - <https://www.prizegives.com>
-     - <https://www.prizemons.com>
-     - <https://www.prizewel.com>
-     - <https://www.prizewings.com>
-     - <https://www.shareholds.com>
-     - <https://www.sharepointen.com>
-     - <https://www.sharepointin.com>
-     - <https://www.sharepointle.com>
-     - <https://www.sharesbyte.com>
-     - <https://www.sharession.com>
-     - <https://www.sharestion.com>
-     - <https://www.templateau.com>
-     - <https://www.templatent.com>
-     - <https://www.templatern.com>
-     - <https://www.windocyte.com>
+     |&nbsp;|&nbsp;|&nbsp;|
+     |---|---|---|
+     |<https://www.attemplate.com>|<https://www.exportants.it>|<https://www.resetts.it>|
+     |<https://www.bankmenia.com>|<https://www.exportants.org>|<https://www.resetts.org>|
+     |<https://www.bankmenia.de>|<https://www.financerta.com>|<https://www.salarytoolint.com>|
+     |<https://www.bankmenia.es>|<https://www.financerta.de>|<https://www.salarytoolint.net>|
+     |<https://www.bankmenia.fr>|<https://www.financerta.es>|<https://www.securembly.com>|
+     |<https://www.bankmenia.it>|<https://www.financerta.fr>|<https://www.securembly.de>|
+     |<https://www.bankmenia.org>|<https://www.financerta.it>|<https://www.securembly.es>|
+     |<https://www.banknown.de>|<https://www.financerta.org>|<https://www.securembly.fr>|
+     |<https://www.banknown.es>|<https://www.financerts.com>|<https://www.securembly.it>|
+     |<https://www.banknown.fr>|<https://www.financerts.de>|<https://www.securembly.org>|
+     |<https://www.banknown.it>|<https://www.financerts.es>|<https://www.securetta.de>|
+     |<https://www.banknown.org>|<https://www.financerts.fr>|<https://www.securetta.es>|
+     |<https://www.browsersch.com>|<https://www.financerts.it>|<https://www.securetta.fr>|
+     |<https://www.browsersch.de>|<https://www.financerts.org>|<https://www.securetta.it>|
+     |<https://www.browsersch.es>|<https://www.hardwarecheck.net>|<https://www.shareholds.com>|
+     |<https://www.browsersch.fr>|<https://www.hrsupportint.com>|<https://www.sharepointen.com>|
+     |<https://www.browsersch.it>|<https://www.mcsharepoint.com>|<https://www.sharepointin.com>|
+     |<https://www.browsersch.org>|<https://www.mesharepoint.com>|<https://www.sharepointle.com>|
+     |<https://www.docdeliveryapp.com>|<https://www.officence.com>|<https://www.sharesbyte.com>|
+     |<https://www.docdeliveryapp.net>|<https://www.officenced.com>|<https://www.sharession.com>|
+     |<https://www.docstoreinternal.com>|<https://www.officences.com>|<https://www.sharestion.com>|
+     |<https://www.docstoreinternal.net>|<https://www.officentry.com>|<https://www.supportin.de>|
+     |<https://www.doctorican.de>|<https://www.officested.com>|<https://www.supportin.es>|
+     |<https://www.doctorican.es>|<https://www.passwordle.de>|<https://www.supportin.fr>|
+     |<https://www.doctorican.fr>|<https://www.passwordle.fr>|<https://www.supportin.it>|
+     |<https://www.doctorican.it>|<https://www.passwordle.it>|<https://www.supportres.de>|
+     |<https://www.doctorican.org>|<https://www.passwordle.org>|<https://www.supportres.es>|
+     |<https://www.doctrical.com>|<https://www.payrolltooling.com>|<https://www.supportres.fr>|
+     |<https://www.doctrical.de>|<https://www.payrolltooling.net>|<https://www.supportres.it>|
+     |<https://www.doctrical.es>|<https://www.prizeably.com>|<https://www.supportres.org>|
+     |<https://www.doctrical.fr>|<https://www.prizeably.de>|<https://www.techidal.com>|
+     |<https://www.doctrical.it>|<https://www.prizeably.es>|<https://www.techidal.de>|
+     |<https://www.doctrical.org>|<https://www.prizeably.fr>|<https://www.techidal.fr>|
+     |<https://www.doctricant.com>|<https://www.prizeably.it>|<https://www.techidal.it>|
+     |<https://www.doctrings.com>|<https://www.prizeably.org>|<https://www.techniel.de>|
+     |<https://www.doctrings.de>|<https://www.prizegiveaway.net>|<https://www.techniel.es>|
+     |<https://www.doctrings.es>|<https://www.prizegives.com>|<https://www.techniel.fr>|
+     |<https://www.doctrings.fr>|<https://www.prizemons.com>|<https://www.techniel.it>|
+     |<https://www.doctrings.it>|<https://www.prizesforall.com>|<https://www.templateau.com>|
+     |<https://www.doctrings.org>|<https://www.prizewel.com>|<https://www.templatent.com>|
+     |<https://www.exportants.com>|<https://www.prizewings.com>|<https://www.templatern.com>|
+     |<https://www.exportants.de>|<https://www.resetts.de>|<https://www.windocyte.com>|
+     |<https://www.exportants.es>|<https://www.resetts.es>||
+     |<https://www.exportants.fr>|<https://www.resetts.fr>||
 
      > [!NOTE]
      > A URL reputation service might identify one or more of these URLs as unsafe. Check the availability of the URL in your supported web browsers before you use the URL in a simulation. For more information, see [Phishing simulation URLs blocked by Google Safe Browsing](attack-simulation-training-faq.md#phishing-simulation-urls-blocked-by-google-safe-browsing).
