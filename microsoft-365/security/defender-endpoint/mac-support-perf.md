@@ -80,31 +80,31 @@ The following steps can be used to troubleshoot and mitigate these issues:
    > [!TIP]
    > If you have [Tamper Protection in block mode](/microsoft-365/security/defender-endpoint/tamperprotection-macos), you need to use [Troubleshooting mode](/microsoft-365/security/defender-endpoint/mac-troubleshoot-mode) to capture real-time-protection-statistics.  Otherwise, you will get null results.
    
-      ```bash
-      mdatp config real-time-protection-statistics --value enabled
-      ```
+    ```bash
+    mdatp config real-time-protection-statistics --value enabled
+    ```
 
 This feature requires real-time protection to be enabled. To check the status of real-time protection, run the following command:
 
-      ```bash
-      mdatp health --field real_time_protection_enabled
-      ```
+    ```bash
+    mdatp health --field real_time_protection_enabled
+    ```
 
 Verify that the **real_time_protection_enabled** entry is true. Otherwise, run the following command to enable it:
 
-      ```bash
-      mdatp config real-time-protection --value enabled
-      ```
+    ```bash
+    mdatp config real-time-protection --value enabled
+    ```
 
-      ```output
-      Configuration property updated
-      ```
+    ```output
+    Configuration property updated
+    ```
 
   To collect current statistics, run:
 
-      ```bash
-      mdatp diagnostic real-time-protection-statistics --output json > real_time_protection.json
-      ```
+    ```bash
+    mdatp diagnostic real-time-protection-statistics --output json > real_time_protection.json
+    ```
 
   > [!NOTE]
   > Using **--output json** (note the double dash) ensures that the output format is ready for parsing.
