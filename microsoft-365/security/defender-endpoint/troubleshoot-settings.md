@@ -1,6 +1,6 @@
 ---
 title: Troubleshoot Microsoft Defender Antivirus settings
-description: Find out where settings for Microsoft Defender Antivirus are coming fromp
+description: Find out where settings for Microsoft Defender Antivirus are coming from.
 author: siosulli
 ms.author: siosulli
 manager: deniseb
@@ -20,13 +20,9 @@ audience: ITPro
 # Troubleshooting where the Microsoft Defender Antivirus setting is coming from?
 
 - [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
-
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-
 - [Microsoft Defender for Business](https://www.microsoft.com/security/business/endpoint-security/microsoft-defender-business)
-
 - [Microsoft Defender for Individuals](https://www.microsoft.com/microsoft-365/microsoft-defender-for-individuals)
-
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 - Microsoft Defender Antivirus
@@ -45,7 +41,7 @@ Microsoft Defender Antivirus provides numerous ways to manage the product, which
 
 - Group Policy (GPO)
 
-- Powershell
+- PowerShell
 
 - Windows Management Instrumentation (WMI)
 
@@ -54,7 +50,7 @@ Microsoft Defender Antivirus provides numerous ways to manage the product, which
 > [!TIP]
 > As a best practice, try sticking to one method of managing Microsoft Defender for Antivirus. 
 
-## Example: You are migrating from a third-party antivirus product and when you try enabling Microsoft Defender Antivirus, it won't start.
+## Example: You're migrating from a third-party antivirus product and when you try enabling Microsoft Defender Antivirus, it won't start.
 
 You can narrow down the issue with this registry key:
 
@@ -66,7 +62,7 @@ Our current recommendation is:
 
 Step 1) What setting wins?
 
-Group Policy (GPO) > Microsoft Configuration Manager Co-Management > Microsoft Configuration Manager (standalone) > Microsoft Intune (MDM) > Microsoft Configuration Manager with Tenant Attach > Powershell (Set-MpPreference) or MpCmdRun.exe or Windows Management Instrumentation (WMI).
+Group Policy (GPO) > Microsoft Configuration Manager Co-Management > Microsoft Configuration Manager (standalone) > Microsoft Intune (MDM) > Microsoft Configuration Manager with Tenant Attach > PowerShell (Set-MpPreference) or MpCmdRun.exe or Windows Management Instrumentation (WMI).
 
 > [!WARNING]
 > [MDMWinsOverGP](/windows/client-management/mdm/policy-csp-controlpolicyconflict) which is a Policy (CSP) does not apply for all settings such as Attack Surface Reduction rules (ASR rules) in Windows 10.
