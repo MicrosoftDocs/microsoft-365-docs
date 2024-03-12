@@ -687,9 +687,6 @@
           href: azure-ad-identity-protection-microsoft-365-test-environment.md
         - name: Identity and device access
           href: identity-device-access-m365-test-environment.md
-          items: 
-            - name: Cloud-only
-              href: cloud-only-prereqs-m365-test-environment.md
 
 - name: Contoso case study
   href: contoso-case-study.md
