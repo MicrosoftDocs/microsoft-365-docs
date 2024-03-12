@@ -661,8 +661,6 @@
   items: 
     - name: Base configuration
       items: 
-        - name: Lightweight
-          href: lightweight-base-configuration-microsoft-365-enterprise.md
         - name: Simulated enterprise
           href: simulated-ent-base-configuration-microsoft-365-enterprise.md
     - name: Identity
