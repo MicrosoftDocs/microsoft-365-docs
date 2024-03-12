@@ -24,11 +24,8 @@ ms.date: 03/03/2024
 
 **Applies to:**
 - [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
-
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-
 - [Microsoft Defender for Business](https://www.microsoft.com/security/business/endpoint-security/microsoft-defender-business?branch=main)
-
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > [!TIP]
@@ -54,9 +51,9 @@ Network protection works on devices with the following conditions:
 > > - Endpoints are running Windows 10 Pro or Enterprise edition, version 1709 or higher.
 > - Endpoints are using Microsoft Defender Antivirus as the sole antivirus protection app. [See what happens when you're using a non-Microsoft antivirus solution](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
 > - [Real-time protection](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) is enabled.
-> - [Behavior Monitoring is enabled](/microsoft-365/security/defender-endpoint/behavior-monitor).
+> - [Behavior Monitoring](/microsoft-365/security/defender-endpoint/behavior-monitor) is enabled.
 > - [Cloud-delivered protection](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) is enabled.
-> - [Cloud Protection network connectivity is functional](/microsoft-365/security/defender-endpoint/configure-network-connections-microsoft-defender-antivirus)
+> - [Cloud Protection network connectivity](/microsoft-365/security/defender-endpoint/configure-network-connections-microsoft-defender-antivirus) is functional.
 > - Audit mode isn't enabled. Use [Group Policy](enable-network-protection.md#group-policy) to set the rule to **Disabled** (value: **0**).
 
 ## Use audit mode
