@@ -14,7 +14,7 @@ ms.custom:
 description: Admins can learn how to simulate phishing attacks and train their users on phishing prevention using Attack simulation training in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 search.appverid: met150
-ms.date: 6/14/2023
+ms.date: 3/8/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison" target="_blank">Microsoft Defender for Office 365 plan 2</a>
 ---
@@ -732,6 +732,27 @@ All actions on existing simulations start on the **Simulations** tab. To get the
 > - Narrow the width of appropriate columns.
 > - Remove columns from the view.
 > - Zoom out in your web browser.
+
+### Copy simulations
+
+You can copy an existing simulation and modify it to suit your needs. This will save you time and effort when creating new simulations based on previous ones.
+
+You can copy any simulation that you created and that's available in the **Simulations** tab, regardless of the **Status** value. You can then modify the copy. For example, change the simulation name, description, technique, payload, target users, etc.
+
+- We don't recommend copying **Failed** simulations, because the reasons for failure could recur in the duplicated simulation.
+- When you copy a simulation, the most recent version of the content in the original simulation is used in the new copy. For example, the payload, landing page, and end-user notifications. If any content is deleted, you're prompted to select the respective content again.
+- The latest target and excluded users at the time of simulation launch will be used when groups are added from the search bar - **Search for users or groups**. The target and excluded users will remain unchanged in the following scenarios:
+  - when the user list was imported as a CSV.
+  - when users were added from the search bar.
+  - When users were added for different categories: All users, Suggested user groups, User tags, City, Country, Department, Title.
+- If the scheduled simulation launch time in the original simulation is in the future, it's copied as is. For launch times in the past, the value **Launch this simulation as soon as I'm done** is selected.
+
+To copy a simulation, follow these steps:
+
+1. Select the **Simulations** tab and find the simulation that you want to copy.
+2. Select the checkbox next to the simulation name, and then select :::image type="icon" source="../../media/m365-cc-sc-copy-icon.png" border="false"::: **Copy simulation**.
+3. The simulation configuration wizard opens with all the original settings and a simulation name containing the suffix **_Copy**.
+4. Review and modify the simulation configuration as needed. Select **Submit** to launch it or **Save and close** to review it later. If you select **Cancel**, the copied simulation isn't saved.
 
 ### Cancel simulations
 
