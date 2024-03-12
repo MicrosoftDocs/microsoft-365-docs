@@ -37,8 +37,8 @@ This article is updated frequently to let you know what's new in the latest rele
 
 ## March-2024 Build: 101.24012.0001 | Release version: 30.124012.0001.0
 
-&ensp;Released: **March 11,2024**<br/>
-&ensp;Published: **March 11,2024**<br/>
+&ensp;Released: **March 12,2024**<br/>
+&ensp;Published: **March 12,2024**<br/>
 &ensp;Build: **101.24012.0001**<br/>
 &ensp;Release version: **30.124012.0001.0**<br/>
 &ensp;Engine version: **1.1.23110.4**<br/>
