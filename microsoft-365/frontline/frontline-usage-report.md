@@ -28,19 +28,19 @@ You can track usage for all your frontline locations deployed through the [deplo
 
 From the usage dashboard, you can:
 
-- Run and view the [frontline usage report](#the-frontline-usage-report). The table shows usage data for active users on Microsoft Teams for each of your frontline locations. You can filter the table to the date range for which you want to see usage data, and then export this data to a CSV file for analysis.
+- Run and view the [frontline usage report](#the-frontline-usage-report). The report shows usage data for active users on Microsoft Teams for each of your frontline locations. You can filter the table to the date range for which you want to see usage data, and then export this data to a CSV file for analysis.
 - See the progress of your overall frontline deployment on the [Deployment task progress](#deployment-task-progress-card) card.
 
 ## Access the usage dashboard
 
 In the Teams admin center, choose **Frontline deployment** > **Manage frontline teams**. From here, there are two ways to get to the usage dashboard.
 
-- Directly, on the **Usage** tab.
+- Directly, by going to the **Usage** tab.
 - Through the **App usage - Microsoft Teams** card. This card shows the overall percentage of users across all your frontline teams that have been active on Teams in the last 30 days. Choose **View details** to go to the dashboard.
 
     :::image type="content" source="media/flw-usage-report-app-usage-card.png" alt-text="Screenshot of the App usage - Microsoft Teams card on the Manage frontline teams page of the Teams admin center." lightbox="media/flw-usage-report-app-usage-card.png":::
 
-To view usage reports in the dashboard, make sure the **Display concealed user, group, and site names in all reports** setting is turned on in the Microsoft 365 admin center. Otherwise, you'll see a “User details have been hidden by your Microsoft 365 Reports privacy setting” message.
+To view usage reports in the dashboard, make sure the **Display concealed user, group, and site names in all reports** setting is turned on in the Microsoft 365 admin center. Otherwise, you'll see a "User details have been hidden by your Microsoft 365 Reports privacy setting" message.
 
 You must be a Global admin to turn on this setting.
 
@@ -95,14 +95,14 @@ You can:
 
 ## Deployment task progress card
 
-The **Deployment task progress** card on the usage dashboard shows you which of the following tasks are completed, in progress, and not started for your overall frontline deployment.
+The **Deployment task progress** card on the usage dashboard shows you which of the following tasks for your overall frontline deployment are completed, in progress, and not started.
 
 - Map frontline attributes
 - Deploy frontline teams
 - Set up operational hierarchy
 - Deploy Shifts
 
-For your completed tasks, you can select **Review** to manage setup. For tasks that aren't started, you can choose **Start** to begin the task. The progress indicator shows the percentage of the total tasks that are completed.
+For your completed tasks, you can select **Review** to manage setup. For tasks that aren't started, you can choose **Start** to begin the task. The progress indicator shows the percentage of total tasks that are completed.
 
 ## Related articles
 
