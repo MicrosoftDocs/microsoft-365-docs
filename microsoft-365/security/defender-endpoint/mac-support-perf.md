@@ -73,38 +73,38 @@ The following steps can be used to troubleshoot and mitigate these issues:
 
 1. To find the applications that are triggering the most scans, you can use real-time statistics gathered by Defender for Endpoint on Mac.
 
-         > [!NOTE]
-      > This feature is available in version 100.90.70 or newer.
-         This feature is enabled by default on the **Dogfood** and **InsiderFast** channels. If you're using a different update channel, this feature can be enabled from the command line:
+   > [!NOTE]
+   > This feature is available in version 100.90.70 or newer.
+   > This feature is enabled by default on the **Dogfood** and **InsiderFast** channels. If you're using a different update channel, this feature can be enabled from the command line:
 
    > [!TIP]
-   > If you have [Tamper Protection in block mode](/microsoft-365/security/defender-endpoint/tamperprotection-macos), you need to use [Troubleshooting mode](/microsoft-365/security/defender-endpoint/mac-troubleshoot-mode) in order to capture real-time-protection-statistics.  Otherwise, you will get null results.
-         ```bash
+   > If you have [Tamper Protection in block mode](/microsoft-365/security/defender-endpoint/tamperprotection-macos), you need to use [Troubleshooting mode](/microsoft-365/security/defender-endpoint/mac-troubleshoot-mode) to capture real-time-protection-statistics.  Otherwise, you will get null results.
+   
+      ```bash
       mdatp config real-time-protection-statistics --value enabled
       ```
 
-         This feature requires real-time protection to be enabled. To check the status of real-time protection, run the following command:
+This feature requires real-time protection to be enabled. To check the status of real-time protection, run the following command:
 
-         ```bash
+      ```bash
       mdatp health --field real_time_protection_enabled
       ```
 
-```
 Verify that the **real_time_protection_enabled** entry is true. Otherwise, run the following command to enable it:
 
-  ```bash
-  mdatp config real-time-protection --value enabled
-  ```
+      ```bash
+      mdatp config real-time-protection --value enabled
+      ```
 
-  ```output
-  Configuration property updated
-  ```
+      ```output
+      Configuration property updated
+      ```
 
   To collect current statistics, run:
 
-  ```bash
-  mdatp diagnostic real-time-protection-statistics --output json > real_time_protection.json
-  ```
+      ```bash
+      mdatp diagnostic real-time-protection-statistics --output json > real_time_protection.json
+      ```
 
   > [!NOTE]
   > Using **--output json** (note the double dash) ensures that the output format is ready for parsing.
