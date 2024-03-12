@@ -698,8 +698,6 @@
       items: 
         - name: Enroll iOS and Android devices
           href: enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md
-        - name: Device compliance policies
-          href: mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md
 
 - name: Contoso case study
   href: contoso-case-study.md
