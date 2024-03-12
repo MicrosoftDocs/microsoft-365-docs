@@ -1189,6 +1189,11 @@
       "source_path": "microsoft-365/enterprise/pass-through-auth-m365-ent-test-environment.md",
       "redirect_url": "/microsoft-365/enterprise/index.yml",
       "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/password-hash-sync-m365-ent-test-environment.md",
+      "redirect_url": "/microsoft-365/enterprise/index.yml",
+      "redirect_document_id": false
    }
   ]
 }
