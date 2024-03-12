@@ -98,7 +98,7 @@ You might experience slow network connections to Domain Controllers and/or Excha
 
 To attempt to solve these issues, change Network Protection from ‘block mode’ to either ‘[audit mode](troubleshoot-np.md)’ or ‘disabled’. If this resolves your network issues, follow the next steps to find out which component in Network Protection is contributing to the behavior. 
 
-Disable the following in order and after disabling each:
+Disable the following in order and test after disabling each:
 
    1. [Disable Datagram Processing on Windows Server](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps&preserve-view=true)
    1. [Disable Network Protection Perf Telemetry](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps&preserve-view=true)
