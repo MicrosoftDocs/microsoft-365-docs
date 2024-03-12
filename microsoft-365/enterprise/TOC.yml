@@ -675,8 +675,6 @@
           href: single-sign-on-m365-ent-test-environment.md
         - name: Multifactor authentication
           href: multi-factor-authentication-microsoft-365-test-environment.md
-        - name: Protect global administrator accounts
-          href: protect-global-administrator-accounts-microsoft-365-test-environment.md
 
 - name: Contoso case study
   href: contoso-case-study.md
