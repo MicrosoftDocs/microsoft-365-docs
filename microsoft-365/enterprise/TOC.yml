@@ -656,9 +656,6 @@
 - name: Windows and Office 365 deployment lab kit
   href: modern-desktop-deployment-and-management-lab.md
 
-- name: Test Lab Guides
-  href: m365-enterprise-test-lab-guides.md
-
 - name: Contoso case study
   href: contoso-case-study.md
   items: 
