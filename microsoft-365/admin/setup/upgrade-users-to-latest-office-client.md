@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 11/21/2023
+ms.date: 03/04/2024
 audience: Admin
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
@@ -24,7 +24,6 @@ ms.custom:
 - seo-marvel-may2020
 - fwlink 824861; CampaignID O365_Comm_SR_UpgradeOffice
 - AdminSurgePortfolio
-ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: Learn about how to upgrade Microsoft Office to the latest Microsoft 365 apps for users in your organization.
 ms.topic: article
 ---
@@ -103,7 +102,7 @@ We recommend if you have third-party add-ins, contact the manufacturer to see if
 
  **Office through a volume license** If you no longer have access to the source files of these volume license versions, you won't be able to reinstall it.
 
- **Office pre-installed on your computer** If you no longer have a disc or product key, you won't be able to reinstall it.
+ **Office pre-installed on your computer** If you no longer have a disk or product key, you won't be able to reinstall it.
 
  **Non-supported subscriptions** If your copy was obtained through discontinued subscriptions, such as Office 365 Small Business Premium or Office 365 Mid-size Business, you won't be able to install an older version unless you have the product key that came with your subscription.
 

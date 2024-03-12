@@ -114,11 +114,6 @@ The capabilities on the following pages are fully integrated into Microsoft Defe
 - [Settings > App Governance](/defender-cloud-apps/app-governance-get-started)
 - [Settings > Microsoft Defender for Identity](/defender-for-identity/deploy-defender-identity)
 
-## Limitations
-
-- The new Defender for Cloud Apps experience in the Microsoft Defender portal is currently available for all users detailed in [Manage admin access](/defender-cloud-apps/manage-admins), except for:
-  - **App/Instance admin**, **User group admin**, **Cloud Discovery global admin**, and **Cloud Discovery report admin**, as defined in [Built-in admin roles in Defender for Cloud Apps](/defender-cloud-apps/manage-admins#built-in-admin-roles-in-defender-for-cloud-apps).
-
 ## What's changed
 
 Learn about the changes that have come with the integration of Defender for Cloud Apps and Microsoft Defender XDR.

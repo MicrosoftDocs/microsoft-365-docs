@@ -18,6 +18,8 @@ f1.keywords: NOCSH
 
 # Test Base FAQ
 
+[!INCLUDE [test-base-deprecation](./includes/test-base-deprecation.md)]
+
 **Q: How do we submit our packages to the Test Base team?**
 
 **A:** Submit your packages directly to the Test Base environment using our self-serve portal.
