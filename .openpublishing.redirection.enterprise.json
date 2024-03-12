@@ -1159,6 +1159,11 @@
       "source_path": "microsoft-365/enterprise/password-reset-m365-ent-test-environment.md",
       "redirect_url": "/microsoft-365/enterprise/index.yml",
       "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/password-writeback-m365-ent-test-environment.md",
+      "redirect_url": "/microsoft-365/enterprise/index.yml",
+      "redirect_document_id": false
    }
   ]
 }
