@@ -94,42 +94,22 @@ The current exclusion options are:
 
 ## Network Performance issues
 
-You might experience slow network connections to Domain Controllers and/or Exchange servers.  You might also notice Event ID 5783 NETLOGON errors.
+You might experience slow network connections to Domain Controllers and/or Exchange servers. You might also notice Event ID 5783 NETLOGON errors.
 
-Solution: Change Network Protection from ‘block mode’ to either ‘[audit mode](/microsoft-365/security/defender-endpoint/troubleshoot-np?view=o365-worldwide)’ or ‘disabled’
+To attempt to solve these issues, change Network Protection from ‘block mode’ to either ‘[audit mode](/microsoft-365/security/defender-endpoint/troubleshoot-np?view=o365-worldwide)’ or ‘disabled’. If this resolves your network issues, follow the next steps to find out which component in Network Protection is contributing to the behavior. 
 
-If the problem does not go away, more than likely it’s something else.
-
- 
-
-If the problem goes away, follow the next steps:
-
- 
-
-   Find what component in Network Protection is contributing to the behavior.  Disable the following in order and test after disabling each:
-
- 
+Disable the following in order and after disabling each:
 
    1. [Disable Datagram Processing on Windows Server](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps)
-
    1. [Disable Network Protection Perf Telemetry](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps)
-
    1. [Disable FTP parsing](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps)
-
    1. [Disable SSH parsing](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps)
-
    1. [Disable RDP parsing](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps)
-
    1. [Disable HTTP parsing](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps)
-
    1. [Disable SMTP parsing](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps)
-
    1. [Disable DNS over TCP parsing](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps)
-
    1. [Disable DNS parsing ](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps) 
-
    1. [Disable inbound connection filtering](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps)
-
    1. [Disable TLS parsing](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps)
 
 ## Collect diagnostic data for file submissions
