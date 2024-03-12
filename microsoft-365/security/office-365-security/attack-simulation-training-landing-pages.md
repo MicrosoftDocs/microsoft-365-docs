@@ -76,6 +76,9 @@ When you select a landing page from the list by clicking anywhere in the row oth
 
 In custom landing pages only, an **Edit landing page** link is available at the bottom of both tabs.
 
+> [!TIP]
+> To see details about other landing pages without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
+
 ## Create landing pages
 
 1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Content library** tab \> and then select **Phish landing pages**. To go directly to the **Content library** tab where you can select **Phish landing pages**, use <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>.
