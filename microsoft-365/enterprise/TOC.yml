@@ -679,8 +679,6 @@
           href: protect-global-administrator-accounts-microsoft-365-test-environment.md
         - name: Password writeback
           href: password-writeback-m365-ent-test-environment.md
-        - name: Password reset
-          href: password-reset-m365-ent-test-environment.md
 
 - name: Contoso case study
   href: contoso-case-study.md
