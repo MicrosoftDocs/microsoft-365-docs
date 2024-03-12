@@ -82,3 +82,6 @@ When you select a Training module from the list by clicking anywhere in the row 
   - **Type**
   - **Status**
   - **End by**
+
+> [!TIP]
+> To see details about other training modules without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
