@@ -80,6 +80,9 @@ For more information on how to take action on a device, see [Take response actio
 
 For more information, see [Investigate user entities](investigate-user.md).
 
+> [!NOTE]
+> View in map and set criticality are features from Microsoft Exposure Management, which is currently in public preview.
+
 ## Tabs
 
 The tabs provide relevant security and threat prevention information related to the device. In each tab, you can customize the columns that are shown by selecting **Customize columns** from the bar above the column headers.
