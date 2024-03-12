@@ -673,8 +673,6 @@
           href: federated-identity-for-your-microsoft-365-dev-test-environment.md
         - name: Microsoft Entra seamless single sign-on
           href: single-sign-on-m365-ent-test-environment.md
-        - name: Multifactor authentication
-          href: multi-factor-authentication-microsoft-365-test-environment.md
 
 - name: Contoso case study
   href: contoso-case-study.md
