@@ -1179,6 +1179,11 @@
       "source_path": "microsoft-365/enterprise/single-sign-on-m365-ent-test-environment.md",
       "redirect_url": "/microsoft-365/enterprise/index.yml",
       "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/federated-identity-for-your-microsoft-365-dev-test-environment.md",
+      "redirect_url": "/microsoft-365/enterprise/index.yml",
+      "redirect_document_id": false
    }
   ]
 }
