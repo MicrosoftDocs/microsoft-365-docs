@@ -1204,6 +1204,11 @@
       "source_path": "microsoft-365/enterprise/m365-enterprise-test-lab-guides.md",
       "redirect_url": "/microsoft-365/enterprise/index.yml",
       "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/cloud-adoption-test-lab-guides-tlgs.md",
+      "redirect_url": "/microsoft-365/enterprise/index.yml",
+      "redirect_document_id": false
    }
   ]
 }
