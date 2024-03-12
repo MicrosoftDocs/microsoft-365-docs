@@ -17,6 +17,8 @@ f1.keywords: NOCSH
 ---
 # Windows Feature update validation
 
+[!INCLUDE [test-base-deprecation](./includes/test-base-deprecation.md)]
+
 Do you need insights on how your applications will perform with the latest Windows features - prior to it being available in the market and without you maintaining an environment?
 
 Do you want to run your validation tests against Windows Insider Program builds in our Azure environment?

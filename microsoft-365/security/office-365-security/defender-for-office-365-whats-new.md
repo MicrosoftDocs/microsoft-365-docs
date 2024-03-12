@@ -38,6 +38,10 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
 - [What's new in Microsoft Defender for Cloud Apps](/cloud-app-security/release-notes)
 
+## February 2024
+
+- **Hunting and responding to QR code-based attacks**: Security teams will now be able to see the URLs extracted from QR codes with "QR code" as URL source in Email Entity URL tab, and "QRCode" in "UrlLocation" column of EmailUrlInfo table in Advanced Hunting. Users can also filter for emails having URLs embedded within QR codes using "URL Source" filter in Threat Explorer which now supports "QR code" option.
+
 ## January 2024
 
 - **New training modules available in Attack Simulation Training**: Teach your users to recognize and protect themselves against QR code phishing attacks. For more information, see [this blog post](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/train-your-users-to-be-more-resilient-against-qr-code-phishing/ba-p/4022667).
