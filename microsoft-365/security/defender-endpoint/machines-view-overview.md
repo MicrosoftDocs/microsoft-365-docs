@@ -74,6 +74,9 @@ The device inventory opens on the **Computers and Mobile** tab. You can see at a
 
 The **Classify critical assets** card allows you to define device groups as business critical. You might also see the **Attack path warning** card, which takes you to Attack paths to examine if any of your assets are part of an attack path. For more information, see [Overview of attack paths](/security-exposure-management/work-attack-paths-overview).
 
+> [!NOTE]
+> Classify critical assets and attack path information is part of Microsoft Security Exposure Management, which is currently in public preview.
+
 Use the **Onboarding Status** column to sort and filter by discovered devices, and devices that are already onboarded to Microsoft Defender for Endpoint.
 
 :::image type="content" alt-text="Image of devices list with list of devices." source="images/device-inventory.png" lightbox="images/device-inventory.png":::
