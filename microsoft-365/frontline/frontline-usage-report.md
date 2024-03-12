@@ -29,16 +29,18 @@ You can track usage for all your frontline locations deployed through the [deplo
 From the usage dashboard, you can:
 
 - Run and view the [frontline usage report](#the-frontline-usage-report). The report shows usage data for active users on Microsoft Teams for each of your frontline locations. You can filter the table to the date range for which you want to see usage data, and then export this data to a CSV file for analysis.
-- See the progress of your overall frontline deployment on the [Deployment task progress](#deployment-task-progress-card) card.
+- See the progress of overall frontline deployment tasks on the [Deployment task progress](#deployment-task-progress-card) card.
 
 ## Access the usage dashboard
 
 In the Teams admin center, choose **Frontline deployment** > **Manage frontline teams**. From here, there are two ways to get to the usage dashboard.
 
 - Directly, by going to the **Usage** tab.
+
+    :::image type="content" source="media/flw-usage-report-usage-tab.png" alt-text="Screenshot of the Usage tab on the Manage frontline teams page." lightbox="media/flw-usage-report-usage-tab.png":::
 - Through the **App usage - Microsoft Teams** card. This card shows the overall percentage of users across all your frontline teams that have been active on Teams in the last 30 days. Choose **View details** to go to the dashboard.
 
-    :::image type="content" source="media/flw-usage-report-app-usage-card.png" alt-text="Screenshot of the App usage - Microsoft Teams card on the Manage frontline teams page of the Teams admin center." lightbox="media/flw-usage-report-app-usage-card.png":::
+    :::image type="content" source="media/flw-usage-report-app-usage-card.png" alt-text="Screenshot of the App usage - Microsoft Teams card on the Manage frontline teams page." lightbox="media/flw-usage-report-app-usage-card.png":::
 
 To view usage reports in the dashboard, make sure the **Display concealed user, group, and site names in all reports** setting is turned on in the Microsoft 365 admin center. Otherwise, you'll see a "User details have been hidden by your Microsoft 365 Reports privacy setting" message.
 
@@ -55,7 +57,7 @@ To access the report, you must be a Global admin, Teams admin, Global reader, or
 
 1. On the **Usage** tab, under **Teams**, select which teams you want in your usage report. Currently, the only option is **All frontline teams**, which represents all teams deployed through the [deploy frontline dynamic teams](deploy-dynamic-teams-at-scale.md) experience in the Teams admin center. We’ll be adding more options in the future.  
 
-    :::image type="content" source="media/flw-usage-report-generate.png" alt-text="Screenshot of Teams and Date range settings for generating the report. ":::
+    :::image type="content" source="media/flw-usage-report-generate.png" alt-text="Screenshot of Teams and Date range settings for generating the report." lightbox="media/flw-usage-report-generate.png":::
 1. Under **Date range**, select the date range for which you want to see data. You can choose from the last 7 days, 30 days, 90 days, or 180 days. Then, choose **Run report**.
 
     > [!IMPORTANT]
@@ -102,7 +104,13 @@ The **Deployment task progress** card on the usage dashboard shows you which of 
 - Set up operational hierarchy
 - Deploy Shifts
 
+:::image type="content" source="media/flw-usage-report-task.png" alt-text="Screenshot of the Deployment task progress card.":::
+
 For your completed tasks, you can select **Review** to manage setup. For tasks that aren't started, you can choose **Start** to begin the task. The progress indicator shows the percentage of total tasks that are completed.
+
+## Troubleshoot errors
+
+If an error occurs when retrieving data, select **Try Again** on the data table or refresh the page.
 
 ## Related articles
 
