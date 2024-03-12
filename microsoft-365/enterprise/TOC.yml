@@ -667,8 +667,6 @@
       items: 
         - name: Password hash synchronization
           href: password-hash-sync-m365-ent-test-environment.md
-        - name: Pass-through authentication
-          href: pass-through-auth-m365-ent-test-environment.md
 
 - name: Contoso case study
   href: contoso-case-study.md
