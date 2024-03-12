@@ -96,7 +96,7 @@ The current exclusion options are:
 
 You might experience slow network connections to Domain Controllers and/or Exchange servers. You might also notice Event ID 5783 NETLOGON errors.
 
-To attempt to solve these issues, change Network Protection from ‘block mode’ to either ‘[audit mode](/microsoft-365/security/defender-endpoint/troubleshoot-np?view=o365-worldwide)’ or ‘disabled’. If this resolves your network issues, follow the next steps to find out which component in Network Protection is contributing to the behavior. 
+To attempt to solve these issues, change Network Protection from ‘block mode’ to either ‘[audit mode](troubleshoot-np.md)’ or ‘disabled’. If this resolves your network issues, follow the next steps to find out which component in Network Protection is contributing to the behavior. 
 
 Disable the following in order and after disabling each:
 
