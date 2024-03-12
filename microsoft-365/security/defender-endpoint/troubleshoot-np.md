@@ -94,7 +94,7 @@ The current exclusion options are:
 
 ## Network Performance issues
 
-You might experience slow network connections to Domain Controllers and/or Exchange servers. You might also notice Event ID 5783 NETLOGON errors.
+In certain circumstances, a network proctection component might contribute to slow network connections to Domain Controllers and/or Exchange servers. You might also notice Event ID 5783 NETLOGON errors.
 
 To attempt to solve these issues, change Network Protection from ‘block mode’ to either ‘[audit mode](troubleshoot-np.md)’ or ‘disabled’. If this resolves your network issues, follow the next steps to find out which component in Network Protection is contributing to the behavior. 
 
@@ -111,6 +111,8 @@ Disable the following in order and test after disabling each:
    1. [Disable DNS parsing ](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps&preserve-view=true) 
    1. [Disable inbound connection filtering](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps&preserve-view=true)
    1. [Disable TLS parsing](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps&preserve-view=true)
+
+If your network performance issues persist after following the troubleshooting steps above, then they are probably not related to network protection and you should look for other causes of your network performance issues.
 
 ## Collect diagnostic data for file submissions
 
