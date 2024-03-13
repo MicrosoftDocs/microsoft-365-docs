@@ -78,7 +78,7 @@ The rest of this article describes the DKIM CNAME records that you need to creat
 > [!TIP]
 > Configuring DKIM signing using a custom domain is a mixture of procedures in Microsoft 365 and procedures at the domain registrar of the custom domain.
 >
-> We provide instructions to create CNAME records for different Microsoft 365 services at many domain registrars. You can use these instructions as a starting point to create the create the DKIM CNAME records. For more information, see [Add DNS records to connect your domain](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+> We provide instructions to create CNAME records for different Microsoft 365 services at many domain registrars. You can use these instructions as a starting point to create the create the DKIM CNAME records. For more information, see [Add DNS records to connect your domain](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
 >
 > If you're unfamiliar with DNS configuration, contact your domain registrar and ask for help.
 
@@ -195,7 +195,7 @@ Proceed if the domain satisfies these requirements.
 
 6. In another browser tab or window, go to the domain registrar for the domain, and then create the two CNAME records using the information from the previous step.
 
-   We provide instructions to create CNAME records for different Microsoft 365 services at many domain registrars.  You can use these instructions as a starting point to create the DKIM CNAME records. For more information, see [Add DNS records to connect your domain](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+   We provide instructions to create CNAME records for different Microsoft 365 services at many domain registrars.  You can use these instructions as a starting point to create the DKIM CNAME records. For more information, see [Add DNS records to connect your domain](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
 
    It takes a few minutes (or possibly longer) for Microsoft 365 to detect the new CNAME records that you created.
 
@@ -336,7 +336,7 @@ If you'd rather use PowerShell to enable DKIM signing of outbound messages using
 
    - **Custom domain**: At the domain registrar for the domain, create the two CNAME records using the information from the previous step.
 
-     We provide instructions to create CNAME records for different Microsoft 365 services at many domain registrars. You can use these instructions as a starting point to create the DKIM CNAME records. For more information, see [Add DNS records to connect your domain](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+     We provide instructions to create CNAME records for different Microsoft 365 services at many domain registrars. You can use these instructions as a starting point to create the DKIM CNAME records. For more information, see [Add DNS records to connect your domain](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
 
      It takes a few minutes (or possibly longer) for Microsoft 365 to detect the new CNAME records that you created.
 
@@ -624,4 +624,4 @@ As described in [How SPF, DKIM, and DMARC work together to authenticate email me
 - [Set up SPF to help prevent spoofing](email-authentication-spf-configure.md)
 - [Use DMARC to validate email](email-authentication-dmarc-configure.md)
 
-For mail coming _into_ Microsoft 365, you might also need to configure trusted ARC sealers if you use services that modify messages in transit before delivery to your organization. For more information, see [Configure trusted ARC sealers](/microsoft-365/security/office-365-security/email-authentication-arc-configure).
+For mail coming _into_ Microsoft 365, you might also need to configure trusted ARC sealers if you use services that modify messages in transit before delivery to your organization. For more information, see [Configure trusted ARC sealers](email-authentication-arc-configure.md).

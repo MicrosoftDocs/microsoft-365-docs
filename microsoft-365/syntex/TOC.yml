@@ -330,9 +330,6 @@
                - name: Step 3. Use Power Automate
                  href: solution-manage-contracts-step3.md
 
-    - name: Video library 
-      href: video-library.md
-
     - name: Syntex PowerShell
       items: 
         - name: Overview
