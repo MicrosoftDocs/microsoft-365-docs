@@ -1289,6 +1289,11 @@
       "source_path": "microsoft-365/enterprise/plan-upgrade-previous-versions-office.md",
       "redirect_url": "/microsoft-365/enterprise/index.yml",
       "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md",
+      "redirect_url": "/microsoft-365/enterprise/index.yml",
+      "redirect_document_id": false
    }
   ]
 }

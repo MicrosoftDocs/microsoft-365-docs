@@ -403,8 +403,6 @@
   items: 
     - name: Roadmap
       href: client-server-software-roadmap-microsoft-365.md
-    - name: Architectural models for SharePoint, Exchange, Skype for Business, and Lync
-      href: architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md
 
 - name: Compliance
   href: ../compliance/index.yml
