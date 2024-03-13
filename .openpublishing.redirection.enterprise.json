@@ -1219,6 +1219,11 @@
       "source_path": "microsoft-365/enterprise/project-server-2007-end-of-support.md",
       "redirect_url": "/microsoft-365/enterprise/index.yml",
       "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/pps-2007-end-of-support.md",
+      "redirect_url": "/microsoft-365/enterprise/index.yml",
+      "redirect_document_id": false
    }
   ]
 }
