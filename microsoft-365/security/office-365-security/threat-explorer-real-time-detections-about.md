@@ -7,7 +7,7 @@ author: chrisda
 manager: deniseb
 audience: ITPro
 ms.topic: conceptual
-ms.date: 3/12/2024
+ms.date: 3/13/2024
 ms.localizationpriority: medium
 ms.collection:
   - m365-security
@@ -489,7 +489,7 @@ Hovering over a data point in the chart shows the count for each URL domain.
 
 The **Click verdict** pivot shows the different verdicts for clicked URLs in email messages for the specified date/time range and property filters.
 
-:::image type="content" source="../../media/te-rtd-all-email-view-details-area-url-clicks-tab-click-verdict-pivot.png" alt-text="The details area of the All email view in Threat Explorer with the URL clicks tab and the URL domain pivot selected." lightbox="../../media/te-rtd-all-email-view-details-area-url-clicks-tab-click-verdict-pivot.png":::
+:::image type="content" source="../../media/te-rtd-all-email-view-details-area-url-clicks-tab-click-verdict-pivot.png" alt-text="The details area of the All email view in Threat Explorer with the URL clicks tab and the Click verdict pivot selected." lightbox="../../media/te-rtd-all-email-view-details-area-url-clicks-tab-click-verdict-pivot.png":::
 
 Hovering over a data point in the chart shows the count for each click verdict.
 
@@ -727,7 +727,7 @@ Hovering over a data point in the chart shows the count for each malware family.
 
 The **Sender domain** pivot organizes the chart by the sender domain of messages that were found to contain malware for the specified date/time range and property filters.
 
-:::image type="content" source="../../media/te-rtd-malware-view-chart-sender-domain-pivot.png" alt-text="The chart in the Malware view in Threat Explorer using the Malware family pivot." lightbox="../../media/te-rtd-malware-view-chart-sender-domain-pivot.png":::
+:::image type="content" source="../../media/te-rtd-malware-view-chart-sender-domain-pivot.png" alt-text="The chart in the Malware view in Threat Explorer using the Sender domain pivot." lightbox="../../media/te-rtd-malware-view-chart-sender-domain-pivot.png":::
 
 Hovering over a data point in the chart shows the count for each sender domain.
 
@@ -1279,7 +1279,7 @@ Hovering over a data point in the chart shows the count for each malware family.
 
 The **Detection technology** pivot organizes the chart by the feature that identified malware in files in SharePoint, OneDrive, and Microsoft Teams for the specified date/time range and property filters.
 
-:::image type="content" source="../../media/te-rtd-content-malware-view-chart-detection-technology-pivot.png" alt-text="The chart in the Malware view in Threat Explorer using the Detection technology pivot." lightbox="../../media/te-rtd-content-malware-view-chart-detection-technology-pivot.png":::
+:::image type="content" source="../../media/te-rtd-content-malware-view-chart-detection-technology-pivot.png" alt-text="The chart in the Content malware view in Threat Explorer using the Detection technology pivot." lightbox="../../media/te-rtd-content-malware-view-chart-detection-technology-pivot.png":::
 
 Hovering over a data point in the chart shows the count for each detection technology.
 
