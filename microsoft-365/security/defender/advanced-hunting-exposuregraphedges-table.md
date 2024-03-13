@@ -20,7 +20,7 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: reference
-ms.date: 03/12/2024
+ms.date: 03/13/2024
 ---
 
 # ExposureGraphEdges
@@ -55,8 +55,8 @@ For information on other tables in the advanced hunting schema, [see the advance
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Learn the query language](advanced-hunting-query-language.md)
 - [Use shared queries](advanced-hunting-shared-queries.md)
-- [Query the enterprise exposure graph](/security-exposure-management/query-enterprise-exposure-graph)
 - [Understand the schema](advanced-hunting-schema-tables.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)
-- [List all edge labels in your tenant](query-enterprise-exposure-graph.md#list-all-edge-labels-in-your-tenant)
+- [Query the enterprise exposure graph](/security-exposure-management/query-enterprise-exposure-graph)
+- [List all edge labels in your tenant](/security-exposure-management/query-enterprise-exposure-graph.md#list-all-edge-labels-in-your-tenant)
 [!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]
