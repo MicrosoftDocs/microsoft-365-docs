@@ -1259,6 +1259,11 @@
       "source_path": "microsoft-365/enterprise/upgrade-from-office-2010-servers-and-products.md",
       "redirect_url": "/microsoft-365/enterprise/index.yml",
       "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/project-server-2013-end-of-support.md",
+      "redirect_url": "/microsoft-365/enterprise/index.yml",
+      "redirect_document_id": false
    }
   ]
 }
