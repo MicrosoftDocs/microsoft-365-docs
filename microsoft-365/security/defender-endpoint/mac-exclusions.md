@@ -38,7 +38,7 @@ You can exclude certain files, folders, processes, and process-opened files from
 
 Exclusions can be useful to avoid incorrect detections on files or software that are unique or customized to your organization. They can also be useful for mitigating performance issues caused by Defender for Endpoint on Mac.
 
-In order to narrow down to what process and/or path and/or extension you need to exclude, please use the [real-time-protection-statistics](/microsoft-365/security/defender-endpoint/mac-support-perf)
+To narrow down which process and/or path and/or extension you need to exclude, please use [real-time-protection-statistics](/microsoft-365/security/defender-endpoint/mac-support-perf).
 
 > [!WARNING]
 > Defining exclusions lowers the protection offered by Defender for Endpoint on Mac. You should always evaluate the risks that are associated with implementing exclusions, and you should only exclude files that you are confident are not malicious.
@@ -101,27 +101,19 @@ Wildcard|Description|Examples|
 
 ### From the Microsoft Defender for Endpoint Security Settings management console
 
-Login to security.microsoft.com
-
-Configuration management > Endpoint security policies > Create new Policy
-
-Select Platform: macOS
-
-Select Template: Microsoft Defender Antivirus exclusions
-
-Click on "Create Policy" 
-
-Name:
-
-Description:
-
-Click on Next
-
-Expand "Antivirus engine"
-
-Select "Path" or "File extension" or "File name" and add the exclusions as needed.
-
-Click on Next
+1. Login to the [Microsoft Defender portal](https://security.microsoft.com).
+2. Go to **Configuration management > Endpoint Security Policies > Create new Policy**
+   - Select Platform: macOS
+   - Select Template: Microsoft Defender Antivirus exclusions
+3. Select **Create Policy**
+4. Enter a name and description and select **Next**
+5. Expand **Antivirus engine**
+6. Select **Add**
+7. Select **Path** or **File extension** or **File name**
+8. Select **Configure instance** and add the exclusions as needed
+9. Select **Next**
+10. Assign the exclusion to a group and Select **Next**
+11. Select **Save**
 
 ### From the management console
 
@@ -129,11 +121,11 @@ For more information on how to configure exclusions from JAMF, Intune, or anothe
 
 ### From the user interface
 
-Open the Defender for Endpoint application and navigate to **Manage settings** \> **Add or Remove Exclusion...**, as shown in the following screenshot:
+1. Open the Defender for Endpoint application and navigate to **Manage settings** \> **Add or Remove Exclusion...**, as shown in the following screenshot:
 
 :::image type="content" source="images/mdatp-37-exclusions.png" alt-text="The Manage exclusions page" lightbox="images/mdatp-37-exclusions.png":::
 
-Select the type of exclusion that you wish to add and follow the prompts.
+2. Select the type of exclusion that you wish to add and follow the prompts.
 
 ## Validate exclusions lists with the EICAR test file
 
