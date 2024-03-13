@@ -444,10 +444,6 @@
               href: /DeployOffice/endofsupport/plan-upgrade-older-versions-office
             - name: Exchange 2007
               href: exchange-2007-end-of-support.md
-            - name: SharePoint 2007
-              href: sharepoint-2007-end-of-support.md
-            - name: Office Communications Server
-              href: /skypeforbusiness/plan-your-deployment/upgrade
 
 - name: Compliance
   href: ../compliance/index.yml
