@@ -86,7 +86,7 @@ Learn how to deploy Defender for Endpoint on Android with Microsoft Intune Compa
 
 3. Upon successful onboarding, the device will start showing up on the Devices list in the Microsoft Defender portal.
 
-    :::image type="content" source="images/9fe378a1dce0f143005c3aa53d8c4f51.png" alt-text="A device in the Microsoft Defender for Endpoint portal"  lightbox="images/9fe378a1dce0f143005c3aa53d8c4f51.png":::
+    :::image type="content" source="media/9fe378a1dce0f143005c3aa53d8c4f51.png" alt-text="A device in the Microsoft Defender for Endpoint portal"  lightbox="media/9fe378a1dce0f143005c3aa53d8c4f51.png":::
 
 ## Deploy on Android Enterprise enrolled devices
 
@@ -131,7 +131,7 @@ Follow the steps below to add Microsoft Defender for Endpoint app into your mana
 
 7. The sync will complete in a few minutes.
 
-    :::image type="content" source="images/9fc07ffc150171f169dc6e57fe6f1c74.png" alt-text="The application sync status pane in the Android apps page in the Microsoft Defender 365 portal"  lightbox="images/9fc07ffc150171f169dc6e57fe6f1c74.png":::
+    :::image type="content" source="media/9fc07ffc150171f169dc6e57fe6f1c74.png" alt-text="The application sync status pane in the Android apps page in the Microsoft Defender 365 portal"  lightbox="media/9fc07ffc150171f169dc6e57fe6f1c74.png":::
 
 8. Select the **Refresh** button in the Android apps screen and Microsoft Defender for Endpoint should be visible in the apps list.
 
@@ -257,7 +257,7 @@ The device configuration profile is now assigned to the selected user group.
 
 4. At this stage the device is successfully onboarded onto Defender for Endpoint on Android. You can verify this on the [Microsoft Defender portal](https://security.microsoft.com) by navigating to the **Device Inventory** page.
 
-    :::image type="content" source="images/9fe378a1dce0f143005c3aa53d8c4f51.png" alt-text="The Microsoft Defender for Endpoint portal" lightbox="images/9fe378a1dce0f143005c3aa53d8c4f51.png":::
+    :::image type="content" source="media/9fe378a1dce0f143005c3aa53d8c4f51.png" alt-text="The Microsoft Defender for Endpoint portal" lightbox="media/9fe378a1dce0f143005c3aa53d8c4f51.png":::
 
 ## Set up Microsoft Defender in Personal Profile on Android Enterprise in BYOD mode
 
