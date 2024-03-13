@@ -79,54 +79,11 @@ Enhance workforce management with [Shifts](shifts-for-teams-landing-page.md), th
 
 Safeguard your business with best-in-class security and compliance features. Microsoft 365 for frontline workers offers identity and access management, threat and information protection, and security management.
 
-Manage identities and access with [Microsoft Entra ID](/entra/fundamentals/whatis). Secure endpoints and apps across device types and operating systems with [Microsoft Intune](/mem/intune/fundamentals/what-is-intune). 
 
 |Capability |More information |
 |-----------|---------------------|
 |Manage identities and access |<ul><li>[Microsoft Entra ID overview](/entra/fundamentals/whatis)</li></ul>|
 |Secure endpoints and apps across device types and operating systems |<ul><li>[Microsoft Intune overview](/mem/intune/fundamentals/what-is-intune)</li><li>[Frontline worker device management overview in Microsoft Intune](/mem/solutions/frontline-worker/frontline-worker-overview)</li><li>[Manage devices with Intune](/microsoft-365/solutions/manage-devices-with-intune-overview)</li></ul>|
-
-<!-- ## Safeguard your business
- |
-(/mem/solutions/frontline-worker/frontline-worker-overview)
-Safeguard your business with best-in-class security and compliance features. Microsoft 365 for frontline workers offers identity and access management, identity and threat protection, and security management. The offerings available to your workforce in these areas depends on the licenses you assign to your users in the Microsoft 365 admin center.
-
-<a name='manage-identities-and-access-with-azure-active-directory'></a>
-
-### Manage identities and access with Microsoft Entra ID
-
-|Capability |License availability |
-|-----------|---------------------|
-|[Microsoft Entra fundamentals](/azure/active-directory/fundamentals/active-directory-whatis) |Enterprise, F1, F3 |
-
-### Mitigate compliance and privacy risks
-
-|Capability |License availability |
-|-----------|---------------------|
-|[Introduction to security in Microsoft 365](/training/modules/security-in-m365/) |Enterprise, F1, F3 |
-|[Introduction to compliance tools in Microsoft 365](/training/modules/compliance-in-m365/) |Enterprise, F1, F3 |
-|[Quick tasks for getting started with Microsoft Purview](/microsoft-365/compliance/compliance-quick-tasks) |Enterprise, available as an add-on for F3 |
-
-### Simplify deployment and management at scale
-
-|Capability |License availability |
-|-----------|---------------------|
-|[Deploy frontline dynamic teams at scale](deploy-dynamic-teams-at-scale.md) |Enterprise, F1, F3 |
-|[Deploy frontline static teams at scale](deploy-teams-at-scale.md) |Enterprise, F1, F3 |
-|[Deploy your frontline operational hierarchy](deploy-frontline-operational-hierarchy.md) |Enterprise, F1, F3 |
-|[Deploy Shifts to your frontline teams at scale](deploy-shifts-at-scale.md) |Enterprise, F1, F3 |
-|[Teams policy packages for frontline workers](/microsoftteams/policy-packages-flw) |Enterprise, F1, F3 |
-
-### Secure endpoints and apps across device types and operating systems
-
-Equip your employees with industry-specific devices tailored for their needs, or provide a more secure way to communicate on shared or personal devices with Microsoft 365 and Microsoft Teams.
-
-|Capability |License availability |
-|-----------|---------------------|
-|[Manage mobile devices for frontline workers](flw-devices.md) |Enterprise, F1, F3 |
-|[Manage devices with Intune](/microsoft-365/solutions/manage-devices-with-intune-overview) |Enterprise, F1, F3 |
-|[Microsoft Intune family of products](/mem/endpoint-manager-overview) |Enterprise, F1, F3 |
-|[Device partner integrations with Intune](/mem/intune/protect/device-compliance-partners) |Enterprise, F1, F3 |-->
 
 ## Deploy and manage at scale
 
@@ -136,7 +93,7 @@ Deploy your frontline teams and give your frontline workforce access to the righ
 |---------|---------|
 |Frontline teams|When deploying your frontline teams, you can choose between dynamic team membership, static team membership, or a combination of both. <ul><li>[Deploy frontline dynamic teams at scale](deploy-dynamic-teams-at-scale.md)</li><li>[Deploy frontline static teams at scale](deploy-teams-at-scale.md)</li></ul>Learn more about [how to determine the best frontline team solution for your organization](frontline-team-options). |
 |Frontline operational hierarchy|Set up a [frontline operational hierarchy](deploy-frontline-operational-hierarchy) to map your organization’s structure of frontline teams and locations to a hierarchy in the Teams admin center.|
-|Frontline apps and experiences|Standardize Shifts settings across all your frontline teams and manage them centrally by [deploying Shifts to your frontline teams at scale](deploy-shifts-at-scale.md).|
+|Frontline apps |Standardize Shifts settings across all your frontline teams and manage them centrally by [deploying Shifts to your frontline teams at scale](deploy-shifts-at-scale.md).|
 |Teams policy packages |Use [Teams policy packages for frontline workers](/microsoftteams/policy-packages-flw) to streamline and help provide consistency when managing policies for your frontline.|
 
 ## Adoption principles to help envision and implement business scenarios
