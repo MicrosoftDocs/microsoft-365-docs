@@ -436,10 +436,6 @@
               href: /skypeforbusiness/plan-your-deployment/upgrade
             - name: Project Server 2010
               href: project-server-2010-end-of-support.md
-         - name: Office 2007
-           items: 
-            - name: Upgrade from Office 2007 servers and clients
-              href: upgrade-from-office-2007-servers-and-products.md
 
 - name: Compliance
   href: ../compliance/index.yml
