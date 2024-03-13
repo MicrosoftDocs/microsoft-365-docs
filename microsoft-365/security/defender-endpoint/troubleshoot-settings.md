@@ -19,32 +19,25 @@ audience: ITPro
 
 # Troubleshooting where the Microsoft Defender Antivirus setting is coming from?
 
+**Applies to:**
+
 - [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Business](https://www.microsoft.com/security/business/endpoint-security/microsoft-defender-business)
 - [Microsoft Defender for Individuals](https://www.microsoft.com/microsoft-365/microsoft-defender-for-individuals)
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-
 - Microsoft Defender Antivirus
 
 Microsoft Defender Antivirus provides numerous ways to manage the product, which provides SMB and Enterprises with flexibility of meeting the management tools that they already have.
 
 - Microsoft Defender for Endpoint Security settings management
-
 - Microsoft Intune (MDM)
-
 - Microsoft Configuration Manager with Tenant Attach
-
 - Microsoft Configuration Manager Co-Management
-
 - Microsoft Configuration Manager (standalone)
-
 - Group Policy (GPO)
-
 - PowerShell
-
 - Windows Management Instrumentation (WMI)
-
 - Registry
 
 > [!TIP]
