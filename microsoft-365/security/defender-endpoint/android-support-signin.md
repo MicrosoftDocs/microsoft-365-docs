@@ -90,7 +90,7 @@ Xiaomi devices include a new permission model. This permission model prevents De
 
 Xiaomi devices permission: "Display pop-up windows while running in the background."
 
-:::image type="content" source="images/6e48e7b29daf50afddcc6c8c7d59fd64.png" alt-text="The pop-up setting pane in the Microsoft Defender 365 portal" lightbox="images/6e48e7b29daf50afddcc6c8c7d59fd64.png":::
+:::image type="content" source="media/6e48e7b29daf50afddcc6c8c7d59fd64.png" alt-text="The pop-up setting pane in the Microsoft Defender 365 portal" lightbox="media/6e48e7b29daf50afddcc6c8c7d59fd64.png":::
 
 **Solution:**
 
