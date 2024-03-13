@@ -230,7 +230,7 @@ Microsoft Defender Antivirus is a built-in anti-malware solution that provides n
 
     :::image type="content" source="images/5420a8790c550f39f189830775a6d4c9.png" alt-text="The next-generation protection pane5" lightbox="images/5420a8790c550f39f189830775a6d4c9.png":::
 
-    :::image type="content" source="images/33f08a38f2f4dd12a364f8eac95e8c6b.png" alt-text="The next-generation protection pane6" lightbox="images/33f08a38f2f4dd12a364f8eac95e8c6b.png":::
+    :::image type="content" source="media/33f08a38f2f4dd12a364f8eac95e8c6b.png" alt-text="The next-generation protection pane6" lightbox="media/33f08a38f2f4dd12a364f8eac95e8c6b.png":::
 
     :::image type="content" source="images/41b9a023bc96364062c2041a8f5c344e.png" alt-text="The next-generation protection pane7" lightbox="images/41b9a023bc96364062c2041a8f5c344e.png":::
 
@@ -300,7 +300,7 @@ Below are more steps to verify whether attack surface reduction rules are correc
 
 5. Select each device shows configuration details of attack surface reduction rules.
 
-   :::image type="content" source="images/24bfb16ed561cbb468bd8ce51130ca9d.png" alt-text="The attack surface reduction rules reports2" lightbox="images/24bfb16ed561cbb468bd8ce51130ca9d.png":::
+   :::image type="content" source="media/24bfb16ed561cbb468bd8ce51130ca9d.png" alt-text="The attack surface reduction rules reports2" lightbox="media/24bfb16ed561cbb468bd8ce51130ca9d.png":::
 
 See [Optimize attack surface reduction rule deployment and detections](/microsoft-365/security/defender-endpoint/configure-machines-asr) for more details.
 
