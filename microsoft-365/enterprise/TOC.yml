@@ -440,10 +440,6 @@
            items: 
             - name: Upgrade from Office 2007 servers and clients
               href: upgrade-from-office-2007-servers-and-products.md
-            - name: Office 2007 desktop
-              href: /DeployOffice/endofsupport/plan-upgrade-older-versions-office
-            - name: Exchange 2007
-              href: exchange-2007-end-of-support.md
 
 - name: Compliance
   href: ../compliance/index.yml
