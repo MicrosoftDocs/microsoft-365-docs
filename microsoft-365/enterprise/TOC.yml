@@ -412,10 +412,6 @@
            items:
             - name: Upgrade from Office 2013 clients and servers
               href: upgrade-office-2013-clients-servers.md
-            - name: Office 2013 desktop
-              href: /DeployOffice/endofsupport/plan-upgrade-older-versions-office
-            - name: Exchange Server 2013
-              href: exchange-2013-end-of-support.md
 
 - name: Compliance
   href: ../compliance/index.yml
