@@ -430,8 +430,6 @@
               href: /DeployOffice/endofsupport/plan-upgrade-older-versions-office
             - name: Exchange 2010
               href: exchange-2010-end-of-support.md
-            - name: SharePoint 2010
-              href: upgrade-from-sharepoint-2010.md
 
 - name: Compliance
   href: ../compliance/index.yml
