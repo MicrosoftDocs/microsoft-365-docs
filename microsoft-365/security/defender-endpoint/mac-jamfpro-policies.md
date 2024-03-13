@@ -345,7 +345,7 @@ All you need to do to have updates is to download an updated schema, edit existi
 
 10. Select **Upload**.
 
-    :::image type="content" source="images/0adb21c13206861ba9b30a879ade93d3.png" alt-text="The configuration setting upload." lightbox="images/0adb21c13206861ba9b30a879ade93d3.png":::
+    :::image type="content" source="media/0adb21c13206861ba9b30a879ade93d3.png" alt-text="The configuration setting upload." lightbox="media/0adb21c13206861ba9b30a879ade93d3.png":::
 
     :::image type="content" source="images/f624de59b3cc86e3e2d32ae5de093e02.png" alt-text="The prompt to upload the image related to the configuration settings." lightbox="images/f624de59b3cc86e3e2d32ae5de093e02.png":::
 
@@ -635,7 +635,7 @@ Alternatively, you can download [fulldisk.mobileconfig](https://github.com/micro
 
 5. Select the **Scope** tab.
 
-   :::image type="content" source="images/0df36fc308ba569db204ee32db3fb40a.png" alt-text="The Target Computers selection pane." lightbox="images/0df36fc308ba569db204ee32db3fb40a.png":::
+   :::image type="content" source="media/0df36fc308ba569db204ee32db3fb40a.png" alt-text="The Target Computers selection pane." lightbox="media/0df36fc308ba569db204ee32db3fb40a.png":::
 
 6. Select **+ Add**.
 
@@ -643,7 +643,7 @@ Alternatively, you can download [fulldisk.mobileconfig](https://github.com/micro
 
 8. Select **+ Add**.
 
-   :::image type="content" source="images/0dde8a4c41110dbc398c485433a81359.png" alt-text="The New macOS Configuration Profile pane." lightbox="images/0dde8a4c41110dbc398c485433a81359.png":::
+   :::image type="content" source="media/0dde8a4c41110dbc398c485433a81359.png" alt-text="The New macOS Configuration Profile pane." lightbox="media/0dde8a4c41110dbc398c485433a81359.png":::
 
 9. Select **Save**.
 
@@ -685,7 +685,7 @@ These steps are applicable on macOS 11 (Big Sur) or later.
 
 3. Select the **Scope** tab.
 
-   :::image type="content" source="images/0df36fc308ba569db204ee32db3fb40a.png" alt-text="The configuration settings sco tab." lightbox="images/0df36fc308ba569db204ee32db3fb40a.png":::
+   :::image type="content" source="media/0df36fc308ba569db204ee32db3fb40a.png" alt-text="The configuration settings sco tab." lightbox="media/0df36fc308ba569db204ee32db3fb40a.png":::
 
 4. Select **+ Add**.
 
@@ -693,7 +693,7 @@ These steps are applicable on macOS 11 (Big Sur) or later.
 
 6. Select **+ Add**.
 
-   :::image type="content" source="images/0dde8a4c41110dbc398c485433a81359.png" alt-text="The configuration settings adim." lightbox="images/0dde8a4c41110dbc398c485433a81359.png":::
+   :::image type="content" source="media/0dde8a4c41110dbc398c485433a81359.png" alt-text="The configuration settings adim." lightbox="media/0dde8a4c41110dbc398c485433a81359.png":::
 
 7. Select **Save**.
 
@@ -756,7 +756,7 @@ Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint 
 
     Open the file and point it to `wdav.pkg` or `wdav_MDM_Contoso_200329.pkg`.
 
-    :::image type="content" source="images/1aa5aaa0a387f4e16ce55b66facc77d1.png" alt-text="The computer screen displaying the description for an automatically generated package." lightbox="images/1aa5aaa0a387f4e16ce55b66facc77d1.png":::
+    :::image type="content" source="media/1aa5aaa0a387f4e16ce55b66facc77d1.png" alt-text="The computer screen displaying the description for an automatically generated package." lightbox="media/1aa5aaa0a387f4e16ce55b66facc77d1.png":::
 
 7. Select **Open**. Set the **Display Name** to **Microsoft Defender Advanced Threat Protection and Microsoft Defender Antivirus**.
 

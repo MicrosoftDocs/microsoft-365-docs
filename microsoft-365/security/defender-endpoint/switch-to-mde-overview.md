@@ -37,7 +37,7 @@ When you migrate to Defender for Endpoint, you begin with your non-Microsoft ant
 
 ## The migration process
 
-:::image type="content" source="images/phase-diagrams/migration-phases.png" alt-text="The MDE migration process" lightbox="images/phase-diagrams/migration-phases.png":::
+:::image type="content" source="media/phase-diagrams/migration-phases.png" alt-text="The MDE migration process" lightbox="media/phase-diagrams/migration-phases.png":::
 
 The process of migrating to Defender for Endpoint can be divided into three phases, as described in the following table:
 

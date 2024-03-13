@@ -106,7 +106,7 @@ Follow the steps below to add Microsoft Defender for Endpoint app into your mana
 
 2. On your managed Google Play page that loads subsequently, go to the search box and enter `Microsoft Defender`. Your search should display the Microsoft Defender for Endpoint app in your Managed Google Play. Click on the Microsoft Defender for Endpoint app from the Apps search result.
 
-    :::image type="content" source="images/0f79cb37900b57c3e2bb0effad1c19cb.png" alt-text="The Managed Google Play page in the Microsoft Intune admin center portal" lightbox="images/0f79cb37900b57c3e2bb0effad1c19cb.png":::
+    :::image type="content" source="media/0f79cb37900b57c3e2bb0effad1c19cb.png" alt-text="The Managed Google Play page in the Microsoft Intune admin center portal" lightbox="media/0f79cb37900b57c3e2bb0effad1c19cb.png":::
 
 3. In the App description page that comes up next, you should be able to see app details on Defender for Endpoint. Review the information on the page and then select **Approve**.
 
@@ -203,7 +203,7 @@ Defender for Endpoint supports Device configuration policies for managed devices
 
    Select **Create**.
 
-   :::image type="content" source="images/1autosetupofvpn.png" alt-text="The Configuration profiles menu item in the Policy pane" lightbox="images/1autosetupofvpn.png":::
+   :::image type="content" source="media/1autosetupofvpn.png" alt-text="The Configuration profiles menu item in the Policy pane" lightbox="media/1autosetupofvpn.png":::
 
 2. **Configuration Settings**
   Provide a **Name** and a **Description** to uniquely identify the configuration profile.

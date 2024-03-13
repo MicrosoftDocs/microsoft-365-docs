@@ -82,7 +82,7 @@ Phishing websites impersonate trustworthy websites for obtaining your personal o
 Phishing and harmful web threats detected by Defender for Endpoint
 for Android aren't blocked on some Xiaomi devices. The following functionality doesn't work on these devices.
 
-:::image type="content" source="images/0c04975c74746a5cdb085e1d9386e713.png" alt-text="A site-unsafe notification message" lightbox="images/0c04975c74746a5cdb085e1d9386e713.png":::
+:::image type="content" source="media/0c04975c74746a5cdb085e1d9386e713.png" alt-text="A site-unsafe notification message" lightbox="media/0c04975c74746a5cdb085e1d9386e713.png":::
 
 **Cause:**
 
