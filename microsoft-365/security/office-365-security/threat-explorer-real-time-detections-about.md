@@ -1560,9 +1560,9 @@ The steps to create property filter/query conditions are the same in all views i
 > [!TIP]
 > **Save query** isn't available in Real-time detections. It's available only in Threat Explorer.
 >
-> In Threat Explorer, **Save query** isn't available in the [Content malware view](#content-malware-view-in-threat-explorer-and-real-time-detections).
+> **Save query** isn't available in the [Content malware view](#content-malware-view-in-threat-explorer-and-real-time-detections).
 
-Most views in Threat Explorer allow you to save filters (queries) for later use.
+Most views in Threat Explorer allow you to save filters (queries) for later use. Saved queries are available on the **Threat traker** page in the Defender portal at <https://security.microsoft.com/threattrackerv2>. For more information about Threat trackers, see [About Threat trackers](threat-trackers.md).
 
 To save queries in Threat Explorer, do the following steps:
 
@@ -1573,13 +1573,23 @@ To save queries in Threat Explorer, do the following steps:
    - Select one of the following options:
      - **Exact dates**: Select a start date and end date in the boxes. The oldest start date that you can select is 30 days before today. The newest end date that you can select is today.
      - **Relative dates**: Select the number of days in the **Show last nn days when search is run**. The default value is 7, but you can select 1 to 30.
-   - **Track query**: By default, this option isn't selected.
+   - **Track query**: By default, this option isn't selected. This option affects whether the query runs automatically:
+     - **Track query** not selected: The query is available for you to run manually in Threat Explorer. The query is saved on the **Saved queries** tab on the **Threat tracker** page.
+     - **Track query** selected: The query periodically runs in the background. The results and the query are saved on the **Tracked queries** tab on the **Threat tracker** page.
 
    When you're finished in the **Save query** flyout, select **Save**, and then select **OK** in the confirmation dialog.
 
 :::image type="content" source="../../media/te-rtd-query-save.png" alt-text="The Save query flyout in Threat Explorer in the Defender portal." lightbox="../../media/te-rtd-query-save.png":::
 
-<!--- Where to open/use query? How to use **Save query as**? How to use **Saved query settings**?--->
+On the **Saved query** or **Tracked query** tabs on the **Threat traker** page in the Defender portal at <https://security.microsoft.com/threattrackerv2>, you can select **Explore** in the **Actions** column to open and use the query in Threat Explorer.
+
+When you open the query from the **Threat tracker** page, :::image type="icon" source="../../media/m365-cc-sc-save-icon.png" border="false"::: **Save query as** and :::image type="icon" source="../../media/m365-cc-sc-gear-icon.png" border="false"::: **Saved query settings** are now available in **Save query** on the **Explorer** page:
+
+- If you select :::image type="icon" source="../../media/m365-cc-sc-save-icon.png" border="false"::: **Save query as**, the **Save query** flyout opens with all previously selected settings. If you make changes, select **Save**, and then select **OK** in the **Success** dialog, the updated query is saved as a new query on the **Threat tracker** page (you might need to select :::image type="icon" source="../../media/m365-cc-sc-refresh-icon.png" border="false":::**Refresh** to see it).
+
+- If you select :::image type="icon" source="../../media/m365-cc-sc-gear-icon.png" border="false"::: **Saved query settings**, the **Saved query settings** flyout opens where you can update the date and **Track query** settings of the existing query.
+
+:::image type="content" source="../../media/te-rtd-query-save-query-as-saved-query-settings.png" alt-text="Save query in Threat Explorer with Save query as and Saved query settings available." lightbox="../../media/te-rtd-query-save-query-as-saved-query-settings.png":::
 
 ## More information
 
