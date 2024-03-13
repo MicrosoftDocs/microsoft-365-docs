@@ -7,7 +7,7 @@ f1.keywords: NOCSH
 ms.author: chrisda
 author: chrisda
 ms.localizationpriority: medium
-ms.date: 2/2/2024
+ms.date: 3/12/2024
 manager: deniseb
 audience: ITPro
 ms.collection:
@@ -37,6 +37,11 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Defender for Endpoint](../defender-endpoint/whats-new-in-microsoft-defender-endpoint.md)
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
 - [What's new in Microsoft Defender for Cloud Apps](/cloud-app-security/release-notes)
+
+## March 2024
+
+- **Copy simulation functionality in Attack simulation training**: Admins can now duplicate existing simulations and customize them to their specific requirements. This feature saves time and effort by using previously launched simulations as templates when creating new ones. [Learn more](attack-simulation-training-simulations.md#copy-simulations).
+- Attack simulation training is now available in **Microsoft 365 DoD**. [Learn more](/office365/servicedescriptions/microsoft-defender-for-office-365-features#attack-simulation-training).
 
 ## February 2024
 
@@ -71,6 +76,7 @@ For more information on what's new with other Microsoft Defender security produc
 ## September 2023
 
 - URL top-level domain blocking is available in the **Tenant allow block list**. [Learn more](tenant-allow-block-list-urls-configure.md).
+- Attack simulation training is now available in **Microsoft 365 GCC High**. [Learn more](/office365/servicedescriptions/microsoft-defender-for-office-365-features#attack-simulation-training).
 
 ## August 2023
 
