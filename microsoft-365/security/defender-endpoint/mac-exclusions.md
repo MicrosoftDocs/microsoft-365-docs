@@ -83,7 +83,7 @@ Wildcard|Description|Examples|
 
    1. Indicators - Certificate - allow 
    
-   1. Add an extended validation (EV) code signing. 
+      1. Add an extended validation (EV) code signing. 
    
    1. Indicators - File hash - allow 
    
