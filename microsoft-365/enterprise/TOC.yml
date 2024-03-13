@@ -399,11 +399,6 @@
             - name: Turn it off
               href: turn-off-directory-synchronization.md
 
-- name: Client and server software
-  items: 
-    - name: Roadmap
-      href: client-server-software-roadmap-microsoft-365.md
-
 - name: Compliance
   href: ../compliance/index.yml
 
