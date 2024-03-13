@@ -20,12 +20,12 @@ Microsoft Copilot for Security is a cloud-based AI platform that provides natura
 
 **Copilot for Security integrates with Microsoft Defender Threat Intelligence**
 
-Copilot for Security delivers from Microsoft Defender Threat Intelligence (Defender TI) information about threat actors, indicators of compromise (IOCs), and tools, as well as contextual threat intelligence. You can use the prompts and promptbooks to investigate incidents, enrich your hunting flows with threat intelligence information, or gain more knowledge about your organization's or the global threat landscape.
+Copilot for Security delivers from Microsoft Defender Threat Intelligence (Defender TI) information about threat actors, indicators of compromise (IOCs), and tools, as well as contextual threat intelligence. You can use the prompts and promptbooks to investigate incidents, enrich your hunting flows with threat intelligence information, or gain more knowledge about your organization's or the global threat landscape. 
 
 This article introduces you to Copilot and includes sample prompts that can help Defender TI users.
 
 ## Know before you begin
-
+- You can experience the integration of Copilot for Security with Defender TI through the [dedicated site](#using-defender-ti-in-copilot-for-security-standalone-site) (also known as the **standalone** experience) or through the [Microsoft Defender XDR portal](#using-copilot-for-security-on-defender-ti-in-microsoft-defender-xdr) (**embedded** experience). [Learn more about Microsoft Copilot for Security experiences](/security-copilot/experiences-security-copilot)
 - Be clear and specific with your prompts. You might get better results if you include specific threat actor names or IOCs in your prompts. It might also help if you add **threat intelligence** to your prompt, like:
   - Show me threat intelligence data for Aqua Blizzard.
   - Summarize threat intelligence data for "malicious.com."
@@ -40,7 +40,7 @@ This article introduces you to Copilot and includes sample prompts that can help
 
 [Learn more about creating effective prompts](/security-copilot/prompting-tips)
 
-## Open Copilot
+## Using Defender TI in Copilot for Security standalone site
 
 1.	Go to [Microsoft Copilot for Security](https://go.microsoft.com/fwlink/?linkid=2247989) and sign in with your credentials.
 2.	Make sure that the Defender TI plugin is turned on. In the prompt bar, select the **Sources** icon then choose **Plugins**. 
@@ -56,7 +56,7 @@ This article introduces you to Copilot and includes sample prompts that can help
 
 3.	Enter your prompt in the prompt bar.
 
-## Built-in system features
+### Built-in system features
 
 Copilot for Security has built-in system features that can get data from the different plugins that are turned on.
 
@@ -71,11 +71,11 @@ Copilot also has the following promptbooks that also deliver information from De
 
 To view these promptbooks, in the prompt bar, select the **Prompts** icon then select **Promptbooks**. 
 
-## Sample prompts for Defender TI
+### Sample prompts for Defender TI
 
 You can use many prompts to get information from Defender TI. This section lists some ideas and examples.
 
-### General information about threat intelligence trends
+#### General information about threat intelligence trends
 Get threat intelligence from threat articles and threat actors. 
 
 **Sample prompts** 
@@ -83,7 +83,7 @@ Get threat intelligence from threat articles and threat actors.
 - Show me the latest threat articles. 
 - Get threat articles associated with the finance industry.
 
-### IP address and host contextual information in relation to threat intelligence
+#### IP address and host contextual information in relation to threat intelligence
 
 Get information on datasets associated with IP addresses and hosts, such as ports, reputation scores, components, certificates, cookies, services, and host pairs.
 
@@ -92,7 +92,7 @@ Get information on datasets associated with IP addresses and hosts, such as port
 - Get open ports for IP address _\<IP address\>_.
 - Get the SSL certificates for the IP address _\<IP address\>_.
 
-### Threat actor mapping and infrastructure
+#### Threat actor mapping and infrastructure
 Get information on threat actors and the tactics, techniques, and procedures (TTPs), sponsored states, industries, and IOCs associated with them.
 
 **Sample prompts** 
@@ -101,7 +101,7 @@ Get information on threat actors and the tactics, techniques, and procedures (TT
 - Share the TTPs associated with Silk Typhoon.
 - Share threat actors associated with Russia.
 
-### CVE vulnerability data 
+#### CVE vulnerability data 
 Get contextual information and threat intelligence on Common Vulnerabilities and Exposures (CVEs).
 
 **Sample prompts** 
@@ -110,6 +110,34 @@ Get contextual information and threat intelligence on Common Vulnerabilities and
 - Show me the latest CVEs.
 - Show me threat actors associated with CVE-2021-44228.
 - Show me the threat articles associated with CVE-2021-44228.
+
+## Using Copilot for Security on Defender TI in Microsoft Defender XDR
+
+Copilot for Security customers gain for each of their authenticated Copilot users access to Defender TI within the Microsoft Defender XDR portal. To ensure that you have access to Copilot, see the [Copilot for Security purchase and licensing information](/security-copilot/faq-security-copilot). 
+
+Once you have access to Copilot for Security, the key features discussed in the next section become accessible in the following Threat intelligence sections of the Microsoft Defender XDR portal: 
+- Threat analytics
+- Intel profiles
+- Intel explorer
+
+### Key features
+Microsoft Defender XDR brings the _FindThreatIntelligence_ capability of Copilot for Security to the portal, letting security teams understand, prioritize, and take action on threat intelligence information immediately.
+
+#### Summarize the latest threats related to your organization
+Gathering and digesting threat intelligence data and trends can be a daunting task, especially when they come from multiple data sets and sources. Copilot for Security in Microsoft Defender for XDR provides you with an overview of the latest threats currently impacting your organization. It lists and summarizes relevant campaigns, activities, and threat actors, and includes links to related threat analytics reports or intel profiles for more information.
+
+(Add screenshot here)
+
+#### Prioritize which threats to focus on
+Copilot for Security provides insights on which threats you should prioritize and focus on based on your environment's level of exposure to these threats. This feature gives you a starting point and could thus make triaging, investigating, and mitigating incidents less complex.
+
+(Add screenshot here)
+
+#### Find out which threat actors are targeting your industry
+
+An important aspect of threat intelligence is keeping up to date with the global threat landscape. Copilot for Security gathers and summarizes the latest threat articles relevant to your industry so you can gather information on the latest TTPs or campaigns threat actors are launching against organizations similar to yours and promptly assess and apply mitigation or prevention strategies. 
+
+(add screenshot here)
 
 ## Provide feedback
 
