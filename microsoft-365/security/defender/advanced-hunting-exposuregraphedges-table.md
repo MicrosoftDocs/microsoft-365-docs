@@ -58,5 +58,4 @@ For information on other tables in the advanced hunting schema, [see the advance
 - [Understand the schema](advanced-hunting-schema-tables.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)
 - [Query the enterprise exposure graph](/security-exposure-management/query-enterprise-exposure-graph)
-- [List all edge labels in your tenant](/security-exposure-management/query-enterprise-exposure-graph.md#list-all-edge-labels-in-your-tenant)
 [!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]
