@@ -268,7 +268,7 @@ To set attack surface reduction rules in test mode:
 
 4. Confirm the new Exploit Guard policy by selecting **Next**.
 
-   :::image type="content" source="images/0a6536f2c4024c08709cac8fcf800060.png" alt-text="The Microsoft Configuration Manager console2" lightbox="images/0a6536f2c4024c08709cac8fcf800060.png":::
+   :::image type="content" source="media/0a6536f2c4024c08709cac8fcf800060.png" alt-text="The Microsoft Configuration Manager console2" lightbox="media/0a6536f2c4024c08709cac8fcf800060.png":::
 
 5. Once the policy is created select **Close**.
 
@@ -280,7 +280,7 @@ To set attack surface reduction rules in test mode:
 
 7. Target the policy to the newly created Windows collection and select **OK**.
 
-   :::image type="content" source="images/0ccfe3e803be4b56c668b220b51da7f7.png" alt-text="The Microsoft Configuration Manager console5" lightbox="images/0ccfe3e803be4b56c668b220b51da7f7.png":::
+   :::image type="content" source="media/0ccfe3e803be4b56c668b220b51da7f7.png" alt-text="The Microsoft Configuration Manager console5" lightbox="media/0ccfe3e803be4b56c668b220b51da7f7.png":::
 
 After completing this task, you now have successfully configured attack surface reduction rules in test mode.
 
@@ -318,7 +318,7 @@ See [Optimize attack surface reduction rule deployment and detections](/microsof
 
 4. Confirm the new Exploit Guard Policy by selecting **Next**.
 
-   :::image type="content" source="images/0a6536f2c4024c08709cac8fcf800060.png" alt-text="The Exploit Guard policy1" lightbox="images/0a6536f2c4024c08709cac8fcf800060.png":::
+   :::image type="content" source="media/0a6536f2c4024c08709cac8fcf800060.png" alt-text="The Exploit Guard policy1" lightbox="media/0a6536f2c4024c08709cac8fcf800060.png":::
 
 5. Once the policy is created select on **Close**.
 
@@ -330,7 +330,7 @@ See [Optimize attack surface reduction rule deployment and detections](/microsof
 
 7. Select the policy to the newly created Windows collection and choose **OK**.
 
-   :::image type="content" source="images/0ccfe3e803be4b56c668b220b51da7f7.png" alt-text="The Microsoft Configuration Manager-2" lightbox="images/0ccfe3e803be4b56c668b220b51da7f7.png":::
+   :::image type="content" source="media/0ccfe3e803be4b56c668b220b51da7f7.png" alt-text="The Microsoft Configuration Manager-2" lightbox="media/0ccfe3e803be4b56c668b220b51da7f7.png":::
 
 After completing this task, you now have successfully configured Network Protection in test mode.
 
@@ -348,7 +348,7 @@ After completing this task, you now have successfully configured Network Protect
 
 4. Confirm the new Exploit Guard Policy by selecting **Next**.
 
-   :::image type="content" source="images/0a6536f2c4024c08709cac8fcf800060.png" alt-text="The Microsoft Configuration Manager-5" lightbox="images/0a6536f2c4024c08709cac8fcf800060.png":::
+   :::image type="content" source="media/0a6536f2c4024c08709cac8fcf800060.png" alt-text="The Microsoft Configuration Manager-5" lightbox="media/0a6536f2c4024c08709cac8fcf800060.png":::
 
 5. Once the policy is created select on **Close**.
 
@@ -360,7 +360,7 @@ After completing this task, you now have successfully configured Network Protect
 
 7. Target the policy to the newly created Windows collection and select **OK**.
 
-:::image type="content" source="images/0ccfe3e803be4b56c668b220b51da7f7.png" alt-text="The Microsoft Configuration Manager-8" lightbox="images/0ccfe3e803be4b56c668b220b51da7f7.png":::
+:::image type="content" source="media/0ccfe3e803be4b56c668b220b51da7f7.png" alt-text="The Microsoft Configuration Manager-8" lightbox="media/0ccfe3e803be4b56c668b220b51da7f7.png":::
 
 You have now successfully configured Controlled folder access in test mode.
 
