@@ -450,8 +450,6 @@
               href: /skypeforbusiness/plan-your-deployment/upgrade
             - name: PerformancePoint Server 2007
               href: pps-2007-end-of-support.md
-            - name: Project Server 2007
-              href: project-server-2007-end-of-support.md
 
 - name: Compliance
   href: ../compliance/index.yml
