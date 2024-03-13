@@ -353,7 +353,7 @@ When you're finished on the **Training assignment** page, select **Next**.
 
 ## Select a landing page
 
-On the **Selecting phish landing page** page, configure the web page that users are taken to if they open the payload in the simulation.
+On the **Select phish landing page** page, configure the web page that users are taken to if they open the payload in the simulation.
 
 Select one of the following options:
 
@@ -371,18 +371,18 @@ Select one of the following options:
 
   - **Tenant landing pages** tab: Contains any custom landing pages that you created. To create a new landing page, select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Create new**. The creation steps are the same as at **Attack simulation training** \> **Content library** tab \> **Phish landing pages** \> **Tenant landing pages** tab. For instructions, see [Create landing pages](attack-simulation-training-landing-pages.md#create-landing-pages).
 
-  On both tabs, the following information is shown for each landing page:
+  The following information is shown for each landing page. You can sort the landing pages by clicking on an available column header. Select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns** to change the columns that are shown. The default columns are marked with an asterisk (<sup>\*</sup>):
 
-  - **Name**
-  - **Language**: If the landing page contains multiple translations, the first two languages are shown directly. To see the remaining languages, hover over the numeric icon (for example, **+10**).
-  - **Default language**
-  - **Status**
-  - **Linked simulations**
-  - **Created time**
-  - **Modified by**
-  - **Last modified**
-
-  Select a column header to sort by that column. To add or remove columns, select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns**. By default, the only available columns that aren't selected are **Source** and **Created by**.
+  - **Name**<sup>\*</sup>
+  - **Language**<sup>\*</sup>: If the landing page contains multiple translations, the first two languages are shown directly. To see the remaining languages, hover over the numeric icon (for example, **+10**).
+  - **Source**
+  - **Default language**<sup>\*</sup>
+  - **Status**<sup>\*</sup>
+  - **Linked simulations**<sup>\*</sup>
+  - **Created by**
+  - **Created time**<sup>\*</sup>
+  - **Modified by**<sup>\*</sup>
+  - **Last modified**<sup>\*</sup>
 
   To find a landing page in the list, type part of the landing page name in the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box and then press the ENTER key.
 
@@ -428,9 +428,7 @@ On the **Select end user notification** page, select from the following notifica
     - For **Microsoft default positive reinforcement notification**, select **Do not deliver**, **Deliver after campaign ends**, or **Deliver during campaign**.
     - For **Microsoft default training reminder notification**, select **Twice a week** or **Weekly**.
   - **Actions**: If you select :::image type="icon" source="../../media/m365-cc-sc-view-icon.png" border="false"::: **View**, a **Review notification** page opens with the following information:
-    - **Preview** tab: View the notification message as users see it.
-      - To view the message in different languages, use the **Select notification language** box.
-      - Use the **Select payload to preview** box to select the notification message for simulations that contain multiple payloads.
+    - **Preview** tab: View the notification message as users see it. To view the message in different languages, use the **Select notification language** box.
     - **Details** tab: View details about the notification:
       - **Notification description**
       - **Source**: For built-in notifications, the value is **Global**. For custom notifications, the value is **Tenant**.
@@ -616,7 +614,7 @@ Back on the **Simulations** tab, the simulation that you created is now listed. 
 
 The **Simulations** tab in Attack simulation training at <https://security.microsoft.com/attacksimulator> shows any simulations that you've created.
 
-By default, the following information is shown for each simulation<sup>\*</sup>:
+The following information is shown for each simulation. You can sort the simulations by clicking on an available column header. Select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns** to change the columns that are shown. By default, all columns are selected:
 
 - **Simulation name**
 - **Type**
@@ -636,14 +634,13 @@ By default, the following information is shown for each simulation<sup>\*</sup>:
   - **Excluded**
 - **⋮** (**Actions** control): Take action on the simulation. The available actions depend on the **Status** value of the simulation as described in the procedure sections. This control always appears at the end of the row.
 
-Select a column header to sort by that column. To add or remove columns, select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns**. By default, all available columns are selected.
-
-<sup>\*</sup> To see all columns, you likely need to do one or more of the following steps:
-
-- Horizontally scroll in your web browser.
-- Narrow the width of appropriate columns.
-- Remove columns from the view.
-- Zoom out in your web browser.
+> [!TIP]
+> To see all columns, you likely need to do one or more of the following steps:
+>
+> - Horizontally scroll in your web browser.
+> - Narrow the width of appropriate columns.
+> - Remove columns from the view.
+> - Zoom out in your web browser.
 
 Use the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box to search for the name of an existing simulation.
 
@@ -728,7 +725,7 @@ The rest of the details page contains the following tabs:
 
 ## Take action on simulations
 
-All actions on existing simulations start on the **Simulations** tab. To get there, open the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Simulations** tab. Or, to go directly to the **Simulations** tab, use <https://security.microsoft.com/attacksimulator?viewid=simulations>.
+All actions on existing simulations start on the **Simulations** tab. To go there, open the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Simulations** tab. Or, to go directly to the **Simulations** tab, use <https://security.microsoft.com/attacksimulator?viewid=simulations>.
 
 > [!TIP]
 > To see the **⋮** (**Actions**) control that's required to act on simulations on the **Simulations** tab, you likely need to do one or more of the following steps:

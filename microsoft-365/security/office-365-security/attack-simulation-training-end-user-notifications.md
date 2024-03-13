@@ -36,7 +36,7 @@ To see the available end-user notifications, open the Microsoft Defender portal 
 - **Global notifications**: Contains the built-in, unmodifiable notifications.
 - **Tenant notifications**: Contains the custom notifications that you created.
 
-The following information is shown for each notification<sup>\*</sup>:
+The following information is shown for each notification. You can sort the notifications by clicking on an available column header. Select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns** to change the columns that are shown. By default, all available columns are selected.
 
 - **Notifications**: The name of the notification.
 - **⋮** (**Actions** control): Take action on the notification. The available actions depend on the **Status** value of the notification as described in the procedure sections.
@@ -50,17 +50,15 @@ The following information is shown for each notification<sup>\*</sup>:
 - **Modified by**
 - **Last modified time**
 
-Select a column header to sort by that column. To add or remove columns, select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns**. By default, all available columns are selected.
-
 > [!TIP]
+> To see all columns, you likely need to do one or more of the following steps:
+>
+> - Horizontally scroll in your web browser.
+> - Narrow the width of appropriate columns.
+> - Remove columns from the view.
+> - Zoom out in your web browser.
+>
 > The **⋮** (**Actions** control) is associated with the **Notifications** column. If you remove that column from view, the **⋮** control goes away.
-
-<sup>\*</sup> To see all columns, you likely need to do one or more of the following steps:
-
-- Horizontally scroll in your web browser.
-- Narrow the width of appropriate columns.
-- Remove columns from the view.
-- Zoom out in your web browser.
 
 To find a notification in the list, type part of the notification name in the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box and then press the ENTER key.
 

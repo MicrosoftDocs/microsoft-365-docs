@@ -31,7 +31,7 @@ To see the available landing pages, open the Microsoft Defender portal at <https
 - **Global landing pages** tab: Contains built-in, unmodifiable landing page templates named **Microsoft Landing Page Template 1** to **Microsoft Landing Page Template 5**. These built-in landing pages are localized into 12+ languages.
 - **Tenant landing pages** tab: Contains custom landing pages that you created.
 
-The following information is shown for each landing page<sup>\*</sup>:
+The following information is shown for each landing page. You can sort the landing pages by clicking on an available column header. Select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns** to change the columns that are shown. By default, all available columns are selected.
 
 - **Name**
 - **⋮** (**Actions** control): Take action on the landing page. The available actions depend on the **Status** value of the landing page as described in the procedure sections.
@@ -43,17 +43,15 @@ The following information is shown for each landing page<sup>\*</sup>:
 - **Created time**
 - **Modified by**
 
-Select a column header to sort by that column. To add or remove columns, select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns**. By default, all available columns are selected.
-
 > [!TIP]
-> The **⋮** (**Actions** control) is associated with the **Name** column. If you remove that column from view, the **⋮** control goes away.
-
-<sup>\*</sup> To see all columns, you likely need to do one or more of the following steps:
-
-- Horizontally scroll in your web browser.
-- Narrow the width of appropriate columns.
-- Remove columns from the view.
-- Zoom out in your web browser.
+> To see all columns, you likely need to do one or more of the following steps:
+>
+> - Horizontally scroll in your web browser.
+> - Narrow the width of appropriate columns.
+> - Remove columns from the view.
+> - Zoom out in your web browser.
+>
+> The **⋮** (**Actions** control) is associated with the **Notifications** column. If you remove that column from view, the **⋮** control goes away.
 
 To find a landing page in the list, type part of the landing page name in the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box and then press the ENTER key.
 

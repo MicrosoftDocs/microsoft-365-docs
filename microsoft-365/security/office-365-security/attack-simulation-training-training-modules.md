@@ -26,7 +26,7 @@ In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Offi
 
 To see the available Training modules, open the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Content library** tab \> and then select **Training modules**. Or, to go directly to the **Content library** tab where you can select **Training modules**, use <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>.
 
-The **Training modules** page shows the following information for each module<sup>\*</sup>:
+The **Training modules** page shows the following information for each module. You can sort the modules by clicking on an available column header. Select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns** to change the columns that are shown. By default, all available columns are selected.
 
 - **Training name**
 - **Languages**: The available values are: **Turkish**, **Polish**, **Persian**, **Danish**, **Slovak**, **Korean**, **Portuguese**, **Italian**, **German**, **French**, **Swedish**, **Spanish**, **Arabic**, **Norwegian Bokmål**, **Russian**, **Portuguese**, **Japanese**, **Czech**, **Greek**, **Spanish**, **Thai**, **Romanian**, **French**, **Hungarian**, **Chinese (Simplified)**, **English**, **Indonesian**, **Finnish**, **Malay**, **English**, **Hindi**, **Chinese (Traditional**, **Hong Kong)**, **Chinese (Traditional**, **Taiwan)**, **Macedonian**, **Ukrainian**, **Vietnamese**, **Hebrew**, **Serbian (Cyrillic)/Serbian (Latin)**, and **Dutch**
@@ -49,14 +49,13 @@ The **Training modules** page shows the following information for each module<su
 - **Completion rate**
 - **Preview**: Select the **Preview** button in this column to watch the training.
 
-Select a column header to sort by that column. To add or remove columns, select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns**. By default, all available columns are selected.
-
-<sup>\*</sup> To see all columns, you likely need to do one or more of the following steps:
-
-- Horizontally scroll in your web browser.
-- Narrow the width of appropriate columns.
-- Remove columns from the view.
-- Zoom out in your web browser.
+> [!TIP]
+> To see all columns, you likely need to do one or more of the following steps:
+>
+> - Horizontally scroll in your web browser.
+> - Narrow the width of appropriate columns.
+> - Remove columns from the view.
+> - Zoom out in your web browser.
 
 To find a Training module in the list, type the name of the module in the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box, and then press the ENTER key.
 

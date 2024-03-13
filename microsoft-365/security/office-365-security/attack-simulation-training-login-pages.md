@@ -36,7 +36,7 @@ To see the available login pages, open the Microsoft Defender portal at <https:/
 
 - **Tenant login pages** tab: Contains the custom login pages that you've created.
 
-The following information is shown for each login page:
+The following information is shown for each login page. You can sort the login pages by clicking on an available column header. Select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns** to change the columns that are shown. By default, all available columns are selected.
 
 - **Name**
 - **⋮** (**Actions** control): Take action on the login page. The available actions depend on the **Status** value of the login page as described in the procedure sections.
@@ -45,8 +45,6 @@ The following information is shown for each login page:
 - **Status**: **Ready** or **Draft**.
 - **Created by**: For built-in login pages, the value is **Microsoft**. For custom login pages, the value is the UPN of the user who created the login page.
 - **Last modified**
-
-Select a column header to sort by that column. To remove columns, select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns**.
 
 To find a login page in the list, type part of the login page name in the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box and then press the ENTER key.
 

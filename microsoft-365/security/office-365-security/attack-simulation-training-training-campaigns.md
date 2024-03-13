@@ -30,7 +30,7 @@ For getting started information about Attack simulation training, see [Get start
 
 To see the existing Training campaigns, open the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Training** tab. Or, to go directly to the **Training** tab, use <https://security.microsoft.com/attacksimulator?viewid=trainingcampaign>.
 
-The **Training** tab lists the Training campaigns that you created. The list includes the following information for each Training campaign<sup>\*</sup>:
+The **Training** tab sows the following information for each Training campaign that you created. You can sort the Training campaigns by clicking on an available column header. Select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns** to change the columns that are shown. By default, all available columns are selected.
 
 - **Campaign name**
 - **Description**
@@ -51,14 +51,13 @@ The **Training** tab lists the Training campaigns that you created. The list inc
 
   For more information about the **Status** values, see the [Set the training threshold](#set-the-training-threshold) section later in this article.
 
-Select a column header to sort by that column. To add or remove columns, select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns**. By default, all available columns are selected.
-
-<sup>\*</sup> To see all columns, you likely need to do one or more of the following steps:
-
-- Horizontally scroll in your web browser.
-- Narrow the width of appropriate columns.
-- Remove columns from the view.
-- Zoom out in your web browser.
+> [!TIP]
+> To see all columns, you likely need to do one or more of the following steps:
+>
+> - Horizontally scroll in your web browser.
+> - Narrow the width of appropriate columns.
+> - Remove columns from the view.
+> - Zoom out in your web browser.
 
 Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png"::: **Filter** to filter the information on the page by the **Status** value of the Training campaign.
 
@@ -360,7 +359,7 @@ Back on the **Training campaign** tab, the Training campaign that you created is
 
 ## Take action on Training campaigns
 
-All actions on existing Training campaigns start on the **Training** tab. To get there, open the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Training** tab. Or, to go directly to the **Training** tab, use <https://security.microsoft.com/attacksimulator?viewid=trainingcampaign>.
+All actions on existing Training campaigns start on the **Training** tab. To go there, open the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Training** tab. Or, to go directly to the **Training** tab, use <https://security.microsoft.com/attacksimulator?viewid=trainingcampaign>.
 
 ### View Training campaign details
 
