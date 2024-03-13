@@ -1264,6 +1264,11 @@
       "source_path": "microsoft-365/enterprise/project-server-2013-end-of-support.md",
       "redirect_url": "/microsoft-365/enterprise/index.yml",
       "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/upgrade-from-lync-2013.md",
+      "redirect_url": "/microsoft-365/enterprise/index.yml",
+      "redirect_document_id": false
    }
   ]
 }

@@ -418,8 +418,6 @@
               href: exchange-2013-end-of-support.md  
             - name: SharePoint 2013
               href: upgrade-from-sharepoint-2013.md
-            - name: Lync Server 2013
-              href: upgrade-from-lync-2013.md
 
 - name: Compliance
   href: ../compliance/index.yml
