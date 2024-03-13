@@ -42,7 +42,7 @@
      },
      {
               "source_path": "microsoft-365/security/defender-endpoint/experts-on-demand.md",
-              "redirect_url": "/microsoft-365/security/defender/onboarding-defender-experts-for-hunting/collaborate-with-experts-on-demand",
+              "redirect_url": "/microsoft-365/security/defender/onboarding-defender-experts-for-hunting#collaborate-with-experts-on-demand",
               "redirect_document_id": false
      },
      {
@@ -3928,6 +3928,11 @@
      {
       "source_path": "microsoft-365/security/defender-endpoint/manage-mde-post-migration-group-policy-objects.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/preferences-setup",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "microsoft-365/security/defender-endpoint/troubleshoot-reporting.md",
+      "redirect_url": "/mem/intune/protect/advanced-threat-protection-configure",
       "redirect_document_id": false
      },
      {
