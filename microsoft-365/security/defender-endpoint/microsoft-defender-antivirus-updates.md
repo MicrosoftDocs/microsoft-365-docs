@@ -101,9 +101,9 @@ All our updates contain
 ### February-2024 (Engine: 1.1.24020.9 | Platform: 4.18.24020.7)
 
 - Security intelligence update version: **1.407.46.0**
-- Release date: **March 6, 2024** (Engine) / **4.18.24020.7** (Platform)
-- Platform: **4.18.24020.7**
+- Release date: **March 6, 2024** (Engine) / **March 12, 2024** (Platform)
 - Engine: **1.1.24020.9**
+- Platform: **4.18.24020.7**
 - Support phase: **Security and Critical Updates**
 
 #### What's new
