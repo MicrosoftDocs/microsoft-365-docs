@@ -129,6 +129,9 @@ Threat Explorer and Real-time detections contain the following elements:
 
    If the details area contains a table, you can often use :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** to selectively export up to 200,000 filtered or unfiltered results to a CSV file.
 
+   > [!TIP]
+   > In the **Export** flyout, you can select some or all of the available properties to export. The selections are saved per user. Selections in Incognito or InPrivate browsing mode are saved until you close the web browser.
+
 :::image type="content" source="../../media/te-rtd-threat-explorer-main-page.png" alt-text="The main page in Threat explorer showing real-time report data in the Defender for Office 365 portal." lightbox="../../media/te-rtd-threat-explorer-main-page.png":::
 
 ## All email view in Threat Explorer
