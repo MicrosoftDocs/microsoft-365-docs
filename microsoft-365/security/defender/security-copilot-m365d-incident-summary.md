@@ -20,7 +20,7 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - MET150
-ms.date: 04/01/2024
+ms.date: 4/1/2024
 ---
 
 # Summarize an incident with Microsoft Copilot for Security in Microsoft Defender
@@ -51,11 +51,11 @@ To summarize an incident, perform the following steps:
 1. Open an incident page. Copilot automatically creates an incident summary upon opening the page. You can stop the summary creation by selecting **Cancel** or restart creation by selecting **Regenerate**.
 
 2. The incident summary card loads on the Copilot pane. Review the generated summary on the card.
-   :::image type="content" source="../../media/copilot-in-defender/incident-summary/fig1-incident-summary.png" alt-text="Screenshot of the incident summary card on the Copilot pane as seen in the Microsoft Defender incident page." lightbox="../../media/copilot-in-defender/incident-summary/fig1-incident-summary.png":::
+   :::image type="content" source="../../media/copilot-in-defender/incident-summary/copilot-defender-incident-summary-small.png" alt-text="Screenshot of the incident summary card on the Copilot pane as seen in the Microsoft Defender incident page." lightbox="../../media/copilot-in-defender/incident-summary/copilot-defender-incident-summary.png":::
    > [!TIP]
-   > You can navigate to a file, IP, or URL page from the Copilot results pane by clicking on the entity.
+   > You can navigate to a file, IP, or URL page from the Copilot results pane by clicking on the evidence in the results.
 3. Select the **More actions** ellipsis (...) at the top of the incident summary card to copy or regenerate the summary, or view the summary in the Copilot for Security portal. Selecting **Open in Copilot for Security** opens a new tab to the Copilot for Security standalone portal where you can input prompts and access other plugins.
-   :::image type="content" source="../../media/copilot-in-defender/incident-summary/fig2-incident-summary-more-actions.png" alt-text="Screenshot highlighting the actions available on the incident summary card." lightbox="../../media/copilot-in-defender/incident-summary/fig2-incident-summary-more-actions.png":::
+   :::image type="content" source="../../media/copilot-in-defender/incident-summary/copilot-defender-incident-summary-options.png" alt-text="Screenshot highlighting the actions available on the incident summary card." lightbox="../../media/copilot-in-defender/incident-summary/copilot-defender-incident-summary-options.png":::
 4. Review the summary and use the information to guide your investigation and response to the incident. You can provide feedback on the summary by selecting the feedback icon ![Screenshot of the feedback icon for Copilot in Defender cards](../../media/copilot-in-defender/copilot-defender-feedback.png) found on the bottom of the Copilot pane.
 
 ## See also

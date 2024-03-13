@@ -37,28 +37,28 @@ This guide describes what the script analysis capability is and how it works, in
 
 ## Analyze a script
 
-You can access the script analysis capability in an incident page's process tree below an attack story graph and in the [device timeline](/microsoft-365/security/defender-endpoint/device-timeline-event-flag).
+You can access the script analysis capability within the attack story below the incident graph on an incident page and in the [device timeline](/microsoft-365/security/defender-endpoint/device-timeline-event-flag).
 
 To begin analysis, perform the following steps:
 
-1. Open an incident page. Open the alert timeline in the attack story tab. Within the timeline, select an event with a script or code that you want to analyze. Click **Analyze** to start the script/code analysis.
+1. Open an incident page then select an item on the left pane to open the attack story below the incident graph. Within the attack story, select an event with a script or command line that you want to analyze. Click **Analyze** to start the analysis.
 
-   :::image type="content" source="../../media/copilot-in-defender/script-analyzer/fig1-script-analysis.png" alt-text="Screenshot highlighting the script analysis button on the alert timeline view in the incident page of Microsoft Defender." lightbox="../../media/copilot-in-defender/script-analyzer/fig1-script-analysis.png":::
+   :::image type="content" source="../../media/copilot-in-defender/script-analyzer/copilot-defender-script-analysis-incident-page-small.png" alt-text="Screenshot highlighting the script analysis button on the alert timeline view in the incident page of Microsoft Defender." lightbox="../../media/copilot-in-defender/script-analyzer/copilot-defender-script-analysis-incident-page.png":::
 
-   Alternately, you can select an event to inspect in the device timeline view. In the process tree shown on the file details pane, select **Analyze** to run the script analysis capability.
+   Alternately, you can select an event to inspect in the device timeline view. On the file details pane, select **Analyze** to run the script analysis capability.
 
-   :::image type="content" source="../../media/copilot-in-defender/script-analyzer/fig2-script-analysis.png" alt-text="Screenshot highlighting the Analyze button on the device timeline view of Microsoft Defender XDR." lightbox="../../media/copilot-in-defender/script-analyzer/fig2-script-analysis.png":::
+   :::image type="content" source="../../media/copilot-in-defender/script-analyzer/copilot-defender-script-analysis-device-timeline-small.png" alt-text="Screenshot highlighting the Analyze button on the device timeline view of Microsoft Defender XDR." lightbox="../../media/copilot-in-defender/script-analyzer/copilot-defender-script-analysis-device-timeline.png":::
 
-2. Copilot runs script analysis and displays the results in the Copilot pane. You can see specific lines in the code by selecting **Show code** to expand the script or code, and select **Hide code** to close.
+2. Copilot runs script analysis and displays the results in the Copilot pane. Select **Show code** to expand the script, or **Hide code** to close the expansion.
 
-   :::image type="content" source="../../media/copilot-in-defender/script-analyzer/fig3-script-analysis.png" alt-text="Screenshot of the Copilot pane with script analysis results in the Microsoft Defender XDR incident page." lightbox="../../media/copilot-in-defender/script-analyzer/fig3-script-analysis.png":::
-
-3. Select the **More actions** ellipsis (...) on the upper right of the script analysis card to copy or regenerate the results, or view the results in the Copilot for Security standalone experience. Selecting **Open in Security Copilot** opens a new tab to the Copilot standalone portal where you can input prompts and access other plugins.
-
-   :::image type="content" source="../../media/copilot-in-defender/script-analyzer/fig4-script-analysis.png" alt-text="Screenshot highlighting the available options in the Copilot script analysis card." lightbox="../../media/copilot-in-defender/script-analyzer/fig4-script-analysis.png":::
+   :::image type="content" source="../../media/copilot-in-defender/script-analyzer/copilot-defender-script-analysis-results-small.png" alt-text="Screenshot of the Copilot pane with script analysis results in the Microsoft Defender XDR incident page." lightbox="../../media/copilot-in-defender/script-analyzer/copilot-defender-script-analysis-results.png":::
 
    > [!TIP]
-   > You can navigate to a file, IP, or URL page from the Copilot results pane by clicking on the entity.
+   > You can navigate to a file, IP, or URL page from the Copilot results pane by clicking on the evidence in the results.
+
+3. Select the **More actions** ellipsis (...) on the upper right of the script analysis card to copy or regenerate the results, or view the results in the Copilot for Security standalone experience. Selecting **Open in Copilot for Security** opens a new tab to the Copilot standalone portal where you can input prompts and access other plugins.
+
+   :::image type="content" source="../../media/copilot-in-defender/script-analyzer/copilot-defender-script-analysis-incident-more-actions.png" alt-text="Screenshot highlighting the available options in the Copilot script analysis card." lightbox="../../media/copilot-in-defender/script-analyzer/fig4-script-analysis.png":::
 
 4. Review the results. You can provide feedback on the results by selecting the feedback icon ![Screenshot of the feedback icon for Copilot in Defender cards](../../media/copilot-in-defender/copilot-defender-feedback.png) found at the end of the script analysis card.
 

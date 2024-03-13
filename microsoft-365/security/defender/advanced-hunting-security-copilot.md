@@ -20,7 +20,7 @@ ms.collection:
   - m365-security
   - tier1
 ms.topic: conceptual
-ms.date: 03/01/2024
+ms.date: 4/1/2024
 ---
 
 # Microsoft Copilot for Security in advanced hunting

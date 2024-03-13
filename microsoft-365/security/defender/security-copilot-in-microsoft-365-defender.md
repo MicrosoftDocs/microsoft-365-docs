@@ -20,7 +20,7 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - MET150
-ms.date: 04/01/2024
+ms.date: 4/1/2024
 ---
 
 # Microsoft Copilot for Security in Microsoft Defender
@@ -37,9 +37,9 @@ This article provides an overview for users of the Copilot for Security embedded
 
 To ensure that you have access to Copilot for Security, see the [Copilot for Security purchase and licensing information](/security-copilot/faq-security-copilot). Once you have access to Copilot for Security, the key capabilities discussed below become accessible in Microsoft Defender.
 
-## Investigation and response capabilities
+## Investigate and respond to incidents like an expert
 
-Copilot in Defender enables security teams to tackle attack investigations in a timely manner with ease and precision. Bringing AI to Microsoft Defender allows teams to understand attacks immediately, quickly analyze suspicious files and scripts, and promptly assess and apply appropriate mitigation to stop and contain attacks.
+Enable security teams to tackle attack investigations in a timely manner with ease and precision. Bringing AI to Microsoft Defender allows teams to understand attacks immediately, quickly analyze suspicious files and scripts, and promptly assess and apply appropriate mitigation to stop and contain attacks.
 
 ### Summarize incidents quickly
 
@@ -63,7 +63,7 @@ Most attackers rely on sophisticated malware when launching attacks to avoid det
 
 Investigating devices involved in incidents can be a tasking job. Copilot in Defender can help you quickly [summarize a device's information](copilot-in-defender-device-summary.md) to get essential information about the device, including the device's security posture, any unusual behaviors, and vulnerable software information.
 
-### Analyze files
+### Analyze files promptly
 
 The [file analysis](copilot-in-defender-file-analysis.md) capability in Copilot in Defender helps security teams quickly understand the nature of a file, including detection information, related file certificate, list of API calls the file makes, and strings found in the file. Having file analysis instantly available to security teams allows them to quickly assess the nature of a file and decide on the next steps.
 
@@ -73,15 +73,25 @@ Security operations teams usually write reports to record important information,
 
 :::image type="content" source="../../media/copilot-in-defender/incident-report/fig2-new-sec-copilot-m365d-create-report.png" alt-text="Screenshot of the Copilot-generated incident report in the incident page." lightbox="../../media/copilot-in-defender/incident-report/fig2-expand-sec-copilot-m365d-create-report.png":::
 
-## Threat hunting capabilities
+## Hunt like a pro
 
-Copilot in Defender also provides capabilities to help security teams proactively hunt for threats in their network. These capabilities include generating KQL queries from natural-language input and providing a query assistant to help security teams quickly generate KQL queries for advanced hunting.
+Copilot in Defender also provides threat hunting capabilities to help security teams proactively hunt for threats in their network. These capabilities include generating KQL queries from natural-language input and providing a query assistant to help security teams quickly generate KQL queries for advanced hunting.
 
 ### Generate KQL queries from natural-language input
 
 Security teams who use advanced hunting to proactively hunt for threats in their network can now use a query assistant that converts any natural-language question in the context of threat hunting, into a ready-to-run KQL query. The query assistant saves security teams time by generating a KQL query that can then be automatically run or further tweaked according to the analyst needs. Read more about the query assistant in [Copilot for Security in advanced hunting](advanced-hunting-security-copilot.md).
 
-:::image type="content" source="../../media/copilot-in-defender/generate-kql/generate-kql-queries.png" alt-text="Screenshot of Copilot for Security in advanced hunting." lightbox="../../media/copilot-in-defender/generate-kql/generate-kql-queries-big.png":::
+:::image type="content" source="../../media/advanced-hunting-security-copilot-pane.png" alt-text="Screenshot of the Copilot pane in advanced hunting." lightbox="../../media/advanced-hunting-security-copilot-pane-big.png":::
+
+## Skillfully gather and apply the latest threat intelligence
+
+Empower your security teams with the latest threat intelligence to help them make informed decisions. Copilot in Defender provides the latest threat intelligence to help security teams understand the latest threats.
+
+### Monitor threat intelligence
+
+Ask your assistant to summarize the latest threats impacting your environment, to prioritize resolving threats based on your exposure levels, or to find threat actors that might be targeting your industry. Read more about the threat intelligence capabilities in [Copilot for Security in threat intelligence](/defender/threat-intelligence/security-copilot-and-defender-threat-intelligence.md#using-copilot-for-security-on-defender-ti-in-microsoft-defender-xdr).
+
+:::image type="content" source="../../media/copilot-in-defender/TI/copilot-defender-threat-intel-small.png" alt-text="Screenshot of Copilot for Defender threat intelligence landing page." lightbox="../../media/copilot-in-defender/TI/copilot-defender-threat-intel-full.png":::
 
 ## Provide feedback to Copilot in Defender
 
@@ -89,7 +99,7 @@ Copilot in Defender uses AI and machine learning to process data and generate re
 
 All key features have an option for providing feedback. To provide feedback, perform the following steps:
 
-1. Select the down arrow beside the face icon located at the bottom of any response card in the Copilot pane.
+1. Select the feedback icon ![Screenshot of the feedback icon for Copilot in Defender cards](../../media/copilot-in-defender/copilot-defender-feedback.png) located at the bottom of any results card in the Copilot pane.
 2. Select **Confirmed, it looks great** if the results are accurate based on your assessment. When results are confirmed, you can provide more information in the next dialog box.
 3. Select **Off-target, inaccurate** if any detail is incorrect or incomplete based on your assessment. You can provide more information about your assessment in the next dialog box and submit this assessment to Microsoft.
 4. You can also report the results if it contains questionable or ambiguous information by selecting **Potentially harmful, inappropriate**. Provide more information about the results in the next dialog box and select Submit.
@@ -111,6 +121,7 @@ You can learn more about plugins implemented in [Manage plugins in Copilot for S
 - [Generate device summary](copilot-in-defender-device-summary.md)
 - [Generate KQL queries](advanced-hunting-security-copilot.md)
 - [Create incident reports](security-copilot-m365d-create-incident-report.md)
+- [Use threat intelligence](/defender/threat-intelligence/security-copilot-and-defender-threat-intelligence)
 
 ## See also
 
