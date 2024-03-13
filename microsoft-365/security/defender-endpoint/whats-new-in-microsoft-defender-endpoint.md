@@ -59,9 +59,9 @@ Two new ASR rules are now in public preview:
 
 **Microsoft Defender for Endpoint on macOS** features are in public preview:
 
-- **Built-in Scheduled Scan for macOS** (preview): Scheduled Scan built-in for Microsoft Defender for Endpoint on macOS is now available in Public Preview. To learn more, see [How to schedule scans with Microsoft Defender for Endpoint on macOS](/microsoft-365/security/defender-endpoint/mac-schedule-scan?view=o365-worldwide).
+- **Built-in Scheduled Scan for macOS** (preview): Scheduled Scan built-in for Microsoft Defender for Endpoint on macOS is now available in public preview. To learn more, see [How to schedule scans with Microsoft Defender for Endpoint on macOS](mac-schedule-scan.md).
 
-- **Troubleshooting mode for macOS** (preview): Troubleshooting mode helps you identify instances where antivirus might be causing issues with your applications or system resources. Troubleshooting mode for macOS is now available in Public Preview. To learn more, see [Troubleshooting mode in Microsoft Defender for Endpoint on macOS](/microsoft-365/security/defender-endpoint/mac-troubleshoot-mode?view=o365-worldwide).
+- **Troubleshooting mode for macOS** (preview): Troubleshooting mode for macOS is now available in public preview. Troubleshooting mode helps you identify instances where antivirus might be causing issues with your applications or system resources. To learn more, see [Troubleshooting mode in Microsoft Defender for Endpoint on macOS](mac-troubleshoot-mode.md).
 
 ## January 2024
 
