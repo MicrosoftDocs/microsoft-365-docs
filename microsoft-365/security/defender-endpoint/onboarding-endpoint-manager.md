@@ -247,7 +247,7 @@ Then, you continue by creating several different types of endpoint security poli
 9. Review the details, then select  **Create**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/2c2e87c5fedc87eba17be0cdeffdb17f.png" alt-text="The Microsoft Intune admin center24" lightbox="images/2c2e87c5fedc87eba17be0cdeffdb17f.png":::
+    > :::image type="content" source="media/2c2e87c5fedc87eba17be0cdeffdb17f.png" alt-text="The Microsoft Intune admin center24" lightbox="media/2c2e87c5fedc87eba17be0cdeffdb17f.png":::
 
 10. View the policy.
 
