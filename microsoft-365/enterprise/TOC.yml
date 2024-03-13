@@ -422,10 +422,6 @@
               href: upgrade-from-lync-2013.md
             - name: Project Server 2013
               href: project-server-2013-end-of-support.md
-         - name: Office 2010
-           items: 
-            - name: Upgrade from Office 2010 servers and clients
-              href: upgrade-from-office-2010-servers-and-products.md
 
 - name: Compliance
   href: ../compliance/index.yml
