@@ -296,7 +296,7 @@ Then, you continue by creating several different types of endpoint security poli
 9. Select **Review and Create > Create**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/8ee0405f1a96c23d2eb6f737f11c1ae5.png" alt-text="The Microsoft Intune admin center31" lightbox="images/8ee0405f1a96c23d2eb6f737f11c1ae5.png":::
+    > :::image type="content" source="media/8ee0405f1a96c23d2eb6f737f11c1ae5.png" alt-text="The Microsoft Intune admin center31" lightbox="media/8ee0405f1a96c23d2eb6f737f11c1ae5.png":::
 
 10. View the policy.
 
@@ -327,7 +327,7 @@ To confirm that the configuration policy is applied to your test device, follow 
 3. Select  **Device Status** to see the status.
 
     > [!div class="mx-imgBorder"]
-    > [![Image of Microsoft Intune admin center35.](images/18a50df62cc38749000dbfb48e9a4c9b.png)](images/18a50df62cc38749000dbfb48e9a4c9b.png#lightbox)
+    > [![Image of Microsoft Intune admin center35.](media/18a50df62cc38749000dbfb48e9a4c9b.png)](media/18a50df62cc38749000dbfb48e9a4c9b.png#lightbox)
 
 4. Select  **User Status** to see the status.
 

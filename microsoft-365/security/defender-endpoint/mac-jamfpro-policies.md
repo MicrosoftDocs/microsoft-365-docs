@@ -159,7 +159,7 @@ Note that you must use exact `com.microsoft.wdav` as the **Preference Domain**, 
 
 7. Select the **Scope** tab.
 
-   :::image type="content" source="images/9fc17529e5577eefd773c658ec576a7d.png" alt-text="The Configuration profile scope." lightbox="images/9fc17529e5577eefd773c658ec576a7d.png":::
+   :::image type="content" source="media/9fc17529e5577eefd773c658ec576a7d.png" alt-text="The Configuration profile scope." lightbox="media/9fc17529e5577eefd773c658ec576a7d.png":::
 
 8. Select **Contoso's Machine Group**.
 
@@ -360,13 +360,13 @@ All you need to do to have updates is to download an updated schema, edit existi
 
 12. The file is uploaded.
 
-    :::image type="content" source="images/33e2b2a1611fdddf6b5b79e54496e3bb.png" alt-text="The uploaded file related to the configuration settings." lightbox="images/33e2b2a1611fdddf6b5b79e54496e3bb.png":::
+    :::image type="content" source="media/33e2b2a1611fdddf6b5b79e54496e3bb.png" alt-text="The uploaded file related to the configuration settings." lightbox="media/33e2b2a1611fdddf6b5b79e54496e3bb.png":::
 
     :::image type="content" source="images/a422e57fe8d45689227e784443e51bd1.png" alt-text="The configuration settings page." lightbox="images/a422e57fe8d45689227e784443e51bd1.png":::
 
 13. Select the **Scope** tab.
 
-    :::image type="content" source="images/9fc17529e5577eefd773c658ec576a7d.png" alt-text="The scope for the configuration settings." lightbox="images/9fc17529e5577eefd773c658ec576a7d.png":::
+    :::image type="content" source="media/9fc17529e5577eefd773c658ec576a7d.png" alt-text="The scope for the configuration settings." lightbox="media/9fc17529e5577eefd773c658ec576a7d.png":::
 
 14. Select **Contoso's Machine Group**.
 
@@ -424,7 +424,7 @@ These steps are applicable on macOS 11 (Big Sur) or later.
 
 5. Select **Add**, then select **Save**.
 
-   :::image type="content" source="images/09a275e321268e5e3ac0c0865d3e2db5.png" alt-text="The page on which you can save values for the configuration settings contoso machine group." lightbox="images/09a275e321268e5e3ac0c0865d3e2db5.png":::
+   :::image type="content" source="media/09a275e321268e5e3ac0c0865d3e2db5.png" alt-text="The page on which you can save values for the configuration settings contoso machine group." lightbox="media/09a275e321268e5e3ac0c0865d3e2db5.png":::
 
    :::image type="content" source="media/4d2d1d4ee13d3f840f425924c3df0d51.png" alt-text="The page that displays the completion notification of the configuration settings." lightbox="media/4d2d1d4ee13d3f840f425924c3df0d51.png":::
 
@@ -499,7 +499,7 @@ These steps are applicable on macOS 11 (Big Sur) or later.
 
 12. Select the **Scope** tab.
 
-    :::image type="content" source="images/10ab98358b2d602f3f67618735fa82fb.png" alt-text="The Scope tab for the configuration settings." lightbox="images/10ab98358b2d602f3f67618735fa82fb.png":::
+    :::image type="content" source="media/10ab98358b2d602f3f67618735fa82fb.png" alt-text="The Scope tab for the configuration settings." lightbox="media/10ab98358b2d602f3f67618735fa82fb.png":::
 
 13. Select **Add**.
 
@@ -542,7 +542,7 @@ These steps are applicable on macOS 11 (Big Sur) or later.
     - Identifier Type: Bundle ID
     - Code Requirement: `identifier "com.microsoft.wdav" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`
 
-    :::image type="content" source="images/22cb439de958101c0a12f3038f905b27.png" alt-text="The configuration setting privacy preference policy control details." lightbox="images/22cb439de958101c0a12f3038f905b27.png":::
+    :::image type="content" source="media/22cb439de958101c0a12f3038f905b27.png" alt-text="The configuration setting privacy preference policy control details." lightbox="media/22cb439de958101c0a12f3038f905b27.png":::
 
 6. Select **+ Add**.
 
@@ -752,7 +752,7 @@ Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint 
     - Category: None (default)
     - Filename: Choose File
 
-    :::image type="content" source="images/21de3658bf58b1b767a17358a3f06341.png" alt-text="The General tab for configuration settings." lightbox="images/21de3658bf58b1b767a17358a3f06341.png":::
+    :::image type="content" source="media/21de3658bf58b1b767a17358a3f06341.png" alt-text="The General tab for configuration settings." lightbox="media/21de3658bf58b1b767a17358a3f06341.png":::
 
     Open the file and point it to `wdav.pkg` or `wdav_MDM_Contoso_200329.pkg`.
 
@@ -770,7 +770,7 @@ Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint 
 
 8. Select **Save**. The package is uploaded to Jamf Pro.
 
-   :::image type="content" source="images/33f1ecdc7d4872555418bbc3efe4b7a3.png" alt-text="The configuration settings pack uploading process for the package related to the configuration settings." lightbox="images/33f1ecdc7d4872555418bbc3efe4b7a3.png":::
+   :::image type="content" source="media/33f1ecdc7d4872555418bbc3efe4b7a3.png" alt-text="The configuration settings pack uploading process for the package related to the configuration settings." lightbox="media/33f1ecdc7d4872555418bbc3efe4b7a3.png":::
 
    It can take a few minutes for the package to be available for deployment.
 
@@ -796,7 +796,7 @@ Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint 
 
 14. Select **Packages > Configure**.
 
-    :::image type="content" source="images/8fb4cc03721e1efb4a15867d5241ebfb.png" alt-text="The option to configure packages." lightbox="images/8fb4cc03721e1efb4a15867d5241ebfb.png":::
+    :::image type="content" source="media/8fb4cc03721e1efb4a15867d5241ebfb.png" alt-text="The option to configure packages." lightbox="media/8fb4cc03721e1efb4a15867d5241ebfb.png":::
 
 15. Select the **Add** button next to **Microsoft Defender Advanced Threat Protection and Microsoft Defender Antivirus**.
 
@@ -804,7 +804,7 @@ Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint 
 
 16. Select **Save**.
 
-    :::image type="content" source="images/9d6e5386e652e00715ff348af72671c6.png" alt-text="The save option for the configuration settings." lightbox="images/9d6e5386e652e00715ff348af72671c6.png":::
+    :::image type="content" source="media/9d6e5386e652e00715ff348af72671c6.png" alt-text="The save option for the configuration settings." lightbox="media/9d6e5386e652e00715ff348af72671c6.png":::
 
 17. Create a smart group for machines with Microsoft Defender profiles.
 
