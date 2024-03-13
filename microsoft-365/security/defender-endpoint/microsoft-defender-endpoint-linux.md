@@ -30,7 +30,7 @@ ms.date: 11/29/2023
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-This topic describes how to install, configure, update, and use Microsoft Defender for Endpoint on Linux.
+This article describes how to install, configure, update, and use Microsoft Defender for Endpoint on Linux.
 
 > [!CAUTION]
 > Running other third-party endpoint protection products alongside Microsoft Defender for Endpoint on Linux is likely to lead to performance problems and unpredictable side effects. If non-Microsoft endpoint protection is an absolute requirement in your environment, you can still safely take advantage of Defender for Endpoint on Linux EDR functionality after configuring the antivirus functionality to run in [Passive mode](linux-preferences.md#enforcement-level-for-antivirus-engine).
@@ -88,6 +88,7 @@ In general you need to take the following steps:
   - Ubuntu 16.04 LTS or higher LTS
    - Debian 9 - 12
   - SUSE Linux Enterprise Server 12 or higher
+  - SUSE Linux Enterprise Server 15 or higher
   - Oracle Linux 7.2 or higher
   - Oracle Linux 8.x
   - Oracle Linux 9.x
@@ -250,7 +251,7 @@ High I/O workloads from certain applications can experience performance issues w
 
 ## Resources
 
-- For more information about logging, uninstalling, or other topics, see [Resources](linux-resources.md).
+- For more information about logging, uninstalling, or other articles, see [Resources](linux-resources.md).
 
 ## Related articles
 
