@@ -162,7 +162,7 @@ Then, you continue by creating several different types of endpoint security poli
 9. You can view your completed policy.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/5a568b6878be8243ea2b9d82d41ed297.png" alt-text="The Microsoft Intune admin center11" lightbox="images/5a568b6878be8243ea2b9d82d41ed297.png":::
+    > :::image type="content" source="media/5a568b6878be8243ea2b9d82d41ed297.png" alt-text="The Microsoft Intune admin center11" lightbox="media/5a568b6878be8243ea2b9d82d41ed297.png":::
 
 ### Next-generation protection
 
@@ -171,7 +171,7 @@ Then, you continue by creating several different types of endpoint security poli
 2. Navigate to **Endpoint security > Antivirus > Create Policy**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/6b728d6e0d71108d768e368b416ff8ba.png" alt-text="The Microsoft Intune admin center12" lightbox="images/6b728d6e0d71108d768e368b416ff8ba.png":::
+    > :::image type="content" source="media/6b728d6e0d71108d768e368b416ff8ba.png" alt-text="The Microsoft Intune admin center12" lightbox="media/6b728d6e0d71108d768e368b416ff8ba.png":::
 
 3. Select **Platform - Windows 10 and Later - Windows and Profile - Microsoft Defender Antivirus > Create**.
 
@@ -237,7 +237,7 @@ Then, you continue by creating several different types of endpoint security poli
 7. Add Scope Tags as required, then select  **Next**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/6daa8d347c98fe94a0d9c22797ff6f28.png" alt-text="The Microsoft Intune admin center22" lightbox="images/6daa8d347c98fe94a0d9c22797ff6f28.png":::
+    > :::image type="content" source="media/6daa8d347c98fe94a0d9c22797ff6f28.png" alt-text="The Microsoft Intune admin center22" lightbox="media/6daa8d347c98fe94a0d9c22797ff6f28.png":::
 
 8. Select groups to include and assign to test group, then select  **Next**.
 
@@ -252,7 +252,7 @@ Then, you continue by creating several different types of endpoint security poli
 10. View the policy.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/7a631d17cc42500dacad4e995823ffef.png" alt-text="The Microsoft Intune admin center25" lightbox="images/7a631d17cc42500dacad4e995823ffef.png":::
+    > :::image type="content" source="media/7a631d17cc42500dacad4e995823ffef.png" alt-text="The Microsoft Intune admin center25" lightbox="media/7a631d17cc42500dacad4e995823ffef.png":::
 
 ### Attack Surface Reduction - Web Protection
 
