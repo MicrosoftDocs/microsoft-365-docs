@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: lauris
-ms.date: 05/01/2023
+ms.date: 03/11/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -49,7 +49,7 @@ To implement a Microsoft Syntex solution:
 
 3. Go to the document library and create a modern template using an existing report. Create fields for the values that are entered by the frontline workers. Associate the fields with the columns of the SharePoint list you previously set up.  
 
-4. Now create a Power Automate flow using the action “Generate document using Syntex” and use the trigger “When a list item is created.” This action ensures that whenever a new entry is added by a frontline worker to the list, a new report is generated.  
+4. Now create a Power Automate flow using the action “Generate document using Microsoft Syntex” and use the trigger “When a list item is created.” This action ensures that whenever a new entry is added by a frontline worker to the list, a new report is generated.  
 
 5. Using Microsoft Forms, you can create a form for frontline workers to enter values in the list or expose the list itself for them to add values.  
 

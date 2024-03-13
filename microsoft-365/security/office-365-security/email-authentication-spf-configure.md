@@ -4,7 +4,7 @@ f1.keywords:
   - CSH
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 ms.date: 1/29/2024
 audience: ITPro
 ms.topic: how-to
@@ -61,7 +61,7 @@ The rest of this article describes the SPF TXT records that you need to create f
 > [!TIP]
 > There are no admin portals or PowerShell cmdlets in Microsoft 365 for you to manage SPF records in your domain. Instead, you create the SPF TXT record at your domain registrar or DNS hosting service (often the same company).
 >
-> We provide instructions to create the proof of domain ownership TXT record for Microsoft 365 at many domain registrars. You can use these instructions as a starting point to create the SPF TXT record value. For more information, see [Add DNS records to connect your domain](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+> We provide instructions to create the proof of domain ownership TXT record for Microsoft 365 at many domain registrars. You can use these instructions as a starting point to create the SPF TXT record value. For more information, see [Add DNS records to connect your domain](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
 >
 > If you're unfamiliar with DNS configuration, contact your domain registrar and ask for help.
 
@@ -201,4 +201,4 @@ As described in [How SPF, DKIM, and DMARC work together to authenticate email me
 - [Use DKIM to validate outbound email sent from your custom domain](email-authentication-dkim-configure.md)
 - [Use DMARC to validate email](email-authentication-dmarc-configure.md)
 
-For mail coming _into_ Microsoft 365, you might also need to configure trusted ARC sealers if you use services that modify messages in transit before delivery to your organization. For more information, see [Configure trusted ARC sealers](/microsoft-365/security/office-365-security/email-authentication-arc-configure).
+For mail coming _into_ Microsoft 365, you might also need to configure trusted ARC sealers if you use services that modify messages in transit before delivery to your organization. For more information, see [Configure trusted ARC sealers](email-authentication-arc-configure.md).

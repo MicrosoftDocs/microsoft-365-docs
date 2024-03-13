@@ -35,6 +35,7 @@ The following are the prerequisites for using Microsoft Copilot for Microsoft 36
 > [!NOTE]
 > - For Copilot to work in Word Online, Excel Online, and PowerPoint Online, you need to have third-party cookies enabled.
 > - Review your privacy settings for Microsoft 365 Apps because those settings might have an effect on the availability of Microsoft Copilot for Microsoft 365 features. For more information, see [Microsoft Copilot for Microsoft 365 and policy settings for connected experiences](microsoft-365-copilot-privacy.md#microsoft-copilot-for-microsoft-365-and-policy-settings-for-connected-experiences).
+> - Copilot is not available on Device-Based Licensing for Office 365 Apps.
 
 ### Microsoft Entra ID
 
@@ -72,20 +73,28 @@ To use Microsoft Copilot for Microsoft 365 with Microsoft Loop, you must have Lo
 
 To use Microsoft Copilot for Microsoft 365 with Microsoft Whiteboard, you must have Whiteboard enabled for your tenant. To learn more about Microsoft Whiteboard, see [Manage access to Microsoft Whiteboard for your organization](/microsoft-365/whiteboard/manage-whiteboard-access-organizations).
 
+### Office Feature Updates task
+
+The Office Feature Updates task is required for core Copilot experiences in apps such as Word, PowerPoint, Excel and OneNote, to work properly. This task should be allowed to run on its regular schedule, and allowed to access the required network resources.
+
+For more information about the Office Feature Updates task, see [Office Feature Updates task description and FAQ](/microsoft-365/troubleshoot/updates/office-feature-updates-task-faq). For more information about which network resources should be allowed, see [Network requirements](#network-requirements).
+
 ## License requirements
 
 Copilot for Microsoft 365 is available as an add-on plan with one of the following licensing prerequisites:
 
 - Microsoft 365 E5
 - Microsoft 365 E3
-- Office 365 E3  
+- Office 365 E3
 - Office 365 E5
-- Microsoft 365 A5 for faculty
-- Microsoft 365 A3 for faculty
-- Office 365 A5 for faculty
-- Office 365 A3 for faculty
 - Microsoft 365 Business Standard
 - Microsoft 365 Business Premium
+- Microsoft 365 A5 for faculty*
+- Microsoft 365 A3 for faculty*
+- Office 365 A5 for faculty*
+- Office 365 A3 for faculty*
+
+*Available via Enrollment for Education Solutions (EES) or Cloud Solution Provider only.
 
 You can use the [Microsoft Copilot for Microsoft 365 setup guide](https://admin.microsoft.com/Adminportal/Home?Q=learndocs#/modernonboarding/microsoft365copilotsetupguide) in the Microsoft 365 admin center to assign the required licenses to users. For more information, see [Assign licenses to users in the Microsoft 365 admin center](/microsoft-365/admin/manage/assign-licenses-to-users).
 

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 10/26/2020
+ms.date: 02/29/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -32,7 +32,7 @@ The Microsoft 365 Reports dashboard shows you the activity overview across the p
 ## How do I get to the Viva Engage groups activity report?
 
 1. In the admin center, go to the **Reports**, then select **Usage**. 
-2. From the dashboard homepage, click on the **View more** button on the Viva Engage card.
+2. From the dashboard homepage, select **Viva Engage** in the left navigation, then select the **Groups activity** tab.
   
 ## Interpret the Viva Engage groups activity report
 
@@ -48,9 +48,8 @@ You can also export the report data into an Excel .csv file by selecting the **E
 
 The **Viva Engage groups activity** report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days. However, if you select a particular day in the report, the table will show data for up to 28 days from the current date (not the date the report was generated).
   
-|Item|Description|
+|Metric|Definition|
 |:-----|:-----|
-|**Metric**|**Definition**|
 |Group name  |The name of the group. |
 |Group admin  |The name of the group administrator, or owner.  |
 |Deleted  |The number of deleted Viva Engage groups. If the group is deleted, but had activity in the reporting period it will show up in the grid with this flag set to true.  |

@@ -8,7 +8,7 @@ author: poliveria
 ms.localizationpriority: medium
 manager: dolmont
 audience: ITPro
-ms.collection: 
+ms.collection:
   - Tier1
 ms.topic: conceptual
 ms.date: 12/04/2023
@@ -49,12 +49,12 @@ This article introduces you to Copilot and includes sample prompts that can help
 
     In the **Manage plugins** pop-up window that appears, confirm that the **Microsoft Defender Threat Intelligence** toggle is turned on, then close the window.
 
-    ![Screenshot of the Manage plugins pop-up window with the Microsoft Defender Threat Intelligence plugin highlighted.](/defender/threat-intelligence/media/defender-ti-and-copilot/copilot-manage-plugins.png)
+    ![Screenshot of the Manage plugins pop-up window with the Microsoft Defender Threat Intelligence plugin highlighted.](media/defender-ti-and-copilot/copilot-manage-plugins.png)
 
     > [!NOTE]
     > Some roles can turn the toggle on or off for plugins like Defender TI. For more information, read [Manage plugins in Microsoft Copilot for Security](/security-copilot/manage-plugins).
 
-3.	Enter your prompt in the prompt bar.
+3. Enter your prompt in the prompt bar.
 
 ### Built-in system features
 
@@ -76,35 +76,41 @@ To view these promptbooks, in the prompt bar, select the **Prompts** icon then s
 You can use many prompts to get information from Defender TI. This section lists some ideas and examples.
 
 #### General information about threat intelligence trends
-Get threat intelligence from threat articles and threat actors. 
 
-**Sample prompts** 
+Get threat intelligence from threat articles and threat actors.
+
+**Sample prompts** :
+
 - Summarize the recent threat intelligence.
-- Show me the latest threat articles. 
+- Show me the latest threat articles.
 - Get threat articles associated with the finance industry.
 
 #### IP address and host contextual information in relation to threat intelligence
 
 Get information on datasets associated with IP addresses and hosts, such as ports, reputation scores, components, certificates, cookies, services, and host pairs.
 
-**Sample prompts** 
-- Give me the reputation score of the host _\<host name\>_. 
+**Sample prompts**:
+
+- Give me the reputation score of the host _\<host name\>_.
 - Get open ports for IP address _\<IP address\>_.
 - Get the SSL certificates for the IP address _\<IP address\>_.
 
 #### Threat actor mapping and infrastructure
 Get information on threat actors and the tactics, techniques, and procedures (TTPs), sponsored states, industries, and IOCs associated with them.
 
-**Sample prompts** 
+**Sample prompts**:
+
 - Tell me more about Silk Typhoon.
 - Share the IOCs associated with Silk Typhoon.
 - Share the TTPs associated with Silk Typhoon.
 - Share threat actors associated with Russia.
 
 #### CVE vulnerability data 
+
 Get contextual information and threat intelligence on Common Vulnerabilities and Exposures (CVEs).
 
-**Sample prompts** 
+**Sample prompts**:
+
 - Share the technologies that are susceptible to the vulnerability CVE-2021-44228.
 - Summarize the vulnerability CVE-2021-44228.
 - Show me the latest CVEs.
