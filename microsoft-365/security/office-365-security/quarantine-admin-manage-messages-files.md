@@ -55,12 +55,12 @@ Watch this short video to learn how to manage quarantined messages as an admin.
   - [Email & collaboration permissions in the Microsoft Defender portal](mdo-portal-permissions.md):
     - _Take action on quarantined messages for all users_: Membership in the **Quarantine Administrator**, **Security Administrator**, or **Organization Management** role groups.
       - _Submit messages from quarantine to Microsoft_: Membership in the **Quarantine Administrator** or **Security Administrator** role groups.
-      - _Use **Block sender** to [add senders to your own Blocked Senders list](#block-email-senders-from-quarantine)_: Membership in the **Security Reader**, **Quarantine Administrator** or **Security Administrator** role groups.
+      - _Use **Block sender** to [add senders to your own Blocked Senders list](#block-email-senders-from-quarantine)_: By default, all users have the required permissions. Whether the **Block sender** action is available to non-admins is typically controlled by the [Block sender permission](quarantine-policies.md#block-sender-permission) in quarantine policies. Assigning any permission that gives admin access to quarantine (for example, **Security Reader** or **Global Reader**) gives access to **Block sender** in quarantine.
     - _Read-only access to quarantined messages for all users_: Membership in the **Security Reader** or **Global Reader** role groups.
   - [Microsoft Entra permissions](/entra/identity/role-based-access-control/manage-roles-portal): Membership these roles gives users the required permissions _and_ permissions for other features in Microsoft 365:
     - _Take action on quarantined messages for all users_: Membership in the **Security Administrator or **Global Administrator** roles.
       - _Submit messages from quarantine to Microsoft_:  Membership in the **Security Administrator** role.
-      - _Use **Block sender** to [add senders to your own Blocked Senders list](#block-email-senders-from-quarantine)_: Membership in the **Security Reader** or **Security Administrator** roles.
+      - _Use **Block sender** to [add senders to your own Blocked Senders list](#block-email-senders-from-quarantine)_: By default, all users have the required permissions. Whether the **Block sender** action is available to non-admins is typically controlled by the [Block sender permission](quarantine-policies.md#block-sender-permission) in quarantine policies. Assigning any permission that gives admin access to quarantine (for example, **Security Reader** or **Global Reader**) gives access to **Block sender** in quarantine.
     - _Read-only access to quarantined messages for all users_: Membership in the **Global Reader** or **Security Reader** roles.
 
   > [!TIP]
