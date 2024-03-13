@@ -426,10 +426,6 @@
            items: 
             - name: Upgrade from Office 2010 servers and clients
               href: upgrade-from-office-2010-servers-and-products.md
-            - name: Office 2010 desktop
-              href: /DeployOffice/endofsupport/plan-upgrade-older-versions-office
-            - name: Exchange 2010
-              href: exchange-2010-end-of-support.md
 
 - name: Compliance
   href: ../compliance/index.yml
