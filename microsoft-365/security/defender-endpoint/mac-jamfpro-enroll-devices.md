@@ -74,7 +74,7 @@ For a complete list, see [About Computer Enrollment](https://docs.jamf.com/9.9/c
 
 1. In the Jamf Pro dashboard, navigate to **Prestage enrollments**.
 
-   :::image type="content" source="images/6fd0cb2bbb0e60a623829c91fd0826ab.png" alt-text="The configuration settings9" lightbox="images/6fd0cb2bbb0e60a623829c91fd0826ab.png":::
+   :::image type="content" source="media/6fd0cb2bbb0e60a623829c91fd0826ab.png" alt-text="The configuration settings9" lightbox="media/6fd0cb2bbb0e60a623829c91fd0826ab.png":::
 
 2. Follow the instructions in [Computer PreStage Enrollments](https://docs.jamf.com/9.9/casper-suite/administrator-guide/Computer_PreStage_Enrollments.html).
 
