@@ -52,23 +52,23 @@ For a complete list, see [About Computer Enrollment](https://docs.jamf.com/9.9/c
 
 3. In **Specify Recipients for the Invitation** > under **Email Addresses** enter the e-mail address(es) of the recipients.
 
-    :::image type="content" source="images/718b9d609f9f77c8b13ba88c4c0abe5d.png" alt-text="The configuration settings2" lightbox="images/718b9d609f9f77c8b13ba88c4c0abe5d.png":::
+    :::image type="content" source="media/718b9d609f9f77c8b13ba88c4c0abe5d.png" alt-text="The configuration settings2" lightbox="media/718b9d609f9f77c8b13ba88c4c0abe5d.png":::
 
     :::image type="content" source="media/ae3597247b6bc7c5347cf56ab1e820c0.png" alt-text="The configuration settings3" lightbox="media/ae3597247b6bc7c5347cf56ab1e820c0.png":::
 
     For example: janedoe@contoso.com
 
-    :::image type="content" source="images/4922c0fcdde4c7f73242b13bf5e35c19.png" alt-text="The configuration settings4" lightbox="images/4922c0fcdde4c7f73242b13bf5e35c19.png":::
+    :::image type="content" source="media/4922c0fcdde4c7f73242b13bf5e35c19.png" alt-text="The configuration settings4" lightbox="media/4922c0fcdde4c7f73242b13bf5e35c19.png":::
 
 4. Configure the message for the invitation.
 
    :::image type="content" source="images/ce580aec080512d44a37ff8e82e5c2ac.png" alt-text="The configuration settings5" lightbox="images/ce580aec080512d44a37ff8e82e5c2ac.png":::
 
-   :::image type="content" source="images/5856b765a6ce677caacb130ca36b1a62.png" alt-text="The configuration settings6" lightbox="images/5856b765a6ce677caacb130ca36b1a62.png":::
+   :::image type="content" source="media/5856b765a6ce677caacb130ca36b1a62.png" alt-text="The configuration settings6" lightbox="media/5856b765a6ce677caacb130ca36b1a62.png":::
 
-   :::image type="content" source="images/3ced5383a6be788486d89d407d042f28.png" alt-text="The configuration settings7" lightbox="images/3ced5383a6be788486d89d407d042f28.png":::
+   :::image type="content" source="media/3ced5383a6be788486d89d407d042f28.png" alt-text="The configuration settings7" lightbox="media/3ced5383a6be788486d89d407d042f28.png":::
 
-   :::image type="content" source="images/54be9c6ed5b24cebe628dc3cd9ca4089.png" alt-text="The configuration settings8" lightbox="images/54be9c6ed5b24cebe628dc3cd9ca4089.png":::
+   :::image type="content" source="media/54be9c6ed5b24cebe628dc3cd9ca4089.png" alt-text="The configuration settings8" lightbox="media/54be9c6ed5b24cebe628dc3cd9ca4089.png":::
 
 ## Enrollment Method 2: Prestage Enrollments
 

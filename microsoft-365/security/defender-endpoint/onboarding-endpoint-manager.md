@@ -82,7 +82,7 @@ In this section, we create a test group to assign your configurations on.
 2. Open **Groups > New Group**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/66f724598d9c3319cba27f79dd4617a4.png" alt-text="The Microsoft Intune admin center1" lightbox="images/66f724598d9c3319cba27f79dd4617a4.png":::
+    > :::image type="content" source="media/66f724598d9c3319cba27f79dd4617a4.png" alt-text="The Microsoft Intune admin center1" lightbox="media/66f724598d9c3319cba27f79dd4617a4.png":::
 
 3. Enter details and create a new group.
 
@@ -98,7 +98,7 @@ In this section, we create a test group to assign your configurations on.
 7. Find your test user or device and select it.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/149cbfdf221cdbde8159d0ab72644cd0.png" alt-text="The Microsoft Intune admin center3" lightbox="images/149cbfdf221cdbde8159d0ab72644cd0.png":::
+    > :::image type="content" source="media/149cbfdf221cdbde8159d0ab72644cd0.png" alt-text="The Microsoft Intune admin center3" lightbox="media/149cbfdf221cdbde8159d0ab72644cd0.png":::
 
 8. Your testing group now has a member to test.
 
@@ -122,7 +122,7 @@ Then, you continue by creating several different types of endpoint security poli
 2. Navigate to **Endpoint security > Endpoint detection and response**. Select on **Create Policy**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/58dcd48811147feb4ddc17212b7fe840.png" alt-text="The Microsoft Intune admin center4" lightbox="images/58dcd48811147feb4ddc17212b7fe840.png":::
+    > :::image type="content" source="media/58dcd48811147feb4ddc17212b7fe840.png" alt-text="The Microsoft Intune admin center4" lightbox="media/58dcd48811147feb4ddc17212b7fe840.png":::
 
 3. Under **Platform, select Windows 10, Windows 11, and Windows Server, Profile - Endpoint detection
     and response > Create**.
@@ -130,7 +130,7 @@ Then, you continue by creating several different types of endpoint security poli
 4. Enter a name and description, then select  **Next**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/a5b2d23bdd50b160fef4afd25dda28d4.png" alt-text="The Microsoft Intune admin center5" lightbox="images/a5b2d23bdd50b160fef4afd25dda28d4.png":::
+    > :::image type="content" source="media/a5b2d23bdd50b160fef4afd25dda28d4.png" alt-text="The Microsoft Intune admin center5" lightbox="media/a5b2d23bdd50b160fef4afd25dda28d4.png":::
 
 5. Select settings as required, then select  **Next**.
 
@@ -142,7 +142,7 @@ Then, you continue by creating several different types of endpoint security poli
     >
     > The following image is an example of what you'll see when Microsoft Defender for Endpoint is NOT integrated with Intune:
     >
-    > :::image type="content" source="images/2466460812371ffae2d19a10c347d6f4.png" alt-text="The Microsoft Intune admin center7" lightbox="images/2466460812371ffae2d19a10c347d6f4.png":::
+    > :::image type="content" source="media/2466460812371ffae2d19a10c347d6f4.png" alt-text="The Microsoft Intune admin center7" lightbox="media/2466460812371ffae2d19a10c347d6f4.png":::
 
 6. Add scope tags if necessary, then select  **Next**.
 
@@ -157,7 +157,7 @@ Then, you continue by creating several different types of endpoint security poli
 8. Review and accept, then select  **Create**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/289172dbd7bd34d55d24810d9d4d8158.png" alt-text="The Microsoft Intune admin center10" lightbox="images/289172dbd7bd34d55d24810d9d4d8158.png":::
+    > :::image type="content" source="media/289172dbd7bd34d55d24810d9d4d8158.png" alt-text="The Microsoft Intune admin center10" lightbox="media/289172dbd7bd34d55d24810d9d4d8158.png":::
 
 9. You can view your completed policy.
 
@@ -178,22 +178,22 @@ Then, you continue by creating several different types of endpoint security poli
 4. Enter name and description, then select  **Next**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/a7d738dd4509d65407b7d12beaa3e917.png" alt-text="The Microsoft Intune admin center13" lightbox="images/a7d738dd4509d65407b7d12beaa3e917.png":::
+    > :::image type="content" source="media/a7d738dd4509d65407b7d12beaa3e917.png" alt-text="The Microsoft Intune admin center13" lightbox="media/a7d738dd4509d65407b7d12beaa3e917.png":::
 
 5. In the **Configuration settings page**: Set the configurations you require for Microsoft Defender Antivirus (Cloud Protection, Exclusions, Real-Time Protection, and Remediation).
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/3840b1576d6f79a1d72eb14760ef5e8c.png" alt-text="The Microsoft Intune admin center14" lightbox="images/3840b1576d6f79a1d72eb14760ef5e8c.png":::
+    > :::image type="content" source="media/3840b1576d6f79a1d72eb14760ef5e8c.png" alt-text="The Microsoft Intune admin center14" lightbox="media/3840b1576d6f79a1d72eb14760ef5e8c.png":::
 
 6. Add scope tags if necessary, then select  **Next**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/2055e4f9b9141525c0eb681e7ba19381.png" alt-text="The Microsoft Intune admin center15" lightbox="images/2055e4f9b9141525c0eb681e7ba19381.png":::
+    > :::image type="content" source="media/2055e4f9b9141525c0eb681e7ba19381.png" alt-text="The Microsoft Intune admin center15" lightbox="media/2055e4f9b9141525c0eb681e7ba19381.png":::
 
 7. Select groups to include, assign to your test group, then select  **Next**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/48318a51adee06bff3908e8ad4944dc9.png" alt-text="The Microsoft Intune admin center16" lightbox="images/48318a51adee06bff3908e8ad4944dc9.png":::
+    > :::image type="content" source="media/48318a51adee06bff3908e8ad4944dc9.png" alt-text="The Microsoft Intune admin center16" lightbox="media/48318a51adee06bff3908e8ad4944dc9.png":::
 
 8. Review and create, then select  **Create**.
 
@@ -203,7 +203,7 @@ Then, you continue by creating several different types of endpoint security poli
 9. You see the configuration policy you created.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/38180219e632d6e4ec7bd25a46398da8.png" alt-text="The Microsoft Intune admin center18" lightbox="images/38180219e632d6e4ec7bd25a46398da8.png":::
+    > :::image type="content" source="media/38180219e632d6e4ec7bd25a46398da8.png" alt-text="The Microsoft Intune admin center18" lightbox="media/38180219e632d6e4ec7bd25a46398da8.png":::
 
 ### Attack Surface Reduction - Attack surface reduction rules
 
@@ -217,12 +217,12 @@ Then, you continue by creating several different types of endpoint security poli
     rules > Create**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/522d9bb4288dc9c1a957392b51384fdd.png" alt-text="The Microsoft Intune admin center19" lightbox="images/522d9bb4288dc9c1a957392b51384fdd.png":::
+    > :::image type="content" source="media/522d9bb4288dc9c1a957392b51384fdd.png" alt-text="The Microsoft Intune admin center19" lightbox="media/522d9bb4288dc9c1a957392b51384fdd.png":::
 
 5. Enter a name and description, then select  **Next**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/a5a71fd73ec389f3cdce6d1a6bd1ff31.png" alt-text="The Microsoft Intune admin center20" lightbox="images/a5a71fd73ec389f3cdce6d1a6bd1ff31.png":::
+    > :::image type="content" source="media/a5a71fd73ec389f3cdce6d1a6bd1ff31.png" alt-text="The Microsoft Intune admin center20" lightbox="media/a5a71fd73ec389f3cdce6d1a6bd1ff31.png":::
 
 6. In the **Configuration settings page**: Set the configurations you require for Attack surface reduction rules, then select  **Next**.
 
@@ -242,12 +242,12 @@ Then, you continue by creating several different types of endpoint security poli
 8. Select groups to include and assign to test group, then select  **Next**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/45cefc8e4e474321b4d47b4626346597.png" alt-text="The Microsoft Intune admin center23" lightbox="images/45cefc8e4e474321b4d47b4626346597.png":::
+    > :::image type="content" source="media/45cefc8e4e474321b4d47b4626346597.png" alt-text="The Microsoft Intune admin center23" lightbox="media/45cefc8e4e474321b4d47b4626346597.png":::
 
 9. Review the details, then select  **Create**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/2c2e87c5fedc87eba17be0cdeffdb17f.png" alt-text="The Microsoft Intune admin center24" lightbox="images/2c2e87c5fedc87eba17be0cdeffdb17f.png":::
+    > :::image type="content" source="media/2c2e87c5fedc87eba17be0cdeffdb17f.png" alt-text="The Microsoft Intune admin center24" lightbox="media/2c2e87c5fedc87eba17be0cdeffdb17f.png":::
 
 10. View the policy.
 
@@ -281,7 +281,7 @@ Then, you continue by creating several different types of endpoint security poli
     > For more information, see [Web Protection](web-protection-overview.md).
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/6104aa33a56fab750cf30ecabef9f5b6.png" alt-text="The Microsoft Intune admin center28" lightbox="images/6104aa33a56fab750cf30ecabef9f5b6.png":::
+    > :::image type="content" source="media/6104aa33a56fab750cf30ecabef9f5b6.png" alt-text="The Microsoft Intune admin center28" lightbox="media/6104aa33a56fab750cf30ecabef9f5b6.png":::
 
 7. Add **Scope Tags as required > Next**.
 
@@ -291,7 +291,7 @@ Then, you continue by creating several different types of endpoint security poli
 8. Select **Assign to test group > Next**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/45cefc8e4e474321b4d47b4626346597.png" alt-text="The Microsoft Intune admin center30" lightbox="images/45cefc8e4e474321b4d47b4626346597.png":::
+    > :::image type="content" source="media/45cefc8e4e474321b4d47b4626346597.png" alt-text="The Microsoft Intune admin center30" lightbox="media/45cefc8e4e474321b4d47b4626346597.png":::
 
 9. Select **Review and Create > Create**.
 
@@ -317,12 +317,12 @@ To confirm that the configuration policy is applied to your test device, follow 
     preceding section. The following example shows the next generation protection settings.
 
     > [!div class="mx-imgBorder"]
-    > [![Image of Microsoft Intune admin center33.](images/43ab6aa74471ee2977e154a4a5ef2d39.png)](images/43ab6aa74471ee2977e154a4a5ef2d39.png#lightbox) 
+    > [![Image of Microsoft Intune admin center33.](media/43ab6aa74471ee2977e154a4a5ef2d39.png)](media/43ab6aa74471ee2977e154a4a5ef2d39.png#lightbox) 
 
 2. Select  the **Configuration Policy** to view the policy status.
 
     > [!div class="mx-imgBorder"]
-    > [![Image of Microsoft Intune admin center34.](images/55ecaca0e4a022f0e29d45aeed724e6c.png)](images/55ecaca0e4a022f0e29d45aeed724e6c.png#lightbox)
+    > [![Image of Microsoft Intune admin center34.](media/55ecaca0e4a022f0e29d45aeed724e6c.png)](media/55ecaca0e4a022f0e29d45aeed724e6c.png#lightbox)
 
 3. Select  **Device Status** to see the status.
 
@@ -340,7 +340,7 @@ To confirm that the configuration policy is applied to your test device, follow 
     > This view is very useful to identify any settings that conflict with another policy.
 
     > [!div class="mx-imgBorder"]
-    > [![Image of Microsoft Intune admin center37.](images/42acc69d0128ed09804010bdbdf0a43c.png)](images/42acc69d0128ed09804010bdbdf0a43c.png#lightbox)
+    > [![Image of Microsoft Intune admin center37.](media/42acc69d0128ed09804010bdbdf0a43c.png)](media/42acc69d0128ed09804010bdbdf0a43c.png#lightbox)
 
 ### Confirm endpoint detection and response
 
@@ -352,7 +352,7 @@ To confirm that the configuration policy is applied to your test device, follow 
 2. After the configuration is applied, the Defender for Endpoint Protection service should be started.
 
     > [!div class="mx-imgBorder"]
-    > [![Image of Services panel2.](images/a621b699899f1b41db211170074ea59e.png)](images/a621b699899f1b41db211170074ea59e.png#lightbox)
+    > [![Image of Services panel2.](media/a621b699899f1b41db211170074ea59e.png)](media/a621b699899f1b41db211170074ea59e.png#lightbox)
 
 3. After the services are running on the device, the device appears in Microsoft Defender portal.
 
@@ -365,7 +365,7 @@ To confirm that the configuration policy is applied to your test device, follow 
     manage the settings as shown in the following image:
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/88efb4c3710493a53f2840c3eac3e3d3.png" alt-text="The settings page-1" lightbox="images/88efb4c3710493a53f2840c3eac3e3d3.png":::
+    > :::image type="content" source="media/88efb4c3710493a53f2840c3eac3e3d3.png" alt-text="The settings page-1" lightbox="media/88efb4c3710493a53f2840c3eac3e3d3.png":::
 
 2. After the policy is applied, you shouldn't be able to manually manage
     the settings.
@@ -375,7 +375,7 @@ To confirm that the configuration policy is applied to your test device, follow 
     > **Turn on real-time protection** are being shown as managed.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/9341428b2d3164ca63d7d4eaa5cff642.png" alt-text="The settings page-2" lightbox="images/9341428b2d3164ca63d7d4eaa5cff642.png":::
+    > :::image type="content" source="media/9341428b2d3164ca63d7d4eaa5cff642.png" alt-text="The settings page-2" lightbox="media/9341428b2d3164ca63d7d4eaa5cff642.png":::
 
 ### Confirm Attack Surface Reduction - Attack surface reduction rules
 
@@ -395,7 +395,7 @@ To confirm that the configuration policy is applied to your test device, follow 
 
 4. You should see the following lines with content, as shown in the following image:
 
-   :::image type="content" source="images/619fb877791b1fc8bc7dfae1a579043d.png" alt-text="The command line-2" lightbox="images/619fb877791b1fc8bc7dfae1a579043d.png":::
+   :::image type="content" source="media/619fb877791b1fc8bc7dfae1a579043d.png" alt-text="The command line-2" lightbox="media/619fb877791b1fc8bc7dfae1a579043d.png":::
 
 ### Confirm Attack Surface Reduction - Web Protection
 
@@ -404,7 +404,7 @@ To confirm that the configuration policy is applied to your test device, follow 
 
 2. This should respond with a 0 as shown in the following image:
 
-   :::image type="content" source="images/196a8e194ac99d84221f405d0f684f8c.png" alt-text="The command line-3" lightbox="images/196a8e194ac99d84221f405d0f684f8c.png":::
+   :::image type="content" source="media/196a8e194ac99d84221f405d0f684f8c.png" alt-text="The command line-3" lightbox="media/196a8e194ac99d84221f405d0f684f8c.png":::
 
 3. After applying the policy, open a PowerShell Windows and type
     `(Get-MpPreference).EnableNetworkProtection`.
