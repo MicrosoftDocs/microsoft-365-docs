@@ -28,7 +28,7 @@ f1.keywords: NOCSH
 
 **Q: What does end of life (EOL) for Test Base mean?**
 
-**A:** Test Base will reach EOL on May 31, 2024. The end-of-life (EOL) process for the Test Base for Microsoft 365 service started on March 4, 2024. From this date, no new features or updates will be released for Test Base. Existing users will retain access to the service and their data until May 31, 2024. During this period, the service is available for testing, exporting data, and making necessary arrangements for the transition. Our team is dedicated to assisting you during this transition. If you have any feedback or questions regarding this decision, please don't hesitate to contact our support team at [testbase_support@microsoft.com](mailto:testbase_support@microsoft.com).
+**A:** Test Base will reach EOL on May 31, 2024. The end-of-life (EOL) process for the Test Base for Microsoft 365 service started on March 4, 2024. From this date, no new features or updates are released for Test Base. Existing users will retain access to the service and their data until May 31, 2024. During this period, the service is available for testing, exporting data, and making necessary arrangements for the transition. Our team is dedicated to assisting you during this transition. If you have any feedback or questions regarding this decision, don't hesitate to contact our support team at [testbase_support@microsoft.com](mailto:testbase_support@microsoft.com).
 
 **Q: Why did Microsoft decide to transition Test Base for Microsoft 365 to end of life (EOL)?**
 
@@ -42,7 +42,7 @@ f1.keywords: NOCSH
 
 **A:** No, Test Base will not offer an extension after May 31, 2024.
 
-**Q: Does Test Base have an alternative solution?**
+**Q: <a name="Does_have_solution"></a>Does Test Base have an alternative solution?**
 
 **A:** There is no 1:1 replacement for Test Base. Microsoft remains committed to ensuring that the apps you rely upon continue to work as expected when you upgrade. There are still rich services and guidance that can help you ensure the compatibility of your applications:
 
@@ -64,7 +64,7 @@ f1.keywords: NOCSH
 
 **Q: Who do I contact for Test Base support?**
 
-**A:** Our team is dedicated to assisting you during this transition. If you have any feedback or questions regarding this decision, please don’t hesitate to contact our support team at [testbase_support@microsoft.com](mailto:testbase_support@microsoft.com), or [submit a support request](https://aka.ms/TestBaseSupport).
+**A:** Our team is dedicated to assisting you during this transition. If you have any feedback or questions regarding this decision, don't hesitate to contact our support team at [testbase_support@microsoft.com](mailto:testbase_support@microsoft.com), or [submit a support request](https://aka.ms/TestBaseSupport).
 
 **Q: What happens if I don't offboard before May 31, 2024?**
 
@@ -72,20 +72,20 @@ f1.keywords: NOCSH
 
 **Q: How long will my billing records be kept?**
 
-**A:** Service level billing records retention policy follows Azure billing policy. To check service consumption details, please refer to [View cost breakdown by Azure service - Microsoft Cost Management | Microsoft Learn](https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/cost-analysis-common-uses#view-cost-breakdown-by-azure-service). Usage level details in Test Base Billing Hub will be deleted after May 31. If you need usage records for future reference, please refer to [Test Base documentation - Export your data](https://aka.ms/testbase-doc-exportdata).
+**A:** Service level billing records retention policy follows Azure billing policy. To check service consumption details, please refer to [View cost breakdown by Azure service - Microsoft Cost Management | Microsoft Learn](/azure/cost-management-billing/costs/cost-analysis-common-uses#view-cost-breakdown-by-azure-service). Usage level details in Test Base Billing Hub will be deleted after May 31. If you need usage records for future reference, please refer to [Test Base documentation - Export your data](https://aka.ms/testbase-doc-exportdata).
 
 **Q: When will my last payment for Test Base usage be billed?**
 
-**A:** Test Base follows Azure billing policy. Please check in [Pay your Microsoft Customer Agreement or Microsoft Online Subscription Program Azure bill - Microsoft Cost Management | Microsoft Learn](https://learn.microsoft.com/en-us/azure/cost-management-billing/understand/pay-bill)
+**A:** Test Base follows Azure billing policy. Check in [Pay your Microsoft Customer Agreement or Microsoft Online Subscription Program Azure bill - Microsoft Cost Management | Microsoft Learn](/azure/cost-management-billing/understand/pay-bill)
 
 **Q: What's the recommended transition or migration plan?**
 
 **A:** Our team is dedicated to assisting you during this transition. We would recommend you to:
 
 1. Export your data (Check [guidance](https://aka.ms/testbase-doc-exportdata)).
-2. Transit to other Microsoft compatibility supports (Check in [Does Test Base have an alternative solution?](Does%20Test%20Base%20have%20an%20alternative%20solution?))
+2. Transit to other Microsoft compatibility supports (Check in [Does Test Base have an alternative solution?](#Does_have_solution))
 
-If you have any feedback or questions regarding this decision, please don’t hesitate to contact our support team at [testbase_support@microsoft.com](mailto:testbase_support@microsoft.com), or [submit a support request](https://aka.ms/TestBaseSupport).
+If you have any feedback or questions regarding this decision, don't hesitate to contact our support team at [testbase_support@microsoft.com](mailto:testbase_support@microsoft.com), or [submit a support request](https://aka.ms/TestBaseSupport).
 
 **Q: What are the implications for my organization?**
 
