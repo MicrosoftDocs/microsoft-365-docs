@@ -1,6 +1,6 @@
 ---
 title: Using Microsoft Copilot for Security for threat intelligence in Microsoft Defender XDR
-description: Learn about Copilot for Security emebedded experience in Microsoft Defender XDR for Microsoft Defender Threat Intelligence.
+description: Learn about Copilot for Security embedded experience in Microsoft Defender XDR for Microsoft Defender Threat Intelligence.
 keywords: security copilot, threat intelligence, defender threat intelligence, defender ti, copilot for security, embedded experience, vulnerability impact assessment, threat actor profile, plugins, Microsoft plugins
 ms.service: defender-xdr
 ms.author: pauloliveria
@@ -19,7 +19,7 @@ ms.date: 14/03/2024
 **Applies to:**
 - [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Microsoft Defender XDR applies the capabilities of Microsoft Copilot for Security to deliver Microsoft Defender Threat Intelligence (Defender TI) information about threat actors and tools, as well as contextual threat intelligence, directly into the Microsoft Defender portal. Based on threat analytics reports, intel profiles, and other available Defender TI content, you can use Copilot for Security to summarize the latest threats affecting your organization, prioritize the threats you need to manage based on your exposure level, or gain more knowledge about your organization's or the global threat landscape.
+Microsoft Defender XDR applies the capabilities of Microsoft Copilot for Security to deliver Microsoft Defender Threat Intelligence (Defender TI) information about threat actors and tools, as well as contextual threat intelligence, directly into the Microsoft Defender portal. Based on threat analytics reports, intel profiles, and other available Defender TI content, you can use Copilot for Security to summarize the latest threats affecting your organization, know which threats to prioritize based on your exposure level, or gain more knowledge about your organization's or the global threat landscape.
 
 > [!NOTE]
 > Defender TI capabilities are also available in Copilot for Security standalone experience through the Microsoft Defender Threat Intelligence plugin. Learn more about [Defender TI integration with Copilot for Security](/defender/threat-intelligence/security-copilot-and-defender-threat-intelligence.md).
@@ -68,7 +68,7 @@ Microsoft Defender XDR brings the _FindThreatIntelligence_ capability of Copilot
 Copilot for Security also has the following built-in prompts when accessing the Threat intelligence pages in Microsoft Defender XDR to get you started:
 - **Summarize:** Select this option if you want Copilot to give you an overview of the most active threats in your environment. Copilot lists and summarizes relevant campaigns, activities, and threat actors, and includes links to related threat analytics reports or intel profiles for more information.
 - **Prioritize:** Select this option if you want to find out which threats are likely to significantly impact your organization based on your exposures. This gives you a starting point and could thus make triaging, investigating, and mitigating incidents less complex.
-- **Ask:** Select this option if you want Copilot to provide you with insights on certain topics about the threat landscape, such as best practices for responding to human-operated ransomware attacks or threats and threat actors targeting your industry. An important aspect of threat intelligence is keeping up to date with the global threat landscape and Copilot provides you relevant information that could help you promptly assess your environment and apply mitigation or prevention strategies.
+- **Ask:** Select this option if you want Copilot to provide you with insights on certain topics about the threat landscape (for example, best practices for responding to human-operated ransomware attacks). An important aspect of threat intelligence is keeping up to date with the global threat landscape and Copilot provides you with relevant information that could help you promptly assess your environment and apply mitigation or prevention strategies.
 
 ### See also
 - - [What is Microsoft Copilot for Security?](/security-copilot/microsoft-security-copilot)
