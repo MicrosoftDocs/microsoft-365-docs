@@ -190,7 +190,7 @@ You need to have access to:
 
 The following image is an example of an email notification.
 
-:::image type="content" source="images/alert-notification.png" alt-text="The email notification screen" lightbox="images/alert-notification.png":::
+:::image type="content" source="media/alert-notification.png" alt-text="The email notification screen" lightbox="media/alert-notification.png":::
 
 ## Tips
 

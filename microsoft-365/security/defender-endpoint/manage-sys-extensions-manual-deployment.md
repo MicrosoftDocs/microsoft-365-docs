@@ -96,7 +96,7 @@ If you run systemextensionsctl list, the following screen appears:
 
 2. Select **Accessibility** from the left navigation pane, and click **+**.
 
-   :::image type="content" source="images/accessibility-and-plus-icon.png" alt-text="The Accessibility menu item and the Plus icon." lightbox="images/accessibility-and-plus-icon.png":::
+   :::image type="content" source="media/accessibility-and-plus-icon.png" alt-text="The Accessibility menu item and the Plus icon." lightbox="media/accessibility-and-plus-icon.png":::
 
 3. From the resultant screen, select **Applications** from the **Favorites** pane in the left-side of the screen; select **Microsoft Defender**; and then select **Open** at the bottom-right of the screen.
 
