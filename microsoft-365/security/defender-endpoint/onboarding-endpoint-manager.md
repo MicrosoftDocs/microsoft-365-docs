@@ -217,7 +217,7 @@ Then, you continue by creating several different types of endpoint security poli
     rules > Create**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/522d9bb4288dc9c1a957392b51384fdd.png" alt-text="The Microsoft Intune admin center19" lightbox="images/522d9bb4288dc9c1a957392b51384fdd.png":::
+    > :::image type="content" source="media/522d9bb4288dc9c1a957392b51384fdd.png" alt-text="The Microsoft Intune admin center19" lightbox="media/522d9bb4288dc9c1a957392b51384fdd.png":::
 
 5. Enter a name and description, then select  **Next**.
 
@@ -395,7 +395,7 @@ To confirm that the configuration policy is applied to your test device, follow 
 
 4. You should see the following lines with content, as shown in the following image:
 
-   :::image type="content" source="images/619fb877791b1fc8bc7dfae1a579043d.png" alt-text="The command line-2" lightbox="images/619fb877791b1fc8bc7dfae1a579043d.png":::
+   :::image type="content" source="media/619fb877791b1fc8bc7dfae1a579043d.png" alt-text="The command line-2" lightbox="media/619fb877791b1fc8bc7dfae1a579043d.png":::
 
 ### Confirm Attack Surface Reduction - Web Protection
 
