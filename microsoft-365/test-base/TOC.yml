@@ -60,6 +60,8 @@
     href: cpu.md
   - name: Viewing Test Results
     href: view-test-results.md
+  - name: Export your data
+    href: export-your-data.md
     items:
       - name: Viewing Script Execution Results
         href: view-script-execution-results.md
