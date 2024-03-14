@@ -66,7 +66,7 @@ End users also need to take steps to install Microsoft Defender for Endpoint on 
 
   c. Select **Save**.
 
-     :::image type="content" source="images/app-settings.png" alt-text="The application settings pane in the Microsoft Defender portal." lightbox="images/app-settings.png":::
+     :::image type="content" source="media/app-settings.png" alt-text="The application settings pane in the Microsoft Defender portal." lightbox="media/app-settings.png":::
 
 - **Create an app protection policy**.
 
