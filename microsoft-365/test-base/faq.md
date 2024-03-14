@@ -40,11 +40,11 @@ f1.keywords: NOCSH
 
 **Q: Will Test Base offer an extension to the 60 days?**
 
-**A:** No, Test Base will not offer an extension after May 31, 2024.
+**A:** No, Test Base won't offer an extension after May 31, 2024.
 
 **Q: <a name="Does_have_solution"></a>Does Test Base have an alternative solution?**
 
-**A:** There is no 1:1 replacement for Test Base. Microsoft remains committed to ensuring that the apps you rely upon continue to work as expected when you upgrade. There are still rich services and guidance that can help you ensure the compatibility of your applications:
+**A:** There's no 1:1 replacement for Test Base. Microsoft remains committed to ensuring that the apps you rely upon continue to work as expected when you upgrade. There are still rich services and guidance that can help you ensure the compatibility of your applications:
 
 - **App Assure**: If you run into compatibility issues or want to ensure that your organization's applications are compatible from day one, you may reach out to App Assure. With enrollment in the [App Assure](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fwindows%2Fcompatibility%2Fapp-assure&data=05%7C02%7Cmiaoyuezhou%40microsoft.com%7C7a21782822d142dfe41908dc43ba47c0%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638459714580439514%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=B38PoXObefTHSHSKGHTiDlm7YzJmKkgn0TYz1AOAk4o%3D&reserved=0) service, any app compatibility issues that you find with Windows 11 can be resolved. Microsoft helps you remedy application issues at no cost. Since 2018, App Assure has evaluated almost 800,000 apps, and subscriptions are free for eligible customers with 150+ seats.
 - **SUVP**: The [Security Update Validation Program (SUVP)](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Ftechcommunity.microsoft.com%2Ft5%2Fwindows-it-pro-blog%2Fsecurity-update-validation-program-the-early-bird-tests-the-worm%2Fba-p%2F2569392&data=05%7C02%7Cmiaoyuezhou%40microsoft.com%7C7a21782822d142dfe41908dc43ba47c0%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638459714580457417%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=T7B2DnRAe6p%2Fve3UlocDbYpdm%2FbSQKxEcLv7XszsOGE%3D&reserved=0) is a quality assurance testing program for Microsoft security updates, which are released on the second Tuesday of each month. The SUVP provides early access to Microsoft security updates—up to three weeks in advance of the official release—for the purpose of validation and interoperability testing. The program encompasses any Microsoft products for which we fix a vulnerability (for example: Windows, Office, Exchange, or SQL Server) and is limited to trusted customers under NDA who have been nominated by a Microsoft representative. To join SUVP program, contact [suvp@microsoft.com](mailto:suvp@microsoft.com).
@@ -60,7 +60,7 @@ f1.keywords: NOCSH
 
 **Q: What if I need data from Test Base? Will I still access to my data?**
 
-**A:** You will retain access to the service and data until May 31, 2024. Following this date, all customer data will be permanently deleted. Should you wish to retain automation test scripts or download test results for future reference, we encourage you to proactively plan your transition. Guidance to export your data check in our [documentation](https://aka.ms/testbase-doc-exportdata).
+**A:** You'll retain access to the service and data until May 31, 2024. Following this date, all customer data will be permanently deleted. Should you wish to retain automation test scripts or download test results for future reference, we encourage you to proactively plan your transition. Guidance to export your data check in our [documentation](https://aka.ms/testbase-doc-exportdata).
 
 **Q: Who do I contact for Test Base support?**
 
@@ -93,7 +93,7 @@ If you have any feedback or questions regarding this decision, don't hesitate to
 
 - Starting from March 4, the end-of-life (EOL) process for the Test Base for Microsoft 365 service will begin. From this date, no new features or updates are released for Test Base.
 - During the end-of-life period, you may: continue to use the service for testing, export your data, and make necessary arrangements for the transition.
-- You will retain access to the service and your data until May 31, 2024.
+- You'll retain access to the service and your data until May 31, 2024.
 - Following this date, all customer data will be permanently deleted.
 
 ## Testing
@@ -167,7 +167,7 @@ While for functional tests, you can specify whether a reboot is required for eac
 
 **Q: What is the difference between Security Update tests and Feature Update tests?**
 
-**A:** For Security update tests, we test against the **<ins>monthly pre-release security updates</ins>** on Windows, which is focused on keeping our users always secure and protected. For the Feature update tests, we test against the **<ins>bi-annual pre-release feature updates</ins>** which introduce new features and capabilities on Windows.
+**A:** For Security update tests, we test against the **<ins>monthly pre-release security updates</ins>** On Windows, which is focused on keeping our users always secure and protected. For the Feature update tests, we test against the **<ins>bi-annual pre-release feature updates</ins>** which introduce new features and capabilities on Windows.
 
 **Q: How long would my script run?**
 
@@ -182,7 +182,7 @@ While for functional tests, you can specify whether a reboot is required for eac
 2. Use VM snapshot to create VM to repro timeout and find out root cause.  
 3. Fix code issue continue testing.  
 4. If test running indeed exceeds 60 mins, split into multiple scripts below 60 mins. 
-    1. Run all testing job in one central script which doesn’t have time limit, monitor the status from multiple Test Base artifact scripts. 
+    1. Run all testing job in one central script which doesn't have time limit, monitor the status from multiple Test Base artifact scripts. 
 
 **Q: How can I pause my active packages?**
 
@@ -209,7 +209,7 @@ We always work closely with our customers in joint remediation to resolve any is
 
 **Q: Does Microsoft hold the release of the security patch until the issue is resolved? What alternate resolutions are available?**
 
-**A:** The goal of Test Base is to ensure our joint end customers don't face any issues. We work hard with Software Vendors to address any issues before the release, but in case the fix is not feasible we have other resolutions such as shims and blocks.
+**A:** The goal of Test Base is to ensure our joint end customers don't face any issues. We work hard with Software Vendors to address any issues before the release, but in case the fix isn't feasible we have other resolutions such as shims and blocks.
 
 ## Security
 
@@ -246,7 +246,7 @@ In addition to pre-release security updates testing, we support pre-release feat
 **A:** The cost of the service depends on when you sign up and how much you use it. Here are the details:
 - If you signed up before November 15, 2023, you'll receive 100 free hours (valued at $800) of Test Base usage under your subscription. These hours will expire in 6 months from the date of sign up. After the free hours are consumed or expired, you'll be charged $8 per hour for your usage.
 - If you sign up on or after November 15, 2023, you'll receive 100 free hours (valued at $800) of Test Base usage under your tenant. These hours will expire in 6 months from the date of sign up. After the free hours are consumed or expired, you'll be charged $8 per hour for your usage.
-- Starting from November 15, 2023, if you are a Windows E3/E5 or Microsoft 365 E3/E5 customer, you'll receive an additional 500 hours (equivalent to $4,000) of Test Base usage under your tenant. These hours don't have an expiration date and can be used anytime. Note: Don't disable the service principal "Test Base for M365 - Billing", otherwise you may lose the possibility of getting the additional hours.
+- Starting from November 15, 2023, if you're a Windows E3/E5 or Microsoft 365 E3/E5 customer, you'll receive an additional 500 hours (equivalent to $4,000) of Test Base usage under your tenant. These hours don't have an expiration date and can be used anytime. Note: Don't disable the service principal "Test Base for M365 - Billing", otherwise you may lose the possibility of getting the additional hours.
 
 **Q: How can I provide feedback about Test Base?**
 
