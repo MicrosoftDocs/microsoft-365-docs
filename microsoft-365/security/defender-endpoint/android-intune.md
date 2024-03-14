@@ -127,7 +127,7 @@ Follow the steps below to add Microsoft Defender for Endpoint app into your mana
 6. After the permissions handling selection is made, select **Sync** to sync Microsoft Defender for Endpoint to your apps list.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/34e6b9a0dae125d085c84593140180ed.png" alt-text="The Sync pane in the Microsoft Defender 365 portal" lightbox="images/34e6b9a0dae125d085c84593140180ed.png":::
+    > :::image type="content" source="media/34e6b9a0dae125d085c84593140180ed.png" alt-text="The Sync pane in the Microsoft Defender 365 portal" lightbox="media/34e6b9a0dae125d085c84593140180ed.png":::
 
 7. The sync will complete in a few minutes.
 

@@ -503,9 +503,9 @@ These steps are applicable on macOS 11 (Big Sur) or later.
 
 13. Select **Add**.
 
-    :::image type="content" source="images/56e6f6259b9ce3c1706ed8d666ae4947.png" alt-text="The option to add deployment targets." lightbox="images/56e6f6259b9ce3c1706ed8d666ae4947.png":::
+    :::image type="content" source="media/56e6f6259b9ce3c1706ed8d666ae4947.png" alt-text="The option to add deployment targets." lightbox="media/56e6f6259b9ce3c1706ed8d666ae4947.png":::
 
-    :::image type="content" source="images/38c67ee1905c4747c3b26c8eba57726b.png" alt-text="The page on which you add more values to the configuration settings." lightbox="images/38c67ee1905c4747c3b26c8eba57726b.png":::
+    :::image type="content" source="media/38c67ee1905c4747c3b26c8eba57726b.png" alt-text="The page on which you add more values to the configuration settings." lightbox="media/38c67ee1905c4747c3b26c8eba57726b.png":::
 
     :::image type="content" source="images/321ba245f14743c1d5d51c15e99deecc.png" alt-text="The page on which you can add more values to the configuration settings." lightbox="images/321ba245f14743c1d5d51c15e99deecc.png":::
 
@@ -584,7 +584,7 @@ These steps are applicable on macOS 11 (Big Sur) or later.
 
 13. Select **+ Add**.
 
-    :::image type="content" source="images/57cef926d1b9260fb74a5f460cee887a.png" alt-text="The page depicting the configuration setting." lightbox="images/57cef926d1b9260fb74a5f460cee887a.png":::
+    :::image type="content" source="media/57cef926d1b9260fb74a5f460cee887a.png" alt-text="The page depicting the configuration setting." lightbox="media/57cef926d1b9260fb74a5f460cee887a.png":::
 
 14. Select **Computer Groups** > under **Group Name** > select **Contoso's MachineGroup**.
 
@@ -744,7 +744,7 @@ Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint 
    :::image type="content" source="images/b6d671b2f18b89d96c1c8e2ea1991242.png" alt-text="The configuration settings - computer management." lightbox="images/b6d671b2f18b89d96c1c8e2ea1991242.png":::
 
 5. In **Packages**, select **+ New**.
-   :::image type="content" source="images/57aa4d21e2ccc65466bf284701d4e961.png" alt-text="The bird Description for an automatically generated package." lightbox="images/57aa4d21e2ccc65466bf284701d4e961.png":::
+   :::image type="content" source="media/57aa4d21e2ccc65466bf284701d4e961.png" alt-text="The bird Description for an automatically generated package." lightbox="media/57aa4d21e2ccc65466bf284701d4e961.png":::
 
 6. In the **General tab**, enter the following details in **New Package**:
 
@@ -766,7 +766,7 @@ Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint 
 
     **Limitations tab**: Keep default values.
 
-    :::image type="content" source="images/56dac54634d13b2d3948ab50e8d3ef21.png" alt-text="The limitation tab for the configuration settings." lightbox="images/56dac54634d13b2d3948ab50e8d3ef21.png":::
+    :::image type="content" source="media/56dac54634d13b2d3948ab50e8d3ef21.png" alt-text="The limitation tab for the configuration settings." lightbox="media/56dac54634d13b2d3948ab50e8d3ef21.png":::
 
 8. Select **Save**. The package is uploaded to Jamf Pro.
 

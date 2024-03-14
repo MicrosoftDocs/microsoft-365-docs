@@ -68,7 +68,7 @@ For a complete list, see [About Computer Enrollment](https://docs.jamf.com/9.9/c
 
    :::image type="content" source="images/3ced5383a6be788486d89d407d042f28.png" alt-text="The configuration settings7" lightbox="images/3ced5383a6be788486d89d407d042f28.png":::
 
-   :::image type="content" source="images/54be9c6ed5b24cebe628dc3cd9ca4089.png" alt-text="The configuration settings8" lightbox="images/54be9c6ed5b24cebe628dc3cd9ca4089.png":::
+   :::image type="content" source="media/54be9c6ed5b24cebe628dc3cd9ca4089.png" alt-text="The configuration settings8" lightbox="media/54be9c6ed5b24cebe628dc3cd9ca4089.png":::
 
 ## Enrollment Method 2: Prestage Enrollments
 
