@@ -47,7 +47,7 @@ A clickable identity link is available in these views that will take you to the 
 When you investigate a specific identity, you'll see the:
 
 - [Overview](#overview), including identity details, incident and alerts visual view, investigation priority, and scored timeline
-- [Active Alerts](#alerts) tab
+- [Incidents and alerts](#incidents-and-alerts) tab
 - [Observed in organization](#observed-in-organization) tab
 - [Identity timeline](#timeline) tab
 - [Remediation actions](#remediation-actions)
@@ -107,9 +107,9 @@ For more information, see [Defender for Identity entity tags in Microsoft Defend
 > [!NOTE]
 > The organization tree section and the account tags are available when a Microsoft Defender for Identity license is available.
 
-## Alerts
+## Incidents and alerts
 
-You can see all active alerts involving the user from the last 180 days in this tab. Information like alert severity and the time the alert was generated is available in this tab. Clicking on the alert row shows you additional information about the alert.
+You can see all active incidents and alerts involving the user from the last 180 days in this tab. Information like alert severity and the time the alert was generated is available in this tab. Clicking on the alert row shows you additional information about the alert.
 
 :::image type="content" source="../../media/investigate-users/Fig3-user-incident-alertstab.png" alt-text="The user account's related alerts seen in the Alerts tab in the Microsoft Defender portal" lightbox="../../media/investigate-users/Fig3-user-incident-alertstab.png":::
 
