@@ -110,7 +110,7 @@ Alternate steps:
    
 1. Select **Action center** from the response actions section of the device page.
 
-    ![Image of action center](images/action-center-selected.png)
+    ![Image of action center](media/action-center-selected.png)
    
 1. Click the **Package collection package available** to download the collection package.
 
