@@ -44,7 +44,7 @@ You may also click **See details** and **Download** log files and test execution
 > [!div class="mx-imgBorder"]
 > [![Screenshot of page of test results.](Media/export-your-data-4.png)](Media/export-your-data-4.png#lightbox)
 
-More details about how to analyze downloaded reports, refer to [Downloading and Analyzing Test Result Files | Microsoft Learn](/download-analyze-test-result-files). 
+More details about how to analyze downloaded reports, refer to [Downloading and Analyzing Test Result Files | Microsoft Learn](/test-base/download-analyze-test-result-files). 
 
 ## Export your usage records 
 
