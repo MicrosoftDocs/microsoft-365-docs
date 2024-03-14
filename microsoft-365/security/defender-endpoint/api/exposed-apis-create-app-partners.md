@@ -110,7 +110,7 @@ In the following example we use **'Read all alerts'** permission:
 
    - On your application page, go to **Overview** and copy the following information:
 
-     :::image type="content" source="../media/app-id.png" alt-text="The create application's ID" lightbox="../images/app-id.png":::
+     :::image type="content" source="../media/app-id.png" alt-text="The create application's ID" lightbox="../media/app-id.png":::
 
 5. Add the application to your customer's tenant.
 
