@@ -103,7 +103,7 @@ Follow these steps to get the downloader script:
 After cloning the repo / downloading the zip file, the local directory structure should be as follows:
 
 ```
-(base) lakshmyav@lakshmyav-Virtual-Machine:~/projects/mdatp-xplat$ tree linux/definition_downloader/
+user@vm:~/mdatp-xplat$ tree linux/definition_downloader/
 linux/definition_downloader/
 ├── README.md
 ├── settings.json
@@ -187,7 +187,7 @@ mdatp health --details definitions
 and verify the updated fields according to the managed json. For example, a sample output would look like:
 
 ```
-(base) lakshmyav@lakshmyav-Virtual-Machine:~/projects/WD.Client.Mac$ mdatp health --details definitions
+user@vm:~$ mdatp health --details definitions
 automatic_definition_update_enabled         : true [managed]
 definitions_updated                         : Mar 14, 2024 at 12:13:17 PM
 definitions_updated_minutes_ago             : 2
@@ -216,7 +216,7 @@ offline_definition_update_fallback_to_cloud : false
 - Verify the following fields:
 
   ```
-  (base) lakshmyav@lakshmyav-Virtual-Machine:~/projects/WD.Client.Mac$ mdatp health --details definitions
+  user@vm:~$ mdatp health --details definitions
   ...
   definitions_status                          : "up_to_date"
   ...
