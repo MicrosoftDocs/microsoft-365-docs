@@ -133,7 +133,7 @@ Note that you must use exact `com.microsoft.wdav` as the **Preference Domain**, 
 
 2. Create a new Configuration Profile under Computers -> Configuration Profiles, enter the following details on the **General** tab:
 
-   :::image type="content" source="images/644e0f3af40c29e80ca1443535b2fe32.png" alt-text="A new profile." lightbox="images/644e0f3af40c29e80ca1443535b2fe32.png":::
+   :::image type="content" source="media/644e0f3af40c29e80ca1443535b2fe32.png" alt-text="A new profile." lightbox="media/644e0f3af40c29e80ca1443535b2fe32.png":::
 
     - Name: MDATP MDAV configuration settings
     - Description:\<blank\>
@@ -151,7 +151,7 @@ Note that you must use exact `com.microsoft.wdav` as the **Preference Domain**, 
 
 5. You can see all supported Microsoft Defender for Endpoint configuration settings below, under **Preference Domain Properties**. Click **Add/Remove properties** to select the settings that you want to be managed, and click **Ok** to save your changes. (Settings left unselected will not be included into the managed configuration, an end user will be able to configure those settings on their machines.)
 
-   :::image type="content" source="images/817b3b760d11467abe9bdd519513f54f.png" alt-text="The chosen managed settings." lightbox="images/817b3b760d11467abe9bdd519513f54f.png":::
+   :::image type="content" source="media/817b3b760d11467abe9bdd519513f54f.png" alt-text="The chosen managed settings." lightbox="media/817b3b760d11467abe9bdd519513f54f.png":::
 
 6. Change values of the settings to desired values. You can click **More information** to get documentation for a particular setting. (You may click **Plist preview** to inspect what the configuration plist will look like. Click **Form editor** to return to the visual editor.)
 
@@ -311,7 +311,7 @@ All you need to do to have updates is to download an updated schema, edit existi
 
 3. In the Jamf Pro dashboard, open **Computers**, and their **Configuration Profiles**. Click **New** and switch to the **General** tab.
 
-   :::image type="content" source="images/644e0f3af40c29e80ca1443535b2fe32.png" alt-text="The page displaying a new profile." lightbox="images/644e0f3af40c29e80ca1443535b2fe32.png":::
+   :::image type="content" source="media/644e0f3af40c29e80ca1443535b2fe32.png" alt-text="The page displaying a new profile." lightbox="media/644e0f3af40c29e80ca1443535b2fe32.png":::
 
 4. Enter the following details on the **General** tab:
 
@@ -337,11 +337,11 @@ All you need to do to have updates is to download an updated schema, edit existi
 
 8. Select **Choose File**.
 
-   :::image type="content" source="images/526e978761fc571cca06907da7b01fd6.png" alt-text="The prompt to choose the plist file." lightbox="images/526e978761fc571cca06907da7b01fd6.png":::
+   :::image type="content" source="media/526e978761fc571cca06907da7b01fd6.png" alt-text="The prompt to choose the plist file." lightbox="media/526e978761fc571cca06907da7b01fd6.png":::
 
 9. Select the **MDATP_MDAV_configuration_settings.plist**, then select **Open**.
 
-   :::image type="content" source="images/98acea3750113b8dbab334296e833003.png" alt-text="The mdatpmdav configuration settings." lightbox="images/98acea3750113b8dbab334296e833003.png":::
+   :::image type="content" source="media/98acea3750113b8dbab334296e833003.png" alt-text="The mdatpmdav configuration settings." lightbox="media/98acea3750113b8dbab334296e833003.png":::
 
 10. Select **Upload**.
 
@@ -356,7 +356,7 @@ All you need to do to have updates is to download an updated schema, edit existi
 
 11. Select **Save**.
 
-    :::image type="content" source="images/1b6b5a4edcb42d97f1e70a6a0fa48e3a.png" alt-text="The option to save the image related to the configuration settings." lightbox="images/1b6b5a4edcb42d97f1e70a6a0fa48e3a.png":::
+    :::image type="content" source="media/1b6b5a4edcb42d97f1e70a6a0fa48e3a.png" alt-text="The option to save the image related to the configuration settings." lightbox="media/1b6b5a4edcb42d97f1e70a6a0fa48e3a.png":::
 
 12. The file is uploaded.
 
@@ -418,7 +418,7 @@ These steps are applicable on macOS 11 (Big Sur) or later.
 
 3. Select the **Scope** tab, then select **Add**.
 
-   :::image type="content" source="images/441aa2ecd36abadcdd8aed03556080b5.png" alt-text="The page on which you can add values for the configuration settings." lightbox="images/441aa2ecd36abadcdd8aed03556080b5.png":::
+   :::image type="content" source="media/441aa2ecd36abadcdd8aed03556080b5.png" alt-text="The page on which you can add values for the configuration settings." lightbox="media/441aa2ecd36abadcdd8aed03556080b5.png":::
 
 4. Select **Contoso's Machine Group**.
 
@@ -430,7 +430,7 @@ These steps are applicable on macOS 11 (Big Sur) or later.
 
 6. Select **Done**. You'll see the new **Configuration profile**.
 
-   :::image type="content" source="images/633ad26b8bf24ec683c98b2feb884bdf.png" alt-text="The completed configuration settings." lightbox="images/633ad26b8bf24ec683c98b2feb884bdf.png":::
+   :::image type="content" source="media/633ad26b8bf24ec683c98b2feb884bdf.png" alt-text="The completed configuration settings." lightbox="media/633ad26b8bf24ec683c98b2feb884bdf.png":::
 
 ## Step 5: Configure Microsoft AutoUpdate (MAU)
 
@@ -471,7 +471,7 @@ These steps are applicable on macOS 11 (Big Sur) or later.
 
 5. In **Application & Custom Settings** select **Configure**.
 
-   :::image type="content" source="images/1f72e9c15eaafcabf1504397e99be311.png" alt-text="The configuration setting application and custom settings." lightbox="images/1f72e9c15eaafcabf1504397e99be311.png":::
+   :::image type="content" source="media/1f72e9c15eaafcabf1504397e99be311.png" alt-text="The configuration setting application and custom settings." lightbox="media/1f72e9c15eaafcabf1504397e99be311.png":::
 
 6. Select **Upload File (PLIST file)**.
 
@@ -482,20 +482,20 @@ These steps are applicable on macOS 11 (Big Sur) or later.
 
 8. Select **Choose File**.
 
-   :::image type="content" source="images/335aff58950ce62d1dabc289ecdce9ed.png" alt-text="The prompt to choose the file regarding configuration setting." lightbox="images/335aff58950ce62d1dabc289ecdce9ed.png":::
+   :::image type="content" source="media/335aff58950ce62d1dabc289ecdce9ed.png" alt-text="The prompt to choose the file regarding configuration setting." lightbox="media/335aff58950ce62d1dabc289ecdce9ed.png":::
 
 9. Select **MDATP_MDAV_MAU_settings.plist**.
 
    :::image type="content" source="media/a26bd4967cd54bb113a2c8d32894c3de.png" alt-text="The mdatpmdavmau settings." lightbox="media/a26bd4967cd54bb113a2c8d32894c3de.png":::
 
 10. Select **Upload**.
-    :::image type="content" source="images/4239ca0528efb0734e4ca0b490bfb22d.png" alt-text="The upload of the file regarding configuration setting." lightbox="images/4239ca0528efb0734e4ca0b490bfb22d.png":::
+    :::image type="content" source="media/4239ca0528efb0734e4ca0b490bfb22d.png" alt-text="The upload of the file regarding configuration setting." lightbox="media/4239ca0528efb0734e4ca0b490bfb22d.png":::
 
     :::image type="content" source="media/4ec20e72c8aed9a4c16912e01692436a.png" alt-text="The page displaying the upload option for the file regarding configuration setting." lightbox="media/4ec20e72c8aed9a4c16912e01692436a.png":::
 
 11. Select **Save**.
 
-    :::image type="content" source="images/253274b33e74f3f5b8d475cf8692ce4e.png" alt-text="The page displaying the save option for the file regarding configuration setting." lightbox="images/253274b33e74f3f5b8d475cf8692ce4e.png":::
+    :::image type="content" source="media/253274b33e74f3f5b8d475cf8692ce4e.png" alt-text="The page displaying the save option for the file regarding configuration setting." lightbox="media/253274b33e74f3f5b8d475cf8692ce4e.png":::
 
 12. Select the **Scope** tab.
 
@@ -503,11 +503,11 @@ These steps are applicable on macOS 11 (Big Sur) or later.
 
 13. Select **Add**.
 
-    :::image type="content" source="images/56e6f6259b9ce3c1706ed8d666ae4947.png" alt-text="The option to add deployment targets." lightbox="images/56e6f6259b9ce3c1706ed8d666ae4947.png":::
+    :::image type="content" source="media/56e6f6259b9ce3c1706ed8d666ae4947.png" alt-text="The option to add deployment targets." lightbox="media/56e6f6259b9ce3c1706ed8d666ae4947.png":::
 
-    :::image type="content" source="images/38c67ee1905c4747c3b26c8eba57726b.png" alt-text="The page on which you add more values to the configuration settings." lightbox="images/38c67ee1905c4747c3b26c8eba57726b.png":::
+    :::image type="content" source="media/38c67ee1905c4747c3b26c8eba57726b.png" alt-text="The page on which you add more values to the configuration settings." lightbox="media/38c67ee1905c4747c3b26c8eba57726b.png":::
 
-    :::image type="content" source="images/321ba245f14743c1d5d51c15e99deecc.png" alt-text="The page on which you can add more values to the configuration settings." lightbox="images/321ba245f14743c1d5d51c15e99deecc.png":::
+    :::image type="content" source="media/321ba245f14743c1d5d51c15e99deecc.png" alt-text="The page on which you can add more values to the configuration settings." lightbox="media/321ba245f14743c1d5d51c15e99deecc.png":::
 
 14. Select **Done**.
 
@@ -534,7 +534,7 @@ These steps are applicable on macOS 11 (Big Sur) or later.
 
 4. In **Configure Privacy Preferences Policy Control** select **Configure**.
 
-   :::image type="content" source="images/715ae7ec8d6a262c489f94d14e1e51bb.png" alt-text="The configuration privacy policy control." lightbox="images/715ae7ec8d6a262c489f94d14e1e51bb.png":::
+   :::image type="content" source="media/715ae7ec8d6a262c489f94d14e1e51bb.png" alt-text="The configuration privacy policy control." lightbox="media/715ae7ec8d6a262c489f94d14e1e51bb.png":::
 
 5. In **Privacy Preferences Policy Control**, enter the following details:
 
@@ -580,15 +580,15 @@ These steps are applicable on macOS 11 (Big Sur) or later.
 
 12. Select the **Scope** tab.
 
-    :::image type="content" source="images/2c49b16cd112729b3719724f581e6882.png" alt-text="The page depicting the scope for the configuration setting." lightbox="images/2c49b16cd112729b3719724f581e6882.png":::
+    :::image type="content" source="media/2c49b16cd112729b3719724f581e6882.png" alt-text="The page depicting the scope for the configuration setting." lightbox="media/2c49b16cd112729b3719724f581e6882.png":::
 
 13. Select **+ Add**.
 
-    :::image type="content" source="images/57cef926d1b9260fb74a5f460cee887a.png" alt-text="The page depicting the configuration setting." lightbox="images/57cef926d1b9260fb74a5f460cee887a.png":::
+    :::image type="content" source="media/57cef926d1b9260fb74a5f460cee887a.png" alt-text="The page depicting the configuration setting." lightbox="media/57cef926d1b9260fb74a5f460cee887a.png":::
 
 14. Select **Computer Groups** > under **Group Name** > select **Contoso's MachineGroup**.
 
-    :::image type="content" source="images/368d35b3d6179af92ffdbfd93b226b69.png" alt-text="The configuration setting contoso machine group." lightbox="images/368d35b3d6179af92ffdbfd93b226b69.png":::
+    :::image type="content" source="media/368d35b3d6179af92ffdbfd93b226b69.png" alt-text="The configuration setting contoso machine group." lightbox="media/368d35b3d6179af92ffdbfd93b226b69.png":::
 
 15. Select **Add**.
 
@@ -596,7 +596,7 @@ These steps are applicable on macOS 11 (Big Sur) or later.
 
 17. Select **Done**.
 
-    :::image type="content" source="images/809cef630281b64b8f07f20913b0039b.png" alt-text="The configuration setting contoso machine-group." lightbox="images/809cef630281b64b8f07f20913b0039b.png":::
+    :::image type="content" source="media/809cef630281b64b8f07f20913b0039b.png" alt-text="The configuration setting contoso machine-group." lightbox="media/809cef630281b64b8f07f20913b0039b.png":::
 
     :::image type="content" source="media/6c8b406ee224335a8c65d06953dc756e.png" alt-text="The configuration setting illustration." lightbox="media/6c8b406ee224335a8c65d06953dc756e.png":::
 
@@ -744,7 +744,7 @@ Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint 
    :::image type="content" source="images/b6d671b2f18b89d96c1c8e2ea1991242.png" alt-text="The configuration settings - computer management." lightbox="images/b6d671b2f18b89d96c1c8e2ea1991242.png":::
 
 5. In **Packages**, select **+ New**.
-   :::image type="content" source="images/57aa4d21e2ccc65466bf284701d4e961.png" alt-text="The bird Description for an automatically generated package." lightbox="images/57aa4d21e2ccc65466bf284701d4e961.png":::
+   :::image type="content" source="media/57aa4d21e2ccc65466bf284701d4e961.png" alt-text="The bird Description for an automatically generated package." lightbox="media/57aa4d21e2ccc65466bf284701d4e961.png":::
 
 6. In the **General tab**, enter the following details in **New Package**:
 
@@ -766,7 +766,7 @@ Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint 
 
     **Limitations tab**: Keep default values.
 
-    :::image type="content" source="images/56dac54634d13b2d3948ab50e8d3ef21.png" alt-text="The limitation tab for the configuration settings." lightbox="images/56dac54634d13b2d3948ab50e8d3ef21.png":::
+    :::image type="content" source="media/56dac54634d13b2d3948ab50e8d3ef21.png" alt-text="The limitation tab for the configuration settings." lightbox="media/56dac54634d13b2d3948ab50e8d3ef21.png":::
 
 8. Select **Save**. The package is uploaded to Jamf Pro.
 
@@ -774,7 +774,7 @@ Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint 
 
    It can take a few minutes for the package to be available for deployment.
 
-   :::image type="content" source="images/1626d138e6309c6e87bfaab64f5ccf7b.png" alt-text="An instance of uploading the package for configuration settings." lightbox="images/1626d138e6309c6e87bfaab64f5ccf7b.png":::
+   :::image type="content" source="media/1626d138e6309c6e87bfaab64f5ccf7b.png" alt-text="An instance of uploading the package for configuration settings." lightbox="media/1626d138e6309c6e87bfaab64f5ccf7b.png":::
 
 9. Navigate to the **Policies** page.
 
@@ -782,15 +782,15 @@ Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint 
 
 10. Select **+ New** to create a new policy.
 
-    :::image type="content" source="images/847b70e54ed04787e415f5180414b310.png" alt-text="The configuration settings new policy." lightbox="images/847b70e54ed04787e415f5180414b310.png":::
+    :::image type="content" source="media/847b70e54ed04787e415f5180414b310.png" alt-text="The configuration settings new policy." lightbox="media/847b70e54ed04787e415f5180414b310.png":::
 
 11. In **General**, enter the Display name **MDATP Onboarding Contoso 200329 v100.86.92 or later**.
 
-      :::image type="content" source="images/625ba6d19e8597f05e4907298a454d28.png" alt-text="The configuration settings - MDATP onboard." lightbox="images/625ba6d19e8597f05e4907298a454d28.png":::
+      :::image type="content" source="media/625ba6d19e8597f05e4907298a454d28.png" alt-text="The configuration settings - MDATP onboard." lightbox="media/625ba6d19e8597f05e4907298a454d28.png":::
 
 12. Select **Recurring Check-in**.
 
-    :::image type="content" source="images/68bdbc5754dfc80aa1a024dde0fce7b0.png" alt-text="The recurring check-in for the configuration settings." lightbox="images/68bdbc5754dfc80aa1a024dde0fce7b0.png":::
+    :::image type="content" source="media/68bdbc5754dfc80aa1a024dde0fce7b0.png" alt-text="The recurring check-in for the configuration settings." lightbox="media/68bdbc5754dfc80aa1a024dde0fce7b0.png":::
 
 13. Select **Save**.
 
@@ -800,7 +800,7 @@ Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint 
 
 15. Select the **Add** button next to **Microsoft Defender Advanced Threat Protection and Microsoft Defender Antivirus**.
 
-    :::image type="content" source="images/526b83fbdbb31265b3d0c1e5fbbdc33a.png" alt-text="The option to add more settings to MDATP MDA." lightbox="images/526b83fbdbb31265b3d0c1e5fbbdc33a.png":::
+    :::image type="content" source="media/526b83fbdbb31265b3d0c1e5fbbdc33a.png" alt-text="The option to add more settings to MDATP MDA." lightbox="media/526b83fbdbb31265b3d0c1e5fbbdc33a.png":::
 
 16. Select **Save**.
 
@@ -835,11 +835,11 @@ Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint 
 
     Under **Scope**, select **Add**. 
 
-    :::image type="content" source="images/1c08d097829863778d562c10c5f92b67.png" alt-text="The configuration settings - ad1." lightbox="images/1c08d097829863778d562c10c5f92b67.png":::
+    :::image type="content" source="media/1c08d097829863778d562c10c5f92b67.png" alt-text="The configuration settings - ad1." lightbox="media/1c08d097829863778d562c10c5f92b67.png":::
 
     Switch to the **Computer Groups** tab. Find the smart group you created, and **Add** it.
 
-    :::image type="content" source="images/216253cbfb6ae738b9f13496b9c799fd.png" alt-text="The configuration settings - ad2." lightbox="images/216253cbfb6ae738b9f13496b9c799fd.png":::
+    :::image type="content" source="media/216253cbfb6ae738b9f13496b9c799fd.png" alt-text="The configuration settings - ad2." lightbox="media/216253cbfb6ae738b9f13496b9c799fd.png":::
 
     Select **Self-Service**, if you want users to install Microsoft Defender voluntarily, on demand.
 
@@ -847,9 +847,9 @@ Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint 
 
 20. Select **Done**.
 
-    :::image type="content" source="images/99679a7835b0d27d0a222bc3fdaf7f3b.png" alt-text="The Contoso onboarding status with an option to complete it." lightbox="images/99679a7835b0d27d0a222bc3fdaf7f3b.png":::
+    :::image type="content" source="media/99679a7835b0d27d0a222bc3fdaf7f3b.png" alt-text="The Contoso onboarding status with an option to complete it." lightbox="media/99679a7835b0d27d0a222bc3fdaf7f3b.png":::
 
-    :::image type="content" source="images/632aaab79ae18d0d2b8e0c16b6ba39e2.png" alt-text="The policies page." lightbox="images/632aaab79ae18d0d2b8e0c16b6ba39e2.png":::
+    :::image type="content" source="media/632aaab79ae18d0d2b8e0c16b6ba39e2.png" alt-text="The policies page." lightbox="media/632aaab79ae18d0d2b8e0c16b6ba39e2.png":::
 
 ## Configuration profile scope
 
