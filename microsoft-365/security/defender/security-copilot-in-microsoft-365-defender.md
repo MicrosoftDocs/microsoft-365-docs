@@ -93,7 +93,7 @@ Empower your security teams with the latest threat intelligence to help them mak
 
 ### Monitor threat intelligence
 
-Ask your assistant to summarize the latest threats impacting your environment, to prioritize resolving threats based on your exposure levels, or to find threat actors that might be targeting your industry. Read more about the threat intelligence capabilities in [Copilot for Security in threat intelligence](/defender/threat-intelligence/security-copilot-and-defender-threat-intelligence.md#using-copilot-for-security-on-defender-ti-in-microsoft-defender-xdr).
+Ask your assistant to summarize the latest threats impacting your environment, to prioritize resolving threats based on your exposure levels, or to find threat actors that might be targeting your industry. Read more about the threat intelligence capabilities in [Copilot for Security in threat intelligence](/defender/threat-intelligence/security-copilot-and-defender-threat-intelligence).
 
 :::image type="content" source="../../media/copilot-in-defender/TI/copilot-defender-threat-intel-small.png" alt-text="Screenshot of Copilot for Defender threat intelligence landing page." lightbox="../../media/copilot-in-defender/TI/copilot-defender-threat-intel-full.png":::
 

@@ -50,7 +50,7 @@ Each card contains information about the recommended action, including the entit
 
 The guided response cards can be sorted based on the available status for each card. You can select a specific status when viewing the guided responses by clicking on **Status** and selecting the appropriate status you want to view. All guided response cards regardless of status are shown by default.
 
-:::image type="content" source="../../media/copilot-in-defender/guided-response/copilot-defender-guided-response-status-small.png" alt-text="Screenshot highlighting the status of responses in the Copilot pane in the Microsoft Defender incident page." lightbox="../../media/copilot-in-defender/copilot-defender-guided-response-status.png":::
+:::image type="content" source="../../media/copilot-in-defender/guided-response/copilot-defender-guided-response-status-small.png" alt-text="Screenshot highlighting the status of responses in the Copilot pane in the Microsoft Defender incident page." lightbox="../../media/copilot-in-defender/guided-response/copilot-defender-guided-response-status.png":::
 
 To use guided responses, perform the following steps:
 
