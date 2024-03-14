@@ -128,7 +128,7 @@ In the following example we use **'Read all alerts'** permission:
 
    After clicking on the consent link, sign in with the Global Administrator of the customer's tenant and consent the application.
 
-   :::image type="content" source="../images/app-consent-partner.png" alt-text="The Accept button" lightbox="../images/app-consent-partner.png":::
+   :::image type="content" source="../media/app-consent-partner.png" alt-text="The Accept button" lightbox="../media/app-consent-partner.png":::
 
    In addition, you'll need to ask your customer for their tenant ID and save it for future use when acquiring the token.
 
