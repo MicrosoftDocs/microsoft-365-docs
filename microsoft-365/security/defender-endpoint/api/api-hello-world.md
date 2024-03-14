@@ -103,7 +103,7 @@ For the Application registration stage, you must have a **Global administrator**
 
    On your application page, go to **Overview** and copy the following:
 
-   :::image type="content" source="../images/app-and-tenant-ids.png" alt-text="The application details pane under the Overview menu item in the Microsoft Entra admin center" lightbox="../images/app-and-tenant-ids.png":::
+   :::image type="content" source="../media/app-and-tenant-ids.png" alt-text="The application details pane under the Overview menu item in the Microsoft Entra admin center" lightbox="../media/app-and-tenant-ids.png":::
 
 Done! You have successfully registered an application!
 
@@ -141,7 +141,7 @@ Done! You have successfully registered an application!
   - Paste in the top box.
   - Look for the "roles" section. Find the _Alert.Read.All_ role.
 
-  :::image type="content" source="../images/api-jwt-ms.png" alt-text="The Decoded Token pane for jwt.ms" lightbox="../images/api-jwt-ms.png":::
+  :::image type="content" source="../media/api-jwt-ms.png" alt-text="The Decoded Token pane for jwt.ms" lightbox="../media/api-jwt-ms.png":::
 
 ### Let's get the Alerts!
 

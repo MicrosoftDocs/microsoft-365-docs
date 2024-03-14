@@ -94,7 +94,7 @@ This article explains how to create a Microsoft Entra application, get an access
 
 7. Write down your application ID and your tenant ID. On your application page, go to **Overview** and copy the following.
 
-   :::image type="content" source="../images/app-and-tenant-ids.png" alt-text="The created app and tenant IDs" lightbox="../images/app-and-tenant-ids.png":::
+   :::image type="content" source="../media/app-and-tenant-ids.png" alt-text="The created app and tenant IDs" lightbox="../media/app-and-tenant-ids.png":::
 
 8. **For Microsoft Defender for Endpoint Partners only**. Set your app to be multi-tenanted (available in all tenants after consent). This is **required** for third-party apps (for example, if you create an app that is intended to run in multiple customers' tenant). This is **not required** if you create a service that you want to run in your tenant only (for example, if you create an application for your own usage that will only interact with your own data). To set your app to be multi-tenanted:
 

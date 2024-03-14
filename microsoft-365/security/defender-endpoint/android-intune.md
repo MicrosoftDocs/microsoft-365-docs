@@ -141,7 +141,7 @@ Follow the steps below to add Microsoft Defender for Endpoint app into your mana
 
     1. In the **Apps** page, go to **Policy > App configuration policies > Add > Managed devices**.
 
-       :::image type="content" source="images/android-mem.png" alt-text="The App configuration policies pane in the Microsoft Intune admin center portal" lightbox="images/android-mem.png":::
+       :::image type="content" source="media/android-mem.png" alt-text="The App configuration policies pane in the Microsoft Intune admin center portal" lightbox="media/android-mem.png":::
 
     1. In the **Create app configuration policy** page, enter the following details:
 
@@ -150,7 +150,7 @@ Follow the steps below to add Microsoft Defender for Endpoint app into your mana
         - Choose **Personally-owned Work Profile only** or **Fully Managed, Dedicated, and Corporate-owned work profile only** as Profile Type.
         - Click **Select App**, choose **Microsoft Defender**, select **OK** and then **Next**.
 
-        :::image type="content" source="images/android-create-app.png" alt-text=" Screenshot of the Associated app details pane." lightbox="images/android-create-app.png":::
+        :::image type="content" source="media/android-create-app.png" alt-text=" Screenshot of the Associated app details pane." lightbox="media/android-create-app.png":::
 
     1. Select **Permissions** \> **Add**. From the list, select the available app permissions \> **OK**.
     1. Select an option for each permission to grant with this policy:
@@ -173,7 +173,7 @@ Follow the steps below to add Microsoft Defender for Endpoint app into your mana
 
     1. In the **Assignments** page, select the user group to which this app config policy would be assigned. Click **Select groups to include** and selecting the applicable group and then selecting **Next**. The group selected here is usually the same group to which you would assign Microsoft Defender for Endpoint Android app.
 
-       :::image type="content" source="images/android-select-group.png" alt-text="The Selected groups pane" lightbox="images/android-select-group.png":::
+       :::image type="content" source="media/android-select-group.png" alt-text="The Selected groups pane" lightbox="media/android-select-group.png":::
 
     1. In the **Review + Create** page that comes up next, review all the information and then select **Create**.
 

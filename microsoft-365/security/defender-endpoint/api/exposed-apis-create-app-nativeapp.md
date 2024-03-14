@@ -126,7 +126,7 @@ This page explains how to create a Microsoft Entra application, get an access to
 
     On your application page, go to **Overview** and copy the following information:
 
-    :::image type="content" source="../images/app-and-tenant-ids.png" alt-text="The created app ID"  lightbox="../images/app-and-tenant-ids.png":::
+    :::image type="content" source="../media/app-and-tenant-ids.png" alt-text="The created app ID"  lightbox="../media/app-and-tenant-ids.png":::
 
 ## Get an access token
 
