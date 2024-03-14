@@ -1,6 +1,6 @@
 ---
 title: Export your data
-description: The guidance of export your data
+description: The guidance of export your data.
 search.appverid: MET150
 author: Tinacyt
 ms.author: tinachen
@@ -20,14 +20,14 @@ f1.keywords: NOCSH
 
 Should you wish to retain automation test scripts or download test results for future reference? Here is the guidance to export data from your existing account. If further guidance is needed, don't hesitate to let us know by [submit a support request](https://aka.ms/TestBaseSupport).
 
-## Export your package(s) and script(s) 
+## Export your packages and scripts 
 
-To download your application package(s) and test script(s), please access your Test Base account and select **Manage packages > Select the application you want to export > Download package.**
+To download your application packages and test scripts, please access your Test Base account and select **Manage packages > Select the application you want to export > Download package.**
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot of manage packages.](Media/export-your-data-1.png)](Media/export-your-data-1.png#lightbox)
 
-## Export your test result(s)
+## Export your test results
 
 To export a test result summary, you may go to **Test summary > Export all results to CSV**. (Note: In-place upgrade results summary export is not supported by default, please [submit a request](https://aka.ms/TestBaseSupport) if needed.) 
 
@@ -46,7 +46,7 @@ You may also click **See details** and **Download** log files and test execution
 
 More details about how to analyze downloaded reports, refer to [Downloading and Analyzing Test Result Files | Microsoft Learn](/download-analyze-test-result-files). 
 
-## Export your usage record(s) 
+## Export your usage records 
 
 To download your billing usage records, go to **Billing hub > Usage Console > Export all results to CSV**.
 
