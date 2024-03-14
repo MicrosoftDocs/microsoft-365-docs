@@ -52,7 +52,7 @@ For a complete list, see [About Computer Enrollment](https://docs.jamf.com/9.9/c
 
 3. In **Specify Recipients for the Invitation** > under **Email Addresses** enter the e-mail address(es) of the recipients.
 
-    :::image type="content" source="images/718b9d609f9f77c8b13ba88c4c0abe5d.png" alt-text="The configuration settings2" lightbox="images/718b9d609f9f77c8b13ba88c4c0abe5d.png":::
+    :::image type="content" source="media/718b9d609f9f77c8b13ba88c4c0abe5d.png" alt-text="The configuration settings2" lightbox="media/718b9d609f9f77c8b13ba88c4c0abe5d.png":::
 
     :::image type="content" source="images/ae3597247b6bc7c5347cf56ab1e820c0.png" alt-text="The configuration settings3" lightbox="images/ae3597247b6bc7c5347cf56ab1e820c0.png":::
 

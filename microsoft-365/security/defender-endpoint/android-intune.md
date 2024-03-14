@@ -74,7 +74,7 @@ Learn how to deploy Defender for Endpoint on Android with Microsoft Intune Compa
 
 5. In the app information page that is displayed, in the **Monitor** section, select **Device install status** to verify that the device installation has completed successfully.
 
-    :::image type="content" source="images/513cf5d59eaaef5d2b5bc122715b5844.png" alt-text="The Device install status page in the Microsoft Defender 365 portal" lightbox="images/513cf5d59eaaef5d2b5bc122715b5844.png":::
+    :::image type="content" source="media/513cf5d59eaaef5d2b5bc122715b5844.png" alt-text="The Device install status page in the Microsoft Defender 365 portal" lightbox="media/513cf5d59eaaef5d2b5bc122715b5844.png":::
 
 ### Complete onboarding and check status
 
@@ -102,7 +102,7 @@ Follow the steps below to add Microsoft Defender for Endpoint app into your mana
 
 1. In [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) , go to **Apps** \> **Android Apps** \> **Add** and select **Managed Google Play app**.
 
-    :::image type="content" source="images/579ff59f31f599414cedf63051628b2e.png" alt-text="The application-adding pane in the Microsoft Intune admin center portal" lightbox="images/579ff59f31f599414cedf63051628b2e.png":::
+    :::image type="content" source="media/579ff59f31f599414cedf63051628b2e.png" alt-text="The application-adding pane in the Microsoft Intune admin center portal" lightbox="media/579ff59f31f599414cedf63051628b2e.png":::
 
 2. On your managed Google Play page that loads subsequently, go to the search box and enter `Microsoft Defender`. Your search should display the Microsoft Defender for Endpoint app in your Managed Google Play. Click on the Microsoft Defender for Endpoint app from the Apps search result.
 
@@ -245,7 +245,7 @@ The device configuration profile is now assigned to the selected user group.
 1. Confirm the installation status of Microsoft Defender for Endpoint on Android by clicking on the **Device Install Status**. Verify that the device is displayed here.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/900c0197aa59f9b7abd762ab2b32e80c.png" alt-text="The device installation status pane" lightbox="images/900c0197aa59f9b7abd762ab2b32e80c.png":::
+    > :::image type="content" source="media/900c0197aa59f9b7abd762ab2b32e80c.png" alt-text="The device installation status pane" lightbox="media/900c0197aa59f9b7abd762ab2b32e80c.png":::
 
 2. On the device, you can validate the onboarding status by going to the **work profile**. Confirm that Defender for Endpoint is available and that you are enrolled to the **Personally owned devices with work profile**. If you are enrolled to a **Corporate-owned, fully managed user device**, you will have a single profile on the device where you can confirm that Defender for Endpoint is available.
 

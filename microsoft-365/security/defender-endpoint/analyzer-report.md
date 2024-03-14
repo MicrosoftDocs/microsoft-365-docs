@@ -48,7 +48,7 @@ Use the following example to understand the report.
 To include analyzer result files [when opening a support ticket](contact-support.md#open-a-service-request), make sure you use the **Attachments** section and include the
 `MDEClientAnalyzerResult.zip` file:
 
-:::image type="content" source="images/508c189656c3deb3b239daf811e33741.png" alt-text="An attachment prompt" lightbox="images/508c189656c3deb3b239daf811e33741.png":::
+:::image type="content" source="media/508c189656c3deb3b239daf811e33741.png" alt-text="An attachment prompt" lightbox="media/508c189656c3deb3b239daf811e33741.png":::
 
 > [!NOTE]
 > If the file size is larger than 25 MB, the support engineer assigned to your case will provide a dedicated secure workspace to upload large files for analysis.
