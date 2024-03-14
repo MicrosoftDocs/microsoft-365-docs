@@ -266,7 +266,7 @@ The **Action center** provides information on actions that were taken on a devic
 
 All other related details are also shown, such as submission date/time, submitting user, and if the action succeeded or failed.
 
-:::image type="content" source="images/action-center-details.png" alt-text="The action center with information" lightbox="images/action-center-details.png":::
+:::image type="content" source="media/action-center-details.png" alt-text="The action center with information" lightbox="media/action-center-details.png":::
 
 ## Deep analysis
 
@@ -332,7 +332,7 @@ The details provided can help you investigate if there are indications of a pote
 1. Select the file you submitted for deep analysis.
 2. Select the **Deep analysis** tab. If there are any previous reports, the report summary will appear in this tab.
 
-   :::image type="content" source="images/analysis-results-nothing500.png" alt-text="The deep analysis report showing detailed information across a number of categories" lightbox="images/analysis-results-nothing500.png":::
+   :::image type="content" source="media/analysis-results-nothing500.png" alt-text="The deep analysis report showing detailed information across a number of categories" lightbox="media/analysis-results-nothing500.png":::
 
 #### Troubleshoot deep analysis
 

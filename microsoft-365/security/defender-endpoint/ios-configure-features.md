@@ -137,7 +137,7 @@ Follow the below steps for setting up MAM config for unenrolled devices for Netw
 
 3. On the Settings page, add **DefenderNetworkProtectionEnable** as the key and the value as `true` to enable network protection. (Network protection is disabled by default.)
 
-   :::image type="content" source="images/addiosconfigvalue.png" alt-text="Add configuration value." lightbox="images/addiosconfigvalue.png":::
+   :::image type="content" source="media/addiosconfigvalue.png" alt-text="Add configuration value." lightbox="media/addiosconfigvalue.png":::
 
 4. For other configurations related to network protection, add the following keys and appropriate corresponding value.
 
