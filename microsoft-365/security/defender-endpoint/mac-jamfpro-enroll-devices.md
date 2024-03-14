@@ -44,7 +44,7 @@ For a complete list, see [About Computer Enrollment](https://docs.jamf.com/9.9/c
 
 1. In the Jamf Pro dashboard, navigate to **Enrollment invitations**.
 
-   :::image type="content" source="images/a347307458d6a9bbfa88df7dbe15398f.png" alt-text="The configuration settings1" lightbox="images/a347307458d6a9bbfa88df7dbe15398f.png":::
+   :::image type="content" source="media/a347307458d6a9bbfa88df7dbe15398f.png" alt-text="The configuration settings1" lightbox="media/a347307458d6a9bbfa88df7dbe15398f.png":::
 
 2. Select **+ New**.
 
@@ -54,7 +54,7 @@ For a complete list, see [About Computer Enrollment](https://docs.jamf.com/9.9/c
 
     :::image type="content" source="media/718b9d609f9f77c8b13ba88c4c0abe5d.png" alt-text="The configuration settings2" lightbox="media/718b9d609f9f77c8b13ba88c4c0abe5d.png":::
 
-    :::image type="content" source="images/ae3597247b6bc7c5347cf56ab1e820c0.png" alt-text="The configuration settings3" lightbox="images/ae3597247b6bc7c5347cf56ab1e820c0.png":::
+    :::image type="content" source="media/ae3597247b6bc7c5347cf56ab1e820c0.png" alt-text="The configuration settings3" lightbox="media/ae3597247b6bc7c5347cf56ab1e820c0.png":::
 
     For example: janedoe@contoso.com
 

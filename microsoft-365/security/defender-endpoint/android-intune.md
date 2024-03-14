@@ -268,7 +268,7 @@ Admins can go to the [Microsoft Endpoint Management admin center](https://endpoi
 1. Go to **Apps> App configuration policies** and click on **Add**. Select **Managed Devices**.
 
     > [!div class="mx-imgBorder"]
-    > ![Image of adding app configuration policy.](images/addpolicy.png)
+    > ![Image of adding app configuration policy.](media/addpolicy.png)
 
 1. Enter **Name** and **Description** to uniquely identify the configuration policy. Select platform as **'Android Enterprise'**, Profile type as **'Personally-owned work profile only'** and Targeted app as **'Microsoft Defender'**.
 
@@ -278,7 +278,7 @@ Admins can go to the [Microsoft Endpoint Management admin center](https://endpoi
 1. On the settings page, in **'Configuration settings format'**, select **'Use configuration designer'** and click on **Add**. From the list of configurations that are displayed, select **'Microsoft Defender in Personal profile'**.
 
     > [!div class="mx-imgBorder"]
-    > ![Image of configuring personal profile.](images/addconfiguration.png)
+    > ![Image of configuring personal profile.](media/addconfiguration.png)
 
 1. The selected configuration will be listed. Change the **configuration value to 1** to enable Microsoft Defender support personal profiles. A notification will appear informing the admin about the same. Click on **Next**.
 
