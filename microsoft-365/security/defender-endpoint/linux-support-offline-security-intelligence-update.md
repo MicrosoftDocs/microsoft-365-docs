@@ -93,8 +93,7 @@ Follow these steps to get the downloader script:
 
 #### Option 2: Download the zip file
 
-- Download the zip file of the repo as shown here.
-![repo image](image.png)
+- Download the zip file of the repo [from here](https://github.com/microsoft/mdatp-xplat/archive/refs/heads/master.zip).
 - Copy the zip file to the folder where you want to keep the script.
 - Extract the zip.
 
@@ -103,7 +102,17 @@ Follow these steps to get the downloader script:
 
 After cloning the repo / downloading the zip file, the local directory structure should be as follows:
 
-![directory structure](image-3.png)
+```
+(base) lakshmyav@lakshmyav-Virtual-Machine:~/projects/mdatp-xplat$ tree linux/definition_downloader/
+linux/definition_downloader/
+├── README.md
+├── settings.json
+├── settings.ps1
+├── xplat_offline_updates_download.ps1
+└── xplat_offline_updates_download.sh
+
+0 directories, 5 files
+```
 
 > NOTE
 > Go through the README.md file to understand in detail about how to use the script.
@@ -172,12 +181,25 @@ Once the Mirror Server is set up, we need to propagate this URL to the Linux end
 
 Once the Mirror Server and the Linux endpoints are configured, to test if the settings are applied correctly on the Linux endpoints, run the following command:
 ```
-mdatp health --details --definitions
+mdatp health --details definitions
 ```
 
 and verify the updated fields according to the managed json. For example, a sample output would look like:
 
-![mdatp health definitions output](image-1.png)
+```
+(base) lakshmyav@lakshmyav-Virtual-Machine:~/projects/WD.Client.Mac$ mdatp health --details definitions
+automatic_definition_update_enabled         : true [managed]
+definitions_updated                         : Mar 14, 2024 at 12:13:17 PM
+definitions_updated_minutes_ago             : 2
+definitions_version                         : "1.407.417.0"
+definitions_status                          : "up_to_date"
+definitions_update_source_uri               : "https://go.microsoft.com/fwlink/?linkid=2144709"
+definitions_update_fail_reason              : ""
+offline_definition_url_configured           : "http://172.22.199.67:8000/linux/production/" [managed]
+offline_definition_update                   : "enabled" [managed]
+offline_definition_update_verify_sig        : "disabled"
+offline_definition_update_fallback_to_cloud : false
+```
 
 ## Triggering the Offline Security Intelligence Updates
 
