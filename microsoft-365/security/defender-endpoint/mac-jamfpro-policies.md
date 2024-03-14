@@ -489,13 +489,13 @@ These steps are applicable on macOS 11 (Big Sur) or later.
    :::image type="content" source="images/a26bd4967cd54bb113a2c8d32894c3de.png" alt-text="The mdatpmdavmau settings." lightbox="images/a26bd4967cd54bb113a2c8d32894c3de.png":::
 
 10. Select **Upload**.
-    :::image type="content" source="images/4239ca0528efb0734e4ca0b490bfb22d.png" alt-text="The upload of the file regarding configuration setting." lightbox="images/4239ca0528efb0734e4ca0b490bfb22d.png":::
+    :::image type="content" source="media/4239ca0528efb0734e4ca0b490bfb22d.png" alt-text="The upload of the file regarding configuration setting." lightbox="media/4239ca0528efb0734e4ca0b490bfb22d.png":::
 
     :::image type="content" source="media/4ec20e72c8aed9a4c16912e01692436a.png" alt-text="The page displaying the upload option for the file regarding configuration setting." lightbox="media/4ec20e72c8aed9a4c16912e01692436a.png":::
 
 11. Select **Save**.
 
-    :::image type="content" source="images/253274b33e74f3f5b8d475cf8692ce4e.png" alt-text="The page displaying the save option for the file regarding configuration setting." lightbox="images/253274b33e74f3f5b8d475cf8692ce4e.png":::
+    :::image type="content" source="media/253274b33e74f3f5b8d475cf8692ce4e.png" alt-text="The page displaying the save option for the file regarding configuration setting." lightbox="media/253274b33e74f3f5b8d475cf8692ce4e.png":::
 
 12. Select the **Scope** tab.
 
@@ -774,7 +774,7 @@ Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint 
 
    It can take a few minutes for the package to be available for deployment.
 
-   :::image type="content" source="images/1626d138e6309c6e87bfaab64f5ccf7b.png" alt-text="An instance of uploading the package for configuration settings." lightbox="images/1626d138e6309c6e87bfaab64f5ccf7b.png":::
+   :::image type="content" source="media/1626d138e6309c6e87bfaab64f5ccf7b.png" alt-text="An instance of uploading the package for configuration settings." lightbox="media/1626d138e6309c6e87bfaab64f5ccf7b.png":::
 
 9. Navigate to the **Policies** page.
 
@@ -839,7 +839,7 @@ Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint 
 
     Switch to the **Computer Groups** tab. Find the smart group you created, and **Add** it.
 
-    :::image type="content" source="images/216253cbfb6ae738b9f13496b9c799fd.png" alt-text="The configuration settings - ad2." lightbox="images/216253cbfb6ae738b9f13496b9c799fd.png":::
+    :::image type="content" source="media/216253cbfb6ae738b9f13496b9c799fd.png" alt-text="The configuration settings - ad2." lightbox="media/216253cbfb6ae738b9f13496b9c799fd.png":::
 
     Select **Self-Service**, if you want users to install Microsoft Defender voluntarily, on demand.
 
@@ -847,7 +847,7 @@ Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint 
 
 20. Select **Done**.
 
-    :::image type="content" source="images/99679a7835b0d27d0a222bc3fdaf7f3b.png" alt-text="The Contoso onboarding status with an option to complete it." lightbox="images/99679a7835b0d27d0a222bc3fdaf7f3b.png":::
+    :::image type="content" source="media/99679a7835b0d27d0a222bc3fdaf7f3b.png" alt-text="The Contoso onboarding status with an option to complete it." lightbox="media/99679a7835b0d27d0a222bc3fdaf7f3b.png":::
 
     :::image type="content" source="media/632aaab79ae18d0d2b8e0c16b6ba39e2.png" alt-text="The policies page." lightbox="media/632aaab79ae18d0d2b8e0c16b6ba39e2.png":::
 
