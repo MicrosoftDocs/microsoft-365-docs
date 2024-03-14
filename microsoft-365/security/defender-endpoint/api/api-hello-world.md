@@ -68,7 +68,7 @@ For the Application registration stage, you must have a **Global administrator**
      > [!NOTE]
      > WindowsDefenderATP does not appear in the original list. You need to start writing its name in the text box to see it appear.
 
-     :::image type="content" source="../images/add-permission.png" alt-text="The API permissions option under the Manage pane in the Microsoft Entra admin center" lightbox="../images/add-permission.png":::
+     :::image type="content" source="../media/add-permission.png" alt-text="The API permissions option under the Manage pane in the Microsoft Entra admin center" lightbox="../media/add-permission.png":::
 
    - Choose **Application permissions** \> **Alert.Read.All** > Click on **Add permissions**.
 

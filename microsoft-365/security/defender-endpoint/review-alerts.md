@@ -62,7 +62,7 @@ Note the detection status for your alert.
 
 You can then also review the *automated investigation details* in your alert's details pane, to see which actions were already taken, as well as reading the alert's description for recommended actions.
 
-:::image type="content" source="images/alert-air-and-alert-description.png" alt-text="The details pane with the alert description and automatic investigation sections highlighted" lightbox="images/alert-air-and-alert-description.png":::
+:::image type="content" source="media/alert-air-and-alert-description.png" alt-text="The details pane with the alert description and automatic investigation sections highlighted" lightbox="media/alert-air-and-alert-description.png":::
 
 Other information available in the details pane when the alert opens includes MITRE techniques, source, and additional contextual details.
 

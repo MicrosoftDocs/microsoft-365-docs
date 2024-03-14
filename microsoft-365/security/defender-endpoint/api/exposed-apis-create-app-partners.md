@@ -77,7 +77,7 @@ The following steps guide you how to create a Microsoft Entra application, get a
 
    - Note that *WindowsDefenderATP* doesn't appear in the original list. Start writing its name in the text box to see it appear.
 
-     :::image type="content" source="../images/add-permission.png" alt-text="The Add a permission option" lightbox="../images/add-permission.png":::
+     :::image type="content" source="../media/add-permission.png" alt-text="The Add a permission option" lightbox="../media/add-permission.png":::
 
 ### Request API permissions
 
