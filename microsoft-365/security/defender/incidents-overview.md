@@ -31,7 +31,7 @@ ms.date: 03/10/2024
     - Microsoft Sentinel
     - Microsoft Defender XDR
 
-An *incident* in the Microsoft Defender unified SOC platform is a collection of related alerts and associated data that make up the story of an attack. It's also a case file that your SOC can use to manage, implement, and document the response to that attack.
+An *incident* in the Microsoft Defender unified SOC platform is a collection of related alerts and associated data that make up the story of an attack. It's also a case file that your SOC can use to investigate that attack and manage, implement, and document the response to it.
 
 The Microsoft Sentinel and Microsoft Defender services create alerts when they detect a suspicious or malicious event or activity. Individual alerts provide valuable evidence of a completed or ongoing attack. However, increasingly prevalent and sophisticated attacks typically employ a variety of techniques and vectors against different types of asset entities, such as devices, users, and mailboxes. The result is multiple alerts, from multiple sources, for multiple asset entities in your digital estate.
 
@@ -47,7 +47,7 @@ Grouping related alerts into an incident gives you a comprehensive view of an at
 - The scope of the attack, such as how many devices, users, and mailboxes were impacted.
 - All of the data associated with the attack.
 
-The Microsoft Defender unified SOC platform includes methods to automate triage, investigation, and resolution of incidents through automation and artificial intelligence.
+The Microsoft Defender unified SOC platform includes methods to automate and assist in the triage, investigation, and resolution of incidents.
 
 - Security Copilot harnesses AI to support analysts with complex and time-consuming daily workflows, including end-to-end incident investigation and response with clearly described attack stories, step-by-step actionable remediation guidance and incident activity summarized reports, natural language KQL hunting, and expert code analysis - optimizing on SOC efficiency across Microsoft Sentinel and Defender XDR data.
 <!--Is this the place to talk about Security Copilot? -->
@@ -57,7 +57,9 @@ The Microsoft Defender unified SOC platform includes methods to automate triage,
 
 - If [enabled](m365d-enable.md), Microsoft Defender XDR can [automatically investigate and resolve](m365d-autoir.md) alerts from Microsoft 365 and Entra ID sources through automation and artificial intelligence. You can also perform additional remediation steps to resolve the attack.
 
-- Microsoft Sentinel [automation rules](/azure/sentinel/automate-incident-handling-with-automation-rules) can automate triage, assignment, and management of incidents, regardless of their source. They can apply tags to incidents based on their content, suppress noisy (false positive) incidents, and close resolved incidents that meet the appropriate criteria, even including specifying a reason and adding comments.
+- Microsoft Sentinel [automation rules](/azure/sentinel/automate-incident-handling-with-automation-rules) can automate triage, assignment, and management of incidents, regardless of their source. They can apply tags to incidents based on their content, suppress noisy (false positive) incidents, and close resolved incidents that meet the appropriate criteria, specifying a reason and adding comments.
+
+For more information on onboarding the Microsoft Defender unified security operations portal, see [Connect Microsoft Sentinel to Microsoft Defender XDR (preview)](microsoft-sentinel-onboard.md)
 
 <a name='incidents-and-alerts-in-the-microsoft-365-defender-portal'></a>
 
@@ -68,7 +70,7 @@ The Microsoft Defender unified SOC platform includes methods to automate triage,
 
 You manage incidents from **Investigation & response > Incidents & alerts > Incidents** on the quick launch of the [Microsoft Defender portal](https://security.microsoft.com). Here's an example:
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="The Incidents page in the Microsoft Defender portal." lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
+:::image type="content" source="../../media/incidents-overview/incidents-ss-incidents.png" alt-text="The Incidents page in the Microsoft Defender portal." lightbox="../../media/incidents-overview/incidents-ss-incidents.png":::
 
 Selecting an incident name displays the incident page, starting with the entire **attack story** of the incident, including:
 
@@ -78,7 +80,7 @@ Selecting an incident name displays the incident page, starting with the entire 
 
 You can view the asset and other entity details directly from the graph and act on them with response options such as like disabling an account, deleting a file, or isolating a device.
 
-:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Screenshot that shows the attack story page for an incident in the Microsoft Defender portal." lightbox="../../media/incidents-overview/incidents-ss-incident-summary.png":::
+:::image type="content" source="../../media/incidents-overview/incident-summary.png" alt-text="Screenshot that shows the attack story page for an incident in the Microsoft Defender portal." lightbox="../../media/incidents-overview/incident-summary.png":::
 
 The incident page consists of the following tabs:
 
