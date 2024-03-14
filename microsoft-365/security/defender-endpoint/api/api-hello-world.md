@@ -72,7 +72,7 @@ For the Application registration stage, you must have a **Global administrator**
 
    - Choose **Application permissions** \> **Alert.Read.All** > Click on **Add permissions**.
 
-     :::image type="content" source="../images/application-permissions.png" alt-text="The permission type and settings panes in the Request API permissions page" lightbox="../images/application-permissions.png":::
+     :::image type="content" source="../media/application-permissions.png" alt-text="The permission type and settings panes in the Request API permissions page" lightbox="../media/application-permissions.png":::
 
      > [!IMPORTANT]
      > You need to select the relevant permissions. 'Read All Alerts' is only an example!

@@ -90,7 +90,7 @@ In the following example we use **'Read all alerts'** permission:
 
 1. Choose **Application permissions** \> **Alert.Read.All** > select on **Add permissions**
 
-   :::image type="content" source="../images/application-permissions.png" alt-text="The option that allows to add a permission" lightbox="../images/application-permissions.png":::
+   :::image type="content" source="../media/application-permissions.png" alt-text="The option that allows to add a permission" lightbox="../media/application-permissions.png":::
 
 2. Select **Grant consent**
 
@@ -110,7 +110,7 @@ In the following example we use **'Read all alerts'** permission:
 
    - On your application page, go to **Overview** and copy the following information:
 
-     :::image type="content" source="../images/app-id.png" alt-text="The create application's ID" lightbox="../images/app-id.png":::
+     :::image type="content" source="../media/app-id.png" alt-text="The create application's ID" lightbox="../images/app-id.png":::
 
 5. Add the application to your customer's tenant.
 

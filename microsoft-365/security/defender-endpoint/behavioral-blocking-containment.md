@@ -107,7 +107,7 @@ The threat turned out to be malware; it was a new, not-seen-before variant of a 
 
 Minutes after the alert was triggered, the file was analyzed, and confirmed to be malicious. Its process was stopped and blocked, as shown in the following image:
 
-:::image type="content" source="images/Artifactblockedjuicypotato.png" alt-text="Artifact blocked"  lightbox="images/Artifactblockedjuicypotato.png":::
+:::image type="content" source="media/Artifactblockedjuicypotato.png" alt-text="Artifact blocked"  lightbox="media/Artifactblockedjuicypotato.png":::
 
 A few minutes after the artifact was blocked, multiple instances of the same file were blocked on the same device, preventing more attackers or other malware from deploying on the device.
 
