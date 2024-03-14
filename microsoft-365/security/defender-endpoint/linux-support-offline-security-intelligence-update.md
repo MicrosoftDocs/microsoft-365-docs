@@ -213,7 +213,16 @@ offline_definition_update_fallback_to_cloud : false
 
 ### Check update status
 - After triggering the offline security intelligence update by either the automatic or manual method described above, verify that the update was successful by running the command: `mdatp health --details --definitions`.
-- Check that the `definitions_status` is `"up_to_date"` and the `definitions_update_fail_reason` is `""`.
+- Verify the following fields:
+
+  ```
+  (base) lakshmyav@lakshmyav-Virtual-Machine:~/projects/WD.Client.Mac$ mdatp health --details definitions
+  ...
+  definitions_status                          : "up_to_date"
+  ...
+  definitions_update_fail_reason              : ""
+  ...
+  ```
 
 
 ## Troubleshooting and Diagnostics
@@ -251,8 +260,9 @@ A. If there is any issue with the latest downloaded signatures, you can pull the
 
 ## Useful Links
 
-### Blog post
-// Add blog link after it is published
+### Downloader script
+
+- [GitHub repo](https://github.com/microsoft/mdatp-xplat)
 
 ### Scheduling a cron job
 - [Schedule a cron job in Linux](https://phoenixnap.com/kb/set-up-cron-job-linux)
