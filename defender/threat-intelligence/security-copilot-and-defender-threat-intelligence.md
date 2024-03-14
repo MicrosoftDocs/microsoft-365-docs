@@ -83,7 +83,7 @@ Get threat intelligence from threat articles and threat actors.
 
 - Summarize the recent threat intelligence.
 - Show me the latest threat articles.
-- Get threat articles associated with the finance industry.
+- Get threat articles related to ransomware in the last six months.
 
 #### IP address and host contextual information in relation to threat intelligence
 
@@ -91,9 +91,8 @@ Get information on datasets associated with IP addresses and hosts, such as port
 
 **Sample prompts**:
 
-- Give me the reputation score of the host _\<host name\>_.
-- Get open ports for IP address _\<IP address\>_.
-- Get the SSL certificates for the IP address _\<IP address\>_.
+- Show me the reputation of the host _\<host name\>_.
+- Get resolutions for IP address _\<IP address\>_.
 
 #### Threat actor mapping and infrastructure
 Get information on threat actors and the tactics, techniques, and procedures (TTPs), sponsored states, industries, and IOCs associated with them.
@@ -125,6 +124,7 @@ Once you have access to Copilot for Security, the key features discussed in the 
 - Threat analytics
 - Intel profiles
 - Intel explorer
+- Intel projects
 
 ### Key features
 Microsoft Defender XDR brings the _FindThreatIntelligence_ capability of Copilot for Security to the portal, letting security teams understand, prioritize, and take action on threat intelligence information immediately.
@@ -143,7 +143,7 @@ Copilot for Security provides insights on which threats you should prioritize an
 
 An important aspect of threat intelligence is keeping up to date with the global threat landscape. Copilot for Security gathers and summarizes the latest threat articles relevant to your industry so you can gather information on the latest TTPs or campaigns threat actors are launching against organizations similar to yours and promptly assess and apply mitigation or prevention strategies. 
 
-(add screenshot here)
+(Add screenshot here)
 
 ## Provide feedback
 
