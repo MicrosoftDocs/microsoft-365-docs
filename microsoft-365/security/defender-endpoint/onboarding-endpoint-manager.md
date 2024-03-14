@@ -183,17 +183,17 @@ Then, you continue by creating several different types of endpoint security poli
 5. In the **Configuration settings page**: Set the configurations you require for Microsoft Defender Antivirus (Cloud Protection, Exclusions, Real-Time Protection, and Remediation).
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/3840b1576d6f79a1d72eb14760ef5e8c.png" alt-text="The Microsoft Intune admin center14" lightbox="images/3840b1576d6f79a1d72eb14760ef5e8c.png":::
+    > :::image type="content" source="media/3840b1576d6f79a1d72eb14760ef5e8c.png" alt-text="The Microsoft Intune admin center14" lightbox="media/3840b1576d6f79a1d72eb14760ef5e8c.png":::
 
 6. Add scope tags if necessary, then select  **Next**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/2055e4f9b9141525c0eb681e7ba19381.png" alt-text="The Microsoft Intune admin center15" lightbox="images/2055e4f9b9141525c0eb681e7ba19381.png":::
+    > :::image type="content" source="media/2055e4f9b9141525c0eb681e7ba19381.png" alt-text="The Microsoft Intune admin center15" lightbox="media/2055e4f9b9141525c0eb681e7ba19381.png":::
 
 7. Select groups to include, assign to your test group, then select  **Next**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/48318a51adee06bff3908e8ad4944dc9.png" alt-text="The Microsoft Intune admin center16" lightbox="images/48318a51adee06bff3908e8ad4944dc9.png":::
+    > :::image type="content" source="media/48318a51adee06bff3908e8ad4944dc9.png" alt-text="The Microsoft Intune admin center16" lightbox="media/48318a51adee06bff3908e8ad4944dc9.png":::
 
 8. Review and create, then select  **Create**.
 
@@ -281,7 +281,7 @@ Then, you continue by creating several different types of endpoint security poli
     > For more information, see [Web Protection](web-protection-overview.md).
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/6104aa33a56fab750cf30ecabef9f5b6.png" alt-text="The Microsoft Intune admin center28" lightbox="images/6104aa33a56fab750cf30ecabef9f5b6.png":::
+    > :::image type="content" source="media/6104aa33a56fab750cf30ecabef9f5b6.png" alt-text="The Microsoft Intune admin center28" lightbox="media/6104aa33a56fab750cf30ecabef9f5b6.png":::
 
 7. Add **Scope Tags as required > Next**.
 

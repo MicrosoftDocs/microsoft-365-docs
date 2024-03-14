@@ -210,11 +210,11 @@ Microsoft Defender Antivirus is a built-in anti-malware solution that provides n
 
 1. In the Microsoft Configuration Manager console, navigate to **Assets and Compliance \> Overview \> Endpoint Protection \> Antimalware Polices** and choose **Create Antimalware Policy**.
 
-   :::image type="content" source="images/9736e0358e86bc778ce1bd4c516adb8b.png" alt-text="The antimalware policy" lightbox="images/9736e0358e86bc778ce1bd4c516adb8b.png":::
+   :::image type="content" source="media/9736e0358e86bc778ce1bd4c516adb8b.png" alt-text="The antimalware policy" lightbox="media/9736e0358e86bc778ce1bd4c516adb8b.png":::
 
 2. Select **Scheduled scans**, **Scan settings**, **Default actions**, **Real-time protection**, **Exclusion settings**, **Advanced**, **Threat overrides**, **Cloud Protection Service** and **Security intelligence   updates** and choose **OK**.
 
-   :::image type="content" source="images/1566ad81bae3d714cc9e0d47575a8cbd.png" alt-text="The next-generation protection pane1" lightbox="images/1566ad81bae3d714cc9e0d47575a8cbd.png":::
+   :::image type="content" source="media/1566ad81bae3d714cc9e0d47575a8cbd.png" alt-text="The next-generation protection pane1" lightbox="media/1566ad81bae3d714cc9e0d47575a8cbd.png":::
 
     In certain industries or some select enterprise customers might have specific needs on how Antivirus is configured.
 
@@ -228,15 +228,15 @@ Microsoft Defender Antivirus is a built-in anti-malware solution that provides n
 
     :::image type="content" source="images/a28afc02c1940d5220b233640364970c.png" alt-text="The next-generation protection pane4" lightbox="images/a28afc02c1940d5220b233640364970c.png":::
 
-    :::image type="content" source="images/5420a8790c550f39f189830775a6d4c9.png" alt-text="The next-generation protection pane5" lightbox="images/5420a8790c550f39f189830775a6d4c9.png":::
+    :::image type="content" source="media/5420a8790c550f39f189830775a6d4c9.png" alt-text="The next-generation protection pane5" lightbox="media/5420a8790c550f39f189830775a6d4c9.png":::
 
     :::image type="content" source="media/33f08a38f2f4dd12a364f8eac95e8c6b.png" alt-text="The next-generation protection pane6" lightbox="media/33f08a38f2f4dd12a364f8eac95e8c6b.png":::
 
     :::image type="content" source="images/41b9a023bc96364062c2041a8f5c344e.png" alt-text="The next-generation protection pane7" lightbox="images/41b9a023bc96364062c2041a8f5c344e.png":::
 
-    :::image type="content" source="images/945c9c5d66797037c3caeaa5c19f135c.png" alt-text="The next-generation protection pane8" lightbox="images/945c9c5d66797037c3caeaa5c19f135c.png":::
+    :::image type="content" source="media/945c9c5d66797037c3caeaa5c19f135c.png" alt-text="The next-generation protection pane8" lightbox="media/945c9c5d66797037c3caeaa5c19f135c.png":::
 
-    :::image type="content" source="images/3876ca687391bfc0ce215d221c683970.png" alt-text="The next-generation protection pane9" lightbox="images/3876ca687391bfc0ce215d221c683970.png":::
+    :::image type="content" source="media/3876ca687391bfc0ce215d221c683970.png" alt-text="The next-generation protection pane9" lightbox="media/3876ca687391bfc0ce215d221c683970.png":::
 
 3. Right-click on the newly created anti-malware policy and select **Deploy**.
 
@@ -276,7 +276,7 @@ To set attack surface reduction rules in test mode:
 
 6. Right-click on the newly created policy and choose **Deploy**.
 
-   :::image type="content" source="images/8999dd697e3b495c04eb911f8b68a1ef.png" alt-text="The Microsoft Configuration Manager console4" lightbox="images/8999dd697e3b495c04eb911f8b68a1ef.png":::
+   :::image type="content" source="media/8999dd697e3b495c04eb911f8b68a1ef.png" alt-text="The Microsoft Configuration Manager console4" lightbox="media/8999dd697e3b495c04eb911f8b68a1ef.png":::
 
 7. Target the policy to the newly created Windows collection and select **OK**.
 
@@ -326,7 +326,7 @@ See [Optimize attack surface reduction rule deployment and detections](/microsof
 
 6. Right-click on the newly created policy and choose **Deploy**.
 
-   :::image type="content" source="images/8999dd697e3b495c04eb911f8b68a1ef.png" alt-text="The Microsoft Configuration Manager-1" lightbox="images/8999dd697e3b495c04eb911f8b68a1ef.png":::
+   :::image type="content" source="media/8999dd697e3b495c04eb911f8b68a1ef.png" alt-text="The Microsoft Configuration Manager-1" lightbox="media/8999dd697e3b495c04eb911f8b68a1ef.png":::
 
 7. Select the policy to the newly created Windows collection and choose **OK**.
 
@@ -356,7 +356,7 @@ After completing this task, you now have successfully configured Network Protect
 
 6. Right-click on the newly created policy and choose **Deploy**.
 
-   :::image type="content" source="images/8999dd697e3b495c04eb911f8b68a1ef.png" alt-text="The Microsoft Configuration Manager-7" lightbox="images/8999dd697e3b495c04eb911f8b68a1ef.png":::
+   :::image type="content" source="media/8999dd697e3b495c04eb911f8b68a1ef.png" alt-text="The Microsoft Configuration Manager-7" lightbox="media/8999dd697e3b495c04eb911f8b68a1ef.png":::
 
 7. Target the policy to the newly created Windows collection and select **OK**.
 
