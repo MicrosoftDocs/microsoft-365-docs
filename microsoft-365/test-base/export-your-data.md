@@ -34,21 +34,21 @@ To export a test result summary, you may go to **Test summary > Export all resul
 > [!div class="mx-imgBorder"]
 > [![Screenshot of Test summaries.](Media/export-your-data-2.png)](Media/export-your-data-2.png#lightbox)
 
-For more detailed test execution logs, please **Select the package from Test Summary page > Select desired Windows version > Download Log files**: 
+For more detailed test execution logs, **Select the package from Test Summary page > Select desired Windows version > Download Log files**: 
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot for showing the download link.](Media/export-your-data-3.png)](Media/export-your-data-3.png#lightbox)
 
-You may also click **See details** and **Download** log files and test execution videos from test detail page. (Note: Videos are reserved for 7 days after test completion.) 
+You may also click **See details** and **Download** log files and test execution videos from test detail page. (Note: Videos are reserved for seven days after test completion.) 
 
 > [!div class="mx-imgBorder"]
-> [![Screenshot for showing the download link.](Media/export-your-data-4.png)](Media/export-your-data-4.png#lightbox)
+> [![Screenshot of page of test results.](Media/export-your-data-4.png)](Media/export-your-data-4.png#lightbox)
 
-More details about how to analyze downloaded reports, please refer to [Downloading and Analyzing Test Result Files | Microsoft Learn](download-analyze-test-result-files). 
+More details about how to analyze downloaded reports, refer to [Downloading and Analyzing Test Result Files | Microsoft Learn](/download-analyze-test-result-files). 
 
 ## Export your usage record(s) 
 
-To download your billing usage records, please go to **Billing hub > Usage Console > Export all results to CSV**.
+To download your billing usage records, go to **Billing hub > Usage Console > Export all results to CSV**.
 
 > [!div class="mx-imgBorder"]
-> [![Screenshot for showing the download link.](Media/export-your-data-4.png)](Media/export-your-data-4.png#lightbox)
+> [![Screenshot for showing the export button.](Media/export-your-data-4.png)](Media/export-your-data-4.png#lightbox)
