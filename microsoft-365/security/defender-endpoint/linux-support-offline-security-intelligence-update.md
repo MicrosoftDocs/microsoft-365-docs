@@ -94,7 +94,7 @@ Follow these steps to get the downloader script:
 #### Option 2: Download the zip file
 
 - Download the zip file of the repo as shown here.
-![alt text](image.png)
+![repo image](image.png)
 - Copy the zip file to the folder where you want to keep the script.
 - Extract the zip.
 
@@ -103,7 +103,7 @@ Follow these steps to get the downloader script:
 
 After cloning the repo / downloading the zip file, the local directory structure should be as follows:
 
-![alt text](image-3.png)
+![directory structure](image-3.png)
 
 > NOTE
 > Go through the README.md file to understand in detail about how to use the script.
@@ -171,12 +171,13 @@ Once the Mirror Server is set up, we need to propagate this URL to the Linux end
 ### Verify the configuration
 
 Once the Mirror Server and the Linux endpoints are configured, to test if the settings are applied correctly on the Linux endpoints, run the following command:
-    
-    mdatp health --details --definitions
+```
+mdatp health --details --definitions
+```
 
 and verify the updated fields according to the managed json. For example, a sample output would look like:
 
-![alt text](image-2.png)
+![mdatp health definitions output](image-1.png)
 
 ## Triggering the Offline Security Intelligence Updates
 
@@ -202,7 +203,7 @@ and verify the updated fields according to the managed json. For example, a samp
 
 ### Common Troubleshooting Steps
 
-- Check the status of the offline security intelligence update feature by using the command: `mdatp health -details definitions`
+- Check the status of the offline security intelligence update feature by using the command: `mdatp health --details definitions`
     - This should provide us with some user-friendly message in the `definitions_update_fail_reason` section.
     - Check if `offline_definition_update` and `offline_definition_update_verify_sig` is enabled.
     - Check if `definitions_update_source_uri` is equal to `offline_definition_url_configured`
