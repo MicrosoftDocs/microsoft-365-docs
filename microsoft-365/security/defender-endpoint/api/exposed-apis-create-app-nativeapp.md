@@ -100,7 +100,7 @@ This page explains how to create a Microsoft Entra application, get an access to
      > [!NOTE]
      > *WindowsDefenderATP* does not appear in the original list. Start writing its name in the text box to see it appear.
 
-     :::image type="content" alt-text="add permission." source="../media/add-permission.png" lightbox="../media/add-permission.png":::
+     :::image type="content" alt-text="add permission." source="../images/add-permission.png" lightbox="../images/add-permission.png":::
 
    - Choose **Delegated permissions** \> **Alert.Read** > select **Add permissions**.
 

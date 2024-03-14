@@ -367,7 +367,7 @@ The **Action center** provides information on actions that were taken on a devic
 
 All other related details are also shown, for example, submission date/time, submitting user, and if the action succeeded or failed.
 
-:::image type="content" source="media/action-center-details.png" alt-text="The action center with information" lightbox="media/action-center-details.png":::
+:::image type="content" source="images/action-center-details.png" alt-text="The action center with information" lightbox="images/action-center-details.png":::
 
 ## See also
 
