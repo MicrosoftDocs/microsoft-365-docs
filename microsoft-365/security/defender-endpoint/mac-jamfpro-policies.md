@@ -143,11 +143,11 @@ Note that you must use exact `com.microsoft.wdav` as the **Preference Domain**, 
 
 3. Scroll down to the **Application & Custom Settings** tab, select **External Applications**, click **Add** and use **Custom Schema** as Source to use for the preference domain.
 
-   :::image type="content" source="images/4137189bc3204bb09eed3aabc41afd78.png" alt-text="Add custom schema." lightbox="images/4137189bc3204bb09eed3aabc41afd78.png":::
+   :::image type="content" source="media/4137189bc3204bb09eed3aabc41afd78.png" alt-text="Add custom schema." lightbox="media/4137189bc3204bb09eed3aabc41afd78.png":::
 
 4. Enter `com.microsoft.wdav` as the Preference Domain, select **Add Schema** and **Upload** the schema.json file downloaded on Step 1. Click **Save**.
 
-   :::image type="content" source="images/a6f9f556037c42fabcfdcb1b697244cf.png" alt-text="Upload schema." lightbox="images/a6f9f556037c42fabcfdcb1b697244cf.png":::
+   :::image type="content" source="media/a6f9f556037c42fabcfdcb1b697244cf.png" alt-text="Upload schema." lightbox="media/a6f9f556037c42fabcfdcb1b697244cf.png":::
 
 5. You can see all supported Microsoft Defender for Endpoint configuration settings below, under **Preference Domain Properties**. Click **Add/Remove properties** to select the settings that you want to be managed, and click **Ok** to save your changes. (Settings left unselected will not be included into the managed configuration, an end user will be able to configure those settings on their machines.)
 
@@ -155,7 +155,7 @@ Note that you must use exact `com.microsoft.wdav` as the **Preference Domain**, 
 
 6. Change values of the settings to desired values. You can click **More information** to get documentation for a particular setting. (You may click **Plist preview** to inspect what the configuration plist will look like. Click **Form editor** to return to the visual editor.)
 
-   :::image type="content" source="images/a14a79efd5c041bb8974cb5b12b3a9b6.png" alt-text="The page on which you change the settings values." lightbox="images/a14a79efd5c041bb8974cb5b12b3a9b6.png":::
+   :::image type="content" source="media/a14a79efd5c041bb8974cb5b12b3a9b6.png" alt-text="The page on which you change the settings values." lightbox="media/a14a79efd5c041bb8974cb5b12b3a9b6.png":::
 
 7. Select the **Scope** tab.
 
@@ -323,7 +323,7 @@ All you need to do to have updates is to download an updated schema, edit existi
 
 5. In **Application & Custom Settings**, select **Configure**.
 
-   :::image type="content" source="images/3160906404bc5a2edf84d1d015894e3b.png" alt-text="The MDATP MDAV configuration settings." lightbox="images/3160906404bc5a2edf84d1d015894e3b.png":::
+   :::image type="content" source="media/3160906404bc5a2edf84d1d015894e3b.png" alt-text="The MDATP MDAV configuration settings." lightbox="media/3160906404bc5a2edf84d1d015894e3b.png":::
    
    :::image type="content" source="images/e1cc1e48ec9d5d688087b4d771e668d2.png" alt-text="The application and custom settings." lightbox="images/e1cc1e48ec9d5d688087b4d771e668d2.png":::
 
@@ -362,7 +362,7 @@ All you need to do to have updates is to download an updated schema, edit existi
 
     :::image type="content" source="media/33e2b2a1611fdddf6b5b79e54496e3bb.png" alt-text="The uploaded file related to the configuration settings." lightbox="media/33e2b2a1611fdddf6b5b79e54496e3bb.png":::
 
-    :::image type="content" source="images/a422e57fe8d45689227e784443e51bd1.png" alt-text="The configuration settings page." lightbox="images/a422e57fe8d45689227e784443e51bd1.png":::
+    :::image type="content" source="media/a422e57fe8d45689227e784443e51bd1.png" alt-text="The configuration settings page." lightbox="media/a422e57fe8d45689227e784443e51bd1.png":::
 
 13. Select the **Scope** tab.
 
@@ -477,7 +477,7 @@ These steps are applicable on macOS 11 (Big Sur) or later.
 
 7. In **Preference Domain** enter: `com.microsoft.autoupdate2`, then select **Upload PLIST File**.
 
-   :::image type="content" source="images/1213872db5833aa8be535da57653219f.png" alt-text="The configuration setting preference domain." lightbox="images/1213872db5833aa8be535da57653219f.png":::
+   :::image type="content" source="media/1213872db5833aa8be535da57653219f.png" alt-text="The configuration setting preference domain." lightbox="media/1213872db5833aa8be535da57653219f.png":::
     
 
 8. Select **Choose File**.
@@ -486,7 +486,7 @@ These steps are applicable on macOS 11 (Big Sur) or later.
 
 9. Select **MDATP_MDAV_MAU_settings.plist**.
 
-   :::image type="content" source="images/a26bd4967cd54bb113a2c8d32894c3de.png" alt-text="The mdatpmdavmau settings." lightbox="images/a26bd4967cd54bb113a2c8d32894c3de.png":::
+   :::image type="content" source="media/a26bd4967cd54bb113a2c8d32894c3de.png" alt-text="The mdatpmdavmau settings." lightbox="media/a26bd4967cd54bb113a2c8d32894c3de.png":::
 
 10. Select **Upload**.
     :::image type="content" source="media/4239ca0528efb0734e4ca0b490bfb22d.png" alt-text="The upload of the file regarding configuration setting." lightbox="media/4239ca0528efb0734e4ca0b490bfb22d.png":::
@@ -517,7 +517,7 @@ These steps are applicable on macOS 11 (Big Sur) or later.
 
 1. In the Jamf Pro dashboard, select **Configuration Profiles**.
 
-   :::image type="content" source="images/264493cd01e62c7085659d6fdc26dc91.png" alt-text="The profile for which settings are to be configured." lightbox="images/264493cd01e62c7085659d6fdc26dc91.png":::
+   :::image type="content" source="media/264493cd01e62c7085659d6fdc26dc91.png" alt-text="The profile for which settings are to be configured." lightbox="media/264493cd01e62c7085659d6fdc26dc91.png":::
 
 2. Select **+ New**.
 
@@ -737,7 +737,7 @@ Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint 
 
 3. Open the Jamf Pro dashboard.
 
-   :::image type="content" source="images/990742cd9a15ca9fdd37c9f695d1b9f4.png" alt-text="The configuration settings for jamfpro." lightbox="images/990742cd9a15ca9fdd37c9f695d1b9f4.png":::
+   :::image type="content" source="media/990742cd9a15ca9fdd37c9f695d1b9f4.png" alt-text="The configuration settings for jamfpro." lightbox="media/990742cd9a15ca9fdd37c9f695d1b9f4.png":::
 
 4. Select your computer and click the gear icon at the top, then select **Computer Management**.
 
