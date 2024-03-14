@@ -154,7 +154,7 @@ On the Configurations tab, you can check, on a per-device basis, which attack su
 The **Get started** link opens the Microsoft Intune admin center, where you can create or modify an endpoint protection policy for attack surface reduction:
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-defender365-05b-mem1.png" alt-text="The *Endpoint security menu item on the Overview page" lightbox="images/asr-defender365-05b-mem1.png":::
+> :::image type="content" source="media/asr-defender365-05b-mem1.png" alt-text="The *Endpoint security menu item on the Overview page" lightbox="media/asr-defender365-05b-mem1.png":::
 
 In Endpoint security | Overview, select **Attack surface reduction**:
 
