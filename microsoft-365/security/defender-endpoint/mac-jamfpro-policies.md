@@ -341,7 +341,7 @@ All you need to do to have updates is to download an updated schema, edit existi
 
 9. Select the **MDATP_MDAV_configuration_settings.plist**, then select **Open**.
 
-   :::image type="content" source="images/98acea3750113b8dbab334296e833003.png" alt-text="The mdatpmdav configuration settings." lightbox="images/98acea3750113b8dbab334296e833003.png":::
+   :::image type="content" source="media/98acea3750113b8dbab334296e833003.png" alt-text="The mdatpmdav configuration settings." lightbox="media/98acea3750113b8dbab334296e833003.png":::
 
 10. Select **Upload**.
 
@@ -482,7 +482,7 @@ These steps are applicable on macOS 11 (Big Sur) or later.
 
 8. Select **Choose File**.
 
-   :::image type="content" source="images/335aff58950ce62d1dabc289ecdce9ed.png" alt-text="The prompt to choose the file regarding configuration setting." lightbox="images/335aff58950ce62d1dabc289ecdce9ed.png":::
+   :::image type="content" source="media/335aff58950ce62d1dabc289ecdce9ed.png" alt-text="The prompt to choose the file regarding configuration setting." lightbox="media/335aff58950ce62d1dabc289ecdce9ed.png":::
 
 9. Select **MDATP_MDAV_MAU_settings.plist**.
 
@@ -507,7 +507,7 @@ These steps are applicable on macOS 11 (Big Sur) or later.
 
     :::image type="content" source="images/38c67ee1905c4747c3b26c8eba57726b.png" alt-text="The page on which you add more values to the configuration settings." lightbox="images/38c67ee1905c4747c3b26c8eba57726b.png":::
 
-    :::image type="content" source="images/321ba245f14743c1d5d51c15e99deecc.png" alt-text="The page on which you can add more values to the configuration settings." lightbox="images/321ba245f14743c1d5d51c15e99deecc.png":::
+    :::image type="content" source="media/321ba245f14743c1d5d51c15e99deecc.png" alt-text="The page on which you can add more values to the configuration settings." lightbox="media/321ba245f14743c1d5d51c15e99deecc.png":::
 
 14. Select **Done**.
 
@@ -790,7 +790,7 @@ Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint 
 
 12. Select **Recurring Check-in**.
 
-    :::image type="content" source="images/68bdbc5754dfc80aa1a024dde0fce7b0.png" alt-text="The recurring check-in for the configuration settings." lightbox="images/68bdbc5754dfc80aa1a024dde0fce7b0.png":::
+    :::image type="content" source="media/68bdbc5754dfc80aa1a024dde0fce7b0.png" alt-text="The recurring check-in for the configuration settings." lightbox="media/68bdbc5754dfc80aa1a024dde0fce7b0.png":::
 
 13. Select **Save**.
 
