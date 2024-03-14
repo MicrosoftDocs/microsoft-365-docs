@@ -110,7 +110,7 @@ These are the known gaps:
 
 |Feature name|GCC|GCC High|DoD|
 |---|:---:|:---:|:---:|
-|Microsoft Threat Experts|![No](../defender-endpoint/images/svg/check-no.svg) On engineering backlog|![No](../defender-endpoint/images/svg/check-no.svg) On engineering backlog|![No](../defender-endpoint/images/svg/check-no.svg) On engineering backlog|
+|Microsoft Threat Experts|![No](../defender-endpoint/media/svg/check-no.svg) On engineering backlog|![No](../defender-endpoint/media/svg/check-no.svg) On engineering backlog|![No](../defender-endpoint/media/svg/check-no.svg) On engineering backlog|
 
 For detailed list of Event Streaming API tables, see [Microsoft Defender XDR streaming event types supported in Event Streaming API](supported-event-types.md).
 

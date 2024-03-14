@@ -178,7 +178,7 @@ Follow the steps below to identify the Defender for Endpoint Workspace ID and Wo
 
 3. Copy the **Workspace ID** and **Workspace Key** and save them. They'll be used later in the process.
 
-   :::image type="content" source="images/91b738e4b97c4272fd6d438d8c2d5269.png" alt-text="The onboarding process" lightbox="images/91b738e4b97c4272fd6d438d8c2d5269.png":::
+   :::image type="content" source="media/91b738e4b97c4272fd6d438d8c2d5269.png" alt-text="The onboarding process" lightbox="media/91b738e4b97c4272fd6d438d8c2d5269.png":::
 
 4. Install the Microsoft Monitoring Agent (MMA).
 
@@ -210,11 +210,11 @@ Microsoft Defender Antivirus is a built-in anti-malware solution that provides n
 
 1. In the Microsoft Configuration Manager console, navigate to **Assets and Compliance \> Overview \> Endpoint Protection \> Antimalware Polices** and choose **Create Antimalware Policy**.
 
-   :::image type="content" source="images/9736e0358e86bc778ce1bd4c516adb8b.png" alt-text="The antimalware policy" lightbox="images/9736e0358e86bc778ce1bd4c516adb8b.png":::
+   :::image type="content" source="media/9736e0358e86bc778ce1bd4c516adb8b.png" alt-text="The antimalware policy" lightbox="media/9736e0358e86bc778ce1bd4c516adb8b.png":::
 
 2. Select **Scheduled scans**, **Scan settings**, **Default actions**, **Real-time protection**, **Exclusion settings**, **Advanced**, **Threat overrides**, **Cloud Protection Service** and **Security intelligence   updates** and choose **OK**.
 
-   :::image type="content" source="images/1566ad81bae3d714cc9e0d47575a8cbd.png" alt-text="The next-generation protection pane1" lightbox="images/1566ad81bae3d714cc9e0d47575a8cbd.png":::
+   :::image type="content" source="media/1566ad81bae3d714cc9e0d47575a8cbd.png" alt-text="The next-generation protection pane1" lightbox="media/1566ad81bae3d714cc9e0d47575a8cbd.png":::
 
     In certain industries or some select enterprise customers might have specific needs on how Antivirus is configured.
 
@@ -224,19 +224,19 @@ Microsoft Defender Antivirus is a built-in anti-malware solution that provides n
   
     :::image type="content" source="images/cd7daeb392ad5a36f2d3a15d650f1e96.png" alt-text="The next-generation protection pane2" lightbox="images/cd7daeb392ad5a36f2d3a15d650f1e96.png":::
 
-    :::image type="content" source="images/36c7c2ed737f2f4b54918a4f20791d4b.png" alt-text="The next-generation protection pane3" lightbox="images/36c7c2ed737f2f4b54918a4f20791d4b.png":::
+    :::image type="content" source="media/36c7c2ed737f2f4b54918a4f20791d4b.png" alt-text="The next-generation protection pane3" lightbox="media/36c7c2ed737f2f4b54918a4f20791d4b.png":::
 
-    :::image type="content" source="images/a28afc02c1940d5220b233640364970c.png" alt-text="The next-generation protection pane4" lightbox="images/a28afc02c1940d5220b233640364970c.png":::
+    :::image type="content" source="media/a28afc02c1940d5220b233640364970c.png" alt-text="The next-generation protection pane4" lightbox="media/a28afc02c1940d5220b233640364970c.png":::
 
-    :::image type="content" source="images/5420a8790c550f39f189830775a6d4c9.png" alt-text="The next-generation protection pane5" lightbox="images/5420a8790c550f39f189830775a6d4c9.png":::
+    :::image type="content" source="media/5420a8790c550f39f189830775a6d4c9.png" alt-text="The next-generation protection pane5" lightbox="media/5420a8790c550f39f189830775a6d4c9.png":::
 
-    :::image type="content" source="images/33f08a38f2f4dd12a364f8eac95e8c6b.png" alt-text="The next-generation protection pane6" lightbox="images/33f08a38f2f4dd12a364f8eac95e8c6b.png":::
+    :::image type="content" source="media/33f08a38f2f4dd12a364f8eac95e8c6b.png" alt-text="The next-generation protection pane6" lightbox="media/33f08a38f2f4dd12a364f8eac95e8c6b.png":::
 
-    :::image type="content" source="images/41b9a023bc96364062c2041a8f5c344e.png" alt-text="The next-generation protection pane7" lightbox="images/41b9a023bc96364062c2041a8f5c344e.png":::
+    :::image type="content" source="media/41b9a023bc96364062c2041a8f5c344e.png" alt-text="The next-generation protection pane7" lightbox="media/41b9a023bc96364062c2041a8f5c344e.png":::
 
-    :::image type="content" source="images/945c9c5d66797037c3caeaa5c19f135c.png" alt-text="The next-generation protection pane8" lightbox="images/945c9c5d66797037c3caeaa5c19f135c.png":::
+    :::image type="content" source="media/945c9c5d66797037c3caeaa5c19f135c.png" alt-text="The next-generation protection pane8" lightbox="media/945c9c5d66797037c3caeaa5c19f135c.png":::
 
-    :::image type="content" source="images/3876ca687391bfc0ce215d221c683970.png" alt-text="The next-generation protection pane9" lightbox="images/3876ca687391bfc0ce215d221c683970.png":::
+    :::image type="content" source="media/3876ca687391bfc0ce215d221c683970.png" alt-text="The next-generation protection pane9" lightbox="media/3876ca687391bfc0ce215d221c683970.png":::
 
 3. Right-click on the newly created anti-malware policy and select **Deploy**.
 
@@ -258,7 +258,7 @@ To set attack surface reduction rules in test mode:
 
 1. In the Microsoft Configuration Manager console, navigate to **Assets and Compliance \> Overview \> Endpoint Protection \> Windows Defender Exploit Guard** and choose **Create Exploit Guard Policy**.
 
-   :::image type="content" source="images/728c10ef26042bbdbcd270b6343f1a8a.png" alt-text="The Microsoft Configuration Manager console0" lightbox="images/728c10ef26042bbdbcd270b6343f1a8a.png":::
+   :::image type="content" source="media/728c10ef26042bbdbcd270b6343f1a8a.png" alt-text="The Microsoft Configuration Manager console0" lightbox="media/728c10ef26042bbdbcd270b6343f1a8a.png":::
 
 2. Select **Attack Surface Reduction**.
 
@@ -268,19 +268,19 @@ To set attack surface reduction rules in test mode:
 
 4. Confirm the new Exploit Guard policy by selecting **Next**.
 
-   :::image type="content" source="images/0a6536f2c4024c08709cac8fcf800060.png" alt-text="The Microsoft Configuration Manager console2" lightbox="images/0a6536f2c4024c08709cac8fcf800060.png":::
+   :::image type="content" source="media/0a6536f2c4024c08709cac8fcf800060.png" alt-text="The Microsoft Configuration Manager console2" lightbox="media/0a6536f2c4024c08709cac8fcf800060.png":::
 
 5. Once the policy is created select **Close**.
 
-   :::image type="content" source="images/95d23a07c2c8bc79176788f28cef7557.png" alt-text="The Microsoft Configuration Manager console3" lightbox="images/95d23a07c2c8bc79176788f28cef7557.png":::
+   :::image type="content" source="media/95d23a07c2c8bc79176788f28cef7557.png" alt-text="The Microsoft Configuration Manager console3" lightbox="media/95d23a07c2c8bc79176788f28cef7557.png":::
 
 6. Right-click on the newly created policy and choose **Deploy**.
 
-   :::image type="content" source="images/8999dd697e3b495c04eb911f8b68a1ef.png" alt-text="The Microsoft Configuration Manager console4" lightbox="images/8999dd697e3b495c04eb911f8b68a1ef.png":::
+   :::image type="content" source="media/8999dd697e3b495c04eb911f8b68a1ef.png" alt-text="The Microsoft Configuration Manager console4" lightbox="media/8999dd697e3b495c04eb911f8b68a1ef.png":::
 
 7. Target the policy to the newly created Windows collection and select **OK**.
 
-   :::image type="content" source="images/0ccfe3e803be4b56c668b220b51da7f7.png" alt-text="The Microsoft Configuration Manager console5" lightbox="images/0ccfe3e803be4b56c668b220b51da7f7.png":::
+   :::image type="content" source="media/0ccfe3e803be4b56c668b220b51da7f7.png" alt-text="The Microsoft Configuration Manager console5" lightbox="media/0ccfe3e803be4b56c668b220b51da7f7.png":::
 
 After completing this task, you now have successfully configured attack surface reduction rules in test mode.
 
@@ -300,7 +300,7 @@ Below are more steps to verify whether attack surface reduction rules are correc
 
 5. Select each device shows configuration details of attack surface reduction rules.
 
-   :::image type="content" source="images/24bfb16ed561cbb468bd8ce51130ca9d.png" alt-text="The attack surface reduction rules reports2" lightbox="images/24bfb16ed561cbb468bd8ce51130ca9d.png":::
+   :::image type="content" source="media/24bfb16ed561cbb468bd8ce51130ca9d.png" alt-text="The attack surface reduction rules reports2" lightbox="media/24bfb16ed561cbb468bd8ce51130ca9d.png":::
 
 See [Optimize attack surface reduction rule deployment and detections](/microsoft-365/security/defender-endpoint/configure-machines-asr) for more details.
 
@@ -308,7 +308,7 @@ See [Optimize attack surface reduction rule deployment and detections](/microsof
 
 1. In the Microsoft Configuration Manager console, navigate to **Assets and  Compliance \> Overview \> Endpoint Protection \> Windows Defender Exploit Guard** and choose **Create Exploit Guard Policy**.
 
-   :::image type="content" source="images/728c10ef26042bbdbcd270b6343f1a8a.png" alt-text="The System Center Configuration Manager1" lightbox="images/728c10ef26042bbdbcd270b6343f1a8a.png":::
+   :::image type="content" source="media/728c10ef26042bbdbcd270b6343f1a8a.png" alt-text="The System Center Configuration Manager1" lightbox="media/728c10ef26042bbdbcd270b6343f1a8a.png":::
 
 2. Select **Network protection**.
 
@@ -318,19 +318,19 @@ See [Optimize attack surface reduction rule deployment and detections](/microsof
 
 4. Confirm the new Exploit Guard Policy by selecting **Next**.
 
-   :::image type="content" source="images/0a6536f2c4024c08709cac8fcf800060.png" alt-text="The Exploit Guard policy1" lightbox="images/0a6536f2c4024c08709cac8fcf800060.png":::
+   :::image type="content" source="media/0a6536f2c4024c08709cac8fcf800060.png" alt-text="The Exploit Guard policy1" lightbox="media/0a6536f2c4024c08709cac8fcf800060.png":::
 
 5. Once the policy is created select on **Close**.
 
-   :::image type="content" source="images/95d23a07c2c8bc79176788f28cef7557.png" alt-text="The Exploit Guard policy2" lightbox="images/95d23a07c2c8bc79176788f28cef7557.png":::
+   :::image type="content" source="media/95d23a07c2c8bc79176788f28cef7557.png" alt-text="The Exploit Guard policy2" lightbox="media/95d23a07c2c8bc79176788f28cef7557.png":::
 
 6. Right-click on the newly created policy and choose **Deploy**.
 
-   :::image type="content" source="images/8999dd697e3b495c04eb911f8b68a1ef.png" alt-text="The Microsoft Configuration Manager-1" lightbox="images/8999dd697e3b495c04eb911f8b68a1ef.png":::
+   :::image type="content" source="media/8999dd697e3b495c04eb911f8b68a1ef.png" alt-text="The Microsoft Configuration Manager-1" lightbox="media/8999dd697e3b495c04eb911f8b68a1ef.png":::
 
 7. Select the policy to the newly created Windows collection and choose **OK**.
 
-   :::image type="content" source="images/0ccfe3e803be4b56c668b220b51da7f7.png" alt-text="The Microsoft Configuration Manager-2" lightbox="images/0ccfe3e803be4b56c668b220b51da7f7.png":::
+   :::image type="content" source="media/0ccfe3e803be4b56c668b220b51da7f7.png" alt-text="The Microsoft Configuration Manager-2" lightbox="media/0ccfe3e803be4b56c668b220b51da7f7.png":::
 
 After completing this task, you now have successfully configured Network Protection in test mode.
 
@@ -338,29 +338,29 @@ After completing this task, you now have successfully configured Network Protect
 
 1. In the Microsoft Configuration Manager console, navigate to **Assets and Compliance** > **Overview** > **Endpoint Protection** > **Windows Defender Exploit Guard** and then choose **Create Exploit Guard Policy**.
 
-   :::image type="content" source="images/728c10ef26042bbdbcd270b6343f1a8a.png" alt-text="The Microsoft Configuration Manager-3" lightbox="images/728c10ef26042bbdbcd270b6343f1a8a.png":::
+   :::image type="content" source="media/728c10ef26042bbdbcd270b6343f1a8a.png" alt-text="The Microsoft Configuration Manager-3" lightbox="media/728c10ef26042bbdbcd270b6343f1a8a.png":::
 
 2. Select **Controlled folder access**.
 
 3. Set the configuration to **Audit** and select **Next**.
 
-   :::image type="content" source="images/a8b934dab2dbba289cf64fe30e0e8aa4.png" alt-text="The Microsoft Configuration Manager-4" lightbox="images/a8b934dab2dbba289cf64fe30e0e8aa4.png":::
+   :::image type="content" source="media/a8b934dab2dbba289cf64fe30e0e8aa4.png" alt-text="The Microsoft Configuration Manager-4" lightbox="media/a8b934dab2dbba289cf64fe30e0e8aa4.png":::
 
 4. Confirm the new Exploit Guard Policy by selecting **Next**.
 
-   :::image type="content" source="images/0a6536f2c4024c08709cac8fcf800060.png" alt-text="The Microsoft Configuration Manager-5" lightbox="images/0a6536f2c4024c08709cac8fcf800060.png":::
+   :::image type="content" source="media/0a6536f2c4024c08709cac8fcf800060.png" alt-text="The Microsoft Configuration Manager-5" lightbox="media/0a6536f2c4024c08709cac8fcf800060.png":::
 
 5. Once the policy is created select on **Close**.
 
-   :::image type="content" source="images/95d23a07c2c8bc79176788f28cef7557.png" alt-text="The Microsoft Configuration Manager-6" lightbox="images/95d23a07c2c8bc79176788f28cef7557.png":::
+   :::image type="content" source="media/95d23a07c2c8bc79176788f28cef7557.png" alt-text="The Microsoft Configuration Manager-6" lightbox="media/95d23a07c2c8bc79176788f28cef7557.png":::
 
 6. Right-click on the newly created policy and choose **Deploy**.
 
-   :::image type="content" source="images/8999dd697e3b495c04eb911f8b68a1ef.png" alt-text="The Microsoft Configuration Manager-7" lightbox="images/8999dd697e3b495c04eb911f8b68a1ef.png":::
+   :::image type="content" source="media/8999dd697e3b495c04eb911f8b68a1ef.png" alt-text="The Microsoft Configuration Manager-7" lightbox="media/8999dd697e3b495c04eb911f8b68a1ef.png":::
 
 7. Target the policy to the newly created Windows collection and select **OK**.
 
-:::image type="content" source="images/0ccfe3e803be4b56c668b220b51da7f7.png" alt-text="The Microsoft Configuration Manager-8" lightbox="images/0ccfe3e803be4b56c668b220b51da7f7.png":::
+:::image type="content" source="media/0ccfe3e803be4b56c668b220b51da7f7.png" alt-text="The Microsoft Configuration Manager-8" lightbox="media/0ccfe3e803be4b56c668b220b51da7f7.png":::
 
 You have now successfully configured Controlled folder access in test mode.
 

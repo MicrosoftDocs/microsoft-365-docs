@@ -110,7 +110,7 @@ You need to be assigned permissions to use AIR. You have the following options:
     - Membership in the **Organization Management**, **Security Administrator**, **Security Operator**, **Security Reader**, or **Global Reader** role groups.
       and
     - Membership in a role group with the **Search and Purge** role assigned. By default, this role is assigned to the **Data Investigator** and **Organization Management** role groups. Or, you can [create a custom role group](mdo-portal-permissions.md#create-email--collaboration-role-groups-in-the-microsoft-defender-portal) to assign the **Search and Purge** role.
-- [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles):
+- [Microsoft Entra permissions](/entra/identity/role-based-access-control/manage-roles-portal):
   - _Set up AIR features_ Membership in the **Global Administrator** or **Security Administrator** roles.
   - _Start an automated investigation_ or _Approve or reject recommended actions_:
     - Membership in the **Global Administrator**, **Security Administrator**, **Security Operator**, **Security Reader**, or **Global Reader** roles.

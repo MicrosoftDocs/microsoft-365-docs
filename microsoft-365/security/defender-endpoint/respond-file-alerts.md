@@ -24,7 +24,6 @@ ms.date: 08/07/2023
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint Plan 1](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
@@ -45,6 +44,9 @@ Response actions run along the top of the file page, and include:
 - Manual actions
 - Go hunt
 - Deep analysis
+
+> [!NOTE]
+> If you're using Defender for Endpoint Plan 1, you can take certain response actions manually. For more information, see [Manual response actions](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1#manual-response-actions).
 
 You can also submit files for deep analysis, to run the file in a secure cloud sandbox. When the analysis is complete, you'll get a detailed report that provides information about the behavior of the file. You can submit files for deep analysis and read past reports by selecting the **Deep analysis** action.
 
@@ -264,7 +266,7 @@ The **Action center** provides information on actions that were taken on a devic
 
 All other related details are also shown, such as submission date/time, submitting user, and if the action succeeded or failed.
 
-:::image type="content" source="images/action-center-details.png" alt-text="The action center with information" lightbox="images/action-center-details.png":::
+:::image type="content" source="media/action-center-details.png" alt-text="The action center with information" lightbox="media/action-center-details.png":::
 
 ## Deep analysis
 
@@ -330,7 +332,7 @@ The details provided can help you investigate if there are indications of a pote
 1. Select the file you submitted for deep analysis.
 2. Select the **Deep analysis** tab. If there are any previous reports, the report summary will appear in this tab.
 
-   :::image type="content" source="images/analysis-results-nothing500.png" alt-text="The deep analysis report showing detailed information across a number of categories" lightbox="images/analysis-results-nothing500.png":::
+   :::image type="content" source="media/analysis-results-nothing500.png" alt-text="The deep analysis report showing detailed information across a number of categories" lightbox="media/analysis-results-nothing500.png":::
 
 #### Troubleshoot deep analysis
 

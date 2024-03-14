@@ -24,7 +24,7 @@ searchScope:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 02/07/2024
+ms.date: 02/29/2024
 ---
 
 # Get started with Microsoft 365 for Manufacturing
@@ -37,7 +37,7 @@ Empower your frontline workforce with digital tools and modern devices that offe
 
 ## Choose your scenarios
 
-Microsoft 365 and Microsoft Teams offers capabilities that help manufacturing organizations enhance productivity in their daily operations and digital transformation. We recommend the following scenarios for manufacturers:
+Microsoft 365 and Microsoft Teams offer capabilities that help manufacturing organizations enhance productivity in their daily operations and digital transformation. We recommend the following scenarios for manufacturers:
 
 - [Connect and engage your workforce](#connect-and-engage-your-workforce)
 - [Enhance workforce management](#enhance-workforce-management)
@@ -45,7 +45,7 @@ Microsoft 365 and Microsoft Teams offers capabilities that help manufacturing or
 - [Onboard and train employees](#onboard-and-train-employees)
 
 > [!NOTE]
-> For all these capabilities, users must have an appropriate license. For more information about general Teams licensing, see [Manage user access to Teams](/microsoftteams//user-access). Check out [Understand frontline worker user types and licensing](flw-licensing-options.md) to learn more about using Microsoft 365 for frontline workers in combination with other licenses. For a detailed comparison of what's included in Microsoft 365 enterprise plans, see the [Modern work plan comparison](https://go.microsoft.com/fwlink/p/?linkid=2139145) table.
+> For all these capabilities, users must have an appropriate license. For more information about general Teams licensing, see [Manage user access to Teams](/microsoftteams//user-access). Check out [Understand frontline worker user types and licensing](flw-licensing-options.md) to learn more about using Microsoft 365 for frontline workers in combination with other licenses. For a detailed comparison of what's included in Microsoft 365 plans for enterprises, see the [Modern work plan comparison](https://go.microsoft.com/fwlink/p/?linkid=2139145) table.
 
 ### Connect and engage your workforce
 
@@ -106,7 +106,7 @@ For manufacturing environments, the following apps and services can help you tra
 | Chat | Enable quick conversations between staff and managers with secure chat in Teams. | [Chat, teams, channels & apps in Microsoft Teams](/microsoftteams/deploy-chat-teams-channels-microsoft-teams-landing-page) | [Chat in Teams](https://support.microsoft.com/office/start-and-pin-chats-a864b052-5e4b-4ccf-b046-2e26f40e21b5?wt.mc_id=otc_microsoft_teams) |
 | Documents and files | Share standard operating procedures, manuals, diagrams, inspection records, and more. | [Teams and SharePoint integration](/sharepoint/teams-connected-sites) | [Share files](https://support.microsoft.com/office/upload-and-share-files-57b669db-678e-424e-b0a0-15d19215cb12) |
 | Praise | Recognize coworkers for great teamwork with the Praise app. | [Manage the Praise app](/microsoftteams/manage-praise-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Send Praise to people](https://support.microsoft.com/office/send-praise-to-people-50f26b47-565f-40fe-8642-5ca2a5ed261e) |
-| Shifts | Manage schedules and clock in and out with Shifts. | [Manage the Shifts app](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Use Shifts](https://support.microsoft.com/office/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821) |
+| Shifts | Create and manage schedules and clock in and out with Shifts. |[Shifts for frontline workers](shifts-for-teams-landing-page.md) | [Use Shifts](https://support.microsoft.com/office/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821) |
 | Tasks | Supervisors can assign tasks to let workers know what to focus on. Your organization's central office can use [task publishing](/microsoftteams/manage-tasks-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json#task-publishing) to send out tasks to locations and track progress across those locations. | [Manage the Tasks app](/microsoftteams/manage-tasks-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Use Tasks](https://support.microsoft.com/office/use-the-tasks-app-in-teams-e32639f3-2e07-4b62-9a8c-fd706c12c070) |
 | Updates | Check in on recurring and one-off priorities such as machinery repairs and inspections. Supervisors can create templates for employees to fill out and submit. | [Manage the Updates app](/microsoftteams/manage-updates-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Use Updates](https://support.microsoft.com/office/get-started-in-updates-c03a079e-e660-42dc-817b-ca4cfd602e5a) |
 | Viva Connections | Viva Connections creates an experience in Teams that connects employees with tools, news, and resources. Employees can view a tailored news feed from your organization and a personalized dashboard with the resources they need. For example, you could create a Manuals card so your operators can easily find all the necessary manuals. | [Overview of Viva Connections](/viva/connections/viva-connections-overview) | [Use Viva Connections](https://support.microsoft.com/office/your-intranet-is-now-in-microsoft-teams-8b4e7f76-f305-49a9-b6d2-09378476f95b) |

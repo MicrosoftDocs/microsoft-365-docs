@@ -86,6 +86,8 @@ Here's an explanation of how Microsoft Copilot for Microsoft 365 works:
 
 - Copilot returns the response to the app, where the user can review and assess the response.
 
+We refer to the user’s prompt and Copilot’s response to that prompt as the “content of interactions” and the record of those interactions is the user’s Copilot interaction history.
+
 Microsoft Copilot for Microsoft 365 iteratively processes and orchestrates these sophisticated services to help produce results that are relevant to your organization because they're contextually based on your organizational data.
 
 ## Semantic Index
@@ -100,14 +102,16 @@ Copilot for Microsoft 365 is available as an add-on plan with one of the followi
 
 - Microsoft 365 E5
 - Microsoft 365 E3
-- Office 365 E3  
+- Office 365 E3
 - Office 365 E5
-- Microsoft 365 A5 for faculty
-- Microsoft 365 A3 for faculty
-- Office 365 A5 for faculty
-- Office 365 A3 for faculty
 - Microsoft 365 Business Standard
 - Microsoft 365 Business Premium
+- Microsoft 365 A5 for faculty*
+- Microsoft 365 A3 for faculty*
+- Office 365 A5 for faculty*
+- Office 365 A3 for faculty*
+
+*Available via Enrollment for Education Solutions (EES) or Cloud Solution Provider only.
 
 You can use the [Microsoft Copilot for Microsoft 365 setup guide](https://admin.microsoft.com/Adminportal/Home?Q=learndocs#/modernonboarding/microsoft365copilotsetupguide) in the Microsoft 365 admin center to assign the required licenses to users. For more information, see [Assign licenses to users in the Microsoft 365 admin center](/microsoft-365/admin/manage/assign-licenses-to-users) and [Microsoft Copilot for Microsoft 365 requirements](microsoft-365-copilot-requirements.md).
 

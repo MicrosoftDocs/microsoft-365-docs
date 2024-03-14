@@ -77,7 +77,7 @@ The following steps guide you how to create a Microsoft Entra application, get a
 
    - Note that *WindowsDefenderATP* doesn't appear in the original list. Start writing its name in the text box to see it appear.
 
-     :::image type="content" source="../images/add-permission.png" alt-text="The Add a permission option" lightbox="../images/add-permission.png":::
+     :::image type="content" source="../media/add-permission.png" alt-text="The Add a permission option" lightbox="../media/add-permission.png":::
 
 ### Request API permissions
 
@@ -128,7 +128,7 @@ In the following example we use **'Read all alerts'** permission:
 
    After clicking on the consent link, sign in with the Global Administrator of the customer's tenant and consent the application.
 
-   :::image type="content" source="../images/app-consent-partner.png" alt-text="The Accept button" lightbox="../images/app-consent-partner.png":::
+   :::image type="content" source="../media/app-consent-partner.png" alt-text="The Accept button" lightbox="../media/app-consent-partner.png":::
 
    In addition, you'll need to ask your customer for their tenant ID and save it for future use when acquiring the token.
 

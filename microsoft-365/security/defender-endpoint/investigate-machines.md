@@ -61,6 +61,9 @@ The device details section provides information such as the domain, OS, and heal
 
 Response actions run along the top of a specific device page and include:
 
+- View in map
+- Device value
+- Set criticality
 - Manage tags
 - Isolate device
 - Restrict app execution
@@ -77,6 +80,9 @@ For more information on how to take action on a device, see [Take response actio
 
 For more information, see [Investigate user entities](investigate-user.md).
 
+> [!NOTE]
+> View in map and set criticality are features from Microsoft Exposure Management, which is currently in public preview.
+
 ## Tabs
 
 The tabs provide relevant security and threat prevention information related to the device. In each tab, you can customize the columns that are shown by selecting **Customize columns** from the bar above the column headers.
@@ -91,7 +97,7 @@ The **Overview** tab displays the [cards](#cards) for active alerts, logged on u
 
 The **Incidents and alerts** tab provides a list of incidents and alerts that are associated with the device. This list is a filtered version of the [Alerts queue](alerts-queue.md), and shows a short description of the incident, alert, severity (high, medium, low, informational), status in the queue (new, in progress, resolved), classification (not set, false alert, true alert), investigation state, category of alert, who is addressing the alert, and last activity. You can also filter the alerts.
 
-:::image type="content" source="images/alerts-device.png" alt-text="The tab of the alerts related to the device" lightbox="images/alerts-device.png":::
+:::image type="content" source="media/alerts-device.png" alt-text="The tab of the alerts related to the device" lightbox="media/alerts-device.png":::
 
 When an alert is selected, a fly-out appears. From this panel you can manage the alert and view more details such as incident number and related devices. Multiple alerts can be selected at a time.
 
@@ -188,7 +194,7 @@ The **Azure Advanced Threat Protection** card displays a high-level overview of 
 
 ### Logged on users
 
-The **Logged on users** card shows how many users have logged on in the past 30 days, along with the most and least frequent users. Selecting the **See all users** link opens the details pane, which displays information such as user type, sign-in type, and when the user was first and last seen. For more information, see [Investigate user entities](investigate-user.md).
+The **Logged on users** card shows how many users logged on in the past 30 days, along with the most and least frequent users. Selecting the **See all users** link opens the details pane, which displays information such as user type, sign-in type, and when the user was first and last seen. For more information, see [Investigate user entities](investigate-user.md).
 
 :::image type="content" source="images/logged-on-users.png" alt-text="The user details pane" lightbox="images/logged-on-users.png":::
 
@@ -222,7 +228,7 @@ The **Device health status** card shows a summarized health report for the speci
 
 Other information in the card includes: the last full scan, last quick scan, security intelligence update version, engine update version, platform update version, and Defender Antivirus mode.
 
-Note that a grey circle indicates that the data is unknown.
+A grey circle indicates that the data is unknown.
 
 > [!NOTE]
 > The overall status message for macOS and Linux devices currently shows up as 'Status not available for macOS & Linux'. Currently, the status summary is only available for Windows devices. All other information in the table is up to date to show the individual states of each device health signal for all supported platforms.
