@@ -226,7 +226,7 @@ Microsoft Defender Antivirus is a built-in anti-malware solution that provides n
 
     :::image type="content" source="images/36c7c2ed737f2f4b54918a4f20791d4b.png" alt-text="The next-generation protection pane3" lightbox="images/36c7c2ed737f2f4b54918a4f20791d4b.png":::
 
-    :::image type="content" source="images/a28afc02c1940d5220b233640364970c.png" alt-text="The next-generation protection pane4" lightbox="images/a28afc02c1940d5220b233640364970c.png":::
+    :::image type="content" source="media/a28afc02c1940d5220b233640364970c.png" alt-text="The next-generation protection pane4" lightbox="media/a28afc02c1940d5220b233640364970c.png":::
 
     :::image type="content" source="images/5420a8790c550f39f189830775a6d4c9.png" alt-text="The next-generation protection pane5" lightbox="images/5420a8790c550f39f189830775a6d4c9.png":::
 
@@ -344,7 +344,7 @@ After completing this task, you now have successfully configured Network Protect
 
 3. Set the configuration to **Audit** and select **Next**.
 
-   :::image type="content" source="images/a8b934dab2dbba289cf64fe30e0e8aa4.png" alt-text="The Microsoft Configuration Manager-4" lightbox="images/a8b934dab2dbba289cf64fe30e0e8aa4.png":::
+   :::image type="content" source="media/a8b934dab2dbba289cf64fe30e0e8aa4.png" alt-text="The Microsoft Configuration Manager-4" lightbox="media/a8b934dab2dbba289cf64fe30e0e8aa4.png":::
 
 4. Confirm the new Exploit Guard Policy by selecting **Next**.
 

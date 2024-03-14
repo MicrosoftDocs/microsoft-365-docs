@@ -130,7 +130,7 @@ Then, you continue by creating several different types of endpoint security poli
 4. Enter a name and description, then select  **Next**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/a5b2d23bdd50b160fef4afd25dda28d4.png" alt-text="The Microsoft Intune admin center5" lightbox="images/a5b2d23bdd50b160fef4afd25dda28d4.png":::
+    > :::image type="content" source="media/a5b2d23bdd50b160fef4afd25dda28d4.png" alt-text="The Microsoft Intune admin center5" lightbox="media/a5b2d23bdd50b160fef4afd25dda28d4.png":::
 
 5. Select settings as required, then select  **Next**.
 
@@ -142,7 +142,7 @@ Then, you continue by creating several different types of endpoint security poli
     >
     > The following image is an example of what you'll see when Microsoft Defender for Endpoint is NOT integrated with Intune:
     >
-    > :::image type="content" source="images/2466460812371ffae2d19a10c347d6f4.png" alt-text="The Microsoft Intune admin center7" lightbox="images/2466460812371ffae2d19a10c347d6f4.png":::
+    > :::image type="content" source="media/2466460812371ffae2d19a10c347d6f4.png" alt-text="The Microsoft Intune admin center7" lightbox="media/2466460812371ffae2d19a10c347d6f4.png":::
 
 6. Add scope tags if necessary, then select  **Next**.
 
@@ -157,7 +157,7 @@ Then, you continue by creating several different types of endpoint security poli
 8. Review and accept, then select  **Create**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/289172dbd7bd34d55d24810d9d4d8158.png" alt-text="The Microsoft Intune admin center10" lightbox="images/289172dbd7bd34d55d24810d9d4d8158.png":::
+    > :::image type="content" source="media/289172dbd7bd34d55d24810d9d4d8158.png" alt-text="The Microsoft Intune admin center10" lightbox="media/289172dbd7bd34d55d24810d9d4d8158.png":::
 
 9. You can view your completed policy.
 
@@ -178,7 +178,7 @@ Then, you continue by creating several different types of endpoint security poli
 4. Enter name and description, then select  **Next**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/a7d738dd4509d65407b7d12beaa3e917.png" alt-text="The Microsoft Intune admin center13" lightbox="images/a7d738dd4509d65407b7d12beaa3e917.png":::
+    > :::image type="content" source="media/a7d738dd4509d65407b7d12beaa3e917.png" alt-text="The Microsoft Intune admin center13" lightbox="media/a7d738dd4509d65407b7d12beaa3e917.png":::
 
 5. In the **Configuration settings page**: Set the configurations you require for Microsoft Defender Antivirus (Cloud Protection, Exclusions, Real-Time Protection, and Remediation).
 
@@ -203,7 +203,7 @@ Then, you continue by creating several different types of endpoint security poli
 9. You see the configuration policy you created.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/38180219e632d6e4ec7bd25a46398da8.png" alt-text="The Microsoft Intune admin center18" lightbox="images/38180219e632d6e4ec7bd25a46398da8.png":::
+    > :::image type="content" source="media/38180219e632d6e4ec7bd25a46398da8.png" alt-text="The Microsoft Intune admin center18" lightbox="media/38180219e632d6e4ec7bd25a46398da8.png":::
 
 ### Attack Surface Reduction - Attack surface reduction rules
 
@@ -222,7 +222,7 @@ Then, you continue by creating several different types of endpoint security poli
 5. Enter a name and description, then select  **Next**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/a5a71fd73ec389f3cdce6d1a6bd1ff31.png" alt-text="The Microsoft Intune admin center20" lightbox="images/a5a71fd73ec389f3cdce6d1a6bd1ff31.png":::
+    > :::image type="content" source="media/a5a71fd73ec389f3cdce6d1a6bd1ff31.png" alt-text="The Microsoft Intune admin center20" lightbox="media/a5a71fd73ec389f3cdce6d1a6bd1ff31.png":::
 
 6. In the **Configuration settings page**: Set the configurations you require for Attack surface reduction rules, then select  **Next**.
 
@@ -352,7 +352,7 @@ To confirm that the configuration policy is applied to your test device, follow 
 2. After the configuration is applied, the Defender for Endpoint Protection service should be started.
 
     > [!div class="mx-imgBorder"]
-    > [![Image of Services panel2.](images/a621b699899f1b41db211170074ea59e.png)](images/a621b699899f1b41db211170074ea59e.png#lightbox)
+    > [![Image of Services panel2.](media/a621b699899f1b41db211170074ea59e.png)](media/a621b699899f1b41db211170074ea59e.png#lightbox)
 
 3. After the services are running on the device, the device appears in Microsoft Defender portal.
 
@@ -375,7 +375,7 @@ To confirm that the configuration policy is applied to your test device, follow 
     > **Turn on real-time protection** are being shown as managed.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/9341428b2d3164ca63d7d4eaa5cff642.png" alt-text="The settings page-2" lightbox="images/9341428b2d3164ca63d7d4eaa5cff642.png":::
+    > :::image type="content" source="media/9341428b2d3164ca63d7d4eaa5cff642.png" alt-text="The settings page-2" lightbox="media/9341428b2d3164ca63d7d4eaa5cff642.png":::
 
 ### Confirm Attack Surface Reduction - Attack surface reduction rules
 
