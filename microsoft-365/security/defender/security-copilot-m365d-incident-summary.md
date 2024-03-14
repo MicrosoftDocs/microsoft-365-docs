@@ -20,7 +20,7 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - MET150
-ms.date: 4/1/2024
+ms.date: 03/14/2024
 ---
 
 # Summarize an incident with Microsoft Copilot for Security in Microsoft Defender

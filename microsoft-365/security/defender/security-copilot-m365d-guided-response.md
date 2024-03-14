@@ -20,7 +20,7 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - MET150
-ms.date: 04/01/2024
+ms.date: 03/14/2024
 ---
 
 # Resolve incidents with guided responses from Microsoft Copilot for Security in Microsoft Defender
@@ -44,27 +44,27 @@ Guided responses recommend actions in the following categories:
 - Investigation - includes recommended actions for further investigation
 - Remediation - includes recommended response actions to apply to specific entities involved in an incident
 
-Each card contains information about the recommended action, including the entity where the action needs to be applied and why the action is recommended. The cards also emphasize when a recommended action was done by automated investigation like [attack disruption](automatic-attack-disruption.md) or [automated investigation response](m365d-autoir.md).
+Each card contains information about the recommended action, including the entity where the action needs to be applied and why the action is recommended. The cards also emphasize when a recommended action was done by automated investigation like [attack disruption](automatic-attack-disruption.md) or [automated investigation response](m365d-autoir.md). Below are examples of the guided response cards that highlight a user-driven action (left) and automation-driven action (right).
 
-**[INSERT SCREENSHOT OF AUTOMATION CARD]**
+ :::image type="content" source="../../media/copilot-in-defender/guided-response/copilot-guided-response-cards.png" alt-text="Screenshot of guided response cards highlighting automation and user action." lightbox="../../media/copilot-in-defender/guided-response/copilot-guided-response-cards.png":::
 
 The guided response cards can be sorted based on the available status for each card. You can select a specific status when viewing the guided responses by clicking on **Status** and selecting the appropriate status you want to view. All guided response cards regardless of status are shown by default.
 
- :::image type="content" source="../../media/copilot-in-defender/guided-response/fig2-guided-responses-copilot.png" alt-text="Screenshot highlighting the status of responses in the Copilot pane in the Microsoft Defender incident page." lightbox="../../media/copilot-in-defender/guided-response/fig2-guided-responses-copilot.png":::
+:::image type="content" source="../../media/copilot-in-defender/guided-response/copilot-defender-guided-response-status-small.png" alt-text="Screenshot highlighting the status of responses in the Copilot pane in the Microsoft Defender incident page." lightbox="../../media/copilot-in-defender/copilot-defender-guided-response-status.png":::
 
 To use guided responses, perform the following steps:
 
 1. Open an incident page. Copilot automatically generates guided responses upon opening an incident page. The Copilot pane appears on the right side of the incident page, showing the guided response cards.
 
-   :::image type="content" source="../../media/copilot-in-defender/guided-response/fig3-guided-responses-copilot.png" alt-text="Screenshot highlighting the Copilot pane with the guided responses in the Microsoft Defender incident page." lightbox="../../media/copilot-in-defender/guided-response/fig3-guided-responses-copilot.png":::
+   :::image type="content" source="../../media/copilot-in-defender/guided-response/copilot-defender-guided-response-small.png" alt-text="Screenshot highlighting the Copilot pane with the guided responses in the Microsoft Defender incident page." lightbox="../../media/copilot-in-defender/guided-response/copilot-defender-guided-response.png":::
 
-2. Review each card before applying the recommendations. You have the option to apply, skip, or view the recommended action in the Copilot for Security portal. To view these options, select the three dots on top of a response card.
+2. Review each card before applying the recommendations. You can skip, mark as complete, or view the recommended action in the Copilot for Security portal. To view these options, select the More actions ellipsis (...) on top of a response card.
 
-   :::image type="content" source="../../media/copilot-in-defender/guided-response/fig4-guided-responses-copilot.png" alt-text="Screenshot highlighting the options available to users for each guided response card in the Copilot pane in Microsoft Defender." lightbox="../../media/copilot-in-defender/guided-response/fig4-guided-responses-copilot.png":::
+   :::image type="content" source="../../media/copilot-in-defender/guided-response/copilot-defender-guided-response-more-actions.png" alt-text="Screenshot highlighting the options available to users for each guided response card in the Copilot pane in Microsoft Defender." lightbox="../../media/copilot-in-defender/guided-response/copilot-defender-guided-response-more-actions.png":::
 
-3. To apply a recommended action, select the desired action from the dropdown menu or the action button found on each card.
+3. To apply an action, select the desired action found on each card. The guided response action on each card is tailored to the type of incident and the specific entity involved.
 
-   :::image type="content" source="../../media/copilot-in-defender/guided-response/fig5-guided-responses-copilot.png" alt-text="Screenshot highlighting the actions available to users for each guided response card in the Copilot pane in Microsoft Defender." lightbox="../../media/copilot-in-defender/guided-response/fig5-guided-responses-copilot.png":::
+   :::image type="content" source="../../media/copilot-in-defender/guided-response/copilot-defender-guided-response-actions-small.png" alt-text="Screenshot highlighting the actions available to users for each guided response card in the Copilot pane in Microsoft Defender." lightbox="../../media/copilot-in-defender/guided-response/copilot-defender-guided-response-actions.png":::
 
 4. You can provide feedback to each response card to continuously enhance future responses from Copilot. To provide feedback, select the feedback icon ![Screenshot of the feedback icon for Copilot in Defender cards](../../media/copilot-in-defender/copilot-defender-feedback.png) found on the bottom right of each card.
 
