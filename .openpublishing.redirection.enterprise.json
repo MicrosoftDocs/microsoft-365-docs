@@ -1097,122 +1097,207 @@
    },
    {
       "source_path": "microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise.md",
-      "redirect_url": "/microsoft-365/enterprise/index.yml",
+      "redirect_url": "/microsoft-365/enterprise/index",
       "redirect_document_id": false
    },
    {
       "source_path": "microsoft-365/enterprise/privileged-access-microsoft-365-enterprise-dev-test-environment.md",
-      "redirect_url": "/microsoft-365/enterprise/index.yml",
+      "redirect_url": "/microsoft-365/enterprise/index",
       "redirect_document_id": false
    },
    {
       "source_path": "microsoft-365/enterprise/data-classification-microsoft-365-enterprise-dev-test-environment.md",
-      "redirect_url": "/microsoft-365/enterprise/index.yml",
+      "redirect_url": "/microsoft-365/enterprise/index",
       "redirect_document_id": false
    },
    {
       "source_path": "microsoft-365/enterprise/increased-o365-security-microsoft-365-enterprise-dev-test-environment.md",
-      "redirect_url": "/microsoft-365/enterprise/index.yml",
+      "redirect_url": "/microsoft-365/enterprise/index",
       "redirect_document_id": false
    },
    {
       "source_path": "microsoft-365/enterprise/mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md",
-      "redirect_url": "/microsoft-365/enterprise/index.yml",
+      "redirect_url": "/microsoft-365/enterprise/index",
       "redirect_document_id": false
    },
    {
       "source_path": "microsoft-365/enterprise/enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md",
-      "redirect_url": "/microsoft-365/enterprise/index.yml",
+      "redirect_url": "/microsoft-365/enterprise/index",
       "redirect_document_id": false
    },
    {
       "source_path": "microsoft-365/enterprise/pta-prereqs-m365-test-environment.md",
-      "redirect_url": "/microsoft-365/enterprise/index.yml",
+      "redirect_url": "/microsoft-365/enterprise/index",
       "redirect_document_id": false
    },
    {
       "source_path": "microsoft-365/enterprise/phs-prereqs-m365-test-environment.md",
-      "redirect_url": "/microsoft-365/enterprise/index.yml",
+      "redirect_url": "/microsoft-365/enterprise/index",
       "redirect_document_id": false
    },
    {
       "source_path": "microsoft-365/enterprise/cloud-only-prereqs-m365-test-environment.md",
-      "redirect_url": "/microsoft-365/enterprise/index.yml",
+      "redirect_url": "/microsoft-365/enterprise/index",
       "redirect_document_id": false
    },
    {
       "source_path": "microsoft-365/enterprise/identity-device-access-m365-test-environment.md",
-      "redirect_url": "/microsoft-365/enterprise/index.yml",
+      "redirect_url": "/microsoft-365/enterprise/index",
       "redirect_document_id": false
    },
    {
       "source_path": "microsoft-365/enterprise/azure-ad-identity-protection-microsoft-365-test-environment.md",
-      "redirect_url": "/microsoft-365/enterprise/index.yml",
+      "redirect_url": "/microsoft-365/enterprise/index",
       "redirect_document_id": false
    },
    {
       "source_path": "microsoft-365/enterprise/automate-licenses-group-membership-microsoft-365-test-environment.md",
-      "redirect_url": "/microsoft-365/enterprise/index.yml",
+      "redirect_url": "/microsoft-365/enterprise/index",
       "redirect_document_id": false
    },
    {
       "source_path": "microsoft-365/enterprise/password-reset-m365-ent-test-environment.md",
-      "redirect_url": "/microsoft-365/enterprise/index.yml",
+      "redirect_url": "/microsoft-365/enterprise/index",
       "redirect_document_id": false
    },
    {
       "source_path": "microsoft-365/enterprise/password-writeback-m365-ent-test-environment.md",
-      "redirect_url": "/microsoft-365/enterprise/index.yml",
+      "redirect_url": "/microsoft-365/enterprise/index",
       "redirect_document_id": false
    },
    {
       "source_path": "microsoft-365/enterprise/protect-global-administrator-accounts-microsoft-365-test-environment.md",
-      "redirect_url": "/microsoft-365/enterprise/index.yml",
+      "redirect_url": "/microsoft-365/enterprise/index",
       "redirect_document_id": false
    },
    {
       "source_path": "microsoft-365/enterprise/multi-factor-authentication-microsoft-365-test-environment.md",
-      "redirect_url": "/microsoft-365/enterprise/index.yml",
+      "redirect_url": "/microsoft-365/enterprise/index",
       "redirect_document_id": false
    },
    {
       "source_path": "microsoft-365/enterprise/single-sign-on-m365-ent-test-environment.md",
-      "redirect_url": "/microsoft-365/enterprise/index.yml",
+      "redirect_url": "/microsoft-365/enterprise/index",
       "redirect_document_id": false
    },
    {
       "source_path": "microsoft-365/enterprise/federated-identity-for-your-microsoft-365-dev-test-environment.md",
-      "redirect_url": "/microsoft-365/enterprise/index.yml",
+      "redirect_url": "/microsoft-365/enterprise/index",
       "redirect_document_id": false
    },
    {
       "source_path": "microsoft-365/enterprise/pass-through-auth-m365-ent-test-environment.md",
-      "redirect_url": "/microsoft-365/enterprise/index.yml",
+      "redirect_url": "/microsoft-365/enterprise/index",
       "redirect_document_id": false
    },
    {
       "source_path": "microsoft-365/enterprise/password-hash-sync-m365-ent-test-environment.md",
-      "redirect_url": "/microsoft-365/enterprise/index.yml",
+      "redirect_url": "/microsoft-365/enterprise/index",
       "redirect_document_id": false
    },
    {
       "source_path": "microsoft-365/enterprise/simulated-ent-base-configuration-microsoft-365-enterprise.md",
-      "redirect_url": "/microsoft-365/enterprise/index.yml",
+      "redirect_url": "/microsoft-365/enterprise/index",
       "redirect_document_id": false
    },
    {
       "source_path": "microsoft-365/enterprise/m365-enterprise-test-lab-guides.md",
-      "redirect_url": "/microsoft-365/enterprise/index.yml",
+      "redirect_url": "/microsoft-365/enterprise/index",
       "redirect_document_id": false
    },
    {
       "source_path": "microsoft-365/enterprise/cloud-adoption-test-lab-guides-tlgs.md",
-      "redirect_url": "/microsoft-365/enterprise/index.yml",
+      "redirect_url": "/microsoft-365/enterprise/index",
       "redirect_document_id": false
    },
    {
       "source_path": "microsoft-365/enterprise/simulated-cross-premises-microsoft-365-enterprise.md",
-      "redirect_url": "/microsoft-365/enterprise/index.yml",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/project-server-2007-end-of-support.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/pps-2007-end-of-support.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/sharepoint-2007-end-of-support.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/exchange-2007-end-of-support.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/upgrade-from-office-2007-servers-and-products.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/project-server-2010-end-of-support.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/upgrade-from-sharepoint-2010.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/exchange-2010-end-of-support.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/upgrade-from-office-2010-servers-and-products.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/project-server-2013-end-of-support.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/upgrade-from-lync-2013.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/upgrade-from-sharepoint-2013.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/exchange-2013-end-of-support.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/upgrade-office-2013-clients-servers.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/plan-upgrade-previous-versions-office.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/client-server-software-roadmap-microsoft-365.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
       "redirect_document_id": false
    }
   ]
