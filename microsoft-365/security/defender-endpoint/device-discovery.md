@@ -76,7 +76,7 @@ To assess these devices, you can use a filter in the device inventory list calle
 - Unsupported: The endpoint was discovered in the network but isn't supported by Microsoft Defender for Endpoint.
 - Insufficient info: The system couldn't determine the supportability of the device. Enabling standard discovery on more devices in the network can enrich the discovered attributes.
 
-:::image type="content" source="images/2b62255cd3a9dd42f3219e437b956fb9.png" alt-text="The device inventory dashboard" lightbox="images/2b62255cd3a9dd42f3219e437b956fb9.png":::
+:::image type="content" source="media/2b62255cd3a9dd42f3219e437b956fb9.png" alt-text="The device inventory dashboard" lightbox="media/2b62255cd3a9dd42f3219e437b956fb9.png":::
 
 > [!TIP]
 > You can always apply filters to exclude unmanaged devices from the device inventory list. You can also use the onboarding status column on API queries to filter out unmanaged devices.

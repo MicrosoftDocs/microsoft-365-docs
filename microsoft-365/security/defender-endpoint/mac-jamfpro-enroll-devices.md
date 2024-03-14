@@ -52,7 +52,7 @@ For a complete list, see [About Computer Enrollment](https://docs.jamf.com/9.9/c
 
 3. In **Specify Recipients for the Invitation** > under **Email Addresses** enter the e-mail address(es) of the recipients.
 
-    :::image type="content" source="images/718b9d609f9f77c8b13ba88c4c0abe5d.png" alt-text="The configuration settings2" lightbox="images/718b9d609f9f77c8b13ba88c4c0abe5d.png":::
+    :::image type="content" source="media/718b9d609f9f77c8b13ba88c4c0abe5d.png" alt-text="The configuration settings2" lightbox="media/718b9d609f9f77c8b13ba88c4c0abe5d.png":::
 
     :::image type="content" source="images/ae3597247b6bc7c5347cf56ab1e820c0.png" alt-text="The configuration settings3" lightbox="images/ae3597247b6bc7c5347cf56ab1e820c0.png":::
 
@@ -66,9 +66,9 @@ For a complete list, see [About Computer Enrollment](https://docs.jamf.com/9.9/c
 
    :::image type="content" source="media/5856b765a6ce677caacb130ca36b1a62.png" alt-text="The configuration settings6" lightbox="media/5856b765a6ce677caacb130ca36b1a62.png":::
 
-   :::image type="content" source="images/3ced5383a6be788486d89d407d042f28.png" alt-text="The configuration settings7" lightbox="images/3ced5383a6be788486d89d407d042f28.png":::
+   :::image type="content" source="media/3ced5383a6be788486d89d407d042f28.png" alt-text="The configuration settings7" lightbox="media/3ced5383a6be788486d89d407d042f28.png":::
 
-   :::image type="content" source="images/54be9c6ed5b24cebe628dc3cd9ca4089.png" alt-text="The configuration settings8" lightbox="images/54be9c6ed5b24cebe628dc3cd9ca4089.png":::
+   :::image type="content" source="media/54be9c6ed5b24cebe628dc3cd9ca4089.png" alt-text="The configuration settings8" lightbox="media/54be9c6ed5b24cebe628dc3cd9ca4089.png":::
 
 ## Enrollment Method 2: Prestage Enrollments
 
