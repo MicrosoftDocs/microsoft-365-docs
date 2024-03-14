@@ -127,7 +127,7 @@ Follow the steps below to add Microsoft Defender for Endpoint app into your mana
 6. After the permissions handling selection is made, select **Sync** to sync Microsoft Defender for Endpoint to your apps list.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/34e6b9a0dae125d085c84593140180ed.png" alt-text="The Sync pane in the Microsoft Defender 365 portal" lightbox="images/34e6b9a0dae125d085c84593140180ed.png":::
+    > :::image type="content" source="media/34e6b9a0dae125d085c84593140180ed.png" alt-text="The Sync pane in the Microsoft Defender 365 portal" lightbox="media/34e6b9a0dae125d085c84593140180ed.png":::
 
 7. The sync will complete in a few minutes.
 
@@ -208,7 +208,7 @@ Defender for Endpoint supports Device configuration policies for managed devices
 2. **Configuration Settings**
   Provide a **Name** and a **Description** to uniquely identify the configuration profile.
 
-   :::image type="content" source="images/2autosetupofvpn.png" alt-text="The devices configuration profile Name and Description fields in the Basics pane" lightbox="images/2autosetupofvpn.png":::
+   :::image type="content" source="media/2autosetupofvpn.png" alt-text="The devices configuration profile Name and Description fields in the Basics pane" lightbox="media/2autosetupofvpn.png":::
 
 3. Select **Connectivity** and configure VPN:
 
@@ -227,7 +227,7 @@ Defender for Endpoint supports Device configuration policies for managed devices
 
    - **Lockdown mode** Not configured (Default)
 
-     :::image type="content" source="images/3autosetupofvpn.png" alt-text="The Connectivity pane under the Configuration settings tab" lightbox="images/3autosetupofvpn.png":::
+     :::image type="content" source="media/3autosetupofvpn.png" alt-text="The Connectivity pane under the Configuration settings tab" lightbox="media/3autosetupofvpn.png":::
 
 4. **Assignment**
 
