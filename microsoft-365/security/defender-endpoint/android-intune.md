@@ -208,7 +208,7 @@ Defender for Endpoint supports Device configuration policies for managed devices
 2. **Configuration Settings**
   Provide a **Name** and a **Description** to uniquely identify the configuration profile.
 
-   :::image type="content" source="images/2autosetupofvpn.png" alt-text="The devices configuration profile Name and Description fields in the Basics pane" lightbox="images/2autosetupofvpn.png":::
+   :::image type="content" source="media/2autosetupofvpn.png" alt-text="The devices configuration profile Name and Description fields in the Basics pane" lightbox="media/2autosetupofvpn.png":::
 
 3. Select **Connectivity** and configure VPN:
 
@@ -227,7 +227,7 @@ Defender for Endpoint supports Device configuration policies for managed devices
 
    - **Lockdown mode** Not configured (Default)
 
-     :::image type="content" source="images/3autosetupofvpn.png" alt-text="The Connectivity pane under the Configuration settings tab" lightbox="images/3autosetupofvpn.png":::
+     :::image type="content" source="media/3autosetupofvpn.png" alt-text="The Connectivity pane under the Configuration settings tab" lightbox="media/3autosetupofvpn.png":::
 
 4. **Assignment**
 

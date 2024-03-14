@@ -356,7 +356,7 @@ All you need to do to have updates is to download an updated schema, edit existi
 
 11. Select **Save**.
 
-    :::image type="content" source="images/1b6b5a4edcb42d97f1e70a6a0fa48e3a.png" alt-text="The option to save the image related to the configuration settings." lightbox="images/1b6b5a4edcb42d97f1e70a6a0fa48e3a.png":::
+    :::image type="content" source="media/1b6b5a4edcb42d97f1e70a6a0fa48e3a.png" alt-text="The option to save the image related to the configuration settings." lightbox="media/1b6b5a4edcb42d97f1e70a6a0fa48e3a.png":::
 
 12. The file is uploaded.
 
@@ -471,7 +471,7 @@ These steps are applicable on macOS 11 (Big Sur) or later.
 
 5. In **Application & Custom Settings** select **Configure**.
 
-   :::image type="content" source="images/1f72e9c15eaafcabf1504397e99be311.png" alt-text="The configuration setting application and custom settings." lightbox="images/1f72e9c15eaafcabf1504397e99be311.png":::
+   :::image type="content" source="media/1f72e9c15eaafcabf1504397e99be311.png" alt-text="The configuration setting application and custom settings." lightbox="media/1f72e9c15eaafcabf1504397e99be311.png":::
 
 6. Select **Upload File (PLIST file)**.
 
@@ -580,7 +580,7 @@ These steps are applicable on macOS 11 (Big Sur) or later.
 
 12. Select the **Scope** tab.
 
-    :::image type="content" source="images/2c49b16cd112729b3719724f581e6882.png" alt-text="The page depicting the scope for the configuration setting." lightbox="images/2c49b16cd112729b3719724f581e6882.png":::
+    :::image type="content" source="media/2c49b16cd112729b3719724f581e6882.png" alt-text="The page depicting the scope for the configuration setting." lightbox="media/2c49b16cd112729b3719724f581e6882.png":::
 
 13. Select **+ Add**.
 
@@ -835,7 +835,7 @@ Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint 
 
     Under **Scope**, select **Add**. 
 
-    :::image type="content" source="images/1c08d097829863778d562c10c5f92b67.png" alt-text="The configuration settings - ad1." lightbox="images/1c08d097829863778d562c10c5f92b67.png":::
+    :::image type="content" source="media/1c08d097829863778d562c10c5f92b67.png" alt-text="The configuration settings - ad1." lightbox="media/1c08d097829863778d562c10c5f92b67.png":::
 
     Switch to the **Computer Groups** tab. Find the smart group you created, and **Add** it.
 
