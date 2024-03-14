@@ -178,7 +178,7 @@ Follow the steps below to identify the Defender for Endpoint Workspace ID and Wo
 
 3. Copy the **Workspace ID** and **Workspace Key** and save them. They'll be used later in the process.
 
-   :::image type="content" source="images/91b738e4b97c4272fd6d438d8c2d5269.png" alt-text="The onboarding process" lightbox="images/91b738e4b97c4272fd6d438d8c2d5269.png":::
+   :::image type="content" source="media/91b738e4b97c4272fd6d438d8c2d5269.png" alt-text="The onboarding process" lightbox="media/91b738e4b97c4272fd6d438d8c2d5269.png":::
 
 4. Install the Microsoft Monitoring Agent (MMA).
 
@@ -224,7 +224,7 @@ Microsoft Defender Antivirus is a built-in anti-malware solution that provides n
   
     :::image type="content" source="images/cd7daeb392ad5a36f2d3a15d650f1e96.png" alt-text="The next-generation protection pane2" lightbox="images/cd7daeb392ad5a36f2d3a15d650f1e96.png":::
 
-    :::image type="content" source="images/36c7c2ed737f2f4b54918a4f20791d4b.png" alt-text="The next-generation protection pane3" lightbox="images/36c7c2ed737f2f4b54918a4f20791d4b.png":::
+    :::image type="content" source="media/36c7c2ed737f2f4b54918a4f20791d4b.png" alt-text="The next-generation protection pane3" lightbox="media/36c7c2ed737f2f4b54918a4f20791d4b.png":::
 
     :::image type="content" source="images/a28afc02c1940d5220b233640364970c.png" alt-text="The next-generation protection pane4" lightbox="images/a28afc02c1940d5220b233640364970c.png":::
 
@@ -232,7 +232,7 @@ Microsoft Defender Antivirus is a built-in anti-malware solution that provides n
 
     :::image type="content" source="media/33f08a38f2f4dd12a364f8eac95e8c6b.png" alt-text="The next-generation protection pane6" lightbox="media/33f08a38f2f4dd12a364f8eac95e8c6b.png":::
 
-    :::image type="content" source="images/41b9a023bc96364062c2041a8f5c344e.png" alt-text="The next-generation protection pane7" lightbox="images/41b9a023bc96364062c2041a8f5c344e.png":::
+    :::image type="content" source="media/41b9a023bc96364062c2041a8f5c344e.png" alt-text="The next-generation protection pane7" lightbox="media/41b9a023bc96364062c2041a8f5c344e.png":::
 
     :::image type="content" source="images/945c9c5d66797037c3caeaa5c19f135c.png" alt-text="The next-generation protection pane8" lightbox="images/945c9c5d66797037c3caeaa5c19f135c.png":::
 
@@ -272,7 +272,7 @@ To set attack surface reduction rules in test mode:
 
 5. Once the policy is created select **Close**.
 
-   :::image type="content" source="images/95d23a07c2c8bc79176788f28cef7557.png" alt-text="The Microsoft Configuration Manager console3" lightbox="images/95d23a07c2c8bc79176788f28cef7557.png":::
+   :::image type="content" source="media/95d23a07c2c8bc79176788f28cef7557.png" alt-text="The Microsoft Configuration Manager console3" lightbox="media/95d23a07c2c8bc79176788f28cef7557.png":::
 
 6. Right-click on the newly created policy and choose **Deploy**.
 
@@ -322,7 +322,7 @@ See [Optimize attack surface reduction rule deployment and detections](/microsof
 
 5. Once the policy is created select on **Close**.
 
-   :::image type="content" source="images/95d23a07c2c8bc79176788f28cef7557.png" alt-text="The Exploit Guard policy2" lightbox="images/95d23a07c2c8bc79176788f28cef7557.png":::
+   :::image type="content" source="media/95d23a07c2c8bc79176788f28cef7557.png" alt-text="The Exploit Guard policy2" lightbox="media/95d23a07c2c8bc79176788f28cef7557.png":::
 
 6. Right-click on the newly created policy and choose **Deploy**.
 
@@ -352,7 +352,7 @@ After completing this task, you now have successfully configured Network Protect
 
 5. Once the policy is created select on **Close**.
 
-   :::image type="content" source="images/95d23a07c2c8bc79176788f28cef7557.png" alt-text="The Microsoft Configuration Manager-6" lightbox="images/95d23a07c2c8bc79176788f28cef7557.png":::
+   :::image type="content" source="media/95d23a07c2c8bc79176788f28cef7557.png" alt-text="The Microsoft Configuration Manager-6" lightbox="media/95d23a07c2c8bc79176788f28cef7557.png":::
 
 6. Right-click on the newly created policy and choose **Deploy**.
 

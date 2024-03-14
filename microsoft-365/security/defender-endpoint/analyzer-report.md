@@ -30,13 +30,13 @@ Use the following example to understand the report.
 
  Example output from the analyzer on a machine onboarded to expired Org ID and failing to reach one of the required Microsoft Defender for Endpoint URLs:
 
-:::image type="content" source="images/147cbcf0f7b6f0ff65d200bf3e4674cb.png" alt-text="The MDE Client Analyzer Results page" lightbox="images/147cbcf0f7b6f0ff65d200bf3e4674cb.png":::
+:::image type="content" source="media/147cbcf0f7b6f0ff65d200bf3e4674cb.png" alt-text="The MDE Client Analyzer Results page" lightbox="media/147cbcf0f7b6f0ff65d200bf3e4674cb.png":::
 
 - On top, the script version and script runtime are listed for reference
 - The **Device Information** section provides basic OS and device identifiers to uniquely identify the device on which the analyzer has run.
 - The **Endpoint Security Details** provides general information about Microsoft Defender for Endpoint-related processes including Microsoft Defender Antivirus and the sensor process. If important processes aren't online as expected,  the color will change to red.
 
-    :::image type="content" source="images/85f56004dc6bd1679c3d2c063e36cb80.png" alt-text="The Check Results Summary page" lightbox="images/85f56004dc6bd1679c3d2c063e36cb80.png":::
+    :::image type="content" source="media/85f56004dc6bd1679c3d2c063e36cb80.png" alt-text="The Check Results Summary page" lightbox="media/85f56004dc6bd1679c3d2c063e36cb80.png":::
 
 - On **Check Results Summary**, you'll have an aggregated count for error,
     warning, or informational events detected by the analyzer.
