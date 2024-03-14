@@ -70,7 +70,7 @@ This article explains how to create a Microsoft Entra application, get an access
 
    Select **Application permissions** \> **Alert.Read.All**, and then select **Add permissions**.
 
-   :::image type="content" source="../images/application-permissions.png" alt-text="The application permission information pane" lightbox="../images/application-permissions.png":::
+   :::image type="content" source="../media/application-permissions.png" alt-text="The application permission information pane" lightbox="../media/application-permissions.png":::
 
      You need to select the relevant permissions. 'Read All Alerts' is only an example. For example:
 

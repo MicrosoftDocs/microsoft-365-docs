@@ -104,7 +104,7 @@ This page explains how to create a Microsoft Entra application, get an access to
 
    - Choose **Delegated permissions** \> **Alert.Read** > select **Add permissions**.
 
-      :::image type="content" source="../images/application-permissions-public-client.png" alt-text="The application type and permissions panes" lightbox="../images/application-permissions-public-client.png":::
+      :::image type="content" source="../media/application-permissions-public-client.png" alt-text="The application type and permissions panes" lightbox="../media/application-permissions-public-client.png":::
 
    > [!IMPORTANT]
    > Select the relevant permissions. Read alerts is only an example.
