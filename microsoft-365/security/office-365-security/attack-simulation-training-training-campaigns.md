@@ -361,78 +361,6 @@ Back on the **Training campaign** tab, the Training campaign that you created is
 
 All actions on existing Training campaigns start on the **Training** tab. To go there, open the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Training** tab. Or, to go directly to the **Training** tab, use <https://security.microsoft.com/attacksimulator?viewid=trainingcampaign>.
 
-### View Training campaign details
-
-To view the details and reports for a Training campaign on the **Training** tab, select the Training campaign by clicking anywhere in the row other than the check box next to the name.
-
-A details page for the Training campaign opens with the following tabs:
-
-- **Report**
-- **Users**
-- **Details**
-
-These tabs are described in the following sections.
-
-#### Report tab
-
-The **Report** tab of the Training campaign shows the following information:
-
-- **Training completion classification** section.
-
-- **Training completion summary** section:
-  - Each Training module in the Training campaign is shown with a bar graph and a fraction that shows how many people have completed the module (number of users / total number of users).
-  - From the previous data, the top of the section shows:
-    - The percentage of users who completed all modules in the campaign.
-    - The percentage of users who completed some of the modules in the campaign.
-    - The percentage of users who haven't started any of the modules in the campaign.
-
-- **All user activity** section:
-  - **Successfully received training notification**: A bar graph and a fraction that shows how main people received notifications for the modules in the campaign.
-
-#### Users tab
-
-The **Users** tab shows the following information about the users who were assigned the Training campaign:
-
-- **Name**
-- **Training status**: One of the following values:
-  - **Not started**: The user hasn't started any Training modules in the campaign.
-  - **In progress**: The user has completed some Training modules in the campaign.
-  - **Completed**: The user has completed all Training modules in the campaign.
-  - **Overdue**: The user hasn't completed all Training modules by the campaign end date/time.
-- **Training completion date**
-- **Username**
-
-To remove the **Training status** column, select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png"::: **Customize columns**. By default, the only available column that's not shown is **Department**.
-
-To download the displayed results to a RecordExport.csv file in the local Downloads folder, select :::image type="icon" source="../../media/m365-cc-sc-download-icon.png"::: **Export**.
-
-If you select a user from the list by clicking anywhere in the row other than the check box next to the name, the following user information appears in a details flyout:
-
-- **User details** section:
-  - **Company**
-  - **IP address**
-  - **Job title**
-  - **Department**
-  - **Location**
-  - **Manager**
-- Status information for Training modules in the Training campaign for the user:
-  - **Training name**: The training module name.
-  - **Training status**: **Not started**, **In progress**, **Completed**, **Training Previously Assigned**, **Overdue**, or **Not Completed**.
-  - **Training start date**
-  - **Training completed date**
-
-> [!TIP]
-> To see details about other users in the Training campaign without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
-
-#### Details tab
-
-The **Details** tab of the Training campaign shows the following information:
-
-- **Description**
-- **Schedule details**: The launch date/time and the end date/time.
-- **Notifications**: Whether training assignment notifications and training reminder notifications are enabled, and their delivery frequency.
-- **Selected modules**: The Training modules in the Training campaign are listed, along with their durations.
-
 ### Cancel Training campaigns
 
 You can cancel Training campaigns with the **Status** value **In progress** or **Scheduled**.
@@ -480,3 +408,84 @@ To set the training threshold on the **Settings** tab, do the following steps:
 2. Set the value in days for the training threshold time period. The default value is 90 days. To remove the training threshold and always assign training, set value to 0.
 
 3. When you're finished on the **Settings** tab, select **Save**.
+
+## View Training campaign reports
+
+For Training campaigns with the **Status** value **In progress** or **Completed**, you can view the report for the Training campaign by using either of the following methods on the **Training campaigns** tab at <https://security.microsoft.com/attacksimulator?viewid=trainingcampaign>
+
+- Select the campaign by clicking anywhere in the row other than the check box next to the name.
+- Select the campaign by selecting the check box next to the name, and then select :::image type="icon" source="../../media/m365-cc-sc-eye-icon.png" border="false"::: **View report**.
+
+A details page for the Training campaign opens with the following tabs:
+
+- **Report**
+- **Users**
+- **Details**
+
+These tabs are described in the following subsections.
+
+To close the Training campaign report, select :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: **Close**.
+
+### Report tab
+
+The **Report** tab shows the following information:
+
+- **Training completion classification** section.
+
+- **Training completion summary** section:
+  - Each Training module in the Training campaign is shown with a bar graph and a fraction that shows how many people have completed the module (number of users / total number of users).
+  - From the previous data, the top of the section shows the following statistics:
+    - The percentage of users who completed all modules in the campaign.
+    - The percentage of users who completed some of the modules in the campaign.
+    - The percentage of users who haven't started any of the modules in the campaign.
+
+- **All user activity** section:
+  - **Successfully received training notification**: A bar graph and a fraction that shows how main people received notifications for the modules in the campaign.
+
+### Users tab
+
+The **Users** tab contains the following information for each user in the campaign. You can sort the users by clicking on an available column header. Select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns** to change the columns that are shown. The default columns are marked with an asterisk (<sup>\*</sup>):
+
+- **Name**<sup>\*</sup> (you can't deselect this value)
+- **Training status**<sup>\*</sup>: One of the following values:
+  - **Not started**: The user hasn't started any Training modules in the campaign.
+  - **In progress**: The user has completed some Training modules in the campaign.
+  - **Completed**: The user has completed all Training modules in the campaign.
+  - **Overdue**: The user hasn't completed all Training modules by the campaign end date/time.
+- **Training completion date**<sup>\*</sup> (you can't deselect this value)
+- **Username**<sup>\*</sup> (you can't deselect this value)
+- **Department**
+
+To change the list of users from normal to compact spacing, select :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false"::: **Compact list**.
+
+Select :::image type="icon" source="../../media/m365-cc-sc-download-icon.png"::: **Export** to download the displayed results to a RecordExport.csv file in the local Downloads folder.
+
+If you select a user from the list by clicking anywhere in the row other than the check box next to the name, the following user information appears in a details flyout:
+
+- **User details** section:
+  - **Company**
+  - **IP address**
+  - **Job title**
+  - **Department**
+  - **Location**
+  - **Manager**
+- Status information for Training modules in the Training campaign for the user:
+  - **Training name**: The training module name.
+  - **Training status**: **Not started**, **In progress**, **Completed**, **Training Previously Assigned**, **Overdue**, or **Not Completed**.
+  - **Training start date**
+  - **Training completed date**
+
+> [!TIP]
+> To see details about other users in the Training campaign without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
+
+### Details tab
+
+The **Details** tab the following information:
+
+- **Description**
+- **Schedule details**: The launch date/time and the end date/time.
+- **Notifications**: Whether training assignment notifications and training reminder notifications are enabled, and their delivery frequency.
+- **Selected modules**: The Training modules in the Training campaign are listed in a table:
+  - **Module name**
+  - **Content type**
+  - **Total duration (mins)**

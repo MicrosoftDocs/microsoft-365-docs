@@ -14,7 +14,7 @@ ms.custom:
 description: Admins can learn how to simulate phishing attacks and train their users on phishing prevention using Attack simulation training in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 search.appverid: met150
-ms.date: 3/11/2024
+ms.date: 3/13/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison" target="_blank">Microsoft Defender for Office 365 plan 2</a>
 ---
@@ -612,7 +612,7 @@ Back on the **Simulations** tab, the simulation that you created is now listed. 
 
 ## View simulations
 
-The **Simulations** tab in Attack simulation training at <https://security.microsoft.com/attacksimulator> shows any simulations that you've created.
+The **Simulations** tab in Attack simulation training at <https://security.microsoft.com/attacksimulator> shows any simulations that you created.
 
 The following information is shown for each simulation. You can sort the simulations by clicking on an available column header. Select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns** to change the columns that are shown. By default, all columns are selected:
 
@@ -650,74 +650,97 @@ When you're finished configuring filters, select **Apply**, **Cancel**, or :::im
 
 To see simulations that have been excluded from reporting (the **Status** value is **Excluded**), use the **Show excluded simulations** toggle on the **Simulations** tab.
 
-### View simulation details
+## View simulation reports
 
-To view details about a simulation, use either of the following methods on the **Simulations** tab at <https://security.microsoft.com/attacksimulator>:
+For simulations with the **Status** value **In progress** or **Completed**, you can view the report for the simulation by using either of the following methods on the **Simulations** tab at <https://security.microsoft.com/attacksimulator?viewid=simulations>:
 
 - Select the simulation by clicking anywhere in the row other than the check box next to the name.
 - Select the simulation by clicking **⋮** (**Actions**) at the end of the row, and then select :::image type="icon" source="../../media/m365-cc-sc-eye-icon.png" border="false"::: **View report**.
 
-The title of the details page that opens shows the name of the simulation and other information (for example, the status, social engineering technique, and delivery status).
+The title of the report page that opens shows the name of the simulation and other information (for example, the status, social engineering technique, and delivery status).
+
+> [!TIP]
+> In the following scenarios, the report page opens, but no other information or actions are available on the page:
+>
+> - The **Status** value is **Scheduled**.
+> - During the first few minutes after you create a simulation when the **Status** value is **In progress**.
 
 You can select :::image type="icon" source="../../media/m365-cc-sc-view-activity-timeline-icon.png" border="false"::: **View activity timeline** to see date/time information about the simulation (simulation scheduled, simulation launched, simulation ended, and training due dates).
 
-The rest of the details page contains the following tabs:
+The rest of the report page contains tabs as described in the following subsections.
 
-- **Report** tab: For a description of what's on this tab, see [Attack simulation report](attack-simulation-training-insights.md#attack-simulation-report).
+To close the simulation report, select :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: **Close**.
 
-- **Users** tab: Shows the following information for all targeted users in the simulation:
-  - **Name**
-  - **Compromised**
-  - **Reported**
-  - **Training status**
-  - **Other actions**
-  - **Compromised on**
-  - **Reported on**
-  - **Failed deliveries**
-  - **Username**
+### Report tab
 
-  Select a column header to sort by that column. To add or remove columns, select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns**. The following additional columns are available:
+For a description of what's on the **Report** tab, see [Attack simulation report](attack-simulation-training-insights.md#attack-simulation-report).
 
-  - **Days out of office**
-  - **Message read on**
-  - **Message forwarded on**
-  - **Message deleted on**
-  - **Replied to message**
-  - **Department**
-  - **Company**
-  - **Job title**
-  - **Office**
-  - **City**
-  - **Country**
-  - **Manager**
+### Users tab
 
-  To change the list of users from normal to compact spacing, select :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false"::: **Compact list**.
+The **Users** tab contains the following information for each user in the simulation. You can sort the users by clicking on an available column header. Select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns** to change the columns that are shown. The default columns are marked with an asterisk (<sup>\*</sup>):
 
-  If you select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter**, the following filters are available:
+- **Name**<sup>\*</sup> (you can't deselect this value)
+- **Compromised**<sup>\*</sup>
+- **Reported**<sup>\*</sup>
+- **Training status**<sup>\*</sup>
+- **Other actions**<sup>\*</sup>
+- **Compromised on**<sup>\*</sup>
+- **Reported on**<sup>\*</sup>
+- **Days out of office**
+- **Message read on**
+- **Message forwarded on**
+- **Message deleted on**
+- **Replied to message**
+- **Failed deliveries**<sup>\*</sup>
+- **Username**<sup>\*</sup> (you can't deselect this value)
+- **Department**
+- **Company**
+- **Job title**
+- **Office**
+- **City**
+- **Country/region**
+- **Manager**
 
-  - **Compromised**: Select **Yes** or **No**.
-  - **Reported message**: Select **Yes** or **No**.
-  - **Simulation message delivery**: Select **Delivered** or **Failed to deliver**.
-  - **Other actions**: *Select one or more of the following values: **Replied to message**, **Forwarded message**, and **Deleted messages**.
-  - **Training status**: Select **Completed**, **In progress**, **Not started**, or **Not assigned**.
-  - **Assigned trainings**: Select one or more of the following values: **Mass Market Phishing**, **Report Message**, **Web Phishing**, **Anatomy of a Spear Phishing Attack**.
+> [!TIP]
+> To see all columns, you likely need to do one or more of the following steps:
+>
+> - Horizontally scroll in your web browser.
+> - Narrow the width of appropriate columns.
+> - Remove columns from the view.
+> - Zoom out in your web browser.
 
-  To find a user in the list, type part of the name in the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box and then press the ENTER key.
+To change the list of users from normal to compact spacing, select :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false"::: **Compact list**.
 
-- **Details** tab: Contains details about the simulation in the following sections:
-  - **Description** section:
-    - **Delivery platform**
-    - **Type**
-    - **Landing page**
-    - **Technique**
-    - **Launch details**
-    - **Payload & login page**
-    - **Target users**: Include excluded users or groups.
-  - **Training information** section:
+Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter** to filter the targeted users by selecting one or more of the following values in the flyout that opens:
+
+- **Compromised**: Select **Yes** or **No**.
+- **Reported message**: Select **Yes** or **No**.
+- **Simulation message delivery**: Select **Delivered** or **Failed to deliver**.
+- **Other actions**: *Select one or more of the following values: **Replied to message**, **Forwarded message**, and **Deleted messages**.
+- **Training status**: Select **Completed**, **In progress**, **Not started**, or **Not assigned**.
+- **Assigned trainings**: Select one or more of the assigned trainings.
+
+When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
+
+Use the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Search** box to find a user in the list by typing part of the name, and then press the ENTER key.
+
+### Details tab
+
+The **Details** tab contains details about the simulation in the following sections:
+
+- **Description** section:
+  - **Delivery platform**
+  - **Type**
+  - **Technique**
+  - **Launch details**
+  - **Payload & login page**: Select **Preview payload & login page** to preview the payload and login page in a details flyout.
+  - **Target users**: Select **View excluded users or groups** to see excluded users or groups in a details flyout.
+  - **Landing page**: Select **Preview landing page** to preview the landing page.
+  - **Training information** section: Contains a table with the following columns:
     - **Training name**
     - **Assign to**
     - **Actions**: Select :::image type="icon" source="../../media/m365-cc-sc-view-icon.png" border="false"::: **View** to see the training.
-  - **Notifications** section:
+  - **Notifications** section: Contains a table with the following columns:
     - **Notification name**
     - **Notification type**
     - **Delivery frequency**
@@ -739,28 +762,31 @@ All actions on existing simulations start on the **Simulations** tab. To go ther
 
 You can copy an existing simulation and modify it to suit your needs. This action saves time and effort when you create new simulations based on previous ones.
 
-You can copy any simulation that you created and that's available in the **Simulations** tab, regardless of the **Status** value. You can then modify the copy. For example, change the simulation name, description, technique, payload, target users, etc.
+You can copy any simulation that's available in the **Simulations** tab, regardless of the **Status** value. When you copy the simulation you can change the setting in the new copy of the simulation . For example, change the simulation name, description, technique, payload, and target users.
 
-- We don't recommend copying **Failed** simulations, because the reasons for failure could recur in the duplicated simulation.
-- When you copy a simulation, the most recent version of the content in the original simulation is used in the new copy. For example, the payload, landing page, and end-user notifications. If any content is deleted, you're prompted to select the respective content again.
-- The latest target and excluded users at the time of simulation launch are used when groups are added from the search bar (**Search for users or groups**). The target and excluded users are unchanged in the following scenarios:
+- We don't recommend copying **Failed** simulations, because the reasons for failure could recur in the copied simulation.
+- When you copy a simulation, the most recent settings are used in the copy (for example, the payload, landing page, and end-user notifications). If any content is deleted, you're prompted to select the respective content again.
+- The latest targeted and excluded users at the time of simulation launch are used when groups are added from the search bar (**Search for users or groups**). The targeted and excluded users are unchanged in the following scenarios:
   - The user list was imported from a CSV file.
   - Users were added from the search bar.
-  - Users were added for different categories: All users, Suggested user groups, User tags, City, Country, Department, Title.
-- If the scheduled simulation launch time in the original simulation is in the future, it's copied as is. For launch times in the past, the value **Launch this simulation as soon as I'm done** is selected.
+  - Users were added for different categories: **All users**, **Suggested user groups**, **User tags**, **City**, Country, Department, Title.
+- Future scheduled launch times in the original simulation are copied and used as-is. Past launch times in the original simulation result in the default value **Launch this simulation as soon as I'm done** in the copy.
 
-To copy a simulation, follow these steps:
+To copy a simulation, do the following steps:
 
-1. Select the **Simulations** tab and find the simulation that you want to copy.
-2. Select the check box next to the simulation name, and then select :::image type="icon" source="../../media/m365-cc-sc-copy-icon.png" border="false"::: **Copy simulation**.
-3. The simulation configuration wizard opens with all the original settings and a simulation name containing the suffix **_Copy**.
+1. On the **Simulations** tab at <https://security.microsoft.com/attacksimulator?viewid=simulations>, find and select the simulation to copy by selecting the check box next to the name.
+2. Select the :::image type="icon" source="../../media/m365-cc-sc-copy-icon.png" border="false"::: **Copy simulation** action that appears on the tab.
+3. The simulation wizard opens with all the settings from the original simulation. The default simulation name on the **Name simulation** page is the original name plus the the suffix **_Copy**.
 4. Review and modify the simulation configuration as needed. Select **Submit** to launch it or **Save and close** to review it later. If you select **Cancel**, the copied simulation isn't saved.
 
 ### Cancel simulations
 
 You can cancel simulations with the **Status** value **In progress** or **Scheduled**.
 
-To cancel a simulation on the **Simulations** tab, select the simulation by clicking **⋮** (**Actions**) at the end of the row, select :::image type="icon" source="../../media/m365-cc-sc-close-icon.png" border="false"::: **Cancel simulation**, and then select **Confirm** in the confirmation dialog.
+To cancel a simulation, do the following steps:
+
+1. On the **Simulations** tab at <https://security.microsoft.com/attacksimulator?viewid=simulations>, find and select the in-progress or scheduled simulation to cancel by selecting **⋮** (**Actions**) at the end of the row.
+2. Select :::image type="icon" source="../../media/m365-cc-sc-close-icon.png" border="false"::: **Cancel simulation**, and then select **Confirm** in the confirmation dialog.
 
 After you cancel the simulation, the **Status** value changes to **Canceled**.
 
@@ -768,7 +794,10 @@ After you cancel the simulation, the **Status** value changes to **Canceled**.
 
 You can't remove simulations with the **Status** value **In progress**.
 
-To remove a simulation from the **Simulations** tab, select the simulation by clicking **⋮** (**Actions**) at the end of the row, and then select :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png" border="false"::: **Delete**, and then select **Confirm** in the confirmation dialog.
+To remove a simulation, do the following steps:
+
+1. On the **Simulations** tab at <https://security.microsoft.com/attacksimulator?viewid=simulations>, find and select the simulation to remove by selecting **⋮** (**Actions**) at the end of the row.
+2. Select :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png" border="false"::: **Delete**, and then select **Confirm** in the confirmation dialog.
 
 After you remove the simulation, it no longer appears on the **Simulations** tab.
 
@@ -776,7 +805,10 @@ After you remove the simulation, it no longer appears on the **Simulations** tab
 
 The **Exclude** action is available only for simulations with the **Status** value **Competed**.
 
-To remove a simulation from the **Simulations** tab, select the simulation by clicking **⋮** (**Actions**) at the end of the row, select :::image type="icon" source="../../media/m365-cc-sc-exclude-icon.png" border="false"::: **Exclude**, and then select **Confirm** in the confirmation dialog.
+By default, all completed simulations are included in reporting. To exclude a completed simulation from reporting, do the following steps:
+
+1. On the **Simulations** tab at <https://security.microsoft.com/attacksimulator?viewid=simulations>, find and select the completed simulation to exclude from reporting by selecting **⋮** (**Actions**) at the end of the row.
+2. Select :::image type="icon" source="../../media/m365-cc-sc-exclude-icon.png" border="false"::: **Exclude**, and then select **Confirm** in the confirmation dialog.
 
 After you exclude the completed simulation from reporting, the **Status** value changes to **Excluded**, and the simulation is no longer visible on the **Simulations** tab when the **Show excluded simulations** toggle is off :::image type="icon" source="../../media/scc-toggle-off.png" border="false":::.
 
@@ -787,9 +819,7 @@ To see completed simulations that have been excluded from reporting, use either 
 
 ### Include completed simulations in reporting
 
-By default, all completed simulations are included in reporting. A simulation is excluded from reporting only if you exclude it as described in the previous section.
-
-The **Include** action is available only for simulations with the **Status** value **Excluded**, which are visible on the **Simulations** tab only when **Show excluded simulations** is toggled on :::image type="icon" source="../../media/scc-toggle-on.png" border="false":::.
+A simulation is excluded from reporting only if you exclude it as described in the previous section. The **Include** action is available only for simulations with the **Status** value **Excluded**, which are visible on the **Simulations** tab only when **Show excluded simulations** is toggled on :::image type="icon" source="../../media/scc-toggle-on.png" border="false":::.
 
 To include a completed session in reporting after it has been excluded, do the following steps:
 
@@ -797,15 +827,3 @@ To include a completed session in reporting after it has been excluded, do the f
 2. Select the simulation by clicking **⋮** (**Actions**) at the end of the row, and then select :::image type="icon" source="../../media/m365-cc-sc-include-icon.png" border="false"::: **Exclude**.
 
 After you've included the excluded simulation, the **Status** value changes to **Completed**. Toggle **Show excluded simulations** to off :::image type="icon" source="../../media/scc-toggle-off.png" border="false"::: to see the simulation.
-
-### View simulation reports
-
-For simulations with the **Status** value **In progress** or **Completed**, you can view the report for the simulation by using either of the following methods on the **Simulations** tab:
-
-- Select the simulation by clicking anywhere in the row other than the check box next to the name.
-- Select the simulation by clicking **⋮** (**Actions**) at the end of the row, and then select :::image type="icon" source="../../media/m365-cc-sc-eye-icon.png" border="false"::: **View report**.
-
-The report page for the simulation opens and contains the following information:
-
-- **Report** tab: Show the following information
-  **Simulation impact**
