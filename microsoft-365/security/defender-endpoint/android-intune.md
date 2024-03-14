@@ -64,13 +64,13 @@ Learn how to deploy Defender for Endpoint on Android with Microsoft Intune Compa
     > [!NOTE]
     > The selected user group should consist of Intune enrolled users.
     >
-    > :::image type="content" source="images/363bf30f7d69a94db578e8af0ddd044b.png" alt-text="The Add group pane in the Add App page in the Microsoft Intune admin center portal" lightbox="images/363bf30f7d69a94db578e8af0ddd044b.png":::
+    > :::image type="content" source="media/363bf30f7d69a94db578e8af0ddd044b.png" alt-text="The Add group pane in the Add App page in the Microsoft Intune admin center portal" lightbox="media/363bf30f7d69a94db578e8af0ddd044b.png":::
 
 4. In the **Review+Create** section, verify that all the information entered is correct and then select **Create**.
 
     In a few moments, the Defender for Endpoint app would be created successfully, and a notification would show up at the top-right corner of the page.
 
-    :::image type="content" source="images/86cbe56f88bb6e93e9c63303397fc24f.png" alt-text="The application status pane in the Microsoft Intune admin center portal" lightbox="images/86cbe56f88bb6e93e9c63303397fc24f.png":::
+    :::image type="content" source="media/86cbe56f88bb6e93e9c63303397fc24f.png" alt-text="The application status pane in the Microsoft Intune admin center portal" lightbox="media/86cbe56f88bb6e93e9c63303397fc24f.png":::
 
 5. In the app information page that is displayed, in the **Monitor** section, select **Device install status** to verify that the device installation has completed successfully.
 
@@ -115,7 +115,7 @@ Follow the steps below to add Microsoft Defender for Endpoint app into your mana
 
 4. You'll be presented with the permissions that Defender for Endpoint obtains for it to work. Review them and then select **Approve**.
 
-    :::image type="content" source="images/206b3d954f06cc58b3466fb7a0bd9f74.png" alt-text="The permissions approval page in the Microsoft Defender 365 portal" lightbox="images/206b3d954f06cc58b3466fb7a0bd9f74.png":::
+    :::image type="content" source="media/206b3d954f06cc58b3466fb7a0bd9f74.png" alt-text="The permissions approval page in the Microsoft Defender 365 portal" lightbox="media/206b3d954f06cc58b3466fb7a0bd9f74.png":::
 
 5. You'll be presented with the Approval settings page. The page confirms your preference to handle new app permissions that Defender for Endpoint on Android might ask. Review the choices and select your preferred option. Select **Done**.
 

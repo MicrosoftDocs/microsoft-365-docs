@@ -82,7 +82,7 @@ In this section, we create a test group to assign your configurations on.
 2. Open **Groups > New Group**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/66f724598d9c3319cba27f79dd4617a4.png" alt-text="The Microsoft Intune admin center1" lightbox="images/66f724598d9c3319cba27f79dd4617a4.png":::
+    > :::image type="content" source="media/66f724598d9c3319cba27f79dd4617a4.png" alt-text="The Microsoft Intune admin center1" lightbox="media/66f724598d9c3319cba27f79dd4617a4.png":::
 
 3. Enter details and create a new group.
 
@@ -98,7 +98,7 @@ In this section, we create a test group to assign your configurations on.
 7. Find your test user or device and select it.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/149cbfdf221cdbde8159d0ab72644cd0.png" alt-text="The Microsoft Intune admin center3" lightbox="images/149cbfdf221cdbde8159d0ab72644cd0.png":::
+    > :::image type="content" source="media/149cbfdf221cdbde8159d0ab72644cd0.png" alt-text="The Microsoft Intune admin center3" lightbox="media/149cbfdf221cdbde8159d0ab72644cd0.png":::
 
 8. Your testing group now has a member to test.
 
@@ -365,7 +365,7 @@ To confirm that the configuration policy is applied to your test device, follow 
     manage the settings as shown in the following image:
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/88efb4c3710493a53f2840c3eac3e3d3.png" alt-text="The settings page-1" lightbox="images/88efb4c3710493a53f2840c3eac3e3d3.png":::
+    > :::image type="content" source="media/88efb4c3710493a53f2840c3eac3e3d3.png" alt-text="The settings page-1" lightbox="media/88efb4c3710493a53f2840c3eac3e3d3.png":::
 
 2. After the policy is applied, you shouldn't be able to manually manage
     the settings.
@@ -404,7 +404,7 @@ To confirm that the configuration policy is applied to your test device, follow 
 
 2. This should respond with a 0 as shown in the following image:
 
-   :::image type="content" source="images/196a8e194ac99d84221f405d0f684f8c.png" alt-text="The command line-3" lightbox="images/196a8e194ac99d84221f405d0f684f8c.png":::
+   :::image type="content" source="media/196a8e194ac99d84221f405d0f684f8c.png" alt-text="The command line-3" lightbox="media/196a8e194ac99d84221f405d0f684f8c.png":::
 
 3. After applying the policy, open a PowerShell Windows and type
     `(Get-MpPreference).EnableNetworkProtection`.
