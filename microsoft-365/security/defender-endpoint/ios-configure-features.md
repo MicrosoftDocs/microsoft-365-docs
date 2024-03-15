@@ -150,7 +150,7 @@ Follow the below steps for setting up MAM config for unenrolled devices for Netw
   
 5. In the **Assignments** section, an admin can choose groups of users to include and exclude from the policy.
 
-   :::image type="content" source="images/assigniosconfig.png" alt-text="Assign configuration." lightbox="images/assigniosconfig.png":::
+   :::image type="content" source="media/assigniosconfig.png" alt-text="Assign configuration." lightbox="media/assigniosconfig.png":::
 
 6. Review and create the configuration policy.
 
