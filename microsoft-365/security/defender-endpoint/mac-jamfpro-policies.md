@@ -165,7 +165,7 @@ Note that you must use exact `com.microsoft.wdav` as the **Preference Domain**, 
 
 9. Select **Add**, then select **Save**.
 
-   :::image type="content" source="images/cf30438b5512ac89af1d11cbf35219a6.png" alt-text="The page on which you can add the Configuration settings." lightbox="images/cf30438b5512ac89af1d11cbf35219a6.png":::
+   :::image type="content" source="media/cf30438b5512ac89af1d11cbf35219a6.png" alt-text="The page on which you can add the Configuration settings." lightbox="media/cf30438b5512ac89af1d11cbf35219a6.png":::
 
    :::image type="content" source="media/6f093e42856753a3955cab7ee14f12d9.png" alt-text="The page on which you can save the Configuration settings." lightbox="media/6f093e42856753a3955cab7ee14f12d9.png":::
 
@@ -372,7 +372,7 @@ All you need to do to have updates is to download an updated schema, edit existi
 
 15. Select **Add**, then select **Save**.
 
-    :::image type="content" source="images/cf30438b5512ac89af1d11cbf35219a6.png" alt-text="The configuration settings addsav." lightbox="images/cf30438b5512ac89af1d11cbf35219a6.png":::
+    :::image type="content" source="media/cf30438b5512ac89af1d11cbf35219a6.png" alt-text="The configuration settings addsav." lightbox="media/cf30438b5512ac89af1d11cbf35219a6.png":::
 
     :::image type="content" source="media/6f093e42856753a3955cab7ee14f12d9.png" alt-text="The notification of configuration settings." lightbox="media/6f093e42856753a3955cab7ee14f12d9.png":::
 
@@ -395,7 +395,7 @@ These steps are applicable on macOS 11 (Big Sur) or later.
    - **Distribution Method**: Install Automatically *(default)*
    - **Level**: Computer Level *(default)*
 
-   :::image type="content" source="images/c9820a5ff84aaf21635c04a23a97ca93.png" alt-text="The new macOS configuration profile page." lightbox="images/c9820a5ff84aaf21635c04a23a97ca93.png":::
+   :::image type="content" source="media/c9820a5ff84aaf21635c04a23a97ca93.png" alt-text="The new macOS configuration profile page." lightbox="media/c9820a5ff84aaf21635c04a23a97ca93.png":::
 
     - Tab **Notifications**, click **Add**, and enter the following values:
         - **Bundle ID**: `com.microsoft.wdav.tray`
@@ -511,7 +511,7 @@ These steps are applicable on macOS 11 (Big Sur) or later.
 
 14. Select **Done**.
 
-    :::image type="content" source="images/ba44cdb77e4781aa8b940fb83e3c21f7.png" alt-text="The completion notification regarding the configuration settings." lightbox="images/ba44cdb77e4781aa8b940fb83e3c21f7.png":::
+    :::image type="content" source="media/ba44cdb77e4781aa8b940fb83e3c21f7.png" alt-text="The completion notification regarding the configuration settings." lightbox="media/ba44cdb77e4781aa8b940fb83e3c21f7.png":::
 
 ## Step 6: Grant full disk access to Microsoft Defender for Endpoint
 
@@ -529,7 +529,7 @@ These steps are applicable on macOS 11 (Big Sur) or later.
     - Distribution method: Install Automatically
     - Level: Computer level
 
-    :::image type="content" source="images/ba3d40399e1a6d09214ecbb2b341923f.png" alt-text="The configuration setting in general." lightbox="images/ba3d40399e1a6d09214ecbb2b341923f.png":::
+    :::image type="content" source="media/ba3d40399e1a6d09214ecbb2b341923f.png" alt-text="The configuration setting in general." lightbox="media/ba3d40399e1a6d09214ecbb2b341923f.png":::
     
 
 4. In **Configure Privacy Preferences Policy Control** select **Configure**.
@@ -546,7 +546,7 @@ These steps are applicable on macOS 11 (Big Sur) or later.
 
 6. Select **+ Add**.
 
-   :::image type="content" source="images/bd93e78b74c2660a0541af4690dd9485.png" alt-text="The configuration setting add system policy all files option." lightbox="images/bd93e78b74c2660a0541af4690dd9485.png":::
+   :::image type="content" source="media/bd93e78b74c2660a0541af4690dd9485.png" alt-text="The configuration setting add system policy all files option." lightbox="media/bd93e78b74c2660a0541af4690dd9485.png":::
 
     - Under App or service: Set to **SystemPolicyAllFiles**
 
@@ -741,7 +741,7 @@ Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint 
 
 4. Select your computer and click the gear icon at the top, then select **Computer Management**.
 
-   :::image type="content" source="images/b6d671b2f18b89d96c1c8e2ea1991242.png" alt-text="The configuration settings - computer management." lightbox="images/b6d671b2f18b89d96c1c8e2ea1991242.png":::
+   :::image type="content" source="media/b6d671b2f18b89d96c1c8e2ea1991242.png" alt-text="The configuration settings - computer management." lightbox="media/b6d671b2f18b89d96c1c8e2ea1991242.png":::
 
 5. In **Packages**, select **+ New**.
    :::image type="content" source="media/57aa4d21e2ccc65466bf284701d4e961.png" alt-text="The bird Description for an automatically generated package." lightbox="media/57aa4d21e2ccc65466bf284701d4e961.png":::
@@ -843,7 +843,7 @@ Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint 
 
     Select **Self-Service**, if you want users to install Microsoft Defender voluntarily, on demand.
 
-    :::image type="content" source="images/c9f85bba3e96d627fe00fc5a8363b83a.png" alt-text="The Self Service tab for configuration settings." lightbox="images/c9f85bba3e96d627fe00fc5a8363b83a.png":::
+    :::image type="content" source="media/c9f85bba3e96d627fe00fc5a8363b83a.png" alt-text="The Self Service tab for configuration settings." lightbox="media/c9f85bba3e96d627fe00fc5a8363b83a.png":::
 
 20. Select **Done**.
 
