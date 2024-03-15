@@ -270,7 +270,7 @@ The following steps are only applicable if you're using a third-party anti-malwa
     - Type: `REG_DWORD`
     - Value: `1`
 
-   :::image type="content" source="images/atp-verify-passive-mode.png" alt-text="The passive mode verification result" lightbox="images/atp-verify-passive-mode.png":::
+   :::image type="content" source="media/atp-verify-passive-mode.png" alt-text="The passive mode verification result" lightbox="media/atp-verify-passive-mode.png":::
 
 #### Known issues and limitations in the new, unified solution package for Windows Server 2012 R2 and 2016
 

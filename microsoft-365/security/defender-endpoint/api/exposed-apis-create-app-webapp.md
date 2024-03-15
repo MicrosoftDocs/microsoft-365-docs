@@ -57,7 +57,7 @@ This article explains how to create a Microsoft Entra application, get an access
 
 2. Navigate to **Microsoft Entra ID** \> **App registrations** \> **New registration**. 
 
-    :::image type="content" source="../images/atp-azure-new-app2.png" alt-text="The application registration pane" lightbox="../images/atp-azure-new-app2.png":::
+    :::image type="content" source="../media/atp-azure-new-app2.png" alt-text="The application registration pane" lightbox="../media/atp-azure-new-app2.png":::
 
 3. In the registration form, choose a name for your application, and then select **Register**.
 
