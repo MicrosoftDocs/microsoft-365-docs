@@ -306,7 +306,7 @@ You can use either of the following methods:
 
 2. Select the Defender for Endpoint workspace, and click **Remove**.
 
-    :::image type="content" source="images/atp-mma.png" alt-text="The Workspaces pane" lightbox="images/atp-mma.png":::
+    :::image type="content" source="media/atp-mma.png" alt-text="The Workspaces pane" lightbox="media/atp-mma.png":::
 
 #### Run a PowerShell command to remove the configuration
 
