@@ -54,7 +54,7 @@ Microsoft Defender XDR brings Copilot for Security’s capability to look up thr
 
    (Add image)
 
-5. You can provide feedback about the generated response by selecting (feedback icon) and choosing **Confirmed, it looks great**, **Off-target, inaccurate**, or **Potentially harmful, inappropriate**. [Learn more](microsoft-365/security/defender/security-copilot-in-microsoft-365-defender#providing-feedback)
+5. You can provide feedback about the generated response by selecting (feedback icon) and choosing **Confirmed, it looks great**, **Off-target, inaccurate**, or **Potentially harmful, inappropriate**. [Learn more](/microsoft-365/security/defender/security-copilot-in-microsoft-365-defender.md#providing-feedback)
 6. To start a new chat session with Copilot, select the [New chat] icon.
 
 > [!NOTE]
