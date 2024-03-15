@@ -3,7 +3,7 @@ title: OneDrive Cross-Tenant User Data Migration Step 7
 ms.author: jtremper
 author: MicrosoftHeidi
 manager: serdars
-ms.date: 10/13/2023
+ms.date: 11/17/2023
 recommendations: true
 audience: ITPro
 ms.topic: article
@@ -61,7 +61,7 @@ This is Step 7 in a solution designed to complete a Cross-tenant OneDrive migrat
 Occasionally, a user may need to be migrated back to the original source. Remove the redirect link on the Target if you migrate a user back to the source.
  
 - To remove redirect links, use the **Remove-SPOSite** PowerShell command.
-- To get a list of all redirect sites on a tenant,  use the **Get-Sposite -Template RedirectSite#0** command.
+- To get a list of all redirect sites on a tenant,  use the **Get-Sposite -Template RedirectSite#0 -IncludePersonalSite $true** command.
 
 Keep track of any user or site you migrate back to the source from the target. After successfully migrating these users or sites back to the source, confirm that the user/sites are accessible.   Then you can remove the redirect link from Target using the **Remove-SPOSite command**.
 
