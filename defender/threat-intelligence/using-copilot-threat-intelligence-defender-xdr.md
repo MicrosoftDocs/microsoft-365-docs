@@ -11,7 +11,7 @@ audience: ITPro
 ms.collection: 
   - Tier1
 ms.topic: conceptual
-ms.date: 14/03/2024
+ms.date: 03/15/2024
 ---
 
 # Using Microsoft Copilot for Security for threat intelligence in Microsoft Defender XDR
@@ -22,7 +22,7 @@ ms.date: 14/03/2024
 Microsoft Defender XDR applies the capabilities of Microsoft Copilot for Security to deliver Microsoft Defender Threat Intelligence (Defender TI) information about threat actors and tools, as well as contextual threat intelligence, directly into the Microsoft Defender portal. Based on threat analytics reports, intel profiles, and other available Defender TI content, you can use Copilot for Security to summarize the latest threats affecting your organization, know which threats to prioritize based on your exposure level, or gain more knowledge about your organization's or the global threat landscape.
 
 > [!NOTE]
-> Defender TI capabilities are also available in Copilot for Security standalone experience through the Microsoft Defender Threat Intelligence plugin. Learn more about [Defender TI integration with Copilot for Security](/defender/threat-intelligence/security-copilot-and-defender-threat-intelligence.md).
+> Defender TI capabilities are also available in Copilot for Security standalone experience through the Microsoft Defender Threat Intelligence plugin. [Learn more about Defender TI integration with Copilot for Security](/defender/threat-intelligence/security-copilot-and-defender-threat-intelligence.md)
 
 ## Technical requirements
 
@@ -30,19 +30,19 @@ Copilot for Security customers gain for each of their authenticated Copilot user
 
 ## Accessing Copilot for Security with Defender TI integration in Microsoft Defender XDR
 
-Microsoft Defender XDR brings the _FindThreatIntelligence_ capability of Copilot for Security in the following *Threat intelligence* pages of the portal:
+Microsoft Defender XDR brings Copilot for Security’s capability to look up threat intelligence into the following pages of the portal:
 - Threat analytics
 - Intel profiles
 - Intel explorer
 - Intel projects
 
 ## Try your first request
-1. Open any of the *Threat intelligence* pages mentioned earlier from the Microsoft Defender XDR navigation bar. The Copilot for Security side pane appears on the right hand side.
+1. Open any of the pages mentioned earlier from the Microsoft Defender XDR navigation bar. The Copilot for Security side pane appears on the right hand side.
 
    (Add image)
 
    You can also reopen Copilot by selecting (Copilot) at the top of the page.
-2. In the Copilot prompt bar, ask about a threat actor, attack campaign, or any other threat intelligence that you want to know more about, then select (arrow) or press **Enter**.
+2. In the Copilot prompt bar, ask about a threat actor, attack campaign, or any other threat intelligence that you want to know more about, then select (arrow) or press **Enter**. [See sample prompts for Defender TI](security-copilot-and-defender-threat-intelligence.md#sample-prompts-for-defender-ti)
    
    (Add image)
 
@@ -63,12 +63,32 @@ Microsoft Defender XDR brings the _FindThreatIntelligence_ capability of Copilot
 > [!IMPORTANT] 
 > Copilot for Security starts are a new chat session every time you navigate to a different Threat intelligence page (for example, when you go from *Threat analytics* to *Intel profiles*). If you wish to go back or continue a previous session, go to the Copilot for Security standalone site and look for it in My sessions. Learn more about My sessions
 
-## Use the Defender TI prompts
+## Use the built-in Defender TI prompts
 
-Copilot for Security also has the following built-in prompts when accessing the Threat intelligence pages in Microsoft Defender XDR to get you started:
-- **Summarize:** Select this option if you want Copilot to give you an overview of the most active threats in your environment. Copilot lists and summarizes relevant campaigns, activities, and threat actors, and includes links to related threat analytics reports or intel profiles for more information.
-- **Prioritize:** Select this option if you want to find out which threats are likely to significantly impact your organization based on your exposures. This gives you a starting point and could thus make triaging, investigating, and mitigating incidents less complex.
-- **Ask:** Select this option if you want Copilot to provide you with insights on certain topics about the threat landscape (for example, best practices for responding to human-operated ransomware attacks). An important aspect of threat intelligence is keeping up to date with the global threat landscape and Copilot provides you with relevant information that could help you promptly assess your environment and apply mitigation or prevention strategies.
+Copilot for Security also has the following built-in prompts when accessing the *Threat intelligence* pages in Microsoft Defender XDR to get you started:
+
+- [Summarize](#summarize-the-latest-threats-related-to-your-organization)
+- [Prioritize](#prioritize-which-threats-to-focus-on)
+- [Ask](#ask-about-the-threat-actors-are-targeting-your-industry)
+
+(Add screenshot here)
+
+### Summarize the latest threats related to your organization
+Gathering and digesting threat intelligence data and trends can be a daunting task, especially when they come from multiple data sets and sources. Choose the **Summarize** prompt if you want Copilot to give you an overview of the latest threats in your environment. Copilot lists and summarizes relevant campaigns, activities, and threat actors, and includes links to related threat analytics reports or intel profiles for more information.
+
+(Add screenshot here)
+
+### Prioritize which threats to focus on
+Copilot for Security provides insights on which threats you should prioritize and focus on based on your environment's highest exposure level to these threats. Choose the **Prioritize** prompt if you want to find out which threats are likely to significantly impact your organization. This gives you a starting point and could thus make triaging, investigating, and mitigating incidents less complex.
+
+(Add screenshot here)
+
+### Ask about the threat actors are targeting your industry
+
+An important aspect of threat intelligence is keeping up to date with the global threat landscape. Choose the **Ask** prompt if you want Copilot for Security to summarize the latest threat articles relevant to your industry so you can gather information on the latest TTPs or campaigns threat actors are launching against organizations similar to yours and promptly assess and apply mitigation or prevention strategies. 
+
+(Add screenshot here)
 
 ### See also
-- - [What is Microsoft Copilot for Security?](/security-copilot/microsoft-security-copilot)
+- [What is Microsoft Copilot for Security?](/security-copilot/microsoft-security-copilot)
+- [Microsoft Copilot for Security and Microsoft Defender Threat Intelligence](/defender/threat-intelligence/security-copilot-and-defender-threat-intelligence.md)

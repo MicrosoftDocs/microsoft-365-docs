@@ -116,36 +116,7 @@ Get contextual information and threat intelligence on Common Vulnerabilities and
 - Show me threat actors associated with CVE-2021-44228.
 - Show me the threat articles associated with CVE-2021-44228.
 
-## Using Copilot for Security on Defender TI in Microsoft Defender XDR
-
-Copilot for Security customers gain for each of their authenticated Copilot users access to Defender TI within the Microsoft Defender XDR portal. To ensure that you have access to Copilot, see the [Copilot for Security purchase and licensing information](/security-copilot/faq-security-copilot). 
-
-Once you have access to Copilot for Security, the key features discussed in the next section become accessible in the following Threat intelligence sections of the Microsoft Defender XDR portal: 
-- Threat analytics
-- Intel profiles
-- Intel explorer
-- Intel projects
-
-### Key features
-Microsoft Defender XDR brings the _FindThreatIntelligence_ capability of Copilot for Security to the portal, letting security teams understand, prioritize, and take action on threat intelligence information immediately.
-
-#### Summarize the latest threats related to your organization
-Gathering and digesting threat intelligence data and trends can be a daunting task, especially when they come from multiple data sets and sources. Copilot for Security in Microsoft Defender for XDR provides you with an overview of the latest threats currently impacting your organization. It lists and summarizes relevant campaigns, activities, and threat actors, and includes links to related threat analytics reports or intel profiles for more information.
-
-(Add screenshot here)
-
-#### Prioritize which threats to focus on
-Copilot for Security provides insights on which threats you should prioritize and focus on based on your environment's level of exposure to these threats. This feature gives you a starting point and could thus make triaging, investigating, and mitigating incidents less complex.
-
-(Add screenshot here)
-
-#### Find out which threat actors are targeting your industry
-
-An important aspect of threat intelligence is keeping up to date with the global threat landscape. Copilot for Security gathers and summarizes the latest threat articles relevant to your industry so you can gather information on the latest TTPs or campaigns threat actors are launching against organizations similar to yours and promptly assess and apply mitigation or prevention strategies. 
-
-(Add screenshot here)
-
-## Provide feedback
+### Provide feedback
 
 Your feedback on the Defender TI integration with Copilot for Security helps with development. To provide feedback, in Copilot, select any of the following buttons at the bottom of each completed prompt:
 - **Looks right** - Select this button if the results are accurate, based on your assessment. 
@@ -154,6 +125,26 @@ Your feedback on the Defender TI integration with Copilot for Security helps wit
 
 For each feedback button, you can provide more information in the next dialog box that appears. Whenever possible, and when the result is **Needs improvement**, write a few words explaining what can be done to improve the outcome. If you entered prompts specific to Defender TI and the results aren't related, then include that information.
 
+## Using Copilot for Security on Defender TI in Microsoft Defender XDR
+
+Copilot for Security customers gain for each of their authenticated Copilot users access to Defender TI within the Microsoft Defender XDR portal. To ensure that you have access to Copilot, see the [Copilot for Security purchase and licensing information](/security-copilot/faq-security-copilot). 
+
+Once you have access to Copilot for Security, the key features discussed in the next section become accessible in the following *Threat intelligence* sections of the Microsoft Defender XDR portal: 
+- Threat analytics
+- Intel profiles
+- Intel explorer
+- Intel projects
+
+### Key features
+Microsoft Defender XDR brings Copilot for Security’s capability to look up threat intelligence into the portal, letting security teams understand, prioritize, and take action on threat intelligence information immediately.
+
+You can ask about a threat actor, attack campaign, or any other threat intelligence that you want to know more about, and Copilot generates responses based on Threat analytics reports, intel profiles and articles, and other Defender TI content. You can also select any of the available built-in prompts that lets you do the following:
+-	[Summarize](using-copilot-threat-intelligence-defender-xdr.md#summarize-the-latest-threats-related-to-your-organization) the latest threats related to your organization
+-	[Prioritize](using-copilot-threat-intelligence-defender-xdr.md#prioritize-which-threats-to-focus-on) which threats to focus on based on your environment's highest exposure level to these threats
+-	[Ask](using-copilot-threat-intelligence-defender-xdr.md#ask-about-the-threat-actors-are-targeting-your-industry) about the threat trends related to your industry
+
+[Learn more about using Copilot for Security for threat intelligence in Microsoft Defender XDR](using-copilot-threat-intelligence-defender-xdr.md)
+
 ## Data processing and privacy
 
 When you interact with Copilot for Security to get Defender TI data, Copilot pulls that data from Defender TI. The prompts, the data retrieved, and the output shown in the prompt results are processed and stored within the Copilot service. [Learn more about privacy and data security in Microsoft Copilot for Security](/security-copilot/privacy-data-security)
@@ -161,3 +152,4 @@ When you interact with Copilot for Security to get Defender TI data, Copilot pul
 ### See also
 - [What is Microsoft Copilot for Security?](/security-copilot/microsoft-security-copilot)
 - [Privacy and data security in Microsoft Copilot for Security](/security-copilot/privacy-data-security)
+- [Using Copilot for Security for threat intelligence in Microsoft Defender XDR](using-copilot-threat-intelligence-defender-xdr.md)
