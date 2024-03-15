@@ -55,7 +55,7 @@ End users also need to take steps to install Microsoft Defender for Endpoint on 
 
 2. **Verify that the APP connector is enabled in Intune portal**. <br> In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Endpoint Security** > **Microsoft Defender for Endpoint** and ensure that the Connection status is enabled.
 
-  :::image type="content" source="images/app-settings.png" alt-text="The application settings" lightbox="images/app-settings.png":::
+  :::image type="content" source="media/app-settings.png" alt-text="The application settings" lightbox="media/app-settings.png":::
 
 ### Create an app protection policy
 
