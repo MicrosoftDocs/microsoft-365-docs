@@ -47,7 +47,7 @@ The Device inventory page lists all the devices in each tenant that you have acc
 
 You can navigate to the device inventory page by selecting **Assets > Devices** in Microsoft Defender XDR's navigation menu.
 
-   :::image type="content" source="../../media/multi-tenant/devices/devices-device-inventory.png" alt-text="Screenshot of the Microsoft Defender XDR tenants list in the Devices page" lightbox="../../media/multi-tenant/devices/devices-device-inventory.png":::
+   :::image type="content" source="../../media/multi-tenant/devices/devices-device-inventory.png" alt-text="Screenshot of the Microsoft Defender XDR Devices page for multitenant management" lightbox="../../media/multi-tenant/devices/devices-device-inventory.png":::
 
 The total number of devices, critical assets, high risk devices, and internet-facing devices for all tenants are shown at the top of the page.
 
@@ -71,6 +71,6 @@ You can search a specific device with the search function. You can sort and filt
 
 To manage a device, select a specific device from the list. Device management tasks like managing tags, device exclusion, and reporting inaccuracy becomes available at the top of the device list.
 
-   :::image type="content" source="../../media/multi-tenant/devices/devices-choose-device.png" alt-text="Screenshot of the Microsoft Defender XDR tenants list in the Devices page" lightbox="../../media/multi-tenant/devices/devices-choose-device.png":::
+   :::image type="content" source="../../media/multi-tenant/devices/devices-choose-device.png" alt-text="Screenshot of choosing a device from the device inventory list" lightbox="../../media/multi-tenant/devices/devices-choose-device.png":::
 
 Selecting a device by clicking on the device name opens the device page in a new tab. You can further apply other actions on the device in the new tab.
