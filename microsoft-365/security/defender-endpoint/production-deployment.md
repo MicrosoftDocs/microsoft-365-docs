@@ -49,7 +49,7 @@ Checking for the license state and whether it was properly provisioned can be do
 
 1. To view your licenses, go to the **Microsoft Azure portal** and navigate to the [Microsoft Azure portal license section](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products).
 
-   :::image type="content" source="images/atp-licensing-azure-portal.png" alt-text="The Azure Licensing page" lightbox="images/atp-licensing-azure-portal.png":::
+   :::image type="content" source="media/atp-licensing-azure-portal.png" alt-text="The Azure Licensing page" lightbox="media/atp-licensing-azure-portal.png":::
 
 1. Alternately, in the admin center, navigate to **Billing** \> **Subscriptions**.
 
@@ -65,7 +65,7 @@ To gain access into which licenses are provisioned to your company, and to check
 
 2. Clicking on the **Partner portal** link will open the **Admin on behalf** option and will give you access to the customer admin center.
 
-   :::image type="content" source="images/atp-O365-admin-portal-customer.png" alt-text="The Office 365 admin portal" lightbox="images/atp-O365-admin-portal-customer.png":::
+   :::image type="content" source="media/atp-O365-admin-portal-customer.png" alt-text="The Office 365 admin portal" lightbox="media/atp-O365-admin-portal-customer.png":::
 
 ## Tenant Configuration
 
