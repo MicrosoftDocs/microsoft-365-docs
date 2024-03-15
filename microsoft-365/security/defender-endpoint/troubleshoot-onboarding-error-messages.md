@@ -70,7 +70,7 @@ For more information, see, [**Assign user access to the portal**](/windows/threa
 
 If the portal dashboard and other sections show an error message such as "Data currently isn't available":
 
-:::image type="content" source="images/atp-data-not-available.png" alt-text="The data unavailability notification message" lightbox="images/atp-data-not-available.png":::
+:::image type="content" source="media/atp-data-not-available.png" alt-text="The data unavailability notification message" lightbox="media/atp-data-not-available.png":::
 
 You'll need to allow the `security.windows.com` and all subdomains under it on your web browser. For example, `*.security.windows.com`.
 
