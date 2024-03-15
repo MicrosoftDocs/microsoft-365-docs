@@ -342,11 +342,11 @@ You might also need to check the following:
 
 - In **Services**, check if the **Microsoft Monitoring Agent** is running on the server. For example,
 
-  :::image type="content" source="images/atp-services.png" alt-text="The services" lightbox="images/atp-services.png":::
+  :::image type="content" source="media/atp-services.png" alt-text="The services" lightbox="media/atp-services.png":::
 
 - In **Microsoft Monitoring Agent** \> **Azure Log Analytics (OMS)**, check the Workspaces and verify that the status is running.
 
-  :::image type="content" source="images/atp-mma-properties.png" alt-text="The Microsoft Monitoring Agent Properties" lightbox="images/atp-mma-properties.png":::
+  :::image type="content" source="media/atp-mma-properties.png" alt-text="The Microsoft Monitoring Agent Properties" lightbox="media/atp-mma-properties.png":::
 
 - Check to see that devices are reflected in the **Devices list** in the portal.
 
