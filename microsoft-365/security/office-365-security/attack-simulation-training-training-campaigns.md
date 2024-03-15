@@ -428,19 +428,7 @@ To close the Training campaign report, select :::image type="icon" source="../..
 
 ### Report tab
 
-The **Report** tab shows the following information:
-
-- **Training completion classification** section.
-
-- **Training completion summary** section:
-  - Each Training module in the Training campaign is shown with a bar graph and a fraction that shows how many people have completed the module (number of users / total number of users).
-  - From the previous data, the top of the section shows the following statistics:
-    - The percentage of users who completed all modules in the campaign.
-    - The percentage of users who completed some of the modules in the campaign.
-    - The percentage of users who haven't started any of the modules in the campaign.
-
-- **All user activity** section:
-  - **Successfully received training notification**: A bar graph and a fraction that shows how main people received notifications for the modules in the campaign.
+For a description of what's on the **Report** tab for Training campaigns, see [Simulation report for Training campaigns](attack-simulation-training-insights.md#simulation-report-for-training-campaigns)
 
 ### Users tab
 

@@ -69,7 +69,7 @@ When you're finished on the **Name simulation** page, select **Next**.
 
 ## Select a payload and login page
 
-On the **Select payload and login page** page, you need to select an existing payload or create a new payload.
+On the **Select payload and login page** page, you need to select an existing payload or create a new payload to use..
 
 For the **Credential Harvest** or **Link in Attachment** social engineering techniques, you can also view the login page that's used in the payload, select a different login page to use, or create a new login page to use.
 
@@ -210,7 +210,7 @@ On the **Target users** page, select who receives the simulation. Use the follow
       The number of results appears in the **Selected (0/x) users** label.
 
       > [!TIP]
-      > Selecting **Add filters** clears and replaces any results the **User list** section with the **Filter users by categories**.
+      > Selecting **Add filters** clears and replaces any results the **User list** section with **Filter users by categories**.
 
       When you have a list of users or groups in the **User list** section, select some or all of the results by selecting the check box next to the **Name** column. The number of selected results appears in the **Selected (y/x) users** label.
 
@@ -294,7 +294,7 @@ Use the following options on the page to assign trainings as part of the simulat
       - **Assign training for me (Recommended)**: This is the default value. We assign training based on a user's previous simulation and training results.
       - **Select training courses and modules myself**: If you select this value, the next step in the wizard is **Training assignment** where you find and select trainings. The steps are described in the [Training assignment](#training-assignment) subsection.
     - **Due date** section: In **Select a training due date**, choose one of the following values:
-      - **30 days after simulation ends**: This is the default value.
+      - **30 days after simulation ends** (this is the default value)
       - **15 days after simulation ends**
       - **7 days after simulation ends**
 
@@ -304,7 +304,7 @@ Use the following options on the page to assign trainings as part of the simulat
     - **Custom training description**
     - **Custom training duration (in minutes)**: The default value is 0, which means there's no specified duration for the training.
     - **Due date** section: In **Select a training due date**, choose one of the following values:
-      - **30 days after simulation ends**: This is the default value.
+      - **30 days after simulation ends** (this is the default value)
       - **15 days after simulation ends**
       - **7 days after simulation ends**
 
@@ -371,7 +371,7 @@ Select one of the following options:
 
   - **Tenant landing pages** tab: Contains any custom landing pages that you created. To create a new landing page, select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Create new**. The creation steps are the same as at **Attack simulation training** \> **Content library** tab \> **Phish landing pages** \> **Tenant landing pages** tab. For instructions, see [Create landing pages](attack-simulation-training-landing-pages.md#create-landing-pages).
 
-  The following information is shown for each landing page. You can sort the landing pages by clicking on an available column header. Select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns** to change the columns that are shown. The default columns are marked with an asterisk (<sup>\*</sup>):
+  On both tabs, the following information is shown for each landing page. You can sort the landing pages by clicking on an available column header. Select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns** to change the columns that are shown. The default columns are marked with an asterisk (<sup>\*</sup>):
 
   - **Name**<sup>\*</sup>
   - **Language**<sup>\*</sup>: If the landing page contains multiple translations, the first two languages are shown directly. To see the remaining languages, hover over the numeric icon (for example, **+10**).
@@ -392,6 +392,9 @@ Select one of the following options:
 
   - The **Preview** tab shows what the landing page looks like to users.
   - The **Details** tab shows the properties of the landing page.
+
+  > [!TIP]
+  > To see details about other landing pages without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
 
   When you're finished in the landing page details flyout, select **Close**.
 
@@ -414,7 +417,7 @@ On the **Select end user notification** page, select from the following notifica
   - **Microsoft default training assignment notification**
   - **Microsoft default training reminder notification**
 
-  Select the default language to use in **Select default language**. The available values are: **Chinese (Simplified)**, **Chinese (Traditional, Taiwan)**, **English**, **French**, **German**, **Italian**, **Japanese**, **Korean**, **Portuguese**, **Russian**, **Spanish**, **Dutch**, **Polish**, **Arabic**, **Finnish**, **Greek**, **Hungarian**, **Indonesian**, **Norwegian Bokmål**, **Romanian**, **Slovak**, **Swedish**, **Thai**, **Turkish**, **Vietnamese**, **Catalan**, **Croatian, or **Slovenian**.
+  Select the default language to use in **Select default language**. The available values are: **Chinese (Simplified)**, **Chinese (Traditional, Taiwan)**, **English**, **French**, **German**, **Italian**, **Japanese**, **Korean**, **Portuguese**, **Russian**, **Spanish**, **Dutch**, **Polish**, **Arabic**, **Finnish**, **Greek**, **Hungarian**, **Indonesian**, **Norwegian Bokmål**, **Romanian**, **Slovak**, **Swedish**, **Thai**, **Turkish**, **Vietnamese**, **Catalan**, **Croatian**, or **Slovenian**.
 
   For each notification, the following information is available:
 
@@ -530,7 +533,7 @@ When you're finished on the **Training reminder notification** page, select **Ne
 
 You have the following options in the **Delivery preferences** section for positive reinforcement notifications:
 
-- Don't use positive reinforcement notifications: Select **Do not deliver** section. There's nothing else to configure on the page, so you go to the [Launch details](#configure-the-simulation-launch-details) page when you select **Next**.
+- Don't use positive reinforcement notifications: Select **Do not deliver** . There's nothing else to configure on the page, so you go to the [Launch details](#configure-the-simulation-launch-details) page when you select **Next**.
 
 - Use an existing positive reinforcement notification: Select one of the remaining values:
   - **Deliver after the user reports a phish and campaign ends**
@@ -673,7 +676,7 @@ To close the simulation report, select :::image type="icon" source="../../media/
 
 ### Report tab
 
-For a description of what's on the **Report** tab, see [Attack simulation report](attack-simulation-training-insights.md#attack-simulation-report).
+For a description of what's on the **Report** tab for simulations, see [Simulation report for simulations](attack-simulation-training-insights.md#simulation-report-for-simulations).
 
 ### Users tab
 

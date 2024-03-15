@@ -13,7 +13,7 @@ ms.collection:
 description: Admins can learn how to use payload automations (payload harvesting) to collect and launch automated simulations for Attack simulation training in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 search.appverid: met150
-ms.date: 6/21/2023
+ms.date: 3/14/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison" target="_blank">Microsoft Defender for Office 365 plan 2</a>
 ---
@@ -22,13 +22,13 @@ appliesto:
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2, payload automations (also known as _payload harvesting_) collect information from real-world phishing attacks that were reported by users in your organization. Although the numbers of these messages are likely low in your organization, you can specify the conditions to look for in phishing attacks (for example, recipients, social engineering technique, sender information, etc.). Attack simulation training then mimics the messages and payloads used in the attack to automatically launch harmless simulations to targeted users.
+In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2, payload automations (also known as _payload harvesting_) collect information from real-world phishing attacks that were reported by users in your organization. You can specify the conditions to look for in phishing attacks (for example, recipients, social engineering technique, or sender information). Attack simulation training then mimics the messages and payloads used in the attack to automatically launch harmless simulations to targeted users.
 
 For getting started information about Attack simulation training, see [Get started using Attack simulation training](attack-simulation-training-get-started.md).
 
 To see any existing payload automations that you created, open the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Automations** tab \> and then select **Payload automations**. To go directly to the **Automations** tab where you can select **Payload automations**, use <https://security.microsoft.com/attacksimulator?viewid=automations>.
 
-The following information is shown for each payload automation<sup>\*</sup>:
+The following information is shown for each payload automation. You can sort the payload automations by clicking on an available column header.
 
 - **Automation name**
 - **Type**: The value is **Payload**.
@@ -36,17 +36,13 @@ The following information is shown for each payload automation<sup>\*</sup>:
 - **Last modified**
 - **Status**: The value is **Ready** or **Draft**.
 
-<sup>\*</sup> To see all columns, you likely need to do one or more of the following steps:
-
-- Horizontally scroll in your web browser.
-- Narrow the width of appropriate columns.
-- Remove columns from the view.
-- Zoom out in your web browser.
-
-When you select a payload automation from the list, a details flyout appears with the following information:
-
-- **General** tab: Displays basic information about the payload automation.
-- **Run history** tab: This tab is available only for payload automations with the **Status** value **Ready**.
+> [!TIP]
+> To see all columns, you likely need to do one or more of the following steps:
+>
+> - Horizontally scroll in your web browser.
+> - Narrow the width of appropriate columns.
+> - Remove columns from the view.
+> - Zoom out in your web browser.
 
 ## Create payload automations
 
@@ -61,7 +57,7 @@ To create a payload automation, do the following steps:
    > [!NOTE]
    > At any point after you name the payload automation during the new payload automation wizard, you can select **Save and close** to save your progress and continue configuring the payload automation later. The incomplete payload automation has the **Status** value **Draft** in **Payload automations** on the **Automations** tab. You can pick up where you left off by selecting the payload automation and clicking :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png" border="false"::: **Edit automation**.
    >
-   > Currently, payload harvesting is enabled in GCC environments due to data gathering restrictions.
+   > Currently, payload harvesting isn't enabled in GCC environments due to data gathering restrictions.
 
 3. On the **Automation name** page, configure the following settings:
 
@@ -82,7 +78,7 @@ To create a payload automation, do the following steps:
      - **Malware Attachment**
      - **Link in Attachment**
      - **Link to Malware**
-     - **Phish training**
+     - **How-to Guide**
    - **Specific sender domain**: In the box that appears, enter a sender email domain value (for example, contoso.com).
    - **Specific sender name**: In the box that appears, enter a sender name value.
    - **Specific sender email**: In the box that appears, enter a sender email address.
@@ -118,11 +114,11 @@ To turn off a payload automation, select it from the list by clicking the check 
 
 ## Modify payload automations
 
-You can only modify payload automations that are turned off.
+You can only modify payload automations with the **Status** value **Draft** or that are turned off.
 
 To modify an existing payload automation on the **Payload automations** page, do one of the following steps:
 
-- Select the payload automation from the list by clicking the check box next to the name. Select the :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png" border="false"::: **Edit automation** action that appears.
+- Select the payload automation from the list by selecting the check box next to the name. Select the :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png" border="false"::: **Edit automation** action that appears.
 - Select the payload automation from the list by clicking anywhere in the row except the check box. In the details flyout that opens, on the **General** tab, select **Edit** in the **Name**, **Description**, or **Run conditions** sections.
 
 The payload automation wizard opens with the settings and values of the selected payload automation. The steps are the same as described in the [Create payload automations](#create-payload-automations) section.
@@ -130,6 +126,24 @@ The payload automation wizard opens with the settings and values of the selected
 ## Remove payload automations
 
 To remove a payload automation, select the payload automation from the list by clicking the check box. Select the :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png" border="false"::: **Delete** action that appears, and then select **Confirm** in the dialog.
+
+## View payload automation details
+
+For payload automations with the **Status** value **Ready**, select the payload from the **Payload automations** page by clicking anywhere in the row other than the check box next to the name. The details flyout that opens contains the following information:
+
+- The payload automation name and the number of items collected.
+- **General** tab:
+  - **Last modified**
+  - **Type**: The value is **Payload**.
+  - **Name**, **Description**, and **Run conditions** sections: Select **Edit** to open the payload automation wizard on the related page.
+- **Run history** tab: This tab is available only for payload automations with the **Status** value **Ready**.
+
+  Shows information about the run history of simulations that used the payload automation.
+
+  :::image type="content" source="../../media/attack-sim-training-payload-automations-details-run-history.png" alt-text="The Run history tab in the details flyout of a payload automation." lightbox="../../media/attack-sim-training-payload-automations-details-run-history.png":::
+
+> [!TIP]
+> To see details about other payload automations without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
 
 ## Related links
 
