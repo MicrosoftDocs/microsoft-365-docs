@@ -42,9 +42,9 @@ There are three ways you can create indicators for files:
 
 ## Before you begin
 
-It's important to understand the following prerequisites prior to creating indicators for files:
+Understand the following prerequisites before you create indicators for files:
 
-- This feature is available if your organization uses **Microsoft Defender Antivirus (in active mode)** 
+- This feature is available if your organization uses **Microsoft Defender Antivirus** (in active mode) 
 
 - [Behavior Monitoring is enabled](/microsoft-365/security/defender-endpoint/behavior-monitor)
 
@@ -60,7 +60,7 @@ It's important to understand the following prerequisites prior to creating indic
 
    Enable file hash computation feature
   
-   Set it to "Enabled"
+   Set it to **Enabled**
   
     > [!NOTE]
     > Windows Server 2016 and Windows Server 2012 R2 will need to be onboarded using the instructions in [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) for this feature to work. 
