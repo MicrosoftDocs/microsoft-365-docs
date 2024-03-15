@@ -511,7 +511,7 @@ These steps are applicable on macOS 11 (Big Sur) or later.
 
 14. Select **Done**.
 
-    :::image type="content" source="images/ba44cdb77e4781aa8b940fb83e3c21f7.png" alt-text="The completion notification regarding the configuration settings." lightbox="images/ba44cdb77e4781aa8b940fb83e3c21f7.png":::
+    :::image type="content" source="media/ba44cdb77e4781aa8b940fb83e3c21f7.png" alt-text="The completion notification regarding the configuration settings." lightbox="media/ba44cdb77e4781aa8b940fb83e3c21f7.png":::
 
 ## Step 6: Grant full disk access to Microsoft Defender for Endpoint
 
@@ -529,7 +529,7 @@ These steps are applicable on macOS 11 (Big Sur) or later.
     - Distribution method: Install Automatically
     - Level: Computer level
 
-    :::image type="content" source="images/ba3d40399e1a6d09214ecbb2b341923f.png" alt-text="The configuration setting in general." lightbox="images/ba3d40399e1a6d09214ecbb2b341923f.png":::
+    :::image type="content" source="media/ba3d40399e1a6d09214ecbb2b341923f.png" alt-text="The configuration setting in general." lightbox="media/ba3d40399e1a6d09214ecbb2b341923f.png":::
     
 
 4. In **Configure Privacy Preferences Policy Control** select **Configure**.
@@ -546,7 +546,7 @@ These steps are applicable on macOS 11 (Big Sur) or later.
 
 6. Select **+ Add**.
 
-   :::image type="content" source="images/bd93e78b74c2660a0541af4690dd9485.png" alt-text="The configuration setting add system policy all files option." lightbox="images/bd93e78b74c2660a0541af4690dd9485.png":::
+   :::image type="content" source="media/bd93e78b74c2660a0541af4690dd9485.png" alt-text="The configuration setting add system policy all files option." lightbox="media/bd93e78b74c2660a0541af4690dd9485.png":::
 
     - Under App or service: Set to **SystemPolicyAllFiles**
 
@@ -741,7 +741,7 @@ Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint 
 
 4. Select your computer and click the gear icon at the top, then select **Computer Management**.
 
-   :::image type="content" source="images/b6d671b2f18b89d96c1c8e2ea1991242.png" alt-text="The configuration settings - computer management." lightbox="images/b6d671b2f18b89d96c1c8e2ea1991242.png":::
+   :::image type="content" source="media/b6d671b2f18b89d96c1c8e2ea1991242.png" alt-text="The configuration settings - computer management." lightbox="media/b6d671b2f18b89d96c1c8e2ea1991242.png":::
 
 5. In **Packages**, select **+ New**.
    :::image type="content" source="media/57aa4d21e2ccc65466bf284701d4e961.png" alt-text="The bird Description for an automatically generated package." lightbox="media/57aa4d21e2ccc65466bf284701d4e961.png":::
