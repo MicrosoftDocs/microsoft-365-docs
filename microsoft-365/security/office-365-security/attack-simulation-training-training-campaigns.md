@@ -65,7 +65,7 @@ Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png"::: *
 
 To find a Training campaign in the list, type part of the campaign name in the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png"::: **Search** box and then press the ENTER key.
 
-To see details about a Training campaign, see the [View Training campaign details](#view-training-campaign-details) section.
+To see details about in-progress or completed Training campaigns, see the [View Training campaign reports](#view-training-campaign-reports) section.
 
 ## Create Training campaigns
 
