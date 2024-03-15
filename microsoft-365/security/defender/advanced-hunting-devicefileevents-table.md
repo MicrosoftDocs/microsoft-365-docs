@@ -59,7 +59,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `InitiatingProcessAccountDomain` | `string` | Domain of the account that ran the process responsible for the event |
 | `InitiatingProcessAccountName` | `string` | User name of the account that ran the process responsible for the event |
 | `InitiatingProcessAccountSid` | `string` | Security Identifier (SID) of the account that ran the process responsible for the event |
-| `InitiatingProcessAccountUpn` | `string` | User principal name (UPN) of the account that ran the process responsible for the event |
+| `InitiatingProcessAccountUpn` | `string` | User principal name (UPN) of the account that ran the process responsible for the event. "* If use Entra registered devices, may display Entra user UPN by MDE/EDLP functions." |
 | `InitiatingProcessAccountObjectId` | `string` | Microsoft Entra object ID of the user account that ran the process responsible for the event |
 | `InitiatingProcessMD5` | `string` | MD5 hash of the process (image file) that initiated the event |
 | `InitiatingProcessSHA1` | `string` | SHA-1 of the process (image file) that initiated the event |
