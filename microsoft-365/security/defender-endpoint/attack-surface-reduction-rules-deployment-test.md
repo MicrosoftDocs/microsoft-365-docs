@@ -43,7 +43,7 @@ In this section of the attack surface reduction rules deployment guide, you'll l
 
 Begin your attack surface reduction rules deployment with ring 1.
 
-> :::image type="content" source="images/asr-rules-testing-steps.png" alt-text="The Microsoft Defender for Endpoint attack surface reduction (ASR rules) test steps. Audit attack surface reduction rules, configure ASR rules exclusions. Configure ASR rules Intune. ASR rules exclusions. ASR rules event viewer." lightbox="images/asr-rules-testing-steps.png":::
+> :::image type="content" source="media/asr-rules-testing-steps.png" alt-text="The Microsoft Defender for Endpoint attack surface reduction (ASR rules) test steps. Audit attack surface reduction rules, configure ASR rules exclusions. Configure ASR rules Intune. ASR rules exclusions. ASR rules event viewer." lightbox="media/asr-rules-testing-steps.png":::
 
 ## Step 1: Test attack surface reduction rules using Audit
 
