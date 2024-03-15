@@ -30,19 +30,15 @@ Insights and reports are available in the following locations on the **Attack si
 - Insights:
   - The **Overview** tab at <https://security.microsoft.com/attacksimulator?viewid=overview>.
   - The **Reports** tab at <https://security.microsoft.com/attacksimulator?viewid=reports>.
+- Reports:
+  - The **Attack simulation report** page at <https://security.microsoft.com/attacksimulationreport>:
+    - [Training efficacy tab](#training-efficacy-tab-for-the-attack-simulation-report)
+    - [User coverage tab](#user-coverage-tab-for-the-attack-simulation-report)
+    - [Training completion tab](#training-completion-tab-for-the-attack-simulation-report)
+    - [Repeat offenders tab](#repeat-offenders-tab-for-the-attack-simulation-report)
+  - The reports for in-progress and completed simulations and training campaigns: For more information, see [Attack simulation report](#attack-simulation-report).
 
-
-
-- Reports: The **Attack simulation report** page at <https://security.microsoft.com/attacksimulationreport>:
-  - [Training efficacy tab](#training-efficacy-tab-for-the-attack-simulation-report)
-  - [User coverage tab](#user-coverage-tab-for-the-attack-simulation-report)
-  - [Training completion tab](#training-completion-tab-for-the-attack-simulation-report)
-  - [Repeat offenders tab](#repeat-offenders-tab-for-the-attack-simulation-report)
-
-
-
-
-The rest of this article describes the available information.
+The rest of this article describes the reports and insights for Attack simulation training.
 
 For getting started information about Attack simulation training, see [Get started using Attack simulation training](attack-simulation-training-get-started.md).
 
@@ -68,7 +64,7 @@ The rest of this section describes the information that's available on the **Ove
 
 ### Recent simulations card
 
-The **Recent simulations** card on the **Overview** tab shows the last three simulations that you've created or run in your organization.
+The **Recent simulations** card on the **Overview** tab shows the last three simulations that you created or ran in your organization.
 
 You can select a simulation to view details.
 
@@ -88,7 +84,7 @@ Selecting **Launch now** starts the new simulation wizard with the specified sim
 
 ### Simulation coverage card
 
-The **Simulation coverage** card on the **Overview** and **Reports** tabs shows the percentage of users in your organization who have received a simulation (**Simulated users**) vs. users who haven't received a simulation (**Non-simulated users**). You can hover over a section in the chart to see the actual number of users in each category.
+The **Simulation coverage** card on the **Overview** and **Reports** tabs shows the percentage of users in your organization who received a simulation (**Simulated users**) vs. users who didn't receive a simulation (**Non-simulated users**). You can hover over a section in the chart to see the actual number of users in each category.
 
 Selecting **View simulation coverage report** takes you to the [User coverage tab for the Attack simulation report](#user-coverage-tab-for-the-attack-simulation-report).
 
@@ -265,7 +261,7 @@ The simulation report shows the details of in-progress or completed simulations 
 
   For more information, see [View Training campaign reports](attack-simulation-training-training-campaigns.md#view-training-campaign-reports).
 
-The report page that opens contains **Report**, **Users** and **Details** tabs that contain information about the simulation. The rest of this section describes the insights and reports that are available on the **Report** tab.
+The report page that opens contains **Report**, **Users, and **Details** tabs that contain information about the simulation. The rest of this section describes the insights and reports that are available on the **Report** tab.
 
 The sections on the **Report** tab for a simulation are described in the following subsections.
 
@@ -298,7 +294,7 @@ Select **View users who reported** to go to the [Users tab](attack-simulation-tr
 
 #### All user activity section in the report for simulations
 
-The **All user activity** section on **Report** tab** for a simulation shows numbers for the possible outcomes of the simulation. The information that's shown varies based on the simulation type. For example:
+The **All user activity** section on **Report** tab** for a simulation shows numbers for the possible outcomes of the simulation. The information varies based on the simulation type. For example:
 
 - **Clicked message link** or **Attachment link clicked** or **Attachment opened**
 - **Supplied credentials**
@@ -347,7 +343,7 @@ The **First & average instance** section on **Report** tab** for a simulation sh
 
 #### Recommendations section in the report for simulations
 
-The **Recommendations** section  section on **Report** tab** for a simulation shows recommendations for using Attack simulation training to help secure your organization.
+The **Recommendations** section on **Report** tab** for a simulation shows recommendations for using Attack simulation training to help secure your organization.
 
 :::image type="content" source="../../media/attack-sim-report-simulation-report-tab-recommendations.png" alt-text="The Recommendations section on the Report tab of a simulation report for a simulation." lightbox="../../media/attack-sim-report-simulation-report-tab-recommendations.png":::
 
