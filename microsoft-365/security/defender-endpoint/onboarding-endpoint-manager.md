@@ -87,7 +87,7 @@ In this section, we create a test group to assign your configurations on.
 3. Enter details and create a new group.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/b1e0206d675ad07db218b63cd9b9abc3.png" alt-text="The Microsoft Intune admin center2" lightbox="images/b1e0206d675ad07db218b63cd9b9abc3.png":::
+    > :::image type="content" source="media/b1e0206d675ad07db218b63cd9b9abc3.png" alt-text="The Microsoft Intune admin center2" lightbox="media/b1e0206d675ad07db218b63cd9b9abc3.png":::
 
 4. Add your test user or device.
 
@@ -135,7 +135,7 @@ Then, you continue by creating several different types of endpoint security poli
 5. Select settings as required, then select  **Next**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/cea7e288b5d42a9baf1aef0754ade910.png" alt-text="The Microsoft Intune admin center6" lightbox="images/cea7e288b5d42a9baf1aef0754ade910.png":::
+    > :::image type="content" source="media/cea7e288b5d42a9baf1aef0754ade910.png" alt-text="The Microsoft Intune admin center6" lightbox="media/cea7e288b5d42a9baf1aef0754ade910.png":::
 
     > [!NOTE]
     > In this instance, this has been auto populated as Defender for Endpoint has already been integrated with Intune. For more information on the integration, see [Enable Microsoft Defender for Endpoint in Intune](/mem/intune/protect/advanced-threat-protection-configure#to-enable-microsoft-defender-atp).
@@ -265,7 +265,7 @@ Then, you continue by creating several different types of endpoint security poli
 4. Select **Windows 10 and Later - Web protection > Create**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/cd7b5a1cbc16cc05f878cdc99ba4c27f.png" alt-text="The Microsoft Intune admin center26" lightbox="images/cd7b5a1cbc16cc05f878cdc99ba4c27f.png":::
+    > :::image type="content" source="media/cd7b5a1cbc16cc05f878cdc99ba4c27f.png" alt-text="The Microsoft Intune admin center26" lightbox="media/cd7b5a1cbc16cc05f878cdc99ba4c27f.png":::
 
 5. Enter a name and description, then select  **Next**.
 
@@ -347,7 +347,7 @@ To confirm that the configuration policy is applied to your test device, follow 
 1. Before applying the configuration, the Defender for Endpoint Protection service shouldn't be started.
 
     > [!div class="mx-imgBorder"]
-    > [![Image of Services panel1.](images/b418a232a12b3d0a65fc98248dbb0e31.png)](images/b418a232a12b3d0a65fc98248dbb0e31.png#lightbox)
+    > [![Image of Services panel1.](media/b418a232a12b3d0a65fc98248dbb0e31.png)](media/b418a232a12b3d0a65fc98248dbb0e31.png#lightbox)
 
 2. After the configuration is applied, the Defender for Endpoint Protection service should be started.
 
@@ -389,7 +389,7 @@ To confirm that the configuration policy is applied to your test device, follow 
     >
     > AttackSurfaceReductionRules_Ids:
 
-    :::image type="content" source="images/cb0260d4b2636814e37eee427211fe71.png" alt-text="The command line-1" lightbox="images/cb0260d4b2636814e37eee427211fe71.png":::
+    :::image type="content" source="media/cb0260d4b2636814e37eee427211fe71.png" alt-text="The command line-1" lightbox="media/cb0260d4b2636814e37eee427211fe71.png":::
 
 3. After applying the policy on a test device, open a PowerShell Windows and type `Get-MpPreference`.
 
@@ -411,6 +411,6 @@ To confirm that the configuration policy is applied to your test device, follow 
 
 4. You should see a response with a 1 as shown in the following image:
 
-   :::image type="content" source="images/c06fa3bbc2f70d59dfe1e106cd9a4683.png" alt-text="The command line-4" lightbox="images/c06fa3bbc2f70d59dfe1e106cd9a4683.png":::
+   :::image type="content" source="media/c06fa3bbc2f70d59dfe1e106cd9a4683.png" alt-text="The command line-4" lightbox="media/c06fa3bbc2f70d59dfe1e106cd9a4683.png":::
    
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
