@@ -165,7 +165,7 @@ Note that you must use exact `com.microsoft.wdav` as the **Preference Domain**, 
 
 9. Select **Add**, then select **Save**.
 
-   :::image type="content" source="images/cf30438b5512ac89af1d11cbf35219a6.png" alt-text="The page on which you can add the Configuration settings." lightbox="images/cf30438b5512ac89af1d11cbf35219a6.png":::
+   :::image type="content" source="media/cf30438b5512ac89af1d11cbf35219a6.png" alt-text="The page on which you can add the Configuration settings." lightbox="media/cf30438b5512ac89af1d11cbf35219a6.png":::
 
    :::image type="content" source="media/6f093e42856753a3955cab7ee14f12d9.png" alt-text="The page on which you can save the Configuration settings." lightbox="media/6f093e42856753a3955cab7ee14f12d9.png":::
 
@@ -372,7 +372,7 @@ All you need to do to have updates is to download an updated schema, edit existi
 
 15. Select **Add**, then select **Save**.
 
-    :::image type="content" source="images/cf30438b5512ac89af1d11cbf35219a6.png" alt-text="The configuration settings addsav." lightbox="images/cf30438b5512ac89af1d11cbf35219a6.png":::
+    :::image type="content" source="media/cf30438b5512ac89af1d11cbf35219a6.png" alt-text="The configuration settings addsav." lightbox="media/cf30438b5512ac89af1d11cbf35219a6.png":::
 
     :::image type="content" source="media/6f093e42856753a3955cab7ee14f12d9.png" alt-text="The notification of configuration settings." lightbox="media/6f093e42856753a3955cab7ee14f12d9.png":::
 
@@ -395,7 +395,7 @@ These steps are applicable on macOS 11 (Big Sur) or later.
    - **Distribution Method**: Install Automatically *(default)*
    - **Level**: Computer Level *(default)*
 
-   :::image type="content" source="images/c9820a5ff84aaf21635c04a23a97ca93.png" alt-text="The new macOS configuration profile page." lightbox="images/c9820a5ff84aaf21635c04a23a97ca93.png":::
+   :::image type="content" source="media/c9820a5ff84aaf21635c04a23a97ca93.png" alt-text="The new macOS configuration profile page." lightbox="media/c9820a5ff84aaf21635c04a23a97ca93.png":::
 
     - Tab **Notifications**, click **Add**, and enter the following values:
         - **Bundle ID**: `com.microsoft.wdav.tray`
