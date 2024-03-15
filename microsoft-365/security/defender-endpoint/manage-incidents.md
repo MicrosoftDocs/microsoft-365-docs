@@ -36,7 +36,7 @@ Managing incidents is an important part of every cybersecurity operation. You ca
 
 Selecting an incident from the **Incidents queue** brings up the **Incident management pane** where you can open the incident page for details.
 
-:::image type="content" source="images/atp-incidents-mgt-pane-updated.png" alt-text="The incidents management pane" lightbox="images/atp-incidents-mgt-pane-updated.png":::
+:::image type="content" source="media/atp-incidents-mgt-pane-updated.png" alt-text="The incidents management pane" lightbox="media/atp-incidents-mgt-pane-updated.png":::
 
 You can assign incidents to yourself, change the status and classification, rename, or comment on them to keep track of their progress.
 

@@ -46,7 +46,7 @@ Potential reasons:
 For both cases, you should contact Microsoft support at [General Microsoft Defender for Endpoint Support](https://support.microsoft.com/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636419533611396913) or
 [Volume license support](https://www.microsoft.com/licensing/servicecenter/Help/Contact.aspx).
 
-:::image type="content" source="images/atp-no-subscriptions-found.png" alt-text="The No subscriptions found page" lightbox="images/atp-no-subscriptions-found.png":::
+:::image type="content" source="media/atp-no-subscriptions-found.png" alt-text="The No subscriptions found page" lightbox="media/atp-no-subscriptions-found.png":::
 
 ## Your subscription has expired
 
@@ -64,7 +64,7 @@ You can choose to renew or extend the license at any point in time. When accessi
 If you receive a **You are not authorized to access the portal**, be aware that Microsoft Defender for Endpoint is a security monitoring, incident investigation and response product, and as such, access to it is restricted and controlled by the user.
 For more information, see, [**Assign user access to the portal**](/windows/threat-protection/windows-defender-atp/assign-portal-access-windows-defender-advanced-threat-protection).
 
-:::image type="content" source="images/atp-not-authorized-to-access-portal.png" alt-text="The access disallowed notification message" lightbox="images/atp-not-authorized-to-access-portal.png":::
+:::image type="content" source="media/atp-not-authorized-to-access-portal.png" alt-text="The access disallowed notification message" lightbox="media/atp-not-authorized-to-access-portal.png":::
 
 ## Data currently isn't available on some sections of the portal
 

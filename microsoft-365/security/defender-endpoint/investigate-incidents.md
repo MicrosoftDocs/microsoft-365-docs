@@ -57,7 +57,7 @@ You can investigate the alerts and see how they were linked together in an incid
 - Same file - The files associated with the alert are exactly the same
 - Same URL - The URL that triggered the alert is exactly the same
 
-:::image type="content" source="images/atp-incidents-alerts-reason.png" alt-text="The Alerts tab with incident details page showing the reasons the alerts were linked together in that incident" lightbox="images/atp-incidents-alerts-reason.png":::
+:::image type="content" source="media/atp-incidents-alerts-reason.png" alt-text="The Alerts tab with incident details page showing the reasons the alerts were linked together in that incident" lightbox="media/atp-incidents-alerts-reason.png":::
 
 You can also manage an alert and see alert metadata along with other information. For more information, see [Investigate alerts](investigate-alerts.md).
 
