@@ -65,7 +65,7 @@ There is no configuration UX for **Define device control policy groups** and **D
 
 You can run the PowerShell cmdlet `Get-MpComputerStatus` as an administrator. The following value will show whether the latest policy has been applied to the target machine.
 
-:::image type="content" source="images/148609885-bea388a9-c07d-47ef-b848-999d794d24b8.png" alt-text="Screenshot showing device control status in PowerShell.":::
+:::image type="content" source="media/148609885-bea388a9-c07d-47ef-b848-999d794d24b8.png" alt-text="Screenshot showing device control status in PowerShell.":::
 
 ## How can I know which machine is using out of date anti-malware client version in the organization?
 

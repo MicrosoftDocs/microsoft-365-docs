@@ -252,7 +252,7 @@ In cases where Defender for Endpoint indicators conflict, here's what to expect:
 
 The following diagram shows how [automated investigation and remediation works with indicators](manage-indicators.md#automated-investigation-and-remediation-engine):
 
-:::image type="content" source="images/air-exclusions.png" alt-text="Screenshot that Shows automated investigation and remediation and indicators." lightbox="images/air-exclusions.png":::
+:::image type="content" source="media/air-exclusions.png" alt-text="Screenshot that Shows automated investigation and remediation and indicators." lightbox="media/air-exclusions.png":::
 
 ## Other server workloads and exclusions
 
