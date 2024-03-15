@@ -177,11 +177,11 @@ You need to have access to:
 
     :::image type="content" source="images/flow-apply.png" alt-text="The application of the flow to each element" lightbox="images/flow-apply.png":::
 
-    :::image type="content" source="images/apply-to-each.png" alt-text="The application of the flow to the Get items element" lightbox="images/apply-to-each.png":::
+    :::image type="content" source="media/apply-to-each.png" alt-text="The application of the flow to the Get items element" lightbox="media/apply-to-each.png":::
 
 11. Under **Condition**, add the following expression: "length(body('Get_items')?['value'])" and set the condition to equal to 0.
 
-    :::image type="content" source="images/apply-to-each-value.png" alt-text="The application of the flow to each condition" lightbox="images/apply-to-each-value.png":::
+    :::image type="content" source="media/apply-to-each-value.png" alt-text="The application of the flow to each condition" lightbox="media/apply-to-each-value.png":::
     :::image type="content" source="images/conditions-2.png" alt-text="The condition-1" lightbox="images/conditions-2.png":::
     :::image type="content" source="images/condition3.png" alt-text="The condition-2" lightbox="images/condition3.png":::
     :::image type="content" source="images/send-email.png" alt-text="The Send an email section" lightbox="images/send-email.png":::
@@ -190,7 +190,7 @@ You need to have access to:
 
 The following image is an example of an email notification.
 
-:::image type="content" source="images/alert-notification.png" alt-text="The email notification screen" lightbox="images/alert-notification.png":::
+:::image type="content" source="media/alert-notification.png" alt-text="The email notification screen" lightbox="media/alert-notification.png":::
 
 ## Tips
 
