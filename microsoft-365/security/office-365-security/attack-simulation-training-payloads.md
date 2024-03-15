@@ -163,7 +163,7 @@ To see payloads that have been archived (the **Status** value is **Archive**), u
    - **OAuth Consent Grant**
    - **How-to Guide**
 
-   For more information, see [Simulate a phishing attack with Attack simulation training in Defender for Office 365](attack-simulation-training-simulations.md).
+   For more information about the different social engineering techniques, see [Simulations](attack-simulation-training-get-started.md#simulations).
 
    When you're finished on the **Select technique** page, select **Next**.
 
@@ -191,59 +191,14 @@ To see payloads that have been archived (the **Status** value is **Archive**), u
      - The **Phishing link** section is available only in the **Credential Harvest**, **Link in Attachment**, **Drive-by URL**, or **OAuth Consent Grant** techniques.
      - The **Link for attachment** section is available only in the **Link to Malware** technique.
 
-     Select **Select URL**. In the details flyout that opens, select one of the available URLs, and then select **Confirm**:
+     Select **Select URL**. In the details flyout that opens, select one of the available URLs, and then select **Confirm**.
 
      To change the URL, select **Change URL**.
 
-     |&nbsp;|&nbsp;|&nbsp;|
-     |---|---|---|
-     |<https://www.attemplate.com>|<https://www.exportants.it>|<https://www.resetts.it>|
-     |<https://www.bankmenia.com>|<https://www.exportants.org>|<https://www.resetts.org>|
-     |<https://www.bankmenia.de>|<https://www.financerta.com>|<https://www.salarytoolint.com>|
-     |<https://www.bankmenia.es>|<https://www.financerta.de>|<https://www.salarytoolint.net>|
-     |<https://www.bankmenia.fr>|<https://www.financerta.es>|<https://www.securembly.com>|
-     |<https://www.bankmenia.it>|<https://www.financerta.fr>|<https://www.securembly.de>|
-     |<https://www.bankmenia.org>|<https://www.financerta.it>|<https://www.securembly.es>|
-     |<https://www.banknown.de>|<https://www.financerta.org>|<https://www.securembly.fr>|
-     |<https://www.banknown.es>|<https://www.financerts.com>|<https://www.securembly.it>|
-     |<https://www.banknown.fr>|<https://www.financerts.de>|<https://www.securembly.org>|
-     |<https://www.banknown.it>|<https://www.financerts.es>|<https://www.securetta.de>|
-     |<https://www.banknown.org>|<https://www.financerts.fr>|<https://www.securetta.es>|
-     |<https://www.browsersch.com>|<https://www.financerts.it>|<https://www.securetta.fr>|
-     |<https://www.browsersch.de>|<https://www.financerts.org>|<https://www.securetta.it>|
-     |<https://www.browsersch.es>|<https://www.hardwarecheck.net>|<https://www.shareholds.com>|
-     |<https://www.browsersch.fr>|<https://www.hrsupportint.com>|<https://www.sharepointen.com>|
-     |<https://www.browsersch.it>|<https://www.mcsharepoint.com>|<https://www.sharepointin.com>|
-     |<https://www.browsersch.org>|<https://www.mesharepoint.com>|<https://www.sharepointle.com>|
-     |<https://www.docdeliveryapp.com>|<https://www.officence.com>|<https://www.sharesbyte.com>|
-     |<https://www.docdeliveryapp.net>|<https://www.officenced.com>|<https://www.sharession.com>|
-     |<https://www.docstoreinternal.com>|<https://www.officences.com>|<https://www.sharestion.com>|
-     |<https://www.docstoreinternal.net>|<https://www.officentry.com>|<https://www.supportin.de>|
-     |<https://www.doctorican.de>|<https://www.officested.com>|<https://www.supportin.es>|
-     |<https://www.doctorican.es>|<https://www.passwordle.de>|<https://www.supportin.fr>|
-     |<https://www.doctorican.fr>|<https://www.passwordle.fr>|<https://www.supportin.it>|
-     |<https://www.doctorican.it>|<https://www.passwordle.it>|<https://www.supportres.de>|
-     |<https://www.doctorican.org>|<https://www.passwordle.org>|<https://www.supportres.es>|
-     |<https://www.doctrical.com>|<https://www.payrolltooling.com>|<https://www.supportres.fr>|
-     |<https://www.doctrical.de>|<https://www.payrolltooling.net>|<https://www.supportres.it>|
-     |<https://www.doctrical.es>|<https://www.prizeably.com>|<https://www.supportres.org>|
-     |<https://www.doctrical.fr>|<https://www.prizeably.de>|<https://www.techidal.com>|
-     |<https://www.doctrical.it>|<https://www.prizeably.es>|<https://www.techidal.de>|
-     |<https://www.doctrical.org>|<https://www.prizeably.fr>|<https://www.techidal.fr>|
-     |<https://www.doctricant.com>|<https://www.prizeably.it>|<https://www.techidal.it>|
-     |<https://www.doctrings.com>|<https://www.prizeably.org>|<https://www.techniel.de>|
-     |<https://www.doctrings.de>|<https://www.prizegiveaway.net>|<https://www.techniel.es>|
-     |<https://www.doctrings.es>|<https://www.prizegives.com>|<https://www.techniel.fr>|
-     |<https://www.doctrings.fr>|<https://www.prizemons.com>|<https://www.techniel.it>|
-     |<https://www.doctrings.it>|<https://www.prizesforall.com>|<https://www.templateau.com>|
-     |<https://www.doctrings.org>|<https://www.prizewel.com>|<https://www.templatent.com>|
-     |<https://www.exportants.com>|<https://www.prizewings.com>|<https://www.templatern.com>|
-     |<https://www.exportants.de>|<https://www.resetts.de>|<https://www.windocyte.com>|
-     |<https://www.exportants.es>|<https://www.resetts.es>||
-     |<https://www.exportants.fr>|<https://www.resetts.fr>||
-
      > [!NOTE]
-     > A URL reputation service might identify one or more of these URLs as unsafe. Check the availability of the URL in your supported web browsers before you use the URL in a simulation. For more information, see [Phishing simulation URLs blocked by Google Safe Browsing](attack-simulation-training-faq.md#phishing-simulation-urls-blocked-by-google-safe-browsing).
+     > The available URLs are listed in [Simulations](attack-simulation-training-get-started.md#simulations).
+     >
+     > Check the availability of the simulated phishing URL in your supported web browsers before you use the URL in a phishing campaign. For more information, see [Phishing simulation URLs blocked by Google Safe Browsing](attack-simulation-training-faq.md#phishing-simulation-urls-blocked-by-google-safe-browsing).
 
    - **Attachment content** section (**Link in Attachment** technique only).
 
@@ -298,6 +253,9 @@ To see payloads that have been archived (the **Status** value is **Archive**), u
    - **Predicted compromised rate** section: Select **Predict compromise rate** to calculate the predicted success rate of the payload. For more information, see [Predicted compromise rate](attack-simulation-training-get-started.md#predicted-compromise-rate).
 
    When you're finished on the **Configure payload** page, select **Next**.
+
+   > [!TIP]
+   > For the **How-to Guide** technique, you go directly to the **Review payload** page.
 
 6. The **Add indicators** page is available only if you selected **Credential Harvest**, **Link in Attachment**, **Drive-by URL**, or **OAuth Consent Grant** on the **Select technique** page.
 

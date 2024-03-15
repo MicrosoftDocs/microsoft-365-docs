@@ -14,7 +14,7 @@ ms.custom:
 description: Admins can learn how to simulate phishing attacks and train their users on phishing prevention using Attack simulation training in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 search.appverid: met150
-ms.date: 3/13/2024
+ms.date: 3/15/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison" target="_blank">Microsoft Defender for Office 365 plan 2</a>
 ---
@@ -42,17 +42,19 @@ To launch a simulated phishing attack, do the following steps:
 
 ## Select a social engineering technique
 
-On the **Select technique** page, select an available social engineering technique, which was curated from the [MITRE ATT&CK® framework](https://attack.mitre.org/techniques/enterprise/). Different payloads are available for different techniques. The following social engineering techniques are available:
+On the **Select technique** page, select an available social engineering technique:
 
-- **Credential Harvest**: Attempts to collect credentials by taking users to a well-known looking website with input boxes to submit a username and password.
-- **Malware Attachment**: Adds a malicious attachment to a message. When the user opens the attachment, arbitrary code is run that helps the attacker compromise the target's device.
-- **Link in Attachment**: A type of credential harvest hybrid. An attacker inserts a URL into an email attachment. The URL within the attachment follows the same technique as credential harvest.
-- **Link to Malware**: Runs some arbitrary code from a file hosted on a well-known file sharing service. The message sent to the user contains a link to this malicious file. Opening the file helps the attacker compromise the target's device.
-- **Drive-by URL**: The malicious URL in the message takes the user to a familiar-looking website that silently runs and/or installs code on the user's device.
-- **OAuth Consent Grant**: The malicious URL asks users to grant permissions to data for a malicious Azure Application.
-- **How-to Guide**: User training with instructions for users (for example, how to report phishing messages).
+- **Credential Harvest**
+- **Malware Attachment**
+- **Link in Attachment**
+- **Link to Malware**
+- **Drive-by URL**
+- **OAuth Consent Grant**
+- **How-to Guide**
 
 If you select the **View details** link in the description, a details flyout opens that describes the technique and the simulation steps that result from the technique.
+
+For more information about the different social engineering techniques, see [Simulations](attack-simulation-training-get-started.md#simulations).
 
 :::image type="content" source="../../media/attack-sim-training-simulations-select-technique-sim-steps.png" alt-text="The Details flyout for the credential harvest technique on the Select technique page" lightbox="../../media/attack-sim-training-simulations-select-technique-sim-steps.png":::
 
@@ -69,7 +71,7 @@ When you're finished on the **Name simulation** page, select **Next**.
 
 ## Select a payload and login page
 
-On the **Select payload and login page** page, you need to select an existing payload or create a new payload to use..
+On the **Select payload and login page** page, you need to select an existing payload or create a new payload to use.
 
 For the **Credential Harvest** or **Link in Attachment** social engineering techniques, you can also view the login page that's used in the payload, select a different login page to use, or create a new login page to use.
 
@@ -281,6 +283,9 @@ The methods to find and select users are the same as described in the previous s
 
 When you're finished on the **Exclude users** page, select **Next**.
 
+> [!TIP]
+> If you selected **How-to Guide** as the [social engineering technique](#select-a-social-engineering-technique), you go directly to the [Select end user notification](#select-end-user-notifications) page.
+
 ## Assign training
 
 On the **Assign training** page, you can assign trainings for the simulation. We recommend that you assign training for each simulation, as employees who go through training are less susceptible to similar attacks.
@@ -413,7 +418,7 @@ On the **Select end user notification** page, select from the following notifica
 - **Do not deliver notifications**: No other configuration options are available on the page. Users don't receive **Training assignment notifications**, **Training reminder notifications** or **Positive reinforcement notifications** from the simulation. Select **Proceed** in the warning dialog.
 
 - **Microsoft default notification (recommended)**: The notifications that users receive are shown on the page:
-  - **Microsoft default positive reinforcement notification**
+  - **Microsoft default positive reinforcement notification** (for the **How-to Guide** [social engineering technique](#select-a-social-engineering-technique), this is the only available notification)
   - **Microsoft default training assignment notification**
   - **Microsoft default training reminder notification**
 
@@ -445,6 +450,9 @@ On the **Select end user notification** page, select from the following notifica
     When you're finished on the **Review notification** page, select **Close** to return to the **Select end user notification** page.
 
 - **Customized end user notifications**: No other configuration options are available on the page. When you select **Next**, you need to select a **Training assignment notification**, a **Training reminder notification**, and (optionally) a **Positive reinforcement notification** to use for the simulation as described in the next three subsections.
+
+  > [!TIP]
+  > For the **How-to Guide** [social engineering technique](#select-a-social-engineering-technique), you can only configure a [Positive reinforcement notification.](#select-a-positive-reinforcement-notification).
 
 When you're finished on the **Select end user notification** page, select **Next**.
 
