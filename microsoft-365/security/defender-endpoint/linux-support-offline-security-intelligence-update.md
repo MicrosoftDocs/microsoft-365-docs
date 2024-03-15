@@ -32,20 +32,23 @@ The Offline Security Intelligence Update feature of Microsoft Defender for Endpo
 
 Key benefits include:
 
-- Instead of exposing your entire fleet to the internet, you can now just use one local server to poll the Microsoft cloud to get the latest signatures. Thus, reducing risk and network bandwidth 
-- This feature lets you control and manage the frequency of signature downloads on the local server 
-- Customers can also control and manage the frequency at which the Linux endpoints pull the signatures from the local server 
-- You can test the downloaded signatures on a test device before propagating it to the entire fleet, providing greater security and control 
-- Local server can run any of the 3 OS -  Windows, Mac, Linux 
-- Signatures are always downloaded along with the latest compatible AV engine. Thus, keeping AV engine + signatures updated after every cycle 
-- You can keep a backup of n-1 signature version as well on the local server
+- Instead of exposing your entire fleet to the internet, you can now just use one local server to poll the Microsoft cloud to get the latest signatures. Thus, reducing risk and network bandwidth. 
+- Control and manage the frequency of signature downloads on the local server. 
+- Control and manage the frequency at which the Linux endpoints pull the signatures from the local server. 
+- Test the downloaded signatures on a test device before propagating it to the entire fleet, providing greater security and control 
+- Local server can run any of the 3 OS - Windows, Mac, Linux 
+- Signatures are always downloaded along with the latest compatible AV engine. Thus, keeping AV engine + signatures updated after every cycle.
+- In each iteration, the signatures with n-1 version are moved to a backup folder on the local server. In case of any issue with the latest signatures, you can pull the n-1 signature version from the backup folder to your Linux endpoints.
+- In case offline update fails, you can also choose to fallback to online update directly from MS cloud.
 
 ## How Offline Security Intelligence Update works
 
-- Organizations need to set up a Mirror Server which is reachable to Microsoft cloud; the organization is responsible for the management and maintenance of the Mirror Server
-- Signatures are downloaded from MS Cloud on this local Web/NFS Mirror Server by executing a script using cron job/task scheduler on the local server 
-- Linux endpoints running MDE will pull the downloaded signatures from this local web/nfs server at a user defined time interval 
-- Signatures pulled on the Linux endpoints from the local server are first verified before loading it into the MDE Agent 
+- Organizations need to set up a Mirror Server which is a local Web/NFS server reachable to Microsoft cloud; the organization is responsible for the management and maintenance of the Mirror Server
+- Signatures are downloaded from MS Cloud on this Mirror Server by executing a script using cron job/task scheduler on the local server 
+- Linux endpoints running MDE will pull the downloaded signatures from this Mirror Server at a user-defined time interval 
+- Signatures pulled on the Linux endpoints from the local server are first verified before loading it into the AV engine.
+- To trigger and configure the update process, update the managed config json file on the Linux endpoints.
+- The status of the update can be seen on the mdatp CLI.
 
 ![fig 1](./offline-update-diag-1.png)
 Fig. 1: How securiy intelligence updates are downloaded on the Mirror Server
@@ -252,16 +255,13 @@ offline_definition_update_fallback_to_cloud : false
     - `mdatp definitions update`
 
 
-## FAQ
+## Notes
 
-### Q. Can we manage / configure Offline Security Intelligence Update via Security Portal?
-A. No, as of today you can configure it via managed json only. Integration with security settings management on the security portal is in our roadmap.
+- As of today you can configure it via managed json only. Integration with security settings management on the security portal is in our roadmap.
 
-### Q. Is it required to install Microsoft Defender on Endpoint on the Mirror Server?
-A. No, the Mirror Server need not have Microsoft Defender for Endpoint installed. The Mirror Server's management and maintenance ownership lies with the customers since the Mirror Server resides in the customer's private environment and Microsoft will have no visibility into it.
+- The Mirror Server need not have MDE installed on it.
 
-### Q. Is automatic rollback available? 
-A. If there is any issue with the latest downloaded signatures, you can pull the signatures on your Linux endpoints from the backup folder on the local server, which contains signatures with n-1 version.
+- The Mirror Server's management and maintenance ownership lies with the customers since the Mirror Server resides in the customer's private environment and Microsoft will have no visibility into it.
 
 
 ## Useful Links
