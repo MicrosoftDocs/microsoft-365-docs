@@ -47,6 +47,12 @@ Key benefits include:
 - Linux endpoints running MDE will pull the downloaded signatures from this local web/nfs server at a user defined time interval 
 - Signatures pulled on the Linux endpoints from the local server are first verified before loading it into the MDE Agent 
 
+![fig 1](./offline-update-diag-1.png)
+Fig. 1: How securiy intelligence updates are downloaded on the Mirror Server
+
+![fig 2](./offline-update-diag-2.png)
+Fig. 2: How offline security intelligence update works on the Linux endpoint
+
 ## Prerequisites
 
 - MDE version "101.24022.0001" or higher needs to be installed on the Linux endpoints.
