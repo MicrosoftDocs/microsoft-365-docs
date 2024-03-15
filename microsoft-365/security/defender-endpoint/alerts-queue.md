@@ -41,7 +41,7 @@ On the top navigation you can:
 - Export the alerts list to excel
 - Manage Alerts
 
-:::image type="content" source="images/alerts-queue-list.png" alt-text="The Alerts queue page" lightbox="images/alerts-queue-list.png":::
+:::image type="content" source="media/alerts-queue-list.png" alt-text="The Alerts queue page" lightbox="media/alerts-queue-list.png":::
 
 ## Sort and filter alerts 
 
