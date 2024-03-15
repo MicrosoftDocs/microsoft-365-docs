@@ -57,7 +57,7 @@ You can choose to renew or extend the license at any point in time. When accessi
 > [!NOTE]
 > For security reasons, the package used to Offboard devices will expire 30 days after the date it was downloaded. Expired offboarding packages sent to a device will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
 
-:::image type="content" source="images/atp-subscription-expired.png" alt-text="The subscription expired notification message" lightbox="images/atp-subscription-expired.png":::
+:::image type="content" source="media/atp-subscription-expired.png" alt-text="The subscription expired notification message" lightbox="media/atp-subscription-expired.png":::
 
 ## You are not authorized to access the portal
 

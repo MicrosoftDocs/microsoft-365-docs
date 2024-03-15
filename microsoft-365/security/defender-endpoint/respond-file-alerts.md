@@ -91,15 +91,15 @@ This action takes effect on devices with Windows 10, version 1703 or later, and 
 
 2. Go to the top bar and select **Stop and Quarantine File**.
 
-   :::image type="content" source="images/atp-stop-quarantine-file.png" alt-text="The stop and quarantine file action" lightbox="images/atp-stop-quarantine-file.png":::
+   :::image type="content" source="media/atp-stop-quarantine-file.png" alt-text="The stop and quarantine file action" lightbox="media/atp-stop-quarantine-file.png":::
 
 3. Specify a reason, then select **Confirm**.
 
-   :::image type="content" source="images/atp-stop-quarantine.png" alt-text="The stop and quarantine file page" lightbox="images/atp-stop-quarantine.png":::
+   :::image type="content" source="media/atp-stop-quarantine.png" alt-text="The stop and quarantine file page" lightbox="media/atp-stop-quarantine.png":::
 
    The Action center shows the submission information:
 
-   :::image type="content" source="images/atp-stopnquarantine-file.png" alt-text="The stop and quarantine file action center" lightbox="images/atp-stopnquarantine-file.png":::
+   :::image type="content" source="media/atp-stopnquarantine-file.png" alt-text="The stop and quarantine file action center" lightbox="media/atp-stopnquarantine-file.png":::
 
    - **Submission time** - Shows when the action was submitted.
    - **Success** - Shows the number of devices where the file has been stopped and quarantined.

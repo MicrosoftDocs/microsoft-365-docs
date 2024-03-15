@@ -102,7 +102,7 @@ The attack surface reduction rules reporting page is found in **Microsoft Defend
 Provides a 30-day timeline of detected audit and blocked events.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/attack-surface-reduction-rules-report-main-detections-card.png" alt-text="Graph that shows the attack surface reduction rules report summary detections card." lightbox="images/attack-surface-reduction-rules-report-main-detections-card.png":::
+> :::image type="content" source="media/attack-surface-reduction-rules-report-main-detections-card.png" alt-text="Graph that shows the attack surface reduction rules report summary detections card." lightbox="media/attack-surface-reduction-rules-report-main-detections-card.png":::
 
 The attack surface reduction rules pane provides an overview of detected events on a per-rule basis.
 
@@ -145,11 +145,11 @@ The **GroupBy** returns results set to the following groups:
 
 Lists—on a per-computer basis—the aggregate state of attack surface reduction rules: Off, Audit, Block.
 
->:::image type="content" source="images/attack-surface-reduction-rules-report-main-configuration-tab.png" alt-text="Screenshot that shows the attack surface reduction rules report main configuration tab." lightbox="images/attack-surface-reduction-rules-report-main-configuration-tab.png":::
+>:::image type="content" source="media/attack-surface-reduction-rules-report-main-configuration-tab.png" alt-text="Screenshot that shows the attack surface reduction rules report main configuration tab." lightbox="media/attack-surface-reduction-rules-report-main-configuration-tab.png":::
 
 On the Configurations tab, you can check, on a per-device basis, which attack surface reduction rules are enabled, and in which mode, by selecting the device for which you want to review attack surface reduction rules.
 
->:::image type="content" source="images/attack-surface-reduction-rules-report-configuration-add-to-policy.png" alt-text="Screenshot that shows the ASR rules fly-out to add ASR rules to devices." lightbox="images/attack-surface-reduction-rules-report-configuration-add-to-policy.png":::
+>:::image type="content" source="media/attack-surface-reduction-rules-report-configuration-add-to-policy.png" alt-text="Screenshot that shows the ASR rules fly-out to add ASR rules to devices." lightbox="media/attack-surface-reduction-rules-report-configuration-add-to-policy.png":::
 
 The **Get started** link opens the Microsoft Intune admin center, where you can create or modify an endpoint protection policy for attack surface reduction:
 

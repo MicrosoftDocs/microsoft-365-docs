@@ -107,7 +107,7 @@ Provides two 'action' buttons:
 - View detections - opens the **Attack surface reduction rules** > main **Detections** tab
 - Add exclusions - Opens the **Attack surface reduction rules** > main **Exclusions** tab
 
-:::image type="content" source="images/attack-surface-reduction-rules-report-main-detections-card.png" alt-text="Screenshot that shows the ASR rules report summary detections card." lightbox="images/attack-surface-reduction-rules-report-main-detections-card.png"::: 
+:::image type="content" source="media/attack-surface-reduction-rules-report-main-detections-card.png" alt-text="Screenshot that shows the ASR rules report summary detections card." lightbox="media/attack-surface-reduction-rules-report-main-detections-card.png"::: 
 
 Clicking on the **ASR rules detections** link at the top of the card also opens the main [Attack surface reduction rules Detections tab](#attack-surface-reduction-rules-main-detections-tab).
 
@@ -247,7 +247,7 @@ The ASR rules main **Configuration** tab provides summary and per-device ASR rul
 
 These elements are shown in the following figure.
 
->:::image type="content" source="images/attack-surface-reduction-rules-report-main-configuration-tab.png" alt-text="Shows the ASR rules report main configuration tab" lightbox="images/attack-surface-reduction-rules-report-main-configuration-tab.png":::
+>:::image type="content" source="media/attack-surface-reduction-rules-report-main-configuration-tab.png" alt-text="Shows the ASR rules report main configuration tab" lightbox="media/attack-surface-reduction-rules-report-main-configuration-tab.png":::
 
 To enable ASR rules:
 
@@ -259,7 +259,7 @@ The **Configuration** tab and _add rule_ flyout are shown in the following image
 > [NOTE!]
 > If you have devices that require that different ASR rules be applied, you should configure those devices individually.
 
->:::image type="content" source="images/attack-surface-reduction-rules-report-configuration-add-to-policy.png" alt-text="Shows the ASR rules fly-out to add ASR rules to devices" lightbox="images/attack-surface-reduction-rules-report-configuration-add-to-policy.png":::
+>:::image type="content" source="media/attack-surface-reduction-rules-report-configuration-add-to-policy.png" alt-text="Shows the ASR rules fly-out to add ASR rules to devices" lightbox="media/attack-surface-reduction-rules-report-configuration-add-to-policy.png":::
 
 ### Attack surface reduction rules Add exclusions tab
 
@@ -269,7 +269,7 @@ The **Add exclusions** tab presents a ranked list of detections by file name and
 - **Detections** The total number of detected events for named file. Individual devices can trigger multiple ASR rules events.
 - **Devices** The number of devices on which the detection occurred.
 
->:::image type="content" source="images/attack-surface-reduction-rules-report-exclusion-tab.png" alt-text="Shows the ASR rules report add exclusions tab" lightbox="images/attack-surface-reduction-rules-report-exclusion-tab.png":::
+>:::image type="content" source="media/attack-surface-reduction-rules-report-exclusion-tab.png" alt-text="Shows the ASR rules report add exclusions tab" lightbox="media/attack-surface-reduction-rules-report-exclusion-tab.png":::
 
 > [!IMPORTANT]
 > Excluding files or folders can severely reduce the protection provided by ASR rules. Excluded files are allowed to run, and no report or event will be recorded.
@@ -286,7 +286,7 @@ The Add exclusion page has two buttons for actions that can be used on any detec
 - **Add exclusion** which will open Microsoft Intune ASR policy page. For more information, see: [Intune](enable-attack-surface-reduction.md) in "Enable ASR rules alternate configuration methods."
 - **Get exclusion paths** which will download file paths in a csv format
 
->:::image type="content" source="images/attack-surface-reduction-rules-report-main-add-exclusions-flyout.png" alt-text="Shows the ASR rules report add exclusions tab flyout impact summary" lightbox="images/attack-surface-reduction-rules-report-main-add-exclusions-flyout.png":::
+>:::image type="content" source="media/attack-surface-reduction-rules-report-main-add-exclusions-flyout.png" alt-text="Shows the ASR rules report add exclusions tab flyout impact summary" lightbox="media/attack-surface-reduction-rules-report-main-add-exclusions-flyout.png":::
 
 ## See also
 
