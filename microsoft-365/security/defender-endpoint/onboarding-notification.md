@@ -56,7 +56,7 @@ You need to have access to:
    2. Specify the start and time.
    3. Specify the frequency. For example, every 5 minutes.
 
-   :::image type="content" source="images/build-flow.png" alt-text="The notification flow" lightbox="images/build-flow.png":::
+   :::image type="content" source="media/build-flow.png" alt-text="The notification flow" lightbox="media/build-flow.png":::
 
 4. Select the + button to add a new action. The new action is an HTTP request to the Defender for Endpoint devices API. You can also replace it with the out-of-the-box **WDATP Connector** (action: **Machines - Get list of machines**).
 
