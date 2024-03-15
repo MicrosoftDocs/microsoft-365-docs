@@ -336,7 +336,7 @@ You might also need to check the following:
 
 - Check that there's a Microsoft Defender for Endpoint Service running in the **Processes** tab in **Task Manager**. For example:
 
-  :::image type="content" source="images/atp-task-manager.png" alt-text="The process view with Microsoft Defender for Endpoint Service running" lightbox="images/atp-task-manager.png":::
+  :::image type="content" source="media/atp-task-manager.png" alt-text="The process view with Microsoft Defender for Endpoint Service running" lightbox="media/atp-task-manager.png":::
 
 - Check **Event Viewer** \> **Applications and Services Logs** \> **Operation Manager** to see if there are any errors.
 

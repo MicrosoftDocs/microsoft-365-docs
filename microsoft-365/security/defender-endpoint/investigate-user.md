@@ -48,7 +48,7 @@ When you investigate a user account entity, you can see:
 - Alerts related to this user
 - Observed in organization (devices logged on to)
 
-:::image type="content" source="images/atp-user-details-view.png" alt-text="The user account entity details page" lightbox="images/atp-user-details-view.png":::
+:::image type="content" source="media/atp-user-details-view.png" alt-text="The user account entity details page" lightbox="media/atp-user-details-view.png":::
 
 ### User details
 
