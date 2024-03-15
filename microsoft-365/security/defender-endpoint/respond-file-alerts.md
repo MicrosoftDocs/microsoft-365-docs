@@ -170,7 +170,7 @@ The **Download file** button can have the following states:
     - Tenants with [role-based access (RBAC) permissions](../defender/manage-rbac.md) enabled
 
 
-:::image type="content" source="images/atp-download-file-action.png" alt-text="The download file action" lightbox="images/atp-download-file-action.png":::
+:::image type="content" source="media/atp-download-file-action.png" alt-text="The download file action" lightbox="media/atp-download-file-action.png":::
 
 ### Download quarantined files
 

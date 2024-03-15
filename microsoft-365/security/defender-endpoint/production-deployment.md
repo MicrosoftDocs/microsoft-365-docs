@@ -55,7 +55,7 @@ Checking for the license state and whether it was properly provisioned can be do
 
     On the screen, you'll see all the provisioned licenses and their current **Status**.
 
-    :::image type="content" source="images/atp-billing-subscriptions.png" alt-text="The billing licenses page":::
+    :::image type="content" source="media/atp-billing-subscriptions.png" alt-text="The billing licenses page":::
 
 ## Cloud Service Provider validation
 
@@ -106,13 +106,13 @@ Configure a registry-based static proxy to allow only Microsoft Defender for End
 2. Create a policy or edit an existing policy based off the organizational practices.
 3. Edit the Group Policy and navigate to **Administrative Templates \> Windows Components \> Data Collection and Preview Builds \> Configure Authenticated Proxy usage for the Connected User Experience and Telemetry Service**.
 
-   :::image type="content" source="images/atp-gpo-proxy1.png" alt-text="The options related to configuration of the usage policy" lightbox="images/atp-gpo-proxy1.png":::
+   :::image type="content" source="media/atp-gpo-proxy1.png" alt-text="The options related to configuration of the usage policy" lightbox="media/atp-gpo-proxy1.png":::
 
 4. Select **Enabled**.
 5. Select **Disable Authenticated Proxy usage**.
 6. Navigate to **Administrative Templates \> Windows Components \> Data Collection and Preview Builds \> Configure connected user experiences and telemetry**.
 
-   :::image type="content" source="images/atp-gpo-proxy2.png" alt-text="The options related to configuration of the connected user experience and telemetry" lightbox="images/atp-gpo-proxy2.png":::
+   :::image type="content" source="media/atp-gpo-proxy2.png" alt-text="The options related to configuration of the connected user experience and telemetry" lightbox="media/atp-gpo-proxy2.png":::
 
 7. Select **Enabled**.
 8. Enter the **Proxy Server Name**.

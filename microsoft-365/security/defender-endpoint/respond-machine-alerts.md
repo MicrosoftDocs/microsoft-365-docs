@@ -193,7 +193,7 @@ Once you have selected **Restrict app execution** on the device page, type a com
 
 When an app is restricted, the following notification is displayed to inform the user that an app is being restricted from running:
 
-:::image type="content" source="images/atp-app-restriction.png" alt-text="The application restriction message" lightbox="images/atp-app-restriction.png":::
+:::image type="content" source="media/atp-app-restriction.png" alt-text="The application restriction message" lightbox="media/atp-app-restriction.png":::
 
 > [!NOTE]
 > The notification is not available on Windows Server 2016 and Windows Server 2012 R2.

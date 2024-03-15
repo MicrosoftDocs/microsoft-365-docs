@@ -311,7 +311,7 @@ If the verification fails and your environment is using a proxy to connect to th
 
 - You can also check the previous registry key values to verify that the policy is disabled, by opening the registry key `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`.
 
-  :::image type="content" source="images/atp-disableantispyware-regkey.png" alt-text="The registry key for Microsoft Defender Antivirus" lightbox="images/atp-disableantispyware-regkey.png":::
+  :::image type="content" source="media/atp-disableantispyware-regkey.png" alt-text="The registry key for Microsoft Defender Antivirus" lightbox="media/atp-disableantispyware-regkey.png":::
 
    > [!NOTE]
    > All Windows Defender services (wdboot, wdfilter, wdnisdrv, wdnissvc, and windefend) should be in their default state. Changing the startup of these services is unsupported and may force you to reimage your system.
