@@ -22,7 +22,7 @@ ms.date: 03/15/2024
 Microsoft Defender XDR applies the capabilities of Microsoft Copilot for Security to deliver Microsoft Defender Threat Intelligence (Defender TI) information about threat actors and tools, as well as contextual threat intelligence, directly into the Microsoft Defender portal. Based on threat analytics reports, intel profiles, and other available Defender TI content, you can use Copilot for Security to summarize the latest threats affecting your organization, know which threats to prioritize based on your exposure level, or gain more knowledge about your organization's or the global threat landscape.
 
 > [!NOTE]
-> Defender TI capabilities are also available in Copilot for Security standalone experience through the Microsoft Defender Threat Intelligence plugin. [Learn more about Defender TI integration with Copilot for Security](/defender/threat-intelligence/security-copilot-and-defender-threat-intelligence.md)
+> Defender TI capabilities are also available in Copilot for Security standalone experience through the Microsoft Defender Threat Intelligence plugin. [Learn more about Defender TI integration with Copilot for Security](security-copilot-and-defender-threat-intelligence.md)
 
 ## Technical requirements
 
@@ -54,7 +54,7 @@ Microsoft Defender XDR brings Copilot for Security’s capability to look up thr
 
    (Add image)
 
-5. You can provide feedback about the generated response by selecting (feedback icon) and choosing **Confirmed, it looks great**, **Off-target, inaccurate**, or **Potentially harmful, inappropriate**. [Learn more](/security/defender/security-copilot-in-microsoft-365-defender#providing-feedback)
+5. You can provide feedback about the generated response by selecting (feedback icon) and choosing **Confirmed, it looks great**, **Off-target, inaccurate**, or **Potentially harmful, inappropriate**. [Learn more](microsoft-365/security/defender/security-copilot-in-microsoft-365-defender#providing-feedback)
 6. To start a new chat session with Copilot, select the [New chat] icon.
 
 > [!NOTE]
@@ -91,4 +91,4 @@ An important aspect of threat intelligence is keeping up to date with the global
 
 ### See also
 - [What is Microsoft Copilot for Security?](/security-copilot/microsoft-security-copilot)
-- [Microsoft Copilot for Security and Microsoft Defender Threat Intelligence](/defender/threat-intelligence/security-copilot-and-defender-threat-intelligence.md)
+- [Microsoft Copilot for Security and Microsoft Defender Threat Intelligence](security-copilot-and-defender-threat-intelligence.md)
