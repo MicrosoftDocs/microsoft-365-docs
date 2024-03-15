@@ -26,7 +26,7 @@ appliesto:
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-:::image type="content" source="../../media/explorer-new.png" alt-text="Screenshot of the Threat Explorer page." lightbox="../../media/explorer.png":::
+:::image type="content" source="../../media/explorer-new.png" alt-text="Screenshot of the Threat Explorer page." lightbox="../../media/explorer-new.png":::
 
 [Threat Explorer](threat-explorer-about.md) (and the real-time detections report) is a powerful, near real-time tool to help Security Operations teams investigate and respond to threats in the Microsoft Defender portal. Explorer (and the real-time detections report) displays information about suspected malware and phish in email and files in Office 365, as well as other security threats and risks to your organization.
 
