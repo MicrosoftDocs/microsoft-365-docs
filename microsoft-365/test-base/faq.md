@@ -36,7 +36,7 @@ f1.keywords: NOCSH
 
 **Q: What happens to the customer environment during the transition to EOL?**
 
-**A:** During the transition to EOL, Test Base provides customers with instructions on how to complete the offboarding process. Our goal is to prevent any disruption to the business and users. All configurations used for management (configurations, policies, scripts, etc.) will remain in place. The customer can choose to maintain or remove them.
+**A:** During the transition to EOL, Test Base provides customers with instructions on how to complete the offboarding process. Our goal is to prevent any disruption to the business and users. All configurations used for management (configurations, policies, scripts, etc.) will remain in place. The customer can choose to maintain or remove them until May 31, 2024. After May 31, 2024, all customer environments and data will be permanently deleted.
 
 **Q: Will Test Base offer an extension to the 60 days?**
 
@@ -56,23 +56,24 @@ f1.keywords: NOCSH
 
 **Q: Will there be new monthly security updates, feature updates and Office updates?**
 
-**A:** For customers who have signed up for monthly security updates, their tests will continue to be triggered upon original configuration until May 31. Feature updates are paused after Build 22635.3212 in Beta Channel. Office updates are paused after Build 16.0.17328.20004. In you need any support for feature update or office update extension, or any transition help needed, [submit a support request](https://aka.ms/TestBaseSupport).
+**A:** For customers who have signed up for monthly security updates, their tests will continue to be triggered upon original configuration until May 31. Feature updates are paused after Build 22635.3212 in Beta Channel. Office updates are paused after Build 16.0.17328.20004. Please [submit a support request](https://aka.ms/TestBaseSupport) if needed..
 
 **Q: What if I need data from Test Base? Will I still access to my data?**
 
-**A:** You'll retain access to the service and data until May 31, 2024. Following this date, all customer data will be permanently deleted. Should you wish to retain automation test scripts or download test results for future reference, we encourage you to proactively plan your transition. Guidance to export your data check in our [documentation](https://aka.ms/testbase-doc-exportdata).
+**A:** 
+Customers will retain access to the service and data until May 31, 2024. Following this date, all customer data will be permanently deleted. During the transition, customers can retain automation test scripts, Test Base account records, or download test results for future reference. Please refer to [Test Base documentation - Export your data](https://aka.ms/testbase-doc-exportdata) or contact us via [testbase_support@microsoft.com](mailto:testbase_support@microsoft.com) before May 31.
 
 **Q: Who do I contact for Test Base support?**
 
-**A:** Our team is dedicated to assisting you during this transition. If you have any feedback or questions regarding this decision, don't hesitate to contact our support team at [testbase_support@microsoft.com](mailto:testbase_support@microsoft.com), or [submit a support request](https://aka.ms/TestBaseSupport).
+**A:** The Test Base team is dedicated to assisting you during this transition. If you have any questions, please contact the Test Base support team at [testbase_support@microsoft.com](mailto:testbase_support@microsoft.com), or [submit a support request](https://aka.ms/TestBaseSupport).
 
 **Q: What happens if I don't offboard before May 31, 2024?**
 
-**A:** After May 31, 2024, all customer data will be permanently deleted. Any active accounts in Test Base will be automatically offboarded. If you still need a copy of Test Base account records, proactively plan your transition, or contact us via [testbase_support@microsoft.com](mailto:testbase_support@microsoft.com) before May 31.
+**A:** After May 31, 2024, all customer data will be permanently deleted. Any active accounts in Test Base will be automatically offboarded.
 
 **Q: How long will my billing records be kept?**
 
-**A:** Service level billing records retention policy follows Azure billing policy. To check service consumption details, refer to [View cost breakdown by Azure service - Microsoft Cost Management | Microsoft Learn](/azure/cost-management-billing/costs/cost-analysis-common-uses#view-cost-breakdown-by-azure-service). Usage level details in Test Base Billing Hub will be deleted after May 31. If you need usage records for future reference, refer to [Test Base documentation - Export your data](https://aka.ms/testbase-doc-exportdata).
+**A:** Service level billing records retention policy follows Azure billing policy. To check service consumption details, refer to [View cost breakdown by Azure service - Microsoft Cost Management | Microsoft Learn](/azure/cost-management-billing/costs/cost-analysis-common-uses#view-cost-breakdown-by-azure-service). Usage level details in Test Base Billing Hub will be deleted on May 31. If usage records for future reference if needed, refer to [Test Base documentation - Export your data](https://aka.ms/testbase-doc-exportdata).
 
 **Q: When will my last payment for Test Base usage be billed?**
 
@@ -80,21 +81,21 @@ f1.keywords: NOCSH
 
 **Q: What's the recommended transition or migration plan?**
 
-**A:** Our team is dedicated to assisting you during this transition. We would recommend you to:
+**A:** The Test Base team is dedicated to assisting you during this transition. We would recommend to:
 
-1. Export your data (Check [guidance](https://aka.ms/testbase-doc-exportdata)).
+1. [Test Base documentation - Export your data](https://aka.ms/testbase-doc-exportdata).
 2. Transit to other Microsoft compatibility supports (Check in [Does Test Base have an alternative solution?](#Does_have_solution))
 
-If you have any feedback or questions regarding this decision, don't hesitate to contact our support team at [testbase_support@microsoft.com](mailto:testbase_support@microsoft.com), or [submit a support request](https://aka.ms/TestBaseSupport).
+If you have any questions, reach out to [testbase_support@microsoft.com](mailto:testbase_support@microsoft.com), or [submit a support request](https://aka.ms/TestBaseSupport).
 
 **Q: What are the implications for my organization?**
 
 **A:** Customers using Test Base for Microsoft 365 may expect:
 
 - Starting from March 4, the end-of-life (EOL) process for the Test Base for Microsoft 365 service will begin. From this date, no new features or updates are released for Test Base.
-- During the end-of-life period, you may: continue to use the service for testing, export your data, and make necessary arrangements for the transition.
-- You'll retain access to the service and your data until May 31, 2024.
-- Following this date, all customer data will be permanently deleted.
+- During the end-of-life period, customers can: continue to use the service for testing, export data, and make necessary arrangements for the transition.
+- Access to the service and data will be retained until May 31, 2024.
+- After May 31, 2024, all customer data will be permanently deleted.
 
 ## Testing
 
