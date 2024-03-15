@@ -741,7 +741,7 @@ Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint 
 
 4. Select your computer and click the gear icon at the top, then select **Computer Management**.
 
-   :::image type="content" source="images/b6d671b2f18b89d96c1c8e2ea1991242.png" alt-text="The configuration settings - computer management." lightbox="images/b6d671b2f18b89d96c1c8e2ea1991242.png":::
+   :::image type="content" source="media/b6d671b2f18b89d96c1c8e2ea1991242.png" alt-text="The configuration settings - computer management." lightbox="media/b6d671b2f18b89d96c1c8e2ea1991242.png":::
 
 5. In **Packages**, select **+ New**.
    :::image type="content" source="media/57aa4d21e2ccc65466bf284701d4e961.png" alt-text="The bird Description for an automatically generated package." lightbox="media/57aa4d21e2ccc65466bf284701d4e961.png":::

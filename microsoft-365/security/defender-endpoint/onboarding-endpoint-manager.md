@@ -87,7 +87,7 @@ In this section, we create a test group to assign your configurations on.
 3. Enter details and create a new group.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/b1e0206d675ad07db218b63cd9b9abc3.png" alt-text="The Microsoft Intune admin center2" lightbox="images/b1e0206d675ad07db218b63cd9b9abc3.png":::
+    > :::image type="content" source="media/b1e0206d675ad07db218b63cd9b9abc3.png" alt-text="The Microsoft Intune admin center2" lightbox="media/b1e0206d675ad07db218b63cd9b9abc3.png":::
 
 4. Add your test user or device.
 
@@ -347,7 +347,7 @@ To confirm that the configuration policy is applied to your test device, follow 
 1. Before applying the configuration, the Defender for Endpoint Protection service shouldn't be started.
 
     > [!div class="mx-imgBorder"]
-    > [![Image of Services panel1.](images/b418a232a12b3d0a65fc98248dbb0e31.png)](images/b418a232a12b3d0a65fc98248dbb0e31.png#lightbox)
+    > [![Image of Services panel1.](media/b418a232a12b3d0a65fc98248dbb0e31.png)](media/b418a232a12b3d0a65fc98248dbb0e31.png#lightbox)
 
 2. After the configuration is applied, the Defender for Endpoint Protection service should be started.
 
