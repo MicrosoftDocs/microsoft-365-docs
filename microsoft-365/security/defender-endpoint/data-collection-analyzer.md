@@ -53,7 +53,7 @@ Run `MDEClientAnalyzer.cmd /?` to see the list of available parameters and their
 
 The analyzer, and all of the scenario flags listed in this article, can be initiated remotely by running `RemoteMDEClientAnalyzer.cmd`, which is also bundled into the analyzer toolset:
 
-:::image type="content" source="images/57cab9d82d08f672a92bf9e748ac9572.png" alt-text="The parameters for RemoteMDEClientAnalyzer.cmd" lightbox="images/57cab9d82d08f672a92bf9e748ac9572.png":::
+:::image type="content" source="media/57cab9d82d08f672a92bf9e748ac9572.png" alt-text="The parameters for RemoteMDEClientAnalyzer.cmd" lightbox="media/57cab9d82d08f672a92bf9e748ac9572.png":::
 
 > [!NOTE]
 > When any advanced troubleshooting parameter is used, the analyzer also calls into [MpCmdRun.exe](/microsoft-365/security/defender-endpoint/command-line-arguments-microsoft-defender-antivirus) to collect Microsoft Defender Antivirus related support logs.

@@ -268,7 +268,7 @@ Defender app is installed into the user's device. User signs in and completes th
 
 1. Once Defender for Endpoint on iOS has been installed on the device, you will see the app icon.
 
-   :::image type="icon" source="images/41627a709700c324849bf7e13510c516.png":::
+   :::image type="icon" source="media/41627a709700c324849bf7e13510c516.png":::
 
 2. Tap the Defender for Endpoint app icon (MSDefender) and follow the on-screen instructions to complete the onboarding steps. The details include end-user acceptance of iOS permissions required by Defender for Endpoint on iOS.
 

@@ -85,7 +85,7 @@ To complete this process, you must have admin privileges on the device.
 
 4. Read through the *End-User License Agreement (EULA)* and select **Agree**.
 
-    :::image type="content" source="images/agree-license.png" alt-text="Screenshot that shows the acceptance of the agreement.":::
+    :::image type="content" source="media/agree-license.png" alt-text="Screenshot that shows the acceptance of the agreement.":::
 
 5. From **Destination Select**, select the disk where you want to install the Microsoft Defender Software, for example, *Macintosh HD* and select **Continue**.
 
