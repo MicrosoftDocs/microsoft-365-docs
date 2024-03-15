@@ -61,7 +61,7 @@ Microsoft Defender XDR brings Copilot for Security’s capability to look up thr
 > Copilot saves your previous sessions from the Microsoft Defender XDR portal in the Copilot for Security standalone site.
 
 > [!IMPORTANT] 
-> Copilot for Security starts a new chat session every time you navigate to a different *Threat intelligence page* in Microsoft Defender XDR (for example, when you go from *Threat analytics* to *Intel profiles*). If you wish to go back or continue a previous session, go to the [Copilot for Security standalone site]((https://go.microsoft.com/fwlink/?linkid=2247989)) and look for it in **My sessions**. [Learn more about Navigating Microsoft Copilot for Security](/security-copilot/navigating-security-copilot)
+> Copilot for Security starts a new chat session every time you navigate to a different *Threat intelligence page* in Microsoft Defender XDR (for example, when you go from *Threat analytics* to *Intel profiles*). If you wish to go back or continue a previous session, go to the [Copilot for Security standalone site](https://go.microsoft.com/fwlink/?linkid=2247989) and look for it in **My sessions**. [Learn more about Navigating Microsoft Copilot for Security](/security-copilot/navigating-security-copilot)
 
 ## Use the built-in Defender TI prompts
 
