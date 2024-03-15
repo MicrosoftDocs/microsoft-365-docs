@@ -97,7 +97,7 @@ The **Overview** tab displays the [cards](#cards) for active alerts, logged on u
 
 The **Incidents and alerts** tab provides a list of incidents and alerts that are associated with the device. This list is a filtered version of the [Alerts queue](alerts-queue.md), and shows a short description of the incident, alert, severity (high, medium, low, informational), status in the queue (new, in progress, resolved), classification (not set, false alert, true alert), investigation state, category of alert, who is addressing the alert, and last activity. You can also filter the alerts.
 
-:::image type="content" source="images/alerts-device.png" alt-text="The tab of the alerts related to the device" lightbox="images/alerts-device.png":::
+:::image type="content" source="media/alerts-device.png" alt-text="The tab of the alerts related to the device" lightbox="media/alerts-device.png":::
 
 When an alert is selected, a fly-out appears. From this panel you can manage the alert and view more details such as incident number and related devices. Multiple alerts can be selected at a time.
 
