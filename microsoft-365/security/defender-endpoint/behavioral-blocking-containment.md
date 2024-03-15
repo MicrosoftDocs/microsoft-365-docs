@@ -50,7 +50,7 @@ With these capabilities, more threats can be prevented or blocked, even if they 
 
 The following image shows an example of an alert that was triggered by behavioral blocking and containment capabilities:
 
-:::image type="content" source="images/blocked-behav-alert.png" alt-text="The Alerts page with an alert through behavioral blocking and containment" lightbox="images/blocked-behav-alert.png":::
+:::image type="content" source="media/blocked-behav-alert.png" alt-text="The Alerts page with an alert through behavioral blocking and containment" lightbox="media/blocked-behav-alert.png":::
 
 ## Components of behavioral blocking and containment
 
@@ -93,7 +93,7 @@ Behavior-based device-learning models in Defender for Endpoint caught and stoppe
 
 While the attack was detected and stopped, alerts, such as an "initial access alert," were triggered and appeared in the [Microsoft Defender portal](/microsoft-365/security/defender/microsoft-365-defender).
 
-:::image type="content" source="images/behavblockcontain-initialaccessalert.png" alt-text="Initial access alert in the Microsoft Defender portal" lightbox="images/behavblockcontain-initialaccessalert.png":::
+:::image type="content" source="media/behavblockcontain-initialaccessalert.png" alt-text="Initial access alert in the Microsoft Defender portal" lightbox="media/behavblockcontain-initialaccessalert.png":::
 
 This example shows how behavior-based device-learning models in the cloud add new layers of protection against attacks, even after they have started running.
 

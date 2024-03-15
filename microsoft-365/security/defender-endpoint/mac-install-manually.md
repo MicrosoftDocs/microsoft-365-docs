@@ -168,11 +168,11 @@ To grant full disk access:
 Starting with macOS 13, a user must explicitly allow an application to run in background.
 macOS will pop a prompt up, telling the user that Microsoft Defender can run in background.
 
-:::image type="content" source="images/background-items-notification.png" alt-text="Screenshot that shows background items notification":::
+:::image type="content" source="media/background-items-notification.png" alt-text="Screenshot that shows background items notification":::
 
 You can view applications permitted to run in background in System Settings => Login Items => Allow in the Background at any time:
 
-:::image type="content" source="images/background-items.png" alt-text="Screenshot that shows background items":::
+:::image type="content" source="media/background-items.png" alt-text="Screenshot that shows background items":::
 
 Make sure all Microsoft Defender and Microsoft Corporation items are enabled. If they are disabled then macOS will not start Microsoft Defender after a machine restart.
 

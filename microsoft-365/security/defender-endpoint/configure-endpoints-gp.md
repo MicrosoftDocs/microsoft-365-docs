@@ -180,7 +180,7 @@ Get the current list of attack surface reduction rules GUIDs from [Attack surfac
 
    This will set each up for audit only.
 
-   :::image type="content" source="images/asr-guid.png" alt-text="The Attack surface reduction configuration" lightbox="images/asr-guid.png":::
+   :::image type="content" source="media/asr-guid.png" alt-text="The Attack surface reduction configuration" lightbox="media/asr-guid.png":::
 
 Policy|Location|Setting
 ---|---|---
