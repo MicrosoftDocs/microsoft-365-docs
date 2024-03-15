@@ -112,7 +112,7 @@ This action takes effect on devices with Windows 10, version 1703 or later, and 
 
 When the file is being removed from a device, the following notification is shown:
 
-:::image type="content" source="images/atp-notification-file.png" alt-text="The notification a on device user" lightbox="images/atp-notification-file.png":::
+:::image type="content" source="media/atp-notification-file.png" alt-text="The notification a on device user" lightbox="media/atp-notification-file.png":::
 
 In the device timeline, a new event is added for each device where a file was stopped and quarantined.
 
@@ -170,7 +170,7 @@ The **Download file** button can have the following states:
     - Tenants with [role-based access (RBAC) permissions](../defender/manage-rbac.md) enabled
 
 
-:::image type="content" source="images/atp-download-file-action.png" alt-text="The download file action" lightbox="images/atp-download-file-action.png":::
+:::image type="content" source="media/atp-download-file-action.png" alt-text="The download file action" lightbox="media/atp-download-file-action.png":::
 
 ### Download quarantined files
 

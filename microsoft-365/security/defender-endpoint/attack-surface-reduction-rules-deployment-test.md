@@ -43,7 +43,7 @@ In this section of the attack surface reduction rules deployment guide, you'll l
 
 Begin your attack surface reduction rules deployment with ring 1.
 
-> :::image type="content" source="images/asr-rules-testing-steps.png" alt-text="The Microsoft Defender for Endpoint attack surface reduction (ASR rules) test steps. Audit attack surface reduction rules, configure ASR rules exclusions. Configure ASR rules Intune. ASR rules exclusions. ASR rules event viewer." lightbox="images/asr-rules-testing-steps.png":::
+> :::image type="content" source="media/asr-rules-testing-steps.png" alt-text="The Microsoft Defender for Endpoint attack surface reduction (ASR rules) test steps. Audit attack surface reduction rules, configure ASR rules exclusions. Configure ASR rules Intune. ASR rules exclusions. ASR rules event viewer." lightbox="media/asr-rules-testing-steps.png":::
 
 ## Step 1: Test attack surface reduction rules using Audit
 
@@ -59,14 +59,14 @@ You can use Microsoft Intune Endpoint Security to configure custom attack surfac
 4. In **Platform**, select **Windows 10, Windows 11, and Windows Server**, and in **Profile**, select **Attack surface reduction rules**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/asr-mem-create-profile.png" alt-text="The profile creation page for ASR rules" lightbox="images/asr-mem-create-profile.png":::
+    > :::image type="content" source="media/asr-mem-create-profile.png" alt-text="The profile creation page for ASR rules" lightbox="media/asr-mem-create-profile.png":::
 
 5. Select **Create**.
 6. In the **Basics** tab of the **Create profile** pane, in **Name** add a name for your policy. In **Description** add a description for your attack surface reduction rules policy.
 7. In the **Configuration settings** tab, under **Attack Surface Reduction Rules**, set all rules to **Audit mode**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/asr-mem-configuration-settings.png" alt-text="The configuration of attack surface reduction rules to Audit mode" lightbox="images/asr-mem-configuration-settings.png":::
+    > :::image type="content" source="media/asr-mem-configuration-settings.png" alt-text="The configuration of attack surface reduction rules to Audit mode" lightbox="media/asr-mem-configuration-settings.png":::
 
     > [!NOTE]
     > There are variations in some attack surface reduction rules mode listings; _Blocked_ and _Enabled_ provide the same functionality.
@@ -80,12 +80,12 @@ You can use Microsoft Intune Endpoint Security to configure custom attack surfac
 10. Review your settings in the **Review + create** pane. Click **Create** to apply the rules.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/asr-mem-review-create.png" alt-text="The Create profile page" lightbox="images/asr-mem-review-create.png":::
+    > :::image type="content" source="media/asr-mem-review-create.png" alt-text="The Create profile page" lightbox="media/asr-mem-review-create.png":::
 
 Your new attack surface reduction policy for attack surface reduction rules is listed in **Endpoint security | Attack surface reduction**.
 
    > [!div class="mx-imgBorder"]
-   > :::image type="content" source="images/asr-mem-my-asr-rules.png" alt-text=" The Attack surface reduction page" lightbox="images/asr-mem-my-asr-rules.png":::
+   > :::image type="content" source="media/asr-mem-my-asr-rules.png" alt-text=" The Attack surface reduction page" lightbox="media/asr-mem-my-asr-rules.png":::
 
 <a name='step-2-understand-the-asr-rules-reporting-page-in-the-microsoft-365-defender-portal'></a>
 
@@ -136,7 +136,7 @@ The **GroupBy** returns results set to the following groups:
 **Filter** opens the **Filter on rules** page, which enables you to scope the results to only the selected attack surface reduction rules:
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-defender365-filter.png" alt-text="The Attack surface reduction rules detections filter on rules" lightbox="images/asr-defender365-filter.png":::
+> :::image type="content" source="media/asr-defender365-filter.png" alt-text="The Attack surface reduction rules detections filter on rules" lightbox="media/asr-defender365-filter.png":::
 
 > [!NOTE]
 > If you have a Microsoft Microsoft 365 Security E5 or A5, Windows E5 or A5 license, the following link opens the Microsoft Defender 365  Reports > [Attack surface reductions](https://security.microsoft.com/asr?viewid=detections) > Detections tab.
@@ -159,12 +159,12 @@ The **Get started** link opens the Microsoft Intune admin center, where you can 
 In Endpoint security | Overview, select **Attack surface reduction**:
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-defender365-05b-mem2.png" alt-text="The Attack surface reduction in Intune" lightbox="images/asr-defender365-05b-mem2.png":::
+> :::image type="content" source="media/asr-defender365-05b-mem2.png" alt-text="The Attack surface reduction in Intune" lightbox="media/asr-defender365-05b-mem2.png":::
 
 The Endpoint Security | Attack surface reduction pane opens:
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-defender365-05b-mem3.png" alt-text="The Endpoint security Attack surface reduction pane" lightbox="images/asr-defender365-05b-mem3.png":::
+> :::image type="content" source="media/asr-defender365-05b-mem3.png" alt-text="The Endpoint security Attack surface reduction pane" lightbox="media/asr-defender365-05b-mem3.png":::
 
 > [!NOTE]
 > If you have a Microsoft Defender 365 E5 (or Windows E5?) license, this link will open the Microsoft Defender 365  Reports > Attack surface reductions > [Configurations](https://security.microsoft.com/asr?viewid=configuration) tab.
@@ -177,7 +177,7 @@ This tab provides a method to select detected entities (for example, false posit
 > Microsoft Defender Antivirus AV exclusions are honored by attack surface reduction rules.  See [Configure and validate exclusions based on extension, name, or location](configure-extension-file-exclusions-microsoft-defender-antivirus.md).
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="Images/asr-defender365-06d.png" alt-text="The pane for exclusion of the detected file" lightbox="Images/asr-defender365-06d.png":::
+> :::image type="content" source="media/asr-defender365-06d.png" alt-text="The pane for exclusion of the detected file" lightbox="media/asr-defender365-06d.png":::
 
 > [!NOTE]
 > If you have a Microsoft Defender 365 E5 (or Windows E5?) license, this link will open the Microsoft Defender 365  Reports > Attack surface reductions > [Exclusions](https://security.microsoft.com/asr?viewid=exclusions) tab.
