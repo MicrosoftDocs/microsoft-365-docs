@@ -62,7 +62,7 @@ For a complete list, see [About Computer Enrollment](https://docs.jamf.com/9.9/c
 
 4. Configure the message for the invitation.
 
-   :::image type="content" source="images/ce580aec080512d44a37ff8e82e5c2ac.png" alt-text="The configuration settings5" lightbox="images/ce580aec080512d44a37ff8e82e5c2ac.png":::
+   :::image type="content" source="media/ce580aec080512d44a37ff8e82e5c2ac.png" alt-text="The configuration settings5" lightbox="media/ce580aec080512d44a37ff8e82e5c2ac.png":::
 
    :::image type="content" source="media/5856b765a6ce677caacb130ca36b1a62.png" alt-text="The configuration settings6" lightbox="media/5856b765a6ce677caacb130ca36b1a62.png":::
 

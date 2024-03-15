@@ -283,7 +283,7 @@ Admins can go to the [Microsoft Endpoint Management admin center](https://endpoi
 1. The selected configuration will be listed. Change the **configuration value to 1** to enable Microsoft Defender support personal profiles. A notification will appear informing the admin about the same. Click on **Next**.
 
     > [!div class="mx-imgBorder"]
-    > ![Image of changing config value.](images/changeconfigvalue.png)
+    > ![Image of changing config value.](media/changeconfigvalue.png)
 
 1. **Assign** the configuration policy to a group of users. **Review and create** the policy.
 

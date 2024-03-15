@@ -135,7 +135,7 @@ Then, you continue by creating several different types of endpoint security poli
 5. Select settings as required, then select  **Next**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/cea7e288b5d42a9baf1aef0754ade910.png" alt-text="The Microsoft Intune admin center6" lightbox="images/cea7e288b5d42a9baf1aef0754ade910.png":::
+    > :::image type="content" source="media/cea7e288b5d42a9baf1aef0754ade910.png" alt-text="The Microsoft Intune admin center6" lightbox="media/cea7e288b5d42a9baf1aef0754ade910.png":::
 
     > [!NOTE]
     > In this instance, this has been auto populated as Defender for Endpoint has already been integrated with Intune. For more information on the integration, see [Enable Microsoft Defender for Endpoint in Intune](/mem/intune/protect/advanced-threat-protection-configure#to-enable-microsoft-defender-atp).
@@ -265,7 +265,7 @@ Then, you continue by creating several different types of endpoint security poli
 4. Select **Windows 10 and Later - Web protection > Create**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/cd7b5a1cbc16cc05f878cdc99ba4c27f.png" alt-text="The Microsoft Intune admin center26" lightbox="images/cd7b5a1cbc16cc05f878cdc99ba4c27f.png":::
+    > :::image type="content" source="media/cd7b5a1cbc16cc05f878cdc99ba4c27f.png" alt-text="The Microsoft Intune admin center26" lightbox="media/cd7b5a1cbc16cc05f878cdc99ba4c27f.png":::
 
 5. Enter a name and description, then select  **Next**.
 
@@ -389,7 +389,7 @@ To confirm that the configuration policy is applied to your test device, follow 
     >
     > AttackSurfaceReductionRules_Ids:
 
-    :::image type="content" source="images/cb0260d4b2636814e37eee427211fe71.png" alt-text="The command line-1" lightbox="images/cb0260d4b2636814e37eee427211fe71.png":::
+    :::image type="content" source="media/cb0260d4b2636814e37eee427211fe71.png" alt-text="The command line-1" lightbox="media/cb0260d4b2636814e37eee427211fe71.png":::
 
 3. After applying the policy on a test device, open a PowerShell Windows and type `Get-MpPreference`.
 
