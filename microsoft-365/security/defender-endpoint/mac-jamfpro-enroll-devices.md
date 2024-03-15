@@ -48,7 +48,7 @@ For a complete list, see [About Computer Enrollment](https://docs.jamf.com/9.9/c
 
 2. Select **+ New**.
 
-   :::image type="content" source="images/b6c7ad56d50f497c38fc14c1e315456c.png" alt-text="The close up of a logo description automatically generated" lightbox="images/b6c7ad56d50f497c38fc14c1e315456c.png":::
+   :::image type="content" source="media/b6c7ad56d50f497c38fc14c1e315456c.png" alt-text="The close up of a logo description automatically generated" lightbox="media/b6c7ad56d50f497c38fc14c1e315456c.png":::
 
 3. In **Specify Recipients for the Invitation** > under **Email Addresses** enter the e-mail address(es) of the recipients.
 
