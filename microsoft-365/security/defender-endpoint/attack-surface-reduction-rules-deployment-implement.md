@@ -30,7 +30,7 @@ search.appverid: met150
 
 Implementing attack surface reduction rules move the first test ring into an enabled, functional state.
 
-> :::image type="content" source="images/asr-rules-implementation-steps.png" alt-text="The procedure to implement attack surface reduction rules" lightbox="images/asr-rules-implementation-steps.png":::
+> :::image type="content" source="media/asr-rules-implementation-steps.png" alt-text="The procedure to implement attack surface reduction rules" lightbox="media/asr-rules-implementation-steps.png":::
   
 
 ## Step 1: Transition attack surface reduction rules from Audit to Block
