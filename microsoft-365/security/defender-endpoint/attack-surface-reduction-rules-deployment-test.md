@@ -109,11 +109,11 @@ The attack surface reduction rules pane provides an overview of detected events 
 > [!NOTE]
 > There are some variations in attack surface reduction rules reports. Microsoft is in the process of updating the behavior of the attack surface reduction rules reports to provide a consistent experience.
 
-:::image type="content" source="images/attack-surface-reduction-rules-report-main-detections-configuration-card.png" alt-text="Graph that shows the attack surface reduction rules report summary configuration card." lightbox="images/attack-surface-reduction-rules-report-main-detections-configuration-card.png":::
+:::image type="content" source="media/attack-surface-reduction-rules-report-main-detections-configuration-card.png" alt-text="Graph that shows the attack surface reduction rules report summary configuration card." lightbox="media/attack-surface-reduction-rules-report-main-detections-configuration-card.png":::
 
 Select **View detections** to open the **Detections** tab.
 
->:::image type="content" source="images/attack-surface-reduction-rules-report-main-tabs-search.png" alt-text="Screenshot that shows the attack surface reduction rules report search feature." lightbox="images/attack-surface-reduction-rules-report-main-tabs-search.png":::
+>:::image type="content" source="media/attack-surface-reduction-rules-report-main-tabs-search.png" alt-text="Screenshot that shows the attack surface reduction rules report search feature." lightbox="media/attack-surface-reduction-rules-report-main-tabs-search.png":::
 
 The **GroupBy** and **Filter** pane provide the following options:
 
@@ -131,7 +131,7 @@ The **GroupBy** returns results set to the following groups:
 > [!NOTE]
 > When filtering by rule, the number of individual _detected_ items listed in the lower half of the report is currently limited to 200 rules. You can use **Export** to save the full list of detections to Excel.
 
-:::image type="content" source="images/attack-surface-reduction-rules-report-main-tabs-search-configuration-tab.png" alt-text="Screenshot that shows the ASR rules report search feature on the configuration tab." lightbox="images/attack-surface-reduction-rules-report-main-tabs-search-configuration-tab.png":::
+:::image type="content" source="media/attack-surface-reduction-rules-report-main-tabs-search-configuration-tab.png" alt-text="Screenshot that shows the ASR rules report search feature on the configuration tab." lightbox="media/attack-surface-reduction-rules-report-main-tabs-search-configuration-tab.png":::
 
 **Filter** opens the **Filter on rules** page, which enables you to scope the results to only the selected attack surface reduction rules:
 
@@ -203,7 +203,7 @@ To configure specific rule exclusions:
 
 5. At the bottom of the **Create profile** wizard, select **Next** and follow the wizard instructions.
 
->:::image type="content" source="images/attack-surface-reduction-rules-report-per-rule-exclusion.png" alt-text="Screenshot that shows the configuration settings for adding ASR per-rule exclusions." lightbox="images/attack-surface-reduction-rules-report-per-rule-exclusion.png":::
+>:::image type="content" source="media/attack-surface-reduction-rules-report-per-rule-exclusion.png" alt-text="Screenshot that shows the configuration settings for adding ASR per-rule exclusions." lightbox="media/attack-surface-reduction-rules-report-per-rule-exclusion.png":::
 
 > [!TIP]
 > Use the checkboxes next to your list of exclusion entries to select items to **Delete**, **Sort**, **Import**, or **Export**.

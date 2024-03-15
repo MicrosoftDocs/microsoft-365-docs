@@ -222,7 +222,7 @@ Microsoft Defender Antivirus is a built-in anti-malware solution that provides n
 
     For more information, see [Windows Security configuration framework](/windows/security/threat-protection/windows-security-configuration-framework/windows-security-configuration-framework).
   
-    :::image type="content" source="images/cd7daeb392ad5a36f2d3a15d650f1e96.png" alt-text="The next-generation protection pane2" lightbox="images/cd7daeb392ad5a36f2d3a15d650f1e96.png":::
+    :::image type="content" source="media/cd7daeb392ad5a36f2d3a15d650f1e96.png" alt-text="The next-generation protection pane2" lightbox="media/cd7daeb392ad5a36f2d3a15d650f1e96.png":::
 
     :::image type="content" source="media/36c7c2ed737f2f4b54918a4f20791d4b.png" alt-text="The next-generation protection pane3" lightbox="media/36c7c2ed737f2f4b54918a4f20791d4b.png":::
 
@@ -314,7 +314,7 @@ See [Optimize attack surface reduction rule deployment and detections](/microsof
 
 3. Set the setting to **Audit** and select **Next**.
 
-   :::image type="content" source="images/c039b2e05dba1ade6fb4512456380c9f.png" alt-text="The System Center Configuration Manager2" lightbox="images/c039b2e05dba1ade6fb4512456380c9f.png":::
+   :::image type="content" source="media/c039b2e05dba1ade6fb4512456380c9f.png" alt-text="The System Center Configuration Manager2" lightbox="media/c039b2e05dba1ade6fb4512456380c9f.png":::
 
 4. Confirm the new Exploit Guard Policy by selecting **Next**.
 
