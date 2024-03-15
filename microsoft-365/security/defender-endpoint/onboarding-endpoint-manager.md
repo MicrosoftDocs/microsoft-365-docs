@@ -411,6 +411,6 @@ To confirm that the configuration policy is applied to your test device, follow 
 
 4. You should see a response with a 1 as shown in the following image:
 
-   :::image type="content" source="images/c06fa3bbc2f70d59dfe1e106cd9a4683.png" alt-text="The command line-4" lightbox="images/c06fa3bbc2f70d59dfe1e106cd9a4683.png":::
+   :::image type="content" source="media/c06fa3bbc2f70d59dfe1e106cd9a4683.png" alt-text="The command line-4" lightbox="media/c06fa3bbc2f70d59dfe1e106cd9a4683.png":::
    
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
