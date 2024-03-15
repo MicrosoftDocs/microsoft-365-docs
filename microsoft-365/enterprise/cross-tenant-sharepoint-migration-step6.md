@@ -44,7 +44,7 @@ Now you're ready to start your SharePoint migration. Before starting any cross-t
 2. To start the migration, a SharePoint Online Admin or Microsoft 365 Global Admin of the source tenant must run the following command:
 
    ```PowerShell
-   Start-SPOCrossTenantGroupContentMove  -SourceSiteUrl <…> -TargetSiteUrl <…> -TargetCrossTenantHostUrl| <…>
+   Start-SPOCrossTenantSiteContentMove  -SourceSiteUrl <…> -TargetSiteUrl <…> -TargetCrossTenantHostUrl| <…>
    ```
 
    |Parameters|Description|
