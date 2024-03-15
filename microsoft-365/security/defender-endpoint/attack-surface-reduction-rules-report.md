@@ -177,7 +177,7 @@ Filtering provides a way for you to specify what results are returned:
 >:::image type="content" source="images/attack-surface-reduction-rules-report-main-tabs-search-configuration-tab.png" alt-text="Screenshot that shows the ASR rules report search feature on the configuration tab." lightbox="images/attack-surface-reduction-rules-report-main-tabs-search-configuration-tab.png":::
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-defender365-filter.png" alt-text="Screenshot that shows the attack surface reduction rules detections filter on rules." lightbox="images/asr-defender365-filter.png":::
+> :::image type="content" source="media/asr-defender365-filter.png" alt-text="Screenshot that shows the attack surface reduction rules detections filter on rules." lightbox="media/asr-defender365-filter.png":::
 
 ### Attack surface reduction rules main detections tab
 
