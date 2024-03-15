@@ -104,7 +104,7 @@ If you run systemextensionsctl list, the following screen appears:
    
 4. From the resultant screen, check the **Microsoft Defender** checkbox.
 
-   :::image type="content" source="images/checking-md-checkbox.png" alt-text="Checking the Microsoft Defender checkbox." lightbox="images/checking-md-checkbox.png":::
+   :::image type="content" source="media/checking-md-checkbox.png" alt-text="Checking the Microsoft Defender checkbox." lightbox="media/checking-md-checkbox.png":::
 
 ### Full Disk Access
 
