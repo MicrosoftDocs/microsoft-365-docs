@@ -63,13 +63,13 @@ f1.keywords: NOCSH
 
 **Q: Will there be new monthly security updates, feature updates and Office updates?**
 
-**A:** For customers who have signed up for monthly security updates, their tests will continue to be triggered upon original configuration until May 31. Feature updates are paused after Build 22635.3212 in Beta Channel. Office updates are paused after Build 16.0.17328.20004. Please [submit a support request](https://aka.ms/TestBaseSupport) if needed..
+**A:** For customers who have signed up for monthly security updates, their tests will continue to be triggered upon original configuration until May 31. Feature updates are paused after Build 22635.3212 in Beta Channel. Office updates are paused after Build 16.0.17328.20004. [Submit a support request](https://aka.ms/TestBaseSupport) if needed.
 
 
 **Q: What if I need data from Test Base? Will I still access to my data?**
 
 **A:** 
-Customers will retain access to the service and data until May 31, 2024. Following this date, all customer data will be permanently deleted. During the transition, customers can retain automation test scripts, Test Base account records, or download test results for future reference. Please refer to [Test Base documentation - Export your data](https://aka.ms/testbase-doc-exportdata) or contact us via [testbase_support@microsoft.com](mailto:testbase_support@microsoft.com) before May 31.
+Customers will retain access to the service and data until May 31, 2024. Following this date, all customer data will be permanently deleted. During the transition, customers can retain automation test scripts, Test Base account records, or download test results for future reference. Refer to [Test Base documentation - Export your data](https://aka.ms/testbase-doc-exportdata) or contact us via [testbase_support@microsoft.com](mailto:testbase_support@microsoft.com) before May 31.
 
 
 **Q: Who do I contact for Test Base support?**
