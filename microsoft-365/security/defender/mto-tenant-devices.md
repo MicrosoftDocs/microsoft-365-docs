@@ -1,6 +1,6 @@
 ---
-title: Devices in multi-tenant management 
-description: Learn about multi-tenant device view in multi-tenant management of the Microsoft Defender XDR 
+title: Devices in multitenant management 
+description: Learn about multitenant device view in multitenant management of the Microsoft Defender XDR.
 search.appverid: met150
 ms.service: defender-xdr
 ms.author: siosulli
@@ -22,11 +22,11 @@ ms.date: 03/15/2024
 
 - [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-The **Devices** page in multi-tenant management enables you to quickly manage tenants and devices.
+The **Devices** page in multitenant management enables you to quickly manage tenants and devices.
 
 ## Tenant device list
 
-The Tenants page in multi-tenant management lists each tenant you have access to. Each tenant page includes details such as the number of devices and device types, the number of high value and high exposure devices, and the number of devices available to onboard:
+The Tenants page in multitenant management lists each tenant you have access to. Each tenant page includes details such as the number of devices and device types, the number of high value and high exposure devices, and the number of devices available to onboard:
 
    :::image type="content" source="../../media/multi-tenant/devices/devices-tenant-view.png" alt-text="Screenshot of the Microsoft Defender XDR tenants list in the Devices page" lightbox="../../media/multi-tenant/devices/devices-tenant-view.png":::
 
@@ -43,7 +43,7 @@ Select a tenant name to navigate to the device inventory for that tenant in the 
 
 ## Device inventory
 
-The Device inventory page in multi-tenant management lists all the devices in each tenant that you have access to. The page is like the [Defender for Endpoint device inventory](../defender-endpoint/machines-view-overview.md) with the addition of the **Tenant name** column. Moreover, the device inventory page does not have the network, IOT, and uncategorized devices tabs.
+The Device inventory page lists all the devices in each tenant that you have access to. The page is like the [Defender for Endpoint device inventory](../defender-endpoint/machines-view-overview.md) with the addition of the **Tenant name** column. Moreover, the device inventory page doesn't have the network, IOT, and uncategorized devices tabs.
 
 You can navigate to the device inventory page by selecting **Assets > Devices** in Microsoft Defender XDR's navigation menu.
 
@@ -67,7 +67,7 @@ You can search a specific device with the search function. You can sort and filt
 - Internet facing
 - Group
 - Exclusion state
-- Managed by 
+- Managed by
 
 To manage a device, select a specific device from the list. Device management tasks like managing tags, device exclusion, and reporting inaccuracy becomes available at the top of the device list.
 
