@@ -84,7 +84,7 @@ sections:
           2. Find the tenant that you want to remove, select the three dots (more actions) next to the tenant name, and then select **Remove tenant**.
           3. In the confirmation dialog, select **Confirm** to remove the tenant.
               > [!NOTE]
-              > Once you remove a tenant, you can't take action on the tenant until the removal is complete. It may take up to 48 hours for the removal process to complete.
+              > Once you remove a tenant, you can't take action on the tenant until the removal process is complete. It may take up to 48 hours for this process to complete.
           
           To learn more about tenants, see [Microsoft 365 Lighthouse tenants page overview](m365-lighthouse-tenants-page-overview.md).
           

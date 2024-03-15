@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: ebamoh
-ms.date: 03/14/2023
+ms.date: 03/15/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -67,7 +67,7 @@ The following table shows the different statuses and their meaning. For informat
 | Status           | Description                                                                                                        |
 |------------------|--------------------------------------------------------------------------------------------------------------------|
 | Managed          | This customer tenant can be actively managed and monitored in Lighthouse for users and devices with required licenses.  |
-| Limited          | This customer tenant has access to only a limited set of experiences in Lighthouse, including GDAP setup and management, user search, user details, tenant tagging, and service health. <br> Select the tenant name to see a detailed status of Lighthouse management requirements. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).|
+| Limited          | This customer tenant has access to only a limited set of experiences in Lighthouse, including GDAP setup and management, user search, user details, tenant tagging, and service health. <br>Select the tenant name to see a detailed status of Lighthouse management requirements. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).|
 | Removed by partner | Your organization has excluded this customer tenant from Lighthouse management. To reactivate the tenant for management by Lighthouse, go to the **Tenants** page, select the three dots (more actions) next to the tenant, and then select **Manage tenant**. |
 | Removed by customer | The customer chose to disallow the use of Microsoft 365 Lighthouse to manage their tenant. To allow the use of Microsoft 365 Lighthouse to manage their tenant, an admin in the customer tenant needs to go to **Org settings** in the Microsoft 365 admin center, select **Microsoft 365 Lighthouse** on the **Services** tab, and then select the option to allow the use of Microsoft 365 Lighthouse customer management experiences in their tenant. |
 | Error       | An error occurred during the onboarding process for this customer tenant and we're working on a fix. If this error persists for more than 24 hours, please contact Support. |
@@ -101,14 +101,16 @@ The Tenant overview section provides information about the customer tenant from 
 | Tenant Domain    |The organization's domain.|
 | Tenant ID|The organization's tenant ID.|
 | Lighthouse management | The management status of the customer tenant in Lighthouse (Managed, Limited, Removed by partner, or Removed by customer) |
-| Delegated access  | The type of admin privileges the customer has granted you: DAP, GDAP, or None. |
+| Delegated access  | The type of admin privileges the customer has granted your organization: DAP, GDAP, or None. |
 | Your permissions    | The roles assigned to you in the tenant. Roles determine which tasks you can complete for customers, and what data you can view.|
 | Total users    |The number of users assigned in the tenant. You may select this number to open the Users page for that tenant.|
 | Total devices|The number of devices enrolled in the tenant. You may select this number to open the Devices page for that tenant.|
 
 #### Scores section
 
-TBD
+The Scores section shows you the customer tenant's Secure Score, Exposure Score, and adoption insights at a glance. Select any of the links in this section to view detailed information about the scores and insights.
+
+To learn more, see [Microsoft Secure Score](../security/defender/microsoft-secure-score.md), [Exposure score in Defender Vulnerability Management](../security/defender-vulnerability-management/tvm-exposure-score.md), and [Microsoft Adoption Score](../admin/adoption/adoption-score.md).
 
 #### Customer overview section
 
@@ -168,6 +170,8 @@ The Deployment progress by user tab also includes the following options:
 ### Secure score tab
 
 This tab provides Microsoft Security Score information, a measurement of an organization's security posture. The higher the score, the better protected the organization is from threats. Microsoft provides recommendations for how to increase an organization's secure score, which will improve its security posture. To learn more, see [Microsoft Secure Score](../security/defender/microsoft-secure-score.md).
+
+This tab also provides adoption insights, which are a subset of the Microsoft Adoption Score. Adoption insights tell you how the organization uses Microsoft products and features so you can help them improve their productivity and use the products more efficiently. To learn more, see [Microsoft Adoption Score](../admin/adoption/adoption-score.md).
 
 ## Related content
 
