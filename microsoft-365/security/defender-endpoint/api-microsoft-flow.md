@@ -31,7 +31,7 @@ Automating security procedures is a standard requirement for every modern Securi
 
 Use this article to guide you in creating automations that are triggered by an event, such as when a new alert is created in your tenant. Microsoft Defender API has an official Power Automate Connector with many capabilities. 
 
-:::image type="content" source="images/api-flow-0.png" alt-text="The Actions page in the Microsoft Defender 365 portal" lightbox="images/api-flow-0.png" :::
+:::image type="content" source="media/api-flow-0.png" alt-text="The Actions page in the Microsoft Defender 365 portal" lightbox="media/api-flow-0.png" :::
 
 > [!NOTE]
 > For more information about premium connectors licensing prerequisites, see [Licensing for premium connectors](/power-automate/triggers-introduction#licensing-for-premium-connectors).
@@ -44,15 +44,15 @@ The following example demonstrates how to create a Flow that is triggered anytim
 
 2. Go to **My flows** \> **New** \> **Automated-from blank**.
 
-    :::image type="content" source="images/api-flow-1.png" alt-text="The New flow pane under My flows menu item in the Microsoft Defender 365 portal" lightbox="images/api-flow-1.png":::
+    :::image type="content" source="media/api-flow-1.png" alt-text="The New flow pane under My flows menu item in the Microsoft Defender 365 portal" lightbox="media/api-flow-1.png":::
 
 3. Choose a name for your Flow, search for "Microsoft Defender ATP Triggers" as the trigger, and then select the new Alerts trigger.
 
-    :::image type="content" source="images/api-flow-2.png" alt-text=" The Choose your flow's trigger section in the Microsoft Defender 365 portal" lightbox="images/api-flow-2.png" :::
+    :::image type="content" source="media/api-flow-2.png" alt-text=" The Choose your flow's trigger section in the Microsoft Defender 365 portal" lightbox="media/api-flow-2.png" :::
 
 Now you have a Flow that is triggered every time a new Alert occurs.
 
-:::image type="content" source="images/api-flow-3.png" alt-text="A trigger description" lightbox="images/api-flow-3.png":::
+:::image type="content" source="media/api-flow-3.png" alt-text="A trigger description" lightbox="media/api-flow-3.png":::
 
 All you need to do now is choose your next steps.
 For example, you can isolate the device if the Severity of the Alert is High and send an email about it.
@@ -66,7 +66,7 @@ The Alert trigger provides only the Alert ID and the Machine ID. You can use the
 
 3. Set the **Alert ID** from the last step as **Input**.
 
-    :::image type="content" source="images/api-flow-4.png" alt-text="The Alerts pane"  lightbox="images/api-flow-4.png":::
+    :::image type="content" source="media/api-flow-4.png" alt-text="The Alerts pane"  lightbox="media/api-flow-4.png":::
 
 ### Isolate the device if the Alert's severity is High
 
@@ -76,7 +76,7 @@ The Alert trigger provides only the Alert ID and the Machine ID. You can use the
 
    If yes, add the **Microsoft Defender ATP - Isolate machine** action with the Machine ID and a comment.
 
-    :::image type="content" source="images/api-flow-5.png" alt-text="The Actions pane"  lightbox="images/api-flow-5.png":::
+    :::image type="content" source="media/api-flow-5.png" alt-text="The Actions pane"  lightbox="media/api-flow-5.png":::
 
 3. Add a new step for emailing about the Alert and the Isolation. There are multiple email connectors that are easy to use, such as Outlook or Gmail.
 
