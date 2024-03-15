@@ -1299,6 +1299,36 @@
       "source_path": "microsoft-365/enterprise/client-server-software-roadmap-microsoft-365.md",
       "redirect_url": "/microsoft-365/enterprise/index",
       "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/skype-for-business-online.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/sharepoint-2007-migration-options.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/tune-skype-for-business-online-performance.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/use-lean-popouts-to-reduce-memory-used-when-reading-mail-messages.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/powershell-roadmap-microsoft-365.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/placeholder.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
    }
   ]
 }
