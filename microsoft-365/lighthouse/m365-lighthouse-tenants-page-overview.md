@@ -167,11 +167,11 @@ The Deployment progress by user tab also includes the following options:
 - **Refresh:** Select to retrieve the most current deployment step data.
 - **Search:** Enter keywords to quickly locate a specific deployment step in the list.
 
-### Secure score tab
+### Scores tab
 
-This tab provides Microsoft Security Score information, a measurement of an organization's security posture. The higher the score, the better protected the organization is from threats. Microsoft provides recommendations for how to increase an organization's secure score, which will improve its security posture. To learn more, see [Microsoft Secure Score](../security/defender/microsoft-secure-score.md).
+This tab provides Microsoft Secure Score information and adoption insights. Microsoft Secure Score is a measurement of an organization's security posture. The higher the score, the better protected the organization is from threats. Microsoft provides recommendations for how to increase an organization's secure score, which will improve its security posture. To learn more, see [Microsoft Secure Score](../security/defender/microsoft-secure-score.md).
 
-This tab also provides adoption insights, which are a subset of the Microsoft Adoption Score. Adoption insights tell you how the organization uses Microsoft products and features so you can help them improve their productivity and use the products more efficiently. To learn more, see [Microsoft Adoption Score](../admin/adoption/adoption-score.md).
+Adoption insights are a subset of the Microsoft Adoption Score. Adoption insights tell you how the organization uses Microsoft products and features so you can help them improve their productivity and use the products more efficiently. To learn more, see [Microsoft Adoption Score](../admin/adoption/adoption-score.md).
 
 ## Related content
 
