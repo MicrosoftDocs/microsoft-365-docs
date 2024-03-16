@@ -31,8 +31,8 @@ To see the available payloads, open the Microsoft Defender portal at <https://se
 
 **Payloads** in the **Content library** tab has three tabs:
 
-- **Global payloads**: Contains the built-in, non-modifiable payloads.
-- **Tenant payloads**: Contains the custom payloads that you've created.
+- **Global payloads**: Contains the built-in, unmodifiable payloads.
+- **Tenant payloads**: Contains the custom payloads that you created.
 - **MDO recommendations**: Payloads that are recommended by Defender for Office 365 as having considerable impact when used by attackers. This list is refreshed monthly.
 
 The information that's available on the tabs is described in the following list:
@@ -59,7 +59,7 @@ The information that's available on the tabs is described in the following list:
   - **Simulations launched**<sup>\*</sup>: The number of launched simulations that use the payload.
   - **Source**
   - **Predicted compromised rate (%)**<sup>\*</sup>: Historical data across Microsoft 365 that predicts the percentage of people who will be compromised by this payload (users compromised / total number of users who receive the payload). For more information, see [Predicted compromise rate](attack-simulation-training-get-started.md#predicted-compromise-rate).
-  - **Created by**<sup>\*</sup>: For built-in payloads, the value is **Microsoft**. For custom payloads, the value is the UPN of the user who created the payload.
+  - **Created by**<sup>\*</sup>: For built-in payloads, the value is **Microsoft**. For custom payloads, the value is the user principal name (UPN) of the user who created the payload.
   - **Last modified**<sup>\*</sup>
   - **Status**<sup>\*</sup>: Values are:
     - **Ready**

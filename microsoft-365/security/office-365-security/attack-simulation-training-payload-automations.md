@@ -88,7 +88,7 @@ To create a payload automation, do the following steps:
 
    To add another condition, select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Add condition**.
 
-   To remove a condition after you've added it, select :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png" border="false":::.
+   To remove a condition after you add it, select :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png" border="false":::.
 
    When you're finished on the **Run conditions** page, select **Next**.
 

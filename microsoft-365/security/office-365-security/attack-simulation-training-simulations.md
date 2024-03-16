@@ -773,7 +773,7 @@ All actions on existing simulations start on the **Simulations** tab. To go ther
 
 You can copy an existing simulation and modify it to suit your needs. This action saves time and effort when you create new simulations based on previous ones.
 
-You can copy any simulation that's available in the **Simulations** tab, regardless of the **Status** value. When you copy the simulation you can change the setting in the new copy of the simulation . For example, change the simulation name, description, technique, payload, and target users.
+You can copy any simulation that's available in the **Simulations** tab, regardless of the **Status** value. When you copy the simulation, you can change the setting in the new copy of the simulation . For example, change the simulation name, description, technique, payload, and target users.
 
 - We don't recommend copying **Failed** simulations, because the reasons for failure could recur in the copied simulation.
 - When you copy a simulation, the most recent settings are used in the copy (for example, the payload, landing page, and end-user notifications). If any content is deleted, you're prompted to select the respective content again.
@@ -837,4 +837,4 @@ To include a completed session in reporting after it has been excluded, do the f
 1. On the **Simulations** tab at <https://security.microsoft.com/attacksimulator?viewid=simulations>, set the **Show excluded simulations** toggle to :::image type="icon" source="../../media/scc-toggle-on.png" border="false"::: **On**.
 2. Select the simulation by clicking **⋮** (**Actions**) at the end of the row, and then select :::image type="icon" source="../../media/m365-cc-sc-include-icon.png" border="false"::: **Exclude**.
 
-After you've included the excluded simulation, the **Status** value changes to **Completed**. Toggle **Show excluded simulations** to off :::image type="icon" source="../../media/scc-toggle-off.png" border="false"::: to see the simulation.
+After you included the excluded simulation, the **Status** value changes to **Completed**. Toggle **Show excluded simulations** to off :::image type="icon" source="../../media/scc-toggle-off.png" border="false"::: to see the simulation.

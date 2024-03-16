@@ -34,7 +34,7 @@ To see the available login pages, open the Microsoft Defender portal at <https:/
   - **Microsoft login page**
   - **Non-branded login page**
 
-- **Tenant login pages** tab: Contains the custom login pages that you've created.
+- **Tenant login pages** tab: Contains the custom login pages that you created.
 
 The following information is shown for each login page. You can sort the login pages by clicking on an available column header. Select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns** to change the columns that are shown. By default, all available columns are selected.
 
@@ -54,7 +54,7 @@ When you select a login page from the list by clicking anywhere in the row other
 
 - :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png" border="false"::: **Edit** is available only in custom login pages on the **Tenant login pages** tab.
 - :::image type="icon" source="../../media/m365-cc-sc-set-as-default-icon.png" border="false"::: **Mark as default** to make this login page the default selection in **Credential Harvest** or **Link in Attachment** [payloads](attack-simulation-training-payloads.md) or [payload automations](attack-simulation-training-payload-automations.md). If the login page is already the default, :::image type="icon" source="../../media/m365-cc-sc-set-as-default-icon.png" border="false"::: **Mark as default** isn't available.
-- **Preview** tab: View the login page as users will see it. **Page 1** and **Page 2** links are available at the bottom of the page for two-page login pages.
+- **Preview** tab: View the login page as users see it. **Page 1** and **Page 2** links are available at the bottom of the page for two-page login pages.
 - **Details** tab: View details about the login page:
   - **Description**
   - **Status**: **Ready** or **Draft**.

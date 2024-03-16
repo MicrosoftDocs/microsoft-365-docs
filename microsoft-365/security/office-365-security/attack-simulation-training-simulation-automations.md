@@ -22,7 +22,7 @@ appliesto:
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2, simulation automations allow you to run multiple benign cyberattack simulations in your organization. Simulation automations can contain multiple social engineering techniques and payloads, and can start on an automated schedule. Creating a simulation automation is very similar to [creating an individual simulation](attack-simulation-training-simulations.md), except for the ability to select multiple techniques, payloads, and the automation schedule.
+In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2, simulation automations allow you to run multiple benign cyberattack simulations in your organization. Simulation automations can contain multiple social engineering techniques and payloads, and can start on an automated schedule. Creating a simulation automation is similar to [creating an individual simulation](attack-simulation-training-simulations.md), except for the ability to select multiple techniques, payloads, and the automation schedule.
 
 For getting started information about Attack simulation training, see [Get started using Attack simulation training](attack-simulation-training-get-started.md).
 
@@ -101,7 +101,7 @@ On the **Select payloads and login page** page, select one of the following opti
 
   - The **Overview** tab (named **Payload** in **Credential Harvest** and **Link in Attachment** payloads) contains details about the payload, include a preview.
   - The **Login page** tab is available only for **Credential Harvest** or **Link in Attachment** payloads and is described in the [Select login pages](#select-login-pages) subsection.
-  - The **Attachment** tab is available only for **Malware Attachment**, **Link in Attachment**, and **Oauth Consent Grant** payloads. This tab contains details about the attachment, include a preview.
+  - The **Attachment** tab is available only for **Malware Attachment**, **Link in Attachment**, and **Oauth Consent Grant** payloads. This tab contains details about the attachment, including a preview.
   - The **Simulations launched** tab contains the **Simulation name**, **Click rate**, **Compromised rate**, and **Action**.
 
   > [!TIP]
@@ -109,7 +109,7 @@ On the **Select payloads and login page** page, select one of the following opti
 
   Leave the payload details flyout open to change the login page or create a new login page to use as described in the following subsections.
 
-  Or, if you're finished in the payload details flyout, select :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: **Close** to return to the **Select payloads and login page** page, verify one or more of the required payload are selected and then select **Next** to continue.
+  Or, if you're finished in the payload details flyout, select :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: **Close** to return to the **Select payloads and login page** page, verify one or more of the required payloads are selected and then select **Next** to continue.
 
   :::image type="content" source="../../media/attack-sim-training-simulations-select-payload-details-payload-tab.png" alt-text="The Payload tab in the payload details flyout in Attack simulation training in the Microsoft Defender portal" lightbox="../../media/attack-sim-training-simulations-select-payload-details-payload-tab.png":::
 
@@ -169,7 +169,7 @@ When you're finished on the **Select a payload and login page** page, select **N
 On the **Configure OAuth payload** page, configure the following settings:
 
 - **App name**: Enter a name for the payload.
-- **App logo**: Select **Browse** to select a .png, .jpeg, or .gif file to use. To remove a file after you've selected it, select **Remove**.
+- **App logo**: Select **Browse** to select a .png, .jpeg, or .gif file to use. To remove a file after you selected it, select **Remove**.
 - **Select app scope**: Choose one of the following values:
   - **Read user calendars**
   - **Read user contacts**
@@ -411,7 +411,7 @@ On the **Select end user notification** page, select from the following notifica
     - For **Microsoft default positive reinforcement notification**, select **Do not deliver**, **Deliver after campaign ends**, or **Deliver during campaign**.
     - For **Microsoft default training reminder notification**, select **Twice a week** or **Weekly**.
   - **Actions**: If you select :::image type="icon" source="../../media/m365-cc-sc-view-icon.png" border="false"::: **View**, a **Review notification** page opens with the following information:
-    - **Preview** tab: View the notification message as users will see it.
+    - **Preview** tab: View the notification message as users see it.
       - To view the message in different languages, use the **Select language** box.
       - Use the **Select payload to preview** box to select the notification message for simulations that contain multiple payloads.
     - **Details** tab: View details about the notification:
@@ -594,13 +594,13 @@ When you're finished on the **Schedule details** page, select **Next**.
 
 On the **Launch details** page, configure the following additional settings for the automation:
 
-- **Use unique payloads across simulations within an automation** section: By default, **Unique payloads** is not selected.
+- **Use unique payloads across simulations within an automation** section: By default, **Unique payloads** isn't selected.
 
-- **Target all selected users in every simulation run** section: By default, **Target all selected users in every simulation run** is not selected.
+- **Target all selected users in every simulation run** section: By default, **Target all selected users in every simulation run** isn't selected.
 
 - **Target repeat offenders** section: By default, **Target repeat offenders**is not selected. If you select it, use **Enter the maximum number of times a user can be targeted within this automation** that appears to enter a value from 1 to 10.
 
-- **Send simulation email based upon the user's current time zone setting from Outlook web app** section: By default, **Enable region aware delivery** is not selected.
+- **Send simulation email based upon the user's current time zone setting from Outlook web app** section: By default, **Enable region aware delivery** isn't selected.
 
 When you're finished on the **Launch details** page, select **Next**.
 
@@ -657,17 +657,17 @@ This section contains some of the most common questions about Simulation automat
 
 ### Why does the Status value under Automations show Completed, but the Status value under Simulations show In progress?
 
-**Completed** on the **Simulation automations** page means the job of simulation automation is complete, and no more simulations will be created by it. Simulation is a separate entity that will complete after 30 days of simulation launch time.
+**Completed** on the **Simulation automations** page means the job of simulation automation is complete, and no more simulations are created by it. Simulation is a separate entity that will complete after 30 days of simulation launch time.
 
 ### Why is the simulation end date 30 days after creation, even though I selected an automation end date of one week?
 
-A one week end date for the simulation automation means no new simulations will be created by it after one week. For simulations created by a simulation automation, the default end date is 30 days after the creation of the simulation.
+A one week end date for the simulation automation means no new simulations are created by it after one week. For simulations created by a simulation automation, the default end date is 30 days after the creation of the simulation.
 
 ### If we have multiple social engineering techniques and related payloads (for example, Credential harvest, Link to Malware, and Drive by URL) that target 300 users, how are the payloads sent to users? Do all payload types go to all users, or is the selection random?
 
-If you don't select **Target all selected users in every simulation run** on the [Launch details](#launch-details) page, all targeted users will be distributed over the maximum number of simulations that are created by the simulation automation.
+If you don't select **Target all selected users in every simulation run** on the [Launch details](#launch-details) page, all targeted users are distributed over the maximum number of simulations that are created by the simulation automation.
 
-If you select **Target all selected users in every simulation run** on the [Launch details](#launch-details) page, all targeted users will be part of every simulation that's created by the simulation automation.
+If you select **Target all selected users in every simulation run** on the [Launch details](#launch-details) page, all targeted users are part of every simulation that's created by the simulation automation.
 
 ### How does the Randomize option on the Simulation schedule page work?
 
@@ -685,11 +685,11 @@ This number is the maximum number of runs that can be created by this automation
 
 ### If I select only one specific day between two days (for example, Wednesday), how many simulations will I see on the Simulation tab?
 
-If there's only one Wednesday between the start date and end date, the automation will have only one valid day to send out the simulation. Even if you selected a higher value for **Max number of simulations**, this value will get overwritten to one.
+If there's only one Wednesday between the start date and end date, the automation has only one valid day to send out the simulation. Even if you selected a higher value for **Max number of simulations**, this value gets overwritten to one.
 
 ### How does randomize send times currently work?
 
-Randomize send time works in batches of 1000 users and is meant to be used with a large number of targeted users. If less than 1000 users are involved in simulations created by automations, batches of 100 users are created for randomized send times.
+Randomize send time works in batches of 1,000 users and is meant to be used with a large number of targeted users. If less than 1,000 users are involved in simulations created by automations, batches of 100 users are created for randomized send times.
 
 ## Related links
 
