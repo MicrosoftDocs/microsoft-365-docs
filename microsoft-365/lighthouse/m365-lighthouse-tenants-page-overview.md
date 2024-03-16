@@ -73,7 +73,7 @@ The following table shows the different statuses and their meaning. For informat
 | Error       | An error occurred during the onboarding process for this customer tenant and we're working on a fix. If this error persists for more than 24 hours, please contact Support. |
 
 > [!NOTE]
-> Once you remove a customer tenant, you can't take action on the tenant until the removal process completes. It may take up to 48 hours for the process to complete. If you decide to manage the customer tenant again, it may take up to 48 hours for data to reappear.
+> Once you remove a customer tenant, you can't take action on the tenant until the removal process completes. It may take up to 48 hours for this process to complete. If you decide to manage the customer tenant again, it may take up to 48 hours for data to reappear.
 
 ## Tenant tags
 
