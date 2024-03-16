@@ -101,13 +101,13 @@ This article explains how to use Threat Explorer and Real-time detections to fin
      This information can help identify spoofing and impersonation. For example, messages from internal domain senders should be **Intra-org**, not **Inbound**.
 
    - **Additional action**: Valid values are:
-     -**Automated remediation** (Defender for Office 365 Plan 2)
-     -**Dynamic Delivery**: For more information, see [Dynamic Delivery in Safe Attachments policies](safe-attachments-about.md#dynamic-delivery-in-safe-attachments-policies).
-     -**Manual remediation**
-     -**None**
-     -**Quarantine release**
-     -**Reprocessed**: The message was retroactively identified as good.
-     -**ZAP**: For more information, see [Zero-hour auto purge (ZAP) in Microsoft Defender for Office 365](zero-hour-auto-purge.md).
+     - **Automated remediation** (Defender for Office 365 Plan 2)
+     - **Dynamic Delivery**: For more information, see [Dynamic Delivery in Safe Attachments policies](safe-attachments-about.md#dynamic-delivery-in-safe-attachments-policies).
+     - **Manual remediation**
+     - **None**
+     - **Quarantine release**
+     - **Reprocessed**: The message was retroactively identified as good.
+     - **ZAP**: For more information, see [Zero-hour auto purge (ZAP) in Microsoft Defender for Office 365](zero-hour-auto-purge.md).
 
    - **Primary override**: If organization or user settings allowed or blocked messages that would have otherwise been blocked or allowed. Values are:
      - **Allowed by organization policy**

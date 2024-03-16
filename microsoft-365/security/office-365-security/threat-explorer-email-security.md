@@ -154,7 +154,7 @@ To summarize:
   - **Threat Explorer**: Select **Submit to Microsoft** in the **Start new submission** section. For further instruction, see [Start new submission actions in Threat Explorer](threat-explorer-threat-hunting.md#start-new-submission-actions-in-threat-explorer).
   - **Real-time detections**: Select **Report clean**. For further instruction, see [Start new submission actions in Real-time detections](threat-explorer-threat-hunting.md#start-new-submission-actions-in-real-time-detections).
 
-or
+Or
 
 - Select a message from the details table in the **Email** tab (view) in the **All email**, **Malware**, or **Phish** views by clicking on the **Subject** value.
 

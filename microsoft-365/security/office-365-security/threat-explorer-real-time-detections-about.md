@@ -586,7 +586,7 @@ The **Top clicks** view shows a details table. You can sort the entries by click
 - **Failure**
 
 > [!TIP]
-> All available columns are selected. Currently, if you select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns**, you can't deselect any columns.
+> All available columns are selected. If you select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns**, you can't deselect any columns.
 >
 > To see all columns, you likely need to do one or more of the following steps:
 >
@@ -1178,7 +1178,7 @@ The **Top clicks** view shows a details table. You can sort the entries by click
 - **Failure**
 
 > [!TIP]
-> All available columns are selected. Currently, if you select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns**, you can't deselect any columns.
+> All available columns are selected. If you select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns**, you can't deselect any columns.
 >
 > To see all columns, you likely need to do one or more of the following steps:
 >
@@ -1209,7 +1209,7 @@ The **Campaign** view shows a details table. You can sort the entries by clickin
 
 The information in the table is the same as described in [details table on the Campaigns page](campaigns.md#details-area-on-the-campaigns-page).
 
-When you select an entry by clicking anywhere in the row other than the check box next to the **Name**, a details flyout opens.The information in the flyout is the same as described in [Campaign details](campaigns.md#campaign-details).
+When you select an entry by clicking anywhere in the row other than the check box next to the **Name**, a details flyout opens. The information in the flyout is the same as described in [Campaign details](campaigns.md#campaign-details).
 
 ## Campaigns view in Threat Explorer
 
@@ -1486,7 +1486,7 @@ The **Top clicks** view shows a details table. You can sort the entries by click
 - **Failure**
 
 > [!TIP]
-> All available columns are selected. Currently, if you select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns**, you can't deselect any columns.
+> All available columns are selected. If you select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns**, you can't deselect any columns.
 >
 > To see all columns, you likely need to do one or more of the following steps:
 >
@@ -1565,7 +1565,7 @@ The steps to create property filter/query conditions are the same in all views i
 >
 > **Save query** isn't available in the [Content malware view](#content-malware-view-in-threat-explorer-and-real-time-detections).
 
-Most views in Threat Explorer allow you to save filters (queries) for later use. Saved queries are available on the **Threat traker** page in the Defender portal at <https://security.microsoft.com/threattrackerv2>. For more information about Threat trackers, see [About Threat trackers](threat-trackers.md).
+Most views in Threat Explorer allow you to save filters (queries) for later use. Saved queries are available on the **Threat tracker** page in the Defender portal at <https://security.microsoft.com/threattrackerv2>. For more information about Threat trackers, see [About Threat trackers](threat-trackers.md).
 
 To save queries in Threat Explorer, do the following steps:
 
@@ -1584,7 +1584,7 @@ To save queries in Threat Explorer, do the following steps:
 
 :::image type="content" source="../../media/te-rtd-query-save.png" alt-text="The Save query flyout in Threat Explorer in the Defender portal." lightbox="../../media/te-rtd-query-save.png":::
 
-On the **Saved query** or **Tracked query** tabs on the **Threat traker** page in the Defender portal at <https://security.microsoft.com/threattrackerv2>, you can select **Explore** in the **Actions** column to open and use the query in Threat Explorer.
+On the **Saved query** or **Tracked query** tabs on the **Threat tracker** page in the Defender portal at <https://security.microsoft.com/threattrackerv2>, you can select **Explore** in the **Actions** column to open and use the query in Threat Explorer.
 
 When you open the query from the **Threat tracker** page, :::image type="icon" source="../../media/m365-cc-sc-save-icon.png" border="false"::: **Save query as** and :::image type="icon" source="../../media/m365-cc-sc-gear-icon.png" border="false"::: **Saved query settings** are now available in **Save query** on the **Explorer** page:
 
