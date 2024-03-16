@@ -86,7 +86,7 @@ conceptualContent:
            text: Insights and reporting for attack simulation
          - url: /microsoft-365/security/office-365-security/advanced-delivery-policy-configure
            itemType: how-to-guide
-           text: Configure 3rd party phishing simulation
+           text: Configure third party phishing simulation
 
         # Card
       - title: Enable safe email messages
@@ -176,7 +176,7 @@ additionalContent:
 # additionalContent section (optional)
 # Card with summary style
   - title: Learning, Training, and Certification # < 60 chars (optional)
-    summary: Explore topics in-depth through guided paths and training modules or prepare for the next step in your career with a certification.  # < 160 chars (optional)
+    summary: Explore subjects in-depth through guided paths and training modules or prepare for the next step in your career with a certification.  # < 160 chars (optional)
     items:
         # Card
         - title: Microsoft Defender XDR Ninja training
