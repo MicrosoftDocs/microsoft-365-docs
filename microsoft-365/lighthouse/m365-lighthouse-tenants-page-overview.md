@@ -51,7 +51,7 @@ The tenant list lets you:
 - Assign and manage tags.
 - Assign a baseline.
 - Search for tenants by name.
-- Filter tenants by Lighthouse management status, Deployment status, Delegated access, Baseline, or Tags.
+- Filter tenants by Lighthouse management status, Delegated access, or Tags.
 
 To remove a tenant, manage tenant services, or view and manage tags, select the three dots (more actions) next to the tenant name. You can view individual tenants by either selecting the tenant name or by selecting one of the tags assigned to the tenant.
 
