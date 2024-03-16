@@ -28,9 +28,9 @@ If you have feedback or suggestions that would help us improve the Microsoft Def
 
 1. Microsoft Defender portal (security.microsoft.com):
 
-:::image type="content" source="images/3e2db5015cd4f47436b4765b2303f4f5.png" alt-text="The smiley feedback icon" lightbox="images/3e2db5015cd4f47436b4765b2303f4f5.png":::
+:::image type="content" source="media/3e2db5015cd4f47436b4765b2303f4f5.png" alt-text="The smiley feedback icon" lightbox="media/3e2db5015cd4f47436b4765b2303f4f5.png":::
 
 2. Microsoft Defender portal (security.microsoft.com):
 
-:::image type="content" source="images/1d5b3c010b4b5c0e9d5eb43f71fa95e3.png" alt-text="The Give feedback button" lightbox="images/1d5b3c010b4b5c0e9d5eb43f71fa95e3.png":::
+:::image type="content" source="media/1d5b3c010b4b5c0e9d5eb43f71fa95e3.png" alt-text="The Give feedback button" lightbox="media/1d5b3c010b4b5c0e9d5eb43f71fa95e3.png":::
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

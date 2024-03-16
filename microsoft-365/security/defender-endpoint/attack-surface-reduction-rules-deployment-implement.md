@@ -30,7 +30,7 @@ search.appverid: met150
 
 Implementing attack surface reduction rules move the first test ring into an enabled, functional state.
 
-> :::image type="content" source="images/asr-rules-implementation-steps.png" alt-text="The procedure to implement attack surface reduction rules" lightbox="images/asr-rules-implementation-steps.png":::
+> :::image type="content" source="media/asr-rules-implementation-steps.png" alt-text="The procedure to implement attack surface reduction rules" lightbox="media/asr-rules-implementation-steps.png":::
   
 
 ## Step 1: Transition attack surface reduction rules from Audit to Block
@@ -48,7 +48,7 @@ Implementing attack surface reduction rules move the first test ring into an ena
 
 ### How does Warn mode work?
 
-Warn mode is effectively a Block instruction, but with the option for the user to "Unblock" subsequent executions of the given flow or app. Warn mode unblocks on a per device, user, file and process combination. The warn mode information is stored locally and has a duration of 24 hours.
+Warn mode is effectively a Block instruction, but with the option for the user to "Unblock" subsequent executions of the given flow or app. Warn mode unblocks on a per device, user, file, and process combination. The warn mode information is stored locally and has a duration of 24 hours.
 
 ### Step 2: Expand deployment to ring n + 1
 
@@ -93,9 +93,9 @@ See the [attack surface reduction rules reference](attack-surface-reduction-rule
 
 ##### Use Group Policy to exclude files and folders
 
-1. On your Group Policy management computer, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and select **Edit**.
+1. On your Group Policy management computer, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx). Right-click the Group Policy Object you want to configure and select **Edit**.
 
-2. In the **Group Policy Management Editor**, go to **Computer configuration** and click **Administrative templates**.
+2. In the **Group Policy Management Editor**, go to **Computer configuration** and select **Administrative templates**.
 
 3. Expand the tree to **Windows components** \> **Microsoft Defender Antivirus** \> **Microsoft Defender Exploit Guard** \> **Attack surface reduction**.
 
