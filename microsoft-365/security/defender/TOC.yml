@@ -492,9 +492,9 @@
         items:
         - name: View and manage SOC optimizations
           display name: SOC optimization
-          href: /azure/sentinel/soc-optimization-access?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json
+          href: /azure/sentinel/soc-optimization/soc-optimization-access?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json
         - name: SOC optimization reference
-          href: /azure/sentinel/soc-optimization-reference?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json
+          href: /azure/sentinel/soc-optimization/soc-optimization-reference?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json
     - name: Multitenant management in Microsoft Defender XDR
       items:
         - name: Multitenant management in Microsoft Defender XDR
