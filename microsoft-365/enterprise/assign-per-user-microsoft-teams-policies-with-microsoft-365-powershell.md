@@ -1,5 +1,5 @@
 ---
-title: "Assign per-user Skype for Business Online policies with PowerShell for Microsoft 365"
+title: "Assign per-user Microsoft Teams policies with PowerShell for Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
@@ -15,21 +15,18 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
-description: "Summary: Use PowerShell for Microsoft 365 to assign per-user communication settings with Skype for Business Online policies."
+description: "Summary: Use PowerShell for Microsoft 365 to assign per-user communication settings with Microsoft Teams policies."
 ---
 
-# Assign per-user Skype for Business Online policies with PowerShell for Microsoft 365
+# Assign per-user Microsoft Teams policies with PowerShell for Microsoft 365
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
-Using PowerShell for Microsoft 365 is an efficient way to assign per-user communication settings with Skype for Business Online policies.
+Using PowerShell for Microsoft 365 is an efficient way to assign per-user communication settings with Microsoft Teams policies.
   
 ## Prepare to run the PowerShell commands
 
 Use these instructions to get set up to run the commands (skip the steps you have already completed):
-  
-  > [!Note]
-   > Skype for Business Online Connector is currently part of the latest Teams PowerShell module. If you're using the latest Teams PowerShell public release, you don't need to install the Skype for Business Online Connector.
 
 1. Install the [Teams PowerShell module](/microsoftteams/teams-powershell-install).
     
@@ -40,7 +37,7 @@ Use these instructions to get set up to run the commands (skip the steps you hav
    Connect-MicrosoftTeams
    ```
 
-   When prompted, enter your Skype for Business Online administrator account name and password.
+   When prompted, enter your Microsoft Teams administrator account name and password.
     
 ## Updating external communication settings for a user account
 
@@ -68,7 +65,7 @@ EnablePublicCloudAudioVideoAccess : False
 EnableOutsideAccess               : True
 ```
 
-Now that you know which policy to assign to Alex, we can assign that policy by using the [Grant-CsExternalAccessPolicy](/powershell/module/skype/Get-CsExternalAccessPolicy) cmdlet. Here is an example:
+Now that you know which policy to assign to Alex, we can assign that policy by using the [Grant-CsExternalAccessPolicy](/powershell/module/teams/Get-CsExternalAccessPolicy) cmdlet. Here is an example:
   
 ```powershell
 Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName "FederationOnly"
