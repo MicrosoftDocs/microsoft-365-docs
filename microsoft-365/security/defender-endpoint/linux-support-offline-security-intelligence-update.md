@@ -28,7 +28,11 @@ ms.date: 03/12/2024
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-The Offline Security Intelligence Update feature of Microsoft Defender for Endpoint on Linux enables organizations to download security intelligence (also referred to as definitions or signatures in this document) on Linux endpoints which are not exposed to the internet via a local hosting server (termed as *Mirror Server* in this document). The Mirror Server is any server in the customer's environment which can connect to the Microsoft cloud to download the definitions. Other Linux endpoints pull the definitions from the Mirror Server at a predefined interval.
+This document describes the *Offline Security Intelligence Update* feature of Microsoft Defender for Endpoint (MDE) on Linux.
+
+This feature enables organizations to download *security intelligence* (also referred to as definitions or signatures in this document) on Linux endpoints that are not exposed to the internet via a local hosting server (termed as *Mirror Server* in this document).
+
+The Mirror Server is any server in the customer's environment that can connect to the Microsoft cloud to download the definitions. Other Linux endpoints pull the definitions from the Mirror Server at a predefined interval.
 
 Key benefits include:
 
@@ -38,14 +42,14 @@ Key benefits include:
 - Test the downloaded signatures on a test device before propagating it to the entire fleet, providing greater security and control 
 - Local server can run any of the 3 OS - Windows, Mac, Linux 
 - Signatures are always downloaded along with the latest compatible AV engine. Thus, keeping AV engine + signatures updated after every cycle.
-- In each iteration, the signatures with n-1 version are moved to a backup folder on the local server. In case of any issue with the latest signatures, you can pull the n-1 signature version from the backup folder to your Linux endpoints.
+- In each iteration, the signatures with n-1 version are moved to a backup folder on the local server. If there is any issue with the latest signatures, you can pull the n-1 signature version from the backup folder to your Linux endpoints.
 - In case offline update fails, you can also choose to fallback to online update directly from MS cloud.
 
 ## How Offline Security Intelligence Update works
 
-- Organizations need to set up a Mirror Server which is a local Web/NFS server reachable to Microsoft cloud; the organization is responsible for the management and maintenance of the Mirror Server
-- Signatures are downloaded from MS Cloud on this Mirror Server by executing a script using cron job/task scheduler on the local server 
-- Linux endpoints running MDE will pull the downloaded signatures from this Mirror Server at a user-defined time interval 
+- Organizations need to set up a Mirror Server which is a local Web/NFS server reachable to Microsoft cloud; the organization is responsible for the management and maintenance of the Mirror Server.
+- Signatures are downloaded from MS Cloud on this Mirror Server by executing a script using cron job/task scheduler on the local server.
+- Linux endpoints running MDE pull the downloaded signatures from this Mirror Server at a user-defined time interval.
 - Signatures pulled on the Linux endpoints from the local server are first verified before loading it into the AV engine.
 - To trigger and configure the update process, update the managed config json file on the Linux endpoints.
 - The status of the update can be seen on the mdatp CLI.
@@ -60,7 +64,7 @@ Fig. 2: How offline security intelligence update works on the Linux endpoint
 
 - MDE version "101.24022.0001" or higher needs to be installed on the Linux endpoints.
 - The Linux endpoints need to have connectivity to the Mirror Server.
-- The Mirror Server can be either an HTTP/ HTTPS server or a network share server. For e.g., an NFS Server.
+- The Mirror Server can be either an HTTP/ HTTPS server or a network share server. For example, an NFS Server.
 - The Mirror Server needs to have access to the following URLs:
     - https://github.com/microsoft/mdatp-xplat.git 
     - https://go.microsoft.com/fwlink/?linkid=2144709 
@@ -75,7 +79,7 @@ Fig. 2: How offline security intelligence update works on the Linux endpoint
     |--|--|--|--|
     | 2 cores (Preferred 4 Core) |	1 GB Min	(Preferred 4 GB)  | 2 GB	 | System Dependent|
 
-    > NOTE: The above configuration may vary depending on the number of requests that are served and the load each server must process.
+    > NOTE: This configuration may vary depending on the number of requests that are served and the load each server must process.
 
 - The Linux endpoint must be running any of the MDE supported distributions.
 
@@ -107,7 +111,7 @@ Follow these steps to get the downloader script:
 - Extract the zip.
 
 > Note
-> Schedule a [cron job](#scheduling-a-cron-job) to keep the repo / the downloaded zip file above updated to the latest version at regular intervals.
+> Schedule a [cron job](#scheduling-a-cron-job) to keep the repo / the downloaded zip file updated to the latest version at regular intervals.
 
 After cloning the repo / downloading the zip file, the local directory structure should be as follows:
 
@@ -126,11 +130,11 @@ linux/definition_downloader/
 > NOTE
 > Go through the README.md file to understand in detail about how to use the script.
 
-The `settings.json` file consists of a few variables which the user can configure to determine the output of the script execution.
+The `settings.json` file consists of a few variables that the user can configure to determine the output of the script execution.
 
 | Field Name               | Value  | Description                                            |
 |--------------------------|--------|--------------------------------------------------------|
-| `downloadFolder`         | string | Maps to the location which the script downloads the files to |
+| `downloadFolder`         | string | Maps to the location where the script downloads the files to |
 | `downloadLinuxUpdates`   | bool   | When set to true, the script downloads the Linux specific updates to the `downloadFolder` |
 | `logFilePath`            | string | Sets up the diagnostic logs at a given folder. This file can be shared with Microsoft for debugging the script if there are any issues |
 | `downloadMacUpdates`     | bool   | The script downloads the Mac specific updates to the `downloadFolder` |
@@ -139,24 +143,24 @@ The `settings.json` file consists of a few variables which the user can configur
 
 ### Execute the offline security intelligence downloader script
 
-To manually execute the downloader script, configure the parameters in the `settings.json` file as per the description above, and use one of the following commands based on the OS of the Mirror Server:
+To manually execute the downloader script, configure the parameters in the `settings.json` file as per the description in the previous section, and use one of the following commands based on the OS of the Mirror Server:
 - Bash:
   `./xplat_offline_updates_download.sh`
 - PowerShell:
   `./xplat_offline_updates_download.ps1`
 
 > Note
-> Schedule a [cron job](#scheduling-a-cron-job) to execute the above script to download the latest security intelligence updates in the Mirror Server at regular intervals.
+> Schedule a [cron job](#scheduling-a-cron-job) to execute this script to download the latest security intelligence updates in the Mirror Server at regular intervals.
 
 ### Host the offline security intelligence updates on the Mirror Server
 
-Once the script is executed, the latest definitions will get downloaded to the folder configured in the `settings.json` file (`updates.zip`).
+Once the script is executed, the latest definitions get downloaded to the folder configured in the `settings.json` file (`updates.zip`).
 
 Once the definitions zip is downloaded, the Mirror Server can be used to host it. The Mirror Server can be hosted using any HTTP / HTTPS / Network share servers.
 
 Once hosted, copy the absolute path of the hosted server (up to and not including the `arch_*` directory).
 
-For example, if the script is executed with `downloadFolder=/tmp/wdav-update`, and the HTTP server (www.example.server.com:8000) is hosting the `/tmp/wdav-update` path, the URI will be: `http://www.example.server.com:8000/linux/production/`
+For example, if the script is executed with `downloadFolder=/tmp/wdav-update`, and the HTTP server (www.example.server.com:8000) is hosting the `/tmp/wdav-update` path, the corresponding URI is: `http://www.example.server.com:8000/linux/production/`
 
 Once the Mirror Server is set up, we need to propagate this URL to the Linux endpoints using the Managed Configuration as described in the next section.
 
@@ -213,15 +217,15 @@ offline_definition_update_fallback_to_cloud : false
 ## Triggering the Offline Security Intelligence Updates
 
 ### Automatic update
-- If the `automaticDefinitionUpdateEnabled` field is set to true in the managed json above, then the offline security intelligence updates will be triggered automatically at periodic intervals.
-- By default, this periodic interval would be every 8 hours. But this can be configured by setting the `definitionUpdatesInterval` in the managed json as described above to the desired interval.
+- If the `automaticDefinitionUpdateEnabled` field is set to true in the managed json, then the offline security intelligence updates are triggered automatically at periodic intervals.
+- By default, this periodic interval is every 8 hours. But it can be configured by setting the `definitionUpdatesInterval` in the managed json to the desired interval.
 
 ### Manual update
 - In order to trigger the offline security intelligence update manually to download the definitions from the Mirror Server on the Linux endpoints, run the command:
     `mdatp definitions update`
 
 ### Check update status
-- After triggering the offline security intelligence update by either the automatic or manual method described above, verify that the update was successful by running the command: `mdatp health --details --definitions`.
+- After triggering the offline security intelligence update by either the automatic or manual method, verify that the update was successful by running the command: `mdatp health --details --definitions`.
 - Verify the following fields:
 
   ```
