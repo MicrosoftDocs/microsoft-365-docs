@@ -50,7 +50,7 @@ During the onboarding process, the **Devices list** is gradually populated with 
 > [!NOTE]
 > If you export the device list, it will contain every device in your organization. It might take a significant amount of time to download, depending on how large your organization is. Exporting the list in CSV format displays the data in an unfiltered manner. The CSV file will include all devices in the organization, regardless of any filtering applied in the view itself.
 
-:::image type="content" source="images/device-inventory.png" alt-text="The list of devices" lightbox="images/device-inventory.png":::
+:::image type="content" source="media/device-inventory.png" alt-text="The list of devices" lightbox="media/device-inventory.png":::
 
 ## Sort and filter the device list
 
@@ -79,12 +79,12 @@ The **Classify critical assets** card allows you to define device groups as busi
 
 Use the **Onboarding Status** column to sort and filter by discovered devices, and devices that are already onboarded to Microsoft Defender for Endpoint.
 
-:::image type="content" alt-text="Image of devices list with list of devices." source="images/device-inventory.png" lightbox="images/device-inventory.png":::
+:::image type="content" alt-text="Image of devices list with list of devices." source="media/device-inventory.png" lightbox="media/device-inventory.png":::
 
 From the **Network devices** and **IoT devices** tabs, you'll also see information such as vendor, model, and device type:
 From the **Network devices** and **IoT devices** tabs, you'll also see information such as vendor, model, and device type:
 
-:::image type="content" alt-text="Image of network devices list." source="images/device-inventory-networkdevices.png" lightbox="images/device-inventory-networkdevices.png":::
+:::image type="content" alt-text="Image of network devices list." source="media/device-inventory-networkdevices.png" lightbox="media/device-inventory-networkdevices.png":::
 
 > [!NOTE]
 > Device discovery Integration with [Microsoft Defender for IoT](/azure/defender-for-iot/organizations/) is available to help locate, identify, and secure your complete OT/IOT asset inventory. Devices discovered with this integration will appear on the **IoT devices** tab. For more information, see [Device discovery integration](device-discovery.md#device-discovery-integration).
@@ -153,7 +153,7 @@ You can add or remove columns from the view and sort the entries by clicking on 
 
 On the **Computer and Mobiles** tab, select **Customize columns** to see the columns available. The default values are checked in the following image:
 
-:::image type="content" alt-text="Image of computers and mobiles" source="images/computerandmobilescolumns.png":::
+:::image type="content" alt-text="Image of computers and mobiles" source="media/computerandmobilescolumns.png":::
 
 On the **Network devices** tab, select **Customize columns** to see the columns available. The default values are checked in the following image:
 
