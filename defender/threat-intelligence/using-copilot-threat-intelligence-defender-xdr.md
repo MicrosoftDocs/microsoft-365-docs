@@ -26,7 +26,7 @@ Microsoft Defender XDR applies the capabilities of [Microsoft Copilot for Securi
 
 ## Technical requirements
 
-Copilot for Security customers gain for each of their authenticated Copilot users access to Defender TI within the Microsoft Defender XDR portal. Learn how you can get started with Copilot for Security.
+Copilot for Security customers gain for each of their authenticated Copilot users access to Defender TI within the Microsoft Defender XDR portal. [Learn how you can get started with Copilot for Security](/security-copilot/get-started-security-copilot)
 
 ## Accessing Copilot for Security with Defender TI integration in Microsoft Defender XDR
 
