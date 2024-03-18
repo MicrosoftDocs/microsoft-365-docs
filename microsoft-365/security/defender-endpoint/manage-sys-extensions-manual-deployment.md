@@ -145,4 +145,4 @@ In terminal, run the following command to check the system extensions:
 
 The execution of this command is shown in the following screenshot:
 
-:::image type="content" source="images/command-to-check-system-extensions.png" alt-text="The command to check the system extensions." lightbox="images/command-to-check-system-extensions.png":::
+:::image type="content" source="media/command-to-check-system-extensions.png" alt-text="The command to check the system extensions." lightbox="media/command-to-check-system-extensions.png":::

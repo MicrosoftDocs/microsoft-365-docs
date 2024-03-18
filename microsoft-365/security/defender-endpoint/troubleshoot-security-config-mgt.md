@@ -51,7 +51,7 @@ The Client Analyzer output file (MDE Client Analyzer Results.htm) can provide ke
 - Verify that the device OS is in scope for Security Management for Microsoft Defender for Endpoint onboarding flow in **General Device Details** section
 - Verify that the device appears in Microsoft Entra ID in **Device Configuration Management Details**
 
-  :::image type="content" source="images/client-analyzer-results.png" alt-text="The client analyzer results" lightbox="images/client-analyzer-results.png":::
+  :::image type="content" source="media/client-analyzer-results.png" alt-text="The client analyzer results" lightbox="media/client-analyzer-results.png":::
 
 In the **Detailed Results** section of the report, the Client Analyzer also provides actionable guidance.
 

@@ -78,7 +78,7 @@ End users also need to take steps to install Microsoft Defender for Endpoint on 
 
      App protection policies (APP) are rules that ensure an organization's data remains safe or contained in a managed app. A policy can be a rule that is enforced when the user attempts to access or move "corporate" data, or a set of actions that are prohibited or monitored when the user is inside the app.
 
-     :::image type="content" source="images/create-policy.png" alt-text="The Create policy tab in the App protection policies page in the Microsoft Defender portal." lightbox="images/create-policy.png":::
+     :::image type="content" source="media/create-policy.png" alt-text="The Create policy tab in the App protection policies page in the Microsoft Defender portal." lightbox="media/create-policy.png":::
 
   2. Add apps.
 
@@ -101,7 +101,7 @@ End users also need to take steps to install Microsoft Defender for Endpoint on 
      Select **Setting > Max allowed device threat level** in **Device Conditions** and enter a value. Then select  **Action: "Block Access"**. Microsoft Defender for Endpoint on Android shares this Device Threat Level.
 
 
-     :::image type="content" source="images/conditional-launch.png" alt-text="The Device conditions pane in the Microsoft Defender portal" lightbox="images/conditional-launch.png":::
+     :::image type="content" source="media/conditional-launch.png" alt-text="The Device conditions pane in the Microsoft Defender portal" lightbox="media/conditional-launch.png":::
 
 - **Assign user groups for whom the policy needs to be applied.**
 
