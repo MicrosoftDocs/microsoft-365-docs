@@ -35,7 +35,7 @@ You can manage alerts by selecting an alert in the **Alerts queue**, or the **Al
 
 Selecting an alert in either of those places brings up the **Alert management pane**.
 
-:::image type="content" source="images/atp-alerts-selected.png" alt-text="The Alert management pane and the Alerts queue" lightbox="images/atp-alerts-selected.png":::
+:::image type="content" source="media/atp-alerts-selected.png" alt-text="The Alert management pane and the Alerts queue" lightbox="media/atp-alerts-selected.png":::
 
 Watch this video to learn how to use the new Microsoft Defender for Endpoint alert page.
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4yiO5]
