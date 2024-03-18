@@ -118,7 +118,7 @@ The following information is available in the details flyout:
   - **Domain expiration date**
   - **Registrant**
 
-- **Explorer investigation**: Select the link to open [Threat Explorer or Real-time detections](threat-explorer-about.md) for additional details about the sender.
+- **Explorer investigation**: Select the link to open [Threat Explorer or Real-time detections](threat-explorer-real-time-detections-about.md) for additional details about the sender.
 
 - **Email from sender**: This section shows the following information about similar messages from senders in the domain:
   - **Date**
@@ -188,7 +188,7 @@ The following information is available in the details flyout:
 - **What do you need to do?**
 - **Sender summary**: The sender that was detected as impersonation.
 
-- **Explorer investigation**: Select the link to open [Threat Explorer or Real-time detections](threat-explorer-about.md) for additional details about the sender.
+- **Explorer investigation**: Select the link to open [Threat Explorer or Real-time detections](threat-explorer-real-time-detections-about.md) for additional details about the sender.
 
 - **Email from sender**: This section shows the following information about similar messages from the sender:
   - **Date**
