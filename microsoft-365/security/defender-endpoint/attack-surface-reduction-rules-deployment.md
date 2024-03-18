@@ -52,7 +52,7 @@ This deployment collection provides information about the following aspects of a
 
 As with any new, wide-scale implementation, which could potentially impact your line-of-business operations, it's important to be methodical in your planning and implementation. Careful planning and deployment of attack surface reduction rules is necessary to ensure they work best for your unique customer workflows. To work in your environment, you need to plan, test, implement, and operationalize attack surface reduction rules carefully.  
 
-  :::image type="content" source="images/asr-rules-deployment-phases.png" alt-text="Plan Microsoft Defender for Endpoint attack surface reduction rules, test attack surface reduction rules, Enable attack surface reduction rules, maintain attack surface reduction rules." lightbox="images/asr-rules-deployment-phases.png":::
+  :::image type="content" source="media/asr-rules-deployment-phases.png" alt-text="Plan Microsoft Defender for Endpoint attack surface reduction rules, test attack surface reduction rules, Enable attack surface reduction rules, maintain attack surface reduction rules." lightbox="media/asr-rules-deployment-phases.png":::
 
 ## Important predeployment caveat
 

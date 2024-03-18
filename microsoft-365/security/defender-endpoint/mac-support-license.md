@@ -109,7 +109,7 @@ For scenarios where Microsoft Defender for Endpoint on macOS isn't up to date, y
 
     1. Select the **Assign licenses** link.
 
-       :::image type="content" source="images/assign-licenses-link.png" alt-text="Screenshot of the product page from which you can select the Assign licenses link.":::
+       :::image type="content" source="media/assign-licenses-link.png" alt-text="Screenshot of the product page from which you can select the Assign licenses link.":::
 
        The following screen appears:
 
@@ -120,7 +120,7 @@ For scenarios where Microsoft Defender for Endpoint on macOS isn't up to date, y
     
        The following screen appears, displaying the details of the chosen license assignee and a list of options.
 
-       :::image type="content" source="images/assignee-details-and-options.png" alt-text="Screenshot of the page displaying the assignee's details and a list of options.":::
+       :::image type="content" source="media/assignee-details-and-options.png" alt-text="Screenshot of the page displaying the assignee's details and a list of options.":::
  
     1. Check the checkboxes for **Microsoft 365 Advanced Auditing**, **Microsoft Defender XDR**, and **Microsoft Defender for Endpoint**.
     1. Select **Save**.
