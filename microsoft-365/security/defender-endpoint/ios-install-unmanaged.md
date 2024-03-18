@@ -84,7 +84,7 @@ Because mobile app management doesn't require device management, you can protect
  3.Set sign-in security requirements for your protection policy. <br>
 Select **Setting > Max allowed device threat level** in **Conditional Launch > Device Conditions** and enter a value. This will need to be configured to either Low, Medium, High, or Secured. The actions available to you will be **Block access** or **Wipe data**.  Select  **Action:  "Block Access"**. Microsoft Defender for Endpoint on iOS shares this Device Threat Level.
 
-   :::image type="content" source="images/conditional-launch.png" alt-text="The Device conditions pane" lightbox="images/conditional-launch.png":::
+   :::image type="content" source="media/conditional-launch.png" alt-text="The Device conditions pane" lightbox="media/conditional-launch.png":::
 
 4.Assign user groups for whom the policy needs to be applied.<br>
   Select **Included groups**. Then add the relevant groups. 
