@@ -33,6 +33,30 @@ This article is updated frequently to let you know what's new in the latest rele
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 
 <details>
+<summary> March-2024 (Build: 101.24022.0001 | Release version: 30.124022.0001.0)</summary>
+
+## March-2024 Build: 101.24022.0001 | Release version: 30.124022.0001.0
+
+&ensp;Released: **March 22,2024**<br/>
+&ensp;Published: **March 22,2024**<br/>
+&ensp;Build: **101.24022.0001**<br/>
+&ensp;Release version: **30.124022.0001.0**<br/>
+&ensp;Engine version: **1.1.23110.4**<br/>
+&ensp;Signature version: **1.403.87.0**<br/>
+
+**What's new**
+
+There are multiple fixes and new changes in this release:
+
+- Addition of `microsoft_defender_scan_skip.log` file which logs scans that mdatp is unable to complete due to any reason.
+- MDE Attach support for Offline Security Intelligence Update.
+- Stability and performance improvements.
+- Bug fixes.
+
+</details>
+
+
+<details>
 <summary> March-2024 (Build: 101.24012.0001 | Release version: 30.124012.0001.0)</summary>
 
 ## March-2024 Build: 101.24012.0001 | Release version: 30.124012.0001.0
