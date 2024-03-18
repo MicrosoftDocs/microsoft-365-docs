@@ -36,14 +36,23 @@ The Mirror Server is any server in the customer's environment that can connect t
 
 Key benefits include:
 
-- Instead of exposing your entire fleet to the internet, you can now just use one local server to poll the Microsoft cloud to get the latest signatures. Thus, reducing risk and network bandwidth. 
-- Control and manage the frequency of signature downloads on the local server. 
-- Control and manage the frequency at which the Linux endpoints pull the signatures from the local server. 
-- Test the downloaded signatures on a test device before propagating it to the entire fleet, providing greater security and control 
-- Local server can run any of the 3 OS - Windows, Mac, Linux 
+- Customers who have server environments that are not exposed to the internet can now benefit by being able to download and enable the latest security intelligence updates in a controlled manner.
+
+- Control and manage the frequency of signature downloads on the local server.
+
+- Control and manage the frequency at which endpoints pull the signatures from the local server.
+
+- Test the downloaded signatures on a test device before propagating it to the entire fleet, providing greater security and control.
+
+- Now, on behalf of your entire fleet, only one local server will poll MS cloud to get the latest signatures. Thus, reducing network bandwidth.
+
+- Local server can run any of the 3 OS - Windows, Mac, Linux, and is not required to install MDE.
+
 - Signatures are always downloaded along with the latest compatible AV engine. Thus, keeping AV engine + signatures updated after every cycle.
-- In each iteration, the signatures with n-1 version are moved to a backup folder on the local server. If there is any issue with the latest signatures, you can pull the n-1 signature version from the backup folder to your Linux endpoints.
-- In case offline update fails, you can also choose to fallback to online update directly from MS cloud.
+
+- In each iteration, signature with n-1 version is moved to a backup folder on the local server. If there is any issue with the latest signature, you can pull the n-1 signature version from the backup folder to your endpoints.
+
+- If the offline update fails, you can also choose to fallback to online update directly from MS cloud.
 
 ## How Offline Security Intelligence Update works
 
