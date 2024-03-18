@@ -102,11 +102,11 @@ Alternate steps:
 
 1. Select **Collect Investigation Package** from the response actions section of the device page.
 
-    ![Image of collect investigation package](images/collect-investigation-package.png)
+    ![Image of collect investigation package](media/collect-investigation-package.png)
    
 1. Add comments and select **Confirm**.
 
-    ![Image of confirm comment](images/comments-confirm.png)
+    ![Image of confirm comment](media/comments-confirm.png)
    
 1. Select **Action center** from the response actions section of the device page.
 
