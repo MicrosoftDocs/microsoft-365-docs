@@ -62,7 +62,7 @@ In the **Detailed Results** section of the report, the Client Analyzer also prov
 
 If you weren't able to identify the onboarded device in Microsoft Entra ID or in the Intune admin center, and didn't receive an error during the enrollment, checking the registry key `Computer\\HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\SenseCM\\EnrollmentStatus` can provide additional troubleshooting information.
 
-:::image type="content" source="images/enrollment-status.png" alt-text="The page displaying the enrollment status" lightbox="images/enrollment-status.png":::
+:::image type="content" source="media/enrollment-status.png" alt-text="The page displaying the enrollment status" lightbox="media/enrollment-status.png":::
 
 The following table lists errors and directions on what to try/check in order to address the error. Note that the list of errors isn't complete and is based on typical/common errors encountered by customers in the past:
 
