@@ -59,7 +59,7 @@ The following steps guide you how to create a Microsoft Entra application, get a
 
 2. Navigate to **Microsoft Entra ID** \> **App registrations** \> **New registration**.
 
-   :::image type="content" source="../images/atp-azure-new-app2.png" alt-text="The navigation to application registration pane" lightbox="../images/atp-azure-new-app2.png":::
+   :::image type="content" source="../media/atp-azure-new-app2.png" alt-text="The navigation to application registration pane" lightbox="../media/atp-azure-new-app2.png":::
 
 3. In the registration form:
 
@@ -69,7 +69,7 @@ The following steps guide you how to create a Microsoft Entra application, get a
 
    - Redirect URI - type: Web, URI: https://portal.azure.com
 
-     :::image type="content" source="../images/atp-api-new-app-partner.png" alt-text="The Microsoft Azure partner application registration page" lightbox="../images/atp-api-new-app-partner.png":::
+     :::image type="content" source="../media/atp-api-new-app-partner.png" alt-text="The Microsoft Azure partner application registration page" lightbox="../media/atp-api-new-app-partner.png":::
 
 4. Allow your Application to access Microsoft Defender for Endpoint and assign it with the minimal set of permissions required to complete the integration.
 
