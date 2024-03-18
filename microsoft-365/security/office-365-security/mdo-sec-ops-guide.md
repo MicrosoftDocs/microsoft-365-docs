@@ -118,7 +118,7 @@ Use [Threat analytics](/microsoft-365/security/defender-endpoint/threat-analytic
 
 ### Review top targeted users for malware and phishing
 
-Use the **[Top targeted users](threat-explorer-real-time-detections-about.md#top-targeted-users)** tab in Threat Explorer to discover or confirm the users who are the top targets for malware and phishing email.
+Use the **[Top targeted users](threat-explorer-real-time-detections-about.md#top-targeted-users-view-for-the-details-area-of-the-all-email-view-in-threat-explorer)** tab (view) in the details area of the **All email**, **Malware**, and **Phish** views in Threat Explorer to discover or confirm the users who are the top targets for malware and phishing email.
 
 |Activity|Cadence|Description|Persona|
 |---|---|---|---|
