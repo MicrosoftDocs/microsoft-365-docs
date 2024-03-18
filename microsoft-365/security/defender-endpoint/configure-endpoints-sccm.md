@@ -101,15 +101,15 @@ Follow these steps to onboard endpoints using Microsoft Configuration Manager:
 
 1. In the Microsoft Configuration Manager console, navigate to **Assets and Compliance \> Overview \> Device Collections**.
 
-    :::image type="content" source="images/configmgr-device-collections.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard1." lightbox="images/configmgr-device-collections.png":::
+    :::image type="content" source="media/configmgr-device-collections.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard1." lightbox="media/configmgr-device-collections.png":::
 
 2. Select and hold (or right-click) **Device Collection** and select **Create Device Collection**.
 
-    :::image type="content" source="images/configmgr-create-device-collection.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard2." lightbox="images/configmgr-create-device-collection.png":::
+    :::image type="content" source="media/configmgr-create-device-collection.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard2." lightbox="media/configmgr-create-device-collection.png":::
 
 3. Provide a **Name** and **Limiting Collection**, then select **Next**.
 
-    :::image type="content" source="images/configmgr-limiting-collection.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard3." lightbox="images/configmgr-limiting-collection.png":::
+    :::image type="content" source="media/configmgr-limiting-collection.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard3." lightbox="media/configmgr-limiting-collection.png":::
 
 4. Select **Add Rule** and choose **Query Rule**.
 
@@ -117,11 +117,11 @@ Follow these steps to onboard endpoints using Microsoft Configuration Manager:
 
 5. Select **Next** on the **Direct Membership Wizard** and then select **Edit Query Statement**.
 
-    :::image type="content" source="images/configmgr-direct-membership.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard5." lightbox="images/configmgr-direct-membership.png":::
+    :::image type="content" source="media/configmgr-direct-membership.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard5." lightbox="media/configmgr-direct-membership.png":::
 
 6. Select **Criteria** and then choose the star icon.
 
-    :::image type="content" source="images/configmgr-criteria.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard6." lightbox="images/configmgr-criteria.png":::
+    :::image type="content" source="media/configmgr-criteria.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard6." lightbox="media/configmgr-criteria.png":::
 
 7. Keep criterion type as **simple value**, choose whereas **Operating System - build number**, operator as **is greater than or equal to** and value **14393**, and select **OK**.
 
@@ -133,7 +133,7 @@ Follow these steps to onboard endpoints using Microsoft Configuration Manager:
 
 9. Select **Next**.
 
-    :::image type="content" source="images/configmgr-confirm.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard9." lightbox="images/configmgr-confirm.png":::
+    :::image type="content" source="media/configmgr-confirm.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard9." lightbox="media/configmgr-confirm.png":::
 
 After completing this task you have a device collection with all the Windows endpoints in the environment.
 
