@@ -266,7 +266,7 @@ As the Script has an exit method and wont re-run if the MMA is installed, you co
 
 :::image type="content" source="images/newtaskprops.png" alt-text="The new task properties" lightbox="images/newtaskprops.png":::
 
-:::image type="content" source="images/deploymmadowmload.png" alt-text="The deploy mma download properties" lightbox="images/deploymmadowmload.png":::
+:::image type="content" source="media/deploymmadowmload.png" alt-text="The deploy mma download properties" lightbox="media/deploymmadowmload.png":::
 
 :::image type="content" source="images/tasksch.png" alt-text="The task scheduler" lightbox="images/tasksch.png":::
 
