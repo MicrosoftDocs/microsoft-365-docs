@@ -25,12 +25,13 @@ ms.date: 08/04/2023
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
+- Microsoft Defender unified security operations center (SOC) platform, including:
+    - Microsoft Sentinel
+    - Microsoft Defender XDR
 
-- Microsoft Defender XDR
+The user entity page in Microsoft Defender's unified SOC platform helps you in your investigation of user entities. The page has all the important information about each entity. If an alert or incident indicates that a user might be compromised or is suspicious, check and investigate the user profile.
 
-The user entity page in Microsoft Defender XDR helps you in your investigation of user identities. The page has all the important information about each identity. If an alert or incident indicates that a user might be compromised or is suspicious, check and investigate the user profile.
-
-You can find identity information in the following views:
+You can find user entity information in the following views:
 
 - Identities page
 - Alerts queue
@@ -40,17 +41,17 @@ You can find identity information in the following views:
 - Advanced hunting queries
 - Action center
 
-A clickable identity link is available in these views that will take you to the **User** page where more details about the user are shown. For example, you can see the details of user accounts identified in the alerts of an incident in the Microsoft Defender portal at **Incidents & alerts** \> ***incident*** \> **Users**.
+Wherever user entities appear in these views, selecting the entity will take you to the **User** page, which displays more details about the user. For example, you can see the details of user accounts identified in the alerts of an incident in the Microsoft Defender portal at **Incidents & alerts > Incidents > *incident* > Assets > Users**.
 
 :::image type="content" source="../../media/investigate-users/Fig1-user-incident-overview.png" alt-text="The Users page for an incident in the Microsoft Defender portal." lightbox="../../media/investigate-users/Fig1-user-incident-overview.png":::
 
-When you investigate a specific identity, you'll see the:
+When you investigate a specific user entity, you'll see the:
 
-- [Overview](#overview), including identity details, incident and alerts visual view, investigation priority, and scored timeline
-- [Active Alerts](#alerts) tab
+- [Overview](#overview), including entity details, incident and alerts visual view, investigation priority, and scored timeline
+- [Incidents and alerts](#incidents-and-alerts) tab
 - [Observed in organization](#observed-in-organization) tab
-- [Identity timeline](#timeline) tab
-- [Remediation actions](#remediation-actions)
+- [Tmeline](#timeline) tab
+- [Sentinel events](#sentinel-events) tab
 
 :::image type="content" source="../../media/investigate-users/Fig2-user-incident-overview.png" alt-text="A specific user's page in the Microsoft Defender portal" lightbox="../../media/investigate-users/Fig2-user-incident-overview.png":::
 
