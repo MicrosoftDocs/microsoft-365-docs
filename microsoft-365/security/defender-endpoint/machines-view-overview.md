@@ -153,7 +153,7 @@ You can add or remove columns from the view and sort the entries by clicking on 
 
 On the **Computer and Mobiles** tab, select **Customize columns** to see the columns available. The default values are checked in the following image:
 
-:::image type="content" alt-text="Image of computers and mobiles" source="images/computerandmobilescolumns.png":::
+:::image type="content" alt-text="Image of computers and mobiles" source="media/computerandmobilescolumns.png":::
 
 On the **Network devices** tab, select **Customize columns** to see the columns available. The default values are checked in the following image:
 

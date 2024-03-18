@@ -113,7 +113,7 @@ Up-to-date reporting generates information for devices that meet the following c
 
 The functionality is essentially the same for all cards. By clicking on a numbered bar in any of the cards, the **Microsoft Defender Antivirus details** flyout opens enabling you to review information about all the devices configured with the version number of an aspect on that card.
 
-:::image type="content" source="images/device-health-defender-antivirus-health-antivirus-details.png" alt-text="Shows the Microsoft Defender Antivirus details flyout." lightbox="images/device-health-defender-antivirus-health-antivirus-details.png":::
+:::image type="content" source="media/device-health-defender-antivirus-health-antivirus-details.png" alt-text="Shows the Microsoft Defender Antivirus details flyout." lightbox="media/device-health-defender-antivirus-health-antivirus-details.png":::
 
 If the version number that you clicked on is:
 
@@ -122,7 +122,7 @@ If the version number that you clicked on is:
 
 To add or remove specific types of information on the **Microsoft Defender Antivirus details** flyout, select **Customize Columns**. In **Customize Columns**, select or clear items to specify what you want included in the Microsoft Defender Antivirus details report.
 
-:::image type="content" source="images/device-health-defender-antivirus-engine-version-details-custom-columns.png" alt-text="Shows custom column options for Microsoft Defender Antivirus health reporting." lightbox="images/device-health-defender-antivirus-engine-version-details-custom-columns.png":::
+:::image type="content" source="media/device-health-defender-antivirus-engine-version-details-custom-columns.png" alt-text="Shows custom column options for Microsoft Defender Antivirus health reporting." lightbox="media/device-health-defender-antivirus-engine-version-details-custom-columns.png":::
 
 #### New Microsoft Defender Antivirus filter definitions
 
@@ -178,7 +178,7 @@ A primary benefit of the three _version_ cards is that they provide quick indica
 Ideally, when you run these reports, they'll indicate that the most current antivirus versions are installed, as opposed to older versions.
 Use these reports to determine whether your organization is taking full advantage of the most current versions.
 
-:::image type="content" source="images/device-health-defender-antivirus-health-antivirus-details-up-to-date.png" alt-text="Shows Microsoft Defender Antivirus version details" lightbox="images/device-health-defender-antivirus-health-antivirus-details-up-to-date.png":::
+:::image type="content" source="media/device-health-defender-antivirus-health-antivirus-details-up-to-date.png" alt-text="Shows Microsoft Defender Antivirus version details" lightbox="media/device-health-defender-antivirus-health-antivirus-details-up-to-date.png":::
 
 To help ensure your anti-malware solution detects the latest threats, get updates automatically as part of Windows Update.
 
