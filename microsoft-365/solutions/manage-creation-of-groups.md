@@ -2,8 +2,8 @@
 title: Manage who can create Microsoft 365 Groups
 f1.keywords: NOCSH
 ms.author: mikeplum
-ms.reviewer: rahulnayak
-ms.date: 11/22/2023
+ms.reviewer: dntt3:lQ
+ms.date: 18/03/2024
 author: MikePlumleyMSFT
 manager: pamgreen
 audience: Admin
@@ -123,12 +123,6 @@ if(!$settingsObjectID)
 {
     $params = @{
 	  templateId = "62375ab9-6b52-47ed-826b-58e47e0e304b"
-	  values = @(
-		    @{
-			       name = "EnableMSStandardBlockedWords"
-			       value = "true"
-		     }
-	 	     )
 	     }
 	
     New-MgBetaDirectorySetting -BodyParameter $params
@@ -136,8 +130,8 @@ if(!$settingsObjectID)
     $settingsObjectID = (Get-MgBetaDirectorySetting | Where-object -Property Displayname -Value "Group.Unified" -EQ).Id
 }
 
- 
-$groupId = (Get-MgBetaGroup | Where-object {$_.displayname -eq $GroupName}).Id
+$groups = Get-MgBetaGroup -All
+$groupId = ( $groups | Where-object {$_.displayname -eq $GroupName}).Id
 
 $params = @{
 	templateId = "62375ab9-6b52-47ed-826b-58e47e0e304b"
