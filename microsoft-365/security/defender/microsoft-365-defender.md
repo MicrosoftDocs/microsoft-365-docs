@@ -2,7 +2,6 @@
 title: What is Microsoft Defender XDR?
 description: Microsoft Defender XDR is a coordinated threat protection solution designed to protect devices, identity, data and applications
 keywords: introduction to MMicrosoft Defender XDR, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
 ms.mktglfcycl: deploy
@@ -13,11 +12,7 @@ f1.keywords:
 ms.author: diannegali
 author: diannegali
 ms.localizationpriority: medium
-manager: dansimp
 audience: ITPro
-ms.collection:
-  - m365-security
-  - tier1
 ms.custom: 
   - admindeeplinkDEFENDER
   - intro-overview
@@ -25,6 +20,7 @@ ms.topic: conceptual
 adobe-target: true
 ms.date: 03/08/2024
 appliesto: ✅ Microsoft Defender XDR
+manager: dansimp
 ---
 
 # What is Microsoft Defender XDR?

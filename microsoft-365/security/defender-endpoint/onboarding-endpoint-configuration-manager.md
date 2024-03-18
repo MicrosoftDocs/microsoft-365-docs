@@ -82,7 +82,7 @@ Follow the steps below to onboard endpoints using Microsoft Configuration Manage
 
 4. Select **Add Rule** and choose **Query Rule**.
 
-    :::image type="content" source="images/configmgr-query-rule.png" alt-text="The Microsoft Configuration Manager wizard4" lightbox="images/configmgr-query-rule.png":::
+    :::image type="content" source="media/configmgr-query-rule.png" alt-text="The Microsoft Configuration Manager wizard4" lightbox="media/configmgr-query-rule.png":::
 
 5. Select **Next** on the **Direct Membership Wizard** and select on **Edit Query Statement**.
 
@@ -94,11 +94,11 @@ Follow the steps below to onboard endpoints using Microsoft Configuration Manage
 
 7. Keep criterion type as **simple value**, choose whereas **Operating System - build number**, operator as **is greater than or equal to** and value **14393** and select on **OK**.
 
-    :::image type="content" source="images/configmgr-simple-value.png" alt-text="The Microsoft Configuration Manager wizard7" lightbox="images/configmgr-simple-value.png":::
+    :::image type="content" source="media/configmgr-simple-value.png" alt-text="The Microsoft Configuration Manager wizard7" lightbox="media/configmgr-simple-value.png":::
 
 8. Select **Next** and **Close**.
 
-    :::image type="content" source="images/configmgr-membership-rules.png" alt-text="The Microsoft Configuration Manager wizard8" lightbox="images/configmgr-membership-rules.png":::
+    :::image type="content" source="media/configmgr-membership-rules.png" alt-text="The Microsoft Configuration Manager wizard8" lightbox="media/configmgr-membership-rules.png":::
 
 9. Select **Next**.
 
@@ -139,7 +139,7 @@ From within the Microsoft Defender portal it's possible to download the `.onboar
 
 7. Enter the name and description, verify **Onboarding** is selected, then select **Next**.
 
-    :::image type="content" source="images/configmgr-policy-name.png" alt-text="The Microsoft Configuration Manager wizard13" lightbox="images/configmgr-policy-name.png":::
+    :::image type="content" source="media/configmgr-policy-name.png" alt-text="The Microsoft Configuration Manager wizard13" lightbox="media/configmgr-policy-name.png":::
 
 8. Select **Browse**.
 
@@ -152,11 +152,11 @@ From within the Microsoft Defender portal it's possible to download the `.onboar
 
 12. Select the appropriate telemetry (**Normal** or **Expedited**) then select **Next**.
 
-    :::image type="content" source="images/configmgr-telemetry.png" alt-text="The configuration settings2" lightbox="images/configmgr-telemetry.png":::
+    :::image type="content" source="media/configmgr-telemetry.png" alt-text="The configuration settings2" lightbox="media/configmgr-telemetry.png":::
 
 13. Verify the configuration, then select **Next**.
 
-    :::image type="content" source="images/configmgr-verify-configuration.png" alt-text="The configuration settings3" lightbox="images/configmgr-verify-configuration.png":::
+    :::image type="content" source="media/configmgr-verify-configuration.png" alt-text="The configuration settings3" lightbox="media/configmgr-verify-configuration.png":::
 
 14. Select **Close** when the Wizard completes.
 
@@ -166,7 +166,7 @@ From within the Microsoft Defender portal it's possible to download the `.onboar
 
 16. On the right panel, select the previously created collection and select **OK**.
 
-    :::image type="content" source="images/configmgr-select-collection.png" alt-text="The configuration settings5" lightbox="images/configmgr-select-collection.png":::
+    :::image type="content" source="media/configmgr-select-collection.png" alt-text="The configuration settings5" lightbox="media/configmgr-select-collection.png":::
 
 #### Previous versions of Windows Client (Windows 7 and Windows 8.1)
 
@@ -244,7 +244,7 @@ Microsoft Defender Antivirus is a built-in anti-malware solution that provides n
 
 4. Target the new anti-malware policy to your Windows collection and select **OK**.
 
-    :::image type="content" source="images/configmgr-select-collection.png" alt-text="The next-generation protection pane11" lightbox="images/configmgr-select-collection.png":::
+    :::image type="content" source="media/configmgr-select-collection.png" alt-text="The next-generation protection pane11" lightbox="media/configmgr-select-collection.png":::
 
 After completing this task, you now have successfully configured Microsoft Defender Antivirus.
 
@@ -264,7 +264,7 @@ To set attack surface reduction rules in test mode:
 
 3. Set rules to **Audit** and select **Next**.
 
-   :::image type="content" source="images/d18e40c9e60aecf1f9a93065cb7567bd.png" alt-text="The Microsoft Configuration Manager console1" lightbox="images/d18e40c9e60aecf1f9a93065cb7567bd.png":::
+   :::image type="content" source="media/d18e40c9e60aecf1f9a93065cb7567bd.png" alt-text="The Microsoft Configuration Manager console1" lightbox="media/d18e40c9e60aecf1f9a93065cb7567bd.png":::
 
 4. Confirm the new Exploit Guard policy by selecting **Next**.
 

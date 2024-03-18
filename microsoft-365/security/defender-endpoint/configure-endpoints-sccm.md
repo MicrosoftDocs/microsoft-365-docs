@@ -113,7 +113,7 @@ Follow these steps to onboard endpoints using Microsoft Configuration Manager:
 
 4. Select **Add Rule** and choose **Query Rule**.
 
-    :::image type="content" source="images/configmgr-query-rule.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard4." lightbox="images/configmgr-query-rule.png":::
+    :::image type="content" source="media/configmgr-query-rule.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard4." lightbox="media/configmgr-query-rule.png":::
 
 5. Select **Next** on the **Direct Membership Wizard** and then select **Edit Query Statement**.
 
@@ -125,11 +125,11 @@ Follow these steps to onboard endpoints using Microsoft Configuration Manager:
 
 7. Keep criterion type as **simple value**, choose whereas **Operating System - build number**, operator as **is greater than or equal to** and value **14393**, and select **OK**.
 
-    :::image type="content" source="images/configmgr-simple-value.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard7." lightbox="images/configmgr-simple-value.png":::
+    :::image type="content" source="media/configmgr-simple-value.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard7." lightbox="media/configmgr-simple-value.png":::
 
 8. Select **Next** and **Close**.
 
-    :::image type="content" source="images/configmgr-membership-rules.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard8." lightbox="images/configmgr-membership-rules.png":::
+    :::image type="content" source="media/configmgr-membership-rules.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard8." lightbox="media/configmgr-membership-rules.png":::
 
 9. Select **Next**.
 

@@ -41,7 +41,7 @@ From the left navigation menu, select **Partners & APIs** (under **Endpoints**) 
 
 The Connected applications page provides information about the Microsoft Entra applications connected to Microsoft Defender for Endpoint in your organization. You can review the usage of the connected applications: last seen, number of requests in the past 24 hours, and request trends in the last 30 days.
 
-:::image type="content" source="images/connected-apps.png" alt-text="The connected applications" lightbox="images/connected-apps.png":::
+:::image type="content" source="media/connected-apps.png" alt-text="The connected applications" lightbox="media/connected-apps.png":::
  
 ## Edit, reconfigure, or delete a connected application
 
