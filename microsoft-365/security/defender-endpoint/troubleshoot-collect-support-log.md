@@ -45,7 +45,7 @@ If you also require Defender Antivirus support logs (MpSupportFiles.cab), then f
 
 5. Select the downloaded file named MDELiveAnalyzer.ps1 and then click on **Confirm**
 
-   :::image type="content" source="images/analyzer-file.png" alt-text="The choose file button-2" lightbox="images/analyzer-file.png":::
+   :::image type="content" source="media/analyzer-file.png" alt-text="The choose file button-2" lightbox="media/analyzer-file.png":::
 
 6. While still in the LiveResponse session, use the commands below to run the analyzer and collect the result file:
 
@@ -54,7 +54,7 @@ If you also require Defender Antivirus support logs (MpSupportFiles.cab), then f
     GetFile "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\MDEClientAnalyzerResult.zip"
     ```
 
-    [![Image of commands.](images/analyzer-commands.png)](images/analyzer-commands.png#lightbox)
+    [![Image of commands.](media/analyzer-commands.png)](media/analyzer-commands.png#lightbox)
 
 > [!NOTE]
 >

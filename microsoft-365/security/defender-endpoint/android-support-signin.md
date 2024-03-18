@@ -57,7 +57,7 @@ from Google Play Store and try again.
 
 **Sign in failed:** *Invalid license, contact administrator*
 
-:::image type="content" source="images/920e433f440fa1d3d298e6a2a43d4811.png" alt-text="The directive contact details in the sign-in page of the Microsoft Defender 365 portal" lightbox="images/920e433f440fa1d3d298e6a2a43d4811.png":::
+:::image type="content" source="media/920e433f440fa1d3d298e6a2a43d4811.png" alt-text="The directive contact details in the sign-in page of the Microsoft Defender 365 portal" lightbox="media/920e433f440fa1d3d298e6a2a43d4811.png":::
 
 **Message:** *Invalid license, contact administrator*
 
