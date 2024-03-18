@@ -34,11 +34,11 @@ Depending on your subscription, Threat Explorer or Real-time detections is avail
 
 - **Real-time detections** is available in _Defender for Office 365 Plan 1_. The **Real-time detections** page is available directly at <https://security.microsoft.com/realtimereportsv3>.
 
-  :::image type="content" source="../../media/te-rtd-select-real-time-detections.png" alt-text="Real-time detections in the Email & collaboration section in the Microsoft Defender portal." lightbox="../../media/te-rtd-select-real-time-detections.png":::
+  :::image type="content" source="../../media/te-rtd-select-real-time-detections.png" alt-text="Screenshot of the Real-time detections selection in the Email & collaboration section in the Microsoft Defender portal." lightbox="../../media/te-rtd-select-real-time-detections.png":::
 
 - **Threat Explorer** is available in _Defender for Office 365 Plan 2_. The **Explorer** page is available directly at <https://security.microsoft.com/threatexplorerv3>.
 
-  :::image type="content" source="../../media/te-rtd-select-threat-explorer.png" alt-text="Explorer in the Email & collaboration section in the Microsoft Defender portal." lightbox="../../media/te-rtd-select-threat-explorer.png":::
+  :::image type="content" source="../../media/te-rtd-select-threat-explorer.png" alt-text="Screenshot of the Explorer selection in the Email & collaboration section in the Microsoft Defender portal." lightbox="../../media/te-rtd-select-threat-explorer.png":::
 
 Threat Explorer contains the same information and capabilities as Real-time detections, but with the following additional features:
 
@@ -103,7 +103,7 @@ Threat Explorer and Real-time detections contain the following elements:
 
 - **Date/time filters**: By default, the view is filtered by yesterday and today. To change the date filter, select the date range, and then select **Start Date** and **End date** values up to 30 days ago.
 
-  :::image type="content" source="../../media/te-rtd-date-filter.png" alt-text="The date filter used in Threat Explorer and Real-time detections in the Defender portal." lightbox="../../media/te-rtd-date-filter.png":::
+  :::image type="content" source="../../media/te-rtd-date-filter.png" alt-text="Screenshot of the date filter used in Threat Explorer and Real-time detections in the Defender portal." lightbox="../../media/te-rtd-date-filter.png":::
 
 - **Property filters (queries)**: Filter the results in the view by the available message, file, or threat properties. The available filterable properties depend on the view. Some properties are available in many views, while other properties are limited to a specific view.
 
@@ -132,7 +132,7 @@ Threat Explorer and Real-time detections contain the following elements:
    > [!TIP]
    > In the **Export** flyout, you can select some or all of the available properties to export. The selections are saved per user. Selections in Incognito or InPrivate browsing mode are saved until you close the web browser.
 
-:::image type="content" source="../../media/te-rtd-threat-explorer-main-page.png" alt-text="The main page in Threat explorer showing real-time report data in the Defender for Office 365 portal." lightbox="../../media/te-rtd-threat-explorer-main-page.png":::
+:::image type="content" source="../../media/te-rtd-threat-explorer-main-page.png" alt-text="Screenshot of the main page in Threat explorer showing real-time report data in the Defender for Office 365 portal." lightbox="../../media/te-rtd-threat-explorer-main-page.png":::
 
 ## All email view in Threat Explorer
 
@@ -144,7 +144,7 @@ The **All email** view in Threat Explorer shows information about all email mess
 
 This view is the default in Threat Explorer. To open the **All email** view on the **Explorer** page in the Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Explorer** \> **All email** tab. Or, go directly to the **Explorer** page using <https://security.microsoft.com/threatexplorerv3>, and then verify that the **All email** tab is selected.
 
-:::image type="content" source="../../media/te-rtd-all-email-view.png" alt-text="The All email view in Threat Explorer showing the chart, available pivots for the chart, and views for the details table." lightbox="../../media/te-rtd-all-email-view.png":::
+:::image type="content" source="../../media/te-rtd-all-email-view.png" alt-text="Screenshot of the All email view in Threat Explorer showing the chart, available pivots for the chart, and views for the details table." lightbox="../../media/te-rtd-all-email-view.png":::
 
 ### Filterable properties in the All email view in Threat Explorer
 
@@ -247,7 +247,7 @@ Although this pivot doesn't look selected by default, **Delivery action** is the
 
 The **Delivery action** pivot organizes the chart by the actions taken on messages for the specified date/time range and property filters.
 
-:::image type="content" source="../../media/te-rtd-all-email-view-chart-delivery-action-pivot.png" alt-text="The chart in the All email view in Threat Explorer using the Delivery action pivot." lightbox="../../media/te-rtd-all-email-view-chart-delivery-action-pivot.png":::
+:::image type="content" source="../../media/te-rtd-all-email-view-chart-delivery-action-pivot.png" alt-text="Screenshot of the chart in the All email view in Threat Explorer using the Delivery action pivot." lightbox="../../media/te-rtd-all-email-view-chart-delivery-action-pivot.png":::
 
 Hovering over a data point in the chart shows the count for each delivery action.
 
@@ -255,7 +255,7 @@ Hovering over a data point in the chart shows the count for each delivery action
 
 The **Sender domain** pivot organizes the chart by the domains in messages for the specified date/time range and property filters.
 
-:::image type="content" source="../../media/te-rtd-all-email-view-chart-sender-domain-pivot.png" alt-text="The chart in the All email view in Threat Explorer using the Sender domain pivot." lightbox="../../media/te-rtd-all-email-view-chart-sender-domain-pivot.png":::
+:::image type="content" source="../../media/te-rtd-all-email-view-chart-sender-domain-pivot.png" alt-text="Screenshot of the chart in the All email view in Threat Explorer using the Sender domain pivot." lightbox="../../media/te-rtd-all-email-view-chart-sender-domain-pivot.png":::
 
 Hovering over a data point in the chart shows the count for each sender domain.
 
@@ -263,7 +263,7 @@ Hovering over a data point in the chart shows the count for each sender domain.
 
 The **Sender IP** pivot organizes the chart by the source IP addresses of messages for the specified date/time range and property filters.
 
-:::image type="content" source="../../media/te-rtd-all-email-view-chart-sender-ip-pivot.png" alt-text="The chart in the All email view in Threat Explorer using the Sender IP pivot." lightbox="../../media/te-rtd-all-email-view-chart-sender-ip-pivot.png":::
+:::image type="content" source="../../media/te-rtd-all-email-view-chart-sender-ip-pivot.png" alt-text="Screenshot of the chart in the All email view in Threat Explorer using the Sender IP pivot." lightbox="../../media/te-rtd-all-email-view-chart-sender-ip-pivot.png":::
 
 Hovering over a data point in the chart shows the count for each sender IP address.
 
@@ -271,7 +271,7 @@ Hovering over a data point in the chart shows the count for each sender IP addre
 
 The **Detection technology** pivot organizes the chart by the feature that identified messages for the specified date/time range and property filters.
 
-:::image type="content" source="../../media/te-rtd-all-email-view-chart-detection-technology-pivot.png" alt-text="The chart in the All email view in Threat Explorer using the Detection technology pivot." lightbox="../../media/te-rtd-all-email-view-chart-detection-technology-pivot.png":::
+:::image type="content" source="../../media/te-rtd-all-email-view-chart-detection-technology-pivot.png" alt-text="Screenshot of the chart in the All email view in Threat Explorer using the Detection technology pivot." lightbox="../../media/te-rtd-all-email-view-chart-detection-technology-pivot.png":::
 
 Hovering over a data point in the chart shows the count for each detection technology.
 
@@ -279,7 +279,7 @@ Hovering over a data point in the chart shows the count for each detection techn
 
 The **Full URL** pivot organizes the chart by the full URLs in messages for the specified date/time range and property filters.
 
-:::image type="content" source="../../media/te-rtd-all-email-view-chart-full-url-pivot.png" alt-text="The chart in the All email view in Threat Explorer using the Full URL pivot." lightbox="../../media/te-rtd-all-email-view-chart-full-url-pivot.png":::
+:::image type="content" source="../../media/te-rtd-all-email-view-chart-full-url-pivot.png" alt-text="Screenshot of the chart in the All email view in Threat Explorer using the Full URL pivot." lightbox="../../media/te-rtd-all-email-view-chart-full-url-pivot.png":::
 
 Hovering over a data point in the chart shows the count for each full URL.
 
@@ -287,7 +287,7 @@ Hovering over a data point in the chart shows the count for each full URL.
 
 The **URL domain** pivot organizes the chart by the domains in URLs in messages for the specified date/time range and property filters.
 
-:::image type="content" source="../../media/te-rtd-all-email-view-chart-url-domain-pivot.png" alt-text="The chart in the All email view in Threat Explorer using the URL domain pivot." lightbox="../../media/te-rtd-all-email-view-chart-url-domain-pivot.png":::
+:::image type="content" source="../../media/te-rtd-all-email-view-chart-url-domain-pivot.png" alt-text="Screenshot of the chart in the All email view in Threat Explorer using the URL domain pivot." lightbox="../../media/te-rtd-all-email-view-chart-url-domain-pivot.png":::
 
 Hovering over a data point in the chart shows the count for each URL domain.
 
@@ -295,7 +295,7 @@ Hovering over a data point in the chart shows the count for each URL domain.
 
 The **URL domain and path** pivot organizes the chart by the domains and paths in URLs in messages for the specified date/time range and property filters.
 
-:::image type="content" source="../../media/te-rtd-all-email-view-chart-url-domain-and-path-pivot.png" alt-text="The chart in the All email view in Threat Explorer using the URL domain and path pivot." lightbox="../../media/te-rtd-all-email-view-chart-url-domain-and-path-pivot.png":::
+:::image type="content" source="../../media/te-rtd-all-email-view-chart-url-domain-and-path-pivot.png" alt-text="Screenshot of the chart in the All email view in Threat Explorer using the URL domain and path pivot." lightbox="../../media/te-rtd-all-email-view-chart-url-domain-and-path-pivot.png":::
 
 Hovering over a data point in the chart shows the count for each URL domain and path.
 
@@ -352,7 +352,7 @@ The **Email** view shows a details table. You can sort the entries by clicking o
 
 When you select one or more entries from the list by selecting the check box next to the first column, **Message actions** is available. For information, see [Threat hunting: Email remediation](threat-explorer-threat-hunting.md#email-remediation).
 
-:::image type="content" source="../../media/te-rtd-all-email-view-details-area-email-tab-message-selected-message-actions-threat-explorer.png" alt-text="The Email tab of the All email view in Threat Explorer showing a selected message and the available actions in Message actions." lightbox="../../media/te-rtd-all-email-view-details-area-email-tab-message-selected-message-actions-threat-explorer.png":::
+:::image type="content" source="../../media/te-rtd-all-email-view-details-area-email-tab-message-selected-message-actions-threat-explorer.png" alt-text="Screenshot of the Email tab of the All email view in Threat Explorer showing a selected message and the available actions in Message actions." lightbox="../../media/te-rtd-all-email-view-details-area-email-tab-message-selected-message-actions-threat-explorer.png":::
 
 In the **Subject** value for the entry, the :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open in new window** action is available. This action opens the message in the [Email entity page](mdo-email-entity-page.md).
 
@@ -423,7 +423,7 @@ When you select an entry by clicking on the **Subject** value, a details flyout 
 
     If the message has more than three attachments, select **View all attachments** to see all of them.
 
-:::image type="content" source="../../media/te-rtd-all-email-view-email-tab-details-area-subject-details-flyout.png" alt-text="The details tab after you select a subject in the Email tab of the details area in the All email view." lightbox="../../media/te-rtd-all-email-view-email-tab-details-area-subject-details-flyout.png":::
+:::image type="content" source="../../media/te-rtd-all-email-view-email-tab-details-area-subject-details-flyout.png" alt-text="Screenshot of the details tab after you select a subject in the Email tab of the details area in the All email view." lightbox="../../media/te-rtd-all-email-view-email-tab-details-area-subject-details-flyout.png":::
 
 ##### Recipient details from the Email view of the details area in the All email view
 
@@ -465,7 +465,7 @@ When you select an entry by clicking on the **Recipient** value, a details flyou
    > [!TIP]
    > Members of the **Security Administrators** role group in [Email & collaboration permissions](mdo-portal-permissions.md) can't expand the **Recent activity** section. You need to be a member of a role group in [Exchange Online permissions](/exchange/permissions-exo/permissions-exo) that has the **Audit Logs**, **Information Protection Analyst**, or **Information Protection Investigator** roles assigned. By default, those roles are assigned to the **Records Management**, **Compliance Management**, **Information Protection**, **Information Protection Analysts**, **Information Protection Investigators**, and **Organization Management** role groups. You can add the members of **Security Administrators** to those role groups, or you can [create a new role group](/exchange/recipients-in-exchange-online/manage-permissions-for-recipients#use-the-eac-to-assign-permissions-to-individual-mailboxes) with with the **Audit Logs** role assigned.
 
-:::image type="content" source="../../media/te-rtd-all-email-view-email-tab-details-area-recipient-details-flyout.png" alt-text="The details flyout after you select a recipient in the Email tab of the details area in the All email view." lightbox="../../media/te-rtd-all-email-view-email-tab-details-area-recipient-details-flyout.png":::
+:::image type="content" source="../../media/te-rtd-all-email-view-email-tab-details-area-recipient-details-flyout.png" alt-text="Screenshot of the details flyout after you select a recipient in the Email tab of the details area in the All email view." lightbox="../../media/te-rtd-all-email-view-email-tab-details-area-recipient-details-flyout.png":::
 
 #### URL clicks view for the details area of the All email view in Threat Explorer
 
@@ -473,7 +473,7 @@ The **URL clicks** view shows a chart that can be organized using pivots. The ch
 
 The chart pivots are described in the following subsections.
 
-:::image type="content" source="../../media/te-rtd-all-email-view-details-area-url-clicks-tab-default-view.png" alt-text="The details area of the All email view in Threat Explorer with the URL clicks tab selected and showing the available pivots with no pivot selected." lightbox="../../media/te-rtd-all-email-view-details-area-url-clicks-tab-default-view.png":::
+:::image type="content" source="../../media/te-rtd-all-email-view-details-area-url-clicks-tab-default-view.png" alt-text="Screenshot of the details area of the All email view in Threat Explorer with the URL clicks tab selected and showing the available pivots with no pivot selected." lightbox="../../media/te-rtd-all-email-view-details-area-url-clicks-tab-default-view.png":::
 
 > [!TIP]
 > In Threat Explorer, each pivot in **URL clicks** view has a :::image type="icon" source="../../media/m365-cc-sc-view-icon.png" border="false"::: **View all clicks** action that opens the [URL clicks view](#url-clicks-view-in-threat-explorer) in a new tab.
@@ -484,7 +484,7 @@ Although this chart pivot doesn't appear to be selected, **URL domain** is the d
 
 The **URL domain** pivot shows the different domains in URLs in email messages for the specified date/time range and property filters.
 
-:::image type="content" source="../../media/te-rtd-all-email-view-details-area-url-clicks-tab-url-domain-pivot.png" alt-text="The details area of the All email view in Threat Explorer with the URL clicks tab and the URL domain pivot selected." lightbox="../../media/te-rtd-all-email-view-details-area-url-clicks-tab-url-domain-pivot.png":::
+:::image type="content" source="../../media/te-rtd-all-email-view-details-area-url-clicks-tab-url-domain-pivot.png" alt-text="Screenshot of the details area of the All email view in Threat Explorer with the URL clicks tab and the URL domain pivot selected." lightbox="../../media/te-rtd-all-email-view-details-area-url-clicks-tab-url-domain-pivot.png":::
 
 Hovering over a data point in the chart shows the count for each URL domain.
 
@@ -492,7 +492,7 @@ Hovering over a data point in the chart shows the count for each URL domain.
 
 The **Click verdict** pivot shows the different verdicts for clicked URLs in email messages for the specified date/time range and property filters.
 
-:::image type="content" source="../../media/te-rtd-all-email-view-details-area-url-clicks-tab-click-verdict-pivot.png" alt-text="The details area of the All email view in Threat Explorer with the URL clicks tab and the Click verdict pivot selected." lightbox="../../media/te-rtd-all-email-view-details-area-url-clicks-tab-click-verdict-pivot.png":::
+:::image type="content" source="../../media/te-rtd-all-email-view-details-area-url-clicks-tab-click-verdict-pivot.png" alt-text="Screenshot of the details area of the All email view in Threat Explorer with the URL clicks tab and the Click verdict pivot selected." lightbox="../../media/te-rtd-all-email-view-details-area-url-clicks-tab-click-verdict-pivot.png":::
 
 Hovering over a data point in the chart shows the count for each click verdict.
 
@@ -500,7 +500,7 @@ Hovering over a data point in the chart shows the count for each click verdict.
 
 The **URL** pivot shows the different URLs that were clicked in email messages for the specified date/time range and property filters.
 
-:::image type="content" source="../../media/te-rtd-all-email-view-details-area-url-clicks-tab-url-pivot.png" alt-text="The details area of the All email view in Threat Explorer with the URL clicks tab and the URL pivot selected." lightbox="../../media/te-rtd-all-email-view-details-area-url-clicks-tab-url-pivot.png":::
+:::image type="content" source="../../media/te-rtd-all-email-view-details-area-url-clicks-tab-url-pivot.png" alt-text="Screenshot of the details area of the All email view in Threat Explorer with the URL clicks tab and the URL pivot selected." lightbox="../../media/te-rtd-all-email-view-details-area-url-clicks-tab-url-pivot.png":::
 
 Hovering over a data point in the chart shows the count for each URL.
 
@@ -508,7 +508,7 @@ Hovering over a data point in the chart shows the count for each URL.
 
 The **URL domain and path** pivot shows the different domains and file paths of URLs that were clicked in email messages for the specified date/time range and property filters.
 
-:::image type="content" source="../../media/te-rtd-all-email-view-details-area-url-clicks-tab-url-domain-and-path-pivot.png" alt-text="The details area of the All email view in Threat Explorer with the URL clicks tab and the URL domain and path pivot selected." lightbox="../../media/te-rtd-all-email-view-details-area-url-clicks-tab-url-domain-and-path-pivot.png":::
+:::image type="content" source="../../media/te-rtd-all-email-view-details-area-url-clicks-tab-url-domain-and-path-pivot.png" alt-text="Screenshot of the details area of the All email view in Threat Explorer with the URL clicks tab and the URL domain and path pivot selected." lightbox="../../media/te-rtd-all-email-view-details-area-url-clicks-tab-url-domain-and-path-pivot.png":::
 
 Hovering over a data point in the chart shows the count for each URL domain and file path.
 
@@ -569,7 +569,7 @@ When you select an entry by clicking anywhere in the row other than the check bo
 
     If more than two devices are involved, select **View all devices** to see all of them.
   
-:::image type="content" source="../../media/te-rtd-all-email-view-top-urls-tab-details-area-url-details-flyout.png" alt-text="The details flyout after selecting an entry in the Top URLs tab in the All email view in Threat Explorer." lightbox="../../media/te-rtd-all-email-view-top-urls-tab-details-area-url-details-flyout.png":::
+:::image type="content" source="../../media/te-rtd-all-email-view-top-urls-tab-details-area-url-details-flyout.png" alt-text="Screenshot of the details flyout after selecting an entry in the Top URLs tab in the All email view in Threat Explorer." lightbox="../../media/te-rtd-all-email-view-top-urls-tab-details-area-url-details-flyout.png":::
 
 #### Top clicks view for the details area of the All email view in Threat Explorer
 
@@ -611,7 +611,7 @@ The **Top targeted users** view organizes the data into a table of the top five 
 
 The **Email origin** view shows message sources on a map of the world.
 
-:::image type="content" source="../../media/te-rtd-all-email-view-details-area-email-origin-tab.png" alt-text="The world map in the Email origin view in the details area of the All email view in Threat Explorer." lightbox="../../media/te-rtd-all-email-view-details-area-email-origin-tab.png":::
+:::image type="content" source="../../media/te-rtd-all-email-view-details-area-email-origin-tab.png" alt-text="Screenshot of the world map in the Email origin view in the details area of the All email view in Threat Explorer." lightbox="../../media/te-rtd-all-email-view-details-area-email-origin-tab.png":::
 
 #### Campaign view for the details area of the All email view in Threat Explorer
 
@@ -630,7 +630,7 @@ To open the **Malware** view, do one of the following steps:
 - **Threat Explorer**: On the **Explorer** page in the Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Explorer** \> **Malware** tab. Or, go directly to the **Explorer** page using <https://security.microsoft.com/threatexplorerv3>, and then select the **Malware** tab.
 - **Real-time detections**: On the **Real-time detections** page in the Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Explorer** \> **Malware** tab. Or, go directly to the **Real-time detections** page using <https://security.microsoft.com/realtimereportsv3>, and then verify that the **Malware** tab is selected.
 
-:::image type="content" source="../../media/te-rtd-malware-view.png" alt-text="The Malware view in Threat Explorer showing the chart, available pivots for the chart, and views for the details table." lightbox="../../media/te-rtd-malware-view.png":::
+:::image type="content" source="../../media/te-rtd-malware-view.png" alt-text="Screenshot of the Malware view in Threat Explorer showing the chart, available pivots for the chart, and views for the details table." lightbox="../../media/te-rtd-malware-view.png":::
 
 ### Filterable properties in the Malware view in Threat Explorer and Real-time detections
 
@@ -722,7 +722,7 @@ Although this pivot doesn't look selected by default, **Malware family** is the 
 
 The **Malware family** pivot organizes the chart by the malware family detected in messages for the specified date/time range and property filters.
 
-:::image type="content" source="../../media/te-rtd-malware-view-chart-malware-family-pivot.png" alt-text="The chart in the Malware view in Threat Explorer using the Malware family pivot." lightbox="../../media/te-rtd-malware-view-chart-malware-family-pivot.png":::
+:::image type="content" source="../../media/te-rtd-malware-view-chart-malware-family-pivot.png" alt-text="Screenshot of the chart in the Malware view in Threat Explorer using the Malware family pivot." lightbox="../../media/te-rtd-malware-view-chart-malware-family-pivot.png":::
 
 Hovering over a data point in the chart shows the count for each malware family.
 
@@ -730,7 +730,7 @@ Hovering over a data point in the chart shows the count for each malware family.
 
 The **Sender domain** pivot organizes the chart by the sender domain of messages that were found to contain malware for the specified date/time range and property filters.
 
-:::image type="content" source="../../media/te-rtd-malware-view-chart-sender-domain-pivot.png" alt-text="The chart in the Malware view in Threat Explorer using the Sender domain pivot." lightbox="../../media/te-rtd-malware-view-chart-sender-domain-pivot.png":::
+:::image type="content" source="../../media/te-rtd-malware-view-chart-sender-domain-pivot.png" alt-text="Screenshot of the chart in the Malware view in Threat Explorer using the Sender domain pivot." lightbox="../../media/te-rtd-malware-view-chart-sender-domain-pivot.png":::
 
 Hovering over a data point in the chart shows the count for each sender domain.
 
@@ -738,7 +738,7 @@ Hovering over a data point in the chart shows the count for each sender domain.
 
 The **Sender IP** pivot organizes the chart by the source IP address of messages that were found to contain malware for the specified date/time range and property filters.
 
-:::image type="content" source="../../media/te-rtd-malware-view-chart-sender-ip-pivot.png" alt-text="The chart in the Malware view in Threat Explorer using the Sender IP pivot." lightbox="../../media/te-rtd-malware-view-chart-sender-ip-pivot.png":::
+:::image type="content" source="../../media/te-rtd-malware-view-chart-sender-ip-pivot.png" alt-text="Screenshot of the chart in the Malware view in Threat Explorer using the Sender IP pivot." lightbox="../../media/te-rtd-malware-view-chart-sender-ip-pivot.png":::
 
 Hovering over a data point in the chart shows the count for each source IP address.
 
@@ -748,7 +748,7 @@ Although this pivot doesn't look selected by default, **Delivery action** is the
 
 The **Delivery action** pivot organizes the chart by what happened to messages that were found to contain malware for the specified date/time range and property filters.
 
-:::image type="content" source="../../media/te-rtd-malware-view-chart-delivery-action-pivot.png" alt-text="The chart in the Malware view in Threat Explorer using the Delivery action pivot." lightbox="../../media/te-rtd-malware-view-chart-delivery-action-pivot.png":::
+:::image type="content" source="../../media/te-rtd-malware-view-chart-delivery-action-pivot.png" alt-text="Screenshot of the chart in the Malware view in Threat Explorer using the Delivery action pivot." lightbox="../../media/te-rtd-malware-view-chart-delivery-action-pivot.png":::
 
 Hovering over a data point in the chart shows the count for each delivery action.
 
@@ -756,7 +756,7 @@ Hovering over a data point in the chart shows the count for each delivery action
 
 The **Detection technology** pivot organizes the chart by the feature that identified malware in messages for the specified date/time range and property filters.
 
-:::image type="content" source="../../media/te-rtd-malware-view-chart-detection-technology-pivot.png" alt-text="The chart in the Malware view in Threat Explorer using the Detection technology pivot." lightbox="../../media/te-rtd-malware-view-chart-detection-technology-pivot.png":::
+:::image type="content" source="../../media/te-rtd-malware-view-chart-detection-technology-pivot.png" alt-text="Screenshot of the chart in the Malware view in Threat Explorer using the Detection technology pivot." lightbox="../../media/te-rtd-malware-view-chart-detection-technology-pivot.png":::
 
 Hovering over a data point in the chart shows the count for each detection technology.
 
@@ -855,7 +855,7 @@ The **Top malware families** view for the details area organizes the data into a
 
   - **Technical details** section
 
-  :::image type="content" source="../../media/te-rtd-malware-view-details-area-top-malware-families-details-flyout.png" alt-text="The details flyout after you select a malware family from the Top malware families tab of the details area in the Malware view of Threat Explorer." lightbox="../../media/te-rtd-malware-view-details-area-top-malware-families-details-flyout.png":::
+  :::image type="content" source="../../media/te-rtd-malware-view-details-area-top-malware-families-details-flyout.png" alt-text="Screenshot of the details flyout after you select a malware family from the Top malware families tab of the details area in the Malware view of Threat Explorer." lightbox="../../media/te-rtd-malware-view-details-area-top-malware-families-details-flyout.png":::
 
 - The number of attempts: If you select the number of attempts, Threat Explorer opens in a new tab filtered by the malware family name.
 
@@ -891,7 +891,7 @@ To open the **Phish** view, do one of the following steps:
 - **Threat Explorer**: On the **Explorer** page in the Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Explorer** \> **Phish** tab. Or, go directly to the **Explorer** page using <https://security.microsoft.com/threatexplorerv3>, and then select the **Phish** tab.
 - **Real-time detections**: On the **Real-time detections** page in the Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Explorer** \> **Phish** tab. Or, go directly to the **Real-time detections** page using <https://security.microsoft.com/realtimereportsv3>, and then select the **Phish** tab.
 
-:::image type="content" source="../../media/te-rtd-phish-view.png" alt-text="The Phish view in Threat Explorer showing the chart, available pivots for the chart, and views for the details table." lightbox="../../media/te-rtd-phish-view.png":::
+:::image type="content" source="../../media/te-rtd-phish-view.png" alt-text="Screenshot of the Phish view in Threat Explorer showing the chart, available pivots for the chart, and views for the details table." lightbox="../../media/te-rtd-phish-view.png":::
 
 ### Filterable properties in the Phish view in Threat Explorer and Real-time detections
 
@@ -987,7 +987,7 @@ Although this pivot doesn't look selected by default, **Sender domain** is the d
 
 The **Sender domain** pivot organizes the chart by the domains in messages for the specified date/time range and property filters.
 
-:::image type="content" source="../../media/te-rtd-all-email-view-chart-sender-domain-pivot.png" alt-text="The chart in the Phish view in Threat Explorer using the Sender domain pivot." lightbox="../../media/te-rtd-all-email-view-chart-sender-domain-pivot.png":::
+:::image type="content" source="../../media/te-rtd-all-email-view-chart-sender-domain-pivot.png" alt-text="Screenshot of the chart in the Phish view in Threat Explorer using the Sender domain pivot." lightbox="../../media/te-rtd-all-email-view-chart-sender-domain-pivot.png":::
 
 Hovering over a data point in the chart shows the count for each sender domain.
 
@@ -995,7 +995,7 @@ Hovering over a data point in the chart shows the count for each sender domain.
 
 The **Sender IP** pivot organizes the chart by the source IP addresses of messages for the specified date/time range and property filters.
 
-:::image type="content" source="../../media/te-rtd-all-email-view-chart-sender-ip-pivot.png" alt-text="The chart in the Phish view in Threat Explorer using the Sender IP pivot." lightbox="../../media/te-rtd-all-email-view-chart-sender-ip-pivot.png":::
+:::image type="content" source="../../media/te-rtd-all-email-view-chart-sender-ip-pivot.png" alt-text="Screenshot of the chart in the Phish view in Threat Explorer using the Sender IP pivot." lightbox="../../media/te-rtd-all-email-view-chart-sender-ip-pivot.png":::
 
 Hovering over a data point in the chart shows the count for each source IP address.
 
@@ -1005,7 +1005,7 @@ Although this pivot doesn't look selected by default, **Delivery action** is the
 
 The **Delivery action** pivot organizes the chart by the actions taken on messages for the specified date/time range and property filters.
 
-:::image type="content" source="../../media/te-rtd-all-email-view-chart-delivery-action-pivot.png" alt-text="The chart in the Phish view in Threat Explorer using the Delivery action pivot." lightbox="../../media/te-rtd-all-email-view-chart-delivery-action-pivot.png":::
+:::image type="content" source="../../media/te-rtd-all-email-view-chart-delivery-action-pivot.png" alt-text="Screenshot of the chart in the Phish view in Threat Explorer using the Delivery action pivot." lightbox="../../media/te-rtd-all-email-view-chart-delivery-action-pivot.png":::
 
 Hovering over a data point in the chart shows the count for each delivery action.
 
@@ -1013,7 +1013,7 @@ Hovering over a data point in the chart shows the count for each delivery action
 
 The **Detection technology** pivot organizes the chart by the feature that identified the phishing messages for the specified date/time range and property filters.
 
-:::image type="content" source="../../media/te-rtd-phish-view-chart-detection-technology-pivot.png" alt-text="The chart in the Phish view in Threat Explorer using the Detection technology pivot." lightbox="../../media/te-rtd-phish-view-chart-detection-technology-pivot.png":::
+:::image type="content" source="../../media/te-rtd-phish-view-chart-detection-technology-pivot.png" alt-text="Screenshot of the chart in the Phish view in Threat Explorer using the Detection technology pivot." lightbox="../../media/te-rtd-phish-view-chart-detection-technology-pivot.png":::
 
 Hovering over a data point in the chart shows the count for each detection technology.
 
@@ -1021,7 +1021,7 @@ Hovering over a data point in the chart shows the count for each detection techn
 
 The **Full URL** pivot organizes the chart by the full URLs in phishing messages for the specified date/time range and property filters.
 
-:::image type="content" source="../../media/te-rtd-all-email-view-chart-full-url-pivot.png" alt-text="The chart in the Phish view in Threat Explorer using the Full URL pivot." lightbox="../../media/te-rtd-all-email-view-chart-full-url-pivot.png":::
+:::image type="content" source="../../media/te-rtd-all-email-view-chart-full-url-pivot.png" alt-text="Screenshot of the chart in the Phish view in Threat Explorer using the Full URL pivot." lightbox="../../media/te-rtd-all-email-view-chart-full-url-pivot.png":::
 
 Hovering over a data point in the chart shows the count for each full URL.
 
@@ -1029,7 +1029,7 @@ Hovering over a data point in the chart shows the count for each full URL.
 
 The **URL domain** pivot organizes the chart by the domains in URLs in phishing messages for the specified date/time range and property filters.
 
-:::image type="content" source="../../media/te-rtd-all-email-view-chart-url-domain-pivot.png" alt-text="The chart in the Phish view in Threat Explorer using the URL domain pivot." lightbox="../../media/te-rtd-all-email-view-chart-url-domain-pivot.png":::
+:::image type="content" source="../../media/te-rtd-all-email-view-chart-url-domain-pivot.png" alt-text="Screenshot of the chart in the Phish view in Threat Explorer using the URL domain pivot." lightbox="../../media/te-rtd-all-email-view-chart-url-domain-pivot.png":::
 
 Hovering over a data point in the chart shows the count for each URL domain.
 
@@ -1037,7 +1037,7 @@ Hovering over a data point in the chart shows the count for each URL domain.
 
 The **URL domain and path** pivot organizes the chart by the domains and paths in URLs in phishing messages for the specified date/time range and property filters.
 
-:::image type="content" source="../../media/te-rtd-all-email-view-chart-url-domain-and-path-pivot.png" alt-text="The chart in the Phish view in Threat Explorer using the URL domain and path pivot." lightbox="../../media/te-rtd-all-email-view-chart-url-domain-and-path-pivot.png":::
+:::image type="content" source="../../media/te-rtd-all-email-view-chart-url-domain-and-path-pivot.png" alt-text="Screenshot of the chart in the Phish view in Threat Explorer using the URL domain and path pivot." lightbox="../../media/te-rtd-all-email-view-chart-url-domain-and-path-pivot.png":::
 
 Hovering over a data point in the chart shows the count for each URL domain and path.
 
@@ -1142,7 +1142,7 @@ The same chart pivots are available and described for the **All email** view in 
 - [URL pivot for the URL clicks view for the details area of the All email view in Threat Explorer](#url-pivot-for-the-url-clicks-view-for-the-details-area-of-the-all-email-view-in-threat-explorer)
 - [URL domain and path pivot for the URL clicks view for the details area of the All email view in Threat Explorer](#url-domain-and-path-pivot-for-the-url-clicks-view-for-the-details-area-of-the-all-email-view-in-threat-explorer)
 
-:::image type="content" source="../../media/te-rtd-all-email-view-details-area-url-clicks-tab-default-view.png" alt-text="The details area of the Phish view in Threat Explorer with the URL clicks tab selected and showing the available pivots with no pivot selected." lightbox="../../media/te-rtd-all-email-view-details-area-url-clicks-tab-default-view.png":::
+:::image type="content" source="../../media/te-rtd-all-email-view-details-area-url-clicks-tab-default-view.png" alt-text="Screenshot of the details area of the Phish view in Threat Explorer with the URL clicks tab selected and showing the available pivots with no pivot selected." lightbox="../../media/te-rtd-all-email-view-details-area-url-clicks-tab-default-view.png":::
 
 > [!TIP]
 > In Threat Explorer, each pivot in **URL clicks** view has a :::image type="icon" source="../../media/m365-cc-sc-view-icon.png" border="false"::: **View all clicks** action that opens the [URL clicks view in Threat Explorer](#url-clicks-view-in-threat-explorer) in a new tab. This action isn't available in Real-time detections, because the **URL clicks** view isn't avaialble in Real-time detections.
@@ -1219,7 +1219,7 @@ To open the **Campaigns** view on the **Explorer** page in the Defender portal a
 
 All of the available information and actions are identical to the information and actions on the **Campaigns** page at <https://security.microsoft.com/campaignsv3>. For more information, see [Campaigns page in the Microsoft Defender portal](campaigns.md#campaigns-page-in-the-microsoft-defender-portal).
 
-:::image type="content" source="../../media/te-rtd-campaigns-view.png" alt-text="The Campaigns view in Threat Explorer showing the chart, available pivots for the chart, and views for the details table." lightbox="../../media/te-rtd-campaigns-view.png":::
+:::image type="content" source="../../media/te-rtd-campaigns-view.png" alt-text="Screenshot of the Campaigns view in Threat Explorer showing the chart, available pivots for the chart, and views for the details table." lightbox="../../media/te-rtd-campaigns-view.png":::
 
 ## Content malware view in Threat Explorer and Real-time detections
 
@@ -1233,7 +1233,7 @@ To open the **Content malware** view, do one of the following steps:
 - **Threat Explorer**: On the **Explorer** page in the Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Explorer** \> **Content malware** tab. Or, go directly to the **Explorer** page using <https://security.microsoft.com/threatexplorerv3>, and then select the **Content malware** tab.
 - **Real-time detections**: On the **Real-time detections** page in the Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Explorer** \> **Content malware** tab. Or, go directly to the **Real-time detections** page using <https://security.microsoft.com/realtimereportsv3>, and then select the **Content malware** tab.
 
-:::image type="content" source="../../media/te-rtd-content-malware-view.png" alt-text="The Cotent malware view in Threat Explorer showing the chart, available pivots for the chart, and views for the details table." lightbox="../../media/te-rtd-content-malware-view.png":::
+:::image type="content" source="../../media/te-rtd-content-malware-view.png" alt-text="Screenshot of the Cotent malware view in Threat Explorer showing the chart, available pivots for the chart, and views for the details table." lightbox="../../media/te-rtd-content-malware-view.png":::
 
 ### Filterable properties in the Content malware view in Threat Explorer and Real-time detections
 
@@ -1274,7 +1274,7 @@ Although this pivot doesn't look selected by default, **Malware family** is the 
 
 The **Malware family** pivot organizes the chart by the malware identified in files in SharePoint, OneDrive, and Microsoft Teams using the specified date/time range and property filters.
 
-:::image type="content" source="../../media/te-rtd-content-malware-view-chart-malware-family-pivot.png" alt-text="The chart in the Content malware view in Threat Explorer using the Malware family pivot." lightbox="../../media/te-rtd-content-malware-view-chart-malware-family-pivot.png":::
+:::image type="content" source="../../media/te-rtd-content-malware-view-chart-malware-family-pivot.png" alt-text="Screenshot of the chart in the Content malware view in Threat Explorer using the Malware family pivot." lightbox="../../media/te-rtd-content-malware-view-chart-malware-family-pivot.png":::
 
 Hovering over a data point in the chart shows the count for each malware family.
 
@@ -1282,7 +1282,7 @@ Hovering over a data point in the chart shows the count for each malware family.
 
 The **Detection technology** pivot organizes the chart by the feature that identified malware in files in SharePoint, OneDrive, and Microsoft Teams for the specified date/time range and property filters.
 
-:::image type="content" source="../../media/te-rtd-content-malware-view-chart-detection-technology-pivot.png" alt-text="The chart in the Content malware view in Threat Explorer using the Detection technology pivot." lightbox="../../media/te-rtd-content-malware-view-chart-detection-technology-pivot.png":::
+:::image type="content" source="../../media/te-rtd-content-malware-view-chart-detection-technology-pivot.png" alt-text="Screenshot of the chart in the Content malware view in Threat Explorer using the Detection technology pivot." lightbox="../../media/te-rtd-content-malware-view-chart-detection-technology-pivot.png":::
 
 Hovering over a data point in the chart shows the count for each detection technology.
 
@@ -1290,7 +1290,7 @@ Hovering over a data point in the chart shows the count for each detection techn
 
 The **Workload** pivot organizes the chart by where the malware was identified (SharePoint, OneDrive, or Microsoft Teams) for the specified date/time range and property filters.
 
-:::image type="content" source="../../media/te-rtd-content-malware-view-chart-workload-pivot.png" alt-text="The chart in the Malware view in Threat Explorer using the Workload pivot." lightbox="../../media/te-rtd-content-malware-view-chart-workload-pivot.png":::
+:::image type="content" source="../../media/te-rtd-content-malware-view-chart-workload-pivot.png" alt-text="Screenshot of the chart in the Malware view in Threat Explorer using the Workload pivot." lightbox="../../media/te-rtd-content-malware-view-chart-workload-pivot.png":::
 
 Hovering over a data point in the chart shows the count for each workload.
 
@@ -1368,7 +1368,7 @@ When you select a filename value from the **Name** column, a details flyout open
    > [!TIP]
    > Members of the **Security Administrators** role group in [Email & collaboration permissions](mdo-portal-permissions.md) can't expand the **Recent activity** section. You need to be a member of a role group in [Exchange Online permissions](/exchange/permissions-exo/permissions-exo) that has the **Audit Logs**, **Information Protection Analyst**, or **Information Protection Investigator** roles assigned. By default, those roles are assigned to the **Records Management**, **Compliance Management**, **Information Protection**, **Information Protection Analysts**, **Information Protection Investigators**, and **Organization Management** role groups. You can add the members of **Security Administrators** to those role groups, or you can [create a new role group](/exchange/recipients-in-exchange-online/manage-permissions-for-recipients#use-the-eac-to-assign-permissions-to-individual-mailboxes) with with the **Audit Logs** role assigned.
 
-:::image type="content" source="../../media/te-rtd-content-malware-view-details-area-documents-tab-filename-flyout.png" alt-text="x" lightbox="../../media/te-rtd-content-malware-view-details-area-documents-tab-filename-flyout.png":::
+:::image type="content" source="../../media/te-rtd-content-malware-view-details-area-documents-tab-filename-flyout.png" alt-text="Screenshot of the details flyout from the Document view for the details area of the Content malware view in Threat Explorer and Real-time detections." lightbox="../../media/te-rtd-content-malware-view-details-area-documents-tab-filename-flyout.png":::
 
 ## URL clicks view in Threat Explorer
 
@@ -1376,7 +1376,7 @@ The **URL clicks** view in Threat Explorer shows all user clicks on URLs in emai
 
 To open the **URL clicks** view on the **Explorer** page in the Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Explorer** \> **URL clicks** tab. Or, go directly to the **Explorer** page using <https://security.microsoft.com/threatexplorerv3>, and then select the **URL clicks** tab.
 
-:::image type="content" source="../../media/te-rtd-url-clicks-view.png" alt-text="The URL clicks view in Threat Explorer showing the chart, available pivots for the chart, and views for the details table." lightbox="../../media/te-rtd-url-clicks-view.png":::
+:::image type="content" source="../../media/te-rtd-url-clicks-view.png" alt-text="Screenshot of the URL clicks view in Threat Explorer showing the chart, available pivots for the chart, and views for the details table." lightbox="../../media/te-rtd-url-clicks-view.png":::
 
 ### Filterable properties in the URL clicks view in Threat Explorer
 
@@ -1409,7 +1409,7 @@ Although this pivot doesn't look selected by default, **URL domain** is the defa
 
 The **URL domain** pivot organizes the chart by the domains in URLs that users clicked in email, Office files, or Microsoft Teams for the specified date/time range and property filters.
 
-:::image type="content" source="../../media/te-rtd-all-email-view-chart-url-domain-pivot.png" alt-text="The chart in the URL clicks view in Threat Explorer using the URL domain pivot." lightbox="../../media/te-rtd-all-email-view-chart-url-domain-pivot.png":::
+:::image type="content" source="../../media/te-rtd-all-email-view-chart-url-domain-pivot.png" alt-text="Screenshot of the chart in the URL clicks view in Threat Explorer using the URL domain pivot." lightbox="../../media/te-rtd-all-email-view-chart-url-domain-pivot.png":::
 
 Hovering over a data point in the chart shows the count for each URL domain.
 
@@ -1417,7 +1417,7 @@ Hovering over a data point in the chart shows the count for each URL domain.
 
 The **Workload** pivot organizes the chart by the location of the clicked URL (email, Office files, or Microsoft Teams) for the specified date/time range and property filters.
 
-:::image type="content" source="../../media/te-rtd-url-clicks-view-chart-workload-pivot.png" alt-text="The chart in the URL clicks view in Threat Explorer using the Workload pivot." lightbox="../../media/te-rtd-url-clicks-view-chart-workload-pivot.png":::
+:::image type="content" source="../../media/te-rtd-url-clicks-view-chart-workload-pivot.png" alt-text="Screenshot of the chart in the URL clicks view in Threat Explorer using the Workload pivot." lightbox="../../media/te-rtd-url-clicks-view-chart-workload-pivot.png":::
 
 Hovering over a data point in the chart shows the count for each workload.
 
@@ -1425,7 +1425,7 @@ Hovering over a data point in the chart shows the count for each workload.
 
 The **Detection technology** pivot organizes the chart by the feature that identified the URL clicks in email, Office files, or Microsoft Teams for the specified date/time range and property filters.
 
-:::image type="content" source="../../media/te-rtd-url-clicks-view-chart-detection-technology-pivot.png" alt-text="The chart in the URL clicks view in Threat Explorer using the Detection technology pivot." lightbox="../../media/te-rtd-url-clicks-view-chart-detection-technology-pivot.png":::
+:::image type="content" source="../../media/te-rtd-url-clicks-view-chart-detection-technology-pivot.png" alt-text="Screenshot of the chart in the URL clicks view in Threat Explorer using the Detection technology pivot." lightbox="../../media/te-rtd-url-clicks-view-chart-detection-technology-pivot.png":::
 
 Hovering over a data point in the chart shows the count for each detection technology.
 
@@ -1433,7 +1433,7 @@ Hovering over a data point in the chart shows the count for each detection techn
 
 The **Threat type** pivot organizes the chart by the results for clicked URLs in email, Office files, or Microsoft Teams for the specified date/time range and property filters.
 
-:::image type="content" source="../../media/te-rtd-url-clicks-view-chart-threat-type-pivot.png" alt-text="The chart in the URL clicks view in Threat Explorer using the Threat type pivot." lightbox="../../media/te-rtd-url-clicks-view-chart-threat-type-pivot.png":::
+:::image type="content" source="../../media/te-rtd-url-clicks-view-chart-threat-type-pivot.png" alt-text="Screenshot of the chart in the URL clicks view in Threat Explorer using the Threat type pivot." lightbox="../../media/te-rtd-url-clicks-view-chart-threat-type-pivot.png":::
 
 Hovering over a data point in the chart shows the count for each threat type technology.
 
@@ -1556,7 +1556,7 @@ The steps to create property filter/query conditions are the same in all views i
 
 5. To apply the filter to the chart and the details table, select **Refresh**
 
-   :::image type="content" source="../../media/te-rtd-query-builder.png" alt-text="An example query in Threat Explorer or Real-time detections showing multiple conditions." lightbox="../../media/te-rtd-query-builder.png":::
+   :::image type="content" source="../../media/te-rtd-query-builder.png" alt-text="Screenshot of an example query in Threat Explorer or Real-time detections showing multiple conditions." lightbox="../../media/te-rtd-query-builder.png":::
 
 ### Saved queries in Threat Explorer
 
@@ -1582,7 +1582,7 @@ To save queries in Threat Explorer, do the following steps:
 
    When you're finished in the **Save query** flyout, select **Save**, and then select **OK** in the confirmation dialog.
 
-:::image type="content" source="../../media/te-rtd-query-save.png" alt-text="The Save query flyout in Threat Explorer in the Defender portal." lightbox="../../media/te-rtd-query-save.png":::
+:::image type="content" source="../../media/te-rtd-query-save.png" alt-text="Screenshot of the Save query flyout in Threat Explorer in the Defender portal." lightbox="../../media/te-rtd-query-save.png":::
 
 On the **Saved query** or **Tracked query** tabs on the **Threat tracker** page in the Defender portal at <https://security.microsoft.com/threattrackerv2>, you can select **Explore** in the **Actions** column to open and use the query in Threat Explorer.
 
@@ -1592,7 +1592,7 @@ When you open the query from the **Threat tracker** page, :::image type="icon" s
 
 - If you select :::image type="icon" source="../../media/m365-cc-sc-gear-icon.png" border="false"::: **Saved query settings**, the **Saved query settings** flyout opens where you can update the date and **Track query** settings of the existing query.
 
-:::image type="content" source="../../media/te-rtd-query-save-query-as-saved-query-settings.png" alt-text="Save query in Threat Explorer with Save query as and Saved query settings available." lightbox="../../media/te-rtd-query-save-query-as-saved-query-settings.png":::
+:::image type="content" source="../../media/te-rtd-query-save-query-as-saved-query-settings.png" alt-text="Screenshot of Save query in Threat Explorer with Save query as and Saved query settings available." lightbox="../../media/te-rtd-query-save-query-as-saved-query-settings.png":::
 
 ## More information
 

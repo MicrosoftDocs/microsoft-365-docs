@@ -72,7 +72,7 @@ This article explains how to use Threat Explorer and Real-time detections to fin
 
 3. Select the date/time range. The default is yesterday and today.
 
-   :::image type="content" source="../../media/te-rtd-date-filter.png" alt-text="The date filter used in Threat Explorer and Real-time detections in the Defender portal." lightbox="../../media/te-rtd-date-filter.png":::
+   :::image type="content" source="../../media/te-rtd-date-filter.png" alt-text="Screenshot of the date filter used in Threat Explorer and Real-time detections in the Defender portal." lightbox="../../media/te-rtd-date-filter.png":::
 
 4. Create one or more filter conditions using some or all of the following targeted properties and values. For complete instructions, see [Property filters in Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md#property-filters-in-threat-explorer-and-real-time-detections). For example:
 
