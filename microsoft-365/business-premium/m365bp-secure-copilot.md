@@ -91,7 +91,7 @@ How can companies monitor interactions with Copilot for Microsoft 365 and suppor
 
 ## Appendix
 
-The previous information is summarized in the following tables:
+The available security and compliance features related to Copilot for Microsoft 365 in Business Standard and Business Premium is summarized in the following tables:
 
 - **Identity and Access Management (Microsoft Entra ID)**:
 
