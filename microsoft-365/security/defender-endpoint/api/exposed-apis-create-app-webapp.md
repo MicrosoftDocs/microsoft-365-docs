@@ -57,7 +57,7 @@ This article explains how to create a Microsoft Entra application, get an access
 
 2. Navigate to **Microsoft Entra ID** \> **App registrations** \> **New registration**. 
 
-    :::image type="content" source="../images/atp-azure-new-app2.png" alt-text="The application registration pane" lightbox="../images/atp-azure-new-app2.png":::
+    :::image type="content" source="../media/atp-azure-new-app2.png" alt-text="The application registration pane" lightbox="../media/atp-azure-new-app2.png":::
 
 3. In the registration form, choose a name for your application, and then select **Register**.
 
@@ -70,7 +70,7 @@ This article explains how to create a Microsoft Entra application, get an access
 
    Select **Application permissions** \> **Alert.Read.All**, and then select **Add permissions**.
 
-   :::image type="content" source="../images/application-permissions.png" alt-text="The application permission information pane" lightbox="../images/application-permissions.png":::
+   :::image type="content" source="../media/application-permissions.png" alt-text="The application permission information pane" lightbox="../media/application-permissions.png":::
 
      You need to select the relevant permissions. 'Read All Alerts' is only an example. For example:
 

@@ -56,7 +56,7 @@ You need to have access to:
    2. Specify the start and time.
    3. Specify the frequency. For example, every 5 minutes.
 
-   :::image type="content" source="images/build-flow.png" alt-text="The notification flow" lightbox="images/build-flow.png":::
+   :::image type="content" source="media/build-flow.png" alt-text="The notification flow" lightbox="media/build-flow.png":::
 
 4. Select the + button to add a new action. The new action is an HTTP request to the Defender for Endpoint devices API. You can also replace it with the out-of-the-box **WDATP Connector** (action: **Machines - Get list of machines**).
 
@@ -78,7 +78,7 @@ You need to have access to:
 6. Add a new step by selecting **Add new action** then search for **Data Operations** and select
 **Parse JSON**.
 
-   :::image type="content" source="images/data-operations.png" alt-text="The data operations entry" lightbox="images/data-operations.png":::
+   :::image type="content" source="media/data-operations.png" alt-text="The data operations entry" lightbox="media/data-operations.png":::
 
 7. Add Body in the **Content** field.
 
@@ -177,13 +177,13 @@ You need to have access to:
 
     :::image type="content" source="images/flow-apply.png" alt-text="The application of the flow to each element" lightbox="images/flow-apply.png":::
 
-    :::image type="content" source="images/apply-to-each.png" alt-text="The application of the flow to the Get items element" lightbox="images/apply-to-each.png":::
+    :::image type="content" source="media/apply-to-each.png" alt-text="The application of the flow to the Get items element" lightbox="media/apply-to-each.png":::
 
 11. Under **Condition**, add the following expression: "length(body('Get_items')?['value'])" and set the condition to equal to 0.
 
-    :::image type="content" source="images/apply-to-each-value.png" alt-text="The application of the flow to each condition" lightbox="images/apply-to-each-value.png":::
-    :::image type="content" source="images/conditions-2.png" alt-text="The condition-1" lightbox="images/conditions-2.png":::
-    :::image type="content" source="images/condition3.png" alt-text="The condition-2" lightbox="images/condition3.png":::
+    :::image type="content" source="media/apply-to-each-value.png" alt-text="The application of the flow to each condition" lightbox="media/apply-to-each-value.png":::
+    :::image type="content" source="media/conditions-2.png" alt-text="The condition-1" lightbox="media/conditions-2.png":::
+    :::image type="content" source="media/condition3.png" alt-text="The condition-2" lightbox="media/condition3.png":::
     :::image type="content" source="images/send-email.png" alt-text="The Send an email section" lightbox="images/send-email.png":::
 
 ## Alert notification

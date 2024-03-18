@@ -68,7 +68,7 @@ If you're using Intune to manage Defender for Endpoint settings, you can use it 
 
 In Intune, each row represents a device control policy. The included ID is the reusable setting that the policy applies to. The excluded ID is the reusable setting that's excluded from the policy. The entry for the policy contains the permissions allowed and the behavior for device control that comes into force when the policy applies.
 
-:::image type="content" source="images/device-control-profile.png" alt-text="The screenshot that shows the page on which you can configure the settings for the Device Control capability." lightbox="images/device-control-profile.png":::
+:::image type="content" source="media/device-control-profile.png" alt-text="The screenshot that shows the page on which you can configure the settings for the Device Control capability." lightbox="media/device-control-profile.png":::
 
 For information on how to add the reusable groups of settings that are included in the row of each device control policy, see the *Add reusable groups to a Device Control profile* section in [Use reusable groups of settings with Intune policies](/mem/intune/protect/reusable-settings-groups).
 
@@ -96,7 +96,7 @@ In the following table, identify the setting you want to configure, and then use
 
 ### Creating policies with OMA-URI
 
-:::image type="content" source="images/create-policy-with-oma-uri.png" alt-text="The screenshot that shows the page on which you can create a policy with OMA-URI." lightbox="images/create-policy-with-oma-uri.png":::
+:::image type="content" source="media/create-policy-with-oma-uri.png" alt-text="The screenshot that shows the page on which you can create a policy with OMA-URI." lightbox="media/create-policy-with-oma-uri.png":::
 
 When you create policies with OMA-URI in Intune, create one XML file for each policy. As a best practice, use the Device Control Profile or Device Control Rules Profile to author custom policies.
 
@@ -113,7 +113,7 @@ You can use parameters to set conditions for specific entries. Here's a [group e
 
 ### Creating groups with OMA-URI
 
-:::image type="content" source="images/create-group-with-oma-uri.png" alt-text="The screenshot that shows the page on which you can create a group with OMA-URI." lightbox="images/create-group-with-oma-uri.png":::
+:::image type="content" source="media/create-group-with-oma-uri.png" alt-text="The screenshot that shows the page on which you can create a group with OMA-URI." lightbox="media/create-group-with-oma-uri.png":::
 
 When you create groups with OMA-URI in Intune, create one XML file for each group. As a best practice, use reusable settings to define groups. 
 

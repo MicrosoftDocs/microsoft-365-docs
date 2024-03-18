@@ -161,7 +161,7 @@ Follow the steps below to add Microsoft Defender for Endpoint app into your mana
 
     1. Go to the **Configuration settings** section and choose **'Use configuration designer'** in Configuration settings format.
 
-       :::image type="content" alt-text="Image of android create app configuration policy." source="images/configurationformat.png" lightbox="images/configurationformat.png":::
+       :::image type="content" alt-text="Image of android create app configuration policy." source="media/configurationformat.png" lightbox="media/configurationformat.png":::
 
     1. Click on **Add** to view a list of supported configurations. Select the required configuration and click on **Ok**.
 
@@ -187,7 +187,7 @@ Follow the steps below to add Microsoft Defender for Endpoint app into your mana
 11. Assign the app as a *Required* app to a user group. It is automatically installed in the *work profile* during the next sync of the device via Company Portal app. This assignment can be done by navigating to the *Required* section \> **Add group,** selecting the user group and click **Select**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/ea06643280075f16265a596fb9a96042.png" alt-text="The Edit application page" lightbox="images/ea06643280075f16265a596fb9a96042.png":::
+    > :::image type="content" source="media/ea06643280075f16265a596fb9a96042.png" alt-text="The Edit application page" lightbox="media/ea06643280075f16265a596fb9a96042.png":::
 
 12. In the **Edit Application** page, review all the information that was entered above. Then select **Review + Save** and then **Save** again to commence assignment.
 
@@ -249,7 +249,7 @@ The device configuration profile is now assigned to the selected user group.
 
 2. On the device, you can validate the onboarding status by going to the **work profile**. Confirm that Defender for Endpoint is available and that you are enrolled to the **Personally owned devices with work profile**. If you are enrolled to a **Corporate-owned, fully managed user device**, you will have a single profile on the device where you can confirm that Defender for Endpoint is available.
 
-    :::image type="content" source="images/c2e647fc8fa31c4f2349c76f2497bc0e.png" alt-text="The application display pane" lightbox="images/c2e647fc8fa31c4f2349c76f2497bc0e.png":::
+    :::image type="content" source="media/c2e647fc8fa31c4f2349c76f2497bc0e.png" alt-text="The application display pane" lightbox="media/c2e647fc8fa31c4f2349c76f2497bc0e.png":::
 
 3. When the app is installed, open the app and accept the permissions and then your onboarding should be successful.
 
@@ -283,7 +283,7 @@ Admins can go to the [Microsoft Endpoint Management admin center](https://endpoi
 1. The selected configuration will be listed. Change the **configuration value to 1** to enable Microsoft Defender support personal profiles. A notification will appear informing the admin about the same. Click on **Next**.
 
     > [!div class="mx-imgBorder"]
-    > ![Image of changing config value.](images/changeconfigvalue.png)
+    > ![Image of changing config value.](media/changeconfigvalue.png)
 
 1. **Assign** the configuration policy to a group of users. **Review and create** the policy.
 

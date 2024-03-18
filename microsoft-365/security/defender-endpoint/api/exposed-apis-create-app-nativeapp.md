@@ -69,7 +69,7 @@ This page explains how to create a Microsoft Entra application, get an access to
 
 2. Navigate to **Microsoft Entra ID** \> **App registrations** \> **New registration**.
 
-   :::image type="content" source="../images/atp-azure-new-app2.png" alt-text="The App registrations page in the Microsoft Azure portal" lightbox="../images/atp-azure-new-app2.png":::
+   :::image type="content" source="../media/atp-azure-new-app2.png" alt-text="The App registrations page in the Microsoft Azure portal" lightbox="../media/atp-azure-new-app2.png":::
 
 3. When the **Register an application** page appears, enter your application's registration information:
    - **Name** - Enter a meaningful application name that will be displayed to users of the app.
@@ -104,7 +104,7 @@ This page explains how to create a Microsoft Entra application, get an access to
 
    - Choose **Delegated permissions** \> **Alert.Read** > select **Add permissions**.
 
-      :::image type="content" source="../images/application-permissions-public-client.png" alt-text="The application type and permissions panes" lightbox="../images/application-permissions-public-client.png":::
+      :::image type="content" source="../media/application-permissions-public-client.png" alt-text="The application type and permissions panes" lightbox="../media/application-permissions-public-client.png":::
 
    > [!IMPORTANT]
    > Select the relevant permissions. Read alerts is only an example.

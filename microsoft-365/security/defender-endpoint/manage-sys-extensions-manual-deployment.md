@@ -100,11 +100,11 @@ If you run systemextensionsctl list, the following screen appears:
 
 3. From the resultant screen, select **Applications** from the **Favorites** pane in the left-side of the screen; select **Microsoft Defender**; and then select **Open** at the bottom-right of the screen.
 
-   :::image type="content" source="images/applications-md-options.png" alt-text="The process of selecting Applications and Microsoft Defender." lightbox="images/applications-md-options.png":::
+   :::image type="content" source="media/applications-md-options.png" alt-text="The process of selecting Applications and Microsoft Defender." lightbox="media/applications-md-options.png":::
    
 4. From the resultant screen, check the **Microsoft Defender** checkbox.
 
-   :::image type="content" source="images/checking-md-checkbox.png" alt-text="Checking the Microsoft Defender checkbox." lightbox="images/checking-md-checkbox.png":::
+   :::image type="content" source="media/checking-md-checkbox.png" alt-text="Checking the Microsoft Defender checkbox." lightbox="media/checking-md-checkbox.png":::
 
 ### Full Disk Access
 
@@ -115,7 +115,7 @@ If you run systemextensionsctl list, the following screen appears:
 
 1. Confirm that the Microsoft Defender extension has full disk access; if not, check the **Microsoft Defender** checkbox.
  
-   :::image type="content" source="images/check-md-checkbox.png" alt-text="Checking the MD checkbox." lightbox="images/check-md-checkbox.png":::
+   :::image type="content" source="media/check-md-checkbox.png" alt-text="Checking the MD checkbox." lightbox="media/check-md-checkbox.png":::
 
 ### Notifications
 
@@ -145,4 +145,4 @@ In terminal, run the following command to check the system extensions:
 
 The execution of this command is shown in the following screenshot:
 
-:::image type="content" source="images/command-to-check-system-extensions.png" alt-text="The command to check the system extensions." lightbox="images/command-to-check-system-extensions.png":::
+:::image type="content" source="media/command-to-check-system-extensions.png" alt-text="The command to check the system extensions." lightbox="media/command-to-check-system-extensions.png":::
