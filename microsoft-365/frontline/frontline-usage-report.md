@@ -52,13 +52,9 @@ You must be a Global admin to turn on this setting.
 
 ## The frontline usage report
 
-<!--To access the report, you must be a Global admin, Teams admin, Global reader, or Report reader.-->
-
 ### Run the report
 
 1. On the **Usage** tab, under **Teams**, select which teams you want in your usage report. Currently, the only option is **All frontline teams**, which represents all teams deployed through the [deploy frontline dynamic teams](deploy-dynamic-teams-at-scale.md) experience in the Teams admin center. We’ll be adding more options in the future.  
-
-    <!--:::image type="content" source="media/flw-usage-report-generate.png" alt-text="Screenshot of Teams and Date range settings for generating the report." lightbox="media/flw-usage-report-generate.png":::-->
 1. Under **Date range**, select the date range for which you want to see data. You can choose from the last 7 days, 30 days, 90 days, or 180 days. Then, choose **Run report**.
 
     > [!IMPORTANT]
