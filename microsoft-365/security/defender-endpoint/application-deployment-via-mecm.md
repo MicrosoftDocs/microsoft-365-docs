@@ -75,7 +75,7 @@ Copy the unified solution package, onboarding script and migration script to the
 
       Check the option: **This registry setting must exit on the target system to indicate presence of this application.**
 
-      :::image type="content" source="images/detection-wizard.png" alt-text="Screenshot that shows detection type wizard":::
+      :::image type="content" source="media/detection-wizard.png" alt-text="Screenshot that shows detection type wizard":::
 
       > [!TIP]
       > The registry key value was obtained by running the Powershell command shown below on a device that has the unified solution installed. Other creative methods of detection can also be used. The goal is to identify whether the unified solution has already been installed on a specific device. You can leave the Value and Data Type fields as blank.
