@@ -96,7 +96,7 @@ In the following table, identify the setting you want to configure, and then use
 
 ### Creating policies with OMA-URI
 
-:::image type="content" source="images/create-policy-with-oma-uri.png" alt-text="The screenshot that shows the page on which you can create a policy with OMA-URI." lightbox="images/create-policy-with-oma-uri.png":::
+:::image type="content" source="media/create-policy-with-oma-uri.png" alt-text="The screenshot that shows the page on which you can create a policy with OMA-URI." lightbox="media/create-policy-with-oma-uri.png":::
 
 When you create policies with OMA-URI in Intune, create one XML file for each policy. As a best practice, use the Device Control Profile or Device Control Rules Profile to author custom policies.
 
@@ -113,7 +113,7 @@ You can use parameters to set conditions for specific entries. Here's a [group e
 
 ### Creating groups with OMA-URI
 
-:::image type="content" source="images/create-group-with-oma-uri.png" alt-text="The screenshot that shows the page on which you can create a group with OMA-URI." lightbox="images/create-group-with-oma-uri.png":::
+:::image type="content" source="media/create-group-with-oma-uri.png" alt-text="The screenshot that shows the page on which you can create a group with OMA-URI." lightbox="media/create-group-with-oma-uri.png":::
 
 When you create groups with OMA-URI in Intune, create one XML file for each group. As a best practice, use reusable settings to define groups. 
 

@@ -87,7 +87,7 @@ If you didn't approve the system extension during the deployment/installation of
    systemextensionsctl list
    ```
 
-   :::image type="content" source="images/check-system-extension.png" alt-text="The screen that shows what should be done to check the system extension." lightbox="images/check-system-extension.png":::
+   :::image type="content" source="media/check-system-extension.png" alt-text="The screen that shows what should be done to check the system extension." lightbox="media/check-system-extension.png":::
 
 You'll notice that both Microsoft Defender for Endpoint on macOS extensions are in the **[activated waiting for user]** state.
 

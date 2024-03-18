@@ -1,25 +1,28 @@
 ---
 title: Microsoft Defender for Endpoint data storage and privacy
 description: Learn about how Microsoft Defender for Endpoint handles privacy and data that it collects.
-ms.service: defender-endpoint
-ms.author: siosulli
-author: siosulli
+keywords: Microsoft Defender for Endpoint, data storage and privacy, storage, privacy, licensing, geolocation, data retention, data
+ms.service: microsoft-365-security
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
+ms.author: macapara
+author: mjcaparas
 ms.localizationpriority: medium
-manager: deniseb
+manager: dansimp
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier2
-- essentials-privacy
-- essentials-compliance
 ms.topic: conceptual
+ms.subservice: mde
 search.appverid: met150
 ms.date: 08/07/2023
 ---
 
 # Microsoft Defender for Endpoint data storage and privacy
 
-[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -37,7 +40,7 @@ This section covers some of the most frequently asked questions regarding privac
 
 ## What data does Microsoft Defender for Endpoint collect?
 
-Microsoft Defender for Endpoint will collect information from your configured devices and store it in a customer-dedicated and segregated tenant specific to the service for administration, tracking, and reporting purposes.
+Microsoft Defender for Endpoint collects information from your configured devices and stores it in a customer-dedicated and segregated tenant specific to the service for administration, tracking, and reporting purposes.
 
 Information collected includes file data (file names, sizes, and hashes), process data (running processes, hashes), registry data, network connection data (host IPs and ports), and device details (device identifiers, names, and the operating system version).
 
@@ -53,7 +56,7 @@ Microsoft doesn't use your data for advertising.
 
 ## Data protection and encryption
 
-The Defender for Endpoint service utilizes state-of-the-art data protection technologies which are based on Microsoft Azure infrastructure.
+The Defender for Endpoint service utilizes state-of-the-art data protection technologies, which are based on Microsoft Azure infrastructure.
 
 There are various aspects relevant to data protection that our service takes care of. Encryption is one of the most critical aspects, and it includes data encryption at rest, encryption in flight, and key management with Key Vault. For more information on other technologies used by the Defender for Endpoint service, see [Azure encryption overview](/azure/security/security-azure-encryption-overview).
 
@@ -61,7 +64,7 @@ In all scenarios, data is encrypted using 256-bit [AES encryption](https://en.wi
 
 ## Data storage location
 
-Defender for Endpoint operates in the Microsoft Azure data centers in the European Union, the United Kingdom, the United States, or in Australia. Customer data collected by the service may be stored in: (a) the geo-location of the tenant as identified during provisioning or, (b) the geo-location as defined by the data storage rules of an online service if this online service is used by Defender for Endpoint to process such data. For more information, see [Where your Microsoft 365 customer data is stored](/microsoft-365/enterprise/o365-data-locations).
+Defender for Endpoint operates in the Microsoft Azure data centers in the European Union, the United Kingdom, the United States, or in Australia. Customer data collected by the service might be stored in: (a) the geo-location of the tenant as identified during provisioning or, (b) the geo-location as defined by the data storage rules of an online service if this online service is used by Defender for Endpoint to process such data. For more information, see [Where your Microsoft 365 customer data is stored](/microsoft-365/enterprise/o365-data-locations).
 
 Customer data in pseudonymized form may also be stored in the central storage and processing systems in the United States.
 
@@ -75,6 +78,7 @@ Microsoft Defender for Endpoint shares data, including customer data, among the 
 - Microsoft Tunnel for Mobile Application Management - Android
 - Microsoft Defender for Cloud
 - Microsoft Defender for Identity
+- Microsoft Security Exposure Management (public preview)
 
 ## Is my data isolated from other customer data?
 
@@ -88,7 +92,7 @@ Microsoft developers and administrators have, by design, been given sufficient p
 - Combinations of controls that greatly enhance independent detection of malicious activity
 - Multiple levels of monitoring, logging, and reporting
 
-Additionally, Microsoft conducts background verification checks of certain operations personnel, and limits access to applications, systems, and network infrastructure in proportion to the level of background verification. Operations personnel follow a formal process when they are required to access a customer's account or related information in the performance of their duties.
+Additionally, Microsoft conducts background verification checks of certain operations personnel, and limits access to applications, systems, and network infrastructure in proportion to the level of background verification. Operations personnel follow a formal process when they're required to access a customer's account or related information in the performance of their duties.
 
 Access to data for services deployed in Microsoft Azure Government data centers is only granted to operating personnel who have been screened and approved to handle data that's subject to certain government regulations and requirements, such as FedRAMP, NIST 800.171 (DIB), ITAR, IRS 1075, DoD L4, and CJIS.
 
@@ -100,11 +104,11 @@ No. Customer data is isolated from other customers and isn't shared. However, th
 
 ### At service onboarding
 
-Data from Microsoft Defender for Endpoint is retained for 180 days, visible across the portal. However, in the advanced hunting investigation experience, it's accessible via a query for a period of 30 days. 
+Data from Microsoft Defender for Endpoint is retained for 180 days, visible across the portal. However, in the advanced hunting investigation experience, it's accessible via a query for 30 days.
 
 ### At contract termination or expiration
 
-Your data will be kept and will be available to you while the license is under grace period or suspended mode. At the end of this period, that data will be erased from Microsoft's systems to make it unrecoverable, no later than 180 days from contract termination or expiration.
+Your data is kept and is available to you while the license is under grace period or suspended mode. At the end of this period, that data will be erased from Microsoft's systems to make it unrecoverable, no later than 180 days from contract termination or expiration.
 
 ### Advanced Hunting data
 

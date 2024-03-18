@@ -66,7 +66,7 @@ To add device tags using API, see [Add or remove device tags API](api/add-or-rem
 
 3. Type to find or create tags
 
-    :::image type="content" source="images/create-new-tag.png" alt-text="Adding tags on device1" lightbox="images/create-new-tag.png":::
+    :::image type="content" source="media/create-new-tag.png" alt-text="Adding tags on device1" lightbox="media/create-new-tag.png":::
 
 Tags are added to the device view and will also be reflected on the **Devices inventory** view. You can then use the **Tags** filter to see the relevant list of devices.
 

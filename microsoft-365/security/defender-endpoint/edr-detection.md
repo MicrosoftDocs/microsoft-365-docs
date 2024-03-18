@@ -123,7 +123,7 @@ After a few minutes, a detection should be raised in Microsoft Defender XDR.
 
 12. Go to the **Alert** Queue.
 
-    :::image type="content" source="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="Screenshot that shows a macOS EDR test alert that shows severity, category, detection source, and a collapsed menu of actions":::
+    :::image type="content" source="media/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="Screenshot that shows a macOS EDR test alert that shows severity, category, detection source, and a collapsed menu of actions":::
 
     The macOS EDR test alert shows severity, category, detection source, and a collapsed menu of actions.
 
