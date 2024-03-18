@@ -78,7 +78,7 @@ In break-glass scenarios or matters that require immediate attention (for exampl
 
 ## Ask Defender Experts
 
-While the previous scenarios involve our experts initiating communication with you, you can also request advanced threat expertise on demand by selecting **Ask Defender Experts** directly inside the Microsoft Defender XDR portal. [Learn more](start-using-mdex-xdr.md#request-advanced-threat-expertise-on-demand)
+While the previous scenarios involve our experts initiating communication with you, you can also request advanced threat expertise on demand by selecting **Ask Defender Experts** directly inside the Microsoft Defender XDR portal. [Learn more](onboarding-defender-experts-for-hunting.md#collaborate-with-experts-on-demand)
 
 ## Collaborating with your service delivery manager
 
