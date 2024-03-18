@@ -36,7 +36,7 @@ This article acts as an example onboarding method.
 
 In the [Planning](deployment-strategy.md) article, there were several methods provided to onboard devices to the service. This article covers the co-management architecture.
 
-:::image type="content" source="images/co-management-architecture.png" alt-text="The cloud-native architecture" lightbox="images/co-management-architecture.png":::
+:::image type="content" source="media/co-management-architecture.png" alt-text="The cloud-native architecture" lightbox="media/co-management-architecture.png":::
 *Diagram of environment architectures*
 
 While Defender for Endpoint supports onboarding of various endpoints and tools, this article doesn't cover them. For information on general onboarding using other supported deployment tools and methods, see [Onboarding overview](onboarding.md).
