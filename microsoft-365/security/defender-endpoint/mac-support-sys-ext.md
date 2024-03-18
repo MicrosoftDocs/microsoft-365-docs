@@ -108,7 +108,7 @@ endpoint_security_extension_installed        : true
 
 This output is shown in the following screenshot:
 
-:::image type="content" source="images/details-system-extensions-command.png" alt-text="The output regarding details system extensions." lightbox="images/details-system-extensions-command.png":::
+:::image type="content" source="media/details-system-extensions-command.png" alt-text="The output regarding details system extensions." lightbox="media/details-system-extensions-command.png":::
 
 The following files might be missing if you're managing it via Intune, JamF, or another MDM solution:
 
