@@ -325,7 +325,7 @@ All you need to do to have updates is to download an updated schema, edit existi
 
    :::image type="content" source="media/3160906404bc5a2edf84d1d015894e3b.png" alt-text="The MDATP MDAV configuration settings." lightbox="media/3160906404bc5a2edf84d1d015894e3b.png":::
    
-   :::image type="content" source="images/e1cc1e48ec9d5d688087b4d771e668d2.png" alt-text="The application and custom settings." lightbox="images/e1cc1e48ec9d5d688087b4d771e668d2.png":::
+   :::image type="content" source="media/e1cc1e48ec9d5d688087b4d771e668d2.png" alt-text="The application and custom settings." lightbox="media/e1cc1e48ec9d5d688087b4d771e668d2.png":::
 
 6. Select **Upload File (PLIST file)**.
 
@@ -459,7 +459,7 @@ These steps are applicable on macOS 11 (Big Sur) or later.
 
 3. In the Jamf Pro dashboard, select **General**.
 
-   :::image type="content" source="images/eaba2a23dd34f73bf59e826217ba6f15.png" alt-text="The configuration settings." lightbox="images/eaba2a23dd34f73bf59e826217ba6f15.png":::
+   :::image type="content" source="media/eaba2a23dd34f73bf59e826217ba6f15.png" alt-text="The configuration settings." lightbox="media/eaba2a23dd34f73bf59e826217ba6f15.png":::
 
 4. Enter the following details on the **General** tab:
 

@@ -114,7 +114,7 @@ Alternate steps:
    
 1. Click the **Package collection package available** to download the collection package.
 
-    ![Image of download package](images/download-package.png)
+    ![Image of download package](media/download-package.png)
    
    For Windows devices, the package contains the following folders:
 

@@ -83,7 +83,7 @@ From there you can select which information set to include.
 
 To view only either events or techniques, select **Filters** from the device timeline and choose your preferred Data type to view.
 
-:::image type="content" source="images/device-timeline-filters.png" alt-text="The Filters pane" lightbox="images/device-timeline-filters.png":::
+:::image type="content" source="media/device-timeline-filters.png" alt-text="The Filters pane" lightbox="media/device-timeline-filters.png":::
 
 ## See also
 

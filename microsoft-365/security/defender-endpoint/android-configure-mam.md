@@ -130,7 +130,7 @@ End users also need to take steps to install Microsoft Defender for Endpoint on 
 
 4. Install the Microsoft Defender for Endpoint (Mobile) app and launch back Managed app onboarding screen.
 
-   :::image type="content" source="images/download-mde.png" alt-text="The illustrative pages that contain the procedure of downloading MDE and launching back the app-onboarding screen." lightbox="images/download-mde.png":::
+   :::image type="content" source="media/download-mde.png" alt-text="The illustrative pages that contain the procedure of downloading MDE and launching back the app-onboarding screen." lightbox="media/download-mde.png":::
 
 5. Click **Continue > Launch**. The Microsoft Defender for Endpoint app onboarding/activation flow is initiated. Follow the steps to complete onboarding. You'll automatically be redirected back to Managed app onboarding screen, which now indicates that the device is healthy.
 
