@@ -59,6 +59,8 @@ You'll encounter this message in a different way: If you're using the terminal t
 
 1. You can also encounter this error message when the Microsoft Defender for Endpoint on macOS agent isn't up to date. For information on troubleshooting in this scenario, see [For Microsoft Defender for Endpoint on macOS not being up to date](#for-microsoft-defender-for-endpoint-on-macos-not-being-up-to-date).
 
+1. You offboarded and re-onboarded the Microsoft Defender on macOS.
+
 1. You can also encounter this error message if you haven't assigned a license to the user. For information on troubleshooting in this scenario, see [For not assigning a license to the user](#for-not-assigning-a-license-to-the-user).
 
 ### Solutions
@@ -82,6 +84,10 @@ Depending on the deployment management tool used, follow the tool-specific instr
 #### For Microsoft Defender for Endpoint on macOS not being up to date
 
 For scenarios where Microsoft Defender for Endpoint on macOS isn't up to date, you'll need to [update](mac-updates.md) the agent.
+
+#### For Microsoft Defender for Endpoint on macOS that was offboarded and re-onboarded
+
+If the offboarding script is executed on the macOS, it saves a file "/Library/Application Support/Microsoft/Defender/com.microsoft.wdav.atp.offboarding.plist".  ***Delete*** com.microsoft.wdav.atp.offboarding.plist before re-running the onboarding script again.
 
 #### For not assigning a license to the user
 
