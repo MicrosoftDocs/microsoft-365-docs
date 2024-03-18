@@ -50,19 +50,19 @@ Note the detection status for your alert.
 
 - Prevented: The attempted suspicious action was avoided. For example, a file either wasn't written to disk or executed.
 
-  :::image type="content" source="images/detstat-prevented.png" alt-text="The page showing the prevention of a threat" lightbox="images/detstat-prevented.png":::
+  :::image type="content" source="media/detstat-prevented.png" alt-text="The page showing the prevention of a threat" lightbox="media/detstat-prevented.png":::
 
 - Blocked: Suspicious behavior was executed and then blocked. For example, a process was executed but because it subsequently exhibited suspicious behaviors, the process was terminated.
 
-  :::image type="content" source="images/detstat-blocked.png" alt-text="The page showing the blockage of a threat" lightbox="images/detstat-blocked.png":::
+  :::image type="content" source="media/detstat-blocked.png" alt-text="The page showing the blockage of a threat" lightbox="media/detstat-blocked.png":::
 
 - Detected: An attack was detected and is possibly still active.
 
-  :::image type="content" source="images/detstat-detected.png" alt-text="The page showing the detection of a threat" lightbox="images/detstat-detected.png":::
+  :::image type="content" source="media/detstat-detected.png" alt-text="The page showing the detection of a threat" lightbox="media/detstat-detected.png":::
 
 You can then also review the *automated investigation details* in your alert's details pane, to see which actions were already taken, as well as reading the alert's description for recommended actions.
 
-:::image type="content" source="images/alert-air-and-alert-description.png" alt-text="The details pane with the alert description and automatic investigation sections highlighted" lightbox="images/alert-air-and-alert-description.png":::
+:::image type="content" source="media/alert-air-and-alert-description.png" alt-text="The details pane with the alert description and automatic investigation sections highlighted" lightbox="media/alert-air-and-alert-description.png":::
 
 Other information available in the details pane when the alert opens includes MITRE techniques, source, and additional contextual details.
 

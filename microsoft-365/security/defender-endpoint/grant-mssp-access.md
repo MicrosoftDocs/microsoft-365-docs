@@ -103,7 +103,7 @@ To implement a multitenant delegated access solution, take the following steps:
     The My Access portal link is used by MSSP SOC analysts to request access via the access packages created. The link is durable, meaning the same link may be used over time for new analysts. The analyst request goes into a queue for approval by the **MSSP Analyst Approvers**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/access-properties.png" alt-text="The Properties page" lightbox="images/access-properties.png":::
+    > :::image type="content" source="media/access-properties.png" alt-text="The Properties page" lightbox="media/access-properties.png":::
 
     The link is located on the overview page of each access package.
 

@@ -68,6 +68,8 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `UserAgentTags` | `dynamic` | More information provided by Microsoft Defender for Cloud Apps in a tag in the user agent field. Can have any of the following values: Native client, Outdated browser, Outdated operating system, Robot |
 | `RawEventData` | `dynamic` | Raw event information from the source application or service in JSON format |
 | `AdditionalFields` | `dynamic` | Additional information about the entity or event |
+| `LastSeenForUser` | `string` | Shows how many days back the attribute was recently in use by the user in days (i.e. ISP, ActionType etc.)  |
+| `UncommonForUser` | `string` | Lists the attributes in the event that are uncommon for the user, using this data to help rule out false positives and find out anomalies |
 
 ## Apps and services covered
 
