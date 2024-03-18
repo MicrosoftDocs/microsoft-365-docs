@@ -63,7 +63,7 @@ The information below will detail how to get the most out of your investment, br
 
 - Explorer can be used to hunt threats, visualize mail flow patterns, spot trends, and identify the impact of changes you make during tuning Defender for Office 365. You can also quickly delete messages from your organization with a few simple clicks.
 
-**Read more, and get started here:** [Threat Explorer and Real-time detections](../threat-explorer-about.md)
+**Read more, and get started here:** [Threat Explorer and Real-time detections](../threat-explorer-real-time-detections-about.md)
 
 ## Step 2 – Enhance the value further with these simple steps
 
