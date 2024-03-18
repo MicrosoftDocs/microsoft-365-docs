@@ -147,7 +147,7 @@ Then, you continue by creating several different types of endpoint security poli
 6. Add scope tags if necessary, then select  **Next**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/ef844f52ec2c0d737ce793f68b5e8408.png" alt-text="The Microsoft Intune admin center8" lightbox="images/ef844f52ec2c0d737ce793f68b5e8408.png":::
+    > :::image type="content" source="media/ef844f52ec2c0d737ce793f68b5e8408.png" alt-text="The Microsoft Intune admin center8" lightbox="media/ef844f52ec2c0d737ce793f68b5e8408.png":::
 
 7. Add test group by clicking on **Select groups to include** and choose your group, then select  **Next**.
 

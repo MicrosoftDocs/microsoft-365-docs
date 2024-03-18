@@ -57,7 +57,7 @@ ms.date: 10/24/2023
 
    In order to get your **Event Hubs resource ID**, go to your Azure Event Hubs namespace page on [Azure](https://ms.portal.azure.com/) > properties tab \> copy the text under **Resource ID**:
 
-   :::image type="content" source="../images/event-hub-resource-id.png" alt-text="The Event Hubs resource Id-1" lightbox="../images/event-hub-resource-id.png":::
+   :::image type="content" source="../media/event-hub-resource-id.png" alt-text="The Event Hubs resource Id-1" lightbox="../media/event-hub-resource-id.png":::
 
 7. Choose the events you want to stream and click **Save**.
 
