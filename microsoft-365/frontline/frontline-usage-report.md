@@ -80,12 +80,6 @@ Each row in the table represents a team.
 |Active users|The number of active users on each team. Users are considered active if they signed in to Teams one time during the selected date range. |
 |Last activity date    |The last date on which the user signed in to Teams.|
 
-<!--- Team name
-- Team ID
-- Total members is the total number of users on each team. 
-- Active users shows how many users are active on each team. Users are considered active if they signed in to Teams one time during the selected date range. 
-- Last activity date is the last date on which the user signed in to Teams.-->
-
 You can:
 
 - Select the **Team members** or **Active users** column header to sort the rows from highest to lowest or vice versa.
