@@ -68,7 +68,7 @@ If you're using Intune to manage Defender for Endpoint settings, you can use it 
 
 In Intune, each row represents a device control policy. The included ID is the reusable setting that the policy applies to. The excluded ID is the reusable setting that's excluded from the policy. The entry for the policy contains the permissions allowed and the behavior for device control that comes into force when the policy applies.
 
-:::image type="content" source="images/device-control-profile.png" alt-text="The screenshot that shows the page on which you can configure the settings for the Device Control capability." lightbox="images/device-control-profile.png":::
+:::image type="content" source="media/device-control-profile.png" alt-text="The screenshot that shows the page on which you can configure the settings for the Device Control capability." lightbox="media/device-control-profile.png":::
 
 For information on how to add the reusable groups of settings that are included in the row of each device control policy, see the *Add reusable groups to a Device Control profile* section in [Use reusable groups of settings with Intune policies](/mem/intune/protect/reusable-settings-groups).
 
