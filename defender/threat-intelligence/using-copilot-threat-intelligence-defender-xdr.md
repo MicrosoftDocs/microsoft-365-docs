@@ -58,10 +58,10 @@ Microsoft Defender XDR brings Copilot for Security’s capability to look up thr
 6. To start a new chat session with Copilot, select the [New chat] icon.
 
 > [!NOTE]
-> Copilot saves your previous sessions from the Microsoft Defender XDR portal in the Copilot for Security standalone site.
+> Copilot saves your sessions from the Microsoft Defender XDR portal in the [Copilot for Security standalone site](https://go.microsoft.com/fwlink/?linkid=2247989). To see the previous sessions, from the Copilot [Home menu](/security-copilot/navigating-security-copilot#home-menu), go to **My sessions**. [Learn more about navigating Microsoft Copilot for Security](/security-copilot/navigating-security-copilot)
 
 > [!IMPORTANT] 
-> Copilot for Security starts a new chat session every time you navigate to a different *Threat intelligence page* in Microsoft Defender XDR (for example, when you go from *Threat analytics* to *Intel profiles*). If you wish to go back or continue a previous session, go to the [Copilot for Security standalone site](https://go.microsoft.com/fwlink/?linkid=2247989) and look for it in **My sessions**. [Learn more about Navigating Microsoft Copilot for Security](/security-copilot/navigating-security-copilot)
+> Copilot for Security in Microsoft Defender XDR starts a new chat session every time you navigate to a different *Threat intelligence page* (for example, when you go from *Threat analytics* to *Intel profiles*). If you wish to go back or continue a previous session, go to the Copilot for Security standalone site.
 
 ## Use the built-in Defender TI prompts
 
@@ -79,7 +79,7 @@ Gathering and digesting threat intelligence data and trends can be a daunting ta
 (Add screenshot here)
 
 ### Prioritize which threats to focus on
-Copilot for Security provides insights on which threats you should prioritize and focus on based on your environment's highest exposure level to these threats. Choose the **Prioritize** prompt if you want to find out which threats are likely to significantly impact your organization. This gives you a starting point and could thus make triaging, investigating, and mitigating incidents less complex.
+Copilot for Security provides insights on which threats you should prioritize and focus on based on your environment's highest exposure level to these threats. Choose the **Prioritize** prompt if you want to find out which threats are likely to significantly impact your organization. This prompt gives you a starting point and could thus make triaging, investigating, and mitigating incidents less complex.
 
 (Add screenshot here)
 
