@@ -33,7 +33,7 @@ The Defender for Endpoint device timeline helps you research and investigate ano
 
 - Custom time range picker:
 
-    :::image type="content" source="images/custom-time-range.png" alt-text="Screenshot of the custom time range.":::
+    :::image type="content" source="media/custom-time-range.png" alt-text="Screenshot of the custom time range.":::
 
 - Process tree experience – event side panel:
 
