@@ -78,7 +78,7 @@ You need to have access to:
 6. Add a new step by selecting **Add new action** then search for **Data Operations** and select
 **Parse JSON**.
 
-   :::image type="content" source="images/data-operations.png" alt-text="The data operations entry" lightbox="images/data-operations.png":::
+   :::image type="content" source="media/data-operations.png" alt-text="The data operations entry" lightbox="media/data-operations.png":::
 
 7. Add Body in the **Content** field.
 

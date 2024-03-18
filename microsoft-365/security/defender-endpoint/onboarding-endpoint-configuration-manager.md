@@ -264,7 +264,7 @@ To set attack surface reduction rules in test mode:
 
 3. Set rules to **Audit** and select **Next**.
 
-   :::image type="content" source="images/d18e40c9e60aecf1f9a93065cb7567bd.png" alt-text="The Microsoft Configuration Manager console1" lightbox="images/d18e40c9e60aecf1f9a93065cb7567bd.png":::
+   :::image type="content" source="media/d18e40c9e60aecf1f9a93065cb7567bd.png" alt-text="The Microsoft Configuration Manager console1" lightbox="media/d18e40c9e60aecf1f9a93065cb7567bd.png":::
 
 4. Confirm the new Exploit Guard policy by selecting **Next**.
 

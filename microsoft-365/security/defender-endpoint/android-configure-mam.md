@@ -78,7 +78,7 @@ End users also need to take steps to install Microsoft Defender for Endpoint on 
 
      App protection policies (APP) are rules that ensure an organization's data remains safe or contained in a managed app. A policy can be a rule that is enforced when the user attempts to access or move "corporate" data, or a set of actions that are prohibited or monitored when the user is inside the app.
 
-     :::image type="content" source="images/create-policy.png" alt-text="The Create policy tab in the App protection policies page in the Microsoft Defender portal." lightbox="images/create-policy.png":::
+     :::image type="content" source="media/create-policy.png" alt-text="The Create policy tab in the App protection policies page in the Microsoft Defender portal." lightbox="media/create-policy.png":::
 
   2. Add apps.
 
