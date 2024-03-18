@@ -318,7 +318,7 @@ When you configure cloud protection level policy to **Default Microsoft Defender
 
 :::image type="content" source="images/config-extended-cloud-check.png" alt-text="config extended cloud check" lightbox="images/config-extended-cloud-check.png":::
 
-:::image type="content" source="images/cloud-protection-level.png" alt-text="config cloud protection level" lightbox="images/cloud-protection-level.png":::
+:::image type="content" source="media/cloud-protection-level.png" alt-text="config cloud protection level" lightbox="media/cloud-protection-level.png":::
 
 ## Related topics
 - [Onboard Windows devices using Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
