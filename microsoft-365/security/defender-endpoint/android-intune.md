@@ -161,7 +161,7 @@ Follow the steps below to add Microsoft Defender for Endpoint app into your mana
 
     1. Go to the **Configuration settings** section and choose **'Use configuration designer'** in Configuration settings format.
 
-       :::image type="content" alt-text="Image of android create app configuration policy." source="images/configurationformat.png" lightbox="images/configurationformat.png":::
+       :::image type="content" alt-text="Image of android create app configuration policy." source="media/configurationformat.png" lightbox="media/configurationformat.png":::
 
     1. Click on **Add** to view a list of supported configurations. Select the required configuration and click on **Ok**.
 
