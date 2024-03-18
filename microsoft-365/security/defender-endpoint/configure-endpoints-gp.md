@@ -316,7 +316,7 @@ Browse to **Computer Configuration** \> **Policies** \> **Administrative Templat
 Browse to **Computer Configuration** \> **Policies** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **MpEngine**.
 When you configure cloud protection level policy to **Default Microsoft Defender Antivirus blocking policy** this will disable the policy. This is what is required to set the protection level to the windows default.
 
-:::image type="content" source="images/config-extended-cloud-check.png" alt-text="config extended cloud check" lightbox="images/config-extended-cloud-check.png":::
+:::image type="content" source="media/config-extended-cloud-check.png" alt-text="config extended cloud check" lightbox="media/config-extended-cloud-check.png":::
 
 :::image type="content" source="images/cloud-protection-level.png" alt-text="config cloud protection level" lightbox="images/cloud-protection-level.png":::
 

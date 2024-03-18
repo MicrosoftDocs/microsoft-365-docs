@@ -106,7 +106,7 @@ Alternate steps:
    
 1. Add comments and select **Confirm**.
 
-    ![Image of confirm comment](images/comments-confirm.png)
+    ![Image of confirm comment](media/comments-confirm.png)
    
 1. Select **Action center** from the response actions section of the device page.
 
