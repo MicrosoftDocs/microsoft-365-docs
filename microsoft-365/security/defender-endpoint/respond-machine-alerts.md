@@ -110,7 +110,7 @@ Alternate steps:
    
 1. Select **Action center** from the response actions section of the device page.
 
-    ![Image of action center](images/action-center-selected.png)
+    ![Image of action center](media/action-center-selected.png)
    
 1. Click the **Package collection package available** to download the collection package.
 
@@ -193,7 +193,7 @@ Once you have selected **Restrict app execution** on the device page, type a com
 
 When an app is restricted, the following notification is displayed to inform the user that an app is being restricted from running:
 
-:::image type="content" source="images/atp-app-restriction.png" alt-text="The application restriction message" lightbox="images/atp-app-restriction.png":::
+:::image type="content" source="media/atp-app-restriction.png" alt-text="The application restriction message" lightbox="media/atp-app-restriction.png":::
 
 > [!NOTE]
 > The notification is not available on Windows Server 2016 and Windows Server 2012 R2.
@@ -259,7 +259,7 @@ The minimum requirements for 'forcibly release device from isolation' feature ar
 
 When a device is being isolated, the following notification is displayed to inform the user that the device is being isolated from the network:
 
-:::image type="content" source="images/atp-notification-isolate.png" alt-text="A no network connection message" lightbox="images/atp-notification-isolate.png":::
+:::image type="content" source="media/atp-notification-isolate.png" alt-text="A no network connection message" lightbox="media/atp-notification-isolate.png":::
 
 > [!NOTE]
 > The notification is not available on non-Windows platforms.
@@ -367,7 +367,7 @@ The **Action center** provides information on actions that were taken on a devic
 
 All other related details are also shown, for example, submission date/time, submitting user, and if the action succeeded or failed.
 
-:::image type="content" source="images/action-center-details.png" alt-text="The action center with information" lightbox="images/action-center-details.png":::
+:::image type="content" source="media/action-center-details.png" alt-text="The action center with information" lightbox="media/action-center-details.png":::
 
 ## See also
 
