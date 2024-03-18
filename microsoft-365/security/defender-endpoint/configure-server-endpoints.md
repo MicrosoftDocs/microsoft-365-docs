@@ -1,18 +1,13 @@
 ---
 title: Onboard Windows servers to the Microsoft Defender for Endpoint service
 description: Onboard Windows servers so that they can send sensor data to the Microsoft Defender for Endpoint sensor.
-keywords: onboard server, server, 2012r2, 2016, 2019, server onboarding, device management, configure Microsoft Defender for Endpoint servers, onboard Microsoft Defender for Endpoint servers, onboard Microsoft Defender for Endpoint servers
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-author: mjcaparas
-ms.author: macapara
+author: siosulli
+ms.author: siosulli
 ms.localizationpriority: medium
 ms.date: 07/12/2023
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -90,8 +85,8 @@ Depending on the server that you're onboarding, the unified solution installs Mi
 
 |Server version|AV|EDR|
 |----|----|----|
-|Windows Server 2012 R2|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg)|
-|Windows Server 2016|Built-in|![Yes.](images/svg/check-yes.svg)|
+|Windows Server 2012 R2|![Yes.](media/svg/check-yes.svg)|![Yes.](media/svg/check-yes.svg)|
+|Windows Server 2016|Built-in|![Yes.](media/svg/check-yes.svg)|
 |Windows Server 2019 or later|Built-in|Built-in|
 
 If you've previously onboarded your servers using MMA, follow the guidance provided in [Server migration](server-migration.md) to migrate to the new solution.
@@ -275,7 +270,7 @@ The following steps are only applicable if you're using a third-party anti-malwa
     - Type: `REG_DWORD`
     - Value: `1`
 
-   :::image type="content" source="images/atp-verify-passive-mode.png" alt-text="The passive mode verification result" lightbox="images/atp-verify-passive-mode.png":::
+   :::image type="content" source="media/atp-verify-passive-mode.png" alt-text="The passive mode verification result" lightbox="media/atp-verify-passive-mode.png":::
 
 #### Known issues and limitations in the new, unified solution package for Windows Server 2012 R2 and 2016
 

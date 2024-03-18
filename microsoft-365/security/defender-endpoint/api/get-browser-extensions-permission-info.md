@@ -1,15 +1,11 @@
 ---
 title: Get browser extensions permission info
 description: Retrieves a list of all permissions required for a browser extension
-keywords: apis, graph api, supported apis, get, browser extension information, Microsoft Defender for Endpoint, Microsoft Defender Vulnerability Management
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security

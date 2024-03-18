@@ -2,16 +2,12 @@
 title: Create an app to access Microsoft Defender for Endpoint without a user
 ms.reviewer: 
 description: Learn how to design a web app to get programmatic access to Microsoft Defender for Endpoint without a user.
-keywords: apis, graph api, supported apis, actor, alerts, device, user, domain, ip, file, advanced hunting, query
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 ms.date: 01/25/2023
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -61,7 +57,7 @@ This article explains how to create a Microsoft Entra application, get an access
 
 2. Navigate to **Microsoft Entra ID** \> **App registrations** \> **New registration**. 
 
-    :::image type="content" source="../images/atp-azure-new-app2.png" alt-text="The application registration pane" lightbox="../images/atp-azure-new-app2.png":::
+    :::image type="content" source="../media/atp-azure-new-app2.png" alt-text="The application registration pane" lightbox="../media/atp-azure-new-app2.png":::
 
 3. In the registration form, choose a name for your application, and then select **Register**.
 
@@ -70,11 +66,11 @@ This article explains how to create a Microsoft Entra application, get an access
    > [!NOTE]
    > *WindowsDefenderATP* does not appear in the original list. Start writing its name in the text box to see it appear.
 
-   :::image type="content" source="../images/add-permission.png" alt-text="The API permissions pane" lightbox="../images/add-permission.png":::
+   :::image type="content" source="../media/add-permission.png" alt-text="The API permissions pane" lightbox="../media/add-permission.png":::
 
    Select **Application permissions** \> **Alert.Read.All**, and then select **Add permissions**.
 
-   :::image type="content" source="../images/application-permissions.png" alt-text="The application permission information pane" lightbox="../images/application-permissions.png":::
+   :::image type="content" source="../media/application-permissions.png" alt-text="The application permission information pane" lightbox="../media/application-permissions.png":::
 
      You need to select the relevant permissions. 'Read All Alerts' is only an example. For example:
 
@@ -98,7 +94,7 @@ This article explains how to create a Microsoft Entra application, get an access
 
 7. Write down your application ID and your tenant ID. On your application page, go to **Overview** and copy the following.
 
-   :::image type="content" source="../images/app-and-tenant-ids.png" alt-text="The created app and tenant IDs" lightbox="../images/app-and-tenant-ids.png":::
+   :::image type="content" source="../media/app-and-tenant-ids.png" alt-text="The created app and tenant IDs" lightbox="../media/app-and-tenant-ids.png":::
 
 8. **For Microsoft Defender for Endpoint Partners only**. Set your app to be multi-tenanted (available in all tenants after consent). This is **required** for third-party apps (for example, if you create an app that is intended to run in multiple customers' tenant). This is **not required** if you create a service that you want to run in your tenant only (for example, if you create an application for your own usage that will only interact with your own data). To set your app to be multi-tenanted:
 

@@ -5,7 +5,7 @@ ms.service: defender-endpoint
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -180,7 +180,7 @@ Get the current list of attack surface reduction rules GUIDs from [Attack surfac
 
    This will set each up for audit only.
 
-   :::image type="content" source="images/asr-guid.png" alt-text="The Attack surface reduction configuration" lightbox="images/asr-guid.png":::
+   :::image type="content" source="media/asr-guid.png" alt-text="The Attack surface reduction configuration" lightbox="media/asr-guid.png":::
 
 Policy|Location|Setting
 ---|---|---
@@ -255,7 +255,7 @@ Create a new Group Policy or group these settings in with the other policies. Th
 
     :::image type="content" source="images/removal-items-quarantine1.png" alt-text="Removal items quarantine folder" lightbox="images/removal-items-quarantine1.png":::
 
-    :::image type="content" source="images/config-removal-items-quarantine2.png" alt-text="config-removal quarantine" lightbox="images/config-removal-items-quarantine2.png":::
+    :::image type="content" source="media/config-removal-items-quarantine2.png" alt-text="config-removal quarantine" lightbox="media/config-removal-items-quarantine2.png":::
 
 4. In the Scan folder, configure the scan settings.
 
@@ -265,25 +265,25 @@ Create a new Group Policy or group these settings in with the other policies. Th
 
 Browse to **Computer Configuration** \> **Policies** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **Real-time Protection**.
 
-:::image type="content" source="images/config-monitor-incoming-outgoing-file-act.png" alt-text="Configure monitoring for incoming outgoing file activity" lightbox="images/config-monitor-incoming-outgoing-file-act.png":::
+:::image type="content" source="media/config-monitor-incoming-outgoing-file-act.png" alt-text="Configure monitoring for incoming outgoing file activity" lightbox="media/config-monitor-incoming-outgoing-file-act.png":::
 
 ### Configure Windows Defender SmartScreen settings
 
 1. Browse to **Computer Configuration** \> **Policies** \> **Administrative Templates** \> **Windows Components** \> **Windows Defender SmartScreen** \> **Explorer**.
 
-   :::image type="content" source="images/config-windows-def-smartscr-explorer.png" alt-text="Configure windows defender smart screen explorer" lightbox="images/config-windows-def-smartscr-explorer.png":::
+   :::image type="content" source="media/config-windows-def-smartscr-explorer.png" alt-text="Configure windows defender smart screen explorer" lightbox="media/config-windows-def-smartscr-explorer.png":::
  
 2. Browse to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Windows Defender SmartScreen** > **Microsoft Edge**.
 
-    :::image type="content" source="images/configure-windows-defender-smartscreen.png" alt-text="Configure windows defender smart screen on Microsoft Edge" lightbox="images/configure-windows-defender-smartscreen.png":::
+    :::image type="content" source="media/configure-windows-defender-smartscreen.png" alt-text="Configure windows defender smart screen on Microsoft Edge" lightbox="media/configure-windows-defender-smartscreen.png":::
 
 ### Configure Potentially Unwanted Applications
 
 Browse to **Computer Configuration** \> **Policies** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus**.
 
-:::image type="content" source="images/config-potential-unwanted-apps.png" alt-text="Config potential unwanted app" lightbox="images/config-potential-unwanted-apps.png":::
+:::image type="content" source="media/config-potential-unwanted-apps.png" alt-text="Config potential unwanted app" lightbox="media/config-potential-unwanted-apps.png":::
 
-:::image type="content" source="images/config-potential-unwanted-apps2.png" alt-text="config potential" lightbox="images/config-potential-unwanted-apps2.png":::
+:::image type="content" source="media/config-potential-unwanted-apps2.png" alt-text="config potential" lightbox="media/config-potential-unwanted-apps2.png":::
 
 ### Configure Cloud Deliver Protection and send samples automatically
 
@@ -316,9 +316,9 @@ Browse to **Computer Configuration** \> **Policies** \> **Administrative Templat
 Browse to **Computer Configuration** \> **Policies** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **MpEngine**.
 When you configure cloud protection level policy to **Default Microsoft Defender Antivirus blocking policy** this will disable the policy. This is what is required to set the protection level to the windows default.
 
-:::image type="content" source="images/config-extended-cloud-check.png" alt-text="config extended cloud check" lightbox="images/config-extended-cloud-check.png":::
+:::image type="content" source="media/config-extended-cloud-check.png" alt-text="config extended cloud check" lightbox="media/config-extended-cloud-check.png":::
 
-:::image type="content" source="images/cloud-protection-level.png" alt-text="config cloud protection level" lightbox="images/cloud-protection-level.png":::
+:::image type="content" source="media/cloud-protection-level.png" alt-text="config cloud protection level" lightbox="media/cloud-protection-level.png":::
 
 ## Related topics
 - [Onboard Windows devices using Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)

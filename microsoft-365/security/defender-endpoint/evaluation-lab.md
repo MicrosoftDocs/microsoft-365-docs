@@ -2,10 +2,11 @@
 title: Microsoft Defender for Endpoint evaluation lab
 description: Learn about Microsoft Defender for Endpoint capabilities, run attack simulations, and see how it prevents, detects, and remediates threats.
 ms.service: defender-endpoint
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
+ms.reviewer: noamhadash
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
   - m365-security
@@ -14,10 +15,13 @@ ms.collection:
   - tier1
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 11/02/2023
+ms.date: 02/27/2024
 ---
 
 # Microsoft Defender for Endpoint evaluation lab
+
+   > [!IMPORTANT]
+   > **The Microsoft Defender for Endpoint evaluation lab was deprecated in January, 2024**.
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
@@ -223,7 +227,7 @@ If you are looking for a pre-made simulation, you can use our ["Do It Yourself" 
 
 2. Enter the password that was displayed during the device creation step.
 
-   :::image type="content" source="images/enter-password.png" alt-text="The screen on which you enter credentials" lightbox="images/enter-password.png":::
+   :::image type="content" source="media/enter-password.png" alt-text="The screen on which you enter credentials" lightbox="media/enter-password.png":::
 
 3. Run Do-it-yourself attack simulations on the device.
 
@@ -288,7 +292,7 @@ Each simulation comes with an in-depth description of the attack scenario and re
 
 The lab reports summarize the results of the simulations conducted on the devices.
 
-:::image type="content" source="images/eval-report.png" alt-text="Evaluation report" lightbox="images/eval-report.png":::
+:::image type="content" source="media/eval-report.png" alt-text="Evaluation report" lightbox="media/eval-report.png":::
 
 At a glance, you'll quickly be able to see:
 

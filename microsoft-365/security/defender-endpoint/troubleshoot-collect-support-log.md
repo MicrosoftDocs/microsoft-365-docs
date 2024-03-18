@@ -1,15 +1,11 @@
 ---
 title: Collect support logs in Microsoft Defender for Endpoint using live response
 description: Learn how to collect logs using live response to troubleshoot Microsoft Defender for Endpoint issues
-keywords: support, log, collect, troubleshoot, live response, liveanalyzer, analyzer, live, response
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security
@@ -45,11 +41,11 @@ If you also require Defender Antivirus support logs (MpSupportFiles.cab), then f
 
 4. Select **Choose file**.
 
-   :::image type="content" source="images/choose-file.png" alt-text="The choose file button-1" lightbox="images/choose-file.png":::
+   :::image type="content" source="media/choose-file.png" alt-text="The choose file button-1" lightbox="media/choose-file.png":::
 
 5. Select the downloaded file named MDELiveAnalyzer.ps1 and then click on **Confirm**
 
-   :::image type="content" source="images/analyzer-file.png" alt-text="The choose file button-2" lightbox="images/analyzer-file.png":::
+   :::image type="content" source="media/analyzer-file.png" alt-text="The choose file button-2" lightbox="media/analyzer-file.png":::
 
 6. While still in the LiveResponse session, use the commands below to run the analyzer and collect the result file:
 
@@ -58,7 +54,7 @@ If you also require Defender Antivirus support logs (MpSupportFiles.cab), then f
     GetFile "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\MDEClientAnalyzerResult.zip"
     ```
 
-    [![Image of commands.](images/analyzer-commands.png)](images/analyzer-commands.png#lightbox)
+    [![Image of commands.](media/analyzer-commands.png)](media/analyzer-commands.png#lightbox)
 
 > [!NOTE]
 >

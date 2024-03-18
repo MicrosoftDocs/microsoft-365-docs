@@ -4,7 +4,7 @@ description: Use your Microsoft Defender Vulnerability Management dashboard to s
 search.appverid: MET150
 author: siosulli
 ms.author: siosulli
-manager: dansimp 
+manager: deniseb 
 audience: Admin
 ms.topic: conceptual
 ms.service: defender-business

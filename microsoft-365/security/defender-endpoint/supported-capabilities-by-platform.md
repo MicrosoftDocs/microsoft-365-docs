@@ -1,15 +1,11 @@
 ---
 title: Supported Microsoft Defender for Endpoint capabilities by platform
 description: Get to know the Microsoft Defender for Endpoint capabilities supported for Windows 10 devices, servers, and non-Windows devices.
-keywords: onboarding, Microsoft Defender for Endpoint onboarding, sccm, group policy, mdm, local script, detection test
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security
@@ -39,31 +35,31 @@ The following table gives information about the supported Microsoft Defender for
 |Operating System|Windows 10 & 11|Windows Server 2012 R2 <sup>[1]</sup>, <br> 2016 <sup>[1]</sup>, <br> 2019 & 2022, <br> 1803+|macOS|Linux|
 |---|:---:|:---:|:---:|:---:|
 |**Prevention**|||||
-|[Attack Surface Reduction](attack-surface-reduction.md)|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg)|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|
-|Device Control|![Yes.](images/svg/check-yes.svg)|![No](images/svg/check-no.svg)|![Yes.](images/svg/check-yes.svg)|![No](images/svg/check-no.svg)|
-|[Firewall](host-firewall-reporting.md)|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg)|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|
-|[Network Protection](network-protection.md)|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg) <sup>[2]</sup>|![Yes.](images/svg/check-yes.svg) <sup>[2]</sup>|
-|[Next-generation protection](next-generation-protection.md)|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg)|
-|[Tamper Protection](prevent-changes-to-security-settings-with-tamper-protection.md)|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg)|![No](images/svg/check-no.svg)|
-|[Web Protection](web-protection-overview.md)|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg) <sup>[2]</sup>|![Yes.](images/svg/check-yes.svg) <sup>[2]</sup>|
+|[Attack Surface Reduction](attack-surface-reduction.md)|![Yes.](media/svg/check-yes.svg)|![Yes.](media/svg/check-yes.svg)|![No](media/svg/check-no.svg)|![No](media/svg/check-no.svg)|
+|Device Control|![Yes.](media/svg/check-yes.svg)|![No](media/svg/check-no.svg)|![Yes.](media/svg/check-yes.svg)|![No](media/svg/check-no.svg)|
+|[Firewall](host-firewall-reporting.md)|![Yes.](media/svg/check-yes.svg)|![Yes.](media/svg/check-yes.svg)|![No](media/svg/check-no.svg)|![No](media/svg/check-no.svg)|
+|[Network Protection](network-protection.md)|![Yes.](media/svg/check-yes.svg)|![Yes.](media/svg/check-yes.svg)|![Yes.](media/svg/check-yes.svg) <sup>[2]</sup>|![Yes.](media/svg/check-yes.svg) <sup>[2]</sup>|
+|[Next-generation protection](next-generation-protection.md)|![Yes.](media/svg/check-yes.svg)|![Yes.](media/svg/check-yes.svg)|![Yes.](media/svg/check-yes.svg)|![Yes.](media/svg/check-yes.svg)|
+|[Tamper Protection](prevent-changes-to-security-settings-with-tamper-protection.md)|![Yes.](media/svg/check-yes.svg)|![Yes.](media/svg/check-yes.svg)|![Yes.](media/svg/check-yes.svg)|![No](media/svg/check-no.svg)|
+|[Web Protection](web-protection-overview.md)|![Yes.](media/svg/check-yes.svg)|![Yes.](media/svg/check-yes.svg)|![Yes.](media/svg/check-yes.svg) <sup>[2]</sup>|![Yes.](media/svg/check-yes.svg) <sup>[2]</sup>|
 ||||||
 |**Detection**|||||
-|[Advanced Hunting](../defender/advanced-hunting-overview.md)|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg)|
-|[Custom file indicators](indicator-file.md)|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg)|
-|[Custom network indicators](indicator-ip-domain.md)|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg) <sup>[2]</sup>|![Yes.](images/svg/check-yes.svg) <sup>[2]</sup>|
-|[EDR Block](edr-in-block-mode.md)|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg)|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|
-|[Passive Mode](microsoft-defender-antivirus-compatibility.md)|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg)|
-|Sense detection sensor|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg)|
-|Endpoint & network device discovery|![Yes.](images/svg/check-yes.svg)|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|
-|[Vulnerability management](../defender-vulnerability-management/defender-vulnerability-management.md)|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg)|
+|[Advanced Hunting](../defender/advanced-hunting-overview.md)|![Yes.](media/svg/check-yes.svg)|![Yes.](media/svg/check-yes.svg)|![Yes.](media/svg/check-yes.svg)|![Yes.](media/svg/check-yes.svg)|
+|[Custom file indicators](indicator-file.md)|![Yes.](media/svg/check-yes.svg)|![Yes.](media/svg/check-yes.svg)|![Yes.](media/svg/check-yes.svg)|![Yes.](media/svg/check-yes.svg)|
+|[Custom network indicators](indicator-ip-domain.md)|![Yes.](media/svg/check-yes.svg)|![Yes.](media/svg/check-yes.svg)|![Yes.](media/svg/check-yes.svg) <sup>[2]</sup>|![Yes.](media/svg/check-yes.svg) <sup>[2]</sup>|
+|[EDR Block](edr-in-block-mode.md)|![Yes.](media/svg/check-yes.svg)|![Yes.](media/svg/check-yes.svg)|![No](media/svg/check-no.svg)|![No](media/svg/check-no.svg)|
+|[Passive Mode](microsoft-defender-antivirus-compatibility.md)|![Yes.](media/svg/check-yes.svg)|![Yes.](media/svg/check-yes.svg)|![Yes.](media/svg/check-yes.svg)|![Yes.](media/svg/check-yes.svg)|
+|Sense detection sensor|![Yes.](media/svg/check-yes.svg)|![Yes.](media/svg/check-yes.svg)|![Yes.](media/svg/check-yes.svg)|![Yes.](media/svg/check-yes.svg)|
+|Endpoint & network device discovery|![Yes.](media/svg/check-yes.svg)|![No](media/svg/check-no.svg)|![No](media/svg/check-no.svg)|![No](media/svg/check-no.svg)|
+|[Vulnerability management](../defender-vulnerability-management/defender-vulnerability-management.md)|![Yes.](media/svg/check-yes.svg)|![Yes.](media/svg/check-yes.svg)|![Yes.](media/svg/check-yes.svg)|![Yes.](media/svg/check-yes.svg)|
 ||||||
 |**Response**     |         |         |         ||
-|[Automated Investigation & Response (AIR)](automated-investigations.md)        | ![Yes.](images/svg/check-yes.svg)        | ![Yes.](images/svg/check-yes.svg)  |  ![No](images/svg/check-no.svg)       |  ![No](images/svg/check-no.svg)        |
-|[Device response capabilities: collect investigation package ](respond-machine-alerts.md)        | ![Yes.](images/svg/check-yes.svg)        | ![Yes.](images/svg/check-yes.svg)   |  ![Yes.](images/svg/check-yes.svg) <sup>[3]</sup>       |  ![Yes.](images/svg/check-yes.svg) <sup>[3]</sup>        |
-|[Device response capabilities: run AV scan](respond-machine-alerts.md)        | ![Yes.](images/svg/check-yes.svg)        | ![Yes.](images/svg/check-yes.svg)   |  ![Yes.](images/svg/check-yes.svg)        |  ![Yes.](images/svg/check-yes.svg)         |
-|[Device isolation](respond-machine-alerts.md)        | ![Yes.](images/svg/check-yes.svg)        | ![Yes.](images/svg/check-yes.svg)   |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)    |
-|File response capabilities: collect file, deep analysis, block file, stop, and quarantine processes        | ![Yes.](images/svg/check-yes.svg)        | ![Yes.](images/svg/check-yes.svg)   |  ![No](images/svg/check-no.svg)       |  ![No](images/svg/check-no.svg)     |
-|[Live Response](live-response.md)       | ![Yes.](images/svg/check-yes.svg)        | ![Yes.](images/svg/check-yes.svg) |  ![Yes.](images/svg/check-yes.svg)       |  ![Yes.](images/svg/check-yes.svg)      |
+|[Automated Investigation & Response (AIR)](automated-investigations.md)        | ![Yes.](media/svg/check-yes.svg)        | ![Yes.](media/svg/check-yes.svg)  |  ![No](media/svg/check-no.svg)       |  ![No](media/svg/check-no.svg)        |
+|[Device response capabilities: collect investigation package ](respond-machine-alerts.md)        | ![Yes.](media/svg/check-yes.svg)        | ![Yes.](media/svg/check-yes.svg)   |  ![Yes.](media/svg/check-yes.svg) <sup>[3]</sup>       |  ![Yes.](media/svg/check-yes.svg) <sup>[3]</sup>        |
+|[Device response capabilities: run AV scan](respond-machine-alerts.md)        | ![Yes.](media/svg/check-yes.svg)        | ![Yes.](media/svg/check-yes.svg)   |  ![Yes.](media/svg/check-yes.svg)        |  ![Yes.](media/svg/check-yes.svg)         |
+|[Device isolation](respond-machine-alerts.md)        | ![Yes.](media/svg/check-yes.svg)        | ![Yes.](media/svg/check-yes.svg)   |  ![Yes.](media/svg/check-yes.svg)       |  ![Yes.](media/svg/check-yes.svg)    |
+|File response capabilities: collect file, deep analysis, block file, stop, and quarantine processes        | ![Yes.](media/svg/check-yes.svg)        | ![Yes.](media/svg/check-yes.svg)   |  ![No](media/svg/check-no.svg)       |  ![No](media/svg/check-no.svg)     |
+|[Live Response](live-response.md)       | ![Yes.](media/svg/check-yes.svg)        | ![Yes.](media/svg/check-yes.svg) |  ![Yes.](media/svg/check-yes.svg)       |  ![Yes.](media/svg/check-yes.svg)      |
 
 <sup>[1]</sup> Refers to the modern, unified solution for Windows Server 2012 R2 and 2016. For more information, see [Onboard Windows Servers to the Defender for Endpoint service](configure-server-endpoints.md).
 

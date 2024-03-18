@@ -1,9 +1,9 @@
 ---
 title: Onboarding devices using streamlined connectivity for Microsoft Defender for Endpoint 
-description: Learn how to use a  streamlined domain or static IP ranges during onboarding when connecting devices to Microsoft Defender for Endpoint         
-author: denisebmsft
-ms.author: deniseb 
-manager: dansimp 
+description: Learn how to use a streamlined domain or static IP ranges during onboarding when connecting devices to Microsoft Defender for Endpoint         
+author: siosulli
+ms.author: siosulli 
+manager: deniseb 
 ms.topic: how-to
 ms.service: defender-endpoint
 ms.subservice: onboard
@@ -11,10 +11,10 @@ ms.localizationpriority: medium
 ms.collection: 
 - m365-security
 - tier1
-ms.reviewer: 
+ms.reviewer: pahuijbr
 search.appverid: MET150
 audience: ITPro
-ms.date: 02/01/2024
+ms.date: 03/07/2024
 ---
 
 # Onboarding devices using streamlined connectivity for Microsoft Defender for Endpoint 
@@ -27,12 +27,10 @@ ms.date: 02/01/2024
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-
 [!Include[Prerelease information](../../includes/prerelease.md)]
 
 > [!NOTE] 
 >The streamlined onboarding method is currently in public preview. Make sure to review the prerequisites to confirm requirements and supported operating systems.
-
 
 The Microsoft Defender for Endpoint service may require the use of proxy configurations to report diagnostic data and communicate data to the service. Prior to the availability of the streamlined connectivity method, other URLs were required and Defender for Endpoint static IP ranges weren't supported. For more information on full MDE connectivity processes, see [STEP 1: Configure your network environment to ensure connectivity with Defender for Endpoint service](configure-environment.md).
 
@@ -104,8 +102,8 @@ Devices must meet specific prerequisites to use the streamlined connectivity met
 
 **Defender Antivirus versions (macOS/Linux)**
 
-- [macOS supported versions](microsoft-defender-endpoint-mac.md) with MDE product version 101.23102.*+
-- [Linux supported versions](microsoft-defender-endpoint-linux.md) with MDE product version 101.23102.*+
+- [macOS supported versions](microsoft-defender-endpoint-mac.md) with MDE product version 101.24022.*+
+- [Linux supported versions](microsoft-defender-endpoint-linux.md) with MDE product version 101.24022.*+
 
 **Supported Operating Systems**
 
@@ -115,8 +113,8 @@ Devices must meet specific prerequisites to use the streamlined connectivity met
 -   Windows Server 2019
 -   Windows Server 2022
 -   Windows Server 2012 R2, Server 2016 R2, fully updated running Defender for Endpoint modern unified solution (installation through MSI).
-- [macOS supported versions](microsoft-defender-endpoint-mac.md) with MDE product version 101.23102.*+
-- [Linux supported versions](microsoft-defender-endpoint-linux.md) with MDE product version 101.23102.*+
+- [macOS supported versions](microsoft-defender-endpoint-mac.md) with MDE product version 101.24022.*+
+- [Linux supported versions](microsoft-defender-endpoint-linux.md) with MDE product version 101.24022.*+
 
 > [!IMPORTANT]
 > - **Devices running on MMA agent are not supported** on the streamlined connectivity method and will need to continue using the standard URL set (Windows 7, Windows 8.1, Windows Server 2008 R2 MMA, Server 2012 & 2016 R2 not upgraded to modern unified agent). 
@@ -247,6 +245,6 @@ When you're ready to set the default onboarding package to streamlined, you can 
 > Before moving forward with this option, validate that your environment is ready and all devices meet prerequisites.
 
 
-:::image type="content" source="images/advanced-setting-streamlined-connectivity.png" alt-text="Screenshot of advanced settings page with streamlined connectivity option":::
+:::image type="content" source="media/advanced-setting-streamlined-connectivity.png" alt-text="Screenshot of advanced settings page with streamlined connectivity option":::
 
 This setting sets the default onboarding package to 'streamlined' for applicable operating systems.  You can still use the standard onboarding package within the onboarding page but you must specifically select it in the drop-down.  

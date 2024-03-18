@@ -18,6 +18,8 @@ f1.keywords: NOCSH
 
 # Grant Test Base managed identities to your Key Vault account
 
+[!INCLUDE [test-base-deprecation](./includes/test-base-deprecation.md)]
+
 This article includes step-by-step guidance to grant Test Base access to your key vault secrets so that you can authorize Test Base access to other platforms during your compatibility tests in a secure way.
 
 **In this article,**
