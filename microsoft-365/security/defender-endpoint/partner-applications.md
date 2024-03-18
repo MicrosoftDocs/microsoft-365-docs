@@ -13,7 +13,7 @@ ms.collection:
 - tier3
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 08/23/2023
+ms.date: 03/18/2024
 ---
 
 # Partner applications in Microsoft Defender for Endpoint
@@ -49,7 +49,7 @@ Logo|Partner name|Description
 :---|:---|:---
 ![Logo for AttackIQ.](media/attackiq-logo.png)|[AttackIQ Platform](https://go.microsoft.com/fwlink/?linkid=2103502)|AttackIQ Platform validates Defender for Endpoint is configured properly by launching continuous attacks safely on production assets
 ![Logo for Microsoft Sentinel.](images/sentinel-logo.png)|[AzureSentinel](https://go.microsoft.com/fwlink/?linkid=2135705)|Stream alerts from Microsoft Defender for Endpoint into Microsoft Sentinel
-![Logo for Cymulate.](images/cymulate-logo.png)|[Cymulate](https://go.microsoft.com/fwlink/?linkid=2135574)|Correlate Defender for Endpoint findings with simulated attacks to validate accurate detection and effective response actions
+![Logo for Cymulate.](media/cymulate-logo.png)|[Cymulate](https://go.microsoft.com/fwlink/?linkid=2135574)|Correlate Defender for Endpoint findings with simulated attacks to validate accurate detection and effective response actions
 ![Logo for Elastic security.](media/elastic-security-logo.png)|[Elastic Security](https://go.microsoft.com/fwlink/?linkid=2139303)|Elastic Security is a free and open solution for preventing, detecting, and responding to threats
 ![Logo for IBM QRadar.](images/ibm-qradar-logo.png)|[IBM QRadar](https://go.microsoft.com/fwlink/?linkid=2113903)|Configure IBM QRadar to collect detections from Defender for Endpoint
 ![Logo for Micro Focus ArcSight.](media/arcsight-logo.png)|[Micro Focus ArcSight](https://go.microsoft.com/fwlink/?linkid=2113548)|Use Micro Focus ArcSight to pull Defender for Endpoint detections
