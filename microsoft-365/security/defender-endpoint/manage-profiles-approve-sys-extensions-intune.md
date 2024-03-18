@@ -157,7 +157,7 @@ sysext.xml: OK
 1. Open the configuration profile and upload the *sysext.xml* file.
 1. Select **OK**.
 
-:::image type="content" source="images/deploy-custom-configuration-profile.png" alt-text="Deploying custom configuration profile." lightbox="images/deploy-custom-configuration-profile.png":::
+:::image type="content" source="media/deploy-custom-configuration-profile.png" alt-text="Deploying custom configuration profile." lightbox="media/deploy-custom-configuration-profile.png":::
 
 5. In the **Assignments** tab, assign this profile to **All Users & All devices**.
 6. Review and create this configuration profile.

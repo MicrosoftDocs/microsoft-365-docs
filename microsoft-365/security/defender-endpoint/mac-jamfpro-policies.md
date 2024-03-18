@@ -171,7 +171,7 @@ Note that you must use exact `com.microsoft.wdav` as the **Preference Domain**, 
 
 10. Select **Done**. You'll see the new **Configuration profile**.
 
-    :::image type="content" source="images/dd55405106da0dfc2f50f8d4525b01c8.png" alt-text="The page on which you complete the Configuration settings." lightbox="images/dd55405106da0dfc2f50f8d4525b01c8.png":::
+    :::image type="content" source="media/dd55405106da0dfc2f50f8d4525b01c8.png" alt-text="The page on which you complete the Configuration settings." lightbox="media/dd55405106da0dfc2f50f8d4525b01c8.png":::
 
 Microsoft Defender for Endpoint adds new settings over time. These new settings will be added to the schema, and a new version will be published to GitHub.
 All you need to do to have updates is to download an updated schema, edit existing configuration profile, and **Edit schema** at the **Application & Custom Settings** tab.
@@ -333,7 +333,7 @@ All you need to do to have updates is to download an updated schema, edit existi
 
 7. In **Preferences Domain**, enter `com.microsoft.wdav`, then select  **Upload PLIST File**.
 
-   :::image type="content" source="images/db15f147dd959e872a044184711d7d46.png" alt-text="The configuration settings preferences domain." lightbox="images/db15f147dd959e872a044184711d7d46.png":::
+   :::image type="content" source="media/db15f147dd959e872a044184711d7d46.png" alt-text="The configuration settings preferences domain." lightbox="media/db15f147dd959e872a044184711d7d46.png":::
 
 8. Select **Choose File**.
 
@@ -378,8 +378,8 @@ All you need to do to have updates is to download an updated schema, edit existi
 
 16. Select **Done**. You'll see the new **Configuration profile**.
 
-    ![Image of configuration settings config profile image.](images/dd55405106da0dfc2f50f8d4525b01c8.png)
-    :::image type="content" source="images/dd55405106da0dfc2f50f8d4525b01c8.png" alt-text="The config profile's settings." lightbox="images/dd55405106da0dfc2f50f8d4525b01c8.png":::
+    ![Image of configuration settings config profile image.](media/dd55405106da0dfc2f50f8d4525b01c8.png)
+    :::image type="content" source="media/dd55405106da0dfc2f50f8d4525b01c8.png" alt-text="The config profile's settings." lightbox="media/dd55405106da0dfc2f50f8d4525b01c8.png":::
 
 ## Step 4: Configure notifications settings
 

@@ -237,7 +237,7 @@ Create a new group policy specifically for onboarding devices such as "Microsoft
 It copies the files from DOMAIN\NETLOGON\MMA\filename to
 C:\windows\MMA\filename - **so the installation files are local to the server**:
 
-:::image type="content" source="images/deploymma.png" alt-text="The deploy mma cmd properties" lightbox="images/deploymma.png":::
+:::image type="content" source="media/deploymma.png" alt-text="The deploy mma cmd properties" lightbox="media/deploymma.png":::
 
 Repeat the process but create item level targeting on the COMMON tab, so the file only gets copied to the appropriate platform/Operating system version in scope:
 
