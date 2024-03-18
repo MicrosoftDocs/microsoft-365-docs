@@ -87,7 +87,7 @@ The effects of priority account protection are visible in the following reportin
   - [View data by Email \> Malware and Chart breakdown by Detection Technology](reports-email-security.md#view-data-by-email--malware-and-chart-breakdown-by-detection-technology)
   - [Chart breakdown by Policy type](reports-email-security.md#chart-breakdown-by-policy-type)
   - [Chart breakdown by Delivery status](reports-email-security.md#chart-breakdown-by-delivery-status)
-- [Threat Explorer and real-time detections](threat-explorer-about.md)
+- [Threat Explorer and real-time detections](threat-explorer-real-time-detections-about.md)
 - [Email entity page](mdo-email-entity-page.md)
 
 For information about where the Priority account tag and other user tags are available as filters, see [User tags in reports and features](user-tags-about.md#user-tags-in-reports-and-features).
@@ -100,7 +100,7 @@ In the previously mentioned views in the report, the option **Priority account p
 
 ### Threat Explorer
 
-For more information about Threat Explorer, see [Threat Explorer and Real-time detections](threat-explorer-about.md).
+For more information about Threat Explorer, see [Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md).
 
 To view the results of priority account protection in Threat Explorer, do the following steps:
 
