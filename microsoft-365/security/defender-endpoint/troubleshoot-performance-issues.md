@@ -117,7 +117,7 @@ Process Monitor (ProcMon) is an advanced monitoring tool that can show real-time
 
     2. The second way is to run the **command line** as admin, then from the Process Monitor path, run:
 
-       :::image type="content" source="images/cmd-procmon.png" alt-text="The cmd procmon" lightbox="images/cmd-procmon.png":::
+       :::image type="content" source="media/cmd-procmon.png" alt-text="The cmd procmon" lightbox="media/cmd-procmon.png":::
 
         ```console
         Procmon.exe /AcceptEula /Noconnect /Profiling

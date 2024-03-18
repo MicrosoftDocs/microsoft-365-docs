@@ -41,7 +41,7 @@ If you also require Defender Antivirus support logs (MpSupportFiles.cab), then f
 
 4. Select **Choose file**.
 
-   :::image type="content" source="images/choose-file.png" alt-text="The choose file button-1" lightbox="images/choose-file.png":::
+   :::image type="content" source="media/choose-file.png" alt-text="The choose file button-1" lightbox="media/choose-file.png":::
 
 5. Select the downloaded file named MDELiveAnalyzer.ps1 and then click on **Confirm**
 
