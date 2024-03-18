@@ -194,7 +194,7 @@ When the auto-claim policy is configured and a user doesn't have a license for t
 
 In addition to the actions listed in **For Power Automate per user plans**, the following actions also apply:
 
-- Trigger a premium cloud flow with Attended RPA
+- Trigger a premium cloud flow with Attended Robotic Process Automation (RPA)
 - Save a premium cloud flow with Attended RPA
 - Turn on a premium cloud flow with Attended RPA
 
