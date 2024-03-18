@@ -101,7 +101,7 @@ End users also need to take steps to install Microsoft Defender for Endpoint on 
      Select **Setting > Max allowed device threat level** in **Device Conditions** and enter a value. Then select  **Action: "Block Access"**. Microsoft Defender for Endpoint on Android shares this Device Threat Level.
 
 
-     :::image type="content" source="images/conditional-launch.png" alt-text="The Device conditions pane in the Microsoft Defender portal" lightbox="images/conditional-launch.png":::
+     :::image type="content" source="media/conditional-launch.png" alt-text="The Device conditions pane in the Microsoft Defender portal" lightbox="media/conditional-launch.png":::
 
 - **Assign user groups for whom the policy needs to be applied.**
 
