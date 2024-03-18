@@ -251,7 +251,7 @@ For more information on what's new with other Microsoft Defender security produc
 - Alert ID integration (search using Alert ID and Alert-Explorer navigation) in [hunting experiences](threat-explorer-real-time-detections-about.md)
 - Increasing the limits for Export of records from 9990 to 200,000 in [hunting experiences](threat-explorer-real-time-detections-about.md)
 - Extending the Explorer (and Real-time detections) data retention and search limit for trial tenants from 7 (previous limit) to 30 days in [hunting experiences](threat-explorer-real-time-detections-about.md)
-- New hunting pivots called **Impersonated domain** and **Impersonated user** within the Explorer (and Real-time detections) to search for impersonation attacks against protected users or domains. For more information, see [details](threat-explorer-real-time-detections-about.md#view-phishing-emails-sent-to-impersonated-users-and-domains). (Microsoft Defender for Office 365 Plan 1 or Plan 2)
+- New hunting pivots called **Impersonated domain** and **Impersonated user** within Explorer and Real-time detections to search for impersonation attacks against protected users or domains. For more information, see [Phish view in Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md#phish-view-in-threat-explorer-and-real-time-detections).
 
 ## Microsoft Defender for Office 365 Plan 1 and Plan 2
 
