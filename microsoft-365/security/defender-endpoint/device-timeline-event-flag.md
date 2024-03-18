@@ -37,7 +37,7 @@ The Defender for Endpoint device timeline helps you research and investigate ano
 
 - Process tree experience – event side panel:
 
-    :::image type="content" source="images/event-side-panel.png" alt-text="Screenshot of the event side panel." lightbox="images/event-side-panel.png":::
+    :::image type="content" source="media/event-side-panel.png" alt-text="Screenshot of the event side panel." lightbox="media/event-side-panel.png":::
 
    
 - All MITRE techniques are shown when there's more than one related technique:

@@ -296,7 +296,7 @@ Below are more steps to verify whether attack surface reduction rules are correc
 
 4. Select **Configuration** tab in Attack surface reduction rules reports. It shows attack surface reduction rules configuration overview and attack surface reduction rules status on each device.
 
-   :::image type="content" source="images/f91f406e6e0aae197a947d3b0e8b2d0d.png" alt-text="The attack surface reduction rules reports1" lightbox="images/f91f406e6e0aae197a947d3b0e8b2d0d.png":::
+   :::image type="content" source="media/f91f406e6e0aae197a947d3b0e8b2d0d.png" alt-text="The attack surface reduction rules reports1" lightbox="media/f91f406e6e0aae197a947d3b0e8b2d0d.png":::
 
 5. Select each device shows configuration details of attack surface reduction rules.
 
