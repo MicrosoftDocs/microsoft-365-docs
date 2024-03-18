@@ -18,7 +18,8 @@ description: Use the frontline usage report on the Manage frontline teams page o
   - Microsoft Teams
   - Microsoft 365 for frontline workers
 ms.custom: seo-marvel-apr2020
-ms.date: 
+ROBOTS: NOINDEX, NOFOLLOW
+ms.date: 03/18/2024
 ---
 # Microsoft Teams frontline usage report
 
@@ -51,7 +52,7 @@ You must be a Global admin to turn on this setting.
 
 ## The frontline usage report
 
-To access the report, you must be a Global admin, Teams admin, Global reader, or Report reader. [PLACEHOLDER ONLY - NEEDS CONFIRMATION]
+<!--To access the report, you must be a Global admin, Teams admin, Global reader, or Report reader.-->
 
 ### Run the report
 
