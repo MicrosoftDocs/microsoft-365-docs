@@ -50,7 +50,7 @@ End users also need to take steps to install Microsoft Defender for Endpoint on 
 
   c. If the connection isn't turned on, select the toggle to turn it on and then select **Save Preferences**.
 
-     :::image type="content" source="images/enable-intune-connection.png" alt-text="The Advanced features section in the Microsoft Defender portal." lightbox="images/enable-intune-connection.png":::
+     :::image type="content" source="media/enable-intune-connection.png" alt-text="The Advanced features section in the Microsoft Defender portal." lightbox="media/enable-intune-connection.png":::
 
   d. Go to the **Microsoft Intune admin center** and Validate whether Microsoft Defender for Endpoint-Intune connector is enabled.
 
@@ -130,7 +130,7 @@ End users also need to take steps to install Microsoft Defender for Endpoint on 
 
 4. Install the Microsoft Defender for Endpoint (Mobile) app and launch back Managed app onboarding screen.
 
-   :::image type="content" source="images/download-mde.png" alt-text="The illustrative pages that contain the procedure of downloading MDE and launching back the app-onboarding screen." lightbox="images/download-mde.png":::
+   :::image type="content" source="media/download-mde.png" alt-text="The illustrative pages that contain the procedure of downloading MDE and launching back the app-onboarding screen." lightbox="media/download-mde.png":::
 
 5. Click **Continue > Launch**. The Microsoft Defender for Endpoint app onboarding/activation flow is initiated. Follow the steps to complete onboarding. You'll automatically be redirected back to Managed app onboarding screen, which now indicates that the device is healthy.
 

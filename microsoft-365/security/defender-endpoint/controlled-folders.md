@@ -93,7 +93,7 @@ The protected folders include common system folders (including boot sectors), an
 
 Default folders appear in the user's profile, under **This PC**.
    > [!div class="mx-imgBorder"]
-   > ![Protected Windows default systems folders](images/defaultfolders.png)
+   > ![Protected Windows default systems folders](media/defaultfolders.png)
 
 > [!NOTE]
 > You can configure additional folders as protected, but you cannot remove the Windows system folders that are protected by default.

@@ -77,7 +77,7 @@ The **Campaigns** page consists of the following elements:
 >
 > - If you don't see any campaign data or very limited data, try changing the date range or [filters](#filters-on-the-campaigns-page).
 >
-> - You can also view the same information about campaigns in [Threat Explorer](threat-explorer-about.md) at <https://security.microsoft.com/threatexplorerv3>:
+> - You can also view the same information about campaigns in [Threat Explorer](threat-explorer-real-time-detections-about.md) at <https://security.microsoft.com/threatexplorerv3>:
 >   - **Campaigns** view.
 >   - **All email** view \> **Campaign** tab in the details area below the chart.
 >   - **Malware** view \> **Campaign** tab in the details area below the chart.
