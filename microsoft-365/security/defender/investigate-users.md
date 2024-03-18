@@ -40,7 +40,7 @@ You can find identity information in the following views:
 - Advanced hunting queries
 - Action center
 
-A clickable identity link is available in these views that will take you to the **User** page where more details about the user are shown. For example, you can see the details of user accounts identified in the alerts of an incident in the Microsoft Defender portal at **Incidents & alerts** \> ***incident*** \> **Users**.
+A clickable identity link is available in these views that will take you to the **User** page where more details about the user are shown. For example, you can see the details of user accounts identified in the alerts of an incident in the Microsoft Defender portal at **Incidents & alerts** \> ***incident*** \> **Assets** > **Users**.
 
 :::image type="content" source="../../media/investigate-users/Fig1-user-incident-overview.png" alt-text="The Users page for an incident in the Microsoft Defender portal." lightbox="../../media/investigate-users/Fig1-user-incident-overview.png":::
 
@@ -109,7 +109,7 @@ For more information, see [Defender for Identity entity tags in Microsoft Defend
 
 ## Incidents and alerts
 
-You can see all active incidents and alerts involving the user from the last 180 days in this tab. Information like alert severity and the time the alert was generated is available in this tab. Clicking on the alert row shows you additional information about the alert.
+You can see all active incidents and alerts involving the user from the last 180 days in this tab. Information like alert severity and the time the alert was generated is available in this tab. Select the alert row to view more details about the alert.
 
 :::image type="content" source="../../media/investigate-users/Fig3-user-incident-alertstab.png" alt-text="The user account's related alerts seen in the Alerts tab in the Microsoft Defender portal" lightbox="../../media/investigate-users/Fig3-user-incident-alertstab.png":::
 
