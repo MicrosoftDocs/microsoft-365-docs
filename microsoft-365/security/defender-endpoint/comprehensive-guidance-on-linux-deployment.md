@@ -564,7 +564,7 @@ Use the following syntaxes to help identify the process that is causing CPU over
   sudo ps -T -p <PID> >> Thread_with_highest_cpu_usage.log
   ```
 
-  :::image type="content" source="images/cpu-utilization.png" alt-text="This is CPU utilization":::
+  :::image type="content" source="media/cpu-utilization.png" alt-text="This is CPU utilization":::
 
 The following table lists the processes that might cause a high CPU usage:
 

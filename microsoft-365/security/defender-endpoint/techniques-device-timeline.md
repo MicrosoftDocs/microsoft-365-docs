@@ -35,7 +35,7 @@ This feature simplifies the investigation experience by helping analysts underst
 
 For public preview, Techniques are available by default and shown together with events when a device's timeline is viewed.
 
-:::image type="content" source="images/device-timeline-2.png" alt-text="The Techniques in device timeline" lightbox="images/device-timeline-2.png":::
+:::image type="content" source="media/device-timeline-2.png" alt-text="The Techniques in device timeline" lightbox="media/device-timeline-2.png":::
 
 Techniques are highlighted in bold text and appear with a blue icon on the left. The corresponding MITRE ATT&CK ID and technique name also appear as tags under Additional information.
 
