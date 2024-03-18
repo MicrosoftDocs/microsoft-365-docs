@@ -232,7 +232,7 @@ Then, you continue by creating several different types of endpoint security poli
     > For more information, see [Attack surface reduction rules](attack-surface-reduction.md).
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/dd0c00efe615a64a4a368f54257777d0.png" alt-text="The Microsoft Intune admin center21" lightbox="images/dd0c00efe615a64a4a368f54257777d0.png":::
+    > :::image type="content" source="media/dd0c00efe615a64a4a368f54257777d0.png" alt-text="The Microsoft Intune admin center21" lightbox="media/dd0c00efe615a64a4a368f54257777d0.png":::
 
 7. Add Scope Tags as required, then select  **Next**.
 

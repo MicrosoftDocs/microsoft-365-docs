@@ -60,7 +60,7 @@ Copy the unified solution package, onboarding script and migration script to the
    :::image type="content" source="images/manual-deployment-information.png" alt-text="Screenshot specifying the script deployment information.":::
 7. On this step, copy the UNC path that your content is located. Example: `\\ServerName\h$\SOFTWARE_SOURCE\path`.
 
-   :::image type="content" source="images/deployment-type-wizard.png" alt-text="Screenshot that shows UNC path copy.":::
+   :::image type="content" source="media/deployment-type-wizard.png" alt-text="Screenshot that shows UNC path copy.":::
 
 8. Additionally, set the following as the installation program:
 
@@ -97,11 +97,11 @@ Copy the unified solution package, onboarding script and migration script to the
 15. Keep select **Next** until the completion of Application Wizard. Verify all have been green checked.
 16. Close the wizard, right-click on the recently created application and deploy it to your down-level-server collection. Locally, the installation can be confirmed at Software Center. For details, check the CM logs at `C:\Windows\CCM\Logs\AppEnforce.log`.
 
-    :::image type="content" source="images/deploy-application.png" alt-text="Screenshot that shows deployment of created application." lightbox="images/deploy-application.png":::
+    :::image type="content" source="media/deploy-application.png" alt-text="Screenshot that shows deployment of created application." lightbox="media/deploy-application.png":::
 
 17. Verify the status of the migration at MECM > Monitoring > Deployments.
 
-    :::image type="content" source="images/deployment-status.png" alt-text="Screenshot that shows deployment status check." lightbox="images/deployment-status.png":::
+    :::image type="content" source="media/deployment-status.png" alt-text="Screenshot that shows deployment status check." lightbox="media/deployment-status.png":::
 
 18. Troubleshooting .ETL files will be created and automatically saved locally in each server at this location `C:\Windows\ccmcache\#\`. These files can be leveraged by support to troubleshoot onboarding issues.
 
