@@ -172,7 +172,7 @@ Once the signatures zip is downloaded, the Mirror Server can be used to host it.
 
 Once hosted, copy the absolute path of the hosted server (up to and not including the `arch_*` directory).
 
-For example, if the script is executed with `downloadFolder=/tmp/wdav-update`, and the HTTP server (www.example.server.com:8000) is hosting the `/tmp/wdav-update` path, the corresponding URI is: `http://www.example.server.com:8000/linux/production/`
+For example, if the script is executed with `downloadFolder=/tmp/wdav-update`, and the HTTP server (www.example.server.com:8000) is hosting the `/tmp/wdav-update` path, the corresponding URI is: `www.example.server.com:8000/linux/production/`
 
 Once the Mirror Server is set up, we need to propagate this URL to the Linux endpoints using the Managed Configuration as described in the next section.
 
