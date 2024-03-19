@@ -14,7 +14,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: macos
 search.appverid: met150
-ms.date: 12/07/2023
+ms.date: 03/19/2024
 ---
 
 # Troubleshoot license issues for Microsoft Defender for Endpoint on macOS
@@ -41,7 +41,7 @@ Select the **x** symbol.
 
 ### Message
 
-When you select the **x** symbol, you'll see options as shown in the following screenshot:
+When you select the **x** symbol, you see options as shown in the following screenshot:
 
 :::image type="content" source="images/x-symbol-menu-items.png" alt-text="Screenshot that shows the option that get listed on selecting the x symbol.":::
 
@@ -57,11 +57,11 @@ You'll encounter this message in a different way: If you're using the terminal t
 
 1. You've deployed and/or installed the Microsoft Defender for Endpoint on macOS package [Download installation packages](mac-install-manually.md#download-installation-and-onboarding-packages), but might not have run the configuration script [Download the onboarding package](mac-install-with-intune.md#step-14-download-the-onboarding-package) that contains the license settings. For information on troubleshooting in this scenario, see [For not running the configuration script](#for-not-running-the-configuration-script).
 
-1. You can also encounter this error message when the Microsoft Defender for Endpoint on macOS agent isn't up to date. For information on troubleshooting in this scenario, see [For Microsoft Defender for Endpoint on macOS not being up to date](#for-microsoft-defender-for-endpoint-on-macos-not-being-up-to-date).
+2. You can also encounter this error message when the Microsoft Defender for Endpoint on Mac agent isn't up to date. For information on troubleshooting in this scenario, see [For Microsoft Defender for Endpoint on macOS not being up to date](#for-microsoft-defender-for-endpoint-on-macos-not-being-up-to-date).
 
-1. You can also encounter this error message if you had offboarded and re-onboarded the macOS from Microsoft Defender for Endpoint on macOS.
+3. You can also encounter this error message if you had offboarded and re-onboarded the macOS from Microsoft Defender for Endpoint on macOS.
 
-1. You can also encounter this error message if you haven't assigned a license to the user. For information on troubleshooting in this scenario, see [For not assigning a license to the user](#for-not-assigning-a-license-to-the-user).
+4. You can also encounter this error message if you haven't assigned a license to the user. For information on troubleshooting in this scenario, see [For not assigning a license to the user](#for-not-assigning-a-license-to-the-user).
 
 ### Solutions
 
@@ -81,7 +81,7 @@ Depending on the deployment management tool used, follow the tool-specific instr
 > [!NOTE]
 > If the onboarding package runs correctly, the licensing information will be located in `/Library/Application Support/Microsoft/Defender/com.microsoft.wdav.atp.plist`.
 
-#### For Microsoft Defender for Endpoint on macOS not being up to date
+#### If Microsoft Defender for Endpoint on macOS is not up to date
 
 For scenarios where Microsoft Defender for Endpoint on macOS isn't up to date, you'll need to [update](mac-updates.md) the agent.
 
@@ -93,29 +93,23 @@ If the file exists, it will prevent the macOS from being onboarded again.  Delet
 
 #### For not assigning a license to the user
 
-1. In the Microsoft Defender portal (security.microsoft.com):
-    1. Select **Settings**. The **Settings** screen appears.
-    1. Select **Endpoints**.
+1. In the Microsoft Defender portal (security.microsoft.com), select **Settings**, and then select **Endpoints**.
        
        :::image type="content" source="media/endpoints-option-on-settings-screen.png" alt-text="Screenshot of the Settings screen on which the Endpoints option is listed." lightbox="media/endpoints-option-on-settings-screen.png":::
  
-       The **Endpoints** screen appears.
-     
-       :::image type="content" source="media/endpoints-screen.png" alt-text="Screenshot of the Endpoints page." lightbox="media/endpoints-screen.png":::
+2. Select **Licenses**.
 
-    1. Select **Licenses**.
-     
-       :::image type="content" source="images/selecting-licenses-option-from-endpoints-screen.png" alt-text="Screenshot of the Endpoints page from which the Licenses options can be selected." lightbox="images/selecting-licenses-option-from-endpoints-screen.png":::
+   :::image type="content" source="images/selecting-licenses-option-from-endpoints-screen.png" alt-text="Screenshot of the Endpoints page from which the Licenses options can be selected." lightbox="images/selecting-licenses-option-from-endpoints-screen.png":::
        
-    1. Select **View and purchase licenses in the Microsoft 365 admin center**. The following screen in the Microsoft 365 admin center portal appears:
+3. Select **View and purchase licenses in the Microsoft 365 admin center**. The following screen in the Microsoft 365 admin center portal appears:
 
-       :::image type="content" source="images/m365-admin-center-purchase-assign-licenses.png" alt-text="Screenshot of the Microsoft 365 admin center portal page from which licenses can be purchased and assigned." lightbox="images/m365-admin-center-purchase-assign-licenses.png":::
+   :::image type="content" source="images/m365-admin-center-purchase-assign-licenses.png" alt-text="Screenshot of the Microsoft 365 admin center portal page from which licenses can be purchased and assigned." lightbox="images/m365-admin-center-purchase-assign-licenses.png":::
 
-    1. Check the checkbox of the license you want to purchase from Microsoft, and select it. The screen displaying detail of the chosen license appears:
-    
-       :::image type="content" source="images/resultant-screen-of-selecting-preferred-license.png" alt-text="Screenshot of the product page from which you can select the option of assigning the purchased license.":::
+4. Check the checkbox of the license you want to purchase from Microsoft, and select it. The screen displaying detail of the chosen license appears:
 
-    1. Select the **Assign licenses** link.
+   :::image type="content" source="images/resultant-screen-of-selecting-preferred-license.png" alt-text="Screenshot of the product page from which you can select the option of assigning the purchased license.":::
+
+5. Select the **Assign licenses** link.
 
        :::image type="content" source="media/assign-licenses-link.png" alt-text="Screenshot of the product page from which you can select the Assign licenses link.":::
 
@@ -123,15 +117,13 @@ If the file exists, it will prevent the macOS from being onboarded again.  Delet
 
        :::image type="content" source="images/screen-containing-option-to-assign-licenses.png" alt-text="Screenshot of the page containing the + Assign licenses option." lightbox="images/screen-containing-option-to-assign-licenses.png":::
 
-    1. Select **+ Assign licenses**.
-    1. Enter the name or email address of the person to whom you want to assign this license.
-    
-       The following screen appears, displaying the details of the chosen license assignee and a list of options.
+6. Select **+ Assign licenses**.
 
-       :::image type="content" source="media/assignee-details-and-options.png" alt-text="Screenshot of the page displaying the assignee's details and a list of options.":::
+7. Enter the name or email address of the person to whom you want to assign this license. The following screen appears, displaying the details of the chosen license assignee and a list of options.
+
+   :::image type="content" source="media/assignee-details-and-options.png" alt-text="Screenshot of the page displaying the assignee's details and a list of options.":::
  
-    1. Check the checkboxes for **Microsoft 365 Advanced Auditing**, **Microsoft Defender XDR**, and **Microsoft Defender for Endpoint**.
-    1. Select **Save**.
+8. Check the checkboxes for **Microsoft 365 Advanced Auditing**, **Microsoft Defender XDR**, and **Microsoft Defender for Endpoint**. Then select **Save**.
 
 On implementing these solution-options (either of them), if the licensing issues have been resolved, and then you run **mdatp health**, you should see the following results:
 
@@ -171,4 +163,5 @@ You can also suppress switching to experience for Individuals on MDM-enrolled ma
 - [Set up the Microsoft Defender for Endpoint on macOS policies in Jamf Pro](mac-jamfpro-policies.md): Learn how to set up the Microsoft Defender for Endpoint on macOS policies in Jamf Pro.
 - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md): Learn how to install, configure, update, and use Microsoft Defender for Endpoint on Mac.
 - [Deploying Microsoft Defender for Endpoint on macOS with Jamf Pro](mac-install-with-jamf.md): Learn how to deploy Microsoft Defender for Endpoint on macOS with Jamf Pro.
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
