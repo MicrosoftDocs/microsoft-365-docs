@@ -11,9 +11,9 @@ ms.author: diannegali
 author: diannegali
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - m365-security
-  - tier2 
+  - tier2
 ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
@@ -28,7 +28,7 @@ ms.date: 08/04/2023
 
 - Microsoft Defender XDR
 
-The user entity page in Microsoft Defender XDR helps you in your investigation of user identities. The page has all the important information about each identity. If an alert or incident indicates that a user might be compromised or is suspicious, check and investigate the user profile. 
+The user entity page in Microsoft Defender XDR helps you in your investigation of user identities. The page has all the important information about each identity. If an alert or incident indicates that a user might be compromised or is suspicious, check and investigate the user profile.
 
 You can find identity information in the following views:
 
@@ -39,7 +39,7 @@ You can find identity information in the following views:
 - Activity log
 - Advanced hunting queries
 - Action center
- 
+
 A clickable identity link is available in these views that will take you to the **User** page where more details about the user are shown. For example, you can see the details of user accounts identified in the alerts of an incident in the Microsoft Defender portal at **Incidents & alerts** \> ***incident*** \> **Users**.
 
 :::image type="content" source="../../media/investigate-users/Fig1-user-incident-overview.png" alt-text="The Users page for an incident in the Microsoft Defender portal." lightbox="../../media/investigate-users/Fig1-user-incident-overview.png":::
@@ -71,7 +71,7 @@ This card includes all incidents and alerts, grouped into severities, associated
 
 This card includes the calculated investigation priority score breakdown and a two-week trend for an identity, including whether the identity score is on the high percentile for that tenant.
 
-### Active directory account control 
+### Active directory account control
 
 In this card, Defender for Identity surfaces security settings that may need your attentions. You can see important flags about the user, such as if the user can press enter to bypass the password, and if the user has a password that never expires, etc.
 
@@ -137,19 +137,20 @@ The timeline represents activities and alerts observed from a user's identity in
 
 - **Custom time range picker:** You can choose a timeframe to focus your investigation on the last 24 hours, the last 3 days and so on. Or you can choose a specific timeframe by clicking on **Custom range**. For example:
 
-  ![Screenshot that shows how to choose time frame.](media/investigate-users/image.png)
-  
+  :::image type="content" source="../../media/image.png" alt-text="Screenshot that shows how to choose time frame." lightbox="../../media/image.png":::
+
 - **Timeline filters:** In order to improve your investigation experience, you can use the timeline filters: Type (Alerts and/or user's related activities), Alert severity, Activity type, App, Location, Protocol. Each filter depends on the others, and the options in each filter (drop-down) only contains the data that is relevant for the specific user.
 
-- **Export button:** You can export the timeline to a CSV file. Export is limited to the first 5000 records and contains the data as it displays in the UI (same filters and columns). 
+- **Export button:** You can export the timeline to a CSV file. Export is limited to the first 5000 records and contains the data as it displays in the UI (same filters and columns).
 
 - **Customized columns:** You can choose which columns to expose in the timeline by selecting the **Customize columns** button. For example:
 
-  ![Screenshot that shows the user's image.](image2.png)
+  :::image type="content" source="../../media/image2.png" alt-text="Screenshot that shows the user's image." lightbox="../../media/image2.png":::
 
 ### What data types are available?
 
 The following data types are available in the timeline:
+
 - A user's impacted alerts
 - Active Directory and Microsoft Entra activities
 - Cloud apps' events
@@ -159,11 +160,12 @@ The following data types are available in the timeline:
 ### What information is displayed?
 
 The following information is displayed in the timeline:
+
 - Activity/alert description
 - Date and time of the activity
 - Application that performed the activity
 - Source device/IP address
-- [MITRE ATT&CK](https://attack.mitre.org/) techniques 
+- [MITRE ATT&CK](https://attack.mitre.org/) techniques
 - Alert status and severity
 - Country/region where the client IP address is geolocated
 - Protocol used during the communication
@@ -172,11 +174,12 @@ The following information is displayed in the timeline:
 
 For example:
 
-![Screenshot of the Timeline tab.](media/investigate-users/time.png)
+:::image type="content" source="../../media/time.png" alt-text="Screenshot of the Timeline tab." lightbox="../../media/time.png":::
 
 > [!NOTE]
-> Microsoft Defender XDR can display date and time information using either your local time zone or UTC. The selected time zone will apply to all date and time information shown in the Identity timeline. 
-> To set the time zone for these features, go to **Settings** > **Security center** > **Time zone**.
+> Microsoft Defender XDR can display date and time information using either your local time zone or UTC. The selected time zone will apply to all date and time information shown in the Identity timeline.
+>
+> To set the time zone for these features, go to **Settings** \> **Security center** \> **Time zone**.
 
 ## Remediation actions
 
@@ -200,8 +203,5 @@ As needed for in-process incidents, continue your [investigation](investigate-in
 - [Incidents overview](incidents-overview.md)
 - [Prioritize incidents](incident-queue.md)
 - [Manage incidents](manage-incidents.md)
-
-
-
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]
