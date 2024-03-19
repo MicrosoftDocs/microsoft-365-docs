@@ -56,7 +56,8 @@ Network protection for macOS is now available for all Mac devices onboarded to D
 
 Apple fixed an issue on macOS [Ventura upgrade](<https://developer.apple.com/documentation/macos-release-notes/macos-13_1-release-notes>), which is fixed with the latest OS update. The issue impacts Microsoft Defender for Endpoint security extensions, and might result in losing Full Disk Access Authorization, impacting its ability to function properly.
 
-In MacOS Sonoma 14.3.1, Apple made a change to the [handling of Bluetooth devices](https://developer.apple.com/forums/thread/738748) devices that impacted MDE device controls ability to intercept and block access to Bluetooth devices.  At this time, the recommended mitigation is to use a version of MacOS less than 14.3.1.
+In macOS Sonoma 14.3.1, Apple made a change to the [handling of Bluetooth devices](https://developer.apple.com/forums/thread/738748) that impacts Defender for Endpoint device controls ability to intercept and block access to Bluetooth devices.  At this time, the recommended mitigation is to use a version of macOS less than 14.3.1.
+
 
 **Sonoma support**
 
