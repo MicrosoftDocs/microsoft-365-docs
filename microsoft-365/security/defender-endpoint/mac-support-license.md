@@ -55,13 +55,13 @@ You encounter this message in a different way: If you're using the terminal to e
 
 ### Cause
 
-1. You've deployed and/or installed the Microsoft Defender for Endpoint on macOS package [Download installation packages](mac-install-manually.md#download-installation-and-onboarding-packages), but you might not have run the configuration script [Download the onboarding package](mac-install-with-intune.md#step-14-download-the-onboarding-package) that contains the license settings. For information on troubleshooting in this scenario, see [If you did not run the configuration script](#if-you-did-not-run-the-configuration-script).
+1. You've deployed and/or installed the Microsoft Defender for Endpoint on macOS package [Download installation packages](mac-install-manually.md#download-installation-and-onboarding-packages), but you might not have run the configuration script [Download the onboarding package](mac-install-with-intune.md#step-14-download-the-onboarding-package) that contains the license settings. For information on troubleshooting in this scenario, see [If you didn't run the configuration script](#if-you-did-not-run-the-configuration-script).
 
-2. You can also encounter this error message when the Microsoft Defender for Endpoint on macOS agent isn't up to date. For information on troubleshooting in this scenario, see [If Microsoft Defender for Endpoint on macOS is not up to date](#if-microsoft-defender-for-endpoint-on-macos-is-not-up-to-date).
+2. You can also encounter this error message when the Microsoft Defender for Endpoint on macOS agent isn't up to date. For information on troubleshooting in this scenario, see [If Microsoft Defender for Endpoint on macOS isn't up to date](#if-microsoft-defender-for-endpoint-on-macos-is-not-up-to-date).
 
-3. You can also encounter this error message if you had offboarded and re-onboarded the macOS from Microsoft Defender for Endpoint on macOS.
+3. You can also encounter this error message if you offboarded and reonboarded Mac from Microsoft Defender for Endpoint on macOS.
 
-4. You can also encounter this error message if you haven't assigned a license to the user. For information on troubleshooting in this scenario, see [If a license isn't assigned to a user](#if-a-license-is-not-assigned-to-a-user).
+4. You can also encounter this error message if a license isn't assigned to a user. For information on troubleshooting in this scenario, see [If a license isn't assigned to a user](#if-a-license-is-not-assigned-to-a-user).
 
 ### Solutions
 
