@@ -28,7 +28,7 @@ description: "Learn how to send messages to your organization in Microsoft 365 u
 
 # Adoption Score Organizational Messages
 
-Organizational messages enable IT admins to deliver clear, actionable messages in-product and in a targeted way, while maintaining user-level privacy. Organizational messages in Adoption Score use targeted in-product notifications to advise on Microsoft 365 recommended practices based on Adoption Score insights. Users can be reminded to use products that have recently been deployed, encouraged to try a product on a different surface, or to recommend new ways of working, such as using @mentions to improve response rates in communications. Templated messages are delivered to users in their flow of work through surfaces including Outlook, Excel, PowerPoint, and Word. Authorized professionals can use the organizational messages wizard in Adoption Score to choose from up to three templated message types, define when and how often a message can be displayed, and exclude groups or priority accounts from receiving the message.
+Organizational messages enable IT admins to deliver clear, actionable messages in-product and in a targeted way, while maintaining user-level privacy. Organizational messages in Adoption Score use targeted in-product notifications to advise on Microsoft 365 recommended practices based on Adoption Score insights. Users can be reminded to use products that have recently been deployed, encouraged to try a product on a different surface, or to recommend new ways of working, such as using @mentions to improve response rates in communications. Templated messages are delivered to users in their flow of work through surfaces including Outlook, Excel, PowerPoint, Word, and new Teams. Authorized professionals can use the organizational messages wizard in Adoption Score to choose from up to three templated message types, define when and how often a message can be displayed, and exclude groups or priority accounts from receiving the message.
 
 Organizational messages for Adoption Score will initially roll out to Communication, Content Collaboration, Mobility, and more to follow to support all People Experience categories. Check out the [2022 Ignite session](https://ignite.microsoft.com/en-US/sessions/ff17a80f-2fa6-4e52-b92c-745f0ca8d574?source=sessions) for a detailed demonstration and feature description.
 
@@ -87,7 +87,7 @@ Visit [privacy controls for Adoption Score](privacy.md) to understand how to ena
 
 :::image type="content" source="../../media/org-message-adoption-score.png" alt-text="Screenshot: How to enable Organizational Messages in Adoption Score." lightbox="../../media/org-message-adoption-score-expanded.jpg":::
 
-## Getting Started
+## Getting started
 
 In the Microsoft 365 admin center, go to **Reports** \> **Adoption Score.**
 
