@@ -115,7 +115,7 @@ Here are some additional recommendations:
 
 - Use [Microsoft Entra Privileged Identity Management](/entra/id-governance/privileged-identity-management/pim-getting-started) to reduce the number of persistent administrative accounts.
 - [Use privileged access management](/purview/privileged-access-management) to protect your organization from breaches that may use existing privileged admin accounts with standing access to sensitive data or access to critical configuration settings.
-- Create and use separate accounts that are assigned [Microsoft 365 administrator roles](/microsoft-365/admin/add-users/about-admin-roles) *only for administration*. Admins should have their own user account for regular non-administrative use and only use an administrative account when necessary to complete a task associated with their role or job function.
+- Create and use separate accounts that are assigned [Microsoft 365 administrator roles](/entra/identity/role-based-access-control/manage-roles-portal) *only for administration*. Admins should have their own user account for regular non-administrative use and only use an administrative account when necessary to complete a task associated with their role or job function.
 - Follow [best practices](/entra/identity/role-based-access-control/best-practices) for securing privileged accounts in Microsoft Entra ID.
 
 ## Next step
