@@ -64,7 +64,7 @@ Prior to configuring Microsoft Defender XDR to stream data to Event Hubs, ensure
 
    To get your **Event Hub resource ID**, go to your Azure Event Hubs namespace page on [Azure](https://ms.portal.azure.com/) > **Properties** tab > copy the text under **Resource ID**:
 
-   :::image type="content" source="../defender-endpoint/images/event-hub-resource-id.png" alt-text="An Event Hub resource ID" lightbox="../defender-endpoint/images/event-hub-resource-id.png":::
+   :::image type="content" source="../defender-endpoint/media/event-hub-resource-id.png" alt-text="An Event Hub resource ID" lightbox="../defender-endpoint/media/event-hub-resource-id.png":::
 
 8. Go to the [Supported Microsoft Defender XDR event types in event streaming API](supported-event-types.md) to review the support status of event types in the Microsoft 365 Streaming API.
 

@@ -147,7 +147,7 @@ Then, you continue by creating several different types of endpoint security poli
 6. Add scope tags if necessary, then select  **Next**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/ef844f52ec2c0d737ce793f68b5e8408.png" alt-text="The Microsoft Intune admin center8" lightbox="images/ef844f52ec2c0d737ce793f68b5e8408.png":::
+    > :::image type="content" source="media/ef844f52ec2c0d737ce793f68b5e8408.png" alt-text="The Microsoft Intune admin center8" lightbox="media/ef844f52ec2c0d737ce793f68b5e8408.png":::
 
 7. Add test group by clicking on **Select groups to include** and choose your group, then select  **Next**.
 
@@ -198,7 +198,7 @@ Then, you continue by creating several different types of endpoint security poli
 8. Review and create, then select  **Create**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/dfdadab79112d61bd3693d957084b0ec.png" alt-text="The Microsoft Intune admin center17" lightbox="images/dfdadab79112d61bd3693d957084b0ec.png":::
+    > :::image type="content" source="media/dfdadab79112d61bd3693d957084b0ec.png" alt-text="The Microsoft Intune admin center17" lightbox="media/dfdadab79112d61bd3693d957084b0ec.png":::
 
 9. You see the configuration policy you created.
 
@@ -232,7 +232,7 @@ Then, you continue by creating several different types of endpoint security poli
     > For more information, see [Attack surface reduction rules](attack-surface-reduction.md).
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/dd0c00efe615a64a4a368f54257777d0.png" alt-text="The Microsoft Intune admin center21" lightbox="images/dd0c00efe615a64a4a368f54257777d0.png":::
+    > :::image type="content" source="media/dd0c00efe615a64a4a368f54257777d0.png" alt-text="The Microsoft Intune admin center21" lightbox="media/dd0c00efe615a64a4a368f54257777d0.png":::
 
 7. Add Scope Tags as required, then select  **Next**.
 
@@ -301,7 +301,7 @@ Then, you continue by creating several different types of endpoint security poli
 10. View the policy.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/e74f6f6c150d017a286e6ed3dffb7757.png" alt-text="The Microsoft Intune admin center32" lightbox="images/e74f6f6c150d017a286e6ed3dffb7757.png":::
+    > :::image type="content" source="media/e74f6f6c150d017a286e6ed3dffb7757.png" alt-text="The Microsoft Intune admin center32" lightbox="media/e74f6f6c150d017a286e6ed3dffb7757.png":::
 
 ## Validate configuration settings
 
@@ -357,7 +357,7 @@ To confirm that the configuration policy is applied to your test device, follow 
 3. After the services are running on the device, the device appears in Microsoft Defender portal.
 
     > [!div class="mx-imgBorder"]
-    > [![Image of Microsoft Defender portal.](images/df0c64001b9219cfbd10f8f81a273190.png)](images/df0c64001b9219cfbd10f8f81a273190.png#lightbox)
+    > [![Image of Microsoft Defender portal.](media/df0c64001b9219cfbd10f8f81a273190.png)](media/df0c64001b9219cfbd10f8f81a273190.png#lightbox)
 
 ### Confirm next-generation protection
 

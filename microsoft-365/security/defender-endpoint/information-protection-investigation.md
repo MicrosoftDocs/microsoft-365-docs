@@ -50,7 +50,7 @@ Learn how to use data sensitivity labels to prioritize incident investigation.
 
     You can also filter based on **Data sensitivity**
 
-    :::image type="content" source="images/data-sensitivity-filter.png" alt-text="The data sensitivity filter" lightbox="images/data-sensitivity-filter.png":::
+    :::image type="content" source="media/data-sensitivity-filter.png" alt-text="The data sensitivity filter" lightbox="media/data-sensitivity-filter.png":::
 
 3. Open the incident page to further investigate.
 
