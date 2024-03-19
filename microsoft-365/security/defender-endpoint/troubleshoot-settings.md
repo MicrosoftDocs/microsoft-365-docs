@@ -51,7 +51,7 @@ Our current recommendation is as follows:
 
 1. (**Preferred**) Remove conflicting policies in GPO, Configuration Manager, your MDM tools, and/or non-Microsoft management solutions when moving to Defender for Endpoint security settings management or Intune for policy management.
 
-   When policies and settings are configure in multiple tools, in general, here's the order in which they're applied:
+   When policies and settings are configure in multiple tools, in general, here's the order of precedence:
 
    1. Group Policy (GPO)
    2. Microsoft Configuration Manager Co-Management
@@ -64,7 +64,7 @@ Our current recommendation is as follows:
    > [MDMWinsOverGP](/windows/client-management/mdm/policy-csp-controlpolicyconflict) which is a Policy (CSP) does not apply for all settings such as Attack Surface Reduction rules (ASR rules) in Windows 10.
  
 
-Step 2) Find if it's coming through a Policy or MDM or a local setting.
+2. Find if Microsoft Defender Antivirus settings are coming through a Policy or MDM or a local setting.
 
 ||Microsoft Defender Antivirus setting registry location | What tools?|
 | -------- | -------- | -------- |
