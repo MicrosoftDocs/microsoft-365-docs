@@ -12,7 +12,10 @@ ms.date: 1/22/2024
 ms.localizationpriority: medium
 ms.reviewer: nehabha
 f1.keywords: NOCSH
-ms.collection: essentials-accountability
+ms.collection: 
+ - essentials-security
+ - essentials-privacy
+ - essentials-compliance
 ms.custom:
 ---
 

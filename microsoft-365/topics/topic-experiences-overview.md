@@ -20,6 +20,7 @@ ms.collection:
   - highpri
   - Tier1
   - essentials-overview
+  - essentials-navigation
 ms.localizationpriority:  medium
 description: Learn about how to use Topics in your organization.
 ---

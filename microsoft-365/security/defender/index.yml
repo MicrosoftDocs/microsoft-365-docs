@@ -7,14 +7,13 @@ metadata:
   title: Microsoft Defender XDR documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Learn about the robust security solutions in Microsoft Defender XDR so that you can better protect your enterprise across attack surfaces. # Required; article description that is displayed in search results. < 160 chars.
   services: office-365-security-compliance
-  ms.service: microsoft-365-enterprise
-  ms.subservice: m365d
+  ms.service: defender-xdr
   ms.topic: landing-page # Required
-  ms.collection: m365-security
+  ms.collection: essentials-navigation
   ms.custom: intro-hub-or-landing
-  author: mjcaparas #Required; your GitHub user alias, with correct capitalization.
-  ms.author: macapara #Required; microsoft alias of author; optional team alias.
-  ms.date: 09/15/2022
+  author: dansimp #Required; your GitHub user alias, with correct capitalization.
+  ms.author: dansimp #Required; microsoft alias of author; optional team alias.
+  ms.date: 01/26/2024
   ms.localizationpriority: high
     
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new

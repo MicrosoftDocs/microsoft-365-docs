@@ -66,6 +66,8 @@
           items: 
             - name: Microsoft 365 endpoints
               href: microsoft-365-endpoints.md
+            - name: Unified cloud.microsoft domain for Microsoft 365 apps
+              href: cloud-microsoft-domain.md
             - name: Managing Office 365 endpoints
               href: managing-office-365-endpoints.md
             - name: Worldwide endpoints
@@ -88,6 +90,22 @@
           href: network-planning-and-performance.md
         - name: Monitor connectivity
           href: monitor-connectivity.md
+        - name: Network Connectivity in Microsoft 365 Admin center
+          items:
+            - name: Network Connectivity in Microsoft 365 Admin center
+              href: office-365-network-mac-perf-overview.md
+            - name: Microsoft 365 Network Assessment
+              href: office-365-network-mac-perf-score.md
+            - name: Microsoft 365 Network Insights
+              href: office-365-network-mac-perf-insights.md
+            - name: Microsoft 365 Network Provider Information
+              href: office-365-network-mac-perf-nppux.md
+            - name: Microsoft 365 Network Provider Assessments
+              href: office-365-network-mac-perf-nppdata.md
+            - name: Microsoft 365 Network Provider Details
+              href: office-365-network-mac-perf-nppdetails.md
+            - name: Microsoft 365 Network connectivity test tool
+              href: office-365-network-mac-perf-onboarding-tool.md
     - name: Microsoft 365 Networking Partner Program
       href: microsoft-365-networking-partner-program.md
 
@@ -288,6 +306,8 @@
               href: m365-dr-workload-spo.md
             - name: Microsoft Teams
               href: m365-dr-workload-teams.md
+            - name: Microsoft Copilot for Microsoft 365
+              href: m365-dr-workload-copilot.md
             - name: Microsoft Defender for Office P1
               href: m365-dr-workload-mdo-p1.md
             - name: Office for the Web
@@ -378,60 +398,6 @@
               href: fix-problems-with-directory-synchronization.md
             - name: Turn it off
               href: turn-off-directory-synchronization.md
-
-- name: Client and server software
-  items: 
-    - name: Roadmap
-      href: client-server-software-roadmap-microsoft-365.md
-    - name: Architectural models for SharePoint, Exchange, Skype for Business, and Lync
-      href: architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md
-    - name: Plan your upgrade
-      href: plan-upgrade-previous-versions-office.md
-      items: 
-         - name: Office 2013
-           items:
-            - name: Upgrade from Office 2013 clients and servers
-              href: upgrade-office-2013-clients-servers.md
-            - name: Office 2013 desktop
-              href: /DeployOffice/endofsupport/plan-upgrade-older-versions-office
-            - name: Exchange Server 2013
-              href: exchange-2013-end-of-support.md  
-            - name: SharePoint 2013
-              href: upgrade-from-sharepoint-2013.md
-            - name: Lync Server 2013
-              href: upgrade-from-lync-2013.md
-            - name: Project Server 2013
-              href: project-server-2013-end-of-support.md
-         - name: Office 2010
-           items: 
-            - name: Upgrade from Office 2010 servers and clients
-              href: upgrade-from-office-2010-servers-and-products.md
-            - name: Office 2010 desktop
-              href: /DeployOffice/endofsupport/plan-upgrade-older-versions-office
-            - name: Exchange 2010
-              href: exchange-2010-end-of-support.md
-            - name: SharePoint 2010
-              href: upgrade-from-sharepoint-2010.md
-            - name: Lync Server 2010
-              href: /skypeforbusiness/plan-your-deployment/upgrade
-            - name: Project Server 2010
-              href: project-server-2010-end-of-support.md
-         - name: Office 2007
-           items: 
-            - name: Upgrade from Office 2007 servers and clients
-              href: upgrade-from-office-2007-servers-and-products.md
-            - name: Office 2007 desktop
-              href: /DeployOffice/endofsupport/plan-upgrade-older-versions-office
-            - name: Exchange 2007
-              href: exchange-2007-end-of-support.md
-            - name: SharePoint 2007
-              href: sharepoint-2007-end-of-support.md
-            - name: Office Communications Server
-              href: /skypeforbusiness/plan-your-deployment/upgrade
-            - name: PerformancePoint Server 2007
-              href: pps-2007-end-of-support.md
-            - name: Project Server 2007
-              href: project-server-2007-end-of-support.md
 
 - name: Compliance
   href: ../compliance/index.yml
@@ -635,61 +601,6 @@
 
 - name: Windows and Office 365 deployment lab kit
   href: modern-desktop-deployment-and-management-lab.md
-
-- name: Test Lab Guides
-  href: m365-enterprise-test-lab-guides.md
-  items: 
-    - name: Base configuration
-      items: 
-        - name: Lightweight
-          href: lightweight-base-configuration-microsoft-365-enterprise.md
-        - name: Simulated enterprise
-          href: simulated-ent-base-configuration-microsoft-365-enterprise.md
-    - name: Identity
-      items: 
-        - name: Password hash synchronization
-          href: password-hash-sync-m365-ent-test-environment.md
-        - name: Pass-through authentication
-          href: pass-through-auth-m365-ent-test-environment.md
-        - name: Federated authentication
-          href: federated-identity-for-your-microsoft-365-dev-test-environment.md
-        - name: Microsoft Entra seamless single sign-on
-          href: single-sign-on-m365-ent-test-environment.md
-        - name: Multifactor authentication
-          href: multi-factor-authentication-microsoft-365-test-environment.md
-        - name: Protect global administrator accounts
-          href: protect-global-administrator-accounts-microsoft-365-test-environment.md
-        - name: Password writeback
-          href: password-writeback-m365-ent-test-environment.md
-        - name: Password reset
-          href: password-reset-m365-ent-test-environment.md
-        - name: Automatic licensing and group membership
-          href: automate-licenses-group-membership-microsoft-365-test-environment.md
-        - name: Microsoft Entra ID Protection
-          href: azure-ad-identity-protection-microsoft-365-test-environment.md
-        - name: Identity and device access
-          href: identity-device-access-m365-test-environment.md
-          items: 
-            - name: Cloud-only
-              href: cloud-only-prereqs-m365-test-environment.md
-            - name: Password hash sync
-              href: phs-prereqs-m365-test-environment.md
-            - name: Pass-through authentication
-              href: pta-prereqs-m365-test-environment.md
-    - name: Mobile device management
-      items: 
-        - name: Enroll iOS and Android devices
-          href: enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md
-        - name: Device compliance policies
-          href: mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md
-    - name: Information protection
-      items: 
-        - name: Increased Microsoft 365 security
-          href: increased-o365-security-microsoft-365-enterprise-dev-test-environment.md
-        - name: Data classification
-          href: data-classification-microsoft-365-enterprise-dev-test-environment.md
-        - name: Privileged access management
-          href: privileged-access-microsoft-365-enterprise-dev-test-environment.md
 
 - name: Contoso case study
   href: contoso-case-study.md

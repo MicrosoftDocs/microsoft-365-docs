@@ -49,7 +49,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `AccountName` | `string` | User name of the account |
 | `AccountDomain` [*](#mdi-only) | `string` | Domain of the account |
 | `Type` [*](#mdi-only) | `string` | Type of record |
-| `DistinguishedName` [*](#mdi-only) | string | The user's [distinguished name](/windows/desktop/ldap/distinguished-names) |
+| `DistinguishedName` [*](#mdi-only) | string | The user's [distinguished name](/previous-versions/windows/desktop/ldap/distinguished-names) |
 | `CloudSid` | `string` | Cloud security identifier of the account |
 | `GivenName` | `string` | Given name or first name of the account user |
 | `Surname` | `string` | Surname, family name, or last name of the account user |

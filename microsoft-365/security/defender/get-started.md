@@ -19,6 +19,7 @@ ms.collection:
   - m365solution-getstarted
   - highpri
   - tier1
+  - essentials-overview
 ms.custom: intro-get-started
 ms.topic: conceptual
 ms.date: 09/21/2023

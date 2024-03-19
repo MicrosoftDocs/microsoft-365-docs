@@ -1,7 +1,7 @@
 ---
 title: OneDrive Cross-Tenant User Data Migration Step 7
-ms.author: jhendr
-author: JoanneHendrickson
+ms.author: jtremper
+author: MicrosoftHeidi
 manager: serdars
 ms.date: 10/13/2023
 recommendations: true

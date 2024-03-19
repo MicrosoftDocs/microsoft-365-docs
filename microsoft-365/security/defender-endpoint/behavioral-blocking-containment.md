@@ -1,11 +1,9 @@
 ---
 title: Behavioral blocking and containment
 description: Learn about behavioral blocking and containment capabilities at Microsoft Defender for Endpoint
-keywords: Microsoft Defender for Endpoint, EDR in block mode, passive mode blocking
-ms.pagetype: security
-author: denisebmsft
-ms.author: deniseb
-manager: dansimp
+author: siosulli
+ms.author: siosulli
+manager: deniseb
 ms.reviewer: shwetaj
 audience: ITPro
 ms.topic: conceptual
@@ -17,7 +15,7 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 02/29/2024
 ---
 
 # Behavioral blocking and containment
@@ -36,7 +34,7 @@ ms.date: 12/18/2020
 
 ## Overview
 
-Today's threat landscape is overrun by [fileless malware](/windows/security/threat-protection/intelligence/fileless-threats) and that lives off the land, highly polymorphic threats that mutate faster than traditional solutions can keep up with, and human-operated attacks that adapt to what adversaries find on compromised devices. Traditional security solutions aren't sufficient to stop such attacks; you need artificial intelligence (AI) and device learning (ML) backed capabilities, such as behavioral blocking and containment, included in [Defender for Endpoint](/windows/security).
+Today's threat landscape is overrun by [fileless malware](/microsoft-365/security/defender-endpoint/malware/fileless-threats) and that lives off the land, highly polymorphic threats that mutate faster than traditional solutions can keep up with, and human-operated attacks that adapt to what adversaries find on compromised devices. Traditional security solutions aren't sufficient to stop such attacks; you need artificial intelligence (AI) and device learning (ML) backed capabilities, such as behavioral blocking and containment, included in [Defender for Endpoint](/windows/security).
 
 Behavioral blocking and containment capabilities can help identify and stop threats, based on their behaviors and process trees even when the threat has started execution. Next-generation protection, EDR, and Defender for Endpoint components and features work together in behavioral blocking and containment capabilities.
 
@@ -52,7 +50,7 @@ With these capabilities, more threats can be prevented or blocked, even if they 
 
 The following image shows an example of an alert that was triggered by behavioral blocking and containment capabilities:
 
-:::image type="content" source="images/blocked-behav-alert.png" alt-text="The Alerts page with an alert through behavioral blocking and containment" lightbox="images/blocked-behav-alert.png":::
+:::image type="content" source="media/blocked-behav-alert.png" alt-text="The Alerts page with an alert through behavioral blocking and containment" lightbox="media/blocked-behav-alert.png":::
 
 ## Components of behavioral blocking and containment
 
@@ -95,7 +93,7 @@ Behavior-based device-learning models in Defender for Endpoint caught and stoppe
 
 While the attack was detected and stopped, alerts, such as an "initial access alert," were triggered and appeared in the [Microsoft Defender portal](/microsoft-365/security/defender/microsoft-365-defender).
 
-:::image type="content" source="images/behavblockcontain-initialaccessalert.png" alt-text="Initial access alert in the Microsoft Defender portal" lightbox="images/behavblockcontain-initialaccessalert.png":::
+:::image type="content" source="media/behavblockcontain-initialaccessalert.png" alt-text="Initial access alert in the Microsoft Defender portal" lightbox="media/behavblockcontain-initialaccessalert.png":::
 
 This example shows how behavior-based device-learning models in the cloud add new layers of protection against attacks, even after they have started running.
 
@@ -109,7 +107,7 @@ The threat turned out to be malware; it was a new, not-seen-before variant of a 
 
 Minutes after the alert was triggered, the file was analyzed, and confirmed to be malicious. Its process was stopped and blocked, as shown in the following image:
 
-:::image type="content" source="images/Artifactblockedjuicypotato.png" alt-text="Artifact blocked"  lightbox="images/Artifactblockedjuicypotato.png":::
+:::image type="content" source="media/Artifactblockedjuicypotato.png" alt-text="Artifact blocked"  lightbox="media/Artifactblockedjuicypotato.png":::
 
 A few minutes after the artifact was blocked, multiple instances of the same file were blocked on the same device, preventing more attackers or other malware from deploying on the device.
 

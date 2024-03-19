@@ -10,7 +10,7 @@ ms.topic: article
 ms.custom: 
 ms.service: whiteboard
 search.appverid: MET150
-ms.collection: 
+ms.collection: essentials-manage
 ms.localizationpriority: medium
 description: Learn about data retention for Microsoft Whiteboard in Azure and OneDrive for Business.
 ---

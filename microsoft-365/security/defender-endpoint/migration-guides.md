@@ -1,9 +1,9 @@
 ---
 title: Migration and setup guides to move to Microsoft Defender for Endpoint
 description: Learn how to make the switch from a non-Microsoft Defender XDR solution to Microsoft Defender for Endpoint
-author: denisebmsft
-ms.author: deniseb
-manager: dansimp
+author: siosulli
+ms.author: siosulli
+manager: deniseb
 audience: ITPro
 ms.topic: conceptual
 ms.service: defender-endpoint
@@ -37,7 +37,7 @@ If you're considering moving to Defender for Endpoint, we have guidance to help.
 |You don't have an endpoint protection solution in place yet, and you want to know more about Defender for Endpoint. You want to see how Defender for Endpoint works before rolling it out in your environment.|[Microsoft Defender for Endpoint evaluation lab](evaluation-lab.md)|
 |You already have Defender for Endpoint, and you want some help getting everything set up and configured.|[Microsoft Defender for Endpoint deployment guide](deployment-phases.md)|
 |You're planning to switch from a non-Microsoft endpoint protection solution to Defender for Endpoint, which includes Microsoft Defender Antivirus. You want to get an overview of the migration process and how to make the switch.|[Make the switch to Microsoft Defender for Endpoint](switch-to-mde-overview.md)|
-|You've already migrated or onboarded to Defender for Endpoint. You want some help with next steps, such as managing your security settings, configuring more features, or fine-tuning your security policies.|[Manage Microsoft Defender for Endpoint, post-migration](manage-mde-post-migration.md)|
+|You've already migrated or onboarded to Defender for Endpoint. You want some help with next steps, such as managing your security settings, configuring more features, or fine-tuning your security policies.| [Configure general Defender for Endpoint settings](preferences-setup.md) |
 | You were previously using Microsoft Defender for Endpoint Server, and now you're moving your servers to Microsoft Defender for Cloud. | [Migrating servers from Microsoft Defender for Endpoint to Microsoft Defender for Cloud](migrating-mde-server-to-cloud.md) |
 
 
@@ -52,4 +52,5 @@ Let us know what you think! Submit your feedback at the bottom of the page. We'l
 - [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
 - [Microsoft 365 Business Premium](../../business-premium/m365bp-overview.md)
 - [Microsoft Defender for Business](../defender-business/mdb-overview.md)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

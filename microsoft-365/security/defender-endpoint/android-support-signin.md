@@ -1,15 +1,11 @@
 ---
 title: Troubleshoot issues on Microsoft Defender for Endpoint on Android
 description: Troubleshoot issues for Microsoft Defender for Endpoint on Android
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mde, android, cloud, connectivity, communication
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -61,7 +57,7 @@ from Google Play Store and try again.
 
 **Sign in failed:** *Invalid license, contact administrator*
 
-:::image type="content" source="images/920e433f440fa1d3d298e6a2a43d4811.png" alt-text="The directive contact details in the sign-in page of the Microsoft Defender 365 portal" lightbox="images/920e433f440fa1d3d298e6a2a43d4811.png":::
+:::image type="content" source="media/920e433f440fa1d3d298e6a2a43d4811.png" alt-text="The directive contact details in the sign-in page of the Microsoft Defender 365 portal" lightbox="media/920e433f440fa1d3d298e6a2a43d4811.png":::
 
 **Message:** *Invalid license, contact administrator*
 
@@ -86,7 +82,7 @@ Phishing websites impersonate trustworthy websites for obtaining your personal o
 Phishing and harmful web threats detected by Defender for Endpoint
 for Android aren't blocked on some Xiaomi devices. The following functionality doesn't work on these devices.
 
-:::image type="content" source="images/0c04975c74746a5cdb085e1d9386e713.png" alt-text="A site-unsafe notification message" lightbox="images/0c04975c74746a5cdb085e1d9386e713.png":::
+:::image type="content" source="media/0c04975c74746a5cdb085e1d9386e713.png" alt-text="A site-unsafe notification message" lightbox="media/0c04975c74746a5cdb085e1d9386e713.png":::
 
 **Cause:**
 
@@ -94,7 +90,7 @@ Xiaomi devices include a new permission model. This permission model prevents De
 
 Xiaomi devices permission: "Display pop-up windows while running in the background."
 
-:::image type="content" source="images/6e48e7b29daf50afddcc6c8c7d59fd64.png" alt-text="The pop-up setting pane in the Microsoft Defender 365 portal" lightbox="images/6e48e7b29daf50afddcc6c8c7d59fd64.png":::
+:::image type="content" source="media/6e48e7b29daf50afddcc6c8c7d59fd64.png" alt-text="The pop-up setting pane in the Microsoft Defender 365 portal" lightbox="media/6e48e7b29daf50afddcc6c8c7d59fd64.png":::
 
 **Solution:**
 

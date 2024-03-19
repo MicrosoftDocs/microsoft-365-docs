@@ -1,8 +1,8 @@
 ---
 title: OneDrive Cross-tenant OneDrive migration Step 3
-ms.author: jhendr
-author: JoanneHendrickson
-manager: serdars
+ms.author: heidip
+author: MicrosoftHeidi
+manager: jtremper
 ms.date: 10/13/2023
 recommendations: true
 audience: ITPro
@@ -18,7 +18,7 @@ description: "Step 3 of the OneDrive Cross-tenant migration feature"
 ---
 # Step 3: Verifying trust
 
-This is Step 3 in a solution designed to complete a Cross-tenant OneDrive migration. To learn more, see [Cross-tenant OneDrive migration overview](cross-tenant-onedrive-migration.md).
+This article details Step 3 in a solution designed to complete a Cross-tenant OneDrive migration. To learn more, see [Cross-tenant OneDrive migration overview](cross-tenant-onedrive-migration.md).
 
 - Step 1: [Connect to the source and the target tenants](cross-tenant-onedrive-migration-step1.md)
 - Step 2: [Establish trust between the source and the target tenant](cross-tenant-onedrive-migration-step2.md) 

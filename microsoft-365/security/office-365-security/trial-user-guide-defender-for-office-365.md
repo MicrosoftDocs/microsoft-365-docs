@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 audience: Admin
 ms.topic: conceptual
 ms.collection: 
@@ -137,18 +137,19 @@ Watch this video to learn more: [Detect and respond to compromise in Microsoft D
 
 #### Use Threat Explorer to investigate malicious email
 
-Defender for Office 365 enables you to investigate activities that put people in your organization at risk and to take action to protect your organization. You can do this using [Threat Explorer](threat-explorer-about.md).
+Defender for Office 365 enables you to investigate activities that put people in your organization at risk and to take action to protect your organization. You can do this using [Threat Explorer (Explorer)](threat-explorer-real-time-detections-about.md):
 
-- [Find suspicious email that was delivered](investigate-malicious-email-that-was-delivered.md#find-suspicious-email-that-was-delivered): Find and delete messages, identify the IP address of a malicious email sender, or start an incident for further investigation.
-- [Check the delivery action and location](investigate-malicious-email-that-was-delivered.md#check-the-delivery-action-and-location): This check lets you know the location of problem email messages.
-- [View the timeline of your email](investigate-malicious-email-that-was-delivered.md#view-the-timeline-of-your-email): Simply hunting for your security operations team.
+- [Find suspicious email that was delivered](threat-explorer-investigate-delivered-malicious-email.md#find-suspicious-email-that-was-delivered): Find and delete messages, identify the IP address of a malicious email sender, or start an incident for further investigation.
+- [Email security scenarios in Threat Explorer and Real-time detections](threat-explorer-threat-hunting.md#email-security-scenarios-in-threat-explorer-and-real-time-detections)
+
+<!--- - [View the timeline of your email](threat-explorer-investigate-delivered-malicious-email.md#view-the-timeline-of-your-email): Simply hunting for your security operations team. --->
 
 #### See campaigns targeting your organization
 
 See the bigger picture with Campaign Views in Defender for Office 365, which gives you a view of the attack campaigns targeting your organization and the impact they have on your users.
 
 - [Identify campaigns](campaigns.md#what-is-a-campaign) targeting your users.
-- [Visualize the scope](campaigns.md#campaigns-page-in-the-microsoft-365-defender-portal) of the attack.
+- [Visualize the scope](campaigns.md#campaigns-page-in-the-microsoft-defender-portal) of the attack.
 - [Track user interaction](campaigns.md#campaign-details) with these messages.
 
   :::image type="content" source="../../media/mdo-trial-playbook-campaign-details.png" alt-text="The Campaign details in the Microsoft Defender portal." lightbox="../../media/mdo-trial-playbook-campaign-details.png":::
@@ -218,11 +219,12 @@ Use the reporting capabilities in Defender for Office 365 to get more details ab
 
 #### Use Threat Explorer to investigate malicious email in auditing mode
 
-Defender for Office 365 enables you to investigate activities that put people in your organization at risk and to take action to protect your organization. You can do this using [Threat Explorer](threat-explorer-about.md).
+Defender for Office 365 enables you to investigate activities that put people in your organization at risk and to take action to protect your organization. You can do this using [Threat Explorer (Explorer)](threat-explorer-real-time-detections-about.md):
 
-- [Find suspicious email that was delivered](investigate-malicious-email-that-was-delivered.md#find-suspicious-email-that-was-delivered): Find and delete messages, identify the IP address of a malicious email sender, or start an incident for further investigation.
-- [Check the delivery action and location](investigate-malicious-email-that-was-delivered.md#check-the-delivery-action-and-location): This check lets you know the location of problem email messages.
-- [View the timeline of your email](investigate-malicious-email-that-was-delivered.md#view-the-timeline-of-your-email): Simply hunting for your security operations team.
+- [Find suspicious email that was delivered](threat-explorer-investigate-delivered-malicious-email.md#find-suspicious-email-that-was-delivered): Find and delete messages, identify the IP address of a malicious email sender, or start an incident for further investigation.
+- [Email security scenarios in Threat Explorer and Real-time detections](threat-explorer-threat-hunting.md#email-security-scenarios-in-threat-explorer-and-real-time-detections)
+
+<!--- - [View the timeline of your email](threat-explorer-investigate-delivered-malicious-email.md#view-the-timeline-of-your-email): Simply hunting for your security operations team. --->
 
 #### Convert to Standard Protection at the end of evaluation period
 

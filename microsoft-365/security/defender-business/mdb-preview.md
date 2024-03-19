@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: Admin
 ms.collection:
 - m365-security

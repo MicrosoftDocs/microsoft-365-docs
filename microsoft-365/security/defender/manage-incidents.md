@@ -124,7 +124,7 @@ All comments are added to the historical events of the incident. You can see the
 
 The **Activity log** displays a list of all the comments and actions performed on the incident, known as *Audits and comments*. All changes made to the incident, whether by a user or by the system, are recorded in the activity log. The activity log is available from the **Activity log** option on the incident page or on the incident side pane.
 
-:::image type="content" source="../../media/incidents-queue/fig3-manageincidents.png" alt-text="Highlighting the activity log option from the incident page in the Microsoft Defender portal" lightbox="../../media/incidents-queue/fig3-manageincidents.png":::
+:::image type="content" source="../../media/incidents-queue/fig3-manageincidents-new.png" alt-text="Highlighting the activity log option from the incident page in the Microsoft Defender portal" lightbox="../../media/incidents-queue/fig3-manageincidents-new.png":::
 
 You can filter the activities within the log by comments and actions. Click the **Content: Audits, Comments** then select the content type to filter activities. Here's an example.
 

@@ -9,11 +9,10 @@ metadata:
   description: Learn about Microsoft Copilot for Microsoft 365 and how your organization can use this copilot for work. # Required; article description that is displayed in search results. < 160 chars.
   ms.service: microsoft-365-copilot 
   ms.topic: hub-page # Required
-  ms.collection: essentials-hub-or-landing # Optional; Remove if not applicable.
+  ms.collection: essentials-navigation # Optional; Remove if not applicable.
   author: samanro #Required; your GitHub user alias, with correct capitalization.
   ms.author: samanro #Required; microsoft alias of author; optional team alias.
   ms.date: 09/21/2023 #Required; mm/dd/yyyy format.
-
 
 
 # additionalContent section (Optional; Remove if not applicable.)
@@ -37,6 +36,8 @@ additionalContent:
               url: /MicrosoftSearch/semantic-index-for-copilot
             - text: Copilot for Microsoft 365 Service Description
               url: /office365/servicedescriptions/office-365-platform-service-description/microsoft-365-copilot/
+            - text: Copilot for Microsoft 365 - best practices with SharePoint
+              url: /sharepoint/sharepoint-copilot-best-practices/
         # Card
         - title: Get started with Copilot for Microsoft 365
           links:
@@ -96,11 +97,9 @@ additionalContent:
 #            - text: Copilot for Microsoft 365 - Security & Privacy
 #              url: index.yml
         # Card
-        - title: End user content about Copilot for Microsoft 365
+        - title: End user Copilot resources
           links:
-            - text: Copilot for Microsoft 365 capabilities
-              url: https://support.microsoft.com/copilot
-            - text: Copilot for Microsoft 365 lab
+            - text: Copilot Lab
               url: https://copilot.cloud.microsoft
 #            - text: Use additional data sources with Microsoft 365 Chat
 #              url: https://go.microsoft.com/fwlink/?linkid=2250210

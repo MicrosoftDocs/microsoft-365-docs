@@ -1,16 +1,13 @@
 ---
 title: What's new in Microsoft Defender for Endpoint on iOS
 description: Learn about the major changes for previous versions of Microsoft Defender for Endpoint on iOS.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, macos, whatsnew
 ms.service: defender-endpoint
-ms.mktglfcycl: security
-ms.sitesec: library
-ms.pagetype: security
-ms.author: sunasing
-author: sunasing
+ms.author: siosulli
+author: siosulli
+ms.reviewer: sunasing
 ms.localizationpriority: medium
-ms.date: 1/5/2024
-manager: sunasing
+ms.date: 03/04/2024
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -31,6 +28,10 @@ search.appverid: met150
 - [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+> [!IMPORTANT]
+>  ## Network Protection – Update
+> Network protection feature will soon be enabled by default for all users. The update will be rolled out in a phased manner. As a result, users will be able to see Network Protection Card in the Defender app along with App Protection and Web Protection. Users are also required to provide Location permission to complete the set up. For more information, see [Network Protection](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-network-protection).
 
 ## Device Tagging
 

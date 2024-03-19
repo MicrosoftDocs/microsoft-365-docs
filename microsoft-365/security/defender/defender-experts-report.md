@@ -19,6 +19,7 @@ audience: ITPro
 ms.collection: 
 - m365-security 
 - tier1
+- essentials-manage
 ms.topic: conceptual
 ms.date: 10/17/2023
 ---

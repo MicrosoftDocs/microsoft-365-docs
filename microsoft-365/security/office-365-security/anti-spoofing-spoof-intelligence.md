@@ -4,7 +4,7 @@ f1.keywords:
   - NOCSH
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 audience: Admin
 ms.topic: how-to
 ms.localizationpriority: medium
@@ -74,15 +74,13 @@ The rest of this article explains how to use the spoof intelligence insight in t
       - **Organization Management**
       - **Security Administrator** <u>and</u> **View-Only Configuration** or **View-Only Organization Management**.
     - _Read-only access to the spoof intelligence insight_: Membership in the **Global Reader**, **Security Reader**, or **View-Only Organization Management** role groups.
-  - [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
+  - [Microsoft Entra permissions](/entra/identity/role-based-access-control/manage-roles-portal): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 - For our recommended settings for anti-phishing policies, see [EOP anti-phishing policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings).
 
 - You enable and disable spoof intelligence in anti-phishing policies in EOP and Microsoft Defender for Office 365. Spoof intelligence is enabled by default. For more information, see [Configure anti-phishing policies in EOP](anti-phishing-policies-eop-configure.md) or [Configure anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-mdo-configure.md).
 
 - For our recommended settings for spoof intelligence, see [EOP anti-phishing policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings).
-
-<a name='find-the-spoof-intelligence-insight-in-the-microsoft-365-defender-portal'></a>
 
 ## Find the spoof intelligence insight in the Microsoft Defender portal
 
@@ -121,7 +119,7 @@ On the **Spoof intelligence insight** page, you can sort the entries by clicking
   - **Internal**: The spoofed sender is in a domain that belongs to your organization (an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)).
   - **External**: The spoofed sender is in an external domain.
 - **Action**: This value is **Allowed** or **Blocked**:
-  - **Allowed**: The domain failed explicit email authentication checks [SPF](email-authentication-anti-spoofing.md), [DKIM](email-authentication-dkim-configure.md), and [DMARC](email-authentication-dmarc-configure.md). However, the domain passed our implicit email authentication checks ([composite authentication](email-authentication-about.md#composite-authentication)). As a result, no anti-spoofing action was taken on the message.
+  - **Allowed**: The domain failed explicit email authentication checks [SPF](email-authentication-spf-configure.md), [DKIM](email-authentication-dkim-configure.md), and [DMARC](email-authentication-dmarc-configure.md). However, the domain passed our implicit email authentication checks ([composite authentication](email-authentication-about.md#composite-authentication)). As a result, no anti-spoofing action was taken on the message.
   - **Blocked**: Messages from the combination of the spoofed domain _and_ sending infrastructure are marked as bad by spoof intelligence. The action that's taken on the spoofed messages is controlled by the default anti-phishing policy or custom anti-phishing policies (the default value is **Move message to Junk Email folder**). For more information, see [Configure anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-mdo-configure.md).
 
 To change the list of spoofed senders from normal to compact spacing, select :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false"::: **Compact list**.
@@ -144,7 +142,7 @@ When you select a spoof detection from the list by clicking anywhere in the row 
 - **Why did we catch this?** section: Why we detected this sender as spoof, and what you can do for further information.
 - **Domain summary** section: Includes the same information from the main **Spoof intelligence insight** page.
 - **WhoIs data** section: Technical information about the sender's domain.
-- **Explorer investigation** section: In Defender for Office 365 organization, this section contains a link to open [Threat Explorer](threat-explorer-about.md) to see additional details about the sender on the **Phish** tab.
+- **Explorer investigation** section: In Defender for Office 365 organization, this section contains a link to open [Threat Explorer](threat-explorer-real-time-detections-about.md) to see additional details about the sender on the **Phish** tab.
 - **Similar Emails** section: Contains the following information about the spoof detection:
   - **Date**
   - **Subject**
@@ -200,8 +198,9 @@ Be diligent about spoofing and phishing protection. Here are related ways to che
 
 - Check the **Spoof Mail Report**. Use this report often to view and help manage spoofed senders. For information, see [Spoof Detections report](reports-email-security.md#spoof-detections-report).
 
-- Review your Sender Policy Framework (SPF) configuration. For a quick introduction to SPF and to get it configured quickly, see [Set up SPF in Microsoft 365 to help prevent spoofing](email-authentication-spf-configure.md). For a more in-depth understanding of how Microsoft 365 uses SPF, or for troubleshooting or non-standard deployments such as hybrid deployments, start with [How Microsoft 365 uses Sender Policy Framework (SPF) to prevent spoofing](email-authentication-anti-spoofing.md).
-
-- Review your DomainKeys Identified Mail (DKIM) configuration. You should use DKIM in addition to SPF and DMARC to help prevent attackers from sending messages that look like they are coming from your domain. DKIM lets you add a digital signature to email messages in the message header. For information, see [Use DKIM to validate outbound email sent from your custom domain in Office 365](email-authentication-dkim-configure.md).
-
-- Review your Domain-based Message Authentication, Reporting, and Conformance (DMARC) configuration. Implementing DMARC with SPF and DKIM provides additional protection against spoofing and phishing email. DMARC helps receiving mail systems determine what to do with messages sent from your domain that fail SPF or DKIM checks. For information, see [Use DMARC to validate email in Office 365](email-authentication-dmarc-configure.md).
+- Review your SPF, DKIM, and DMARC configuration. For more information, see the following articles:
+  - [Email authentication in Microsoft 365](email-authentication-about.md)
+  - [Set up SPF to help prevent spoofing](email-authentication-spf-configure.md)
+  - [Use DKIM to validate outbound email sent from your custom domain](email-authentication-dkim-configure.md)
+  - [Use DMARC to validate email](email-authentication-dmarc-configure.md)
+  - [Configure trusted ARC sealers](email-authentication-arc-configure.md)

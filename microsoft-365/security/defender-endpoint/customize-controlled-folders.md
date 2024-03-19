@@ -1,14 +1,13 @@
 ---
 title: Customize controlled folder access
 description: Add other folders that should be protected by controlled folder access, or allow apps that are incorrectly blocking changes to important files.
-keywords: Controlled folder access, windows 10, windows 11, windows defender, ransomware, protect, files, folders, customize, add folder, add app, allow, add executable
 ms.service: defender-endpoint
 ms.localizationpriority: medium
 audience: ITPro
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 ms.reviewer: dbodorin, vladiso, nixanm, anvascon
-manager: dansimp
+manager: deniseb
 ms.subservice: asr
 ms.topic: how-to
 ms.collection: 
@@ -93,7 +92,7 @@ You can use the Windows Security app, Group Policy, PowerShell cmdlets, or mobil
     ```
 3. Repeat step 2 for each folder that you want to protect. Folders that are protected are visible in the Windows Security app.
 
-   :::image type="content" source="images/cfa-allow-folder-ps.png" alt-text="The PowerShell window with cmdlet shown" lightbox="images/cfa-allow-folder-ps.png":::
+   :::image type="content" source="media/cfa-allow-folder-ps.png" alt-text="The PowerShell window with cmdlet shown" lightbox="media/cfa-allow-folder-ps.png":::
 
 > [!IMPORTANT]
 > Use `Add-MpPreference` to append or add apps to the list and not `Set-MpPreference`. Using the `Set-MpPreference` cmdlet will overwrite the existing list.
@@ -123,7 +122,7 @@ An allowed application or service only has write access to a controlled folder a
 
 4. Select **Add an allowed app** and follow the prompts to add apps.
 
-   :::image type="content" source="images/cfa-allow-app.png" alt-text="The Add an allowed app button" lightbox="images/cfa-allow-app.png":::
+   :::image type="content" source="media/cfa-allow-app.png" alt-text="The Add an allowed app button" lightbox="media/cfa-allow-app.png":::
 
 ### Use Group Policy to allow specific apps
 
@@ -154,7 +153,7 @@ An allowed application or service only has write access to a controlled folder a
 
    Continue to use `Add-MpPreference -ControlledFolderAccessAllowedApplications` to add more apps to the list. Apps added using this cmdlet will appear in the Windows Security app.
 
-   :::image type="content" source="images/cfa-allow-app-ps.png" alt-text="The PowerShell cmdlet to allow an application" lightbox="images/cfa-allow-app-ps.png":::
+   :::image type="content" source="media/cfa-allow-app-ps.png" alt-text="The PowerShell cmdlet to allow an application" lightbox="media/cfa-allow-app-ps.png":::
 
 > [!IMPORTANT]
 > Use `Add-MpPreference` to append or add apps to the list. Using the `Set-MpPreference` cmdlet will overwrite the existing list.

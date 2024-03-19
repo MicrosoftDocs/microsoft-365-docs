@@ -1,8 +1,8 @@
 ---
 title: Why do I need Microsoft Defender for Office 365?
-ms.author: tracyp
-author: msfttracyp
-manager: dansimp
+ms.author: chrisda
+author: chrisda
+manager: deniseb
 audience: Admin
 ms.topic: conceptual
 ms.localizationpriority: high
@@ -39,7 +39,7 @@ For email threats that are identified after the fact, Zero-hour autopurge (ZAP) 
 
 Defender for Office 365 safeguards organizations against malicious threats by providing admins and SecOps teams a wide range of capabilities. Users, admins, and SecOps personnel benefit from these features from the beginning of the organization. For example:
 
-- **[Preset security policies can configure everything for you](preset-security-policies.md)**: The protection policies included in Standard and Strict preset security policies contain our recommended settings. All you need to do is decide who gets the protection (by user, group, domain, or all recipients) and specify the entries and optional exceptions for user and domain impersonation protection. For instructions, see [Use the Microsoft Defender portal to assign Standard and Strict preset security policies to users](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users).
+- **[Preset security policies can configure everything for you](preset-security-policies.md)**: The protection policies included in Standard and Strict preset security policies contain our recommended settings. All you need to do is decide who gets the protection (by user, group, domain, or all recipients) and specify the entries and optional exceptions for user and domain impersonation protection. For instructions, see [Use the Microsoft Defender portal to assign Standard and Strict preset security policies to users](preset-security-policies.md#use-the-microsoft-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users).
 
 - **[Threat protection policies](#defender-for-office-365-protection-policies)**: Define threat-protection policies so admins can set the right level of protection for the organization.
 
@@ -107,7 +107,7 @@ Anti-phishing policies with spoofing and impersonation protection are included i
 
 [Safe Attachments](safe-attachments-about.md) provides zero-day protection for email by checking message attachments for malicious content *in addition to* the regular malware scanning in EOP. Safe Attachments opens all attachments in virtual environment to see what happens (a process known as _detonation_). If no suspicious activity is detected, the message is delivered to the mailbox.
 
-Safe Attachments protection is on by default for all recipients thanks to the [Built-in protection preset security policy](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-add-exclusions-to-the-built-in-protection-preset-security-policy), but you can specify exceptions.
+Safe Attachments protection is on by default for all recipients thanks to the [Built-in protection preset security policy](preset-security-policies.md#use-the-microsoft-defender-portal-to-add-exclusions-to-the-built-in-protection-preset-security-policy), but you can specify exceptions.
 
 Safe Attachments policies are also included in the Standard and Strict preset security policies, and you can create custom policies as needed.
 
@@ -119,7 +119,7 @@ Safe Attachments policies are also included in the Standard and Strict preset se
 
 [Safe Links](safe-links-about.md) provides time-of-click verification of URLs in email messages, supported Office files, and Microsoft Teams. Protection is ongoing and applies across your messaging and Office environment. Links are scanned for each click. Benign links remain accessible, but malicious links are dynamically blocked.
 
-Safe Links protection is on by default for all recipients thanks to the [Built-in protection preset security policy](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-add-exclusions-to-the-built-in-protection-preset-security-policy), but you can specify exceptions.
+Safe Links protection is on by default for all recipients thanks to the [Built-in protection preset security policy](preset-security-policies.md#use-the-microsoft-defender-portal-to-add-exclusions-to-the-built-in-protection-preset-security-policy), but you can specify exceptions.
 
 Safe Links policies are also included in the Standard and Strict preset security policies, and you can create custom policies as needed.
 
@@ -129,7 +129,7 @@ Defender for Office 365 includes [reports](reports-defender-for-office-365.md) t
 
 Reports update in real-time, providing you with the latest insights. These reports also provide recommendations and alert you to imminent threats. Available predefined reports include:
 
-- [Threat Explorer (or real-time detections)](threat-explorer-about.md)
+- [Threat Explorer (or real-time detections)](threat-explorer-real-time-detections-about.md)
 - [Threat protection status report](reports-defender-for-office-365.md#threat-protection-status-report)
 - ... and several more.
 
@@ -139,11 +139,11 @@ Defender for Office 365 Plan 2 includes best-of-class [threat investigation and 
 
 ### Threat Trackers on the latest threats
 
-- **[Threat trackers](threat-trackers.md)** provide the latest intelligence on prevailing cybersecurity issues. For example, you can view information about the latest malware, and take countermeasures before it becomes an actual threat to your organization. Available trackers include [Noteworthy trackers](threat-trackers.md#noteworthy-trackers), [Trending trackers](threat-trackers.md#trending-trackers), [Tracked queries](threat-trackers.md#tracked-queries), and [Saved queries](threat-trackers.md#saved-queries).
+**[Threat trackers](threat-trackers.md)** are [saved queries from Threat Explorer](threat-explorer-real-time-detections-about.md#saved-queries-in-threat-explorer) that you run manually or that can be configured to periodically run automatically. The **Trending campaigns** tab automatically highlights new email threats that were recently received by your organization.
 
 ### Threat Explorer or Real-Time Detections
 
-- **[Threat Explorer in Plan 2 (or real-time detections in Plan 1)](threat-explorer-about.md)** (also referred to as Explorer) is a real-time report that allows you to identify and analyze recent threats. You can configure Explorer to show data for custom periods.
+- **[Threat Explorer in Plan 2 (or real-time detections in Plan 1)](threat-explorer-real-time-detections-about.md)** (also referred to as Explorer) is a real-time report that allows you to identify and analyze recent threats. You can configure Explorer to show data for custom periods.
 
 ### Attack simulation training for user readiness
 
