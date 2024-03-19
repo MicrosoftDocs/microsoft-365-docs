@@ -84,7 +84,7 @@ The release status is **ONLY** available for new and updated features that are a
 
 For each new Message center post, we provide a recommendation for how relevant the change is for your organization. This recommendation is based on multiple factors such as:
 
-- Apps and service usage
+- Apps and service usage.
 - Changes meant to prevent or fix issues for subscription.
 - Changes meant to help you plan ahead or stay informed.
 - Impact changes, such as data privacy and app and service retirements.
@@ -93,15 +93,15 @@ There are three levels of relevance:
 
 - **High** - These are posts about changes in your organization, which need immediate action to avoid service disruption. These can also include feature releases with high potential impact to your organization, for example, an app or service being heavily used by people in your organization.
 
-- **Medium** - These are posts about changes in your organization, which don't need immediate action. Examples are non-breaking changes or new features for a service, which is being used by your organization, an early announcement for an upcoming breaking feature change, retirement
+- **Medium** - These are posts about changes in your organization, which don't need immediate action. Examples are nonbreaking changes or new features for a service, which is being used by your organization, an early announcement for an upcoming breaking feature change, retirement
 
 - **Low** - These are posts about changes that need monitoring. They are related to low impact apps and services in your organization. Examples would be a feature update for an app or service, which isn't actively used in your organization.
 
 The relevance recommendations are **ONLY** be available for the newer MC posts. This means the MC posts you already received will see a "blank" for relevance recommendation.
 
-If you see “**Processing**” for a MC post, it means that the score is being computed for this post and should be available soon. You should try to refresh after a few minutes.
+If you see **Processing** for a Message center post, it means that the score is being computed for this post and should be available soon. You should try to refresh after a few minutes.
 
-Once you start receiving this, please tell us if a MC post is **not relevant** to you through the [**extended feedback.**](#give-feedback-on-a-post)  This feedback is important for us to improve the accuracy of the relevance recommendations.
+Once you start receiving this, please tell us if a Message center post is **not relevant** to you through the [**extended feedback.**](#give-feedback-on-a-post)  This feedback is important for us to improve the accuracy of the relevance recommendations.
 
 ## Filter messages
 
@@ -111,7 +111,7 @@ The Archive tab shows the messages you have archived. To archive a message, in t
 
 ::: moniker range="o365-worldwide"
 
-Use the **Service**, **Tag**, and **Message state**  drop-down menus to select a filtered view of messages. For example, in this diagram,the messages are tagged with the **Admin impact** tag.
+Use the **Service**, **Tag**, and **Message state**  drop-down menus to select a filtered view of messages. For example, in this diagram, the messages are tagged with the **Admin impact** tag.
 
 You can select any column heading, except **Service** and **Tag**,  to sort messages in ascending or descending order.
 
@@ -149,7 +149,7 @@ Major updates are communicated at least 30 days in advance when an action is req
 If administration is distributed across your organization, you may not want or need to see posts about all Microsoft 365 services. Each admin can:
 
 - Set preferences that control which messages are displayed in Message center.
-- Filter messages
+- Filter messages.
 - Set email preferences to receive a weekly digest of all messages, emails for major updates only, and emails for data privacy messages.
 
 ::: moniker range="o365-worldwide"
