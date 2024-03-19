@@ -3,7 +3,7 @@ title: Microsoft Defender Antivirus security intelligence and product updates
 description: Manage how Microsoft Defender Antivirus receives protection and product updates.
 ms.service: defender-endpoint
 ms.localizationpriority: high
-ms.date: 03/07/2024
+ms.date: 03/12/2024
 audience: ITPro
 ms.topic: reference
 author: siosulli
@@ -98,18 +98,21 @@ All our updates contain
 - Serviceability improvements
 - Integration improvements (Cloud, [Microsoft Defender XDR](/microsoft-365/security/defender/microsoft-365-defender))
 
-### February-2024 (Engine: 1.1.24020.9 | Platform: 4.18.24020.xx)
+### February-2024 (Engine: 1.1.24020.9 | Platform: 4.18.24020.7)
 
 - Security intelligence update version: **1.407.46.0**
-- Release date: **March 6, 2024** (Engine) / **To be confirmed** (Platform)
-- Platform: **4.18.24020.xx** (*version number coming soon*)
+- Release date: **March 6, 2024** (Engine) / **March 12, 2024** (Platform)
 - Engine: **1.1.24020.9**
+- Platform: **4.18.24020.7**
 - Support phase: **Security and Critical Updates**
 
 #### What's new
 
 - Improved support for virtualizing while compressing or decompressing zip files
 - Improved reporting in the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) for block-only remediations
+- Reduced the number of false positives for [attack surface reduction rules](/microsoft-365/security/defender-endpoint/attack-surface-reduction) for known trusted processes
+- Improved [Get-MpPreference](/powershell/module/defender/get-mppreference) logic for proxy bypass settings
+- Extended the toast notification support for [Indicators of Compromise](/microsoft-365/security/defender-endpoint/manage-indicators#indicator-of-compromise-ioc-overview) (IoC) detections
 
 #### Known issues
 

@@ -77,13 +77,13 @@ The static proxy is configurable through group policy (GP), both the settings un
 
   Set it to **Enabled** and select **Disable Authenticated Proxy usage**.
 
-  :::image type="content" source="images/atp-gpo-proxy1.png" alt-text="The Group Policy setting1 status pane" lightbox="images/atp-gpo-proxy1.png":::
+  :::image type="content" source="media/atp-gpo-proxy1.png" alt-text="The Group Policy setting1 status pane" lightbox="media/atp-gpo-proxy1.png":::
 
 - **Administrative Templates > Windows Components > Data Collection and Preview Builds > Configure connected user experiences and telemetry**:
 
   Configure the proxy.
 
-  :::image type="content" source="images/atp-gpo-proxy2.png" alt-text="The Group Policy setting2 status pane" lightbox="images/atp-gpo-proxy2.png":::
+  :::image type="content" source="media/atp-gpo-proxy2.png" alt-text="The Group Policy setting2 status pane" lightbox="media/atp-gpo-proxy2.png":::
 
 
 | Group Policy | Registry key | Registry entry | Value |
