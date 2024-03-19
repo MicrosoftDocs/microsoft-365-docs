@@ -92,11 +92,15 @@ Refer to the link for detailed sample json file - [Set preferences for Microsoft
 > If you disable eBPF, the supplementary event provider switches back to auditd.
 > In the event eBPF doesn't become enabled or is not supported on any specific kernel, it will automatically switch back to auditd and retain all auditd custom rules. You can also check the status of eBPF (enabled/disabled) on your linux endpoints using the advanced hunting query on the Security Portal. Steps are as follows-
 
-1. Login to security portal
-2. Go to Hunting -> Advanced hunting on the left navigation pane
-3. Under Advanced hunting -> go to Defender Vulnerability Management
-1. Run the query – DeviceTvmInfoGathering
-1. In the output, check the column “Additional Fields” --> Show more --> and look for “EBPF STATUS: true”
+1. Go to the [Microsoft Defender portal](https://security.microsoft.com) and sign in.
+
+2. In the navigation pane, go to **Hunting** > **Advanced hunting**.
+
+3. Under **Advanced hunting**, go to **Defender Vulnerability Management**.
+
+4. Run the following query: `DeviceTvmInfoGathering`.
+
+5. In the output, in the **Additional fields** column, select **Show more**, and then look for **EBPF STATUS: true**.
 
 ## Immutable mode of Auditd
 
