@@ -26,7 +26,7 @@ Microsoft 365 for enterprises follows all the security best practices and proced
 
 ## Trustworthy by design
 
-Microsoft 365 is designed and developed in compliance with the Microsoft Trustworthy Computing Security Development Lifecycle (SDL), which is described at [Microsoft Security Development Lifecycle (SDL)](https://www.microsoft.com/sdl/default.aspx). The first step in creating a more secure unified communications, collaboration and productivity system was to design threat models and test each feature as it was designed. Multiple security-related improvements were built into the coding process and practices. Build-time tools detect buffer overruns and other potential security threats before the code is checked in to the final product. It's impossible to design against all unknown security threats. No system can guarantee complete security. However, because product development embraced secure design principles from the start, Teams incorporates industry standard security technologies as a fundamental part of its architecture.
+Microsoft 365 is designed and developed in compliance with the Microsoft Trustworthy Computing Security Development Lifecycle (SDL), which is described at [Microsoft Security Development Lifecycle (SDL)](https://www.microsoft.com/sdl/default.aspx). The first step in creating a more secure unified communications, collaboration, and productivity system was to design threat models and test each feature as it was designed. Multiple security-related improvements were built into the coding process and practices. Build-time tools detect buffer overruns and other potential security threats before the code is checked in to the final product. It's impossible to design against all unknown security threats. No system can guarantee complete security. However, because product development embraced secure design principles from the start, Teams incorporates industry standard security technologies as a fundamental part of its architecture.
 
 ## Trustworthy by default
 
@@ -39,10 +39,10 @@ Microsoft 365 endorses security ideas like Zero Trust, and principles of Least P
 Core elements are:
 
 - Microsoft Entra ID, which provides a single trusted back-end repository for user accounts. User profile information is stored in Microsoft Entra ID through the actions of Microsoft Graph.
-  - There may be multiple tokens issued which you may see if tracing your network traffic.
+  - There might be multiple tokens issued which you might see if tracing your network traffic.
 - Transport Layer Security (TLS) encrypts the channel in motion. Authentication takes place using either mutual TLS (MTLS), based on certificates, or using Service-to-Service authentication based on Microsoft Entra ID.
 - Point-to-point audio, video, and application sharing streams are encrypted and integrity checked using Secure Real-Time Transport Protocol (SRTP).
-- You will see OAuth traffic in your trace, particularly around token exchanges and negotiating permissions while switching between tabs in Teams, for example to move from Posts to Files. For an example of the OAuth flow for tabs, [see this document](/microsoftteams/platform/tabs/how-to/authentication/auth-flow-tab).
+- You'll see OAuth traffic in your trace, particularly around token exchanges and negotiating permissions while switching between tabs in Teams, for example to move from Posts to Files. For an example of the OAuth flow for tabs, [see this document](/microsoftteams/platform/tabs/how-to/authentication/auth-flow-tab).
 - Teams uses industry-standard protocols for user authentication, wherever possible.
 
 The next sections discuss some of these core technologies.
@@ -82,11 +82,11 @@ Microsoft is unifying user-facing Microsoft 365 apps and services to a single an
 
 The growth of Microsoft cloud services led to the expansion of the domain space they occupy, resulting in hundreds of domains. This fragmentation is a challenge for end user navigation, administrative simplicity, and the development of cross-app experiences.
 
-The .microsoft top-level domain is exclusive to Microsoft. The new domain doesn’t have traditional suffixes such as .com or .net in the end. This is by design. cloud.microsoft resides under the .microsoft top-level domain, for which Microsoft is a registry operator and the sole registrant. This domain allows for extra security, privacy, and protection against spoofing when you interact with apps within that domain. You can trust that any website or app that ends with cloud.microsoft is an official Microsoft product or service.
+The *.microsoft* top-level domain is exclusive to Microsoft. The new domain doesn’t have traditional suffixes such as .com or .net in the end. This is by design. cloud.microsoft resides under the .microsoft top-level domain, for which Microsoft is a registry operator and the sole registrant. This domain allows for extra security, privacy, and protection against spoofing when you interact with apps within that domain. You can trust that any website or app that ends with cloud.microsoft is an official Microsoft product or service.
 
 For more information, see [Unified cloud.microsoft domain for Microsoft 365 apps](cloud-microsoft-domain.md).
 
-## Related topics
+## Related articles
 
 [Top 12 tasks for security teams to support working from home](/microsoft-365/security/top-security-tasks-for-remote-work)
 
