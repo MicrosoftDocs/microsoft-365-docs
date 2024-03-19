@@ -1,7 +1,7 @@
 ---
 title: Configure Offline Security Intelligence Update for Microsoft Defender for Endpoint on Linux
 description: Offline Security Intelligence Update in Microsoft Defender for Endpoint on Linux.
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.author: siosulli
 author: siosulli
 ms.reviewer: gopkr
@@ -13,7 +13,6 @@ ms.collection:
 - tier3
 - mde-linux
 ms.topic: conceptual
-ms.subservice: mde
 search.appverid: met150
 ms.date: 03/12/2024
 ---
@@ -28,7 +27,7 @@ ms.date: 03/12/2024
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-This document describes the *Offline Security Intelligence Update* feature of Microsoft Defender for Endpoint (MDE) on Linux.
+This document describes the *Offline Security Intelligence Update* feature of Microsoft Defender for Endpoint on Linux.
 
 This feature enables organizations to download *security intelligence* (also referred to as definitions or signatures in this document) on Linux endpoints that are not exposed to the internet via a local hosting server (termed as *Mirror Server* in this document).
 
@@ -44,21 +43,21 @@ Key benefits include:
 
 - Test the downloaded signatures on a test device before propagating it to the entire fleet, providing greater security and control.
 
-- Now, on behalf of your entire fleet, only one local server will poll MS cloud to get the latest signatures. Thus, reducing network bandwidth.
+- Now, on behalf of your entire fleet, only one local server will poll Microsoft cloud to get the latest signatures. Thus, reducing network bandwidth.
 
-- Local server can run any of the 3 OS - Windows, Mac, Linux, and is not required to install MDE.
+- Local server can run any of the 3 OS - Windows, Mac, Linux, and is not required to install Defender for Endpoint.
 
 - Signatures are always downloaded along with the latest compatible AV engine. Thus, keeping AV engine + signatures updated after every cycle.
 
 - In each iteration, signature with n-1 version is moved to a backup folder on the local server. If there is any issue with the latest signature, you can pull the n-1 signature version from the backup folder to your endpoints.
 
-- If the offline update fails, you can also choose to fallback to online update directly from MS cloud.
+- If the offline update fails, you can also choose to fallback to online update directly from the Microsoft cloud.
 
 ## How Offline Security Intelligence Update works
 
-- Organizations need to set up a Mirror Server which is a local Web/NFS server reachable to Microsoft cloud; the organization is responsible for the management and maintenance of the Mirror Server.
-- Signatures are downloaded from MS Cloud on this Mirror Server by executing a script using cron job/task scheduler on the local server.
-- Linux endpoints running MDE pull the downloaded signatures from this Mirror Server at a user-defined time interval.
+- Organizations need to set up a Mirror Server, which is a local Web/NFS server that is reachable to the Microsoft cloud. Your organization is responsible for the management and maintenance of the Mirror Server.
+- Signatures are downloaded from Microsoft Cloud on this Mirror Server by executing a script using cron job/task scheduler on the local server.
+- Linux endpoints running Defender for Endpoint pull the downloaded signatures from this Mirror Server at a user-defined time interval.
 - Signatures pulled on the Linux endpoints from the local server are first verified before loading it into the AV engine.
 - To trigger and configure the update process, update the managed config json file on the Linux endpoints.
 - The status of the update can be seen on the mdatp CLI.
@@ -196,11 +195,11 @@ Once the Mirror Server is set up, we need to propagate this URL to the Linux end
 
 | Field Name                                | Values               | Comments                                            |
 |-------------------------------------------|----------------------|-----------------------------------------------------|
-| `automaticDefinitionUpdateEnabled`        | True / False         | Determines the behavior of MDE attempting to perform updates automatically, is turned on or off respectively |
+| `automaticDefinitionUpdateEnabled`        | True / False         | Determines the behavior of Defender for Endpoint attempting to perform updates automatically, is turned on or off respectively |
 | `definitionUpdatesInterval`               | Numeric              | Time of interval between each automatic update of signatures (in seconds) |
 | `offlineDefinitionUpdateUrl`              | String               | URL value generated as part of the Mirror Server set up |
 | `offlineDefinitionUpdate`                 | enabled / disabled   | When set to `enabled`, the offline security intelligence update feature is enabled, and vice versa. |
-| `offlineDefinitionUpdateFallbackToCloud`  | True / False         | Determine MDE security intelligence update approach when offline Mirror Server fails to serve the update request. If set to true, the update is retried via the Microsoft cloud when offline security intelligence update failed, else vice versa. |
+| `offlineDefinitionUpdateFallbackToCloud`  | True / False         | Determine Defender for Endpoint security intelligence update approach when offline Mirror Server fails to serve the update request. If set to true, the update is retried via the Microsoft cloud when offline security intelligence update failed, else vice versa. |
 
 > [!NOTE]
 > As of today the offline security intelligence update feature can be configured on Linux endpoints via managed json only. Integration with security settings management on the security portal is in our roadmap.
