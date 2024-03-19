@@ -158,7 +158,7 @@ For more information and allowed parameters, see  [Windows Defender WMIv2 APIs](
 
 ## Use the Windows Security app to exclude files that have been opened by specified processes from scans
 
-See [Add exclusions in the Windows Security app](microsoft-defender-security-center-antivirus.md) for instructions.
+Follow the instructions in [Add exclusions in the Windows Security app](microsoft-defender-security-center-antivirus.md).
 
 ## Review the list of exclusions
 
