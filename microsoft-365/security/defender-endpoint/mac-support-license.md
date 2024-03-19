@@ -37,7 +37,7 @@ When [Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.
 
 Select the **x** symbol.
 
-:::image type="content" source="images/error-mde-mac-deployment.png" alt-text="Screenshot that shows the menu bar containing the x symbol on the Microsoft Defender for Endpoint on macOS shield.":::
+:::image type="content" source="media/error-mde-mac-deployment.png" alt-text="Screenshot that shows the menu bar containing the x symbol on the Microsoft Defender for Endpoint on macOS shield.":::
 
 ### Message
 
@@ -59,7 +59,7 @@ You'll encounter this message in a different way: If you're using the terminal t
 
 1. You can also encounter this error message when the Microsoft Defender for Endpoint on macOS agent isn't up to date. For information on troubleshooting in this scenario, see [For Microsoft Defender for Endpoint on macOS not being up to date](#for-microsoft-defender-for-endpoint-on-macos-not-being-up-to-date).
 
-1. You offboarded and re-onboarded the Microsoft Defender on macOS.
+1. You can also encounter this error message if you had offboarded and re-onboarded the macOS from Microsoft Defender for Endpoint on macOS.
 
 1. You can also encounter this error message if you haven't assigned a license to the user. For information on troubleshooting in this scenario, see [For not assigning a license to the user](#for-not-assigning-a-license-to-the-user).
 
@@ -85,9 +85,11 @@ Depending on the deployment management tool used, follow the tool-specific instr
 
 For scenarios where Microsoft Defender for Endpoint on macOS isn't up to date, you'll need to [update](mac-updates.md) the agent.
 
-#### For Microsoft Defender for Endpoint on macOS that was offboarded and re-onboarded
+#### For Microsoft Defender for Endpoint on macOS having been offboarded
 
-If the offboarding script is executed on the macOS, it saves a file "/Library/Application Support/Microsoft/Defender/com.microsoft.wdav.atp.offboarding.plist".  ***Delete*** com.microsoft.wdav.atp.offboarding.plist before re-running the onboarding script again.
+When the offboarding script is executed on the macOS, it saves a file in /Library/Application Support/Microsoft/Defender/ and it's named com.microsoft.wdav.atp.offboarding.plist.
+
+If the file exists, it will prevent the macOS from being onboarded again.  Delete the **com.microsoft.wdav.atp.offboarding.plist** running the onboarding script again.
 
 #### For not assigning a license to the user
 
@@ -95,11 +97,11 @@ If the offboarding script is executed on the macOS, it saves a file "/Library/Ap
     1. Select **Settings**. The **Settings** screen appears.
     1. Select **Endpoints**.
        
-       :::image type="content" source="images/endpoints-option-on-settings-screen.png" alt-text="Screenshot of the Settings screen on which the Endpoints option is listed." lightbox="images/endpoints-option-on-settings-screen.png":::
+       :::image type="content" source="media/endpoints-option-on-settings-screen.png" alt-text="Screenshot of the Settings screen on which the Endpoints option is listed." lightbox="media/endpoints-option-on-settings-screen.png":::
  
        The **Endpoints** screen appears.
      
-       :::image type="content" source="images/endpoints-screen.png" alt-text="Screenshot of the Endpoints page." lightbox="images/endpoints-screen.png":::
+       :::image type="content" source="media/endpoints-screen.png" alt-text="Screenshot of the Endpoints page." lightbox="media/endpoints-screen.png":::
 
     1. Select **Licenses**.
      
