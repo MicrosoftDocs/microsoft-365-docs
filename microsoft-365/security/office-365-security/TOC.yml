@@ -412,7 +412,7 @@
            href: message-trace-defender-portal.md
        - name: Threat Trackers
          items:
-         - name: Use Threat Trackers
+         - name: Threat trackers
            href: threat-trackers.md
      - name: SIEM server integration
        items:
