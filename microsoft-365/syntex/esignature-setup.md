@@ -36,7 +36,7 @@ You must have Global admin or SharePoint admin permissions to be able to access 
 
 ### External recipients
 
- If you will be requesting signatures from external recipients, you need to enable [Microsoft Entra B2B integration for SharePoint and OneDrive](/sharepoint/sharepoint-azureb2b-integration#enabling-the-integration) and guest sharing [Collaboration with guests in a site]https://learn.microsoft.com/en-us/microsoft-365/solutions/collaborate-in-site?view=o365-worldwide). External recipients are people outside your organization and would be onboarded as guests into your tenant. Microsoft Entra B2B provides authentication and management of guests.
+ If you will be requesting signatures from external recipients, you need to enable [Microsoft Entra B2B integration for SharePoint and OneDrive](/sharepoint/sharepoint-azureb2b-integration#enabling-the-integration) and [guest sharing](/microsoft-365/solutions/collaborate-in-site). External recipients are people outside your organization and would be onboarded as guests into your tenant. Microsoft Entra B2B provides authentication and management of guests.
 
 ## Set up SharePoint eSignature
 
