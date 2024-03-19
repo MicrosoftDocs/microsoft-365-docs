@@ -7,7 +7,7 @@ manager: deniseb
 ms.reviewer: yongrhee
 ms.service: defender-endpoint
 ms.topic: troubleshooting-general
-ms.date: 03/07/2024
+ms.date: 03/19/2024
 ms.subservice: ngp
 ms.localizationpriority: medium 
 ms.collection: # Useful for querying on a set of strategic or high-priority content.
@@ -17,7 +17,7 @@ f1.keywords: NOCSH
 audience: ITPro
 ---
 
-# Troubleshooting where the Microsoft Defender Antivirus setting is coming from?
+# Troubleshoot Microsoft Defender Antivirus settings
 
 **Applies to:**
 
