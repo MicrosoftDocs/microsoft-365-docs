@@ -42,9 +42,9 @@ SharePoint eSignature is an extension of SharePoint document storage and managem
 
 To check whether all SharePoint Online external sharing settings, following powershell script can be used:
 
-</> Shell
+`</> Shell
 Connect-SPOService -Url "https://yourtenant.sharepoint.com"
-Get-SPOSite -Limit All | Select-Object Url, SharingCapability
+Get-SPOSite -Limit All | Select-Object Url, SharingCapability`
 
 
 ### Conditional access policies
