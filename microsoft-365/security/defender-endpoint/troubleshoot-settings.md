@@ -28,9 +28,9 @@ audience: ITPro
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender Antivirus
 
-Microsoft Defender Antivirus provides numerous ways to manage the product, which provides SMB and Enterprises with flexibility of meeting the management tools that they already have.
+Microsoft Defender Antivirus provides numerous ways to manage the product, which provides small and medium-sized businesses as well as enterprise organizations with flexibility by working with the management tools that they already have.
 
-- Microsoft Defender for Endpoint Security settings management
+- Microsoft Defender for Endpoint security settings management
 - Microsoft Intune (MDM)
 - Microsoft Configuration Manager with Tenant Attach
 - Microsoft Configuration Manager Co-Management
@@ -43,22 +43,25 @@ Microsoft Defender Antivirus provides numerous ways to manage the product, which
 > [!TIP]
 > As a best practice, try sticking to one method of managing Microsoft Defender for Antivirus. 
 
-## Example: You're migrating from a third-party antivirus product and when you try enabling Microsoft Defender Antivirus, it won't start.
+## Example: You're migrating from a non-Microsoft antivirus product and when you try enabling Microsoft Defender Antivirus, it won't start.
 
-You can narrow down the issue with this registry key:
+You can narrow down the issue with this registry key: `DisableAntispyware` (dword) 1 (hex) is set.
 
-   DisableAntispyware (dword) 1 (hex) is set
+Our current recommendation is as follows:
 
-Our current recommendation is:
+1. (**Preferred**) Remove conflicting policies in GPO, Configuration Manager, your MDM tools, and/or non-Microsoft management solutions when moving to Defender for Endpoint security settings management or Intune for policy management.
 
-1. [Preferred] Remove conflicting policies in GPO and/or Configuration Manager and/or third-party MDM and/or third-party management solutions when moving to MDE Security settings management or Intune for policy management.
+   When policies and settings are configure in multiple tools, in general, here's the order in which they're applied:
 
-Step 1) What setting wins?
+   1. Group Policy (GPO)
+   2. Microsoft Configuration Manager Co-Management
+   3. Microsoft Configuration Manager (standalone)
+   4. Microsoft Intune (MDM)
+   5. Microsoft Configuration Manager with Tenant Attach
+   6. PowerShell ([Set-MpPreference](/powershell/module/defender/set-mppreference)), [MpCmdRun.exe](command-line-arguments-microsoft-defender-antivirus.md), or [Windows Management Instrumentation](use-wmi-microsoft-defender-antivirus.md) (WMI).
 
-Group Policy (GPO) > Microsoft Configuration Manager Co-Management > Microsoft Configuration Manager (standalone) > Microsoft Intune (MDM) > Microsoft Configuration Manager with Tenant Attach > PowerShell (Set-MpPreference) or MpCmdRun.exe or Windows Management Instrumentation (WMI).
-
-> [!WARNING]
-> [MDMWinsOverGP](/windows/client-management/mdm/policy-csp-controlpolicyconflict) which is a Policy (CSP) does not apply for all settings such as Attack Surface Reduction rules (ASR rules) in Windows 10.
+   > [!WARNING]
+   > [MDMWinsOverGP](/windows/client-management/mdm/policy-csp-controlpolicyconflict) which is a Policy (CSP) does not apply for all settings such as Attack Surface Reduction rules (ASR rules) in Windows 10.
  
 
 Step 2) Find if it's coming through a Policy or MDM or a local setting.
