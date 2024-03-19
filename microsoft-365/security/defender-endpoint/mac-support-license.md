@@ -37,7 +37,7 @@ When [Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.
 
 Select the **x** symbol.
 
-:::image type="content" source="images/error-mde-mac-deployment.png" alt-text="Screenshot that shows the menu bar containing the x symbol on the Microsoft Defender for Endpoint on macOS shield.":::
+:::image type="content" source="media/error-mde-mac-deployment.png" alt-text="Screenshot that shows the menu bar containing the x symbol on the Microsoft Defender for Endpoint on macOS shield.":::
 
 ### Message
 
@@ -89,11 +89,11 @@ For scenarios where Microsoft Defender for Endpoint on macOS isn't up to date, y
     1. Select **Settings**. The **Settings** screen appears.
     1. Select **Endpoints**.
        
-       :::image type="content" source="images/endpoints-option-on-settings-screen.png" alt-text="Screenshot of the Settings screen on which the Endpoints option is listed." lightbox="images/endpoints-option-on-settings-screen.png":::
+       :::image type="content" source="media/endpoints-option-on-settings-screen.png" alt-text="Screenshot of the Settings screen on which the Endpoints option is listed." lightbox="media/endpoints-option-on-settings-screen.png":::
  
        The **Endpoints** screen appears.
      
-       :::image type="content" source="images/endpoints-screen.png" alt-text="Screenshot of the Endpoints page." lightbox="images/endpoints-screen.png":::
+       :::image type="content" source="media/endpoints-screen.png" alt-text="Screenshot of the Endpoints page." lightbox="media/endpoints-screen.png":::
 
     1. Select **Licenses**.
      
