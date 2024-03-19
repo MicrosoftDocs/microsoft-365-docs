@@ -18,18 +18,14 @@ ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.date: 08/04/2023
+appliesto: Microsoft Defender XDR and Microsoft Sentinel in the Microsoft Defender portal
 ---
 
 # Investigate users in Microsoft Defender XDR
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
-**Applies to:**
-- Microsoft Defender unified security operations center (SOC) platform, including:
-    - Microsoft Sentinel
-    - Microsoft Defender XDR
-
-The user entity page in Microsoft Defender's unified SOC platform helps you in your investigation of user entities. The page has all the important information about each entity. If an alert or incident indicates that a user might be compromised or is suspicious, check and investigate the user profile.
+The user entity page in the Microsoft Defender portal helps you in your investigation of user entities. The page has all the important information about each entity. If an alert or incident indicates that a user might be compromised or is suspicious, check and investigate the user profile.
 
 You can find user entity information in the following views:
 
@@ -41,11 +37,11 @@ You can find user entity information in the following views:
 - Advanced hunting queries
 - Action center
 
-Wherever user entities appear in these views, selecting the entity will take you to the **User** page, which displays more details about the user. For example, you can see the details of user accounts identified in the alerts of an incident in the Microsoft Defender portal at **Incidents & alerts > Incidents > *incident* > Assets > Users**.
+Wherever user entities appear in these views, select the entity to view the **User** page, which displays more details about the user. For example, you can see the details of user accounts identified in the alerts of an incident in the Microsoft Defender portal at **Incidents & alerts > Incidents > *incident* > Assets > Users**.
 
 :::image type="content" source="../../media/investigate-users/user-incident-assets.png" alt-text="The Users page for an incident in the Microsoft Defender portal.":::
 
-When you investigate a specific user entity, you'll see the following tabs on its entity page:
+When you investigate a specific user entity, you see the following tabs on its entity page:
 
 - [Overview](#overview), including entity details, incident and alerts visual view, investigation priority, and scored timeline
 - [Incidents and alerts](#incidents-and-alerts) tab
@@ -60,7 +56,7 @@ When you investigate a specific user entity, you'll see the following tabs on it
 
 ### Entity details
 
-The **Entity details** panel on the left side of the page provides information about the user, such as the Microsoft Entra identity risk level, the number of devices the user is signed in to, when the user was first and last seen, the user's accounts, groups that the user belongs to, contact information, and more. You'll see other details depending on the integration features you've enabled.
+The **Entity details** panel on the left side of the page provides information about the user, such as the Microsoft Entra identity risk level, the number of devices the user is signed in to, when the user was first and last seen, the user's accounts, groups that the user belongs to, contact information, and more. You see other details depending on the integration features you enabled.
 
 ### Visual view of incidents and alerts
 
@@ -189,11 +185,11 @@ For example:
 
 ## Sentinel events
 
-Users of the unified SOC platform that includes Microsoft Sentinel have this additional tab on the user entity page. This tab imports the [User entity page from Microsoft Sentinel](/azure/sentinel/entity-pages).
+If your organization onboarded Microsoft Sentinel to the Defender portal, this additional tab is on the user entity page. This tab imports the [User entity page from Microsoft Sentinel](/azure/sentinel/entity-pages).
 
 ### Sentinel timeline
 
-This timeline shows alerts associated with the user entity. These alerts include those seen on the **Incidents and alerts** tab described above, but also those created by Microsoft Sentinel from third-party, non-Microsoft data sources.
+This timeline shows alerts associated with the user entity. These alerts include those seen on the **Incidents and alerts** tab and those created by Microsoft Sentinel from third-party, non-Microsoft data sources.
 
 This timeline also shows [bookmarked hunts](/azure/sentinel/bookmarks) from other investigations that reference this user entity, user activity events from external data sources, and unusual behaviors detected by Microsoft Sentinel's [anomaly rules](/azure/sentinel/soc-ml-anomalies).
 
