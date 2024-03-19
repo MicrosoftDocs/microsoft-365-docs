@@ -43,14 +43,14 @@ Microsoft Defender Antivirus provides numerous ways to manage the product, which
 > [!TIP]
 > As a best practice, try sticking to one method of managing Microsoft Defender for Antivirus. 
 
-Suppose that migrating from a non-Microsoft antivirus product, and when you try enabling Microsoft Defender Antivirus, it won't start. Most likely, you're experiencing a policy conflict. You can narrow down the issue by checking this registry key: `DisableAntispyware` (dword) 1 (hex) is set. 
+Suppose that migrating from a non-Microsoft antivirus product, and when you try enabling Microsoft Defender Antivirus, it won't start. Most likely, you're experiencing a policy conflict. You can narrow down the issue by checking this registry key: `DisableAntispyware` (dword) 1 (hex) is set.
 
 To remove policy conflicts, here's our current, recommended process:
 
 1. Understand the order of precedence.
-2. Determine where Microsoft Defender Antivirus settings are coming from.
+2. Determine where Microsoft Defender Antivirus settings are configured.
 3. Identify policies and settings.
-4. Work with your security team to remove or revise policies and settings.
+4. Work with your security team to remove or revise conflicting policies.
 
 ## Step 1: Understand the order of precedence
 
@@ -83,7 +83,7 @@ The following table describes how to identify policies and settings.
 |Method used | What to check |
 | -------- | -------- |
 |Policy| - If you're using GPO: Select **Start**, open Command Prompt as an administrator, and then run the command `GpResult.exe /h C:\temp\GpResult_output.html`. <br/>- If you're using Microsoft Configuration Manager co-management or Microsoft Configuration Manager (standalone), go to `C:\Windows\CCM\Logs`.|
-|MDM | If you're using Intune, on your device, select Start, open Command Prompt as an admin, and then run the command `mdmdiagnosticstool.exe -zip "c:\temp\MDMDiagReport.zip"`. See [Collect MDM logs - Windows Client Management](/windows/client-management/mdm-collect-logs). |
+|MDM | If you're using Intune, on your device, select Start, open Command Prompt as an administrator, and then run the command `mdmdiagnosticstool.exe -zip "c:\temp\MDMDiagReport.zip"`. For more details, see [Collect MDM logs - Windows Client Management](/windows/client-management/mdm-collect-logs). |
 |Local setting | Determine whether the policy or setting was deployed during the imaging (sysprep), via PowerShell (for example, Set-MpPreference), Windows Management Instrumentation (WMI), or through a direct modification to the registry.|
 
 ## Step 4: Remove or revise conflicting policies
