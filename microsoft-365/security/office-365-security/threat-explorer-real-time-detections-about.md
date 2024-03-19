@@ -1561,7 +1561,7 @@ The steps to create property filter/query conditions are the same in all views i
 ### Saved queries in Threat Explorer
 
 > [!TIP]
-> **Save query** is part of [Threat trackers](threat-trackers.md) and isn't available in Real-time detections. It's available only in Threat Explorer.
+> **Save query** is part of [Threat trackers](threat-trackers.md) and isn't available in Real-time detections. Saved queries and Threat trackers are available only in Defender for Office 365 Plan 2.
 >
 > **Save query** isn't available in the [Content malware view](#content-malware-view-in-threat-explorer-and-real-time-detections).
 
@@ -1578,7 +1578,7 @@ To save queries in Threat Explorer, do the following steps:
      - **Relative dates**: Select the number of days in the **Show last nn days when search is run**. The default value is 7, but you can select 1 to 30.
    - **Track query**: By default, this option isn't selected. This option affects whether the query runs automatically:
      - **Track query** not selected: The query is available for you to run manually in Threat Explorer. The query is saved on the **Saved queries** tab on the **Threat tracker** page with the **Tracked query** property value **No**.
-     - **Track query** selected: The query periodically runs in the background. The results of the query are stored on the **Tracked queries** tab on the **Threat tracker** page. The query is also available on the **Saved queries** tab on the **Threat tracker** page with the **Tracked query** property value **Yes**.
+     - **Track query** selected: The query periodically runs in the background. The query is available on the **Saved queries** tab on the **Threat tracker** page with the **Tracked query** property value **Yes**. The periodic results of the query are shown on the **Tracked queries** tab on the **Threat tracker** page.
 
    When you're finished in the **Save query** flyout, select **Save**, and then select **OK** in the confirmation dialog.
 
