@@ -27,41 +27,31 @@ ms.date: 03/12/2024
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-This document describes the *Offline Security Intelligence Update* feature of Microsoft Defender for Endpoint on Linux.
+This document describes the Offline Security Intelligence Update feature of Microsoft Defender for Endpoint on Linux.
 
-This feature enables organizations to download *security intelligence* (also referred to as definitions or signatures in this document) on Linux endpoints that aren't exposed to the internet via a local hosting server (termed as *Mirror Server* in this document).
+This feature enables an organization to update the security intelligence (also referred to as definitions or signatures in this document) on Linux endpoints with limited or no exposure to the internet using a local hosting server (termed as *Mirror Server* in this document).
 
-The Mirror Server is any server in the customer's environment that can connect to the Microsoft cloud to download the signatures. Other Linux endpoints pull the signatures from the Mirror Server at a predefined interval.
+Mirror Server is any server in the customer's environment that can connect to the Microsoft cloud to download the signatures. Other Linux endpoints pull the signatures from the Mirror Server at a predefined interval.
 
 Key benefits include:
 
-- Customers who have server environments that aren't exposed to the internet can now benefit by being able to download and enable the latest security intelligence updates in a controlled manner.
-
-- Control and manage the frequency of signature downloads on the local server.
-
-- Control and manage the frequency at which endpoints pull the signatures from the local server.
-
-- Test the downloaded signatures on a test device before propagating it to the entire fleet, providing greater security and control.
-
-- Now, on behalf of your entire fleet, only one local server polls the Microsoft cloud to get the latest signatures. This action helps reduce network bandwidth.
-
+- Ability to control and manage the frequency of signature downloads on the local server & the frequency at which endpoints pull the signatures from the local server.
+- Adds an extra layer of protection & control as the downloaded signatures can be tested on a test device before being propagated to the entire fleet.
+- Reduces network bandwidth as now only one local server will poll MS cloud to get the latest signatures on behalf of your entire fleet. 
 - Local server can run any of the three OS - Windows, Mac, Linux, and isn't required to install Defender for Endpoint.
-
-- Signatures are always downloaded along with the latest compatible AV engine. Thus, keeping AV engine + signatures updated after every cycle.
-
+- Provides the most up to date antivirus protection as signatures are always downloaded along with the latest compatible AV engine. 
 - In each iteration, signature with n-1 version is moved to a backup folder on the local server. If there's any issue with the latest signature, you can pull the n-1 signature version from the backup folder to your endpoints.
-
-- If the offline update fails, you can also choose to fall back to online update directly from the Microsoft cloud.
+- On the rare occasion the offline update fails, you can also choose to fallback to online updates from Microsoft cloud(traditional method).
 
 ## How Offline Security Intelligence Update works
 
-- Organizations need to set up a Mirror Server, which is a local Web/NFS server that is reachable to the Microsoft cloud. Your organization is responsible for the management and maintenance of the Mirror Server.
+- Organizations need to set up a Mirror Server, which is a local Web/NFS server that is reachable by the Microsoft cloud.
 - Signatures are downloaded from Microsoft Cloud on this Mirror Server by executing a script using cron job/task scheduler on the local server.
 - Linux endpoints running Defender for Endpoint pull the downloaded signatures from this Mirror Server at a user-defined time interval.
 - Signatures pulled on the Linux endpoints from the local server are first verified before loading it into the AV engine.
 - To trigger and configure the update process, update the managed config json file on the Linux endpoints.
 - The status of the update can be seen on the mdatp CLI.
-- 
+
 :::image type="content" source="./media/offline-update-diag-1.png" alt-text="Process flow diagram on the Mirror Server for downloading the security intelligence updates" lightbox="./media/offline-update-diag-2.png":::
 Fig. 1: Process flow diagram on the Mirror Server for downloading the security intelligence updates
 
@@ -79,7 +69,7 @@ Fig. 2: Process flow diagram on the Linux endpoint for security intelligence upd
 - The Mirror Server needs to have access to the following URLs:
     - https://github.com/microsoft/mdatp-xplat.git 
     - https://go.microsoft.com/fwlink/?linkid=2144709 
-- The following operating systems are supported for the Mirror Server:
+- The following operating systems are supported on the Mirror Server:
     - Linux (Any Flavor)
     - Windows (Any Version)
     - Mac (Any version)
@@ -95,11 +85,10 @@ Fig. 2: Process flow diagram on the Linux endpoint for security intelligence upd
 
 - The Linux endpoint must be running any of the Defender for Endpoint supported distributions.
 
-
 ## Configuring the Mirror Server
 
 > [!NOTE]
-> The management and ownership of the Mirror Server lies solely with the customer as it resides in the customer's private environment. The Mirror Server's management and maintenance ownership lies with the customers since the Mirror Server resides in the customer's private environment and Microsoft will have no visibility into it.
+> The management and ownership of the Mirror Server lies solely with the customer as it resides in the customer's private environment.
 
 > [!NOTE]
 > The Mirror Server does not need to have Defender for Endpoint installed.
@@ -123,9 +112,9 @@ Follow these steps to get the downloader script:
 - Extract the zip.
 
 > [!NOTE]
-> Schedule a [cron job](#scheduling-a-cron-job) to keep the repo / the downloaded zip file updated to the latest version at regular intervals.
+> Schedule a [cron job](#scheduling-a-cron-job) to keep the repo/downloaded zip file updated to the latest version at regular intervals.
 
-After cloning the repo / downloading the zip file, the local directory structure should be as follows:
+After cloning the repo/downloaded zip file, the local directory structure should be as follows:
 
 ```
 user@vm:~/mdatp-xplat$ tree linux/definition_downloader/
@@ -207,12 +196,12 @@ Once the Mirror Server is set up, we need to propagate this URL to the Linux end
 
 ### Verify the configuration
 
-Once the Mirror Server and the Linux endpoints are configured, to test if the settings are applied correctly on the Linux endpoints, run the following command:
+ To test if the settings are applied correctly on the Linux endpoints, run the following command:
 ```
 mdatp health --details definitions
 ```
 
-and verify the updated fields according to the managed json. For example, a sample output would look like:
+For example, a sample output would look like:
 
 ```
 user@vm:~$ mdatp health --details definitions
@@ -225,15 +214,15 @@ definitions_update_source_uri               : "https://go.microsoft.com/fwlink/?
 definitions_update_fail_reason              : ""
 offline_definition_url_configured           : "http://172.22.199.67:8000/linux/production/" [managed]
 offline_definition_update                   : "enabled" [managed]
-offline_definition_update_verify_sig        : "disabled"
-offline_definition_update_fallback_to_cloud : false
+offline_definition_update_verify_sig        : "enabled"
+offline_definition_update_fallback_to_cloud : false[managed]
 ```
 
 ## Triggering the Offline Security Intelligence Updates
 
 ### Automatic update
-- If the `automaticDefinitionUpdateEnabled` field is set to true in the managed json, then the offline security intelligence updates are triggered automatically at periodic intervals.
-- By default, this periodic interval is every 8 hours. But it can be configured by setting the `definitionUpdatesInterval` in the managed json to the desired interval.
+- If the fields `automaticDefinitionUpdateEnabled` and 'offline_definition_update' in the managed json are set to true, then the offline security intelligence updates are triggered  automatically at periodic intervals.
+- By default, this periodic interval is 8 hours. But it can be configured by setting the `definitionUpdatesInterval` in the managed json.
 
 ### Manual update
 - In order to trigger the offline security intelligence update manually to download the signatures from the Mirror Server on the Linux endpoints, run the command:
