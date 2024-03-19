@@ -57,7 +57,7 @@ To remove policy conflicts, here's our current, recommended process:
 When policies and settings are configured in multiple tools, in general, here's the order of precedence:
 
 1. Group Policy (GPO)
-2. Microsoft Configuration Manager Co-Management
+2. Microsoft Configuration Manager co-management
 3. Microsoft Configuration Manager (standalone)
 4. Microsoft Intune (MDM)
 5. Microsoft Configuration Manager with Tenant Attach
@@ -72,7 +72,7 @@ Find out whether Microsoft Defender Antivirus settings are coming through a poli
 
 |Policy or setting| Registry location | Tools|
 | -------- | -------- | -------- |
-|Policy| `HKEY_LOCAL_MACHINE\SOFTWARE\<Policies>\Microsoft\Windows Defender`|- Microsoft Configuration Manager Co-Management<br/>- Microsoft Configuration Manager<br/>- GPO|
+|Policy| `HKEY_LOCAL_MACHINE\SOFTWARE\<Policies>\Microsoft\Windows Defender`|- Microsoft Configuration Manager co-management<br/>- Microsoft Configuration Manager<br/>- GPO|
 |MDM|`HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\<Policy Manager>` |- Microsoft Intune (MDM)<br/>- Microsoft Configuration Manager with Tenant Attach|
 |Local setting|`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\<Windows Defender>`|- MpCmdRun.exe<br/>- PowerShell (Set-MpPreference)<br/>- Windows Management Instrumentation (WMI)|
 
@@ -82,10 +82,12 @@ The following table describes how to identify policies and settings.
 
 |Method used | What to check |
 | -------- | -------- |
-|Policy| - If you're using GPO: Select **Start**, open Command Prompt as an administrator, and then run the command `GpResult.exe /h C:\temp\GpResult_output.html`. <br/>- If you're using Microsoft Configuration Manager Co-Management or Microsoft Configuration Manager (standalone), go to `C:\Windows\CCM\Logs`.|
+|Policy| - If you're using GPO: Select **Start**, open Command Prompt as an administrator, and then run the command `GpResult.exe /h C:\temp\GpResult_output.html`. <br/>- If you're using Microsoft Configuration Manager co-management or Microsoft Configuration Manager (standalone), go to `C:\Windows\CCM\Logs`.|
 |MDM | If you're using Intune, on your device, select Start, open Command Prompt as an admin, and then run the command `mdmdiagnosticstool.exe -zip "c:\temp\MDMDiagReport.zip"`. See [Collect MDM logs - Windows Client Management](/windows/client-management/mdm-collect-logs). |
-|Local setting | Determine whether the policy or setting was deployed during the imaging (sysprep), via Powershell (e.g. Set-MpPreference), Windows Management Instrumentation (WMI), or through a direct modification to the registry.|
+|Local setting | Determine whether the policy or setting was deployed during the imaging (sysprep), via PowerShell (for example, Set-MpPreference), Windows Management Instrumentation (WMI), or through a direct modification to the registry.|
 
 ## Step 4: Remove or revise conflicting policies
 
 Once you have identified the conflicting policy, work with your security administrators to change device targeting so that devices receive the correct Microsoft Defender Antivirus settings.
+
+
