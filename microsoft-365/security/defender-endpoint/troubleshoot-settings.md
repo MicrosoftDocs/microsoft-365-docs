@@ -72,9 +72,9 @@ Find out whether Microsoft Defender Antivirus settings are coming through a poli
 
 |Policy or setting| Registry location | Tools|
 | -------- | -------- | -------- |
-|Policy| `HKEY_LOCAL_MACHINE\SOFTWARE\<Policies>\Microsoft\Windows Defender`|- Microsoft Configuration Manager co-management<br/>- Microsoft Configuration Manager<br/>- GPO|
-|MDM|`HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\<Policy Manager>` |- Microsoft Intune (MDM)<br/>- Microsoft Configuration Manager with Tenant Attach|
-|Local setting|`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\<Windows Defender>`|- MpCmdRun.exe<br/>- PowerShell (Set-MpPreference)<br/>- Windows Management Instrumentation (WMI)|
+|Policy| `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`|- Microsoft Configuration Manager co-management<br/>- Microsoft Configuration Manager<br/>- GPO|
+|MDM|`HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Policy Manager` |- Microsoft Intune (MDM)<br/>- Microsoft Configuration Manager with Tenant Attach|
+|Local setting|`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender`|- MpCmdRun.exe<br/>- PowerShell (Set-MpPreference)<br/>- Windows Management Instrumentation (WMI)|
 
 ## Step 3: Identify policies or settings
 
