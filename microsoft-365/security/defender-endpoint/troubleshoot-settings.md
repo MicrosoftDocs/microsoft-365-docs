@@ -28,12 +28,12 @@ audience: ITPro
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender Antivirus
 
-Microsoft Defender Antivirus provides numerous ways to manage the product, which provides small and medium-sized businesses as well as enterprise organizations with flexibility by working with the management tools that they already have.
+Microsoft Defender Antivirus provides numerous ways to manage the product, which provides small and medium-sized businesses and enterprise organizations with flexibility by working with the management tools that they already have.
 
 - Microsoft Defender for Endpoint security settings management
 - Microsoft Intune (MDM)
 - Microsoft Configuration Manager with Tenant Attach
-- Microsoft Configuration Manager Co-Management
+- Microsoft Configuration Manager co-management
 - Microsoft Configuration Manager (standalone)
 - Group Policy (GPO)
 - PowerShell
@@ -45,7 +45,7 @@ Microsoft Defender Antivirus provides numerous ways to manage the product, which
 
 Suppose that migrating from a non-Microsoft antivirus product, and when you try enabling Microsoft Defender Antivirus, it won't start. Most likely, you're experiencing a policy conflict. You can narrow down the issue by checking this registry key: `DisableAntispyware` (dword) 1 (hex) is set. 
 
-To remove policy conflicts, here's our current, recommended processs:
+To remove policy conflicts, here's our current, recommended process:
 
 1. Understand the order of precedence.
 2. Determine where Microsoft Defender Antivirus settings are coming from.
@@ -54,7 +54,7 @@ To remove policy conflicts, here's our current, recommended processs:
 
 ## Step 1: Understand the order of precedence
 
-When policies and settings are configure in multiple tools, in general, here's the order of precedence:
+When policies and settings are configured in multiple tools, in general, here's the order of precedence:
 
 1. Group Policy (GPO)
 2. Microsoft Configuration Manager Co-Management
