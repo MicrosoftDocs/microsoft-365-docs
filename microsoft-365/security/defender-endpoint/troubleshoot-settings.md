@@ -43,6 +43,8 @@ Microsoft Defender Antivirus provides numerous ways to manage the product, which
 > [!TIP]
 > As a best practice, try sticking to one method of managing Microsoft Defender for Antivirus. 
 
+## Troubleshooting Microsoft Defender Antivirus settings
+
 Suppose that migrating from a non-Microsoft antivirus product, and when you try enabling Microsoft Defender Antivirus, it won't start. Most likely, you're experiencing a policy conflict. You can narrow down the issue by checking this registry key: `DisableAntispyware` (dword) 1 (hex) is set.
 
 To remove policy conflicts, here's our current, recommended process:
