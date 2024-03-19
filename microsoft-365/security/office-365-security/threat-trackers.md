@@ -29,7 +29,7 @@ appliesto:
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-Microsoft 365 organizations that have [Microsoft Defender for Office 365](defender-for-office-365.md) included in their subscription or purchased as an add-on have _Threat trackers_. Threat trackers are based on queries that you create and save in [Threat Explorer (also known as Explorer)](threat-explorer-real-time-detections-about.md). You use these queries automtically or manually to discover and take action against cybersecurity threats in your organization.
+Microsoft 365 organizations that have [Microsoft Defender for Office 365](defender-for-office-365.md) included in their subscription or purchased as an add-on have _Threat trackers_. Threat trackers are based on queries that you create and save in [Threat Explorer (also known as Explorer)](threat-explorer-real-time-detections-about.md). You use these queries automatically or manually to discover and take action against cybersecurity threats in your organization.
 
 ## Permissions and licensing for Threat trackers
 
@@ -38,7 +38,7 @@ To use Threat trackers, you need to be assigned permissions. You have the follow
 - [Email & collaboration permissions in the Microsoft Defender portal](mdo-portal-permissions.md):
   - _Create, save, and modify Threat Explorer queries_: Membership in the **Organization Management** or **Security Administrator** role groups.
   - _Read-only access to Threat Explorer queries on the Threat tracker page_: Membership in the **Security Reader** or **Global Reader** role groups.
-- [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership these roles gives users the required permissions _and_ permissions for other features in Microsoft 365:
+- [Microsoft Entra permissions](/entra/identity/role-based-access-control/manage-roles-portal): Membership these roles gives users the required permissions _and_ permissions for other features in Microsoft 365:
   - _Create, save, and modify Threat Explorer queries_: Membership in the **Global Administrator** or **Security Administrator** roles.
   - _Read-only access to Threat Explorer queries on the Threat tracker page_: Membership in the **Security Reader** or **Global Reader** roles.
 
