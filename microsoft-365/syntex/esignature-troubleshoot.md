@@ -40,6 +40,13 @@ SharePoint eSignature is an extension of SharePoint document storage and managem
 
 - Microsoft Entra collaboration settings restrict document sharing to specific individuals. This event limits who the requests can be sent to.
 
+To check whether all SharePoint Online external sharing settings, following powershell script can be used:
+
+`</> Shell
+Connect-SPOService -Url "https://yourtenant.sharepoint.com"
+Get-SPOSite -Limit All | Select-Object Url, SharingCapability`
+
+
 ### Conditional access policies
 
 Certain [conditional access](/entra/identity/conditional-access/overview) policies might determine whether an external recipient (signers outside of your organization or Microsoft 365 tenant) is able sign a document. When this happens, the external signers might not be able to access the document for signing. In some other cases, they might be able to access the document for signing but the signing operation is unsuccessful. One common way to resolve this is to contact your IT admin who will be able to add the eSignature app to the list of approved apps via the  Microsoft Entra admin center.
