@@ -44,7 +44,6 @@ The Microsoft Defender portal supports a single Microsoft Entra tenant and the c
 
 To onboard and use Microsoft Sentinel in the Microsoft Defender portal, you must have the following resources and access:
 
-- A Microsoft Entra tenant that's allow-listed by Microsoft to connect a workspace through the Defender portal
 - A Log Analytics workspace that has Microsoft Sentinel enabled
 - The data connector for Microsoft Defender XDR (formerly named Microsoft 365 Defender) enabled in Microsoft Sentinel for incidents and alerts
 - Microsoft Defender XDR onboarded to the Microsoft Entra tenant
@@ -64,9 +63,6 @@ To connect a workspace that has Microsoft Sentinel enabled to Defender XDR, comp
 
 1. Go to the [Microsoft Defender portal](https://security.microsoft.com/) and sign in.
 1. In Microsoft Defender XDR, select **Overview**.
-
-   If you're invited to participate in the preview, you see a banner with an option to connect a workspace.
-
 1. Select **Connect a workspace**.
 1. Choose the workspace you want to connect and select **Next**.
 1. Read and understand the product changes associated with connecting your workspace. These changes include:
