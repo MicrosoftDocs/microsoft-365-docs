@@ -22,23 +22,16 @@ ms.topic: how-to
 search.appverid: 
   - MOE150
   - MET150
-ms.date: 11/10/2023
+appliesto: Microsoft Defender XDR and Microsoft Sentinel in the Microsoft Defender portal
+ms.date: 03/19/2024
 ---
 
 # Connect Microsoft Sentinel to Microsoft Defender XDR (preview)
 
-**Applies to:**
-- Microsoft Defender XDR
-- Microsoft Sentinel
+Combine the power of Microsoft Sentinel with Microsoft Defender XDR into a single portal. When you onboard Microsoft Sentinel to the Microsoft Defender portal, you unify capabilities like incident management and advanced hunting. Reduce tool switching and build a more context-focused investigation that expedites incident response and stops breaches faster. For more information, see:
 
-Combine the power of Microsoft Sentinel with Microsoft Defender XDR into a single portal enhanced with the following features:
-
-- Advanced hunting that spans Microsoft Sentinel and Microsoft Defender XDR 
-- Unified incidents
-- AI
-- Automation
-- Guided experiences
-- Curated threat intelligence
+- [Microsoft Sentinel in the Microsoft Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2263690)
+- [Introducing a Unified Security Operations Platform with Microsoft Sentinel and Defender XDR](https://aka.ms/unified-soc-announcement)
 
 > [!IMPORTANT]
 > Information in this article relates to a prerelease product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -47,7 +40,7 @@ Combine the power of Microsoft Sentinel with Microsoft Defender XDR into a singl
 
 Before you begin, review the feature documentation to understand the product changes and limitations. The feature documentation is provided with your invitation to participate in the preview.
 
-The Microsoft Defender portal supports a single Microsoft Entra tenant and the connection to one workspace at a time.  In the context of this article, a workspace is a Log Analytics workspace with Microsoft Sentinel enabled.
+The Microsoft Defender portal supports a single Microsoft Entra tenant and the connection to one workspace at a time. In the context of this article, a workspace is a Log Analytics workspace with Microsoft Sentinel enabled.
 
 To onboard and use Microsoft Sentinel in the Microsoft Defender portal, you must have the following resources and access:
 
@@ -72,7 +65,7 @@ To connect a workspace that has Microsoft Sentinel enabled to Defender XDR, comp
 1. Go to the [Microsoft Defender portal](https://security.microsoft.com/) and sign in.
 1. In Microsoft Defender XDR, select **Overview**.
 
-   If you're invited to participate in the preview, you'll see a banner with an option to connect a workspace.
+   If you're invited to participate in the preview, you see a banner with an option to connect a workspace.
 
 1. Select **Connect a workspace**.
 1. Choose the workspace you want to connect and select **Next**.
@@ -83,17 +76,15 @@ To connect a workspace that has Microsoft Sentinel enabled to Defender XDR, comp
    - Active [Microsoft security incident creation rules](/azure/sentinel/create-incidents-from-alerts#using-microsoft-security-incident-creation-analytics-rules) are deactivated to avoid duplicate incidents. This change only applies to incident creation rules for Microsoft alerts and not to other analytics rules.
    - All alerts related to Defender XDR products are streamed directly from the main Defender XDR data connector to ensure consistency. Make sure you have incidents and alerts from this connector turned on in the workspace.
 
-   Detailed changes and limitations are in the documentation shared with you as part of this private preview.
-
 1. Select **Connect**.
 
-After your workspace is connected, the banner on the **Overview** page shows that your unified security information and event management (SIEM) and extended detection and response (XDR) is ready.  You'll also see the **Overview** page updated with new sections that include metrics from Microsoft Sentinel like the number of data connectors and automation rules.
+After your workspace is connected, the banner on the **Overview** page shows that your unified security information and event management (SIEM) and extended detection and response (XDR) is ready. The **Overview** page is updated with new sections that include metrics from Microsoft Sentinel like the number of data connectors and automation rules.
 
 ## Explore Microsoft Sentinel features in the Defender portal
 
-After you connect your workspace to the Defender portal, you'll see **Microsoft Sentinel** on the left-hand side navigation pane. Pages like  **Overview**, **Incidents**, and **Advanced Hunting** have unified data from Microsoft Sentinel and Defender XDR.
+After you connect your workspace to the Defender portal, **Microsoft Sentinel** is on the left-hand side navigation pane. Pages like  **Overview**, **Incidents**, and **Advanced Hunting** have unified data from Microsoft Sentinel and Defender XDR.
 
-You'll also see many of the existing Microsoft Sentinel features are integrated into the Defender portal. For these features, you'll notice that the experience between Microsoft Sentinel in the Azure portal and Defender portal are similar. Use the following articles to help you start working with Microsoft Sentinel in the Defender portal. When using these articles, keep in mind that your starting point in this context is the [Defender portal](https://security.microsoft.com/) instead of the Azure portal.
+Many of the existing Microsoft Sentinel features are integrated into the Defender portal. For these features, notice that the experience between Microsoft Sentinel in the Azure portal and Defender portal are similar. Use the following articles to help you start working with Microsoft Sentinel in the Defender portal. When using these articles, keep in mind that your starting point in this context is the [Defender portal](https://security.microsoft.com/) instead of the Azure portal.
 
 - Search
   - [Search across long time spans in large datasets](/azure/sentinel/search-jobs)
@@ -135,6 +126,10 @@ You can only have one workspace connected to the Defender portal at a time. If y
 
 If you want to connect to a different workspace, from the **Workspaces** page, select the workspace and **Connect a workspace**.
 
-## Next steps
+## Related content
 
+- [Microsoft Sentinel in the Microsoft Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2263690)
+- [Advanced hunting in the Microsoft Defender portal](https://go.microsoft.com/fwlink/p/?linkid=226441)
+- [Automatic attack disruption in Microsoft Defender XDR](automatic-attack-disruption.md)
+- [Optimize your security operations with Microsoft Defender XDR](https://go.microsoft.com/fwlink/p/?linkid=2264237)
 - [Investigate incidents in Microsoft Defender XDR](investigate-incidents.md)
