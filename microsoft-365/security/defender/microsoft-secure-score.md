@@ -41,10 +41,6 @@ Organizations gain access to robust visualizations of metrics and trends, integr
 
 :::image type="content" source="../../media/secure-score/secure-score-home-page.png" alt-text="The Microsoft Secure Score homepage in the Microsoft Defender portal" lightbox="../../media/secure-score/secure-score-home-page.png":::
 
-> [!NOTE]
-> Currently, the Microsoft Entra related Microsoft Secure Score recommendations are not available for customer tenants registered in the following Microsoft Entra regions:
-Japan, Australia, New Zealand, Fiji, Canada, United Kingdom, South Korea, France, United Arab Emirates, South America, Switzerland, Liechtenstein, Norway, Germany, Brazil, Sweden, and Qatar.
-
 ## How it works
 
 You're given points for the following actions:
