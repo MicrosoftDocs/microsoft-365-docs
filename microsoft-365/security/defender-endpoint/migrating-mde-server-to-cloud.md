@@ -56,7 +56,7 @@ To enable Defender for Servers for Azure VMs and non-Azure machines connected th
 
 6. *Recommended:* If you want to see vulnerability findings in Defender for Cloud, make sure to enable [Microsoft Defender Vulnerability Management](/azure/defender-for-cloud/enable-data-collection?tabs=autoprovision-va) for Defender for Cloud.
 
-   :::image type="content" source="images/enable-threat-and-vulnerability-management.png" alt-text="Screenshot that shows how to enable vulnerability management." lightbox="images/enable-threat-and-vulnerability-management.png"::: 
+   :::image type="content" source="media/enable-threat-and-vulnerability-management.png" alt-text="Screenshot that shows how to enable vulnerability management." lightbox="media/enable-threat-and-vulnerability-management.png"::: 
 
 ## How do I migrate existing Azure VMs to Microsoft Defender for Cloud?
 

@@ -147,7 +147,7 @@ To see real-time activity for this media across the organization, select the **O
 To see the security of the device, select the **Open device page** button on the flyout. This button opens the device entity page.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/Devicesecuritypage.png" alt-text="The Device Entity Page" lightbox="images/Devicesecuritypage.png":::
+> :::image type="content" source="media/Devicesecuritypage.png" alt-text="The Device Entity Page" lightbox="media/Devicesecuritypage.png":::
 
 ### Reporting delays
 
