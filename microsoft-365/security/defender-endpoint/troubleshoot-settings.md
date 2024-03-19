@@ -43,28 +43,32 @@ Microsoft Defender Antivirus provides numerous ways to manage the product, which
 > [!TIP]
 > As a best practice, try sticking to one method of managing Microsoft Defender for Antivirus. 
 
-## Example: You're migrating from a non-Microsoft antivirus product and when you try enabling Microsoft Defender Antivirus, it won't start.
+Suppose that migrating from a non-Microsoft antivirus product, and when you try enabling Microsoft Defender Antivirus, it won't start. Most likely, you're experiencing a policy conflict. You can narrow down the issue by checking this registry key: `DisableAntispyware` (dword) 1 (hex) is set. 
 
-You can narrow down the issue with this registry key: `DisableAntispyware` (dword) 1 (hex) is set.
+To remove policy conflicts, here's our current, recommended processs:
 
-Our current recommendation is as follows:
+1. Understand the order of precedence.
+2. Determine where Microsoft Defender Antivirus settings are coming from.
+3. Identify policies and settings.
+4. Work with your security team to remove or revise policies and settings.
 
-1. (**Preferred**) Remove conflicting policies in GPO, Configuration Manager, your MDM tools, and/or non-Microsoft management solutions when moving to Defender for Endpoint security settings management or Intune for policy management.
+## Step 1: Understand the order of precedence
 
-   When policies and settings are configure in multiple tools, in general, here's the order of precedence:
+When policies and settings are configure in multiple tools, in general, here's the order of precedence:
 
-   1. Group Policy (GPO)
-   2. Microsoft Configuration Manager Co-Management
-   3. Microsoft Configuration Manager (standalone)
-   4. Microsoft Intune (MDM)
-   5. Microsoft Configuration Manager with Tenant Attach
-   6. PowerShell ([Set-MpPreference](/powershell/module/defender/set-mppreference)), [MpCmdRun.exe](command-line-arguments-microsoft-defender-antivirus.md), or [Windows Management Instrumentation](use-wmi-microsoft-defender-antivirus.md) (WMI).
+1. Group Policy (GPO)
+2. Microsoft Configuration Manager Co-Management
+3. Microsoft Configuration Manager (standalone)
+4. Microsoft Intune (MDM)
+5. Microsoft Configuration Manager with Tenant Attach
+6. PowerShell ([Set-MpPreference](/powershell/module/defender/set-mppreference)), [MpCmdRun.exe](command-line-arguments-microsoft-defender-antivirus.md), or [Windows Management Instrumentation](use-wmi-microsoft-defender-antivirus.md) (WMI).
 
-   > [!WARNING]
-   > [MDMWinsOverGP](/windows/client-management/mdm/policy-csp-controlpolicyconflict) which is a Policy (CSP) does not apply for all settings such as Attack Surface Reduction rules (ASR rules) in Windows 10.
+> [!WARNING]
+> [MDMWinsOverGP](/windows/client-management/mdm/policy-csp-controlpolicyconflict) which is a Policy (CSP) does not apply for all settings such as Attack Surface Reduction rules (ASR rules) in Windows 10.
  
+## Step 2: Determine where Microsoft Defender Antivirus settings are configured
 
-2. Find out whether Microsoft Defender Antivirus settings are coming through a policy, MDM, or a local setting. The following table describes policies, settings, and relevant tools.
+Find out whether Microsoft Defender Antivirus settings are coming through a policy, MDM, or a local setting. The following table describes policies, settings, and relevant tools.
 
 |Policy or setting| Registry location | Tools|
 | -------- | -------- | -------- |
@@ -72,7 +76,9 @@ Our current recommendation is as follows:
 |MDM|`HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\<Policy Manager>` |- Microsoft Intune (MDM)<br/>- Microsoft Configuration Manager with Tenant Attach|
 |Local setting|`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\<Windows Defender>`|- MpCmdRun.exe<br/>- PowerShell (Set-MpPreference)<br/>- Windows Management Instrumentation (WMI)|
 
-3. Find the name of the policy. The following table describes how to identify policies and settings.
+## Step 3: Identify policies or settings
+
+The following table describes how to identify policies and settings.
 
 |Method used | What to check |
 | -------- | -------- |
@@ -80,4 +86,6 @@ Our current recommendation is as follows:
 |MDM | If you're using Intune, on your device, select Start, open Command Prompt as an admin, and then run the command `mdmdiagnosticstool.exe -zip "c:\temp\MDMDiagReport.zip"`. See [Collect MDM logs - Windows Client Management](/windows/client-management/mdm-collect-logs). |
 |Local setting | Determine whether the policy or setting was deployed during the imaging (sysprep), via Powershell (e.g. Set-MpPreference), Windows Management Instrumentation (WMI), or through a direct modification to the registry.|
 
-4. Once you have identified the conflicting policy, work with your security administrators to change device targeting so that devices receive the correct Microsoft Defender Antivirus settings.
+## Step 4: Remove or revise conflicting policies
+
+Once you have identified the conflicting policy, work with your security administrators to change device targeting so that devices receive the correct Microsoft Defender Antivirus settings.
