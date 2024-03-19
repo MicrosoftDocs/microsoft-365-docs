@@ -7,7 +7,7 @@ author: chrisda
 manager: deniseb
 audience: ITPro
 ms.topic: conceptual
-ms.date: 3/13/2024
+ms.date: 3/18/2024
 ms.localizationpriority: medium
 ms.collection:
   - m365-security
@@ -1577,8 +1577,8 @@ To save queries in Threat Explorer, do the following steps:
      - **Exact dates**: Select a start date and end date in the boxes. The oldest start date that you can select is 30 days before today. The newest end date that you can select is today.
      - **Relative dates**: Select the number of days in the **Show last nn days when search is run**. The default value is 7, but you can select 1 to 30.
    - **Track query**: By default, this option isn't selected. This option affects whether the query runs automatically:
-     - **Track query** not selected: The query is available for you to run manually in Threat Explorer. The query is saved on the **Saved queries** tab on the **Threat tracker** page.
-     - **Track query** selected: The query periodically runs in the background. The results and the query are saved on the **Tracked queries** tab on the **Threat tracker** page.
+     - **Track query** not selected: The query is available for you to run manually in Threat Explorer. The query is saved on the **Saved queries** tab on the **Threat tracker** page with the **Tracked query** property value **No**.
+     - **Track query** selected: The query periodically runs in the background. The results of the query are stored on the **Tracked queries** tab on the **Threat tracker** page. The query is also available on the **Saved queries** tab on the **Threat tracker** page with the **Tracked query** property value **Yes**.
 
    When you're finished in the **Save query** flyout, select **Save**, and then select **OK** in the confirmation dialog.
 
