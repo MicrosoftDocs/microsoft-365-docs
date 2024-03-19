@@ -49,7 +49,6 @@ This article is updated frequently to let you know what's new in the latest rele
 There are multiple fixes and new changes in this release:
 
 - Addition of `microsoft_defender_scan_skip.log` file which logs scans that mdatp is unable to complete due to any reason.
-- MDE Attach support for Offline Security Intelligence Update.
 - Stability and performance improvements.
 - Bug fixes.
 
