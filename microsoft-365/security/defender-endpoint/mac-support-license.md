@@ -87,7 +87,7 @@ For scenarios where Microsoft Defender for Endpoint on macOS isn't up to date, y
 
 #### For Microsoft Defender for Endpoint on macOS having been offboarded
 
-When the offboarding script is executed on the macOS, it saves a file in /Library/Application Support/Microsoft/Defender/ and it's named com.microsoft.wdav.atp.offboarding.plist.
+When the offboarding script is executed on the macOS, it saves a file in `/Library/Application Support/Microsoft/Defender/` and it's named `com.microsoft.wdav.atp.offboarding.plist`.
 
 If the file exists, it will prevent the macOS from being onboarded again.  Delete the **com.microsoft.wdav.atp.offboarding.plist** running the onboarding script again.
 
