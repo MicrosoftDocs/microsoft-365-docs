@@ -88,7 +88,7 @@ Microsoft Entra B2B provides authentication and management of guests. External s
 
 ### Authentication
 
-External recipients might need to authenticate before they're able to access a document for signing. The type of authentication required by the external recipients depends on the configuration for guest users at the SharePoint level or at the tenant level. Additionally, if the external user belongs to an organization with a Microsoft 365 tenant, it's possible for their organization's setup to affect their authentication experience when attempting to sign the document. More details can be found: [Collaboration with guests in a site]https://learn.microsoft.com/en-us/microsoft-365/solutions/collaborate-in-site?view=o365-worldwide)
+External recipients might need to authenticate before they're able to access a document for signing. The type of authentication required by the external recipients depends on the configuration for guest users at the SharePoint level or at the tenant level. Additionally, if the external user belongs to an organization with a Microsoft 365 tenant, it's possible for their organization's setup to affect their authentication experience when attempting to sign the document. For more information, see [Collaboration with guests in a site](/microsoft-365/solutions/collaborate-in-site).
 
 ## Document storage and retention
 
