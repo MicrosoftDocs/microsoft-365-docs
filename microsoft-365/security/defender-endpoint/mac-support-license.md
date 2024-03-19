@@ -43,19 +43,19 @@ Select the **x** symbol.
 
 When you select the **x** symbol, you see options as shown in the following screenshot:
 
-:::image type="content" source="images/x-symbol-menu-items.png" alt-text="Screenshot that shows the option that get listed on selecting the x symbol.":::
+:::image type="content" source="images/x-symbol-menu-items.png" alt-text="Screenshot that shows the option that gets listed on selecting the x symbol.":::
 
-When you select **Action needed**, you'll get the error message as shown in the following screenshot:
+When you select **Action needed**, you get the error message as shown in the following screenshot:
 
 :::image type="content" source="images/license-not-found-message.png" alt-text="Screenshot of the page displaying the No license found message and its description.":::
 
-You'll encounter this message in a different way: If you're using the terminal to enter **mdatp health** without the double quotes, the message as shown in the following screenshot is displayed:
+You encounter this message in a different way: If you're using the terminal to enter **mdatp health** without the double quotes, the message as shown in the following screenshot is displayed:
 
 :::image type="content" source="images/no-license-found-warning.png" alt-text="Screenshot of the product page on which the No license found warning message is displayed.":::
 
 ### Cause
 
-1. You've deployed and/or installed the Microsoft Defender for Endpoint on macOS package [Download installation packages](mac-install-manually.md#download-installation-and-onboarding-packages), but might not have run the configuration script [Download the onboarding package](mac-install-with-intune.md#step-14-download-the-onboarding-package) that contains the license settings. For information on troubleshooting in this scenario, see [For not running the configuration script](#for-not-running-the-configuration-script).
+1. You've deployed and/or installed the Microsoft Defender for Endpoint on macOS package [Download installation packages](mac-install-manually.md#download-installation-and-onboarding-packages), but you might not have run the configuration script [Download the onboarding package](mac-install-with-intune.md#step-14-download-the-onboarding-package) that contains the license settings. For information on troubleshooting in this scenario, see [If you did not run the configuration script](#if-you-did-not-run-the-configuration-script).
 
 2. You can also encounter this error message when the Microsoft Defender for Endpoint on macOS agent isn't up to date. For information on troubleshooting in this scenario, see [If Microsoft Defender for Endpoint on macOS is not up to date](#if-microsoft-defender-for-endpoint-on-macos-is-not-up-to-date).
 
@@ -65,7 +65,7 @@ You'll encounter this message in a different way: If you're using the terminal t
 
 ### Solutions
 
-#### For not running the configuration script
+#### If you did not run the configuration script
 
 This section describes the troubleshooting measures when the error/warning message  is caused by non-execution of the configuration script that contains the license settings after you have deployed and/or installed the Microsoft Defender for Endpoint on macOS package.
 
