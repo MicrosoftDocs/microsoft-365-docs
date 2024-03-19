@@ -119,7 +119,7 @@ The output of above command should show no rules or any user added rules. In cas
 
 ### Troubleshooting and Diagnostics
 
-You can check the agent health status by running the **mdatp** health command. Make sure that the eBPF sensor for Defender for Endpoint on Linux is supported by checking the current kernel version by using the following command line:
+You can check the agent health status by running the `mdatp` health command. Make sure that the eBPF sensor for Defender for Endpoint on Linux is supported by checking the current kernel version by using the following command line:
 
 ```bash
 uname -a
@@ -127,14 +127,14 @@ uname -a
 
 #### Known Issues
 
-1. Enabling eBPF on RHEL 8.1 version with SAP might result in kernel panic. To mitigate this issue you can take one of the following steps:
+1. Enabling eBPF on RHEL 8.1 version with SAP might result in kernel panic. To mitigate this issue, you can take one of the following steps:
 
     - Use a distro version higher than RHEL 8.1.
-    - Switch to auditd mode if you need to use RHEL 8.1 version
+    - Switch to auditd mode if you need to use RHEL 8.1 version.
 
-2. Using Oracle Linux 8.8 with kernel version **5.15.0-0.30.20.el8uek.x86_64, 5.15.0-0.30.20.1.el8uek.x86_64** might result in kernel panic. To mitigate this issue you can take one of the following steps:
+2. Using Oracle Linux 8.8 with kernel version **5.15.0-0.30.20.el8uek.x86_64, 5.15.0-0.30.20.1.el8uek.x86_64** might result in kernel panic. To mitigate this issue, you can take one of the following steps:
 
-    - Use a kernel version higher or lower than **5.15.0-0.30.20.el8uek.x86_64, 5.15.0-0.30.20.1.el8uek.x86_64** on Oracle Linux 8.8 if you want to use eBPF as supplementary subsystem provider. Note that the minimum kernel version for Oracle Linux is RHCK 3.10.0 and Oracle Linux UEK is 5.4
+    - Use a kernel version higher or lower than **5.15.0-0.30.20.el8uek.x86_64, 5.15.0-0.30.20.1.el8uek.x86_64** on Oracle Linux 8.8 if you want to use eBPF as supplementary subsystem provider. Note that the minimum kernel version for Oracle Linux is RHCK 3.10.0 and Oracle Linux UEK is 5.4.
     - Switch to auditd mode if you need to use the same kernel version
 
 ```bash
@@ -154,6 +154,7 @@ If you see a hike in resource consumption by Microsoft Defender on your endpoint
 ```Bash
 sudo mdatp diagnostic  ebpf-statistics
 ```
+
 ```Output
 Output
 Monitor 20 seconds
@@ -178,7 +179,8 @@ Top syscall ids:
 90 : 10
 87 : 3
 ``` 
-In the above output, you can see that stress-ng is the top process generating large number of events and might result into performance issues. Most likely stress-ng is generating the system call with ID 82. You can create a ticket with Microsoft to get this process excluded. In future as part of upcoming enhancements, you'll have more control to apply such exclusions at your end.
+
+In the above output, you can see that stress-ng is the top process generating large number of events and might result into performance issues. Most likely stress-ng is generating the system call with ID 82. You can create a ticket with Microsoft to get this process excluded. In future as part of upcoming enhancements, you have more control to apply such exclusions at your end.
 
 Exclusions applied to auditd can't be migrated or copied to eBPF. Common concerns such as noisy logs, kernel panic, noisy syscalls are already taken care of by eBPF internally. In case you want to add any further exclusions, then reach out to Microsoft to get the necessary exclusions applied. 
 
