@@ -38,7 +38,7 @@ Combine the power of Microsoft Sentinel with Microsoft Defender XDR into a singl
 
 ## Prerequisites
 
-Before you begin, review the feature documentation to understand the product changes and limitations. The feature documentation is provided with your invitation to participate in the preview.
+Before you begin, review the feature documentation to understand the product changes and limitations. Start with [Microsoft Sentinel in the Microsoft Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2263690).
 
 The Microsoft Defender portal supports a single Microsoft Entra tenant and the connection to one workspace at a time. In the context of this article, a workspace is a Log Analytics workspace with Microsoft Sentinel enabled.
 
