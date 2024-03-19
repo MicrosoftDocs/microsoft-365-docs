@@ -170,16 +170,7 @@ You can manage your teams when changes happen in your organization.
 
 ## Get analytics on frontline teams usage
 
-The [Teams usage report](/microsoft-365/admin/activity-reports/microsoft-teams-usage-activity) in  Teams admin center gives you an overview of usage activity in Teams. You can use the report to view usage details for your frontline teams, including active users, active channels, total organized meetings, last activity date, and other information.
-
-1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com), **choose Analytics & reports** > **Usage reports**.
-1. On the **View reports** tab, under **Report**, select **Teams usage**.
-1. Under **Date range**, select a date range of 7 days, 30 days, 90 days, or 180 days. Then, choose **Run report**.
-1. In the upper-right corner, select **Export to Excel** > **Export table as CSV**.
-1. Filter the spreadsheet based on your frontline team IDs. 
-
-    > [!NOTE]
-    > To get a list of your frontline team IDs, in the Teams admin center, go to **Frontline deployment** > **Manage frontline teams**, and then in the **Frontline teams** section, select **Download CSV**.
+The [Teams frontline usage report](frontline-usage-report.md) on the usage dashboard of the Manage frontline teams page gives you an overview of usage activity in Teams for each of your frontline locations. You can use the report to view usage data on active users, including last activity date, and other information.
 
 ## Frequently asked questions
 
