@@ -29,13 +29,13 @@ ms.date: 03/12/2024
 
 This document describes the *Offline Security Intelligence Update* feature of Microsoft Defender for Endpoint on Linux.
 
-This feature enables organizations to download *security intelligence* (also referred to as definitions or signatures in this document) on Linux endpoints that are not exposed to the internet via a local hosting server (termed as *Mirror Server* in this document).
+This feature enables organizations to download *security intelligence* (also referred to as definitions or signatures in this document) on Linux endpoints that aren't exposed to the internet via a local hosting server (termed as *Mirror Server* in this document).
 
 The Mirror Server is any server in the customer's environment that can connect to the Microsoft cloud to download the signatures. Other Linux endpoints pull the signatures from the Mirror Server at a predefined interval.
 
 Key benefits include:
 
-- Customers who have server environments that are not exposed to the internet can now benefit by being able to download and enable the latest security intelligence updates in a controlled manner.
+- Customers who have server environments that aren't exposed to the internet can now benefit by being able to download and enable the latest security intelligence updates in a controlled manner.
 
 - Control and manage the frequency of signature downloads on the local server.
 
@@ -43,15 +43,15 @@ Key benefits include:
 
 - Test the downloaded signatures on a test device before propagating it to the entire fleet, providing greater security and control.
 
-- Now, on behalf of your entire fleet, only one local server will poll Microsoft cloud to get the latest signatures. Thus, reducing network bandwidth.
+- Now, on behalf of your entire fleet, only one local server polls the Microsoft cloud to get the latest signatures. This action helps reduce network bandwidth.
 
-- Local server can run any of the 3 OS - Windows, Mac, Linux, and is not required to install Defender for Endpoint.
+- Local server can run any of the three OS - Windows, Mac, Linux, and isn't required to install Defender for Endpoint.
 
 - Signatures are always downloaded along with the latest compatible AV engine. Thus, keeping AV engine + signatures updated after every cycle.
 
-- In each iteration, signature with n-1 version is moved to a backup folder on the local server. If there is any issue with the latest signature, you can pull the n-1 signature version from the backup folder to your endpoints.
+- In each iteration, signature with n-1 version is moved to a backup folder on the local server. If there's any issue with the latest signature, you can pull the n-1 signature version from the backup folder to your endpoints.
 
-- If the offline update fails, you can also choose to fallback to online update directly from the Microsoft cloud.
+- If the offline update fails, you can also choose to fall back to online update directly from the Microsoft cloud.
 
 ## How Offline Security Intelligence Update works
 
@@ -61,18 +61,19 @@ Key benefits include:
 - Signatures pulled on the Linux endpoints from the local server are first verified before loading it into the AV engine.
 - To trigger and configure the update process, update the managed config json file on the Linux endpoints.
 - The status of the update can be seen on the mdatp CLI.
-
-![fig 1](./offline-update-diag-1.png)
+- 
+:::image type="content" source="./media/offline-update-diag-1.png" alt-text="Process flow diagram on the Mirror Server for downloading the security intelligence updates" lightbox="./media/offline-update-diag-2.png":::
 Fig. 1: Process flow diagram on the Mirror Server for downloading the security intelligence updates
 
-![fig 2](./offline-update-diag-2.png)
+:::image type="content" source="./media/offline-update-diag-2.png" alt-text="Process flow diagram on the Linux endpoint for security intelligence updates" lightbox="./media/offline-update-diag-2.png":::
+
 Fig. 2: Process flow diagram on the Linux endpoint for security intelligence updates
 
 ## Prerequisites
 
-- MDE version "101.24022.0001" or higher in InsiderSlow ring needs to be installed on the Linux endpoints. 
+- Defender for Endpoint version "101.24022.0001" or higher in InsiderSlow ring needs to be installed on the Linux endpoints. 
   > [!NOTE]
-  > This version of MDE Linux will be rolled out to Production ring in the next couple of weeks.
+  > This version of Defender for Endpoint on Linux will be rolled out to the Production ring soon.
 - The Linux endpoints need to have connectivity to the Mirror Server.
 - The Mirror Server can be either an HTTP/ HTTPS server or a network share server. For example, an NFS Server.
 - The Mirror Server needs to have access to the following URLs:
@@ -92,7 +93,7 @@ Fig. 2: Process flow diagram on the Linux endpoint for security intelligence upd
     > [!NOTE]
     > This configuration may vary depending on the number of requests that are served and the load each server must process.
 
-- The Linux endpoint must be running any of the MDE supported distributions.
+- The Linux endpoint must be running any of the Defender for Endpoint supported distributions.
 
 
 ## Configuring the Mirror Server
@@ -101,7 +102,7 @@ Fig. 2: Process flow diagram on the Linux endpoint for security intelligence upd
 > The management and ownership of the Mirror Server lies solely with the customer as it resides in the customer's private environment. The Mirror Server's management and maintenance ownership lies with the customers since the Mirror Server resides in the customer's private environment and Microsoft will have no visibility into it.
 
 > [!NOTE]
-> The Mirror Server does not need to have MDE installed.
+> The Mirror Server does not need to have Defender for Endpoint installed.
 
 ### Get the offline security intelligence downloader script
 
@@ -255,7 +256,7 @@ offline_definition_update_fallback_to_cloud : false
 
 ### Issues: MDATP update failure
 
-- Update stuck or update did not trigger
+- Update stuck or update didn't trigger
 - Update failed
 
 ### Common Troubleshooting Steps
