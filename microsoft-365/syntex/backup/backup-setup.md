@@ -239,14 +239,16 @@ Only tenant-level admins can create and manage backups using Microsoft 365 Backu
 
 - **RTO** – Recovery time objective, or how fast a restore to a prior point in time can complete.
 
-M365 Backup - Billing attribution by tenants, applications and service type  
+## Billing attribution by tenant, application, and service type  
 
-Manage consumption and invoices in Azure portal
+### Manage consumption and invoices in the Azure portal
 
-Now you can view actual and accumulated cost breakdown by tenants and service type: OneDrive, SharePoint, Exchange in Azure Cost and Invoice management or access them via Azure Cost Management public APIS. Cost breakdown by application ID is coming soon. 
+Now you can view actual and accumulated cost breakdown by tenant and service type for OneDrive, SharePoint, and Exchange in Microsoft Cost Management in the Azure portal or access them by using the [Cost Management public APIs](/rest/api/cost-management/operation-groups). Cost breakdown by application ID is coming soon.
 
-1. Sign in to Azure Portal.
-2. Search for Cost Management + Billing.
+1. Sign in to [Azure portal](https://portal.azure.com/).
+
+2. Search for *Cost Management + Billing*.
+
 3. Select Cost Analysis to see:
     - Actual cost and forecast cost
  
