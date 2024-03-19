@@ -1561,11 +1561,11 @@ The steps to create property filter/query conditions are the same in all views i
 ### Saved queries in Threat Explorer
 
 > [!TIP]
-> **Save query** isn't available in Real-time detections. It's available only in Threat Explorer.
+> **Save query** is part of [Threat trackers](threat-trackers.md) and isn't available in Real-time detections. It's available only in Threat Explorer.
 >
 > **Save query** isn't available in the [Content malware view](#content-malware-view-in-threat-explorer-and-real-time-detections).
 
-Most views in Threat Explorer allow you to save filters (queries) for later use. Saved queries are available on the **Threat tracker** page in the Defender portal at <https://security.microsoft.com/threattrackerv2>. For more information about Threat trackers, see [About Threat trackers](threat-trackers.md).
+Most views in Threat Explorer allow you to save filters (queries) for later use. Saved queries are available on the **Threat tracker** page in the Defender portal at <https://security.microsoft.com/threattrackerv2>. For more information about Threat trackers, see [Threat trackers in Microsoft Defender for Office 365 Plan 2](threat-trackers.md).
 
 To save queries in Threat Explorer, do the following steps:
 
@@ -1586,7 +1586,7 @@ To save queries in Threat Explorer, do the following steps:
 
 On the **Saved query** or **Tracked query** tabs on the **Threat tracker** page in the Defender portal at <https://security.microsoft.com/threattrackerv2>, you can select **Explore** in the **Actions** column to open and use the query in Threat Explorer.
 
-When you open the query from the **Threat tracker** page, :::image type="icon" source="../../media/m365-cc-sc-save-icon.png" border="false"::: **Save query as** and :::image type="icon" source="../../media/m365-cc-sc-gear-icon.png" border="false"::: **Saved query settings** are now available in **Save query** on the **Explorer** page:
+When you open the query by selecting **Explore** from the **Threat tracker** page, :::image type="icon" source="../../media/m365-cc-sc-save-icon.png" border="false"::: **Save query as** and :::image type="icon" source="../../media/m365-cc-sc-gear-icon.png" border="false"::: **Saved query settings** are now available in **Save query** on the **Explorer** page:
 
 - If you select :::image type="icon" source="../../media/m365-cc-sc-save-icon.png" border="false"::: **Save query as**, the **Save query** flyout opens with all previously selected settings. If you make changes, select **Save**, and then select **OK** in the **Success** dialog, the updated query is saved as a new query on the **Threat tracker** page (you might need to select :::image type="icon" source="../../media/m365-cc-sc-refresh-icon.png" border="false":::**Refresh** to see it).
 
