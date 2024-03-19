@@ -39,7 +39,7 @@ Key benefits include:
 - Adds an extra layer of protection & control as the downloaded signatures can be tested on a test device before being propagated to the entire fleet.
 - Reduces network bandwidth as now only one local server will poll MS cloud to get the latest signatures on behalf of your entire fleet. 
 - Local server can run any of the three OS - Windows, Mac, Linux, and isn't required to install Defender for Endpoint.
-- Provides the most up to date antivirus protections as signatures are always downloaded along with the latest compatible AV engine. 
+- Provides the most up to date antivirus protection as signatures are always downloaded along with the latest compatible AV engine. 
 - In each iteration, signature with n-1 version is moved to a backup folder on the local server. If there's any issue with the latest signature, you can pull the n-1 signature version from the backup folder to your endpoints.
 - On the rare occasion the offline update fails, you can also choose to fallback to online updates from Microsoft cloud(traditional method).
 
