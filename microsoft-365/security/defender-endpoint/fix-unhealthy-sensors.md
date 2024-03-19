@@ -90,7 +90,7 @@ If the devices aren't reporting correctly, you should verify that the Windows di
 - [Ensure that Microsoft Defender Antivirus isn't disabled by policy](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)</br>
 If your devices are running a third-party antimalware client, Defender for Endpoint agent requires that the Microsoft Defender Antivirus Early Launch Antimalware (ELAM) driver is enabled.
 
-- Microsoft Defender for Endpoint on macOS this is expected if the devices go to 'sleep' over the weekend (~2 days, 48 hours) since it's still sending Command and Control ( CnC) channel data but not sending any Cyber channel data.  Once the machines are turned on, and used on the first business day, they will show up as active.
+- For macOS devices that go to 'sleep' for a period of time (approx 48 hours), Microsoft Defender for Endpoint on macOS still sends Command and Control (CnC) channel data, but does not send any Cyber channel data. After the devices are turned on and used on the first business day, the devices will show up as active.
 
 If you took corrective actions and the device status is still misconfigured, [open a support ticket](https://go.microsoft.com/fwlink/?LinkID=761093&clcid=0x409).
 
