@@ -32,6 +32,8 @@
       href: m365bp-managed-unmanaged-devices.md
     - name: Set up information protection
       href: m365bp-set-up-compliance.md
+    - name: Secure Microsoft Copilot for Microsoft 365 
+      href: m365bp-secure-copilot.md
 - name: Step 3 - Set up unmanaged (BYOD) devices
   items:
     - name: Overview
