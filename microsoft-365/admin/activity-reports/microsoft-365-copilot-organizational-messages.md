@@ -57,7 +57,7 @@ There are certain policies, if not configured properly, that can block the deliv
 
 ## Getting started
 
-In the Microsoft 365 admin center, go to **Reports** > **Usage > Microsoft 365 Copilot**.
+In the Microsoft 365 admin center, go to **Reports** > **Usage > Copilot for Microsoft 365**.
 
 :::image type="content" source="../../media/copilot-usage-adoption-page.png" alt-text="Screenshot showing the Microsoft 365 Copilot usage dashboard with information about organization adoption." lightbox="../../media/copilot-usage-adoption-page.png":::
 
