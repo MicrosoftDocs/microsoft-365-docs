@@ -44,7 +44,7 @@ To understand how cloud protection works together with sample submission, it can
 
 The following image depicts the flow of cloud protection and sample submission with Microsoft Defender Antivirus:
 
-:::image type="content" source="images/cloud-protection-flow.png" alt-text="Cloud-delivered protection flow" lightbox="images/cloud-protection-flow.png":::
+:::image type="content" source="media/cloud-protection-flow.png" alt-text="Cloud-delivered protection flow" lightbox="media/cloud-protection-flow.png":::
 
 Microsoft Defender Antivirus and cloud protection automatically block most new, never-before-seen threats at first sight by using the following methods:
 
@@ -107,7 +107,7 @@ For information about configuration options using Intune, Configuration Manager,
 
 ## Examples of metadata sent to the cloud protection service
 
-:::image type="content" source="images/cloud-protection-metadata-sample.png" alt-text="The examples of metadata sent to cloud protection in the Microsoft Defender Antivirus portal" lightbox="images/cloud-protection-metadata-sample.png":::
+:::image type="content" source="media/cloud-protection-metadata-sample.png" alt-text="The examples of metadata sent to cloud protection in the Microsoft Defender Antivirus portal" lightbox="media/cloud-protection-metadata-sample.png":::
 
 The following table lists examples of metadata sent for analysis by cloud protection:
 

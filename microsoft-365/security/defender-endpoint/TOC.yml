@@ -271,8 +271,12 @@
            href: schedule-antivirus-scan-in-mde.md
          - name: Schedule an update of the Microsoft Defender for Endpoint (Linux)
            href: linux-update-MDE-Linux.md
+         - href: linux-support-offline-security-intelligence-update.md
+           name: Configure Offline Security Intelligence Updates for Defender for Endpoint on Linux
          - name: Configure eBPF-based sensor
            href: linux-support-ebpf.md 
+         - name: Configure Offline Security Intelligence Update
+           href: linux-support-offline-security-intelligence-update.md
        - name: Update Defender for Endpoint on Linux
          href: linux-updates.md
        - name: Privacy for Defender for Endpoint on Linux
@@ -954,6 +958,22 @@
 
   - name: Reference
     items:
+    - name: Microsoft Security Resources
+      items: 
+        - name: Threat actor naming
+          href: ../defender/microsoft-threat-actor-naming.md
+        - name: Malware names
+          href: ../defender/malware-naming.md
+        - name: How Microsoft identifies malware and PUA
+          href: ../defender/criteria.md
+        - name: Submit files for analysis
+          href: ../defender/submission-guide.md
+        - name: Troubleshoot MSI portal errors caused by admin block
+          href: ../defender/portal-submission-troubleshooting.md
+        - name: Microsoft virus initiative
+          href: ../defender/virus-initiative-criteria.md
+        - name: Software developer FAQ
+          href: ../defender/developer-faq.yml
     - name: Malware information
       items: 
        - name: Coinminers
