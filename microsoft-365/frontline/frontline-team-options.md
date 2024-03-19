@@ -32,7 +32,7 @@ For dynamic groups, users need one of the following licenses: Microsoft 365 F1, 
 ### Key considerations
 
 - You can choose a mix of dynamic frontline teams and static frontline teams for your organization.
-- You can convert static frontline teams to dynamic frontline teams in the [Microsoft Entra admin center](/azure/active-directory/enterprise-users/groups-change-type) by converting the group membership type to Dynamic and setting your dynamic team membership rules. Teams you convert with this method aren't currently possible to view in the Dynamic team management view in the Teams admin center, but this functionality is planned for future releases.
+- You can convert static frontline teams to dynamic frontline teams in the Microsoft Entra admin center by [converting the group membership type to Dynamic and setting your dynamic team membership rules](/entra/identity/users/groups-change-type). Teams you convert with this method aren't currently possible to view in the Dynamic team management view in the Teams admin center, but this functionality is planned for future releases.
 
 ## When should I choose dynamic teams?
 
