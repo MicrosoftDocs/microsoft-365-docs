@@ -93,3 +93,15 @@ For more information, see [Unified cloud.microsoft domain for Microsoft 365 apps
 [Microsoft Trust Center](https://microsoft.com/trustcenter)
 
 [Optimize Microsoft 365 or Office 365 connectivity for remote users using VPN split tunneling](/Office365/Enterprise/office-365-vpn-split-tunnel)
+
+[Understand how security works in Microsoft Viva](/viva/viva-security)
+
+[Security guide for Microsoft Teams overview](/microsoftteams/teams-security-guide)
+
+[Security in Microsoft Teams](/microsoftteams/security-compliance-overview#security)
+
+[Windows operating system security](/windows/security/operating-system-security/)
+
+[Dynamics 365 security](/dynamics365/get-started/security)
+
+[Security in Microsoft Cloud for Retail](/industry/retail/security-overview)

@@ -86,3 +86,15 @@ If Microsoft 365 processes any personal data based on consent, you may have the 
 ## Contact Details of Microsoft's Data Protection Officer
 
 If you have a privacy concern, complaint or question for the Microsoft Chief Privacy Officer and EU Data Protection Officer, please contact us by using [our web form](https://go.microsoft.com/fwlink/?LinkId=321116). Our EU Data Protection Officer is located at Microsoft Place, South County Business Park, Leopardstown, Dublin 18, Ireland. Telephone: +353 1 706 3117. You can also raise a concern or lodge a complaint with a data protection authority or other official with jurisdiction.
+
+## Related articles
+
+[Windows Privacy Compliance Guide](/windows/privacy/windows-10-and-privacy-compliance)
+
+[Understand how privacy works in Microsoft Viva](/viva/viva-privacy)
+
+[Microsoft Teams privacy](/microsoftteams/teams-privacy)
+
+[Overview of privacy controls for Microsoft 365 Apps for enterprise](/deployoffice/privacy/overview-privacy-controls)
+
+
