@@ -85,13 +85,13 @@ Depending on the deployment management tool used, follow the tool-specific instr
 
 For scenarios where Microsoft Defender for Endpoint on macOS isn't up to date, you'll need to [update](mac-updates.md) the agent.
 
-#### For Microsoft Defender for Endpoint on macOS having been offboarded
+#### If Microsoft Defender for Endpoint on macOS has been offboarded
 
 When the offboarding script is executed on the macOS, it saves a file in `/Library/Application Support/Microsoft/Defender/` and it's named `com.microsoft.wdav.atp.offboarding.plist`.
 
 If the file exists, it will prevent the macOS from being onboarded again.  Delete the **com.microsoft.wdav.atp.offboarding.plist** running the onboarding script again.
 
-#### For not assigning a license to the user
+#### If a license isn't assigned to a user
 
 1. In the Microsoft Defender portal (security.microsoft.com), select **Settings**, and then select **Endpoints**.
        
