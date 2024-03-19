@@ -29,19 +29,19 @@ ms.date: 03/12/2024
 
 This document describes the Offline Security Intelligence Update feature of Microsoft Defender for Endpoint on Linux.
 
-This feature enables organization to update the security intelligence (also referred to as definitions or signatures in this document) on Linux endpoints with limited or no exposure to the internet with the help of a local hosting server (termed as *Mirror Server* in this document).
+This feature enables an organization to update the security intelligence (also referred to as definitions or signatures in this document) on Linux endpoints with limited or no exposure to the internet using a local hosting server (termed as *Mirror Server* in this document).
 
 Mirror Server is any server in the customer's environment that can connect to the Microsoft cloud to download the signatures. Other Linux endpoints pull the signatures from the Mirror Server at a predefined interval.
 
 Key benefits include:
 
 - Ability to control and manage the frequency of signature downloads on the local server & the frequency at which endpoints pull the signatures from the local server.
-- Adds an extra layer of protection & control as the downloaded signatures can be tested on a test device before propagating it to the entire fleet
-- Reduces network bandwidth as now, on behalf of your entire fleet, only one local server will poll MS cloud to get the latest signatures
+- Adds an extra layer of protection & control as the downloaded signatures can be tested on a test device before being propagating to the entire fleet.
+- Reduces network bandwidth as now only one local server will poll MS cloud to get the latest signatures on behalf of your entire fleet. 
 - Local server can run any of the three OS - Windows, Mac, Linux, and isn't required to install Defender for Endpoint.
-- Provides latest antivirus protections as signatures are always downloaded along with the latest compatible AV engine. 
+- Provides the most up to date antivirus protections as signatures are always downloaded along with the latest compatible AV engine. 
 - In each iteration, signature with n-1 version is moved to a backup folder on the local server. If there's any issue with the latest signature, you can pull the n-1 signature version from the backup folder to your endpoints.
-- On the rare occasion offline update fails,you can also choose to fallback to online update from Microsoft cloud(traditional method)
+- On the rare occasion the offline update fails, you can also choose to fallback to online updates from Microsoft cloud(traditional method).
 
 ## How Offline Security Intelligence Update works
 
