@@ -275,6 +275,8 @@
            name: Configure Offline Security Intelligence Updates for Defender for Endpoint on Linux
          - name: Configure eBPF-based sensor
            href: linux-support-ebpf.md 
+         - name: Configure Offline Security Intelligence Update
+           href: linux-support-offline-security-intelligence-update.md
        - name: Update Defender for Endpoint on Linux
          href: linux-updates.md
        - name: Privacy for Defender for Endpoint on Linux
