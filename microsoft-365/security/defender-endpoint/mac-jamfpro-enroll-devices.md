@@ -1,34 +1,31 @@
 ---
 title: Enroll Microsoft Defender for Endpoint on macOS devices into Jamf Pro
 description: Enroll Microsoft Defender for Endpoint on macOS devices into Jamf Pro
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamfpro, macos, big sur, monterey, ventura, mde for mac
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
-ms.topic: conceptual
-ms.subservice: mde
+- mde-macos
+ms.topic: how-to
+ms.subservice: macos
 search.appverid: met150
 ms.date: 12/18/2020
 ---
 
 # Enroll Microsoft Defender for Endpoint on macOS devices into Jamf Pro
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
@@ -47,37 +44,37 @@ For a complete list, see [About Computer Enrollment](https://docs.jamf.com/9.9/c
 
 1. In the Jamf Pro dashboard, navigate to **Enrollment invitations**.
 
-   :::image type="content" source="images/a347307458d6a9bbfa88df7dbe15398f.png" alt-text="The configuration settings1" lightbox="images/a347307458d6a9bbfa88df7dbe15398f.png":::
+   :::image type="content" source="media/a347307458d6a9bbfa88df7dbe15398f.png" alt-text="The configuration settings1" lightbox="media/a347307458d6a9bbfa88df7dbe15398f.png":::
 
 2. Select **+ New**.
 
-   :::image type="content" source="images/b6c7ad56d50f497c38fc14c1e315456c.png" alt-text="The close up of a logo description automatically generated" lightbox="images/b6c7ad56d50f497c38fc14c1e315456c.png":::
+   :::image type="content" source="media/b6c7ad56d50f497c38fc14c1e315456c.png" alt-text="The close up of a logo description automatically generated" lightbox="media/b6c7ad56d50f497c38fc14c1e315456c.png":::
 
 3. In **Specify Recipients for the Invitation** > under **Email Addresses** enter the e-mail address(es) of the recipients.
 
-    :::image type="content" source="images/718b9d609f9f77c8b13ba88c4c0abe5d.png" alt-text="The configuration settings2" lightbox="images/718b9d609f9f77c8b13ba88c4c0abe5d.png":::
+    :::image type="content" source="media/718b9d609f9f77c8b13ba88c4c0abe5d.png" alt-text="The configuration settings2" lightbox="media/718b9d609f9f77c8b13ba88c4c0abe5d.png":::
 
-    :::image type="content" source="images/ae3597247b6bc7c5347cf56ab1e820c0.png" alt-text="The configuration settings3" lightbox="images/ae3597247b6bc7c5347cf56ab1e820c0.png":::
+    :::image type="content" source="media/ae3597247b6bc7c5347cf56ab1e820c0.png" alt-text="The configuration settings3" lightbox="media/ae3597247b6bc7c5347cf56ab1e820c0.png":::
 
     For example: janedoe@contoso.com
 
-    :::image type="content" source="images/4922c0fcdde4c7f73242b13bf5e35c19.png" alt-text="The configuration settings4" lightbox="images/4922c0fcdde4c7f73242b13bf5e35c19.png":::
+    :::image type="content" source="media/4922c0fcdde4c7f73242b13bf5e35c19.png" alt-text="The configuration settings4" lightbox="media/4922c0fcdde4c7f73242b13bf5e35c19.png":::
 
 4. Configure the message for the invitation.
 
-   :::image type="content" source="images/ce580aec080512d44a37ff8e82e5c2ac.png" alt-text="The configuration settings5" lightbox="images/ce580aec080512d44a37ff8e82e5c2ac.png":::
+   :::image type="content" source="media/ce580aec080512d44a37ff8e82e5c2ac.png" alt-text="The configuration settings5" lightbox="media/ce580aec080512d44a37ff8e82e5c2ac.png":::
 
-   :::image type="content" source="images/5856b765a6ce677caacb130ca36b1a62.png" alt-text="The configuration settings6" lightbox="images/5856b765a6ce677caacb130ca36b1a62.png":::
+   :::image type="content" source="media/5856b765a6ce677caacb130ca36b1a62.png" alt-text="The configuration settings6" lightbox="media/5856b765a6ce677caacb130ca36b1a62.png":::
 
-   :::image type="content" source="images/3ced5383a6be788486d89d407d042f28.png" alt-text="The configuration settings7" lightbox="images/3ced5383a6be788486d89d407d042f28.png":::
+   :::image type="content" source="media/3ced5383a6be788486d89d407d042f28.png" alt-text="The configuration settings7" lightbox="media/3ced5383a6be788486d89d407d042f28.png":::
 
-   :::image type="content" source="images/54be9c6ed5b24cebe628dc3cd9ca4089.png" alt-text="The configuration settings8" lightbox="images/54be9c6ed5b24cebe628dc3cd9ca4089.png":::
+   :::image type="content" source="media/54be9c6ed5b24cebe628dc3cd9ca4089.png" alt-text="The configuration settings8" lightbox="media/54be9c6ed5b24cebe628dc3cd9ca4089.png":::
 
 ## Enrollment Method 2: Prestage Enrollments
 
 1. In the Jamf Pro dashboard, navigate to **Prestage enrollments**.
 
-   :::image type="content" source="images/6fd0cb2bbb0e60a623829c91fd0826ab.png" alt-text="The configuration settings9" lightbox="images/6fd0cb2bbb0e60a623829c91fd0826ab.png":::
+   :::image type="content" source="media/6fd0cb2bbb0e60a623829c91fd0826ab.png" alt-text="The configuration settings9" lightbox="media/6fd0cb2bbb0e60a623829c91fd0826ab.png":::
 
 2. Follow the instructions in [Computer PreStage Enrollments](https://docs.jamf.com/9.9/casper-suite/administrator-guide/Computer_PreStage_Enrollments.html).
 
@@ -106,3 +103,4 @@ For a complete list, see [About Computer Enrollment](https://docs.jamf.com/9.9/c
 6. Select **Continue**  to complete the configuration.
 
    :::image type="content" source="images/jamfpro-mdm-profile.png" alt-text="The Jamf Pro enrollment6" lightbox="images/jamfpro-mdm-profile.png":::
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

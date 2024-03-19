@@ -28,7 +28,7 @@ description: "Learn how to send messages to your organization in Microsoft 365 u
 
 # Adoption Score Organizational Messages
 
-Organizational messages enable IT admins to deliver clear, actionable messages in-product and in a targeted way, while maintaining user-level privacy. Organizational messages in Adoption Score use targeted in-product notifications to advise on Microsoft 365 recommended practices based on Adoption Score insights. Users can be reminded to use products that have recently been deployed, encouraged to try a product on a different surface, or to recommend new ways of working, such as using @mentions to improve response rates in communications. Templated messages are delivered to users in their flow of work through surfaces including Outlook, Excel, PowerPoint, and Word. Authorized professionals can use the organizational messages wizard in Adoption Score to choose from up to three templated message types, define when and how often a message can be displayed, and exclude groups or priority accounts from receiving the message.
+Organizational messages enable IT admins to deliver clear, actionable messages in-product and in a targeted way, while maintaining user-level privacy. Organizational messages in Adoption Score use targeted in-product notifications to advise on Microsoft 365 recommended practices based on Adoption Score insights. Users can be reminded to use products that have recently been deployed, encouraged to try a product on a different surface, or to recommend new ways of working, such as using @mentions to improve response rates in communications. Templated messages are delivered to users in their flow of work through surfaces including Outlook, Excel, PowerPoint, Word, and new Teams. Authorized professionals can use the organizational messages wizard in Adoption Score to choose from up to three templated message types, define when and how often a message can be displayed, and exclude groups or priority accounts from receiving the message.
 
 Organizational messages for Adoption Score will initially roll out to Communication, Content Collaboration, Mobility, and more to follow to support all People Experience categories. Check out the [2022 Ignite session](https://ignite.microsoft.com/en-US/sessions/ff17a80f-2fa6-4e52-b92c-745f0ca8d574?source=sessions) for a detailed demonstration and feature description.
 
@@ -55,7 +55,7 @@ The organizational message writer role is the new built-in role that allows assi
 
 ## Where will the messages appear?
 
-In this preview, we support the teaching call-out and business bars in Word, Excel, PowerPoint, and Outlook Desktop Apps..
+In this preview, we support the teaching call-out and business bars in Word, Excel, PowerPoint, and Outlook Desktop Apps.
 Business bars are supported by Microsoft 365 Consumer subscribers, Office 2019, Office 2016, Office 2013, and Office 2010.
 
 :::image type="content" source="../../media/org-message-location-bar-expanded.jpg" alt-text="In-product notification recommending to use Teams messages" lightbox="../../media/org-message-location-bar-expanded.jpg":::
@@ -70,7 +70,7 @@ The desktop teaching call-out is supported by Microsoft 365 Consumer and Commerc
 
 ## How to enable Adoption Score Organizational Messages
 
-To enable Adoption Score Organizational Message, the global administrator needs to enable Adoption Score first:
+To enable Adoption Score Organizational Messages, the global administrator needs to enable Adoption Score first:
 
 1. Sign in to the [admin center](https://admin.microsoft.com/) as a global administrator and go to **Reports** \> **Adoption Score**
 
@@ -87,7 +87,7 @@ Visit [privacy controls for Adoption Score](privacy.md) to understand how to ena
 
 :::image type="content" source="../../media/org-message-adoption-score.png" alt-text="Screenshot: How to enable Organizational Messages in Adoption Score." lightbox="../../media/org-message-adoption-score-expanded.jpg":::
 
-## Getting Started
+## Getting started
 
 In the Microsoft 365 admin center, go to **Reports** \> **Adoption Score.**
 
@@ -101,7 +101,7 @@ As global administrator or organizational message writer role, you can do any of
 
 - Choose a message from a set of templated content for business bars or teaching call-outs
 
-- Select the recipients based on user activities, Azure AD user groups, and group level aggregates
+- Select the recipients based on user activities, Microsoft Entra user groups, and group level aggregates
 
 - Schedule a time frame and frequency for delivery of the messages
 
@@ -133,7 +133,7 @@ As global administrator or organizational message writer role, you can do any of
 
 2. Select **Apply filter** \> **Choose organizational attribute**
 
-    - **Groups**: In addition to the default recipients, you can send messages to specific Azure AD user groups
+    - **Groups**: In addition to the default recipients, you can send messages to specific Microsoft Entra user groups
 
     - **Companies, Country (State) - City, Departments**: Using group-level aggregates, you can apply attributes filter such as attributes like location, departments, and companies to target specific groups of audiences. [Learn more about how to open Group Level Aggregates and validate data accuracy](group-level-aggregates.md).
 
@@ -219,7 +219,7 @@ A: For any given message, not every user **in its selected audience** (selected 
 
 ### Q: How can I test the messages before sending them to users of my entire company?
 
-A: You can send messages to specific Azure AD groups, such as your IT department. See [Select the recipients](#step-2-select-the-recipients) for details.
+A: You can send messages to specific Microsoft Entra groups, such as your IT department. See [Select the recipients](#step-2-select-the-recipients) for details.
 
 ### Q: What is the recommended time frame window for the messages?
 

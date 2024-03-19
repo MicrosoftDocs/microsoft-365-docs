@@ -1,6 +1,6 @@
 ---
-title: Search for emails and remediate threats using Threat Explorer in Microsoft 365 Defender
-description: The steps to do manual remediation in Threat Explorer in Microsoft 365 Defender, including how to get the best performance and scenarios that call for remediation.
+title: Search for emails and remediate threats using Threat Explorer in Microsoft Defender XDR
+description: The steps to do manual remediation in Threat Explorer in Microsoft Defender XDR, including how to get the best performance and scenarios that call for remediation.
 search.product:
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
@@ -36,7 +36,7 @@ Email remediation is an already existing feature that helps admins act on emails
 
 1. **Select a threat to remediate** in [Threat Explorer](https://security.microsoft.com/threatexplorer) and select the **Message Actions** button, which will offer you options such as *Soft Delete* or *Hard Delete*.
 1. The side pane will open and ask for details like a name for the remediation, severity, and description. Once the information is reviewed, press **Submit**.
-1. As soon as the admin approves this action, they will see the Approval ID and a link to the Microsoft 365 Defender Action Center [here](https://security.microsoft.com/action-center/history). This page is where **actions can be tracked**.
+1. As soon as the admin approves this action, they will see the Approval ID and a link to the Microsoft Defender XDR Action Center [here](https://security.microsoft.com/action-center/history). This page is where **actions can be tracked**.
     1. **Admin action alert** - A system alert shows up in the alert queue with the name 'Administrative action submitted by an Administrator'. This indicates that an admin took the action of remediating an entity. It gives details such as the name of the admin who took the action, and the investigation link and time. This makes admins aware of each important action, like remediation, taken on entities.
     1. **Admin action investigation** - Since the analysis on entities was already done by the admin and that's what led to the action taken, no additional analysis is done by the system. It shows details such as related alert, entity selected for remediation, action taken, remediation status, entity count, and approver of the action. This allows admins to keep track of the investigation and actions carried out *manually*--an admin action investigation.
 1. **Action logs in unified action center** - History and action logs for email actions like soft delete and move to deleted items folder, are *all available in a centralized view* under the unified **Action Center** > **History tab**.
@@ -67,7 +67,7 @@ Given the common scenarios, email remediation can be triggered in three differen
 
 ## Next Steps
 
-1. Go to the [Microsoft 365 Defender portal](https://security.microsoft.com) and sign in.
+1. Go to the [Microsoft Defender portal](https://security.microsoft.com) and sign in.
 1. In the navigation pane, select **Action center**.
 1. Go to the **History** tab, click on any waiting approval list. It opens up a side pane.
 1. Track the action status in the unified action center.

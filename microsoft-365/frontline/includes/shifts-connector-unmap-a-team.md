@@ -1,10 +1,12 @@
 ---
-author: LanaChin
-ms.author: v-lanachin
-ms.date: 08/29/2022
+author: lana-chin
+ms.author: v-chinlana
+manager: jtremper
+ms.date: 10/17/2023
 ms.topic: include
 audience: admin
 ms.service: microsoft-365-frontline
+ms.collection: m365-frontline
 ---
 > [!NOTE]
 > The Microsoft 365 system account must be the same for both connections. If it isn't, you'll get a "This designated actor profile doesn't have team ownership privileges" error message.

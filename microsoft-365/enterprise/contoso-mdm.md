@@ -43,7 +43,7 @@ Contoso doesn't use Intune to:
 This is how Contoso set up their mobile device management infrastructure:
 
 - Set Intune as the Mobile Device Management (MDM) authority, and use Intune on Azure to administer content and manage the devices
-- Created Azure Active Directory (Azure AD) groups for devices for enrollment and Intune settings and device-based Conditional Access policies
+- Created Microsoft Entra groups for devices for enrollment and Intune settings and device-based Conditional Access policies
 
   For more information, see [Contoso Conditional Access policies](contoso-identity.md#conditional-access-policies-for-zero-trust-identity-and-device-access).
 

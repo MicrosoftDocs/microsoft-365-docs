@@ -23,3 +23,4 @@ ms.topic: article
 > - api-us.securitycenter.microsoft.com
 > - api-eu.securitycenter.microsoft.com
 > - api-uk.securitycenter.microsoft.com
+> - api-au.securitycenter.microsoft.com

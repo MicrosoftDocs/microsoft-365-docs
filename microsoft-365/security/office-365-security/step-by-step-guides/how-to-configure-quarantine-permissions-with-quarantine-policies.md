@@ -35,7 +35,7 @@ Providing security admins and users with a very simple way to manage false posit
 - Sufficient permissions (Security Administrator role)
 - 5 minutes to perform the steps below.
 
-## Creating Custom quarantine policies with Request release flow
+## Deciding between built-in or custom quarantine policies.
 
 Our custom policies give admins the ability to decide what items their users can triage in the ***False positive*** folder with an extended ability of allowing the user to request the *release* of those items from the folder.
 
@@ -52,7 +52,7 @@ Once it has been decided the categories of items users can triage or not-triage,
 
 1. Identify the users, groups, or domains that you would like to include in the *full access* category vs. the *limited access* category, versus the *Admin-Only* category.
 1. Sign in to the [Microsoft Security portal](https://security.microsoft.com).
-1. Select **Email & collaboration** > **Policies & rules**.
+1. On the left nav, under **Email & collaboration**, select **Policies & rules**.
 1. Select **Threat policies**.
 1. Select each of the following: **Anti-spam policies**, **Anti-phishing policy**, **Anti-Malware policy**.
 1. Select **Create policy** and choose **Inbound**.
@@ -60,7 +60,6 @@ Once it has been decided the categories of items users can triage or not-triage,
 1. In the **Actions** tab, select **Quarantine message** for categories. You will notice an additional panel for *select quarantine policy*, use that dropdown to select the quarantine policy you created earlier.
 1. Move on to the **Review** section and click the **Confirm** button to create the new policy.
 1. Repeat these same steps for the other policies: **Anti-phishing policy**, **Anti-Malware policy**, and **Safe Attachment policy**.
-
 > [!TIP]
 > For more detailed information on what you've learned so far, see [Configure spam filter policies - Office 365](../../office-365-security/anti-spam-policies-configure.md)| [Configure anti-phishing policies in EOP](../../office-365-security/anti-phishing-policies-eop-configure.md) | [Configure anti-malware policies](../../office-365-security/anti-malware-policies-configure.md)| [Set up Safe Attachments policies in Microsoft Defender for Office 365](../../office-365-security/safe-attachments-policies-configure.md)
 
@@ -72,3 +71,4 @@ Once it has been decided the categories of items users can triage or not-triage,
 ## More information
 
 Learn more about organization branding and notification settings here [Quarantine policies - Office 365 | Microsoft Docs](../../office-365-security/quarantine-policies.md)
+

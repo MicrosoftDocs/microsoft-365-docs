@@ -1,21 +1,17 @@
 ---
 title: Schedule Microsoft Defender Antivirus protection updates
 description: Schedule the day, time, and interval for when protection updates should be downloaded
-keywords: updates, security baselines, schedule updates
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 search.appverid: met150
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 ms.date: 12/20/2022
 ms.topic: conceptual
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 ms.custom: nextgen
 ms.reviewer: pahuijbr
-manager: dansimp
-ms.subservice: mde
+manager: deniseb
+ms.subservice: ngp
 ms.collection: 
 - m365-security
 - tier2
@@ -123,3 +119,4 @@ See the following for more information and allowed parameters:
 - [Manage event-based forced updates](manage-event-based-updates-microsoft-defender-antivirus.md)
 - [Manage updates for mobile devices and virtual machines (VMs)](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
 - [Microsoft Defender Antivirus in Windows 10 and 11](microsoft-defender-antivirus-in-windows-10.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

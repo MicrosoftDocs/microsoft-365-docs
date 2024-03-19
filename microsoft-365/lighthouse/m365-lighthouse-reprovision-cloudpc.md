@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: katmartin
-ms.date: 05/13/2022
+ms.date: 07/03/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -32,7 +32,7 @@ You must be a Cloud PC Administrator in the partner tenant.
 
 ## Reprovision a Windows 365 Cloud PC
 
-1. In the left navigation pane in Lighthouse, select **Devices** > **Windows 365**.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Devices** > **Windows 365**.
 
 2. Select the **All Cloud PCs** tab.
 
@@ -49,7 +49,7 @@ You must be a Cloud PC Administrator in the partner tenant.
 
 ## Check the device action status
 
-1. In the left navigation pane in Lighthouse, select **Devices** > **Windows 365**.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Devices** > **Windows 365**.
 
 2. Select the **All Cloud PCs** tab.
 

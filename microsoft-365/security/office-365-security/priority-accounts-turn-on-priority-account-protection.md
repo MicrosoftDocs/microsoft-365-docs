@@ -2,10 +2,10 @@
 title: Configure and review priority account protection in Microsoft Defender for Office 365
 f1.keywords:
   - NOCSH
-ms.author: dansimp
-author: dansimp
-manager: dansimp
-ms.date: 5/23/2023
+ms.author: chrisda
+author: chrisda
+manager: deniseb
+ms.date: 6/19/2023
 audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: medium
@@ -18,17 +18,16 @@ ms.custom:
 description: Admins can learn how to turn on priority account protection in Microsoft Defender for Office 365 Plan 2 organizations.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # Configure and review priority account protection in Microsoft Defender for Office 365
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-**Applies to**
-- [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
-
-In Microsoft 365 organizations with Microsoft Defender for Office 365 Plan 2, _priority account protection_ is a differentiated level of protection that's applied to accounts that have the **Priority account** tag applied to them. For more information about the Priority account tag and how to apply it to users, see [Manage and monitor priority accounts](../../admin/setup/priority-accounts.md).
+In Microsoft 365 organizations with Microsoft Defender for Office 365 Plan 2, _priority account protection_ is a differentiated level of protection that's applied to accounts that have the **Priority account** tag applied to them. For more information about the Priority account tag and how to apply it to users, see [Manage and monitor priority accounts](/microsoft-365/admin/setup/priority-accounts).
 
 Priority account protection offers additional heuristics that are tailored to company executives that don't benefit regular employees. Priority account protection is better suited to the mail flow patterns of company executives based on extensive data from the Microsoft datacenters.
 
@@ -38,22 +37,23 @@ This article describes how to confirm that priority account protection is turned
 
 ## What do you need to know before you begin?
 
-- You open the Microsoft 365 Defender portal at <https://security.microsoft.com>.
+- You open the Microsoft Defender portal at <https://security.microsoft.com>.
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
-  - [Exchange Online RBAC](/exchange/permissions-exo/permissions-exo): Membership in the **Organization Management** or **Security Administrator** role groups.
-  - [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): Membership in the **Global Administrator** or **Security Administrator** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
+  - [Microsoft Defender XDR Unified role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac) (Affects the Defender portal only, not PowerShell): **Authorization and settings/System settings/Read and manage** or **Authorization and settings/System settings/Read-only**.
+  - [Exchange Online permissions](/exchange/permissions-exo/permissions-exo): Membership in the **Organization Management** or **Security Administrator** role groups.
+  - [Microsoft Entra permissions](/entra/identity/role-based-access-control/manage-roles-portal): Membership in the **Global Administrator** or **Security Administrator** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
-- As previously described, priority account protection is applied to accounts that have the **Priority account** tag applied to them. For instructions, see [Manage and monitor priority accounts](../../admin/setup/priority-accounts.md).
+- As previously described, priority account protection is applied to accounts that have the **Priority account** tag applied to them. For instructions, see [Manage and monitor priority accounts](/microsoft-365/admin/setup/priority-accounts).
 
 - The Priority account tag is a type of _user tag_. You can create custom user tags to differentiate specific groups of users in reporting and other features. For more information about user tags, see [User tags in Microsoft Defender for Office 365](user-tags-about.md).
 
-## Review or turn on priority account protection in the Microsoft 365 Defender portal
+## Review or turn on priority account protection in the Microsoft Defender portal
 
 > [!NOTE]
 > We don't recommend turning off priority account protection.
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Settings** \> **Email & collaboration** \> **Priority account protection**. Or, to go directly to the **Priority account protection** page, use <https://security.microsoft.com/securitysettings/priorityAccountProtection>.
+1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Settings** \> **Email & collaboration** \> **Priority account protection**. Or, to go directly to the **Priority account protection** page, use <https://security.microsoft.com/securitysettings/priorityAccountProtection>.
 
 2. On the **Priority account protection** page, verify that **Priority account protection** is turned on (:::image type="icon" source="../../media/scc-toggle-on.png" border="false":::).
 
@@ -87,10 +87,10 @@ The effects of priority account protection are visible in the following reportin
   - [View data by Email \> Malware and Chart breakdown by Detection Technology](reports-email-security.md#view-data-by-email--malware-and-chart-breakdown-by-detection-technology)
   - [Chart breakdown by Policy type](reports-email-security.md#chart-breakdown-by-policy-type)
   - [Chart breakdown by Delivery status](reports-email-security.md#chart-breakdown-by-delivery-status)
-- [Threat Explorer and real-time detections](threat-explorer-about.md)
+- [Threat Explorer and real-time detections](threat-explorer-real-time-detections-about.md)
 - [Email entity page](mdo-email-entity-page.md)
 
-For information about where the Priority account tag and other user tags are available as filters, see [User tags in reports and features](user-tags-about.md#user-tags-in-reports-and-features). 
+For information about where the Priority account tag and other user tags are available as filters, see [User tags in reports and features](user-tags-about.md#user-tags-in-reports-and-features).
 
 ### Threat protection status report
 
@@ -100,11 +100,11 @@ In the previously mentioned views in the report, the option **Priority account p
 
 ### Threat Explorer
 
-For more information about Threat Explorer, see [Threat Explorer and Real-time detections](threat-explorer-about.md).
+For more information about Threat Explorer, see [Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md).
 
 To view the results of priority account protection in Threat Explorer, do the following steps:
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Explorer**. Or, to go directly to the **Explorer** page, use <https://security.microsoft.com/threatexplorer>.
+1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Explorer**. Or, to go directly to the **Explorer** page, use <https://security.microsoft.com/threatexplorer>.
 
 2. On the **Explorer** page, on the **All email**, **Malware**, or **Phish** tabs, select **Context** \> **Equal any of** \> **Priority account protection**, and then select **Refresh**.
 
@@ -112,17 +112,13 @@ To view the results of priority account protection in Threat Explorer, do the fo
 
 ### Email entity page
 
-The email entity page is available in **Threat Explorer**. For more information, see [The Email entity page](mdo-email-entity-page.md).
+The email entity page is available from many locations in the Defender portal, including **Threat Explorer** (also known as **Explorer**). For more information, see [The Email entity page](mdo-email-entity-page.md).
 
-In the filtered results on the **All email**, **Malware**, or **Phish** tabs of the **Explorer** page, select the **Subject** of an email message in the results.
-
-In the details flyout that opens, select :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity** at the top of the flyout.
-
-On the email entity page that opens, select the **Analysis** tab. **Priority account protection** is listed in the **Threat detection details** section.
+On the Email entity page, select the **Analysis** tab. **Priority account protection** is listed in the **Threat detection details** section.
 
 :::image type="content" source="../../media/email-entity-priority-account-protection.png" alt-text="The Analysis tab of the Email entity page showing Priority account protection results." lightbox="../../media/email-entity-priority-account-protection.png":::
 
 ## More information
 
 - [User tags in Microsoft Defender for Office 365](user-tags-about.md)
-- [Manage and monitor priority accounts](../../admin/setup/priority-accounts.md)
+- [Manage and monitor priority accounts](/microsoft-365/admin/setup/priority-accounts)

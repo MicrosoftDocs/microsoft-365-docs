@@ -1,11 +1,11 @@
 ---
-title: Microsoft Defender for Office 365 email entity page
+title: The email entity page in Defender for Office 365
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: msfttracyp
-manager: dansimp
-ms.date: 3/28/2023
+ms.author: chrisda
+author: chrisda
+manager: deniseb
+ms.date: 2/22/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-security
@@ -16,52 +16,43 @@ ms.collection:
 - tier1
 - highpri
 ms.custom:
-description: Microsoft Defender for Office 365 E5 and P1 and P2 customers can see email details in all Microsoft Defender for Office 365 experiences including the email headers for copy, Detection details, Threats detected, Latest and Original delivery locations, Delivery actions, and IDs like Alert Id, Network Message ID and more.
+description: Admins can learn about the Email entity page in Microsoft Defender for Office 365. This page show many details about email messages. For example, email headers, threat detection details, the latest and original delivery locations, delivery actions, and IDs (for example, the Network message ID and the associated Alert Id).
 search.appverid: met150
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
 ---
 
 # The Email entity page
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-**Applies to:**
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-
-**In this article:**
-- [Reach the email entity page](#how-to-get-to-the-email-entity-page)
-- [Read the email entity page](#how-to-read-the-email-entity-page)
-- [Use email entity page tabs](#how-to-use-the-email-entity-page-tabs)
-- [New to the email entity page](#available-on-the-email-entity-page)
-
-Admins of Microsoft Defender for Office 365 E5, and Defender for Office P1 and P2 have a 360-degree view of email using the **Email entity page**. This go-to email page was created to enhance information delivered throughout Microsoft Defender for Office 365 and Microsoft 365 Defender.
+Microsoft 365 organizations that have [Microsoft Defender for Office 365](defender-for-office-365.md) included in their subscription or purchased as an add-on have a 360-degree view of email using the **Email entity page**. This go-to email page was created to enhance information delivered throughout Defender for Office 365 and Microsoft Defender XDR.
 
 See email details in the experiences below, including [previewing and downloading the email](#email-preview-and-download-for-cloud-mailboxes), the email headers *with the option to copy*, Detection details, Threats detected, Latest and Original delivery locations, Delivery actions, and IDs like Alert ID, Network Message ID and more.
 
-## How to get to the email entity page
+## Where to find the Email email entity page
 
-Anywhere you find email details throughout the Microsoft Defender for Office 365, the email entity details are available. This includes:
+The :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity** action is available in the Microsoft Defender portal wherever you find details about email messages. For example:
 
-- Threat Explorer
 - Advanced Hunting
 - Alerts
-- Quarantine
-- Submissions
 - Reporting
 - Action Center
+- **Threat Explorer** (**Explorer**) on the **Explorer** page at <https://security.microsoft.com/threatexplorerv3> or **Real-time detections** on the **Real-time detections** page at <https://security.microsoft.com/realtimereportsv3>, use one of the following methods:
+  - Verify the **All email** view is selected \> verify the **Email** tab (view) in the details area is selected \> click on the **Subject** value in an entry.
+  - Select the **Malware** view \> verify the **Email** tab (view) in the details area is selected \> click on the **Subject** value in an entry.
+  - Select the **Phish** view \> verify the **Email** tab (view) in the details area is selected \> click on the **Subject** value in an entry.
 
-One way to get to the email entity page is Threat Explorer, but the steps remain the same from wherever you find email details. Navigate to the Microsoft 365 Defender portal at <https://security.microsoft.com>, **Email & collaboration** \> **Explorer**. Or, to go directly to the **Explorer** page, use <https://security.microsoft.com/threatexplorer>.
+  **Open email entity** is available at the top of the Subject details flyout that opens. For more information, see [Email view for the details area of the All email view in Threat Explorer](threat-explorer-real-time-detections-about.md#email-view-for-the-details-area-of-the-all-email-view-in-threat-explorer).
 
-1. In **Explorer**, select the subject of an email you're investigating.
-1. The email fly-out for that mail opens.
-1. You see **Open email entity**.
-1. Select it for your email deep dive.
-
-:::image type="content" source="../../media/email-entities-1-navigation-to-ee.png" alt-text="With the email selected, you get a fly out with details, and Open entity page for the email at the top." lightbox="../../media/email-entities-1-navigation-to-ee.png":::
+- **Quarantine**: On the **Quarantine** page at <https://security.microsoft.com/quarantine> \> verify the **Email** tab is selected \> select an entry by clicking anywhere in the row other than the check box. **Open email entity** is available at the top of the details flyout that opens. For more information, see [View quarantined email details](quarantine-admin-manage-messages-files.md#view-quarantined-email-details).
+- **Admin email submissions**: On the **Submissions** page at <https://security.microsoft.com/reportsubmission> \> select the **Emails** tab \> select an entry by clicking anywhere in the row other than the check box. **Open email entity** is available at the top of the details flyout that opens. For more information, see [View email attachment admin submissions to Microsoft](submissions-admin.md#view-email-attachment-admin-submissions-to-microsoft).
+- **User reported email submissions**: On the **Submissions** page at <https://security.microsoft.com/reportsubmission> \> select the **User reported** tab \> select an entry by clicking anywhere in the row other than the check box. **Open email entity** is available at the top of the details flyout that opens. For more information, see [View user reported messages to Microsoft](submissions-admin.md#view-user-reported-messages-to-microsoft).
 
 :::image type="content" source="../../media/email-entities-2-eep.png" alt-text="The graphic of the email entity page that focuses on headings that you'll see" lightbox="../../media/email-entities-2-eep.png":::
 
 > [!NOTE]
-> The permissions needed to view and use this page are the same as to view **Explorer**. The admin must be a member of Global admin or global reader, or Security admin or Security Reader. For more information, see [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md).
+> The permissions needed to view and use this page are the same as to view **Explorer**. The admin must be a member of Global admin or global reader, or Security admin or Security Reader. For more information, see [Permissions in the Microsoft Defender portal](mdo-portal-permissions.md).
 
 ## How to read the email entity page
 
@@ -97,8 +88,11 @@ Here are some helpful specifics to get started.
 
 Admins can preview and download emails in Cloud mailboxes, ***if*** the mails are still accessible to Microsoft in an Exchange Online mailbox. In case of a soft delete (by an admin, or user), or ZAP (to quarantine), the emails are no longer present in the Exchange Online mailbox. In that case, admins won't be able to preview or download those specific emails. Emails that were dropped, or where delivery failed, never made it into the mailbox and as a result, admins won't be able to preview or download those emails either.
 
-> [!WARNING]
-> Previewing and downloading emails requires a special role called **Preview**. You can add this role in the Microsoft 365 Defender portal as described in [Email & collaboration roles in the Microsoft 365 Defender portal](mdo-portal-permissions.md#email--collaboration-roles-in-the-microsoft-365-defender-portal). You might need to create a new **Email & collaboration** role group there and add the **Preview** role to that new role group or add the **Preview** role to a role group that allows admins in your organization to work in **Explorer**.
+> [!IMPORTANT]
+> Previewing and downloading emails requires a special role called **Preview**. You can assign this role in the following locations:
+>
+> - [Microsoft Defender XDR Unified role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac) (Affects the Defender portal only, not PowerShell): **Security operations/Raw data (email & collaboration)/Email content (read)**.
+> - [Email & collaboration permissions in the Microsoft Defender portal](mdo-portal-permissions.md): Membership in the **Data Investigator** or **eDiscovery Manager** role groups. Or, you can [create a new role group](mdo-portal-permissions.md#create-email--collaboration-role-groups-in-the-microsoft-defender-portal) and add the **Preview** role to it.
 
 ### Detonation details
 
@@ -180,17 +174,37 @@ Users see enriched detonation details for known malicious attachments or URLs fo
 
 ## Actions you can take on the Email entity Page
 
-Security teams can now take email actions like soft delete and hard delete, move to junk, move to inbox, trigger an investigation, submit to Microsoft for review in line, and et cetera. **Tenant level block** actions like file and URL or sender can also be triggered from the Email entity page.
+Security teams can take email actions. For example:
+
+- Soft delete and hard delete.
+- Move to junk.
+- Move to inbox.
+- Trigger an investigation.
+- Submit to Microsoft for review in line.
+
+You can also trigger **Tenant level block** actions for files, URLs, or senders from the Email entity page.
 
 You'll be able to select **Take actions** from the top right corner of the entity page and this will open the Action wizard for you to select the specific action you need.
-![Take action from entity page.](../../media/Take-ActionWizard-Email-entity.png)
 
-In the Action wizard you can take email actions, email submissions, block sender and sender domain, investigative actions and two step approval (add to remediation) in the same side pane. This follows a consistent flow for ease of use. The Action wizard uses the same system as is used by Explorer actions (for Delete, Submissions, and Investigation actions), for example. You'll be able to see and track these actions in the
- [Unified action center](https://security.microsoft.com/action-center/history) (for deleted emails), in the
-  [Submission portal](https://security.microsoft.com/reportsubmission) (for submissions), and in the [Tenant Allow/Block List](https://security.microsoft.com/tenantAllowBlockList) page for (Tenant Allow/Block List blocks).
+> [!TIP]
+We're adding the ability to take multiple actions together. You can take email remediation actions, create submissions, tenant level block actions (block senders, domains, files, and URLs), investigative actions, and proposed remediation from the **same panel**. Actions are now contextual and grouped together depending on the **latest location of the email message**.
 
-We're also bringing Tenant level block URL and attachment to the respective Email entity URL and Attachments tabs. Upon approval, the block URL and block attachment entries can be tracked on the **URLs** and **Files** tabs on the Tenant Allow/Block List page.
-![Take block URL action from entity page.](../../media/Block-URL-Email-entity.png)
+:::image type="content" source="../../media/Take-ActionWizard-Email-entity.png" alt-text="Take action from entity page." lightbox="../../media/Take-ActionWizard-Email-entity.png":::
+
+In the existing Action wizard you can take email actions, create email submissions, block senders and sender domains, take investigative actions, and do two step approval (add to remediation) in the same flyout. The flyout follows a consistent flow for ease of use. The Action wizard uses the same system as Explorer actions (for example, for Delete, Submissions, and Investigation actions). You can see and track these actions in the Unified action center at <https://security.microsoft.com/action-center/history> (for deleted emails), on the Submission page at <https://security.microsoft.com/reportsubmission> (for submissions), and in the Tenant Allow/Block List at <https://security.microsoft.com/tenantAllowBlockList> page (for block entries).
+
+> [!TIP]
+> These enhancements bring the following benefits:
+>
+> - SecOps can now select multiple actions together in the single flow.
+> - We grouped actions together for a logical grouping of good (false positive) and bad (false negative) message actions.
+> - Actions are contextual in nature in the same panel. For example, if the message is in already in Inbox, the **Move to Inbox** action is grayed out.
+>
+> There are no changes to the action permissions.
+
+We're also bringing tenant-level blocks for URLs and attachments to the respective **Email entity**, **URL**, and **Attachments** tabs. After approval, you can track the block entries for URLs and attachments on the **URLs** and **Files** tabs on the **Tenant Allow/Block List** page.
+
+:::image type="content" source="../../media/Block-URL-Email-entity.png" alt-text="Take block URL action from entity page." lightbox="../../media/Block-URL-Email-entity.png":::
 
 See [permissions](mdo-portal-permissions.md) required to take these actions.
 
@@ -198,8 +212,7 @@ See [permissions](mdo-portal-permissions.md) required to take these actions.
 
 The email summary panel is a summarized view of the full email entity page. It contains standardized details about the email (for example, detections), as well as context-specific information (for example, for Quarantine or Submissions metadata). The email summary panel replaces the traditional email flyouts throughout Microsoft Defender for Office 365.
 
-> [!div class="mx-imgBorder"]
-> ![Open the email entity link.](../../media/open-email-entity-mdo.png)
+:::image type="content" source="../../media/open-email-entity-mdo.png" alt-text="Open the email entity link." lightbox="../../media/open-email-entity-mdo.png":::
 
 > [!NOTE]
 > To view all the components, click on the **Open email entity** link to open the full email entity page.

@@ -1,28 +1,24 @@
 ---
 title: Troubleshoot Microsoft Defender for Endpoint onboarding issues
 description: Troubleshoot issues that might arise during the onboarding of devices or to the Microsoft Defender for Endpoint service.
-keywords: troubleshoot onboarding, onboarding issues, event viewer, data collection and preview builds, sensor data and diagnostics
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
 ms.topic: troubleshooting
-ms.subservice: mde
+ms.subservice: onboard
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 06/14/2023
 ---
 
 # Troubleshoot Microsoft Defender for Endpoint onboarding issues
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
@@ -31,7 +27,7 @@ ms.date: 12/18/2020
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Windows Server 2012 R2
 - Windows Server 2016
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
@@ -95,6 +91,7 @@ If the script fails and the event is an error, you can check the event ID in the
 |`35`|The script failed to find needed onboarding status registry value|When the SENSE service starts for the first time, it writes onboarding status to the registry location <p> `HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status`. <p> The script failed to find it after several seconds. You can manually test it and check if it's there. For more information on events and errors related to SENSE, see [Review events and errors using Event viewer](event-error-codes.md).|
 |`40`|SENSE service onboarding status isn't set to **1**|The SENSE service has failed to onboard properly. For more information on events and errors related to SENSE, see [Review events and errors using Event viewer](event-error-codes.md).|
 |`65`|Insufficient privileges|Run the script again with administrator privileges.|
+|`70`|Offboarding script is for a different organization|Get an offboarding script for the correct organization that the SENSE service is onboarded to.|
 |
 
 ### Troubleshoot onboarding issues using Microsoft Intune
@@ -209,7 +206,7 @@ If the deployment tools used do not indicate an error in the onboarding process,
    |`63`|Updating the start type of external service. Name: %1, actual start type: %2, expected start type: %3, exit code: %4|Identify what is causing changes in start type of mentioned service. If the exit code isn't 0, fix the start type manually to expected start type.|
    |`64`|Starting stopped external service. Name: %1, exit code: %2|Contact support if the event keeps re-appearing.|
    |`68`|The start type of the service is unexpected. Service name: %1, actual start type: %2, expected start type: %3|Identify what is causing changes in start type. Fix mentioned service start type.|
-   |`69`|The service is stopped. Service name: %1|Start the mentioned service. Contact support if persists.|
+   |`69`|The service is stopped. Service name: %1|Start the mentioned service. Contact support if the issue persists.|
    |
 
 There are additional components on the device that the Microsoft Defender for Endpoint agent depends on to function properly. If there are no onboarding related errors in the Microsoft Defender for Endpoint agent event log, proceed with the following steps to ensure that the additional components are configured correctly.
@@ -217,6 +214,10 @@ There are additional components on the device that the Microsoft Defender for En
 <span id="ensure-the-diagnostics-service-is-enabled" />
 
 ### Ensure the diagnostic data service is enabled
+
+   > [!NOTE]
+   > In Windows 10 build 1809 and later, the Defender for Endpoint EDR service no longer has a direct dependency on the DiagTrack service.
+   > The EDR cyber evidence can still be uploaded if this service is not running. 
 
 If the devices aren't reporting correctly, you might need to check that the Windows diagnostic data service is set to automatically start and is running on the device. The service might have been disabled by other programs or user configuration changes.
 
@@ -276,7 +277,7 @@ The Microsoft Defender for Endpoint sensor requires Microsoft Windows HTTP (WinH
 
 WinHTTP is independent of the Internet browsing proxy settings and other user context applications and must be able to detect the proxy servers that are available in your particular environment.
 
-To ensure that sensor has service connectivity, follow the steps described in the [Verify client connectivity to Microsoft Defender for Endpoint service URLs](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls) topic.
+To ensure that sensor has service connectivity, follow the steps described in the [Verify client connectivity to Microsoft Defender for Endpoint service URLs](verify-connectivity.md) topic.
 
 If the verification fails and your environment is using a proxy to connect to the Internet, then follow the steps described in [Configure proxy and Internet connectivity settings](configure-proxy-internet.md) topic.
 
@@ -310,7 +311,7 @@ If the verification fails and your environment is using a proxy to connect to th
 
 - You can also check the previous registry key values to verify that the policy is disabled, by opening the registry key `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`.
 
-  :::image type="content" source="images/atp-disableantispyware-regkey.png" alt-text="The registry key for Microsoft Defender Antivirus" lightbox="images/atp-disableantispyware-regkey.png":::
+  :::image type="content" source="media/atp-disableantispyware-regkey.png" alt-text="The registry key for Microsoft Defender Antivirus" lightbox="media/atp-disableantispyware-regkey.png":::
 
    > [!NOTE]
    > All Windows Defender services (wdboot, wdfilter, wdnisdrv, wdnissvc, and windefend) should be in their default state. Changing the startup of these services is unsupported and may force you to reimage your system.
@@ -335,17 +336,17 @@ You might also need to check the following:
 
 - Check that there's a Microsoft Defender for Endpoint Service running in the **Processes** tab in **Task Manager**. For example:
 
-  :::image type="content" source="images/atp-task-manager.png" alt-text="The process view with Microsoft Defender for Endpoint Service running" lightbox="images/atp-task-manager.png":::
+  :::image type="content" source="media/atp-task-manager.png" alt-text="The process view with Microsoft Defender for Endpoint Service running" lightbox="media/atp-task-manager.png":::
 
 - Check **Event Viewer** \> **Applications and Services Logs** \> **Operation Manager** to see if there are any errors.
 
 - In **Services**, check if the **Microsoft Monitoring Agent** is running on the server. For example,
 
-  :::image type="content" source="images/atp-services.png" alt-text="The services" lightbox="images/atp-services.png":::
+  :::image type="content" source="media/atp-services.png" alt-text="The services" lightbox="media/atp-services.png":::
 
 - In **Microsoft Monitoring Agent** \> **Azure Log Analytics (OMS)**, check the Workspaces and verify that the status is running.
 
-  :::image type="content" source="images/atp-mma-properties.png" alt-text="The Microsoft Monitoring Agent Properties" lightbox="images/atp-mma-properties.png":::
+  :::image type="content" source="media/atp-mma-properties.png" alt-text="The Microsoft Monitoring Agent Properties" lightbox="media/atp-mma-properties.png":::
 
 - Check to see that devices are reflected in the **Devices list** in the portal.
 
@@ -494,3 +495,4 @@ The steps below provide guidance for the following scenario:
 - [Troubleshoot Microsoft Defender for Endpoint](troubleshoot-mdatp.md)
 - [Onboard devices](onboard-configure.md)
 - [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

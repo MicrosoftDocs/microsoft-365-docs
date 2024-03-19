@@ -71,7 +71,7 @@ Go to [https://admin.microsoft.com/OLS/MySoftware.aspx](https://admin.microsoft.
 
 ::: moniker range="o365-21vianet"
 
-If you're using Office 365 operated by 21Vianet, go to [https://portal.partner.microsoftonline.cn/OLS/MySoftware.aspx](https://portal.partner.microsoftonline.cn/OLS/MySoftware.aspx).
+If you're using Microsoft 365 operated by 21Vianet, go to [https://portal.partner.microsoftonline.cn/OLS/MySoftware.aspx](https://portal.partner.microsoftonline.cn/OLS/MySoftware.aspx).
 
 ::: moniker-end
 

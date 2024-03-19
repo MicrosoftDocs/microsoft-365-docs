@@ -2,13 +2,14 @@
 title: Overview of unstructured document processing in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: ssquires
-ms.date: 10/12/2022
+ms.date: 01/16/2024
 audience: admin
 ms.topic: conceptual
 ms.custom: intro-overview
 ms.service: microsoft-syntex
+ms.subservice: syntex-content-intelligence
 search.appverid: 
 ms.collection: 
     - enabler-strategic
@@ -20,17 +21,22 @@ description: Learn about the unstructured document processing model in Microsoft
 # Overview of unstructured document processing in Microsoft Syntex
 
 > [!NOTE]
-> *Unstructured document processing* was known as *document understanding* in previous releases.
+> Through June 2024, you can try out unstructured document processing and other selected Syntex services at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For information and limitations, see [Try out Microsoft Syntex and explore its services](promo-syntex.md).
 
-Use the unstructured document processing model ([teaching method](create-syntex-model.md#train-a-custom-model)) to automatically classify files and extract information. It works best for unstructured documents, such as letters or contracts. 
-
-The unstructured document processing model (formerly known as *document understanding model*) uses artificial intelligence (AI) to process documents. These documents must have text that can be identified based on phrases or patterns. The identified text designates both the type of file it is (its classification) and what you'd like to extract (its extractors).
-
-</br>
+<!---</br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CSu7]
 
-</br>
+</br>--->
+
+Use the unstructured document processing model ([teaching method](create-syntex-model.md#train-a-custom-model)) to automatically classify files and extract information. It works best for unstructured documents, such as letters or contracts.
+
+> [!NOTE]
+> Microsoft respects the privacy and ownership of data you use to train and process models in Syntex. None of your organization's data is used or transferred by Microsoft to train AI models, large-language models, or any other models. Your data remains securely within your organization’s tenant. For more information, see [Microsoft data protection and privacy](https://www.microsoft.com/en-us/trust-center/privacy).
+
+## Introduction to unstructured models
+
+The unstructured document processing model (formerly known as *document understanding model*) uses artificial intelligence (AI) to process documents. These documents must have text that can be identified based on phrases or patterns. The identified text designates both the type of file it is (its classification) and what you'd like to extract (its extractors).
 
 > [!NOTE]
 > For more information about how to use Syntex and scenario examples, see [Get started driving adoption of Microsoft Syntex](./adoption-getstarted.md) and [Scenarios and use cases for Microsoft Syntex](./adoption-scenarios.md).
@@ -50,10 +56,8 @@ You can use example files to train and test your classifiers and extractors in y
 
 After publishing your model, use the content center to apply it to any SharePoint document library that you have access to.  
 
-## Requirements
+## Requirements and limitations
 
 For information about requirements to consider when choosing this model, see [Requirements and limitations for models in Microsoft Syntex](requirements-and-limitations.md#unstructured-document-processing).
 
-## See also
 
-[Compare custom models](difference-between-document-understanding-and-form-processing-model.md)

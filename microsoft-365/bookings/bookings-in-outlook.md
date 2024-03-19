@@ -11,6 +11,9 @@ ms.localizationpriority: medium
 ms.collection:
 - Tier1
 - scotvorg
+- essentials-overview
+- essentials-get-started
+- essentials-manage
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Use Bookings with me to let others schedule meetings with you in Outlook."
 ---
@@ -39,6 +42,13 @@ Bookings with me is an ideal solution for enterprise, small business, and users 
 - 1:1 meetings with direct reports
 - Lunch and coffee breaks
 
+### End users
+
+For more information on how your users can work with Bookings with me, see the following topics:
+
+- [Set up Bookings with me](https://support.microsoft.com/office/bookings-with-me-setup-and-sharing-ad2e28c4-4abd-45c7-9439-27a789d254a2)
+- [Bookings with me articles](https://support.microsoft.com/office/bookings-with-me-articles-c69c4703-e812-435c-9fc2-d194e10fd205)
+
 ## Before you begin
 
 Bookings with me can be turned on or off for your entire organization or for specific users. When you turn on Bookings for users, they can create a Bookings page, share their page with others, and allow other people to book time with them. This article is for owners and administrators who manage Bookings with me for their organizations.
@@ -47,6 +57,7 @@ Bookings with me is available in the following subscriptions:
 
 - Office 365: A3, A5, E1, E3, E5, F1, F3
 - Microsoft 365: A3, A5, E1, E3, E5, F1, F3, Business Basic, Business Standard, Business Premium
+- Bookings with me is available for G1, G3, G5
 
 Bookings with me is on by default for users with these subscriptions.
 
@@ -56,9 +67,9 @@ For more information, see the [Bookings with me Microsoft 365 Roadmap item](http
 
 ### Prerequisites for using Bookings with me
 
-1. Bookings with me and Bookings share the same licensing model. However, Bookings doesn't have to be turned on for the organization using tenant settings for users to access Bookings with me. The Bookings app must be enabled for users to have access to Bookings with me.
+Bookings with me and Bookings share the same licensing model. However, Bookings doesn't have to be turned on for the organization using tenant settings for users to access Bookings with me. The Bookings app must be enabled for users to have access to Bookings with me.
 
-   To turn on Bookings with me without access to Bookings, block access to Microsoft Bookings using the [OWA Mailbox policy PowerShell command](/powershell/module/exchange/set-owamailboxpolicy) or follow the instructions here: [Turn Microsoft Bookings on or off](turn-bookings-on-or-off.md).
+To turn on Bookings with me without access to Bookings, block access to Microsoft Bookings using the [OWA Mailbox policy PowerShell command](/powershell/module/exchange/set-owamailboxpolicy) or follow the instructions here: [Turn Microsoft Bookings on or off](turn-bookings-on-or-off.md).
 
 ## Turn Bookings with me on or off
 
@@ -81,14 +92,15 @@ Use the **Get-OrganizationConfig** and **Set-OrganizationConfig** commands to fi
 
     If the command returns "EwsEnabled: **$true**" then proceed to Step 2.
 
-    If the command returns "EwsEnabled:" (empty is default), then enable, but only if need to block "Bookings with", and proceed to Step 2.
-    Otherwise the default values of EwsEnabled is enough to leave "Bookings with me" enabled, no further changes are needed.
+    If the command returns "EwsEnabled:" (empty is default), no further changes are needed, proceed to Step 2.
 
+    If the command returns "EwsEnabled: **$false**" then run the following command and proceed to Step 2.
+   
    ```PowerShell
    Set-OrganizationConfig -EwsEnabled: $true
    ```
 
-2. Check your EwsApplicationAccessPolicy by running the following command:
+3. Check your EwsApplicationAccessPolicy by running the following command:
 
    ```PowerShell
    Get-OrganizationConfig | Format-List EwsApplicationAccessPolicy,Ews*List
@@ -98,43 +110,43 @@ Use the **Get-OrganizationConfig** and **Set-OrganizationConfig** commands to fi
 
     - To turn off Bookings with me for your organization, remove **MicrosoftOWSPersonalBookings**, if present, from **EwsAllowList** by running the following command:  
 
-   ```PowerShell
-   Set-OrganizationConfig -EwsApplicationAccessPolicy EnforceAllowList -EwsAllowList @{Remove="MicrosoftOWSPersonalBookings"}
-   ```
+      ```PowerShell
+      Set-OrganizationConfig -EwsApplicationAccessPolicy EnforceAllowList -EwsAllowList @{Remove="MicrosoftOWSPersonalBookings"}
+      ```
 
     - To turn on Bookings with me for your organization, you must set the **EwsApplicationAccessPolicy** to **EnforceAllowList** and add **MicrosoftOWSPersonalBookings** to **EwsAllowList** by running the following command:  
 
-   ```PowerShell
-   Set-OrganizationConfig -EwsApplicationAccessPolicy EnforceAllowList -EwsAllowList @{Add="MicrosoftOWSPersonalBookings"}
-   ```
+      ```PowerShell
+      Set-OrganizationConfig -EwsApplicationAccessPolicy EnforceAllowList -EwsAllowList @{Add="MicrosoftOWSPersonalBookings"}
+      ```
 
     **B**. If the value of **EwsApplicationAccessPolicy** is **EnforceBlockList**, all applications are allowed to access EWS and REST, except those specified in **EwsBlockList**.
 
     - To turn off Bookings with me for your organization, add **MicrosoftOWSPersonalBookings** by running the following command:
 
-   ```PowerShell
-   Set-OrganizationConfig -EwsApplicationAccessPolicy EnforceBlockList -EwsBlockList @{Add="MicrosoftOWSPersonalBookings"}
-   ```
+      ```PowerShell
+      Set-OrganizationConfig -EwsApplicationAccessPolicy EnforceBlockList -EwsBlockList @{Add="MicrosoftOWSPersonalBookings"}
+      ```
 
     - To turn on Bookings with me if blocked, remove **MicrosoftOWSPersonalBookings** by running the following command:
 
-   ```PowerShell
-   Set-OrganizationConfig -EwsApplicationAccessPolicy EnforceBlockList -EwsBlockList @{Remove="MicrosoftOWSPersonalBookings"}
-   ```
+      ```PowerShell
+      Set-OrganizationConfig -EwsApplicationAccessPolicy EnforceBlockList -EwsBlockList @{Remove="MicrosoftOWSPersonalBookings"}
+      ```
 
     **C**. If the value of **EwsApplicationAccessPolicy** is empty, all applications are allowed to access EWS and REST.
 
     - To turn off Bookings with me for your organization set the **EnforceBlockList** policy and add **MicrosoftOWSPersonalBookings** to the block list by running the following command:
 
-   ```PowerShell
-   Set-OrganizationConfig -EwsApplicationAccessPolicy EnforceBlockList -EwsBlockList @{Add="MicrosoftOWSPersonalBookings"}
-   ```
+      ```PowerShell
+      Set-OrganizationConfig -EwsApplicationAccessPolicy EnforceBlockList -EwsBlockList @{Add="MicrosoftOWSPersonalBookings"}
+      ```
    
     - If you want to revert the value of **EwsApplicationAccessPolicy** to empty to allow all applications to access EWS and REST, run the following command:
 
-   ```PowerShell
-   Set-OrganizationConfig -EwsApplicationAccessPolicy $null
-   ```
+      ```PowerShell
+      Set-OrganizationConfig -EwsApplicationAccessPolicy $null
+      ```
       
   > [!NOTE]
   > The EwsApplicationAccessPolicy parameter defines which applications other than Entourage, Outlook, and Outlook for Mac can access EWS.
@@ -161,37 +173,37 @@ Use the **Get-CASMailbox** and **Set-CASMailbox** commands to check user status 
 
     - To turn off Bookings with me for this user, remove **MicrosoftOWSPersonalBookings**, if present from **EwsAllowList** by running the following command:
 
-   ```PowerShell
-   Set-CASMailbox -Identity adam@contoso.com -EwsAllowList @{Remove="MicrosoftOWSPersonalBookings"}
-   ```
+      ```PowerShell
+      Set-CASMailbox -Identity adam@contoso.com -EwsAllowList @{Remove="MicrosoftOWSPersonalBookings"}
+      ```
 
     - Turn on Bookings with me for this user, add **MicrosoftOWSPersonalBookings** to **EwsAllowList** by running the following command:
 
-   ```PowerShell
-   Set-CASMailbox -Identity adam@contoso.com -EwsAllowList @{Add="MicrosoftOWSPersonalBookings"}
-   ```
+      ```PowerShell
+      Set-CASMailbox -Identity adam@contoso.com -EwsAllowList @{Add="MicrosoftOWSPersonalBookings"}
+      ```
 
     **B**. If the value of **EwsApplicationAccessPolicy** is **EnforceBlockList**, all applications are allowed to access EWS and REST, except those specified in **EwsBlockList**.  
 
     - To turn off Bookings with me for this user, add **MicrosoftOWSPersonalBookings** to **EnforceBlockList** by running the following command:
 
-   ```PowerShell
-   Set-CASMailbox -Identity adam@contoso.com -EwsBlockList @{Add="MicrosoftOWSPersonalBookings"}
-   ```
+      ```PowerShell
+      Set-CASMailbox -Identity adam@contoso.com -EwsBlockList @{Add="MicrosoftOWSPersonalBookings"}
+      ```
 
     - To turn on Bookings with me for this user, remove **MicrosoftOWSPersonalBookings**, if present from EnforceBlockList by running the following command:
 
-   ```PowerShell
-   Set-CASMailbox -Identity adam@contoso.com -EwsBlockList @{Remove="MicrosoftOWSPersonalBookings"}
-   ```
+      ```PowerShell
+      Set-CASMailbox -Identity adam@contoso.com -EwsBlockList @{Remove="MicrosoftOWSPersonalBookings"}
+      ```
 
     **C**. If the value of EwsApplicationAccessPolicy is empty, all applications are allowed to access EWS and REST.
 
     - To turn off Bookings with me for this user, set the **EnforceBlockList** policy and add **MicrosoftOWSPersonalBookings** to EWSBlockList by running the following command:
 
-    ```PowerShell
-   Set-CASMailbox -Identity adam@contoso.com -EwsApplicationAccessPolicy EnforceBlockList -EWSBlockList @{Add="MicrosoftOWSPersonalBookings"}
-   ```
+      ```PowerShell
+      Set-CASMailbox -Identity adam@contoso.com -EwsApplicationAccessPolicy EnforceBlockList -EWSBlockList @{Add="MicrosoftOWSPersonalBookings"}
+      ```
 
 ### Create Bookings with me
 

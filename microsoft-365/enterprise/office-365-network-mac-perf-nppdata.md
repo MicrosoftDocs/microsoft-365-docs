@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 network provider assessments (PREVIEW)"
+title: "Microsoft 365 network provider assessments."
 ms.author: teleary
 author: temanteleary
 manager: scotv
@@ -18,7 +18,7 @@ description: "Microsoft 365 network provider assessments"
 ROBOTS: NOINDEX, NOFOLLOW
 ---
 
-# Microsoft 365 network provider assessments (PREVIEW)
+# Microsoft 365 network provider assessments.
 
 Microsoft measures network performance and availability between client applications on user machines and Microsoft's network.
 
@@ -28,11 +28,22 @@ Read about the network performance assessment calculation method at [Microsoft 3
 
 ## Network availability
 
-Network availability is measured from the client and is defined using this formula.
+The reliability of Microsoft 365 services as experienced by the client is shown by the network availability metric. It is measured as the length of time that Exchange and SharePoint are working, and for Microsoft Teams as a proportion of calls that connected successfully both expressed as a percentage.
 
-:::image type="content" source="../media/m365-mac-perf/m365-mac-perf-nppdata-availability.png" alt-text="Formula use to calculate network availability.":::
+### Exchange and SharePoint Network availability
+
+Exchange and Sharepoint availability are the proportion of minutes without any major user errors out of the total user minutes. This is how it is calculated:
+
+:::image type="content" source="../media/m365-mac-perf/m365-mac-perf-nppdata-exo-spo-availability.png" alt-text="Formula use to calculate network availability for Exchange and SharePoint.":::
 
 We receive notification of unsuccessful connections after network connectivity is restored.
+
+### Teams Network availability
+
+By using telemetry data from the actual calls, Microsoft Teams availability is computed as a percentage of calls that failed compared to total calls. This is how it is calculated:
+
+:::image type="content" source="../media/m365-mac-perf/m365-mac-perf-nppdata-teams-availability.png" alt-text="Formula use to calculate network availability for Microsoft Teams.":::
+
 
 ## Detecting network providers
 
@@ -64,9 +75,9 @@ Where:
 
 ## Data aggregation slicing
 
-For customer specific reporting the aggregations are sliced by the customer and by detected network provider and by work location type. They're also sliced by office location for drill-down capability. For the NPI Chart views including Target Baseline metrics are aggregations sliced by network provider and by country and state. The NPI Chart data is aggregated from all Office 365 customers.
+For customer specific reporting the aggregations are sliced by the customer and by detected network provider and by work location type. They're also sliced by office location for drill-down capability. For the NPI Chart views including Target Baseline metrics are aggregations sliced by network provider and by country/region and state. The NPI Chart data is aggregated from all Office 365 customers.
 
-For network providers the aggregations are sliced by network provider, by geography (including country, state, and city), and by /24 public network.
+For network providers the aggregations are sliced by network provider, by geography (including country/region, state, and city), and by /24 public network.
 
 ## Data aggregation statistical evaluations
 
@@ -86,7 +97,9 @@ Network providers will additionally not be shown in a tenant or location view if
 
 ## Network Provider Index Chart
 
-The Network Provider Index Chart (NPI Chart) shows aggregated performance and availability for network providers for a given State (or Province) and Country. The chart shows the largest network providers in that geography ordered by network performance. The chart also includes a Target Baseline entry, which shows average performance and availability for the best performing five network providers in the geography, excluding network providers with insignificant Office 365 usage.
+The NPI Chart shows the network providers with the highest performance for Office 365 applications for customers who are in the same country/region and state as your office. We show availability and performance data related to these providers. This chart also has a target baseline that shows the best performance observed in the same country/region and state.
+
+Note: NPI Chart is currently available only for United States of America, the chart will be expanded soon to all locations globally.
 
 ## Related topics
 

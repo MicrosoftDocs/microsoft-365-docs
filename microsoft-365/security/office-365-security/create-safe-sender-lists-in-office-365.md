@@ -4,7 +4,7 @@ f1.keywords:
   - NOCSH
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.topic: how-to
 ms.collection: 
@@ -19,17 +19,16 @@ ms.custom:
 description: Admins can learn about the available and preferred options to allow inbound messages in Exchange Online Protection (EOP).
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 1/31/2023
+ms.date: 6/14/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # Create safe sender lists in EOP
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
-
-**Applies to**
-- [Exchange Online Protection](eop-about.md)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 If you're a Microsoft 365 customer with mailboxes in Exchange Online or a standalone Exchange Online Protection (EOP) customer without Exchange Online mailboxes, EOP offers multiple ways of ensuring that users receive email from trusted senders. Collectively, you can think of these options as _safe sender lists_.
 
@@ -44,7 +43,9 @@ The available safe sender lists are described in the following list in order fro
 The rest of this article contains specifics about each method.
 
 > [!IMPORTANT]
-> Messages that are identified as malware or high confidence phishing are always quarantined, regardless of the safe sender list option that you use. For more information, see [Secure by default in Office 365](secure-by-default.md).
+> Messages that are identified as malware<sup>\*</sup> or high confidence phishing are always quarantined, regardless of the safe sender list option that you use. For more information, see [Secure by default in Office 365](secure-by-default.md).
+>
+> <sup>\*</sup> Malware filtering is skipped on SecOps mailboxes that are identified in the advanced delivery policy. For more information, see [Configure the advanced delivery policy for third-party phishing simulations and email delivery to SecOps mailboxes](advanced-delivery-policy-configure.md).
 >
 > Be careful to closely monitor _any_ exceptions that you make to spam filtering using safe sender lists.
 >
@@ -54,7 +55,7 @@ The rest of this article contains specifics about each method.
 
 ## Use allow entries in the Tenant Allow/Block List
 
-Our number one recommended option for allowing mail from senders or domains is the Tenant Allow/Block List. For instructions, see [Allow or block email using the Tenant Allow/Block List](tenant-allow-block-list-email-spoof-configure.md).
+Our number one recommended option for allowing mail from senders or domains is the Tenant Allow/Block List. For instructions, see [Create allow entries for domains and email addresses](tenant-allow-block-list-email-spoof-configure.md#create-allow-entries-for-domains-and-email-addresses) and [Create allow entries for spoofed senders](tenant-allow-block-list-email-spoof-configure.md#create-allow-entries-for-spoofed-senders).
 
 Only if you can't use the Tenant Allow/Block List for some reason should you consider using a different method to allow senders.
 
@@ -121,7 +122,7 @@ When messages skip spam filtering due to entries in a user's Safe Senders list, 
   - **Move messages to Junk Email folder**: Domain entries and sender email address entries are honored. Messages from those senders aren't moved to the Junk Email folder.
   - **Quarantine**: Domain entries aren't honored (messages from those senders are quarantined). Email address entries are honored (messages from those senders aren't quarantined) if either of the following statements are true:
     - The message isn't identified as malware or high confidence phishing (malware and high confidence phishing messages are quarantined).
-    - The email address isn't also in a block entry in the [Tenant Allow/Block List](tenant-allow-block-list-about.md) (messages from those senders will be quarantined).
+    - The email address isn't also in a block entry in the [Tenant Allow/Block List](tenant-allow-block-list-email-spoof-configure.md#create-block-entries-for-domains-and-email-addresses).
 - Entries for blocked senders and blocked domains are honored (messages from those senders are moved to the Junk Email folder). Safe mailing list settings are ignored.
 
 ## Use the IP Allow List
@@ -145,7 +146,7 @@ The next best option is to add the source email server or servers to the IP Allo
 >
 > Do not use popular domains (for example, microsoft.com) in allowed domain lists.
 
-The least desirable option is to use the allowed sender list or allowed domain list in anti-spam policies. You should avoid this option _if at all possible_ because senders bypass all spam, spoof, phishing protection (except high confidence phishing), and sender authentication (SPF, DKIM, DMARC). This method is best used for temporary testing only. The detailed steps can be found in [Configure anti-spam policies in EOP](anti-spam-policies-configure.md) topic.
+The least desirable option is to use the allowed sender lists or allowed domain lists in anti-spam policies. You should avoid this option _if at all possible_ because senders bypass all spam, spoof, phishing protection (except high confidence phishing), and sender authentication (SPF, DKIM, DMARC). This method is best used for temporary testing only. The detailed steps can be found in [Configure anti-spam policies in EOP](anti-spam-policies-configure.md) topic.
 
 The maximum limit for these lists is approximately 1000 entries; although, you'll only be able to enter 30 entries into the portal. You must use PowerShell to add more than 30 entries.
 
@@ -157,7 +158,7 @@ The maximum limit for these lists is approximately 1000 entries; although, you'l
 A standard SMTP email message consists of a _message envelope_ and message content. The message envelope contains information that's required for transmitting and delivering the message between SMTP servers. The message content contains message header fields (collectively called the _message header_) and the message body. The message envelope is described in RFC 5321, and the message header is described in RFC 5322. Recipients never see the actual message envelope because it's generated by the message transmission process, and it isn't actually part of the message.
 
 - The `5321.MailFrom` address (also known as the **MAIL FROM** address, P1 sender, or envelope sender) is the email address that's used in the SMTP transmission of the message. This email address is typically recorded in the **Return-Path** header field in the message header (although it's possible for the sender to designate a different **Return-Path** email address). If the message can't be delivered, it's the recipient for the non-delivery report (also known as an NDR or bounce message).
-- The `5322.From` (also known as the **From** address or P2 sender) is the email address in the **From** header field, and is the sender's email address that's displayed in email clients.
+- The `5322.From` address (also known as the **From** address or P2 sender) is the email address in the **From** header field, and is the sender's email address that's displayed in email clients.
 
 Frequently, the `5321.MailFrom` and `5322.From` addresses are the same (person-to-person communication). However, when email is sent on behalf of someone else, the addresses can be different. This happens most often for bulk email messages.
 

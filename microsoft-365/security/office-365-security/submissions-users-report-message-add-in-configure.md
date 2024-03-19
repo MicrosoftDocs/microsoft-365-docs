@@ -2,13 +2,13 @@
 title: Enable the Report Message or the Report Phishing add-ins
 f1.keywords:
   - NOCSH
-ms.author: dansimp
-author: dansimp
-manager: dansimp
+ms.author: chrisda
+author: chrisda
+manager: deniseb
 audience: Admin
 ms.reviewer: dhagarwal
 ms.topic: how-to
-ms.date: 5/12/2023
+ms.date: 8/7/2023
 ms.localizationpriority: medium
 search.appverid:
   - MET150
@@ -20,23 +20,22 @@ ms.collection:
 description: Learn how to enable the Report Message or the Report Phishing add-ins for Outlook and Outlook on the web, for individual users, or for your entire organization.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # Enable the Microsoft Report Message or the Report Phishing add-ins
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-**Applies to**
-- [Exchange Online Protection](eop-about.md)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
-
 > [!NOTE]
-> If you're an admin in a Microsoft 365 organization with Exchange Online mailboxes, we recommend that you use the **Submissions** page in the Microsoft 365 Defender portal. For more information, see [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](submissions-admin.md).
+> If you're an admin in a Microsoft 365 organization with Exchange Online mailboxes, we recommend that you use the **Submissions** page in the Microsoft Defender portal. For more information, see [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](submissions-admin.md).
 
 The Microsoft Report Message and Report Phishing add-ins for Outlook and Outlook on the web (formerly known as Outlook Web App or OWA) makes it easy for users to report false positives and false negatives to Microsoft for analysis. False positives are good email that was blocked or sent to the Junk Email folder. False negatives are unwanted email or phishing that was delivered to the Inbox.
 
-Microsoft uses these user reported messages to improve the effectiveness of email protection technologies. For example, suppose that people are reporting many messages using the Report Phishing add-in. This information surfaces in the Security Dashboard and other reports. Your organization's security team can use this information as an indication that anti-phishing policies might need to be updated.
+Microsoft uses these user-reported messages to improve the effectiveness of email protection technologies. For example, suppose that people are reporting many messages using the Report Phishing add-in. This information surfaces in the Security Dashboard and other reports. Your organization's security team can use this information as an indication that anti-phishing policies might need to be updated.
 
 The Report Message add-in provides the option to report both spam and phishing messages. The Report Phishing add-in provides the option to report phishing messages only.
 
@@ -81,9 +80,10 @@ After the add-in is installed and enabled, users see the following icons based o
 ## What do you need to know before you begin?
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
-  - [Email & collaboration RBAC in the Microsoft 365 Defender portal](mdo-portal-permissions.md): Membership in the **Organization Management** role group.
-  - [Exchange Online RBAC](/Exchange/permissions-exo/permissions-exo): Membership in the **Organization Management** role group.
-  - [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): Membership in the **Global Administrator** role gives users the required permissions _and_ permissions for other features in Microsoft 365.
+  - [Microsoft Defender XDR Unified role based access control (RBAC)](../defender/manage-rbac.md) (Affects the Defender portal only, not PowerShell): **Security operations/Security data/Response (manage)** or **Security operations/Security data/Read-only**.
+  - [Email & collaboration permissions in the Microsoft Defender portal](mdo-portal-permissions.md): Membership in the **Organization Management** role group.
+  - [Exchange Online permissions](/Exchange/permissions-exo/permissions-exo): Membership in the **Organization Management** role group.
+  - [Microsoft Entra permissions](/entra/identity/role-based-access-control/manage-roles-portal): Membership in the **Global Administrator** role gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 - For organizational installs, the organization needs to be configured to use OAuth authentication. For more information, see [Determine if Centralized Deployment of add-ins works for your organization](../../admin/manage/centralized-deployment-of-add-ins.md).
 
@@ -98,15 +98,23 @@ After the add-in is installed and enabled, users see the following icons based o
 
 - The add-ins aren't available for on-premises Exchange mailboxes.
 
-- For more information on how to report a message using the Report Message feature, see [Report false positives and false negatives in Outlook](submissions-outlook-report-messages.md).
+- For more information on how to report a message using reporting in Outlook, see [Report false positives and false negatives in Outlook](submissions-outlook-report-messages.md).
 
   > [!NOTE]
-  > Reported messages are available to admins on the **User reported** tab of **Submissions** page at <https://security.microsoft.com/reportsubmission?viewid=user> **only** if both of the following settings are configured on the **User reported** page at <https://security.microsoft.com/securitysettings/userSubmission>:
+  > Reported messages are available to admins on the **User reported** tab of **Submissions** page at <https://security.microsoft.com/reportsubmission?viewid=user> **only** if both of the following settings are configured on the **User reported settings** page at <https://security.microsoft.com/securitysettings/userSubmission>:
   >
-  > - The toggle on the **User reported** page is **On** :::image type="icon" source="../../media/scc-toggle-on.png" border="false":::.
-  > - **Use the built-in "Report" button with "Phishing", "Junk", and "Not Junk options"** is selected.
+  > - **Monitor reported messages in Outlook** is selected.
+  > - **Use the built-in "Report" button in Outlook** is selected.
 
-- Organizations that use URL filtering or a third-party security solutions (for example, a proxy and/or firewall) must be able to reach the following URLs using the HTTPS protocol:
+- If the [User reported settings](submissions-user-reported-messages-custom-mailbox.md) in the organization send user reported messages (email and [Microsoft Teams](submissions-teams.md)) to Microsoft (exclusively or in addition to the reporting mailbox), we do the same checks as when admins submit messages to Microsoft for analysis from the **Submissions** page:
+  - **Email authentication check** (email messages only): Whether email authentication passed or failed when it was delivered.
+  - **Policy hits**: Information about any policies or overrides that might have allowed or blocked the incoming email into the organization, thus overriding our filtering verdicts.
+  - **Payload reputation/detonation**: Up-to-date examination of any URLs and attachments in the message.
+  - **Grader analysis**: Review done by human graders to confirm whether or not messages are malicious.
+
+  So, submitting or resubmitting messages to Microsoft is useful to admins only for messages that have never been submitted to Microsoft, or when you disagree with the original verdict.
+
+- Organizations that use URL filtering or a third-party security solution (for example, a proxy and/or firewall) must be able to reach the following URLs using the HTTPS protocol:
   - `ipagave.azurewebsites.net`
   - `outlook.office.com`
 
@@ -147,7 +155,7 @@ Install and configure the Report Message or Report Phishing add-ins for the orga
      - **Entire organization**
      - **Specific users/groups**: Find and select users and groups in the search box. After each selection, the user or group appears in the **To be added** section that appears below the search box. To remove a selection, select :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: on the entry.
 
-   - **Email notification**: By default, **Send email notification to assigned users** is selected. Select **View email sample** to open the [Add-in deployment email alerts](/microsoft-365/admin/manage/add-in-deployment-email-alerts) article.
+   - **Email notification**: By default, **Send email notification to assigned users** is selected. Select **View email sample** to open [Add-in deployment email alerts](../../admin/manage/add-in-deployment-email-alerts.md).
 
    > [!div class="mx-imgBorder"]
    > :::image type="content" source="../../media/microsoft-365-admin-center-deploy-new-app-add-users.png" alt-text="The Add users page of Deploy New App." lightbox="../../media/microsoft-365-admin-center-deploy-new-app-add-users.png":::
@@ -175,26 +183,26 @@ Install and configure the Report Message or Report Phishing add-ins for the orga
 
 ### Get the Report Message or the Report Phishing add-ins for your Microsoft 365 GCC or GCC High organization
 
-Admins in Microsoft 365 Government Community Cloud (GCC) or GCC High need to use the steps in this section to get the Report Message or Report Phishing add-ins for their organizations.
+Admins in Microsoft 365 Government Community Cloud (GCC) or GCC High need to use the steps in this section to get the Report Message or Report Phishing add-ins for their organizations. These steps apply to Outlook and Outlook on the web (formerly known as Outlook Web App or OWA) and don't apply to Outlook for iOS and Android.
 
 > [!NOTE]
 > It could take up to 24 hours for the add-in to appear in your organization.
 >
-> In U.S. Government organizations (Microsoft 365 GCC, GCC High, and DoD), reported messages aren't sent to Microsoft for analysis. They are sent only to the reporting mailbox that you identify. For more information, see [User reported settings](submissions-user-reported-messages-custom-mailbox.md).
+> In U.S. Government organizations (Microsoft 365 GCC, GCC High, and DoD), reported messages aren't sent to Microsoft for analysis. They're sent only to the reporting mailbox that you identify for compliance reasons (data isn't allowed to leave the organization boundary). For more information, see [User reported settings](submissions-user-reported-messages-custom-mailbox.md).
 
 1. In the Microsoft 365 admin center at <https://portal.office365.us/adminportal/home#/Settings/AddIns>, select **Settings** \> **Add-ins** \> **Deploy Add-in** \> **Upload custom apps**.
 
 2. In the **Upload custom apps** flyout that opens, select **I have a URL for the manifest file**.
 
-4. In the **Add from URL** dialog that opens, enter one of the following URLs:
+3. In the **Add from URL** dialog that opens, enter one of the following URLs:
    - **Report Message**: <https://ipagave.azurewebsites.net/ReportMessageManifest/ReportMessageAzure.xml>
    - **Report Phishing**: <https://ipagave.azurewebsites.net/ReportPhishingManifest/ReportPhishingAzure.xml>
 
    When you're finished, select **Install**. In the success dialog, select **OK**.
 
-5. Back on the **Add-ins** page, select the add-in you installed, and then select :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png" border="false"::: **Edit**.
+4. Back on the **Add-ins** page, select the add-in you installed, and then select :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png" border="false"::: **Edit**.
 
-6. In the add-in properties dialog that opens, confirm or modify the following settings:
+5. In the add-in properties dialog that opens, confirm or modify the following settings:
    - **Make this add-in available to users in your organization**.
    - **Specify user defaults**: Select one of the following settings:
      - **Optional, enabled by default**.
@@ -203,7 +211,7 @@ Admins in Microsoft 365 Government Community Cloud (GCC) or GCC High need to use
 
    When you're finished, select **Save**.
 
-7. To fully configure user reported message settings, see [User reported settings](submissions-user-reported-messages-custom-mailbox.md).
+6. To fully configure user reported message settings, see [User reported settings](submissions-user-reported-messages-custom-mailbox.md).
 
 ### View and edit settings for the Report Message or Report Phishing add-ins
 

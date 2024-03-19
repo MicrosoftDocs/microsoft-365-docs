@@ -1,34 +1,31 @@
 ---
 title: Onboard previous versions of Windows on Microsoft Defender for Endpoint
 description: Onboard supported previous versions of Windows devices so that they can send sensor data to the Microsoft Defender for Endpoint sensor
-keywords: onboard, windows, 7, 81, oms, sp1, enterprise, pro, down level
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.service: defender-endpoint
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
+ms.reviewer: pahuijbr
 audience: ITPro
 ms.collection:
 - m365-security
 - tier2
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: onboard
 search.appverid: met150
 ms.date: 12/18/2020
 ---
 
 # Onboard previous versions of Windows
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 **Platforms**
 
@@ -56,9 +53,6 @@ For Windows Server 2008 R2 SP1, you have the option of [onboarding through Micro
 > After onboarding the device, you can choose to run a detection test to verify that it is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Defender for Endpoint endpoint](run-detection-test.md).
 
 ## Configure and update System Center Endpoint Protection clients
-
-> [!IMPORTANT]
-> This step is required only if your organization uses System Center Endpoint Protection (SCEP).
 
 Defender for Endpoint integrates with System Center Endpoint Protection to provide visibility to malware detections and to stop propagation of an attack in your organization by banning potentially malicious files or suspected malware.
 
@@ -127,13 +121,13 @@ If your servers need to use a proxy to communicate with Defender for Endpoint, u
 
 - [Configure Windows to use a proxy server for all connections](configure-proxy-internet.md)
 
-If a proxy or firewall is in use, please ensure that servers can access all of the Microsoft Defender for Endpoint service URLs directly and without SSL interception. For more information, see [enable access to Defender for Endpoint service URLs](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server). Use of SSL interception will prevent the system from communicating with the Defender for Endpoint service.
+If a proxy or firewall is in use, please ensure that servers can access all of the Microsoft Defender for Endpoint service URLs directly and without SSL interception. For more information, see [enable access to Microsoft Defender for Endpoint service URLs](configure-environment.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server). Use of SSL interception will prevent the system from communicating with the Defender for Endpoint service.
 
 Once completed, you should see onboarded Windows servers in the portal within an hour.
 
 ## Onboard Windows servers through Microsoft Defender for Cloud
 
-1. In the Microsoft 365 Defender navigation pane, select **Settings** > **Device management** > **Onboarding**.
+1. In the Microsoft Defender XDR navigation pane, select **Settings** > **Endpoints** > **Device management** > **Onboarding**.
 
 2. Select **Windows Server 2008 R2 SP1** as the operating system.
 
@@ -169,13 +163,7 @@ Verify that Microsoft Defender Antivirus and Microsoft Defender for Endpoint are
 
    For information on how to use Group Policy to configure and manage Microsoft Defender Antivirus on your Windows servers, see [Use Group Policy settings to configure and manage Microsoft Defender Antivirus](use-group-policy-microsoft-defender-antivirus.md).
 
-2. Run the following command to verify that Microsoft Defender for Endpoint is running:
-
-   ```dos
-   sc.exe query sense
-   ```
-
-The result should show it is running. If you encounter issues with onboarding, see [Troubleshoot onboarding](troubleshoot-onboarding.md).
+If you encounter issues with onboarding, see [Troubleshoot onboarding](troubleshoot-onboarding.md).
 
 ## Run a detection test
 
@@ -249,7 +237,7 @@ Create a new group policy specifically for onboarding devices such as "Microsoft
 It copies the files from DOMAIN\NETLOGON\MMA\filename to
 C:\windows\MMA\filename - **so the installation files are local to the server**:
 
-:::image type="content" source="images/deploymma.png" alt-text="The deploy mma cmd properties" lightbox="images/deploymma.png":::
+:::image type="content" source="media/deploymma.png" alt-text="The deploy mma cmd properties" lightbox="media/deploymma.png":::
 
 Repeat the process but create item level targeting on the COMMON tab, so the file only gets copied to the appropriate platform/Operating system version in scope:
 
@@ -278,7 +266,7 @@ As the Script has an exit method and wont re-run if the MMA is installed, you co
 
 :::image type="content" source="images/newtaskprops.png" alt-text="The new task properties" lightbox="images/newtaskprops.png":::
 
-:::image type="content" source="images/deploymmadowmload.png" alt-text="The deploy mma download properties" lightbox="images/deploymmadowmload.png":::
+:::image type="content" source="media/deploymmadowmload.png" alt-text="The deploy mma download properties" lightbox="media/deploymmadowmload.png":::
 
 :::image type="content" source="images/tasksch.png" alt-text="The task scheduler" lightbox="images/tasksch.png":::
 
@@ -318,7 +306,7 @@ You can use either of the following methods:
 
 2. Select the Defender for Endpoint workspace, and click **Remove**.
 
-    :::image type="content" source="images/atp-mma.png" alt-text="The Workspaces pane" lightbox="images/atp-mma.png":::
+    :::image type="content" source="media/atp-mma.png" alt-text="The Workspaces pane" lightbox="media/atp-mma.png":::
 
 #### Run a PowerShell command to remove the configuration
 
@@ -338,3 +326,4 @@ You can use either of the following methods:
     # Reload the configuration and apply changes
     $AgentCfg.ReloadConfiguration()
     ```
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

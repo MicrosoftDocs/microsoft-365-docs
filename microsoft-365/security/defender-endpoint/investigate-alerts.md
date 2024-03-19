@@ -1,33 +1,30 @@
 ---
 title: Investigate Microsoft Defender for Endpoint alerts
 description: Use the investigation options to get details on alerts are affecting your network, what they mean, and how to resolve them.
-keywords: investigate, investigation, devices, device, alerts queue, dashboard, IP address, file, submit, submissions, deep analysis, timeline, search, domain, URL, IP
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier2
+- mde-edr
 ms.topic: conceptual
 ms.date: 04/24/2018
-ms.subservice: mde
+ms.subservice: edr
 search.appverid: met150
 ---
 
 # Investigate alerts in Microsoft Defender for Endpoint
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigatealerts-abovefoldlink)
 
@@ -48,7 +45,7 @@ Expand entities to view details at a glance. Selecting an entity will switch the
 > [!NOTE]
 > The alert story section may contain more than one alert, with additional alerts related to the same execution tree appearing before or after the alert you've selected.
 
-:::image type="content" source="images/alert-story-tree.png" alt-text="an alert story with an alert in focus and some expanded cards" lightbox="images/alert-story-tree.png":::
+:::image type="content" source="media/alert-story-tree.png" alt-text="an alert story with an alert in focus and some expanded cards" lightbox="media/alert-story-tree.png":::
 
 ## Take action from the details pane
 
@@ -58,11 +55,11 @@ Once you're done investigating, go back to the alert you started with, mark the 
 
 If you classify it as a true alert, you can also select a determination, as shown in the image below.
 
-:::image type="content" source="images/alert-details-resolved-true.png" alt-text="The details pane with a resolved alert and the determination drop-down expanded" lightbox="images/alert-details-resolved-true.png":::
+:::image type="content" source="media/alert-details-resolved-true.png" alt-text="The details pane with a resolved alert and the determination drop-down expanded" lightbox="media/alert-details-resolved-true.png":::
 
 If you are experiencing a false alert with a line-of-business application, create a suppression rule to avoid this type of alert in the future.
 
-:::image type="content" source="images/alert-false-suppression-rule.png" alt-text="The actions and classification in the details pane with the suppression rule highlighted" lightbox="images/alert-false-suppression-rule.png":::
+:::image type="content" source="media/alert-false-suppression-rule.png" alt-text="The actions and classification in the details pane with the suppression rule highlighted" lightbox="media/alert-false-suppression-rule.png":::
 
 > [!TIP]
 > If you're experiencing any issues not described above, use the 🙂 button to provide feedback or open a support ticket.
@@ -76,3 +73,4 @@ If you are experiencing a false alert with a line-of-business application, creat
 - [Investigate an IP address associated with a Defender for Endpoint alert](investigate-ip.md)
 - [Investigate a domain associated with a Defender for Endpoint alert](investigate-domain.md)
 - [Investigate a user account in Defender for Endpoint](investigate-user.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

@@ -11,18 +11,19 @@ ms.localizationpriority: medium
 ms.collection:
 - Tier1
 - scotvorg
+- essentials-manage
 description: "Use Power Automate Bookings Connectors to create custom workflows with appointment triggers."
 ---
 
 # Use Power Automate connectors to build Bookings workflows
 
-Microsoft Bookings Connector is built to extend Booking appointments with other functionalities that power platform has to offer. If you've ever wanted to build custom workflows for your business customer appointments, for example allowing customers to book a Zoom meeting along with an appointment, integrating a payment method using Stripe, uploading customer data to a CRM system, or sending out welcome emails, Bookings Connector is your Bookings solution.
+Microsoft Bookings Connector is built to extend Booking appointments with other functionalities that power platform has to offer. If you've ever wanted to build custom workflows for your business customer appointments, for example allowing customers to book a Zoom meeting along with an appointment, uploading customer data to a CRM system, or sending out welcome emails, Bookings Connector is your Bookings solution.
 
 ## Before you begin
 
 Customers who want to use the Bookings Connector must have a Bookings license. For more information about Microsoft Bookings licenses and subscriptions, see [Microsoft Bookings Frequently Asked Questions](bookings-faq.yml#is-bookings-available-for-my-subscription-).
 
-Microsoft Bookings uses Azure Active Directory (AAD) authentication. A valid Microsoft 365 account ensures that you are authenticated to use Bookings Connector. You must be signed in to create appointment-based flows.
+Microsoft Bookings uses Microsoft Entra authentication. A valid Microsoft 365 account ensures that you are authenticated to use Bookings Connector. You must be signed in to create appointment-based flows.
 
 To create a custom flow that uses Bookings appointments as triggers, you must provide the Bookings business SMTP address.
 
@@ -31,10 +32,6 @@ To create a custom flow that uses Bookings appointments as triggers, you must pr
 ## Get started with connectors
 
 Here are some of the common flows you can build with Microsoft Bookings Connectors:
-
-### Integration with Stripe
-
-Stripe allows private individuals and businesses to accept payments over the internet. You can track customers, orders, invoices, and more. For more information, see [Stripe | Microsoft Power Automate](https://powerautomate.microsoft.com/connectors/details/shared_stripe/stripe/).
 
 ### Integration with Zoom
 

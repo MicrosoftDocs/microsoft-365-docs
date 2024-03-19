@@ -1,28 +1,24 @@
 ---
 title: Configure local overrides for Microsoft Defender Antivirus settings
 description: Enable or disable users from locally changing settings in Microsoft Defender Antivirus.
-keywords: local override, local policy, group policy, gpo, lockdown,merge, lists
-ms.service: microsoft-365-security
-ms.subservice: mde
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
+ms.service: defender-endpoint
+ms.subservice: ngp
 ms.localizationpriority: medium
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 ms.topic: conceptual
 ms.custom: nextgen
-ms.date: 08/02/2022
+ms.date: 07/13/2023
 ms.reviewer: 
-manager: dansimp
+manager: deniseb
 ms.collection: 
 - m365-security
 - tier2
+- mde-ngp
 search.appverid: met150
 ---
 
 # Prevent or allow users to locally modify Microsoft Defender Antivirus policy settings
-
 
 **Applies to:**
 
@@ -79,7 +75,7 @@ To configure these settings:
 
 You can also configure how locally defined lists are combined or merged with globally defined lists. This setting applies to [exclusion lists](configure-exclusions-microsoft-defender-antivirus.md), [specified remediation lists](configure-remediation-microsoft-defender-antivirus.md), and [attack surface reduction](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction).
 
-By default, lists that have been configured in local group policy and the Windows Security app are merged with lists that are defined by the appropriate Group Policy Object that you have deployed on your network. Where there are conflicts, the globally defined list takes precedence. You can disable this setting to ensure that only globally-defined lists (such as those from any deployed GPOs) are used.
+By default, lists that have been configured in local group policy and the Windows Security app are merged with lists that are defined by the appropriate Group Policy Object that you have deployed on your network. Where there are conflicts, the globally defined list takes precedence. You can disable this setting to ensure that only globally defined lists (such as those from any deployed GPOs) are used.
 
 ### Use Group Policy to disable local list merging
 
@@ -90,6 +86,9 @@ By default, lists that have been configured in local group policy and the Window
 3. Expand the tree to **Windows components** > **Microsoft Defender Antivirus**.
 
 4. Double-click **Configure local administrator merge behavior for lists** and set the option to **Disabled**. Then select **OK**.
+
+> [!NOTE]
+> For "Administrative Templates (.admx) for Windows 11 2022 Update (22H2)" and "Administrative Templates (.admx) for Windows 10 November 2021 Update (21H2)" templates, set **Configure local administrator merge behavior for lists** to **Enabled** to disable the local administrator merge behavior.
 
 ### Use Microsoft Intune to disable local list merging
 
@@ -104,6 +103,7 @@ By default, lists that have been configured in local group policy and the Window
 
 > [!TIP]
 > If you're looking for Antivirus related information for other platforms, see:
+
 > - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
 > - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
 > - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
@@ -114,6 +114,7 @@ By default, lists that have been configured in local group policy and the Window
 
 ## Related topics
 
-- [Microsoft Intune](/protect/advanced-threat-protection-configure)
+- [Microsoft Intune](/mem/intune/protect/advanced-threat-protection-configure)
 - [Microsoft Defender Antivirus in Windows](microsoft-defender-antivirus-in-windows-10.md)
 - [Configure end-user interaction with Microsoft Defender Antivirus](configure-end-user-interaction-microsoft-defender-antivirus.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

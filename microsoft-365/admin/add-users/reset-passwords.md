@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 02/18/2020
+ms.date: 06/30/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -18,22 +18,16 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
-- VSBFY23
-- TopSMBIssues
-- MSStore_Link
-- TRN_M365B
-- OKR_SMB_Videos
-- AdminSurgePortfolio
-- AdminTemplateSet
-- business_assist
-- adminvideo
-search.appverid:
-- BCS160
-- MET150
-- MOE150
-- BEA160
-- GEA150
-ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
+  - VSBFY23
+  - TopSMBIssues
+  - MSStore_Link
+  - TRN_M365B
+  - OKR_SMB_Videos
+  - AdminSurgePortfolio
+  - AdminTemplateSet
+  - business_assist
+  - adminvideo
+  - has-azure-ad-ps-ref
 description: "Sign in with your Microsoft 365 admin account to reset passwords for users when you have a Microsoft 365 for business subscription."
 ---
 
@@ -43,7 +37,7 @@ Check out all of our small business content on [Small business help & learning](
 
 Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
-This article explains how to reset passwords for yourself and for your users when you have a Microsoft 365 for business subscription.
+This article explains how to reset passwords for yourself and for your users when you have a **Microsoft 365 for business subscription**. If you don't have a Microsoft 365 for business subscription try this article: [I forgot the username or password for the account I use with Microsoft 365.](https://support.microsoft.com/office/eba0b4a2-c0ae-472c-99f6-bc63ee2425a8?wt.mc_id=SCL_reset-passwords_AdmHlp).
 
 > [!NOTE]
 > You can also set up self-service password reset for your users so they can reset their own passwords. To learn more, see [Let users reset their own passwords](let-users-reset-passwords.md).
@@ -55,30 +49,26 @@ This article explains how to reset passwords for yourself and for your users whe
 
 This article is for people who set password expiration policy for a business, school, or nonprofit. To complete these steps, you need to sign in with your Microsoft 365 admin account. [Overview in the Microsoft 365 admin center](../admin-overview/admin-center-overview.md).
 
-You must be an [global admin or password administrator](about-admin-roles.md) to perform these steps.
+You must be a [global admin or password administrator](about-admin-roles.md) to perform these steps.
 
 ## Watch: Reset a business password for a user
 
 Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198204).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FVVP]
-
-1. When a user requests a new password, you'll receive a password reset request in email. To reset the password, open the app launcher and select **Admin**.
-1. In the Microsoft 365 admin center, select **Users**,  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>, and then select the key icon next to the user who requested the reset.
-1. Select **Auto-generate password** to have a random password automatically created.
-1. Select **Reset**.
-
-If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../../business-video/index.yml).
-  
 ## Steps: Reset a business password for a user
 
-1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
+When a user requests a new password, you'll receive a password reset request in email. Follow these steps to reset the password.
+
+1. In the Microsoft 365 admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
 
 2. On the **Active users** page, select the user and then select **Reset password**.
 
 3. Follow the instructions on the **Reset password** page to auto-generate a new password for the user or create one for them, and then select **Reset**.  
 
-4. Enter an email address the user can get to so they receive the new password, and follow up with them to make sure they got it.
+4. Enter your email address to get the new password, and then send to the user's alternate email address or give it to them in person.
+
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../../business-video/index.yml).
 
 ## Let users reset their own passwords
 
@@ -135,7 +125,7 @@ These steps work for a business with tens of users. If you have hundreds or thou
 Use PowerShell! Check out this post by Eyal Doron: [Managing passwords with PowerShell](https://go.microsoft.com/fwlink/?linkid=853696).
   
 <!-- Here's a related article: [Set the passwords for multiple user accounts](/office365/enterprise/powershell/manage-office-365-with-office-365-powershell). -->
-  
+
 For overview information, see [Manage Microsoft 365 with PowerShell](../../enterprise/manage-microsoft-365-with-microsoft-365-powershell.md).
   
 ## Force a password change for all users in your business
@@ -144,26 +134,26 @@ Check out this great blog post by Vasil Michev, Microsoft MVP: [Force password c
 
 ## Set strong passwords
 
-1. [Connect to Microsoft 365 with PowerShell](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+1. Connect to Microsoft Entra ID using [Microsoft Graph PowerShell](/powershell/microsoftgraph/get-started). You can explore other [authentication methods](/powershell/microsoftgraph/authentication-commands) too.
+
+    ```powershell
+    Connect-MgGraph -Scopes "User.Read.All"
+    ```
 
 2. Using PowerShell, you can turn off strong password requirements for all users with the following command:
 
     ```powershell
-    Get-MsolUser | Set-MsolUser -StrongPasswordRequired $false
+    Get-MgUser | ForEach { Update-MgUser –UserId $_.Id -PasswordPolicies "DisableStrongPassword" }
 
 3. You can turn **OFF** strong password requirements for specific users with this command:
 
     ```powershell
-    Set-MsolUser –UserPrincipalName –StrongPasswordRequired  $false
+    Update-MgUser -UserId <UserPrincipalName> -PasswordPolicies "DisableStrongPassword"
     ```
 
 > [!NOTE]
 > The userPrincipalName must be in the Internet-style sign-in format where the user name is followed by the at sign (@) and a domain name. For example: user@contoso.com.
-  
-## I don't have a Microsoft 365 for business subscription
 
-Try this article: [I forgot the username or password for the account I use with Microsoft 365.](https://support.microsoft.com/office/eba0b4a2-c0ae-472c-99f6-bc63ee2425a8?wt.mc_id=SCL_reset-passwords_AdmHlp)
-  
 ## Related content
   
 [Let users reset their own passwords](../add-users/let-users-reset-passwords.md) (article)\
@@ -171,3 +161,4 @@ Try this article: [I forgot the username or password for the account I use with 
 [Set an individual user's password to never expire](set-password-to-never-expire.md) (article)\
 [Set the password expiration policy for your organization](../manage/set-password-expiration-policy.md) (article)\
 [Microsoft 365 for business training videos](../../business-video/index.yml) (link page)
+

@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: crimora
-ms.date: 03/01/2022
+ms.date: 07/17/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -69,6 +69,13 @@ Either granular delegated admin privileges (GDAP) plus an indirect reseller rela
 | Issue | Description | Solution |
 | ---------------- | ---------------- | ---------------- |
 | **Translation issues** | Users may experience language translation issues when the language of their browser, or their language selection in Lighthouse, is anything other than English. | To minimize translation issues in Lighthouse, make sure that the browser's language selection matches that of the language setting in the Lighthouse portal. To change the language selection in Lighthouse, sign in to Lighthouse and select the gear icon at the top of the page to open the Portal settings page, select **Language + region**, and then select the appropriate language and regional formats. |
+
+## Sales Advisor
+
+| Issue | Description | Solution |
+| ---------------- | ---------------- | ---------------- |
+| **Total tenants and total seats count mismatch with Partner Center** | Total seats and tenants displayed in the summary view of Customer acquisition, Customer retention, and Customer growth tabs are mismatched between the Lighthouse experience and Partner Center experience. | No workaround is required. This issue doesn't impact the number of opportunities visible in the recommendation table or the export. You still have access to the full list of opportunities available across your customer tenants. |
+| **Filtering and sorting experience in Lighthouse is different than in Partner Center**| Column sorting, Recommendation filter, Product filter, and MPN ID filter are unavailable in the Lighthouse experience. | No workaround is required. You still have access to the full list of opportunities available across your customer tenants.  |
 
 ## Related content
 

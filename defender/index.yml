@@ -34,7 +34,7 @@ highlightedContent:
       itemType: overview
       url: /microsoft-365/security/
     # Card
-    - title: Learn modules for Microsoft 365 Defender
+    - title: Learn modules for Microsoft Defender XDR
       itemType: learn
       url: /training/m365/defender
 
@@ -43,11 +43,11 @@ conceptualContent:
   sections:
     - items:
         # Card
-        - title: Microsoft 365 Defender 
+        - title: Microsoft Defender XDR 
           links:
           - url: /microsoft-365/security/defender/
             itemType: overview
-            text: Microsoft 365 Defender
+            text: Microsoft Defender XDR
           - url: /microsoft-365/security/defender-endpoint
             itemType: overview
             text: Microsoft Defender for Endpoint
@@ -62,7 +62,7 @@ conceptualContent:
             text: Microsoft Defender for Cloud Apps
           - url: /microsoft-365/security/defender-business/mdb-overview
             itemType: overview
-            text: Microsoft 365 Defender for Businesses
+            text: Microsoft Defender XDR for Businesses
           - url: /microsoft-365/security/defender-vulnerability-management
             itemType: overview
             text: Microsoft Defender Vulnerability Management

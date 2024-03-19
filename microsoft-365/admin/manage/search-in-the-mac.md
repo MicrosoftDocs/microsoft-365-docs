@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 10/29/2020
+ms.date: 09/19/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -16,16 +16,12 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
-search.appverid:
-- BCS160
-- MET150
-- MOE150
 description: "Learn how to use the search feature in the admin center for better and faster results."
 ---
 
 # Search in the Microsoft 365 admin center
 
-As the administrator of a Microsoft 365 organization, you can use search to find users, perform actions, navigate to different settings, and read documentation. With new search functionality, search speed has improved, and you can now search from every page in the admin center. The search box has moved to the banner area at the top of the admin center. You can use the **Alt+S shortcut** to use search from any page.
+As the administrator of a Microsoft 365 organization, you can use search to find users, perform actions, navigate to different settings, and read documentation. You can use search from every page in the admin center. The search box is located in the banner area at the top of the admin center. You can use the **Alt+S shortcut** to use search from any page.
 
 :::image type="content" source="../../media/search-bar.png" alt-text="Screenshot: Search bar in the Microsoft 365 admin center":::
 
@@ -70,7 +66,7 @@ You can search for Actions category contains frequently used actions in M365 Adm
 
 ## Navigation
 
-Results provides a way to quickly navigate to a specific page in the admin center. For example, searching for RBAC will take you to the Roles page for Azure AD roles.
+Results provides a way to quickly navigate to a specific page in the admin center. For example, searching for RBAC will take you to the Roles page for Microsoft Entra roles.
 
 :::image type="content" source="../../media/search-for-navigation-mac.png" alt-text="Screenshot: Search results showing navigation path in the admin center":::
 

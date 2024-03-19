@@ -1,8 +1,8 @@
 ---
 title: Integrate Microsoft OneDrive LTI with Canvas
-ms.author: danismith
-author: DaniEASmith
-manager: serdars
+author: MicrosoftHeidi
+ms.author: heidip
+manager: jacktremper
 ms.reviewer: amitman 
 ms.date: 06/21/2021
 audience: admin

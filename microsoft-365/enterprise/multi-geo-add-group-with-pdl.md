@@ -1,10 +1,10 @@
 ---
 title: Create a Microsoft 365 Group with a specific preferred data location
-ms.reviewer: adwood
+ms.reviewer:
 ms.date: 08/10/2020
-ms.author: mikeplum
-author: MikePlumleyMSFT
-manager: pamgreen
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise

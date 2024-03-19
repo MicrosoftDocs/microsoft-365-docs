@@ -1,10 +1,9 @@
 ---
 title: Review architecture requirements and planning concepts for Microsoft Defender for Office 365
-description: The technical diagram for Microsoft Defender for Office 365 in Microsoft 365 Defender will help you understand identity at Microsoft 365 before you build your trial lab or pilot environment.
+description: The technical diagram for Microsoft Defender for Office 365 in Microsoft Defender XDR will help you understand identity at Microsoft 365 before you build your trial lab or pilot environment.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -29,7 +28,7 @@ ms.topic: conceptual
 # Review Microsoft Defender for Office 365 architecture requirements and key concepts
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 This article is [Step 1 of 3](eval-defender-office-365-overview.md) in the process of setting up the evaluation environment for Microsoft Defender for Office 365. For more information about this process, see the [overview article](eval-defender-office-365-overview.md).
 
@@ -49,9 +48,9 @@ The following table describes this illustration.
 |2|Exchange Online Protection negotiates and validates the inbound connection and inspects the message headers and content to determine what extra policies, tagging, or processing is required.|
 |3|Exchange Online integrates with Microsoft Defender for Office 365 to offer more advanced threat protection, mitigation, and remediation.|
 |4|A message that is not malicious, blocked, or quarantined is processed and delivered to the recipient in EXO where user preferences related to junk mail, mailbox rules, or other settings are evaluated and triggered.|
-|5|Integration with on-premises Active Directory can be enabled using Azure AD Connect to synchronize and provision mail-enabled objects and accounts to Azure Active Directory and ultimately Exchange Online.|
+|5|Integration with on-premises Active Directory can be enabled using Microsoft Entra Connect to synchronize and provision mail-enabled objects and accounts to Microsoft Entra ID and ultimately Exchange Online.|
 |6|When integrating an on-premises environment, it is encouraged to use an Exchange server for supported management and administration of mail-related attributes, settings, and configurations|
-|7|Microsoft Defender for Office 365 shares signals to Microsoft 365 Defender for extended detection and response (XDR).|
+|7|Microsoft Defender for Office 365 shares signals to Microsoft Defender XDR for extended detection and response (XDR).|
 
 On-premises integration is common but optional. If your environment is cloud-only, this guidance will also work for you.
 
@@ -96,4 +95,5 @@ Step 2 of 3: [Enable the evaluation environment Microsoft Defender for Office 36
 
 Return to the overview for [Evaluate Microsoft Defender for Office 365](eval-defender-office-365-overview.md)
 
-Return to the overview for [Evaluate and pilot Microsoft 365 Defender](eval-overview.md)
+Return to the overview for [Evaluate and pilot Microsoft Defender XDR](eval-overview.md)
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

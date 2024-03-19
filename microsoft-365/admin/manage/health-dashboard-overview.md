@@ -3,7 +3,7 @@ title: "Microsoft 365 Health Dashboard"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 06/15/2022
+ms.date: 11/16/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -24,16 +24,15 @@ As the admin of your organization, you’re charged with keeping many apps and s
 
 The Health dashboard is designed to give you a snapshot of the overall health of your environment. You can see how well your organization is keeping desktop software up to date, following best practices for security, and using the products and services you’ve paid for.
 
-> [!NOTE]
-> Microsoft 365 Health dashboard is in public preview and may not be available to all customers. 
-
 ## Watch
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RW12HEz?autoplay=false]
 
 ## Steps: Health dashboard in the Microsoft 365 admin center
 
-1. Sign in to the admin center, and then go to this url: https://admin.microsoft.com/AdminPortal/Home?#/healthoverview.
+1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) and from the view menu, select the dropdown, and choose **Health**.
+
+:::image type="content" source="../../media/new-health-dashboard-location.jpg" alt-text="Screenshot: Choose Health from Microsoft 365 admin center View menu":::
 
 You need to be a member of the global admin role or global reader role to access the health dashboard.
 

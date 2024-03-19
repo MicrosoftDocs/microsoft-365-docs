@@ -1,22 +1,20 @@
 ---
 title: Enable block at first sight to detect malware in seconds
 description: Turn on the block at first sight feature to detect and block malware within seconds.
-keywords: scan, block at first sight, malware, first sight, cloud, defender, antivirus
-ms.service: microsoft-365-security
-ms.mktglfcycl: manage
-ms.sitesec: library
+ms.service: defender-endpoint
 ms.localizationpriority: high
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 ms.reviewer: marcmcc
-manager: dansimp
+manager: deniseb
 ms.custom: nextgen
-ms.date: 04/10/2023
-ms.subservice: mde
+ms.date: 02/16/2024
+ms.subservice: ngp
 ms.topic: conceptual
 ms.collection: 
 - m365-security
 - tier2
+- mde-ngp
 search.appverid: met150
 ---
 
@@ -184,3 +182,4 @@ If you have a personal device that is not managed by an organization, you might 
 - [Enable cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md)
 - [Stay protected with Windows Security](https://support.microsoft.com/windows/stay-protected-with-windows-security-2ae0363d-0ada-c064-8b56-6a39afb6a963)
 - [Onboard non-Windows devices](configure-endpoints-non-windows.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

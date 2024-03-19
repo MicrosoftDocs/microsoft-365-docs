@@ -2,9 +2,9 @@
 title: Respond to a compromised connector in Microsoft 365
 f1.keywords:
   - NOCSH
-ms.author: dansimp
-author: dansimp
-manager: dansimp
+ms.author: chrisda
+author: chrisda
+manager: deniseb
 audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: medium
@@ -17,18 +17,16 @@ description: Learn how to recognize and respond to a compromised connector in Mi
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
-ms.date: 5/22/2023
+ms.date: 6/14/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # Respond to a compromised connector
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
-
-**Applies to**
-
-- [Exchange Online Protection](eop-about.md)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Connectors are used for enabling mail flow between Microsoft 365 and email servers that you have in your on-premises environment. For more information, see [Configure mail flow using connectors in Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
 
@@ -58,7 +56,7 @@ Do **all** of the following steps to regain control of the connector. Go through
 
 #### Review recent suspicious connector traffic or related messages
 
-In [Microsoft Defender for Office 365 Plan 2](defender-for-office-365.md), open the Microsoft 365 Defender portal at <https://security.microsoft.com> and go to **Explorer**. Or, to go directly to the **Explorer** page, use <https://security.microsoft.com/threatexplorer>.
+In [Microsoft Defender for Office 365 Plan 2](defender-for-office-365.md), open the Microsoft Defender portal at <https://security.microsoft.com> and go to **Explorer**. Or, to go directly to the **Explorer** page, use <https://security.microsoft.com/threatexplorer>.
 
 1. On the **Explorer** page, verify that the **All email** tab is selected and then configure the following options:
    - Select the date/time range.
@@ -97,7 +95,7 @@ In [Microsoft Defender for Office 365 Plan 1](defender-for-office-365.md) or [Ex
 
    :::image type="content" source="../../media/connector-compromise-new-message-trace.png" alt-text="New message trace flyout" lightbox="../../media/connector-compromise-new-message-trace.png":::
 
-4. In the message trace results, look for the following information:
+5. In the message trace results, look for the following information:
    - A significant number of messages were recently marked as **FilteredAsSpam**. This result clearly indicates that a compromised connector was used to send spam.
    - Whether it's reasonable for the message recipients to receive email from senders in your organization
 
@@ -105,7 +103,7 @@ In [Microsoft Defender for Office 365 Plan 1](defender-for-office-365.md) or [Ex
 
 #### Investigate and validate connector-related activity
 
-In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), replace \<StartDate\> and \<EndDate\> with your values, and then run the following command to find and validate admin-related connector activity in the audit log. For more information, see [Use a PowerShell script to search the audit log](/compliance/audit-log-search-script).
+In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), replace \<StartDate\> and \<EndDate\> with your values, and then run the following command to find and validate admin-related connector activity in the audit log. For more information, see [Use a PowerShell script to search the audit log](/purview/audit-log-search-script).
 
 ```powershell
 Search-UnifiedAuditLog -StartDate "<ExDateTime>" -EndDate "<ExDateTime>" -Operations "New-InboundConnector","Set-InboundConnector","Remove-InboundConnector
@@ -130,4 +128,4 @@ After you identify the admin account that was responsible for the unauthorized c
 ## More information
 
 - [Remove blocked connectors](connectors-remove-blocked.md)
-- [Remove blocked users](removing-user-from-restricted-users-portal-after-spam.md)
+- [Remove blocked users](outbound-spam-restore-restricted-users.md)

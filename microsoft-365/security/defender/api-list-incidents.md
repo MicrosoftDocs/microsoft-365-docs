@@ -1,10 +1,9 @@
 ---
-title: List incidents API in Microsoft 365 Defender
-description: Learn how to list incidents API in Microsoft 365 Defender
+title: List incidents API in Microsoft Defender XDR
+description: Learn how to list incidents API in Microsoft Defender XDR
 keywords: list, incident, incidents, api
 search.product: eADQiWindows 10XVcnh
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -18,7 +17,8 @@ audience: ITPro
 ms.collection: 
  - m365-security
  - tier3
-ms.topic: conceptual
+ - must-keep
+ms.topic: reference
 search.appverid: 
   - MOE150
   - MET150
@@ -26,14 +26,14 @@ ms.custom: api
 ms.date: 02/08/2023
 ---
 
-# List incidents API in Microsoft 365 Defender
+# List incidents API in Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 
 **Applies to:**
 
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!NOTE]
 > **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview).
@@ -57,7 +57,7 @@ The API supports the following **OData** operators:
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Access Microsoft 365 Defender APIs](api-access.md)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Access Microsoft Defender XDR APIs](api-access.md)
 
 Permission type|Permission|Permission display name
 ---|---|---
@@ -144,7 +144,7 @@ devices|All devices where alerts related to the incident were sent.|\[\] (see de
 Field name|Description|Example value
 ---|---|---
 DeviceId|The device ID as designated in Microsoft Defender for Endpoint.|24c222b0b60fe148eeece49ac83910cc6a7ef491
-aadDeviceId|The device ID as designated in [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis). Only available for domain-joined devices.|null
+aadDeviceId|The device ID as designated in [Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-whatis). Only available for domain-joined devices.|null
 deviceDnsName|The fully qualified domain name for the device.|user5cx.middleeast.corp.contoso.com
 osPlatform|The OS platform the device is running.|WindowsServer2016
 osBuild|The build version for the OS the device is running.|14393
@@ -726,9 +726,10 @@ GET https://api.security.microsoft.com/api/incidents
 
 - [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview)
 
-- [Access the Microsoft 365 Defender APIs](api-access.md)
+- [Access the Microsoft Defender XDR APIs](api-access.md)
 - [Learn about API limits and licensing](api-terms.md)
 - [Understand error codes](api-error-codes.md)
 - [Incidents overview](incidents-overview.md)
 - [Incident APIs](api-incident.md)
 - [Update incident API](api-update-incidents.md)
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]
