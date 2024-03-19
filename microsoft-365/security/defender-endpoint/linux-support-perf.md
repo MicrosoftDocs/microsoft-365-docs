@@ -256,7 +256,7 @@ The XMDEClientAnalyzer support tool contains syntax that can be used to add Audi
 
 AuditD exclusion – support tool syntax help:
 
-:::image type="content" source="images/auditd-exclusion-support-tool-syntax-help.png" alt-text="syntax that can be used to add AuditD exclusion configuration rules" lightbox="images/auditd-exclusion-support-tool-syntax-help.png":::
+:::image type="content" source="media/auditd-exclusion-support-tool-syntax-help.png" alt-text="syntax that can be used to add AuditD exclusion configuration rules" lightbox="media/auditd-exclusion-support-tool-syntax-help.png":::
 
 **By initiator**
 

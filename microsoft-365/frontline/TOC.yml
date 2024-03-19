@@ -13,8 +13,6 @@
       href: flw-deploy-overview.md
     - name: Start with a pilot deployment
       href: flw-pilot.md
-#    - name: Extend your pilot to a full deployment
-#      href: deploy-teams-at-scale.md 
     - name: Set up Microsoft 365 and Teams
       items: 
       - name: Set up Microsoft 365 and related services
@@ -25,6 +23,8 @@
         href: deploy-dynamic-teams-at-scale.md
       - name: Deploy frontline static teams at scale with PowerShell
         href: deploy-teams-at-scale.md
+#     - name: Frontline usage reporting
+#       href: frontline-usage-report.md 
       - name: Deploy your frontline operational hierarchy
         href: deploy-frontline-operational-hierarchy.md
     - name: Set up and configure experiences for your frontline
@@ -54,7 +54,7 @@
       - name: Licensing options for frontline workers
         href: flw-licensing-options.md
       - name: Considerations for switching from E to F
-        href: switch-from-enterprise-to-frontline.md 
+        href: switch-from-enterprise-to-frontline.md
   - name: Communications
     items: 
     - name: Frontline team collaboration
