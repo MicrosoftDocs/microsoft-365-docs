@@ -36,7 +36,7 @@ Mirror Server is any server in the customer's environment that can connect to th
 Key benefits include:
 
 - Ability to control and manage the frequency of signature downloads on the local server & the frequency at which endpoints pull the signatures from the local server.
-- Adds an extra layer of protection & control as the downloaded signatures can be tested on a test device before being propagating to the entire fleet.
+- Adds an extra layer of protection & control as the downloaded signatures can be tested on a test device before being propagated to the entire fleet.
 - Reduces network bandwidth as now only one local server will poll MS cloud to get the latest signatures on behalf of your entire fleet. 
 - Local server can run any of the three OS - Windows, Mac, Linux, and isn't required to install Defender for Endpoint.
 - Provides the most up to date antivirus protections as signatures are always downloaded along with the latest compatible AV engine. 
