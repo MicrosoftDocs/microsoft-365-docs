@@ -67,7 +67,7 @@ You encounter this message in a different way: If you're using the terminal to e
 
 #### If you did not run the configuration script
 
-This section describes the troubleshooting measures when the error/warning message  is caused by non-execution of the configuration script that contains the license settings after you have deployed and/or installed the Microsoft Defender for Endpoint on macOS package.
+This section describes the troubleshooting measures when the error/warning message is caused by nonexecution of the configuration script. The script contains the license settings when the Microsoft Defender for Endpoint on macOS package is installed and deployed.
 
 Depending on the deployment management tool used, follow the tool-specific instructions to onboard the package (register the license) as described in the following table:
 
