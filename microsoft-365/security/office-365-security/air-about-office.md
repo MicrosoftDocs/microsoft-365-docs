@@ -70,7 +70,7 @@ Remediation is the final phase of the playbook. During this phase, remediation s
 
 ## Example: A security administrator triggers an investigation from Threat Explorer
 
-In addition to automated investigations that are triggered by an alert, your organization's security operations team can trigger an automated investigation from a view in [Threat Explorer](threat-explorer-about.md). This investigation also creates an alert, so Microsoft Defender XDR incidents and external SIEM tools can see that this investigation was triggered.
+In addition to automated investigations that are triggered by an alert, your organization's security operations team can trigger an automated investigation from a view in [Threat Explorer](threat-explorer-real-time-detections-about.md). This investigation also creates an alert, so Microsoft Defender XDR incidents and external SIEM tools can see that this investigation was triggered.
 
 For example, suppose that you are using the **Malware** view in Explorer. Using the tabs below the chart, you select the **Email** tab. If you select one or more items in the list, the **+ Actions** button activates.
 

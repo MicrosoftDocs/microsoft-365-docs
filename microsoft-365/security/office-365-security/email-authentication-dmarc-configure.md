@@ -75,7 +75,7 @@ The rest of this article describes the DMARC TXT record that you need to create 
 >
 > There are no admin portals or PowerShell cmdlets in Microsoft 365 for you to manage DMARC TXT records in your **custom** domains. Instead, you create the DMARC TXT record at your domain registrar or DNS hosting service (often the same company).
 >
-> We provide instructions to create the proof of domain ownership TXT record for Microsoft 365 at many domain registrars. You can use these instructions as a starting point to create DMARC TXT records. For more information, see [Add DNS records to connect your domain](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+> We provide instructions to create the proof of domain ownership TXT record for Microsoft 365 at many domain registrars. You can use these instructions as a starting point to create DMARC TXT records. For more information, see [Add DNS records to connect your domain](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
 >
 > If you're unfamiliar with DNS configuration, contact your domain registrar and ask for help.
 
@@ -258,4 +258,4 @@ You can use the following graphic to help troubleshoot DMARC authentication issu
 
 ## Next steps
 
-For mail coming _into_ Microsoft 365, you might also need to configure trusted ARC sealers if you use services that modify messages in transit before delivery to your organization. For more information, see [Configure trusted ARC sealers](/microsoft-365/security/office-365-security/email-authentication-arc-configure).
+For mail coming _into_ Microsoft 365, you might also need to configure trusted ARC sealers if you use services that modify messages in transit before delivery to your organization. For more information, see [Configure trusted ARC sealers](email-authentication-arc-configure.md).

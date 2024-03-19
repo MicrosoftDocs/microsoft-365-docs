@@ -237,7 +237,7 @@ Create a new group policy specifically for onboarding devices such as "Microsoft
 It copies the files from DOMAIN\NETLOGON\MMA\filename to
 C:\windows\MMA\filename - **so the installation files are local to the server**:
 
-:::image type="content" source="images/deploymma.png" alt-text="The deploy mma cmd properties" lightbox="images/deploymma.png":::
+:::image type="content" source="media/deploymma.png" alt-text="The deploy mma cmd properties" lightbox="media/deploymma.png":::
 
 Repeat the process but create item level targeting on the COMMON tab, so the file only gets copied to the appropriate platform/Operating system version in scope:
 
@@ -266,7 +266,7 @@ As the Script has an exit method and wont re-run if the MMA is installed, you co
 
 :::image type="content" source="images/newtaskprops.png" alt-text="The new task properties" lightbox="images/newtaskprops.png":::
 
-:::image type="content" source="images/deploymmadowmload.png" alt-text="The deploy mma download properties" lightbox="images/deploymmadowmload.png":::
+:::image type="content" source="media/deploymmadowmload.png" alt-text="The deploy mma download properties" lightbox="media/deploymmadowmload.png":::
 
 :::image type="content" source="images/tasksch.png" alt-text="The task scheduler" lightbox="images/tasksch.png":::
 
@@ -306,7 +306,7 @@ You can use either of the following methods:
 
 2. Select the Defender for Endpoint workspace, and click **Remove**.
 
-    :::image type="content" source="images/atp-mma.png" alt-text="The Workspaces pane" lightbox="images/atp-mma.png":::
+    :::image type="content" source="media/atp-mma.png" alt-text="The Workspaces pane" lightbox="media/atp-mma.png":::
 
 #### Run a PowerShell command to remove the configuration
 
