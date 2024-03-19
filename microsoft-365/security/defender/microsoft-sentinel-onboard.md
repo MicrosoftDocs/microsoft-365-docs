@@ -31,7 +31,7 @@ ms.date: 03/19/2024
 Combine the power of Microsoft Sentinel with Microsoft Defender XDR into a single portal. When you onboard Microsoft Sentinel to the Microsoft Defender portal, you unify capabilities like incident management and advanced hunting. Reduce tool switching and build a more context-focused investigation that expedites incident response and stops breaches faster. For more information, see:
 
 - [Microsoft Sentinel in the Microsoft Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2263690)
-- [Introducing a Unified Security Operations Platform with Microsoft Sentinel and Defender XDR](https://aka.ms/unified-soc-announcement)
+- [Unified security operations platform with Microsoft Sentinel and Defender XDR](https://aka.ms/unified-soc-announcement)
 
 > [!IMPORTANT]
 > Information in this article relates to a prerelease product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -129,7 +129,7 @@ If you want to connect to a different workspace, from the **Workspaces** page, s
 ## Related content
 
 - [Microsoft Sentinel in the Microsoft Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2263690)
-- [Advanced hunting in the Microsoft Defender portal](https://go.microsoft.com/fwlink/p/?linkid=226441)
+- [Advanced hunting in the Microsoft Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2264410)
 - [Automatic attack disruption in Microsoft Defender XDR](automatic-attack-disruption.md)
 - [Optimize your security operations with Microsoft Defender XDR](https://go.microsoft.com/fwlink/p/?linkid=2264237)
 - [Investigate incidents in Microsoft Defender XDR](investigate-incidents.md)
