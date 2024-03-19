@@ -94,8 +94,8 @@ If the file exists, it will prevent the macOS from being onboarded again.  Delet
 #### If a license is not assigned to a user
 
 1. In the Microsoft Defender portal (security.microsoft.com), select **Settings**, and then select **Endpoints**.
-       
-       :::image type="content" source="media/endpoints-option-on-settings-screen.png" alt-text="Screenshot of the Settings screen on which the Endpoints option is listed." lightbox="media/endpoints-option-on-settings-screen.png":::
+
+   :::image type="content" source="media/endpoints-option-on-settings-screen.png" alt-text="Screenshot of the Settings screen on which the Endpoints option is listed." lightbox="media/endpoints-option-on-settings-screen.png":::
  
 2. Select **Licenses**.
 
@@ -111,11 +111,11 @@ If the file exists, it will prevent the macOS from being onboarded again.  Delet
 
 5. Select the **Assign licenses** link.
 
-       :::image type="content" source="media/assign-licenses-link.png" alt-text="Screenshot of the product page from which you can select the Assign licenses link.":::
+   :::image type="content" source="media/assign-licenses-link.png" alt-text="Screenshot of the product page from which you can select the Assign licenses link.":::
 
-       The following screen appears:
+   The following screen appears:
 
-       :::image type="content" source="images/screen-containing-option-to-assign-licenses.png" alt-text="Screenshot of the page containing the + Assign licenses option." lightbox="images/screen-containing-option-to-assign-licenses.png":::
+   :::image type="content" source="images/screen-containing-option-to-assign-licenses.png" alt-text="Screenshot of the page containing the + Assign licenses option." lightbox="images/screen-containing-option-to-assign-licenses.png":::
 
 6. Select **+ Assign licenses**.
 
