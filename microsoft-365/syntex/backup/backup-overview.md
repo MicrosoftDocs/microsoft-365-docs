@@ -98,7 +98,7 @@ It will take on average less than one hour for the first full site or account pr
 
 The following table summarizes expected performance for a normally distributed tenant, including tenants of large size and scale. During the preview period, actual performance might deviate from these general availability targets.
 
-|Scenario |First full-container restore completes |Restore of all containers complete |
+|Scenario |First protection unit restore completes |Restore of all protection units complete |
 |:-------|:-------|:--------|
 | 1,000 sites<br>(30-GB average site size)  |Less than 1 hour  |Less than 12 hours  |
 | 1,000 mailboxes<br>(30-GB average mailbox size)| Less than 1 hour | Less than 12 hours |
