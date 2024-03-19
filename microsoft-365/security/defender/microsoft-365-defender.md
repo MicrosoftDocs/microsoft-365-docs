@@ -19,7 +19,8 @@ ms.custom:
 ms.topic: conceptual
 adobe-target: true
 ms.date: 03/08/2024
-appliesto: ✅ Microsoft Defender XDR
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 manager: dansimp
 ---
 
