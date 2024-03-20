@@ -115,7 +115,7 @@ To troubleshoot and mitigate such issues, follow these steps:
    0s
    ```
 
-5. Type the following commands:
+6. Type the following commands:
 
    ```bash
    chmod +x high_cpu_parser.py
@@ -141,7 +141,7 @@ To troubleshoot and mitigate such issues, follow these steps:
    125  CrashPlanService 164
    ```
 
-6. To improve the performance of Defender for Endpoint on Mac, locate the one with the highest number under the **Total files scanned** row, and then add an exclusion for it. For more information, see [Configure and validate exclusions for Defender for Endpoint on macOS](mac-exclusions.md).
+7. To improve the performance of Defender for Endpoint on Mac, locate the one with the highest number under the **Total files scanned** row, and then add an exclusion for it. For more information, see [Configure and validate exclusions for Defender for Endpoint on macOS](mac-exclusions.md).
 
    > [!NOTE]
    > The application stores statistics in memory and only keeps track of file activity since it was started and real-time protection was enabled. Processes that were launched before or during periods when real time protection was off are not counted. Additionally, only events which triggered scans are counted.
