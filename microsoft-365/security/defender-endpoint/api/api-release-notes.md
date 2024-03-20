@@ -1,16 +1,12 @@
 ---
 title: Microsoft Defender for Endpoint API release notes
 description: Release notes for updates made to the Microsoft Defender for Endpoint set of APIs.
-keywords: Microsoft Defender for Endpoint API release notes, mde, APIs, Microsoft Defender for Endpoint API, updates, notes, release
 ms.service: defender-endpoint
 ms.subservice: reference
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security

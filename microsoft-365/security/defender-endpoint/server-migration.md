@@ -1,18 +1,13 @@
 ---
 title: Server migration scenarios for the new version of Microsoft Defender for Endpoint
 description: Read this article to get an overview of how to migrate your servers from the previous, MMA-based solution to the current Defender for Endpoint unified solution package.
-keywords: migrate server, server, 2012r2, 2016, server migration, device management, configure Microsoft Defender for Endpoint servers, onboard Microsoft Defender for Endpoint servers
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-author: mjcaparas
-ms.author: macapara
+author: siosulli
+ms.author: siosulli
 ms.localizationpriority: medium
 ms.date: 09/19/2022
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security

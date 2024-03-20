@@ -4,7 +4,7 @@ f1.keywords:
   - NOCSH
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 audience: Admin
 ms.topic: conceptual
 ms.localizationpriority: medium
@@ -48,10 +48,10 @@ To configure EOP and Defender for Office 365 features, you need permissions. The
 
 |Role or role group|Learn more|
 |---|---|
-|Global Administrator in Azure AD|[About Microsoft 365 admin roles](/microsoft-365/admin/add-users/about-admin-roles)|
+|Global Administrator in Microsoft Entra|[Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference#global-administrator)|
 |Organization Management in Email & collaboration role groups|[Role groups in Microsoft Defender for Office 365](scc-permissions.md#role-groups-in-microsoft-defender-for-office-365-and-microsoft-purview)|
-|Security Administrator in Azure AD|[Azure AD built-in roles](/entra/identity/role-based-access-control/permissions-reference#security-administrator)
-|Security Administrator in Email & collaboration role groups|[Role groups in Microsoft Defender for Office 365](scc-permissions.md#role-groups-in-microsoft-defender-for-office-365-and-microsoft-purview)|
+|Security Administrator in Microsoft Entra|[Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference#security-administrator)
+|Security Administrator in Email & collaboration role groups|[Email & collaboration permissions in Microsoft Defender for Office 365](scc-permissions.md#role-groups-in-microsoft-defender-for-office-365-and-microsoft-purview)|
 |Exchange Online Organization Management|[Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo)|
 
 ## Step 1: Configure email authentication for your Microsoft 365 domains
@@ -228,7 +228,7 @@ But, the intent of this step is to configure other admins to help you manage the
 
 When it comes to assigning permissions for tasks in EOP and Defender for Office 365, the following options are available:
 
-- [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): These permissions apply to all workloads in Microsoft 365 (Exchange Online, SharePoint Online, Microsoft Teams, etc.).
+- [Microsoft Entra permissions](/entra/identity/role-based-access-control/manage-roles-portal): These permissions apply to all workloads in Microsoft 365 (Exchange Online, SharePoint Online, Microsoft Teams, etc.).
 - [Exchange Online permissions](/exchange/permissions-exo/permissions-exo): Most tasks in EOP and Defender for Office 365 are available using Exchange Online permissions. Assigning permissions only in Exchange Online prevents administrative access in other Microsoft 365 workloads.
 - [Email & collaboration permissions in the Microsoft Defender portal](scc-permissions.md): Administration of some security features in EOP and Defender for Office 365 is available with Email & collaboration permissions. For example:
   - [Configuration analyzer](configuration-analyzer-for-security-policies.md)

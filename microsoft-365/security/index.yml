@@ -1,7 +1,7 @@
 ### YamlMime:Hub
 
 title: Microsoft 365 security # < 60 chars
-summary: Protect your Microsoft 365 environment with Microsoft Defender XDR # < 160 chars
+summary: Protect your Microsoft 365 environment with Microsoft Defender XDR. # < 160 chars
 # brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-apps | power-automate | power-bi | power-platform | power-virtual-agents | sql | sql-server | vs | visual-studio | windows | xamarin
 brand: m365
 
@@ -86,7 +86,7 @@ conceptualContent:
            text: Insights and reporting for attack simulation
          - url: /microsoft-365/security/office-365-security/advanced-delivery-policy-configure
            itemType: how-to-guide
-           text: Configure 3rd party phishing simulation
+           text: Configure third-party phishing simulation
 
         # Card
       - title: Enable safe email messages
@@ -145,7 +145,7 @@ additionalContent:
        - url: /microsoft-365/security/office-365-security/preset-security-policies
          text: Get Started
     # Card
-    - title: Microsoft Defender Endpoint
+    - title: Microsoft Defender for Endpoint
       links:
       - url: /microsoft-365/security/defender-endpoint/microsoft-defender-endpoint
         text: Overview  
@@ -176,7 +176,7 @@ additionalContent:
 # additionalContent section (optional)
 # Card with summary style
   - title: Learning, Training, and Certification # < 60 chars (optional)
-    summary: Explore topics in-depth through guided paths and training modules or prepare for the next step in your career with a certification.  # < 160 chars (optional)
+    summary: Explore articles in-depth through guided paths and training modules or prepare for the next step in your career with a certification.  # < 160 chars (optional)
     items:
         # Card
         - title: Microsoft Defender XDR Ninja training

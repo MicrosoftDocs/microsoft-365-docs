@@ -2,9 +2,9 @@
 title: Configure and review priority account protection in Microsoft Defender for Office 365
 f1.keywords:
   - NOCSH
-ms.author: dansimp
-author: dansimp
-manager: dansimp
+ms.author: chrisda
+author: chrisda
+manager: deniseb
 ms.date: 6/19/2023
 audience: ITPro
 ms.topic: how-to
@@ -42,7 +42,7 @@ This article describes how to confirm that priority account protection is turned
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
   - [Microsoft Defender XDR Unified role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac) (Affects the Defender portal only, not PowerShell): **Authorization and settings/System settings/Read and manage** or **Authorization and settings/System settings/Read-only**.
   - [Exchange Online permissions](/exchange/permissions-exo/permissions-exo): Membership in the **Organization Management** or **Security Administrator** role groups.
-  - [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator** or **Security Administrator** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
+  - [Microsoft Entra permissions](/entra/identity/role-based-access-control/manage-roles-portal): Membership in the **Global Administrator** or **Security Administrator** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 - As previously described, priority account protection is applied to accounts that have the **Priority account** tag applied to them. For instructions, see [Manage and monitor priority accounts](/microsoft-365/admin/setup/priority-accounts).
 
@@ -87,7 +87,7 @@ The effects of priority account protection are visible in the following reportin
   - [View data by Email \> Malware and Chart breakdown by Detection Technology](reports-email-security.md#view-data-by-email--malware-and-chart-breakdown-by-detection-technology)
   - [Chart breakdown by Policy type](reports-email-security.md#chart-breakdown-by-policy-type)
   - [Chart breakdown by Delivery status](reports-email-security.md#chart-breakdown-by-delivery-status)
-- [Threat Explorer and real-time detections](threat-explorer-about.md)
+- [Threat Explorer and real-time detections](threat-explorer-real-time-detections-about.md)
 - [Email entity page](mdo-email-entity-page.md)
 
 For information about where the Priority account tag and other user tags are available as filters, see [User tags in reports and features](user-tags-about.md#user-tags-in-reports-and-features).
@@ -100,7 +100,7 @@ In the previously mentioned views in the report, the option **Priority account p
 
 ### Threat Explorer
 
-For more information about Threat Explorer, see [Threat Explorer and Real-time detections](threat-explorer-about.md).
+For more information about Threat Explorer, see [Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md).
 
 To view the results of priority account protection in Threat Explorer, do the following steps:
 
@@ -112,13 +112,9 @@ To view the results of priority account protection in Threat Explorer, do the fo
 
 ### Email entity page
 
-The email entity page is available in **Threat Explorer**. For more information, see [The Email entity page](mdo-email-entity-page.md).
+The email entity page is available from many locations in the Defender portal, including **Threat Explorer** (also known as **Explorer**). For more information, see [The Email entity page](mdo-email-entity-page.md).
 
-In the filtered results on the **All email**, **Malware**, or **Phish** tabs of the **Explorer** page, select the **Subject** of an email message in the results.
-
-In the details flyout that opens, select :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity** at the top of the flyout.
-
-On the email entity page that opens, select the **Analysis** tab. **Priority account protection** is listed in the **Threat detection details** section.
+On the Email entity page, select the **Analysis** tab. **Priority account protection** is listed in the **Threat detection details** section.
 
 :::image type="content" source="../../media/email-entity-priority-account-protection.png" alt-text="The Analysis tab of the Email entity page showing Priority account protection results." lightbox="../../media/email-entity-priority-account-protection.png":::
 

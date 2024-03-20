@@ -18,6 +18,8 @@ f1.keywords: NOCSH
 
 # What is Test Base for Microsoft 365?
 
+[!INCLUDE [test-base-deprecation](./includes/test-base-deprecation.md)]
+
 Test Base is an Azure service that enables data-driven application testing for users anywhere in the world. 
 
 The following institutions are best fit to onboard their applications, binaries, and test scripts to Test Base for Microsoft 365: Enterprise/Businesses, Independent Software Publishers, System Integrators (SIs), and IT Professionals who want to validate their line-of-business (LOB) applications through integration with Microsoft Intune.

@@ -2,10 +2,11 @@
 title: Use eBPF-based sensor for Microsoft Defender for Endpoint on Linux
 description: eBPF-based sensor deployment in Microsoft Defender for Endpoint on Linux.
 ms.service: microsoft-365-security
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
+ms.reviewer: gopkr
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security
@@ -91,6 +92,18 @@ Refer to the link for detailed sample json file - [Set preferences for Microsoft
 > If you disable eBPF, the supplementary event provider switches back to auditd.
 > In the event eBPF doesn't become enabled or is not supported on any specific kernel, it will automatically switch back to auditd and retain all auditd custom rules. 
 
+You can also check the status of eBPF (enabled/disabled) on your linux endpoints using advanced hunting in the Microsoft Defender Portal. Steps are as follows:
+
+1. Go to the [Microsoft Defender portal](https://security.microsoft.com) and sign in.
+
+2. In the navigation pane, go to **Hunting** > **Advanced hunting**.
+
+3. Under **Advanced hunting**, go to **Defender Vulnerability Management**.
+
+4. Run the following query: `DeviceTvmInfoGathering`.
+
+5. In the output, in the **Additional fields** column, select **Show more**, and then look for **EBPF STATUS: true**.
+
 ## Immutable mode of Auditd
 
 For customers using auditd in immutable mode, a reboot is required post enablement of eBPF in order to clear the audit rules added by Microsoft Defender for Endpoint. This is a limitation in immutable mode of auditd, which freezes the rules file and prohibits editing/overwriting. This issue is resolved with the reboot.
@@ -100,7 +113,7 @@ Post reboot, run the below command to check if audit rules got cleared.
 % sudo auditctl -l
 ```
 
-The output of above command should show no rules or any user added rules. In case the rules didn't get removed, then perform the following steps to clear the audit rules file. 
+The output of above command should show no rules or any user added rules. In case the rules didn't get removed, then perform the following steps to clear the audit rules file.
 
 1. Switch to ebpf mode
   2. Remove the file /etc/audit/rules.d/mdatp.rules
@@ -108,18 +121,23 @@ The output of above command should show no rules or any user added rules. In cas
 
 ### Troubleshooting and Diagnostics
 
-You can check the agent health status by running the **mdatp** health command. Make sure that the eBPF sensor for Defender for Endpoint on Linux is supported by checking the current kernel version by using the following command line:
+You can check the agent health status by running the `mdatp` health command. Make sure that the eBPF sensor for Defender for Endpoint on Linux is supported by checking the current kernel version by using the following command line:
 
 ```bash
 uname -a
 ```
-Using Oracle Linux 8.8 with kernel version **5.15.0-0.30.20.el8uek.x86_64, 5.15.0-0.30.20.1.el8uek.x86_64** might result into kernel hang issues. 
 
-Following steps can be taken to mitigate this issue:     
+#### Known Issues
 
-1. Use a kernel version higher or lower than **5.15.0-0.30.20.el8uek.x86_64, 5.15.0-0.30.20.1.el8uek.x86_64** on Oracle Linux 8.8,  if you want to use eBPF as supplementary subsystem provider. Note, min kernel version for Oracle Linux is RHCK 3.10.0 and Oracle Linux UEK is 5.4. 
+1. Enabling eBPF on RHEL 8.1 version with SAP might result in kernel panic. To mitigate this issue, you can take one of the following steps:
 
-2. Switch to auditd mode if customer needs to use the same kernel version
+    - Use a distro version higher than RHEL 8.1.
+    - Switch to auditd mode if you need to use RHEL 8.1 version.
+
+2. Using Oracle Linux 8.8 with kernel version **5.15.0-0.30.20.el8uek.x86_64, 5.15.0-0.30.20.1.el8uek.x86_64** might result in kernel panic. To mitigate this issue, you can take one of the following steps:
+
+    - Use a kernel version higher or lower than **5.15.0-0.30.20.el8uek.x86_64, 5.15.0-0.30.20.1.el8uek.x86_64** on Oracle Linux 8.8 if you want to use eBPF as supplementary subsystem provider. Note that the minimum kernel version for Oracle Linux is RHCK 3.10.0 and Oracle Linux UEK is 5.4.
+    - Switch to auditd mode if you need to use the same kernel version
 
 ```bash
 sudo mdatp config  ebpf-supplementary-event-provider  --value disabled
@@ -138,6 +156,7 @@ If you see a hike in resource consumption by Microsoft Defender on your endpoint
 ```Bash
 sudo mdatp diagnostic  ebpf-statistics
 ```
+
 ```Output
 Output
 Monitor 20 seconds
@@ -162,7 +181,8 @@ Top syscall ids:
 90 : 10
 87 : 3
 ``` 
-In the above output, you can see that stress-ng is the top process generating large number of events and might result into performance issues. Most likely stress-ng is generating the system call with ID 82. You can create a ticket with Microsoft to get this process excluded. In future as part of upcoming enhancements, you'll have more control to apply such exclusions at your end.
+
+In the above output, you can see that stress-ng is the top process generating large number of events and might result into performance issues. Most likely stress-ng is generating the system call with ID 82. You can create a ticket with Microsoft to get this process excluded. In future as part of upcoming enhancements, you have more control to apply such exclusions at your end.
 
 Exclusions applied to auditd can't be migrated or copied to eBPF. Common concerns such as noisy logs, kernel panic, noisy syscalls are already taken care of by eBPF internally. In case you want to add any further exclusions, then reach out to Microsoft to get the necessary exclusions applied. 
 

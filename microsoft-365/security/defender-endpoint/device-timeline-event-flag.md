@@ -7,7 +7,7 @@ ms.author: siosulli
 author: siosulli
 ms.reviewer: efratka, alonshar
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -33,11 +33,11 @@ The Defender for Endpoint device timeline helps you research and investigate ano
 
 - Custom time range picker:
 
-    :::image type="content" source="images/custom-time-range.png" alt-text="Screenshot of the custom time range.":::
+    :::image type="content" source="media/custom-time-range.png" alt-text="Screenshot of the custom time range.":::
 
 - Process tree experience – event side panel:
 
-    :::image type="content" source="images/event-side-panel.png" alt-text="Screenshot of the event side panel." lightbox="images/event-side-panel.png":::
+    :::image type="content" source="media/event-side-panel.png" alt-text="Screenshot of the event side panel." lightbox="media/event-side-panel.png":::
 
    
 - All MITRE techniques are shown when there's more than one related technique:
@@ -141,7 +141,7 @@ While navigating the device timeline, you can search and filter for specific eve
 
 2. Select the flag icon in the Flag column. 
 
-:::image type="content" source="images/device-flags.png" alt-text="The device timeline flag" lightbox="images/device-flags.png":::
+:::image type="content" source="media/device-flags.png" alt-text="The device timeline flag" lightbox="media/device-flags.png":::
 
 ## View flagged events
 
@@ -150,5 +150,5 @@ While navigating the device timeline, you can search and filter for specific eve
 
 You can apply more filters by clicking on the time bar. This will only show events prior to the flagged event.  
 
-:::image type="content" source="images/device-flag-filter.png" alt-text="Screenshot that shows the device timeline flag with the filter switched on." lightbox="images/device-flag-filter.png":::
+:::image type="content" source="media/device-flag-filter.png" alt-text="Screenshot that shows the device timeline flag with the filter switched on." lightbox="media/device-flag-filter.png":::
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

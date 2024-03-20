@@ -2,10 +2,11 @@
 title: How to schedule an update of the Microsoft Defender for Endpoint (Linux)
 description: Learn how to schedule an update of the Microsoft Defender for Endpoint (Linux) to better protect your organization's assets.
 ms.service: defender-endpoint
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
+ms.reviewer: gopkr
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -142,7 +143,7 @@ Use the following commands:
 cron - Manage cron.d and crontab entries
 ```
 
-See <https://docs.ansible.com/ansible/latest/modules/cron_module.html> for more information.
+See <https://docs.ansible.com/ansible/latest> for more information.
 
 ### To set crontabs in Chef
 

@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 audience: ITPro
 author: siosulli
 ms.author: siosulli
-manager: dansimp
+manager: deniseb
 ms.subservice: asr
 ms.topic: how-to
 ms.collection: 
@@ -287,7 +287,7 @@ Example:
    - 2: Audit (Evaluate how the attack surface reduction rule would impact your organization if enabled)
    - 6: Warn  (Enable the attack surface reduction rule but allow the end-user to bypass the block)
 
-      :::image type="content" source="images/asr-rules-gp.png" alt-text="attack surface reduction rules in Group Policy" lightbox="images/asr-rules-gp.png":::
+      :::image type="content" source="media/asr-rules-gp.png" alt-text="attack surface reduction rules in Group Policy" lightbox="media/asr-rules-gp.png":::
 
 5. To exclude files and folders from attack surface reduction rules, select the **Exclude files and paths from Attack surface reduction rules** setting and set the option to **Enabled**. Select **Show** and enter each file or folder in the **Value name** column. Enter **0** in the **Value** column for each item.
 
