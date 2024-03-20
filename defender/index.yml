@@ -7,13 +7,13 @@ brand: m365
 metadata:
   title: Microsoft Defender products and services 
   description: Explore the Microsoft Defender products and services available for your business or organization. 
-  ms.service: o365-solutions 
+  ms.service: defender-xdr 
   ms.topic: hub-page 
   ms.collection: m365-security-compliance
   ms.custom: intro-hub-or-landing
   author: dansimp 
   ms.author: dansimp 
-  ms.date: 08/01/2022 
+  ms.date: 03/20/2024 
   ms.localizationpriority: high
 
 # highlightedContent section (optional)
