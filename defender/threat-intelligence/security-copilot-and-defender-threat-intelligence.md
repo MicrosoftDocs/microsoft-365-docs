@@ -20,7 +20,7 @@ Microsoft Copilot for Security is a cloud-based AI platform that provides natura
 
 **Copilot for Security integrates with Microsoft Defender Threat Intelligence**
 
-Copilot for Security delivers information about threat actors, indicators of compromise (IOCs), and tools, as well as contextual threat intelligence from Microsoft Defender Threat Intelligence (Defender TI) . You can use the prompts and promptbooks to investigate incidents, enrich your hunting flows with threat intelligence information, or gain more knowledge about your organization's or the global threat landscape. 
+Copilot for Security delivers information about threat actors, indicators of compromise (IOCs), and tools, as well as contextual threat intelligence from Microsoft Defender Threat Intelligence (Defender TI). You can use the prompts and promptbooks to investigate incidents, enrich your hunting flows with threat intelligence information, or gain more knowledge about your organization's or the global threat landscape. 
 
 This article introduces you to Copilot and includes sample prompts that can help Defender TI users.
 
@@ -138,7 +138,7 @@ Once you have access to Copilot for Security, the key features discussed in the 
 ### Key features
 Copilot in Defender brings Copilot for Security’s capability to look up threat intelligence into the portal, letting security teams understand, prioritize, and take action on threat intelligence information immediately.
 
-You can ask about a threat actor, attack campaign, or any other threat intelligence that you want to know more about, and Copilot generates responses based on threat analytics reports, intel profiles and articles, and other Defender TI content. You can also select any of the available built-in prompts that lets you do the following:
+You can ask about a threat actor, attack campaign, or any other threat intelligence that you want to know more about, and Copilot generates responses based on threat analytics reports, intel profiles and articles, and other Defender TI content. You can also select any of the available built-in prompts that let you do the following actions:
 -	[Summarize](using-copilot-threat-intelligence-defender-xdr.md#summarize-the-latest-threats-related-to-your-organization) the latest threats related to your organization
 -	[Prioritize](using-copilot-threat-intelligence-defender-xdr.md#prioritize-which-threats-to-focus-on) which threats to focus on based on your environment's highest exposure level to these threats
 -	[Ask](using-copilot-threat-intelligence-defender-xdr.md#ask-about-the-threat-actors-targeting-the-communications-infrastructure) about the threat actors targeting the communications infrastructure
