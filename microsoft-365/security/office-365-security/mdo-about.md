@@ -129,7 +129,7 @@ Defender for Office 365 includes [reports](reports-defender-for-office-365.md) t
 
 Reports update in real-time, providing you with the latest insights. These reports also provide recommendations and alert you to imminent threats. Available predefined reports include:
 
-- [Threat Explorer (or real-time detections)](threat-explorer-about.md)
+- [Threat Explorer (or real-time detections)](threat-explorer-real-time-detections-about.md)
 - [Threat protection status report](reports-defender-for-office-365.md#threat-protection-status-report)
 - ... and several more.
 
@@ -139,11 +139,11 @@ Defender for Office 365 Plan 2 includes best-of-class [threat investigation and 
 
 ### Threat Trackers on the latest threats
 
-- **[Threat trackers](threat-trackers.md)** provide the latest intelligence on prevailing cybersecurity issues. For example, you can view information about the latest malware, and take countermeasures before it becomes an actual threat to your organization. Available trackers include [Noteworthy trackers](threat-trackers.md#noteworthy-trackers), [Trending trackers](threat-trackers.md#trending-trackers), [Tracked queries](threat-trackers.md#tracked-queries), and [Saved queries](threat-trackers.md#saved-queries).
+**[Threat trackers](threat-trackers.md)** are [saved queries from Threat Explorer](threat-explorer-real-time-detections-about.md#saved-queries-in-threat-explorer) that you run manually or that can be configured to periodically run automatically. The **Trending campaigns** tab automatically highlights new email threats that were recently received by your organization.
 
 ### Threat Explorer or Real-Time Detections
 
-- **[Threat Explorer in Plan 2 (or real-time detections in Plan 1)](threat-explorer-about.md)** (also referred to as Explorer) is a real-time report that allows you to identify and analyze recent threats. You can configure Explorer to show data for custom periods.
+- **[Threat Explorer in Plan 2 (or real-time detections in Plan 1)](threat-explorer-real-time-detections-about.md)** (also referred to as Explorer) is a real-time report that allows you to identify and analyze recent threats. You can configure Explorer to show data for custom periods.
 
 ### Attack simulation training for user readiness
 

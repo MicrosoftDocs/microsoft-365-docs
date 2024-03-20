@@ -62,7 +62,7 @@ conceptualContent:
             text: Microsoft Defender for Cloud Apps
           - url: /microsoft-365/security/defender-business/mdb-overview
             itemType: overview
-            text: Microsoft Defender XDR for Business
+            text: Microsoft Defender for Businesses
           - url: /microsoft-365/security/defender-vulnerability-management
             itemType: overview
             text: Microsoft Defender Vulnerability Management

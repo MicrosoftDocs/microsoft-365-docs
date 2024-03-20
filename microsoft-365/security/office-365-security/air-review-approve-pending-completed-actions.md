@@ -97,7 +97,7 @@ There are two different ways to reconsider submitted actions:
 
 ## Next steps
 
-- [Use Threat Explorer](threat-explorer-about.md)
+- [Use Threat Explorer](threat-explorer-real-time-detections-about.md)
 - [Admin /Manual Actions](remediate-malicious-email-delivered-office-365.md)
 - [How to report false positives/negatives in automated investigation and response capabilities](air-report-false-positives-negatives.md)
 
