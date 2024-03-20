@@ -40,6 +40,10 @@ There are three ways you can create indicators for files:
 - By creating a contextual indicator using the add indicator button from the file details page
 - By creating an indicator through the [Indicator API](ti-indicator.md)
 
+> [!NOTE]
+> For this feature to work on Windows Server 2016 and Windows Server 2012 R2, those devices must be onboarded using the instructions in [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016). 
+> Custom file indicators with the Allow, Block and Remediate actions are now also available in the [enhanced antimalware engine capabilities for macOS and Linux](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/enhanced-antimalware-engine-capabilities-for-linux-and-macos/ba-p/3292003).
+
 ## Before you begin
 
 Understand the following prerequisites before you create indicators for files:
@@ -56,16 +60,9 @@ Understand the following prerequisites before you create indicators for files:
 
 - This feature is supported on devices running Windows 10, version 1703 or later, Windows 11, Windows Server 2012 R2, Windows Server 2016 or later, Windows Server 2019, or Windows Server 2022.
 
-- Computer Configuration\Administrative Templates\Windows Components\Microsoft Defender Antivirus\MpEngine\
-
-   Enable file hash computation feature
+- In `Computer Configuration\Administrative Templates\Windows Components\Microsoft Defender Antivirus\MpEngine\`, the file hash computation feature should be set to **Enabled**
   
-   Set it to **Enabled**
-  
-    > [!NOTE]
-    > Windows Server 2016 and Windows Server 2012 R2 will need to be onboarded using the instructions in [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) for this feature to work. 
-    > Custom file indicators with the Allow, Block and Remediate actions are now also available in the [enhanced antimalware engine capabilities for macOS and Linux](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/enhanced-antimalware-engine-capabilities-for-linux-and-macos/ba-p/3292003).
-- To start blocking files, you first need to [turn on the "block or allow" feature](advanced-features.md) in Settings.
+- To start blocking files, [turn on the "block or allow" feature](advanced-features.md) in Settings (in the [Microsoft Defender portal](https://security.microsoft.com), go to **Settings** > **Endpoints** > **General** > **Advanced features** > **Allow or block file**).
 
 This feature is designed to prevent suspected malware (or potentially malicious files) from being downloaded from the web. It currently supports portable executable (PE) files, including .exe and .dll files. The coverage will be extended over time.
 
