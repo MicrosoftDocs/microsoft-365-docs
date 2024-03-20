@@ -8,16 +8,18 @@ metadata:
   audience: Admin
   ms.topic: faq
   ms.service: microsoft-365-business
+  ms.subservice: m365-commerce-volume-licensing
+  ms.collection: 
+  - Tier2
+  - scotvorg
   ms.custom: 
   - commerce_vl
   - empty
   search.appverid: MET150
-  ms.collection: 
-  - Tier2
-  - scotvorg
   ms.localizationpriority: medium
   description: "Frequently asked questions about volume licensing user roles in the Microsoft 365 admin center."
   ms.date: 10/25/2023
+
 title: Manage volume licensing user roles Frequently Asked Questions
 summary: |
 
