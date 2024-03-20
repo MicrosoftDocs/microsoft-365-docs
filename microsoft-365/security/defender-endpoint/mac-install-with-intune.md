@@ -14,7 +14,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: macos
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 03/20/2024
 ---
 
 # Deploy Microsoft Defender for Endpoint on macOS with Microsoft Intune
@@ -59,7 +59,7 @@ The following table summarizes the steps you would need to take to deploy and ma
 |Approve system extension|sysext.mobileconfig|N/A|
 |Network extension policy|netfilter.mobileconfig|N/A|
 |Full Disk Access|fulldisk.mobileconfig|com.microsoft.wdav.epsext|
-|Microsoft Defender for Endpoint configuration settings <p> **Note:** If you're planning to run a third-party AV for macOS, set passiveMode to true.|MDE_MDAV_and_exclusion_settings_Preferences.xml|com.microsoft.wdav|
+|Microsoft Defender for Endpoint configuration settings <p> **Note:** If you're planning to run a non-Microsoft antivirus protection on macOS, set passiveMode to true.|MDE_MDAV_and_exclusion_settings_Preferences.xml|com.microsoft.wdav|
 |Background services|background_services.mobileconfig|N/A|
 |Configure Microsoft Defender for Endpoint notifications|notif.mobileconfig|com.microsoft.wdav.tray|
 |Accessibility settings|accessibility.mobileconfig|com.microsoft.dlp.daemon|
@@ -81,12 +81,17 @@ In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2
    This profile is needed for Big Sur (11) or later. It is ignored on older macOS since they use the kernel extension.
 
 1. Under **Configuration profiles**, select **Create Profile**.
+
 1. Under **Platform**, select **macOS**.
+
 1. Under **Profile type**, select **Templates**.
+
 1. Under **Template name**, select **Extensions**.
+
 1. Click **Create**.
-1. On the **Basics** tab, **Name** the profile. For example, 'SysExt-prod-macOS-Default-MDE'.
-1. Click **Next**.
+
+1. On the **Basics** tab, **Name** the profile. For example, `SysExt-prod-macOS-Default-MDE`. Then select **Next**.
+
 1. On the **Configuration settings** tab, expand **System Extensions** and add the following entries in the **Allowed system extensions** section:
 
     |Bundle identifier|Team identifier|
@@ -96,7 +101,8 @@ In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2
 
     :::image type="content" source="images/mac-system-extension-intune2.png" alt-text="The settings of the system's extension" lightbox="images/mac-system-extension-intune2.png":::
 
-1. On the **Assignments** tab, assign the profile to a group where the macOS devices and/or users are located, or All Users and All devices.
+1. On the **Assignments** tab, assign the profile to a group where the macOS devices and/or users are located, or **All Users** and **All devices**.
+
 1. Review the configuration profile. Click **Create**.
 
 ### Step 2: Network filter
@@ -108,17 +114,22 @@ Download [netfilter.mobileconfig](https://raw.githubusercontent.com/microsoft/md
 To configure network filter:
 
 1. Under **Configuration profiles**, select **Create Profile**.
+
 1. Under **Platform**, select **macOS**.
+
 1. Under **Profile type**, select **Templates**.
-1. Under **Template name**, select **Custom**.
-1. Click **Create**.
-1. On the **Basics** tab, **Name** the profile. For example, 'NetFilter-prod-macOS-Default-MDE'.
-1. Click **Next**.
-1. On the **Configuration settings** tab, enter a Cus**tom configuration profile** name. For example, 'NetFilter-prod-macOS-Default-MDE'.
-1. Choose a Deployment channel.
-1. Click **Next**.
-1. On the **Assignments** tab, assign the profile to a group where the macOS devices and/or users are located, or All Users and All devices.
-1. Review the configuration profile. Click **Create**.
+
+1. Under **Template name**, select **Custom**, and then select **Create**.
+
+1. On the **Basics** tab, **Name** the profile. For example, `NetFilter-prod-macOS-Default-MDE`. Then select **Next**.
+
+1. On the **Configuration settings** tab, enter a **Custom configuration profile** name. For example, `NetFilter-prod-macOS-Default-MDE`.
+
+1. Choose a Deployment channel, and then select **Next**.
+
+1. On the **Assignments** tab, assign the profile to a group where the macOS devices and/or users are located, or **All Users** and **All devices**.
+
+1. Review the configuration profile. Select **Create**.
 
 ### Step 3: Full Disk Access
 
@@ -130,44 +141,56 @@ To configure network filter:
 Download [**fulldisk.mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) from [GitHub repository](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles).
 
 To configure Full Disk Access:
+
 1. Under **Configuration profiles**, select **Create Profile**.
+
 1. Under **Platform**, select **macOS**.
+
 1. Under **Profile type**, select **Templates**.
-1. Under **Template name**, select **Custom**.
-1. Click **Create**.
-1. On the **Basics** tab, **Name** the profile. For example, 'FullDiskAccess-prod-macOS-Default-MDE'.
-1. Click **Next**.
-1. On the **Configuration settings** tab, enter a **Custom configuration profile** name. For example, 'Fulldisk.mobileconfig'.
-1. Choose a **Deployment channel**.
-1. Click **Next**.
+
+1. Under **Template name**, select **Custom**. Then select **Create**.
+
+1. On the **Basics** tab, **Name** the profile. For example, `FullDiskAccess-prod-macOS-Default-MDE`. Then select **Next**.
+
+1. On the **Configuration settings** tab, enter a **Custom configuration profile** name. For example, `Fulldisk.mobileconfig`.
+
+1. Choose a **Deployment channel**, and then select **Next**.
+
 1. Select a **Configuration profile file**.
-1. On the **Assignments** tab, assign the profile to a group where the macOS devices and/or users are located, or All Users and All devices.
+
+1. On the **Assignments** tab, assign the profile to a group where the macOS devices and/or users are located, or **All Users** and **All devices**.
+
 1. Review the configuration profile. Click **Create**.
 
 ### Step 4: Background services
 
-   > [!CAUTION]
-   > macOS 13 (Ventura) contains new privacy enhancements. Beginning with this version, by default, applications cannot run in background without explicit consent. Microsoft Defender for Endpoint must run its daemon process in background.
-   >
-   > This configuration profile grants Background Service permissions to Microsoft Defender for Endpoint. If you previously configured Microsoft Defender for Endpoint through Microsoft Intune, we recommend you update the deployment with this configuration profile.
+> [!CAUTION]
+> macOS 13 (Ventura) contains new privacy enhancements. Beginning with this version, by default, applications cannot run in background without explicit consent. Microsoft Defender for Endpoint must run its daemon process in background.
+> This configuration profile grants Background Service permissions to Microsoft Defender for Endpoint. If you previously configured Microsoft Defender for Endpoint through Microsoft Intune, we recommend you update the deployment with this configuration profile.
 
 Download [background_services.mobileconfig](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/background_services.mobileconfig) from [GitHub repository](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles).
 
 To configure background services:
 
 1. Under **Configuration profiles**, select **Create Profile**.
+
 1. Under **Platform**, select **macOS**.
+
 1. Under **Profile type**, select **Templates**.
-1. Under **Template name**, select **Custom**.
-1. Click **Create**.
-1. On the **Basics** tab, **Name** the profile. For example, 'FullDiskAccess-prod-macOS-Default-MDE'.
-1. Click **Next**.
-1. On the **Configuration settings** tab, enter a **Custom configuration profile** name. For example, 'Fulldisk.mobileconfig'.
-1. Choose a **Deployment channel**.
-1. Click **Next**.
+
+1. Under **Template name**, select **Custom**, and then select **Create**.
+
+1. On the **Basics** tab, **Name** the profile. For example, `FullDiskAccess-prod-macOS-Default-MDE`. Then select **Next**.
+
+1. On the **Configuration settings** tab, enter a **Custom configuration profile** name. For example, `Fulldisk.mobileconfig`.
+
+1. Choose a **Deployment channel**, and then select **Next**.
+
 1. Select a **Configuration profile file**.
-1. On the **Assignments** tab, assign the profile to a group where the macOS devices and/or users are located, or All Users and All devices.
-1. Review the configuration profile. Click **Create**.
+
+1. On the **Assignments** tab, assign the profile to a group where the macOS devices and/or users are located, or **All Users** and **All devices**.
+
+1. Review the configuration profile. Select **Create**.
 
 ### Step 5: Notifications
 
@@ -183,17 +206,23 @@ To turn off notifications for the end users, you can change '**Show Notification
 To configure notifications:
 
 1. Under **Configuration profiles**, select **Create Profile**.
+
 1. Under **Platform**, select **macOS**.
+
 1. Under **Profile type**, select **Templates**.
-1. Under **Template name**, select **Custom**.
-1. Click **Create**.
-1. On the **Basics** tab, **Name** the profile. For example, 'FullDiskAccess-prod-macOS-Default-MDE'.
-1. Click **Next**.
-1. On the **Configuration settings** tab, enter a **Custom configuration profile** name. For example, 'Notification.mobileconfig'.
-1. Choose a **Deployment channel**.
-1. Click **Next**.
+
+1. Under **Template name**, select **Custom**. Then select **Create**.
+
+1. On the **Basics** tab, **Name** the profile. For example, `FullDiskAccess-prod-macOS-Default-MDE`. Then select **Next**.
+
+1. On the **Configuration settings** tab, enter a **Custom configuration profile** name. For example, `Notification.mobileconfig`.
+
+1. Choose a **Deployment channel**, and then select **Next**.
+
 1. Select a **Configuration profile file**.
-1. On the **Assignments** tab, assign the profile to a group where the macOS devices and/or users are located, or All Users and All devices.
+
+1. On the **Assignments** tab, assign the profile to a group where the macOS devices and/or users are located, or **All Users** and **All devices**.
+
 1. Review the configuration profile. Click **Create**.
 
 
@@ -204,17 +233,29 @@ This profile is used to allow Microsoft Defender for Endpoint on macOS to access
 Download [accessibility.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/accessibility.mobileconfig) from [GitHub repository](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles).
 
 1. Under **Configuration profiles**, select **Create Profile**.
+
 1. Under **Platform**, select **macOS**.
+
 1. Under **Profile type**, select **Templates**.
+
 1. Under **Template name**, select **Custom**.
+
 1. Click **Create**.
-1. On the **Basics** tab, **Name** the profile. For example, 'Accessibility-prod-macOS-Default-MDE'.
+
+1. On the **Basics** tab, **Name** the profile. For example, `Accessibility-prod-macOS-Default-MDE`.
+
 1. Click **Next**.
-1. On the **Configuration settings** tab, enter a **Custom configuration profile** name. For example, 'Accessibility.mobileconfig'.
+
+1. On the **Configuration settings** tab, enter a **Custom configuration profile** name. For example, `Accessibility.mobileconfig`.
+
 1. Choose a **Deployment channel**.
+
 1. Click **Next**.
+
 1. Select a **Configuration profile file**.
-1. On the **Assignments** tab, assign the profile to a group where the macOS devices and/or users are located, or All Users and All devices.
+
+1. On the **Assignments** tab, assign the profile to a group where the macOS devices and/or users are located, or **All Users** and **All devices**.
+
 1. Review the configuration profile. Click **Create**.
 
 ### Step 7: Microsoft AutoUpdate
@@ -233,22 +274,34 @@ Download [AutoUpdate2.mobileconfig](https://github.com/microsoft/mdatp-xplat/blo
 > The sample AutoUpdate2.mobileconfig from the GitHub repository has it set to Current Channel (Production).
 
 1. Under **Configuration profiles**, select **Create Profile**.
+
 1. Under **Platform**, select **macOS**.
+
 1. Under **Profile type**, select **Templates**.
+
 1. Under **Template name**, select **Custom**.
+
 1. Click **Create**.
-1. On the **Basics** tab, **Name** the profile. For example, 'Autoupdate-prod-macOS-Default-MDE'.
+
+1. On the **Basics** tab, **Name** the profile. For example, `Autoupdate-prod-macOS-Default-MDE`.
+
 1. Click **Next**.
-1. On the **Configuration settings** tab, enter a **Custom configuration profile** name. For example, 'Autoupdate.mobileconfig'.
+
+1. On the **Configuration settings** tab, enter a **Custom configuration profile** name. For example, `Autoupdate.mobileconfig`.
+
 1. Choose a **Deployment channel**.
+ 
 1. Click **Next**.
+
 1. Select a **Configuration profile file**.
-1. On the **Assignments** tab, assign the profile to a group where the macOS devices and/or users are located, or All Users and All devices.
+
+1. On the **Assignments** tab, assign the profile to a group where the macOS devices and/or users are located, or **All Users** and **All devices**.
+
 1. Review the configuration profile. Click **Create**.
 
 ### Step 8: Microsoft Defender for Endpoint configuration settings
 
-In this step, we'll go over the "Preferences," which enables you to configure anti-malware and edr policies using Microsoft Defender portal and Microsoft Intune.
+In this step, we look at preferences, which enable you to configure anti-malware and EDR policies using Microsoft Defender portal and Microsoft Intune.
 
 #### Set policies using Microsoft Defender portal
 
@@ -257,11 +310,16 @@ Go through [Configure Microsoft Defender for Endpoint in Intune](/mem/intune/pro
 In the [Microsoft Defender portal](https://sip.security.microsoft.com/homepage?tid=72f988bf-86f1-41af-91ab-2d7cd011db47):
 
 1. Go to **Configuration management** > **Endpoint security policies** > **Mac policies** > **Create new policy**.
+
 1. Under **Select Platform**, select **macOS**.
+
 1. Under **Select Template**, choose a template and click **Create Policy**.
-1. Enter the Name and Description of the policy.
+
+1. Enter the Name and Description of the policy. 
+
 1. Click **Next**.
-1. On the **Assignments** tab,assign the profile to a group where the macOS devices and/or users are located, or All Users and All devices.
+
+1. On the **Assignments** tab, assign the profile to a group where the macOS devices and/or users are located, or **All Users** and **All devices**.
 
 For more information about managing security settings, see:
 
@@ -280,7 +338,9 @@ For more information, see [Set preferences for Microsoft Defender for Endpoint o
 In the [Microsoft Defender portal](https://sip.security.microsoft.com/homepage?tid=72f988bf-86f1-41af-91ab-2d7cd011db47):
 
 1. Go to **Configuration management** > **Endpoint security policies** > **Mac policies** > **Create new policy**.
+
 1. Under **Select Platform**, select **macOS**.
+
 1. Under **Select Template**, select **Microsoft Defender Antivirus** and click **Create Policy**.
 
    :::image type="content" alt-text="networkprotection" source="images/network-protection1.jpg" lightbox="images/network-protection1.jpg":::
@@ -369,6 +429,7 @@ This step enables deploying Microsoft Defender for Endpoint to enrolled machines
    :::image type="content" source="images/mdatp-8-app-before.png" alt-text="The application's overview page" lightbox="images/mdatp-8-app-before.png":::
 
 1. Select **By platform** > **macOS** > **Add**.
+
 1. Under **App type**, select **macOS**. Click **Select**.
 
    :::image type="content" source="images/mdatp-9-app-type.png" alt-text="The specific application type" lightbox="images/mdatp-9-app-type.png":::
@@ -426,9 +487,13 @@ This profile contains license information for Microsoft Defender for Endpoint, w
 To deploy the onboarding package:
 
 1. Under **Configuration profiles**, select **Create Profile**.
+
 1. Under **Platform**, select **macOS**.
+
 1. Under **Profile type**, select **Templates**.
+
 1. Under **Template name**, select **Custom**.
+
 1. Click **Create**.
 
    :::image type="content" alt-text="Deploy onboarding package" source="images/mdatp-6-systemconfigurationprofiles-1.png" lightbox="images/mdatp-6-systemconfigurationprofiles-1.png":::
@@ -437,9 +502,12 @@ To deploy the onboarding package:
 
    :::image type="content" alt-text="click next" source="images/mdatp-6-systemconfigurationprofiles-2.png" lightbox="images/mdatp-6-systemconfigurationprofiles-2.png":::
 
-1. On the **Configuration settings** tab, enter a **Custom configuration profile** name. For example, 'MDATP onboarding for MacOS'.
+1. On the **Configuration settings** tab, enter a **Custom configuration profile** name. For example, `MDATP onboarding for MacOS`.
+
 1. Choose a **Deployment channel**.
+
 1. Click **Next**.
+
 1. Select a **Configuration profile file**.
 
    :::image type="content" alt-text="configuration profile" source="images/mdatp-6-systemconfigurationprofiles.png" lightbox="images/mdatp-6-systemconfigurationprofiles.png":::
@@ -449,6 +517,7 @@ To deploy the onboarding package:
    :::image type="content" alt-text="assign users" source="images/mdatp-6-systemconfigurationprofiles-3.png" lightbox="images/mdatp-6-systemconfigurationprofiles-3.png":::
 
 1. Review the configuration profile. Click **Create**.
+
 1. Open **Devices** > **Configuration profiles** to see the created profile.
 
 ## Step 16: Verify anti-malware detection
@@ -480,8 +549,6 @@ For information on troubleshooting procedures, see:
 ## Uninstallation
 
 See [Uninstalling](mac-resources.md#uninstalling) for details on how to remove Microsoft Defender for Endpoint on macOS from client devices.
-
-
 
 ## Recommended content
 
