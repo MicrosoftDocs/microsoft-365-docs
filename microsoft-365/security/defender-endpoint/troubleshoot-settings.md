@@ -41,7 +41,7 @@ Microsoft Defender Antivirus provides numerous ways to manage the product, which
 - Registry
 
 > [!TIP]
-> As a best practice, try sticking to one method of managing Microsoft Defender for Antivirus. 
+> For best results, use one method of managing Microsoft Defender Antivirus. 
 
 ## Troubleshooting Microsoft Defender Antivirus settings
 
