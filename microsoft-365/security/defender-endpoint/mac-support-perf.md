@@ -51,8 +51,8 @@ To troubleshoot and mitigate such issues, follow these steps:
 
    | Device management | Method |
    |---|--|
-   | Device isn't managed by organization | User interface <br/><br/>Open Microsoft Defender for Endpoint on macOS and navigate to **Manage settings**. |
-   | Device isn't managed by organization | Terminal <br/><br/>In Terminal, run the following command: `mdatp config real-time-protection --value disabled` |
+   | Device isn't managed by organization | **User interface**: Open Microsoft Defender for Endpoint on macOS and navigate to **Manage settings**. |
+   | Device isn't managed by organization | **Terminal**: In Terminal, run the following command: `mdatp config real-time-protection --value disabled` |
    | Device is managed by organization | See [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md). |
 
    If the performance problem persists while real-time protection is off, the origin of the problem could be the endpoint detection and response component. In this case, contact customer support for further instructions and mitigation.
