@@ -19,7 +19,7 @@ metadata:
   ms.localizationpriority: medium
   description: "Product keys Frequently Asked Questions"
   ms.date: 01/18/2024
-  
+
 title: Product keys Frequently Asked Questions
 summary: |
 
@@ -190,7 +190,6 @@ sections:
           
             - [Volume Activation Management Tool (VAMT) Technical Reference](/windows/deployment/volume-activation/volume-activation-management-tool)
             - [Managing Activation Using the Volume Activation Management Tool (VAMT)](/previous-versions/tn-archive/ff686876(v=technet.10))
-            - Download [Volume Activation Management Tool (VAMT)](https://www.microsoft.com/download/details.aspx?id=11936)
 
       - question: |
           What should I know about using Windows Server as the KMS host to activate Windows clients?
