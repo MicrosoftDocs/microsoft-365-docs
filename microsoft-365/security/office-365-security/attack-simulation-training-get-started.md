@@ -20,7 +20,7 @@ ms.custom:
 description: Admins can learn how to use Attack simulation training to run simulated phishing and password attacks in their Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2 organizations.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 3/5/2024
+ms.date: 3/20/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison" target="_blank">Microsoft Defender for Office 365 plan 2</a>
 ---
@@ -214,8 +214,8 @@ Traditional phishing simulations present users with suspicious messages and the 
 
 But, sometimes you don't want to wait for users to take correct or incorrect actions before you give them training. Attack simulation training provides the following features to skip the wait and go straight to training:
 
-- **Training campaigns**: A Training campaign is a training-only assignment for the targeted users. Instead of payloads, you select the Training modules that you want users to complete, with the deployment schedule and notifications like a regular simulation. For more information, see [Training campaigns in Attack simulation training](attack-simulation-training-training-campaigns.md).
+- **Training campaigns**: A Training campaign is a training-only assignment for the targeted users. You can directly assign training without putting users through the test of a simulation. Training campaigns make it easy to conduct learning sessions like monthly cybersecurity awareness training. For more information, see [Training campaigns in Attack simulation training](attack-simulation-training-training-campaigns.md).
 
-- **How-to Guides in simulations**: Simulations based on the **How-to Guide** social engineering technique don't attempt to deceive users, don't require user action, and don't provide additional training. The payload in the simulation is the training that describes how to recognize and report phishing attacks. For example, the following built-in **How-to Guide** payloads are available, and you can create your own (including [copying and customizing an existing payload](attack-simulation-training-payloads.md#copy-payloads)):
+- **How-to Guides in simulations**: Simulations based on the **How-to Guide** social engineering technique don't attempt to test users and don't require user action. A How-to guide is a lightweight learning experience that users can view directly in their Inbox. For example, the following built-in **How-to Guide** payloads are available, and you can create your own (including [copying and customizing an existing payload](attack-simulation-training-payloads.md#copy-payloads)):
   - **Teaching guide: How to report phishing messages**
   - **Teaching Guide: How to recognize and report QR phishing messages**
