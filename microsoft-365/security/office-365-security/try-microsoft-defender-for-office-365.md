@@ -386,7 +386,7 @@ No special reports are created for **blocking mode**, so use the standard report
 
 In **audit mode**, you're looking for reports that show detections by the evaluation policies as described in the following list:
 
-- The [Email entity page](mdo-email-entity-page.md) (part of [Threat Explorer](threat-explorer-real-time-detections-about.md)) shows the following banner in message detection details on the **Analysis** tab for **Bad attachment**, **spam url + malware**, **Phish url**, and **impersonation** messages that were detected by the Defender for Office 365 evaluation:
+- The [Email entity page](mdo-email-entity-page.md) shows the following banner in message detection details on the **Analysis** tab for **Bad attachment**, **spam url + malware**, **Phish url**, and **impersonation** messages that were detected by the Defender for Office 365 evaluation:
 
   :::image type="content" source="../../media/evalv2-detection-banner.png" alt-text="Notification banner in message details that the Defender for Office 365 evaluation detected a malicious email message." lightbox="../../media/evalv2-detection-banner.png":::
 

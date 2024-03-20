@@ -82,7 +82,7 @@ Organizations without Defender for Office 365 Plan 2 can try the features in Mic
 
    When you're finished in the **Filters** flyout, select **Apply**.
 
-4. In Defender for Office 365 Plan 2, select a bulk message to investigate, and then select email entity to learn more about the sender.
+4. Back on the **Threat protection status** page, select one of the bulk messages from the details table below the chart. In the details flyout that opens, select :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity** at the top of the flyout.
 
 5. After you identify wanted and unwanted bulk senders, adjust the bulk threshold in the default anti-spam policy and in custom anti-spam policies. If some bulk senders don't fit within your bulk threshold, [report the messages to Microsoft for analysis](submissions-admin.md#report-good-email-to-microsoft).
 

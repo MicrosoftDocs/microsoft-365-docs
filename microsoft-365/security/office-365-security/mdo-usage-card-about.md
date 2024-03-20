@@ -94,7 +94,7 @@ Usage count can be determined by:
 - **Users with Office 365 protection**: Distinct count of active users of Safe Links for Office 365 or Safe Attachments for Office 365.
 - **Users with email protection**: Distinct count of active users of Safe Links for email or Safe Attachments for email.
 - **Users for whom manual and automated investigations were triggered**: Manual investigations triggered from Threat Explorer or auto investigations actions approved or rejected by SecOps in Incidents or in Action center.
-- **Users for whom remediations were triggered**: Manual remediations in Threat Explorer, Email entity, Advanced Hunting, Automation, or Action center.
+- **Users for whom remediations were triggered**: Manual remediations in Threat Explorer, , Advanced Hunting, Automation, or Action center.
 - **Users targeted by phishing simulation training**: Users who were targeted as part of simulations over past 28 days.
 
 ### I have Defender for Office 365 Plan 1 or Plan 2 paid license. Why can I not see the usage card?
