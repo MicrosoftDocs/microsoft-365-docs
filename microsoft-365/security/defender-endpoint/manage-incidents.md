@@ -36,7 +36,7 @@ Managing incidents is an important part of every cybersecurity operation. You ca
 
 Selecting an incident from the **Incidents queue** brings up the **Incident management pane** where you can open the incident page for details.
 
-:::image type="content" source="images/atp-incidents-mgt-pane-updated.png" alt-text="The incidents management pane" lightbox="images/atp-incidents-mgt-pane-updated.png":::
+:::image type="content" source="media/atp-incidents-mgt-pane-updated.png" alt-text="The incidents management pane" lightbox="media/atp-incidents-mgt-pane-updated.png":::
 
 You can assign incidents to yourself, change the status and classification, rename, or comment on them to keep track of their progress.
 
@@ -48,7 +48,7 @@ You can assign incidents to yourself, change the status and classification, rena
 > Incidents that existed prior the rollout of automatic incident naming will retain their names.
 >
 
-:::image type="content" source="images/atp-incident-details-updated.png" alt-text="The incident detail page" lightbox="images/atp-incident-details-updated.png":::
+:::image type="content" source="media/atp-incident-details-updated.png" alt-text="The incident detail page" lightbox="media/atp-incident-details-updated.png":::
 
 ## Assign incidents
 If an incident has not been assigned yet, you can select **Assign to me** to assign the incident to yourself. Doing so assumes ownership of not just the incident, but also all the alerts associated with it.

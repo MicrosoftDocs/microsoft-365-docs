@@ -153,7 +153,7 @@ Use the following steps to schedule scans:
    ls -la
    ```
 
-   :::image type="content" source="images/chmod-755-mdavfullscan.png" alt-text="7. Change file permissions":::
+   :::image type="content" source="media/chmod-755-mdavfullscan.png" alt-text="7. Change file permissions":::
 
    ```shell
    [root@redhat7 cron.weekly]# ls -la
