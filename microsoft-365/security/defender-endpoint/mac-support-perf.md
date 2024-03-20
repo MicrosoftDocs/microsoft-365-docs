@@ -35,15 +35,20 @@ This article provides some general steps that can be used to narrow down perform
 Depending on the applications that you're running and your device characteristics, you might experience suboptimal performance when running Microsoft Defender for Endpoint on macOS. In particular, applications or system processes that access many resources over a short timespan can lead to performance issues in Defender for Endpoint on macOS.
 
 > [!WARNING]
-> Before you perfom the procedures described in this article, make sure that other security products are not currently running on the device. Multiple security products can conflict and impact the host performance.
+> Before you perform the procedures described in this article, make sure that other security products are not currently running on the device. Multiple security products can conflict and impact the host performance.
 
-## Troubleshoot performance issues using Real-time Protection Statistics
+## Troubleshoot performance issues using real-time protection statistics
 
 **Applies to:**
 
 - Only performance issues related to Microsoft Defender Antivirus (`wdavdaemon_unpriviliged`).
 
 Real-time protection (RTP) is a feature of Defender for Endpoint on macOS that continuously monitors and protects your device against threats. It consists of file and process monitoring and other heuristics.
+
+Prerequisites:
+
+- Microsoft Defender for Endpoint version (Platform Update) 100.90.70 or newer
+- If you have [Tamper protection](tamperprotection-macos.md) turned on in block mode, use [Troubleshooting mode](mac-troubleshoot-mode.md) to capture real-time-protection-statistics. Otherwise, you will get null results. 
 
 To troubleshoot and mitigate such issues, follow these steps:
 
@@ -57,15 +62,15 @@ To troubleshoot and mitigate such issues, follow these steps:
 
    If the performance problem persists while real-time protection is off, the origin of the problem could be the endpoint detection and response component. In this case, contact customer support for further instructions and mitigation.
 
-2. Open Finder and navigate to **Applications** \> **Utilities**. Open **Activity Monitor** and analyze which applications are using the resources on your system. Typical examples include software updaters and compilers.
+2. Open Finder and navigate to **Applications** > **Utilities**. Open **Activity Monitor** and analyze which applications are using the resources on your system. Typical examples include software updaters and compilers.
 
-3. Make sure real-time protection is enabled. Run the following command:
+3. This feature requires real-time protection to be enabled. To check the status of real-time protection, run the following command:
 
    ```bash
    mdatp health --field real_time_protection_enabled
    ```
 
-   Verify that the **real_time_protection_enabled** entry is true. Otherwise, run the following command to enable it:
+   Verify that the **real_time_protection_enabled** entry is *true*. Otherwise, run the following command to enable it:
 
    ```bash
    mdatp config real-time-protection --value enabled
@@ -78,7 +83,7 @@ To troubleshoot and mitigate such issues, follow these steps:
 4. To find the applications that are triggering the most scans, you can use real-time statistics gathered by Defender for Endpoint on macOS. Run the following command:
 
    ```bash
-   mdatp diagnostic real-time-protection-statistics --output json > real_time_protection.json
+   mdatp config real-time-protection-statistics --value enabled.
    ```
 
    > [!NOTE]
