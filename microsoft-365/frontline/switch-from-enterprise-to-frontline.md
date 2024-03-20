@@ -34,50 +34,51 @@ Start by getting familiar with the service and feature differences between the p
 
 Some key differences include:
 
-- F plans don't include Office desktop apps or the Outlook desktop app.
-- F plans are limited to devices with integrated screens smaller than 10.9 inches on Office mobile apps.
-- F plans [pin frontline worker apps](pin-teams-apps-based-on-license.md) like Walkie Talkie, Tasks, Shifts, and Approvals by default in Microsoft Teams.
+- F plans don't include Microsoft 365 desktop client apps.
+- F plans are limited to devices with integrated screens smaller than 10.9 inches on Microsoft 365 mobile apps.
+- F plans [pin frontline worker apps](pin-teams-apps-based-on-license.md) like Walkie Talkie, Tasks, Shifts, Viva Connections, and Approvals by default in Microsoft Teams.
 
-In this section, we've included more information about these key differences and highlighted some additional differences to pay attention to. Keep in mind that this isn't a comprehensive list. To learn more:
+In this section, we provide more information about these key differences and highlight some additional differences to pay attention to. Keep in mind that this isn't a comprehensive list. To learn more:
 
 - See [Modern work plan comparison](https://go.microsoft.com/fwlink/p/?linkid=2139145) for a detailed comparison of what's included in E and F plans.
 - See [service availability](/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options#service-availability-within-each-microsoft-365-and-office-365-plan) and [feature availability across plans](/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description#feature-availability-across-some-plans) for a list of service and feature availability across E and F plans.
 
-### Office apps
+### Microsoft 365 apps
 
-Office desktop apps aren't included in F3 and F1 plans. Your frontline workers can use Office for the web and Office mobile apps to get things done. Keep in mind that F3 users have full access to documents in Office for the web and F1 users have read-only access.
+Desktop client apps aren't included in F3 and F1 plans. Your frontline workers can use Microsoft 365 for the web and Microsoft 365 mobile apps to get things done. Keep in mind that F3 users have full access to documents in Microsoft 365 for the web and F1 users have read-only access.
 
 |Service or feature|Microsoft 365 E3/E5  |Microsoft 365 F3|Microsoft 365 F1|
 |---------|---------|---------|---------|
-|Office desktop apps (Word, Excel, OneNote, PowerPoint, Access, Publisher)|Yes|No|No|
-|Office for the web (Word, Excel, OneNote, PowerPoint)|Yes|Yes|Read-only|
-|Office mobile apps (Word, Excel, PowerPoint, Outlook, OneNote)|Yes|Yes&sup1;|Read-only|
+|Desktop client apps (Word, Excel, OneNote, PowerPoint, Access, Publisher)|Yes|No|No|
+|Microsoft 365 for the web |Yes|Yes|Read-only|
+|Microsoft 365 for mobile |Yes|Yes&sup1;|Read-only|
+|Visio for the web|Yes|Yes|Read-only|
 
-&sup1;Editing files supported on devices with integrated screens less than 10.9 inches.
+&sup1;Limited to devices with integrated screens less than 10.9 inches.
 
-#### Office for the web
+#### Microsoft 365 for the web
 
-With Office for the web, your frontline workers use a web browser to open Word, Excel, OneNote, and PowerPoint files.
+With Microsoft 365 for the web, your frontline workers use a web browser to open Word, Excel, OneNote, and PowerPoint files.
 
-Here's some differences to be aware when using Office for the web. For a detailed feature comparison between Office for the web and Office desktop apps, see [Office for the web service description](/office365/servicedescriptions/office-online-service-description/office-online-service-description).
+Here's some differences to be aware when using Microsoft 365 for the web. For a detailed feature comparison between Microsoft 365 for the web and desktop apps, see the [service description](/office365/servicedescriptions/office-online-service-description/office-online-service-description).
 
 |Service or feature|Some differences |Learn more|
 |---------|---------|---------|
-|**Word for the web**|<ul><li> Can open and edit macro-enabled documents (.docm) and templates (.dotm) but macros don't run.</li><li>Can open but not edit User Defined Permission (UDP) Information Rights Management (IRM)-protected documents.</li></ul>|<ul><li>[Word for the web service description](/office365/servicedescriptions/office-online-service-description/word-online)</li><li>[Differences between using a document in the browser and in Word](https://support.microsoft.com//office/differences-between-using-a-document-in-the-browser-and-in-word-3e863ce3-e82c-4211-8f97-5b33c36c55f8)</li></ul>|
-|**Excel for the web**|<ul><li>Can open and edit macro-enabled workbooks (.xlsm) but macros don't run.</li><li>[File size limitations](https://support.microsoft.com/office/file-size-limits-for-workbooks-in-sharepoint-9e5bc6f8-018f-415a-b890-5452687b325e)<ul><li>To view or interact with a workbook stored in SharePoint Online, the workbook must be less than 100 MB. </li><li>To open a workbook that's attached to an email message in Outlook on the web, the workbook must be less than 10 MB.</li></ul></ul>|<ul><li>[Excel for the web service description](/office365/servicedescriptions/office-online-service-description/excel-online)</li><li>[Differences between using a workbook in the browser and in Excel](https://support.microsoft.com/office/differences-between-using-a-workbook-in-the-browser-and-in-excel-f0dc28ed-b85d-4e1d-be6d-5878005db3b6)</li><li>Most Excel functions work in a browser as they do in Excel. For a list of exceptions, see [Functions in Excel and in Excel for the web](https://support.microsoft.com/office/differences-between-using-a-workbook-in-the-browser-and-in-excel-f0dc28ed-b85d-4e1d-be6d-5878005db3b6#__functions).</li></ul>|
+|**Word for the web**|<ul><li> Can open and edit macro-enabled documents (.docm) and templates (.dotm) but macros don't run.</li><li>Can open but not edit Information Rights Management (IRM)-protected documents.</li></ul>|<ul><li>[Word for the web service description](/office365/servicedescriptions/office-online-service-description/word-online)</li><li>[Differences between using a document in the browser and in Word](https://support.microsoft.com//office/differences-between-using-a-document-in-the-browser-and-in-word-3e863ce3-e82c-4211-8f97-5b33c36c55f8)</li></ul>|
+|**Excel for the web**|<ul><li>Can open and edit macro-enabled workbooks (.xlsm) but macros don't run.</li><li>[File size limitations](https://support.microsoft.com/office/file-size-limits-for-workbooks-in-sharepoint-9e5bc6f8-018f-415a-b890-5452687b325e)<ul><li>To view or interact with a workbook stored in SharePoint Online, the workbook must be less than 100 MB.</li><li>To open a workbook that's attached to an email message in Outlook on the web, the workbook must be less than 10 MB.</li></ul></ul>|<ul><li>[Excel for the web service description](/office365/servicedescriptions/office-online-service-description/excel-online)</li><li>[Differences between using a workbook in the browser and in Excel](https://support.microsoft.com/office/differences-between-using-a-workbook-in-the-browser-and-in-excel-f0dc28ed-b85d-4e1d-be6d-5878005db3b6)</li><li>Most Excel functions work in a browser as they do in Excel. For a list of exceptions, see [Functions in Excel and in Excel for the web](https://support.microsoft.com/office/differences-between-using-a-workbook-in-the-browser-and-in-excel-f0dc28ed-b85d-4e1d-be6d-5878005db3b6#__functions).</li></ul>|
 |**OneNote for the web**|<ul><li>Search is limited to the current section.</li><li>Zoom in and out isn't available. Instead, users can use their browser's zoom feature.</li></ul>|<ul><li>[OneNote for the web service description](/office365/servicedescriptions/office-online-service-description/onenote-online)</li><li>[Differences between using a notebook in the browser and in OneNote](https://support.microsoft.com/office/differences-between-using-a-notebook-in-the-browser-and-in-onenote-a3d1fc13-ac74-456b-b391-b633a62aa83f)</li></ul>|
-|**PowerPoint for the web**|<ul><li>Can open files up to 2 GB.</li><li>Can open and edit macro-enabled presentations (.pptm, .potm, .ppsm) but macros don't run.</li></ul>|<ul><li>[PowerPoint for the web service description](/office365/servicedescriptions/office-online-service-description/powerpoint-online)</li><li>[How certain features behave in web-based PowerPoint](https://support.microsoft.com/office/how-certain-features-behave-in-web-based-powerpoint-a931f0c8-1305-4428-8f7c-9cfa00ef28c5)</li></ul>|
+|**PowerPoint for the web**|<ul><li>Can open files up to 2 GB.</li><li>Can open and edit macro-enabled presentations (.pptm, .potm, .ppam, .potx, .ppsm) but macros don't run.</li></ul>|<ul><li>[PowerPoint for the web service description](/office365/servicedescriptions/office-online-service-description/powerpoint-online)</li><li>[How certain features behave in web-based PowerPoint](https://support.microsoft.com/office/how-certain-features-behave-in-web-based-powerpoint-a931f0c8-1305-4428-8f7c-9cfa00ef28c5)</li></ul>|
 
-#### Office mobile
+#### Microsoft 365 for mobile
 
-Your frontline workers can get Office on their mobile devices in two ways:
+Your frontline workers can get Word, Excel, and PowerPoint on their mobile devices in two ways:
 
-- Install the Office mobile app that combines Word, Excel, and PowerPoint.
-- Install individual Office mobile apps for Word, Excel, PowerPoint, and OneNote.
+- Install the Microsoft 365 mobile app that combines Word, Excel, and PowerPoint.
+- Install individual mobile apps for Word, Excel, PowerPoint, and OneNote.
 
-To learn more, see [Install and set up Office on an Android](https://support.microsoft.com/office/install-and-set-up-office-on-an-android-cafe9d6f-8b0c-4b03-b20a-12438a82a22d) and [Install and set up Office on an iPhone or iPad](https://support.microsoft.com/office/install-and-set-up-office-on-an-iphone-or-ipad-9df6d10c-7281-4671-8666-6ca8e339b628).
+To learn more, see [Install and set up Microsoft 365 apps on Android](https://support.microsoft.com/office/install-and-set-up-office-on-an-android-cafe9d6f-8b0c-4b03-b20a-12438a82a22d) and [Install and set up Microsoft 365 apps on an iPhone or iPad](https://support.microsoft.com/office/install-and-set-up-office-on-an-iphone-or-ipad-9df6d10c-7281-4671-8666-6ca8e339b628).
 
-For more information about the features that are available in Office mobile, see [What you can do in the Office apps on mobile devices with a Microsoft 365 subscription](https://support.microsoft.com/office/what-you-can-do-in-the-office-apps-on-mobile-devices-with-a-microsoft-365-subscription-9ef8b63a-05fd-4f9c-bac5-29da046833ea).
+For more information about the features that are available in Microsoft 365 apps on mobile devices, see [What you can do in the Microsoft 365 apps on mobile devices with a Microsoft 365 subscription](https://support.microsoft.com/office/what-you-can-do-in-the-microsoft-365-apps-on-mobile-devices-with-a-microsoft-365-subscription-9ef8b63a-05fd-4f9c-bac5-29da046833ea).
 
 #### Email
 
@@ -98,13 +99,13 @@ To learn more, see [Exchange Online service description](/office365/servicedescr
 
 #### Teams
 
-F3 and F1 plans include the Teams desktop app, mobile app, and web app for frontline worker communication and collaboration. Your frontline workers have access to Teams features including meetings, chat, channels, content, and apps. However, they won't be able to create live events and webinars or use Teams Phone capabilities without the purchase of additional add-ons.
+F3 and F1 plans include the Teams desktop app, mobile app, and web app for frontline worker communication and collaboration. Your frontline workers have access to Teams features including meetings, chat, channels, content, and apps. However, they won't be able to use Teams Phone capabilities without the purchase of additional add-ons.
 
 |Service or feature|Microsoft 365 E3/E5|Microsoft 365 F3|Microsoft 365 F1|
 |---------|---------|---------|---------|
-|Live events|Yes|No|No|
+|Town hall|Yes|No|No|
 |Webinars|Yes|No|No|
-|Teams Phone|Yes|No|No|
+|Teams Phone Standard|No (E3)/Yes (E5)|No|No|
 
 #### SharePoint
 
@@ -117,48 +118,58 @@ F3 and F1 users can collaborate on documents and access organization-wide resour
 
 To learn more about SharePoint limits, see [SharePoint limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits).
 
-#### Content services
+#### OneDrive
 
 F3 and F1 users have 2 GB of OneDrive storage to store and share files. To learn more, see [OneDrive service description](/office365/servicedescriptions/onedrive-for-business-service-description).
 
 |Service or feature|Microsoft 365 E3/E5|Microsoft 365 F3|Microsoft 365 F1|
 |---------|---------|---------|---------|
-|OneDrive|Unlimited storage&sup1;|2 GB storage|2 GB storage|
-|Microsoft Stream|Yes|Yes&sup2;|Yes&sup2;|
-|Sway|Yes|Yes|No|
-|Visio for the web|Yes|Yes|Read-only|
+|OneDrive|1+ TB storage¹&sup1;|2 GB storage|2 GB storage|
+
+&sup1;¹Up to 5 TB of initial OneDrive storage per user based on the [default quota](/sharepoint/set-default-storage-space) of the tenant for subscriptions with more than five users. More storage can be requested.
+
+#### Content services
+
+|Service or feature|Microsoft 365 E3/E5|Microsoft 365 F3|Microsoft 365 F1|
+|---------|---------|---------|---------|
+|Microsoft Forms|Yes&sup1;|Yes&sup1;|No|
 |Delve|Yes|No|No|
 
-&sup1;Up to 5 TB of initial OneDrive storage per user based on the [default quota](/onedrive/set-default-storage-space) of the tenant for subscriptions with more than five users. More storage can be requested.</br>
-&sup2;Users can record meetings and consume Stream content but can't publish to or share in Stream.
+&sup1;Licensed users can create, share, and manage forms. A license isn't needed to complete or respond to a form.
 
-#### Insights and analytics
-
-|Service or feature|Microsoft 365 E3/E5|Microsoft 365 F3|Microsoft 365 F1|
-|---------|---------|---------|---------|
-|Viva Insights|Yes|No|No|
-|Power BI|Yes|No|No|
-
-#### Work management and automation
+#### Project and task management
 
 |Service or feature|Microsoft 365 E3/E5|Microsoft 365 F3|Microsoft 365 F1|
 |---------|---------|---------|---------|
-|Power Apps|Yes|Yes|No|
-|Power Automate|Yes|Yes|No|
-|Power Virtual Agents|Yes|Yes|No|
-|Dataverse for Teams|Yes|Yes|No|
-|Microsoft Forms|Yes&sup1;|Yes&sup1;|No|
+|Microsoft Planner|Yes|Yes|Yes|
 |Microsoft To Do|Yes|Yes|No|
 
-&sup1;Licensed users can create, share, and manage forms. A license isn't needed to complete or respond to a form.
+#### Microsoft Viva
+
+|Service or feature|Microsoft 365 E3/E5|Microsoft 365 F3|Microsoft 365 F1|
+|---------|---------|---------|---------|
+|Viva Insights app in Teams|Yes|Yes&sup1;|Yes&sup1;|
+|Viva Learning in Teams|Yes|Yes|Yes|
+|Viva Engage – communities, conversations, and storyline|Yes|Yes|Yes|
+|Viva Connections – dashboard, feed, resources, and Teams app|Yes|Yes|Yes|
+
+&sup1;Limited to Reflect, Headspace, Send Praise, Virtual Commute, Microsoft To-Do (F3 only).
+
+#### Automation, app building, and chatbots
+
+|Service or feature|Microsoft 365 E3/E5|Microsoft 365 F3|Microsoft 365 F1|
+|---------|---------|---------|---------|
+|Power Apps for Microsoft 365|Yes|Yes|No|
+|Power Automate for Microsoft 365|Yes|Yes|No|
+|Copilot Studio for Teams|Yes|Yes|No|
+|Dataverse for Teams|Yes|Yes|No|
 
 #### Windows
 
 |Service or feature|Microsoft 365 E3/E5|Microsoft 365 F3|Microsoft 365 F1|
 |---------|---------|---------|---------|
-|Windows 11 Enterprise|Yes|Yes&sup1;|No|
+|Windows 11 Enterprise|Yes|Yes|No|
 
-&sup1;No Long-Term Servicing Channel (LTSC) or Microsoft Desktop Optimization Pack (MDOP). Virtual desktop infrastructure (VDI) is only for licensed users of a shared device with a Qualifying Operating System (except for Azure Virtual Desktop).
 
 ## What to expect
 
@@ -169,8 +180,8 @@ We'll be referring to this table in later sections of this article.
 |Service or feature |Before the switch|After the switch|
 |---------|---------|---------|
 |Office apps| <ul><li>Identify files that are stored on users' local computers and help users move them to their OneDrive.</li><li>Keep in mind that Office desktop apps will go into reduced functionality mode after changing to an F plan. Be prepared to uninstall Office desktop apps after the switch.</li></ul>| Users:</br> <ul><li>Sign in to [office.com](https://www.office.com) to access Office for the web.</li><li>[Install and use Office mobile apps](https://support.microsoft.com/office/set-up-office-apps-and-email-on-a-mobile-device-7dabb6cb-0046-40b6-81fe-767e0b1f014f) (if not already).</li><li>Users can also directly collaborate on documents from SharePoint document libraries, OneDrive, Teams, and Viva Engage.</li></ul>Admins:<ul><li>Uninstall Office desktop apps from users' computers.</li></ul>      |
-|Email, Exchange, Outlook|<ul><li>Identify user mailboxes over 2 GB by using the [Get-MailboxStatistics](/powershell/module/exchange/get-mailboxstatistics?view=exchange-ps&preserve-view=true) Exchange PowerShell cmdlet, and then reduce mailbox size, as needed. To learn more, see [Mailbox storage limits in Outlook on the web](https://support.microsoft.com/office/mailbox-storage-limits-in-outlook-on-the-web-f170fe90-b859-4034-bcda-e186fc6a26f5).</li><li>If users have an archive mailbox:</li><ul><li>Move archive mailbox content back to the user's mailbox.</li><li>Check for any archive policies that may automatically move email based on the age of messages by using the [Get-EXOMailbox](/powershell/module/exchange/get-exomailbox?view=exchange-ps&preserve-view=true) Exchange Online PowerShell cmdlet.</li></ul> <li>Identify site mailbox access and usage.</li><li>Outlook desktop app, data, and configuration:</li><ul><li>Identify users and computers that are using Outlook data (.pst) files.</li><li>Identify and document existing Outlook client-only rules.</li><li>Export email signatures.</li></ul></ul>|Users:</br><ul><li>Sign in to [office.com](https://www.office.com) to access Outlook on the web.</li><li>[Set up email on mobile devices](https://support.microsoft.com/office/set-up-office-apps-and-email-on-a-mobile-device-7dabb6cb-0046-40b6-81fe-767e0b1f014f) (if not already).</li><li>Check and update mail signatures.</li><li>Check and update mailbox rules.</li></ul>Admins:<ul><li> [Disable Outlook on the web](/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-outlook-web-app) for F1 users and ask them not to access the mailbox through any other methods.</li></ul>|
-|Teams | <ul><li>Identify usage of live events and webinars.</li><li>Identify users who have Teams Phone enabled. If users are using this feature, they may not be the appropriate set of users to transition to an F plan.</li></ul>      ||
+|Email, Exchange, Outlook|<ul><li>Identify user mailboxes over 2 GB by using the [Get-MailboxStatistics](/powershell/module/exchange/get-mailboxstatistics?view=exchange-ps&preserve-view=true) Exchange PowerShell cmdlet, and then reduce mailbox size, as needed. To learn more, see [Mailbox storage limits in Outlook on the web](https://support.microsoft.com/office/mailbox-storage-limits-in-outlook-on-the-web-f170fe90-b859-4034-bcda-e186fc6a26f5).</li><li>If users have an archive mailbox:</li><ul><li>Move archive mailbox content back to the user's mailbox.</li><li>Check for any archive policies that might automatically move email based on the age of messages by using the [Get-EXOMailbox](/powershell/module/exchange/get-exomailbox?view=exchange-ps&preserve-view=true) Exchange Online PowerShell cmdlet.</li></ul> <li>Identify site mailbox access and usage.</li><li>Outlook desktop app, data, and configuration:</li><ul><li>Identify users and computers that are using Outlook data (.pst) files.</li><li>Identify and document existing Outlook client-only rules.</li><li>Export email signatures.</li></ul></ul>|Users:</br><ul><li>Sign in to [office.com](https://www.office.com) to access Outlook on the web.</li><li>[Set up email on mobile devices](https://support.microsoft.com/office/set-up-office-apps-and-email-on-a-mobile-device-7dabb6cb-0046-40b6-81fe-767e0b1f014f) (if not already).</li><li>Check and update mail signatures.</li><li>Check and update mailbox rules.</li></ul>Admins:<ul><li> [Disable Outlook on the web](/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-outlook-web-app) for F1 users and ask them not to access the mailbox through any other methods.</li></ul>|
+|Teams | <ul><li>Identify usage of live events and webinars.</li><li>Identify users who have Teams Phone enabled. If users are using this feature, they might not be the appropriate set of users to transition to an F plan.</li></ul>      ||
 |OneDrive | <ul><li>Identify users who are using more than or close to 2 GB of storage. (OneDrive will become read-only for users who are over the 2 GB limit after the switch to an F plan.)</li><li>Help users reduce the number of files stored in OneDrive and the overall amount of storage used.</li><li>Make sure all files are fully synchronized from users' computers to OneDrive.</li></ul>| |
 
 ## Prepare to switch plans
@@ -191,7 +202,7 @@ Here's some ideas to help plan your strategy.
 |---------|---------|---------|
 |<ul><li>Email</li><li>Department or store managers</li><li>Champions</li><li>Teams and channels</li><li>Viva Engage communities</li></ul> |<ul><li>Microsoft online help, training, and video resources</li><li>In-house training</li></ul>|<ul><li>In-house helpdesk</li><li>Self-serve intranet site</li><li>Microsoft online help, training, and video resources</li><li>Floor walkers and champions</li></ul>         |
 
-You may also want to check out these adoption resources to help you engage and train your users:
+You might also want to check out these adoption resources to help you engage and train your users:
 
 - [Microsoft 365 – Microsoft Adoption](https://adoption.microsoft.com/microsoft-365/)
 - [Teams for frontline workers – Microsoft Adoption](https://adoption.microsoft.com/microsoft-teams/frontline-workers/)
@@ -213,7 +224,7 @@ You can use the Microsoft 365 admin center to manually change plans or a scripte
 
 Avoid removing an existing license for a user and then reassigning a new one at a later point in time. Doing this can impact a user's data. To learn more, see [What happens to a user's data when you remove their license?](../admin/manage/assign-licenses-to-users.md#what-happens-to-a-users-data-when-you-remove-their-license).
 
-For step-by-step guidance on how to change plans in the Microsoft admin center, see [Manually change Microsoft plans](/microsoft-365/commerce/subscriptions/upgrade-to-different-plan#change-plans-manually)
+For step-by-step guidance on how to change plans in the Microsoft admin center, see [Manually change Microsoft plans](/microsoft-365/commerce/subscriptions/upgrade-to-different-plan#change-plans-manually).
 
 ## What to do after switching plans
 
@@ -224,7 +235,7 @@ Follow the guidance in the [What to expect](#what-to-expect) section earlier in 
 - Teams
 - OneDrive
 
-Communicate to your users that the change is completed and let them know how to get help as defined in your change management strategy. You may want to include links to [help and learning resources](#user-setup-help-and-learning-resources) to support them in the transition.
+Communicate to your users that the change is completed and let them know how to get help as defined in your change management strategy. You might want to include links to [help and learning resources](#user-setup-help-and-learning-resources) to support them in the transition.
 
 ## User setup, help, and learning resources
 
