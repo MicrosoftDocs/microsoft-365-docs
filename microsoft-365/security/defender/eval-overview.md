@@ -1,6 +1,6 @@
 ---
-title: Evaluate and pilot Microsoft Defender XDR, an XDR solution
-description: What is XDR security? How can you evaluate a Microsoft XDR in Microsoft Defender XDR? Use this blog series to plan your Microsoft Defender XDR trial lab or pilot environment to test and pilot a security solution designed to protect devices, identity, data, and applications. Start your XDR cyber security journey here and take that test to production.
+title: Evaluate and pilot Microsoft Defender XDR security, an XDR solution that unifies threat data so you can take action.
+description: What is XDR security? How can you evaluate a Microsoft XDR in Microsoft Defender XDR? Use this blog series to plan your Microsoft Defender XDR trial lab or pilot environment and test and pilot a security solution designed to protect devices, identity, data, and applications. Take that XDR seccurity test to production.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
@@ -11,7 +11,7 @@ f1.keywords:
   - NOCSH
 ms.author: tracyp
 author: MSFTTracyP
-ms.date: 09/15/2022
+ms.date: 02/26/2024
 ms.localizationpriority: medium
 manager: dansimp 
 audience: ITPro
@@ -25,7 +25,7 @@ ms.collection:
 ms.topic: conceptual
 ---
 
-# Evaluate and pilot Microsoft Defender XDR
+# Evaluate and pilot Microsoft Defender XDR security
 
 **Applies to:**
 
@@ -33,9 +33,9 @@ ms.topic: conceptual
 
 ## How this article series works
 
-This series of articles is designed to step you through the entire process of setting up a trial XDR environment, *end-to-end*, so you can evaluate the features and capabilities of Microsoft Defender XDR and even promote the evaluation environment straight to production when and if you're ready.
+This series is designed to step you through the entire process of setting up a trial XDR environment, *end-to-end*, so you can evaluate the features and capabilities of Microsoft Defender XDR and even promote the evaluation environment straight to production when you're ready.
 
-If you're new to thinking about XDR, you can scan these 7 linked articles to get a feel for how comprehensive the solution is.
+If you're new to thinking about XDR security, you can scan the 7 linked articles in this series to get a feel for how comprehensive the solution is.
 
 - [How to create the environment](eval-create-eval-environment.md)
 - Set up or learn about each technology of this Microsoft XDR
@@ -48,15 +48,17 @@ If you're new to thinking about XDR, you can scan these 7 linked articles to get
 
 <a name='microsoft-365-defender-is-a-microsoft-xdr-cyber-security-solution'></a>
 
-## Microsoft Defender XDR is a Microsoft XDR cyber security solution
+## What is XDR and Microsoft Defender XDR?
 
-Microsoft Defender XDR is an **eXtended detection and response (XDR) solution** that automatically collects, correlates, and analyzes signal, threat, and alert data from *across* your Microsoft 365 environment, including *endpoint, email, applications, and identities*. It leverages artificial intelligence (AI) and automation to *automatically* stop attacks, and remediate affected assets into a safe state.
+XDR security is a step forward in cyber security because it takes the threat data from systems that were once isolated and unifies them so that you can see patterns and act on them faster.
 
-Think of XDR as the next step in security, unifying endpoint (endpoint detection and response or EDR), email, app, and identity security in one place.
+For example, Microsoft XDR unifies endpoint (endpoint detection and response or EDR), email, app, and identity security in one place.
+
+Microsoft Defender XDR is an **eXtended detection and response (XDR) solution** that automatically collects, correlates, and analyzes signal, threat, and alert data from *across* your Microsoft 365 environment, including *endpoint, email, applications, and identities*. It leverages **artificial intelligence (AI) and automation to *automatically* stop attacks**, and remediate affected assets to a safe state.
 
 <a name='microsoft-recommendations-for-evaluating-microsoft-365-defender'></a>
 
-## Microsoft recommendations for evaluating Microsoft Defender XDR
+## Microsoft recommendations for evaluating Microsoft Defender XDR security
 
 Microsoft recommends you create your evaluation in an existing production subscription of Office 365. This way you will gain real-world insights immediately and can tune settings to work against current threats in your environment. After you've gained experience and are comfortable with the platform, simply promote each component, one at a time, to production.
 

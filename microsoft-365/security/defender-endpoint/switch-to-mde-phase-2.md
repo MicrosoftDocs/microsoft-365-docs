@@ -3,11 +3,11 @@ title: Migrate to Microsoft Defender for Endpoint - Setup
 description: Move to Defender for Endpoint. Review the setup process, which includes installing Microsoft Defender Antivirus.
 ms.service: defender-endpoint
 ms.subservice: onboard
-ms.author: deniseb
-author: denisebmsft
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 ms.date: 10/24/2023
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
   - m365-security
@@ -29,7 +29,7 @@ search.appverid: met150
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-|[![Phase 1: Prepare.](images/phase-diagrams/prepare.png#lightbox)](switch-to-mde-phase-1.md)<br/>[Phase 1: Prepare](switch-to-mde-phase-1.md)|![Phase 2: Set up.](images/phase-diagrams/setup.png#lightbox)<br/>Phase 2: Set up|[![Phase 3: Onboard3.](images/phase-diagrams/onboard.png#lightbox)](switch-to-mde-phase-3.md)<br/>[Phase 3: Onboard](switch-to-mde-phase-3.md)|
+|[![Phase 1: Prepare.](media/phase-diagrams/prepare.png#lightbox)](switch-to-mde-phase-1.md)<br/>[Phase 1: Prepare](switch-to-mde-phase-1.md)|![Phase 2: Set up.](media/phase-diagrams/setup.png#lightbox)<br/>Phase 2: Set up|[![Phase 3: Onboard3.](media/phase-diagrams/onboard.png#lightbox)](switch-to-mde-phase-3.md)<br/>[Phase 3: Onboard](switch-to-mde-phase-3.md)|
 |---|---|---|
 ||*You're here!*||
 

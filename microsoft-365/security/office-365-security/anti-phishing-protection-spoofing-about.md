@@ -4,7 +4,7 @@ f1.keywords:
   - NOCSH
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.topic: overview
 search.appverid: 
@@ -24,7 +24,7 @@ ms.localizationpriority: high
 description: Admins can learn about the anti-spoofing features that are available in Exchange Online Protection (EOP), which can help mitigate against phishing attacks from spoofed senders and domains.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 06/09/2023
+ms.date: 3/7/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
@@ -63,6 +63,9 @@ The following anti-spoofing technologies are available in EOP:
 - **Spoof detections report**: For more information, see [Spoof Detections report](reports-email-security.md#spoof-detections-report).
 
   Defender for Office 365 organizations can also use Real-time detections (Plan 1) or Threat Explorer (Plan 2) to view information about phishing attempts. For more information, see [Microsoft 365 threat investigation and response](office-365-ti.md).
+
+> [!TIP]
+> It's important to understand that a [composite authentication](email-authentication-about.md#composite-authentication) failure doesn't directly result in a message being blocked. Our system using a holistic evaluation strategy that considers the overall suspicious nature of a message along with composite authentication results. This method is designed to mitigate the risk of incorrectly blocking legitimate email from domains that might not strictly adhere to email authentication protocols. This balanced approach helps distinguish genuinely malicious email from message senders that simply fail to conform to standard email authentication practices.
 
 ## How spoofing is used in phishing attacks
 

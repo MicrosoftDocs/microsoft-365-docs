@@ -42,7 +42,7 @@ This article provides an overview of automated attack disruption and includes li
 
 Automatic attack disruption is designed to contain attacks in progress, limit the impact on an organization's assets, and provide more time for security teams to remediate the attack fully. Attack disruption uses the full breadth of our extended detection and response (XDR) signals, taking the entire attack into account to act at the incident level. This capability is unlike known protection methods such as prevention and blocking based on a single indicator of compromise.
 
-While many XDR and security orchestration, automation, and response (SOAR) platforms allow you to create your automatic response actions, automatic attack disruption is built-in and uses insights from Microsoft security researchers and advanced AI models to counteract the complexities of advanced attacks. Automatic attack disruption considers the entire context of signals from different sources to determine compromised assets.
+While many XDR and security orchestration, automation, and response (SOAR) platforms allow you to create your automatic response actions, automatic attack disruption is built in and uses insights from Microsoft security researchers and advanced AI models to counteract the complexities of advanced attacks. Automatic attack disruption considers the entire context of signals from different sources to determine compromised assets.
 
 Automatic attack disruption operates in three key stages:
 
@@ -69,8 +69,7 @@ Automatic attack disruption uses Microsoft-based XDR response actions. Examples 
 
 - [Disable user](/defender-for-identity/remediation-actions) - based on Microsoft Defender for Identity's capability, this action is an automatic suspension of a compromised account to prevent additional damage like lateral movement, malicious mailbox use, or malware execution.
 
-    
-- [Contain user](../defender-endpoint/respond-machine-alerts.md#contain-user-from-the-network) - This response action automatically contains suspicious identities temporarily to help block any lateral movement and remote encryption related to incoming communication with Defender for Endpoint's onboarded devices.
+- [Contain user](../defender-endpoint/respond-machine-alerts.md#contain-user-from-the-network) - based on Microsoft Defender for Endpoint's capability, this response action automatically contains suspicious identities temporarily to help block any lateral movement and remote encryption related to incoming communication with Defender for Endpoint's onboarded devices.
 
 For more information, see [remediation actions](m365d-remediation-actions.md) in Microsoft Defender XDR.
 
