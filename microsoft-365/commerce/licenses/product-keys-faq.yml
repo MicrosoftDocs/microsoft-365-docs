@@ -5,19 +5,21 @@ metadata:
   ms.author: cmcatee
   manager: scotv
   ms.reviewer: racheg, ronarg
-  ms.date: 01/18/2024
   audience: Admin
   ms.topic: faq
   ms.service: microsoft-365-business
+  ms.subservice: m365-commerce-volume-licensing
+  ms.collection: 
+  - Tier2
+  - scotvorg
   ms.custom: 
   - commerce_vl
   - empty
   search.appverid: MET150
-  ms.collection: 
-  - Tier2
-  - scotvorg
   ms.localizationpriority: medium
   description: "Product keys Frequently Asked Questions"
+  ms.date: 01/18/2024
+  
 title: Product keys Frequently Asked Questions
 summary: |
 
