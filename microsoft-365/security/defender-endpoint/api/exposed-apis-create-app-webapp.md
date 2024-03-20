@@ -6,7 +6,7 @@ ms.service: defender-endpoint
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
-ms.date: 01/25/2023
+ms.date: 03/19/2024
 manager: deniseb
 audience: ITPro
 ms.collection: 
@@ -57,7 +57,7 @@ This article explains how to create a Microsoft Entra application, get an access
 
 2. Navigate to **Microsoft Entra ID** \> **App registrations** \> **New registration**. 
 
-    :::image type="content" source="../images/atp-azure-new-app2.png" alt-text="The application registration pane" lightbox="../images/atp-azure-new-app2.png":::
+    :::image type="content" source="../media/atp-azure-new-app2.png" alt-text="The application registration pane" lightbox="../media/atp-azure-new-app2.png":::
 
 3. In the registration form, choose a name for your application, and then select **Register**.
 
@@ -132,7 +132,7 @@ $appId = '' ### Paste your Application ID here
 $appSecret = '' ### Paste your Application key here
 
 $sourceAppIdUri = 'https://api.securitycenter.microsoft.com/.default'
-$oAuthUri = "https://login.microsoftonline.com/$TenantId/oauth2/token"
+$oAuthUri = "https://login.microsoftonline.com/$TenantId/oauth2/v2.0/token"
 $authBody = [Ordered] @{
     scope = "$sourceAppIdUri"
     client_id = "$appId"

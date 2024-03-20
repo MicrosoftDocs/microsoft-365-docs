@@ -678,7 +678,7 @@ In organizations with Microsoft Defender for Office 365 Plan 2 (add-on licenses 
 
 - :::image type="icon" source="../../media/m365-cc-sc-view-alert-icon.png" border="false"::: **View alert**. An alert is triggered when an admin submission is created or updated. Selecting this action takes you to the details of the alert.
 
-- In the **Result details** section, the following links for [Threat Explorer](threat-explorer-about.md) might also be available, depending on the status and result of the reported item:
+- In the **Result details** section, the following links for [Threat Explorer](threat-explorer-real-time-detections-about.md) might also be available, depending on the status and result of the reported item:
   - **View this message in Explorer**: **Emails** tab only.
   - **Search for similar messages in Explorer**: **Emails** tab only.
   - **Search for URL or file**: **Email attachments** or **URL** tabs only.

@@ -94,11 +94,11 @@ sections:
 
           This rule prevents untrusted processes from having direct access to LSASS memory. Whenever a process tries to use the OpenProcess() function to access LSASS, with an access right of PROCESS_VM_READ, the rule specifically blocks that access right.
 
-          :::image type="content" source="images/asrfaq1.png" alt-text="block credential stealing LSASS":::
+          :::image type="content" source="media/asrfaq1.png" alt-text="block credential stealing LSASS":::
 
           Looking at the above example, if you really had to create an exception for the process that the access right was blocked, adding the filename along with full path would exclude it from being blocked and after allowed to access LSASS process memory. The value of 0 means that attack surface reduction rules ignore this file/process and not block/audit it.
 
-          :::image type="content" source="images/asrfaq2.png" alt-text="exclude files asr":::
+          :::image type="content" source="media/asrfaq2.png" alt-text="exclude files asr":::
 
       - question: |
           How do I configure per-rule exclusions?
