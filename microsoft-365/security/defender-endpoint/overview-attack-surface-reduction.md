@@ -46,28 +46,32 @@ To configure attack surface reduction in your environment, follow these steps:
 
 1. [Enable hardware-based isolation for Microsoft Edge](/windows/security/threat-protection/microsoft-defender-application-guard/install-md-app-guard).
 
-2. [Enable attack surface reduction rules](attack-surface-reduction-rules-deployment.md)
+2. [Enable attack surface reduction rules](attack-surface-reduction-rules-deployment.md).
 
 3. Enable application control.
 
    1. Review base policies in Windows. See [Example Base Policies](/windows/security/threat-protection/windows-defender-application-control/example-wdac-base-policies).
+
    2. See the [Windows Defender Application Control design guide](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-design-guide).
+
    3. Refer to [Deploying Windows Defender Application Control (WDAC) policies](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide).
 
 4. [Enable controlled folder access](enable-controlled-folders.md).
 
-5. Enable [removable storage protection](device-control-overview.md)
+5. Enable [removable storage protection](device-control-overview.md).
 
 6. [Turn on network protection](enable-network-protection.md).
 
-7. Enable [Web protection](web-protection-overview.md)
+7. Enable [Web protection](web-protection-overview.md).
 
 8. [Enable exploit protection](enable-exploit-protection.md).
 
 9. Set up your network firewall.
 
    1. Get an overview of [Windows Firewall with advanced security](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
+
    2. Use the [Windows Firewall design guide](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-design-guide) to decide how you want to design your firewall policies.
+
    3. Use the [Windows Firewall deployment guide](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide) to set up your organization's firewall with advanced security.
 
 > [!TIP]
@@ -134,10 +138,11 @@ You can also manually navigate to the event area that corresponds to the feature
 #### Import an existing XML custom view
 
 1. Create an empty .txt file and copy the XML for the custom view you want to use into the .txt file. Do this for each of the custom views you want to use. Rename the files as follows (ensure you change the type from .txt to .xml):
-    - Controlled folder access events custom view: *cfa-events.xml*
-    - Exploit protection events custom view: *ep-events.xml*
-    - Attack surface reduction events custom view: *asr-events.xml*
-    - Network/ protection events custom view: *np-events.xml*
+
+   - Controlled folder access events custom view: *cfa-events.xml*
+   - Exploit protection events custom view: *ep-events.xml*
+   - Attack surface reduction events custom view: *asr-events.xml*
+   - Network/ protection events custom view: *np-events.xml*
 
 2. Type **event viewer** in the Start menu and open **Event Viewer**.
 
@@ -227,14 +232,13 @@ All attack surface reduction events are located under **Applications and Service
 You can access these events in Windows Event viewer:
 
 1. Open the **Start** menu and type **event viewer**, and then select the **Event Viewer** result.
+
 2. Expand **Applications and Services Logs > Microsoft > Windows** and then go to the folder listed under **Provider/source** in the table below.
+
 3. Double-click on the sub item to see events. Scroll through the events to find the one you're looking.
 
    ![Animation showing using Event Viewer.](media/event-viewer.gif)
 
-<br>
-
-****
 
 |Feature|Provider/source|Event ID|Description|
 |---|---|:---:|---|
