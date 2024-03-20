@@ -145,7 +145,7 @@ additionalContent:
        - url: /microsoft-365/security/office-365-security/preset-security-policies
          text: Get Started
     # Card
-    - title: Microsoft Defender Endpoint
+    - title: Microsoft Defender for Endpoint
       links:
       - url: /microsoft-365/security/defender-endpoint/microsoft-defender-endpoint
         text: Overview  
