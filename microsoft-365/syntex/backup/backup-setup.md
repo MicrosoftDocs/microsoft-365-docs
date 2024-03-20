@@ -243,22 +243,33 @@ Only tenant-level admins can create and manage backups using Microsoft 365 Backu
 
 ### Manage consumption and invoices in the Azure portal
 
-Now you can view actual and accumulated cost breakdown by tenant and service type for OneDrive, SharePoint, and Exchange in Microsoft Cost Management in the Azure portal or access them by using the [Cost Management public APIs](/rest/api/cost-management/operation-groups). Cost breakdown by application ID is coming soon.
+You can view actual and accumulated cost breakdown by tenants and service type for OneDrive, SharePoint, and Exchange in Microsoft Cost Management in the Azure portal or access them by using the [Cost Management public APIs](/rest/api/cost-management/operation-groups). Cost breakdown by application ID is coming soon.
 
-1. Sign in to [Azure portal](https://portal.azure.com/).
+1. Sign in to the [Azure portal](https://portal.azure.com/).
 
 2. Search for *Cost Management + Billing*.
 
-3. Select Cost Analysis to see:
-    - Actual cost and forecast cost
- 
-    - Azure Cost Analysis - Actual Cost.
-    - Select '+ Add Filter' to see breakdown of cost by tenants and servicetype
-    -  tenants will show list of tenant IDs that run 
-    -  servicetype will be OneDrive, SharePoint or Exchange
-        - Select Tag
-        - In the key-value pair, select tenants or servicetype and select respective tenantID or servicetype
-        - Azure Cost Analysis - Filter by Tag.
+3. Select **Cost Analysis** to see:
 
-4. Select Billing on the left navigation to see monthly invoices.
-5. Set up Budget alerts on cost by following steps here. 
+    - Actual cost and forecast cost
+
+    ![Screenshot of the cost analysis page in Microsoft Cost Management.](../../media/content-understanding/backup-cost-analysis.png)
+
+
+    - Azure Cost Analysis - Actual Cost
+
+    - Select **+ Add Filter** to see breakdown of cost by tenants and service type
+
+    - Tenants will show list of tenant IDs that run
+
+    -  Service type will be OneDrive, SharePoint, or Exchange
+
+    - Select tag
+
+        - In the key-value pair, select tenants or service type and select the respective tenantID or servicetype
+
+        - Azure Cost Analysis - Filter by Tag
+
+4. Select **Billing** on the left navigation to see monthly invoices.
+
+5. Set up Budget alerts on cost by following steps for the [Cost Management public APIs](/rest/api/cost-management/operation-groups).
