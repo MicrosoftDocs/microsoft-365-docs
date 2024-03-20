@@ -99,7 +99,7 @@ In order to get the data types for our events properties do the following:
 
 - Here's an example for Device Info event:
 
-  :::image type="content" source="../images/data-types-mapping-query.png" alt-text="The Event Hubs with resource ID3" lightbox="../images/data-types-mapping-query.png":::
+  :::image type="content" source="../media/data-types-mapping-query.png" alt-text="The Event Hubs with resource ID3" lightbox="../media/data-types-mapping-query.png":::
 
 ## Related articles
 
