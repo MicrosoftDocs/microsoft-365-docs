@@ -38,7 +38,7 @@ This article provides solutions to help address the sign-on issues.
 
 **Sign in failed:** *Unexpected error, try later*
 
-:::image type="content" source="images/f9c3bad127d636c1f150d79814f35d4c.png" alt-text="A screenshot showing a sign-in failed error Unexpected error in the sign-in page of the Microsoft Defender 365 portal." lightbox="images/f9c3bad127d636c1f150d79814f35d4c.png":::
+:::image type="content" source="media/f9c3bad127d636c1f150d79814f35d4c.png" alt-text="A screenshot showing a sign-in failed error Unexpected error in the sign-in page of the Microsoft Defender 365 portal." lightbox="media/f9c3bad127d636c1f150d79814f35d4c.png":::
 
 **Message:**
 
