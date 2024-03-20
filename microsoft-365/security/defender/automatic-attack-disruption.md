@@ -16,21 +16,20 @@ audience: ITPro
 ms.collection: 
   - m365-security
   - tier1
+  - usx-security
 ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
 ms.date: 02/21/2024
+appliesto: Microsoft Defender XDR and Microsoft Sentinel in the Microsoft Defender portal
 ---
 
 # Automatic attack disruption in Microsoft Defender XDR
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
-**Applies to:**
-
-- Microsoft Defender XDR
-- Microsoft Sentinel
+**Applies to:** Microsoft Defender XDR
 
 Microsoft Defender XDR correlates millions of individual signals to identify active ransomware campaigns or other sophisticated attacks in the environment with high confidence. While an attack is in progress, Defender XDR disrupts the attack by automatically containing compromised assets that the attacker is using through automatic attack disruption.
 
