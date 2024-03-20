@@ -139,7 +139,7 @@ Defender for Office 365 Plan 2 includes best-of-class [threat investigation and 
 
 ### Threat Trackers on the latest threats
 
-- **[Threat trackers](threat-trackers.md)** provide the latest intelligence on prevailing cybersecurity issues. For example, you can view information about the latest malware, and take countermeasures before it becomes an actual threat to your organization. Available trackers include [Noteworthy trackers](threat-trackers.md#noteworthy-trackers), [Trending trackers](threat-trackers.md#trending-trackers), [Tracked queries](threat-trackers.md#tracked-queries), and [Saved queries](threat-trackers.md#saved-queries).
+**[Threat trackers](threat-trackers.md)** are [saved queries from Threat Explorer](threat-explorer-real-time-detections-about.md#saved-queries-in-threat-explorer) that you run manually or that can be configured to periodically run automatically. The **Trending campaigns** tab automatically highlights new email threats that were recently received by your organization.
 
 ### Threat Explorer or Real-Time Detections
 
