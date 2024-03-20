@@ -86,7 +86,7 @@ To troubleshoot and mitigate such issues, follow these steps:
    > If you have [Tamper protection turned on in block mode](/microsoft-365/security/defender-endpoint/tamperprotection-macos), use [Troubleshooting mode](/microsoft-365/security/defender-endpoint/mac-troubleshoot-mode) to capture real-time-protection-statistics. Otherwise, you will get null results.
    > This feature is available in version 100.90.70 or newer. It's enabled by default on the **Dogfood** and **InsiderFast** channels. If you're using a different update channel, this feature can be enabled from the command line: `mdatp config real-time-protection-statistics --value enabled`. 
 
-5. On your Mac system, download the sample Python parser high_cpu_parser.py using the command:
+5. On your Mac system, download the sample Python parser `high_cpu_parser.py` using the command:
 
    ```bash
    curl -O https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/linux/diagnostic/high_cpu_parser.py
