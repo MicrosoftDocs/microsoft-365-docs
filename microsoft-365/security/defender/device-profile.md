@@ -1,5 +1,5 @@
 ---
-title: Device profile in Microsoft 365 security portal
+title: Device entity page in Microsoft Defender
 description: View risk and exposure levels for a device in your organization. Analyze past and present threats, and protect the device with the latest updates.
 keywords: security, malware, Microsoft 365, M365, Microsoft Defender XDR, security center, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Identity, device page, device profile,  machine page, machine profile
 ms.service: defender-xdr
@@ -14,15 +14,15 @@ ms.collection:
 - tier3
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 02/16/2021
+ms.date: 03/20/2024
+appliesto: Microsoft Defender XDR and Microsoft Sentinel in the Microsoft Defender portal
 ---
 
-# Device profile page
+# Device entity page in Microsoft Defender
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
-
-The Microsoft 365 security portal provides you with device profile pages, so you can quickly assess the health and status of devices on your network.
+The device entity page in the Microsoft Defender portal provides you with device profile pages, so you can quickly assess the health and status of devices on your network.
 
 > [!IMPORTANT]
 > The device profile page may appear slightly different, depending on whether the device is enrolled in Microsoft Defender for Endpoint, Microsoft Defender for Identity, or both.

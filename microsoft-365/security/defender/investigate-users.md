@@ -1,7 +1,7 @@
 ---
-title: Investigate users in Microsoft Defender XDR
-description: Investigate users for an incident in the Microsoft Defender portal.
-keywords: security, malware, Microsoft 365, M365, security center, monitor, report, identities, data, devices, apps, incident, analyze, response
+title: User entity page in Microsoft Defender
+description: The user entity page in the Microsoft Defender portal helps you in your investigation of user entities. The page has all the important information about each entity. If an alert or incident indicates that a user might be compromised or is suspicious, check and investigate the user entity.
+keywords: security, malware, Microsoft 365, M365, Microsoft Defender XDR, Microsoft Sentinel, security center, monitor, report, identities, data, devices, apps, incident, analyze, response
 ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -17,22 +17,23 @@ ms.collection:
 ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
-ms.date: 08/04/2023
+ms.date: 03/20/2024
 appliesto: Microsoft Defender XDR and Microsoft Sentinel in the Microsoft Defender portal
 ---
 
-# Investigate users in Microsoft Defender XDR
+# User entity page in Microsoft Defender
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
-The user entity page in the Microsoft Defender portal helps you in your investigation of user entities. The page has all the important information about each entity. If an alert or incident indicates that a user might be compromised or is suspicious, check and investigate the user profile.
+The user entity page in the Microsoft Defender portal helps you in your investigation of user entities. The page contains all the important information about a given user entity. If an alert or incident indicates that a user might be compromised or is suspicious, check and investigate the user entity.
 
 You can find user entity information in the following views:
 
-- Identities page
+- Identities page, under **Assets**
 - Alerts queue
 - Any individual alert/incident
 - Devices page
+- Any individual device entity page
 - Activity log
 - Advanced hunting queries
 - Action center
@@ -106,7 +107,9 @@ For more information, see [Defender for Identity entity tags in Microsoft Defend
 
 ## Incidents and alerts
 
-You can see all active incidents and alerts involving the user from the last six months in this tab. All the information from the main incidents and alerts queues is shown here. Select an incident or alert to [open the full investigation page](incidents-overview.md).
+You can see all active incidents and alerts involving the user from the last six months in this tab. All the information from the main incidents and alerts queues is shown here. This list is a filtered version of the [incidents queue](incidents-overview.md), and shows a short description of the incident or alert, its severity (high, medium, low, informational), its status in the queue (new, in progress, resolved), its classification (not set, false alert, true alert), investigation state, category, who is assigned to address it, and last activity observed.
+
+Select an incident or alert to [open the full investigation page](incidents-overview.md).
 
 :::image type="content" source="../../media/investigate-users/user-incident-alertstab.png" alt-text="The user account's related alerts seen in the Alerts tab in the Microsoft Defender portal" lightbox="../../media/investigate-users/user-incident-alertstab.png":::
 
@@ -225,6 +228,10 @@ The insights are based on the following data sources:
 - CommonSecurityLog (Microsoft Sentinel)
 
 :::image type="content" source="../../media/investigate-users/user-incident-sentinel-events.png" alt-text="Screenshot of Sentinel events tab in user entity page.":::
+
+If you want to further explore any of the insights in this panel, select the link accompanying the insight. The link takes you to the **Advanced hunting** page, where it displays the query underlying the insight, along with its raw results. You can modify the query or drill down into the results to expand your investigation or just satisfy your curiosity.
+
+:::image type="content" source="../../media/investigate-users/insights-advanced-hunting.png" alt-text="Screenshot of Advanced hunting screen with insight query.":::
 
 ## Remediation actions
 
