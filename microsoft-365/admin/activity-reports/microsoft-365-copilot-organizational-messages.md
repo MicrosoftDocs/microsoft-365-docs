@@ -68,12 +68,14 @@ Select **Schedule message** within the recommendation card and follow these step
 Within the **Message** section of the Organizational messages panel, choose one from the set of the pre-made content, each containing a title, message, and link for your users to visit when they interact with the message. You can then review what the message will look like to your targeted users within the **Preview** section.  In the preview, we support the Windows 11 notification and Teaching popover in new Teams.
 
 :::image type="content" source="../../media/copilot-notification-for-org.png" alt-text="Screenshot showing the notification pop-up for Copilot.":::
+
 *The users see the Windows 11 notification recommending they use Copilot for Microsoft 365.*
 
 >[!NOTE]
 > Messages will align with your computer's system language settings. We currently support 15 languages. If your language is not among them, we will default to the nearest available option. [Check the appendix to see which languages are supported](#appendix).
 
 :::image type="content" source="../../media/from-your-admin-teams.png" alt-text="Screenshot showing the notification pop-up in Teams from the admin to use Copilot.":::
+
 *The users see Teams in-product Teaching Popovers in the new Teams recommending they use Copilot in Teams.*
 
 >[!NOTE]
@@ -87,11 +89,11 @@ For this Copilot awareness scenario, the recipients of your message are, by defa
 
 Within the Schedule section, you must select a start date and an end date for your selected message. Additionally, you'll choose a frequency, which determines how often the message can be shown to the same targeted user within the scheduled timeframe. It's important to note that your message can be delivered to a user according to your set schedule and frequency. However, if the user takes the recommendation or dismisses the message, the message won't reappear to that user unless your team creates a subsequent message using this experience.
 
+:::image type="content" source="../../media/copilot-organizational-message-panel.png" alt-text="Screenshot showing the panel to select an Organizational message about Copilot for Microsoft 365." lightbox="../../media/copilot-organizational-message-panel.png":::
+
 ### Step 4: Acknowledge and complete
 
 Once you're satisfied with the configuration of your message, check the acknowledgment box and then select **Schedule message**. This causes the message to be registered for delivery according to your selections.
-
-:::image type="content" source="../../media/copilot-organizational-message-panel.png" alt-text="Screenshot showing the panel to select an Organizational message about Copilot for Microsoft 365." lightbox="../../media/copilot-organizational-message-panel.png":::
 
 :::image type="content" source="../../media/copilot-schedule-organizational-message.png" alt-text="Screenshot showing the panel to schedule the delivery of an Organizational message about Copilot for Microsoft 365." lightbox="../../media/copilot-schedule-organizational-message.png":::
 

@@ -69,6 +69,7 @@ The desktop teaching call-out is supported by Microsoft 365 Consumer and Commerc
 *The user sees an in-product notification recommending they save to OneDrive more.*
 
 :::image type="content" source="../../media/from-your-admin-teams.png" alt-text="Screenshot showing the notification pop-up in Teams from the admin to use Copilot.":::
+
 *The user sees an in-product notification recommending they use interactive features during Teams meetings.*
 
 ## How to enable Adoption Score Organizational Messages
