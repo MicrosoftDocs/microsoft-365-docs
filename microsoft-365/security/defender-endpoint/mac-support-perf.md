@@ -45,63 +45,40 @@ Depending on the applications that you're running and your device characteristic
 
 Real-time protection (RTP) is a feature of Defender for Endpoint on macOS that continuously monitors and protects your device against threats. It consists of file and process monitoring and other heuristics.
 
-The following steps can be used to troubleshoot and mitigate these issues:
+To troubleshoot and mitigate such issues, follow these steps:
 
-1. Disable real-time protection using one of the following methods and observe whether the performance improves. This approach helps narrow down whether Microsoft Defender for Endpoint on macOS is contributing to the performance issues.
+1. Disable real-time protection by using one of the methods in the following table, and then observe whether performance improves. This approach helps narrow down whether Microsoft Defender for Endpoint on macOS is contributing to the performance issues.
 
-      If your device is not managed by your organization, real-time protection can be disabled using one of the following options:
+   | Device management | Method |
+   |---|--|
+   | Device is not managed by organization | User interface <br/><br/>Open Microsoft Defender for Endpoint on macOS and navigate to **Manage settings**. |
+   | Device is not managed by organization | Terminal <br/><br/>In Terminal, run the following command: `mdatp config real-time-protection --value disabled` |
+   | Device is managed by organization | See [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md). |
 
-    - From the user interface. Open Microsoft Defender for Endpoint on macOS and navigate to **Manage settings**.
-
-      :::image type="content" source="images/mdatp-36-rtp.png" alt-text=" The Manage real-time protection page" lightbox="images/mdatp-36-rtp.png":::
-
-    - From the Terminal. For security purposes, this operation requires elevation.
-
-      ```bash
-      mdatp config real-time-protection --value disabled
-      ```
-
-      If your device is managed by your organization, real-time protection can be disabled by your administrator using the instructions in [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md).
-
-      If the performance problem persists while real-time protection is off, the origin of the problem could be the endpoint detection and response component. In this case, please contact customer support for further instructions and mitigation.
+   If the performance problem persists while real-time protection is off, the origin of the problem could be the endpoint detection and response component. In this case, please contact customer support for further instructions and mitigation.
 
 2. Open Finder and navigate to **Applications** \> **Utilities**. Open **Activity Monitor** and analyze which applications are using the resources on your system. Typical examples include software updaters and compilers.
 
-3. To find the applications that are triggering the most scans, you can use real-time statistics gathered by Defender for Endpoint on Mac.
+3. Make sure real-time protection is enabled. To check the status of real-time protection, run the following command:
 
-> [!NOTE]
-> This feature is available in version 100.90.70 or newer.
-> This feature is enabled by default on the **Dogfood** and **InsiderFast** channels. If you're using a different update channel, this feature can be enabled from the command line:
+   ```bash
+   mdatp health --field real_time_protection_enabled
+   ```
 
-> [!TIP]
-> If you have [Tamper Protection in block mode](/microsoft-365/security/defender-endpoint/tamperprotection-macos), you need to use [Troubleshooting mode](/microsoft-365/security/defender-endpoint/mac-troubleshoot-mode) to capture real-time-protection-statistics.  Otherwise, you will get null results.
-   
-```bash
-mdatp config real-time-protection-statistics --value enabled
- ```
+   Verify that the **real_time_protection_enabled** entry is true. Otherwise, run the following command to enable it:
 
-This feature requires real-time protection to be enabled. To check the status of real-time protection, run the following command:
+   ```bash
+   mdatp config real-time-protection --value enabled
+   ```
 
-```bash
-mdatp health --field real_time_protection_enabled
-```
+3. To find the applications that are triggering the most scans, you can use real-time statistics gathered by Defender for Endpoint on macOS. Run the following command:
 
-Verify that the **real_time_protection_enabled** entry is true. Otherwise, run the following command to enable it:
+   ```bash
+   mdatp diagnostic real-time-protection-statistics --output json > real_time_protection.json
+   ```
 
-```bash
-mdatp config real-time-protection --value enabled
-```
-
-```output
-Configuration property updated
-```
-
-  To collect current statistics, run:
-
-```bash
-mdatp diagnostic real-time-protection-statistics --output json > real_time_protection.json
-```
-
-> [!NOTE]
-> Using **--output json** (note the double dash) ensures that the output format is ready for parsing.
-The output of this command will show all processes and their associated scan activity.
+   > [!NOTE]
+   > Using **--output json** (note the double dash) ensures that the output format is ready for parsing. The output of this command will show all processes and their associated scan activity.
+   > If you have [Tamper protection turned on in block mode](/microsoft-365/security/defender-endpoint/tamperprotection-macos), use [Troubleshooting mode](/microsoft-365/security/defender-endpoint/mac-troubleshoot-mode) to capture real-time-protection-statistics.  Otherwise, you will get null results.
+   > This feature is available in version 100.90.70 or newer. It's enabled by default on the **Dogfood** and **InsiderFast** channels. If you're using a different update channel, this feature can be enabled from the command line: `mdatp config real-time-protection-statistics --value enabled`.
+   > 
