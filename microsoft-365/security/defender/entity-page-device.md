@@ -47,6 +47,8 @@ Device entities can be found in the following areas:
 
 You can select devices whenever you see them in the portal to open the device's entity page, which displays more details about the device. For example, you can see the details of devices listed in the alerts of an incident in the Microsoft Defender portal at **Incidents & alerts > Incidents > *incident* > Assets > Devices**.
 
+:::image type="content" source="../../media/entity-page-device/device-incident-assets.png" alt-text="The Users page for an incident in the Microsoft Defender portal.":::
+
 The device entity page presents its information in a tabbed format. This article lays out the types of information available in each tab, and also the actions you can take on a given device.
 
 The following tabs are displayed on the device entity page:
