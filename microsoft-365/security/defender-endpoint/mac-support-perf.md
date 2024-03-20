@@ -116,9 +116,7 @@ To troubleshoot and mitigate such issues, follow these steps:
    cat real_time_protection.json | python high_cpu_parser.py  > real_time_protection.log
    ```
 
-   The output of the above is a list of the top contributors to performance issues. The first column is the process identifier (PID), the second column is the process name, and the last column is the number of scanned files, sorted by impact.
-
-   For example, the output of the command should resemble the following example:
+   The output should be a list of the top contributors to performance issues. The first column is the process identifier (PID), the second column is the process name, and the last column is the number of scanned files, sorted by impact. Here's an example:
 
    ```output
    ... > python ~/repo/mdatp-xplat/linux/diagnostic/high_cpu_parser.py <~Downloads/output.json | head -n 10
