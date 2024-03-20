@@ -3,7 +3,7 @@ title: Microsoft Defender Antivirus security intelligence and product updates
 description: Manage how Microsoft Defender Antivirus receives protection and product updates.
 ms.service: defender-endpoint
 ms.localizationpriority: high
-ms.date: 03/12/2024
+ms.date: 03/20/2024
 audience: ITPro
 ms.topic: reference
 author: siosulli
@@ -116,7 +116,7 @@ All our updates contain
 
 #### Known issues
 
-- None
+- For [device control](device-control-overview.md) customers using removable media policies with disk/device-level access only (masks that include the values 1, 2, 3, 4, and 7), enforcement might not work as expected. In such situations, we recommend customers roll back to the previous version of the Defender platform.
 
 ### January-2024 (Platform: 4.18.24010.12 | Engine: 1.1.24010.10)
 
