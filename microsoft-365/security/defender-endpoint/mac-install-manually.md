@@ -89,7 +89,7 @@ To complete this process, you must have admin privileges on the device.
 
 5. From **Destination Select**, select the disk where you want to install the Microsoft Defender Software, for example, *Macintosh HD* and select **Continue**.
 
-    :::image type="content" source="images/destination-select.png" alt-text="Screenshot that shows the selection of destination for installation.":::
+    :::image type="content" source="media/destination-select.png" alt-text="Screenshot that shows the selection of destination for installation.":::
 
    > [!NOTE]
    > The amount of disk space required for installation is around 777 MB.

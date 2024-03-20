@@ -6,7 +6,7 @@ ms.service: defender-endpoint
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
-ms.date: 01/25/2023
+ms.date: 03/19/2024
 manager: deniseb
 audience: ITPro
 ms.collection: 
@@ -132,7 +132,7 @@ $appId = '' ### Paste your Application ID here
 $appSecret = '' ### Paste your Application key here
 
 $sourceAppIdUri = 'https://api.securitycenter.microsoft.com/.default'
-$oAuthUri = "https://login.microsoftonline.com/$TenantId/oauth2/token"
+$oAuthUri = "https://login.microsoftonline.com/$TenantId/oauth2/v2.0/token"
 $authBody = [Ordered] @{
     scope = "$sourceAppIdUri"
     client_id = "$appId"
