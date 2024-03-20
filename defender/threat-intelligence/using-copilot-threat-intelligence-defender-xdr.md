@@ -69,7 +69,7 @@ Copilot in Defender also has the following built-in prompts when accessing the *
 
 - [Summarize](#summarize-the-latest-threats-related-to-your-organization)
 - [Prioritize](#prioritize-which-threats-to-focus-on)
-- [Ask](#ask-about-the-threat-actors-are-targeting-your-industry)
+- [Ask](#ask-about-the-threat-actors-targeting-the-communications-infrastructure)
 
 (Add screenshot here)
 

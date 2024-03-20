@@ -25,7 +25,7 @@ Copilot for Security delivers information about threat actors, indicators of com
 This article introduces you to Copilot and includes sample prompts that can help Defender TI users.
 
 ## Know before you begin
-- You can experience the integration of Copilot for Security with Defender TI through the [dedicated site](#using-defender-ti-in-copilot-for-security-standalone-site) (also known as the **standalone** experience) or through the [Microsoft Defender portal](#using-copilot-for-security-on-defender-ti-in-microsoft-defender-xdr) (**embedded** experience). [Learn more about Microsoft Copilot for Security experiences](/security-copilot/experiences-security-copilot)
+- You can experience the integration of Copilot for Security with Defender TI through the [dedicated site](#using-copilot-for-security-standalone-site-to-get-threat-intelligence) (also known as the **standalone** experience) or through the [Microsoft Defender portal](#using-microsoft-copilot-in-defender-to-get-threat-intelligence) (**embedded** experience). [Learn more about Microsoft Copilot for Security experiences](/security-copilot/experiences-security-copilot)
 - Be clear and specific with your prompts. You might get better results if you include specific threat actor names or IOCs in your prompts. It might also help if you add **threat intelligence** to your prompt, like:
   - Show me threat intelligence data for Aqua Blizzard.
   - Summarize threat intelligence data for "malicious.com."
@@ -141,7 +141,7 @@ Copilot in Defender brings Copilot for Security’s capability to look up threat
 You can ask about a threat actor, attack campaign, or any other threat intelligence that you want to know more about, and Copilot generates responses based on threat analytics reports, intel profiles and articles, and other Defender TI content. You can also select any of the available built-in prompts that lets you do the following:
 -	[Summarize](using-copilot-threat-intelligence-defender-xdr.md#summarize-the-latest-threats-related-to-your-organization) the latest threats related to your organization
 -	[Prioritize](using-copilot-threat-intelligence-defender-xdr.md#prioritize-which-threats-to-focus-on) which threats to focus on based on your environment's highest exposure level to these threats
--	[Ask](using-copilot-threat-intelligence-defender-xdr.md#ask-about-the-threat-actors-are-targeting-your-industry) about the threat actors targeting the communications infrastructure
+-	[Ask](using-copilot-threat-intelligence-defender-xdr.md#ask-about-the-threat-actors-targeting-the-communications-infrastructure) about the threat actors targeting the communications infrastructure
 
 [Learn more about using Copilot in Defender for threat intelligence](using-copilot-threat-intelligence-defender-xdr.md)
 
