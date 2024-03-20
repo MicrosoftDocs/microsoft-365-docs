@@ -9,7 +9,7 @@ manager: scotv
 ---
 # Request FastTrack assistance for Microsoft 365
 
-The FastTrack request for assistance (RFA) form is now available in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2226341" target="_blank">Microsoft 365 admin center</a> and the <a href="https://setup.microsoft.com/" target="_blank">Microsoft 365 Setup portal</a>.  Submit this form to request guidance from FastTrack specialists with your Microsoft 365 deployment and migration efforts. FastTrack assistance is available for tenants with 150 or more licenses for the following Microsoft product families: Microsoft 365, Office 365, Microsoft Viva, Enterprise Mobility + Security, and Windows 10/11.  See <a href="https://learn.microsoft.com/microsoft-365/fasttrack/eligibility" target="_blank">eligible plans</a> for details.
+The FastTrack request for assistance (RFA) form is now available in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2226341" target="_blank">Microsoft 365 admin center</a> and the <a href="https://setup.microsoft.com/" target="_blank">Microsoft 365 Setup portal</a>.  Submit this form to request guidance from FastTrack specialists with your Microsoft 365 deployment and migration efforts. FastTrack assistance is available for tenants with 150 or more licenses for the following Microsoft product families: Microsoft 365, Office 365, Microsoft Viva, Enterprise Mobility + Security, and Windows 10/11.  See <a href="/microsoft-365/fasttrack/eligibility" target="_blank">eligible plans</a> for details.
 
 ## Submit an RFA in the Microsoft 365 admin center
 
@@ -17,9 +17,9 @@ The FastTrack request for assistance (RFA) form is now available in the <a href=
 
 1. Select <a href="https://go.microsoft.com/fwlink/?linkid=2226341" target="_blank">Advanced deployment guides & assistance</a> on the home page.
 
-1. Select the **FastTrack assistance** tab and then select **Submit a new request**
+1. Select the **FastTrack assistance** tab and then select **Submit a new request**.
 
-   a. After submission, receipt is confirmed with an RFA ID number, and the option to provide feedback about your experience.
+   After submission, receipt is confirmed with an RFA ID number, and the option to provide feedback about your experience.
 
 1. Select **Done**.
 
@@ -34,9 +34,9 @@ The FastTrack request for assistance (RFA) form is now available in the <a href=
 
 1. Sign in with your work or school account.
 
-1. Select **Submit a new request**
+1. Select **Submit a new request**.
 
-   a. After submission, receipt is confirmed with an RFA ID number, and the option to provide feedback about your experience.
+   After submission, receipt is confirmed with an RFA ID number, and the option to provide feedback about your experience.
 
 1. Select **Done**.
 
@@ -57,7 +57,7 @@ For tenant admins:
 
 For non-admins:
 
-1. Go to <a href="https://setup.microsoft.com/microsoft-365-fasttrack-assistance" target="_blank">setup.microsoft.com/microsoft-365-fasttrack-assistance</a>.
+1. Go to <a href="https://setup.microsoft.com/microsoft-365-fasttrack-assistance" target="_blank">setup.microsoft.com/microsoft-365-fasttrack-assistance</a>. <!--2024-02-22: The doc build says the target site doesn't exist, but this link works fine.-->
 
 1. Select **Sign in** and choose **I'm not an admin** before entering your work or school account.
 

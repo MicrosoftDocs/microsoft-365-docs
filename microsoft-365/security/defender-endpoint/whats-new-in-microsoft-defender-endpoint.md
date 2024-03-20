@@ -6,7 +6,7 @@ ms.service: defender-endpoint
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
-ms.date: 01/24/2024
+ms.date: 03/11/2024
 manager: deniseb
 audience: ITPro
 ms.collection: 
@@ -48,6 +48,20 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 - [What's new in Defender for Endpoint on Linux](linux-whatsnew.md)
 - [What's new in Defender for Endpoint on Android](android-whatsnew.md)
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
+
+## February 2024
+
+**Attack Surface Reduction (ASR) Rules**
+
+Two new ASR rules are now in public preview: 
+- [Block rebooting machine in Safe Mode (preview)](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-rebooting-machine-in-safe-mode-preview): This rule prevents the execution of commands to restart machines in Safe Mode.
+- [Block use of copied or impersonated system tools (preview)](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#block-use-of-copied-or-impersonated-system-tools-preview): This rule blocks the use of executable files that are identified as copies of Windows system tools. These files are either duplicates or impostors of the original system tools.
+
+**Microsoft Defender for Endpoint on macOS** features are in public preview:
+
+- **Built-in Scheduled Scan for macOS** (preview): Scheduled Scan built-in for Microsoft Defender for Endpoint on macOS is now available in public preview. To learn more, see [How to schedule scans with Microsoft Defender for Endpoint on macOS](mac-schedule-scan.md).
+
+- **Troubleshooting mode for macOS** (preview): Troubleshooting mode for macOS is now available in public preview. Troubleshooting mode helps you identify instances where antivirus might be causing issues with your applications or system resources. To learn more, see [Troubleshooting mode in Microsoft Defender for Endpoint on macOS](mac-troubleshoot-mode.md).
 
 ## January 2024
 

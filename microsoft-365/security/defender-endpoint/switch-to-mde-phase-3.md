@@ -3,10 +3,10 @@ title: Migrate to Microsoft Defender for Endpoint - Onboard
 description: Move to Microsoft Defender for Endpoint. Onboard devices and then uninstall your non-Microsoft solution.
 ms.service: defender-endpoint
 ms.subservice: onboard
-ms.author: deniseb
-author: denisebmsft
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
   - m365-security
@@ -29,7 +29,7 @@ search.appverid: met150
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-| [![Phase 1: Prepare3.](images/phase-diagrams/prepare.png#lightbox)](switch-to-mde-phase-1.md)<br/>[Phase 1: Prepare](switch-to-mde-phase-1.md) | [![Phase 2: Set up](images/phase-diagrams/setup.png#lightbox)](switch-to-mde-phase-2.md)<br/>[Phase 2: Set up](switch-to-mde-phase-2.md) | ![Phase 3: Onboard](images/phase-diagrams/onboard.png#lightbox)<br/>Phase 3: Onboard |
+| [![Phase 1: Prepare3.](media/phase-diagrams/prepare.png#lightbox)](switch-to-mde-phase-1.md)<br/>[Phase 1: Prepare](switch-to-mde-phase-1.md) | [![Phase 2: Set up](media/phase-diagrams/setup.png#lightbox)](switch-to-mde-phase-2.md)<br/>[Phase 2: Set up](switch-to-mde-phase-2.md) | ![Phase 3: Onboard](media/phase-diagrams/onboard.png#lightbox)<br/>Phase 3: Onboard |
 |--|--|--|
 || |*You're here!* |
 

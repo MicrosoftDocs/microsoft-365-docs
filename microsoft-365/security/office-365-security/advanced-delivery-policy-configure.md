@@ -4,10 +4,9 @@ f1.keywords:
   - NOCSH
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.topic: how-to
-
 ms.localizationpriority: medium
 search.appverid:
   - MET150
@@ -48,7 +47,7 @@ Use the _advanced delivery policy_ in EOP to prevent inbound messages _in these 
 
 Messages that are identified by the advanced delivery policy aren't security threats, so the messages are marked with system overrides. Admin experiences show these messages as **Phishing simulation** or **SecOps mailbox** system overrides. Admins can use these values to filter and analyze messages in the following experiences:
 
-- [Threat Explorer/Real-time detections in Defender for Office 365 plan 2](threat-explorer-about.md): Admin can filter on **System override source** and select either **Phishing simulation** or **SecOps Mailbox**.
+- [Threat Explorer/Real-time detections in Defender for Office 365 plan 2](threat-explorer-real-time-detections-about.md): Admin can filter on **System override source** and select either **Phishing simulation** or **SecOps Mailbox**.
 - The [Email entity Page in Threat Explorer/Real-time detections](mdo-email-entity-page.md): Admin can view a message that was allowed by organization policy by either **SecOps mailbox** or **Phishing simulation** under **Tenant override** in the **Override(s)** section.
 - The [Threat protection status report](reports-email-security.md#threat-protection-status-report): Admin can filter by **view data by System override** in the drop down menu and select to see messages allowed due to a phishing simulation system override. To see messages allowed by the SecOps mailbox override, you can select **chart breakdown by delivery location** in the **chart breakdown by reason** dropdown list.
 - [Advanced hunting in Microsoft Defender for Endpoint](../defender-endpoint/advanced-hunting-overview.md): Phishing simulation and SecOps mailbox system overrides are options within OrgLevelPolicy in EmailEvents.
@@ -61,12 +60,12 @@ Messages that are identified by the advanced delivery policy aren't security thr
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
-  - [Microsoft Defender XDR Unified role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac) (Affects the Defender portal only, not PowerShell): **Authorization and settings/Security settings/Core Security settings (manage)** or **Authorization and settings/Security settings/Core Security settings (read)**.
+  - [Microsoft Defender XDR Unified role based access control (RBAC)](../defender/manage-rbac.md) (Affects the Defender portal only, not PowerShell): **Authorization and settings/Security settings/Core Security settings (manage)** or **Authorization and settings/Security settings/Core Security settings (read)**.
   - [Email & collaboration permissions in the Microsoft Defender portal](mdo-portal-permissions.md) and [Exchange Online permissions](/exchange/permissions-exo/permissions-exo):
     - _Create, modify, or remove configured settings in the advanced delivery policy_: Membership in the **Security Administrator** role groups in Email & collaboration RBAC <u>and</u> membership in the **Organization Management** role group in Exchange Online RBAC.
     - _Read-only access to the advanced delivery policy_: Membership in the **Global Reader** or **Security Reader** role groups in Email & collaboration RBAC.
       - **View-Only Organization Management** in Exchange Online RBAC.
-  - [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
+  - [Microsoft Entra permissions](/entra/identity/role-based-access-control/manage-roles-portal): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 ## Use the Microsoft Defender portal to configure SecOps mailboxes in the advanced delivery policy
 
@@ -118,7 +117,7 @@ Back on the **SecOps mailbox** tab, the SecOps mailbox entries that you configur
 
 To configure a third-party phishing simulation, you need to provide the following information:
 
-- At least one **Domain**.
+- At least one **Domain**: The domain from the MAIL FROM address (also known as the `5321.MailFrom` address, P1 sender, or envelope sender) that's used in the SMTP transmission of the message **or** a DKIM domain as specified by the phishing simulation vendor.
 - At least one **Sending IP**.
 - For **non-email** phishing simulations (for example, Microsoft Teams messages, Word documents, or Excel spreadsheets), you can optionally identify the **Simulation URLs to allow** that shouldn't be treated as real threats at time of click: the URLs aren't blocked or detonated, and no URL click alerts or resulting incidents are generated. The URLs are wrapped at time of click, but they aren't blocked.
 
@@ -133,7 +132,7 @@ If your MX record doesn't point to Microsoft 365, the IP address in the `Authent
 >
 > - Create a dedicated [send connector](/exchange/mail-flow/mail-routing/connector-selection) that doesn't authenticate the phishing simulation messages as internal.
 > - Configure the phishing simulation to bypass the Exchange Server infrastructure and route mail directly to your Microsoft 365 MX record (for example, contoso-com.mail.protection.outlook.com).
-> - Although you can set intra-organization message scanning to None in [anti-spam policies](/microsoft-365/security/office-365-security/anti-spam-policies-configure#use-the-microsoft-defender-portal-to-create-anti-spam-policies) we don't recommend this option because it affects other email messages.
+> - Although you can set intra-organization message scanning to None in [anti-spam policies](anti-spam-policies-configure.md#use-the-microsoft-defender-portal-to-create-anti-spam-policies) we don't recommend this option because it affects other email messages.
 >
 > If you're using the [Built-in protection preset security policy](preset-security-policies.md#profiles-in-preset-security-policies) or your custom Safe Links policies have the setting **Do not rewrite URLs, do checks via SafeLinks API only** enabled, time of click protection doesn't treat phishing simulation links in email as threats in Outlook on the web, Outlook for iOS and Android, Outlook for Windows v16.0.15317.10000 or later, and Outlook for Mac v16.74.23061100 or later. If you're using older versions of Outlook, consider disabling the **Do not rewrite URLs, do checks via SafeLinks API only** setting in custom Safe Links policies.
 >
@@ -151,21 +150,45 @@ If your MX record doesn't point to Microsoft 365, the IP address in the `Authent
 
 3. In the **Add third party phishing simulations** flyout that opens, configure the following settings:
 
-   - **Domain**: Expand this setting and enter at least one email address domain by clicking in the box, entering a value (for example, contoso.com), and then pressing the ENTER key or selecting the value that's displayed below the box. Repeat this step as many times as necessary. You can add up to 50 entries.
-
-     > [!NOTE]
-     > Use the domain in the `5321.MailFrom` address (also known as the **MAIL FROM** address, P1 sender, or envelope sender) that's used in the SMTP transmission of the message **or** a DKIM domain as specified by the phishing simulation vendor.
+   - **Domain**: Expand this setting and enter at least one email address domain by clicking in the box, entering a value (for example, contoso.com), and then pressing the ENTER key or selecting the value that's displayed below the box. Repeat this step as many times as necessary. You can add up to 50 entries. Use one of the following values:
+     - The domain in the `5321.MailFrom` address (also known as the **MAIL FROM** address, P1 sender, or envelope sender) that's used in the SMTP transmission of the message.
+     - The DKIM domain as specified by the phishing simulation vendor.
 
    - **Sending IP**: Expand this setting and enter at least one valid IPv4 address by clicking in the box, entering a value, and then pressing the ENTER key or selecting the value that's displayed below the box. Repeat this step as many times as necessary. You can add up to 10 entries. Valid values are:
      - Single IP: For example, 192.168.1.1.
      - IP range: For example, 192.168.0.1-192.168.0.254.
      - CIDR IP: For example, 192.168.0.1/25.
 
-   - **Simulation URLs to allow**: This setting isn't required for links in email phishing simulations. Use this setting to optionally identify links in **non-email** phishing simulations (links in Teams messages or in Office documents) that shouldn't be treated as real threats at time of click.
+  - **Simulation URLs to allow**: This setting isn't required for links in email phishing simulations. Use this setting to optionally identify links in **non-email** phishing simulations (links in Teams messages or in Office documents) that shouldn't be treated as real threats at time of click.
 
      Add URL entries by expanding this setting, clicking in the box, entering a value, and then pressing the ENTER key or selecting the value that's displayed below the box. You can add up to 30 entries. For the URL syntax, see [URL syntax for the Tenant Allow/Block List](tenant-allow-block-list-urls-configure.md#url-syntax-for-the-tenant-allowblock-list).
 
    To remove an existing domain, IP, or URL value, select remove :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: next to the value.
+
+   Consider the following example:
+
+   ```text
+   Authentication-Results: spf=pass (sender IP is 172.17.17.7)
+   smtp.mailfrom=contoso.com; dkim=pass (signature was verified)
+   header.d=contoso-simulation.com; dmarc=pass action=none header.from=contoso-simulation.com;
+
+   DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=contoso-simulation.com;
+   s=selector1;
+   h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+   bh=UErATeHehIIPIXPeUAfZWiKo0w2cSsOhb9XM9ulqTX0=;
+   ```
+
+   - The connecting IP address is **172.17.17.7**.
+   - The domain in the MAIL FROM address (`smtp.mailfrom`) is **contoso.com**.
+   - The DKIM domain (`header.d`) is **contoso-simulation.com**.
+
+   From the example, you can use one of the following combinations to configure a third-party phishing simulation:
+
+   **Domain**: contoso.com<br/>
+   **Sending IP**: 172.17.17.7
+
+   **Domain**: contoso-simulation.com<br/>
+   **Sending IP**: 172.17.17.7
 
 4. When you're finished in the **Add third party phishing simulations** flyout, select **Add**.
 
