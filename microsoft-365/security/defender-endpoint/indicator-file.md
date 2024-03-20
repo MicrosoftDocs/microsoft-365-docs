@@ -1,12 +1,12 @@
 ---
 title: Create indicators for files
-ms.reviewer:
+ms.reviewer: yongrhee
 description: Create indicators for a file hash that define the detection, prevention, and exclusion of entities.
 ms.service: defender-endpoint
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
-ms.date: 08/10/2022
+ms.date: 03/20/2024
 manager: deniseb
 audience: ITPro
 ms.collection: 
@@ -44,17 +44,17 @@ There are three ways you can create indicators for files:
 
 Understand the following prerequisites before you create indicators for files:
 
-- This feature is available if your organization uses **Microsoft Defender Antivirus** (in active mode) 
+- This feature is available if your organization uses [Microsoft Defender Antivirus](microsoft-defender-antivirus-windows.md) (in active mode) 
 
 - [Behavior Monitoring is enabled](/microsoft-365/security/defender-endpoint/behavior-monitor)
 
-- **Cloud-based protection is enabled**. For more information, see [Manage cloud-based protection](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
+- [Cloud-based protection is turned on](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
 
 - [Cloud Protection network connectivity is functional](/microsoft-365/security/defender-endpoint/configure-network-connections-microsoft-defender-antivirus)
 
-- The Antimalware client version must be 4.18.1901.x or later. See [Monthly platform and engine versions](microsoft-defender-antivirus-updates.md#monthly-platform-and-engine-versions)
+- The Antimalware client version must be `4.18.1901.x` or later. See [Monthly platform and engine versions](microsoft-defender-antivirus-updates.md#monthly-platform-and-engine-versions)
 
-- Supported on devices with Windows 10, version 1703 or later, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2, and Windows Server 2022.
+- This feature is supported on devices running Windows 10, version 1703 or later, Windows 11, Windows Server 2012 R2, Windows Server 2016 or later, Windows Server 2019, or Windows Server 2022.
 
 - Computer Configuration\Administrative Templates\Windows Components\Microsoft Defender Antivirus\MpEngine\
 
