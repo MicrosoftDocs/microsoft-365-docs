@@ -37,7 +37,7 @@ This article describes how to deploy Microsoft Defender for Endpoint on Linux ma
 
 - [Prerequisites and system requirements](#prerequisites-and-system-requirements)
 - [Configure the Linux software repository](#configure-the-linux-software-repository)
-  - [RHEL and variants (CentOS, Fedora, Oracle Linux, Amazon Linux 2, Rocky and Alma)](#rhel-and-variants-centos-fedora-oracle-linux-amazon-linux-2-rocky-and-alma-1)
+  - [RHEL and variants (CentOS, Fedora, Oracle Linux, Amazon Linux 2, Rocky, and Alma)](#rhel-and-variants-centos-fedora-oracle-linux-amazon-linux-2-rocky-and-alma-1)
   - [SLES and variants](#sles-and-variants-1)
   - [Ubuntu and Debian systems](#ubuntu-and-debian-systems-1)
   - [Mariner](#mariner)
@@ -222,7 +222,7 @@ Read more [here](https://github.com/microsoft/mdatp-xplat/tree/master/linux/inst
   sudo apt-get install gpg
   ```
 
-  If `gpg` is not available, then install `gnupg`.
+  If `gpg` isn't available, then install `gnupg`.
 
   ```bash
   sudo apt-get install gnupg
@@ -279,7 +279,7 @@ curl -sSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | su
 
 ## Application installation
 
-### RHEL and variants (CentOS, Fedora, Oracle Linux, Amazon Linux 2, Rocky and Alma)
+### RHEL and variants (CentOS, Fedora, Oracle Linux, Amazon Linux 2, Rocky, and Alma)
 
 ```bash
 sudo yum install mdatp
@@ -423,13 +423,13 @@ Download the onboarding package from Microsoft Defender portal.
    > [!NOTE]
    > To onboard a device that was previously offboarded you must remove the mdatp_offboard.json file located at /etc/opt/microsoft/mdatp.
 
-   If you're running RHEL 8.x or Ubuntu 20.04 or higher, you'll need to use `python3`.
+   If you're running RHEL 8.x or Ubuntu 20.04 or higher, you need to use `python3`.
 
    ```bash
    sudo python3 MicrosoftDefenderATPOnboardingLinuxServer.py
    ```
 
-   For the rest of distros and versions, you'll need to use `python`.
+   For the rest of distros and versions, you need to use `python`.
 
    ```bash
    sudo python MicrosoftDefenderATPOnboardingLinuxServer.py
@@ -476,7 +476,7 @@ Download the onboarding package from Microsoft Defender portal.
      curl -o /tmp/eicar.com.txt https://secure.eicar.org/eicar.com.txt
      ```
 
-   - The file should have been quarantined by Defender for Endpoint on Linux. Use the following command to list all the detected threats:
+   - The file should be quarantined by Defender for Endpoint on Linux. Use the following command to list all the detected threats:
 
      ```bash
      mdatp threat list
@@ -496,16 +496,16 @@ Download the onboarding package from Microsoft Defender portal.
 
 The following external package dependencies exist for the mdatp package:
 
-- The mdatp RPM package requires "glibc >= 2.17", "audit", "policycoreutils", "semanage" "selinux-policy-targeted", "mde-netfilter"
+- The mdatp RPM package requires "glibc >= 2.17", "audit", "policycoreutils", "emanate" "selinux-policy-targeted", "mde-netfilter"
 - For RHEL6 the mdatp RPM package requires "audit", "policycoreutils", "libselinux", "mde-netfilter"
 - For DEBIAN the mdatp package requires "libc6 >= 2.23", "uuid-runtime", "auditd", "mde-netfilter"
 - For Mariner the mdatp package requires "attr", "audit", "diffutils", "libacl", "libattr", "libselinux-utils", "selinux-policy", "policycoreutils", "mde-netfilter"
 
 The mde-netfilter package also has the following package dependencies:
 
-- For DEBIAN the mde-netfilter package requires "libnetfilter-queue1", "libglib2.0-0"
-- For RPM the mde-netfilter package requires "libmnl", "libnfnetlink", "libnetfilter_queue", "glib2"
-- For Mariner the mde-netfilter package requires "libnfnetlink", "libnetfilter_queue"
+- For DEBIAN, the mde-netfilter package requires "libnetfilter-queue1", "libglib2.0-0"
+- For RPM, the mde-netfilter package requires "libmnl", "libnfnetlink", "libnetfilter_queue", "glib2"
+- For Mariner, the mde-netfilter package requires "libnfnetlink", "libnetfilter_queue"
 
 If the Microsoft Defender for Endpoint installation fails due to missing dependencies errors, you can manually download the prerequisite dependencies.
 

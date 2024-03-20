@@ -90,7 +90,11 @@ You can also update the mdatp_managed.json file:
 Refer to the link for detailed sample json file - [Set preferences for Microsoft Defender for Endpoint on Linux.](linux-preferences.md)
 > [!IMPORTANT]
 > If you disable eBPF, the supplementary event provider switches back to auditd.
-> In the event eBPF doesn't become enabled or is not supported on any specific kernel, it will automatically switch back to auditd and retain all auditd custom rules. You can also check the status of eBPF (enabled/disabled) on your linux endpoints using the advanced hunting query on the Security Portal. Steps are as follows-
+> In the event eBPF doesn't become enabled or is not supported on any specific kernel, it will automatically switch back to auditd and retain all auditd custom rules. 
+
+## Run an Advanced hunting query to check the status of eBPF on your endpoints
+
+You can also check the status of eBPF (enabled/disabled) on your linux endpoints using advanced hunting in the Microsoft Defender Portal. Steps are as follows:
 
 1. Go to the [Microsoft Defender portal](https://security.microsoft.com) and sign in.
 
