@@ -1,5 +1,7 @@
 ---
 ms.date: 04/07/2022
+ms.service: microsoft-365-frontline
+ms.collection: m365-frontline
 ---
 > [!NOTE]
 > Microsoft Teams is evolving on a regular basis—new features and functionality are added frequently. Please monitor the following resources to stay up-to-date:

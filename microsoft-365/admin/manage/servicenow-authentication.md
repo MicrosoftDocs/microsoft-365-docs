@@ -28,9 +28,11 @@ description: "Scoped Certified application installation and configuration guide 
 
 These prerequisite steps are required to set up Microsoft 365 support integration.
 
-### Azure Active Directory administrator
+<a name='azure-active-directory-administrator'></a>
 
-1. \[AAD Admin\] Create Azure AD Application for Outbound under your Microsoft 365 tenant.
+### Microsoft Entra administrator
+
+1. \[Microsoft Entra Admin\] Create Microsoft Entra Application for Outbound under your Microsoft 365 tenant.
 
     1. Log on to the Azure Portal with your Microsoft 365 tenant credentials and go to the [App registrations page](https://portal.azure.com/?Microsoft_AAD_RegisteredApps=true#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) to create a new application.
 
@@ -118,11 +120,11 @@ To open the Microsoft 365 support integration setup wizard, type **Microsoft 365
 
 1. Configure authentication settings.
 
-    1. Register the Azure Active Directory (AAD) app.
+    1. Register the Microsoft Entra app.
 
-    1. After completing the instructions in the prerequisites section, select **Done**. Otherwise, follow the instructions in the wizard to create the necessary application registration in AAD.
+    1. After completing the instructions in the prerequisites section, select **Done**. Otherwise, follow the instructions in the wizard to create the necessary application registration in Microsoft Entra ID.
 
-        :::image type="content" source="../../media/ServiceNow-guide/servicenow-updates-configureauthsettings.png" lightbox="../../media/ServiceNow-guide/servicenow-updates-configureauthsettings.png" alt-text="Register the AAD app.":::
+        :::image type="content" source="../../media/ServiceNow-guide/servicenow-updates-configureauthsettings.png" lightbox="../../media/ServiceNow-guide/servicenow-updates-configureauthsettings.png" alt-text="Register the Microsoft Entra app.":::
 
     1. Register the ServiceNow OAuth app.
 
@@ -177,14 +179,16 @@ The Microsoft 365 support integration app executes tests to make sure the integr
 
 Microsoft 365 support integration is enabled for the user with one of these roles:
 
-- **x_mioms_m365_assis.insights_user**—This role is required to view the **Recommended Solutions & Articles** and **Microsoft Service Health** features in your ServiceNow instance.
+- **x_mioms_m365_assis.insights_user**—This role is required to view the **Recommended Solutions & Articles** and **Microsoft Service Health** features in the ServiceNow incident view.
 
-- **x_mioms_m365_assis.administrator**—This role is required to escalate your ServiceNow incidents to Microsoft support using your linked Microsoft 365 Admin account. Continue to the following section to link your admin account in the app's settings.
+- **x_mioms_m365_assis.administrator**—This role is required to escalate ServiceNow incidents to Microsoft support using a linked Microsoft 365 admin account. Follow the next section to link your admin account in the app's settings and finalize the steps to create Microsoft support cases.
+
+In order for every member of your organization to be able to escalate ServiceNow incidents as support cases to Microsoft, each member must have the x_mioms_m365_assis.administrator role applied. The x_mioms_m365_assis.insights_user role is required to gain access to the Recommended Solutions & Articles and Microsoft Service Health information in the ServiceNow incident view; it is not required to create Microsoft support cases.
 
 ### Link Microsoft 365 Admin account
 
 Continue with these instructions if you are looking to escalate your ServiceNow incidents to Microsoft support from your ServiceNow instance via the app.
 
-If any users are provisioned with the role **x_mioms_m365_assis.administrator** and are using different Microsoft 365 accounts to manage a Microsoft 365 support case, they must set up their Microsoft 365 admin email account by navigating to **Microsoft 365 support** > **Link Account**.
+If any users are provisioned with the role **x_mioms_m365_assis.administrator** and are using different Microsoft 365 accounts to manage a Microsoft 365 support case, they must set up their Microsoft 365 admin email account by navigating to **Microsoft 365 support** > **Link Account**. Each member is not required to link their Microsoft 365 tenant email account. You are only required to enter a single valid Microsoft 365 admin email account that has ticket creation permissions. The app will only maintain a single admin account for this purpose.
 
 :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image21.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image21.png" alt-text="Graphical user interface, text, application, chat or text message Description automatically generated":::

@@ -1,15 +1,14 @@
 ---
-title: "Set up information protection capabilities in Microsoft 365 Business Premium"
+title: "Set up information protection capabilities"
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
-manager: dansimp
+ms.author: chrisda
+author: chrisda
+manager: deniseb
 audience: Admin
 ms.topic: how-to
-ms.service: microsoft-365-security
-ms.subservice: m365bp
-ms.date: 05/02/2023
+ms.service: microsoft-365-business
+ms.date: 10/27/2023
 ms.localizationpriority: medium
 ms.collection:
 - m365-security
@@ -21,16 +20,15 @@ search.appverid:
 - MET150
 description: "Set up your information protection capabilities for compliance and privacy. Use these features to prevent data loss and help keep your and your customers' sensitive information secure."
 ---
-# Set up information protection capabilities in Microsoft 365 Business Premium
+# Set up information protection capabilities
 
-Your Microsoft 365 Business Premium subscription includes information protection capabilities for compliance and privacy. These capabilities include sensitivity labels, data loss prevention (DLP), and encryption. You can use your information protection capabilities to help protect your company's data, and keep your and your customers' sensitive information more secure. 
+Your Microsoft 365 Business Premium subscription includes information protection capabilities for compliance and privacy. These capabilities include sensitivity labels, data loss prevention (DLP), and encryption. You can use your information protection capabilities to help protect your company's data, and keep your and your customers' sensitive information more secure.
 
 Use this article to get started with your information protection capabilities.
 
-
 ## Before you begin
 
-Make sure you have one of the following roles assigned in Azure Active Directory:
+Make sure you have one of the following roles assigned in Microsoft Entra ID:
 
 - Global Administrator
 - Compliance Administrator
@@ -66,8 +64,6 @@ Here's how to get started:
 For more information about compliance features in Microsoft 365 for business, see [Microsoft Purview documentation](../compliance/index.yml).
 
 ## Use sensitivity labels
-
-Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198022).
 
 Sensitivity labels are available in Microsoft 365 Apps (such as Outlook, Word, Excel, and PowerPoint). Examples of labels include:
 

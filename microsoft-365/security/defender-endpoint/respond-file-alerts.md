@@ -1,33 +1,29 @@
 ---
 title: Take response actions on a file in Microsoft Defender for Endpoint
 description: Take response actions on file-related alerts by stopping and quarantining a file or blocking a file and checking activity details.
-keywords: respond, stop and quarantine, block file, deep analysis
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.service: defender-endpoint
 ms.author: diannegali
 author: diannegali
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier2
+- mde-edr
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: edr
 search.appverid: met150
-ms.date: 05/29/2023
+ms.date: 08/07/2023
 ---
 
 # Take response actions on a file
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint Plan 1](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
@@ -40,14 +36,19 @@ Response actions are available on a file's detailed profile page. Once on this p
 
 Response actions run along the top of the file page, and include:
 
-- Stop and Quarantine File
-- Add Indicator
+- Stop and quarantine file
+- Manage indicator
 - Download file 
 - Collect file
 - Ask Defender Experts
-- Action center
+- Manual actions
+- Go hunt
+- Deep analysis
 
-You can also submit files for deep analysis, to run the file in a secure cloud sandbox. When the analysis is complete, you'll get a detailed report that provides information about the behavior of the file. You can submit files for deep analysis and read past reports by selecting the **Deep analysis** tab. It's located below the file information cards.
+> [!NOTE]
+> If you're using Defender for Endpoint Plan 1, you can take certain response actions manually. For more information, see [Manual response actions](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1#manual-response-actions).
+
+You can also submit files for deep analysis, to run the file in a secure cloud sandbox. When the analysis is complete, you'll get a detailed report that provides information about the behavior of the file. You can submit files for deep analysis and read past reports by selecting the **Deep analysis** action.
 
 Some actions require certain permissions. The following table describes what action certain permissions can take on portable executable (PE) and non-PE files:
 
@@ -90,15 +91,15 @@ This action takes effect on devices with Windows 10, version 1703 or later, and 
 
 2. Go to the top bar and select **Stop and Quarantine File**.
 
-   :::image type="content" source="images/atp-stop-quarantine-file.png" alt-text="The stop and quarantine file action" lightbox="images/atp-stop-quarantine-file.png":::
+   :::image type="content" source="media/atp-stop-quarantine-file.png" alt-text="The stop and quarantine file action" lightbox="media/atp-stop-quarantine-file.png":::
 
 3. Specify a reason, then select **Confirm**.
 
-   :::image type="content" source="images/atp-stop-quarantine.png" alt-text="The stop and quarantine file page" lightbox="images/atp-stop-quarantine.png":::
+   :::image type="content" source="media/atp-stop-quarantine.png" alt-text="The stop and quarantine file page" lightbox="media/atp-stop-quarantine.png":::
 
    The Action center shows the submission information:
 
-   :::image type="content" source="images/atp-stopnquarantine-file.png" alt-text="The stop and quarantine file action center" lightbox="images/atp-stopnquarantine-file.png":::
+   :::image type="content" source="media/atp-stopnquarantine-file.png" alt-text="The stop and quarantine file action center" lightbox="media/atp-stopnquarantine-file.png":::
 
    - **Submission time** - Shows when the action was submitted.
    - **Success** - Shows the number of devices where the file has been stopped and quarantined.
@@ -111,7 +112,7 @@ This action takes effect on devices with Windows 10, version 1703 or later, and 
 
 When the file is being removed from a device, the following notification is shown:
 
-:::image type="content" source="images/atp-notification-file.png" alt-text="The notification a on device user" lightbox="images/atp-notification-file.png":::
+:::image type="content" source="media/atp-notification-file.png" alt-text="The notification a on device user" lightbox="media/atp-notification-file.png":::
 
 In the device timeline, a new event is added for each device where a file was stopped and quarantined.
 
@@ -153,17 +154,23 @@ The **Download file** button can have the following states:
 
 - **Disabled** - If the button is grayed out or disabled during an active collection attempt, you may not have appropriate RBAC permissions to collect files.
 
-  The following permissions are required: 
+  The following permissions are required:
+
+  For Microsoft Defender XDR Unified role-based access control (RBAC):
+
+     - Add file collection permission in Microsoft Defender XDR Unified (RBAC)
+ 
+  For Microsoft Defender for Endpoint role-based access control (RBAC):
 
     For Portable Executable file (.exe, .sys, .dll, and others)
     - Global admin or Advanced live response or Alerts 
 
     Non-Portable Executable file (.txt, .docx, and others) 
     - Global admin or Advanced live response
-    - Tenants with [role-based access (RBAC) permissions](/microsoft-365/security/defender/manage-rbac.md) enabled
+    - Tenants with [role-based access (RBAC) permissions](../defender/manage-rbac.md) enabled
 
 
-:::image type="content" source="images/atp-download-file-action.png" alt-text="The download file action" lightbox="images/atp-download-file-action.png":::
+:::image type="content" source="media/atp-download-file-action.png" alt-text="The download file action" lightbox="media/atp-download-file-action.png":::
 
 ### Download quarantined files
 
@@ -248,12 +255,6 @@ To stop blocking a file, remove the indicator. You can do so via the **Edit Indi
 
 You can also edit indicators from  the **Settings** page, under **Rules** \> **Indicators**. Indicators are listed in this area by their file's hash.
 
-## Consult a threat expert
-
-Select Ask Defender Experts to get more insights from Microsoft experts on a potentially compromised device, or already compromised devices. Microsoft Defender Experts are engaged directly from within the Microsoft 365 Defender portal for timely and accurate response. Experts provide insights on a potentially compromised device and help you understand complex threats and targeted attack notifications. They can also provide information about the alerts or a threat intelligence context that you see on your portal dashboard.
-
-See [Ask Defender Experts](experts-on-demand.md) for details.
-
 ## Check activity details in Action center
 
 The **Action center** provides information on actions that were taken on a device or file. You can view the following details:
@@ -265,7 +266,7 @@ The **Action center** provides information on actions that were taken on a devic
 
 All other related details are also shown, such as submission date/time, submitting user, and if the action succeeded or failed.
 
-:::image type="content" source="images/action-center-details.png" alt-text="The action center with information" lightbox="images/action-center-details.png":::
+:::image type="content" source="media/action-center-details.png" alt-text="The action center with information" lightbox="media/action-center-details.png":::
 
 ## Deep analysis
 
@@ -280,8 +281,11 @@ The deep analysis summary includes a list of observed *behaviors*, some of which
 
 Results of deep analysis are matched against threat intelligence and any matches will generate appropriate alerts.
 
-Use the deep analysis feature to investigate the details of any file, usually during an investigation of an alert or for any other reason where you suspect malicious behavior. This feature is available within the **Deep analysis** tab, on the file's profile page.
+Use the deep analysis feature to investigate the details of any file, usually during an investigation of an alert or for any other reason where you suspect malicious behavior. This feature is available at the top of the file's page. Select the three dots to access the **Deep analysis** action.
 
+:::image type="content" source="../../media/defender-endpoint/deep-analysis.png" alt-text="Screenshot of the Deep analysis action" lightbox="../../media/defender-endpoint/deep-analysis.png":::
+
+Learn about deep analysis in the following video:
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4aAYy?rel=0]
 
 **Submit for deep analysis** is enabled when the file is available in the Defender for Endpoint backend sample collection, or if it was observed on a Windows 10 device that supports submitting to deep analysis.
@@ -289,10 +293,10 @@ Use the deep analysis feature to investigate the details of any file, usually du
 > [!NOTE]
 > Only files from Windows 10, Windows 11, and Windows Server 2012 R2+ can be automatically collected.
 
-You can also submit a sample through the [Microsoft 365 Defender Portal](https://www.microsoft.com/security/portal/submission/submit.aspx) if the file wasn't observed on a Windows 10 device (or Windows 11 or Windows Server 2012 R2+), and wait for **Submit for deep analysis** button to become available.
+You can also submit a sample through the [Microsoft Defender portal](https://www.microsoft.com/security/portal/submission/submit.aspx) if the file wasn't observed on a Windows 10 device (or Windows 11 or Windows Server 2012 R2+), and wait for **Submit for deep analysis** button to become available.
 
 > [!NOTE]
-> Due to backend processing flows in the Microsoft 365 Defender Portal, there could be up to 10 minutes of latency between file submission and availability of the deep analysis feature in Defender for Endpoint.
+> Due to backend processing flows in the Microsoft Defender portal, there could be up to 10 minutes of latency between file submission and availability of the deep analysis feature in Defender for Endpoint.
 
 ### Submit files for deep analysis
 
@@ -328,7 +332,7 @@ The details provided can help you investigate if there are indications of a pote
 1. Select the file you submitted for deep analysis.
 2. Select the **Deep analysis** tab. If there are any previous reports, the report summary will appear in this tab.
 
-   :::image type="content" source="images/analysis-results-nothing500.png" alt-text="The deep analysis report showing detailed information across a number of categories" lightbox="images/analysis-results-nothing500.png":::
+   :::image type="content" source="media/analysis-results-nothing500.png" alt-text="The deep analysis report showing detailed information across a number of categories" lightbox="media/analysis-results-nothing500.png":::
 
 #### Troubleshoot deep analysis
 
@@ -360,3 +364,4 @@ If you come across a problem when trying to submit a file, try each of the follo
 - [Take response actions on a device](respond-machine-alerts.md)
 - [Investigate files](investigate-files.md)
 - [Manual response actions in Microsoft Defender for Endpoint Plan 1](defender-endpoint-plan-1.md#manual-response-actions)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

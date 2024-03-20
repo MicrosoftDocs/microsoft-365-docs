@@ -1,10 +1,12 @@
 ---
-author: LanaChin
-ms.author: v-lanachin
-ms.date: 08/29/2022
+author: lana-chin
+ms.author: v-chinlana
+manager: jtremper
+ms.date: 10/17/2023
 ms.topic: include
 audience: admin
 ms.service: microsoft-365-frontline
+ms.collection: m365-frontline 
 ---
 Use this script to change connection settings. Settings that you can change include your WFM service account and password, Microsoft 365 system account, team mappings, and sync settings.
 

@@ -2,7 +2,7 @@
 title: Payload automations for Attack simulation training
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.topic: how-to
 ms.service: microsoft-365-security
@@ -13,21 +13,20 @@ ms.collection:
 description: Admins can learn how to use payload automations (payload harvesting) to collect and launch automated simulations for Attack simulation training in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 search.appverid: met150
-ms.date: 3/29/2023
+ms.date: 6/21/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison" target="_blank">Microsoft Defender for Office 365 plan 2</a>
 ---
 
 # Payload automations for Attack simulation training
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-**Applies to**
- [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
-
-In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2, payload automations (also known as _payload harvesting_) collect information from real-world phishing attacks that were reported by users in your organization. Although the numbers of these messages are likely low in your organization, you can specify the conditions to look for in phishing attacks (for example, recipients, social engineering technique, sender information, etc.). Attack simulation training will then mimic the messages and payloads used in the attack to automatically launch harmless simulations to targeted users.
+In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2, payload automations (also known as _payload harvesting_) collect information from real-world phishing attacks that were reported by users in your organization. Although the numbers of these messages are likely low in your organization, you can specify the conditions to look for in phishing attacks (for example, recipients, social engineering technique, sender information, etc.). Attack simulation training then mimics the messages and payloads used in the attack to automatically launch harmless simulations to targeted users.
 
 For getting started information about Attack simulation training, see [Get started using Attack simulation training](attack-simulation-training-get-started.md).
 
-To see any existing payload automations that you created, open the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Automations** tab \> and then select **Payload automations**. To go directly to the **Automations** tab where you can select **Payload automations**, use <https://security.microsoft.com/attacksimulator?viewid=automations>.
+To see any existing payload automations that you created, open the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Automations** tab \> and then select **Payload automations**. To go directly to the **Automations** tab where you can select **Payload automations**, use <https://security.microsoft.com/attacksimulator?viewid=automations>.
 
 The following information is shown for each payload automation<sup>\*</sup>:
 
@@ -53,11 +52,11 @@ When you select a payload automation from the list, a details flyout appears wit
 
 To create a payload automation, do the following steps:
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com/>, go to **Email & collaboration** \> **Attack simulation training** \> **Automations** tab \> **Payload automations**. To go directly to the **Automations** tab where you can select **Payload automations**, use <https://security.microsoft.com/attacksimulator?viewid=automations>.
+1. In the Microsoft Defender portal at <https://security.microsoft.com/>, go to **Email & collaboration** \> **Attack simulation training** \> **Automations** tab \> **Payload automations**. To go directly to the **Automations** tab where you can select **Payload automations**, use <https://security.microsoft.com/attacksimulator?viewid=automations>.
 
 2. On the **Payload automations** page, select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Create automation** to start the new payload automation wizard.
 
-   :::image type="content" source="../../media/attack-sim-training-sim-automations-create.png" alt-text="The Create simulation button on the Payload automations tab in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-sim-automations-create.png":::
+   :::image type="content" source="../../media/attack-sim-training-sim-automations-create.png" alt-text="The Create simulation button on the Payload automations tab in Attack simulation training in the Microsoft Defender portal" lightbox="../../media/attack-sim-training-sim-automations-create.png":::
 
    > [!NOTE]
    > At any point after you name the payload automation during the new payload automation wizard, you can select **Save and close** to save your progress and continue configuring the payload automation later. The incomplete payload automation has the **Status** value **Draft** in **Payload automations** on the **Automations** tab. You can pick up where you left off by selecting the payload automation and clicking :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png" border="false"::: **Edit automation**.
@@ -71,7 +70,7 @@ To create a payload automation, do the following steps:
 
    When you're finished on the **Automation name** page, select **Next**.
 
-4. On the **Run conditions** page, select the conditions of the real phishing attack that determines when the automation will run.
+4. On the **Run conditions** page, select the conditions of the real phishing attack that determines when the automation runs.
 
    Select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Add condition** and then select from one of the following conditions:
 

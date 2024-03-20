@@ -1,11 +1,11 @@
 ---
-title: Advanced hunting query best practices in Microsoft 365 Defender
+title: Advanced hunting query best practices in Microsoft Defender XDR
 description: Learn how to construct fast, efficient, and error-free threat hunting queries with advanced hunting
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema, kusto, avoid timeout, command lines, process id, optimize, best practice, parse, join, summarize
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft Defender XDR, microsoft 365, m365, search, query, telemetry, schema, kusto, avoid timeout, command lines, process id, optimize, best practice, parse, join, summarize
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
+ms.subservice: adv-hunting
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -25,11 +25,11 @@ ms.date: 02/16/2021
 
 # Advanced hunting query best practices
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 Apply these recommendations to get results faster and avoid timeouts while running complex queries. For more guidance on improving query performance, read [Kusto query best practices](/azure/kusto/query/best-practices).
 
@@ -38,7 +38,7 @@ Depending on its size, each tenant has access to a set amount of CPU resources a
 
 After running your query, you can see the execution time and its resource usage (Low, Medium, High). High indicates that the query took more resources to run and could be improved to return results more efficiently.
 
-:::image type="content" source="../../media/resource-usage.png" alt-text="The query details under **Results** tab in the Microsoft 365 Defender portal" lightbox="../../media/resource-usage.png":::
+:::image type="content" source="../../media/resource-usage.png" alt-text="The query details under **Results** tab in the Microsoft Defender portal" lightbox="../../media/resource-usage.png":::
 
 Customers who run multiple queries regularly should track consumption and apply the optimization guidance in this article to minimize disruption resulting from exceeding quotas or usage parameters.
 
@@ -272,7 +272,7 @@ There are various functions you can use to efficiently handle strings that need 
 To learn about all supported parsing functions, [read about Kusto string functions](/azure/data-explorer/kusto/query/scalarfunctions#string-functions).
 
 > [!NOTE]
-> Some tables in this article might not be available in Microsoft Defender for Endpoint. [Turn on Microsoft 365 Defender](m365d-enable.md) to hunt for threats using more data sources. You can move your advanced hunting workflows from Microsoft Defender for Endpoint to Microsoft 365 Defender by following the steps in [Migrate advanced hunting queries from Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mde.md).
+> Some tables in this article might not be available in Microsoft Defender for Endpoint. [Turn on Microsoft Defender XDR](m365d-enable.md) to hunt for threats using more data sources. You can move your advanced hunting workflows from Microsoft Defender for Endpoint to Microsoft Defender XDR by following the steps in [Migrate advanced hunting queries from Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mde.md).
 
 ## Related topics
 
@@ -281,3 +281,4 @@ To learn about all supported parsing functions, [read about Kusto string functio
 - [Handle advanced hunting errors](advanced-hunting-errors.md)
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Learn the query language](advanced-hunting-query-language.md)
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

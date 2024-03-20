@@ -2,10 +2,10 @@
 title: Share an enterprise model in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 audience: admin
 ms.reviewer: ssquires
-ms.date: 10/12/2022
+ms.date: 01/16/2024
 ms.topic: conceptual
 ms.service: microsoft-syntex
 search.appverid: 
@@ -48,6 +48,4 @@ To make your trained model available for others to use:
 
 4. Select the sites where you want the model to be available for other users to apply, and then select **Save**.
 
-## See also
 
-[Discover other trained models](discover-other-trained-models.md)

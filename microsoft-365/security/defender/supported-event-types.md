@@ -1,11 +1,10 @@
 ---
-title: Microsoft 365 Defender streaming event types supported in Event Streaming API
+title: Microsoft Defender XDR streaming event types supported in Event Streaming API
 description: Learn which streaming event types (tables) are supported by the streaming API
 keywords: raw data export, Streaming API, API, Event hubs, Azure storage, storage account, Hunting, raw data sharing
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -21,12 +20,12 @@ ms.topic: conceptual
 ms.date: 09/09/2021
 ---
 
-# Supported Microsoft 365 Defender streaming event types in event streaming API
+# Supported Microsoft Defender XDR streaming event types in event streaming API
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!NOTE]
 > **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview).
@@ -69,3 +68,4 @@ The following table only includes the list of the tables supported in the stream
 ## Related topics
 
 [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview)
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

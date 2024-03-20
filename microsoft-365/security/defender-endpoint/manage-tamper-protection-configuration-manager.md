@@ -1,23 +1,22 @@
 ---
 title: Manage tamper protection using tenant attach with Configuration Manager, version 2006
 ms.reviewer: joshbregman, mattcall, pahuijbr, hayhov, oogunrinde
-manager: dansimp
+manager: deniseb
 description: Turn tamper protection on or off using tenant attach with Configuration Manager.
-keywords: malware, defender, antivirus, tamper protection, Configuration Manager
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.localizationpriority: medium
-ms.date: 05/19/2023
+ms.date: 09/05/2023
 audience: ITPro
 ms.topic: conceptual
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 ms.custom: 
 - nextgen
 - admindeeplinkDEFENDER
-ms.subservice: mde
+ms.subservice: ngp
 ms.collection: 
 - m365-security
-- tier2
+- mde-ngp
 search.appverid: met150
 ---
 
@@ -29,7 +28,7 @@ search.appverid: met150
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender Antivirus](microsoft-defender-antivirus-windows.md)
 - [Microsoft Defender for Business](../defender-business/mdb-overview.md)
-- [Microsoft 365 Business Premium](../../business-premium/index.md)
+- [Microsoft 365 Business Premium](../../business-premium/m365bp-overview.md)
 
 **Platforms**
 - Windows
@@ -40,8 +39,8 @@ Using Configuration Manager with tenant attach, you can turn tamper protection o
 
 > [!IMPORTANT]
 > When tamper protection is turned on, [tamper-protected settings](prevent-changes-to-security-settings-with-tamper-protection.md#what-is-tamper-protection) cannot be changed. To avoid breaking management experiences, including Intune and Configuration Manager, keep in mind that changes to tamper-protected settings might appear to succeed but are actually blocked by tamper protection. Depending on your particular scenario, you have several options available: 
-> - If you must make changes to a device and those changes are blocked by tamper protection, we recommend using [troubleshooting mode](/microsoft-365/security/defender-endpoint/enable-troubleshooting-mode) to temporarily disable tamper protection on the device.
-> - You can use [Intune](manage-tamper-protection-intune.md) or Configuration Manager to exclude devices from tamper protection. 
+> - If you must make changes to a device and those changes are blocked by tamper protection, use [troubleshooting mode](/microsoft-365/security/defender-endpoint/enable-troubleshooting-mode) to temporarily disable tamper protection on the device.
+> - Use [Intune](manage-tamper-protection-intune.md) or Configuration Manager to exclude devices from tamper protection. 
 
 :::image type="content" source="media/tamper-protect-configmgr.png" alt-text="Screenshot showing Windows Security settings with tamper protection enabled.":::
 
@@ -60,9 +59,9 @@ Using Configuration Manager with tenant attach, you can turn tamper protection o
 
 ## See also
 
-- [Protect macOS security settings with tamper protection](tamperprotection-macos.md)
-- [Settings for the Windows Security experience profile in Microsoft Intune](/mem/intune/protect/antivirus-security-experience-windows-settings)
+- [Frequently asked questions (FAQs) on tamper protection](faqs-on-tamper-protection.yml)
+- [Defender for Endpoint on non-Windows devices](configure-endpoints-non-windows.md)
 - [Tech Community Blog: Announcing Tamper Protection for Configuration Manager Tenant Attach clients](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/announcing-tamper-protection-for-configuration-manager-tenant/ba-p/1700246#.X3QLR5Ziqq8.linkedin)
 - [Troubleshoot problems with tamper protection](troubleshoot-problems-with-tamper-protection.yml)
-- [Manage Microsoft Defender for Endpoint on devices with Microsoft Intune](/mem/intune/protect/mde-security-integration)
 
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

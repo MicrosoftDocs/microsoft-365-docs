@@ -9,6 +9,7 @@ ms.reviewer: shegu, nicholak
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
 ms.collection: 
 - Tier1
@@ -21,7 +22,7 @@ ms.custom:
 - manage_licenses
 search.appverid: MET150 
 description: "Learn how to move users between subscriptions."
-ms.date: 05/12/2022
+ms.date: 06/09/2023
 ---
 
 # Move users to a different subscription
@@ -56,7 +57,7 @@ You must be a Global, License, or User admin to assign licenses. For more inform
 
 ## Back up data before changing Microsoft 365 for business plans
 
-If you plant to move a user to another subscription that has fewer data-related services, or a user leaves the organization, you can download a copy of their data stored in Microsoft 365 before they are switched to the new subscription.
+If you plan to move a user to another subscription that has fewer data-related services, or a user leaves the organization, you can download a copy of their data stored in Microsoft 365 before they're switched to the new subscription.
 
 If you're moving a user to a subscription that has the same or more services, you don't need to back up user data.
   
@@ -66,34 +67,29 @@ If users have Outlook, they can [export or backup email, contacts, and calendar 
   
 After the switch to the new plan is finished, users can [Import email, contacts, and calendar from an Outlook .pst file](https://support.microsoft.com/office/431a8e9a-f99f-4d5f-ae48-ded54b3440ac).
   
-### Save files stored in OneDrive for Business
+### Save files stored in OneDrive
 
-Before being switched to a different subscription, users can [download files and folders from OneDrive or SharePoint](https://support.microsoft.com/office/5c7397b7-19c7-4893-84fe-d02e8fa5df05) to a different location, such as a folder on their computer's hard drive, or a file share on the organization's network.
+Before you switch user to a different subscription, they can [download files and folders from OneDrive or SharePoint](https://support.microsoft.com/office/5c7397b7-19c7-4893-84fe-d02e8fa5df05) to a different location, such as a folder on their computer's hard drive, or a file share on the organization's network.
   
-### Save Yammer information
+### Save Viva Engage information
 
-Admins can export all messages, notes, files, topics, users, and groups to a .zip file. For more information, see [Export data from Yammer Enterprise](/yammer/manage-security-and-compliance/export-yammer-enterprise-data). Developers can use the [Yammer API](https://go.microsoft.com/fwlink/p/?linkid=842495) to do this, as well.
+Admins can export all messages, notes, files, topics, users, and groups to a .zip file. For more information, see [Manage data in the Viva Engage admin center](/viva/engage/eac-as-manage-data).
   
 ### How to save SharePoint information
 
 If a user is switched from a subscription that has SharePoint Online to one that doesn't have it, the **SharePoint** tile no longer appears in their Microsoft 365 menu.
   
-However, as long as the new subscription is within the same organization as the one they are switched from, users can still access the SharePoint team site. They can view and update notebooks, documents, tasks, and calendars by using the direct URL to the team site.
+However, as long as the new subscription is within the same organization as the one they're switched from, users can still access the SharePoint team site. They can view and update notebooks, documents, tasks, and calendars by using the direct URL to the team site.
   
 > [!TIP]
 > We recommend that users go to the team site before their subscription is switched and save the URL as a favorite or bookmark in their browser.
   
-By default, the URL of the team website is in this form:
-  
-```html
-https://<orgDomain>/_layouts/15/start.aspx#/SitePages/Home.aspx
-```
-
-where  _\<orgDomain\>_ is the organization's URL.
+By default, the URL of the team website is in the form 
+`https://<orgDomain>/_layouts/15/start.aspx#/SitePages/Home.aspx`, where _\<orgDomain\>_ is the organization's URL.
   
 For example, if the domain of the organization is contoso.onmicrosoft.com, then the direct URL to the team site would be `https://contoso.onmicrosoft.com/_layouts/15/start.aspx#/SitePages/Home.aspx`.
   
-Of course, users can also download SharePoint Online documents from the SharePoint team site to their local computer or to another location at any time.
+Users can also download SharePoint Online documents from the SharePoint team site to their local computer or to another location at any time.
 
 ## Next steps
 

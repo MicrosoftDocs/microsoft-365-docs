@@ -1,8 +1,8 @@
 ---
-title: Configure alert notifications in Microsoft 365 Defender
+title: Configure alert notifications in Microsoft Defender XDR
 description: You can use Microsoft Defender for Endpoint to configure email notification settings for security alerts, based on severity and other criteria.
-keywords: email notifications, configure alert notifications, Microsoft Defender for Endpoint, Microsoft Defender for Endpoint notifications, Microsoft Defender for Endpoint alerts, windows enterprise, windows education, Microsoft 365 Defender, Defender
-ms.service: microsoft-365-security
+keywords: email notifications, configure alert notifications, Microsoft Defender for Endpoint, Microsoft Defender for Endpoint notifications, Microsoft Defender for Endpoint alerts, windows enterprise, windows education, Microsoft Defender XDR, Defender
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,22 +15,21 @@ ms.collection:
 - m365-security
 - tier2
 ms.topic: conceptual
-ms.subservice: mde
 search.appverid: met150
 ms.date: 10/11/2022
 ---
 
-# Configure alert notifications in Microsoft 365 Defender
+# Configure alert notifications in Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Business](../defender-business/mdb-overview.md)
 
-You can configure Microsoft 365 Defender to send email notifications to specified recipients for new alerts. This feature enables you to identify a group of individuals who will immediately be informed and can act on alerts based on their severity.
+You can configure Microsoft Defender XDR to send email notifications to specified recipients for new alerts. This feature enables you to identify a group of individuals who will immediately be informed and can act on alerts based on their severity.
 
 If you're using [Defender for Business](../defender-business/mdb-overview.md), you can set up email notifications for specific users (not roles or groups).
 
@@ -47,7 +46,7 @@ The email notification includes basic information about the alert and a link to 
 ## Create rules for alert notifications
 You can create rules that determine the devices and alert severities to send email notifications for and the notification recipients.
 
-1. Go to [Microsoft 365 Defender](https://go.microsoft.com/fwlink/p/?linkid=2077139) and sign in using an account with the Security administrator or Global administrator role assigned.
+1. Go to [Microsoft Defender XDR](https://go.microsoft.com/fwlink/p/?linkid=2077139) and sign in using an account with the Security administrator or Global administrator role assigned.
 
 2. In the navigation pane, select **Settings** \> **Endpoints** \> **General** \> **Email notifications**.
 
@@ -104,3 +103,4 @@ This section lists various issues that you may encounter when using email notifi
 - [Update data retention settings](../defender-endpoint/data-retention-settings.md)
 - [Configure advanced features](../defender-endpoint/advanced-features.md)
 - [Configure vulnerability email notifications](../defender-endpoint/configure-vulnerability-email-notifications.md)
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

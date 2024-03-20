@@ -2,7 +2,7 @@
 title: Landing pages in Attack simulation training
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.topic: how-to
 ms.service: microsoft-365-security
@@ -13,23 +13,22 @@ ms.collection:
 description: Admins can learn how to create and manage landing pages for simulated phishing attacks in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 search.appverid: met150
-ms.date: 4/3/2023
+ms.date: 6/22/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison" target="_blank">Microsoft Defender for Office 365 plan 2</a>
 ---
 
 # Landing pages in Attack simulation training
-
-**Applies to**
- [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
 In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2, landing pages are the web pages that users are taken to if they open the payload in the simulation.
 
 For getting started information about Attack simulation training, see [Get started using Attack simulation training](attack-simulation-training-get-started.md).
 
-To see the available landing pages, open the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Content library** tab \> and then select **Phish landing pages**. To go directly to the **Content library** tab where you can select **Landing pages**, use <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>.
+To see the available landing pages, open the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Content library** tab \> and then select **Phish landing pages**. To go directly to the **Content library** tab where you can select **Landing pages**, use <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>.
 
 **Landing pages** in the **Content library** tab has two tabs:
 
-- **Global landing pages** tab: Contains the built-in, non-modifiable landing page templates named **Microsoft Landing Page Template 1** to **Microsoft Landing Page Template 5**. These built-in landing pages are localized into 12+ languages.
+- **Global landing pages** tab: Contains the built-in, nonmodifiable landing page templates named **Microsoft Landing Page Template 1** to **Microsoft Landing Page Template 5**. These built-in landing pages are localized into 12+ languages.
 - **Tenant landing pages** tab: Contains the custom landing pages that you've created.
 
 The following information is shown for each landing page<sup>\*</sup>:
@@ -62,7 +61,7 @@ Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" bord
 
 When you select a landing page from the list by clicking anywhere in the row other than the check box next to the name, a details flyout appears with the following information:
 
-- **Preview** tab: View the landing page as users see it. Use the **Select language** drop down list to see the landing page in different languages.
+- **Preview** tab: View the landing page as users see it. Use the **Select language** dropdown list to see the landing page in different languages.
 - **Details** tab: View details about the landing page:
   - **Description**
   - **Status**: **Ready** or **Draft**.
@@ -79,7 +78,7 @@ In custom landing pages only, an **Edit landing page** link is available at the 
 
 ## Create landing pages
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Content library** tab \> and then select **Phish landing pages**. To go directly to the **Content library** tab where you can select **Phish landing pages**, use <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>.
+1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Content library** tab \> and then select **Phish landing pages**. To go directly to the **Content library** tab where you can select **Phish landing pages**, use <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>.
 
 2. On the **Tenant landing pages** tab, select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Create new** to start the new landing page wizard.
 
@@ -130,11 +129,11 @@ In custom landing pages only, an **Edit landing page** link is available at the 
 
    When you're finished on the **Add content in default language** flyout, select **Save**.
 
-   Back on the **Configure landing page** page, the landing page you created is now listed. In the **Action** colum, you can select :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png" border="false"::: **Edit** or :::image type="icon" source="../../media/m365-cc-sc-eye-icon.png" border="false"::: **Preview** to edit or view the landing page.
+   Back on the **Configure landing page** page, the landing page you created is now listed. In the **Action** column, you can select :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png" border="false"::: **Edit** or :::image type="icon" source="../../media/m365-cc-sc-eye-icon.png" border="false"::: **Preview** to edit or view the landing page.
 
    Select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Add translation** to create additional translations of the landing page in other languages.
 
-   Other than the flyout title changing to **Add translation**, the same options are available as the the **Add content in default language** flyout in the first landing page you created. Now the **Mark this as default language** check box is available to select. Only one translation of landing page can be the default language.
+   Other than the flyout title changing to **Add translation**, the same options are available as the **Add content in default language** flyout in the first landing page you created. Now the **Mark this as default language** check box is available to select. Only one translation of landing page can be the default language.
 
    When two or more translations of the landing page are listed on the **Configure landing page** page, the :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png" border="false"::: **Delete** icon is available in the **Actions** column to delete any landing page translations that aren't designated as the default language.
 
@@ -183,7 +182,7 @@ To remove an existing custom landing page from the **Tenant landing pages** tab,
 - Select the landing page from the list by clicking the check box next to the name, and then select the :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png" border="false"::: **Delete** action that appears.
 - Select **⋮** (**Actions**) next to the **Name** value of the landing page, and then select :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png" border="false"::: **Delete**.
 
-In the confirmation dialog tht opens, select **Delete**.
+In the confirmation dialog that opens, select **Delete**.
 
 ## Related links
 

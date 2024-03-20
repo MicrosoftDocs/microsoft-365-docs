@@ -69,10 +69,12 @@ See [Use mail flow rules to filter bulk email in Exchange Online | Microsoft Lea
 
 - Customers with Microsoft Defender for Office 365 Plan 1 or higher can use the [email entity page](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/introducing-the-email-entity-page-in-microsoft-defender-for/ba-p/2275420) to discover the BCL value of messages instead of interrogating headers.
 
-- Customers with Microsoft Defender for Office 365 Plan 2 can interrogate bulk values at scale using [advanced hunting](/microsoft-365/security/office-365-security/anti-spam-spam-vs-bulk-about#how-to-tune-bulk-email.md).
+- Customers with Microsoft Defender for Office 365 Plan 2 can interrogate bulk values at scale using [advanced hunting](../anti-spam-spam-vs-bulk-about.md#how-to-tune-bulk-email).
+
+[How to tune bulk email]
 
 ## More Information
 
 [Email Protection Basics in Microsoft 365: Bulk Email - Microsoft Community Hub](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/email-protection-basics-in-microsoft-365-bulk-email/ba-p/3445337)
 
-[What's the difference between junk email and bulk email? - Office 365 | Microsoft Learn](../anti-spam-spam-vs-bulk-about.md)
+[What's the difference between junk email and bulk email?](../anti-spam-spam-vs-bulk-about.md)

@@ -1,0 +1,9 @@
+{
+    "redirections": [
+        {
+            "source_path": "defender/threat-intelligence/index.md",
+            "redirect_url": "/defender/threat-intelligence/what-is-microsoft-defender-threat-intelligence-defender-ti",
+            "redirect_document_id": false
+        }
+    ]
+}

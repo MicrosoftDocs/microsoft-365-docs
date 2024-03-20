@@ -1,10 +1,9 @@
 ---
-title: Hello World for Microsoft 365 Defender REST API
-description: Learn how to create an app and use a token to access the Microsoft 365 Defender APIs
-keywords: app, token, access, aad, app, application registration, powershell, script, global administrator, permission, microsoft 365 defender
+title: Hello World for Microsoft Defender XDR REST API
+description: Learn how to create an app and use a token to access the Microsoft Defender XDR APIs
+keywords: app, token, access, aad, app, application registration, powershell, script, global administrator, permission, Microsoft Defender XDR
 search.product: eADQiWindows 10XVcnh
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -18,7 +17,8 @@ audience: ITPro
 ms.collection: 
  - m365-security
  - tier3
-ms.topic: conceptual
+ - must-keep
+ms.topic: reference
 search.appverid: 
   - MOE150
   - MET150
@@ -26,13 +26,13 @@ ms.custom: api
 ms.date: 02/16/2021
 ---
 
-# Hello World for Microsoft 365 Defender REST API
+# Hello World for Microsoft Defender XDR REST API
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -41,45 +41,47 @@ ms.date: 02/16/2021
 
 It should take 5 to 10 minutes to complete this project. This time estimate includes registering the application, and applying the code from the PowerShell sample script.
 
-### Register an app in Azure Active Directory
+<a name='register-an-app-in-azure-active-directory'></a>
+
+### Register an app in Microsoft Entra ID
 
 1. Sign in to [Azure](https://portal.azure.com) as a user with the **Global administrator** role.
 
-2. Navigate to **Azure Active Directory** > **App registrations** > **New registration**.
+2. Navigate to **Microsoft Entra ID** > **App registrations** > **New registration**.
 
-   :::image type="content" source="../../media/atp-azure-new-app2.png" alt-text="The New registration section in the Microsoft 365 Defender portal" lightbox="../../media/atp-azure-new-app2.png":::
+   :::image type="content" source="../../media/atp-azure-new-app2.png" alt-text="The New registration section in the Microsoft Defender portal" lightbox="../../media/atp-azure-new-app2.png":::
 
 3. In the registration form, choose a name for your application, then select **Register**. Selecting a redirect URI is optional. You won't need one to complete this example.
 
-4. On your application page, select **API Permissions** > **Add permission** > **APIs my organization uses** >, type **Microsoft Threat Protection**, and select **Microsoft Threat Protection**. Your app can now access Microsoft 365 Defender.
+4. On your application page, select **API Permissions** > **Add permission** > **APIs my organization uses** >, type **Microsoft Threat Protection**, and select **Microsoft Threat Protection**. Your app can now access Microsoft Defender XDR.
 
    > [!TIP]
-   > *Microsoft Threat Protection* is a former name for Microsoft 365 Defender, and will not appear in the original list. You need to start writing its name in the text box to see it appear.
-   :::image type="content" source="../../media/apis-in-my-org-tab.PNG" alt-text="The section of APIs usage in the Microsoft 365 Defender portal" lightbox="../../media/apis-in-my-org-tab.PNG":::
+   > *Microsoft Threat Protection* is a former name for Microsoft Defender XDR, and will not appear in the original list. You need to start writing its name in the text box to see it appear.
+   :::image type="content" source="../../media/apis-in-my-org-tab.PNG" alt-text="The section of APIs usage in the Microsoft Defender portal" lightbox="../../media/apis-in-my-org-tab.PNG":::
 
    - Choose **Application permissions** > **Incident.Read.All** and select **Add permissions**.
 
-     :::image type="content" source="../../media/request-api-permissions.PNG" alt-text="An application's permissions pane in the Microsoft 365 Defender portal" lightbox="../../media/request-api-permissions.PNG":::
+     :::image type="content" source="../../media/request-api-permissions.PNG" alt-text="An application's permissions pane in the Microsoft Defender portal" lightbox="../../media/request-api-permissions.PNG":::
 
 5. Select **Grant admin consent**. Every time you add a permission, you must select **Grant admin consent** for it to take effect.
 
-    :::image type="content" source="../../media/grant-consent.PNG" alt-text=" The Grant admin consent section in the Microsoft 365 Defender portal" lightbox="../../media/grant-consent.PNG":::
+    :::image type="content" source="../../media/grant-consent.PNG" alt-text=" The Grant admin consent section in the Microsoft Defender portal" lightbox="../../media/grant-consent.PNG":::
 
 6. Add a secret to the application. Select **Certificates & secrets**, add a description to the secret, then select **Add**.
 
     > [!TIP]
     > After you select **Add**, select **copy the generated secret value**. You won't be able to retrieve the secret value after you leave.
 
-    :::image type="content" source="../../media/webapp-create-key2.png" alt-text=" The add secret section in the Microsoft 365 Defender portal" lightbox="../../media/webapp-create-key2.png":::
+    :::image type="content" source="../../media/webapp-create-key2.png" alt-text=" The add secret section in the Microsoft Defender portal" lightbox="../../media/webapp-create-key2.png":::
     
 
 7. Record your application ID and your tenant ID somewhere safe. They're listed under **Overview** on your application page.
 
-   :::image type="content" source="../../media/app-and-tenant-ids.png" alt-text="The Overview section in the Microsoft 365 Defender portal" lightbox="../../media/app-and-tenant-ids.png":::
+   :::image type="content" source="../../media/app-and-tenant-ids.png" alt-text="The Overview section in the Microsoft Defender portal" lightbox="../../media/app-and-tenant-ids.png":::
 
 ### Get a token using the app and use the token to access the API
 
-For more information on Azure Active Directory tokens, see the [Azure AD tutorial](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
+For more information on Microsoft Entra tokens, see the [Microsoft Entra tutorial](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
 
 > [!IMPORTANT]
 > Although the example in this demo app encourage you to paste in your secret value for testing purposes, you should **never hardcode secrets** into an application running in production. A third party could use your secret to access resources. You can help keep your app's secrets secure by using [Azure Key Vault](/azure/key-vault/general/about-keys-secrets-certificates). For a practical example of how you can protect your app, see [Manage secrets in your server apps with Azure Key Vault](/training/modules/manage-secrets-with-azure-key-vault/).
@@ -117,7 +119,7 @@ For more information on Azure Active Directory tokens, see the [Azure AD tutoria
 
     In the following image, you can see a decoded token acquired from an app, with ```Incidents.Read.All```, ```Incidents.ReadWrite.All```, and ```AdvancedHunting.Read.All``` permissions:
 
-    :::image type="content" source="../../media/api-jwt-ms.png" alt-text="The Decoded Token section in the Microsoft 365 Defender portal" lightbox="../../media/api-jwt-ms.png":::
+    :::image type="content" source="../../media/api-jwt-ms.png" alt-text="The Decoded Token section in the Microsoft Defender portal" lightbox="../../media/api-jwt-ms.png":::
 
 ### Get a list of recent incidents
 
@@ -172,10 +174,11 @@ You're all done! You've successfully:
 
 ## Related articles
 
-- [Microsoft 365 Defender APIs overview](api-overview.md)
-- [Access the Microsoft 365 Defender APIs](api-access.md)
-- [Create an app to access Microsoft 365 Defender without a user](api-create-app-web.md)
-- [Create an app to access Microsoft 365 Defender APIs on behalf of a user](api-create-app-user-context.md)
-- [Create an app with multi-tenant partner access to Microsoft 365 Defender APIs](api-partner-access.md)
+- [Microsoft Defender XDR APIs overview](api-overview.md)
+- [Access the Microsoft Defender XDR APIs](api-access.md)
+- [Create an app to access Microsoft Defender XDR without a user](api-create-app-web.md)
+- [Create an app to access Microsoft Defender XDR APIs on behalf of a user](api-create-app-user-context.md)
+- [Create an app with multi-tenant partner access to Microsoft Defender XDR APIs](api-partner-access.md)
 - [Manage secrets in your server apps with Azure Key Vault](/training/modules/manage-secrets-with-azure-key-vault/)
 - [OAuth 2.0 Authorization for user sign in and API access](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

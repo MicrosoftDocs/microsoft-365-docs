@@ -1,15 +1,12 @@
 ---
 title: Microsoft Defender for Endpoint evaluation lab
 description: Learn about Microsoft Defender for Endpoint capabilities, run attack simulations, and see how it prevents, detects, and remediates threats.
-keywords: evaluate Microsoft Defender for Endpoint, evaluation, lab, simulation, windows 10, windows server 2019, evaluation lab
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.service: microsoft-365-security
-ms.author: macapara
-author: mjcaparas
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
+ms.reviewer: noamhadash
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
   - m365-security
@@ -17,22 +14,27 @@ ms.collection:
   - highpri
   - tier1
 ms.topic: conceptual
-ms.subservice: mde
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 02/27/2024
 ---
 
 # Microsoft Defender for Endpoint evaluation lab
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+   > [!IMPORTANT]
+   > **The Microsoft Defender for Endpoint evaluation lab was deprecated in January, 2024**.
+
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
+
+   > [!IMPORTANT]
+   > As Microsoft continues to evaluate the value of the features and services to provide, Microsoft has made the decision to retire the Defender Evaluation Lab.
+   > This change will rollout in mid-January 2024 and expect to complete by late January 2024.
 
 Conducting a comprehensive security product evaluation can be a complex process requiring cumbersome environment and device configuration before an end-to-end attack simulation can actually be done. Adding to the complexity is the challenge of tracking where the simulation activities, alerts, and results are reflected during the evaluation.
 
@@ -163,7 +165,7 @@ Automated investigation settings will be dependent on tenant settings. It will b
 Add a domain controller to run complex scenarios such as lateral movement and multistage attacks across multiple devices.
 
 > [!NOTE]
-> Domain support is only available in the Microsoft 365 Defender portal (security.microsoft.com).
+> Domain support is only available in the Microsoft Defender portal (security.microsoft.com).
 
 1. From the dashboard, select **Add device**.
 
@@ -229,7 +231,7 @@ If you are looking for a pre-made simulation, you can use our ["Do It Yourself" 
 
 2. Enter the password that was displayed during the device creation step.
 
-   :::image type="content" source="images/enter-password.png" alt-text="The screen on which you enter credentials" lightbox="images/enter-password.png":::
+   :::image type="content" source="media/enter-password.png" alt-text="The screen on which you enter credentials" lightbox="media/enter-password.png":::
 
 3. Run Do-it-yourself attack simulations on the device.
 
@@ -294,7 +296,7 @@ Each simulation comes with an in-depth description of the attack scenario and re
 
 The lab reports summarize the results of the simulations conducted on the devices.
 
-:::image type="content" source="images/eval-report.png" alt-text="Evaluation report" lightbox="images/eval-report.png":::
+:::image type="content" source="media/eval-report.png" alt-text="Evaluation report" lightbox="media/eval-report.png":::
 
 At a glance, you'll quickly be able to see:
 
@@ -312,3 +314,4 @@ Your feedback helps us get better in protecting your environment from advanced a
 Let us know what you think, by selecting **Provide feedback**.
 
 :::image type="content" source="images/send-us-feedback-eval-lab.png" alt-text="The feedback page" lightbox="images/send-us-feedback-eval-lab.png":::
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

@@ -18,6 +18,8 @@ f1.keywords: NOCSH
 
 # Uploading a pre-built zip package
 
+[!INCLUDE [test-base-deprecation](./includes/test-base-deprecation.md)]
+
 This section provides all the steps necessary to edit, upload, and test on Test Base when you already have a pre-built .zip file.
 
 **Pre-requests**
@@ -34,7 +36,7 @@ In the left-hand menu under **Package catalog**, select the **New package**. The
 > [!div class="mx-imgBorder"]
 > [ ![Left-hand menu](Media/uploadingzip01-new-package.png) ](Media/uploadingzip01-new-package.png#lightbox)
 
-### Step 1. Define content
+### Step 1: Define content
 
 1. In the **Package source** section, select Pre-built package (.zip) in the Package source type.
 
@@ -56,7 +58,7 @@ In the left-hand menu under **Package catalog**, select the **New package**. The
    > [!div class="mx-imgBorder"]
    > ![Next: Configuration test](Media/uploadingzip04-next.png)
 
-### Step 2. Configure test
+### Step 2: Configure test
 
 1. Select the **Type of test** according to your pre-built package. There are two test types supported:
 
@@ -71,7 +73,7 @@ In the left-hand menu under **Package catalog**, select the **New package**. The
 
 2. Once all required info is filled out, select the Next button.
 
-### Step 3. Edit package
+### Step 3: Edit package
 
 1. In the Edit package tab, you can:
    - check your package folder and file structure in **Package Preview**.
@@ -121,7 +123,7 @@ In the left-hand menu under **Package catalog**, select the **New package**. The
 
 4. Once all required info is filled out, you can proceed to step 4 by selecting the Next button at the bottom.
 
-### Step 4. Set test matrix
+### Step 4: Set test matrix
 
 The Test matrix tab is for you to indicate the specific Windows update program or Windows product that you may want your test to execute against.
 
@@ -163,7 +165,7 @@ The Test matrix tab is for you to indicate the specific Windows update program o
    > [!div class="mx-imgBorder"]
    > ![Screenshot shows Set test matrix set os.](Media/settestmatrix05-setos.png)  
 
-### Step 5. Review + publish
+### Step 5: Review + publish
 
 1. Review all the information for correctness and accuracy of your draft package. To make corrections, you can navigate back to early steps where you specified the settings as needed.
 

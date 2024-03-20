@@ -2,10 +2,10 @@
 title: Use the contracts management site template for Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 audience: admin
 ms.reviewer: kkameth
-ms.date: 11/18/2021
+ms.date: 11/15/2023
 ms.topic: conceptual
 ms.service: microsoft-syntex
 search.appverid: 
@@ -13,13 +13,14 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
+ROBOTS: NOINDEX, NOFOLLOW
 description: Learn how to provision, use, and customize the contracts management site template in Microsoft Syntex.
 ---
 
 # Use the contracts management site template for Microsoft Syntex
 
 > [!NOTE]
->  The latest version of the contracts management site template is now available as a [team site template directly from SharePoint](https://support.microsoft.com/office/80820115-c700-4a62-bb59-69b33c8e3b4f). The look book version of this site template is no longer being updated.
+> The latest version of the contracts management site template is now available as a [team site template directly from SharePoint](https://support.microsoft.com/office/80820115-c700-4a62-bb59-69b33c8e3b4f). The look book version of this site template is no longer being updated.
 
 The contracts management site is a ready-to-deploy and customizable SharePoint site template that helps your organization maximize the value of Microsoft Syntex. The site is designed to let you create a professional site to manage, process, and track the status of contracts in your organization.
 

@@ -1,41 +1,39 @@
 ---
 title: Configure and validate exclusions for Microsoft Defender for Endpoint on Linux
 description: Provide and validate exclusions for Microsoft Defender for Endpoint on Linux. Exclusions can be set for files, folders, and processes.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, exclusions, scans, antivirus
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
+ms.reviewer: gopkr
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
+- mde-linux
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: linux
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 02/21/2024
 ---
 
 # Configure and validate exclusions for Microsoft Defender for Endpoint on Linux
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 This article provides information on how to define exclusions that apply to on-demand scans, and real-time protection and monitoring.
 
 > [!IMPORTANT]
-> The exclusions described in this article don't apply to other Defender for Endpoint on Linux capabilities, including endpoint detection and response (EDR). Files that you exclude using the methods described in this article can still trigger EDR alerts and other detections.
+> The exclusions described in this article don't apply to other Defender for Endpoint on Linux capabilities, including endpoint detection and response (EDR). Files that you exclude using the methods described in this article can still trigger EDR alerts and other detections. For EDR exclusions, [contact support](/microsoft-365/admin/get-help-support).
 
 You can exclude certain files, folders, processes, and process-opened files from Defender for Endpoint on Linux scans.
 
@@ -46,7 +44,7 @@ Exclusions can be useful to avoid incorrect detections on files or software that
 
 ## Supported exclusion types
 
-The follow table shows the exclusion types supported by Defender for Endpoint on Linux.
+The following table shows the exclusion types supported by Defender for Endpoint on Linux.
 
 Exclusion|Definition|Examples
 ---|---|---
@@ -92,7 +90,7 @@ Examples:
     mdatp exclusion extension add --name .txt
     ```
 
-    ```Output
+    ```console
     Extension exclusion configured successfully
     ```
 
@@ -102,7 +100,7 @@ Examples:
     mdatp exclusion file add --path /var/log/dummy.log
     ```
 
-    ```Output
+    ```console
     File exclusion configured successfully
     ```
 
@@ -112,7 +110,7 @@ Examples:
     mdatp exclusion folder add --path /var/log/
     ```
 
-    ```Output
+    ```console
     Folder exclusion configured successfully
     ```
 
@@ -123,7 +121,7 @@ Examples:
     mdatp exclusion folder add --path /other/folder
     ```
 
-    ```Output
+    ```console
     Folder exclusion configured successfully
     ```
 
@@ -148,7 +146,7 @@ Examples:
     > [!NOTE]
     > This will exclude all paths whose parent is */var/*; for example, */var/this-subfolder/and-this-subfolder-as-well*.
 
-    ```Output
+    ```console
     Folder exclusion configured successfully
     ```
 
@@ -158,7 +156,7 @@ Examples:
     mdatp exclusion process add --name cat
     ```
 
-    ```Output
+    ```console
     Process exclusion configured successfully
     ```
 
@@ -169,7 +167,7 @@ Examples:
     mdatp exclusion process add --name dog
     ```
 
-    ```Output
+    ```console
     Process exclusion configured successfully
     ```
 
@@ -180,10 +178,10 @@ You can validate that your exclusion lists are working by using `curl` to downlo
 In the following Bash snippet, replace `test.txt` with a file that conforms to your exclusion rules. For example, if you have excluded the `.testing` extension, replace `test.txt` with `test.testing`. If you are testing a path, ensure that you run the command within that path.
 
 ```bash
-curl -o test.txt https://www.eicar.org/download/eicar.com.txt
+curl -o test.txt https://secure.eicar.org/eicar.com.txt
 ```
 
-If Defender for Endpoint on Linux reports malware, then the rule is not working. If there is no report of malware, and the downloaded file exists, then the exclusion is working. You can open the file to confirm that the contents are the same as what is described on the [EICAR test file website](http://2016.eicar.org/86-0-Intended-use.html).
+If Defender for Endpoint on Linux reports malware, then the rule is not working. If there is no report of malware, and the downloaded file exists, then the exclusion is working. You can open the file to confirm that the contents are the same as what is described on the [EICAR test file website](https://www.eicar.org/download-anti-malware-testfile/).
 
 If you do not have Internet access, you can create your own EICAR test file. Write the EICAR string to a new text file with the following Bash command:
 
@@ -214,3 +212,4 @@ For example, to add `EICAR-Test-File (not a virus)` (the threat name associated 
 ```bash
 mdatp threat allowed add --name "EICAR-Test-File (not a virus)"
 ```
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

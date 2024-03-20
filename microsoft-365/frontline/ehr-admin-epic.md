@@ -1,8 +1,8 @@
 ---
 title: Virtual Appointments with Teams - Integration into Epic EHR
-author: samanro
-ms.author: samanro
-manager: pamgreen
+author: lana-chin
+ms.author: v-chinlana
+manager: jtremper
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-frontline
@@ -21,11 +21,11 @@ ms.collection:
   - m365solution-scenario
   - m365-frontline
   - highpri
-  - tier2
+  - m365-virtual-appointments 
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.reviewer: ansantam 
+ms.reviewer: beolson 
 description: Learn how to integrate the Teams EHR connector to enable healthcare providers in your organization to conduct virtual appointments with patients or other providers in Teams directly from the Epic EHR system. 
 ms.date: 03/30/2023
 ---

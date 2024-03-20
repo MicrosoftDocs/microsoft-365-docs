@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 08/10/2020
+ms.date: 06/21/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -16,10 +16,6 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 ms.custom: AdminSurgePortfolio
-search.appverid:
-- BCS160
-- MET150
-- MOE150
 description: "Learn about feedback your users can send to Microsoft about Microsoft products."
 ---
 
@@ -28,7 +24,7 @@ description: "Learn about feedback your users can send to Microsoft about Micros
 User feedback is a critical signal for Microsoft to understand user experiences with Microsoft products. Microsoft values our users’ opinions. User feedback goes directly to our engineers and helps us shape the future of Microsoft products and services for all our users.  
 In this topic, you'll find information on what types of feedback exist, how we collect it, what we collect and how we handle the data.
 
-As an admin, you can manage the feedback signal for your organization. We’re introducing a new set of policy settings to help you manage user feedback collection within the Microsoft 365 applications for your organization. These policy settings will help you target Azure Active Directory groups and configure the feedback collection experience for your organization. User feedback goes directly to our engineers and helps us shape the future of Microsoft products and services for all our users. You can learn more about these policy settings, which applications they apply to, and best practices at [Manage Microsoft feedback for your organization](../manage/manage-feedback-ms-org.md).
+As an admin, you can manage the feedback signal for your organization. We’re introducing a new set of policy settings to help you manage user feedback collection within the Microsoft 365 applications for your organization. These policy settings will help you target Microsoft Entra groups and configure the feedback collection experience for your organization. User feedback goes directly to our engineers and helps us shape the future of Microsoft products and services for all our users. You can learn more about these policy settings, which applications they apply to, and best practices at [Manage Microsoft feedback for your organization](../manage/manage-feedback-ms-org.md).
 
 ## Feedback types
 
@@ -70,12 +66,12 @@ Microsoft uses feedback to improve Microsoft products. We get user feedback in t
 
 ### What do we collect?
 
-When a user submits feedback, app information is usually collected along with app ratings and feedback descriptions.  If you've enabled the policy, we may allow users to submit screenshots and logs to help us debug and resolve problems the user may be running into. Here are the most common items collected or calculated.
+When a user submits feedback, app information is usually collected along with app ratings and feedback descriptions. Here are the most common items collected or calculated.
 
 - **Comments**   User submitted comments in the original language.
 - **App**   Microsoft product we got the feedback from.
 - **Date Submitted**   Date and time we got the feedback.
-- **User Id**   Azure Active directory Id or email address of the authenticated user submitting the feedback. Anonymous feedback is allowed but not shown in this view.
+- **User Id**   Microsoft Entra ID or email address of the authenticated user submitting the feedback. Anonymous feedback is allowed but not shown in this view.
 - **User Email**   If the user is ok with providing their email address for follow-up.
 - **Language or Comment Language**   Original language the comment was submitted in.
 - **Feedback Type**   Survey feedback or in-app feedback.
@@ -85,12 +81,22 @@ When a user submits feedback, app information is usually collected along with ap
 - **App Build**   Build number of Microsoft product that was captured on submission.
 - **App Language**   Language of Microsoft product that was captured on submission.
 - **Attachments**   Were any attachments (i.e screenshots, files) collected as part of the feedback? (Yes/No).
-- **TenantId**   If feedback is submitted from an Azure Active Directory account, which TenantId was associated.
+- **TenantId**   If feedback is submitted from a Microsoft Entra account, which TenantId was associated.
 - **App module** Information about app modules that may have caused a recent crash, where applicable.
+- **Optional Diagnostic data** If you are opted in, this data will be included with the feedback. [Learn more](/deployoffice/privacy/optional-diagnostic-data).
+
+If you've enabled the corresponding policies, we may allow users to submit screenshots, attachments, content samples, and logs to help us debug and resolve problems the user may be running into. Microsoft uses this data to debug and resolve problems that may be challenging or impossible to resolve without this additional information. Users choose whether or not this content and data is submitted to Microsoft.
+
+- Screenshots: Captures of the user’s screen at the time they submitted feedback. Example: the screen including the dialog box from which the user is submitting feedback.
+- Attachments: Files the user can choose to attach to their feedback. Example: the file they were working on when they encountered a problem.
+- Content samples: Portions of content from the customer’s document or interactions with Microsoft services. Example: the prompt the user sent to an AI service and the response the user received back from that AI service.
+- Log files: Additional log files that are not included in Overview of diagnostic log files for Office - Microsoft Support and that may include the user’s name or contents of the user’s files. Examples: logs that include the element of the customer’s file that is preventing the file from saving.
 
 ## How can I see my user's feedback?
 
-To meet Microsoft’s legal obligations to customers, we've added a new experience in the Microsoft 365 admin center that lets administrators view, delete, and export the feedback data for their organizations. As part of their data controller responsibility, customers own all user feedback data and this functionality will assist administrators to provide direct transparency into their users’ experiences with Microsoft 365 products and enable user feedback data to be provided as part of any Data Subject Request. Global admins and compliance data administrators now have the ability to view, export and delete user feedback. All other administrators, as well as readers, are able to view and export feedback data but can't perform compliance related tasks or see information about who posted the feedback (such as user name, email, or device name). To access your organization's feedback data, sign in to the Microsoft 365 admin center and customize navigation to show the health node. Access this experience by selecting **Product Feedback** under the Health node.
+To meet Microsoft’s legal obligations to customers, we've added an experience in the Microsoft 365 admin center that lets administrators view, delete, and export the feedback data for their organizations. As part of their data controller responsibility, customers own all user feedback data and this functionality will assist administrators to provide direct transparency into their users’ experiences with Microsoft 365 products and enable user feedback data to be provided as part of any Data Subject Request. Global admins and compliance data administrators now have the ability to view, export and delete user feedback. All other administrators, as well as readers, are able to view and export feedback data but can't perform compliance related tasks or see information about who posted the feedback (such as user name, email, or device name). To access your organization's feedback data, sign in to the Microsoft 365 admin center and customize navigation to show the health node. Access this experience by selecting **Product Feedback** under the Health node.
+
+:::image type="content" source="../../media/manage-feedback-3.jpg" alt-text="Product feedback in the Microsoft 365 admin center":::
 
 ## Data handling and privacy
 

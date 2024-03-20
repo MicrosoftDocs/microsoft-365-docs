@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 11/18/2021
+ms.date: 11/27/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -69,11 +69,11 @@ When signing up for Microsoft 365 Apps for Business, you have 2 options for how 
 
 The table below outlines each choice.
 
-|&nbsp;|**Option 1** – Sign in with Outlook, Hotmail, Yahoo, Gmail or other email account|**Option 2** – Add a business domain |
+| | Option 1 – Sign in with Outlook, Hotmail, Yahoo, Gmail or other email account | Option 2 – Add a business domain |
 |---|---|---|
-|Available apps and services|Use Word, Excel, PowerPoint, OneDrive, Teams, Access. This set of apps is best for very small businesses who don't need branded email immediately, or who already use branded email from a different provider and do not intend to switch to use Microsoft Exchange. You'll use Outlook with your existing email account (be it outlook.com, Hotmail, Yahoo, Gmail or other).|Use Word, Excel, PowerPoint, OneDrive, Teams, Access. Option 2 also lets you access a wide range of additional services: Bookings appointment scheduling and Meeting recordings.|
-|Required knowledge|Let's you get started without technical know-how.|Requires you to buy a domain, or to own a domain. You may need technical knowledge to prove ownership of the domain.|
-|Data handling|Available under the Supplement to the [Microsoft Services Agreement](https://go.microsoft.com/fwlink/p/?linkid=2180702) and is best for businesses that want some remote work and collaboration tools and are comfortable with Microsoft acting as controller for your data under the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839). Subscribers to services using this option will not have access to an individual's user content or data until a domain is attached. Subscribers should evaluate data ownership and intellectual property rights considerations based on their needs. For example, if you are working collaboratively with other users on a document stored in their account, they may choose to make those documents inaccessible to you. As such, you should evaluate data ownership and intellectual property rights considerations accordingly. Separately, users may choose not to transfer documents in their Simplified Sign-Up account to your Domain Account subscription, even after you invite them to do so. This means their documents may also not be accessible to you even if you add a domain account later|Available under the [Microsoft Online Subscription Agreement](https://go.microsoft.com/fwlink/p/?linkid=2180430) and is best for businesses that need Microsoft to act as a processor for their data under Microsoft's [Data Protection Addendum](https://go.microsoft.com/fwlink/p/?linkid=2180314) and need our full suite of remote work and collaboration tools. Subscribers who are in regulated industries or seek more control, both over the use of the services by your employees and over processing of related data by Microsoft, should choose Option 2 and attach a domain and sign up under the Domain Account enterprise-level agreement.|
+|**Available apps and services**|Use Word, Excel, PowerPoint, OneDrive, Teams, Access. This set of apps is best for very small businesses who don't need branded email immediately, or who already use branded email from a different provider and do not intend to switch to use Microsoft Exchange. You'll use Outlook with your existing email account (be it outlook.com, Hotmail, Yahoo, Gmail or other).|Use Word, Excel, PowerPoint, OneDrive, Teams, Access. Option 2 also lets you access a wide range of additional services: Bookings appointment scheduling and Meeting recordings.|
+|**Required knowledge**|Let's you get started without technical know-how.|Requires you to buy a domain, or to own a domain. You may need technical knowledge to prove ownership of the domain.|
+|**Data handling**|Available under the Supplement to the [Microsoft Services Agreement](https://go.microsoft.com/fwlink/p/?linkid=2180702) and is best for businesses that want some remote work and collaboration tools and are comfortable with Microsoft acting as controller for your data under the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839). Subscribers to services using this option will not have access to an individual's user content or data until a domain is attached. Subscribers should evaluate data ownership and intellectual property rights considerations based on their needs. For example, if you are working collaboratively with other users on a document stored in their account, they may choose to make those documents inaccessible to you. As such, you should evaluate data ownership and intellectual property rights considerations accordingly. Separately, users may choose not to transfer documents in their Simplified Sign-Up account to your Domain Account subscription, even after you invite them to do so. This means their documents may also not be accessible to you even if you add a domain account later|Available under the [Microsoft Online Subscription Agreement](https://go.microsoft.com/fwlink/p/?linkid=2180430) and is best for businesses that need Microsoft to act as a processor for their data under Microsoft's [Data Protection Addendum](https://go.microsoft.com/fwlink/p/?linkid=2180314) and need our full suite of remote work and collaboration tools. Subscribers who are in regulated industries or seek more control, both over the use of the services by your employees and over processing of related data by Microsoft, should choose Option 2 and attach a domain and sign up under the Domain Account enterprise-level agreement.|
 
 Use these three factors to determine which of the two options is best for your business needs.
 
@@ -87,7 +87,7 @@ This applies to Microsoft 365 Business Standard and Microsoft 365 Apps for Busin
 
 2. Select how many Microsoft 365 Apps for business licenses you want for your organization and select **Add payment method** and continue with checkout to **Place order**.
 
-3. On the **Confirmation details** page, we'll give you some more info about your subscription. You can now go to the Microsoft 365 admin center to add users, install Office apps, invite your team to use Microsoft 365 and more. We'll also send you an email with set up steps for Microsoft 365 Business Standard.
+3. On the **Confirmation details** page, we'll give you some more info about your subscription. You can now go to the Microsoft 365 admin center to add users, install Office apps, invite your team to use Microsoft 365 and more. We'll also send you an email with set-up steps for Microsoft 365 Business Standard.
 
 Remember this option doesn't provide branded email, admin control for use of the services by other users, or industry specific compliance support. Subscribers don't have any access or control over other users' (employees) usage or documents under this option. Users may choose not to transfer data created in storage such as OneDrive to your upgraded, enterprise-level domain account should you not choose **Option 2**.
 
@@ -128,7 +128,7 @@ To provide customers with the greatest amount of flexibility, different payment 
 
 ### How does recurring billing work?
 
-When Recurring billing is on, your subscription will continue to be billed each year on the day you subscribed. You can turn it off or back on again in the admin center if your subscription is active. Learn more at [Turn recurring billing off or on](../../commerce/subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on).
+When recurring billing is on, your subscription will continue to be billed each year on the day you subscribed. You can turn it off or back on again in the admin center if your subscription is active. Learn more at [Manage recurring billing in the Microsoft 365 admin center](../../commerce/subscriptions/renew-your-subscription.md).
 
 ### What do I do if I want to change my business name?
 

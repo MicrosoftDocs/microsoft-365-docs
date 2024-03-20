@@ -1,10 +1,9 @@
 ---
-title: Remediation actions in Microsoft 365 Defender
-description: Get an overview of remediation actions that follow automated investigations in Microsoft 365 Defender
+title: Remediation actions in Microsoft Defender XDR
+description: Get an overview of remediation actions that follow automated investigations in Microsoft Defender XDR
 keywords: automated, investigation, alert, trigger, action, remediation
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -24,25 +23,25 @@ ms.reviewer: evaldm, isco
 ms.date: 02/17/2021
 ---
 
-# Remediation actions in Microsoft 365 Defender
+# Remediation actions in Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
-During and after an automated investigation in Microsoft 365 Defender, remediation actions are identified for malicious or suspicious items. Some kinds of remediation actions are taken on devices, also referred to as endpoints. Other remediation actions are taken on identities, accounts and email content. Automated investigations complete after remediation actions are taken, approved, or rejected.
+During and after an automated investigation in Microsoft Defender XDR, remediation actions are identified for malicious or suspicious items. Some kinds of remediation actions are taken on devices, also referred to as endpoints. Other remediation actions are taken on identities, accounts and email content. Automated investigations complete after remediation actions are taken, approved, or rejected.
 
 > [!IMPORTANT]
 > Whether remediation actions are taken automatically or only upon approval depends on certain settings, such as automation levels. To learn more, see the following articles:
 >
-> - [Configure your automated investigation and response capabilities in Microsoft 365 Defender](m365d-configure-auto-investigation-response.md)
+> - [Configure your automated investigation and response capabilities in Microsoft Defender XDR](m365d-configure-auto-investigation-response.md)
 > - [Configure action accounts in Microsoft Defender for Identity](/defender-for-identity/manage-action-accounts)
 > - [How threats are remediated on devices](../defender-endpoint/automated-investigations.md)
 > - [Threats and remediation actions on email & collaboration content](../office-365-security/air-remediation-actions.md#threats-and-remediation-actions)
 
-The following table summarizes remediation actions that are currently supported in Microsoft 365 Defender.
+The following table summarizes remediation actions that are currently supported in Microsoft Defender XDR.
 
 |Device (endpoint) remediation actions  |Email remediation actions  |Users (accounts)  |
 |:---------|:---------|----------|
@@ -72,7 +71,7 @@ In addition to remediation actions that follow automated investigations, your se
 - Manual email action, such as soft-deleting email messages
 - Manual user action, such as disable user or reset user password
 - [Advanced hunting](../defender-endpoint/advanced-hunting-overview.md) action on devices, users, or email
-- [Explorer](../office-365-security/threat-explorer-about.md) action on email content, such as moving email to junk, soft-deleting email, or hard-deleting email
+- [Explorer](../office-365-security/threat-explorer-real-time-detections-about.md) action on email content, such as moving email to junk, soft-deleting email, or hard-deleting email
 - Manual [live response](/windows/security/threat-protection/microsoft-defender-atp/live-response) action, such as deleting a file, stopping a process, and removing a scheduled task
 - Live response action with [Microsoft Defender for Endpoint APIs](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis), such as isolating a device, running an antivirus scan, and getting information about a file
 
@@ -82,3 +81,4 @@ In addition to remediation actions that follow automated investigations, your se
 - [View and manage remediation actions](m365d-autoir-actions.md)
 - [Address false positives or false negatives](m365d-autoir-report-false-positives-negatives.md)
 - [Contain devices from the network](../defender-endpoint\respond-machine-alerts.md#contain-devices-from-the-network)
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

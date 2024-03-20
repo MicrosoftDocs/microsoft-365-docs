@@ -1,24 +1,19 @@
 ---
 title: Microsoft Defender for Endpoint Controlled folder access (CFA) demonstration test tool
 description: See how malicious apps and threats are evaluated and countered by Microsoft Defender Antivirus.
-keywords: Microsoft Defender for Endpoint, protected folder access blocked, detect suspicious files, detect suspicious apps, 
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.mktglfcycl: evaluation
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security
 - tier2
 - demo
 ms.topic: article
-ms.subservice: mde
+ms.subservice: asr
 ms.date: 10/21/2022
 ---
 
@@ -93,3 +88,4 @@ Set-MpPreference -EnableControlledFolderAccess Disabled
 
 ## See also
 [Controlled folder access](/windows/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

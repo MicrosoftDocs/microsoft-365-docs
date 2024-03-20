@@ -2,9 +2,9 @@
 title: Discover other trained models in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: ssquires
-ms.date: 06/09/2022
+ms.date: 02/21/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -83,14 +83,3 @@ To remove an applied model from your document library:
 
 2. On the model you want to remove, select **View model details**, and then select **Remove from library**.
 
-<!---
-## Change the view in a document library
-
-[!INCLUDE [Change the view in a document library](../includes/change-library-view.md)]
---->
-
-## See also
-
-[Share an enterprise model](model-discovery.md)
-
-[Choose the view in a document library](choose-library-view.md)

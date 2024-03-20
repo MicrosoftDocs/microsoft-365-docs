@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 02/19/2020
+ms.date: 11/16/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -20,17 +20,12 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
-search.appverid:
-- BCS160
-- MET150
-- MOE150
-ms.assetid: 613a845c-4b71-41de-b331-acdcf5b6625d
 description: "If you're responsible for configuring email settings for everyone in a business this article explains how to configure Focused Inbox for users."
 ---
 
 # Configure Focused Inbox for everyone in your organization
 
-If you're responsible for configuring how email works for EVERYONE in a business this article is for you! It explains how to customize it or turn it off for your business, and answers [frequently asked questions](#faq-for-focused-inbox).
+If you're responsible for configuring how email works for **everyone** in a business this article is for you! It explains how to customize it or turn it off for your business, and answers [frequently asked questions](#faq-for-focused-inbox).
 
 If you would like to turn off Focused Inbox for just yourself, please see [Turn off Focused Inbox](https://support.microsoft.com/office/f714d94d-9e63-4217-9ccb-6cb2986aa1b2).  
 
@@ -120,16 +115,9 @@ This example turns Focused Inbox **Off** for Tim Matthews in the Contoso organiz
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>.
 
-2. Navigate to **mail flow** \> **Rules**. Select ![EAC Add icon.](../../media/795e5bdd-48bb-433f-8e07-3c7a19f8eca2.gif) and then select **Create a new rule...**. 
+2. Navigate to **Mail flow** \> **Rules**. Select **Add a rule** and then select **Create a new rule...**.
 
 3. After you're done creating the new rule, select **Save** to start the rule.
-
-    The following image shows an example where all messages From "Payroll Department" are to be delivered to the Focused Inbox.
-
-    ![focusedinbox payroll.](../../media/focusedinbox-transport-rule.PNG)
-
-    > [!NOTE]
-    > The message header value text in this example is, **X-MS-Exchange-Organization-BypassFocusedInbox**.
   
 ## Use PowerShell to create a transport rule to direct email messages to the Focused view for all your users
 

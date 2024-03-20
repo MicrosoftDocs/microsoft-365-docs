@@ -97,7 +97,7 @@ For instructions about how to set these permissions, see [Assign permissions to 
 
 You need to license the users after they're created. You have 30 days to add licenses after the users are created. For steps to add licenses, see [Step 8: Complete post-migration tasks](#step-8-complete-post-migration-tasks).
 
- You can use either the Microsoft Azure Active Directory (Azure AD) Synchronization Tool or the Microsoft Azure AD Sync Services  to synchronize and create your on-premises users in Microsoft 365. After mailboxes are migrated to Microsoft 365, you manage user accounts in your on-premises organization, and they're synchronized with your Microsoft 365 organization. For more information, see[Directory Integration](/previous-versions/azure/azure-services/jj573653(v=azure.100)) .
+ You can use either the Microsoft Entra Synchronization Tool or the Microsoft Azure AD Sync Services  to synchronize and create your on-premises users in Microsoft 365. After mailboxes are migrated to Microsoft 365, you manage user accounts in your on-premises organization, and they're synchronized with your Microsoft 365 organization. For more information, see[Directory Integration](/previous-versions/azure/azure-services/jj573653(v=azure.100)) .
 
 ### Step 2: Create a CSV file for a staged migration batch
 

@@ -1,10 +1,9 @@
 ---
 title: Details and results of an automated investigation
-description: View the results and key findings of automated investigation in Microsoft 365 Defender
+description: View the results and key findings of automated investigation in Microsoft Defender XDR
 keywords: automated, investigation, results, analyze, details, remediation, autoair
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -28,20 +27,20 @@ ms.reviewer: evaldm, isco
 
 # Details and results of an automated investigation
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
-With Microsoft 365 Defender, when an [automated investigation](m365d-autoir.md) runs, details about that investigation are available both during and after the automated investigation process. If you have the [necessary permissions](m365d-action-center.md#required-permissions-for-action-center-tasks), you can view those details in an investigation details view that provides you with up-to-date status and the ability to approve any pending actions. 
+With Microsoft Defender XDR, when an [automated investigation](m365d-autoir.md) runs, details about that investigation are available both during and after the automated investigation process. If you have the [necessary permissions](m365d-action-center.md#required-permissions-for-action-center-tasks), you can view those details in an investigation details view that provides you with up-to-date status and the ability to approve any pending actions. 
 
 ## (NEW) Unified investigation page
 
 The investigation page has recently been updated to include information across your devices, email, and collaboration content. The new, unified investigation page defines a common language and provides a unified experience for automatic investigations across [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) and [Microsoft Defender for Office 365](../office-365-security/defender-for-office-365.md). To access the unified investigation page, select the link in the yellow banner you'll see on:
 
-- Any investigation page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077143" target="_blank">Microsoft Purview compliance portal</a>
-- Any investigation page in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com))
-- Any incident or Action center experience in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>
+- Any investigation page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview compliance portal</a>
+- Any investigation page in the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com))
+- Any incident or Action center experience in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a>
 
 ## Open the investigation details view
 
@@ -57,7 +56,7 @@ The improved [Action center](m365d-action-center.md) ([https://security.microsof
 > [!TIP]
 > You must have [certain permissions](m365d-action-center.md#required-permissions-for-action-center-tasks) to approve, reject, or undo actions.
 
-1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in. 
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a> and sign in. 
 
 2. In the navigation pane, choose **Action center**. 
 
@@ -73,7 +72,7 @@ The improved [Action center](m365d-action-center.md) ([https://security.microsof
 
 Use an incident details page to view detailed information about an incident, including alerts that were triggered information about any affected devices, user accounts, or mailboxes.
 
-1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in. 
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a> and sign in. 
 
 2. In the navigation pane, choose **Incidents & alerts** > **Incidents**. 
 
@@ -85,13 +84,13 @@ Use an incident details page to view detailed information about an incident, inc
 
 Here's an example.
 
-:::image type="content" source="../../media/mtp-incidentdetails-tabs.png" alt-text="The investigation page in the Microsoft 365 Defender portal" lightbox="../../media/mtp-incidentdetails-tabs.png":::
+:::image type="content" source="../../media/mtp-incidentdetails-tabs.png" alt-text="The investigation page in the Microsoft Defender portal" lightbox="../../media/mtp-incidentdetails-tabs.png":::
 
 ## Investigation details
 
 Use the investigation details view to see past, current, and pending activity pertaining to an investigation. Here's an example.
 
-:::image type="content" source="../../media/mtp-air-investdetails.png" alt-text="The investigation details page in the Microsoft 365 Defender portal" lightbox="../../media/mtp-air-investdetails.png":::
+:::image type="content" source="../../media/mtp-air-investdetails.png" alt-text="The investigation details page in the Microsoft Defender portal" lightbox="../../media/mtp-air-investdetails.png":::
 
 In the Investigation details view, you can see information on the **Investigation graph**, **Alerts**, **Devices**, **Identities**, **Key findings**, **Entities**, **Log**, and **Pending actions** tabs, described in the following table.
 
@@ -101,7 +100,7 @@ In the Investigation details view, you can see information on the **Investigatio
 | Tab | Description |
 |:--------|:--------|
 | **Investigation graph** | Provides a visual representation of the investigation. Depicts entities and lists threats found, along with alerts and whether any actions are awaiting approval.<br/>You can select an item on the graph to view more details. For example, selecting the **Evidence** icon takes you to the **Evidence** tab, where you can see detected entities and their verdicts. |
-| **Alerts** | Lists alerts associated with the investigation. Alerts can come from threat protection features on a user's device, in Office apps, Microsoft Defender for Cloud Apps, and other Microsoft 365 Defender features. <br> <br> If you see *Unsupported alert type*, it means that automated investigation capabilities cannot pick up that alert to run an automated investigation. However, you can [investigate these alerts manually](investigate-incidents.md#alerts).
+| **Alerts** | Lists alerts associated with the investigation. Alerts can come from threat protection features on a user's device, in Office apps, Microsoft Defender for Cloud Apps, and other Microsoft Defender XDR features. <br> <br> If you see *Unsupported alert type*, it means that automated investigation capabilities cannot pick up that alert to run an automated investigation. However, you can [investigate these alerts manually](investigate-incidents.md#alerts).
 | **Devices** | Lists devices included in the investigation along with their remediation level. (Remediation levels correspond to [the automation level for device groups](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups).) |
 | **Mailboxes** |Lists mailboxes that are impacted by detected threats.  |
 | **Users**  | Lists user accounts that are impacted by detected threats. |
@@ -124,7 +123,7 @@ The following table lists investigation states and what they indicate.
 |Failed     | At least one investigation analyzer ran into a problem where it couldn't complete the investigation. If an investigation fails after remediation actions were approved, the remediation actions might still have succeeded.|
 |Successfully remediated| An automated investigation completed, and all remediation actions were completed or approved.|
 
-To provide more context about how investigation states show up, the following table lists alerts and their corresponding automated investigation state. This table is included as an example of what a security operations team might see in the Microsoft 365 Defender portal.
+To provide more context about how investigation states show up, the following table lists alerts and their corresponding automated investigation state. This table is included as an example of what a security operations team might see in the Microsoft Defender portal.
 
 |Alert name | Severity | Investigation state | Status | Category |
 |-----------|----------|---------------------|--------|----------|
@@ -167,3 +166,4 @@ To provide more context about how investigation states show up, the following ta
 
 - [View and manage remediation actions](m365d-autoir-actions.md)
 - [Learn more about remediation actions](m365d-remediation-actions.md)
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

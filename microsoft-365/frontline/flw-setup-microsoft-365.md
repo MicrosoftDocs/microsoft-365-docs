@@ -1,9 +1,9 @@
 ---
 title: Set up Microsoft 365 for frontline workers
-author: samanro
-ms.author: samanro
+author: lana-chin
+ms.author: v-chinlana
+manager: jtremper
 ms.reviewer: samanro
-manager: pamgreen
 ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
@@ -14,7 +14,6 @@ ms.collection:
   - m365-frontline
   - highpri
   - m365solution-frontline
-  - tier1
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
@@ -27,7 +26,7 @@ To set up Microsoft 365 for frontline workers, follow this overall process:
 
 1. **[Identify your scenarios](#step-1-identify-your-scenarios)**: Which scenarios do you want to implement for your frontline workers? After you have determined which scenarios you want, use the table below to identify the required apps and services for each scenario that you want to implement.
 1. **[Set up your environment and core Microsoft 365](#step-2-set-up-your-environment-and-core-microsoft-365)**: Follow the Setup Guides in the Microsoft 365 admin center to set up Microsoft 365. Keep reading to learn how to access these guides.
-1. **[Provision users, configure groups, and assign licenses](#step-3-provision-users-configure-groups-and-assign-licenses)**: Learn how to provision users and create groups in Azure AD, then assign frontline licenses to your users.
+1. **[Provision users, configure groups, and assign licenses](#step-3-provision-users-configure-groups-and-assign-licenses)**: Learn how to provision users and create groups in Microsoft Entra ID, then assign frontline licenses to your users.
 1. **[Configure device enrollment](#step-4-configure-device-enrollment)**: Set up shared and personal devices to work with Microsoft 365 and Microsoft Teams and to allow your frontline workers to communicate more securely within your organization.
 1. **[Set up any other services needed for your scenario](#step-5-set-up-other-services)**: Set up services including Exchange, Outlook, SharePoint, and Microsoft Viva.
 1. **[Configure security](#step-6-configure-security)**: Learn how to create security policies to keep your organization secure.
@@ -65,38 +64,40 @@ Now that you have Microsoft 365 set up, you can start to add users, organize the
 
 ### Provision users
 
-Now that you have Microsoft 365 set up, you can start to add users, organize them into groups, and assign licenses. Before you provision frontline users, you should create new administrator accounts or review and update your existing [administrator accounts in Azure AD](/azure/active-directory/roles/permissions-reference). [Learn more about what Azure AD admin roles you might need for Microsoft 365](/microsoft-365/admin/add-users/about-admin-roles).
+Now that you have Microsoft 365 set up, you can start to add users, organize them into groups, and assign licenses. Before you provision frontline users, you should create new administrator accounts or review and update your existing [administrator accounts in Microsoft Entra ID](/azure/active-directory/roles/permissions-reference). [Learn more about what Microsoft Entra admin roles you might need for Microsoft 365](/microsoft-365/admin/add-users/about-admin-roles).
 
-In this step, you'll create user identities for your frontline workers in Azure AD. You can import users in three ways:
+In this step, you'll create user identities for your frontline workers in Microsoft Entra ID. You can import users in three ways:
 
-- **Integrate Azure AD with an existing Active Directory instance:** [Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-install-prerequisites) replicates Active Directory user accounts to Azure AD, allowing a user to have a single identity capable of accessing both local and cloud-based resources.
-- **Integrate Azure AD with a third-party identity solution:** Azure AD supports integration with some third-party providers through federation.
+- **Integrate Microsoft Entra ID with an existing Active Directory instance:** [Microsoft Entra Connect](/azure/active-directory/hybrid/how-to-connect-install-prerequisites) replicates Active Directory user accounts to Microsoft Entra ID, allowing a user to have a single identity capable of accessing both local and cloud-based resources.
+- **Integrate Microsoft Entra ID with a third-party identity solution:** Microsoft Entra ID supports integration with some third-party providers through federation.
     - [Learn how to use Okta for Hybrid Microsoft AAD Join](https://www.okta.com/resources/whitepaper/using-okta-for-hybrid-microsoft-aad-join/).
-    - [Learn how to configure PingFederate with Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-install-custom#configuring-federation-with-pingfederate).
-- **Import users from your organization's HR systems:** [Azure AD user provisioning service](/azure/active-directory/app-provisioning/plan-auto-user-provisioning) automates the creation, maintenance, and removal of user identities based on rules set by your organization.
-    - **On-premises HR systems:** You can use [Microsoft Identity Manager](/microsoft-identity-manager/microsoft-identity-manager-2016) to provision users from your on-premises HR systems to Active Directory or directly to Azure AD.
-    - **Cloud-based HR systems:** Learn how to connect [SAP SuccessFactors](/azure/active-directory/saas-apps/sap-successfactors-inbound-provisioning-tutorial) and [Workday](/azure/active-directory/saas-apps/workday-inbound-tutorial#planning-your-deployment) to Azure AD.
+    - [Learn how to configure PingFederate with Microsoft Entra Connect](/azure/active-directory/hybrid/how-to-connect-install-custom#configuring-federation-with-pingfederate).
+- **Import users from your organization's HR systems:** [Microsoft Entra user provisioning service](/azure/active-directory/app-provisioning/plan-auto-user-provisioning) automates the creation, maintenance, and removal of user identities based on rules set by your organization.
+    - **On-premises HR systems:** You can use [Microsoft Identity Manager](/microsoft-identity-manager/microsoft-identity-manager-2016) to provision users from your on-premises HR systems to Active Directory or directly to Microsoft Entra ID.
+    - **Cloud-based HR systems:** Learn how to connect [SAP SuccessFactors](/azure/active-directory/saas-apps/sap-successfactors-inbound-provisioning-tutorial) and [Workday](/azure/active-directory/saas-apps/workday-inbound-tutorial#planning-your-deployment) to Microsoft Entra ID.
 
 Use this table to validate your HR-driven user provisioning.
 
 |Test scenario |Expected results |
 |--------------|-----------------|
-|New employee is created in the cloud HR app |The user account is provisioned in Azure AD and can access assigned cloud resources. <br> If Azure AD Connect sync is configured, the user account also gets created in Active Directory. <br> The user can sign into Active Directory domain apps and perform their desired actions.|
-|User is terminated in the cloud HR app |The user account is disabled in Azure AD, and, if applicable, Active Directory. <br>The user can’t sign into cloud or on-premises applications and resources assigned to them. |
+|New employee is created in the cloud HR app |The user account is provisioned in Microsoft Entra ID and can access assigned cloud resources. <br> If Microsoft Entra Connect Sync is configured, the user account also gets created in Active Directory. <br> The user can sign into Active Directory domain apps and perform their desired actions.|
+|User is terminated in the cloud HR app |The user account is disabled in Microsoft Entra ID, and, if applicable, Active Directory. <br>The user can’t sign into cloud or on-premises applications and resources assigned to them. |
 |Supervisor is updated in the cloud HR app |User remains active with the new mapping. |
 |HR rehires an employee into a new role. |The results depend on how the cloud HR app is configured to generate employee IDs. <br>If the old employee ID is reused for a rehire, the connector enables the existing Active Directory account for the user. <br>If the rehire gets a new employee ID, the connector creates a new Active Directory account for the user. |
 |HR converts the employee to a contract worker or vice-versa |A new Active Directory account is created for the new persona and the old account is disabled on the effective date of the conversion. |
 
-[Learn more about Azure AD deployment](/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2).
+[Learn more about Microsoft Entra deployment](/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2).
 
-### Configure Azure AD groups
+<a name='configure-azure-ad-groups'></a>
+
+### Configure Microsoft Entra groups
 
 Configuring groups in Azure  AD allows you to create and manage policies and license assignments at scale.
 
-- **Assign a unique attribute to frontline workers:** The ability to identify all frontline workers is useful when applying groups to the frontline workforce or for validating that integrations between Azure AD and HR systems are functioning properly. Organizations frequently use the Job ID attribute for this purpose. Depending on your organization's structure, you may also need [custom security attributes](/azure/active-directory/fundamentals/custom-security-attributes-overview) or [directory extension attributes](/azure/active-directory/develop/active-directory-schema-extensions).
-- **Create Azure AD groups and assign frontline users:** With Azure AD groups, you can grant access and permissions to a group of users instead of for each individual user. Groups are used to manage users that all need the same access and permissions to resources, such as potentially restricted apps and services. Instead of adding special permissions to individual users, you create a group that applies the special permissions to every member of that group.
+- **Assign a unique attribute to frontline workers:** The ability to identify all frontline workers is useful when applying groups to the frontline workforce or for validating that integrations between Microsoft Entra ID and HR systems are functioning properly. Organizations frequently use the Job ID attribute for this purpose. Depending on your organization's structure, you may also need [custom security attributes](/azure/active-directory/fundamentals/custom-security-attributes-overview) or [directory extension attributes](/azure/active-directory/develop/active-directory-schema-extensions).
+- **Create Microsoft Entra groups and assign frontline users:** With Microsoft Entra groups, you can grant access and permissions to a group of users instead of for each individual user. Groups are used to manage users that all need the same access and permissions to resources, such as potentially restricted apps and services. Instead of adding special permissions to individual users, you create a group that applies the special permissions to every member of that group.
 
-The table below includes recommendations for applying groups in frontline implementations. For more information on group types, membership types, and assignment, see the [Azure AD documentation for groups and membership](/azure/active-directory/fundamentals/concept-learn-about-groups?context=%2Fazure%2Factive-directory%2Fenterprise-users%2Fcontext%2Fugr-context) and [managing groups](/azure/active-directory/fundamentals/how-to-manage-groups). For more information on security group limits and other Azure AD service limits, see [Azure Active Directory Service limits and restrictions](/azure/active-directory/enterprise-users/directory-service-limits-restrictions).
+The table below includes recommendations for applying groups in frontline implementations. For more information on group types, membership types, and assignment, see the [Microsoft Entra documentation for groups and membership](/azure/active-directory/fundamentals/concept-learn-about-groups?context=%2Fazure%2Factive-directory%2Fenterprise-users%2Fcontext%2Fugr-context) and [managing groups](/azure/active-directory/fundamentals/how-to-manage-groups). For more information on security group limits and other Microsoft Entra service limits, see [Microsoft Entra service limits and restrictions](/azure/active-directory/enterprise-users/directory-service-limits-restrictions).
 
 |Use case |Group type |
 |---------|-----------|
@@ -110,15 +111,15 @@ The table below includes recommendations for applying groups in frontline implem
 
 ### Assign frontline licenses
 
-You can add licenses to individual users or to groups of users in Azure AD. Group assignment is the most scalable way to assign licenses to your frontline workers. You can assign one or more product licenses to a group.
+You can add licenses to individual users or to groups of users in Microsoft Entra ID. Group assignment is the most scalable way to assign licenses to your frontline workers. You can assign one or more product licenses to a group.
 
 [Learn more about group-based licensing](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) and [assigning licenses to groups](/azure/active-directory/enterprise-users/licensing-groups-assign).
 
-You may need to [unassign licenses](/microsoft-365/admin/manage/remove-licenses-from-users) if you're changing some users from E to F licenses. [Learn more about how to switch specific users from E to F licenses](switch-from-enterprise-to-frontline.md#switch-users-to-a-microsoft-365-f-plan).
+You may need to [unassign licenses](../admin/manage/assign-licenses-to-users.md) if you're changing some users from E to F licenses. [Learn more about how to switch specific users from E to F licenses](switch-from-enterprise-to-frontline.md#switch-users-to-a-microsoft-365-f-plan).
 
 ## Step 4: Configure device enrollment
 
-Registering devices in Azure AD creates a unique identity that can be used to secure and manage devices. [Learn more about Azure AD device identity](/azure/active-directory/devices/).
+Registering devices in Microsoft Entra ID creates a unique identity that can be used to secure and manage devices. [Learn more about Microsoft Entra device identity](/azure/active-directory/devices/).
 
 ### Shared device enrollment with Intune
 
@@ -139,7 +140,7 @@ Use Microsoft Intune to keep your frontline workers' devices secure and protecte
 Zero-touch provisioning of shared device mode isn’t currently supported by third-party mobile device management(MDM) solutions. However, you can [manually configure shared device mode](/azure/active-directory/develop/tutorial-v2-shared-device-mode#set-up-an-android-device-in-shared-mode) for Android and iOS devices managed in third-party MDM solutions.
 
 > [!NOTE]
-> While these steps register the device in Azure AD, they don't connect Azure AD to the MDM solution. Conditional access won't be available for these devices.
+> While these steps register the device in Microsoft Entra ID, they don't connect Microsoft Entra ID to the MDM solution. Conditional access won't be available for these devices.
 
 [Learn more about configuration with VMware Workspace ONE](https://docs.vmware.com/en/VMware-Workspace-ONE-Access/21.08/ws1_access_connector_install/GUID-271C47F6-856C-40F0-97AB-A8AD95025F9C.html) and [SOTI](https://www.soti.net/mc/help/v15.0/en/console/configurations/advancedconfigurations/shareddevice/shareddevice.html).
 
@@ -201,7 +202,7 @@ You can use all of these apps within Microsoft Teams. For more information about
 
 After provisioning users, enrolling your devices, and configuring your applications, you’re now ready to create policies to secure your organization’s infrastructure resources.
 
-- **Conditional access:** Plan an [Azure Active Directory conditional access deployment](/azure/active-directory/conditional-access/plan-conditional-access).
+- **Conditional access:** Plan a [Microsoft Entra Conditional Access deployment](/azure/active-directory/conditional-access/plan-conditional-access).
 - **App protection policies:** [Learn about app management in Microsoft Intune](/mem/intune/apps/app-management).
 - **Multi-factor authentication:** Require [multi-factor authentication for Intune device enrollment](/mem/intune/enrollment/multi-factor-authentication).
 

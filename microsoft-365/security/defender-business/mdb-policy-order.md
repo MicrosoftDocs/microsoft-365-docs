@@ -2,16 +2,15 @@
 title: Understand policy order in Microsoft Defender for Business
 description: Learn about order of priority with cybersecurity policies to protect your company devices with Defender for Business.
 search.appverid: MET150
-author: denisebmsft
-ms.author: deniseb
-manager: dansimp 
+author: siosulli
+ms.author: siosulli
+manager: deniseb 
 audience: Admin
 ms.topic: overview
-ms.service: microsoft-365-security
-ms.subservice: mdb
+ms.service: defender-business
 ms.localizationpriority: medium
 ms.date: 05/05/2023
-ms.reviewer: jomaun
+ms.reviewer: nehabha
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB

@@ -1,18 +1,12 @@
 ---
 title: Submit files in Microsoft Defender for Endpoint
-description: Learn how to use the unified submissions feature in Microsoft 365 Defender to submit suspicious emails, URLs, email attachments, and files to Microsoft for scanning.
-keywords: antivirus, spam, phish, file, alert, Microsoft Defender for Endpoint, false positive, false negative, blocked file, blocked url, submission, submit, report
-search.product: eADQiWindows 10XVcnh
+description: Learn how to use the unified submissions feature in Microsoft Defender XDR to submit suspicious emails, URLs, email attachments, and files to Microsoft for scanning.
 search.appverid: met150
-ms.date: 06/15/2021
-ms.service: microsoft-365-security
-ms.subservice: mde
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
-manager: dansimp
+ms.date: 02/15/2024
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
+manager: deniseb
 localization_priority: Normal
 audience: ITPro
 ms.topic: how-to
@@ -24,78 +18,104 @@ ms.custom: FPFN
 
 # Submit files in Microsoft Defender for Endpoint
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to**
 
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146806)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-usewdatp-abovefoldlink).
 
-In Microsoft Defender for Endpoint, admins can use the unified submissions feature to submit files and file hashes (SHAs) to Microsoft for review. The unified submissions experience is a one-stop shop for submitting emails, URLs, email attachments, and files in one, easy-to-use submission experience. Admins can use the Microsoft 365 Defender portal or the Microsoft Defender for Endpoint Alert page to submit suspicious files.
+In Microsoft Defender for Endpoint, admins can use the unified submissions feature to submit files and file hashes (SHAs) to Microsoft for review. The unified submissions experience is a one-stop shop for submitting emails, URLs, email attachments, and files in one, easy-to-use submission experience. Admins can use the Microsoft Defender portal or the Microsoft Defender for Endpoint Alert page to submit suspicious files.
 
 ## What do you need to know before you begin?
 
-- The new unified submissions experience is available only in subscriptions that include Microsoft 365 Defender or Microsoft Defender for Endpoint Plan 2.
+The new unified submissions experience is available only in subscriptions that include Microsoft Defender for Endpoint Plan 2.
+You need to assign permissions before you can perform the procedures in this article. Use one of the following options:
 
-- To submit files to Microsoft, you need to be a member of one of the following role groups:
+**Microsoft Defender for Endpoint** permissions:
+ - Submit files / file hashes: _"Alerts investigation" or "Manage security settings in Security Center"_
+ - View submissions: "_View Data - Security operations"_
+                  
+**Microsoft Defender XDR** unified RBAC permissions:
+ - Submit files / file hashes: *"Alerts (Manage)" or "Core security settings (manage)"*
+ - View submissions: _"Security data basics (read)"_
+                        
+For more information about how you can submit spam, phish, URLs, and email attachments to Microsoft, see [Use the Submissions page to submit suspected spam, phish, URLs, legitimate email getting blocked, and email attachments to Microsoft](../office-365-security/submissions-admin.md).
 
-  - **Organization Management** or **Security Administrator** in the [Microsoft 365 Defender portal](../office-365-security/mdo-portal-permissions.md).
+## Submit a file or file hash to Microsoft from the Defender portal
 
-- For more information about how you can submit spam, phish, URLs, and email attachments to Microsoft, see [Report messages and files to Microsoft](../office-365-security/submissions-report-messages-files-to-microsoft.md).
+1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Actions & submissions** \> **Submissions**. Or, to go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
 
-## Report items to Microsoft from the portal
+2. On the **Submissions** page, select the **Files** tab.
 
-If you have a file that you suspect might be malware or is being incorrectly detected (false positive), you can submit it to Microsoft for analysis using the Microsoft 365 Defender portal at https://security.microsoft.com/.
+3. On the **Files** tab, select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Add new submission**.
 
-### Submit a file or file hash
+   :::image type="content" source="../../media/unified-admin-submission-new.png" alt-text="Screenshot showing how to add a new submission.":::
 
-1. Open Microsoft 365 Defender at [https://security.microsoft.com](https://security.microsoft.com), click **Actions & submissions**, click **Submissions**, go to **Files** tab, and then select **Add new submission**.
+2. In the **Submit items to Microsoft for review** flyout that opens, select **Files** or **File hash** from the **Select the submission type** dropdown list.
 
-    :::image type="content" source="../../media/unified-admin-submission-new.png" alt-text="Screenshot showing how to add a new submission.":::
+   - If you selected **Files**, configure the following options:
+     - Select **Browse files**. In the dialog that opens, find and select the file, and then select **Open**. Repeat this step as many times as necessary. To remove an entry from the flyout, select :::image type="icon" source="../../media/m365-cc-sc-close-icon.png" border="false"::: next to the entry.
+       - The maximum total size of all files is 500 MB.
+       - Use the password 'infected' to encrypt archive files.
+     - **The file should have been categorized as**: Select one of the following values:
+       - **Malware** (false negative)
+       - **Unwanted software**
+       - **Clean** (false positive)
+     - **Choose the priority**: Select one of the following values:
+       - **Low - bulk file or file hash submission**
+       - **Medium - standard submission**
+       - **High - needs immediate attention** (max three per day)
+     - **Notes for Microsoft (optional)**: Enter an optional note.
+     - **Share feedback and relevant content with Microsoft**: Read the privacy statement and then select this option.
 
-2. Use the **Submit items to Microsoft for review** flyout that appears to submit the **File** or **File hash**.
+     :::image type="content" source="../../media/unified-admin-submission-file.png" alt-text="Screenshot showing how to submit files.":::
 
-3. In the **Select the submission type** box, select **File** or **File hash** from the drop-down list.
+   - If you selected **File hash**, configure the following options:
+     - In the empty box, enter the file hash value (for example, `2725eb73741e23a254404cc6b5a54d9511b9923be2045056075542ca1bfbf3fe`) and then press the ENTER key. Repeat this step as many times as necessary. To remove an entry from the flyout, select :::image type="icon" source="../../media/m365-cc-sc-close-icon.png" border="false"::: next to the entry.
+     - **The file should have been categorized as**: Select one of the following values:
+       - **Malware** (false negative)
+       - **Unwanted software**
+       - **Clean** (false positive)
+     - **Notes for Microsoft (optional)**: Enter an optional note.
+     - **Share feedback and relevant content with Microsoft**: Read the privacy statement and then select this option.
 
-4. When submitting a file, click **Browse files**. In the dialog that opens, find and select the file, and then click **Open**. Note that for **File hash** submissions, you'll either have to copy or type in the file hash.
+     :::image type="content" source="../../media/unified-admin-submission-file-hash.png" alt-text="Screenshot showing how to submit files hashes.":::
 
-5. In the **This file should have been categorized as** section, choose either **Malware** (false negative), or **Unwanted software**, or **Clean** (false positive).
+   When you're finished in the **Submit items to Microsoft for review** flyout, select **Submit**.
 
-6. Next, **Choose the priority**. Note that for **File hash** submissions, **Low - bulk file or file hash submission** is the only choice, and is automatically selected.
+Back on the **Files** tab of the **Submissions** page, the submission is shown.
 
-    :::image type="content" source="../../media/unified-admin-submission-file.png" alt-text="Screenshot showing how to submit files.":::
+To view the details of the submission, select the submission by clicking anywhere in the row other than the check box next to the **Submission name**. The details of the submission are in the details flyout that opens.
 
-7. Click **Submit**.
+## Report items to Microsoft from the Alerts page in the Defender portal
 
-   If you want to view the details of your submission, select your submission from the **Submissions name** list to open the **Result details** flyout.
+1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Incidents & alerts** \> **Alerts**. Or, to go directly to the **Alerts** page, use <https://security.microsoft.com/alerts>.
 
-## Report items to Microsoft from the Alerts page
+2. On the **Alerts** page, find the alert that contains the file you want to report. For example, you can select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter**, and then select **Service sources** \> **Microsoft Defender for Endpoint**.
 
-You can also submit a file or file hash directly from the list of alerts on the **Alerts** page.
+3. Select the alert from the list by clicking anywhere in the row other than the check box next to the **Alert name** value.
 
-1. Open the Microsoft 365 Defender at [https://security.microsoft.com](https://security.microsoft.com), click **Incidents & alerts**, and then click **Alerts** to view the list of alerts.
+4. In the details flyout that opens, select :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: \> **Submit items to Microsoft for review**.
 
-2. Select the alert you want to report. Note that you are submitting a file that is nestled within the alert.
+   :::image type="content" source="../../media/unified-admin-submission-alerts-queue.png" alt-text="Screenshot showing how to submit items from an alerts queue.":::
 
-3. Click the ellipses next to **Manage alert** to see additional options. Select **Submit items to Microsoft for review**.
+5. The options that are available in the **Submit items to Microsoft for review** flyout that opens are basically same as described in the previous section.
 
-    :::image type="content" source="../../media/unified-admin-submission-alerts-queue.png" alt-text="Screenshot showing how to submit items from an alerts queue.":::
+   The only difference is an **Include alert story** option that you can select to attach a JSON file that helps Microsoft investigate the submission.
 
-4. In the next flyout that opens, select the submission type.
+   :::image type="content" source="../../media/unified-admin-submission-alert-queue-flyout.png" alt-text="Screenshot showing how to specify a submission type and fill in required fields.":::
 
-    :::image type="content" source="../../media/unified-admin-submission-alert-queue-flyout.png" alt-text="Screenshot showing how to specify a submission type and fill in required fields.":::
+   When you're finished in the **Submit items to Microsoft for review** flyout, select **Submit**.
 
-    If you select **File** as the submission type, upload the file, categorize your submission, and choose the priority.
-
-    If you select **File Hash** as the submission type, choose the file hashes that are available from the drop-down. You can select multiple file hashes.
-
-5. Click **Submit**.
+The submission is available on the **Files** tab of the **Submissions** page at <https://security.microsoft.com/reportsubmission?viewid=file>.
 
 ## Related information
 
 - [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)
-- [Microsoft Defender for Endpoint in Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md)
+- [Microsoft Defender for Endpoint in Microsoft Defender XDR](../defender/microsoft-365-security-center-mde.md)
 - [Address false positives/negatives](defender-endpoint-false-positives-negatives.md)
 - [View and organize alerts queue in Microsoft Defender for Endpoint](alerts-queue.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

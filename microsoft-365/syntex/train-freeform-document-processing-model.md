@@ -2,18 +2,20 @@
 title: Train a freeform document processing model in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: ssquires
-ms.date: 10/12/2022
+ms.date: 02/21/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
+ms.subservice: syntex-content-intelligence
 search.appverid: 
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
 ms.custom: admindeeplinkSPO
 ms.localizationpriority:  medium
+ROBOTS: NOINDEX, NOFOLLOW
 description: Learn how to train a freeform document processing model in Microsoft Syntex.
 ---
 
