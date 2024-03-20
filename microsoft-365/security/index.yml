@@ -50,77 +50,77 @@ conceptualContent:
       - title: Protect against and recover from ransomware
         links:
          - url: /security/ransomware/human-operated-ransomware
-           itemType: concept
+           itemType: Concept
            text: What is ransomware?
          - url: /compliance/assurance/assurance-malware-and-ransomware-protection
-           itemType: concept
+           itemType: Concept
            text: Malware and ransomware protection
          - url: /security/ransomware
-           itemType: how-to-guide
+           itemType: How-to-guide
            text: Recover from a ransomware attack
          - url: /microsoft-365/security/defender/advanced-hunting-find-ransomware
-           itemType: how-to-guide
+           itemType: How-to-guide
            text: Hunt for ransomware
 
    # Card
       - title: Respond to security incidents
         links:
          - url: /microsoft-365/security/defender/incidents-overview
-           itemType: overview
+           itemType: Overview
            text: Incident response with Microsoft Defender XDR
          - url: /microsoft-365/security/defender/manage-incidents
-           itemType: how-to-guide
+           itemType: How-to-guide
            text: Manage incidents
          - url: /microsoft-365/security/defender/first-incident-overview
-           itemType: how-to-guide
+           itemType: How-to-guide
            text: Respond to your first incident
 
   # Card
       - title: Simulate attacks
         links:
          - url: /microsoft-365/security/office-365-security/attack-simulation-training-get-started
-           itemType: get-started
+           itemType: Get-started
            text: Get started using attack simulation training
          - url: /microsoft-365/security/office-365-security/attack-simulation-training-insights
-           itemType: overview
+           itemType: Overview
            text: Insights and reporting for attack simulation
          - url: /microsoft-365/security/office-365-security/advanced-delivery-policy-configure
-           itemType: how-to-guide
+           itemType: How-to-guide
            text: Configure third-party phishing simulation
 
         # Card
       - title: Enable safe email messages
         links:
          - url: /microsoft-365/security/office-365-security/mdo-security-comparison
-           itemType: overview
+           itemType: Overview
            text: Get Started with Defender for Office 365
          - url: /microsoft-365/security/office-365-security/mdo-sec-ops-guide
-           itemType: how-to-guide
+           itemType: How-to-guide
            text: Operationalize Defender for Office 365
          - url: /microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered
-           itemType: how-to-guide
+           itemType: How-to-guide
            text: Investigate malicious emails
 
 # Card
       - title: Protect your endpoints
         links:
          - url: /microsoft-365/security/defender-endpoint/onboard-configure
-           itemType: how-to-guide
+           itemType: How-to-guide
            text: Onboard devices to Defender for Endpoint
          - url: /microsoft-365/security/defender-endpoint/attack-surface-reduction
-           itemType: how-to-guide
+           itemType: How-to-guide
            text: Implement attack surface reduction rules
          - url: /microsoft-365/security/defender-endpoint/next-generation-protection
-           itemType: overview
+           itemType: Overview
            text: Configure Next generation protection
 # Card
       - title: Detect and remediate vulnerabilities
         links:
          - url: /microsoft-365/security/defender-vulnerability-management/tvm-software-inventory
-           itemType: reference
+           itemType: Reference
            text: Software inventory in Defender Vulnerability Management
          - url: /microsoft-365/security/defender-vulnerability-management/tvm-security-recommendation
-           itemType: overview
+           itemType: Overview
            text: Security recommendations
 
 additionalContent:
