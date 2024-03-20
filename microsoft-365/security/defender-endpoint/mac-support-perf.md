@@ -59,7 +59,7 @@ To troubleshoot and mitigate such issues, follow these steps:
 
 2. Open Finder and navigate to **Applications** \> **Utilities**. Open **Activity Monitor** and analyze which applications are using the resources on your system. Typical examples include software updaters and compilers.
 
-3. Make sure real-time protection is enabled. To check the status of real-time protection, run the following command:
+3. Make sure real-time protection is enabled. Run the following command:
 
    ```bash
    mdatp health --field real_time_protection_enabled
