@@ -25,7 +25,7 @@ Copilot for Security delivers information about threat actors, indicators of com
 This article introduces you to Copilot and includes sample prompts that can help Defender TI users.
 
 ## Know before you begin
-- You can experience the integration of Copilot for Security with Defender TI through the [dedicated site](#using-copilot-for-security-standalone-site-to-get-threat-intelligence) (also known as the **standalone** experience) or through the [Microsoft Defender portal](#using-microsoft-copilot-in-defender-to-get-threat-intelligence) (**embedded** experience). [Learn more about Microsoft Copilot for Security experiences](/security-copilot/experiences-security-copilot)
+- You can use Copilot capabilities to surface threat intelligence in either the [Copilot for Security portal](#using-copilot-for-security-standalone-portal-to-get-threat-intelligence) or the [Microsoft Defender portal](#using-microsoft-copilot-in-defender-to-get-threat-intelligence). [Learn more about Copilot for Security experiences](/security-copilot/experiences-security-copilot)
 - Be clear and specific with your prompts. You might get better results if you include specific threat actor names or IOCs in your prompts. It might also help if you add **threat intelligence** to your prompt, like:
   - Show me threat intelligence data for Aqua Blizzard.
   - Summarize threat intelligence data for "malicious.com."
@@ -40,7 +40,7 @@ This article introduces you to Copilot and includes sample prompts that can help
 
 [Learn more about creating effective prompts](/security-copilot/prompting-tips)
 
-## Using Copilot for Security standalone site to get threat intelligence
+## Using Copilot for Security standalone portal to get threat intelligence
 
 1.	Go to [Microsoft Copilot for Security](https://go.microsoft.com/fwlink/?linkid=2247989) and sign in with your credentials.
 2.	Make sure that the Defender TI plugin is turned on. In the prompt bar, select the **Sources** icon then choose **Plugins**. 
