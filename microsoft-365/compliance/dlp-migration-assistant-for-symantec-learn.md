@@ -57,7 +57,7 @@ Here's how the migration assistant translates different policy elements from Sym
 
 ### Symantec DLP supported versions
 
-The migration assistant supports migrating DLP policies from Symantec versions 15.0 through 15.8 maintenance packs included.
+The migration assistant supports migrating DLP policies from Symantec versions 15.0 through 16.0 maintenance packs included.
 
 ### Supported Workloads
 
