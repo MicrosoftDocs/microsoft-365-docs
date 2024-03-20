@@ -1,10 +1,9 @@
 ---
 title: Review Microsoft Defender for Endpoint architecture requirements and key concepts
-description: The technical diagram for Microsoft Defender for Endpoint in Microsoft 365 Defender will help you understand identity in Microsoft 365 before you build your trial lab or pilot environment.
+description: The technical diagram for Microsoft Defender for Endpoint in Microsoft Defender XDR will help you understand identity in Microsoft 365 before you build your trial lab or pilot environment.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -29,7 +28,7 @@ ms.topic: conceptual
 # Review Microsoft Defender for Endpoint architecture requirements and key concepts
 
 **Applies to:**
-Microsoft 365 Defender
+Microsoft Defender XDR
 
 This article will guide you in the process of setting up the evaluation for Microsoft Defender for Endpoint environment.
 
@@ -49,9 +48,9 @@ Call-out | Description
 :---|:---|
 1 | Devices are on-boarded through one of the supported management tools. 
 2 | On-boarded devices provide and respond to Microsoft Defender for Endpoint signal data.
-3 | Managed devices are joined and/or enrolled in Azure Active Directory.
-4 | Domain-joined Windows devices are synchronized to Azure Active Directory using Azure Active Directory Connect.
-5 | Microsoft Defender for Endpoint alerts, investigations, and responses are managed in Microsoft 365 Defender.
+3 | Managed devices are joined and/or enrolled in Microsoft Entra ID.
+4 | Domain-joined Windows devices are synchronized to Microsoft Entra ID using Microsoft Entra Connect.
+5 | Microsoft Defender for Endpoint alerts, investigations, and responses are managed in Microsoft Defender XDR.
 
 ## Understand key concepts
 
@@ -59,7 +58,7 @@ The following table identified key concepts that are important to understand whe
 
 Concept | Description | More information
 :---|:---|:---|
-Administration Portal | Microsoft 365 Defender portal to monitor and assist in responding to alerts of potential advanced persistent threat activity or data breaches. | [Microsoft Defender for Endpoint portal overview](/microsoft-365/security/defender-endpoint/portal-overview)
+Administration Portal | Microsoft Defender portal to monitor and assist in responding to alerts of potential advanced persistent threat activity or data breaches. | [Microsoft Defender for Endpoint portal overview](/microsoft-365/security/defender-endpoint/portal-overview)
 Attack Surface Reduction | Help reduce your attack surfaces by minimizing the places where your organization is vulnerable to cyberthreats and attacks. | [Overview of attack surface reduction](/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction)
 Endpoint Detection and Response | Endpoint detection and response capabilities provide advanced attack detections that are near real-time and actionable. | [Overview of endpoint detection and response capabilities](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)
 Behavioral Blocking and Containment | Behavioral blocking and containment capabilities can help identify and stop threats, based on their behaviors and process trees even when the threat has started execution. | [Behavioral blocking and containment](/microsoft-365/security/defender-endpoint/behavioral-blocking-containment)
@@ -82,5 +81,5 @@ Microsoft Defender for Endpoint can also be integrated into other Security Infor
 
 Return to the overview for [Evaluate Microsoft Defender for Endpoint](eval-defender-endpoint-overview.md)
 
-Return to the overview for [Evaluate and pilot Microsoft 365 Defender](eval-overview.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+Return to the overview for [Evaluate and pilot Microsoft Defender XDR](eval-overview.md)
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

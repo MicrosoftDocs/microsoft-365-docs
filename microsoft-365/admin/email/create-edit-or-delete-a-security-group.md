@@ -47,7 +47,7 @@ There are also [Groups in Exchange Online and SharePoint Online](#groups-in-exch
 
 3. On the **Set up the basics** page, add your group name and a description and choose **Next**.
 
-4. On the **Edit settings** page, select whether you want Azure AD roles can be assigned to this group and select **Next**.
+4. On the **Edit settings** page, select whether you want Microsoft Entra roles can be assigned to this group and select **Next**.
 
 5. Review your selections and choose **Create group** and **Close**.
 

@@ -4,7 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: sharonchoi
+ms.reviewer: taylorau, stutisingh
 ms.date: 07/17/2023
 audience: Admin
 ms.topic: article
@@ -15,6 +15,7 @@ ms.collection:
 - scotvorg
 - M365-subscription-management
 - Adm_O365
+- essentials-get-started
 ms.custom:
 - AdminSurgePortfolib
 - M365-Lighthouse                         
@@ -59,7 +60,7 @@ For more information, see [CPP role-based access](/partner-center/insights-roles
 
 ## Next steps
 
-Once you have access to Sales Advisor, you can start reviewing insights on the Opportunities page. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Sales Advisor** > **Opportunities**. To learn more about opportunities, see [Understanding opportunities and data in Sales Advisor](m365-lighthouse-understanding-opportunities-and-data.md).
+Once you have access to Sales Advisor, you can start reviewing insights on the Opportunities page. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Sales Advisor** > **Opportunities**. To learn more about opportunities, see [Understanding opportunities and data in Sales Advisor](m365-lighthouse-understanding-opportunities-and-data.md).
 
 ## Related content
 

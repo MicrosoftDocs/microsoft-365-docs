@@ -2,9 +2,9 @@
 title: Handle incoming documents with Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: lauris
-ms.date: 05/01/2023
+ms.date: 03/11/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -21,7 +21,7 @@ description: Learn how to use Microsoft Syntex to manage various incoming busine
 
 :::row:::
    :::column span="":::      
-      Use Syntex to manage and process incoming business documents, such as insurance forms, business verifications, and rental contracts.
+      Use Microsoft Syntex to manage and process incoming business documents, such as insurance forms, business verifications, and rental contracts.
 
       Features used:
       - Document processing models 
@@ -44,11 +44,11 @@ AI-based automation significantly reduces the time needed to process these forms
 
 ## Rental contract management
 
-Most landlords use a standard rental agreement with their tenants. Once a new tenant completes the agreement and sends it to the landlord, it's then placed in a SharePoint library where Syntex will extract the key information.
+Most owners use a standard rental agreement with their tenants. Once a new tenant completes the agreement and sends it to the landlord, the agreement is placed in a SharePoint library where Microsoft Syntex extracts the key information.
 
-During the life of the contract, certain events can occur that require correspondence to be sent to the tenant such as late rental notices, grievances, and eviction notices.  Correspondence for these events will also use standard templates that can use the information originally captured from the agreement.
+During the life of the contract, certain events can occur that require correspondence to be sent to the tenant such as late rental notices, grievances, and eviction notices.  Correspondence for these events also uses standard templates that can use the information originally captured from the agreement.
 
-Taking this a little further, PowerApps can begin to list all the active tenants, the correspondence sent and even allow them to create new correspondence using content assembly and Power Automate.
+Taking this further, PowerApps can begin to list all the active tenants, the correspondence sent and even allow them to create new correspondence using content assembly and Power Automate.
 
 ## Construction documentation verification
 
@@ -56,7 +56,7 @@ As part of annual verification of partners and vendors, W-9 forms and Certificat
 
 An improved process is required to do more with less. A Power Platform solution is created to extract attachments from incoming emails to save them to SharePoint.
 
-Syntex models are then created to identify and extract information from CLIs and W-9 forms, such as name, type of coverage, amount of coverage, date. Extracted information can be used to populate other applications used during construction proposals. 
+Microsoft Syntex models are then created to identify and extract information from CLIs and W-9 forms, such as name, type of coverage, amount of coverage, date. Extracted information can be used to populate other applications used during construction proposals. 
 <br>
 <br>
 

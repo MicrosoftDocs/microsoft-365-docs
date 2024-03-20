@@ -4,7 +4,7 @@ f1.keywords:
   - NOCSH
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 audience: Admin
 ms.topic: overview
 ms.localizationpriority: medium
@@ -17,9 +17,9 @@ ms.collection:
 description: Admins can learn about Microsoft Teams features in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 8/4/2023
+ms.date: 10/17/2023
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview" target="_blank">Microsoft Defender for Office 365 plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison" target="_blank">Microsoft Defender for Office 365 plan 2</a>
 ---
 
 # Microsoft Defender for Office 365 Plan 2 support for Microsoft Teams
@@ -40,7 +40,7 @@ In Microsoft 365 E5 and Defender for Office 365 Plan 2, we've extended Teams pro
 
   Instructions to configure ZAP for Teams protection are in the next section.
 
-- **Teams messages in quarantine**: As with email messages that are identified as malware or high confidence phishing, only admins are able to manage Teams messages that are quarantined by ZAP for Teams by default. For more information, see [Manage quarantined Teams messages](quarantine-admin-manage-messages-files.md#use-the-microsoft-365-defender-portal-to-manage-microsoft-teams-quarantined-messages).
+- **Teams messages in quarantine**: As with email messages that are identified as malware or high confidence phishing, only admins are able to manage Teams messages that are quarantined by ZAP for Teams by default. For more information, see [Manage quarantined Teams messages](quarantine-admin-manage-messages-files.md#use-the-microsoft-defender-portal-to-manage-microsoft-teams-quarantined-messages).
 
 - The **Teams Message Entity Panel** is a single place to store all Teams message metadata for immediate SecOps review. Any threats coming from Teams chats, group chats, meeting chats, and other channels can be found in one place as soon as they're assessed. For more information, see [Teams Message Entity Panel for Microsoft Teams](teams-message-entity-panel.md).
 
@@ -54,22 +54,12 @@ In Microsoft 365 E5 and Defender for Office 365 Plan 2, we've extended Teams pro
    - **Turn on ZAP for Teams**: Verify the toggle is **On** :::image type="icon" source="../../media/scc-toggle-on.png" border="false":::.
    - **Turn off ZAP for Teams**: Slide the toggle to **Off** :::image type="icon" source="../../media/scc-toggle-off.png" border="false":::.
 
-   > [!NOTE]
-   > Before August 22, 2023, even if the toggle is **On**, do the following steps to activate ZAP for Teams protection:
-   >
-   > 1. Slide the toggle to **Off** :::image type="icon" source="../../media/scc-toggle-off.png" border="false":::, select **Save** at the bottom of the page, and then select **OK** in the confirmation dialog that opens.
-   > 2. Slide the toggle to **On** :::image type="icon" source="../../media/scc-toggle-on.png" border="false":::, select **Save** at the bottom of the page, and then select **OK** in the confirmation dialog that opens.
-   >
-   > Before August 22, 2023, run the following command in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) to verify that ZAP for Teams protection is turned on: `Get-TeamsProtectionPolicy | Format-List ZapEnabled`. The value True means ZAP for Teams is turned on. The value False means ZAP for Teams is turned off.
-   >
-   > After August 22, 2023, ZAP for Teams protection is turned on and functional by default (**On** on the **Microsoft Teams protection** page means ZAP for Teams is turned on, so there's no need to confirm in PowerShell).
-
 3. When the toggle is **On** :::image type="icon" source="../../media/scc-toggle-on.png" border="false":::, use the remaining settings on the page to customize ZAP for Teams protection:
 
    - **Quarantine policies** section: You can select the existing quarantine policy to use for messages that are quarantined by ZAP for Teams protection as **Malware** or **High confidence phishing**. Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy).
 
      > [!NOTE]
-     > Quarantine notifications are disabled in the policy named AdminOnlyAccessPolicy. To notify recipients that have messages quarantined as malware or high confidence phishing, create or use an existing quarantine policy where quarantine notifications are turned on. For instructions, see [Create quarantine policies in the Microsoft 365 Defender portal](quarantine-policies.md#step-1-create-quarantine-policies-in-the-microsoft-365-defender-portal).
+     > Quarantine notifications are disabled in the policy named AdminOnlyAccessPolicy. To notify recipients that have messages quarantined as malware or high confidence phishing, create or use an existing quarantine policy where quarantine notifications are turned on. For instructions, see [Create quarantine policies in the Microsoft Defender portal](quarantine-policies.md#step-1-create-quarantine-policies-in-the-microsoft-defender-portal).
 
    - **Exclude these participants** section: Specify the **Users**, **Groups**, or **Domains** to exclude from ZAP for Teams protection. Exclusions matter for message _recipients_, not message _senders_. For more information, see [Zero-hour auto purge (ZAP) in Microsoft Teams](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-in-microsoft-teams).
 
@@ -172,5 +162,5 @@ For detailed syntax and parameter information, see [Set-TeamsProtectionPolicyRul
 ## See also
 
 - [Microsoft Teams](/microsoftteams/teams-overview)
-- [Managing Teams quarantined messages](quarantine-admin-manage-messages-files.md#use-the-microsoft-365-defender-portal-to-manage-microsoft-teams-quarantined-messages)
+- [Managing Teams quarantined messages](quarantine-admin-manage-messages-files.md#use-the-microsoft-defender-portal-to-manage-microsoft-teams-quarantined-messages)
 - [Get started using Attack simulation training in Defender for Office 365](attack-simulation-training-get-started.md)

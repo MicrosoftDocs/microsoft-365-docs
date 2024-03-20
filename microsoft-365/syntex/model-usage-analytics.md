@@ -2,9 +2,9 @@
 title: Analyze how your models are used in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: ssquires
-ms.date: 12/15/2022
+ms.date: 02/21/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex

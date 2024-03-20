@@ -1,9 +1,8 @@
 ---
-title: Step 3. Plan for Microsoft 365 Defender integration with your SOC catalog of services
-description: The basics of integrating Microsoft 365 Defender into your security operations catalog of services.
+title: Step 3. Plan for Microsoft Defender XDR integration with your SOC catalog of services
+description: The basics of integrating Microsoft Defender XDR into your security operations catalog of services.
 keywords: incidents, alerts, investigate, correlation, attack, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, incident response, cyber-attack, secops, security operations, soc
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 f1.keywords: 
   - NOCSH
 ms.author: dansimp
@@ -22,12 +21,12 @@ search.appverid:
 ms.date: 05/09/2023
 ---
 
-# Step 3. Plan for Microsoft 365 Defender integration with your SOC catalog of services
+# Step 3. Plan for Microsoft Defender XDR integration with your SOC catalog of services
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 An established Security Operations Center (SOC) should have a catalog of services that might include:
 
@@ -48,7 +47,7 @@ An established Security Operations Center (SOC) should have a catalog of service
 - Data loss prevention
 - Brand monitoring
 
-The components of Microsoft 365 Defender are:
+The components of Microsoft Defender XDR are:
 
 - **Microsoft Defender for Identity** (formerly Azure Advanced Threat Protection, also known as Azure ATP) is a cloud-based security solution that uses Active Directory Domain Services (AD DS) signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at organizations.
 
@@ -58,9 +57,9 @@ The components of Microsoft 365 Defender are:
 
 - **Microsoft Defender for Cloud Apps** is a cloud access security broker (CASB) that supports various deployment modes including log collection, API connectors, and reverse proxy. It provides rich visibility, control over data travel, and sophisticated analytics to identify and combat cyberthreats across all Microsoft and third-party cloud services.
 
-Because Microsoft 365 Defender components and technologies span various functions, your SOC team will need to determine which roles and responsibilities are best suited to manage each component of Microsoft 365 Defender and align to service function.
+Because Microsoft Defender XDR components and technologies span various functions, your SOC team will need to determine which roles and responsibilities are best suited to manage each component of Microsoft Defender XDR and align to service function.
 
-To integrate the capabilities of Microsoft 365 Defender, you will need to refine the SOC services. For more information about the capabilities of Microsoft 365 Defender, see the following articles:
+To integrate the capabilities of Microsoft Defender XDR, you will need to refine the SOC services. For more information about the capabilities of Microsoft Defender XDR, see the following articles:
 
 - [What is Microsoft Defender for Endpoint?](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)
 - [What is Microsoft Defender for Identity?](/defender-for-identity/what-is)
@@ -69,5 +68,5 @@ To integrate the capabilities of Microsoft 365 Defender, you will need to refine
 
 ## Next step
 
-[Step 4. Define Microsoft 365 Defender roles, responsibilities, and oversight](integrate-microsoft-365-defender-secops-roles.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[Step 4. Define Microsoft Defender XDR roles, responsibilities, and oversight](integrate-microsoft-365-defender-secops-roles.md)
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

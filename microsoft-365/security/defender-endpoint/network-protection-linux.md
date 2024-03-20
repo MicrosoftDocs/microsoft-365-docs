@@ -1,19 +1,13 @@
 ---
 title: Use network protection to help prevent Linux connections to bad sites
 description: Protect your network by preventing Linux users from accessing known malicious and suspicious network addresses
-keywords: Network protection, Linux exploits, malicious website, ip, domain, domains, command and control, SmartScreen, toast notification
-ms.service: microsoft-365-security
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
+ms.service: defender-endpoint
 ms.localizationpriority: medium
 audience: ITPro
-author: dansimp
-ms.author: dansimp
-ms.reviewer: oogunrinde
-manager: dansimp
-ms.custom: asr
-ms.subservice: mde
+author: siosulli
+ms.author: siosulli
+manager: deniseb
+ms.subservice: linux
 ms.topic: overview
 ms.collection: 
 - m365-security
@@ -25,13 +19,13 @@ ms.date: 02/17/2023
 
 # Network protection for Linux
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -86,7 +80,7 @@ sudo apt install -y mdatp
 
 ### Device Onboarding
 
-To onboard the device, you must download the Python onboarding package for Linux server from Microsoft 365 Defender -> Settings -> Device Management -> Onboarding and run:
+To onboard the device, you must download the Python onboarding package for Linux server from Microsoft Defender XDR -> Settings -> Device Management -> Onboarding and run:
 
 ```bash
 sudo python3 MicrosoftDefenderATPOnboardingLinuxServer.py
@@ -94,24 +88,25 @@ sudo python3 MicrosoftDefenderATPOnboardingLinuxServer.py
 
 ### Validation
 
-A. Check Network Protection has effect on always blocked sites:
-<!--These links are purposely blocked; will trigger as broken link--->
-- [http://www.smartscreentestratings2.net](http://www.smartscreentestratings2.net)
-- [https://www.smartscreentestratings2.net](https://www.smartscreentestratings2.net)
+1. Check Network Protection has effect on always blocked sites:
+   - <http://smartscreentestratings2.net>
+   - <https://smartscreentestratings2.net>
 
-B. Inspect diagnostic logs
+   <!--These links are purposely blocked; will trigger as broken link--->
 
-```bash
-$ sudo mdatp log level set --level debug
-$ sudo tail -f /var/log/microsoft/mdatp/microsoft_defender_np_ext.log
-```
+2. Inspect diagnostic logs
+
+   ```bash
+   sudo mdatp log level set --level debug
+   sudo tail -f /var/log/microsoft/mdatp/microsoft_defender_np_ext.log
+   ```
 
 #### To exit the validation mode
 
 Disable network protection and restart the network connection:
 
 ```bash
-$ sudo mdatp config network-protection enforcement-level --value disabled
+sudo mdatp config network-protection enforcement-level --value disabled
 ```
 
 ## Advanced configuration
@@ -154,7 +149,7 @@ Also, make sure that in **Microsoft Defender** \> **Settings** \> **Endpoints** 
    > Pro tip: You can deploy a policy without selecting any category on a device group. This action will create an audit only policy, to help you understand user behavior before creating a block policy.
    >
    > Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
- 
+
 4. [Integrate Microsoft Defender for Endpoint with Defender for Cloud Apps](/defender-cloud-apps/mde-integration) and your network protection-enabled macOS devices will have endpoint policy enforcement capabilities.
 
    > [!NOTE]
@@ -186,7 +181,7 @@ Create indicators that define the detection, prevention, and exclusion of entiti
 
 Currently supported sources are the cloud detection engine of Defender for Endpoint, the automated investigation and remediation engine, and the endpoint prevention engine (Microsoft Defender Antivirus).
 
-:::image type="content" source ="images/network-protection-add-url-domain-indicator.png" alt-text="Shows network protection add URL or domain indicator." lightbox="images/network-protection-add-url-domain-indicator.png":::
+:::image type="content" source="images/network-protection-add-url-domain-indicator.png" alt-text="Shows network protection add URL or domain indicator." lightbox="images/network-protection-add-url-domain-indicator.png":::
 
 For more information, see: [Create indicators for IPs and URLs/domains](indicator-ip-domain.md).
 
@@ -204,11 +199,11 @@ For more information about reporting, see [Web content filtering](web-content-fi
 
 ### Microsoft Defender for Cloud Apps
 
-The Microsoft Defender for Cloud Apps / Cloud App Catalog identifies apps you would want end users to be warned upon accessing with Microsoft 365 Defender for Endpoint, and mark them as _Monitored_. The domains listed under monitored apps would be later synced to Microsoft 365 Defender for Endpoint:
+The Microsoft Defender for Cloud Apps / Cloud App Catalog identifies apps you would want end users to be warned upon accessing with Microsoft Defender XDR for Endpoint, and mark them as _Monitored_. The domains listed under monitored apps would be later synced to Microsoft Defender XDR for Endpoint:
 
 :::image type="content" source="images/network-protection-macos-mcas-monitored-apps.png" alt-text="Shows network protection mcas monitored apps." lightbox="images/network-protection-macos-mcas-monitored-apps.png":::
 
-Within 10-15 minutes, these domains will be listed in Microsoft 365 Defender under Indicators > URLs/Domains with Action=Warn. Within the enforcement SLA (see details at the end of this article).
+Within 10-15 minutes, these domains will be listed in Microsoft Defender XDR under Indicators > URLs/Domains with Action=Warn. Within the enforcement SLA (see details at the end of this article).
 
 :::image type="content" source="images/network-protection-macos-mcas-cloud-app-security.png" alt-text="Shows network protection mcas cloud app security." lightbox="images/network-protection-macos-mcas-cloud-app-security.png":::
 
@@ -220,6 +215,5 @@ Within 10-15 minutes, these domains will be listed in Microsoft 365 Defender und
 - [Create indicators](manage-indicators.md)
 - [Web content filtering](web-content-filtering.md)
 - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
-
 
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

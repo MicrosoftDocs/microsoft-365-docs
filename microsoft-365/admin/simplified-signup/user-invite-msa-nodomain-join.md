@@ -5,16 +5,16 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 08/26/2021
+ms.date: 11/28/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - Tier1
 - scotvorg
 - Adm_TOC
-ms.custom: 
+ms.custom:
 - AdminSurgePortfolio
 description: "Accept an email invitation to join a Microsoft 365 Business Standard organization using an Outlook, Yahoo, Gmail or other account."
 ---
@@ -63,20 +63,20 @@ For further information about data privacy, refer to the [Terms of use](https://
 
 ### How can I leave this business (and stop using this license)?
 
-There are a couple of options in this case:  
+There are a couple of options in this case:
 
 1. You can contact the business owner or admin of the other business and ask to be removed from that business.
 
 2. You can remove yourself by following the steps below:
 
-    1. Go to https://myapps.microsoft.com/.
+    1. Go to <https://myapps.microsoft.com/>.
     2. Sign in to your account, and select your profile initials.
     3. Select **View account** > **Manage organizations** > **Leave organization**
     4. Select **Leave** > **OK**.
 
 ### I’m getting an error saying I’m part of another business.  What do I do?
 
-You will need to leave your previous Microsoft 365 Business subscription first. Either talk to your previous technical admin or business owner and ask them to remove you. You can also visit [https://myaccount.microsoft.com/](https://myaccount.microsoft.com/) and follow the steps below.
+You will need to leave your previous Microsoft 365 Business subscription first. Either talk to your previous technical admin or business owner and ask them to remove you. You can also visit <https://myaccount.microsoft.com/> and follow the steps below.
 
 1. Sign in to your account, and select your profile initials.
 2. Select **View account** > **Manage organizations** > **Leave organization**

@@ -1,59 +1,65 @@
 ---
-title: Set up Microsoft Syntex eSignature (Preview)
+title: Set up SharePoint eSignature
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: amcdonnell
-ms.date: 09/29/2023
+ms.date: 03/15/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
+ms.subservice: syntex-content-intelligence
 search.appverid: 
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority: medium
-ROBOTS: NOINDEX, NOFOLLOW
-description: Learn how to set up Microsoft Syntex eSignature to send electronic signature requests to people inside and outside of your organization. 
+description: Learn how to set up and manage sites in SharePoint eSignature. 
 ---
 
-# Set up Microsoft Syntex eSignature (Preview)
+# Set up SharePoint eSignature
 
 > [!NOTE]
-> This feature is currently in limited preview and subject to change.
+> SharePoint eSignature is currently rolling out to the US market. If a tenant's location is the United States, SharePoint eSignature will be available for that tenant. For US-located, multi-geo enabled tenants, eSignature will be available in the home geo only. SharePoint eSignature will roll out to other regions later this year.
 
-The Microsoft Syntex eSignature service is set up in the Microsoft 365 admin center.
+The SharePoint eSignature service is set up in the Microsoft 365 admin center. SharePoint eSignature uses simple electronic signatures. Before you begin, determine whether this feature is appropriate for your needs and then read the [SharePoint eSignature terms of service](/legal/microsoft-365/esignature-terms-of-service).
 
 ## Prerequisites
 
 ### Licensing
 
-Before you can use Syntex eSignature, you must first link your Azure subscription in [Syntex pay-as-you-go](syntex-azure-billing.md). Syntex eSignature is billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md). (Billing and pricing aren't activated during this preview.)
+Before you can use SharePoint eSignature, you must first link your Azure subscription in [Syntex pay-as-you-go](syntex-azure-billing.md). SharePoint eSignature is billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md).
 
 ### Permissions
 
-You must have Global admin or SharePoint admin permissions to be able to access the Microsoft 365 admin center and set up Syntex eSignature.  
+You must have Global admin or SharePoint admin permissions to be able to access the Microsoft 365 admin center and set up SharePoint eSignature.  
 
-## Set up Syntex eSignature
+### External recipients
+
+ If you will be requesting signatures from external recipients, you need to enable [Microsoft Entra B2B integration for SharePoint and OneDrive](/sharepoint/sharepoint-azureb2b-integration#enabling-the-integration) and [guest sharing](/microsoft-365/solutions/collaborate-in-site). External recipients are people outside your organization and would be onboarded as guests into your tenant. Microsoft Entra B2B provides authentication and management of guests.
+
+## Set up SharePoint eSignature
 
 1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>, and then select **Use content AI with Microsoft Syntex**.
 
 2. On the **Use content AI with Microsoft Syntex** page, select **Manage Microsoft Syntex**.
 
-3. On the **Manage Microsoft Syntex** page, select **Syntex eSignature**.
+3. On the **Manage Microsoft Syntex** page, select **eSignature**.
 
-4. By default, the Syntex eSignature service is turned on. On the **Syntex eSignature** page:
+4. For existing customers, read the [terms of service](/legal/microsoft-365/esignature-terms-of-service), and then select **Turn on** to enable the service.
+
+5. For new Syntex customers, the Syntex eSignature service is turned on once you enter your billing information and accepted the [terms of service](/legal/microsoft-365/esignature-terms-of-service). On the **eSignature** page:
 
    - To turn off the service, select **Turn off**.
    - To manage which sites the service is available, see [Manage sites](#manage-sites).
 
 ### Manage sites
 
-By default, Syntex eSignature is turned on for libraries in all SharePoint sites. Follow these steps to manage which SharePoint sites users can use Syntex eSignature.
+By default, SharePoint eSignature is turned on for libraries in all SharePoint sites. Follow these steps to limit which sites users can use eSignature.
 
-1. On the **Manage Microsoft Syntex** page, select **Syntex eSignature**.
+1. On the **Manage Microsoft Syntex** page, select **eSignature**.
 
-2. On the **Syntex eSignature** page, under **SharePoint libraries where Syntex eSignature is turned on**, select **Select sites**.
+2. On the **eSignature** panel, under **SharePoint libraries where Syntex eSignature is turned on**, select **Select sites**.
 
     a. Choose which site or sites this service should be enabled for.
 
@@ -61,11 +67,34 @@ By default, Syntex eSignature is turned on for libraries in all SharePoint sites
 
     c. Select **Save**.
 
+> [!NOTE]
+> The first eSignature request in a Microsoft 365 tenant might take a little longer to execute than usual. It can take a few seconds to a few minutes; however, subsequent requests are executed normally. We recommend that admins create the first eSignature request in a SharePoint site as the final setup step.
+
+### Turn off eSignature
+
+1. On the **Manage Microsoft Syntex** page, select **eSignature**.
+
+2. If SharePoint eSignature is turned on, there will be a **Turn off** button visible. To turn off SharePoint eSignature, select **Turn off**.
+
+## External signers
+
+### Conditional access
+
+Certain [conditional access](/entra/identity/conditional-access/overview) might determine whether external recipients (signers outside of your organization or Microsoft 365 tenant) will be able sign a document. Depending on the admin setup, external signers might not be able to access and read the document for signing. In some other cases, they might be able to access the document for signing, but the signing operation will be unsuccessful. One common way to resolve this is to add the **Microsoft eSignature Service** to the list of approved apps via the Microsoft Entra admin center.
+
+### Microsoft Entra B2B
+
+Microsoft Entra B2B provides authentication and management of guests. External signers or recipients are considered as guests within your tenant. To be able to send requests to signers outside your organization, you need to enable [Microsoft Entra B2B integration for SharePoint and OneDrive](/sharepoint/sharepoint-azureb2b-integration#enabling-the-integration). 
+
+### Authentication
+
+External recipients might need to authenticate before they're able to access a document for signing. The type of authentication required by the external recipients depends on the configuration for guest users at the SharePoint level or at the tenant level. Additionally, if the external user belongs to an organization with a Microsoft 365 tenant, it's possible for their organization's setup to affect their authentication experience when attempting to sign the document. For more information, see [Collaboration with guests in a site](/microsoft-365/solutions/collaborate-in-site).
+
 ## Document storage and retention
 
 ### Document storage
 
-Syntex eSignature lets a requester start a signature request from a PDF document that is saved in a SharePoint library for which Syntex eSignature has been enabled. After all required parties have signed, the Syntex eSignature service saves a copy of the signed document to the folder of the original document (originating folder). The sender is notified in an email that includes a link to view the document and a separate link to the SharePoint folder where the signed document was saved.
+SharePoint eSignature lets a requester start a signature request from a PDF document that is saved in a SharePoint library for which eSignature has been enabled. After all required parties have signed, the SharePoint eSignature service saves a copy of the signed document to the folder of the original document (originating folder). The sender is notified in an email that includes a link to view the document and a separate link to the SharePoint folder where the signed document was saved.
 
 Before a signature request is sent and at the completion of the request, certain checks are done to ensure that the sender has the permission to write to the document and the originating folder. If the permission changes when the signature request is in progress, the service might not be able to save a copy of the signed document in the originating folder. This event can happen when:
 
@@ -77,7 +106,7 @@ Before a signature request is sent and at the completion of the request, certain
 
 ### Document retention
 
-When a signature request is created for a document in SharePoint, the Syntex eSignature service creates a working copy of the document. It's this working copy that is sent out to all recipients for signing, and it's how the sender can track the status of their requests. The working copy of the request is stored in a hidden document library in SharePoint. The signature will only be added to the working copy of the request document after all parties have signed; otherwise, it will appear as unsigned even if one of the parties has added their signature.
+When a signature request is created for a document in SharePoint, the SharePoint eSignature service creates a working copy of the document. It's this working copy that is sent out to all recipients for signing, and it's how the sender can track the status of their requests. The working copy of the request is stored in a hidden document library in SharePoint. The signature will only be added to the working copy of the request document after all parties have signed; otherwise, it will appear as unsigned even if one of the parties has added their signature.
 
 The working copy of the request is stored and retained for five years or in accordance with the document retention policy set up by the SharePoint or tenant admin. Learn more about [retention policies](/purview/retention-policies-sharepoint).
 
@@ -86,5 +115,3 @@ The working copy of the request is stored and retained for five years or in acco
 Every email notification sent in relation to a signature request contains a URL link that allows the recipient to view, review, and sign the document. When a request reaches a terminal state (when the status is **Completed**, **Canceled**, or **Declined**), the recipient has 30 days to view, download, and store the document in a preferred location. After the link expires, it can no longer be used to access the document.
   
 For more protection, when a sender cancels a request, recipients immediately lose access to the request document. The email notification received by recipients won't contain a URL link to view the request.
-
-For user instructions about how to use Syntex eSignature, see [Create, review, and sign signature requests using Microsoft Syntex eSignature (Preview)](esignature-send-requests.md).

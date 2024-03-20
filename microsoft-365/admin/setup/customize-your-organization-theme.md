@@ -91,7 +91,9 @@ Select **Save** to save your changes.
 :::image type="content" source="../../media/Logos_Tab.png" alt-text="Screenshot: Logos tab showing the logo options":::
 
 You can remove your logos at any time. Just return to the **Logos** page and select **Remove**.
-  
+
+**Note:** The Microsoft 365 suite header is designed to accommodate a variety of screen sizes, window sizes, and display settings. The responsive behavior of the suite header sometimes results in the logo not showing to give space to other capabilities shown on the suite header. To reduce the likelihood of this behavior a narrower image file is recommended.
+
 ## Colors: Choose theme colors
 
 On the **Colors** page, you can set the default colors and choose which logo should be used.

@@ -56,7 +56,7 @@ You can add an app in from [Microsoft Intune admin center](https://go.microsoft.
 :::image type="content" source="../media/purchase-add-managed-apps/purchase-add-managed-apps-15.png" alt-text="Search an app store in Intune." border="false" :::
 
 > [!NOTE]
-> The Managed Google Play store only supports free apps. Standard Google apps are added to Intune as a **Android store app**. To add a **Managed Google Play app**, you must find and approve the app from the Managed Google Play store, then sync the app with Intune. For more information, see [Managed Google Play](apps-purchase-volume.md#managed-google-play).
+> The Managed Google Play store only supports free apps. Standard Google apps are added to Intune as an **Android store app**. To add a **Managed Google Play app**, you must find and approve the app from the Managed Google Play store, then sync the app with Intune. For more information, see [Managed Google Play](apps-purchase-volume.md#managed-google-play).
 
 ## Removing store limitations
 

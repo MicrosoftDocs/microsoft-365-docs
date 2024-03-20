@@ -3,8 +3,7 @@ title: Alert classification playbooks
 description: Review the alerts for well-known attacks and take recommended actions to remediate the attack and protect your network.
 keywords: incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, alert classification, alert grading, classify alert
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -28,14 +27,14 @@ ms.date: 08/11/2023
 
 # Alert classification playbooks
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 Alert classification playbooks allow you to methodically review and quickly classify the alerts for well-known attacks and take recommended actions to remediate the attack and protect your network. Alert classification will also help in properly classifying the overall incident.
 
-As a security researcher or security operations center (SOC) analyst, you must have access to the Microsoft 365 Defender portal so that you can:
+As a security researcher or security operations center (SOC) analyst, you must have access to the Microsoft Defender portal so that you can:
 
 - Assess and review the generated alerts and associated incidents. See [investigate alerts](investigate-alerts.md).
 - Search your tenant's security signal data and check for potential threats and suspicious activities. See [advanced hunting](advanced-hunting-overview.md).
@@ -69,7 +68,7 @@ Defender for Office 365 alerts can be classified as:
 - False positive (FP) for confirmed non-malicious activity.
 
 > [!NOTE]
-> Microsoft 365 Defender portal [https://security.microsoft.com](https://security.microsoft.com) brings together functionality from existing Microsoft security portals. The Microsoft 365 Defender portal emphasizes quick access to information, simpler layouts, and bringing related information together for easier use.
+> Microsoft Defender portal [https://security.microsoft.com](https://security.microsoft.com) brings together functionality from existing Microsoft security portals. The Microsoft Defender portal emphasizes quick access to information, simpler layouts, and bringing related information together for easier use.
 
 ## Microsoft Defender for Cloud Apps
 
@@ -95,5 +94,5 @@ See these playbooks for steps to more quickly classify alerts for the following 
 - [Suspicious IP addresses related to password spray activity](alert-grading-password-spray.md)
 - [Password spray attacks](alert-grading-password-spray-attack.md)
 
-See [Investigate alerts](investigate-alerts.md) for information on how to examine alerts with the Microsoft 365 Defender portal.
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+See [Investigate alerts](investigate-alerts.md) for information on how to examine alerts with the Microsoft Defender portal.
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

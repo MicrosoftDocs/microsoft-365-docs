@@ -12,9 +12,10 @@ ms.collection:
 - scotvorg
 - Adm_O365
 - Adm_TOC
+- must-keep
 ms.custom:
 description: "Learn about the accessibility conformance and features of the Microsoft 365 admin center."
-ms.date: 09/27/2023
+ms.date: 10/20/2023
 ---
 
 # Microsoft 365 admin center accessibility overview

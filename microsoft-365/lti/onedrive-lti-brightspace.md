@@ -1,8 +1,8 @@
 ---
 title: Integrate Microsoft OneDrive LTI with Desire2Learn Brightspace
-ms.author: danismith
-author: DaniEASmith
-manager: serdars
+author: MicrosoftHeidi
+ms.author: heidip
+manager: jacktremper
 ms.reviewer: amitman
 ms.date: 08/03/2022
 audience: admin

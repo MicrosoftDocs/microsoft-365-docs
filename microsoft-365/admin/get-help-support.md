@@ -26,7 +26,7 @@ search.appverid:
 - MET150
 - MOE150
 description: "Learn how to get online or phone support for your Microsoft 365 for business subscription. You must be an admin for a business subscription to get support."
-ms.date: 07/25/2023
+ms.date: 11/01/2023
 ---
 
 # Get support for Microsoft 365 for business
@@ -87,23 +87,23 @@ Business Assist for Microsoft 365 is designed for small businesses to give you a
 
 ::: moniker range="o365-21vianet"
 
-With every subscription of Office 365 operated by 21Vianet, 21Vianet support provides technical, pre-sales, billing and subscription support. Support is available both online through the Office 365 operated by 21Vianet portal, and by telephone for both paid and trial subscriptions.
+With every subscription of Microsoft 365 operated by 21Vianet, 21Vianet support provides technical, pre-sales, billing and subscription support. Support is available both online through the Microsoft 365 operated by 21Vianet portal, and by telephone for both paid and trial subscriptions.
 
-Authorized administrators can use the Office 365 operated by 21Vianet portal to submit service requests online and access support telephone numbers. For instructions, see [Contact support](#contact-support).
+Authorized administrators can use the Microsoft 365 operated by 21Vianet portal to submit service requests online and access support telephone numbers. For instructions, see [Contact support](#contact-support).
 
-The Office 365 operated by 21Vianet technical support team troubleshoots only those issues that are related to Office 365 operated by 21Vianet. Issues that originate in customer networks fall outside of the Office 365 support boundaries, and in these cases, customers must work with their networking team for assistance.
+The Microsoft 365 operated by 21Vianet technical support team troubleshoots only those issues that are related to Microsoft 365 operated by 21Vianet. Issues that originate in customer networks fall outside of the Microsoft 365 support boundaries, and in these cases, customers must work with their networking team for assistance.
 
 ## Community and self-service support options
 
-Self-service support is available for all Office 365 operated by 21Vianet users, and includes troubleshooting tools and videos, help articles and videos, as well as forums and wikis in the [Office 365 community](https://go.microsoft.com/fwlink/p/?linkid=842838). For more self-help resources, see [Learn about Office 365 operated by 21Vianet](../admin/services-in-china/services-in-china.md).
+Self-service support is available for all Microsoft 365 operated by 21Vianet users, and includes troubleshooting tools and videos, help articles and videos, as well as forums and wikis in the [Microsoft 365 community](https://go.microsoft.com/fwlink/p/?linkid=842838). For more self-help resources, see [Microsoft 365 operated by 21Vianet](/office365/servicedescriptions/office-365-platform-service-description/microsoft-365-operated-by-21vianet).
 
 ## Pre-sales support
 
-Pre-sales support for Office 365 operated by 21Vianet provides assistance on subscription features and benefits, plan comparisons, pricing and licensing, and helps to identify the right solution to meet your business needs. In addition, pre-sales support can help you find a Partner, and purchase and sign up for a trial. You can call during local business hours, Monday through Friday. Pre-sales support can be accessed using the same phone number as with technical support. For instructions, see [Contact support](#contact-support).
+Pre-sales support for Microsoft 365 operated by 21Vianet provides assistance on subscription features and benefits, plan comparisons, pricing and licensing, and helps to identify the right solution to meet your business needs. In addition, pre-sales support can help you find a Partner, and purchase and sign up for a trial. You can call during local business hours, Monday through Friday. Pre-sales support can be accessed using the same phone number as with technical support. For instructions, see [Contact support](#contact-support).
 
 ## Billing and subscription management support
 
-Assistance for billing and subscription management issues is available online or by telephone during China business hours (Beijing Time), Monday through Friday. Billing and subscription management support can be accessed using the same phone number and online service request process as with technical support. The support telephone number can be found on the Office 365 operated by 21Vianet portal. For instructions, see [Contact support](#contact-support).
+Assistance for billing and subscription management issues is available online or by telephone during China business hours (Beijing Time), Monday through Friday. Billing and subscription management support can be accessed using the same phone number and online service request process as with technical support. The support telephone number can be found on the Microsoft 365 operated by 21Vianet portal. For instructions, see [Contact support](#contact-support).
 
 Here are some examples of billing and subscription management issues:
 
@@ -116,11 +116,11 @@ Here are some examples of billing and subscription management issues:
 
 ## Technical support
 
-Technical support for Office 365 operated by 21Vianet subscriptions provides assistance with basic installation, setup, and general technical usage. Some examples of these issues are listed in the following table.
+Technical support for Microsoft 365 operated by 21Vianet subscriptions provides assistance with basic installation, setup, and general technical usage. Some examples of these issues are listed in the following table.
 
 | Support category | Examples |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Installation and setup | Exchange Online<ul><li>Office 365 mailbox migration</li><li>Recipient configuration (mailbox permissions, configuring mail forwarding, configuring shared mailbox)</li><li>Autodiscover configuration</li></ul><br /> SharePoint Online<ul><li>Permissions and user groups</li><li>Configuration of external users</li></ul><br />Skype for Business Online<ul><li>Installation and creating contacts</li></ul><br />Microsoft 365 Apps for enterprise<ul><li>Installation and setup</li></ul> |
+| Installation and setup | Exchange Online<ul><li>Microsoft 365 mailbox migration</li><li>Recipient configuration (mailbox permissions, configuring mail forwarding, configuring shared mailbox)</li><li>Autodiscover configuration</li></ul><br /> SharePoint Online<ul><li>Permissions and user groups</li><li>Configuration of external users</li></ul><br />Skype for Business Online<ul><li>Installation and creating contacts</li></ul><br />Microsoft 365 Apps for enterprise<ul><li>Installation and setup</li></ul> |
 | Configuration | Service configuration issues<ul><li>Single sign-on (SSO)</li><li>Active Directory synchronization</li></ul> |
 
 > [!NOTE]
@@ -139,7 +139,7 @@ Technical support for Office 365 operated by 21Vianet subscriptions provides ass
 
 ## Technical support initial response times
 
-Initial response time is based on the severity levels described above. 21Vianet customer service team follow up with investigation and customer communication in reasonable rhythm according to severity levels. 21Vianet also expect customer to collaborate at reasonable level accordingly.
+Initial response time is based on the severity levels described above. 21Vianet customer service team follows up with investigation and customer communication in reasonable rhythm according to severity levels. 21Vianet also expect customer to collaborate at reasonable level accordingly.
 
 | Security level <sup>1</sup> | 21Vianet customer support team Initial response | Customer responsibility |
 |--------------------------------|-----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -160,7 +160,7 @@ Severity B/C: 9:00 ~24:00 (Beijing Time) a day, 365 days.
 ## Contact support
 
 > [!NOTE]
-> Assisted support options are for admins of Office 365 subscribed organizations only. If you use Office 365 but you're not an admin, you can still get support in the community forums, or by contacting your admin.
+> Assisted support options are for admins of Microsoft 365 subscribed organizations only. If you use Microsoft 365 but you're not an admin, you can still get support in the community forums, or by contacting your admin.
 
 ### Open an online request
 
@@ -176,9 +176,9 @@ Call support. If you encounter any problem with online request, phone support is
 
 ### Administrator roles and responsibilities
 
-People with administrator roles are the only ones in the customer's organization authorized to access the Admin section of the Office 365 operated by 21Vianet portal and to communicate directly with 21Vianet about Office 365 service requests.
+People with administrator roles are the only ones in the customer's organization authorized to access the Admin section of the Microsoft 365 operated by 21Vianet portal and to communicate directly with 21Vianet about Microsoft 365 service requests.
 
-With Office 365 you can designate several types of administrators who serve different functions. This service description uses the generic title administrator to refer to all categories of administrators. For more information about the types of administrator roles, see [Assign admin roles in Microsoft 365 for business](../admin/add-users/assign-admin-roles.md).
+With Microsoft 365 you can designate several types of administrators who serve different functions. This service description uses the generic title administrator to refer to all categories of administrators. For more information about the types of administrator roles, see [Assign admin roles in Microsoft 365 for business](../admin/add-users/assign-admin-roles.md).
 
 The administrator is:
 
@@ -209,13 +209,13 @@ The administrator is expected to provide initial assistance for the customer's u
 
 ## Feature availability
 
-To view feature availability across Office 365 plans, see [Office 365 Service Description](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet).
+To view feature availability across Microsoft 365 plans, see [Microsoft 365 Service Description](/office365/servicedescriptions/office-365-platform-service-description/microsoft-365-operated-by-21vianet).
 
 ## Follow us on WeChat
 
-Scan this QR code to follow us on WeChat and get the latest updates for Office 365 operated by 21Vianet.
+Scan this QR code to follow us on WeChat and get the latest updates for Microsoft 365 operated by 21Vianet.
 
-![QR Code for updates for Office 365 operated by 21Vianet.](../media/4d8fe09c-1a11-4cd8-be4c-75add8dccddd.jpg)
+![QR Code for updates for Microsoft 365 operated by 21Vianet.](../media/4d8fe09c-1a11-4cd8-be4c-75add8dccddd.jpg)
 
 ::: moniker-end
 

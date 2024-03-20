@@ -2,7 +2,7 @@
 title: Duplicate a model in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 audience: admin
 ms.reviewer: ssquires
 ms.date: 07/31/2023

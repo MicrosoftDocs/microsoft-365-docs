@@ -2,7 +2,7 @@
 title: Microsoft Syntex Optical Character Recognition (“OCR”) Feature Preview Agreement 
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: kkameth
 ms.date: 08/29/2023
 audience: admin
@@ -12,6 +12,7 @@ ms.custom:
 search.appverid: 
 ms.collection: 
 ms.localizationpriority: medium
+ROBOTS: NOINDEX, NOFOLLOW
 description: Read the Microsoft Syntex Optical Character Recognition (“OCR”) Feature Preview Agreement.
 ---
 
@@ -23,7 +24,7 @@ Input is all suggestions, comments, feedback, ideas, or know how, in any form, t
 
 **MICROSOFT OFFERING:**
 
-The optical character recognition (OCR) service in Microsoft Syntex lets you extract printed or handwritten text from images, such as posters, drawings, and product labels, as well as from documents like articles, reports, forms, and invoices.   Syntex OCR uses AI to extract text from customers' images, whether in OneDrive and SharePoint, Exchange emails, or Teams messages. This text extraction is done on a pay-as-you-go basis (each page of an image costs $0.001) using the latest tech from Azure Cognitive Services.  Global and SharePoint admins can configure Syntex OCR in the Microsoft Admin Center, and Compliance admins can also configure OCR in Microsoft Purview as they may need the capability for different scenarios and/or not want to leave Purview admin. The Syntex OCR service will honor settings from either admin experience, keeping the extracted text and not charging the customer twice even if it's configured in multiple places within admin.
+The optical character recognition (OCR) service in Microsoft Syntex lets you extract printed or handwritten text from images, such as posters, drawings, and product labels, as well as from documents like articles, reports, forms, and invoices.   Microsoft Syntex OCR uses AI to extract text from customers' images, whether in OneDrive and SharePoint, Exchange emails, or Teams messages. This text extraction is done on a pay-as-you-go basis (each page of an image costs $0.001) using the latest tech from Azure Cognitive Services.  Global and SharePoint admins can configure Microsoft Syntex OCR in the Microsoft Admin Center, and Compliance admins can also configure OCR in Microsoft Purview as they may need the capability for different scenarios and/or not want to leave Purview admin. The Microsoft Syntex OCR service will honor settings from either admin experience, keeping the extracted text and not charging the customer twice even if it's configured in multiple places within admin.
 
 The OCR service supports more than [150 languages](/azure/ai-services/language-support).
 
@@ -41,15 +42,15 @@ Company retains all right, title and interest in and to the Input.  The above Li
 
 **<ins>PAYMENT TERMS</ins>**
 
-Syntex OCR services use pay-as-you-go billing through an Azure subscription. Syntex OCR services billing is determined the number of pages processed for images (JPEG, JPG, PNG, or BMP); the number of pages processed for PDF, TIF, or TIFF; or the number of embedded images in Teams chats and email messages. Each of these counts as one transaction. Processing occurs every time the file is edited. Company will be able to view this usage as meter events through the Azure subscription it chooses.  
+Microsoft Syntex OCR services use pay-as-you-go billing through an Azure subscription. Microsoft Syntex OCR services billing is determined the number of pages processed for images (JPEG, JPG, PNG, or BMP); the number of pages processed for PDF, TIF, or TIFF; or the number of embedded images in Teams chats and email messages. Each of these counts as one transaction. Processing occurs every time the file is edited. Company will be able to view this usage as meter events through the Azure subscription it chooses.  
 
-Syntex OCR services Feature Preview pricing is as follows:
+Microsoft Syntex OCR services Feature Preview pricing is as follows:
 
 |OCR Meters    |Meter  |Price    |
 |---------|---------|-----------|
 |Pages Processed           |Optical character recognition (Preview) |$0.001/Transaction  |
 
-Prerequisites to enable Syntex OCR services pay-as-you-go are:  
+Prerequisites to enable Microsoft Syntex OCR services pay-as-you-go are:  
 
 &emsp;(i) An Azure subscription with admin access as owner or contributor on the subscription;  
 
@@ -63,13 +64,13 @@ Prerequisites to enable Syntex OCR services pay-as-you-go are:
 
 **<ins>INFORMATION USE AND DISCLOSURE</ins>**
 
-With respect to the Syntex OCR services, Microsoft may access or disclose information about Company, its account, and the content of its communications in order to:  
+With respect to the Microsoft Syntex OCR services, Microsoft may access or disclose information about Company, its account, and the content of its communications in order to:  
 
 &emsp;a) provide, operate, and improve Microsoft services;
 
 &emsp;b) comply with the law or respond to lawful requests or legal process; or
 
-&emsp;c) protect the rights or property of Microsoft or our customers, including the enforcement of Microsoft’s agreements or policies governing the use of the Syntex OCR services.
+&emsp;c) protect the rights or property of Microsoft or our customers, including the enforcement of Microsoft’s agreements or policies governing the use of the Microsoft Syntex OCR services.
 
 **<ins>Data Processing and Transfers</ins>**
 
@@ -81,7 +82,7 @@ a) Processing Details. The parties acknowledge and agree that:
 
 &emsp;ii. The duration of the processing shall be for the duration of the Company’s right to participate in the Feature Preview Program and until all Personal Data is deleted or returned in accordance with Company instructions or this Agreement;
 
-&emsp;iii. The nature and purpose of the processing shall be to provide the Syntex OCR services pursuant to the Agreement;
+&emsp;iii. The nature and purpose of the processing shall be to provide the Microsoft Syntex OCR services pursuant to the Agreement;
 
 &emsp;iv. The types of Personal Data processed by the Feature Preview Program include those expressly identified in Article 4 of the GDPR to the extent included by Company’s data; and
 
@@ -89,7 +90,7 @@ a) Processing Details. The parties acknowledge and agree that:
 
 b) Data Transfers.
 
-&emsp;i. Company’s data, and Personal Data that Microsoft processes on Customer’s behalf may be transferred to, and stored and processed in, the United States or any other country in which Microsoft or its Subprocessors operate. Company appoints Microsoft to perform any such transfer of Company data and Personal Data to any such country and to store and process data and Personal Data to provide the Syntex OCR services.
+&emsp;i. Company’s data, and Personal Data that Microsoft processes on Customer’s behalf may be transferred to, and stored and processed in, the United States or any other country in which Microsoft or its Subprocessors operate. Company appoints Microsoft to perform any such transfer of Company data and Personal Data to any such country and to store and process data and Personal Data to provide the Microsoft Syntex OCR services.
 
 &emsp;ii. Microsoft will abide by the requirements of European Economic Area and Swiss data protection law regarding the collection, use, transfer, retention and other processing of Personal Data from the European Economic Area and Switzerland. All transfers of Personal Data to a third country or an international organization will be subject to appropriate safeguards as described in Article 46 of the GDPR and such transfers and safeguards will be documented according to Article 30(2) of the GDPR.
 
@@ -97,17 +98,17 @@ b) Data Transfers.
 
 **<ins>Acknowledgments and Consent by Company</ins>**
 
-If Company collects, stores, or processes Personal Data when using Syntex OCR services, Company agrees to comply with all privacy and data protection laws, taking into account the nature of the information to be processed, as well as the features and limitations of the Feature Preview Program as described in this Agreement or as otherwise provided to Company. 
+If Company collects, stores, or processes Personal Data when using Microsoft Syntex OCR services, Company agrees to comply with all privacy and data protection laws, taking into account the nature of the information to be processed, as well as the features and limitations of the Feature Preview Program as described in this Agreement or as otherwise provided to Company. 
 
 **<ins>Pre-Release Service Features and Privacy Choice</ins>**
 
-Company affirms that it has obtained or will obtain any required consents from data subjects who may participate in Company’s use of the Feature Preview Program. Company must not allow Personal Data to be collected through use of the Syntex OCR services in jurisdictions or industries where the Feature Preview attributes described herein would make such use contrary to applicable law. The Feature Preview may employ lesser or different security measures than those present in Microsoft’s existing commercial versions of Microsoft software or Online Services or expected to be present in future commercial versions of the software and Online Services. Without limiting the foregoing, security disclosures or independent security certifications applicable to existing commercial versions of the software and Online Services don't apply to the Feature Preview.
+Company affirms that it has obtained or will obtain any required consents from data subjects who may participate in Company’s use of the Feature Preview Program. Company must not allow Personal Data to be collected through use of the Microsoft Syntex OCR services in jurisdictions or industries where the Feature Preview attributes described herein would make such use contrary to applicable law. The Feature Preview may employ lesser or different security measures than those present in Microsoft’s existing commercial versions of Microsoft software or Online Services or expected to be present in future commercial versions of the software and Online Services. Without limiting the foregoing, security disclosures or independent security certifications applicable to existing commercial versions of the software and Online Services don't apply to the Feature Preview.
 
 **<ins>LENGTH OF OBLIGATIONS; DISCLOSURE</ins>**
 
 **Termination.** This Agreement continues in effect until <ins>December 31, 2023, or until the Preview Feature is generally commercially available to the public</ins>.  Either of us may terminate this Agreement, or any input schedule, for any reason by 1) by Microsoft providing Company with 10 days’ advance notice, or 2) Company stops using the Preview Feature. Termination of this Agreement or any Input schedule won't change any of the rights, licenses granted, or duties made while this Agreement or input schedule is in effect.
 
-**Effects upon Termination.** Once terminated, Company will no longer use Syntex OCR services.  
+**Effects upon Termination.** Once terminated, Company will no longer use Microsoft Syntex OCR services.  
 
 This Agreement can't be extended. Microsoft may also choose not to make the Preview Feature generally commercially available.
 

@@ -9,6 +9,7 @@ ms.reviewer: sinakassaw, nicholak
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
 ms.collection: 
 - Tier1
@@ -20,7 +21,7 @@ ms.custom:
 - AdminSurgePortfolio
 description: "Learn how to create and manage auto-claim policies that automatically assign licenses to users for certain apps."
 search.appverid: MET150
-ms.date: 10/13/2023
+ms.date: 02/12/2024
 ---
 
 # Manage auto-claim policies in the Microsoft 365 admin center
@@ -40,6 +41,9 @@ You must be a Global admin to create and manage auto-claim policies. For more in
 ## Turn the auto-claim policy feature on or off
 
 By default, the auto-claim policy feature is turned off. Before you can use the feature, you must first turn it on in the Microsoft 365 admin center. After you turn on the feature, you can create an auto-claim policy.
+
+> [!NOTE]
+> In some cases, the auto-claim feature is turned on by default, and the auto-claim policies for certain apps and services are preconfigured.
 
 ### Turn on auto-claim policies
 
@@ -166,16 +170,34 @@ If you have backup products assigned to the policy, you can change the order in 
 
 ## Auto-claim policies for Microsoft Power Apps
 
-> [!NOTE]
-> The ability to create auto-claim policies for Microsoft Power Apps is currently in preview. The auto-claim policies for Power Apps is being gradually rolled out across areas and might not be available yet in your area.
-
-Preview features aren't meant for use in production and can have limited functionality. These features are made available to customers before an official release so that they can get early access to the features and provide feedback.
-
 Admins can now create auto-claim policies for Power Apps per user licenses in the Microsoft 365 admin center, similar to how they can create auto-claim policies for other Microsoft products and services. After the policy is set, any user in the organization who requests an individual Power Apps license is automatically granted one.
 
 If a user lacks a standalone Power Apps license and launches an app that requires a premium license, the system automatically grants a Power Apps per user license to the user.
 
 If a user without a standalone Power Apps license launches an app within a Managed environment, they're automatically granted a Power Apps per user license.
+
+## Auto-claim policies for Microsoft Power Automate
+
+Auto-claim for Power Automate licenses is supported for the following plans:
+
+- Power Automate premium plan
+- Power Automate per user plan
+
+When the auto-claim policy is configured and a user doesn't have a license for the product, the user is automatically assigned a license when they take any of the following actions:
+
+**For Power Automate per user plans**
+
+- Trigger a premium cloud flow 
+- Save a premium cloud flow
+- Turn on a premium cloud flow
+
+**For Power Automate premium plans**
+
+In addition to the actions listed in **For Power Automate per user plans**, the following actions also apply:
+
+- Trigger a premium cloud flow with Attended Robotic Process Automation (RPA)
+- Save a premium cloud flow with Attended RPA
+- Turn on a premium cloud flow with Attended RPA
 
 ## Next steps
 
@@ -185,4 +207,4 @@ You can periodically return to the **Auto-claim policy** tab to see a list of us
 
 [Assign licenses to users](../../admin/manage/assign-licenses-to-users.md) (article)\
 [Buy or remove subscription licenses](buy-licenses.md) (article)\
-u[Understand subscriptions and licenses in Microsoft 365 for business](subscriptions-and-licenses.md) (article)
+[Understand subscriptions and licenses in Microsoft 365 for business](subscriptions-and-licenses.md) (article)

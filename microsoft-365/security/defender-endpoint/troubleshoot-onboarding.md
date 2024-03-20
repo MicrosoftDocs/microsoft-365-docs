@@ -1,28 +1,24 @@
 ---
 title: Troubleshoot Microsoft Defender for Endpoint onboarding issues
 description: Troubleshoot issues that might arise during the onboarding of devices or to the Microsoft Defender for Endpoint service.
-keywords: troubleshoot onboarding, onboarding issues, event viewer, data collection and preview builds, sensor data and diagnostics
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
 ms.topic: troubleshooting
-ms.subservice: mde
+ms.subservice: onboard
 search.appverid: met150
 ms.date: 06/14/2023
 ---
 
 # Troubleshoot Microsoft Defender for Endpoint onboarding issues
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
@@ -31,7 +27,7 @@ ms.date: 06/14/2023
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Windows Server 2012 R2
 - Windows Server 2016
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
@@ -281,7 +277,7 @@ The Microsoft Defender for Endpoint sensor requires Microsoft Windows HTTP (WinH
 
 WinHTTP is independent of the Internet browsing proxy settings and other user context applications and must be able to detect the proxy servers that are available in your particular environment.
 
-To ensure that sensor has service connectivity, follow the steps described in the [Verify client connectivity to Microsoft Defender for Endpoint service URLs](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls) topic.
+To ensure that sensor has service connectivity, follow the steps described in the [Verify client connectivity to Microsoft Defender for Endpoint service URLs](verify-connectivity.md) topic.
 
 If the verification fails and your environment is using a proxy to connect to the Internet, then follow the steps described in [Configure proxy and Internet connectivity settings](configure-proxy-internet.md) topic.
 
@@ -315,7 +311,7 @@ If the verification fails and your environment is using a proxy to connect to th
 
 - You can also check the previous registry key values to verify that the policy is disabled, by opening the registry key `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`.
 
-  :::image type="content" source="images/atp-disableantispyware-regkey.png" alt-text="The registry key for Microsoft Defender Antivirus" lightbox="images/atp-disableantispyware-regkey.png":::
+  :::image type="content" source="media/atp-disableantispyware-regkey.png" alt-text="The registry key for Microsoft Defender Antivirus" lightbox="media/atp-disableantispyware-regkey.png":::
 
    > [!NOTE]
    > All Windows Defender services (wdboot, wdfilter, wdnisdrv, wdnissvc, and windefend) should be in their default state. Changing the startup of these services is unsupported and may force you to reimage your system.
@@ -340,17 +336,17 @@ You might also need to check the following:
 
 - Check that there's a Microsoft Defender for Endpoint Service running in the **Processes** tab in **Task Manager**. For example:
 
-  :::image type="content" source="images/atp-task-manager.png" alt-text="The process view with Microsoft Defender for Endpoint Service running" lightbox="images/atp-task-manager.png":::
+  :::image type="content" source="media/atp-task-manager.png" alt-text="The process view with Microsoft Defender for Endpoint Service running" lightbox="media/atp-task-manager.png":::
 
 - Check **Event Viewer** \> **Applications and Services Logs** \> **Operation Manager** to see if there are any errors.
 
 - In **Services**, check if the **Microsoft Monitoring Agent** is running on the server. For example,
 
-  :::image type="content" source="images/atp-services.png" alt-text="The services" lightbox="images/atp-services.png":::
+  :::image type="content" source="media/atp-services.png" alt-text="The services" lightbox="media/atp-services.png":::
 
 - In **Microsoft Monitoring Agent** \> **Azure Log Analytics (OMS)**, check the Workspaces and verify that the status is running.
 
-  :::image type="content" source="images/atp-mma-properties.png" alt-text="The Microsoft Monitoring Agent Properties" lightbox="images/atp-mma-properties.png":::
+  :::image type="content" source="media/atp-mma-properties.png" alt-text="The Microsoft Monitoring Agent Properties" lightbox="media/atp-mma-properties.png":::
 
 - Check to see that devices are reflected in the **Devices list** in the portal.
 

@@ -1,38 +1,35 @@
 ---
 title: Microsoft Defender for Endpoint SmartScreen URL reputation demonstrations
 description: Demonstrates how Microsoft Defender SmartScreen identifies phishing and malware websites based on URL reputation.
-keywords: Microsoft Defender for Endpoint, website phishing protection, website malware protection, URL reputation, demonstration, 
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.mktglfcycl: evaluation
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security
 - tier2
 - demo
 ms.topic: article
-ms.subservice: mde
-ms.date: 10/21/2022
+ms.subservice: asr
+ms.date: 01/15/2024
 ---
 
 # URL reputation demonstrations
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Business](https://www.microsoft.com/security/business/endpoint-security/microsoft-defender-business)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Test how Microsoft Defender SmartScreen helps you identify phishing and malware websites based on URL reputation.
 Scenario requirements and setup
 
-- Windows 10 or 11
+- Windows 11 or Windows
+- Windows Server 2022, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2 and Windows Server 2008 R2 SP1.
 - Microsoft Edge browser required
 - For more information, see [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)
 

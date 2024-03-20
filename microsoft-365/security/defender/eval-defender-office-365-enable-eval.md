@@ -3,8 +3,7 @@ title: Enable the evaluation environment for Microsoft Defender for Office 365 i
 description: Steps to activate Microsoft Defender for Office 365 evaluation, with trial licenses, MX record handling, & auditing of accepted domains and inbound connections.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -29,7 +28,7 @@ ms.topic: how-to
 # Enable the evaluation environment
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 This article is [Step 2 of 3](eval-defender-office-365-overview.md) in the process of setting up the evaluation environment for Microsoft Defender for Office 365. For more information about this process, see the [overview article](eval-defender-office-365-overview.md).
 
@@ -70,11 +69,11 @@ To effectively evaluate Microsoft Defender for Office 365, it's important that i
 
 ## Step 4: Activate the evaluation
 
-Use the instructions here to activate your Microsoft Defender for Office 365 evaluation from the Microsoft 365 Defender portal.
+Use the instructions here to activate your Microsoft Defender for Office 365 evaluation from the Microsoft Defender portal.
 
 For detailed information, see [Try Microsoft Defender for Office 365](../office-365-security/try-microsoft-defender-for-office-365.md).
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, expand *Email & collaboration* \> select **Policies & rules** \> select **Threat policies** \> scroll down to the *Others* section, and then select **Evaluation mode**. Or, to go directly to the *Evaluation mode* page, use <https://security.microsoft.com/atpEvaluation>.
+1. In the Microsoft Defender portal at <https://security.microsoft.com>, expand *Email & collaboration* \> select **Policies & rules** \> select **Threat policies** \> scroll down to the *Others* section, and then select **Evaluation mode**. Or, to go directly to the *Evaluation mode* page, use <https://security.microsoft.com/atpEvaluation>.
 
 2. On the *Evaluation mode* page, click **Start evaluation**.
 
@@ -102,5 +101,5 @@ Step 3 of 3: Set up the pilot for Microsoft Defender for Office 365
 
 Return to the overview for [Evaluate Microsoft Defender for Office 365](eval-defender-office-365-overview.md)
 
-Return to the overview for [Evaluate and pilot Microsoft 365 Defender](eval-overview.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+Return to the overview for [Evaluate and pilot Microsoft Defender XDR](eval-overview.md)
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

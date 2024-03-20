@@ -73,7 +73,7 @@ $batch = New-PnPBatch
 
 # Add files to classify to the batch
 foreach ($listItem in $targetItems) {
-    Request-PnPSyntexClassifyAndExtract -FileUrl $listItem.FileRef -Batch $classifyBatch
+    Request-PnPSyntexClassifyAndExtract -FileUrl $listItem.FileRef -Batch $batch
 }
 
 # Execute batch

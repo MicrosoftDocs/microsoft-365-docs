@@ -15,12 +15,12 @@ f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
-description: "Summary: Configure Azure AD Connect for your high availability federated authentication for Microsoft 365 in Microsoft Azure."
+description: "Summary: Configure Microsoft Entra Connect for your high availability federated authentication for Microsoft 365 in Microsoft Azure."
 ---
 
 # High availability federated authentication Phase 5: Configure federated authentication for Microsoft 365
 
-In this final phase of deploying high availability federated authentication for Microsoft 365 in Azure infrastructure services, you get and install a certificate issued by a public certification authority, verify your configuration, and then install and run Azure AD Connect on the directory synchronization server. Azure AD Connect configures your Microsoft 365 subscription and your Active Directory Federation Services (AD FS) and web application proxy servers for federated authentication.
+In this final phase of deploying high availability federated authentication for Microsoft 365 in Azure infrastructure services, you get and install a certificate issued by a public certification authority, verify your configuration, and then install and run Microsoft Entra Connect on the directory synchronization server. Microsoft Entra Connect configures your Microsoft 365 subscription and your Active Directory Federation Services (AD FS) and web application proxy servers for federated authentication.
   
 See [Deploy high availability federated authentication for Microsoft 365 in Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) for all of the phases.
   
@@ -42,7 +42,7 @@ When you receive the certificate, copy it to a folder on the C: drive of the dir
   
 ## Verify your configuration
 
-You should now be ready to configure Azure AD Connect and federated authentication for Microsoft 365. To ensure that you are, here is a checklist:
+You should now be ready to configure Microsoft Entra Connect and federated authentication for Microsoft 365. To ensure that you are, here is a checklist:
   
 - Your organization's public domain is added to your Microsoft 365 subscription.
     
@@ -54,7 +54,7 @@ You should now be ready to configure Azure AD Connect and federated authenticati
     
 - A private DNS A record for your federation service FQDN points to the private IP address of the internal Azure load balancer for the AD FS servers.
     
-- A public certification authority-isssued digital certificate suitable for SSL connections with the SAN set to your federation service FQDN is a PFX file stored on your directory synchronization server.
+- A public certification authority-issued digital certificate suitable for SSL connections with the SAN set to your federation service FQDN is a PFX file stored on your directory synchronization server.
     
 - The root certificate for the public certification authority is installed in the Trusted Root Certification Authorities store on your computers and devices.
     
@@ -64,17 +64,19 @@ Here is an example for the Contoso organization:
 
 ![An example configuration of the high availability Microsoft 365 federated authentication infrastructure in Azure.](../media/ac1a6a0d-0156-4407-9336-6e4cd6db8633.png)
   
-## Run Azure AD Connect to configure federated authentication
+<a name='run-azure-ad-connect-to-configure-federated-authentication'></a>
 
-The Azure AD Connect tool configures the AD FS servers, the web application proxy servers, and Microsoft 365 for federated authentication with these steps:
+## Run Microsoft Entra Connect to configure federated authentication
+
+The Microsoft Entra Connect tool configures the AD FS servers, the web application proxy servers, and Microsoft 365 for federated authentication with these steps:
   
 1. Create a remote desktop connection to your directory synchronization server with a domain account that has local administrator privileges.
     
-2. From the desktop of the directory synchronization server, open Internet Explorer and go to [https://aka.ms/aadconnect](https://aka.ms/aadconnect).
+2. From the desktop of the directory synchronization server, open Internet Explorer and go to [https://aka.ms/Azure AD Connect](https://aka.ms/aadconnect).
     
-3. On the **Microsoft Azure Active Directory Connect** page, click **Download**, and then click **Run**.
+3. On the **Microsoft Entra Connect** page, click **Download**, and then click **Run**.
     
-4. On the **Welcome to Azure AD Connect** page, click **I agree**, and then click **Continue.**
+4. On the **Welcome to Microsoft Entra Connect** page, click **I agree**, and then click **Continue.**
     
 5. On the **Express Settings** page, click **Customize**.
     
@@ -82,11 +84,11 @@ The Azure AD Connect tool configures the AD FS servers, the web application prox
     
 7. On the **User sign-in** page, click **Federation with AD FS**, and then click **Next**.
     
-8. On the **Connect to Azure AD** page, type the name and password of a **Azure AD DC admin**, or **Global admin** account for your Microsoft 365 subscription, and then click **Next**.
+8. On the **Connect to Microsoft Entra ID** page, type the name and password of a **Microsoft Entra DC admin**, or **Global admin** account for your Microsoft 365 subscription, and then click **Next**.
     
 9. On the **Connect your directories** page, ensure that your on-premises Active Directory Domain Services (AD DS) forest is selected in **Forest**, type the name and password of a domain administrator account, click **Add Directory**, and then click **Next**.
     
-10. On the **Azure AD sign-in configuration** page, click **Next**.
+10. On the **Microsoft Entra sign-in configuration** page, click **Next**.
     
 11. On the **Domain and OU filtering** page, click **Next**.
     
@@ -116,7 +118,7 @@ The Azure AD Connect tool configures the AD FS servers, the web application prox
     
 24. On the **AD FS service account** page, type the user name and password of an enterprise administrator account, and then click **Next**.
     
-25. On the **Azure AD Domain** page, in **Domain**, select your organization's DNS domain name, and then click **Next**.
+25. On the **Microsoft Entra Domain** page, in **Domain**, select your organization's DNS domain name, and then click **Next**.
     
 26. On the **Ready to configure** page, click **Install**.
     

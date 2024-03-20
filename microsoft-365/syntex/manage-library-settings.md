@@ -2,15 +2,15 @@
 title: Manage library settings in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: ssquires
-ms.date: 06/01/2023
+ms.date: 03/11/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
-    - enabler-strategic
+    - essentials-manage
     - m365initiative-syntex
 ms.localizationpriority:  medium
 description: Learn how to manage settings on a SharePoint document library with Microsoft Syntex.

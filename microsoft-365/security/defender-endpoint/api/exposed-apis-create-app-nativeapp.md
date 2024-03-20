@@ -2,30 +2,26 @@
 title: Use Microsoft Defender for Endpoint APIs
 ms.reviewer:
 description: Learn how to design a native Windows app to get programmatic access to Microsoft Defender for Endpoint without a user.
-keywords: apis, graph api, supported apis, actor, alerts, device, user, domain, ip, file, advanced hunting, query
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 ms.date: 01/25/2023
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
 - must-keep
 ms.topic: reference
-ms.subservice: mde
+ms.subservice: reference
 ms.custom: api
 search.appverid: met150
 ---
 
 # Use Microsoft Defender for Endpoint APIs
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
@@ -35,7 +31,7 @@ search.appverid: met150
 - [Microsoft Defender for Business](../../defender-business/index.yml)
 
 > [!IMPORTANT]
-> Advanced hunting capabilities are not included in Defender for Business. See [Compare Microsoft Defender for Business to Microsoft Defender for Endpoint Plans 1 and 2](../../defender-business/compare-mdb-m365-plans.md#compare-defender-for-business-to-defender-for-endpoint-plan-1-and-plan-2).
+> Advanced hunting capabilities are not included in Defender for Business.
 
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -54,11 +50,11 @@ Microsoft Defender for Endpoint exposes much of its data and actions through a s
 
 In general, you'll need to take the following steps to use the APIs:
 
-- Create an AAD application
+- Create a Microsoft Entra application
 - Get an access token using this application
 - Use the token to access Defender for Endpoint API
 
-This page explains how to create an AAD application, get an access token to Microsoft Defender for Endpoint and validate the token.
+This page explains how to create a Microsoft Entra application, get an access token to Microsoft Defender for Endpoint and validate the token.
 
 > [!NOTE]
 > When accessing Microsoft Defender for Endpoint API on behalf of a user, you will need the correct Application permission and user permission.
@@ -71,9 +67,9 @@ This page explains how to create an AAD application, get an access token to Micr
 
 1. Log on to [Azure](https://portal.azure.com) with a user account that has the **Global Administrator** role.
 
-2. Navigate to **Azure Active Directory** \> **App registrations** \> **New registration**.
+2. Navigate to **Microsoft Entra ID** \> **App registrations** \> **New registration**.
 
-   :::image type="content" source="../images/atp-azure-new-app2.png" alt-text="The App registrations page in the Microsoft Azure portal" lightbox="../images/atp-azure-new-app2.png":::
+   :::image type="content" source="../media/atp-azure-new-app2.png" alt-text="The App registrations page in the Microsoft Azure portal" lightbox="../media/atp-azure-new-app2.png":::
 
 3. When the **Register an application** page appears, enter your application's registration information:
    - **Name** - Enter a meaningful application name that will be displayed to users of the app.
@@ -83,15 +79,15 @@ This page explains how to create an AAD application, get an access token to Micr
 
      |Supported account types|Description|
      |---|---|
-     |**Accounts in this organizational directory only**|Select this option if you're building a line-of-business (LOB) application. This option is not available if you're not registering the application in a directory. <p> This option maps to Azure AD only single-tenant. <p> This is the default option unless you're registering the app outside of a directory. In cases where the app is registered outside of a directory, the default is Azure AD multi-tenant and personal Microsoft accounts.|
-     |**Accounts in any organizational directory**|Select this option if you would like to target all business and educational customers. <p> This option maps to an Azure AD only multi-tenant. <p> If you registered the app as Azure AD only single-tenant, you can update it to be Azure AD multi-tenant and back to single-tenant through the **Authentication** blade.|
-     |**Accounts in any organizational directory and personal Microsoft accounts**|Select this option to target the widest set of customers. <p> This option maps to Azure AD multi-tenant and personal Microsoft accounts. <p> If you registered the app as Azure AD multi-tenant and personal Microsoft accounts, you cannot change this in the UI. Instead, you must use the application manifest editor to change the supported account types.|
+     |**Accounts in this organizational directory only**|Select this option if you're building a line-of-business (LOB) application. This option is not available if you're not registering the application in a directory. <p> This option maps to Microsoft Entra-only single-tenant. <p> This is the default option unless you're registering the app outside of a directory. In cases where the app is registered outside of a directory, the default is Microsoft Entra multi-tenant and personal Microsoft accounts.|
+     |**Accounts in any organizational directory**|Select this option if you would like to target all business and educational customers. <p> This option maps to a Microsoft Entra-only multi-tenant. <p> If you registered the app as Microsoft Entra-only single-tenant, you can update it to be Microsoft Entra multi-tenant and back to single-tenant through the **Authentication** blade.|
+     |**Accounts in any organizational directory and personal Microsoft accounts**|Select this option to target the widest set of customers. <p> This option maps to Microsoft Entra multi-tenant and personal Microsoft accounts. <p> If you registered the app as Microsoft Entra multi-tenant and personal Microsoft accounts, you cannot change this in the UI. Instead, you must use the application manifest editor to change the supported account types.|
 
    - **Redirect URI (optional)** - Select the type of app you're building, **Web** or **Public client (mobile & desktop)**, and then enter the redirect URI (or reply URL) for your application.
 
      - For web applications, provide the base URL of your app. For example, `http://localhost:31544` might be the URL for a web app running on your local machine. Users would use this URL to sign in to a web client application.
 
-     - For public client applications, provide the URI used by Azure AD to return token responses. Enter a value specific to your application, such as `myapp://auth`.
+     - For public client applications, provide the URI used by Microsoft Entra ID to return token responses. Enter a value specific to your application, such as `myapp://auth`.
 
      To see specific examples for web applications or native applications, check out our [quickstarts](/azure/active-directory/develop/#quickstarts).
 
@@ -104,11 +100,11 @@ This page explains how to create an AAD application, get an access token to Micr
      > [!NOTE]
      > *WindowsDefenderATP* does not appear in the original list. Start writing its name in the text box to see it appear.
 
-     :::image type="content" alt-text="add permission." source="../images/add-permission.png" lightbox="../images/add-permission.png":::
+     :::image type="content" alt-text="add permission." source="../media/add-permission.png" lightbox="../media/add-permission.png":::
 
    - Choose **Delegated permissions** \> **Alert.Read** > select **Add permissions**.
 
-      :::image type="content" source="../images/application-permissions-public-client.png" alt-text="The application type and permissions panes" lightbox="../images/application-permissions-public-client.png":::
+      :::image type="content" source="../media/application-permissions-public-client.png" alt-text="The application type and permissions panes" lightbox="../media/application-permissions-public-client.png":::
 
    > [!IMPORTANT]
    > Select the relevant permissions. Read alerts is only an example.
@@ -130,11 +126,11 @@ This page explains how to create an AAD application, get an access token to Micr
 
     On your application page, go to **Overview** and copy the following information:
 
-    :::image type="content" source="../images/app-and-tenant-ids.png" alt-text="The created app ID"  lightbox="../images/app-and-tenant-ids.png":::
+    :::image type="content" source="../media/app-and-tenant-ids.png" alt-text="The created app ID"  lightbox="../media/app-and-tenant-ids.png":::
 
 ## Get an access token
 
-For more information on AAD tokens, see [Azure AD tutorial](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
+For more information on Microsoft Entra tokens, see [Microsoft Entra tutorial](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
 
 ### Using C\#
 

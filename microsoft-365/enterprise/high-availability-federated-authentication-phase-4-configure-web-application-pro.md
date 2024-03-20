@@ -57,7 +57,7 @@ Write-Host (Get-AzPublicIpaddress -Name "WebProxyPublicIP" -ResourceGroup $rgNam
 
 ## Determine your federation service FQDN and create DNS records
 
-You need to determine the DNS name to identify your federation service name on the Internet. Azure AD Connect will configure Microsoft 365 with this name in Phase 5, which will become part of the URL that Microsoft 365 sends to connecting clients to get a security token. An example is fs.contoso.com (fs stands for federation service).
+You need to determine the DNS name to identify your federation service name on the Internet. Microsoft Entra Connect will configure Microsoft 365 with this name in Phase 5, which will become part of the URL that Microsoft 365 sends to connecting clients to get a security token. An example is fs.contoso.com (fs stands for federation service).
   
 Once you have your federation service FDQN, create a public DNS domain A record for the federation service FDQN that resolves to the public IP address of the Azure Internet-facing load balancer.
   

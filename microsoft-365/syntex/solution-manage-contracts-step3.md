@@ -2,11 +2,11 @@
 title: Step 3. Use Power Automate to create the flow to process your contracts
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: ssquires
 audience: admin
 ms.topic: conceptual
-ms.date: 01/28/2023
+ms.date: 02/14/2024
 ms.service: microsoft-syntex
 search.appverid: 
 ms.localizationpriority:  medium

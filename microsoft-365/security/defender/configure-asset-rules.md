@@ -1,8 +1,8 @@
 ---
 title: Asset rule management - Dynamic rules 
 description: You can use Microsoft Defender for Endpoint to configure dynamic tagging 
-keywords: asset rule management, dynamic tagging, Microsoft Defender for Endpoint, devices, Microsoft 365 Defender, Defender
-ms.service: microsoft-365-security
+keywords: asset rule management, dynamic tagging, Microsoft Defender for Endpoint, devices, Microsoft Defender XDR, Defender
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,7 +15,6 @@ ms.collection:
 - m365-security
 - tier2
 ms.topic: conceptual
-ms.subservice: mde
 search.appverid: met150
 ms.date: 07/11/2023
 ---
@@ -27,7 +26,7 @@ ms.date: 07/11/2023
 
 **Applies to:**
 
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Business](../defender-business/mdb-overview.md)
@@ -40,12 +39,12 @@ Dynamic rules can help manage device context by assigning tags and device values
 
 ## Create a new dynamic rule
 
-A rule can be based on device name, domain, OS platform, internet facing status, onboarding status and manual device tags. You can select or create a tag that will be applied based on the conditions you’ve set.
+A rule can be based on device name, domain, OS platform, internet facing status, onboarding status and manual device tags. You can select or create a tag that will be applied based on the conditions you've set.
 
-The following steps guide you on how to create a new dynamic rule in Microsoft 365 Defender:
+The following steps guide you on how to create a new dynamic rule in Microsoft Defender XDR:
 
-1. Sign in to the [Microsoft 365 Defender portal](https://security.microsoft.com) as a user who can view and perform actions on all devices.
-2. In the navigation pane, select **Settings** \> **Microsoft 365 Defender** \> **Asset Rule Management**.
+1. Sign in to the [Microsoft Defender portal](https://security.microsoft.com) as a user who can view and perform actions on all devices.
+2. In the navigation pane, select **Settings** \> **Microsoft Defender XDR** \> **Asset Rule Management**.
 3. Select **Create a new rule**.
 4. Enter a **Rule name** and **Description***.
 5. Select **Next** to choose the conditions you want to assign:
@@ -67,7 +66,7 @@ You can see the dynamic tags assigned in the Device Inventory view.
 
 To see tags on individual devices:
 
-1. Select **Devices** from the **Assets** navigation menu in the [Microsoft 365 Defender portal](https://security.microsoft.com).
+1. Select **Devices** from the **Assets** navigation menu in the [Microsoft Defender portal](https://security.microsoft.com).
 2. In the **Device Inventory** page, select the device name that you want to view.
 3. Select **Manage tags**.
 

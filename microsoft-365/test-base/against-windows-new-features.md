@@ -18,7 +18,9 @@ f1.keywords: NOCSH
 
 # Test against Windows new features
 
-If you’re seeking further validation of your eco-system solution(s) against Windows new features, or hesitating whether to deploy the latest Windows feature or the next version of security solution to your organization, Test Base provides you a way to automatically test your applications against preview builds in Windows Insider program (More about [Windows Insider](https://www.microsoft.com/windowsinsider/about-windows-insider-program)).
+[!INCLUDE [test-base-deprecation](./includes/test-base-deprecation.md)]
+
+If you’re seeking further validation of your eco-system solution(s) against Windows new features, or hesitating whether to deploy the latest Windows feature or the next version of security solution to your organization, Test Base provides you with a way to test your applications against preview builds in Windows Insider program automatically (More about [Windows Insider](https://www.microsoft.com/windowsinsider/about-windows-insider-program)).
 
 This section shows you how to set up your own scheduled tests against preview features in Windows insider channel.
 
@@ -28,7 +30,7 @@ This section shows you how to set up your own scheduled tests against preview fe
 -   [Creating and Testing Binary Files on Test Base](testapplication.md)
 -   [Test your Intune application on Test Base](testintuneapplication.md)
 -   [Uploading a pre-built zip package](uploadapplication.md)
-2.  **Configure test:** Both *Out-of-Box* test and *Functional* test are supported. Selecting *Out-of-Box* will leverage the officially suggested test flow and automatically generate install / uninstall / launch / close test scripts for you; *Functional* tests will allow you more flexibility to set up your own test flow. You may also select both.
+2.  **Configure test:** Both *Out-of-Box* test and *Functional* test are supported. Selecting *Out-of-Box* applies the officially suggested test flow and automatically generate install / uninstall / launch / close test scripts for you; *Functional* tests allow you more flexibility to set up your own test flow. You may also select both.
 
 3.  **Edit package:** Edit test scripts and test flow as you need.
     > [!Note] 
@@ -50,7 +52,7 @@ Your selection will register your application for automatic test runs against th
 
 > [!Note]
 > - Check in [Flight Hub](/windows-insider/flight-hub/) for more details on the Windows Insider Preview builds.
-> - Windows 11, version 23H2 shares the same servicing branch as Windows 11, version 22H2. New features are firstly flight to insider audience via a simple update with enablement package(eKB) (See in [Windows client roadmap update](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/windows-client-roadmap-update-july-2023/ba-p/3871736)). Testing against these new features will soon be supported also in Test Base Feature Update.
+> - Windows 11, version 23H2 shares the same servicing branch as Windows 11, version 22H2. New features are firstly flight to insider audience via a simple update with enablement package(eKB) (See in [Windows client roadmap update](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/windows-client-roadmap-update-july-2023/ba-p/3871736)). 
 
 You may also set your current OS in “*OS baseline for Insight*”. We would provide you with more test insights by regression analysis of your as-is OS environment and the latest target OS.
 
@@ -61,7 +63,7 @@ You may also set your current OS in “*OS baseline for Insight*”. We would pr
 
 ## Check Feature update test results
 
-A test run will be executed after the package passes the validation. For all new feature updates in your selected insider channel, an automated run will be scheduled.
+A test run will be executed after the package passes the validation. For all new feature updates in your selected insider channel, an automated run is scheduled.
 
 You can view the results of the test run under the **Test summary** page by clicking the link on the package name.
 

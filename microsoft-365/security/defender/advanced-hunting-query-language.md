@@ -1,11 +1,11 @@
 ---
-title: Learn the advanced hunting query language in Microsoft 365 Defender
+title: Learn the advanced hunting query language in Microsoft Defender XDR
 description: Create your first threat hunting query and learn about common operators and other aspects of the advanced hunting query language
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, language, learn, first query, telemetry, events, telemetry, custom detections, schema, kusto, operators, data types, powershell download, query example
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft Defender XDR, microsoft 365, m365, search, query, language, learn, first query, telemetry, events, telemetry, custom detections, schema, kusto, operators, data types, powershell download, query example
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
+ms.subservice: adv-hunting
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -26,11 +26,11 @@ ms.date: 02/16/2021
 
 # Learn the advanced hunting query language
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 Advanced hunting is based on the [Kusto query language](/azure/kusto/query/). You can use Kusto operators and statements to construct queries that locate information in a specialized [schema](advanced-hunting-schema-tables.md).
 
@@ -42,7 +42,7 @@ To understand these concepts better, run your first query.
 
 ## Try your first query
 
-In the Microsoft 365 Defender portal, go to **Hunting** to run your first query. Use the following example:
+In the Microsoft Defender portal, go to **Hunting** to run your first query. Use the following example:
 
 ```kusto
 // Finds PowerShell execution events that could involve a download
@@ -87,6 +87,9 @@ The first piped element is a time filter scoped to the previous seven days. Limi
 ```kusto
 | where Timestamp > ago(7d)
 ```
+> [!NOTE]
+> Kusto time filters are in UTC regardless of the timezone you specified in your [settings](m365d-time-zone.md). 
+
 
 ### Check specific processes
 
@@ -176,15 +179,15 @@ You can use the query editor to experiment with multiple queries. To use multipl
 - Separate each query with an empty line.
 - Place the cursor on any part of a query to select that query before running it. This will run only the selected query. To run another query, move the cursor accordingly and select **Run query**.
 
-:::image type="content" source="../../media/multiple-queries.png" alt-text="An example of multiple queries execution in the **New query** page in the Microsoft 365 Defender portal" lightbox="../../media/multiple-queries.png":::
+:::image type="content" source="../../media/multiple-queries.png" alt-text="An example of multiple queries execution in the **New query** page in the Microsoft Defender portal" lightbox="../../media/multiple-queries.png":::
 
 For a more efficient workspace, you can also use multiple tabs in the same hunting page. Select **New query** to open a tab for your new query.
 
-:::image type="content" source="../../media/multitab.png" alt-text="Opening a new tab by selecting Create new in advanced hunting in the Microsoft 365 Defender portal" lightbox="../../media/multitab.png":::
+:::image type="content" source="../../media/multitab.png" alt-text="Opening a new tab by selecting Create new in advanced hunting in the Microsoft Defender portal" lightbox="../../media/multitab.png":::
 
 You can then run different queries without ever opening a new browser tab.
 
-:::image type="content" source="../../media/multitab-examples.png" alt-text="Run different queries without ever leaving the advanced hunting page in the Microsoft 365 Defender portal" lightbox="../../media/multitab-examples.png":::
+:::image type="content" source="../../media/multitab-examples.png" alt-text="Run different queries without ever leaving the advanced hunting page in the Microsoft Defender portal" lightbox="../../media/multitab-examples.png":::
 
 > [!NOTE]
 > Using multiple browser tabs with advanced hunting might cause you to lose your unsaved queries. To prevent this from happening, use the tab feature within advanced hunting instead of separate browser tabs.
@@ -193,7 +196,7 @@ You can then run different queries without ever opening a new browser tab.
 
 The **Get started** section provides a few simple queries using commonly used operators. Try running these queries and making small modifications to them.
 
-:::image type="content" source="../../media/get-started-section.png" alt-text="The **Getting started** section in the **Advanced hunting** page in the Microsoft 365 Defender portal" lightbox="../../media/get-started-section.png":::
+:::image type="content" source="../../media/get-started-section.png" alt-text="The **Getting started** section in the **Advanced hunting** page in the Microsoft Defender portal" lightbox="../../media/get-started-section.png":::
 
 > [!NOTE]
 > Apart from the basic query samples, you can also access [shared queries](advanced-hunting-shared-queries.md) for specific threat hunting scenarios. Explore the shared queries on the left side of the page or the [GitHub query repository](https://aka.ms/hunting-queries).
@@ -203,7 +206,7 @@ The **Get started** section provides a few simple queries using commonly used op
 For more information on Kusto query language and supported operators, see [Kusto query language documentation](/azure/kusto/query/).
 
 > [!NOTE]
-> Some tables in this article might not be available in Microsoft Defender for Endpoint. [Turn on Microsoft 365 Defender](m365d-enable.md) to hunt for threats using more data sources. You can move your advanced hunting workflows from Microsoft Defender for Endpoint to Microsoft 365 Defender by following the steps in [Migrate advanced hunting queries from Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mde.md).
+> Some tables in this article might not be available in Microsoft Defender for Endpoint. [Turn on Microsoft Defender XDR](m365d-enable.md) to hunt for threats using more data sources. You can move your advanced hunting workflows from Microsoft Defender for Endpoint to Microsoft Defender XDR by following the steps in [Migrate advanced hunting queries from Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mde.md).
 
 ## Related topics
 
@@ -213,4 +216,4 @@ For more information on Kusto query language and supported operators, see [Kusto
 - [Hunt across devices, emails, apps, and identities](advanced-hunting-query-emails-devices.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

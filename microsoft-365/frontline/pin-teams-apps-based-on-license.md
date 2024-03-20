@@ -2,7 +2,7 @@
 title: Tailor Teams apps for your frontline workers
 author: lana-chin
 ms.author: v-chinlana
-manager: serdars
+manager: jtremper
 ms.reviewer: aaglick
 ms.topic: how-to
 audience: admin

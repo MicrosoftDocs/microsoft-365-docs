@@ -20,7 +20,7 @@ description: Learn how to enable, disable, and manage Whiteboard data.
 >[!NOTE]
 > This guidance applies to US Government Community Cloud (GCC) High environments.
 
-Microsoft Whiteboard on OneDrive for Business is enabled by default for applicable Microsoft 365 tenants. It can be enabled or disabled at a tenant-wide level. You should also ensure that **Microsoft Whiteboard Services** is enabled in the **Azure Active Directory admin center** > **Enterprise applications**.
+Microsoft Whiteboard on OneDrive for Business is enabled by default for applicable Microsoft 365 tenants. It can be enabled or disabled at a tenant-wide level. You should also ensure that **Microsoft Whiteboard Services** is enabled in the **Microsoft Entra admin center** > **Enterprise applications**.
 
 The following URLs are required:
 
@@ -39,7 +39,7 @@ You can control access to Whiteboard in the following ways:
 
 - Show or hide Whiteboard for specific users in meetings using a Teams meeting policy. It will still be visible via the web, native clients, and the Teams tab app.
 
-- Require conditional access policies for accessing Whiteboard using the Azure Active Directory admin center.
+- Require conditional access policies for accessing Whiteboard using the Microsoft Entra admin center.
 
 >[!NOTE]
 > Whiteboard on OneDrive for Business doesn't appear in the Microsoft 365 admin center. Teams meeting policy only hides Whiteboard entry points, it doesn't prevent users from using Whiteboard. Conditional access policies prevent access to Whiteboard, but doesn't hide the entry points.
@@ -59,7 +59,7 @@ To enable or disable Whiteboard for your tenant, do the following steps:
 The change should take approximately 60 minutes to apply across your tenancy. If you don't see this option, you'll need to update the module.
 
 >[!NOTE]
-> By default, Whiteboard is enabled. If it has been disabled in the Azure Active Directory enterprise applications, then Whiteboard on OneDrive for Business will not work.
+> By default, Whiteboard is enabled. If it has been disabled in the Microsoft Entra enterprise applications, then Whiteboard on OneDrive for Business will not work.
 
 ## Show or hide Whiteboard
 

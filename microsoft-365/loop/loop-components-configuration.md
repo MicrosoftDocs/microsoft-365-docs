@@ -16,6 +16,7 @@ ms.collection:
 - Strat_SP_admin
 - Microsoft 365-collaboration
 - Tier3
+- essentials-manage
 search.appverid:
 - SPO160
 - MET150
@@ -28,7 +29,7 @@ Loop experiences on Microsoft 365 OneDrive or SharePoint are backed by .loop fil
 1. Cloud Policy
 2. SharePoint PowerShell command
 
-If you're looking to manage Loop workspaces in the Loop app, see [Manage Loop workspaces in Syntex repository services](/microsoft-365/loop/loop-workspaces-configuration).
+If you're looking to manage Loop workspaces in the Loop app, see [Manage Loop workspaces in SharePoint Embedded](/microsoft-365/loop/loop-workspaces-configuration).
 
 ## Requirements
 
@@ -63,8 +64,25 @@ There are several IT Admin settings provided to enable the Loop component experi
 
 |Scenario  |Policies Configured  |
 |---------|---------|
-|Enable Loop components everywhere     |  **Create and view Loop files in Microsoft apps that support Loop** = Enabled<br/>[Teams-only] `Set-SPOTenant -IsLoopEnabled $true`       |
-|Enable Loop components everywhere, but Disable integration in Communication app (Outlook, Teams)     |    **Create and view Loop files in Microsoft apps that support Loop** = Enabled<br/>**Create and view Loop files in Outlook** = Disabled<br/>[Teams-only] `Set-SPOTenant -IsLoopEnabled $false`     |
+|Enable Loop components everywhere     |  **Create and view Loop files in Microsoft apps that support Loop** = Enabled<br/>[Teams-only] `Set-SPOTenant -IsLoopEnabled $true`, `Set-SPOTenant -IsCollabMeetingNotesFluidEnabled $true`       |
+|Enable Loop components everywhere, but Disable integration in Communication app (Outlook, Teams)     |    **Create and view Loop files in Microsoft apps that support Loop** = Enabled<br/>**Create and view Loop files in Outlook** = Disabled<br/>[Teams-only] `Set-SPOTenant -IsLoopEnabled $false`, `Set-SPOTenant -IsCollabMeetingNotesFluidEnabled $false`     |
+|Disable Loop components everywhere     |    **Create and view Loop files in Microsoft apps that support Loop** = Disabled<br/>[Teams-only] `Set-SPOTenant -IsLoopEnabled $false`, `Set-SPOTenant -IsCollabMeetingNotesFluidEnabled $false`     |
+
+## User experience expectations when admin settings are configured
+
+As described in this topic, you can control the ability for users in your environment to create new Loop content. You can configure this either via select groups or for your entire tenant. To prevent collaboration between certain groups in your organization, refer to [Information Barriers](/en-us/purview/information-barriers-sharepoint).
+
+### Here's what you should expect when using the Loop IT admin controls configured to Disabled
+
+If configured to Disabled, the settings in this article will prevent creation of new Loop files. However, when Disabled, there are still a few places that Loop experiences can appear.
+
+Because Loop experiences create files in SharePoint and OneDrive, files that were created before IT admins disable new creation can still appear in places such as Microsoft365.com, the Loop component viewer and editor (loop.microsoft.com), and links to Loop components shared in messages or documents. The files themselves are not removed and access to these files is determined by the permissions set on them. Therefore, someone with edit access to a Loop file can still open it and edit it after you have disabled creation of new Loop files. This would be similar to a txt file or any other file in OneDrive or SharePoint.
+
+In addition, because there are no separate licensing requirements for the Loop component viewer and editor, only the requirement that users have access to OneDrive, users will still be able to access the Loop component viewer and editor by visiting loop.microsoft.com and via Loop in the All apps view in Microsoft365.com. The presence of the Loop app in the All apps view is dependent on the user having a license to OneDrive; if you wish to prevent users from seeing the Loop app, you can disable their access to OneDrive, or configure a conditional access policy for loop.microsoft.com so that visits to the page fail to load.
+
+### Additional IT Admin resources
+
+You can learn more about [Loop storage](/microsoft-365/loop/loop-compliance-summary#loop-storage) or [Conditional Access Policies](/sharepoint/control-access-from-unmanaged-devices) and [manually provisioning the Loop experiences for conditional access](/microsoft-365/loop/loop-compliance-summary#manually-initializing-microsoft-loop-app-for-conditional-access-management-in-microsoft-entra).
 
 ## Settings management in Cloud Policy
 
@@ -80,9 +98,17 @@ The Loop experiences (except for Microsoft Teams) check the following [Cloud Pol
 1. From the **Choose the scope** dropdown list, choose either **All users** or select the group for which you want to apply the policy. For more information, See [Microsoft 365 Groups for Cloud Policy](#microsoft-365-groups-for-cloud-policy).
 1. In **Configure Settings**, choose one of the following settings:
     - For **Create and view Loop files in Microsoft apps that support Loop**:
+        - recall:
+            - this setting applies to:
+                - Outlook integration
+                - Word for the web integration
+                - Whiteboard integration
+            - this setting does **NOT** apply to:
+                - Loop workspaces (see [Manage Loop workspaces in SharePoint Embedded](/microsoft-365/loop/loop-workspaces-configuration))
+                - Teams integration (see [Settings management for Loop components in Teams](#settings-management-for-loop-functionality-in-teams))
         - **Enabled**: Loop experience is available to the users.
         - **Disabled**: Loop experience isn't available to the users.
-        - **Not configured**: Loop experience is available to the users.
+        - **Not configured**: Loop experience is available to the users.   
     - For **Create and view Loop files in Outlook**:
         - **Enabled**: Loop experience is available to the users.
         - **Disabled**: Loop experience isn't available to the users.
@@ -90,13 +116,13 @@ The Loop experiences (except for Microsoft Teams) check the following [Cloud Pol
 1. Save the policy configuration.
 1. Reassign priority for any security group, if required. (If two or more policy configurations are applicable to the same set of users, the one with the higher priority is applied.)
 
-In case you create a new policy configuration or change the configuration for an existing policy, there will be a delay in the change being reflected as described below:
+In case you create a new policy configuration or change the configuration for an existing policy, there can be a delay in the change being reflected as described below:
 - If there were existing policy configurations prior to the change, then it will take 90 mins for the change to be reflected.
 - If there were no policy configurations prior to the change, then it will take 24 hours for the change to be reflected.
 
 ## Settings management for Loop functionality in Teams
 
-You'll need the latest version of SharePoint PowerShell module to enable or disable Loop experiences in Teams. Loop components default to **ON** for all organizations. Because Loop components are designed for collaboration, the components are always shared as editable by others, even if your organization is set to create shareable links that have **view-only** permissions as the default value for other file types. For more information, see the **Learn more** link next to the setting.
+You'll need the [latest version of SharePoint PowerShell module](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) to enable or disable Loop experiences in Teams. Loop components default to **ON** for all organizations. Because Loop components are designed for collaboration, the components are always shared as editable by others, even if your organization is set to create shareable links that have **view-only** permissions as the default value for other file types. For more information, see the **Learn more** link next to the setting.
 
 |Experience  |SharePoint organization properties  |Notes  |
 |---------|---------|---------|

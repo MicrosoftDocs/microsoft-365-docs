@@ -17,6 +17,8 @@ f1.keywords: NOCSH
 ---
 # How to prepare a Windows VHD for Test Base
 
+[!INCLUDE [test-base-deprecation](./includes/test-base-deprecation.md)]
+
 Before you upload a Windows virtual machine (VM) from on-premises to Test Base, you need to prepare the virtual hard disk (VHD) first.
 Test Base only supports generation 2 VMs that use the VHD file format and have a fixed-size disk.
 The maximum size for the OS VHD on a generation 2 VM is 128 GiB on Test Base.
@@ -33,7 +35,7 @@ You cannot shrink the physical size of a VHD. If the total size of the volumes i
 
 You need to follow the configuration steps below to make sure that the VM VHD is compatible with Test Base.
 
-## Step 1. Run the *AzureConfig.ps1* script for easy configuration
+## Step 1: Run the *AzureConfig.ps1* script for easy configuration
 
 To make the configuration steps easier we prepared a configuration script, you can download **[AzureConfig.ps1](https://github.com/microsoft/testbase/blob/main/CustomImage/AzureConfig.ps1)** and run the script as an administrator in PowerShell on the VM. You may need to configure PowerShell execution policy before running the script. Run `Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser` to bypass signing checks for the current user.
 
@@ -41,13 +43,13 @@ After the script finishes, restart the computer.
 The **ChkDsk** will run during the system boot. Make sure the report shows a clean and healthy disk.
 The **Step-SetLocalPolicy** will set the local policy to disable the legal notice and allow storage of password and credentials for network authentication.
 
-## Step 2. Install Windows updates
+## Step 2: Install Windows updates
 
 To prevent an accidental reboot during the VM provisioning, it is recommended to install all Windows updates and restart the VM before migrating it to Test Base.
 
 If you also need to generalize the OS (Sysprep), you need to update Windows and restart the VM before running the Sysprep command.
 
-## Step 3. Decide when to use Sysprep
+## Step 3: Decide when to use Sysprep
 
 System Preparation Tool (`sysprep.exe`) is a process that resets a Windows installation.
 Sysprep removes all personal data and resets several components.
@@ -114,7 +116,7 @@ $logPath = "$PWD\$installerName.log"
 Start-Process "msiexec.exe" -ArgumentList "/i `"$installerPath`" /qn /L*v `"$logPath`"" -PassThru -Wait
 ```
 
-## Step 4. Convert and resize the virtual disk to a fixed size VHD
+## Step 4: Convert and resize the virtual disk to a fixed size VHD
 
 Use this method to convert and resize the virtual disk for Test Base:
 

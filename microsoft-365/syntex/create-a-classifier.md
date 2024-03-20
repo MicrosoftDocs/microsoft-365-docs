@@ -2,9 +2,9 @@
 title: Train an unstructured document processing model in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: ssquires
-ms.date: 03/14/2023
+ms.date: 02/21/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
