@@ -142,7 +142,7 @@ When you select a spoof detection from the list by clicking anywhere in the row 
 - **Why did we catch this?** section: Why we detected this sender as spoof, and what you can do for further information.
 - **Domain summary** section: Includes the same information from the main **Spoof intelligence insight** page.
 - **WhoIs data** section: Technical information about the sender's domain.
-- **Explorer investigation** section: In Defender for Office 365 organization, this section contains a link to open [Threat Explorer](threat-explorer-about.md) to see additional details about the sender on the **Phish** tab.
+- **Explorer investigation** section: In Defender for Office 365 organization, this section contains a link to open [Threat Explorer](threat-explorer-real-time-detections-about.md) to see additional details about the sender on the **Phish** tab.
 - **Similar Emails** section: Contains the following information about the spoof detection:
   - **Date**
   - **Subject**

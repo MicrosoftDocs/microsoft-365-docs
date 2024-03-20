@@ -97,7 +97,7 @@ The **Overview** tab displays the [cards](#cards) for active alerts, logged on u
 
 The **Incidents and alerts** tab provides a list of incidents and alerts that are associated with the device. This list is a filtered version of the [Alerts queue](alerts-queue.md), and shows a short description of the incident, alert, severity (high, medium, low, informational), status in the queue (new, in progress, resolved), classification (not set, false alert, true alert), investigation state, category of alert, who is addressing the alert, and last activity. You can also filter the alerts.
 
-:::image type="content" source="images/alerts-device.png" alt-text="The tab of the alerts related to the device" lightbox="images/alerts-device.png":::
+:::image type="content" source="media/alerts-device.png" alt-text="The tab of the alerts related to the device" lightbox="media/alerts-device.png":::
 
 When an alert is selected, a fly-out appears. From this panel you can manage the alert and view more details such as incident number and related devices. Multiple alerts can be selected at a time.
 
@@ -146,7 +146,7 @@ Select an event to view relevant details about that event. A panel displays to s
 
 To further inspect the event and related events, you can quickly run an [advanced hunting](advanced-hunting-overview.md) query by selecting **Hunt for related events**. The query returns the selected event and the list of other events that occurred around the same time on the same endpoint.
 
-:::image type="content" source="images/event-details.png" alt-text="The event details panel" lightbox="images/event-details.png":::
+:::image type="content" source="media/event-details.png" alt-text="The event details panel" lightbox="media/event-details.png":::
 
 ### Security recommendations
 
@@ -173,7 +173,7 @@ The **Software inventory** tab lets you view software on the device, along with 
 
 The **Discovered vulnerabilities** tab shows the name, severity, and threat insights of discovered vulnerabilities on the device. If you select a specific vulnerability, you see a description and details.
 
-:::image type="content" source="images/discovered-vulnerabilities-device.png" alt-text="The Discovered vulnerabilities tab" lightbox="images/discovered-vulnerabilities-device.png":::
+:::image type="content" source="media/discovered-vulnerabilities-device.png" alt-text="The Discovered vulnerabilities tab" lightbox="media/discovered-vulnerabilities-device.png":::
 
 ### Missing KBs
 
@@ -238,7 +238,7 @@ To gain an in-depth view of the device health report, you can go to **Reports > 
 > [!NOTE]
 > The date and time for Defender Antivirus mode is currently not available.
 
-:::image type="content" source="images/device-health-status.png"  alt-text="The device health status card" lightbox="images/device-health-status.png":::
+:::image type="content" source="media/device-health-status.png"  alt-text="The device health status card" lightbox="media/device-health-status.png":::
 
 ## Related articles
 
