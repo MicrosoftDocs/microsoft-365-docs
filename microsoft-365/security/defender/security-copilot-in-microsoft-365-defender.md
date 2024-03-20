@@ -27,6 +27,11 @@ ms.date: 03/14/2024
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
+**Applies to:**
+
+- Microsoft Defender XDR
+- Unified SOC platform in the Microsoft Defender portal
+
 [Microsoft Copilot for Security](/security-copilot/microsoft-security-copilot) is a platform that brings together the power of AI and human expertise to help security teams respond to attacks faster and more effectively. Copilot for Security is embedded in Microsoft Defender to enable security teams to efficiently summarize incidents, analyze scripts and codes, analyze files, summarize device information, use guided responses to resolve incidents, generate KQL queries, create incident reports.
 
 This article provides an overview for users of the Copilot for Security embedded experience in Microsoft Defender, including steps to access, key capabilities, and links to the details of these capabilities.
@@ -97,9 +102,9 @@ Ask your assistant to summarize the latest threats impacting your environment, t
 
 :::image type="content" source="../../media/copilot-in-defender/TI/copilot-defender-threat-intel-small.png" alt-text="Screenshot of Copilot for Defender threat intelligence landing page." lightbox="../../media/copilot-in-defender/TI/copilot-defender-threat-intel-full.png":::
 
-## Provide feedback to Copilot in Defender
+## Data security and feedback in Copilot
 
-Copilot in Defender uses AI and machine learning to process data and generate results for each of the key features. However, AI might misinterpret some data, which sometimes cause a mismatch in results. Providing your feedback about the generated responses enable both Copilot in Defender to continuously improve delivery of more accurate responses in the future.
+Copilot continuously evolves using [data](/security-copilot/privacy-data-security#customer-data-and-system-data) that is always protected and [resides safely in data centers closest to your region](/security-copilot/privacy-data-security#data-residency-and-sovereignty). Because of its continuing evolution, Copilot might miss some things, which is why all results should be reviewed. [Providing feedback](/security-copilot/rai-faqs-security-copilot#what-are-the-limitations-of-security-copilot-how-can-users-minimize-the-impact-of-security-copilots-limitations-when-using-the-system) about the results helps improve Copilot's future responses.
 
 All key features have an option for providing feedback. To provide feedback, perform the following steps:
 

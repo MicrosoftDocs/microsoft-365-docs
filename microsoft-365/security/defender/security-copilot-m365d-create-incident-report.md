@@ -1,6 +1,6 @@
 ---
-title: Create incident reports with Microsoft Copilot for Security in Microsoft Defender
-description: Write incident reports with Microsoft Copilot for Security in Microsoft Defender.
+title: Create incident reports with Microsoft Copilot in Microsoft Defender
+description: Write incident reports with Microsoft Copilot in Microsoft Defender.
 keywords: security copilot, Microsoft Defender XDR, embedded experience, incident report, script analyzer, script analysis, query assistant, m365, incident report, guided response, incident response playbooks, incident response, incident report creation, create report, create incident report, write incident report, write report, Microsoft Copilot for Security, Microsoft Defender, Copilot in Defender
 ms.service: defender-xdr
 ms.mktglfcycl: deploy
@@ -23,11 +23,16 @@ search.appverid:
 ms.date: 03/14/2024
 ---
 
-# Create an incident report with Microsoft Copilot for Security in Microsoft Defender
+# Create an incident report with Microsoft Copilot in Microsoft Defender
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
-[Microsoft Copilot for Security](/security-copilot/microsoft-security-copilot) in Microsoft Defender assists security operations teams with writing incident reports efficiently. Utilizing Copilot for Security's AI-powered data processing, security teams can immediately create incident reports with a click of a button in Microsoft Defender.
+**Applies to:**
+
+- Microsoft Defender XDR
+- Unified SOC platform in the Microsoft Defender portal
+
+[Microsoft Copilot](/security-copilot/microsoft-security-copilot) in Microsoft Defender assists security operations teams with writing incident reports efficiently. Utilizing Copilot for Security's AI-powered data processing, security teams can immediately create incident reports with a click of a button in Microsoft Defender.
 
 A comprehensive and clear incident report is an essential reference for security teams and security operations management. However, writing a comprehensive report with the important details present can be a time-consuming task for security operations teams.Collecting, organizing, and summarizing incident information from multiple sources requires focus and detailed analysis to create an information-rich report. With Copilot for Defender, security teams can now instantly create an extensive incident report within the portal.
 

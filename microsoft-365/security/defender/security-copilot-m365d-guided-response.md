@@ -1,6 +1,6 @@
 ---
-title: Resolve incidents with guided responses with Microsoft Copilot for Security in Microsoft Defender
-description: Resolve incidents with guided responses from Microsoft Copilot for Security in Microsoft Defender XDR.
+title: Resolve incidents with guided responses with Microsoft Copilot in Microsoft Defender
+description: Resolve incidents using guided responses delivered by Microsoft Copilot in Microsoft Defender.
 keywords: security copilot, Microsoft Defender XDR, embedded experience, incident summary, script analyzer, script analysis, query assistant, m365, incident report, guided response, incident response playbooks, incident response, incident response playbooks, remediate incident, remediation actions, incident solution, resolve incidents, guided responses, security copilot guided response, copilot in security guided response, security copilot guided response in Microsoft Defender XDR, Microsoft Copilot for Security, Microsoft Defender, Copilot in Defender
 ms.service: defender-xdr
 ms.mktglfcycl: deploy
@@ -20,14 +20,19 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - MET150
-ms.date: 03/14/2024
+ms.date: 03/20/2024
 ---
 
-# Resolve incidents with guided responses from Microsoft Copilot for Security in Microsoft Defender
+# Resolve incidents with guided responses from Microsoft Copilot for Microsoft Defender
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
-[Microsoft Copilot for Security](/security-copilot/microsoft-security-copilot) in Microsoft Defender supports incident response teams in immediately resolving incidents with guided responses. Copilot for Security and Microsoft Defender uses AI and machine learning capabilities to contextualize an incident and learn from previous investigations to generate appropriate response actions.
+**Applies to:**
+
+- Microsoft Defender XDR
+- Unified SOC platform in the Microsoft Defender portal
+
+[Microsoft Copilot](/security-copilot/microsoft-security-copilot) in Microsoft Defender supports incident response teams in immediately resolving incidents with guided responses. Copilot for Security and Microsoft Defender uses AI and machine learning capabilities to contextualize an incident and learn from previous investigations to generate appropriate response actions.
 
 Responding to incidents in Microsoft Defender XDR often requires familiarity with the portal's available actions to stop attacks. In addition, new incident responders might have different ideas of where and how to start responding to incidents. The guided response capability of Copilot in Defender allows incident response teams at all levels to confidently and quickly apply response actions to resolve incidents with ease. 
 
@@ -44,9 +49,7 @@ Guided responses recommend actions in the following categories:
 - Investigation - includes recommended actions for further investigation
 - Remediation - includes recommended response actions to apply to specific entities involved in an incident
 
-Each card contains information about the recommended action, including the entity where the action needs to be applied and why the action is recommended. The cards also emphasize when a recommended action was done by automated investigation like [attack disruption](automatic-attack-disruption.md) or [automated investigation response](m365d-autoir.md). Below are examples of the guided response cards that highlight a user-driven action (left) and automation-driven action (right).
-
- :::image type="content" source="../../media/copilot-in-defender/guided-response/copilot-guided-response-cards.png" alt-text="Screenshot of guided response cards highlighting automation and user action." lightbox="../../media/copilot-in-defender/guided-response/copilot-guided-response-cards.png":::
+Each card contains information about the recommended action, including the entity where the action needs to be applied and why the action is recommended. The cards also emphasize when a recommended action was done by automated investigation like [attack disruption](automatic-attack-disruption.md) or [automated investigation response](m365d-autoir.md).
 
 The guided response cards can be sorted based on the available status for each card. You can select a specific status when viewing the guided responses by clicking on **Status** and selecting the appropriate status you want to view. All guided response cards regardless of status are shown by default.
 

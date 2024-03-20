@@ -1,6 +1,6 @@
 ---
 title: Script analysis with Microsoft Copilot for in Microsoft Defender
-description: Use Security Copilot script analysis embedded in Microsoft Defender XDR to investigate scripts and codes.
+description: Use Microsoft Copilot script analysis in Microsoft Defender to investigate scripts and command lines.
 keywords: security copilot, Microsoft Defender XDR, embedded experience, incident summary, script analyzer, script analysis, query assistant, m365, incident report, guided response, incident response playbooks, incident response, powershell, powershell analysis, bash, batch, bash analysis, batch analysis, code analysis, code analyzer, security copilot script analysis, copilot in security script analysis, security copilot script analysis in Microsoft Defender XDR, Microsoft Copilot for Security, Microsoft Defender, Copilot in Defender
 ms.service: defender-xdr
 ms.mktglfcycl: deploy
@@ -23,11 +23,16 @@ search.appverid:
 ms.date: 03/14/2024
 ---
 
-# Script analysis with Microsoft Copilot for Security in Microsoft Defender
+# Script analysis with Microsoft Copilot in Microsoft Defender
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
-Through AI-powered investigation capabilities from [Microsoft Copilot for Security](/security-copilot/microsoft-security-copilot) embedded in Microsoft Defender, security teams can speed up their analysis of malicious or suspicious scripts and command lines in PowerShell, batch, and bash.
+**Applies to:**
+
+- Microsoft Defender XDR
+- Unified SOC platform in the Microsoft Defender portal
+
+Through AI-powered investigation capabilities from [Microsoft Copilot](/security-copilot/microsoft-security-copilot) in Microsoft Defender, security teams can speed up their analysis of malicious or suspicious scripts and command lines in PowerShell, batch, and bash.
 
 Most complex and sophisticated attacks like [ransomware](/security/ransomware) evade detection through numerous ways, including the use of scripts and PowerShell. Moreover, these scripts are often obfuscated, which adds to the complexity of detection and analysis. Security operations teams need to quickly analyze scripts to understand capabilities and apply appropriate mitigation, immediately stopping attacks from progressing further within a network.
 

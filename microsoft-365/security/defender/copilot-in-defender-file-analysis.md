@@ -1,6 +1,6 @@
 ---
-title: Analyze files with Microsoft Copilot for Security in Microsoft Defender
-description: Analyze files with Microsoft Copilot for Security in Microsoft Defender.
+title: Analyze files with Microsoft Copilot in Microsoft Defender
+description: Analyze files with Microsoft Copilot in Microsoft Defender.
 keywords: security copilot, Microsoft Defender XDR, embedded experience, m365, incident response, file information, generate file info, run file analysis, analyze files, Microsoft Copilot for Security, Microsoft Defender, Copilot in Defender
 ms.service: defender-xdr
 ms.mktglfcycl: deploy
@@ -20,18 +20,23 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - MET150
-ms.date: 03/14/2024
+ms.date: 03/20/2024
 ---
 
-# File analysis with Microsoft Copilot for Security in Microsoft Defender
+# File analysis with Microsoft Copilot in Microsoft Defender
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
-[Microsoft Copilot for Security](/security-copilot/microsoft-security-copilot) in Microsoft Defender enables security teams to quickly identify malicious and suspicious files through AI-powered file analysis capabilities.
+**Applies to:**
 
-Security operations teams tracking and resolving attacks need tools and techniques to quickly analyze potentially malicious files. Sophisticated attacks often use files that mimic legitimate or system files to avoid detection. In addition, new-to-the-field security analysts might require time and gain significant experience to use available analysis tools and techniques available.
+- Microsoft Defender XDR
+- Unified SOC platform in the Microsoft Defender portal
 
-The file analysis capability of Copilot in Defender reduces the barrier to learning file analysis by immediately delivering reliable and complete file investigation results. This capability empowers security analysts from all levels to complete their investigation with a shorter turnaround time. Copilot in Defender provides file information from Microsoft Defender for Endpoint data and uses the information to generate a comprehensive file analysis report. The report includes an overview of the file, details of the file’s contents, and a summary of the file’s assessment.
+[Microsoft Copilot](/security-copilot/microsoft-security-copilot) in Microsoft Defender enables security teams to quickly identify malicious and suspicious files through AI-powered file analysis capabilities.
+
+Security operations teams tracking and resolving attacks need tools and techniques to quickly analyze potentially malicious files. Sophisticated attacks often use files that mimic legitimate or system files to avoid detection. In addition, new-to-the-field security analysts might require time and gain significant experience to use available analysis tools and techniques.
+
+The file analysis capability of Copilot in Defender reduces the barrier to learning file analysis by immediately delivering reliable and complete file investigation results. This capability empowers security analysts from all levels to complete their investigation with a shorter turnaround time. The report includes an overview of the file, details of the file's contents, and a summary of the file's assessment.
 
 The file analysis capability is available in Microsoft Defender through the [Copilot for Security license](/security-copilot/faq-security-copilot). Copilot for Security standalone portal users also have the file analysis capability and other Defender XDR capabilities through the Microsoft Defender XDR plugin.
 
@@ -51,10 +56,12 @@ You can access the file analysis capability through the following ways:
   :::image type="content" source="../../media/copilot-in-defender/file-analysis/copilot-defender-file-analysis-small.png" alt-text="Screenshot of the file analysis results in Copilot in Defender with the Show details option highlighted." lightbox="../../media/copilot-in-defender/file-analysis/copilot-defender-file-analysis.png":::
   Select **Show details** (shown above) to display the full results or **Hide details** (highlighted below) to minimize the results.
  :::image type="content" source="../../media/copilot-in-defender/file-analysis/copilot-defender-file-analysis-hide-small.png" alt-text="Screenshot of the file analysis results in Copilot in Defender with the Hide details option highlighted." lightbox="../../media/copilot-in-defender/file-analysis/copilot-defender-file-analysis-hide.png":::
-2. From an incident page, choose a file to investigate in the [attack story](investigate-incidents.md#attack-story) graph.
+2. From an incident page, choose a file to investigate in the [attack story](investigate-incidents.md#attack-story) graph. You can also choose a file to investigate in an alert page.
   :::image type="content" source="../../media/copilot-in-defender/file-analysis/copilot-defender-file-analysis-attack-story-small.png" alt-text="Screenshot of the attack story graph with the file entities highlighted." lightbox="../../media/copilot-in-defender/file-analysis/copilot-defender-file-analysis-attack-story.png":::
   Select a file to investigate then select **Analyze** on the side pane to begin analysis. The results are then displayed on the Copilot pane.
   :::image type="content" source="../../media/copilot-in-defender/file-analysis/copilot-defender-file-analysis-file-pane-small.png" alt-text="Screenshot of the incident page with the file analysis button highlighted." lightbox="../../media/copilot-in-defender/file-analysis/copilot-defender-file-analysis-file-pane.png":::
+
+You can copy the results to clipboard, regenerate the results, or open the Copilot for Security portal by selecting the More actions ellipsis (...) on top of the file analysis card.
 
 Always review the results generated by Copilot in Defender. Select the feedback icon ![Screenshot of the feedback icon for Copilot in Defender cards](../../media/copilot-in-defender/copilot-defender-feedback.png) at the bottom of the Copilot pane to provide feedback.
 

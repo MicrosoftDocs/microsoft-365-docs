@@ -1,6 +1,6 @@
 ---
-title: Summarize incidents with Microsoft Copilot for Security in Microsoft Defender
-description: Generate incident summaries with Microsoft Copilot for Security embedded in Microsoft Defender.
+title: Summarize incidents with Microsoft Copilot in Microsoft Defender
+description: Generate incident summaries with Microsoft Copilot embedded in Microsoft Defender.
 keywords: security copilot, Microsoft Defender XDR, embedded experience, incident summary, script analyzer, script analysis, query assistant, m365, guided response, incident response playbooks, incident response, summary, summarize incident, summarize incidents, incident overview, write incident summary, Microsoft Copilot for Security, Copilot in Defender, Microsoft Defender
 ms.service: defender-xdr
 ms.mktglfcycl: deploy
@@ -26,6 +26,11 @@ ms.date: 03/14/2024
 # Summarize an incident with Microsoft Copilot for Security in Microsoft Defender
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
+
+**Applies to:**
+
+- Microsoft Defender XDR
+- Unified SOC platform in the Microsoft Defender portal
 
 Microsoft Defender applies the capabilities of [Microsoft Copilot for Security](/security-copilot/microsoft-security-copilot) to summarize incidents, delivering impactful information and insights to simplify investigation tasks. Attack investigation is a crucial step for incident response teams to successfully defend an organization against further damage from a cyber threat. Investigations can oftentimes be time-consuming as it involves numerous steps. Incident response teams need to understand how the attack happened: sort through numerous alerts, identify which assets and entities are involved, and assess the scope and impact of an attack.
 
