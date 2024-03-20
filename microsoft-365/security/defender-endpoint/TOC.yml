@@ -271,8 +271,6 @@
            href: schedule-antivirus-scan-in-mde.md
          - name: Schedule an update of the Microsoft Defender for Endpoint (Linux)
            href: linux-update-MDE-Linux.md
-         - href: linux-support-offline-security-intelligence-update.md
-           name: Configure Offline Security Intelligence Updates for Defender for Endpoint on Linux
          - name: Configure eBPF-based sensor
            href: linux-support-ebpf.md 
          - name: Configure Offline Security Intelligence Update
@@ -1509,13 +1507,12 @@
         href: troubleshoot-mdatp.md
       - name: Contact Microsoft Defender for Endpoint support
         href: contact-support.md
-
     - name: Troubleshoot live response issues
       href: troubleshoot-live-response.md
-
     - name: Collect support logs using LiveAnalyzer
       href: troubleshoot-collect-support-log.md
-
+    - name: Troubleshoot Microsoft Defender Antivirus settings
+      href: troubleshoot-settings.md
     - name: Troubleshoot attack surface reduction issues
       items:
       - name: Network protection

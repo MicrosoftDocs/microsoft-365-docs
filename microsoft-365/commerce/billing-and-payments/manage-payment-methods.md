@@ -9,6 +9,7 @@ ms.reviewer: lishepar, ramagane
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-management
 ms.localizationpriority: high
 ms.collection: 
 - Tier1
