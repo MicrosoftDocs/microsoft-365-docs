@@ -13,7 +13,7 @@ ms.collection:
   - highpri
   - tier1
 ms.topic: conceptual
-ms.date: 09/01/2023
+ms.date: 03/20/2024
 ---
 
 # Manage tenants
