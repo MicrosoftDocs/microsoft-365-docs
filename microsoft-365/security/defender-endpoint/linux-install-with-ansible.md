@@ -15,7 +15,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: linux
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 3/20/2024
 ---
 
 # Deploy Microsoft Defender for Endpoint on Linux with Ansible
