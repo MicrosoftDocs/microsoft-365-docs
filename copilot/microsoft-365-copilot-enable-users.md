@@ -22,7 +22,7 @@ description: "Learn about the steps to deploy Microsoft Copilot for Microsoft 36
 
 # Enable users for Microsoft Copilot for Microsoft 365
 
-There are three main steps to deploy Microsoft Copilot for Microsoft 365 in your organization:
+There are 3 main steps to deploy Microsoft Copilot for Microsoft 365 in your organization:
 
 1. Review the [prerequisites](microsoft-365-copilot-requirements.md) and verify that your organization is prepared for Microsoft Copilot for Microsoft 365.
 
