@@ -35,7 +35,7 @@ This article provides some general steps that can be used to narrow down perform
 Depending on the applications that you're running and your device characteristics, you might experience suboptimal performance when running Microsoft Defender for Endpoint on macOS. In particular, applications or system processes that access many resources over a short timespan can lead to performance issues in Defender for Endpoint on macOS.
 
 > [!WARNING]
-> Before starting, please make sure that other security products are not currently running on the device. Multiple security products may conflict and impact the host performance.
+> Before you perfom the procedures described in this article, make sure that other security products are not currently running on the device. Multiple security products can conflict and impact the host performance.
 
 ## Troubleshoot performance issues using Real-time Protection Statistics
 
