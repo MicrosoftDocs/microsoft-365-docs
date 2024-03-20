@@ -129,7 +129,7 @@ Follow the below steps for setting up MAM config for unenrolled devices for Netw
 
 1. In the Microsoft Intune admin center, navigate to **Apps** \> **App configuration policies** \> **Add** \> **Managed apps** \> **Create a new App configuration policy**.
 
-   :::image type="content" source="images/addiosconfig.png" alt-text="Add configuration policy." lightbox="images/addiosconfig.png":::
+   :::image type="content" source="media/addiosconfig.png" alt-text="Add configuration policy." lightbox="media/addiosconfig.png":::
 
 2. Provide a name and description to uniquely identify the policy. Then select **Select Public apps**, and choose **Microsoft Defender for Platform iOS/iPadOS**.
 
@@ -137,7 +137,7 @@ Follow the below steps for setting up MAM config for unenrolled devices for Netw
 
 3. On the Settings page, add **DefenderNetworkProtectionEnable** as the key and the value as `true` to enable network protection. (Network protection is disabled by default.)
 
-   :::image type="content" source="images/addiosconfigvalue.png" alt-text="Add configuration value." lightbox="images/addiosconfigvalue.png":::
+   :::image type="content" source="media/addiosconfigvalue.png" alt-text="Add configuration value." lightbox="media/addiosconfigvalue.png":::
 
 4. For other configurations related to network protection, add the following keys and appropriate corresponding value.
 
@@ -150,7 +150,7 @@ Follow the below steps for setting up MAM config for unenrolled devices for Netw
   
 5. In the **Assignments** section, an admin can choose groups of users to include and exclude from the policy.
 
-   :::image type="content" source="images/assigniosconfig.png" alt-text="Assign configuration." lightbox="images/assigniosconfig.png":::
+   :::image type="content" source="media/assigniosconfig.png" alt-text="Assign configuration." lightbox="media/assigniosconfig.png":::
 
 6. Review and create the configuration policy.
 

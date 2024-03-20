@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: amcdonnell
-ms.date: 11/15/2023
+ms.date: 03/15/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -33,6 +33,10 @@ Before you can use SharePoint eSignature, you must first link your Azure subscri
 ### Permissions
 
 You must have Global admin or SharePoint admin permissions to be able to access the Microsoft 365 admin center and set up SharePoint eSignature.  
+
+### External recipients
+
+ If you will be requesting signatures from external recipients, you need to enable [Microsoft Entra B2B integration for SharePoint and OneDrive](/sharepoint/sharepoint-azureb2b-integration#enabling-the-integration) and [guest sharing](/microsoft-365/solutions/collaborate-in-site). External recipients are people outside your organization and would be onboarded as guests into your tenant. Microsoft Entra B2B provides authentication and management of guests.
 
 ## Set up SharePoint eSignature
 
@@ -72,6 +76,20 @@ By default, SharePoint eSignature is turned on for libraries in all SharePoint s
 
 2. If SharePoint eSignature is turned on, there will be a **Turn off** button visible. To turn off SharePoint eSignature, select **Turn off**.
 
+## External signers
+
+### Conditional access
+
+Certain [conditional access](/entra/identity/conditional-access/overview) might determine whether external recipients (signers outside of your organization or Microsoft 365 tenant) will be able sign a document. Depending on the admin setup, external signers might not be able to access and read the document for signing. In some other cases, they might be able to access the document for signing, but the signing operation will be unsuccessful. One common way to resolve this is to add the **Microsoft eSignature Service** to the list of approved apps via the Microsoft Entra admin center.
+
+### Microsoft Entra B2B
+
+Microsoft Entra B2B provides authentication and management of guests. External signers or recipients are considered as guests within your tenant. To be able to send requests to signers outside your organization, you need to enable [Microsoft Entra B2B integration for SharePoint and OneDrive](/sharepoint/sharepoint-azureb2b-integration#enabling-the-integration). 
+
+### Authentication
+
+External recipients might need to authenticate before they're able to access a document for signing. The type of authentication required by the external recipients depends on the configuration for guest users at the SharePoint level or at the tenant level. Additionally, if the external user belongs to an organization with a Microsoft 365 tenant, it's possible for their organization's setup to affect their authentication experience when attempting to sign the document. For more information, see [Collaboration with guests in a site](/microsoft-365/solutions/collaborate-in-site).
+
 ## Document storage and retention
 
 ### Document storage
@@ -97,17 +115,3 @@ The working copy of the request is stored and retained for five years or in acco
 Every email notification sent in relation to a signature request contains a URL link that allows the recipient to view, review, and sign the document. When a request reaches a terminal state (when the status is **Completed**, **Canceled**, or **Declined**), the recipient has 30 days to view, download, and store the document in a preferred location. After the link expires, it can no longer be used to access the document.
   
 For more protection, when a sender cancels a request, recipients immediately lose access to the request document. The email notification received by recipients won't contain a URL link to view the request.
-
-## External signers
-
-### Conditional access
-
-Certain [conditional access](/entra/identity/conditional-access/overview) might determine whether external recipients (signers outside of your organization or Microsoft 365 tenant) will be able sign a document. Depending on the admin setup, external signers might not be able to access and read the document for signing. In some other cases, they might be able to access the document for signing, but the signing operation will be unsuccessful. One common way to resolve this is to add the **Microsoft eSignature Service** to the list of approved apps via the Microsoft Entra admin center.
-
-### Microsoft Entra B2B
-
-Microsoft Entra B2B provides authentication and management of guests. External signers are considered as guests within your tenant. To be able to send requests to signers outside your organization, you need to enable [Microsoft Entra B2B integration for SharePoint and OneDrive](/sharepoint/sharepoint-azureb2b-integration#enabling-the-integration). 
-
-### Authentication
-
-External users might need to authenticate before they're able to access a document for signing. The type of authentication required by the external recipients depends on the configuration for guest users at the SharePoint level or at the tenant level. Additionally, if the external user belongs to an organization with a Microsoft 365 tenant, it's possible for their organization's setup to affect their authentication experience when attempting to sign the document.

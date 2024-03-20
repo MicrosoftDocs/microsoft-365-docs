@@ -46,11 +46,11 @@ Learn how to use data sensitivity labels to prioritize incident investigation.
 
 2. Scroll over to see the **Data sensitivity** column. This column reflects sensitivity labels that are observed on devices related to the incidents providing an indication of whether sensitive files are impacted by the incident.
 
-   :::image type="content" source="images/data-sensitivity-column.png" alt-text="The Highly confidential option in the data sensitivity column" lightbox="images/data-sensitivity-column.png":::
+   :::image type="content" source="media/data-sensitivity-column.png" alt-text="The Highly confidential option in the data sensitivity column" lightbox="media/data-sensitivity-column.png":::
 
     You can also filter based on **Data sensitivity**
 
-    :::image type="content" source="images/data-sensitivity-filter.png" alt-text="The data sensitivity filter" lightbox="images/data-sensitivity-filter.png":::
+    :::image type="content" source="media/data-sensitivity-filter.png" alt-text="The data sensitivity filter" lightbox="media/data-sensitivity-filter.png":::
 
 3. Open the incident page to further investigate.
 
