@@ -32,6 +32,10 @@ ms.date: 02/27/2024
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
+   > [!IMPORTANT]
+   > As Microsoft continues to evaluate the value of the features and services to provide, Microsoft has made the decision to retire the Defender Evaluation Lab.
+   > This change will rollout in mid-January 2024 and expect to complete by late January 2024.
+
 Conducting a comprehensive security product evaluation can be a complex process requiring cumbersome environment and device configuration before an end-to-end attack simulation can actually be done. Adding to the complexity is the challenge of tracking where the simulation activities, alerts, and results are reflected during the evaluation.
 
 The Microsoft Defender for Endpoint evaluation lab is designed to eliminate the complexities of device and environment configuration so that you can  focus on evaluating the capabilities of the platform, running simulations, and seeing the prevention, detection, and remediation features in action.
@@ -227,7 +231,7 @@ If you are looking for a pre-made simulation, you can use our ["Do It Yourself" 
 
 2. Enter the password that was displayed during the device creation step.
 
-   :::image type="content" source="images/enter-password.png" alt-text="The screen on which you enter credentials" lightbox="images/enter-password.png":::
+   :::image type="content" source="media/enter-password.png" alt-text="The screen on which you enter credentials" lightbox="media/enter-password.png":::
 
 3. Run Do-it-yourself attack simulations on the device.
 
@@ -292,7 +296,7 @@ Each simulation comes with an in-depth description of the attack scenario and re
 
 The lab reports summarize the results of the simulations conducted on the devices.
 
-:::image type="content" source="images/eval-report.png" alt-text="Evaluation report" lightbox="images/eval-report.png":::
+:::image type="content" source="media/eval-report.png" alt-text="Evaluation report" lightbox="media/eval-report.png":::
 
 At a glance, you'll quickly be able to see:
 

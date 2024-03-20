@@ -277,7 +277,7 @@ Defender app is installed into the user's device. User signs in and completes th
 
 3. Upon successful onboarding, the device will start showing up on the Devices list in the Microsoft Defender portal.
 
-   :::image type="content" source="images/device-inventory-screen.png" alt-text="The Device inventory page." lightbox="images/device-inventory-screen.png":::
+   :::image type="content" source="media/device-inventory-screen.png" alt-text="The Device inventory page." lightbox="media/device-inventory-screen.png":::
 
 ## Next Steps
 
