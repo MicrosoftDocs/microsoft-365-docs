@@ -55,7 +55,7 @@ The organizational message writer role is the new built-in role that allows assi
 
 ## Where will the messages appear?
 
-In this preview, we support the teaching call-out and business bars in Word, Excel, PowerPoint, and Outlook Desktop Apps.
+In this preview, we support the teaching call-out and business bars in Word, Excel, PowerPoint, Outlook Desktop Apps, and new Teams.
 Business bars are supported by Microsoft 365 Consumer subscribers, Office 2019, Office 2016, Office 2013, and Office 2010.
 
 :::image type="content" source="../../media/org-message-location-bar-expanded.jpg" alt-text="In-product notification recommending to use Teams messages" lightbox="../../media/org-message-location-bar-expanded.jpg":::
@@ -68,15 +68,19 @@ The desktop teaching call-out is supported by Microsoft 365 Consumer and Commerc
 
 *The user sees an in-product notification recommending they save to OneDrive more.*
 
+:::image type="content" source="../../media/from-your-admin-teams.png" alt-text="Screenshot showing the notification pop-up in Teams from the admin to use Copilot.":::
+
+*The user sees an in-product notification recommending they use interactive features during Teams meetings.*
+
 ## How to enable Adoption Score Organizational Messages
 
 To enable Adoption Score Organizational Messages, the global administrator needs to enable Adoption Score first:
 
-1. Sign in to the [admin center](https://admin.microsoft.com/) as a global administrator and go to **Reports** \> **Adoption Score**
+1. Sign in to the [admin center](https://admin.microsoft.com/) as a global administrator and go to **Reports** \> **Adoption Score**.
 
 1. Select **Enable Adoption Score**. It can take up to 24 hours for insights to become available.
 
-1. Under the **Organizational Messages** tab, select **Allow approved admins to send in-product recommendations to specified users**
+1. Under the **Organizational Messages** tab, select **Allow approved admins to send in-product recommendations to specified users**.
 
 > [!NOTE]
 > Only a global administrator can enable Adoption Score. The organizational message writer role can only opt in for Adoption Score Organizational Messages.
@@ -131,7 +135,7 @@ As global administrator or organizational message writer role, you can do any of
 
 1. Under the **Recipients** tab, the recipients are by default selected based on their activities. For example, targeted users who aren't actively using OneDrive or SharePoint with the apps enabled for the past 28 days.
 
-2. Select **Apply filter** \> **Choose organizational attribute**
+2. Select **Apply filter** \> **Choose organizational attribute**.
 
     - **Groups**: In addition to the default recipients, you can send messages to specific Microsoft Entra user groups
 
@@ -209,7 +213,7 @@ Once messages have been created, you'll see the reporting in the table under the
 
 ## FAQs
 
-### Q: Why does the total number of messages seen differ from the expected number?
+### Why does the total number of messages seen differ from the expected number?
 
 A: For any given message, not every user **in its selected audience** (selected as message recipients) will receive the message. This is expected behavior because the message delivery depends on other factors that affect a message's reach, including:
 
@@ -217,17 +221,17 @@ A: For any given message, not every user **in its selected audience** (selected 
 
 - **System protections to prevent over-messaging and user dissatisfaction**: some communication channels have message frequency limits if too many messages are live at a given time (for example, a Teaching call-out won't appear more than twice to each user).
 
-### Q: How can I test the messages before sending them to users of my entire company?
+### How can I test the messages before sending them to users of my entire company?
 
-A: You can send messages to specific Microsoft Entra groups, such as your IT department. See [Select the recipients](#step-2-select-the-recipients) for details.
+You can send messages to specific Microsoft Entra groups, such as your IT department. See [Select the recipients](#step-2-select-the-recipients) for details.
 
-### Q: What is the recommended time frame window for the messages?
+### What is the recommended time frame window for the messages?
 
-A: As the frequency of the messages is at most once a week, the recommended minimum duration is one month. The recommended length of the time window is 12 months. The recipient's list is refreshed daily. Your messages will always be sent to users who haven't adopted the recommended practices in the last 28 days. Messages won't repeatedly send to users who have already adopted.
+As the frequency of the messages is at most once a week, the recommended minimum duration is one month. The recommended length of the time window is 12 months. The recipient's list is refreshed daily. Your messages will always be sent to users who haven't adopted the recommended practices in the last 28 days. Messages won't repeatedly send to users who have already adopted.
 
-### Q: Will I be able to customize the text in the messages?
+### Will I be able to customize the text in the messages?
 
-A: Not currently, but additional customization options will be enabled in future releases.
+Not currently, but additional customization options will be enabled in future releases.
 
 ## Organizational Messages in Microsoft Intune
 
