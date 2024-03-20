@@ -53,13 +53,13 @@ conceptualContent:
            itemType: concept
            text: What is ransomware?
          - url: /compliance/assurance/assurance-malware-and-ransomware-protection
-           itemType: Concept
+           itemType: concept
            text: Malware and ransomware protection
          - url: /security/ransomware
            itemType: how-to-guide
            text: Recover from a ransomware attack
          - url: /microsoft-365/security/defender/advanced-hunting-find-ransomware
-           itemType: How-to-guide
+           itemType: how-to-guide
            text: Hunt for ransomware
 
    # Card
