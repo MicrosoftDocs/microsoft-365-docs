@@ -29,7 +29,7 @@
     href: using-tags.md
   - name: Using projects
     href: using-projects.md
-  - name: Using Copilot for Security in Microsoft Defender XDR
+  - name: Using Microsoft Copilot in Defender for threat intelligence
     href: using-copilot-threat-intelligence-defender-xdr.md
 - name: Tutorials
   items:
