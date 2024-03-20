@@ -51,11 +51,11 @@ To troubleshoot and mitigate such issues, follow these steps:
 
    | Device management | Method |
    |---|--|
-   | Device is not managed by organization | User interface <br/><br/>Open Microsoft Defender for Endpoint on macOS and navigate to **Manage settings**. |
-   | Device is not managed by organization | Terminal <br/><br/>In Terminal, run the following command: `mdatp config real-time-protection --value disabled` |
+   | Device isn't managed by organization | User interface <br/><br/>Open Microsoft Defender for Endpoint on macOS and navigate to **Manage settings**. |
+   | Device isn't managed by organization | Terminal <br/><br/>In Terminal, run the following command: `mdatp config real-time-protection --value disabled` |
    | Device is managed by organization | See [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md). |
 
-   If the performance problem persists while real-time protection is off, the origin of the problem could be the endpoint detection and response component. In this case, please contact customer support for further instructions and mitigation.
+   If the performance problem persists while real-time protection is off, the origin of the problem could be the endpoint detection and response component. In this case, contact customer support for further instructions and mitigation.
 
 2. Open Finder and navigate to **Applications** \> **Utilities**. Open **Activity Monitor** and analyze which applications are using the resources on your system. Typical examples include software updaters and compilers.
 
@@ -78,7 +78,7 @@ To troubleshoot and mitigate such issues, follow these steps:
    ```
 
    > [!NOTE]
-   > Using **--output json** (note the double dash) ensures that the output format is ready for parsing. The output of this command will show all processes and their associated scan activity.
+   > Using `--output json` (note the double dash) ensures that the output format is ready for parsing. The output of this command will show all processes and their associated scan activity.
    > If you have [Tamper protection turned on in block mode](/microsoft-365/security/defender-endpoint/tamperprotection-macos), use [Troubleshooting mode](/microsoft-365/security/defender-endpoint/mac-troubleshoot-mode) to capture real-time-protection-statistics.  Otherwise, you will get null results.
    > This feature is available in version 100.90.70 or newer. It's enabled by default on the **Dogfood** and **InsiderFast** channels. If you're using a different update channel, this feature can be enabled from the command line: `mdatp config real-time-protection-statistics --value enabled`.
    > 
