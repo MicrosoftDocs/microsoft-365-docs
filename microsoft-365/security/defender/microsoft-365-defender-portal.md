@@ -24,21 +24,23 @@ ms.custom:
   - intro-overview
 ms.topic: conceptual
 adobe-target: true
-ms.date: 10/5/2023
+ms.date: 03/21/2024
 ---
 
 # Microsoft Defender portal
 
 The Microsoft Defender portal at <https://security.microsoft.com> combines protection, detection, investigation, and response to email, collaboration, identity, device, and cloud app threats, in a central place. The Defender portal emphasizes quick access to information, simpler layouts, and bringing related information together for easier use. It includes:
 
-- **[Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)** Microsoft Defender for Office 365 helps organizations secure their enterprise with a set of prevention, detection, investigation and hunting features to protect email, and Office 365 resources.
+- **[Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)** helps organizations secure their enterprise with a set of prevention, detection, investigation and hunting features to protect email, and Office 365 resources.
 - **[Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection)** delivers preventative protection, post-breach detection, automated investigation, and response for devices in your organization.
 - **[Microsoft Defender for Identity](/defender-for-identity/what-is)** is a cloud-based security solution that uses your on-premises Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization.
 - **[Microsoft Defender for Cloud Apps](/cloud-app-security/)** is a comprehensive cross-SaaS and PaaS solution bringing deep visibility, strong data controls, and enhanced threat protection to your cloud apps.
+- **[Microsoft Sentinel](/azure/sentinel/)** is a cloud-native security information and event management (SIEM) solution that provides proactive threat detection, investigation, and response.
 
 Watch this short video to learn about the Defender portal.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBKau]
+
 
 ## What to expect
 
@@ -53,14 +55,14 @@ The Defender portal helps security teams investigate and respond to attacks by b
 - Trials
 - Partner catalog
 
-Microsoft Defender XDR emphasizes *unity, clarity, and common goals*.
+The Defender portal emphasizes *unity, clarity, and common goals*.
 
 > [!NOTE]
 > The Defender portal is accessible without any need for customers to take migration steps or purchase a new license. For example, this new portal is accessible to administrators with an E3 subscription, just as it is to those with Microsoft Defender for Office 365 Plan 1 and Plan 2; however, Exchange Online Protection, or Defender for Office 365 Plan 1 customers see only the security features their subscription license supports. The goal of the portal is to centralize security.
 
 ## Incident and alert investigations
 
-Centralizing security information creates a single place for investigating security incidents across Microsoft 365. A primary example is **Incidents** under **Incidents & alerts**.
+Centralizing security information creates a single place to investigate security incidents across your entire organization and all its components including hybrid identities, endpoints, cloud apps, business apps, email and docs, IoT, network, business applications, OT, infrastructure and cloud workloads. A primary example is **Incidents** under **Incidents & alerts**.
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="The Incidents page in the Microsoft Defender portal." lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 
@@ -83,7 +85,7 @@ Common controls and content either appear in the same place, or are condensed in
 
 ### Unified settings
 
-:::image type="content" source="../../media/converged-add-role-9.png" alt-text="The Settings page in the Microsoft Defender portal" lightbox="../../media/converged-add-role-9.png":::
+:::image type="content" source="../../media/microsoft-365-defender-portal/defender-portal-settings.png" alt-text="Screenshot of the Settings page in the Microsoft Defender portal" lightbox="../../media/microsoft-365-defender-portal/defender-portal-settings.png":::
 
 ### Permissions
 
