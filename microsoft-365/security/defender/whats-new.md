@@ -37,7 +37,7 @@ You can also get product updates and important notifications through the [messag
 
 - (Preview) **[Custom detection rules in Microsoft Graph security API](/graph/api/resources/security-api-overview?view=graph-rest-beta&preserve-view=true#custom-detections)** are now available.  Create advanced hunting custom detection rules specific to your org to proactively monitor for threats and take action.
 
->[Warning]
+>[!Warning]
 > The 2024-02 platform release causes inconsistent results for device control customers using removable media policies with disk/device-level access only (masks that are less of equal to 7). The enforcement might not work as expected. 
 > To mitigate this issue, rolling back to the previous version of the Defender platform is recommended.
 
