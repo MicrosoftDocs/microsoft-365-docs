@@ -104,38 +104,167 @@ The tabs (views) along the top of the page allow you to investigate email effici
 
 The **Timeline** view shows the delivery and post-delivery events that happened to the message.
 
-The following information is available. Select a column header to sort by that column. To add or remove columns, select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns**. By default, all available columns are selected.
+The following message event information is available in the view. Select a column header to sort by that column. To add or remove columns, select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns**. By default, all available columns are selected.
 
-- **Timeline**
-- **Source**
+- **Timeline** (date/time of the event)
+- **Source**: For example: **System**, **Admin** or **User**.
 - **Event types**
 - **Result**
 - **Threats**
+- **Details**
+
+If nothing happened to the message after delivery, the message is likely to have only one row in the **Timeline** view with the **Event types** value **Original delivery**. For example:
+
+- The **Result** value is **Inbox folder - Delivered**.
+- The **Result** value is **Junk email folder - Delivered to Junk**
+- The **Result** value is **Quarantine - Blocked**.
+
+Subsequent actions to the message by users, admins or Microsoft 365 add more more rows to the view. For example:
+
+- The **Event types** value is **ZAP** and the **Result** value is **Message moved to Quarantine by ZAP**.
+- The **Event types** value is **Quarantine Release** and the **Result** value is **Message was successfully released from Quarantine**.
+
+Use the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box to find information on the page. Type text in the box and then press the ENTER key.
+
+Use :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** to export the data to a CSV file.
+
+:::image type="content" source="../../media/email-entity-timeline-view.png" alt-text="Screenshot of the Timeline view on the Email entity page." lightbox="../../media/email-entity-timeline-view.png":::
+
+### Analysis view
+
+The **Analysis** view contains information that helps you analyze the message in depth. The following information is available in this view:
+
+- **Threat detection details** section: Information about threats detected in the message:
+  - **Threats**: The primary threat is indicated by :::image type="icon" source="../../media/m365-cc-sc-primary-threat-icon.png" border="false"::: **Primary threat**.
+  - **Confidence level**: Values are **High**, **Medium**, or **Low**.
+  - **Priority account protection**: Values are **Yes** or **No**. For more information, see [Configure and review priority account protection in Microsoft Defender for Office 365](priority-accounts-turn-on-priority-account-protection.md).
+- **Email detection details** section: Information about protection features or overrides that affected the message:
+  - **All Overrides**
+  - **Primary Override : Source**
+  - **Exchange transport rules** (mail flow rules)
+  - **Connector**
+  - **Bulk complaint level (BCL)**
+  - **Policy**: If a policy type is listed here (for example, **Spam**), select **Configure** :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: to open the related policy page (for example, the **Anti-spam policies** page at <https://security.microsoft.com/antispam>).
+  - **Policy action**
+  - **Alert ID**: Select the Alert ID value to open the details page for the alert (as if you found and selected the alert from the **Alerts** page at <https://security.microsoft.com/alerts>). The :::image type="icon" source="../../media/m365-cc-sc-copy-icon.png" border="false"::: **Copy to clipboard** action is also available to copy the Alert ID value.
+  - **Policy type**
+  - **Client type**
+  - **Email size**
+  - **Data loss prevention rules**
+- **Sender-Recipient details** section: Details about the message sender and some recipient information:
+  - **Sender display name**
+  - **Sender address**<sup>\*</sup>
+  - **Sender IP**
+  - **Sender domain name**<sup>\*</sup>
+  - **Domain creation date**
+  - **Domain owner**
+  - **Sender MAIL FROM address**<sup>\*</sup>
+  - **Sender MAIL FROM domain name**<sup>\*</sup>
+  - **Return-Path**
+  - **Return-Path domain**
+  - **Location**
+  - **Recipient domain**<sup>\*</sup>
+  - **To**
+  - **Cc**
+  - **Distribution list**
+  - **Forwarding**
+
+  <sup>\*</sup> The :::image type="icon" source="../../media/m365-cc-sc-copy-icon.png" border="false"::: **Copy to clipboard** action is available to copy the value.
+
+- **Authentication** section: Details about [email authentication](email-authentication-about.md) results:
+  - **Domain-based Message Authentication (DMARC)**
+  - **DomainKeys identified mail (DKIM)**
+  - **Sender Policy Framework (SPF)**
+  - **Composite authentication**
+- **Related entities** section: Information about attachments and URLs in the message:
+  - **Entity**: Selecting **Attachments** or **URLs** takes you to the Attachments view or the URL view of the Email entity page for the message.
+  - **Total count**
+  - **Threats found**: The values are **Yes** or **No**.
+- Message details area:
+  - **Plain-text email header**: Contains the entire message header in plain text. Select :::image type="icon" source="../../media/m365-cc-sc-copy-icon.png" border="false"::: **Copy message header** to copy the message header. Select :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Microsoft Message Header Analyzer** to open the Message Header Analyzer at <https://mha.azurewebsites.net/pages/mha.html>. Paste the copied message header into the page, and then select **Analyze headers** for details about the message headers and values.
+  - **To**
+  - **Cc**
+
+:::image type="content" source="../../media/email-entity-analysis-view.png" alt-text="Screenshot of the Analysis view on the Email entity page." lightbox="../../media/email-entity-analysis-view.png":::
+
+### Attachments view
+
+The **Attachments** view contains information about attachments and the scanning results of attachments in the message.
+
+The following attachment information is available in this view. Select a column header to sort by that column. To add or remove columns, select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns**. By default, all available columns are selected.
+
+- **Attachment filename**: If you click on the filename value
+- **File type**
+- **File size**
+- **File extension**
+- **Threat**
+- **Malware family**
+- **Attachment SHA256**: The :::image type="icon" source="../../media/m365-cc-sc-copy-icon.png" border="false"::: **Copy to clipboard** action is available to copy the SHA256 value.
 - **Details**
 
 Use the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box to find information on the page. Type text in the box and then press the ENTER key.
 
 Use :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** to export the data to a CSV file.
 
-A message with no post-delivery actions is likely to have only one row, likely with the **Result** value **Inbox folder - Delivered**. Other actions add more rows to the view.
+:::image type="content" source="../../media/email-entity-attachments-view.png" alt-text="Screenshot of the Attachments view on the Email entity page" lightbox="../../media/email-entity-attachments-view.png":::
 
-For information about the available actions, see the Actions section.
+#### Attachment details
 
-:::image type="content" source="../../media/email-entity-timeline-view.png" alt-text="Screenshot of the Timeline view on the Email entity page." lightbox="../../media/email-entity-timeline-view.png":::
+If you select an entry in the **Attachments** view by clicking on the **Attachment filename** value, a details flyout opens that contains the following information:
 
-### Analysis tab
+- **Deep analysis** tab:
+  - **Detonation chain** section: If no detonation chain information is available, the value **No detonation tree** is shown. Otherwise, you can select :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** to download the detonation chain information to a CSV file. The default filename is **Detonation chain.csv** and the default location is the **Downloads** folder. If a file with that name already exists, the filename is appended with a number (for example, **Detonation chain(1).csv**). The CSV file contains the following information:
+    - **Top**: The top level file.
+    - **Level1**: The next level file.
+    - **Level2**: The next level file.
+    - and so on.
+  - **Summary** section: If no detonation summary information is available, the value **No detonation summary** is shown. Otherwise, the following information is available:
+    - **Analysis time**
+    - **Verdict**
+    - **More info**: Shows the file size in bytes.
+    - **Indicators of compromise**
+  - **Screenshots section**: If no detonation screenshots are available, the value **No screenshots to display** is shown. Otherwise, select the link to view the screenshot.
+  - **Behavior details** section: If no behavior details during detonation information is available, the value **No detonation behaviors** is shown. Otherwise, you can select :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** to download the behavioral details information to a CSV file. The default filename is **Behavior details.csv** and the default location is the **Downloads** folder. If a file with that name already exists, the filename is appended with a number (for example, **Behavior details(1).csv**). The CSV file contains the following information:
+    - **Time**
+    - **Behavior**
+    - **Behavior property**
+    - **Process (PID)**
+    - **Operation**
+    - **Target**
+    - **Details**
+    - **Result**
+- **File info** tab: The **File details** section contains the following information:
+  - **File name**
+  - **SHA256**
+  - **File size** (in bytes)
 
-### URL tab
+When you're finished in the file details flyout, select :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: **Close**.
 
-## Similar emails tab
+:::image type="content" source="../../media/email-entity-attachments-view-file-details-flyout.png" alt-text="Screenshot of the file details flyout from the Attachments view on the Email entity page." lightbox="../../media/email-entity-attachments-view-file-details-flyout.png":::
+
+#### Block attachments from the Attachments view
+
+If you select an entry in the **Attachments** view by selecting the check box next to the filename, the :::image type="icon" source="../../media/m365-cc-sc-no-icon.png" border="false"::: **Block** action is available. Selecting **Block** starts the **Take action** wizard:
+
+1. On the **Choose actions** page, **Never expire** is on by default :::image type="icon" source="../../media/scc-toggle-on.png" border="false":::. Slide the toggle to off :::image type="icon" source="../../media/scc-toggle-off.png" border="false"::: and then select a date in **Remove on**.
+
+   When you're finished on the **Choose actions** page, select **Next**.
+
+2. On the **Choose target entities** page, verify that the files that you want to block are selected, and then select **Next**.
+
+3. On the **Review and submit** page, configure the following options:
+   - **Remediation name**: Enter a unique name to track the status in the Action center.
+   - **Description**: Enter an optional description.
+
+   When you're finished on the **Choose target entities** page, select **Submit**.
+
+### URL view
+
+## Similar emails view
 
 ### How to use the email entity page tabs
 
-The tabs along the top of the entity page allow you to investigate email efficiently.
 
-1. **Timeline**: 
-2. **Analysis**: Analysis shows fields that help admins analyze an email in depth. For cases where admins need to understand more about detection, sender / recipient, and email authentication details, they should use the Analysis tab. Links for Attachments and URLs are also found on this page, under 'Related Entities'. Both attachments and identified threats are numbered here, and clicking takes you straight to the Attachments and URL pages. This tab also has a View header option to *show the email header*. Admins can compare any detail from email headers, side by side with information on the main panel, for clarity.
-3. **Attachments**: This examines attachments found in the email with other details found on attachments. The number of attachments shown is currently limited to 10. Notice that detonation details for attachments found to be malicious is also shown here.
 4. **URLs**: This tab lists URLs found in the email with other details about the URLs. The number of URLs is limited to 10 right now, but these 10 are prioritized to show *malicious URLs first*. Prioritization saves you time and guess-work. The URLs that were found to be malicious and detonated are also shown here.
 5. **Similar emails**: This tab lists all emails similar to the *network message id + recipient* combination specific to this email. Similarity is based on the *body of the message*, only. The determinations made on mails to categorize them as 'similar' don't include a consideration of *attachments*.
 
