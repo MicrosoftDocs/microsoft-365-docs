@@ -59,7 +59,7 @@ Microsoft 365 is built intentionally with many security and information protecti
 
 This illustration represents the work of deploying Zero Trust capabilities. This work is broken into units of work that can be configured together, starting from the bottom and working to the top to ensure that prerequisite work is complete.
 
-:::image type="content" source="../media/zero-trust/m365-zero-trust-deployment-stack.svg" alt-text="The Microsoft 365 Zero Trust deployment stack." lightbox="../media/zero-trust/m365-zero-trust-deployment-stack.svg":::
+:::image type="content" source="../media/zero-trust/m365-zero-trust-deployment-stack.svg" alt-text="Diagram that shows the Microsoft 365 Zero Trust deployment stack." lightbox="../media/zero-trust/m365-zero-trust-deployment-stack.svg":::
 
 In this illustration:
 
@@ -87,7 +87,7 @@ Go to [**_Zero Trust identity and device access protection_**](office-365-securi
 
 Start by implementing the starting-point tier. These policies don't require enrolling devices into management.
 
-:::image type="content" source="../media/zero-trust/identity-access-starting-point-tier.svg" alt-text="The Zero Trust identity and device access policies — starting-point tier" lightbox="../media/zero-trust/identity-access-starting-point-tier.svg":::
+:::image type="content" source="../media/zero-trust/identity-access-starting-point-tier.svg" alt-text="Diagram that shows the Zero Trust identity and access policies for the Starting-point tier" lightbox="../media/zero-trust/identity-access-starting-point-tier.svg":::
 
 ## Step 2: Manage endpoints with Intune
 
@@ -111,7 +111,7 @@ With devices enrolled into management, you can now implement the full set of rec
 
 Return to [**_Common identity and device access policies_**](office-365-security/zero-trust-identity-device-access-policies-common.md) and add the policies in the Enterprise tier.
 
-:::image type="content" source="../media/zero-trust/identity-access-enterprise-tier.svg" alt-text="The Zero Trust identity and access policies — Enterprise (recommended) tier" lightbox="../media/zero-trust/identity-access-enterprise-tier.svg":::
+:::image type="content" source="../media/zero-trust/identity-access-enterprise-tier.svg" alt-text="Diagram that shows the Zero Trust identity and access policies for the Enterprise (recommended) tier." lightbox="../media/zero-trust/identity-access-enterprise-tier.svg":::
 
 <a name='step-4-evaluate-pilot-and-deploy-microsoft-365-defender'></a>
 
