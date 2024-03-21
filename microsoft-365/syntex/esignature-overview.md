@@ -36,7 +36,7 @@ When using eSignature, you must be signed in to SharePoint by using your work em
 
 ## Release notes
 
-- Currently, SharePoint eSignature is rolling out to the US market. The feature rolls out to other regions in 2024.
+- Currently, SharePoint eSignature is rolling out to the US market. The feature rolls out to other regions later in 2024.
 
 - SharePoint eSignature is available for only PDF documents at this time.
 
