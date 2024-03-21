@@ -36,7 +36,7 @@ This article describes the interaction between Microsoft Defender Core Service a
 > - `*.config.ecs.dod.teams.microsoft.us (DoD)` 
 
 > [!NOTE]
-> This applies to Microsoft Defender Antivirus Platform Update version [4.18.24030](microsoft-defender-antivirus-updates.md) or later. 
+> This applies to Microsoft Defender Antivirus platform update version [4.18.24030](microsoft-defender-antivirus-updates.md) or later. 
 
 ## Configurations
  
