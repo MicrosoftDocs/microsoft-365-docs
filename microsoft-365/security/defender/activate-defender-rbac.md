@@ -61,11 +61,7 @@ You can activate your workloads in two ways from the Permissions and roles page:
 
     > [!NOTE]
     > The **Activate workloads** button is only available when there is it at least one workload that's not active for Microsoft Defender XDR Unified RBAC.
-
-    > [!NOTE]
     > Microsoft Defender for Cloud is active by default with Microsoft Defender XDR Unified RBAC.
-
-    > [!NOTE]
     > To activate Exchange Online (EXO) permissions in Microsoft Defender XDR Unified RBAC, Exchange Online Protection (EOP) permissions must be active. 
 
 2. **Workload settings**
@@ -83,11 +79,12 @@ You have now successfully activated (or deactivated) that workload.
 Follow these steps to activate your workloads directly in Microsoft Defender XDR settings:
 
 1. Sign in to the [Microsoft Defender portal](https://security.microsoft.com).
-2. In the navigation pane, select **Settings**.
-3. Select **Microsoft Defender XDR**.
-4. Select **Permissions and roles**. This brings you to the **Activate workloads** page.
-5. Select the toggle for the workload you want to activate.
-6. Select Activate on the confirmation message.
+
+2. In the navigation pane, go to **Settings** > **Microsoft Defender XDR** > **Permissions and roles**. This brings you to the **Activate workloads** page.
+
+3. Select the toggle for the workload you want to activate.
+
+4. Select **Activate** on the confirmation message.
 
 You have now successfully activated (or deactivated) that workload.
 
@@ -95,6 +92,9 @@ You have now successfully activated (or deactivated) that workload.
 > The Microsoft Defender XDR Unified RBAC model only impacts the Microsoft Defender XDR security portal. It does not impact the [Microsoft Purview Compliance center](https://compliance.microsoft.com) or the [Exchange Admin Center](https://admin.exchange.microsoft.com).
 
 <a name='deactivate-microsoft-365-defender-unified-rbac'></a>
+
+> [!NOTE]
+> Unified RBAC - Preview experience is currently not available for US Government customers using GCC and GCC High.
 
 ## Deactivate Microsoft Defender XDR Unified RBAC
 
@@ -107,4 +107,5 @@ If you deactivate a workload, the roles created and edited within Microsoft Defe
 ## Next steps
 
 - [Edit or delete roles](edit-delete-rbac-roles.md)
+
 [!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]
