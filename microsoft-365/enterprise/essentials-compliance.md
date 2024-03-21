@@ -129,3 +129,5 @@ If your business requires information barriers, see [Learn about information bar
 [Compliance in Microsoft Cloud for Retail](/industry/retail/compliance-overview)
 
 [Windows Privacy Compliance Guide](/windows/privacy/windows-10-and-privacy-compliance)
+
+[Microsoft Purview Compliance Portal](/purview/purview-compliance-portal)

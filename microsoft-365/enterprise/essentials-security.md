@@ -26,7 +26,7 @@ Microsoft 365 for enterprises follows all the security best practices and proced
 
 ## Trustworthy by design
 
-Microsoft 365 is designed and developed in compliance with the Microsoft Trustworthy Computing Security Development Lifecycle (SDL), which is described at [Microsoft Security Development Lifecycle (SDL)](https://www.microsoft.com/sdl/default.aspx). The first step in creating a more secure unified communications, collaboration, and productivity system was to design threat models and test each feature as it was designed. Multiple security-related improvements were built into the coding process and practices. Build-time tools detect buffer overruns and other potential security threats before the code is checked in to the final product. It's impossible to design against all unknown security threats. No system can guarantee complete security. However, because product development embraced secure design principles from the start, Teams incorporates industry standard security technologies as a fundamental part of its architecture.
+Microsoft 365 is designed and developed in compliance with the Microsoft Trustworthy Computing Security Development Lifecycle (SDL), which is described at [Microsoft Security Development Lifecycle (SDL)](https://www.microsoft.com/sdl/default.aspx). The first step in creating a more secure unified communications, collaboration, and productivity system was to design threat models and test each feature as it was designed. Multiple security-related improvements were built into the coding process and practices. Build-time tools detect buffer overruns and other potential security threats before the code is checked in to the final product. It's impossible to design against all unknown security threats. No system can guarantee complete security. However, because product development embraced secure design principles from the start, Microsoft 365 incorporates industry standard security technologies as a fundamental part of its architecture.
 
 ## Trustworthy by default
 
@@ -43,7 +43,7 @@ Core elements are:
 - Transport Layer Security (TLS) encrypts the channel in motion. Authentication takes place using either mutual TLS (MTLS), based on certificates, or using Service-to-Service authentication based on Microsoft Entra ID.
 - Point-to-point audio, video, and application sharing streams are encrypted and integrity checked using Secure Real-Time Transport Protocol (SRTP).
 - You'll see OAuth traffic in your trace, particularly around token exchanges and negotiating permissions while switching between tabs in Teams, for example to move from Posts to Files. For an example of the OAuth flow for tabs, [see this document](/microsoftteams/platform/tabs/how-to/authentication/auth-flow-tab).
-- Teams uses industry-standard protocols for user authentication, wherever possible.
+- Microsoft 365 uses industry-standard protocols for user authentication, wherever possible.
 
 The next sections discuss some of these core technologies.
 
@@ -72,13 +72,13 @@ Microsoft 365 authentication is accomplished through Microsoft Entra ID and OAut
 
 - User sign in > token issuance > next request use issued token.
 
-Requests from client to server are authenticated and authorized by Microsoft Entra ID with the use of OAuth. Users with valid credentials issued by a federated partner are trusted and pass through the same process as native users. However, further restrictions can be put into place by administrators.
+Requests from clients to cloud services are authenticated and authorized by Microsoft Entra ID with the use of OAuth. Users with valid credentials issued by a federated partner are trusted and pass through the same process as native users. However, further restrictions can be put into place by administrators.
 
 For media authentication, the ICE and TURN protocols also use the Digest challenge as described in the IETF TURN RFC.
 
 ### Endpoint security
 
-Microsoft is unifying user-facing Microsoft 365 apps and services to a single and consistent domain: cloud.microsoft.
+Microsoft is unifying user-facing Microsoft 365 apps and services to a single and consistent domain: **cloud.microsoft**.
 
 The growth of Microsoft cloud services led to the expansion of the domain space they occupy, resulting in hundreds of domains. This fragmentation is a challenge for end user navigation, administrative simplicity, and the development of cross-app experiences.
 
