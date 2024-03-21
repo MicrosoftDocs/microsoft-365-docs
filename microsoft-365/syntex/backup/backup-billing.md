@@ -73,3 +73,37 @@ Use these steps to set up pay-as-you-go billing for Microsoft 365 Backup.
     1. Review and accept the terms of service, and then select **Save**.
 
 You have successfully set up billing. You can proceed to [Step 2: Turn on Microsoft 365 Backup](backup-setup.md#step-2-turn-on-microsoft-365-backup).
+
+## Billing attribution by tenant, application, and service type  
+
+### Manage consumption and invoices in the Azure portal
+
+You can view actual and accumulated cost breakdown by tenants and service type for OneDrive, SharePoint, and Exchange in Microsoft Cost Management in the Azure portal or access them by using the [Cost Management public APIs](/rest/api/cost-management/operation-groups). Cost breakdown by application ID is coming soon.
+
+1. Sign in to the [Azure portal](https://portal.azure.com/).
+
+2. Search for *Cost Management + Billing*.
+
+3. Select **Cost analysis** to see:
+
+    ![Screenshot of the cost analysis page in Microsoft Cost Management.](../../media/content-understanding/backup-cost-analysis.png)
+
+    - Actual cost and forecast cost
+
+    - Azure cost analysis - actual cost
+
+    - Select **+Add Filter** to see breakdown of cost by tenants and service type
+
+    - Tenants show list of tenant IDs that run
+
+    - Service type is OneDrive, SharePoint, or Exchange
+
+    - Select the tag
+
+        - In the key-value pair, select tenants or service type and select the respective tenant ID or service type
+
+        - Azure cost analysis - filter by tag
+
+4. In the left navigation, select **Billing** to see monthly invoices.
+
+5. Set up budget alerts on cost by the following steps in the [Cost Management public APIs](/rest/api/cost-management/operation-groups).
