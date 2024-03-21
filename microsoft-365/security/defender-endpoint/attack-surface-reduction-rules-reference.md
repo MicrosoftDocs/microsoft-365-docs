@@ -101,7 +101,7 @@ The following ASR rules DO NOT honor Microsoft Defender for Endpoint Indicators 
 |---|---|
 | Block credential stealing from the Windows local security authority subsystem (lsass.exe) | Doesn't honor indicators of compromise for files or certificates. |
 | Block Office applications from injecting code into other processes |Doesn't honor indicators of compromise for files or certificates. |
-| Block Win32 API calls from Office mac |Doesn't honor indicators of compromise for certificates. |
+| Block Win32 API calls from Office macros |Doesn't honor indicators of compromise for certificates. |
 
 ## ASR rules supported operating systems
 

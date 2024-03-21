@@ -1,6 +1,6 @@
 ---
 title: Report and troubleshoot Microsoft Defender for Endpoint attack surface reduction rules
-description: This article describes how to report and troubleshoot Microsoft Defender for Endpoint attack surface reduction ules
+description: This article describes how to report and troubleshoot Microsoft Defender for Endpoint attack surface reduction rules
 ms.service: defender-endpoint
 ms.localizationpriority: medium
 audience: ITPro
@@ -108,7 +108,7 @@ attack surface reduction rule events can be viewed within the Windows Defender l
 
 To access it, open Windows Event Viewer, and browse to **Applications and Services Logs** \> **Microsoft** \> **Windows** \> **Windows Defender** \> **Operational**.
 
-:::image type="content" source="images/eventviewerscrnew.png" alt-text="The Event Viewer page" lightbox="images/eventviewerscrnew.png":::
+:::image type="content" source="media/eventviewerscrnew.png" alt-text="The Event Viewer page" lightbox="media/eventviewerscrnew.png":::
 
 ## Microsoft Defender Antimalware Protection Logs
 

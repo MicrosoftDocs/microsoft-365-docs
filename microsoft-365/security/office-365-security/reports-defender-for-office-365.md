@@ -257,7 +257,7 @@ In addition to the reports described in this article, the following tables descr
 
 |Report|Article|
 |---|---|
-|**Explorer** (Microsoft Defender for Office 365 Plan 2) or **real-time detections** (Microsoft Defender for Office 365 Plan 1)|[Threat Explorer (and real-time detections)](threat-explorer-about.md)|
+|**Explorer** (Microsoft Defender for Office 365 Plan 2) or **real-time detections** (Microsoft Defender for Office 365 Plan 1)|[Threat Explorer (and real-time detections)](threat-explorer-real-time-detections-about.md)|
 |Email security reports that don't require Defender for Office 365|[View email security reports in the Microsoft Defender portal](reports-email-security.md)|
 |Mail flow reports in the Exchange admin center (EAC)|[Mail flow reports in the new Exchange admin center](/exchange/monitoring/mail-flow-reports/mail-flow-reports)|
 

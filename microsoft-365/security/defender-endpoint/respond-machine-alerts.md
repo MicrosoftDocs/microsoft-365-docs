@@ -102,11 +102,11 @@ Alternate steps:
 
 1. Select **Collect Investigation Package** from the response actions section of the device page.
 
-    ![Image of collect investigation package](images/collect-investigation-package.png)
+    ![Image of collect investigation package](media/collect-investigation-package.png)
    
 1. Add comments and select **Confirm**.
 
-    ![Image of confirm comment](images/comments-confirm.png)
+    ![Image of confirm comment](media/comments-confirm.png)
    
 1. Select **Action center** from the response actions section of the device page.
 
@@ -114,7 +114,7 @@ Alternate steps:
    
 1. Click the **Package collection package available** to download the collection package.
 
-    ![Image of download package](images/download-package.png)
+    ![Image of download package](media/download-package.png)
    
    For Windows devices, the package contains the following folders:
 
@@ -310,7 +310,7 @@ You'll be able to stop containing a device at any time.
 
 ## Contain user from the network
 
-When an identity in your network might be compromised, you must prevent that identity from accessing the network and different endpoints. Defender for Endpoint can "contain" an identity, blocking it from access, and helping prevent attacks-- specifically, ransomware. When an identity is contained, any supported Microsoft Defender for Endpoint onboarded device will block incoming traffic in specific protocols related to attacks (network logons, RPC, SMB, RDP), terminate ongoing remote sessions and logoff existing RDP connections, while enabling legitimate traffic. This action can significantly help to reduce the impact of an attack. When an identity is contained, security operations analysts have extra time to locate, identify and remediate the threat to the compromised identity.
+When an identity in your network might be compromised, you must prevent that identity from accessing the network and different endpoints. Defender for Endpoint can "contain" an identity, blocking it from access, and helping prevent attacks-- specifically, ransomware. When an identity is contained, any supported Microsoft Defender for Endpoint onboarded device will block incoming traffic in specific protocols related to attacks (network logons, RPC, SMB, RDP), terminate ongoing remote sessions and logoff existing RDP connections (termination the session itself including all its related processes), while enabling legitimate traffic. This action can significantly help to reduce the impact of an attack. When an identity is contained, security operations analysts have extra time to locate, identify and remediate the threat to the compromised identity.
 
 > [!NOTE]
 > Blocking incoming communication with a "contained" user is supported on onboarded Microsoft Defender for Endpoint Windows 10 and 11 devices (Sense version 8740 and higher), Windows Server 2019+ devices, and Windows Servers 2012R2 and 2016 with the modern agent.
