@@ -22,7 +22,7 @@ ms.collection:
 This article describes the interaction between Microsoft Defender Core Service and the Experimentation and Configuration Service (ECS). Microsoft Defender Core Service communicates with ECS to request and receive different kinds of payloads. These payloads include configurations, feature rollouts, and experiments. 
 
 > [!IMPORTANT]
-> Make sure clients can access the following URls so payloads can be received:
+> Make sure clients can access the following URLs so payloads can be received:
 >
 > Enterprise customers should allow the following URLs: 
 > -  `*.events.data.microsoft.com` 
