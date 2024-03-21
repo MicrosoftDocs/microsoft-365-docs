@@ -76,7 +76,7 @@ After you enable automated feedback response, the user who reported the message 
 - **Phishing or malware**: If a user reports a message as phishing, the submission triggers AIR on the reported message. What happens next depends on the results of the investigation:
   - **High confidence phishing or malware**: The message needs to be remediated using one of the following actions:
     - Approve the recommended action (shown as pending actions in the investigation or in the Action center).
-    - Remediation through other means (for example, [Threat Explorer](threat-explorer-about.md)).
+    - Remediation through other means (for example, [Threat Explorer](threat-explorer-real-time-detections-about.md)).
 
     After the message has been remediated, the investigation is closed as **Remediated** or **Partially remediated**. Only when the investigation status is one of those values is the email notification sent to the user who reported the message.
 

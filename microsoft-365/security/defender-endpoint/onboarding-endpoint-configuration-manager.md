@@ -36,7 +36,7 @@ This article acts as an example onboarding method.
 
 In the [Planning](deployment-strategy.md) article, there were several methods provided to onboard devices to the service. This article covers the co-management architecture.
 
-:::image type="content" source="images/co-management-architecture.png" alt-text="The cloud-native architecture" lightbox="images/co-management-architecture.png":::
+:::image type="content" source="media/co-management-architecture.png" alt-text="The cloud-native architecture" lightbox="media/co-management-architecture.png":::
 *Diagram of environment architectures*
 
 While Defender for Endpoint supports onboarding of various endpoints and tools, this article doesn't cover them. For information on general onboarding using other supported deployment tools and methods, see [Onboarding overview](onboarding.md).
@@ -70,39 +70,39 @@ Follow the steps below to onboard endpoints using Microsoft Configuration Manage
 
 1. In Microsoft Configuration Manager console, navigate to **Assets and Compliance \> Overview \> Device Collections**.
 
-    :::image type="content" source="images/configmgr-device-collections.png" alt-text="The Microsoft Configuration Manager wizard1" lightbox="images/configmgr-device-collections.png":::
+    :::image type="content" source="media/configmgr-device-collections.png" alt-text="The Microsoft Configuration Manager wizard1" lightbox="media/configmgr-device-collections.png":::
 
 2. Right select **Device Collection** and select **Create Device Collection**.
 
-    :::image type="content" source="images/configmgr-create-device-collection.png" alt-text="The Microsoft Configuration Manager wizard2" lightbox="images/configmgr-create-device-collection.png":::
+    :::image type="content" source="media/configmgr-create-device-collection.png" alt-text="The Microsoft Configuration Manager wizard2" lightbox="media/configmgr-create-device-collection.png":::
 
 3. Provide a **Name** and **Limiting Collection**, then select **Next**.
 
-    :::image type="content" source="images/configmgr-limiting-collection.png" alt-text="The Microsoft Configuration Manager wizard3" lightbox="images/configmgr-limiting-collection.png":::
+    :::image type="content" source="media/configmgr-limiting-collection.png" alt-text="The Microsoft Configuration Manager wizard3" lightbox="media/configmgr-limiting-collection.png":::
 
 4. Select **Add Rule** and choose **Query Rule**.
 
-    :::image type="content" source="images/configmgr-query-rule.png" alt-text="The Microsoft Configuration Manager wizard4" lightbox="images/configmgr-query-rule.png":::
+    :::image type="content" source="media/configmgr-query-rule.png" alt-text="The Microsoft Configuration Manager wizard4" lightbox="media/configmgr-query-rule.png":::
 
 5. Select **Next** on the **Direct Membership Wizard** and select on **Edit Query Statement**.
 
-    :::image type="content" source="images/configmgr-direct-membership.png" alt-text="The Microsoft Configuration Manager wizard5" lightbox="images/configmgr-direct-membership.png":::
+    :::image type="content" source="media/configmgr-direct-membership.png" alt-text="The Microsoft Configuration Manager wizard5" lightbox="media/configmgr-direct-membership.png":::
 
 6. Select **Criteria** and then choose the star icon.
 
-    :::image type="content" source="images/configmgr-criteria.png" alt-text="The Microsoft Configuration Manager wizard6" lightbox="images/configmgr-criteria.png":::
+    :::image type="content" source="media/configmgr-criteria.png" alt-text="The Microsoft Configuration Manager wizard6" lightbox="media/configmgr-criteria.png":::
 
 7. Keep criterion type as **simple value**, choose whereas **Operating System - build number**, operator as **is greater than or equal to** and value **14393** and select on **OK**.
 
-    :::image type="content" source="images/configmgr-simple-value.png" alt-text="The Microsoft Configuration Manager wizard7" lightbox="images/configmgr-simple-value.png":::
+    :::image type="content" source="media/configmgr-simple-value.png" alt-text="The Microsoft Configuration Manager wizard7" lightbox="media/configmgr-simple-value.png":::
 
 8. Select **Next** and **Close**.
 
-    :::image type="content" source="images/configmgr-membership-rules.png" alt-text="The Microsoft Configuration Manager wizard8" lightbox="images/configmgr-membership-rules.png":::
+    :::image type="content" source="media/configmgr-membership-rules.png" alt-text="The Microsoft Configuration Manager wizard8" lightbox="media/configmgr-membership-rules.png":::
 
 9. Select **Next**.
 
-    :::image type="content" source="images/configmgr-confirm.png" alt-text="The Microsoft Configuration Manager wizard9" lightbox="images/configmgr-confirm.png":::
+    :::image type="content" source="media/configmgr-confirm.png" alt-text="The Microsoft Configuration Manager wizard9" lightbox="media/configmgr-confirm.png":::
 
 After completing this task, you now have a device collection with all the Windows endpoints in the environment.
 
@@ -135,11 +135,11 @@ From within the Microsoft Defender portal it's possible to download the `.onboar
 
 6. Right-click **Microsoft Defender ATP Policies** and select **Create Microsoft Defender ATP Policy**.
 
-    :::image type="content" source="images/configmgr-create-policy.png" alt-text="The Microsoft Configuration Manager wizard12" lightbox="images/configmgr-create-policy.png":::
+    :::image type="content" source="media/configmgr-create-policy.png" alt-text="The Microsoft Configuration Manager wizard12" lightbox="media/configmgr-create-policy.png":::
 
 7. Enter the name and description, verify **Onboarding** is selected, then select **Next**.
 
-    :::image type="content" source="images/configmgr-policy-name.png" alt-text="The Microsoft Configuration Manager wizard13" lightbox="images/configmgr-policy-name.png":::
+    :::image type="content" source="media/configmgr-policy-name.png" alt-text="The Microsoft Configuration Manager wizard13" lightbox="media/configmgr-policy-name.png":::
 
 8. Select **Browse**.
 
@@ -148,25 +148,25 @@ From within the Microsoft Defender portal it's possible to download the `.onboar
 10. Select **Next**.
 11. Configure the Agent with the appropriate samples (**None** or **All file types**).
 
-    :::image type="content" source="images/configmgr-config-settings.png" alt-text="The configuration settings1" lightbox="images/configmgr-config-settings.png":::
+    :::image type="content" source="media/configmgr-config-settings.png" alt-text="The configuration settings1" lightbox="media/configmgr-config-settings.png":::
 
 12. Select the appropriate telemetry (**Normal** or **Expedited**) then select **Next**.
 
-    :::image type="content" source="images/configmgr-telemetry.png" alt-text="The configuration settings2" lightbox="images/configmgr-telemetry.png":::
+    :::image type="content" source="media/configmgr-telemetry.png" alt-text="The configuration settings2" lightbox="media/configmgr-telemetry.png":::
 
 13. Verify the configuration, then select **Next**.
 
-    :::image type="content" source="images/configmgr-verify-configuration.png" alt-text="The configuration settings3" lightbox="images/configmgr-verify-configuration.png":::
+    :::image type="content" source="media/configmgr-verify-configuration.png" alt-text="The configuration settings3" lightbox="media/configmgr-verify-configuration.png":::
 
 14. Select **Close** when the Wizard completes.
 
 15. In the Microsoft Configuration Manager console, right-click the Defender for Endpoint policy you created and select **Deploy**.
 
-    :::image type="content" source="images/configmgr-deploy.png" alt-text="The configuration settings4" lightbox="images/configmgr-deploy.png":::
+    :::image type="content" source="media/configmgr-deploy.png" alt-text="The configuration settings4" lightbox="media/configmgr-deploy.png":::
 
 16. On the right panel, select the previously created collection and select **OK**.
 
-    :::image type="content" source="images/configmgr-select-collection.png" alt-text="The configuration settings5" lightbox="images/configmgr-select-collection.png":::
+    :::image type="content" source="media/configmgr-select-collection.png" alt-text="The configuration settings5" lightbox="media/configmgr-select-collection.png":::
 
 #### Previous versions of Windows Client (Windows 7 and Windows 8.1)
 
@@ -222,7 +222,7 @@ Microsoft Defender Antivirus is a built-in anti-malware solution that provides n
 
     For more information, see [Windows Security configuration framework](/windows/security/threat-protection/windows-security-configuration-framework/windows-security-configuration-framework).
   
-    :::image type="content" source="images/cd7daeb392ad5a36f2d3a15d650f1e96.png" alt-text="The next-generation protection pane2" lightbox="images/cd7daeb392ad5a36f2d3a15d650f1e96.png":::
+    :::image type="content" source="media/cd7daeb392ad5a36f2d3a15d650f1e96.png" alt-text="The next-generation protection pane2" lightbox="media/cd7daeb392ad5a36f2d3a15d650f1e96.png":::
 
     :::image type="content" source="media/36c7c2ed737f2f4b54918a4f20791d4b.png" alt-text="The next-generation protection pane3" lightbox="media/36c7c2ed737f2f4b54918a4f20791d4b.png":::
 
@@ -244,7 +244,7 @@ Microsoft Defender Antivirus is a built-in anti-malware solution that provides n
 
 4. Target the new anti-malware policy to your Windows collection and select **OK**.
 
-    :::image type="content" source="images/configmgr-select-collection.png" alt-text="The next-generation protection pane11" lightbox="images/configmgr-select-collection.png":::
+    :::image type="content" source="media/configmgr-select-collection.png" alt-text="The next-generation protection pane11" lightbox="media/configmgr-select-collection.png":::
 
 After completing this task, you now have successfully configured Microsoft Defender Antivirus.
 
@@ -264,7 +264,7 @@ To set attack surface reduction rules in test mode:
 
 3. Set rules to **Audit** and select **Next**.
 
-   :::image type="content" source="images/d18e40c9e60aecf1f9a93065cb7567bd.png" alt-text="The Microsoft Configuration Manager console1" lightbox="images/d18e40c9e60aecf1f9a93065cb7567bd.png":::
+   :::image type="content" source="media/d18e40c9e60aecf1f9a93065cb7567bd.png" alt-text="The Microsoft Configuration Manager console1" lightbox="media/d18e40c9e60aecf1f9a93065cb7567bd.png":::
 
 4. Confirm the new Exploit Guard policy by selecting **Next**.
 
@@ -296,7 +296,7 @@ Below are more steps to verify whether attack surface reduction rules are correc
 
 4. Select **Configuration** tab in Attack surface reduction rules reports. It shows attack surface reduction rules configuration overview and attack surface reduction rules status on each device.
 
-   :::image type="content" source="images/f91f406e6e0aae197a947d3b0e8b2d0d.png" alt-text="The attack surface reduction rules reports1" lightbox="images/f91f406e6e0aae197a947d3b0e8b2d0d.png":::
+   :::image type="content" source="media/f91f406e6e0aae197a947d3b0e8b2d0d.png" alt-text="The attack surface reduction rules reports1" lightbox="media/f91f406e6e0aae197a947d3b0e8b2d0d.png":::
 
 5. Select each device shows configuration details of attack surface reduction rules.
 
@@ -314,7 +314,7 @@ See [Optimize attack surface reduction rule deployment and detections](/microsof
 
 3. Set the setting to **Audit** and select **Next**.
 
-   :::image type="content" source="images/c039b2e05dba1ade6fb4512456380c9f.png" alt-text="The System Center Configuration Manager2" lightbox="images/c039b2e05dba1ade6fb4512456380c9f.png":::
+   :::image type="content" source="media/c039b2e05dba1ade6fb4512456380c9f.png" alt-text="The System Center Configuration Manager2" lightbox="media/c039b2e05dba1ade6fb4512456380c9f.png":::
 
 4. Confirm the new Exploit Guard Policy by selecting **Next**.
 

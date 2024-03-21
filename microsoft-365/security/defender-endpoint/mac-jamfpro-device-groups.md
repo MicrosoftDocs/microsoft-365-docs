@@ -45,7 +45,7 @@ Set up the device groups similar to Group policy  organizational unite (OUs), Mi
 
 4. Now you will see the **Contoso's Machine Group** under **Static Computer Groups**.
 
-   :::image type="content" source="images/contoso-machine-group.png" alt-text="The Jamf Pro3 page" lightbox="images/contoso-machine-group.png":::
+   :::image type="content" source="media/contoso-machine-group.png" alt-text="The Jamf Pro3 page" lightbox="media/contoso-machine-group.png":::
 
 > [!NOTE]
 > You are not required to use static groups. It is often more convenient and flexible to use e.g. [JAMF Pro's smart groups](https://docs.jamf.com/10.40.0/jamf-pro/documentation/Smart_Groups.html) instead.
