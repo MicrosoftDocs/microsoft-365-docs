@@ -96,7 +96,7 @@ For more information on command-line parameters and options, see the [New-MpPerf
 
 Based on the query, the user is able to view data for scan counts, duration (total/min/average/max/median), path, process, and **reason for scan**. The following image shows sample output for a simple query of the top 10 files for scan impact.
 
-:::image type="content" source="images/example-output.png" alt-text="Example output for a basic TopFiles query" lightbox="images/example-output.png":::
+:::image type="content" source="media/example-output.png" alt-text="Example output for a basic TopFiles query" lightbox="media/example-output.png":::
 
 ## Additional functionality: exporting and converting to CSV and JSON
 
