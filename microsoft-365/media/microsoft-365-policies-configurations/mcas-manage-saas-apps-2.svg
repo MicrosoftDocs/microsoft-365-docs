@@ -109,31 +109,31 @@
 				<svg viewBox="0 -39.008 43.008 36" enable-background="new" color-interpolation-filters="sRGB" height="24.7914"
 						preserveAspectRatio="none" width="29.6175" x="0" y="604.084">
 					<defs>
-						<clipPath id="mfid1">
-							<rect id="mfid2" x="0" y="-39.008" width="43.008" height="36"/>
+						<clipPath id="mfid188">
+							<rect id="mfid189" x="0" y="-39.008" width="43.008" height="36"/>
 						</clipPath>
 					</defs>
-					<g clip-path="url(#mfid1)">
+					<g clip-path="url(#mfid188)">
 						<defs>
-							<g id="mfid3">
+							<g id="mfid190">
 								<path transform="matrix(0.33333, 0, 0, 0.33333, 0, 0)"
 										d="M125,-118 C87,-118 87,-118 87,-118 C85,-118 84,-117 84,-115 C84,-115 84,-115 84,-115 C84,-44 84,-44 84,-44 C84,-42 85,-41 87,-41 C87,-41 87,-41 87,-41 C125,-41 125,-41 125,-41 C127,-41 128,-42 128,-44 C128,-44 128,-44 128,-44 C128,-115 128,-115 128,-115 C128,-117 127,-118 125,-118 Z M112,-47 C101,-47 101,-47 101,-47 C101,-52 101,-52 101,-52 C112,-52 112,-52 112,-52 Z"/>
 							</g>
 						</defs>
 						<g transform="matrix(0.33333, 0, 0, 0.33333, 0, 0)">
 							<g stroke-width="3.2673" stroke="none" fill="#939393">
-								<use xlink:href="#mfid3" transform="matrix(3, -0, -0, 3, -0, 0)" stroke="none"/>
+								<use xlink:href="#mfid190" transform="matrix(3, -0, -0, 3, -0, 0)" stroke="none"/>
 							</g>
 						</g>
 						<defs>
-							<g id="mfid4">
+							<g id="mfid191">
 								<path transform="matrix(0.33333, 0, 0, 0.33333, 0, 0)"
 										d="M76,-44 C76,-90 76,-90 76,-90 C4,-90 4,-90 4,-90 C2,-90 0,-88 0,-86 C0,-14 0,-14 0,-14 C0,-12 2,-10 4,-10 C108,-10 108,-10 108,-10 C110,-10 112,-12 112,-14 C112,-33 112,-33 112,-33 C87,-33 87,-33 87,-33 C81,-33 76,-38 76,-44 Z M64,-18 C48,-18 48,-18 48,-18 C48,-26 48,-26 48,-26 C64,-26 64,-26 64,-26 Z"/>
 							</g>
 						</defs>
 						<g transform="matrix(0.33333, 0, 0, 0.33333, 0, 0)">
 							<g stroke-width="3.2673" stroke="none" fill="#c2c2c2">
-								<use xlink:href="#mfid4" transform="matrix(3, -0, -0, 3, -0, 0)" stroke="none"/>
+								<use xlink:href="#mfid191" transform="matrix(3, -0, -0, 3, -0, 0)" stroke="none"/>
 							</g>
 						</g>
 					</g>
@@ -159,20 +159,20 @@
 				<svg viewBox="0 -38.016 43.008 33.024" enable-background="new" color-interpolation-filters="sRGB" height="22.742"
 						preserveAspectRatio="none" width="29.6175" x="0" y="606.133">
 					<defs>
-						<clipPath id="mfid5">
-							<rect id="mfid6" x="0" y="-38.016" width="43.008" height="33.024"/>
+						<clipPath id="mfid192">
+							<rect id="mfid193" x="0" y="-38.016" width="43.008" height="33.024"/>
 						</clipPath>
 					</defs>
-					<g clip-path="url(#mfid5)">
+					<g clip-path="url(#mfid192)">
 						<defs>
-							<g id="mfid7">
+							<g id="mfid194">
 								<path transform="matrix(0.33333, 0, 0, 0.33333, 0, 0)"
 										d="M128,-37 C128,-110 128,-110 128,-110 C128,-112 126,-114 124,-114 C4,-114 4,-114 4,-114 C2,-114 0,-112 0,-110 C0,-37 0,-37 0,-37 C0,-35 2,-33 4,-33 C59,-33 59,-33 59,-33 C59,-22 59,-22 59,-22 C39,-22 39,-22 39,-22 C39,-14 39,-14 39,-14 C88,-14 88,-14 88,-14 C88,-22 88,-22 88,-22 C68,-22 68,-22 68,-22 C68,-34 68,-34 68,-34 C124,-34 124,-34 124,-34 C126,-34 128,-35 128,-37 Z"/>
 							</g>
 						</defs>
 						<g transform="matrix(0.33333, 0, 0, 0.33333, 0, 0)">
 							<g stroke-width="3.2673" stroke="none" fill="#c2c2c2">
-								<use xlink:href="#mfid7" transform="matrix(3, -0, -0, 3, -0, 0)" stroke="none"/>
+								<use xlink:href="#mfid194" transform="matrix(3, -0, -0, 3, -0, 0)" stroke="none"/>
 							</g>
 						</g>
 					</g>
@@ -182,14 +182,14 @@
 		</g>
 		<g id="shape3073-22" v:mID="3073" v:groupContext="shape" v:layerMember="1" transform="translate(179.181,-482.005)">
 			<title>Sheet.3073</title>
-			<desc>Entra Conditional Access policies</desc>
+			<desc>Microsoft Entra Conditional Access policies</desc>
 			<v:userDefs>
 				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(53000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
 			<v:textRect cx="110.25" cy="597.422" width="220.5" height="62.9058"/>
 			<rect x="0" y="565.969" width="220.5" height="62.9058" class="st5"/>
-			<text x="11.2" y="593.57" class="st6" v:langID="1033"><v:paragraph v:indentLeft="7.2" v:spLine="-1.1"/><v:tabList/>Entra Conditional <v:newlineChar/><tspan
+			<text x="11.2" y="593.57" class="st6" v:langID="1033"><v:paragraph v:indentLeft="7.2" v:spLine="-1.1"/><v:tabList/>Microsoft Entra Conditional<v:newlineChar/><tspan
 						x="11.2" dy="1.1em" class="st7">Access policies</tspan></text>		</g>
 		<g id="shape3074-26" v:mID="3074" v:groupContext="shape" transform="translate(17.1814,-502.584)">
 			<title>Sheet.3074</title>
@@ -272,20 +272,20 @@
 				<svg viewBox="0 -38.016 43.008 33.024" enable-background="new" color-interpolation-filters="sRGB" height="22.742"
 						preserveAspectRatio="none" width="29.6175" x="0" y="606.133">
 					<defs>
-						<clipPath id="mfid8">
-							<rect id="mfid9" x="0" y="-38.016" width="43.008" height="33.024"/>
+						<clipPath id="mfid195">
+							<rect id="mfid196" x="0" y="-38.016" width="43.008" height="33.024"/>
 						</clipPath>
 					</defs>
-					<g clip-path="url(#mfid8)">
+					<g clip-path="url(#mfid195)">
 						<defs>
-							<g id="mfid10">
+							<g id="mfid197">
 								<path transform="matrix(0.33333, 0, 0, 0.33333, 0, 0)"
 										d="M128,-37 C128,-110 128,-110 128,-110 C128,-112 126,-114 124,-114 C4,-114 4,-114 4,-114 C2,-114 0,-112 0,-110 C0,-37 0,-37 0,-37 C0,-35 2,-33 4,-33 C59,-33 59,-33 59,-33 C59,-22 59,-22 59,-22 C39,-22 39,-22 39,-22 C39,-14 39,-14 39,-14 C88,-14 88,-14 88,-14 C88,-22 88,-22 88,-22 C68,-22 68,-22 68,-22 C68,-34 68,-34 68,-34 C124,-34 124,-34 124,-34 C126,-34 128,-35 128,-37 Z"/>
 							</g>
 						</defs>
 						<g transform="matrix(0.33333, 0, 0, 0.33333, 0, 0)">
 							<g stroke-width="3.2673" stroke="none" fill="#c2c2c2">
-								<use xlink:href="#mfid10" transform="matrix(3, -0, -0, 3, -0, 0)" stroke="none"/>
+								<use xlink:href="#mfid197" transform="matrix(3, -0, -0, 3, -0, 0)" stroke="none"/>
 							</g>
 						</g>
 					</g>
@@ -323,31 +323,31 @@
 				<svg viewBox="0 -39.008 43.008 36" enable-background="new" color-interpolation-filters="sRGB" height="24.7914"
 						preserveAspectRatio="none" width="29.6175" x="0" y="604.084">
 					<defs>
-						<clipPath id="mfid11">
-							<rect id="mfid12" x="0" y="-39.008" width="43.008" height="36"/>
+						<clipPath id="mfid198">
+							<rect id="mfid199" x="0" y="-39.008" width="43.008" height="36"/>
 						</clipPath>
 					</defs>
-					<g clip-path="url(#mfid11)">
+					<g clip-path="url(#mfid198)">
 						<defs>
-							<g id="mfid13">
+							<g id="mfid200">
 								<path transform="matrix(0.33333, 0, 0, 0.33333, 0, 0)"
 										d="M125,-118 C87,-118 87,-118 87,-118 C85,-118 84,-117 84,-115 C84,-115 84,-115 84,-115 C84,-44 84,-44 84,-44 C84,-42 85,-41 87,-41 C87,-41 87,-41 87,-41 C125,-41 125,-41 125,-41 C127,-41 128,-42 128,-44 C128,-44 128,-44 128,-44 C128,-115 128,-115 128,-115 C128,-117 127,-118 125,-118 Z M112,-47 C101,-47 101,-47 101,-47 C101,-52 101,-52 101,-52 C112,-52 112,-52 112,-52 Z"/>
 							</g>
 						</defs>
 						<g transform="matrix(0.33333, 0, 0, 0.33333, 0, 0)">
 							<g stroke-width="3.2673" stroke="none" fill="#939393">
-								<use xlink:href="#mfid13" transform="matrix(3, -0, -0, 3, -0, 0)" stroke="none"/>
+								<use xlink:href="#mfid200" transform="matrix(3, -0, -0, 3, -0, 0)" stroke="none"/>
 							</g>
 						</g>
 						<defs>
-							<g id="mfid14">
+							<g id="mfid201">
 								<path transform="matrix(0.33333, 0, 0, 0.33333, 0, 0)"
 										d="M76,-44 C76,-90 76,-90 76,-90 C4,-90 4,-90 4,-90 C2,-90 0,-88 0,-86 C0,-14 0,-14 0,-14 C0,-12 2,-10 4,-10 C108,-10 108,-10 108,-10 C110,-10 112,-12 112,-14 C112,-33 112,-33 112,-33 C87,-33 87,-33 87,-33 C81,-33 76,-38 76,-44 Z M64,-18 C48,-18 48,-18 48,-18 C48,-26 48,-26 48,-26 C64,-26 64,-26 64,-26 Z"/>
 							</g>
 						</defs>
 						<g transform="matrix(0.33333, 0, 0, 0.33333, 0, 0)">
 							<g stroke-width="3.2673" stroke="none" fill="#c2c2c2">
-								<use xlink:href="#mfid14" transform="matrix(3, -0, -0, 3, -0, 0)" stroke="none"/>
+								<use xlink:href="#mfid201" transform="matrix(3, -0, -0, 3, -0, 0)" stroke="none"/>
 							</g>
 						</g>
 					</g>
@@ -393,31 +393,31 @@
 				<svg viewBox="0 -39.008 43.008 36" enable-background="new" color-interpolation-filters="sRGB" height="24.7914"
 						preserveAspectRatio="none" width="29.6175" x="0" y="604.084">
 					<defs>
-						<clipPath id="mfid15">
-							<rect id="mfid16" x="0" y="-39.008" width="43.008" height="36"/>
+						<clipPath id="mfid202">
+							<rect id="mfid203" x="0" y="-39.008" width="43.008" height="36"/>
 						</clipPath>
 					</defs>
-					<g clip-path="url(#mfid15)">
+					<g clip-path="url(#mfid202)">
 						<defs>
-							<g id="mfid17">
+							<g id="mfid204">
 								<path transform="matrix(0.33333, 0, 0, 0.33333, 0, 0)"
 										d="M125,-118 C87,-118 87,-118 87,-118 C85,-118 84,-117 84,-115 C84,-115 84,-115 84,-115 C84,-44 84,-44 84,-44 C84,-42 85,-41 87,-41 C87,-41 87,-41 87,-41 C125,-41 125,-41 125,-41 C127,-41 128,-42 128,-44 C128,-44 128,-44 128,-44 C128,-115 128,-115 128,-115 C128,-117 127,-118 125,-118 Z M112,-47 C101,-47 101,-47 101,-47 C101,-52 101,-52 101,-52 C112,-52 112,-52 112,-52 Z"/>
 							</g>
 						</defs>
 						<g transform="matrix(0.33333, 0, 0, 0.33333, 0, 0)">
 							<g stroke-width="3.2673" stroke="none" fill="#939393">
-								<use xlink:href="#mfid17" transform="matrix(3, -0, -0, 3, -0, 0)" stroke="none"/>
+								<use xlink:href="#mfid204" transform="matrix(3, -0, -0, 3, -0, 0)" stroke="none"/>
 							</g>
 						</g>
 						<defs>
-							<g id="mfid18">
+							<g id="mfid205">
 								<path transform="matrix(0.33333, 0, 0, 0.33333, 0, 0)"
 										d="M76,-44 C76,-90 76,-90 76,-90 C4,-90 4,-90 4,-90 C2,-90 0,-88 0,-86 C0,-14 0,-14 0,-14 C0,-12 2,-10 4,-10 C108,-10 108,-10 108,-10 C110,-10 112,-12 112,-14 C112,-33 112,-33 112,-33 C87,-33 87,-33 87,-33 C81,-33 76,-38 76,-44 Z M64,-18 C48,-18 48,-18 48,-18 C48,-26 48,-26 48,-26 C64,-26 64,-26 64,-26 Z"/>
 							</g>
 						</defs>
 						<g transform="matrix(0.33333, 0, 0, 0.33333, 0, 0)">
 							<g stroke-width="3.2673" stroke="none" fill="#c2c2c2">
-								<use xlink:href="#mfid18" transform="matrix(3, -0, -0, 3, -0, 0)" stroke="none"/>
+								<use xlink:href="#mfid205" transform="matrix(3, -0, -0, 3, -0, 0)" stroke="none"/>
 							</g>
 						</g>
 					</g>
@@ -443,20 +443,20 @@
 				<svg viewBox="0 -38.016 43.008 33.024" enable-background="new" color-interpolation-filters="sRGB" height="22.742"
 						preserveAspectRatio="none" width="29.6175" x="0" y="606.133">
 					<defs>
-						<clipPath id="mfid19">
-							<rect id="mfid20" x="0" y="-38.016" width="43.008" height="33.024"/>
+						<clipPath id="mfid206">
+							<rect id="mfid207" x="0" y="-38.016" width="43.008" height="33.024"/>
 						</clipPath>
 					</defs>
-					<g clip-path="url(#mfid19)">
+					<g clip-path="url(#mfid206)">
 						<defs>
-							<g id="mfid21">
+							<g id="mfid208">
 								<path transform="matrix(0.33333, 0, 0, 0.33333, 0, 0)"
 										d="M128,-37 C128,-110 128,-110 128,-110 C128,-112 126,-114 124,-114 C4,-114 4,-114 4,-114 C2,-114 0,-112 0,-110 C0,-37 0,-37 0,-37 C0,-35 2,-33 4,-33 C59,-33 59,-33 59,-33 C59,-22 59,-22 59,-22 C39,-22 39,-22 39,-22 C39,-14 39,-14 39,-14 C88,-14 88,-14 88,-14 C88,-22 88,-22 88,-22 C68,-22 68,-22 68,-22 C68,-34 68,-34 68,-34 C124,-34 124,-34 124,-34 C126,-34 128,-35 128,-37 Z"/>
 							</g>
 						</defs>
 						<g transform="matrix(0.33333, 0, 0, 0.33333, 0, 0)">
 							<g stroke-width="3.2673" stroke="none" fill="#c2c2c2">
-								<use xlink:href="#mfid21" transform="matrix(3, -0, -0, 3, -0, 0)" stroke="none"/>
+								<use xlink:href="#mfid208" transform="matrix(3, -0, -0, 3, -0, 0)" stroke="none"/>
 							</g>
 						</g>
 					</g>
@@ -683,14 +683,14 @@
 		</g>
 		<g id="shape3105-181" v:mID="3105" v:groupContext="shape" transform="translate(197.25,-8.31618)">
 			<title>Sheet.3105</title>
-			<desc>November 2023</desc>
+			<desc>March 2024</desc>
 			<v:userDefs>
 				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(85000):26"/>
 			</v:userDefs>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:verticalAlign="0"/>
 			<v:textRect cx="216" cy="620.719" width="432" height="16.3125"/>
 			<rect x="0" y="612.562" width="432" height="16.3125" class="st4"/>
-			<text x="342.97" y="627.36" class="st26" v:langID="1033"><v:paragraph v:horizAlign="2"/><v:tabList/>November 2023</text>		</g>
+			<text x="365.45" y="627.36" class="st26" v:langID="1033"><v:paragraph v:horizAlign="2"/><v:tabList/>March 2024</text>		</g>
 		<g id="shape3106-184" v:mID="3106" v:groupContext="shape" v:layerMember="0" transform="translate(7.72059,-29.6912)">
 			<title>Arrow 1 - gray.3220</title>
 			<v:userDefs>
