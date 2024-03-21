@@ -53,9 +53,9 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 > [!TIP]
 > RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader:        > 
 > 
-> https://docs.microsoft.com/api/search/rss?search=%22Microsoft+Defender+ATP+as+well+as+security+features+in+Windows+10+and+Windows+Server.%22&locale=en-us
+> (/api/search/rss?search=%22features+are+generally+available+%28GA%29+in+the+latest+release+of+Microsoft+Defender+for+Endpoint%22&locale=en-us&facet=)
 > 
-> https://docs.microsoft.com/api/search/rss?search=%22features+are+generally+available+%28GA%29+in+the+latest+release+of+Microsoft+Defender+for+Endpoint%22&locale=en-us&facet=
+> (/api/search/rss?search=%22features+are+generally+available+%28GA%29+in+the+latest+release+of+Microsoft+Defender+for+Endpoint%22&locale=en-us&facet=)
 
 ## February 2024
 
@@ -134,4 +134,4 @@ Two new ASR rules are now in public preview:
 
 ## Prior to 2023
 
-For information about features released prior to 2023, see [Archive - What's new in Defender for Endpoint, December 2022 and earlier](whats-new-mde-archive.md#whats-new-in-microsoft-defender-for-endpoint---prior-to-2023).
+For information about features released prior to 2023, see [Archive - What's new in Defender for Endpoint, December 2022 and earlier](whats-new-mde-archive.md#whats-new-in-microsoft-defender-for-endpoint---before-2023)

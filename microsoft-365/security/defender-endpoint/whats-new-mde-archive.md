@@ -3,7 +3,7 @@ title: What's new in Microsoft Defender for Endpoint - Before 2023
 description: See what features were available for Microsoft Defender for Endpoint in the releases before 2023.
 search.appverid: met150
 ms.service: defender-endpoint
-ms.author: Denise Vangel
+ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
 ms.date: 03/21/2024
@@ -152,11 +152,11 @@ Existing [Defender for Endpoint](microsoft-defender-endpoint.md) capabilities wi
 
 - [Device group definitions](/microsoft-365/security/defender-endpoint/machine-groups) can now include multiple values for each condition. You can set multiple tags, device names, and domains to the definition of a single device group.
 
-- [Mobile Application management support](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> This enhancement enables Microsoft Defender for Endpoint protect an organization’s data within a managed application when Intune is being used to manage mobile applications. For more information about mobile application management, see [this documentation](/microsoft-365/mem/intune/apps/mam-faq).
+- [Mobile Application management support](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> This enhancement enables Microsoft Defender for Endpoint protect an organization’s data within a managed application when Intune is being used to manage mobile applications. For more information about mobile application management, see [this documentation](/mem/intune/apps/mam-faq).
 
 - [Microsoft Tunnel VPN integration](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> Microsoft Tunnel VPN capabilities are now integrated with Microsoft Defender for Endpoint app for Android. This unification enables organizations to offer a simplified end-user experience with one security app – offering both mobile threat defense and the ability to access on-prem resources from their mobile device – while security and IT teams are able to maintain the same admin experiences they are familiar with.
 
-- [Jailbreak detection on iOS](/microsoft-365/security/defender-endpoint/ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios) <br> Jailbreak detection capability in Microsoft Defender for Endpoint on iOS is now generally available. This adds to the phishing protection that already exists. For more information, see [Setup Conditional Access Policy based on device risk signals](/microsoft-365/security/defender-endpoint/ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios).
+- [Jailbreak detection on iOS](ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios) <br> Jailbreak detection capability in Microsoft Defender for Endpoint on iOS is now generally available. This adds to the phishing protection that already exists. For more information, see [Setup Conditional Access Policy based on device risk signals](ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios).
 
 ## March 2021
 
@@ -168,16 +168,16 @@ Existing [Defender for Endpoint](microsoft-defender-endpoint.md) capabilities wi
 
 ## December 2020
 
-- [Microsoft Defender for Endpoint for iOS](microsoft-defender-atp-ios.md) <br> Microsoft Defender for Endpoint now adds support for iOS. Learn how to install, configure, update, and use Microsoft Defender for Endpoint for iOS.
+- [Microsoft Defender for Endpoint on iOS](microsoft-defender-endpoint-ios.md) <br> Microsoft Defender for Endpoint now adds support for iOS. Learn how to install, configure, update, and use Microsoft Defender for Endpoint for iOS.
 
 ## September 2020
 
-- [Microsoft Defender for Endpoint for Android](microsoft-defender-atp-android.md) <br> Microsoft Defender for Endpoint now adds support for Android. The article [Microsoft Defender for Endpoint for Android](microsoft-defender-atp-android.md) enables you learn how to install, configure, update, and use Microsoft Defender for Endpoint for Android.
+- [Microsoft Defender for Endpoint on Android](microsoft-defender-endpoint-android.md) <br> Microsoft Defender for Endpoint now adds support for Android. The article [Microsoft Defender for Endpoint on Android](microsoft-defender-endpoint-android.md) enables you learn how to install, configure, update, and use Microsoft Defender for Endpoint for Android.
 - [Threat and vulnerability management macOS support](tvm-supported-os.md)<br> Threat and vulnerability management for macOS is now in public preview, and will continuously detect vulnerabilities on your macOS devices to help you prioritize remediation by focusing on risk. For more information, see [Microsoft Tech Community blog post](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-for-endpoint-adds-depth-and-breadth-to-threat/ba-p/1695824).
 
 ## August 2020
 
-- [Microsoft Defender for Endpoint for Android](microsoft-defender-atp-android.md) <br> Microsoft Defender for Endpoint now adds support for Android. The article [Microsoft Defender for Endpoint for Android](microsoft-defender-atp-android.md) enables you learn how to install, configure, and use Microsoft Defender for Endpoint for Android.
+- [Microsoft Defender for Endpoint on Android](microsoft-defender-endpoint-android.md) <br> Microsoft Defender for Endpoint now adds support for Android. The article [Microsoft Defender for Endpoint on Android](microsoft-defender-endpoint-android.md) enables you learn how to install, configure, and use Microsoft Defender for Endpoint for Android.
 
 ## July 2020
 
@@ -185,23 +185,23 @@ Existing [Defender for Endpoint](microsoft-defender-endpoint.md) capabilities wi
 
 ## June 2020
 
-- [Microsoft Defender for Endpoint for Linux](microsoft-defender-atp-linux.md) <br> Microsoft Defender for Endpoint now adds support for Linux. This article [Microsoft Defender for Endpoint for Linux](microsoft-defender-atp-linux.md) enables you learn how to install, configure, update, and use Microsoft Defender for Endpoint for Linux.
+- [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md) <br> Microsoft Defender for Endpoint now adds support for Linux. This article [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md) enables you learn how to install, configure, update, and use Microsoft Defender for Endpoint for Linux.
 
 - [Attack simulators in the evaluation lab](evaluation-lab.md#threat-simulator-scenarios) <br> Microsoft Defender for Endpoint has partnered with various threat simulation platforms to give you convenient access to test the capabilities of the platform right from within the portal.
 
 ## April 2020
 
-- [Threat & Vulnerability Management API support](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exposed-apis-list) <BR>Run Threat & Vulnerability Management-related API calls such as get your organization's threat exposure score or device secure score, software and device vulnerability inventory, software version distribution, device vulnerability information, and security recommendation information. For more information, see [Microsoft Tech Community blog post](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/threat-amp-vulnerability-management-apis-are-now-generally/ba-p/1304615).
+- [Threat & Vulnerability Management API support](api/exposed-apis-list.md) <BR>Run Threat & Vulnerability Management-related API calls such as get your organization's threat exposure score or device secure score, software and device vulnerability inventory, software version distribution, device vulnerability information, and security recommendation information. For more information, see [Microsoft Tech Community blog post](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/threat-amp-vulnerability-management-apis-are-now-generally/ba-p/1304615).
 
 ## November-December 2019
 
-- [Microsoft Defender for Endpoint for Mac](microsoft-defender-atp-mac.md) <BR> Microsoft Defender for Endpoint for Mac brings the next-generation protection to Mac devices. Core components of the unified endpoint security platform will now be available for Mac devices, including [endpoint detection and response](endpoint-detection-response-mac-preview.md).
+- [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md) <BR> Microsoft Defender for Endpoint for Mac brings the next-generation protection to Mac devices. Core components of the unified endpoint security platform will now be available for Mac devices, including [endpoint detection and response](overview-endpoint-detection-response.md).
  
-- [Threat & Vulnerability Management application and application version end-of-life information](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation) <BR>Applications and application versions which have reached their end of life (EOL) are tagged or labeled as such; so, you are aware that they will no longer be supported, and can take action to either uninstall or replace. Doing so will help lessen the risks related to various vulnerability exposures due to unpatched applications.
+- [Threat & Vulnerability Management application and application version end-of-life information](../defender-vulnerability-management/tvm-security-recommendation.md) <BR>Applications and application versions which have reached their end of life (EOL) are tagged or labeled as such; so, you are aware that they will no longer be supported, and can take action to either uninstall or replace. Doing so will help lessen the risks related to various vulnerability exposures due to unpatched applications.
 
-- [Threat & Vulnerability Management Advanced Hunting Schemas](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-schema-reference) <BR>Use the Threat & Vulnerability Management tables in the Advanced hunting schema to query about software inventory, vulnerability knowledgebase, security configuration assessment, and security configuration knowledgebase.
+- [Threat & Vulnerability Management Advanced Hunting Schemas](../defender/advanced-hunting-schema-tables.md) <BR>Use the Threat & Vulnerability Management tables in the Advanced hunting schema to query about software inventory, vulnerability knowledgebase, security configuration assessment, and security configuration knowledgebase.
  
- - [Threat & Vulnerability Management role-based access controls](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#create-roles-and-assign-the-role-to-an-azure-active-directory-group) <BR>Use the new permissions to allow maximum flexibility to create SecOps-oriented roles, Threat & Vulnerability Management-oriented roles, or hybrid roles so that only authorized users are accessing specific data to do their task. You can also achieve even further granularity by specifying whether a Threat & Vulnerability Management role can only view vulnerability-related data, or can create and manage remediation and exceptions.
+ - [Threat & Vulnerability Management role-based access controls](user-roles.md) <BR>Use the new permissions to allow maximum flexibility to create SecOps-oriented roles, Threat & Vulnerability Management-oriented roles, or hybrid roles so that only authorized users are accessing specific data to do their task. You can also achieve even further granularity by specifying whether a Threat & Vulnerability Management role can only view vulnerability-related data, or can create and manage remediation and exceptions.
 
 - [Device health and compliance report](machine-reports.md) <br/> The device health and compliance report provides high-level information about the devices in your organization.
 
@@ -217,14 +217,14 @@ Existing [Defender for Endpoint](microsoft-defender-endpoint.md) capabilities wi
 
 ## September 2019
 
-- [Tamper Protection settings using Intune](../microsoft-defender-antivirus/prevent-changes-to-security-settings-with-tamper-protection.md#turn-tamper-protection-on-or-off-for-your-organization-using-intune)<br/>You can now turn on Tamper Protection (or turn off) for your organization in the Microsoft 365 Device Management Portal (Intune).
+- [Tamper Protection settings using Intune](manage-tamper-protection-intune.md)<br/>You can now turn on Tamper Protection (or turn off) for your organization in the Microsoft 365 Device Management Portal (Intune).
 
 - [Live response](live-response.md)<BR> Get instantaneous access to a device using a remote shell connection. Do in-depth investigative work and take immediate response actions to promptly contain identified threats - real time.
 
 - [Evaluation lab](evaluation-lab.md) <BR> The Microsoft Defender for Endpoint evaluation lab is designed to eliminate the complexities of device and environment configuration so that you can
  focus on evaluating the capabilities of the platform; running simulations; and seeing the prevention, detection, and remediation features in action.
 
-- [Windows Server 2008 R2 SP1](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-server-endpoints#windows-server-2008-r2-sp1--windows-server-2012-r2-and-windows-server-2016) <BR> You can now onboard Windows Server 2008 R2 SP1.
+- [Windows Server 2008 R2 SP1](configure-server-endpoints.md) <BR> You can now onboard Windows Server 2008 R2 SP1.
 
 ## June 2019
 
@@ -234,9 +234,9 @@ Existing [Defender for Endpoint](microsoft-defender-endpoint.md) capabilities wi
 
 ## May 2019
 
-- [Threat protection reports](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/threat-protection-reports-windows-defender-advanced-threat-protection)<BR>The threat protection report provides high-level information about alerts generated in your organization.
+- [Threat protection reports](threat-protection-reports.md)<BR>The threat protection report provides high-level information about alerts generated in your organization.
 
-- [Microsoft Threat Experts](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/microsoft-threat-experts)<BR> Microsoft Threat Experts is the new managed threat hunting service in Microsoft Defender for Endpoint that provides proactive hunting, prioritization, and additional context and insights that further empower security operations centers (SOCs) to identify and respond to threats quickly and accurately. It provides an additional layer of expertise and optics that Microsoft customers can utilize to augment security operation capabilities as part of Microsoft 365.  
+- [Microsoft Threat Experts](endpoint-attack-notifications.md)<BR> Microsoft Threat Experts is the new managed threat hunting service in Microsoft Defender for Endpoint that provides proactive hunting, prioritization, and additional context and insights that further empower security operations centers (SOCs) to identify and respond to threats quickly and accurately. It provides an additional layer of expertise and optics that Microsoft customers can utilize to augment security operation capabilities as part of Microsoft 365.  
 
 - [Indicators](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/ti-indicator) <BR> APIs for indicators are now generally available.
 
