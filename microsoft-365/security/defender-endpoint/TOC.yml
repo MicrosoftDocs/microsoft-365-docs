@@ -16,6 +16,8 @@
       href: supported-capabilities-by-platform.md
     - name: What's new in Microsoft Defender for Endpoint?
       href: whats-new-in-microsoft-defender-endpoint.md
+    - name: What's new in Microsoft Defender for Endpoint before 2023?
+      href: whats-new-mde-archive.md
     - name: What's new in Microsoft Defender for Endpoint on Windows
       href: windows-whatsnew.md
     - name: What's new in Microsoft Defender for Endpoint on other platforms
