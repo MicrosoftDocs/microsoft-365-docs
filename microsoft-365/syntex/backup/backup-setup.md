@@ -249,26 +249,26 @@ You can view actual and accumulated cost breakdown by tenants and service type f
 
 2. Search for *Cost Management + Billing*.
 
-3. Select **Cost Analysis** to see:
-
-    - Actual cost and forecast cost
+3. Select **Cost analysis** to see:
 
     ![Screenshot of the cost analysis page in Microsoft Cost Management.](../../media/content-understanding/backup-cost-analysis.png)
 
-    - Azure Cost Analysis - Actual Cost
+    - Actual cost and forecast cost
+
+    - Azure cost analysis - actual cost
 
     - Select **+Add Filter** to see breakdown of cost by tenants and service type
 
-    - Tenants will show list of tenant IDs that run
+    - Tenants show list of tenant IDs that run
 
-    - Service type will be OneDrive, SharePoint, or Exchange
+    - Service type is OneDrive, SharePoint, or Exchange
 
     - Select the tag
 
         - In the key-value pair, select tenants or service type and select the respective tenant ID or service type
 
-        - Azure Cost Analysis - Filter by Tag
+        - Azure cost analysis - filter by tag
 
-4. On the left navigation, select **Billing** to see monthly invoices.
+4. In the left navigation, select **Billing** to see monthly invoices.
 
 5. Set up budget alerts on cost by the following steps in the [Cost Management public APIs](/rest/api/cost-management/operation-groups).
