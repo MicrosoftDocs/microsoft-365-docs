@@ -16,6 +16,7 @@ audience: ITPro
 ms.collection: 
   - m365-security
   - tier1
+  - usx-security
 ms.topic: conceptual
 search.appverid: 
   - MOE150
@@ -30,7 +31,6 @@ ms.date: 02/21/2024
 **Applies to:**
 
 - Microsoft Defender XDR
-- Microsoft Sentinel
 
 Microsoft Defender XDR correlates millions of individual signals to identify active ransomware campaigns or other sophisticated attacks in the environment with high confidence. While an attack is in progress, Defender XDR disrupts the attack by automatically containing compromised assets that the attacker is using through automatic attack disruption.
 
@@ -40,9 +40,9 @@ This article provides an overview of automated attack disruption and includes li
 
 ## How automatic attack disruption works
 
-Automatic attack disruption is designed to contain attacks in progress, limit the impact on an organization's assets, and provide more time for security teams to remediate the attack fully. Attack disruption in uses the the full breadth of our extended detection and response (XDR) signals, taking the entire attack into account to act at the incident level. This capability is unlike known protection methods such as prevention and blocking based on a single indicator of compromise.
+Automatic attack disruption is designed to contain attacks in progress, limit the impact on an organization's assets, and provide more time for security teams to remediate the attack fully. Attack disruption uses the full breadth of our extended detection and response (XDR) signals, taking the entire attack into account to act at the incident level. This capability is unlike known protection methods such as prevention and blocking based on a single indicator of compromise.
 
-While many XDR and security orchestration, automation, and response (SOAR) platforms allow you to create your automatic response actions, automatic attack disruption is built-in and uses insights from Microsoft security researchers and advanced AI models to counteract the complexities of advanced attacks. Automatic attack disruption considers the entire context of signals from different sources to determine compromised assets.
+While many XDR and security orchestration, automation, and response (SOAR) platforms allow you to create your automatic response actions, automatic attack disruption is built in and uses insights from Microsoft security researchers and advanced AI models to counteract the complexities of advanced attacks. Automatic attack disruption considers the entire context of signals from different sources to determine compromised assets.
 
 Automatic attack disruption operates in three key stages:
 
@@ -69,14 +69,13 @@ Automatic attack disruption uses Microsoft-based XDR response actions. Examples 
 
 - [Disable user](/defender-for-identity/remediation-actions) - based on Microsoft Defender for Identity's capability, this action is an automatic suspension of a compromised account to prevent additional damage like lateral movement, malicious mailbox use, or malware execution.
 
-    
-- [Contain user](../defender-endpoint/respond-machine-alerts.md#contain-user-from-the-network) - This response action automatically contains suspicious identities temporarily to help block any lateral movement and remote encryption related to incoming communication with Defender for Endpoint's onboarded devices.
+- [Contain user](../defender-endpoint/respond-machine-alerts.md#contain-user-from-the-network) - based on Microsoft Defender for Endpoint's capability, this response action automatically contains suspicious identities temporarily to help block any lateral movement and remote encryption related to incoming communication with Defender for Endpoint's onboarded devices.
 
 For more information, see [remediation actions](m365d-remediation-actions.md) in Microsoft Defender XDR.
 
 ### Automated response actions for SAP with Microsoft Sentinel (Preview)
 
-If you configured the integration between the Microsoft Defender portal and Microsoft Sentinel, and also deployed the Microsoft Sentinel solution for SAP applications, you can also deploy automatic attack disruption for SAP. 
+If you're using the [unified SOC platform](microsoft-sentinel-onboard.md) and also deployed the Microsoft Sentinel solution for SAP applications, you can also deploy automatic attack disruption for SAP.
 
 For example, deploy attack disruption for SAP to contain compromised assets by locking suspicious SAP users in case of a financial process manipulation attack.
 

@@ -1,11 +1,10 @@
 ---
 title: Review and manage remediation actions in Microsoft Defender for Office 365
-keywords: AIR, autoIR, Microsoft Defender for Endpoint, automated, investigation, response, remediation, threats, advanced, threat, protection
 f1.keywords:
 - NOCSH
-author: dansimp
-ms.author: dansimp
-manager: dansimp
+author: chrisda
+ms.author: chrisda
+manager: deniseb
 audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: medium
@@ -98,7 +97,7 @@ There are two different ways to reconsider submitted actions:
 
 ## Next steps
 
-- [Use Threat Explorer](threat-explorer-about.md)
+- [Use Threat Explorer](threat-explorer-real-time-detections-about.md)
 - [Admin /Manual Actions](remediate-malicious-email-delivered-office-365.md)
 - [How to report false positives/negatives in automated investigation and response capabilities](air-report-false-positives-negatives.md)
 

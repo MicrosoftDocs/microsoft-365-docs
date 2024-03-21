@@ -2,9 +2,9 @@
 title: Report spam, non-spam, phishing, suspicious emails and files to Microsoft
 f1.keywords: 
   - NOCSH
-ms.author: dansimp
-author: dansimp
-manager: dansimp
+ms.author: chrisda
+author: chrisda
+manager: deniseb
 ms.date: 11/9/2023
 audience: ITPro
 ms.topic: overview
@@ -60,7 +60,7 @@ User reported messages are also available to admins in the following locations i
 
 - The [User-reported messages report](reports-email-security.md#user-reported-messages-report)
 - [Automated investigation and response (AIR) results](air-view-investigation-results.md) (Defender for Office 365 Plan 2)
-- [Threat Explorer](threat-explorer-views.md) (Defender for Office 365 Plan 2)
+- [Threat Explorer](threat-explorer-real-time-detections-about.md) (Defender for Office 365 Plan 2)
 
 In Defender for Office 365 Plan 2, admins can also submit messages from the [Email entity page](mdo-email-entity-page.md#actions-you-can-take-on-the-email-entity-page) and from [Alerts](../defender/investigate-alerts.md) in the Defender portal.
 

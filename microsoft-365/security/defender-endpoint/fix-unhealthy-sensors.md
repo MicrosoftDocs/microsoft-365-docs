@@ -1,15 +1,11 @@
 ---
 title: Fix unhealthy sensors in Microsoft Defender for Endpoint
 description: Fix device sensors that are reporting as misconfigured or inactive so that the service receives data from the device.
-keywords: misconfigured, inactive, fix sensor, sensor health,  no sensor data, sensor data, impaired communications, communication
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -32,7 +28,7 @@ search.appverid: met150
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-fixsensor-abovefoldlink)
 
-Devices can be categorized as misconfigured or inactive are flagged for varying causes. This section provides some explanations as to what might have caused a device to be categorized as inactive or misconfigured.
+Devices can be categorized as misconfigured or inactive are flagged for different reasons. This article provides information about why a device might be categorized as inactive or misconfigured.
 
 ## Inactive devices
 
@@ -40,7 +36,7 @@ An inactive device isn't necessarily flagged because of an issue. The following 
 
 - Device isn't in use
 - Device was reinstalled or renamed
-- Device was offboarded
+- Device was off-boarded
 - Device isn't sending signals
 
 
@@ -51,8 +47,8 @@ Any device that isn't in use for more than seven days retains 'Inactive' status 
 ### Device was reinstalled or renamed
 A new device entity is generated in Microsoft Defender XDR for reinstalled or renamed devices. The previous device entity remains, with an 'Inactive' status in the portal. If you reinstalled a device and deployed the Defender for Endpoint package, search for the new device name to verify that the device is reporting normally.
 
-### Device was offboarded
-If the device was offboarded, it still appears in devices list. After seven days, the device health state should change to inactive.
+### Device was off-boarded
+If the device was off-boarded, it still appears in devices list. After seven days, the device health state should change to inactive.
 
 ### Device isn't sending signals
 If the device isn't sending any signals to any Microsoft Defender for Endpoint channels for more than seven days for any reason, a device can be considered inactive; this includes conditions that fall under misconfigured devices classification.
@@ -92,7 +88,9 @@ Follow theses actions to correct known issues related to a misconfigured device 
 If the devices aren't reporting correctly, you should verify that the Windows diagnostic data service is set to automatically start. Also verify that the Windows diagnostic data service is running on the endpoint.
 
 - [Ensure that Microsoft Defender Antivirus isn't disabled by policy](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)</br>
-If your devices are running a third-party antimalware client, Defender for Endpoint agent requires that the Microsoft Defender Antivirus Early Launch Antimalware (ELAM) driver is enabled.
+If your devices are running a third-party anti-malware client, Defender for Endpoint agent requires that the Microsoft Defender Antivirus Early Launch anti-malware (ELAM) driver is enabled.
+
+- For macOS devices that 'sleep' for more than approximately 48 hours (a weekend), Microsoft Defender for Endpoint on macOS still sends Command and Control (CnC) channel data, but doesn't send any Cyber channel data. After the devices are turned on and used on the first business day, the devices will show up as active.
 
 If you took corrective actions and the device status is still misconfigured, [open a support ticket](https://go.microsoft.com/fwlink/?LinkID=761093&clcid=0x409).
 

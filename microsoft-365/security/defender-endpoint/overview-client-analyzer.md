@@ -1,17 +1,13 @@
 ---
 title:  Troubleshoot sensor health using Microsoft Defender for Endpoint Client Analyzer
 description: Troubleshoot sensor health on devices to identify potential configuration, environment, connectivity, or telemetry issue affecting sensor data or capability.
-keywords: sensor, sensor health, misconfigured, inactive, no sensor data, sensor data, impaired communications, communication
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -20,7 +16,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: ngp
 search.appverid: met150
-ms.date: 03/23/2021
+ms.date: 02/27/2024
 ---
 
 # Troubleshoot sensor health using Microsoft Defender for Endpoint Client Analyzer
@@ -58,6 +54,7 @@ For more information about our privacy statement, see [Microsoft Privacy Stateme
 
 - For Windows devices, if you are running the analyzer directly on specific machines and not remotely via [Live Response](/microsoft-365/security/defender-endpoint/troubleshoot-collect-support-log), then SysInternals [PsExec.exe](/sysinternals/downloads/psexec) should be allowed (at least temporarily) to run. The analyzer calls into PsExec.exe tool to run cloud connectivity checks as Local System and emulate the behavior of the SENSE service.
 
-    > [!NOTE]
-    > On Windows devices, if you use attack surface reduction rule [Block process creations originating from PSExec and WMI commands](attack-surface-reduction-rules-reference.md#block-process-creations-originating-from-psexec-and-wmi-commands), then may want to temporarily disable the rule or [configure an exclusion to the ASR rule](enable-attack-surface-reduction.md#exclude-files-and-folders-from-attack-surface-reduction-rules) to allow the analyzer to run connectivity checks to cloud as expected.
+  > [!NOTE]
+  > On Windows devices, if you use the attack surface reduction rule [Block process creations originating from PSExec and WMI commands](attack-surface-reduction-rules-reference.md#block-process-creations-originating-from-psexec-and-wmi-commands), you might want to temporarily [configure an exclusion to the ASR rule](enable-attack-surface-reduction.md#exclude-files-and-folders-from-attack-surface-reduction-rules). Optionally, you can set the rule to **audit** or you can disable the rule. Making these configurations allows the analyzer to run connectivity checks to cloud without being blocked.
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

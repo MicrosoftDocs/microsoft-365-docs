@@ -1,15 +1,11 @@
 ---
 title: Get IP statistics API
 description: Get the latest stats for your IP using Microsoft Defender for Endpoint.
-keywords: apis, graph api, supported apis, get, ip, statistics, prevalence
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
