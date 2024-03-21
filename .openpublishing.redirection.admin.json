@@ -2149,6 +2149,11 @@
       "source_path": "microsoft-365/admin/add-users/admin-roles-page.md",
       "redirect_url": "/microsoft-365/admin/add-users/assign-admin-roles",
       "redirect_document_id": false
+      },
+      {
+      "source_path": "microsoft-365/admin/misc/account-disabled-error.md",
+      "redirect_url": "/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-outlook-web-app",
+      "redirect_document_id": false
       }      
    ]
  }
