@@ -174,8 +174,8 @@ Device control policies define access (called an entry) for a set of devices. En
 | Notification | None (default) <br/> An event is generated <br/> The user receives notification <br/> File evidence is captured |
 
 >[Warning]
-> The 2024-02 platform release causes inconsistent results for device control customers using removable media policies with disk/device-level access only (masks that are less of equal to 7). The enforcement might not work as expected. 
-> To mitigate this issue, rolling back to the previous version of the Defender platform is recommended.
+> The [February 2024](microsoft-defender-antivirus-updates?view=o365-worldwide#february-2024-engine-11240209--platform-418240207) release causes inconsistent results for device control customers using removable media policies with disk/device-level access only (masks that are less than or equal to 7). The enforcement might not work as expected. 
+> To mitigate this issue, rolling back to the previous version is recommended.
 
 If device control is configured, and a user attempts to use a device that's not allowed, the user gets a notification that contains the name of the device control policy and the name of the device. The notification appears once every hour after initial access is denied.
 
