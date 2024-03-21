@@ -39,7 +39,7 @@ You can experience Copilot for Security’s capability to look up threat intelli
 ## Try your first request
 1. Open any of the pages mentioned previously from the Defender portal navigation bar. The Copilot side pane appears on the right hand side.
 
-   :::image type="content" source="/media/defender-ti-and-copilot/copilot-defender-side-pane.png" alt-text="Screenshot of the Microsoft Defender portal Threat analytics page with the open Microsoft Copilot in Defender side pane highlighted." lightbox="/media/defender-ti-and-copilot/copilot-defender-side-pane.png":::
+   :::image type="content" source="../../media/defender-ti-and-copilot/copilot-defender-side-pane.png" alt-text="Screenshot of the Microsoft Defender portal Threat analytics page with the open Microsoft Copilot in Defender side pane highlighted." lightbox="../../media/defender-ti-and-copilot/copilot-defender-side-pane.png":::
 
    You can also reopen Copilot by selecting  ![Screenshot of the Copilot icon in the Microsoft Defender portal.](media/defender-ti-and-copilot/copilot-defender-icon.png) at the top of the page.
 2. In the Copilot prompt bar, ask about a threat actor, attack campaign, or any other threat intelligence that you want to know more about, then select ![Screenshot of the Send message icon in Copilot in Defender.](media/defender-ti-and-copilot/copilot-defender-arrow.png) or press **Enter**. [See sample prompts for Defender TI](security-copilot-and-defender-threat-intelligence.md#sample-prompts-for-defender-ti)

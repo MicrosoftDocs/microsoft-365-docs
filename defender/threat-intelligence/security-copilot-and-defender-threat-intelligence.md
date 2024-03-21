@@ -20,7 +20,7 @@ Microsoft Copilot for Security is a cloud-based AI platform that provides natura
 
 **Copilot for Security integrates with Microsoft Defender Threat Intelligence**
 
-Copilot for Security delivers information about threat actors, indicators of compromise (IOCs), and tools, as well as contextual threat intelligence from Microsoft Defender Threat Intelligence (Defender TI). You can use the prompts and promptbooks to investigate incidents, enrich your hunting flows with threat intelligence information, or gain more knowledge about your organization's or the global threat landscape. 
+Copilot for Security delivers information about threat actors, indicators of compromise (IOCs), tools, and vulnerabilities, as well as contextual threat intelligence from Microsoft Defender Threat Intelligence (Defender TI). You can use the prompts and promptbooks to investigate incidents, enrich your hunting flows with threat intelligence information, or gain more knowledge about your organization's or the global threat landscape. 
 
 This article introduces you to Copilot and includes sample prompts that can help Defender TI users.
 
@@ -118,7 +118,7 @@ Get contextual information and threat intelligence on Common Vulnerabilities and
 
 ### Provide feedback
 
-Your feedback on the Defender TI integration with Copilot for Security helps with development. To provide feedback, in Copilot, select any of the following buttons at the bottom of each completed prompt:
+Your feedback on the Defender TI integration with Copilot for Security helps with development. To provide feedback, in Copilot, select **How’s this response?** at the bottom of each completed prompt and choose any of the following options:
 - **Looks right** - Select this button if the results are accurate, based on your assessment. 
 - **Needs improvement** - Select this button if any detail in the results is incorrect or incomplete, based on your assessment. 
 - **Inappropriate** - Select this button if the results contain questionable, ambiguous, or potentially harmful information.
