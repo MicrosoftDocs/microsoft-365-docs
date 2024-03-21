@@ -47,6 +47,8 @@ To create a translated version of a document, follow these steps:
 
    ![Screenshot showing the translation confirmation screen.](../media/content-understanding/translation-confirmation.png)
 
+   It can take several minutes for the translated file to be created. When the process is completed, the translated file will appear in the document library.
+
    If you try to submit a duplicate translation request before the file has finished processing, you'll receive a message telling you to wait a few minutes before trying again.
 
    ![Screenshot showing the message to wait a few minutes and trying again.](../media/content-understanding/translation-wait-message.png)
