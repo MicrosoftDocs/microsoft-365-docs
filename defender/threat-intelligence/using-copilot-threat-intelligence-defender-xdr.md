@@ -71,6 +71,8 @@ Copilot in Defender also has the following built-in prompts when accessing the *
 
 :::image type="content" source="../../media/defender-ti-and-copilot/copilot-defender-prompts.png" alt-text="Screenshot of the Microsoft Defender portal Threat analytics page with the built-in prompts in the open Copilot in Defender side pane highlighted." lightbox="../../media/defender-ti-and-copilot/copilot-defender-prompts.png":::
 
+:::image type="content" source="../../media/xdr/incidents-xdr-1.png" alt-text="Screenshot of Incidents page showing the Tags, Status, Assigned to, Classification, and Determination fields." lightbox="../../media/xdr/incidents-xdr-1.png":::
+
 ### Summarize the latest threats related to your organization
 Gathering and digesting threat intelligence data and trends can be a daunting task, especially when they come from multiple data sets and sources. Choose the **Summarize** prompt if you want Copilot to give you an overview of the latest threats in your environment. Copilot lists and summarizes relevant campaigns, activities, and threat actors, and includes links to related threat analytics reports or intel profiles for more information.
 
