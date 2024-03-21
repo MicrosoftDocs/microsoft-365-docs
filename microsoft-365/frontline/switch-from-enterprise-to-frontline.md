@@ -64,7 +64,7 @@ Here's some differences to be aware when using Microsoft 365 for the web. For a 
 
 |Service or feature|Some differences |Learn more|
 |---------|---------|---------|
-|**Word for the web**|<ul><li> Can open and edit macro-enabled documents (.docm) and templates (.dotm) but macros don't run.</li><li>Can open but not edit Information Rights Management (IRM)-protected documents.</li></ul>|<ul><li>[Word for the web service description](/office365/servicedescriptions/office-online-service-description/word-online)</li><li>[Differences between using a document in the browser and in Word](https://support.microsoft.com//office/differences-between-using-a-document-in-the-browser-and-in-word-3e863ce3-e82c-4211-8f97-5b33c36c55f8)</li></ul>|
+|**Word for the web**|<ul><li> Can open and edit macro-enabled documents (.docm) and templates (.dotm) but macros don't run.</li><li>Can open but not edit Information Rights Management (IRM)-protected documents.</li></ul>|<ul><li>[Word for the web service description](/office365/servicedescriptions/office-online-service-description/word-online)</li><li>[Word Features Comparison: Web vs Desktop](https://support.microsoft.com//office/differences-between-using-a-document-in-the-browser-and-in-word-3e863ce3-e82c-4211-8f97-5b33c36c55f8)</li></ul>|
 |**Excel for the web**|<ul><li>Can open and edit macro-enabled workbooks (.xlsm) but macros don't run.</li><li>[File size limitations](https://support.microsoft.com/office/file-size-limits-for-workbooks-in-sharepoint-9e5bc6f8-018f-415a-b890-5452687b325e)<ul><li>To view or interact with a workbook stored in SharePoint Online, the workbook must be less than 100 MB.</li><li>To open a workbook that's attached to an email message in Outlook on the web, the workbook must be less than 10 MB.</li></ul></ul>|<ul><li>[Excel for the web service description](/office365/servicedescriptions/office-online-service-description/excel-online)</li><li>[Differences between using a workbook in the browser and in Excel](https://support.microsoft.com/office/differences-between-using-a-workbook-in-the-browser-and-in-excel-f0dc28ed-b85d-4e1d-be6d-5878005db3b6)</li><li>Most Excel functions work in a browser as they do in Excel. For a list of exceptions, see [Functions in Excel and in Excel for the web](https://support.microsoft.com/office/differences-between-using-a-workbook-in-the-browser-and-in-excel-f0dc28ed-b85d-4e1d-be6d-5878005db3b6#__functions).</li></ul>|
 |**OneNote for the web**|<ul><li>Search is limited to the current section.</li><li>Zoom in and out isn't available. Instead, users can use their browser's zoom feature.</li></ul>|<ul><li>[OneNote for the web service description](/office365/servicedescriptions/office-online-service-description/onenote-online)</li><li>[Differences between using a notebook in the browser and in OneNote](https://support.microsoft.com/office/differences-between-using-a-notebook-in-the-browser-and-in-onenote-a3d1fc13-ac74-456b-b391-b633a62aa83f)</li></ul>|
 |**PowerPoint for the web**|<ul><li>Can open files up to 2 GB.</li><li>Can open and edit macro-enabled presentations (.pptm, .potm, .ppam, .potx, .ppsm) but macros don't run.</li></ul>|<ul><li>[PowerPoint for the web service description](/office365/servicedescriptions/office-online-service-description/powerpoint-online)</li><li>[How certain features behave in web-based PowerPoint](https://support.microsoft.com/office/how-certain-features-behave-in-web-based-powerpoint-a931f0c8-1305-4428-8f7c-9cfa00ef28c5)</li></ul>|
@@ -78,7 +78,7 @@ Your frontline workers can get Word, Excel, and PowerPoint on their mobile devic
 
 To learn more, see [Install and set up Microsoft 365 apps on Android](https://support.microsoft.com/office/install-and-set-up-office-on-an-android-cafe9d6f-8b0c-4b03-b20a-12438a82a22d) and [Install and set up Microsoft 365 apps on an iPhone or iPad](https://support.microsoft.com/office/install-and-set-up-office-on-an-iphone-or-ipad-9df6d10c-7281-4671-8666-6ca8e339b628).
 
-For more information about the features that are available in Microsoft 365 apps on mobile devices, see [What you can do in the Microsoft 365 apps on mobile devices with a Microsoft 365 subscription](https://support.microsoft.com/office/what-you-can-do-in-the-microsoft-365-apps-on-mobile-devices-with-a-microsoft-365-subscription-9ef8b63a-05fd-4f9c-bac5-29da046833ea).
+For more information about the features that are available in Microsoft 365 apps on mobile devices, see [What you can do in Microsoft 365 apps on mobile devices with a Microsoft 365 subscription](https://support.microsoft.com/office/what-you-can-do-in-the-microsoft-365-apps-on-mobile-devices-with-a-microsoft-365-subscription-9ef8b63a-05fd-4f9c-bac5-29da046833ea).
 
 #### Email
 
@@ -124,9 +124,9 @@ F3 and F1 users have 2 GB of OneDrive storage to store and share files. To learn
 
 |Service or feature|Microsoft 365 E3/E5|Microsoft 365 F3|Microsoft 365 F1|
 |---------|---------|---------|---------|
-|OneDrive|1+ TB storage¹&sup1;|2 GB storage|2 GB storage|
+|OneDrive|1+ TB storage&sup1;|2 GB storage|2 GB storage|
 
-&sup1;¹Up to 5 TB of initial OneDrive storage per user based on the [default quota](/sharepoint/set-default-storage-space) of the tenant for subscriptions with more than five users. More storage can be requested.
+&sup1;Up to 5 TB of initial OneDrive storage per user based on the [default quota](/sharepoint/set-default-storage-space) of the tenant for subscriptions with more than five users. More storage can be requested.
 
 #### Content services
 
