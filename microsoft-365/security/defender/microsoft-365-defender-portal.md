@@ -41,6 +41,7 @@ Watch this short video to learn about the Defender portal.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBKau]
 
+[!INCLUDE [unified-soc-preview](../../includes/unified-soc-preview.md)]
 
 ## What to expect
 
