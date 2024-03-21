@@ -19,6 +19,7 @@ ms.collection:
   - m365-security
   - tier1
   - essentials-manage
+  - usx-security
 ms.custom:
   - admindeeplinkDEFENDER
   - intro-overview
