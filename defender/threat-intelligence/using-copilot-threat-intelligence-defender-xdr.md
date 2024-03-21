@@ -39,7 +39,7 @@ You can experience Copilot for Security’s capability to look up threat intelli
 ## Try your first request
 1. Open any of the pages mentioned previously from the Defender portal navigation bar. The Copilot side pane appears on the right hand side.
 
-   :::image type="content" source="../../media/defender-ti-and-copilot/copilot-defender-side-pane.png" alt-text="Screenshot of the Microsoft Defender portal Threat analytics page with the open Microsoft Copilot in Defender side pane highlighted." lightbox="../../media/defender-ti-and-copilot/copilot-defender-side-pane.png":::
+   :::image type="content" source="/defender/threat-intelligence/media/defender-ti-and-copilot/copilot-defender-side-pane.png" alt-text="Screenshot of the Microsoft Defender portal Threat analytics page with the open Microsoft Copilot in Defender side pane highlighted." lightbox="/defender/threat-intelligence/media/defender-ti-and-copilot/copilot-defender-side-pane.png":::
 
    You can also reopen Copilot by selecting  ![Screenshot of the Copilot icon in the Microsoft Defender portal.](media/defender-ti-and-copilot/copilot-defender-icon.png) at the top of the page.
 2. In the Copilot prompt bar, ask about a threat actor, attack campaign, or any other threat intelligence that you want to know more about, then select ![Screenshot of the Send message icon in Copilot in Defender.](media/defender-ti-and-copilot/copilot-defender-arrow.png) or press **Enter**. [See sample prompts for Defender TI](security-copilot-and-defender-threat-intelligence.md#sample-prompts-for-defender-ti)
@@ -69,9 +69,7 @@ Copilot in Defender also has the following built-in prompts when accessing the *
 - [Prioritize](#prioritize-which-threats-to-focus-on)
 - [Ask](#ask-about-the-threat-actors-targeting-the-communications-infrastructure)
 
-:::image type="content" source="../../media/defender-ti-and-copilot/copilot-defender-prompts.png" alt-text="Screenshot of the Microsoft Defender portal Threat analytics page with the built-in prompts in the open Copilot in Defender side pane highlighted." lightbox="../../media/defender-ti-and-copilot/copilot-defender-prompts.png":::
-
-:::image type="content" source="../../media/xdr/incidents-xdr-1.png" alt-text="Screenshot of Incidents page showing the Tags, Status, Assigned to, Classification, and Determination fields." lightbox="../../media/xdr/incidents-xdr-1.png":::
+:::image type="content" source="/defender/threat-intelligence/media/defender-ti-and-copilot/copilot-defender-prompts.png" alt-text="Screenshot of the Microsoft Defender portal Threat analytics page with the built-in prompts in the open Copilot in Defender side pane highlighted." lightbox="/defender/threat-intelligence/media/defender-ti-and-copilot/copilot-defender-prompts.png":::
 
 ### Summarize the latest threats related to your organization
 Gathering and digesting threat intelligence data and trends can be a daunting task, especially when they come from multiple data sets and sources. Choose the **Summarize** prompt if you want Copilot to give you an overview of the latest threats in your environment. Copilot lists and summarizes relevant campaigns, activities, and threat actors, and includes links to related threat analytics reports or intel profiles for more information.
