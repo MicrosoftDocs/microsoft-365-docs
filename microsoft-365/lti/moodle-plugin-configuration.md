@@ -1,8 +1,8 @@
 ---
 title: Set up and configure the Moodle LMS plugins
-ms.author: danismith
-author: DaniEASmith
-manager: serdars
+author: MicrosoftHeidi
+ms.author: heidip
+manager: jacktremper
 ms.reviewer: amitman 
 ms.date: 04/06/2022
 audience: admin
@@ -26,7 +26,7 @@ In this article, you'll learn how to install and configure the Moodle LMS plugin
 Here are the prerequisites to set up an installed Moodle to work with Microsoft Teams:
 
 - Moodle administrator credentials.
-- Azure AD administrator credentials.
+- Microsoft Entra administrator credentials.
 - An Azure subscription where you can create new resources.
 
 ## 1. Install the Microsoft 365 Moodle Plugins
@@ -89,7 +89,7 @@ You must configure the connection between the Microsoft 365 plugins and Microsof
 1. Select the **Download PowerShell Script** button and save it as a ZIP folder to your local computer.
 
     > [!NOTE]
-    > Running the script creates a new Azure AD application in Microsoft 365 tenant, which sets up the required reply URLs and permissions, gives the required permissions, and returns the `AppID` and `Key`.
+    > Running the script creates a new Microsoft Entra application in Microsoft 365 tenant, which sets up the required reply URLs and permissions, gives the required permissions, and returns the `AppID` and `Key`.
     >
     > The PowerShell script only works on Windows operation systems.
 
@@ -112,7 +112,7 @@ You must configure the connection between the Microsoft 365 plugins and Microsof
 1. Execute the PowerShell script:
     1. Enter `./Moodle-AzureAD-Script.ps1`.
     1. When asked, sign in to your Microsoft 365 administrator account in the pop-up window.
-    1. When asked, enter the name of the Azure AD Application, for example, Moodle or Moodle plugins.
+    1. When asked, enter the name of the Microsoft Entra Application, for example, Moodle or Moodle plugins.
     1. When asked, enter the URL for your Moodle server.
     1. When asked, enter the reply URL copied from the OpenID Connect authentication plugin configuration page. This is essentially the URL of your Moodle site, followed by `\auth\oidc\`.
     1. You may be asked to sign in to your Microsoft 365 account again in a pop-up window in the process. This is to provide admin consent to the permissions added to the app for your organization.
@@ -129,26 +129,26 @@ You must configure the connection between the Microsoft 365 plugins and Microsof
 1. In **Choose connection method**, select **Application access**, and then select **Save changes** again.
 1. After the page refreshes, you can see another new section **Admin consent & additional information**.
     1. Select **Provide Admin Consent** link, enter your Microsoft 365 Global Administrator credentials, then **Accept** to grant the permissions.
-    1. Next to the **Azure AD Tenant** field, select the **Detect** button.
+    1. Next to the **Microsoft Entra tenant** field, select the **Detect** button.
     1. Next to the **OneDrive for Business URL**, select the **Detect** button.
     1. After the fields populate, select the **Save changes** button again.
 1. Select the **Update** button to verify the installation. If no error is reported at this stage, it means the Microsoft plugins can communicate with Microsoft server via Microsoft Graph APIs.
 
 ### Configure user and course synchronization
 
-1. Synchronize users between your Moodle server and Azure AD. Depending on your environment, you can select different options during this stage. To get started:
+1. Synchronize users between your Moodle server and Microsoft Entra ID. Depending on your environment, you can select different options during this stage. To get started:
     1. From the Microsoft 365 Integration configuration page, select the **Sync Settings** tab.
 
-    1. In the **Sync users with Azure AD** setting, select the checkboxes that apply to your environment. You must select the following options:  
-        ✔ Create accounts in Moodle for users in Azure AD.
-        ✔ Update all accounts in Moodle for users in Azure AD.
+    1. In the **Sync users with Microsoft Entra ID** setting, select the checkboxes that apply to your environment. You must select the following options:  
+        ✔ Create accounts in Moodle for users in Microsoft Entra ID.
+        ✔ Update all accounts in Moodle for users in Microsoft Entra ID.
 
-    1. In the **User Creation Restriction** section, you can set up a filter to limit the Azure AD users that are synced to Moodle.
+    1. In the **User Creation Restriction** section, you can set up a filter to limit the Microsoft Entra users that are synced to Moodle.
 
     > [!NOTE]
     > It's not required to turn on user sync; however, it will make connecting Moodle users with Microsoft 365 accounts much easier.
     >
-    > User sync is performed by running the **Sync users with Azure AD** scheduled task.
+    > User sync is performed by running the **Sync users with Microsoft Entra ID** scheduled task.
 
 1. In the **Course Sync** section, you can select **Course sync customization** option to turn on the automatic creation of Teams for some or all of your existing Moodle courses.
 
@@ -159,8 +159,8 @@ You must configure the connection between the Microsoft 365 plugins and Microsof
 
 1. To validate sync configuration, you'll need to run the scheduled tasks manually for the first time, navigate to **Site administration** > **Server** > **Tasks** > **Scheduled tasks**.
 
-    1. Scroll down and find the task **Sync users with Azure AD** and select **Run now**.
-        1. This will sync Azure AD users to your Moodle site according to the user sync options.
+    1. Scroll down and find the task **Sync users with Microsoft Entra ID** and select **Run now**.
+        1. This will sync Microsoft Entra users to your Moodle site according to the user sync options.
     1. Next, find the **Sync Moodle courses to Microsoft Teams** task and select **Run now**.
         1. This task will create Groups for all Moodle courses with sync option turn on, and also Teams if a **Team owner** can be found in the course.
         1. The task will also sync Moodle users enrolled in the course to Teams as owners or members.
@@ -175,9 +175,9 @@ You must configure the connection between the Microsoft 365 plugins and Microsof
             1. The default *Teacher* role has the `local/o365:teamowner` capability, and the default *Student* role has the `local/o365:teammember` capability.
 
 > [!NOTE]
-> The scheduled tasks are triggered by [Moodle Cron](https://docs.moodle.org/400/en/Cron), which needs to be configured to run frequently. Each scheduled task can have a default schedule, which can be customized.
+> The scheduled tasks are triggered by [Moodle Cron](https://docs.moodle.org/403/en/Cron), which needs to be configured to run frequently. Each scheduled task can have a default schedule, which can be customized.
 >
-> - The default schedule of the **Sync users with Azure AD** task is every minute.
+> - The default schedule of the **Sync users with Microsoft Entra ID** task is every minute.
 > - The default schedule of the **Sync Moodle courses to Microsoft Teams** task is daily at 1am in the Moodle server default time zone.
 
 After the plugins are installed and configured, you can:
@@ -190,4 +190,4 @@ After the plugins are installed and configured, you can:
 
 If you would like to review Moodle's Microsoft 365 integration guides and release notes, see these resources:
 
-- [Microsoft 365 integration documentation on Moodle Docs](https://docs.moodle.org/400/en/Microsoft_365).
+- [Microsoft 365 integration documentation on Moodle Docs](https://docs.moodle.org/403/en/Microsoft_365).

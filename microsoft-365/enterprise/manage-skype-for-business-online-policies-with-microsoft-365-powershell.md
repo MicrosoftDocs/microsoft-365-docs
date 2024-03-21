@@ -45,7 +45,7 @@ Use these instructions to get set up to run the commands (skip the steps you hav
     
 ## Manage user account policies
 
-Many Skype for Business Online user account properties are configured by using policies. Policies are simply collections of settings that can be applied to one or more users. To take a look at how the a policy has been configured, you can run this example command for the FederationAndPICDefault policy:
+Many Skype for Business Online user account properties are configured by using policies. Policies are simply collections of settings that can be applied to one or more users. To take a look at how a policy has been configured, you can run this example command for the FederationAndPICDefault policy:
   
 ```powershell
 Get-CsExternalAccessPolicy -Identity "FederationAndPICDefault"
@@ -115,7 +115,7 @@ The ApplicableTo parameter limits the returned data to policies that can be assi
   
 In some cases, properties of policies are not used with Microsoft 365, while others can only be managed by Microsoft support personnel. 
   
-With Skype for Business Online, users must be managed by a policy of some kind. If a valid policy-related property is blank, that means that the user in question is being managed by a global policy, which is a policy that is automatically applied to a user unless he or she is specifically assigned a per-user policy. Because we don't see a client policy listed for a user account, it is managed by the global policy. You can determine the global client policy with this command:
+With Skype for Business Online, users must be managed by a policy of some kind. If a valid policy-related property is blank, that means that the user in question is being managed by a global policy, which is a policy that is automatically applied to a user unless they are specifically assigned a per-user policy. Because we don't see a client policy listed for a user account, it is managed by the global policy. You can determine the global client policy with this command:
   
 ```powershell
 Get-CsClientPolicy -Identity "Global"

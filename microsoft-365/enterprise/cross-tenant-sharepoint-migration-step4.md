@@ -1,13 +1,13 @@
 ---
 title: SharePoint Cross-tenant SharePoint migration Step 4 (preview)
-ms.author: jhendr
-author: JoanneHendrickson
-manager: serdars
+ms.author: heidip
+author: MicrosoftHeidi
+manager: jtremper
+ms.date: 10/13/2023
 recommendations: true
 audience: ITPro
 ms.topic: article
-ms.service: sharepoint-online
-ms.subservice: sharepoint-migration
+ms.service: microsoft-365-migration
 ms.localizationpriority: high
 ms.collection: 
 - SPMigration

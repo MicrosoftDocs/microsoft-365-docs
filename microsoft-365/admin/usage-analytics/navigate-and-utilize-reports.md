@@ -39,7 +39,7 @@ To get started with your reports, here are some tips:
 
     ![Shows the navigation tabs at the top of each report.](../../media/navigate-usage-analytics2.png)
 
-- Many reports contain a slicer where you can filter on the product, AAD attribute, or activity that you want to view. These can be either single-select or multi-select.
+- Many reports contain a slicer where you can filter on the product, Microsoft Entra attribute, or activity that you want to view. These can be either single-select or multi-select.
 
     ![Shows a slicer.](../../media/navigate-usage-analytics3.png)
 

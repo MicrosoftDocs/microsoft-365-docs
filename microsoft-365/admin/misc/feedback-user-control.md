@@ -24,7 +24,7 @@ description: "Learn about feedback your users can send to Microsoft about Micros
 User feedback is a critical signal for Microsoft to understand user experiences with Microsoft products. Microsoft values our users’ opinions. User feedback goes directly to our engineers and helps us shape the future of Microsoft products and services for all our users.  
 In this topic, you'll find information on what types of feedback exist, how we collect it, what we collect and how we handle the data.
 
-As an admin, you can manage the feedback signal for your organization. We’re introducing a new set of policy settings to help you manage user feedback collection within the Microsoft 365 applications for your organization. These policy settings will help you target Azure Active Directory groups and configure the feedback collection experience for your organization. User feedback goes directly to our engineers and helps us shape the future of Microsoft products and services for all our users. You can learn more about these policy settings, which applications they apply to, and best practices at [Manage Microsoft feedback for your organization](../manage/manage-feedback-ms-org.md).
+As an admin, you can manage the feedback signal for your organization. We’re introducing a new set of policy settings to help you manage user feedback collection within the Microsoft 365 applications for your organization. These policy settings will help you target Microsoft Entra groups and configure the feedback collection experience for your organization. User feedback goes directly to our engineers and helps us shape the future of Microsoft products and services for all our users. You can learn more about these policy settings, which applications they apply to, and best practices at [Manage Microsoft feedback for your organization](../manage/manage-feedback-ms-org.md).
 
 ## Feedback types
 
@@ -71,7 +71,7 @@ When a user submits feedback, app information is usually collected along with ap
 - **Comments**   User submitted comments in the original language.
 - **App**   Microsoft product we got the feedback from.
 - **Date Submitted**   Date and time we got the feedback.
-- **User Id**   Azure Active directory Id or email address of the authenticated user submitting the feedback. Anonymous feedback is allowed but not shown in this view.
+- **User Id**   Microsoft Entra ID or email address of the authenticated user submitting the feedback. Anonymous feedback is allowed but not shown in this view.
 - **User Email**   If the user is ok with providing their email address for follow-up.
 - **Language or Comment Language**   Original language the comment was submitted in.
 - **Feedback Type**   Survey feedback or in-app feedback.
@@ -81,7 +81,7 @@ When a user submits feedback, app information is usually collected along with ap
 - **App Build**   Build number of Microsoft product that was captured on submission.
 - **App Language**   Language of Microsoft product that was captured on submission.
 - **Attachments**   Were any attachments (i.e screenshots, files) collected as part of the feedback? (Yes/No).
-- **TenantId**   If feedback is submitted from an Azure Active Directory account, which TenantId was associated.
+- **TenantId**   If feedback is submitted from a Microsoft Entra account, which TenantId was associated.
 - **App module** Information about app modules that may have caused a recent crash, where applicable.
 - **Optional Diagnostic data** If you are opted in, this data will be included with the feedback. [Learn more](/deployoffice/privacy/optional-diagnostic-data).
 

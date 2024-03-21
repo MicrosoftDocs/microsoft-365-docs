@@ -1,11 +1,11 @@
 ---
 title: Onboard Windows devices to Microsoft Defender for Endpoint via Group Policy
 description: Use Group Policy to deploy the configuration package on Windows devices so that they are onboarded to the service.
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -13,13 +13,13 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.date: 09/15/2023
-ms.subservice: mde
+ms.subservice: onboard
 search.appverid: met150
 ---
 
 # Onboard Windows devices using Group Policy 
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -28,7 +28,7 @@ search.appverid: met150
 - Group Policy
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointsgp-abovefoldlink)
 
@@ -42,7 +42,7 @@ search.appverid: met150
 
 Check out [Identify Defender for Endpoint architecture and deployment method](deployment-strategy.md) to see the various paths in deploying Defender for Endpoint.
 
-1. Open the GP configuration package file (`WindowsDefenderATPOnboardingPackage.zip`) that you downloaded from the service onboarding wizard. You can also get the package from the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>:
+1. Open the GP configuration package file (`WindowsDefenderATPOnboardingPackage.zip`) that you downloaded from the service onboarding wizard. You can also get the package from the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a>:
 
     1. In the navigation pane, select **Settings** > **Endpoints** > **Device management**  > **Onboarding**.
 
@@ -79,7 +79,7 @@ Check out [Identify Defender for Endpoint architecture and deployment method](de
 
 ## Additional Defender for Endpoint configuration settings
 
-For each device, you can state whether samples can be collected from the device when a request is made through Microsoft 365 Defender to submit a file for deep analysis.
+For each device, you can state whether samples can be collected from the device when a request is made through Microsoft Defender XDR to submit a file for deep analysis.
 
 You can use Group Policy (GP) to configure settings, such as settings for the sample sharing used in the deep analysis feature.
 
@@ -180,7 +180,7 @@ Get the current list of attack surface reduction rules GUIDs from [Attack surfac
 
    This will set each up for audit only.
 
-   :::image type="content" source="images/asr-guid.png" alt-text="The Attack surface reduction configuration" lightbox="images/asr-guid.png":::
+   :::image type="content" source="media/asr-guid.png" alt-text="The Attack surface reduction configuration" lightbox="media/asr-guid.png":::
 
 Policy|Location|Setting
 ---|---|---
@@ -197,7 +197,7 @@ For security reasons, the package used to Offboard devices will expire 30 days a
 > [!NOTE]
 > Onboarding and offboarding policies must not be deployed on the same device at the same time, otherwise this will cause unpredictable collisions.
 
-1. Get the offboarding package from the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>:
+1. Get the offboarding package from the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a>:
 
     1. In the navigation pane, select **Settings** > **Endpoints** > **Device management** > **Offboarding**.
 
@@ -234,7 +234,7 @@ With Group Policy there isn't an option to monitor deployment of policies on the
 
 ## Monitor devices using the portal
 
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a>.
 2. Click **Devices inventory**.
 3. Verify that devices are appearing.
 
@@ -255,7 +255,7 @@ Create a new Group Policy or group these settings in with the other policies. Th
 
     :::image type="content" source="images/removal-items-quarantine1.png" alt-text="Removal items quarantine folder" lightbox="images/removal-items-quarantine1.png":::
 
-    :::image type="content" source="images/config-removal-items-quarantine2.png" alt-text="config-removal quarantine" lightbox="images/config-removal-items-quarantine2.png":::
+    :::image type="content" source="media/config-removal-items-quarantine2.png" alt-text="config-removal quarantine" lightbox="media/config-removal-items-quarantine2.png":::
 
 4. In the Scan folder, configure the scan settings.
 
@@ -265,25 +265,25 @@ Create a new Group Policy or group these settings in with the other policies. Th
 
 Browse to **Computer Configuration** \> **Policies** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **Real-time Protection**.
 
-:::image type="content" source="images/config-monitor-incoming-outgoing-file-act.png" alt-text="Configure monitoring for incoming outgoing file activity" lightbox="images/config-monitor-incoming-outgoing-file-act.png":::
+:::image type="content" source="media/config-monitor-incoming-outgoing-file-act.png" alt-text="Configure monitoring for incoming outgoing file activity" lightbox="media/config-monitor-incoming-outgoing-file-act.png":::
 
 ### Configure Windows Defender SmartScreen settings
 
 1. Browse to **Computer Configuration** \> **Policies** \> **Administrative Templates** \> **Windows Components** \> **Windows Defender SmartScreen** \> **Explorer**.
 
-   :::image type="content" source="images/config-windows-def-smartscr-explorer.png" alt-text="Configure windows defender smart screen explorer" lightbox="images/config-windows-def-smartscr-explorer.png":::
+   :::image type="content" source="media/config-windows-def-smartscr-explorer.png" alt-text="Configure windows defender smart screen explorer" lightbox="media/config-windows-def-smartscr-explorer.png":::
  
 2. Browse to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Windows Defender SmartScreen** > **Microsoft Edge**.
 
-    :::image type="content" source="images/configure-windows-defender-smartscreen.png" alt-text="Configure windows defender smart screen on Microsoft Edge" lightbox="images/configure-windows-defender-smartscreen.png":::
+    :::image type="content" source="media/configure-windows-defender-smartscreen.png" alt-text="Configure windows defender smart screen on Microsoft Edge" lightbox="media/configure-windows-defender-smartscreen.png":::
 
 ### Configure Potentially Unwanted Applications
 
 Browse to **Computer Configuration** \> **Policies** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus**.
 
-:::image type="content" source="images/config-potential-unwanted-apps.png" alt-text="Config potential unwanted app" lightbox="images/config-potential-unwanted-apps.png":::
+:::image type="content" source="media/config-potential-unwanted-apps.png" alt-text="Config potential unwanted app" lightbox="media/config-potential-unwanted-apps.png":::
 
-:::image type="content" source="images/config-potential-unwanted-apps2.png" alt-text="config potential" lightbox="images/config-potential-unwanted-apps2.png":::
+:::image type="content" source="media/config-potential-unwanted-apps2.png" alt-text="config potential" lightbox="media/config-potential-unwanted-apps2.png":::
 
 ### Configure Cloud Deliver Protection and send samples automatically
 
@@ -316,9 +316,9 @@ Browse to **Computer Configuration** \> **Policies** \> **Administrative Templat
 Browse to **Computer Configuration** \> **Policies** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **MpEngine**.
 When you configure cloud protection level policy to **Default Microsoft Defender Antivirus blocking policy** this will disable the policy. This is what is required to set the protection level to the windows default.
 
-:::image type="content" source="images/config-extended-cloud-check.png" alt-text="config extended cloud check" lightbox="images/config-extended-cloud-check.png":::
+:::image type="content" source="media/config-extended-cloud-check.png" alt-text="config extended cloud check" lightbox="media/config-extended-cloud-check.png":::
 
-:::image type="content" source="images/cloud-protection-level.png" alt-text="config cloud protection level" lightbox="images/cloud-protection-level.png":::
+:::image type="content" source="media/cloud-protection-level.png" alt-text="config cloud protection level" lightbox="media/cloud-protection-level.png":::
 
 ## Related topics
 - [Onboard Windows devices using Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)

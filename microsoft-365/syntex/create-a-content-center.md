@@ -2,7 +2,7 @@
 title: Create a content center in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: ssquires
 ms.date: 07/06/2023
 audience: admin
@@ -13,7 +13,6 @@ ms.custom: admindeeplinkSPO
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
-    - essentials-how-to
 ms.localizationpriority:  medium
 description: Learn how to create a content center in Microsoft Syntex.
 ---
@@ -22,11 +21,11 @@ description: Learn how to create a content center in Microsoft Syntex.
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
-</br>
+<!---</br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CPSF]
 
-</br>
+</br>--->
 
 To create and manage enterprise models, you first need a content center. The content center is the model creation interface and also contains information about which document libraries published models have been applied to.
 

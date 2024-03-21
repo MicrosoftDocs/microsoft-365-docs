@@ -4,7 +4,7 @@ f1.keywords:
   - NOCSH
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 audience: Admin
 ms.topic: conceptual
 ms.localizationpriority: medium
@@ -22,7 +22,7 @@ ms.subservice: mdo
 ms.service: microsoft-365-security
 ms.date: 6/15/2023
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
 ---
 
 # Migrate to Microsoft Defender for Office 365 - Phase 2: Setup
@@ -95,7 +95,7 @@ If you're using some other mechanism to override the Microsoft filtering stack (
 
 The SCL=-1 mail flow rule is important during the migration for the following reasons:
 
-- You can use [Threat Explorer](email-security-in-microsoft-defender.md) to see which features in the Microsoft stack *would have* acted on messages without affecting the results from your existing protection service.
+- You can use [Threat Explorer (Explorer)](threat-explorer-real-time-detections-about.md) to see which features in the Microsoft stack *would have* acted on messages without affecting the results from your existing protection service.
 - You can gradually adjust who is protected by the Microsoft 365 filtering stack by configuring exceptions to the SCL=-1 mail flow rule. The exceptions are the members of the pilot distribution groups that we recommend later in this article.
 
   Before or during the cutover of your MX record to Microsoft 365, you disable this rule to turn on the full protection of the Microsoft 365 protection stack for all recipients in your organization.
@@ -117,7 +117,7 @@ For more information, see [Use mail flow rules to set the spam confidence level 
 
 The first thing to do is configure [Enhanced Filtering for Connectors](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) (also known as *skip listing*) on the connector that's used for mail flow from your existing protection service into Microsoft 365. You can use the [Inbound messages report](/exchange/monitoring/mail-flow-reports/mfr-inbound-messages-and-outbound-messages-reports) to help identify the connector.
 
-Enhanced Filtering for Connectors is required by Defender for Office 365 to see where internet messages actually came from. Enhanced Filtering for Connectors greatly improves the accuracy of the Microsoft filtering stack (especially [spoof intelligence](anti-phishing-protection-spoofing-about.md), and post-breach capabilities in [Threat Explorer](threat-explorer-about.md) and [Automated Investigation & Response (AIR)](air-about-office.md).
+Enhanced Filtering for Connectors is required by Defender for Office 365 to see where internet messages actually came from. Enhanced Filtering for Connectors greatly improves the accuracy of the Microsoft filtering stack (especially [spoof intelligence](anti-phishing-protection-spoofing-about.md), and post-breach capabilities in [Threat Explorer](threat-explorer-real-time-detections-about.md) and [Automated Investigation & Response (AIR)](air-about-office.md).
 
 To correctly enable Enhanced Filtering for Connectors, you need to add the **public** IP addresses of \*\***all\*\*** third-party services and/or on-premises email system hosts that route inbound mail to Microsoft 365.
 
@@ -128,7 +128,7 @@ To confirm that Enhanced Filtering for Connectors is working, verify that incomi
 
 ## Step 5: Create pilot protection policies
 
-By creating production policies, even if they aren't applied to all users, you can test post-breach features like [Threat Explorer](threat-explorer-about.md) and test integrating Defender for Office 365 into your security response team's processes.
+By creating production policies, even if they aren't applied to all users, you can test post-breach features like [Threat Explorer](threat-explorer-real-time-detections-about.md) and test integrating Defender for Office 365 into your security response team's processes.
 
 > [!IMPORTANT]
 > Policies can be scoped to users, groups, or domains. We do not recommend mixing all three in one policy, as only users that match all three will fall inside the scope of the policy. For pilot policies, we recommend using groups or users. For production policies, we recommend using domains. It's extremely important to understand that **only** the user's primary email domain determines if the user falls inside the scope of the policy. So, if you switch the MX record for a user's secondary domain, make sure that their primary domain is also covered by a policy.

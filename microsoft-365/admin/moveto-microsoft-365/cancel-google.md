@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: twerner
 author: twernermsft
 manager: scotv
-ms.date: 01/07/2021
+ms.date: 10/31/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -33,7 +33,7 @@ description: "Learn how to cancel Google Workspace subscription but keep your do
 Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
 1. Sign in to [Google Admin](https://admin.google.com/) and go to **Billing**.
-1. In the **Subscriptions** list,choose your G Suite subscription, **Cancel subscription**, and then choose **Continue**.
+1. In the **Subscriptions** list,choose your G Suite subscription, select **More**, select **Cancel subscription**, and on the next page select **Cancel subscription** again to confirm.
 
     > [!IMPORTANT]
     > your subscription will be cancelled immediately and you cannot undo this action.

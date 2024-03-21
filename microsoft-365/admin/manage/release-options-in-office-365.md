@@ -40,12 +40,12 @@ With Microsoft 365, you receive new product updates and features as they become 
 
 Any new release is first tested and validated by the feature team, then by the entire Microsoft 365 feature team, followed by all of Microsoft. After internal testing and validation, the next step is a **Targeted release** (formerly known as First release) to customers who opt in. At each release ring, Microsoft collects feedback and further validates quality by monitoring key usage metrics. This series of progressive validation is in place to make sure the worldwide-release is as robust as possible. The releases are pictured in the following figure.
 
-![Release management validation rings for Microsoft 365.](../../media\Rings_Of_Progression.png)
+![Release management validation rings for Microsoft 365.](../../media/Rings_Of_Progression.png)
 
 For significant updates, customers are initially notified by the [Microsoft 365 Roadmap](https://products.office.com/business/office-365-roadmap). As an update gets closer to rolling out, it is communicated through your [Microsoft 365 Message center](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter).
 
 > [!NOTE]
-> You need a Microsoft 365 or Azure AD account to access your Message center through the [admin center](/office365/admin/admin-overview/admin-center-overview). Microsoft 365 home plan users don't have an admin center.
+> You need a Microsoft 365 or Microsoft Entra account to access your Message center through the [admin center](../admin-overview/admin-center-overview.md). Microsoft 365 home plan users don't have an admin center.
 
 ## Standard release
 

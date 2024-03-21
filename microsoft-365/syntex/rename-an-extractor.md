@@ -2,10 +2,10 @@
 title: Rename an extractor in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 audience: admin
 ms.reviewer: ssquires
-ms.date: 12/18/2022
+ms.date: 11/20/2023
 ms.topic: conceptual
 ms.service: microsoft-syntex
 search.appverid: 

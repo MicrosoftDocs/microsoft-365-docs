@@ -1,16 +1,12 @@
 ---
 title: Batch Update alert entities API
 description: Learn how to update Microsoft Defender for Endpoint alerts in a batch by using this API. You can update the status, determination, classification, and assignedTo properties.
-keywords: apis, graph api, supported apis, get, alert, information, id
-ms.service: microsoft-365-security
-ms.subservice: mde
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.service: defender-endpoint
+ms.subservice: reference
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security
@@ -24,7 +20,7 @@ ms.date: 03/15/2021
 
 # Batch update alerts
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../../includes/microsoft-defender.md)]
 
 
 **Applies to:**

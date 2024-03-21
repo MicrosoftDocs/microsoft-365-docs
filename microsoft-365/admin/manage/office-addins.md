@@ -30,7 +30,7 @@ An Office add-in can be used on Word, Excel, PowerPoint, and Outlook. These add-
 
 ## Before you begin
 
-Management and deployment via Integrated Apps require that the users are using Microsoft 365 Business licenses (Business Basic, Business Standard, Business Premium), Office 365 Enterprise licenses (E1/E3/E5/F3), or Microsoft 365 Enterprise licenses (E3/E5/F3). The users also need to be signed into Office using their organizational ID and have Exchange Online and active Exchange Online mailboxes. Your subscription directory must either be in or federated to Azure Active Directory.
+Management and deployment via Integrated Apps require that the users are using Microsoft 365 Business licenses (Business Basic, Business Standard, Business Premium), Office 365 Enterprise licenses (E1/E3/E5/F3), or Microsoft 365 Enterprise licenses (E3/E5/F3). The users also need to be signed into Office using their organizational ID and have Exchange Online and active Exchange Online mailboxes. Your subscription directory must either be in or federated to Microsoft Entra ID.
 
 ### Office Requirements
 
@@ -75,7 +75,7 @@ As an admin, you can manage Office add-ins in your organization as follows:
 Office Add-ins help you personalize your documents and streamline the way you access information on the web (see Start using your Office Add-in). Add-ins provide the following benefits:
 
 - When the relevant Office application starts, the add-in automatically downloads. If the add-in supports add-in commands, the add-in automatically appears in the ribbon within the Office application.
-- Add-ins no longer appear for users if the admin turns off or deletes the add-in. Also if the user is removed from Azure Active Directory or from a group that the add-in is assigned to. Learn how to perform these actions in the following section.
+- Add-ins no longer appear for users if the admin turns off or deletes the add-in. Also if the user is removed from Microsoft Entra ID or from a group that the add-in is assigned to. Learn how to perform these actions in the following section.
 
 Add-ins are supported in three desktop platforms: Windows, Mac, and Online Office apps. It's also supported in iOS and Android (Outlook Mobile Add-ins Only).
 
@@ -174,9 +174,22 @@ Managing how users can install and use Office add-ins means that you decide who 
 1. To manage users’ ability to self-install and use Office add-ins from the Word, Excel and PowerPoint stores, visit the Microsoft 365 Admin Center.
 2. Choose **Settings** and the select **Org Settings**.
 3. Scroll down and select **User owned apps and services**.
-4. Make changes to the checkbox **Let users access the Office Store**.
-    - Activating the checkbox turns on access to all Word, Excel and PowerPoint add-ins for all users in your organization.
-    - Deactivating the checkbox turns off access to all Word, Excel and PowerPoint add-ins for all users in your organization.
+4. Check or clear the option to allow or prevent users to access all Word, Excel, and PowerPoint add-ins.
+
+Options available in non-educational tenants:
+    
+   ![Let user access office store settings](../../media/user-owned-apps-and-services.png)
+   
+Options available in educational tenants:
+
+   ![Let user access office store settings for EDU](../../media/user-owned-apps-and-services-edu.png)
+
+The user’s license information is used to define whether a user is a faculty/staff or a student along with the Age Group property to check whether the student is an adult or not.  
+
+> [!NOTE]
+> For more information see:  
+>- [Learn how to review the user's license type and assign or unassign licenses as required](assign-licenses-to-users.md)
+>- [Understand how to configure the Age Group property in the Microsoft Encarta admin center](/entra/fundamentals/how-to-manage-user-profile-info)
 
 > [!NOTE]
 > This setting does not impact any deployed Office add-ins on Word, Excel, and PowerPoint. You can continue to deploy Office add-ins to users in your organization, even if the above setting is turned off.
@@ -197,8 +210,7 @@ Managing how users can install and use Office add-ins means that you decide who 
 > [!NOTE]
 > This setting does not impact any deployed Office add-ins on Outlook. You can continue to deploy Office add-ins on Outlook to users in your organization, even if the above setting is turned off.
 
-Microsoft is now partnering with leading developers to create unified apps that work across Outlook, Word, Excel, PowerPoint, Teams and the Microsoft 365 App (formerly known as Office.com). Any settings made for Office Add-ins will continue to be honored as long as they stay as add-ins. When Office add-ins upgrade to work across different Microsoft applications, you can learn to manage them from here. For more information, see [Controls for managing Teams apps that work on Outlook and Microsoft 365](/manage/teams-apps-work-on-outlook-and-m365#controls-for-managing-teams-apps-that-work-on-outlook-and-the-microsoft-365-app).
-
+Microsoft is now partnering with leading developers to create unified apps that work across Outlook, Word, Excel, PowerPoint, Teams and the Microsoft 365 App (formerly known as Office.com). Any settings made for Office Add-ins will continue to be honored as long as they stay as add-ins. When Office add-ins upgrade to work across different Microsoft applications, you can learn to manage them from here. For more information, see [Controls for managing Teams apps that work on Outlook and Microsoft 365](/microsoft-365/admin/manage/teams-apps-work-on-outlook-and-m365#controls-for-managing-teams-apps-that-work-on-outlook-and-the-microsoft-365-app).
 
 ## Upload Custom Office Add-ins in your organization  
 

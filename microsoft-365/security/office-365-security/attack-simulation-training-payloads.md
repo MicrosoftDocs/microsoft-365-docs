@@ -2,7 +2,7 @@
 title: Payloads in Attack simulation training
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.topic: how-to
 ms.service: microsoft-365-security
@@ -16,7 +16,7 @@ ms.subservice: mdo
 search.appverid: met150
 ms.date: 6/14/2023
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview" target="_blank">Microsoft Defender for Office 365 plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison" target="_blank">Microsoft Defender for Office 365 plan 2</a>
 ---
 
 # Payloads in Attack simulation training
@@ -27,7 +27,7 @@ In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Offi
 
 For getting started information about Attack simulation training, see [Get started using Attack simulation training](attack-simulation-training-get-started.md).
 
-To see the available payloads, open the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Content library** tab \> and then select **Payloads**. To go directly to the **Content library** tab where you can select **Payloads**, use <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>.
+To see the available payloads, open the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Content library** tab \> and then select **Payloads**. To go directly to the **Content library** tab where you can select **Payloads**, use <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>.
 
 **Payloads** in the **Content library** tab has three tabs:
 
@@ -118,11 +118,11 @@ To see payloads that have been archived (the **Status** value is **Archive**), u
 > [!NOTE]
 > Certain trademarks, logos, symbols, insignias and other source identifiers receive heightened protection under local, state and federal statutes and laws. Unauthorized use of such indicators can subject the users to penalties, including criminal fines. Though not an extensive list, this includes the Presidential, Vice Presidential, and Congressional seals, the CIA, the FBI, Social Security, Medicare and Medicaid, the United States Internal Revenue Service, and the Olympics. Beyond these categories of trademarks, use and modification of any third-party trademark carries an inherent amount of risk. Using your own trademarks and logos in a payload would be less risky, particularly where your organization permits the use. If you have any further questions about what is or is not appropriate to use when creating or configuring a payload, you should consult with your legal advisors.
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Content library** tab \> **Payloads** \> **Tenant payloads** tab. To go directly to the **Content library** tab where you can select **Payloads** and the **Tenant payloads** tab, use <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>.
+1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Content library** tab \> **Payloads** \> **Tenant payloads** tab. To go directly to the **Content library** tab where you can select **Payloads** and the **Tenant payloads** tab, use <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>.
 
    On the **Tenant payloads** tab, select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Create a payload** to start the new payload wizard.
 
-   :::image type="content" source="../../media/attack-sim-training-payload-create.png" alt-text="Create a payload on the Tenant payloads tab in Payloads in Attack simulation training in the Microsoft 365 Defender portal." lightbox="../../media/attack-sim-training-payload-create.png":::
+   :::image type="content" source="../../media/attack-sim-training-payload-create.png" alt-text="Create a payload on the Tenant payloads tab in Payloads in Attack simulation training in the Microsoft Defender portal." lightbox="../../media/attack-sim-training-payload-create.png":::
 
    > [!NOTE]
    > At any point after you name the payload during the new payload wizard, you can select **Save and close** to save your progress and continue later. The incomplete payload has the **Status** value **Draft**. You can pick up where you left off by selecting the payload and then clicking the :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png" border="false"::: **Edit payload** action that appears.
@@ -173,30 +173,52 @@ To see payloads that have been archived (the **Status** value is **Archive**), u
 
      Select one of the available URL values:
 
-     - <https://www.mcsharepoint.com>
-     - <https://www.attemplate.com>
-     - <https://www.doctricant.com>
-     - <https://www.mesharepoint.com>
-     - <https://www.officence.com>
-     - <https://www.officenced.com>
-     - <https://www.officences.com>
-     - <https://www.officentry.com>
-     - <https://www.officested.com>
-     - <https://www.prizegives.com>
-     - <https://www.prizemons.com>
-     - <https://www.prizewel.com>
-     - <https://www.prizewings.com>
-     - <https://www.shareholds.com>
-     - <https://www.sharepointen.com>
-     - <https://www.sharepointin.com>
-     - <https://www.sharepointle.com>
-     - <https://www.sharesbyte.com>
-     - <https://www.sharession.com>
-     - <https://www.sharestion.com>
-     - <https://www.templateau.com>
-     - <https://www.templatent.com>
-     - <https://www.templatern.com>
-     - <https://www.windocyte.com>
+     |&nbsp;|&nbsp;|&nbsp;|
+     |---|---|---|
+     |<https://www.attemplate.com>|<https://www.exportants.it>|<https://www.resetts.it>|
+     |<https://www.bankmenia.com>|<https://www.exportants.org>|<https://www.resetts.org>|
+     |<https://www.bankmenia.de>|<https://www.financerta.com>|<https://www.salarytoolint.com>|
+     |<https://www.bankmenia.es>|<https://www.financerta.de>|<https://www.salarytoolint.net>|
+     |<https://www.bankmenia.fr>|<https://www.financerta.es>|<https://www.securembly.com>|
+     |<https://www.bankmenia.it>|<https://www.financerta.fr>|<https://www.securembly.de>|
+     |<https://www.bankmenia.org>|<https://www.financerta.it>|<https://www.securembly.es>|
+     |<https://www.banknown.de>|<https://www.financerta.org>|<https://www.securembly.fr>|
+     |<https://www.banknown.es>|<https://www.financerts.com>|<https://www.securembly.it>|
+     |<https://www.banknown.fr>|<https://www.financerts.de>|<https://www.securembly.org>|
+     |<https://www.banknown.it>|<https://www.financerts.es>|<https://www.securetta.de>|
+     |<https://www.banknown.org>|<https://www.financerts.fr>|<https://www.securetta.es>|
+     |<https://www.browsersch.com>|<https://www.financerts.it>|<https://www.securetta.fr>|
+     |<https://www.browsersch.de>|<https://www.financerts.org>|<https://www.securetta.it>|
+     |<https://www.browsersch.es>|<https://www.hardwarecheck.net>|<https://www.shareholds.com>|
+     |<https://www.browsersch.fr>|<https://www.hrsupportint.com>|<https://www.sharepointen.com>|
+     |<https://www.browsersch.it>|<https://www.mcsharepoint.com>|<https://www.sharepointin.com>|
+     |<https://www.browsersch.org>|<https://www.mesharepoint.com>|<https://www.sharepointle.com>|
+     |<https://www.docdeliveryapp.com>|<https://www.officence.com>|<https://www.sharesbyte.com>|
+     |<https://www.docdeliveryapp.net>|<https://www.officenced.com>|<https://www.sharession.com>|
+     |<https://www.docstoreinternal.com>|<https://www.officences.com>|<https://www.sharestion.com>|
+     |<https://www.docstoreinternal.net>|<https://www.officentry.com>|<https://www.supportin.de>|
+     |<https://www.doctorican.de>|<https://www.officested.com>|<https://www.supportin.es>|
+     |<https://www.doctorican.es>|<https://www.passwordle.de>|<https://www.supportin.fr>|
+     |<https://www.doctorican.fr>|<https://www.passwordle.fr>|<https://www.supportin.it>|
+     |<https://www.doctorican.it>|<https://www.passwordle.it>|<https://www.supportres.de>|
+     |<https://www.doctorican.org>|<https://www.passwordle.org>|<https://www.supportres.es>|
+     |<https://www.doctrical.com>|<https://www.payrolltooling.com>|<https://www.supportres.fr>|
+     |<https://www.doctrical.de>|<https://www.payrolltooling.net>|<https://www.supportres.it>|
+     |<https://www.doctrical.es>|<https://www.prizeably.com>|<https://www.supportres.org>|
+     |<https://www.doctrical.fr>|<https://www.prizeably.de>|<https://www.techidal.com>|
+     |<https://www.doctrical.it>|<https://www.prizeably.es>|<https://www.techidal.de>|
+     |<https://www.doctrical.org>|<https://www.prizeably.fr>|<https://www.techidal.fr>|
+     |<https://www.doctricant.com>|<https://www.prizeably.it>|<https://www.techidal.it>|
+     |<https://www.doctrings.com>|<https://www.prizeably.org>|<https://www.techniel.de>|
+     |<https://www.doctrings.de>|<https://www.prizegiveaway.net>|<https://www.techniel.es>|
+     |<https://www.doctrings.es>|<https://www.prizegives.com>|<https://www.techniel.fr>|
+     |<https://www.doctrings.fr>|<https://www.prizemons.com>|<https://www.techniel.it>|
+     |<https://www.doctrings.it>|<https://www.prizesforall.com>|<https://www.templateau.com>|
+     |<https://www.doctrings.org>|<https://www.prizewel.com>|<https://www.templatent.com>|
+     |<https://www.exportants.com>|<https://www.prizewings.com>|<https://www.templatern.com>|
+     |<https://www.exportants.de>|<https://www.resetts.de>|<https://www.windocyte.com>|
+     |<https://www.exportants.es>|<https://www.resetts.es>||
+     |<https://www.exportants.fr>|<https://www.resetts.fr>||
 
      > [!NOTE]
      > A URL reputation service might identify one or more of these URLs as unsafe. Check the availability of the URL in your supported web browsers before you use the URL in a simulation. For more information, see [Phishing simulation URLs blocked by Google Safe Browsing](attack-simulation-training-faq.md#phishing-simulation-urls-blocked-by-google-safe-browsing).
@@ -331,7 +353,7 @@ To see payloads that have been archived (the **Status** value is **Archive**), u
 
    When you're finished on the **Review payload** page, select **Submit**. On the confirmation page that appears, select **Done**.
 
-   :::image type="content" source="../../media/attack-sim-training-payloads-review-payload.png" alt-text="The Review payload page in Attack simulation training in the Microsoft 365 Defender portal" lightbox="../../media/attack-sim-training-payloads-review-payload.png":::
+   :::image type="content" source="../../media/attack-sim-training-payloads-review-payload.png" alt-text="The Review payload page in Attack simulation training in the Microsoft Defender portal" lightbox="../../media/attack-sim-training-payloads-review-payload.png":::
 
 8. On the **New payload created** page, you can use the links to view all simulations or go to the Attack simulation training overview.
 
@@ -341,7 +363,7 @@ To see payloads that have been archived (the **Status** value is **Archive**), u
 
 ## Take action on payloads
 
-All actions on existing payloads start on the **Payloads** page. To get there, open the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Content library** tab \> **Payloads** \> **Tenant payloads** tab. To go directly to the **Content library** tab where you can select **Payloads** and the **Tenant payloads** or **Global payloads** tabs, use <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>.
+All actions on existing payloads start on the **Payloads** page. To get there, open the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Content library** tab \> **Payloads** \> **Tenant payloads** tab. To go directly to the **Content library** tab where you can select **Payloads** and the **Tenant payloads** or **Global payloads** tabs, use <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>.
 
 > [!TIP]
 > To see the **⋮** (**Actions**) control on the **Global payloads** or **Tenant payloads** tabs, you likely need to do one or more of the following steps:

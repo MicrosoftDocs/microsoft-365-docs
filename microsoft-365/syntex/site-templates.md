@@ -2,10 +2,10 @@
 title: Accelerate your solution using site templates for Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 audience: admin
 ms.reviewer: ssquires; kkameth
-ms.date: 04/03/2023
+ms.date: 02/21/2024
 ms.topic: conceptual
 ms.service: microsoft-syntex
 search.appverid: 

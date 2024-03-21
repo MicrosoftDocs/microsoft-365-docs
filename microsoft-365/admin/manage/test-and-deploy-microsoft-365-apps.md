@@ -46,11 +46,11 @@ Integrated Apps can be accessed via the Microsoft 365 Admin Center. Select **Set
 
 The Integrated apps portal is available to world-wide customers only and can be accessed by Global Admins, Global Readers, Exchange admins, and Azure Application Admins (made available in May 2023). This feature is not available in sovereign and government clouds.
 
-To learn more about these roles, see [Azure AD built-in roles - Microsoft Entra|Microsoft Learn](/azure/active-directory/roles/permissions-reference#all-roles).
+To learn more about these roles, see [Microsoft Entra built-in roles - Microsoft Entra|Microsoft Learn](/azure/active-directory/roles/permissions-reference#all-roles).
 
 ## User and group assignments
 
-We currently support most groups supported by Azure Active Directory, including Microsoft 365 groups, distribution lists, and security groups. We support users in top-level groups or groups without parent groups, but not users in nested groups or groups that have parent groups. To know more, read the documentation on [Assign users and groups to application](/azure/active-directory/manage-apps/assign-user-or-group-access-portal?pivots=portal).
+We currently support most groups supported by Microsoft Entra ID, including Microsoft 365 groups, distribution lists, and security groups. We support users in top-level groups or groups without parent groups, but not users in nested groups or groups that have parent groups. To know more, read the documentation on [Assign users and groups to application](/azure/active-directory/manage-apps/assign-user-or-group-access-portal?pivots=portal).
 
 > [!NOTE]
 > Non-mail enabled security groups are not currently supported.
@@ -79,7 +79,7 @@ As an admin, the following app/add-in types can be managed from the Integrated a
 |---|---|---|---|---|
 |Add-in|Outlook<br/><br/><br/> Word, Excel, PowerPoint|[Deploy/Edit deployed users/Remove deployment](/microsoft-365/admin/manage/office-addins#deploy-your-office-add-ins)|Exchange Admin<br/><br/> Global Admin<br/><br/> Azure Application Admin| Exchange Admin Center for default role assignment policy.<br/><br/>  Microsoft 365 Admin Center > Org Settings for Office Store setting|
 |SPFx App|SharePoint|[Deploy/Remove deployment](/microsoft-365/admin/manage/office-addins#deploy-your-office-add-ins)|Global Admin|SharePoint Admin Center|
-|Web App|N/A|[Deploy/Edit deployed users](/microsoft-365/admin/manage/office-addins#deploy-your-office-add-ins) |Global Admin<br/><br/>Azure Application Admin|Azure Active Directory portal|
+|Web App|N/A|[Deploy/Edit deployed users](/microsoft-365/admin/manage/office-addins#deploy-your-office-add-ins) |Global Admin<br/><br/>Azure Application Admin|Microsoft Entra admin center|
 |Teams app (manifest version less than 1.13)|Teams|[Block & Unblock](/microsoft-365/admin/manage/teams-apps-work-only-on-teams)|Global Admin|Go to Teams admin center for default tenant setting, deployment and managing availability|
 |Teams app (manifest version equal to or greater than 1.13)|Outlook<br/><br/> Microsoft 365 App<br/><br/> Teams| [Deploy/Edit deployed users/Remove deployment](/microsoft-365/admin/manage/teams-apps-work-on-outlook-and-m365#deploy-a-teams-app-that-works-on-outlook-and-the-microsoft-365-app-via-the-integrated-apps-portal)<br/><br/> [Block & Unblock](/microsoft-365/admin/manage/teams-apps-work-on-outlook-and-m365#manage-how-users-can-install-teams-apps-on-outlook-and-the-microsoft-365-app) <br/><br/> [Manage availability>Edit users](/microsoft-365/admin/manage/teams-apps-work-on-outlook-and-m365#how-to-manage-the-availability-of-an-app-in-your-organization)<br/><br/> [Default setting for tenant](/microsoft-365/admin/manage/teams-apps-work-on-outlook-and-m365#customize-default-settings-for-teams-apps-that-work-on-outlook-and-the-microsoft-365-app)|Global Admin<br/><br/>Azure Application Admin|Go to Teams admin center to manage how this app shows up in Teams for users in your organization.|
 

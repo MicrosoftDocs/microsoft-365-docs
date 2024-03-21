@@ -2,9 +2,9 @@
 title: Microsoft Teams Virtual Appointments Call Quality Dashboard
 author: lana-chin
 ms.author: v-chinlana
-manager: serdars
+manager: jtremper
 audience: Admin
-ms.topic: how-to
+ms.topic: conceptual
 ms.service: microsoft-365-frontline
 ms.reviewer: ansantam
 f1.keywords:
@@ -20,7 +20,7 @@ description: Learn how to use the Call Quality Dashboard for Virtual Appointment
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 1/30/2023
+ms.date: 02/20/2024
 ---
 # Microsoft Teams Virtual Appointments in Call Quality Dashboard
 
@@ -36,26 +36,25 @@ When you access this data, you can use it to analyze high-level metrics such as 
 
 ## Get started
 
-To begin, you'll want to get familiar with [using Call Quality Dashboard](/microsoftteams/turning-on-and-using-call-quality-dashboard). You'll need [appropriate admin credentials](/microsoftteams/turning-on-and-using-call-quality-dashboard#assign-admin-roles-for-access-to-cqd) to [sign into CQD](https://cqd.teams.microsoft.com) and begin working with your data.
+To begin, get familiar with [using Call Quality Dashboard](/microsoftteams/turning-on-and-using-call-quality-dashboard). You need [appropriate admin credentials](/microsoftteams/turning-on-and-using-call-quality-dashboard#assign-admin-roles-for-access-to-cqd) to [sign in to CQD](https://cqd.teams.microsoft.com) and begin working with your data.
 
-You can also access CQD from Teams Admin Center:
-1. From the menu bar, select **Analysis & Reports**.
-1. Then, choose **Call Quality Dashboard**.
+You can also access CQD from the Teams admin center:
 
+1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com/), select **Analysis & Reports**.
+1. Then, choose **Call quality dashboard**.
 
-One you've logged into CQD, you can begin to analyze data from the existing dashboards. You can find these in the dropdown menu at the top of the page. You can also use [Power BI desktop](https://www.microsoft.com/p/power-bi-desktop/9ntxr16hnw1t#activetab=pivot:overviewtab) to create highly customizable reports. Use the [CQD Power BI template files](/microsoftteams/cqd-data-and-reports#import-the-cqd-report-templates) to get started. These template files contain many of the most frequently requested call quality metrics and charts.
+After you sign in to CQD, you can begin to analyze data from the existing dashboards. You can find these in the dropdown menu at the top of the page. You can also use [Power BI desktop](https://apps.microsoft.com/detail/9ntxr16hnw1t#activetab=pivot:overviewtab) to create highly customizable reports. Use the [CQD Power BI template files](/microsoftteams/cqd-data-and-reports#import-the-cqd-report-templates) to get started. These template files contain many of the most frequently requested call quality metrics and charts.
 
 ## Working with CQD data in Power BI
 
-Before you begin analyzing organizational call quality data, you'll need to [install](/p/power-bi-desktop/9ntxr16hnw1t#activetab=pivot:overviewtab) and [learn to use](https://powerbi.microsoft.com/learning/) Power BI desktop. To access the CQD database through Power BI, you'll need to [download and install the Microsoft Call Quality connector](/microsoftteams/cqd-power-bi-connector). Make sure to install the connector in the appropriate Documents folder.
+Before you begin analyzing organizational call quality data, [install](https://apps.microsoft.com/detail/9ntxr16hnw1t#activetab=pivot:overviewtab) and [learn to use](https://powerbi.microsoft.com/learning/) Power BI desktop. To access the CQD database through Power BI, [download and install the Microsoft Call Quality connector](/microsoftteams/cqd-power-bi-connector). Make sure to install the connector in the appropriate Documents folder.
 
-Once you've installed the connector, you'll be able to access your CQD data in Power BI.
+After you install the connector, you can access your CQD data in Power BI.
 
 [![Example screenshot of CQD data in Power BI.](media/call-quality-dashboard.png)](media/call-quality-dashboard-big.png)
 
 > [!TIP]
 > You can get a head start by using the [CQD Power BI template files](/microsoftteams/cqd-data-and-reports#import-the-cqd-report-templates). The template files are already connected to the CQD data source. You still need to have the connector installed to use the template files.
-
 
 ### Start a report from scratch
 
@@ -69,15 +68,15 @@ If you choose not to use the template files, you can create a Power BI report fr
 
 You can analyze Teams data in several different ways.
 
-- **[Teams Admin Center](https://admin.teams.microsoft.com/):** You can find a pre-made and easy to read set of reports and insights inside Teams Admin Center. However, you can't extensively customize these reports.
+- **[Teams admin center](https://admin.teams.microsoft.com/):** You can find a pre-made and easy-to-read set of reports and insights in the Teams admin center. However, you can't extensively customize these reports.
 - **[Call Quality Dashboard](https://cqd.teams.microsoft.com/):** Here you can filter and customize reports that provide quick answers to many frequently asked questions.
-- **[Call Quality connector for Power BI](/microsoftteams/cqd-power-bi-query-templates):** Using Power BI gives you the most customizable options for creating reports. Here you can use CQD data to understand user behavior, see usage patterns, and resolve individual call issues. You can use Power BI to supplement the aforementioned dashboards with answers that aren't available in the pre-made reports.
+- **[Call Quality connector for Power BI](/microsoftteams/cqd-power-bi-query-templates):** Using Power BI gives you the most customizable options for creating reports. Here you can use CQD data to understand user behavior, see usage patterns, and resolve individual call issues. You can use Power BI to supplement the dashboards with answers that aren't available in the pre-made reports.
 
-## Virtual appointments data
+## Virtual Appointments data
 
 You can also use CQD to gather and analyze data specific to Virtual Appointments.
 
-### Differentiate EHR and Bookings appointments
+### Differentiate Electronic Health Record (EHR) and Bookings appointments
 
 You can view the point of origin of a scheduled call by using the **Scheduling Source App ID** column. You can find this in the **Fields** list. Then drag and drop the slicer onto the canvas.
 
@@ -88,4 +87,3 @@ Bookings appointments have the ID 0eaa6b95-4a35-4a5d-9919-e4fc61fb4bdb.
 
 > [!NOTE]
 > Scheduling Source App ID isn't one of the default slicers in the PBIT templates.
-

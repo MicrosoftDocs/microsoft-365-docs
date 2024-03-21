@@ -9,6 +9,7 @@ ms.reviewer: drjones, jobailey
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-marketplace
 ms.localizationpriority: medium
 ms.collection: 
 - Tier1
@@ -51,18 +52,18 @@ For all other procedures in this article, the following items are required:
 
 - You must have a Microsoft account, and you must be a Global or Billing admin for your organization. For more information, see [About admin roles](../admin/add-users/about-admin-roles.md).
 - [Find out what type of billing account you have](manage-billing-accounts.md#view-my-billing-accounts).
-- If you have a Microsoft Customer Agreement (MCA) billing account type, you must also be a billing account owner or contributor to do the tasks described in this article. For more information, see [Understand billing accounts](manage-billing-accounts.md) and [Understand billing profiles](billing-and-payments/manage-billing-profiles.md).
+- If you have a Microsoft Customer Agreement (MCA) billing account type, you must also be a billing account owner or contributor to do the tasks described in this article. For more information, see [Understand billing accounts](manage-billing-accounts.md) and [Manage your Microsoft business billing profiles](billing-and-payments/manage-billing-profiles.md).
 
 ::: moniker range="o365-21vianet"
 
-## Payment options for Office 365 operated by 21Vianet in China
+## Payment options for Microsoft 365 operated by 21Vianet in China
 
 International credit cards aren't accepted. You can pay for your subscription by:
 
 - Invoice
 - Online payment using Alipay or China UnionPay
 
-Proof of payment is provided in the form of Fapiaos. You can submit your Fapiao request to our [Fapiao system](https://go.microsoft.com/fwlink/p/?LinkId=395314) about three (3) days after you have paid. For more information, see [Apply for a Fapiao for Office 365 operated by 21Vianet](../admin/services-in-china/apply-for-a-fapiao.md).
+Proof of payment is provided in the form of Fapiaos. You can submit your Fapiao request to our [Fapiao system](https://go.microsoft.com/fwlink/p/?LinkId=395314) about three (3) days after you have paid.
 
 ::: moniker-end
 

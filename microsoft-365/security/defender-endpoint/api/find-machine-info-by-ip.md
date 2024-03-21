@@ -1,16 +1,11 @@
 ---
 title: Find device information by internal IP API
 description: Use this API to create calls related to finding a device entry around a specific timestamp by internal IP.
-keywords: ip, apis, graph api, supported apis, find device, device information
-search.product: eADQiWindows 10XVcnh
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -18,14 +13,14 @@ ms.collection:
 - must-keep
 ms.topic: reference
 ms.custom: api
-ms.subservice: mde
+ms.subservice: reference
 search.appverid: met150
 ms.date: 12/18/2020
 ---
 
 # Find device information by internal IP API
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../../includes/microsoft-defender.md)]
 
 
 **Applies to:** 

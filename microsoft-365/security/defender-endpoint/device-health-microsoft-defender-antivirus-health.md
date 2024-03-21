@@ -2,27 +2,27 @@
 title: Device health Microsoft Defender Antivirus health report
 description: Use the Microsoft Defender Antivirus report to track antivirus status and Microsoft Defender Antivirus engine, intelligence, and platform versions.
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.author: dansimp
-author: dansimp
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
 localization_priority: Normal
-ms.date: 09/06/2022
-manager: dansimp
+ms.date: 02/18/2024
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security
 - tier2
 - mde-ngp
 ms.topic: conceptual
-ms.subservice: mde
-ms.reviewer: mkaminska
+ms.subservice: ngp
+ms.reviewer: mkaminska, yongrhee
 ---
 
 # Device health, Microsoft Defender Antivirus health report
 
 **Applies to:**
 
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -62,7 +62,7 @@ To access the Device health and antivirus compliance report in the Microsoft 365
 
 To Assign these permissions:
 
-1. Sign in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> using account with Security administrator or Global administrator role assigned.
+1. Sign in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender XDR</a> using account with Security administrator or Global administrator role assigned.
 1. In the navigation pane, select **Settings** \> **Endpoints** \> **Roles** (under **Permissions**).
 1. Select the role you'd like to edit.
 1. Select **Edit**.
@@ -107,13 +107,13 @@ Up-to-date reporting generates information for devices that meet the following c
   > [!NOTE]
   > \* Currently up to date reporting is only available for Windows devices. Cross platform devices such as Mac and Linux are listed under "No data available"/Unknown.
 
-:::image type="content" source="images/device-health-defender-antivirus-health-tab.png" alt-text="Shows the Microsoft Defender Antivirus Health tab." lightbox="images/device-health-defender-antivirus-health-tab.png":::
+:::image type="content" source="media/device-health-defender-antivirus-health-tab.png" alt-text="Shows the Microsoft Defender Antivirus Health tab." lightbox="media/device-health-defender-antivirus-health-tab.png":::
 
 ### Card functionality
 
 The functionality is essentially the same for all cards. By clicking on a numbered bar in any of the cards, the **Microsoft Defender Antivirus details** flyout opens enabling you to review information about all the devices configured with the version number of an aspect on that card.
 
-:::image type="content" source="images/device-health-defender-antivirus-health-antivirus-details.png" alt-text="Shows the Microsoft Defender Antivirus details flyout." lightbox="images/device-health-defender-antivirus-health-antivirus-details.png":::
+:::image type="content" source="media/device-health-defender-antivirus-health-antivirus-details.png" alt-text="Shows the Microsoft Defender Antivirus details flyout." lightbox="media/device-health-defender-antivirus-health-antivirus-details.png":::
 
 If the version number that you clicked on is:
 
@@ -122,7 +122,7 @@ If the version number that you clicked on is:
 
 To add or remove specific types of information on the **Microsoft Defender Antivirus details** flyout, select **Customize Columns**. In **Customize Columns**, select or clear items to specify what you want included in the Microsoft Defender Antivirus details report.
 
-:::image type="content" source="images/device-health-defender-antivirus-engine-version-details-custom-columns.png" alt-text="Shows custom column options for Microsoft Defender Antivirus health reporting." lightbox="images/device-health-defender-antivirus-engine-version-details-custom-columns.png":::
+:::image type="content" source="media/device-health-defender-antivirus-engine-version-details-custom-columns.png" alt-text="Shows custom column options for Microsoft Defender Antivirus health reporting." lightbox="media/device-health-defender-antivirus-engine-version-details-custom-columns.png":::
 
 #### New Microsoft Defender Antivirus filter definitions
 
@@ -147,7 +147,7 @@ There are two different export csv functionalities through the portal:
 
 - **Top level export**. You can use the top-level **Export** button to gather an all-up Microsoft Defender Antivirus health report (500-K limit).
 
-:::image type="content" source="images/device-health-defender-antivirus-health-tab-export.png" alt-text="Screenshot that shows the top-level export report button." lightbox="images/device-health-defender-antivirus-health-tab-export.png":::
+:::image type="content" source="media/device-health-defender-antivirus-health-tab-export.png" alt-text="Screenshot that shows the top-level export report button." lightbox="media/device-health-defender-antivirus-health-tab-export.png":::
 
 - **Flyout level export**. You can use the **Export** button within the flyouts to export a report to an Excel spreadsheet (100-K limit).
 
@@ -172,13 +172,13 @@ Following are descriptions for the six cards that report about the _version_ and
 
 In any of the three _version_ cards, select **View full report** to display the nine most recent Microsoft Defender Antivirus _version_ reports for each of the three device types: Windows, Mac, and Linux; if fewer than nine exist, they're all shown. An **Other** category captures recent antivirus engine versions ranking tenth and below, if detected.
 
-:::image type="content" source="images/device-health-defender-antivirus-health-view-full-report.png" alt-text="Shows the distribution of the top nine operating systems of each type" lightbox="images/device-health-defender-antivirus-health-view-full-report.png":::
+:::image type="content" source="media/device-health-defender-antivirus-health-view-full-report.png" alt-text="Shows the distribution of the top nine operating systems of each type" lightbox="media/device-health-defender-antivirus-health-view-full-report.png":::
 
 A primary benefit of the three _version_ cards is that they provide quick indicators as to whether the most current versions of the antivirus engines, platforms, and security intelligence are being utilized. Coupled with the detailed information that is linked to the card, the versions cards become a powerful tool to check if versions are up to date and to gather information about individual computers, or groups of computers.
 Ideally, when you run these reports, they'll indicate that the most current antivirus versions are installed, as opposed to older versions.
 Use these reports to determine whether your organization is taking full advantage of the most current versions.
 
-:::image type="content" source="images/device-health-defender-antivirus-health-antivirus-details-up-to-date.png" alt-text="Shows Microsoft Defender Antivirus version details" lightbox="images/device-health-defender-antivirus-health-antivirus-details-up-to-date.png":::
+:::image type="content" source="media/device-health-defender-antivirus-health-antivirus-details-up-to-date.png" alt-text="Shows Microsoft Defender Antivirus version details" lightbox="media/device-health-defender-antivirus-health-antivirus-details-up-to-date.png":::
 
 To help ensure your anti-malware solution detects the latest threats, get updates automatically as part of Windows Update.
 
@@ -200,7 +200,7 @@ Reports on how many devices in your organization – on the date indicated on th
 | 3 | Others (Not running, Unknown) |
 | 4 | EDRBlocked |
 
-:::image type="content" source="images/device-health-defender-antivirus-health-antivirus-mode.png" alt-text="Shows filtering Microsoft Defender Antivirus modes" lightbox="images/device-health-defender-antivirus-health-antivirus-mode.png":::
+:::image type="content" source="media/device-health-defender-antivirus-health-antivirus-mode.png" alt-text="Shows filtering Microsoft Defender Antivirus modes" lightbox="media/device-health-defender-antivirus-health-antivirus-mode.png":::
 
 Following are descriptions for each mode:
 

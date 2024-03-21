@@ -23,7 +23,7 @@ description: "Summary: Configure the domain controllers and directory synchroniz
 In this phase of deploying high availability for Microsoft 365 federated authentication in Azure infrastructure services, you configure two domain controllers and the directory synchronization server in the Azure virtual network. Client web requests for authentication can then be authenticated in the Azure virtual network, rather than sending that authentication traffic across the site-to-site VPN connection to your on-premises network.
   
 > [!NOTE]
-> Active Directory Federation Services (AD FS) cannot use Azure Active Directory (Azure AD) as a substitute for Active Directory Domain Services (AD DS) domain controllers. 
+> Active Directory Federation Services (AD FS) cannot use Microsoft Entra ID as a substitute for Active Directory Domain Services (AD DS) domain controllers. 
   
 You must complete this phase before moving on to [Phase 3: Configure AD FS servers](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md). See [Deploy high availability federated authentication for Microsoft 365 in Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) for all of the phases.
   
@@ -233,7 +233,7 @@ Next, join it to the appropriate AD DS domain with these commands at the Windows
   
 ```powershell
 $domName="<AD DS domain name to join, such as corp.contoso.com>"
-$cred=Get-Credential -Message "Type the name and password of a domain acccount."
+$cred=Get-Credential -Message "Type the name and password of a domain account."
 Add-Computer -DomainName $domName -Credential $cred
 Restart-Computer
 ```

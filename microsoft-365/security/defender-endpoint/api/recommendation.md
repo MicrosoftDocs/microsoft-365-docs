@@ -1,22 +1,18 @@
 ---
 title: Recommendation methods and properties
 description: Retrieves the top recent alerts.
-keywords: apis, graph api, supported apis, get, alerts, recent
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
 - must-keep
 ms.topic: reference
-ms.subservice: mde
+ms.subservice: reference
 ms.custom: api
 search.appverid: met150
 ms.date: 12/18/2020
@@ -24,7 +20,7 @@ ms.date: 12/18/2020
 
 # Recommendation resource type
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
@@ -70,19 +66,19 @@ Want to experience Defender for Endpoint? [Sign up for a free trial.](https://si
 |recommendedVersion|String|Recommended version|
 |recommendedProgram|String|Recommended program|
 |recommendedVendor|String|Recommended vendor|
-|recommendationCategory|String|Recommendation category. Possible values are: "Accounts", "Application", "Network", "OS", "SecurityControls"|
-|subCategory|String|Recommendation sub-category|
+|recommendationCategory|String|Recommendation category. Possible values are: `Accounts`, `Application`, `Network`, `OS`, `SecurityControls`|
+|subCategory|String|Recommendation subcategory|
 |severityScore|Double|Potential impact of the configuration to the organization's Microsoft Secure Score for Devices (1-10)|
 |publicExploit|Boolean|Public exploit is available|
 |activeAlert|Boolean|Active alert is associated with this recommendation|
 |associatedThreats|String collection|Threat analytics report is associated with this recommendation|
-|remediationType|String|Remediation type. Possible values are: "ConfigurationChange","Update","Upgrade","Uninstall"|
-|Status|Enum|Recommendation exception status. Possible values are: "Active" and "Exception"|
+|remediationType|String|Remediation type. Possible values are: `ConfigurationChange`,`Update`,`Upgrade`,`Uninstall`|
+|Status|Enum|Recommendation exception status. Possible values are: `Active` and `Exception`|
 |configScoreImpact|Double|Microsoft Secure Score for Devices impact|
 |exposureImpact|Double|Exposure score impact|
 |totalMachineCount|Long|Number of installed devices|
 |exposedMachinesCount|Long|Number of installed devices that are exposed to vulnerabilities|
-|nonProductivityImpactedAssets|Long|Number of devices that are not affected|
+|nonProductivityImpactedAssets|Long|Number of devices that aren't affected|
 |relatedComponent|String|Related software component|
 |
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../../includes/defender-mde-techcommunity.md)]

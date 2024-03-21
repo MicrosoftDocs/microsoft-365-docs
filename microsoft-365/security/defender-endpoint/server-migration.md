@@ -1,30 +1,25 @@
 ---
 title: Server migration scenarios for the new version of Microsoft Defender for Endpoint
 description: Read this article to get an overview of how to migrate your servers from the previous, MMA-based solution to the current Defender for Endpoint unified solution package.
-keywords: migrate server, server, 2012r2, 2016, server migration, device management, configure Microsoft Defender for Endpoint servers, onboard Microsoft Defender for Endpoint servers
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-author: mjcaparas
-ms.author: macapara
+ms.service: defender-endpoint
+author: siosulli
+ms.author: siosulli
 ms.localizationpriority: medium
 ms.date: 09/19/2022
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security
 - tier2
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: onboard
 ---
 
 
 # Server migration scenarios from the previous, MMA-based Microsoft Defender for Endpoint solution
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - Windows Server 2012 R2
@@ -54,7 +49,7 @@ To facilitate upgrades when Microsoft Endpoint Configuration Manager is not yet 
 3. Download and install [prerequisites](configure-server-endpoints.md#prerequisites) if required.
 4. Enable and update the Defender Antivirus feature on Windows Server 2016
 5. Install Microsoft Defender for Endpoint.
-6. Apply the onboarding script **for use with Group Policy** downloaded from [Microsoft 365 Defender](https://security.microsoft.com).
+6. Apply the onboarding script **for use with Group Policy** downloaded from [Microsoft Defender XDR](https://security.microsoft.com).
 
 To use the script, download it to an installation directory where you have also placed the installation and onboarding packages (see [Configure server endpoints](configure-server-endpoints.md)).
 
@@ -75,7 +70,7 @@ For instructions on how to migrate using Microsoft Endpoint Configuration Manage
 2. Ensure third-party antivirus management no longer pushes antivirus agents to these machines.*
 3. Author your policies for the protection capabilities in Microsoft Defender for Endpoint and target those to the machine in the tool of your choice.
 4. Install the Microsoft Defender for Endpoint for Windows Server 2012 R2 and 2016 package and **enable passive mode**. See [Install Microsoft Defender Antivirus using command line](configure-server-endpoints.md#install-microsoft-defender-for-endpoint-using-the-command-line).
-   a. Apply the onboarding script **for use with Group Policy** downloaded from [Microsoft 365 Defender](https://security.microsoft.com).
+   a. Apply the onboarding script **for use with Group Policy** downloaded from [Microsoft Defender XDR](https://security.microsoft.com).
 5. Apply updates.
 6. Remove your non-Microsoft antivirus software by either using the non-Microsoft antivirus console or by using Microsoft Endpoint Configuration Manager as
 appropriate. Make sure to remove passive mode configuration.*
@@ -98,7 +93,7 @@ Value: 0
 2. Create and apply policies using Group Policy, PowerShell, or a 3rd party management solution.
 3. Uninstall System Center Endpoint Protection (Windows Server 2012 R2).
 4. Install Microsoft Defender for Endpoint (see [Configure server endpoints](configure-server-endpoints.md).)
-5. Apply the onboarding script **for use with Group Policy** downloaded from [Microsoft 365 Defender](https://security.microsoft.com).
+5. Apply the onboarding script **for use with Group Policy** downloaded from [Microsoft Defender XDR](https://security.microsoft.com).
 6. Apply updates.
 
 > [!TIP]

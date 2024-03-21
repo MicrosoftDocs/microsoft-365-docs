@@ -77,7 +77,7 @@ The following limits apply to Microsoft 365 Groups:
 |:---------|:----|
 |Owners per group|100|
 |Groups a user can create|250|
-|Groups an admin can create|There are no Microsoft 365 group specific limits. There's an overall Azure AD object limit specific to each organization. An Azure AD admin who can manage groups in the organization can create an unlimited number of Microsoft 365 groups up to the Azure AD object limit. See [Azure AD service limits and restrictions](/azure/active-directory/enterprise-users/directory-service-limits-restrictions).|
+|Groups an admin can create|There are no Microsoft 365 group specific limits. There's an overall Microsoft Entra object limit specific to each organization. A Microsoft Entra admin who can manage groups in the organization can create an unlimited number of Microsoft 365 groups up to the Microsoft Entra object limit. See [Microsoft Entra service limits and restrictions](/azure/active-directory/enterprise-users/directory-service-limits-restrictions).|
 |Number of members|More than 1,000, though only 1,000 can access the group conversations concurrently. <br>Users might notice delays when accessing the calendar and conversations in large groups in Outlook.|
 |Number of groups a user can be an owner of|7,000|
 |Number of groups a user can be a member of|7,000|
@@ -111,10 +111,10 @@ Any Microsoft 365 subscription that has Exchange Online and SharePoint Online wi
 
 If you have an Exchange-only plan you can still get the shared inbox and shared calendar features of groups in Outlook but you won't get the document library, Planner or any of the other capabilities.
 
-Microsoft 365 groups work with Azure Active Directory. The groups features you get depends on which Azure Active Directory subscription you have, and what licenses are assigned to the person who created the group.
+Microsoft 365 groups work with Microsoft Entra ID. The groups features you get depends on which Microsoft Entra subscription you have, and what licenses are assigned to the person who created the group.
 
 > [!IMPORTANT]
-> For all the groups features, if you have an Azure AD Premium subscription, users can join the group whether or not they have an Azure AD P1 license assigned to them. Licensing isn't enforced.
+> For all the groups features, if you have a Microsoft Entra ID P1 or P2 subscription, users can join the group whether or not they have a Microsoft Entra ID P1 license assigned to them. Licensing isn't enforced.
 > Periodically we will generate usage reports that tell you which users are missing a license, and need one assigned to them to be compliant with the licensing requirements. For example, let's say a user doesn't have a license and they are added to a group where the naming policy is enforced. The report will flag for you that they need a license.
 
 ## Related content

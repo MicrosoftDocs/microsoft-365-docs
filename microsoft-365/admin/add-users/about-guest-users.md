@@ -27,7 +27,7 @@ description: "Learn how to populate the Guest users list in the Microsoft 365 ad
 
 By default, guest access for Microsoft 365 groups is turned on for your organization. Admins can control whether to allow guest access to groups for their whole organization or for individual groups.
 
-Any guests you add to your Microsoft Teams, SharePoint, or Azure Active Directory are also added to the **Guest users** list in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">Microsoft 365 admin center</a>. Guests can attend meetings, view documents and chat in Teams they're invited to.
+Any guests you add to your Microsoft Teams, SharePoint, or Microsoft Entra ID are also added to the **Guest users** list in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">Microsoft 365 admin center</a>. Guests can attend meetings, view documents and chat in Teams they're invited to.
 Once a user shows up in the **Guest users** list, you can remove their access there.
 
 To view guest users, in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">Microsoft 365 admin center</a>, in the left nav, expand **Users**, and then choose **Guest users**.
@@ -68,7 +68,7 @@ For Microsoft 365 apps like Microsoft Word and Excel, guest access is controlled
 
 To add guests in the Microsoft Entra, see [add guest users](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal).
 
-After you add a user you can also assign them to a group, or give them access to an app in your organization. Once you've added a user in the Azure AD portal, that user will also be listed on the **Guest users** page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">Microsoft 365 admin center</a>.
+After you add a user you can also assign them to a group, or give them access to an app in your organization. Once you've added a user in the Microsoft Entra admin center, that user will also be listed on the **Guest users** page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">Microsoft 365 admin center</a>.
 
 See [add guests in bulk](/azure/active-directory/b2b/tutorial-bulk-invite) to invite multiple guests to collaborate with your organization.
 

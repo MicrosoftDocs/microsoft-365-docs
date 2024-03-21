@@ -2,7 +2,7 @@
 title: Create a rule to set a content type when a file is added to a document library in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: karlha
 ms.date: 08/29/2023
 audience: admin

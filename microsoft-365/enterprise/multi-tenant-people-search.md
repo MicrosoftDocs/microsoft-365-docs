@@ -26,9 +26,9 @@ The multitenant Organization (MTO) People Search is a collaboration feature that
 >- Define use cases that we currently support as part of the preview
 >- Provide instructions on how you can configure and test the feature
 
-![AAD sync](../media/mt-people-search/aad-sync.png)
+![Azure AD Sync](../media/mt-people-search/aad-sync.png)
 
-> _Fig 1: Azure AD cross tenant synchronization illustration_
+> _Fig 1: Microsoft Entra cross tenant synchronization illustration_
 
 ## Example scenario
 
@@ -51,8 +51,8 @@ Megan's user account has been synced from the _Fabrikam_ tenant to the target te
 
 To test the MTO People Search feature, it is assumed that you already have the following settings:
 
-- Two Azure AD/Microsoft 365 tenants
-- Both tenants have the **Azure AD Cross-tenant Synchronization** feature enabled
+- Two Microsoft Entra / Microsoft 365 tenants
+- Both tenants have the **Microsoft Entra Cross-tenant Synchronization** feature enabled
 - Provisioned users from home to target tenants
 
 ## Use Cases

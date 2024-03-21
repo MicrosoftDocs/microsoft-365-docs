@@ -1,35 +1,31 @@
 ---
 title: Deploy and manage device control using JAMF 
 description: Learn how to use device control policies using JAMF.
-keywords: microsoft, defender, endpoint, Microsoft Defender for Endpoint, mac, device, control, usb, removable, media, jamf
-ms.service: microsoft-365-security
-ms.mktglfcycl: security
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
 - mde-macos
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: macos
 search.appverid: met150
 ms.date: 03/31/2023
 ---
 
 # Deploy and manage Device Control using JAMF
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 - [Microsoft Defender for Business](/microsoft-365/security/defender-business)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -46,7 +42,7 @@ Before you get started with Removable Storage Access Control, you must confirm y
 
 ### Step 1: Create policy JSON
 
-Now, you have 'groups' and 'rules' and 'settings', combine 'settings' and 'groups' and rules into one JSON, here is the demo file: [mdatp-devicecontrol/deny_removable_media_except_kingston.json at main - microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/macOS/policy/examples/deny_removable_media_except_kingston.json). Make sure to validate your policy with the JSON schema so your policy format is correct: [mdatp-devicecontrol/device_control_policy_schema.json at main - microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/macOS/policy/device_control_policy_schema.json).
+Now, you have 'groups' and 'rules' and 'settings', combine 'settings' and 'groups' and rules into one JSON, here is the demo file: [https://github.com/microsoft/mdatp-devicecontrol/blob/main/macOS/policy/samples/deny_removable_media_except_kingston.json](https://github.com/microsoft/mdatp-devicecontrol/blob/main/macOS/policy/samples/deny_removable_media_except_kingston.json). Make sure to validate your policy with the JSON schema so your policy format is correct: [https://github.com/microsoft/mdatp-devicecontrol/blob/main/macOS/policy/device_control_policy_schema.json](https://github.com/microsoft/mdatp-devicecontrol/blob/main/macOS/policy/device_control_policy_schema.json).
 
 See [Device Control for macOS](mac-device-control-overview.md) for information about settings, rules and groups.
 

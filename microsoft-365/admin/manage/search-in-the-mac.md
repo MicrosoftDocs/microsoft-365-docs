@@ -66,7 +66,7 @@ You can search for Actions category contains frequently used actions in M365 Adm
 
 ## Navigation
 
-Results provides a way to quickly navigate to a specific page in the admin center. For example, searching for RBAC will take you to the Roles page for Azure AD roles.
+Results provides a way to quickly navigate to a specific page in the admin center. For example, searching for RBAC will take you to the Roles page for Microsoft Entra roles.
 
 :::image type="content" source="../../media/search-for-navigation-mac.png" alt-text="Screenshot: Search results showing navigation path in the admin center":::
 

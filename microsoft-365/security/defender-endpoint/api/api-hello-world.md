@@ -2,22 +2,18 @@
 title: Hello World for Microsoft Defender for Endpoint API
 ms.reviewer:
 description: Create a practice 'Hello world'-style API call to the Microsoft Defender for Endpoint API.
-keywords: apis, supported apis, advanced hunting, query, microsoft defender atp, microsoft defender for endpoint
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
 - must-keep
 ms.topic: reference
-ms.subservice: mde
+ms.subservice: reference
 ms.custom: api
 search.appverid: met150
 ms.date: 12/18/2020
@@ -25,7 +21,7 @@ ms.date: 12/18/2020
 
 # Microsoft Defender for Endpoint API - Hello World
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
@@ -51,15 +47,17 @@ It only takes 5 minutes done in two steps:
 
 ### Do I need a permission to connect?
 
-For the Application registration stage, you must have a **Global administrator** role in your Azure Active Directory (Azure AD) tenant.
+For the Application registration stage, you must have a **Global administrator** role in your Microsoft Entra tenant.
 
-### Step 1 - Create an App in Azure Active Directory
+<a name='step-1---create-an-app-in-azure-active-directory'></a>
+
+### Step 1 - Create an App in Microsoft Entra ID
 
 1. Log on to [Azure](https://portal.azure.com) with your **Global administrator** user.
 
-2. Navigate to **Azure Active Directory** \> **App registrations** \> **New registration**.
+2. Navigate to **Microsoft Entra ID** \> **App registrations** \> **New registration**.
 
-   :::image type="content" source="../images/atp-azure-new-app2.png" alt-text="The App registrations option under the Manage pane in the Azure Active Directory portal"  lightbox="../images/atp-azure-new-app2.png":::
+   :::image type="content" source="../media/atp-azure-new-app2.png" alt-text="The App registrations option under the Manage pane in the Microsoft Entra admin center"  lightbox="../media/atp-azure-new-app2.png":::
 
 3. In the registration form, choose a name for your application and then click **Register**.
 
@@ -70,11 +68,11 @@ For the Application registration stage, you must have a **Global administrator**
      > [!NOTE]
      > WindowsDefenderATP does not appear in the original list. You need to start writing its name in the text box to see it appear.
 
-     :::image type="content" source="../images/add-permission.png" alt-text="The API permissions option under the Manage pane in the Azure Active Directory portal" lightbox="../images/add-permission.png":::
+     :::image type="content" source="../media/add-permission.png" alt-text="The API permissions option under the Manage pane in the Microsoft Entra admin center" lightbox="../media/add-permission.png":::
 
    - Choose **Application permissions** \> **Alert.Read.All** > Click on **Add permissions**.
 
-     :::image type="content" source="../images/application-permissions.png" alt-text="The permission type and settings panes in the Request API permissions page" lightbox="../images/application-permissions.png":::
+     :::image type="content" source="../media/application-permissions.png" alt-text="The permission type and settings panes in the Request API permissions page" lightbox="../media/application-permissions.png":::
 
      > [!IMPORTANT]
      > You need to select the relevant permissions. 'Read All Alerts' is only an example!
@@ -90,7 +88,7 @@ For the Application registration stage, you must have a **Global administrator**
    > [!NOTE]
    > Every time you add permission, you must click on **Grant consent** for the new permission to take effect.
 
-   :::image type="content" source="../images/grant-consent.png" alt-text="The grant permission consent option in the Azure Active Directory portal" lightbox="../images/grant-consent.png":::
+   :::image type="content" source="../images/grant-consent.png" alt-text="The grant permission consent option in the Microsoft Entra admin center" lightbox="../images/grant-consent.png":::
 
 6. Add a secret to the application.
 
@@ -99,13 +97,13 @@ For the Application registration stage, you must have a **Global administrator**
     > [!IMPORTANT]
     > After click Add, **copy the generated secret value**. You won't be able to retrieve after you leave!
 
-    :::image type="content" source="../images/webapp-create-key2.png" alt-text="The Certificates & secrets menu item in the Manage pane in the Azure Active Directory portal" lightbox="../images/webapp-create-key2.png":::
+    :::image type="content" source="../images/webapp-create-key2.png" alt-text="The Certificates & secrets menu item in the Manage pane in the Microsoft Entra admin center" lightbox="../images/webapp-create-key2.png":::
 
 7. Write down your application ID and your tenant ID.
 
    On your application page, go to **Overview** and copy the following:
 
-   :::image type="content" source="../images/app-and-tenant-ids.png" alt-text="The application details pane under the Overview menu item in the Azure Active Directory portal" lightbox="../images/app-and-tenant-ids.png":::
+   :::image type="content" source="../media/app-and-tenant-ids.png" alt-text="The application details pane under the Overview menu item in the Microsoft Entra admin center" lightbox="../media/app-and-tenant-ids.png":::
 
 Done! You have successfully registered an application!
 
@@ -143,9 +141,9 @@ Done! You have successfully registered an application!
   - Paste in the top box.
   - Look for the "roles" section. Find the _Alert.Read.All_ role.
 
-  :::image type="content" source="../images/api-jwt-ms.png" alt-text="The Decoded Token pane for jwt.ms" lightbox="../images/api-jwt-ms.png":::
+  :::image type="content" source="../media/api-jwt-ms.png" alt-text="The Decoded Token pane for jwt.ms" lightbox="../media/api-jwt-ms.png":::
 
-### Lets get the Alerts!
+### Let's get the Alerts!
 
 - The script below will use **Get-Token.ps1** to access the API and will get the past 48 hours Alerts.
 - Save this script in the same folder you saved the previous script **Get-Token.ps1**.

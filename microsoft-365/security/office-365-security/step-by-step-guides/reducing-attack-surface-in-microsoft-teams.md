@@ -44,7 +44,7 @@ Microsoft Teams is a widely used collaboration tool, where many users are now sp
 
 If licensed for Microsoft Defender for Office 365 (free 90-day evaluation available at aka.ms/trymdo) you can ensure seamless protection from zero-day malware and time of click protection within Microsoft Teams.
 
-[Learn More (SafeLinks)](/microsoft-365/security/office-365-security/safe-links#safe-links-settings-for-microsoft-teams) & [Learn More (Safe Attachments)](/microsoft-365/security/office-365-security/turn-on-mdo-for-spo-odb-and-teams) (Detailed Documentation)
+[Learn More (SafeLinks)](../safe-links-about.md#safe-links-settings-for-microsoft-teams) & [Learn More (Safe Attachments)](../safe-attachments-for-spo-odfb-teams-configure.md) (Detailed Documentation)
 
 1. **Login** to the security center's safe attachments configuration page at <https://security.microsoft.com/safeattachmentv2>.
 2. Press **Global settings**.
@@ -54,8 +54,8 @@ If licensed for Microsoft Defender for Office 365 (free 90-day evaluation availa
 6. **Select** a policy, a flyout appears on the left-hand side.
 7. Press **Edit protection settings**.
 8. Ensure **Safe Links checks a list of known, malicious links when users click links in Microsoft Teams** is checked.
-1. Press **Save**.
-1. In organizations with Microsoft Defender for Office 365 Plan 2 or Microsoft 365 Defender, admins can decide whether users can report malicious messages in Microsoft Teams. Learn more here. [User reported message settings in Microsoft Teams](/microsoft-365/security/office-365-security/submissions-teams)
+9. Press **Save**.
+10. In organizations with Microsoft Defender for Office 365 Plan 2 or Microsoft Defender XDR, admins can decide whether users can report malicious messages in Microsoft Teams. Learn more here. [User reported message settings in Microsoft Teams](../submissions-teams.md)
 
 ## Restricting channel email messages to approved domains
 
@@ -112,7 +112,7 @@ You can reduce the risk of unwanted or inappropriate content being shared during
 1. **Login** to the Teams admin center at: <https://admin.teams.microsoft.com/>.
 2. On the left-hand navigation, expand **Meetings** and then choose **Meeting Policies**.
 3. If you've assigned any custom or built-in policies to users, you'll need to do these steps for each of them if appropriate, otherwise select **Global (Org-wide default)**.
-4. Under the **Content sharing** heading, set **Who can present** to **Only organizers and co-organizers**. 
+4. Under the **Content sharing** heading, set **Who can present** to **Only organizers and co-organizers**.
 5. Select **Save**.
 6. You need to change this setting for each policy.
 
@@ -133,7 +133,6 @@ Note that external organizations must also allow your organization's domain for 
 
 Consider configuring access policies to implement Zero Trust identity and device access policies to protect Microsoft Teams chats, groups, and content such as files and calendars.
 
-Learn more about teams access policies: [Recommended Teams policies - Microsoft 365 for enterprise - Office 365 | Microsoft Docs](/microsoft-365/security/office-365-security/teams-access-policies)
+Learn more about teams access policies: [Policy recommendations for securing Teams chats, groups, and files](../zero-trust-identity-device-access-policies-teams.md).
 
-Security in Microsoft Teams:[Overview of security and compliance - Microsoft Teams | Microsoft Docs](/microsoftteams/security-compliance-overview)
-
+Security in Microsoft Teams: [Overview of security and compliance - Microsoft Teams | Microsoft Docs](/microsoftteams/security-compliance-overview).

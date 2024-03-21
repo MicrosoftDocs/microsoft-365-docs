@@ -1,10 +1,9 @@
 ---
-title: Run an attack simulation in a Microsoft 365 Defender pilot environment
-description: Run attack simulations for Microsoft 365 Defender to see how alerts and incidents are presented, insights are gained, and threats are quickly remediated.
+title: Run an attack simulation in a Microsoft Defender XDR pilot environment
+description: Run attack simulations for Microsoft Defender XDR to see how alerts and incidents are presented, insights are gained, and threats are quickly remediated.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: m365d
+ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -27,30 +26,32 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ---
 
-# Run an attack simulation in a Microsoft 365 Defender pilot environment
+# Run an attack simulation in a Microsoft Defender XDR pilot environment
 
-This article is [Step 1 of 2](eval-defender-investigate-respond.md) in the process of performing an investigation and response of an incident in Microsoft 365 Defender using a pilot environment. For more information about this process, see the [overview](eval-defender-investigate-respond.md) article.
+This article is [Step 1 of 2](eval-defender-investigate-respond.md) in the process of performing an investigation and response of an incident in Microsoft Defender XDR using a pilot environment. For more information about this process, see the [overview](eval-defender-investigate-respond.md) article.
 
-After preparing your [pilot environment](eval-defender-investigate-respond.md), it's time to test Microsoft 365 Defender's incident response and automated investigation and remediation capabilities by creating an incident with a simulated attack and using the Microsoft 365 Defender portal to investigate and respond.
+After preparing your [pilot environment](eval-defender-investigate-respond.md), it's time to test Microsoft Defender XDR's incident response and automated investigation and remediation capabilities by creating an incident with a simulated attack and using the Microsoft Defender portal to investigate and respond.
 
-An incident in Microsoft 365 Defender is a collection of correlated alerts and associated data that make up the story of an attack.
+An incident in Microsoft Defender XDR is a collection of correlated alerts and associated data that make up the story of an attack.
 
 Microsoft 365 services and apps create alerts when they detect a suspicious or malicious event or activity. Individual alerts provide valuable clues about a completed or ongoing attack. However, attacks typically employ various techniques against different types of entities, such as devices, users, and mailboxes. The result is multiple alerts for multiple entities in your tenant.
 
 > [!NOTE]
 > If you are brand new to security analysis and incident response, see the [Respond to your first incident walkthrough](first-incident-overview.md) to get a guided tour of a typical process of analysis, remediation, and post-incident review.
 
-## Simulate attacks with the Microsoft 365 Defender portal
+<a name='simulate-attacks-with-the-microsoft-365-defender-portal'></a>
 
-The Microsoft 365 Defender portal has built-in capabilities to create simulated attacks on your pilot environment:
+## Simulate attacks with the Microsoft Defender portal
 
-- Attack simulation training for Microsoft 365 Defender for Office 365 at [https://security.microsoft.com/attacksimulator](https://security.microsoft.com/attacksimulator).
+The Microsoft Defender portal has built-in capabilities to create simulated attacks on your pilot environment:
 
-  In the Microsoft 365 Defender portal, select **Email & collaboration > Attack simulation training**.
+- Attack simulation training for Microsoft Defender XDR for Office 365 at [https://security.microsoft.com/attacksimulator](https://security.microsoft.com/attacksimulator).
 
-- Attack tutorials & simulations for Microsoft 365 Defender for Endpoint at [https://security.microsoft.com/tutorials/simulations](https://security.microsoft.com/tutorials/simulations).
+  In the Microsoft Defender portal, select **Email & collaboration > Attack simulation training**.
 
-  In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, select **Endpoints > Tutorials & simulations**.
+- Attack tutorials & simulations for Microsoft Defender XDR for Endpoint at [https://security.microsoft.com/tutorials/simulations](https://security.microsoft.com/tutorials/simulations).
+
+  In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a>, select **Endpoints > Tutorials & simulations**.
 
 ### Defender for Office 365 Attack simulation training
 
@@ -101,7 +102,7 @@ First, you need to add endpoints to your pilot environment.
 
 First, you need to add an isolated AD DS domain controller and a Windows device to your pilot environment.
 
-1. Verify your pilot environment tenant has [enabled Microsoft 365 Defender](m365d-enable.md#confirm-that-the-service-is-on).
+1. Verify your pilot environment tenant has [enabled Microsoft Defender XDR](m365d-enable.md#confirm-that-the-service-is-on).
 
 2. Verify that your domain controller:
 
@@ -183,9 +184,9 @@ To see the Automated Incident and Response feature in action, keep the notepad.e
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bzwz?]
 
-Switching to the SOC analyst point of view, you can now start to investigate the attack in the Microsoft 365 Defender portal.
+Switching to the SOC analyst point of view, you can now start to investigate the attack in the Microsoft Defender portal.
 
-1. Open the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
+1. Open the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a>.
 
 2. From the navigation pane, select **Incidents & Alerts > Incidents**.
 
@@ -195,19 +196,19 @@ Switching to the SOC analyst point of view, you can now start to investigate the
 
 #### Investigate the attack as a single incident
 
-Microsoft 365 Defender correlates analytics and aggregates all related alerts and investigations from different products into one incident entity. By doing so, Microsoft 365 Defender shows a broader attack story, allowing the SOC analyst to understand and respond to complex threats.
+Microsoft Defender XDR correlates analytics and aggregates all related alerts and investigations from different products into one incident entity. By doing so, Microsoft Defender XDR shows a broader attack story, allowing the SOC analyst to understand and respond to complex threats.
 
 The alerts generated during this simulation are associated with the same threat, and as a result, are automatically aggregated as a single incident.
 
 To view the incident:
 
-1. Open the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
+1. Open the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a>.
 
 2. From the navigation pane, select **Incidents & Alerts > Incidents**.
 
 3. Select the newest item by clicking on the circle located left of the incident name. A side panel displays additional information about the incident, including all the related alerts. Each incident has a unique name that describes it based on the attributes of the alerts it includes.
 
-   The alerts that are shown in the dashboard can be filtered based on service resources: Microsoft Defender for Identity, Microsoft Defender for Cloud Apps, Microsoft Defender for Endpoint, Microsoft 365 Defender, and Microsoft Defender for Office 365.
+   The alerts that are shown in the dashboard can be filtered based on service resources: Microsoft Defender for Identity, Microsoft Defender for Cloud Apps, Microsoft Defender for Endpoint, Microsoft Defender XDR, and Microsoft Defender for Office 365.
 
 4. Select **Open incident page** to get more information about the incident.
 
@@ -220,7 +221,7 @@ To view the incident:
 Let's look at some of the alerts generated during the simulated attack.
 
 > [!NOTE]
-> We'll walk through only a few of the alerts generated during the simulated attack. Depending on the version of Windows and the Microsoft 365 Defender products running on your test device, you might see more alerts that appear in a slightly different order.
+> We'll walk through only a few of the alerts generated during the simulated attack. Depending on the version of Windows and the Microsoft Defender XDR products running on your test device, you might see more alerts that appear in a slightly different order.
 
 :::image type="content" source="../../media/mtp/fig6.png" alt-text="An example of a generated alert" lightbox="../../media/mtp/fig6.png":::
 
@@ -292,7 +293,7 @@ Select the user name to open the user's profile page where further investigation
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4BzwB]
 
-Navigate back to the incident in the Microsoft 365 Defender portal. The **Investigations** tab in the **Incident** page shows the automated investigations that were triggered by Microsoft Defender for Identity and Microsoft Defender for Endpoint. The screenshot below displays only the automated investigation triggered by Defender for Endpoint. By default, Defender for Endpoint automatically remediates the artifacts found in the queue, which requires remediation.
+Navigate back to the incident in the Microsoft Defender portal. The **Investigations** tab in the **Incident** page shows the automated investigations that were triggered by Microsoft Defender for Identity and Microsoft Defender for Endpoint. The screenshot below displays only the automated investigation triggered by Defender for Endpoint. By default, Defender for Endpoint automatically remediates the artifacts found in the queue, which requires remediation.
 
 :::image type="content" source="../../media/mtp/fig14.png" alt-text="An example of the automated investigations related to the incident" lightbox="../../media/mtp/fig14.png":::
 
@@ -320,17 +321,17 @@ From the **Incident** page, select **Manage incident**. Set the status to **Reso
 
 :::image type="content" source="../../media/mtp/fig16.png" alt-text="An example of the incidents page with the open Manage incident panel where you can click the switch to resolve incident" lightbox="../../media/mtp/fig16.png":::
 
-When the incident is resolved, it resolves all of the associated alerts in the Microsoft 365 Defender portal and the related portals.
+When the incident is resolved, it resolves all of the associated alerts in the Microsoft Defender portal and the related portals.
 
 This wraps up attack simulations for incident analysis, automated investigation, and incident resolution.
 
 ## Next step
 
-[:::image type="content" source="../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-step2.png" alt-text="The Microsoft 365 Defender incident response capabilities" lightbox="../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-step2.png":::](eval-defender-investigate-respond-additional.md)
+[:::image type="content" source="../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-step2.png" alt-text="The Microsoft Defender XDR incident response capabilities" lightbox="../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-step2.png":::](eval-defender-investigate-respond-additional.md)
 
-Step 2 of 2: [Try Microsoft 365 Defender incident response capabilities](eval-defender-investigate-respond-additional.md)
+Step 2 of 2: [Try Microsoft Defender XDR incident response capabilities](eval-defender-investigate-respond-additional.md)
 
 ### Navigation you may need
 
-[Create the Microsoft 365 Defender Evaluation Environment](eval-create-eval-environment.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[Create the Microsoft Defender XDR Evaluation Environment](eval-create-eval-environment.md)
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

@@ -2,7 +2,7 @@
 title: Microsoft Teams EHR connector Virtual Appointments report
 author: lana-chin
 ms.author: v-chinlana
-manager: serdars
+manager: jtremper
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-frontline
@@ -25,7 +25,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.reviewer: 
+ms.reviewer: beolson, ansantam
 description: Learn how to use the Teams EHR connector Virtual Appointments report in the Microsoft Teams admin center to get an overview of EHR-integrated virtual appointment usage in your organization. 
 ms.date: 12/16/2022
 ---

@@ -2,27 +2,25 @@
 
 
 
-## Week of October 02, 2023
+## Week of February 26, 2024
 
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 10/5/2023 | [Get started with Microsoft 365 Copilot](/microsoft-365-copilot/microsoft-365-copilot-setup) | modified |
+| 2/29/2024 | [Get started with Microsoft Copilot for Microsoft 365](/microsoft-365-copilot/microsoft-365-copilot-setup) | modified |
 
 
-## Week of September 25, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 9/26/2023 | [Data, Privacy, and Security for Microsoft 365 Copilot](/microsoft-365-copilot/microsoft-365-copilot-privacy) | added |
-
-
-## Week of September 18, 2023
+## Week of February 12, 2024
 
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 9/21/2023 | [Enable users for Microsoft 365 Copilot](/microsoft-365-copilot/microsoft-365-copilot-enable-users) | added |
-| 9/21/2023 | [Microsoft 365 Copilot overview](/microsoft-365-copilot/microsoft-365-copilot-overview) | added |
-| 9/21/2023 | [Microsoft 365 Copilot Requirements](/microsoft-365-copilot/microsoft-365-copilot-requirements) | added |
+| 2/13/2024 | [Microsoft Copilot for Microsoft 365 documentation # < 60 chars](/microsoft-365-copilot/index) | modified |
+
+
+## Week of January 29, 2024
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 2/2/2024 | [Microsoft Copilot for Microsoft 365 requirements](/microsoft-365-copilot/microsoft-365-copilot-requirements) | modified |

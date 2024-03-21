@@ -1,10 +1,10 @@
 ---
-title: "Manage tenants using insights in Microsoft 365 Lighthouse"
+title: "Manage tenants by using deployment insights in Microsoft 365 Lighthouse"
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: kywirpel
+ms.reviewer: shcallaw
 ms.date: 05/05/2023
 audience: Admin
 ms.topic: article
@@ -19,12 +19,12 @@ ms.custom:
 - AdminSurgePortfolib
 - M365-Lighthouse                         
 search.appverid: MET150
-description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn how to manage tenants using insights."
+description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn how to manage tenants by using deployment insights."
 ---
 
-# Manage tenants using insights in Microsoft 365 Lighthouse
+# Manage tenants by using deployment insights in Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse provides deployment insights within and across the tenants you manage. The single view enables you to:
+Microsoft 365 Lighthouse provides deployment insights within and across the tenants you manage. The single view lets you:
 
 - Understand the deployment status across all tenants, users, and tasks.
 - Review deployment exceptions such as **Dismissed** tasks and **Excluded** users.
@@ -32,9 +32,9 @@ Microsoft 365 Lighthouse provides deployment insights within and across the tena
 - Quantify threats based on user- and task-level deployment progress.
 - Prioritize deployment activities based on risk.
 
-## Manage deployment progress using deployment insights
+## Manage deployment progress by using deployment insights
 
-1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Deployment** > **Deployment insights**.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Deployment** > **Deployment insights**.
 
 2. On the **Deployment insights** page, review the following areas to gather insight on your tenants' deployment progress.
 
@@ -49,7 +49,7 @@ For additional solutions for common deployment issues, see [Deploying baselines]
 
 ## Review regressed tasks
 
-1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Deployment** > **Deployment insights**.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Deployment** > **Deployment insights**.
 
 2. From the Tenants list, review tenants with regressed tasks indicated by the **Regressed tasks** column.
 
@@ -59,15 +59,15 @@ For additional solutions for common deployment issues, see [Deploying baselines]
 
 5. From the **Deployment plan** tab, select the regressed task from the list.
 
-6. Review the tenant's configuration and depending on the regression scenario, you can modify the deployment task, modify the tenant's configuration, modify the tenant's licensing, or dismiss the task to resolve the regression.
+6. Review the tenant's configuration and, depending on the regression scenario, modify the deployment task, modify the tenant's configuration, modify the tenant's licensing, or dismiss the task to resolve the regression.
 
-## Audit deployment exceptions using deployment insights
+## Audit deployment exceptions by using deployment insights
 
 Every dismissed task and excluded user represent a potential threat. You can audit these exceptions to ensure they still meet your requirements.
 
 ### Audit dismissed tasks
 
-1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Deployment** > **Deployment insights**.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Deployment** > **Deployment insights**.
 
 2. From the Tenants list, select the tenant with a dismissed task.
 
@@ -79,7 +79,7 @@ Every dismissed task and excluded user represent a potential threat. You can aud
 
 ### Audit excluded users
 
-1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Deployment** > **Deployment insights**.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Deployment** > **Deployment insights**.
 
 2. From the Tenants list, select the tenant with an **Excluded** user.
 

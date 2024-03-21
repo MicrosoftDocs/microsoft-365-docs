@@ -1,17 +1,13 @@
 ---
 title: Device discovery overview
-description: Learn how to leverage endpoint discovery in Microsoft 365 Defender to find unmanaged devices in your network
-keywords: device discovery, discover, passive, proactive, network, visibility, server, workstation, onboard, unmanaged devices
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+description: Learn how to leverage endpoint discovery in Microsoft Defender XDR to find unmanaged devices in your network
+ms.service: defender-endpoint
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: mjcaparas
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security
@@ -20,19 +16,18 @@ ms.collection:
 - tier1
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.subservice: mde
 search.appverid: met150
 ms.date: 05/11/2023
 ---
 
 # Device discovery overview
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Protecting your environment requires taking inventory of the devices that are in your network. However, mapping devices in a network can often be expensive, challenging, and time-consuming.
 
@@ -81,7 +76,7 @@ To assess these devices, you can use a filter in the device inventory list calle
 - Unsupported: The endpoint was discovered in the network but isn't supported by Microsoft Defender for Endpoint.
 - Insufficient info: The system couldn't determine the supportability of the device. Enabling standard discovery on more devices in the network can enrich the discovered attributes.
 
-:::image type="content" source="images/2b62255cd3a9dd42f3219e437b956fb9.png" alt-text="The device inventory dashboard" lightbox="images/2b62255cd3a9dd42f3219e437b956fb9.png":::
+:::image type="content" source="media/2b62255cd3a9dd42f3219e437b956fb9.png" alt-text="The device inventory dashboard" lightbox="media/2b62255cd3a9dd42f3219e437b956fb9.png":::
 
 > [!TIP]
 > You can always apply filters to exclude unmanaged devices from the device inventory list. You can also use the onboarding status column on API queries to filter out unmanaged devices.
@@ -107,13 +102,13 @@ To address the challenge of gaining enough visibility to locate, identify, and s
 Vulnerabilities and risks on your devices as well as other discovered unmanaged devices in the network are part of the current Defender Vulnerability Management flows under "Security Recommendations" and represented in entity pages across the portal.
 Search for "SSH" related security recommendations to find SSH vulnerabilities that are related for unmanaged and managed devices.
 
-:::image type="content" source="images/1156c82ffadd356ce329d1cf551e806c.png" alt-text="The security recommendations dashboard" lightbox="images/1156c82ffadd356ce329d1cf551e806c.png":::
+:::image type="content" source="media/1156c82ffadd356ce329d1cf551e806c.png" alt-text="The security recommendations dashboard" lightbox="media/1156c82ffadd356ce329d1cf551e806c.png":::
 
 ## Use advanced hunting on discovered devices
 
 You can use advanced hunting queries to gain visibility on discovered devices. Find details about discovered devices in the DeviceInfo table, or network-related information about those devices, in the DeviceNetworkInfo table.
 
-:::image type="content" source="images/f48ba1779eddee9872f167453c24e5c9.png" alt-text="The Advanced hunting page on which queries can be used" lightbox="images/f48ba1779eddee9872f167453c24e5c9.png":::
+:::image type="content" source="media/f48ba1779eddee9872f167453c24e5c9.png" alt-text="The Advanced hunting page on which queries can be used" lightbox="media/f48ba1779eddee9872f167453c24e5c9.png":::
 
 ### Query discovered devices details
 
