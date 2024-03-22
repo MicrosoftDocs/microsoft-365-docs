@@ -23,7 +23,7 @@ description: "An overview of the Microsoft Bookings app, which includes a web-ba
 
 Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
-Microsoft Bookings makes scheduling and managing appointments a breeze. It helps you schedule and manage appointments with your customers, clients, or colleagues. Whether you need to book time to meet people or set aside time for different meetings, Bookings makes it easy and convenient for both you and your attendees. Bookings includes a web-based booking page which integrates with Outlook to optimize your calendar and give your customers the flexibility to book a time that works best for them. Email and SMS text notifications reduce no-shows and enhance customer satisfaction. Your organization saves time with a reduction in repetitive scheduling tasks. With built-in flexibility and ability to customize, Bookings can be designed to fit the situation and needs of many different parts of an organization. 
+Microsoft Bookings makes scheduling and managing appointments a breeze. It helps you schedule and manage appointments with your customers, clients, or colleagues. Whether you need to book time to meet people or set aside time for different meetings, Bookings makes it easy and convenient for both you and your attendees. Bookings includes a web-based booking page, which integrates with Outlook to optimize your calendar and give your customers the flexibility to book a time that works best for them. Email and SMS text notifications reduce no-shows and enhance customer satisfaction. Your organization saves time with a reduction in repetitive scheduling tasks. With built-in flexibility and ability to customize, Bookings can be designed to fit the situation and needs of many different parts of an organization. 
 
 > [!NOTE]
 > The Bookings calendar is a mailbox in Exchange Online.
@@ -38,12 +38,12 @@ Bookings makes it easier for small businesses to schedule and manage appointment
 Use Bookings to make your organization’s meetings virtual with online meetings via [Microsoft Teams](https://support.microsoft.com/office/overview-of-the-bookings-app-in-teams-7b8569e1-0c8a-444e-b712-d9968b05110b) and Skype for Business. Each appointment booked as an online meeting creates a unique meeting link that is sent to attendees so they can join via a web browser, phone dial-in, or the Skype or Teams app. Bookings is also available as an [app in Teams](https://support.microsoft.com/office/overview-of-the-bookings-app-in-teams-7b8569e1-0c8a-444e-b712-d9968b05110b), which allows you to create Booking pages, declare your availability, add team members, and both schedule new and manage existing appointments. 
 
 ## Personal Bookings 
-Personal bookings is how you manage your own appointment timeslots, it allows you to easily configure and share your availability with your customers, clients, or colleagues. You can be in charge of your own time and avoid the back and forth of scheduling. You can also set aside time for specific activities by creating meeting types. Once you create a personal booking page, you can share a link with anyone who can then see your availability and easily schedule a time when you are free and is convenient for them. 
+Personal bookings is how you manage your own appointment timeslots, it allows you to easily configure and share your availability with your customers, clients, or colleagues. You can be in charge of your own time and avoid the back and forth of scheduling. You can also set aside time for specific activities by creating meeting types. Once you create a personal booking page, you can share a link with anyone who can then see your availability and easily schedule a time when you're free and is convenient for them. 
 
 ## Shared Bookings 
 Shared bookings are booking pages that you create and manage for your team. They allow you to invite your team members to let your customers book time with you and your team. 
 
-It is made up of these components: 
+It's made up of these components: 
 
 A booking page where your customers and clients can schedule appointments with the staff members who should provide the service or run the appointment. This web-based booking page can be shared via a direct link, your Facebook page, and even through link embedding within your website. 
 
