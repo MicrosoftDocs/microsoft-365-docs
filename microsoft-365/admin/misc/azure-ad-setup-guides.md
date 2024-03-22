@@ -11,6 +11,8 @@ ms.localizationpriority: medium
 ms.collection: 
 - Tier3
 - scotvorg
+ms.custom: 
+- admindeeplinkMAC
 description: "Learn about setup guides for Microsoft Entra ID."
 ---
 
@@ -69,7 +71,7 @@ Respond faster to identity changes in your HR app and eliminate manual provision
 
 Easily manage your users' lifecycle in Microsoft Entra ID by creating custom workflows to automate repetitive onboarding and offboarding tasks, eliminating the need for manual processes. Lifecycle workflows automatically execute configured tasks when users join or leave your org and provide insights for easy troubleshooting.
 
-[Open the Identity Governance setup guide](https://admin.microsoft.com/adminportal/home?Q=azuredocs#/modernonboarding/identitygovernance)
+<a href="https://go.microsoft.com/fwlink/p/?linkid=386330" target="_blank">Open the Identity Governance setup guide</a>
 
 > [!NOTE]
 > A Microsoft Entra ID Governance or Microsoft Entra ID P2 license is required to utilize the security features in this catalog.
@@ -82,7 +84,8 @@ The Microsoft Entra setup guide will help you set up the most common Microsoft E
 
 The setup guides contain a checklist of the tasks you need to complete, and you can track your progress as you go through the guides. The guides will also link to the other setup guides when necessary.
 
-[Open the Microsoft Entra setup guide](https://admin.microsoft.com/adminportal/home?Q=azuredocs#/modernonboarding/azureadsetup).
+<a href="https://go.microsoft.com/fwlink/p/?linkid=2134390
+" target="_blank">Open the Microsoft Entra setup guide</a>.
 
 ## Add or sync users to Microsoft Entra ID  
 
@@ -92,7 +95,7 @@ This guide helps you set up user accounts setup in Microsoft Entra ID and Micros
 
 Using Microsoft Entra ID Sync tools is free and included with all Microsoft 365 subscriptions.
 
-[Open the Add or Sync users setup guide](https://admin.microsoft.com/adminportal/home?Q=azuredocs#/modernonboarding/identitywizard).
+<a href="https://go.microsoft.com/fwlink/p/?linkid=2264742" target="_blank">Open the Add or Sync users setup guide</a>
 
 ## Secure your cloud apps with Single Sign On (SSO)
 
@@ -122,7 +125,7 @@ SSPR requires one of the following licenses:
 
 - Enterprise Mobility and Security E3 or E5
 
-[Open the self-service password reset setup guide](https://admin.microsoft.com/adminportal/home?Q=azuredocs#/modernonboarding/ssprsetup).
+<a href="https://go.microsoft.com/fwlink/p/?linkid=2264852" target="_blank">Open the self-service password reset setup guide</a>
 
 ## Configure multi-factor authentication (MFA)
 
@@ -132,7 +135,7 @@ For customers with Microsoft Entra ID Governance, Microsoft Entra ID P1, or P2, 
 
 Conditional Access requires Microsoft Entra ID Governance or a Microsoft Entra ID P1 or P2 license. Security defaults and per-user MFA are included with all Microsoft 365 subscriptions.
 
-[Open the multi-factor authentication (MFA) guide](https://admin.microsoft.com/adminportal/home?Q=azuredocs#/modernonboarding/mfasetupguide)
+<a href="https://go.microsoft.com/fwlink/p/?linkid=2264944" target=")_blank">Open the multi-factor authentication (MFA) guide</a>
 
 ## Plan your passwordless setup guide
 
@@ -152,7 +155,7 @@ Use the passwordless deployment guide to discover the best authentication method
 
 Every paid subscription to Microsoft 365 comes with a free subscription to Microsoft Entra ID. You can use Microsoft Entra ID to manage your apps and create and manage user and group accounts.
 
-[Open the passwordless setup guide](https://admin.microsoft.com/adminportal/home?Q=azuredocs#/modernonboarding/passwordlesssetup).
+<a href="https://go.microsoft.com/fwlink/p/?linkid=2204974" target="_blank">Open the passwordless setup guide</a>
 
 <a name='migrate-from-adfs-to-azure-ad'></a>
 
@@ -160,4 +163,5 @@ Every paid subscription to Microsoft 365 comes with a free subscription to Micro
 
 We offer custom guidance for migrating from ADFS to Microsoft Entra ID. Answer a few questions about your Active Directory Federation Services (AD FS) infrastructure and then implement either pass-through authentication (PTA) or password hash sync (PHS) to give users a streamlined experience while accessing your org's apps.
 
-[Open the Migrate from ADFS to Microsoft Entra ID guide](https://admin.microsoft.com/adminportal/home?Q=azuredocs#/modernonboarding/MigrateADFSToMicrosoftAzureAD).
+<a href="https://go.microsoft.com/fwlink/p/?linkid=2264847
+" target="_blank">Open the Migrate from ADFS to Microsoft Entra ID guide</a>

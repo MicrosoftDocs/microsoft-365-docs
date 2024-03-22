@@ -24,6 +24,7 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- admindeeplinkMAC
 search.appverid:
 - MET150
 - MOE150
@@ -41,7 +42,7 @@ You can add users in the wizard, but you can also [add users later](../add-users
 
  ::: moniker range="o365-worldwide"
 
-1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
+1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.cloud.microsoft.com</a>.
 
 ::: moniker-end
 
@@ -65,7 +66,7 @@ Once you've created accounts for other people in your business, you and your tea
   
 ::: moniker range="o365-worldwide"
 
-Go to [https://admin.microsoft.com/OLS/MySoftware.aspx](https://admin.microsoft.com/OLS/MySoftware.aspx).
+Go to **My accounts** > <a href="https://go.microsoft.com/fwlink/?linkid=2265141" target="_blank">Apps & devices</a>.
 
 ::: moniker-end
 
