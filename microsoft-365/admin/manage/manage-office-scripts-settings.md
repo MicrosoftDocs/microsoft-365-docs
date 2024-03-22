@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.date: 08/12/2020
+ms.date: 03/22/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -37,13 +37,13 @@ description: "Learn how to manage Office Scripts settings for users in your orga
 
 2. Select **Office Scripts**.
 
-3. Office Scripts is turned on by default, and everyone in your organization can access and use the feature and share scripts. To turn off Office Scripts for your organization, clear the **Let users automate their tasks in Excel** check box.
+3. Office Scripts is turned on by default, and everyone in your organization can access and use the feature and share scripts. To turn off Office Scripts for your organization, clear the **Let users automate their tasks in Excel** checkbox.
 
 4. If you previously turned off Office Scripts for your organization and you want to turn it back on, select **Let users automate their tasks in Excel**, and then specify who can access and use the feature:
 
     - To allow all users in your organization to access and use Office Scripts, leave **Everyone** (the default) selected.
 
-    - To allow only members of a specific group to access and use Office Scripts, select **Specific group**, and then enter the name or email alias of the group to add it to the allow list. You may add only one group to the allowlist, and it must be one of the following types:
+    - To allow only members of a specific group to access and use Office Scripts, select **Specific group**, and then enter the name or email alias of the group to add it to the allow list. You may add only one group to the allow list, and it must be one of the following types:
         - Microsoft 365 group
         - Distribution group
         - Security group
@@ -60,7 +60,7 @@ description: "Learn how to manage Office Scripts settings for users in your orga
 
     - To allow all users with access to Office Scripts to share their scripts, leave **Everyone** (the default) selected.
 
-    - To allow only members of a specific group with access to Office Scripts to share their scripts, select **Specific group**, and then enter the name or email alias of the group to add it to the allow list. You may add only one group to the allowlist, and it must be one of the following types:
+    - To allow only members of a specific group with access to Office Scripts to share their scripts, select **Specific group**, and then enter the name or email alias of the group to add it to the allow list. You may add only one group to the allow list, and it must be one of the following types:
         - Microsoft 365 group
         - Distribution group
         - Security group
@@ -68,11 +68,11 @@ description: "Learn how to manage Office Scripts settings for users in your orga
 
         To learn more about the different types of groups, see [Compare groups](../create-groups/compare-groups.md).
 
-7. To allow users to run their Office Scripts inside Power Automate flows, select **Let users with access to Office Scripts run their scripts with Power Automate**. This allows users to add flow steps with the [Excel Online (Business) Connector's](/connectors/excelonlinebusiness) **Run script** option.
+7. To allow users to run their Office Scripts inside Power Automate flows, select **Let users with access to Office Scripts run their scripts with Power Automate**. This allows users to add flow steps with the [Excel Online (Business) connector](/connectors/excelonlinebusiness) **Run script** option.
 
     - To allow all users with access to Office Scripts to use their scripts in flows, leave **Everyone** (the default) selected.
 
-    - To allow only members of a specific group with access to Office Scripts to use their scripts in flows, select **Specific group**, and then enter the name or email alias of the group to add it to the allow list. You may add only one group to the allowlist, and it must be one of the following types:
+    - To allow only members of a specific group with access to Office Scripts to use their scripts in flows, select **Specific group**, and then enter the name or email alias of the group to add it to the allow list. You may add only one group to the allow list, and it must be one of the following types:
         - Microsoft 365 group
         - Distribution group
         - Security group
@@ -98,11 +98,11 @@ To learn more, see [Use Group Policy to configure update settings for Microsoft 
 
 ## Next steps
 
-Because Office Scripts works with Power Automate, we recommend that you review your existing Microsoft Purview Data Loss Prevention (DLP) policies to ensure your organization's data remains protected while users use Office Scripts. For more information, see [Data loss prevention (DLP) policies](/power-automate/prevent-data-loss).
+Because Office Scripts works with Power Automate, we recommend that you review your existing Microsoft Purview Data Loss Prevention (DLP) policies to ensure your organization's data remains protected while users use Office Scripts. For more information, see [Set a policy to help prevent data loss](/power-automate/prevent-data-loss).
 
 ## Related content
 
 [Office Scripts technical documentation](/office/dev/scripts/) (link page)\
 [Introduction to Office Scripts in Excel](https://support.microsoft.com/office/9fbe283d-adb8-4f13-a75b-a81c6baf163a) (article)\
 [Sharing Office Scripts in Excel](https://support.microsoft.com/office/226eddbc-3a44-4540-acfe-fccda3d1122b) (article)\
-[Record, edit, and create Office Scripts in Excel](/office/dev/scripts/tutorials/excel-tutorial) (article)
+[Record, edit, and create Office Scripts in Excel](/office/dev/scripts/tutorials/excel-tutorial) (tutorial)
