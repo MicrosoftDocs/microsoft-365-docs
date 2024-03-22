@@ -86,9 +86,9 @@ You can view actual and accumulated cost breakdown by tenants and service type f
 
 3. Select **Cost analysis** to see:
 
-    - Accumulated cost and forecast cost
+    - Accumulated cost and forecast cost.
 
-    - Select **+Add Filter** to see breakdown of cost by meters and tags
+    - Select **+Add Filter** to see breakdown of cost by meters and tags.
 
        ![Screenshot of the cost analysis page in Microsoft Cost Management.](../../media/content-understanding/backup-cost-analysis.png)
 
