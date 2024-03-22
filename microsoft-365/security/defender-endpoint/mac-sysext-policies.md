@@ -56,7 +56,7 @@ Add the following JAMF payload to grant Full Disk Access to the Microsoft Defend
 3. Set Code Requirement to `identifier "com.microsoft.wdav.epsext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`
 4. Set **App or service** to **SystemPolicyAllFiles** and access to **Allow**.
 
-   :::image type="content" source="images/mac-system-extension-privacy.png" alt-text=" The Privacy Preferences Policy Control menu item" lightbox="images/mac-system-extension-privacy.png":::
+   :::image type="content" source="media/mac-system-extension-privacy.png" alt-text=" The Privacy Preferences Policy Control menu item" lightbox="media/mac-system-extension-privacy.png":::
 
 ### Network Extension Policy
 
@@ -184,7 +184,7 @@ To approve the system extensions:
    |com.microsoft.wdav.netext|UBF8T346G9|
    |||
 
-   :::image type="content" source="images/mac-system-extension-intune2.png" alt-text=" The System configuration profiles page" lightbox="images/mac-system-extension-intune2.png":::
+   :::image type="content" source="media/mac-system-extension-intune2.png" alt-text=" The System configuration profiles page" lightbox="media/mac-system-extension-intune2.png":::
 
 5. In the `Assignments` tab, assign this profile to **All Users & All devices**.
 6. Review and create this configuration profile.
@@ -306,7 +306,7 @@ To deploy this custom configuration profile:
 3. Open the configuration profile and upload **sysext.xml**. This file was created in the preceding step.
 4. Select **OK**.
 
-   :::image type="content" source="images/mac-system-extension-intune.png" alt-text=" The System extension in Intune page" lightbox="images/mac-system-extension-intune.png":::
+   :::image type="content" source="media/mac-system-extension-intune.png" alt-text=" The System extension in Intune page" lightbox="media/mac-system-extension-intune.png":::
 
 5. In the `Assignments` tab, assign this profile to **All Users & All devices**.
 6. Review and create this configuration profile.
