@@ -3,12 +3,11 @@ title: Understand frontline worker user types and licensing
 author: lana-chin
 ms.author: v-chinlana
 manager: jtremper
-ms.reviewer: aaglick
 ms.topic: conceptual
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
-description: Learn about the F1 and F3 licenses for the Microsoft 365 for frontline workers and what they include.
+description: Learn about the F1 and F3 licenses for Microsoft 365 for frontline workers and assigning licenses to the different types of users in your organization.
 ms.localizationpriority: high
 ms.collection: 
   - m365-frontline
@@ -16,7 +15,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 
+ms.date: 03/22/2024
 ---
 
 # Understand frontline worker user types and licensing
@@ -32,7 +31,7 @@ Microsoft 365 and Microsoft Teams have features and a licensing model to support
 
 ## Assign appropriate licenses to support frontline worker and information worker user types
 
-If it makes sense for your organization, you can assign different licenses to these different types of users. The following illustration shows one way to apply licenses and policies for Retail workers, for example:
+If it makes sense for your organization, you can assign different licenses to these different types of users. The following illustration shows one way to apply licenses and policies for retail workers, for example:
 
 :::image type="content" source="media/flw-license-options.png" alt-text="Mix license types to support the different roles in your organization. Use Enterprise licenses for your information workers, such as headquarters staff, and Frontline Worker licenses for mobile workers, such as store managers, sales associates, shipping staff, stockers, and pickers.":::
 
