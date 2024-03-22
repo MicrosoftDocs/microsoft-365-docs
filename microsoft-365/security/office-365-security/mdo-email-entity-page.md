@@ -38,9 +38,7 @@ To use the email entity page, you need to be assigned permissions. The permissio
 
 ## Where to find the Email entity page
 
-There are no direct links to the **Email entity** page from the Defender portal, because the URL contains specific details about the URL.
-
-The :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity** action is available in the Defender portal wherever you find details about email messages. For example:
+There are no direct links to the **Email entity** page from the Defender portal. Instead, the :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity** action is available in the Defender portal wherever you find details about email messages. For example:
 
 - Advanced Hunting
 - Alerts
@@ -51,7 +49,7 @@ The :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="f
   - Select the **Malware** view \> verify the **Email** tab (view) in the details area is selected \> click on the **Subject** value in an entry.
   - Select the **Phish** view \> verify the **Email** tab (view) in the details area is selected \> click on the **Subject** value in an entry.
 
-  **Open email entity** is available at the top of the Subject details flyout that opens. For more information, see [Email view for the details area of the All email view in Threat Explorer](threat-explorer-real-time-detections-about.md#email-view-for-the-details-area-of-the-all-email-view-in-threat-explorer).
+  **Open email entity** is available at the top of the email details flyout that opens. For more information, see [Email view for the details area of the All email view in Threat Explorer](threat-explorer-real-time-detections-about.md#email-view-for-the-details-area-of-the-all-email-view-in-threat-explorer).
 
 - **Quarantine**: On the **Quarantine** page at <https://security.microsoft.com/quarantine> \> verify the **Email** tab is selected \> select an entry by clicking anywhere in the row other than the check box. **Open email entity** is available at the top of the details flyout that opens. For more information, see [View quarantined email details](quarantine-admin-manage-messages-files.md#view-quarantined-email-details).
 - **Admin email submissions**: On the **Submissions** page at <https://security.microsoft.com/reportsubmission> \> select the **Emails** tab \> select an entry by clicking anywhere in the row other than the check box. **Open email entity** is available at the top of the details flyout that opens. For more information, see [View email attachment admin submissions to Microsoft](submissions-admin.md#view-email-attachment-admin-submissions-to-microsoft).
@@ -68,7 +66,7 @@ The details pane on the left side of the page contains collapsible sections with
   - **Original Threats**
   - **Original delivery location**
   - **Latest Threats**
-  - **Latest delivery location**
+  - **Latest delivery location**: The location of the message after system actions on the message (for example, [ZAP](zero-hour-auto-purge.md)), or admin actions on the message (for example, [Move to Deleted Items](threat-explorer-threat-hunting.md#email-remediation)). User actions on the message (for example, deleting or archiving the message) aren't shown, so this value doesn't guarantee the _current location_ of the message.
   - **Detection technology**
   - **Delivery action**
   - **Primary Override : Source**
@@ -82,7 +80,7 @@ The details pane on the left side of the page contains collapsible sections with
   - **Cluster ID**
   - **Language**
 
-  <sup>\*</sup> This property has a :::image type="icon" source="../../media/m365-cc-sc-copy-icon.png" border="false"::: **Copy** action available.
+  <sup>\*</sup> <sup>\*</sup> The :::image type="icon" source="../../media/m365-cc-sc-copy-icon.png" border="false"::: **Copy to clipboard** action is available to copy the value.
 
 ## Actions
 
@@ -139,16 +137,18 @@ The **Analysis** view contains information that helps you analyze the message in
   - **Confidence level**: Values are **High**, **Medium**, or **Low**.
   - **Priority account protection**: Values are **Yes** or **No**. For more information, see [Configure and review priority account protection in Microsoft Defender for Office 365](priority-accounts-turn-on-priority-account-protection.md).
 - **Email detection details** section: Information about protection features or overrides that affected the message:
-  - **All Overrides**
-  - **Primary Override : Source**
-  - **Exchange transport rules** (mail flow rules)
+  - **All Overrides**: All organization or user settings that had the possibility to alter the intended delivery location of the message. For example, if the message matched a mail flow rule and a block entry in the [Tenant Allow/Block List](tenant-allow-block-list-about.md), both settings are listed here. The **Primary Override : Source** property value identifies the setting that actually affected the delivery of the message.
+  - **Primary Override : Source**: Shows the organization or user setting that altered the intended delivery location of the message (allowed instead of blocked, or blocked instead of allowed). For example:
+    - The message was blocked by a mail flow rule.
+    - The message was allowed due to an entry in the user's [Safe Senders list](configure-junk-email-settings-on-exo-mailboxes.md).
+  - **Exchange transport rules** (mail flow rules): Actions taken on messages by mail flow rules occur before spam and phishing verdicts. If any mail flow rules acted on the message, the rule name and GUID aree shown here. For more information about mail flow rules, see [Mail flow rules (transport rules) in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules).
   - **Connector**
-  - **Bulk complaint level (BCL)**
+  - **Bulk complaint level (BCL)**: A higher BCL value indicates the message is more likely to be spam. For more information, see [Bulk complaint level (BCL) in EOP](anti-spam-bulk-complaint-level-bcl-about.md).
   - **Policy**: If a policy type is listed here (for example, **Spam**), select **Configure** :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: to open the related policy page (for example, the **Anti-spam policies** page at <https://security.microsoft.com/antispam>).
   - **Policy action**
   - **Alert ID**: Select the Alert ID value to open the details page for the alert (as if you found and selected the alert from the **Alerts** page at <https://security.microsoft.com/alerts>). The :::image type="icon" source="../../media/m365-cc-sc-copy-icon.png" border="false"::: **Copy to clipboard** action is also available to copy the Alert ID value.
   - **Policy type**
-  - **Client type**
+  - **Client type**: Shows the type of client that sent the message (for example, REST)
   - **Email size**
   - **Data loss prevention rules**
 - **Sender-Recipient details** section: Details about the message sender and some recipient information:
@@ -156,7 +156,7 @@ The **Analysis** view contains information that helps you analyze the message in
   - **Sender address**<sup>\*</sup>
   - **Sender IP**
   - **Sender domain name**<sup>\*</sup>
-  - **Domain creation date**
+  - **Domain creation date**:  A recently created domain and other message signals can identify the message as suspicious.
   - **Domain owner**
   - **Sender MAIL FROM address**<sup>\*</sup>
   - **Sender MAIL FROM domain name**<sup>\*</sup>
@@ -164,26 +164,40 @@ The **Analysis** view contains information that helps you analyze the message in
   - **Return-Path domain**
   - **Location**
   - **Recipient domain**<sup>\*</sup>
-  - **To**
-  - **Cc**
-  - **Distribution list**
-  - **Forwarding**
+  - **To**: Shows the first 5000 characters of any email addresses in the To field of the message.
+  - **Cc**: Shows the first 5000 characters of any email addresses in the Cc field of the message.
+  - **Distribution list**: Shows the distribution group (distribution list) if the recipient received the email as a member of the list. The top level distribution group is shown for nested distribution groups.
+  - **Forwarding**: Indicates whether the message was [automatically forwarded to an external email address](outbound-spam-policies-external-email-forwarding.md). The forwarding user and the forwarding type are shown (mail flow rules, Inbox rules, or SMTP forwarding).
 
   <sup>\*</sup> The :::image type="icon" source="../../media/m365-cc-sc-copy-icon.png" border="false"::: **Copy to clipboard** action is available to copy the value.
 
 - **Authentication** section: Details about [email authentication](email-authentication-about.md) results:
-  - **Domain-based Message Authentication (DMARC)**
-  - **DomainKeys identified mail (DKIM)**
-  - **Sender Policy Framework (SPF)**
-  - **Composite authentication**
+  - **[Domain-based Message Authentication (DMARC)](email-authentication-dmarc-configure.md)**
+    - `Pass`: The DMARC check for the message passed.
+    - `Fail`: The DMARC check for the message failed.
+    - `Bestguesspass`: The DMARC TXT record for the domain doesn't, but if one existed, the DMARC check for the message would have passed.
+    - None: Indicates that no DMARC TXT record exists for the sending domain in DNS.
+  - **[DomainKeys identified mail (DKIM)](email-authentication-dkim-configure.md)**: Values are:
+    - `Pass`: The DKIM check for the message passed.
+    - `Fail (reason)`: The DKIM check for the message failed. For example, the message wasn't DKIM signed or the DKIM signature wasn't verified.
+    - `None`: The message wasn't DKIM signed. This result might or might not indicate that the domain has a DKIM record, or that the DKIM record doesn't evaluate to a result. This result only indicates that this message wasn't signed.
+  - **[Sender Policy Framework (SPF)](email-authentication-spf-configure.md)**: Values are:
+    - `Pass (IP address)`: The SPF check found the message source is valid for the domain.
+    - `Fail (IP address)`: The SPF check found the message source isn't valid for the domain, and the enforcement rule in the SPF record is `-all` (hard fail).
+    - `Softfail (reason)`: The SPF check found the message source isn't valid for the domain, and the enforcement rule in the SPF record is `~all` (soft fail).
+    - `Neutral`: The SPF check found the message source isn't valid for the domain, and the enforcement rule in the SPF record is `?all` (neutral).
+    - `None`: The domain doesn't have an SPF record, or the SPF record doesn't evaluate to a result.
+    - `Temperror`: The SPF check encountered a temporary error (for example, a DNS error). The same check later might succeed.
+    - `Permerror`: The SPF check encountered a permanent error. For example, the domain has a [badly formatted SPF record](email-authentication-spf-configure.md#troubleshooting-spf-txt-records).
+  - **Composite authentication**: SPF, DKIM, DMARC, and other information is used to determine if the message sender (the From address) is authentic. For more information, see [Composite authentication](email-authentication-about.md#composite-authentication).
 - **Related entities** section: Information about attachments and URLs in the message:
   - **Entity**: Selecting **Attachments** or **URLs** takes you to the Attachments view or the URL view of the Email entity page for the message.
   - **Total count**
   - **Threats found**: The values are **Yes** or **No**.
 - Message details area:
-  - **Plain-text email header**: Contains the entire message header in plain text. Select :::image type="icon" source="../../media/m365-cc-sc-copy-icon.png" border="false"::: **Copy message header** to copy the message header. Select :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Microsoft Message Header Analyzer** to open the Message Header Analyzer at <https://mha.azurewebsites.net/pages/mha.html>. Paste the copied message header into the page, and then select **Analyze headers** for details about the message headers and values.
-  - **To**
-  - **Cc**
+  - **Plain-text email header** tab: Contains the entire message header in plain text. Select :::image type="icon" source="../../media/m365-cc-sc-copy-icon.png" border="false"::: **Copy message header** to copy the message header. Select :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Microsoft Message Header Analyzer** to open the Message Header Analyzer at <https://mha.azurewebsites.net/pages/mha.html>. Paste the copied message header into the page, and then select **Analyze headers** for details about the message headers and values.
+  - **To** tab: Shows the first 5000 characters of any email addresses in the To field of the message.
+  - **Cc** tab: Shows the first 5000 characters of any email addresses in the Cc field of the message.
 
 :::image type="content" source="../../media/email-entity-analysis-view.png" alt-text="Screenshot of the Analysis view on the Email entity page." lightbox="../../media/email-entity-analysis-view.png":::
 
@@ -212,19 +226,31 @@ Use :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" borde
 
 If you select an entry in the **Attachments** view by clicking on the **Attachment filename** value, a details flyout opens that contains the following information:
 
-- **Deep analysis** tab:
-  - **Detonation chain** section: If no detonation chain information is available, the value **No detonation tree** is shown. Otherwise, you can select :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** to download the detonation chain information to a CSV file. The default filename is **Detonation chain.csv** and the default location is the **Downloads** folder. If a file with that name already exists, the filename is appended with a number (for example, **Detonation chain(1).csv**). The CSV file contains the following information:
+- **Deep analysis** tab: Information is available on this tab if the message contains attachments, and [Safe Attachments](safe-attachments-about.md) acted on an attachment. You can identify these messages in Threat Explorer by using the query filter **Detection technology** with the value **File detonation**.
+
+  - **Detonation chain** section: Safe Links detonation of a single file detonation can trigger multiple detonations. The _detonation chain_ tracks the path of detonations, including the original malicious file that caused the verdict, and all other files affected by the detonation. These attached files might not be directly present in the email. But, including the analysis is important to determining why the file was found to be malicious.
+
+    If no detonation chain information is available, the value **No detonation tree** is shown. Otherwise, you can select :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** to download the detonation chain information to a CSV file. The default filename is **Detonation chain.csv** and the default location is the **Downloads** folder. If a file with that name already exists, the filename is appended with a number (for example, **Detonation chain(1).csv**). The CSV file contains the following information:
     - **Top**: The top level file.
     - **Level1**: The next level file.
     - **Level2**: The next level file.
     - and so on.
-  - **Summary** section: If no detonation summary information is available, the value **No detonation summary** is shown. Otherwise, the following information is available:
+
+    The detonation chain and the CSV file might show just the top level item if none of the entities linked to it were found to be problematic, or were detonated.
+
+  - **Summary** section: If no detonation summary information is available, the value **No detonation summary** is shown. Otherwise, the following detonation summary information is available:
     - **Analysis time**
     - **Verdict**
     - **More info**: Shows the file size in bytes.
     - **Indicators of compromise**
-  - **Screenshots section**: If no detonation screenshots are available, the value **No screenshots to display** is shown. Otherwise, select the link to view the screenshot.
-  - **Behavior details** section: If no behavior details during detonation information is available, the value **No detonation behaviors** is shown. Otherwise, you can select :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** to download the behavioral details information to a CSV file. The default filename is **Behavior details.csv** and the default location is the **Downloads** folder. If a file with that name already exists, the filename is appended with a number (for example, **Behavior details(1).csv**). The CSV file contains the following information:
+
+  - **Screenshots section**: Show any screenshots that were captured during detonation. No screenshots are captured for container files like ZIP or RAR that contain other files.
+  
+    If no detonation screenshots are available, the value **No screenshots to display** is shown. Otherwise, select the link to view the screenshot.
+
+  - **Behavior details** section: Shows behavior the exact events that took place during detonation, and problematic or benign observations that contain URLs, IPs, domains, and files that were found during detonation. There might not be any behavior details for container files like ZIP or RAR that contain other files.
+
+     If no behavior details information is available, the value **No detonation behaviors** is shown. Otherwise, you can select :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** to download the behavioral details information to a CSV file. The default filename is **Behavior details.csv** and the default location is the **Downloads** folder. If a file with that name already exists, the filename is appended with a number (for example, **Behavior details(1).csv**). The CSV file contains the following information:
     - **Time**
     - **Behavior**
     - **Behavior property**
@@ -264,9 +290,8 @@ If you select an entry in the **Attachments** view by selecting the check box ne
 
 ### How to use the email entity page tabs
 
-
-4. **URLs**: This tab lists URLs found in the email with other details about the URLs. The number of URLs is limited to 10 right now, but these 10 are prioritized to show *malicious URLs first*. Prioritization saves you time and guess-work. The URLs that were found to be malicious and detonated are also shown here.
-5. **Similar emails**: This tab lists all emails similar to the *network message id + recipient* combination specific to this email. Similarity is based on the *body of the message*, only. The determinations made on mails to categorize them as 'similar' don't include a consideration of *attachments*.
+1. **URLs**: This tab lists URLs found in the email with other details about the URLs. The number of URLs is limited to 10 right now, but these 10 are prioritized to show *malicious URLs first*. Prioritization saves you time and guess-work. The URLs that were found to be malicious and detonated are also shown here.
+1. **Similar emails**: This tab lists all emails similar to the *network message id + recipient* combination specific to this email. Similarity is based on the *body of the message*, only. The determinations made on mails to categorize them as 'similar' don't include a consideration of *attachments*.
 
 ## Available on the email entity page
 
@@ -299,64 +324,6 @@ Users see enriched detonation details for known malicious attachments or URLs fo
     - If a URL opens into a link that directly downloads a file. However, you'll see the downloaded file in the detonation chain.
 1. *Behavior Details* are an export that shows behavior details like exact events that took place during detonation, and observables that contain URLs, IPs, domains, and files that were found during detonation (and can either be problematic or benign). Be aware, there may be no behavior details for:
     - Container files like .zip or .rar that are holding other files.
-
-### Other features that make the Email entity page helpful
-
-*Tags*: These are tags applied to users. If the user is a recipient, admins will see a *recipient* tag. Likewise, if the user is a sender, a *sender* tag. This appears in the left side of the email entities page (in the part that's described as *sticky* and, thus, anchored to the page).
-
-*Latest delivery location*: The latest delivery location is the location where an email landed after system actions like ZAP, or admin actions like Move to Deleted Items, finish. Latest delivery location isn't intended to inform admins of the message's *current* location. For example, if a user deletes a message, or moves it to archive, the delivery location won't be updated. However, if a system action has taken place and updated the location (like a ZAP resulting in an email moving to quarantine) this would update the Latest delivery location to quarantine.
-
-*Email details*: Details required for a deeper understanding of email available in the *Analysis* tab.
-
-- *Exchange mail flow rules (also known as transport rules)*: These rules are applied to a message at the transport layer and take precedence over phish and spam verdicts. Mail flow rules are created and modified in the Exchange admin center at <https://admin.exchange.microsoft.com/#/transportrules>, but if any mail flow rule applies to a message, the rule name and GUID will be shown here. Valuable information for tracking purposes.
-
-- *Primary Override: Source*: Primary override and source refer to the tenant or user setting which impacted the delivery of the email, overriding the delivery location given by the system (as per the threat and detection technology). As an example, this could be an email blocked due to a tenant configured mail flow rule or an email allowed due to an end-user setting for Safe Senders.
-
-- *All Overrides*: All Overrides refer to the list of overrides (tenant or user settings) that was applied on the email, which may or may not have impacted the delivery of an email. As an example, if a tenant configured mail flow rule, as well as a tenant configured policy setting (for example, from the Tenant Allow/Block List), is applied to an email, then both will be listed in this field. You can check the primary override field to determine the setting that impacted the delivery of the email.
-
-- *Bulk Complaint Level (BCL)*: The bulk complaint level (BCL) of the message. A higher BCL indicates a bulk mail message is more likely to generate complaints (the natural result if the email is likely to be spam).
-
-- *Spam Confidence Level (SCL)*: The spam confidence level (SCL) of the message. A higher value indicates the message is more likely to be spam.
-
-- *Client type*: Indicates the Client type from which the email was sent like REST.
-
-- *Forwarding*: For scenarios with autoforwarding, it indicates the forwarding user as well as the forwarding type like ETR or SMTP forwarding.
-
-- *Distribution list*: Shows the distribution list, if the recipient received the email as a member of the list. It shows the top level distribution list if there are nested distribution lists involved.
-
-- *To, Cc*: Indicates the addresses that are listed in To, Cc fields of an email. The information in these fields is restricted to 5000 characters.
-
-- *Domain Name*: Is the sender domain name.
-
-- *Domain Owner*: Specifies the owner of the sending domain.
-
-- *Domain Location*: Specifies the location of the sending domain.
-
-- *Domain Created Date*: Specifies the date of creation of the sending domain. A newly created domain is something you could be cautious of if other signals indicate some suspicious behavior.
-
-*Email Authentication*: Email authentication methods used by Microsoft 365 include SPF, DKIM, and DMARC.
-
-- Sender Policy Framework (**SPF**):  Describes results for SPF check for the message. Possible values can be:
-  - Pass (IP address): The SPF check for the message passed and includes the sender's IP address. The client is authorized to send or relay email on behalf of the sender's domain.
-  - Fail (IP address): The SPF check for the message failed, and includes the sender's IP address. This is sometimes called hard fail.
-  - Softfail (reason): The SPF record designated the host as not being allowed to send but is in transition.
-  - Neutral: The SPF record explicitly states that it doesn't assert whether the IP address is authorized to send.
-  - None: The domain doesn't have an SPF record, or the SPF record doesn't evaluate to a result.
-  - Temperror: A temporary error has occurred. For example, a DNS error. The same check later might succeed.
-  - Permerror: A permanent error has occurred. For example, the domain has a badly formatted SPF record.
-
-- DomainKeys Identified Mail (**DKIM**):
-  - Pass: Indicates the DKIM check for the message passed.
-  - Fail (reason): Indicates the DKIM check for the message failed and why. For example, if the message wasn't signed or the signature wasn't verified.
-  - None: Indicates that the message wasn't signed. This may or may not indicate that the domain has a DKIM record or the DKIM record doesn't evaluate to a result, only that this message wasn't signed.
-
-- Domain-based Message Authentication, Reporting, and Conformance (**DMARC**):
-  - Pass: Indicates the DMARC check for the message passed.
-  - Fail: Indicates the DMARC check for the message failed.
-  - Bestguesspass: Indicates that no DMARC TXT record for the domain exists, but if one had existed, the DMARC check for the message would have passed.
-  - None: Indicates that no DMARC TXT record exists for the sending domain in DNS.
-
-*Composite Authentication*: This is a value used by Microsoft 365 to combine email authentication like SPF, DKIM, and DMARC, to determine if the message is authentic. It uses the *From:* domain of the mail as the basis of evaluation.
 
 ## Actions you can take on the Email entity Page
 
@@ -393,46 +360,3 @@ We're also bringing tenant-level blocks for URLs and attachments to the respecti
 :::image type="content" source="../../media/Block-URL-Email-entity.png" alt-text="Take block URL action from entity page." lightbox="../../media/Block-URL-Email-entity.png":::
 
 See [permissions](mdo-portal-permissions.md) required to take these actions.
-
-### The Email summary panel
-
-The email summary panel is a summarized view of the full email entity page. It contains standardized details about the email (for example, detections), as well as context-specific information (for example, for Quarantine or Submissions metadata). The email summary panel replaces the traditional email flyouts throughout Microsoft Defender for Office 365.
-
-:::image type="content" source="../../media/open-email-entity-mdo.png" alt-text="Open the email entity link." lightbox="../../media/open-email-entity-mdo.png":::
-
-> [!NOTE]
-> To view all the components, click on the **Open email entity** link to open the full email entity page.
-
-The email summary panel is divided into the following sections:
-
-- *Delivery details*: Contains information about threats and corresponding confidence level, detection technologies, and original and latest delivery location.
-
-- *Email details*: Contains information about email properties like sender name, sender address, time received, authentication details, and other several other details.
-
-- *URLs*: By default, you see 3 URLs and their corresponding threats. You can always select **View all URLs** to expand and see all URLs and export them.
-
-- *Attachments*: By default, you see 3 attachments. You can always select **View all attachments** to expand and see all attachments.
-
-In addition to the above sections, you also see sections specific to few experiences that are integrated with the summary panel:
-
-- Submissions:
-
-  - *Submission details*: Contains information about the specific submissions such as:
-    - Date submitted
-    - Subject
-    - Submission type
-    - Reason for submitting
-    - Submission ID
-    - Submitted by
-
-  - *Result details*: Messages that are submitted are reviewed. You can see the result of your submission as well as any recommended next steps.
-
-- Quarantine:
-
-  - *Quarantine details*: Contains quarantine-specific details. For more information, see [Manage quarantined messages](quarantine-admin-manage-messages-files.md#view-quarantined-email-details).
-
-    - Expires: The date/time when the message is automatically and permanently deleted from quarantine.
-    - Released to: All email addresses (if any) to which the message has been released.
-    - Not yet released to: All email addresses (if any) to which the message hasn't yet been released.
-
-  - *Quarantine actions*: For more information on different quarantine actions, see [Manage quarantined messages](quarantine-admin-manage-messages-files.md#take-action-on-quarantined-email).

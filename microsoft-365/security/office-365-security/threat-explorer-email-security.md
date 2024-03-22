@@ -88,7 +88,7 @@ Use the following steps to review phishing messages and search for impersonated 
 
    You can sort the entries and show more columns as described in [Email view for the details area of the Phish view in Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md#email-view-for-the-details-area-of-the-phish-view-in-threat-explorer-and-real-time-detections).
 
-   If you select the **Subject** or **Recipient** value of an entry in the table, a details flyout opens. For more information, see [Subject details from the Email view of the details area in the Phish view](threat-explorer-real-time-detections-about.md#subject-details-from-the-email-view-of-the-details-area-in-the-phish-view) and [Recipient details from the Email view of the details area in the Phish view](threat-explorer-real-time-detections-about.md#recipient-details-from-the-email-view-of-the-details-area-in-the-phish-view).
+   If you select the **Subject** or **Recipient** value of an entry in the table, a details flyout opens. For more information, see [Email details from the Email view of the details area in the Phish view](threat-explorer-real-time-detections-about.md#email-details-from-the-email-view-of-the-details-area-in-the-phish-view) and [Recipient details from the Email view of the details area in the Phish view](threat-explorer-real-time-detections-about.md#recipient-details-from-the-email-view-of-the-details-area-in-the-phish-view).
 
 <!--- ### Email timeline
 

@@ -358,9 +358,11 @@ In the **Subject** value for the entry, the :::image type="icon" source="../../m
 
 When you click on the **Subject** or **Recipient** values in an entry, details flyouts open. These flyouts are described in the following subsections.
 
-##### Subject details from the Email view of the details area in the All email view
+##### Email details from the Email view of the details area in the All email view
 
-When you select an entry by clicking on the **Subject** value, a details flyout opens with the following information:
+When you select an entry by clicking on the **Subject** value, an email details flyout opens. This details flyout is also known as the _Email summary panel_ and contains summarized information that's also available on the [Email entity page](mdo-email-entity-page.md) for the message.
+
+The Email summary panel contains the following information for the message:
 
 > [!TIP]
 > To see details about other message subjects without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
@@ -423,7 +425,7 @@ When you select an entry by clicking on the **Subject** value, a details flyout 
 
     If the message has more than three attachments, select **View all attachments** to see all of them.
 
-:::image type="content" source="../../media/te-rtd-all-email-view-email-tab-details-area-subject-details-flyout.png" alt-text="Screenshot of the details tab after you select a subject in the Email tab of the details area in the All email view." lightbox="../../media/te-rtd-all-email-view-email-tab-details-area-subject-details-flyout.png":::
+:::image type="content" source="../../media/te-rtd-all-email-view-email-tab-details-area-email-details-flyout.png" alt-text="Screenshot of the email details flyout after you select a Subject value in the Email tab of the details area in the All email view." lightbox="../../media/te-rtd-all-email-view-email-tab-details-area-subject-details-flyout.png":::
 
 ##### Recipient details from the Email view of the details area in the All email view
 
@@ -465,7 +467,7 @@ When you select an entry by clicking on the **Recipient** value, a details flyou
    > [!TIP]
    > Members of the **Security Administrators** role group in [Email & collaboration permissions](mdo-portal-permissions.md) can't expand the **Recent activity** section. You need to be a member of a role group in [Exchange Online permissions](/exchange/permissions-exo/permissions-exo) that has the **Audit Logs**, **Information Protection Analyst**, or **Information Protection Investigator** roles assigned. By default, those roles are assigned to the **Records Management**, **Compliance Management**, **Information Protection**, **Information Protection Analysts**, **Information Protection Investigators**, and **Organization Management** role groups. You can add the members of **Security Administrators** to those role groups, or you can [create a new role group](/exchange/recipients-in-exchange-online/manage-permissions-for-recipients#use-the-eac-to-assign-permissions-to-individual-mailboxes) with with the **Audit Logs** role assigned.
 
-:::image type="content" source="../../media/te-rtd-all-email-view-email-tab-details-area-recipient-details-flyout.png" alt-text="Screenshot of the details flyout after you select a recipient in the Email tab of the details area in the All email view." lightbox="../../media/te-rtd-all-email-view-email-tab-details-area-recipient-details-flyout.png":::
+:::image type="content" source="../../media/te-rtd-all-email-view-email-tab-details-area-recipient-details-flyout.png" alt-text="Screenshot of the recipient details flyout after you select a Recipient value in the Email tab of the details area in the All email view." lightbox="../../media/te-rtd-all-email-view-email-tab-details-area-recipient-details-flyout.png":::
 
 #### URL clicks view for the details area of the All email view in Threat Explorer
 
@@ -827,9 +829,11 @@ When you select one or more entries from the list by selecting the check box nex
 
 When you click on the **Subject** or **Recipient** values in an entry, details flyouts open. These flyouts are described in the following subsections.
 
-##### Subject details from the Email view of the details area in the Malware view
+##### Email details from the Email view of the details area in the Malware view
 
-When you select an entry by clicking on the **Subject** value, a details flyout opens. The information in the flyout is the same as described in [Subject details from the Email view of the details area in the All email view](#subject-details-from-the-email-view-of-the-details-area-in-the-all-email-view).
+When you select an entry by clicking on the **Subject** value, an email details flyout opens. This details flyout is also known as the _Email summary panel_ and contains summarized information that's also available on the [Email entity page](mdo-email-entity-page.md) for the message.
+
+The information in the flyout is the same as described in [Email details from the Email view of the details area in the All email view](#email-details-from-the-email-view-of-the-details-area-in-the-all-email-view).
 
 > [!TIP]
 > The :::image type="icon" source="../../media/m365-cc-sc-go-hunt-icon.png" border="false"::: **Go hunt** action is available only in Threat Explorer. It isn't available in Real-time detections.
@@ -1111,9 +1115,11 @@ When you select one or more entries from the list by selecting the check box nex
 
 When you click on the **Subject** or **Recipient** values in an entry, details flyouts open. These flyouts are described in the following subsections.
 
-##### Subject details from the Email view of the details area in the Phish view
+##### Email details from the Email view of the details area in the Phish view
 
-When you select an entry by clicking on the **Subject** value, a details flyout opens. The information in the flyout is the same as described in [Subject details from the Email view of the details area in the All email view](#subject-details-from-the-email-view-of-the-details-area-in-the-all-email-view).
+When you select an entry by clicking on the **Subject** value, an email details flyout opens. This details flyout is also known as the _Email summary panel_ and contains summarized information that's also available on the [Email entity page](mdo-email-entity-page.md) for the message.
+
+The information in the flyout is the same as described in [Email details from the Email view of the details area in the All email view](#email-details-from-the-email-view-of-the-details-area-in-the-all-email-view).
 
 > [!TIP]
 > The :::image type="icon" source="../../media/m365-cc-sc-go-hunt-icon.png" border="false"::: **Go hunt** action is available only in Threat Explorer. It isn't available in Real-time detections.

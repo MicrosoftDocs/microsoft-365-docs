@@ -141,7 +141,7 @@ In the **All email**, **Malware**, or **Phish** views in Threat Explorer or Real
 
 When you see a suspicious email message, click on the **Subject** value of an entry in the table. The details flyout that opens contains :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity** at the top of the flyout.
 
-:::image type="content" source="../../media/te-rtd-all-email-view-email-tab-details-area-subject-details-flyout-actions-only.png" alt-text="Screenshot of the actions available in the details tab after you select a Subject value in the Email tab of the details area in the All email view." lightbox="../../media/te-rtd-all-email-view-email-tab-details-area-subject-details-flyout-actions-only.png":::
+:::image type="content" source="../../media/te-rtd-all-email-view-email-tab-details-area-subject-details-flyout-actions-only.png" alt-text="Screenshot of the actions available in the email details flyout after you select a Subject value in the Email tab of the details area in the All email view." lightbox="../../media/te-rtd-all-email-view-email-tab-details-area-subject-details-flyout-actions-only.png":::
 
 The Email entity page pulls together everything you need to know about the message and its contents so you can determine whether the message is a threat. For more information, see [Email entity page overview](mdo-email-entity-page.md).
 
@@ -163,7 +163,7 @@ These actions are available in the **All email**, **Malware**, or **Phish** view
 
 - Click on the **Subject** value of an entry in the table. The details flyout that opens contains :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take action** at the top of the flyout. For more information, see [Remediate using Take action](#remediate-using-take-action).
 
-  :::image type="content" source="../../media/te-rtd-all-email-view-email-tab-details-area-subject-details-flyout-actions-only.png" alt-text="Screenshot of the actions available in the details flyout after you select a Subject value in the Email tab of the details area in the All email view." lightbox="../../media/te-rtd-all-email-view-email-tab-details-area-subject-details-flyout-actions-only.png":::
+  :::image type="content" source="../../media/te-rtd-all-email-view-email-tab-details-area-subject-details-flyout-actions-only.png" alt-text="Screenshot of the actions available in the email details flyout after you select a Subject value in the Email tab of the details area in the All email view." lightbox="../../media/te-rtd-all-email-view-email-tab-details-area-subject-details-flyout-actions-only.png":::
 
 #### Remediate using Message actions
 
@@ -316,7 +316,7 @@ Selecting an action from the **Start new submission** category in Real-time dete
 
 After you click on the **Subject** value of an entry in the details table of the **Email** tab (view), selecting :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take action** at the top of the flyout opens the **Take action** wizard in a new flyout.
 
-:::image type="content" source="../../media/te-rtd-all-email-view-email-tab-details-area-subject-details-flyout-actions-only.png" alt-text="Screenshot of the actions available in the details flyout after you select a Subject value in the Email tab of the details area in the All email, Malware, or Phish views in Threat Explorer or Real-time detections.":::
+:::image type="content" source="../../media/te-rtd-all-email-view-email-tab-details-area-subject-details-flyout-actions-only.png" alt-text="Screenshot of the actions available in the email details flyout after you select a Subject value in the Email tab of the details area in the All email, Malware, or Phish views in Threat Explorer or Real-time detections.":::
 
 The available actions in the **Take action** wizard in Threat Explorer and Real-time detections are listed in the following table:
 
@@ -458,9 +458,9 @@ In those views, **Alert ID** is available as a selectable column in the details 
 - [The **Email** view for the details area of the **Malware** view in Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md#email-view-for-the-details-area-of-the-malware-view-in-threat-explorer-and-real-time-detections)
 - [The **Email** view for the details area of the **Phish** view in Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md#email-view-for-the-details-area-of-the-phish-view-in-threat-explorer-and-real-time-detections)
 
-In the [details flyout that opens when you click on a **Subject** value from one of the entries](threat-explorer-real-time-detections-about.md#subject-details-from-the-email-view-of-the-details-area-in-the-all-email-view), the **Alert ID** link is available in the **Email details** section of the flyout. Selecting the **Alert ID** link opens the **View alerts** page at <https://security.microsoft.com/viewalertsv2> with the alert selected and the details flyout open for the alert.
+In the [email details flyout that opens when you click on a **Subject** value from one of the entries](threat-explorer-real-time-detections-about.md#email-details-from-the-email-view-of-the-details-area-in-the-all-email-view), the **Alert ID** link is available in the **Email details** section of the flyout. Selecting the **Alert ID** link opens the **View alerts** page at <https://security.microsoft.com/viewalertsv2> with the alert selected and the details flyout open for the alert.
 
-:::image type="content" source="../../media/view-alerts-page-with-details-flyout.png" alt-text="Screenshot of the alert details flyout on the View alerts page after you select an Alert ID from the Subject details flyout of an entry in the Email tab from the All email, Malware, or Phish views in Threat Explorer or Real-time detections." lightbox="../../media/view-alerts-page-with-details-flyout.png":::
+:::image type="content" source="../../media/view-alerts-page-with-details-flyout.png" alt-text="Screenshot of the alert details flyout on the View alerts page after you select an Alert ID from the email details flyout of an entry in the Email tab from the All email, Malware, or Phish views in Threat Explorer or Real-time detections." lightbox="../../media/view-alerts-page-with-details-flyout.png":::
 
 ### Tags in Threat Explorer
 
@@ -471,15 +471,15 @@ User tags are available in the following locations in Threat Explorer:
 - **All email** view:
   - [As a filterable property](threat-explorer-real-time-detections-about.md#filterable-properties-in-the-all-email-view-in-threat-explorer).
   - [An available column in the **Email** tab (view) of the details area](threat-explorer-real-time-detections-about.md#email-view-for-the-details-area-of-the-all-email-view-in-threat-explorer).
-  - [The **Subject** details flyout from an entry in the **Email** tab (view)](threat-explorer-real-time-detections-about.md#subject-details-from-the-email-view-of-the-details-area-in-the-all-email-view)
+  - [The email details flyout from an entry in the **Email** tab (view)](threat-explorer-real-time-detections-about.md#email-details-from-the-email-view-of-the-details-area-in-the-all-email-view)
 - **Malware** view:
   - [As a filterable property](threat-explorer-real-time-detections-about.md#malware-view-in-threat-explorer-and-real-time-detections).
   - [An available column in the **Email** tab (view) of the details area in the **Malware** view](threat-explorer-real-time-detections-about.md#email-view-for-the-details-area-of-the-malware-view-in-threat-explorer-and-real-time-detections).
-  - [[The **Subject** details flyout from an entry in the **Email** tab (view)](threat-explorer-real-time-detections-about.md#subject-details-from-the-email-view-of-the-details-area-in-the-all-email-view)
+  - [[The email details flyout from an entry in the **Email** tab (view)](threat-explorer-real-time-detections-about.md#email-details-from-the-email-view-of-the-details-area-in-the-all-email-view)
 - **Phish** view:
   - [As a filterable property](threat-explorer-real-time-detections-about.md#phish-view-in-threat-explorer-and-real-time-detections).
   - [An available column in the **Email** tab (view) of the details](threat-explorer-real-time-detections-about.md#email-view-for-the-details-area-of-the-phish-view-in-threat-explorer-and-real-time-detections).
-  - [[The **Subject** details flyout from an entry in the **Email** tab (view)](threat-explorer-real-time-detections-about.md#subject-details-from-the-email-view-of-the-details-area-in-the-all-email-view)
+  - [The email details flyout from an entry in the **Email** tab (view)](threat-explorer-real-time-detections-about.md#email-details-from-the-email-view-of-the-details-area-in-the-all-email-view)
 - **URL clicks** view:
   - [As a filterable property](threat-explorer-real-time-detections-about.md#url-clicks-view-in-threat-explorer).
   - [An available column in the **Results** tab (view) of the details area in the **URL clicks** view](threat-explorer-real-time-detections-about.md#results-view-for-the-details-area-of-the-url-clicks-view-in-threat-explorer).
@@ -499,7 +499,7 @@ Pre-delivery and post-delivery actions on email messages are consolidated into a
 - Manual remediation (admin action).
 - [Dynamic Delivery](safe-attachments-about.md#dynamic-delivery-in-safe-attachments-policies).
 
-[The **Subject** details flyout from the **Email** tab (view)](threat-explorer-real-time-detections-about.md#subject-details-from-the-email-view-of-the-details-area-in-the-all-email-view) in the **All email**, **Malware**, or **Phish** views shows the associated threats and the corresponding detection technologies that are associated with the email message. A message can have zero, one, or multiple threats.
+[The email details flyout from the **Email** tab (view)](threat-explorer-real-time-detections-about.md#email-details-from-the-email-view-of-the-details-area-in-the-all-email-view) in the **All email**, **Malware**, or **Phish** views shows the associated threats and the corresponding detection technologies that are associated with the email message. A message can have zero, one, or multiple threats.
 
 - In the **Delivery details** section, the **Detection technology** property shows the detection technology that identified the threat. **Detection technology** is also available as a chart pivot or a column in the details table for many views in Threat Explorer and Real-time detections.
 
@@ -508,7 +508,7 @@ Pre-delivery and post-delivery actions on email messages are consolidated into a
 > [!TIP]
 > Verdict analysis might not necessarily be tied to entities. The filters evaluate content and other details of an email message before assigning a verdict. For example, an email message might be classified as phishing or spam, but no URLs in the message are stamped with a phishing or spam verdict.
 
-:::image type="content" source="../../media/te-rtd-all-email-view-email-tab-details-area-subject-details-flyout.png" alt-text="Screenshot of the details tab after you select a subject in the Email tab of the details area in the All email view." lightbox="../../media/te-rtd-all-email-view-email-tab-details-area-subject-details-flyout.png":::
+:::image type="content" source="../../media/te-rtd-all-email-view-email-tab-details-area-subject-details-flyout.png" alt-text="Screenshot of the email details flyout after you select a Subject value in the Email tab of the details area in the All email view." lightbox="../../media/te-rtd-all-email-view-email-tab-details-area-subject-details-flyout.png":::
 
 <!-- ### Updated timeline view (upcoming)
 
