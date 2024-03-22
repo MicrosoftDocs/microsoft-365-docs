@@ -3,7 +3,7 @@ title: How to find the best frontline team solution for your organization
 author: lana-chin
 ms.author: v-chinlana
 manager: jtremper
-ms.reviewer: aaglick
+ms.reviewer: arnavgupta
 ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
@@ -16,7 +16,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 07/12/2023
+ms.date: 03/22/2024
 ---
 
 # How to find the best frontline team solution for your organization
@@ -55,7 +55,7 @@ Static teams let you choose which users to put in which team at the time of team
 
 You should use static teams if:
 
-- You want to manage team members and owners manually or delegate management to the team owner(s).
+- You want to manage team members and owners manually or delegate management to the team owners.
 - You can't identify your frontline workforce with a Microsoft Entra attribute or you can't define your frontline locations with a Microsoft Entra attribute.
 - Your users don't have the [required license](#licensing) for dynamic teams.
 
