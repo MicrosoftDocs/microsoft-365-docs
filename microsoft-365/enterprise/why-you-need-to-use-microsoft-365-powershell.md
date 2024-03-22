@@ -16,6 +16,7 @@ f1.keywords:
 ms.custom:
   - admindeeplinkEXCHANGE
   - has-azure-ad-ps-ref
+  - azure-ad-ref-level-one-done
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: "Summary: Understand why you must use PowerShell to manage Microsoft 365, in some cases more efficiently and in other cases by necessity."
 ---
@@ -81,6 +82,8 @@ This view provides the information that you need in many cases. However, there a
 5. Write the user's display name and location on a piece of paper, or copy and paste it into Notepad.
 
 You must repeat this procedure for each user. If you have many users, this process can be tedious. With PowerShell for Microsoft 365, you can display this information for all of your users by using the following command:
+
+[!INCLUDE [Azure AD PowerShell deprecation note](~/../microsoft-365/reusable-content/msgraph-powershell/includes/aad-powershell-deprecation-note.md)]
 
 ```powershell
 Get-AzureADUser | Select DisplayName, UsageLocation
