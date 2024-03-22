@@ -3,7 +3,7 @@ title: How to find the best frontline team solution for your organization
 author: lana-chin
 ms.author: v-chinlana
 manager: jtremper
-ms.reviewer: aaglick
+ms.reviewer: arnavgupta
 ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
@@ -16,7 +16,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 07/12/2023
+ms.date: 03/22/2024
 ---
 
 # How to find the best frontline team solution for your organization
@@ -27,12 +27,12 @@ Frontline teams are a collection of people, content, and tools within an organiz
 
 ### Licensing
 
-For dynamic groups, users need one of the following licenses: Microsoft 365 F1, F3, E1, E3, or E5. If a user doesn't have one of these licenses, they'll need a Microsoft Entra ID P1 add-on license to leverage dynamic teams. [Learn more about frontline licensing](flw-licensing-options.md).
+For dynamic groups, users need one of the following licenses: Microsoft 365 F1, F3, E3, or E5. If a user doesn't have one of these licenses, they'll need a Microsoft Entra ID P1 add-on license to leverage dynamic teams. [Learn more about frontline licensing](flw-licensing-options.md).
 
 ### Key considerations
 
 - You can choose a mix of dynamic frontline teams and static frontline teams for your organization.
-- You can convert static frontline teams to dynamic frontline teams in your [Microsoft Entra admin center](/azure/active-directory/enterprise-users/groups-change-type) by converting the group membership type to Dynamic and setting your dynamic team membership rules. Teams you convert with this method aren't currently possible to view in the Dynamic team management view in your Teams admin center, but this functionality is planned for future releases.
+- You can convert static frontline teams to dynamic frontline teams in the Microsoft Entra admin center by [converting the group membership type to Dynamic and setting your dynamic team membership rules](/entra/identity/users/groups-change-type). Teams you convert with this method aren't currently possible to view in the Dynamic team management view in the Teams admin center, but this functionality is planned for future releases.
 
 ## When should I choose dynamic teams?
 
@@ -51,11 +51,11 @@ You should use dynamic frontline teams if:
 
 ## When should I choose static teams?
 
-Static teams let you choose which users to put in which team at the time of team creation. Team owners can manually add and remove members. Admins can also rerun the Deploy static teams at scale PowerShell script to keep membership up to date.
+Static teams let you choose which users to put in which team at the time of team creation. Team owners can manually add and remove members. Admins can also rerun the [Deploy static teams at scale PowerShell script](deploy-teams-at-scale.md) to keep membership up to date.
 
 You should use static teams if:
 
-- You want to manage team members and owners manually or delegate management to the team owner(s).
+- You want to manage team members and owners manually or delegate management to the team owners.
 - You can't identify your frontline workforce with a Microsoft Entra attribute or you can't define your frontline locations with a Microsoft Entra attribute.
 - Your users don't have the [required license](#licensing) for dynamic teams.
 
