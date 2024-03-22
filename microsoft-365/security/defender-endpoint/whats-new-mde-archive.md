@@ -88,7 +88,7 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 
 - [Network Protection and Web Protection for macOS and Linux is now in Public Preview!](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/network-protection-and-web-protection-for-macOS-and-linux-is-now/ba-p/3601576)<br>Network Protection helps reduce the attack surface of your devices from Internet-based events. It prevents employees from using any application to access dangerous domains that may host phishing scams, exploits, and other malicious content on the Internet. It's the foundation on which our Web Protection for Microsoft Defender for Endpoint is built. These capabilities include Web threat protection, Web content filtering, and IP/URL Custom indicators. Web protection enables you to secure your devices against web threats and helps to regulate unwanted content.
 
-- [Improved Microsoft Defender for Endpoint onboarding for Windows Server 2012 R2 and Windows Server 2016](/mem/configmgr/core/plan-design/changes/whats-new-in-version-2207#improved-microsoft-defender-for-endpoint-mde-onboarding-for-windows-server-2012-r2-and-windows-server-2016)<br>Configuration Manager version 2207 now supports automatic deployment of modern, unified Microsoft Defender for Endpoint for Windows Server 2012 R2 & 2016. Windows Server 2012 and 2016 devices that are targeted with Microsoft Defender for Endpoint onboarding policy will use the unified agent versus the existing Microsoft Monitoring Agent-based solution, if configured through Client Settings.
+- [Improved Microsoft Defender for Endpoint onboarding for Windows Server 2012 R2 and Windows Server 2016](/mem/configmgr/core/plan-design/changes/whats-new-in-version-2207#improved-microsoft-defender-for-endpoint-mde-onboarding-for-windows-server-2012-r2-and-windows-server-2016)<br>Configuration Manager version 2207 now supports automatic deployment of modern, unified Microsoft Defender for Endpoint for Windows Server 2012 R2 & 2016. Devices running Windows Server 2012 R2 or Windows Server 2016 that are targeted by the Defender for Endpoint onboarding policy now use the unified agent instead of the Microsoft Monitoring Agent-based solution, if configured through client settings.
 
 ## July 2022
 
@@ -133,10 +133,6 @@ Existing [Defender for Endpoint](microsoft-defender-endpoint.md) capabilities wi
 
 - (Preview) [Web Content Filtering](web-content-filtering.md)<br>  Web content filtering is part of web protection capabilities in Microsoft Defender for Endpoint. It enables your organization to track and regulate access to websites based on their content categories. Many of these websites, while not malicious, might be problematic because of compliance regulations, bandwidth usage, or other concerns.
 
-## July 2021
-
-- (Preview) [Device health and compliance report](machine-reports.md) <br>  The device health and compliance report provides high-level information about the devices in your organization.
-
 ## June 2021
 
 - [Delta export software vulnerabilities assessment](get-assessment-methods-properties.md#31-methods) API <br> An addition to the [Export assessments of vulnerabilities and secure configurations](get-assessment-methods-properties.md) API collection. <br> Unlike the full software vulnerabilities assessment (JSON response) - which is used to obtain an entire snapshot of the software vulnerabilities assessment of your organization by device - the delta export API call is used to fetch only the changes that have happened between a selected date and the current date (the "delta" API call). Instead of getting a full export with a large amount of data every time, you'll only get specific information on new, fixed, and updated vulnerabilities. Delta export API call can also be used to calculate different KPIs such as "how many vulnerabilities were fixed" or "how many new vulnerabilities were added to an organization."
@@ -172,7 +168,7 @@ Existing [Defender for Endpoint](microsoft-defender-endpoint.md) capabilities wi
 
 ## September 2020
 
-- [Microsoft Defender for Endpoint on Android](microsoft-defender-endpoint-android.md) <br> Microsoft Defender for Endpoint now adds support for Android. The article [Microsoft Defender for Endpoint on Android](microsoft-defender-endpoint-android.md) enables you learn how to install, configure, update, and use Microsoft Defender for Endpoint for Android.
+- [Microsoft Defender for Endpoint on Android](microsoft-defender-endpoint-android.md) <br> Microsoft Defender for Endpoint now adds support for Android. In addition to the provisions for you to install, configure, and use Microsoft Defender for Endpoint for Android (introducted in the previous sprint in August 2020), the provision to "update" Microsoft Defender for Endpoint for Android has been introduced in this sprint.
 - [Threat and vulnerability management macOS support](tvm-supported-os.md)<br> Threat and vulnerability management for macOS is now in public preview, and will continuously detect vulnerabilities on your macOS devices to help you prioritize remediation by focusing on risk. For more information, see [Microsoft Tech Community blog post](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-for-endpoint-adds-depth-and-breadth-to-threat/ba-p/1695824).
 
 ## August 2020
@@ -202,8 +198,6 @@ Existing [Defender for Endpoint](microsoft-defender-endpoint.md) capabilities wi
 - [Threat & Vulnerability Management Advanced Hunting Schemas](../defender/advanced-hunting-schema-tables.md) <BR>Use the Threat & Vulnerability Management tables in the Advanced hunting schema to query about software inventory, vulnerability knowledgebase, security configuration assessment, and security configuration knowledgebase.
  
  - [Threat & Vulnerability Management role-based access controls](user-roles.md) <BR>Use the new permissions to allow maximum flexibility to create SecOps-oriented roles, Threat & Vulnerability Management-oriented roles, or hybrid roles so that only authorized users are accessing specific data to do their task. You can also achieve even further granularity by specifying whether a Threat & Vulnerability Management role can only view vulnerability-related data, or can create and manage remediation and exceptions.
-
-- [Device health and compliance report](machine-reports.md) <br/> The device health and compliance report provides high-level information about the devices in your organization.
 
 ## October 2019
 
@@ -245,7 +239,7 @@ Existing [Defender for Endpoint](microsoft-defender-endpoint.md) capabilities wi
 
 ## April 2019
 
-- [Microsoft Threat Experts Targeted Attack Notification capability](endpoint-attack-notifications.md) <BR> Microsoft Threat Experts' Targeted Attack Notification alerts are tailored for organizations to provide as much information as can be quickly delivered, thus bringing attention to critical threats in their network, including the timeline, scope of breach, and the methods of intrusion.
+- [Microsoft Threat Experts Targeted Attack Notification capability](endpoint-attack-notifications.md) <BR> Microsoft Threat Experts' Targeted Attack Notification alerts are tailored for organizations to provide as much information as can be quickly delivered, including the timeline, scope of breach, and the methods of intrusion, thus bringing attention to critical threats in their network.
 
 - [Microsoft Defender for Endpoint API](api/apis-intro.md) <BR> Microsoft Defender for Endpoint exposes much of its data and actions through a set of programmatic APIs. Those APIs will enable you to automate workflows and innovate based on Microsoft Defender for Endpoint capabilities.
 
@@ -271,9 +265,9 @@ Existing [Defender for Endpoint](microsoft-defender-endpoint.md) capabilities wi
 - [Support for iOS and Android devices](configure-endpoints-non-windows.md)<BR> iOS and Android devices are now supported and can be onboarded to the service.
 
 - [Threat analytics](threat-analytics.md)<BR>
-Threat Analytics is a set of interactive reports published by the Microsoft Defender for Endpoint research team as soon as emerging threats and outbreaks are identified. The reports help security operations teams assess impact on their environment and provide recommended actions to contain, increase organizational resilience, and prevent specific threats.
+Threat Analytics is a set of interactive reports published by the Microsoft Defender for Endpoint research team as soon as emerging threats and outbreaks are identified. The reports help security operations teams assess impact on their environment and provide recommended actions to contain the impact, increase organizational resilience, and prevent specific threats.
 
-- New in Windows 10 version 1809, there are two new attack surface reduction rules:
+- There are two new attack surface reduction rules in Windows 10 version 1809:
   - Block Adobe Reader from creating child processes
   - Block Office communication application from creating child processes
 
@@ -305,10 +299,10 @@ Threat Analytics is a set of interactive reports published by the Microsoft Defe
 
 - [Controlled folder access](enable-controlled-folders.md)<BR>You can now block untrusted processes from writing to disk sectors using Controlled Folder Access.
 
-- [Onboard non-Windows devices](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-non-windows-windows-defender-advanced-threat-protection)<BR>Microsoft Defender for Endpoint provides a centralized security operations experience for Windows and non-Windows platforms. You'll be able to see alerts from various supported operating systems (OS) in Microsoft Defender Security Center and better protect your organization's network.
+- [Onboard non-Windows devices](configure-endpoints-non-windows.md)<BR>Microsoft Defender for Endpoint provides a centralized security operations experience for Windows and non-Windows platforms. You'll be able to see alerts from various supported operating systems (OS) in Microsoft Defender Security Center and better protect your organization's network.
 
-- [Role-based access control (RBAC)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/rbac-windows-defender-advanced-threat-protection)<BR>Using role-based access control (RBAC), you can create roles and groups within your security operations team to grant appropriate access to the portal.
+- [Role-based access control (RBAC)](rbac.md)<BR>Using role-based access control (RBAC), you can create roles and groups within your security operations team to grant appropriate access to the portal.
 
-- [Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)<BR>Microsoft Defender Antivirus now shares detection status between M365 services and interoperates with Microsoft Defender for Endpoint. For more information, see [Use next-gen technologies in Microsoft Defender Antivirus through cloud-delivered protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus).
+- [Microsoft Defender Antivirus](microsoft-defender-antivirus-windows.md)<BR>Microsoft Defender Antivirus now shares detection status between M365 services and interoperates with Microsoft Defender for Endpoint. For more information, see [Use next-gen technologies in Microsoft Defender Antivirus through cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md).
 
-Block at first sight can now block non-portable executable files (such as JS, VBS, or macros) and executable files. For more information, see [Enable block at first sight](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus).
+Block at first sight can now block non-portable executable files (such as JS, VBS, or macros) and executable files. For more information, see [Enable block at first sight](configure-block-at-first-sight-microsoft-defender-antivirus.md).
