@@ -54,7 +54,7 @@ Learn how to use data sensitivity labels to prioritize incident investigation.
 
 3. Open the incident page to further investigate.
 
-   :::image type="content" source="images/incident-page.png" alt-text="The incident page details" lightbox="images/incident-page.png":::
+   :::image type="content" source="media/incident-page.png" alt-text="The incident page details" lightbox="media/incident-page.png":::
 
 4. Select the **Devices** tab to identify devices storing files with sensitivity labels.
 
