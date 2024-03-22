@@ -105,7 +105,7 @@ The <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">
 
 Specialist workspaces, like Security or Device management, allow for more granular control. For more information about how the admin centers work together, see [What about the specific types of IT roles and other workspaces like Security, Device Management, or Exchange?](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) in this article.
 
-To get to the Microsoft 365 admin center, go to [admin.microsoft.com](https://admin.microsoft.com) or, if you're already signed in, select the app launcher, and choose **Admin**.
+To get to the Microsoft 365 admin center, go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.cloud.microsoft.com</a> or, if you're already signed in, select the app launcher, and choose **Admin**.
 
 On the home page, you can create cards for tasks that you perform frequently. To add a new card, select **Add card**, then select the plus sign next to the card you want to add. When you are finished, close the window. You can rearrange the cards by selecting and then dragging them to where you want. To remove a card, select the three dots (more actions), and then choose **Remove**.
 
@@ -127,7 +127,7 @@ For more information on managing billing, passwords, users, and admins, see the 
 
 By default, the person who signs up for and buys a Microsoft 365 for business subscription gets admin permissions. That person can assign admin permissions to other people to help them manage Microsoft 365 for their organization.
 
-If you get the message "**You don't have permission to access this page or perform this action**," you aren't an admin.
+If you get the message "You don't have permission to access this page or perform this action," you aren't an admin.
 
 ### Who has admin permissions in my business?
 
@@ -146,7 +146,7 @@ If you have no idea who to contact at your work or school for help, try asking t
 
 ## Turn on Targeted release
 
-1. Sign in at [admin.microsoft.com](https://admin.microsoft.com), go to the navigation pane and select **Settings** > **Org settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank">**Organization profile** tab</a>.
+1. Sign in at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.cloud.microsoft.com</a>, go to the navigation pane and select **Settings** > **Org settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank">**Organization profile** tab</a>.
 
 2. Go to the **Release preferences** card, and then select **Edit**.
 
@@ -168,7 +168,7 @@ Microsoft 365 is a complete, intelligent solution that includes Microsoft 365, W
 - Microsoft 365 Enterprise E3
 - Microsoft 365 Enterprise E5
 
-For more information, see [Try or buy a Microsoft 365 for business subscription](../../commerce/try-or-buy-microsoft-365.md). 
+For more information, see [Try or buy a Microsoft 365 for business subscription](../../commerce/try-or-buy-microsoft-365.md).
 
 ### I found a bug or I want to request a feature enhancement. How do I let Microsoft know?
 
@@ -178,7 +178,7 @@ We love to hear from you! Reporting bugs and sharing feedback helps us make the 
 
 ### What about the specific types of IT roles and other workspaces like Security, Device Management, or Exchange?
 
-The <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> is the common entry point for all teams and roles managing Microsoft 365. The experience, information, and controls are tailored and customizable for each admin and role. Additionally, specialist workspaces allow for deep, granular control. These specialist workspaces include SharePoint, Teams &amp; Skype, Exchange, Security, Compliance, Device Management, and Microsoft Entra ID. You can find the specialist workspaces from the navigation pane in the Microsoft 365 admin center at [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339).
+The <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> is the common entry point for all teams and roles managing Microsoft 365. The experience, information, and controls are tailored and customizable for each admin and role. Additionally, specialist workspaces allow for deep, granular control. These specialist workspaces include SharePoint, Teams &amp; Skype, Exchange, Security, Compliance, Device Management, and Microsoft Entra ID. You can find the specialist workspaces from the navigation pane in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
 ### What language options are available the Admin Center?
 
