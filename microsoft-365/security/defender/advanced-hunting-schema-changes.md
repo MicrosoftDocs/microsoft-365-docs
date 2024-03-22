@@ -90,7 +90,6 @@ Naming changes are automatically applied to queries that are saved in Microsoft 
 
     | Table name | Original ActionType name | New ActionType name | Reason for change
     |--|--|--|--|
-    | `DeviceEvents` | `DlpPocPrintJob` | `FilePrinted` | Customer feedback |
     | `DeviceEvents` | `UsbDriveMount` | `UsbDriveMounted` | Customer feedback |
     | `DeviceEvents` | `UsbDriveUnmount` | `UsbDriveUnmounted` | Customer feedback |
     | `DeviceEvents` | `WriteProcessMemoryApiCall` | `WriteToLsassProcessMemory` | Customer feedback |

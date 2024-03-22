@@ -58,6 +58,8 @@
     href: memory.md
   - name: CPU Regression Analysis
     href: cpu.md
+  - name: Export your data
+    href: export-your-data.md
   - name: Viewing Test Results
     href: view-test-results.md
     items:

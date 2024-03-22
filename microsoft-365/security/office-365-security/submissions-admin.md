@@ -2,9 +2,9 @@
 title: Manage submissions
 f1.keywords:
   - NOCSH
-ms.author: dansimp
-author: dansimp
-manager: dansimp
+ms.author: chrisda
+author: chrisda
+manager: deniseb
 audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: medium
@@ -63,7 +63,7 @@ For other ways that **admins** can report messages to Microsoft in the Defender 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
   - [Microsoft Defender XDR Unified role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac) (Affects the Defender portal only, not PowerShell): **Security operations/Security data/Response (manage)** or **Security operations/Security data/Read-only**.
   - [Email & collaboration permissions in the Microsoft Defender portal](mdo-portal-permissions.md): Membership in the **Security Administrator** or **Security Reader** role groups.
-  - [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Security Administrator** or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
+  - [Microsoft Entra permissions](/entra/identity/role-based-access-control/manage-roles-portal): Membership in the **Security Administrator** or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 - Admins can submit email messages as old as 30 days if they're still available in the mailbox and haven't been purged by the user or an admin.
 
@@ -100,7 +100,7 @@ For other ways that **admins** can report messages to Microsoft in the Defender 
    - **Choose at least one recipient who had an issue**: Specify the recipients to run a policy check against. The policy check determines if the email bypassed scanning due to user or organization policies or override.
 
    - **Why are you submitting this message to Microsoft?**: Select one of the following values:
-     - **It appears suspicious**: Select this value to get a second opinion from Microsoft, select **Submit**, and then go to Step 6.
+     - **It appears suspicious**: Select this value if you're unsure and you want a verdict from Microsoft, select **Submit**, and then go to Step 6.
 
      or
 
@@ -154,7 +154,7 @@ After a few moments, the block entry is available on the **Domains & addresses**
    - **File**: Select :::image type="icon" source="../../media/m365-cc-sc-import-icon.png" border="false"::: **Browse files** to find and select the file to submit.
 
    - **Why are you submitting this email attachment to Microsoft?**: Select one of the following values:
-     - **It appears suspicious**: Select this value to get a second opinion from Microsoft, select **Submit**, and then go to Step 6.
+     - **It appears suspicious**: Select this value if you're unsure and you want a verdict from Microsoft, select **Submit**, and then go to Step 6.
 
      or
 
@@ -206,7 +206,7 @@ After a few moments, the block entry is available on the **Files** tab on the **
    - **URL**: Enter the full URL (for example, `https://www.fabrikam.com/marketing.html`), and then select it in the box that appears. You can enter up to 50 URLs at once.
 
    - **Why are you submitting this URL to Microsoft?**: Select one of the following values:
-     - **It appears suspicious**: Select this value to get a second opinion from Microsoft, select **Submit**, and then go to Step 6.
+     - **It appears suspicious**: Select this value if you're unsure and you want a verdict from Microsoft, select **Submit**, and then go to Step 6.
 
      or
 
@@ -262,7 +262,7 @@ After a few moments, the block entry is available on the **URL** tab on the **Te
    - **Choose at least one recipient who had an issue**: Specify the recipients to run a policy check against. The policy check determines if the email was blocked due to user or organization policies or overrides.
 
    - **Why are you submitting this message to Microsoft?**: Select one of the following values:
-     - **It appears clean**: Select this value to get a second opinion from Microsoft, select **Submit**, and then go to Step 6.
+     - **It appears clean**: Select this value if you're unsure and you want a verdict from Microsoft, select **Submit**, and then go to Step 6.
 
      or
 
@@ -322,7 +322,7 @@ After a few moments, the associated allow entries appear on the **Domains & addr
    - **File**: Select **Browse files** to find and select the file to submit.
 
    - **Why are you submitting the message to Microsoft?**: Select one of the following values:
-     - **It appears clean**: Select this value to get a second opinion from Microsoft, select **Submit**, and then go to Step 6.
+     - **It appears clean**: Select this value if you're unsure and you want a verdict from Microsoft, select **Submit**, and then go to Step 6.
 
      or
 
@@ -377,7 +377,7 @@ For URLs reported as false positives, we allow subsequent messages that contain 
    - **URL**: Enter the full URL (for example, `https://www.fabrikam.com/marketing.html`), and then select it in the box that appears. You can also provide a top level domain (for example, `https://www.fabrikam.com/*`), and then select it in the box that appears. You can enter up to 50 URL at once.
 
    - **Why are you submitting this URL to Microsoft?**: Select one of the following values:
-     - **It appears clean**: Select this value to get a second opinion from Microsoft, select **Submit**, and then go to Step 6.
+     - **It appears clean**: Select this value if you're unsure and you want a verdict from Microsoft, select **Submit**, and then go to Step 6.
 
      or
 
@@ -678,7 +678,7 @@ In organizations with Microsoft Defender for Office 365 Plan 2 (add-on licenses 
 
 - :::image type="icon" source="../../media/m365-cc-sc-view-alert-icon.png" border="false"::: **View alert**. An alert is triggered when an admin submission is created or updated. Selecting this action takes you to the details of the alert.
 
-- In the **Result details** section, the following links for [Threat Explorer](threat-explorer-about.md) might also be available, depending on the status and result of the reported item:
+- In the **Result details** section, the following links for [Threat Explorer](threat-explorer-real-time-detections-about.md) might also be available, depending on the status and result of the reported item:
   - **View this message in Explorer**: **Emails** tab only.
   - **Search for similar messages in Explorer**: **Emails** tab only.
   - **Search for URL or file**: **Email attachments** or **URL** tabs only.
@@ -814,7 +814,7 @@ In the **Submit to Microsoft for analysis** flyout that opens, do the following 
 
 - **Email messages**:
   - **Why are you submitting this message to Microsoft?**: Select one of the following values:
-    - **It appears clean** or **It appears suspicious**: Select one of these values to get a second opinion from Microsoft.
+    - **It appears clean** or **It appears suspicious**: Select one of these values if you're unsure and you want a verdict from Microsoft.
 
       Select **Submit**, and then select **Done**.
 

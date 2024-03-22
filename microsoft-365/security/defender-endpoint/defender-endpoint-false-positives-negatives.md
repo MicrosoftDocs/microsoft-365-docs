@@ -3,11 +3,11 @@ title: Address false positives/negatives in Microsoft Defender for Endpoint
 description: Learn how to handle false positives or false negatives in Microsoft Defender for Endpoint.
 ms.service: defender-endpoint
 ms.subservice: ngp
-ms.author: deniseb
-author: denisebmsft
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 ms.date: 07/18/2023
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security
@@ -153,7 +153,7 @@ When you're done reviewing and undoing actions that were taken as a result of fa
 ### Remove a file from quarantine across multiple devices
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/autoir-quarantine-file-1.png" alt-text="The Quarantine file" lightbox="images/autoir-quarantine-file-1.png":::
+> :::image type="content" source="media/autoir-quarantine-file-1.png" alt-text="The Quarantine file" lightbox="media/autoir-quarantine-file-1.png":::
 
 1. In the [Microsoft Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2077139), select **Actions & submissions** and then select **Action center**.
 

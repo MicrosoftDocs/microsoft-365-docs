@@ -4,11 +4,11 @@ description: Learn about the new features and functionality available in the lat
 keywords: what's new in Microsoft Defender for Office 365, ga, generally available, capabilities, available, new
 search.appverid: met150
 f1.keywords: NOCSH
-ms.author: tracyp
-author: msfttracyp
+ms.author: chrisda
+author: chrisda
 ms.localizationpriority: medium
-ms.date: 2/2/2024
-manager: dansimp
+ms.date: 3/12/2024
+manager: deniseb
 audience: ITPro
 ms.collection:
   - m365-security
@@ -37,6 +37,15 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Defender for Endpoint](../defender-endpoint/whats-new-in-microsoft-defender-endpoint.md)
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
 - [What's new in Microsoft Defender for Cloud Apps](/cloud-app-security/release-notes)
+
+## March 2024
+
+- **Copy simulation functionality in Attack simulation training**: Admins can now duplicate existing simulations and customize them to their specific requirements. This feature saves time and effort by using previously launched simulations as templates when creating new ones. [Learn more](attack-simulation-training-simulations.md#copy-simulations).
+- Attack simulation training is now available in **Microsoft 365 DoD**. [Learn more](/office365/servicedescriptions/microsoft-defender-for-office-365-features#attack-simulation-training).
+
+## February 2024
+
+- **Hunting and responding to QR code-based attacks**: Security teams will now be able to see the URLs extracted from QR codes with "QR code" as URL source in Email Entity URL tab, and "QRCode" in "UrlLocation" column of EmailUrlInfo table in Advanced Hunting. Users can also filter for emails having URLs embedded within QR codes using "URL Source" filter in Threat Explorer which now supports "QR code" option.
 
 ## January 2024
 
@@ -67,6 +76,7 @@ For more information on what's new with other Microsoft Defender security produc
 ## September 2023
 
 - URL top-level domain blocking is available in the **Tenant allow block list**. [Learn more](tenant-allow-block-list-urls-configure.md).
+- Attack simulation training is now available in **Microsoft 365 GCC High**. [Learn more](/office365/servicedescriptions/microsoft-defender-for-office-365-features#attack-simulation-training).
 
 ## August 2023
 
@@ -238,10 +248,10 @@ For more information on what's new with other Microsoft Defender security produc
 
 ## February/March 2021
 
-- Alert ID integration (search using Alert ID and Alert-Explorer navigation) in [hunting experiences](threat-explorer-about.md)
-- Increasing the limits for Export of records from 9990 to 200,000 in [hunting experiences](threat-explorer-about.md)
-- Extending the Explorer (and Real-time detections) data retention and search limit for trial tenants from 7 (previous limit) to 30 days in [hunting experiences](threat-explorer-about.md)
-- New hunting pivots called **Impersonated domain** and **Impersonated user** within the Explorer (and Real-time detections) to search for impersonation attacks against protected users or domains. For more information, see [details](threat-explorer-about.md#view-phishing-emails-sent-to-impersonated-users-and-domains). (Microsoft Defender for Office 365 Plan 1 or Plan 2)
+- Alert ID integration (search using Alert ID and Alert-Explorer navigation) in [hunting experiences](threat-explorer-real-time-detections-about.md)
+- Increasing the limits for Export of records from 9990 to 200,000 in [hunting experiences](threat-explorer-real-time-detections-about.md)
+- Extending the Explorer (and Real-time detections) data retention and search limit for trial tenants from 7 (previous limit) to 30 days in [hunting experiences](threat-explorer-real-time-detections-about.md)
+- New hunting pivots called **Impersonated domain** and **Impersonated user** within Explorer and Real-time detections to search for impersonation attacks against protected users or domains. For more information, see [Phish view in Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md#phish-view-in-threat-explorer-and-real-time-detections).
 
 ## Microsoft Defender for Office 365 Plan 1 and Plan 2
 

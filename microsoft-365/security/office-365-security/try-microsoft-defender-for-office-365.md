@@ -1,12 +1,11 @@
 ---
 title: Try and evaluate Defender for Office 365
 description: Learn how to evaluate and try the capabilities of Microsoft Defender for Office 365 without affecting your existing mail flow.
-keywords: Try, Evaluate, Trial, Evaluation, Defender for Office 365
 f1.keywords:
   - NOCSH
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.topic: conceptual
 ms.localizationpriority: medium
@@ -219,7 +218,7 @@ Remember, when you evaluate or try Defender for Office 365 in audit mode, specia
 
          [Enhanced Filtering for Connectors](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) (also known as *skip listing*) is automatically configured on the connector that you specify.
 
-         When a third-party service or device sits in front of email flowing into Microsoft 365, Enhanced Filtering for Connectors correctly identifies the source of internet messages and greatly improves the accuracy of the Microsoft filtering stack (especially [spoof intelligence](anti-phishing-protection-spoofing-about.md), as well as post-breach capabilities in [Threat Explorer](threat-explorer-about.md) and [Automated Investigation & Response (AIR)](air-about-office.md).
+         When a third-party service or device sits in front of email flowing into Microsoft 365, Enhanced Filtering for Connectors correctly identifies the source of internet messages and greatly improves the accuracy of the Microsoft filtering stack (especially [spoof intelligence](anti-phishing-protection-spoofing-about.md), as well as post-breach capabilities in [Threat Explorer](threat-explorer-real-time-detections-about.md) and [Automated Investigation & Response (AIR)](air-about-office.md).
 
      - **I'm only using Microsoft Exchange Online**: The MX records for your domain point to Microsoft 365. There's nothing left to configure, so select **Finish**.
 
@@ -387,7 +386,7 @@ No special reports are created for **blocking mode**, so use the standard report
 
 In **audit mode**, you're looking for reports that show detections by the evaluation policies as described in the following list:
 
-- The [Email entity page](mdo-email-entity-page.md) (part of [Threat Explorer](threat-explorer-about.md)) shows the following banner in message detection details on the **Analysis** tab for **Bad attachment**, **spam url + malware**, **Phish url**, and **impersonation** messages that were detected by the Defender for Office 365 evaluation:
+- The [Email entity page](mdo-email-entity-page.md) (part of [Threat Explorer](threat-explorer-real-time-detections-about.md)) shows the following banner in message detection details on the **Analysis** tab for **Bad attachment**, **spam url + malware**, **Phish url**, and **impersonation** messages that were detected by the Defender for Office 365 evaluation:
 
   :::image type="content" source="../../media/evalv2-detection-banner.png" alt-text="Notification banner in message details that the Defender for Office 365 evaluation detected a malicious email message." lightbox="../../media/evalv2-detection-banner.png":::
 
@@ -430,7 +429,7 @@ In **audit mode**, you're looking for reports that show detections by the evalua
 
 ## Required permissions
 
-The following permissions are required in [Microsoft Entra ID](/microsoft-365/admin/add-users/about-admin-roles) to set up an evaluation or trial of Defender for Microsoft 365:
+The following permissions are required in [Microsoft Entra ID](/entra/identity/role-based-access-control/manage-roles-portal) to set up an evaluation or trial of Defender for Microsoft 365:
 
 - *Create, modify or delete an evaluation or trial*: Membership in the **Security Administrator** or **Global Administrator** roles.
 - *View evaluation policies and reports in audit mode*: Membership in the **Security Administrator** or **Security Reader** roles.

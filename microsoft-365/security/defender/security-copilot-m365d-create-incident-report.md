@@ -20,7 +20,7 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - MET150
-ms.date: 10/10/2023
+ms.date: 02/12/2024
 ---
 
 # Create an incident report with Microsoft Security Copilot in Microsoft Defender XDR
@@ -41,6 +41,9 @@ A comprehensive and clear incident report is an essential reference for security
 While an [incident summary](security-copilot-m365d-incident-summary.md) provides an overview of an incident and how it happened, an incident report consolidates incident information from various data sources available in Microsoft Sentinel and Microsoft Defender XDR. The incident report also includes all analyst-driven steps and automated actions, the analysts involved in the response, and the comments from the analysts. Whether security teams are using Microsoft Defender XDR, Microsoft Sentinel, or both, all relevant incident data are added into the generated incident report.
 
 This guide lists the data in incident reports and contains steps on how to access the incident report creation capability within the portal. It also includes information on how to provide feedback about the generated report.
+
+> [!NOTE]
+> The incident report generation capability is also available in the Security Copilot standalone experience through the Microsoft Defender XDR plugin. Know more about [preinstalled plugins in Microsoft Security Copilot](/security-copilot/manage-plugins#preinstalled-plugins).
 
 ## Technical requirements
 
@@ -64,10 +67,14 @@ Security Copilot creates an incident report containing the following information
 To create an incident report, perform the following steps:
 
 1. Open an incident page. In the incident page, select **Generate incident report** located at the top right corner of the page. Alternately, you can select the report icon found in the Security Copilot pane.
-:::image type="content" source="../../media/copilot-in-defender/incident-report/fig1-new-sec-copilot-m365d-create-report.png" alt-text="Screenshot highlighting the generate incident report and report icon buttons in the incident page." lightbox="../../media/copilot-in-defender/incident-report/fig1-expand-sec-copilot-m365d-create-report.png":::
+
+   :::image type="content" source="../../media/copilot-in-defender/incident-report/fig1-new-sec-copilot-m365d-create-report.png" alt-text="Screenshot highlighting the generate incident report and report icon buttons in the incident page." lightbox="../../media/copilot-in-defender/incident-report/fig1-expand-sec-copilot-m365d-create-report.png":::
+
 2. Security Copilot creates the incident report. You can stop the report creation by selecting **Cancel** and restart report creation by selecting **Regenerate**. Additionally, you can restart report creation if you encounter an error.
 3. The incident report card appears on the Security Copilot pane. The generated report depends on the incident information available from Microsoft Defender XDR and Microsoft Sentinel. Refer to the [recommendations](security-copilot-m365d-create-incident-report.md#recommendations-for-incident-report-creation) to ensure a comprehensive incident report.
-:::image type="content" source="../../media/copilot-in-defender/incident-report/fig2-new-sec-copilot-m365d-create-report.png" alt-text="Screenshot of the incident report card in the incident page." lightbox="../../media/copilot-in-defender/incident-report/fig2-expand-sec-copilot-m365d-create-report.png":::
+
+   :::image type="content" source="../../media/copilot-in-defender/incident-report/fig2-new-sec-copilot-m365d-create-report.png" alt-text="Screenshot of the incident report card in the incident page." lightbox="../../media/copilot-in-defender/incident-report/fig2-expand-sec-copilot-m365d-create-report.png":::
+
 4. Select the three dots located on the right side of the incident report card. To copy the report, select **copy to clipboard** and paste the report to your preferred system, or **Post to comments and history** to add the report to the comments and history of the incident.
 5. Select **Regenerate** to restart report creation. You can also opt to **Open in Security Copilot** to view the results and continue accessing other plugins available in the Security Copilot standalone portal.
 

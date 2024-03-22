@@ -4,7 +4,7 @@ description: View and edit settings for the Microsoft Defender portal and advanc
 search.appverid: MET150
 author: siosulli
 ms.author: siosulli
-manager: dansimp 
+manager: deniseb 
 audience: Admin
 ms.topic: overview
 ms.service: defender-business

@@ -1,10 +1,10 @@
 ---
 title: Endpoint detection and response in block mode
 description: Learn about endpoint detection and response in block mode
-author: denisebmsft
-ms.author: deniseb
-manager: dansimp
-ms.reviewer: shwetaj
+author: siosulli
+ms.author: siosulli
+manager: deniseb
+ms.reviewer: 
 audience: ITPro
 ms.topic: conceptual
 ms.service: defender-endpoint
@@ -53,7 +53,7 @@ EDR in block mode works behind the scenes to remediate malicious artifacts that 
 
 EDR in block mode is integrated with [threat & vulnerability management](next-gen-threat-and-vuln-mgt.md) capabilities. Your organization's security team gets a [security recommendation](tvm-security-recommendation.md) to turn EDR in block mode on if it isn't already enabled. 
 
-:::image type="content" source="images/edrblockmode-TVMrecommendation.png" alt-text="The recommendation to turn on EDR in block mode" lightbox="images/edrblockmode-TVMrecommendation.png":::
+:::image type="content" source="media/edrblockmode-TVMrecommendation.png" alt-text="The recommendation to turn on EDR in block mode" lightbox="media/edrblockmode-TVMrecommendation.png":::
 
 > [!TIP]
 > To get the best protection, make sure to **[deploy Microsoft Defender for Endpoint baselines](configure-machines-security-baseline.md)**.
@@ -65,7 +65,7 @@ Watch this video to learn why and how to turn on endpoint detection and response
 
 When EDR in block mode is turned on, and a malicious artifact is detected, Defender for Endpoint remediates that artifact. Your security operations team sees the detection status as **Blocked** or **Prevented** in the [Action center](respond-machine-alerts.md#check-activity-details-in-action-center), listed as completed actions. The following image shows an instance of unwanted software that was detected and remediated through EDR in block mode:
 
-:::image type="content" source="images/edr-in-block-mode-detection.png" alt-text="The detection by EDR in block mode" lightbox="images/edr-in-block-mode-detection.png":::
+:::image type="content" source="media/edr-in-block-mode-detection.png" alt-text="The detection by EDR in block mode" lightbox="media/edr-in-block-mode-detection.png":::
 
 ## Enable EDR in block mode
 

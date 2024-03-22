@@ -4,7 +4,7 @@ f1.keywords:
   - NOCSH
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: medium
@@ -53,7 +53,7 @@ The rest of this article how to configure preset security policies.
   - [Exchange Online permissions](/exchange/permissions-exo/permissions-exo):
     - _Configure preset security policies_: Membership in the **Organization Management** or **Security Administrator** role groups.
     - _Read-only access to preset security policies_: Membership in the **Global Reader** role group.
-  - [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator**, **Security Administrator**, or **Global Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
+  - [Microsoft Entra permissions](/entra/identity/role-based-access-control/manage-roles-portal): Membership in the **Global Administrator**, **Security Administrator**, or **Global Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 ## Use the Microsoft Defender portal to assign Standard and Strict preset security policies to users
 
@@ -546,7 +546,7 @@ The differences in meaningful policy settings in the Standard preset security po
 |&nbsp;&nbsp;**Spam** detection action (_SpamAction_)|**Move message to Junk Email folder** (`MoveToJmf`)|**Quarantine message** (`Quarantine`)|
 |**Anti-phishing policy**|||
 |&nbsp;&nbsp;**If the message is detected as spoof by spoof intelligence** (_AuthenticationFailAction_)|**Move message to Junk Email folder** (`MoveToJmf`)|**Quarantine message** (`Quarantine`)|
-|**Show first contact safety tip** (_EnableFirstContactSafetyTips_)|Selected (`$true`)|Not selected (`$false`)|
+|**Show first contact safety tip** (_EnableFirstContactSafetyTips_)|Selected (`$true`)|Selected (`$true`)|
 |&nbsp;&nbsp;**If mailbox intelligence detects an impersonated user** (_MailboxIntelligenceProtectionAction_)|**Move message to Junk Email folder** (`MoveToJmf`)|**Quarantine message** (`Quarantine`)|
 |&nbsp;&nbsp;**Phishing email threshold** (_PhishThresholdLevel_)|**3 - More aggressive** (`3`)|**4 - Most aggressive** (`4`)|
 |**Safe Attachments policy**|No difference|No difference|

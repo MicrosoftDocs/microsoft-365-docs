@@ -1,15 +1,11 @@
 ---
 title: EDR detection test for verifying device's onboarding and reporting service
 description: EDR detection test to verify the device's proper onboarding and reporting to the service.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamf, macos, big sur, monterey, ventura, mde for mac
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -127,7 +123,7 @@ After a few minutes, a detection should be raised in Microsoft Defender XDR.
 
 12. Go to the **Alert** Queue.
 
-    :::image type="content" source="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="Screenshot that shows a macOS EDR test alert that shows severity, category, detection source, and a collapsed menu of actions":::
+    :::image type="content" source="media/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="Screenshot that shows a macOS EDR test alert that shows severity, category, detection source, and a collapsed menu of actions":::
 
     The macOS EDR test alert shows severity, category, detection source, and a collapsed menu of actions.
 

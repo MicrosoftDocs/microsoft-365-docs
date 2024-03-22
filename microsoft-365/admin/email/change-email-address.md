@@ -54,7 +54,7 @@ When you change your domain's email to come to Microsoft 365, by updating your d
   
 ## Set up business email with a new domain
 
-Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198215).
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/p/?linkid=2198215).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyVVA?autoplay=false]
 
@@ -80,7 +80,7 @@ You must be a global admin to perform these steps.
 
 ::: moniker range="o365-worldwide"
 
-1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
 ::: moniker-end
 

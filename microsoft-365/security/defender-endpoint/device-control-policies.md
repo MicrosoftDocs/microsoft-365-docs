@@ -1,10 +1,10 @@
 ---
 title: Device control policies in Microsoft Defender for Endpoint            
 description: Learn about Device control policies in Defender for Endpoint           
-author: denisebmsft
-ms.author: deniseb
-manager: dansimp 
-ms.date: 02/01/2024
+author: siosulli
+ms.author: siosulli
+manager: deniseb 
+ms.date: 03/20/2024
 ms.topic: overview
 ms.service: defender-endpoint
 ms.subservice: asr
@@ -15,12 +15,18 @@ ms.collection:
 - mde-asr
 ms.custom:
 - partner-contribution
-ms.reviewer: joshbregman
+ms.reviewer: joshbregman, ksarens
 search.appverid: MET150
 f1.keywords: NOCSH 
 ---
 
 # Device control policies in Microsoft Defender for Endpoint
+
+**Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Business](/microsoft-365/security/defender-business)
 
 This article describes device control policies, rules, entries, groups, and advanced conditions. Essentially, device control policies define access for a set of devices. The devices that are in scope are determined by a list of included device groups and a list of excluded device groups. A policy applies if the device is in all of the included device groups and none of the excluded device groups. If no policies apply, then the default enforcement is applied. 
 
@@ -163,14 +169,17 @@ Device control policies define access (called an entry) for a set of devices. En
 
 | Entry setting | Options |
 |---|---|
+| AccessMask | Applies the action only if the access operations matches the access mask -  The access mask is the bit-wise OR of the access values:<br><br>  1 - Device Read<br>2 - Device Write<br>4 - Device Execute<br>8 - File Read<br>16 - File Write<br>32 - File Execute<br>64 - Print<br><br>For example:<br>Device Read, Write and Execute = 7 (1+2+4)<br>Device Read, Disk Read = 9 (1+8)<br>
 | Action | Allow <br/> Deny <br/> AuditAllow <br/> AuditDeny |
 | Notification | None (default) <br/> An event is generated <br/> The user receives notification <br/> File evidence is captured |
+
+> [!WARNING]
+> The [February 2024](microsoft-defender-antivirus-updates.md#february-2024-engine-11240209--platform-418240207) release causes inconsistent results for device control customers who are using removable media policies with disk/device-level access only (masks that are less than or equal to 7). Enforcement might not work as expected. To mitigate this issue, rolling back to the previous version is recommended.
 
 If device control is configured, and a user attempts to use a device that's not allowed, the user gets a notification that contains the name of the device control policy and the name of the device. The notification appears once every hour after initial access is denied.
 
 An entry supports the following optional conditions:
 
-- Access Condition: Applies the action only to the access defined in the access mask
 - User Condition: Applies the action only to the user/group identified by the SID
 - Machine Condition:  Applies the action only to the device/group identified by the SID
 - Parameters Condition:  Applies the action only if the parameters match (See Advanced Conditions)
@@ -449,7 +458,7 @@ The properties described in the following table can be included in the `Descript
 | `InstancePathId` | String that uniquely identifies the device in the system, for example, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0`. It corresponds to the device instance path in Device Manager in Windows. The number at the end (for example `&0`) represents the available slot and might change from device to device. For best results, use a wildcard at the end. For example, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`. |
 | `DeviceId` | To transform Device instance path to Device ID format, use Standard USB Identifiers, such as this example: `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07` |
 | `HardwareId` | String that identifies the device in the system, like `USBSTOR\DiskGeneric_Flash_Disk___8.07`. It corresponds to the hardware ID in Device Manager in Windows. Keep in mind that `HardwareId` isn't unique; different devices might share the same value. |
-| `FriendlyNameId` | String attached to the device, like `Generic Flash Disk USB Device`. It's corresponds to the friendly name in Device Manager in Windows.  |
+| `FriendlyNameId` | String attached to the device, like `Generic Flash Disk USB Device`. It corresponds to the friendly name in Device Manager in Windows.  |
 | `BusId` | For example, `USB`, `SCSI` |
 | `SerialNumberId` | You can find `SerialNumberId` from Device instance path in Device Manager in Windows. For example, `03003324080520232521` is `SerialNumberId` in `USBSTOR\DISK&VEN__USB&PROD__SANDISK_3.2GEN1&REV_1.00\03003324080520232521&0` |
 | `VID_PID` | - Vendor ID is the four-digit vendor code that the USB committee assigns to the vendor. <br/>- Product ID is the four-digit product code that the vendor assigns to the device. It supports wildcards.<br/>- To transform Device instance path to Vendor ID and Product ID format, use Standard USB Identifiers. Here are some examples: <br/>`0751_55E0`: match this exact VID/PID pair <br/>`_55E0`: match any media with `PID=55E0` <br/>`0751_`: match any media with `VID=0751` |
@@ -625,6 +634,7 @@ Then the group is then referenced as parameters in an entry, as illustrated in t
           <Options>0</Options>
           <AccessMask>64</AccessMask>
           <Parameters MatchType="MatchAny">
+            <VPNConnection>
                     <GroupId>{d633d17d-d1d1-4c73-aa27-c545c343b6d7}</GroupId>
             </VPNConnection>
         </Parameters>
@@ -714,7 +724,7 @@ The group is then referenced as parameters in an entry, as illustrated in the fo
 
 ## File evidence
 
-With device control, you can store evidence of files that were copied to removablee devices or were printed. When file evidence is enabled, a `RemovableStorageFileEvent` is created. The behavior of file evidence is controlled by options on the Allow action, as described in the following table:
+With device control, you can store evidence of files that were copied to removable devices or were printed. When file evidence is enabled, a `RemovableStorageFileEvent` is created. The behavior of file evidence is controlled by options on the Allow action, as described in the following table:
 
 | Option | Description |
 |---|---|

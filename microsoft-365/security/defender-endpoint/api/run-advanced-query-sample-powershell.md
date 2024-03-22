@@ -2,15 +2,11 @@
 title: Advanced Hunting with PowerShell API Basics
 ms.reviewer: 
 description: Learn the basics of querying the Microsoft Defender for Endpoint API, using PowerShell.
-keywords: apis, supported apis, advanced hunting, query
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -36,7 +32,7 @@ ms.date: 12/18/2020
 
 [!include[Improve request performance](../../../includes/improve-request-performance.md)]
 
-Run advanced queries using PowerShell, see [Advanced Hunting API](run-advanced-query-api.md).
+Run advanced queries using PowerShell. For more information, see [Advanced Hunting API](run-advanced-query-api.md).
 
 In this section, we share PowerShell samples to retrieve a token and use it to run a query.
 
@@ -47,13 +43,13 @@ You first need to [create an app](apis-intro.md).
 
 - Open a PowerShell window.
 
-- If your policy does not allow you to run the PowerShell commands, you can run the following command:
+- If your policy doesn't allow you to run the PowerShell commands, you can run the following command:
 
   ```powershell
   Set-ExecutionPolicy -ExecutionPolicy Bypass
   ```
 
-For more information, see [PowerShell documentation](/powershell/module/microsoft.powershell.security/set-executionpolicy)
+For more information, see [PowerShell documentation](/powershell/module/microsoft.powershell.security/set-executionpolicy).
 
 ## Get token
 
@@ -76,8 +72,8 @@ $response = Invoke-RestMethod -Method Post -Uri $oAuthUri -Body $body -ErrorActi
 $aadToken = $response.access_token
 ```
 
-where
-- $tenantId: ID of the tenant on behalf of which you want to run the query (that is, the query will be run on the data of this tenant)
+Where
+- $tenantId: ID of the tenant on behalf of which you want to run the query (that is, the query is run on the data of this tenant)
 - $appId: ID of your Microsoft Entra app (the app must have 'Run advanced queries' permission to Defender for Endpoint)
 - $appSecret: Secret of your Microsoft Entra app
 
@@ -130,7 +126,7 @@ $results | ConvertTo-Json | Set-Content file1.json
 ```
 
 
-## Related topic
+## Related article
 - [Microsoft Defender for Endpoint APIs](apis-intro.md)
 - [Advanced Hunting API](run-advanced-query-api.md)
 - [Advanced Hunting using Python](run-advanced-query-sample-python.md)

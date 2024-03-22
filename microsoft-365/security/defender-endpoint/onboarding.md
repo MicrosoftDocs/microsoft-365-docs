@@ -1,15 +1,11 @@
 ---
 title: Onboard to Microsoft Defender for Endpoint
 description: Learn how to onboard endpoints to Microsoft Defender for Endpoint service
-keywords: microsoft defender for endpoint, onboard, deploy
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
   - m365-security

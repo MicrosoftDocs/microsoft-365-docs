@@ -4,10 +4,9 @@ f1.keywords:
   - NOCSH
 ms.author: bcarter
 author: BrendaCarter
-manager: laurawi
+manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-
 ms.localizationpriority: medium
 ms.collection: 
   - Ent_O365
@@ -45,7 +44,7 @@ The Microsoft Defender portal has capabilities for both protection and reporting
 As an initial step, you need to configure *email authentication* records in DNS for all custom email domains in Microsoft 365 (SPF, DKIM, and DMARC). Microsoft 365 automatically configures email authentication for the \*.onmicrosoft.com domain. For more information, see [Step 1: Configure email authentication for your Microsoft 365 domains](mdo-deployment-guide.md#step-1-configure-email-authentication-for-your-microsoft-365-domains).
 
 > [!NOTE]
-> For non-standard deployments of SPF, hybrid deployments, and troubleshooting: [How Microsoft 365 uses Sender Policy Framework (SPF) to prevent spoofing](email-authentication-anti-spoofing.md).
+> For non-standard deployments of SPF, hybrid deployments, and troubleshooting: [Set up SPF to help prevent spoofing](email-authentication-spf-configure.md).
 
 Most protection features in Exchange Online Protection (EOP) and Defender for Office 365 come with *default policy configurations*. For more information, see the table [here](mdo-deployment-guide.md#step-2-configure-protection-policies).
 
@@ -74,7 +73,7 @@ On the **Email & collaboration reports** page that opens, note the cards that ar
 
 Mail flow reports and insights are available in the Exchange admin center (EAC). For more information, see [Mail flow reports](/exchange/monitoring/mail-flow-reports/mail-flow-reports) and [Mail flow insights](/exchange/monitoring/mail-flow-insights/mail-flow-insights).
 
-|If you're investigating or experiencing an attack against your tenant, use [Threat Explorer (or real-time detections)](threat-explorer-about.md) to analyze threats. Explorer (and the real-time detections report) shows you the volume of attacks over time, and you can analyze this data by threat families, attacker infrastructure, and more. You can also mark any suspicious email for the Incidents list.
+|If you're investigating or experiencing an attack against your tenant, use [Threat Explorer (or real-time detections)](threat-explorer-real-time-detections-about.md) to analyze threats. Explorer (and the real-time detections report) shows you the volume of attacks over time, and you can analyze this data by threat families, attacker infrastructure, and more. You can also mark any suspicious email for the Incidents list.
 
 ## Additional considerations
 

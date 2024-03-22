@@ -4,10 +4,10 @@ description: Monitor your organization's data security through device control re
 ms.service: defender-endpoint
 ms.localizationpriority: medium
 ms.date: 02/01/2024
-ms.author: deniseb
-author: denisebmsft
+ms.author: siosulli
+author: siosulli
 ms.topic: conceptual
-manager: dansimp
+manager: deniseb
 ms.reviewer: joshbregman
 audience: ITPro
 ms.subservice: asr
@@ -128,7 +128,7 @@ The **View details** button shows more media usage data in the **Device control 
 The page provides a dashboard with aggregated number of events per type and a list of events and shows 500 events per page, but if you're an administrator (such as a global administrator or security administrator), you can scroll down to see more events and can filter on time range, media class name, and device ID.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/Detaileddevicecontrolreport.png" alt-text="The Device Control Report Details page in the Microsoft Defender portal" lightbox="images/Detaileddevicecontrolreport.png":::
+> :::image type="content" source="media/Detaileddevicecontrolreport.png" alt-text="The Device Control Report Details page in the Microsoft Defender portal" lightbox="media/Detaileddevicecontrolreport.png":::
 
 When you select an event, a flyout appears that shows you more information:
 
@@ -137,17 +137,17 @@ When you select an event, a flyout appears that shows you more information:
 - **Location details:** Device name, User, and MDATP device ID.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/devicecontrolreportfilter.png" alt-text="The Filter On Device Control Report page" lightbox="images/devicecontrolreportfilter.png":::
+> :::image type="content" source="media/devicecontrolreportfilter.png" alt-text="The Filter On Device Control Report page" lightbox="media/devicecontrolreportfilter.png":::
 
 To see real-time activity for this media across the organization, select the **Open Advanced hunting** button. This includes an embedded, predefined query.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/Devicecontrolreportquery.png" alt-text="The Query On Device Control Report page" lightbox="images/Devicecontrolreportquery.png":::
+> :::image type="content" source="media/Devicecontrolreportquery.png" alt-text="The Query On Device Control Report page" lightbox="media/Devicecontrolreportquery.png":::
 
 To see the security of the device, select the **Open device page** button on the flyout. This button opens the device entity page.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/Devicesecuritypage.png" alt-text="The Device Entity Page" lightbox="images/Devicesecuritypage.png":::
+> :::image type="content" source="media/Devicesecuritypage.png" alt-text="The Device Entity Page" lightbox="media/Devicesecuritypage.png":::
 
 ### Reporting delays
 

@@ -1,15 +1,11 @@
 ---
 title: Deploy and manage Device Control using Intune 
 description: Learn how to deploy and manage device control policies using Intune.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, macOS, device, control, usb, removable, media, intune
 ms.service: defender-endpoint
-ms.mktglfcycl: security
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -45,7 +41,7 @@ Before you get started with Removable Storage Access Control, you must confirm y
 
 ### Step 1: Build mobileconfig file
 
-Now, you have 'groups' and 'rules' and 'settings', replace the mobileconfig file with those values and put it under the Device Control node, here is the demo file: [mdatp-devicecontrol/demo.mobileconfig at main - microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/macOS/mobileconfig/demo.mobileconfig). Make sure validate your policy with the JSON schema to make sure your policy format is correct: [mdatp-devicecontrol/device_control_policy_schema.json at main - microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/macOS/policy/device_control_policy_schema.json).
+Now, you have `groups`, `rules`, and `settings`, replace the mobileconfig file with those values and put it under the Device Control node. Here's the demo file: [mdatp-devicecontrol/demo.mobileconfig at main - microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/blob/main/macOS/mobileconfig/demo.mobileconfig). Make sure validate your policy with the JSON schema and make sure your policy format is correct: [mdatp-devicecontrol/device_control_policy_schema.json at main - microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/blob/main/macOS/policy/device_control_policy_schema.json).
 
 > [!NOTE]
 > See [Device Control for macOS](mac-device-control-overview.md) for information about settings, rules and groups.
@@ -64,4 +60,5 @@ You can deploy the mobileconfig file through [**https://endpoint.microsoft.com/*
 - [Device Control for macOS](mac-device-control-overview.md)
 - [Deploy and manage Device Control using jamf](mac-device-control-jamf.md)
 - [macOS Device Control frequently asked questions (FAQ)](mac-device-control-faq.md)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

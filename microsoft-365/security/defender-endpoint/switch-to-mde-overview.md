@@ -1,15 +1,11 @@
 ---
 title: Migrate to Microsoft Defender for Endpoint from non-Microsoft endpoint protection
 description: Move to Microsoft Defender for Endpoint, which includes Microsoft Defender Antivirus for your endpoint protection solution.
-keywords: migration, windows defender, advanced endpoint protection, antivirus, antimalware, passive mode, active mode
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: deniseb
-author: denisebmsft
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security
@@ -41,7 +37,7 @@ When you migrate to Defender for Endpoint, you begin with your non-Microsoft ant
 
 ## The migration process
 
-:::image type="content" source="images/phase-diagrams/migration-phases.png" alt-text="The MDE migration process" lightbox="images/phase-diagrams/migration-phases.png":::
+:::image type="content" source="media/phase-diagrams/migration-phases.png" alt-text="The MDE migration process" lightbox="media/phase-diagrams/migration-phases.png":::
 
 The process of migrating to Defender for Endpoint can be divided into three phases, as described in the following table:
 

@@ -2,9 +2,9 @@
 title: Report spam, non-spam, phishing, suspicious emails and files to Microsoft
 f1.keywords: 
   - NOCSH
-ms.author: dansimp
-author: dansimp
-manager: dansimp
+ms.author: chrisda
+author: chrisda
+manager: deniseb
 ms.date: 11/9/2023
 audience: ITPro
 ms.topic: overview
@@ -60,11 +60,11 @@ User reported messages are also available to admins in the following locations i
 
 - The [User-reported messages report](reports-email-security.md#user-reported-messages-report)
 - [Automated investigation and response (AIR) results](air-view-investigation-results.md) (Defender for Office 365 Plan 2)
-- [Threat Explorer](threat-explorer-views.md) (Defender for Office 365 Plan 2)
+- [Threat Explorer](threat-explorer-real-time-detections-about.md) (Defender for Office 365 Plan 2)
 
 In Defender for Office 365 Plan 2, admins can also submit messages from the [Email entity page](mdo-email-entity-page.md#actions-you-can-take-on-the-email-entity-page) and from [Alerts](../defender/investigate-alerts.md) in the Defender portal.
 
-Admins can use the sample submission portal at <https://www.microsoft.com/wdsi/filesubmission> to submit other suspected files to Microsoft for analysis. For more information, see [Submit files for analysis](../intelligence/submission-guide.md).
+Admins can use the sample submission portal at <https://www.microsoft.com/wdsi/filesubmission> to submit other suspected files to Microsoft for analysis. For more information, see [Submit files for analysis](../defender/submission-guide.md).
 
 > [!TIP]
 > In U.S. Government organizations (Microsoft 365 GCC, GCC High, and DoD), admins can submit messages to Microsoft for analysis. The messages are analyzed for email authentication and policy checks only. Payload reputation, detonation, and grader analysis aren't done for compliance reasons (data isn't allowed to leave the organization boundary). If you report a message, URL, or email attachment to Microsoft from one of these organizations, you get the following message in the result details:

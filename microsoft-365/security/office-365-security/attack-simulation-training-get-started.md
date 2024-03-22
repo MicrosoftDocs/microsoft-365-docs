@@ -4,10 +4,9 @@ f1.keywords:
   - NOCSH
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.topic: how-to
-
 ms.localizationpriority: medium
 search.appverid: 
   - MET150
@@ -49,7 +48,7 @@ Watch this short video to learn more about Attack simulation training.
 - For more information about the availability of Attack simulation training across different Microsoft 365 subscriptions, see [Microsoft Defender for Office 365 service description](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
-  - [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): You need membership in one of the following roles:
+  - [Microsoft Entra permissions](/entra/identity/role-based-access-control/manage-roles-portal): You need membership in one of the following roles:
     - **Global Administrator**
     - **Security Administrator**
     - **Attack Simulation Administrators**<sup>\*</sup>: Create and manage all aspects of attack simulation campaigns.
