@@ -64,7 +64,7 @@ Learn how to use data sensitivity labels to prioritize incident investigation.
 
    You can narrow down the events shown on the device timeline by searching for data sensitivity labels. Doing this shows only events associated with files that the label name.
 
-   :::image type="content" source="images/machine-timeline-labels.png" alt-text="The device timeline with narrowed down search results based on label" lightbox="images/machine-timeline-labels.png":::
+   :::image type="content" source="media/machine-timeline-labels.png" alt-text="The device timeline with narrowed down search results based on label" lightbox="media/machine-timeline-labels.png":::
 
 > [!TIP]
 > These data points are also exposed through the 'DeviceFileEvents' in advanced hunting, allowing advanced queries and schedule detection to take into account sensitivity labels and file protection status.
