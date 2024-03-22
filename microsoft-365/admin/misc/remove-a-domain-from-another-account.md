@@ -65,7 +65,7 @@ After you've become an admin for the unmanaged account, you can remove the domai
 
 ## Step 3: Verify domain ownership and become the admin
 
-1. After you complete Step 2, select the admin center icon in the left navigation pane (alternatively, go to a browser and type in `https://admin.microsoft.com`).
+1. After you complete Step 2, select the admin center icon in the left navigation pane (alternatively, go to a browser and type in `https://admin.cloud.microsoft.com`).
 
     You're redirected to the admin takeover wizard.
 

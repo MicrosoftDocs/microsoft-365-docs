@@ -76,7 +76,7 @@ You can also add priority accounts from the Active users page.
 
 Add priority accounts from the Active users page.
 
-1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
+1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.cloud.microsoft.com</a>.
 
 2. Go to **Users** > **Active users** and select the three dots (more actions) at the top of the page. Select **Manage priority accounts**.
 
@@ -86,7 +86,7 @@ Add priority accounts from the Active users page.
 
 ## Remove a user from the priority accounts list
 
-1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
+1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.cloud.microsoft.com</a>.
 
 2. Go to **Setup** > **Organizational knowledge**, and choose **View** under **Monitor your most important accounts**.
 
