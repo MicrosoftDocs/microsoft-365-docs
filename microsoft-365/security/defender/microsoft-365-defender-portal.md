@@ -87,7 +87,7 @@ Selecting an incident name displays a page that demonstrates the value of centra
 
 Take the time to review the incidents in your environment, drill down into each alert, and practice building an understanding of how to access the information and determine next steps in your analysis.
 
-For more information, see [incidents in the Microsoft Defender portal](incidents-overview.md).
+For more information, see [Incidents in the Microsoft Defender portal](incidents-overview.md).
 
 ## Hunting
 You can build custom detection rules and hunt for specific threats in your environment. **Hunting** uses a query-based threat hunting tool that lets you proactively inspect events in your organization to locate threat indicators and entities. These rules run automatically to check for, and then respond to, suspected breach activity, misconfigured machines, and other findings.
@@ -196,7 +196,11 @@ With this learning path from Microsoft Learn, you can understand Microsoft Defen
 ## See also
 
 - [What's new in Microsoft Defender XDR](whats-new.md)
-- [Microsoft Defender for Office 365 in Microsoft Defender XDR](microsoft-365-security-center-mdo.md)
-- [Microsoft Defender for Endpoint in Microsoft Defender XDR](microsoft-365-security-center-mde.md)
+- [Microsoft Defender for Office 365 in the Microsoft Defender portal](microsoft-365-security-center-mdo.md)
+- [Microsoft Defender for Endpoint in Microsoft Defender portal](microsoft-365-security-center-mde.md)
+- [Microsoft Defender for Identity in the Microsoft Defender portal](microsoft-365-security-center-mdi.md)
+- [Microsoft Defender for Cloud Apps in Microsoft Defender XDR](microsoft-365-security-center-defender-cloud-apps.md)
+- [Microsoft Defender for Cloud in the Microsoft Defender portal](microsoft-365-security-center-defender-cloud.md)
+- [Microsoft Sentinel in the Microsoft Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2263690)
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]
