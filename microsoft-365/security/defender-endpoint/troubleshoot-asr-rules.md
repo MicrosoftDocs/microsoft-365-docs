@@ -1,6 +1,6 @@
 ---
 title: Report and troubleshoot Microsoft Defender for Endpoint attack surface reduction rules
-description: This article describes how to report and troubleshoot Microsoft Defender for Endpoint attack surface reduction ules
+description: This article describes how to report and troubleshoot Microsoft Defender for Endpoint attack surface reduction rules
 ms.service: defender-endpoint
 ms.localizationpriority: medium
 audience: ITPro
@@ -35,7 +35,7 @@ The <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">
 In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a>, we offer you a complete look at the current attack surface reduction rules configuration and events in your estate. Your devices must be onboarded into the Microsoft Defender for Endpoint service for these reports to be populated.
 Here's a screenshot from the Microsoft Defender portal (under **Reports** \> **Devices** \> **Attack surface reduction**). At the device level, select **Configuration** from the **Attack surface reduction rules** pane. The following screen is displayed, where you can select a specific device and check its individual attack surface reduction rule configuration.
 
-:::image type="content" source="images/asrrulesnew.png" alt-text="The attack surface reduction rules page" lightbox="images/asrrulesnew.png":::
+:::image type="content" source="media/asrrulesnew.png" alt-text="The attack surface reduction rules page" lightbox="media/asrrulesnew.png":::
 
 ## Microsoft Defender for Endpoint - Advanced hunting
 
@@ -54,7 +54,7 @@ DeviceEvents
 | summarize EventCount=count() by ActionType
 ```
 
-:::image type="content" source="images/adv-hunt-sc-2new.png" alt-text="The Advanced hunting page" lightbox="images/adv-hunt-sc-2new.png":::
+:::image type="content" source="media/adv-hunt-sc-2new.png" alt-text="The Advanced hunting page" lightbox="media/adv-hunt-sc-2new.png":::
 
 With advanced hunting you can shape the queries to your liking, so that you can see what is happening, regardless of whether you want to pinpoint something on an individual machine, or you want to extract insights from your entire environment.
 
@@ -108,7 +108,7 @@ attack surface reduction rule events can be viewed within the Windows Defender l
 
 To access it, open Windows Event Viewer, and browse to **Applications and Services Logs** \> **Microsoft** \> **Windows** \> **Windows Defender** \> **Operational**.
 
-:::image type="content" source="images/eventviewerscrnew.png" alt-text="The Event Viewer page" lightbox="images/eventviewerscrnew.png":::
+:::image type="content" source="media/eventviewerscrnew.png" alt-text="The Event Viewer page" lightbox="media/eventviewerscrnew.png":::
 
 ## Microsoft Defender Antimalware Protection Logs
 

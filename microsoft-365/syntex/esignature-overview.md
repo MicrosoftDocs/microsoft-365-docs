@@ -30,13 +30,15 @@ With SharePoint eSignature, you can quickly and securely send documents for sign
 
 ## Before you begin
 
-Before you can use SharePoint eSignature, an admin must [set up SharePoint eSignature](esignature-setup.md) in the Microsoft 365 admin center.
+Before you can enable SharePoint eSignature, an admin must [set up SharePoint eSignature](esignature-setup.md) in the Microsoft 365 admin center.
 
-You must be signed in to SharePoint Online by using your work email address.
+SharePoint eSignature enables binding agreements between parties by allowing guests access to SharePoint to electronically sign documents. Certain external sharing must be enabled at a tenant or site level to allow this access. For more information, see [Set up SharePoint eSignature for external recipients](esignature-setup.md#external-recipients). Consider whether this meets your compliance and security requirements when enabling eSignature.
+
+When using eSignature, you must be signed in to SharePoint by using your work email address.  
 
 ## Release notes
 
-- Currently, SharePoint eSignature is rolling out to the US market. The feature rolls out to other regions in 2024.
+- Currently, SharePoint eSignature is rolling out to the US market. The feature rolls out to other regions later in 2024.
 
 - SharePoint eSignature is available for only PDF documents at this time.
 
