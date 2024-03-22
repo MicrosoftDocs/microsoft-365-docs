@@ -163,7 +163,7 @@ If a user faces an issue, which isn't already addressed in the above sections or
 
 5. Provide details of the issue that you're facing and check "Send diagnostic data". We recommend checking "Include your email address" so that the team can reach back to you with a solution or a follow-up.
 
-    :::image type="content" source="media/finalsubmit5.png" alt-text="The pane on which you can add details and attach diagnostic data" lightbox="media    /finalsubmit5.png":::
+    :::image type="content" source="media/finalsubmit5.png" alt-text="The pane on which you can add details and attach diagnostic data" lightbox="media/finalsubmit5.png":::
 
 6. Select on "Submit" to successfully send the feedback.
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
