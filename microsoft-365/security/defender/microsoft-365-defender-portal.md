@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender portal
-description: Learn about the Microsoft Defender portal as the central location for protection, detection, investigation, and response to email, collaboration, identity, device, and app threats,.
-keywords: introduction to MMicrosoft Defender XDR, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
+description: Learn about the Microsoft Defender portal as the central location for protection, detection, investigation, and response to email, collaboration, identity, device, and app threats.
+keywords: introduction to Microsoft Defender XDR, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
@@ -30,7 +30,7 @@ ms.date: 03/21/2024
 
 # Microsoft Defender portal
 
-The Microsoft Defender portal at <https://security.microsoft.com> combines protection, detection, investigation, and response to email, collaboration, identity, device, and cloud app threats, in a central place. The Defender portal emphasizes quick access to information, simpler layouts, and bringing related information together for easier use. It includes:
+The Microsoft Defender portal at <https://security.microsoft.com> combines protection, detection, investigation, and response to threats across your entire organization and all its components, in a central place. The Defender portal emphasizes quick access to information, simpler layouts, and bringing related information together for easier use. It includes:
 
 - **[Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)** helps organizations secure their enterprise with a set of prevention, detection, investigation and hunting features to protect email, and Office 365 resources.
 - **[Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection)** delivers preventative protection, post-breach detection, automated investigation, and response for devices in your organization.
@@ -38,11 +38,11 @@ The Microsoft Defender portal at <https://security.microsoft.com> combines prote
 - **[Microsoft Defender for Cloud Apps](/cloud-app-security/)** is a comprehensive cross-SaaS and PaaS solution bringing deep visibility, strong data controls, and enhanced threat protection to your cloud apps.
 - **[Microsoft Sentinel](/azure/sentinel/)** is a cloud-native security information and event management (SIEM) solution that provides proactive threat detection, investigation, and response.
 
+[!INCLUDE [unified-soc-preview](../../includes/unified-soc-preview.md)]
+
 Watch this short video to learn about the Defender portal.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBKau]
-
-[!INCLUDE [unified-soc-preview](../../includes/unified-soc-preview.md)]
 
 ## What to expect
 
@@ -64,7 +64,20 @@ The Defender portal emphasizes *unity, clarity, and common goals*.
 
 ## Incident and alert investigations
 
-Centralizing security information creates a single place to investigate security incidents across your entire organization and all its components including hybrid identities, endpoints, cloud apps, business apps, email and docs, IoT, network, business applications, OT, infrastructure and cloud workloads. A primary example is **Incidents** under **Incidents & alerts**.
+Centralizing security information creates a single place to investigate security incidents across your entire organization and all its components including:
+
+- Hybrid identities
+- Endpoints
+- Cloud apps
+- Business apps
+- Email and docs
+- IoT
+- Network
+- Business applications
+- Operational technology (OT)
+- Infrastructure and cloud workloads
+
+A primary example is **Incidents** under **Incidents & alerts**.
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="The Incidents page in the Microsoft Defender portal." lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 
@@ -74,7 +87,7 @@ Selecting an incident name displays a page that demonstrates the value of centra
 
 Take the time to review the incidents in your environment, drill down into each alert, and practice building an understanding of how to access the information and determine next steps in your analysis.
 
-For more information, see [incidents in Microsoft Defender XDR](incidents-overview.md).
+For more information, see [incidents in the Microsoft Defender portal](incidents-overview.md).
 
 ## Hunting
 You can build custom detection rules and hunt for specific threats in your environment. **Hunting** uses a query-based threat hunting tool that lets you proactively inspect events in your organization to locate threat indicators and entities. These rules run automatically to check for, and then respond to, suspected breach activity, misconfigured machines, and other findings.
@@ -83,7 +96,7 @@ For more information, see [Proactively hunt for threats with advanced hunting in
 
 ## Improved processes
 
-Common controls and content either appear in the same place, or are condensed into one feed of data making it easier to find. For example, unified settings.
+Common controls and content either appear in the same place, or are condensed into one feed of data making it easier to find. For example, find unified settings under **Settings** and permissions under **Permissions**.
 
 ### Unified settings
 
@@ -91,12 +104,18 @@ Common controls and content either appear in the same place, or are condensed in
 
 ### Permissions
 
-:::image type="content" source="../../media/converged-roles-5.png" alt-text="The Endpoints roles & groups displayed on the Permissions & roles page" lightbox="../../media/converged-roles-5.png":::
+:::image type="content" source="../../media/microsoft-365-defender-portal/defender-portal-permissions.png" alt-text="Screenshot of the permissions page in the Microsoft Defender portal" lightbox="../../media/microsoft-365-defender-portal/defender-portal-permissions.png":::
 
 Access to Microsoft Defender XDR is configured with Microsoft Entra global roles or by using custom roles.
 
 - Learn more about how to [manage access to Microsoft Defender XDR](m365d-permissions.md)
 - Learn more about how to [create custom roles](custom-roles.md) in Microsoft Defender XDR
+
+For Microsoft Sentinel, after you connect Microsoft Sentinel to the Defender portal, your existing Azure role-based access control (RBAC) permissions allow you to work with the Microsoft Sentinel features that you have access to. Continue to manage roles and permissions for your Microsoft Sentinel users from the Azure portal. Any Azure RBAC changes are reflected in the Defender portal. For more information about Microsoft Sentinel permissions, see:
+
+- [Roles and permissions in Microsoft Sentinel | Microsoft Learn](/azure/sentinel/roles)
+- [Manage access to Microsoft Sentinel data by resource | Microsoft Learn](/azure/sentinel/resource-context-rbac)
+
 
 ### Integrated reports
 
@@ -147,11 +166,11 @@ Microsoft Defender XDR supports two types of partners:
 
 ## Send us your feedback
 
-We need your feedback. We're always looking to improve, so if there's something you'd like to see, [watch this video to find out how you can trust us to read your feedback](https://www.microsoft.com/videoplayer/embed/RE4K5Ci).
+We need your feedback. If there's something you'd like to see, [watch this video to find out how you can trust us to read your feedback](https://www.microsoft.com/videoplayer/embed/RE4K5Ci).
 
 ## Explore what the Defender portal has to offer
 
-Keep exploring the features and capabilities in Microsoft Defender XDR:
+Keep exploring the features and capabilities in the Defender portal:
 
 - [Manage incidents and alerts](manage-incidents.md)
 - [Track and respond to emerging threats with threat analytics](threat-analytics.md)
@@ -160,6 +179,8 @@ Keep exploring the features and capabilities in Microsoft Defender XDR:
 - [Custom detection rules](./custom-detection-rules.md)
 - [Email & collaboration alerts](../../compliance/alert-policies.md#default-alert-policies)
 - [Create a phishing attack simulation](../office-365-security/attack-simulation-training-simulations.md) and [create a payload for training your teams](/microsoft-365/security/office-365-security/attack-simulation-training-payloads)
+
+To explore capabilities related to the Microsoft Sentinel integration with Microsoft Defender XDR in the unified security operations platform (preview), see [Microsoft Sentinel in the Microsoft Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2263690).
 
 ## Training for security analysts
 
