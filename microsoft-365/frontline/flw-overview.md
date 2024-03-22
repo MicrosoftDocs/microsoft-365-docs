@@ -16,11 +16,10 @@ ms.collection:
   - m365solution-frontline
   - essentials-overview
   - essentials-get-started
-ms.reviewer: aaglick
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 10/28/2022
+ms.date: 03/22/2024
 ---
 
 # Get started with Microsoft 365 for frontline workers
@@ -83,7 +82,7 @@ Safeguard your business with best-in-class security and compliance features. Mic
 |Capability |More information |
 |-----------|---------------------|
 |Manage identities and access |<ul><li>[Microsoft Entra ID overview](/entra/fundamentals/whatis)</li></ul>|
-|Secure endpoints and apps across device types and operating systems |<ul><li>[Microsoft Intune overview](/mem/intune/fundamentals/what-is-intune)</li><li>[Frontline worker device management overview in Microsoft Intune](/mem/solutions/frontline-worker/frontline-worker-overview)</li><li>[Manage devices with Intune](/microsoft-365/solutions/manage-devices-with-intune-overview)</li></ul>|
+|Secure endpoints and apps across device types and operating systems |<ul><li>[Microsoft Intune overview](/mem/intune/fundamentals/what-is-intune)</li><li>[Frontline worker device management overview in Microsoft Intune](/mem/solutions/frontline-worker/frontline-worker-overview)</li><li>[Manage devices with Intune overview](/microsoft-365/solutions/manage-devices-with-intune-overview)</li><li>[Manage mobile devices for frontline workers](flw-devices.md)</li></ul>|
 
 ## Deploy and manage at scale
 
