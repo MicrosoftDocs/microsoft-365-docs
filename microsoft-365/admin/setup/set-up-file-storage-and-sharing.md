@@ -188,7 +188,7 @@ You can enable third-party storage for your users in Microsoft 365 so they can s
 > [!IMPORTANT]
 > Third-party storage is enabled by default so you need to perform these steps right away if you don't want it available to your users.
   
-1. Sign in to to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.
+1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.
 
 2. Go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Org settings**</a> page.
 
