@@ -94,7 +94,7 @@ To see how much storage space you have left in OneDrive, see [Manage your OneDri
   
 ### What files can be stored in OneDrive or on a SharePoint team site?
 
-While you can upload almost all types of files, some file names and characters in file names aren't allowed. For more information, see [Restrictions and limitations in OnceDrive and SharePoint](https://support.microsoft.com/office/64883A5D-228E-48F5-B3D2-EB39E07630FA).
+While you can upload almost all types of files, some file names and characters in file names aren't allowed. For more information, see [Restrictions and limitations in OneDrive and SharePoint](https://support.microsoft.com/office/64883A5D-228E-48F5-B3D2-EB39E07630FA).
   
 ### Enable or disable third-party storage services
 
