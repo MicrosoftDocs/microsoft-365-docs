@@ -37,7 +37,7 @@ Set up the device groups similar to Group policy  organizational unite (OUs), Mi
 
 2. Select **New**. 
 
-   :::image type="content" source="images/jamf-pro-static-group.png" alt-text="The Jamf Pro1 page" lightbox="images/jamf-pro-static-group.png":::
+   :::image type="content" source="media/jamf-pro-static-group.png" alt-text="The Jamf Pro1 page" lightbox="media/jamf-pro-static-group.png":::
 
 3. Provide a display name and select **Save**.
 

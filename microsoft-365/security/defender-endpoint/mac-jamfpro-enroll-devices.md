@@ -98,9 +98,9 @@ For a complete list, see [About Computer Enrollment](https://docs.jamf.com/9.9/c
 
 5. Select **Continue** to install the MDM Profile.
 
-   :::image type="content" source="images/jamfpro-mdm-unverified.png" alt-text="The Jamf Pro enrollment5" lightbox="images/jamfpro-mdm-unverified.png":::
+   :::image type="content" source="media/jamfpro-mdm-unverified.png" alt-text="The Jamf Pro enrollment5" lightbox="media/jamfpro-mdm-unverified.png":::
 
 6. Select **Continue**  to complete the configuration.
 
-   :::image type="content" source="images/jamfpro-mdm-profile.png" alt-text="The Jamf Pro enrollment6" lightbox="images/jamfpro-mdm-profile.png":::
+   :::image type="content" source="media/jamfpro-mdm-profile.png" alt-text="The Jamf Pro enrollment6" lightbox="media/jamfpro-mdm-profile.png":::
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
