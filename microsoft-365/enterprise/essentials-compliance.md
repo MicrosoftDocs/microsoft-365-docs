@@ -54,7 +54,7 @@ For detailed information on each service, see:
 
 ## General Data Protection Regulation (GDPR)
 
-All Viva apps built on your Microsoft 365 infrastructure support compliance with EU General Data Protection Regulation (GDPR) requirements.
+All Microsoft 365 apps and services support compliance with EU General Data Protection Regulation (GDPR) requirements.
 For detailed information, see [Microsoft Viva Privacy](/Viva/viva-privacy)
 
 ## Data residency
