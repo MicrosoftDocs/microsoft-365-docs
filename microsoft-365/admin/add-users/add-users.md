@@ -59,7 +59,7 @@ Check out this video and others on our [YouTube channel](https://go.microsoft.co
 
 ::: moniker range="o365-worldwide"
 
-1. Go to the admin center at <https://admin.microsoft.com>.
+1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.cloud.microsoft.com</a>.
 
 ::: moniker-end
 
@@ -88,7 +88,7 @@ If you're seeing this page in the admin center, you're on the **admin simplified
 
 ::: moniker range="o365-worldwide"
 
-1. Go to the admin center at <https://admin.microsoft.com>.
+1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.cloud.microsoft.com</a>.
 
 ::: moniker-end
 

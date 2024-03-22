@@ -42,7 +42,7 @@ Any new release is first tested and validated by the feature team, then by the e
 
 ![Release management validation rings for Microsoft 365.](../../media/Rings_Of_Progression.png)
 
-For significant updates, customers are initially notified by the [Microsoft 365 Roadmap](https://products.office.com/business/office-365-roadmap). As an update gets closer to rolling out, it is communicated through your [Microsoft 365 Message center](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter).
+For significant updates, customers are initially notified by the [Microsoft 365 Roadmap](https://products.office.com/business/office-365-roadmap). As an update gets closer to rolling out, it is communicated through your <a href="https://go.microsoft.com/fwlink/p/?linkid=2070717" target="_blank">Microsoft 365 Message center</a>.
 
 > [!NOTE]
 > You need a Microsoft 365 or Microsoft Entra account to access your Message center through the [admin center](../admin-overview/admin-center-overview.md). Microsoft 365 home plan users don't have an admin center.
@@ -113,7 +113,7 @@ You can change how your organization receives Microsoft 365 updates by following
 
 ## Next steps
 
-Discover how to [manage messages](/office365/admin/manage/message-center) in your [Microsoft 365 Message center](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter) to get notifications about upcoming Microsoft 365 updates and releases.
+Discover how to [manage messages](/office365/admin/manage/message-center) in your <a href="https://go.microsoft.com/fwlink/p/?linkid=2070717" target="_blank">Microsoft 365 Message center</a> to get notifications about upcoming Microsoft 365 updates and releases.
 
 ## Related content
 
