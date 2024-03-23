@@ -61,7 +61,7 @@ If you found this video helpful, check out the [complete training series for sma
     
 ::: moniker range="o365-worldwide"
 
-Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
+Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.cloud.microsoft.com</a>.
 
 ::: moniker-end
 
