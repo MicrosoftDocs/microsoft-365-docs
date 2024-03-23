@@ -96,12 +96,13 @@ All restore points and restores to new URLs will be relatively fast, but same UR
 
 It will take on average less than one hour for the first full site or account protection unit to be restored when a new restore session is initiated. After the first site or account is restored in a session, the remaining protection units will complete in relatively fast succession.
 
-The following table summarizes expected performance for a normally distributed tenant, including tenants of large size and scale. A *protection unit* is a OneDrive account, SharePoint site, or Exchange mailbox.cDuring the preview period, actual performance might deviate from these general availability targets.
+The following table summarizes expected performance for a normally distributed tenant, including tenants of large size and scale. During the preview period, actual performance might deviate from these general availability targets.
 
-|Scenario |First protection unit restore completes |Restore of all protection units complete |
-|:-------|:-------|:--------|
-| 1,000 sites<br>(30-GB average site size)  |Less than 1 hour  |Less than 12 hours  |
-| 1,000 mailboxes<br>(30-GB average mailbox size)| Less than 1 hour | Less than 12 hours |
+|Scenario |Restore of all protection units* complete |
+|:-------|:--------|
+| 1,000 sites, accounts, or mailboxes<br>(30-GB average size)  |Less than 12 hours  |
+
+<sup>*A *protection unit* is a OneDrive account, SharePoint site, or Exchange mailbox.</sup>
 
 ## General Data Protection Regulations (GDPR)
 
