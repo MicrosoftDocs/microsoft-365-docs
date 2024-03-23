@@ -100,15 +100,15 @@ To view tags:
 
 1. Select **+Add Filter** to see breakdown of cost by meters and tags.
 
-    - **tenants** shows a list of tenant IDs.
-
-    - **servicetype** is OneDrive, SharePoint, or Exchange.
-
-    - **applications** is coming soon.
-
 2. Select the tag:
 
     - In the key-value pair, select **tenants** or **servicetype**, and then select the respective tenant ID or service type.
+
+        - **tenants** shows a list of tenant IDs.
+
+        - **servicetype** is OneDrive, SharePoint, or Exchange.
+
+        - **applications** is coming soon.
 
     - Azure cost analysis - filter by tag.
 
