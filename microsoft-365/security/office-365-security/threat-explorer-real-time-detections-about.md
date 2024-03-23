@@ -7,7 +7,7 @@ author: chrisda
 manager: deniseb
 audience: ITPro
 ms.topic: conceptual
-ms.date: 3/19/2024
+ms.date: 3/22/2024
 ms.localizationpriority: medium
 ms.collection:
   - m365-security
@@ -72,7 +72,7 @@ To use Explorer or Real-time detections, you need to be assigned permissions. Yo
   - _Read-only access_: Membership in the **Security Reader** role group.
 - [Microsoft Entra permissions](/entra/identity/role-based-access-control/manage-roles-portal): Membership these roles gives users the required permissions _and_ permissions for other features in Microsoft 365:
   - _Full access_: Membership in the **Global Administrator** or **Security Administrator** roles.
-  - _Search for Exchange mail flow rules (transport rules) by name in Threat Explorer_: Membership in the **Security Admin** or **Security Reader** roles.
+  - _Search for Exchange mail flow rules (transport rules) by name in Threat Explorer_: Membership in the **Security Administrator** or **Security Reader** roles.
   - _Read-only access_: Membership in the **Global Reader** or **Security Reader** roles.
 
 > [!TIP]
@@ -360,72 +360,35 @@ When you click on the **Subject** or **Recipient** values in an entry, details f
 
 ##### Email details from the Email view of the details area in the All email view
 
-When you select an entry by clicking on the **Subject** value, an email details flyout opens. This details flyout is also known as the _Email summary panel_ and contains summarized information that's also available on the [Email entity page](mdo-email-entity-page.md) for the message.
+When you select the **Subject** value of an entry in the table, an email details flyout opens. This details flyout is known as the _Email summary panel_ and contains standardized summary information that's also available on the [Email entity page](mdo-email-entity-page.md) for the message.
 
-The Email summary panel contains the following information for the message:
+For details about the information in the Email summary panel, see [The Email summary panel in Defender for Office 365 features](mdo-email-entity-page.md#the-email-summary-panel-in-defender-for-office-365-features).
 
-> [!TIP]
-> To see details about other message subjects without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
+The following actions are available at the top of the Email summary panel for Threat Explorer and Real-time detections:
 
-- The number of attachments or links in the message.
-- Any [user tags](user-tags-about.md) that are assigned to the recipients of the message.
-- The following actions are available:
-  - :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity**
-  - :::image type="icon" source="../../media/m365-cc-sc-view-message-headers-icon.png" border="false"::: **View header**
-  - :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take action**: For information, see [Remediate using Take action](threat-explorer-threat-hunting.md#remediate-using-take-action).
-  - :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More options**:
-    - :::image type="icon" source="../../media/m365-cc-sc-view-message-headers-icon.png" border="false"::: **Email preview**¹
-    - :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Download email**¹
+- :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity**
+- :::image type="icon" source="../../media/m365-cc-sc-view-message-headers-icon.png" border="false"::: **View header**
+- :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take action**: For information, see [Remediate using Take action](threat-explorer-threat-hunting.md#remediate-using-take-action).
+- :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More options**:
+  - :::image type="icon" source="../../media/m365-cc-sc-view-message-headers-icon.png" border="false"::: **Email preview**¹ ²
+  - :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Download email**¹ ² ³
+  - :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **View in Explorer**
+  - :::image type="icon" source="../../media/m365-cc-sc-view-message-headers-icon.png" border="false"::: **Go hunt**⁴
 
-      > [!TIP]
-      > **Download email** isn't available for messages that were quarantined. Instead, [download a password protected copy of the message from quarantine](quarantine-admin-manage-messages-files.md#download-email-from-quarantine).
+¹ The **Email preview** and **Download email** actions require the **Preview** role in [Email & collaboration permissions](mdo-portal-permissions.md). By default, this role is assigned to the **Data Investigator** and **eDiscovery Manager** role groups. By default, members of the **Organization Management** or **Security Administrators** role groups can't do these actions. To allow these actions for the members of those groups, you have the following options:
 
-    - :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **View in Explorer**
-    - :::image type="icon" source="../../media/m365-cc-sc-view-message-headers-icon.png" border="false"::: **Go hunt**
+- Add the users to the **Data Investigator** or **eDiscovery Manager** role groups.
+- [Create a new role group](mdo-portal-permissions.md#create-email--collaboration-role-groups-in-the-microsoft-defender-portal) with the **Search and Purge** role assigned, and add the users to the custom role group.
 
-¹ The **Email preview** and **Download email** actions require the **Preview** role in [Email & collaboration permissions](mdo-portal-permissions.md). By default, this role is assigned to the **Data Investigator** and **eDiscovery Manager** role groups. Members of only the **Organization Management** or **Security Administrators** role groups can't open these actions. You can add the members of the groups to the **Data Investigator** and **eDiscovery Manager** role groups, or you can [create a new role group](mdo-portal-permissions.md#create-email--collaboration-role-groups-in-the-microsoft-defender-portal) with the same roles as **Organization Management** or **Security Administrator**, and then add the **Search and Purge** role to the custom role group.
+² You can preview or download email messages that are available in Microsoft 365 mailboxes. Examples of when messages are no longer available in mailboxes include:
 
-- The following sections are available:
-  - **Delivery details** section:
-    - **Original threats**
-    - **Latest threats**
-    - **Original location**
-    - **Latest delivery location**
-    - **Delivery action**
-    - **Detection technologies**
-    - **Primary override : Source**
-  - **Email details** section:
-    - **Sender display name**
-    - **Sender address**
-    - **Sender email from address**
-    - **Sent on behalf of**
-    - **Return path**
-    - **Sender IP**
-    - **Location**
-    - **Recipient(s)**
-    - **Time received**
-    - **Directionality**
-    - **Network message ID**
-    - **Internet message ID**
-    - **Campaign ID**
-    - **DMARC**
-    - **DKIM**
-    - **SPF**
-    - **Composite authentication**
-  - **URLs** section: Details about any URLs in the message:
-    - **URL**
-    - **Threat** status
+- The message was dropped before delivery or delivery failed.
+- The message was _soft deleted_ (deleted from the Deleted items folder, which moves the message to the Recoverable Items\Deletions folder).
+- ZAP moved the message to quarantine.
 
-    If the message has more than three URLs, select **View all URLs** to see all of them.
+³ **Download email** isn't available for messages that were quarantined. Instead, [download a password protected copy of the message from quarantine](quarantine-admin-manage-messages-files.md#download-email-from-quarantine).
 
-  - **Attachments** section: Details about any file attachments in the message:
-    - **Attachment name**
-    - **Threat**
-    - **Detection tech / Malware family**
-
-    If the message has more than three attachments, select **View all attachments** to see all of them.
-
-:::image type="content" source="../../media/te-rtd-all-email-view-email-tab-details-area-email-details-flyout.png" alt-text="Screenshot of the email details flyout after you select a Subject value in the Email tab of the details area in the All email view." lightbox="../../media/te-rtd-all-email-view-email-tab-details-area-subject-details-flyout.png":::
+⁴ **Go hunt** is available only in Threat Explorer. It isn't available in Real-time detections.
 
 ##### Recipient details from the Email view of the details area in the All email view
 
@@ -831,12 +794,11 @@ When you click on the **Subject** or **Recipient** values in an entry, details f
 
 ##### Email details from the Email view of the details area in the Malware view
 
-When you select an entry by clicking on the **Subject** value, an email details flyout opens. This details flyout is also known as the _Email summary panel_ and contains summarized information that's also available on the [Email entity page](mdo-email-entity-page.md) for the message.
+When you select the **Subject** value of an entry in the table, an email details flyout opens. This details flyout is known as the _Email summary panel_ and contains standardized summary information that's also available on the [Email entity page](mdo-email-entity-page.md) for the message.
 
-The information in the flyout is the same as described in [Email details from the Email view of the details area in the All email view](#email-details-from-the-email-view-of-the-details-area-in-the-all-email-view).
+For details about the information in the Email summary panel, see [The Email summary panel in Defender for Office 365 features](mdo-email-entity-page.md#the-email-summary-panel-in-defender-for-office-365-features).
 
-> [!TIP]
-> The :::image type="icon" source="../../media/m365-cc-sc-go-hunt-icon.png" border="false"::: **Go hunt** action is available only in Threat Explorer. It isn't available in Real-time detections.
+The available actions at the top of the Email summary panel for Threat Explorer and Real-time detections are described in the [Email details from the Email view of the details area in the All email view](#email-details-from-the-email-view-of-the-details-area-in-the-all-email-view).
 
 ##### Recipient details from the Email view of the details area in the Malware view
 
@@ -1117,12 +1079,11 @@ When you click on the **Subject** or **Recipient** values in an entry, details f
 
 ##### Email details from the Email view of the details area in the Phish view
 
-When you select an entry by clicking on the **Subject** value, an email details flyout opens. This details flyout is also known as the _Email summary panel_ and contains summarized information that's also available on the [Email entity page](mdo-email-entity-page.md) for the message.
+When you select the **Subject** value of an entry in the table, an email details flyout opens. This details flyout is known as the _Email summary panel_ and contains standardized summary information that's also available on the [Email entity page](mdo-email-entity-page.md) for the message.
 
-The information in the flyout is the same as described in [Email details from the Email view of the details area in the All email view](#email-details-from-the-email-view-of-the-details-area-in-the-all-email-view).
+For details about the information in the Email summary panel, see [The Email summary panel in Defender for Office 365 features](mdo-email-entity-page.md#the-email-summary-panel-in-defender-for-office-365-features).
 
-> [!TIP]
-> The :::image type="icon" source="../../media/m365-cc-sc-go-hunt-icon.png" border="false"::: **Go hunt** action is available only in Threat Explorer. It isn't available in Real-time detections.
+The available actions at the top of the Email summary panel for Threat Explorer and Real-time detections are described in the [Email details from the Email view of the details area in the All email view](#email-details-from-the-email-view-of-the-details-area-in-the-all-email-view).
 
 ##### Recipient details from the Email view of the details area in the Phish view
 

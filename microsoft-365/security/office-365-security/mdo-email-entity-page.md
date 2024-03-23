@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: deniseb
-ms.date: 2/22/2024
+ms.date: 3/22/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-security
@@ -26,11 +26,9 @@ appliesto:
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-Microsoft 365 organizations that have [Microsoft Defender for Office 365](defender-for-office-365.md) included in their subscription or purchased as an add-on have a 360-degree view of email using the _Email entity page_ in the Microsoft Defender portal. This go-to email page was created to the enhance information that's delivered throughout Defender for Office 365 and Microsoft Defender XDR.
+Microsoft 365 organizations that have [Microsoft Defender for Office 365](defender-for-office-365.md) included in their subscription or purchased as an add-on have the _Email entity page_. The Email entity page in the Microsoft Defender portal contains highly-detailed information about an email message and any related entities.
 
-This article explains the layout and features on the Email entity page.
-
-See email details in the experiences below, including [previewing and downloading the email](#email-preview-and-download-for-cloud-mailboxes), the email headers _with the option to copy_, Detection details, Threats detected, Latest and Original delivery locations, Delivery actions, and IDs like Alert ID, Network Message ID and more.
+This article explains the information and actions on the Email entity page.
 
 ## Permissions and licensing for the Email entity page
 
@@ -38,24 +36,31 @@ To use the email entity page, you need to be assigned permissions. The permissio
 
 ## Where to find the Email entity page
 
-There are no direct links to the **Email entity** page from the Defender portal. Instead, the :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity** action is available in the Defender portal wherever you find details about email messages. For example:
+There are no direct links to the **Email entity** page from the Defender portal. Instead, the :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity** action is available at the top of the email details flyout in many Defender for Office 365 features. This email details flyout is known as _the Email summary panel_, and contains a summarized subset of the information on the Email entity page. The email summary panel is identical across Defender for Office 365 features. For more information, see the [The Email summary panel in Defender for Office 365 features](#the-email-summary-panel-in-defender-for-office-365-features) section later in this article.
+
+The Email summary panel with the :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity** action is available in the following locations:
 
 - Advanced Hunting
 - Alerts
-- Reporting
 - The Action Center
+
+- The **Threat protection status** report at <https://security.microsoft.com/reports/TPSEmailPhishReportATP>:
+  - Select **View data by Email \> Phish** and any of the available **Chart breakdown** selections. In the details table below the chart, select row by clicking anywhere in the row other than the check box next to the first column.
+  - Select **View data by Email \> Malware** and any of the available **Chart breakdown** selections. In the details table below the chart, select row by clicking anywhere in the row other than the check box next to the first column.
+  - Select **View data by Email \> Spam** and any of the available **Chart breakdown** selections. In the details table below the chart, select row by clicking anywhere in the row other than the check box next to the first column.
+
 - **Threat Explorer** (**Explorer**) on the **Explorer** page at <https://security.microsoft.com/threatexplorerv3> or **Real-time detections** on the **Real-time detections** page at <https://security.microsoft.com/realtimereportsv3>. Use one of the following methods:
   - Verify the **All email** view is selected \> verify the **Email** tab (view) in the details area is selected \> click on the **Subject** value in an entry.
   - Select the **Malware** view \> verify the **Email** tab (view) in the details area is selected \> click on the **Subject** value in an entry.
   - Select the **Phish** view \> verify the **Email** tab (view) in the details area is selected \> click on the **Subject** value in an entry.
 
-  **Open email entity** is available at the top of the email details flyout that opens. For more information, see [Email view for the details area of the All email view in Threat Explorer](threat-explorer-real-time-detections-about.md#email-view-for-the-details-area-of-the-all-email-view-in-threat-explorer).
+- **Quarantine**: On the **Quarantine** page at <https://security.microsoft.com/quarantine> \> verify the **Email** tab is selected \> select an entry by clicking anywhere in the row other than the check box.
 
-- **Quarantine**: On the **Quarantine** page at <https://security.microsoft.com/quarantine> \> verify the **Email** tab is selected \> select an entry by clicking anywhere in the row other than the check box. **Open email entity** is available at the top of the details flyout that opens. For more information, see [View quarantined email details](quarantine-admin-manage-messages-files.md#view-quarantined-email-details).
-- **Admin email submissions**: On the **Submissions** page at <https://security.microsoft.com/reportsubmission> \> select the **Emails** tab \> select an entry by clicking anywhere in the row other than the check box. **Open email entity** is available at the top of the details flyout that opens. For more information, see [View email attachment admin submissions to Microsoft](submissions-admin.md#view-email-attachment-admin-submissions-to-microsoft).
-- **User reported email submissions**: On the **Submissions** page at <https://security.microsoft.com/reportsubmission> \> select the **User reported** tab \> select an entry by clicking anywhere in the row other than the check box. **Open email entity** is available at the top of the details flyout that opens. For more information, see [View user reported messages to Microsoft](submissions-admin.md#view-user-reported-messages-to-microsoft).
+- **Admin email submissions**: On the **Submissions** page at <https://security.microsoft.com/reportsubmission> \> select the **Emails** tab \> select an entry by clicking anywhere in the row other than the check box.
 
-## How to read the email entity page
+- **User reported email submissions**: On the **Submissions** page at <https://security.microsoft.com/reportsubmission> \> select the **User reported** tab \> select an entry by clicking anywhere in the row other than the check box.
+
+## What's on the Email entity page
 
 :::image type="content" source="../../media/email-entity-main-page.png" alt-text="Screenshot of the Email entity page showing the available details pane and tabs." lightbox="../../media/email-entity-main-page.png":::
 
@@ -81,20 +86,6 @@ The details pane on the left side of the page contains collapsible sections with
   - **Language**
 
   <sup>\*</sup> <sup>\*</sup> The :::image type="icon" source="../../media/m365-cc-sc-copy-icon.png" border="false"::: **Copy to clipboard** action is available to copy the value.
-
-## Actions
-
-The following actions are available near the top of the page:
-
-- :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take action**: For information, see [Remediate using Take action](threat-explorer-threat-hunting.md#remediate-using-take-action).
-- :::image type="icon" source="../../media/m365-cc-sc-view-message-headers-icon.png" border="false"::: **Email preview**¹
-- :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More options**:
-  - :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Download email**¹
-
-    > [!TIP]
-    > **Download email** isn't available for messages that were quarantined. Instead, [download a password protected copy of the message from quarantine](quarantine-admin-manage-messages-files.md#download-email-from-quarantine).
-
-¹ The **Email preview** and **Download email** actions require the **Preview** role in [Email & collaboration permissions](mdo-portal-permissions.md). By default, this role is assigned to the **Data Investigator** and **eDiscovery Manager** role groups. Members of only the **Organization Management** or **Security Administrators** role groups can't open these actions. You can add the members of the groups to the **Data Investigator** and **eDiscovery Manager** role groups, or you can [create a new role group](mdo-portal-permissions.md#create-email--collaboration-role-groups-in-the-microsoft-defender-portal) with the same roles as **Organization Management** or **Security Administrator**, and then add the **Search and Purge** role to the custom role group.
 
 The tabs (views) along the top of the page allow you to investigate email efficiently. These views are described in the following subsections.
 
@@ -124,7 +115,7 @@ Subsequent actions to the message by users, admins or Microsoft 365 add more mor
 
 Use the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box to find information on the page. Type text in the box and then press the ENTER key.
 
-Use :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** to export the data to a CSV file.
+Use :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** to export the data in the view to a CSV file. The default filename is **- Microsoft Defender.csv** and the default location is the **Downloads** folder. If a file with that name already exists, the filename is appended with a number (for example, **- Microsoft Defender(1).csv**).
 
 :::image type="content" source="../../media/email-entity-timeline-view.png" alt-text="Screenshot of the Timeline view on the Email entity page." lightbox="../../media/email-entity-timeline-view.png":::
 
@@ -141,8 +132,14 @@ The **Analysis** view contains information that helps you analyze the message in
   - **Primary Override : Source**: Shows the organization or user setting that altered the intended delivery location of the message (allowed instead of blocked, or blocked instead of allowed). For example:
     - The message was blocked by a mail flow rule.
     - The message was allowed due to an entry in the user's [Safe Senders list](configure-junk-email-settings-on-exo-mailboxes.md).
-  - **Exchange transport rules** (mail flow rules): Actions taken on messages by mail flow rules occur before spam and phishing verdicts. If any mail flow rules acted on the message, the rule name and GUID aree shown here. For more information about mail flow rules, see [Mail flow rules (transport rules) in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules).
-  - **Connector**
+  - **Exchange transport rules** (mail flow rules): If the message was affected by mail flow rules, the rule names and GUID vales are shown. Actions taken on messages by mail flow rules occur before spam and phishing verdicts.
+
+    The :::image type="icon" source="../../media/m365-cc-sc-copy-icon.png" border="false"::: **Copy to clipboard** action is available to copy the rule GUID. For more information about mail flow rules, see [Mail flow rules (transport rules) in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules).
+
+    > [!TIP]
+    > Don't use the **Go to Exchange admin center** link. To open the **Rules** page in the new Exchange admin center, use <https://admin.exchange.microsoft.com/#/transportrules>.
+
+  - **Connector**: If the message was delivered through an Inbound connector, the connector name is shown. For more information about connectors, see [Configure mail flow using connectors in Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
   - **Bulk complaint level (BCL)**: A higher BCL value indicates the message is more likely to be spam. For more information, see [Bulk complaint level (BCL) in EOP](anti-spam-bulk-complaint-level-bcl-about.md).
   - **Policy**: If a policy type is listed here (for example, **Spam**), select **Configure** :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: to open the related policy page (for example, the **Anti-spam policies** page at <https://security.microsoft.com/antispam>).
   - **Policy action**
@@ -175,7 +172,7 @@ The **Analysis** view contains information that helps you analyze the message in
   - **[Domain-based Message Authentication (DMARC)](email-authentication-dmarc-configure.md)**
     - `Pass`: The DMARC check for the message passed.
     - `Fail`: The DMARC check for the message failed.
-    - `Bestguesspass`: The DMARC TXT record for the domain doesn't, but if one existed, the DMARC check for the message would have passed.
+    - `BestGuessPass`: The DMARC TXT record for the domain doesn't, but if one existed, the DMARC check for the message would have passed.
     - None: Indicates that no DMARC TXT record exists for the sending domain in DNS.
   - **[DomainKeys identified mail (DKIM)](email-authentication-dkim-configure.md)**: Values are:
     - `Pass`: The DKIM check for the message passed.
@@ -184,11 +181,11 @@ The **Analysis** view contains information that helps you analyze the message in
   - **[Sender Policy Framework (SPF)](email-authentication-spf-configure.md)**: Values are:
     - `Pass (IP address)`: The SPF check found the message source is valid for the domain.
     - `Fail (IP address)`: The SPF check found the message source isn't valid for the domain, and the enforcement rule in the SPF record is `-all` (hard fail).
-    - `Softfail (reason)`: The SPF check found the message source isn't valid for the domain, and the enforcement rule in the SPF record is `~all` (soft fail).
+    - `SoftFail (reason)`: The SPF check found the message source isn't valid for the domain, and the enforcement rule in the SPF record is `~all` (soft fail).
     - `Neutral`: The SPF check found the message source isn't valid for the domain, and the enforcement rule in the SPF record is `?all` (neutral).
     - `None`: The domain doesn't have an SPF record, or the SPF record doesn't evaluate to a result.
-    - `Temperror`: The SPF check encountered a temporary error (for example, a DNS error). The same check later might succeed.
-    - `Permerror`: The SPF check encountered a permanent error. For example, the domain has a [badly formatted SPF record](email-authentication-spf-configure.md#troubleshooting-spf-txt-records).
+    - `TempError`: The SPF check encountered a temporary error (for example, a DNS error). The same check later might succeed.
+    - `PermError`: The SPF check encountered a permanent error. For example, the domain has a [badly formatted SPF record](email-authentication-spf-configure.md#troubleshooting-spf-txt-records).
   - **Composite authentication**: SPF, DKIM, DMARC, and other information is used to determine if the message sender (the From address) is authentic. For more information, see [Composite authentication](email-authentication-about.md#composite-authentication).
 - **Related entities** section: Information about attachments and URLs in the message:
   - **Entity**: Selecting **Attachments** or **URLs** takes you to the Attachments view or the URL view of the Email entity page for the message.
@@ -203,7 +200,7 @@ The **Analysis** view contains information that helps you analyze the message in
 
 ### Attachments view
 
-The **Attachments** view contains information about attachments and the scanning results of attachments in the message.
+The **Attachments** view shows information about all file attachments in the message, and the scanning results of those attachments.
 
 The following attachment information is available in this view. Select a column header to sort by that column. To add or remove columns, select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns**. By default, all available columns are selected.
 
@@ -218,17 +215,17 @@ The following attachment information is available in this view. Select a column 
 
 Use the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box to find information on the page. Type text in the box and then press the ENTER key.
 
-Use :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** to export the data to a CSV file.
+Use :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** to export the data in the view to a CSV file. The default filename is **- Microsoft Defender.csv** and the default location is the **Downloads** folder. If a file with that name already exists, the filename is appended with a number (for example, **- Microsoft Defender(1).csv**).
 
-:::image type="content" source="../../media/email-entity-attachments-view.png" alt-text="Screenshot of the Attachments view on the Email entity page" lightbox="../../media/email-entity-attachments-view.png":::
+:::image type="content" source="../../media/email-entity-attachments-view.png" alt-text="Screenshot of the Attachments view on the Email entity page." lightbox="../../media/email-entity-attachments-view.png":::
 
 #### Attachment details
 
 If you select an entry in the **Attachments** view by clicking on the **Attachment filename** value, a details flyout opens that contains the following information:
 
-- **Deep analysis** tab: Information is available on this tab if the message contains attachments, and [Safe Attachments](safe-attachments-about.md) acted on an attachment. You can identify these messages in Threat Explorer by using the query filter **Detection technology** with the value **File detonation**.
+- **Deep analysis** tab: Information is available on this tab if [Safe Attachments](safe-attachments-about.md) scanned (detonated) the attachment. You can identify these messages in Threat Explorer by using the query filter **Detection technology** with the value **File detonation**.
 
-  - **Detonation chain** section: Safe Links detonation of a single file detonation can trigger multiple detonations. The _detonation chain_ tracks the path of detonations, including the original malicious file that caused the verdict, and all other files affected by the detonation. These attached files might not be directly present in the email. But, including the analysis is important to determining why the file was found to be malicious.
+  - **Detonation chain** section: Safe Attachments detonation of a single file can trigger multiple detonations. The _detonation chain_ tracks the path of detonations, including the original malicious file that caused the verdict, and all other files affected by the detonation. These attached files might not be directly present in the email. But, including the analysis is important to determining why the file was found to be malicious.
 
     If no detonation chain information is available, the value **No detonation tree** is shown. Otherwise, you can select :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** to download the detonation chain information to a CSV file. The default filename is **Detonation chain.csv** and the default location is the **Downloads** folder. If a file with that name already exists, the filename is appended with a number (for example, **Detonation chain(1).csv**). The CSV file contains the following information:
     - **Top**: The top level file.
@@ -236,19 +233,19 @@ If you select an entry in the **Attachments** view by clicking on the **Attachme
     - **Level2**: The next level file.
     - and so on.
 
-    The detonation chain and the CSV file might show just the top level item if none of the entities linked to it were found to be problematic, or were detonated.
+    The detonation chain and the CSV file might show just the top level item if none of the entities linked to it were found to be problematic or were detonated.
 
   - **Summary** section: If no detonation summary information is available, the value **No detonation summary** is shown. Otherwise, the following detonation summary information is available:
     - **Analysis time**
-    - **Verdict**
-    - **More info**: Shows the file size in bytes.
+    - **Verdict**: The verdict on the attachment itself.
+    - **More info**: The file size in bytes.
     - **Indicators of compromise**
 
   - **Screenshots section**: Show any screenshots that were captured during detonation. No screenshots are captured for container files like ZIP or RAR that contain other files.
   
     If no detonation screenshots are available, the value **No screenshots to display** is shown. Otherwise, select the link to view the screenshot.
 
-  - **Behavior details** section: Shows behavior the exact events that took place during detonation, and problematic or benign observations that contain URLs, IPs, domains, and files that were found during detonation. There might not be any behavior details for container files like ZIP or RAR that contain other files.
+  - **Behavior details** section: Shows the exact events that took place during detonation, and problematic or benign observations that contain URLs, IPs, domains, and files that were found during detonation. There might not be any behavior details for container files like ZIP or RAR that contain other files.
 
      If no behavior details information is available, the value **No detonation behaviors** is shown. Otherwise, you can select :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** to download the behavioral details information to a CSV file. The default filename is **Behavior details.csv** and the default location is the **Downloads** folder. If a file with that name already exists, the filename is appended with a number (for example, **Behavior details(1).csv**). The CSV file contains the following information:
     - **Time**
@@ -270,93 +267,206 @@ When you're finished in the file details flyout, select :::image type="icon" sou
 
 #### Block attachments from the Attachments view
 
-If you select an entry in the **Attachments** view by selecting the check box next to the filename, the :::image type="icon" source="../../media/m365-cc-sc-no-icon.png" border="false"::: **Block** action is available. Selecting **Block** starts the **Take action** wizard:
+If you select an entry in the **Attachments** view by selecting the check box next to the filename, the :::image type="icon" source="../../media/m365-cc-sc-no-icon.png" border="false"::: **Block** action is available. This action adds the file as a [block entry in the Tenant Allow/Block List](tenant-allow-block-list-about.md#block-entries-in-the-tenant-allowblock-list). Selecting **Block** starts the **Take action** wizard:
 
-1. On the **Choose actions** page, **Never expire** is on by default :::image type="icon" source="../../media/scc-toggle-on.png" border="false":::. Slide the toggle to off :::image type="icon" source="../../media/scc-toggle-off.png" border="false"::: and then select a date in **Remove on**.
+1. On the **Choose actions** page, configure one of following settings in the **Block file** section:
+   - **Never expire** on: This is the default value :::image type="icon" source="../../media/scc-toggle-on.png" border="false":::.
+   - **Never expire** off: Slide the toggle to off :::image type="icon" source="../../media/scc-toggle-off.png" border="false"::: and then select a date in the **Remove on** box.
 
    When you're finished on the **Choose actions** page, select **Next**.
 
-2. On the **Choose target entities** page, verify that the files that you want to block are selected, and then select **Next**.
+2. On the **Choose target entities** page, verify the file that you want to block is selected, and then select **Next**.
 
-3. On the **Review and submit** page, configure the following options:
+3. On the **Review and submit** page, configure the following settings:
    - **Remediation name**: Enter a unique name to track the status in the Action center.
    - **Description**: Enter an optional description.
 
-   When you're finished on the **Choose target entities** page, select **Submit**.
+   When you're finished on the **Review and submit** page, select **Submit**.
 
 ### URL view
 
+The **URL** view shows information about all URLs in the message, and the scanning results of those URLs.
+
+The following attachment information is available in this view. Select a column header to sort by that column. To add or remove columns, select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns**. By default, all available columns are selected.
+
+- **URL**
+- **Threat**
+- **Source**
+- **Details**
+
+Use the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box to find information on the page. Type text in the box and then press the ENTER key.
+
+Use :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** to export the data in the view to a CSV file. The default filename is **- Microsoft Defender.csv** and the default location is the **Downloads** folder. If a file with that name already exists, the filename is appended with a number (for example, **- Microsoft Defender(1).csv**).
+
+:::image type="content" source="../../media/email-entity-url-view.png" alt-text="Screenshot of the URL view on the Email entity page." lightbox="../../media/email-entity-url-view.png":::
+
+#### URL details
+
+If you select an entry in the **URL** view by clicking on the **URL** value, a details flyout opens that contains the following information:
+
+- **Deep analysis** tab: Information is available on this tab if [Safe Links](safe-links-about.md) scanned (detonated) the URL. You can identify these messages in Threat Explorer by using the query filter **Detection technology** with the value **URL detonation**.
+
+  - **Detonation chain** section: Safe Links detonation of a single URL can trigger multiple detonations. The _detonation chain_ tracks the path of detonations, including the original malicious URL that caused the verdict, and all other URLs affected by the detonation. These URLs might not be directly present in the email. But, including the analysis is important to determining why the URL was found to be malicious.
+
+    If no detonation chain information is available, the value **No detonation tree** is shown. Otherwise, you can select :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** to download the detonation chain information to a CSV file. The default filename is **Detonation chain.csv** and the default location is the **Downloads** folder. If a file with that name already exists, the filename is appended with a number (for example, **Detonation chain(1).csv**). The CSV file contains the following information:
+    - **Top**: The top level file.
+    - **Level1**: The next level file.
+    - **Level2**: The next level file.
+    - and so on.
+
+    The detonation chain and the CSV file might show just the top level item if none of the entities linked to it were found to be problematic or were detonated.
+
+  - **Summary** section: If no detonation summary information is available, the value **No detonation summary** is shown. Otherwise, the following detonation summary information is available:
+    - **Analysis time**
+    - **Verdict**: The verdict on the URL itself.
+
+  - **Screenshots section**: Show any screenshots that were captured during detonation. No screenshots are captured if the URL opens into a link that directly downloads a file. However, you'll see the downloaded file in the detonation chain.
+  
+    If no detonation screenshots are available, the value **No screenshots to display** is shown. Otherwise, select the link to view the screenshot.
+
+  - **Behavior details** section: Shows the exact events that took place during detonation, and problematic or benign observations that contain URLs, IPs, domains, and files that were found during detonation.
+
+     If no behavior details information is available, the value **No detonation behaviors** is shown. Otherwise, you can select :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** to download the behavioral details information to a CSV file. The default filename is **Behavior details.csv** and the default location is the **Downloads** folder. If a file with that name already exists, the filename is appended with a number (for example, **Behavior details(1).csv**). The CSV file contains the following information:
+    - **Time**
+    - **Behavior**
+    - **Behavior property**
+    - **Process (PID)**
+    - **Operation**
+    - **Target**
+    - **Details**
+    - **Result**
+- **URL info** tab: The **URL details** section contains the following information:
+  - **URL**
+  - **Threat**
+
+When you're finished in the file details flyout, select :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: **Close**.
+
+:::image type="content" source="../../media/email-entity-url-view-file-details-flyout.png" alt-text="Screenshot of the URL details flyout from the URL view on the Email entity page." lightbox="../../media/email-entity-url-view-file-details-flyout.png":::
+
+#### Block URLs from the URL view
+
+If you select an entry in the **URL** view by selecting the check box next to the filename, the :::image type="icon" source="../../media/m365-cc-sc-no-icon.png" border="false"::: **Block** action is available. This action adds the URL as a [block entry in the Tenant Allow/Block List](tenant-allow-block-list-about.md#block-entries-in-the-tenant-allowblock-list). Selecting **Block** starts the **Take action** wizard:
+
+1. On the **Choose actions** page, configure one of following settings in the **Block URL** section:
+   - **Never expire** on: This is the default value :::image type="icon" source="../../media/scc-toggle-on.png" border="false":::.
+   - **Never expire** off: Slide the toggle to off :::image type="icon" source="../../media/scc-toggle-off.png" border="false"::: and then select a date in the **Remove on** box.
+
+   When you're finished on the **Choose actions** page, select **Next**.
+
+2. On the **Choose target entities** page, verify the URL that you want to block is selected, and then select **Next**.
+
+3. On the **Review and submit** page, configure the following settings:
+   - **Remediation name**: Enter a unique name to track the status in the Action center.
+   - **Description**: Enter an optional description.
+
+   When you're finished on the **Review and submit** page, select **Submit**.
+
 ## Similar emails view
 
-### How to use the email entity page tabs
+The **Similar emails** view shows other email messages that have the same message body fingerprint as this message. Matching criteria in other messages doesn't apply for this view (for example, file attachment fingerprints).
 
-1. **URLs**: This tab lists URLs found in the email with other details about the URLs. The number of URLs is limited to 10 right now, but these 10 are prioritized to show *malicious URLs first*. Prioritization saves you time and guess-work. The URLs that were found to be malicious and detonated are also shown here.
-1. **Similar emails**: This tab lists all emails similar to the *network message id + recipient* combination specific to this email. Similarity is based on the *body of the message*, only. The determinations made on mails to categorize them as 'similar' don't include a consideration of *attachments*.
+The following attachment information is available in this view. Select a column header to sort by that column. To add or remove columns, select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns**. By default, all available columns are selected.
 
-## Available on the email entity page
+- **Date**
+- **Subject**
+- **Recipient**
+- **Sender**
+- **Sender IP**
+- **Override**
+- **Delivery action**
+- **Delivery location**
 
-Here are some helpful specifics to get started.
+Use :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter** to filter the entries by **Start date** and **End date**.
 
-### Email preview and download for Cloud mailboxes
+Use the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box to find information on the page. Type text in the box and then press the ENTER key.
 
-Admins can preview and download emails in Cloud mailboxes, ***if*** the mails are still accessible to Microsoft in an Exchange Online mailbox. In case of a soft delete (by an admin, or user), or ZAP (to quarantine), the emails are no longer present in the Exchange Online mailbox. In that case, admins won't be able to preview or download those specific emails. Emails that were dropped, or where delivery failed, never made it into the mailbox and as a result, admins won't be able to preview or download those emails either.
+Use :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** to export the data in the view to a CSV file. The default filename is **- Microsoft Defender.csv** and the default location is the **Downloads** folder. If a file with that name already exists, the filename is appended with a number (for example, **- Microsoft Defender(1).csv**).
 
-> [!IMPORTANT]
-> Previewing and downloading emails requires a special role called **Preview**. You can assign this role in the following locations:
->
-> - [Microsoft Defender XDR Unified role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac) (Affects the Defender portal only, not PowerShell): **Security operations/Raw data (email & collaboration)/Email content (read)**.
-> - [Email & collaboration permissions in the Microsoft Defender portal](mdo-portal-permissions.md): Membership in the **Data Investigator** or **eDiscovery Manager** role groups. Or, you can [create a new role group](mdo-portal-permissions.md#create-email--collaboration-role-groups-in-the-microsoft-defender-portal) and add the **Preview** role to it.
+:::image type="content" source="../../media/email-entity-similar-emails-view.png" alt-text="Screenshot of the Similar emails view on the Email entity page." lightbox="../../media/email-entity-similar-emails-view.png":::
 
-### Detonation details
+### Actions on the Email entity page
 
-These details are specific to email attachments and URLs. Users can see these details by going to Explorer and applying the *detection technology* filter set to file detonation or URL detonation. Emails filtered for file detonation will contain a malicious file with detonation details, and those filtered for URLs contain a malicious URL and its detonation details.
+The following actions are available at the top of the Email entity page:
 
-Users see enriched detonation details for known malicious attachments or URLs found in their emails, which got detonated for their specific tenant. It includes the Detonation chain, Detonation summary, Screenshot, and Observed behavior details to help customers understand why the attachment or URL was deemed malicious and detonated.
+- :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take action**: For information, see [Remediate using Take action](threat-explorer-threat-hunting.md#remediate-using-take-action).
+- :::image type="icon" source="../../media/m365-cc-sc-view-message-headers-icon.png" border="false"::: **Email preview**¹ ²
+- :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More options**:
+  - :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Go to quarantined email**: Available only if the message was quarantined. Selecting this action opens the **Email** tab on the **Quarantine** page at <https://security.microsoft.com/quarantine>, filtered by the unique **Message ID** value of the message. For more information, see [View quarantined email](quarantine-admin-manage-messages-files.md#view-quarantined-email).
+  - :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Download email**¹ ²
 
-1. *Detonation chain*. A single file or URL detonation can trigger multiple detonations. The Detonation chain tracks the path of detonations, including the original malicious file or URL that caused the verdict, and all other files or URLs affected by the detonation. These URLs or attached files may not be directly present in the email, but including that analysis is important to determining why the file or URL was found to be malicious.
+    > [!TIP]
+    > **Download email** isn't available for messages that were quarantined. Instead, [download a password protected copy of the message from quarantine](quarantine-admin-manage-messages-files.md#download-email-from-quarantine).
 
-    > [!NOTE]
-    > This may show just the top level item if none of the entities linked to it were found to be problematic, or were detonated.
+¹ The **Email preview** and **Download email** actions require the **Preview** role in [Email & collaboration permissions](mdo-portal-permissions.md). By default, this role is assigned to the **Data Investigator** and **eDiscovery Manager** role groups. By default, members of the **Organization Management** or **Security Administrators** role groups can't do these actions. To allow these actions for the members of those groups, you have the following options:
 
-1. *Detonation Summary* gives a basic summary for detonation such as *analysis time*, the time when detonation occurred, OS and application, the operating system and application in which the detonation occurred, file size, and verdict reason.
-1. *Screenshots* show the screenshots captured during detonation. There can be multiple screenshots during detonation. No screenshots are captured for
-    - Container type files like .zip or .rar.
-    - If a URL opens into a link that directly downloads a file. However, you'll see the downloaded file in the detonation chain.
-1. *Behavior Details* are an export that shows behavior details like exact events that took place during detonation, and observables that contain URLs, IPs, domains, and files that were found during detonation (and can either be problematic or benign). Be aware, there may be no behavior details for:
-    - Container files like .zip or .rar that are holding other files.
+- Add the users to the **Data Investigator** or **eDiscovery Manager** role groups.
+- [Create a new role group](mdo-portal-permissions.md#create-email--collaboration-role-groups-in-the-microsoft-defender-portal) with the **Search and Purge** role assigned, and add the users to the custom role group.
 
-## Actions you can take on the Email entity Page
+² You can preview or download email messages that are available in Microsoft 365 mailboxes. Examples of when messages are no longer available in mailboxes include:
 
-Security teams can take email actions. For example:
+- The message was dropped before delivery or delivery failed.
+- The message was _soft deleted_ (deleted from the Deleted items folder, which moves the message to the Recoverable Items\Deletions folder).
+- ZAP moved the message to quarantine.
 
-- Soft delete and hard delete.
-- Move to junk.
-- Move to inbox.
-- Trigger an investigation.
-- Submit to Microsoft for review in line.
+:::image type="content" source="../../media/email-entity-available-actions.png" alt-text="Screenshot of the available actions at the top of the Email entity page." lightbox="../../media/email-entity-available-actions.png":::
 
-You can also trigger **Tenant level block** actions for files, URLs, or senders from the Email entity page.
+## The Email summary panel in Defender for Office 365 features
 
-You'll be able to select **Take actions** from the top right corner of the entity page and this will open the Action wizard for you to select the specific action you need.
+The _Email summary panel_ is the email details flyout that's available in many features in Defender for Office 365. The Email summary panel contains standardized summary information about the email message taken from the full details that are available on the Email entity page.
+
+Where to find the Email summary panel is described in the [Where to find the Email entity page](#where-to-find-the-email-entity-page) section earlier in this article. The rest of this section describes the information that's available on the Email summary panel.
+
+The following message information is available at the top of the Email summary panel:
+
+- The title of the flyout is the message Subject value.
+- The number of attachments and links in the message.
+- Any user tags that are assigned to the recipients of the message (including the Priority account tag). For more information, see [User tags in Microsoft Defender for Office 365](user-tags-about.md)
+- Other than :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity**, the available actions at the top of the Email summary panel depend on the Defender for Office 365 feature. The available actions are described in the individual feature articles.
 
 > [!TIP]
-> We're adding the ability to take multiple actions together. You can take email remediation actions, create submissions, tenant level block actions (block senders, domains, files, and URLs), investigative actions, and proposed remediation from the **same panel**. Actions are now contextual and grouped together depending on the **latest location of the email message**.
+> To see details about other messages without leaving the Email summary panel of the current message, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
 
-:::image type="content" source="../../media/Take-ActionWizard-Email-entity.png" alt-text="Take action from entity page." lightbox="../../media/Take-ActionWizard-Email-entity.png":::
+The rest of the Email summary panel contains the following information:
 
-In the existing Action wizard you can take email actions, create email submissions, block senders and sender domains, take investigative actions, and do two step approval (add to remediation) in the same flyout. The flyout follows a consistent flow for ease of use. The Action wizard uses the same system as Explorer actions (for example, for Delete, Submissions, and Investigation actions). You can see and track these actions in the Unified action center at <https://security.microsoft.com/action-center/history> (for deleted emails), on the Submission page at <https://security.microsoft.com/reportsubmission> (for submissions), and in the Tenant Allow/Block List at <https://security.microsoft.com/tenantAllowBlockList> page (for block entries).
+- **Delivery details** section:
+  - **Original threats**
+  - **Latest threats**
+  - **Original location**
+  - **Latest delivery location**
+  - **Delivery action**
+  - **Detection technologies**
+  - **Primary override : Source**
 
-> [!TIP]
-> These enhancements bring the following benefits:
->
-> - SecOps can now select multiple actions together in the single flow.
-> - We grouped actions together for a logical grouping of good (false positive) and bad (false negative) message actions.
-> - Actions are contextual in nature in the same panel. For example, if the message is in already in Inbox, the **Move to Inbox** action is grayed out.
->
-> There are no changes to the action permissions.
+- **Email details** section:
+  - **Sender display name**
+  - **Sender address**
+  - **Sender email from address**
+  - **Sent on behalf of**
+  - **Return path**
+  - **Sender IP**
+  - **Location**
+  - **Recipient(s)**
+  - **Time received**
+  - **Directionality**
+  - **Network message ID**
+  - **Internet message ID**
+  - **Campaign ID**
+  - **DMARC**
+  - **DKIM**
+  - **SPF**
+  - **Composite authentication**
 
-We're also bringing tenant-level blocks for URLs and attachments to the respective **Email entity**, **URL**, and **Attachments** tabs. After approval, you can track the block entries for URLs and attachments on the **URLs** and **Files** tabs on the **Tenant Allow/Block List** page.
+- **URLs** section: Details about any URLs in the message:
+  - **URL**
+  - **Threat** status
 
-:::image type="content" source="../../media/Block-URL-Email-entity.png" alt-text="Take block URL action from entity page." lightbox="../../media/Block-URL-Email-entity.png":::
+  If the message has more than three URLs, select **View all URLs** to see all of them.
 
-See [permissions](mdo-portal-permissions.md) required to take these actions.
+- **Attachments** section: Details about any file attachments in the message:
+  - **Attachment name**
+  - **Threat**
+  - **Detection tech / Malware family**
+
+  If the message has more than three attachments, select **View all attachments** to see all of them.
+
+:::image type="content" source="../../media/email-entity-generic-email-summary-panel.png" alt-text="Screenshot of the Email summary panel after selecting a email message in a supported Defender for Office 365 feature." lightbox="../../media/email-entity-generic-email-summary-panel.png":::

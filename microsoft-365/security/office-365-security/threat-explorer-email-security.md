@@ -88,7 +88,13 @@ Use the following steps to review phishing messages and search for impersonated 
 
    You can sort the entries and show more columns as described in [Email view for the details area of the Phish view in Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md#email-view-for-the-details-area-of-the-phish-view-in-threat-explorer-and-real-time-detections).
 
-   If you select the **Subject** or **Recipient** value of an entry in the table, a details flyout opens. For more information, see [Email details from the Email view of the details area in the Phish view](threat-explorer-real-time-detections-about.md#email-details-from-the-email-view-of-the-details-area-in-the-phish-view) and [Recipient details from the Email view of the details area in the Phish view](threat-explorer-real-time-detections-about.md#recipient-details-from-the-email-view-of-the-details-area-in-the-phish-view).
+   - If you select the **Subject** value of an entry in the table, an email details flyout opens. This details flyout is known as the _Email summary panel_ and contains standardized summary information that's also available on the [Email entity page](mdo-email-entity-page.md) for the message.
+
+     For details about the information in the Email summary panel, see [The Email summary panel in Defender for Office 365 features](mdo-email-entity-page.md#the-email-summary-panel-in-defender-for-office-365-features).
+
+     For information about the available actions at the top of the Email summary panel for Threat Explorer and Real-time detections, see [Email details from the Email view of the details area in the All email view](threat-explorer-real-time-detections-about.md#email-details-from-the-email-view-of-the-details-area-in-the-all-email-view) (the same actions are also available from the **Phish** view).
+
+   - If you select the **Recipient** value of an entry in the table, a different details flyout opens. For more information, see [Recipient details from the Email view of the details area in the Phish view](threat-explorer-real-time-detections-about.md#recipient-details-from-the-email-view-of-the-details-area-in-the-phish-view).
 
 <!--- ### Email timeline
 
