@@ -31,13 +31,13 @@ description: Learn how to customize, organize, and manage your SharePoint team s
 
 # Customize your SharePoint team site for file storage and sharing
 
-If you have a small business with a few employees, one of the best ways to set up and facilitate file sharing, and online collaboration is to use OneDrive and a SharePoint team site together. We recommend creating a team site that's connected to a Microsoft 365 Group. If you want to use chat, you can create this site by creating a team in Microsoft Teams. For more info about Teams, see [Video: Get started with Microsoft Teams?](https://support.microsoft.com/office/b98d533f-118e-4bae-bf44-3df2470c2b12). If you don't want to use Teams, you can create a team site from the SharePoint start page. 
+If you have a small business with a few employees, one of the best ways to set up and facilitate file sharing and online collaboration is to use OneDrive and a SharePoint team site together. We recommend creating a team site that's connected to a Microsoft 365 Group. If you want to use chat, you can create a team site by creating a team in Microsoft Teams. For more info about Teams, see [Video: Get started with Microsoft Teams?](https://support.microsoft.com/office/b98d533f-118e-4bae-bf44-3df2470c2b12). If you don't want to use Teams, you can create a team site from the SharePoint start page. 
   
 [What is a SharePoint team site?](https://support.microsoft.com/office/75545757-36c3-46a7-beed-0aaa74f0401e)
   
 [Create a team site in SharePoint](https://support.microsoft.com/office/ef10c1e7-15f3-42a3-98aa-b5972711777d)
   
-Here are some ideas and links to help you customize, organize, and manage your team site.
+This article provides some ideas and links to help you customize, organize, and manage your team site.
   
  
 ## Customize your team site
@@ -90,7 +90,7 @@ Your team site shares almost everything with all members of the group associated
   
 ## Share files with the team
 
-Setting up file storage and document management is a good start, but sharing information with your team and external clients is also important. The following articles can help you manage users and share data:
+Setting up file storage and document management is a good start, but sharing information with your team and external clients is also important.
   
 - To learn how to share files and folders with your team, see [Share SharePoint files or folders](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c).
   
@@ -108,7 +108,7 @@ As you manage your team site, you might need to add or remove users.
   
 ## Next steps
 
-To edit files that are stored on your team site from your tablet or phone, you must set up Microsoft 365 apps on your devices. If you don't install the Microsoft 365 apps for your tablet or phone, you can view the files but not edit them. 
+To edit files that are stored on your team site from your tablet or phone, you must set up Microsoft 365 apps on your devices. If you don't install the Microsoft 365 apps for your tablet or phone, you'll be able to view the files but not edit them. 
     
   - [Install and set up Microsoft 365 on an Android](https://support.microsoft.com/office/cafe9d6f-8b0c-4b03-b20a-12438a82a22d).
   - [Install and set up Microsoft 365 on an iPhone or iPad](https://support.microsoft.com/office/9df6d10c-7281-4671-8666-6ca8e339b628).
