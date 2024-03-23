@@ -219,7 +219,7 @@
           href: autofill-overview.md
         - name: Admin setup 
           href: autofill-setup.md
-        - name: Translate documents 
+        - name: Create autofill columns
           href: autofill.md
 
     - name: Optical character recognition 
