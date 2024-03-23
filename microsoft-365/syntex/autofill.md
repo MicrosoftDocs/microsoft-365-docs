@@ -1,5 +1,5 @@
 ---
-title: Use autofill columns in Microsoft Syntex
+title: Create autofill columns in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
@@ -17,7 +17,7 @@ ms.localizationpriority:  medium
 description: Learn how to use autofill columns in Microsoft Syntex.
 ---
 
-# Use autofill columns in Microsoft Syntex
+# Create autofill columns in Microsoft Syntex
 
 ## Create a new autofill column
 
