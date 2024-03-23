@@ -421,7 +421,7 @@ The following message information is available at the top of the Email summary p
 - The title of the flyout is the message Subject value.
 - The number of attachments and links in the message.
 - Any user tags that are assigned to the recipients of the message (including the Priority account tag). For more information, see [User tags in Microsoft Defender for Office 365](user-tags-about.md)
-- Other than :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity**, the available actions at the top of the Email summary panel depend on the Defender for Office 365 feature. The available actions are described in the individual feature articles.
+- Other than :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity**, the available actions at the top of the Email summary panel depend on the Defender for Office 365 feature. The available actions in the Email summary panel are described in the individual feature articles.
 
 > [!TIP]
 > To see details about other messages without leaving the Email summary panel of the current message, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
