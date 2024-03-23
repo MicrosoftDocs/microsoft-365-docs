@@ -22,4 +22,15 @@ description: Learn about the autofill columns service in Microsoft Syntex.
 > [!NOTE]
 > Through June 2024, you can try out autofill columns and other selected Syntex services at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For information and limitations, see [Try out Microsoft Syntex and explore its services](promo-syntex.md).
 
-Autofill columns lets you use large language models (LLMs) to automatically extract or generate content from files and save it to columns in a SharePoint library.
+Autofill columns in Microsoft Syntex automatically extract, summarize, or generate content from files uploaded to a SharePoint document library. Using large language models (LLMs), autofill columns can save metadata automatically, streamlining the process of managing files and their associated information.
+
+## Requirements and limitations
+
+### Supported file types
+
+Autofill columns is available for the following file types: TBD
+
+### Current release notes
+
+- Bulk processing options for existing library files will be added in a future release.
+
