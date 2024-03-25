@@ -261,5 +261,12 @@ As needed for in-process incidents, continue your [investigation](investigate-in
 - [Incidents overview](incidents-overview.md)
 - [Prioritize incidents](incident-queue.md)
 - [Manage incidents](manage-incidents.md)
+- [Microsoft Defender XDR overview](microsoft-365-defender.md)
+- [Turn on Microsoft Defender XDR](m365d-enable.md)
+- [Device entity page in Microsoft Defender](entity-page-device.md)
+- [IP address entity page in Microsoft Defender](entity-page-ip.md)
+- [Microsoft Defender XDR integration with Microsoft Sentinel](microsoft-365-defender-integration-with-azure-sentinel.md)
+- [Connect Microsoft Sentinel to Microsoft Defender XDR (preview)](microsoft-sentinel-onboard.md)
+
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

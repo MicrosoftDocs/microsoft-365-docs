@@ -308,7 +308,9 @@ Response actions run along the top of a specific device page and include:
 
 - [Microsoft Defender XDR overview](microsoft-365-defender.md)
 - [Turn on Microsoft Defender XDR](m365d-enable.md)
-- [Investigate entities on devices, using live response](../defender-endpoint/live-response.md)
-- [Automated investigation and response (AIR) in Office 365](../office-365-security/air-about.md)
+- [User entity page in Microsoft Defender](investigate-users.md)
+- [IP address entity page in Microsoft Defender](entity-page-ip.md)
+- [Microsoft Defender XDR integration with Microsoft Sentinel](microsoft-365-defender-integration-with-azure-sentinel.md)
+- [Connect Microsoft Sentinel to Microsoft Defender XDR (preview)](microsoft-sentinel-onboard.md)
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

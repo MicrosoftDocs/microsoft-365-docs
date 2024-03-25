@@ -10,10 +10,8 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier2
-- mde-edr
 ms.topic: conceptual
 ms.date: 03/25/2024
-ms.subservice: edr
 search.appverid: met150
 appliesto: Microsoft Defender XDR and Microsoft Sentinel in the Microsoft Defender portal
 ---
@@ -120,11 +118,10 @@ Response actions run along the top of a specific IP entity page and include:
 
 ## Related topics
 
-- [View and organize the Microsoft Defender for Endpoint Alerts queue](alerts-queue.md)
-- [Manage Microsoft Defender for Endpoint alerts](manage-alerts.md)
-- [Investigate Microsoft Defender for Endpoint alerts](investigate-alerts.md)
-- [Investigate a file associated with a Microsoft Defender for Endpoint alert](investigate-files.md)
-- [Investigate devices in the Microsoft Defender for Endpoint Devices list](investigate-machines.md)
-- [Investigate a domain associated with a Microsoft Defender for Endpoint alert](investigate-domain.md)
-- [Investigate a user account in Microsoft Defender for Endpoint](investigate-user.md)
+- [Microsoft Defender XDR overview](microsoft-365-defender.md)
+- [Turn on Microsoft Defender XDR](m365d-enable.md)
+- [Device entity page in Microsoft Defender](entity-page-device.md)
+- [User entity page in Microsoft Defender](investigate-users.md)
+- [Microsoft Defender XDR integration with Microsoft Sentinel](microsoft-365-defender-integration-with-azure-sentinel.md)
+- [Connect Microsoft Sentinel to Microsoft Defender XDR (preview)](microsoft-sentinel-onboard.md)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
