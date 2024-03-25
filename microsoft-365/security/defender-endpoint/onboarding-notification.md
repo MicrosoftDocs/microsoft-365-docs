@@ -73,7 +73,7 @@ You need to have access to:
    - Credential Type: Select **Secret**.
    - Secret: Sign-in to https://portal.azure.com and navigate to **Microsoft Entra ID > App Registrations** and get the Tenant ID value.
 
-    :::image type="content" source="images/http-conditions.png" alt-text="The HTTP conditions" lightbox="images/http-conditions.png":::
+    :::image type="content" source="media/http-conditions.png" alt-text="The HTTP conditions" lightbox="media/http-conditions.png":::
 
 6. Add a new step by selecting **Add new action** then search for **Data Operations** and select
 **Parse JSON**.
