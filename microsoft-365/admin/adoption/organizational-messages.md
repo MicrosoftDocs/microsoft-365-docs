@@ -76,11 +76,11 @@ The desktop teaching call-out is supported by Microsoft 365 Consumer and Commerc
 
 To enable Adoption Score Organizational Messages, the global administrator needs to enable Adoption Score first:
 
-1. Sign in to the [admin center](https://admin.microsoft.com/) as a global administrator and go to **Reports** \> **Adoption Score**.
+1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a> as a global administrator and go to **Reports** \> **Adoption Score**.
 
-1. Select **Enable Adoption Score**. It can take up to 24 hours for insights to become available.
+2. Select **Enable Adoption Score**. It can take up to 24 hours for insights to become available.
 
-1. Under the **Organizational Messages** tab, select **Allow approved admins to send in-product recommendations to specified users**.
+3. Under the **Organizational Messages** tab, select **Allow approved admins to send in-product recommendations to specified users**.
 
 > [!NOTE]
 > Only a global administrator can enable Adoption Score. The organizational message writer role can only opt in for Adoption Score Organizational Messages.

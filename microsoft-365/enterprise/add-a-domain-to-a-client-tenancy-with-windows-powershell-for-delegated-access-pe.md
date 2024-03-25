@@ -20,6 +20,7 @@ ms.custom:
   - seo-marvel-apr2020
   - admindeeplinkMAC
   - has-azure-ad-ps-ref
+  - azure-ad-ref-level-one-done
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
 description: "Summary: Use PowerShell for Microsoft 365 to add an alternate domain name to an existing customer tenant."
 ---
@@ -59,6 +60,8 @@ You also need the following information:
 ### Create the domain in Microsoft Entra ID
 
 This command creates the domain in Microsoft Entra ID but does not associate it with the publicly registered domain. That comes when you prove that you own the publicly registered domain to Microsoft 365 for enterprises.
+
+[!INCLUDE [Azure AD PowerShell deprecation note](~/../microsoft-365/reusable-content/msgraph-powershell/includes/aad-powershell-deprecation-note.md)]
 
 ```powershell
 New-MsolDomain -TenantId <customer TenantId> -Name <FQDN of new domain>
