@@ -109,7 +109,13 @@ For more information, see [Defender for Identity entity tags in Microsoft Defend
 
 You can see all active incidents and alerts involving the user from the last six months in this tab. All the information from the main incidents and alerts queues is shown here. This list is a filtered version of the [incidents queue](incidents-overview.md), and shows a short description of the incident or alert, its severity (high, medium, low, informational), its status in the queue (new, in progress, resolved), its classification (not set, false alert, true alert), investigation state, category, who is assigned to address it, and last activity observed.
 
-Select an incident or alert to [open the full investigation page](incidents-overview.md).
+You can customize the number of items displayed and which columns are displayed for each item. The default behavior is to list 30 items per page. You can also filter the alerts by severity, status, or any other column in the display.
+
+The *impacted entities* column refers to all the device and user entities referenced in the incident or alert.
+
+When an incident or alert is selected, a fly-out appears. From this panel you can manage the incident or alert and view more details such as incident/alert number and related devices. Multiple alerts can be selected at a time.
+
+To see a full page view of an incident or alert, select its title.
 
 :::image type="content" source="../../media/investigate-users/user-incident-alertstab.png" alt-text="The user account's related alerts seen in the Alerts tab in the Microsoft Defender portal" lightbox="../../media/investigate-users/user-incident-alertstab.png":::
 
@@ -188,7 +194,7 @@ For example:
 
 ## Sentinel events
 
-If your organization onboarded Microsoft Sentinel to the Defender portal, this additional tab is on the user entity page. This tab imports the [User entity page from Microsoft Sentinel](/azure/sentinel/entity-pages).
+If your organization onboarded Microsoft Sentinel to the Defender portal, this additional tab is on the user entity page. This tab imports the [Account entity page from Microsoft Sentinel](/azure/sentinel/entity-pages).
 
 ### Sentinel timeline
 

@@ -59,9 +59,9 @@ The following tabs are displayed on the device entity page:
 - [Security recommendations](#security-recommendations-tab)
 - [Inventories](#inventories-tab)
 - [Discovered vulnerabilities](#discovered-vulnerabilities-tab)
-- [Missing KBs](#missing-kbs)
-- [Security baselines](#security-baselines-tab)
-- [Security policies](#security-policies-tab)
+- [Missing KBs](#missing-kbs-tab)
+- [Security baselines](#missing-kbs-tab)
+- [Security policies](#missing-kbs-tab)
 - [Sentinel events](#sentinel-events-tab)
 
 ## Entity page header
@@ -122,71 +122,161 @@ To see a full page view of an incident or alert, select its title.
 
 ## *Timeline* tab
 
-The **Timeline** tab includes an interactive, chronological chart of all events raised on the device. By moving the highlighted area of the chart left or right, you can view events over different periods of time. You can also choose a custom range of dates from the dropdown menu in between the interactive chart and the list of events.
+The **Timeline** tab displays a chronological view of all events that have been observed on the device. This can help you correlate any events, files, and IP addresses in relation to the device.
 
-Below the chart is a list of events for the selected range of dates.
+The choice of columns displayed on the list can both be customized. The default columns list the event time, active user, action type, associated entities (processes, files, IP addresses), and additional information about the event.
+
+You can govern the time period for which events are displayed by sliding the borders of the time period along the overall timeline graph at the top of the page. You can also pick a time period from the drop-down at the top of the list (the default is 30 days). To further control your view, you can filter by event groups or customize the columns.
+
+You can export up to seven days' worth of events to a CSV file, for download.
+
+Drill down into the details of individual events by selecting and event and viewing its details in the resulting flyout panel. See [Event details](#event-details) below.
+
+> [!NOTE]
+> For firewall events to be displayed, you'll need to enable the audit policy, see [Audit Filtering Platform connection](/windows/security/threat-protection/auditing/audit-filtering-platform-connection).
+>
+> Firewall covers the following events:
+>
+> - [5025](/windows/security/threat-protection/auditing/event-5025) - firewall service stopped
+> - [5031](/windows/security/threat-protection/auditing/event-5031) - application blocked from accepting incoming connections on the network
+> - [5157](/windows/security/threat-protection/auditing/event-5157) - blocked connection
 
 :::image type="content" source="../../media/entity-page-device/entity-device-timeline-tab.png" alt-text="The Timeline tab for the device entity page in the Microsoft Defender portal." lightbox="../../media/entity-page-device/entity-device-timeline-tab.png":::
 
-The number of items displayed and the columns on the list can both be customized. The default columns list the event time, active user, action type, entities (processes), and additional information about the event.
+#### Event details
 
-Selecting an item from this list opens a flyout displaying an Event entities graph, showing the parent and child processes involved in the event.
+Select an event to view relevant details about that event. A flyout panel displays to show much more information about the event. The types of information displayed depends on the type of event. When applicable and data is available, you might see a graph showing related entities and their relationships, like a chain of files or processes. You might also see a summary description of the MITRE ATT&CK tactics and techniques applicable to the event.
 
-The list can be filtered by the specific event; for example, Registry events or Smart Screen Events.
+To further inspect the event and related events, you can quickly run an [advanced hunting](advanced-hunting-overview.md) query by selecting **Hunt for related events**. The query returns the selected event and the list of other events that occurred around the same time on the same endpoint.
 
-The list can also be exported to a CSV file, for download. Although the file isn't limited by number of events, the maximum time range you can choose to export is seven days.
+:::image type="content" source="../../media/entity-page-device/entity-device-event-details.png" alt-text="Screenshot of the event details panel.":::
 
-### Security recommendations tab
+### *Security recommendations* tab
 
 The **Security recommendations** tab lists actions you can take to protect the device. Selecting an item on this list opens a flyout where you can get instructions on how to apply the recommendation.
 
-:::image type="content" source="../../media/mtp-device-profile/hybrid-device-tab-security-recs.png" alt-text="The Security recommendations tab for device profile in the Microsoft Defender portal" lightbox="../../media/mtp-device-profile/hybrid-device-tab-security-recs.png":::
-
-As with the previous tabs, the number of items displayed per page and which columns are visible, can be customized.
+As with the previous tabs, the choice of displayed columns can be customized.
 
 The default view includes columns that detail the security weaknesses addressed, the associated threat, the related component or software affected by the threat, and more. Items can be filtered by the recommendation's status.
 
-### Software inventory
+Learn more about [security recommendations](../defender-vulnerability-management/tvm-security-recommendation.md).
 
-The **Software inventory** tab lists software installed on the device.
+:::image type="content" source="../../media/entity-page-device/entity-device-timeline-tab.png" alt-text="Screenshot of the Security recommendations tab for the device entity page." lightbox="../../media/entity-page-device/entity-device-timeline-tab.png":::
 
-:::image type="content" source="../../media/mtp-device-profile/hybrid-device-tab-software-inventory.png" alt-text="The Software inventory tab for device profile in the Microsoft Defender portal" lightbox="../../media/mtp-device-profile/hybrid-device-tab-software-inventory.png":::
+### *Inventories* tab
+
+This tab displays inventories of four types of components: Software, vulnerable components, browser extensions, and certificates.
+
+#### Software inventory
+
+This card lists software installed on the device.
 
 The default view displays the software vendor, installed version number, number of known software weaknesses, threat insights, product code, and tags. The number of items displayed and which columns are displayed can both be customized.
 
 Selecting an item from this list opens a flyout containing more details about the selected software, and the path and timestamp for the last time the software was found.
 
-This list can be filtered by product code.
+This list can be filtered by product code, weaknesses, and the presence of threats.
 
-### Discovered vulnerabilities tab
+:::image type="content" source="../../media/entity-page-device/entity-device-inventories-tab.png" alt-text="The Software inventory tab for device profile in the Microsoft Defender portal" lightbox="../../media/entity-page-device/entity-device-inventories-tab.png":::
 
-The **Discovered vulnerabilities** tab lists any Common Vulnerabilities and Exploits (CVEs) that may affect the device.
+#### Vulnerable components
 
-:::image type="content" source="../../media/mtp-device-profile/hybrid-device-tab-discovered-vulnerabilities.png" alt-text="The Discovered vulnerabilities tab for device profile in the Microsoft Defender portal" lightbox="../../media/mtp-device-profile/hybrid-device-tab-discovered-vulnerabilities.png":::
+This card lists software components that contain vulnerabilities.
 
-The default view lists the severity of the CVE, the Common Vulnerability Score (CVS), the software related to the CVE, when the CVE was published, when the CVE was last updated, and threats associated with the CVE.
+The default view and filtering options are the same as for software.
 
-As with the previous tabs, the number of items displayed and which columns are visible can be customized.
+Select an item to display more information in a flyout.
+
+#### Browser extensions
+
+This card shows the browser extensions installed on the device. The default fields displayed are the extension name, the browser for which it's installed, the version, the permission risk (based on the type of access to devices or sites requested by the extension), and the status. Optionally, the vendor can also be displayed.
+
+Select an item to display more information in a flyout.
+
+#### Certificates
+
+This card displays all the certificates installed on the device.
+
+The fields displayed by default are the certificate name, issue date, expiration date, key size, issuer, signature algorithm, key usage, and number of instances.
+
+The list can be filtered by status, self-signed or not, key size, signature hash, and key usage.
+
+Select a certificate to display more information in a flyout.
+
+### *Discovered vulnerabilities* tab
+
+This tab lists any Common Vulnerabilities and Exploits (CVEs) that may affect the device.
+
+The default view lists the severity of the CVE, the Common Vulnerability Score (CVSS), the software related to the CVE, when the CVE was published, when the CVE was first detected and last updated, and threats associated with the CVE.
+
+As with the previous tabs, the choice of columns to be displayed can be customized. The list can be filtered by severity, threat status, device exposure, and tags.
 
 Selecting an item from this list opens a flyout that describes the CVE.
 
-### Missing KBs
+:::image type="content" source="../../media/entity-page-device/entity-device-vulnerabilities-tab.png" alt-text="The Discovered vulnerabilities tab for device profile in the Microsoft Defender portal" lightbox="../../media/entity-page-device/entity-device-vulnerabilities-tab.png":::
+
+### *Missing KBs* tab
 
 The **Missing KBs** tab lists any Microsoft Updates that have yet to be applied to the device. The "KBs" in question are [Knowledge Base articles](https://support.microsoft.com/help/242450/how-to-query-the-microsoft-knowledge-base-by-using-keywords-and-query), which describe these updates; for example, [KB4551762](https://support.microsoft.com/help/4551762/windows-10-update-kb4551762).
 
-:::image type="content" source="../../media/mtp-device-profile/hybrid-device-tab-missing-kbs.PNG" alt-text="The Missing KBs tab for device profile in the Microsoft Defender portal" lightbox="../../media/mtp-device-profile/hybrid-device-tab-missing-kbs.PNG":::
+The default view lists the bulletin containing the updates, OS version, the KB ID number, products affected, CVEs addressed, and tags.
 
-The default view lists the bulletin containing the updates, OS version, products affected, CVEs addressed, the KB number, and tags.
-
-The number of items displayed per page and which columns are displayed can be customized.
+The choice of columns to be displayed can be customized.
 
 Selecting an item opens a flyout that links to the update.
+
+### *Sentinel events* tab
+
+If your organization onboarded Microsoft Sentinel to the Defender portal, this additional tab is on the device entity page. This tab imports the [Host entity page from Microsoft Sentinel](/azure/sentinel/entity-pages).
+
+### Sentinel timeline
+
+This timeline shows alerts associated with the device entity, known in Microsoft Sentinel as the *host* entity. These alerts include those seen on the **Incidents and alerts** tab and those created by Microsoft Sentinel from third-party, non-Microsoft data sources.
+
+This timeline also shows [bookmarked hunts](/azure/sentinel/bookmarks) from other investigations that reference this user entity, user activity events from external data sources, and unusual behaviors detected by Microsoft Sentinel's [anomaly rules](/azure/sentinel/soc-ml-anomalies).
+
+### Insights
+
+Entity insights are queries defined by Microsoft security researchers to help you investigate more efficiently and effectively. These insights automatically ask the big questions about your device entity, providing valuable security information in the form of tabular data and charts. The insights include data regarding sign-ins, group additions, process executions, anomalous events and more, and include advanced machine learning algorithms to detect anomalous behavior.
+
+The following are some of the insights shown:
+
+- Screenshot taken on the host.
+- Processes unsigned by Microsoft detected.
+- Windows process execution info.
+- Windows sign-in activity.
+- Actions on accounts.
+- Event logs cleared on host.
+- Group additions.
+- Enumeration of hosts, users, groups on host.
+- Microsoft Defender Application Control.
+- Process rarity via entropy calculation.
+- Anomalously high number of a security event.
+- Watchlist insights (Preview).
+- Windows Defender Antivirus events.
+
+The insights are based on the following data sources:
+
+- Syslog (Linux)
+- SecurityEvent (Windows)
+- AuditLogs (Microsoft Entra ID)
+- SigninLogs (Microsoft Entra ID)
+- OfficeActivity (Office 365)
+- BehaviorAnalytics (Microsoft Sentinel UEBA)
+- Heartbeat (Azure Monitor Agent)
+- CommonSecurityLog (Microsoft Sentinel)
+
+:::image type="content" source="../../media/entity-page-device/entity-device-sentinel-events-tab.png" alt-text="Screenshot of Sentinel events tab in user entity page.":::
+
+If you want to further explore any of the insights in this panel, select the link accompanying the insight. The link takes you to the **Advanced hunting** page, where it displays the query underlying the insight, along with its raw results. You can modify the query or drill down into the results to expand your investigation or just satisfy your curiosity.
+
+:::image type="content" source="../../media/entity-page-device/device-insights-advanced-hunting.png" alt-text="Screenshot of Advanced hunting screen with insight query.":::
 
 ## Response actions
 
 Response actions offer shortcuts to analyze, investigate, and defend against threats.
 
-:::image type="content" source="../../media/mtp-device-profile/hybrid-device-long-action-bar.png" alt-text="The Action bar for device profile in the Microsoft Defender portal" lightbox="../../media/mtp-device-profile/hybrid-device-long-action-bar.png":::
+:::image type="content" source="../../media/entity-page-device/entity-device-response-actions.png" alt-text="Screenshot of the Action bar for the device entity page in the Microsoft Defender portal.":::
 
 > [!IMPORTANT]
 > - [Response actions](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts) are only available if the device is enrolled in Microsoft Defender for Endpoint.
