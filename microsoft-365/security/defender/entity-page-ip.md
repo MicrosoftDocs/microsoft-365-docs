@@ -101,8 +101,6 @@ The insights are based on the following data sources:
 
 If you want to further explore any of the insights in this panel, select the link accompanying the insight. The link takes you to the **Advanced hunting** page, where it displays the query underlying the insight, along with its raw results. You can modify the query or drill down into the results to expand your investigation or just satisfy your curiosity.
 
-:::image type="content" source="../../media/investigate-users/insights-advanced-hunting.png" alt-text="Screenshot of Advanced hunting screen with insight query.":::
-
 ## Response actions
 
 Response actions offer shortcuts to analyze, investigate, and defend against threats.
