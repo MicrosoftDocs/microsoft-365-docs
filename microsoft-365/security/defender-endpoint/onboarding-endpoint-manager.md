@@ -152,7 +152,7 @@ Then, you continue by creating several different types of endpoint security poli
 7. Add test group by clicking on **Select groups to include** and choose your group, then select  **Next**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/fc3525e20752da026ec9f46ab4fec64f.png" alt-text="The Microsoft Intune admin center9" lightbox="images/fc3525e20752da026ec9f46ab4fec64f.png":::
+    > :::image type="content" source="media/fc3525e20752da026ec9f46ab4fec64f.png" alt-text="The Microsoft Intune admin center9" lightbox="media/fc3525e20752da026ec9f46ab4fec64f.png":::
 
 8. Review and accept, then select  **Create**.
 

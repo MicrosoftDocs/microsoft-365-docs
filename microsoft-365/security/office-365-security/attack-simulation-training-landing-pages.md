@@ -24,36 +24,34 @@ In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Offi
 
 For getting started information about Attack simulation training, see [Get started using Attack simulation training](attack-simulation-training-get-started.md).
 
-To see the available landing pages, open the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Content library** tab \> and then select **Phish landing pages**. To go directly to the **Content library** tab where you can select **Landing pages**, use <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>.
+To see the available landing pages, open the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Content library** tab \> and then select **Phish landing pages**. To go directly to the **Content library** tab where you can select **Phish landing pages**, use <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>.
 
-**Landing pages** in the **Content library** tab has two tabs:
+**Phish landing pages** in the **Content library** tab has two tabs:
 
-- **Global landing pages** tab: Contains the built-in, nonmodifiable landing page templates named **Microsoft Landing Page Template 1** to **Microsoft Landing Page Template 5**. These built-in landing pages are localized into 12+ languages.
-- **Tenant landing pages** tab: Contains the custom landing pages that you've created.
+- **Global landing pages** tab: Contains built-in, unmodifiable landing page templates named **Microsoft Landing Page Template 1** to **Microsoft Landing Page Template 5**. These built-in landing pages are localized into 12+ languages.
+- **Tenant landing pages** tab: Contains custom landing pages that you created.
 
-The following information is shown for each landing page<sup>\*</sup>:
+The following information is shown for each landing page. You can sort the landing pages by clicking on an available column header. Select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns** to change the columns that are shown. By default, all available columns are selected.
 
 - **Name**
 - **⋮** (**Actions** control): Take action on the landing page. The available actions depend on the **Status** value of the landing page as described in the procedure sections.
-- **Language**
+- **Language**: One or more of the following values: **German**, **English**, **Spanish**, **French**, **Italian**, **Japanese**, **Korean**, **Dutch**, **Portuguese**, **Russian**, **Chinese (Simplified)**, and **Chinese (Traditional, Taiwan)**.
 - **Default language**
 - **Status**: **Ready** or **Draft**.
 - **Linked simulations**
-- **Created by**: For built-in landing pages, the value is **Microsoft**. For custom landing pages, the value is the UPN of the user who created the landing page.
+- **Created by**: For built-in landing pages, the value is **Microsoft**. For custom landing pages, the value is the user principal name (UPN) of the user who created the landing page.
 - **Created time**
 - **Modified by**
 
-Select a column header to sort by that column. To add or remove columns, select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns**. By default, all available columns are selected.
-
 > [!TIP]
-> The **⋮** (**Actions** control) is associated with the **Name** column. If you remove that column from view, the **⋮** control goes away.
-
-<sup>\*</sup> To see all columns, you likely need to do one or more of the following steps:
-
-- Horizontally scroll in your web browser.
-- Narrow the width of appropriate columns.
-- Remove columns from the view.
-- Zoom out in your web browser.
+> To see all columns, you likely need to do one or more of the following steps:
+>
+> - Horizontally scroll in your web browser.
+> - Narrow the width of appropriate columns.
+> - Remove columns from the view.
+> - Zoom out in your web browser.
+>
+> The **⋮** (**Actions** control) is associated with the **Notifications** column. If you remove that column from view, the **⋮** control goes away.
 
 To find a landing page in the list, type part of the landing page name in the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box and then press the ENTER key.
 
@@ -76,6 +74,9 @@ When you select a landing page from the list by clicking anywhere in the row oth
 
 In custom landing pages only, an **Edit landing page** link is available at the bottom of both tabs.
 
+> [!TIP]
+> To see details about other landing pages without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
+
 ## Create landing pages
 
 1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Content library** tab \> and then select **Phish landing pages**. To go directly to the **Content library** tab where you can select **Phish landing pages**, use <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>.
@@ -87,17 +88,16 @@ In custom landing pages only, an **Edit landing page** link is available at the 
    >
    > You can also create landing pages during the creation of simulations and simulation automations. For more information, see [Create a simulation: Select a landing page](attack-simulation-training-simulations.md#select-a-landing-page) and [Create a simulation automation: Select a landing page](attack-simulation-training-simulation-automations.md#select-a-landing-page).
 
-3. On the **Define details for phish landing page** page, configured the following settings:
+3. On the **Define details for phish landing page** page, configure the following settings:
    - **Name**: Enter a unique, descriptive name for the landing page.
    - **Description**: Enter an optional description.
 
    When you're finished on the **Define details for phish landing page** page, select **Next**.
 
 4. On the **Configure landing page** page, select **Define content in preferred language**. In the **Add content in default language** flyout that opens, configure the following settings:
-   - **Select the language for the landing page**: Select one of the 29+ available languages.
+   - **Select the language for the landing page**: Select one of the available languages: **Chinese (Simplified)**, **Chinese (Traditional, Taiwan)**, **Dutch**, **English**, **Spanish**, **French**, **German**, **Italian**, **Japanese**, **Korean**, **Portuguese**, **Russian**, **Swedish**, **Norwegian Bokmål**, **Polish**, **Finnish**, **Turkish**, **Hungarian**, **Hebrew**, **Thai**, **Arabic**, **Vietnamese**, **Slovak**, **Greek**, **Indonesian**, **Romanian**, **Slovenian**, **Croatian**, **Catalan**, or **Other**.
    - **Mark this as default language**: For the first landing page you create, this setting is selected and unchangeable.
    - Landing page content: Two tabs are available:
-
      - **Text** tab: A rich text editor is available to create the landing page. To see the typical font and formatting settings, toggle **Formatting controls** to :::image type="icon" source="../../media/scc-toggle-on.png" border="false"::: **On**.
 
        The following controls are also available on the **Text** tab:
@@ -125,7 +125,7 @@ In custom landing pages only, an **Edit landing page** link is available at the 
 
      - **Code** tab: You can view and modify the HTML code directly.
 
-   You can preview the results by clicking the **Preview phish landing page** button at the top of the page.
+   You can preview the results by selecting **Preview phish landing page** at the top of the page.
 
    When you're finished on the **Add content in default language** flyout, select **Save**.
 
