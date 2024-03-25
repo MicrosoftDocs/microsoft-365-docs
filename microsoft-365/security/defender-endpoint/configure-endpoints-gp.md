@@ -289,7 +289,7 @@ Browse to **Computer Configuration** \> **Policies** \> **Administrative Templat
 
 Browse to **Computer Configuration** \> **Policies** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **MAPS**.
 
-:::image type="content" source="images/gpo-maps1.png" alt-text="maps" lightbox="images/gpo-maps1.png":::
+:::image type="content" source="media/gpo-maps1.png" alt-text="maps" lightbox="media/gpo-maps1.png":::
 
 :::image type="content" source="media/gpo-maps-block-atfirst-sight.png" alt-text="Block at first sight" lightbox="media/gpo-maps-block-atfirst-sight.png":::
 
