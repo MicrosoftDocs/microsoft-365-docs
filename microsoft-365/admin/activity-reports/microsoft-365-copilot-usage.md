@@ -110,9 +110,6 @@ You can view several numbers for Copilot for Microsoft 365 usage, which highligh
 
 **Active Users** shows the total number of enabled users in your organization who tried a user-initiated Copilot for Microsoft 365 feature, in one or more Microsoft 365 apps over the selected time period.
 
-> [!NOTE]
-> A user is considered active in a given app if they performed an intentional action for an AI-powered capability. For example, if a user selects the Copilot icon in the Word ribbon to open the Copilot chat pane, this does not count towards active usage. However, if the user interacts with the chat pane by submitting a prompt, this action would count towards active usage.
-
 **Active users rate** shows you the number of active users in your organization divided by the number of enabled users.
 
 In Recommendations, the recommended action card highlights [Microsoft Copilot Dashboard](/viva/insights/org-team-insights/copilot-dashboard), where you can deliver insights to your IT leaders to explore Copilot readiness, adoption, and impact in Viva Insights.  
@@ -124,14 +121,6 @@ You can see the following summary charts in this report as default view:
 The definitions for Enabled Users and Active Users metrics are the same as provided earlier.
 
 To note, Active users of Word, Excel and PowerPoint is incomplete prior to Jan 25, 2024. Active users of Outlook might be lower than expected if there are people in your organization using the Coach feature on Outlook Win32 over the selected time period. We are currently working on integrating this data into our reports and will notify you as soon as it becomes available.
-
->[!NOTE]
-> This report now includes a new metric for Microsoft Copilot with Graph-grounded chat, simplified as "Copilot chat." The action list for active users of Copilot chat includes the following: 
-> - Typing a message into the chat window and submitting.
-> - Selecting a prompt from the "Try these Prompts" section, which will automatically copy the prompt into the chat box.
-> - Clicking on one of the suggestions from the "Stay on top" tab in some platforms (such as Microsoft365.com).
-
-> Note that automated prompts are not included in this feature.
 
 >[!IMPORTANT]
 > Your organization must have optional diagnostic telemetry for Office apps enabled for Windows, Mac, iOS, and Android in order for comprehensive usage information to be captured in this report. [Learn more about diagnostic telemetry settings](/DeployOffice/privacy/optional-diagnostic-data).
@@ -168,9 +157,6 @@ Select **Choose columns** to add or remove columns from the table.
 
 :::image type="content" alt-text="Screenshot showing the columns you can select for the Microsoft 365 Copilot usage report." source="../../media/copilot-usage-choose-columns2.png":::
 
->[!NOTE]
-> All up last activity date and last activity date per app are reflecting different narratives now. All up last activity date is reflecting the historical last activity date no matter what period is selected on the page, while last activity date per app is reflecting the last activity date within the selected time period; hence, if there is no activity in selected time period, the last activity date per app will be empty. We are planning to make them consistent to reflect the historical last activity date narrative and will provide update once it’s done.
-
 You can also export the report data into an Excel .csv file by selecting the Export link. This exports the Copilot for Microsoft 365 usage data of all users and enables you to do simple sorting, filtering, and searching for further analysis.
 
 To ensure data quality, we perform daily data validation checks for the past three days and will fill any gaps detected. You may notice differences in historical data during the process.
@@ -203,6 +189,32 @@ To make the data in the Copilot for Microsoft 365 report anonymous, you must be 
 
 ## FAQ
 
+### How is a user considered active in Copilot for Microsoft 365 usage?
+
+A user is considered active in a given app if they performed an intentional action for an AI-powered capability. For example, if a user selects the Copilot icon in the Word ribbon to open the Copilot chat pane, this does not count towards active usage. However, if the user interacts with the chat pane by submitting a prompt, this action would count towards active usage.
+
+### What’s the action list for Copilot chat usage?
+
+This report now includes a new metric for Microsoft Copilot with Graph-grounded chat, simplified as "Copilot chat." The action list for active users of Copilot chat includes the following:
+
+- Typing a message into the chat window and submitting.
+- Selecting a prompt from the "Try these Prompts" section, which will automatically copy the prompt into the chat box.
+- Clicking on one of the suggestions from the "Stay on top" tab in some platforms (such as Microsoft365.com).
+
+Note that automated prompts are not included in this feature.
+
+### What are the behaviors of All up last activity date and last activity date per app in user-level table?
+
+All up last activity date and last activity date per app are reflecting different narratives now. All up last activity date is reflecting the historical last activity date no matter what period is selected on the page, while last activity date per app is reflecting the last activity date within the selected time period; hence, if there is no activity in selected time period, the last activity date per app will be empty. We are planning to make them consistent to reflect the historical last activity date narrative and will provide update once it’s done.
+
 ### What's the difference between the user activity table and audit log?
 
 The information captured in audit log records differs from that in [Microsoft 365 usage reports](#user-last-activity-table). It's important to note that audit logs are not designed for assessing user engagement in Microsoft 365, and they should not be used to replace or augment information in Microsoft 365 usage reports. To learn more about audit logs, see [Export, configure, and view audit log records](/purview/audit-log-export-records#step-1-export-audit-log-search-results).
+
+### Is Intelligent Recap usage in Teams is captured in [Usage reports](activity-reports.md), [Adoption Score](/adoption/adoption-score.md), and [Microsoft Copilot Dashboard](/viva/insights/org-team-insights/copilot-dashboard)?
+
+ Not yet. [Roadmap ID #375760 Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=375760) that feature Intelligent Recap in Teams has been available for Microsoft Copilot for Microsoft 365 users since Jan, 2024. However, telemetry is not captured in Usage reports, Adoption Score, and Microsoft Copilot Dashboard. We are working on bringing this feature into those products and will announce in Message Center once it’s available.
+
+### What’s the scope of user-level table?
+
+The user-level table in the report is configured to show all users who were licensed for Copilot for Microsoft 365 at any point over the past 180 days, even if the user has since had the license removed or never had any Copilot active usage.
