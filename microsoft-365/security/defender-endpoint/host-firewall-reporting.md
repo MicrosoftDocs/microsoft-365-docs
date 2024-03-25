@@ -110,13 +110,13 @@ These reports can also be accessed by going to **Reports** > **Security Report**
 
 Cards support interactive objects. You can drill into the activity of a device by clicking on the device name, which will launch the Microsoft Defender portal in a new tab, and take you directly to the **Device Timeline** tab.
 
-:::image type="content" source="images/firewall-reporting-blocked-connection.png" alt-text="The Computers with a blocked connection page" lightbox="images/firewall-reporting-blocked-connection.png":::
+:::image type="content" source="media/firewall-reporting-blocked-connection.png" alt-text="The Computers with a blocked connection page" lightbox="media/firewall-reporting-blocked-connection.png":::
 
 You can now select the **Timeline** tab, which will give you a list of events associated with that device.
 
 After clicking on the **Filters** button on the upper right-hand corner of the viewing pane, select the type of event you want. In this case, select **Firewall events** and the pane will be filtered to Firewall events.
 
-:::image type="content" source="images/firewall-reporting-filters-button.png" alt-text="The Filters button" lightbox="images/firewall-reporting-filters-button.png":::
+:::image type="content" source="media/firewall-reporting-filters-button.png" alt-text="The Filters button" lightbox="media/firewall-reporting-filters-button.png":::
 
 ### Drill into advanced hunting (preview refresh)
 
