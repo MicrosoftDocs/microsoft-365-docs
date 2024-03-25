@@ -161,7 +161,7 @@ The default view includes columns that detail the security weaknesses addressed,
 
 Learn more about [security recommendations](../defender-vulnerability-management/tvm-security-recommendation.md).
 
-:::image type="content" source="../../media/entity-page-device/entity-device-timeline-tab.png" alt-text="Screenshot of the Security recommendations tab for the device entity page." lightbox="../../media/entity-page-device/entity-device-timeline-tab.png":::
+:::image type="content" source="../../media/entity-page-device/entity-device-recommendations-tab.png" alt-text="Screenshot of the Security recommendations tab for the device entity page." lightbox="../../media/entity-page-device/entity-device-recommendations-tab.png":::
 
 ### *Inventories* tab
 
