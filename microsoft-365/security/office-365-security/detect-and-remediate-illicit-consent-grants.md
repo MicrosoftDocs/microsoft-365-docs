@@ -18,6 +18,7 @@ description: Learn how to recognize and remediate the illicit consent grants att
 ms.custom:
   - seo-marvel-apr2020
   - has-azure-ad-ps-ref
+  - azure-ad-ref-level-one-done
 ms.subservice: mdo
 ms.service: microsoft-365-security
 appliesto:
@@ -106,6 +107,8 @@ The simplest way to verify the Illicit Consent Grant attack is to run [Get-Azure
 
 > [!IMPORTANT]
 > We ***highly recommend*** that you require multi-factor authentication on your administrative account. This script supports MFA authentication.
+
+[!INCLUDE [Azure AD PowerShell deprecation note](~/../microsoft-365/reusable-content/msgraph-powershell/includes/aad-powershell-deprecation-note.md)]
 
 1. Sign in to the computer that you will run the script from with local administrator rights.
 

@@ -106,9 +106,29 @@ Copilot is available in Current Channel and in Monthly Enterprise Channel. As al
 
 ## Network requirements
 
-Copilot services connect to endpoints contained within the [Microsoft 365 endpoint taxonomy](https://aka.ms/o365ip). As with all Microsoft 365 services, we recommend that customers align their network with the [Microsoft 365 network connectivity principles](/microsoft-365/enterprise/microsoft-365-network-connectivity-principles). This helps provide the best experience with Copilot through minimization of latency and increased network quality of service for critical network flows.
+Copilot experiences are deeply integrated with Microsoft 365 applications and often use the same [network connections and endpoints that Microsoft 365 apps](/microsoft-365/enterprise/urls-and-ip-address-ranges) use. As such, baseline network configuration customers should ensure that Microsoft 365 endpoints are not blocked within their environment and that network setup follows [Microsoft 365 network connectivity principles](/microsoft-365/enterprise/microsoft-365-network-connectivity-principles) and best practices.
 
-There are many Copilot experiences, including some core experiences like Excel, Word, PowerPoint, Teams, and Loop, that use WebSocket connections (wss://) from the device running the Microsoft 365 app to a Microsoft service. So, to use these Copilot experiences, WebSocket connections must be allowed from user endpoints to the endpoints listed in our endpoint taxonomy, specifically in ID number 147 in the section for [Microsoft 365 Common and Office Online](/microsoft-365/enterprise/urls-and-ip-address-ranges).
+In addition to [standard Microsoft 365 domains and IPs](/microsoft-365/enterprise/urls-and-ip-address-ranges), there are some extra network endpoints (domains) that Copilot scenarios may need to connect to enable richer integrations (such as Copilot experiences for the Web). Customers should ensure that traffic to these domains is also not blocked by their network solutions:
+
+- copilot.microsoft.com, *.copilot.microsoft.com
+- *.bing.com, *.bingapis.com
+- challenges.cloudflare.com
+
+>[!IMPORTANT]
+> Several Copilot integrations rely on WebSockets (WSS) to deliver a streamlined user experience. Some customer networks may not be configured to handle WSS connections properly, which may result in Copilot application failures. Typical network configurations that impact WSS include:
+>- WSS protocol is blocked by the network perimeter
+>- Network devices attempting to perform TLS inspection of connections
+>- Proxy servers enforcing aggressive connection timeouts
+
+Microsoft recommends that customers verify that their network supports full WSS connectivity (including addressing the issues above) from user devices running Microsoft 365 applications to the following domains:
+
+- Microsoft 365 Copilot experiences (Enterprise): *.cloud.microsoft, *.office.com
+- Additional Copilot experiences (including Consumer): *.bing.com, copilot.microsoft.com, *.copilot.microsoft.com
+
+>[!NOTE]
+> Some customers may prefer to use granular definitions of endpoints (such as individual FQDNs) instead of wildcards to configure their network settings. However, due to hyperscale, and the dynamic nature of its services, Microsoft 365 is unable to provide specific FQDNs used by individual features and scenarios. Doing so would result in unmanageable configuration surface, constant customer network changes and connectivity incidents. When reviewing and implementing recommended network configurations, customers should consider all FQDNs and subdomains where wildcards are specified as functionally required for the referenced scenarios.
+
+In the future, we plan to consolidate Copilot experiences for Microsoft 365 under the *.cloud.microsoft domain and Copilot network requirements and associated required customer network configurations can be further simplified.
 
 ## More resources
 
