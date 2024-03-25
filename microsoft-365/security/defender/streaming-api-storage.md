@@ -41,9 +41,9 @@ ms.date: 02/08/2023
 
 ### Add contributor permissions
 
-Once the Storage account is created you will need to:
+Once the Storage account is created, you'll need to:
 
-1. Define the user who will be logging into Microsoft Defender XDR as Contributor.
+1. Define the user who is logging into Microsoft Defender XDR as Contributor.
 
     Go to **Storage Account > Access control (IAM) > Add** and verify under **Role assignments**.
 
@@ -53,7 +53,7 @@ Once the Storage account is created you will need to:
 
 2. Go to **Settings** \> **Microsoft Defender XDR** \> **Streaming API**. To go directly to the **Streaming API** page, use <https://security.microsoft.com/settings/mtp_settings/raw_data_export>.
 
-3. Click **Add**.
+3. Select **Add**.
 
 4. In the **Add new Streaming API settings** flyout that appears, configure the following settings:
    1. **Name**: Choose a name for your new settings.
@@ -66,11 +66,11 @@ Once the Storage account is created you will need to:
 
    4. Back on the **Add new Streaming API settings** flyout, choose the **Event types** that you want to stream.
 
-   When you're finished, click **Submit**.
+   When you're finished, select **Submit**.
 
 ## The schema of the events in the Storage account
 
-- A blob container will be created for each event type:
+- A blob container is created for each event type:
 
   :::image type="content" source="../defender-endpoint/images/storage-account-event-schema.png" alt-text="Example of a blob container" lightbox="../defender-endpoint/images/storage-account-event-schema.png":::
 
@@ -87,7 +87,7 @@ Once the Storage account is created you will need to:
 
 - Each blob contains multiple rows.
 
-- Each row contains the event name, the time Defender for Endpoint received the event, the tenant it belongs (you will only get events from your tenant), and the event in JSON format in a property called "properties".
+- Each row contains the event name, the time Defender for Endpoint received the event, the tenant it belongs (you'll only get events from your tenant), and the event in JSON format in a property called "properties".
 
 - For more information about the schema of Microsoft Defender XDR events, see [Advanced Hunting overview](../defender/advanced-hunting-overview.md).
 
@@ -105,9 +105,9 @@ In order to get the data types for our events properties do the following:
    | project ColumnName, ColumnType
    ```
 
-- Here is an example for Device Info event:
+- Here's an example for Device Info event:
 
-  :::image type="content" source="../defender-endpoint/images/machine-info-datatype-example.png" alt-text="An example device info query" lightbox="../defender-endpoint/images/machine-info-datatype-example.png":::
+  :::image type="content" source="../defender-endpoint/media/machine-info-datatype-example.png" alt-text="An example device info query" lightbox="../defender-endpoint/media/machine-info-datatype-example.png":::
 
 ## Monitoring created resources
 

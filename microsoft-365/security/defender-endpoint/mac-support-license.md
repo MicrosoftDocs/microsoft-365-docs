@@ -47,7 +47,7 @@ When you select the **x** symbol, you see options as shown in the following scre
 
 When you select **Action needed**, you get the error message as shown in the following screenshot:
 
-:::image type="content" source="images/license-not-found-message.png" alt-text="Screenshot of the page displaying the No license found message and its description.":::
+:::image type="content" source="media/license-not-found-message.png" alt-text="Screenshot of the page displaying the No license found message and its description.":::
 
 You encounter this message in a different way: If you're using the terminal to enter **mdatp health** without the double quotes, the message as shown in the following screenshot is displayed:
 
@@ -103,7 +103,7 @@ If the file exists, it will prevent the macOS from being onboarded again.  Delet
        
 3. Select **View and purchase licenses in the Microsoft 365 admin center**. The following screen in the Microsoft 365 admin center portal appears:
 
-   :::image type="content" source="images/m365-admin-center-purchase-assign-licenses.png" alt-text="Screenshot of the Microsoft 365 admin center portal page from which licenses can be purchased and assigned." lightbox="images/m365-admin-center-purchase-assign-licenses.png":::
+   :::image type="content" source="media/m365-admin-center-purchase-assign-licenses.png" alt-text="Screenshot of the Microsoft 365 admin center portal page from which licenses can be purchased and assigned." lightbox="media/m365-admin-center-purchase-assign-licenses.png":::
 
 4. Check the checkbox of the license you want to purchase from Microsoft, and select it. The screen displaying detail of the chosen license appears:
 
@@ -131,7 +131,7 @@ On implementing these solution-options (either of them), if the licensing issues
 
 ## Sign in with your Microsoft account
 
-:::image type="content" source="images/mac-consumer-login.png" alt-text="Screenshot of the page from which the users have to sign in with their Microsoft account's credentials to get started.":::
+:::image type="content" source="media/mac-consumer-login.png" alt-text="Screenshot of the page from which the users have to sign in with their Microsoft account's credentials to get started.":::
 
 ### Message
 

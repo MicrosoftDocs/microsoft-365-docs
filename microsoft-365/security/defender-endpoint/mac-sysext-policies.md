@@ -45,7 +45,7 @@ To approve the system extensions, create the following payload:
     - **com.microsoft.wdav.epsext**
     - **com.microsoft.wdav.netext**
 
-    :::image type="content" source="images/mac-approved-system-extensions.png" alt-text=" The Approved system extensions page" lightbox="images/mac-approved-system-extensions.png":::
+    :::image type="content" source="media/mac-approved-system-extensions.png" alt-text=" The Approved system extensions page" lightbox="media/mac-approved-system-extensions.png":::
 
 ### Privacy Preferences Policy Control
 

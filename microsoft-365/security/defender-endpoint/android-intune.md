@@ -169,7 +169,7 @@ Follow the steps below to add Microsoft Defender for Endpoint app into your mana
 
     1. You should see all the selected configurations listed. You can change the configuration value as required and then select **Next**.
 
-       :::image type="content" alt-text="Image of selected configuration policies." source="images/listedconfigurations.png" lightbox="images/listedconfigurations.png":::
+       :::image type="content" alt-text="Image of selected configuration policies." source="media/listedconfigurations.png" lightbox="media/listedconfigurations.png":::
 
     1. In the **Assignments** page, select the user group to which this app config policy would be assigned. Click **Select groups to include** and selecting the applicable group and then selecting **Next**. The group selected here is usually the same group to which you would assign Microsoft Defender for Endpoint Android app.
 
