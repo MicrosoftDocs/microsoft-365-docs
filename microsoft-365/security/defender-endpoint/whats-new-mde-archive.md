@@ -3,8 +3,8 @@ title: What's new in Microsoft Defender for Endpoint - Before 2023
 description: See what features were available for Microsoft Defender for Endpoint in the releases before 2023.
 search.appverid: met150
 ms.service: defender-endpoint
-ms.author: deniseb
-author: denisebmsft
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 ms.date: 03/25/2024
 manager: deniseb
