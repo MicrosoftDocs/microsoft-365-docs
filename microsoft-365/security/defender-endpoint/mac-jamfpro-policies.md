@@ -65,7 +65,7 @@ You'll need to take the following steps:
 
 2. Sign in to Jamf Pro, navigate to **Computers** > **Configuration Profiles**, and select **New**.
 
-   :::image type="content" source="images/jamf-pro-configure-profile.png" alt-text="The page on which you create a new Jamf Pro dashboard." lightbox="images/jamf-pro-configure-profile.png":::
+   :::image type="content" source="media/jamf-pro-configure-profile.png" alt-text="The page on which you create a new Jamf Pro dashboard." lightbox="media/jamf-pro-configure-profile.png":::
 
 3. Enter the following details in the **General** tab:
    
@@ -77,7 +77,7 @@ You'll need to take the following steps:
 
 4.  Navigate to the **Application & Custom Settings** page and select **Upload** > **Add**.
 
-    :::image type="content" source="images/jamfpro-mac-profile.png" alt-text="The configurate app and custom settings." lightbox="images/jamfpro-mac-profile.png":::
+    :::image type="content" source="media/jamfpro-mac-profile.png" alt-text="The configurate app and custom settings." lightbox="media/jamfpro-mac-profile.png":::
 
 5. Select **Upload File (PLIST file)** then in **Preference Domain** enter: `com.microsoft.wdav.atp`.
 
@@ -105,7 +105,7 @@ You'll need to take the following steps:
 
 10. Select **Save**.
 
-    :::image type="content" source="images/jamfpro-deployment-target.png" alt-text="The deployment of target computers." lightbox="images/jamfpro-deployment-target.png":::
+    :::image type="content" source="media/jamfpro-deployment-target.png" alt-text="The deployment of target computers." lightbox="media/jamfpro-deployment-target.png":::
 
     :::image type="content" source="images/jamfpro-target-selected.png" alt-text="The selection of target computers." lightbox="images/jamfpro-target-selected.png":::
 
@@ -113,7 +113,7 @@ You'll need to take the following steps:
 
     :::image type="content" source="images/jamfpro-target-group.png" alt-text="The computers of a target group." lightbox="images/jamfpro-target-group.png":::
 
-    :::image type="content" source="images/jamfpro-configuration-policies.png" alt-text="The list of configuration profiles." lightbox="images/jamfpro-configuration-policies.png":::
+    :::image type="content" source="media/jamfpro-configuration-policies.png" alt-text="The list of configuration profiles." lightbox="media/jamfpro-configuration-policies.png":::
 
 ## Step 3: Configure Microsoft Defender for Endpoint settings
 
