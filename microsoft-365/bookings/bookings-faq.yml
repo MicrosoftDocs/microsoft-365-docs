@@ -1,6 +1,6 @@
 ### YamlMime:FAQ
 metadata:
-  ms.date: 06/06/2023
+  ms.date: 03/25/2024
   title: "Microsoft Bookings Frequently Asked Questions"
   ms.author: kwekua
   author: kwekuako
@@ -30,9 +30,9 @@ sections:
           Is Bookings available for my subscription?
         answer: |
           Bookings is available with the following subscriptions: 
-          - Office 365: A3, A5, E1, E3, E5, F1, F3.
-          - Microsoft 365: A3, A5, E3, E5, F1, F3, Business Basic, Business Standard, Business Premium, Microsoft 365 operated by 21Vianet. 
-          Bookings isn't available as a standalone app. Outlook Web App or Outlook on the web must be enabled to use Bookings, as it stores data within Outlook.
+          - Office 365:A3, A5, E1, E3, E5, F1, F3, G1, G3, and G5.
+          - Microsoft 365: A3, A5, E1, E3, E5, F1, F3, Business Basic, Business Standard, Business Premium, Teams Essentials, Teams Premium. 
+          Bookings isn't available as a standalone app. Outlook Web App or Outlook on the web must be enabled to use Bookings.
           
           A Bookings license provides full functionality, including creating and managing calendars. Users can view and edit existing calendars, when those users are added as staff in an Administrator or Viewer role.
 
