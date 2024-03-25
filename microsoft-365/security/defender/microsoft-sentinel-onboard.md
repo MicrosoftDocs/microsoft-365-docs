@@ -23,12 +23,12 @@ search.appverid:
   - MOE150
   - MET150
 appliesto: Microsoft Defender XDR and Microsoft Sentinel in the Microsoft Defender portal
-ms.date: 03/19/2024
+ms.date: 03/25/2024
 ---
 
 # Connect Microsoft Sentinel to Microsoft Defender XDR (preview)
 
-Combine the power of Microsoft Sentinel with Microsoft Defender XDR into a single portal. When you onboard Microsoft Sentinel to the Microsoft Defender portal, you unify capabilities like incident management and advanced hunting. Reduce tool switching and build a more context-focused investigation that expedites incident response and stops breaches faster. For more information, see:
+Microsoft Sentinel is available as part of the public preview for the unified security operations platform in the Microsoft Defender portal. Combine the power of Microsoft Sentinel with Microsoft Defender XDR into a single portal. When you onboard Microsoft Sentinel to the Microsoft Defender portal, you unify capabilities like incident management and advanced hunting. Reduce tool switching and build a more context-focused investigation that expedites incident response and stops breaches faster. For more information, see:
 
 - [Microsoft Sentinel in the Microsoft Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2263690)
 - [Unified security operations platform with Microsoft Sentinel and Defender XDR](https://aka.ms/unified-soc-announcement)
@@ -127,5 +127,4 @@ If you want to connect to a different workspace, from the **Workspaces** page, s
 - [Microsoft Sentinel in the Microsoft Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2263690)
 - [Advanced hunting in the Microsoft Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2264410)
 - [Automatic attack disruption in Microsoft Defender XDR](automatic-attack-disruption.md)
-- [Optimize your security operations with Microsoft Defender XDR](https://go.microsoft.com/fwlink/p/?linkid=2264237)
 - [Investigate incidents in Microsoft Defender XDR](investigate-incidents.md)
