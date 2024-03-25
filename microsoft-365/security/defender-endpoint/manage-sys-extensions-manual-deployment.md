@@ -111,7 +111,7 @@ If you run systemextensionsctl list, the following screen appears:
 1. On the **Security & Privacy** screen, select the **Privacy** tab.
 1. Select **Full Disk Access** from the left navigation pane, and then click the **Lock** icon.
 
-   :::image type="content" source="images/full-disk-access-and-lock-icon.png" alt-text="The Full Disk Access option in the menu and the Lock icon." lightbox="images/full-disk-access-and-lock-icon.png":::
+   :::image type="content" source="media/full-disk-access-and-lock-icon.png" alt-text="The Full Disk Access option in the menu and the Lock icon." lightbox="media/full-disk-access-and-lock-icon.png":::
 
 1. Confirm that the Microsoft Defender extension has full disk access; if not, check the **Microsoft Defender** checkbox.
  

@@ -347,7 +347,7 @@ All you need to do to have updates is to download an updated schema, edit existi
 
     :::image type="content" source="media/0adb21c13206861ba9b30a879ade93d3.png" alt-text="The configuration setting upload." lightbox="media/0adb21c13206861ba9b30a879ade93d3.png":::
 
-    :::image type="content" source="images/f624de59b3cc86e3e2d32ae5de093e02.png" alt-text="The prompt to upload the image related to the configuration settings." lightbox="images/f624de59b3cc86e3e2d32ae5de093e02.png":::
+    :::image type="content" source="media/f624de59b3cc86e3e2d32ae5de093e02.png" alt-text="The prompt to upload the image related to the configuration settings." lightbox="media/f624de59b3cc86e3e2d32ae5de093e02.png":::
 
     > [!NOTE]
     > If you happen to upload the Intune file, you'll get the following error:
@@ -733,7 +733,7 @@ Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint 
 
 2. Rename it to `wdav_MDM_Contoso_200329.pkg`.
 
-   :::image type="content" source="images/fb2220fed3a530f4b3ef36f600da0c27.png" alt-text="The file explorer1 wdavmdm package." lightbox="images/fb2220fed3a530f4b3ef36f600da0c27.png":::
+   :::image type="content" source="media/fb2220fed3a530f4b3ef36f600da0c27.png" alt-text="The file explorer1 wdavmdm package." lightbox="media/fb2220fed3a530f4b3ef36f600da0c27.png":::
 
 3. Open the Jamf Pro dashboard.
 
@@ -778,7 +778,7 @@ Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint 
 
 9. Navigate to the **Policies** page.
 
-   :::image type="content" source="images/f878f8efa5ebc92d069f4b8f79f62c7f.png" alt-text="The configuration settings policies." lightbox="images/f878f8efa5ebc92d069f4b8f79f62c7f.png":::
+   :::image type="content" source="media/f878f8efa5ebc92d069f4b8f79f62c7f.png" alt-text="The configuration settings policies." lightbox="media/f878f8efa5ebc92d069f4b8f79f62c7f.png":::
 
 10. Select **+ New** to create a new policy.
 
@@ -821,7 +821,7 @@ Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint 
 
     Select **Profile Name** as a criterion, and use the name of a previously created configuration profile as Value:
 
-    :::image type="content" source="images/ffae2332be230870f865585c84733225.png" alt-text="Creating a smart group." lightbox="images/ffae2332be230870f865585c84733225.png":::
+    :::image type="content" source="media/ffae2332be230870f865585c84733225.png" alt-text="Creating a smart group." lightbox="media/ffae2332be230870f865585c84733225.png":::
 
     Click **Save**. Return back to the window where you configure a package policy.
 

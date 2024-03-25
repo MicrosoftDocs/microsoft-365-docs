@@ -73,7 +73,7 @@ You need to have access to:
    - Credential Type: Select **Secret**.
    - Secret: Sign-in to https://portal.azure.com and navigate to **Microsoft Entra ID > App Registrations** and get the Tenant ID value.
 
-    :::image type="content" source="images/http-conditions.png" alt-text="The HTTP conditions" lightbox="images/http-conditions.png":::
+    :::image type="content" source="media/http-conditions.png" alt-text="The HTTP conditions" lightbox="media/http-conditions.png":::
 
 6. Add a new step by selecting **Add new action** then search for **Data Operations** and select
 **Parse JSON**.
@@ -175,7 +175,7 @@ You need to have access to:
     - If yes, no notification is triggered
     - If no, will register the newly onboarded devices in the SharePoint list and a notification is sent to the Defender for Endpoint admin
 
-    :::image type="content" source="images/flow-apply.png" alt-text="The application of the flow to each element" lightbox="images/flow-apply.png":::
+    :::image type="content" source="media/flow-apply.png" alt-text="The application of the flow to each element" lightbox="media/flow-apply.png":::
 
     :::image type="content" source="media/apply-to-each.png" alt-text="The application of the flow to the Get items element" lightbox="media/apply-to-each.png":::
 
