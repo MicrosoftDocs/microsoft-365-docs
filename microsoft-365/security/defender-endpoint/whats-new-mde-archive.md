@@ -6,7 +6,7 @@ ms.service: defender-endpoint
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
-ms.date: 03/21/2024
+ms.date: 03/25/2024
 manager: deniseb
 audience: ITPro
 ms.collection: 
@@ -28,9 +28,8 @@ ms.topic: conceptual
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink) and (https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink).
 
-The following features are in preview or generally available (GA) in the latest release of Microsoft Defender for Endpoint.
+The following features were in preview or generally available (GA) in Microsoft Defender for Endpoint prior to the calendar year 2023.
 
 For more information on preview features, see [Preview features](preview.md).
 
@@ -55,9 +54,13 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 ## December 2022
 
 - Microsoft Defender for Endpoint Device control removable storage access control updates:
+
     1. Microsoft Intune support for removable storage access control is now available. See [Deploy and manage device control with Intune](device-control-deploy-manage-intune.md).
+
     2. The new default enforcement policy of removable storage access control is designed for all device control features. Printer Protection is now available for this policy. If you create a Default Deny policy, printers will be blocked in your organization.
+
         - Intune: *./Vendor/MSFT/Defender/Configuration/DefaultEnforcement* <br> See [Deploy and manage device control using Intune](device-control-deploy-manage-intune.md)
+
         - Group policy: *Computer Configuration > Administrative Templates > Windows Components > Microsoft Defender Antivirus > Features > Device Control > Select Device Control Default Enforcement*<br> See [Deploy and manage device control with Group Policy](device-control-deploy-manage-gpo.md)
 
 - Microsoft Defender for Endpoint Device control New Printer Protection solution to manage printer is now available. For more information, see [Device control policies](device-control-policies.md).
@@ -73,9 +76,13 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 ## September 2022
 
 - [Attack surface reduction rules report now available in the Microsoft Defender portal](attack-surface-reduction-rules-report.md). <br/>The attack surface reduction rules report is now available in the Microsoft Defender portal. This ASR report provides information about the attack surface reduction rules that are applied to devices in your organization and helps you detect threats, block potential threats, and get visibility into ASR and device configuration.
+
 - [Built-in protection](built-in-protection.md) (preview) is rolling out. Built-in protection is a set of default settings, such as tamper protection turned on, to help protect devices from ransomware and other threats.
+
 - [Device health reporting is now generally available](device-health-reports.md). <br/>The device health report provides information about the health and security of your endpoints. The report includes trending information showing the sensor health state, antivirus status, OS platforms, Windows 10 versions, and Microsoft Defender Antivirus update versions.
+
 - [Device health reporting is now available for US Government customers using Defender for Endpoint](device-health-reports.md). <br/>Device health reporting is now available for GCC, GCC High, and DoD customers.
+
 - [Troubleshooting mode](enable-troubleshooting-mode.md) is now available for more Windows operating systems, including Windows Server 2012 R2 and higher. For more information about the required updates, see [Troubleshooting mode](enable-troubleshooting-mode.md).
 
 ## August 2022
@@ -118,18 +125,19 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 
 ## September 2021
 
-[Web content filtering](web-content-filtering.md) <br/>As part of web protection capabilities in Microsoft Defender for Endpoint, web content filtering enables your organization's security team to track and regulate access to websites based on their content categories. Categories include adult content, high bandwidth, legal liability, leisure, and uncategorized. Although many websites that fall into one or more of these categories might not be malicious, they could be problematic because of compliance regulations, bandwidth usage, or other concerns. [Learn more about web content filtering](web-content-filtering.md).
+- [Web content filtering](web-content-filtering.md) . As part of web protection capabilities in Microsoft Defender for Endpoint, web content filtering enables your organization's security team to track and regulate access to websites based on their content categories. Categories include adult content, high bandwidth, legal liability, leisure, and uncategorized. Although many websites that fall into one or more of these categories might not be malicious, they could be problematic because of compliance regulations, bandwidth usage, or other concerns. [Learn more about web content filtering](web-content-filtering.md).
 
 ## August 2021
 
-- (Preview) [Microsoft Defender for Endpoint Plan 1 ](defender-endpoint-plan-1.md) <br/>Defender for Endpoint Plan 1 (preview) is an endpoint protection solution that includes next-generation protection, attack surface reduction, centralized management and reporting, and APIs. Defender for Endpoint Plan 1 (preview) is a new offering for customers who:
-    - Want to try our endpoint protection capabilities
-    - Have Microsoft 365 E3, and
-    - Don't yet have Microsoft 365 E5
+- [Microsoft Defender for Endpoint Plan 1 ](defender-endpoint-plan-1.md) (preview). Defender for Endpoint Plan 1 (preview) is an endpoint protection solution that includes next-generation protection, attack surface reduction, centralized management and reporting, and APIs. Defender for Endpoint Plan 1 (preview) is a new offering for customers who:
 
-For more information on Defender for Endpoint Plan 1 (preview), see [Microsoft Defender for Endpoint Plan 1 (preview)](defender-endpoint-plan-1.md). 
+   - Want to try our endpoint protection capabilities
+   - Have Microsoft 365 E3, and
+   - Don't yet have Microsoft 365 E5
 
-Existing [Defender for Endpoint](microsoft-defender-endpoint.md) capabilities will be known as Defender for Endpoint Plan 2.
+   For more information on Defender for Endpoint Plan 1 (preview), see [Microsoft Defender for Endpoint Plan 1 (preview)](defender-endpoint-plan-1.md). 
+
+   Existing [Defender for Endpoint](microsoft-defender-endpoint.md) capabilities will be known as Defender for Endpoint Plan 2.
 
 - (Preview) [Web Content Filtering](web-content-filtering.md)<br>  Web content filtering is part of web protection capabilities in Microsoft Defender for Endpoint. It enables your organization to track and regulate access to websites based on their content categories. Many of these websites, while not malicious, might be problematic because of compliance regulations, bandwidth usage, or other concerns.
 
@@ -148,7 +156,7 @@ Existing [Defender for Endpoint](microsoft-defender-endpoint.md) capabilities wi
 
 - [Device group definitions](/microsoft-365/security/defender-endpoint/machine-groups) can now include multiple values for each condition. You can set multiple tags, device names, and domains to the definition of a single device group.
 
-- [Mobile Application management support](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> This enhancement enables Microsoft Defender for Endpoint protect an organization’s data within a managed application when Intune is being used to manage mobile applications. For more information about mobile application management, see [this documentation](/mem/intune/apps/mam-faq).
+- [Mobile Application management support](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> This enhancement enables Microsoft Defender for Endpoint protect an organization's data within a managed application when Intune is being used to manage mobile applications. For more information about mobile application management, see [this documentation](/mem/intune/apps/mam-faq).
 
 - [Microsoft Tunnel VPN integration](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> Microsoft Tunnel VPN capabilities are now integrated with Microsoft Defender for Endpoint app for Android. This unification enables organizations to offer a simplified end-user experience with one security app – offering both mobile threat defense and the ability to access on-prem resources from their mobile device – while security and IT teams are able to maintain the same admin experiences they are familiar with.
 
@@ -156,11 +164,11 @@ Existing [Defender for Endpoint](microsoft-defender-endpoint.md) capabilities wi
 
 ## March 2021
 
-[Manage tamper protection using the Microsoft Defender Security Center](manage-tamper-protection-microsoft-365-defender.md#manage-tamper-protection-for-your-organization-using-microsoft-defender-portal) <br> You can manage tamper protection settings on Windows 10, Windows Server 2016, Windows Server 2019, and Windows Server 2022 by using a method called *tenant attach*.
+ [Manage tamper protection using the Microsoft Defender Security Center](manage-tamper-protection-microsoft-365-defender.md#manage-tamper-protection-for-your-organization-using-microsoft-defender-portal) <br> You can manage tamper protection settings on Windows 10, Windows Server 2016, Windows Server 2019, and Windows Server 2022 by using a method called *tenant attach*.
 
 ## January 2021
 
-[Windows Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop/) <br> Microsoft Defender for Endpoint now adds support for Windows Virtual Desktop.
+- [Windows Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop/) <br> Microsoft Defender for Endpoint now adds support for Windows Virtual Desktop.
 
 ## December 2020
 
@@ -169,6 +177,7 @@ Existing [Defender for Endpoint](microsoft-defender-endpoint.md) capabilities wi
 ## September 2020
 
 - [Microsoft Defender for Endpoint on Android](microsoft-defender-endpoint-android.md) <br> Microsoft Defender for Endpoint now adds support for Android. In addition to the provisions for you to install, configure, and use Microsoft Defender for Endpoint for Android (introducted in the previous sprint in August 2020), the provision to "update" Microsoft Defender for Endpoint for Android has been introduced in this sprint.
+
 - [Threat and vulnerability management macOS support](tvm-supported-os.md)<br> Threat and vulnerability management for macOS is now in public preview, and will continuously detect vulnerabilities on your macOS devices to help you prioritize remediation by focusing on risk. For more information, see [Microsoft Tech Community blog post](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-for-endpoint-adds-depth-and-breadth-to-threat/ba-p/1695824).
 
 ## August 2020
@@ -177,7 +186,7 @@ Existing [Defender for Endpoint](microsoft-defender-endpoint.md) capabilities wi
 
 ## July 2020
 
-[Create indicators for certificates](manage-indicators.md) <br> Create indicators to allow or block certificates.
+- [Create indicators for certificates](manage-indicators.md) <br> Create indicators to allow or block certificates.
 
 ## June 2020
 
@@ -234,7 +243,6 @@ Existing [Defender for Endpoint](microsoft-defender-endpoint.md) capabilities wi
 
 - [Indicators](api/ti-indicator.md) <BR> APIs for indicators are now generally available.
 
-
 - [Interoperability](partner-applications.md) <BR> Microsoft Defender for Endpoint supports third-party applications to help enhance the detection, investigation, and threat intelligence capabilities of the platform.
 
 ## April 2019
@@ -246,6 +254,7 @@ Existing [Defender for Endpoint](microsoft-defender-endpoint.md) capabilities wi
 ## February 2019
 
 - [Incidents](view-incidents-queue.md) <BR> Incident is a new entity in Microsoft Defender for Endpoint that brings together all relevant alerts and related entities to narrate the broader-attack story, giving analysts better perspective on the purview of complex threats.
+
 - [Onboard previous versions of Windows](onboard-downlevel.md)<BR> Onboard supported versions of Windows devices so that they can send sensor data to the Microsoft Defender for Endpoint sensor.
 
 ## October 2018
@@ -268,13 +277,17 @@ Existing [Defender for Endpoint](microsoft-defender-endpoint.md) capabilities wi
 Threat Analytics is a set of interactive reports published by the Microsoft Defender for Endpoint research team as soon as emerging threats and outbreaks are identified. The reports help security operations teams assess impact on their environment and provide recommended actions to contain the impact, increase organizational resilience, and prevent specific threats.
 
 - There are two new attack surface reduction rules in Windows 10 version 1809:
+
   - Block Adobe Reader from creating child processes
+
   - Block Office communication application from creating child processes
 
 - [Microsoft Defender Antivirus](microsoft-defender-antivirus-windows.md)
 
 - Antimalware Scan Interface (AMSI) was extended to cover Office VBA macros as well. [Office VBA + AMSI: Parting the veil on malicious macros](https://cloudblogs.microsoft.com/microsoftsecure/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/).
+
     - Microsoft Defender Antivirus, new in Windows 10 version 1809, can now [run within a sandbox](https://www.microsoft.com/security/blog/2018/10/26/windows-defender-antivirus-can-now-run-in-a-sandbox) (preview), increasing its security.
+
     - [Configure CPU priority settings](configure-advanced-scan-types-microsoft-defender-antivirus.md) for Microsoft Defender Antivirus scans.
 
 ## March 2018
@@ -282,10 +295,15 @@ Threat Analytics is a set of interactive reports published by the Microsoft Defe
 - [Advanced Hunting](../defender/advanced-hunting-query-language.md)<BR>Query data using advanced hunting in Microsoft Defender for Endpoint.
 
 - [Attack surface reduction rules](attack-surface-reduction.md)<BR>The newly introduced attack surface reduction rules are: 
+
   - Use advanced protection against ransomware
+
   - Block credential stealing from the Windows local security authority subsystem (lsass.exe)
+
   - Block process creations originating from PSExec and WMI commands
+
   - Block untrusted and unsigned processes that run from USB
+
   - Block executable content from email client and webmail
 
 - [Automated investigation and remediation](automated-investigations.md)<BR> Use Automated investigations to investigate and remediate threats.
@@ -305,4 +323,4 @@ Threat Analytics is a set of interactive reports published by the Microsoft Defe
 
 - [Microsoft Defender Antivirus](microsoft-defender-antivirus-windows.md)<BR>Microsoft Defender Antivirus now shares detection status between M365 services and interoperates with Microsoft Defender for Endpoint. For more information, see [Use next-gen technologies in Microsoft Defender Antivirus through cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md).
 
-Block at first sight can now block non-portable executable files (such as JS, VBS, or macros) and executable files. For more information, see [Enable block at first sight](configure-block-at-first-sight-microsoft-defender-antivirus.md).
+- Block at first sight can now block non-portable executable files (such as JS, VBS, or macros) and executable files. For more information, see [Enable block at first sight](configure-block-at-first-sight-microsoft-defender-antivirus.md).
