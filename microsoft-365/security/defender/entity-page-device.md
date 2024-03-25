@@ -108,9 +108,9 @@ The main part of the **Overview** tab shows several dashboard-type display cards
 
 ## *Incidents and alerts* tab
 
-The **Incidents and alerts** tab contains a list of incidents that contain alerts that have been raised on the device, from both Microsoft Defender for Identity and Microsoft Defender for Endpoint, and, if onboarded, from Microsoft Sentinel. This list is a filtered version of the [incidents queue](incidents-overview.md), and shows a short description of the incident or alert, its severity (high, medium, low, informational), its status in the queue (new, in progress, resolved), its classification (not set, false alert, true alert), investigation state, category, who is assigned to address it, and last activity observed.
+The **Incidents and alerts** tab contains a list of incidents that contain alerts that have been raised on the device, from any of a number of Microsoft Defender detection sources, including, if onboarded, Microsoft Sentinel. This list is a filtered version of the [incidents queue](incidents-overview.md), and shows a short description of the incident or alert, its severity (high, medium, low, informational), its status in the queue (new, in progress, resolved), its classification (not set, false alert, true alert), investigation state, category, who is assigned to address it, and last activity observed.
 
-You can customize the number of items displayed and which columns are displayed for each item. The default behavior is to list 30 items per page. You can also filter the alerts by severity, status, or any other column in the display.
+You can customize which columns are displayed for each item. You can also filter the alerts by severity, status, or any other column in the display.
 
 The *impacted entities* column refers to all the device and user entities referenced in the incident or alert.
 
