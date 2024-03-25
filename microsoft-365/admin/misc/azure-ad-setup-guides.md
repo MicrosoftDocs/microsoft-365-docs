@@ -45,7 +45,7 @@ This catalog contains some basic security features you can use to ensure your us
 
 Using features in this catalog requires either Microsoft Entra ID Governance or Microsoft Entra ID P2 license. To find the right license for your requirements, see [Compare generally available features of Microsoft Entra ID](https://www.microsoft.com/security/business/identity-access-management/azure-ad-pricing).
 
-[Open the Identity security for Teams catalog](https://portal.office.com/AdminPortal/home?Q=azuredocs#/teamsidentity)
+[Open the Identity security for Teams catalog.](https://portal.office.com/AdminPortal/home?Q=azuredocs#/teamsidentity)
 
 ## Identity Governance
 
@@ -71,7 +71,7 @@ Respond faster to identity changes in your HR app and eliminate manual provision
 
 Easily manage your users' lifecycle in Microsoft Entra ID by creating custom workflows to automate repetitive onboarding and offboarding tasks, eliminating the need for manual processes. Lifecycle workflows automatically execute configured tasks when users join or leave your org and provide insights for easy troubleshooting.
 
-<a href="https://go.microsoft.com/fwlink/p/?linkid=386330" target="_blank">Open the Identity Governance setup guide</a>
+<a href="https://go.microsoft.com/fwlink/p/?linkid=386330" target="_blank">Open the Identity Governance setup guide.</a>
 
 > [!NOTE]
 > A Microsoft Entra ID Governance or Microsoft Entra ID P2 license is required to utilize the security features in this catalog.
@@ -85,7 +85,7 @@ The Microsoft Entra setup guide will help you set up the most common Microsoft E
 The setup guides contain a checklist of the tasks you need to complete, and you can track your progress as you go through the guides. The guides will also link to the other setup guides when necessary.
 
 <a href="https://go.microsoft.com/fwlink/p/?linkid=2134390
-" target="_blank">Open the Microsoft Entra setup guide</a>.
+" target="_blank">Open the Microsoft Entra setup guide.</a>
 
 ## Add or sync users to Microsoft Entra ID  
 
@@ -95,7 +95,7 @@ This guide helps you set up user accounts setup in Microsoft Entra ID and Micros
 
 Using Microsoft Entra ID Sync tools is free and included with all Microsoft 365 subscriptions.
 
-<a href="https://go.microsoft.com/fwlink/p/?linkid=2264742" target="_blank">Open the Add or Sync users setup guide</a>
+<a href="https://go.microsoft.com/fwlink/p/?linkid=2264742" target="_blank">Open the Add or Sync users setup guide.</a>
 
 ## Secure your cloud apps with Single Sign On (SSO)
 
@@ -105,7 +105,7 @@ This guide is designed to help you add cloud apps to Microsoft 365. In our guide
 
 Every paid subscription to Microsoft 365 comes with a free subscription to Microsoft Entra ID. You can use Microsoft Entra ID to manage your apps and create and manage user and group accounts.
 
-[Open the Add a cloud app to Microsoft 365 setup guide](https://portal.office.com/AdminPortal/home?Q=azuredocs#/azureadappintegration)
+<a href="https://go.microsoft.com/fwlink/p/?linkid=2204974" target="_blank">Open the Add a cloud app to Microsoft 365 setup guide.</a>
 
 ## Azure Self-Service password reset (SSPR) guide
 
@@ -125,9 +125,9 @@ SSPR requires one of the following licenses:
 
 - Enterprise Mobility and Security E3 or E5
 
-<a href="https://go.microsoft.com/fwlink/p/?linkid=2264852" target="_blank">Open the self-service password reset setup guide</a>
+<a href="https://go.microsoft.com/fwlink/p/?linkid=2264852" target="_blank">Open the self-service password reset setup guide.</a>
 
-## Configure multi-factor authentication (MFA)
+## Configure multifactor authentication (MFA)
 
 For customers with Microsoft Entra ID Governance, Microsoft Entra ID P1, or P2, we provide customizable Conditional Access templates that include the most common and least intrusive security standards. When Microsoft Entra ID licensing isn’t available, we provide a one-click solution to enable Security Defaults, a baseline protection policy for all users, or we provide steps to enable legacy (per-user) MFA.
 
@@ -135,7 +135,7 @@ For customers with Microsoft Entra ID Governance, Microsoft Entra ID P1, or P2, 
 
 Conditional Access requires Microsoft Entra ID Governance or a Microsoft Entra ID P1 or P2 license. Security defaults and per-user MFA are included with all Microsoft 365 subscriptions.
 
-<a href="https://go.microsoft.com/fwlink/p/?linkid=2264944" target=")_blank">Open the multi-factor authentication (MFA) guide</a>
+<a href="https://go.microsoft.com/fwlink/p/?linkid=2264944" target=")_blank">Open the multifactor authentication (MFA) guide.</a>
 
 ## Plan your passwordless setup guide
 
@@ -155,7 +155,7 @@ Use the passwordless deployment guide to discover the best authentication method
 
 Every paid subscription to Microsoft 365 comes with a free subscription to Microsoft Entra ID. You can use Microsoft Entra ID to manage your apps and create and manage user and group accounts.
 
-<a href="https://go.microsoft.com/fwlink/p/?linkid=2204974" target="_blank">Open the passwordless setup guide</a>
+<a href="https://go.microsoft.com/fwlink/p/?linkid=2204974" target="_blank">Open the passwordless setup guide.</a>
 
 <a name='migrate-from-adfs-to-azure-ad'></a>
 
@@ -164,4 +164,4 @@ Every paid subscription to Microsoft 365 comes with a free subscription to Micro
 We offer custom guidance for migrating from ADFS to Microsoft Entra ID. Answer a few questions about your Active Directory Federation Services (AD FS) infrastructure and then implement either pass-through authentication (PTA) or password hash sync (PHS) to give users a streamlined experience while accessing your org's apps.
 
 <a href="https://go.microsoft.com/fwlink/p/?linkid=2264847
-" target="_blank">Open the Migrate from ADFS to Microsoft Entra ID guide</a>
+" target="_blank">Open the Migrate from ADFS to Microsoft Entra ID guide.</a>

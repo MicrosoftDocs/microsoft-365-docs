@@ -54,9 +54,9 @@ You can add users in the wizard, but you can also [add users later](../add-users
 
 2. Choose **Go to setup** to start the wizard.
 
-3. On the first page you will get the option to install Microsoft 365 apps on your computer. You can also do this later.
+3. On the first page, you'll get the option to install Microsoft 365 apps on your computer. You can also do this later.
 
-3. On the next page you can add users and they will automatically get assigned the Microsoft 365 apps for business license. After you've added the users, you'll also get an option to share credentials with the new users you added. You can choose to print them out, email them, or download them.
+3. On the next page, you can add users and they'll automatically get assigned the Microsoft 365 apps for business license. After you've added the users, you'll also get an option to share credentials with the new users you added. You can choose to print them out, email them, or download them.
 
  When the sign-up process is complete, you'll be directed to the admin center, where you can add users, and assign licenses. 
 
@@ -84,7 +84,7 @@ Need more detailed steps or want to install the 64-bit version of Microsoft 365?
   
 ## Set up mobile
 
-Install Microsoft 365 on your mobile device, and set up Outlook to work with your new Microsoft mailbox. Everyone on your team will need to do this step. Each person can install the Microsoft 365 mobile apps on up to 5 phones and 5 tablets.
+Install Microsoft 365 on your mobile device, and set up Outlook to work with your new Microsoft mailbox. Everyone on your team will need to do this step. Each person can install the Microsoft 365 mobile apps on up to five phones and 5 tablets.
   
 Get the steps for your device: [Android](https://support.microsoft.com/office/6ef2ebf2-fc2d-474a-be4a-5a801365c87f) | [iOS](https://support.microsoft.com/office/0402b37e-49c4-4419-a030-f34c2013041f) | [Windows Phone](https://support.microsoft.com/office/9bccc8b8-a321-4d0d-a45e-6e06a3438e43)
   
