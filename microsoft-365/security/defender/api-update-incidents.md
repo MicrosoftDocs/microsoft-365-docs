@@ -84,8 +84,8 @@ Property|Type|Description
 ---|---|---
 status|Enum|Specifies the current status of the incident. Possible values are: `Active`, `Resolved`, `InProgress`, and `Redirected`.
 assignedTo|string|Owner of the incident.
-classification|Enum|Specification of the incident. Possible values are: `TruePositive`, `Informational, expected activity`, and `FalsePositive`.
-determination|Enum|Specifies the determination of the incident. <p>Possible determination values for each classification are: <br><li> <b>True positive</b>: `Multistage attack` (MultiStagedAttack), `Malicious user activity` (MaliciousUserActivity), `Compromised account` (CompromisedUser) – consider changing the enum name in public api accordingly, `Malware` (Malware), `Phishing` (Phishing), `Unwanted software` (UnwantedSoftware), and `Other` (Other). <li> <b>Informational, expected activity:</b> `Security test` (SecurityTesting), `Line-of-business application` (LineOfBusinessApplication), `Confirmed activity` (ConfirmedUserActivity) - consider changing the enum name in public api accordingly, and `Other` (Other). <li>  <b>False positive:</b> `Not malicious` (Clean) - consider changing the enum name in public api accordingly, `Not enough data to validate` (InsufficientData), and `Other` (Other).
+classification|Enum|Specification of the incident. Possible values are: `TruePositive` (True positive), `InformationalExpectedActivity` (Informational, expected activity), and `FalsePositive` (False Positive).
+determination|Enum|Specifies the determination of the incident. <p>Possible determination values for each classification are: <br><li> <b>True positive</b>: `Multistage attack` (MultiStagedAttack), `Malicious user activity` (MaliciousUserActivity), `Compromised account` (CompromisedUser) – consider changing the enum name in public api accordingly, `Malware` (Malware), `Phishing` (Phishing), `UnwantedSoftware` (Unwanted software), and `Other` (Other). <li> <b>Informational, expected activity:</b> `SecurityTesting` (Security test), `LineOfBusinessApplication` (Line-of-business application), `ConfirmedActivity` (Confirmed activity) - consider changing the enum name in public api accordingly, and `Other` (Other). <li>  <b>False positive:</b> `Clean` (Not malicious) - consider changing the enum name in public api accordingly, `NoEnoughDataToValidate` (Not enough data to validate), and `Other` (Other).
 tags|string list|List of Incident tags.
 comment|string|Comment to be added to the incident.
 
@@ -107,7 +107,7 @@ Here's an example of the request.
  PATCH https://api.security.microsoft.com/api/incidents/{id}
 ```
 
-### Response example
+### Request example
 
 ```json
 {
