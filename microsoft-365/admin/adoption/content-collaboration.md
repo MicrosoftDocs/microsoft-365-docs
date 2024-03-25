@@ -145,7 +145,7 @@ Understand how many users are attaching physical files in email rather than link
 3. **Visualization:** Represents the extent to which people who have access to OneDrive or SharePoint are sharing files internally or externally:
       - **Externally:** The blue (colored) portion of the bar and the fraction (numerator/denominator) on the bar represent the percentage of people who have access to OneDrive or SharePoint and are sharing files externally.
         - Numerator: The number of people who have shared files externally with in the last 28 days
-        - Denominator: The total number of people who have had access to OneDrive or SharePoint for at least 1 of the last 28 days.
+        - Denominator: The number of people who have had access to Exchange and OneDrive, SharePoint, or both, and sent at least one attachment within the last 28 days.
       - **Internally only:** The blue (colored) portion of the bar and the fraction (numerator/denominator) on the bar represent the percentage of people who have access to OneDrive or SharePoint and are sharing files internally only.
         - Numerator: The number of people who have shared files internally only within the last 28 days
         - Denominator: The number of people who have had access to Exchange and OneDrive, SharePoint, or both, and sent at least one attachment within the last 28 days.
