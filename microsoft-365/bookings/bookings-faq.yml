@@ -263,17 +263,17 @@ sections:
       - question: |
           What options are available for embedding a consent form or disclosure for those booking an appointment?
         answer: |
-          We recommend enabling the **Customer data usage consent** check box in the Booking page and customizing the wording to properly convey your organization's disclosure or consent requirements. Another option is to add a custom field to the service that includes a link to the consent form. Then require customers to confirm that they've completed the form before they can proceed with making an appointment. You can also add the consent form URL as another notes in confirmation and reminder emails.
+          We recommend enabling the **Customer data usage consent** check box in the Booking page and customizing the wording to properly convey your organization's disclosure or consent requirements. Another option is to add a custom field to the service that includes a link to the consent form. Then require customers to confirm the completed form before they can proceed with making an appointment. You can also add the consent form URL as another notes in confirmation and reminder emails.
 
       - question: |
           What changes can be made to the staff selection capability on the Self-service booking page?
         answer: |
-          The ability for customers to select specific staff members when booking can be removed completely by de-selecting the **Allow customers to choose a specific person for the booking** option from the Booking page or the Services section. Bookings will automatically assign an available staff member at random to the booking, based on staff availability.
+          The ability for customers to select specific staff members when booking can be removed completely by de-selecting the **Allow customers to choose a specific person for the booking** option from the Booking page or the Services section. Bookings automatically assigns an available staff member at random to the booking, based on staff availability.
 
       - question: |
           Can Bookings support many concurrent booking requests and Self-service page visits?
         answer: |
-          Booking can support a large quantity of visitors and bookings at one time. If the page experiences a large volume of traffic, users will receive a "server busy" error. Appointment availability is updated when the page is loaded, and when a booking is made. If multiple people are trying to book the same appointment at one time, Bookings will only let one person book that time and give a notification message to the other potential customers, and prompt them to find a different time.
+          Booking can support a large quantity of visitors and bookings at one time. If the page experiences a large volume of traffic, users will receive a "server busy" error. Appointment availability is updated when the page is loaded, and when a booking is made. If multiple people are trying to book the same appointment at one time, Bookings will only let one person book that time. The other potential customers will get a notification message to find a different time.
 
   - name: Privacy
     questions:
@@ -307,7 +307,7 @@ sections:
       - question: |
           We would like for the customer to accept our terms and conditions during the booking process. Is that possible?
         answer: |
-          This feature already exists for GDPR compliance. The Booking page has a field for custom consent, right under the publishing details section. Just check that box and write your own custom consent message and it will show up as a required field on the Self-service page. The date and time that the customer grants consent will be recorded.
+          This feature already exists for GDPR compliance. The Booking page has a field for custom consent, right under the publishing details section. Just check that box and write your own custom consent message and it shows up as a required field on the Self-service page. The date and time that the customer grants consent gets recorded.
           
           This section doesn't support rich text, but think links can be added under the business information section and would show up just below the consent check box.
           
@@ -323,7 +323,7 @@ sections:
       - question: |
           If a user schedules an appointment for a service consisting of an online meeting, how do they receive the Microsoft Teams link to the meeting if they leave the optional email address field empty?
         answer: |
-          If the system doesn't have the customer's email information, there's no way for the confirmation mail to be delivered to the customer, and thus they won't receive a Teams link. The solution is to set the email address as a required field, which you can do on the Services tab of Bookings. Remember that whenever you create a new service in Bookings, the customer email field is set as a required field by default.
+          If the system doesn't have the customer's email information, there's no way for the confirmation mail to be delivered to the customer. You can set the email address as a required field, which you can do on the Services tab of Bookings. Whenever you create a new service in Bookings, the customer email field is set as a required field by default.
 
       - question: |
           How is staff assigned to appointments when "Anyone" is selected, or when customers don't have the ability to choose a staff member for the appointment?
