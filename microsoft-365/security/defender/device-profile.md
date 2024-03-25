@@ -1,5 +1,5 @@
 ---
-title: Device profile page in Microsoft 365 security portal
+title: Device profile in Microsoft 365 security portal
 description: View risk and exposure levels for a device in your organization. Analyze past and present threats, and protect the device with the latest updates.
 keywords: security, malware, Microsoft 365, M365, Microsoft Defender XDR, security center, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Identity, device page, device profile,  machine page, machine profile
 ms.service: defender-xdr
