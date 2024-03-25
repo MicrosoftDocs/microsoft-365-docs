@@ -51,7 +51,7 @@ Logo|Partner name|Description
 ![Logo for Microsoft Sentinel.](images/sentinel-logo.png)|[AzureSentinel](https://go.microsoft.com/fwlink/?linkid=2135705)|Stream alerts from Microsoft Defender for Endpoint into Microsoft Sentinel
 ![Logo for Cymulate.](media/cymulate-logo.png)|[Cymulate](https://go.microsoft.com/fwlink/?linkid=2135574)|Correlate Defender for Endpoint findings with simulated attacks to validate accurate detection and effective response actions
 ![Logo for Elastic security.](media/elastic-security-logo.png)|[Elastic Security](https://go.microsoft.com/fwlink/?linkid=2139303)|Elastic Security is a free and open solution for preventing, detecting, and responding to threats
-![Logo for IBM QRadar.](images/ibm-qradar-logo.png)|[IBM QRadar](https://go.microsoft.com/fwlink/?linkid=2113903)|Configure IBM QRadar to collect detections from Defender for Endpoint
+![Logo for IBM QRadar.](media/ibm-qradar-logo.png)|[IBM QRadar](https://go.microsoft.com/fwlink/?linkid=2113903)|Configure IBM QRadar to collect detections from Defender for Endpoint
 ![Logo for Micro Focus ArcSight.](media/arcsight-logo.png)|[Micro Focus ArcSight](https://go.microsoft.com/fwlink/?linkid=2113548)|Use Micro Focus ArcSight to pull Defender for Endpoint detections
 ![Logo for RSA NetWitness.](images/rsa-netwitness-logo.png)|[RSA NetWitness](https://go.microsoft.com/fwlink/?linkid=2118566)|Stream Defender for Endpoint Alerts to RSA NetWitness using Microsoft Graph Security API
 ![Logo for SafeBreach.](images/safebreach-logo.png)|[SafeBreach](https://go.microsoft.com/fwlink/?linkid=2114114)|Gain visibility into Defender for Endpoint security events that are automatically correlated with SafeBreach simulations
@@ -63,7 +63,7 @@ Logo|Partner name|Description
 
 Logo|Partner name|Description
 :---|:---|:---
-![Logo for Fortinet.](images/fortinet-logo.jpg)|[Fortinet FortiSOAR](https://www.fortinet.com/products/fortisoar)|Fortinet FortiSOAR is a holistic Security Orchestration, Automation and Response (SOAR) workbench, designed for SOC teams to efficiently respond to the ever-increasing influx of alerts, repetitive manual processes, and shortage of resources. It pulls together all of organization's tools, helps unify operations and reduces alert fatigue, context switching, and the mean time to respond to incidents. 
+![Logo for Fortinet.](media/fortinet-logo.jpg)|[Fortinet FortiSOAR](https://www.fortinet.com/products/fortisoar)|Fortinet FortiSOAR is a holistic Security Orchestration, Automation and Response (SOAR) workbench, designed for SOC teams to efficiently respond to the ever-increasing influx of alerts, repetitive manual processes, and shortage of resources. It pulls together all of organization's tools, helps unify operations and reduces alert fatigue, context switching, and the mean time to respond to incidents. 
 ![Logo for Delta Risk ActiveEye.](media/delta-risk-activeeye-logo.png)|[Delta Risk ActiveEye](https://go.microsoft.com/fwlink/?linkid=2127468)|Delta Risk, a leading provider of SOC-as-a-Service and security services, integrate Defender for Endpoint with its cloud-native SOAR platform, ActiveEye.
 ![Logo for Demisto, a Palo Alto Networks Company.](media/demisto-logo.png)|[Demisto, a Palo Alto Networks Company](https://go.microsoft.com/fwlink/?linkid=2108414)|Demisto integrates with Defender for Endpoint to enable security teams to orchestrate and automate endpoint security monitoring, enrichment, and response
 ![Logo for Microsoft Flow & Azure Functions.](images/ms-flow-logo.png)|[Microsoft Flow & Azure Functions](https://go.microsoft.com/fwlink/?linkid=2114300)|Use the Defender for Endpoint connectors for Azure Logic Apps & Microsoft Flow to automating security procedures
@@ -86,7 +86,7 @@ Logo|Partner name|Description
 ![Logo for Aruba ClearPass Policy Manager.](media/aruba-logo.png)|[Aruba ClearPass Policy Manager](https://go.microsoft.com/fwlink/?linkid=2127544)|Ensure Defender for Endpoint is installed and updated on each endpoint before allowing access to the network
 ![Logo for Blue Hexagon for Network.](media/bluehexagon-logo.png)|[Blue Hexagon for Network](/training/modules/explore-malware-threat-protection/)|Blue Hexagon has built the industry's first real-time deep learning platform for network threat protection
 ![Logo for CyberMDX.](media/cybermdx-logo.png)|[CyberMDX](https://go.microsoft.com/fwlink/?linkid=2135620)|Cyber MDX integrates comprehensive healthcare assets visibility, threat prevention and repose into your Defender for Endpoint environment
-![Logo for HYAS Protect.](images/hyas-logo.png)|[HYAS Protect](https://go.microsoft.com/fwlink/?linkid=2156763)|HYAS Protect utilizes authoritative knowledge of attacker infrastructure to proactively protect Microsoft Defender for Endpoint endpoints from cyberattacks
+![Logo for HYAS Protect.](media/hyas-logo.png)|[HYAS Protect](https://go.microsoft.com/fwlink/?linkid=2156763)|HYAS Protect utilizes authoritative knowledge of attacker infrastructure to proactively protect Microsoft Defender for Endpoint endpoints from cyberattacks
 ![Logo for Vectra Network Detection and Response (NDR).](images/vectra-logo.png)|[Vectra Network Detection and Response (NDR)](https://go.microsoft.com/fwlink/?linkid=866934)|Vectra applies AI & security research to detect and respond to cyber-attacks in real time
 
 ### Cross platform

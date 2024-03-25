@@ -93,7 +93,7 @@ Already have a lab? Make sure to enable the new threat simulators and have activ
 
 3. (Optional) You can choose to install threat simulators in the lab.
 
-    :::image type="content" source="images/install-agent.png" alt-text="The install simulators agent page" lightbox="images/install-agent.png":::
+    :::image type="content" source="media/install-agent.png" alt-text="The install simulators agent page" lightbox="media/install-agent.png":::
 
    > [!IMPORTANT]
    > You'll first need to accept and provide consent to the terms and information sharing statements.
