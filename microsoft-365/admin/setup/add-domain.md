@@ -72,7 +72,7 @@ Follow these steps to add, set up, or continue setting up a domain.
 
 ::: moniker range="o365-worldwide"
 
-1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
 ::: moniker-end
 
@@ -82,7 +82,7 @@ Follow these steps to add, set up, or continue setting up a domain.
 
 ::: moniker-end
     
-2. Go to the **Settings** > **Domains** page. 
+2. Go to the **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
 
 3. Select **Add domain**.
     
@@ -113,7 +113,7 @@ Follow these steps to add, set up, or continue setting up a domain.
 
 Follow the steps below to add a custom record for a website or 3rd party service.
 
-1. Sign in to the Microsoft admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
+1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
 2. Go to the **Settings**  > **Domains** page.
 
@@ -166,7 +166,7 @@ Each Microsoft 365 organization can have up to five onmicrosoft.com domains.
 
 To add an onmicrosoft.com domain:
 
-1. In the Microsoft 365 admin center, select **Settings**, and then select **Domains**.
+1. In the Microsoft 365 admin center, select **Settings**, and then select <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a>.
 
 2. Select an existing *.onmicrosoft.com* domain.
 
