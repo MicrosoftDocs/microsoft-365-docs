@@ -19,6 +19,7 @@ f1.keywords:
 ms.custom:
   - seo-marvel-apr2020
   - has-azure-ad-ps-ref
+  - azure-ad-ref-level-one-done
 ms.assetid: f92d5116-5b66-4150-ad20-1452fc3dd712
 description: In this article, learn how to use PowerShell for Microsoft 365 to manage your customer tenancies.
 ---
@@ -33,6 +34,8 @@ Delegated Access Permission (DAP) partners are Syndication and Cloud Solution Pr
 ## What do you need to know before you begin?
 
 The procedures in this topic require you to connect to [Connect to Microsoft 365 with PowerShell](connect-to-microsoft-365-powershell.md).
+
+[!INCLUDE [Azure AD PowerShell deprecation note](~/../microsoft-365/reusable-content/msgraph-powershell/includes/aad-powershell-deprecation-note.md)]
 
 You also need your partner tenant administrator credentials.
 
