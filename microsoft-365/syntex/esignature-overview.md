@@ -44,7 +44,7 @@ Before you can use SharePoint eSignature, you must first link your Azure subscri
 
 SharePoint eSignature enables binding agreements between parties by allowing guests access to SharePoint to electronically sign documents. Certain external sharing must be enabled at a tenant or site level to allow this access. For more information, see [Set up SharePoint eSignature for external recipients](esignature-setup.md#external-recipients). Consider whether this meets your compliance and security requirements when enabling eSignature.
 
-## Integrate with other electronic signature providers
+## Integrate with other signature providers
 
 Integration with Adobe Acrobat Sign and DocuSign lets you initiate eSignature requests from PDF documents in SharePoint. These providers facilitate the signing process and send out all relevant notifications. When signing is complete, a copy of the fully signed document is automatically saved in SharePoint for easy access. Additional electronic signature providers will be added in the future. For setup information, see [Set up ]
 
@@ -54,7 +54,7 @@ Integration with Adobe Acrobat Sign and DocuSign lets you initiate eSignature re
 
 - SharePoint eSignature is available for only PDF documents at this time.
 
-- You'll be able to track your SharePoint eSignature requests using the Approvals app in Microsoft Teams in 2024.
+- You'll be able to track your SharePoint eSignature requests using the Approvals app in Microsoft Teams later in 2024.
 
 <br>
 
