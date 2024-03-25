@@ -36,7 +36,7 @@ To use the email entity page, you need to be assigned permissions. The permissio
 
 ## Where to find the Email entity page
 
-There are no direct links to the **Email entity** page from the Defender portal. Instead, the :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity** action is available at the top of the email details flyout in many Defender for Office 365 features. This email details flyout is known as _the Email summary panel_, and contains a summarized subset of the information on the Email entity page. The email summary panel is identical across Defender for Office 365 features. For more information, see the [The Email summary panel](#the-email-summary-panel) section later in this article.
+There are no direct links to the **Email entity** page from the top levels of the Defender portal. Instead, the :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity** action is available at the top of the email details flyout in many Defender for Office 365 features. This email details flyout is known as _the Email summary panel_, and contains a summarized subset of the information on the Email entity page. The email summary panel is identical across Defender for Office 365 features. For more information, see the [The Email summary panel](#the-email-summary-panel) section later in this article.
 
 The Email summary panel with the :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity** action is available in the following locations:
 
@@ -87,7 +87,7 @@ The details pane on the left side of the page contains collapsible sections with
   - **Cluster ID**
   - **Language**
 
-  <sup>\*</sup> <sup>\*</sup> The :::image type="icon" source="../../media/m365-cc-sc-copy-icon.png" border="false"::: **Copy to clipboard** action is available to copy the value.
+  <sup>\*</sup> The :::image type="icon" source="../../media/m365-cc-sc-copy-icon.png" border="false"::: **Copy to clipboard** action is available to copy the value.
 
 The tabs (views) along the top of the page allow you to investigate email efficiently. These views are described in the following subsections.
 
