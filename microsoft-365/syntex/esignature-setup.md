@@ -22,21 +22,12 @@ description: Learn how to set up and manage sites in SharePoint eSignature.
 > [!NOTE]
 > SharePoint eSignature is currently rolling out to the US market. If a tenant's location is the United States, SharePoint eSignature will be available for that tenant. For US-located, multi-geo enabled tenants, eSignature will be available in the home geo only. SharePoint eSignature will roll out to other regions later this year.
 
-The SharePoint eSignature service is set up in the Microsoft 365 admin center. SharePoint eSignature uses simple electronic signatures. Before you begin, determine whether this feature is appropriate for your needs and then read the [SharePoint eSignature terms of service](/legal/microsoft-365/esignature-terms-of-service).
-
 ## Prerequisites
 
-### Licensing
+The SharePoint eSignature service is set up in the Microsoft 365 admin center.  You must have Global admin or SharePoint admin permissions to be able to access the Microsoft 365 admin center and set up SharePoint eSignature.  Before you begin, determine whether this feature is appropriate for your needs by reading the [Before you begin section](esignature-overview.md#before-you-begin).
 
-Before you can use SharePoint eSignature, you must first link your Azure subscription in [Syntex pay-as-you-go](syntex-azure-billing.md). SharePoint eSignature is billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md).
-
-### Permissions
-
-You must have Global admin or SharePoint admin permissions to be able to access the Microsoft 365 admin center and set up SharePoint eSignature.  
-
-### External sharing
-
- If you will be requesting signatures from external recipients, you need to enable [Microsoft Entra B2B integration for SharePoint and OneDrive](/sharepoint/sharepoint-azureb2b-integration) and [guest sharing](/microsoft-365/solutions/collaborate-in-site). External recipients are people outside your organization and would be onboarded as guests into your tenant. Microsoft Entra B2B provides authentication and management of guests. For more information, see [External recipients](#external-recipients) later in this article.
+> [!NOTE]
+> If you will be requesting signatures from external recipients, you need to enable [Microsoft Entra B2B integration for SharePoint and OneDrive](/sharepoint/sharepoint-azureb2b-integration) and [guest sharing](/microsoft-365/solutions/collaborate-in-site). External recipients are people outside your organization and would be onboarded as guests into your tenant. Microsoft Entra B2B provides authentication and management of guests. For more information, see [External recipients](#external-recipients) later in this article.
 
 ## Set up SharePoint eSignature
 
