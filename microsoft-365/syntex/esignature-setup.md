@@ -67,6 +67,18 @@ By default, SharePoint eSignature is turned on for libraries in all SharePoint s
 
 2. If SharePoint eSignature is turned on, there will be a **Turn off** button visible. To turn off SharePoint eSignature, select **Turn off**.
 
+### Add other signature providers
+
+1. On the **Manage Microsoft Syntex** page, select **eSignature**.
+
+2. On the **eSignature** panel, select **Add or remove other signature providers**.
+
+3. On the **Add or remove other signature providers** panel, select the provider you want to add.
+
+    ![Screenshot of the Add or remove other signature providers panel.](../media/content-understanding/esignature-add-other-providers.png)
+
+4. Select **Save**.
+
 ## External recipients
 
 ### Microsoft Entra B2B
@@ -81,6 +93,8 @@ External recipients might need to authenticate before they're able to access a d
 
 Certain [conditional access](/entra/identity/conditional-access/overview) might determine whether external recipients (signers outside of your organization or Microsoft 365 tenant) will be able sign a document. Depending on the admin setup, external signers might not be able to access and read the document for signing. In some other cases, they might be able to access the document for signing, but the signing operation will be unsuccessful. One common way to resolve this is to add the **Microsoft eSignature Service** to the list of approved apps via the Microsoft Entra admin center.
 
+> [!NOTE]
+> When using other electronic signature providers, settings within Microsoft 365 don't impact whether you can send requests outside to external recipients.
 
 ## Document storage and retention
 
@@ -95,6 +109,13 @@ Before a signature request is sent and at the completion of the request, certain
 - Initial write permission of the sender to the originating folder was downgraded to view only.
 
 - The originating folder was deleted.
+
+#### Other electronic signature providers
+
+At the end of the signing process when all required parties have signed, a copy of the signed document is automatically saved to SharePoint. The signed document is saved to a provider-specific folder of a special **Apps** folder in SharePoint. Every document library has a provider-specific folder where all documents signed by using that provider are saved.
+
+> [!NOTE]
+> How long a copy of the signed document is retained in the other provider's platform depends solely on your document storage and retention policy settings for that provider service.
 
 ### Document retention
 
