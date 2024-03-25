@@ -114,6 +114,9 @@ Before a signature request is sent and at the completion of the request, certain
 
 At the end of the signing process when all required parties have signed, a copy of the signed document is automatically saved to SharePoint. The signed document is saved to a provider-specific folder of a special **Apps** folder in SharePoint. Every document library has a provider-specific folder where all documents signed by using that provider are saved.
 
+
+![Screenshot showing a signed document in a provider-specific folder.](../media/content-understanding/esignature-other-provider-folder.png)
+
 > [!NOTE]
 > How long a copy of the signed document is retained in the other provider's platform depends solely on your document storage and retention policy settings for that provider service.
 
