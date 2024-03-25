@@ -40,7 +40,7 @@ You can manage Microsoft Copilot for Microsoft 365 through the Microsoft 365 adm
 
 In this dashboard, you can access essential resources to help your organization use Copilot effectively:
 
-:::image type="content" source="media/copilot-page-dashboard.png" alt-text="Screenshot showing the Copilot page in the Microsoft 365 admin center." lightbox="media/copilot-page-dashboard.png":::
+:::image type="content" source="media/copilot-page-settings.png" alt-text="Screenshot showing the Copilot page in the Microsoft 365 admin center." lightbox="media/copilot-page-settings.png":::
 
 ### Licenses
 
