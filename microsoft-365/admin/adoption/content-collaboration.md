@@ -32,7 +32,7 @@ Adoption Score provides insights into your organization's digital transformation
 
 To get started with Content collaboration insights, people in your organization need to be licensed for:
 
-- OneDrive for Business
+- OneDrive
 - SharePoint
 - Exchange Online
 
@@ -53,7 +53,7 @@ We provide a primary insight that contains the key metrics for content collabora
 
 ### Primary insight
 
-Microsoft OneDrive for Business and SharePoint help people to easily create, read, and discover their individual and shared content in Microsoft 365 from across devices and applications. They also allow people to securely share and collaborate on content. The primary insight contains information from everyone who can use OneDrive for Business and SharePoint. Additionally it breaks down the details about how many people read, create, and collaborate on content stored in OneDrive for Business and SharePoint.
+Microsoft OneDrive and SharePoint help people to easily create, read, and discover their individual and shared content in Microsoft 365 from across devices and applications. They also allow people to securely share and collaborate on content. The primary insight contains information from everyone who can use OneDrive and SharePoint. Additionally it breaks down the details about how many people read, create, and collaborate on content stored in OneDrive and SharePoint.
 
 :::image type="content" source="../../media/collabscore_primary.png" alt-text="Primary insights from communication collaboration score.":::
 
