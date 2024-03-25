@@ -221,7 +221,7 @@ sections:
       - question: |
           What triggers service provider or staff and customer emails?
         answer: |
-          Emails are triggered based on settings in the Services tab in the Bookings Web app. A booking made by the customer on the Self-service page, or on the Calendar tab in the Bookings Web app triggers a confirmation and a reminder email. The same thing will happen when someone makes a change to the booking via the **Manage booking** button in the confirmation email or within the Web app. Reminder emails are sent at a specified time period prior to an appointment, as detailed in the Services tab in the Bookings Web app.
+          Emails are triggered based on settings in the Services tab in the Bookings Web app. A booking made by the customer on the Self-service page, or on the Calendar tab in the Bookings Web app triggers a confirmation and a reminder email. The same thing happens when someone makes a change to the booking via the **Manage booking** button in the confirmation email or within the Web app. Reminder emails are sent at a specified time period before an appointment, as detailed in the Services tab in the Bookings Web app.
 
       - question: |
           Can I book classroom-style appointments that are 1: many instead of 1:1?
@@ -231,7 +231,7 @@ sections:
       - question: |
           Can calendars remain unpublished (not public-facing) but still accessible to designated users?
         answer: |
-          Yes. There's a check box on the Booking page tab in the Web app: **Require a Microsoft 365 or Office 365 account from my organization to book**. Selecting this check box restricts Self-service page access to only those that are within your tenant. The Bookings calendar that sits within the Web app for creation and management can only be accessed by those individuals added as staff to the page with Administrator or Viewer roles.
+          Yes. There's a check box on the Booking page tab in the Web app: **Require a Microsoft 365 or Office 365 account from my organization to book**. Selecting this check box restricts Self-service page access to only users in your tenant. The Bookings calendar that sits within the Web app for creation and management can only be accessed by those individuals added as staff to the page with Administrator or Viewer roles.
           
           :::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Booking page access control in Bookings":::
           
@@ -243,7 +243,7 @@ sections:
       - question: |
           Can I turn off the email notifications for Time Off?
         answer: |
-          Recording Time Off within the Bookings Web app will always trigger a notification email to staff members. If any staff members are confused about the notification, we recommend you add more detail in the notes or title of the Time-Off notification, to better inform staff about what is occurring on the admin side.
+          Recording Time Off within the Bookings Web app triggers a notification email to staff members. If any staff members are confused about the notification, we recommend you add more detail in the notes or title of the Time-Off notification, to better inform staff about what is occurring on the admin side.
 
       - question: |
           Can Bookings calendars be cloned or duplicated, and can they be templatized for easy scaling?
@@ -258,12 +258,12 @@ sections:
       - question: |
           Is it possible to share only one service on the Self-service page at a time?
         answer: |
-          Yes, you can either create separate Bookings calendars for each service, or you can go to the Services tab and select Service details. You'll see a URL only for that specific service under the Service booking page. You can then share that URL which will be for that specific service.
+          Yes, you can either create separate Bookings calendars for each service, or you can go to the Services tab and select Service details. You see a URL only for that specific service under the Service booking page. You can then share that URL, which is for that specific service.
 
       - question: |
           What options are available for embedding a consent form or disclosure for those booking an appointment?
         answer: |
-          We recommend enabling the **Customer data usage consent** check box in the Booking page and customizing the wording to properly convey your organization's disclosure or consent requirements. Another option is to add a custom field to the service that includes a link to the consent form, and require customers to confirm that they've completed the form before they can proceed with making an appointment. You can also add the consent form URL as another notes in confirmation and reminder emails, but this won't prevent users from booking an appointment.
+          We recommend enabling the **Customer data usage consent** check box in the Booking page and customizing the wording to properly convey your organization's disclosure or consent requirements. Another option is to add a custom field to the service that includes a link to the consent form. Then require customers to confirm that they've completed the form before they can proceed with making an appointment. You can also add the consent form URL as another notes in confirmation and reminder emails.
 
       - question: |
           What changes can be made to the staff selection capability on the Self-service booking page?
