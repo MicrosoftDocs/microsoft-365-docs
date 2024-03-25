@@ -180,23 +180,23 @@ sections:
       - question: |
           Are video conferencing meetings integrated into the Bookings app?
         answer: |
-          Online meetings are available within Bookings when using the Skype or Microsoft Teams clients. Online meetings can be enabled at the service-level, and the meeting client you choose (Skype or Teams) will be the one set by default for a booked staff member. To join the online meetings, each new appointment will have a unique meeting link attached to the appointment. How to join options are included in the event and in confirmation emails to your customer.
+          Online meetings are available within Bookings when using the Skype or Microsoft Teams clients. Online meetings can be enabled at the service-level, and the meeting client you choose (Skype or Teams) will be the one set by default for a booked staff member. To join the online meetings, each new appointment has a unique meeting link attached to the appointment. How to join options are included in the event and in confirmation emails to your customer.
 
       - question: |
           How does scheduling policy work?
         answer: |
-          A setting called **Maximum lead time** determines the farthest in advance (measured in days) that a booking can be made. There must be at least 24 hours between **Minimum lead time** (the minimum lead time, in hours, for bookings and cancellations) and Maximum lead time. Maximum lead time can be set to one day if Minimum lead time is set to 0 hours, which in this case means a customer can cancel a booking up until the time that it starts, and customers can only schedule bookings if the appointment is within the next day.
+          A setting called **Maximum lead time** determines the farthest in advance (measured in days) that a booking can be made. There must be at least 24 hours between **Minimum lead time** (the minimum lead time, in hours, for bookings and cancellations) and Maximum lead time. Maximum lead time can be set to one day if Minimum lead time is set to 0 hours. This means a customer can cancel a booking up until the time that it starts, and customers can only schedule bookings if the appointment is within the next day.
           
           :::image type="content" source="media/bookings-faq-scheduling.png" alt-text="Scheduling in Bookings":::
           
       - question: |
           How does Bookings work across time zones?
         answer: |
-          All times are in the business time zone (your local time zone) by default. Any setting that you configure for a Bookings calendar, such as working hours, will appear in this time zone. The Self-service page has the ability to display all the appointment times in the end user's time zone, which can be turned off if desired. If **Always show time slots in business time zone** remains unchecked on the Bookings page tab, then people visiting the page will see time slots in their own local time zones.
+          All times are in the business time zone (your local time zone) by default. Any setting that you configure for a Bookings calendar, such as working hours, appears in this time zone. The Self-service page has the ability to display all the appointment times in the end user's time zone, which can be turned off if desired. If **Always show time slots in business time zone** remains unchecked on the Bookings page tab, then people visiting the page will see time slots in their own local time zones.
           
           :::image type="content" source="media/bookings-faq-region.png" alt-text="Bookings region and time zone settings":::
           
-          There's no provision to set time zone for staff in Bookings. Staff time zone, and thus business hours, will be in the business time zone.
+          There's no provision to set time zone for staff in Bookings. Staff time zone, and business hours are in the business time zone.
           
       - question: |
           Can email notifications be sent as the tenant domain name?
@@ -206,7 +206,7 @@ sections:
       - question: |
           Is the ability to send SMS messages dependent on a different service or specific configuration?
         answer: |
-          SMS messages are currently available in North America, and a Skype or Twilio account will be used for SMS delivery.
+          SMS messages are currently available in North America, and a Skype or Twilio account are used for SMS delivery.
 
       - question: |
           How can Bookings appointments show up on a person's calendar?
@@ -221,7 +221,7 @@ sections:
       - question: |
           What triggers service provider or staff and customer emails?
         answer: |
-          Emails are triggered based on settings in the Services tab in the Bookings Web app. A booking made by the customer on the Self-service page, or on the Calendar tab in the Bookings Web app, will trigger a confirmation and/or a reminder email. The same thing will happen when someone makes a change to the booking via the **Manage booking** button in the confirmation email or within the Web app. Reminder emails are sent at a specified time period prior to an appointment, as detailed in the Services tab in the Bookings Web app.
+          Emails are triggered based on settings in the Services tab in the Bookings Web app. A booking made by the customer on the Self-service page, or on the Calendar tab in the Bookings Web app triggers a confirmation and a reminder email. The same thing will happen when someone makes a change to the booking via the **Manage booking** button in the confirmation email or within the Web app. Reminder emails are sent at a specified time period prior to an appointment, as detailed in the Services tab in the Bookings Web app.
 
       - question: |
           Can I book classroom-style appointments that are 1: many instead of 1:1?
