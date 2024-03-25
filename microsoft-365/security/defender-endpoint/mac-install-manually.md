@@ -96,7 +96,7 @@ To complete this process, you must have admin privileges on the device.
 
 6. To change the installation destination, select **Change Install Location...**.
 
-    :::image type="content" source="images/installation-type.png" alt-text="Screenshot that shows the final installation step.":::
+    :::image type="content" source="media/installation-type.png" alt-text="Screenshot that shows the final installation step.":::
 
 7. Click **Install**.
 
@@ -139,7 +139,7 @@ To grant full disk access:
 
 1. Grant **Full Disk Access** permission to **Microsoft Defender** and **Microsoft Defenders Endpoint Security Extension**.
 
-   :::image type="content" source="images/full-disk-access-security-privacy.png" alt-text="The screenshot shows the full disk access's security and privacy.":::
+   :::image type="content" source="media/full-disk-access-security-privacy.png" alt-text="The screenshot shows the full disk access's security and privacy.":::
 
 1. Select **General** \> **Restart** for the new system extensions to take effect.
 

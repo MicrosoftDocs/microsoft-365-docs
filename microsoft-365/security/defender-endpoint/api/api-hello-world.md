@@ -88,7 +88,7 @@ For the Application registration stage, you must have a **Global administrator**
    > [!NOTE]
    > Every time you add permission, you must click on **Grant consent** for the new permission to take effect.
 
-   :::image type="content" source="../images/grant-consent.png" alt-text="The grant permission consent option in the Microsoft Entra admin center" lightbox="../images/grant-consent.png":::
+   :::image type="content" source="../media/grant-consent.png" alt-text="The grant permission consent option in the Microsoft Entra admin center" lightbox="../media/grant-consent.png":::
 
 6. Add a secret to the application.
 
