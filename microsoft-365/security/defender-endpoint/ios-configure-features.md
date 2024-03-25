@@ -52,7 +52,7 @@ While enabled by default, there might be some cases that require you to disable 
 
 3. Toggle off **Connect On Demand** to disable VPN.
 
-   :::image type="content" source="images/ios-vpn-config.png" alt-text="The toggle button for the VPN config Connect on demand option" lightbox="images/ios-vpn-config.png":::
+   :::image type="content" source="media/ios-vpn-config.png" alt-text="The toggle button for the VPN config Connect on demand option" lightbox="media/ios-vpn-config.png":::
 
 > [!NOTE]
 > Web Protection isn't available when VPN is disabled. To re-enable Web Protection, open the Microsoft Defender for Endpoint app on the device and click or tap **Start VPN**.

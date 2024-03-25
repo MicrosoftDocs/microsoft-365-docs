@@ -65,7 +65,7 @@ You'll need to take the following steps:
 
 2. Sign in to Jamf Pro, navigate to **Computers** > **Configuration Profiles**, and select **New**.
 
-   :::image type="content" source="images/jamf-pro-configure-profile.png" alt-text="The page on which you create a new Jamf Pro dashboard." lightbox="images/jamf-pro-configure-profile.png":::
+   :::image type="content" source="media/jamf-pro-configure-profile.png" alt-text="The page on which you create a new Jamf Pro dashboard." lightbox="media/jamf-pro-configure-profile.png":::
 
 3. Enter the following details in the **General** tab:
    
@@ -77,43 +77,43 @@ You'll need to take the following steps:
 
 4.  Navigate to the **Application & Custom Settings** page and select **Upload** > **Add**.
 
-    :::image type="content" source="images/jamfpro-mac-profile.png" alt-text="The configurate app and custom settings." lightbox="images/jamfpro-mac-profile.png":::
+    :::image type="content" source="media/jamfpro-mac-profile.png" alt-text="The configurate app and custom settings." lightbox="media/jamfpro-mac-profile.png":::
 
 5. Select **Upload File (PLIST file)** then in **Preference Domain** enter: `com.microsoft.wdav.atp`.
 
-   :::image type="content" source="images/jamfpro-plist-upload.png" alt-text="The jamfpro plist upload file." lightbox="images/jamfpro-plist-upload.png":::
+   :::image type="content" source="media/jamfpro-plist-upload.png" alt-text="The jamfpro plist upload file." lightbox="media/jamfpro-plist-upload.png":::
 
-   :::image type="content" source="images/jamfpro-plist-file.png" alt-text="The upload file property List file." lightbox="images/jamfpro-plist-file.png":::
+   :::image type="content" source="media/jamfpro-plist-file.png" alt-text="The upload file property List file." lightbox="media/jamfpro-plist-file.png":::
 
 6. Select **Open** and select the onboarding file.
 
-   :::image type="content" source="images/jamfpro-plist-file-onboard.png" alt-text="The onboarding file." lightbox="images/jamfpro-plist-file-onboard.png":::
+   :::image type="content" source="media/jamfpro-plist-file-onboard.png" alt-text="The onboarding file." lightbox="media/jamfpro-plist-file-onboard.png":::
 
 7. Select **Upload**.
 
-   :::image type="content" source="images/jamfpro-upload-plist.png" alt-text="The uploading plist file." lightbox="images/jamfpro-upload-plist.png":::
+   :::image type="content" source="media/jamfpro-upload-plist.png" alt-text="The uploading plist file." lightbox="media/jamfpro-upload-plist.png":::
 
 8. Select the **Scope** tab.
 
-   :::image type="content" source="images/jamfpro-scope-tab.png" alt-text="The Scope tab." lightbox="images/jamfpro-scope-tab.png":::
+   :::image type="content" source="media/jamfpro-scope-tab.png" alt-text="The Scope tab." lightbox="media/jamfpro-scope-tab.png":::
 
 9. Select the target computers.
 
-   :::image type="content" source="images/jamfpro-target-computer.png" alt-text="The target computers." lightbox="images/jamfpro-target-computer.png":::
+   :::image type="content" source="media/jamfpro-target-computer.png" alt-text="The target computers." lightbox="media/jamfpro-target-computer.png":::
 
-   :::image type="content" source="images/jamfpro-targets.png" alt-text="The targets." lightbox="images/jamfpro-targets.png":::
+   :::image type="content" source="media/jamfpro-targets.png" alt-text="The targets." lightbox="media/jamfpro-targets.png":::
 
 10. Select **Save**.
 
-    :::image type="content" source="images/jamfpro-deployment-target.png" alt-text="The deployment of target computers." lightbox="images/jamfpro-deployment-target.png":::
+    :::image type="content" source="media/jamfpro-deployment-target.png" alt-text="The deployment of target computers." lightbox="media/jamfpro-deployment-target.png":::
 
-    :::image type="content" source="images/jamfpro-target-selected.png" alt-text="The selection of target computers." lightbox="images/jamfpro-target-selected.png":::
+    :::image type="content" source="media/jamfpro-target-selected.png" alt-text="The selection of target computers." lightbox="media/jamfpro-target-selected.png":::
 
 11. Select **Done**.
 
-    :::image type="content" source="images/jamfpro-target-group.png" alt-text="The computers of a target group." lightbox="images/jamfpro-target-group.png":::
+    :::image type="content" source="media/jamfpro-target-group.png" alt-text="The computers of a target group." lightbox="media/jamfpro-target-group.png":::
 
-    :::image type="content" source="images/jamfpro-configuration-policies.png" alt-text="The list of configuration profiles." lightbox="images/jamfpro-configuration-policies.png":::
+    :::image type="content" source="media/jamfpro-configuration-policies.png" alt-text="The list of configuration profiles." lightbox="media/jamfpro-configuration-policies.png":::
 
 ## Step 3: Configure Microsoft Defender for Endpoint settings
 
