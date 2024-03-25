@@ -1,10 +1,10 @@
 ---
 title: Microsoft Syntex Optical Character Recognition (“OCR”) Feature Preview Agreement 
 ms.author: chucked
-author: chuckedmonson
+author: lkueter
 manager: jtremper
 ms.reviewer: kkameth
-ms.date: 08/29/2023
+ms.date: 03/25/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex

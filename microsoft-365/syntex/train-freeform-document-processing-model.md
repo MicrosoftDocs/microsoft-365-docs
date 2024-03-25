@@ -1,10 +1,10 @@
 ---
 title: Train a freeform document processing model in Microsoft Syntex
 ms.author: chucked
-author: chuckedmonson
+author: lkueter
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 02/21/2024
+ms.date: 03/25/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex

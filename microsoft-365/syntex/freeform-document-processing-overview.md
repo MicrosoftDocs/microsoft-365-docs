@@ -1,10 +1,10 @@
 ---
 title: Overview of freeform document processing in Microsoft Syntex
 ms.author: chucked
-author: chuckedmonson
+author: lkueter
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 01/16/2024
+ms.date: 03/25/2024
 audience: admin
 ms.topic: conceptual
 ms.custom: intro-overview

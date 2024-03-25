@@ -2,13 +2,34 @@
     "redirections":[
        {
           "source_path":"microsoft-365/syntex/syntex-copilot.md",
-          "redirect_url":"/microsoft-365/syntex/",
+          "redirect_url":"https://www.microsoft.com/microsoft-365/business/copilot-for-microsoft-365",
           "redirect_document_id":false
        },
        {
          "source_path":"microsoft-365/syntex/trial-syntex.md",
          "redirect_url":"/microsoft-365/syntex/promo-syntex",
          "redirect_document_id":false
-      }
+       },
+       {
+         "source_path":"microsoft-365/syntex/freeform-document-processing-overview.md",
+         "redirect_url":"/microsoft-365/syntex/form-processing-overview",
+         "redirect_document_id":true
+       },
+       {
+         "source_path":"microsoft-365/syntex/ocr-preview-terms.md",
+         "redirect_url":"/microsoft-365/syntex/ocr-overview",
+         "redirect_document_id":true
+       },
+       {
+         "source_path":"microsoft-365/syntex/train-freeform-document-processing-model.md",
+         "redirect_url":"/microsoft-365/syntex/create-a-form-processing-model",
+         "redirect_document_id":true
+       },
+       {
+         "source_path":"microsoft-365/syntex/use-contracts-management-site.md",
+         "redirect_url":"https://support.microsoft.com/en-us/office/80820115-c700-4a62-bb59-69b33c8e3b4f",
+         "redirect_document_id":false
+       }
+
     ]
  }

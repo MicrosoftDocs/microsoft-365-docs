@@ -1,11 +1,11 @@
 ---
 title: Overview of Syntex File Q&A for Copilot (Preview)
 ms.author: chucked
-author: chuckedmonson
+author: lkueter
 manager: jtremper
 audience: admin
 ms.reviewer: ssquires
-ms.date: 07/24/2023
+ms.date: 03/25/2024
 ms.topic: conceptual
 ms.service: microsoft-syntex
 search.appverid: 
