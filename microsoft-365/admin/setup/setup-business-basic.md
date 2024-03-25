@@ -51,7 +51,7 @@ When you purchase Microsoft 365 Business Basic, you have the option of using a d
 
  ::: moniker range="o365-worldwide"
 
-1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.cloud.microsoft.com</a>.
+1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.cloud.microsoft</a>.
 
 ::: moniker-end
 

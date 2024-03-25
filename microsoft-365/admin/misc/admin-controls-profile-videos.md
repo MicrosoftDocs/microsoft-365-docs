@@ -24,7 +24,7 @@ As the Microsoft 365 administrator, you can turn the profile video feature on or
 
 By default, profile video creation is turned on in Microsoft 365 organizations.
 
-1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.cloud.microsoft.com</a>.
+1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.cloud.microsoft</a>.
 
 2. In the left nav, go to **Settings** -> **Org Settings**.
 
