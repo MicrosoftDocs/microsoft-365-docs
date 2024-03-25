@@ -48,7 +48,7 @@ You must have Global admin or SharePoint admin permissions to be able to access 
 
 4. For existing customers, read the [terms of service](/legal/microsoft-365/esignature-terms-of-service), and then select **Turn on** to enable the service.
 
-5. For new Syntex customers, the Syntex eSignature service is turned on once you enter your billing information and accept the [terms of service](/legal/microsoft-365/esignature-terms-of-service). On the **eSignature** page:
+5. For new Syntex customers, the SharePoint eSignature service is turned on once you enter your billing information and accept the [terms of service](/legal/microsoft-365/esignature-terms-of-service). On the **eSignature** page:
 
    - To turn off the service, select **Turn off**.
    - To manage which sites the service is available, see [Manage sites](#manage-sites).
