@@ -19,6 +19,7 @@ ms.collection:
 ms.custom: 
 - commerce_licensing
 - AdminSurgePortfolio
+- admindeeplinkMAC
 search.appverid:
 - MET150
 description: "Learn how to manage licenses for independent software vendor (ISV) apps in the Microsoft 365 admin center."
