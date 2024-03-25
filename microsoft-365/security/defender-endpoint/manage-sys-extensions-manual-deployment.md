@@ -34,7 +34,7 @@ You might see the prompt that's shown in the following screenshot:
 
 1. From this second-prompt screen, select **OK**. You'll receive a notification message that reads **Installation succeeded**, as shown in the following screenshot:
 
-   :::image type="content" source="images/installation-succeeded-notification-message.png" alt-text="The screen displaying the installation succeeded notification message." lightbox="images/installation-succeeded-notification-message.png":::
+   :::image type="content" source="media/installation-succeeded-notification-message.png" alt-text="The screen displaying the installation succeeded notification message." lightbox="media/installation-succeeded-notification-message.png":::
 
 1. On the screen displaying the **Installation succeeded** notification message, select **OK**. You'll return to the following screen:
 

@@ -96,7 +96,7 @@ To complete this process, you must have admin privileges on the device.
 
 6. To change the installation destination, select **Change Install Location...**.
 
-    :::image type="content" source="images/installation-type.png" alt-text="Screenshot that shows the final installation step.":::
+    :::image type="content" source="media/installation-type.png" alt-text="Screenshot that shows the final installation step.":::
 
 7. Click **Install**.
 
