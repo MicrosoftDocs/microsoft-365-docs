@@ -333,7 +333,7 @@ sections:
       - question: |
           How can users opt out of receiving SMS messages if they've already opted in previously?
         answer: |
-          When booking an appointment with SMS text messages enabled, customers will be prompted to check the opt-in box each time they book. Customers can also reply directly to the SMS message (the SMS provider) indicating that they would like the messages to cease, and then no further texts will be sent to that phone number. If the customer opts out of receiving text messages from the provider, not from Bookings itself, they'll no longer receive SMS messages in the future, even when opting in from the Bookings page.
+          When booking an appointment with SMS text messages enabled, customers are prompted to check the opt-in box each time they book. Customers can also reply directly to the SMS message (the SMS provider) indicating that they would like the messages to cease, and then no further texts are sent to that phone number. If the customer opts out of receiving text messages from the provider, not from Bookings itself, they'll no longer receive SMS messages in the future, even when opting in from the Bookings page.
 
   - name: Troubleshooting
     questions:
@@ -358,7 +358,7 @@ sections:
           1. In the **People inside your organization** section, select the drop-down box next to **My Organization**, and then select **Can view when I'm busy**.
           
              > [!NOTE]
-             > This setting shares your free/busy information with Bookings and with other users in your organization. It doesn't include any other information, such as what type of appointment you've scheduled, who you have scheduled the appointment with, or the location.
+             > This setting shares your free/busy information with Bookings and with other users in your organization. It doesn't include any other information.
           
              > [!div class="mx-imgBorder"]
              > ![Image of calendar-sharing screen with Can view when I'm busy enabled](../media/bookings-view-busy.png)
@@ -368,7 +368,7 @@ sections:
       - question: |
           We can't find a staff member in our organization
         answer: |
-          If an employee has left your company and you removed them from your Microsoft 365 or Office 365 organization, you still need to remove that user from Bookings so they won't show up in the calendar and to prevent customers from booking appointments with them.
+          If an employee has left your company and you removed them from your Microsoft 365 or Office 365 organization, you still need to remove that user from Bookings. They won't show up in the calendar prevents customers from booking appointments with them.
           
           1. Sign in to Microsoft 365, and then go to **Bookings** \> **Staff**.
           
