@@ -37,7 +37,7 @@ search.appverid: met150
 
 In endpoint protection solutions, a false positive is an entity, such as a file or a process that was detected and identified as malicious even though the entity isn't actually a threat. A false negative is an entity that wasn't detected as a threat, even though it actually is malicious. False positives/negatives can occur with any threat protection solution, including [Defender for Endpoint](microsoft-defender-endpoint.md).
 
-:::image type="content" source="images/false-positives-overview.png" alt-text="The definition of false positive and negatives in the Microsoft Defender portal" lightbox="images/false-positives-overview.png":::
+:::image type="content" source="media/false-positives-overview.png" alt-text="The definition of false positive and negatives in the Microsoft Defender portal" lightbox="media/false-positives-overview.png":::
 
 Fortunately, steps can be taken to address and reduce these kinds of issues. If you're seeing false positives/negatives occurring with Defender for Endpoint, your security operations can take steps to address them by using the following process:
 
@@ -49,7 +49,7 @@ Fortunately, steps can be taken to address and reduce these kinds of issues. If 
 
 You can get help if you still have issues with false positives/negatives after performing the tasks described in this article. See [Still need help?](#still-need-help)
 
-:::image type="content" source="images/false-positives-step-diagram.png" alt-text="The steps to address false positives and negatives" lightbox="images/false-positives-step-diagram.png":::
+:::image type="content" source="media/false-positives-step-diagram.png" alt-text="The steps to address false positives and negatives" lightbox="media/false-positives-step-diagram.png":::
 
 > [!NOTE]
 > This article is intended as guidance for security operators and security administrators who are using [Defender for Endpoint](microsoft-defender-endpoint.md).
@@ -260,7 +260,7 @@ To specify entities as exclusions for Defender for Endpoint, create "allow" indi
 - [IP addresses, URLs, and domains](#indicators-for-ip-addresses-urls-or-domains)
 - [Application certificates](#indicators-for-application-certificates)
 
-:::image type="content" source="images/false-positives-indicators.png" alt-text="The Indicator types" lightbox="images/false-positives-indicators.png":::
+:::image type="content" source="media/false-positives-indicators.png" alt-text="The Indicator types" lightbox="media/false-positives-indicators.png":::
 
 #### Indicators for files
 

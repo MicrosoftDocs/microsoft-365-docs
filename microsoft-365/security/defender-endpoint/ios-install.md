@@ -66,7 +66,7 @@ Deploy Defender for Endpoint on iOS via Microsoft Intune Company Portal.
 
 1. In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Apps** > **iOS/iPadOS** > **Add** > **iOS store app** and click **Select**.
 
-   :::image type="content" source="images/ios-deploy-1.png" alt-text="The Add applications tab in the Microsoft Intune admin center" lightbox="images/ios-deploy-1.png":::
+   :::image type="content" source="media/ios-deploy-1.png" alt-text="The Add applications tab in the Microsoft Intune admin center" lightbox="media/ios-deploy-1.png":::
 
 1. On the **Add app** page, click on **Search the App Store** and type **Microsoft Defender** in the search bar. In the search results section, click on *Microsoft Defender* and click **Select**.
 
@@ -77,13 +77,13 @@ Deploy Defender for Endpoint on iOS via Microsoft Intune Company Portal.
     > [!NOTE]
     > The selected user group should consist of Microsoft Intune enrolled users.
 
-   :::image type="content" source="images/ios-deploy-2.png" alt-text="The Add group tab in the Microsoft Intune admin center" lightbox="images/ios-deploy-2.png":::
+   :::image type="content" source="media/ios-deploy-2.png" alt-text="The Add group tab in the Microsoft Intune admin center" lightbox="media/ios-deploy-2.png":::
 
 1. In the *Review + Create* section, verify that all the information entered is correct and then select **Create**. In a few moments, the Defender for Endpoint app should be created successfully, and a notification should show up at the top-right corner of the page.
 
 1. In the app information page that is displayed, in the **Monitor** section, select **Device install status** to verify that the device installation has completed successfully.
 
-   :::image type="content" source="images/ios-deploy-3.png" alt-text="The Device install status page" lightbox="images/ios-deploy-3.png":::
+   :::image type="content" source="media/ios-deploy-3.png" alt-text="The Device install status page" lightbox="media/ios-deploy-3.png":::
 
 ## Complete deployment for supervised devices
 
@@ -102,21 +102,21 @@ Configure the supervised mode for Defender for Endpoint app through an App confi
 
 1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to **Apps** \> **App configuration policies** \> **Add**. Select **Managed devices**.
 
-   :::image type="content" source="images/ios-deploy-4.png" alt-text="Image of Microsoft Intune admin center4." lightbox="images/ios-deploy-4.png":::
+   :::image type="content" source="media/ios-deploy-4.png" alt-text="Image of Microsoft Intune admin center4." lightbox="media/ios-deploy-4.png":::
 
 1. In the *Create app configuration policy* page, provide the following information:
     - Policy Name
     - Platform: Select iOS/iPadOS
     - Targeted app: Select **Microsoft Defender for Endpoint** from the list
 
-    :::image type="content" source="images/ios-deploy-5.png" alt-text="Image of Microsoft Intune admin center5." lightbox="images/ios-deploy-5.png":::
+    :::image type="content" source="media/ios-deploy-5.png" alt-text="Image of Microsoft Intune admin center5." lightbox="media/ios-deploy-5.png":::
 
 1. In the next screen, select **Use configuration designer** as the format. Specify the following properties:
     - Configuration Key: `issupervised`
     - Value type: String
     - Configuration Value: `{{issupervised}}`
 
-    :::image type="content" source="images/ios-deploy-6.png" alt-text="Image of Microsoft Intune admin center6." lightbox="images/ios-deploy-6.png":::
+    :::image type="content" source="media/ios-deploy-6.png" alt-text="Image of Microsoft Intune admin center6." lightbox="media/ios-deploy-6.png":::
 
 1. Select **Next** to open the **Scope tags** page. Scope tags are optional. Select **Next** to continue.
 
@@ -146,7 +146,7 @@ Once the profile has been downloaded, deploy the custom profile. Follow the step
 1. Navigate to **Devices** > **iOS/iPadOS** > **Configuration profiles** > **Create Profile**.
 1. Select **Profile Type** > **Templates** and **Template name** > **Custom**.
 
-   :::image type="content" source="images/ios-deploy-7.png" alt-text="Image of Microsoft Intune admin center7." lightbox="images/ios-deploy-7.png":::
+   :::image type="content" source="media/ios-deploy-7.png" alt-text="Image of Microsoft Intune admin center7." lightbox="media/ios-deploy-7.png":::
 
 1. Provide a name of the profile. When prompted to import a Configuration profile file, select the one downloaded from the previous step.
 1. In the **Assignment** section, select the device group to which you want to apply this profile. As a best practice, this should be applied to all managed iOS devices. Select **Next**.
@@ -180,7 +180,7 @@ Admins can configure Microsoft Defender for Endpoint to deploy and activate sile
    - Type of Automatic VPN = On-demand VPN
    - Select **Add** for **On Demand Rules** and select **I want to do the following = Connect VPN**, **I want to restrict to = All domains**.
 
-   :::image type="content" source="images/ios-deploy-9.png" alt-text="The VPN profile Configuration page" lightbox="images/ios-deploy-9.png":::
+   :::image type="content" source="media/ios-deploy-9.png" alt-text="The VPN profile Configuration page" lightbox="media/ios-deploy-9.png":::
 
    - To mandate that VPN can't be disabled in users device, Admins can select **Yes** from **Block users from disabling automatic VPN**. By default, it's not configured and users can disable VPN only in the Settings.
    - To allow Users to Change the VPN toggle from within the app, add **EnableVPNToggleInApp = TRUE**, in the key-value pairs. By default, users can't change the toggle from within the app.
@@ -221,7 +221,7 @@ Admins can configure auto-setup of VPN profile. This will automatically set up t
    - Type of Automatic VPN = On-demand VPN
    - Select **Add** for **On Demand Rules** and select **I want to do the following = Connect VPN**, **I want to restrict to = All domains**.
 
-      :::image type="content" source="images/ios-deploy-8.png" alt-text="The VPN profile Configuration settings tab." lightbox="images/ios-deploy-8.png":::
+      :::image type="content" source="media/ios-deploy-8.png" alt-text="The VPN profile Configuration settings tab." lightbox="media/ios-deploy-8.png":::
 
    - To require that VPN cannot be disabled on a users' device, Admins can select **Yes** from **Block users from disabling automatic VPN**. By default, this setting not configured and users can disable VPN only in the Settings.
    - To allow Users to Change the VPN toggle from within the app, add **EnableVPNToggleInApp = TRUE**, in the key-value pairs. By default, users cannot change the toggle from within the app.

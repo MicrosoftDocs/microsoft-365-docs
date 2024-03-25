@@ -51,7 +51,7 @@ While enabled by default, there might be some cases that require you to disable 
 1. Toggle off **Connect On Demand** to disable VPN.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/ios-vpn-config.png" alt-text="The Connect on demand option" lightbox="images/ios-vpn-config.png":::
+    > :::image type="content" source="media/ios-vpn-config.png" alt-text="The Connect on demand option" lightbox="media/ios-vpn-config.png":::
 
 > [!NOTE]
 > Web Protection will not be available when VPN is disabled. To re-enable Web Protection, open the Microsoft Defender for Endpoint app on the device and Enable Web Protection.
@@ -87,7 +87,7 @@ Microsoft Defender for Endpoint protects you against phishing or other web-based
 In addition, a notification is shown on the iOS device. Tapping on the notification opens the following screen for the user to review the details.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/ios-phish-alert.png" alt-text="The site reported as unsafe notification" lightbox="images/ios-phish-alert.png":::
+> :::image type="content" source="media/ios-phish-alert.png" alt-text="The site reported as unsafe notification" lightbox="media/ios-phish-alert.png":::
 
 ## Device not seen on the Defender for Endpoint console after onboarding
 
