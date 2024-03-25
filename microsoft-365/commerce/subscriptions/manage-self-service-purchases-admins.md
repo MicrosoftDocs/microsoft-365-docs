@@ -20,6 +20,7 @@ ms.custom:
   - commerce_ssp
   - AdminSurgePortfolio
   - okr_smb
+  - admindeeplinkMAC
 search.appverid:
 - MET150
 description: "Learn how admins can use the Microsoft 365 admin center to manage self-service purchases and trials made by users in their organization."

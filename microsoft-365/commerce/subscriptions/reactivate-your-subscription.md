@@ -22,6 +22,7 @@ ms.custom:
 - fwlink 874703
 - AdminSurgePortfolio
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid: MET150 
 description: "Learn how to reactivate a subscription in the Microsoft 365 admin center."
 ms.date: 08/18/2023

@@ -24,6 +24,7 @@ ms.custom:
 - AdminTemplateSet
 - adminvideo
 - business_assist
+- admindeeplinkMAC
 search.appverid: MET150
 description: "Learn how to manage your payment methods for Microsoft business products or services in the Microsoft 365 admin center."
 ms.date: 02/16/2024
