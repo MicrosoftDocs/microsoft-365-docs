@@ -362,7 +362,7 @@ When you click on the **Subject** or **Recipient** values in an entry, details f
 
 When you select the **Subject** value of an entry in the table, an email details flyout opens. This details flyout is known as the _Email summary panel_ and contains standardized summary information that's also available on the [Email entity page](mdo-email-entity-page.md) for the message.
 
-For details about the information in the Email summary panel, see [The Email summary panel in Defender for Office 365 features](mdo-email-entity-page.md#the-email-summary-panel-in-defender-for-office-365-features).
+For details about the information in the Email summary panel, see [The Email summary panel in Defender](mdo-email-entity-page.md#the-email-summary-panel).
 
 The following actions are available at the top of the Email summary panel for Threat Explorer and Real-time detections:
 
@@ -796,7 +796,7 @@ When you click on the **Subject** or **Recipient** values in an entry, details f
 
 When you select the **Subject** value of an entry in the table, an email details flyout opens. This details flyout is known as the _Email summary panel_ and contains standardized summary information that's also available on the [Email entity page](mdo-email-entity-page.md) for the message.
 
-For details about the information in the Email summary panel, see [The Email summary panel in Defender for Office 365 features](mdo-email-entity-page.md#the-email-summary-panel-in-defender-for-office-365-features).
+For details about the information in the Email summary panel, see [The Email summary panels](mdo-email-entity-page.md#the-email-summary-panel).
 
 The available actions at the top of the Email summary panel for Threat Explorer and Real-time detections are described in the [Email details from the Email view of the details area in the All email view](#email-details-from-the-email-view-of-the-details-area-in-the-all-email-view).
 
@@ -1081,7 +1081,7 @@ When you click on the **Subject** or **Recipient** values in an entry, details f
 
 When you select the **Subject** value of an entry in the table, an email details flyout opens. This details flyout is known as the _Email summary panel_ and contains standardized summary information that's also available on the [Email entity page](mdo-email-entity-page.md) for the message.
 
-For details about the information in the Email summary panel, see [The Email summary panel in Defender for Office 365 features](mdo-email-entity-page.md#the-email-summary-panel-in-defender-for-office-365-features).
+For details about the information in the Email summary panel, see [The Email summary panel in Defender for Office 365 features](mdo-email-entity-page.md#the-email-summary-panel).
 
 The available actions at the top of the Email summary panel for Threat Explorer and Real-time detections are described in the [Email details from the Email view of the details area in the All email view](#email-details-from-the-email-view-of-the-details-area-in-the-all-email-view).
 

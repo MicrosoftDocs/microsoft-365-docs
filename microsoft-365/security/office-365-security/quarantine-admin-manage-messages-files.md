@@ -186,6 +186,7 @@ In the details flyout that opens, the following information is available:
     Recipient email addresses always resolve to the primary email address, even if the message was sent to a [proxy address](/exchange/recipients-in-exchange-online/manage-user-mailboxes/add-or-remove-email-addresses).
 
   - **Released to**: All email addresses (if any) to which the message has been released.
+
 - **Delivery details** section:
   - **Threats**
   - **Delivery action**
@@ -213,6 +214,9 @@ In the details flyout that opens, the following information is available:
   - **Composite authentication**
 - **URLs** section
 - **Attachments** section
+
+> [!TIP]
+> The information in the **Delivery details**, **Email details**, **URLs**, and **Files** sections are part of the _Email summary panel_. The Email summary panel contains summarized information that's also available on the [Email entity page in Defender for Office 365](mdo-email-entity-page.md) for the message. For details about the information in the Email summary panel, see [The Email summary panel](mdo-email-entity-page.md#the-email-summary-panel).
 
 :::image type="content" source="../../media/quarantine-message-details-flyout.png" alt-text="The details flyout of a quarantined message" lightbox="../../media/quarantine-message-details-flyout.png":::
 
@@ -440,9 +444,9 @@ Accept or change the downloaded file details, and then select **Save**.
 
 Back on the **Download file** flyout, select **Done**.
 
-#### Actions for quarantined email messages in Defender for Office 365 Plan 2
+#### Actions for quarantined email messages in Defender for Office 365
 
-In organizations with Microsoft Defender for Office 365 Plan 2 (add-on licenses or included in subscriptions like Microsoft 365 E5), the following actions are also available in the details flyout of a selected message:
+In organizations with Microsoft Defender for Office 365 (add-on licenses or included in subscriptions like Microsoft 365 E5 or Microsoft 365 Business Premium), the following actions are also available in the details flyout of a selected message:
 
 - :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity**: For more information, see [How to read the email entity page](mdo-email-entity-page.md#how-to-read-the-email-entity-page).
 

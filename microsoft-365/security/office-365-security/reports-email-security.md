@@ -521,9 +521,9 @@ Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" bord
 
 When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
-If you select an entry from the details table by clicking anywhere in the row other than the check box next to the first column, an email details flyout opens. This details flyout is known as the _Email summary panel_ and contains summarized information that's also available on the [Email entity page](mdo-email-entity-page.md) for the message. For details about the information in the Email summary panel, see [The Email summary panel in Defender for Office 365 features](mdo-email-entity-page.md#the-email-summary-panel-in-defender-for-office-365-features).
+If you select an entry from the details table by clicking anywhere in the row other than the check box next to the first column, an email details flyout opens. This details flyout is known as the _Email summary panel_ and contains summarized information that's also available on the [Email entity page in Defender for Office 365](mdo-email-entity-page.md) for the message. For details about the information in the Email summary panel, see [The Email summary panel](mdo-email-entity-page.md#the-email-summary-panel).
 
-The following actions are available at the top of the Email summary panel for the Threat protection status report:
+In Defender for Microsoft 365, the following actions are available at the top of the Email summary panel for the Threat protection status report:
 
 - :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity**: For more information, see [The Email entity page in Microsoft Defender for Office 365](mdo-email-entity-page.md).
 - :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take action**: For information, see [Remediate using Take action](threat-explorer-threat-hunting.md#remediate-using-take-action).
@@ -587,9 +587,9 @@ Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" bord
 
 When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
-If you select an entry from the details table by clicking anywhere in the row other than the check box next to the first column, an email details flyout opens. This details flyout is known as the _Email summary panel_ and contains summarized information that's also available on the [Email entity page](mdo-email-entity-page.md) for the message. For details about the information in the Email summary panel, see [The Email summary panel in Defender for Office 365 features](mdo-email-entity-page.md#the-email-summary-panel-in-defender-for-office-365-features).
+If you select an entry from the details table by clicking anywhere in the row other than the check box next to the first column, an email details flyout opens. This details flyout is known as the _Email summary panel_ and contains summarized information that's also available on the [Email entity page in Defender for Office 365](mdo-email-entity-page.md) for the message. For details about the information in the Email summary panel, see [The Email summary panel](mdo-email-entity-page.md#the-email-summary-panel).
 
-The following actions are available at the top of the Email summary panel for the Threat protection status report:
+In Defender for Microsoft 365, the following actions are available at the top of the Email summary panel for the Threat protection status report:
 
 - :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity**: For more information, see [The Email entity page in Microsoft Defender for Office 365](mdo-email-entity-page.md).
 - :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take action**: For information, see [Remediate using Take action](threat-explorer-threat-hunting.md#remediate-using-take-action).
@@ -655,9 +655,9 @@ Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" bord
 
 When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
-If you select an entry from the details table by clicking anywhere in the row other than the check box next to the first column, an email details flyout opens. This details flyout is known as the _Email summary panel_ and contains summarized information that's also available on the [Email entity page](mdo-email-entity-page.md) for the message. For details about the information in the Email summary panel, see [The Email summary panel in Defender for Office 365 features](mdo-email-entity-page.md#the-email-summary-panel-in-defender-for-office-365-features).
+If you select an entry from the details table by clicking anywhere in the row other than the check box next to the first column, an email details flyout opens. This details flyout is known as the _Email summary panel_ and contains summarized information that's also available on the [Email entity page in Defender for Office 365](mdo-email-entity-page.md) for the message. For details about the information in the Email summary panel, see [The Email summary panel](mdo-email-entity-page.md#the-email-summary-panel).
 
-The following actions are available at the top of the Email summary panel for the Threat protection status report:
+In Defender for Microsoft 365, the following actions are available at the top of the Email summary panel for the Threat protection status report:
 
 - :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity**: For more information, see [The Email entity page in Microsoft Defender for Office 365](mdo-email-entity-page.md).
 - :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take action**: For information, see [Remediate using Take action](threat-explorer-threat-hunting.md#remediate-using-take-action).
@@ -718,9 +718,9 @@ Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" bord
 
 When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
-If you select an entry from the details table by clicking anywhere in the row other than the check box next to the first column, an email details flyout opens. This details flyout is known as the _Email summary panel_ and contains summarized information that's also available on the [Email entity page](mdo-email-entity-page.md) for the message. For details about the information in the Email summary panel, see [The Email summary panel in Defender for Office 365 features](mdo-email-entity-page.md#the-email-summary-panel-in-defender-for-office-365-features).
+If you select an entry from the details table by clicking anywhere in the row other than the check box next to the first column, an email details flyout opens. This details flyout is known as the _Email summary panel_ and contains summarized information that's also available on the [Email entity page in Defender for Office 365](mdo-email-entity-page.md) for the message. For details about the information in the Email summary panel, see [The Email summary panel](mdo-email-entity-page.md#the-email-summary-panel).
 
-The following actions are available at the top of the Email summary panel for the Threat protection status report:
+In Defender for Microsoft 365, the following actions are available at the top of the Email summary panel for the Threat protection status report:
 
 - :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity**: For more information, see [The Email entity page in Microsoft Defender for Office 365](mdo-email-entity-page.md).
 - :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take action**: For information, see [Remediate using Take action](threat-explorer-threat-hunting.md#remediate-using-take-action).
@@ -782,9 +782,9 @@ Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" bord
 
 When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
-If you select an entry from the details table by clicking anywhere in the row other than the check box next to the first column, an email details flyout opens. This details flyout is known as the _Email summary panel_ and contains summarized information that's also available on the [Email entity page](mdo-email-entity-page.md) for the message. For details about the information in the Email summary panel, see [The Email summary panel in Defender for Office 365 features](mdo-email-entity-page.md#the-email-summary-panel-in-defender-for-office-365-features).
+If you select an entry from the details table by clicking anywhere in the row other than the check box next to the first column, an email details flyout opens. This details flyout is known as the _Email summary panel_ and contains summarized information that's also available on the [Email entity page in Defender for Office 365](mdo-email-entity-page.md) for the message. For details about the information in the Email summary panel, see [The Email summary panel](mdo-email-entity-page.md#the-email-summary-panel).
 
-The following actions are available at the top of the Email summary panel for the Threat protection status report:
+In Defender for Microsoft 365, the following actions are available at the top of the Email summary panel for the Threat protection status report:
 
 - :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity**: For more information, see [The Email entity page in Microsoft Defender for Office 365](mdo-email-entity-page.md).
 - :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take action**: For information, see [Remediate using Take action](threat-explorer-threat-hunting.md#remediate-using-take-action).

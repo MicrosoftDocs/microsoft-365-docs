@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: deniseb
-ms.date: 3/22/2024
+ms.date: 3/25/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-security
@@ -16,7 +16,7 @@ ms.collection:
 - tier1
 - highpri
 ms.custom:
-description: Admins can learn about the Email entity page in Microsoft Defender for Office 365. This page show many details about email messages. For example, email headers, threat detection details, the latest and original delivery locations, delivery actions, and IDs (for example, the Network message ID and the associated Alert Id).
+description: Admins can learn about the Email entity page in Microsoft Defender for Office 365. This page shows many details about email messages. For example, email headers, threat detection details, the latest and original delivery locations, delivery actions, and IDs (for example, the Network message ID and the associated Alert ID).
 search.appverid: met150
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
@@ -26,7 +26,7 @@ appliesto:
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-Microsoft 365 organizations that have [Microsoft Defender for Office 365](defender-for-office-365.md) included in their subscription or purchased as an add-on have the _Email entity page_. The Email entity page in the Microsoft Defender portal contains highly-detailed information about an email message and any related entities.
+Microsoft 365 organizations that have [Microsoft Defender for Office 365](defender-for-office-365.md) included in their subscription or purchased as an add-on have the _Email entity page_. The Email entity page in the Microsoft Defender portal contains highly detailed information about an email message and any related entities.
 
 This article explains the information and actions on the Email entity page.
 
@@ -36,29 +36,31 @@ To use the email entity page, you need to be assigned permissions. The permissio
 
 ## Where to find the Email entity page
 
-There are no direct links to the **Email entity** page from the Defender portal. Instead, the :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity** action is available at the top of the email details flyout in many Defender for Office 365 features. This email details flyout is known as _the Email summary panel_, and contains a summarized subset of the information on the Email entity page. The email summary panel is identical across Defender for Office 365 features. For more information, see the [The Email summary panel in Defender for Office 365 features](#the-email-summary-panel-in-defender-for-office-365-features) section later in this article.
+There are no direct links to the **Email entity** page from the Defender portal. Instead, the :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity** action is available at the top of the email details flyout in many Defender for Office 365 features. This email details flyout is known as _the Email summary panel_, and contains a summarized subset of the information on the Email entity page. The email summary panel is identical across Defender for Office 365 features. For more information, see the [The Email summary panel](#the-email-summary-panel) section later in this article.
 
 The Email summary panel with the :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity** action is available in the following locations:
 
-- Advanced Hunting
-- Alerts
-- The Action Center
+- From the **Advanced hunting** page at <https://security.microsoft.com/v2/advanced-hunting>: In the **Results** tab of an email-related query, click on the **NetworkMessageId** value of an entry in the table.
 
-- The **Threat protection status** report at <https://security.microsoft.com/reports/TPSEmailPhishReportATP>:
-  - Select **View data by Email \> Phish** and any of the available **Chart breakdown** selections. In the details table below the chart, select row by clicking anywhere in the row other than the check box next to the first column.
-  - Select **View data by Email \> Malware** and any of the available **Chart breakdown** selections. In the details table below the chart, select row by clicking anywhere in the row other than the check box next to the first column.
-  - Select **View data by Email \> Spam** and any of the available **Chart breakdown** selections. In the details table below the chart, select row by clicking anywhere in the row other than the check box next to the first column.
+- *From the **Alerts** page at <https://security.microsoft.com/alerts>: For alerts with the **Detection source** value **MDO** or the **Product names** value **Microsoft Defender for Office 365**, select the entry by clicking on the **Alert name** value. In the alert details page that opens, select the message from the **Messages list** section.
 
-- **Threat Explorer** (**Explorer**) on the **Explorer** page at <https://security.microsoft.com/threatexplorerv3> or **Real-time detections** on the **Real-time detections** page at <https://security.microsoft.com/realtimereportsv3>. Use one of the following methods:
-  - Verify the **All email** view is selected \> verify the **Email** tab (view) in the details area is selected \> click on the **Subject** value in an entry.
-  - Select the **Malware** view \> verify the **Email** tab (view) in the details area is selected \> click on the **Subject** value in an entry.
-  - Select the **Phish** view \> verify the **Email** tab (view) in the details area is selected \> click on the **Subject** value in an entry.
+- From the **Threat protection status** report at <https://security.microsoft.com/reports/TPSEmailPhishReportATP>:
+  - Select **View data by Email \> Phish** and any of the available **Chart breakdown** selections. In the details table below the chart, select the entry by clicking anywhere in the row other than the check box next to the first column.
+  - Select **View data by Email \> Malware** and any of the available **Chart breakdown** selections. In the details table below the chart, select the entry by clicking anywhere in the row other than the check box next to the first column.
+  - Select **View data by Email \> Spam** and any of the available **Chart breakdown** selections. In the details table below the chart, select the entry by clicking anywhere in the row other than the check box next to the first column.
 
-- **Quarantine**: On the **Quarantine** page at <https://security.microsoft.com/quarantine> \> verify the **Email** tab is selected \> select an entry by clicking anywhere in the row other than the check box.
+- From the **Explorer** page at <https://security.microsoft.com/threatexplorerv3> (Threat Explorer) or from the **Real-time detections** page at <https://security.microsoft.com/realtimereportsv3>. Use one of the following methods:
+  - In Threat Explorer, verify the **All email** view is selected \> verify the **Email** tab (view) in the details area is selected \> click on the **Subject** value in an entry.
+  - In Threat Explorer or Real-time detections, select the **Malware** view \> verify the **Email** tab (view) in the details area is selected \> click on the **Subject** value in an entry.
+  - In Threat Explorer or Real-time detections, select the **Phish** view \> verify the **Email** tab (view) in the details area is selected \> click on the **Subject** value in an entry.
 
-- **Admin email submissions**: On the **Submissions** page at <https://security.microsoft.com/reportsubmission> \> select the **Emails** tab \> select an entry by clicking anywhere in the row other than the check box.
+- From the **Incidents** page at <https://security.microsoft.com/incidents>: For incidents with the **Product names** value **Microsoft Defender for Office 365**, select the incident by clicking on the **Incident name** value. In the incident details page that opens, select the **Evidence and responses** tab (view). In the **All evidence** tab and the **Entity type** value **Email** or the **Emails** tab, select the entry by clicking anywhere in the row other than the check box.
 
-- **User reported email submissions**: On the **Submissions** page at <https://security.microsoft.com/reportsubmission> \> select the **User reported** tab \> select an entry by clicking anywhere in the row other than the check box.
+- From the **Quarantine** page at <https://security.microsoft.com/quarantine>: Verify the **Email** tab is selected \> select an entry by clicking anywhere in the row other than the check box.
+
+- From the **Submissions** page at <https://security.microsoft.com/reportsubmission>:
+  - Select the **Emails** tab \> select an entry by clicking anywhere in the row other than the check box.
+  - Select the **User reported** tab \> select an entry by clicking anywhere in the row other than the check box.
 
 ## What's on the Email entity page
 
@@ -66,7 +68,7 @@ The Email summary panel with the :::image type="icon" source="../../media/m365-c
 
 The details pane on the left side of the page contains collapsible sections with details about the message. These sections remain constant as long as you're on the page. The available sections are:
 
-- **Tags** section. Shows any users tags (including Priority accounts) that are assigned to senders or recipients. For more information about user tags, see [User tags in Microsoft Defender for Office 365](user-tags-about.md).
+- **Tags** section. Shows any user tags (including Priority accounts) that are assigned to senders or recipients. For more information about user tags, see [User tags in Microsoft Defender for Office 365](user-tags-about.md).
 - **Detection details** section:
   - **Original Threats**
   - **Original delivery location**
@@ -96,7 +98,7 @@ The **Timeline** view shows the delivery and post-delivery events that happened 
 The following message event information is available in the view. Select a column header to sort by that column. To add or remove columns, select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns**. By default, all available columns are selected.
 
 - **Timeline** (date/time of the event)
-- **Source**: For example: **System**, **Admin** or **User**.
+- **Source**: For example: **System**, **Admin, or **User**.
 - **Event types**
 - **Result**
 - **Threats**
@@ -108,7 +110,7 @@ If nothing happened to the message after delivery, the message is likely to have
 - The **Result** value is **Junk email folder - Delivered to Junk**
 - The **Result** value is **Quarantine - Blocked**.
 
-Subsequent actions to the message by users, admins or Microsoft 365 add more more rows to the view. For example:
+Subsequent actions to the message by users, admins, or Microsoft 365 add more rows to the view. For example:
 
 - The **Event types** value is **ZAP** and the **Result** value is **Message moved to Quarantine by ZAP**.
 - The **Event types** value is **Quarantine Release** and the **Result** value is **Message was successfully released from Quarantine**.
@@ -161,8 +163,8 @@ The **Analysis** view contains information that helps you analyze the message in
   - **Return-Path domain**
   - **Location**
   - **Recipient domain**<sup>\*</sup>
-  - **To**: Shows the first 5000 characters of any email addresses in the To field of the message.
-  - **Cc**: Shows the first 5000 characters of any email addresses in the Cc field of the message.
+  - **To**: Shows the first 5,000 characters of any email addresses in the To field of the message.
+  - **Cc**: Shows the first 5,000 characters of any email addresses in the Cc field of the message.
   - **Distribution list**: Shows the distribution group (distribution list) if the recipient received the email as a member of the list. The top level distribution group is shown for nested distribution groups.
   - **Forwarding**: Indicates whether the message was [automatically forwarded to an external email address](outbound-spam-policies-external-email-forwarding.md). The forwarding user and the forwarding type are shown (mail flow rules, Inbox rules, or SMTP forwarding).
 
@@ -186,15 +188,15 @@ The **Analysis** view contains information that helps you analyze the message in
     - `None`: The domain doesn't have an SPF record, or the SPF record doesn't evaluate to a result.
     - `TempError`: The SPF check encountered a temporary error (for example, a DNS error). The same check later might succeed.
     - `PermError`: The SPF check encountered a permanent error. For example, the domain has a [badly formatted SPF record](email-authentication-spf-configure.md#troubleshooting-spf-txt-records).
-  - **Composite authentication**: SPF, DKIM, DMARC, and other information is used to determine if the message sender (the From address) is authentic. For more information, see [Composite authentication](email-authentication-about.md#composite-authentication).
+  - **Composite authentication**: SPF, DKIM, DMARC, and other information determines if the message sender (the From address) is authentic. For more information, see [Composite authentication](email-authentication-about.md#composite-authentication).
 - **Related entities** section: Information about attachments and URLs in the message:
   - **Entity**: Selecting **Attachments** or **URLs** takes you to the Attachments view or the URL view of the Email entity page for the message.
   - **Total count**
   - **Threats found**: The values are **Yes** or **No**.
 - Message details area:
   - **Plain-text email header** tab: Contains the entire message header in plain text. Select :::image type="icon" source="../../media/m365-cc-sc-copy-icon.png" border="false"::: **Copy message header** to copy the message header. Select :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Microsoft Message Header Analyzer** to open the Message Header Analyzer at <https://mha.azurewebsites.net/pages/mha.html>. Paste the copied message header into the page, and then select **Analyze headers** for details about the message headers and values.
-  - **To** tab: Shows the first 5000 characters of any email addresses in the To field of the message.
-  - **Cc** tab: Shows the first 5000 characters of any email addresses in the Cc field of the message.
+  - **To** tab: Shows the first 5,000 characters of any email addresses in the To field of the message.
+  - **Cc** tab: Shows the first 5,000 characters of any email addresses in the Cc field of the message.
 
 :::image type="content" source="../../media/email-entity-analysis-view.png" alt-text="Screenshot of the Analysis view on the Email entity page." lightbox="../../media/email-entity-analysis-view.png":::
 
@@ -320,7 +322,7 @@ If you select an entry in the **URL** view by clicking on the **URL** value, a d
     - **Analysis time**
     - **Verdict**: The verdict on the URL itself.
 
-  - **Screenshots section**: Show any screenshots that were captured during detonation. No screenshots are captured if the URL opens into a link that directly downloads a file. However, you'll see the downloaded file in the detonation chain.
+  - **Screenshots section**: Show any screenshots that were captured during detonation. No screenshots are captured if the URL opens into a link that directly downloads a file. However, you see the downloaded file in the detonation chain.
   
     If no detonation screenshots are available, the value **No screenshots to display** is shown. Otherwise, select the link to view the screenshot.
 
@@ -410,18 +412,21 @@ The following actions are available at the top of the Email entity page:
 
 :::image type="content" source="../../media/email-entity-available-actions.png" alt-text="Screenshot of the available actions at the top of the Email entity page." lightbox="../../media/email-entity-available-actions.png":::
 
-## The Email summary panel in Defender for Office 365 features
+## The Email summary panel
 
-The _Email summary panel_ is the email details flyout that's available in many features in Defender for Office 365. The Email summary panel contains standardized summary information about the email message taken from the full details that are available on the Email entity page.
+The _Email summary panel_ is the email details flyout that's available in many features in Exchange Online Protection (EOP) and Defender for Office 365. The Email summary panel contains standardized summary information about the email message taken from the full details that are available on the Email entity page in Defender for Office 365.
 
 Where to find the Email summary panel is described in the [Where to find the Email entity page](#where-to-find-the-email-entity-page) section earlier in this article. The rest of this section describes the information that's available on the Email summary panel.
+
+> [!TIP]
+> The Email summary panel is available from the **Action center** page at <https://security.microsoft.com/action-center/> on the **Pending** or **History** tabs. Select an action with the **Entity type** value **Email** by clicking anywhere in the row other than the check box or the **Investigation ID** value. The details flyout that opens is the Email summary panel, but :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity** isn't available at the top of the flyout.
 
 The following message information is available at the top of the Email summary panel:
 
 - The title of the flyout is the message Subject value.
 - The number of attachments and links in the message.
 - Any user tags that are assigned to the recipients of the message (including the Priority account tag). For more information, see [User tags in Microsoft Defender for Office 365](user-tags-about.md)
-- Other than :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity**, the available actions at the top of the Email summary panel depend on the Defender for Office 365 feature. The available actions in the Email summary panel are described in the individual feature articles.
+- The available actions at the top of the Email summary panel depend on the feature in EOP or Defender for Office 365. The available actions in the Email summary panel are described in the individual feature articles.
 
 > [!TIP]
 > To see details about other messages without leaving the Email summary panel of the current message, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
@@ -469,4 +474,4 @@ The rest of the Email summary panel contains the following information:
 
   If the message has more than three attachments, select **View all attachments** to see all of them.
 
-:::image type="content" source="../../media/email-entity-generic-email-summary-panel.png" alt-text="Screenshot of the Email summary panel after selecting a email message in a supported Defender for Office 365 feature." lightbox="../../media/email-entity-generic-email-summary-panel.png":::
+:::image type="content" source="../../media/email-entity-generic-email-summary-panel.png" alt-text="Screenshot of the Email summary panel after selecting an email message in a supported Defender for Office 365 feature." lightbox="../../media/email-entity-generic-email-summary-panel.png":::

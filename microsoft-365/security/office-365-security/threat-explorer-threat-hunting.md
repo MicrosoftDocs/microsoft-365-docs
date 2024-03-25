@@ -484,13 +484,6 @@ User tags are available in the following locations in Threat Explorer:
   - [As a filterable property](threat-explorer-real-time-detections-about.md#url-clicks-view-in-threat-explorer).
   - [An available column in the **Results** tab (view) of the details area in the **URL clicks** view](threat-explorer-real-time-detections-about.md#results-view-for-the-details-area-of-the-url-clicks-view-in-threat-explorer).
 
-<!--- ### Updated Timeline View
-
-> [!div class="mx-imgBorder"]
-> :::image type="content" source="../../media/tags-urls.png" alt-text="Screenshot of the URL tags." lightbox="../../media/tags-urls.png":::
->
-Learn more by watching [this video](https://www.youtube.com/watch?v=UoVzN0lYbfY&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=4). --->
-
 ### Threat information for email messages
 
 Pre-delivery and post-delivery actions on email messages are consolidated into a single record, regardless of the different post-delivery events that affected the message. For example:
@@ -508,20 +501,9 @@ Pre-delivery and post-delivery actions on email messages are consolidated into a
 > [!TIP]
 > Verdict analysis might not necessarily be tied to entities. The filters evaluate content and other details of an email message before assigning a verdict. For example, an email message might be classified as phishing or spam, but no URLs in the message are stamped with a phishing or spam verdict.
 
+Select :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity** at the top of the flyout to see exhaustive details about the email message. For more information, see [The Email entity page in Microsoft Defender for Office 365](mdo-email-entity-page.md).
+
 :::image type="content" source="../../media/te-rtd-all-email-view-email-tab-details-area-subject-details-flyout.png" alt-text="Screenshot of the email details flyout after you select a Subject value in the Email tab of the details area in the All email view." lightbox="../../media/te-rtd-all-email-view-email-tab-details-area-subject-details-flyout.png":::
-
-<!-- ### Updated timeline view (upcoming)
-
-> [!div class="mx-imgBorder"]
-> :::image type="content" source="../../media/Email_Timeline.png" alt-text="Screenshot of the updated Timeline View." lightbox="../../media/Email_Timeline.png":::
-
-Timeline view identifies all delivery and post-delivery events. It includes information about the threat identified at that point of time for a subset of these events. Timeline view also provides information about any additional action taken (such as ZAP or manual remediation), along with the result of that action. Timeline view information includes:
-
-- **Source:** Source of the event. It can be admin/system/user.
-- **Event:** Includes top-level events like original delivery, manual remediation, ZAP, submissions, and Dynamic Delivery.
-- **Action:** The specific action that was taken either as part of ZAP or admin action (for example, soft delete).
-- **Threats:** Covers the threats (malware, phish, spam) identified at that point of time.
-- **Result/Details:** More information about the result of the action, such as whether it was performed as part of ZAP/admin action. --->
 
 ## Extended capabilities in Threat Explorer
 
@@ -579,4 +561,3 @@ In addition to the scenarios outlined in this article, you have more options in 
 - [Threat protection status report](reports-email-security.md#threat-protection-status-report)
 - [Automated investigation and response in Microsoft Defender XDR](../defender/m365d-autoir.md)
 - [Trigger an investigation from Threat Explorer](air-about-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).
-- [Investigate emails with the Email Entity Page](mdo-email-entity-page.md)
