@@ -49,7 +49,7 @@ sections:
       - question: |
           How do I change a bookable attribute under Manage staff?
         answer: |
-          When staff members were added, they would have received an email to accept or reject the request. They can open the same email and select "Reject" to make them so that they aren't bookable. We currently don't have a way to toggle this from inside the app.
+          When staff members are added, they receive an email to accept or reject the request. They can open the same email and select "Reject" so they aren't bookable.
 
       - question: |
           How do end users access the Bookings app?
@@ -64,14 +64,14 @@ sections:
       - question: |
           Can I use Bookings even if I don't have a Web page for my business?
         answer: |
-          Yes. We provide a link to your booking page within the **Booking page** tab in the Web app. You just need to provide that link to your customers or clients, and they'll see the latest availability information for your business. Alternatively, you can share the booking page in social media or even use the embed feature to host it in an iFrame. You also have the ability to control who can access the page by disabling direct search engine indexing and restricting access to only those within your organization.
+          Yes. We provide a link to your booking page within the **Booking page** tab in the Web app. You just need to provide that link to your customers or clients, and they see the latest availability information for your business. Alternatively, you can share the booking page in social media or even use the embed feature to host it in an iFrame. You also have the ability to control who can access the page. You can do this by disabling direct search engine indexing and restricting access to only those in your organization.
 
       - question: |
           Can our IT department control whether end users can access Bookings?
         answer: |
           Administrators can turn off Bookings in the Microsoft 365 admin center if they choose. To do so, [follow these instructions](turn-bookings-on-or-off.md).
           
-          If a customer wants to disable access to Bookings for certain eligible licenses in their tenant, they can either use a group policy to restrict licenses or implement an OWA Mailbox policy that will restrict who is able to create new Bookings calendars.
+          A customer can also disable access to Bookings for certain eligible licenses in their tenant. They can either use a group policy to restrict licenses or implement an Outlook web app (OWA) Mailbox policy that restricts who is able to create new Bookings calendars.
           
           If you use an OWA Mailbox policy to disable access to Bookings, all users will have a Bookings license, however when they attempt to access the app, they'll only be successful if they're part of the policy or if they've been added to an existing Bookings calendar as staff. Details [here](turn-bookings-on-or-off.md) in the "Allow only selected users to create Bookings calendars" section.
       
@@ -143,7 +143,7 @@ sections:
       - question: |
           Do I need to migrate my email account from my current provider to Microsoft 365?
         answer: |
-          You can keep your current provider, but Bookings will send all notifications to the email used in your Microsoft 365 account.
+          You can keep your current provider, but Bookings sends all notifications to the email used in your Microsoft 365 account.
 
       - question: |
           Can my employees use Bookings without a Microsoft 365 account?
@@ -158,7 +158,7 @@ sections:
       - question: |
           Is Bookings supported in a federated or hybrid environment?
         answer: |
-          No. Bookings is a cloud-only application. It's not supported in a federated or hybrid environment.
+          No. Bookings is a cloud-only application. It isn't supported in a federated or hybrid environment.
 
   - name: Product features
     questions:
