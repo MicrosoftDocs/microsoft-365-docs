@@ -180,7 +180,7 @@ If the deployment tools used do not indicate an error in the onboarding process,
 
 5. On the **Filter** tab, under **Event level:** select **Critical**, **Warning**, and **Error**, and click **OK**.
 
-   :::image type="content" source="images/filter-log.png" alt-text="The Event Viewer log filter" lightbox="images/filter-log.png":::
+   :::image type="content" source="media/filter-log.png" alt-text="The Event Viewer log filter" lightbox="media/filter-log.png":::
 
 6. Events which can indicate issues appear in the **Operational** pane. You can attempt to troubleshoot them based on the solutions in the following table:
 
