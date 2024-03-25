@@ -34,7 +34,7 @@ ms.date: 12/18/2020
 
 2. Select **Computers**.
 
-   :::image type="content" source="images/jamf-pro-dashboard.png" alt-text="The Jamf Pro dashboard2" lightbox="images/jamf-pro-dashboard.png":::
+   :::image type="content" source="media/jamf-pro-dashboard.png" alt-text="The Jamf Pro dashboard2" lightbox="media/jamf-pro-dashboard.png":::
 
 3. You see the settings that are available.
 

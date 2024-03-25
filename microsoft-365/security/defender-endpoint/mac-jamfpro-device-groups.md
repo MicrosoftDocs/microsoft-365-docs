@@ -41,7 +41,7 @@ Set up the device groups similar to Group policy  organizational unite (OUs), Mi
 
 3. Provide a display name and select **Save**.
 
-   :::image type="content" source="images/jamfpro-machine-group.png" alt-text="The Jamf Pro2 page" lightbox="images/jamfpro-machine-group.png":::
+   :::image type="content" source="media/jamfpro-machine-group.png" alt-text="The Jamf Pro2 page" lightbox="media/jamfpro-machine-group.png":::
 
 4. Now you will see the **Contoso's Machine Group** under **Static Computer Groups**.
 

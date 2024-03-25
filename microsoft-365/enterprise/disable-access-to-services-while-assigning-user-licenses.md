@@ -19,6 +19,7 @@ ms.custom:
   - PowerShell
   - Ent_Office_Other
   - has-azure-ad-ps-ref
+  - azure-ad-ref-level-one-done
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
 description: "Learn how to assign licenses to user accounts and disable specific service plans at the same time using PowerShell for Microsoft 365."
 ---
@@ -39,6 +40,8 @@ Next, list the license plans for your tenant with this command.
 ```powershell
 Get-AzureADSubscribedSku | Select SkuPartNumber
 ```
+
+[!INCLUDE [Azure AD PowerShell deprecation note](~/../microsoft-365/reusable-content/msgraph-powershell/includes/aad-powershell-deprecation-note.md)]
 
 Next, get the sign-in name of the account to which you want add a license, also known as the user principal name (UPN).
 
