@@ -1,7 +1,7 @@
 ---
 title: "Microsoft 365 feature descriptions"
 ms.author: office365servicedesc
-author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 ms.date: 06/18/2022
 audience: ITPro
