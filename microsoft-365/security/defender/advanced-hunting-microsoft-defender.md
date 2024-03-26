@@ -142,7 +142,10 @@ You can also explore the results in-line with the following features:
 - Where applicable, expand details for results that are in JSON or array format by selecting the dropdown arrow at the left of applicable result row for added readability
 - Open the side pane to see a record’s details (concurrent with expanded rows)
 
-You can also right-click on any result value in a row so that you can use it to add more filters to the existing query or copy the value for use in further investigation.
+You can also right-click on any result value in a row so that you can use it to:
+- Add more filters to the existing query
+- Copy the value for use in further investigation
+- Update the query to extend a JSON field to a new column
 
 For Microsoft Defender XDR data, you can take further action by selecting the checkboxes to the left of each result row. Select **Link to incident** to link the selected results to an incident (read [Link query results to an incident](advanced-hunting-link-to-incident.md)) or **Take actions** to open the Take actions wizard (read [Take action on advanced hunting query results](advanced-hunting-take-action.md)).
 
