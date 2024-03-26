@@ -105,7 +105,7 @@ The <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">
 
 Specialist workspaces, like Security or Device management, allow for more granular control. For more information about how the admin centers work together, see [What about the specific types of IT roles and other workspaces like Security, Device Management, or Exchange?](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) in this article.
 
-To get to the Microsoft 365 admin center, go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.cloud.microsoft.com</a> or, if you're already signed in, select the app launcher, and choose **Admin**.
+To get to the Microsoft 365 admin center, go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.cloud.microsoft</a> or, if you're already signed in, select the app launcher, and choose **Admin**.
 
 On the home page, you can create cards for tasks that you perform frequently. To add a new card, select **Add card**, then select the plus sign next to the card you want to add. When you are finished, close the window. You can rearrange the cards by selecting and then dragging them to where you want. To remove a card, select the three dots (more actions), and then choose **Remove**.
 
@@ -146,7 +146,7 @@ If you have no idea who to contact at your work or school for help, try asking t
 
 ## Turn on Targeted release
 
-1. Sign in at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.cloud.microsoft.com</a>, go to the navigation pane and select **Settings** > **Org settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank">**Organization profile** tab</a>.
+1. Sign in at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.cloud.microsoft</a>, go to the navigation pane and select **Settings** > **Org settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank">**Organization profile** tab</a>.
 
 2. Go to the **Release preferences** card, and then select **Edit**.
 

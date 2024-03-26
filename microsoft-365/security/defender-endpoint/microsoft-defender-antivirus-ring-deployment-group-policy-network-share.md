@@ -184,7 +184,7 @@ In [Group Policy Management Console](/previous-versions/windows/it-pro/windows-s
 
    The three options are shown in the following figure.
 
-   :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-gp-microsoft-defender-antivirus-channels.png" alt-text="Screenshot that shows a screen capture of the pilot Computer Configuration > Policies > Administrative Templates > Windows Components > Microsoft Defender Antivirus update channels." lightbox="images/microsoft-defender-antivirus-deploy-ring-gp-microsoft-defender-antivirus-channels.png":::
+   :::image type="content" source="media/microsoft-defender-antivirus-deploy-ring-gp-microsoft-defender-antivirus-channels.png" alt-text="Screenshot that shows a screen capture of the pilot Computer Configuration > Policies > Administrative Templates > Windows Components > Microsoft Defender Antivirus update channels." lightbox="media/microsoft-defender-antivirus-deploy-ring-gp-microsoft-defender-antivirus-channels.png":::
 
    For more information, see [Manage the gradual rollout process for Microsoft Defender updates](manage-gradual-rollout.md)
 
@@ -192,7 +192,7 @@ In [Group Policy Management Console](/previous-versions/windows/it-pro/windows-s
 
 1. For _intelligence_ updates, double-click **Select the channel for Microsoft Defender monthly intelligence updates**.
 
-   :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-gp-microsoft-defender-antivirus-channel-staged.png" alt-text="Screenshot that shows a screen capture of the Select the channel for Microsoft Defender monthly intelligence updates page with Enabled and Current Channel (Staged) selected." lightbox="images/microsoft-defender-antivirus-deploy-ring-gp-microsoft-defender-antivirus-channel-staged.png":::
+   :::image type="content" source="media/microsoft-defender-antivirus-deploy-ring-gp-microsoft-defender-antivirus-channel-staged.png" alt-text="Screenshot that shows a screen capture of the Select the channel for Microsoft Defender monthly intelligence updates page with Enabled and Current Channel (Staged) selected." lightbox="media/microsoft-defender-antivirus-deploy-ring-gp-microsoft-defender-antivirus-channel-staged.png":::
 
 1. On the **Select the channel for Microsoft Defender monthly intelligence updates** page, select **Enabled**, and in **Options**, select **Current Channel (Staged)**.
 
@@ -222,7 +222,7 @@ In [Group Policy Management Console](/previous-versions/windows/it-pro/windows-s
 
 1. In [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn265969(v=ws.11)) (GPMC, GPMC.msc), go to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus**.
 
-   :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-gp-microsoft-defender-antivirus-channels.png" alt-text="Screenshot that shows a screen capture of the production Computer Configuration > Policies > Administrative Templates > Windows Components > Microsoft Defender Antivirus update channels." lightbox="images/microsoft-defender-antivirus-deploy-ring-gp-microsoft-defender-antivirus-channels.png":::
+   :::image type="content" source="media/microsoft-defender-antivirus-deploy-ring-gp-microsoft-defender-antivirus-channels.png" alt-text="Screenshot that shows a screen capture of the production Computer Configuration > Policies > Administrative Templates > Windows Components > Microsoft Defender Antivirus update channels." lightbox="media/microsoft-defender-antivirus-deploy-ring-gp-microsoft-defender-antivirus-channels.png":::
 
 1. Set the three policies as follows:
 
@@ -236,7 +236,7 @@ In [Group Policy Management Console](/previous-versions/windows/it-pro/windows-s
 
 1. On the **Select the channel for Microsoft Defender monthly intelligence updates** page, select **Enabled**, and in **Options**, select **Current Channel (Broad)**.
 
-   :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-gp-microsoft-defender-antivirus-channel-staged.png" alt-text="Screenshot that shows a screen capture of the Select the channel for Microsoft Defender monthly intelligence updates page with Enabled and Current Channel (Staged) selected." lightbox="images/microsoft-defender-antivirus-deploy-ring-gp-microsoft-defender-antivirus-channel-staged.png":::
+   :::image type="content" source="media/microsoft-defender-antivirus-deploy-ring-gp-microsoft-defender-antivirus-channel-staged.png" alt-text="Screenshot that shows a screen capture of the Select the channel for Microsoft Defender monthly intelligence updates page with Enabled and Current Channel (Staged) selected." lightbox="media/microsoft-defender-antivirus-deploy-ring-gp-microsoft-defender-antivirus-channel-staged.png":::
 
 1. Select **Apply**, and then select **OK**.
 
@@ -260,7 +260,7 @@ If you encounter problems with your deployment, create or append your Microsoft 
 
    Go to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > (administrator-defined) _PolicySettingName_. For example, _MDAV\_Settings\_Production_, right-click, and then select **Edit**. **Edit** for **MDAV\_Settings\_Production** is shown in the following figure:
 
-   :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-gp-policy-edit.png" alt-text="Screenshot that shows a screen capture of the administrator-defined Microsoft Defender Antivirus policy Edit option." lightbox="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-gp-policy-edit.png":::
+   :::image type="content" source="media/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-gp-policy-edit.png" alt-text="Screenshot that shows a screen capture of the administrator-defined Microsoft Defender Antivirus policy Edit option." lightbox="media/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-gp-policy-edit.png":::
 
 1. Select **Define the order of sources for downloading security intelligence updates**.
 
@@ -268,13 +268,13 @@ If you encounter problems with your deployment, create or append your Microsoft 
 
 1. Under **Options:**, change the entry to _FileShares_, select **Apply**, and then select **OK**. This change is shown in the following figure:
 
-   :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-gp-policy-define-order.png" alt-text="Screenshot that shows a screen capture of the Define the order of sources for downloading security intelligence updates page." lightbox="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-gp-policy-define-order.png":::
+   :::image type="content" source="media/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-gp-policy-define-order.png" alt-text="Screenshot that shows a screen capture of the Define the order of sources for downloading security intelligence updates page." lightbox="media/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-gp-policy-define-order.png":::
 
 1. Select **Define the order of sources for downloading security intelligence updates**.
 
 1. Select the radio button named **Disabled**, select **Apply**, and then select **OK**. The disabled option is shown in the following figure:
 
-   :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-gp-policy-disabled.png" alt-text="Screenshot that shows a screen capture of the Define the order of sources for downloading security intelligence updates page with Security Intelligence updates disabled." lightbox="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-gp-policy-disabled.png":::
+   :::image type="content" source="media/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-gp-policy-disabled.png" alt-text="Screenshot that shows a screen capture of the Define the order of sources for downloading security intelligence updates page with Security Intelligence updates disabled." lightbox="media/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-gp-policy-disabled.png":::
 
 1. The change is active when Group Policy updates. There are two methods to refresh Group Policy:
 
@@ -285,7 +285,7 @@ If you encounter problems with your deployment, create or append your Microsoft 
 
    - Right-click on an organizational unit (OU) that contains the machines (for example, Desktops), select **Group Policy Update**. This UI command is the equivalent of doing a gpupdate.exe /force on every machine in that OU. The feature to force Group Policy to refresh is shown in the following figure:
 
-     :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-gp-management-console.png" alt-text="Screenshot that shows a screen capture of the Group Policy Management console, initiating a forced update." lightbox="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-gp-management-console.png":::
+     :::image type="content" source="media/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-gp-management-console.png" alt-text="Screenshot that shows a screen capture of the Group Policy Management console, initiating a forced update." lightbox="media/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-gp-management-console.png":::
 
 1. After the issue is resolved, set the **Signature Update Fallback Order** back to the original setting. `InternalDefinitionUpdateServder|MicrosoftUpdateServer|MMPC|FileShare`.
 

@@ -185,7 +185,7 @@ This step of the setup process involves adding Defender for Endpoint to the excl
 
 - To check if there's a non-Microsoft antimalware that is running FANotify, you can run `mdatp health`, then check the result:
 
-  :::image type="content" source="images/mdatp-health-result.png" alt-text="Image of mdatp health result":::
+  :::image type="content" source="media/mdatp-health-result.png" alt-text="Image of mdatp health result":::
 
   Under "conflicting_applications", if you see a result other than "unavailable", uninstall the non-Microsoft antimalware.
 

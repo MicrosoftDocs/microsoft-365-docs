@@ -38,7 +38,7 @@ You might see the prompt that's shown in the following screenshot:
 
 1. On the screen displaying the **Installation succeeded** notification message, select **OK**. You'll return to the following screen:
 
-   :::image type="content" source="images/mde-menu.png" alt-text="The Microsoft Defender for Endpoint menu containing the x symbol." lightbox="images/mde-menu.png":::
+   :::image type="content" source="media/mde-menu.png" alt-text="The Microsoft Defender for Endpoint menu containing the x symbol." lightbox="media/mde-menu.png":::
 
 1. From the menu bar, click the **x** symbol on the shield. You'll get the options shown in the following screenshot:
 
@@ -135,7 +135,7 @@ If you run systemextensionsctl list, the following screen appears:
 
 #### mdatp health output
 
-:::image type="content" source="images/mdatp-health-output.png" alt-text="The mdatp health output screen." lightbox="images/mdatp-health-output.png":::
+:::image type="content" source="media/mdatp-health-output.png" alt-text="The mdatp health output screen." lightbox="media/mdatp-health-output.png":::
 
 #### Check the system extensions
 
