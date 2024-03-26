@@ -196,7 +196,7 @@ The **Azure Advanced Threat Protection** card displays a high-level overview of 
 
 The **Logged on users** card shows how many users logged on in the past 30 days, along with the most and least frequent users. Selecting the **See all users** link opens the details pane, which displays information such as user type, sign-in type, and when the user was first and last seen. For more information, see [Investigate user entities](investigate-user.md).
 
-:::image type="content" source="images/logged-on-users.png" alt-text="The user details pane" lightbox="images/logged-on-users.png":::
+:::image type="content" source="media/logged-on-users.png" alt-text="The user details pane" lightbox="media/logged-on-users.png":::
 
 > [!NOTE]
 > The 'Most frequent' user value is calculated only based on evidence of users who successfully logged on interactively.

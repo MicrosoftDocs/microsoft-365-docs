@@ -34,7 +34,7 @@ You might see the prompt that's shown in the following screenshot:
 
 1. From this second-prompt screen, select **OK**. You'll receive a notification message that reads **Installation succeeded**, as shown in the following screenshot:
 
-   :::image type="content" source="images/installation-succeeded-notification-message.png" alt-text="The screen displaying the installation succeeded notification message." lightbox="images/installation-succeeded-notification-message.png":::
+   :::image type="content" source="media/installation-succeeded-notification-message.png" alt-text="The screen displaying the installation succeeded notification message." lightbox="media/installation-succeeded-notification-message.png":::
 
 1. On the screen displaying the **Installation succeeded** notification message, select **OK**. You'll return to the following screen:
 
@@ -111,7 +111,7 @@ If you run systemextensionsctl list, the following screen appears:
 1. On the **Security & Privacy** screen, select the **Privacy** tab.
 1. Select **Full Disk Access** from the left navigation pane, and then click the **Lock** icon.
 
-   :::image type="content" source="images/full-disk-access-and-lock-icon.png" alt-text="The Full Disk Access option in the menu and the Lock icon." lightbox="images/full-disk-access-and-lock-icon.png":::
+   :::image type="content" source="media/full-disk-access-and-lock-icon.png" alt-text="The Full Disk Access option in the menu and the Lock icon." lightbox="media/full-disk-access-and-lock-icon.png":::
 
 1. Confirm that the Microsoft Defender extension has full disk access; if not, check the **Microsoft Defender** checkbox.
  

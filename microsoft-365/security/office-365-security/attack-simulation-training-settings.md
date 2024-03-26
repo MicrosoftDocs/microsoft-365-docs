@@ -54,7 +54,7 @@ To remove the training threshold and always assign training, regardless of wheth
 
 To view completed simulations that have been excluded from reporting on the **Settings** tab, select the **View all** link in the **Simulations excluded from reporting** section. This link takes you to the **Simulations** tab at <https://security.microsoft.com/attacksimulator?viewid=simulations> where **Show excluded simulations** is automatically toggled on :::image type="icon" source="../../media/scc-toggle-on.png" border="false":::.
 
-On the **Simulations** tab, both excluded _and_ included completed simulations are shown on the **Simulations** tab together. You can tell the difference by the **Status** values (**Excluded** vs. **Completed**)
+On the **Simulations** tab, both excluded _and_ included completed simulations are shown on the **Simulations** tab together. You can tell the difference by the **Status** values (**Excluded** vs. **Completed**).
 
 If you go directly to the **Simulations** tab and manually toggle **Show excluded simulations** on :::image type="icon" source="../../media/scc-toggle-on.png" border="false":::, _only_ excluded simulations are shown.
 

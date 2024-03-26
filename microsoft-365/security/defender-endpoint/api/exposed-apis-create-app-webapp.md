@@ -83,7 +83,7 @@ This article explains how to create a Microsoft Entra application, get an access
      > [!NOTE]
      > Every time you add a permission, you must select **Grant consent** for the new permission to take effect.
 
-    :::image type="content" source="../images/grant-consent.png" alt-text="The grant permissions page" lightbox="../images/grant-consent.png":::
+    :::image type="content" source="../media/grant-consent.png" alt-text="The grant permissions page" lightbox="../media/grant-consent.png":::
 
 6. To add a secret to the application, select **Certificates & secrets**, add a description to the secret, and then select **Add**.
 
