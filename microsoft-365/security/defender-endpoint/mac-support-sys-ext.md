@@ -43,7 +43,7 @@ Starting with macOS BigSur (11), Apple's macOS requires all system extensions to
 
 You'll notice that the Microsoft Defender for Endpoint has an **x** symbol in the shield, as shown in the following screenshot:
 
-:::image type="content" source="images/mde-screen-with-x-symbol.png" alt-text="The Microsoft Defender for Endpoint screen that displays the x symbol on its menu." lightbox="images/mde-screen-with-x-symbol.png":::
+:::image type="content" source="media/mde-screen-with-x-symbol.png" alt-text="The Microsoft Defender for Endpoint screen that displays the x symbol on its menu." lightbox="media/mde-screen-with-x-symbol.png":::
 
 If you click the shield with the **x** symbol, you'll get options as shown in the following screenshot:
 
