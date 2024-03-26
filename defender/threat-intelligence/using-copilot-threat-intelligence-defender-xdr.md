@@ -56,7 +56,7 @@ You can experience Copilot for Security’s capability to look up threat intelli
 6. To start a new chat session with Copilot, select the **New chat** icon ![Screenshot of the New chat icon in Copilot in Defender.](media/defender-ti-and-copilot/copilot-defender-new-chat.png).
 
 > [!NOTE]
-> Copilot saves your sessions from the Defender portal in the [Copilot for Security standalone site](https://go.microsoft.com/fwlink/?linkid=2247989). To see the previous sessions, from the Copilot [Home menu](/security-copilot/navigating-security-copilot#home-menu), go to **My sessions**. [Learn more about navigating Microsoft Copilot for Security](/security-copilot/navigating-security-copilot)
+> Copilot saves your sessions from the Defender portal in the [Copilot for Security standalone portal](https://go.microsoft.com/fwlink/?linkid=2247989). To see the previous sessions, from the Copilot [Home menu](/security-copilot/navigating-security-copilot#home-menu), go to **My sessions**. [Learn more about navigating Microsoft Copilot for Security](/security-copilot/navigating-security-copilot)
 
 > [!IMPORTANT] 
 > Copilot in Defender starts a new chat session every time you navigate to a different *Threat intelligence* page (for example, when you go from *Threat analytics* to *Intel profiles*) in the Defender portal. If you wish to go back or continue a previous session, go to the Copilot for Security standalone site.
