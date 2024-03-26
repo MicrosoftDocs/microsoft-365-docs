@@ -19,6 +19,7 @@ ms.collection:
 ms.custom: 
 - commerce_licensing
 - AdminSurgePortfolio
+- admindeeplinkMAC
 description: "Learn how to create and manage auto-claim policies that automatically assign licenses to users for certain apps."
 search.appverid: MET150
 ms.date: 02/12/2024

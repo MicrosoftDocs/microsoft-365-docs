@@ -49,7 +49,7 @@ First you will need to delete existing DNS records from Google, and then we can 
 1. Select **Domains**, **Manage domains**, **View details**, **Manage domain**, then **DNS** in the left nav.
 1. Scroll down to **Synthetic records**, open **Google Workspace**, select **Delete**, then **Delete** again.
 1. Scroll down to **Custom resource records** and delete any existing DNS records that appear, including any you may have created previously for Microsoft 365.
-1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com).
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 1. In the left nav, choose, **Show all** > **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
 1. Then choose your default domain.
 1. Select **Continue setup**, then, to connect your domain, choose  **Continue**.

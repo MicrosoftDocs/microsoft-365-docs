@@ -82,25 +82,25 @@ For a complete list, see [About Computer Enrollment](https://docs.jamf.com/9.9/c
 
 1. Select **Continue** and install the CA certificate from a **System Preferences** window.
 
-   :::image type="content" source="images/jamfpro-ca-certificate.png" alt-text="The Jamf Pro enrollment1" lightbox="images/jamfpro-ca-certificate.png":::
+   :::image type="content" source="media/jamfpro-ca-certificate.png" alt-text="The Jamf Pro enrollment1" lightbox="media/jamfpro-ca-certificate.png":::
 
 2. Once CA certificate is installed, return to the browser window and select **Continue** and install the MDM profile.
 
-   :::image type="content" source="images/jamfpro-install-mdm-profile.png" alt-text="The Jamf Pro enrollment2" lightbox="images/jamfpro-install-mdm-profile.png":::
+   :::image type="content" source="media/jamfpro-install-mdm-profile.png" alt-text="The Jamf Pro enrollment2" lightbox="media/jamfpro-install-mdm-profile.png":::
 
 3. Select **Allow** to downloads from JAMF.
 
-   :::image type="content" source="images/jamfpro-download.png" alt-text="The Jamf Pro enrollment3" lightbox="images/jamfpro-download.png":::
+   :::image type="content" source="media/jamfpro-download.png" alt-text="The Jamf Pro enrollment3" lightbox="media/jamfpro-download.png":::
 
 4. Select **Continue** to proceed with the MDM Profile installation.
 
-   :::image type="content" source="images/jamfpro-install-mdm.png" alt-text="The Jamf Pro enrollment4" lightbox="images/jamfpro-install-mdm.png":::
+   :::image type="content" source="media/jamfpro-install-mdm.png" alt-text="The Jamf Pro enrollment4" lightbox="media/jamfpro-install-mdm.png":::
 
 5. Select **Continue** to install the MDM Profile.
 
-   :::image type="content" source="images/jamfpro-mdm-unverified.png" alt-text="The Jamf Pro enrollment5" lightbox="images/jamfpro-mdm-unverified.png":::
+   :::image type="content" source="media/jamfpro-mdm-unverified.png" alt-text="The Jamf Pro enrollment5" lightbox="media/jamfpro-mdm-unverified.png":::
 
 6. Select **Continue**  to complete the configuration.
 
-   :::image type="content" source="images/jamfpro-mdm-profile.png" alt-text="The Jamf Pro enrollment6" lightbox="images/jamfpro-mdm-profile.png":::
+   :::image type="content" source="media/jamfpro-mdm-profile.png" alt-text="The Jamf Pro enrollment6" lightbox="media/jamfpro-mdm-profile.png":::
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
