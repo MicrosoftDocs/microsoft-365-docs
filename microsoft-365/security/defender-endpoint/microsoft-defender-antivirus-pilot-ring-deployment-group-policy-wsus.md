@@ -50,7 +50,7 @@ The following resources provide information for using and managing Windows Serve
 
 This section provides information about setting up the pilot (UAT/Test/QA) environment using Group Policy and Windows Server Update Services (WSUS).
 
-:::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus.png" alt-text="Screenshot that shows an example ring deployment schedule for Group Policy with WSUS environments." lightbox="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus.png":::
+:::image type="content" source="media/microsoft-defender-antivirus-deploy-ring-group-policy-wsus.png" alt-text="Screenshot that shows an example ring deployment schedule for Group Policy with WSUS environments." lightbox="media/microsoft-defender-antivirus-deploy-ring-group-policy-wsus.png":::
 
 > [!NOTE]
 > Security intelligence update (SIU) is equivalent to signature updates, which is the same as definition updates.
@@ -74,7 +74,7 @@ On about 10-500* Windows and/or Windows Server systems, depending on how many to
 
 1. On the **Choose Products** page, scroll down to **Forefront**, select **Forefront Client Security** and **System Center Endpoint Protection** This is shown in the following figure.
    
-   :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-choose-products-av.png" alt-text="Screenshot that shows a screen capture of the WSUS configuration wizard Choose Products page." lightbox="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-choose-products-av.png":::
+   :::image type="content" source="media/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-choose-products-av.png" alt-text="Screenshot that shows a screen capture of the WSUS configuration wizard Choose Products page." lightbox="media/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-choose-products-av.png":::
 
    While still on the **Choose Products** page, scroll down to **Windows** and select **Microsoft Defender Antivirus**.
 
