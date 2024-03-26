@@ -22,6 +22,7 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - AdminTemplateSet
+- admindeeplinkMAC
 description: "Learn about tax information for Microsoft 365 billing and payments, including how to update your address and tax status."
 ms.date: 08/10/2023
 ---

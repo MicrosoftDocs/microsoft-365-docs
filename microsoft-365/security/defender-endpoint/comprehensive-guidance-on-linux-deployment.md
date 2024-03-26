@@ -499,7 +499,7 @@ With macOS and Linux, you could take a couple of systems and run in the Beta cha
 
 The choice of the channel determines the type and frequency of updates that are offered to your device. Devices in Beta are the first ones to receive updates and new features, followed later by Preview and lastly by Current.
 
-:::image type="content" source="images/insider-rings.png" alt-text="The insider rings.":::
+:::image type="content" source="media/insider-rings.png" alt-text="The insider rings.":::
 
 In order to preview new features and provide early feedback, it's recommended that you configure some devices in your enterprise to use either Beta or Preview.
 

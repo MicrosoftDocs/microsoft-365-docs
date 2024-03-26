@@ -240,7 +240,7 @@ Microsoft Defender Antivirus is a built-in anti-malware solution that provides n
 
 3. Right-click on the newly created anti-malware policy and select **Deploy**.
 
-    :::image type="content" source="images/f5508317cd8c7870627cb4726acd5f3d.png" alt-text="The next-generation protection pane10" lightbox="images/f5508317cd8c7870627cb4726acd5f3d.png":::
+    :::image type="content" source="media/f5508317cd8c7870627cb4726acd5f3d.png" alt-text="The next-generation protection pane10" lightbox="media/f5508317cd8c7870627cb4726acd5f3d.png":::
 
 4. Target the new anti-malware policy to your Windows collection and select **OK**.
 
