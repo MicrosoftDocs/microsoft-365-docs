@@ -61,7 +61,7 @@ To add device tags using API, see [Add or remove device tags API](api/add-or-rem
 
 2. Select **Manage tags** from the row of Response actions.
 
-    :::image type="content" source="images/manage-tags-option.png" alt-text="Image of manage tags button" lightbox="images/manage-tags-option.png":::
+    :::image type="content" source="media/manage-tags-option.png" alt-text="Image of manage tags button" lightbox="media/manage-tags-option.png":::
     
 
 3. Type to find or create tags
