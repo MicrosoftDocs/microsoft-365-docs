@@ -33,7 +33,7 @@ When collaborating with Microsoft support professionals, you might be asked to u
 
 Run `MDEClientAnalyzer.cmd /?` to see the list of available parameters and their description:
 
-:::image type="content" source="images/MDEClientAnalyzerHelp.png" alt-text="The parameters for MDEClientAnalyzer.cmd" lightbox="images/MDEClientAnalyzerHelp.png":::
+:::image type="content" source="media/MDEClientAnalyzerHelp.png" alt-text="The parameters for MDEClientAnalyzer.cmd" lightbox="media/MDEClientAnalyzerHelp.png":::
 
 | Switch | Description | When to use| Process that you're troubleshooting. |
 |:---|:---|:---|:---|

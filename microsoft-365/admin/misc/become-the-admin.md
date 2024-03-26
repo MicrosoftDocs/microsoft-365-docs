@@ -59,7 +59,7 @@ When a user signs up for Microsoft 365 services using an email address, an accou
 
 ## Step 3: Verify domain ownership and become the admin
 
-1. After you complete Step 2, select the admin center icon in the left navigation pane (alternatively, go to a browser and type in `https://admin.cloud.microsoft.com`).
+1. After you complete Step 2, select the admin center icon in the left navigation pane (alternatively, go to a browser and type in `https://admin.cloud.microsoft`).
 
     You're redirected to the admin takeover wizard.
 

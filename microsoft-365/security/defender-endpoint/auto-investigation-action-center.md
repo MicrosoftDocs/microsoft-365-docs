@@ -32,7 +32,7 @@ During and after an automated investigation, remediation actions for threat dete
 
 Recently, the Action center was updated. You now have a unified Action center experience. To access your Action center, go to [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) and sign in.
 
-:::image type="content" source="images/mde-action-center-unified.png" alt-text="The Action center page in the Microsoft Defender portal" lightbox="images/mde-action-center-unified.png":::
+:::image type="content" source="media/mde-action-center-unified.png" alt-text="The Action center page in the Microsoft Defender portal" lightbox="media/mde-action-center-unified.png":::
 
 ### What's changed?
 
