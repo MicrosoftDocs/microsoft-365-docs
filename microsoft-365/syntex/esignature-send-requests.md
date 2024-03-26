@@ -55,13 +55,13 @@ Use the following steps to start an electronic signature in SharePoint using ano
 
     ![Screenshot of the provider menu options.](../media/content-understanding/esignature-provider-menu.png)
 
-3. You will be prompted to login to the provider using your login credentials.
+3. You'll be prompted to sign in to the provider using your sign-in credentials.
 
-4. After successful login, you will be prompted to continue on the provider website.
+4. After successful sign in, you'll be prompted to continue on the provider website.
 
 5. The document is automatically transferred to the provider service.
 
-6. The provider website will be open in another browser tab.
+6. The provider website opens in another browser tab.
 
 7. On the new tab, proceed with the request creation process as you normally would.
 
@@ -69,7 +69,7 @@ Use the following steps to start an electronic signature in SharePoint using ano
 
 #### Track and manage other provider requests
 
-Managing ongoing eSignature requests for other providers is done on the provider website or through the Approvals app in Microsoft Teams. You will also be notified by email from the provider throughout the signing process.
+Managing ongoing eSignature requests for other providers is done on the provider website or through the Approvals app in Microsoft Teams. You'll also be notified by email from the provider throughout the signing process.
 
 ## Cancel a signature request
 

@@ -24,7 +24,7 @@ description: Learn how to set up and manage sites in SharePoint eSignature.
 
 ## Prerequisites
 
-The SharePoint eSignature service is set up in the Microsoft 365 admin center.  You must have Global admin or SharePoint admin permissions to be able to access the Microsoft 365 admin center and set up SharePoint eSignature.  Before you begin, determine whether this feature is appropriate for your needs by reading the [Before you begin section](esignature-overview.md#before-you-begin).
+The SharePoint eSignature service is set up in the Microsoft 365 admin center. You must have Global admin or SharePoint admin permissions to be able to access the Microsoft 365 admin center and set up SharePoint eSignature. Before you begin, determine whether this feature is appropriate for your needs by reading the [Before you begin section](esignature-overview.md#before-you-begin).
 
 > [!NOTE]
 > If you will be requesting signatures from external recipients, you need to enable [Microsoft Entra B2B integration for SharePoint and OneDrive](/sharepoint/sharepoint-azureb2b-integration) and [guest sharing](/microsoft-365/solutions/collaborate-in-site). External recipients are people outside your organization and would be onboarded as guests into your tenant. Microsoft Entra B2B provides authentication and management of guests. For more information, see [External recipients](#external-recipients) later in this article.
@@ -87,7 +87,7 @@ Microsoft Entra B2B provides authentication and management of guests. External s
 
 ### Authentication
 
-External recipients might need to authenticate before they're able to access a document for signing. The type of authentication required by the external recipients depends on the configuration for guest users at the SharePoint level or at the tenant level. Additionally, if the external user belongs to an organization with a Microsoft 365 tenant, it's possible for their organization's setup to affect their authentication experience when attempting to sign the document. For more information, see [Collaboration with guests in a site](/microsoft-365/solutions/collaborate-in-site).
+External recipients might need to authenticate before they're able to access a document for signing. The type of authentication required by the external recipients depends on the configuration for guests at the SharePoint level or at the tenant level. Additionally, if the guest belongs to an organization with a Microsoft 365 tenant, it's possible for their organization's setup to affect their authentication experience when attempting to sign the document. For more information, see [Collaboration with guests in a site](/microsoft-365/solutions/collaborate-in-site).
 
 ### Conditional access
 

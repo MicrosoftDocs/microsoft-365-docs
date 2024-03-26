@@ -46,7 +46,7 @@ SharePoint eSignature enables binding agreements between parties by allowing gue
 
 ## Using other signature providers
 
-Integration with Adobe Acrobat Sign and DocuSign lets you initiate electronic ignature requests from PDF documents in SharePoint. These providers facilitate the signing process and send out all relevant notifications. When signing is complete, a copy of the fully signed document is automatically saved in SharePoint for easy access. Additional electronic signature providers will be added in the future. For more information, see [how to add other signature providers](esignature-setup.md#add-other-signature-providers) and [how to create a signature request using another provider](esignature-send-requests.md#create-a-signature-request-using-another-provider).
+Integration with Adobe Acrobat Sign and DocuSign lets you initiate electronic signature requests from PDF documents in SharePoint. These providers facilitate the signing process and send out all relevant notifications. When signing is complete, a copy of the fully signed document is automatically saved in SharePoint for easy access. More electronic signature providers will be added in the future. For more information, see [how to add other signature providers](esignature-setup.md#add-other-signature-providers) and [how to create a signature request using another provider](esignature-send-requests.md#create-a-signature-request-using-another-provider).
 
 ## Release notes
 
