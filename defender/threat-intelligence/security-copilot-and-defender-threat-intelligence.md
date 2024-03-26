@@ -70,8 +70,8 @@ To view the list of built-in system capabilities for Defender TI:
 2.	Select **See all system capabilities**. The *Microsoft Defender Threat Intelligence* section lists all the available capabilities for Defender TI that you can use.
 
 Copilot also has the following promptbooks that also deliver information from Defender TI:
-- **Vulnerability impact assessment** - Generates a report summarizing the intelligence for a known vulnerability, including steps on how to address it.
-- **Threat actor profile** - Generates a report profiling a known threat actor, including suggestions to defend against their common tools and tactics.
+- **Threat actor profile** – Generates a report profiling a known threat actor, including suggestions to defend against their common tools and tactics.
+- **Vulnerability impact assessment** – Generates a report summarizing the intelligence for a known vulnerability, including steps on how to address it.
 
 To view these promptbooks, in the prompt bar, select the **Prompts** icon then select **See all promptbooks**. 
 
