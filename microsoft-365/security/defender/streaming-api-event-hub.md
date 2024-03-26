@@ -110,7 +110,7 @@ To get the data types for event properties, do the following steps:
 
 - Here's an example for Device Info event:
 
-  :::image type="content" source="../defender-endpoint/images/machine-info-datatype-example.png" alt-text="An example query for device info" lightbox="../defender-endpoint/images/machine-info-datatype-example.png":::
+  :::image type="content" source="../defender-endpoint/media/machine-info-datatype-example.png" alt-text="An example query for device info" lightbox="../defender-endpoint/media/machine-info-datatype-example.png":::
 
 ## Estimating initial Event Hub capacity
 The following Advanced Hunting query can help provide a rough estimate of data volume throughput and initial event hub capacity based on events/sec and estimated MB/sec. We recommend running the query during regular business hours so as to capture 'real' throughput.

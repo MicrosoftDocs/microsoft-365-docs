@@ -30,15 +30,15 @@ ms.date: 12/18/2020
 
 1. Enter your credentials.
 
-   :::image type="content" source="images/jamf-pro-portal1.png" alt-text="The Jamf Pro dashboard1" lightbox="images/jamf-pro-portal1.png":::
+   :::image type="content" source="media/jamf-pro-portal1.png" alt-text="The Jamf Pro dashboard1" lightbox="media/jamf-pro-portal1.png":::
 
 2. Select **Computers**.
 
-   :::image type="content" source="images/jamf-pro-dashboard.png" alt-text="The Jamf Pro dashboard2" lightbox="images/jamf-pro-dashboard.png":::
+   :::image type="content" source="media/jamf-pro-dashboard.png" alt-text="The Jamf Pro dashboard2" lightbox="media/jamf-pro-dashboard.png":::
 
 3. You see the settings that are available.
 
-   :::image type="content" source="images/jamfpro-settings.png" alt-text="The Jamf Pro dashboard3" lightbox="images/jamfpro-settings.png":::
+   :::image type="content" source="media/jamfpro-settings.png" alt-text="The Jamf Pro dashboard3" lightbox="media/jamfpro-settings.png":::
 
 
 ## Next step
