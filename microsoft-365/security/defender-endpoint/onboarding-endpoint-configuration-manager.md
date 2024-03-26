@@ -128,7 +128,7 @@ From within the Microsoft Defender portal it's possible to download the `.onboar
 
 3. Select **Download package**.
 
-   :::image type="content" source="images/mdatp-download-package.png" alt-text="The Microsoft Configuration Manager wizard11" lightbox="images/mdatp-download-package.png":::
+   :::image type="content" source="media/mdatp-download-package.png" alt-text="The Microsoft Configuration Manager wizard11" lightbox="media/mdatp-download-package.png":::
 
 4. Save the package to an accessible location.
 5. In  Microsoft Configuration Manager, navigate to: **Assets and Compliance > Overview > Endpoint Protection > Microsoft Defender ATP Policies**.
