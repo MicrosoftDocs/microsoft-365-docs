@@ -40,7 +40,7 @@ You can find user entity information in the following views:
 
 Wherever user entities appear in these views, select the entity to view the **User** page, which displays more details about the user. For example, you can see the details of user accounts identified in the alerts of an incident in the Microsoft Defender portal at **Incidents & alerts > Incidents > *incident* > Assets > Users**.
 
-:::image type="content" source="../../media/investigate-users/user-incident-assets.png" alt-text="The Users page for an incident in the Microsoft Defender portal.":::
+:::image type="content" source="../../media/investigate-users/user-incident-assets.png" alt-text="Screenshot of the Users page for an incident in the Microsoft Defender portal.":::
 
 When you investigate a specific user entity, you see the following tabs on its entity page:
 
@@ -103,7 +103,7 @@ For more information, see [Defender for Identity entity tags in Microsoft Defend
 > [!NOTE]
 > The organization tree section and the account tags are available when a Microsoft Defender for Identity license is available.
 
-:::image type="content" source="../../media/investigate-users/user-incident-overview.png" alt-text="A specific user's page in the Microsoft Defender portal" lightbox="../../media/investigate-users/user-incident-overview.png":::
+:::image type="content" source="../../media/investigate-users/user-incident-overview.png" alt-text="Screenshot of a specific user's page in the Microsoft Defender portal" lightbox="../../media/investigate-users/user-incident-overview.png":::
 
 ## Incidents and alerts
 
@@ -117,7 +117,7 @@ When an incident or alert is selected, a fly-out appears. From this panel you ca
 
 To see a full page view of an incident or alert, select its title.
 
-:::image type="content" source="../../media/investigate-users/user-incident-alertstab.png" alt-text="The user account's related alerts seen in the Alerts tab in the Microsoft Defender portal" lightbox="../../media/investigate-users/user-incident-alertstab.png":::
+:::image type="content" source="../../media/investigate-users/user-incident-alertstab.png" alt-text="Screenshot of the user account's related alerts seen in the Alerts tab in the Microsoft Defender portal" lightbox="../../media/investigate-users/user-incident-alertstab.png":::
 
 ## Observed in organization
 
@@ -138,7 +138,7 @@ The map provides a list of other devices or users an attacker can take advantage
 
 The lateral movement path report, which can be viewed by date, is always available to provide information about the potential lateral movement paths discovered and can be customized by time. Select a different date using **View a different date** to view previous lateral movement paths found for an entity. The graph only displays if a potential lateral movement path has been found for an entity in the past two days.
 
-:::image type="content" source="../../media/investigate-users/user-incident-observed.png" alt-text="The Observed in organization view showing device, group, location, and lateral movement paths for a user in the Microsoft Defender portal" lightbox="../../media/investigate-users/user-incident-observed.png":::
+:::image type="content" source="../../media/investigate-users/user-incident-observed.png" alt-text="Screenshot of the Observed in organization view showing device, group, location, and lateral movement paths for a user in the Microsoft Defender portal" lightbox="../../media/investigate-users/user-incident-observed.png":::
 
 ## Timeline
 
@@ -248,7 +248,7 @@ From the Overview page, you can do these additional actions:
 - Reset investigation priority score for the user
 - View Microsoft Entra account settings, related governance, the user's owned files, or the user's shared files
 
-:::image type="content" source="../../media/investigate-users/user-incident-actions.png" alt-text="The actions for remediation for a user in the Microsoft Defender portal" lightbox="../../media/investigate-users/user-incident-actions.png":::
+:::image type="content" source="../../media/investigate-users/user-incident-actions.png" alt-text="Screenshot of the actions for remediation for a user in the Microsoft Defender portal" lightbox="../../media/investigate-users/user-incident-actions.png":::
 
 For more information, see [Remediation actions in Microsoft Defender for Identity](/defender-for-identity/remediation-actions).
 
