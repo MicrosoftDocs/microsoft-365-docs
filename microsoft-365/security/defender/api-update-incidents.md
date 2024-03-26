@@ -1,12 +1,8 @@
 ---
 title: Update incident API
 description: Learn how to update incidents using Microsoft Defender XDR API
-keywords: update, api, incident
 search.product: eADQiWindows 10XVcnh
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords:
   - NOCSH
 ms.author: macapara
@@ -46,10 +42,10 @@ Updates properties of existing incident. Updatable properties are: `status`, `de
 
 ### Quotas, resource allocation, and other constraints
 
-1. You can make up to 50 calls per minute or 1500 calls per hour before you hit the throttling threshold.
+1. You can make up to 50 calls per minute or 1,500 calls per hour before you hit the throttling threshold.
 2. You can set the `determination` property only if `classification` is set to TruePositive.
 
-If your request is throttled, it will return a `429` response code. The response body will indicate the time when you can begin making new calls.
+If your request is throttled, it returns a `429` response code. The response body indicates the time when you can begin making new calls.
 
 ## Permissions
 
@@ -78,14 +74,14 @@ Content-Type|String|application/json. **Required**.
 
 ## Request body
 
-In the request body, supply the values for the fields that should be updated. Existing properties that aren't included in the request body will maintain their values, unless they have to be recalculated due to changes to related values. For best performance, you should omit existing values that haven't changed.
+In the request body, supply the values for the fields that should be updated. Existing properties that aren't included in the request body maintain their values, unless they have to be recalculated due to changes to related values. For best performance, you should omit existing values that didn't change.
 
 Property|Type|Description
 ---|---|---
 status|Enum|Specifies the current status of the incident. Possible values are: `Active`, `Resolved`, `InProgress`, and `Redirected`.
 assignedTo|string|Owner of the incident.
-classification|Enum|Specification of the incident. Possible values are: `TruePositive`, `Informational, expected activity`, and `FalsePositive`.
-determination|Enum|Specifies the determination of the incident. <p>Possible determination values for each classification are: <br><li> <b>True positive</b>: `Multistage attack` (MultiStagedAttack), `Malicious user activity` (MaliciousUserActivity), `Compromised account` (CompromisedUser) – consider changing the enum name in public api accordingly, `Malware` (Malware), `Phishing` (Phishing), `Unwanted software` (UnwantedSoftware), and `Other` (Other). <li> <b>Informational, expected activity:</b> `Security test` (SecurityTesting), `Line-of-business application` (LineOfBusinessApplication), `Confirmed activity` (ConfirmedUserActivity) - consider changing the enum name in public api accordingly, and `Other` (Other). <li>  <b>False positive:</b> `Not malicious` (Clean) - consider changing the enum name in public api accordingly, `Not enough data to validate` (InsufficientData), and `Other` (Other).
+classification|Enum|Specification of the incident. Possible values are: `TruePositive` (True positive), `InformationalExpectedActivity` (Informational, expected activity), and `FalsePositive` (False Positive).
+determination|Enum|Specifies the determination of the incident. <p>Possible determination values for each classification are: <br><li> <b>True positive</b>: `Multistage attack` (MultiStagedAttack), `Malicious user activity` (MaliciousUserActivity), `Compromised account` (CompromisedUser) – consider changing the enum name in public api accordingly, `Malware` (Malware), `Phishing` (Phishing), `UnwantedSoftware` (Unwanted software), and `Other` (Other). <li> <b>Informational, expected activity:</b> `SecurityTesting` (Security test), `LineOfBusinessApplication` (Line-of-business application), `ConfirmedActivity` (Confirmed activity) - consider changing the enum name in public api accordingly, and `Other` (Other). <li>  <b>False positive:</b> `Clean` (Not malicious) - consider changing the enum name in public api accordingly, `NoEnoughDataToValidate` (Not enough data to validate), and `Other` (Other).
 tags|string list|List of Incident tags.
 comment|string|Comment to be added to the incident.
 
@@ -94,7 +90,7 @@ comment|string|Comment to be added to the incident.
 
 ## Response
 
-If successful, this method returns `200 OK`. The response body will contain the incident entity with updated properties. If an incident with the specified ID wasn't found, the method returns
+If successful, this method returns `200 OK`. The response body contains the incident entity with updated properties. If an incident with the specified ID wasn't found, the method returns
  `404 Not Found`.
 
 ## Example
@@ -107,7 +103,7 @@ Here's an example of the request.
  PATCH https://api.security.microsoft.com/api/incidents/{id}
 ```
 
-### Response example
+### Request example
 
 ```json
 {
@@ -141,4 +137,5 @@ Here's an example of the request.
 - [Incident APIs](api-incident.md)
 - [List incidents](api-list-incidents.md)
 - [Incidents overview](incidents-overview.md)
+
 [!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]
