@@ -21,6 +21,7 @@ ms.custom:
 - commerce_purchase
 - okr_SMB
 - AdminSurgePortfolio
+- admindeeplinkMAC
 description: "Learn about registration numbers and under-review notifications when you buy Microsoft business products or services."
 ms.date: 08/24/2023
 ---

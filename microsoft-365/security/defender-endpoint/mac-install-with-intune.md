@@ -99,7 +99,7 @@ In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2
     |com.microsoft.wdav.epsext|UBF8T346G9|
     |com.microsoft.wdav.netext|UBF8T346G9|
 
-    :::image type="content" source="images/mac-system-extension-intune2.png" alt-text="The settings of the system's extension" lightbox="images/mac-system-extension-intune2.png":::
+    :::image type="content" source="media/mac-system-extension-intune2.png" alt-text="The settings of the system's extension" lightbox="media/mac-system-extension-intune2.png":::
 
 1. On the **Assignments** tab, assign the profile to a group where the macOS devices and/or users are located, or **All Users** and **All devices**.
 
@@ -460,7 +460,7 @@ To download the onboarding packages from Microsoft 365 Defender portal:
 
 2. Set the operating system to **macOS** and the deployment method to **Mobile Device Management / Microsoft Intune**.
 
-   :::image type="content" source="images/macos-install-with-intune.png" alt-text="The Onboarding settings page" lightbox="images/macos-install-with-intune.png":::
+   :::image type="content" source="media/macos-install-with-intune.png" alt-text="The Onboarding settings page" lightbox="media/macos-install-with-intune.png":::
 
 3. Select **Download onboarding package**. Save it as _WindowsDefenderATPOnboardingPackage.zip_ to the same directory.
 
