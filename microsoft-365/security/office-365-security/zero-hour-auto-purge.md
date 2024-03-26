@@ -115,7 +115,7 @@ For more information about configuring spam filtering verdicts, see [Configure a
 To determine if ZAP moved your message, you have the following options:
 
 - **Number of messages**: Use the [Mailflow view in the Mailflow status report](reports-email-security.md#mailflow-view-for-the-mailflow-status-report) to see the number of ZAP-affected messages for the specified date range.
-- **Message details**: Use [Threat Explorer (or real-time detections)](threat-explorer-about.md) to filter **All email** events by the value **ZAP** for the **Additional action** column.
+- **Message details**: Use [Threat Explorer (or real-time detections)](threat-explorer-real-time-detections-about.md) to filter **All email** events by the value **ZAP** for the **Additional action** column.
 
 > [!NOTE]
 > ZAP is not logged in the Exchange mailbox audit logs as a system action.

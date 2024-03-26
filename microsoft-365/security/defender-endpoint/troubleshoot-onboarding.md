@@ -180,7 +180,7 @@ If the deployment tools used do not indicate an error in the onboarding process,
 
 5. On the **Filter** tab, under **Event level:** select **Critical**, **Warning**, and **Error**, and click **OK**.
 
-   :::image type="content" source="images/filter-log.png" alt-text="The Event Viewer log filter" lightbox="images/filter-log.png":::
+   :::image type="content" source="media/filter-log.png" alt-text="The Event Viewer log filter" lightbox="media/filter-log.png":::
 
 6. Events which can indicate issues appear in the **Operational** pane. You can attempt to troubleshoot them based on the solutions in the following table:
 
@@ -311,7 +311,7 @@ If the verification fails and your environment is using a proxy to connect to th
 
 - You can also check the previous registry key values to verify that the policy is disabled, by opening the registry key `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`.
 
-  :::image type="content" source="images/atp-disableantispyware-regkey.png" alt-text="The registry key for Microsoft Defender Antivirus" lightbox="images/atp-disableantispyware-regkey.png":::
+  :::image type="content" source="media/atp-disableantispyware-regkey.png" alt-text="The registry key for Microsoft Defender Antivirus" lightbox="media/atp-disableantispyware-regkey.png":::
 
    > [!NOTE]
    > All Windows Defender services (wdboot, wdfilter, wdnisdrv, wdnissvc, and windefend) should be in their default state. Changing the startup of these services is unsupported and may force you to reimage your system.
@@ -336,17 +336,17 @@ You might also need to check the following:
 
 - Check that there's a Microsoft Defender for Endpoint Service running in the **Processes** tab in **Task Manager**. For example:
 
-  :::image type="content" source="images/atp-task-manager.png" alt-text="The process view with Microsoft Defender for Endpoint Service running" lightbox="images/atp-task-manager.png":::
+  :::image type="content" source="media/atp-task-manager.png" alt-text="The process view with Microsoft Defender for Endpoint Service running" lightbox="media/atp-task-manager.png":::
 
 - Check **Event Viewer** \> **Applications and Services Logs** \> **Operation Manager** to see if there are any errors.
 
 - In **Services**, check if the **Microsoft Monitoring Agent** is running on the server. For example,
 
-  :::image type="content" source="images/atp-services.png" alt-text="The services" lightbox="images/atp-services.png":::
+  :::image type="content" source="media/atp-services.png" alt-text="The services" lightbox="media/atp-services.png":::
 
 - In **Microsoft Monitoring Agent** \> **Azure Log Analytics (OMS)**, check the Workspaces and verify that the status is running.
 
-  :::image type="content" source="images/atp-mma-properties.png" alt-text="The Microsoft Monitoring Agent Properties" lightbox="images/atp-mma-properties.png":::
+  :::image type="content" source="media/atp-mma-properties.png" alt-text="The Microsoft Monitoring Agent Properties" lightbox="media/atp-mma-properties.png":::
 
 - Check to see that devices are reflected in the **Devices list** in the portal.
 

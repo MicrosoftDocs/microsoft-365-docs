@@ -1,6 +1,6 @@
 ---
 title: Deploy Microsoft Defender for Endpoint on Linux with Ansible
-ms.reviewer:
+ms.reviewer: gopkr
 description: Describes how to deploy Microsoft Defender for Endpoint on Linux using Ansible.
 ms.service: defender-endpoint
 ms.author: siosulli
@@ -15,7 +15,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: linux
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 3/20/2024
 ---
 
 # Deploy Microsoft Defender for Endpoint on Linux with Ansible
@@ -143,7 +143,7 @@ Create a subtask or role files that contribute to a playbook or task.
     In the following commands, replace *[distro]* and *[version]* with the information you've identified.
 
     > [!NOTE]
-    > In case of Oracle Linux and Amazon Linux 2, replace *[distro]* with "rhel". For Amazon Linux 2, replace *[version]* with "7". For Oracle utilize, replace *[version]* with the version of Oracle Linux.
+    > In case of Oracle Linux and Amazon Linux 2, replace *[distro]* with "rhel". For Amazon Linux 2, replace *[version]* with "7". For Oracle Linux, replace *[version]* with the version of Oracle Linux.
 
   ```bash
   - name: Add Microsoft APT key

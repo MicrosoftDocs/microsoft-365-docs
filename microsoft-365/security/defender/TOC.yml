@@ -139,19 +139,19 @@
       - name: Protect your identities
         items:
           - name: Sensor settings and health
-            href: ../defender-identity/sensor-health.md
+            href: /defender-for-identity/sensor-settings?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json
           - name: Directory Services account
-            href: ../defender-identity/directory-service-accounts.md
+            href: /defender-for-identity/deploy/directory-service-accounts?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json
           - name: VPN integration
-            href: ../defender-identity/vpn-integration.md
+            href: /defender-for-identity/vpn-integration?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json
           - name: Set entity tags
-            href: ../defender-identity/entity-tags.md
-          - name: Manage security alerts
-            href: ../defender-identity/manage-security-alerts.md
+            href: /defender-for-identity/entity-tags?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json
+          - name: Investigate Defender for Identity alerts
+            href: /defender-for-identity/manage-security-alerts?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json
           - name: Configure detection exclusions
-            href: ../defender-identity/exclusions.md
+            href: /defender-for-identity/exclusions?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json
           - name: Email and syslog notifications
-            href: ../defender-identity/notifications.md
+            href: /defender-for-identity/notifications?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json
       - name: Protect your Office 365 workloads
         href: ../office-365-security/index.yml
       - name: Create Custom Defender XDR reports
@@ -437,13 +437,19 @@
               - name: Get started with Microsoft Defender Experts for XDR service
                 href: get-started-xdr.md
               - name: Start using Microsoft Defender Experts for XDR service
-                href: start-using-mdex-xdr.md
-              - name: Communicate with Defender Experts
-                href: communicate-defender-experts-xdr.md
-              - name: Auditing
-                href: auditing.md
-              - name: Additional information
-                href: additional-information-xdr.md
+                items: 
+                - name: Managed detection and response
+                  href: managed-detection-and-response-xdr.md
+                - name: Reports
+                  href: reports-xdr.md
+                - name: Communicate with Defender Experts for XDR
+                  href: communicate-defender-experts-xdr.md
+                - name: Defender Experts for Hunting
+                  href: defender-experts-for-hunting.md
+                - name: Ask Defender Experts
+                  href: onboarding-defender-experts-for-hunting.md#collaborate-with-experts-on-demand
+                - name: Auditing
+                  href: auditing.md
               - name: Frequently asked questions
                 items: 
                 - name: General information
@@ -452,8 +458,12 @@
                   href: faq-incident-notifications-xdr.md
                 - name: Managed response
                   href: faq-managed-response.md
-              - name: How Defender Experts for XDR permissions work
-                href: dex-xdr-permissions.md
+              - name: Additional information on Defender Experts for XDR
+                items:
+                - name: Important considerations  
+                  href: additional-information-xdr.md
+                - name: How Defender Experts for XDR permissions work
+                  href: dex-xdr-permissions.md
        - name: Ransomware playbooks
          items: 
               - name: Detecting human-operated ransomware attacks with Microsoft Defender XDR
@@ -630,6 +640,8 @@
             href: virus-initiative-criteria.md
           - name: Software developer FAQ
             href: developer-faq.yml
+    - name: Microsoft Sentinel docs
+      href: /azure/sentinel
     - name: Microsoft Defender XDR docs
       items: 
        - name: Defender for Office 365

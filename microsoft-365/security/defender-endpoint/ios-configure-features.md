@@ -52,7 +52,7 @@ While enabled by default, there might be some cases that require you to disable 
 
 3. Toggle off **Connect On Demand** to disable VPN.
 
-   :::image type="content" source="images/ios-vpn-config.png" alt-text="The toggle button for the VPN config Connect on demand option" lightbox="images/ios-vpn-config.png":::
+   :::image type="content" source="media/ios-vpn-config.png" alt-text="The toggle button for the VPN config Connect on demand option" lightbox="media/ios-vpn-config.png":::
 
 > [!NOTE]
 > Web Protection isn't available when VPN is disabled. To re-enable Web Protection, open the Microsoft Defender for Endpoint app on the device and click or tap **Start VPN**.
@@ -129,7 +129,7 @@ Follow the below steps for setting up MAM config for unenrolled devices for Netw
 
 1. In the Microsoft Intune admin center, navigate to **Apps** \> **App configuration policies** \> **Add** \> **Managed apps** \> **Create a new App configuration policy**.
 
-   :::image type="content" source="images/addiosconfig.png" alt-text="Add configuration policy." lightbox="images/addiosconfig.png":::
+   :::image type="content" source="media/addiosconfig.png" alt-text="Add configuration policy." lightbox="media/addiosconfig.png":::
 
 2. Provide a name and description to uniquely identify the policy. Then select **Select Public apps**, and choose **Microsoft Defender for Platform iOS/iPadOS**.
 
@@ -137,7 +137,7 @@ Follow the below steps for setting up MAM config for unenrolled devices for Netw
 
 3. On the Settings page, add **DefenderNetworkProtectionEnable** as the key and the value as `true` to enable network protection. (Network protection is disabled by default.)
 
-   :::image type="content" source="images/addiosconfigvalue.png" alt-text="Add configuration value." lightbox="images/addiosconfigvalue.png":::
+   :::image type="content" source="media/addiosconfigvalue.png" alt-text="Add configuration value." lightbox="media/addiosconfigvalue.png":::
 
 4. For other configurations related to network protection, add the following keys and appropriate corresponding value.
 
@@ -150,7 +150,7 @@ Follow the below steps for setting up MAM config for unenrolled devices for Netw
   
 5. In the **Assignments** section, an admin can choose groups of users to include and exclude from the policy.
 
-   :::image type="content" source="images/assigniosconfig.png" alt-text="Assign configuration." lightbox="images/assigniosconfig.png":::
+   :::image type="content" source="media/assigniosconfig.png" alt-text="Assign configuration." lightbox="media/assigniosconfig.png":::
 
 6. Review and create the configuration policy.
 
@@ -272,17 +272,17 @@ Follow the steps below to create a compliance policy against jailbroken devices.
 
 1. In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Devices** \> **Compliance policies** \> **Create Policy**. Select "iOS/iPadOS" as platform and select **Create**.
 
-   :::image type="content" source="images/ios-jb-policy.png" alt-text="The Create Policy tab" lightbox="images/ios-jb-policy.png":::
+   :::image type="content" source="media/ios-jb-policy.png" alt-text="The Create Policy tab" lightbox="media/ios-jb-policy.png":::
 
 2. Specify a name of the policy, such as *Compliance Policy for Jailbreak*.
 
 3. In the compliance settings page, select to expand **Device Health** section and select **Block** for **Jailbroken devices** field.
 
-   :::image type="content" source="images/ios-jb-settings.png" alt-text="The Compliance settings tab" lightbox="images/ios-jb-settings.png":::
+   :::image type="content" source="media/ios-jb-settings.png" alt-text="The Compliance settings tab" lightbox="media/ios-jb-settings.png":::
 
 4. In the **Actions for noncompliance** section, select the actions as per your requirements and select **Next**.
 
-   :::image type="content" source="images/ios-jb-actions.png" alt-text="The Actions for noncompliance tab" lightbox="images/ios-jb-actions.png":::
+   :::image type="content" source="media/ios-jb-actions.png" alt-text="The Actions for noncompliance tab" lightbox="media/ios-jb-actions.png":::
 
 5. In the **Assignments** section, select the user groups that you want to include for this policy and then select **Next**.
 

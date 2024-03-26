@@ -30,7 +30,7 @@ search.appverid: met150
 
 Before you test or enable attack surface reduction rules, you should plan your deployment. Careful planning helps you test your attack surface reduction rules deployment and get ahead of any rule exceptions. When planning to test attack surface reduction rules, make sure you start with the right business unit. Start with a small group of people in a specific business unit. You can identify some champions within a particular business unit who can provide feedback to help tune your implementation.
 
-> :::image type="content" source="images/asr-rules-planning-steps.png" alt-text="The attack surface reduction rules planning steps." lightbox="images/asr-rules-planning-steps.png":::
+> :::image type="content" source="media/asr-rules-planning-steps.png" alt-text="The attack surface reduction rules planning steps." lightbox="media/asr-rules-planning-steps.png":::
 
 > [!IMPORTANT]
 >

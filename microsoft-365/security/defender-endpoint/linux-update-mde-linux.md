@@ -4,6 +4,7 @@ description: Learn how to schedule an update of the Microsoft Defender for Endpo
 ms.service: defender-endpoint
 ms.author: siosulli
 author: siosulli
+ms.reviewer: gopkr
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro
@@ -142,7 +143,7 @@ Use the following commands:
 cron - Manage cron.d and crontab entries
 ```
 
-See <https://docs.ansible.com/ansible/latest/modules/cron_module.html> for more information.
+See <https://docs.ansible.com/ansible/latest> for more information.
 
 ### To set crontabs in Chef
 

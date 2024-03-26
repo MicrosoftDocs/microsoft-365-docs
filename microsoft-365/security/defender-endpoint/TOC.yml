@@ -14,8 +14,11 @@
       href: minimum-requirements.md
     - name: Supported Microsoft Defender for Endpoint capabilities by platform
       href: supported-capabilities-by-platform.md
-    - name: What's new in Microsoft Defender for Endpoint?
+    - name: What's new in Defender for Endpoint
       href: whats-new-in-microsoft-defender-endpoint.md
+      items: 
+      - name: What's new in Defender for Endpoint - archive
+        href: whats-new-mde-archive.md
     - name: What's new in Microsoft Defender for Endpoint on Windows
       href: windows-whatsnew.md
     - name: What's new in Microsoft Defender for Endpoint on other platforms
@@ -58,6 +61,12 @@
     items:
     - name: Evaluate capabilities overview
       href: evaluation-lab.md
+    - name: Evaluate Microsoft Defender Antivirus
+      items:
+      - name: Overview
+        href: evaluate-microsoft-defender-antivirus.md
+      - name: Evaluate Microsoft Defender Antivirus using Powershell
+        href: microsoft-defender-antivirus-using-powershell.md
     - name: Microsoft defender for endpoint demonstrations
       items:
       - name: Microsoft Defender for Endpoint demonstration scenarios
@@ -210,6 +219,31 @@
         href: mac-privacy.md
       - name: Resources for Microsoft Defender for Endpoint on macOS
         href: mac-resources.md
+      - name: Troubleshoot Microsoft Defender for Endpoint on macOS
+        items:
+        - name: Troubleshooting mode on macOS
+          href: mac-troubleshoot-mode.md
+        - name: Troubleshoot macOS installation issues
+          href: mac-support-install.md
+        - name: Troubleshoot macOS performance issues overview
+          href: mac-support-perf-overview.md
+          displayName: Troubleshoot performance issues for Microsoft Defender for Endpoint on macOS
+        - name: Troubleshoot performance issues
+          href: mac-support-perf.md
+        - name: Troubleshoot cloud connectivity
+          href: troubleshoot-cloud-connect-mdemac.md
+        - name: Troubleshoot license issues
+          href: mac-support-license.md
+        - name: Troubleshoot system extention issues
+          href: mac-support-sys-ext.md
+          items:
+          - name: Intune
+            href: manage-profiles-approve-sys-extensions-intune.md
+          - name: JamF
+            href: manage-sys-extensions-using-jamf.md
+          - name: Manual deployment
+            href: manage-sys-extensions-manual-deployment.md
+        
     - name: Microsoft Defender for Endpoint on Linux
       items:
        - name: Deploy Defender for Endpoint on Linux
@@ -248,6 +282,8 @@
            href: linux-update-MDE-Linux.md
          - name: Configure eBPF-based sensor
            href: linux-support-ebpf.md 
+         - name: Configure Offline Security Intelligence Update
+           href: linux-support-offline-security-intelligence-update.md
        - name: Update Defender for Endpoint on Linux
          href: linux-updates.md
        - name: Privacy for Defender for Endpoint on Linux
@@ -550,8 +586,6 @@
           href: office-365-microsoft-defender-antivirus.md
       - name: Safety Scanner Download
         href: safety-scanner-download.md
-      - name: Evaluate Microsoft Defender Antivirus
-        href: evaluate-microsoft-defender-antivirus.md
       - name: Configure Microsoft Defender Antivirus features
         href: configure-microsoft-defender-antivirus-features.md
       - name: Manage exclusions for Defender for Endpoint and Microsoft Defender Antivirus
@@ -563,6 +597,8 @@
           href: enable-cloud-protection-microsoft-defender-antivirus.md
         - name: Specify the cloud protection level
           href: specify-cloud-protection-level-microsoft-defender-antivirus.md
+        - name: Configure the cloud block timeout period
+          href: configure-cloud-block-timeout-period-microsoft-defender-antivirus.md
         - name: Cloud protection and sample submission
           href: cloud-protection-microsoft-antivirus-sample-submission.md
       - name: Configure and validate Microsoft Defender Antivirus network connections
@@ -585,10 +621,12 @@
         href: configure-block-at-first-sight-microsoft-defender-antivirus.md
       - name: Antimalware Scan Interface (AMSI) integration
         href: amsi-on-mdav.md
-      - name: Configure the cloud block timeout period
-        href: configure-cloud-block-timeout-period-microsoft-defender-antivirus.md
       - name: Configure behavioral, heuristic, and real-time protection
         href: configure-protection-features-microsoft-defender-antivirus.md
+      - name: Advanced technologies at the core of Microsoft Defender Antivirus
+        href: adv-tech-of-mdav.md
+      - name: Behavior monitoring with Microsoft Defender Antivirus
+        href: behavior-monitor.md
       - name: Detect and block potentially unwanted applications
         href: detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md
       - name: Enable and configure Microsoft Defender Antivirus always-on protection in Group Policy
@@ -724,8 +762,6 @@
             href: device-health-sensor-health-os.md
         - name: Troubleshoot performance issues related to real-time protection
           href: troubleshoot-performance-issues.md
-        - name: Troubleshoot Microsoft Defender Antivirus reporting in Update Compliance
-          href: troubleshoot-reporting.md
         - name: Collect diagnostic data of Microsoft Defender Antivirus
           href: collect-diagnostic-data.md
         - name: Collect diagnostic data for Update Compliance and Microsoft Defender Antivirus
@@ -751,9 +787,13 @@
 
       - name: UEFI scanning in Defender for Endpoint
         href: uefi-scanning-in-defender-for-endpoint.md
-
-      - name: "Early Launch Antimalware (ELAM) and Microsoft Defender Antivirus  "
+      - name: Run Microsoft Defender Antivirus in a sandbox
+        href: sandbox-mdav.md
+      - name: Early Launch Antimalware (ELAM) and Microsoft Defender Antivirus
         href: elam-on-mdav.md
+      - name: Hardware acceleration and Microsoft Defender Antivirus
+        href:  hardware-acceleration-and-mdav.md
+        
     - name: Address false positives/negatives in Microsoft Defender for Endpoint
       href: defender-endpoint-false-positives-negatives.md
 
@@ -919,6 +959,22 @@
 
   - name: Reference
     items:
+    - name: Microsoft Security Resources
+      items: 
+        - name: Threat actor naming
+          href: ../defender/microsoft-threat-actor-naming.md
+        - name: Malware names
+          href: ../defender/malware-naming.md
+        - name: How Microsoft identifies malware and PUA
+          href: ../defender/criteria.md
+        - name: Submit files for analysis
+          href: ../defender/submission-guide.md
+        - name: Troubleshoot MSI portal errors caused by admin block
+          href: ../defender/portal-submission-troubleshooting.md
+        - name: Microsoft virus initiative
+          href: ../defender/virus-initiative-criteria.md
+        - name: Software developer FAQ
+          href: ../defender/developer-faq.yml
     - name: Malware information
       items: 
        - name: Coinminers
@@ -945,7 +1001,7 @@
          href: malware/trojans-malware.md
        - name: Understanding malware
          href: malware/understanding-malware.md
-       - name: Unwated software
+       - name: Unwanted software
          href: malware/unwanted-software.md
        - name: Worms
          href: malware/worms-malware.md
@@ -1386,6 +1442,9 @@
         href: mac-troubleshoot-mode.md
       - name: Troubleshoot macOS installation issues
         href: mac-support-install.md
+      - name: Troubleshoot macOS performance issues overview
+        href: mac-support-perf-overview.md
+        displayName: Troubleshoot performance issues for Microsoft Defender for Endpoint on macOS
       - name: Troubleshoot performance issues
         href: mac-support-perf.md
       - name: Troubleshoot cloud connectivity
@@ -1451,13 +1510,12 @@
         href: troubleshoot-mdatp.md
       - name: Contact Microsoft Defender for Endpoint support
         href: contact-support.md
-
     - name: Troubleshoot live response issues
       href: troubleshoot-live-response.md
-
     - name: Collect support logs using LiveAnalyzer
       href: troubleshoot-collect-support-log.md
-
+    - name: Troubleshoot Microsoft Defender Antivirus settings
+      href: troubleshoot-settings.md
     - name: Troubleshoot attack surface reduction issues
       items:
       - name: Network protection

@@ -93,6 +93,16 @@ The following ASR rules DO NOT honor Microsoft Defender Antivirus exclusions:
 > [!NOTE]
 > For information about configuring per-rule exclusions, see the section titled **Configure ASR rules per-rule exclusions** in the topic [Test attack surface reduction rules](attack-surface-reduction-rules-deployment-test.md).
 
+## ASR rules and Defender for Endpoint Indicators of Compromise (IOC)
+
+The following ASR rules DO NOT honor Microsoft Defender for Endpoint Indicators of Compromise (IOC):
+
+| ASR rule name | Description |
+|---|---|
+| Block credential stealing from the Windows local security authority subsystem (lsass.exe) | Doesn't honor indicators of compromise for files or certificates. |
+| Block Office applications from injecting code into other processes |Doesn't honor indicators of compromise for files or certificates. |
+| Block Win32 API calls from Office macros |Doesn't honor indicators of compromise for certificates. |
+
 ## ASR rules supported operating systems
 
 The following table lists the supported operating systems for rules that are currently released to general availability. The rules are listed alphabetical order in this table.
@@ -318,6 +328,9 @@ LSASS authenticates users who sign in on a Windows computer. Microsoft Defender 
 By default the state of this rule is set to block. In most cases, many processes make calls to LSASS for access rights that are not needed. For example, such as when the initial block from the ASR rule results in a subsequent call for a lesser privilege which subsequently succeeds. For information about the types of rights that are typically requested in process calls to LSASS, see: [Process Security and Access Rights](/windows/win32/procthread/process-security-and-access-rights).
 
 > [!NOTE]
+> The Block credential stealing from the Windows local security authority subsystem ASR rule does not support WARN mode.
+
+> [!NOTE]
 > In some apps, the code enumerates all running processes and attempts to open them with exhaustive permissions. This rule denies the app's process open action and logs the details to the security event log. This rule can generate a lot of noise. If you have an app that simply enumerates LSASS, but has no real impact in functionality, there is no need to add it to the exclusion list. By itself, this event log entry doesn't necessarily indicate a malicious threat.
 
 Intune name: `Flag credential stealing from the Windows local security authority subsystem`
@@ -447,6 +460,9 @@ Dependencies: Microsoft Defender Antivirus, RPC
 ### Block Office applications from injecting code into other processes
 
 This rule blocks code injection attempts from Office apps into other processes.
+
+> [!NOTE]
+> The Block applications from injecting code into other processes ASR rule does not support WARN mode.
 
 > [!IMPORTANT]
 > This rule requires restarting Microsoft 365 Apps (Office applications) for the configuration changes to take effect.

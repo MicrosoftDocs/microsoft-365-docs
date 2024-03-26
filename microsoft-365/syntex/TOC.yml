@@ -241,11 +241,11 @@
 
     - name: Microsoft 365 Backup (Preview)
       items: 
-        - name: Overview 
+        - name: Overview
           href: backup/backup-overview.md
         - name: Admin setup 
           href: backup/backup-setup.md
-        - name: Set up billing 
+        - name: Billing 
           href: backup/backup-billing.md
         - name: Pricing model
           href: backup/backup-pricing.md
@@ -329,9 +329,6 @@
                  href: solution-manage-contracts-step2.md
                - name: Step 3. Use Power Automate
                  href: solution-manage-contracts-step3.md
-
-    - name: Video library 
-      href: video-library.md
 
     - name: Syntex PowerShell
       items: 
