@@ -28,7 +28,9 @@ ms.date: 03/01/2024
 
 
 **Applies to:**
-- Microsoft Defender 
+- Microsoft Defender unified security operations center (SOC) platform, including:
+    - Microsoft Sentinel
+    - Microsoft Defender XDR
 
 
 Advanced hunting in the unified portal allows you to view and query all data from Microsoft Defender XDR including data from various Microsoft security services and Microsoft Sentinel, which includes data from non-Microsoft products, in a single platform. You can also access and use all your existing Microsoft Sentinel workspace content, including queries and functions. 
@@ -39,7 +41,7 @@ Querying from a single portal across different data sets makes hunting more effi
 ## How to access
 
 ### Required roles and permissions
-To query across Microsoft Sentinel and Microsoft Defender XDR data in the unified advanced hunting page, you must have access to Microsoft Defender XDR advanced hunting (see [Required roles and permissions](custom-roles.md#required-roles-and-permissions)) and at least Microsoft Sentinel Reader (see [Microsoft Sentinel-specific roles](https://learn.microsoft.com/azure/sentinel/roles#microsoft-sentinel-specific-roles)).
+To query across Microsoft Sentinel and Microsoft Defender XDR data in the unified advanced hunting page, you must have access to Microsoft Defender XDR advanced hunting (see [Required roles and permissions](custom-roles.md#required-roles-and-permissions)) and at least Microsoft Sentinel Reader (see [Microsoft Sentinel-specific roles](azure/sentinel/roles.md#microsoft-sentinel-specific-roles)).
 
 In the unified portal, you can query any data in any workload that you can currently access based on the roles and permissions you have. 
 
@@ -92,7 +94,7 @@ Other options include:
 - **View details** – opens the function side pane containing its details
 - **Load function code** – opens a new tab containing the function code
 
-For editable functions, additional options are available when you select the  ![kebab icon](../../media/ah-kebab.png):
+For editable functions, additional options are available when you select the vertical ellipses:
 - **Edit details** – opens the function side pane to allow you to edit details about the function (except folder names for Sentinel functions)
 - **Delete** – deletes the function
 
@@ -105,10 +107,10 @@ To use a saved query from Sentinel, go to the **Queries** tab and scroll until y
 - **Open in query editor** – loads the query in the query editor
 - **View details** – opens the query details side pane where you can inspect the query, run the query, or open the query in the editor
 
-:::image type="content" source="../../media/advanced-hunting-unified-view-details.png" alt-text="The Link to incident option of the Results tab in the Microsoft Defender portal" lightbox="../../media/advanced-hunting-unified-view-details.png":::
+   :::image type="content" source="../../media/advanced-hunting-unified-view-details.png" alt-text="The Link to incident option of the Results tab in the Microsoft Defender portal" lightbox="../../media/advanced-hunting-unified-view-details.png":::
 
 
-For editable queries, additional options are available when you select the vertical ellipses ( ![kebab icon](../../media/ah-kebab.png) ):
+For editable queries, additional options are available:
 
 - **Edit details** – opens the query details side pane with the option to edit the details like description (if applicable) and the query itself; only the folder names (location) of Sentinel queries can’t be edited
 - **Delete** – deletes the query
@@ -144,7 +146,7 @@ For Microsoft Defender XDR data, you can take further action by selecting the ch
 
 ## Known issues
 
-- The `IdentityInf`o table from Sentinel is not available, as the IdentityInfo remains as is in Defender XDR. Sentinel features like analytics rules that query this table won’t be impacted as they are querying the Log Analytics workspace directly.
+- The `IdentityInfo` table from Sentinel is not available, as the IdentityInfo remains as is in Defender XDR. Sentinel features like analytics rules that query this table won’t be impacted as they are querying the Log Analytics workspace directly.
 - The Sentinel `SecurityAlert` table is replaced by `AlertInfo` and `AlertEvidence` tables, which both contain all the data on alerts. While SecurityAlert is not available in the schema tab, you can still use it in queries using the advanced hunting editor. This provision is made so as not to break existing queries from Sentinel that use this table. 
 - Guided hunting mode is supported for Defender XDR data only.
 - Custom detections and take actions capabilities are supported for Defender XDR data only.
