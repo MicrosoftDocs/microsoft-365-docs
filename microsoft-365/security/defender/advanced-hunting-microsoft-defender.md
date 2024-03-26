@@ -155,7 +155,7 @@ For Microsoft Defender XDR data, you can take further action by selecting the ch
 - The Microsoft Sentinel `SecurityAlert` table is replaced by `AlertInfo` and `AlertEvidence` tables, which both contain all the data on alerts. While SecurityAlert isn't available in the schema tab, you can still use it in queries using the advanced hunting editor. This provision is made so as not to break existing queries from Microsoft Sentinel that use this table. 
 - Guided hunting mode is supported for Defender XDR data only.
 - Custom detections, links to incidents, and take actions capabilities are supported for Defender XDR data only.
-- Bookmarks aren't supported in the advanced hunting experience. 
+- Bookmarks aren't supported in the advanced hunting experience. They are supported in the **Microsoft Sentinel > Threat management > Hunting** feature.
 - If you're streaming Defender XDR tables to Log Analytics, there might be a difference between the`Timestamp` and `TimeGenerated` columns. In case the data arrives to Log Analytics after 48 hours, it's being overridden upon ingestion to `now()`. Therefore, to get the actual time the event happened, we recommend relying on the `Timestamp` column.
 - Full parity between the Log Analytics grid capabilities and advanced hunting isn't available yet, but the most significant gaps are being closed. You can contact your Microsoft representative to share your feedback about your experience with advanced hunting in the unified portal.
 
