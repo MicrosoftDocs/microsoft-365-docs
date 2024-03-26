@@ -253,7 +253,7 @@ The device configuration profile is now assigned to the selected user group.
 
 3. When the app is installed, open the app and accept the permissions and then your onboarding should be successful.
 
-    :::image type="content" source="images/MDE_new.png" alt-text="Th display of a Microsoft Defender for Endpoint application on a mobile device" lightbox="images/MDE_new.png":::
+    :::image type="content" source="media/MDE_new.png" alt-text="Th display of a Microsoft Defender for Endpoint application on a mobile device" lightbox="media/MDE_new.png":::
 
 4. At this stage the device is successfully onboarded onto Defender for Endpoint on Android. You can verify this on the [Microsoft Defender portal](https://security.microsoft.com) by navigating to the **Device Inventory** page.
 
