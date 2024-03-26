@@ -205,7 +205,7 @@ Once you have installed the MDE on macOS client, you must now onboard the packag
    After installation, you'll see the Microsoft Defender icon in the macOS status bar in the top-right corner.
 
    > [!div class="mx-imgBorder"]
-   > :::image type="content" source="images/mdatp-icon-bar.png" alt-text="Screenshot that shows the Microsoft Defender icon in status bar":::
+   > :::image type="content" source="media/mdatp-icon-bar.png" alt-text="Screenshot that shows the Microsoft Defender icon in status bar":::
 
    You can [troubleshoot license issues for Microsoft Defender for Endpoint on macOS](mac-support-license.md).
 
