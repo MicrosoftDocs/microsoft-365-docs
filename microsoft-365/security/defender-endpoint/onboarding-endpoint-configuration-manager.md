@@ -124,7 +124,7 @@ From within the Microsoft Defender portal it's possible to download the `.onboar
 
 2. Under Deployment method, select the supported version of **Microsoft Configuration Manager**.
 
-    :::image type="content" source="images/mdatp-onboarding-wizard.png" alt-text="The Microsoft Configuration Manager wizard10" lightbox="images/mdatp-onboarding-wizard.png":::
+    :::image type="content" source="media/mdatp-onboarding-wizard.png" alt-text="The Microsoft Configuration Manager wizard10" lightbox="media/mdatp-onboarding-wizard.png":::
 
 3. Select **Download package**.
 

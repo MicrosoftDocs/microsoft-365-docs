@@ -358,7 +358,7 @@ A standard [Company Portal installation](/intune-user-help/enroll-your-device-in
 
 3. You should also see the Microsoft Defender for Endpoint icon in the top-right corner.
 
-   :::image type="content" source="images/mdatp-icon-bar.png" alt-text="The icon for Microsoft Defender for Endpoint in the status bar":::
+   :::image type="content" source="media/mdatp-icon-bar.png" alt-text="The icon for Microsoft Defender for Endpoint in the status bar":::
 
 ### Step 13: Publish application
 
