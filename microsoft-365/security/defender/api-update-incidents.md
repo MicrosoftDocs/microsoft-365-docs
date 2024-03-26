@@ -1,12 +1,8 @@
 ---
 title: Update incident API
 description: Learn how to update incidents using Microsoft Defender XDR API
-keywords: update, api, incident
 search.product: eADQiWindows 10XVcnh
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords:
   - NOCSH
 ms.author: macapara
@@ -141,4 +137,5 @@ Here's an example of the request.
 - [Incident APIs](api-incident.md)
 - [List incidents](api-list-incidents.md)
 - [Incidents overview](incidents-overview.md)
+
 [!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]
