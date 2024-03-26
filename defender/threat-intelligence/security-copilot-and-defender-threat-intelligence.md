@@ -43,9 +43,7 @@ This article introduces you to Copilot and includes sample prompts that can help
 ## Using Copilot for Security standalone portal to get threat intelligence
 
 1.	Go to [Microsoft Copilot for Security](https://go.microsoft.com/fwlink/?linkid=2247989) and sign in with your credentials.
-2.	Make sure that the Defender TI plugin is turned on. In the prompt bar, select the **Sources** icon then choose **Plugins**. 
-   
-      ![Screenshot of the Microsoft Copilot for Security home page with the plugin icon at the lower-left corner highlighted.](/defender/threat-intelligence/media/defender-ti-and-copilot//copilot-plugin-button.png)
+2.	Make sure that the Defender TI plugin is turned on. In the prompt bar, select the **Sources** icon ![Screenshot of the Sources icon](/defender/threat-intelligence/media/defender-ti-and-copilot/copilot-sources-icon.png). 
 
     In the **Manage plugins** pop-up window that appears, confirm that the **Microsoft Defender Threat Intelligence** toggle is turned on, then close the window.
 
@@ -62,14 +60,14 @@ Copilot for Security has built-in system features that can get data from the dif
 
 To view the list of built-in system capabilities for Defender TI:
 
-1.	In the prompt bar, select the **Prompts** icon.
+1.	In the prompt bar, select the **Prompts** icon ![Screenshot of the prompts icon](/defender/threat-intelligence/media/defender-ti-and-copilot/copilot-prompts-icon.png).
 2.	Select **See all system capabilities**. The *Microsoft Defender Threat Intelligence* section lists all the available capabilities for Defender TI that you can use.
 
 Copilot also has the following promptbooks that also deliver information from Defender TI:
 - **Vulnerability impact assessment** - Generates a report summarizing the intelligence for a known vulnerability, including steps on how to address it.
 - **Threat actor profile** - Generates a report profiling a known threat actor, including suggestions to defend against their common tools and tactics.
 
-To view these promptbooks, in the prompt bar, select the **Prompts** icon then select **Promptbooks**. 
+To view these promptbooks, in the prompt bar, select the **Prompts** icon then select **See all promptbooks**. 
 
 ### Sample prompts for Defender TI
 
@@ -152,4 +150,4 @@ When you interact with Copilot for Security to get Defender TI data, Copilot pul
 ### See also
 - [What is Microsoft Copilot for Security?](/security-copilot/microsoft-security-copilot)
 - [Privacy and data security in Microsoft Copilot for Security](/security-copilot/privacy-data-security)
-- [Using Microsoft Copilot in Defender for threat intelligence](using-copilot-threat-intelligence-defender-xdr.md)
+- [Using Microsoft Copilot for Security for threat intelligence](using-copilot-threat-intelligence-defender-xdr.md)
