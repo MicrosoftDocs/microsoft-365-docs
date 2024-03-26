@@ -56,7 +56,7 @@ Copy the latest .admx and .adml to the Domain Controller [Central Store](/troubl
 
 This section describes the process for setting up the pilot UAT / Test / QA environment.
 
-:::image type="content" source="media/microsoft-defender-antivirus-deploy-ring-gp-mu-schedule.png" alt-text="Screenshot that shows an example schedule for Microsoft Defender Antivirus ring deployments in Group Policy and Microsoft Updates environments." lightbox="images/microsoft-defender-antivirus-deploy-ring-gp-mu-schedule.png":::
+:::image type="content" source="media/microsoft-defender-antivirus-deploy-ring-gp-mu-schedule.png" alt-text="Screenshot that shows an example schedule for Microsoft Defender Antivirus ring deployments in Group Policy and Microsoft Updates environments." lightbox="media/microsoft-defender-antivirus-deploy-ring-gp-mu-schedule.png":::
 
 > [!NOTE]
 > Security intelligence update (SIU) is equivalent to signature updates, which is the same as definition updates.
