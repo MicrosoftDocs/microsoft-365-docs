@@ -43,7 +43,7 @@ Querying from a single portal across different data sets makes hunting more effi
 ## How to access
 
 ### Required roles and permissions
-To query across Microsoft Sentinel and Microsoft Defender XDR data in the unified advanced hunting page, you must have access to Microsoft Defender XDR advanced hunting (see [Required roles and permissions](custom-roles.md#required-roles-and-permissions)) and at least Microsoft Sentinel Reader (see [Microsoft Sentinel-specific roles](azure/sentinel/roles.md#microsoft-sentinel-specific-roles)).
+To query across Microsoft Sentinel and Microsoft Defender XDR data in the unified advanced hunting page, you must have access to Microsoft Defender XDR advanced hunting (see [Required roles and permissions](/custom-roles.md#required-roles-and-permissions)) and at least Microsoft Sentinel Reader (see [Microsoft Sentinel-specific roles](/azure/sentinel/roles.md#microsoft-sentinel-specific-roles)).
 
 In the unified portal, you can query any data in any workload that you can currently access based on the roles and permissions you have. 
 
@@ -53,7 +53,7 @@ In Microsoft Defender, you can connect workspaces by selecting **Connect a works
 
 ## Unified advanced hunting
 
-After connecting your Microsoft Sentinel workspace and Microsoft Defender XDR advanced hunting data, you can start querying Sentinel data from the advanced hunting page. For an overview of advanced hunting features, read [Proactively hunt for threats with advanced hunting](advanced-hunting-overview).
+After connecting your Microsoft Sentinel workspace and Microsoft Defender XDR advanced hunting data, you can start querying Sentinel data from the advanced hunting page. For an overview of advanced hunting features, read [Proactively hunt for threats with advanced hunting](advanced-hunting-overview.md).
 
 ### What to expect for Defender XDR tables streamed to Sentinel
 - **Use tables with longer data retention period in queries** – Advanced hunting follows the maximum data retention period configured for the Defender XDR tables. If you stream Defender XDR tables to Sentinel and have a data retention period longer than 30 days for said tables, you can query for the longer period in advanced hunting.
@@ -69,7 +69,7 @@ You can use advanced hunting KQL queries to hunt through Microsoft Defender XDR 
 When you open the advanced hunting page for the first time after connecting a workspace, you can find your Sentinel tables organized by solution after the Microsoft Defender XDR tables under the **Schema** tab.
 
 
-:::image type="content" source="../../media/advanced-hunting-unified-sentinel-data.png" alt-text="The Link to incident option of the Results tab in the Microsoft Defender portal" lightbox="../../media/advanced-hunting-unified-sentinel-data.png":::
+:::image type="content" source="../../media/advanced-hunting-unified-sentinel-data.png" alt-text="Screenshot of advanced hunting schema tab in the Microsoft Defender portal highlighting location of Sentinel tables" lightbox="../../media/advanced-hunting-unified-sentinel-data.png":::
 
 
 Likewise, you can find the functions from Sentinel in the **Functions** tab, and your shared and sample queries from Sentinel can be found in the **Queries** tab inside folders marked **Sentinel**.
@@ -84,7 +84,7 @@ In the unified portal, in addition to viewing the schema column names and descri
 - **Data retention period** – how long the data is set to be kept
 - **Tags** – available for Sentinel data tables
 
-:::image type="content" source="../../media/advanced-hunting-unified-view-schema.png" alt-text="The Link to incident option of the Results tab in the Microsoft Defender portal" lightbox="../../media/advanced-hunting-unified-view-schema.png":::
+:::image type="content" source="../../media/advanced-hunting-unified-view-schema.png" alt-text="Screenshot of the schema information pane in the Microsoft Defender portal" lightbox="../../media/advanced-hunting-unified-view-schema.png":::
 
 ### Use functions
 
@@ -109,7 +109,7 @@ To use a saved query from Sentinel, go to the **Queries** tab and scroll until y
 - **Open in query editor** – loads the query in the query editor
 - **View details** – opens the query details side pane where you can inspect the query, run the query, or open the query in the editor
 
-   :::image type="content" source="../../media/advanced-hunting-unified-view-details.png" alt-text="The Link to incident option of the Results tab in the Microsoft Defender portal" lightbox="../../media/advanced-hunting-unified-view-details.png":::
+   :::image type="content" source="../../media/advanced-hunting-unified-view-details.png" alt-text="Screenshot of the options available in saved queries in the Microsoft Defender portal" lightbox="../../media/advanced-hunting-unified-view-details.png":::
 
 
 For editable queries, additional options are available:
@@ -124,9 +124,9 @@ To help discover threats and anomalous behaviors in your environment, you can cr
 
 For analytics rules that apply to data ingested through the connected Sentinel workspace, select **Manage rules > Create analytics rule**. 
 
-:::image type="content" source="../../media/advanced-hunting-unified-rules.png" alt-text="The Link to incident option of the Results tab in the Microsoft Defender portal" lightbox="../../media/advanced-hunting-unified-rules.png":::
+:::image type="content" source="../../media/advanced-hunting-unified-rules.png" alt-text="Screenshot of the options to create custom analytics or detections in the Microsoft Defender portal" lightbox="../../media/advanced-hunting-unified-rules.png":::
 
-The **Analytics rule wizard** appears. Fill up the required details as described in [Analytics rule wizard—General tab](https://learn.microsoft.com/azure/sentinel/detect-threats-custom#analytics-rule-wizardgeneral-tab).
+The **Analytics rule wizard** appears. Fill up the required details as described in [Analytics rule wizard—General tab](/azure/sentinel/detect-threats-custom.md#analytics-rule-wizardgeneral-tab).
 
 For custom detection rules that apply to Microsoft Defender XDR data, select **Manage rules > Create custom detection**. Read [Create and manage custom detection rules](custom-detection-rules.md) for more information. 
 
@@ -134,7 +134,7 @@ For custom detection rules that apply to Microsoft Defender XDR data, select **M
 
 Results of queries that you have run appear in the **Results** tab. You can export the results to a CSV file by selecting **Export**. 
 
-:::image type="content" source="../../media/advanced-hunting-unified-results.png" alt-text="The Link to incident option of the Results tab in the Microsoft Defender portal" lightbox="../../media/advanced-hunting-unified-results.png":::
+:::image type="content" source="../../media/advanced-hunting-unified-results.png" alt-text="Screenshot of advanced hunting results with options to expand result rows in the Microsoft Defender portal" lightbox="../../media/advanced-hunting-unified-results.png":::
 
 You can also explore the results in-line with the following features:
 
