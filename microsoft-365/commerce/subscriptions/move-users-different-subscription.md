@@ -20,6 +20,7 @@ ms.custom:
 - commerce_subscriptions
 - AdminSurgePortfolio
 - manage_licenses
+- admindeeplinkMAC
 search.appverid: MET150 
 description: "Learn how to move users between subscriptions."
 ms.date: 06/09/2023

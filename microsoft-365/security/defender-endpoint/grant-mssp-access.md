@@ -78,7 +78,7 @@ To implement a multitenant delegated access solution, take the following steps:
 
     To do so, in the customer AD tenant,  access Identity Governance: Catalogs, and add **New Catalog**. In our example, it's called, **MSSP Accesses**.
 
-    :::image type="content" source="images/goverance-catalog.png" alt-text="The new catalog page" lightbox="images/goverance-catalog.png":::
+    :::image type="content" source="media/goverance-catalog.png" alt-text="The new catalog page" lightbox="media/goverance-catalog.png":::
 
     Further more information, see [Create a catalog of resources](/azure/active-directory/governance/entitlement-management-catalog-create).
 

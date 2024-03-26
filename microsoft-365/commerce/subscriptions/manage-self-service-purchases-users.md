@@ -18,6 +18,7 @@ ms.collection:
 ms.custom: 
 - commerce_ssp
 - AdminSurgePortfolio
+- admindeeplinkMAC
 search.appverid:
 - MET150
 description: "Users can learn how to manage their self-service purchases."
