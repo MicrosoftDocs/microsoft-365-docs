@@ -47,7 +47,7 @@ Device entities can be found in the following areas:
 
 You can select devices whenever you see them in the portal to open the device's entity page, which displays more details about the device. For example, you can see the details of devices listed in the alerts of an incident in the Microsoft Defender portal at **Incidents & alerts > Incidents > *incident* > Assets > Devices**.
 
-:::image type="content" source="../../media/entity-page-device/device-incident-assets.png" alt-text="The Users page for an incident in the Microsoft Defender portal.":::
+:::image type="content" source="../../media/entity-page-device/device-incident-assets.png" alt-text="Screenshot of the Users page for an incident in the Microsoft Defender portal.":::
 
 The device entity page presents its information in a tabbed format. This article lays out the types of information available in each tab, and also the actions you can take on a given device.
 
@@ -104,7 +104,7 @@ The main part of the **Overview** tab shows several dashboard-type display cards
  > [!TIP]
  > Exposure level relates to how much the device is complying with security recommendations, while risk level is calculated based on a number of factors, including the types and severity of active alerts.
 
-:::image type="content" source="../../media/entity-page-device/entity-device-overview-tab.png" alt-text="The Overview tab for the device entity page in the Microsoft Defender portal." lightbox="../../media/entity-page-device/entity-device-overview-tab.png":::
+:::image type="content" source="../../media/entity-page-device/entity-device-overview-tab.png" alt-text="Screenshot of the Overview tab for the device entity page in the Microsoft Defender portal." lightbox="../../media/entity-page-device/entity-device-overview-tab.png":::
 
 ## *Incidents and alerts* tab
 
@@ -118,7 +118,7 @@ When an incident or alert is selected, a fly-out appears. From this panel you ca
 
 To see a full page view of an incident or alert, select its title.
 
-:::image type="content" source="../../media/entity-page-device/entity-device-incidents-tab.png" alt-text="The Incidents and alerts tab for the device entity page in the Microsoft Defender portal." lightbox="../../media/entity-page-device/entity-device-incidents-tab.png":::
+:::image type="content" source="../../media/entity-page-device/entity-device-incidents-tab.png" alt-text="Screenshot of the Incidents and alerts tab for the device entity page in the Microsoft Defender portal." lightbox="../../media/entity-page-device/entity-device-incidents-tab.png":::
 
 ## *Timeline* tab
 
@@ -141,7 +141,7 @@ Drill down into the details of individual events by selecting and event and view
 > - [5031](/windows/security/threat-protection/auditing/event-5031) - application blocked from accepting incoming connections on the network
 > - [5157](/windows/security/threat-protection/auditing/event-5157) - blocked connection
 
-:::image type="content" source="../../media/entity-page-device/entity-device-timeline-tab.png" alt-text="The Timeline tab for the device entity page in the Microsoft Defender portal." lightbox="../../media/entity-page-device/entity-device-timeline-tab.png":::
+:::image type="content" source="../../media/entity-page-device/entity-device-timeline-tab.png" alt-text="Screenshot of the Timeline tab for the device entity page in the Microsoft Defender portal." lightbox="../../media/entity-page-device/entity-device-timeline-tab.png":::
 
 #### Event details
 
@@ -177,7 +177,7 @@ Selecting an item from this list opens a flyout containing more details about th
 
 This list can be filtered by product code, weaknesses, and the presence of threats.
 
-:::image type="content" source="../../media/entity-page-device/entity-device-inventories-tab.png" alt-text="The Software inventory tab for device profile in the Microsoft Defender portal" lightbox="../../media/entity-page-device/entity-device-inventories-tab.png":::
+:::image type="content" source="../../media/entity-page-device/entity-device-inventories-tab.png" alt-text="Screenshot of the Software inventory tab for device profile in the Microsoft Defender portal" lightbox="../../media/entity-page-device/entity-device-inventories-tab.png":::
 
 #### Vulnerable components
 
@@ -213,7 +213,7 @@ As with the previous tabs, the choice of columns to be displayed can be customiz
 
 Selecting an item from this list opens a flyout that describes the CVE.
 
-:::image type="content" source="../../media/entity-page-device/entity-device-vulnerabilities-tab.png" alt-text="The Discovered vulnerabilities tab for device profile in the Microsoft Defender portal" lightbox="../../media/entity-page-device/entity-device-vulnerabilities-tab.png":::
+:::image type="content" source="../../media/entity-page-device/entity-device-vulnerabilities-tab.png" alt-text="Screenshot of the Discovered vulnerabilities tab for device profile in the Microsoft Defender portal" lightbox="../../media/entity-page-device/entity-device-vulnerabilities-tab.png":::
 
 ### *Missing KBs* tab
 
