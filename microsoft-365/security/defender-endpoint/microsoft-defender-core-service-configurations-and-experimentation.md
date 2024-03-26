@@ -3,11 +3,11 @@ title: Microsoft Defender Core service configurations and experimentation
 description: Understand the interaction between Microsoft Defender Core Service and the Experimentation and Configuration Service (ECS). 
 search.appverid: met150
 ms.service: defender-endpoint
-ms.author: maccruz
-author: schmurky
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
-manager: dolmont
-ms.date: 03/21/2024
+manager: dansimp
+ms.date: 03/216/2024
 audience: ITPro
 ms.topic: troubleshooting
 ms.subservice: ngp
@@ -19,7 +19,7 @@ ms.collection:
 
 # Microsoft Defender Core service configurations and experimentation 
 
-This article describes the interaction between Microsoft Defender Core Service and the Experimentation and Configuration Service (ECS). Microsoft Defender Core Service communicates with ECS to request and receive different kinds of payloads. These payloads include configurations, feature rollouts, and experiments. 
+This article describes the interaction between Microsoft Defender Core Service and the Experimentation and Configuration Service (ECS). Microsoft Defender Core Service is a part of Microsoft Defender Antivirus and communicates with ECS to request and receive different kinds of payloads. These payloads include configurations, feature rollouts, and experiments. 
 
 > [!IMPORTANT]
 > Make sure clients can access the following URLs so payloads can be received:
