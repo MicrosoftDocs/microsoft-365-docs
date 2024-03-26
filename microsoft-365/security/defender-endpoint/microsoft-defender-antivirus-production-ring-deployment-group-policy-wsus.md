@@ -72,7 +72,7 @@ This section provides information about setting up the production environment us
 
    This is shown in the following figure.
 
-   :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-production-update-service-upstream.png" alt-text="Screenshot that shows a screen capture of the Update Services snap-in console, Choose Upstream Server page." lightbox="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-production-update-service-upstream.png":::
+   :::image type="content" source="media/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-production-update-service-upstream.png" alt-text="Screenshot that shows a screen capture of the Update Services snap-in console, Choose Upstream Server page." lightbox="media/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-production-update-service-upstream.png":::
 
 1. Select **Next**. 
 
@@ -124,7 +124,7 @@ This section provides information about setting up the production environment us
 
    - In **Options**, type _InternalDefinitionUpdateServer_, and then select **OK**. The configured **Define the order of sources for downloading security intelligence updates** page is shown in the following figure.
 
-     :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-gp-download-order.png" alt-text="Screenshot that shows a screen capture of the results from a Microsoft Update Catalog search for KB4052623." lightbox="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-gp-download-order.png"::: 
+     :::image type="content" source="media/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-gp-download-order.png" alt-text="Screenshot that shows a screen capture of the results from a Microsoft Update Catalog search for KB4052623." lightbox="media/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-gp-download-order.png"::: 
 
 1. In **Define the order of sources for downloading security intelligence updates**, select **Enabled**. In **Options**, enter the order of sources for downloading  security intelligence updates. For example, type _InternalDefinitionUpdateServer_.
 
@@ -136,7 +136,7 @@ If you encounter problems with your deployment, create or append your Microsoft 
  
    Go to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > (administrator-defined) _PolicySettingName_. For example, _MDAV\_Settings\_Production_, right-click, and then select **Edit**. **Edit** for **MDAV\_Settings\_Production** is shown in the following figure:
 
-   :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-gp-policy-edit.png" alt-text="Screenshot that shows a screen capture of the administrator-defined Microsoft Defender Antivirus policy Edit option." lightbox="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-gp-policy-edit.png"::: 
+   :::image type="content" source="media/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-gp-policy-edit.png" alt-text="Screenshot that shows a screen capture of the administrator-defined Microsoft Defender Antivirus policy Edit option." lightbox="media/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-gp-policy-edit.png"::: 
 
 1. Select **Define the order of sources for downloading security intelligence updates**.
 
@@ -144,13 +144,13 @@ If you encounter problems with your deployment, create or append your Microsoft 
 
 1. Under **Options**, change the entry to _FileShares_, select **Apply**, and then select **OK**. This change is shown in the following figure:
 
-   :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-gp-policy-define-order.png" alt-text="Screenshot that shows a screen capture of the Define the order of sources for downloading security intelligence updates page." lightbox="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-gp-policy-define-order.png"::: 
+   :::image type="content" source="media/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-gp-policy-define-order.png" alt-text="Screenshot that shows a screen capture of the Define the order of sources for downloading security intelligence updates page." lightbox="media/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-gp-policy-define-order.png"::: 
 
 1. Select **Define the order of sources for downloading security intelligence updates**.
 
 1. Select the radio button named **Disabled**, select **Apply**, and then select **OK**. The disabled option is shown in the following figure:
 
-   :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-gp-policy-disabled.png" alt-text="Screenshot that shows a screen capture of the Define the order of sources for downloading security intelligence updates page with Security Intelligence updates disabled." lightbox="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-gp-policy-disabled.png"::: 
+   :::image type="content" source="media/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-gp-policy-disabled.png" alt-text="Screenshot that shows a screen capture of the Define the order of sources for downloading security intelligence updates page with Security Intelligence updates disabled." lightbox="media/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-gp-policy-disabled.png"::: 
 
 1. The change is active when Group Policy updates. There are two methods to refresh Group Policy:
 
@@ -161,7 +161,7 @@ If you encounter problems with your deployment, create or append your Microsoft 
 
    - Right-click on an organizational unit (OU) that contains the machines (for example, Desktops), select **Group Policy Update**. This UI command is the equivalent of doing a gpupdate.exe /force on every machine in that OU. The feature to force Group Policy to refresh is shown in the following figure:
 
-     :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-gp-management-console.png" alt-text="Screenshot that shows a screen capture of the Group Policy Management console, initiating a forced update." lightbox="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-gp-management-console.png"::: 
+     :::image type="content" source="media/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-gp-management-console.png" alt-text="Screenshot that shows a screen capture of the Group Policy Management console, initiating a forced update." lightbox="media/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-gp-management-console.png"::: 
 
 1. After the issue is resolved, set the **Signature Update Fallback Order** back to the original setting. `InternalDefinitionUpdateServer|MicrosoftUpdateServer|MMPC|FileShare`.
 
