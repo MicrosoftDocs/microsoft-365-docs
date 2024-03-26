@@ -42,10 +42,10 @@ Updates properties of existing incident. Updatable properties are: `status`, `de
 
 ### Quotas, resource allocation, and other constraints
 
-1. You can make up to 50 calls per minute or 1500 calls per hour before you hit the throttling threshold.
+1. You can make up to 50 calls per minute or 1,500 calls per hour before you hit the throttling threshold.
 2. You can set the `determination` property only if `classification` is set to TruePositive.
 
-If your request is throttled, it will return a `429` response code. The response body will indicate the time when you can begin making new calls.
+If your request is throttled, it returns a `429` response code. The response body indicates the time when you can begin making new calls.
 
 ## Permissions
 
@@ -74,7 +74,7 @@ Content-Type|String|application/json. **Required**.
 
 ## Request body
 
-In the request body, supply the values for the fields that should be updated. Existing properties that aren't included in the request body will maintain their values, unless they have to be recalculated due to changes to related values. For best performance, you should omit existing values that haven't changed.
+In the request body, supply the values for the fields that should be updated. Existing properties that aren't included in the request body maintain their values, unless they have to be recalculated due to changes to related values. For best performance, you should omit existing values that didn't change.
 
 Property|Type|Description
 ---|---|---
@@ -90,7 +90,7 @@ comment|string|Comment to be added to the incident.
 
 ## Response
 
-If successful, this method returns `200 OK`. The response body will contain the incident entity with updated properties. If an incident with the specified ID wasn't found, the method returns
+If successful, this method returns `200 OK`. The response body contain the incident entity with updated properties. If an incident with the specified ID wasn't found, the method returns
  `404 Not Found`.
 
 ## Example
