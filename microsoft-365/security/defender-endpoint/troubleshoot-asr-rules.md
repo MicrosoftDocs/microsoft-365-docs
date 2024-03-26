@@ -118,7 +118,7 @@ You can find this utility in *%ProgramFiles%\Windows Defender\MpCmdRun.exe*. You
 
 To generate the support information, type *MpCmdRun.exe -getfiles*. After a while, several logs will be packaged into an archive (MpSupportFiles.cab) and made available in *C:\ProgramData\Microsoft\Windows Defender\Support*.
 
-:::image type="content" source="images/malware-prot-logsnew.png" alt-text="The malware protection logs" lightbox="images/malware-prot-logsnew.png":::
+:::image type="content" source="media/malware-prot-logsnew.png" alt-text="The malware protection logs" lightbox="media/malware-prot-logsnew.png":::
 
 Extract that archive and you'll have many files available for troubleshooting purposes.
 
