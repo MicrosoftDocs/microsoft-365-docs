@@ -126,7 +126,7 @@ tamper_protection                           : "audit"
 sudo mdatp config tamper-protection enforcement-level --value block
 ```
 
-![Image of manual configuration command](images/manual-config-cmd.png)
+![Image of manual configuration command](media/manual-config-cmd.png)
 
 > [!NOTE]
 > You must use managed configuration profile (deployed via MDM) on production machines. If a local admin changed tamper protection mode via a manual configuration, they can change it to a less restrictive mode at any time as well. If tamper protection mode was set via a managed profile, only a global admin will be able to undo it.
