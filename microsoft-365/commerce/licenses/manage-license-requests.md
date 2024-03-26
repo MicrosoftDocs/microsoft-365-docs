@@ -20,6 +20,7 @@ ms.custom:
 - commerce_licensing
 - MACBillingLicensesRequests
 - AdminSurgePortfolio
+- admindeeplinkMAC
 search.appverid: MET150
 description: "Learn how to review and approve or deny license requests for products and services from users in the Microsoft 365 admin center."
 ms.date: 10/06/2023

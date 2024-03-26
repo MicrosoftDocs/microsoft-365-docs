@@ -26,6 +26,7 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - AdminTemplateSet
+- admindeeplinkMAC
 description: "Learn how to redeem a product key to activate or extend your Microsoft business subscription." 
 ms.date: 09/07/2023
 ---
