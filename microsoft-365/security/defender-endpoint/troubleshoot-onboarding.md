@@ -429,62 +429,62 @@ The steps below provide guidance for the following scenario:
 
 15. In **Summary**, select **Next**.
 
-    :::image type="content" source="images/mecm-15.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-15" lightbox="images/mecm-15.png":::
+    :::image type="content" source="media/mecm-15.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-15" lightbox="media/mecm-15.png":::
 
 16. In **Completion**, select **Close**.
 
-    :::image type="content" source="images/mecm-16.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-16" lightbox="images/mecm-16.png":::
+    :::image type="content" source="media/mecm-16.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-16" lightbox="media/mecm-16.png":::
 
 17. In **Deployment types**, select **Next**.
 
-    :::image type="content" source="images/mecm-17.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-17" lightbox="images/mecm-17.png":::
+    :::image type="content" source="media/mecm-17.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-17" lightbox="media/mecm-17.png":::
 
 18. In **Summary**, select **Next**.
 
-    :::image type="content" source="images/mecm-18.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-18" lightbox="images/mecm-18.png":::
+    :::image type="content" source="media/mecm-18.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-18" lightbox="media/mecm-18.png":::
 
     The status is then displayed:
-    :::image type="content" source="images/mecm-19.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-19" lightbox="images/mecm-19.png":::
+    :::image type="content" source="media/mecm-19.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-19" lightbox="media/mecm-19.png":::
 
 19. In **Completion**, select **Close**.
 
-    :::image type="content" source="images/mecm-20.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-20" lightbox="images/mecm-20.png":::
+    :::image type="content" source="media/mecm-20.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-20" lightbox="media/mecm-20.png":::
 
 20. You can now deploy the application by right-clicking the app and selecting **Deploy**.
 
-    :::image type="content" source="images/mecm-21.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-21" lightbox="images/mecm-21.png":::
+    :::image type="content" source="media/mecm-21.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-21" lightbox="media/mecm-21.png":::
 
 21. In **General** select **Automatically distribute content for dependencies** and **Browse**.
 
-    :::image type="content" source="images/mecm-22.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-22" lightbox="images/mecm-22.png":::
+    :::image type="content" source="media/mecm-22.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-22" lightbox="media/mecm-22.png":::
 
 22. In **Content** select **Next**.
 
-    :::image type="content" source="images/mecm-23.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-23" lightbox="images/mecm-23.png":::
+    :::image type="content" source="media/mecm-23.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-23" lightbox="media/mecm-23.png":::
 
 23. In **Deployment settings**, select **Next**.
 
-    :::image type="content" source="images/mecm-24.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-24" lightbox="images/mecm-24.png":::
+    :::image type="content" source="media/mecm-24.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-24" lightbox="media/mecm-24.png":::
 
 24. In **Scheduling** select **As soon as possible after the available time**, then select **Next**.
 
-    :::image type="content" source="images/mecm-25.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-25" lightbox="images/mecm-25.png":::
+    :::image type="content" source="media/mecm-25.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-25" lightbox="media/mecm-25.png":::
 
 25. In **User experience**, select **Commit changes at deadline or during a maintenance window (requires restarts)**, then select **Next**.
 
-    :::image type="content" source="images/mecm-26.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-26" lightbox="images/mecm-26.png":::
+    :::image type="content" source="media/mecm-26.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-26" lightbox="media/mecm-26.png":::
 
 26. In **Alerts** select **Next**.
 
-    :::image type="content" source="images/mecm-27.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-27" lightbox="images/mecm-27.png":::
+    :::image type="content" source="media/mecm-27.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-27" lightbox="media/mecm-27.png":::
 
 27. In **Summary**, select **Next**.
 
-    :::image type="content" source="images/mecm-28.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-28" lightbox="images/mecm-28.png":::
+    :::image type="content" source="media/mecm-28.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-28" lightbox="media/mecm-28.png":::
       
 
     The status is then displayed
-    :::image type="content" source="images/mecm-29.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-29" lightbox="images/mecm-29.png":::
+    :::image type="content" source="media/mecm-29.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-29" lightbox="media/mecm-29.png":::
 
 28. In **Completion**, select **Close**.
 
