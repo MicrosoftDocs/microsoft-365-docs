@@ -224,8 +224,14 @@
                       href: alert-grading-for-malicious-exchange-connectors.md
                     - name: Password spray attacks
                       href: alert-grading-password-spray-attack.md                    
-                 - name: Users 
-                   href: investigate-users.md                  
+                 - name: Entity pages
+                   items:
+                   - name: User
+                     href: investigate-users.md
+                   - name: Device
+                     href: entity-page-device.md
+                   - name: IP
+                     href: entity-page-ip.md
               - name: Incident response playbooks
                 href: /security/operations/incident-response-playbooks
               - name: Investigate domains and URLs associated with Microsoft Defender XDR
