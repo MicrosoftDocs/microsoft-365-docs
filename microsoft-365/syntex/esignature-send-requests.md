@@ -45,6 +45,32 @@ Use the following steps to start the SharePoint eSignature process. You must be 
 
     Once sent, the status of the request is set to **In progress** and recipients are able to add their signatures. An email notification is sent to the creator and the recipients.
 
+### Create a signature request using another provider
+
+Use the following steps to start an electronic signature in SharePoint using another provider, such as Adobe Acrobat Sign or DocuSign.
+
+1. From a SharePoint document library, open the document you want to start the eSignature process.
+
+2. In the document viewer, select the eSignature icon, and then select the provider you want to use from the menu.
+
+    ![Screenshot of the provider menu options.](../media/content-understanding/esignature-provider-menu.png)
+
+3. You will be prompted to login to the provider using your login credentials.
+
+4. After successful login, you will be prompted to continue on the provider website.
+
+5. The document is automatically transferred to the provider service.
+
+6. The provider website will be open in another browser tab.
+
+7. On the new tab, proceed with the request creation process as you normally would.
+
+8. Once completed, you can close all document tabs.
+
+#### Track and manage other provider requests
+
+Managing ongoing eSignature requests for other providers is done on the provider website or through the Approvals app in Microsoft Teams. You will also be notified by email from the provider throughout the signing process.
+
 ## Cancel a signature request
 
 If you create a signature request and want to cancel it, follow these steps.
