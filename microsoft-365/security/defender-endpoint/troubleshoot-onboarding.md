@@ -373,59 +373,59 @@ The steps below provide guidance for the following scenario:
 
 1. Create an application in Microsoft Endpoint Configuration Manager.
 
-   :::image type="content" source="images/mecm-1.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-1" lightbox="images/mecm-1.png":::
+   :::image type="content" source="media/mecm-1.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-1" lightbox="media/mecm-1.png":::
 
 2. Select **Manually specify the application information**.
 
-   :::image type="content" source="images/mecm-2.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-2" lightbox="images/mecm-2.png":::
+   :::image type="content" source="media/mecm-2.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-2" lightbox="media/mecm-2.png":::
 
 3. Specify information about the application, then select **Next**.
 
-   :::image type="content" source="images/mecm-3.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-3" lightbox="images/mecm-3.png":::
+   :::image type="content" source="media/mecm-3.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-3" lightbox="media/mecm-3.png":::
 
 4. Specify information about the software center, then select **Next**.
 
-   :::image type="content" source="images/mecm-4.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-4" lightbox="images/mecm-4.png":::
+   :::image type="content" source="media/mecm-4.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-4" lightbox="media/mecm-4.png":::
 
 5. In **Deployment types** select **Add**.
 
-   :::image type="content" source="images/mecm-5.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-5" lightbox="images/mecm-5.png":::
+   :::image type="content" source="media/mecm-5.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-5" lightbox="media/mecm-5.png":::
 
 6. Select **Manually specify the deployment type information**, then select **Next**.
 
-   :::image type="content" source="images/mecm-6.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-6" lightbox="images/mecm-6.png":::
+   :::image type="content" source="media/mecm-6.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-6" lightbox="media/mecm-6.png":::
 
 7. Specify information about the deployment type, then select **Next**.
 
-   :::image type="content" source="images/mecm-7.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-7" lightbox="images/mecm-7.png":::
+   :::image type="content" source="media/mecm-7.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-7" lightbox="media/mecm-7.png":::
 
 8. In **Content** \> **Installation program** specify the command: `net start sense`.
 
-   :::image type="content" source="images/mecm-8.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-8" lightbox="images/mecm-8.png":::
+   :::image type="content" source="media/mecm-8.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-8" lightbox="media/mecm-8.png":::
 
 9. In **Detection method**, select **Configure rules to detect the presence of this deployment type**, then select **Add Clause**.
 
-   :::image type="content" source="images/mecm-9.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-9" lightbox="images/mecm-9.png":::
+   :::image type="content" source="media/mecm-9.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-9" lightbox="media/mecm-9.png":::
 
 10. Specify the following detection rule details, then select **OK**:
 
-    :::image type="content" source="images/mecm-10.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-10" lightbox="images/mecm-10.png":::
+    :::image type="content" source="media/mecm-10.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-10" lightbox="media/mecm-10.png":::
 
 11. In **Detection method** select **Next**.
 
-    :::image type="content" source="images/mecm-11.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-11" lightbox="images/mecm-11.png":::
+    :::image type="content" source="media/mecm-11.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-11" lightbox="media/mecm-11.png":::
 
 12. In **User Experience**, specify the following information, then select **Next**:
 
-    :::image type="content" source="images/mecm-12.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-12" lightbox="images/mecm-12.png":::
+    :::image type="content" source="media/mecm-12.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-12" lightbox="media/mecm-12.png":::
 
 13. In **Requirements**, select **Next**.
 
-    :::image type="content" source="images/mecm-13.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-13" lightbox="images/mecm-13.png":::
+    :::image type="content" source="media/mecm-13.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-13" lightbox="media/mecm-13.png":::
 
 14. In **Dependencies**, select **Next**.
 
-    :::image type="content" source="images/mecm-14.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-14" lightbox="images/mecm-14.png":::
+    :::image type="content" source="media/mecm-14.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-14" lightbox="media/mecm-14.png":::
 
 15. In **Summary**, select **Next**.
 
