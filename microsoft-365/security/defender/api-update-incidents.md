@@ -90,7 +90,7 @@ comment|string|Comment to be added to the incident.
 
 ## Response
 
-If successful, this method returns `200 OK`. The response body contain the incident entity with updated properties. If an incident with the specified ID wasn't found, the method returns
+If successful, this method returns `200 OK`. The response body contains the incident entity with updated properties. If an incident with the specified ID wasn't found, the method returns
  `404 Not Found`.
 
 ## Example
