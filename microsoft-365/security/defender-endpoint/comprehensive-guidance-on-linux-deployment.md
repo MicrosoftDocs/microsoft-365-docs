@@ -185,7 +185,7 @@ This step of the setup process involves adding Defender for Endpoint to the excl
 
 - To check if there's a non-Microsoft antimalware that is running FANotify, you can run `mdatp health`, then check the result:
 
-  :::image type="content" source="images/mdatp-health-result.png" alt-text="Image of mdatp health result":::
+  :::image type="content" source="media/mdatp-health-result.png" alt-text="Image of mdatp health result":::
 
   Under "conflicting_applications", if you see a result other than "unavailable", uninstall the non-Microsoft antimalware.
 
@@ -499,7 +499,7 @@ With macOS and Linux, you could take a couple of systems and run in the Beta cha
 
 The choice of the channel determines the type and frequency of updates that are offered to your device. Devices in Beta are the first ones to receive updates and new features, followed later by Preview and lastly by Current.
 
-:::image type="content" source="images/insider-rings.png" alt-text="The insider rings.":::
+:::image type="content" source="media/insider-rings.png" alt-text="The insider rings.":::
 
 In order to preview new features and provide early feedback, it's recommended that you configure some devices in your enterprise to use either Beta or Preview.
 
@@ -564,7 +564,7 @@ Use the following syntaxes to help identify the process that is causing CPU over
   sudo ps -T -p <PID> >> Thread_with_highest_cpu_usage.log
   ```
 
-  :::image type="content" source="images/cpu-utilization.png" alt-text="This is CPU utilization":::
+  :::image type="content" source="media/cpu-utilization.png" alt-text="This is CPU utilization":::
 
 The following table lists the processes that might cause a high CPU usage:
 

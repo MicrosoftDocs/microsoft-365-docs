@@ -14,8 +14,11 @@
       href: minimum-requirements.md
     - name: Supported Microsoft Defender for Endpoint capabilities by platform
       href: supported-capabilities-by-platform.md
-    - name: What's new in Microsoft Defender for Endpoint?
+    - name: What's new in Defender for Endpoint
       href: whats-new-in-microsoft-defender-endpoint.md
+      items: 
+      - name: What's new in Defender for Endpoint - archive
+        href: whats-new-mde-archive.md
     - name: What's new in Microsoft Defender for Endpoint on Windows
       href: windows-whatsnew.md
     - name: What's new in Microsoft Defender for Endpoint on other platforms
@@ -58,6 +61,12 @@
     items:
     - name: Evaluate capabilities overview
       href: evaluation-lab.md
+    - name: Evaluate Microsoft Defender Antivirus
+      items:
+      - name: Overview
+        href: evaluate-microsoft-defender-antivirus.md
+      - name: Evaluate Microsoft Defender Antivirus using Powershell
+        href: microsoft-defender-antivirus-using-powershell.md
     - name: Microsoft defender for endpoint demonstrations
       items:
       - name: Microsoft Defender for Endpoint demonstration scenarios
@@ -273,6 +282,8 @@
            href: linux-update-MDE-Linux.md
          - name: Configure eBPF-based sensor
            href: linux-support-ebpf.md 
+         - name: Configure Offline Security Intelligence Update
+           href: linux-support-offline-security-intelligence-update.md
        - name: Update Defender for Endpoint on Linux
          href: linux-updates.md
        - name: Privacy for Defender for Endpoint on Linux
@@ -575,12 +586,6 @@
           href: office-365-microsoft-defender-antivirus.md
       - name: Safety Scanner Download
         href: safety-scanner-download.md
-      - name: Evaluate Microsoft Defender Antivirus
-        items:
-          - name: Overview
-            href: evaluate-microsoft-defender-antivirus.md
-          - name: Evaluate Microsoft Defender Antivirus using Powershell
-            href: microsoft-defender-antivirus-using-powershell.md
       - name: Configure Microsoft Defender Antivirus features
         href: configure-microsoft-defender-antivirus-features.md
       - name: Manage exclusions for Defender for Endpoint and Microsoft Defender Antivirus
@@ -954,6 +959,22 @@
 
   - name: Reference
     items:
+    - name: Microsoft Security Resources
+      items: 
+        - name: Threat actor naming
+          href: ../defender/microsoft-threat-actor-naming.md
+        - name: Malware names
+          href: ../defender/malware-naming.md
+        - name: How Microsoft identifies malware and PUA
+          href: ../defender/criteria.md
+        - name: Submit files for analysis
+          href: ../defender/submission-guide.md
+        - name: Troubleshoot MSI portal errors caused by admin block
+          href: ../defender/portal-submission-troubleshooting.md
+        - name: Microsoft virus initiative
+          href: ../defender/virus-initiative-criteria.md
+        - name: Software developer FAQ
+          href: ../defender/developer-faq.yml
     - name: Malware information
       items: 
        - name: Coinminers
@@ -1489,13 +1510,12 @@
         href: troubleshoot-mdatp.md
       - name: Contact Microsoft Defender for Endpoint support
         href: contact-support.md
-
     - name: Troubleshoot live response issues
       href: troubleshoot-live-response.md
-
     - name: Collect support logs using LiveAnalyzer
       href: troubleshoot-collect-support-log.md
-
+    - name: Troubleshoot Microsoft Defender Antivirus settings
+      href: troubleshoot-settings.md
     - name: Troubleshoot attack surface reduction issues
       items:
       - name: Network protection

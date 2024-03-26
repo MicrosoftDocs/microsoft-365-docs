@@ -146,7 +146,7 @@ Select an event to view relevant details about that event. A panel displays to s
 
 To further inspect the event and related events, you can quickly run an [advanced hunting](advanced-hunting-overview.md) query by selecting **Hunt for related events**. The query returns the selected event and the list of other events that occurred around the same time on the same endpoint.
 
-:::image type="content" source="images/event-details.png" alt-text="The event details panel" lightbox="images/event-details.png":::
+:::image type="content" source="media/event-details.png" alt-text="The event details panel" lightbox="media/event-details.png":::
 
 ### Security recommendations
 
@@ -173,7 +173,7 @@ The **Software inventory** tab lets you view software on the device, along with 
 
 The **Discovered vulnerabilities** tab shows the name, severity, and threat insights of discovered vulnerabilities on the device. If you select a specific vulnerability, you see a description and details.
 
-:::image type="content" source="images/discovered-vulnerabilities-device.png" alt-text="The Discovered vulnerabilities tab" lightbox="images/discovered-vulnerabilities-device.png":::
+:::image type="content" source="media/discovered-vulnerabilities-device.png" alt-text="The Discovered vulnerabilities tab" lightbox="media/discovered-vulnerabilities-device.png":::
 
 ### Missing KBs
 
@@ -196,7 +196,7 @@ The **Azure Advanced Threat Protection** card displays a high-level overview of 
 
 The **Logged on users** card shows how many users logged on in the past 30 days, along with the most and least frequent users. Selecting the **See all users** link opens the details pane, which displays information such as user type, sign-in type, and when the user was first and last seen. For more information, see [Investigate user entities](investigate-user.md).
 
-:::image type="content" source="images/logged-on-users.png" alt-text="The user details pane" lightbox="images/logged-on-users.png":::
+:::image type="content" source="media/logged-on-users.png" alt-text="The user details pane" lightbox="media/logged-on-users.png":::
 
 > [!NOTE]
 > The 'Most frequent' user value is calculated only based on evidence of users who successfully logged on interactively.
@@ -238,7 +238,7 @@ To gain an in-depth view of the device health report, you can go to **Reports > 
 > [!NOTE]
 > The date and time for Defender Antivirus mode is currently not available.
 
-:::image type="content" source="images/device-health-status.png"  alt-text="The device health status card" lightbox="images/device-health-status.png":::
+:::image type="content" source="media/device-health-status.png"  alt-text="The device health status card" lightbox="media/device-health-status.png":::
 
 ## Related articles
 

@@ -89,14 +89,14 @@ To complete this process, you must have admin privileges on the device.
 
 5. From **Destination Select**, select the disk where you want to install the Microsoft Defender Software, for example, *Macintosh HD* and select **Continue**.
 
-    :::image type="content" source="images/destination-select.png" alt-text="Screenshot that shows the selection of destination for installation.":::
+    :::image type="content" source="media/destination-select.png" alt-text="Screenshot that shows the selection of destination for installation.":::
 
    > [!NOTE]
    > The amount of disk space required for installation is around 777 MB.
 
 6. To change the installation destination, select **Change Install Location...**.
 
-    :::image type="content" source="images/installation-type.png" alt-text="Screenshot that shows the final installation step.":::
+    :::image type="content" source="media/installation-type.png" alt-text="Screenshot that shows the final installation step.":::
 
 7. Click **Install**.
 
@@ -139,7 +139,7 @@ To grant full disk access:
 
 1. Grant **Full Disk Access** permission to **Microsoft Defender** and **Microsoft Defenders Endpoint Security Extension**.
 
-   :::image type="content" source="images/full-disk-access-security-privacy.png" alt-text="The screenshot shows the full disk access's security and privacy.":::
+   :::image type="content" source="media/full-disk-access-security-privacy.png" alt-text="The screenshot shows the full disk access's security and privacy.":::
 
 1. Select **General** \> **Restart** for the new system extensions to take effect.
 
@@ -205,7 +205,7 @@ Once you have installed the MDE on macOS client, you must now onboard the packag
    After installation, you'll see the Microsoft Defender icon in the macOS status bar in the top-right corner.
 
    > [!div class="mx-imgBorder"]
-   > :::image type="content" source="images/mdatp-icon-bar.png" alt-text="Screenshot that shows the Microsoft Defender icon in status bar":::
+   > :::image type="content" source="media/mdatp-icon-bar.png" alt-text="Screenshot that shows the Microsoft Defender icon in status bar":::
 
    You can [troubleshoot license issues for Microsoft Defender for Endpoint on macOS](mac-support-license.md).
 
