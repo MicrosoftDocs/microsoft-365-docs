@@ -14,12 +14,12 @@ ms.collection:
   - m365-security
   - tier1
   - highpri
-description: Describes the Teams Message Entity Panel for Microsoft Teams in Microsoft Defender for Office 365, how it does post-breach work like ZAP and Safe Links and gives admins a single pane of glass on Teams chat and channel threats like suspicious URLs.
+description: Describes the Teams Message Entity Panel for Microsoft Teams in Microsoft Defender for Office 365 Plan 2, how it does post-breach work like ZAP and Safe Links and gives admins a single pane of glass on Teams chat and channel threats like suspicious URLs.
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ms.date: 11/16/2023
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison" target="_blank">Microsoft Defender for Office 365 plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
@@ -27,56 +27,95 @@ appliesto:
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-The Teams Message Entity Panel in Microsoft Defender for Office 365 puts all Microsoft Teams data about suspicious or malicious chats and channels on a *single, actionable panel*.
+Similar to the [The Email summary panel](mdo-email-entity-page.md#the-email-summary-panel) for email messages, Microsoft 365 organizations that have Microsoft Defender for Office 365 Plan 2 (add-on licenses or included in subscriptions like Microsoft 365 E5) have the _Microsoft Teams message entity panel_ in the Microsoft Defender portal. The Teams message entity panel is a details flyout includes all Microsoft Teams data about suspicious or malicious chats, channels, and group chats on a single, actionable panel.
 
-The Teams Message Entity Panel is the single source of Teams message metadata for Security Operations team (SecOps) review. In other words, you can see and review threats coming from the following locations in one place:
+This article explains the information and actions on the Teams message entity panel.
 
-- Chats
-- Group chats
-- Channels
+## Permissions and licensing for the Teams message entity panel
 
-## Use the Teams Message Entity Panel in Microsoft Defender for Office 365
+To use the email entity page, you need to be assigned permissions. You have the following options:
 
-The Teams Message Entity Panel is available for customers with Microsoft 365 E5 and Microsoft Defender for Office 365 Plan 2 subscriptions across all experiences, including:
-
-- Quarantined Teams messages.
-- Admin submission of Teams messages.
-- User reported Teams messages.
-
-To access the Teams Message Entity Panel, you need to be assigned permissions. You have the following options:
-
-- [Email & collaboration permissions in the Microsoft Defender portal](mdo-portal-permissions.md): Membership in the **Global Administrator**, **Security Administrator**, or **Quarantine Administrator** role group.
+- [Email & collaboration permissions in the Microsoft Defender portal](mdo-portal-permissions.md): Membership in the **Global Administrator**, **Security Administrator**, or **Quarantine Administrator** role groups.
 - [Microsoft Entra permissions](/entra/identity/role-based-access-control/manage-roles-portal): Membership these roles gives users the required permissions _and_ permissions for other features in Microsoft 365:
-  - Membership in the **Global Administrator** or **Security Administrator** roles.
+  - _Full access_: Membership in the **Global Administrator** or **Security Administrator** roles.
   - _Read-only access_: Membership in the **Global Reader** or **Security Reader** roles.
 
-To open the Teams Message Entity Panel, do any of the following steps.
+## Where to find the Teams message entity panel
 
-### From quarantine
+There are no direct links to the Teams message entity panel from the to levels of the Defender portal. Instead, the Teams message entity panel is available in the following locations:
 
-1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Review** \> **Quarantine** \> **Teams messages** tab. Or, to go directly to the **Teams messages** tab on the **Quarantine** page, use <https://security.microsoft.com/quarantine?viewid=Teams>.
+- From the **Quarantine** page at <https://security.microsoft.com/quarantine>: Select the **Teams message** tab \> select an entry by clicking anywhere in the row other than the check box. The details flyout that opens is the Teams message entity panel.
 
-2. On the **Teams messages** tab, select the Teams message by clicking anywhere in the row other than the check box.
+- From the **Submissions** page at <https://security.microsoft.com/reportsubmission>:
+  - Select the **Teams messages** tab \> select an entry by clicking anywhere in the row other than the check box.
+  - Select the **User reported** tab \> select a Teams entry by clicking anywhere in the row other than the check box. You can filter the entries by selecting :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter** \> **Message type** \> **Teams**. The details flyout that opens is the Teams message entity panel.
 
-3. The details flyout that opens is the Teams Message Entity Panel.
+## What's on the Teams message entity panel
 
-### From admin submissions
+The following information is available at the top of the Teams message entity panel:
 
-1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to the **Submissions** page at **Actions & submissions** \> **Submissions** \> **Teams messages** tab. Or, to go directly to the **Teams messages** tab on the **Submissions** page, use <https://security.microsoft.com/reportsubmission?viewid=teams>.
+- The title of the flyout is the message subject or the first 100 characters of the body of the message.
+- The current message verdict.
+- The number of links in the message.
+- The actions that are available at the top of the flyout are described at the following links:
+  - [Take action on quarantined messages in Microsoft Teams](quarantine-admin-manage-messages-files.md#take-action-on-quarantined-messages-in-microsoft-teams).
+  - [Actions for admin submissions in Defender for Office 365 Plan 2](submissions-admin.md#actions-for-admin-submissions-in-defender-for-office-365)
 
-2. On the **Teams messages** tab, select the Teams message by clicking anywhere in the row other than the check box.
+> [!TIP]
+> To see details about other messages without leaving the Email summary panel of the current message, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
 
-3. The details flyout that opens is the Teams Message Entity Panel.
+The rest of the Email summary panel contains the following information:
 
-### From user reported messages
+The current message verdict.
 
-1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to the **Submissions** page at **Actions & submissions** \> **Submissions** \> **User reported** tab. Or, to go directly to the **User reported** tab on the **Submissions** page, use <https://security.microsoft.com/reportsubmission?viewid=user>.
+- **Delivery details** section:
+  - **Original threats**
+  - **Latest threats**
+  - **Original location**
+  - **Latest delivery location**
+  - **Delivery action**
+  - **Detection technologies**
+  - **Primary override : Source**
 
-2. On the **Teams messages** tab, select the Teams message by clicking anywhere in the row other than the check box. You can filter the messages by selecting :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter** \> **Message type** \> **Teams**.
+- **Email details** section:
+  - **Sender display name**
+  - **Sender address**
+  - **Sender email from address**
+  - **Sent on behalf of**
+  - **Return path**
+  - **Sender IP**
+  - **Location**
+  - **Recipient(s)**
+  - **Time received**
+  - **Directionality**
+  - **Network message ID**
+  - **Internet message ID**
+  - **Campaign ID**
+  - **DMARC**
+  - **DKIM**
+  - **SPF**
+  - **Composite authentication**
 
-3. The details flyout that opens is the Teams Message Entity Panel.
+- **URLs** section: Details about any URLs in the message:
+  - **URL**
+  - **Threat** status
 
-## Teams Message Entity Panel walkthrough
+  If the message has more than three URLs, select **View all URLs** to see all of them.
+
+- **Attachments** section: Details about any file attachments in the message:
+  - **Attachment name**
+  - **Threat**
+  - **Detection tech / Malware family**
+
+  If the message has more than three attachments, select **View all attachments** to see all of them.
+
+
+
+
+
+
+
+
 
 The panel is designed for easy use.
 
@@ -147,7 +186,7 @@ For more information, see [View Teams admin submissions to Microsoft](submission
 
 ### User reported messages
 
-The actions are available at the top of the panel. For more information, see [Actions for user reported messages in Defender for Office 365 Plan 2](submissions-admin.md#actions-for-user-reported-messages-in-defender-for-office-365-plan-2).
+The actions are available at the top of the panel. For more information, see [Actions for user reported messages in Defender for Office 365](submissions-admin.md#actions-for-user-reported-messages-in-defender-for-office-365).
 
 For more information, see [View user reported messages to Microsoft](submissions-admin.md#view-user-reported-messages-to-microsoft).
 
