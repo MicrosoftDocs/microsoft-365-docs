@@ -1,14 +1,9 @@
 ---
 title: Advanced hunting in Microsoft Defender
 description: Advanced hunting in the portal unifying Defender XDR and Sentinel data
-keywords: advanced hunting, query, Kusto, KQL, telemetry, Microsoft 365, Microsoft Defender XDR
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
 ms.subservice: adv-hunting
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: 
   - NOCSH
 ms.author: maccruz
@@ -21,7 +16,7 @@ ms.collection:
   - m365initiative-m365-defender
   - tier1
 ms.topic: conceptual
-ms.date: 03/01/2024
+ms.date: 03/26/2024
 ---
 
 # Advanced hunting in the Microsoft Defender portal
@@ -57,7 +52,7 @@ After connecting your Microsoft Sentinel workspace and Microsoft Defender XDR ad
 
 ### What to expect for Defender XDR tables streamed to Microsoft Sentinel
 - **Use tables with longer data retention period in queries** – Advanced hunting follows the maximum data retention period configured for the Defender XDR tables. If you stream Defender XDR tables to Microsoft Sentinel and have a data retention period longer than 30 days for said tables, you can query for the longer period in advanced hunting.
-- **Use Kusto operators you’ve used in Microsoft Sentinel** – In general, queries from Microsoft Sentinel work in advanced hunting. There might be cases where IntelliSense warns you that the operators in your query don’t match the schema, however, you can still run the query and it should still be executed successfully.
+- **Use Kusto operators you've used in Microsoft Sentinel** – In general, queries from Microsoft Sentinel work in advanced hunting. There might be cases where IntelliSense warns you that the operators in your query don't match the schema, however, you can still run the query and it should still be executed successfully.
 - **Use the time filter dropdown instead of *Set in query*** – If you're filtering ingestion of Defender XDR tables to Microsoft Sentinel instead of streaming the tables as is, don't use the **Set in query** option for filtering time as doing this might result in incomplete results. If the **Set in query** option is used, the streamed, filtered data from Microsoft Sentinel is the one queried because it usually has the longer data retention period. If you would like to make sure you're querying all Defender XDR data for up to 30 days, use the time filter dropdown provided in the query editor instead. 
 - **View `SourceSystem` and `MachineGroup` columns for Defender XDR data that have been streamed from Microsoft Sentinel** – Since the columns `SourceSystem` and `MachineGroup` are added to Defender XDR tables once they're streamed to Microsoft Sentinel, they also appear in results in advanced hunting in Defender. However, they remain blank for Defender XDR tables that weren't streamed (tables that follow the default 30-day data retention period).
 
@@ -114,7 +109,7 @@ To use a saved query from Microsoft Sentinel, go to the **Queries** tab and scro
 
 For editable queries, more options are available:
 
-- **Edit details** – opens the query details side pane with the option to edit the details like description (if applicable) and the query itself; only the folder names (location) of Microsoft Sentinel queries can’t be edited
+- **Edit details** – opens the query details side pane with the option to edit the details like description (if applicable) and the query itself; only the folder names (location) of Microsoft Sentinel queries can't be edited
 - **Delete** – deletes the query
 - **Rename** – allows you to modify the query name
 
@@ -140,7 +135,7 @@ You can also explore the results in-line with the following features:
 
 - Expand a result by selecting the dropdown arrow at the left of each result
 - Where applicable, expand details for results that are in JSON or array format by selecting the dropdown arrow at the left of applicable result row for added readability
-- Open the side pane to see a record’s details (concurrent with expanded rows)
+- Open the side pane to see a record's details (concurrent with expanded rows)
 
 You can also right-click on any result value in a row so that you can use it to:
 - Add more filters to the existing query
