@@ -17,6 +17,7 @@ ms.collection:
 ms.custom:
 - commerce_vl
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn how to access your non-Azure volume licensing invoices in the Microsoft 365 admin center."

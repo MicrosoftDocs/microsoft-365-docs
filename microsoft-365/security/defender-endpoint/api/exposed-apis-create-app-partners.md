@@ -96,7 +96,7 @@ In the following example we use **'Read all alerts'** permission:
 
    - **Note**: Every time you add permission you must select on **Grant consent** for the new permission to take effect.
 
-   :::image type="content" source="../images/grant-consent.png" alt-text="The option that allows consent to be granted" lightbox="../images/grant-consent.png":::
+   :::image type="content" source="../media/grant-consent.png" alt-text="The option that allows consent to be granted" lightbox="../media/grant-consent.png":::
 
 3. Add a secret to the application.
 
