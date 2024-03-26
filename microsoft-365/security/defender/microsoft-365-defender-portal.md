@@ -1,17 +1,12 @@
 ---
 title: Microsoft Defender portal
 description: Learn about the Microsoft Defender portal as the central location for protection, detection, investigation, and response to email, collaboration, identity, device, and app threats.
-keywords: introduction to Microsoft Defender XDR, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords:
   - NOCSH
-ms.author: macapara
-author: mjcaparas
+ms.author: deniseb
+author: denisebmsft
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -25,7 +20,7 @@ ms.custom:
   - intro-overview
 ms.topic: conceptual
 adobe-target: true
-ms.date: 03/21/2024
+ms.date: 03/26/2024
 ---
 
 # Microsoft Defender portal
