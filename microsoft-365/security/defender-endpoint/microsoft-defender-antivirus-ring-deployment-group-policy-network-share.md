@@ -184,7 +184,7 @@ In [Group Policy Management Console](/previous-versions/windows/it-pro/windows-s
 
    The three options are shown in the following figure.
 
-   :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-gp-microsoft-defender-antivirus-channels.png" alt-text="Screenshot that shows a screen capture of the pilot Computer Configuration > Policies > Administrative Templates > Windows Components > Microsoft Defender Antivirus update channels." lightbox="images/microsoft-defender-antivirus-deploy-ring-gp-microsoft-defender-antivirus-channels.png":::
+   :::image type="content" source="media/microsoft-defender-antivirus-deploy-ring-gp-microsoft-defender-antivirus-channels.png" alt-text="Screenshot that shows a screen capture of the pilot Computer Configuration > Policies > Administrative Templates > Windows Components > Microsoft Defender Antivirus update channels." lightbox="media/microsoft-defender-antivirus-deploy-ring-gp-microsoft-defender-antivirus-channels.png":::
 
    For more information, see [Manage the gradual rollout process for Microsoft Defender updates](manage-gradual-rollout.md)
 
@@ -192,7 +192,7 @@ In [Group Policy Management Console](/previous-versions/windows/it-pro/windows-s
 
 1. For _intelligence_ updates, double-click **Select the channel for Microsoft Defender monthly intelligence updates**.
 
-   :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-gp-microsoft-defender-antivirus-channel-staged.png" alt-text="Screenshot that shows a screen capture of the Select the channel for Microsoft Defender monthly intelligence updates page with Enabled and Current Channel (Staged) selected." lightbox="images/microsoft-defender-antivirus-deploy-ring-gp-microsoft-defender-antivirus-channel-staged.png":::
+   :::image type="content" source="media/microsoft-defender-antivirus-deploy-ring-gp-microsoft-defender-antivirus-channel-staged.png" alt-text="Screenshot that shows a screen capture of the Select the channel for Microsoft Defender monthly intelligence updates page with Enabled and Current Channel (Staged) selected." lightbox="media/microsoft-defender-antivirus-deploy-ring-gp-microsoft-defender-antivirus-channel-staged.png":::
 
 1. On the **Select the channel for Microsoft Defender monthly intelligence updates** page, select **Enabled**, and in **Options**, select **Current Channel (Staged)**.
 
@@ -222,7 +222,7 @@ In [Group Policy Management Console](/previous-versions/windows/it-pro/windows-s
 
 1. In [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn265969(v=ws.11)) (GPMC, GPMC.msc), go to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus**.
 
-   :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-gp-microsoft-defender-antivirus-channels.png" alt-text="Screenshot that shows a screen capture of the production Computer Configuration > Policies > Administrative Templates > Windows Components > Microsoft Defender Antivirus update channels." lightbox="images/microsoft-defender-antivirus-deploy-ring-gp-microsoft-defender-antivirus-channels.png":::
+   :::image type="content" source="media/microsoft-defender-antivirus-deploy-ring-gp-microsoft-defender-antivirus-channels.png" alt-text="Screenshot that shows a screen capture of the production Computer Configuration > Policies > Administrative Templates > Windows Components > Microsoft Defender Antivirus update channels." lightbox="media/microsoft-defender-antivirus-deploy-ring-gp-microsoft-defender-antivirus-channels.png":::
 
 1. Set the three policies as follows:
 
@@ -236,7 +236,7 @@ In [Group Policy Management Console](/previous-versions/windows/it-pro/windows-s
 
 1. On the **Select the channel for Microsoft Defender monthly intelligence updates** page, select **Enabled**, and in **Options**, select **Current Channel (Broad)**.
 
-   :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-gp-microsoft-defender-antivirus-channel-staged.png" alt-text="Screenshot that shows a screen capture of the Select the channel for Microsoft Defender monthly intelligence updates page with Enabled and Current Channel (Staged) selected." lightbox="images/microsoft-defender-antivirus-deploy-ring-gp-microsoft-defender-antivirus-channel-staged.png":::
+   :::image type="content" source="media/microsoft-defender-antivirus-deploy-ring-gp-microsoft-defender-antivirus-channel-staged.png" alt-text="Screenshot that shows a screen capture of the Select the channel for Microsoft Defender monthly intelligence updates page with Enabled and Current Channel (Staged) selected." lightbox="media/microsoft-defender-antivirus-deploy-ring-gp-microsoft-defender-antivirus-channel-staged.png":::
 
 1. Select **Apply**, and then select **OK**.
 

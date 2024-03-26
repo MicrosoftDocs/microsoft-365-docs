@@ -488,7 +488,7 @@ The steps below provide guidance for the following scenario:
 
 28. In **Completion**, select **Close**.
 
-    :::image type="content" source="images/mecm-30.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-30" lightbox="images/mecm-30.png":::
+    :::image type="content" source="media/mecm-30.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-30" lightbox="media/mecm-30.png":::
 
 ## Related topics
 
