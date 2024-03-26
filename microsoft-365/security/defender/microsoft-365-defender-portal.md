@@ -19,7 +19,6 @@ ms.custom:
   - admindeeplinkDEFENDER
   - intro-overview
 ms.topic: conceptual
-adobe-target: true
 ms.date: 03/26/2024
 ---
 
@@ -41,7 +40,7 @@ Watch this short video to learn about the Defender portal.
 
 ## What to expect
 
-The Defender portal helps security teams investigate and respond to attacks by bringing in signals from different workloads into a set of unified experiences for:
+The Microsoft Defender portal helps security teams investigate and respond to attacks by bringing in signals from different workloads into a set of unified experiences for:
 
 - Incidents & alerts
 - Hunting
@@ -52,10 +51,10 @@ The Defender portal helps security teams investigate and respond to attacks by b
 - Trials
 - Partner catalog
 
-The Defender portal emphasizes *unity, clarity, and common goals*.
+The Microsoft Defender portal emphasizes *unity, clarity, and common goals*.
 
 > [!NOTE]
-> The Defender portal is accessible without any need for customers to take migration steps or purchase a new license. For example, this new portal is accessible to administrators with an E3 subscription, just as it is to those with Microsoft Defender for Office 365 Plan 1 and Plan 2; however, Exchange Online Protection, or Defender for Office 365 Plan 1 customers see only the security features their subscription license supports. The goal of the portal is to centralize security.
+> In the Microsoft Defender portal, customers see only the security features their subscription includes. For example, if you have Defender for Office 365 but not Defender for Endpoint, you see features and capabilities for Defender for Office 365, but not device protection. 
 
 ## Incident and alert investigations
 
@@ -85,6 +84,7 @@ Take the time to review the incidents in your environment, drill down into each 
 For more information, see [Incidents in the Microsoft Defender portal](incidents-overview.md).
 
 ## Hunting
+
 You can build custom detection rules and hunt for specific threats in your environment. **Hunting** uses a query-based threat hunting tool that lets you proactively inspect events in your organization to locate threat indicators and entities. These rules run automatically to check for, and then respond to, suspected breach activity, misconfigured machines, and other findings.
 
 For more information, see [Proactively hunt for threats with advanced hunting in Microsoft Defender XDR](advanced-hunting-overview.md).
@@ -127,8 +127,7 @@ You can add and remove different cards depending on your needs.
 ### Search across entities (Preview)
 
 > [!IMPORTANT]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-The search bar is located at the top of the page. As you type, suggestions are provided so that it's easier to find entities. The enhanced search results page centralizes the results from all entities.
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. The search bar is located at the top of the page. As you type, suggestions are provided so that it's easier to find entities. The enhanced search results page centralizes the results from all entities.
 
 You can search across the following entities in Defender for Endpoint and Defender for Identity:
 
