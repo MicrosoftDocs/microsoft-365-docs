@@ -72,7 +72,7 @@ This timeline also shows [bookmarked hunts](/azure/sentinel/bookmarks) from othe
 
 ### Insights
 
-Entity insights are queries defined by Microsoft security researchers to help you investigate more efficiently and effectively. These insights automatically ask the big questions about your IP entity, providing valuable security information in the form of tabular data and charts. The insights include data from various IP threat intelligence sources,network traffic inspection, and more, and include advanced machine learning algorithms to detect anomalous behavior.
+Entity insights are queries defined by Microsoft security researchers to help you investigate more efficiently and effectively. These insights automatically ask the big questions about your IP entity, providing valuable security information in the form of tabular data and charts. The insights include data from various IP threat intelligence sources, network traffic inspection, and more, and include advanced machine learning algorithms to detect anomalous behavior.
 
 The following are some of the insights shown:
 
