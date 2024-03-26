@@ -27,11 +27,13 @@ ms.date: 03/01/2024
 # Advanced hunting in the Microsoft Defender portal
 
 
+
 **Applies to:**
 - Microsoft Defender unified security operations center (SOC) platform, including:
     - Microsoft Sentinel
     - Microsoft Defender XDR
 
+[!INCLUDE [unified-soc-preview](../../includes/unified-soc-preview.md)]
 
 Advanced hunting in the unified portal allows you to view and query all data from Microsoft Defender XDR including data from various Microsoft security services and Microsoft Sentinel, which includes data from non-Microsoft products, in a single platform. You can also access and use all your existing Microsoft Sentinel workspace content, including queries and functions. 
 
@@ -149,7 +151,7 @@ For Microsoft Defender XDR data, you can take further action by selecting the ch
 - The `IdentityInfo` table from Sentinel is not available, as the IdentityInfo remains as is in Defender XDR. Sentinel features like analytics rules that query this table won’t be impacted as they are querying the Log Analytics workspace directly.
 - The Sentinel `SecurityAlert` table is replaced by `AlertInfo` and `AlertEvidence` tables, which both contain all the data on alerts. While SecurityAlert is not available in the schema tab, you can still use it in queries using the advanced hunting editor. This provision is made so as not to break existing queries from Sentinel that use this table. 
 - Guided hunting mode is supported for Defender XDR data only.
-- Custom detections and take actions capabilities are supported for Defender XDR data only.
+- Custom detections, links to incidents and take actions capabilities are supported for Defender XDR data only.
 - Bookmarks are not supported in the advanced hunting experience.
 - If you are streaming Defender XDR tables to Log Analytics, there might be a difference between the`Timestamp` and `TimeGenerated` columns. In case the data arrives to Log Analytics after 48 hours, it is being overridden upon ingestion to `now()`. Therefore, to get the actual time the event happened, we recommend relying on the `Timestamp` column.
 - Full parity between the Log Analytics grid capabilities and advanced hunting is not yet available, but the most significant gaps are being closed. You can contact your Microsoft representative to share your feedback about your experience with advanced hunting in the unified portal.
