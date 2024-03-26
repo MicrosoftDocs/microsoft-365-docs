@@ -330,11 +330,11 @@ A standard [Company Portal installation](/intune-user-help/enroll-your-device-in
 
 1. Confirm device management.
 
-   :::image type="content" source="images/mdatp-3-confirmdevicemgmt.png" alt-text="The Confirm device management page" lightbox="images/mdatp-3-confirmdevicemgmt.png":::
+   :::image type="content" source="media/mdatp-3-confirmdevicemgmt.png" alt-text="The Confirm device management page" lightbox="media/mdatp-3-confirmdevicemgmt.png":::
 
    Select **Open System Preferences**, locate **Management Profile** on the list, and select **Approve...**. Your Management Profile would be displayed as **Verified**:
 
-   :::image type="content" source="images/mdatp-4-managementprofile.png" alt-text="The Management profile page" lightbox="images/mdatp-4-managementprofile.png":::
+   :::image type="content" source="media/mdatp-4-managementprofile.png" alt-text="The Management profile page" lightbox="media/mdatp-4-managementprofile.png":::
 
 2. Select **Continue** and complete the enrollment.
 
@@ -342,7 +342,7 @@ A standard [Company Portal installation](/intune-user-help/enroll-your-device-in
 
 3. In Intune, open **Manage** \> **Devices** \> **All devices**. Here you can see your device among the listed:
 
-   :::image type="content" source="images/mdatp-5-alldevices.png" alt-text="The All Devices page" lightbox="images/mdatp-5-alldevices.png":::
+   :::image type="content" source="media/mdatp-5-alldevices.png" alt-text="The All Devices page" lightbox="media/mdatp-5-alldevices.png":::
 
 #### Verify client device state
 
@@ -431,18 +431,18 @@ To deploy the onboarding package:
 1. Under **Template name**, select **Custom**.
 1. Click **Create**.
 
-   :::image type="content" alt-text="Deploy onboarding package" source="images/mdatp-6-systemconfigurationprofiles-1.png" lightbox="images/mdatp-6-systemconfigurationprofiles-1.png":::
+   :::image type="content" alt-text="Deploy onboarding package" source="media/mdatp-6-systemconfigurationprofiles-1.png" lightbox="media/mdatp-6-systemconfigurationprofiles-1.png":::
 
 1. On the **Basics** tab, **Name** the profile. For example, 'Autoupdate-prod-macOS-Default-MDE'. Click **Next**.
 
-   :::image type="content" alt-text="click next" source="images/mdatp-6-systemconfigurationprofiles-2.png" lightbox="images/mdatp-6-systemconfigurationprofiles-2.png":::
+   :::image type="content" alt-text="click next" source="media/mdatp-6-systemconfigurationprofiles-2.png" lightbox="media/mdatp-6-systemconfigurationprofiles-2.png":::
 
 1. On the **Configuration settings** tab, enter a **Custom configuration profile** name. For example, 'Autoupdate.mobileconfig'.
 1. Choose a **Deployment channel**.
 1. Click **Next**.
 1. Select a **Configuration profile file**.
 
-   :::image type="content" alt-text="configuration profile" source="images/mdatp-6-systemconfigurationprofiles.png" lightbox="images/mdatp-6-systemconfigurationprofiles.png":::
+   :::image type="content" alt-text="configuration profile" source="media/mdatp-6-systemconfigurationprofiles.png" lightbox="media/mdatp-6-systemconfigurationprofiles.png":::
 
 1. On the **Assignments** tab, assign the profile to a group where the macOS devices and/or users are located, or All Users and All devices.
 
