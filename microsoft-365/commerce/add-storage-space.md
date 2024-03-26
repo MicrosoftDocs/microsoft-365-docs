@@ -24,6 +24,7 @@ ms.custom:
 - AdminSurgePortfolio
 - business_assist
 - AdminTemplateSet
+- admindeeplinkMAC
 - admindeeplinkSPO
 search.appverid: MET150
 description: "Learn how to add extra SharePoint file storage in your Microsoft 365 subscription."

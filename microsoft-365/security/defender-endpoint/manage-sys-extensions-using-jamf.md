@@ -38,7 +38,7 @@ To approve the system extensions, perform the following steps:
    - com.microsoft.wdav.epsext
    - com.microsoft.wdav.netext
     
-    :::image type="content" source="images/jamf-system-extensions-approval.png" alt-text="Approving system extensions in JamF." lightbox="images/jamf-system-extensions-approval.png":::
+    :::image type="content" source="media/jamf-system-extensions-approval.png" alt-text="Approving system extensions in JamF." lightbox="media/jamf-system-extensions-approval.png":::
 
 ### Privacy Preferences Policy Control (also known as Full Disk Access)
 
