@@ -62,10 +62,12 @@ To turn on or turn off Copilot for Microsoft 365 in Bing, Edge, and Windows, fol
 4. Run the PowerShell script.
 5. Follow the instructions prompted by the script.
 6. The cmdlet prompts you to sign in with your Entra ID account, which must be a Search Admin or Global Admin account.
-7. To get the current status of Copilot for Microsoft 365 in Bing, Edge, and Windows in your tenant, run: ‘*.\ConfigureM365Copilot.ps1*’.
-8. To turn on Copilot for Microsoft 365 in Bing, Edge, and Windows, run: ‘*.\ConfigureM365Copilot.ps1 -enable $true*’.
-9. To turn off Copilot for Microsoft 365 in Bing, Edge, and Windows, run: ‘*.\ConfigureM365Copilot.ps1 -enable $false*’.
-10. If you encounter a problem, try running the script again. If the problem persists, you can contact support.
+7. Follow these steps:
+
+    - To get the **current status** of Copilot for Microsoft 365 in Bing, Edge, and Windows in your tenant, run: *'.\ConfigureM365Copilot.ps1'*
+    - To **turn on** Copilot for Microsoft 365 in Bing, Edge, and Windows, run: *'.\ConfigureM365Copilot.ps1 -enable $true'*
+    - To **turn off** Copilot for Microsoft 365 in Bing, Edge, and Windows, run: *'.\ConfigureM365Copilot.ps1 -enable $false'*
+8. If you encounter a problem, try running the script again. If the problem persists, you can contact support.
 
 ### Manage plugins that work with Microsoft Copilot for Microsoft 365
 
