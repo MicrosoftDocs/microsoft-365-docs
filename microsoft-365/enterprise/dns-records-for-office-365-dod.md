@@ -55,18 +55,10 @@ For example, if your tenant name is contoso.onmicrosoft.us, you’d use **contos
 
 ## External DNS records required for Teams
 
-### CNAME records
-
-| Type | Host name | Points to address or value | TTL |
-| --- | --- | --- | --- |
-| CNAME | sip | sipdir.online.dod.skypeforbusiness.us | One Hour |
-| CNAME | lyncdiscover | webdir.online.dod.skypeforbusiness.us | One Hour | 
-
 ### SRV records
 
 | Type | Service | Protocol | Port | Weight | Priority | Name | Target | TTL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| SRV | \_sip | \_tls | 443 | 1 | 100 | @ | sipdir.online.dod.skypeforbusiness.us | One Hour |
 | SRV | \_sipfederationtls | \_tcp | 5061 | 1 | 100 | @ | sipfed.online.dod.skypeforbusiness.us | One Hour |
 
 ## Other DNS records
