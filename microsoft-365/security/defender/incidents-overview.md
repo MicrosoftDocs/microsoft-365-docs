@@ -1,6 +1,6 @@
 ---
-title: Incident response with Microsoft Defender XDR
-description: Investigate incidents seen across devices, users, and mailboxes in the Microsoft Defender portal.
+title: Incident response in the Microsoft Defender portal
+description: Investigate incidents seen across devices, users, and mailboxes in the unified security operations platform in the Microsoft Defender portal.
 ms.service: defender-xdr
 f1.keywords:
   - NOCSH
@@ -22,10 +22,9 @@ ms.date: 03/10/2024
 appliesto: Microsoft Defender XDR and Microsoft Sentinel in the Microsoft Defender portal
 ---
 
-# Incident response with the Microsoft Defender unified SOC platform
+# Incident response in the Microsoft Defender portal
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
-
 
 **Applies to:**
 - Microsoft Defender unified security operations center (SOC) platform, including:
@@ -50,17 +49,17 @@ Grouping related alerts into an incident gives you a comprehensive view of an at
 
 The unified SOC platform in the Microsoft Defender portal includes methods to automate and assist in the triage, investigation, and resolution of incidents.
 
-- Security Copilot harnesses AI to support analysts with complex and time-consuming daily workflows, including end-to-end incident investigation and response with clearly described attack stories, step-by-step actionable remediation guidance and incident activity summarized reports, natural language KQL hunting, and expert code analysis - optimizing on SOC efficiency across Microsoft Sentinel and Defender XDR data.
-<!--Is this the place to talk about Security Copilot? -->
+- Security Copilot harnesses AI to support analysts with complex and time-consuming daily workflows, including end-to-end incident investigation and response with clearly described attack stories, step-by-step actionable remediation guidance and incident activity summarized reports, natural language KQL hunting, and expert code analysis&mdash;optimizing on SOC efficiency across Microsoft Sentinel and Defender XDR data.
+
+    This capability is in addition to the other AI-based functionality that Microsoft Sentinel brings to the unified platform, in the areas of user and entity behavior analytics, anomaly detection, multi-stage threat detection, and more.
 
 - Automated attack disruption uses high-confidence signals collected from Microsoft Defender XDR and Microsoft Sentinel to automatically disrupt active attacks at machine speed, containing the threat and limiting the impact.
-<!--Is this the same as AIR or the evolution of AIR, or something different? -->
 
 - If [enabled](m365d-enable.md), Microsoft Defender XDR can [automatically investigate and resolve](m365d-autoir.md) alerts from Microsoft 365 and Entra ID sources through automation and artificial intelligence. You can also perform additional remediation steps to resolve the attack.
 
 - Microsoft Sentinel [automation rules](/azure/sentinel/automate-incident-handling-with-automation-rules) can automate triage, assignment, and management of incidents, regardless of their source. They can apply tags to incidents based on their content, suppress noisy (false positive) incidents, and close resolved incidents that meet the appropriate criteria, specifying a reason and adding comments.
 
-For more information, see [Connect Microsoft Sentinel to Microsoft Defender XDR (preview)](microsoft-sentinel-onboard.md)
+For more information on the benefits of the unified SOC platform, see [Connect Microsoft Sentinel to Microsoft Defender XDR (preview)](microsoft-sentinel-onboard.md)
 
 <a name='incidents-and-alerts-in-the-microsoft-365-defender-portal'></a>
 

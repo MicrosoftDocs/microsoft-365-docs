@@ -1,6 +1,6 @@
 ---
-title: Prioritize incidents in Microsoft Defender XDR
-description: Learn how to filter incidents from the incident queue in Microsoft Defender XDR
+title: Prioritize incidents in the Microsoft Defender portal
+description: Learn how to filter incidents from the incident queue in the unified security operations platform in the Microsoft Defender portal.
 ms.service: defender-xdr
 f1.keywords: 
   - NOCSH
@@ -17,40 +17,46 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.date: 01/22/2024
+ms.date: 03/27/2024
 ---
 
-# Prioritize incidents in Microsoft Defender XDR
+# Prioritize incidents in the Microsoft Defender portal
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
+- Microsoft Defender unified security operations center (SOC) platform, including:
+    - Microsoft Sentinel
+    - Microsoft Defender XDR
 
-- Microsoft Defender XDR
+The unified SOC platform in the Microsoft Defender portal applies correlation analytics and aggregates related alerts and automated investigations from different products into an incident. Microsoft Sentinel and Defender XDR also trigger unique alerts on activities that can only be identified as malicious given the end-to-end visibility in the unified platform across the entire suite of products. This view gives your security analysts the broader attack story, which helps them better understand and deal with complex threats across your organization.
 
-Microsoft Defender XDR applies correlation analytics and aggregates related alerts and automated investigations from different products into an incident. Microsoft Defender XDR also triggers unique alerts on activities that can only be identified as malicious given the end-to-end visibility in Microsoft Defender XDR has across the entire suite of products. This view gives your security analysts the broader attack story, which helps them better understand and deal with complex threats across your organization.
-
-The **Incident queue** shows a collection of incidents that were created across devices, users, and mailboxes. It helps you sort through incidents to prioritize and create an informed cybersecurity response decision, a process known as incident triage.
+The **Incident queue** shows a collection of incidents that were created across devices, users, mailboxes, and other resources. It helps you sort through incidents to prioritize and create an informed cybersecurity response decision, a process known as incident triage.
 
 > [!TIP]
 > For a limited time during January 2024, when you visit the **Incidents** page, Defender Boxed appears. Defender Boxed highlights your organization's security successes, improvements, and response actions during 2023. To reopen Defender Boxed, in the Microsoft Defender portal, go to **Incidents**, and then select **Your Defender Boxed**.
 
 You can get to the incident queue from **Incidents & alerts > Incidents** on the quick launch of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a>. Here's an example.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="The Incident section showing the incident queue in the Microsoft Defender portal." lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Screenshot of the Incidents queue in the Microsoft Defender portal." lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 
-The **Most recent incidents and alerts** section shows a graph of the number of alerts received and incidents created in the last 24 hours.
+Select **Most recent incidents and alerts** to toggle the expansion of the top section, which shows a timeline graph of the number of alerts received and incidents created in the last 24 hours.
 
-By default, the incident queue in the Microsoft Defender portal displays incidents seen in the last six months. The most recent incident is at the top of the list so you can see it first.
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents2.png" alt-text="Screenshot of 24-hour incident graph.":::
 
-The incident queue has customizable columns (select **Choose columns**) that give you visibility into different characteristics of the incident or the impacted entities. This filtering helps you make an informed decision regarding the prioritization of incidents for analysis.
+Below that, the incident queue in the Microsoft Defender portal displays incidents seen in the last six months. The most recent incident is at the top of the list so you can see it first. You can choose a different time frame by selecting it from the drop-down at the top.
+
+The incident queue has customizable columns (select **Customize columns**) that give you visibility into different characteristics of the incident or the impacted entities. This filtering helps you make an informed decision regarding the prioritization of incidents for analysis.
+
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-3.png" alt-text="Screenshot of 24-hour incident graph.":::
 
 For more visibility at a glance, automatic incident naming generates incident names based on alert attributes such as the number of endpoints affected, users affected, detection sources, or categories. This allows you to quickly understand the scope of the incident.
 
 For example: *Multi-stage incident on multiple endpoints reported by multiple sources.*
 
 > [!NOTE]
-> Incidents that existed prior to the rollout of automatic incident naming will not have their name changed.
+> - Incidents that existed prior to the rollout of automatic incident naming will not have their name changed.
+> - Incidents created in Microsoft Sentinel are named according to the Sentinel alerts that generated them, according to the logic in the analytics rule that produced the alert. For more information, see [Customize alert details in Microsoft Sentinel](/azure/sentinel/customize-alert-details).
 
 The incident queue also provides multiple filtering options, that when applied, enable you to perform a broad sweep of all existing incidents in your environment, or decide to focus on a specific scenario or threat. Applying filters on the incident queue can help determine which incident requires immediate attention. 
 
@@ -58,7 +64,7 @@ The **Filters** list above the list of incidents shows the currently applied fil
 
 ## Available filters
 
-From the default incident queue, you can select **Filter** to see a **Filter** pane, from which you specify a filtered set of incidents. Here's an example.
+From the default incident queue, you can select **Add filter** to see the **Add filter** drop-down, from which you specify filters to apply to the incidents queue to limit the set of incidents shown. Here's an example.
 
 :::image type="content" source="../../media/incidents-queue/fig1-newfilters.png" alt-text="The Filters pane for the incident queue in the Microsoft Defender portal." lightbox="../../media/incidents-queue/fig1-newfilters.png":::
 
@@ -68,22 +74,22 @@ This table lists the filter names that are available.
 
 | Filter name | Description |
 |:-------|:-----|
-| Status | Select **New**, **In progress**, or **Resolved**. |
-| Severity | The severity of an incident is indicative of the impact it can have on your assets. The higher the severity, the bigger the impact and typically requires the most immediate attention. Select **High**, **Medium**, **Low**, or **Informational**. |
-| Incident assignment | Select the assigned user or users. |
-| Multiple service sources  | Specify whether the filter is for more than one service source. |
-| Service sources  | Specify incidents that contain alerts from: App Governance, Microsoft Defender XDR, Microsoft Defender for Office 365, Microsoft Defender for Endpoint, Microsoft Defender for Identity, Microsoft Defender for Cloud Apps. |
-| Tags | Select one or multiple tag names from the list. |
-| Multiple categories  | Specify whether the filter is for more than one category. |
-| Categories | Choose categories to focus on specific tactics, techniques, or attack components seen. |
-| Entities | Specify the name of an asset such as a user, device, mailbox, or application name. |
-| Data sensitivity | Some attacks focus on targeting to exfiltrate sensitive or valuable data. By applying a filter for specific sensitivity labels, you can quickly determine if sensitive information has potentially been compromised and prioritize addressing those incidents. <br><br> This filter displays information only when you've applied [sensitivity labels from Microsoft Purview Information Protection](../../compliance/sensitivity-labels.md). |
-| Device groups | Specify a [device group](/windows/security/threat-protection/microsoft-defender-atp/machine-groups) name. |
-| OS platform | Specify device operating systems. |
-| Classification | Specify the set of classifications of the related alerts. |
-| Automated investigation state | Specify the status of automated investigation.  |
-| Associated threat | Specify a named threat.  |
-| Alert policies | Specify an alert policy title.  |
+| **Status** | Select **New**, **In progress**, or **Resolved**. |
+| **Alert severity<br>Incident severity** | The severity of an alert or incident is indicative of the impact it can have on your assets. The higher the severity, the bigger the impact and typically requires the most immediate attention. Select **High**, **Medium**, **Low**, or **Informational**. |
+| **Incident assignment** | Select the assigned user or users. |
+| **Multiple service sources**  | Specify whether the filter is for more than one service source. |
+| **Service/detection sources**  | Specify incidents that contain alerts from one or more of the following:<li>Microsoft Defender for Identity<li>Microsoft Defender for Cloud Apps<li>Microsoft Defender for Endpoint<li>Microsoft Defender XDR<li>Microsoft Defender for Office 365<li>App Governance<li>Microsoft Entra ID Protection<li>Microsoft Data Loss Prevention<li>Microsoft Defender for Cloud<li>Microsoft Sentinel<br><br>Many of these services can be expanded in the menu to reveal further choices of detection sources within a given service. |
+| **Tags** | Select one or multiple tag names from the list. |
+| **Multiple category**  | Specify whether the filter is for more than one category. |
+| **Categories** | Choose categories to focus on specific tactics, techniques, or attack components seen. |
+| **Entities** | Specify the name of an asset such as a user, device, mailbox, or application name. |
+| **Data sensitivity** | Some attacks focus on targeting to exfiltrate sensitive or valuable data. By applying a filter for specific sensitivity labels, you can quickly determine if sensitive information has potentially been compromised and prioritize addressing those incidents. <br><br> This filter displays information only when you've applied [sensitivity labels from Microsoft Purview Information Protection](../../compliance/sensitivity-labels.md). |
+| **Device groups** | Specify a [device group](/windows/security/threat-protection/microsoft-defender-atp/machine-groups) name. |
+| **OS platform** | Specify device operating systems. |
+| **Classification** | Specify the set of classifications of the related alerts. |
+| **Automated investigation state** | Specify the status of automated investigation.  |
+| **Associated threat** | Specify a named threat.  |
+| **Alert policies** | Specify an alert policy title.  |
 
 
 The default filter is to show all alerts and incidents with a status of **New** and **In progress** and with a severity of **Low**, **Medium**, or **High**.
