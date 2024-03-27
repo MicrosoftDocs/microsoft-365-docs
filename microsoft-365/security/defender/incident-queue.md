@@ -48,7 +48,7 @@ Below that, the incident queue in the Microsoft Defender portal displays inciden
 
 The incident queue has customizable columns (select **Customize columns**) that give you visibility into different characteristics of the incident or the impacted entities. This filtering helps you make an informed decision regarding the prioritization of incidents for analysis.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-3.png" alt-text="Screenshot of 24-hour incident graph.":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-3.png" alt-text="Screenshot of Incident page filter and column controls.":::
 
 For more visibility at a glance, automatic incident naming generates incident names based on alert attributes such as the number of endpoints affected, users affected, detection sources, or categories. This allows you to quickly understand the scope of the incident.
 
