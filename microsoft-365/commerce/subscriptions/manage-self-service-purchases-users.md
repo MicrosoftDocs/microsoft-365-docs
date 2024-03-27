@@ -78,7 +78,7 @@ You can view a list of all self-service purchased subscriptions that you bought.
 
 1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Billing accounts</a> page.
 2. On the **Overview** tab, select a billing account.
-3. On the billing account details page, select the **Billing profile** tab. The tab lists all billing profles associated with the selected billing account.
+3. On the billing account details page, select the **Billing profile** tab. The tab lists all billing profiles associated with the selected billing account.
 4. Select a billing profile name to view the details page.
 5. In the **Invoice and billing notifications** section, under **Payment method**, choose one of the following options:
     - If you want to update an existing payment method, select **Edit**.
