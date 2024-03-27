@@ -24,11 +24,9 @@ description: Learn about the autofill columns service in Microsoft Syntex.
 
 Autofill columns in Microsoft Syntex automatically extract, summarize, or generate content from files uploaded to a SharePoint document library. Using large language models (LLMs), autofill columns can save metadata automatically, streamlining the process of managing files and their associated information.
 
-For example, you can ask a question (a *prompt*) of a document in natural language, and the system save the response directly to a designated library column. Or you can have more than one of these questions set to process any file uploaded to a library, with each response allocated to a specific column.
+For example, you can ask a question (a *prompt*) of a document in natural language, and the system saves the response directly to a designated library column. Or you can have more than one of these questions set to process any file uploaded to a library, with each response allocated to a specific column.
 
-Your prompt can be extractive (where you take information from existing data) or generative (where you create new content). Prompts can be linked to more than one column, and can work together alongside other models.
-
-For extracting basic metadata, autofill columns is quicker and easier than configuring a prebuilt or training a custom model, and generates content.
+Autofill columns can work alongside other Microsoft Syntex models. You can associate different extractive prompts (where you take information from existing data) or generative prompts (where you create new content) with more than one column, allowing you to extract metadata that other models might not detect or generate.
 
 ## Requirements and limitations
 
