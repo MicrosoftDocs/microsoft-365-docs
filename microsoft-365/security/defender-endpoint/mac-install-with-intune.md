@@ -80,6 +80,10 @@ In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2
 
    This profile is needed for Big Sur (11) or later. It is ignored on older macOS since they use the kernel extension.
 
+FIXME
+FIXME, in the step above, it's not just "go to **Settings** \> **Endpoints** \> **Device management** \> **Onboarding**." and then nothing...
+FIXME
+
 1. Under **Configuration profiles**, select **Create Profile**.
 1. Under **Platform**, select **macOS**.
 1. Under **Profile type**, select **Templates**.
@@ -137,7 +141,7 @@ To configure Full Disk Access:
 1. Click **Create**.
 1. On the **Basics** tab, **Name** the profile. For example, 'FullDiskAccess-prod-macOS-Default-MDE'.
 1. Click **Next**.
-1. On the **Configuration settings** tab, enter a **Custom configuration profile** name. For example, 'Fulldisk.mobileconfig'.
+1. On the **Configuration settings** tab, enter a **Custom configuration profile** name. For example, 'fulldisk.mobileconfig'.
 1. Choose a **Deployment channel**.
 1. Click **Next**.
 1. Select a **Configuration profile file**.
@@ -160,9 +164,9 @@ To configure background services:
 1. Under **Profile type**, select **Templates**.
 1. Under **Template name**, select **Custom**.
 1. Click **Create**.
-1. On the **Basics** tab, **Name** the profile. For example, 'FullDiskAccess-prod-macOS-Default-MDE'.
+1. On the **Basics** tab, **Name** the profile. For example, 'BackgroundServices-prod-macOS-Default-MDE'.
 1. Click **Next**.
-1. On the **Configuration settings** tab, enter a **Custom configuration profile** name. For example, 'Fulldisk.mobileconfig'.
+1. On the **Configuration settings** tab, enter a **Custom configuration profile** name. For example, 'background_services.mobileconfig'.
 1. Choose a **Deployment channel**.
 1. Click **Next**.
 1. Select a **Configuration profile file**.
@@ -189,7 +193,7 @@ To configure notifications:
 1. Click **Create**.
 1. On the **Basics** tab, **Name** the profile. For example, 'FullDiskAccess-prod-macOS-Default-MDE'.
 1. Click **Next**.
-1. On the **Configuration settings** tab, enter a **Custom configuration profile** name. For example, 'Notification.mobileconfig'.
+1. On the **Configuration settings** tab, enter a **Custom configuration profile** name. For example, 'notif.mobileconfig'.
 1. Choose a **Deployment channel**.
 1. Click **Next**.
 1. Select a **Configuration profile file**.
@@ -210,7 +214,7 @@ Download [accessibility.mobileconfig](https://github.com/microsoft/mdatp-xplat/b
 1. Click **Create**.
 1. On the **Basics** tab, **Name** the profile. For example, 'Accessibility-prod-macOS-Default-MDE'.
 1. Click **Next**.
-1. On the **Configuration settings** tab, enter a **Custom configuration profile** name. For example, 'Accessibility.mobileconfig'.
+1. On the **Configuration settings** tab, enter a **Custom configuration profile** name. For example, 'accessibility.mobileconfig'.
 1. Choose a **Deployment channel**.
 1. Click **Next**.
 1. Select a **Configuration profile file**.
@@ -227,7 +231,7 @@ This profile is used to update the Microsoft Defender for Endpoint on macOS via 
 
 For more information, see [Deploy updates for Microsoft Defender for Endpoint on macOS](mac-updates.md).
 
-Download [AutoUpdate2.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/microsoft_auto_update/com.microsoft.autoupdate2.mobileconfig) from [GitHub repository](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles).
+Download [AutoUpdate2.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/microsoft_auto_update/com.microsoft.autoupdate2.mobileconfig) from [GitHub repository](https://github.com/microsoft/mdatp-xplat/tree/master/macos/settings/microsoft_auto_update).
 
 > [!NOTE]
 > The sample AutoUpdate2.mobileconfig from the GitHub repository has it set to Current Channel (Production).
@@ -239,7 +243,7 @@ Download [AutoUpdate2.mobileconfig](https://github.com/microsoft/mdatp-xplat/blo
 1. Click **Create**.
 1. On the **Basics** tab, **Name** the profile. For example, 'Autoupdate-prod-macOS-Default-MDE'.
 1. Click **Next**.
-1. On the **Configuration settings** tab, enter a **Custom configuration profile** name. For example, 'Autoupdate.mobileconfig'.
+1. On the **Configuration settings** tab, enter a **Custom configuration profile** name. For example, 'com.microsoft.autoupdate2.mobileconfig'.
 1. Choose a **Deployment channel**.
 1. Click **Next**.
 1. Select a **Configuration profile file**.
