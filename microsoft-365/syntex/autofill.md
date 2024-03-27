@@ -43,7 +43,3 @@ Once the column settings are saved, any new files uploaded to the library will b
 
 ## Update an existing autofill column
 
-
-## Use autofill columns with other models
-
-Autofill columns can work alongside other Microsoft Syntex models. You can associate different extractive or generative prompts with more than one column, allowing you to extract metadata that other models might not detect or generate.
