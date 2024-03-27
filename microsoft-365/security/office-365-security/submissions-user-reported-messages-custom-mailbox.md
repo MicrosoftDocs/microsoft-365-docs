@@ -150,7 +150,7 @@ When **Monitor reported messages in Outlook** is selected and you also select **
 
   - **Microsoft and my reporting mailbox**: For Microsoft 365 organizations created after March 1 2023, this is the default value. User reported messages go to Microsoft for analysis and to the specified reporting mailbox for an admin or security operations team to analyze.
 
-     The default user reporting mailbox is the Exchange Online mailbox of the global admin. Currently, the global admin isn't _shown_ as the user reported mailbox on the **User reported settings** page until _after_ the first user in the organization reports a message from Outlook.
+    The default user reporting mailbox is the Exchange Online mailbox of the global admin. Currently, the global admin isn't _shown_ as the user reported mailbox on the **User reported settings** page until _after_ the first user in the organization reports a message from Outlook.
 
     To specify a different mailbox, select :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: next to any existing entry in the **Add an Exchange Online mailbox to send reported messages to** box. Click in the box and wait for the list of mailboxes to populate, or start typing a value to filter the list, and then select the mailbox in the results. Distribution groups and routing to an external or on-premises mailbox aren't allowed.
 
