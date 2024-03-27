@@ -13,6 +13,7 @@ ms.date: 11/29/2023
 ms.custom:
   - it-pro
   - has-azure-ad-ps-ref
+  - azure-ad-ref-level-one-done
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
@@ -43,6 +44,8 @@ We recommend that you include setting the user's Preferred Data Location as a pa
 If your company's users are not synchronized from an on-premises Active Directory system to Microsoft Entra ID, meaning they are created in Microsoft 365 or Microsoft Entra ID, then the PDL must be set using the Microsoft Azure Active Directory module for Windows PowerShell.
 
 The procedures in this section require the <a href="https://www.powershellgallery.com/packages/MSOnline/1.1.166.0" target="_blank">Microsoft Azure Active Directory Module for Windows PowerShell Module</a>. If you already have this module installed, please ensure you update to the latest version.
+
+[!INCLUDE [Azure AD PowerShell deprecation note](~/../microsoft-365/reusable-content/msgraph-powershell/includes/aad-powershell-deprecation-note.md)]
 
 [Connect and sign in](connect-to-microsoft-365-powershell.md) with a set of global administrator credentials for your _Tenant_.
 

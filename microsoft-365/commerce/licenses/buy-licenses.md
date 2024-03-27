@@ -9,6 +9,7 @@ ms.reviewer: sinakassaw, nicholak
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
 ms.collection: 
 - Tier1
@@ -22,6 +23,7 @@ ms.custom:
 - manage_licenses
 - AdminTemplateSet
 - adminvideo
+- admindeeplinkMAC
 search.appverid: MET150
 description: "Learn how to buy more licenses or reduce the number of licenses for your business subscription in the Microsoft 365 admin center."
 ms.date: 02/22/2024

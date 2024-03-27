@@ -51,13 +51,13 @@ Copy the unified solution package, onboarding script and migration script to the
 
 1. In the MECM console, follow these steps: **Software Library>Applications>Create Application**.
 2. Select **Manually specify the application information**.
-   :::image type="content" source="images/manual-application-information.png" alt-text="Screenshot of manually specifying the application information selection." lightbox="images/manual-application-information.png":::
+   :::image type="content" source="media/manual-application-information.png" alt-text="Screenshot of manually specifying the application information selection." lightbox="media/manual-application-information.png":::
 3. Select **Next** on the Software Center screen of the wizard.
 4. On the Deployment Types, click **Add**.
 5. Select **Manually to specify the deployment type information** and select **Next**.
 6. Give a name to your script deployment and select **Next**.
 
-   :::image type="content" source="images/manual-deployment-information.png" alt-text="Screenshot specifying the script deployment information.":::
+   :::image type="content" source="media/manual-deployment-information.png" alt-text="Screenshot specifying the script deployment information.":::
 7. On this step, copy the UNC path that your content is located. Example: `\\ServerName\h$\SOFTWARE_SOURCE\path`.
 
    :::image type="content" source="media/deployment-type-wizard.png" alt-text="Screenshot that shows UNC path copy.":::

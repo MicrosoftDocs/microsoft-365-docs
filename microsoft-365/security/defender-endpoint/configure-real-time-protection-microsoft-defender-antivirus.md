@@ -69,7 +69,7 @@ You can use **Local Group Policy Editor** to enable and configure Microsoft Defe
 
     2. Under **Best match**, select **Edit group policy** to launch **Local Group Policy Editor**.
     
-       :::image type="content" source="images/gpedit-search.png" alt-text="The GPEdit taskbar search result in the Control panel" lightbox="images/gpedit-search.png":::
+       :::image type="content" source="media/gpedit-search.png" alt-text="The GPEdit taskbar search result in the Control panel" lightbox="media/gpedit-search.png":::
 
 2. In the left pane of **Local Group Policy Editor**, expand the tree to **Computer Configuration** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus**.
 

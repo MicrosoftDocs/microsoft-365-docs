@@ -224,8 +224,14 @@
                       href: alert-grading-for-malicious-exchange-connectors.md
                     - name: Password spray attacks
                       href: alert-grading-password-spray-attack.md                    
-                 - name: Users 
-                   href: investigate-users.md                  
+                 - name: Entity pages
+                   items:
+                   - name: User
+                     href: investigate-users.md
+                   - name: Device
+                     href: entity-page-device.md
+                   - name: IP
+                     href: entity-page-ip.md
               - name: Incident response playbooks
                 href: /security/operations/incident-response-playbooks
               - name: Investigate domains and URLs associated with Microsoft Defender XDR
@@ -267,7 +273,9 @@
              - name: Guided and advanced modes
                href: advanced-hunting-modes.md
              - name: Generate KQL queries with Security Copilot
-               href: advanced-hunting-security-copilot.md                                         
+               href: advanced-hunting-security-copilot.md
+             - name: Advanced hunting in Microsoft Defender portal
+               href: advanced-hunting-microsoft-defender.md                                                        
              - name: Build queries using guided mode 
                items: 
                  - name: Get started with query builder
@@ -470,31 +478,22 @@
                 href: playbook-detecting-ransomware-m365-defender.md
               - name: Responding to ransomware attacks
                 href: playbook-responding-ransomware-m365-defender.md
-    - name: Enhance security operations
-      items:
-      - name: Integrate Defender XDR into your security operations
-        items: 
-        - name: Overview
-          href: integrate-microsoft-365-defender-secops.md
-        - name: Step 1. Operations readiness
-          href: integrate-microsoft-365-defender-secops-plan.md
-        - name: Step 2. Readiness assessment using Zero Trust
-          href: integrate-microsoft-365-defender-secops-readiness.md
-        - name: Step 3. Integration with your SOC services
-          href: integrate-microsoft-365-defender-secops-services.md
-        - name: Step 4. Roles, responsibilities, and oversight
-          href: integrate-microsoft-365-defender-secops-roles.md
-        - name: Step 5. Test use cases
-          href: integrate-microsoft-365-defender-secops-use-cases.md
-        - name: Step 6. SOC maintenance tasks
-          href: integrate-microsoft-365-defender-secops-tasks.md
-      - name: Optimize your security operations
-        items:
-        - name: View and manage SOC optimizations
-          display name: SOC optimization
-          href: /azure/sentinel/soc-optimization/soc-optimization-access?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json
-        - name: SOC optimization reference
-          href: /azure/sentinel/soc-optimization/soc-optimization-reference?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json
+    - name: Security operations guide
+      items: 
+       - name: Overview
+         href: integrate-microsoft-365-defender-secops.md
+       - name: Step 1. Operations readiness
+         href: integrate-microsoft-365-defender-secops-plan.md
+       - name: Step 2. Readiness assessment using Zero Trust
+         href: integrate-microsoft-365-defender-secops-readiness.md
+       - name: Step 3. Integration with your SOC services
+         href: integrate-microsoft-365-defender-secops-services.md
+       - name: Step 4. Roles, responsibilities, and oversight
+         href: integrate-microsoft-365-defender-secops-roles.md
+       - name: Step 5. Test use cases
+         href: integrate-microsoft-365-defender-secops-use-cases.md
+       - name: Step 6. SOC maintenance tasks
+         href: integrate-microsoft-365-defender-secops-tasks.md
     - name: Multitenant management in Microsoft Defender XDR
       items:
         - name: Multitenant management in Microsoft Defender XDR
