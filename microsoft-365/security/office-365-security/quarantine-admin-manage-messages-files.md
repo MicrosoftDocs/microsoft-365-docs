@@ -630,8 +630,6 @@ This feature is enabled by default.
 
 In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Review** \> **Quarantine** \> **Teams messages** tab. Or, to go directly to the **Teams messages** tab on the **Quarantine** page, use <https://security.microsoft.com/quarantine?viewid=Teams>.
 
-:::image type="content" source="../../media/admin-quarantine-teams-message-tab.png" alt-text="Screenshot of the Teams messages tab in quarantine." lightbox="../../media/admin-quarantine-teams-message-tab.png":::
-
 On the **Teams messages** tab, you can decrease the vertical spacing in the list by clicking :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal** and then selecting :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false"::: **Compact list**.
 
 You can sort the entries by clicking on an available column header. Select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns** to change the columns that are shown. The default values are marked with an asterisk (<sup>\*</sup>):
@@ -797,7 +795,7 @@ When you select multiple quarantined messages on the **Teams messages** tab by s
 - [Report Teams messages to Microsoft for review from quarantine](#report-teams-messages-to-microsoft-for-review-from-quarantine)
 - [Download Teams messages from quarantine](#download-teams-messages-from-quarantine)
 
-:::image type="content" source="../../media/admin-quarantine-teams-bulk-action.png" alt-text="Screenshot of the available actions on the Teams messages tab of the Quarantine page after you select multiple quarantined Teams messages." lightbox="../../media/admin-quarantine-teams-bulk-action.png":::
+:::image type="content" source="../../media/quarantine-teams-bulk-action.png" alt-text="Screenshot of the available actions on the Teams messages tab of the Quarantine page after you select multiple quarantined Teams messages." lightbox="../../media/quarantine-teams-bulk-action.png":::
 
 #### Approve or deny release requests from users for quarantined Teams messages
 
