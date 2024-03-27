@@ -10,8 +10,9 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier2
+- usx-security
 ms.topic: conceptual
-ms.date: 03/25/2024
+ms.date: 03/27/2024
 search.appverid: met150
 appliesto: Microsoft Defender XDR and Microsoft Sentinel in the Microsoft Defender portal
 ---
