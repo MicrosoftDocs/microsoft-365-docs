@@ -81,9 +81,11 @@ For more information, see [remediation actions](m365d-remediation-actions.md) in
 
 If you're using the [unified SOC platform](microsoft-sentinel-onboard.md) and also deployed the Microsoft Sentinel solution for SAP applications, you can also deploy automatic attack disruption for SAP.
 
-For example, deploy attack disruption for SAP to contain compromised assets by locking suspicious SAP users in case of a financial process manipulation attack.
+For example, deploy attack disruption for SAP to contain compromised assets by locking suspicious SAP users in case of a financial process manipulation attack. 
 
-For more information, see [Deploy automatic attack disruption for SAP with Microsoft Sentinel](/azure/sentinel/sap/deployment-attack-disrupt).
+After the risk is mitigated, Microsoft Defender admins can manually unlock the users that had been automatically locked by the attack disruption response. The ability to manually unlock users is available from the Microsoft Defender action center, and only for users that were locked by attack disruption. 
+
+For more information, see [Track the actions in the Action center](autoad-results.md#track-the-actions-in-the-action-center) and [Deploy automatic attack disruption for SAP with Microsoft Sentinel](/azure/sentinel/sap/deployment-attack-disrupt).
 
 ## Identify when an attack disruption happens in your environment
 
