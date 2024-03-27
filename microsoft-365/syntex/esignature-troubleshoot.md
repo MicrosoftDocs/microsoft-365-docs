@@ -53,7 +53,7 @@ Get-SPOSite -Limit All | Select-Object Url, SharingCapability
 Certain [conditional access](/entra/identity/conditional-access/overview) policies might determine whether an external recipient (signers outside of your organization or Microsoft 365 tenant) is able sign a document. When this happens, the external signers might not be able to access the document for signing. In some other cases, they might be able to access the document for signing but the signing operation is unsuccessful. One common way to resolve this is to contact your IT admin who can add the eSignature app to the list of approved apps via the  Microsoft Entra admin center.
 
 
-### Unable to create a request from another signature provider
+## Unable to create a request from another signature provider
 
 When you initiate a signature request from a document for another provider, such as Adobe Acrobat Sign and DocuSign, the document might have security and access policies applied that prevent the document from opening in the provider service. The most common policies include download and encryption policies applied. You must ensure that the document isn't encrypted before initiating the signature request and that the creator of the request has permission to download the file.  
 
