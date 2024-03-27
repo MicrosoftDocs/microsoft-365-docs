@@ -29,7 +29,7 @@ hideEdit: true
 
 *This article applies to Office 365 GCC High and Microsoft 365 GCC High*
 
-As part of onboarding to Office 365 GCC High, you will need to add your SMTP and SIP domains to your Online Services tenant. You’ll do this using the New-MsolDomain cmdlet in Azure AD PowerShell or use the [Azure Government Portal](https://portal.azure.us) to start the process of adding the domain and proving ownership.
+As part of onboarding to Office 365 GCC High, you'll need to add your SMTP and SIP domains to your Online Services tenant. You do this using the New-MsolDomain cmdlet in Azure AD PowerShell or using the [Azure Government Portal](https://portal.azure.us) to start the process of adding the domain and proving ownership.
 
 [!INCLUDE [Azure AD PowerShell deprecation note](~/../microsoft-365/reusable-content/msgraph-powershell/includes/aad-powershell-deprecation-note.md)]
 
@@ -45,7 +45,7 @@ Once you have your domains added to your tenant and validated, use the following
 
 ### Exchange Autodiscover record
 
-If you have Exchange Server on-premises, we recommend leaving your existing record in place while you migrate to Exchange Online, and update that record once you have completed your migration.
+If you have Exchange Server on-premises, we recommend leaving your existing record in place while you migrate to Exchange Online, and update that record once you complete your migration.
 
 ### Exchange Online MX Record
 
