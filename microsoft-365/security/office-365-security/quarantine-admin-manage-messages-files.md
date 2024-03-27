@@ -70,6 +70,8 @@ Watch this short video to learn how to manage quarantined messages as an admin.
 
 - Quarantined messages and files are retained for a default period of time based on why they were quarantined. After the retention period expires, the messages are automatically deleted and aren't recoverable. For more information, see [Quarantine retention](quarantine-about.md#quarantine-retention).
 
+- All actions taken by admins or users on quarantined messages are audited. For more information about audited quarantine events, see [Quarantine schema in the Office 365 Management API](/office/office-365-management-api/office-365-management-activity-api-schema#quarantine-schema).
+
 ## Use the Microsoft Defender portal to manage quarantined email messages
 
 ### View quarantined email
