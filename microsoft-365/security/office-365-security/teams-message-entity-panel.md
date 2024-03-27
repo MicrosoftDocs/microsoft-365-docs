@@ -76,26 +76,30 @@ The rest of the Teams message entity panel contains the following information, r
   - **Sender address**
   - **Time received**
   - **Detection tech**
-  - **Teams message ID**: You can use this value as an identifier of a Teams message in Microsoft Defender for Office 365.
+  - **Teams message ID**: You can use this value as an identifier of a Teams message in Defender for Office 365.
+
 - **Sender** section:
   - The sender's name and email address
   - **Domain**
   - **External**: The value **Yes** indicates the message was sent between an internal user and an external user.
-- **Participants** section: Available for messages in chats.
-  - **Conversation type**
-  - **Chat name**
-  - **Name and email**: Contains the name and email addresses of all of the participants (including the sender). If there are more than 10 participants, it also links to a secondary panel that lists all the participants in the chat at the time of the suspected threat.
-- **Channel details** section: Available for messages in channels
-  - **Conversation type**
-  - **Conversation name**: Contains the name of the channel.
-  - **Name and email**: Contains the name and address of the channel.
+
+- One of the following sections, depending on whether the message if from a chat or a channel:
+  - Chat: The **Participants** section:
+    - **Conversation type**
+    - **Chat name**
+    - **Name and email**: Contains the name and email addresses of all of the participants (including the sender). If there are more than 10 participants, it also links to a secondary panel that lists all the participants in the chat at the time of the suspected threat.
+  - Channel: The **Channel details** section:
+    - **Conversation type**
+    - **Conversation name**: Contains the name of the channel.
+    - **Name and email**: Contains the name and address of the channel.
+
 - **URLs** section:
   - **Name and type** Contains the URL from the Teams message.
   - **Threat**
 
   If the message has more than 10 URLs, select **View all URLs** to see all of them.
 
-:::image type="content" source="../../media/teams-message-entity-panel-shown-in-quarantine.png" alt-text="Screenshot of the Teams Message Entity panel as it is seen in Quarantine." lightbox="../../media/teams-message-entity-panel-shown-in-quarantine.png":::
+:::image type="content" source="../../media/teams-message-entity-panel-shown-in-quarantine.png" alt-text="Screenshot of the Teams Message Entity panel from a quarantined Teams message showing the common sections." lightbox="../../media/teams-message-entity-panel-shown-in-quarantine.png":::
 
 ## For more information
 
