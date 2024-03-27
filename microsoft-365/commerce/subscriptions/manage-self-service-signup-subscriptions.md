@@ -19,6 +19,7 @@ ms.collection:
 ms.custom:
   - commerce_subscriptions
   - AdminSurgePortfolio
+  - admindeeplinkMAC
   - has-azure-ad-ps-ref
   - azure-ad-ref-level-one-done
 search.appverid: MET150

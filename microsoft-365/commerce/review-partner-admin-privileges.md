@@ -18,7 +18,7 @@ ms.collection:
 - Adm_O365
 ms.custom:
 - commerce_subscriptions
-- empty
+- admindeeplinkMAC
 search.appverid: MET150
 description: "Learn how to review your list of Microsoft-certified solution providers (partners) to determine what admin privileges they have, and how to remove those privileges."
 ms.date: 11/16/2023

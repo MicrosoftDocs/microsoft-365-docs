@@ -112,7 +112,7 @@ Choose if to Generate an alert on the file block event and define the alerts set
 - Description
 - Recommended actions
 
-:::image type="content" source="images/indicators-generate-alert.png" alt-text="The Alert settings for file indicators" lightbox="images/indicators-generate-alert.png":::
+:::image type="content" source="media/indicators-generate-alert.png" alt-text="The Alert settings for file indicators" lightbox="media/indicators-generate-alert.png":::
 
 > [!IMPORTANT]
 >

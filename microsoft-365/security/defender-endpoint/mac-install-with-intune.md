@@ -94,7 +94,7 @@ In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2
     |com.microsoft.wdav.epsext|UBF8T346G9|
     |com.microsoft.wdav.netext|UBF8T346G9|
 
-    :::image type="content" source="images/mac-system-extension-intune2.png" alt-text="The settings of the system's extension" lightbox="images/mac-system-extension-intune2.png":::
+    :::image type="content" source="media/mac-system-extension-intune2.png" alt-text="The settings of the system's extension" lightbox="media/mac-system-extension-intune2.png":::
 
 1. On the **Assignments** tab, assign the profile to a group where the macOS devices and/or users are located, or All Users and All devices.
 1. Review the configuration profile. Click **Create**.
@@ -322,7 +322,7 @@ After completing the profile configuration, you'll be able to review the status 
 
 Once the Intune changes are propagated to the enrolled devices, you can see them listed under **Monitor** \> **Device status**:
 
-:::image type="content" source="images/mdatp-7-devicestatusblade.png" alt-text="The view of the device status" lightbox="images/mdatp-7-devicestatusblade.png":::
+:::image type="content" source="media/mdatp-7-devicestatusblade.png" alt-text="The view of the device status" lightbox="media/mdatp-7-devicestatusblade.png":::
 
 #### Client device setup
 
@@ -330,11 +330,11 @@ A standard [Company Portal installation](/intune-user-help/enroll-your-device-in
 
 1. Confirm device management.
 
-   :::image type="content" source="images/mdatp-3-confirmdevicemgmt.png" alt-text="The Confirm device management page" lightbox="images/mdatp-3-confirmdevicemgmt.png":::
+   :::image type="content" source="media/mdatp-3-confirmdevicemgmt.png" alt-text="The Confirm device management page" lightbox="media/mdatp-3-confirmdevicemgmt.png":::
 
    Select **Open System Preferences**, locate **Management Profile** on the list, and select **Approve...**. Your Management Profile would be displayed as **Verified**:
 
-   :::image type="content" source="images/mdatp-4-managementprofile.png" alt-text="The Management profile page" lightbox="images/mdatp-4-managementprofile.png":::
+   :::image type="content" source="media/mdatp-4-managementprofile.png" alt-text="The Management profile page" lightbox="media/mdatp-4-managementprofile.png":::
 
 2. Select **Continue** and complete the enrollment.
 
@@ -342,23 +342,23 @@ A standard [Company Portal installation](/intune-user-help/enroll-your-device-in
 
 3. In Intune, open **Manage** \> **Devices** \> **All devices**. Here you can see your device among the listed:
 
-   :::image type="content" source="images/mdatp-5-alldevices.png" alt-text="The All Devices page" lightbox="images/mdatp-5-alldevices.png":::
+   :::image type="content" source="media/mdatp-5-alldevices.png" alt-text="The All Devices page" lightbox="media/mdatp-5-alldevices.png":::
 
 #### Verify client device state
 
 1. After the configuration profiles are deployed to your devices, open **System Preferences** > **Profiles** on your Mac device.
 
-   :::image type="content" source="images/mdatp-13-systempreferences.png" alt-text="The System preferences page":::
+   :::image type="content" source="media/mdatp-13-systempreferences.png" alt-text="The System preferences page":::
     
-   :::image type="content" source="images/mdatp-14-systempreferencesprofiles.png" alt-text="The System Preferences Profiles page" lightbox="images/mdatp-14-systempreferencesprofiles.png":::
+   :::image type="content" source="media/mdatp-14-systempreferencesprofiles.png" alt-text="The System Preferences Profiles page" lightbox="media/mdatp-14-systempreferencesprofiles.png":::
 
 2. Verify that the following configuration profiles are present and installed. The **Management Profile** should be the Intune system profile. _Wdav-config_ and _wdav-kext_ are system configuration profiles that were added in Intune:
 
-   :::image type="content" source="images/mdatp-15-managementprofileconfig.png" alt-text="The Profiles page" lightbox="images/mdatp-15-managementprofileconfig.png":::
+   :::image type="content" source="media/mdatp-15-managementprofileconfig.png" alt-text="The Profiles page" lightbox="media/mdatp-15-managementprofileconfig.png":::
 
 3. You should also see the Microsoft Defender for Endpoint icon in the top-right corner.
 
-   :::image type="content" source="images/mdatp-icon-bar.png" alt-text="The icon for Microsoft Defender for Endpoint in the status bar":::
+   :::image type="content" source="media/mdatp-icon-bar.png" alt-text="The icon for Microsoft Defender for Endpoint in the status bar":::
 
 ### Step 13: Publish application
 
@@ -366,25 +366,25 @@ This step enables deploying Microsoft Defender for Endpoint to enrolled machines
 
 1. In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), open **Apps**.
 
-   :::image type="content" source="images/mdatp-8-app-before.png" alt-text="The application's overview page" lightbox="images/mdatp-8-app-before.png":::
+   :::image type="content" source="media/mdatp-8-app-before.png" alt-text="The application's overview page" lightbox="media/mdatp-8-app-before.png":::
 
 1. Select **By platform** > **macOS** > **Add**.
 1. Under **App type**, select **macOS**. Click **Select**.
 
-   :::image type="content" source="images/mdatp-9-app-type.png" alt-text="The specific application type" lightbox="images/mdatp-9-app-type.png":::
+   :::image type="content" source="media/mdatp-9-app-type.png" alt-text="The specific application type" lightbox="media/mdatp-9-app-type.png":::
 
 1. On the **App information**, keep the default values and click **Next**.
 
-   :::image type="content" source="images/mdatp-10-properties.png" alt-text="The application properties page" lightbox="images/mdatp-10-properties.png":::
+   :::image type="content" source="media/mdatp-10-properties.png" alt-text="The application properties page" lightbox="media/mdatp-10-properties.png":::
 
 1. On the **Assignments** tab, click **Next**.
 
-   :::image type="content" source="images/mdatp-11-assignments.png" alt-text="The Intune assignments information page" lightbox="images/mdatp-11-assignments.png":::
+   :::image type="content" source="media/mdatp-11-assignments.png" alt-text="The Intune assignments information page" lightbox="media/mdatp-11-assignments.png":::
 
 1. Review and **Create**.
 You can visit **Apps** > **By platform** > **macOS** to see it on the list of all applications.
 
-   :::image type="content" source="images/mdatp-12-applications.png" alt-text="The application lists page" lightbox="images/mdatp-12-applications.png":::
+   :::image type="content" source="media/mdatp-12-applications.png" alt-text="The application lists page" lightbox="media/mdatp-12-applications.png":::
 
 For more information, see [Add Microsoft Defender for Endpoint to macOS devices using Microsoft Intune](/mem/intune/apps/apps-advanced-threat-protection-macos).
 
@@ -399,7 +399,7 @@ To download the onboarding packages from Microsoft 365 Defender portal:
 
 2. Set the operating system to **macOS** and the deployment method to **Mobile Device Management / Microsoft Intune**.
 
-   :::image type="content" source="images/macos-install-with-intune.png" alt-text="The Onboarding settings page" lightbox="images/macos-install-with-intune.png":::
+   :::image type="content" source="media/macos-install-with-intune.png" alt-text="The Onboarding settings page" lightbox="media/macos-install-with-intune.png":::
 
 3. Select **Download onboarding package**. Save it as _WindowsDefenderATPOnboardingPackage.zip_ to the same directory.
 
@@ -431,22 +431,22 @@ To deploy the onboarding package:
 1. Under **Template name**, select **Custom**.
 1. Click **Create**.
 
-   :::image type="content" alt-text="Deploy onboarding package" source="images/mdatp-6-systemconfigurationprofiles-1.png" lightbox="images/mdatp-6-systemconfigurationprofiles-1.png":::
+   :::image type="content" alt-text="Deploy onboarding package" source="media/mdatp-6-systemconfigurationprofiles-1.png" lightbox="media/mdatp-6-systemconfigurationprofiles-1.png":::
 
 1. On the **Basics** tab, **Name** the profile. For example, 'Autoupdate-prod-macOS-Default-MDE'. Click **Next**.
 
-   :::image type="content" alt-text="click next" source="images/mdatp-6-systemconfigurationprofiles-2.png" lightbox="images/mdatp-6-systemconfigurationprofiles-2.png":::
+   :::image type="content" alt-text="click next" source="media/mdatp-6-systemconfigurationprofiles-2.png" lightbox="media/mdatp-6-systemconfigurationprofiles-2.png":::
 
 1. On the **Configuration settings** tab, enter a **Custom configuration profile** name. For example, 'Autoupdate.mobileconfig'.
 1. Choose a **Deployment channel**.
 1. Click **Next**.
 1. Select a **Configuration profile file**.
 
-   :::image type="content" alt-text="configuration profile" source="images/mdatp-6-systemconfigurationprofiles.png" lightbox="images/mdatp-6-systemconfigurationprofiles.png":::
+   :::image type="content" alt-text="configuration profile" source="media/mdatp-6-systemconfigurationprofiles.png" lightbox="media/mdatp-6-systemconfigurationprofiles.png":::
 
 1. On the **Assignments** tab, assign the profile to a group where the macOS devices and/or users are located, or All Users and All devices.
 
-   :::image type="content" alt-text="assign users" source="images/mdatp-6-systemconfigurationprofiles-3.png" lightbox="images/mdatp-6-systemconfigurationprofiles-3.png":::
+   :::image type="content" alt-text="assign users" source="media/mdatp-6-systemconfigurationprofiles-3.png" lightbox="media/mdatp-6-systemconfigurationprofiles-3.png":::
 
 1. Review the configuration profile. Click **Create**.
 1. Open **Devices** > **Configuration profiles** to see the created profile.
