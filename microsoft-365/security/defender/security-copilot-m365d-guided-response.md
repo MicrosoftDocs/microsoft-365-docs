@@ -1,5 +1,5 @@
 ---
-title: Resolve incidents with guided responses with Microsoft Copilot in Microsoft Defender
+title: Resolve incidents with guided responses with Microsoft Copilot for Security in Microsoft Defender XDR
 description: Resolve incidents using guided responses delivered by Microsoft Copilot in Microsoft Defender.
 keywords: security copilot, Microsoft Defender XDR, embedded experience, incident summary, script analyzer, script analysis, query assistant, m365, incident report, guided response, incident response playbooks, incident response, incident response playbooks, remediate incident, remediation actions, incident solution, resolve incidents, guided responses, security copilot guided response, copilot in security guided response, security copilot guided response in Microsoft Defender XDR, Microsoft Copilot for Security, Microsoft Defender, Copilot in Defender
 ms.service: defender-xdr
@@ -20,23 +20,23 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - MET150
-ms.date: 03/20/2024
+ms.date: 03/27/2024
 ---
 
-# Resolve incidents with guided responses from Microsoft Copilot for Microsoft Defender
+# Resolve incidents with guided responses from Microsoft Copilot for Security in Defender XDR
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
 - Microsoft Defender XDR
-- Unified SOC platform in the Microsoft Defender portal
+- Microsoft Defender unified security operations center (SOC) platform
 
-[Microsoft Copilot](/security-copilot/microsoft-security-copilot) in Microsoft Defender supports incident response teams in immediately resolving incidents with guided responses. Copilot for Security and Microsoft Defender uses AI and machine learning capabilities to contextualize an incident and learn from previous investigations to generate appropriate response actions.
+[Microsoft Copilot for Security](/security-copilot/microsoft-security-copilot) in the Microsoft Defender portal supports incident response teams in immediately resolving incidents with guided responses. Copilot in Defender uses AI and machine learning capabilities to contextualize an incident and learn from previous investigations to generate appropriate response actions.
 
-Responding to incidents in Microsoft Defender XDR often requires familiarity with the portal's available actions to stop attacks. In addition, new incident responders might have different ideas of where and how to start responding to incidents. The guided response capability of Copilot in Defender allows incident response teams at all levels to confidently and quickly apply response actions to resolve incidents with ease. 
+Responding to incidents in the Microsoft Defender portal often requires familiarity with the portal's available actions to stop attacks. In addition, new incident responders might have different ideas of where and how to start responding to incidents. The guided response capability of Copilot in Defender allows incident response teams at all levels to confidently and quickly apply response actions to resolve incidents with ease.
 
-Guided responses are available in Microsoft Defender through the [Copilot for Security license](/security-copilot/faq-security-copilot). Guided responses are also available in the Copilot for Security standalone experience through the Microsoft Defender XDR plugin.
+Guided responses are available in the Microsoft Defender portal through the [Copilot for Security license](/security-copilot/faq-security-copilot). Guided responses are also available in the Copilot for Security standalone experience through the Defender XDR plugin.
 
 This guide outlines how to access the guided response capability, including information on providing feedback about the responses.
 
@@ -61,13 +61,15 @@ To use guided responses, perform the following steps:
 
    :::image type="content" source="../../media/copilot-in-defender/guided-response/copilot-defender-guided-response-small.png" alt-text="Screenshot highlighting the Copilot pane with the guided responses in the Microsoft Defender incident page." lightbox="../../media/copilot-in-defender/guided-response/copilot-defender-guided-response.png":::
 
-2. Review each card before applying the recommendations. You can skip, mark as complete, or view the recommended action in the Copilot for Security portal. To view these options, select the More actions ellipsis (...) on top of a response card.
+2. Review each card before applying the recommendations. Select the More actions ellipsis (...) on top of a response card to view the options available for each recommendation.
 
-   :::image type="content" source="../../media/copilot-in-defender/guided-response/copilot-defender-guided-response-more-actions.png" alt-text="Screenshot highlighting the options available to users for each guided response card in the Copilot pane in Microsoft Defender." lightbox="../../media/copilot-in-defender/guided-response/copilot-defender-guided-response-more-actions.png":::
+   :::image type="content" source="../../media/copilot-in-defender/guided-response/copilot-defender-guided-response-more-actions1.png" alt-text="Screenshot highlighting the options available to users in a guided response card in the Copilot pane in Microsoft Defender XDR." lightbox="../../media/copilot-in-defender/guided-response/copilot-defender-guided-response-more-actions1.png":::
+
+   :::image type="content" source="../../media/copilot-in-defender/guided-response/copilot-defender-guided-response-more-actions2.png" alt-text="Screenshot highlighting the options available to users in an automation response card in the Copilot pane in Microsoft Defender XDR." lightbox="../../media/copilot-in-defender/guided-response/copilot-defender-guided-response-more-actions2.png":::
 
 3. To apply an action, select the desired action found on each card. The guided response action on each card is tailored to the type of incident and the specific entity involved.
 
-   :::image type="content" source="../../media/copilot-in-defender/guided-response/copilot-defender-guided-response-actions-small.png" alt-text="Screenshot highlighting the actions available to users for each guided response card in the Copilot pane in Microsoft Defender." lightbox="../../media/copilot-in-defender/guided-response/copilot-defender-guided-response-actions.png":::
+   :::image type="content" source="../../media/copilot-in-defender/guided-response/copilot-defender-guided-response-actions-small.png" alt-text="Screenshot of the guided response cards in the Copilot pane in Microsoft Defender." lightbox="../../media/copilot-in-defender/guided-response/copilot-defender-guided-response-actions.png":::
 
 4. You can provide feedback to each response card to continuously enhance future responses from Copilot. To provide feedback, select the feedback icon ![Screenshot of the feedback icon for Copilot in Defender cards](../../media/copilot-in-defender/copilot-defender-feedback.png) found on the bottom right of each card.
 
