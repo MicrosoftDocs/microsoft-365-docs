@@ -85,7 +85,7 @@ For example, deploy attack disruption for SAP to contain compromised assets by l
 
 After the risk is mitigated, Microsoft Defender admins can manually unlock the users that had been automatically locked by the attack disruption response. The ability to manually unlock users is available from the Microsoft Defender action center, and only for users that were locked by attack disruption. 
 
-For more information, see [Track the actions in the Action center](autoad-results.md#track-the-actions-in-the-action-center) and [Deploy automatic attack disruption for SAP with Microsoft Sentinel](/azure/sentinel/sap/deployment-attack-disrupt).
+For more information, see [Track the actions in the Action center](autoad-results.md#track-the-actions-in-the-action-center) and [Deploy automatic attack disruption for SAP with Microsoft Sentinel](https://aka.ms/attack-disrupt-sentinel).
 
 ## Identify when an attack disruption happens in your environment
 
