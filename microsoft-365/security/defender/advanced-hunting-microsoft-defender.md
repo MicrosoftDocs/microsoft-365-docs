@@ -15,25 +15,19 @@ ms.collection:
   - m365-security
   - m365initiative-m365-defender
   - tier1
+  - usx-security
 ms.topic: conceptual
-ms.date: 03/26/2024
+appliesto: Microsoft Defender XDR and Microsoft Sentinel in the Microsoft Defender portal
+ms.date: 03/27/2024
 ---
 
 # Advanced hunting in the Microsoft Defender portal
-
-
-
-**Applies to:**
-- Microsoft Defender unified security operations center (SOC) platform, including:
-    - Microsoft Sentinel
-    - Microsoft Defender XDR
-
-[!INCLUDE [unified-soc-preview](../../includes/unified-soc-preview.md)]
 
 Advanced hunting in the unified portal allows you to view and query all data from Microsoft Defender XDR. This includes data from various Microsoft security services and Microsoft Sentinel, which includes data from non-Microsoft products, in a single platform. You can also access and use all your existing Microsoft Sentinel workspace content, including queries and functions. 
 
 Querying from a single portal across different data sets makes hunting more efficient and removes the need for context-switching.
 
+[!INCLUDE [unified-soc-preview](../../includes/unified-soc-preview.md)]
 
 ## How to access
 
