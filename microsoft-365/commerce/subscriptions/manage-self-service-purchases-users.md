@@ -5,10 +5,11 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: prlachhw, socheng
+ms.reviewer: sijoshi, socheng
 audience: Admin
 ms.topic: end-user-help
-ms.service: microsoft-365-business 
+ms.service: microsoft-365-business
+ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
 ms.collection: 
 - Tier1
@@ -17,6 +18,7 @@ ms.collection:
 ms.custom: 
 - commerce_ssp
 - AdminSurgePortfolio
+- admindeeplinkMAC
 search.appverid:
 - MET150
 description: "Users can learn how to manage their self-service purchases."

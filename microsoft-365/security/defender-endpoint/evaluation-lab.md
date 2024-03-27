@@ -32,6 +32,10 @@ ms.date: 02/27/2024
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
+   > [!IMPORTANT]
+   > As Microsoft continues to evaluate the value of the features and services to provide, Microsoft has made the decision to retire the Defender Evaluation Lab.
+   > This change will rollout in mid-January 2024 and expect to complete by late January 2024.
+
 Conducting a comprehensive security product evaluation can be a complex process requiring cumbersome environment and device configuration before an end-to-end attack simulation can actually be done. Adding to the complexity is the challenge of tracking where the simulation activities, alerts, and results are reflected during the evaluation.
 
 The Microsoft Defender for Endpoint evaluation lab is designed to eliminate the complexities of device and environment configuration so that you can  focus on evaluating the capabilities of the platform, running simulations, and seeing the prevention, detection, and remediation features in action.
@@ -85,18 +89,18 @@ Already have a lab? Make sure to enable the new threat simulators and have activ
 
 2. Depending on your evaluation needs, you can choose to setup an environment with fewer devices for a longer period or more devices for a shorter period. Select your preferred lab configuration then select **Next**.
 
-    :::image type="content" source="images/lab-creation-page.png" alt-text="The lab configuration options" lightbox="images/lab-creation-page.png":::
+    :::image type="content" source="media/lab-creation-page.png" alt-text="The lab configuration options" lightbox="media/lab-creation-page.png":::
 
 3. (Optional) You can choose to install threat simulators in the lab.
 
-    :::image type="content" source="images/install-agent.png" alt-text="The install simulators agent page" lightbox="images/install-agent.png":::
+    :::image type="content" source="media/install-agent.png" alt-text="The install simulators agent page" lightbox="media/install-agent.png":::
 
    > [!IMPORTANT]
    > You'll first need to accept and provide consent to the terms and information sharing statements.
 
 4. Select the threat simulation agent you'd like to use and enter your details. You can also choose to install threat simulators at a later time. If you choose to install threat simulation agents during the lab setup, you'll enjoy the benefit of having them conveniently installed on the devices you add.
 
-   :::image type="content" source="images/lab-setup-summary.png" alt-text="The summary page" lightbox="images/lab-setup-summary.png":::
+   :::image type="content" source="media/lab-setup-summary.png" alt-text="The summary page" lightbox="media/lab-setup-summary.png":::
 
 5. Review the summary and select **Setup lab**.
 
@@ -151,7 +155,7 @@ Automated investigation settings will be dependent on tenant settings. It will b
 
 5. See the status of test devices, the risk and exposure levels, and the status of simulator installations by selecting the **Devices** tab.
 
-   :::image type="content" source="images/machines-tab.png" alt-text="The devices tab" lightbox="images/machines-tab.png":::
+   :::image type="content" source="media/machines-tab.png" alt-text="The devices tab" lightbox="media/machines-tab.png":::
 
    > [!TIP]
    > In the **Simulator status** column, you can hover over the information icon to know the installation status of an agent.

@@ -78,7 +78,7 @@ One of the easiest ways to determine if attack surface reduction rules are alrea
 
 Here's an example:
 
-:::image type="content" source="images/getmpreferencescriptnew.png" alt-text="The get mppreference script" lightbox="images/getmpreferencescriptnew.png":::
+:::image type="content" source="media/getmpreferencescriptnew.png" alt-text="The get mppreference script" lightbox="media/getmpreferencescriptnew.png":::
 
 There are multiple attack surface reduction rules active, with different configured actions.
 
@@ -90,7 +90,7 @@ Example:
 Get-MPPreference | Select-Object -ExpandProperty AttackSurfaceReductionRules_Ids
 ```
 
-:::image type="content" source="images/getmpref-examplenew.png" alt-text="The get mpreference example" lightbox="images/getmpref-examplenew.png":::
+:::image type="content" source="media/getmpref-examplenew.png" alt-text="The get mpreference example" lightbox="media/getmpref-examplenew.png":::
 
 The above shows all the IDs for attack surface reduction rules that have a setting different from 0 (Not Configured).
 
@@ -100,7 +100,7 @@ The next step is then to list the actual actions (Block or Audit) that each rule
 Get-MPPreference | Select-Object -ExpandProperty AttackSurfaceReductionRules_Actions
 ```
 
-:::image type="content" source="images/getmpref-example2new.png" alt-text="The get mppreference example2" lightbox="images/getmpref-example2new.png":::
+:::image type="content" source="media/getmpref-example2new.png" alt-text="The get mppreference example2" lightbox="media/getmpref-example2new.png":::
 
 ### Querying blocking and auditing events
 
@@ -108,7 +108,7 @@ attack surface reduction rule events can be viewed within the Windows Defender l
 
 To access it, open Windows Event Viewer, and browse to **Applications and Services Logs** \> **Microsoft** \> **Windows** \> **Windows Defender** \> **Operational**.
 
-:::image type="content" source="images/eventviewerscrnew.png" alt-text="The Event Viewer page" lightbox="images/eventviewerscrnew.png":::
+:::image type="content" source="media/eventviewerscrnew.png" alt-text="The Event Viewer page" lightbox="media/eventviewerscrnew.png":::
 
 ## Microsoft Defender Antimalware Protection Logs
 
@@ -118,7 +118,7 @@ You can find this utility in *%ProgramFiles%\Windows Defender\MpCmdRun.exe*. You
 
 To generate the support information, type *MpCmdRun.exe -getfiles*. After a while, several logs will be packaged into an archive (MpSupportFiles.cab) and made available in *C:\ProgramData\Microsoft\Windows Defender\Support*.
 
-:::image type="content" source="images/malware-prot-logsnew.png" alt-text="The malware protection logs" lightbox="images/malware-prot-logsnew.png":::
+:::image type="content" source="media/malware-prot-logsnew.png" alt-text="The malware protection logs" lightbox="media/malware-prot-logsnew.png":::
 
 Extract that archive and you'll have many files available for troubleshooting purposes.
 
