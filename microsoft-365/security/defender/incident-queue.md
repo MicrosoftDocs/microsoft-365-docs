@@ -68,11 +68,15 @@ From the default incident queue, you can select **Add filter** to see the **Add 
 
 :::image type="content" source="../../media/incidents-queue/fig1-newfilters.png" alt-text="The Filters pane for the incident queue in the Microsoft Defender portal." lightbox="../../media/incidents-queue/fig1-newfilters.png":::
 
+Select the filters you want to use, then select **Add** at the bottom of the list to make them available.
+
+Now the filters you selected are shown along with the existing applied filters. Select the new filter to specify its conditions. For example, if you chose the "Service/detection sources" filter, select it to choose the sources by which to filter the list.
+
 You can also see the **Filter** pane by selecting any of the filters in the **Filters** list above the list of incidents.
 
 This table lists the filter names that are available.
 
-| Filter name | Description |
+| Filter name | Description/Conditions |
 |:-------|:-----|
 | **Status** | Select **New**, **In progress**, or **Resolved**. |
 | **Alert severity<br>Incident severity** | The severity of an alert or incident is indicative of the impact it can have on your assets. The higher the severity, the bigger the impact and typically requires the most immediate attention. Select **High**, **Medium**, **Low**, or **Informational**. |
@@ -92,11 +96,11 @@ This table lists the filter names that are available.
 | **Alert policies** | Specify an alert policy title.  |
 
 
-The default filter is to show all alerts and incidents with a status of **New** and **In progress** and with a severity of **Low**, **Medium**, or **High**.
+The default filter is to show all alerts and incidents with a status of **New** and **In progress** and with a severity of **High**, **Medium**, or **Low**.
 
 You can quickly remove a filter by selecting the **X** in the name of a filter in the **Filters** list.
 
-You can also create filter sets within the incidents page by selecting the **create filter sets**.
+You can also create filter sets within the incidents page by selecting **Saved filter queries > Create filter set**. If no filter sets have been created, select **Save** to create one.
 
 :::image type="content" source="../../media/incidents-queue/fig2-newfilters.png" alt-text="The create filter sets option for the incident queue in the Microsoft Defender portal." lightbox="../../media/incidents-queue/fig2-newfilters.png":::
 
