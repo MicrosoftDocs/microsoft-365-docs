@@ -18,18 +18,13 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - MET150
-ms.date: 03/10/2024
+ms.date: 03/28/2024
 appliesto: Microsoft Defender XDR and Microsoft Sentinel in the Microsoft Defender portal
 ---
 
 # Incident response in the Microsoft Defender portal
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
-
-**Applies to:**
-- Microsoft Defender unified security operations center (SOC) platform, including:
-    - Microsoft Sentinel
-    - Microsoft Defender XDR
 
 An *incident* in the Microsoft Defender portal is a collection of related alerts and associated data that make up the story of an attack. It's also a case file that your SOC can use to investigate that attack and manage, implement, and document the response to it.
 

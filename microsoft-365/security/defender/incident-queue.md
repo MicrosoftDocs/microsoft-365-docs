@@ -11,6 +11,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
   - m365-security
+  - usx-security
   - tier1
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
@@ -18,16 +19,12 @@ search.appverid:
   - MOE150
   - MET150
 ms.date: 03/27/2024
+appliesto: Microsoft Defender XDR and Microsoft Sentinel in the Microsoft Defender portal
 ---
 
 # Prioritize incidents in the Microsoft Defender portal
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
-
-**Applies to:**
-- Microsoft Defender unified security operations center (SOC) platform, including:
-    - Microsoft Sentinel
-    - Microsoft Defender XDR
 
 The unified SOC platform in the Microsoft Defender portal applies correlation analytics and aggregates related alerts and automated investigations from different products into an incident. Microsoft Sentinel and Defender XDR also trigger unique alerts on activities that can only be identified as malicious given the end-to-end visibility in the unified platform across the entire suite of products. This view gives your security analysts the broader attack story, which helps them better understand and deal with complex threats across your organization.
 
