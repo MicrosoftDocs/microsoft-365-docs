@@ -18,9 +18,9 @@ description: "A comparison chart that shows the feature differences between the 
 
 # Comparison chart: Bookings web app vs. Bookings Teams app
 
-The Bookings app in Teams lets schedulers handle their main tasks and change some settings. However, the Bookings web includes advanced features and settings that are not yet available in the Teams app.
+The Bookings app in Teams lets schedulers handle their main tasks and change some settings. However, the Bookings web includes advanced features and settings that aren't available in the Teams app.
 
-Teams app features are being added all the time and we will continue to update this list. See the **Is all the functionality of the original Bookings Web app available in Microsoft Teams?** section in the [FAQ](bookings-faq.yml) for more details.
+See the **Is all the functionality of the original Bookings Web app available in Microsoft Teams?** section in the [FAQ](bookings-faq.yml) for more details.
 
 | Feature | Bookings web app | Bookings Teams app |
 |:---|:---|:---|
