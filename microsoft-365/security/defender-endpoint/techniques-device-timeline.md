@@ -74,7 +74,7 @@ You can customize which columns to expose. You can also filter for flagged event
 
 You can choose which columns to expose in the timeline by selecting the **Choose columns** button.
 
-:::image type="content" source="images/filter-customize-columns.png" alt-text="The pane in which you can customize columns" lightbox="images/filter-customize-columns.png":::
+:::image type="content" source="media/filter-customize-columns.png" alt-text="The pane in which you can customize columns" lightbox="media/filter-customize-columns.png":::
 
 
 From there you can select which information set to include.

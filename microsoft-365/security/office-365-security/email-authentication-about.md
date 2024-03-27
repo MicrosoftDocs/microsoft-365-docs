@@ -139,7 +139,7 @@ This section describes why you need SPF, DKIM, and DMARC for domains on the inte
   - Register a domain (for example, proseware.com) and configure DKIM for the domain.
   - Send email with the From email addresses in a different domain (for example, woodgrovebank.com).
 
-- **DMARC**: As explained in [Set up DMARC to validate the From address domain for senders in Microsoft 365](email-authentication-dmarc-configure.md), DMARC uses SPF and DMARC to check for alignment between the domains in the MAIL FROM and From addresses. DMARC also specifies the action that the destination email system should take on messages that fail DMARC, and identifies where to send DMARC results (both pass and fail).
+- **DMARC**: As explained in [Set up DMARC to validate the From address domain for senders in Microsoft 365](email-authentication-dmarc-configure.md), DMARC uses SPF and DKIM to check for alignment between the domains in the MAIL FROM and From addresses. DMARC also specifies the action that the destination email system should take on messages that fail DMARC, and identifies where to send DMARC results (both pass and fail).
 
   **How DMARC helps SPF and DKIM**: As previously described, SPF makes no attempt to match the domain in MAIL FROM domain and From addresses. DKIM doesn't care if the domain that signed the message matches the domain in the From address.
 
