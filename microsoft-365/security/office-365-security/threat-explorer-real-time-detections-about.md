@@ -1563,7 +1563,7 @@ When you open the query by selecting **Explore** from the **Threat tracker** pag
 
 ## More information
 
-- [Threat Explorer collect email details on the email entity page](mdo-email-entity-page.md)
+- [Threat Explorer collect email details on the Email entity page](mdo-email-entity-page.md)
 - [Find and investigate malicious email that was delivered](threat-explorer-investigate-delivered-malicious-email.md)
 - [View malicious files detected in SharePoint Online, OneDrive, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-about.md)
 - [Threat protection status report](reports-email-security.md#threat-protection-status-report)

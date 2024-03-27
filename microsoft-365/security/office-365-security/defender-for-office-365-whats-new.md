@@ -162,7 +162,7 @@ For more information on what's new with other Microsoft Defender security produc
 
 ## July 2022
 
-- [Introducing actions into the email entity page](mdo-email-entity-page.md): Admins can take preventative, remediation, and submission actions from the email entity page.
+- [Introducing actions into the Email entity page](mdo-email-entity-page.md): Admins can take preventative, remediation, and submission actions from the Email entity page.
 
 ## June 2022
 

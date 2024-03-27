@@ -1,5 +1,5 @@
 ---
-title: The email entity page in Defender for Office 365
+title: The Email entity page in Defender for Office 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -32,7 +32,7 @@ This article explains the information and actions on the Email entity page.
 
 ## Permissions and licensing for the Email entity page
 
-To use the email entity page, you need to be assigned permissions. The permissions and licensing are the same as Threat Explorer (Explorer) and Real-time detections. For more information, see [Permissions and licensing for Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md#permissions-and-licensing-for-threat-explorer-and-real-time-detections).
+To use the Email entity page, you need to be assigned permissions. The permissions and licensing are the same as Threat Explorer (Explorer) and Real-time detections. For more information, see [Permissions and licensing for Threat Explorer and Real-time detections](threat-explorer-real-time-detections-about.md#permissions-and-licensing-for-threat-explorer-and-real-time-detections).
 
 ## Where to find the Email entity page
 
@@ -416,22 +416,23 @@ The following actions are available at the top of the Email entity page:
 
 The _Email summary panel_ is the email details flyout that's available in many features in Exchange Online Protection (EOP) and Defender for Office 365. The Email summary panel contains standardized summary information about the email message taken from the full details that are available on the Email entity page in Defender for Office 365.
 
-Where to find the Email summary panel is described in the [Where to find the Email entity page](#where-to-find-the-email-entity-page) section earlier in this article. The rest of this section describes the information that's available on the Email summary panel.
+Where to find the Email summary panel is described in the [Where to find the Email entity page](#where-to-find-the-email-entity-page) section earlier in this article. The rest of this section describes the information that's available on the Email summary panel across all features.
 
 > [!TIP]
+>
 > The Email summary panel is available from the **Action center** page at <https://security.microsoft.com/action-center/> on the **Pending** or **History** tabs. Select an action with the **Entity type** value **Email** by clicking anywhere in the row other than the check box or the **Investigation ID** value. The details flyout that opens is the Email summary panel, but :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity** isn't available at the top of the flyout.
 
 The following message information is available at the top of the Email summary panel:
 
 - The title of the flyout is the message Subject value.
-- The number of attachments and links in the message.
+- The number of attachments and links in the message (not present in all features).
 - Any user tags that are assigned to the recipients of the message (including the Priority account tag). For more information, see [User tags in Microsoft Defender for Office 365](user-tags-about.md)
-- The available actions at the top of the Email summary panel depend on the feature in EOP or Defender for Office 365. The available actions in the Email summary panel are described in the individual feature articles.
+- The actions that are available at the top of the flyout depend on where you opened the Email summary panel. The available actions are described in the individual feature articles.
 
 > [!TIP]
 > To see details about other messages without leaving the Email summary panel of the current message, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
 
-The rest of the Email summary panel contains the following information:
+The following sections are available on the Email summary panel for all features (it doesn't matter where you opened the Email summary panel from):
 
 - **Delivery details** section:
   - **Original threats**
