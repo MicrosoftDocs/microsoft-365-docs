@@ -53,20 +53,12 @@ The MX record value for your accepted domains follows a standard format as noted
 
 For example, if your tenant name is contoso.onmicrosoft.us, you’d use **contoso.mail.protection.office365.us** as the value for your MX record.
 
-## Skype for Business Online
-
-### CNAME records
-
-| Type | Host name | Points to address or value | TTL |
-| --- | --- | --- | --- |
-| CNAME | sip | sipdir.online.gov.skypeforbusiness.us | One Hour |
-| CNAME | lyncdiscover | webdir.online.gov.skypeforbusiness.us | One Hour |
+## External DNS records required for Teams
 
 ### SRV records
 
 | Type | Service | Protocol | Port | Weight | Priority | Name | Target | TTL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| SRV | \_sip | \_tls | 443 | 1 | 100 | @ | sipdir.online.gov.skypeforbusiness.us | One Hour |
 | SRV | \_sipfederationtls | \_tcp | 5061 | 1 | 100 | @ | sipfed.online.gov.skypeforbusiness.us | One Hour |
 
 ## Other DNS records
