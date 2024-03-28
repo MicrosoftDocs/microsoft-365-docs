@@ -180,7 +180,7 @@ Use the following steps to schedule scans:
    cat /logs/mdav_avacron_full_scan.log
    ```
 
-    :::image type="content" source="images/mdav_avacron_full_scan_log.png" alt-text="verify the job ran":::
+    :::image type="content" source="media/mdav_avacron_full_scan_log.png" alt-text="verify the job ran":::
 
     ```shell
     [root@redhat7 cron.weekly] # cat /logs/mdav_avacron_full_scan.log

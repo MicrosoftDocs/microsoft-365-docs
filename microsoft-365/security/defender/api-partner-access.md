@@ -1,12 +1,7 @@
 ---
 title: Partner access through Microsoft Defender XDR APIs
 description: Learn how to create an app to get programmatic access to Microsoft Defender XDR on behalf of your users.
-keywords: partner, access, api, multi tenant, consent, access token, app
-search.product: eADQiWindows 10XVcnh
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: 
   - NOCSH
 ms.author: macapara

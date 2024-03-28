@@ -60,6 +60,8 @@ You create and assign quarantine policies in the Microsoft Defender portal or in
   - [Email & collaboration permissions in the Microsoft Defender portal](mdo-portal-permissions.md): Membership in the **Quarantine Administrator**, **Security Administrator**, or **Organization Management** role groups.
   - [Microsoft Entra permissions](/entra/identity/role-based-access-control/manage-roles-portal): Membership in the **Global Administrator** or **Security Administrator** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
+- All actions taken by admins or users on quarantined messages are audited. For more information about audited quarantine events, see [Quarantine schema in the Office 365 Management API](/office/office-365-management-api/office-365-management-activity-api-schema#quarantine-schema).
+
 ## Step 1: Create quarantine policies in the Microsoft Defender portal
 
 1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Policies & Rules** \> **Threat policies** \> **Quarantine policy** in the **Rules** section. Or, to go directly to the **Quarantine policy** page, use <https://security.microsoft.com/quarantinePolicies>.

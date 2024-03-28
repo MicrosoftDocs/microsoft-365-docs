@@ -102,6 +102,9 @@ Use the following steps to check the network connectivity of Microsoft Defender 
 
 3. Verify that the traffic isn't being inspected by SSL inspection (TLS inspection). This is the most common network related issue when setting up Microsoft Defender Endpoint, see [Verify SSL inspection isn't being performed on the network traffic](#step-3-verify-ssl-inspection-isnt-being-performed-on-the-network-traffic).
 
+> [!NOTE]
+> It is generally recommended that traffic for Defender for Endpoint is not inspected by SSL inspection (TLS inspection). This applies to all supported operating systems (Windows, Linux, and MacOS).
+
 #### Step 1: Allow URLs for the Microsoft Defender for Endpoint traffic
 
 1. Download the [Microsoft Defender for Endpoint URL list for commercial customers](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx
@@ -185,7 +188,7 @@ This step of the setup process involves adding Defender for Endpoint to the excl
 
 - To check if there's a non-Microsoft antimalware that is running FANotify, you can run `mdatp health`, then check the result:
 
-  :::image type="content" source="images/mdatp-health-result.png" alt-text="Image of mdatp health result":::
+  :::image type="content" source="media/mdatp-health-result.png" alt-text="Image of mdatp health result":::
 
   Under "conflicting_applications", if you see a result other than "unavailable", uninstall the non-Microsoft antimalware.
 
