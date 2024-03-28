@@ -27,12 +27,12 @@ ms.date: 03/29/2024
 
 # What happens to my data and access when my Microsoft 365 for business subscription ends?
 
-When your subscription ends, your access to Microsoft 365 products and services, apps, and customer data go through multiple statuses before the subscription is fully turned off, or deleted. Being aware of this status progression can help you return your subscription to an active status before it's too late. If you're leaving Microsoft 365, we recommend that you back up your data before it gets deleted.
+When your subscription ends, your access to Microsoft 365 products and services, apps, and customer data go through multiple statuses before the subscription is fully turned off, or deleted. Being aware of this status progression can help you return your subscription to an active status before it's too late. If you're leaving Microsoft 365, we recommend that you [back up your data](move-users-different-subscription.md#back-up-data-before-changing-microsoft-365-for-business-plans) before it gets deleted.
 
 This article applies to all Microsoft 365 for business subscriptions, including Enterprise and Volume Licensing.
 
 > [!IMPORTANT]
-> For some subscriptions, you can only cancel during a limited window of time after you buy or renew your subscription. If the cancellation window has passed, turn off recurring billing to cancel the subscription at the end of its term.
+> For some subscriptions, you can only cancel during a limited window of time after you buy or renew your subscription. If the cancellation window has passed, [turn off recurring billing](renew-your-subscription.md) to cancel the subscription at the end of its term.
   
 ## Understand subscription lifecycle statuses
 
@@ -99,19 +99,6 @@ If you bought your subscription through an Enterprise volume licensing agreement
 
 If you bought your subscription through a CSP, see [Subscription lifecycle states - Partner Center](https://learn.microsoft.com/partner-center/subscription-lifecycle) for descriptions of the lifecycle statuses that apply to those subscriptions.
 
-## What happens when you cancel a subscription
-
-If you cancel your subscription within the cancellation policy window, the subscription skips the **Expired** status and moves directly to the **Disabled** status.
-
-We recommend that you [back up your data](move-users-different-subscription.md) before you cancel your subscription. As an admin, you can still access and back up data for your organization while it’s in the Disabled status. Any customer data that you leave behind might be deleted after 90 days and will be deleted no later than 180 days after cancellation.
-
-> [!IMPORTANT]
-> If you explicitly delete a subscription, it skips the Expired and Disabled statuses and SharePoint Online data and content, including OneDrive, is immediately deleted.
-
-If you're a partner who's an admin on behalf of (AOBO) a customer, and you canceled a subscription, it can take up to 90 days for the admin center to reflect the status change.
-
-To learn how to cancel, see [Cancel your subscription in the Microsoft 365 admin center](cancel-your-subscription.md). If you want your subscription data to be deleted before the typical Disabled status is over, you can [close your account](../close-your-account.md).
-
 ## Understand your options if your subscription is about to expire
 
 While a subscription is active, you and your users have normal access to your data, services like email, OneDrive, and Microsoft 365 apps. As the admin, you receive a series of notifications via email and in the admin center as your subscription nears its expiration date.
@@ -149,6 +136,19 @@ For all VL subscriptions, the **Expired** status starts immediately after the su
 2. **Let the subscription expire.**
     - If you're an Open Volume Licensing customer working with a partner, you can let your subscription expire by taking no action.
     - If you bought your subscription through a volume licensing program, contact your Microsoft volume licensing partner to ensure there's no automatic extension in place for your agreement.
+
+## What happens when you cancel a subscription
+
+If you cancel your subscription within the cancellation policy window, the subscription skips the **Expired** status and moves directly to the **Disabled** status.
+
+We recommend that you [back up your data](move-users-different-subscription.md) before you cancel your subscription. As an admin, you can still access and back up data for your organization while it’s in the Disabled status. Any customer data that you leave behind might be deleted after 90 days and will be deleted no later than 180 days after cancellation.
+
+> [!IMPORTANT]
+> If you explicitly delete a subscription, it skips the Expired and Disabled statuses and SharePoint Online data and content, including OneDrive, is immediately deleted.
+
+If you're a partner who's an admin on behalf of (AOBO) a customer, and you canceled a subscription, it can take up to 90 days for the admin center to reflect the status change.
+
+To learn how to cancel, see [Cancel your subscription in the Microsoft 365 admin center](cancel-your-subscription.md). If you want your subscription data to be deleted before the typical Disabled status is over, you can [close your account](../close-your-account.md).
 
 ## What happens when your trial ends
 
