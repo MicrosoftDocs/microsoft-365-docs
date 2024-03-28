@@ -57,7 +57,7 @@ Users with access to Copilot for Security have access to this capability in adva
        
 1. Copilot generates a KQL query from your text instruction or question. While Copilot is generating, you can cancel the query generation by selecting **Stop generating**.
 
-    ![Screenshot of Copilot for Security in advanced hunting generating a response](../../media/advanced-hunting-security-copilot-generate.png)  
+    ![Screenshot of Copilot for Security in advanced hunting generating a response.](../../media/advanced-hunting-security-copilot-generate.png)  
 
  
 1. Review the generated query. You can then choose to run the query by selecting **Add and run**. 
@@ -68,7 +68,7 @@ Users with access to Copilot for Security have access to this capability in adva
 
     If you need to make further tweaks, select **Add to editor**. 
 
-   ![Screenshot of Copilot for Security in advanced hunting showing the Add to editor option](../../media/advanced-hunting-security-copilot-add-editor.png)     
+   ![Screenshot of Copilot for Security in advanced hunting showing the Add to editor option.](../../media/advanced-hunting-security-copilot-add-editor.png)
 
     The generated query appears in the query editor as the last query, where you can edit it before running using the regular **Run query** above the query editor.
 
@@ -85,12 +85,12 @@ You can start your first session anytime by asking a question in the Copilot sid
 
 Select the chat bubble icon (**New chat**) to discard the current session. 
 
-   ![Screenshot of Copilot for Security in advanced hunting showing the new chat icon](../../media/advanced-hunting-security-copilot-clear-session.png)     
+   ![Screenshot of Copilot for Security in advanced hunting showing the new chat icon.](../../media/advanced-hunting-security-copilot-clear-session.png)     
 
 ## Modify settings
 
 Select the ellipses in the Copilot side pane to choose whether or not to automatically add and run the generated query in advanced hunting. 
 
-   ![Screenshot of Copilot for Security in advanced hunting showing the settings ellipses icon](../../media/advanced-hunting-security-copilot-settings.png)     
+   ![Screenshot of Copilot for Security in advanced hunting showing the settings ellipses icon.](../../media/advanced-hunting-security-copilot-settings.png)     
 
 Deselecting the **Run generated query automatically** setting gives you the option of running the generated query automatically (**Add and run**) or adding the generated query to the query editor for further modification (**Add to editor**). 

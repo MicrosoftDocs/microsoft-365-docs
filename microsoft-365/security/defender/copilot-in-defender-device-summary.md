@@ -1,5 +1,5 @@
 ---
-title: Summarize device information with Microsoft Copilot Security in Microsoft Defender XDR
+title: Summarize device information with Microsoft Copilot in Microsoft Defender
 description: Generate a summary for devices with Microsoft Copilot in Microsoft Defender.
 keywords: security copilot, Microsoft Defender XDR, embedded experience, device summary, m365, incident response, device info summary, device summary info, summarize device info, Microsoft Copilot for Security, Microsoft Defender, Copilot in Defender
 ms.service: defender-xdr
@@ -20,10 +20,10 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - MET150
-ms.date: 03/27/2024
+ms.date: 03/28/2024
 ---
 
-# Summarize device information with Microsoft Copilot for Security inDefender XDR
+# Summarize device information with Microsoft Copilot in Microsoft Defender
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 

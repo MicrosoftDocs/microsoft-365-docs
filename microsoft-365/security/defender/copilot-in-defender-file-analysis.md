@@ -1,5 +1,5 @@
 ---
-title: Analyze files with Microsoft Copilot for Security in Microsoft Defender XDR
+title: Analyze files with Microsoft Copilot in Microsoft Defender
 description: Analyze files with Microsoft Copilot in Microsoft Defender.
 keywords: security copilot, Microsoft Defender XDR, embedded experience, m365, incident response, file information, generate file info, run file analysis, analyze files, Microsoft Copilot for Security, Microsoft Defender, Copilot in Defender
 ms.service: defender-xdr
@@ -20,10 +20,10 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - MET150
-ms.date: 03/27/2024
+ms.date: 03/28/2024
 ---
 
-# File analysis with Microsoft Copilot for Security in Defender XDR
+# File analysis with Microsoft Copilot in Microsoft Defender
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 

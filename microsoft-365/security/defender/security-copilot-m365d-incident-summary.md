@@ -1,5 +1,5 @@
 ---
-title: Summarize incidents with Microsoft Copilot for Security in Microsoft Defender XDR
+title: Summarize incidents with Microsoft Copilot in Microsoft Defender
 description: Generate incident summaries with Microsoft Copilot embedded in Microsoft Defender.
 keywords: security copilot, Microsoft Defender XDR, embedded experience, incident summary, script analyzer, script analysis, query assistant, m365, guided response, incident response playbooks, incident response, summary, summarize incident, summarize incidents, incident overview, write incident summary, Microsoft Copilot for Security, Copilot in Defender, Microsoft Defender
 ms.service: defender-xdr
@@ -23,7 +23,7 @@ search.appverid:
 ms.date: 03/27/2024
 ---
 
-# Summarize an incident with Microsoft Copilot for Security in Defender XDR
+# Summarize an incident with Microsoft Copilot in Microsoft Defender
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
