@@ -238,7 +238,7 @@ When setting the scope, you can select:
 - All devices
 - Specific device groups
 
-Only data from devices in the scope will be queried. Also, actions will be taken only on those devices.
+Only data from devices in the scope will be queried. Also, actions are taken only on those devices.
 
 > [!NOTE]
 > Users are able to create or edit a custom detection rule only if they have the corresponding permissions for the devices included in the scope of the rule. For instance, admins can only create or edit rules that are scoped to all device groups if they have permissions for all device groups. 
@@ -256,7 +256,7 @@ After reviewing the rule, select **Create** to save it. The custom detection rul
 
 ## Manage existing custom detection rules
 
-You can view the list of existing custom detection rules, check their previous runs, and review the alerts they have triggered. You can also run a rule on demand and modify it.
+You can view the list of existing custom detection rules, check their previous runs, and review the alerts that were triggered. You can also run a rule on demand and modify it.
 
 > [!TIP]
 > Alerts raised by custom detections are available over alerts and incident APIs. For more information, see [Supported Microsoft Defender XDR APIs](api-supported.md).
