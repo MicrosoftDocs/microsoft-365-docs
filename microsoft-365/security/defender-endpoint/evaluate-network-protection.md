@@ -15,7 +15,7 @@ ms.collection:
 - tier2
 - mde-asr
 search.appverid: met150
-ms.date: 02/28/2024
+ms.date: 03/28/2024
 ---
 
 # Evaluate network protection
@@ -67,17 +67,17 @@ To review apps that would have been blocked, open Event Viewer and filter for Ev
 
 ### Troubleshooting Network Protection
 
-If network protection fails to detect, make sure that the following pre-requisites are enabled:
+If network protection fails to detect, make sure that the following prerequisites are enabled:
 
 1. Microsoft Defender Antivirus is the primary antivirus app (active mode)
 
-1. [Behavior Monitoring is enabled](/microsoft-365/security/defender-endpoint/behavior-monitor)
+2. [Behavior Monitoring is enabled](/microsoft-365/security/defender-endpoint/behavior-monitor)
 
-1. [Cloud Protection is enabled](/microsoft-365/security/defender-endpoint/enable-cloud-protection-microsoft-defender-antivirus)
+3. [Cloud Protection is enabled](/microsoft-365/security/defender-endpoint/enable-cloud-protection-microsoft-defender-antivirus)
 
-1. [Cloud Protection network connectivity is functional](/microsoft-365/security/defender-endpoint/configure-network-connections-microsoft-defender-antivirus)
+4. [Cloud Protection network connectivity is functional](/microsoft-365/security/defender-endpoint/configure-network-connections-microsoft-defender-antivirus)
 
-## See also
+## Related articles
 
 - [Network protection](network-protection.md)
 
