@@ -35,8 +35,9 @@ This article helps you evaluate network protection by enabling the feature and g
 
 Enable network protection in audit mode to see which IP addresses and domains might be blocked. You can make sure it doesn't affect line-of-business apps, or get an idea of how often blocks occur.
 
-1. Type **powershell** in the Start menu, right-click **Windows PowerShell** and select **Run as administrator**
-2. Enter the following cmdlet:
+1. Type **powershell** in the Start menu, right-click **Windows PowerShell** and select **Run as administrator**.
+
+2. Run the following cmdlet:
 
     ```PowerShell
     Set-MpPreference -EnableNetworkProtection AuditMode
