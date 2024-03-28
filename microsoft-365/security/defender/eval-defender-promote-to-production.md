@@ -39,7 +39,7 @@ Defender for Identity doesn't require any other configuration. Just make sure to
 After successfully evaluating or piloting Defender for Office 365, it can be promoted to your entire production environment.
 
 1. Purchase and provision the necessary licenses and assign them to your production users.
-2. Re-run recommended baseline policy configurations (either Standard or Strict) against your production email domain or specific groups of users.
+2. Rerun recommended baseline policy configurations (either Standard or Strict) against your production email domain or specific groups of users.
 3. Optionally create and configure any custom Defender for Office 365 policies against your production email domain or groups of users.  However, remember that any assigned baseline policies will always take precedence over custom policies.
 4. Update the public MX record for your production email domain to resolve directly to EOP.
 5. Decommission any third-party SMTP gateways and disable or delete any EXO connectors associated with this relay.
@@ -57,5 +57,6 @@ Use the following general guidelines to onboard more devices to Microsoft Defend
 
 ## Microsoft Defender for Cloud Apps
 
-Microsoft Defender for Cloud Apps doesn't require any other configuration. Just make sure you've purchased the necessary licenses. If you've scoped the deployment to certain user groups, increase the scope of these groups until you reach production scale.
+Microsoft Defender for Cloud Apps doesn't require any other configuration. Just make sure to purchase the necessary licenses. If you've scoped the deployment to certain user groups, increase the scope of these groups until you reach production scale.
+
 [!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]
