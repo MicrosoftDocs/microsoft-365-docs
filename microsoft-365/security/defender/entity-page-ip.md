@@ -34,6 +34,9 @@ You can find information from the following sections in the IP address entity pa
 - [Observed in organization](#observed-in-organization)
 - [Sentinel events](#sentinel-events)
 
+
+[!INCLUDE [unified-soc-preview](../../includes/unified-soc-preview.md)]
+
 ## Overview
 
 In the left pane, the **Overview** page provides a summary of IP details (if available).
