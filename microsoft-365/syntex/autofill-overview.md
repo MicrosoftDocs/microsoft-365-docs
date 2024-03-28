@@ -34,7 +34,24 @@ Autofill columns can work alongside other Microsoft Syntex models. You can assoc
 
 Autofill columns is available for the following file types: TBD
 
+
+## Supported column data types
+
+Autofill columns is available for the following column data types:
+
+- Choice
+- Number
+- Text
+- DateTime
+- Boolean
+- Note
+- Currency
+- DateTime
+- URL
+- MMD
+
 ### Current release notes
 
 - Bulk processing options for existing library files will be added in a future release.
 
+- Currently, autofill columns doesn't support the following library types: FormServerTemplates, SitePages, Style Library, and SiteAssets.
