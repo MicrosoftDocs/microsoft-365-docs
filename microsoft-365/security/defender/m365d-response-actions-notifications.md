@@ -1,11 +1,7 @@
 ---
 title: Get email notifications for response actions in Microsoft Defender XDR
 description: Set up email notifications to get notified of manual and automated response actions in Microsoft Defender XDR.
-keywords: email, notifications, automatic attack disruption, manual response, incident response, response actions, email notifications, response action notifications, Microsoft Defender XDR notifications
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: 
   - NOCSH
 ms.author: diannegali
@@ -20,7 +16,7 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.date: 09/18/2023
+ms.date: 03/28/2024
 ---
 
 # Get email notifications for response actions in Microsoft Defender XDR
