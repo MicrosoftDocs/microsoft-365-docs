@@ -53,13 +53,13 @@ Error codes can be returned by an operation on any of the Microsoft Defender XDR
 | MissingRequiredParameter | BadRequest (400) | Parameter \<the missing parameter\> is missing. |
 | OsPlatformNotSupported | BadRequest (400) | OS Platform \<the client OS Platform\> isn't supported for this action. |
 | ClientVersionNotSupported | BadRequest (400) | \<The requested action\> is supported on client version \<supported client version\> and later. |
-| Unauthorized | Unauthorized (401) | Unauthorized <br /><br />*Note that this error is usually caused by an invalid or expired authorization header.* |
-| Forbidden | Forbidden (403) | Forbidden <br /><br />*Note that this error can occur with a valid token but insufficient permission for the action*. |
-| DisabledFeature | Forbidden (403) | Tenant feature is not enabled. |
+| Unauthorized | Unauthorized (401) | Unauthorized <br /><br />*This error is usually caused by an invalid or expired authorization header.* |
+| Forbidden | Forbidden (403) | Forbidden <br /><br />*This error can occur with a valid token but insufficient permission for the action*. |
+| DisabledFeature | Forbidden (403) | Tenant feature isn't enabled. |
 | DisallowedOperation | Forbidden (403) | \<the disallowed operation and the reason\>. |
 | NotFound | Not Found (404) | General Not Found error message. |
-| ResourceNotFound | Not Found (404) | Resource \<the requested resource\> was not found. |
-| InternalServerError | Internal Server Error (500) | *If there's no error message, retry the operation. [Contact Microsoft](../../admin/get-help-support.md) if it does not get resolved* |
+| ResourceNotFound | Not Found (404) | Resource \<the requested resource\> wasn't found. |
+| InternalServerError | Internal Server Error (500) | *If there's no error message, retry the operation. [Contact Microsoft](../../admin/get-help-support.md) if it doesn't get resolved*. |
 
 ## Examples
 
@@ -92,12 +92,11 @@ If you experience an *InvalidRequestBody* or *MissingRequiredParameter* error, i
 
 ## Tracking ID
 
-Each error response contains a unique ID parameter for tracking. The property name of this parameter is *target*. When contacting us about an error, attaching this ID will help us find the root cause of the problem.
+Each error response contains a unique ID parameter for tracking. The property name of this parameter is *target*. If you contact Microsoft about an error, attaching your tracking ID helps Microsoft find the root cause of the problem.
 
 ## Related articles
 
 - [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview)
-
 - [Microsoft Defender XDR APIs overview](api-overview.md)
 - [Supported Microsoft Defender XDR APIs](api-supported.md)
 - [Access the Microsoft Defender XDR APIs](api-access.md)
