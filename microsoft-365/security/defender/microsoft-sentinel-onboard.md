@@ -23,13 +23,10 @@ search.appverid:
   - MOE150
   - MET150
 ms.date: 11/10/2023
+appliesto: Microsoft Sentinel in the Microsoft Defender portal
 ---
 
 # Connect Microsoft Sentinel to Microsoft Defender XDR (preview)
-
-**Applies to:**
-- Microsoft Defender XDR
-- Microsoft Sentinel
 
 Combine the power of Microsoft Sentinel with Microsoft Defender XDR into a single portal enhanced with the following features:
 
