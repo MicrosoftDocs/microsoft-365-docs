@@ -1,9 +1,7 @@
 ---
 title: User entity page in Microsoft Defender
 description: The user entity page in the Microsoft Defender portal helps you in your investigation of user entities. The page has all the important information about each entity. If an alert or incident indicates that a user might be compromised or is suspicious, check and investigate the user entity.
-keywords: security, malware, Microsoft 365, M365, Microsoft Defender XDR, Microsoft Sentinel, security center, monitor, report, identities, data, devices, apps, incident, analyze, response
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords: 
 - NOCSH
