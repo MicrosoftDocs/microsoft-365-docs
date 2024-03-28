@@ -44,7 +44,7 @@ Grouping related alerts into an incident gives you a comprehensive view of an at
 
 The unified SOC platform in the Microsoft Defender portal includes methods to automate and assist in the triage, investigation, and resolution of incidents.
 
-- Security Copilot harnesses AI to support analysts with complex and time-consuming daily workflows, including end-to-end incident investigation and response with clearly described attack stories, step-by-step actionable remediation guidance and incident activity summarized reports, natural language KQL hunting, and expert code analysis&mdash;optimizing on SOC efficiency across Microsoft Sentinel and Defender XDR data.
+- [Microsoft Copilot in Defender](security-copilot-in-microsoft-365-defender.md) harnesses AI to support analysts with complex and time-consuming daily workflows, including end-to-end incident investigation and response with clearly described attack stories, step-by-step actionable remediation guidance and incident activity summarized reports, natural language KQL hunting, and expert code analysis&mdash;optimizing on SOC efficiency across Microsoft Sentinel and Defender XDR data.
 
     This capability is in addition to the other AI-based functionality that Microsoft Sentinel brings to the unified platform, in the areas of user and entity behavior analytics, anomaly detection, multi-stage threat detection, and more.
 
