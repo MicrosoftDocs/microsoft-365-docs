@@ -1,12 +1,7 @@
 ---
 title: Common Microsoft Defender XDR REST API error codes
 description: Learn about the common Microsoft Defender XDR REST API error codes
-keywords: api, error, codes, common errors, Microsoft Defender XDR, api error codes
-search.product: eADQiWindows 10XVcnh
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: 
   - NOCSH
 ms.author: macapara
