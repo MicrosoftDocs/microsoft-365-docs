@@ -227,13 +227,13 @@ To configure notifications:
 
 1. Choose a **Deployment channel**.
 
-1. Click **Next**.
+1. Select **Next**.
 
 1. Select a **Configuration profile file**.
 
 1. On the **Assignments** tab, assign the profile to a group where the macOS devices and/or users are located, or All Users and All devices.
 
-1. Review the configuration profile. Click **Create**.
+1. Review the configuration profile. Select **Create**.
 
 
 ### Step 6: Accessibility settings
@@ -250,23 +250,23 @@ Download [accessibility.mobileconfig](https://github.com/microsoft/mdatp-xplat/b
 
 1. Under **Template name**, select **Custom**.
 
-1. Click **Create**.
+1. Select **Create**.
 
 1. On the **Basics** tab, **Name** the profile. For example, `Accessibility-prod-macOS-Default-MDE`.
 
-1. Click **Next**.
+1. Select **Next**.
 
 1. On the **Configuration settings** tab, enter a **Custom configuration profile** name. For example, `Accessibility.mobileconfig`.
 
 1. Choose a **Deployment channel**.
 
-1. Click **Next**.
+1. Select **Next**.
 
 1. Select a **Configuration profile file**.
 
 1. On the **Assignments** tab, assign the profile to a group where the macOS devices and/or users are located, or All Users and All devices.
 
-1. Review the configuration profile. Click **Create**.
+1. Review the configuration profile. Select **Create**.
 
 ### Step 7: Microsoft AutoUpdate
 
@@ -291,27 +291,27 @@ Download [AutoUpdate2.mobileconfig](https://github.com/microsoft/mdatp-xplat/blo
 
 1. Under **Template name**, select **Custom**.
 
-1. Click **Create**.
+1. Select **Create**.
 
 1. On the **Basics** tab, **Name** the profile. For example, `Autoupdate-prod-macOS-Default-MDE`.
 
-1. Click **Next**.
+1. Select **Next**.
 
 1. On the **Configuration settings** tab, enter a **Custom configuration profile** name. For example, `Autoupdate.mobileconfig`.
 
 1. Choose a **Deployment channel**.
 
-1. Click **Next**.
+1. Select **Next**.
 
 1. Select a **Configuration profile file**.
 
 1. On the **Assignments** tab, assign the profile to a group where the macOS devices and/or users are located, or All Users and All devices.
 
-1. Review the configuration profile. Click **Create**.
+1. Review the configuration profile. Select **Create**.
 
 ### Step 8: Microsoft Defender for Endpoint configuration settings
 
-In this step, we'll go over the "Preferences," which enables you to configure anti-malware and edr policies using Microsoft Defender portal and Microsoft Intune.
+In this step, we go over the "Preferences," which enables you to configure anti-malware and EDR policies using Microsoft Defender portal and Microsoft Intune.
 
 #### Set policies using Microsoft Defender portal
 
@@ -323,13 +323,13 @@ In the [Microsoft Defender portal](https://sip.security.microsoft.com/homepage?t
 
 1. Under **Select Platform**, select **macOS**.
 
-1. Under **Select Template**, choose a template and click **Create Policy**.
+1. Under **Select Template**, choose a template and select **Create Policy**.
 
 1. Enter the Name and Description of the policy.
 
-1. Click **Next**.
+1. Select **Next**.
 
-1. On the **Assignments** tab,assign the profile to a group where the macOS devices and/or users are located, or All Users and All devices.
+1. On the **Assignments** tab, assign the profile to a group where the macOS devices and/or users are located, or All Users and All devices.
 
 For more information about managing security settings, see:
 
@@ -351,23 +351,23 @@ In the [Microsoft Defender portal](https://sip.security.microsoft.com/homepage?t
 
 1. Under **Select Platform**, select **macOS**.
 
-1. Under **Select Template**, select **Microsoft Defender Antivirus** and click **Create Policy**.
+1. Under **Select Template**, select **Microsoft Defender Antivirus** and select **Create Policy**.
 
    :::image type="content" alt-text="networkprotection" source="images/network-protection1.jpg" lightbox="images/network-protection1.jpg":::
 
-1. On the **Basics** tab, enter the **Name** and **Description** of the policy. Click **Next**.
+1. On the **Basics** tab, enter the **Name** and **Description** of the policy. Select **Next**.
 
    :::image type="content" source="images/networkprotection2.png" alt-text="Basicstab":::
 
-1. On the **Configuration Settings** tab, under Network Protection, select an **Enforcement level**. Click **Next**.
+1. On the **Configuration Settings** tab, under Network Protection, select an **Enforcement level**. Select **Next**.
 
    :::image type="content" source="images/networkprotection3.png" alt-text="configurationsettings":::
 
-1. On the **Assignments** tab,assign the profile to a group where the macOS devices and/or users are located, or All Users and All devices.
+1. On the **Assignments** tab, assign the profile to a group where the macOS devices and/or users are located, or All Users and All devices.
 
    :::image type="content" source="images/networkprotection4.png" alt-text="np4":::
 
-1. Review the policy in **Review+Create** and click **Save**. 
+1. Review the policy in **Review+Create** and select **Save**. 
 
 
 > [!TIP]
@@ -440,15 +440,15 @@ This step enables deploying Microsoft Defender for Endpoint to enrolled machines
 
 1. Select **By platform** > **macOS** > **Add**.
 
-1. Under **App type**, select **macOS**. Click **Select**.
+1. Under **App type**, select **macOS**. Select **Select**.
 
    :::image type="content" source="media/mdatp-9-app-type.png" alt-text="The specific application type" lightbox="media/mdatp-9-app-type.png":::
 
-1. On the **App information**, keep the default values and click **Next**.
+1. On the **App information**, keep the default values and select **Next**.
 
    :::image type="content" source="media/mdatp-10-properties.png" alt-text="The application properties page" lightbox="media/mdatp-10-properties.png":::
 
-1. On the **Assignments** tab, click **Next**.
+1. On the **Assignments** tab, select **Next**.
 
    :::image type="content" source="media/mdatp-11-assignments.png" alt-text="The Intune assignments information page" lightbox="media/mdatp-11-assignments.png":::
 
@@ -492,7 +492,7 @@ To download the onboarding packages from Microsoft 365 Defender portal:
 
 ### Step 15: Deploy the onboarding package
 
-This profile contains license information for Microsoft Defender for Endpoint, without which it is reported as not licensed.
+This profile contains license information for Microsoft Defender for Endpoint. 
 
 To deploy the onboarding package:
 
@@ -504,11 +504,11 @@ To deploy the onboarding package:
 
 1. Under **Template name**, select **Custom**.
 
-1. Click **Create**.
+1. Select **Create**.
 
    :::image type="content" alt-text="Deploy onboarding package" source="media/mdatp-6-systemconfigurationprofiles-1.png" lightbox="media/mdatp-6-systemconfigurationprofiles-1.png":::
 
-1. On the **Basics** tab, **Name** the profile. For example, `Autoupdate-prod-macOS-Default-MDE`. Click **Next**.
+1. On the **Basics** tab, **Name** the profile. For example, `Autoupdate-prod-macOS-Default-MDE`. Select **Next**.
 
    :::image type="content" alt-text="click next" source="media/mdatp-6-systemconfigurationprofiles-2.png" lightbox="media/mdatp-6-systemconfigurationprofiles-2.png":::
 
@@ -516,7 +516,7 @@ To deploy the onboarding package:
 
 1. Choose a **Deployment channel**.
 
-1. Click **Next**.
+1. Select **Next**.
 
 1. Select a **Configuration profile file**.
 
@@ -526,13 +526,13 @@ To deploy the onboarding package:
 
    :::image type="content" alt-text="assign users" source="media/mdatp-6-systemconfigurationprofiles-3.png" lightbox="media/mdatp-6-systemconfigurationprofiles-3.png":::
 
-1. Review the configuration profile. Click **Create**.
+1. Review the configuration profile. Select **Create**.
 
 1. Open **Devices** > **Configuration profiles** to see the created profile.
 
 ## Step 16: Verify anti-malware detection
 
-See the following article to test for an anti-malware detection review: [AV detection test for verifying device's onboarding and reporting services](validate-antimalware.md)
+See the following article to test for an anti-malware detection review: [Antivirus detection test for verifying device's onboarding and reporting services](validate-antimalware.md)
 
 ## Step 17: Verifying EDR detection
 
