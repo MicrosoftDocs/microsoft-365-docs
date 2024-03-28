@@ -1,7 +1,6 @@
 ---
 title: Investigate data loss alerts with Microsoft Defender XDR
 description: Investigate data loss in Microsoft Defender XDR.
-keywords: Data Loss Prevention, incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365
 f1.keywords:
   - NOCSH
 ms.service: defender-xdr
