@@ -35,7 +35,7 @@ ms.date: 02/08/2023
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-Error codes can be returned by an operation on any of the Microsoft Defender XDR APIs. Every error response contains an error message, which can help resolve the problem. The error message column in the table section provides some sample messages. The content of actual messages vary based on the factors that triggered the response. Variable content is indicated in the table by angle brackets.
+Error codes can be returned by an operation on any of the Microsoft Defender XDR APIs. Every error response contains an error message, which can help resolve the problem. The error message column in the table section provides some sample messages. The content of actual messages varies based on the factors that triggered the response. Variable content is indicated by angle brackets (`< >`) in the following table:
 
 ## Error codes
 
