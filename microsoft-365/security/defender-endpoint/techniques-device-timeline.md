@@ -1,17 +1,12 @@
 ---
 title: Techniques in the device timeline
 description: Understanding the device timeline in Microsoft Defender for Endpoint
-keywords: device timeline, endpoint, MITRE, MITRE ATT&CK, techniques, tactics
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: maccruz
 author: schmurky
 ms.localizationpriority: medium
-manager: dansimp
+manager: dolmont
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -40,7 +35,7 @@ This feature simplifies the investigation experience by helping analysts underst
 
 For public preview, Techniques are available by default and shown together with events when a device's timeline is viewed.
 
-:::image type="content" source="images/device-timeline-2.png" alt-text="The Techniques in device timeline" lightbox="images/device-timeline-2.png":::
+:::image type="content" source="media/device-timeline-2.png" alt-text="The Techniques in device timeline" lightbox="media/device-timeline-2.png":::
 
 Techniques are highlighted in bold text and appear with a blue icon on the left. The corresponding MITRE ATT&CK ID and technique name also appear as tags under Additional information.
 
@@ -79,7 +74,7 @@ You can customize which columns to expose. You can also filter for flagged event
 
 You can choose which columns to expose in the timeline by selecting the **Choose columns** button.
 
-:::image type="content" source="images/filter-customize-columns.png" alt-text="The pane in which you can customize columns" lightbox="images/filter-customize-columns.png":::
+:::image type="content" source="media/filter-customize-columns.png" alt-text="The pane in which you can customize columns" lightbox="media/filter-customize-columns.png":::
 
 
 From there you can select which information set to include.
@@ -88,7 +83,7 @@ From there you can select which information set to include.
 
 To view only either events or techniques, select **Filters** from the device timeline and choose your preferred Data type to view.
 
-:::image type="content" source="images/device-timeline-filters.png" alt-text="The Filters pane" lightbox="images/device-timeline-filters.png":::
+:::image type="content" source="media/device-timeline-filters.png" alt-text="The Filters pane" lightbox="media/device-timeline-filters.png":::
 
 ## See also
 

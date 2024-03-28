@@ -1,15 +1,11 @@
 ---
 title: Protect macOS security settings with tamper protection
 description: Use tamper protection to prevent malicious apps from changing important macOS security settings.
-keywords: macos, tamper protection, security settings, malware
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security
@@ -18,7 +14,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: macos
 search.appverid: met150
-ms.date: 03/24/2023
+ms.date: 01/29/2024
 ---
 
 # Protect macOS security settings with tamper protection
@@ -63,7 +59,7 @@ When tamper protection is set to audit or block mode, you can expect the followi
 - Creation of new files under Defender for Endpoint location is blocked
 - Deletion of Defender for Endpoint files is blocked
 - Renaming of Defender for Endpoint files is blocked
-- Commands to stop the agent fail
+- Commands to stop the agent (wdavdaemon) fail
 
 Here's an example of a system message in response to a blocked action:
 
@@ -130,7 +126,7 @@ tamper_protection                           : "audit"
 sudo mdatp config tamper-protection enforcement-level --value block
 ```
 
-![Image of manual configuration command](images/manual-config-cmd.png)
+![Image of manual configuration command](media/manual-config-cmd.png)
 
 > [!NOTE]
 > You must use managed configuration profile (deployed via MDM) on production machines. If a local admin changed tamper protection mode via a manual configuration, they can change it to a less restrictive mode at any time as well. If tamper protection mode was set via a managed profile, only a global admin will be able to undo it.

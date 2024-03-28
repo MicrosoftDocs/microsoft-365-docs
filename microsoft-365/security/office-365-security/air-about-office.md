@@ -2,9 +2,9 @@
 title: How automated investigation and response works in Microsoft Defender for Office 365
 f1.keywords:
 - NOCSH
-author: dansimp
-ms.author: dansimp
-manager: dansimp
+author: chrisda
+ms.author: chrisda
+manager: deniseb
 audience: ITPro
 ms.topic: conceptual
 ms.localizationpriority: medium
@@ -14,7 +14,6 @@ search.appverid:
 ms.collection:
 - m365-security
 - tier2
-keywords: automated incident response, investigation, remediation, threat protection
 ms.date: 06/09/2023
 description: See how automated investigation and response capabilities work in Microsoft Defender for Office 365
 ms.custom:
@@ -71,7 +70,7 @@ Remediation is the final phase of the playbook. During this phase, remediation s
 
 ## Example: A security administrator triggers an investigation from Threat Explorer
 
-In addition to automated investigations that are triggered by an alert, your organization's security operations team can trigger an automated investigation from a view in [Threat Explorer](threat-explorer-about.md). This investigation also creates an alert, so Microsoft Defender XDR incidents and external SIEM tools can see that this investigation was triggered.
+In addition to automated investigations that are triggered by an alert, your organization's security operations team can trigger an automated investigation from a view in [Threat Explorer](threat-explorer-real-time-detections-about.md). This investigation also creates an alert, so Microsoft Defender XDR incidents and external SIEM tools can see that this investigation was triggered.
 
 For example, suppose that you are using the **Malware** view in Explorer. Using the tabs below the chart, you select the **Email** tab. If you select one or more items in the list, the **+ Actions** button activates.
 

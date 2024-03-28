@@ -1,15 +1,11 @@
 ---
 title: Configure Microsoft Defender for Endpoint on Android features
 description: Describes how to configure Microsoft Defender for Endpoint on Android
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mde, android, configuration
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security
@@ -65,12 +61,12 @@ Network protection in Microsoft Defender for endpoint is disabled by default. Ad
 1. In the Microsoft Intune admin center, navigate to Apps > App configuration policies. Create a new App configuration policy.
 
     > [!div class="mx-imgBorder"]
-    > ![Image of how to create a policy.](images/android-mem.png)
+    > ![Image of how to create a policy.](media/android-mem.png)
 
 1. Provide a name and description to uniquely identify the policy. Select **'Android Enterprise'** as the platform and **'Personally-owned work profile only'** as the profile type and **'Microsoft Defender'** as the Targeted app.
 
     > [!div class="mx-imgBorder"]
-    > ![Image of policy details.](images/appconfigdetails.png)
+    > ![Image of policy details.](media/appconfigdetails.png)
 
 1. In Settings page, select **'Use configuration designer'** and add **'Enable Network Protection in Microsoft Defender'** as the key and value as **'1'** to enable Network Protection. (Network protection is disabled by default)
 

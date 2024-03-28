@@ -1,16 +1,13 @@
 ---
-title: Run a detection test on a device to verify it has been properly onboarded to Microsoft Defender for Endpoint
+title: Run a detection test on a device recently onboarded to Microsoft Defender for Endpoint
 description: Run the detection test script on a device recently onboarded to the Microsoft Defender for Endpoint service to verify that it's properly added.
 search.appverid: met150
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 ms.date: 04/24/2023
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -19,7 +16,7 @@ ms.topic: conceptual
 ms.subservice: onboard
 ---
 
-# Run a detection test on a newly onboarded Microsoft Defender for Endpoint device
+# Run a detection test on a device recently onboarded to Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,9 +35,9 @@ ms.subservice: onboard
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-When you add a device to the Microsoft Defender for Endpoint service for management, this is also called onboarding devices. Onboarding allows devices to report signals about their health status to the service.
+When you add a device to the Microsoft Defender for Endpoint service for management, it's referred to as onboarding. Onboarding allows devices to report signals about their health status to the service.
 
-Making sure, or verifying, that a device has been added to the service successfully is a critical step in the entire deployment process. It assures that all the devices expected are being managed. 
+Verifying that a device is added to the service successfully is a critical step in the entire deployment process. It helps ensure that all the devices expected are being managed. 
 
 ## Verify Microsoft Defender for Endpoint onboarding of a device using a PowerShell detection test
 
@@ -65,7 +62,7 @@ The Command Prompt window closes automatically. If successful, a new alert appea
 > [!NOTE]
 > You can also use the EICAR test string to perform this test. Create a text file, paste the EICAR line, and save the file as an executable file to your endpoint's local drive. You will receive a test endpoint notification and an alert in the Microsoft Defender portal.
 
-## Related topics
+## Related articles
 
 - [Onboard Windows devices](configure-endpoints.md)
 - [Onboard servers](configure-server-endpoints.md)

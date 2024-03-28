@@ -1,15 +1,11 @@
 ---
 title: Exclude devices in Microsoft Defender for Endpoint
 description: Exclude devices from the device inventory list
-keywords: exclude
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -48,7 +44,7 @@ You can choose to exclude a single device or multiple devices at the same time.
 1. Go to the **Device inventory** page and select the device to exclude.
 2. Select **Exclude** from the action bar on the device inventory page or from the actions menu in the device flyout.
 
-   ![Image of exclude device menu option.](images/exclude-devices-menu.png)
+   ![Image of exclude device menu option.](media/exclude-devices-menu.png)
 
 3. Select a justification:
 
@@ -60,7 +56,7 @@ You can choose to exclude a single device or multiple devices at the same time.
 
 4. Type a note and select **Exclude device**.
 
-![Image of exclude device.](images/exclude-device.png)
+![Image of exclude device.](media/exclude-device.png)
 
 You can also exclude a device from its device page.
 
@@ -74,7 +70,7 @@ Excluded devices are still visible in the Device inventory list. You can manage 
 - Adding the **Exclusion state** column to the device inventory view.
 - Using the **Exclusion state** filter to view the relevant list of devices.
 
-![Image of exclusion state.](images/exclusion-state.png)
+![Image of exclusion state.](media/exclusion-state.png)
 
 ### Bulk device exclusion
 
@@ -88,7 +84,7 @@ You can also choose to exclude multiple devices at the same time:
 
 If you select multiple devices in the device list with different exclusion statuses, the exclude selected devices flyout will provide you details on how many of the selected devices are already excluded. You can exclude the devices again, but the justification and notes will be overridden.
 
-![Image of bulk exclude](images/exclude-device-bulk.png)
+![Image of bulk exclude](media/exclude-device-bulk.png)
 
 Once a device is excluded, if you go to the device page of an excluded device, you won't be able to see data for discovered vulnerabilities, software inventory or security recommendations. The data also won't show up in vulnerability management pages, related advanced hunting tables and the vulnerable devices report.
 
@@ -99,7 +95,7 @@ You'll be able to stop excluding a device at any time. Once devices are no longe
 1. Go to the Device inventory, select the excluded device to open the flyout, and then select **Exclusion details**
 2. Select **Stop exclusion**
 
-![Image of exclusion details](images/exclusion-details.png)
+![Image of exclusion details](media/exclusion-details.png)
 
 ## See also
 

@@ -15,7 +15,7 @@ ms.collection:
 - m365solution-smb
 - m365-security
 - tier1
-- essentials-accountability
+- essentials-security
 ms.custom:
 - MiniMaven
 search.appverid:

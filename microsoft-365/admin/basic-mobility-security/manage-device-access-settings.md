@@ -278,6 +278,6 @@ The information is exported to your Windows Desktop as a CSV file. You can use a
 
 [Get-MgUser](/powershell/module/microsoft.graph.users/get-mguser)
 
-[Get-MgDevice](/powershell/module/microsoft.graph.users/get-mgdevice)
+[Get-MgDevice](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevice)
 
 [Get-MgUserOwnedDevice](/powershell/module/microsoft.graph.users/get-mguserowneddevice)

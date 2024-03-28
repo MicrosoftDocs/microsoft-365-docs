@@ -4,7 +4,7 @@ description: Get an overview of security reports in Defender for Business. Repor
 search.appverid: MET150
 author: siosulli
 ms.author: siosulli
-manager: dansimp 
+manager: deniseb 
 audience: Admin
 ms.topic: overview
 ms.service: defender-business

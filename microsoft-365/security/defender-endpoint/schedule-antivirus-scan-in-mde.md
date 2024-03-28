@@ -1,16 +1,12 @@
 ---
 title: How to schedule an antivirus scan using Anacron in Microsoft Defender for Endpoint on Linux
 description: Learn how to schedule an antivirus scan in Microsoft Defender for Endpoint on Linux for better protection of your organization's assets.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, scans, antivirus, microsoft defender for endpoint on linux
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 ms.date: 12/02/2022
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security
@@ -157,7 +153,7 @@ Use the following steps to schedule scans:
    ls -la
    ```
 
-   :::image type="content" source="images/chmod-755-mdavfullscan.png" alt-text="7. Change file permissions":::
+   :::image type="content" source="media/chmod-755-mdavfullscan.png" alt-text="7. Change file permissions":::
 
    ```shell
    [root@redhat7 cron.weekly]# ls -la
@@ -184,7 +180,7 @@ Use the following steps to schedule scans:
    cat /logs/mdav_avacron_full_scan.log
    ```
 
-    :::image type="content" source="images/mdav_avacron_full_scan_log.png" alt-text="verify the job ran":::
+    :::image type="content" source="media/mdav_avacron_full_scan_log.png" alt-text="verify the job ran":::
 
     ```shell
     [root@redhat7 cron.weekly] # cat /logs/mdav_avacron_full_scan.log

@@ -18,6 +18,7 @@ audience: ITPro
 ms.collection:
   - m365-security
   - tier1
+  - essentials-manage
 ms.custom:
   - admindeeplinkDEFENDER
   - intro-overview
@@ -133,17 +134,6 @@ Threat analytics is the Microsoft Defender XDR threat intelligence solution from
 - Common attack surfaces
 - Prevalent malware
 
-## Learning Hub
-
-The Defender portal includes a learning hub that provides guidance from resources such as the Microsoft security blog, the Microsoft security community on YouTube, and the official documentation.
-
-> [!TIP]
-> There are helpful **filters** along the top of Microsoft Defender XDR learning hub that will let you choose between products (currently Microsoft Defender XDR, Microsoft Defender for Endpoint, and Microsoft Defender for Office 365). Notice that the number of learning resources for each section is listed, which can help learners keep track of how many resources they have at hand for training and learning.
->
-> Along with the Product filter, current topics, types of resources (from videos to webinars), levels of familiarity or experience with security areas, security roles, and product features are listed.
->
-> There are lots of other learning opportunities in [Microsoft Learn](/training/). You'll find certification training such as [Course MS-500T00: Microsoft 365 Security Administration](/training/courses/ms-500t00).
-
 ## Partner catalog
 
 Microsoft Defender XDR supports two types of partners:
@@ -176,7 +166,7 @@ With this learning path from Microsoft Learn, you can understand Microsoft Defen
 |![Microsoft Defender XDR training icon.](../../media/microsoft-365-defender/m365-defender-secure-organization.svg)|Analyze threat data across domains and rapidly remediate threats with built-in orchestration and automation in Microsoft Defender XDR. This learning path aligns with exam SC-200: Microsoft Security Operations Analyst.<p> 9 hr 31 min - Learning Path - 11 Modules|
 
 > [!div class="nextstepaction"]
-> [Start >](/training/paths/dsc-200-mitigate-threats-using-microsoft-365-defender/)
+> [Start >](/training/paths/sc-200-mitigate-threats-using-microsoft-365-defender/)
 
 ## See also
 

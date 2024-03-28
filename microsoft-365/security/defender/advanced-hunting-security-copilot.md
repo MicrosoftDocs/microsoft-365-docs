@@ -20,7 +20,7 @@ ms.collection:
   - m365-security
   - tier1
 ms.topic: conceptual
-ms.date: 10/09/2023
+ms.date: 02/12/2024
 ---
 
 # Microsoft Security Copilot in advanced hunting
@@ -41,7 +41,10 @@ Threat hunters or security analysts who are not yet familiar with or have yet to
 
 This feature reduces the time  it takes to write a hunting query from scratch so that threat hunters and security analysts can focus on hunting and investigating threats.
 
-Users with access to Security Copilot have access to this capability in advanced hunting. 
+Users with access to Security Copilot have access to this capability in advanced hunting.
+
+> [!NOTE]
+> The advanced hunting capability is also available in the Security Copilot standalone experience through the Microsoft Defender XDR plugin. Know more about [preinstalled plugins in Microsoft Security Copilot](/security-copilot/manage-plugins#preinstalled-plugins).
 
 ## Try your first request
 1. Open the **advanced hunting** page from the navigation bar in Microsoft Defender XDR. The Security Copilot side pane for advanced hunting appears at the right hand side.

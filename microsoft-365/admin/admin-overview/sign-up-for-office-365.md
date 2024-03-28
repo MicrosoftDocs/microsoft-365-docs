@@ -9,6 +9,7 @@ ms.reviewer: zainzaigham, socheng
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
 ms.collection:
 - Tier1 
@@ -18,6 +19,7 @@ ms.collection:
 - Adm_O365
 - TRN_SMB
 - Adm_TOC
+- ContentFreshnessFY24
 ms.custom:
 - commerce_signup
 - VSBFY23

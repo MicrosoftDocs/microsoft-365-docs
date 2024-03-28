@@ -1,25 +1,21 @@
 ---
 title: Configure Microsoft Defender Antivirus features
 description: You can configure Microsoft Defender Antivirus features with Intune, Microsoft Configuration Manager, Group Policy, and PowerShell.
-keywords: Microsoft Defender Antivirus, antimalware, security, defender, configure, configuration, Config Manager, Microsoft Configuration Manager, SCCM, Intune, MDM, mobile device management, GP, group policy, PowerShell
 ms.service: defender-endpoint
 ms.subservice: ngp
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.topic: conceptual
 ms.custom: nextgen
-ms.reviewer:
-manager: dansimp
+ms.reviewer: yongrhee
+manager: deniseb
 ms.collection: 
 - m365-security
 - tier2
 - mde-ngp
 search.appverid: met150
-ms.date: 04/08/2021
+ms.date: 02/18/2024
 ---
 
 # Configure Microsoft Defender Antivirus features
@@ -37,13 +33,14 @@ ms.date: 04/08/2021
 
 You can configure Microsoft Defender Antivirus with a number of tools, such as:
 
-- Microsoft Intune
-- Microsoft Configuration Manager
-- Group Policy
-- PowerShell cmdlets
-- Windows Management Instrumentation (WMI)
-- [Tenant attach](/mem/configmgr/tenant-attach/)
+- [Microsoft Defender for Endpoint Security Policy Management](/mem/intune/protect/mde-security-integration)
+- [Microsoft Intune](/microsoft-365/security/defender-endpoint/use-intune-config-manager-microsoft-defender-antivirus)
+- [Microsoft Configuration Manager](/microsoft-365/security/defender-endpoint/manage-mde-post-migration-configuration-manager)
+- Microsoft Configuration Manager [Tenant attach](/mem/configmgr/tenant-attach/)
 
+- [Group Policy](/microsoft-365/security/defender-endpoint/use-group-policy-microsoft-defender-antivirus)
+- [PowerShell cmdlets](/microsoft-365/security/defender-endpoint/use-powershell-cmdlets-microsoft-defender-antivirus)
+- [Windows Management Instrumentation (WMI)](/microsoft-365/security/defender-endpoint/use-wmi-microsoft-defender-antivirus)
 The following broad categories of features can be configured:
 
 - Cloud-delivered protection. See [Cloud-delivered protection and Microsoft Defender Antivirus](cloud-protection-microsoft-defender-antivirus.md)

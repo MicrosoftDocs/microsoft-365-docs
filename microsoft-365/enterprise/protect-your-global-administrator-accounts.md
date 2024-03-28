@@ -104,7 +104,7 @@ Use these additional methods to ensure that your privileged account, and the con
 
 To ensure that the execution of highly privileged tasks is as secure as possible, use a privileged access workstation (PAW). A PAW is a dedicated computer that is only used for sensitive configuration tasks, such as Microsoft 365 configuration that requires a privileged account. Because this computer isn't used daily for Internet browsing or email, it's better protected from Internet attacks and threats.
   
-For instructions on how to set up a PAW, see [https://aka.ms/cyberpaw](/security/compass/privileged-access-devices).
+For instructions on how to set up a PAW, see [Securing devices as part of the privileged access story](https://aka.ms/cyberpaw).
 
 To enable Azure PIM for your Microsoft Entra tenant and administrator accounts, see the [steps to configure PIM](/azure/active-directory/active-directory-privileged-identity-management-configure).
 

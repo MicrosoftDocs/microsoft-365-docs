@@ -3,8 +3,8 @@ title: Allow or block URLs using the Tenant Allow/Block List
 f1.keywords:
   - NOCSH
 ms.author: chrisda
-author: dansimp
-manager: dansimp
+author: chrisda
+manager: deniseb
 audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: medium
@@ -62,7 +62,7 @@ This article describes how admins can manage entries for URLs in the Microsoft D
       - **Security Reader**
       - **View-Only Configuration**
       - **View-Only Organization Management**
-  - [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions *and* permissions for other features in Microsoft 365.
+  - [Microsoft Entra permissions](/entra/identity/role-based-access-control/manage-roles-portal): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions *and* permissions for other features in Microsoft 365.
 
 ## Create allow entries for URLs
 
@@ -96,8 +96,6 @@ You have the following options to create block entries for URLs:
 - From the **URLs** tab on the **Submissions** page at <https://security.microsoft.com/reportsubmission?viewid=url>. When you submit a message as **Should have been blocked (False negative)**, you can select **Block this URL** to add a block entry to the **URLs** tab on the **Tenant Allow/Block Lists** page. For instructions, see [Report questionable URLs to Microsoft](submissions-admin.md#report-questionable-urls-to-microsoft).
 
 - From the **URLs** tab on the **Tenant Allow/Block Lists** page or in PowerShell as described in this section.
-
-<a name='use-the-microsoft-365-defender-portal-to-create-block-entries-for-urls-in-the-tenant-allowblock-list'></a>
 
 ### Use the Microsoft Defender portal to create block entries for URLs in the Tenant Allow/Block List
 
@@ -139,8 +137,6 @@ New-TenantAllowBlockListItems -ListType Url -Block -Entries *contoso.com
 ```
 
 For detailed syntax and parameter information, see [New-TenantAllowBlockListItems](/powershell/module/exchange/new-tenantallowblocklistitems).
-
-<a name='use-the-microsoft-365-defender-portal-to-view-entries-for-urls-in-the-tenant-allowblock-list'></a>
 
 ## Use the Microsoft Defender portal to view entries for URLs in the Tenant Allow/Block List
 
@@ -192,8 +188,6 @@ Get-TenantAllowBlockListItems -ListType Url -Block
 
 For detailed syntax and parameter information, see [Get-TenantAllowBlockListItems](/powershell/module/exchange/get-tenantallowblocklistitems).
 
-<a name='use-the-microsoft-365-defender-portal-to-modify-entries-for-urls-in-the-tenant-allowblock-list'></a>
-
 ## Use the Microsoft Defender portal to modify entries for URLs in the Tenant Allow/Block List
 
 In existing URL entries, you can change the expiration date and note.
@@ -241,8 +235,6 @@ Set-TenantAllowBlockListItems -ListType Url -Entries "~contoso.com" -ExpirationD
 ```
 
 For detailed syntax and parameter information, see [Set-TenantAllowBlockListItems](/powershell/module/exchange/set-tenantallowblocklistitems).
-
-<a name='use-the-microsoft-365-defender-portal-to-remove-entries-for-urls-from-the-tenant-allowblock-list'></a>
 
 ## Use the Microsoft Defender portal to remove entries for URLs from the Tenant Allow/Block List
 
