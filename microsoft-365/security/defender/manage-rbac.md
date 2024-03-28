@@ -5,14 +5,14 @@ ms.service: defender-xdr
 ms.author: diannegali
 author: diannegali
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
 ms.custom: 
 ms.topic: overview
-ms.date: 1/16/2024
+ms.date: 03/28/2024
 ms.reviewer: 
 search.appverid: met150
 ---
