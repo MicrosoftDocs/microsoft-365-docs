@@ -1,6 +1,6 @@
 ---
 title: Troubleshoot Microsoft Defender XDR service issues
-description: Find solutions and workarounds to known Microsoft Defender XDR issues
+description: Find solutions and workarounds to known Microsoft Defender XDR issues.
 ms.service: defender-xdr
 f1.keywords:
   - NOCSH
@@ -16,7 +16,7 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - MET150
-ms.date: 02/16/2021
+ms.date: 03/28/2024
 ---
 
 # Troubleshoot Microsoft Defender XDR service issues
@@ -33,7 +33,7 @@ This section addresses issues that might arise as you use the Microsoft Defender
 
 ## I don't see Microsoft Defender XDR content
 
-If you don't see capabilities on the navigation pane such as the Incidents, Action center, or Hunting in your portal, you'll need to verify that your tenant has the appropriate licenses.
+If you don't see capabilities on the navigation pane such as the Incidents, Action center, or Hunting in your portal, you need to verify that your tenant has the appropriate licenses.
 
 For more information, see [Prerequisites](prerequisites.md).
 
@@ -41,7 +41,7 @@ For more information, see [Prerequisites](prerequisites.md).
 
 ## Microsoft Defender for Identity alerts are not showing up in the Microsoft Defender XDR incidents
 
-If you have Microsoft Defender for Identity deployed in your environment but you're not seeing Defender for Identity alerts as part of Microsoft Defender XDR incidents, you'll need to ensure that the Microsoft Defender for Cloud Apps and Defender for Identity integration is enabled.
+If you have Microsoft Defender for Identity deployed in your environment but you're not seeing Defender for Identity alerts as part of Microsoft Defender XDR incidents, you need to ensure that the Microsoft Defender for Cloud Apps and Defender for Identity integration is enabled.
 
 For more information, see [Microsoft Defender for Identity integration](/cloud-app-security/mdi-integration).
 
@@ -51,5 +51,5 @@ To turn on Microsoft Defender XDR, access **Settings** from the navigation pane 
 
 ## How do I create an exception for my file/URL?
 
-A false positive is a file or URL that is detected as malicious but is not a threat. You can create indicators and define exclusions to unblock and allow certain files/URLs. See [Address false positives/negatives in Defender for Endpoint](/microsoft-365/security/defender-endpoint/defender-endpoint-false-positives-negatives).
+A false positive is a file or URL that is detected as malicious but isn't a threat. You can create indicators and define exclusions to unblock and allow certain files/URLs. See [Address false positives/negatives in Defender for Endpoint](/microsoft-365/security/defender-endpoint/defender-endpoint-false-positives-negatives).
 [!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]
