@@ -14,7 +14,9 @@ ms.collection:
 ms.topic: conceptual
 search.appverid: met150
 ms.date: 03/27/2024
-appliesto: Microsoft Defender XDR and Microsoft Sentinel in the Microsoft Defender portal
+appliesto:
+    - Microsoft Defender XDR
+    - Microsoft Sentinel in the Microsoft Defender portal
 ---
 
 <!-- redirected from device-profile.md -->
