@@ -48,7 +48,7 @@ This article is updated frequently to let you know what's new in the latest rele
 
 There are multiple fixes and new changes in this release:
 
-- Addition of `microsoft_defender_scan_skip.log` file which logs scans that mdatp is unable to complete due to any reason.
+- An addition of a new log file - `microsoft_defender_scan_skip.log`. This will log the filenames that were skipped from various antivirus scans by Microsoft defender for endpoint due to any reason.
 - Stability and performance improvements.
 - Bug fixes.
 
