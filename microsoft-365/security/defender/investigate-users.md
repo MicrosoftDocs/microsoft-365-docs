@@ -54,6 +54,7 @@ When you investigate a specific user entity, you see the following tabs on its e
 > [!NOTE]
 > The user page shows the Microsoft Entra organization as well as groups, helping you understand the groups and permissions associated with a user.
 
+[!INCLUDE [unified-soc-preview](../../includes/unified-soc-preview.md)]
 ## Overview
 
 ### Entity details
