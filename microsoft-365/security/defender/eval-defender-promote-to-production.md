@@ -1,12 +1,8 @@
 ---
 title: Step 7. Promote your Microsoft Defender XDR evaluation environment to Production
 description: Use this article to promote your evals of MDI, MDO, MDE, and Defender for Cloud Apps to your live environment in Microsoft Defender XDR or M365D.
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: bcarter
 author: brendacarter
 f1.keywords: 

@@ -2,12 +2,8 @@
 title: FAQs related to Microsoft Defender Experts for XDR Managed response
 ms.reviewer:
 description: Frequently asked questions related to managed response notifications
-keywords: managed response, xdr, extended detection and response, defender experts for xdr, managed response faq xdr, managed detection and response (MDR) service, app execution, app restriction, real-time visibility with XDR experts, FAQ's related to XDR, isolate device, exclusions, high-value devices
 ms.service: defender-experts
 ms.subservice: dex-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: vpattnaik
 author: vpattnai
 ms.localizationpriority: medium
