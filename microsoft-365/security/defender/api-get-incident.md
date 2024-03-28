@@ -39,7 +39,7 @@ Retrieves a specific incident by its ID
 
 ## Limitations
 
-1. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
+1. Rate limitations for this API are 100 calls per minute and 1,500 calls per hour.
 
 ## Permissions
 
@@ -77,8 +77,8 @@ Empty
 
 ## Response
 
-If successful, this method returns 200 OK, and the incident entity in the response body.
-If incident with the specified id wasn't found - 404 Not Found.
+If successful, this method returns `200 OK`, and the incident entity in the response body.
+If incident with the specified ID wasn't found - 404 Not Found.
 
 ## Example
 
