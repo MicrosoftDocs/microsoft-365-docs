@@ -27,9 +27,9 @@ ms.date: 04/05/2023
 **Applies to:**
 - Microsoft Defender XDR
 
-Threat actors can use compromised user accounts for several malicious purposes, including reading emails in a user's inbox, forwarding emails to external recipients, and sending phishing mails, among others. The targeted user might be unaware that their emails are being forwarded. This is a very common tactic that attackers use when user accounts are compromised.
+Threat actors can use compromised user accounts for several malicious purposes, including reading emails in a user's inbox, forwarding emails to external recipients, and sending phishing mails, among others. The targeted user might be unaware that their emails are being forwarded. This is a common tactic that attackers use when user accounts are compromised.
 
-Emails can be forwarded either manually or automatically using forwarding rules. Automatic forwarding can be implemented in multiple ways like Inbox Rules, Exchange Transport Rule (ETR), and SMTP Forwarding. While manual forwarding requires direct action from users, they might not be aware of all the auto-forwarded emails. In Microsoft 365, an alert is raised when a user auto-forwards an email to a potentially malicious email address.
+Emails can be forwarded either manually or automatically using forwarding rules. Automatic forwarding can be implemented in multiple ways like Inbox Rules, Exchange Transport Rule (ETR), and SMTP Forwarding. While manual forwarding requires direct action from users, they might not be aware of all the autoforwarded emails. In Microsoft 365, an alert is raised when a user autoforwards an email to a potentially malicious email address.
 
 This playbook helps you investigate Suspicious Email Forwarding Activity alerts and quickly grade them as either a true positive (TP) or a false positive (FP). You can then take recommended actions for the TP alerts to remediate the attack.
 
@@ -37,11 +37,11 @@ For an overview of alert classifications for Microsoft Defender for Office 365 a
 
 The results of using this playbook are:
 
-- You have identified the alerts associated with auto-forwarded emails as malicious (TP) or benign (FP) activities.
+- You identify the alerts associated with auto-forwarded emails as malicious (TP) or benign (FP) activities.
 
   If malicious, you have [stopped email auto-forwarding](../office-365-security/outbound-spam-policies-external-email-forwarding.md) for the affected mailboxes.
 
-- You have taken the necessary action if emails have been forwarded to a malicious email address.
+- You take the necessary action if emails have been forwarded to a malicious email address.
 
 ## Email forwarding rules
 
