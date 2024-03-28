@@ -3,7 +3,7 @@ metadata:
   ms.date: 03/18/2022
   title: Software developer FAQ
   ms.reviewer: 
-  description: This page provides answers to common questions we receive from software developers
+  description: This page provides answers to common questions we receive from software developers.
   ms.service: defender-xdr
   ms.author: dansimp
   author: dansimp
@@ -37,7 +37,7 @@ sections:
       - question: |
           Why is Microsoft asking for a copy of my program?
         answer: |
-          Providing copies can help us with our analysis. Participants of the [Microsoft Active Protection Service (MAPS)](https://www.microsoft.com/msrc/mapp) might occasionally receive these requests. The requests will stop once our systems have received and processed the file.
+          Providing copies can help us with our analysis. Participants of the [Microsoft Active Protection Service (MAPS)](https://www.microsoft.com/msrc/mapp) might occasionally receive these requests. The requests stop after our systems have received and processed the file.
           
       - question: |
           Why does Microsoft classify my installer as a software bundler?
@@ -45,9 +45,9 @@ sections:
           It contains instructions to offer a program classified as unwanted software. You can review the [criteria](criteria.md) we use to check applications for behaviors that are considered unwanted.
           
       - question: |
-          Why is the Windows Defender Firewall blocking my program?
+          Why is the Windows Firewall blocking my program?
         answer: |
-          Firewall blocks aren't related to Microsoft Defender Antivirus and other Microsoft antimalware. [Learn about Windows Defender Firewall](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
+          Firewall blocks aren't related to Microsoft Defender Antivirus and other Microsoft antimalware. [Learn about Windows Firewall](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
           
       - question: |
           Why does the Microsoft Defender SmartScreen say my program isn't commonly downloaded?
