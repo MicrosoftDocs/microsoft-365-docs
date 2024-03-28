@@ -1,6 +1,6 @@
 ---
 title: Create the Microsoft Defender XDR Evaluation Environment for greater cyber security and XDR
-description: Learn what's included in the Microsoft Defender XDR XDR you will evaluate, and se up your Microsoft Defender XDR trial lab or pilot environment by activating trial licenses. Start your XDR cyber security journey here and learn how to take that test to production.
+description: Learn what's included in the Microsoft Defender XDR you'll evaluate, and se up your Microsoft Defender XDR trial lab or pilot environment by activating trial licenses. Start your XDR cyber security journey here and learn how to take that test to production.
 search.appverid: met150
 ms.service: defender-xdr
 f1.keywords: 
@@ -34,11 +34,11 @@ You can learn about and build out this Microsoft Defender XDR solution in steps 
 - [Promote the trial environment to production](eval-defender-promote-to-production.md)
 - [Back to the Overview](eval-overview.md)
 
-The steps in this series run end-to-end, from learning the concepts behind the Microsoft Defender XDR XDR to building it, and into taking the evaluation environment live to production.
+The steps in this series run end-to-end, from learning the concepts behind the Microsoft Defender XDR to building it, and into taking the evaluation environment live to production.
 
 There are two common ways to do this next step in evaluation. This series assumes you already have a production Microsoft 365 tenant and will activate E5 trial licenses to evaluate Microsoft Defender XDR in *the current environment*. An in-place evaluation will let you keep any security methods with the purchase of licenses after the evaluation period.
 
-The second is to  [Set up your Microsoft Defender XDR trial lab environment](setup-m365deval.md) for the purpose of evaluation. Note that it may not have many real signals from the business while in testing.
+The second is to  [Set up your Microsoft Defender XDR trial lab environment](setup-m365deval.md) for evaluation. It might not have many real signals from the business while in testing.
 
 <a name='you-will-need-to-activate-e5-trial-licenses-to-evaluate-microsoft-365-defender'></a>
 
