@@ -59,7 +59,7 @@ Centralized permissions management is supported for the following solutions:
 
 This section provides useful information on what you need to know before you start using Microsoft Defender XDR Unified RBAC.
 
-### Permissions prerequisites
+### Permissions pre-requisites
 
 - You must be a Global Administrator or Security Administrator in Microsoft Entra ID to:
   - Gain initial access to [Permissions and roles](https://security.microsoft.com/mtp_roles) in the Microsoft Defender portal.
