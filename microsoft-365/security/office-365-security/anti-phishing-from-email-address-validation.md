@@ -82,7 +82,7 @@ The following table contains examples of From addresses that aren't valid:
 
 |Address|Comments|
 |---|---|
-|**No From address**|In the past, when Microsoft 365 or Outlook.com received a message without a From address, the service added `From: <>` to make the message deliverable. As of November 2017, messages with blank From addresses aren't accepted.|
+|**No From address**|When Microsoft 365 or Outlook.com receives an email without a ‘From’ address, it will attempt to assign the Envelope Sender address to the ‘Sender Mail From’ to ensure the email is deliverable. These emails are currently accepted by the service, even if they are submitted with ‘From: <>’.|
 |`From: <firstname lastname@contoso.com>`|The email address contains a space.|
 |`From: Microsoft 365 sender@contoso.com`|The display name is present, but the email address isn't enclosed in angle brackets.|
 |`From: "Microsoft 365" <sender@contoso.com> (Sent by a process)`|Text after the email address.|
