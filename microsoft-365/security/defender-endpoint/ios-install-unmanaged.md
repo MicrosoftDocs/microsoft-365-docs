@@ -77,7 +77,7 @@ Because mobile app management doesn't require device management, you can protect
 
     *Example: Outlook as a managed app*
 
-     :::image type="content" source="images/managed-app.png" alt-text="The Microsoft Outlook menu item on the left navigation pane" lightbox="images/managed-app.png":::
+     :::image type="content" source="media/managed-app.png" alt-text="The Microsoft Outlook menu item on the left navigation pane" lightbox="media/managed-app.png":::
   
      Select the **Platform, Apps, Data protection, Access requirements** settings that your organization requires for your policy.
 
