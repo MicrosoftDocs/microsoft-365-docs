@@ -32,7 +32,7 @@ A user can give access only to apps they own that access their Microsoft 365 inf
 
 ## Turning user consent on or off
 
-Contact your Global Administrator to edit the user consent policy in the Microsoft Entra portal by following [these steps](https://learn.microsoft.com/entra/identity/enterprise-apps/configure-user-consent).
+Contact your Global Administrator to edit the user consent policy in the Microsoft Entra portal by following [these steps](/entra/identity/enterprise-apps/configure-user-consent).
 
 ## Related content
 
