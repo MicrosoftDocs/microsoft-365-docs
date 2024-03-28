@@ -33,6 +33,8 @@ The device entity page in the Microsoft Defender portal helps you in your invest
 > If your organization onboarded Microsoft Sentinel to the Defender portal, additional information will appear.
 > 
 > In Microsoft Sentinel, device entities are also known as **host** entities. [Learn more](/azure/sentinel/entities-reference).
+>
+> [!INCLUDE [unified-soc-preview-no-alert](../../includes/unified-soc-preview-no-alert.md)]
 
 Device entities can be found in the following areas:
 
