@@ -1,6 +1,6 @@
 ---
 title: Step 7. Promote your Microsoft Defender XDR evaluation environment to Production
-description: Use this article to promote your trial subscriptions of MDI, MDO, MDE, and Defender for Cloud Apps to your live environment in Microsoft Defender XDR.
+description: Use this article to promote your trial subscriptions of Defender for Identity, Defender for Office 365, Defender for Endpoint, and Defender for Cloud Apps to your live environment in Microsoft Defender XDR.
 search.appverid: met150
 ms.service: defender-xdr
 ms.author: bcarter
@@ -40,7 +40,7 @@ After successfully evaluating or piloting Defender for Office 365, it can be pro
 
 1. Purchase and provision the necessary licenses and assign them to your production users.
 2. Re-run recommended baseline policy configurations (either Standard or Strict) against your production email domain or specific groups of users.
-3. Optionally create and configure any custom MDO policies against your production email domain or groups of users.  However, remember that any assigned baseline policies will always take precedence over custom policies.
+3. Optionally create and configure any custom Defender for Office 365 policies against your production email domain or groups of users.  However, remember that any assigned baseline policies will always take precedence over custom policies.
 4. Update the public MX record for your production email domain to resolve directly to EOP.
 5. Decommission any third-party SMTP gateways and disable or delete any EXO connectors associated with this relay.
 
