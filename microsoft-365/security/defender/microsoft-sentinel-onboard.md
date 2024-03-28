@@ -23,7 +23,8 @@ search.appverid:
   - MOE150
   - MET150
 ms.date: 11/10/2023
-appliesto: Microsoft Sentinel in the Microsoft Defender portal
+appliesto:
+- Microsoft Sentinel in the Microsoft Defender portal
 ---
 
 # Connect Microsoft Sentinel to Microsoft Defender XDR (preview)
