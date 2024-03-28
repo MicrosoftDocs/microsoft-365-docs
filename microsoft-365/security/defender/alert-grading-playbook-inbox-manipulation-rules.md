@@ -51,7 +51,7 @@ For example, the inbox rule might be set to look for keywords like "invoice," "p
 
 ## Workflow
 
-Here is the workflow to identify suspicious inbox manipulation rule activities.
+Here's the workflow to identify suspicious inbox manipulation rule activities.
 
 :::image type="content" source="../../media/alert-grading-playbook-inbox-manipulation-rules/alert-grading-playbook-inbox-manipulation-rules-workflow.png" alt-text="Alert investigation workflow for inbox manipulation rules" lightbox="../../media/alert-grading-playbook-inbox-manipulation-rules/alert-grading-playbook-inbox-manipulation-rules-workflow.png":::
 
@@ -75,9 +75,9 @@ Determine if the rules look suspicious according to the following rule parameter
 
 - Keywords
 
-   The attacker might apply the manipulation rule only to emails that contains certain words. You can find these keywords under certain attributes such as: "BodyContainsWords", "SubjectContainsWords" or "SubjectOrBodyContainsWords".
+   The attacker might apply the manipulation rule only to emails that contains certain words. You can find these keywords under certain attributes such as: "BodyContainsWords," "SubjectContainsWords," or "SubjectOrBodyContainsWords."
 
-   If there are filtering by keywords, then check whether the keywords seem suspicious to you (common scenarios are to filter emails related to the attacker activities, such as "phish", "spam", "do not reply", among others).
+   If there are filtering by keywords, then check whether the keywords seem suspicious to you (common scenarios are to filter emails related to the attacker activities, such as "phish," "spam," and "do not reply," among others).
 
    If there is no filter at all, it might be suspicious as well.
 
