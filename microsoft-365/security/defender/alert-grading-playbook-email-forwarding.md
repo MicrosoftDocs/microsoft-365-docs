@@ -81,10 +81,10 @@ While investigating this alert, you must determine:
 
 By looking at sender's past behavior and recent activities, you should be able to determine whether the user's account should be considered compromised or not. You can see the details of alerts raised from the user's page in the Microsoft Defender portal.
 
-You can also analyze these additional activities for the affected mailbox:
+You can also analyze these other activities for the affected mailbox:
 
 - Use Threat Explorer to understand email related threats
-  - Observe how many of the recent email sent by the sender are detected as phish, spam or malware.
+  - Observe how many of the recent email sent by the sender are detected as phish, spam, or malware.
   - Observe how many of the sent emails contain sensitive information.
 
 - Assess risky sign-in behavior in the Microsoft Azure portal.
@@ -96,12 +96,12 @@ Investigate the email forwarding activity. For instance, check the type of email
 
 For more information, see the following articles:
 
-- [Auto-forwarded messages report in the EAC](/exchange/monitoring/mail-flow-reports/mfr-auto-forwarded-messages-report)
+- [Autoforwarded messages report in the EAC](/exchange/monitoring/mail-flow-reports/mfr-auto-forwarded-messages-report)
 - [New users forwarding email insight in the EAC](/exchange/monitoring/mail-flow-insights/mfi-new-users-forwarding-email-insight)
 - [Responding to a Compromised Email Account](/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account)
 - [Report false positives and false negatives in Outlook](/microsoft-365/security/office-365-security/submissions-outlook-report-messages)
 
-Here is the workflow to identify suspicious email forwarding activities.
+Here's the workflow to identify suspicious email forwarding activities.
 
 :::image type="content" source="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-workflow.png" alt-text="Alert investigation workflow for email forwarding" lightbox="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-workflow.png":::
 
@@ -123,7 +123,7 @@ Threat Explorer provides an interactive investigation experience for email relat
 
     :::image type="content" source="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-network-message-id.png" alt-text="Example of the Network Message ID" lightbox="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-network-message-id.png":::
 
-  - What additional details are available for this email? For example: subject, return path, and timestamp.
+  - What other details are available for this email? For example: subject, return path, and timestamp.
   - What is the origin of this email? Are there any similar emails?
   - Does this email contain any URLs? Does the URL point to any sensitive data?
   - Does the email contain any attachments? Do the attachments contain sensitive information?
@@ -142,12 +142,12 @@ To use [advanced Hunting](advanced-hunting-overview.md) queries to gather inform
 
 - CloudAppEvents -Contains audit log of user activities.
 
-- IdentityLogonEvents - Contains login information for all users.
+- IdentityLogonEvents - Contains sign-in information for all users.
 
 > [!NOTE]
 > Certain parameters are unique to your organization or network. Fill in these specific parameters as instructed in each query.
 
-Run this query to find out who else has forwarded emails to these recipients (SRL/RL).
+Run this query to find out who else forwarded emails to these recipients (SRL/RL).
 
 ```kusto
 let srl=pack_array("{SRL}"); //Put values from SRL here.
@@ -206,7 +206,7 @@ CloudAppEvents
 | where ActionType in (action_types)
 ```
 
-Run this query to find out if there were any anomalous login events from this user. For example: unknown IPs, new applications, uncommon countries/regions, multiple LogonFailed events.
+Run this query to find out if there were any anomalous sign-in events from this user. For example: unknown IPs, new applications, uncommon countries/regions, multiple LogonFailed events.
 
 ```kusto
 let sender = "{SENDER}"; //Replace {SENDER} with email of the Forwarder
@@ -246,7 +246,7 @@ Once you determine that the activities associated make this alert a True Positiv
 
     - Reset the user account's credentials.
 
-4. Check for additional activities originated from impacted accounts, IP addresses, and suspicious senders.
+4. Check for other activities originated from impacted accounts, IP addresses, and suspicious senders.
 
 ## See also
 
@@ -254,4 +254,5 @@ Once you determine that the activities associated make this alert a True Positiv
 - [Suspicious inbox forwarding rules](alert-grading-playbook-inbox-forwarding-rules.md)
 - [Suspicious inbox manipulation rules](alert-grading-playbook-inbox-manipulation-rules.md)
 - [Investigate alerts](investigate-alerts.md)
+
 [!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]
