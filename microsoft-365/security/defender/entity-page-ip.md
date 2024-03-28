@@ -14,7 +14,9 @@ ms.collection:
 ms.topic: conceptual
 ms.date: 03/27/2024
 search.appverid: met150
-appliesto: Microsoft Defender XDR and Microsoft Sentinel in the Microsoft Defender portal
+appliesto:
+    - Microsoft Defender XDR
+    - Microsoft Sentinel in the Microsoft Defender portal
 ---
 
 # IP address entity page in Microsoft Defender

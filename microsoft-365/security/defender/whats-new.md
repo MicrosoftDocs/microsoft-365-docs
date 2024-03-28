@@ -1,7 +1,6 @@
 ---
 title: What's new in Microsoft Defender XDR
 description: Lists the new features and functionality in Microsoft Defender XDR
-keywords: what's new in Microsoft Defender XDR, ga, generally available, capabilities, available, new
 search.appverid: met150
 ms.service: defender-xdr
 ms.author: diannegali
@@ -149,7 +148,7 @@ This change introduces a new navigation menu within the Microsoft Defender porta
 
 - (GA) Live Response is now generally available for macOS and Linux.
 
-- (GA) Identity timeline is now generally available as part of the new Identity page in Microsoft Defender XDR. The updated User page has a new look, an expanded view of related assets and a new dedicated timeline tab. The timeline represents activities and alerts from the last 30 days. It unifies a user’s identity entries across all available workloads: Microsoft Defender for Identity, Microsoft Defender for Cloud Apps, and Microsoft Defender for Endpoint. Using the timeline helps you easily focus on a user's activities (or activities performed on them) in specific timeframes.
+- (GA) Identity timeline is now generally available as part of the new Identity page in Microsoft Defender XDR. The updated User page has a new look, an expanded view of related assets and a new dedicated timeline tab. The timeline represents activities and alerts from the last 30 days. It unifies a user's identity entries across all available workloads: Microsoft Defender for Identity, Microsoft Defender for Cloud Apps, and Microsoft Defender for Endpoint. Using the timeline helps you easily focus on a user's activities (or activities performed on them) in specific timeframes.
 
 ## December 2022
 
