@@ -39,7 +39,7 @@ Once you have your domains added to your tenant and validated, use the following
 
 | Type | Priority | Host name | Points to address or value | TTL |
 | --- | --- | --- | --- | --- |
-| MX | 0 | @ | *tenant*.mail.protection.office365.us (see below for more details) | One Hour |
+| MX | 0 | @ | *tenant*.mail.protection.office365.us (for more information, see below) | One Hour |
 | TXT | - | @ | v=spf1 include:spf.protection.office365.us -all | One Hour |
 | CNAME | - | autodiscover | autodiscover-dod.office365.us | One Hour |
 
