@@ -127,7 +127,7 @@ When you save a new rule, it runs and checks for matches from the past 30 days o
 - **Every 12 hours**—runs every 12 hours, checking data from the past 48 hours
 - **Every 3 hours**—runs every 3 hours, checking data from the past 12 hours
 - **Every hour**—runs hourly, checking data from the past 4 hours
-- **Continuous (NRT)**—runs continuously, checking data from events as they are collected and processed in near real-time (NRT), see [Continuous (NRT) frequency](custom-detection-rules.md#continuous-nrt-frequency)
+- **Continuous (NRT)**—runs continuously, checking data from events as they're collected and processed in near real-time (NRT), see [Continuous (NRT) frequency](custom-detection-rules.md#continuous-nrt-frequency)
 
 > [!TIP]
 > Match the time filters in your query with the lookback duration. Results outside of the lookback duration are ignored.
@@ -147,7 +147,7 @@ Setting a custom detection to run in Continuous (NRT) frequency allows you to in
 You can run a query continuously as long as:
 - The query references one table only.
 - The query uses an operator from the list of supported KQL operators. **[Supported KQL features](/azure/azure-monitor/essentials/data-collection-transformations-structure#supported-kql-features)**
-- The query does not use joins, unions, or the `externaldata` operator.
+- The query doesn't use joins, unions, or the `externaldata` operator.
 
 ###### Tables that support Continuous (NRT) frequency
 
@@ -184,7 +184,7 @@ Near real-time detections are supported for the following tables:
 
 Identify the columns in your query results where you expect to find the main affected or impacted entity. For example, a query might return sender (`SenderFromAddress` or `SenderMailFromAddress`) and recipient (`RecipientEmailAddress`) addresses. Identifying which of these columns represent the main impacted entity helps the service aggregate relevant alerts, correlate incidents, and target response actions.
 
-You can select only one column for each entity type (mailbox, user, or device). Columns that are not returned by your query can't be selected.
+You can select only one column for each entity type (mailbox, user, or device). Columns that aren't returned by your query can't be selected.
 
 ### 4. Specify actions
 
@@ -204,7 +204,7 @@ These actions are applied to devices in the `DeviceId` column of the query resul
 
 #### Actions on files
 
-- When selected, the **Allow/Block** action can be applied to the file. Blocking files are only allowed if you have *Remediate* permissions for files and if the query results have identified a file ID, such as a SHA1. Once a file is blocked, other instances of the same file in all devices are also blocked. You can control which device group the blocking is applied to, but not specific devices.
+- When selected, the **Allow/Block** action can be applied to the file. Blocking files are only allowed if you have *Remediate* permissions for files and if the query results have identified a file ID, such as an SHA1. Once a file is blocked, other instances of the same file in all devices are also blocked. You can control which device group the blocking is applied to, but not specific devices.
 
 - When selected, the **Quarantine file** action can be applied to files in the `SHA1`, `InitiatingProcessSHA1`, `SHA256`, or `InitiatingProcessSHA256` column of the query results. This action deletes the file from its current location and places a copy in quarantine.
 
@@ -215,7 +215,7 @@ These actions are applied to devices in the `DeviceId` column of the query resul
 - Select **Disable user** to temporarily prevent a user from logging in.
 - Select **Force password reset** to prompt the user to change their password on the next sign in session.
 
-Both the Disable user and Force password reset options require the user SID, which are in the columns `AccountSid`, `InitiatingProcessAccountSid`, `RequestAccountSid`, and `OnPremSid`.
+Both the `Disable user` and `Force password reset` options require the user SID, which are in the columns `AccountSid`, `InitiatingProcessAccountSid`, `RequestAccountSid`, and `OnPremSid`.
 
 For more details on user actions, read [Remediation actions in Microsoft Defender for Identity](/defender-for-identity/remediation-actions).
 
