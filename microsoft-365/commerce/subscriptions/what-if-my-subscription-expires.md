@@ -58,7 +58,7 @@ The subscription only enters the **Expired** status after all the licenses are r
 
  The number of days a subscription stays in each lifecycle status is different, depending on whether you bought the subscription directly from Microsoft, or through an Enterprise agreement, a Cloud Solution Provider (CSP), or Volume Licensing (VL). For more information, see Lengths of time a subscription spends in each lifecycle status, later in this article. The following table explains what you can expect for each lifecycle status when a paid Microsoft 365 for business subscription ends.
 
-| | Active | Expired* | Disabled* | Deleted |
+|&nbsp;| Active | Expired* | Disabled* | Deleted |
 |--|--------|---------|----------|---------|
 | Customer data | *Data is accessible to all* | *Data is accessible to all* | *Data is accessible to admins only* | **Data is deleted and Microsoft Entra ID is removed, if not in use by other services** |
 | Users | Users have normal access to Microsoft 365, files, and Microsoft 365 apps  | Users have normal access to Microsoft 365, files, and Microsoft 365 apps  | Users can't access Microsoft 365 apps. Microsoft 365 apps eventually move into a read-only, reduced functionality mode and display [Unlicensed Product notifications](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380) | Users can't access Microsoft 365, files, or Microsoft 365 apps  |
@@ -72,7 +72,7 @@ The subscription only enters the **Expired** status after all the licenses are r
 
 For most offers, in most countries and regions, the number of days a subscription stays in each lifecycle status is shown in the following table.
 
-| | Active | Expired | Disabled | Deleted |
+|&nbsp;| Active | Expired | Disabled | Deleted |
 |--|--------|---------|----------|---------|
 | All subscription terms | Default status | 30 days | 90 days | Terminal state |
 
@@ -80,7 +80,7 @@ For most offers, in most countries and regions, the number of days a subscriptio
 
 If you’re an Enterprise customer, the lifecycle statuses and time periods for each are different, based on the length of your subscription. The following table lists the statuses and number of days for each status and each subscription length.
 
-|	| Active | Grace | Inactive | Deleted |
+|&nbsp;| Active | Grace | Inactive | Deleted |
 |--|-------|-------|----------|---------|
 | Monthly term | Default status | 30 days | 90 days | Terminal state |
 | Annual term | Default status | 30 days | 90 days | Terminal state |
@@ -90,14 +90,14 @@ If you’re an Enterprise customer, the lifecycle statuses and time periods for 
 
 If you bought your subscription through an Enterprise volume licensing agreement or through the Open Value licensing program, the following table lists the statuses and number of days.
 
-|  | Active | Grace | Inactive | Deleted |
+|&nbsp;| Active | Grace | Inactive | Deleted |
 |--|--------|-------|----------|---------|
 | Enterprise | Default status. Subscription end date aligns with the agreement end date | 90 days from subscription end date | 60 days | Terminal State |
 | Open / Open Value | Subscription start date based on activation of token (not necessarily purchase date) | 30 days | 90 days | Terminal state |
 
 ### Lifecycle status durations for Cloud Service Provider (CSP) customers
 
-If you bought your subscription through a CSP, see [Subscription lifecycle states - Partner Center](https://learn.microsoft.com/partner-center/subscription-lifecycle) for descriptions of the lifecycle statuses that apply to those subscriptions.
+If you bought your subscription through a CSP, see [Subscription lifecycle states - Partner Center](/partner-center/subscription-lifecycle) for descriptions of the lifecycle statuses that apply to those subscriptions.
 
 ## Understand your options if your subscription is about to expire
 
