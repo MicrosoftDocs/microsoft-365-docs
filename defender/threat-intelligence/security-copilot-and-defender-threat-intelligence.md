@@ -43,7 +43,7 @@ This article introduces you to Copilot and includes sample prompts that can help
 ## Using Copilot for Security standalone portal to get threat intelligence
 
 1.	Go to [Microsoft Copilot for Security](https://go.microsoft.com/fwlink/?linkid=2247989) and sign in with your credentials.
-2.	Make sure that the Defender TI plugin is turned on. In the prompt bar, select the **Sources** icon ![Screenshot of the Sources icon](/defender/threat-intelligence/media/defender-ti-and-copilot/copilot-sources-icon.png). 
+2.	Make sure that the Defender TI plugin is turned on. In the prompt bar, select the **Sources** icon ![Screenshot of the Sources icon.](/defender/threat-intelligence/media/defender-ti-and-copilot/copilot-sources-icon.png). 
 
     ![Screenshot of the prompt bar in Microsoft Copilot for Security with the Sources icon highlighted.](media/defender-ti-and-copilot/copilot-prompts-bar-sources.png)
   
@@ -63,7 +63,7 @@ Copilot for Security has built-in system features that can get data from the dif
 
 To view the list of built-in system capabilities for Defender TI:
 
-1.	In the prompt bar, select the **Prompts** icon ![Screenshot of the prompts icon](/defender/threat-intelligence/media/defender-ti-and-copilot/copilot-prompts-icon.png).
+1.	In the prompt bar, select the **Prompts** icon ![Screenshot of the prompts icon.](/defender/threat-intelligence/media/defender-ti-and-copilot/copilot-prompts-icon.png).
 
       ![Screenshot of the prompt bar in Microsoft Copilot for Security with the Prompts icon highlighted.](media/defender-ti-and-copilot/copilot-prompts-bar-prompts.png)
 
