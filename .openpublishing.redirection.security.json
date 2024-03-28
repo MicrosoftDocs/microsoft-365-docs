@@ -41,6 +41,11 @@
        "redirect_document_id": true
      },
      {
+      "source_path": "microsoft-365/security/defender/device-profile.md",
+      "redirect_url": "/microsoft-365/security/defender/entity-page-device",
+      "redirect_document_id": true
+    },
+    {
               "source_path": "microsoft-365/security/defender-endpoint/experts-on-demand.md",
               "redirect_url": "/microsoft-365/security/defender/onboarding-defender-experts-for-hunting#collaborate-with-experts-on-demand",
               "redirect_document_id": false
