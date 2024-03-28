@@ -2,10 +2,10 @@
 title: Troubleshoot onboarding issues related to Security Management for Microsoft Defender for Endpoint
 description: Troubleshoot issues that might arise during the onboarding of devices using Security Management for Microsoft Defender for Endpoint.
 ms.service: defender-endpoint
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -51,7 +51,7 @@ The Client Analyzer output file (MDE Client Analyzer Results.htm) can provide ke
 - Verify that the device OS is in scope for Security Management for Microsoft Defender for Endpoint onboarding flow in **General Device Details** section
 - Verify that the device appears in Microsoft Entra ID in **Device Configuration Management Details**
 
-  :::image type="content" source="images/client-analyzer-results.png" alt-text="The client analyzer results" lightbox="images/client-analyzer-results.png":::
+  :::image type="content" source="media/client-analyzer-results.png" alt-text="The client analyzer results" lightbox="media/client-analyzer-results.png":::
 
 In the **Detailed Results** section of the report, the Client Analyzer also provides actionable guidance.
 
@@ -62,7 +62,7 @@ In the **Detailed Results** section of the report, the Client Analyzer also prov
 
 If you weren't able to identify the onboarded device in Microsoft Entra ID or in the Intune admin center, and didn't receive an error during the enrollment, checking the registry key `Computer\\HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\SenseCM\\EnrollmentStatus` can provide additional troubleshooting information.
 
-:::image type="content" source="images/enrollment-status.png" alt-text="The page displaying the enrollment status" lightbox="images/enrollment-status.png":::
+:::image type="content" source="media/enrollment-status.png" alt-text="The page displaying the enrollment status" lightbox="media/enrollment-status.png":::
 
 The following table lists errors and directions on what to try/check in order to address the error. Note that the list of errors isn't complete and is based on typical/common errors encountered by customers in the past:
 

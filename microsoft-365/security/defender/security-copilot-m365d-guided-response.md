@@ -1,7 +1,7 @@
 ---
 title: Use guided responses with Security Copilot in Microsoft Defender XDR
 description: Use guided responses with Security Copilot in Microsoft Defender XDR to respond to incidents.
-keywords: security copilot, Microsoft Defender XDR, embedded experience, incident summary, script analyzer, script analysis, query assistant, m365, incident report, guided response, incident response playbooks, incident response, incident response playbooks, remediate incident, remediation actions, incident solution, resolve incidents
+keywords: security copilot, Microsoft Defender XDR, embedded experience, incident summary, script analyzer, script analysis, query assistant, m365, incident report, guided response, incident response playbooks, incident response, incident response playbooks, remediate incident, remediation actions, incident solution, resolve incidents, guided responses, security copilot guided response, copilot in security guided response, security copilot guided response in Microsoft Defender XDR
 ms.service: defender-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -20,7 +20,7 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - MET150
-ms.date: 10/10/2023
+ms.date: 02/12/2024
 ---
 
 # Use guided responses with Microsoft Security Copilot in Microsoft Defender XDR
@@ -39,6 +39,9 @@ ms.date: 10/10/2023
 Responding to incidents in Microsoft Defender XDR often requires familiarity with the portal's available actions to stop attacks. In addition, new incident responders might have different ideas of where and how to start responding to incidents. The guided response capability of Security Copilot in Microsoft Defender XDR allows incident response teams at all levels to confidently and quickly apply response actions to resolve incidents with ease.
 
 This guide outlines how to access the guided response capability of Security Copilot in Microsoft Defender XDR, including information on providing feedback about the responses.
+
+> [!NOTE]
+> The guided response capability is also available in the Security Copilot standalone experience through the Microsoft Defender XDR plugin. Know more about [preinstalled plugins in Microsoft Security Copilot](/security-copilot/manage-plugins#preinstalled-plugins).
 
 ## Technical requirements
 

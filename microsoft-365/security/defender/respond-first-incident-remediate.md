@@ -102,14 +102,14 @@ Other actions on devices are available through the following tutorial:
 
 The following tutorials enumerate steps and actions that you can apply when investigating entities or responding to specific threats:
 
--	[Responding to a compromised email account via Defender for Office 365](/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account.md)
--	[Remediating vulnerabilities with Defender for Vulnerability Management](/microsoft-365/security/defender-vulnerability-management/tvm-remediation.md)
--	[Remediation actions for user accounts via Defender for Identity](/defender-for-identity/remediation-actions)
--	[Applying policies to control apps with Defender for Cloud Apps](/defender-cloud-apps/control-cloud-apps-with-policies)
+- [Responding to a compromised email account via Defender for Office 365](/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account)
+- [Remediating vulnerabilities with Defender for Vulnerability Management](/microsoft-365/security/defender-vulnerability-management/tvm-remediation)
+- [Remediation actions for user accounts via Defender for Identity](/defender-for-identity/remediation-actions)
+- [Applying policies to control apps with Defender for Cloud Apps](/defender-cloud-apps/control-cloud-apps-with-policies)
 
 ## Next steps
 
--	[Simulate attacks through the attack simulation training](eval-defender-investigate-respond-simulate-attack.md)
+- [Simulate attacks through the attack simulation training](eval-defender-investigate-respond-simulate-attack.md)
 - Explore Microsoft Defender XDR through the [Virtual Ninja training](https://adoption.microsoft.com/ninja-show/)
 
 ## See also

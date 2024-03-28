@@ -4,7 +4,7 @@ description: Find out how to get Microsoft Defender for Business, endpoint prote
 search.appverid: MET150
 author: siosulli
 ms.author: siosulli
-manager: dansimp 
+manager: deniseb 
 audience: Admin
 ms.topic: overview
 ms.service: defender-business

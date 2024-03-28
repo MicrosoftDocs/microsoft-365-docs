@@ -1,15 +1,14 @@
 ---
 title: Enable and configure Microsoft Defender Antivirus always-on protection
 description: Enable and configure Microsoft Defender Antivirus real-time protection features such as behavior monitoring, heuristics, and machine learning
-keywords: antivirus, real-time protection, rtp, machine learning, behavior monitoring, heuristics
 ms.service: defender-endpoint
 ms.subservice: ngp
 ms.localizationpriority: medium
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 ms.topic: conceptual
 ms.date: 05/24/2023
-manager: dansimp
+manager: deniseb
 ms.custom: nextgen
 ms.collection: 
 - m365-security
@@ -70,7 +69,7 @@ You can use **Local Group Policy Editor** to enable and configure Microsoft Defe
 
     2. Under **Best match**, select **Edit group policy** to launch **Local Group Policy Editor**.
     
-       :::image type="content" source="images/gpedit-search.png" alt-text="The GPEdit taskbar search result in the Control panel" lightbox="images/gpedit-search.png":::
+       :::image type="content" source="media/gpedit-search.png" alt-text="The GPEdit taskbar search result in the Control panel" lightbox="media/gpedit-search.png":::
 
 2. In the left pane of **Local Group Policy Editor**, expand the tree to **Computer Configuration** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus**.
 

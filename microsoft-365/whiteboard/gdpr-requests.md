@@ -10,7 +10,7 @@ ms.topic: article
 ms.custom: 
 ms.service: whiteboard
 search.appverid: MET150
-ms.collection: 
+ms.collection: essentials-privacy
 ms.localizationpriority: medium
 description: Learn how to export, transfer, or delete personal information from Microsoft Whiteboard.
 ---

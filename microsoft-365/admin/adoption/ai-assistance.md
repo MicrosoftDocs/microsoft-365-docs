@@ -72,7 +72,6 @@ Each insight captures the number of Copilot-enabled users in your organization p
 - **Summarize a Teams conversation**: This represents the number of users who summarize Teams conversations using Copilot in Microsoft Teams.
 - **Summarize an email thread:** This represents the number of users who summarize email threads using Copilot in Outlook.
 - **Summarize a Word document:** This represents the number of users who summarize Word documents using Copilot in Microsoft Word.
-- **Summarize a presentation:** This represents the number of users who summarize a presentation using Copilot in Microsoft PowerPoint.
 
 ### Create
 

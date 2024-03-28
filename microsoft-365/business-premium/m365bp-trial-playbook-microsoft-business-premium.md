@@ -4,17 +4,17 @@ f1.keywords:
 - NOCSH
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 audience: Admin
 ms.topic: conceptual
-ms.collection: 
+ms.collection:
 - m365-security
 - tier1
 ms.service: microsoft-365-business
 ms.date: 07/19/2023
 ms.reviewer: nehabha
 ms.localizationpriority: medium
-search.appverid: 
+search.appverid:
 - MOE150
 - MET150
 description: "Make the most of your Microsoft 365 Business Premium trial. Try out some of the key productivity and security capabilities."
@@ -87,7 +87,7 @@ Microsoft 365 Business Premium includes Defender for Business, a new security so
 
 <a name='start-using-the-microsoft-365-defender-portal-'></a>
 
-## Start using the Microsoft Defender portal 
+## Start using the Microsoft Defender portal
 
 1. Access the Microsoft Defender portal at [https://security.microsoft.com](https://security.microsoft.com).
 

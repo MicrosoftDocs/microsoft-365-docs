@@ -80,10 +80,10 @@ Be sure that your current plan allows for Microsoft Sentinel integration (for ex
 
 Note that you can choose tables from *any other Microsoft Defender product* you find helpful and applicable while completing the final step, (below).
 
-7. Select **EmailEvents**, **EmailUrlInfo**, **EmailAttachmentInfo**, and **EmailPostDeliveryEvents** > and **Apply Changes**.
+1. Select **EmailEvents**, **EmailUrlInfo**, **EmailAttachmentInfo**, and **EmailPostDeliveryEvents** > and **Apply Changes**.
 
 ## More resources
 
-[Integrate security solutions in Microsoft Defender for Cloud](/azure/security-center/security-center-partner-integration#exporting-data-to-a-siem)
+[Integrate security solutions in Microsoft Defender for Cloud](/azure/defender-for-cloud/partner-integration)
 
 [Integrate Microsoft Graph Security API alerts with a SIEM](/graph/security-integration)

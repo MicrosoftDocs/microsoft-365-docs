@@ -18,6 +18,8 @@ f1.keywords: NOCSH
 
 # Viewing Log Files
 
+[!INCLUDE [test-base-deprecation](./includes/test-base-deprecation.md)]
+
 You can download public facing log files separately as an aid to troubleshooting script failures, regressions, reliability issues, or other unexpected results. Each test run that completes successfully should generate a collection of logs and data files that include .log, .etl, .csv, and .evtx files that are distributed in the following categories:
 
 - Script installation and status logs

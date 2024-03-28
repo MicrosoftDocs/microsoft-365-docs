@@ -18,6 +18,7 @@ description: Learn how to recognize and remediate the illicit consent grants att
 ms.custom:
   - seo-marvel-apr2020
   - has-azure-ad-ps-ref
+  - azure-ad-ref-level-one-done
 ms.subservice: mdo
 ms.service: microsoft-365-security
 appliesto:
@@ -78,8 +79,6 @@ If you have one or more instances of the IOCs listed above, you need to do furth
 
 You can do this for your users with either the Microsoft Entra admin center, or PowerShell or have your users individually enumerate their application access.
 
-<a name='steps-for-using-the-azure-active-directory-portal'></a>
-
 ### Steps for using the Microsoft Entra admin center
 
 You can look up the applications to which any individual user has granted permissions by using the Microsoft Entra admin center at <https://portal.azure.com>.
@@ -108,6 +107,8 @@ The simplest way to verify the Illicit Consent Grant attack is to run [Get-Azure
 
 > [!IMPORTANT]
 > We ***highly recommend*** that you require multi-factor authentication on your administrative account. This script supports MFA authentication.
+
+[!INCLUDE [Azure AD PowerShell deprecation note](~/../microsoft-365/reusable-content/msgraph-powershell/includes/aad-powershell-deprecation-note.md)]
 
 1. Sign in to the computer that you will run the script from with local administrator rights.
 
@@ -160,8 +161,8 @@ After you have identified an application with illicit permissions, you have seve
 
 ## See also
 
-- [Unexpected application in my applications list](/azure/active-directory/application-access-unexpected-application) walks administrators through various actions they may want to take after realizing there are unexpected applications with access to data.
-- [Integrating applications with Microsoft Entra ID](/azure/active-directory/active-directory-apps-permissions-consent) is a high-level overview of consent and permissions.
-- [Problems developing my application](/azure/active-directory/active-directory-application-dev-development-content-map) provides links to various consent related articles.
-- [Application and service principal objects in Microsoft Entra ID](/azure/active-directory/develop/active-directory-application-objects) provides an overview of the Application and Service principal objects that are core to the application model.
-- [Manage access to apps](/azure/active-directory/active-directory-managing-access-to-apps) is an overview of the capabilities that administrators have to manage user access to apps.
+- [Applications listed in Enterprise applications](/entra/identity/enterprise-apps/application-list) walks administrators through various actions they may want to take after realizing there are unexpected applications with access to data.
+- [Quickstart: Register an application with the Microsoft identity platform](/entra/identity-platform/quickstart-register-app) is a high-level overview of consent and permissions.
+- [Configure token lifetime policies](/entra/identity-platform/configure-token-lifetimes) provides links to various consent related articles.
+- [Application and service principal objects in Microsoft Entra ID](/entra/identity-platform/app-objects-and-service-principals) provides an overview of the Application and Service principal objects that are core to the application model.
+- [Manage access to an application](/entra/identity/enterprise-apps/what-is-access-management) is an overview of the capabilities that administrators have to manage user access to apps.

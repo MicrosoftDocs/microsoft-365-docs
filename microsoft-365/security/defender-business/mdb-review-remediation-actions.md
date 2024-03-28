@@ -4,7 +4,7 @@ description: View remediations that were taken on detected threats or suspected 
 search.appverid: MET150
 author: siosulli
 ms.author: siosulli
-manager: dansimp 
+manager: deniseb 
 audience: Admin
 ms.topic: how-to
 ms.service: defender-business

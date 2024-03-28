@@ -4,13 +4,13 @@ f1.keywords:
 - NOCSH
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
 ms.date: 10/26/2022
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - M365-Campaigns
 - m365solution-smb
 - highpri
@@ -42,7 +42,7 @@ Use admin accounts only for Microsoft 365 administration. Admins should have a s
 You'll want to set up at least one other Global admin account to give admin access to another trusted employee. You can also create separate admin accounts for user management (this role is called **User management administrator**). For more information, see [about admin roles](/office365/admin/add-users/about-admin-roles).
 
 > [!IMPORTANT]
-> Although we recommend setting up a set of admin accounts, you'll want to limit the number of global admins for your organization. In addition, we recommend adhering to the concept of least-privilege access, which means you grant access to only the data and operations needed to perform their jobs. [Learn more about the principle of least privilege](/azure/active-directory/develop/secure-least-privileged-access). 
+> Although we recommend setting up a set of admin accounts, you'll want to limit the number of global admins for your organization. In addition, we recommend adhering to the concept of least-privilege access, which means you grant access to only the data and operations needed to perform their jobs. [Learn more about the principle of least privilege](/azure/active-directory/develop/secure-least-privileged-access).
 
 To create more admin accounts:
 
@@ -50,7 +50,7 @@ To create more admin accounts:
 
     ![Choose Users and then Active users in the left nav.](../media/Activeusers.png)
 
- 2. On the **Active users** page, select **Add a user** at the top of the page. 
+ 2. On the **Active users** page, select **Add a user** at the top of the page.
 
  3. In the **Add a user** panel, enter basic information such as name and username information.
 

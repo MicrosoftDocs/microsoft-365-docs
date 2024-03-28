@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
@@ -22,7 +22,7 @@ description: "Set up your information protection capabilities for compliance and
 ---
 # Set up information protection capabilities
 
-Your Microsoft 365 Business Premium subscription includes information protection capabilities for compliance and privacy. These capabilities include sensitivity labels, data loss prevention (DLP), and encryption. You can use your information protection capabilities to help protect your company's data, and keep your and your customers' sensitive information more secure. 
+Your Microsoft 365 Business Premium subscription includes information protection capabilities for compliance and privacy. These capabilities include sensitivity labels, data loss prevention (DLP), and encryption. You can use your information protection capabilities to help protect your company's data, and keep your and your customers' sensitive information more secure.
 
 Use this article to get started with your information protection capabilities.
 

@@ -9,6 +9,7 @@ ms.reviewer: armanv, nicholak
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: high
 ms.collection:
 - Tier1
@@ -26,6 +27,7 @@ ms.custom:
 - AdminSurgePortfolio
 - business_assist
 - AdminTemplateSet
+- admindeeplinkMAC
 description: "Learn what payment options are available to pay for your Microsoft business subscription."
 ms.date: 10/17/2023
 ---
@@ -46,7 +48,7 @@ You can manage payment methods whenever you need to. To learn how to add, change
 ## Before you begin
 
 - [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
-- If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a Billing account owner or contributor, a Billing profile owner or contributor, or an Invoice manager to do the tasks in this article. For information about billing account and billing profile roles, see [Understand your Microsoft business billing account](../manage-billing-accounts.md) and [Understand your Microsoft business billing profile](manage-billing-profiles.md).
+- If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a Billing account owner or contributor, a Billing profile owner or contributor, or an Invoice manager to do the tasks in this article. For information about billing account and billing profile roles, see [Understand your Microsoft business billing account](../manage-billing-accounts.md) and [Manage your Microsoft business billing profiles](manage-billing-profiles.md).
 - If you have a Microsoft Online Subscription Agreement (MOSA), you must be a Global or Billing admin to do the tasks in this article. For more information, see [About admin roles in the Microsoft 365 admin center](../../admin/add-users/about-admin-roles.md).
 
 > [!NOTE]
@@ -54,7 +56,7 @@ You can manage payment methods whenever you need to. To learn how to add, change
 
 ## Paying with a credit card or debit card
 
-If you have an MOSA billing account type, you can pay for your subscription with a credit card or debit card. By default, [recurring billing](../subscriptions/renew-your-subscription.md) is automatically turned on for all paid subscriptions. Each billing period, we automatically charge the payment method on file to pay for your subscription. We continue to charge that payment method until the subscription expires or is canceled. If recurring billing is turned off for a subscription, we continue to charge the payment method on file until the end of the subscription term.
+If you have an MOSA billing account type, you can pay for your subscription with a credit card or debit card. By default, [recurring billing](../subscriptions/renew-your-subscription.md) is automatically turned on for all paid subscriptions. Each billing period, we automatically charge the payment method on file to pay for your subscription. We continue to charge that payment method until the subscription expires or is canceled. If recurring billing is turned off for a subscription, we continue to charge the payment method on file until the end of the subscription term. Microsoft might use information provided by the issuing bank or payment network for your payment method to ensure connected payment method information remains current.
 
 ## Paying by wire transfer
 

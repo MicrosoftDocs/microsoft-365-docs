@@ -1,17 +1,12 @@
 ---
 title: Integration with Microsoft Defender for Cloud
 description: Learn about Microsoft Defender for Endpoint integration with Microsoft Defender for Cloud
-keywords: integration, server, azure, 2012r2, 2016, 2019, server onboarding, device management, configure Microsoft Defender for Endpoint servers, onboard Microsoft Defender for Endpoint servers, onboard Microsoft Defender for Endpoint servers
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.service: defender-endpoint
-ms.pagetype: security
-author: mjcaparas
-ms.author: macapara
+author: siosulli
+ms.author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security

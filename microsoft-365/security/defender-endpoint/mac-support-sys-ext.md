@@ -1,15 +1,11 @@
 ---
 title: Troubleshoot system extension issues for Microsoft Defender for Endpoint on macOS
 description: Troubleshoot system extension issues in Microsoft Defender for Endpoint on macOS.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, performance, big sur, monterey, ventura, mde for mac
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -47,7 +43,7 @@ Starting with macOS BigSur (11), Apple's macOS requires all system extensions to
 
 You'll notice that the Microsoft Defender for Endpoint has an **x** symbol in the shield, as shown in the following screenshot:
 
-:::image type="content" source="images/mde-screen-with-x-symbol.png" alt-text="The Microsoft Defender for Endpoint screen that displays the x symbol on its menu." lightbox="images/mde-screen-with-x-symbol.png":::
+:::image type="content" source="media/mde-screen-with-x-symbol.png" alt-text="The Microsoft Defender for Endpoint screen that displays the x symbol on its menu." lightbox="media/mde-screen-with-x-symbol.png":::
 
 If you click the shield with the **x** symbol, you'll get options as shown in the following screenshot:
 
@@ -67,13 +63,13 @@ mdatp health
 The output on running **mdatp health** is:
 
 ```Output
-healthy				            : false
-health_issues		            : ["no active event provider", "network event provider not running", "full disk access has not been granted"]
+healthy                            : false
+health_issues                    : ["no active event provider", "network event provider not running", "full disk access has not been granted"]
 ...
-real_time_protection_enabled	: unavailable
+real_time_protection_enabled    : unavailable
 real_time_protection_available: unavailable
 ...
-full_disk_access_enabled		: false
+full_disk_access_enabled        : false
 ```
 The output report displayed on running **mdatp health** is shown in the following screenshot:
 
@@ -91,7 +87,7 @@ If you didn't approve the system extension during the deployment/installation of
    systemextensionsctl list
    ```
 
-   :::image type="content" source="images/check-system-extension.png" alt-text="The screen that shows what should be done to check the system extension." lightbox="images/check-system-extension.png":::
+   :::image type="content" source="media/check-system-extension.png" alt-text="The screen that shows what should be done to check the system extension." lightbox="media/check-system-extension.png":::
 
 You'll notice that both Microsoft Defender for Endpoint on macOS extensions are in the **[activated waiting for user]** state.
 
@@ -105,14 +101,14 @@ You'll get the following output:
 
 ```OutputCopy
 network_extension_enabled                 : false
-network_extension_installed		         : true
-endpoint_security_extension_ready		   : false
-endpoint_security_extension_installed 	   : true
+network_extension_installed                 : true
+endpoint_security_extension_ready           : false
+endpoint_security_extension_installed        : true
 ```
 
 This output is shown in the following screenshot:
 
-:::image type="content" source="images/details-system-extensions-command.png" alt-text="The output regarding details system extensions." lightbox="images/details-system-extensions-command.png":::
+:::image type="content" source="media/details-system-extensions-command.png" alt-text="The output regarding details system extensions." lightbox="media/details-system-extensions-command.png":::
 
 The following files might be missing if you're managing it via Intune, JamF, or another MDM solution:
 

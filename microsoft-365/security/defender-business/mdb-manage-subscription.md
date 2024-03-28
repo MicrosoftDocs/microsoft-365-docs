@@ -4,7 +4,7 @@ description: Learn about your options for managing your Defender for Business or
 search.appverid: MET150  
 author: siosulli
 ms.author: siosulli
-manager: dansimp 
+manager: deniseb 
 audience: ITPro
 ms.topic: overview
 ms.date: 01/03/2024

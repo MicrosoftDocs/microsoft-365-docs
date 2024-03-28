@@ -20,6 +20,7 @@ ms.custom:
   - Ent_Office_Other
   - O365ITProTrain
   - has-azure-ad-ps-ref
+  - azure-ad-ref-level-one-done
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: "Learn how to use PowerShell to maintain membership in Microsoft 365 groups."
 ---
@@ -38,6 +39,8 @@ You can use PowerShell for Microsoft 365 as an alternative to the Microsoft 365 
 First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
 
 ### Add or remove user accounts as members of a group
+
+[!INCLUDE [Azure AD PowerShell deprecation note](~/../microsoft-365/reusable-content/msgraph-powershell/includes/aad-powershell-deprecation-note.md)]
 
 **To add a user account by its UPN**, fill in the user account User Principal Name (UPN) (example: belindan@contoso.com) and the security group display name, removing the “<” and “>” characters, and run these commands in the PowerShell window or the PowerShell Integrated Script Environment (ISE).
 

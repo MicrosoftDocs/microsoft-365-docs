@@ -20,7 +20,7 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - MET150
-ms.date: 10/10/2023
+ms.date: 02/12/2024
 ---
 
 # Summarize an incident with Microsoft Security Copilot in Microsoft Defender XDR
@@ -40,6 +40,9 @@ Incident responders can easily gain the right context to investigate and remedia
 
 This guide outlines what to expect and how to access the summarizing capability of Security Copilot within Microsoft Defender XDR, including information on providing feedback.
 
+> [!NOTE]
+> The incident summary capability is also available in the Security Copilot standalone experience through the Microsoft Defender XDR plugin. Know more about [preinstalled plugins in Microsoft Security Copilot](/security-copilot/manage-plugins#preinstalled-plugins).
+
 ## Technical requirements
 
 [Learn how you can get started with Security Copilot](/security-copilot/get-started-security-copilot).
@@ -53,7 +56,7 @@ Incidents containing up to 100 alerts can be summarized into one incident summar
 - A summary of timelines of how the attack unfolded.
 - The assets involved in the attack.
 - Indicators of compromise (IOCs).
-- Names of [threat actors](/security/intelligence/microsoft-threat-actor-naming) involved.
+- Names of [threat actors](/microsoft-365/security/intelligence/microsoft-threat-actor-naming) involved.
 
 To summarize an incident, perform the following steps:
 
@@ -79,9 +82,9 @@ You can validate or report the results of the incident summary provided by Secur
 
 ## See also
 
-- [Security Copilot Early Access Program FAQs](/security-copilot/faq-security-copilot.md)
+- [Security Copilot Early Access Program FAQs](/security-copilot/faq-security-copilot)
 - [Investigate incidents in Microsoft Defender XDR](investigate-incidents.md)
-- [Get started with Security Copilot](/security-copilot/get-started-security-copilot.md)
-- [Learn about other Security Copilot embedded experiences](/security-copilot/experiences-security-copilot.md)
+- [Get started with Security Copilot](/security-copilot/get-started-security-copilot)
+- [Learn about other Security Copilot embedded experiences](/security-copilot/experiences-security-copilot)
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

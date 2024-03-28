@@ -1,15 +1,14 @@
 ---
 title:  Run the client analyzer on Windows
 description: Learn how to run the Microsoft Defender for Endpoint Client Analyzer on Windows.
-keywords: client analyzer, troubleshoot sensor, analyzer, mdeanalyzer, windows
 ms.service: defender-endpoint
 f1.keywords:
 - NOCSH
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 ms.reviewer: younghree
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -73,7 +72,7 @@ All the PowerShell scripts and modules included with the analyzer are Microsoft-
 
 If you see this error, the issuerInfo.txt output contains detailed information about why this happened and the affected file:
 
-:::image type="content" source="images/issuerinfo.png" alt-text="The issuer info" lightbox="images/issuerinfo.png":::
+:::image type="content" source="media/issuerinfo.png" alt-text="The issuer info" lightbox="media/issuerinfo.png":::
 
 Example contents after MDEClientAnalyzer.ps1 is modified:
 
