@@ -1,8 +1,6 @@
 ---
 title: Advanced hunting query best practices in Microsoft Defender XDR
 description: Learn how to construct fast, efficient, and error-free threat hunting queries with advanced hunting
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft Defender XDR, microsoft 365, m365, search, query, telemetry, schema, kusto, avoid timeout, command lines, process id, optimize, best practice, parse, join, summarize
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
 ms.subservice: adv-hunting
