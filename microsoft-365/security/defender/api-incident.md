@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender XDR incidents APIs and the incidents resource type
-description: Learn about the methods and properties of the Incidents resource type in Microsoft Defender XDR
+description: Learn about the methods and properties of the Incidents resource type in Microsoft Defender XDR.
 ms.service: defender-xdr
 f1.keywords: 
   - NOCSH
@@ -39,9 +39,9 @@ An [incident](incidents-overview.md) is a collection of related alerts that help
 
 ## Quotas and resource allocation
 
-You can request up to 50 calls per minute or 1500 calls per hour. Each method also has its own quotas. For more information on method-specific quotas, see the respective article for the method you want to use.
+You can request up to 50 calls per minute or 1,500 calls per hour. Each method also has its own quotas. For more information on method-specific quotas, see the respective article for the method you want to use.
 
-A `429` HTTP response code indicates that you've reached a quota, either by number of requests sent, or by allotted running time. The response body will include the time until the quota you reached will be reset.
+A `429` HTTP response code indicates that you've reached a quota, either by number of requests sent, or by allotted running time. The response body includes the time until the quota you reached is reset.
 
 ## Permissions
 
