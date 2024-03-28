@@ -23,7 +23,7 @@ search.appverid:
 ms.date: 03/28/2024
 ---
 
-# Microsoft Copilot in Microsoft Defender XDR
+# Microsoft Copilot in Microsoft Defender
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
@@ -44,7 +44,7 @@ To ensure that you have access to Copilot in Defender, see the [Copilot for Secu
 
 ## Investigate and respond to incidents like an expert
 
-Enable security teams to tackle attack investigations in a timely manner with ease and precision. Bringing AI to Microsoft Defender allows teams to understand attacks immediately, quickly analyze suspicious files and scripts, and promptly assess and apply appropriate mitigation to stop and contain attacks.
+Enable security teams to tackle attack investigations in a timely manner with ease and precision. Copilot helps teams to understand attacks immediately, quickly analyze suspicious files and scripts, and promptly assess and apply appropriate mitigation to stop and contain attacks.
 
 ### Summarize incidents quickly
 
@@ -54,25 +54,25 @@ Investigating incidents with multiple alerts can be a daunting task. To immediat
 
 ### Take action on incidents through guided responses
 
-Approaching solutions and mitigation for any incident can oftentimes be complex for several reasons, including understanding where to begin, what solutions are appropriate, and following new investigation flows for security teams. Copilot minimizes these complications through [guided responses](security-copilot-m365d-guided-response.md). These responses are recommended actions specific to each incident.
+Resolving incidents require analysts to have an understanding of an attack to know what solutions are appropriate. Copilot recommends solutions through [guided responses](security-copilot-m365d-guided-response.md) that are specific to each incident.
 
 :::image type="content" source="../../media/copilot-in-defender/guided-response/copilot-defender-guided-response-small.png" alt-text="Screenshot highlighting the Copilot pane with the guided responses in the Microsoft Defender incident page." lightbox="../../media/copilot-in-defender/guided-response/copilot-defender-guided-response.png":::
 
 ### Run script analysis with ease
 
-Most attackers rely on sophisticated malware when launching attacks to avoid detection and analysis. These malware are usually obfuscated, and might be in the form of scripts or PowerShell command lines. Copilot can quickly analyze these malware, reducing the time for [script analysis](security-copilot-m365d-script-analysis.md) and helping security teams decide on the next action steps using information from the Copilot results.
+Most attackers rely on sophisticated malware when launching attacks to avoid detection and analysis. These malware are usually obfuscated, and might be in the form of scripts or command lines in PowerShell. Copilot can quickly [analyze scripts](security-copilot-m365d-script-analysis.md), reducing the time for investigation.
 
 :::image type="content" source="../../media/copilot-in-defender/script-analyzer/copilot-defender-script-analysis-incident-small.png" alt-text="Screenshot highlighting the script analysis button in the attack story view in the incident page." lightbox="../../media/copilot-in-defender/script-analyzer/copilot-defender-script-analysis-incident.png":::
 
 ### Generate device summaries
 
-Investigating devices involved in incidents can be a tasking job. Copilot in Defender can help you quickly [summarize a device's information](copilot-in-defender-device-summary.md), including the device's security posture, any unusual behaviors, a list of vulnerable software, and relevant Microsoft Intune information.
+Investigating devices involved in incidents can be a tasking job. To quickly assess a device, Copilot can [summarize a device's information](copilot-in-defender-device-summary.md), including the device's security posture, any unusual behaviors, a list of vulnerable software, and relevant Microsoft Intune information.
 
 :::image type="content" source="../../media/copilot-in-defender/device-summary/copilot-defender-device-summary-device-page-small.png" alt-text="Screenshot of the device summary results in Copilot in Defender." lightbox="../../media/copilot-in-defender/device-summary/copilot-defender-device-summary-device-page.png":::
 
 ### Analyze files promptly
 
-The [file analysis](copilot-in-defender-file-analysis.md) capability in Copilot in Defender helps security teams quickly understand the nature of a file, including detection information, related file certificate, list of API calls the file makes, and strings found in the file. Security teams can quickly assess a file and decide on the next steps.
+Copilot helps security teams quickly assess and understand suspicious files with [file analysis](copilot-in-defender-file-analysis.md). Copilot provides a file's summary, including detection information, related file certificates, a list of API calls, and strings found in the file.
 
 :::image type="content" source="../../media/copilot-in-defender/file-analysis/copilot-defender-file-analysis-hide-small.png" alt-text="Screenshot of the file analysis results in Copilot in Defender with the Hide details option highlighted." lightbox="../../media/copilot-in-defender/file-analysis/copilot-defender-file-analysis-hide.png":::
 
@@ -85,7 +85,7 @@ Security operations teams usually write reports to record important information,
 
 ## Hunt like a pro
 
-Copilot in Defender helps security teams proactively hunt for threats in their network by quickly building appropriate KQL queries to hunt for threats.
+Copilot in Defender helps security teams proactively hunt for threats in their network by quickly building appropriate KQL queries.
 
 ### Generate KQL queries from natural-language input
 
@@ -93,19 +93,19 @@ Security teams who use advanced hunting to proactively hunt for threats in their
 
 :::image type="content" source="../../media/advanced-hunting-security-copilot-pane.png" alt-text="Screenshot of the Copilot pane in advanced hunting." lightbox="../../media/advanced-hunting-security-copilot-pane-big.png":::
 
-## Skillfully respond to threats with relevant threat intelligence
+## Protect your organization with relevant threat intelligence
 
-Empower your security organization with the latest threat intelligence to make informed decisions. Copilot consolidates and summarizes threat intelligence to help security teams prioritize and respond to threats effectively.
+Empower your security organization to make informed decisions with the latest threat intelligence. Copilot consolidates and summarizes threat intelligence to help security teams prioritize and respond to threats effectively.
 
 ### Monitor threat intelligence
 
-Ask Copilot to summarize the relevant threats impacting your environment, to prioritize resolving threats based on your exposure levels, or to find threat actors that might be targeting your industry. Read more about the threat intelligence capabilities in [Using Copilot for Security in threat intelligence](/defender/threat-intelligence/using-copilot-threat-intelligence-defender-xdr).
+Ask Copilot to summarize the relevant threats impacting your environment, to prioritize resolving threats based on your exposure levels, or to find threat actors that might be targeting your industry. Read more about [Copilot for Security in threat intelligence](/defender/threat-intelligence/security-copilot-and-defender-threat-intelligence).
 
 :::image type="content" source="../../media/copilot-in-defender/TI/copilot-defender-threat-intel-small.png" alt-text="Screenshot of the Copilot pane in threat intelligence in Defender XDR." lightbox="../../media/copilot-in-defender/TI/copilot-defender-threat-intel-full.png":::
 
 ## Data security and feedback in Copilot
 
-Copilot continuously evolves using [data](/security-copilot/privacy-data-security#customer-data-and-system-generated-logs) that is [stored](/security-copilot/privacy-data-security#customer-data-storage-location), [processed](/security-copilot/privacy-data-security#location-for-prompt-evaluation), and [shared](/security-copilot/privacy-data-security#customer-data-sharing-preferences) depending on the settings that you assigned. Microsoft ensures that your data is always protected and secure when using Copilot. To learn more about data security and privacy in Copilot, see [Privacy and data security in Copilot](/security-copilot/privacy-data-security).
+Copilot continuously evolves using [data](/security-copilot/privacy-data-security#customer-data-and-system-generated-logs) that is [stored](/security-copilot/privacy-data-security#customer-data-storage-location), [processed](/security-copilot/privacy-data-security#location-for-prompt-evaluation), and [shared](/security-copilot/privacy-data-security#customer-data-sharing-preferences) depending on the settings defined by your administrator. Microsoft ensures that your data is always protected and secure when using Copilot. To learn more about data security and privacy in Copilot, see [Privacy and data security in Copilot](/security-copilot/privacy-data-security).
 
 Because of its continuing evolution, Copilot might miss some things. Reviewing and [providing feedback](/security-copilot/rai-faqs-security-copilot#what-are-the-limitations-of-security-copilot-how-can-users-minimize-the-impact-of-security-copilots-limitations-when-using-the-system) about the results helps improve Copilot's future responses.
 
