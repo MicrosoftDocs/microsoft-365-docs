@@ -92,7 +92,7 @@ Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" bord
 
 - **Date (UTC)**: **Start date** and **End date**.
 - **Activity**: **Restricted** or **Suspicious**
-- **Tag**: Select **All** or the specified user tag (including priority accounts). For more information, see [User tags](user-tags-about.md).
+- **Tag**: Select **All** or the specified user tag (including Priority account). For more information, see [User tags](user-tags-about.md).
 
 When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
@@ -993,7 +993,7 @@ For each chart, the details table below the chart shows the following informatio
 Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter** to modify the report by selecting one or more of the following values in the flyout that opens:
 
 - **Date (UTC)** **Start date** and **End date**
-- **Tag**: Select **All** or the specified user tag (including priority accounts). For more information, see [User tags](user-tags-about.md).
+- **Tag**: Select **All** or the specified user tag (including Priority account). For more information, see [User tags](user-tags-about.md).
 
 When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 

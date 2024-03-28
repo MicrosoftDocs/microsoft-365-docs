@@ -68,7 +68,7 @@ The Email summary panel with the :::image type="icon" source="../../media/m365-c
 
 The details pane on the left side of the page contains collapsible sections with details about the message. These sections remain constant as long as you're on the page. The available sections are:
 
-- **Tags** section. Shows any user tags (including Priority accounts) that are assigned to senders or recipients. For more information about user tags, see [User tags in Microsoft Defender for Office 365](user-tags-about.md).
+- **Tags** section. Shows any user tags (including Priority account) that are assigned to senders or recipients. For more information about user tags, see [User tags in Microsoft Defender for Office 365](user-tags-about.md).
 - **Detection details** section:
   - **Original Threats**
   - **Original delivery location**
