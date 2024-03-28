@@ -1,6 +1,6 @@
 ---
 title: Create and manage custom detection rules in Microsoft Defender XDR
-description: Learn how to create and manage custom detections rules based on advanced hunting queries
+description: Learn how to create and manage custom detections rules based on advanced hunting queries.
 search.appverid: met150
 ms.service: defender-xdr
 ms.subservice: adv-hunting
@@ -16,7 +16,7 @@ ms.collection:
   - m365initiative-m365-defender
   - tier2
 ms.topic: conceptual
-ms.date: 02/16/2021
+ms.date: 03/28/2024
 ---
 
 # Create and manage custom detections rules
@@ -111,7 +111,7 @@ DeviceEvents
 With the query in the query editor, select **Create detection rule** and specify the following alert details:
 
 - **Detection name**—name of the detection rule; should be unique
-- **Frequency**—interval for running the query and taking action. [See additional guidance below](#rule-frequency)
+- **Frequency**—interval for running the query and taking action. [See more guidance in the rule frequency section](#rule-frequency)
 - **Alert title**—title displayed with alerts triggered by the rule; should be unique
 - **Severity**—potential risk of the component or activity identified by the rule
 - **Category**—threat component or activity identified by the rule
