@@ -37,11 +37,11 @@ For an overview of alert classifications for Microsoft Defender for Office 365 a
 
 The results of using this playbook are:
 
-- You identify the alerts associated with auto-forwarded emails as malicious (TP) or benign (FP) activities.
+- You identify the alerts associated with autoforwarded emails as malicious (TP) or benign (FP) activities.
 
-  If malicious, you have [stopped email auto-forwarding](../office-365-security/outbound-spam-policies-external-email-forwarding.md) for the affected mailboxes.
+  If malicious, you have [stop email autoforwarding](../office-365-security/outbound-spam-policies-external-email-forwarding.md) for the affected mailboxes.
 
-- You take the necessary action if emails have been forwarded to a malicious email address.
+- You take the necessary action if emails were forwarded to a malicious email address.
 
 ## Email forwarding rules
 
@@ -51,7 +51,7 @@ Email forwarding rules allow users to create a rule to forward email messages se
 
 Attackers might set up email rules to hide incoming emails in the compromised user mailbox to obscure their malicious activities from the user. They might also set rules in the compromised user mailbox to delete emails, move the emails into another less noticeable folder such as an RSS folder, or forward emails to an external account.
 
-Some rules might move all the emails to another folder and mark them as "read", while some rules might move only mails which contain specific keywords in the email message or subject. For example, the inbox rule might be set to look for keywords like "invoice", "phish", "do not reply", "suspicious email", or "spam" among others, and move them to an external email account. Attackers might also use the compromised user mailbox to distribute spam, phishing emails, or malware.
+Some rules might move all the emails to another folder and mark them as "read", while some rules might move only mails that contain specific keywords in the email message or subject. For example, the inbox rule might be set to look for keywords like "invoice," "phish," "do not reply," "suspicious email," or "spam," among others, and move them to an external email account. Attackers might also use the compromised user mailbox to distribute spam, phishing emails, or malware.
 
 Microsoft Defender for Office 365 can detect and alert on suspicious email forwarding rules, allowing you to find and delete hidden rules at the source.
 
