@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: 
 - it-pro
 - intro-overview
-description: Learn about security for Microsoft 365 for enterprises.
+description: Learn about security for Microsoft 365 for enterprise.
 ---
 
 # Security for Microsoft 365 for enterprise
 
-Microsoft 365 for enterprises follows all the security best practices and procedures such as service-level security through defense-in-depth, customer controls within the services, security hardening, and operational best practices. For full details, see the [Microsoft Trust Center](https://microsoft.com/trustcenter).
+Microsoft 365 for enterprise follows all the security best practices and procedures such as service-level security through defense-in-depth, customer controls within the services, security hardening, and operational best practices. For full details, see the [Microsoft Trust Center](https://microsoft.com/trustcenter).
 
 ## Trustworthy by design
 
