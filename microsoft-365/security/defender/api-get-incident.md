@@ -45,18 +45,18 @@ Retrieves a specific incident by its ID
 
 One of the following permissions is required to call this API.
 
-Permission type|Permission|Permission display name
----|---|---
-Application|Incident.Read.All|'Read all Incidents'
-Application|Incident.ReadWrite.All|'Read and write all Incidents'
-Delegated (work or school account)|Incident.Read|'Read Incidents'
-Delegated (work or school account)|Incident.ReadWrite|'Read and write Incidents'
+| Permission type|Permission|Permission display name |
+|---|---|---| 
+|Application|Incident.Read.All|`Read all Incidents`|
+|Application|Incident.ReadWrite.All|`Read and write all Incidents`|
+|Delegated (work or school account)|Incident.Read|`Read Incidents`|
+|Delegated (work or school account)|Incident.ReadWrite|`Read and write Incidents`|
 
 > [!NOTE]
 >
 > When obtaining a token using user credentials:
 >
-> - The user needs to have at least the following role permission: 'View Data'
+> - The user needs to have at least the following role permission: `View Data`
 > - The response will only include incidents that the user is exposed to
 
 ## HTTP request
@@ -67,9 +67,9 @@ GET .../api/incidents/{id}
 
 ## Request headers
 
-Name|Type|Description
----|---|---
-Authorization|String|Bearer {token}. **Required**.
+|Name|Type|Description|
+|---|---|---|
+|Authorization|String|Bearer {token}. **Required**.|
 
 ## Request body
 
@@ -92,4 +92,5 @@ GET https://api.security.microsoft.com/api/incidents/{id}
 ## Related articles
 
 [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview)
+
 [!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]
