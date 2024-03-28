@@ -1,6 +1,6 @@
 ---
 title: Step 7. Promote your Microsoft Defender XDR evaluation environment to Production
-description: Use this article to promote your trial subscriptions of MDI, MDO, MDE, and Defender for Cloud Apps to your live environment in Microsoft Defender XDR or M365D.
+description: Use this article to promote your trial subscriptions of MDI, MDO, MDE, and Defender for Cloud Apps to your live environment in Microsoft Defender XDR.
 search.appverid: met150
 ms.service: defender-xdr
 ms.author: bcarter
@@ -28,15 +28,15 @@ ms.date: 05/13/2021
 
 To promote your Microsoft Defender XDR evaluation environment to production, first purchase the necessary license. Follow the steps in [Create the eval environment](eval-create-eval-environment.md) and purchase the Office 365 E5 license (instead of selecting Start free trial).
 
-Next, complete any other configuration and expand your pilot groups until these have reached full production.
+Next, complete any other configuration and expand your pilot groups until these reach full production.
 
 ## Microsoft Defender for Identity
 
-Defender for Identity doesn't require any other configuration. Just make sure you've purchased the necessary licenses and installed the sensor on all of your Active Directory domain controllers and Active Directory Federation Services (AD FS) servers.
+Defender for Identity doesn't require any other configuration. Just make sure to purchase the necessary licenses and install the sensor on all of your Active Directory domain controllers and Active Directory Federation Services (AD FS) servers.
 
 ## Microsoft Defender for Office 365
 
-After successfully evaluating or piloting MDO, it can be promoted to your entire production environment.
+After successfully evaluating or piloting Defender for Office 365, it can be promoted to your entire production environment.
 
 1. Purchase and provision the necessary licenses and assign them to your production users.
 2. Re-run recommended baseline policy configurations (either Standard or Strict) against your production email domain or specific groups of users.
