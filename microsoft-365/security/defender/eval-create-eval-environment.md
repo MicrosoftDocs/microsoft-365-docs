@@ -1,6 +1,6 @@
 ---
 title: Create the Microsoft Defender XDR Evaluation Environment for greater cyber security and XDR
-description: Learn what's included in the Microsoft Defender XDR you'll evaluate, and se up your Microsoft Defender XDR trial lab or pilot environment by activating trial licenses. Start your XDR cyber security journey here and learn how to take that test to production.
+description: Learn what's included in the Microsoft Defender XDR you evaluate, and se up your Microsoft Defender XDR trial lab or pilot environment by activating trial licenses. Start your XDR cyber security journey here and learn how to take that test to production.
 search.appverid: met150
 ms.service: defender-xdr
 f1.keywords: 
@@ -36,15 +36,15 @@ You can learn about and build out this Microsoft Defender XDR solution in steps 
 
 The steps in this series run end-to-end, from learning the concepts behind the Microsoft Defender XDR to building it, and into taking the evaluation environment live to production.
 
-There are two common ways to do this next step in evaluation. This series assumes you already have a production Microsoft 365 tenant and will activate E5 trial licenses to evaluate Microsoft Defender XDR in *the current environment*. An in-place evaluation will let you keep any security methods with the purchase of licenses after the evaluation period.
+There are two common ways to do this next step in evaluation. This series assumes you already have a production Microsoft 365 tenant and are activating Microsoft 365 E5 trial licenses to evaluate Microsoft Defender XDR in *the current environment*. An in-place evaluation will let you keep any security methods with the purchase of licenses after the evaluation period.
 
 The second is to  [Set up your Microsoft Defender XDR trial lab environment](setup-m365deval.md) for evaluation. It might not have many real signals from the business while in testing.
 
 <a name='you-will-need-to-activate-e5-trial-licenses-to-evaluate-microsoft-365-defender'></a>
 
-## You will need to activate E5 trial licenses to evaluate Microsoft Defender XDR
+## You need to activate Microsoft 365 E5 trial licenses to evaluate Microsoft Defender XDR
 
-1. Log on to your existing Microsoft 365 tenant administration portal.
+1. Sign in your existing Microsoft 365 tenant administration portal.
 2. Select **Purchase Services** from the navigation menu.
 3. Scroll down to the Office 365 section and select **Details** button under Office 365 E5 license.
 
@@ -54,7 +54,7 @@ The second is to  [Set up your Microsoft Defender XDR trial lab environment](set
 
    :::image type="content" source="../../media/mdo-eval/3-m365-purchase-button.png" alt-text="The Start free trial button in the Microsoft Defender portal" lightbox="../../media/mdo-eval/3-m365-purchase-button.png":::
 
-5. Confirm your request and click **Try now** button.
+5. Confirm your request and select **Try now** button.
 
    :::image type="content" source="../../media/mdo-eval/4_mdo-trial-order.png" alt-text="The Try Now button in the Microsoft Defender portal" lightbox="../../media/mdo-eval/4_mdo-trial-order.png":::
 
