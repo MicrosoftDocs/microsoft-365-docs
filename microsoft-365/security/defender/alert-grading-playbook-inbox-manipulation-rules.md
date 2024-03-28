@@ -27,17 +27,17 @@ ms.date: 04/05/2023
 **Applies to:**
 - Microsoft Defender XDR
 
-Threat actors can use compromised user accounts for many malicious purposes including reading emails in a user's inbox, creating inbox rules to forward emails to external accounts, deleting traces, and sending phishing mails. Malicious inbox rules are common during business email compromise (BEC) and phishing campaigns and it is important to monitor for them consistently.
+Threat actors can use compromised user accounts for many malicious purposes including reading emails in a user's inbox, creating inbox rules to forward emails to external accounts, deleting traces, and sending phishing mails. Malicious inbox rules are common during business email compromise (BEC) and phishing campaigns and it's important to monitor for them consistently.
 
 This playbook helps you investigate any incident related to suspicious inbox manipulation rules configured by attackers and take recommended actions to remediate the attack and protect your network. This playbook is for security teams, including security operations center (SOC) analysts and IT administrators who review, investigate, and grade the alerts. You can quickly grade alerts as either a true positive (TP) or a false positive (TP) and take recommended actions for the TP alerts to remediate the attack.
 
 The results of using this playbook are:
 
-- You have identified the alerts associated with inbox manipulation rules as malicious (TP) or benign (FP) activities.
+- You identify the alerts associated with inbox manipulation rules as malicious (TP) or benign (FP) activities.
 
-  If malicious, you have removed malicious inbox manipulation rules.
+  If malicious, you remove malicious inbox manipulation rules.
 
-- You have taken the necessary action if emails have been forwarded to a malicious email address.
+- You take the necessary action if emails were forwarded to a malicious email address.
 
 ## Inbox manipulation rules
 
