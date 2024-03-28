@@ -56,6 +56,9 @@ For anti-spam and anti-phishing protection, admins can also modify the default p
 
 The protection policies for [supported features](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features) have one or more _quarantine policies_ assigned to them (each action within the protection policy has an associated quarantine policy assignment).
 
+> [!TIP]
+> All actions taken by admins or users on quarantined messages are audited. For more information about audited quarantine events, see [Quarantine schema in the Office 365 Management API](/office/office-365-management-api/office-365-management-activity-api-schema#quarantine-schema).
+
 ## Quarantine policies
 
 _Quarantine policies_ define what users are able to do or not do to quarantined messages, and whether users receive quarantine notifications for those messages. For more information, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy).

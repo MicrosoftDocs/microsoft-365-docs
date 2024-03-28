@@ -14,6 +14,7 @@ audience: ITPro
 ms.collection:
   - m365-security
   - tier2
+  - usx-security
 ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
