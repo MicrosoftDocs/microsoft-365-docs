@@ -53,13 +53,13 @@ Error codes can be returned by an operation on any of the Microsoft Defender XDR
 | MissingRequiredParameter | BadRequest (400) | Parameter \<the missing parameter\> is missing. |
 | OsPlatformNotSupported | BadRequest (400) | OS Platform \<the client OS Platform\> isn't supported for this action. |
 | ClientVersionNotSupported | BadRequest (400) | \<The requested action\> is supported on client version \<supported client version\> and later. |
-| Unauthorized | Unauthorized (401) | Unauthorized <br /><br />*Note: Usually caused by an invalid or expired authorization header.* |
-| Forbidden | Forbidden (403) | Forbidden <br /><br />*Note: Valid token but insufficient permission for the action*. |
+| Unauthorized | Unauthorized (401) | Unauthorized <br /><br />*Note that this error is usually caused by an invalid or expired authorization header.* |
+| Forbidden | Forbidden (403) | Forbidden <br /><br />*Note that this error can occur with a valid token but insufficient permission for the action*. |
 | DisabledFeature | Forbidden (403) | Tenant feature is not enabled. |
 | DisallowedOperation | Forbidden (403) | \<the disallowed operation and the reason\>. |
 | NotFound | Not Found (404) | General Not Found error message. |
 | ResourceNotFound | Not Found (404) | Resource \<the requested resource\> was not found. |
-| InternalServerError | Internal Server Error (500) | *Note: No error message,  retry the operation or [contact Microsoft](../../admin/get-help-support.md) if it does not get resolved* |
+| InternalServerError | Internal Server Error (500) | *If there's no error message, retry the operation. [Contact Microsoft](../../admin/get-help-support.md) if it does not get resolved* |
 
 ## Examples
 
