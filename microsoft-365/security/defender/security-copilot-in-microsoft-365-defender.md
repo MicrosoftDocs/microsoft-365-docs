@@ -81,6 +81,7 @@ Copilot helps security teams quickly assess and understand suspicious files with
 Security operations teams usually write reports to record important information, including what response actions were taken and the corresponding results, the team members involved, and other information to aid future security decisions and learning. Oftentimes, documenting incidents can be time-consuming. For incident reports to be effective, it must contain an incident's summary along with the actions taken, including what actions were taken by whom and when. Copilot [generates an incident report](security-copilot-m365d-create-incident-report.md) by quickly consolidating these pieces of information.
 
 :::image type="content" source="../../media/copilot-in-defender/incident-report/copilot-defender-incident-report-results1-small.png" alt-text="Screenshot of the incident report card in the incident page." lightbox="../../media/copilot-in-defender/incident-report/copilot-defender-incident-report-results1.png":::
+
 :::image type="content" source="../../media/copilot-in-defender/incident-report/copilot-defender-incident-report-results2-small.png" alt-text="Screenshot of the incident report card in the incident page showing the lower bottom of the card." lightbox="../../media/copilot-in-defender/incident-report/copilot-defender-incident-report-results2.png":::
 
 ## Hunt like a pro
