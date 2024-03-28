@@ -1,6 +1,6 @@
 ---
 title: What is Microsoft Defender XDR?
-description: Microsoft Defender XDR is a coordinated threat protection solution designed to protect devices, identity, data and applications
+description: Microsoft Defender XDR is a coordinated threat protection solution designed to protect devices, identity, data, and applications.
 search.appverid: met150
 ms.service: defender-xdr
 f1.keywords:
@@ -14,7 +14,7 @@ ms.custom:
   - intro-overview
 ms.topic: conceptual
 adobe-target: true
-ms.date: 03/08/2024
+ms.date: 03/28/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 manager: deniseb
@@ -49,7 +49,7 @@ Microsoft Defender XDR services protect:
 - **Endpoints with Defender for Endpoint** - Defender for Endpoint is a unified endpoint platform for preventative protection, post-breach detection, automated investigation, and response.
 - **Assets with Defender Vulnerability Management** - Microsoft Defender Vulnerability Management delivers continuous asset visibility, intelligent risk-based assessments, and built-in remediation tools to help your security and IT teams prioritize and address critical vulnerabilities and misconfigurations across your organization.
 - **Email and collaboration with Defender for Office 365** - Defender for Office 365 safeguards your organization against malicious threats posed by email messages, links (URLs) and collaboration tools.
-- **Identities with  Defender for Identity and Microsoft Entra ID Protection** - Microsoft Defender for Identity is a cloud-based security solution that leverages your on-premises Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization. Microsoft Entra ID Protection uses the learnings Microsoft has acquired from their position in organizations with Microsoft Entra ID, the consumer space with Microsoft Accounts, and in gaming with Xbox to protect your users.
+- **Identities with  Defender for Identity and Microsoft Entra ID Protection** - Microsoft Defender for Identity is a cloud-based security solution that uses your on-premises Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization. Microsoft Entra ID Protection uses the learnings Microsoft acquired from their position in organizations with Microsoft Entra ID, the consumer space with Microsoft Accounts, and in gaming with Xbox to protect your users.
 - **Applications with Microsoft Defender for Cloud Apps** - Microsoft Defender for Cloud Apps is a comprehensive cross-SaaS solution bringing deep visibility, strong data controls, and enhanced threat protection to your cloud apps.
 
 Microsoft Defender XDR's unique cross-product layer augments the individual service components to:
