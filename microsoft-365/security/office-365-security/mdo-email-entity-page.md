@@ -419,7 +419,6 @@ The _Email summary panel_ is the email details flyout that's available in many f
 Where to find the Email summary panel is described in the [Where to find the Email entity page](#where-to-find-the-email-entity-page) section earlier in this article. The rest of this section describes the information that's available on the Email summary panel across all features.
 
 > [!TIP]
->
 > The Email summary panel is available from the **Action center** page at <https://security.microsoft.com/action-center/> on the **Pending** or **History** tabs. Select an action with the **Entity type** value **Email** by clicking anywhere in the row other than the check box or the **Investigation ID** value. The details flyout that opens is the Email summary panel, but :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity** isn't available at the top of the flyout.
 
 The following message information is available at the top of the Email summary panel:
