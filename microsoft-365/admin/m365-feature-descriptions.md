@@ -1,7 +1,7 @@
 ---
 title: "Microsoft 365 feature descriptions"
 ms.author: office365servicedesc
-author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 ms.date: 06/18/2022
 audience: ITPro
@@ -104,7 +104,7 @@ For other issues, visit the [Microsoft support center](https://support.microsoft
 
 **Group management:** Security groups are used in SharePoint Online to control access to sites. Security groups can be created in the Microsoft 365 admin center. For more information about security groups, see [Create, edit, or delete a security group](/office365/admin/email/create-edit-or-delete-a-security-group).
 
-**Microsoft Entra services:** Microsoft Entra ID brings comprehensive identity and access management capabilities to Office 365. It combines directory services, advanced identity governance, application access management and a rich standards-based platform for developers. To learn more about AD features in Office 365, see [Sign in page branding and cloud user self-service password reset](https://go.microsoft.com/fwlink/?linkid=2144147). Learn more about the [Free, Basic, and Premium editions of Microsoft Entra ID](/previous-versions/azure/dn532272(v=azure.100)).
+**Microsoft Entra services:** Microsoft Entra ID brings comprehensive identity and access management capabilities to Office 365. It combines directory services, advanced identity governance, application access management and a rich standards-based platform for developers. Learn more about the [Free, Basic, and Premium editions of Microsoft Entra ID](/previous-versions/azure/dn532272(v=azure.100)).
 
 # [**Support, help, and training**](#tab/Support)
 
