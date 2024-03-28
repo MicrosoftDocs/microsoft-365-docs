@@ -833,7 +833,7 @@ In organizations with Microsoft Defender for Office 365 (add-on licenses or incl
 
 ## Admin options for user reported messages
 
-Admins can see what users are reporting on the **User reported** tab on the **Submissions** page if the following statements are true:
+For email messages, admins can see what users are reporting on the **User reported** tab on the **Submissions** page if the following statements are true:
 
 - The [user reported settings](submissions-user-reported-messages-custom-mailbox.md) are turned on.
 - **Email messages**: You're using supported methods for users to report messages:
@@ -846,6 +846,10 @@ Admins can see what users are reporting on the **User reported** tab on the **Su
 
 - User reported messages that are sent to Microsoft only or to Microsoft and the [reporting mailbox](submissions-user-reported-messages-custom-mailbox.md) appear on the **User reported** tab. Although these messages have already been reported to Microsoft, admins can resubmit the reported messages.
 - User reported messages that are sent only to the reporting mailbox appear on the **User reported** tab with the **Result** value **Not Submitted to Microsoft**. Admins should report these messages to Microsoft for analysis.
+
+In organizations with Microsoft Defender for Office 365 Plan 2 (add-on licenses or included in subscriptions like Microsoft 365 E5), admins can also see [user reported messages in Microsoft Teams in Defender for Office 365 Plan 2](submissions-teams.md) (currently in Preview).
+
+In organizations with Defender for Office 365 Plan 2 (add-For [user reported messages in Microsoft Teams in Defender for Office 365 Plan 2](submissions-teams.md) (currently in Preview)
 
 In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Actions & submissions** \> **Submissions**. Or, to go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
 
@@ -913,8 +917,10 @@ To filter the entries, select :::image type="icon" source="../../media/m365-cc-s
 - **Reported from**: The values **Microsoft** and **Third party**.
 - **Phish simulation**: The values **Yes** and **No**.
 - **Converted to admin submission**: The values **Yes** and **No**.
-- **Message type**: The values **Email** and **Teams**.
-- **Tags**: **All** or select [user tags](user-tags-about.md) from the dropdown list.
+- **Message type**: The available values are:
+  - **Email**
+  - **Teams message** (Defender for Office 365 Plan 2 only; currently in Preview).
+- **Tags**: **All** or select one or more user tags (including Priority account) that are assigned to users. For more information about user tags, see [User tags in Microsoft Defender for Office 365](user-tags-about.md).
 
 When you're finished on the **Filter** flyout, select **Apply**. To clear the filters, select :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
