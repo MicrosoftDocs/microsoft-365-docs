@@ -40,6 +40,7 @@ Pay-as-you-go currently supports the following Syntex services:
 - Prebuilt document processing
 - Structured and freeform document processing
 - Unstructured document processing
+- Autofill columns
 - Content assembly
 - Image tagging
 - Taxonomy tagging
