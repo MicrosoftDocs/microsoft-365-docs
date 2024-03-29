@@ -49,11 +49,24 @@ You can dive deeper into your content to truly understand it, and you can turn t
 
 ## Syntex services
 
+### Autofill columns
+
+:::row:::
+   :::column span="":::
+      ![Image of generic scenario icon.](../media/content-understanding/scenarios-image.png) 
+   :::column-end:::
+   :::column span="3":::
+      Autofill columns automatically extract, summarize, or generate content from files uploaded to a SharePoint document library. Using large language models (LLMs), designated columns can save metadata automatically, streamlining the process of managing files and their associated information.
+   :::column-end:::
+:::row-end:::
+
+[Learn more about autofill columns in Microsoft Syntex.](autofill-overview.md)
+
 ### Content assembly
 
 :::row:::
    :::column span="3":::
-      With Syntex, you can use content assembly to automatically generate standard repetitive business documents, such as contracts, statements of work, service agreements, letters of consent, and correspondence. You can do all these tasks quicker, more consistently, and with fewer errors in Syntex.
+      Use content assembly to automatically generate standard repetitive business documents, such as contracts, statements of work, service agreements, letters of consent, and correspondence. You can do all these tasks quicker, more consistently, and with fewer errors in Syntex.
    :::column-end:::
    :::column span="":::
       ![Image of generic document icon.](../media/content-understanding/document-assembly-image.png)
