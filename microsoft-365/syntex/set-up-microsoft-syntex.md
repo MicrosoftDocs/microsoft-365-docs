@@ -57,10 +57,11 @@ The following table provides links to the specific setup instructions for each s
 |Prebuilt document processing     | [Set up prebuilt document processing](prebuilt-setup.md) |
 |Structured and freeform document processing | [Set up structured and freeform document processing](structured-freeform-setup.md) |
 |Unstructured document processing | [Set up unstructured document processing](unstructured-setup.md) |
+|Autofill columns                 | [Set up autofill columns](autofill-setup.md)  |
 |Content assembly                 | [Set up content assembly](content-assembly-setup.md)  |
 |Image tagging                    | [Set up image tagging](image-tagging-setup.md)  |
 |Taxonomy tagging                 | [Set up taxonomy tagging](taxonomy-tagging-setup.md)  |
-|Translation                    | [Set up document translation](translation-setup.md)  |
+|Translation                      | [Set up document translation](translation-setup.md)  |
 |Syntex eSignature                | [Set up Syntex eSignature](esignature-setup.md)  |
 |Optical character recognition    | [Set up optical character recognition](ocr.md)  |
 |Microsoft 365 Archive (Preview)  | [Set up Microsoft 365 Archive](archive/archive-setup.md)  |
