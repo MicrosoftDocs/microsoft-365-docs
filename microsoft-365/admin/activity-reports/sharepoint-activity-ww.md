@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 10/20/2020
+ms.date: 03/29/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -33,14 +33,14 @@ For example, you can understand the activity of every user licensed to use Share
   
 ## How do I get to the SharePoint activity report?
 
-1. In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page. 
-2. From the dashboard homepage, click on the **View more** button on the SharePoint card.
+1. In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page.
+2. From the dashboard homepage, select **SharePoint** in the left navigation.
   
 ## Interpret the SharePoint activity report
 
 You can view the activities in the SharePoint report by choosing the **Activity** tab.<br/>![Microsoft 365 reports - Microsoft SharePoint activity report.](../../media/5a0a96f-0e4f-4fb9-8baa-3262275b3d1f.png)
 
-Select **Choose columns** to add or remove columns from the report. 
+Select **Choose columns** to add or remove columns from the report.
 
 ![SharePoint activity report - choose columns.](../../media/3c396cd1-9701-4712-8eaa-eb7bba702aa8.png)
 
