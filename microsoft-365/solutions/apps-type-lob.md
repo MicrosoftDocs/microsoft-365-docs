@@ -38,7 +38,7 @@ LOB apps can be added to Intune by first selecting either **Line-of-business app
 
 :::image type="content" source="../media/purchase-add-managed-apps/purchase-add-managed-apps-09.png" alt-text="Intune app types" border="true" :::
  
-When you select **Line-of-business app**, you'll have the option to add your specific installation package file. Also, you can choose to use [Test Base](https://go.microsoft.com/fwlink/?linkid=2165798) to help you manage the performance of your LOB app.
+When you select **Line-of-business app**, you have the option to add your specific installation package file. Also, you can choose to use [Test Base](https://go.microsoft.com/fwlink/?linkid=2165798) to help you manage the performance of your LOB app.
 
 :::image type="content" source="../media/purchase-add-managed-apps/purchase-add-managed-apps-10.png" alt-text="Intune - Line-of-business app" border="true" :::
 
