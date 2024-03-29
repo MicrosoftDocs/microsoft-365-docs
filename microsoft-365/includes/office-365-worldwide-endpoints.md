@@ -93,4 +93,5 @@ ID | Category | ER | Addresses | Ports
 158 | Default<BR>Required | No | `*.cortana.ai` | **TCP:** 443
 159 | Default<BR>Required | No | `admin.microsoft.com` | **TCP:** 443, 80
 160 | Default<BR>Required | No | `cdn.odc.officeapps.live.com, cdn.uci.officeapps.live.com` | **TCP:** 443, 80
+161 | Default<BR>Required | No | `login.live.com, *.config.office.com, *.config.office.net` | **TCP:** 443, 80
 184 | Default<BR>Required | No | `*.cloud.microsoft, *.static.microsoft, *.usercontent.microsoft` | **TCP:** 443, 80
