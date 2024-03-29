@@ -1,12 +1,8 @@
 ---
 title: Step 2. An Overview of Microsoft Defender XDR for Identity evaluation
 description: Use Microsoft Defender XDR for Identity in your Microsoft Defender XDR XDR solution. Steps for the evaluation of Microsoft Defender XDR for Identity including requirements, enabling or activating the eval, and set up of the pilot or test.
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: 
   - NOCSH
 ms.author: dansimp
