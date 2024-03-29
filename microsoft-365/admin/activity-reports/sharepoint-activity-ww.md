@@ -38,7 +38,9 @@ For example, you can understand the activity of every user licensed to use Share
   
 ## Interpret the SharePoint activity report
 
-You can view the activities in the SharePoint report by choosing the **Activity** tab.<br/>![Microsoft 365 reports - Microsoft SharePoint activity report.](../../media/5a0a96f-0e4f-4fb9-8baa-3262275b3d1f.png)
+You can view the activities in the SharePoint report by choosing the **Activity** tab.
+
+![Microsoft 365 reports - Microsoft SharePoint activity report.](../../media/5a0a96f-0e4f-4fb9-8baa-3262275b3d1f.png)
 
 Select **Choose columns** to add or remove columns from the report.
 
