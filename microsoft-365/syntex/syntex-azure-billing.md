@@ -74,6 +74,7 @@ The following Microsoft Syntex products are currently available:
 - Prebuilt document processing
 - Structured and freeform document processing
 - Unstructured document processing
+- Autofill columns
 - Content assembly
 - Image tagging
 - Taxonomy tagging
