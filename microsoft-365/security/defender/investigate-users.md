@@ -46,7 +46,7 @@ When you investigate a specific user entity, you see the following tabs on its e
 - [Overview](#overview), including entity details, incidents and alerts visual view, investigation priority, and scored timeline
 - [Incidents and alerts](#incidents-and-alerts) tab
 - [Observed in organization](#observed-in-organization) tab
-- [Tmeline](#timeline) tab
+- [Timeline](#timeline) tab
 - [Sentinel events](#sentinel-events) tab
 
 The user page shows the Microsoft Entra organization as well as groups, helping you understand the groups and permissions associated with a user.
