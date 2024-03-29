@@ -57,6 +57,8 @@ The rest of this article explains how to use the spoof intelligence insight in t
 >
 > - Only spoofed senders that were detected by spoof intelligence appear in the spoof intelligence insight. When you override the allow or block verdict in the insight, the spoofed sender becomes a manual allow or block entry that appears only on the **Spoofed senders** tab on the **Tenant Allow/Block Lists** page at <https://security.microsoft.com/tenantAllowBlockList?viewid=SpoofItem>. You can also manually create allow or block entries for spoofed senders before they're detected by spoof intelligence. For more information, see [Spoofed senders in the Tenant Allow/Block List](tenant-allow-block-list-email-spoof-configure.md#spoofed-senders-in-the-tenant-allowblock-list).
 >
+> - The **Action** values **Allow** or **Block** in the spoof intelligence insight refer to spoof _detection_ (whether Microsoft 365 identified the message as spoofed or not). The **Action** value doesn't necessarily affect the overall filtering of the message. For example, to avoid false positives, a spoofed message might be delivered if we find that it doesn't have malicious intent.
+>
 > - The spoof intelligence insight and the **Spoofed senders** tab in the Tenant Allow/Block list replace the functionality of the spoof intelligence policy that was available on the anti-spam policy page in the Security & Compliance Center.
 >
 > - The spoof intelligence insight shows 7 days worth of data. The **Get-SpoofIntelligenceInsight** cmdlet shows 30 days worth of data.
@@ -74,7 +76,7 @@ The rest of this article explains how to use the spoof intelligence insight in t
       - **Organization Management**
       - **Security Administrator** <u>and</u> **View-Only Configuration** or **View-Only Organization Management**.
     - _Read-only access to the spoof intelligence insight_: Membership in the **Global Reader**, **Security Reader**, or **View-Only Organization Management** role groups.
-  - [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
+  - [Microsoft Entra permissions](/entra/identity/role-based-access-control/manage-roles-portal): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 - For our recommended settings for anti-phishing policies, see [EOP anti-phishing policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings).
 
@@ -120,7 +122,7 @@ On the **Spoof intelligence insight** page, you can sort the entries by clicking
   - **External**: The spoofed sender is in an external domain.
 - **Action**: This value is **Allowed** or **Blocked**:
   - **Allowed**: The domain failed explicit email authentication checks [SPF](email-authentication-spf-configure.md), [DKIM](email-authentication-dkim-configure.md), and [DMARC](email-authentication-dmarc-configure.md). However, the domain passed our implicit email authentication checks ([composite authentication](email-authentication-about.md#composite-authentication)). As a result, no anti-spoofing action was taken on the message.
-  - **Blocked**: Messages from the combination of the spoofed domain _and_ sending infrastructure are marked as bad by spoof intelligence. The action that's taken on the spoofed messages is controlled by the default anti-phishing policy or custom anti-phishing policies (the default value is **Move message to Junk Email folder**). For more information, see [Configure anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-mdo-configure.md).
+  - **Blocked**: Messages from the combination of the spoofed domain _and_ sending infrastructure are marked as bad by spoof intelligence. The action that's taken on the spoofed messages with malicious intent is controlled by the [Standard or Strict preset security policies](preset-security-policies.md), the default anti-phishing policy, or custom anti-phishing policies. For more information, see [Configure anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-mdo-configure.md).
 
 To change the list of spoofed senders from normal to compact spacing, select :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false"::: **Compact list**.
 
@@ -142,7 +144,7 @@ When you select a spoof detection from the list by clicking anywhere in the row 
 - **Why did we catch this?** section: Why we detected this sender as spoof, and what you can do for further information.
 - **Domain summary** section: Includes the same information from the main **Spoof intelligence insight** page.
 - **WhoIs data** section: Technical information about the sender's domain.
-- **Explorer investigation** section: In Defender for Office 365 organization, this section contains a link to open [Threat Explorer](threat-explorer-about.md) to see additional details about the sender on the **Phish** tab.
+- **Explorer investigation** section: In Defender for Office 365 organization, this section contains a link to open [Threat Explorer](threat-explorer-real-time-detections-about.md) to see additional details about the sender on the **Phish** tab.
 - **Similar Emails** section: Contains the following information about the spoof detection:
   - **Date**
   - **Subject**

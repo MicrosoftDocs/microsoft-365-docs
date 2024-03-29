@@ -9,7 +9,8 @@ manager: scotv
 ms.reviewer: emmasheridan, nicholak
 audience: Admin
 ms.topic: how-to
-ms.service: microsoft-365-business 
+ms.service: microsoft-365-business
+ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
 ms.collection:
 - Tier1
@@ -20,6 +21,7 @@ ms.custom:
 - commerce_subscriptions
 - AdminSurgePortfolio
 - okr_smb
+- admindeeplinkMAC
 search.appverid: MET150
 ROBOTS: noindex, nofollow
 description: "Learn how to buy a subscription with a calling plan and enable overage for Microsoft Teams calls."

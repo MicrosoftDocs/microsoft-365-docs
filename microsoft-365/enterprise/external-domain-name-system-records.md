@@ -86,9 +86,6 @@ These DNS records apply only to tenants in Teams-only mode, for hybrid tenants, 
 |DNS record|Purpose|Value to use|
 |---|---|---|
 |**SRV** <br/> **(Federation)**|Allows your Office 365 domain to share instant messaging (IM) features with external clients by enabling SIP federation.|**Domain:** \<domain> <br/> **Service:** sipfederationtls <br/> **Protocol:** TCP <br/> **Priority:** 100 <br/> **Weight:** 1 <br/> **Port:** 5061 <br/> **Target:** sipfed.online.lync.com <br/> **Note:** If the firewall or proxy server blocks SRV lookups on an external DNS, you should add this record to the internal DNS record. |
-|**SRV** <br/> **(SIP)**|It may be needed by Teams-only tenants that use Skype for Business Online phones for Teams.|**Domain:** \<domain> <br/> **Service:** sip <br/> **Protocol:** TLS <br/> **Priority:** 100 <br/> **Weight:** 1 <br/> **Port:** 443 <br/> **Target:** sipdir.online.lync.com|
-|**CNAME** <br/> **(Lyncdiscover)**|Required by Teams-only tenants to support PowerShell cmdlets that still use Skype for Business Online infrastructure for management.|**Alias:** lyncdiscover.\<domain> <br/> **Target:** webdir.online.lync.com|
-
 
 ## External DNS records required for Office 365 Single Sign-On
 <a name="BKMK_ReqdCore"> </a>

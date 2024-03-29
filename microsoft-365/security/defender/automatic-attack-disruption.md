@@ -1,11 +1,7 @@
 ---
 title: Automatic attack disruption in Microsoft Defender XDR
 description: Automatically contain assets controlled by attackers by using automatic attack disruption in Microsoft Defender XDR.
-keywords: attack, disruption, automatic, analyze, response, machines, devices, users, identities, mail, email, mailbox, investigation, graph, evidence
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: 
   - NOCSH
 ms.author: diannegali
@@ -39,9 +35,9 @@ This article provides an overview of automated attack disruption and includes li
 
 ## How automatic attack disruption works
 
-Automatic attack disruption is designed to contain attacks in progress, limit the impact on an organization's assets, and provide more time for security teams to remediate the attack fully. Attack disruption in uses the the full breadth of our extended detection and response (XDR) signals, taking the entire attack into account to act at the incident level. This capability is unlike known protection methods such as prevention and blocking based on a single indicator of compromise.
+Automatic attack disruption is designed to contain attacks in progress, limit the impact on an organization's assets, and provide more time for security teams to remediate the attack fully. Attack disruption in uses the full breadth of our extended detection and response (XDR) signals, taking the entire attack into account to act at the incident level. This capability is unlike known protection methods such as prevention and blocking based on a single indicator of compromise.
 
-While many XDR and security orchestration, automation, and response (SOAR) platforms allow you to create your automatic response actions, automatic attack disruption is built-in and uses insights from Microsoft security researchers and advanced AI models to counteract the complexities of advanced attacks. Automatic attack disruption considers the entire context of signals from different sources to determine compromised assets.
+While many XDR and security orchestration, automation, and response (SOAR) platforms allow you to create your automatic response actions, automatic attack disruption is built in and uses insights from Microsoft security researchers and advanced AI models to counteract the complexities of advanced attacks. Automatic attack disruption considers the entire context of signals from different sources to determine compromised assets.
 
 Automatic attack disruption operates in three key stages:
 
@@ -66,7 +62,7 @@ Automatic attack disruption uses Microsoft-based XDR response actions. Examples 
 
 - [Device contain](/microsoft-365/security/defender-endpoint/respond-machine-alerts#contain-devices-from-the-network) - based on Microsoft Defender for Endpoint's capability, this action is an automatic containment of a suspicious device to block any incoming/outgoing communication with the said device.
 - [Disable user](/defender-for-identity/remediation-actions) - based on Microsoft Defender for Identity's capability, this action is an automatic suspension of a compromised account to prevent additional damage like lateral movement, malicious mailbox use, or malware execution.
-- [Contain user](../defender-endpoint/respond-machine-alerts.md#contain-user-from-the-network) - This response action automatically contains suspicious identities temporarily to help block any lateral movement and remote encryption related to incoming communication with Defender for Endpoint's onboarded devices.
+- [Contain user](../defender-endpoint/respond-machine-alerts.md#contain-user-from-the-network) - based on Microsoft Defender for Endpoint's capability, this response action automatically contains suspicious identities temporarily to help block any lateral movement and remote encryption related to incoming communication with Defender for Endpoint's onboarded devices.
 
 For more information, see [remediation actions](m365d-remediation-actions.md) in Microsoft Defender XDR.
 
