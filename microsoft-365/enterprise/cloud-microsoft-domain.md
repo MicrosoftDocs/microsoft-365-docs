@@ -18,26 +18,6 @@ content_well_notification:
 - AI-contribution
 ---
 
----
-title: "Unified cloud.microsoft domain for Microsoft 365 apps"
-description: Describes the new cloud.microsoft domain for Microsoft 365 apps
-author: dansimp
-ms.author: dansimp
-manager: dansimp
-ms.date: 02/15/2024
-ms.topic: overview
-ms.service: microsoft-365-enterprise
-ms.localizationpriority: medium
-ms.collection:
-ms.custom: QuickDraft
-ms.reviewer: dansimp
-search.appverid: MET150
-f1.keywords:
-audience:
-content_well_notification:
-- AI-contribution
----
-
 # Unified cloud.microsoft domain for Microsoft 365 apps
 
 Microsoft is unifying user-facing Microsoft 365 apps and services to a single and consistent domain: `cloud.microsoft`.
