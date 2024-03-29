@@ -1,7 +1,7 @@
 ---
 title: Secure email recommended policies
 description: Describes the policies for Microsoft recommendations about how to apply email policies and configurations.
-ms.author: chrisda
+author: chrisda
 ms.author: chrisda
 manager: dansimp
 ms.service: microsoft-365-zero-trust

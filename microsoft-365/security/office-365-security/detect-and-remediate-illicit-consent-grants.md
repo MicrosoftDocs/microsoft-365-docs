@@ -2,7 +2,7 @@
 title: Detect and Remediate Illicit Consent Grants
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+author: chrisda
 ms.author: chrisda
 manager: dansimp
 audience: ITPro

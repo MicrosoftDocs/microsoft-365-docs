@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
   - NOCSH
-ms.author: chrisda
+author: chrisda
 ms.author: chrisda
 ms.localizationpriority: medium
 manager: jarogers

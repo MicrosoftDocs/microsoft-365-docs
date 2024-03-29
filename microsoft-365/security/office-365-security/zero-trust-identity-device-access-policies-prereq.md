@@ -1,7 +1,7 @@
 ---
 title: Prerequisite work for implementing Zero Trust identity and device access policies
 description: This article describes the prerequisites you need to meet to use Zero Trust identity and device access policies and configurations.
-ms.author: chrisda
+author: chrisda
 ms.author: chrisda
 manager: dansimp
 ms.service: microsoft-365-zero-trust
