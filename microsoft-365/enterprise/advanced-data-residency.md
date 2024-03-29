@@ -97,7 +97,7 @@ After a customer receives their Advanced Data Residency licenses and applies the
 :::image type="content" source="media\data-residency\1-adr-microsoft-365-admin-center.png" alt-text="<Screenshot of M365 Admin Center.>":::
 
 > [!NOTE]
-> The data migration process described in the sections below will not initiate until the customer administrator has completed this task.
+> The data migration process described in the sections below will not initiate until the customer administrator completes this task.
 
 The following screenshot shows an example of the Microsoft 365 admin center view that ADR customers can expect to see prior to opting for migration to their _Local Region Geography_:
 
