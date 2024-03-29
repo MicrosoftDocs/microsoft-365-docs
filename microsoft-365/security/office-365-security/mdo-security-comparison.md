@@ -107,7 +107,7 @@ The additional features that you get in **Defender for Office 365 Plan 2** on to
 
 |Prevent/Detect|Investigate|Respond|
 |---|---|---|
-|<ul><li>[Attack simulation training](attack-simulation-training-get-started.md)</li>|<li>[Threat Explorer (Explorer)](threat-explorer-real-time-detections-about.md) instead of Real-time detections.<sup>\*</sup></li><li>[Threat Tracker](threat-trackers.md)s</li><li>[Campaigns](campaigns.md)</li></ul>|<ul><li>[Automated Investigation and Response (AIR)](air-about.md): <ul><li>AIR from Threat Explorer</li><li>AIR for compromised users</li></ul></li><li>SIEM Integration API for **Automated Investigations**</li></ul>|
+|<ul><li>[Attack simulation training](attack-simulation-training-get-started.md)</li>|<li>[Threat Explorer (Explorer)](threat-explorer-real-time-detections-about.md) instead of Real-time detections.<sup>\*</sup></li><li>[Threat Trackers](threat-trackers.md)</li><li>[Campaigns](campaigns.md)</li></ul>|<ul><li>[Automated Investigation and Response (AIR)](air-about.md): <ul><li>AIR from Threat Explorer</li><li>AIR for compromised users</li></ul></li><li>SIEM Integration API for **Automated Investigations**</li></ul>|
 
 <sup>\*</sup> The presence of **Email & collaboration** \> **Explorer** in the Microsoft Defender portal is a quick way to differentiate between Defender for Office 365 Plan 2 and Plan 1.
 
