@@ -5,6 +5,7 @@ author: erikre
 manager: dougeby
 audience: ITPro
 ms.topic: article
+ms.date: 03/29/2024
 description: Understand web apps as they apply to a managed environment.
 ms.service: o365-solutions
 ms.localizationpriority: high
