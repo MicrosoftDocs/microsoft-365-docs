@@ -1,7 +1,6 @@
 ---
 title: Update incident API
 description: Learn how to update incidents using Microsoft Defender XDR API
-search.product: eADQiWindows 10XVcnh
 ms.service: defender-xdr
 f1.keywords:
   - NOCSH
