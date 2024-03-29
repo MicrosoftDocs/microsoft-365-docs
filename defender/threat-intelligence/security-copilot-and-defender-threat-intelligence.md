@@ -122,7 +122,7 @@ Get contextual information and threat intelligence on Common Vulnerabilities and
 
 ### Provide feedback
 
-Your feedback on the Defender TI integration with Copilot for Security helps with development. To provide feedback, in Copilot, select **How’s this response?** at the bottom of each completed prompt and choose any of the following options:
+Your feedback on the Defender TI integration with Copilot for Security helps with development. To provide feedback, in Copilot, select **How’s this response?** At the bottom of each completed prompt and choose any of the following options:
 - **Looks right** - Select this button if the results are accurate, based on your assessment. 
 - **Needs improvement** - Select this button if any detail in the results is incorrect or incomplete, based on your assessment. 
 - **Inappropriate** - Select this button if the results contain questionable, ambiguous, or potentially harmful information.
