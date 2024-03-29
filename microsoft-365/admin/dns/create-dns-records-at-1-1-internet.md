@@ -1,5 +1,5 @@
 ---
-title: "Connect your DNS records at IONOS by 1&1 to Microsoft 365"
+title: "Connect your DNS records at IONOS to Microsoft 365"
 f1.keywords:
 - CSH
 ms.author: nkagole
@@ -23,14 +23,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5762c3ca-1de2-4999-bfe5-4c5e25a8957e
-description: "Learn to verify your domain and set up DNS records for email, Skype for Business Online, and other services at 1&1 IONOS for Microsoft."
+description: "Learn to verify your domain and set up DNS records for email, Skype for Business Online, and other services at IONOS for Microsoft."
 ---
 
-# Connect your DNS records at IONOS by 1&1 to Microsoft 365
+# Connect your DNS records at IONOS to Microsoft 365
 
  **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for.
 
-If IONOS by 1&1 is your DNS hosting provider, follow the steps in this article to verify your domain and set up DNS records for email, Skype for Business Online, and so on.
+If IONOS is your DNS hosting provider, follow the steps in this article to verify your domain and set up DNS records for email, Skype for Business Online, and so on.
 
 ## Before you begin
 
@@ -44,7 +44,7 @@ You have two options for setting up DNS records for your domain:
 
 ## Use Domain Connect to verify and set up your domain
 
-Follow these steps to automatically verify and set up your IONOS by 1&1 domain with Microsoft 365:
+Follow these steps to automatically verify and set up your IONOS domain with Microsoft 365:
 
 1. In the Microsoft 365 admin center, select **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>, and select the domain you want to set up.
 
@@ -58,7 +58,7 @@ Follow these steps to automatically verify and set up your IONOS by 1&1 domain w
 
 1. On the Add DNS records page, select **Add DNS records**.
 
-1. On the IONOS by 1&1 login page, sign in to your account, and select **Connect**, and **Allow**.
+1. On the IONOS login page, sign in to your account, and select **Connect**, and **Allow**.
 
     :::image type="content" source="../../media/dns-ionos/ionos-domainconnects-3.png" alt-text="Select Connect, and then Allow.":::
 
@@ -66,11 +66,11 @@ Follow these steps to automatically verify and set up your IONOS by 1&1 domain w
 
 ## Create DNS records with manual setup
 
-After you add these records at IONOS by 1&1, your domain will be set up to work with Microsoft services.
+After you add these records at IONOS, your domain will be set up to work with Microsoft services.
 
 > [!CAUTION]
-> Note that IONOS by 1&1 doesn't allow a domain to have both an MX record and a top-level Autodiscover CNAME record. This limits the ways in which you can configure Exchange Online for Microsoft. There is a workaround, but we recommend employing it **only** if you already have experience with creating subdomains at IONOS by 1&1.
-> If despite this [service limitation](../setup/domains-faq.yml) you choose to manage your own Microsoft DNS records at IONOS by 1&1, follow the steps in this article to verify your domain and to set up DNS records for email, Skype for Business Online, and so on.
+> Note that IONOS doesn't allow a domain to have both an MX record and a top-level Autodiscover CNAME record. This limits the ways in which you can configure Exchange Online for Microsoft. There is a workaround, but we recommend employing it **only** if you already have experience with creating subdomains at IONOS.
+> If despite this [service limitation](../setup/domains-faq.yml) you choose to manage your own Microsoft DNS records at IONOS, follow the steps in this article to verify your domain and to set up DNS records for email, Skype for Business Online, and so on.
 
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Find and fix issues after adding your domain or DNS records](../get-help-with-domains/find-and-fix-issues.md).
@@ -82,7 +82,7 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
 > [!NOTE]
 > This record is used only to verify that you own your domain; it doesn't affect anything else. You can delete it later, if you like.
 
-1. To get started, go to your domains page at IONOS by 1&1 by using [this link](https://my.1and1.com/). You'll be prompted to log in.
+1. To get started, go to your domains page at IONOS by using [this link](https://my.1and1.com/). You'll be prompted to log in.
 
 1. Select **Menu**, and then select **Domains and SSL**.
 
@@ -134,7 +134,7 @@ To verify the record in Microsoft 365:
 > [!NOTE]
 > If you've registered with 1und1.de, [sign in here](https://go.microsoft.com/fwlink/?linkid=859152).
 
-1. To get started, go to your domains page at IONOS by 1&1 by using [this link](https://my.1and1.com/). You'll be prompted to log in.
+1. To get started, go to your domains page at IONOS by using [this link](https://my.1and1.com/). You'll be prompted to log in.
 
 1. Select **Menu**, and then select **Domains and SSL**.
 
@@ -171,7 +171,7 @@ To verify the record in Microsoft 365:
 > [!NOTE]
 > If you've registered with 1und1.de, [sign in here](https://go.microsoft.com/fwlink/?linkid=859152).
 
-1. To get started, go to your domains page at IONOS by 1&1 by using [this link](https://my.1and1.com/). You'll be prompted to log in.
+1. To get started, go to your domains page at IONOS by using [this link](https://my.1and1.com/). You'll be prompted to log in.
 
 1. Select **Menu**, and then select **Domains and SSL**.
 
@@ -183,7 +183,7 @@ To verify the record in Microsoft 365:
 
    Now you'll create two subdomains and set an **Alias** value for each.
 
-   (This is required because 1&1 IONOS supports only one top-level CNAME record, but Microsoft requires several CNAME records.)
+   (This is required because IONOS supports only one top-level CNAME record, but Microsoft requires several CNAME records.)
 
    First, you'll create the Autodiscover subdomain.
 
@@ -221,7 +221,7 @@ To verify the record in Microsoft 365:
 > [!NOTE]
 > If you've registered with 1und1.de, [sign in here](https://go.microsoft.com/fwlink/?linkid=859152).
 
-1. To get started, go to your domains page at IONOS by 1&1 by using [this link](https://my.1and1.com/). You'll be prompted to log in.
+1. To get started, go to your domains page at IONOS by using [this link](https://my.1and1.com/). You'll be prompted to log in.
 
 1. Select **Menu**, and then select **Domains and SSL**.
 
@@ -255,7 +255,7 @@ Only select this option if your organization uses Skype for Business for online 
 
 ### Add two additional CNAME records
 
-1. To get started, go to your domains page at IONOS by 1&1 by using [this link](https://my.1and1.com/). You'll be prompted to log in.
+1. To get started, go to your domains page at IONOS by using [this link](https://my.1and1.com/). You'll be prompted to log in.
 
 1. Select **Menu**, and then select **Domains and SSL**.
 
@@ -267,7 +267,7 @@ Only select this option if your organization uses Skype for Business for online 
 
    Now you'll create two subdomains and set an **Alias** value for each.
 
-   (This is required because 1&1 IONOS supports only one top-level CNAME record, but Microsoft requires several CNAME records.)
+   (This is required because IONOS supports only one top-level CNAME record, but Microsoft requires several CNAME records.)
 
    First, you'll create the lyncdiscover subdomain.
 
@@ -324,7 +324,7 @@ Only select this option if your organization uses Skype for Business for online 
 > [!NOTE]
 > If you've registered with 1und1.de, [sign in here](https://go.microsoft.com/fwlink/?linkid=859152).
 
-1. To get started, go to your domains page at IONOS by 1&1 by using [this link](https://my.1and1.com/). You'll be prompted to log in.
+1. To get started, go to your domains page at IONOS by using [this link](https://my.1and1.com/). You'll be prompted to log in.
 
 1. Select **Menu**, and then select **Domains and SSL**.
 
@@ -367,7 +367,7 @@ This service helps you secure and remotely manage mobile devices that connect to
 > [!IMPORTANT]
 > Follow the subdomain procedure that you used for the other CNAME records, and supply the values from the following table.
 
-1. To get started, go to your domains page at IONOS by 1&1 by using [this link](https://my.1and1.com/). You'll be prompted to log in.
+1. To get started, go to your domains page at IONOS by using [this link](https://my.1and1.com/). You'll be prompted to log in.
 
 1. Select **Menu**, and then select **Domains and SSL**.
 
@@ -379,7 +379,7 @@ This service helps you secure and remotely manage mobile devices that connect to
 
    Now you'll create two subdomains and set an **Alias** value for each.
 
-   (This is required because 1&1 IONOS supports only one top-level CNAME record, but Microsoft requires several CNAME records.)
+   (This is required because IONOS supports only one top-level CNAME record, but Microsoft requires several CNAME records.)
 
    First, you'll create the lyncdiscover subdomain.
 

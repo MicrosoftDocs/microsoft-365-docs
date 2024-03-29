@@ -32,7 +32,7 @@ description: "Some domain registrars offer limited services, which means not all
 [Create DNS records at MyDomain for Microsoft](#create-dns-records-at-mydomain-for-microsoft)\
 [Create DNS records for Microsoft using Windows-based DNS](#create-dns-records-for-microsoft-using-windows-based-dns)\
 [Create DNS records when your domain is managed by Google (eNom)](#create-dns-records-when-your-domain-is-managed-by-google-enom)\
-[Create DNS records at 1&1 IONOS for Microsoft](#create-dns-records-at-11-ionos-for-microsoft)
+[Create DNS records at IONOS for Microsoft](#create-dns-records-at-ionos-for-microsoft)
 
 Some domain registrars have significant service limitations, which means not all Microsoft features will work with every domain. Specific limitations for some registrars are identified in this article. 
 
@@ -60,24 +60,24 @@ Go to the page that has the DNS records for your domain. If you're working in Wi
 
 If you purchased your domain through Google while signing up for your Google Apps for Work account, your DNS records are managed by Google but registered with eNom. You can access eNom, and create DNS, through the Google Domains page.
 
-## Create DNS records at 1&1 IONOS for Microsoft
+## Create DNS records at IONOS for Microsoft
 
-1&1 IONOS doesn't allow a domain to have both an MX record and a top-level Autodiscover CNAME record. This limits the ways in which you can configure Exchange Online for Microsoft. There is a workaround, but we recommend employing it only if you already have experience with creating subdomains at 1&1 IONOS.
+IONOS doesn't allow a domain to have both an MX record and a top-level Autodiscover CNAME record. This limits the ways in which you can configure Exchange Online for Microsoft. There is a workaround, but we recommend employing it only if you already have experience with creating subdomains at IONOS.
 
-If despite this service limitation you choose to manage your own Microsoft DNS records at 1&1 IONOS, follow the steps in this article to verify your domain and to set up DNS records for email, Skype for Business Online, and so on.
+If despite this service limitation you choose to manage your own Microsoft DNS records at IONOS, follow the steps in this article to verify your domain and to set up DNS records for email, Skype for Business Online, and so on.
 
-1&1 IONOS requires a workaround so that you can use an MX record together with the CNAME records required for Microsoft email services. This workaround requires you to create a set of subdomains at 1&1 IONOS, and to assign them to CNAME records.
+1&1 IONOS requires a workaround so that you can use an MX record together with the CNAME records required for Microsoft email services. This workaround requires you to create a set of subdomains at IONOS, and to assign them to CNAME records.
 
 > [!NOTE]
-> Make sure that you have at least two available subdomains before starting this procedure. We recommend this solution only if you already have experience with creating subdomains at 1&1 IONOS.
+> Make sure that you have at least two available subdomains before starting this procedure. We recommend this solution only if you already have experience with creating subdomains at IONOS.
 
 ### Basic CNAME records
 
-1.  To get started, go to your domains page at 1&1 IONOS. You'll be prompted to log in.
+1.  To get started, go to your domains page at IONOS. You'll be prompted to log in.
 
 1.  Select **Manage domains**.
 
-1.  On the Domain Center page, find the domain that you want to update, and then select **Manage Subdomains**. Now you'll create two subdomains and set an **Alias** value for each (This is required because 1&1 IONOS supports only one top-level CNAME record, but Microsoft requires several CNAME records.)
+1.  On the Domain Center page, find the domain that you want to update, and then select **Manage Subdomains**. Now you'll create two subdomains and set an **Alias** value for each (This is required because IONOS supports only one top-level CNAME record, but Microsoft requires several CNAME records.)
 
 1.  First, you'll create the Autodiscover subdomain. In the **Subdomain Overview** section, select **Create Subdomain**.
 

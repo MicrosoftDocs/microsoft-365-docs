@@ -239,7 +239,7 @@
               href: get-help-with-domains/change-nameservers-at-any-domain-registrar.md
             - name: Create DNS records at any DNS host
               href: get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md
-            - name: Connect your DNS records at IONOS by 1&1
+            - name: Connect your DNS records at IONOS
               href: dns/create-dns-records-at-1-1-internet.md 
             - name: Connect your DNS records at 123-reg.co.uk
               href: dns/create-dns-records-at-123-reg-co-uk.md

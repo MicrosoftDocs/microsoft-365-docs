@@ -136,7 +136,7 @@ In the wizard, we'll just confirm that you own the domain, and then automaticall
   
 ### Domain Connect registrars integrating with Microsoft 365
 
-- [1&amp;1 IONOS](https://www.1and1.com/)
+- [IONOS](https://www.1and1.com/)
 - [EuroDNS](https://www.eurodns.com/)
 - [Cloudflare](https://www.cloudflare.com/)
 - [GoDaddy](https://www.godaddy.com/)
