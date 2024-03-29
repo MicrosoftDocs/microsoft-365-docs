@@ -16,15 +16,13 @@ ms.collection:
 ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
-ms.date: 03/20/2024
+ms.date: 03/29/2024
 appliesto:
     - Microsoft Defender XDR
     - Microsoft Sentinel in the Microsoft Defender portal
 ---
 
 # User entity page in Microsoft Defender
-
-[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 The user entity page in the Microsoft Defender portal helps you in your investigation of user entities. The page contains all the important information about a given user entity. If an alert or incident indicates that a user might be compromised or is suspicious, check and investigate the user entity.
 
@@ -51,8 +49,7 @@ When you investigate a specific user entity, you see the following tabs on its e
 - [Tmeline](#timeline) tab
 - [Sentinel events](#sentinel-events) tab
 
-> [!NOTE]
-> The user page shows the Microsoft Entra organization as well as groups, helping you understand the groups and permissions associated with a user.
+The user page shows the Microsoft Entra organization as well as groups, helping you understand the groups and permissions associated with a user.
 
 [!INCLUDE [unified-soc-preview](../../includes/unified-soc-preview.md)]
 ## Overview

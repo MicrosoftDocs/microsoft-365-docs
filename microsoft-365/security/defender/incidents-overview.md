@@ -18,19 +18,19 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - MET150
-ms.date: 03/28/2024
-appliesto: Microsoft Defender XDR and Microsoft Sentinel in the Microsoft Defender portal
+ms.date: 03/29/2024
+appliesto: 
+- Microsoft Defender XDR
+- Microsoft Sentinel in the Microsoft Defender portal
 ---
 
 # Incident response in the Microsoft Defender portal
-
-[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 An *incident* in the Microsoft Defender portal is a collection of related alerts and associated data that make up the story of an attack. It's also a case file that your SOC can use to investigate that attack and manage, implement, and document the response to it.
 
 The Microsoft Sentinel and Microsoft Defender services create alerts when they detect a suspicious or malicious event or activity. Individual alerts provide valuable evidence of a completed or ongoing attack. However, increasingly prevalent and sophisticated attacks typically employ a variety of techniques and vectors against different types of asset entities, such as devices, users, and mailboxes. The result is multiple alerts, from multiple sources, for multiple asset entities in your digital estate.
 
-Because individual alerts each tell only part of the story, and because manually grouping individual alerts together to gain insight into an attack can be challenging and time-consuming, the unified SOC platform automatically identifies alerts that are related and aggregates them and their associated information into an incident.
+Because individual alerts each tell only part of the story, and because manually grouping individual alerts together to gain insight into an attack can be challenging and time-consuming, the unified security operations platform automatically identifies alerts that are related and aggregates them and their associated information into an incident.
 
 :::image type="content" source="../../media/incidents-overview/incidents.png" alt-text="How Microsoft Defender XDR correlates events from entities into an incident." lightbox="../../media/incidents-overview/incidents.png":::
 
@@ -42,7 +42,7 @@ Grouping related alerts into an incident gives you a comprehensive view of an at
 - The scope of the attack, such as how many devices, users, and mailboxes were impacted.
 - All of the data associated with the attack.
 
-The unified SOC platform in the Microsoft Defender portal includes methods to automate and assist in the triage, investigation, and resolution of incidents.
+The unified security operations platform in the Microsoft Defender portal includes methods to automate and assist in the triage, investigation, and resolution of incidents.
 
 - [Microsoft Copilot in Defender](security-copilot-in-microsoft-365-defender.md) harnesses AI to support analysts with complex and time-consuming daily workflows, including end-to-end incident investigation and response with clearly described attack stories, step-by-step actionable remediation guidance and incident activity summarized reports, natural language KQL hunting, and expert code analysis&mdash;optimizing on SOC efficiency across Microsoft Sentinel and Defender XDR data.
 
@@ -54,9 +54,9 @@ The unified SOC platform in the Microsoft Defender portal includes methods to au
 
 - Microsoft Sentinel [automation rules](/azure/sentinel/automate-incident-handling-with-automation-rules) can automate triage, assignment, and management of incidents, regardless of their source. They can apply tags to incidents based on their content, suppress noisy (false positive) incidents, and close resolved incidents that meet the appropriate criteria, specifying a reason and adding comments.
 
-For more information on the benefits of the unified SOC platform, see [Connect Microsoft Sentinel to Microsoft Defender XDR (preview)](microsoft-sentinel-onboard.md)
-
 <a name='incidents-and-alerts-in-the-microsoft-365-defender-portal'></a>
+
+[!INCLUDE [unified-soc-preview](../../includes/unified-soc-preview.md)]
 
 ## Incidents and alerts in the Microsoft Defender portal
 

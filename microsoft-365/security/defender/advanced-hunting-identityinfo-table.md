@@ -21,20 +21,19 @@ ms.collection:
 - usx-security
 - tier3
 ms.topic: conceptual
-ms.date: 01/16/2024
-appliesto: Microsoft Defender XDR and Microsoft Sentinel in the Microsoft Defender portal
+ms.date: 03/29/2024
+appliesto: 
+- Microsoft Defender XDR 
+- Microsoft Sentinel in the Microsoft Defender portal
 ---
 
 # IdentityInfo
 
-[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
-
 The `IdentityInfo` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about user accounts obtained from various services, including Microsoft Entra ID. Use this reference to construct queries that return information from this table.
 
-> [!NOTE]
-> - This table was renamed from `AccountInfo`. During renames, all queries saved in the portal are automatically updated. Check queries you have saved elsewhere.
->
-> - Microsoft Sentinel uses a slightly expanded version of this table in Log Analytics. For more information, see [Microsoft Sentinel UEBA reference | IdentityInfo table](/azure/sentinel/ueba-reference)
+This table was renamed from `AccountInfo`. During renames, all queries saved in the portal are automatically updated. Check queries you have saved elsewhere.
+
+Microsoft Sentinel uses a slightly expanded version of this table in Log Analytics. For more information, see [Microsoft Sentinel UEBA reference | IdentityInfo table](/azure/sentinel/ueba-reference)
 
 For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).
 
