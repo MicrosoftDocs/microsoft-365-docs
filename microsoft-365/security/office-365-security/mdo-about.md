@@ -22,7 +22,7 @@ ms.custom:
 description: Is Microsoft Defender for Office 365 worth it? Let's find out.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 01/19/2024
+ms.date: 3/28/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
@@ -30,12 +30,32 @@ appliesto:
 
 # Microsoft Defender for Office 365 overview
 
-> [!IMPORTANT]
-> **If Safe Links pages is blocking your access**, go here for info: [Advanced Outlook.com security for Microsoft 365 subscribers](https://support.microsoft.com/office/advanced-outlook-com-security-for-microsoft-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2?storagetype=live).
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-**Microsoft Defender for Office 365 is a seamless integration into your Office 365 subscription** that protects against threats in email, links (URLS), attachments, or collaboration tools.
+> [!TIP]
+> **If Safelinks in Outlook.com is blocking your access to web sites**, see the following article: [Advanced Outlook.com security for Microsoft 365 subscribers](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-For email threats that are identified after the fact, Zero-hour autopurge (ZAP) can remove those messages from user mailboxes. Automated Investigation and Response (AIR) allows you to automate monitoring and remediation, making it more efficient for security operations (SecOps) teams. The deep integration with Office 365 and robust reporting ensures that you're always on top of security operations.
+Microsoft Defender for Office 365 expands on the capabilities of [Exchange Online Protection (EOP)](eop-about.md) that are included in all Microsoft 365 organizations with Exchange Online mailboxes. Defender for Office 365 adds to the prevention and detection capabilities of EOP with the following additional features:
+
+- Protect users and domains from [impersonation-based email attacks](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
+- Test links in email message for known and unknown threats ([Safe Links](safe-links-about.md)).
+- Test file attachments in email message for known and unknown threats ([Safe Attachments](safe-attachments-about.md)).
+
+EOP, and also adds robust investigation and response capabilities that aren't available in EOP. Specifically:
+
+- Defender for Office 365 adds additional protection against threats:
+
+
+
+Defender for Office 365 is included in some Microsoft 365 subscriptions (for example, Defender for Office 365 Plan 2 in Microsoft 365 E5 or Defender for Office 365 Plan 1 in Microsoft 365 Business Premium), or you can buy Defender for Office 365 add-on subscriptions.
+
+Configure protection policies
+Analyze threats
+Respond to attacks
+
+Microsoft Defender for Office 365 is a seamless integration into your Microsoft 365 subscription that protects against threats in email, links (URLS), attachments, or collaboration tools.
+
+For email threats that are identified after the fact, zero-hour autopurge (ZAP) can remove those messages from user mailboxes. In Defender for Office 365 Plan 2, Automated Investigation and Response (AIR) allows you to automate monitoring and remediation, making it more efficient for security operations (SecOps) teams. The deep integration with Office 365 and robust reporting ensures that you're always on top of security operations.
 
 Defender for Office 365 safeguards organizations against malicious threats by providing admins and SecOps teams a wide range of capabilities. Users, admins, and SecOps personnel benefit from these features from the beginning of the organization. For example:
 
@@ -47,7 +67,7 @@ Defender for Office 365 safeguards organizations against malicious threats by pr
 
 - **[Threat investigation and response capabilities](#best-of-class-threat-investigation-and-response-capabilities)**: These tools are leading-edge and allow you to investigate, understand, simulate, and prevent threats.
 
-- **[Automated investigation and response capabilities](air-about.md)**: Save time and effort investigating and mitigating threats by automating what you can.
+- **[Automated investigation and response capabilities](air-about.md)** in Defender for Office 365: Save time and effort investigating and mitigating threats by automating what you can.
 
 ## Interactive guide to Defender for Office 365
 
@@ -55,9 +75,9 @@ If you need more information, this interactive guide shows why Defender for Offi
 
 You can also see how Defender for Office 365 can help you define protection policies, analyze threats to your organization, and respond to attacks.
 
-[Check out the interactive guide](https://aka.ms/MSDO-IG)
+For more information, check out this [interactive guide](https://aka.ms/MSDO-IG)
 
-## What is the difference between Plan 1 and Plan 2 Defender for Office 365?
+## What are the differences between Defender for Office 365 Plan 1 and Plan 2?
 
 For more information on what's included in Microsoft 365 Plan 1 and Plan 2, see [this article](mdo-security-comparison.md). Not only does this article quickly spell out what makes up the two products, but it also  describes the ***emphasis*** of each part of *Defender for Office 365* using a familiar structure: *Protect*, *Detect*, *Investigate*, and *Respond*.
 
@@ -137,13 +157,13 @@ Reports update in real-time, providing you with the latest insights. These repor
 
 Defender for Office 365 Plan 2 includes best-of-class [threat investigation and response tools](office-365-ti.md) that enable your organization's security team to anticipate, understand, and prevent malicious attacks.
 
-### Threat Trackers on the latest threats
-
-**[Threat trackers](threat-trackers.md)** are [saved queries from Threat Explorer](threat-explorer-real-time-detections-about.md#saved-queries-in-threat-explorer) that you run manually or that can be configured to periodically run automatically. The **Trending campaigns** tab automatically highlights new email threats that were recently received by your organization.
-
 ### Threat Explorer or Real-Time Detections
 
-- **[Threat Explorer in Plan 2 (or real-time detections in Plan 1)](threat-explorer-real-time-detections-about.md)** (also referred to as Explorer) is a real-time report that allows you to identify and analyze recent threats. You can configure Explorer to show data for custom periods.
+Threat Explorer (also known as Explorer) in Defender for Office 365 Plan 2 and Real-time detections in Defender for Office 365 Plan 2 are near real-time report that allow you to identify and analyze threats and non-threats for the last 30 days. For more information, see [About Threat Explorer and Real-time detections in Microsoft Defender for Office 365](threat-explorer-real-time-detections-about.md).
+
+### Threat Trackers
+
+[Threat trackers](threat-trackers.md) in Defender for Office 365 Plan 2 are [saved queries from Threat Explorer](threat-explorer-real-time-detections-about.md#saved-queries-in-threat-explorer) that you run manually or that can be configured to periodically run automatically. The **Trending campaigns** tab automatically highlights new email threats that were recently received by your organization.
 
 ### Attack simulation training for user readiness
 
@@ -168,7 +188,7 @@ To access Defender for Office 365 features, you *must* be assigned an appropriat
 |Organization Management in Exchange Online|[Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo) <p> [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)|
 |Search and Purge|This role is available only in the Microsoft Defender portal or the Microsoft Purview compliance portal. For more information, see [Permissions in the Microsoft Defender portal](mdo-portal-permissions.md) and [Permissions in the Microsoft Purview compliance portal](/purview/microsoft-365-compliance-center-permissions).|
 
-## Where can you get MDefender for Office 365?
+## Where can you get Defender for Office 365?
 
 Defender for Office 365 is included in certain subscriptions. For example, Microsoft 365 E5, Office 365 E5, Office 365 A5, and Microsoft 365 Business Premium.
 
@@ -189,6 +209,8 @@ If your subscription doesn't include Defender for Office 365, you can get Defend
 New features are continually added to Defender for Office 365 continually. To learn more, see the following resources:
 
 - [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=Microsoft%2CDefender%2Cfor%2COffice%2C365) provides a list of new features in development and rolling out.
+
+- [What's new in Microsoft Defender for Office 365](defender-for-office-365-whats-new.md)
 
 - [Microsoft Defender for Office 365 Service Description](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp) describes features and availability across Defender for Office 365 plans.
 
