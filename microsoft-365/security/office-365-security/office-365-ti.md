@@ -2,8 +2,8 @@
 title: Threat investigation & response capabilities in Microsoft Defender for Office 365
 f1.keywords:
   - NOCSH
-ms.author: tracyp
-author: msfttracyp
+ms.author: chrisda
+ms.author: chrisda
 manager: dansimp
 ms.date: 10/10/2023
 audience: Admin

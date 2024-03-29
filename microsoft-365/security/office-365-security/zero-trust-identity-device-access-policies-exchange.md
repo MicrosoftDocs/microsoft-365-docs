@@ -1,8 +1,8 @@
 ---
 title: Secure email recommended policies
 description: Describes the policies for Microsoft recommendations about how to apply email policies and configurations.
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+ms.author: chrisda
 manager: dansimp
 ms.service: microsoft-365-zero-trust
 ms.topic: conceptual
