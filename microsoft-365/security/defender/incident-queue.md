@@ -26,7 +26,11 @@ appliesto:
 
 # Prioritize incidents in the Microsoft Defender portal
 
-The unified SOC platform in the Microsoft Defender portal applies correlation analytics and aggregates related alerts and automated investigations from different products into an incident. Microsoft Sentinel and Defender XDR also trigger unique alerts on activities that can only be identified as malicious given the end-to-end visibility in the unified platform across the entire suite of products. This view gives your security analysts the broader attack story, which helps them better understand and deal with complex threats across your organization.
+The unified security operations platform in the Microsoft Defender portal applies correlation analytics and aggregates related alerts and automated investigations from different products into an incident. Microsoft Sentinel and Defender XDR also trigger unique alerts on activities that can only be identified as malicious given the end-to-end visibility in the unified platform across the entire suite of products. This view gives your security analysts the broader attack story, which helps them better understand and deal with complex threats across your organization.
+
+[!INCLUDE [unified-soc-preview](../../includes/unified-soc-preview.md)]
+
+## Incident queue
 
 The **Incident queue** shows a collection of incidents that were created across devices, users, mailboxes, and other resources. It helps you sort through incidents to prioritize and create an informed cybersecurity response decision, a process known as incident triage.
 
