@@ -1,17 +1,13 @@
 ---
 title: Manage incidents in Microsoft Defender XDR
 description: Learn how to assign, update the status,
-keywords: incident, incidents, attack story, analyze, response, alerts, correlated alerts, assign, update, status, manage, classification, microsoft, 365, m365
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: 
   - NOCSH
 ms.author: diannegali
 author: diannegali
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
   - m365-security
@@ -21,7 +17,7 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.date: 01/22/2024
+ms.date: 03/28/2024
 ---
 
 # Manage incidents in Microsoft Defender XDR

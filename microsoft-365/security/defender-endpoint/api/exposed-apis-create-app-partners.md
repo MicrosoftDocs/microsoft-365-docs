@@ -59,7 +59,7 @@ The following steps guide you how to create a Microsoft Entra application, get a
 
 2. Navigate to **Microsoft Entra ID** \> **App registrations** \> **New registration**.
 
-   :::image type="content" source="../images/atp-azure-new-app2.png" alt-text="The navigation to application registration pane" lightbox="../images/atp-azure-new-app2.png":::
+   :::image type="content" source="../media/atp-azure-new-app2.png" alt-text="The navigation to application registration pane" lightbox="../media/atp-azure-new-app2.png":::
 
 3. In the registration form:
 
@@ -69,7 +69,7 @@ The following steps guide you how to create a Microsoft Entra application, get a
 
    - Redirect URI - type: Web, URI: https://portal.azure.com
 
-     :::image type="content" source="../images/atp-api-new-app-partner.png" alt-text="The Microsoft Azure partner application registration page" lightbox="../images/atp-api-new-app-partner.png":::
+     :::image type="content" source="../media/atp-api-new-app-partner.png" alt-text="The Microsoft Azure partner application registration page" lightbox="../media/atp-api-new-app-partner.png":::
 
 4. Allow your Application to access Microsoft Defender for Endpoint and assign it with the minimal set of permissions required to complete the integration.
 
@@ -77,7 +77,7 @@ The following steps guide you how to create a Microsoft Entra application, get a
 
    - Note that *WindowsDefenderATP* doesn't appear in the original list. Start writing its name in the text box to see it appear.
 
-     :::image type="content" source="../images/add-permission.png" alt-text="The Add a permission option" lightbox="../images/add-permission.png":::
+     :::image type="content" source="../media/add-permission.png" alt-text="The Add a permission option" lightbox="../media/add-permission.png":::
 
 ### Request API permissions
 
@@ -90,13 +90,13 @@ In the following example we use **'Read all alerts'** permission:
 
 1. Choose **Application permissions** \> **Alert.Read.All** > select on **Add permissions**
 
-   :::image type="content" source="../images/application-permissions.png" alt-text="The option that allows to add a permission" lightbox="../images/application-permissions.png":::
+   :::image type="content" source="../media/application-permissions.png" alt-text="The option that allows to add a permission" lightbox="../media/application-permissions.png":::
 
 2. Select **Grant consent**
 
    - **Note**: Every time you add permission you must select on **Grant consent** for the new permission to take effect.
 
-   :::image type="content" source="../images/grant-consent.png" alt-text="The option that allows consent to be granted" lightbox="../images/grant-consent.png":::
+   :::image type="content" source="../media/grant-consent.png" alt-text="The option that allows consent to be granted" lightbox="../media/grant-consent.png":::
 
 3. Add a secret to the application.
 
@@ -110,7 +110,7 @@ In the following example we use **'Read all alerts'** permission:
 
    - On your application page, go to **Overview** and copy the following information:
 
-     :::image type="content" source="../images/app-id.png" alt-text="The create application's ID" lightbox="../images/app-id.png":::
+     :::image type="content" source="../media/app-id.png" alt-text="The create application's ID" lightbox="../media/app-id.png":::
 
 5. Add the application to your customer's tenant.
 
@@ -128,7 +128,7 @@ In the following example we use **'Read all alerts'** permission:
 
    After clicking on the consent link, sign in with the Global Administrator of the customer's tenant and consent the application.
 
-   :::image type="content" source="../images/app-consent-partner.png" alt-text="The Accept button" lightbox="../images/app-consent-partner.png":::
+   :::image type="content" source="../media/app-consent-partner.png" alt-text="The Accept button" lightbox="../media/app-consent-partner.png":::
 
    In addition, you'll need to ask your customer for their tenant ID and save it for future use when acquiring the token.
 

@@ -20,7 +20,7 @@ ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 1/24/2024
+ms.date: 3/7/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
@@ -64,7 +64,7 @@ Watch this short video to learn how you can use reports to understand the effect
 
 The **Mail latency report** shows you an aggregate view of the mail delivery and detonation latency experienced within your Defender for Office 365 organization. Mail delivery times in the service are affected by many factors, and the absolute delivery time in seconds is often not a good indicator of success or a problem. A slow delivery time on one day might be considered an average delivery time on another day, or vice-versa. This report tries to qualify message delivery based on statistical data about the observed delivery times of other messages.
 
-Client side and network latency aren't included.
+Client-side latency and network latency aren't included in the results.
 
 On the **Email & collaboration reports** page at <https://security.microsoft.com/emailandcollabreport>, find **Mail latency report**, and then select **View details**. Or, to go directly to the report, use <https://security.microsoft.com/mailLatencyReport>.
 
@@ -97,11 +97,11 @@ In the details table below the chart, the following information is available:
 Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter** to modify the report and the details table by selecting one or more of the following values in the flyout that opens:
 
 - **Date (UTC)**: **Start date** and **End date**
-- **Message view**: One of the following values:
-  - **All messages**
-  - **Detonated messages**: One of the following values:
-    - **Inline detonation**: Attachments and links in messages that are fully tested before delivery by Safe Attachments and Safe Links.
-    - **Asynchronous detonation**: [Dynamic delivery](safe-attachments-about.md#dynamic-delivery-in-safe-attachments-policies) of attachments in Safe Attachments and links in email tested after delivery by Safe Links.
+- **Message view**: Select one of tne of the following values:
+  - **All email**
+  - **Detonated email**: After you select this value, select one of the following values that appears:
+    - **Inline detonation**: Links and attachments in messages are fully tested by Safe Links and Safe Attachments before delivery.
+    - **Asynchronous detonation**: [Dynamic delivery](safe-attachments-about.md#dynamic-delivery-in-safe-attachments-policies) of attachments by Safe Attachments and links in email tested by Safe Links after delivery.
 
 When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
@@ -111,7 +111,7 @@ On the **Mail latency report** page, the :::image type="icon" source="../../medi
 
 The **Post-delivery activities** report shows information about email messages that removed from user mailboxes after delivery by zero-hour auto purge (ZAP). For more information about ZAP, see [Zero-hour auto purge (ZAP) in Exchange Online](zero-hour-auto-purge.md).
 
-The report shows real-time information, with updated threat information.
+The report shows real-time information with updated threat information.
 
 On the **Email & collaboration reports** page at <https://security.microsoft.com/emailandcollabreport>, find **Post-delivery activities**, and then select **View details**. Or, to go directly to the report, use <https://security.microsoft.com/reports/ZapReport>.
 
@@ -146,7 +146,7 @@ The details table below the graph shows the following information:
 Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter** to modify the report and the details table by selecting one or more of the following values in the flyout that opens:
 
 - **Date (UTC)**: **Start date** and **End date**.
-- **Verdict**:
+- **Updated threat**: Select one ore mor of the following values:
   - **No threat**
   - **Spam**
   - **Phishing**
@@ -205,11 +205,11 @@ The details table below the chart provides the following near-real-time view of 
 Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter** to modify the report and the details table by selecting one or more of the following values in the flyout that opens:
 
 - **Date (UTC)**: **Start date** and **End date**.
-- **Action**: The same URL click protection actions as previously described.
+- **Action**: The same URL click protection actions as previously described. By default, **Allowed** and **Allowed by tenant admin** aren't selected.
 - **Evaluation**: Select **Yes** or **No**. For more information, see [Try Microsoft Defender for Office 365](try-microsoft-defender-for-office-365.md).
 - **Domains (separated by commas)**: The URL domains listed in the report results.
 - **Recipients (separated by commas)**
-- **Tag**: **All** or the specified user tag (including priority accounts).
+- **Tag**: Leave the value **All** or remove it, double-click in the empty box, and then select **Priority account**. For more information about user tags, see [User tags](user-tags-about.md).
 
 When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
@@ -218,6 +218,9 @@ On the **URL threat protection** page, the :::image type="icon" source="../../me
 ### View data by URL click by application in the URL protection report
 
 :::image type="content" source="../../media/url-threat-protection-report-url-click-by-application-view.png" alt-text="The URL click protection action view in the URL protection report" lightbox="../../media/url-threat-protection-report-url-click-by-application-view.png":::
+
+> [!TIP]
+> URL clicks by guest users are available in the report. Guest user accounts might be compromised or access malicious content inside the organization.
 
 The **View data by URL click by application** view shows the number of URL clicks by apps that support Safe Links:
 
@@ -238,18 +241,15 @@ Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" bord
 
 - **Date (UTC)**: **Start date** and **End date**.
 - **Application**: The same click by application values as previously described.
-- **Action**
+- **Action**: The same values as shown in the [View data by URL click protection action view](#view-data-by-url-click-protection-action-in-the-url-protection-report). By default, **Allowed** and **Allowed by tenant admin** aren't selected.
 - **Evaluation**: Select **Yes** or **No**. For more information, see [Try Microsoft Defender for Office 365](try-microsoft-defender-for-office-365.md).
 - **Domains (separated by commas)**: The URL domains listed in the report results.
 - **Recipients (separated by commas)**
-- **Tag**: **All** or the specified user tag (including priority accounts).
+- **Tag**: Leave the value **All** or remove it, double-click in the empty box, and then select **Priority account**. For more information about user tags, see [User tags](user-tags-about.md).
 
 When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
 On the **URL threat protection** page, the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](reports-email-security.md#schedule-recurring-reports)**, :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Request report](reports-email-security.md#request-on-demand-reports-for-download)**, and :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](reports-email-security.md#export-report-data)** actions are available.
-
-> [!NOTE]
-> URL clicks by guest users are also available in the report. The guest user account could still be compromised or access malicious content inside the organization.
 
 ## Additional reports to view
 
@@ -257,7 +257,7 @@ In addition to the reports described in this article, the following tables descr
 
 |Report|Article|
 |---|---|
-|**Explorer** (Microsoft Defender for Office 365 Plan 2) or **real-time detections** (Microsoft Defender for Office 365 Plan 1)|[Threat Explorer (and real-time detections)](threat-explorer-about.md)|
+|**Explorer** (Microsoft Defender for Office 365 Plan 2) or **real-time detections** (Microsoft Defender for Office 365 Plan 1)|[Threat Explorer (and real-time detections)](threat-explorer-real-time-detections-about.md)|
 |Email security reports that don't require Defender for Office 365|[View email security reports in the Microsoft Defender portal](reports-email-security.md)|
 |Mail flow reports in the Exchange admin center (EAC)|[Mail flow reports in the new Exchange admin center](/exchange/monitoring/mail-flow-reports/mail-flow-reports)|
 

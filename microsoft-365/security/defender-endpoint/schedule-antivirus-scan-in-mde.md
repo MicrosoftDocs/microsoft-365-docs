@@ -153,7 +153,7 @@ Use the following steps to schedule scans:
    ls -la
    ```
 
-   :::image type="content" source="images/chmod-755-mdavfullscan.png" alt-text="7. Change file permissions":::
+   :::image type="content" source="media/chmod-755-mdavfullscan.png" alt-text="7. Change file permissions":::
 
    ```shell
    [root@redhat7 cron.weekly]# ls -la
@@ -180,7 +180,7 @@ Use the following steps to schedule scans:
    cat /logs/mdav_avacron_full_scan.log
    ```
 
-    :::image type="content" source="images/mdav_avacron_full_scan_log.png" alt-text="verify the job ran":::
+    :::image type="content" source="media/mdav_avacron_full_scan_log.png" alt-text="verify the job ran":::
 
     ```shell
     [root@redhat7 cron.weekly] # cat /logs/mdav_avacron_full_scan.log

@@ -57,7 +57,7 @@ For the Application registration stage, you must have a **Global administrator**
 
 2. Navigate to **Microsoft Entra ID** \> **App registrations** \> **New registration**.
 
-   :::image type="content" source="../images/atp-azure-new-app2.png" alt-text="The App registrations option under the Manage pane in the Microsoft Entra admin center"  lightbox="../images/atp-azure-new-app2.png":::
+   :::image type="content" source="../media/atp-azure-new-app2.png" alt-text="The App registrations option under the Manage pane in the Microsoft Entra admin center"  lightbox="../media/atp-azure-new-app2.png":::
 
 3. In the registration form, choose a name for your application and then click **Register**.
 
@@ -68,11 +68,11 @@ For the Application registration stage, you must have a **Global administrator**
      > [!NOTE]
      > WindowsDefenderATP does not appear in the original list. You need to start writing its name in the text box to see it appear.
 
-     :::image type="content" source="../images/add-permission.png" alt-text="The API permissions option under the Manage pane in the Microsoft Entra admin center" lightbox="../images/add-permission.png":::
+     :::image type="content" source="../media/add-permission.png" alt-text="The API permissions option under the Manage pane in the Microsoft Entra admin center" lightbox="../media/add-permission.png":::
 
    - Choose **Application permissions** \> **Alert.Read.All** > Click on **Add permissions**.
 
-     :::image type="content" source="../images/application-permissions.png" alt-text="The permission type and settings panes in the Request API permissions page" lightbox="../images/application-permissions.png":::
+     :::image type="content" source="../media/application-permissions.png" alt-text="The permission type and settings panes in the Request API permissions page" lightbox="../media/application-permissions.png":::
 
      > [!IMPORTANT]
      > You need to select the relevant permissions. 'Read All Alerts' is only an example!
@@ -88,7 +88,7 @@ For the Application registration stage, you must have a **Global administrator**
    > [!NOTE]
    > Every time you add permission, you must click on **Grant consent** for the new permission to take effect.
 
-   :::image type="content" source="../images/grant-consent.png" alt-text="The grant permission consent option in the Microsoft Entra admin center" lightbox="../images/grant-consent.png":::
+   :::image type="content" source="../media/grant-consent.png" alt-text="The grant permission consent option in the Microsoft Entra admin center" lightbox="../media/grant-consent.png":::
 
 6. Add a secret to the application.
 
@@ -103,7 +103,7 @@ For the Application registration stage, you must have a **Global administrator**
 
    On your application page, go to **Overview** and copy the following:
 
-   :::image type="content" source="../images/app-and-tenant-ids.png" alt-text="The application details pane under the Overview menu item in the Microsoft Entra admin center" lightbox="../images/app-and-tenant-ids.png":::
+   :::image type="content" source="../media/app-and-tenant-ids.png" alt-text="The application details pane under the Overview menu item in the Microsoft Entra admin center" lightbox="../media/app-and-tenant-ids.png":::
 
 Done! You have successfully registered an application!
 
@@ -141,7 +141,7 @@ Done! You have successfully registered an application!
   - Paste in the top box.
   - Look for the "roles" section. Find the _Alert.Read.All_ role.
 
-  :::image type="content" source="../images/api-jwt-ms.png" alt-text="The Decoded Token pane for jwt.ms" lightbox="../images/api-jwt-ms.png":::
+  :::image type="content" source="../media/api-jwt-ms.png" alt-text="The Decoded Token pane for jwt.ms" lightbox="../media/api-jwt-ms.png":::
 
 ### Let's get the Alerts!
 

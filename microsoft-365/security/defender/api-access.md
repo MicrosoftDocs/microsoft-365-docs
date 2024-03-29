@@ -1,12 +1,7 @@
 ---
 title: Access the Microsoft Defender XDR APIs
 description: Learn how to access the Microsoft Defender XDR APIs
-keywords: access, apis, application context, user context, aad application, access token
-search.product: eADQiWindows 10XVcnh
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: 
   - NOCSH
 ms.author: macapara

@@ -1,12 +1,7 @@
 ---
 title: Supported Microsoft Defender XDR APIs
 description: Supported Microsoft Defender XDR APIs
-keywords: Microsoft Defender XDR, APIs, api
-search.product: eADQiWindows 10XVcnh
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: 
   - NOCSH
 ms.author: macapara

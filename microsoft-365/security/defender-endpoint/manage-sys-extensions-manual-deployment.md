@@ -34,11 +34,11 @@ You might see the prompt that's shown in the following screenshot:
 
 1. From this second-prompt screen, select **OK**. You'll receive a notification message that reads **Installation succeeded**, as shown in the following screenshot:
 
-   :::image type="content" source="images/installation-succeeded-notification-message.png" alt-text="The screen displaying the installation succeeded notification message." lightbox="images/installation-succeeded-notification-message.png":::
+   :::image type="content" source="media/installation-succeeded-notification-message.png" alt-text="The screen displaying the installation succeeded notification message." lightbox="media/installation-succeeded-notification-message.png":::
 
 1. On the screen displaying the **Installation succeeded** notification message, select **OK**. You'll return to the following screen:
 
-   :::image type="content" source="images/mde-menu.png" alt-text="The Microsoft Defender for Endpoint menu containing the x symbol." lightbox="images/mde-menu.png":::
+   :::image type="content" source="media/mde-menu.png" alt-text="The Microsoft Defender for Endpoint menu containing the x symbol." lightbox="media/mde-menu.png":::
 
 1. From the menu bar, click the **x** symbol on the shield. You'll get the options shown in the following screenshot:
 
@@ -96,26 +96,26 @@ If you run systemextensionsctl list, the following screen appears:
 
 2. Select **Accessibility** from the left navigation pane, and click **+**.
 
-   :::image type="content" source="images/accessibility-and-plus-icon.png" alt-text="The Accessibility menu item and the Plus icon." lightbox="images/accessibility-and-plus-icon.png":::
+   :::image type="content" source="media/accessibility-and-plus-icon.png" alt-text="The Accessibility menu item and the Plus icon." lightbox="media/accessibility-and-plus-icon.png":::
 
 3. From the resultant screen, select **Applications** from the **Favorites** pane in the left-side of the screen; select **Microsoft Defender**; and then select **Open** at the bottom-right of the screen.
 
-   :::image type="content" source="images/applications-md-options.png" alt-text="The process of selecting Applications and Microsoft Defender." lightbox="images/applications-md-options.png":::
+   :::image type="content" source="media/applications-md-options.png" alt-text="The process of selecting Applications and Microsoft Defender." lightbox="media/applications-md-options.png":::
    
 4. From the resultant screen, check the **Microsoft Defender** checkbox.
 
-   :::image type="content" source="images/checking-md-checkbox.png" alt-text="Checking the Microsoft Defender checkbox." lightbox="images/checking-md-checkbox.png":::
+   :::image type="content" source="media/checking-md-checkbox.png" alt-text="Checking the Microsoft Defender checkbox." lightbox="media/checking-md-checkbox.png":::
 
 ### Full Disk Access
 
 1. On the **Security & Privacy** screen, select the **Privacy** tab.
 1. Select **Full Disk Access** from the left navigation pane, and then click the **Lock** icon.
 
-   :::image type="content" source="images/full-disk-access-and-lock-icon.png" alt-text="The Full Disk Access option in the menu and the Lock icon." lightbox="images/full-disk-access-and-lock-icon.png":::
+   :::image type="content" source="media/full-disk-access-and-lock-icon.png" alt-text="The Full Disk Access option in the menu and the Lock icon." lightbox="media/full-disk-access-and-lock-icon.png":::
 
 1. Confirm that the Microsoft Defender extension has full disk access; if not, check the **Microsoft Defender** checkbox.
  
-   :::image type="content" source="images/check-md-checkbox.png" alt-text="Checking the MD checkbox." lightbox="images/check-md-checkbox.png":::
+   :::image type="content" source="media/check-md-checkbox.png" alt-text="Checking the MD checkbox." lightbox="media/check-md-checkbox.png":::
 
 ### Notifications
 
@@ -135,7 +135,7 @@ If you run systemextensionsctl list, the following screen appears:
 
 #### mdatp health output
 
-:::image type="content" source="images/mdatp-health-output.png" alt-text="The mdatp health output screen." lightbox="images/mdatp-health-output.png":::
+:::image type="content" source="media/mdatp-health-output.png" alt-text="The mdatp health output screen." lightbox="media/mdatp-health-output.png":::
 
 #### Check the system extensions
 
@@ -145,4 +145,4 @@ In terminal, run the following command to check the system extensions:
 
 The execution of this command is shown in the following screenshot:
 
-:::image type="content" source="images/command-to-check-system-extensions.png" alt-text="The command to check the system extensions." lightbox="images/command-to-check-system-extensions.png":::
+:::image type="content" source="media/command-to-check-system-extensions.png" alt-text="The command to check the system extensions." lightbox="media/command-to-check-system-extensions.png":::
