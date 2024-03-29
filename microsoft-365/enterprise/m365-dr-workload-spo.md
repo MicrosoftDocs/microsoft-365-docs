@@ -91,6 +91,12 @@ The following search features are affected:
 
 As part of the migration, the _Primary Provisioned Geography_ changes and all new content will be stored at rest in the new _Primary Provisioned Geography_. Existing content will move in the background with no impact to you for up to 90 days after the first change to the SharePoint data location in the admin center.
 
+### SharePoint 2013 workflow
+
+As part of our ongoing efforts to modernize SharePoint workflow capabilities, we have previously announced the [retirement plan of SharePoint 2013 workflow service](https://support.microsoft.com/office/sharepoint-2013-workflow-retirement-4613d9cf-69aa-40f7-b6bf-6e7831c9691e#:~:text=SharePoint%202013%20workflow%20will%20be%20turned%20off%20for,environments%20including%20Government%20Clouds%20and%20Department%20of%20Defense.). In alignment with this plan, we want to inform you that SharePoint 2013 workflow will not be available in the new local regions of Mexico and Spain, or in any future local regions that we may launch. This means that if you migrate your SharePoint data to a new region, you will not be able to use SharePoint 2013 workflow for your business processes and scenarios.
+
+Please refer to the link above for more information about the retirement plan and the alternatives for SharePoint workflow. If you have any questions or concerns, please contact Microsoft support.
+
 ## **Multi-Geo Capabilities in SharePoint / OneDrive**
 
 Multi-Geo capabilities in OneDrive and SharePoint enable control of shared resources like SharePoint team sites and Microsoft 365 group mailboxes stored at rest in a specified _Macro Region Geography_ or _Local Region Geography_.
