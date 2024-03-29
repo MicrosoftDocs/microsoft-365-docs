@@ -53,7 +53,7 @@ You can dive deeper into your content to truly understand it, and you can turn t
 
 :::row:::
    :::column span="":::
-      ![Image of generic scenario icon.](../media/content-understanding/scenarios-image.png) 
+      ![Image of generic autofill icon.](../media/content-understanding/autofill-image.png) 
    :::column-end:::
    :::column span="3":::
       Autofill columns automatically extract, summarize, or generate content from files uploaded to a SharePoint document library. Using large language models (LLMs), designated columns can save metadata automatically, streamlining the process of managing files and their associated information.
