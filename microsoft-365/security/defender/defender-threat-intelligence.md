@@ -2,12 +2,8 @@
 title: Microsoft Defender Threat Intelligence in Microsoft Defender XDR
 ms.reviewer: 
 description: Learn what steps you need to take to get started with Defender Threat Intelligence in Microsoft Defender XDR
-keywords: defender threat intelligence, Microsoft Defender XDR
 search.appverid: met150
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium

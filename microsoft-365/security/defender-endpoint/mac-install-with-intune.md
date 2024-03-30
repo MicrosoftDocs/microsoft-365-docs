@@ -14,7 +14,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: macos
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 03/28/2024
 ---
 
 # Deploy Microsoft Defender for Endpoint on macOS with Microsoft Intune
@@ -28,23 +28,7 @@ ms.date: 12/18/2020
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for business](https://www.microsoft.com/security/business/endpoint-security/microsoft-defender-business)
 
-This article describes how to deploy Microsoft Defender for Endpoint on macOS through Microsoft Intune. A successful deployment requires the completion of all of the following steps:
-
-1. [Approve system extension](#step-1-approve-system-extensions)
-1. [Network Filter](#step-2-network-filter)
-1. [Full Disk Access](#step-3-full-disk-access)
-1. [Background services](#step-4-background-services)
-1. [Notifications](#step-5-notifications)
-1. [ Accessibility settings](#step-6-accessibility-settings)
-1. [Microsoft AutoUpdate](#step-7-microsoft-autoupdate)
-1. [Microsoft Defender for Endpoint configuration settings](#step-8-microsoft-defender-for-endpoint-configuration-settings)
-1. [Network protection for Microsoft Defender for Endpoint on macOS](#step-9-network-protection-for-microsoft-defender-for-endpoint-on-macos)
-1. [Device control for Microsoft Defender for Endpoint on macOS](#step-10-device-control-for-microsoft-defender-for-endpoint-on-macos)
-1. [Data Loss Prevention for Endpoint](#step-11-data-loss-prevention-dlp-for-endpoint)
-1. [Check status of the PList(.mobileconfig)](#step-12-check-status-of-plistmobileconfig)
-1. [Publish application](#step-13-publish-application)
-1. [Download the onboarding package](#step-14-download-the-onboarding-package)
-1. [Deploy the onboarding package](#step-15-deploy-the-onboarding-package)
+This article describes how to deploy Microsoft Defender for Endpoint on macOS through Microsoft Intune. 
 
 ## Prerequisites and system requirements
 
@@ -56,18 +40,18 @@ The following table summarizes the steps you would need to take to deploy and ma
 
 |Step |Sample file name  |Bundle identifier  |
 |---------|---------|---------|
-|Approve system extension|sysext.mobileconfig|N/A|
-|Network extension policy|netfilter.mobileconfig|N/A|
-|Full Disk Access|fulldisk.mobileconfig|com.microsoft.wdav.epsext|
-|Microsoft Defender for Endpoint configuration settings <p> **Note:** If you're planning to run a third-party AV for macOS, set passiveMode to true.|MDE_MDAV_and_exclusion_settings_Preferences.xml|com.microsoft.wdav|
-|Background services|background_services.mobileconfig|N/A|
-|Configure Microsoft Defender for Endpoint notifications|notif.mobileconfig|com.microsoft.wdav.tray|
-|Accessibility settings|accessibility.mobileconfig|com.microsoft.dlp.daemon|
-|Configure Microsoft AutoUpdate (MAU)|com.microsoft.autoupdate2.mobileconfig|com.microsoft.autoupdate2|
-|Device Control|DeviceControl.mobileconfig|N/A|
-|Data Loss Prevention|DataLossPrevention.mobileconfig|N/A|
-|Download the onboarding package|WindowsDefenderATPOnboarding__MDATP_wdav.atp.xml|com.microsoft.wdav.atp|
-|Deploy the Microsoft Defender for Endpoint on macOS application|Wdav.pkg|N/A|
+|Approve system extension|`sysext.mobileconfig`|N/A|
+|Network extension policy|`netfilter.mobileconfig`|N/A|
+|Full Disk Access|`fulldisk.mobileconfig`|`com.microsoft.wdav.epsext`|
+|Microsoft Defender for Endpoint configuration settings <br/><br/>If you're planning to run non-Microsoft antivirus on Mac, set `passiveMode` to `true`.|`MDE_MDAV_and_exclusion_settings_Preferences.xml`|`com.microsoft.wdav`|
+|Background services|`background_services.mobileconfig`|N/A|
+|Configure Microsoft Defender for Endpoint notifications|`notif.mobileconfig`|`com.microsoft.wdav.tray`|
+|Accessibility settings|`accessibility.mobileconfig`|`com.microsoft.dlp.daemon`|
+|Configure Microsoft AutoUpdate (MAU)|`com.microsoft.autoupdate2.mobileconfig`|`com.microsoft.autoupdate2`|
+|Device Control|`DeviceControl.mobileconfig`|N/A|
+|Data Loss Prevention|`DataLossPrevention.mobileconfig`|N/A|
+|Download the onboarding package|`WindowsDefenderATPOnboarding__MDATP_wdav.atp.xml`|`com.microsoft.wdav.atp`|
+|Deploy the Microsoft Defender for Endpoint on macOS application|`Wdav.pkg`|N/A|
 
 ## Create system configuration profiles
 
@@ -81,23 +65,31 @@ In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2
    This profile is needed for Big Sur (11) or later. It is ignored on older macOS since they use the kernel extension.
 
 1. Under **Configuration profiles**, select **Create Profile**.
+
 1. Under **Platform**, select **macOS**.
+
 1. Under **Profile type**, select **Templates**.
+
 1. Under **Template name**, select **Extensions**.
-1. Click **Create**.
-1. On the **Basics** tab, **Name** the profile. For example, 'SysExt-prod-macOS-Default-MDE'.
-1. Click **Next**.
+
+1. Select **Create**.
+
+1. On the **Basics** tab, **Name** the profile. For example, `SysExt-prod-macOS-Default-MDE`.
+
+1. Select **Next**.
+
 1. On the **Configuration settings** tab, expand **System Extensions** and add the following entries in the **Allowed system extensions** section:
 
     |Bundle identifier|Team identifier|
     |---|---|
-    |com.microsoft.wdav.epsext|UBF8T346G9|
-    |com.microsoft.wdav.netext|UBF8T346G9|
+    |`com.microsoft.wdav.epsext`|`UBF8T346G9`|
+    |`com.microsoft.wdav.netext`|`UBF8T346G9`|
 
     :::image type="content" source="media/mac-system-extension-intune2.png" alt-text="The settings of the system's extension" lightbox="media/mac-system-extension-intune2.png":::
 
 1. On the **Assignments** tab, assign the profile to a group where the macOS devices and/or users are located, or All Users and All devices.
-1. Review the configuration profile. Click **Create**.
+
+1. Review the configuration profile. Select **Create**.
 
 ### Step 2: Network filter
 
@@ -108,17 +100,28 @@ Download [netfilter.mobileconfig](https://raw.githubusercontent.com/microsoft/md
 To configure network filter:
 
 1. Under **Configuration profiles**, select **Create Profile**.
+
 1. Under **Platform**, select **macOS**.
+
 1. Under **Profile type**, select **Templates**.
+
 1. Under **Template name**, select **Custom**.
-1. Click **Create**.
-1. On the **Basics** tab, **Name** the profile. For example, 'NetFilter-prod-macOS-Default-MDE'.
-1. Click **Next**.
-1. On the **Configuration settings** tab, enter a Cus**tom configuration profile** name. For example, 'NetFilter-prod-macOS-Default-MDE'.
+
+1. Select **Create**.
+
+1. On the **Basics** tab, **Name** the profile. For example, `NetFilter-prod-macOS-Default-MDE`.
+
+1. Select **Next**.
+
+1. On the **Configuration settings** tab, enter a Cus**tom configuration profile** name. For example, `NetFilter-prod-macOS-Default-MDE`.
+
 1. Choose a Deployment channel.
-1. Click **Next**.
+
+1. Select **Next**.
+
 1. On the **Assignments** tab, assign the profile to a group where the macOS devices and/or users are located, or All Users and All devices.
-1. Review the configuration profile. Click **Create**.
+
+1. Review the configuration profile. Select **Create**.
 
 ### Step 3: Full Disk Access
 
@@ -131,18 +134,30 @@ Download [**fulldisk.mobileconfig**](https://raw.githubusercontent.com/microsoft
 
 To configure Full Disk Access:
 1. Under **Configuration profiles**, select **Create Profile**.
+
 1. Under **Platform**, select **macOS**.
+
 1. Under **Profile type**, select **Templates**.
+
 1. Under **Template name**, select **Custom**.
-1. Click **Create**.
-1. On the **Basics** tab, **Name** the profile. For example, 'FullDiskAccess-prod-macOS-Default-MDE'.
-1. Click **Next**.
-1. On the **Configuration settings** tab, enter a **Custom configuration profile** name. For example, 'Fulldisk.mobileconfig'.
+
+1. Select **Create**.
+
+1. On the **Basics** tab, **Name** the profile. For example, `FullDiskAccess-prod-macOS-Default-MDE`.
+
+1. Select **Next**.
+
+1. On the **Configuration settings** tab, enter a **Custom configuration profile** name. For example, `Fulldisk.mobileconfig`.
+
 1. Choose a **Deployment channel**.
-1. Click **Next**.
+
+1. Select **Next**.
+
 1. Select a **Configuration profile file**.
+
 1. On the **Assignments** tab, assign the profile to a group where the macOS devices and/or users are located, or All Users and All devices.
-1. Review the configuration profile. Click **Create**.
+
+1. Review the configuration profile. Select **Create**.
 
 ### Step 4: Background services
 
@@ -156,18 +171,30 @@ Download [background_services.mobileconfig](https://raw.githubusercontent.com/mi
 To configure background services:
 
 1. Under **Configuration profiles**, select **Create Profile**.
+
 1. Under **Platform**, select **macOS**.
+
 1. Under **Profile type**, select **Templates**.
+
 1. Under **Template name**, select **Custom**.
-1. Click **Create**.
-1. On the **Basics** tab, **Name** the profile. For example, 'FullDiskAccess-prod-macOS-Default-MDE'.
-1. Click **Next**.
-1. On the **Configuration settings** tab, enter a **Custom configuration profile** name. For example, 'Fulldisk.mobileconfig'.
+
+1. Select **Create**.
+
+1. On the **Basics** tab, **Name** the profile. For example, `FullDiskAccess-prod-macOS-Default-MDE`.
+
+1. Select **Next**.
+
+1. On the **Configuration settings** tab, enter a **Custom configuration profile** name. For example, `Fulldisk.mobileconfig`.
+
 1. Choose a **Deployment channel**.
-1. Click **Next**.
+
+1. Select **Next**.
+
 1. Select a **Configuration profile file**.
+
 1. On the **Assignments** tab, assign the profile to a group where the macOS devices and/or users are located, or All Users and All devices.
-1. Review the configuration profile. Click **Create**.
+
+1. Review the configuration profile. Select **Create**.
 
 ### Step 5: Notifications
 
@@ -175,7 +202,7 @@ This profile is used to allow Microsoft Defender for Endpoint on macOS and Micro
 
 Download [notif.mobileconfig](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/notif.mobileconfig) from [GitHub repository](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles).
 
-To turn off notifications for the end users, you can change '**Show NotificationCenter**' from 'true' to 'false' in 
+To turn off notifications for the end users, you can change **Show NotificationCenter** from `true` to `false` in 
 [notif.mobileconfig](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/notif.mobileconfig).
 
 :::image type="content" source="media/image.png" alt-text="Screenshot showing notif.mobileconfig with ShowNotificationCenter set to True.":::
@@ -183,18 +210,30 @@ To turn off notifications for the end users, you can change '**Show Notification
 To configure notifications:
 
 1. Under **Configuration profiles**, select **Create Profile**.
+
 1. Under **Platform**, select **macOS**.
+
 1. Under **Profile type**, select **Templates**.
+
 1. Under **Template name**, select **Custom**.
-1. Click **Create**.
-1. On the **Basics** tab, **Name** the profile. For example, 'FullDiskAccess-prod-macOS-Default-MDE'.
-1. Click **Next**.
-1. On the **Configuration settings** tab, enter a **Custom configuration profile** name. For example, 'Notification.mobileconfig'.
+
+1. Select **Create**.
+
+1. On the **Basics** tab, **Name** the profile. For example, `FullDiskAccess-prod-macOS-Default-MDE`.
+
+1. Select **Next**.
+
+1. On the **Configuration settings** tab, enter a **Custom configuration profile** name. For example, `Notification.mobileconfig`.
+
 1. Choose a **Deployment channel**.
-1. Click **Next**.
+
+1. Select **Next**.
+
 1. Select a **Configuration profile file**.
+
 1. On the **Assignments** tab, assign the profile to a group where the macOS devices and/or users are located, or All Users and All devices.
-1. Review the configuration profile. Click **Create**.
+
+1. Review the configuration profile. Select **Create**.
 
 
 ### Step 6: Accessibility settings
@@ -204,18 +243,30 @@ This profile is used to allow Microsoft Defender for Endpoint on macOS to access
 Download [accessibility.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/accessibility.mobileconfig) from [GitHub repository](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles).
 
 1. Under **Configuration profiles**, select **Create Profile**.
+
 1. Under **Platform**, select **macOS**.
+
 1. Under **Profile type**, select **Templates**.
+
 1. Under **Template name**, select **Custom**.
-1. Click **Create**.
-1. On the **Basics** tab, **Name** the profile. For example, 'Accessibility-prod-macOS-Default-MDE'.
-1. Click **Next**.
-1. On the **Configuration settings** tab, enter a **Custom configuration profile** name. For example, 'Accessibility.mobileconfig'.
+
+1. Select **Create**.
+
+1. On the **Basics** tab, **Name** the profile. For example, `Accessibility-prod-macOS-Default-MDE`.
+
+1. Select **Next**.
+
+1. On the **Configuration settings** tab, enter a **Custom configuration profile** name. For example, `Accessibility.mobileconfig`.
+
 1. Choose a **Deployment channel**.
-1. Click **Next**.
+
+1. Select **Next**.
+
 1. Select a **Configuration profile file**.
+
 1. On the **Assignments** tab, assign the profile to a group where the macOS devices and/or users are located, or All Users and All devices.
-1. Review the configuration profile. Click **Create**.
+
+1. Review the configuration profile. Select **Create**.
 
 ### Step 7: Microsoft AutoUpdate
 
@@ -233,22 +284,34 @@ Download [AutoUpdate2.mobileconfig](https://github.com/microsoft/mdatp-xplat/blo
 > The sample AutoUpdate2.mobileconfig from the GitHub repository has it set to Current Channel (Production).
 
 1. Under **Configuration profiles**, select **Create Profile**.
+
 1. Under **Platform**, select **macOS**.
+
 1. Under **Profile type**, select **Templates**.
+
 1. Under **Template name**, select **Custom**.
-1. Click **Create**.
-1. On the **Basics** tab, **Name** the profile. For example, 'Autoupdate-prod-macOS-Default-MDE'.
-1. Click **Next**.
-1. On the **Configuration settings** tab, enter a **Custom configuration profile** name. For example, 'Autoupdate.mobileconfig'.
+
+1. Select **Create**.
+
+1. On the **Basics** tab, **Name** the profile. For example, `Autoupdate-prod-macOS-Default-MDE`.
+
+1. Select **Next**.
+
+1. On the **Configuration settings** tab, enter a **Custom configuration profile** name. For example, `Autoupdate.mobileconfig`.
+
 1. Choose a **Deployment channel**.
-1. Click **Next**.
+
+1. Select **Next**.
+
 1. Select a **Configuration profile file**.
+
 1. On the **Assignments** tab, assign the profile to a group where the macOS devices and/or users are located, or All Users and All devices.
-1. Review the configuration profile. Click **Create**.
+
+1. Review the configuration profile. Select **Create**.
 
 ### Step 8: Microsoft Defender for Endpoint configuration settings
 
-In this step, we'll go over the "Preferences," which enables you to configure anti-malware and edr policies using Microsoft Defender portal and Microsoft Intune.
+In this step, we go over the "Preferences," which enables you to configure anti-malware and EDR policies using Microsoft Defender portal and Microsoft Intune.
 
 #### Set policies using Microsoft Defender portal
 
@@ -257,11 +320,16 @@ Go through [Configure Microsoft Defender for Endpoint in Intune](/mem/intune/pro
 In the [Microsoft Defender portal](https://sip.security.microsoft.com/homepage?tid=72f988bf-86f1-41af-91ab-2d7cd011db47):
 
 1. Go to **Configuration management** > **Endpoint security policies** > **Mac policies** > **Create new policy**.
+
 1. Under **Select Platform**, select **macOS**.
-1. Under **Select Template**, choose a template and click **Create Policy**.
+
+1. Under **Select Template**, choose a template and select **Create Policy**.
+
 1. Enter the Name and Description of the policy.
-1. Click **Next**.
-1. On the **Assignments** tab,assign the profile to a group where the macOS devices and/or users are located, or All Users and All devices.
+
+1. Select **Next**.
+
+1. On the **Assignments** tab, assign the profile to a group where the macOS devices and/or users are located, or All Users and All devices.
 
 For more information about managing security settings, see:
 
@@ -280,24 +348,26 @@ For more information, see [Set preferences for Microsoft Defender for Endpoint o
 In the [Microsoft Defender portal](https://sip.security.microsoft.com/homepage?tid=72f988bf-86f1-41af-91ab-2d7cd011db47):
 
 1. Go to **Configuration management** > **Endpoint security policies** > **Mac policies** > **Create new policy**.
+
 1. Under **Select Platform**, select **macOS**.
-1. Under **Select Template**, select **Microsoft Defender Antivirus** and click **Create Policy**.
+
+1. Under **Select Template**, select **Microsoft Defender Antivirus** and select **Create Policy**.
 
    :::image type="content" alt-text="networkprotection" source="images/network-protection1.jpg" lightbox="images/network-protection1.jpg":::
 
-1. On the **Basics** tab, enter the **Name** and **Description** of the policy. Click **Next**.
+1. On the **Basics** tab, enter the **Name** and **Description** of the policy. Select **Next**.
 
    :::image type="content" source="images/networkprotection2.png" alt-text="Basicstab":::
 
-1. On the **Configuration Settings** tab, under Network Protection, select an **Enforcement level**. Click **Next**.
+1. On the **Configuration Settings** tab, under Network Protection, select an **Enforcement level**. Select **Next**.
 
    :::image type="content" source="images/networkprotection3.png" alt-text="configurationsettings":::
 
-1. On the **Assignments** tab,assign the profile to a group where the macOS devices and/or users are located, or All Users and All devices.
+1. On the **Assignments** tab, assign the profile to a group where the macOS devices and/or users are located, or All Users and All devices.
 
    :::image type="content" source="images/networkprotection4.png" alt-text="np4":::
 
-1. Review the policy in **Review+Create** and click **Save**. 
+1. Review the policy in **Review+Create** and select **Save**. 
 
 
 > [!TIP]
@@ -369,15 +439,16 @@ This step enables deploying Microsoft Defender for Endpoint to enrolled machines
    :::image type="content" source="media/mdatp-8-app-before.png" alt-text="The application's overview page" lightbox="media/mdatp-8-app-before.png":::
 
 1. Select **By platform** > **macOS** > **Add**.
-1. Under **App type**, select **macOS**. Click **Select**.
+
+1. Under **App type**, select **macOS**. Select **Select**.
 
    :::image type="content" source="media/mdatp-9-app-type.png" alt-text="The specific application type" lightbox="media/mdatp-9-app-type.png":::
 
-1. On the **App information**, keep the default values and click **Next**.
+1. On the **App information**, keep the default values and select **Next**.
 
    :::image type="content" source="media/mdatp-10-properties.png" alt-text="The application properties page" lightbox="media/mdatp-10-properties.png":::
 
-1. On the **Assignments** tab, click **Next**.
+1. On the **Assignments** tab, select **Next**.
 
    :::image type="content" source="media/mdatp-11-assignments.png" alt-text="The Intune assignments information page" lightbox="media/mdatp-11-assignments.png":::
 
@@ -405,41 +476,48 @@ To download the onboarding packages from Microsoft 365 Defender portal:
 
 4. Extract the contents of the .zip file:
 
-    ```bash
-    unzip WindowsDefenderATPOnboardingPackage.zip
-    ```
+  ```bash
+  unzip WindowsDefenderATPOnboardingPackage.zip
+  ```
 
-    ```console
-    Archive:  WindowsDefenderATPOnboardingPackage.zip
-    warning:  WindowsDefenderATPOnboardingPackage.zip appears to use backslashes as path separators
-      inflating: intune/kext.xml
-      inflating: intune/WindowsDefenderATPOnboarding.xml
-      inflating: jamf/WindowsDefenderATPOnboarding.plist
-    ```
+  ```console
+  Archive:  WindowsDefenderATPOnboardingPackage.zip
+  warning:  WindowsDefenderATPOnboardingPackage.zip appears to use backslashes as path separators
+    inflating: intune/kext.xml
+    inflating: intune/WindowsDefenderATPOnboarding.xml
+    inflating: jamf/WindowsDefenderATPOnboarding.plist
+  ```
 
-    :::image type="content" alt-text="Sample description" source="media/deploy-onboarding-package.png" lightbox="media/deploy-onboarding-package.png":::
+  :::image type="content" alt-text="Sample description" source="media/deploy-onboarding-package.png" lightbox="media/deploy-onboarding-package.png":::
 
 ### Step 15: Deploy the onboarding package
 
-This profile contains license information for Microsoft Defender for Endpoint, without which it is reported as not licensed.
+This profile contains license information for Microsoft Defender for Endpoint. 
 
 To deploy the onboarding package:
 
 1. Under **Configuration profiles**, select **Create Profile**.
+
 1. Under **Platform**, select **macOS**.
+
 1. Under **Profile type**, select **Templates**.
+
 1. Under **Template name**, select **Custom**.
-1. Click **Create**.
+
+1. Select **Create**.
 
    :::image type="content" alt-text="Deploy onboarding package" source="media/mdatp-6-systemconfigurationprofiles-1.png" lightbox="media/mdatp-6-systemconfigurationprofiles-1.png":::
 
-1. On the **Basics** tab, **Name** the profile. For example, 'Autoupdate-prod-macOS-Default-MDE'. Click **Next**.
+1. On the **Basics** tab, **Name** the profile. For example, `Autoupdate-prod-macOS-Default-MDE`. Select **Next**.
 
    :::image type="content" alt-text="click next" source="media/mdatp-6-systemconfigurationprofiles-2.png" lightbox="media/mdatp-6-systemconfigurationprofiles-2.png":::
 
-1. On the **Configuration settings** tab, enter a **Custom configuration profile** name. For example, 'Autoupdate.mobileconfig'.
+1. On the **Configuration settings** tab, enter a **Custom configuration profile** name. For example, `Autoupdate.mobileconfig`.
+
 1. Choose a **Deployment channel**.
-1. Click **Next**.
+
+1. Select **Next**.
+
 1. Select a **Configuration profile file**.
 
    :::image type="content" alt-text="configuration profile" source="media/mdatp-6-systemconfigurationprofiles.png" lightbox="media/mdatp-6-systemconfigurationprofiles.png":::
@@ -448,12 +526,13 @@ To deploy the onboarding package:
 
    :::image type="content" alt-text="assign users" source="media/mdatp-6-systemconfigurationprofiles-3.png" lightbox="media/mdatp-6-systemconfigurationprofiles-3.png":::
 
-1. Review the configuration profile. Click **Create**.
+1. Review the configuration profile. Select **Create**.
+
 1. Open **Devices** > **Configuration profiles** to see the created profile.
 
 ## Step 16: Verify anti-malware detection
 
-See the following article to test for an anti-malware detection review: [AV detection test for verifying device's onboarding and reporting services](validate-antimalware.md)
+See the following article to test for an anti-malware detection review: [Antivirus detection test for verifying device's onboarding and reporting services](validate-antimalware.md)
 
 ## Step 17: Verifying EDR detection
 
@@ -481,12 +560,11 @@ For information on troubleshooting procedures, see:
 
 See [Uninstalling](mac-resources.md#uninstalling) for details on how to remove Microsoft Defender for Endpoint on macOS from client devices.
 
-
-
 ## Recommended content
 
 [Add Microsoft Defender for Endpoint to macOS devices using Microsoft Intune](/mem/intune/apps/apps-advanced-threat-protection-macos?source=recommendations)
-<br>Learn about adding Microsoft Defender for Endpoint to macOS devices using Microsoft Intune.
+
+Learn about adding Microsoft Defender for Endpoint to macOS devices using Microsoft Intune.
 
 [Examples of device control policies for Intune](mac-device-control-intune.md)
 <br>Learn how to use device control policies using examples that can be used with Intune.
@@ -508,9 +586,6 @@ See [Uninstalling](mac-resources.md#uninstalling) for details on how to remove M
 
 [Manage Defender for Endpoint on Android devices in Intune - Azure](/mem/intune/protect/advanced-threat-protection-manage-android?source=recommendations)
 <br>Configure Microsoft Defender for Endpoint web protection on Android devices managed by Microsoft Intune.
-
-
-
 
 
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

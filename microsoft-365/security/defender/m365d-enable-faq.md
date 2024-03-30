@@ -1,12 +1,7 @@
 ---
 title: Frequently asked questions when turning on Microsoft Defender XDR
 description: Get answers to the most commonly asked questions about licensing, permissions, initial settings, and other products and services related to enabling Microsoft Defender XDR
-keywords: frequently asked questions, FAQ, GCC, get started, enable Microsoft Defender XDR, Microsoft Defender XDR, M365, security, data location, required permissions, license eligibility, settings page
-search.product: eADQiWindows 10XVcnh
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: 
   - NOCSH
 ms.author: dansimp
