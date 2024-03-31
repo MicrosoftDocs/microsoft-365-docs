@@ -66,21 +66,21 @@ To create an incident report with Copilot in Defender, perform the following ste
 
 1. Open an incident page. In the incident page, navigate to the **More actions** ellipsis (...) and then select **Generate incident report**. Alternately, you can select the report icon found in the Copilot side panel.
 
-   :::image type="content" source="../../media/copilot-in-defender/create-report/incident-report-create-small.png" alt-text="Screenshot highlighting the generated incident report and report icon buttons in the incident page." lightbox="../../media/copilot-in-defender/incident-report/incident-report-create.png":::
+   :::image type="content" source="../../media/copilot-in-defender/create-report/incident-report-create-small.png" alt-text="Screenshot highlighting the generated incident report and report icon buttons in the incident page." lightbox="../../media/copilot-in-defender/create-report/incident-report-create.png":::
 
 2. Copilot creates the incident report. You can stop the report creation by selecting **Cancel** and restart report creation by selecting **Regenerate**. Additionally, you can restart report creation if you encounter an error.
 
 3. The incident report card appears on the Copilot pane. The generated report depends on the incident information available from Microsoft Defender XDR and Microsoft Sentinel. Refer to the [recommendations](security-copilot-m365d-create-incident-report.md#recommendations-for-incident-report-creation) to ensure a comprehensive incident report.
 
-   :::image type="content" source="../../media/copilot-in-defender/create-report/incident-report-main1-small.png" alt-text="Screenshot of the incident report card in the incident page showing the top half of the card." lightbox="../../media/copilot-in-defender/incident-report/incident-report-main1.png":::
+   :::image type="content" source="../../media/copilot-in-defender/create-report/incident-report-main1-small.png" alt-text="Screenshot of the incident report card in the incident page showing the top half of the card." lightbox="../../media/copilot-in-defender/create-report/incident-report-main1.png":::
 
-   :::image type="content" source="../../media/copilot-in-defender/create-report/incident-report-main2-small.png" alt-text="Screenshot of the incident report card in the incident page showing the lower bottom of the card." lightbox="../../media/copilot-in-defender/incident-report/incident-report-main2.png":::
+   :::image type="content" source="../../media/copilot-in-defender/create-report/incident-report-main2-small.png" alt-text="Screenshot of the incident report card in the incident page showing the lower bottom of the card." lightbox="../../media/copilot-in-defender/create-report/incident-report-main2.png":::
 
 4. Select the More actions ellipsis (...) located on the upper right of the incident report card. To copy the report, select **Copy to clipboard** and paste the report to your preferred system, or **Post to activity log** to add the report to the comments and history of the incident. Select **Regenerate** to restart report creation. You can also **Open in Copilot for Security** to view the results and continue accessing other plugins available in the Copilot for Security standalone portal.
 
    ![Screenshot of additional actions in the incident report results card.](../../media/copilot-in-defender/create-report/incident-report-more-actions1.png)
 
-5. Review the generated incident report. You can provide feedback on the report by selecting the feedback icon found on the bottom of the results  ![Screenshot of the feedback icon for Copilot in Defender cards](../../media/copilot-in-defender/copilot-defender-feedback.png).
+5. Review the generated incident report. You can provide feedback on the report by selecting the feedback icon found on the bottom of the results  ![Screenshot of the feedback icon for Copilot in Defender cards](../../media/copilot-in-defender/create-report/copilot-defender-feedback.png).
 
 ## Recommendations for incident report creation
 
