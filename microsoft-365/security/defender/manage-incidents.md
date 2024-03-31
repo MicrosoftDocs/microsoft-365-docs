@@ -141,9 +141,9 @@ You can also add your own comments using the comment box available within the ac
 
 You can export an incident’s data to PDF through the **Export incident as PDF** function and save it into PDF format. This function allows security teams to review an incident’s details offline at any given time.
 
-The incident data exported include:
+The incident data exported includes the following information:
 
-- An overview containing the title and incident details
+- An overview containing the incident details
 - The [attack story](investigate-incidents.md#attack-story) graph and threat categories
 - The impacted [assets](investigate-incidents.md#assets), covering up to 10 assets for each asset type
 - The [evidence list](investigate-incidents.md#evidence-and-response) covering up to 100 items
@@ -157,6 +157,8 @@ If you have the [Copilot for Security](/security-copilot/microsoft-security-copi
 
 - [Incident summary](security-copilot-m365d-incident-summary.md)
 - [Incident report](security-copilot-m365d-create-incident-report.md)
+
+The export to PDF function is also available in the Copilot side panel of a generated incident report.
 
 To generate the PDF, perform the following steps:
 
