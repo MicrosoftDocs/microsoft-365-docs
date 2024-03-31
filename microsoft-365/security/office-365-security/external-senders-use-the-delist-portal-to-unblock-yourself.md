@@ -2,8 +2,8 @@
 title: Remove yourself from the blocked senders list and address 5.7.511 Access denied errors
 f1.keywords:
   - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+author: chrisda
+ms.author: chrisda
 manager: dansimp
 ms.date: 6/20/2023
 audience: ITPro
