@@ -136,18 +136,24 @@ You can also add your own comments using the comment box available within the ac
 
 > [!IMPORTANT]
 > Some information in this article relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+>
+> The export incident data feature is currently available to Microsoft Defender XDR and Microsoft Defender unified security operations center (SOC) platform customers with the Microsoft Copilot for security license.
 
 You can export an incident’s data to PDF through the **Export incident as PDF** function and save it into PDF format. This function allows security teams to review an incident’s details offline at any given time.
 
 The incident data exported include:
 
-- An executive summary containing the title and incident details
+- An overview containing the title and incident details
 - The [attack story](investigate-incidents.md#attack-story) graph and threat categories
 - The impacted [assets](investigate-incidents.md#assets), covering up to 10 assets for each asset type
 - The [evidence list](investigate-incidents.md#evidence-and-response) covering up to 100 items
-- Supporting data, including all [related alerts](investigate-incidents.md#alerts) and up to 100 activities recorded in the [activity log](#activity-log)
+- Supporting data, including all [related alerts](investigate-incidents.md#alerts) and activities recorded in the [activity log](#activity-log)
 
-If you have the [Microsoft Copilot for Security](/security-copilot/microsoft-security-copilot), the exported PDF contains the following additional incident data:
+Here's an example of the exported PDF:
+
+:::image type="content" source="../../media/incidents-queue/export-incident-results-small.png" alt-text="Screenshot of the exported PDF's first page." lightbox="../../media/incidents-queue/export-incident-results.png":::
+
+If you have the [Copilot for Security](/security-copilot/microsoft-security-copilot) license, the exported PDF contains the following additional incident data:
 
 - [Incident summary](security-copilot-m365d-incident-summary.md)
 - [Incident report](security-copilot-m365d-create-incident-report.md)
@@ -156,27 +162,17 @@ To generate the PDF, perform the following steps:
 
 1. Open an incident page. Select the **More actions** ellipsis (...) on the upper right corner and choose **Export incident as PDF**. The function becomes grayed out while the PDF is being generated.
 
-[INSERT SCREENSHOT]
+   :::image type="content" source="../../media/incidents-queue/export-incident-main-small.png" alt-text="Screenshot highlighting the export incident to PDF option." lightbox="../../media/incidents-queue/export-incident-main.png":::
 
-Alternately, you can access the export incident as PDF function from the incident side panel when selecting a specific incident in the incident queue.
+1. A dialog box appears, indicating that the PDF is being generated. Select **Got it** to close the dialog box. Additionally, a status message indicating the current state of the download appears below the incident title. The export process may take a few minutes depending on the incident's complexity and the amount of data to be exported.
 
-[INSERT SCREENSHOT]
+   :::image type="content" source="../../media/incidents-queue/export-incident-predownload-small.png" alt-text="Screenshot highlighting export message and status before download." lightbox="../../media/incidents-queue/export-incident-predownload.png":::
 
-Copilot in Defender users can also access the function from the incident report or guided response cards. Select the more actions ellipsis (...) on the upper right corner and choose **Export incident as PDF**.
+1. Once the PDF is ready, the status message indicates that the PDF is ready and another dialog box appears. Select **Download** from the dialog box to save the PDF to your device.
 
-[INSERT SCREENSHOTS]
+   :::image type="content" source="../../media/incidents-queue/export-incident-download-small.png" alt-text="Screenshot highlighting export message and status when download is available." lightbox="../../media/incidents-queue/export-incident-download.png":::
 
-1. A dialog box appears, indicating that the PDF is being generated. Select **Got it** to close the dialog box.
-
-[INSERT SCREENSHOT]
-
-1. A status indicator will be added below the incident title while the system generates the PDF. The process may take a few minutes, depending on the incident's complexity and the amount of data to be exported.
-
-[INSERT SCREENSHOT]
-
-1. Once the PDF is ready, the status indicator will change to **Download PDF**. Select **Download PDF** to save the file to your device.
-
-The report is cached for the next five minutes. If you try to export the same incident again within this time frame, the system will provide you with the previously generated PDF. To generate a newer version of the PDF, wait for the cache to expire.
+The report is cached for a couple of minutes. The system provides the previously generated PDF if you try to export the same incident again within a short time frame. To generate a newer version of the PDF, wait for the cache to expire.
 
 ## Next steps
 
