@@ -18,7 +18,6 @@ description: Learn how to recognize and remediate the illicit consent grants att
 ms.custom:
   - seo-marvel-apr2020
   - has-azure-ad-ps-ref
-  - azure-ad-ref-level-one-done
 ms.subservice: mdo
 ms.service: microsoft-365-security
 appliesto:

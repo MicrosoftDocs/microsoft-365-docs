@@ -20,7 +20,6 @@ description: Learn how to configure Skype for Business on-premises to use Hybrid
 ms.custom:
   - seo-marvel-apr2020
   - has-azure-ad-ps-ref
-  - azure-ad-ref-level-one-done
 ---
 
 # How to configure Skype for Business on-premises to use Hybrid Modern Authentication
