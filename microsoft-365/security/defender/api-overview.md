@@ -1,12 +1,7 @@
 ---
 title: Overview of Microsoft Defender XDR APIs
 description: Learn about the available APIs in Microsoft Defender XDR
-keywords: api, apis, overview, incident, incidents, threat hunting, Microsoft Defender XDR
-search.product: eADQiWindows 10XVcnh
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: 
   - NOCSH
 ms.author: macapara

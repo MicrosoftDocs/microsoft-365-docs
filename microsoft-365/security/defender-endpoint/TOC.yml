@@ -14,8 +14,11 @@
       href: minimum-requirements.md
     - name: Supported Microsoft Defender for Endpoint capabilities by platform
       href: supported-capabilities-by-platform.md
-    - name: What's new in Microsoft Defender for Endpoint?
+    - name: What's new in Defender for Endpoint
       href: whats-new-in-microsoft-defender-endpoint.md
+      items: 
+      - name: What's new in Defender for Endpoint - archive
+        href: whats-new-mde-archive.md
     - name: What's new in Microsoft Defender for Endpoint on Windows
       href: windows-whatsnew.md
     - name: What's new in Microsoft Defender for Endpoint on other platforms
@@ -757,6 +760,8 @@
             href: device-health-microsoft-defender-antivirus-health.md
           - name: Sensor health and OS report
             href: device-health-sensor-health-os.md
+        - name: Microsoft Defender Core service configurations and experimentation 
+          href: microsoft-defender-core-service-configurations-and-experimentation.md
         - name: Troubleshoot performance issues related to real-time protection
           href: troubleshoot-performance-issues.md
         - name: Collect diagnostic data of Microsoft Defender Antivirus

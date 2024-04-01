@@ -222,7 +222,7 @@ Most organizations have several different types of exclusions and indicators to 
 
 The following image summarizes how exclusions and indicators are handled across Defender for Endpoint and Microsoft Defender Antivirus:
 
-:::image type="content" source="images/mdav-mde-flow.png" alt-text="Screenshot that Shows the order in which exclusions and indicators are evaluated." lightbox="images/mdav-mde-flow.png":::
+:::image type="content" source="media/mdav-mde-flow.png" alt-text="Screenshot that Shows the order in which exclusions and indicators are evaluated." lightbox="media/mdav-mde-flow.png":::
 
 Here's how it works:
 

@@ -2,12 +2,8 @@
 title: Managed detection and response 
 ms.reviewer:
 description: Defender Experts for XDR provides actionable managed response to your security operations center (SOC) teams.
-keywords: XDR, extended detection and response, managed detection and response in defender experts for XDR, experts for xdr, managed response faq, managed threat hunting, managed detection and response (MDR) service, Managed response in Teams, guided response
 ms.service: defender-experts
 ms.subservice: dex-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: vpattnaik
 author: vpattnai
 ms.localizationpriority: medium
