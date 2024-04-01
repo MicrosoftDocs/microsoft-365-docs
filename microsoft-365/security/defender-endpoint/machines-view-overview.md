@@ -157,7 +157,7 @@ On the **Computer and Mobiles** tab, select **Customize columns** to see the col
 
 On the **Network devices** tab, select **Customize columns** to see the columns available. The default values are checked in the following image:
 
-:::image type="content" alt-text="Image of network device columns" source="images/networkdevicescolumns.png":::
+:::image type="content" alt-text="Image of network device columns" source="media/networkdevicescolumns.png":::
 
 On the **IoT devices** tab, select **Customize columns** to see the columns available. The default values are checked in the following image:
 
