@@ -30,7 +30,7 @@ An *incident* in the Microsoft Defender portal is a collection of related alerts
 
 The Microsoft Sentinel and Microsoft Defender services create alerts when they detect a suspicious or malicious event or activity. Individual alerts provide valuable evidence of a completed or ongoing attack. However, increasingly prevalent and sophisticated attacks typically employ a variety of techniques and vectors against different types of asset entities, such as devices, users, and mailboxes. The result is multiple alerts, from multiple sources, for multiple asset entities in your digital estate.
 
-Because individual alerts each tell only part of the story, and because manually grouping individual alerts together to gain insight into an attack can be challenging and time-consuming, the unified security operations platform automatically identifies alerts that are related and aggregates them and their associated information into an incident.
+Because individual alerts each tell only part of the story, and because manually grouping individual alerts together to gain insight into an attack can be challenging and time-consuming, the unified security operations platform automatically identifies alerts that are related&mdash;from both Microsoft Sentinel and Microsoft Defender XDR&mdash;and aggregates them and their associated information into an incident.
 
 :::image type="content" source="../../media/incidents-overview/incidents.png" alt-text="How Microsoft Defender XDR correlates events from entities into an incident." lightbox="../../media/incidents-overview/incidents.png":::
 
@@ -89,15 +89,15 @@ The incident page consists of the following tabs:
 
 - **Assets**
 
-  All the asset entities (devices, users, mailboxes, and apps) that have been identified to be part of or related to the incident.
+  All the assets (protected entities such as devices, users, mailboxes, apps, and cloud resources) that have been identified to be part of or related to the incident.
 
 - **Investigations**
 
-  All the [automated investigations](m365d-autoir.md) triggered by alerts in the incident.
+  All the [automated investigations](m365d-autoir.md) triggered by alerts in the incident, including the status of the investigations and their results.
 
 - **Evidence and Response**
 
-  All the supported events and suspicious entities in the alerts of the incident.
+  All the suspicious entities in the alerts of the incident, which constitute evidence supporting the attack story. These entities can include IP addresses, files, processes, URLs, registry keys and values, and more.
 
 - **Summary**
 
@@ -215,4 +215,5 @@ Follow this table based on your security team role.
 | Security investigator or analyst (Tier 2) | <ol><li> Perform [investigations](investigate-incidents.md) of incidents from the **Incidents** page of the Microsoft Defender portal. </li><li> See these [incident response playbooks](/security/operations/incident-response-playbooks) for detailed guidance for phishing, password spray, and app consent grant attacks. </li></ol> |
 | Advanced security analyst or threat hunter (Tier 3) | <ol><li>Perform [investigations](investigate-incidents.md) of incidents from the **Incidents** page of the Microsoft Defender portal. </li><li> Track and respond to emerging threats with [threat analytics](threat-analytics.md). </li><li> Proactively hunt for threats with [advanced threat hunting](advanced-hunting-overview.md). </li><li> See these [incident response playbooks](/security/operations/incident-response-playbooks) for detailed guidance for phishing, password spray, and app consent grant attacks. |
 | SOC manager | See how to [integrate Microsoft Defender XDR into your Security Operations Center (SOC)](integrate-microsoft-365-defender-secops.md). |
+
 [!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

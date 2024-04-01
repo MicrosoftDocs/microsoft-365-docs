@@ -43,31 +43,33 @@ You can get to the incident queue from **Incidents & alerts > Incidents** on the
 
 Select **Most recent incidents and alerts** to toggle the expansion of the top section, which shows a timeline graph of the number of alerts received and incidents created in the last 24 hours.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents2.png" alt-text="Screenshot of 24-hour incident graph.":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents2.png" alt-text="Screenshot of 24-hour incident graph." lightbox="../../media/incidents-queue/incidents-ss-incidents2.png":::
 
 Below that, the incident queue in the Microsoft Defender portal displays incidents seen in the last six months. The most recent incident is at the top of the list so you can see it first. You can choose a different time frame by selecting it from the drop-down at the top.
 
 The incident queue has customizable columns (select **Customize columns**) that give you visibility into different characteristics of the incident or the impacted entities. This filtering helps you make an informed decision regarding the prioritization of incidents for analysis.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-3.png" alt-text="Screenshot of Incident page filter and column controls.":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-3.png" alt-text="Screenshot of Incident page filter and column controls." lightbox="../../media/incidents-queue/incidents-ss-incidents-3.png":::
 
-For more visibility at a glance, automatic incident naming generates incident names based on alert attributes such as the number of endpoints affected, users affected, detection sources, or categories. This allows you to quickly understand the scope of the incident.
+### Incident names
+
+For more visibility at a glance, **automatic incident naming** generates incident names based on alert attributes such as the number of endpoints affected, users affected, detection sources, or categories. This allows you to quickly understand the scope of the incident.
 
 For example: *Multi-stage incident on multiple endpoints reported by multiple sources.*
 
-> [!NOTE]
-> - Incidents that existed prior to the rollout of automatic incident naming will not have their name changed.
-> - Incidents created in Microsoft Sentinel are named according to the Sentinel alerts that generated them, according to the logic in the analytics rule that produced the alert. For more information, see [Customize alert details in Microsoft Sentinel](/azure/sentinel/customize-alert-details).
+Automatic incident naming applies as well to alerts and incidents coming from Microsoft Sentinel, after you've onboarded Microsoft Sentinel to the unified security operations platform, so incidents from Microsoft Sentinel are likely to have their names change at some point.
 
-The incident queue also provides multiple filtering options, that when applied, enable you to perform a broad sweep of all existing incidents in your environment, or decide to focus on a specific scenario or threat. Applying filters on the incident queue can help determine which incident requires immediate attention. 
+We recommend that you avoid using the incident name as a condition for triggering [automation rules](/azure/sentinel/automate-incident-handling-with-automation-rules).
+
+## Filters <a name="available-filters"></a>
+
+The incident queue also provides multiple filtering options, that when applied, enable you to perform a broad sweep of all existing incidents in your environment, or decide to focus on a specific scenario or threat. Applying filters on the incident queue can help determine which incident requires immediate attention.
 
 The **Filters** list above the list of incidents shows the currently applied filters.
 
-## Available filters
-
 From the default incident queue, you can select **Add filter** to see the **Add filter** drop-down, from which you specify filters to apply to the incidents queue to limit the set of incidents shown. Here's an example.
 
-:::image type="content" source="../../media/incidents-queue/fig1-newfilters.png" alt-text="The Filters pane for the incident queue in the Microsoft Defender portal." lightbox="../../media/incidents-queue/fig1-newfilters.png":::
+:::image type="content" source="../../media/incidents-queue/fig1-newfilters.png" alt-text="The Filters pane for the incident queue in the Microsoft Defender portal.":::
 
 Select the filters you want to use, then select **Add** at the bottom of the list to make them available.
 
@@ -96,7 +98,6 @@ This table lists the filter names that are available.
 | **Associated threat** | Specify a named threat.  |
 | **Alert policies** | Specify an alert policy title.  |
 
-
 The default filter is to show all alerts and incidents with a status of **New** and **In progress** and with a severity of **High**, **Medium**, or **Low**.
 
 You can quickly remove a filter by selecting the **X** in the name of a filter in the **Filters** list.
@@ -105,7 +106,7 @@ You can also create filter sets within the incidents page by selecting **Saved f
 
 :::image type="content" source="../../media/incidents-queue/fig2-newfilters.png" alt-text="The create filter sets option for the incident queue in the Microsoft Defender portal." lightbox="../../media/incidents-queue/fig2-newfilters.png":::
 
-## Save custom filters as URLs
+### Save custom filters as URLs
 
 Once you've configured a useful filter in the incidents queue, you can bookmark the URL of the browser tab or otherwise save it as a link on a Web page, a Word document, or a place of your choice. Bookmarking gives you single-click access to key views of the incident queue, such as:
 
@@ -122,25 +123,29 @@ Once you've configured a useful filter in the incidents queue, you can bookmark 
 
 Once you have compiled and stored your list of useful filter views as URLs, use it to quickly process and prioritize the incidents in your queue and [manage](manage-incidents.md) them for subsequent assignment and analysis.
 
-## Search for incidents
+## Search
 
-From the **Search for name or ID** box above the list of incidents, you can type the incident ID or the incident name. When you select an incident from the list of search results, the Microsoft Defender portal opens a new tab with the properties of the incident, from which you can start your [investigation](investigate-incidents.md).
+From the **Search for name or ID** box above the list of incidents, you can search for incidents in a number of ways, to quickly find what you're looking for.
 
-## Search for impacted assets
+### Search by incident name or ID
 
-You can name an asset&mdash;such as a user, device, mailbox, or application name&mdash;and find all the related incidents. 
+Search directly for an incident by typing the incident ID or the incident name. When you select an incident from the list of search results, the Microsoft Defender portal opens a new tab with the properties of the incident, from which you can start your [investigation](investigate-incidents.md).
+
+### Search by impacted assets
+
+You can name an asset&mdash;such as a user, device, mailbox, application name, or cloud resource&mdash;and find all the incidents related to that asset.
 
 ## Specify a time range
 
 The default list of incidents is for those that occurred in the last six months. You can specify a new time range from the drop-down box next to the calendar icon by selecting:
 
- - One day
- - Three days
- - One week
- - 30 days
- - 30 days
- - Six months
- - A custom range in which you can specify both dates and times
+- One day
+- Three days
+- One week
+- 30 days
+- 30 days
+- Six months
+- A custom range in which you can specify both dates and times
 
 ## Next steps
 
@@ -150,6 +155,7 @@ After you've determined which incident requires the highest priority, select it 
 - Begin your [investigations](investigate-incidents.md).
 
 ## See also
+
 - [Incidents overview](incidents-overview.md)
 - [Manage incidents](manage-incidents.md)
 - [Investigate incidents](investigate-incidents.md)
