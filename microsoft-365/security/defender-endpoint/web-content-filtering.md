@@ -75,7 +75,7 @@ Applying multiple different web content filtering policies to the same device re
 - **Policy 1**: blocks categories 1 and 2 and audits the rest
 - **Policy 2**: blocks categories 3 and 4 and audits the rest
 
-The result is that categories 1 - 4 are all blocked.  This is illustrated in the following image.
+The result is that categories 1-4 are all blocked, as illustrated in the following image.
 
 :::image type="content" source="images/web-content-filtering-policies-mode-precedence.png" alt-text="Illustrates precedence of web content filtering policy block mode over audit mode":::
 
