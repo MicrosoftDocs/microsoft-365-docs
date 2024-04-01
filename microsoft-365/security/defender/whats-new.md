@@ -29,6 +29,10 @@ For more information on what's new with other Microsoft Defender security produc
 You can also get product updates and important notifications through the [message center](https://admin.microsoft.com/Adminportal/Home#/MessageCenter).
 
 
+## April 2024
+
+- (GA) **[Microsoft Copilot in Microsoft Defender](security-copilot-in-microsoft-365-defender.md)** is now generally available. Copilot in Defender helps you investigate and respond to incidents faster and more effectively. Copilot provides guided responses, incident summaries and reports, helps you build KQL queries to hunt for threats, provide file and script analyses, and enable you to summarize relevant and actionable threat intelligence.
+
 ## February 2024
 
 - (GA) **Dark mode** is now available in the Microsoft Defender portal. In the Defender portal, on the top right-hand side of the homepage, select **Dark mode**. Select **Light mode** to change the color mode back to the default.
