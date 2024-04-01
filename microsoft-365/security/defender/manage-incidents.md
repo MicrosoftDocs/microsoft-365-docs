@@ -160,6 +160,8 @@ If you have the [Copilot for Security](/security-copilot/microsoft-security-copi
 
 The export to PDF function is also available in the Copilot side panel of a generated incident report.
 
+![Screenshot of additional actions in the incident report results card.](../../media/incidents-queue/export-incident-more-actions1.png)
+
 To generate the PDF, perform the following steps:
 
 1. Open an incident page. Select the **More actions** ellipsis (...) on the upper right corner and choose **Export incident as PDF**. The function becomes grayed out while the PDF is being generated.

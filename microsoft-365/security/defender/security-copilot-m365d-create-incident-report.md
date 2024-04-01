@@ -82,6 +82,12 @@ To create an incident report with Copilot in Defender, perform the following ste
 
 5. Review the generated incident report. You can provide feedback on the report by selecting the feedback icon found on the bottom of the results  ![Screenshot of the feedback icon for Copilot in Defender cards](../../media/copilot-in-defender/create-report/copilot-defender-feedback.png).
 
+## Export incident to PDF
+
+You can export the incident data to PDF to create a report that you can easily share with stakeholders. The exported incident data contains relevant information like the attack story, impacted assets, relevant alerts, and AI-generated content from Copilot, like the incident summary and incident report. With this capability, security teams can quickly export more incident information for post-incident discussions within team members or with other stakeholders.
+
+You can follow the steps in [export incident data to PDF](manage-incidents.md#export-incident-data-to-pdf) to generate the PDF.
+
 ## Recommendations for incident report creation
 
 Here are some recommendations to consider to ensure that Copilot generates a comprehensive and complete incident report:
@@ -93,12 +99,6 @@ Here are some recommendations to consider to ensure that Copilot generates a com
   - Add comments to incidents in Microsoft Sentinel
 - For ServiceNow users, [enable the Microsoft Sentinel and ServiceNow bi-directional sync](https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/what-s-new-introducing-microsoft-sentinel-solution-for/ba-p/3692840) to get more robust incident data.
 - Copy the generated incident report and post it to the activity log in the Microsoft Defender portal to ensure that the incident report is saved in the incident page.
-
-## Export incident to PDF
-
-You can export the incident data to PDF to create a report that you can easily share with stakeholders. The exported incident data contains relevant information like the attack story, impacted assets, relevant alerts, and AI-generated content from Copilot, like the incident summary and incident report. With this capability, security teams can quickly export more incident information for post-incident discussions within team members or with other stakeholders.
-
-You can follow the steps in [export incident data to PDF](manage-incidents.md#export-incident-data-to-pdf) to generate the PDF.
 
 ## See also
 
