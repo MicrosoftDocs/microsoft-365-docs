@@ -2,12 +2,8 @@
 title: Before you begin using Defender Experts for XDR
 ms.reviewer:
 description: To enable us to get started with this managed service, we require the following licensing prerequisites
-keywords: XDR, Xtended detection and response, defender experts for xdr, Microsoft Defender Experts for XDR, managed threat hunting, managed detection and response (MDR) service, service delivery manager, Microsoft Defender Experts for hunting, threat hunting and analysis, Microsoft XDR service
 ms.service: defender-experts
 ms.subservice: dex-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: vpattnaik
 author: vpattnai
 ms.localizationpriority: medium

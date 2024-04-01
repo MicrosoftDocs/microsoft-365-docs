@@ -21,6 +21,7 @@ ms.custom:
 - SaRA
 - AdminSurgePortfolio
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid: MET150 
 description: "Learn how to upgrade or change to a different plan in the Microsoft 365 admin center."
 ms.date: 02/23/2024

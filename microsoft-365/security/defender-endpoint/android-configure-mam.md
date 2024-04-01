@@ -94,7 +94,7 @@ End users also need to take steps to install Microsoft Defender for Endpoint on 
 
         *Example: Outlook as a managed app*
 
-        :::image type="content" source="images/managed-app.png" alt-text="The Public apps pane in the Microsoft Defender portal." lightbox="images/managed-app.png":::
+        :::image type="content" source="media/managed-app.png" alt-text="The Public apps pane in the Microsoft Defender portal." lightbox="media/managed-app.png":::
 
   3. Set sign-in security requirements for your protection policy.
 

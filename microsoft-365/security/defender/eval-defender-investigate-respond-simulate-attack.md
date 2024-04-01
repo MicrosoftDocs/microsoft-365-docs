@@ -1,12 +1,8 @@
 ---
 title: Run an attack simulation in a Microsoft Defender XDR pilot environment
 description: Run attack simulations for Microsoft Defender XDR to see how alerts and incidents are presented, insights are gained, and threats are quickly remediated.
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords:
   - NOCSH
 ms.author: dansimp

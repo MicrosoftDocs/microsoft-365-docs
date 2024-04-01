@@ -1,12 +1,8 @@
 ---
 title: Step 4. Evaluate Microsoft Defender for Endpoint overview, including reviewing the architecture
 description: Steps for the setup of a Microsoft Defender XDR trial lab or pilot environment. Test and experience how the security solution is designed to protect devices, identity, data, and apps in your organization.
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords:
   - NOCSH
 ms.author: dansimp

@@ -22,6 +22,7 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - AdminTemplateSet
+- admindeeplinkMAC
 description: "Learn how to buy and manage add-ons for your Microsoft 365 for business subscription."
 ms.date: 08/28/2023
 ---

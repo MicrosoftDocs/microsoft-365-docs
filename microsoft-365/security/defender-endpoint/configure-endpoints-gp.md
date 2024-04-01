@@ -259,7 +259,7 @@ Create a new Group Policy or group these settings in with the other policies. Th
 
 4. In the Scan folder, configure the scan settings.
 
-    :::image type="content" source="images/gpo-scans.png" alt-text="gpo scans" lightbox="images/gpo-scans.png":::
+    :::image type="content" source="media/gpo-scans.png" alt-text="gpo scans" lightbox="media/gpo-scans.png":::
 
 ### Monitor all files in Real time protection
 
@@ -289,11 +289,11 @@ Browse to **Computer Configuration** \> **Policies** \> **Administrative Templat
 
 Browse to **Computer Configuration** \> **Policies** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **MAPS**.
 
-:::image type="content" source="images/gpo-maps1.png" alt-text="maps" lightbox="images/gpo-maps1.png":::
+:::image type="content" source="media/gpo-maps1.png" alt-text="maps" lightbox="media/gpo-maps1.png":::
 
-:::image type="content" source="images/gpo-maps-block-atfirst-sight.png" alt-text="Block at first sight" lightbox="images/gpo-maps-block-atfirst-sight.png":::
+:::image type="content" source="media/gpo-maps-block-atfirst-sight.png" alt-text="Block at first sight" lightbox="media/gpo-maps-block-atfirst-sight.png":::
 
-:::image type="content" source="images/gpo-maps-join-ms-maps.png" alt-text="Join microsoft maps" lightbox="images/gpo-maps-join-ms-maps.png":::
+:::image type="content" source="media/gpo-maps-join-ms-maps.png" alt-text="Join microsoft maps" lightbox="media/gpo-maps-join-ms-maps.png":::
 
 :::image type="content" source="images/send-file-sample-further-analysis-require.png" alt-text="Send file sample when further analysis is required" lightbox="images/send-file-sample-further-analysis-require.png":::
 
