@@ -98,7 +98,6 @@ This table lists the filter names that are available.
 | **Associated threat** | Specify a named threat.  |
 | **Alert policies** | Specify an alert policy title.  |
 
-
 The default filter is to show all alerts and incidents with a status of **New** and **In progress** and with a severity of **High**, **Medium**, or **Low**.
 
 You can quickly remove a filter by selecting the **X** in the name of a filter in the **Filters** list.
@@ -156,6 +155,7 @@ After you've determined which incident requires the highest priority, select it 
 - Begin your [investigations](investigate-incidents.md).
 
 ## See also
+
 - [Incidents overview](incidents-overview.md)
 - [Manage incidents](manage-incidents.md)
 - [Investigate incidents](investigate-incidents.md)
