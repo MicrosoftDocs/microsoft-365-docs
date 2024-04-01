@@ -218,3 +218,10 @@ The information captured in audit log records differs from that in [Microsoft 36
 ### What’s the scope of user-level table?
 
 The user-level table in the report is configured to show all users who were licensed for Copilot for Microsoft 365 at any point over the past 180 days, even if the user has since had the license removed or never had any Copilot active usage.
+
+### I assigned the Copilot for Microsoft 365 license to users, but why is 'last activity date' for users empty in rare cases?
+
+Based on system constraints, some users may not have a 'last activity date' in the user-level table of the report under the following conditions:
+
+1. The user used Copilot for Microsoft 365 within a very short time window (less than 24 hours) after the Copilot for Microsoft 365 license was assigned.
+2. The user subsequently had no other Copilot for Microsoft 365 usage up to the date on which the report is viewed.
