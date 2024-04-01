@@ -35,7 +35,7 @@ search.appverid: met150
 
 Web content filtering is part of the [Web protection](web-protection-overview.md) capabilities in Microsoft Defender for Endpoint and Microsoft Defender for Business. Web content filtering enables your organization to track and regulate access to websites based on their content categories. Many of these websites (even if they're not malicious) might be problematic because of compliance regulations, bandwidth usage, or other concerns.
 
-Configure policies across your device groups to block certain categories. Blocking a category prevents users within specified device groups from accessing URLs associated with the category. For any category that's not blocked, the URLs are automatically audited. Your users can access the URLs without disruption, and you'll gather access statistics to help create a more custom policy decision. Your users will see a block notification if an element on the page they're viewing is making calls to a blocked resource.
+Configure policies across your device groups to block certain categories. Blocking a category prevents users within specified device groups from accessing URLs associated with the category. For any category that's not blocked, the URLs are automatically audited. Your users can access the URLs without disruption, and you gather access statistics to help create a more custom policy decision. Your users see a block notification if an element on the page they're viewing is making calls to a blocked resource.
 
 > [!NOTE]
 > Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
@@ -49,8 +49,8 @@ Web content filtering is available on the major web browsers, with blocks perfor
 
 - Users are prevented from accessing websites in blocked categories, whether they're browsing on-premises or away.
 - Your security team can access web reports in the same central location, with visibility over actual blocks and web usage.
-- If you are using Defender for Endpoint, your security team can conveniently deploy policies to groups of users using device groups defined in [Microsoft Defender for Endpoint role-based access control settings](/microsoft-365/security/defender-endpoint/rbac).
-- If you are using Defender for Business, you can define one web content filtering policy that will be applied to all users.
+- If you're using Defender for Endpoint, your security team can conveniently deploy policies to groups of users using device groups defined in [Microsoft Defender for Endpoint role-based access control settings](/microsoft-365/security/defender-endpoint/rbac).
+- If you're using Defender for Business, you can define one web content filtering policy that is applied to all users.
 
 ## Prerequisites
 
@@ -58,19 +58,19 @@ Before trying out this feature, make sure you meet the requirements described in
 
 | Requirement | Description |
 |:---|:---|
-| Subscription | Your subscription must include one of the following:<br/>- [Windows 10/11 Enterprise E5](/windows/deployment/deploy-enterprise-licenses)<br/>- [Microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise/e5?activetab=pivot%3aoverviewtab)<br/>- Microsoft 365 A5<br/>- Microsoft 365 E5 Security<br/>- [Microsoft 365 E3](https://www.microsoft.com/microsoft-365/enterprise/e3?activetab=pivot%3aoverviewtab)<br/>- [Microsoft Defender for Endpoint Plan 1 or Plan 2](../defender/eval-defender-endpoint-overview.md)<br/>- [Microsoft Defender for Business](../defender-business/mdb-overview.md)<br/>- [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium)|
+| Subscription | Your subscription must include one of the following plans:<br/>- [Windows 10/11 Enterprise E5](/windows/deployment/deploy-enterprise-licenses)<br/>- [Microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise/e5?activetab=pivot%3aoverviewtab)<br/>- Microsoft 365 A5<br/>- Microsoft 365 E5 Security<br/>- [Microsoft 365 E3](https://www.microsoft.com/microsoft-365/enterprise/e3?activetab=pivot%3aoverviewtab)<br/>- [Microsoft Defender for Endpoint Plan 1 or Plan 2](../defender/eval-defender-endpoint-overview.md)<br/>- [Microsoft Defender for Business](../defender-business/mdb-overview.md)<br/>- [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium)|
 | Portal access | You must have access to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a>. |
-| Operating system | Your organization's devices must be running one of the following operating systems with the [latest antivirus/antimalware updates](microsoft-defender-antivirus-updates.md): <br/>- Windows 11<br/>- Windows 10 Anniversary Update (version 1607) or later <br/>- For information on MacOS availability, see [Network Protection for MacOS](network-protection-macos.md)<br/>- For information on Linux availability, see [Network Protection for Linux](network-protection-linux.md)|
+| Operating system | Your organization's devices must be running one of the following operating systems with the [latest antivirus/antimalware updates](microsoft-defender-antivirus-updates.md): <br/>- Windows 11<br/>- Windows 10 Anniversary Update (version 1607) or later <br/>- For information on macOS availability, see [Network Protection for macOS](network-protection-macos.md)<br/>- For information on Linux availability, see [Network Protection for Linux](network-protection-linux.md)|
 | Browser | Your organization's devices must be running one of the following browsers: <br/>- Microsoft Edge<br/>- Google Chrome<br/>- Mozilla FireFox<br/>- Brave<br/>- Opera<br/>- Internet Explorer|
 | Related protection | [Windows Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) and [network protection](network-protection.md) must be enabled on your organization's devices. |
 
 ## Data handling
 
-Data is stored in the region that was selected as part of your [Microsoft Defender for Endpoint data handling settings](data-storage-privacy.md). Your data will not leave the data center in that region. In addition, your data will not be shared with any third parties, including our data providers.
+Data is stored in the region that was selected as part of your [Microsoft Defender for Endpoint data handling settings](data-storage-privacy.md). Your data won't leave the data center in that region. In addition, your data won't be shared with any third parties, including our data providers.
 
 ## Precedence for multiple active policies
 
-Applying multiple different web content filtering policies to the same device will result in the more restrictive policy applying for each category. Consider the following scenario:
+Applying multiple different web content filtering policies to the same device results in applying the more restrictive policy for each category. Consider the following scenario:
 
 - **Policy 1**: blocks categories 1 and 2 and audits the rest
 - **Policy 2**: blocks categories 3 and 4 and audits the rest
