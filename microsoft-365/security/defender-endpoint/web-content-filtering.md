@@ -133,6 +133,11 @@ To add a new policy, follow these steps:
 
 The blocking experience for third-party supported browsers is provided by network protection, which provides a system-level message notifying the user of a blocked connection. For a more user-friendly, in-browser experience, consider using Microsoft Edge.
 
+The following experience will be shown for all Web Content Filtering blocks starting in Edge 124.
+
+> [!div class="mx-imgBorder"]
+> :::image type="content" source="../../media/web-protection-wcf-new-block-page.jpg" alt-text="This content is blocked by your organization" lightbox="../../media/web-protection-wcf-new-block-page.jpg":::
+
 ### Allow specific websites
 
 It's possible to override the blocked category in web content filtering to allow a single site by creating a custom indicator policy. The custom indicator policy will supersede the web content filtering policy when it's applied to the device group in question.
