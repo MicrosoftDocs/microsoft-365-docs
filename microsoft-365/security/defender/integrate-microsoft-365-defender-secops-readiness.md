@@ -1,12 +1,7 @@
 ---
 title: Step 2. Perform a SOC integration readiness assessment using the Zero Trust Framework
 description: The basics of performing a SOC integration readiness assessment using the Zero Trust Framework when integrating Microsoft Defender XDR into your security operations.
-keywords: incidents, alerts, investigate, correlation, attack, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, incident response, cyber-attack, secops, security operations, soc
-search.product: eADQiWindows 10XVcnh
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: 
   - NOCSH
 ms.author: dansimp
