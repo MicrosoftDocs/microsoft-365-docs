@@ -82,7 +82,7 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
 > [!NOTE]
 > This record is used only to verify that you own your domain; it doesn't affect anything else. You can delete it later, if you like.
 
-1. To get started, go to your domains page at IONOS by using [this link](https://my.1and1.com/). You'll be prompted to log in.
+1. To get started, go to your domains page at IONOS by using [this link](https://login.ionos.com/). You'll be prompted to log in.
 
 1. Select **Menu**, and then select **Domains and SSL**.
 
@@ -132,7 +132,7 @@ To verify the record in Microsoft 365:
 ### Add an MX record so email for your domain will come to Microsoft
 
 
-1. To get started, go to your domains page at IONOS by using [this link](https://my.1and1.com/). You'll be prompted to log in.
+1. To get started, go to your domains page at IONOS by using [this link](https://login.ionos.com/). You'll be prompted to log in.
 
 1. Select **Menu**, and then select **Domains and SSL**.
 
@@ -166,7 +166,7 @@ To verify the record in Microsoft 365:
 
 ### Add the CNAME record required for Microsoft
 
-1. To get started, go to your domains page at IONOS by using [this link](https://my.1and1.com/). You'll be prompted to log in.
+1. To get started, go to your domains page at IONOS by using [this link](https://login.ionos.com/). You'll be prompted to log in.
 
 1. Select **Menu**, and then select **Domains and SSL**.
 
@@ -213,7 +213,7 @@ To verify the record in Microsoft 365:
 > [!IMPORTANT]
 > You cannot have more than one TXT record for SPF for a domain. If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues. If you already have an SPF record for your domain, don't create a new one for Microsoft. Instead, add the required Microsoft values to the current record so that you have a  *single*  SPF record that includes both sets of values. Need examples? Check out these [External Domain Name System records for Microsoft](../../enterprise/external-domain-name-system-records.md). To validate your SPF record, you can use one of these[SPF validation tools](../setup/domains-faq.yml).
 
-1. To get started, go to your domains page at IONOS by using [this link](https://my.1and1.com/). You'll be prompted to log in.
+1. To get started, go to your domains page at IONOS by using [this link](https://login.ionos.com/). You'll be prompted to log in.
 
 1. Select **Menu**, and then select **Domains and SSL**.
 
@@ -239,7 +239,7 @@ To verify the record in Microsoft 365:
 
 1. Select **Save**.
 
-   :::image type="content" source="../../media/dns-ionos/ionos-domains-spftxt-save.png" alt-text="Scrrenshot of the SPF text section, Select Save is highlighted.":::
+   :::image type="content" source="../../media/dns-ionos/ionos-domains-spftxt-save.png" alt-text="Screenshot of the SPF text section, Select Save is highlighted.":::
 
 ## Advanced option: Skype for Business
 
@@ -247,7 +247,7 @@ Only select this option if your organization uses Skype for Business for online 
 
 ### Add two additional CNAME records
 
-1. To get started, go to your domains page at IONOS by using [this link](https://my.1and1.com/). You'll be prompted to log in.
+1. To get started, go to your domains page at IONOS by using [this link](https://login.ionos.com/). You'll be prompted to log in.
 
 1. Select **Menu**, and then select **Domains and SSL**.
 
@@ -313,7 +313,7 @@ Only select this option if your organization uses Skype for Business for online 
 
 ## Add the two SRV records required for Microsoft
 
-1. To get started, go to your domains page at IONOS by using [this link](https://my.1and1.com/). You'll be prompted to log in.
+1. To get started, go to your domains page at IONOS by using [this link](https://login.ionos.com/). You'll be prompted to log in.
 
 1. Select **Menu**, and then select **Domains and SSL**.
 
@@ -356,7 +356,7 @@ This service helps you secure and remotely manage mobile devices that connect to
 > [!IMPORTANT]
 > Follow the subdomain procedure that you used for the other CNAME records, and supply the values from the following table.
 
-1. To get started, go to your domains page at IONOS by using [this link](https://my.1and1.com/). You'll be prompted to log in.
+1. To get started, go to your domains page at IONOS by using [this link](https://login.ionos.com/). You'll be prompted to log in.
 
 1. Select **Menu**, and then select **Domains and SSL**.
 
