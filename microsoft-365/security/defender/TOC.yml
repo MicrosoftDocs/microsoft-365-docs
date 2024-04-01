@@ -12,7 +12,7 @@
         href: preview.md
       - name: Zero Trust
         href: zero-trust-with-microsoft-365-defender.md
-      - name: Microsoft Security Copilot
+      - name: Microsoft Copilot in Microsoft Defender
         href: security-copilot-in-microsoft-365-defender.md  
       - name: US Government customers
         href: usgov.md
@@ -156,14 +156,18 @@
       items: 
        - name: Overview
          href: incident-response-overview.md
-       - name: Investigate and respond with Security Copilot
+       - name: Investigate and respond with Microsoft Copilot in Microsoft Defender
          items:
               - name: Overview
                 href: security-copilot-in-microsoft-365-defender.md
               - name: Summarize incidents
                 href: security-copilot-m365d-incident-summary.md
-              - name: Analyze scripts and codes
+              - name: Run script analysis
                 href: security-copilot-m365d-script-analysis.md
+              - name: Analyze files
+                href: copilot-in-defender-file-analysis.md
+              - name: Generate device summaries
+                href: copilot-in-defender-device-summary.md                               
               - name: Use guided responses
                 href: security-copilot-m365d-guided-response.md
               - name: Generate KQL queries
