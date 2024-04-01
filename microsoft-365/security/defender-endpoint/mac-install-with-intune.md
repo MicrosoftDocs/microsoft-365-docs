@@ -353,7 +353,7 @@ In the [Microsoft Defender portal](https://sip.security.microsoft.com/homepage?t
 
 1. Under **Select Template**, select **Microsoft Defender Antivirus** and select **Create Policy**.
 
-   :::image type="content" alt-text="networkprotection" source="media/network-protection1.jpg" lightbox="images/network-protection1.jpg":::
+   :::image type="content" alt-text="networkprotection" source="media/network-protection1.jpg" lightbox="media/network-protection1.jpg":::
 
 1. On the **Basics** tab, enter the **Name** and **Description** of the policy. Select **Next**.
 
