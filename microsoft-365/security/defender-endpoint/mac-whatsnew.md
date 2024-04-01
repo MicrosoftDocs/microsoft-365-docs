@@ -30,7 +30,6 @@ ms.reviewer: mavel
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-
 For more information on Microsoft Defender for Endpoint on other operating systems:
 
 - [What's new in Microsoft Defender for Endpoint on Linux](linux-whatsnew.md)
@@ -40,7 +39,7 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 
 Scheduled Scan built-in for Microsoft Defender for Endpoint on macOS is now available in Public Preview.  To learn more, see [How to schedule scans with Microsoft Defender for Endpoint on macOS](mac-schedule-scan.md). 
 
-**Troubleshooting mode for macOS** (preview) 
+**Troubleshooting mode for macOS** 
 
 Troubleshooting mode helps you identify instances where antivirus might be causing issues with your applications or system resources. Troubleshooting mode for macOS is now available in Public Preview. To learn more, see [Troubleshooting mode in Microsoft Defender for Endpoint on macOS](mac-troubleshoot-mode.md).  
 
@@ -65,7 +64,7 @@ Microsoft Defender supports macOS Sonoma (14.0) in the current Defender release.
 **macOS Deprecation**
 Microsoft Defender for Endpoint no longer supports Big Sur (11)
 
-### Mar-2024 (Build: 101.24012.0010  | Release version: 20.124012.10.0)
+### Apr-2024 (Build: 101.24012.0010  | Release version: 20.124012.10.0)
 
 | Build:             | **101.24012.0010**    |
 |--------------------|-----------------------|
