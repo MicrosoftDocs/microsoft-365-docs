@@ -22,7 +22,7 @@ ms.subservice: mdo
 ms.service: microsoft-365-security
 ms.date: 3/21/2024
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison" target="_blank">Microsoft Defender for Office 365 plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 2</a>
 ---
 
 # Get started using Attack simulation training
@@ -41,7 +41,7 @@ Watch this short video to learn more about Attack simulation training.
 
 ## What do you need to know before you begin?
 
-- Attack simulation training requires a Microsoft 365 E5 or [Microsoft Defender for Office 365 Plan 2](defender-for-office-365.md) license. For more information about licensing requirements, see [Licensing terms](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#licensing-terms).
+- Attack simulation training requires a Microsoft 365 E5 or [Microsoft Defender for Office 365 Plan 2](mdo-about.md) license. For more information about licensing requirements, see [Licensing terms](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#licensing-terms).
 
 - Attack simulation training supports on-premises mailboxes, but with reduced reporting functionality. For more information, see [Reporting issues with on-premises mailboxes](attack-simulation-training-faq.md#reporting-issues-with-on-premises-mailboxes).
 
