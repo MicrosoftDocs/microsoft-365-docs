@@ -61,7 +61,7 @@ Automatic incident naming applies as well to alerts and incidents coming from Mi
 
 We recommend that you avoid using the incident name as a condition for triggering [automation rules](/azure/sentinel/automate-incident-handling-with-automation-rules).
 
-## Filters
+## Filters <a name="available-filters"></a>
 
 The incident queue also provides multiple filtering options, that when applied, enable you to perform a broad sweep of all existing incidents in your environment, or decide to focus on a specific scenario or threat. Applying filters on the incident queue can help determine which incident requires immediate attention.
 
