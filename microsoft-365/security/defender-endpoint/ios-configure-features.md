@@ -133,7 +133,7 @@ Follow the below steps for setting up MAM config for unenrolled devices for Netw
 
 2. Provide a name and description to uniquely identify the policy. Then select **Select Public apps**, and choose **Microsoft Defender for Platform iOS/iPadOS**.
 
-   :::image type="content" source="images/nameiosconfig.png" alt-text="Name the configuration." lightbox="images/nameiosconfig.png":::
+   :::image type="content" source="media/nameiosconfig.png" alt-text="Name the configuration." lightbox="media/nameiosconfig.png":::
 
 3. On the Settings page, add **DefenderNetworkProtectionEnable** as the key and the value as `true` to enable network protection. (Network protection is disabled by default.)
 
