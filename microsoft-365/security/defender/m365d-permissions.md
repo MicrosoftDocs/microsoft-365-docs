@@ -1,12 +1,7 @@
 ---
 title: Manage access to Microsoft Defender XDR data in the Microsoft Defender portal
 description: Learn how to manage permissions to data in Microsoft Defender XDR
-keywords: access, permissions, Microsoft Defender XDR, M365, security, Defender for Cloud Apps, Microsoft Defender for Endpoint, scope, scoping, RBAC
-search.product: eADQiWindows 10XVcnh
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: 
   - NOCSH
 ms.author: dansimp

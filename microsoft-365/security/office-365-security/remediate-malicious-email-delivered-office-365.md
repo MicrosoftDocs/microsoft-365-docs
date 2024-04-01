@@ -1,7 +1,7 @@
 ---
 title: Remediate malicious email that was delivered in Office 365
-author: msfttracyp
-ms.author: tracyp
+author: chrisda
+ms.author: chrisda
 manager: dansimp
 ms.topic: conceptual
 ms.collection:

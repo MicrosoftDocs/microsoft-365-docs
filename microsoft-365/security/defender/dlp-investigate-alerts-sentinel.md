@@ -1,7 +1,6 @@
 ---
 title: Investigate data loss prevention alerts with Microsoft Sentinel
 description: Investigate data loss prevention alerts in Microsoft Sentinel.
-keywords: Data Loss Prevention, incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365
 f1.keywords: 
   - NOCSH
 ms.service: defender-xdr

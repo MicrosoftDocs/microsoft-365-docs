@@ -22,7 +22,7 @@ ms.custom:
 search.appverid:
 - MET150
 description: "Users can learn how to manage their self-service purchases in the Microsoft 365 admin center."
-ms.date: 02/22/2024
+ms.date: 03/27/2024
 ---
 
 # Manage self-service purchases and trials (for users)

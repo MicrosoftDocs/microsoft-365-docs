@@ -1,14 +1,9 @@
 ---
 title: Learn the advanced hunting query language in Microsoft Defender XDR
 description: Create your first threat hunting query and learn about common operators and other aspects of the advanced hunting query language
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft Defender XDR, microsoft 365, m365, search, query, language, learn, first query, telemetry, events, telemetry, custom detections, schema, kusto, operators, data types, powershell download, query example
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
 ms.subservice: adv-hunting
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords:
   - NOCSH
 ms.author: maccruz
@@ -21,7 +16,7 @@ ms.collection:
   - m365initiative-m365-defender
   - tier1
 ms.topic: conceptual
-ms.date: 02/16/2021
+ms.date: 03/28/2024
 ---
 
 # Learn the advanced hunting query language
