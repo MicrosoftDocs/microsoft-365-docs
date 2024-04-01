@@ -289,12 +289,12 @@ If the verification fails and your environment is using a proxy to connect to th
   :::image type="content" source="media/atp-disableantispyware-regkey.png" alt-text="The registry key for Microsoft Defender Antivirus" lightbox="media/atp-disableantispyware-regkey.png":::
 
    > [!NOTE]
-   > All Windows Defender services (`wdboot`, `wdfilter`, `wdnisdrv`, `wdnissvc`, and `windefend`) should be in their default state. Changing the startup of these services is unsupported and may force you to reimage your system. If Microsoft Defender Antivirus is in passive mode, these drivers are set to manual (`0`).
-   >
-   > Example default configurations for `WdBoot` and `WdFilter`:
+   > All Windows Defender services (`wdboot`, `wdfilter`, `wdnisdrv`, `wdnissvc`, and `windefend`) should be in their default state. Changing the startup of these services is unsupported and may force you to reimage your system. Example default configurations for `WdBoot` and `WdFilter`:
    >
    > - `<Key Path="SYSTEM\CurrentControlSet\Services\WdBoot"><KeyValue Value="0" ValueKind="DWord" Name="Start"/></Key>`
    > - `<Key Path="SYSTEM\CurrentControlSet\Services\WdFilter"><KeyValue Value="0" ValueKind="DWord" Name="Start"/></Key>`
+   >   
+   > If Microsoft Defender Antivirus is in passive mode, these drivers are set to manual (`0`).
 
 ## Troubleshoot onboarding issues 
 
