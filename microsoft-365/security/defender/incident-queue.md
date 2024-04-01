@@ -57,8 +57,10 @@ For example: *Multi-stage incident on multiple endpoints reported by multiple so
 
 > [!NOTE]
 > - Incidents that existed prior to the rollout of automatic incident naming will not have their name changed.
-> - Incidents originally created in Microsoft Sentinel prior to its onboarding to the Microsoft Defender portal are named according to the Sentinel alerts that generated them, but once in the Defender portal and correlated with other alerts or incidents, their names will be changed by automatic incident naming.
+>
+> - Incidents originally created in Microsoft Sentinel prior to its onboarding to the Microsoft Defender portal are named according to the Sentinel alerts that generated them, but once in the Defender portal and correlated with other alerts or incidents, their names will be changed by automatic incident naming.  
 >      For this reason, it's considered a best practice not to use the incident name as a condition for the triggering of [automation rules](/azure/sentinel/automate-incident-handling-with-automation-rules).
+>
 > - Alerts and incidents created in Microsoft Sentinel *after* Sentinel's onboarding to the Microsoft Defender portal will be named by automatic incident naming.
 
 The incident queue also provides multiple filtering options, that when applied, enable you to perform a broad sweep of all existing incidents in your environment, or decide to focus on a specific scenario or threat. Applying filters on the incident queue can help determine which incident requires immediate attention. 
