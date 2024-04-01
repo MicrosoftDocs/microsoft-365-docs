@@ -2,8 +2,8 @@
 title: Step-by-step threat protection stack in Microsoft Defender for Office 365
 f1.keywords:
   - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+author: chrisda
+ms.author: chrisda
 manager: dansimp
 ms.date: 8/22/2023
 ms.reviewer: gigarrub
