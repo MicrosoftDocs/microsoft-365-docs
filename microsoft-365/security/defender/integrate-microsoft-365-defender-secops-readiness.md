@@ -31,15 +31,15 @@ Once the core functions of the Security Operations Center (SOC) team are defined
 
 This approach is based on a strong foundation of protections and includes key areas such as identity, endpoints (devices), data, apps, infrastructure, and networking. The Readiness Assessment team determines the areas where a foundational requirement for enabling Microsoft Defender XDR hasn't yet been met and what needs remediation.
 
-The following are some of the items that will need to be remediated in order for the SOC to fully optimize processes in the SOC:
+The following list provides some examples of things that must be remediated in order for the SOC to fully optimize processes in the SOC:
 
 - **Identity:** Legacy on-premises Active Directory Domain Services (AD DS) domains, no MFA plan, no inventory of privileged accounts, and others.
 - **Endpoints (devices):** Large number of legacy operating systems, limited device inventory, and others.
-- **Data and apps:**  Lack of data governance standards, no inventory of custom apps that won't integrate.
+- **Data and apps:**  Lack of data governance standards, or no inventory of custom apps that won't integrate.
 - **Infrastructure:** Large number of unsanctioned SaaS licenses, no container security, and others.
 - **Networking:** Performance issues due to low bandwidth, flat network, wireless security issues, and others.
 
-Organizations should also follow the [turning on Microsoft Defender XDR](m365d-enable.md) article to capture the baseline set of configuration requirements. These steps will in turn determine remediation activities the SOC teams will have to carry out to effectively develop use cases. 
+Use the guidnance in [turning on Microsoft Defender XDR](m365d-enable.md) to capture the baseline set of configuration requirements. These steps will in turn determine remediation activities the SOC teams have to carry out to effectively develop use cases. 
 
 Adoption procedures and use case creation are described in Steps 3 and 4.
 
