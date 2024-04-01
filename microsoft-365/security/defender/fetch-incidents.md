@@ -1,13 +1,8 @@
 ---
 title: Fetch Microsoft Defender XDR incidents 
 description: Learn how to fetch Microsoft Defender XDR incidents from a customer tenant
-keywords: managed security service provider, mssp, configure, integration
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium

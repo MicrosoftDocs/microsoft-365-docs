@@ -2,17 +2,13 @@
 title: Get email notifications for Threat analytics updates in Microsoft Defender XDR
 ms.reviewer: 
 description: Set up email notifications to get notified of new Threat analytics reports in Microsoft Defender XDR.
-keywords: threat analytics, risk evaluation, Microsoft Defender XDR, M365D, mitigation status, secure configuration, Microsoft Defender for Office 365, Microsoft Defender for Office 365 threat analytics, MDO threat analytics, integrated MDE and MDO threat analytics data, threat analytics data integration, integrated Microsoft Defender XDR threat analytics, notifications, email notifications   
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords:
 - NOCSH
 ms.author: diannegali
 author: diannegali
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security 
@@ -21,7 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: seo-marvel-apr2020
 search.appverid: met150
-ms.date: 09/18/2023
+ms.date: 03/28/2024
 ---
 
 # Get email notifications for Threat analytics updates in Microsoft Defender XDR
