@@ -29,7 +29,7 @@ ms.date: 07/15/2021
 
 Once the core functions of the Security Operations Center (SOC) team are defined, the next step for your organization is to prepare for the adoption of Microsoft Defender XDR through a [Zero Trust approach](/security/zero-trust/). Adoption can help you determine the requirements needed for deploying Microsoft Defender XDR using modern industry-leading practices, while evaluating Microsoft Defender XDR's capabilities against your environment.
 
-This approach is based on a strong foundation of protections and includes key areas such as identity, endpoints (devices), data, apps, infrastructure, and networking. The Readiness Assessment team will determine the areas where a foundational requirement for enabling Microsoft Defender XDR has not yet been met and will need remediation.
+This approach is based on a strong foundation of protections and includes key areas such as identity, endpoints (devices), data, apps, infrastructure, and networking. The Readiness Assessment team determines the areas where a foundational requirement for enabling Microsoft Defender XDR hasn't yet been met and what needs remediation.
 
 The following are some of the items that will need to be remediated in order for the SOC to fully optimize processes in the SOC:
 
