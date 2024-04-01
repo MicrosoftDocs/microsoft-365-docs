@@ -1,12 +1,8 @@
 ---
 title: Review architecture requirements and planning concepts for Microsoft Defender for Office 365
 description: The technical diagram for Microsoft Defender for Office 365 in Microsoft Defender XDR will help you understand identity at Microsoft 365 before you build your trial lab or pilot environment.
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords:
   - NOCSH
 ms.author: tracyp

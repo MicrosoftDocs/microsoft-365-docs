@@ -1,11 +1,7 @@
 ---
 title: Alert classification for malicious exchange connectors
 description: Alert grading recipients from malicious exchange connectors activity and protect their network from malicious attack.
-keywords: incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords:
   - NOCSH
 ms.author: diannegali
