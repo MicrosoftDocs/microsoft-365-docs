@@ -2,14 +2,9 @@
 title: Understand the analyst report section in threat analytics in Microsoft Defender XDR
 ms.reviewer: 
 description: Learn about the analyst report section of each threat analytics report. Understand how it provides information about threats, mitigations, detections, advanced hunting queries, and more.
-keywords: analyst report, threat analytics, detections, advanced hunting queries, mitigations, 
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
 ms.subservice: adv-hunting
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords:
 - NOCSH
 ms.author: maccruz
