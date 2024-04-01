@@ -160,7 +160,7 @@ To verify the record in Microsoft 365:
 
 1. Select **Save**.
 
-    :::image type="content" source="../../media/dns-ionos/ionos-domains-mx-save.png" alt-text="Select Save.":::
+    :::image type="content" source="../../media/dns-ionos/ionos-domains-mx-save.png" alt-text="Save Changes.":::
 
 1. If there are any MX records already listed, delete each of them by selecting the **Delete record** trash can on the **Add record** page.
 
@@ -247,7 +247,7 @@ To verify the record in Microsoft 365:
 
 1. Select **Save**.
 
-   :::image type="content" source="../../media/dns-ionos/ionos-domains-spftxt-save.png" alt-text="Select Save.":::
+   :::image type="content" source="../../media/dns-ionos/ionos-domains-spftxt-save.png" alt-text="Scrrenshot of the SPF text section, Select Save is highlighted.":::
 
 ## Advanced option: Skype for Business
 
@@ -351,7 +351,7 @@ Only select this option if your organization uses Skype for Business for online 
 
 1. Select **Save**.
 
-    :::image type="content" source="../../media/dns-ionos/ionos-domains-srv-save.png" alt-text="Select Save.":::
+    :::image type="content" source="../../media/dns-ionos/ionos-domains-srv-save.png" alt-text="Screenshot of the SRV section, Select Save is highlighted.":::
 
 1. Add the other SRV record.
 
