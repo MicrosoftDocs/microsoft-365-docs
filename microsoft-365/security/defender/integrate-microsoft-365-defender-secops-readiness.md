@@ -39,7 +39,7 @@ The following list provides some examples of things that must be remediated in o
 - **Infrastructure:** Large number of unsanctioned SaaS licenses, no container security, and others.
 - **Networking:** Performance issues due to low bandwidth, flat network, wireless security issues, and others.
 
-Use the guidnance in [turning on Microsoft Defender XDR](m365d-enable.md) to capture the baseline set of configuration requirements. These steps will in turn determine remediation activities the SOC teams have to carry out to effectively develop use cases. 
+Use the guidance in [turning on Microsoft Defender XDR](m365d-enable.md) to capture the baseline set of configuration requirements. These steps will in turn determine remediation activities the SOC teams have to carry out to effectively develop use cases. 
 
 Adoption procedures and use case creation are described in Steps 3 and 4.
 
