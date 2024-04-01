@@ -6,7 +6,7 @@ ms.service: defender-endpoint
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
-ms.date: 04/01/2024
+ms.date: 03/11/2024
 manager: deniseb
 audience: ITPro
 ms.collection: 
@@ -56,12 +56,6 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 > (/api/search/rss?search=%22features+are+generally+available+%28GA%29+in+the+latest+release+of+Microsoft+Defender+for+Endpoint%22&locale=en-us&facet=)
 > 
 > (/api/search/rss?search=%22features+are+generally+available+%28GA%29+in+the+latest+release+of+Microsoft+Defender+for+Endpoint%22&locale=en-us&facet=)
-
-## April 2024
-
-**Microsoft Defender for Endpoint on macOS** feature now in GA:
-
-- **Troubleshooting mode for macOS** : Troubleshooting mode helps you identify instances where antivirus might be causing issues with your applications or system resources. To learn more, see [Troubleshooting mode in Microsoft Defender for Endpoint on macOS](mac-troubleshoot-mode.md).
 
 ## February 2024
 
