@@ -1,9 +1,7 @@
 ---
 title: Integrate ServiceNow tickets into the Microsoft Defender portal and compliance center
 description: Learn how to create and track tickets in ServiceNow from the Microsoft Defender portal and compliance center.
-keywords: security, Microsoft 365, M365, compliance, compliance center, security center, ServiceNow, tickets, tasks, SNOW, connection
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
   - NOCSH

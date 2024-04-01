@@ -95,7 +95,7 @@ v=spf1 ip4:192.168.0.10 ip4:192.168.0.12 include:spf.protection.outlook.com -all
     Most Microsoft 365 organizations require `include:spf.protection.outlook.com` in the SPF TXT record for the domain. Other third-party email services often require an additional `include:` value to identify the service as a valid source of email from the original domain.
 
   - **IP addresses**: An IP address value includes both of the following elements:
-    - The value `ipv4:` or `ipv6:` to identify the type of IP address.
+    - The value `ip4:` or `ip6:` to identify the type of IP address.
     - The publicly resolvable IP address of the source email system. For example:
       - An individual IP address (for example, 192.168.0.10).
       - An IP address range using Classless Inter-Domain Routing (CIDR) notation (for example 192.168.0.1/26). Be sure that the range isn't too big or too small.
@@ -169,7 +169,7 @@ Important points to remember:
   **SPF TXT record for contoso.com**:
 
   ```text
-  v=spf1 ipv4:192.168.0.10 include:spf.protection.outlook.com -all
+  v=spf1 ip4:192.168.0.10 include:spf.protection.outlook.com -all
   ```
 
   **SPF TXT record for marketing.contoso.com**:
