@@ -43,13 +43,13 @@ You can get to the incident queue from **Incidents & alerts > Incidents** on the
 
 Select **Most recent incidents and alerts** to toggle the expansion of the top section, which shows a timeline graph of the number of alerts received and incidents created in the last 24 hours.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents2.png" alt-text="Screenshot of 24-hour incident graph.":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents2.png" alt-text="Screenshot of 24-hour incident graph." lightbox="../../media/incidents-queue/incidents-ss-incidents2.png":::
 
 Below that, the incident queue in the Microsoft Defender portal displays incidents seen in the last six months. The most recent incident is at the top of the list so you can see it first. You can choose a different time frame by selecting it from the drop-down at the top.
 
 The incident queue has customizable columns (select **Customize columns**) that give you visibility into different characteristics of the incident or the impacted entities. This filtering helps you make an informed decision regarding the prioritization of incidents for analysis.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-3.png" alt-text="Screenshot of Incident page filter and column controls.":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-3.png" alt-text="Screenshot of Incident page filter and column controls." lightbox="../../media/incidents-queue/incidents-ss-incidents-3.png":::
 
 ### Incident names
 
@@ -69,7 +69,7 @@ The **Filters** list above the list of incidents shows the currently applied fil
 
 From the default incident queue, you can select **Add filter** to see the **Add filter** drop-down, from which you specify filters to apply to the incidents queue to limit the set of incidents shown. Here's an example.
 
-:::image type="content" source="../../media/incidents-queue/fig1-newfilters.png" alt-text="The Filters pane for the incident queue in the Microsoft Defender portal." lightbox="../../media/incidents-queue/fig1-newfilters.png":::
+:::image type="content" source="../../media/incidents-queue/fig1-newfilters.png" alt-text="The Filters pane for the incident queue in the Microsoft Defender portal.":::
 
 Select the filters you want to use, then select **Add** at the bottom of the list to make them available.
 
