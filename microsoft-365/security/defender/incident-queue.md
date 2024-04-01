@@ -57,7 +57,7 @@ For more visibility at a glance, **automatic incident naming** generates inciden
 
 For example: *Multi-stage incident on multiple endpoints reported by multiple sources.*
 
-Automatic incident naming applies to alerts and incidents coming from Microsoft Sentinel, after you've onboarded Microsoft Sentinel to the unified security operations platform, so incidents from Microsoft Sentinel are likely to have their names change at some point.
+Automatic incident naming applies as well to alerts and incidents coming from Microsoft Sentinel, after you've onboarded Microsoft Sentinel to the unified security operations platform, so incidents from Microsoft Sentinel are likely to have their names change at some point.
 
 We recommend that you avoid using the incident name as a condition for triggering [automation rules](/azure/sentinel/automate-incident-handling-with-automation-rules).
 
