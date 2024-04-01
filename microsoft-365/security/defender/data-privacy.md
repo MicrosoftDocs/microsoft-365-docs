@@ -2,7 +2,6 @@
 title: Microsoft Defender XDR data security and privacy
 description: Describes the privacy and data security of the service.
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
 f1.keywords: 
   - NOCSH
 ms.author: macapara
