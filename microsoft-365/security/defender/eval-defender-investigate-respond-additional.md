@@ -1,13 +1,8 @@
 ---
 title: Try Microsoft Defender XDR incident response capabilities in a pilot environment
 description: Try incident response capabilities in Microsoft Defender XDR to prioritize and manage incidents, automate investigations, and use advanced hunting in threat detection.
-keywords: Microsoft Defender XDR trial, try Microsoft Defender XDR, evaluate Microsoft Defender XDR, Microsoft Defender XDR evaluation lab, Microsoft Defender XDR pilot, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: 
   - NOCSH
 ms.localizationpriority: medium
