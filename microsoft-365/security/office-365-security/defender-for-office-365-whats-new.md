@@ -6,9 +6,9 @@ search.appverid: met150
 f1.keywords: NOCSH
 ms.author: chrisda
 author: chrisda
-ms.localizationpriority: medium
-ms.date: 3/12/2024
 manager: deniseb
+ms.localizationpriority: medium
+ms.date: 4/1/2024
 audience: ITPro
 ms.collection:
   - m365-security
@@ -30,6 +30,8 @@ appliesto:
 This article lists new features in the latest release of Microsoft Defender for Office 365. Features that are currently in preview are denoted with **(preview)**.
 
 Learn more by watching [this video](https://www.youtube.com/watch?v=Tdz6KfruDGo&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=3).
+
+To search the Microsoft 365 Roadmap for Defender for Office 365 features, use [this link](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=Microsoft%2CDefender%2Cfor%2COffice%2C365).
 
 For more information on what's new with other Microsoft Defender security products, see:
 
