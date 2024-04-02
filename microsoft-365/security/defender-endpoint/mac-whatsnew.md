@@ -68,13 +68,10 @@ Microsoft Defender for Endpoint no longer supports Big Sur (11)
 | Engine version:    | **1.1.24020.3**       |
 | Signature version: | **1.405.788.0**       |
 
-**Built-in Scheduled Scan for macOS**
-
-For information on Scheduled Scan built-in for Microsoft Defender for Endpoint on macOS, see [How to schedule scans with Microsoft Defender for Endpoint on macOS](mac-schedule-scan.md).
-
 ##### What's new
 
 - Bug and performance fixes
+- **(GA) Built-in Scheduled Scan for macOS**: For information on Scheduled Scan built-in for Microsoft Defender for Endpoint on macOS, see [How to schedule scans with Microsoft Defender for Endpoint on macOS](mac-schedule-scan.md).
 
 ### Jan-2024 (Build: 101.23122.0005  | Release version: 20.123122.5.0)
 
