@@ -53,13 +53,13 @@ The incident queue has customizable columns (select **Customize columns**) that 
 
 ### Incident names
 
-For more visibility at a glance, **automatic incident naming** generates incident names based on alert attributes such as the number of endpoints affected, users affected, detection sources, or categories. This allows you to quickly understand the scope of the incident.
+For more visibility at a glance, Microsoft Defender XDR generates incident names automatically, based on alert attributes such as the number of endpoints affected, users affected, detection sources, or categories. This specific naming allows you to quickly understand the scope of the incident.
 
 For example: *Multi-stage incident on multiple endpoints reported by multiple sources.*
 
-Automatic incident naming applies as well to alerts and incidents coming from Microsoft Sentinel, after you've onboarded Microsoft Sentinel to the unified security operations platform, so incidents from Microsoft Sentinel are likely to have their names change at some point.
+If you onboarded Microsoft Sentinel to the unified security operations platform, then any alerts and incidents coming from Microsoft Sentinel are likely to have their names changed (regardless of whether they were created before or since the onboarding).
 
-We recommend that you avoid using the incident name as a condition for triggering [automation rules](/azure/sentinel/automate-incident-handling-with-automation-rules).
+We recommend that you avoid using the incident name as a condition for triggering [automation rules](/azure/sentinel/automate-incident-handling-with-automation-rules). If the incident name is a condition, and the incident name changes, the rule will not be triggered.
 
 ## Filters <a name="available-filters"></a>
 
