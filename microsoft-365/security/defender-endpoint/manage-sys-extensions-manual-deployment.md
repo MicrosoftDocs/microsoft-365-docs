@@ -92,7 +92,7 @@ If you run systemextensionsctl list, the following screen appears:
 
 1. On the **Security & Privacy** screen, select the **Privacy** tab.
 
-   :::image type="content" source="images/privacy-tab.png" alt-text="The Privacy tab." lightbox="images/privacy-tab.png":::
+   :::image type="content" source="media/privacy-tab.png" alt-text="The Privacy tab." lightbox="media/privacy-tab.png":::
 
 2. Select **Accessibility** from the left navigation pane, and click **+**.
 
