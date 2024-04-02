@@ -179,7 +179,7 @@ The **Discovered vulnerabilities** tab shows the name, severity, and threat insi
 
 The **Missing KBs** tab lists the missing security updates for the device.
 
-:::image type="content" source="images/missing-kbs-device.png" alt-text="The Missing KBs tab" lightbox="images/missing-kbs-device.png":::
+:::image type="content" source="media/missing-kbs-device.png" alt-text="The Missing KBs tab" lightbox="media/missing-kbs-device.png":::
 
 ## Cards
 
