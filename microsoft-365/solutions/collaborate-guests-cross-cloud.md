@@ -61,10 +61,10 @@ For the best meeting experiences across Microsoft clouds make sure your network 
 
 |Microsoft 365 Cloud Environment|Endpoints|
 |:--------------------------------|:------------------------------|
-|Commercial, GCC|[Worldwide endpoints](https://learn.microsoft.com/en-us/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide)|
-|GCC High|[U.S. Government GCC High endpoints](https://learn.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints?view=o365-worldwide)|
-|DoD|[U.S. Government DoD endpoints](https://learn.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints?view=o365-worldwide)|
-|China (21Vianet)|[Microsoft 365 operated by 21Vianet](https://learn.microsoft.com/en-us/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet?view=o365-worldwide)|
+|Commercial, GCC|[Worldwide endpoints](https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges)|
+|GCC High|[U.S. Government GCC High endpoints](https://learn.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-gcc-high-endpoints)|
+|DoD|[U.S. Government DoD endpoints](https://learn.microsoft.com/microsoft-365/enterprise/microsoft-365-u-s-government-dod-endpoints)|
+|China (21Vianet)|[Microsoft 365 operated by 21Vianet](https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges-21vianet)|
 
 ## Allow cross-tenant connections with other Microsoft 365 cloud environments
 
