@@ -246,7 +246,7 @@ The following examples focus on the results of email authentication only (the `c
   To: michelle@fabrikam.com
   ```
 
-## How to avoid email authentication failures when sending mail to Microsoft 36
+## How to avoid email authentication failures when sending mail to Microsoft 365
 
 > [!TIP]
 > Microsoft 365 customers can use the following methods to allow messages from senders that are identified as spoofing or authentication failures:
