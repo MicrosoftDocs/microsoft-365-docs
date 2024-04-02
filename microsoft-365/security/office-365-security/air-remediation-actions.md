@@ -31,7 +31,7 @@ appliesto:
 
 ## Remediation actions
 
-Threat protection features in [Microsoft Defender for Office 365](defender-for-office-365.md) include certain remediation actions. Such remediation actions can include:
+Threat protection features in [Microsoft Defender for Office 365](mdo-about.md) include certain remediation actions. Such remediation actions can include:
 
 - Soft delete email messages or clusters
 - Block URL (time-of-click)
