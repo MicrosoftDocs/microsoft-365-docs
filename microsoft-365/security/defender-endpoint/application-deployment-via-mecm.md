@@ -39,7 +39,7 @@ For more information on installing the listed prerequisites, see [related topics
 Copy the unified solution package, onboarding script and migration script to the same content source you deploy other apps with MECM.
 
 1. Download Onboarding Script and the unified solution from [Microsoft Defender XDR settings page](https://sip.security.microsoft.com/preferences2/onboarding).
-   :::image type="content" source="images/onboarding-script.png" alt-text="Screenshot of onboarding script and unified solution download" lightbox="images/onboarding-script.png":::
+   :::image type="content" source="media/onboarding-script.png" alt-text="Screenshot of onboarding script and unified solution download" lightbox="media/onboarding-script.png":::
    > [!Note]
    > You must select the Group Policy from the Deployment method dropdown to obtain the .cmd file.
 2. Download the migration script from the document: [Server migration scenarios from the previous, MMA-based Microsoft Defender for Endpoint solution](server-migration.md). This script can also be found on GitHub: [GitHub - microsoft/mdefordownlevelserver](https://github.com/microsoft/mdefordownlevelserver).
