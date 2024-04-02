@@ -48,7 +48,7 @@ You need to have access to:
 
 2. Navigate to **My flows > New > Scheduled - from blank**.
 
-   :::image type="content" source="images/new-flow.png" alt-text="The flow" lightbox="images/new-flow.png":::
+   :::image type="content" source="media/new-flow.png" alt-text="The flow" lightbox="media/new-flow.png":::
 
 
 3. Build a scheduled flow.
@@ -82,11 +82,11 @@ You need to have access to:
 
 7. Add Body in the **Content** field.
 
-   :::image type="content" source="images/parse-json.png" alt-text="The parse JSON section" lightbox="images/parse-json.png":::
+   :::image type="content" source="media/parse-json.png" alt-text="The parse JSON section" lightbox="media/parse-json.png":::
 
 8. Select the **Use sample payload to generate schema** link.
 
-   :::image type="content" source="images/parse-json-schema.png" alt-text="The parse JSON with payload" lightbox="images/parse-json-schema.png":::
+   :::image type="content" source="media/parse-json-schema.png" alt-text="The parse JSON with payload" lightbox="media/parse-json-schema.png":::
 
 9. Copy and paste the following JSON snippet:
 

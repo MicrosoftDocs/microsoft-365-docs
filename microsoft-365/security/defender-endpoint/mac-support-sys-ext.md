@@ -47,7 +47,7 @@ You'll notice that the Microsoft Defender for Endpoint has an **x** symbol in th
 
 If you click the shield with the **x** symbol, you'll get options as shown in the following screenshot:
 
-:::image type="content" source="images/options-on-clicking-x-symbol.png" alt-text="The options you get on clicking the x symbol." lightbox="images/options-on-clicking-x-symbol.png":::
+:::image type="content" source="media/options-on-clicking-x-symbol.png" alt-text="The options you get on clicking the x symbol." lightbox="media/options-on-clicking-x-symbol.png":::
 
 Click **Action needed**.
 

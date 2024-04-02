@@ -91,7 +91,7 @@ conceptualContent:
         # Card
       - title: Enable safe email messages
         links:
-         - url: /microsoft-365/security/office-365-security/mdo-security-comparison
+         - url: /microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet
            itemType: overview
            text: Get Started with Defender for Office 365
          - url: /microsoft-365/security/office-365-security/mdo-sec-ops-guide
@@ -190,4 +190,3 @@ additionalContent:
         - title: Security Operations Analyst Certification & Exams
           summary: Prepare yourself for Microsoft Security certifications.
           url: https://learn.microsoft.com/en-us/certifications/browse/
-          
