@@ -22,7 +22,7 @@ ms.service: microsoft-365-security
 search.appverid: met150
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 1 and Plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
@@ -52,7 +52,7 @@ A SIEM server can receive data from a wide variety of Microsoft 365 services and
 
 |Microsoft 365 Service or Application|SIEM server inputs/methods|Resources to learn more|
 |---|---|---|
-|[Microsoft Defender for Office 365](defender-for-office-365.md)|Audit logs|[SIEM integration with Microsoft Defender for Office 365](siem-integration-with-office-365-ti.md)|
+|[Microsoft Defender for Office 365](mdo-about.md)|Audit logs|[SIEM integration with Microsoft Defender for Office 365](siem-integration-with-office-365-ti.md)|
 |[Microsoft Defender for Endpoint](/windows/security/threat-protection/)|HTTPS endpoint hosted in Azure <p> REST API|[Pull alerts to your SIEM tools](../defender-endpoint/configure-siem.md)|
 |[Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security)|Log integration|[SIEM integration with Microsoft Defender for Cloud Apps](/cloud-app-security/siem)|
 
