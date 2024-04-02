@@ -6,7 +6,7 @@ ms.author: siosulli
 author: siosulli
 ms.reviewer: kumasumit, gopkr
 ms.localizationpriority: medium
-ms.date: 02/12/2024
+ms.date: 03/28/2024
 manager: deniseb
 audience: ITPro
 ms.collection:
@@ -31,6 +31,29 @@ This article is updated frequently to let you know what's new in the latest rele
 
 - [What's new in Defender for Endpoint on macOS](mac-whatsnew.md)
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
+
+<details>
+<summary> March-2024 (Build: 101.24022.0001 | Release version: 30.124022.0001.0)</summary>
+
+## March-2024 Build: 101.24022.0001 | Release version: 30.124022.0001.0
+
+&ensp;Released: **March 22,2024**<br/>
+&ensp;Published: **March 22,2024**<br/>
+&ensp;Build: **101.24022.0001**<br/>
+&ensp;Release version: **30.124022.0001.0**<br/>
+&ensp;Engine version: **1.1.23110.4**<br/>
+&ensp;Signature version: **1.403.87.0**<br/>
+
+**What's new**
+
+There are multiple fixes and new changes in this release:
+
+- The addition of a new log file - `microsoft_defender_scan_skip.log`. This will log the filenames that were skipped from various antivirus scans by Microsoft Defender for Endpoint due to any reason.
+- Stability and performance improvements.
+- Bug fixes.
+
+</details>
+
 
 <details>
 <summary> March-2024 (Build: 101.24012.0001 | Release version: 30.124012.0001.0)</summary>
@@ -68,10 +91,27 @@ There are multiple fixes and new changes in this release:
 **What's new**
 There are multiple fixes and new changes in this release:
 
-- Microsoft Defender for Endpoint on Linux now officially supports Mariner 2, Rocky 8.7 and higher, Alma 9.2 and higher version distros. If you already have Defender for Endpoint running on any of these distros and facing any issues in the older versions, please upgrade to the latest Defender for Endpoint version. Refer our public deployment docs for more details.
 - Updated default engine version to `1.1.23100.2010`, and default signatures version to `1.399.1389.0`.
 - General stability and performance improvements.
 - Bug fixes.
+- Microsoft Defender for Endpoint on Linux now officially supports the following distros and versions:
+
+   | Distro & version | Ring | Package |
+   |---|---|---|
+   | Mariner 2 | Production | https://packages.microsoft.com/cbl-mariner/2.0/prod/extras/x86_64/config.repo |
+   | Rocky 8.7 and higher | Insiders Slow | https://packages.microsoft.com/config/rocky/8/insiders-slow.repo |
+   | Rocky 9.2 and higher | Insiders Slow | https://packages.microsoft.com/config/rocky/9/insiders-slow.repo |
+   | Alma 8.4 and higher | Insiders Slow | https://packages.microsoft.com/config/alma/8/insiders-slow.repo |
+   | Alma 9.2 and higher | Insiders Slow | https://packages.microsoft.com/config/alma/9/insiders-slow.repo |
+
+If you already have Defender for Endpoint running on any of these distros and facing any issues in the older versions, please upgrade to the latest Defender for Endpoint version from the corresponding ring mentioned above. Refer our [public deployment docs](comprehensive-guidance-on-linux-deployment.md) for more details.
+
+> [!NOTE]
+> Known issues: 
+> 
+> Microsoft Defender for Endpoint for Linux on Rocky and Alma currently has the following known issues:
+> - Live Response and Threat Vulnerability Management are currently not supported (work in progress).
+> - Operating system info for devices is not visible in the Microsoft Defender portal
 
 </details>
 

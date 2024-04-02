@@ -21,6 +21,7 @@ ms.custom:
   - AdminSurgePortfolio
   - fwlink 2133922 to Delete subscription heading
   - AdminTemplateSet
+  - admindeeplinkMAC
   - has-azure-ad-ps-ref
 search.appverid: MET150
 description: "Learn how to close your business account with Microsoft. All information related to your account is deleted including licenses, users, and user data."
