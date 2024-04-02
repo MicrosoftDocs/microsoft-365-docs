@@ -138,7 +138,7 @@ Use Planner in Teams to track tasks for your whole frontline team. Store manager
 
 Learn how to [manage the Planner app for your organization](/microsoftteams/manage-planner-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
 
-Share this [Planner video training](https://support.microsoft.com/office/use-the-tasks-app-in-teams-e32639f3-2e07-4b62-9a8c-fd706c12c070) with your users.
+Share the [Planner in Teams help & learning](https://support.microsoft.com/office/getting-started-with-planner-in-teams-7a5e58f1-2cee-41b0-a41d-55d512c4a59c) with your users.
 
 ### Streamline approvals with Approvals
 
