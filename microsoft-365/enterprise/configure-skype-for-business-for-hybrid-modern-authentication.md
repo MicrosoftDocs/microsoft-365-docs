@@ -20,6 +20,7 @@ description: Learn how to configure Skype for Business on-premises to use Hybrid
 ms.custom:
   - seo-marvel-apr2020
   - has-azure-ad-ps-ref
+  - azure-ad-ref-level-one-done
 ---
 
 # How to configure Skype for Business on-premises to use Hybrid Modern Authentication
@@ -124,6 +125,8 @@ Now you'll need to run commands to add the URLs (collected earlier) as Service P
 
 > [!NOTE]
 > Service principal names (SPNs) identify web services and associate them with a security principal (such as an account name or group) so that the service can act on the behalf of an authorized user. Clients authenticating to a server make use of information that's contained in SPNs.
+
+[!INCLUDE [Azure AD PowerShell deprecation note](~/../microsoft-365/reusable-content/msgraph-powershell/includes/aad-powershell-deprecation-note.md)]
 
 1. First, connect to Microsoft Entra ID with [these instructions](/powershell/azure/active-directory/overview).
 

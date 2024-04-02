@@ -120,7 +120,7 @@ This page explains how to create a Microsoft Entra application, get an access to
       > [!NOTE]
       > Every time you add permission you must select on **Grant consent** for the new permission to take effect.
 
-      :::image type="content" source="../images/grant-consent.png" alt-text="The Grand admin consent option" lightbox="../images/grant-consent.png":::
+      :::image type="content" source="../media/grant-consent.png" alt-text="The Grand admin consent option" lightbox="../media/grant-consent.png":::
 
 5. Write down your application ID and your tenant ID.
 

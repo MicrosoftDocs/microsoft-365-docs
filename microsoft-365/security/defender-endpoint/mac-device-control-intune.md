@@ -53,7 +53,7 @@ You can deploy the mobileconfig file through [**https://endpoint.microsoft.com/*
 - select 'Create profile'
 - select 'Templates' and 'Custom'
 
-:::image type="content" source="images/macos-device-control-intune-mobileconfig.png" alt-text="Shows the Microsoft Endpoint Manager macOS Device Control / Configuration settings page." lightbox="images/macos-device-control-intune-mobileconfig.png":::
+:::image type="content" source="media/macos-device-control-intune-mobileconfig.png" alt-text="Shows the Microsoft Endpoint Manager macOS Device Control / Configuration settings page." lightbox="media/macos-device-control-intune-mobileconfig.png":::
 
 ## See also
 

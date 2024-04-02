@@ -14,9 +14,9 @@ ms.custom:
 description: Admins can learn how to create and manage payloads for Attack simulation training in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 search.appverid: met150
-ms.date: 6/14/2023
+ms.date: 3/11/2024
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison" target="_blank">Microsoft Defender for Office 365 plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 2</a>
 ---
 
 # Payloads in Attack simulation training
@@ -27,67 +27,84 @@ In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Offi
 
 For getting started information about Attack simulation training, see [Get started using Attack simulation training](attack-simulation-training-get-started.md).
 
-To see the available payloads, open the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Content library** tab \> and then select **Payloads**. To go directly to the **Content library** tab where you can select **Payloads**, use <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>.
+To see the available payloads, open the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Content library** tab \> and then select **Payloads**. Or, to go directly to the **Content library** tab where you can select **Payloads**, use <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>.
 
 **Payloads** in the **Content library** tab has three tabs:
 
-- **Global payloads**: Contains the built-in, non-modifiable payloads.
-- **Tenant payloads**: Contains the custom payloads that you've created.
+- **Global payloads**: Contains the built-in, unmodifiable payloads.
+- **Tenant payloads**: Contains the custom payloads that you created.
 - **MDO recommendations**: Payloads that are recommended by Defender for Office 365 as having considerable impact when used by attackers. This list is refreshed monthly.
 
-The following information is shown for each payload on the **Global payloads** and **Tenant payloads** tabs<sup>\*</sup>:
+The information that's available on the tabs is described in the following list:
 
-- **Payload name**
-- **Type**: Currently, this value is always **Social engineering**.
-- **Language**: If the payload contains multiple translations, the first two languages are shown directly. To see the remaining languages, hover over the numeric icon (for example, **+10**).
-- **Source**: For built-in payloads, the value is **Global**. For custom payloads, the value is **Tenant**.
-- **Simulations launched**: The number of launched simulations that use the payload.
-- **Predicted compromised rate (%)**: Historical data across Microsoft 365 that predicts the percentage of people who will be compromised by this payload (users compromised / total number of users who receive the payload). For more information, see [Predicted compromise rate](attack-simulation-training-get-started.md#predicted-compromise-rate).
-- **Created by**: For built-in payloads, the value is **Microsoft**. For custom payloads, the value is the UPN of the user who created the payload.
-- **Last modified**
-- **Technique**: One of the available [social engineering techniques](attack-simulation-training-simulations.md#select-a-social-engineering-technique):
+- **MDO recommendations** tab: The following information is shown for each payload:
+  - **Payload name**
+  - **Compromised rate (%)**
+  - **Recommended by**
+  - **Recommendation date time**
+
+- **Global payloads** and **Tenant payloads** tabs: The following information is shown for each payload. You can sort the payloads by clicking on an available column header. Select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns** to change the columns that are shown. The default columns are marked with an asterisk (<sup>\*</sup>):
+  - **Payload name**<sup>\*</sup>
+  - **Type<sup>\*</sup>**: Currently, this value is always **Social engineering**.
+  - **Platform**
+  - **Technique**<sup>\*</sup>: One of the available [social engineering techniques](attack-simulation-training-simulations.md#select-a-social-engineering-technique):
+    - **Credential Harvest**
+    - **Malware Attachment**
+    - **Link in Attachment**
+    - **Link to Malware**
+    - **Drive-by URL**
+    - **OAuth Consent Grant**
+    - **How-to Guide**
+  - **Language**<sup>\*</sup>: If the payload contains multiple translations, the first two languages are shown directly. To see the remaining languages, hover over the numeric icon (for example, **+10**).
+  - **Simulations launched**<sup>\*</sup>: The number of launched simulations that use the payload.
+  - **Source**
+  - **Predicted compromised rate (%)**<sup>\*</sup>: Historical data across Microsoft 365 that predicts the percentage of people who will be compromised by this payload (users compromised / total number of users who receive the payload). For more information, see [Predicted compromise rate](attack-simulation-training-get-started.md#predicted-compromise-rate).
+  - **Created by**<sup>\*</sup>: For built-in payloads, the value is **Microsoft**. For custom payloads, the value is the user principal name (UPN) of the user who created the payload.
+  - **Last modified**<sup>\*</sup>
+  - **Status**<sup>\*</sup>: Values are:
+    - **Ready**
+    - **Draft**: Available only on the **Tenant payloads** tab.
+    - **Archive**: Archived payloads are visible only when **Show archived payloads** is toggled on :::image type="icon" source="../../media/scc-toggle-on.png" border="false":::.
+  - **⋮** (**Actions** control)<sup>\*</sup>: Take action on the payload. The available actions depend on the **Status** value of the payload as described in the procedure sections. This control always appears at the end of the payload row.
+
+  > [!TIP]
+  > To see all columns, you likely need to do one or more of the following steps:
+  >
+  > - Horizontally scroll in your web browser.
+  > - Narrow the width of appropriate columns.
+  > - Remove columns from the view.
+  > - Zoom out in your web browser.
+
+  To find a payload in the list, type part of the payload name in the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box and then press the ENTER key.
+
+  Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: to filter the payloads by one or of the following values:
+
+  - **Technique**: One of the available [social engineering techniques](attack-simulation-training-simulations.md#select-a-social-engineering-technique):
   - **Credential Harvest**
   - **Malware Attachment**
   - **Link in Attachment**
   - **Link to Malware**
   - **Drive-by URL**
   - **OAuth Consent Grant**
-- **Status**: Values are:
-  - **Ready**
-  - **Draft**: Available only on the **Tenant payloads** tab.
-  - **Archive**: Archived payloads are visible only when **Show archived payloads** is toggled on :::image type="icon" source="../../media/scc-toggle-on.png" border="false":::.
-- **⋮** (**Actions** control): Take action on the payload. The available actions depend on the **Status** value of the payload as described in the procedure sections. This control always appears at the end of the payload row.
+  - **How-to Guide**
 
-Select a column header to sort by that column. To add or remove columns, select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns**. By default, the only available column that's not selected is **Platform**.
+  - **Complexity**: Calculated based on the number of indicators in the payload that indicate a possible attack (spelling errors, urgency, etc.). More indicators are easier to identify as an attack and indicate lower complexity. The available values are: **High**, **Medium**, and **Low**.
 
-<sup>\*</sup> To see all columns, you likely need to do one or more of the following steps:
+  - **Language**: The available values are: **English**, **Spanish**, **German**, **Japanese**, **French**, **Portuguese**, **Dutch**, **Italian**, **Swedish**, **Chinese (Simplified)**, **Chinese (Traditional, Taiwan)**, **Norwegian Bokmål**, **Polish**, **Russian**, **Finnish**, **Korean**, **Turkish**, **Hungarian**, **Thai**, **Arabic**, **Vietnamese**, **Slovak**, **Greek**, **Indonesian**, **Romanian**, **Slovenian**, **Croatian**, **Catalan**, and **Other**.
 
-- Horizontally scroll in your web browser.
-- Narrow the width of appropriate columns.
-- Remove columns from the view.
-- Zoom out in your web browser.
+  - **Add tag(s)**
 
-To find a payload in the list, type part of the payload name in the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box and then press the ENTER key.
+  - **Filter by theme**: The available values are: **Account Activation**, **Account Verification**, **Billing**, **Clean up Mail**, **Document Received**, **Expense**, **Fax**, **Finance Report**, **Incoming Messages**, **Invoice**, **Item Received**, **Login Alert**, **Mail Received**, **Password**, **Payment**, **Payroll**, **Personalized Offer**, **Quarantine**, **Remote Work**, **Review Message**, **Security Update**, **Service Suspended**, **Signature Required**, **Upgrade Mailbox Storage**, **Verify mailbox**, **Voicemail**, and **Other**.
 
-Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: to filter the payloads by one or of the following values:
+  - **Filter by brand**: The available values are: **American Express**, **Capital One**, **DHL**, **DocuSign**, **Dropbox**, **Facebook**, **First American**, **Microsoft**, **Netflix**, **Scotiabank**, **SendGrid**, **Stewart Title**, **Tesco**, **Wells Fargo**, **Syrinx Cloud**, and **Other**.
 
-- **Complexity**: Calculated based on the number of indicators in the payload that indicate a possible attack (spelling errors, urgency, etc.). More indicators are easier to identify as an attack and indicate lower complexity. The available values are: **High**, **Medium**, and **Low**.
+  - **Filter by industry**: The available values are: **Banking**, **Business Services**, **Consumer Services**, **Education**, **Energy**, **Construction**, **Consulting**, **Financial Services**, **Government**, **Hospitality**, **Insurance**, **Legal**, **Courier Services**, **IT**, **Healthcare**, **Manufacturing**, **Retail**, **Telecom**, **Real Estate**, and **Other**.
 
-- **Language**: The available values are: **English**, **Spanish**, **German**, **Japanese**, **French**, **Portuguese**, **Dutch**, **Italian**, **Swedish**, **Chinese (Simplified)**, **Norwegian Bokmål**, **Polish**, **Russian**, **Finnish**, **Korean**, **Turkish**, **Hungarian**, **Hebrew**, **Thai**, **Arabic**, **Vietnamese**, **Slovak**, **Greek**, **Indonesian**, **Romanian**, **Slovenian**, **Croatian**, **Catalan**, or **Other**.
+  - **Current event**: The available values are **Yes** or **No**.
 
-- **Add tag(s)**
+  - **Controversial**: The available values are **Yes** or **No**.
 
-- **Filter by theme**: The available values are: **Account activation**, **Account verification**, **Billing**, **Clean up mail**, **Document received**, **Expense**, **Fax**, **Finance report**, **Incoming messages**, **Invoice**, **Items received**, **Login alert**, **Mail received**, **Password**, **Payment**, **Payroll**, **Personalized offer**, **Quarantine**, **Remote work**, **Review message**, **Security update**, **Service suspended**, **Signature required**, **Upgrade mailbox storage Verify mailbox**, **Voicemail**, and **Other**.
-
-- **Filter by brand**: The available values are: **American Express**, **Capital One**, **DHL**, **DocuSign**, **Dropbox**, **Facebook**, **First American**, **Microsoft**, **Netflix**, **Scotiabank**, **SendGrid**, **Stewart Title**, **Tesco**, **Wells Fargo**, **Syrinx Cloud**, and **Other**.
-
-- **Filter by industry**: The available values are: **Banking**, **Business services**, **Consumer services**, **Education**, **Energy**, **Construction**, **Consulting**, **Financial services**, **Government**, **Hospitality**, **Insurance**, **Legal**, **Courier services**, **IT**, **Healthcare**, **Manufacturing**, **Retail**, **Telecom**, **Real estate**, and **Other**.
-
-- **Current event**: The available values are **Yes** or **No**.
-
-- **Controversial**: The available values are **Yes** or **No**.
-
-When you're finished configuring filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
+  When you're finished configuring filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
 When you select a payload by clicking anywhere in the row other than the check box next to the name, a details flyout appears with the following information:
 
@@ -97,6 +114,8 @@ When you select a payload by clicking anywhere in the row other than the check b
   - **From email**
   - **Email subject**
   - **Source**: For built-in payloads, the value is **Global**. For custom payloads, the value is **Tenant**.
+  - **Click rate**
+  - **Simulations launched**
   - **Theme**
   - **Brand**
   - **Industry**
@@ -129,7 +148,9 @@ To see payloads that have been archived (the **Status** value is **Archive**), u
    >
    > You can also create payloads during the creation of simulations. For more information, see [Create a simulation: Select a payload and login page](attack-simulation-training-simulations.md#select-a-payload-and-login-page).
 
-2. On the **Select type** page, the only value that you can currently select is **Email**.
+2. On the **Select type** page, select one of the following values:
+   - **Email**
+   - **Teams**: Currently, this value is available only in Private Preview. For more information, see [Microsoft Teams in Attack simulation training](attack-simulation-training-teams.md).
 
    When you're finished on the **Select type** page, select **Next**.
 
@@ -140,8 +161,9 @@ To see payloads that have been archived (the **Status** value is **Archive**), u
    - **Link to Malware**
    - **Drive-by URL**
    - **OAuth Consent Grant**
+   - **How-to Guide**
 
-   For more information, see [Simulate a phishing attack with Attack simulation training in Defender for Office 365](attack-simulation-training-simulations.md).
+   For more information about the different social engineering techniques, see [Simulations](attack-simulation-training-get-started.md#simulations).
 
    When you're finished on the **Select technique** page, select **Next**.
 
@@ -165,129 +187,81 @@ To see payloads that have been archived (the **Status** value is **Archive**), u
      - **Name your attachment**: Enter a filename for the attachment.
      - **Select an attachment type**: Select a filetype for the attachment. Available values are **Docx** or **HTML**.
 
-   - **Link for attachment** section (**Link to Malware** technique only): In the **Select a URL you want to be your malware attachment link** box, select one of the available URLs (the same URLs that are described for the **Phishing link** section). You embed the URL in the body of the message in the **Email message** section.
+   - **Phishing link** or **Link for attachment** sections:
+     - The **Phishing link** section is available only in the **Credential Harvest**, **Link in Attachment**, **Drive-by URL**, or **OAuth Consent Grant** techniques.
+     - The **Link for attachment** section is available only in the **Link to Malware** technique.
 
-   - **Phishing link** section (**Credential Harvest**, **Link in Attachment**, **Drive-by URL**, or **OAuth Consent Grant** techniques only):
-     - For **Credential Harvest**, **Drive-by URL**, or **OAuth Consent Grant**, the name of the box is **Select a URL you want to be your phishing link**. You embed the URL in the body of the message in the **Email message** section.
-     - For **Link in Attachment**, the name of the box is **Select a URL in this attachment that you want to be your phishing link**. You embed the URL in the attachment in the **Attachment content** section.
+     Select **Select URL**. In the details flyout that opens, select one of the available URLs, and then select **Confirm**.
 
-     Select one of the available URL values:
-
-     |&nbsp;|&nbsp;|&nbsp;|
-     |---|---|---|
-     |<https://www.attemplate.com>|<https://www.exportants.it>|<https://www.resetts.it>|
-     |<https://www.bankmenia.com>|<https://www.exportants.org>|<https://www.resetts.org>|
-     |<https://www.bankmenia.de>|<https://www.financerta.com>|<https://www.salarytoolint.com>|
-     |<https://www.bankmenia.es>|<https://www.financerta.de>|<https://www.salarytoolint.net>|
-     |<https://www.bankmenia.fr>|<https://www.financerta.es>|<https://www.securembly.com>|
-     |<https://www.bankmenia.it>|<https://www.financerta.fr>|<https://www.securembly.de>|
-     |<https://www.bankmenia.org>|<https://www.financerta.it>|<https://www.securembly.es>|
-     |<https://www.banknown.de>|<https://www.financerta.org>|<https://www.securembly.fr>|
-     |<https://www.banknown.es>|<https://www.financerts.com>|<https://www.securembly.it>|
-     |<https://www.banknown.fr>|<https://www.financerts.de>|<https://www.securembly.org>|
-     |<https://www.banknown.it>|<https://www.financerts.es>|<https://www.securetta.de>|
-     |<https://www.banknown.org>|<https://www.financerts.fr>|<https://www.securetta.es>|
-     |<https://www.browsersch.com>|<https://www.financerts.it>|<https://www.securetta.fr>|
-     |<https://www.browsersch.de>|<https://www.financerts.org>|<https://www.securetta.it>|
-     |<https://www.browsersch.es>|<https://www.hardwarecheck.net>|<https://www.shareholds.com>|
-     |<https://www.browsersch.fr>|<https://www.hrsupportint.com>|<https://www.sharepointen.com>|
-     |<https://www.browsersch.it>|<https://www.mcsharepoint.com>|<https://www.sharepointin.com>|
-     |<https://www.browsersch.org>|<https://www.mesharepoint.com>|<https://www.sharepointle.com>|
-     |<https://www.docdeliveryapp.com>|<https://www.officence.com>|<https://www.sharesbyte.com>|
-     |<https://www.docdeliveryapp.net>|<https://www.officenced.com>|<https://www.sharession.com>|
-     |<https://www.docstoreinternal.com>|<https://www.officences.com>|<https://www.sharestion.com>|
-     |<https://www.docstoreinternal.net>|<https://www.officentry.com>|<https://www.supportin.de>|
-     |<https://www.doctorican.de>|<https://www.officested.com>|<https://www.supportin.es>|
-     |<https://www.doctorican.es>|<https://www.passwordle.de>|<https://www.supportin.fr>|
-     |<https://www.doctorican.fr>|<https://www.passwordle.fr>|<https://www.supportin.it>|
-     |<https://www.doctorican.it>|<https://www.passwordle.it>|<https://www.supportres.de>|
-     |<https://www.doctorican.org>|<https://www.passwordle.org>|<https://www.supportres.es>|
-     |<https://www.doctrical.com>|<https://www.payrolltooling.com>|<https://www.supportres.fr>|
-     |<https://www.doctrical.de>|<https://www.payrolltooling.net>|<https://www.supportres.it>|
-     |<https://www.doctrical.es>|<https://www.prizeably.com>|<https://www.supportres.org>|
-     |<https://www.doctrical.fr>|<https://www.prizeably.de>|<https://www.techidal.com>|
-     |<https://www.doctrical.it>|<https://www.prizeably.es>|<https://www.techidal.de>|
-     |<https://www.doctrical.org>|<https://www.prizeably.fr>|<https://www.techidal.fr>|
-     |<https://www.doctricant.com>|<https://www.prizeably.it>|<https://www.techidal.it>|
-     |<https://www.doctrings.com>|<https://www.prizeably.org>|<https://www.techniel.de>|
-     |<https://www.doctrings.de>|<https://www.prizegiveaway.net>|<https://www.techniel.es>|
-     |<https://www.doctrings.es>|<https://www.prizegives.com>|<https://www.techniel.fr>|
-     |<https://www.doctrings.fr>|<https://www.prizemons.com>|<https://www.techniel.it>|
-     |<https://www.doctrings.it>|<https://www.prizesforall.com>|<https://www.templateau.com>|
-     |<https://www.doctrings.org>|<https://www.prizewel.com>|<https://www.templatent.com>|
-     |<https://www.exportants.com>|<https://www.prizewings.com>|<https://www.templatern.com>|
-     |<https://www.exportants.de>|<https://www.resetts.de>|<https://www.windocyte.com>|
-     |<https://www.exportants.es>|<https://www.resetts.es>||
-     |<https://www.exportants.fr>|<https://www.resetts.fr>||
+     To change the URL, select **Change URL**.
 
      > [!NOTE]
-     > A URL reputation service might identify one or more of these URLs as unsafe. Check the availability of the URL in your supported web browsers before you use the URL in a simulation. For more information, see [Phishing simulation URLs blocked by Google Safe Browsing](attack-simulation-training-faq.md#phishing-simulation-urls-blocked-by-google-safe-browsing).
+     > The available URLs are listed in [Simulations](attack-simulation-training-get-started.md#simulations).
+     >
+     > Check the availability of the simulated phishing URL in your supported web browsers before you use the URL in a phishing campaign. For more information, see [Phishing simulation URLs blocked by Google Safe Browsing](attack-simulation-training-faq.md#phishing-simulation-urls-blocked-by-google-safe-browsing).
 
    - **Attachment content** section (**Link in Attachment** technique only).
 
-     A rich text editor is available to create the login page. To see the typical font and formatting settings, toggle **Formatting controls** to :::image type="icon" source="../../media/scc-toggle-on.png" border="false"::: **On**.
+     A rich text editor is available to create the attachment content. To see the typical font and formatting settings, toggle **Formatting controls** to :::image type="icon" source="../../media/scc-toggle-on.png" border="false"::: **On**.
 
-     Use the **Phishing link** control to add the previously selected phishing URL into the attachment.
+     Select the **Phishing link** box. In the **Name phishing URL** dialog that opens, enter a **Name** value for the URL that you selected in the **Phishing link** section, and then select **Confirm**.
+
+     The name value that you entered is added to the attachment content as a link to the phishing URL.
 
    - Common settings for all techniques on the **Configure payload** page:
-
      - **Add tag(s)**
-
-     - **Theme**: The available values are: **Account Activation**, **Account Verification**, **Billing**, **Clean up Mail**, **Document Received**, **Expense**, **Fax**, **Finance Report**, **Incoming Messages**, **Invoice**, **Item Received**, **Login Alert**, **Mail Received**, **Other**, **Password**, **Payment**, **Payroll**, **Personalized Offer**, **Quarantine**, **Remote Work**, **Review Message**, **Security Update**, **Service Suspended**, **Signature Required**, **Upgrade Mailbox Storage**, **Verify mailbox**, or **Voicemail**.
-
-     - **Brand**: The available values are: **American Express**, **Capital One**, **DHL**, **DocuSign**, **Dropbox**, **Facebook**, **First American**, **Microsoft**, **Netflix**, **Scotiabank**, **SendGrid**, **Stewart Title**, **Tesco**, **Wells Fargo**, **Syrinx Cloud**, or **Other**.
-
-     - **Industry**: The available values are: **Banking**, **Business services**, **Consumer services**, **Education**, **Energy**, **Construction**, **Consulting**, **Financial services**, **Government**, **Hospitality**, **Insurance**, **Legal**, **Courier services**, **IT**, **Healthcare**, **Manufacturing**, **Retail**, **Telecom**, **Real estate**, or **Other**.
-
+     - **Theme**: The available values are: **Account Activation**, **Account Verification**, **Billing**, **Clean up Mail**, **Document Received**, **Expense**, **Fax**, **Finance Report**, **Incoming Messages**, **Invoice**, **Item Received**, **Login Alert**, **Mail**, **Password**, **Payment**, **Payroll**, **Personalized Offer**, **Quarantine**, **Remote Work**, **Review Message**, **Security Update**, **Service Suspended**, **Signature Required**, **Upgrade Mailbox Storage**, **Verify mailbox**, **Voicemail**, or **Other**.
+     - **Brand**: The available values are: **American Express**, **Capital One**, **DHL**, **DocuSign**, **Dropbox**, **Facebook**, **First American**, **Microsoft**, **Netflix**, **Scotiabank**, **SendGrid**, **Stewart Title**, **Tesco**, **Wells Fargo**, **Syrinx Cloud**, **Other**.
+     - **Industry**: The available values are: **Banking**, **Business Services**, **Consumer Services**, **Education**, **Energy**, **Construction**, **Consulting**, **Financial Services**, **Government**, **Hospitality**, **Insurance**, **Legal**, **Courier Services**, **IT**, **Healthcare**, **Manufacturing**, **Retail**, **Telecom**, **Real Estate**, or **Other**.
      - **Current event**: The available values are **Yes** or **No**.
-
      - **Controversial**: The available values are **Yes** or **No**.
+     - **Language** section: Select the language for the payload. The available values are: **English**, **Spanish**, **German**, **Japanese**, **French**, **Portuguese**, **Dutch**, **Italian**, **Swedish**, **Chinese (Simplified)**, **Chinese (Traditional, Taiwan)**, **Norwegian Bokmål**, **Polish**, **Russian**, **Finnish**, **Korean**, **Turkish**, **Hungarian**, **Hebrew**, **Thai**, **Arabic**, **Vietnamese**, **Slovak**, **Greek**, **Indonesian**, **Romanian**, **Slovenian**, **Croatian**, **Catalan**, or **Other**.
 
-     - **Language** section: Select the language for the payload. The available values are: **English**, **Spanish**, **German**, **Japanese**, **French**, **Portuguese**, **Dutch**, **Italian**, **Swedish**, **Chinese (Simplified)**, **Norwegian Bokmål**, **Polish**, **Russian**, **Finnish**, **Korean**, **Turkish**, **Hungarian**, **Hebrew**, **Thai**, **Arabic**, **Vietnamese**, **Slovak**, **Greek**, **Indonesian**, **Romanian**, **Slovenian**, **Croatian**, **Catalan**, or **Other**.
+     - **Email message** section:
+       - You can select **Import email** and then **Choose file** to import an existing plain text message file. Two tabs are available:
+       - **Text** tab: A rich text editor is available to create the payload. To see the typical font and formatting settings, toggle **Formatting controls** to :::image type="icon" source="../../media/scc-toggle-on.png" border="false"::: **On**.
 
-   - **Email message** section:
+         The following controls are also available on the **Text** tab:
 
-     - You can select **Import email** and then **Choose file** to import an existing plain text message file.
+         - **Dynamic tag**: Select from the following tags:
 
-     - Two tabs are available:
-     - **Text** tab: A rich text editor is available to create the payload. To see the typical font and formatting settings, toggle **Formatting controls** to :::image type="icon" source="../../media/scc-toggle-on.png" border="false"::: **On**.
+            |Tag name|Tag value|
+            |---|---|
+            |**Insert User name**|`${userName}`|
+            |**Insert First name**|`${firstName}`|
+            |**Insert Last name**|`${lastName}`|
+            |**Insert UPN**|`${upn}`|
+            |**Insert Email**|`${emailAddress}`|
+            |**Insert Department**|`${department}`|
+            |**Insert Manager**|`${manager}`|
+            |**Insert Mobile phone**|`${mobilePhone}`|
+            |**Insert City**|`${city}`|
+            |**Insert Date**|`${date|MM/dd/yyyy|offset}`|
 
-       The following controls are also available on the **Text** tab:
+         - The **Phishing link** or **Malware attachment** control is available:
+           - **Phishing link** is available only in the **Credential Harvest**, **Drive-by URL**, or **OAuth Consent Grant** techniques.
+           - **Malware attachment link** is available only in the **Link to Malware**.
 
-       - **Dynamic tag**: Select from the following tags:
+           After you select the control, a **Name phishing URL** dialog opens. Enter a **Name** value for the URL that you selected in the **Phishing link** or **Link for attachment** section, and then select **Confirm**.
 
-          |Tag name|Tag value|
-          |---|---|
-          |**Insert User name**|`${userName}`|
-          |**Insert First name**|`${firstName}`|
-          |**Insert Last name**|`${lastName}`|
-          |**Insert UPN**|`${upn}`|
-          |**Insert Email**|`${emailAddress}`|
-          |**Insert Department**|`${department}`|
-          |**Insert Manager**|`${manager}`|
-          |**Insert Mobile phone**|`${mobilePhone}`|
-          |**Insert City**|`${city}`|
-          |**Insert Date**|`${date|MM/dd/yyyy|offset}`|
+           The name value that you entered is added to the message body as a link to the phishing URL. On the **Code** tab, the link value is `<a href="${phishingUrl}" target="_blank">Name value you specified</a>`.
 
-       - **Phishing link** (**Credential Harvest**, **Drive-by URL**, or **OAuth Consent Grant** techniques only): Use this control to name and insert the URL that you previously selected in the **Phishing link** section.
+       - **Code** tab: You can view and modify the HTML code directly.
 
-       - **Malware attachment link** (**Link to Malware** technique only): Use this control to name and insert the URL that you previously selected in the **Link for attachment** section.
+       - **Replace all links in the email message with the phishing link** (**Credential Harvest**, **Link to Malware**, **Drive-by URL**, or **OAuth Consent Grant** techniques only): This toggle can save time by replacing all links in the message with the previously selected **Phishing link** or **Link for attachment** URL. To take this action, toggle the setting to on :::image type="icon" source="../../media/scc-toggle-on.png" border="false":::.
 
-       When you select **Phishing link** or **Malware attachment link**, a dialog opens that asks you to name the link. When you're finished, select **Confirm**.
-
-       The name value that you specified is added to the message body as a link. On the **Code** tab, the link value is `<a href="${phishingUrl}" target="_blank">Name value you specified</a>`.
-
-     - **Code** tab: You can view and modify the HTML code directly.
-
-     - **Replace all links in the email message with the phishing link** (**Credential Harvest**, **Link to Malware**, **Drive-by URL**, or **OAuth Consent Grant** techniques only): This toggle can save time by replacing all links in the message with the previously selected **Phishing link** or **Link for attachment** URL. To take this action, toggle the setting to on :::image type="icon" source="../../media/scc-toggle-on.png" border="false":::.
+   - **Predicted compromised rate** section: Select **Predict compromise rate** to calculate the predicted success rate of the payload. For more information, see [Predicted compromise rate](attack-simulation-training-get-started.md#predicted-compromise-rate).
 
    When you're finished on the **Configure payload** page, select **Next**.
+
+   > [!TIP]
+   > For the **How-to Guide** technique, you go directly to the **Review payload** page.
 
 6. The **Add indicators** page is available only if you selected **Credential Harvest**, **Link in Attachment**, **Drive-by URL**, or **OAuth Consent Grant** on the **Select technique** page.
 
    Indicators help employees identify the tell-tale signs of phishing messages.
 
-   On the **Add indicators** page, select :::image type="icon" source="../../media/m365-cc-sc-add-internal-icon.png" border="false"::: **Add indicator**. In the flyout that opens, configure the following settings:
+   On the **Add indicators** page, select :::image type="icon" source="../../media/m365-cc-sc-add-internal-icon.png" border="false"::: **Add indicator**. In the **Add indicator** flyout that opens, configure the following settings:
 
    - **Select and indicator you would like to use** and **Where do you want to place this indicator on the payload?**:
 
@@ -321,13 +295,15 @@ To see payloads that have been archived (the **Status** value is **Archive**), u
 
      This list is curated to contain the most common clues that appear in phishing messages.
 
-     If you select the email message subject or the message body as the location for the indicator, a **Select text** button appears. Select this button to select the text in the message subject or message body where you want the indicator to appear. When you're finished, select **Select**.
+     If you select the email message subject or the message body as the location for the indicator, **Select text** appears. In the **Select required text** flyout that opens, select (highlight) the text in the message subject or message body where you want the indicator to appear. When you're finished, select **Select**.
 
      :::image type="content" source="../../media/attack-sim-training-payloads-add-indicators-select-location.png" alt-text="The Selected text location in the message body to add to an indicator in the new payload wizard in Attack simulation training" lightbox="../../media/attack-sim-training-payloads-add-indicators-select-location.png":::
 
-     - **Indicator description**: You can accept the default description for the indicator or you can customize it.
+     Back on the **Add indicator** flyout, the selected text appears in the **Text selected** section.
 
-     - **Indicator preview**: To see what the current indicator looks like, click anywhere within the section.
+   - **Indicator description**: You can accept the default description for the indicator or you can customize it.
+
+   - **Indicator preview**: To see what the current indicator looks like, click anywhere within the section.
 
      When you're finished in the **Add indicator** flyout, select **Add**
 
@@ -363,7 +339,7 @@ To see payloads that have been archived (the **Status** value is **Archive**), u
 
 ## Take action on payloads
 
-All actions on existing payloads start on the **Payloads** page. To get there, open the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Content library** tab \> **Payloads** \> **Tenant payloads** tab. To go directly to the **Content library** tab where you can select **Payloads** and the **Tenant payloads** or **Global payloads** tabs, use <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>.
+All actions on existing payloads start on the **Payloads** page. To go there, open the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Content library** tab \> **Payloads** \> **Tenant payloads** tab. To go directly to the **Content library** tab where you can select **Payloads** and the **Tenant payloads** or **Global payloads** tabs, use <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>.
 
 > [!TIP]
 > To see the **⋮** (**Actions**) control on the **Global payloads** or **Tenant payloads** tabs, you likely need to do one or more of the following steps:

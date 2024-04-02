@@ -28,7 +28,7 @@ summary: |
 
   **Applies to**
   - [Exchange Online Protection](eop-about.md)
-  - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+  - [Microsoft Defender for Office 365 Plan 1 and Plan 2](mdo-about.md#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet)
   - [Microsoft Defender XDR](../defender/microsoft-365-defender.md)
 
   This article provides frequently asked questions and answers about quarantined email messages for Microsoft 365 organizations with mailboxes in Exchange Online, or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes.
@@ -121,7 +121,7 @@ sections:
 
             Verify that you aren't using third party filtering before you open a support ticket about these issues.
 
-          - Inbox rules ([created by users in Outlook](https://support.microsoft.com/c24f5dea-9465-4df4-ad17-a50704d66c59) or by admins using the **\*-InboxRule** cmdlets in Exchange Online PowerShell) can move or delete messages from the Inbox.
+          - Inbox rules ([created by users in Outlook](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59) or by admins using the **\*-InboxRule** cmdlets in Exchange Online PowerShell) can move or delete messages from the Inbox.
 
           Admins can use [message trace](message-trace-defender-portal.md) to determine if a released message was delivered to the recipient's Inbox.
 
