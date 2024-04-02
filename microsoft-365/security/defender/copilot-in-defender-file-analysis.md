@@ -16,7 +16,7 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - MET150
-ms.date: 03/28/2024
+ms.date: 04/01/2024
 ---
 
 # File analysis with Microsoft Copilot in Microsoft Defender
