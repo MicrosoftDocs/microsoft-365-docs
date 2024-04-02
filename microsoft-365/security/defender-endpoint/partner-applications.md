@@ -66,8 +66,8 @@ Logo|Partner name|Description
 ![Logo for Fortinet.](media/fortinet-logo.jpg)|[Fortinet FortiSOAR](https://www.fortinet.com/products/fortisoar)|Fortinet FortiSOAR is a holistic Security Orchestration, Automation and Response (SOAR) workbench, designed for SOC teams to efficiently respond to the ever-increasing influx of alerts, repetitive manual processes, and shortage of resources. It pulls together all of organization's tools, helps unify operations and reduces alert fatigue, context switching, and the mean time to respond to incidents. 
 ![Logo for Delta Risk ActiveEye.](media/delta-risk-activeeye-logo.png)|[Delta Risk ActiveEye](https://go.microsoft.com/fwlink/?linkid=2127468)|Delta Risk, a leading provider of SOC-as-a-Service and security services, integrate Defender for Endpoint with its cloud-native SOAR platform, ActiveEye.
 ![Logo for Demisto, a Palo Alto Networks Company.](media/demisto-logo.png)|[Demisto, a Palo Alto Networks Company](https://go.microsoft.com/fwlink/?linkid=2108414)|Demisto integrates with Defender for Endpoint to enable security teams to orchestrate and automate endpoint security monitoring, enrichment, and response
-![Logo for Microsoft Flow & Azure Functions.](media/ms-flow-logo.png)|[Microsoft Flow & Azure Functions](https://go.microsoft.com/fwlink/?linkid=2114300)|Use the Defender for Endpoint connectors for Azure Logic Apps & Microsoft Flow to automating security procedures
-![Logo for Rapid7 InsightConnect.](images/rapid7-logo.png)|[Rapid7 InsightConnect](https://go.microsoft.com/fwlink/?linkid=2116040)|InsightConnect integrates with Defender for Endpoint to accelerate, streamline, and integrate your time-intensive security processes
+![Logo for Microsoft Flow & Azure Functions.](images/ms-flow-logo.png)|[Microsoft Flow & Azure Functions](https://go.microsoft.com/fwlink/?linkid=2114300)|Use the Defender for Endpoint connectors for Azure Logic Apps & Microsoft Flow to automating security procedures
+![Logo for Rapid7 InsightConnect.](media/rapid7-logo.png)|[Rapid7 InsightConnect](https://go.microsoft.com/fwlink/?linkid=2116040)|InsightConnect integrates with Defender for Endpoint to accelerate, streamline, and integrate your time-intensive security processes
 ![Logo for ServiceNow.](images/servicenow-logo.png)|[ServiceNow](https://go.microsoft.com/fwlink/?linkid=2135621)|Ingest alerts into ServiceNow Security Operations solution based on Microsoft Graph API integration
 ![Logo for Swimlane.](images/swimlane-logo.png)|[Swimlane](https://go.microsoft.com/fwlink/?linkid=2113902)|Maximize incident response capabilities utilizing Swimlane and Defender for Endpoint together
 
@@ -75,8 +75,8 @@ Logo|Partner name|Description
 
 Logo|Partner name|Description
 :---|:---|:---
-![Logo for MISP Malware Information Sharing Platform)logo.](images/misp-logo.png)|[MISP (Malware Information Sharing Platform)](https://go.microsoft.com/fwlink/?linkid=2127543)|Integrate threat indicators from the Open Source Threat Intelligence Sharing Platform into your Defender for Endpoint environment
-![Logo for Palo Alto Networks.](images/paloalto-logo.png)|[Palo Alto Networks](https://go.microsoft.com/fwlink/?linkid=2099582)|Enrich your endpoint protection by extending Autofocus and other threat feeds to Defender for Endpoint using MineMeld
+![Logo for MISP Malware Information Sharing Platform)logo.](media/misp-logo.png)|[MISP (Malware Information Sharing Platform)](https://go.microsoft.com/fwlink/?linkid=2127543)|Integrate threat indicators from the Open Source Threat Intelligence Sharing Platform into your Defender for Endpoint environment
+![Logo for Palo Alto Networks.](media/paloalto-logo.png)|[Palo Alto Networks](https://go.microsoft.com/fwlink/?linkid=2099582)|Enrich your endpoint protection by extending Autofocus and other threat feeds to Defender for Endpoint using MineMeld
 ![Logo for ThreatConnect.](images/threatconnect-logo.png)|[ThreatConnect](https://go.microsoft.com/fwlink/?linkid=2114115)|Alert and/or block on custom threat intelligence from ThreatConnect Playbooks using Defender for Endpoint indicators
 
 ### Network security
@@ -105,8 +105,8 @@ Logo|Partner name|Description
 Logo|Partner name|Description
 :---|:---|:---
 ![Logo for Cyren Web Filter.](media/cyren-logo.png)|[Cyren Web Filter](https://www.cyren.com/security-center/url-category-check)|Enhance your Defender for Endpoint with advanced Web Filtering
-![Logo for Morphisec.](media/morphisec-logo.png)|[Morphisec](https://go.microsoft.com/fwlink/?linkid=2086215)|Provides Moving Target Defense-powered advanced threat prevention. Integrates forensics data directly into WD Defender for Cloud dashboards to help prioritize alerts, determine device at-risk score and visualize full attack timeline including internal memory information
-![Logo for THOR Cloud.](images/nextron-thor-logo.png)|[THOR Cloud](https://go.microsoft.com/fwlink/?linkid=862988)|Provides on-demand live forensics scans using a signature base with focus on persistent threats
+![Logo for Morphisec.](images/morphisec-logo.png)|[Morphisec](https://go.microsoft.com/fwlink/?linkid=2086215)|Provides Moving Target Defense-powered advanced threat prevention. Integrates forensics data directly into WD Defender for Cloud dashboards to help prioritize alerts, determine device at-risk score and visualize full attack timeline including internal memory information
+![Logo for THOR Cloud.](media/nextron-thor-logo.png)|[THOR Cloud](https://go.microsoft.com/fwlink/?linkid=862988)|Provides on-demand live forensics scans using a signature base with focus on persistent threats
 
 ## SIEM integration
 

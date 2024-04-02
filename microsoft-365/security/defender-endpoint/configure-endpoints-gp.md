@@ -249,11 +249,11 @@ Create a new Group Policy or group these settings in with the other policies. Th
 
 2. Browse to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > **Real-time Protection**.
 
-    :::image type="content" source="images/realtime-protect.png" alt-text="Real-time protection" lightbox="images/realtime-protect.png":::
+    :::image type="content" source="media/realtime-protect.png" alt-text="Real-time protection" lightbox="media/realtime-protect.png":::
 
 1. In the Quarantine folder, configure removal of items from Quarantine folder.
 
-    :::image type="content" source="images/removal-items-quarantine1.png" alt-text="Removal items quarantine folder" lightbox="images/removal-items-quarantine1.png":::
+    :::image type="content" source="media/removal-items-quarantine1.png" alt-text="Removal items quarantine folder" lightbox="media/removal-items-quarantine1.png":::
 
     :::image type="content" source="media/config-removal-items-quarantine2.png" alt-text="config-removal quarantine" lightbox="media/config-removal-items-quarantine2.png":::
 
