@@ -50,77 +50,77 @@ conceptualContent:
       - title: Protect against and recover from ransomware
         links:
          - url: /security/ransomware/human-operated-ransomware
-           itemType: Concept
+           itemType: concept
            text: What is ransomware?
          - url: /compliance/assurance/assurance-malware-and-ransomware-protection
-           itemType: Concept
+           itemType: concept
            text: Malware and ransomware protection
          - url: /security/ransomware
-           itemType: How-to-guide
+           itemType: how-to-guide
            text: Recover from a ransomware attack
          - url: /microsoft-365/security/defender/advanced-hunting-find-ransomware
-           itemType: How-to-guide
+           itemType: how-to-guide
            text: Hunt for ransomware
 
    # Card
       - title: Respond to security incidents
         links:
          - url: /microsoft-365/security/defender/incidents-overview
-           itemType: Overview
+           itemType: overview
            text: Incident response with Microsoft Defender XDR
          - url: /microsoft-365/security/defender/manage-incidents
-           itemType: How-to-guide
+           itemType: how-to-guide
            text: Manage incidents
          - url: /microsoft-365/security/defender/first-incident-overview
-           itemType: How-to-guide
+           itemType: how-to-guide
            text: Respond to your first incident
 
   # Card
       - title: Simulate attacks
         links:
          - url: /microsoft-365/security/office-365-security/attack-simulation-training-get-started
-           itemType: Get-started
+           itemType: get-started
            text: Get started using attack simulation training
          - url: /microsoft-365/security/office-365-security/attack-simulation-training-insights
-           itemType: Overview
+           itemType: overview
            text: Insights and reporting for attack simulation
          - url: /microsoft-365/security/office-365-security/advanced-delivery-policy-configure
-           itemType: How-to-guide
+           itemType: how-to-guide
            text: Configure third-party phishing simulation
 
         # Card
       - title: Enable safe email messages
         links:
          - url: /microsoft-365/security/office-365-security/mdo-about
-           itemType: Overview
+           itemType: overview
            text: Get Started with Defender for Office 365
          - url: /microsoft-365/security/office-365-security/mdo-sec-ops-guide
-           itemType: How-to-guide
+           itemType: how-to-guide
            text: Operationalize Defender for Office 365
          - url: /microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered
-           itemType: How-to-guide
+           itemType: how-to-guide
            text: Investigate malicious emails
 
 # Card
       - title: Protect your endpoints
         links:
          - url: /microsoft-365/security/defender-endpoint/onboard-configure
-           itemType: How-to-guide
+           itemType: how-to-guide
            text: Onboard devices to Defender for Endpoint
          - url: /microsoft-365/security/defender-endpoint/attack-surface-reduction
-           itemType: How-to-guide
+           itemType: how-to-guide
            text: Implement attack surface reduction rules
          - url: /microsoft-365/security/defender-endpoint/next-generation-protection
-           itemType: Overview
+           itemType: overview
            text: Configure Next generation protection
 # Card
       - title: Detect and remediate vulnerabilities
         links:
          - url: /microsoft-365/security/defender-vulnerability-management/tvm-software-inventory
-           itemType: Reference
+           itemType: reference
            text: Software inventory in Defender Vulnerability Management
          - url: /microsoft-365/security/defender-vulnerability-management/tvm-security-recommendation
-           itemType: Overview
+           itemType: overview
            text: Security recommendations
 
 additionalContent:
@@ -132,7 +132,7 @@ additionalContent:
     - title: Microsoft Defender XDR
       links:
       - url: /microsoft-365/security/defender/microsoft-365-defender
-        text: Overview
+        text: overview
       - url: /microsoft-365/security/defender/get-started
         text: Get Started
       - url: /microsoft-365/security/defender/eval-overview
@@ -141,35 +141,35 @@ additionalContent:
     - title: Microsoft Defender for Office 365
       links:
        - url: /microsoft-365/security/office-365-security/defender-for-office-365
-         text: Overview
+         text: overview
        - url: /microsoft-365/security/office-365-security/preset-security-policies
          text: Get Started
     # Card
     - title: Microsoft Defender for Endpoint
       links:
       - url: /microsoft-365/security/defender-endpoint/microsoft-defender-endpoint
-        text: Overview  
+        text: overview  
       - url: /microsoft-365/security/defender-endpoint/deployment-strategy
         text: Get Started
     # Card
     - title: Microsoft Defender Vulnerability Management
       links:
       - url: /microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management
-        text: Overview
+        text: overview
       - url: /microsoft-365/security/defender-vulnerability-management/tvm-prerequisites
         text: Get Started
     # Card
     - title: Microsoft Defender for Identity
       links:
        - url: /defender-for-identity/what-is
-         text: Overview
+         text: overview
        - url: /defender-for-identity/deploy-defender-identity
          text: Get Started
      # Card
     - title: Microsoft Defender for Cloud apps
       links:
       - url: /defender-cloud-apps/what-is-defender-for-cloud-apps
-        text: Overview
+        text: overview
       - url: /defender-cloud-apps/get-started
         text: Get Started
 
