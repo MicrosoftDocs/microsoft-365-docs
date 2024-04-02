@@ -43,7 +43,7 @@ Starting with macOS BigSur (11), Apple's macOS requires all system extensions to
 
 You'll notice that the Microsoft Defender for Endpoint has an **x** symbol in the shield, as shown in the following screenshot:
 
-:::image type="content" source="images/mde-screen-with-x-symbol.png" alt-text="The Microsoft Defender for Endpoint screen that displays the x symbol on its menu." lightbox="images/mde-screen-with-x-symbol.png":::
+:::image type="content" source="media/mde-screen-with-x-symbol.png" alt-text="The Microsoft Defender for Endpoint screen that displays the x symbol on its menu." lightbox="media/mde-screen-with-x-symbol.png":::
 
 If you click the shield with the **x** symbol, you'll get options as shown in the following screenshot:
 
@@ -87,7 +87,7 @@ If you didn't approve the system extension during the deployment/installation of
    systemextensionsctl list
    ```
 
-   :::image type="content" source="images/check-system-extension.png" alt-text="The screen that shows what should be done to check the system extension." lightbox="images/check-system-extension.png":::
+   :::image type="content" source="media/check-system-extension.png" alt-text="The screen that shows what should be done to check the system extension." lightbox="media/check-system-extension.png":::
 
 You'll notice that both Microsoft Defender for Endpoint on macOS extensions are in the **[activated waiting for user]** state.
 
@@ -108,7 +108,7 @@ endpoint_security_extension_installed        : true
 
 This output is shown in the following screenshot:
 
-:::image type="content" source="images/details-system-extensions-command.png" alt-text="The output regarding details system extensions." lightbox="images/details-system-extensions-command.png":::
+:::image type="content" source="media/details-system-extensions-command.png" alt-text="The output regarding details system extensions." lightbox="media/details-system-extensions-command.png":::
 
 The following files might be missing if you're managing it via Intune, JamF, or another MDM solution:
 

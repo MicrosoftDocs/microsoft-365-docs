@@ -1,9 +1,7 @@
 ---
 title: Investigate users in Microsoft Defender XDR
 description: Investigate users for an incident in the Microsoft Defender portal.
-keywords: security, malware, Microsoft 365, M365, security center, monitor, report, identities, data, devices, apps, incident, analyze, response
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
@@ -40,19 +38,19 @@ You can find identity information in the following views:
 - Advanced hunting queries
 - Action center
 
-A clickable identity link is available in these views that will take you to the **User** page where more details about the user are shown. For example, you can see the details of user accounts identified in the alerts of an incident in the Microsoft Defender portal at **Incidents & alerts** \> ***incident*** \> **Users**.
+A clickable identity link is available in these views that will take you to the **User** page where more details about the user are shown. For example, you can see the details of user accounts identified in the alerts of an incident in the Microsoft Defender portal at **Incidents & alerts** \> ***incident*** \> **Assets** > **Users**.
 
-:::image type="content" source="../../media/investigate-users/Fig1-user-incident-overview.png" alt-text="The Users page for an incident in the Microsoft Defender portal." lightbox="../../media/investigate-users/Fig1-user-incident-overview.png":::
+:::image type="content" source="../../media/investigate-users/Fig1-user-incident-overview.png" alt-text="Screenshot of the Users page for an incident in the Microsoft Defender portal." lightbox="../../media/investigate-users/Fig1-user-incident-overview.png":::
 
 When you investigate a specific identity, you'll see the:
 
 - [Overview](#overview), including identity details, incident and alerts visual view, investigation priority, and scored timeline
-- [Active Alerts](#alerts) tab
+- [Incidents and alerts](#incidents-and-alerts) tab
 - [Observed in organization](#observed-in-organization) tab
 - [Identity timeline](#timeline) tab
 - [Remediation actions](#remediation-actions)
 
-:::image type="content" source="../../media/investigate-users/Fig2-user-incident-overview.png" alt-text="A specific user's page in the Microsoft Defender portal" lightbox="../../media/investigate-users/Fig2-user-incident-overview.png":::
+:::image type="content" source="../../media/investigate-users/Fig2-user-incident-overview.png" alt-text="Screenshot of a user details page in the Microsoft Defender portal" lightbox="../../media/investigate-users/Fig2-user-incident-overview.png":::
 
 > [!NOTE]
 > The user page shows the Microsoft Entra organization as well as groups, helping you understand the groups and permissions associated with a user.
@@ -107,11 +105,11 @@ For more information, see [Defender for Identity entity tags in Microsoft Defend
 > [!NOTE]
 > The organization tree section and the account tags are available when a Microsoft Defender for Identity license is available.
 
-## Alerts
+## Incidents and alerts
 
-You can see all active alerts involving the user from the last 180 days in this tab. Information like alert severity and the time the alert was generated is available in this tab. Clicking on the alert row shows you additional information about the alert.
+You can see all active incidents and alerts involving the user from the last 180 days in this tab. Information like alert severity and the time the alert was generated is available in this tab. Select the alert row to view more details about the alert.
 
-:::image type="content" source="../../media/investigate-users/Fig3-user-incident-alertstab.png" alt-text="The user account's related alerts seen in the Alerts tab in the Microsoft Defender portal" lightbox="../../media/investigate-users/Fig3-user-incident-alertstab.png":::
+:::image type="content" source="../../media/investigate-users/Fig3-user-incident-alertstab.png" alt-text="Screenshot of user's alerts listed in the Alerts tab in the Microsoft Defender portal" lightbox="../../media/investigate-users/Fig3-user-incident-alertstab.png":::
 
 ## Observed in organization
 
@@ -129,7 +127,7 @@ The map provides a list of other devices or users an attacker can take advantage
 
 The lateral movement path report, which can be viewed by date, is always available to provide information about the potential lateral movement paths discovered and can be customized by time. Select a different date using **View a different date** to view previous lateral movement paths found for an entity. The graph only displays if a potential lateral movement path has been found for an entity in the past two days.
 
-:::image type="content" source="../../media/investigate-users/Fig4-user-incident-difftabs.png" alt-text="The Observed in organization view showing device, group, location, and lateral movement paths for a user in the Microsoft Defender portal" lightbox="../../media/investigate-users/Fig4-user-incident-difftabs.png":::
+:::image type="content" source="../../media/investigate-users/Fig4-user-incident-difftabs.png" alt-text="Screenshot of the `Observed in organization` view, showing device, group, location, and lateral movement paths for a user in the Microsoft Defender portal" lightbox="../../media/investigate-users/Fig4-user-incident-difftabs.png":::
 
 ## Timeline
 
@@ -190,7 +188,7 @@ From the Overview page, you can do these additional actions:
 - Reset investigation priority score for the user
 - View Microsoft Entra account settings, related governance, the user's owned files, or the user's shared files
 
-:::image type="content" source="../../media/investigate-users/Fig6-user-incident-actions.png" alt-text="The actions for remediation for a user in the Microsoft Defender portal" lightbox="../../media/investigate-users/Fig6-user-incident-actions.png":::
+:::image type="content" source="../../media/investigate-users/Fig6-user-incident-actions.png" alt-text="Screenshot showing remeidation actions for a user in the Microsoft Defender portal" lightbox="../../media/investigate-users/Fig6-user-incident-actions.png":::
 
 For more information, see [Remediation actions in Microsoft Defender for Identity](/defender-for-identity/remediation-actions).
 

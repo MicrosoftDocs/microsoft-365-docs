@@ -20,7 +20,7 @@ ms.subservice: mdo
 ms.service: microsoft-365-security
 ms.date: 06/09/2023
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison" target="_blank">Microsoft Defender for Office 365 plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 2</a>
 ---
 
 # Review and manage remediation actions in Office 365
@@ -97,7 +97,7 @@ There are two different ways to reconsider submitted actions:
 
 ## Next steps
 
-- [Use Threat Explorer](threat-explorer-about.md)
+- [Use Threat Explorer](threat-explorer-real-time-detections-about.md)
 - [Admin /Manual Actions](remediate-malicious-email-delivered-office-365.md)
 - [How to report false positives/negatives in automated investigation and response capabilities](air-report-false-positives-negatives.md)
 

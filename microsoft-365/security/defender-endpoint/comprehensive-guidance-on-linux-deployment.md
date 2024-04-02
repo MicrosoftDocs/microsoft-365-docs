@@ -102,6 +102,9 @@ Use the following steps to check the network connectivity of Microsoft Defender 
 
 3. Verify that the traffic isn't being inspected by SSL inspection (TLS inspection). This is the most common network related issue when setting up Microsoft Defender Endpoint, see [Verify SSL inspection isn't being performed on the network traffic](#step-3-verify-ssl-inspection-isnt-being-performed-on-the-network-traffic).
 
+> [!NOTE]
+> It is generally recommended that traffic for Defender for Endpoint is not inspected by SSL inspection (TLS inspection). This applies to all supported operating systems (Windows, Linux, and MacOS).
+
 #### Step 1: Allow URLs for the Microsoft Defender for Endpoint traffic
 
 1. Download the [Microsoft Defender for Endpoint URL list for commercial customers](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx
@@ -185,7 +188,7 @@ This step of the setup process involves adding Defender for Endpoint to the excl
 
 - To check if there's a non-Microsoft antimalware that is running FANotify, you can run `mdatp health`, then check the result:
 
-  :::image type="content" source="images/mdatp-health-result.png" alt-text="Image of mdatp health result":::
+  :::image type="content" source="media/mdatp-health-result.png" alt-text="Image of mdatp health result":::
 
   Under "conflicting_applications", if you see a result other than "unavailable", uninstall the non-Microsoft antimalware.
 
@@ -499,7 +502,7 @@ With macOS and Linux, you could take a couple of systems and run in the Beta cha
 
 The choice of the channel determines the type and frequency of updates that are offered to your device. Devices in Beta are the first ones to receive updates and new features, followed later by Preview and lastly by Current.
 
-:::image type="content" source="images/insider-rings.png" alt-text="The insider rings.":::
+:::image type="content" source="media/insider-rings.png" alt-text="The insider rings.":::
 
 In order to preview new features and provide early feedback, it's recommended that you configure some devices in your enterprise to use either Beta or Preview.
 
@@ -564,7 +567,7 @@ Use the following syntaxes to help identify the process that is causing CPU over
   sudo ps -T -p <PID> >> Thread_with_highest_cpu_usage.log
   ```
 
-  :::image type="content" source="images/cpu-utilization.png" alt-text="This is CPU utilization":::
+  :::image type="content" source="media/cpu-utilization.png" alt-text="This is CPU utilization":::
 
 The following table lists the processes that might cause a high CPU usage:
 

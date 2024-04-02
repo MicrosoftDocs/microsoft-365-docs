@@ -226,18 +226,18 @@ Create a new group policy specifically for onboarding devices such as "Microsoft
 
 - Create a Group Policy Folder named "c:\windows\MMA"
 
-     :::image type="content" source="images/grppolicyconfig1.png" alt-text="The folders location" lightbox="images/grppolicyconfig1.png":::
+     :::image type="content" source="media/grppolicyconfig1.png" alt-text="The folders location" lightbox="media/grppolicyconfig1.png":::
 
     **This will add a new folder on every server that gets the GPO applied, called MMA, and will be stored in c:\windows. This will contain the installation files for the MMA, prerequisites, and install script.**
 
 - Create a Group Policy Files preference for each of the files stored in Net logon.
 
-     :::image type="content" source="images/grppolicyconfig2.png" alt-text="The group policy - 1" lightbox="images/grppolicyconfig2.png":::
+     :::image type="content" source="media/grppolicyconfig2.png" alt-text="The group policy - 1" lightbox="media/grppolicyconfig2.png":::
 
 It copies the files from DOMAIN\NETLOGON\MMA\filename to
 C:\windows\MMA\filename - **so the installation files are local to the server**:
 
-:::image type="content" source="images/deploymma.png" alt-text="The deploy mma cmd properties" lightbox="images/deploymma.png":::
+:::image type="content" source="media/deploymma.png" alt-text="The deploy mma cmd properties" lightbox="media/deploymma.png":::
 
 Repeat the process but create item level targeting on the COMMON tab, so the file only gets copied to the appropriate platform/Operating system version in scope:
 
@@ -266,7 +266,7 @@ As the Script has an exit method and wont re-run if the MMA is installed, you co
 
 :::image type="content" source="images/newtaskprops.png" alt-text="The new task properties" lightbox="images/newtaskprops.png":::
 
-:::image type="content" source="images/deploymmadowmload.png" alt-text="The deploy mma download properties" lightbox="images/deploymmadowmload.png":::
+:::image type="content" source="media/deploymmadowmload.png" alt-text="The deploy mma download properties" lightbox="media/deploymmadowmload.png":::
 
 :::image type="content" source="images/tasksch.png" alt-text="The task scheduler" lightbox="images/tasksch.png":::
 

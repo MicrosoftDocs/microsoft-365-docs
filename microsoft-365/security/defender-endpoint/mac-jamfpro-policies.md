@@ -65,7 +65,7 @@ You'll need to take the following steps:
 
 2. Sign in to Jamf Pro, navigate to **Computers** > **Configuration Profiles**, and select **New**.
 
-   :::image type="content" source="images/jamf-pro-configure-profile.png" alt-text="The page on which you create a new Jamf Pro dashboard." lightbox="images/jamf-pro-configure-profile.png":::
+   :::image type="content" source="media/jamf-pro-configure-profile.png" alt-text="The page on which you create a new Jamf Pro dashboard." lightbox="media/jamf-pro-configure-profile.png":::
 
 3. Enter the following details in the **General** tab:
    
@@ -77,43 +77,43 @@ You'll need to take the following steps:
 
 4.  Navigate to the **Application & Custom Settings** page and select **Upload** > **Add**.
 
-    :::image type="content" source="images/jamfpro-mac-profile.png" alt-text="The configurate app and custom settings." lightbox="images/jamfpro-mac-profile.png":::
+    :::image type="content" source="media/jamfpro-mac-profile.png" alt-text="The configurate app and custom settings." lightbox="media/jamfpro-mac-profile.png":::
 
 5. Select **Upload File (PLIST file)** then in **Preference Domain** enter: `com.microsoft.wdav.atp`.
 
-   :::image type="content" source="images/jamfpro-plist-upload.png" alt-text="The jamfpro plist upload file." lightbox="images/jamfpro-plist-upload.png":::
+   :::image type="content" source="media/jamfpro-plist-upload.png" alt-text="The jamfpro plist upload file." lightbox="media/jamfpro-plist-upload.png":::
 
-   :::image type="content" source="images/jamfpro-plist-file.png" alt-text="The upload file property List file." lightbox="images/jamfpro-plist-file.png":::
+   :::image type="content" source="media/jamfpro-plist-file.png" alt-text="The upload file property List file." lightbox="media/jamfpro-plist-file.png":::
 
 6. Select **Open** and select the onboarding file.
 
-   :::image type="content" source="images/jamfpro-plist-file-onboard.png" alt-text="The onboarding file." lightbox="images/jamfpro-plist-file-onboard.png":::
+   :::image type="content" source="media/jamfpro-plist-file-onboard.png" alt-text="The onboarding file." lightbox="media/jamfpro-plist-file-onboard.png":::
 
 7. Select **Upload**.
 
-   :::image type="content" source="images/jamfpro-upload-plist.png" alt-text="The uploading plist file." lightbox="images/jamfpro-upload-plist.png":::
+   :::image type="content" source="media/jamfpro-upload-plist.png" alt-text="The uploading plist file." lightbox="media/jamfpro-upload-plist.png":::
 
 8. Select the **Scope** tab.
 
-   :::image type="content" source="images/jamfpro-scope-tab.png" alt-text="The Scope tab." lightbox="images/jamfpro-scope-tab.png":::
+   :::image type="content" source="media/jamfpro-scope-tab.png" alt-text="The Scope tab." lightbox="media/jamfpro-scope-tab.png":::
 
 9. Select the target computers.
 
-   :::image type="content" source="images/jamfpro-target-computer.png" alt-text="The target computers." lightbox="images/jamfpro-target-computer.png":::
+   :::image type="content" source="media/jamfpro-target-computer.png" alt-text="The target computers." lightbox="media/jamfpro-target-computer.png":::
 
-   :::image type="content" source="images/jamfpro-targets.png" alt-text="The targets." lightbox="images/jamfpro-targets.png":::
+   :::image type="content" source="media/jamfpro-targets.png" alt-text="The targets." lightbox="media/jamfpro-targets.png":::
 
 10. Select **Save**.
 
-    :::image type="content" source="images/jamfpro-deployment-target.png" alt-text="The deployment of target computers." lightbox="images/jamfpro-deployment-target.png":::
+    :::image type="content" source="media/jamfpro-deployment-target.png" alt-text="The deployment of target computers." lightbox="media/jamfpro-deployment-target.png":::
 
-    :::image type="content" source="images/jamfpro-target-selected.png" alt-text="The selection of target computers." lightbox="images/jamfpro-target-selected.png":::
+    :::image type="content" source="media/jamfpro-target-selected.png" alt-text="The selection of target computers." lightbox="media/jamfpro-target-selected.png":::
 
 11. Select **Done**.
 
-    :::image type="content" source="images/jamfpro-target-group.png" alt-text="The computers of a target group." lightbox="images/jamfpro-target-group.png":::
+    :::image type="content" source="media/jamfpro-target-group.png" alt-text="The computers of a target group." lightbox="media/jamfpro-target-group.png":::
 
-    :::image type="content" source="images/jamfpro-configuration-policies.png" alt-text="The list of configuration profiles." lightbox="images/jamfpro-configuration-policies.png":::
+    :::image type="content" source="media/jamfpro-configuration-policies.png" alt-text="The list of configuration profiles." lightbox="media/jamfpro-configuration-policies.png":::
 
 ## Step 3: Configure Microsoft Defender for Endpoint settings
 
@@ -171,7 +171,7 @@ Note that you must use exact `com.microsoft.wdav` as the **Preference Domain**, 
 
 10. Select **Done**. You'll see the new **Configuration profile**.
 
-    :::image type="content" source="images/dd55405106da0dfc2f50f8d4525b01c8.png" alt-text="The page on which you complete the Configuration settings." lightbox="images/dd55405106da0dfc2f50f8d4525b01c8.png":::
+    :::image type="content" source="media/dd55405106da0dfc2f50f8d4525b01c8.png" alt-text="The page on which you complete the Configuration settings." lightbox="media/dd55405106da0dfc2f50f8d4525b01c8.png":::
 
 Microsoft Defender for Endpoint adds new settings over time. These new settings will be added to the schema, and a new version will be published to GitHub.
 All you need to do to have updates is to download an updated schema, edit existing configuration profile, and **Edit schema** at the **Application & Custom Settings** tab.
@@ -325,7 +325,7 @@ All you need to do to have updates is to download an updated schema, edit existi
 
    :::image type="content" source="media/3160906404bc5a2edf84d1d015894e3b.png" alt-text="The MDATP MDAV configuration settings." lightbox="media/3160906404bc5a2edf84d1d015894e3b.png":::
    
-   :::image type="content" source="images/e1cc1e48ec9d5d688087b4d771e668d2.png" alt-text="The application and custom settings." lightbox="images/e1cc1e48ec9d5d688087b4d771e668d2.png":::
+   :::image type="content" source="media/e1cc1e48ec9d5d688087b4d771e668d2.png" alt-text="The application and custom settings." lightbox="media/e1cc1e48ec9d5d688087b4d771e668d2.png":::
 
 6. Select **Upload File (PLIST file)**.
 
@@ -333,7 +333,7 @@ All you need to do to have updates is to download an updated schema, edit existi
 
 7. In **Preferences Domain**, enter `com.microsoft.wdav`, then select  **Upload PLIST File**.
 
-   :::image type="content" source="images/db15f147dd959e872a044184711d7d46.png" alt-text="The configuration settings preferences domain." lightbox="images/db15f147dd959e872a044184711d7d46.png":::
+   :::image type="content" source="media/db15f147dd959e872a044184711d7d46.png" alt-text="The configuration settings preferences domain." lightbox="media/db15f147dd959e872a044184711d7d46.png":::
 
 8. Select **Choose File**.
 
@@ -347,7 +347,7 @@ All you need to do to have updates is to download an updated schema, edit existi
 
     :::image type="content" source="media/0adb21c13206861ba9b30a879ade93d3.png" alt-text="The configuration setting upload." lightbox="media/0adb21c13206861ba9b30a879ade93d3.png":::
 
-    :::image type="content" source="images/f624de59b3cc86e3e2d32ae5de093e02.png" alt-text="The prompt to upload the image related to the configuration settings." lightbox="images/f624de59b3cc86e3e2d32ae5de093e02.png":::
+    :::image type="content" source="media/f624de59b3cc86e3e2d32ae5de093e02.png" alt-text="The prompt to upload the image related to the configuration settings." lightbox="media/f624de59b3cc86e3e2d32ae5de093e02.png":::
 
     > [!NOTE]
     > If you happen to upload the Intune file, you'll get the following error:
@@ -378,8 +378,8 @@ All you need to do to have updates is to download an updated schema, edit existi
 
 16. Select **Done**. You'll see the new **Configuration profile**.
 
-    ![Image of configuration settings config profile image.](images/dd55405106da0dfc2f50f8d4525b01c8.png)
-    :::image type="content" source="images/dd55405106da0dfc2f50f8d4525b01c8.png" alt-text="The config profile's settings." lightbox="images/dd55405106da0dfc2f50f8d4525b01c8.png":::
+    ![Image of configuration settings config profile image.](media/dd55405106da0dfc2f50f8d4525b01c8.png)
+    :::image type="content" source="media/dd55405106da0dfc2f50f8d4525b01c8.png" alt-text="The config profile's settings." lightbox="media/dd55405106da0dfc2f50f8d4525b01c8.png":::
 
 ## Step 4: Configure notifications settings
 
@@ -459,7 +459,7 @@ These steps are applicable on macOS 11 (Big Sur) or later.
 
 3. In the Jamf Pro dashboard, select **General**.
 
-   :::image type="content" source="images/eaba2a23dd34f73bf59e826217ba6f15.png" alt-text="The configuration settings." lightbox="images/eaba2a23dd34f73bf59e826217ba6f15.png":::
+   :::image type="content" source="media/eaba2a23dd34f73bf59e826217ba6f15.png" alt-text="The configuration settings." lightbox="media/eaba2a23dd34f73bf59e826217ba6f15.png":::
 
 4. Enter the following details on the **General** tab:
 
@@ -733,7 +733,7 @@ Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint 
 
 2. Rename it to `wdav_MDM_Contoso_200329.pkg`.
 
-   :::image type="content" source="images/fb2220fed3a530f4b3ef36f600da0c27.png" alt-text="The file explorer1 wdavmdm package." lightbox="images/fb2220fed3a530f4b3ef36f600da0c27.png":::
+   :::image type="content" source="media/fb2220fed3a530f4b3ef36f600da0c27.png" alt-text="The file explorer1 wdavmdm package." lightbox="media/fb2220fed3a530f4b3ef36f600da0c27.png":::
 
 3. Open the Jamf Pro dashboard.
 
@@ -778,7 +778,7 @@ Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint 
 
 9. Navigate to the **Policies** page.
 
-   :::image type="content" source="images/f878f8efa5ebc92d069f4b8f79f62c7f.png" alt-text="The configuration settings policies." lightbox="images/f878f8efa5ebc92d069f4b8f79f62c7f.png":::
+   :::image type="content" source="media/f878f8efa5ebc92d069f4b8f79f62c7f.png" alt-text="The configuration settings policies." lightbox="media/f878f8efa5ebc92d069f4b8f79f62c7f.png":::
 
 10. Select **+ New** to create a new policy.
 
@@ -821,7 +821,7 @@ Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint 
 
     Select **Profile Name** as a criterion, and use the name of a previously created configuration profile as Value:
 
-    :::image type="content" source="images/ffae2332be230870f865585c84733225.png" alt-text="Creating a smart group." lightbox="images/ffae2332be230870f865585c84733225.png":::
+    :::image type="content" source="media/ffae2332be230870f865585c84733225.png" alt-text="Creating a smart group." lightbox="media/ffae2332be230870f865585c84733225.png":::
 
     Click **Save**. Return back to the window where you configure a package policy.
 
