@@ -121,7 +121,7 @@ If you run systemextensionsctl list, the following screen appears:
 
 1. From the **System Preferences** home screen, select **Notifications**.
 
-   :::image type="content" source="images/notifications-option.png" alt-text="The Notifications option in the System Preferences screen." lightbox="images/notifications-option.png":::
+   :::image type="content" source="media/notifications-option.png" alt-text="The Notifications option in the System Preferences screen." lightbox="media/notifications-option.png":::
    
    The **Notifications** screen appears.
 
@@ -129,7 +129,7 @@ If you run systemextensionsctl list, the following screen appears:
 
 1. Enable the **Allow Notifications** option; select **Alerts**, and retain the default settings as is.
 
-   :::image type="content" source="images/notifications-md.png" alt-text="Selecting Microsoft Defender option from the Notifications screen." lightbox="images/notifications-md.png":::
+   :::image type="content" source="media/notifications-md.png" alt-text="Selecting Microsoft Defender option from the Notifications screen." lightbox="media/notifications-md.png":::
 
 ### What a healthy system looks like
 

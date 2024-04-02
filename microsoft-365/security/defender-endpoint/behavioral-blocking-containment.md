@@ -101,7 +101,7 @@ This example shows how behavior-based device-learning models in the cloud add ne
 
 As described in the recent blog post, [Behavioral blocking and containment: Transforming optics into protection](https://www.microsoft.com/security/blog/2020/03/09/behavioral-blocking-and-containment-transforming-optics-into-protection), in January 2020, Defender for Endpoint detected a privilege escalation activity on a device in an organization. An alert called "Possible privilege escalation using NTLM relay" was triggered.
 
-:::image type="content" source="images/NTLMalertjuicypotato.png" alt-text="An NTLM alert for Juicy Potato malware" lightbox="images/NTLMalertjuicypotato.png":::
+:::image type="content" source="media/NTLMalertjuicypotato.png" alt-text="An NTLM alert for Juicy Potato malware" lightbox="media/NTLMalertjuicypotato.png":::
 
 The threat turned out to be malware; it was a new, not-seen-before variant of a notorious hacking tool called Juicy Potato, which is used by attackers to get privilege escalation on a device.
 
