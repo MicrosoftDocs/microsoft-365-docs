@@ -63,7 +63,7 @@ A trusted user is one whose credentials have been authenticated by Microsoft Ent
 
 Authentication is the provision of user credentials to a trusted server or service. Microsoft 365 uses the following authentication protocols, depending on the status and location of the user.
 
-- **Modern Authentication (MA)** is the Microsoft implementation of OAUTH 2.0 for client to server communication. It enables security features such as multifactor authentication and Conditional Access. To use MA, both the online tenant and the clients need to be enabled for MA. The Microsoft 365 clients across PC and mobile, and the web clients, [all support MA](./sign-in-teams.md).
+- **Modern Authentication (MA)** is the Microsoft implementation of OAUTH 2.0 for client to server communication. It enables security features such as multifactor authentication and Conditional Access. To use MA, both the online tenant and the clients need to be enabled for MA. The Microsoft 365 clients across PC and mobile, and the web clients, all support MA.
 
 > [!NOTE]
 > If you want more information on Microsoft Entra authentication and authorization methods, this article's Introduction and 'Authentication basics in Microsoft Entra ID' sections will help.

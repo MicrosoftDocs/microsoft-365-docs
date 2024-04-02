@@ -30,8 +30,6 @@ Microsoft offers a [comprehensive set of compliance offerings](/compliance) to h
 
 Microsoft works to ensure that we are compliant with industry and international standards, and customers are responsible for ensuring their data within the [Microsoft Cloud](https://www.microsoft.com/en-us/trust-center/compliance/compliance-overview#compliance) is protected in a manner that is compliant with the standards and regulations imposed on the customer.
 
-![Image depicting shared responsibility model](./media/viva-compliance.png)
-
 ## Inheritance of compliance features and settings
 
 Microsoft 365 apps are built on your existing infrastructure and, depending on the app, inherit compliance features and settings from Microsoft Teams, Exchange Online, SharePoint Online, Azure, and Viva Engage. In addition, all Microsoft 365 services are built on the [Microsoft Graph API](/graph/overview).

@@ -57,8 +57,6 @@ Microsoft won't disclose personal data except:
 
 If law enforcement contacts Microsoft with a demand, Microsoft will attempt to redirect the law enforcement agency to request that personal data directly from the customer. If compelled to disclose personal data to law enforcement, Microsoft will promptly notify the customer and provide a copy of the demand unless legally prohibited from doing so. For more information about data that we disclose in response to requests from law enforcement and other government agencies, please see our [Law Enforcement Requests Report](https://www.microsoft.com/corporate-responsibility/law-enforcement-requests-report).
 
-The [Teams Security Guide](../security-compliance-overview.md#compliance-standards) has more information about our compliance standards.
-
 ## Where does Microsoft 365 transfer and store personal data?
 
 Personal data is transferred and stored as set forth in the [Online Service Terms](https://go.microsoft.com/fwlink/p/?linkid=2050263).
