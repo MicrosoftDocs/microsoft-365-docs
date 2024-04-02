@@ -29,7 +29,7 @@ ms.date: 01/15/2024
 
 The following demonstration scenarios will help you learn about the capabilities of Microsoft Defender for Endpoint on Windows, Mac, and Linux. Demonstration scenarios are provided for the following Microsoft Defender for Endpoint protection areas:
 
-:::image type="content" source="images/microsoft-defender-for-endpoint-cloud-protection.png" alt-text="Shows the areas of Microsoft Defender for Endpoint demonstration scenarios covered in this collection" lightbox="images/microsoft-defender-for-endpoint-cloud-protection.png":::
+:::image type="content" source="media/microsoft-defender-for-endpoint-cloud-protection.png" alt-text="Shows the areas of Microsoft Defender for Endpoint demonstration scenarios covered in this collection" lightbox="media/microsoft-defender-for-endpoint-cloud-protection.png":::
 
 - Attack surface protection (**ASR**)
 - Next Generation Protection (**NGP**)

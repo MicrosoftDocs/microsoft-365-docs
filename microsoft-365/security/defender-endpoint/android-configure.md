@@ -74,7 +74,7 @@ Network protection in Microsoft Defender for endpoint is disabled by default. Ad
     > ![Image of how to select enable network protection policy](images/selectnp.png)
 
     > [!div class="mx-imgBorder"]
-    > ![Image of add configuration policy.](images/npvalue.png)
+    > ![Image of add configuration policy.](media/npvalue.png)
 
 1. If your organization uses root CAs that are private, you must establish explicit trust between Intune (MDM solution) and user devices. Establishing trust helps prevent Defender from flagging root CAs as rogue certificates.
 
