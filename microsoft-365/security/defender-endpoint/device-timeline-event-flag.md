@@ -42,13 +42,13 @@ The Defender for Endpoint device timeline helps you research and investigate ano
    
 - All MITRE techniques are shown when there's more than one related technique:
 
-    :::image type="content" source="images/new-timeline-mitre-techniques.png" alt-text="Screenshot of all MITRE techniques. " lightbox="images/new-timeline-mitre-techniques.png":::
+    :::image type="content" source="media/new-timeline-mitre-techniques.png" alt-text="Screenshot of all MITRE techniques. " lightbox="media/new-timeline-mitre-techniques.png":::
 
 - Timeline events are linked to the new user page:
 
-    :::image type="content" source="images/new-timeline-user.png" alt-text="Screenshot of timeline events linked to the new user page." lightbox="images/new-timeline-user.png":::
+    :::image type="content" source="media/new-timeline-user.png" alt-text="Screenshot of timeline events linked to the new user page." lightbox="media/new-timeline-user.png":::
 
-    :::image type="content" source="images/new-timeline-user-details.png" alt-text="Screenshot of timeline events linked to the new user page 2." lightbox="images/new-timeline-user-details.png":::
+    :::image type="content" source="media/new-timeline-user-details.png" alt-text="Screenshot of timeline events linked to the new user page 2." lightbox="media/new-timeline-user-details.png":::
 
 - Defined filters are now visible at the top of the timeline: 
 
@@ -69,7 +69,7 @@ This feature simplifies the investigation experience by helping analysts underst
 
 During preview, Techniques are available by default and shown together with events when a device's timeline is viewed.
 
-:::image type="content" source="images/new-timeline-mitre-techniques.png" alt-text="Screenshot of all MITRE techniques." lightbox="images/new-timeline-mitre-techniques.png":::
+:::image type="content" source="media/new-timeline-mitre-techniques.png" alt-text="Screenshot of all MITRE techniques." lightbox="media/new-timeline-mitre-techniques.png":::
 
 Techniques are highlighted in bold text and appear with a blue icon on the left. The corresponding MITRE ATT&CK ID and technique name also appear as tags under Additional information.
 
@@ -83,9 +83,9 @@ Select the specific *Attack technique* to open the related ATT&CK technique page
 
 You can copy an entity's details when you see a blue icon on the right. For instance, to copy a related file's SHA1, select the blue page icon.
 
-:::image type="content" source="images/new-timeline-process-tree.png" alt-text="Screenshot that shows the copy entity details." lightbox="images/new-timeline-process-tree.png":::
+:::image type="content" source="media/new-timeline-process-tree.png" alt-text="Screenshot that shows the copy entity details." lightbox="media/new-timeline-process-tree.png":::
 
-:::image type="content" source="images/new-timeline-side-panel-1.png" alt-text="Screenshot that shows the side pane details." lightbox="images/new-timeline-side-panel-1.png":::
+:::image type="content" source="media/new-timeline-side-panel-1.png" alt-text="Screenshot that shows the side pane details." lightbox="media/new-timeline-side-panel-1.png":::
 
 You can do the same for command lines.
 
