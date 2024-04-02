@@ -42,7 +42,7 @@ You might see the prompt that's shown in the following screenshot:
 
 1. From the menu bar, click the **x** symbol on the shield. You'll get the options shown in the following screenshot:
 
-   :::image type="content" source="images/options-on-clicking-x-symbol.png" alt-text="The screen on clicking the x symbol in the shield." lightbox="images/options-on-clicking-x-symbol.png":::
+   :::image type="content" source="media/options-on-clicking-x-symbol.png" alt-text="The screen on clicking the x symbol in the shield." lightbox="media/options-on-clicking-x-symbol.png":::
 
 1. Select **Action needed**. The following screen appears:
 
@@ -78,7 +78,7 @@ You might see the prompt that's shown in the following screenshot:
 
 1. Check both the **Microsoft Defender** checkboxes, and select **OK**. You'll get two pop-up screens, as shown in the following screenshot:
 
-   :::image type="content" source="images/popup-after-checking-both-md-checkboxes.png" alt-text="The popup that appears on checking both the checkboxes." lightbox="images/popup-after-checking-both-md-checkboxes.png":::
+   :::image type="content" source="media/popup-after-checking-both-md-checkboxes.png" alt-text="The popup that appears on checking both the checkboxes." lightbox="media/popup-after-checking-both-md-checkboxes.png":::
 
 1. On the **"Microsoft Defender" Would like to Filter Network Content** pop-up screen, click **Allow**.
 
