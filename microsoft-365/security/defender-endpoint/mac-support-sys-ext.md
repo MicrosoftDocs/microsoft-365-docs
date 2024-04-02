@@ -140,7 +140,7 @@ Prior to approving the system extension (using any of the specified management t
 
 If you're using Intune, see [Manage macOS software update policies in Intune](/mem/intune/protect/software-updates-macos).
 
-:::image type="content" source="images/refresh-devices.png" alt-text="The screen on which you refresh the devices." lightbox="images/refresh-devices.png":::
+:::image type="content" source="media/refresh-devices.png" alt-text="The screen on which you refresh the devices." lightbox="media/refresh-devices.png":::
 
 1. Click the ellipses (three dots).
 1. Select **Refresh devices**. The screen as shown in the following screenshot appears:
