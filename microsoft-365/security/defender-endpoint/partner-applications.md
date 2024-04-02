@@ -76,7 +76,7 @@ Logo|Partner name|Description
 Logo|Partner name|Description
 :---|:---|:---
 ![Logo for MISP Malware Information Sharing Platform)logo.](images/misp-logo.png)|[MISP (Malware Information Sharing Platform)](https://go.microsoft.com/fwlink/?linkid=2127543)|Integrate threat indicators from the Open Source Threat Intelligence Sharing Platform into your Defender for Endpoint environment
-![Logo for Palo Alto Networks.](images/paloalto-logo.png)|[Palo Alto Networks](https://go.microsoft.com/fwlink/?linkid=2099582)|Enrich your endpoint protection by extending Autofocus and other threat feeds to Defender for Endpoint using MineMeld
+![Logo for Palo Alto Networks.](media/paloalto-logo.png)|[Palo Alto Networks](https://go.microsoft.com/fwlink/?linkid=2099582)|Enrich your endpoint protection by extending Autofocus and other threat feeds to Defender for Endpoint using MineMeld
 ![Logo for ThreatConnect.](images/threatconnect-logo.png)|[ThreatConnect](https://go.microsoft.com/fwlink/?linkid=2114115)|Alert and/or block on custom threat intelligence from ThreatConnect Playbooks using Defender for Endpoint indicators
 
 ### Network security
@@ -106,7 +106,7 @@ Logo|Partner name|Description
 :---|:---|:---
 ![Logo for Cyren Web Filter.](media/cyren-logo.png)|[Cyren Web Filter](https://www.cyren.com/security-center/url-category-check)|Enhance your Defender for Endpoint with advanced Web Filtering
 ![Logo for Morphisec.](images/morphisec-logo.png)|[Morphisec](https://go.microsoft.com/fwlink/?linkid=2086215)|Provides Moving Target Defense-powered advanced threat prevention. Integrates forensics data directly into WD Defender for Cloud dashboards to help prioritize alerts, determine device at-risk score and visualize full attack timeline including internal memory information
-![Logo for THOR Cloud.](images/nextron-thor-logo.png)|[THOR Cloud](https://go.microsoft.com/fwlink/?linkid=862988)|Provides on-demand live forensics scans using a signature base with focus on persistent threats
+![Logo for THOR Cloud.](media/nextron-thor-logo.png)|[THOR Cloud](https://go.microsoft.com/fwlink/?linkid=862988)|Provides on-demand live forensics scans using a signature base with focus on persistent threats
 
 ## SIEM integration
 

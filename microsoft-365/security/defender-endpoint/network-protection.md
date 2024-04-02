@@ -142,7 +142,7 @@ A user visits a website:
   - **Unblock** - The user will have access to the site for 24 hours; at which point the block is reenabled. The user can continue to use **Unblock** to access the site until such time that the administrator prohibits (blocks) the site, thus removing the option to **Unblock**.
   - **Feedback** - The toast notification presents the user with a link to submit a ticket, which the user can use to submit feedback to the administrator in an attempt to justify access to the site.
 
-    :::image type="content" source="images/network-protection-phishing-warn-2.png" alt-text="Shows a network protection phishing content warn notification.":::
+    :::image type="content" source="media/network-protection-phishing-warn-2.png" alt-text="Shows a network protection phishing content warn notification.":::
 
   > [!NOTE]
   > The images shown here for warn experience and block experience (below) both list **"blocked url"** as example placeholder text; in a functioning environment the actual url or domain will be listed.  
@@ -155,17 +155,17 @@ A user visits a website:
   - **Ok** The toast notification is released (removed), and the attempt to access the site is ended.
   - **Feedback** The toast notification presents the user with a link to submit a ticket, which the user can use to submit feedback to the administrator in an attempt to justify access to the site.
 
-    :::image type="content" source="images/network-protection-phishing-blocked.png" alt-text="Shows a network protection known phishing content blocked notification." lightbox="images/network-protection-phishing-blocked.png":::
+    :::image type="content" source="media/network-protection-phishing-blocked.png" alt-text="Shows a network protection known phishing content blocked notification." lightbox="media/network-protection-phishing-blocked.png":::
 
 ## SmartScreen Unblock
 
 With indicators in Defender for Endpoint, administrators can allow end users to bypass warnings that are generated for some URLs and IPs. Depending on why the URL was blocked, when a SmartScreen block is encountered it may offer the ability to unblock the site for up to 24 hours. In such cases, a Windows Security toast notification will appear, permitting the end-user to **Unblock** the URL or IP for the defined period of time.  
 
-:::image type="content" source="images/network-protection-smart-screen-block-notification.png" alt-text="Windows Security notification for network protection.":::
+:::image type="content" source="media/network-protection-smart-screen-block-notification.png" alt-text="Windows Security notification for network protection.":::
 
 Microsoft Defender for Endpoint administrators can configure SmartScreen Unblock functionality in the [Microsoft Defender portal](https://security.microsoft.com) using an "allow" indicator for IPs, URLs, and domains.
 
-:::image type="content" source="images/network-protection-smart-screen-block-configuration.png" alt-text="Network protection SmartScreen block configuration ULR and IP form.":::
+:::image type="content" source="media/network-protection-smart-screen-block-configuration.png" alt-text="Network protection SmartScreen block configuration ULR and IP form.":::
 
 See [Create indicators for IPs and URLs/domains](indicator-ip-domain.md).
 

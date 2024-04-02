@@ -20,7 +20,7 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - MET150
-ms.date: 03/28/2024
+ms.date: 04/01/2024
 ---
 
 # Microsoft Copilot in Microsoft Defender
@@ -80,9 +80,7 @@ Copilot helps security teams quickly assess and understand suspicious files with
 
 Security operations teams usually write reports to record important information, including what response actions were taken and the corresponding results, the team members involved, and other information to aid future security decisions and learning. Oftentimes, documenting incidents can be time-consuming. For incident reports to be effective, it must contain an incident's summary along with the actions taken, including what actions were taken by whom and when. Copilot [generates an incident report](security-copilot-m365d-create-incident-report.md) by quickly consolidating these pieces of information.
 
-:::image type="content" source="../../media/copilot-in-defender/incident-report/copilot-defender-incident-report-results1-small.png" alt-text="Screenshot of the incident report card in the incident page." lightbox="../../media/copilot-in-defender/incident-report/copilot-defender-incident-report-results1.png":::
-
-:::image type="content" source="../../media/copilot-in-defender/incident-report/copilot-defender-incident-report-results2-small.png" alt-text="Screenshot of the incident report card in the incident page showing the lower bottom of the card." lightbox="../../media/copilot-in-defender/incident-report/copilot-defender-incident-report-results2.png":::
+:::image type="content" source="../../media/copilot-in-defender/create-report/incident-report-main1-small.png" alt-text="Screenshot of the incident report card in the incident page showing the top half of the card." lightbox="../../media/copilot-in-defender/create-report/incident-report-main1.png":::
 
 ## Hunt like a pro
 
@@ -100,7 +98,7 @@ Empower your security organization to make informed decisions with the latest th
 
 ### Monitor threat intelligence
 
-Ask Copilot to summarize the relevant threats impacting your environment, to prioritize resolving threats based on your exposure levels, or to find threat actors that might be targeting your industry. Read more about [Copilot for Security in threat intelligence](/defender/threat-intelligence/security-copilot-and-defender-threat-intelligence).
+Ask Copilot to summarize the relevant threats impacting your environment, to prioritize resolving threats based on your exposure levels, or to find threat actors that might be targeting your industry. Read more about [Copilot for Security in threat intelligence](/defender/threat-intelligence/using-copilot-threat-intelligence-defender-xdr).
 
 :::image type="content" source="../../media/copilot-in-defender/TI/copilot-defender-threat-intel-small.png" alt-text="Screenshot of the Copilot pane in threat intelligence in Defender XDR." lightbox="../../media/copilot-in-defender/TI/copilot-defender-threat-intel-full.png":::
 
