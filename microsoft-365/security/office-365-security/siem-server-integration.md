@@ -16,7 +16,7 @@ ms.custom:
   - Ent_Solutions
   - SIEM
   - seo-marvel-apr2020
-description: Get an overview of Security Information and Event Management (SIEM) server integration with your Microsoft 365 cloud services and applications
+description: Get an overview of Security Information and Event Management (SIEM) server integration with your Microsoft 365 cloud services and applications.
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
@@ -41,14 +41,12 @@ Is your organization using or planning to get a Security Information and Event M
 
 Whether you need a SIEM server depends on many factors, such as your organization's security requirements and where your data resides. Microsoft 365 includes a wide variety of security features that meet many organizations' security needs without additional servers, such as a SIEM server. Some organizations have special circumstances that require the use of a SIEM server. Here are some examples:
 
-- *Fabrikam* has some content and applications on premises, and some in the cloud (they have a hybrid cloud deployment). To get security reports across all their content and applications, Fabrikam has implemented a SIEM server.
-- *Contoso* is a financial services organization that has particularly stringent security requirements. They have added a SIEM server to their environment to take advantage of the extra security protection they require.
+- *Fabrikam* has some content and applications on premises, and some in the cloud (they have a hybrid cloud deployment). To get security reports for all of their content and applications, Fabrikam implemented a SIEM server.
+- *Contoso* is a financial services organization that has stringent security requirements. They added a SIEM server to their environment to take advantage of the extra security protections they require.
 
 ## SIEM server integration with Microsoft 365
 
 A SIEM server can receive data from a wide variety of Microsoft 365 services and applications. The following table lists several Microsoft 365 services and applications, along with SIEM server inputs and resources to learn more.
-
-<br/><br/>
 
 |Microsoft 365 Service or Application|SIEM server inputs/methods|Resources to learn more|
 |---|---|---|
@@ -63,22 +61,28 @@ A SIEM server can receive data from a wide variety of Microsoft 365 services and
 
 Make sure that audit logging is turned on before you configure SIEM server integration:
 
-- For SharePoint Online, OneDrive for Business, and Microsoft Entra ID, see [Turn auditing on or off](/purview/audit-log-enable-disable).
+- For SharePoint, OneDrive, and Microsoft Entra ID, see [Turn auditing on or off](/purview/audit-log-enable-disable).
 - For Exchange Online, see [Manage mailbox auditing](/purview/audit-mailboxes).
 
 ## Integration steps if your SIEM is Microsoft Sentinel
 
-Be sure that your current plan allows for Microsoft Sentinel integration (for example, you have Microsoft Defender for Office 365 Plan 2 or higher), and that your account in Microsoft Defender for Office 365 or Microsoft Defender XDR is a *Security Administrator*. Finally, be sure that you have *Write permissions in Microsoft Sentinel*.
+Verify the following requirements:
+
+- Your current Microsoft 365 subscription (for example, Microsoft Defender for Office 365 Plan 2) allows for Microsoft Sentinel integration.
+- Your account in Microsoft Defender for Office 365 or Microsoft Defender XDR is a *Security Administrator*.
+- Verify that you have *Write permissions in Microsoft Sentinel*.
 
 1. Navigate to Microsoft Sentinel.
-1. On the navigation to the left of the screen **Configuration** > **Data connectors**.
+1. On the navigation to the left of the screen **Configuration** \> **Data connectors**.
 1. **Search for** Microsoft Defender XDR and select the **Microsoft Defender XDR (preview) connector**.
 1. On the right of your screen select **Open Connector Page**.
-1. Under **Configuration** > select **Connect incidents & alerts**
-    1. Turn off all Microsoft incident creation rules for the products currently selected.
+1. Under **Configuration** \> select **Connect incidents & alerts**
+
+   Turn off all Microsoft incident creation rules for the products currently selected.
+
 1. Scroll to **Microsoft Defender for Office 365** in the **Connect events** section of the page.
 
-Note that you can choose tables from *any other Microsoft Defender product* you find helpful and applicable while completing the final step, (below).
+   You can choose tables from *any other Microsoft Defender product* you find helpful and applicable while completing the following final step:
 
 1. Select **EmailEvents**, **EmailUrlInfo**, **EmailAttachmentInfo**, and **EmailPostDeliveryEvents** > and **Apply Changes**.
 
