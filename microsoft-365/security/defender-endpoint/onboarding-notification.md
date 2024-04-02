@@ -60,7 +60,7 @@ You need to have access to:
 
 4. Select the + button to add a new action. The new action is an HTTP request to the Defender for Endpoint devices API. You can also replace it with the out-of-the-box **WDATP Connector** (action: **Machines - Get list of machines**).
 
-   :::image type="content" source="images/recurrence-add.png" alt-text="The recurrence and add action" lightbox="images/recurrence-add.png":::
+   :::image type="content" source="media/recurrence-add.png" alt-text="The recurrence and add action" lightbox="media/recurrence-add.png":::
 
 5. Enter the following HTTP fields:
 

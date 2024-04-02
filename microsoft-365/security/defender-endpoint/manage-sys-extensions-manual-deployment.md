@@ -50,7 +50,7 @@ You might see the prompt that's shown in the following screenshot:
 
 1. Click **Fix** on the top-right corner of this screen. You'll get a prompt, as shown in the following screenshot:
 
-   :::image type="content" source="images/prompt-on-virus-and-threat-protection-screen.png" alt-text="The prompt dialog box on the Virus & threat protection screen." lightbox="images/prompt-on-virus-and-threat-protection-screen.png":::
+   :::image type="content" source="media/prompt-on-virus-and-threat-protection-screen.png" alt-text="The prompt dialog box on the Virus & threat protection screen." lightbox="media/prompt-on-virus-and-threat-protection-screen.png":::
 
 1. Enter your password and select **OK**.
 1. Click 
@@ -66,7 +66,7 @@ You might see the prompt that's shown in the following screenshot:
 
 1. Select **Click the lock to make changes**. You'll get a prompt as shown in the following screenshot:
 
-   :::image type="content" source="images/prompt-on-security-and-privacy-screen.png" alt-text="The prompt on the Security & Privacy screen." lightbox="images/prompt-on-security-and-privacy-screen.png":::
+   :::image type="content" source="media/prompt-on-security-and-privacy-screen.png" alt-text="The prompt on the Security & Privacy screen." lightbox="media/prompt-on-security-and-privacy-screen.png":::
 
 1. Enter your password and click **Unlock**. The following screen appears:
 
