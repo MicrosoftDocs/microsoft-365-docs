@@ -197,7 +197,7 @@ DeviceEvents
 
 ```
 
-:::image type="content" source="images/network-protection-advanced-hunting.png" alt-text="Advanced hunting for auditing and identifying events." lightbox="images/network-protection-advanced-hunting.png":::
+:::image type="content" source="media/network-protection-advanced-hunting.png" alt-text="Advanced hunting for auditing and identifying events." lightbox="media/network-protection-advanced-hunting.png":::
 
 > [!TIP]
 > These entries have data in the **AdditionalFields** column which gives you great info around the action, if you expand **AdditionalFields** you can also get the fields: **IsAudit**, **ResponseCategory**, and **DisplayName**.
