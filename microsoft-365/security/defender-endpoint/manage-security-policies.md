@@ -102,7 +102,7 @@ To verify that you have successfully created a policy, select a policy name from
 
 >[!NOTE]
 >It can take up to 90 minutes for a policy to reach a device. To expedite the process, for devices Managed by Defender for Enpoint, you can select **Policy sync** from the actions menu so that it is applied in approximately 10 minutes.
-> :::image type="content" source="./images/policy-sync.png" alt-text="Image showing policy sync button":::
+> :::image type="content" source="./media/policy-sync.png" alt-text="Image showing policy sync button":::
 
 The policy page displays details that summarize the status of the policy. You can view a policy's status, which devices it has been applied to, and assigned groups.
 
