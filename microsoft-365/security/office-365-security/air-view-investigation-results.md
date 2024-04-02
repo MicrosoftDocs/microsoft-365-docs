@@ -26,7 +26,7 @@ appliesto:
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-When an [automated investigation](air-about.md) occurs in [Microsoft Defender for Office 365](defender-for-office-365.md), details about that investigation are available during and after the automated investigation process. If you have the necessary permissions, you can view those details in the Microsoft Defender portal. Investigation details provide you with up-to-date status, and the ability to approve any pending actions.
+When an [automated investigation](air-about.md) occurs in [Microsoft Defender for Office 365](mdo-about.md), details about that investigation are available during and after the automated investigation process. If you have the necessary permissions, you can view those details in the Microsoft Defender portal. Investigation details provide you with up-to-date status, and the ability to approve any pending actions.
 
 > [!TIP]
 > Check out the new, unified investigation page in the Microsoft Defender portal. To learn more, see [(NEW!) Unified investigation page](../defender/m365d-autoir-results.md#new-unified-investigation-page).

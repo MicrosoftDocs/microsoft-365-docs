@@ -29,9 +29,9 @@ appliesto:
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-With [Microsoft Defender for Office 365](defender-for-office-365.md), you get [detailed information about automated investigations](air-view-investigation-results.md). However, some organizations also use a custom or third-party reporting solution. If your organization wants to integrate information about [automated investigations](air-about.md) with such a solution, you can use the Office 365 Management Activity API.
+With [Microsoft Defender for Office 365](mdo-about.md), you get [detailed information about automated investigations](air-view-investigation-results.md). However, some organizations also use a custom or third-party reporting solution. If your organization wants to integrate information about [automated investigations](air-about.md) with such a solution, you can use the Office 365 Management Activity API.
 
-With [Microsoft Defender for Office 365](defender-for-office-365.md), you get [detailed information about automated investigations](air-view-investigation-results.md). However, some organizations also use a custom or third-party reporting solution. If your organization wants to integrate information about automated investigations with such a solution, you can use the Office 365 Management Activity API.
+With [Microsoft Defender for Office 365](mdo-about.md), you get [detailed information about automated investigations](air-view-investigation-results.md). However, some organizations also use a custom or third-party reporting solution. If your organization wants to integrate information about automated investigations with such a solution, you can use the Office 365 Management Activity API.
 
 |Resource|Description|
 |:---|:---|
@@ -42,5 +42,5 @@ With [Microsoft Defender for Office 365](defender-for-office-365.md), you get [d
 
 ## See also
 
-- [Microsoft Defender for Office 365](defender-for-office-365.md)
+- [Microsoft Defender for Office 365](mdo-about.md)
 - [Automated investigation and response in Microsoft Defender XDR](/microsoft-365/security/defender/m365d-autoir)
