@@ -51,7 +51,7 @@ Download the installation and onboarding packages from Microsoft Defender portal
 2. In Section 1 of the page, set operating system to **macOS** and Deployment method to **Local script**.
 3. In Section 2 of the page, select **Download installation package**. Save it as wdav.pkg to a local directory.
 4. In Section 2 of the page, select **Download onboarding package**. Save it as WindowsDefenderATPOnboardingPackage.zip to the same directory.
-   :::image type="content" source="images/onboarding-package-step4.png" alt-text="Screenshot that shows the options to download the installation and onboarding packages.":::
+   :::image type="content" source="media/onboarding-package-step4.png" alt-text="Screenshot that shows the options to download the installation and onboarding packages.":::
 
 5. From a command prompt, verify that you have the two files.
     - Type *cd Downloads* and press **Enter**.
@@ -102,7 +102,7 @@ To complete this process, you must have admin privileges on the device.
 
 8. Enter the password, when prompted.
 
-    :::image type="content" source="images/password-2g.png" alt-text="Screenshot that shows the password dialog box.":::
+    :::image type="content" source="media/password-2g.png" alt-text="Screenshot that shows the password dialog box.":::
 
 9. Click **Install Software**.
 

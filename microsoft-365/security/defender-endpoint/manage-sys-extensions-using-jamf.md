@@ -52,7 +52,7 @@ Add the following Jamf payload to grant Full Disk Access to the Microsoft Defend
 
 4. Set **App or service** to **SystemPolicyAllFiles** and access to **Allow**.
 
-   :::image type="content" source="images/privacy-preferences-policy-control.png" alt-text="Privacy preferences policy control." lightbox="images/privacy-preferences-policy-control.png":::
+   :::image type="content" source="media/privacy-preferences-policy-control.png" alt-text="Privacy preferences policy control." lightbox="media/privacy-preferences-policy-control.png":::
 
 ### Network Extension Policy
 
