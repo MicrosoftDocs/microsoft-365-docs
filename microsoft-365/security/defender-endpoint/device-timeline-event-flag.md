@@ -52,7 +52,7 @@ The Defender for Endpoint device timeline helps you research and investigate ano
 
 - Defined filters are now visible at the top of the timeline: 
 
-    :::image type="content" source="images/new-timeline-highlight.png" alt-text="Screenshot of defined filters." lightbox="images/new-timeline-highlight.png":::
+    :::image type="content" source="media/new-timeline-highlight.png" alt-text="Screenshot of defined filters." lightbox="media/new-timeline-highlight.png":::
 
 ## Techniques in the device timeline
 
@@ -110,7 +110,7 @@ You can customize which columns to expose. You can also filter for flagged event
 
 You can choose which columns to expose in the timeline by selecting the **Choose columns** button.
 
-:::image type="content" source="images/new-timeline-customize-columns.png" alt-text="Screenshot that shows the pane in which you can customize columns." lightbox="images/new-timeline-customize-columns.png":::
+:::image type="content" source="media/new-timeline-customize-columns.png" alt-text="Screenshot that shows the pane in which you can customize columns." lightbox="media/new-timeline-customize-columns.png":::
 
 
 From there you can select which information set to include.
@@ -119,7 +119,7 @@ From there you can select which information set to include.
 
 To view only either events or techniques, select **Filters** from the device timeline and choose your preferred Data type to view.
 
-:::image type="content" source="images/new-timeline-filter.png" alt-text="Screenshot that shows the Filters pane." lightbox="images/new-timeline-filter.png":::
+:::image type="content" source="media/new-timeline-filter.png" alt-text="Screenshot that shows the Filters pane." lightbox="media/new-timeline-filter.png":::
 
 ## Timeline event flags
 
