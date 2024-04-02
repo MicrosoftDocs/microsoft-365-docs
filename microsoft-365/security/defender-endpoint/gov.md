@@ -179,7 +179,7 @@ These are the features and known gaps for [Mobile Threat Defense (Microsoft Defe
 |Support for MAM|![Yes](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)|
 |Privacy Controls|![Yes](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)|
 |Microsoft Defender Vulnerability Management core capabilities <br/> (included in Defender for Endpoint Plan 2) |![Yes](media/svg/check-yes.svg) <sup>1</sup>|![Yes](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)|
-|Microsoft Defender Vulnerability Management premium capabilities |![No](media/svg/check-no.svg)|![No](media/svg/check-no.svg)|![No](media/svg/check-no.svg)|
+|Microsoft Defender Vulnerability Management premium capabilities |![Yes](media/svg/check-yes.svg) <sup>1</sup>|![Yes](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)|
 
 > [!NOTE]
 >
