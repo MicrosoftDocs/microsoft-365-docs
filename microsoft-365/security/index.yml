@@ -132,7 +132,7 @@ additionalContent:
     - title: Microsoft Defender XDR
       links:
       - url: /microsoft-365/security/defender/microsoft-365-defender
-        text: overview
+        text: Overview
       - url: /microsoft-365/security/defender/get-started
         text: Get Started
       - url: /microsoft-365/security/defender/eval-overview
@@ -141,35 +141,35 @@ additionalContent:
     - title: Microsoft Defender for Office 365
       links:
        - url: /microsoft-365/security/office-365-security/defender-for-office-365
-         text: overview
+         text: Overview
        - url: /microsoft-365/security/office-365-security/preset-security-policies
          text: Get Started
     # Card
     - title: Microsoft Defender for Endpoint
       links:
       - url: /microsoft-365/security/defender-endpoint/microsoft-defender-endpoint
-        text: overview  
+        text: Overview  
       - url: /microsoft-365/security/defender-endpoint/deployment-strategy
         text: Get Started
     # Card
     - title: Microsoft Defender Vulnerability Management
       links:
       - url: /microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management
-        text: overview
+        text: Overview
       - url: /microsoft-365/security/defender-vulnerability-management/tvm-prerequisites
         text: Get Started
     # Card
     - title: Microsoft Defender for Identity
       links:
        - url: /defender-for-identity/what-is
-         text: overview
+         text: Overview
        - url: /defender-for-identity/deploy-defender-identity
          text: Get Started
      # Card
     - title: Microsoft Defender for Cloud apps
       links:
       - url: /defender-cloud-apps/what-is-defender-for-cloud-apps
-        text: overview
+        text: Overview
       - url: /defender-cloud-apps/get-started
         text: Get Started
 
