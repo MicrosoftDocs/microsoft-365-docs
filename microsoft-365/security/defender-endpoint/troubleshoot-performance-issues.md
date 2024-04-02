@@ -103,15 +103,15 @@ Process Monitor (ProcMon) is an advanced monitoring tool that can show real-time
 
         Since logging starts automatically, select the magnifying glass icon  to stop the current capture or use the keyboard shortcut **Ctrl+E**.
 
-        :::image type="content" source="images/procmon-magglass.png" alt-text="The magnifying glass icon" lightbox="images/procmon-magglass.png":::
+        :::image type="content" source="media/procmon-magglass.png" alt-text="The magnifying glass icon" lightbox="media/procmon-magglass.png":::
 
         To verify that you have stopped the capture, check if the magnifying glass icon now appears with a red X.
 
-        :::image type="content" source="images/procmon-magglass-stop.png" alt-text="The red slash" lightbox="images/procmon-magglass-stop.png":::
+        :::image type="content" source="media/procmon-magglass-stop.png" alt-text="The red slash" lightbox="media/procmon-magglass-stop.png":::
 
         Next, to clear the earlier capture, select the eraser icon.
 
-        :::image type="content" source="images/procmon-eraser-clear.png" alt-text="The clear icon" lightbox="images/procmon-eraser-clear.png":::
+        :::image type="content" source="media/procmon-eraser-clear.png" alt-text="The clear icon" lightbox="media/procmon-eraser-clear.png":::
 
         Or use the keyboard shortcut **Ctrl+X**.
 
@@ -130,7 +130,7 @@ Process Monitor (ProcMon) is an advanced monitoring tool that can show real-time
 
 7. After following one of the procedures in step 6, you'll next see an option to set filters. Select **OK**. You can always filter the results after the capture is completed.
 
-   :::image type="content" source="images/procmon-filter-options.png" alt-text="The page on which System Exclude is chosen as the Filter out Process Name" lightbox="images/procmon-filter-options.png":::
+   :::image type="content" source="media/procmon-filter-options.png" alt-text="The page on which System Exclude is chosen as the Filter out Process Name" lightbox="media/procmon-filter-options.png":::
 
 8. To start the capture, select the magnifying glass icon again.
 
