@@ -22,7 +22,7 @@ description: Learn about privacy for Microsoft 365 for enterprise.
 
 # Privacy for Microsoft 365 for enterprise
 
-When an organization is considering relying on Microsoft 365 for communication and collaboration, privacy is something that needs to be addressed at every level. The topics we discuss in this article should address your privacy concerns when planning your Teams implementation, or at any point during Teams usage.
+When an organization is considering relying on Microsoft 365 for communication and collaboration, privacy is something that needs to be addressed at every level. The topics we discuss in this article should address your privacy concerns when planning your Microsoft 365 implementation, or at any point during Microsoft 365 usage.
 
 ## What personal data does Microsoft 365 collect and for what purposes does Microsoft 365 use this data?
 
@@ -96,5 +96,3 @@ If you have a privacy concern, complaint or question for the Microsoft Chief Pri
 [Microsoft Teams privacy](/microsoftteams/teams-privacy)
 
 [Overview of privacy controls for Microsoft 365 Apps for enterprise](/deployoffice/privacy/overview-privacy-controls)
-
-
