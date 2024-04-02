@@ -49,7 +49,7 @@ You'll need to take the following steps:
 
 2. Select macOS as the operating system and Mobile Device Management / Microsoft Intune as the deployment method.
 
-   :::image type="content" source="images/onboarding-macos.png" alt-text="The Settings page." lightbox="images/onboarding-macos.png":::
+   :::image type="content" source="media/onboarding-macos.png" alt-text="The Settings page." lightbox="media/onboarding-macos.png":::
 
 3. Select **Download onboarding package** (WindowsDefenderATPOnboardingPackage.zip).
 
@@ -61,7 +61,7 @@ You'll need to take the following steps:
 
 1. Locate the file `WindowsDefenderATPOnboarding.plist` from the previous section.
 
-   :::image type="content" source="images/plist-onboarding-file.png" alt-text="The  Windows Defender ATP Onboarding file." lightbox="images/plist-onboarding-file.png":::
+   :::image type="content" source="media/plist-onboarding-file.png" alt-text="The  Windows Defender ATP Onboarding file." lightbox="media/plist-onboarding-file.png":::
 
 2. Sign in to Jamf Pro, navigate to **Computers** > **Configuration Profiles**, and select **New**.
 

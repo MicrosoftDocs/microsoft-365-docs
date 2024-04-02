@@ -18,7 +18,7 @@ search.appverid:
   - MOE150
   - MET150
 ms.custom: api
-ms.date: 02/08/2023
+ms.date: 04/01/2024
 ---
 
 # Microsoft Defender XDR Advanced hunting API

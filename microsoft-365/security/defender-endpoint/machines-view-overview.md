@@ -102,7 +102,7 @@ You can use this information to help you prioritize devices for security posture
 
 The **Newly discovered** device count for network devices and IoT devices tabs, shows the number of new devices discovered, in the last 7 days, listed in the current view.
 
-:::image type="content" alt-text="Image of new discovered device count." source="images/new-discovered-devices.png":::
+:::image type="content" alt-text="Image of new discovered device count." source="media/new-discovered-devices.png":::
 
 ## Explore the device inventory
 

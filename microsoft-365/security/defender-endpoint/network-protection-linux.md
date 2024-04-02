@@ -169,7 +169,7 @@ Web threat protection is part of Web protection in Microsoft Defender for Endpoi
 - untrusted or low-reputation sites
 - sites you've blocked in your custom indicator list
 
->:::image type="content" source="images/network-protection-reports-web-protection.png" alt-text="Web Protection reports web threat detections." lightbox="images/network-protection-reports-web-protection.png":::
+>:::image type="content" source="media/network-protection-reports-web-protection.png" alt-text="Web Protection reports web threat detections." lightbox="media/network-protection-reports-web-protection.png":::
 
 For more information, see [Protect your organization against web threat](web-threat-protection.md)
 
@@ -193,7 +193,7 @@ Configure policies across your device groups to block certain categories. Blocki
 
 Web content filtering is available on the major web browsers, with blocks performed by Windows Defender SmartScreen (Microsoft Edge) and Network Protection (Chrome, Firefox, Brave, and Opera). For more information about browser support, see [Prerequisites](#prerequisites).
 
-:::image type="content" source="images/network-protection-wcf-add-policy.png" alt-text="Shows network protection web content filtering add policy." lightbox="images/network-protection-wcf-add-policy.png":::
+:::image type="content" source="media/network-protection-wcf-add-policy.png" alt-text="Shows network protection web content filtering add policy." lightbox="media/network-protection-wcf-add-policy.png":::
 
 For more information about reporting, see [Web content filtering](web-content-filtering.md).
 
