@@ -51,7 +51,7 @@ When you select **Action needed**, you get the error message as shown in the fol
 
 You encounter this message in a different way: If you're using the terminal to enter **mdatp health** without the double quotes, the message as shown in the following screenshot is displayed:
 
-:::image type="content" source="images/no-license-found-warning.png" alt-text="Screenshot of the product page on which the No license found warning message is displayed.":::
+:::image type="content" source="media/no-license-found-warning.png" alt-text="Screenshot of the product page on which the No license found warning message is displayed.":::
 
 ### Cause
 

@@ -66,7 +66,7 @@ To configure secure collaboration, use these Microsoft 365 capabilities and feat
 |---|---|---|
 |Microsoft Defender for Office 365|Safe Attachments for SharePoint, OneDrive and Microsoft Teams; Safe Documents; Safe Links for Teams|Microsoft 365 E1, E3 and E5|
 |SharePoint|Site and file sharing policies, Site sharing permissions, Sharing links, Access requests, Site guest sharing settings|Microsoft 365 E1, E3 and E5|
-|Microsoft Teams|Guest access, private teams, private channels, shared channels|Microsoft 365 E1, E3 and E5|
+|Microsoft Teams|Guest access, private teams, private channels, shared channels|Microsoft 365 E3 and E5 with a Microsoft Teams Enterprise license|
 |Microsoft Purview|Sensitivity labels|Microsoft 365 E3 and E5|
 |Microsoft Syntex - SharePoint Advanced Management|Site access restrictions, conditional access policies for sites, default sensitivity labels for libraries|Microsoft Syntex - SharePoint Advanced Management|
 

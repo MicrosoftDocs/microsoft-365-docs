@@ -91,7 +91,7 @@ The tabs provide relevant security and threat prevention information related to 
 
 The **Overview** tab displays the [cards](#cards) for active alerts, logged on users, and security assessment.
 
-:::image type="content" source="images/overview-device.png" alt-text="The Overview tab on the device page" lightbox="images/overview-device.png":::
+:::image type="content" source="media/overview-device.png" alt-text="The Overview tab on the device page" lightbox="media/overview-device.png":::
 
 ### Incidents and alerts
 
