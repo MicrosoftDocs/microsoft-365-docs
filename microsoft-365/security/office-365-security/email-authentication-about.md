@@ -53,7 +53,7 @@ The rest of this article explains:
 - [Why internet email needs authentication](#why-internet-email-needs-authentication)
 - [How SPF, DKIM, and DMARC work together to authenticate email message senders](#how-spf-dkim-and-dmarc-work-together-to-authenticate-email-message-senders)
 - [How Microsoft uses email authentication to check inbound mail sent to Microsoft 365](#inbound-email-authentication-for-mail-sent-to-microsoft-365)
-- [How to avoid email authentication failures when sending mail to Microsoft 365](#how-to-avoid-email-authentication-failures-when-sending-mail-to-microsoft-36)
+- [How to avoid email authentication failures when sending mail to Microsoft 365](#how-to-avoid-email-authentication-failures-when-sending-mail-to-microsoft-365)
 
 ## Why internet email needs authentication
 
@@ -246,7 +246,7 @@ The following examples focus on the results of email authentication only (the `c
   To: michelle@fabrikam.com
   ```
 
-## How to avoid email authentication failures when sending mail to Microsoft 36
+## How to avoid email authentication failures when sending mail to Microsoft 365
 
 > [!TIP]
 > Microsoft 365 customers can use the following methods to allow messages from senders that are identified as spoofing or authentication failures:
