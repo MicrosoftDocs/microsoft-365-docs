@@ -31,7 +31,7 @@ search.appverid: met150
 
 If you're ready to move from a non-Microsoft endpoint protection solution to [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md), or you're interested in what all is involved in the process, use this article as a guide. This article describes the overall process of moving to [Defender for Endpoint Plan 1 or Plan 2](microsoft-defender-endpoint.md). The following image depicts the migration process at a high level:
 
-:::image type="content" source="images/nonms-mde-migration.png" alt-text="Diagram depicting the process of migrating to Defender for Endpoint" lightbox="images/nonms-mde-migration.png":::
+:::image type="content" source="media/nonms-mde-migration.png" alt-text="Diagram depicting the process of migrating to Defender for Endpoint" lightbox="media/nonms-mde-migration.png":::
 
 When you migrate to Defender for Endpoint, you begin with your non-Microsoft antivirus/antimalware protection in active mode. Then, you configure Microsoft Defender Antivirus in passive mode, and configure Defender for Endpoint features. Then, you onboard your organization's devices, and verify that everything is working correctly. Finally, you remove the non-Microsoft solution from your devices.
 

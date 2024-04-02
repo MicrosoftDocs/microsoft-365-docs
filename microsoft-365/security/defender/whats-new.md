@@ -6,7 +6,7 @@ ms.service: defender-xdr
 ms.author: diannegali
 author: diannegali
 ms.localizationpriority: medium
-ms.date: 03/29/2024
+ms.date: 04/01/2024
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -31,13 +31,16 @@ You can also get product updates and important notifications through the [messag
 
 ## April 2024
 
-(Preview) The **unified security operations platform** in the Microsoft Defender portal is now available. This release brings together the full capabilities of Microsoft Sentinel, Microsoft Defender XDR, and Microsoft Copilot in Microsoft Defender. For more information, see the following resources:
+- (Preview) The **unified security operations platform** in the Microsoft Defender portal is now available. This release brings together the full capabilities of Microsoft Sentinel, Microsoft Defender XDR, and Microsoft Copilot in Microsoft Defender. For more information, see the following resources:
 
-- Blog announcement: [​​Unified security operations platform ready to revolutionize protection and efficiency](https://aka.ms/unified-soc-announcement)
-- [Microsoft Sentinel in the Microsoft Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2263690)
-- [Connect Microsoft Sentinel to Microsoft Defender XDR](microsoft-sentinel-onboard.md)
-- [Microsoft Security Copilot in Microsoft Defender XDR](security-copilot-in-microsoft-365-defender.md)
+  - Blog announcement: [​​Unified security operations platform ready to revolutionize protection and efficiency](https://aka.ms/unified-soc-announcement)
+  - [Microsoft Sentinel in the Microsoft Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2263690)
+  - [Connect Microsoft Sentinel to Microsoft Defender XDR](microsoft-sentinel-onboard.md)
+  - [Microsoft Security Copilot in Microsoft Defender XDR](security-copilot-in-microsoft-365-defender.md)
   
+- (GA) **[Microsoft Copilot in Microsoft Defender](security-copilot-in-microsoft-365-defender.md)** is now generally available. Copilot in Defender helps you investigate and respond to incidents faster and more effectively. Copilot provides guided responses, incident summaries and reports, helps you build KQL queries to hunt for threats, provide file and script analyses, and enable you to summarize relevant and actionable threat intelligence.
+- Copilot in Defender customers can now export incident data to PDF. Use the exported data to easily share incident data, facilitating discussions with your security teams and other stakeholders. For details, see **[Export incident data to PDF](manage-incidents.md#export-incident-data-to-pdf)**.
+
 ## February 2024
 
 - (GA) **Dark mode** is now available in the Microsoft Defender portal. In the Defender portal, on the top right-hand side of the homepage, select **Dark mode**. Select **Light mode** to change the color mode back to the default.
