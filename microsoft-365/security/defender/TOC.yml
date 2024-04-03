@@ -36,7 +36,7 @@
           href: microsoft-365-security-center-defender-cloud.md
         - name: Microsoft Sentinel
           items:
-          - name: Microsoft Sentinel in the Defender portal
+          - name: Experience in Defender portal
             href: /azure/sentinel/microsoft-sentinel-defender-portal?toc=/microsoft-365/security/defender/toc.json&bc=/microsoft-365/security/defender/breadcrumb/toc.json
           - name: Connect Microsoft Sentinel to Microsoft Defender
             href: microsoft-sentinel-onboard.md    
