@@ -160,7 +160,7 @@ To further inspect the event and related events, you can quickly run an [advance
 The **Security policies** tab shows the endpoint security policies that are applied on the device. You see a list of policies, type, status, and last check-in time. Selecting the name of a policy takes you to the policy details page where you can see the policy settings status, applied devices, and assigned groups.
 
 
-:::image type="content" source="images/security-policies-tab.png" alt-text="The Security policies tab" lightbox="images/security-policies-tab.png":::
+:::image type="content" source="media/security-policies-tab.png" alt-text="The Security policies tab" lightbox="media/security-policies-tab.png":::
 
 
 ### Software inventory
@@ -206,7 +206,7 @@ The **Logged on users** card shows how many users logged on in the past 30 days,
 
 The **Security assessments** card shows the overall exposure level, security recommendations, installed software, and discovered vulnerabilities. A device's exposure level is determined by the cumulative impact of its pending security recommendations.
 
-:::image type="content" source="images/security-assessments.png" alt-text="The security assessments card" lightbox="images/security-assessments.png":::
+:::image type="content" source="media/security-assessments.png" alt-text="The security assessments card" lightbox="media/security-assessments.png":::
 
 ### Device health status
 

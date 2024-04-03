@@ -36,7 +36,7 @@ With properly configured devices, you can boost overall resilience against threa
 
 Click **Configuration management** from the navigation menu to open the Device configuration management page.
 
-:::image type="content" source="images/secconmgmt_main.png" alt-text="The Security configuration management page" lightbox="images/secconmgmt_main.png":::
+:::image type="content" source="media/secconmgmt_main.png" alt-text="The Security configuration management page" lightbox="media/secconmgmt_main.png":::
 
 *Device configuration management page*
 

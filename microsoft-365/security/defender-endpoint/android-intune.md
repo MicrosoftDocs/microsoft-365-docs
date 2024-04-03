@@ -165,7 +165,7 @@ Follow the steps below to add Microsoft Defender for Endpoint app into your mana
 
     1. Click on **Add** to view a list of supported configurations. Select the required configuration and click on **Ok**.
 
-       :::image type="content" alt-text="Image of selecting configuration policies for android." source="images/selectconfigurations.png" lightbox="images/selectconfigurations.png":::
+       :::image type="content" alt-text="Image of selecting configuration policies for android." source="media/selectconfigurations.png" lightbox="media/selectconfigurations.png":::
 
     1. You should see all the selected configurations listed. You can change the configuration value as required and then select **Next**.
 
@@ -273,7 +273,7 @@ Admins can go to the [Microsoft Endpoint Management admin center](https://endpoi
 1. Enter **Name** and **Description** to uniquely identify the configuration policy. Select platform as **'Android Enterprise'**, Profile type as **'Personally-owned work profile only'** and Targeted app as **'Microsoft Defender'**.
 
     > [!div class="mx-imgBorder"]
-    > ![Image of naming configuration policy.](images/selectapp.png)
+    > ![Image of naming configuration policy.](media/selectapp.png)
 
 1. On the settings page, in **'Configuration settings format'**, select **'Use configuration designer'** and click on **Add**. From the list of configurations that are displayed, select **'Microsoft Defender in Personal profile'**.
 

@@ -99,7 +99,7 @@ If the file exists, it will prevent the macOS from being onboarded again.  Delet
  
 2. Select **Licenses**.
 
-   :::image type="content" source="images/selecting-licenses-option-from-endpoints-screen.png" alt-text="Screenshot of the Endpoints page from which the Licenses options can be selected." lightbox="images/selecting-licenses-option-from-endpoints-screen.png":::
+   :::image type="content" source="media/selecting-licenses-option-from-endpoints-screen.png" alt-text="Screenshot of the Endpoints page from which the Licenses options can be selected." lightbox="media/selecting-licenses-option-from-endpoints-screen.png":::
        
 3. Select **View and purchase licenses in the Microsoft 365 admin center**. The following screen in the Microsoft 365 admin center portal appears:
 
