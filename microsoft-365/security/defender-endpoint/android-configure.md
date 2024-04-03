@@ -71,7 +71,7 @@ Network protection in Microsoft Defender for endpoint is disabled by default. Ad
 1. In Settings page, select **'Use configuration designer'** and add **'Enable Network Protection in Microsoft Defender'** as the key and value as **'1'** to enable Network Protection. (Network protection is disabled by default)
 
     > [!div class="mx-imgBorder"]
-    > ![Image of how to select enable network protection policy](images/selectnp.png)
+    > ![Image of how to select enable network protection policy](media/selectnp.png)
 
     > [!div class="mx-imgBorder"]
     > ![Image of add configuration policy.](media/npvalue.png)

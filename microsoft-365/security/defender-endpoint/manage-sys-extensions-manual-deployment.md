@@ -62,7 +62,7 @@ You might see the prompt that's shown in the following screenshot:
 
 1. Click **Security & Privacy**. The **Security & Privacy** screen appears.
 
-   :::image type="content" source="images/security-and-privacy-screen.png" alt-text="The Security & Privacy screen." lightbox="images/security-and-privacy-screen.png":::
+   :::image type="content" source="media/security-and-privacy-screen.png" alt-text="The Security & Privacy screen." lightbox="media/security-and-privacy-screen.png":::
 
 1. Select **Click the lock to make changes**. You'll get a prompt as shown in the following screenshot:
 
