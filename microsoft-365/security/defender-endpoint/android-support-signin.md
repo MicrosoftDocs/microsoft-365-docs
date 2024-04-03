@@ -151,7 +151,7 @@ If a user faces an issue, which isn't already addressed in the above sections or
 
 2. Select "Help & feedback".
 
-    :::image type="content" source="images/selecthelpandfeedback2.png" alt-text="The Help & feedback option that can be selected in the Microsoft Defender for Endpoint portal" lightbox="images/selecthelpandfeedback2.png":::
+    :::image type="content" source="media/selecthelpandfeedback2.png" alt-text="The Help & feedback option that can be selected in the Microsoft Defender for Endpoint portal" lightbox="media/selecthelpandfeedback2.png":::
 
 3. Select "Send feedback to Microsoft".
 
