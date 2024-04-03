@@ -182,7 +182,7 @@ When all existing devices are used and deleted, you can request for more devices
 
 1. From the evaluation lab dashboard, select **Request for more devices**.
 
-   :::image type="content" source="images/request-more-devices.png" alt-text="The request for more devices option" lightbox="images/request-more-devices.png":::
+   :::image type="content" source="media/request-more-devices.png" alt-text="The request for more devices option" lightbox="media/request-more-devices.png":::
 
 2. Choose your configuration.
 3. Submit the request.
@@ -218,14 +218,14 @@ If you are looking for a pre-made simulation, you can use our ["Do It Yourself" 
 
     :::image type="content" source="images/test-machine-table.png" alt-text="The Connect button for the test devices" lightbox="images/test-machine-table.png":::
 
-   :::image type="content" source="images/remote-connection.png" alt-text="The remote desktop connection screen" lightbox="images/remote-connection.png":::
+   :::image type="content" source="media/remote-connection.png" alt-text="The remote desktop connection screen" lightbox="media/remote-connection.png":::
 
     For **Linux devices**: you'll need to use a local SSH client and the provided command.
 
     > [!NOTE]
     > If you don't have a copy of the password saved during the initial setup, you can reset the password by selecting **Reset password** from the menu:
     >
-    > :::image type="content" source="images/reset-password-test-machine.png" alt-text="The Reset password option" lightbox="images/reset-password-test-machine.png":::
+    > :::image type="content" source="media/reset-password-test-machine.png" alt-text="The Reset password option" lightbox="media/reset-password-test-machine.png":::
     >
     > The device will change it's state to "Executing password reset", then you'll be presented with your new password in a few minutes.
 
@@ -252,7 +252,7 @@ Running threat simulations using third-party platforms is a good way to evaluate
 
 2. Select a threat simulator.
 
-   :::image type="content" source="images/select-simulator.png" alt-text="The threat simulator selection" lightbox="images/select-simulator.png":::
+   :::image type="content" source="media/select-simulator.png" alt-text="The threat simulator selection" lightbox="media/select-simulator.png":::
 
 3. Choose a simulation or look through the simulation gallery to browse through the available simulations.
 
@@ -313,5 +313,5 @@ Your feedback helps us get better in protecting your environment from advanced a
 
 Let us know what you think, by selecting **Provide feedback**.
 
-:::image type="content" source="images/send-us-feedback-eval-lab.png" alt-text="The feedback page" lightbox="images/send-us-feedback-eval-lab.png":::
+:::image type="content" source="media/send-us-feedback-eval-lab.png" alt-text="The feedback page" lightbox="media/send-us-feedback-eval-lab.png":::
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

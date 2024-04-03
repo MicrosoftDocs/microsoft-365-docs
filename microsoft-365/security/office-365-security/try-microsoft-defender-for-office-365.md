@@ -41,7 +41,7 @@ For a companion guide for how to use your trial, see [Trial User Guide: Microsof
 
 ## Overview of Defender for Office 365
 
-Defender for Office 365 helps organizations secure their enterprise by offering a comprehensive slate of capabilities. For more information, see [Microsoft Defender for Office 365](defender-for-office-365.md).
+Defender for Office 365 helps organizations secure their enterprise by offering a comprehensive slate of capabilities. For more information, see [Microsoft Defender for Office 365](mdo-about.md).
 
 You can also learn more about Defender for Office 365 at this [interactive guide](https://aka.ms/MS365D.InteractiveGuide).
 
@@ -96,7 +96,7 @@ The key factors that determine which modes are available to you are:
 - Whether or not you currently have Defender for Office 365 (Plan 1 or Plan 2) as described in the next section.
 - How email is delivered to your Microsoft 365 organization as described in the following scenarios:
 
-  - Mail from the internet flows directly Microsoft 365, but your current subscription has only [Exchange Online Protection (EOP)](eop-about.md) or [Defender for Office 365 Plan 1](overview.md#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet).
+  - Mail from the internet flows directly Microsoft 365, but your current subscription has only [Exchange Online Protection (EOP)](eop-about.md) or [Defender for Office 365 Plan 1](mdo-about.md#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet).
 
     :::image type="content" source="../../media/mdo-trial-mail-flow.png" alt-text="Mail flows from the internet into Microsoft 365, with protection from EOP and/or Defender for Office 365 Plan 1." lightbox="../../media/mdo-trial-mail-flow.png":::
 
@@ -127,7 +127,7 @@ What's the difference between an evaluation and a trial of Defender for Office 3
 
   - **Defender for Office 365 Plan 1**: Organizations with Defender for Office 365 Plan 1 (for example, Microsoft 365 Business Premium or add-on subscriptions) already have the same security policies that are available in Defender for Office 365 Plan 2: impersonation protection in anti-phishing policies, Safe Attachments policies, and Safe Links policies.
 
-    The security policies from **audit mode** (evaluation policies) or **blocking mode** (Standard preset security policy) don't expire or stop working after 90 days. What ends after 90 days are the [automation, investigation, remediation, and education capabilities](defender-for-office-365.md#whats-the-difference-between-microsoft-defender-for-office-365-plan-1-and-plan-2) of Defender for Office 365 Plan 2 that aren't available in Plan 1.
+    The security policies from **audit mode** (evaluation policies) or **blocking mode** (Standard preset security policy) don't expire or stop working after 90 days. What ends after 90 days are the [automation, investigation, remediation, and education capabilities](mdo-about.md#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet) of Defender for Office 365 Plan 2 that aren't available in Plan 1.
 
   If you set up your evaluation or trial in **audit mode** (evaluation policies), you can later _convert_ to **blocking mode** (Standard preset security policy). For instructions, see the [Convert to Standard protection](#convert-to-standard-protection) section later in this article.
 
@@ -149,7 +149,7 @@ The information from the previous list is summarized in the following table:
 
 ¹ As [previously described](#audit-mode-vs-blocking-mode-for-defender-for-office-365), **blocking mode** (Standard preset security policy) isn't available if internet mail flows through a third-party protection service or device before delivery to Microsoft 365.
 
-² The security policies from **audit mode** (evaluation policies) or **blocking mode** (Standard preset security policy) don't expire or stop working after 90 days. The [automation, investigation, remediation, and education capabilities](defender-for-office-365.md#whats-the-difference-between-microsoft-defender-for-office-365-plan-1-and-plan-2) that are exclusive to Defender for Office 365 Plan 2 stop working after 90 days.
+² The security policies from **audit mode** (evaluation policies) or **blocking mode** (Standard preset security policy) don't expire or stop working after 90 days. The [automation, investigation, remediation, and education capabilities](mdo-about.md#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet) that are exclusive to Defender for Office 365 Plan 2 stop working after 90 days.
 
 ³ The evaluation is set up in **audit mode** (evaluation policies). At any point after the setup is complete, you can _convert_ to **blocking mode** (Standard preset security policy) as described in [Convert to Standard protection](#convert-to-standard-protection).
 

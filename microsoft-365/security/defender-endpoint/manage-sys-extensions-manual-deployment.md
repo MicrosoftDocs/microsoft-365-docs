@@ -42,7 +42,7 @@ You might see the prompt that's shown in the following screenshot:
 
 1. From the menu bar, click the **x** symbol on the shield. You'll get the options shown in the following screenshot:
 
-   :::image type="content" source="images/options-on-clicking-x-symbol.png" alt-text="The screen on clicking the x symbol in the shield." lightbox="images/options-on-clicking-x-symbol.png":::
+   :::image type="content" source="media/options-on-clicking-x-symbol.png" alt-text="The screen on clicking the x symbol in the shield." lightbox="media/options-on-clicking-x-symbol.png":::
 
 1. Select **Action needed**. The following screen appears:
 
@@ -50,7 +50,7 @@ You might see the prompt that's shown in the following screenshot:
 
 1. Click **Fix** on the top-right corner of this screen. You'll get a prompt, as shown in the following screenshot:
 
-   :::image type="content" source="images/prompt-on-virus-and-threat-protection-screen.png" alt-text="The prompt dialog box on the Virus & threat protection screen." lightbox="images/prompt-on-virus-and-threat-protection-screen.png":::
+   :::image type="content" source="media/prompt-on-virus-and-threat-protection-screen.png" alt-text="The prompt dialog box on the Virus & threat protection screen." lightbox="media/prompt-on-virus-and-threat-protection-screen.png":::
 
 1. Enter your password and select **OK**.
 1. Click 
@@ -62,23 +62,23 @@ You might see the prompt that's shown in the following screenshot:
 
 1. Click **Security & Privacy**. The **Security & Privacy** screen appears.
 
-   :::image type="content" source="images/security-and-privacy-screen.png" alt-text="The Security & Privacy screen." lightbox="images/security-and-privacy-screen.png":::
+   :::image type="content" source="media/security-and-privacy-screen.png" alt-text="The Security & Privacy screen." lightbox="media/security-and-privacy-screen.png":::
 
 1. Select **Click the lock to make changes**. You'll get a prompt as shown in the following screenshot:
 
-   :::image type="content" source="images/prompt-on-security-and-privacy-screen.png" alt-text="The prompt on the Security & Privacy screen." lightbox="images/prompt-on-security-and-privacy-screen.png":::
+   :::image type="content" source="media/prompt-on-security-and-privacy-screen.png" alt-text="The prompt on the Security & Privacy screen." lightbox="media/prompt-on-security-and-privacy-screen.png":::
 
 1. Enter your password and click **Unlock**. The following screen appears:
 
-   :::image type="content" source="images/screen-on-clicking-unlock.png" alt-text="The screen that is displayed on clicking Unlock." lightbox="images/screen-on-clicking-unlock.png":::
+   :::image type="content" source="media/screen-on-clicking-unlock.png" alt-text="The screen that is displayed on clicking Unlock." lightbox="media/screen-on-clicking-unlock.png":::
 
 1. Select **Details**, next to **Some software system requires your attention before it can be used**.
 
-   :::image type="content" source="images/screen-on-clicking-details.png" alt-text="The screen that is displayed on clicking Details." lightbox="images/screen-on-clicking-details.png":::
+   :::image type="content" source="media/screen-on-clicking-details.png" alt-text="The screen that is displayed on clicking Details." lightbox="media/screen-on-clicking-details.png":::
 
 1. Check both the **Microsoft Defender** checkboxes, and select **OK**. You'll get two pop-up screens, as shown in the following screenshot:
 
-   :::image type="content" source="images/popup-after-checking-both-md-checkboxes.png" alt-text="The popup that appears on checking both the checkboxes." lightbox="images/popup-after-checking-both-md-checkboxes.png":::
+   :::image type="content" source="media/popup-after-checking-both-md-checkboxes.png" alt-text="The popup that appears on checking both the checkboxes." lightbox="media/popup-after-checking-both-md-checkboxes.png":::
 
 1. On the **"Microsoft Defender" Would like to Filter Network Content** pop-up screen, click **Allow**.
 
@@ -86,13 +86,13 @@ You might see the prompt that's shown in the following screenshot:
 
 If you run systemextensionsctl list, the following screen appears:
 
-:::image type="content" source="images/result-of-running-systemextenstionsctl-list.png" alt-text="The resultant screen of running the systemextensionsdcl list." lightbox="images/result-of-running-systemextenstionsctl-list.png":::
+:::image type="content" source="media/result-of-running-systemextenstionsctl-list.png" alt-text="The resultant screen of running the systemextensionsdcl list." lightbox="media/result-of-running-systemextenstionsctl-list.png":::
 
 ### Accessibility
 
 1. On the **Security & Privacy** screen, select the **Privacy** tab.
 
-   :::image type="content" source="images/privacy-tab.png" alt-text="The Privacy tab." lightbox="images/privacy-tab.png":::
+   :::image type="content" source="media/privacy-tab.png" alt-text="The Privacy tab." lightbox="media/privacy-tab.png":::
 
 2. Select **Accessibility** from the left navigation pane, and click **+**.
 
@@ -121,7 +121,7 @@ If you run systemextensionsctl list, the following screen appears:
 
 1. From the **System Preferences** home screen, select **Notifications**.
 
-   :::image type="content" source="images/notifications-option.png" alt-text="The Notifications option in the System Preferences screen." lightbox="images/notifications-option.png":::
+   :::image type="content" source="media/notifications-option.png" alt-text="The Notifications option in the System Preferences screen." lightbox="media/notifications-option.png":::
    
    The **Notifications** screen appears.
 
@@ -129,7 +129,7 @@ If you run systemextensionsctl list, the following screen appears:
 
 1. Enable the **Allow Notifications** option; select **Alerts**, and retain the default settings as is.
 
-   :::image type="content" source="images/notifications-md.png" alt-text="Selecting Microsoft Defender option from the Notifications screen." lightbox="images/notifications-md.png":::
+   :::image type="content" source="media/notifications-md.png" alt-text="Selecting Microsoft Defender option from the Notifications screen." lightbox="media/notifications-md.png":::
 
 ### What a healthy system looks like
 
