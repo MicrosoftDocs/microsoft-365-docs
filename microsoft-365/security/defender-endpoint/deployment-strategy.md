@@ -13,7 +13,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: onboard
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 04/03/2024
 ---
 
 # Identify Defender for Endpoint architecture and deployment method
@@ -34,7 +34,7 @@ We understand that every enterprise environment is unique, so we've provided sev
 
 ## Step 1: Identify your architecture
 
-Depending on your environment, some tools are better suited for certain architectures. Use the table below to decide which Defender for Endpoint architecture best suits your organization.
+Depending on your environment, some tools are better suited for certain architectures. Use the following table to decide which Defender for Endpoint architecture best suits your organization.
 
 |Architecture |Description |
 |---|---|
