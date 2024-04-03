@@ -165,7 +165,7 @@ To list blocks that are due to other features (like Custom Indicators), refer to
 
 ## User experience
 
-If a user visits a web page that poses a risk of malware, phishing, or other web threats, Microsoft Edge will trigger a block page that reads 'This site has been reported as unsafe' along with information related to the threat.
+If a user visits a web page that poses a risk of malware, phishing, or other web threats, Microsoft Edge triggers a block page that reads, "This site has been reported as unsafe," along with information related to the threat.
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/web-protection-malicious-block.png" alt-text="The page blocked by Microsoft Edge" lightbox="../../media/web-protection-malicious-block.png":::
