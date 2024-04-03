@@ -114,11 +114,11 @@ All our updates contain
 - Fixed regression introduced in [4.18.24020.7](#known-issues) where enforcement of device level access policies was not working as expected.
 - Fixed high CPU issue caused by redetection done during Sense originating scans.
 - Fixed Security Intelligence Update disk cleanup.
-- Fixed Signature up to date information on Security Health report
-- Performed optimizations to on-close scan scenarios by mitigating performance penalties while updating a large amount of files
+- Fixed Signature up to date information on Security Health report.
+- Performed optimizations to on-close scan scenarios by mitigating performance penalties while updating a large amount of files.
 - Performance improvements when processing paths for exclusions.
-- Improvements to allow recovering from erroneously added Indicators of compromise (IoC)
-- Improved resilience in processing ASR exclusions for AMSI scans
+- Improvements to allow recovering from erroneously added Indicators of compromise (IoC).
+- Improved resilience in processing attack surface rules exclusions for Anti Malware Scan Interface (AMSI) scans.
 - Fixed high memory issue when MAPS is disabled related to Behavior Monitoring queue.
 - Fixed possible deadlock when receiving a Tamper protection configuration change from XDR Defender portal.
 
