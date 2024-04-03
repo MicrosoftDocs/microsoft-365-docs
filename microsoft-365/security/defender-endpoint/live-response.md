@@ -174,16 +174,16 @@ The following commands are available for user roles that are granted the ability
 
 | Command  | Description  | Windows and Windows Server  | macOS  | Linux  |
 |---|---|---|---|---|
-| analyze  | Analyses the entity with various incrimination engines to reach a verdict.  | Y  | N  | N  |
-| collect  | Collects forensics package from device.  | N  | Y  | Y  |
-| isolate  | Disconnects the device from the network while retaining connectivity to the Defender for Endpoint service.  | N  | Y  | N  |
-| release  | Releases a device from network isolation.  | N  | Y  | N  |
-| run  | Runs a PowerShell script from the library on the device.  | Y  | Y  | Y  |
-| library  | Lists files that were uploaded to the live response library.  | Y  | Y  | Y  |
-| putfile  | Puts a file from the library to the device. Files are saved in a working folder and are deleted when the device restarts by default.  | Y  | Y  | Y  |
-| remediate  | Remediates an entity on the device. The remediation action will vary depending on the entity type:  File: delete  Process: stop, delete image file  Service: stop, delete image file  Registry entry: delete  Scheduled task: remove  Startup folder item: delete file  NOTE: This command has a prerequisite command. You can use the -auto command in conjunction with remediate to automatically run the prerequisite command.  | Y  | Y  | Y  |
-| scan | Runs a Quick antivirus scan to help identify and remediate malware. | N | Y | Y |
-| undo  | Restores an entity that was remediated.  | Y  | N  | N  |
+| `analyze`  | Analyses the entity with various incrimination engines to reach a verdict.  | Y  | N  | N  |
+| `collect`  | Collects forensics package from device.  | N  | Y  | Y  |
+| `isolate`  | Disconnects the device from the network while retaining connectivity to the Defender for Endpoint service.  | N  | Y  | N  |
+| `release`  | Releases a device from network isolation.  | N  | Y  | N  |
+| `run`  | Runs a PowerShell script from the library on the device.  | Y  | Y  | Y  |
+| `library`  | Lists files that were uploaded to the live response library.  | Y  | Y  | Y  |
+| `putfile`  | Puts a file from the library to the device. Files are saved in a working folder and are deleted when the device restarts by default.  | Y  | Y  | Y  |
+| `remediate`  | Remediates an entity on the device. The remediation action varies, depending on the entity type: <br/>- File: delete<br/>- Process: stop, delete image file<br/>- Service: stop, delete image file<br/>- Registry entry: delete<br/>- Scheduled task: remove<br/>- Startup folder item: delete file<br/><br/>This command has a prerequisite command. You can use the `-auto` command in conjunction with remediate to automatically run the prerequisite command.  | Y  | Y  | Y  |
+| `scan` | Runs a quick antivirus scan to help identify and remediate malware. | N | Y | Y |
+| `undo`  | Restores an entity that was remediated.  | Y  | N  | N  |
 
 ## Use live response commands
 
