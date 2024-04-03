@@ -1,13 +1,12 @@
 ---
 title: What's new in Microsoft Defender XDR
 description: Lists the new features and functionality in Microsoft Defender XDR
-keywords: what's new in Microsoft Defender XDR, ga, generally available, capabilities, available, new
 search.appverid: met150
 ms.service: defender-xdr
 ms.author: diannegali
 author: diannegali
 ms.localizationpriority: medium
-ms.date: 01/30/2024
+ms.date: 04/01/2024
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -29,6 +28,11 @@ For more information on what's new with other Microsoft Defender security produc
 
 You can also get product updates and important notifications through the [message center](https://admin.microsoft.com/Adminportal/Home#/MessageCenter).
 
+
+## April 2024
+
+- (GA) **[Microsoft Copilot in Microsoft Defender](security-copilot-in-microsoft-365-defender.md)** is now generally available. Copilot in Defender helps you investigate and respond to incidents faster and more effectively. Copilot provides guided responses, incident summaries and reports, helps you build KQL queries to hunt for threats, provide file and script analyses, and enable you to summarize relevant and actionable threat intelligence.
+- Copilot in Defender customers can now export incident data to PDF. Use the exported data to easily share incident data, facilitating discussions with your security teams and other stakeholders. For details, see **[Export incident data to PDF](manage-incidents.md#export-incident-data-to-pdf)**.
 
 ## February 2024
 
@@ -149,7 +153,7 @@ This change introduces a new navigation menu within the Microsoft Defender porta
 
 - (GA) Live Response is now generally available for macOS and Linux.
 
-- (GA) Identity timeline is now generally available as part of the new Identity page in Microsoft Defender XDR. The updated User page has a new look, an expanded view of related assets and a new dedicated timeline tab. The timeline represents activities and alerts from the last 30 days. It unifies a user’s identity entries across all available workloads: Microsoft Defender for Identity, Microsoft Defender for Cloud Apps, and Microsoft Defender for Endpoint. Using the timeline helps you easily focus on a user's activities (or activities performed on them) in specific timeframes.
+- (GA) Identity timeline is now generally available as part of the new Identity page in Microsoft Defender XDR. The updated User page has a new look, an expanded view of related assets and a new dedicated timeline tab. The timeline represents activities and alerts from the last 30 days. It unifies a user's identity entries across all available workloads: Microsoft Defender for Identity, Microsoft Defender for Cloud Apps, and Microsoft Defender for Endpoint. Using the timeline helps you easily focus on a user's activities (or activities performed on them) in specific timeframes.
 
 ## December 2022
 
