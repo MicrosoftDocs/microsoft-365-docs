@@ -1,6 +1,6 @@
 ---
 title: Onboard to Microsoft Defender for Endpoint
-description: Learn how to onboard endpoints to Microsoft Defender for Endpoint service
+description: Learn how to onboard endpoints to Microsoft Defender for Endpoint service.
 ms.service: defender-endpoint
 ms.author: siosulli
 author: siosulli
@@ -17,7 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: onboard
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 04/03/2024
 ---
 
 # Onboard to Microsoft Defender for Endpoint
@@ -101,7 +101,7 @@ In order to preview new features and provide early feedback, it's recommended th
 
 ## Example deployments
 
-To provide some guidance on your deployments, in this section we'll guide you through using two deployment tools to onboard endpoints.
+To provide some guidance on your deployments, in this section we guide you through using two deployment tools to onboard endpoints.
 
 The tools in the example deployments are:
 
@@ -117,4 +117,5 @@ The example deployments will guide you on configuring some of the Defender for E
 After onboarding the endpoints move on to the next step where you'll configure the various capabilities such as endpoint detection and response, next-generation protection, and attack surface reduction.
 
 - [Step 5 - Configure capabilities](onboard-configure.md)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
