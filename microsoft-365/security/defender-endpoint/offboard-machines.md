@@ -13,7 +13,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: onboard
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 04/03/2024
 ---
 
 # Offboard devices
@@ -38,16 +38,15 @@ ms.date: 12/18/2020
 
 Follow the corresponding instructions depending on your preferred deployment method.
 
-> [!NOTE]
-> The status of a device will be switched to [Inactive](fix-unhealthy-sensors.md#inactive-devices) 7 days after offboarding.
->
-> Offboarded devices' data (such as Timeline, Alerts, Vulnerabilities, etc.) will remain in the portal until the configured [retention period](data-storage-privacy.md#how-long-will-microsoft-store-my-data-what-is-microsofts-data-retention-policy) expires.
->
-> The device's profile (without data) will remain in the [Devices List](machines-view-overview.md) for no longer than 180 days.
->
-> In addition, devices that are not active in the last 30 days are not factored in on the data that reflects your organization's Defender Vulnerability Management [exposure score](tvm-exposure-score.md) and Microsoft Secure Score for Devices.
->
-> To view only active devices, you can filter by [sensor health state](machines-view-overview.md#use-filters-to-customize-the-device-inventory-views), [device tags](machine-tags.md) or [machine groups](machine-groups.md).
+The status of a device switches to [Inactive](fix-unhealthy-sensors.md#inactive-devices) seven (7) days after offboarding.
+
+Data, such as Timeline, Alerts, Vulnerabilities, etc., from offboarded devices remains in the Microsoft Defender portal until the configured [retention period](data-storage-privacy.md#how-long-will-microsoft-store-my-data-what-is-microsofts-data-retention-policy) expires.
+
+The device's profile (without data) remains in the [Device inventory](machines-view-overview.md) for no longer than 180 days.
+
+Devices that were not active in the last 30 days are not factored in on the data that reflects your organization's Defender Vulnerability Management [exposure score](tvm-exposure-score.md) and Microsoft Secure Score for Devices.
+
+To view only active devices, you can filter by [sensor health state](machines-view-overview.md#use-filters-to-customize-the-device-inventory-views), [device tags](machine-tags.md) or [machine groups](machine-groups.md).
 
 ## Offboard Windows devices
 
