@@ -165,15 +165,15 @@ To list blocks that are due to other features (like Custom Indicators), refer to
 
 ## User experience
 
-If a user visits a web page that poses a risk of malware, phishing, or other web threats, Microsoft Edge triggers a block page that reads, "This site has been reported as unsafe," along with information related to the threat.
-
-Beginning with Microsoft Edge 124, the following block page is shown for all Web Content Filtering category blocks.
-
-:::image type="content" source="media/web-protection-indicators-new-block-page.jpg" alt-text="Screenshot showing content blocked." lightbox="media/web-protection-indicators-new-block-page.jpg":::
+If a user visits a web page that poses a risk of malware, phishing, or other web threats, Microsoft Edge triggers a block page that resembles the following image:
 
 :::image type="content" source="media/web-protection-indicators-new-block-page.jpg" alt-text="Screenshot showing new block notification for a website." lightbox="media/web-protection-indicators-new-block-page.jpg":::
 
-In any case, no block pages are shown in non-Microsoft browsers, and the user sees a "Secure Connection Failed' page along with a toast notification. Depending on the policy responsible for the block, a user sees a different message in the toast notification. For example, web content filtering displays the message, "This content is blocked."
+Beginning with Microsoft Edge 124, the following block page is shown for all Web Content Filtering category blocks.
+
+:::image type="content" source="media/web-protection-new-content-blocked-page.jpg" alt-text="Screenshot showing content blocked." lightbox="media/web-protection-new-content-blocked-page.jpg":::
+
+In any case, no block pages are shown in non-Microsoft browsers, and the user sees a "Secure Connection Failed" page along with a toast notification. Depending on the policy responsible for the block, a user sees a different message in the toast notification. For example, web content filtering displays the message, "This content is blocked."
 
 ## Report false positives
 
