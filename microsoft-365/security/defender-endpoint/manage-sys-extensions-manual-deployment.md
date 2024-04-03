@@ -86,7 +86,7 @@ You might see the prompt that's shown in the following screenshot:
 
 If you run systemextensionsctl list, the following screen appears:
 
-:::image type="content" source="images/result-of-running-systemextenstionsctl-list.png" alt-text="The resultant screen of running the systemextensionsdcl list." lightbox="images/result-of-running-systemextenstionsctl-list.png":::
+:::image type="content" source="media/result-of-running-systemextenstionsctl-list.png" alt-text="The resultant screen of running the systemextensionsdcl list." lightbox="media/result-of-running-systemextenstionsctl-list.png":::
 
 ### Accessibility
 

@@ -288,7 +288,7 @@ Admins can go to the [Microsoft Endpoint Management admin center](https://endpoi
 1. **Assign** the configuration policy to a group of users. **Review and create** the policy.
 
     > [!div class="mx-imgBorder"]
-    > ![Image of reviewing and creating policy.](images/savepolicy.png)
+    > ![Image of reviewing and creating policy.](media/savepolicy.png)
 
 Admins also can set up **privacy controls** from the Microsoft Intune admin center to control what data can be sent by the Defender mobile client to the security portal. For more information, see [configuring privacy controls](android-configure.md).
 
