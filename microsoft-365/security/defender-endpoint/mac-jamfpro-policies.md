@@ -558,7 +558,7 @@ These steps are applicable on macOS 11 (Big Sur) or later.
 
 8. Click the `+` sign next to **App Access** to add a new entry.
 
-   :::image type="content" source="images/tcc-add-entry.png" alt-text="The save operation relating to the configuration setting." lightbox="images/tcc-add-entry.png":::
+   :::image type="content" source="media/tcc-add-entry.png" alt-text="The save operation relating to the configuration setting." lightbox="media/tcc-add-entry.png":::
 
 9. Enter the following details:
 
@@ -568,7 +568,7 @@ These steps are applicable on macOS 11 (Big Sur) or later.
 
 10. Select **+ Add**.
 
-    :::image type="content" source="images/tcc-epsext-entry.png" alt-text="The configuration setting tcc epsext entry." lightbox="images/tcc-epsext-entry.png":::
+    :::image type="content" source="media/tcc-epsext-entry.png" alt-text="The configuration setting tcc epsext entry." lightbox="media/tcc-epsext-entry.png":::
 
     - Under App or service: Set to **SystemPolicyAllFiles**
 
@@ -576,7 +576,7 @@ These steps are applicable on macOS 11 (Big Sur) or later.
 
 11. Select **Save** (not the one at the bottom right).
 
-    :::image type="content" source="images/tcc-epsext-entry2.png" alt-text="The other instance of configuration setting tcc epsext." lightbox="images/tcc-epsext-entry2.png":::
+    :::image type="content" source="media/tcc-epsext-entry2.png" alt-text="The other instance of configuration setting tcc epsext." lightbox="media/tcc-epsext-entry2.png":::
 
 12. Select the **Scope** tab.
 

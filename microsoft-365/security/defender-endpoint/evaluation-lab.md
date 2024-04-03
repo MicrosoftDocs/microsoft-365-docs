@@ -216,7 +216,7 @@ If you are looking for a pre-made simulation, you can use our ["Do It Yourself" 
 
 1. Connect to your device and run an attack simulation by selecting **Connect**.
 
-    :::image type="content" source="images/test-machine-table.png" alt-text="The Connect button for the test devices" lightbox="images/test-machine-table.png":::
+    :::image type="content" source="media/test-machine-table.png" alt-text="The Connect button for the test devices" lightbox="media/test-machine-table.png":::
 
    :::image type="content" source="media/remote-connection.png" alt-text="The remote desktop connection screen" lightbox="media/remote-connection.png":::
 
