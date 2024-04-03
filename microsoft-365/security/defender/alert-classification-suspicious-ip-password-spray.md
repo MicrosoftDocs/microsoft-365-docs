@@ -5,7 +5,7 @@ ms.service: defender-xdr
 f1.keywords:
   - NOCSH
 ms.author: diannegali
-author: dgali297
+author: diannegali
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -17,7 +17,7 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - met150
-ms.date: 08/11/2022
+ms.date: 02/11/2024
 ---
 
 # Alert classification for suspicious IP addresses related to password spray attacks
