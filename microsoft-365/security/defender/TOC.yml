@@ -392,6 +392,10 @@
                   href: advanced-hunting-emailpostdeliveryevents-table.md
                 - name: EmailUrlInfo
                   href: advanced-hunting-emailurlinfo-table.md
+                - name: ExposureGraphEdges
+                  href: advanced-hunting-exposuregraphedges-table.md
+                - name: ExposureGraphNodes
+                  href: advanced-hunting-exposuregraphnodes-table.md                                    
                 - name: IdentityDirectoryEvents
                   href: advanced-hunting-identitydirectoryevents-table.md
                 - name: IdentityInfo
