@@ -35,9 +35,10 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 - [What's new in Microsoft Defender for Endpoint on Linux](linux-whatsnew.md)
 - [What's new in Microsoft Defender for Endpoint on iOS](ios-whatsnew.md)
 
+
 **Troubleshooting mode for macOS** (preview) 
 
-Troubleshooting mode helps you identify instances where antivirus might be causing issues with your applications or system resources. Troubleshooting mode for macOS is now available in Public Preview. To learn more, see [Troubleshooting mode in Microsoft Defender for Endpoint on macOS](mac-troubleshoot-mode.md).  
+Troubleshooting mode helps you identify instances where antivirus might be causing issues with your applications or system resources. To learn more, see [Troubleshooting mode in Microsoft Defender for Endpoint on macOS](mac-troubleshoot-mode.md).  
 
 **Mac devices receive built-in protection**
 
@@ -60,7 +61,7 @@ Microsoft Defender supports macOS Sonoma (14.0) in the current Defender release.
 **macOS Deprecation**
 Microsoft Defender for Endpoint no longer supports Big Sur (11)
 
-### Mar-2024 (Build: 101.24012.0010  | Release version: 20.124012.10.0)
+### Apr-2024 (Build: 101.24012.0010  | Release version: 20.124012.10.0)
 
 | Build:             | **101.24012.0010**    |
 |--------------------|-----------------------|
