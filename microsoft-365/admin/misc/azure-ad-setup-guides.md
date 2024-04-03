@@ -129,7 +129,9 @@ SSPR requires one of the following licenses:
 
 ## Configure multifactor authentication (MFA)
 
-For customers with Microsoft Entra ID Governance, Microsoft Entra ID P1, or P2, we provide customizable Conditional Access templates that include the most common and least intrusive security standards. When Microsoft Entra ID licensing isn’t available, we provide a one-click solution to enable Security Defaults, a baseline protection policy for all users, or we provide steps to enable legacy (per-user) MFA.
+The Configure multifactor authentication (MFA) guide provides customers who have the Microsoft Entra ID P1 or Microsoft Entra ID P2 license with customizable Conditional Access templates that include the most common and least intrusive security standards. Customers with the P2 license can also use risk-based Conditional Access policies. 
+
+Customers without a P1 or P2 license can use a one-click solution to enable security defaults, a baseline protection policy for all users. They can also enable legacy (per-user) MFA.
 
 ### Licensing
 

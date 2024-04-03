@@ -66,7 +66,7 @@ The threat analytics dashboard is a great jump off point for getting to the repo
 
 Select a threat from the dashboard to view the report for that threat.
 
-:::image type="content" source="images/ta_dashboard.png" alt-text="The threat analytics dashboard" lightbox="images/ta_dashboard.png":::
+:::image type="content" source="media/ta_dashboard.png" alt-text="The threat analytics dashboard" lightbox="media/ta_dashboard.png":::
 
 ## View a threat analytics report
 
@@ -76,7 +76,7 @@ Each threat analytics report provides information in three sections: **Overview*
 
 The **Overview** section provides a preview of the detailed analyst report. It also provides charts that highlight the impact of the threat to your organization and your exposure through misconfigured and unpatched devices.
 
-:::image type="content" source="images/ta-overview.png" alt-text="The Overview section of a threat analytics report" lightbox="images/ta-overview.png":::
+:::image type="content" source="media/ta-overview.png" alt-text="The Overview section of a threat analytics report" lightbox="media/ta-overview.png":::
 _Overview section of a threat analytics report_
 
 #### Assess the impact to your organization
@@ -112,7 +112,7 @@ In the **Mitigations** section, review the list of specific actionable recommend
 
 Mitigation information in this section incorporates data from [Microsoft Defender Vulnerability Management](next-gen-threat-and-vuln-mgt.md), which also provides detailed drill-down information from various links in the report.
 
-:::image type="content" source="images/ta-mitigations.png" alt-text="The Mitigations section of a threat analytics report" lightbox="images/ta-mitigations.png":::
+:::image type="content" source="media/ta-mitigations.png" alt-text="The Mitigations section of a threat analytics report" lightbox="media/ta-mitigations.png":::
 
 
 _Mitigations section of a threat analytics report_
