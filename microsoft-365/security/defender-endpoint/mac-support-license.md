@@ -107,7 +107,7 @@ If the file exists, it will prevent the macOS from being onboarded again.  Delet
 
 4. Check the checkbox of the license you want to purchase from Microsoft, and select it. The screen displaying detail of the chosen license appears:
 
-   :::image type="content" source="images/resultant-screen-of-selecting-preferred-license.png" alt-text="Screenshot of the product page from which you can select the option of assigning the purchased license.":::
+   :::image type="content" source="media/resultant-screen-of-selecting-preferred-license.png" alt-text="Screenshot of the product page from which you can select the option of assigning the purchased license.":::
 
 5. Select the **Assign licenses** link.
 
@@ -115,7 +115,7 @@ If the file exists, it will prevent the macOS from being onboarded again.  Delet
 
    The following screen appears:
 
-   :::image type="content" source="images/screen-containing-option-to-assign-licenses.png" alt-text="Screenshot of the page containing the + Assign licenses option." lightbox="images/screen-containing-option-to-assign-licenses.png":::
+   :::image type="content" source="media/screen-containing-option-to-assign-licenses.png" alt-text="Screenshot of the page containing the + Assign licenses option." lightbox="media/screen-containing-option-to-assign-licenses.png":::
 
 6. Select **+ Assign licenses**.
 
@@ -127,7 +127,7 @@ If the file exists, it will prevent the macOS from being onboarded again.  Delet
 
 On implementing these solution-options (either of them), if the licensing issues have been resolved, and then you run **mdatp health**, you should see the following results:
 
-:::image type="content" source="images/results-after-license-issues-resolved.png" alt-text="Screenshot of the page containing the results displayed after running mdatp health.":::
+:::image type="content" source="media/results-after-license-issues-resolved.png" alt-text="Screenshot of the page containing the results displayed after running mdatp health.":::
 
 ## Sign in with your Microsoft account
 
