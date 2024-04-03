@@ -40,7 +40,7 @@ Follow the corresponding instructions depending on your preferred deployment met
 
 The status of a device switches to [Inactive](fix-unhealthy-sensors.md#inactive-devices) seven (7) days after offboarding.
 
-Data, such as Timeline, Alerts, Vulnerabilities, etc., from offboarded devices remains in the Microsoft Defender portal until the configured [retention period](data-storage-privacy.md#how-long-will-microsoft-store-my-data-what-is-microsofts-data-retention-policy) expires.
+Data, such as Timeline, Alerts, Vulnerabilities, etc., from devices that were offboarded remains in the Microsoft Defender portal until the configured [retention period](data-storage-privacy.md#how-long-will-microsoft-store-my-data-what-is-microsofts-data-retention-policy) expires.
 
 The device's profile (without data) remains in the [Device inventory](machines-view-overview.md) for no longer than 180 days.
 
