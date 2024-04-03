@@ -68,7 +68,7 @@ In addition to the previous procedure, you can also [collect the analyzer suppor
 
 All the PowerShell scripts and modules included with the analyzer are Microsoft-signed. If files were modified in any way, then the analyzer is expected to exit with the following error:
 
-:::image type="content" source="images/sigerror.png" alt-text="The client analyzer error" lightbox="images/sigerror.png":::
+:::image type="content" source="media/sigerror.png" alt-text="The client analyzer error" lightbox="media/sigerror.png":::
 
 If you see this error, the issuerInfo.txt output contains detailed information about why this happened and the affected file:
 

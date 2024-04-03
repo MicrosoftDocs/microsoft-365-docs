@@ -184,7 +184,7 @@ You need to have access to:
     :::image type="content" source="media/apply-to-each-value.png" alt-text="The application of the flow to each condition" lightbox="media/apply-to-each-value.png":::
     :::image type="content" source="media/conditions-2.png" alt-text="The condition-1" lightbox="media/conditions-2.png":::
     :::image type="content" source="media/condition3.png" alt-text="The condition-2" lightbox="media/condition3.png":::
-    :::image type="content" source="images/send-email.png" alt-text="The Send an email section" lightbox="images/send-email.png":::
+    :::image type="content" source="media/send-email.png" alt-text="The Send an email section" lightbox="media/send-email.png":::
 
 ## Alert notification
 
