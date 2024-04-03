@@ -170,17 +170,17 @@ If a user visits a web page that poses a risk of malware, phishing, or other web
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/web-protection-malicious-block.png" alt-text="The page blocked by Microsoft Edge" lightbox="../../media/web-protection-malicious-block.png":::
 
-Starting in Edge 124, the following block page will be shown for all Web Content Filtering category blocks.
+Starting in Microsoft Edge 124, the following block page is shown for all Web Content Filtering category blocks.
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/web-protection-wcf-new-block-page.jpg" alt-text="This content is blocked by your organization" lightbox="../../media/web-protection-wcf-new-block-page.jpg":::
 
-Additionally, starting in Edge 124, the following block page will be shown for all Custom Indicator blocks, including those created by Microsoft Defender for Cloud Apps.
+Additionally, starting in Microsoft Edge 124, the following block page is shown for all Custom Indicator blocks, including those created by Microsoft Defender for Cloud Apps.
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/web-protection-indicators-new-block-page.jpg" alt-text="This website is blocked by your organization" lightbox="../../media/web-protection-indicators-new-block-page.jpg":::
 
-In any case, no block pages are shown in third-party browsers, and the user sees a "Secure Connection Failed' page along with a toast notification. Depending on the policy responsible for the block, a user will see a different message in the toast notification. For example, web content filtering will display the message 'This content is blocked'.
+In any case, no block pages are shown in non-Microsoft browsers, and the user sees a "Secure Connection Failed' page along with a toast notification. Depending on the policy responsible for the block, a user will see a different message in the toast notification. For example, web content filtering will display the message 'This content is blocked'.
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/web-protection-np-block.jgp" alt-text="The page blocked by WCF" lightbox="../../media/web-protection-np-block.jpg":::
