@@ -170,7 +170,7 @@ If a user visits a web page that poses a risk of malware, phishing, or other web
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/web-protection-malicious-block.png" alt-text="The page blocked by Microsoft Edge" lightbox="../../media/web-protection-malicious-block.png":::
 
-Starting in Microsoft Edge 124, the following block page is shown for all Web Content Filtering category blocks.
+Beginning with Microsoft Edge 124, the following block page is shown for all Web Content Filtering category blocks.
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/web-protection-wcf-new-block-page.jpg" alt-text="This content is blocked by your organization" lightbox="../../media/web-protection-wcf-new-block-page.jpg":::
@@ -189,7 +189,7 @@ In any case, no block pages are shown in non-Microsoft browsers, and the user se
 
 To report a false positive for sites that have been deemed dangerous by SmartScreen, use the link that appears on the block page in Microsoft Edge (as shown above).
 
-For WCF, you can dispute the category of a domain. Navigate to the **Domains** tab of the WCF reports. You will see an ellipsis beside each of the domains. Hover over this ellipsis and select **Dispute Category**. A flyout will open. Set the priority of the incident and provide some additional details, such as the suggested category. For more information on how to turn on WCF and how to dispute categories, see [Web content filtering](web-content-filtering.md).
+For WCF, you can dispute the category of a domain. Navigate to the **Domains** tab of the WCF reports. You'll see an ellipsis beside each of the domains. Hover over this ellipsis and select **Dispute Category**. A flyout opens. Set the priority of the incident and provide some other details, such as the suggested category. For more information on how to turn on WCF and how to dispute categories, see [Web content filtering](web-content-filtering.md).
 
 For more information on how to submit false positives/negatives, see [Address false positives/negatives in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md).
 
@@ -197,7 +197,7 @@ For more information on how to submit false positives/negatives, see [Address fa
 
 |Article|Description|
 |---|---|
-|[Web threat protection](web-threat-protection.md) | Prevent access to phishing sites, malware vectors, exploit sites, untrusted or low-reputation sites, and sites that you have blocked.|
+|[Web threat protection](web-threat-protection.md) | Prevent access to phishing sites, malware vectors, exploit sites, untrusted or low-reputation sites, and sites that are blocked.|
 |[Web content filtering](web-content-filtering.md) | Track and regulate access to websites based on their content categories.|
 
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
