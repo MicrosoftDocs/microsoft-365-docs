@@ -94,7 +94,7 @@ To implement a multitenant delegated access solution, take the following steps:
     - Access auto expires after 365 days
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/new-access-package.png" alt-text="The New access package page" lightbox="images/new-access-package.png":::
+    > :::image type="content" source="media/new-access-package.png" alt-text="The New access package page" lightbox="media/new-access-package.png":::
 
     For more information, see [Create a new access package](/azure/active-directory/governance/entitlement-management-access-package-create).
 

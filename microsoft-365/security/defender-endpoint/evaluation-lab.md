@@ -218,7 +218,7 @@ If you are looking for a pre-made simulation, you can use our ["Do It Yourself" 
 
     :::image type="content" source="images/test-machine-table.png" alt-text="The Connect button for the test devices" lightbox="images/test-machine-table.png":::
 
-   :::image type="content" source="images/remote-connection.png" alt-text="The remote desktop connection screen" lightbox="images/remote-connection.png":::
+   :::image type="content" source="media/remote-connection.png" alt-text="The remote desktop connection screen" lightbox="media/remote-connection.png":::
 
     For **Linux devices**: you'll need to use a local SSH client and the provided command.
 

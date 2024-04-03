@@ -353,19 +353,19 @@ In the [Microsoft Defender portal](https://sip.security.microsoft.com/homepage?t
 
 1. Under **Select Template**, select **Microsoft Defender Antivirus** and select **Create Policy**.
 
-   :::image type="content" alt-text="networkprotection" source="images/network-protection1.jpg" lightbox="images/network-protection1.jpg":::
+   :::image type="content" alt-text="networkprotection" source="media/network-protection1.jpg" lightbox="media/network-protection1.jpg":::
 
 1. On the **Basics** tab, enter the **Name** and **Description** of the policy. Select **Next**.
 
-   :::image type="content" source="images/networkprotection2.png" alt-text="Basicstab":::
+   :::image type="content" source="media/networkprotection2.png" alt-text="Basicstab":::
 
 1. On the **Configuration Settings** tab, under Network Protection, select an **Enforcement level**. Select **Next**.
 
-   :::image type="content" source="images/networkprotection3.png" alt-text="configurationsettings":::
+   :::image type="content" source="media/networkprotection3.png" alt-text="configurationsettings":::
 
 1. On the **Assignments** tab, assign the profile to a group where the macOS devices and/or users are located, or All Users and All devices.
 
-   :::image type="content" source="images/networkprotection4.png" alt-text="np4":::
+   :::image type="content" source="media/networkprotection4.png" alt-text="np4":::
 
 1. Review the policy in **Review+Create** and select **Save**. 
 
