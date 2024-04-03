@@ -47,7 +47,7 @@ You'll notice that the Microsoft Defender for Endpoint has an **x** symbol in th
 
 If you click the shield with the **x** symbol, you'll get options as shown in the following screenshot:
 
-:::image type="content" source="images/options-on-clicking-x-symbol.png" alt-text="The options you get on clicking the x symbol." lightbox="images/options-on-clicking-x-symbol.png":::
+:::image type="content" source="media/options-on-clicking-x-symbol.png" alt-text="The options you get on clicking the x symbol." lightbox="media/options-on-clicking-x-symbol.png":::
 
 Click **Action needed**.
 
@@ -140,7 +140,7 @@ Prior to approving the system extension (using any of the specified management t
 
 If you're using Intune, see [Manage macOS software update policies in Intune](/mem/intune/protect/software-updates-macos).
 
-:::image type="content" source="images/refresh-devices.png" alt-text="The screen on which you refresh the devices." lightbox="images/refresh-devices.png":::
+:::image type="content" source="media/refresh-devices.png" alt-text="The screen on which you refresh the devices." lightbox="media/refresh-devices.png":::
 
 1. Click the ellipses (three dots).
 1. Select **Refresh devices**. The screen as shown in the following screenshot appears:

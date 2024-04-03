@@ -159,7 +159,7 @@ If a user faces an issue, which isn't already addressed in the above sections or
 
 4. Choose from the given options. To report an issue, select "I want to report an issue".
 
-    :::image type="content" source="images/report-issue-4.jpg" alt-text="The I want to report an issue option" lightbox="images/report-issue-4.jpg":::
+    :::image type="content" source="media/report-issue-4.jpg" alt-text="The I want to report an issue option" lightbox="media/report-issue-4.jpg":::
 
 5. Provide details of the issue that you're facing and check "Send diagnostic data". We recommend checking "Include your email address" so that the team can reach back to you with a solution or a follow-up.
 

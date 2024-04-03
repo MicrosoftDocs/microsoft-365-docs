@@ -273,7 +273,7 @@ Web threat protection is part of web protection in Microsoft Defender XDR for En
 - untrusted or low-reputation sites
 - sites that are blocked in your custom indicator list
 
-:::image type="content" source="images/network-protection-reports-web-protection.png" alt-text="Web Protection reports web threat detections." lightbox="images/network-protection-reports-web-protection.png":::
+:::image type="content" source="media/network-protection-reports-web-protection.png" alt-text="Web Protection reports web threat detections." lightbox="media/network-protection-reports-web-protection.png":::
 
 For more information, see [Protect your organization against web threat](web-threat-protection.md)
 
@@ -285,7 +285,7 @@ Create indicators that define the detection, prevention, and exclusion of entiti
 
 Currently supported sources are the cloud detection engine of Defender for Endpoint, the automated investigation and remediation engine, and the endpoint prevention engine (Microsoft Defender Antivirus).
 
-:::image type="content" source="images/network-protection-add-url-domain-indicator.png" alt-text="Shows network protection add url or domain indicator." lightbox="images/network-protection-add-url-domain-indicator.png":::
+:::image type="content" source="media/network-protection-add-url-domain-indicator.png" alt-text="Shows network protection add url or domain indicator." lightbox="media/network-protection-add-url-domain-indicator.png":::
 
 For more information, see: [Create indicators for IPs and URLs/domains](indicator-ip-domain.md).
 
@@ -297,7 +297,7 @@ Configure policies across your device groups to block certain categories. Blocki
 
 Web content filtering is available on the major web browsers, with blocks performed by Network Protection (Safari, Chrome, Firefox, Brave, and Opera). For more information about browser support, see [Prerequisites](#prerequisites).
 
-:::image type="content" source="images/network-protection-wcf-add-policy.png" alt-text="Shows network protection web content filtering add policy." lightbox="images/network-protection-wcf-add-policy.png":::
+:::image type="content" source="media/network-protection-wcf-add-policy.png" alt-text="Shows network protection web content filtering add policy." lightbox="media/network-protection-wcf-add-policy.png":::
 
 For more information about reporting, see [Web content filtering](web-content-filtering.md).
 
@@ -305,17 +305,17 @@ For more information about reporting, see [Web content filtering](web-content-fi
 
 The Microsoft Defender for Cloud Apps / Cloud App Catalog identifies apps you would want end users to be warned upon accessing with Microsoft Defender XDR for Endpoint, and mark them as _Monitored_. The domains listed under monitored apps would be later synced to Microsoft Defender XDR for Endpoint:
 
-:::image type="content" source="images/network-protection-macos-mcas-monitored-apps.png" alt-text="Shows network protection monitored apps.":::
+:::image type="content" source="media/network-protection-macos-mcas-monitored-apps.png" alt-text="Shows network protection monitored apps.":::
 
 Within 10-15 minutes, these domains are listed in Microsoft Defender XDR under Indicators > URLs/Domains with Action=Warn. Within the enforcement SLA (see details at the end of this article), end users are getting warn messages when attempting to access these domains:
 
-:::image type="content" source="images/network-protection-macos-indicators-urls-domains-warn.png" alt-text="Shows network protection indicators for urls or domains warning.":::
+:::image type="content" source="media/network-protection-macos-indicators-urls-domains-warn.png" alt-text="Shows network protection indicators for urls or domains warning.":::
 
 When the end user is attempting to access monitored domains, they're warned by Defender for Endpoint.
 
 - The user gets a plain block experience accompanied by the following toast message, which is displayed by the operating system including the name of the blocked application (e.g Blogger.com)
 
-  :::image type="content" source="images/network-protection-macos-content-blocked.png" alt-text="Shows end-user network protection content blocked toast notification.":::
+  :::image type="content" source="media/network-protection-macos-content-blocked.png" alt-text="Shows end-user network protection content blocked toast notification.":::
 
 If the end user encounters a _block_, the user has two possible resolutions:
 
@@ -330,7 +330,7 @@ If the end user encounters a _block_, the user has two possible resolutions:
 > [!NOTE]
 > Tracking bypasses per app** – You can track how many users have bypassed the warning in the _Application_ page in Microsoft Defender for Cloud Apps.
 
-  :::image type="content" source="images/network-protection-macos-mcas-cloud-app-security.png" alt-text="Shows network protection cloud app security overview.":::
+  :::image type="content" source="media/network-protection-macos-mcas-cloud-app-security.png" alt-text="Shows network protection cloud app security overview.":::
 
 ## Appendix
 

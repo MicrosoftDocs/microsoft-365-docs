@@ -51,7 +51,7 @@ Enable network protection in audit mode to see which IP addresses and domains mi
 
     The network connection is allowed and a test message displays.
     
-    :::image type="content" source="images/np-notif.png" alt-text="The connection blockage notification" lightbox="images/np-notif.png":::
+    :::image type="content" source="media/np-notif.png" alt-text="The connection blockage notification" lightbox="media/np-notif.png":::
 
 > [!NOTE]
 > Network connections can be successful even though a site is blocked by network protection. To learn more, see [Network protection and the TCP three-way handshake](network-protection.md#network-protection-and-the-tcp-three-way-handshake).

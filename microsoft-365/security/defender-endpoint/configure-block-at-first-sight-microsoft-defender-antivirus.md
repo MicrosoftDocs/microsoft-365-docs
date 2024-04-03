@@ -50,7 +50,7 @@ When Microsoft Defender Antivirus encounters a suspicious but undetected file, i
 
 Microsoft Defender Antivirus uses multiple detection and prevention technologies to deliver accurate, intelligent, and real-time protection.
 
-:::image type="content" source="images/microsoft-defender-atp-next-generation-protection-engines.png" alt-text="The list of Microsoft Defender Antivirus engines" lightbox="images/microsoft-defender-atp-next-generation-protection-engines.png":::
+:::image type="content" source="media/microsoft-defender-atp-next-generation-protection-engines.png" alt-text="The list of Microsoft Defender Antivirus engines" lightbox="media/microsoft-defender-atp-next-generation-protection-engines.png":::
 
 > [!TIP]
 > To learn more, see [(Blog) Get to know the advanced technologies at the core of Microsoft Defender for Endpoint next-generation protection](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/).
