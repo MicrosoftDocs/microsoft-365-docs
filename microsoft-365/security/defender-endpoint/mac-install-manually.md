@@ -143,7 +143,7 @@ To grant full disk access:
 
 1. Select **General** \> **Restart** for the new system extensions to take effect.
 
-   :::image type="content" source="images/restart-fulldisk.png" alt-text="Screenshot that allows you to restart the system for new system extensions to be enabled.":::
+   :::image type="content" source="media/restart-fulldisk.png" alt-text="Screenshot that allows you to restart the system for new system extensions to be enabled.":::
 
 1. Enable *Potentially Unwanted Application* (PUA) in block mode.
 
