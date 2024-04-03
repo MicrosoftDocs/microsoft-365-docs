@@ -262,7 +262,7 @@ This could be done in two phases. First create **the files and the folder in** G
 
 As the Script has an exit method and wont re-run if the MMA is installed, you could also use a daily scheduled task to achieve the same result. Similar to a Configuration Manager compliance policy it will check daily to ensure the MMA is present.
 
-:::image type="content" source="images/schtask.png" alt-text="schedule task" lightbox="images/schtask.png":::
+:::image type="content" source="media/schtask.png" alt-text="schedule task" lightbox="media/schtask.png":::
 
 :::image type="content" source="media/newtaskprops.png" alt-text="The new task properties" lightbox="media/newtaskprops.png":::
 

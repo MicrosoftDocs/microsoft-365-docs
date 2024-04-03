@@ -70,11 +70,11 @@ You might see the prompt that's shown in the following screenshot:
 
 1. Enter your password and click **Unlock**. The following screen appears:
 
-   :::image type="content" source="images/screen-on-clicking-unlock.png" alt-text="The screen that is displayed on clicking Unlock." lightbox="images/screen-on-clicking-unlock.png":::
+   :::image type="content" source="media/screen-on-clicking-unlock.png" alt-text="The screen that is displayed on clicking Unlock." lightbox="media/screen-on-clicking-unlock.png":::
 
 1. Select **Details**, next to **Some software system requires your attention before it can be used**.
 
-   :::image type="content" source="images/screen-on-clicking-details.png" alt-text="The screen that is displayed on clicking Details." lightbox="images/screen-on-clicking-details.png":::
+   :::image type="content" source="media/screen-on-clicking-details.png" alt-text="The screen that is displayed on clicking Details." lightbox="media/screen-on-clicking-details.png":::
 
 1. Check both the **Microsoft Defender** checkboxes, and select **OK**. You'll get two pop-up screens, as shown in the following screenshot:
 
@@ -86,7 +86,7 @@ You might see the prompt that's shown in the following screenshot:
 
 If you run systemextensionsctl list, the following screen appears:
 
-:::image type="content" source="images/result-of-running-systemextenstionsctl-list.png" alt-text="The resultant screen of running the systemextensionsdcl list." lightbox="images/result-of-running-systemextenstionsctl-list.png":::
+:::image type="content" source="media/result-of-running-systemextenstionsctl-list.png" alt-text="The resultant screen of running the systemextensionsdcl list." lightbox="media/result-of-running-systemextenstionsctl-list.png":::
 
 ### Accessibility
 
