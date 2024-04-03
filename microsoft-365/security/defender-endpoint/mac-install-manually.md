@@ -75,7 +75,7 @@ To complete this process, you must have admin privileges on the device.
      sudo installer -store -pkg /Users/admin/Downloads/wdav.pkg -target /
      ```
 
-   :::image type="content" source="images/monterey-install-1.png" alt-text="Screenshot that shows the installation process for the application":::
+   :::image type="content" source="media/monterey-install-1.png" alt-text="Screenshot that shows the installation process for the application":::
 
 2. Select **Continue**.
 
@@ -108,7 +108,7 @@ To complete this process, you must have admin privileges on the device.
 
 10. At the end of the installation process, for macOS Big Sur (11.0) or latest version, you're prompted to approve the system extensions used by the product. Select **Open Security Preferences**.
 
-    :::image type="content" source="images/monterey-install-2.png" alt-text="Screenshot that shows the system extension approval":::
+    :::image type="content" source="media/monterey-install-2.png" alt-text="Screenshot that shows the system extension approval":::
 
 11. To enable system extention, select **Details**.
 
@@ -122,7 +122,7 @@ To complete this process, you must have admin privileges on the device.
 
 14. As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint on Mac inspects socket traffic and reports this information to the Microsoft Defender portal. When prompted to grant Microsoft Defender for Endpoint permissions to filter network traffic, select **Allow**.
 
-    :::image type="content" source="images/monterey-install-4.png" alt-text="Screenshot that shows the system extension security preferences2":::
+    :::image type="content" source="media/monterey-install-4.png" alt-text="Screenshot that shows the system extension security preferences2":::
 
     To troubleshoot System Extension issues, refer [Troubleshoot System Extension](mac-support-sys-ext.md).
 
