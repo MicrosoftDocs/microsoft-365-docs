@@ -42,11 +42,11 @@ Security operators and admins can go to the following portals to manage security
 
 ## Portals for other workloads
 
-Although these portals are not specifically for managing security, they support various workloads and tasks that can impact your security. Visit these portals to manage identities, permissions, device settings, and data handling policies.
+Although these portals aren't specifically for managing security, they support various workloads and tasks that can impact your security. Visit these portals to manage identities, permissions, device settings, and data handling policies.
 
 | Portal name | Description | Link |
 |---|---|---|
-| Microsoft Entra admin center | Access and administer the [Microsoft Entra](/entra) family to protect your business with decentralized identity, identity protection, governance, and more, in a multi-cloud environment | [entra.microsoft.com](https://entra.microsoft.com/) |
+| Microsoft Entra admin center | Access and administer the [Microsoft Entra](/entra) family to protect your business with decentralized identity, identity protection, governance, and more, in a multicloud environment | [entra.microsoft.com](https://entra.microsoft.com/) |
 | Azure portal | View and manage all your [Azure resources](/azure/azure-resource-manager/management/overview)  | [portal.azure.com](https://portal.azure.com/) |
 | Microsoft Entra admin center | View and manage [Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-whatis) | [aad.portal.azure.com](https://aad.portal.azure.com/) |
 | Microsoft Purview compliance portal | Manage data handling policies and ensure [compliance with regulations](/compliance/regulatory/offering-home) | [compliance.microsoft.com](https://compliance.microsoft.com/) |
