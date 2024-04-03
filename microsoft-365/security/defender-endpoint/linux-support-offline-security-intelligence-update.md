@@ -61,7 +61,7 @@ Fig. 2: Process flow diagram on the Linux endpoint for security intelligence upd
 
 ## Prerequisites
 
-- Defender for Endpoint version "101.24022.0001" or higher in InsiderSlow ring needs to be installed on the Linux endpoints. 
+- Defender for Endpoint version "101.24022.0001" or higher needs to be installed on the Linux endpoints. 
   > [!NOTE]
   > This version of Defender for Endpoint on Linux will be rolled out to the Production ring soon.
 - The Linux endpoints need to have connectivity to the Mirror Server.
