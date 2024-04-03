@@ -34,12 +34,13 @@ Ransomware evolved rapidly from being simple commodity malware affecting individ
 With [advanced hunting](advanced-hunting-overview.md) in Microsoft Defender XDR, you can create queries that locate individual artifacts associated with ransomware activity. You can also run more sophisticated queries that can look for signs of activity and weigh those signs to find devices that require immediate attention.
 
 ## Signs of ransomware activity
+
 Microsoft security researchers have observed various common yet subtle artifacts in many ransomware campaigns launched by sophisticated intruders. These signs mostly involve use of system tools to prepare for encryption, prevent detection, and clear forensic evidence.
 
 | Ransomware activity | Common tools | Intent |
 |--|--|--|
-| Stop processes | _taskkill.exe_, _net stop_ | Ensure files targeted for encryption are not locked by various applications. |
-| Turn off services | _sc.exe_ | - Ensure files targeted for encryption are not locked by various applications.<br>- Prevent security software from disrupting encryption and other ransomware activity.<br>- Stop backup software from creating recoverable copies.  |
+| Stop processes | _taskkill.exe_, _net stop_ | Ensure files targeted for encryption aren't locked by various applications. |
+| Turn off services | _sc.exe_ | - Ensure files targeted for encryption aren't locked by various applications.<br>- Prevent security software from disrupting encryption and other ransomware activity.<br>- Stop backup software from creating recoverable copies.  |
 | Delete logs and files | _cipher.exe_, _wevtutil_, _fsutil.exe_ | Remove forensic evidence. |
 | Delete shadow copies  | _vsadmin.exe_, _wmic.exe_ | Remove drive shadow copies that can be used to recover encrypted files. |
 | Delete and stop backups | _wbadmin.exe_ | Delete existing backups and stop scheduled backup tasks, preventing recovery after encryption. |
@@ -47,9 +48,11 @@ Microsoft security researchers have observed various common yet subtle artifacts
 | Turn off recovery tools | _schtasks.exe_, _regedit.exe_, | Turn off System Restore and other system recovery options. |
 
 ## Check for individual signs of ransomware activity
+
 Many activities that constitute ransomware behavior, including the activities described in the preceding section, can be benign. When using the following queries to locate ransomware, run more than one query to check whether the same devices are exhibiting various signs of possible ransomware activity.
 
 ### Stopping multiple processes using _taskkill.exe_
+
 This query checks for attempts to stop at least 10 separate processes using the _taskkill.exe_ utility. [Run query](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI2RS2vCUBCFz7rgfwiuIkit3eumVSgtpYvuS9SLDTY2eLUvxN_eb8YHKlFkyNzJzDkn505aailRX7mmGlFlmhNBhUrOSGeuT3L0s6QqNaMagolEcMyCbApjx2e8TYhcH8Q1mB-emq50z_lF39gvBzo9-gEF-6Yhlyh9653ejCfRK6zCsaZfuJOu-x2jkqqN-0Yls-8-gp6dZ52OVuT6Sad1plulyN0KIkMt15_zt7zHDe8OBwv3btoJToa7Tnp0T8Ou9WzfT761gPOm3_FQ16Zxp2qcCdg33_rlyokG-iXv7_4BRNMnhkortmvTW6rqnZ7bgP2Vtm70D3d9wcFaAgAA&runQuery=true&timeRangeId=week)
 
 ```kusto
@@ -62,6 +65,7 @@ DeviceProcessEvents
 ```
   
 ### Stopping processes using _net stop_
+
 This query checks for attempts to stop at least 10 separate processes using the _net stop_ command. [Run query](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI2RQUvDUBCE5yz0P4ScUijWereXVkGQIti7aA1pqakhL7VVxN_ebzc1NBChPLJv2Z2ZN5sdaqhId1ppozeyF1WcVLkK7kCl0gcx-F2QFSrJFmACJ3XMlmgKGfmGWnXC6OlCU2qfIIz12OLfUk_h2FuG_IG505JayRdpDit3bIW33B2M3WeGSqIRrvudTJvpnWzmPKvc6JcYHx1eEvd8savV07e9TchzTt198AlNZ0kluNLfjHHjIPAvak4J_tvx9XtPR6ypbn1icxShvGgqyVkO-hrAm7VUrRcaTWOs6T_7hs7XjfSqL-Lpvu5BDLxjqKRjI9a9Juvew__T2x5HutIB3T1qt4QCAAA&runQuery=true&timeRangeId=week)
 
 ```kusto
@@ -89,6 +93,7 @@ CipherList = make_set(ProcessCommandLine) by DeviceId, bin(Timestamp, 1m)
 ```
 
 ### Clearing of forensic evidence from event logs using _wevtutil_
+
 This query checks for attempts to clear at least 10 log entries from event logs using _wevtutil_. [Run query](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAJWRTU_CQBCG37OJ_2HDqSQkwMGjXgoHEg4cUI-m2hUaqGu6BaPxx_vsEFCTxmA225nOvB_tzFBDOc0VOBuyZ2JD3CnKEwMVpzfyPbVWlba8t9Sdnsi9CsPXdLfWf7Wq4xm0QuVSF5oYv4LhtQAfLIucKXWvF5gH5Ke5rak1prKEVRu2xalG3emGW6AdlGmsUv1O5m-fnLzmFHiV_G9FTKg1lUjs6Z5vucPvljsD0TOXhP6_Vm7841dFZnPAN2A_DDu36eSnCSbNnc3B6Zpb4nasZGf59zWA963orZdcEiKelBNvQ_fBNny-utOj3nn-3OUMxMA6CZV1bCt1r8i6d_TXFNKWxxrpC48hm8miAgAA&runQuery=true&timeRangeId=week)
 
 ```kusto
@@ -101,6 +106,7 @@ DeviceProcessEvents
 ```
 
 ### Turning off services using _sc.exe_
+
 This query checks for attempts to turn off at least 10 existing services using _sc.exe_. [Run query](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAKWST2vCQBDF31nodwg5RZCqhx7bi3ooeCjovaQxraIxxfU_fvj-ZoiiEIqlhM3Ozrz3ZnZm22or0lAl3xzrk33FHpTpUbn2rEgTzfCk-tACa6kvR-Qgt5wzrKAHNdTHOnveiJZVLGiAP4e5rpAnFHaauoZlGMMqHLsmT6FvfC-slFylEnWpoVnLvM3Twy74UnJNuJdVa6gpnsAe-81iVzbE3_kZiCV9mlHZf3Sue5pzii-3C9pU3BWYo_NGKPdvGJZh4x2N9Owzyi6e5K5qmmrVKg_9dNY11hzvu0_8fu0ItQP_6zfxCqLlEUMlNVO36BNW_ax_74K9l646-gFts39I1AIAAA&runQuery=true&timeRangeId=week)
 
 ```kusto
@@ -113,6 +119,7 @@ DeviceProcessEvents
 ```
 
 ### Turning off System Restore
+
 This query identifies attempts to stop System Restore and prevent the system from creating restore points, which can be used to recover data encrypted by ransomware. [Run query](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAK2S3UrDQBCFz7XgO6y9id4o6HWvrIVCkaJPENOYFNumZGO1ID673w4xJA1isbJMZnZ-zpzM7EiptlooQc9UqjDLc-7wp1qrwj7Via44MzK35FTotTI5PXMr0aVe8cy15NzoGo-zqg_0m3KQSsRpQtbC6uMGpdt3jHeJfU_GymqG-uQb9XpcEn1HIuvmGpZT0Aq99Dim4G3ousNO8K04sSE6EEN22kL6jvzO-LaDNW2QzqxLmGBsPo9vUMt_oA8Na3DQv3vwcmPiifpmds48jkhut8T2FLikxm_T4bI_m_6uQt-wrXO28lPPSBcdziOqPFlP9RYy47tDKtuZM07hVtSvaJ_HYRPL63-NyMgtmtWv5684jy2WDx2O0ZEM562ZBLQvURxur6gDAAA&runQuery=true&timeRangeId=week)
 
 ```kusto
@@ -129,6 +136,7 @@ and ProcessCommandLine has 'disable'
 ```
 
 ### Backup deletion
+
 This query identifies use of _wmic.exe_ to delete shadow copy snapshots prior to encryption. [Run query](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAJWS2wqCQBCG_-ugd5CupTfoqgMIEV70AqFLGp5QyYLo2fsavEjxwlhWZ7-df2Z2dndyuitVxD9UrdKshrGHOxVqsZda6CVPnRJYzfR0QJVhnXRRbmSjN98VXrlFXEMfzNWkfphti50zLmSMdURfmFcCaSxqY3aMX4eqVKUn1OsV_8eLWX_rbwcVVhblBovY8bT76U-AxoedWeeWp7WzV0YDMqSQFNZavuuopnHH_Iku-lbJnLPMyxnYDTp4bZ5P9M5uNpsZIWSn7l_CuNoPSggb4z4CAAA&runQuery=true&timeRangeId=week)
 
 ```kusto
@@ -140,6 +148,7 @@ ProcessCommandLine, InitiatingProcessIntegrityLevel, InitiatingProcessParentFile
 ```
 
 ## Check for multiple signs of ransomware activity
+
 Instead of running several queries separately, you can also use a comprehensive query that checks for multiple signs of ransomware activity to identify affected devices. The following consolidated  query:
 - Looks for both relatively concrete and subtle signs of ransomware activity
 - Weighs the presence of these signs
@@ -220,6 +229,7 @@ ScDisable = iff(make_set(ScDisableUse) contains "1", 1, 0), TotalEvidenceCount =
 | where UniqueEvidenceCount > 2
 ```
 ### Understand and tweak the query results
+
 The consolidated query returns the following results:
 
 - **DeviceId**—identifies the affected device 
@@ -237,14 +247,6 @@ By default, the query result lists only devices that have more than two types of
 ```kusto
 | where UniqueEvidenceCount > 2
 ```
-
-## Related topics
-- [Advanced hunting overview](advanced-hunting-overview.md)
-- [Learn the query language](advanced-hunting-query-language.md)
-- [Work with query results](advanced-hunting-query-results.md)
-- [Use shared queries](advanced-hunting-shared-queries.md)
-- [Understand the schema](advanced-hunting-schema-tables.md)
-- [Apply query best practices](advanced-hunting-best-practices.md)
 
 ## More ransomware resources
 
@@ -303,4 +305,16 @@ Microsoft Security team blog posts:
 
 - [Ransomware response—to pay or not to pay? (December 2019)](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
 - [Norsk Hydro responds to ransomware attack with transparency (December 2019)](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
+
+
 [!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]
+
+
+## Related articles
+
+- [Advanced hunting overview](advanced-hunting-overview.md)
+- [Learn the query language](advanced-hunting-query-language.md)
+- [Work with query results](advanced-hunting-query-results.md)
+- [Use shared queries](advanced-hunting-shared-queries.md)
+- [Understand the schema](advanced-hunting-schema-tables.md)
+- [Apply query best practices](advanced-hunting-best-practices.md)
