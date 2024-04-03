@@ -5,8 +5,8 @@ ms.service: defender-endpoint
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
-ms.reviewer: pahuijbr, mkaminska, v-vutrieu
-ms.date: 02/27/2024
+ms.reviewer: pahuijbr
+ms.date: 04/03/2024
 manager: deniseb
 audience: ITPro
 ms.collection:
@@ -26,6 +26,32 @@ search.appverid: met150
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Microsoft regularly releases [security intelligence updates and product updates for Microsoft Defender Antivirus](microsoft-defender-antivirus-updates.md). It's important to keep Microsoft Defender Antivirus up to date. When a new package version is released, support for the previous two versions is reduced to technical support only. Versions that are older than the previous two versions are listed in this article and are provided for technical upgrade support only.
+
+## November-2023 (Platform: 4.18.23110.3 | Engine: 1.1.23110.2)
+
+- Security intelligence update version: **1.403.7.0**
+- Release date: **December 5, 2023 (Platform)** / **December 6, 2023 (Engine)**
+- Platform: **4.18.23110.3**
+- Engine: **1.1.23110.2**
+- Support phase: **Security and Critical Updates**
+
+### What's new
+
+- Fixed PowerShell cmdlet [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) to show the correct date/time for `AntivirusSignatureLastUpdated`
+- Resolved deadlock issue that occurred on systems with multiple filter drivers reading a file when the file is copied 
+- Added the `InitializationProgress` field to [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) output 
+- Fixed installation failure on Windows Server 2016 due to existing Defender EventLog registry key 
+- Added the ability to have [quick scans](schedule-antivirus-scans.md) ignore Microsoft Defender Antivirus exclusions 
+- Fixed remediation for long running [on-demand scans](run-scan-microsoft-defender-antivirus.md) where the service may have been restarted 
+- Fixed an issue with Microsoft Defender Vulnerability Management to allow the execution of a [blocked application](/microsoft-365/security/defender-vulnerability-management/tvm-block-vuln-apps) when the [warn option](/microsoft-365/security/defender-vulnerability-management/tvm-block-vuln-apps#block-or-warn-mitigation-action) is selected 
+- Added support for managing schedule day/time for [signature updates in Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-windows#updates) and [Defender for Endpoint security settings management](/mem/intune/protect/mde-security-integration) 
+- Fixed non-standard signature path loading across platforms ([Windows](microsoft-defender-antivirus-windows.md), [Mac](microsoft-defender-endpoint-mac.md), [Linux](microsoft-defender-endpoint-linux.md), [Android](microsoft-defender-endpoint-android.md), and [iOS](microsoft-defender-endpoint-ios.md))
+- Improved handling of cached detections in [attack surface reduction](overview-attack-surface-reduction.md) capabilities
+- Improved performance for enumerating virtual memory ranges
+
+### Known issues
+
+- None
 
 ## October-2023 (Platform: 4.18.23100.2009 | Engine: 1.1.23100.2009)
 
