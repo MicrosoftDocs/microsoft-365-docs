@@ -4,7 +4,7 @@ description: Exclude files from Microsoft Defender Antivirus scans based on thei
 ms.service: defender-endpoint
 ms.subservice: ngp
 ms.localizationpriority: medium
-ms.date: 06/06/2023
+ms.date: 04/03/2024
 author: siosulli
 ms.author: siosulli
 ms.topic: conceptual
@@ -72,7 +72,7 @@ The following table lists some examples of exclusions based on file extension an
 
 - Don't exclude mapped network drives. Specify the actual network path.
 
-- Folders that are reparse points are created after the Microsoft Defender Antivirus service starts, and those that have been added to the exclusion list aren't included. Restart the service by restarting Windows for new reparse points to be recognized as a valid exclusion target.
+- Folders that are reparse points are created after the Microsoft Defender Antivirus service starts, and those that were added to the exclusion list aren't included. Restart the service by restarting Windows for new reparse points to be recognized as a valid exclusion target.
 
 - Exclusions apply to [scheduled scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md), [on-demand scans](run-scan-microsoft-defender-antivirus.md), and [real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md), but not across all Defender for Endpoint capabilities. To define exclusions across Defender for Endpoint, use [custom indicators](manage-indicators.md).
 
@@ -153,7 +153,7 @@ The following table lists values that you can use in the `<exclusion list>` port
 |All files under a folder (including files in sub-directories), or a specific file|`-ExclusionPath`|
 
 > [!IMPORTANT]
-> If you have created a list, either with `Set-MpPreference` or `Add-MpPreference`, using the `Set-MpPreference` cmdlet again will overwrite the existing list.
+> If you have created a list, either with `Set-MpPreference` or `Add-MpPreference`, using the `Set-MpPreference` cmdlet again overwrites the existing list.
 
 For example, the following code snippet would cause Microsoft Defender Antivirus scans to exclude any file with the `.test` file extension:
 
@@ -206,9 +206,9 @@ The following table describes how the wildcards can be used and provides some ex
 |Environment variables <br/><br/> The defined variable is populated as a path when the exclusion is evaluated.|`%ALLUSERSPROFILE%\CustomLogFiles` would include `C:\ProgramData\CustomLogFiles\Folder1\file1.txt`|
 
 > [!IMPORTANT]
-> If you mix a file exclusion argument with a folder exclusion argument, the rules will stop at the file argument match in the matched folder, and will not look for file matches in any subfolders.
+> If you mix a file exclusion argument with a folder exclusion argument, the rules stop at the file argument match in the matched folder, and don't look for file matches in any subfolders.
 > For example, you can exclude all files that start with "date" in the folders `c:\data\final\marked` and `c:\data\review\marked` by using the rule argument `c:\data\*\marked\date*`.
-> This argument, however, will not match any files in subfolders under `c:\data\final\marked` or `c:\data\review\marked`.
+> This argument doesn't match any files in subfolders under `c:\data\final\marked` or `c:\data\review\marked`.
 
 <a id="review"></a>
 
