@@ -76,7 +76,7 @@ If you see this error, the issuerInfo.txt output contains detailed information a
 
 Example contents after MDEClientAnalyzer.ps1 is modified:
 
-:::image type="content" source="images/modified-ps1.png" alt-text="The  modified ps1 file" lightbox="images/modified-ps1.png":::
+:::image type="content" source="media/modified-ps1.png" alt-text="The  modified ps1 file" lightbox="media/modified-ps1.png":::
 
 ## Result package contents on Windows
 

@@ -182,7 +182,7 @@ When all existing devices are used and deleted, you can request for more devices
 
 1. From the evaluation lab dashboard, select **Request for more devices**.
 
-   :::image type="content" source="images/request-more-devices.png" alt-text="The request for more devices option" lightbox="images/request-more-devices.png":::
+   :::image type="content" source="media/request-more-devices.png" alt-text="The request for more devices option" lightbox="media/request-more-devices.png":::
 
 2. Choose your configuration.
 3. Submit the request.
@@ -225,7 +225,7 @@ If you are looking for a pre-made simulation, you can use our ["Do It Yourself" 
     > [!NOTE]
     > If you don't have a copy of the password saved during the initial setup, you can reset the password by selecting **Reset password** from the menu:
     >
-    > :::image type="content" source="images/reset-password-test-machine.png" alt-text="The Reset password option" lightbox="images/reset-password-test-machine.png":::
+    > :::image type="content" source="media/reset-password-test-machine.png" alt-text="The Reset password option" lightbox="media/reset-password-test-machine.png":::
     >
     > The device will change it's state to "Executing password reset", then you'll be presented with your new password in a few minutes.
 
