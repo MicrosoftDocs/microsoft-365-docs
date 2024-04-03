@@ -26,11 +26,11 @@ This article describes the procedures involved when deploying Microsoft Defender
 
 You might see the prompt that's shown in the following screenshot:
 
-:::image type="content" source="images/system-extension-blocked-prompt.png" alt-text="The system extensions blocked prompt screen." lightbox="images/system-extension-blocked-prompt.png":::
+:::image type="content" source="media/system-extension-blocked-prompt.png" alt-text="The system extensions blocked prompt screen." lightbox="media/system-extension-blocked-prompt.png":::
 
 1. Select **OK**. You might get a second prompt as shown in the following screenshot:
 
-   :::image type="content" source="images/system-extension-blocked-second-prompt.png" alt-text="The second prompt regarding system extensions being blocked." lightbox="images/system-extension-blocked-second-prompt.png":::
+   :::image type="content" source="media/system-extension-blocked-second-prompt.png" alt-text="The second prompt regarding system extensions being blocked." lightbox="media/system-extension-blocked-second-prompt.png":::
 
 1. From this second-prompt screen, select **OK**. You'll receive a notification message that reads **Installation succeeded**, as shown in the following screenshot:
 
@@ -54,11 +54,11 @@ You might see the prompt that's shown in the following screenshot:
 
 1. Enter your password and select **OK**.
 1. Click 
-   :::image type="content" source="images/system-preferences-icon.png" alt-text="The System Preferences icon." lightbox="images/system-preferences-icon.png":::
+   :::image type="content" source="media/system-preferences-icon.png" alt-text="The System Preferences icon." lightbox="media/system-preferences-icon.png":::
 
    The **System Preferences** screen appears.
 
-   :::image type="content" source="images/system-preferences-screen.png" alt-text="The System Preferences screen." lightbox="images/system-preferences-screen.png":::
+   :::image type="content" source="media/system-preferences-screen.png" alt-text="The System Preferences screen." lightbox="media/system-preferences-screen.png":::
 
 1. Click **Security & Privacy**. The **Security & Privacy** screen appears.
 
