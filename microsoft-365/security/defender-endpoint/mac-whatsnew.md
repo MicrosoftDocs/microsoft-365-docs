@@ -30,19 +30,15 @@ ms.reviewer: mavel
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-
 For more information on Microsoft Defender for Endpoint on other operating systems:
 
 - [What's new in Microsoft Defender for Endpoint on Linux](linux-whatsnew.md)
 - [What's new in Microsoft Defender for Endpoint on iOS](ios-whatsnew.md)
 
-**Built-in Scheduled Scan for macOS** (preview) 
-
-Scheduled Scan built-in for Microsoft Defender for Endpoint on macOS is now available in Public Preview.  To learn more, see [How to schedule scans with Microsoft Defender for Endpoint on macOS](mac-schedule-scan.md). 
 
 **Troubleshooting mode for macOS** (preview) 
 
-Troubleshooting mode helps you identify instances where antivirus might be causing issues with your applications or system resources. Troubleshooting mode for macOS is now available in Public Preview. To learn more, see [Troubleshooting mode in Microsoft Defender for Endpoint on macOS](mac-troubleshoot-mode.md).  
+Troubleshooting mode helps you identify instances where antivirus might be causing issues with your applications or system resources. To learn more, see [Troubleshooting mode in Microsoft Defender for Endpoint on macOS](mac-troubleshoot-mode.md).  
 
 **Mac devices receive built-in protection**
 
@@ -65,7 +61,7 @@ Microsoft Defender supports macOS Sonoma (14.0) in the current Defender release.
 **macOS Deprecation**
 Microsoft Defender for Endpoint no longer supports Big Sur (11)
 
-### Mar-2024 (Build: 101.24012.0010  | Release version: 20.124012.10.0)
+### Apr-2024 (Build: 101.24012.0010  | Release version: 20.124012.10.0)
 
 | Build:             | **101.24012.0010**    |
 |--------------------|-----------------------|
@@ -76,6 +72,7 @@ Microsoft Defender for Endpoint no longer supports Big Sur (11)
 ##### What's new
 
 - Bug and performance fixes
+- **(GA) Built-in Scheduled Scan for macOS**: For information on Scheduled Scan built-in for Microsoft Defender for Endpoint on macOS, see [How to schedule scans with Microsoft Defender for Endpoint on macOS](mac-schedule-scan.md).
 
 ### Jan-2024 (Build: 101.23122.0005  | Release version: 20.123122.5.0)
 
