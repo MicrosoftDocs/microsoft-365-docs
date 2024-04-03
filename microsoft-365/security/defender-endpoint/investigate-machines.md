@@ -167,7 +167,7 @@ The **Security policies** tab shows the endpoint security policies that are appl
 
 The **Software inventory** tab lets you view software on the device, along with any weaknesses or threats. Selecting the name of the software takes you to the software details page where you can view security recommendations, discovered vulnerabilities, installed devices, and version distribution. See [Software inventory](tvm-software-inventory.md) for details.
 
-:::image type="content" source="images/software-inventory-device.png" alt-text="The Software inventory tab" lightbox="images/software-inventory-device.png":::
+:::image type="content" source="media/software-inventory-device.png" alt-text="The Software inventory tab" lightbox="media/software-inventory-device.png":::
 
 ### Discovered vulnerabilities
 
