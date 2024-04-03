@@ -118,7 +118,7 @@ The timeline also enables you to selectively drill down into events that occurre
 > - [5031](/windows/security/threat-protection/auditing/event-5031) - application blocked from accepting incoming connections on the network
 > - [5157](/windows/security/threat-protection/auditing/event-5157) - blocked connection
 
-:::image type="content" source="images/timeline-device.png" alt-text="The device timeline with events" lightbox="images/timeline-device.png":::
+:::image type="content" source="media/timeline-device.png" alt-text="The device timeline with events" lightbox="media/timeline-device.png":::
 
 Some of the functionality includes:
 
