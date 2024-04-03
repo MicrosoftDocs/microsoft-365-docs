@@ -190,7 +190,7 @@ For more information, see [Windows Defender WMIv2 APIs](/previous-versions/windo
 
     If you're not sure which version to download, see [Is my PC running the 32-bit or 64-bit version of Windows?](https://support.microsoft.com/windows/32-bit-and-64-bit-windows-frequently-asked-questions-c6ca9541-8dce-4d48-0415-94a3faa2e13d).
 
-2. To get started, find a blank CD, DVD, or USB flash drive with at least 250 MB of free space, and then run the tool. You'll be guided through the steps to create the removable media.
+2. To get started, find a blank CD, DVD, or USB flash drive with at least 250 MB of free space, and then run the tool. You are guided through the steps to create the removable media.
 
     > [!TIP]
     > We recommend you to do the following when downloading Windows Defender Offline:
@@ -201,11 +201,11 @@ For more information, see [Windows Defender WMIv2 APIs](/previous-versions/windo
 
 3. Scan your PC for viruses and other malware.
 
-    1. Once you've created the USB drive, CD, or DVD, you'll need to remove it from your current computer and take it to the computer you want to scan. Insert the USB drive or disc into the other computer and restart the computer.
+    1. Once you've created the USB drive, CD, or DVD, remove it from your current computer and take it to the computer you want to scan. Insert the USB drive or disc into the other computer and restart the computer.
 
     2. Boot from the USB drive, CD, or DVD to run the scan. Depending on the computer's settings, it may automatically boot from the media after you restart it, or you may have to press a key to enter a "boot devices" menu or modify the boot order in the computer's UEFI firmware or BIOS.
 
-    3. Once you've booted from the device, you'll see a Microsoft Defender tool that will automatically scan your computer and remove malware. 
+    3. After you boot the device, you see a Microsoft Defender tool that will automatically scan your computer and remove malware. 
 
     4. After the scan is complete and you're done with the tool, you can reboot your computer and remove the Microsoft Defender Offline media to boot back into Windows.
 
