@@ -77,6 +77,28 @@ See [Admin Management of Loop workspaces](/microsoft-365/loop/loop-compliance-su
 
 Refer to [Loop access via Microsoft 365 subscriptions](https://support.microsoft.com/office/92915461-4b14-49a4-9cd4-d1c259292afa).
 
+## External sharing
+
+You can share Loop workspaces, pages, and components with users external to your company so they can collaborate with you. There are a few requirements that must be met for external sharing to be possible:
+
+- Your organization must allow sharing files with external users. Learn how to [manage this policy](/sharepoint/turn-external-sharing-on-or-off#change-the-organization-level-external-sharing-setting)
+- The user you are sharing with must have a guest account in your tenant or [Business-to-Business Invitiation Manager is enabled](/entra/external-id/what-is-b2b)
+- Your organization does not have sensitivity labels configured. Loop external sharing for companies with sensitivity labels configured will roll out once sensitivity labels for Loop workspaces, pages, and components are generally available
+
+Workspaces can only be shared with users that have an existing guest account in your tenant. If Business-to-business Invitation Manager is enabled, users can share a page or component with an external user to create a guest account for the user.
+
+If the above conditions are met, then you can share with external users by:
+
+1. Navigating to the Loop workspace or page you want to share (or, navigate to the Loop file within OneDrive)
+1. Open the share menu in the top right of the screen within Loop (or, open the share menu next to the file while viewing it within OneDrive)
+1. For pages within Loop workspaces, choose if you want to share the workspace or page
+1. Enter the user's email address you wish to share with
+1. Click "Send" or "Invite"
+
+Sharing with external participants is done through "Share with specific people" links. Company-wide share links will not work with external participants, you must designate the external user in the share dialog.
+
+When an external user accesses the Loop workspace, page, or component from the link, they will be signed into their guest account. They will need to utilize the share link again to access the Loop workspace, page, or component in the future, as it will not show up in their standard account.
+
 ## Related topics
 
 [Summary of governance, lifecycle and compliance capabilities](/microsoft-365/loop/loop-compliance-summary)
