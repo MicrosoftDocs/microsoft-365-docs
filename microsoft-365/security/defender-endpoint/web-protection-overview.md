@@ -180,7 +180,7 @@ Additionally, starting in Microsoft Edge 124, the following block page is shown 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/web-protection-indicators-new-block-page.jpg" alt-text="This website is blocked by your organization" lightbox="../../media/web-protection-indicators-new-block-page.jpg":::
 
-In any case, no block pages are shown in non-Microsoft browsers, and the user sees a "Secure Connection Failed' page along with a toast notification. Depending on the policy responsible for the block, a user will see a different message in the toast notification. For example, web content filtering will display the message 'This content is blocked'.
+In any case, no block pages are shown in non-Microsoft browsers, and the user sees a "Secure Connection Failed' page along with a toast notification. Depending on the policy responsible for the block, a user sees a different message in the toast notification. For example, web content filtering displays the message, "This content is blocked."
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/web-protection-np-block.jgp" alt-text="The page blocked by WCF" lightbox="../../media/web-protection-np-block.jpg":::
