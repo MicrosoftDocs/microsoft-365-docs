@@ -36,7 +36,7 @@ Devices in your organization must be configured so that the Defender for Endpoin
 
 In general, you identify the client you're onboarding, then follow the corresponding tool appropriate to the device or your environment.
 
-:::image type="content" source="images/onboarddevices.png" alt-text="Onboard devices" lightbox="images/onboarddevices.png":::
+:::image type="content" source="media/onboarddevices.png" alt-text="Onboard devices" lightbox="media/onboarddevices.png":::
 
 [!INCLUDE [Defender for Endpoint repackaging warning](../../includes/repackaging-warning.md)]
 
