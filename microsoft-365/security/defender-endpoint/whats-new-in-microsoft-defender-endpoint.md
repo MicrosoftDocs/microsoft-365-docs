@@ -6,7 +6,7 @@ ms.service: defender-endpoint
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
-ms.date: 03/11/2024
+ms.date: 04/01/2024
 manager: deniseb
 audience: ITPro
 ms.collection: 
@@ -56,6 +56,10 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 > (/api/search/rss?search=%22features+are+generally+available+%28GA%29+in+the+latest+release+of+Microsoft+Defender+for+Endpoint%22&locale=en-us&facet=)
 > 
 > (/api/search/rss?search=%22features+are+generally+available+%28GA%29+in+the+latest+release+of+Microsoft+Defender+for+Endpoint%22&locale=en-us&facet=)
+
+## (GA) March 2024
+
+**Built-in Scheduled scan for macOS**: For information on Scheduled Scan built-in for Microsoft Defender for Endpoint on macOS, see [How to schedule scans with Microsoft Defender for Endpoint on macOS](mac-schedule-scan.md)
 
 ## February 2024
 

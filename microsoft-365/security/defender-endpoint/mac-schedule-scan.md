@@ -28,12 +28,6 @@ search.appverid: met150
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-> [!IMPORTANT]
-> Some information relates to a pre-released product feature in public preview which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
-> [!NOTE] 
->The built-in Scheduled Scan is currently in public preview. Review the prerequisites carefully.
-
 ## Schedule a scan *built-in to* Microsoft Defender for Endpoint on macOS
 
 While you can start a threat scan at any time with Microsoft Defender for Endpoint, your enterprise might benefit from scheduled or timed scans. For example, you can schedule a scan to run at the beginning of every workday or week. 
