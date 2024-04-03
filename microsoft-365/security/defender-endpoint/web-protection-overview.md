@@ -6,7 +6,7 @@ ms.service: defender-endpoint
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
-ms.date: 12/16/2022
+ms.date: 04/03/2024
 manager: deniseb
 audience: ITPro
 ms.collection: 
@@ -108,16 +108,11 @@ Similarly, during a conflict between indicators, allows always take precedence o
 
 The table below summarizes some common configurations that would present conflicts within the web protection stack. It also identifies the resulting determinations based on the precedence listed above.
 
-<br>
-
-****
-
 |Custom Indicator policy|Web threat policy|WCF policy|Defender for Cloud Apps policy|Result|
 |---|---|---|---|---|
 |Allow|Block|Block|Block|Allow (Web protection override)|
 |Allow|Allow|Block|Block|Allow (WCF exception)|
 |Warn|Block|Block|Block|Warn (override)|
-|
 
 Internal IP addresses are not supported by custom indicators. For a warn policy when bypassed by the end user, the site will be unblocked for 24 hours for that user by default. This time frame can be modified by the Admin and is passed down by the SmartScreen cloud service. The ability to bypass a warning can also be disabled in Microsoft Edge using CSP for web threat blocks (malware/phishing). For more information, see [Microsoft Edge SmartScreen Settings](/DeployEdge/microsoft-edge-policies#smartscreen-settings-policies).
 
@@ -135,10 +130,6 @@ When the SmartScreen cloud service responds with an allow, block, or warn respon
 
 The table below shows the responses and their correlated features.
 
-<br>
-
-****
-
 |ResponseCategory|Feature responsible for the block|
 |---|---|
 |CustomPolicy|WCF|
@@ -146,7 +137,6 @@ The table below shows the responses and their correlated features.
 |CasbPolicy|Defender for Cloud Apps|
 |Malicious|Web threats|
 |Phishing|Web threats|
-|||
 
 ## Advanced hunting for web protection
 
@@ -192,7 +182,7 @@ Additionally, starting in Edge 124, the following block page will be shown for a
 In any case, no block pages are shown in third-party browsers, and the user sees a "Secure Connection Failed' page along with a toast notification. Depending on the policy responsible for the block, a user will see a different message in the toast notification. For example, web content filtering will display the message 'This content is blocked'.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="../../media/web-protection-np-block.png" alt-text="The page blocked by WCF" lightbox="../../media/web-protection-np-block.png":::
+> :::image type="content" source="../../media/web-protection-np-block.jgp" alt-text="The page blocked by WCF" lightbox="../../media/web-protection-np-block.jpg":::
 
 ## Report false positives
 
@@ -204,13 +194,9 @@ For more information on how to submit false positives/negatives, see [Address fa
 
 ## Related information
 
-<br>
-
-****
-
-|Topic|Description|
+|Article|Description|
 |---|---|
 |[Web threat protection](web-threat-protection.md) | Stop access to phishing sites, malware vectors, exploit sites, untrusted or low-reputation sites, and sites that you have blocked.|
 |[Web content filtering](web-content-filtering.md) | Track and regulate access to websites based on their content categories.|
-|
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
