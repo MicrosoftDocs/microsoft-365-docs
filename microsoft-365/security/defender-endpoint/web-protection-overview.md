@@ -151,7 +151,7 @@ DeviceEvents
 | where Experience == "CustomPolicy"
 ```
 
-Similarly, you can use the following query to list all WCF blocks originating from Network Protection (for example, a WCF block in a non-Microsoft browser). Note that the ActionType has been updated and 'Experience' has been changed to 'ResponseCategory'.
+Similarly, you can use the following query to list all WCF blocks originating from Network Protection (for example, a WCF block in a non-Microsoft browser). The `ActionType` is updated and `Experience` changed to `ResponseCategory`.
 
 ```kusto
 DeviceEvents
