@@ -14,7 +14,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: edr
 search.appverid: met150
-ms.date: 05/02/2023
+ms.date: 04/03/2024
 ---
 
 # Investigate entities on devices using live response
@@ -74,7 +74,7 @@ Before you can initiate a session on a device, make sure you fulfill the followi
 
 - **Enable live response from the advanced settings page**.
 
-  You'll need to enable the live response capability in the [Advanced features settings](advanced-features.md) page.
+  You need to enable the live response capability in the [Advanced features settings](advanced-features.md) page.
 
   > [!NOTE]
   > Only admins and users who have "Manage Portal Settings" permissions can enable live response.
@@ -92,11 +92,11 @@ Before you can initiate a session on a device, make sure you fulfill the followi
   > [!WARNING]
   > Allowing the use of unsigned scripts may increase your exposure to threats.
 
-  Running unsigned scripts is not recommended as it can increase your exposure to threats. If you must use them however, you'll need to enable the setting in the [Advanced features settings](advanced-features.md) page.
+  Running unsigned scripts isn't recommended as it can increase your exposure to threats. If you must use them however, you need to enable the setting in the [Advanced features settings](advanced-features.md) page.
 
 - **Ensure that you have the appropriate permissions**.
 
-  Only users who have been provisioned with the appropriate permissions can initiate a session. For more information on role assignments, see [Create and manage roles](user-roles.md).
+  Only users who are provisioned with the appropriate permissions can initiate a session. For more information on role assignments, see [Create and manage roles](user-roles.md).
 
   > [!IMPORTANT]
   > The option to upload a file to the library is only available to users with "Manage Security Settings" permission.
