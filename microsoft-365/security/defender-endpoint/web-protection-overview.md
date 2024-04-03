@@ -125,11 +125,11 @@ In all web protection scenarios, SmartScreen and Network Protection can be used 
 
 ## Troubleshoot endpoint blocks
 
-Responses from the SmartScreen cloud are standardized. Tools like Fiddler can be used to inspect the response from the cloud service, which will help determine the source of the block.
+Responses from the SmartScreen cloud are standardized. Tools like Fiddler can be used to inspect the response from the cloud service, which helps determine the source of the block.
 
 When the SmartScreen cloud service responds with an allow, block, or warn response, a response category and server context is relayed back to the client. In Microsoft Edge, the response category is what is used to determine the appropriate block page to show (malicious, phishing, organizational policy).
 
-The table below shows the responses and their correlated features.
+The following table shows the responses and their correlated features.
 
 |ResponseCategory|Feature responsible for the block|
 |---|---|
@@ -141,7 +141,7 @@ The table below shows the responses and their correlated features.
 
 ## Advanced hunting for web protection
 
-Kusto queries in advanced hunting can be used to summarize web protection blocks in your organization for up to 30 days. These queries use the information listed above to distinguish between the various sources of blocks and summarize them in a user-friendly manner. For example, the query below lists all WCF blocks originating from Microsoft Edge.
+Kusto queries in advanced hunting can be used to summarize web protection blocks in your organization for up to 30 days. These queries use the information listed above to distinguish between the various sources of blocks and summarize them in a user-friendly manner. For example, the following query lists all WCF blocks originating from Microsoft Edge.
 
 ```kusto
 DeviceEvents
@@ -151,7 +151,7 @@ DeviceEvents
 | where Experience == "CustomPolicy"
 ```
 
-Similarly, you can use the query below to list all WCF blocks originating from Network Protection (for example, a WCF block in a third-party browser). Note that the ActionType has been updated and 'Experience' has been changed to 'ResponseCategory'.
+Similarly, you can use the following query to list all WCF blocks originating from Network Protection (for example, a WCF block in a third-party browser). Note that the ActionType has been updated and 'Experience' has been changed to 'ResponseCategory'.
 
 ```kusto
 DeviceEvents
