@@ -112,7 +112,7 @@ To complete this process, you must have admin privileges on the device.
 
 11. To enable system extention, select **Details**.
 
-    :::image type="content" source="images/system-extention-image.png" alt-text="Screenshot that shows the system extention.":::
+    :::image type="content" source="media/system-extention-image.png" alt-text="Screenshot that shows the system extention.":::
 
 12. From the **Security & Privacy** window, select the checkboxes next to **Microsoft Defender** and select **OK**.
 
