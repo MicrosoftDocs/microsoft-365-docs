@@ -233,7 +233,7 @@ To use the procedures in this section, the \*.onmicrosoft.com domain must appear
 
 Proceed if the domain satisfies these requirements.
 
-1. In the Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Threat policies** \> **Email authentication settings** page. Or, to go directly to the **Email authentication settings** page, use <https://security.microsoft.com/authentication>.
+1. In the Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Email authentication settings** page. Or, to go directly to the **Email authentication settings** page, use <https://security.microsoft.com/authentication>.
 
 2. On the **Email authentication settings** page, select the **DKIM** tab.
 
@@ -415,7 +415,7 @@ To confirm the corresponding public key that's used to verify the DKIM signature
 
 ### Use the Defender portal to rotate DKIM keys for a custom domain
 
-1. In the Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Threat policies** \> **Email authentication settings** page. Or, to go directly to the **Email authentication settings** page, use <https://security.microsoft.com/authentication>.
+1. In the Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Email authentication settings** page. Or, to go directly to the **Email authentication settings** page, use <https://security.microsoft.com/authentication>.
 
 2. On the **Email authentication settings** page, select the **DKIM** tab.
 
@@ -493,7 +493,7 @@ When you disable DKIM signing using a custom domain, you aren't completely disab
 
 ### Use the Defender portal to disable DKIM signing of outbound messages using a custom domain
 
-1. In the Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Threat policies** \> **Email authentication settings** page. Or, to go directly to the **Email authentication settings** page, use <https://security.microsoft.com/authentication>.
+1. In the Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Email authentication settings** page. Or, to go directly to the **Email authentication settings** page, use <https://security.microsoft.com/authentication>.
 
 2. On the **Email authentication settings** page, select the **DKIM** tab.
 
