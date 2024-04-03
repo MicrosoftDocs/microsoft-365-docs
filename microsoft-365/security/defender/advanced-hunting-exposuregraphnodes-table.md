@@ -31,6 +31,9 @@ ms.date: 03/12/2024
 - Microsoft Defender XDR
 - Microsoft Security Exposure Management (public preview)
 
+> [!IMPORTANT]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
 The `ExposureGraphNodes` table in the [advanced hunting](advanced-hunting-overview.md) schema contains organizational entities and their properties. These include entities like devices, identities, user groups, and cloud assets such as virtual machines (VMs), storage, and containers. Each node corresponds to an individual entity and encapsulates information about its characteristics, attributes, and security related insights within the organizational structure. Use this reference to construct queries that return information from this table.
 
 For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).
@@ -40,9 +43,9 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `NodeId` | `string` | Unique node identifier |
 | `NodeLabel` | `string` | Node label |
 | `NodeName` |`string` | Node display name |
-| `Categories` |`Dynamic` | Categories of the node in JSON format |
-| `NodeProperties` |`Dynamic` | Properties of the node, including insights related to the resource, such as whether the resource is exposed to the internet, or vulnerable to remote code execution. Values are JSON formatted raw data (unstructured). |
-| `EntityIds` | `Dynamic` | All known node identifiers in JSON format |
+| `Categories` |`dynamic` | Categories of the node in JSON format |
+| `NodeProperties` |`dynamic` | Properties of the node, including insights related to the resource, such as whether the resource is exposed to the internet, or vulnerable to remote code execution. Values are JSON formatted raw data (unstructured). |
+| `EntityIds` | `dynamic` | All known node identifiers in JSON format |
 
 ## Related articles
 
