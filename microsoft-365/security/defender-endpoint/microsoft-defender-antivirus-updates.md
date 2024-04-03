@@ -108,19 +108,19 @@ All our updates contain
 
 #### What's new
 
-- Added manageability settings to opt-out for One Collector telemetry channel and Experimentation and Configuration Service (ECS) **pending public doc link @amir.
+- Added manageability settings to opt-out for One Collector telemetry channel and Experimentation and Configuration Service (ECS) **pending public doc link @amir**
 - Microsoft Defender Core Service will be disabled when 3rd party Antivirus is installed (except when Defender is running in Passive mode).
-- Performance optimization for file scanning TBC
-- Fixed regression introduced in [4.18.24020.7](#known-issues) where enforcement of device level access policies was not working as expected.
+- The known issue in [4.18.24020.7](#february-2024-engine-11240209--platform-418240207) where enforcement of device level access policies wasn't working as expected no longer occurs.
 - Fixed high CPU issue caused by redetection done during Sense originating scans.
 - Fixed Security Intelligence Update disk cleanup.
 - Fixed Signature up to date information on Security Health report.
-- Performed optimizations to on-close scan scenarios by mitigating performance penalties while updating a large amount of files.
-- Performance improvements when processing paths for exclusions.
-- Improvements to allow recovering from erroneously added Indicators of compromise (IoC).
-- Improved resilience in processing attack surface rules exclusions for Anti Malware Scan Interface (AMSI) scans.
-- Fixed high memory issue when MAPS is disabled related to Behavior Monitoring queue.
-- Fixed possible deadlock when receiving a Tamper protection configuration change from XDR Defender portal.
+- Introducted performance improvements when processing paths for exclusions.
+- Added improvements to allow recovering from erroneously added [Indicators of compromise (IoC)](manage-indicators.md).
+- Improved resilience in processing [attack surface rules](attack-surface-reduction.md) exclusions for Anti Malware Scan Interface (AMSI) scans.
+- Fixed a high memory issue related to the [Behavior Monitoring](behavior-monitor.md) queue that occured when MAPS is disabled.
+- A possible deadlock when receiving a [Tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) configuration change from the [Microsoft Defender portal](https://security.microsoft.com) no longer occurs.
+- **Performance optimization for file scanning - remove?**
+- **Performed optimizations to on-close scan scenarios by mitigating performance penalties while updating a large amount of files - remove?**
 
 ### February-2024 (Engine: 1.1.24020.9 | Platform: 4.18.24020.7)
 
