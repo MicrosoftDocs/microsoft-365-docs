@@ -30,7 +30,7 @@
   - name: Using projects
     href: using-projects.md
   - name: Using Microsoft Copilot in Defender for threat intelligence
-    href: using-copilot-threat-intelligence-defender-xdr.md
+    href: /defender/threat-intelligence/using-copilot-threat-intelligence-defender-xdr
 - name: Tutorials
   items:
   - name: Gathering threat intelligence and infrastructure chaining
