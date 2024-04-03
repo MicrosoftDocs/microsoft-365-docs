@@ -17,7 +17,7 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 05/11/2023
+ms.date: 04/03/2024
 ---
 
 # Device discovery overview
@@ -62,19 +62,18 @@ You can change and customize your discovery settings, for more information, see 
 > [!IMPORTANT]
 > Standard discovery is the default mode for all customers starting July 19, 2021. You can choose to change this configuration to basic through the settings page. If you choose basic mode, you'll only gain limited visibility of unmanaged endpoints in your network.
 
-> [!NOTE]
-> The discovery engine distinguishes between network events that are received in the corporate network versus outside of the corporate network. Devices that are not connected to corporate networks will not be discovered or listed in the device inventory.
+The discovery engine distinguishes between network events that are received in the corporate network versus outside of the corporate network. Devices that are not connected to corporate networks will not be discovered or listed in the device inventory.
 
 ## Device inventory
 
-Devices that have been discovered but haven't yet been onboarded and secured by Microsoft Defender for Endpoint are listed in the device inventory within the Computers and Mobile tab.
+Devices that were discovered but aren't onboarded to and secured by Microsoft Defender for Endpoint are listed in the device inventory.
 
-To assess these devices, you can use a filter in the device inventory list called Onboarding status, which can have any of the following values:
+To assess these devices, you can use a filter in the device inventory list called **Onboarding status**, which can have any of the following values:
 
-- Onboarded: The endpoint is onboarded to Microsoft Defender for Endpoint.
+- **Onboarded**: The endpoint is onboarded to Microsoft Defender for Endpoint.
 - Can be onboarded: The endpoint was discovered in the network and the Operating System was identified as one that is supported by Microsoft Defender for Endpoint, but it isn't currently onboarded. We highly recommend onboarding these devices.
-- Unsupported: The endpoint was discovered in the network but isn't supported by Microsoft Defender for Endpoint.
-- Insufficient info: The system couldn't determine the supportability of the device. Enabling standard discovery on more devices in the network can enrich the discovered attributes.
+- **Unsupported**: The endpoint was discovered in the network but isn't supported by Microsoft Defender for Endpoint.
+- **Insufficient info**: The system couldn't determine the supportability of the device. Enabling standard discovery on more devices in the network can enrich the discovered attributes.
 
 :::image type="content" source="media/2b62255cd3a9dd42f3219e437b956fb9.png" alt-text="The device inventory dashboard" lightbox="media/2b62255cd3a9dd42f3219e437b956fb9.png":::
 
@@ -156,4 +155,5 @@ DeviceNetworkEvents
 
 - [Configure device discovery](configure-device-discovery.md)
 - [Device discovery FAQs](device-discovery-faq.md)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
