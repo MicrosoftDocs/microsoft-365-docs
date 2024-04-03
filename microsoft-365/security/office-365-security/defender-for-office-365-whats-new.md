@@ -6,9 +6,9 @@ search.appverid: met150
 f1.keywords: NOCSH
 ms.author: chrisda
 author: chrisda
-ms.localizationpriority: medium
-ms.date: 3/12/2024
 manager: deniseb
+ms.localizationpriority: medium
+ms.date: 4/1/2024
 audience: ITPro
 ms.collection:
   - m365-security
@@ -19,7 +19,7 @@ ms.reviewer: vippand
 ms.subservice: mdo
 ms.service: microsoft-365-security
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 1 and Plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
@@ -30,6 +30,8 @@ appliesto:
 This article lists new features in the latest release of Microsoft Defender for Office 365. Features that are currently in preview are denoted with **(preview)**.
 
 Learn more by watching [this video](https://www.youtube.com/watch?v=Tdz6KfruDGo&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=3).
+
+To search the Microsoft 365 Roadmap for Defender for Office 365 features, use [this link](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=Microsoft%2CDefender%2Cfor%2COffice%2C365).
 
 For more information on what's new with other Microsoft Defender security products, see:
 
@@ -255,7 +257,7 @@ For more information on what's new with other Microsoft Defender security produc
 
 ## Microsoft Defender for Office 365 Plan 1 and Plan 2
 
-Did you know that Microsoft Defender for Office 365 is available in two plans? [Learn more about what each plan includes](defender-for-office-365.md#whats-the-difference-between-microsoft-defender-for-office-365-plan-1-and-plan-2).
+Did you know that Microsoft Defender for Office 365 is available in two plans? [Learn more about what each plan includes](mdo-about.md#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet).
 
 ## See also
 

@@ -90,7 +90,7 @@ Process Monitor (ProcMon) is an advanced monitoring tool that can show real-time
     1. Check the box beside **Unblock**.
     1. Select **Apply**.
 
-    :::image type="content" source="images/procmon-motw.png" alt-text="The Remove MOTW page" lightbox="images/procmon-motw.png":::
+    :::image type="content" source="media/procmon-motw.png" alt-text="The Remove MOTW page" lightbox="media/procmon-motw.png":::
 
 3. Unzip the file in `C:\temp` so that the folder path will be `C:\temp\ProcessMonitor`.
 
@@ -103,15 +103,15 @@ Process Monitor (ProcMon) is an advanced monitoring tool that can show real-time
 
         Since logging starts automatically, select the magnifying glass icon  to stop the current capture or use the keyboard shortcut **Ctrl+E**.
 
-        :::image type="content" source="images/procmon-magglass.png" alt-text="The magnifying glass icon" lightbox="images/procmon-magglass.png":::
+        :::image type="content" source="media/procmon-magglass.png" alt-text="The magnifying glass icon" lightbox="media/procmon-magglass.png":::
 
         To verify that you have stopped the capture, check if the magnifying glass icon now appears with a red X.
 
-        :::image type="content" source="images/procmon-magglass-stop.png" alt-text="The red slash" lightbox="images/procmon-magglass-stop.png":::
+        :::image type="content" source="media/procmon-magglass-stop.png" alt-text="The red slash" lightbox="media/procmon-magglass-stop.png":::
 
         Next, to clear the earlier capture, select the eraser icon.
 
-        :::image type="content" source="images/procmon-eraser-clear.png" alt-text="The clear icon" lightbox="images/procmon-eraser-clear.png":::
+        :::image type="content" source="media/procmon-eraser-clear.png" alt-text="The clear icon" lightbox="media/procmon-eraser-clear.png":::
 
         Or use the keyboard shortcut **Ctrl+X**.
 
@@ -126,11 +126,11 @@ Process Monitor (ProcMon) is an advanced monitoring tool that can show real-time
         > [!TIP]
         > Make the ProcMon window as small as possible when capturing data so you can easily start and stop the trace.
         >
-        > :::image type="content" source="images/procmon-minimize.png" alt-text="The page displaying a minimize Procmon" lightbox="images/procmon-minimize.png":::
+        > :::image type="content" source="media/procmon-minimize.png" alt-text="The page displaying a minimize Procmon" lightbox="media/procmon-minimize.png":::
 
 7. After following one of the procedures in step 6, you'll next see an option to set filters. Select **OK**. You can always filter the results after the capture is completed.
 
-   :::image type="content" source="images/procmon-filter-options.png" alt-text="The page on which System Exclude is chosen as the Filter out Process Name" lightbox="images/procmon-filter-options.png":::
+   :::image type="content" source="media/procmon-filter-options.png" alt-text="The page on which System Exclude is chosen as the Filter out Process Name" lightbox="media/procmon-filter-options.png":::
 
 8. To start the capture, select the magnifying glass icon again.
 
@@ -143,7 +143,7 @@ Process Monitor (ProcMon) is an advanced monitoring tool that can show real-time
 
 11. To save the capture with a unique name and with the .pml format, select **File** then select **Save...**. Make sure to select the radio buttons **All events** and **Native Process Monitor Format (PML)**.
 
-    :::image type="content" source="images/procmon-savesettings1.png" alt-text="The save settings page" lightbox="images/procmon-savesettings1.png":::
+    :::image type="content" source="media/procmon-savesettings1.png" alt-text="The save settings page" lightbox="media/procmon-savesettings1.png":::
 
 12. For better tracking, change the default path from `C:\temp\ProcessMonitor\LogFile.PML` to `C:\temp\ProcessMonitor\%ComputerName%_LogFile_MMDDYEAR_Repro_of_issue.PML` where:
     - `%ComputerName%` is the device name
