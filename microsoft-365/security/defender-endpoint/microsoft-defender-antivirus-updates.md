@@ -100,7 +100,7 @@ All our updates contain
 
 ### March-2024 (Engine: 1.1.24030.4 | Platform: coming soon)
 
-- Security intelligence update version: **1.407.46.0**
+- Security intelligence update version: **to be updated**
 - Release date: **April 3, 2024** (Engine) / **Coming soon** (Platform)
 - Engine: **1.1.24030.4**
 - Platform: **Coming soon**
@@ -116,7 +116,7 @@ All our updates contain
 - Fixed Signature up to date information on Security Health report.
 - Introducted performance improvements when processing paths for exclusions.
 - Added improvements to allow recovering from erroneously added [Indicators of compromise (IoC)](manage-indicators.md).
-- Improved resilience in processing [attack surface rules](attack-surface-reduction.md) exclusions for Anti Malware Scan Interface (AMSI) scans.
+- Improved resilience in processing [attack surface reduction](attack-surface-reduction.md) exclusions for Anti Malware Scan Interface (AMSI) scans.
 - Fixed a high memory issue related to the [Behavior Monitoring](behavior-monitor.md) queue that occured when MAPS is disabled.
 - A possible deadlock when receiving a [Tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) configuration change from the [Microsoft Defender portal](https://security.microsoft.com) no longer occurs.
 - **Performance optimization for file scanning - remove?**
