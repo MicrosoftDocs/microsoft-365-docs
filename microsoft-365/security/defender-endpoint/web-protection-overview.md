@@ -167,23 +167,15 @@ To list blocks that are due to other features (like Custom Indicators), refer to
 
 If a user visits a web page that poses a risk of malware, phishing, or other web threats, Microsoft Edge triggers a block page that reads, "This site has been reported as unsafe," along with information related to the threat.
 
-> [!div class="mx-imgBorder"]
-> :::image type="content" source="../../media/web-protection-malicious-block.png" alt-text="The page blocked by Microsoft Edge" lightbox="../../media/web-protection-malicious-block.png":::
-
 Beginning with Microsoft Edge 124, the following block page is shown for all Web Content Filtering category blocks.
 
-> [!div class="mx-imgBorder"]
-> :::image type="content" source="../../media/web-protection-wcf-new-block-page.jpg" alt-text="This content is blocked by your organization" lightbox="../../media/web-protection-wcf-new-block-page.jpg":::
+:::image type="content" source="media/web-protection-indicators-new-block-page.jpg" alt-text="Screenshot showing content blocked." lightbox="media/web-protection-indicators-new-block-page.jpg":::
 
-Additionally, starting in Microsoft Edge 124, the following block page is shown for all Custom Indicator blocks, including those created by Microsoft Defender for Cloud Apps.
-
-> [!div class="mx-imgBorder"]
-> :::image type="content" source="../../media/web-protection-indicators-new-block-page.jpg" alt-text="This website is blocked by your organization" lightbox="../../media/web-protection-indicators-new-block-page.jpg":::
+:::image type="content" source="media/web-protection-indicators-new-block-page.jpg" alt-text="Screenshot showing new block notification for a website." lightbox="media/web-protection-indicators-new-block-page.jpg":::
 
 In any case, no block pages are shown in non-Microsoft browsers, and the user sees a "Secure Connection Failed' page along with a toast notification. Depending on the policy responsible for the block, a user sees a different message in the toast notification. For example, web content filtering displays the message, "This content is blocked."
 
-> [!div class="mx-imgBorder"]
-> :::image type="content" source="../../media/web-protection-np-block.jgp" alt-text="The page blocked by WCF" lightbox="../../media/web-protection-np-block.jpg":::
+:::image type="content" source="../../media/web-protection-np-block.jgp" alt-text="The page blocked by WCF" lightbox="../../media/web-protection-np-block.jpg":::
 
 ## Report false positives
 
