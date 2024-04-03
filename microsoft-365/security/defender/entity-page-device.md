@@ -1,9 +1,7 @@
 ---
 title: Device entity page in Microsoft Defender
 description: The device entity page in the Microsoft Defender portal helps you in your investigation of device entities. The page has all the important information about each entity. If an alert or incident indicates that a device might be compromised or is behaving suspiciously, check and investigate the device entity.
-keywords: security, malware, Microsoft 365, M365, Microsoft Defender XDR, Microsoft Sentinel, security center, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Identity, device page, device profile,  machine page, machine profile
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.author: yelevin
 author: yelevin
@@ -12,10 +10,13 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
+- usx-security
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 03/20/2024
-appliesto: Microsoft Defender XDR and Microsoft Sentinel in the Microsoft Defender portal
+ms.date: 03/27/2024
+appliesto:
+    - Microsoft Defender XDR
+    - Microsoft Sentinel in the Microsoft Defender portal
 ---
 
 <!-- redirected from device-profile.md -->
@@ -32,6 +33,8 @@ The device entity page in the Microsoft Defender portal helps you in your invest
 > If your organization onboarded Microsoft Sentinel to the Defender portal, additional information will appear.
 > 
 > In Microsoft Sentinel, device entities are also known as **host** entities. [Learn more](/azure/sentinel/entities-reference).
+>
+> [!INCLUDE [unified-soc-preview-no-alert](../../includes/unified-soc-preview-no-alert.md)]
 
 Device entities can be found in the following areas:
 

@@ -1,11 +1,7 @@
 ---
 title: Automatic attack disruption in Microsoft Defender XDR
 description: Automatically contain assets controlled by attackers by using automatic attack disruption in Microsoft Defender XDR.
-keywords: attack, disruption, automatic, analyze, response, machines, devices, users, identities, mail, email, mailbox, investigation, graph, evidence
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: 
   - NOCSH
 ms.author: diannegali

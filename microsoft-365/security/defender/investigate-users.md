@@ -1,11 +1,9 @@
 ---
-title: User entity page in Microsoft Defender
-description: The user entity page in the Microsoft Defender portal helps you in your investigation of user entities. The page has all the important information about each entity. If an alert or incident indicates that a user might be compromised or is suspicious, check and investigate the user entity.
-keywords: security, malware, Microsoft 365, M365, Microsoft Defender XDR, Microsoft Sentinel, security center, monitor, report, identities, data, devices, apps, incident, analyze, response
+title: Investigate users in Microsoft Defender XDR
+description: Investigate users for an incident in the Microsoft Defender portal.
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-f1.keywords:
+f1.keywords: 
 - NOCSH
 ms.author: diannegali
 author: diannegali
@@ -14,16 +12,17 @@ audience: ITPro
 ms.collection:
   - m365-security
   - tier2
+  - usx-security
 ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
-ms.date: 03/20/2024
-appliesto: Microsoft Defender XDR and Microsoft Sentinel in the Microsoft Defender portal
+ms.date: 03/29/2024
+appliesto:
+    - Microsoft Defender XDR
+    - Microsoft Sentinel in the Microsoft Defender portal
 ---
 
 # User entity page in Microsoft Defender
-
-[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 The user entity page in the Microsoft Defender portal helps you in your investigation of user entities. The page contains all the important information about a given user entity. If an alert or incident indicates that a user might be compromised or is suspicious, check and investigate the user entity.
 
@@ -47,12 +46,12 @@ When you investigate a specific user entity, you see the following tabs on its e
 - [Overview](#overview), including entity details, incidents and alerts visual view, investigation priority, and scored timeline
 - [Incidents and alerts](#incidents-and-alerts) tab
 - [Observed in organization](#observed-in-organization) tab
-- [Tmeline](#timeline) tab
+- [Timeline](#timeline) tab
 - [Sentinel events](#sentinel-events) tab
 
-> [!NOTE]
-> The user page shows the Microsoft Entra organization as well as groups, helping you understand the groups and permissions associated with a user.
+The user page shows the Microsoft Entra organization as well as groups, helping you understand the groups and permissions associated with a user.
 
+[!INCLUDE [unified-soc-preview](../../includes/unified-soc-preview.md)]
 ## Overview
 
 ### Entity details

@@ -33,8 +33,6 @@ landingContent:
             url: mdo-about.md
           - text: Exchange Online Protection overview
             url: eop-about.md
-          - text: EOP & Defender for Office 365 security comparison
-            url: mdo-security-comparison.md
           - text: What's new in Defender for Office 365
             url: defender-for-office-365-whats-new.md
 
