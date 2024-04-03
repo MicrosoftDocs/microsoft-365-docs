@@ -108,7 +108,7 @@ Follow the below steps for setting up MDM configuration for enrolled devices for
 
 5. Add 'DefenderNetworkProtectionEnable' as the configuration key, value type as 'String' and value as 'true' to enable Network Protection. (Network protection is disabled by default.)
 
-   :::image type="content" source="images/np-mdmconfig-key.png" alt-text="Screenshot that shows the mdm configuration policy." lightbox="images/np-mdmconfig-key.png":::
+   :::image type="content" source="media/np-mdmconfig-key.png" alt-text="Screenshot that shows the mdm configuration policy." lightbox="media/np-mdmconfig-key.png":::
 
 6. For other configurations related to Network protection, add the following keys, choose the corresponding value type and value.
 
@@ -133,7 +133,7 @@ Follow the below steps for setting up MAM config for unenrolled devices for Netw
 
 2. Provide a name and description to uniquely identify the policy. Then select **Select Public apps**, and choose **Microsoft Defender for Platform iOS/iPadOS**.
 
-   :::image type="content" source="images/nameiosconfig.png" alt-text="Name the configuration." lightbox="images/nameiosconfig.png":::
+   :::image type="content" source="media/nameiosconfig.png" alt-text="Name the configuration." lightbox="media/nameiosconfig.png":::
 
 3. On the Settings page, add **DefenderNetworkProtectionEnable** as the key and the value as `true` to enable network protection. (Network protection is disabled by default.)
 

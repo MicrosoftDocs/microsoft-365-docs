@@ -43,7 +43,7 @@ Response actions run along the top of a specific device page and include:
 - Consult a threat expert
 - Action center
 
-[![Image of response actions.](images/response-actions.png)](images/response-actions.png#lightbox)
+[![Image of response actions.](media/response-actions.png)](media/response-actions.png#lightbox)
 
 > [!IMPORTANT]
 > [Defender for Endpoint Plan 1](defender-endpoint-plan-1.md) includes only the following manual response actions:
@@ -161,7 +161,7 @@ As part of the investigation or response process, you can remotely initiate an a
 
 One you have selected **Run antivirus scan**, select the scan type that you'd like to run (quick or full) and add a comment before confirming the scan.
 
-:::image type="content" source="images/run-antivirus.png" alt-text="The notification to select quick scan or full scan and add comment" lightbox="images/run-antivirus.png":::
+:::image type="content" source="media/run-antivirus.png" alt-text="The notification to select quick scan or full scan and add comment" lightbox="media/run-antivirus.png":::
 
 The Action center will show the scan information and the device timeline will include a new event, reflecting that a scan action was submitted on the device. Microsoft Defender Antivirus alerts will reflect any detections that surfaced during the scan.
 
@@ -187,7 +187,7 @@ To restrict an application from running, a code integrity policy is applied that
 
 Once you have selected **Restrict app execution** on the device page, type a comment and select **Confirm**. The Action center will show the scan information and the device timeline will include a new event.
 
-:::image type="content" source="images/restrict-app-execution.png" alt-text="The application restriction notification" lightbox="images/restrict-app-execution.png":::
+:::image type="content" source="media/restrict-app-execution.png" alt-text="The application restriction notification" lightbox="media/restrict-app-execution.png":::
 
 ### Notification on device user
 

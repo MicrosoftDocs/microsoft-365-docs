@@ -77,7 +77,7 @@ Tags are added to the device view and will also be reflected on the **Devices in
 
 You can also delete tags from this view.
 
-:::image type="content" source="images/new-tag-label-display.png" alt-text="Adding tags on device2" lightbox="images/new-tag-label-display.png":::
+:::image type="content" source="media/new-tag-label-display.png" alt-text="Adding tags on device2" lightbox="media/new-tag-label-display.png":::
 
 ## Add device tags using dynamic rules for device tagging
 

@@ -292,7 +292,7 @@ Below are more steps to verify whether attack surface reduction rules are correc
 
 3. Select **Go to attack surface management** in the Attack surface management panel.
 
-   :::image type="content" source="images/security-center-attack-surface-mgnt-tile.png" alt-text="The attack surface management" lightbox="images/security-center-attack-surface-mgnt-tile.png":::
+   :::image type="content" source="media/security-center-attack-surface-mgnt-tile.png" alt-text="The attack surface management" lightbox="media/security-center-attack-surface-mgnt-tile.png":::
 
 4. Select **Configuration** tab in Attack surface reduction rules reports. It shows attack surface reduction rules configuration overview and attack surface reduction rules status on each device.
 
