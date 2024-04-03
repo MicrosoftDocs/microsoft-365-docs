@@ -1,14 +1,9 @@
 ---
 title: ExposureGraphNodes table in the advanced hunting schema
 description: Learn about the ExposureGraphNodes table of the advanced hunting schema, which provides attack surface information, to help you understand how potential threats might reach, and compromise, valuable assets.
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft Defender XDR, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, ExposureGraphNodes, NodeId, NodeLabel, NodeName, NodeProperties, EntityIds
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
 ms.subservice: adv-hunting
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: 
   - NOCSH
 ms.author: v-mjosephy
