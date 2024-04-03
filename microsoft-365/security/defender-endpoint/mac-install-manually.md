@@ -116,7 +116,7 @@ To complete this process, you must have admin privileges on the device.
 
 12. From the **Security & Privacy** window, select the checkboxes next to **Microsoft Defender** and select **OK**.
 
-    :::image type="content" source="images/security-privacy-window-updated.png" alt-text="Screenshot that shows the security and privacy window.":::
+    :::image type="content" source="media/security-privacy-window-updated.png" alt-text="Screenshot that shows the security and privacy window.":::
 
 13. Repeat steps 11 and 12 for all system extensions distributed with Microsoft Defender for Endpoint on Mac.
 
