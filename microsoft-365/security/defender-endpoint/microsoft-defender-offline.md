@@ -3,7 +3,7 @@ title: Microsoft Defender Offline scan in Windows
 description: You can use Microsoft Defender Offline Scan straight from the Microsoft Defender Antivirus app. You can also manage how it's deployed in your network.
 ms.service: defender-endpoint
 ms.localizationpriority: medium
-ms.date: 08/30/2022
+ms.date: 04/03/2024
 author: siosulli
 ms.author: siosulli
 ms.custom: nextgen
@@ -32,9 +32,9 @@ search.appverid: met150
 |---|---|
 |**Platform**| Windows|
 |**Protection type** | Hardware|
-|**Firmware/ Rootkit**|  <li> Operating system <li> Driver <li> Memory (Heap) <li> Application <li> Identity <li> Cloud|
+|**Firmware/ Rootkit**|  Operating system <br/> Driver <br/> Memory (Heap) <br/> Application <br/> Identity <br/> Cloud|
 
->[!NOTE]
+> [NOTE]
 > The protection for this feature focuses on the Firmware/Rootkit.
 
 Microsoft Defender Offline is an anti-malware scanning tool that lets you boot and run a scan from a trusted environment. The scan runs from outside the normal Windows kernel so it can target malware that attempts to bypass the Windows shell, such as viruses and rootkits that infect or overwrite the master boot record (MBR).
@@ -57,7 +57,7 @@ The following are the hardware requirements for Microsoft Defender Offline Scan 
 > - ARM Windows 10 
 > - Windows Server Stock Keeping Units (SKU's)
 
-For more information about Windows 10 and Windows 11 requirements, see the following topics: 
+For more information about Windows 10 and Windows 11 requirements, see the following articles: 
 
 - [Minimum hardware requirements](/windows-hardware/design/minimum/minimum-hardware-requirements-overview)
 - [Hardware component guidelines](/windows-hardware/design/component-guidelines/components)
@@ -66,20 +66,24 @@ For more information about Windows 10 and Windows 11 requirements, see the follo
 
 To receive Microsoft Defender Offline Scan updates:
 
-- Microsoft Defender Antivirus must be primary AV (not in passive mode).
-- Update MDAV, with however you normally deploy updates to endpoints, a supported version of the: 
+- Microsoft Defender Antivirus must be your primary antivirus software (not in passive mode).
+
+- Update Microsoft Defender Antivirus how you normally deploy updates to endpoints. Use a supported version of the: 
+
   - [Platform Update](https://www.microsoft.com/security/portal/definitions/adl.aspx)
+
   - [Engine Update](microsoft-defender-antivirus-updates.md)
-  - Security Intelligence Update
+
+  - Security Intelligence Updates
     - You can manually download and install the latest protection updates from the [Microsoft Malware Protection Center](https://www.microsoft.com/security/portal/definitions/adl.aspx) 
-    - See the [Manage Microsoft Defender Antivirus Security intelligence updates](manage-protection-updates-microsoft-defender-antivirus.md) topic for more information.
-- User must be logged in with local administrator privileges.
+    - See the [Manage Microsoft Defender Antivirus Security intelligence updates](manage-protection-updates-microsoft-defender-antivirus.md) article for more information.
+
+- Users must be signed in with local administrator privileges.
+
 - Windows Recovery Environment (WinRE) needs to be enabled. 
 
->[!NOTE]
-> If WinRE is disabled, the WDO scan won't run and no error message is displayed.
-Nothing happens even if the machine is restarted manually. 
-> To fix this, you only have to enable WinRE. 
+> [!NOTE]
+> If WinRE is disabled, the Windows Defender Offline scan doesn't run and no error messages are displayed. Nothing happens even if the machine is restarted manually. To fix this, you only have to enable WinRE. 
 >
 > - To check the WinRE status, you can execute this command-line: `reagentc /info`.
 > - If the status is Disabled, you can enable it by executing this command-line: `reagentc /enable`.
@@ -88,13 +92,11 @@ Nothing happens even if the machine is restarted manually.
 
 The need to run Microsoft Defender Offline Scan:
 
-If Microsoft Defender Antivirus determines that need to run:
+If Microsoft Defender Antivirus determines that you need to run Microsoft Defender Offline, it prompts the user on the device. The prompt can occur via a notification, similar to the following:
 
-- It prompts the user on the endpoint. The prompt can occur via a notification, similar to the following:
+   :::image type="content" source="../../media/notification.png" alt-text="Notification to run Microsoft Defender Offline" lightbox="../../media/notification.png":::
 
-     :::image type="content" source="../../media/notification.png" alt-text="Notification to run Microsoft Defender Offline" lightbox="../../media/notification.png":::
-
-     The user will also be notified within the Microsoft Defender Antivirus client or it can be revealed in Microsoft Intune, if you're using it to manage your Windows endpoints.
+   The user is also notified within the Microsoft Defender Antivirus client. If you're using Intune to manage devices, you can see the notification in Intune.
 
 - You can manually force an offline scan which is built-in Windows 10, version 1607 or newer, and Windows 11. Or, you can scan through a bootable media for the older Windows OS'es as described [here](#use-the-windows-defender-security-app-to-run-an-offline-scan).
 
@@ -128,30 +130,29 @@ Starting with Windows 10, version 1607 or newer, and Windows 11, Microsoft Defen
 > [!NOTE]
 > In Windows 10, version 1607, the offline scan can be run from **Windows Settings > Update & security > Windows Defender** or from the Windows Defender client.
 
-1. Open the Windows Security app:
-   - In the Start menu, select **App apps**, then select **Windows Security**, or
-   - In the Start menu, select **Settings**, then select **Privacy & security**, and then select **Windows Security**, or
-   - In the Search, search for **Windows Security**, or
-   - In the task bar, select the hidden icons (chevron icon pointing up), click the Microsoft Defender Antivirus Shield icon.
-2. Select **Scan options**.
-3. Select the radio button **Microsoft Defender Offline scan** and click **Scan now**.
-   > [!NOTE]
-   > The process starts from C:\ProgramData\Microsoft\Windows Defender\Offline Scanner.
-4. You'll get a prompt to save your work before continuing, similar to the following image:
+1. On your Windows device, open the Windows Security app, and then **Scan options**.
+
+2. Select the radio button **Microsoft Defender Offline scan** and click **Scan now**.
+
+   The process starts from `C:\ProgramData\Microsoft\Windows Defender\Offline Scanner`.
+
+3. You get a prompt to save your work before continuing, similar to the following image:
    
     :::image type="content" source="../../media/defender-offline-save-work.png" alt-text="Screenshot of screen prompt to save all work before continuing.":::
    
     After you saved your work, select **Scan**.
-5. Once you clicked on **Scan**, you'll get another prompt requesting your permission to make changes to your device, similar to the following image:
+
+4. After you have selected **Scan**, you get another prompt requesting your permission to make changes to your device, similar to the following image:
 
     :::image type="content" source="../../media/defender-offline-apply-change.png" alt-text="Screenshot of a screen prompt requesting permission to apply.":::
     
      Select **Yes**.
-6. Another prompt will appear informing you that you'll be signed out and windows will shut down in less than a minute, similar to the following image:
+
+5. Another prompt appears and informs you that you'll be signed out and Windows will shut down in less than a minute, similar to the following image:
 
     :::image type="content" source="../../media/defender-offline-sign-out-notification.png" alt-text="Screenshot of a screen prompt informing about the sign out.":::
 
-7. You'll see that the Microsoft Defender Antivirus scan (offline scan) is in progress.
+6. You see that the Microsoft Defender Antivirus scan (offline scan) is in progress.
     
     :::image type="content" source="../../media/defender-offline-antivirus-run.png" alt-text="Screenshot of the Microsoft Defender Antivirus scan.":::
     
@@ -188,6 +189,7 @@ For more information, see [Windows Defender WMIv2 APIs](/previous-versions/windo
      - [Download the 32-bit version (msstool32.exe)](https://go.microsoft.com/fwlink/?LinkID=234123)
 
     If you're not sure which version to download, see [Is my PC running the 32-bit or 64-bit version of Windows?](https://support.microsoft.com/windows/32-bit-and-64-bit-windows-frequently-asked-questions-c6ca9541-8dce-4d48-0415-94a3faa2e13d).
+
 2. To get started, find a blank CD, DVD, or USB flash drive with at least 250 MB of free space, and then run the tool. You'll be guided through the steps to create the removable media.
 
     > [!TIP]
@@ -200,12 +202,16 @@ For more information, see [Windows Defender WMIv2 APIs](/previous-versions/windo
 3. Scan your PC for viruses and other malware.
 
     1. Once you've created the USB drive, CD, or DVD, you'll need to remove it from your current computer and take it to the computer you want to scan. Insert the USB drive or disc into the other computer and restart the computer.
+
     2. Boot from the USB drive, CD, or DVD to run the scan. Depending on the computer's settings, it may automatically boot from the media after you restart it, or you may have to press a key to enter a "boot devices" menu or modify the boot order in the computer's UEFI firmware or BIOS.
+
     3. Once you've booted from the device, you'll see a Microsoft Defender tool that will automatically scan your computer and remove malware. 
+
     4. After the scan is complete and you're done with the tool, you can reboot your computer and remove the Microsoft Defender Offline media to boot back into Windows.
+
 4. Remove any malware that's found from your PC.
 
-    1. If you experience a Stop error on a blue screen when you run the offline scan, restart your device and try running a Microsoft Defender Offline scan again. If the blue-screen error happens again, contact [Microsoft Support](https://support.microsoft.com/).
+   If you experience a Stop error on a blue screen when you run the offline scan, restart your device and try running a Microsoft Defender Offline scan again. If the blue-screen error happens again, contact [Microsoft Support](https://support.microsoft.com/).
 
 ### Where can I find the scan results?
 
@@ -230,13 +236,13 @@ On older versions than Windows 10, 2004, you'll see:
 
 Windows Defender Antivirus downloaded and configured Windows Defender Offline to run on the next reboot.
 
-- Log Name: Microsoft-Windows-Windows Defender/Operational
-- Source: Microsoft-Windows-Windows Defender
-- Event ID: 5007
-- Level: Information
-- Description: Microsoft Defender Antivirus Configuration has changed. If this is an unexpected event, you should review the settings as this may be the result of malware.
-- Old value: N/A\Scan\OfflineScanRun =
-- New value: HKLM\SOFTWARE\Microsoft\Windows Defender\Scan\OfflineScanRun = 0x0
+- Log Name: `Microsoft-Windows-Windows Defender/Operational`
+- Source: `Microsoft-Windows-Windows Defender`
+- Event ID: `5007`
+- Level: `Information`
+- Description: `Microsoft Defender Antivirus Configuration has changed. If this is an unexpected event, you should review the settings as this may be the result of malware.`
+- Old value: `N/A\Scan\OfflineScanRun =`
+- New value: `HKLM\SOFTWARE\Microsoft\Windows Defender\Scan\OfflineScanRun = 0x0`
 
 ## Related articles
 
