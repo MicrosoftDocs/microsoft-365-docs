@@ -8,7 +8,7 @@ ms.author: chrisda
 author: chrisda
 manager: deniseb
 ms.localizationpriority: medium
-ms.date: 4/1/2024
+ms.date: 4/3/2024
 audience: ITPro
 ms.collection:
   - m365-security
@@ -42,7 +42,7 @@ For more information on what's new with other Microsoft Defender security produc
 
 ## April 2024
 
-- **Enhanced clarity in submissions results**: Administrators and security operators will now see enhanced results within submissions across emails, Microsoft Teams messages, email attachments, URLs, and user-reported messages. These updates aim to eliminate any ambiguity associated with the current submission results. The results will be refined to ensure clarity, consistency, and conciseness, making the submission results more actionable for you. [Learn more](submissions-admin.md).
+- **Enhanced clarity in submissions results**: Admins and security operators now see enhanced results within submissions across email, Microsoft Teams messages, email attachments, URLs, and user-reported messages. These updates aim to eliminate any ambiguity associated with the current submission results. The results are refined to ensure clarity, consistency, and conciseness, making the submission results more actionable for you. [Learn more](submissions-admin.md).
 
 ## March 2024
 
