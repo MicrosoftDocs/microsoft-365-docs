@@ -75,7 +75,7 @@ For more information, see [remediation actions](m365d-remediation-actions.md) in
 
 ### Automated response actions for SAP with Microsoft Sentinel (Preview)
 
-If you're using the [unified SOC platform](microsoft-sentinel-onboard.md) and also deployed the Microsoft Sentinel solution for SAP applications, you can also deploy automatic attack disruption for SAP.
+If you're using the [unified security operations platform](microsoft-sentinel-onboard.md) and also deployed the Microsoft Sentinel solution for SAP applications, you can also deploy automatic attack disruption for SAP.
 
 For example, deploy attack disruption for SAP to contain compromised assets by locking suspicious SAP users in case of a financial process manipulation attack. 
 
