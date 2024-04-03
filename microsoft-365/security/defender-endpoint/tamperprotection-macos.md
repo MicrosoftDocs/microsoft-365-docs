@@ -63,7 +63,7 @@ When tamper protection is set to audit or block mode, you can expect the followi
 
 Here's an example of a system message in response to a blocked action:
 
-![Screenshot of operation blocked message.](images/operation-blocked.png)
+![Screenshot of operation blocked message.](media/operation-blocked.png)
 
 You can configure the tamper protection mode by providing the mode name as enforcement-level.
 
