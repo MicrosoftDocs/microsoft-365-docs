@@ -32,7 +32,7 @@ As part of onboarding to Office 365 DoD, you need to add your SMTP and SIP domai
 
 [!INCLUDE [Azure AD PowerShell deprecation note](~/../microsoft-365/reusable-content/msgraph-powershell/includes/aad-powershell-deprecation-note.md)]
 
-Once you have your domains added to your tenant and validated, use the following guidance to add the appropriate DNS records for the services below. You may need to modify the below table to fit your organization’s needs with respect to the inbound MX record(s) and any existing Exchange Autodiscover records you have in place. We strongly recommend coordinating these DNS records with your messaging team to avoid any outages or mis-delivery of email.
+Once you have your domains added to your tenant and validated, use the following guidance to add the appropriate DNS records for the services. You may need to modify the below table to fit your organization’s needs with respect to the inbound MX records and any existing Exchange Autodiscover records you have in place. We strongly recommend coordinating these DNS records with your messaging team to avoid any outages or mis-delivery of email.
 
 ## Exchange Online
 

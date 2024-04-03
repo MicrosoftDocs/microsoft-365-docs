@@ -32,7 +32,7 @@ As part of onboarding to Office 365 GCC High, you need to add your SMTP and SIP 
 
 [!INCLUDE [Azure AD PowerShell deprecation note](~/../microsoft-365/reusable-content/msgraph-powershell/includes/aad-powershell-deprecation-note.md)]
 
-Once you have your domains added to your tenant and validated, use the following guidance to add the appropriate DNS records for the services. You may need to modify the below table to fit your organization’s needs with respect to the inbound MX record(s) and any existing Exchange Autodiscover records you have in place. We strongly recommend coordinating these DNS records with your messaging team to avoid any outages or mis-delivery of email.
+Once you have your domains added to your tenant and validated, use the following guidance to add the appropriate DNS records for the services. You may need to modify the below table to fit your organization’s needs with respect to the inbound MX records and any existing Exchange Autodiscover records you have in place. We strongly recommend coordinating these DNS records with your messaging team to avoid any outages or mis-delivery of email.
 
 ## Exchange Online
 
@@ -48,7 +48,7 @@ If you have Exchange Server on-premises, we recommend leaving your existing reco
 
 ### Exchange Online MX Record
 
-The MX record value for your accepted domains follows a standard format as noted above: *tenant*.mail.protection.office365.us, replacing *tenant* with the first part of your default tenant name.
+The MX record value for your accepted domains follows a standard format as noted previously: *tenant*.mail.protection.office365.us, replacing *tenant* with the first part of your default tenant name.
 
 For example, if your tenant name is contoso.onmicrosoft.us, you’d use **contoso.mail.protection.office365.us** as the value for your MX record.
 
