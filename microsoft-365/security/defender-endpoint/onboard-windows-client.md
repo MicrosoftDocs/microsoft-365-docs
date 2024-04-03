@@ -1,6 +1,6 @@
 ---
 title: Defender for Endpoint onboarding Windows Client
-description: Onboard Windows Client.
+description: Onboard Windows Client devices to Microsoft Defender for Endpoint.
 ms.service: defender-endpoint
 ms.author: siosulli
 author: siosulli
