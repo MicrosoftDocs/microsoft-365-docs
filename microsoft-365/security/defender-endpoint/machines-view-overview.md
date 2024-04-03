@@ -82,7 +82,6 @@ Use the **Onboarding Status** column to sort and filter by discovered devices, a
 :::image type="content" alt-text="Image of devices list with list of devices." source="media/device-inventory.png" lightbox="media/device-inventory.png":::
 
 From the **Network devices** and **IoT devices** tabs, you'll also see information such as vendor, model, and device type:
-From the **Network devices** and **IoT devices** tabs, you'll also see information such as vendor, model, and device type:
 
 :::image type="content" alt-text="Image of network devices list." source="media/device-inventory-networkdevices.png" lightbox="media/device-inventory-networkdevices.png":::
 
