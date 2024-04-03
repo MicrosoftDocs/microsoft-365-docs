@@ -40,7 +40,7 @@ We recommend that you include setting the user's Preferred Data Location as a pa
 
 ## Setting Preferred Data Location (PDL) for cloud only users
 
-If your company's users are not synchronized from an on-premises Active Directory system to Microsoft Entra ID, meaning they are created in Microsoft 365 or Microsoft Entra ID, then the PDL must be set using the Microsoft Azure Active Directory module for Windows PowerShell.
+If your company's users aren't synchronized from an on-premises Active Directory system to Microsoft Entra ID, meaning they're created in Microsoft 365 or Microsoft Entra ID, then the PDL must be set using the Microsoft Azure Active Directory module for Windows PowerShell.
 
 The procedures in this section require the <a href="https://www.powershellgallery.com/packages/MSOnline/1.1.166.0" target="_blank">Microsoft Azure Active Directory Module for Windows PowerShell Module</a>. If you already have this module installed, please ensure you update to the latest version.
 
@@ -67,9 +67,9 @@ We recommend that you include setting the user's Preferred Data Location as a pa
 
 ## OneDrive for Business Provisioning and the effect of PDL
 
-If the user already has a OneDrive for Business site created in the _Tenant_, setting their PDL will not automatically move their existing OneDrive. To move a user's OneDrive, see [OneDrive for Business Geo Move](move-onedrive-between-geo-locations.md).
+If the user already has a OneDrive for Business site created in the _Tenant_, setting their PDL doesn't automatically move their existing OneDrive. To move a user's OneDrive, see [OneDrive for Business Geo Move](move-onedrive-between-geo-locations.md).
 
 > [!NOTE]
 > Exchange Online automatically relocates the user's mailbox if the PDL changes and the MailboxRegion no longer matches the Mailbox Database Geo Location code. For more information, see [Administering Exchange Online mailboxes in a multi-geo environment](administering-exchange-online-multi-geo.md).
 
-If the user does not have a OneDrive for Business site within the _Tenant_, OneDrive for Business will be provisioned for them in accordance to their PDL value, assuming the PDL for the user matches one of the company's satellite locations.
+If the user doesn't have a OneDrive for Business site within the _Tenant_, OneDrive for Business is provisioned for them in accordance to their PDL value, assuming the PDL for the user matches one of the company's satellite locations.

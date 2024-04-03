@@ -30,7 +30,7 @@ description: "Summary: Use PowerShell for Microsoft 365 to add an alternate doma
 
 You can create and associate new domains with your customer's tenancy with PowerShell for Microsoft 365 faster than using the Microsoft 365 admin center.
 
-Delegated Access Permission (DAP) partners are Syndication and Cloud Solution Providers (CSP) Partners. They are frequently network or telecom providers to other companies. They bundle Microsoft 365 subscriptions into their service offerings to their customers. When they sell a Microsoft 365 subscription, they are automatically granted Administer On Behalf Of (AOBO) permissions to the customer tenancies so they can administer and report on the customer tenancies.
+Delegated Access Permission (DAP) partners are Syndication and Cloud Solution Providers (CSP) Partners. They're frequently network or telecom providers to other companies. They bundle Microsoft 365 subscriptions into their service offerings to their customers. When they sell a Microsoft 365 subscription, they're automatically granted Administer On Behalf Of (AOBO) permissions to the customer tenancies so they can administer and report on the customer tenancies.
 ## What do you need to know before you begin?
 
 The procedures in this topic require you to connect to [Connect to Microsoft 365 with PowerShell](connect-to-microsoft-365-powershell.md).
@@ -45,7 +45,7 @@ You also need the following information:
 
 - The FQDN must be registered with an Internet domain name service (DNS) registrar, such as GoDaddy. For more information on how to publicly register a domain name, see [How to buy a domain name](../admin/get-help-with-domains/buy-a-domain-name.md).
 
-- You need to know how to add a TXT record to the registered DNS zone for your DNS registrar. For more information on how to add a TXT record, see [Add DNS records to connect your domain](../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md). If those procedures don't work for you, you will need to find the procedures for your DNS registrar.
+- You need to know how to add a TXT record to the registered DNS zone for your DNS registrar. For more information on how to add a TXT record, see [Add DNS records to connect your domain](../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md). If those procedures don't work for you, you need to find the procedures for your DNS registrar.
 
 ## Create domains
 
@@ -58,7 +58,7 @@ You also need the following information:
 
 ### Create the domain in Microsoft Entra ID
 
-This command creates the domain in Microsoft Entra ID but does not associate it with the publicly registered domain. That comes when you prove that you own the publicly registered domain to Microsoft 365 for enterprises.
+This command creates the domain in Microsoft Entra ID but doesn't associate it with the publicly registered domain. That comes when you prove that you own the publicly registered domain to Microsoft 365 for enterprises.
 
 [!INCLUDE [Azure AD PowerShell deprecation note](~/../microsoft-365/reusable-content/msgraph-powershell/includes/aad-powershell-deprecation-note.md)]
 
@@ -71,13 +71,13 @@ New-MsolDomain -TenantId <customer TenantId> -Name <FQDN of new domain>
 
 ### Get the data for the DNS TXT verification record
 
- Microsoft 365 will generate the specific data that you need to place into the DNS TXT verification record. To get the data, run this command.
+ Microsoft 365 generates the specific data that you need to place into the DNS TXT verification record. To get the data, run this command.
 
 ```powershell
 Get-MsolDomainVerificationDNS -TenantId <customer TenantId> -DomainName <FQDN of new domain> -Mode DnsTxtRecord
 ```
 
-This will give you output like:
+This command gives you output like:
 
  `Label: domainname.com`
 
@@ -90,7 +90,7 @@ This will give you output like:
 
 ### Add a TXT record to the publically registered DNS zone
 
-Before Microsoft 365 will start accepting traffic that is directed to the publicly registered domain name, you must prove that you own and have administrator permissions to the domain. You prove you own the domain by creating a TXT record in the domain. A TXT record doesn't do anything in your domain, and it can be deleted after your ownership of the domain is established. To create the TXT records, follow the procedures at [Add DNS records to connect your domain](../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md). If those procedures don't work for you , you need to find the procedures for your DNS registrar.
+Before Microsoft 365 starts accepting traffic that is directed to the publicly registered domain name, you must prove that you own and have administrator permissions to the domain. You prove you own the domain by creating a TXT record in the domain. A TXT record doesn't do anything in your domain, and it can be deleted after your ownership of the domain is established. To create the TXT records, follow the procedures at [Add DNS records to connect your domain](../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md). If those procedures don't work for you, you need to find the procedures for your DNS registrar.
 
 Confirm the successful creation of the TXT record via nslookup. Follow this syntax.
 
@@ -98,7 +98,7 @@ Confirm the successful creation of the TXT record via nslookup. Follow this synt
 nslookup -type=TXT <FQDN of registered domain>
 ```
 
-This will give you output like:
+This command gives you output like:
 
  `Non-authoritative answer:`
 
@@ -114,13 +114,13 @@ In this last step, you validate to Microsoft 365 that you own the publically reg
 Confirm-MsolDomain -TenantId <customer TenantId> -DomainName <FQDN of new domain>
 ```
 
-This command won't return any output, so to confirm that this worked, run this command.
+This command doesn't return any output, so to confirm that the command worked, run this command.
 
 ```powershell
 Get-MsolDomain -TenantId <customer TenantId> -DomainName <FQDN of new domain>
 ```
 
-This will return something like this
+This returns something like this:
 
 ```console
 Name                   Status      Authentication
