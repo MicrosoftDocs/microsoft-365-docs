@@ -98,6 +98,30 @@ All our updates contain
 - Serviceability improvements
 - Integration improvements (Cloud, [Microsoft Defender XDR](/microsoft-365/security/defender/microsoft-365-defender))
 
+### March-2024 (Engine: 1.1.24030.4 | Platform: coming soon)
+
+- Security intelligence update version: **1.407.46.0**
+- Release date: **April 3, 2024** (Engine) / **coming soon** (Platform)
+- Engine: **1.1.24030.4**
+- Platform: **coming soon**
+- Support phase: **Security and Critical Updates**
+
+#### What's new
+
+- Added manageability settings to opt-out for One Collector telemetry channel and Experimentation and Configuration Service (ECS) **pending public doc link @amir.
+- Microsoft Defender Core Service will be disabled when 3rd party Antivirus is installed (except when Defender is running in Passive mode).
+- Performance optimization for file scanning TBC
+- Fixed regression introduced in [4.18.24020.7](#known-issues) where enforcement of device level access policies was not working as expected.
+- Fixed high CPU issue caused by redetection done during Sense originating scans.
+- Fixed Security Intelligence Update disk cleanup.
+- Fixed Signature up to date information on Security Health report
+- Performed optimizations to on-close scan scenarios by mitigating performance penalties while updating a large amount of files
+- Performance improvements when processing paths for exclusions.
+- Improvements to allow recovering from erroneously added Indicators of compromise (IoC)
+- Improved resilience in processing ASR exclusions for AMSI scans
+- Fixed high memory issue when MAPS is disabled related to Behavior Monitoring queue.
+- Fixed possible deadlock when receiving a Tamper protection configuration change from XDR Defender portal.
+
 ### February-2024 (Engine: 1.1.24020.9 | Platform: 4.18.24020.7)
 
 - Security intelligence update version: **1.407.46.0**
