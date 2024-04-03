@@ -17,7 +17,7 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - met150
-ms.date: 04/05/2023
+ms.date: 04/03/2024
 ---
 
 # Alert classification for suspicious email forwarding activity
