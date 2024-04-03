@@ -68,7 +68,7 @@ The following table lists some examples of exclusions based on file extension an
 
 ## Important notes about exclusions based on file extensions and folder locations
 
-- Using wildcards such as the asterisk (\*) alters how exclusion rules are interpreted. See the [Use wildcards in the file name and folder path or extension exclusion lists](#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) section for important information about how wildcards work.
+- Using wildcards such as the asterisk (\*) alters how exclusion rules are interpreted. See the section, [Use wildcards in the file name and folder path or extension exclusion lists](#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) for important information about how wildcards work.
 
 - Don't exclude mapped network drives. Specify the actual network path.
 
