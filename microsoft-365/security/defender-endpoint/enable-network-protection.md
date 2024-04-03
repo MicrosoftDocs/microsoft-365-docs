@@ -87,7 +87,7 @@ Enable network protection by using any of these methods:
     Set-MpPreference -EnableNetworkProtection AuditMode
     ```
 
-    To turn the feature off, use `Disabled` instead of `AuditMode` or `Enabled`.
+    To turn off the feature, use `Disabled` instead of `AuditMode` or `Enabled`.
 
 ### Mobile device management (MDM)
 
@@ -99,22 +99,36 @@ Use the [./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](/windows/
 
 #### Microsoft Defender for Endpoint Baseline method
 
-1. Sign into the Microsoft Intune admin center (https://endpoint.microsoft.com).
+1. Sign into the [Microsoft Intune admin center](https://endpoint.microsoft.com).
+
 2. Go to **Endpoint security** > **Security baselines** > **Microsoft Defender for Endpoint Baseline**.
+
 3. Select **Create a profile**, then provide a name for your profile, and then select **Next**.
-4. In the **Configuration settings** section, go to **Attack Surface Reduction Rules** > set **Block**, **Enable** or **Audit** for **Enable network protection**. Select **Next**.
+
+4. In the **Configuration settings** section, go to **Attack Surface Reduction Rules** > set **Block**, **Enable**, or **Audit** for **Enable network protection**. Select **Next**.
+
 5. Select the appropriate **Scope tags** and **Assignments** as required by your organization.
+
 7. Review all the information, and then select **Create**.
 
 #### Antivirus policy method
-1. Sign into the Microsoft Intune admin center (https://endpoint.microsoft.com).
-2. Go to **Endpoint security** > **Antivirus**
-3. Select **Create a policy**
+
+1. Sign into the [Microsoft Intune admin center](https://endpoint.microsoft.com).
+
+2. Go to **Endpoint security** > **Antivirus**.
+
+3. Select **Create a policy**.
+
 4. In the **Create a policy** flyout, choose **Windows 10, Windows 11, and Windows Server** from the **Platform** list.
-5. Choose **Microsoft Defender Antivirus** from the **Profile** list then choose **Create**
+
+5. Choose **Microsoft Defender Antivirus** from the **Profile** list then choose **Create**.
+
 6. Provide a name for your profile, and then select **Next**.
+
 7. In the **Configuration settings** section, select **Disabled**, **Enabled (block mode)** or **Enabled (audit mode)** for **Enable Network Protection**, then select **Next**.
+
 8. Select the appropriate **Assignments** and **Scope tags** as required by your organization.
+
 9. Review all the information, and then select **Create**.
 
 #### Configuration profile method
@@ -153,6 +167,7 @@ Use the following procedure to enable network protection on domain-joined comput
    > On older versions of Windows, the group policy path may say "Windows Defender Antivirus" instead of "Microsoft Defender Antivirus."
 
 4. Double-click the **Prevent users and apps from accessing dangerous websites** setting and set the option to **Enabled**. In the options section, you must specify one of the following options:
+
     - **Block** - Users can't access malicious IP addresses and domains.
     - **Disable (Default)** - The Network protection feature won't work. Users won't be blocked from accessing malicious domains.
     - **Audit Mode** - If a user visits a malicious IP address or domain, an event will be recorded in the Windows event log. However, the user won't be blocked from visiting the address.
@@ -175,6 +190,7 @@ Use the following procedure to enable network protection on domain-joined comput
 4. On the **General** page, specify a name for the new policy and verify the **Network protection** option is enabled.
 
 5. On the **Network protection** page, select one of the following settings for the **Configure network protection** option:
+
    - **Block**
    - **Audit**
    - **Disabled**
@@ -215,4 +231,6 @@ Use the following procedure to enable network protection on domain-joined comput
 - [Evaluate network protection](evaluate-network-protection.md)
 
 - [Troubleshoot network protection](troubleshoot-np.md)
+
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
