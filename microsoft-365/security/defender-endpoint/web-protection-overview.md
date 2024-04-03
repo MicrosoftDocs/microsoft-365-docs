@@ -161,7 +161,7 @@ DeviceEvents
 | where ResponseCategory == "CustomPolicy"
 ```
 
-To list blocks that are due to other features (like Custom Indicators), refer to the table above outlining each feature and their respective response category. These queries may also be modified to search for telemetry related to specific machines in your organization. Note that the ActionType shown in each query above will show only those connections that were blocked by a Web Protection feature, and not all network traffic.
+To list blocks that are due to other features (like Custom Indicators), refer to the table above outlining each feature and their respective response category. These queries may also be modified to search for telemetry related to specific machines in your organization. The ActionType shown in each query shows only those connections that were blocked by a Web Protection feature, and not all network traffic.
 
 ## User experience
 
