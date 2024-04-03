@@ -292,7 +292,7 @@ If you're using System Center 2012 R2 Configuration Manager, monitoring consists
 
     If there are failed deployments (devices with **Error**, **Requirements Not Met**, or **Failed statuses**), you may need to  troubleshoot the devices. For more information, see, [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md).
 
-    :::image type="content" source="images/sccm-deployment.png" alt-text="The Configuration Manager showing successful deployment with no errors" lightbox="images/sccm-deployment.png":::
+    :::image type="content" source="media/sccm-deployment.png" alt-text="The Configuration Manager showing successful deployment with no errors" lightbox="media/sccm-deployment.png":::
 
 ### Check that the devices are compliant with the Microsoft Defender for Endpoint service
 
