@@ -89,13 +89,13 @@ You can copy an entity's details when you see a blue icon on the right. For inst
 
 You can do the same for command lines.
 
-:::image type="content" source="images/techniques-side-pane-command-1.png" alt-text="Screenshot that shows the option to copy command line." lightbox="images/techniques-side-pane-command-1.png":::
+:::image type="content" source="media/techniques-side-pane-command-1.png" alt-text="Screenshot that shows the option to copy command line." lightbox="media/techniques-side-pane-command-1.png":::
 
 ### Investigate related events
 
 To use [advanced hunting](advanced-hunting-overview.md) to find events related to the selected Technique, select **Hunt for related events**. This leads to the advanced hunting page with a query to find events related to the Technique.
 
-:::image type="content" source="images/techniques-hunt-for-related-events-1.png" alt-text="Screenshot that shows the Hunt for related events option." lightbox="images/techniques-hunt-for-related-events-1.png":::
+:::image type="content" source="media/techniques-hunt-for-related-events-1.png" alt-text="Screenshot that shows the Hunt for related events option." lightbox="media/techniques-hunt-for-related-events-1.png":::
 
 > [!NOTE]
 > Querying using the **Hunt for related events** button from a Technique side pane displays all the events related to the identified technique but does not include the Technique itself in the query results.

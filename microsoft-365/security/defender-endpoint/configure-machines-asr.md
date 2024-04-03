@@ -43,7 +43,7 @@ The *Attack surface management card* is an entry point to tools in <a href="http
 
 Select **Go to attack surface management** \> **Reports** \> **Attack surface reduction rules** \> **Add exclusions**. From there, you can navigate to other sections of Microsoft Defender portal.
 
-:::image type="content" source="images/secconmgmt_asr_m365exlusions.png" alt-text="Add exclusions tab in the Attack surface reduction rules page in the Microsoft Defender portal" lightbox="images/secconmgmt_asr_m365exlusions.png":::
+:::image type="content" source="media/secconmgmt_asr_m365exlusions.png" alt-text="Add exclusions tab in the Attack surface reduction rules page in the Microsoft Defender portal" lightbox="media/secconmgmt_asr_m365exlusions.png":::
 
 > *The **Add exclusions** tab in the Attack surface reduction rules page in Microsoft Defender portal*
 
