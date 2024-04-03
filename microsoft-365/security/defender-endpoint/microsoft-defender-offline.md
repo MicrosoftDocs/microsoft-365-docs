@@ -98,7 +98,7 @@ If Microsoft Defender Antivirus determines that you need to run Microsoft Defend
 
    The user is also notified within the Microsoft Defender Antivirus client. If you're using Intune to manage devices, you can see the notification in Intune.
 
-- You can manually force an offline scan which is built-in Windows 10, version 1607 or newer, and Windows 11. Or, you can scan through a bootable media for the older Windows OS'es as described [here](#use-the-windows-defender-security-app-to-run-an-offline-scan).
+- You can manually force an offline scan that is built-in Windows 10, version 1607 or newer, and Windows 11. Or, you can scan through a bootable media for the older Windows OS'es as described [here](#use-the-windows-defender-security-app-to-run-an-offline-scan).
 
 In Configuration Manager, you can identify the status of endpoints by navigating to **Monitoring > Overview > Security > Endpoint Protection Status > System Center Endpoint Protection Status**.
 
@@ -117,7 +117,7 @@ For more information about notifications in Windows Defender, see [Configure the
 > [!IMPORTANT]
 > Before you use Microsoft Defender Offline Scan, **make sure you save any files** and shut down running programs. The Microsoft Defender Offline scan takes about 15 minutes to run. It will restart the endpoint when the scan is complete. The scan is performed outside of the usual Windows operating environment. The user interface will appear different to a normal scan performed by Windows Defender. After the scan is completed, the endpoint will be restarted and Windows will load normally.
 
-You can run a Microsoft Defender Offline scan with the following:
+You can run a Microsoft Defender Offline scan with the following methods:
 
 - The Windows Security app
 - PowerShell
@@ -132,7 +132,7 @@ Starting with Windows 10, version 1607 or newer, and Windows 11, Microsoft Defen
 
 1. On your Windows device, open the Windows Security app, and then **Scan options**.
 
-2. Select the radio button **Microsoft Defender Offline scan** and click **Scan now**.
+2. Select the radio button **Microsoft Defender Offline scan** and select **Scan now**.
 
    The process starts from `C:\ProgramData\Microsoft\Windows Defender\Offline Scanner`.
 
@@ -142,7 +142,7 @@ Starting with Windows 10, version 1607 or newer, and Windows 11, Microsoft Defen
    
     After you saved your work, select **Scan**.
 
-4. After you have selected **Scan**, you get another prompt requesting your permission to make changes to your device, similar to the following image:
+4. After you select **Scan**, you get another prompt requesting your permission to make changes to your device, similar to the following image:
 
     :::image type="content" source="../../media/defender-offline-apply-change.png" alt-text="Screenshot of a screen prompt requesting permission to apply.":::
     
