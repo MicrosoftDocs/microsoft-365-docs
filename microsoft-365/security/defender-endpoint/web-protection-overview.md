@@ -77,7 +77,7 @@ Web content filtering includes **Web activity by category**, **Web content filte
 
 Web content filtering includes:
 
-- Users are prevented from accessing websites in blocked categories, whether they are browsing on-premises or away.
+- Users are prevented from accessing websites in blocked categories, whether they're browsing on-premises or away.
 - You can conveniently deploy varied policies to various sets of users using the device groups defined in the [Microsoft Defender for Endpoint role-based access control settings](/microsoft-365/security/defender-endpoint/rbac).
     > [!NOTE]
     > Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
@@ -105,9 +105,9 @@ Web protection is made up of the following components, listed in order of preced
 
 The order of precedence relates to the order of operations by which a URL or IP is evaluated. For example, if you have a web content filtering policy you can create exclusions through custom IP/URL indicators. Custom Indicators of compromise (IoC) are higher in the order of precedence than WCF blocks.
 
-Similarly, during a conflict between indicators, allows always take precedence over blocks (override logic). That means that an allow indicator will win over any block indicator that is present.
+Similarly, during a conflict between indicators, allows always take precedence over blocks (override logic). That means that an allow indicator takes precedence over any block indicator that is present.
 
-The table below summarizes some common configurations that would present conflicts within the web protection stack. It also identifies the resulting determinations based on the precedence listed above.
+The following table summarizes some common configurations that would present conflicts within the web protection stack. It also identifies the resulting determinations based on the precedence listed above.
 
 |Custom Indicator policy|Web threat policy|WCF policy|Defender for Cloud Apps policy|Result|
 |---|---|---|---|---|
