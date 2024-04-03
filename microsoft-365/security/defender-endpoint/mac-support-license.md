@@ -115,7 +115,7 @@ If the file exists, it will prevent the macOS from being onboarded again.  Delet
 
    The following screen appears:
 
-   :::image type="content" source="images/screen-containing-option-to-assign-licenses.png" alt-text="Screenshot of the page containing the + Assign licenses option." lightbox="images/screen-containing-option-to-assign-licenses.png":::
+   :::image type="content" source="media/screen-containing-option-to-assign-licenses.png" alt-text="Screenshot of the page containing the + Assign licenses option." lightbox="media/screen-containing-option-to-assign-licenses.png":::
 
 6. Select **+ Assign licenses**.
 
