@@ -53,14 +53,16 @@ Advanced deployment guides are accessible from the [Advanced deployment guides &
 > You must be assigned an admin role such as _Global Reader_ to access advanced deployment guides in the Microsoft 365 admin center. Only admins with the _Global Administrator_ role can use the guides to change settings in the tenant.
 
 > [!IMPORTANT]
-> Any selections, task assignments, and progress status saved **before January 10, 2023** within each advanced deployment guide in the admin center has been reset due to EU data regulations.
+> Any selections, task assignments, and progress status saved **before January 10, 2023** within each advanced deployment guide in the admin center were reset due to EU data regulations.
 
 To reach the **Advanced deployment guides & assistance** page:
 
 1. In the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/?linkid=2224913), go to the **Home** page.
 
-2. Find the _Training, guides & assistance_ card and click **Advanced deployment guides & assistance**.
+2. Find the _Training, guides & assistance_ card and select **Advanced deployment guides & assistance**.
 
+3. If you don’t see that card, access the page directly at (https://aka.ms/advanceddeploymentguides).
+   
    :::image type="content" alt-text="This screenshot shows the training & guides card in the Microsoft 365 admin center." source="../media/setup-guides-for-microsoft-365/thumbnail_ADG-TrainingCard.png":::
 
 ## Guides for initial setup
