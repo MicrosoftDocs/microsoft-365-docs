@@ -72,7 +72,7 @@ If you have been assigned other roles, ensure you have the necessary permissions
 - Read permissions to device compliance policies
 - Read permissions to the organization
 
-:::image type="content" source="images/secconmgmt_intune_permissions.png" alt-text="The required permissions on intune" lightbox="images/secconmgmt_intune_permissions.png":::
+:::image type="content" source="media/secconmgmt_intune_permissions.png" alt-text="The required permissions on intune" lightbox="media/secconmgmt_intune_permissions.png":::
 
 *Device configuration permissions on Intune*
 
