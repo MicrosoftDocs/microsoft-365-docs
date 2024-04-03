@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 author: siosulli
 ms.author: siosulli
 ms.topic: conceptual
-ms.date: 05/24/2023
+ms.date: 04/03/2024
 manager: deniseb
 ms.custom: nextgen
 ms.collection: 
@@ -110,7 +110,8 @@ For the most current settings, get the latest ADMX files in your central store. 
 
 1. Open **Local Group Policy Editor**.
 
-   1. In your Windows 10 or Windows 11 taskbar search box, type **gpedit**.
+   1. In your Windows 10 or Windows 11 taskbar search box, type `gpedit`.
+
    2. Under **Best match**, select **Edit group policy** to launch **Local Group Policy Editor**.
 
 2. In the left pane of **Local Group Policy Editor**, expand the tree to **Computer Configuration** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **Real-time Protection**.
@@ -136,4 +137,5 @@ If you're looking for antivirus-related information for other platforms, see:
 - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
 - [Configure Defender for Endpoint on Android features](android-configure.md)
 - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
