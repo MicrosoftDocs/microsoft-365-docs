@@ -63,7 +63,7 @@ Defender for Endpoint uses the following combination of technology built into Wi
 <td><center><a href="#ngp"><img src="media/ngp-icon.png" alt="Next-generation protection"><br> <b>Next-generation protection</b></a></center></td>
 <td><center><a href="#edr"><img src="media/edr-icon.png" alt="Endpoint detection and response"><br> <b>Endpoint detection and response</b></a></center></td>
 <td><center><a href="#ai"><img src="media/air-icon.png" alt="Automated investigation and remediation"><br> <b>Automated investigation and remediation</b></a></center></td>
-<td><center><a href="#mte"><img src="images/mte-icon.png" alt="Microsoft Threat Experts"><br> <b>Microsoft Threat Experts</b></a></center></td>
+<td><center><a href="#mte"><img src="media/mte-icon.png" alt="Microsoft Threat Experts"><br> <b>Microsoft Threat Experts</b></a></center></td>
 </tr>
 <tr>
 <td colspan="7">
