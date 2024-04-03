@@ -78,7 +78,7 @@ or newer.
 1. Go to the [Microsoft Defender XDR portal](https://security.microsoft.com/), and sign in.
 2. Navigate to the device page you would like to turn on troubleshooting mode. Then, select the ellipses(...) and select **Turn on troubleshooting mode**.  
 
-   :::image type="content" source="images/troubleshooting-mode-on-mac.png" alt-text="Screenshot displaying the screenshot of the troubleshooting mode on mac.":::
+   :::image type="content" source="media/troubleshooting-mode-on-mac.png" alt-text="Screenshot displaying the screenshot of the troubleshooting mode on mac.":::
 
    > [!NOTE]
    > The **Turn on troubleshooting mode** option is available on all devices, even if the device does not meet the prerequisites for troubleshooting mode.

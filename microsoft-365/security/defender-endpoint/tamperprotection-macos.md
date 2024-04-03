@@ -264,7 +264,7 @@ Check the tamper protection status by running the following command:
 
 The result shows "block" if tamper protection is on:
 
-![Image of tamper protection in block mode](images/tp-block-mode.png)
+![Image of tamper protection in block mode](media/tp-block-mode.png)
 
 You can also run full `mdatp health` and look for the "tamper_protection" in the output.
 

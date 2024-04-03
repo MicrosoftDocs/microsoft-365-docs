@@ -56,7 +56,7 @@ Download the installation and onboarding packages from Microsoft Defender portal
 5. From a command prompt, verify that you have the two files.
     - Type *cd Downloads* and press **Enter**.
     - Type *ls* and press **Enter**.
-     :::image type="content" source="images/Terminal-image-step5.png" alt-text="Screenshot that displays the two download files.":::
+     :::image type="content" source="media/Terminal-image-step5.png" alt-text="Screenshot that displays the two download files.":::
 6. Copy the *wdav.pkg* and *MicrosoftDefenderATPOnboardingMacOs.sh* to the device where you want to deploy the Microsoft Defender for Endpoint on macOS.
 
 ## Application installation (macOS 11 and newer versions)

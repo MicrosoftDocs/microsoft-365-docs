@@ -77,7 +77,7 @@ Logo|Partner name|Description
 :---|:---|:---
 ![Logo for MISP Malware Information Sharing Platform)logo.](media/misp-logo.png)|[MISP (Malware Information Sharing Platform)](https://go.microsoft.com/fwlink/?linkid=2127543)|Integrate threat indicators from the Open Source Threat Intelligence Sharing Platform into your Defender for Endpoint environment
 ![Logo for Palo Alto Networks.](media/paloalto-logo.png)|[Palo Alto Networks](https://go.microsoft.com/fwlink/?linkid=2099582)|Enrich your endpoint protection by extending Autofocus and other threat feeds to Defender for Endpoint using MineMeld
-![Logo for ThreatConnect.](images/threatconnect-logo.png)|[ThreatConnect](https://go.microsoft.com/fwlink/?linkid=2114115)|Alert and/or block on custom threat intelligence from ThreatConnect Playbooks using Defender for Endpoint indicators
+![Logo for ThreatConnect.](media/threatconnect-logo.png)|[ThreatConnect](https://go.microsoft.com/fwlink/?linkid=2114115)|Alert and/or block on custom threat intelligence from ThreatConnect Playbooks using Defender for Endpoint indicators
 
 ### Network security
 
