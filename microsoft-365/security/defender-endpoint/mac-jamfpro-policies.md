@@ -616,11 +616,11 @@ Alternatively, you can download [fulldisk.mobileconfig](https://github.com/micro
     - Distribution Method: Install Automatically
     - Level: Computer Level
 
-    :::image type="content" source="images/sysext-new-profile.png" alt-text="The configuration settings sysext new profile." lightbox="images/sysext-new-profile.png":::
+    :::image type="content" source="media/sysext-new-profile.png" alt-text="The configuration settings sysext new profile." lightbox="media/sysext-new-profile.png":::
 
 3. In **System Extensions** select **Configure**.
 
-   :::image type="content" source="images/sysext-configure.png" alt-text="The pane with the Configure option for the system extensions." lightbox="images/sysext-configure.png":::
+   :::image type="content" source="media/sysext-configure.png" alt-text="The pane with the Configure option for the system extensions." lightbox="media/sysext-configure.png":::
 
 4. In **System Extensions**, enter the following details:
 
@@ -631,7 +631,7 @@ Alternatively, you can download [fulldisk.mobileconfig](https://github.com/micro
      - **com.microsoft.wdav.epsext**
      - **com.microsoft.wdav.netext**
 
-    :::image type="content" source="images/sysext-configure2.png" alt-text="The MDATP MDAV system extensions pane." lightbox="images/sysext-configure2.png":::
+    :::image type="content" source="media/sysext-configure2.png" alt-text="The MDATP MDAV system extensions pane." lightbox="media/sysext-configure2.png":::
 
 5. Select the **Scope** tab.
 
@@ -647,11 +647,11 @@ Alternatively, you can download [fulldisk.mobileconfig](https://github.com/micro
 
 9. Select **Save**.
 
-   :::image type="content" source="images/sysext-scope.png" alt-text="The display of options regarding MDATP MDAV System Extensions." lightbox="images/sysext-scope.png":::
+   :::image type="content" source="media/sysext-scope.png" alt-text="The display of options regarding MDATP MDAV System Extensions." lightbox="media/sysext-scope.png":::
 
 10. Select **Done**.
 
-    :::image type="content" source="images/sysext-final.png" alt-text="The configuration settings sysext - final." lightbox="images/sysext-final.png":::
+    :::image type="content" source="media/sysext-final.png" alt-text="The configuration settings sysext - final." lightbox="media/sysext-final.png":::
 
 ## Step 8: Configure Network Extension
 

@@ -47,7 +47,7 @@ When you investigate a specific device, you see:
 - Tabs (overview, alerts, timeline, security recommendations, software inventory, discovered vulnerabilities, missing KBs)
 - Cards (active alerts, logged on users, security assessment, device health status)
 
-:::image type="content" source="images/specific-device.png" alt-text="The device view" lightbox="images/specific-device.png":::
+:::image type="content" source="media/specific-device.png" alt-text="The device view" lightbox="media/specific-device.png":::
 
 > [!NOTE]
 > Due to product constrains, the device profile does not consider all cyber evidence when determining the 'Last Seen' timeframe (as seen on the device page as well).
