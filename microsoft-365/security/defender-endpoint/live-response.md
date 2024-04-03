@@ -147,26 +147,26 @@ The following commands are available for user roles that are granted the ability
 
 | Command  | Description  | Windows and Windows Server  | macOS  | Linux  |
 |---|---|---|---|---|
-| cd  | Changes the current directory.  | Y  | Y  | Y  |
-| cls  | Clears the console screen.  | Y  | Y  | Y  |
-| connect  | Initiates a live response session to the device.  | Y  | Y  | Y  |
-| connections  | Shows all the active connections.  | Y  | N  | N  |
-| dir  | Shows a list of files and subdirectories in a directory.  | Y  | Y  | Y  |
-| drivers  | Shows all drivers installed on the device.  | Y  | N  | N  |
-| fg `<command ID>`  | Place the specified job in the foreground, making it the current job.  NOTE: fg takes a 'command ID` available from jobs, not a PID.  | Y  | Y  | Y  |
-| fileinfo  | Get information about a file.  | Y  | Y  | Y  |
-| findfile  | Locates files by a given name on the device.  | Y  | Y  | Y  |
-| getfile <file_path>  | Downloads a file.  | Y  | Y  | Y  |
-| help  | Provides help information for live response commands.  | Y  | Y  | Y  |
-| jobs  | Shows currently running jobs, their ID and status.  | Y  | Y  | Y  |
-| persistence  | Shows all known persistence methods on the device.  | Y  | N  | N  |
-| processes  | Shows all processes running on the device.  | Y  | Y  | Y  |
-| registry  | Shows registry values.  | Y  | N  | N  |
-| scheduledtasks  | Shows all scheduled tasks on the device.  | Y  | N  | N  |
-| services  | Shows all services on the device.  | Y  | N  | N  |
-| startupfolders  | Shows all known files in startup folders on the device.  | Y  | N  | N  |
-| status  | Shows the status and output of specific command.  | Y  | Y  | Y  |
-| trace  | Sets the terminal's logging mode to debug.  | Y  | Y  | Y  |
+| `cd`  | Changes the current directory.  | Y  | Y  | Y  |
+| `cls`  | Clears the console screen.  | Y  | Y  | Y  |
+| `connect`  | Initiates a live response session to the device.  | Y  | Y  | Y  |
+| `connections`  | Shows all the active connections.  | Y  | N  | N  |
+| `dir`  | Shows a list of files and subdirectories in a directory.  | Y  | Y  | Y  |
+| `drivers`  | Shows all drivers installed on the device.  | Y  | N  | N  |
+| `fg <command ID>`  | Place the specified job in the foreground, making it the current job.  Note that `fg` takes a `command ID` available from jobs, not a PID.  | Y  | Y  | Y  |
+| `fileinfo`  | Get information about a file.  | Y  | Y  | Y  |
+| `findfile`  | Locates files by a given name on the device.  | Y  | Y  | Y  |
+| `getfile <file_path>`  | Downloads a file.  | Y  | Y  | Y  |
+| `help`  | Provides help information for live response commands.  | Y  | Y  | Y  |
+| `jobs`  | Shows currently running jobs, their ID and status.  | Y  | Y  | Y  |
+| `persistence`  | Shows all known persistence methods on the device.  | Y  | N  | N  |
+| `processes`  | Shows all processes running on the device.  | Y  | Y  | Y  |
+| `registry`  | Shows registry values.  | Y  | N  | N  |
+| `scheduledtasks`  | Shows all scheduled tasks on the device.  | Y  | N  | N  |
+| `services`  | Shows all services on the device.  | Y  | N  | N  |
+| `startupfolders`  | Shows all known files in startup folders on the device.  | Y  | N  | N  |
+| `status`  | Shows the status and output of specific command.  | Y  | Y  | Y  |
+| `trace`  | Sets the terminal's logging mode to debug.  | Y  | Y  | Y  |
 
 ### Advanced commands
 
