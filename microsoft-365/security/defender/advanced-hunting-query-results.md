@@ -133,8 +133,7 @@ You can also right-click on any result value in a row so that you can use it to 
 
 Furthermore, for JSON and array fields, you can right-click and update the existing query to include or exclude the field, or to extend the field to a new column.
 
-
-:::image type="content" source="../../media/advanced-hunting-query-results-json-right.png" alt-text="Screenshot of options upon right-clicking an option" lightbox="../../media/advanced-hunting-query-results-json-right.png":::
+:::image type="content" source="../../media/advanced-hunting-query-results-json-right.png" alt-text="Screenshot of options upon right-clicking an option for JSON and array fields" lightbox="../../media/advanced-hunting-query-results-json-right.png":::
 
 
 To quickly inspect a record in your query results, select the corresponding row to open the **Inspect record** panel. The panel provides the following information based on the selected record:
