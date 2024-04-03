@@ -44,8 +44,15 @@ Then, after you're all set up, you can view and manage containment actions in In
 |Deployment requirements|<ul><li>Deployment across Defender products (e.g., Defender for Endpoint, Defender for Office 365, Defender for Identity, and Defender for Cloud Apps)</li><ul><li>The wider the deployment, the greater the protection coverage is. For example, if a Microsoft Defender for Cloud Apps signal is used in a certain detection, then this product is required to detect the relevant specific attack scenario.</li><li>Similarly, the relevant product should be deployed to execute an automated response action. For example, Microsoft Defender for Endpoint is required to automatically contain a device. </li></ul><li>Microsoft Defender for Endpoint's device discovery is set to 'standard discovery'</li></ul>|
 |Permissions|To configure automatic attack disruption capabilities, you must have one of the following roles assigned in either Microsoft Entra ID (<https://portal.azure.com>) or in the Microsoft 365 admin center (<https://admin.microsoft.com>): <ul><li>Global Administrator</li><li>Security Administrator</li></ul>To work with automated investigation and response capabilities, such as by reviewing, approving, or rejecting pending actions, see [Required permissions for Action center tasks](m365d-action-center.md#required-permissions-for-action-center-tasks).|
 
-## Review or change the automation level for device groups
+## Microsoft Defender for Endpoint Prerequisites
 
+### Minimum Sense Client version (MDE client)
+
+The Minimum Sense Agent version required is v10.8470 which is required for the “Contain User” action to work. You can identify the Sense Agent version on a device by running the following powershell command: 
+
+`Get-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Advanced Threat Protection\' -Name "InstallLocation"`   
+
+### Automation setting for your organizations devices.
 Whether automated investigations run, and whether remediation actions are taken automatically or only upon approval for your devices depend on certain settings, like your organization's device group policies. Review the configured automation level for your device group policies. You must be a global administrator or security administrator to perform the following procedure:
 
 1. Go to the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
@@ -54,8 +61,60 @@ Whether automated investigations run, and whether remediation actions are taken 
 
 3. Review your device group policies. Look at the **Automation level** column. We recommend using **Full - remediate threats automatically**.  You might need to create or edit your device groups to get the level of automation you want. To exclude a device group from automated containment, set its automation level to **no automated response**. Note that this is not highly recommended and should only be done for a limited number of devices.
 
+### Device Discovery configuration
+
+Device Discovery settings must be enabled to "Standard Discovery" at a minimum. Follow the [documentation](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/configure-device-discovery?view=o365-worldwide#set-up-device-discovery) to learn how to configure Device Discovery 
+
 >[!NOTE]
 >Attack disruption can act on devices independent of a device's Microsoft Defender Antivirus operating state. The operating state can be in Active, Passive, or EDR Block Mode.
+
+## Microsoft Defender for Identity Prerequisites
+
+### Enable auditing in Domain Controllers
+
+Follow the [documentation](https://learn.microsoft.com/en-us/defender-for-identity/deploy/configure-windows-event-collection) to ensure that required audit events are configured on the domain controllers where the Defender for Identity sensor is deployed. 
+
+### Configure action accounts
+
+Defender for Identity allows you to take remediation actions targeting on-premises Active Directory accounts in the event that an identity is compromised. To take these actions, Microsoft Defender for Identity needs to have the required permissions to do so. By default, the Microsoft Defender for Identity sensor impersonates the LocalSystem account of the domain controller and performs the actions, but since the default can be changed, you should validate that Microsoft Defender for Identity has the required permissions.
+
+You can find more info on the action accounts in the [documentation](https://learn.microsoft.com/en-us/defender-for-identity/deploy/manage-action-accounts)
+
+The Defender for Identity sensor needs to be deployed on the domain controller  where the Active Directory account is to be disabled.
+
+>[!NOTE]
+>If you have automations in place to disable/enable user, check if they could interfere with Disruption. For example, if there is an automation in place to regularly check and enforce that all active employees have enabled accounts, this could unintentionally re-enable accounts that were disabled by attack disruption while an attack is detected. 
+
+## Microsoft Defender for Cloud Apps prerequisites
+
+### Microsoft Office 365 Connector 
+
+The Microsoft Office 365 Connector must be enabled in Microsoft Defender for Cloud Apps. Refer to the [documentation](https://learn.microsoft.com/en-us/defender-cloud-apps/protect-office-365#connect-microsoft-365-to-microsoft-defender-for-cloud-apps) to learn how to enable the connector. 
+
+### App Governance
+
+App Governance must be turned on. Refer to the app governance [documentation](https://learn.microsoft.com/en-us/defender-cloud-apps/app-governance-get-started) to learn how to turn it on. 
+
+
+## Microsoft Defender for Office 365 prerequisites
+
+### Mailboxes location
+
+Mailboxes are required to be hosted in Exchange Online
+
+### Mailbox Audit Logging
+
+The following mailbox events need to be audited by minimum:
+- MailItemsAccessed
+- UpdateInboxRules
+- MoveToDeletedItems
+- SoftDelete
+- HardDelete
+
+Review the [documentation](https://learn.microsoft.com/en-us/purview/audit-mailboxes) to learn about managing mailbox auditing 
+
+### Safelinks policy needs to be present.
+
 
 ## Review or change automated response exclusions for users
 
