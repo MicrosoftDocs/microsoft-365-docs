@@ -43,7 +43,7 @@ search.appverid: met150
 
 ## Check if network protection is enabled
 
-Check if network protection has been enabled on a local device by using Registry editor.
+Check to see if network protection is enabled on a local device by using Registry editor.
 
 1. Select the **Start** button in the task bar and type **regedit** to open Registry editor.
 
@@ -87,7 +87,7 @@ Enable network protection by using any of these methods:
     Set-MpPreference -EnableNetworkProtection AuditMode
     ```
 
-    Use `Disabled` instead of `AuditMode` or `Enabled` to turn off the feature.
+    To turn the feature off, use `Disabled` instead of `AuditMode` or `Enabled`.
 
 ### Mobile device management (MDM)
 
