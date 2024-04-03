@@ -16,7 +16,6 @@ f1.keywords:
 ms.custom:
   - admindeeplinkEXCHANGE
   - has-azure-ad-ps-ref
-  - azure-ad-ref-level-one-done
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: "Summary: Understand why you must use PowerShell to manage Microsoft 365, in some cases more efficiently and in other cases by necessity."
 ---
