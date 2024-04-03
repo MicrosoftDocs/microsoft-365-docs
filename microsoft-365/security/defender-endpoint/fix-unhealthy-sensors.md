@@ -54,13 +54,12 @@ If the device was off-boarded, it still appears in devices list. After seven day
 
 ### Device isn't sending signals
 
-If the device isn't sending any signals to any Microsoft Defender for Endpoint channels for more than seven days for any reason, a device can be considered inactive; this includes conditions that fall under misconfigured devices classification.
-
-Do you expect a device to be in 'Active' status? [Open a support ticket](https://support.microsoft.com/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636206786382823561).
+If the device isn't sending any signals to any Microsoft Defender for Endpoint channels for more than seven days for any reason, a device can be considered inactive. Misconfigured devices can also be considered inactive.
 
 ## Misconfigured devices
 
 Misconfigured devices can further be classified to:
+
 - Impaired communications
 - No sensor data
 
@@ -90,7 +89,7 @@ Follow theses actions to correct known issues related to a misconfigured device 
 
 - [Ensure that Microsoft Defender Antivirus isn't disabled by policy](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy). If your devices are running a third-party anti-malware client, Defender for Endpoint agent requires that the Microsoft Defender Antivirus Early Launch anti-malware (ELAM) driver is enabled.
 
-- For macOS devices that 'sleep' for more than approximately 48 hours (a weekend), Microsoft Defender for Endpoint on macOS still sends Command and Control (CnC) channel data, but doesn't send any Cyber channel data. After the devices are turned on and used on the first business day, the devices will show up as active.
+- For macOS devices that sleep for more than approximately 48 hours (a weekend), Microsoft Defender for Endpoint on macOS still sends Command and Control (CnC) channel data, but doesn't send any Cyber channel data. After the devices are turned on and used on the first business day, the devices will show up as active.
 
 If you took corrective actions and the device status is still misconfigured, [open a support ticket](https://go.microsoft.com/fwlink/?LinkID=761093&clcid=0x409).
 
