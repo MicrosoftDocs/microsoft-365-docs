@@ -175,8 +175,6 @@ Beginning with Microsoft Edge 124, the following block page is shown for all Web
 
 In any case, no block pages are shown in non-Microsoft browsers, and the user sees a "Secure Connection Failed' page along with a toast notification. Depending on the policy responsible for the block, a user sees a different message in the toast notification. For example, web content filtering displays the message, "This content is blocked."
 
-:::image type="content" source="../../media/web-protection-np-block.jgp" alt-text="The page blocked by WCF" lightbox="../../media/web-protection-np-block.jpg":::
-
 ## Report false positives
 
 To report a false positive for sites that have been deemed dangerous by SmartScreen, use the link that appears on the block page in Microsoft Edge (as shown earlier in this article).
