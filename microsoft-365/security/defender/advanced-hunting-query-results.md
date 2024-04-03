@@ -1,14 +1,9 @@
 ---
 title: Work with advanced hunting query results in Microsoft Defender XDR
 description: Make the most of the query results returned by advanced hunting in Microsoft Defender XDR
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft Defender XDR, microsoft 365, m365, search, query, telemetry, custom detections, schema, kusto, visualization, chart, filters, drill-down
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
 ms.subservice: adv-hunting
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords:
   - NOCSH
 ms.author: maccruz
@@ -20,7 +15,7 @@ ms.collection:
   - m365-security
   - tier1
 ms.topic: conceptual
-ms.date: 02/16/2021
+ms.date: 02/16/2024
 ---
 
 # Work with advanced hunting query results
@@ -121,7 +116,7 @@ After running a query, select **Export** to save the results to local file. Your
 You can also explore the results in-line with the following features:
 - Expand a result by selecting the dropdown arrow at the left of each result
 - Where applicable, expand details for results that are in JSON and array formats by selecting the dropdown arrow at the left of applicable column names for added readability
-- Open the side pane to see a record’s details (concurrent with expanded rows)
+- Open the side pane to see a record's details (concurrent with expanded rows)
 
 
 
