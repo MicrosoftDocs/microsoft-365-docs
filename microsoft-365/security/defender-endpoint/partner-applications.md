@@ -48,7 +48,7 @@ Microsoft Defender for Endpoint seamlessly integrates with existing security sol
 Logo|Partner name|Description
 :---|:---|:---
 ![Logo for AttackIQ.](media/attackiq-logo.png)|[AttackIQ Platform](https://go.microsoft.com/fwlink/?linkid=2103502)|AttackIQ Platform validates Defender for Endpoint is configured properly by launching continuous attacks safely on production assets
-![Logo for Microsoft Sentinel.](images/sentinel-logo.png)|[AzureSentinel](https://go.microsoft.com/fwlink/?linkid=2135705)|Stream alerts from Microsoft Defender for Endpoint into Microsoft Sentinel
+![Logo for Microsoft Sentinel.](media/sentinel-logo.png)|[AzureSentinel](https://go.microsoft.com/fwlink/?linkid=2135705)|Stream alerts from Microsoft Defender for Endpoint into Microsoft Sentinel
 ![Logo for Cymulate.](media/cymulate-logo.png)|[Cymulate](https://go.microsoft.com/fwlink/?linkid=2135574)|Correlate Defender for Endpoint findings with simulated attacks to validate accurate detection and effective response actions
 ![Logo for Elastic security.](media/elastic-security-logo.png)|[Elastic Security](https://go.microsoft.com/fwlink/?linkid=2139303)|Elastic Security is a free and open solution for preventing, detecting, and responding to threats
 ![Logo for IBM QRadar.](media/ibm-qradar-logo.png)|[IBM QRadar](https://go.microsoft.com/fwlink/?linkid=2113903)|Configure IBM QRadar to collect detections from Defender for Endpoint
@@ -68,7 +68,7 @@ Logo|Partner name|Description
 ![Logo for Demisto, a Palo Alto Networks Company.](media/demisto-logo.png)|[Demisto, a Palo Alto Networks Company](https://go.microsoft.com/fwlink/?linkid=2108414)|Demisto integrates with Defender for Endpoint to enable security teams to orchestrate and automate endpoint security monitoring, enrichment, and response
 ![Logo for Microsoft Flow & Azure Functions.](media/ms-flow-logo.png)|[Microsoft Flow & Azure Functions](https://go.microsoft.com/fwlink/?linkid=2114300)|Use the Defender for Endpoint connectors for Azure Logic Apps & Microsoft Flow to automating security procedures
 ![Logo for Rapid7 InsightConnect.](media/rapid7-logo.png)|[Rapid7 InsightConnect](https://go.microsoft.com/fwlink/?linkid=2116040)|InsightConnect integrates with Defender for Endpoint to accelerate, streamline, and integrate your time-intensive security processes
-![Logo for ServiceNow.](images/servicenow-logo.png)|[ServiceNow](https://go.microsoft.com/fwlink/?linkid=2135621)|Ingest alerts into ServiceNow Security Operations solution based on Microsoft Graph API integration
+![Logo for ServiceNow.](media/servicenow-logo.png)|[ServiceNow](https://go.microsoft.com/fwlink/?linkid=2135621)|Ingest alerts into ServiceNow Security Operations solution based on Microsoft Graph API integration
 ![Logo for Swimlane.](images/swimlane-logo.png)|[Swimlane](https://go.microsoft.com/fwlink/?linkid=2113902)|Maximize incident response capabilities utilizing Swimlane and Defender for Endpoint together
 
 ### Threat intelligence

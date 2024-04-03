@@ -252,7 +252,7 @@ Running threat simulations using third-party platforms is a good way to evaluate
 
 2. Select a threat simulator.
 
-   :::image type="content" source="images/select-simulator.png" alt-text="The threat simulator selection" lightbox="images/select-simulator.png":::
+   :::image type="content" source="media/select-simulator.png" alt-text="The threat simulator selection" lightbox="media/select-simulator.png":::
 
 3. Choose a simulation or look through the simulation gallery to browse through the available simulations.
 
@@ -313,5 +313,5 @@ Your feedback helps us get better in protecting your environment from advanced a
 
 Let us know what you think, by selecting **Provide feedback**.
 
-:::image type="content" source="images/send-us-feedback-eval-lab.png" alt-text="The feedback page" lightbox="images/send-us-feedback-eval-lab.png":::
+:::image type="content" source="media/send-us-feedback-eval-lab.png" alt-text="The feedback page" lightbox="media/send-us-feedback-eval-lab.png":::
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

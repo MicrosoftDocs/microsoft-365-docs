@@ -74,7 +74,7 @@ Once all prerequisites are met, [connect](/azure/defender-for-cloud/quickstart-o
 
 3. Enable autoprovisioning on the multicloud connector for the Azure Arc agent, Microsoft Defender for Endpoint extension, Vulnerability Assessment and, optionally, Log Analytics extension.
 
-     :::image type="content" source="images/select-plans-aws-gcp.png" alt-text="Screenshot that shows how to enable autoprovisioning for Azure Arc agent." lightbox="images/select-plans-aws-gcp.png":::
+     :::image type="content" source="media/select-plans-aws-gcp.png" alt-text="Screenshot that shows how to enable autoprovisioning for Azure Arc agent." lightbox="media/select-plans-aws-gcp.png":::
 
    For more information, see [Defender for Cloud's multicloud capabilities](https://aka.ms/mdcmc).
 
