@@ -1,12 +1,8 @@
 ---
 title: Assess the impact of security configuration changes with Explorer
 description: Examples and walkthrough of using Explorer to determine the impact of a security control (configuration) change in Microsoft Defender for Office 365
-search.product:
 ms.service: microsoft-365-security
 ms.subservice: mdo
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords:
   - NOCSH
 ms.author: chrisda
@@ -20,7 +16,7 @@ ms.collection:
 - tier3
 ms.topic: how-to
 search.appverid: met150
-ms.date: 1/31/2023
+ms.date: 01/31/2023
 ---
 
 # Assess the impact of security configuration changes with Explorer

@@ -1,11 +1,7 @@
 ---
 title: How to prioritize, Manage, Investigate & Respond to Incidents in Microsoft Defender XDR
 description: The steps to manage alerts triggered in Microsoft Defender XDR. Automated investigation and response (AIR) hunt across the subscription and determines the impact and scope of a threat, and combines the information into a single Incident.
-search.product:
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords:
   - NOCSH
 author: chrisda
@@ -20,7 +16,7 @@ ms.collection:
 ms.topic: how-to
 ms.subservice: mdo
 search.appverid: met150
-ms.date: 1/31/2023
+ms.date: 01/31/2023
 ---
 
 # Prioritize, Manage, Investigate & Respond to Incidents in Microsoft Defender XDR

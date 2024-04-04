@@ -1,11 +1,7 @@
 ---
 title: Search for emails and remediate threats using Threat Explorer in Microsoft Defender XDR
 description: The steps to do manual remediation in Threat Explorer in Microsoft Defender XDR, including how to get the best performance and scenarios that call for remediation.
-search.product:
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords:
   - NOCSH
 author: chrisda
@@ -20,7 +16,7 @@ ms.collection:
 ms.topic: how-to
 ms.subservice: mdo
 search.appverid: met150
-ms.date: 1/31/2023
+ms.date: 01/31/2023
 ---
 
 # Steps to use manual email remediation in Threat Explorer
