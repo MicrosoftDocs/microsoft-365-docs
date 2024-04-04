@@ -43,7 +43,7 @@ Select the **x** symbol.
 
 When you select the **x** symbol, you see options as shown in the following screenshot:
 
-:::image type="content" source="images/x-symbol-menu-items.png" alt-text="Screenshot that shows the option that gets listed on selecting the x symbol.":::
+:::image type="content" source="media/x-symbol-menu-items.png" alt-text="Screenshot that shows the option that gets listed on selecting the x symbol.":::
 
 When you select **Action needed**, you get the error message as shown in the following screenshot:
 
