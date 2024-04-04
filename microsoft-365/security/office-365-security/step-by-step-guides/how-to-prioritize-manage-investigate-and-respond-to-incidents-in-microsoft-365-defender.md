@@ -23,7 +23,7 @@ ms.date: 01/31/2023
 
 When alerts are triggered in Microsoft Defender XDR, automated investigation and response (AIR) will trigger to hunt across an organization's subscription, determine the impact and scope of the threat, and collate the information into a single Incident so that admins don't have to manage multiple incidents.
 
-## What you'll need
+## What you need
 
 - Microsoft Defender for Office 365 Plan 2 or higher
 - Sufficient permissions (Security reader, security operations, or security administrator, plus [Search and purge](../mdo-portal-permissions.md) role)
@@ -34,7 +34,7 @@ Navigate to the security portal Incidents page <https://security.microsoft.com/i
 
 When the Incident page loads you can filter and prioritize by clicking columns to sort the actions or press Filters to apply a filter such as data source, tags or state.
 
-Now you have a prioritized list of incidents, from which you can select to rename, assign, classify, tag, change the status or add comments via the Manage incidents button.
+Now you have a prioritized list of incidents, from which you can select to rename, assign, classify, tag, change the status or add comments via the **Manage incidents** button.
 
 Use the filters to make sure Microsoft Defender for Office 365 items are included.
 
