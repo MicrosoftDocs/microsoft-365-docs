@@ -53,7 +53,7 @@ Use the following steps to schedule scans:
    vi /etc/anacron
    ```
 
-1.  :::image type="content" source="media/vi_etc_anacron.png" alt-text="Sample Anacron Job Linux." lightbox="media/vi_etc_anacron.png" link="media/vi_etc_anacron.png":::
+1.  :::image type="content" source="media/vi-etc-anacron.png" alt-text="Sample Anacron Job Linux." lightbox="media/vi-etc-anacron.png" link="media/vi-etc-anacron.png":::
 
    ```shell
    # /etc/anacrontab: configuration file for anacron
@@ -78,7 +78,7 @@ Use the following steps to schedule scans:
    ls -lh /etc/cron*
    ```
 
-    :::image type="content" source="media/vi_etc_anacron.png" alt-text="Sample Anacron Job Linux." lightbox="media/vi_etc_anacron.png" link="media/vi_etc_anacron.png":::
+    :::image type="content" source="media/vi-etc-anacron.png" alt-text="Sample Anacron Job Linux." lightbox="media/vi-etc-anacron.png" link="media/vi-etc-anacron.png":::
 
    ```shell
    [root@redhat7 /] # ls -lh /etc/cron*
@@ -129,7 +129,7 @@ Use the following steps to schedule scans:
    Press Insert
    ```
 
-   :::image type="content" source="media/vi_mdavfullscan.png" alt-text="weekly antivirus scans":::
+   :::image type="content" source="media/vi-mdavfullscan.png" alt-text="weekly antivirus scans":::
 
    ```shell
    #!/bin/sh
@@ -180,7 +180,7 @@ Use the following steps to schedule scans:
    cat /logs/mdav_avacron_full_scan.log
    ```
 
-    :::image type="content" source="media/mdav_avacron_full_scan_log.png" alt-text="verify the job ran":::
+    :::image type="content" source="media/mdav-avacron-full-scan-log.png" alt-text="verify the job ran":::
 
     ```shell
     [root@redhat7 cron.weekly] # cat /logs/mdav_avacron_full_scan.log
@@ -191,5 +191,6 @@ Use the following steps to schedule scans:
     Tue Jun 14 20:20:50 UTC 2022 Time Scan Finished
     [root@redhat7 cron.weekly] #
     ```
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
 
