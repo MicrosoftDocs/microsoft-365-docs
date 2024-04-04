@@ -323,7 +323,7 @@ Defender for Endpoint on iOS supports vulnerability assessments of OS and apps. 
 
 1. To get the list of all the apps including unmanaged apps, enable the toggle **Send full application inventory data on personally owned iOS/iPadOS devices**.
 
-    :::image type="content" source="images/tvm-full-app-data.png" alt-text="Full App Data" lightbox="images/tvm-full-app-data.png":::
+    :::image type="content" source="media/tvm-full-app-data.png" alt-text="Full App Data" lightbox="media/tvm-full-app-data.png":::
 
 1. Use the following steps to configure the privacy setting.
     - Go to **Apps** \> **App configuration policies** \> **Add** \> **Managed devices**.
