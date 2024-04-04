@@ -21,7 +21,7 @@ ms.date: 01/04/2023
 
 # Introduction
 
-Historically, allowlists enabled Exchange Online Protection to ignore the signals indicating an email is malicious. It's commonplace for vendors to request IPs, domains, and sender addresses be overridden unnecessarily. Attackers have been known to take advantage of this mistake and it's a pressing security loophole to have unnecessary allowlist entries. This step-by-step guide walks you through using advanced hunting to identify these misconfigured overrides and remove them, so you can increase your organization's security posture.
+Historically, allowlists enabled Exchange Online Protection to ignore the signals indicating an email is malicious. It's commonplace for vendors to request IPs, domains, and sender addresses be overridden unnecessarily. Attackers are known to take advantage of this mistake and it's a pressing security loophole to have unnecessary allowlist entries. This step-by-step guide walks you through using advanced hunting to identify these misconfigured overrides and remove them, so you can increase your organization's security posture.
 
 ## What you need
 
@@ -63,7 +63,7 @@ EmailEvents
 
 ### Top overridden IPs
 
-This query looks for emails that have been overridden by IP, without any detection that called for an override.
+This query looks for emails that were overridden by IP, without any detection that called for an override.
 
 ```kusto
 EmailEvents
@@ -74,7 +74,7 @@ EmailEvents
 
 ### Top overridden domains
 
-This query looks for emails that have been overridden by sending domain without any detection that called for an override. **(Change to SenderMailFromDomain to check the 5321.MailFrom)**
+This query looks for emails that were overridden by sending domain without any detection that called for an override. **(Change to SenderMailFromDomain to check the 5321.MailFrom)**
 
 ```kusto
 EmailEvents
@@ -85,7 +85,7 @@ EmailEvents
 
 ### Top overridden senders
 
-This query looks for emails that have been overridden by sending address without any detection that requires an override. **(Change to SenderMailFromAddress to check the 5321.MailFrom)**
+This query looks for emails that were overridden by sending address without any detection that requires an override. **(Change to SenderMailFromAddress to check the 5321.MailFrom)**
 
 ```kusto
 EmailEvents
@@ -96,8 +96,8 @@ EmailEvents
 
 ## Learn More
 
-Hopefully you found this useful, with some basic queries to get you started with advanced hunting, to learn more check out the below articles
+Hopefully you found this article to be useful, with some basic queries to get you started with advanced hunting, to learn more check out the below articles:
 
-Learn more about advanced hunting: [Overview - Advanced hunting](../../defender/advanced-hunting-overview.md)
+Learn more about advanced hunting: [Overview - Advanced hunting](../../defender/advanced-hunting-overview.md).
 
-Learn more about authentication: [Email Authentication in Exchange Online Protection](../email-authentication-about.md)
+Learn more about authentication: [Email Authentication in Exchange Online Protection](../email-authentication-about.md).
