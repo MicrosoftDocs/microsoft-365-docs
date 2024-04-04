@@ -1,6 +1,6 @@
 ---
-title: Review and remove unnecessary allow list entries with Advanced Hunting in Microsoft Defender for Office 365
-description: Steps and sample queries for advanced hunting to start reviewing your security configuration and removing unnecessary allow list entries.
+title: Review and remove unnecessary allowlist entries with Advanced Hunting in Microsoft Defender for Office 365
+description: Steps and sample queries for advanced hunting to start reviewing your security configuration and removing unnecessary allowlist entries.
 ms.service: microsoft-365-security
 f1.keywords:
   - NOCSH
@@ -21,7 +21,7 @@ ms.date: 01/04/2023
 
 # Introduction
 
-Historically, allow lists have told Exchange Online Protection to ignore the signals indicating an email is malicious. It's commonplace for vendors to request IPs, domains, and sender addresses be overridden unnecessarily. Attackers have been known to take advantage of this mistake and it's a pressing security loophole to have unnecessary allow list entries. This step-by-step guide walks you through using advanced hunting to identify these misconfigured overrides and remove them, so you can increase your organization's security posture.
+Historically, allowlists enabled Exchange Online Protection to ignore the signals indicating an email is malicious. It's commonplace for vendors to request IPs, domains, and sender addresses be overridden unnecessarily. Attackers have been known to take advantage of this mistake and it's a pressing security loophole to have unnecessary allow list entries. This step-by-step guide walks you through using advanced hunting to identify these misconfigured overrides and remove them, so you can increase your organization's security posture.
 
 ## What you will need
 
