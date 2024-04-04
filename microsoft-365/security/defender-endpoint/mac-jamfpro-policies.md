@@ -49,7 +49,7 @@ You'll need to take the following steps:
 
 2. Select macOS as the operating system and Mobile Device Management / Microsoft Intune as the deployment method.
 
-   :::image type="content" source="images/onboarding-macos.png" alt-text="The Settings page." lightbox="images/onboarding-macos.png":::
+   :::image type="content" source="media/onboarding-macos.png" alt-text="The Settings page." lightbox="media/onboarding-macos.png":::
 
 3. Select **Download onboarding package** (WindowsDefenderATPOnboardingPackage.zip).
 
@@ -61,7 +61,7 @@ You'll need to take the following steps:
 
 1. Locate the file `WindowsDefenderATPOnboarding.plist` from the previous section.
 
-   :::image type="content" source="images/plist-onboarding-file.png" alt-text="The  Windows Defender ATP Onboarding file." lightbox="images/plist-onboarding-file.png":::
+   :::image type="content" source="media/plist-onboarding-file.png" alt-text="The  Windows Defender ATP Onboarding file." lightbox="media/plist-onboarding-file.png":::
 
 2. Sign in to Jamf Pro, navigate to **Computers** > **Configuration Profiles**, and select **New**.
 
@@ -558,7 +558,7 @@ These steps are applicable on macOS 11 (Big Sur) or later.
 
 8. Click the `+` sign next to **App Access** to add a new entry.
 
-   :::image type="content" source="images/tcc-add-entry.png" alt-text="The save operation relating to the configuration setting." lightbox="images/tcc-add-entry.png":::
+   :::image type="content" source="media/tcc-add-entry.png" alt-text="The save operation relating to the configuration setting." lightbox="media/tcc-add-entry.png":::
 
 9. Enter the following details:
 
@@ -568,7 +568,7 @@ These steps are applicable on macOS 11 (Big Sur) or later.
 
 10. Select **+ Add**.
 
-    :::image type="content" source="images/tcc-epsext-entry.png" alt-text="The configuration setting tcc epsext entry." lightbox="images/tcc-epsext-entry.png":::
+    :::image type="content" source="media/tcc-epsext-entry.png" alt-text="The configuration setting tcc epsext entry." lightbox="media/tcc-epsext-entry.png":::
 
     - Under App or service: Set to **SystemPolicyAllFiles**
 
@@ -576,7 +576,7 @@ These steps are applicable on macOS 11 (Big Sur) or later.
 
 11. Select **Save** (not the one at the bottom right).
 
-    :::image type="content" source="images/tcc-epsext-entry2.png" alt-text="The other instance of configuration setting tcc epsext." lightbox="images/tcc-epsext-entry2.png":::
+    :::image type="content" source="media/tcc-epsext-entry2.png" alt-text="The other instance of configuration setting tcc epsext." lightbox="media/tcc-epsext-entry2.png":::
 
 12. Select the **Scope** tab.
 
@@ -616,11 +616,11 @@ Alternatively, you can download [fulldisk.mobileconfig](https://github.com/micro
     - Distribution Method: Install Automatically
     - Level: Computer Level
 
-    :::image type="content" source="images/sysext-new-profile.png" alt-text="The configuration settings sysext new profile." lightbox="images/sysext-new-profile.png":::
+    :::image type="content" source="media/sysext-new-profile.png" alt-text="The configuration settings sysext new profile." lightbox="media/sysext-new-profile.png":::
 
 3. In **System Extensions** select **Configure**.
 
-   :::image type="content" source="images/sysext-configure.png" alt-text="The pane with the Configure option for the system extensions." lightbox="images/sysext-configure.png":::
+   :::image type="content" source="media/sysext-configure.png" alt-text="The pane with the Configure option for the system extensions." lightbox="media/sysext-configure.png":::
 
 4. In **System Extensions**, enter the following details:
 
@@ -631,7 +631,7 @@ Alternatively, you can download [fulldisk.mobileconfig](https://github.com/micro
      - **com.microsoft.wdav.epsext**
      - **com.microsoft.wdav.netext**
 
-    :::image type="content" source="images/sysext-configure2.png" alt-text="The MDATP MDAV system extensions pane." lightbox="images/sysext-configure2.png":::
+    :::image type="content" source="media/sysext-configure2.png" alt-text="The MDATP MDAV system extensions pane." lightbox="media/sysext-configure2.png":::
 
 5. Select the **Scope** tab.
 
@@ -647,11 +647,11 @@ Alternatively, you can download [fulldisk.mobileconfig](https://github.com/micro
 
 9. Select **Save**.
 
-   :::image type="content" source="images/sysext-scope.png" alt-text="The display of options regarding MDATP MDAV System Extensions." lightbox="images/sysext-scope.png":::
+   :::image type="content" source="media/sysext-scope.png" alt-text="The display of options regarding MDATP MDAV System Extensions." lightbox="media/sysext-scope.png":::
 
 10. Select **Done**.
 
-    :::image type="content" source="images/sysext-final.png" alt-text="The configuration settings sysext - final." lightbox="images/sysext-final.png":::
+    :::image type="content" source="media/sysext-final.png" alt-text="The configuration settings sysext - final." lightbox="media/sysext-final.png":::
 
 ## Step 8: Configure Network Extension
 
@@ -681,7 +681,7 @@ These steps are applicable on macOS 11 (Big Sur) or later.
 
         Note that **Identifier**, **Socket Filter** and **Socket Filter Designated Requirement** exact values as specified above.
 
-        :::image type="content" source="images/netext-create-profile.png" alt-text="The mdatpmdav configuration setting." lightbox="images/netext-create-profile.png":::
+        :::image type="content" source="media/netext-create-profile.png" alt-text="The mdatpmdav configuration setting." lightbox="media/netext-create-profile.png":::
 
 3. Select the **Scope** tab.
 
@@ -697,11 +697,11 @@ These steps are applicable on macOS 11 (Big Sur) or later.
 
 7. Select **Save**.
 
-   :::image type="content" source="images/netext-scope.png" alt-text="The Content Filter pane." lightbox="images/netext-scope.png":::
+   :::image type="content" source="media/netext-scope.png" alt-text="The Content Filter pane." lightbox="media/netext-scope.png":::
 
 8. Select **Done**.
 
-   :::image type="content" source="images/netext-final.png" alt-text="The configuration settings netext - final." lightbox="images/netext-final.png":::
+   :::image type="content" source="media/netext-final.png" alt-text="The configuration settings netext - final." lightbox="media/netext-final.png":::
 
 Alternatively, you can download [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig) and upload it to JAMF Configuration Profiles as described in [Deploying Custom Configuration Profiles using Jamf Pro|Method 2: Upload a Configuration Profile to Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 

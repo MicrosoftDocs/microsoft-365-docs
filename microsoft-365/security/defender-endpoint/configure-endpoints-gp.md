@@ -249,11 +249,11 @@ Create a new Group Policy or group these settings in with the other policies. Th
 
 2. Browse to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > **Real-time Protection**.
 
-    :::image type="content" source="images/realtime-protect.png" alt-text="Real-time protection" lightbox="images/realtime-protect.png":::
+    :::image type="content" source="media/realtime-protect.png" alt-text="Real-time protection" lightbox="media/realtime-protect.png":::
 
 1. In the Quarantine folder, configure removal of items from Quarantine folder.
 
-    :::image type="content" source="images/removal-items-quarantine1.png" alt-text="Removal items quarantine folder" lightbox="images/removal-items-quarantine1.png":::
+    :::image type="content" source="media/removal-items-quarantine1.png" alt-text="Removal items quarantine folder" lightbox="media/removal-items-quarantine1.png":::
 
     :::image type="content" source="media/config-removal-items-quarantine2.png" alt-text="config-removal quarantine" lightbox="media/config-removal-items-quarantine2.png":::
 
@@ -295,7 +295,7 @@ Browse to **Computer Configuration** \> **Policies** \> **Administrative Templat
 
 :::image type="content" source="media/gpo-maps-join-ms-maps.png" alt-text="Join microsoft maps" lightbox="media/gpo-maps-join-ms-maps.png":::
 
-:::image type="content" source="images/send-file-sample-further-analysis-require.png" alt-text="Send file sample when further analysis is required" lightbox="images/send-file-sample-further-analysis-require.png":::
+:::image type="content" source="media/send-file-sample-further-analysis-require.png" alt-text="Send file sample when further analysis is required" lightbox="media/send-file-sample-further-analysis-require.png":::
 
 > [!NOTE]
 > The **Send all samples** option will provide the most analysis of binaries/scripts/docs which increases security posture.
@@ -307,9 +307,9 @@ For more information, see [Turn on cloud protection in Microsoft Defender Antivi
 
 Browse to **Computer Configuration** \> **Policies** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **Security Intelligence Updates**.
 
-:::image type="content" source="images/signature-update-1.png" alt-text="Signature update" lightbox="images/signature-update-1.png":::
+:::image type="content" source="media/signature-update-1.png" alt-text="Signature update" lightbox="media/signature-update-1.png":::
 
-:::image type="content" source="images/signature-update-2.png" alt-text="Signature definition update" lightbox="images/signature-update-2.png":::
+:::image type="content" source="media/signature-update-2.png" alt-text="Signature definition update" lightbox="media/signature-update-2.png":::
 
 ### Configure cloud deliver timeout and protection level
 
