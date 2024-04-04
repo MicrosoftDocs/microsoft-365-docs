@@ -1,6 +1,6 @@
 ---
 title: Protect your c-suite with Priority account protection in Microsoft Defender for Office 365 Plan 2
-description: The steps to protect your c-suite with priority account protection. Tagging an account as a Priority account will enable the additional protection tuned for the mail flow patterns targeting company executives, along with extra visibility in reports, alerts, and investigations.
+description: The steps to protect your c-suite with priority account protection. Tagging an account as a Priority account enables the extra protection tuned for the mail flow patterns targeting company executives, along with extra visibility in reports, alerts, and investigations.
 ms.service: microsoft-365-security
 f1.keywords: 
   - NOCSH
@@ -21,18 +21,18 @@ ms.date: 01/31/2023
 
 # Protect your c-suite with priority account protection
 
-Priority account protection helps IT and security teams ensure a high quality of service and protection for the critical people within your organization. Tagging an account as a priority account will enable the additional protection tuned for the mail flow patterns targeting company executives, along with extra visibility in reports, alerts, and investigations.
+Priority account protection helps IT and security teams ensure a high quality of service and protection for the critical people within your organization. Tagging an account as a priority account enables the extra protection tuned for the mail flow patterns targeting company executives, along with extra visibility in reports, alerts, and investigations.
 
-## What you'll need
+## What you need
 
 - Microsoft Defender for Office 365 Plan 2 (included as part of E5 plans)
 - Sufficient permissions (Security Administrator role)
-- 5 minutes to perform the steps below.
+- 5 minutes to perform the following procedures.
 
 ## Tag Priority users
 
 1. Identify the users, groups, or domains you would like to tag as priority accounts.
-1. Login to the [Microsoft Security Portal](https://security.microsoft.com/) and navigate to Settings on the left navigation bar.
+1. Sign in to the [Microsoft Defender portal](https://security.microsoft.com/) and navigate to Settings on the left navigation bar.
 1. Select Email & collaboration on the page that loads and then click User tags
 1. On the User tags page, select the Priority account tag and press Edit
 1. On the flyout that appears, select Add members
