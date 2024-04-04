@@ -251,7 +251,7 @@ For Windows Server 2008 R2 you'll need (and it will only copy down) the followin
 
 Once this is done, you'll need to create a start-up script policy:
 
-:::image type="content" source="images/startupprops.png" alt-text="The start up properties" lightbox="images/startupprops.png":::
+:::image type="content" source="media/startupprops.png" alt-text="The start up properties" lightbox="media/startupprops.png":::
 
 The name of the file to run here is c:\windows\MMA\DeployMMA.cmd.
 Once the server is restarted as part of the start-up process it will install the Update for customer experience and diagnostic telemetry KB, and then install the MMA Agent, while setting the Workspace ID and Key, and the server will be onboarded.
