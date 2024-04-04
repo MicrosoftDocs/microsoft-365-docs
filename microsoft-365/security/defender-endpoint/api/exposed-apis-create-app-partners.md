@@ -238,7 +238,7 @@ Confirm you received a correct token.
 
    The "tid" claim is the tenant ID the token belongs to.
 
-   :::image type="content" source="../images/webapp-decoded-token.png" alt-text="The token validation page" lightbox="../images/webapp-decoded-token.png":::
+   :::image type="content" source="../media/webapp-decoded-token.png" alt-text="The token validation page" lightbox="../media/webapp-decoded-token.png":::
 
 ## Use the token to access Microsoft Defender for Endpoint API
 
