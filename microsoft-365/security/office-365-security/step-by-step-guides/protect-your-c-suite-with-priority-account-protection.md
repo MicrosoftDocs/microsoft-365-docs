@@ -37,7 +37,7 @@ Priority account protection helps IT and security teams ensure a high quality of
 1. On the **User tags** page, select the **Priority account** tag, and then select **Edit**.
 1. On the flyout that appears, select **Add members**.
 1. Search for the users you wish to tag, select one or more users, and then select **Add**.
-1. Review the members you have selected, and then select **Next**.
+1. Review the members you selected, and then select **Next**.
 1. Select **Submit** to confirm the changes.
 
 ## Confirm priority account protection is enabled for tagged users
@@ -51,7 +51,7 @@ To learn what priority account tags are see [Manage and monitor priority account
 
 ## Next Steps
 
-[Review differentiated protection from priority account protection]
+[Review differentiated protection from priority account protection].
 
 [Review the differentiated protection for users tagged as Priority accounts](../priority-accounts-turn-on-priority-account-protection.md#review-differentiated-protection-from-priority-account-protection).
 
