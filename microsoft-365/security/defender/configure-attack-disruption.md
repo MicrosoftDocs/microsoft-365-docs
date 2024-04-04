@@ -9,7 +9,7 @@ audience: ITPro
 ms.topic: how-to
 ms.service: defender-xdr
 ms.localizationpriority: medium
-ms.date: 05/31/2023
+ms.date: 03/31/2024
 ms.collection:
 - m365-security
 - tier2
@@ -78,5 +78,6 @@ Excluding user accounts is not recommended, and accounts added to this list won'
 ## See also
 
 - [Automatic attack disruption in Microsoft Defender XDR](automatic-attack-disruption.md)
+- [Automatic attack disruption for SAP](/azure/sentinel/sap/deployment-attack-disrupt)
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

@@ -12,7 +12,7 @@ ms.collection:
 - tier2
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 10/11/2022
+ms.date: 10/11/2023
 ---
 
 # Configure alert notifications in Microsoft Defender XDR
