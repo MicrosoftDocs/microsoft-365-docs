@@ -167,7 +167,7 @@ This card lists the parent web content categories with the largest increase or d
 
 In the first 30 days of using this feature, your organization might not have enough data to display this information.
 
-:::image type="content" source="images/web-activity-by-category600.png" alt-text="The web activity by category card" lightbox="images/web-activity-by-category600.png":::
+:::image type="content" source="media/web-activity-by-category600.png" alt-text="The web activity by category card" lightbox="media/web-activity-by-category600.png":::
 
 ### Web content filtering  summary card
 
@@ -179,7 +179,7 @@ This card displays the distribution of blocked access attempts across the differ
 
 This card displays the total number of requests for web content in all URLs.
 
-:::image type="content" source="images/web-activity-summary.png" alt-text="The web activity summary card" lightbox="images/web-activity-summary.png":::
+:::image type="content" source="media/web-activity-summary.png" alt-text="The web activity summary card" lightbox="media/web-activity-summary.png":::
 
 ### View card details
 

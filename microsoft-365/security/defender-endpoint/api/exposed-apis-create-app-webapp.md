@@ -90,7 +90,7 @@ This article explains how to create a Microsoft Entra application, get an access
     > [!NOTE]
     > After you select **Add**, select **copy the generated secret value**. You won't be able to retrieve this value after you leave.
 
-      :::image type="content" source="../images/webapp-create-key2.png" alt-text="The create application option" lightbox="../images/webapp-create-key2.png":::
+      :::image type="content" source="../media/webapp-create-key2.png" alt-text="The create application option" lightbox="../media/webapp-create-key2.png":::
 
 7. Write down your application ID and your tenant ID. On your application page, go to **Overview** and copy the following.
 
