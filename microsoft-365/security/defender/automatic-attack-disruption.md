@@ -69,7 +69,6 @@ Automatic attack disruption uses Microsoft-based XDR response actions. Examples 
 - [Disable user](/defender-for-identity/remediation-actions) - based on Microsoft Defender for Identity's capability, this action is an automatic suspension of a compromised account to prevent additional damage like lateral movement, malicious mailbox use, or malware execution.
 
 - [Contain user](../defender-endpoint/respond-machine-alerts.md#contain-user-from-the-network) - based on Microsoft Defender for Endpoint's capability, this response action automatically contains suspicious identities temporarily to help block any lateral movement and remote encryption related to incoming communication with Defender for Endpoint's onboarded devices.
-- [Contain user](../defender-endpoint/respond-machine-alerts.md#contain-user-from-the-network) - based on Microsoft Defender for Endpoint's capability, this response action automatically contains suspicious identities temporarily to help block any lateral movement and remote encryption related to incoming communication with Defender for Endpoint's onboarded devices.
 
 For more information, see [remediation actions](m365d-remediation-actions.md) in Microsoft Defender XDR.
 
