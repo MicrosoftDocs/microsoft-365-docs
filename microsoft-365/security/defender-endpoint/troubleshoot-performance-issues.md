@@ -174,7 +174,7 @@ Alternatively, you can also use the command-line tool *wpr.exe*, which is availa
 
 2. Under *Windows Kits*, right-click **Windows Performance Recorder**.
 
-   :::image type="content" source="images/wpr-01.png" alt-text="The Start menu" lightbox="images/wpr-01.png":::
+   :::image type="content" source="media/wpr-01.png" alt-text="The Start menu" lightbox="media/wpr-01.png":::
 
     Select **More**. Select **Run as administrator**.
 
@@ -186,7 +186,7 @@ Alternatively, you can also use the command-line tool *wpr.exe*, which is availa
 
 5. On the WPR dialog box, select **More options**.
 
-   :::image type="content" source="images/wpr-03.png" alt-text="The page on which you can select more options" lightbox="images/wpr-03.png":::
+   :::image type="content" source="media/wpr-03.png" alt-text="The page on which you can select more options" lightbox="media/wpr-03.png":::
 
 
 6. Select **Add Profiles...** and browse to the path of the `MDAV.wprp` file.
@@ -212,14 +212,14 @@ Alternatively, you can also use the command-line tool *wpr.exe*, which is availa
 
 9. Now you're ready to collect data. Exit all the applications that are not relevant to reproducing the performance issue. You can select **Hide options** to keep the space occupied by the WPR window small.
 
-   :::image type="content" source="images/wpr-08.png" alt-text="The Hide options" lightbox="images/wpr-08.png":::
+   :::image type="content" source="media/wpr-08.png" alt-text="The Hide options" lightbox="media/wpr-08.png":::
 
     > [!TIP]
     > Try starting the trace at whole number seconds. For instance, 01:30:00. This will make it easier to analyze the data. Also try to keep track of the timestamp of exactly when the issue is reproduced.
 
 10. Select **Start**.
 
-    :::image type="content" source="images/wpr-09.png" alt-text="The Record system information page" lightbox="images/wpr-09.png":::
+    :::image type="content" source="media/wpr-09.png" alt-text="The Record system information page" lightbox="media/wpr-09.png":::
 
 11. Reproduce the issue.
 
@@ -228,26 +228,26 @@ Alternatively, you can also use the command-line tool *wpr.exe*, which is availa
 
 12. Select **Save**.
 
-    :::image type="content" source="images/wpr-10.png" alt-text="The Save option" lightbox="images/wpr-10.png":::
+    :::image type="content" source="media/wpr-10.png" alt-text="The Save option" lightbox="media/wpr-10.png":::
 
 13. Fill up **Type in a detailed description of the problem:** with information about the problem and how you reproduced the issue.
 
-    :::image type="content" source="images/wpr-12.png" alt-text="The pane in which you fill" lightbox="images/wpr-12.png":::
+    :::image type="content" source="media/wpr-12.png" alt-text="The pane in which you fill" lightbox="media/wpr-12.png":::
 
     1. Select **File Name:** to determine where your trace file will be saved. By default, it is saved to `%user%\Documents\WPR Files\`.
     1. Select **Save**.
 
 14. Wait while the trace is being merged.
 
-    :::image type="content" source="images/wpr-13.png" alt-text="The WPR gathering general trace" lightbox="images/wpr-13.png":::
+    :::image type="content" source="media/wpr-13.png" alt-text="The WPR gathering general trace" lightbox="media/wpr-13.png":::
 
 15. Once the trace is saved, select **Open folder**.
 
-    :::image type="content" source="images/wpr-14.png" alt-text="The page displaying the notification that WPR trace has been saved" lightbox="images/wpr-14.png":::
+    :::image type="content" source="media/wpr-14.png" alt-text="The page displaying the notification that WPR trace has been saved" lightbox="media/wpr-14.png":::
 
     Include both the file and the folder in your submission to Microsoft Support.
 
-    :::image type="content" source="images/wpr-15.png" alt-text="The details of the file and the folder" lightbox="images/wpr-15.png":::
+    :::image type="content" source="media/wpr-15.png" alt-text="The details of the file and the folder" lightbox="media/wpr-15.png":::
 
 ### Capture performance logs using the WPR CLI
 
