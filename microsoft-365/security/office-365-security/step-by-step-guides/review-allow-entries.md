@@ -31,19 +31,19 @@ Historically, allowlists enabled Exchange Online Protection to ignore the signal
 
 ## Common steps for all the below queries
 
-1. [Login to the security portal and navigate to advanced hunting](https://security.microsoft.com/advanced-hunting)
+1. [Sign in to the security portal and navigate to advanced hunting](https://security.microsoft.com/advanced-hunting)
 2. Enter the KQL query into the query box, and press **Run Query**.
-3. Pressing the **NetworkMessageId** hyperlink for individual emails when shown in the results loads a flyout, allowing easy access to the email entity page, where the **analysis** tab provides further details, such as the transport rule(s) that email matched.
+3. Pressing the **NetworkMessageId** hyperlink for individual emails when shown in the results loads a flyout, allowing easy access to the email entity page, where the **analysis** tab provides further details, such as the transport rules that email matched.
 4. The results can also be exported by pressing **Export** for manipulation / analysis offline.
 
 > [!TIP]
-> Changing **OrgLevelAction** to **UserLevelAction** will allow you to search for emails getting overridden by users rather than administrators, and can also be a useful insight.
+> Changing **OrgLevelAction** to **UserLevelAction** will allow you to search for email warnings that were overridden by users rather than administrators, and can also be a useful insight.
 
 ## Queries
 
 ### Top override source
 
-Use this query to find where the most unnecessary overrides are located. This query looks for emails that have been overridden without any detection that needed an override.
+Use this query to find where the most unnecessary overrides are located. This query looks for emails that were overridden without any detection that needed an override.
 
 ```kusto
 EmailEvents
