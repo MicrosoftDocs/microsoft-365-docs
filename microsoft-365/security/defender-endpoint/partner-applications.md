@@ -69,7 +69,7 @@ Logo|Partner name|Description
 ![Logo for Microsoft Flow & Azure Functions.](media/ms-flow-logo.png)|[Microsoft Flow & Azure Functions](https://go.microsoft.com/fwlink/?linkid=2114300)|Use the Defender for Endpoint connectors for Azure Logic Apps & Microsoft Flow to automating security procedures
 ![Logo for Rapid7 InsightConnect.](media/rapid7-logo.png)|[Rapid7 InsightConnect](https://go.microsoft.com/fwlink/?linkid=2116040)|InsightConnect integrates with Defender for Endpoint to accelerate, streamline, and integrate your time-intensive security processes
 ![Logo for ServiceNow.](media/servicenow-logo.png)|[ServiceNow](https://go.microsoft.com/fwlink/?linkid=2135621)|Ingest alerts into ServiceNow Security Operations solution based on Microsoft Graph API integration
-![Logo for Swimlane.](images/swimlane-logo.png)|[Swimlane](https://go.microsoft.com/fwlink/?linkid=2113902)|Maximize incident response capabilities utilizing Swimlane and Defender for Endpoint together
+![Logo for Swimlane.](media/swimlane-logo.png)|[Swimlane](https://go.microsoft.com/fwlink/?linkid=2113902)|Maximize incident response capabilities utilizing Swimlane and Defender for Endpoint together
 
 ### Threat intelligence
 
