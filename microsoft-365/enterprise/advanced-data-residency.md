@@ -94,7 +94,7 @@ If any customer tenant data covered by the Advanced Data Residency feature is no
 
 After a customer receives their Advanced Data Residency licenses and applies them to their tenant, the customer must select the option to initiate the data migration process for ADR workloads that do not currently reside in their _Local Region Geography_. To initiate data migration for a tenant, the customer administrator should visit the "Data Location" section in the Microsoft 365 admin center by navigating to **Settings -> Org Settings -> Organization Profile -> Data location**. From here, the customer administrator can see the current location of the customer's data-at-rest and what _Local Region Geography_ their customer data currently resides in or is eligible to be migrated to upon selection.
 
-:::image type="content" source="media\data-residency\1-adr-microsoft-365-admin-center.png" alt-text="<Screenshot of M365 Admin Center.>":::
+:::image type="content" source="media\data-residency\1-adr-microsoft-365-data-location-card.png.png" alt-text="<Screenshot of M365 Admin Center.>":::
 
 > [!NOTE]
 > The data migration process described in the sections below will not initiate until the customer administrator completes this task.
