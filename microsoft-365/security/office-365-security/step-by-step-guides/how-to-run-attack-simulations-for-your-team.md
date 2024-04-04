@@ -34,10 +34,10 @@ Attack simulation training allows you to run realistic but benign cyber attack s
 1. Navigate to [Attack Simulation Training](https://security.microsoft.com/attacksimulator) in your subscription.
 1. Choose **Simulations** from the top navigation bar.
 1. Select **Launch a simulation**.
-1. Pick the technique you'd like to use from the flyout, and press **Next**.
-1. Name the Simulation with something relevant / memorable and press **Next**.
-1. Pick a relevant payload from the wizard, review the details and customize if appropriate, when you are happy with the choice, press **Next**.
-1. Choose who to target with the payload. If choosing the entire organization highlight the radio button and press **Next**.
+1. Pick the technique you'd like to use from the flyout, and select **Next**.
+1. Name the Simulation with something relevant / memorable and select **Next**.
+1. Pick a relevant payload from the wizard, review the details and customize if appropriate, when you're happy with the choice, select **Next**.
+1. Choose who to target with the payload. If you're choosing the entire organization, select that option and then select **Next**.
 1. Otherwise, select **Add Users** and then search or filter the users with the wizard. Select Add User(s) and then **Next**.
 1. Under **Select training content preference**, leave the default *Microsoft training experience (Recommended)* or select *Redirect to a custom URL* if you want to use the custom URL. If you don't want to assign any training, then select *No training*.
     - You can either let Microsoft assign training courses by selecting *Assign training for me* or you can choose specific modules with *Select training courses and modules myself*
