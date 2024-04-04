@@ -42,7 +42,7 @@ Take advantage of rich security information events management (SIEM) combined wi
 
 ## Next Steps
 
-Admins will now be able to see incidents, alerts, and raw data in Microsoft Sentinel and use this data for *advanced hunting*, pivoting on existing and new data from Microsoft Defender.
+Admins are now able to see incidents, alerts, and raw data in Microsoft Sentinel and use this data for *advanced hunting*, pivoting on existing and new data from Microsoft Defender.
 
 ## More Information
 
