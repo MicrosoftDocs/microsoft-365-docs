@@ -33,7 +33,7 @@ Take advantage of rich security information events management (SIEM) combined wi
 
 ## Add the Microsoft Defender XDR Connector
 
-1. [Sign in to the Azure Portal](https://portal.azure.com) and navigate to **Microsoft Sentinel** \> Pick the relevant workspace to integrate with Microsoft Defender XDR.
+1. [Sign in to the Azure portal](https://portal.azure.com) and navigate to **Microsoft Sentinel** \> Pick the relevant workspace to integrate with Microsoft Defender XDR.
 1. In the navigation pane, under **Configuration**, go to **Data connectors**.
 1. When the page loads, **search for** Microsoft Defender XDR **and select the Microsoft Defender XDR connector**.
 1. On the right-hand flyout, select **Open Connector Page**.
@@ -46,6 +46,6 @@ Admins are now able to see incidents, alerts, and raw data in Microsoft Sentinel
 
 ## More Information
 
-[Connect Microsoft Defender XDR data to Microsoft Sentinel | Microsoft Docs](/azure/sentinel/connect-microsoft-365-defender?tabs=MDE)
+[Connect Microsoft Defender XDR data to Microsoft Sentinel | Microsoft Docs](/azure/sentinel/connect-microsoft-365-defender?tabs=MDE).
 
-[Connect Microsoft Teams to Microsoft Sentinel](/microsoftteams/teams-sentinel-guide)
+[Connect Microsoft Teams to Microsoft Sentinel](/microsoftteams/teams-sentinel-guide).
