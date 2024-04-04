@@ -1,6 +1,6 @@
 ---
 title: How to run attack simulations for your team
-description: The steps to send an Attack Simulation payload to your target users for your team or organization for training. Simulated attacks can help you identify and find vulnerable users, policies and practices before a real attack impacts your organization.
+description: The steps to send an Attack Simulation payload to your target users for your team or organization for training. Simulated attacks can help you identify and find vulnerable users, policies, and practices before a real attack impacts your organization.
 ms.service: microsoft-365-security
 f1.keywords: 
   - NOCSH
@@ -21,13 +21,13 @@ ms.date: 01/31/2023
 
 # How to run attack simulations for your team
 
-Attack simulation training allows you to run realistic but benign cyber attack scenarios in your organization. Simulated attacks can help you identify and find vulnerable users, policies and practices before a real attack impacts your organization, leveraging inbuilt or custom training to reduce risk and better educate end users about threats.
+Attack simulation training allows you to run realistic but benign cyber attack scenarios in your organization. Simulated attacks can help you identify and find vulnerable users, policies, and practices before a real attack impacts your organization, using inbuilt or custom training to reduce risk and better educate end users about threats.
 
-## What you'll need
+## What you need
 
 - Microsoft Defender for Office 365 Plan 2 (included as part of E5)
 - Sufficient permissions (Security Administrator role)
-- 5-10 minutes to perform the steps below.
+- 5-10 minutes to perform the following procedures.
 
 ## Send a payload to target users
 
@@ -53,4 +53,4 @@ Attack simulation training allows you to run realistic but benign cyber attack s
 
 ### Further reading
 
-To learn how Attack Simulation works see [Simulate a phishing attack with Attack simulation training - Office 365 | Microsoft Docs](../../office-365-security/attack-simulation-training-simulations.md)
+To learn how Attack Simulation works see [Simulate a phishing attack with Attack simulation training - Office 365 | Microsoft Docs](../../office-365-security/attack-simulation-training-simulations.md).
