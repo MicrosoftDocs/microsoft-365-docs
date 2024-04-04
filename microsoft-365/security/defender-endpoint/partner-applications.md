@@ -87,7 +87,7 @@ Logo|Partner name|Description
 ![Logo for Blue Hexagon for Network.](media/bluehexagon-logo.png)|[Blue Hexagon for Network](/training/modules/explore-malware-threat-protection/)|Blue Hexagon has built the industry's first real-time deep learning platform for network threat protection
 ![Logo for CyberMDX.](media/cybermdx-logo.png)|[CyberMDX](https://go.microsoft.com/fwlink/?linkid=2135620)|Cyber MDX integrates comprehensive healthcare assets visibility, threat prevention and repose into your Defender for Endpoint environment
 ![Logo for HYAS Protect.](media/hyas-logo.png)|[HYAS Protect](https://go.microsoft.com/fwlink/?linkid=2156763)|HYAS Protect utilizes authoritative knowledge of attacker infrastructure to proactively protect Microsoft Defender for Endpoint endpoints from cyberattacks
-![Logo for Vectra Network Detection and Response (NDR).](images/vectra-logo.png)|[Vectra Network Detection and Response (NDR)](https://go.microsoft.com/fwlink/?linkid=866934)|Vectra applies AI & security research to detect and respond to cyber-attacks in real time
+![Logo for Vectra Network Detection and Response (NDR).](media/vectra-logo.png)|[Vectra Network Detection and Response (NDR)](https://go.microsoft.com/fwlink/?linkid=866934)|Vectra applies AI & security research to detect and respond to cyber-attacks in real time
 
 ### Cross platform
 
