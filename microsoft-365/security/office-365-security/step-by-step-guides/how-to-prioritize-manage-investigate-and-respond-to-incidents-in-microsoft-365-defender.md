@@ -42,7 +42,7 @@ If you are looking for specific alerts, either use the incident search capabilit
 
 ## Investigate & Respond to Incidents
 
-After you have prioritized your incident queue, click on the Incident you'd like to investigate to load the incidents Overview page. There will be useful information such as *MITRE ATT&CK techniques observed* and a *timeline of the attack*.
+After you have prioritized your incident queue, select the Incident you'd like to investigate to load the incidents Overview page. You see useful information, such as *MITRE ATT&CK techniques observed* and a *timeline of the attack*.
 
 The tabs at the top of the incident page allow you to explore more details such as the affected users, mailboxes, endpoints, and et cetera.
 
@@ -58,8 +58,8 @@ You can start using *Action Center* to act on pending action items from all inci
 
 ## More Information
 
-[Manage incidents in Microsoft Defender XDR | Microsoft Docs](../../defender/manage-incidents.md)
+[Manage incidents in Microsoft Defender XDR | Microsoft Docs](../../defender/manage-incidents.md).
 
-[How automated investigation and response works in Microsoft Defender for Office 365](../air-about-office.md)
+[How automated investigation and response works in Microsoft Defender for Office 365](../air-about-office.md).
 
-[Remediation actions in Microsoft Defender for Office 365](../air-remediation-actions.md)
+[Remediation actions in Microsoft Defender for Office 365](../air-remediation-actions.md).
