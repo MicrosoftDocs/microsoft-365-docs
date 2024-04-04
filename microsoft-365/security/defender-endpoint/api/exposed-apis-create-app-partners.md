@@ -104,7 +104,7 @@ In the following example we use **'Read all alerts'** permission:
 
     **Important**: After you select **Add**, make sure to copy the generated secret value. You won't be able to retrieve it after you leave!
 
-     :::image type="content" source="../images/webapp-create-key2.png" alt-text="The create app key" lightbox="../images/webapp-create-key2.png":::
+     :::image type="content" source="../media/webapp-create-key2.png" alt-text="The create app key" lightbox="../media/webapp-create-key2.png":::
 
 4. Write down your application ID:
 
