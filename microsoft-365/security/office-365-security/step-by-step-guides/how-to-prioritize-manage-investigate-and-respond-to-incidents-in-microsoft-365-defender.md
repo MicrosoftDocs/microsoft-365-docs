@@ -48,7 +48,7 @@ The tabs at the top of the incident page allow you to explore more details such 
 
 The *Evidence and Response* tab shows items identified as related to the original alert via the investigation.
 
-Any items showing as *Pending Action* within Evidence and Response are awaiting approval from an administrator.  Sorting by the remediation status column in the *All Evidence* view is recommended, followed by clicking the entity or cluster to load the flyout menu where you can then approve the actions if appropriate.
+Any items showing as *Pending Action* within Evidence and Response are awaiting approval from an administrator. Sorting by the remediation status column in the *All Evidence* view is recommended, followed by clicking the entity or cluster to load the flyout menu where you can then approve the actions if appropriate.
 
 If you need to understand the items involved further, you can use the incident graph to see the visual linkage of the evidence and entities involved. Alternatively, you can review the underlying investigations, which shows more of the entities and items involved in the security event.
 
