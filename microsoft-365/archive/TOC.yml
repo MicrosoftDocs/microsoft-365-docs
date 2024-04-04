@@ -2,21 +2,21 @@
       href: index.yml
  
     - name: Overview 
-      href: /microsoft-365/syntex/archive/archive-overview
+      href: archive-overview.md
     - name: Admin setup 
-      href: /microsoft-365/syntex/archive/archive-setup
+      href: archive-setup.md
     - name: Pricing model 
-      href: /microsoft-365/syntex/archive/archive-pricing
+      href: archive-pricing.md
     - name: Archive states 
-      href: /microsoft-365/syntex/archive/archive-states
+      href: archive-states.md
     - name: Manage 
-      href: /microsoft-365/syntex/archive/archive-manage
+      href: archive-manage.md
     - name: Compliance 
-      href: /microsoft-365/syntex/archive/archive-compliance
+      href: archive-compliance.md
     - name: End user experience 
-      href: /microsoft-365/syntex/archive/archive-end-user
+      href: archive-end-user.md
     - name: FAQs
-      href: /microsoft-365/syntex/archive/archive-faq
+      href: archive-faq.md
 
 
 
