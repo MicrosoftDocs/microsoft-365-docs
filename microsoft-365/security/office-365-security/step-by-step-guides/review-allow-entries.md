@@ -21,13 +21,13 @@ ms.date: 01/04/2023
 
 # Introduction
 
-Historically, allowlists enabled Exchange Online Protection to ignore the signals indicating an email is malicious. It's commonplace for vendors to request IPs, domains, and sender addresses be overridden unnecessarily. Attackers have been known to take advantage of this mistake and it's a pressing security loophole to have unnecessary allow list entries. This step-by-step guide walks you through using advanced hunting to identify these misconfigured overrides and remove them, so you can increase your organization's security posture.
+Historically, allowlists enabled Exchange Online Protection to ignore the signals indicating an email is malicious. It's commonplace for vendors to request IPs, domains, and sender addresses be overridden unnecessarily. Attackers have been known to take advantage of this mistake and it's a pressing security loophole to have unnecessary allowlist entries. This step-by-step guide walks you through using advanced hunting to identify these misconfigured overrides and remove them, so you can increase your organization's security posture.
 
-## What you will need
+## What you need
 
 - Microsoft Defender for Office 365 Plan 2 (Included in E5 plans, or trial available at aka.ms/trymdo)
 - Sufficient permissions (Security reader role)
-- 5-10 minutes to do the steps below.
+- 5-10 minutes to do the following procedures.
 
 ## Common steps for all the below queries
 
