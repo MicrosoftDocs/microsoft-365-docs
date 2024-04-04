@@ -14,7 +14,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: edr
 search.appverid: met150
-ms.date: 05/02/2023
+ms.date: 04/03/2024
 ---
 
 # Investigate entities on devices using live response
@@ -27,7 +27,7 @@ ms.date: 05/02/2023
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-Live response gives security operations teams instantaneous access to a device (also referred to as a machine) using a remote shell connection. This gives you the power to do in-depth investigative work and take immediate response actions to promptly contain identified threats in real time.
+Live response gives security operations teams instantaneous access to a device (also referred to as a machine) using a remote shell connection. Live response gives you the power to do in-depth investigative work and take immediate response actions to promptly contain identified threats in real time.
 
 Live response is designed to enhance investigations by enabling your security operations team to collect forensic data, run scripts, send suspicious entities for analysis, remediate threats, and proactively hunt for emerging threats.
 
@@ -74,7 +74,7 @@ Before you can initiate a session on a device, make sure you fulfill the followi
 
 - **Enable live response from the advanced settings page**.
 
-  You'll need to enable the live response capability in the [Advanced features settings](advanced-features.md) page.
+  You need to enable the live response capability in the [Advanced features settings](advanced-features.md) page.
 
   > [!NOTE]
   > Only admins and users who have "Manage Portal Settings" permissions can enable live response.
@@ -92,11 +92,11 @@ Before you can initiate a session on a device, make sure you fulfill the followi
   > [!WARNING]
   > Allowing the use of unsigned scripts may increase your exposure to threats.
 
-  Running unsigned scripts is not recommended as it can increase your exposure to threats. If you must use them however, you'll need to enable the setting in the [Advanced features settings](advanced-features.md) page.
+  Running unsigned scripts isn't recommended as it can increase your exposure to threats. If you must use them however, you need to enable the setting in the [Advanced features settings](advanced-features.md) page.
 
 - **Ensure that you have the appropriate permissions**.
 
-  Only users who have been provisioned with the appropriate permissions can initiate a session. For more information on role assignments, see [Create and manage roles](user-roles.md).
+  Only users who are provisioned with the appropriate permissions can initiate a session. For more information on role assignments, see [Create and manage roles](user-roles.md).
 
   > [!IMPORTANT]
   > The option to upload a file to the library is only available to users with "Manage Security Settings" permission.
@@ -147,26 +147,26 @@ The following commands are available for user roles that are granted the ability
 
 | Command  | Description  | Windows and Windows Server  | macOS  | Linux  |
 |---|---|---|---|---|
-| cd  | Changes the current directory.  | Y  | Y  | Y  |
-| cls  | Clears the console screen.  | Y  | Y  | Y  |
-| connect  | Initiates a live response session to the device.  | Y  | Y  | Y  |
-| connections  | Shows all the active connections.  | Y  | N  | N  |
-| dir  | Shows a list of files and subdirectories in a directory.  | Y  | Y  | Y  |
-| drivers  | Shows all drivers installed on the device.  | Y  | N  | N  |
-| fg `<command ID>`  | Place the specified job in the foreground, making it the current job.  NOTE: fg takes a 'command ID` available from jobs, not a PID.  | Y  | Y  | Y  |
-| fileinfo  | Get information about a file.  | Y  | Y  | Y  |
-| findfile  | Locates files by a given name on the device.  | Y  | Y  | Y  |
-| getfile <file_path>  | Downloads a file.  | Y  | Y  | Y  |
-| help  | Provides help information for live response commands.  | Y  | Y  | Y  |
-| jobs  | Shows currently running jobs, their ID and status.  | Y  | Y  | Y  |
-| persistence  | Shows all known persistence methods on the device.  | Y  | N  | N  |
-| processes  | Shows all processes running on the device.  | Y  | Y  | Y  |
-| registry  | Shows registry values.  | Y  | N  | N  |
-| scheduledtasks  | Shows all scheduled tasks on the device.  | Y  | N  | N  |
-| services  | Shows all services on the device.  | Y  | N  | N  |
-| startupfolders  | Shows all known files in startup folders on the device.  | Y  | N  | N  |
-| status  | Shows the status and output of specific command.  | Y  | Y  | Y  |
-| trace  | Sets the terminal's logging mode to debug.  | Y  | Y  | Y  |
+| `cd`  | Changes the current directory.  | Y  | Y  | Y  |
+| `cls`  | Clears the console screen.  | Y  | Y  | Y  |
+| `connect`  | Initiates a live response session to the device.  | Y  | Y  | Y  |
+| `connections`  | Shows all the active connections.  | Y  | N  | N  |
+| `dir`  | Shows a list of files and subdirectories in a directory.  | Y  | Y  | Y  |
+| `drivers`  | Shows all drivers installed on the device.  | Y  | N  | N  |
+| `fg <command ID>`  | Place the specified job in the foreground, making it the current job.  Note that `fg` takes a `command ID` available from jobs, not a PID.  | Y  | Y  | Y  |
+| `fileinfo`  | Get information about a file.  | Y  | Y  | Y  |
+| `findfile`  | Locates files by a given name on the device.  | Y  | Y  | Y  |
+| `getfile <file_path>`  | Downloads a file.  | Y  | Y  | Y  |
+| `help`  | Provides help information for live response commands.  | Y  | Y  | Y  |
+| `jobs`  | Shows currently running jobs, their ID and status.  | Y  | Y  | Y  |
+| `persistence`  | Shows all known persistence methods on the device.  | Y  | N  | N  |
+| `processes`  | Shows all processes running on the device.  | Y  | Y  | Y  |
+| `registry`  | Shows registry values.  | Y  | N  | N  |
+| `scheduledtasks`  | Shows all scheduled tasks on the device.  | Y  | N  | N  |
+| `services`  | Shows all services on the device.  | Y  | N  | N  |
+| `startupfolders`  | Shows all known files in startup folders on the device.  | Y  | N  | N  |
+| `status`  | Shows the status and output of specific command.  | Y  | Y  | Y  |
+| `trace`  | Sets the terminal's logging mode to debug.  | Y  | Y  | Y  |
 
 ### Advanced commands
 
@@ -174,16 +174,16 @@ The following commands are available for user roles that are granted the ability
 
 | Command  | Description  | Windows and Windows Server  | macOS  | Linux  |
 |---|---|---|---|---|
-| analyze  | Analyses the entity with various incrimination engines to reach a verdict.  | Y  | N  | N  |
-| collect  | Collects forensics package from device.  | N  | Y  | Y  |
-| isolate  | Disconnects the device from the network while retaining connectivity to the Defender for Endpoint service.  | N  | Y  | N  |
-| release  | Releases a device from network isolation.  | N  | Y  | N  |
-| run  | Runs a PowerShell script from the library on the device.  | Y  | Y  | Y  |
-| library  | Lists files that were uploaded to the live response library.  | Y  | Y  | Y  |
-| putfile  | Puts a file from the library to the device. Files are saved in a working folder and are deleted when the device restarts by default.  | Y  | Y  | Y  |
-| remediate  | Remediates an entity on the device. The remediation action will vary depending on the entity type:  File: delete  Process: stop, delete image file  Service: stop, delete image file  Registry entry: delete  Scheduled task: remove  Startup folder item: delete file  NOTE: This command has a prerequisite command. You can use the -auto command in conjunction with remediate to automatically run the prerequisite command.  | Y  | Y  | Y  |
-| scan | Runs a Quick antivirus scan to help identify and remediate malware. | N | Y | Y |
-| undo  | Restores an entity that was remediated.  | Y  | N  | N  |
+| `analyze`  | Analyses the entity with various incrimination engines to reach a verdict.  | Y  | N  | N  |
+| `collect`  | Collects forensics package from device.  | N  | Y  | Y  |
+| `isolate`  | Disconnects the device from the network while retaining connectivity to the Defender for Endpoint service.  | N  | Y  | N  |
+| `release`  | Releases a device from network isolation.  | N  | Y  | N  |
+| `run`  | Runs a PowerShell script from the library on the device.  | Y  | Y  | Y  |
+| `library`  | Lists files that were uploaded to the live response library.  | Y  | Y  | Y  |
+| `putfile`  | Puts a file from the library to the device. Files are saved in a working folder and are deleted when the device restarts by default.  | Y  | Y  | Y  |
+| `remediate`  | Remediates an entity on the device. The remediation action varies, depending on the entity type: <br/>- File: delete<br/>- Process: stop, delete image file<br/>- Service: stop, delete image file<br/>- Registry entry: delete<br/>- Scheduled task: remove<br/>- Startup folder item: delete file<br/><br/>This command has a prerequisite command. You can use the `-auto` command in conjunction with remediate to automatically run the prerequisite command.  | Y  | Y  | Y  |
+| `scan` | Runs a quick antivirus scan to help identify and remediate malware. | N | Y | Y |
+| `undo`  | Restores an entity that was remediated.  | Y  | N  | N  |
 
 ## Use live response commands
 
@@ -336,4 +336,5 @@ Select the **Command log** tab to see the commands used on the device during a s
 ## Related article
 
 - [Live response command examples](live-response-command-examples.md)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
