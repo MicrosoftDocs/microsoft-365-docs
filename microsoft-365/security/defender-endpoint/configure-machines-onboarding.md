@@ -41,7 +41,7 @@ Watch this video to learn how to easily onboard clients with Microsoft Defender 
 
 The **Onboarding** card provides a high-level overview of your onboarding rate by comparing the number of Windows devices that have actually onboarded to Defender for Endpoint against the total number of Intune-managed Windows devices.
 
-:::image type="content" source="media/secconmgmt_onboarding_card.png" alt-text="The Device configuration management Onboarding card" lightbox="media/secconmgmt_onboarding_card.png":::
+:::image type="content" source="media/secconmgmt-onboarding-card.png" alt-text="The Device configuration management Onboarding card" lightbox="media/secconmgmt-onboarding-card.png":::
 
 *Card showing onboarded devices compared to the total number of Intune-managed Windows devices*
 
@@ -54,7 +54,7 @@ Defender for Endpoint provides several convenient options for [onboarding Window
 
 From the **Onboarding** card, select **Onboard more devices** to create and assign a profile on Intune. The link takes you to the device compliance page on Intune, which provides a similar overview of your onboarding state.
 
-:::image type="content" source="media/secconmgmt_onboarding_1deviceconfprofile.png" alt-text="The Microsoft Defender for Endpoint device compliance page on Intune device management" lightbox="media/secconmgmt_onboarding_1deviceconfprofile.png":::
+:::image type="content" source="media/secconmgmt-onboarding-1deviceconfprofile.png" alt-text="The Microsoft Defender for Endpoint device compliance page on Intune device management" lightbox="media/secconmgmt-onboarding-1deviceconfprofile.png":::
 
 *Microsoft Defender for Endpoint device compliance page on Intune device management*
 
