@@ -42,9 +42,9 @@ Instead, these guides are streamlined for **learning by doing**, **testing**, an
 
 ## Examples
 
-- If you've just got Microsoft Defender for Office 365, and you want to get protected as quickly as possible use [Preset security policies](ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies.md).
+- If you recently got Microsoft Defender for Office 365, and you want to get protected as quickly as possible use [Preset security policies](ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies.md).
 
-- Take advantage of additional protections designed for [members of your c-suite](protect-your-c-suite-with-priority-account-protection.md).
+- Take advantage of other protections designed for [members of your c-suite](protect-your-c-suite-with-priority-account-protection.md).
 
 - How do you [setup](how-to-run-attack-simulations-for-your-team.md) or [automate](how-to-setup-attack-simulation-training-for-automated-attacks-and-training.md) a new simulation quickly and easily?
 
