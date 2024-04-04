@@ -66,5 +66,5 @@ When your security team has decided on which categories of items that users can 
 
 ## More information
 
-Learn more about organization branding and notification settings here [Quarantine policies - Office 365 | Microsoft Docs](../../office-365-security/quarantine-policies.md).
+Learn more about organization branding and notification settings here [Quarantine policies](../../office-365-security/quarantine-policies.md).
 
