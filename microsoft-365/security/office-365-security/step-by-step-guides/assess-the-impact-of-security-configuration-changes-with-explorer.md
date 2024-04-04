@@ -55,8 +55,8 @@ This step-by-step guide takes you through assessing a change, and exporting the 
 
 ### Further reading
 
-Consider using secure presets [Ensuring you always have the optimal security controls with preset security policies](ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies.md)
+Consider using secure presets [Ensuring you always have the optimal security controls with preset security policies](ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies.md).
 
-You can also manage email authentication issues with spoof intelligence [Spoof intelligence insight](../anti-spoofing-spoof-intelligence.md)
+You can also manage email authentication issues with spoof intelligence [Spoof intelligence insight](../anti-spoofing-spoof-intelligence.md).
 
-Learn more about email authentication [Email Authentication in Exchange Online Protection](../email-authentication-about.md)
+Learn more about email authentication [Email Authentication in Exchange Online Protection](../email-authentication-about.md).
