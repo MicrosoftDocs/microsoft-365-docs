@@ -28,9 +28,9 @@ landingContent:
       - linkListType: overview
         links:
           - text: Introduction to Microsoft 365 Archive
-            url: /microsoft-365/syntex/archive/archive-overview
+            url: archive-overview.md
           - text: FAQs
-            url: /microsoft-365/syntex/archive/archive-faq
+            url: archive-faq.md
 
 # Card 2
   - title: Get started
@@ -38,9 +38,9 @@ landingContent:
       - linkListType: overview
         links:
           - text: Set up Microsoft 365 Archive
-            url: /microsoft-365/syntex/archive/archive-setup
+            url: archive-setup.md
           - text: Pricing model
-            url: /microsoft-365/syntex/archive/archive-pricing
+            url: archive-pricing.md
 
 # Card 3
   - title: Archive sites
@@ -48,11 +48,11 @@ landingContent:
       - linkListType: overview
         links:
           - text: Manage Microsoft 365 Archive
-            url: /microsoft-365/syntex/archive/archive-manage
+            url: archive-manage.md
           - text: Archive states
-            url: /microsoft-365/syntex/archive/archive-states
+            url: archive-states.md
           - text: End user experience
-            url: /microsoft-365/syntex/archive/archive-end-user
+            url: archive-end-user.md
 
 # Card 4
   - title: Security & compliance
@@ -60,7 +60,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: Compliance features
-            url: /microsoft-365/syntex/archive/archive-compliance
+            url: archive-compliance.md
 
 # Card 5
   - title: More solutions
