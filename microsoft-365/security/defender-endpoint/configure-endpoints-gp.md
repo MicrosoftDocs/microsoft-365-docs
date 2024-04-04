@@ -309,7 +309,7 @@ Browse to **Computer Configuration** \> **Policies** \> **Administrative Templat
 
 :::image type="content" source="media/signature-update-1.png" alt-text="Signature update" lightbox="media/signature-update-1.png":::
 
-:::image type="content" source="images/signature-update-2.png" alt-text="Signature definition update" lightbox="images/signature-update-2.png":::
+:::image type="content" source="media/signature-update-2.png" alt-text="Signature definition update" lightbox="media/signature-update-2.png":::
 
 ### Configure cloud deliver timeout and protection level
 
