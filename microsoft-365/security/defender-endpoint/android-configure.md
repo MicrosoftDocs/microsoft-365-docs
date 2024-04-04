@@ -89,7 +89,7 @@ Network protection in Microsoft Defender for endpoint is disabled by default. Ad
 
    Any other separation characters are invalid.
 
-   > ![Image of trusted CA certificate.](images/trustca.png)
+   > ![Image of trusted CA certificate.](media/trustca.png)
 
 1. For other configurations related to Network protection, add the following keys and appropriate corresponding value.
 
