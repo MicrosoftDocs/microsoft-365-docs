@@ -31,54 +31,39 @@ Microsoft and SAP advise against deploying Microsoft Defender for Endpoint on Li
 
 Using tools like Endpoint Security Policies to deploy Defender for Endpoint to an entire SAP landscape without testing can cause downtime. Ensure the following factors are tested:
 
-1.  Deploy Defender for Endpoint with Tamper Protection enabled. If issues arise, disable Real Time Scanning and configure scheduled scans. Open a support case using the Microsoft Defender Portal if necessary.
-2.  Exclude DBMS files and executables per DBMS vendor recommendations.
-3.  Analyze SAPMNT, SAP TRANS_DIR, Spool, and Job Log directories. Archive files if there are over 100,000 files.
-4.  Confirm the performance limits and quotas of the shared file system used for SAPMNT. The SMB share source could be a NetApp appliance, a Windows server shared disk, or Azure Files SMB.
-5.  Configure exclusions to prevent all SAP application servers from scanning the SAPMNT share simultaneously, as this may overload shared storage.
-6.  Host interface files on a dedicated non-SAP file server with Real Time Protection enabled. SAP servers should not be used for interface files.
+1. Deploy Defender for Endpoint with Tamper Protection enabled. If issues arise, disable Real Time Scanning and configure scheduled scans. Open a support case using the Microsoft Defender Portal if necessary.
+
+2. Exclude DBMS files and executables per DBMS vendor recommendations.
+
+3. Analyze SAPMNT, SAP TRANS_DIR, Spool, and Job Log directories. Archive files if there are over 100,000 files.
+
+4. Confirm the performance limits and quotas of the shared file system used for SAPMNT. The SMB share source could be a NetApp appliance, a Windows server shared disk, or Azure Files SMB.
+
+5. Configure exclusions to prevent all SAP application servers from scanning the SAPMNT share simultaneously, as this may overload shared storage.
+
+6. Host interface files on a dedicated non-SAP file server with Real Time Protection enabled. SAP servers should not be used for interface files.
 
 ### Important Configuration Settings for Microsoft Defender for Endpoint with SAP on Linux
 
 The following sections detail essential configuration settings for Microsoft Defender for Endpoint on Linux with SAP:
 
-1.  **Microsoft Defender for Endpoint Overview:** Learn about Microsoft 365 Defender at [What is Microsoft 365 Defender? \| Microsoft Learn](https://docs.microsoft.com/en-us/learn/modules/introduction-to-microsoft-365-defender/).
+1. **Microsoft Defender for Endpoint Overview:** Learn about Microsoft 365 Defender at [What is Microsoft 365 Defender?](/learn/modules/introduction-to-microsoft-365-defender/).
+
 2.  **Checking Microsoft Defender Antivirus status:** Open a command prompt with Administrative rights and run the provided PowerShell commands.
+
 3.  **Checking Microsoft Defender Endpoint Detection and Response (EDR) status:** Use the Get-Service command in PowerShell to check the status of the EDR service.
+
 4.  **Updating Microsoft Defender Antivirus software components:** Ensure engine and signatures are updated via Windows Update. Contact the Security Team if updates fail.
-5.  **Behavior Monitoring:** Understand Behavior Monitoring at [Behavioral blocking and containment \| Microsoft Learn](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/behavioral-blocking-and-containment).
+
+5.  **Behavior Monitoring:** Understand Behavior Monitoring at [Behavioral blocking and containment](/windows/security/threat-protection/microsoft-defender-atp/behavioral-blocking-and-containment).
+
 6.  **Recommended setting for RealTimeProtectionEnabled:** Enable Real Time Scanning with Tamper Protection and Behavior Monitoring, unless a specific problem has been identified.
+
 7.  **Scanning network shares with Defender for Endpoint on Linux:** By default, Microsoft Defender Antivirus scans SMB shared network file systems on Windows. However, it does not scan NFS file systems during scheduled scans on Linux. EDR on Windows might scan SMB shared network file systems.
+
 8.  **Defender for Endpoint Client Analyzer Support tool:** Download the latest version of the Microsoft Defender for Endpoint client analyzer at <https://aka.ms/MDEAnalyzer>.
-9.  **Opening a support case:** Contact Microsoft Defender for Endpoint support at [Contact Microsoft Defender for Endpoint support \| Microsoft Learn](https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/contact-support?view=o365-worldwide).
 
-For more helpful commands, refer to the [Microsoft Defender for Endpoint with SAP on Windows documentation](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-on-windows-server).
+9.  **Opening a support case:** Contact Microsoft Defender for Endpoint support at [Contact Microsoft Defender for Endpoint support](/microsoft-365/security/defender-endpoint/contact-support?view=o365-worldwide).
 
-Recommendations:
-
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>SEO Keywords</th>
-<th>Suggested Additions</th>
-<th>Related Articles</th>
-<th>Possible Issues or Concerns</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Microsoft Defender for Endpoint, Linux, SAP, deployment, configuration</td>
-<td>N/A</td>
-<td><a href="https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint">Microsoft Defender for Endpoint</a><br />
-<a href="https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/linux-install-manually?view=o365-worldwide">Install Microsoft Defender for Endpoint on Linux manually</a></td>
-<td>Ensure compatibility with specific SAP components and configurations.</td>
-</tr>
-</tbody>
-</table>
+For more helpful commands, refer to the [Microsoft Defender for Endpoint with SAP on Windows documentation](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-on-windows-server).
 
