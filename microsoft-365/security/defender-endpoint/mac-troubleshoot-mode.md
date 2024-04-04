@@ -90,11 +90,11 @@ or newer.
 
      For example, when you use `mdatp config real-time-protection --value disabled` command to disable real time protection, you'll be prompted to enter your password. Select **OK** after entering your password.
 
-     :::image type="content" source="images/ts-mode-rtp-disable.png" alt-text="Screenshot displaying the screenshot of real time protection being disabled.":::
+     :::image type="content" source="media/ts-mode-rtp-disable.png" alt-text="Screenshot displaying the screenshot of real time protection being disabled.":::
 
      The output report similar to the following screenshot will be displayed on running mdatp health with `real_time_protection_enabled` as "false" and `tamper_protection` as "block."
   
-     :::image type="content" source="images/ts-mode-mdatp-health.png" alt-text="Screnshot displaying the screenshot of the output report of mdatp health running.":::
+     :::image type="content" source="media/ts-mode-mdatp-health.png" alt-text="Screnshot displaying the screenshot of the output report of mdatp health running.":::
 
 ## Advanced hunting queries for detection
 
