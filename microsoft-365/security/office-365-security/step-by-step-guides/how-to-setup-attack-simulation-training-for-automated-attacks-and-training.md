@@ -1,6 +1,6 @@
 ---
 title: How to setup automated attacks and training within Attack simulation training
-description: The steps to automate Attack Simulation training and send a payload to target users. By following this guide, you will learn to create automated attack flows with specific techniques and payloads.
+description: The steps to automate Attack Simulation training and send a payload to target users. By following this guide, you'll learn to create automated attack flows with specific techniques and payloads.
 ms.service: microsoft-365-security
 f1.keywords:
   - NOCSH
@@ -23,11 +23,11 @@ ms.date: 01/31/2023
 
 Attack simulation training lets you run benign attack simulations on your organization to assess your phishing risk and teach your users how to better avoid phish attacks. By following this guide, you can configure automated flows with specific techniques and payloads that run when the specified conditions are met, launching simulations against your organization.
 
-## What you'll need
+## What you need
 
 - Microsoft Defender for Office 365 Plan 2 (included as part of E5).
 - Sufficient permissions (Security Administrator role).
-- 5-10 minutes to perform the steps below.
+- 5-10 minutes to perform the following procedures.
 
 ## Send a payload to target users
 
