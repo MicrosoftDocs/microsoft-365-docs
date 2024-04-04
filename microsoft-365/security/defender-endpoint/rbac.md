@@ -39,9 +39,9 @@ Large geo-distributed security operations teams typically adopt a tier-based mod
 
 |Tier|Description|
 |---|---|
-|Tier 1|**Local security operations team / IT team** <br> This team usually triages and investigates alerts contained within their geolocation and escalates to Tier 2 in cases where an active remediation is required.|
-|Tier 2|**Regional security operations team** <br> This team can see all the devices for their region and perform remediation actions.|
-|Tier 3|**Global security operations team** <br> This team consists of security experts and are authorized to see and perform all actions from the portal.|
+|Tier 1|**Local security operations team / IT team** <br/> This team usually triages and investigates alerts contained within their geolocation and escalates to Tier 2 in cases where an active remediation is required.|
+|Tier 2|**Regional security operations team** <br/>This team can see all the devices for their region and perform remediation actions.|
+|Tier 3|**Global security operations team** <br/>This team consists of security experts and are authorized to see and perform all actions from the portal.|
 
 > [!NOTE]
 > For Tier 0 assets, refer to [Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure) for security admins to provide more granular control of Microsoft Defender for Endpoint and Microsoft Defender XDR.
@@ -82,4 +82,5 @@ Someone with a Defender for Endpoint Global administrator role has unrestricted 
 
 - [RBAC roles](../office-365-security/migrate-to-defender-for-office-365-onboard.md#rbac-roles)
 - [Create and manage device groups in Microsoft Defender for Endpoint](machine-groups.md)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

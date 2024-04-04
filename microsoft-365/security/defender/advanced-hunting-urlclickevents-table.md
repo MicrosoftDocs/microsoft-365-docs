@@ -1,14 +1,9 @@
 ---
 title: UrlClickEvents table in the advanced hunting schema
 description: Learn how to hunt for phishing campaigns and suspicious clicks using the UrlClickEvents table in the advanced hunting schema.
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft Defender XDR, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, UrlClickEvents, SafeLinks, phishing, malware, malicious clicks, outlook, teams, email, office365
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
 ms.subservice: adv-hunting
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: 
   - NOCSH
 ms.author: maccruz

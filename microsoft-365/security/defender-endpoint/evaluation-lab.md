@@ -216,7 +216,7 @@ If you are looking for a pre-made simulation, you can use our ["Do It Yourself" 
 
 1. Connect to your device and run an attack simulation by selecting **Connect**.
 
-    :::image type="content" source="images/test-machine-table.png" alt-text="The Connect button for the test devices" lightbox="images/test-machine-table.png":::
+    :::image type="content" source="media/test-machine-table.png" alt-text="The Connect button for the test devices" lightbox="media/test-machine-table.png":::
 
    :::image type="content" source="media/remote-connection.png" alt-text="The remote desktop connection screen" lightbox="media/remote-connection.png":::
 
@@ -252,7 +252,7 @@ Running threat simulations using third-party platforms is a good way to evaluate
 
 2. Select a threat simulator.
 
-   :::image type="content" source="images/select-simulator.png" alt-text="The threat simulator selection" lightbox="images/select-simulator.png":::
+   :::image type="content" source="media/select-simulator.png" alt-text="The threat simulator selection" lightbox="media/select-simulator.png":::
 
 3. Choose a simulation or look through the simulation gallery to browse through the available simulations.
 
@@ -313,5 +313,5 @@ Your feedback helps us get better in protecting your environment from advanced a
 
 Let us know what you think, by selecting **Provide feedback**.
 
-:::image type="content" source="images/send-us-feedback-eval-lab.png" alt-text="The feedback page" lightbox="images/send-us-feedback-eval-lab.png":::
+:::image type="content" source="media/send-us-feedback-eval-lab.png" alt-text="The feedback page" lightbox="media/send-us-feedback-eval-lab.png":::
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

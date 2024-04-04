@@ -241,7 +241,7 @@ C:\windows\MMA\filename - **so the installation files are local to the server**:
 
 Repeat the process but create item level targeting on the COMMON tab, so the file only gets copied to the appropriate platform/Operating system version in scope:
 
-:::image type="content" source="images/targeteditor.png" alt-text="The target editor" lightbox="images/targeteditor.png":::
+:::image type="content" source="media/targeteditor.png" alt-text="The target editor" lightbox="media/targeteditor.png":::
 
 For Windows Server 2008 R2 you'll need (and it will only copy down) the following:
 
@@ -268,7 +268,7 @@ As the Script has an exit method and wont re-run if the MMA is installed, you co
 
 :::image type="content" source="media/deploymmadowmload.png" alt-text="The deploy mma download properties" lightbox="media/deploymmadowmload.png":::
 
-:::image type="content" source="images/tasksch.png" alt-text="The task scheduler" lightbox="images/tasksch.png":::
+:::image type="content" source="media/tasksch.png" alt-text="The task scheduler" lightbox="media/tasksch.png":::
 
 As mentioned in the onboarding documentation for Server specifically around Server 2008 R2 please see below:
 For Windows Server 2008 R2 SP1, ensure that you fulfill the following requirements:
