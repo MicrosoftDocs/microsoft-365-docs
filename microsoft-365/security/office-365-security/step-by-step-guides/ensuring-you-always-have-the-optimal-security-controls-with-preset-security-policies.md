@@ -1,11 +1,7 @@
 ---
 title: Steps to set up the Standard or Strict preset security policies for Microsoft Defender for Office 365
 description: Step to set up preset security policies in Microsoft Defender for Office 365 so you have the security recommended by the product. Preset policies set a security profile of either *Standard* or *Strict*. Set these and Microsoft Defender for Office 365 will manage and maintain these security controls for you.
-search.product:
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords:
   - NOCSH
 author: chrisda
