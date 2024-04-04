@@ -53,8 +53,8 @@ When your security team has decided on which categories of items that users can 
 1. Select each of the following: **Anti-spam policies**, **Anti-phishing policy**, **Anti-Malware policy**.
 1. Select **Create policy** and choose **Inbound**.
 1. Add policy Name, users, groups, or domains to apply the policy to, and **Next**.
-1. In the **Actions** tab, select **Quarantine message** for categories. You notice an another panel for *select quarantine policy*. Use the dropdown to select the quarantine policy you created earlier.
-1. Move on to the **Review** section and click the **Confirm** button to create the new policy.
+1. In the **Actions** tab, select **Quarantine message** for categories. You notice another panel for *select quarantine policy*. Use the dropdown to select the quarantine policy you created earlier.
+1. Move on to the **Review** section and select the **Confirm** button to create the new policy.
 1. Repeat these same steps for the other policies: **Anti-phishing policy**, **Anti-Malware policy**, and **Safe Attachment policy**.
 > [!TIP]
 > For more detailed information on what you've learned so far, see [Configure spam filter policies - Office 365](../../office-365-security/anti-spam-policies-configure.md)| [Configure anti-phishing policies in EOP](../../office-365-security/anti-phishing-policies-eop-configure.md) | [Configure anti-malware policies](../../office-365-security/anti-malware-policies-configure.md)| [Set up Safe Attachments policies in Microsoft Defender for Office 365](../../office-365-security/safe-attachments-policies-configure.md)
@@ -66,5 +66,5 @@ When your security team has decided on which categories of items that users can 
 
 ## More information
 
-Learn more about organization branding and notification settings here [Quarantine policies - Office 365 | Microsoft Docs](../../office-365-security/quarantine-policies.md)
+Learn more about organization branding and notification settings here [Quarantine policies - Office 365 | Microsoft Docs](../../office-365-security/quarantine-policies.md).
 
