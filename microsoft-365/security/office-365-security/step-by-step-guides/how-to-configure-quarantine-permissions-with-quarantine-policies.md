@@ -21,15 +21,15 @@ ms.date: 01/31/2023
 
 # How to configure quarantine permissions and policies
 
-Providing security admins and users with a very simple way to manage false positive folders is vital given the increased demand for a more aggressive security posture with the evolution of hybrid work. Taking a prescriptive approach, admins and users can achieve this with the guidance below.
+Providing security admins and users with a simple way to manage false positive folders is vital, given the increased demand for a more aggressive security posture with the evolution of hybrid work. Taking a prescriptive approach, admins and users can achieve this with the guidance in this article.
 
 > [!TIP]
 > For a short video aimed at admins trying to set quarantine permissions and policies, [see this link](https://www.youtube.com/watch?v=vnar4HowfpY). If you are an end user opt for this [1 minute overview](https://www.youtube.com/watch?v=s-vozLO43rI) of the process.
 
-## What you will need
+## What you need
 
 - Sufficient permissions (Security Administrator role)
-- 5 minutes to perform the steps below.
+- 5 minutes to perform the following procedures.
 
 ## Deciding between built-in or custom quarantine policies.
 
