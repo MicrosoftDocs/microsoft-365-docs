@@ -53,7 +53,7 @@ Use the following steps to schedule scans:
    vi /etc/anacron
    ```
 
-1.  :::image type="content" source="images/vi_etc_anacron.png" alt-text="Sample Anacron Job Linux." lightbox="images/vi_etc_anacron.png" link="images/vi_etc_anacron.png":::
+1.  :::image type="content" source="media/vi_etc_anacron.png" alt-text="Sample Anacron Job Linux." lightbox="media/vi_etc_anacron.png" link="media/vi_etc_anacron.png":::
 
    ```shell
    # /etc/anacrontab: configuration file for anacron
@@ -78,7 +78,7 @@ Use the following steps to schedule scans:
    ls -lh /etc/cron*
    ```
 
-    :::image type="content" source="images/vi_etc_anacron.png" alt-text="Sample Anacron Job Linux." lightbox="images/vi_etc_anacron.png" link="images/vi_etc_anacron.png":::
+    :::image type="content" source="media/vi_etc_anacron.png" alt-text="Sample Anacron Job Linux." lightbox="media/vi_etc_anacron.png" link="media/vi_etc_anacron.png":::
 
    ```shell
    [root@redhat7 /] # ls -lh /etc/cron*
@@ -129,7 +129,7 @@ Use the following steps to schedule scans:
    Press Insert
    ```
 
-   :::image type="content" source="images/vi_mdavfullscan.png" alt-text="weekly antivirus scans":::
+   :::image type="content" source="media/vi_mdavfullscan.png" alt-text="weekly antivirus scans":::
 
    ```shell
    #!/bin/sh
