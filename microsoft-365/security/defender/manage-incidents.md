@@ -176,7 +176,7 @@ To generate the PDF, perform the following steps:
 
    :::image type="content" source="../../media/incidents-queue/export-incident-download-small.png" alt-text="Screenshot highlighting export message and status when download is available." lightbox="../../media/incidents-queue/export-incident-download.png":::
 
-The report is cached for a couple of minutes. The system provides the previously generated PDF if you try to export the same incident again within a short time frame. To generate a newer version of the PDF, wait for the cache to expire.
+The report is cached for a couple of minutes. The system provides the previously generated PDF if you try to export the same incident again within a short time frame. To generate a newer version of the PDF, wait for a few minutes for the cache to expire.
 
 ## Next steps
 
