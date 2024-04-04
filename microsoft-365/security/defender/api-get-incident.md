@@ -14,7 +14,7 @@ ms.collection:
 ms.topic: reference
 ms.custom: api
 search.appverid: met150
-ms.date: 02/08/2023
+ms.date: 02/08/2024
 ---
 
 # Get incident information API

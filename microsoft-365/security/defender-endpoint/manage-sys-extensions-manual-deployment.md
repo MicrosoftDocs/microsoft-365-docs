@@ -26,11 +26,11 @@ This article describes the procedures involved when deploying Microsoft Defender
 
 You might see the prompt that's shown in the following screenshot:
 
-:::image type="content" source="images/system-extension-blocked-prompt.png" alt-text="The system extensions blocked prompt screen." lightbox="images/system-extension-blocked-prompt.png":::
+:::image type="content" source="media/system-extension-blocked-prompt.png" alt-text="The system extensions blocked prompt screen." lightbox="media/system-extension-blocked-prompt.png":::
 
 1. Select **OK**. You might get a second prompt as shown in the following screenshot:
 
-   :::image type="content" source="images/system-extension-blocked-second-prompt.png" alt-text="The second prompt regarding system extensions being blocked." lightbox="images/system-extension-blocked-second-prompt.png":::
+   :::image type="content" source="media/system-extension-blocked-second-prompt.png" alt-text="The second prompt regarding system extensions being blocked." lightbox="media/system-extension-blocked-second-prompt.png":::
 
 1. From this second-prompt screen, select **OK**. You'll receive a notification message that reads **Installation succeeded**, as shown in the following screenshot:
 
@@ -54,15 +54,15 @@ You might see the prompt that's shown in the following screenshot:
 
 1. Enter your password and select **OK**.
 1. Click 
-   :::image type="content" source="images/system-preferences-icon.png" alt-text="The System Preferences icon." lightbox="images/system-preferences-icon.png":::
+   :::image type="content" source="media/system-preferences-icon.png" alt-text="The System Preferences icon." lightbox="media/system-preferences-icon.png":::
 
    The **System Preferences** screen appears.
 
-   :::image type="content" source="images/system-preferences-screen.png" alt-text="The System Preferences screen." lightbox="images/system-preferences-screen.png":::
+   :::image type="content" source="media/system-preferences-screen.png" alt-text="The System Preferences screen." lightbox="media/system-preferences-screen.png":::
 
 1. Click **Security & Privacy**. The **Security & Privacy** screen appears.
 
-   :::image type="content" source="images/security-and-privacy-screen.png" alt-text="The Security & Privacy screen." lightbox="images/security-and-privacy-screen.png":::
+   :::image type="content" source="media/security-and-privacy-screen.png" alt-text="The Security & Privacy screen." lightbox="media/security-and-privacy-screen.png":::
 
 1. Select **Click the lock to make changes**. You'll get a prompt as shown in the following screenshot:
 
@@ -70,11 +70,11 @@ You might see the prompt that's shown in the following screenshot:
 
 1. Enter your password and click **Unlock**. The following screen appears:
 
-   :::image type="content" source="images/screen-on-clicking-unlock.png" alt-text="The screen that is displayed on clicking Unlock." lightbox="images/screen-on-clicking-unlock.png":::
+   :::image type="content" source="media/screen-on-clicking-unlock.png" alt-text="The screen that is displayed on clicking Unlock." lightbox="media/screen-on-clicking-unlock.png":::
 
 1. Select **Details**, next to **Some software system requires your attention before it can be used**.
 
-   :::image type="content" source="images/screen-on-clicking-details.png" alt-text="The screen that is displayed on clicking Details." lightbox="images/screen-on-clicking-details.png":::
+   :::image type="content" source="media/screen-on-clicking-details.png" alt-text="The screen that is displayed on clicking Details." lightbox="media/screen-on-clicking-details.png":::
 
 1. Check both the **Microsoft Defender** checkboxes, and select **OK**. You'll get two pop-up screens, as shown in the following screenshot:
 
@@ -86,7 +86,7 @@ You might see the prompt that's shown in the following screenshot:
 
 If you run systemextensionsctl list, the following screen appears:
 
-:::image type="content" source="images/result-of-running-systemextenstionsctl-list.png" alt-text="The resultant screen of running the systemextensionsdcl list." lightbox="images/result-of-running-systemextenstionsctl-list.png":::
+:::image type="content" source="media/result-of-running-systemextenstionsctl-list.png" alt-text="The resultant screen of running the systemextensionsdcl list." lightbox="media/result-of-running-systemextenstionsctl-list.png":::
 
 ### Accessibility
 

@@ -18,7 +18,7 @@ ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.date: 08/11/2023
+ms.date: 02/11/2024
 ---
 
 # Alert classification playbooks
