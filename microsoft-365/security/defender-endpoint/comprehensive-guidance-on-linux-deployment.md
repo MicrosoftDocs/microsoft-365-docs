@@ -455,7 +455,7 @@ mdatp connectivity test
 
 The following image displays the expected output from the test:
 
-:::image type="content" source="images/verify-comm.png" alt-text="This is verify communication image":::
+:::image type="content" source="media/verify-comm.png" alt-text="This is verify communication image":::
 
 For more information, see [Connectivity validation](linux-support-connectivity.md#run-the-connectivity-test).
 
