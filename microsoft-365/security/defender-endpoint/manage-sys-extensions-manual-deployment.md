@@ -46,7 +46,7 @@ You might see the prompt that's shown in the following screenshot:
 
 1. Select **Action needed**. The following screen appears:
 
-   :::image type="content" source="images/virus-and-threat-protection-screen.png" alt-text="The Virus & threat protection screen containing the Fix button." lightbox="images/virus-and-threat-protection-screen.png":::
+   :::image type="content" source="media/virus-and-threat-protection-screen.png" alt-text="The Virus & threat protection screen containing the Fix button." lightbox="media/virus-and-threat-protection-screen.png":::
 
 1. Click **Fix** on the top-right corner of this screen. You'll get a prompt, as shown in the following screenshot:
 
