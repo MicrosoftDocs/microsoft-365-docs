@@ -38,7 +38,7 @@ Now you have a prioritized list of incidents, from which you can select to renam
 
 Use the filters to make sure Microsoft Defender for Office 365 items are included.
 
-If you are looking for specific alerts, either use the incident search capability (*Search for name or ID*) or consider using the alert queue filtering on a specific alert.
+If you're looking for specific alerts, either use the incident search capability (*Search for name or ID*) or consider using the alert queue filtering on a specific alert.
 
 ## Investigate & Respond to Incidents
 
@@ -50,7 +50,7 @@ The *Evidence and Response* tab shows items identified as related to the origina
 
 Any items showing as *Pending Action* within Evidence and Response are awaiting approval from an administrator.  Sorting by the remediation status column in the *All Evidence* view is recommended, followed by clicking the entity or cluster to load the flyout menu where you can then approve the actions if appropriate.
 
-If you need to understand the items involved further, you can use the incident graph to see the visual linkage of the evidence and entities involved. Alternatively, you can review the underlying investigations, which will show more of the entities and items involved in the security event.
+If you need to understand the items involved further, you can use the incident graph to see the visual linkage of the evidence and entities involved. Alternatively, you can review the underlying investigations, which shows more of the entities and items involved in the security event.
 
 ## Next Steps
 
