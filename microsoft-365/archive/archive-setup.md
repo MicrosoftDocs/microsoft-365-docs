@@ -23,7 +23,7 @@ description: Learn how to set up and configure Microsoft 365 Archive.
 
 Microsoft 365 Archive follows a pay-as-you-go model, and is configured through the Microsoft 365 admin center. Before you begin, read the [Microsoft 365 preview terms and conditions](archive-preview-terms.md).
 
-![Diagram showing four steps of the setup process for Microsoft 365 Archive.](../../media/content-understanding/archive-setup-diagram.png)
+![Diagram showing four steps of the setup process for Microsoft 365 Archive.](../../media/m365-archive/archive-setup-diagram.png)
 
 To set up Microsoft 365 Archive, follow these steps:
 
@@ -59,7 +59,7 @@ Once pay-as-you-go billing has been enabled for Syntex on Microsoft 365 admin ce
 
 4. On the **Archive (Preview)** page, select **Turn on**, and on the confirmation pane, select **Confirm**.
 
-    ![Screenshot of the Microsoft 365 Archive page in the admin center showing how to turn on Archive.](../../media/content-understanding/turn-on-archive-admin-center.png)
+    ![Screenshot of the Microsoft 365 Archive page in the admin center showing how to turn on Archive.](../../media/m365-archive/turn-on-archive-admin-center.png)
 
 Microsoft 365 Archive is now enabled for you, and you're able to archive content from the SharePoint admin center.
 
