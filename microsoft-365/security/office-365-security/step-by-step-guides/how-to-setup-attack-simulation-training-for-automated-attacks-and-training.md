@@ -1,6 +1,6 @@
 ---
 title: How to setup automated attacks and training within Attack simulation training
-description: The steps to automate Attack Simulation training and send a payload to target users. By following this guide, you'll learn to create automated attack flows with specific techniques and payloads.
+description: The steps to automate Attack Simulation training and send a payload to target users. By following this guide, you learn to create automated attack flows with specific techniques and payloads.
 ms.service: microsoft-365-security
 f1.keywords:
   - NOCSH
@@ -39,7 +39,7 @@ Attack simulation training lets you run benign attack simulations on your organi
 1. Manually select up to 20 payloads you'd like to use for this automation, or alternatively select Randomize. *Next*.
 1. If you picked OAuth as a Payload, you need to enter the name, logo, and scope (permissions) you'd like the app to have when it's used in a simulation. *Next*.
 1. Choose who to target with the payload, if choosing the entire organization highlight the radio button. *Next*.
-1. Otherwise, select **Add Users** and then search or filter the users with the wizard, press Add User(s). *Next*.
+1. Otherwise, select **Add Users** and then search or filter the users with the wizard, press Add Users. *Next*.
 1. Customize the training if appropriate, otherwise leave Assign training for me (recommended) selected. *Next*.
 1. Customize the landing page displayed when a user is phished if appropriate, otherwise leave as the Microsoft Default. *Next*.
 1. Choose if you'd like end user notifications, if so select the delivery preferences and customize where appropriate. *Next*.
