@@ -44,7 +44,7 @@ Our custom policies give admins the ability to decide what items their users can
 
 ## Assigning quarantine policies and enabling notification with organization branding
 
-Once it has been decided the categories of items users can triage or not-triage, and created the corresponding quarantine policies, admins should to assign these policies to the respective users and enable notifications.
+When your security team has decided on which categories of items that users can triage (or not), and they've created the corresponding quarantine policies, admins should assign these policies to the respective users and enable notifications.
 
 1. Identify the users, groups, or domains that you would like to include in the *full access* category vs. the *limited access* category, versus the *Admin-Only* category.
 1. Sign in to the [Microsoft Security portal](https://security.microsoft.com).
