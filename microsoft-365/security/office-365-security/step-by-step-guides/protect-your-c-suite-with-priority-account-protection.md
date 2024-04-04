@@ -33,18 +33,19 @@ Priority account protection helps IT and security teams ensure a high quality of
 
 1. Identify the users, groups, or domains you would like to tag as priority accounts.
 1. Sign in to the [Microsoft Defender portal](https://security.microsoft.com/) and navigate to Settings on the left navigation bar.
-1. Select Email & collaboration on the page that loads and then click User tags
-1. On the User tags page, select the Priority account tag and press Edit
-1. On the flyout that appears, select Add members
-1. Search for the users you wish to tag, select one or more users and press Add
-1. Review the members you have selected and press Next
-1. Press Submit to confirm the changes
+1. Select **Email & collaboration** on the page that loads and then select **User tags**.
+1. On the **User tags** page, select the **Priority account** tag, and then select **Edit**.
+1. On the flyout that appears, select **Add members**.
+1. Search for the users you wish to tag, select one or more users, and then select **Add**.
+1. Review the members you have selected, and then select **Next**.
+1. Select **Submit** to confirm the changes.
 
 ## Confirm priority account protection is enabled for tagged users
 
-1. Login to the [Microsoft Security Portal](https://security.microsoft.com/) and navigate to Settings on the left navigation bar.
-1. Select **Priority account protection**
-1. Ensure the protection is set to "On"
+1. Sign to the [Microsoft Defender portal](https://security.microsoft.com/).
+1. In the navigation bar, select **Settings**.
+1. Select **Priority account protection**.
+1. Make sure protection is set to **On**.
 
 To learn what priority account tags are see [Manage and monitor priority accounts - Microsoft 365 admin | Microsoft Docs](../../../admin/setup/priority-accounts.md).
 
