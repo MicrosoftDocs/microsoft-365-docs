@@ -1,11 +1,7 @@
 ---
 title: How to configure quarantine permissions and policies
 description: The steps to configure quarantine policies and permissions across different groups, including AdminOnlyPolicy, limited access, full access, and providing security admins and users with a simple way to manage false positive folders.
-search.product:
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords:
   - NOCSH
 author: chrisda
@@ -20,7 +16,7 @@ ms.collection:
 ms.topic: how-to
 ms.subservice: mdo
 search.appverid: met150
-ms.date: 1/31/2023
+ms.date: 01/31/2023
 ---
 
 # How to configure quarantine permissions and policies
