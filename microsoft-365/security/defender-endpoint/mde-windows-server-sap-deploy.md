@@ -27,7 +27,7 @@ This article provides a comprehensive overview of deploying Microsoft Defender f
 
 ### Deployment Methodology
 
-Microsoft and SAP advise against deploying Microsoft Defender for Endpoint on Linux directly to all development, QAS, and production systems without careful testing and monitoring. Uncontrolled deployment may lead to system downtime. Instead, deploy the software in development systems first, validate it in QAS, and then proceed with production environments.
+Microsoft and SAP advise against deploying Microsoft Defender for Endpoint on Linux directly to all development, QAS, and production systems without careful testing and monitoring. Uncontrolled deployment can lead to system downtime. Instead, deploy the software in development systems first, validate it in QAS, and then proceed with production environments.
 
 Using tools like Endpoint Security Policies to deploy Defender for Endpoint to an entire SAP landscape without testing can cause downtime. Ensure the following factors are tested:
 
@@ -39,9 +39,9 @@ Using tools like Endpoint Security Policies to deploy Defender for Endpoint to a
 
 4. Confirm the performance limits and quotas of the shared file system used for SAPMNT. The SMB share source could be a NetApp appliance, a Windows server shared disk, or Azure Files SMB.
 
-5. Configure exclusions to prevent all SAP application servers from scanning the SAPMNT share simultaneously, as this may overload shared storage.
+5. Configure exclusions to prevent all SAP application servers from scanning the SAPMNT share simultaneously, as this scenario could overload shared storage.
 
-6. Host interface files on a dedicated non-SAP file server with Real Time Protection enabled. SAP servers should not be used for interface files.
+6. Host interface files on a dedicated non-SAP file server with Real Time Protection enabled. SAP servers shouldn't be used for interface files.
 
 ### Important Configuration Settings for Microsoft Defender for Endpoint with SAP on Linux
 
@@ -59,7 +59,7 @@ The following sections detail essential configuration settings for Microsoft Def
 
 6.  **Recommended setting for RealTimeProtectionEnabled:** Enable Real Time Scanning with Tamper Protection and Behavior Monitoring, unless a specific problem has been identified.
 
-7.  **Scanning network shares with Defender for Endpoint on Linux:** By default, Microsoft Defender Antivirus scans SMB shared network file systems on Windows. However, it does not scan NFS file systems during scheduled scans on Linux. EDR on Windows might scan SMB shared network file systems.
+7.  **Scanning network shares with Defender for Endpoint on Linux:** By default, Microsoft Defender Antivirus scans SMB shared network file systems on Windows. However, it doesn't scan NFS file systems during scheduled scans on Linux. EDR on Windows might scan SMB shared network file systems.
 
 8.  **Defender for Endpoint Client Analyzer Support tool:** Download the latest version of the Microsoft Defender for Endpoint client analyzer at <https://aka.ms/MDEAnalyzer>.
 
