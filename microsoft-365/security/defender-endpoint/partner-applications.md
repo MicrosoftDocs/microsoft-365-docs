@@ -48,13 +48,13 @@ Microsoft Defender for Endpoint seamlessly integrates with existing security sol
 Logo|Partner name|Description
 :---|:---|:---
 ![Logo for AttackIQ.](media/attackiq-logo.png)|[AttackIQ Platform](https://go.microsoft.com/fwlink/?linkid=2103502)|AttackIQ Platform validates Defender for Endpoint is configured properly by launching continuous attacks safely on production assets
-![Logo for Microsoft Sentinel.](images/sentinel-logo.png)|[AzureSentinel](https://go.microsoft.com/fwlink/?linkid=2135705)|Stream alerts from Microsoft Defender for Endpoint into Microsoft Sentinel
+![Logo for Microsoft Sentinel.](media/sentinel-logo.png)|[AzureSentinel](https://go.microsoft.com/fwlink/?linkid=2135705)|Stream alerts from Microsoft Defender for Endpoint into Microsoft Sentinel
 ![Logo for Cymulate.](media/cymulate-logo.png)|[Cymulate](https://go.microsoft.com/fwlink/?linkid=2135574)|Correlate Defender for Endpoint findings with simulated attacks to validate accurate detection and effective response actions
 ![Logo for Elastic security.](media/elastic-security-logo.png)|[Elastic Security](https://go.microsoft.com/fwlink/?linkid=2139303)|Elastic Security is a free and open solution for preventing, detecting, and responding to threats
 ![Logo for IBM QRadar.](media/ibm-qradar-logo.png)|[IBM QRadar](https://go.microsoft.com/fwlink/?linkid=2113903)|Configure IBM QRadar to collect detections from Defender for Endpoint
 ![Logo for Micro Focus ArcSight.](media/arcsight-logo.png)|[Micro Focus ArcSight](https://go.microsoft.com/fwlink/?linkid=2113548)|Use Micro Focus ArcSight to pull Defender for Endpoint detections
-![Logo for RSA NetWitness.](images/rsa-netwitness-logo.png)|[RSA NetWitness](https://go.microsoft.com/fwlink/?linkid=2118566)|Stream Defender for Endpoint Alerts to RSA NetWitness using Microsoft Graph Security API
-![Logo for SafeBreach.](images/safebreach-logo.png)|[SafeBreach](https://go.microsoft.com/fwlink/?linkid=2114114)|Gain visibility into Defender for Endpoint security events that are automatically correlated with SafeBreach simulations
+![Logo for RSA NetWitness.](media/rsa-netwitness-logo.png)|[RSA NetWitness](https://go.microsoft.com/fwlink/?linkid=2118566)|Stream Defender for Endpoint Alerts to RSA NetWitness using Microsoft Graph Security API
+![Logo for SafeBreach.](media/safebreach-logo.png)|[SafeBreach](https://go.microsoft.com/fwlink/?linkid=2114114)|Gain visibility into Defender for Endpoint security events that are automatically correlated with SafeBreach simulations
 ![Logo for Skybox Vulnerability Control.](images/skybox-logo.png)|[Skybox Vulnerability Control](https://go.microsoft.com/fwlink/?linkid=2127467)|Skybox Vulnerability Control cuts through the noise of vulnerability management, correlating business, network, and threat context to uncover your riskiest vulnerabilities
 ![Logo for Splunk.](images/splunk-logo.png)|[Splunk](https://go.microsoft.com/fwlink/?linkid=2129805)|The Defender for Endpoint Add-on allows Splunk users to ingest all of the alerts and supporting information to their Splunk
 ![Logo for XM Cyber.](images/xmcyber-logo.png)|[XM Cyber](/microsoft-365/compliance/insider-risk-management-configure)|Prioritize your response to an alert based on risk factors and high value assets
@@ -66,9 +66,9 @@ Logo|Partner name|Description
 ![Logo for Fortinet.](media/fortinet-logo.jpg)|[Fortinet FortiSOAR](https://www.fortinet.com/products/fortisoar)|Fortinet FortiSOAR is a holistic Security Orchestration, Automation and Response (SOAR) workbench, designed for SOC teams to efficiently respond to the ever-increasing influx of alerts, repetitive manual processes, and shortage of resources. It pulls together all of organization's tools, helps unify operations and reduces alert fatigue, context switching, and the mean time to respond to incidents. 
 ![Logo for Delta Risk ActiveEye.](media/delta-risk-activeeye-logo.png)|[Delta Risk ActiveEye](https://go.microsoft.com/fwlink/?linkid=2127468)|Delta Risk, a leading provider of SOC-as-a-Service and security services, integrate Defender for Endpoint with its cloud-native SOAR platform, ActiveEye.
 ![Logo for Demisto, a Palo Alto Networks Company.](media/demisto-logo.png)|[Demisto, a Palo Alto Networks Company](https://go.microsoft.com/fwlink/?linkid=2108414)|Demisto integrates with Defender for Endpoint to enable security teams to orchestrate and automate endpoint security monitoring, enrichment, and response
-![Logo for Microsoft Flow & Azure Functions.](images/ms-flow-logo.png)|[Microsoft Flow & Azure Functions](https://go.microsoft.com/fwlink/?linkid=2114300)|Use the Defender for Endpoint connectors for Azure Logic Apps & Microsoft Flow to automating security procedures
+![Logo for Microsoft Flow & Azure Functions.](media/ms-flow-logo.png)|[Microsoft Flow & Azure Functions](https://go.microsoft.com/fwlink/?linkid=2114300)|Use the Defender for Endpoint connectors for Azure Logic Apps & Microsoft Flow to automating security procedures
 ![Logo for Rapid7 InsightConnect.](media/rapid7-logo.png)|[Rapid7 InsightConnect](https://go.microsoft.com/fwlink/?linkid=2116040)|InsightConnect integrates with Defender for Endpoint to accelerate, streamline, and integrate your time-intensive security processes
-![Logo for ServiceNow.](images/servicenow-logo.png)|[ServiceNow](https://go.microsoft.com/fwlink/?linkid=2135621)|Ingest alerts into ServiceNow Security Operations solution based on Microsoft Graph API integration
+![Logo for ServiceNow.](media/servicenow-logo.png)|[ServiceNow](https://go.microsoft.com/fwlink/?linkid=2135621)|Ingest alerts into ServiceNow Security Operations solution based on Microsoft Graph API integration
 ![Logo for Swimlane.](images/swimlane-logo.png)|[Swimlane](https://go.microsoft.com/fwlink/?linkid=2113902)|Maximize incident response capabilities utilizing Swimlane and Defender for Endpoint together
 
 ### Threat intelligence
@@ -77,7 +77,7 @@ Logo|Partner name|Description
 :---|:---|:---
 ![Logo for MISP Malware Information Sharing Platform)logo.](media/misp-logo.png)|[MISP (Malware Information Sharing Platform)](https://go.microsoft.com/fwlink/?linkid=2127543)|Integrate threat indicators from the Open Source Threat Intelligence Sharing Platform into your Defender for Endpoint environment
 ![Logo for Palo Alto Networks.](media/paloalto-logo.png)|[Palo Alto Networks](https://go.microsoft.com/fwlink/?linkid=2099582)|Enrich your endpoint protection by extending Autofocus and other threat feeds to Defender for Endpoint using MineMeld
-![Logo for ThreatConnect.](images/threatconnect-logo.png)|[ThreatConnect](https://go.microsoft.com/fwlink/?linkid=2114115)|Alert and/or block on custom threat intelligence from ThreatConnect Playbooks using Defender for Endpoint indicators
+![Logo for ThreatConnect.](media/threatconnect-logo.png)|[ThreatConnect](https://go.microsoft.com/fwlink/?linkid=2114115)|Alert and/or block on custom threat intelligence from ThreatConnect Playbooks using Defender for Endpoint indicators
 
 ### Network security
 
@@ -105,7 +105,7 @@ Logo|Partner name|Description
 Logo|Partner name|Description
 :---|:---|:---
 ![Logo for Cyren Web Filter.](media/cyren-logo.png)|[Cyren Web Filter](https://www.cyren.com/security-center/url-category-check)|Enhance your Defender for Endpoint with advanced Web Filtering
-![Logo for Morphisec.](images/morphisec-logo.png)|[Morphisec](https://go.microsoft.com/fwlink/?linkid=2086215)|Provides Moving Target Defense-powered advanced threat prevention. Integrates forensics data directly into WD Defender for Cloud dashboards to help prioritize alerts, determine device at-risk score and visualize full attack timeline including internal memory information
+![Logo for Morphisec.](media/morphisec-logo.png)|[Morphisec](https://go.microsoft.com/fwlink/?linkid=2086215)|Provides Moving Target Defense-powered advanced threat prevention. Integrates forensics data directly into WD Defender for Cloud dashboards to help prioritize alerts, determine device at-risk score and visualize full attack timeline including internal memory information
 ![Logo for THOR Cloud.](media/nextron-thor-logo.png)|[THOR Cloud](https://go.microsoft.com/fwlink/?linkid=862988)|Provides on-demand live forensics scans using a signature base with focus on persistent threats
 
 ## SIEM integration
