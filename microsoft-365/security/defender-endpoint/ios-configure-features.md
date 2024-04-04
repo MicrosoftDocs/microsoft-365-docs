@@ -340,7 +340,7 @@ Defender for Endpoint on iOS supports vulnerability assessments of OS and apps. 
     - Privacy approval screen will come only for unsupervised devices.
     - Only if end-user approves the privacy, the app information is sent to the Defender for Endpoint console.
 
-        :::image type="content" source="images/tvm-user-privacy2.png" alt-text="Screenshot of the end user privacy screen." lightbox="images/tvm-user-privacy2.png":::
+        :::image type="content" source="media/tvm-user-privacy2.png" alt-text="Screenshot of the end user privacy screen." lightbox="media/tvm-user-privacy2.png":::
 
 Once the client versions are deployed to target iOS devices, the processing will start. Vulnerabilities found on those devices will start showing up in the Defender Vulnerability Management dashboard. The processing might take few hours (max 24 hours) to complete. Especially for the entire list of apps to show up in the software inventory.
 
