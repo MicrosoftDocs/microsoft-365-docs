@@ -18,7 +18,7 @@ search.appverid:
   - MOE150
   - MET150
 ms.custom: api
-ms.date: 02/08/2023
+ms.date: 02/08/2024
 ---
 
 # Common Microsoft Defender XDR REST API error codes
