@@ -1,6 +1,6 @@
 ---
 title: Assess the impact of security configuration changes with Explorer
-description: Examples and walk through of using Explorer to determine the impact of a security control (configuration) change in Microsoft Defender for Office 365
+description: Examples and walk-through of using Explorer to determine the impact of a security control (configuration) change in Microsoft Defender for Office 365.
 ms.service: microsoft-365-security
 ms.subservice: mdo
 f1.keywords:
@@ -25,11 +25,11 @@ Before you make changes to your security configuration, such as policies or tran
 
 This step-by-step guide takes you through assessing a change, and exporting the impacted emails for assessment. 
 
-## What you'll need
+## What you need
 
 - Microsoft Defender for Office 365 Plan 2 (included as part of E5).
 - Sufficient permissions (Security reader minimum required to assess via Threat Explorer).
-- 5-10 minutes to perform the steps below.
+- 5-10 minutes to perform the following procedures.
 
 ## Assess changing normal confidence phish delivery location to quarantine (from the Junk email folder)
 
