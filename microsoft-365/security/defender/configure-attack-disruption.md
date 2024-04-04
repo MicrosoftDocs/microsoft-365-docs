@@ -78,5 +78,6 @@ Excluding user accounts is not recommended, and accounts added to this list won'
 ## See also
 
 - [Automatic attack disruption in Microsoft Defender XDR](automatic-attack-disruption.md)
+- [Automatic attack disruption for SAP](/azure/sentinel/sap/deployment-attack-disrupt)
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]
