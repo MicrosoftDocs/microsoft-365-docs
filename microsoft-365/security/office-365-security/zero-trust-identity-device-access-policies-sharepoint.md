@@ -1,8 +1,8 @@
 ---
 title: Recommended secure document policies
 description: Describes the policies for Microsoft recommendations about how to secure SharePoint file access.
-ms.author: dansimp
-author: dansimp
+author: chrisda
+ms.author: chrisda
 manager: dansimp
 ms.service: microsoft-365-zero-trust
 ms.topic: conceptual

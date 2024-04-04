@@ -4,7 +4,7 @@ description: Learn about Device control policies in Defender for Endpoint
 author: siosulli
 ms.author: siosulli
 manager: deniseb 
-ms.date: 02/14/2024
+ms.date: 03/20/2024
 ms.topic: overview
 ms.service: defender-endpoint
 ms.subservice: asr
@@ -169,14 +169,17 @@ Device control policies define access (called an entry) for a set of devices. En
 
 | Entry setting | Options |
 |---|---|
+| AccessMask | Applies the action only if the access operations matches the access mask -  The access mask is the bit-wise OR of the access values:<br><br>  1 - Device Read<br>2 - Device Write<br>4 - Device Execute<br>8 - File Read<br>16 - File Write<br>32 - File Execute<br>64 - Print<br><br>For example:<br>Device Read, Write and Execute = 7 (1+2+4)<br>Device Read, Disk Read = 9 (1+8)<br>
 | Action | Allow <br/> Deny <br/> AuditAllow <br/> AuditDeny |
 | Notification | None (default) <br/> An event is generated <br/> The user receives notification <br/> File evidence is captured |
+
+> [!WARNING]
+> The [February 2024](microsoft-defender-antivirus-updates.md#february-2024-engine-11240209--platform-418240207) release causes inconsistent results for device control customers who are using removable media policies with disk/device-level access only (masks that are less than or equal to 7). Enforcement might not work as expected. To mitigate this issue, rolling back to the previous version is recommended.
 
 If device control is configured, and a user attempts to use a device that's not allowed, the user gets a notification that contains the name of the device control policy and the name of the device. The notification appears once every hour after initial access is denied.
 
 An entry supports the following optional conditions:
 
-- Access Condition: Applies the action only to the access defined in the access mask
 - User Condition: Applies the action only to the user/group identified by the SID
 - Machine Condition:  Applies the action only to the device/group identified by the SID
 - Parameters Condition:  Applies the action only if the parameters match (See Advanced Conditions)

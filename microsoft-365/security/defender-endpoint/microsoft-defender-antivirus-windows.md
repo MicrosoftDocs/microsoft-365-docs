@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender Antivirus in Windows
+title: Microsoft Defender Antivirus in Windows Overview
 description: Learn how to manage, configure, and use Microsoft Defender Antivirus, built-in antimalware and antivirus protection.
 ms.service: defender-endpoint
 ms.localizationpriority: high
@@ -18,7 +18,7 @@ ms.collection:
 search.appverid: met150
 ---
 
-# Microsoft Defender Antivirus in Windows
+# Microsoft Defender Antivirus in Windows Overview
 
 **Applies to:**
 
@@ -27,11 +27,24 @@ search.appverid: met150
 - Microsoft Defender Antivirus
 
 **Platforms**
-- Windows 
+
+- Windows
 
 Microsoft Defender Antivirus is available in Windows 10 and Windows 11, and in versions of Windows Server.
 
 Microsoft Defender Antivirus is a major component of your next-generation protection in Microsoft Defender for Endpoint. This protection brings together machine learning, big-data analysis, in-depth threat resistance research, and the Microsoft cloud infrastructure to protect devices (or endpoints) in your organization. Microsoft Defender Antivirus is built into Windows, and it works with Microsoft Defender for Endpoint to provide protection on your device and in the cloud.
+
+## Microsoft Defender Antivirus capabilities
+
+Microsoft Defender Antivirus provides anomaly detection, a layer of protection for malware that doesn’t fit any predefined pattern. Anomaly detection monitors for process creation events or files that are downloaded from the internet. Through machine learning and cloud-delivered protection, Microsoft Defender Antivirus can stay one step ahead of attackers. Anomaly detection is on by default and can help block attacks such as [3CX Security Alert for Electron Windows App](https://www.3cx.com/blog/news/desktopapp-security-alert/). Microsoft Defender Antivirus started blocking this malware four days before the attack was registered in VirusTotal.  
+
+Modern malware requires modern solutions. In 2015, Microsoft Defender Antivirus moved away from using a static signature-based engine to a model that uses predictive technologies such as, machine learning, applied science, and artificial intelligence as this is what's necessary to keep you and your organizations safe from the complexity of today’s ever-evolving malware landscape.
+
+Microsoft Defender Antivirus can block almost all malware at first sight, in milliseconds.
+
+We’ve also designed our antivirus solution to work in both online and offline scenarios.  For offline scenarios, the latest dynamic intelligence from the Intelligence Security Graph is provisioned to the endpoint regularly throughout the day. When connected to the cloud, it’s fed real-time intelligence from the [Intelligent Security Graph](https://www.microsoft.com/security/blog/2018/04/17/connect-to-the-intelligent-security-graph-using-a-new-api/).
+
+Microsoft Defender Antivirus can also stop threats based on their behaviors and process trees even when the threat has started execution. A common example of these kinds of attacks is fileless malware. Microsoft's Next-generation protection features work together to identify and block malware based on abnormal behavior. To learn more, see [Behavioral blocking and containment](behavioral-blocking-containment.md).
 
 ## Compatibility with other antivirus products
 
@@ -60,7 +73,7 @@ For [Microsoft Endpoint Data Loss Prevention](/purview/endpoint-dlp-getting-star
 
 To enhance your endpoint security experience, Microsoft is releasing the Microsoft Defender Core service to help with the stability and performance of Microsoft Defender Antivirus. For customers who are using Microsoft Endpoint Data Loss Prevention in the small, medium, and enterprise business sectors, Microsoft is splitting the codebase to its own service.  
 
-The Microsoft Defender Core service is releasing with [Microsoft Defender Antivirus platform version 4.18.23110.2009](microsoft-defender-antivirus-updates.md#october-2023-platform-418231002009--engine-11231002009).
+The Microsoft Defender Core service is releasing with [Microsoft Defender Antivirus platform version 4.18.23110.2009](./msda-updates-previous-versions-technical-upgrade-support.md#october-2023-platform-418231002009--engine-11231002009).
 
 - Rollout begins in November 2023 to prerelease customers, with plans to release to all enterprise customers in the coming months.
 

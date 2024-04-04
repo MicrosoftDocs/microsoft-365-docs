@@ -42,7 +42,7 @@ Microsoft Defender Antivirus performance analyzer has the following prerequisite
 
 Similar to the way mechanics perform diagnostics and service on a vehicle that has performance problems, performance analyzer can help you improve Defender Antivirus performance.
 
-:::image type="content" source="images/performance-analyzer-improve-defender-antivirus-performance.png" alt-text="Conceptual performance analyzer image for Microsoft Defender Antivirus. The diagram is related to:  Microsoft Defender performance analyzer, Defender performance analyzer, Get-MpPerformanceRepor, New-MpPerformanceRecording, windows Defender, microsoft Defender, microsoft windows 10, microsoft Defender antivirus, micro soft windows 11, windows antivirus, microsoft antivirus, windows Defender antivirus, Windows 10 antivirus, microsoft windows Defender, performance windows. " lightbox="images/performance-analyzer-improve-defender-antivirus-performance.png":::
+:::image type="content" source="media/performance-analyzer-improve-defender-antivirus-performance.png" alt-text="Conceptual performance analyzer image for Microsoft Defender Antivirus. The diagram is related to:  Microsoft Defender performance analyzer, Defender performance analyzer, Get-MpPerformanceRepor, New-MpPerformanceRecording, windows Defender, microsoft Defender, microsoft windows 10, microsoft Defender antivirus, micro soft windows 11, windows antivirus, microsoft antivirus, windows Defender antivirus, Windows 10 antivirus, microsoft windows Defender, performance windows. " lightbox="media/performance-analyzer-improve-defender-antivirus-performance.png":::
 
 Some options to analyze include:
 
@@ -96,7 +96,7 @@ For more information on command-line parameters and options, see the [New-MpPerf
 
 Based on the query, the user is able to view data for scan counts, duration (total/min/average/max/median), path, process, and **reason for scan**. The following image shows sample output for a simple query of the top 10 files for scan impact.
 
-:::image type="content" source="images/example-output.png" alt-text="Example output for a basic TopFiles query" lightbox="images/example-output.png":::
+:::image type="content" source="media/example-output.png" alt-text="Example output for a basic TopFiles query" lightbox="media/example-output.png":::
 
 ## Additional functionality: exporting and converting to CSV and JSON
 

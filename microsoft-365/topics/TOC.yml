@@ -44,6 +44,13 @@
         - name: Topics in Viva Engage
           href: topic-experiences-viva-engage.md
 
+    - name: Retirement
+      items:
+        - name: Topics retirement
+          href: changes-coming-to-topics.md
+        - name: FAQ
+          href: topics-changes-faq.md
+
     - name: Topics analytics
       items:
         - name: Topics analytics
@@ -91,9 +98,3 @@
         - name: Adoption resources
           href: adoption-resources.md
 
-    - name: Retirement
-      items:
-        - name: Topics Retirement
-          href: changes-coming-to-topics.md
-        - name: FAQ
-          href: topics-changes-faq.md

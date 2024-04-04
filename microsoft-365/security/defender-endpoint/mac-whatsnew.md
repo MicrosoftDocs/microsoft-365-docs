@@ -5,7 +5,7 @@ ms.service: defender-endpoint
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
-ms.date: 09/28/2023
+ms.date: 02/25/2024
 manager: deniseb
 audience: ITPro
 ms.collection:
@@ -30,19 +30,15 @@ ms.reviewer: mavel
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-
 For more information on Microsoft Defender for Endpoint on other operating systems:
 
 - [What's new in Microsoft Defender for Endpoint on Linux](linux-whatsnew.md)
 - [What's new in Microsoft Defender for Endpoint on iOS](ios-whatsnew.md)
 
-**Built-in Scheduled Scan for macOS** (Public Preview) 
 
-Scheduled Scan built-in for Microsoft Defender for Endpoint on macOS is now available in Public Preview.  To learn more, see [How to schedule scans with Microsoft Defender for Endpoint on macOS](mac-schedule-scan.md). 
+**Troubleshooting mode for macOS**
 
-**Troubleshooting mode for macOS** (Public Preview) 
-
-Troubleshooting mode helps you identify instances where antivirus might be causing issues with your applications or system resources. Troubleshooting mode for macOS is now available in Public Preview. To learn more, see [Troubleshooting mode in Microsoft Defender for Endpoint on macOS](mac-troubleshoot-mode.md).  
+Troubleshooting mode helps you identify instances where antivirus might be causing issues with your applications or system resources. To learn more, see [Troubleshooting mode in Microsoft Defender for Endpoint on macOS](mac-troubleshoot-mode.md).  
 
 **Mac devices receive built-in protection**
 
@@ -56,15 +52,27 @@ Network protection for macOS is now available for all Mac devices onboarded to D
 
 Apple fixed an issue on macOS [Ventura upgrade](<https://developer.apple.com/documentation/macos-release-notes/macos-13_1-release-notes>), which is fixed with the latest OS update. The issue impacts Microsoft Defender for Endpoint security extensions, and might result in losing Full Disk Access Authorization, impacting its ability to function properly.
 
+In macOS Sonoma 14.3.1, Apple made a change to the [handling of Bluetooth devices](https://developer.apple.com/forums/thread/738748) that impacts Defender for Endpoint device controls ability to intercept and block access to Bluetooth devices.  At this time, the recommended mitigation is to use a version of macOS less than 14.3.1.
+
 **Sonoma support**
 
 Microsoft Defender supports macOS Sonoma (14.0) in the current Defender release.
 
 **macOS Deprecation**
+Microsoft Defender for Endpoint no longer supports Big Sur (11)
 
-> [!NOTE]
-> Microsoft Defender for Endpoint no longer supports these macOS as Apple ended support for:
-> - Big Sur (11) in December 2023.
+### Apr-2024 (Build: 101.24012.0010  | Release version: 20.124012.10.0)
+
+| Build:             | **101.24012.0010**    |
+|--------------------|-----------------------|
+| Release version:   | **20.124012.10.0**    |
+| Engine version:    | **1.1.24020.3**       |
+| Signature version: | **1.405.788.0**       |
+
+##### What's new
+
+- Bug and performance fixes
+- **(GA) Built-in Scheduled Scan for macOS**: For information on Scheduled Scan built-in for Microsoft Defender for Endpoint on macOS, see [How to schedule scans with Microsoft Defender for Endpoint on macOS](mac-schedule-scan.md).
 
 ### Jan-2024 (Build: 101.23122.0005  | Release version: 20.123122.5.0)
 
@@ -231,6 +239,31 @@ Microsoft Defender supports macOS Sonoma (14.0) in the current Defender release.
 - Discontinued support macOS Catalina [10.15]
 
 <br/>
+
+&ensp;Build: **101.96.85**<br/>
+&ensp;Release version: **20.122112.19413.0**<br/>
+&ensp;Engine version: **1.1.19900.2**<br/>
+&ensp;Signature version: **1.381.2029.0**<br/>
+
+&ensp;Build: **101.96.85**<br/>
+&ensp;Release version: **20.122112.19413.0**<br/>
+&ensp;Engine version: **1.1.19900.2**<br/>
+&ensp;Signature version: **1.381.2029.0**<br/>
+
+&ensp;Build: **101.96.85**<br/>
+&ensp;Release version: **20.122112.19413.0**<br/>
+&ensp;Engine version: **1.1.19900.2**<br/>
+&ensp;Signature version: **1.381.2029.0**<br/>
+
+&ensp;Build: **101.96.85**<br/>
+&ensp;Release version: **20.122112.19413.0**<br/>
+&ensp;Engine version: **1.1.19900.2**<br/>
+&ensp;Signature version: **1.381.2029.0**<br/>
+
+&ensp;Build: **101.96.85**<br/>
+&ensp;Release version: **20.122112.19413.0**<br/>
+&ensp;Engine version: **1.1.19900.2**<br/>
+&ensp;Signature version: **1.381.2029.0**<br/>
 
 &ensp;Build: **101.96.85**<br/>
 &ensp;Release version: **20.122112.19413.0**<br/>
@@ -1012,6 +1045,7 @@ Microsoft Defender supports macOS Sonoma (14.0) in the current Defender release.
 
 <br/><br/>
 </details>
+
 
 
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

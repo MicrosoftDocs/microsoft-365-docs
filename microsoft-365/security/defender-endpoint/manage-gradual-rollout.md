@@ -41,7 +41,7 @@ Capabilities are provided through several components:
 - [Next-generation protection](microsoft-defender-antivirus-windows.md) with [cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md)
 - [Attack Surface Reduction](overview-attack-surface-reduction.md)
 
-Updates are released monthly using a gradual release process. This process helps to enable early failure detection to catch impact as it occurs and address it quickly before a larger rollout.
+Updates are released monthly using a gradual release process. This process helps to enable early failure detection to identify issues as they occur and address them quickly before a larger rollout.
 
 > [!NOTE]
 > For more information on how to control daily security intelligence updates, see [Schedule Microsoft Defender Antivirus protection updates](manage-protection-update-schedule-microsoft-defender-antivirus.md). Updates ensure that next-generation protection can defend against new threats, even if cloud-delivered protection is not available to the endpoint.
@@ -60,14 +60,16 @@ Our engineers continuously monitor impact and escalate any issues to create a fi
 
 ## How to customize your internal deployment process
 
+
 If your machines are receiving Defender updates from Windows Update, the gradual rollout process can result in some of your devices receiving Defender updates sooner than others. The following section explains how to define a strategy that will allow automatic updates to flow differently to specific groups of devices by using update channel configuration.
+
 
 > [!NOTE]
 > When planning for your own gradual release, please make sure to always have a selection of devices subscribed to the preview and staged channels. This will provide your organization as well as Microsoft the opportunity to prevent or find and fix issues specific to your environment.
 
 For machines receiving updates through, for example, Windows Server Update Services (WSUS) or Microsoft Configuration Manager, more options are available to all Windows updates, including options  for Microsoft Defender for Endpoint.
 
-- Read more about how to use a solution like WSUS, MECM to manage the distribution and application of updates at [Manage Microsoft Defender Antivirus updates and apply baselines - Windows security](microsoft-defender-antivirus-updates.md#product-updates).
+- Learn more about how to use solutions such as WSUS and MECM to manage the distribution and application of updates at [Manage Microsoft Defender Antivirus updates and apply baselines - Windows security](microsoft-defender-antivirus-updates.md#product-updates).
 
 ## Update channels for monthly updates
 
@@ -79,22 +81,22 @@ The following update channels are available:
 
 |Channel name|Description|Application|
 |---|---|---|
-|Beta Channel - Prerelease|Test updates before others|Devices set to this channel will be the first to receive new monthly updates. Select Beta Channel to participate in identifying and reporting issues to Microsoft. Devices in the Windows Insider Program are subscribed to this channel by default. For use in test environments only.|
-|Current Channel (Preview)|Get Current Channel updates **earlier** during gradual release|Devices set to this channel will be offered updates earliest during the gradual release cycle. Suggested for pre-production/validation environments.|
+|Beta Channel - Prerelease|Test updates before others|Devices set to this channel are the first to receive new monthly updates. Select Beta Channel to participate in identifying and reporting issues to Microsoft. Devices in the Windows Insider Program are subscribed to this channel by default. For use in test environments only.|
+|Current Channel (Preview)|Get Current Channel updates **earlier** during gradual release|Devices set to this channel are offered updates earliest during the gradual release cycle. Suggested for pre-production/validation environments.|
 |Current Channel (Staged)|Get Current Channel updates later during gradual release|Devices are offered updates later during the gradual release cycle. Suggested to apply to a small, representative part of your device population (~10%).|
 |Current Channel (Broad)|Get updates at the end of gradual release|Devices will be offered updates only after the gradual release cycle completes. Suggested to apply to a broad set of devices in your production population (~10-100%).|
 |Critical: Time Delay|Delay Defender updates|Devices are offered updates with a 48-hour delay. Best for datacenter machines that only receive limited updates. Suggested for critical environments only.|
-|(default)||If you disable or don't configure this policy, the device remains in Current Channel (Default): Stay up to date automatically during the gradual release cycle. Suitable for most devices.|
+|(default)||If you disable or don't configure this policy, the device remains in Current Channel (Default): Stay up to date automatically during the gradual release cycle. This means Microsoft assigns a channel to the device. The channel selected by Microsoft might be one that receives updates early during the gradual release cycle, which isn't suitable for devices in a production or critical environment.|
 
-### Update channels for daily updates
+### Update channels for security intelligence updates
 
-You can also assign a machine to a channel to define the cadence in which it receives daily updates. Unlike the monthly process, there's no Beta channel and this gradual release cycle occurs multiple times a day.
+You can also assign a machine to a channel to define the cadence in which it receives SIUs (formerly referred to as signature, definition, or daily updates). Unlike the monthly process, there's no Beta channel and this gradual release cycle occurs multiple times a day.
 
 |Channel name|Description|Application|
 |---|---|---|
 |Current Channel (Staged)|Get Current Channel updates later during gradual release|Devices are offered updates later during the gradual release cycle. Suggested to apply to a small, representative part of your device population (~10%).|
 |Current Channel (Broad)|Get updates at the end of gradual release|Devices will be offered updates after the gradual release cycle. Best for datacenter machines that only receive limited updates. Note: this setting applies to all Defender updates.|
-|(default)||If you disable or don't configure this policy, the device remains in Current Channel (Default): Stay up to date automatically during the gradual release cycle. Suitable for most devices|
+|(default)||If you disable or don't configure this policy, the device remains in Current Channel (Default): Stay up to date automatically during the gradual release cycle. This means Microsoft assigns a channel to the device. The channel selected by Microsoft might be one that receives updates early during the gradual release cycle, which isn't suitable for devices in a production or critical environment.|
 
 > [!NOTE]
 > In case you wish to force an update to the newest signature instead of leveraging the time delay, you will need to remove this policy first.

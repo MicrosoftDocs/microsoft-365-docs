@@ -14,7 +14,7 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.subservice: onboard
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 04/04/2024
 ---
 
 # Ensure your devices are configured properly
@@ -36,7 +36,7 @@ With properly configured devices, you can boost overall resilience against threa
 
 Click **Configuration management** from the navigation menu to open the Device configuration management page.
 
-:::image type="content" source="images/secconmgmt_main.png" alt-text="The Security configuration management page" lightbox="images/secconmgmt_main.png":::
+:::image type="content" source="media/secconmgmt-main.png" alt-text="The Security configuration management page" lightbox="media/secconmgmt-main.png":::
 
 *Device configuration management page*
 
@@ -72,7 +72,7 @@ If you have been assigned other roles, ensure you have the necessary permissions
 - Read permissions to device compliance policies
 - Read permissions to the organization
 
-:::image type="content" source="images/secconmgmt_intune_permissions.png" alt-text="The required permissions on intune" lightbox="images/secconmgmt_intune_permissions.png":::
+:::image type="content" source="media/secconmgmt-intune-permissions.png" alt-text="The required permissions on intune" lightbox="media/secconmgmt-intune-permissions.png":::
 
 *Device configuration permissions on Intune*
 

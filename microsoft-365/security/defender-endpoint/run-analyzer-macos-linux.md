@@ -4,11 +4,11 @@ description: Learn how to run the Microsoft Defender for Endpoint Client Analyze
 ms.service: defender-endpoint
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 ms.date: 02/02/2024
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security
@@ -45,11 +45,21 @@ If you're using a terminal, download the tool by entering the following command:
 2. Verify the download.
 
     > [!NOTE]
-    > The current SHA256 hash of 'XMDEClientAnalyzerBinary.zip' that is downloaded from this link is: '0A8E32B618F278BED60AB6763E9458BA2CD02C99D718E50DCCE51A7DBAC69863'
+    > The current SHA256 hash of 'XMDEClientAnalyzerBinary.zip' that is downloaded from this link is: '00E314DD1C1F90F0DF177189E67D0BCBF03CAF7515D4F10BD509A4BFD1889253'
+
+    
+   - Linux
 
     ```console
-    echo '0A8E32B618F278BED60AB6763E9458BA2CD02C99D718E50DCCE51A7DBAC69863 XMDEClientAnalyzerBinary.zip' | sha256sum -c
+    echo '00E314DD1C1F90F0DF177189E67D0BCBF03CAF7515D4F10BD509A4BFD1889253 XMDEClientAnalyzerBinary.zip' | sha256sum -c
     ```
+
+   - macOS
+
+    ```console
+    echo '00E314DD1C1F90F0DF177189E67D0BCBF03CAF7515D4F10BD509A4BFD1889253  XMDEClientAnalyzerBinary.zip' | shasum -a 256 -c
+    ```
+
 
 3. Extract the contents of _XMDEClientAnalyzerBinary.zip_ on the machine.
 
@@ -123,8 +133,16 @@ When using a terminal, unzip the file by entering one of the following commands 
 
 2. Verify the download
 
+   - Linux
+
     ```console
-    echo '926DEF4C6857641E205E7978126F7C2CE541D52AEA1C0E194DDB85F7BCFDE3D9 XMDEClientAnalyzer.zip' | sha256sum -c
+    echo '2F33B35ABA3B5B9161E7CCD88CDC0ADACD7D27173768DD68632651950ADF77B8 XMDEClientAnalyzer.zip' | sha256sum -c
+    ```
+
+   - macOS
+
+    ```console
+    echo '2F33B35ABA3B5B9161E7CCD88CDC0ADACD7D27173768DD68632651950ADF77B8  XMDEClientAnalyzer.zip' | shasum -a 256 -c
     ```
 
 3. Extract the contents of XMDEClientAnalyzer.zip on the machine.\

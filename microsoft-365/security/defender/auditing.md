@@ -2,12 +2,8 @@
 title: How to search the audit logs for actions performed by Defender Experts
 ms.reviewer:
 description: As a tenant administrator, you can use Microsoft Purview to search the audit logs for the actions Microsoft Defender Experts did in your tenant to perform their investigations
-keywords: XDR, Xtended detection and response, defender experts for xdr, Microsoft Defender Experts for XDR, managed threat hunting, managed detection and response (MDR) service, service delivery manager, real-time visibility with XDR experts, threat hunting and analysis
 ms.service: defender-experts
 ms.subservice: dex-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: vpattnaik
 author: vpattnai
 ms.localizationpriority: medium
@@ -69,5 +65,5 @@ In addition to using Audit New Search in the Microsoft Purview compliance portal
 
 ### See also
 
-[Additional information](additional-information-xdr.md)
+[Important considerations for Microsoft Defender Experts for XDR](additional-information-xdr.md)
 [!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

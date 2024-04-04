@@ -1,19 +1,18 @@
 ---
 title: "How to report false positives or false negatives following automated investigation in Microsoft Defender for Office 365"
 description: Was something missed or wrongly detected by AIR in Microsoft Defender for Office 365? Learn how to submit false positives or false negatives to Microsoft for analysis.
-keywords: automated, investigation, alert, trigger, action, remediation, false positive, false negative
 search.appverid: met150
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
 - NOCSH
-author: dansimp
-ms.author: dansimp
+author: chrisda
+ms.author: chrisda
 ms.service: microsoft-365-security
 ms.date: 06/09/2023
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -23,7 +22,7 @@ ms.custom:
 - autoir
 ms.subservice: mdo
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison" target="_blank">Microsoft Defender for Office 365 plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
@@ -64,7 +63,7 @@ With Threat Explorer, your security operations team can find an email affected b
 
 |Scenario|Undo Options|Learn more|
 |---|---|---|
-|An email message was routed to a user's Junk Email folder|<ul><li>Move the message to the user's Deleted Items folder</li><li>Move the message to the user's Inbox</li><li>Delete the message</li></ul>|[Find and investigate malicious email that was delivered in Office 365](investigate-malicious-email-that-was-delivered.md)|
+|An email message was routed to a user's Junk Email folder|<ul><li>Move the message to the user's Deleted Items folder</li><li>Move the message to the user's Inbox</li><li>Delete the message</li></ul>|[Find and investigate malicious email that was delivered in Office 365](threat-explorer-investigate-delivered-malicious-email.md)|
 |An email message or a file was quarantined|<ul><li>Release the email or file</li><li> Delete the email or file</li></ul>|[Manage quarantined messages as an admin](quarantine-admin-manage-messages-files.md)|
 
 ### Undo an action in the Action center
@@ -78,5 +77,5 @@ In the Action center, you can see remediation actions that were taken and potent
 
 ## See also
 
-- [Microsoft Defender for Office 365](defender-for-office-365.md)
+- [Microsoft Defender for Office 365](mdo-about.md)
 - [Automated investigations in Microsoft Defender for Office 365](air-about.md)

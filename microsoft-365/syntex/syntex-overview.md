@@ -1,10 +1,10 @@
 ---
 title: Overview of Microsoft Syntex
 ms.author: chucked
-author: chuckedmonson
+author: lkueter
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 09/13/2023
+ms.date: 03/25/2024
 audience: admin
 ms.topic: overview
 ms.custom: intro-overview
@@ -20,11 +20,11 @@ description: Learn about the capabilities, services, and features in Microsoft S
 
 # Overview of Microsoft Syntex
 
-</br>
+<!---</br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RW15yuU] 
 
-</br>
+</br>--->
 
 Microsoft Syntex is a content understanding, processing, and compliance service that uses intelligent document processing, content artificial intelligence (AI), and advanced machine learning to automatically and thoughtfully find, organize, and classify documents in your SharePoint libraries, Microsoft Teams, OneDrive for Business, and Exchange.
 
@@ -88,7 +88,7 @@ Instead of having to create a new document processing model from scratch, you ca
       ![Icon for structured document processing model.](../media/content-understanding/custom-extract-by-layout.png)
    :::column-end:::
    :::column span="3":::
-      Use a [structured model](form-processing-overview.md) to automatically identify field and table values. It works best for structured or semi-structured documents, such as forms and invoices. Use a [freeform model](freeform-document-processing-overview.md) to automatically extract information from unstructured and freeform documents, such as letters and contracts where the information can appear anywhere in the document.
+      Use a [structured model](form-processing-overview.md) to automatically identify field and table values. It works best for structured or semi-structured documents, such as forms and invoices. Use a [freeform model](form-processing-overview.md) to automatically extract information from unstructured and freeform documents, such as letters and contracts where the information can appear anywhere in the document.
    :::column-end:::
 :::row-end:::
 

@@ -1,15 +1,11 @@
 ---
 title: How to enable DMARC Reporting for Microsoft Online Email Routing Address (MOERA) and parked Domains
 description: The steps to configure DMARC for MOERA and parked domains.
-search.product:
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords:
   - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+author: chrisda
+ms.author: chrisda
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -20,12 +16,12 @@ ms.collection:
 ms.topic: how-to
 ms.subservice: mdo
 search.appverid: met150
-ms.date: 1/31/2023
+ms.date: 01/31/2023
 ---
 
 # How to enable DMARC Reporting for Microsoft Online Email Routing Address (MOERA) and parked Domains
 
-Best practice for domain email security protection is to protect yourself from spoofing using Domain-based Message Authentication, Reporting, and Conformance (DMARC). Enabling DMARC for your domains should be the first step as described here: [Domain-based Message Authentication, Reporting, and Conformance (DMARC)](/microsoft-365/security/office-365-security/email-authentication-dmarc-configure)
+Best practice for domain email security protection is to protect yourself from spoofing using Domain-based Message Authentication, Reporting, and Conformance (DMARC). Enabling DMARC for your domains should be the first step as described here: [Domain-based Message Authentication, Reporting, and Conformance (DMARC)](../email-authentication-dmarc-configure.md)
 
 This guide is designed to help you configure DMARC for domains not covered by the main DMARC article. These domains include domains that you're not using for email, but could be used by attackers if they remain unprotected:
 
@@ -53,7 +49,7 @@ This guide is designed to help you configure DMARC for domains not covered by th
 
 ## Active DMARC for parked domains
 
-1. Check if SPF is already configured for your parked domain. For instructions, see [Set up SPF to help prevent spoofing - Office 365 | Microsoft Docs](/microsoft-365/security/office-365-security/email-authentication-spf-configure#how-to-handle-subdomains)
+1. Check if SPF is already configured for your parked domain. For instructions, see [SPF TXT records for custom domains in Microsoft 365](../email-authentication-spf-configure.md#spf-txt-records-for-custom-domains-in-microsoft-365).
 1. Contact your DNS Domain provider.
 1. Ask to add this DMARC txt record with your appropriate email addresses: `v=DMARC1; p=reject; rua=mailto:d@rua.contoso.com;ruf=mailto:d@ruf.contoso.com`.
 
@@ -63,6 +59,6 @@ Wait until the DNS changes are propagated and try to spoof the configured domain
 
 ## More Information
 
-[Set up SPF to help prevent spoofing](/microsoft-365/security/office-365-security/email-authentication-spf-configure).
+[Set up SPF to help prevent spoofing](../email-authentication-spf-configure.md).
 
-[Use DMARC to validate email, setup steps](/microsoft-365/security/office-365-security/email-authentication-dmarc-configure).
+[Use DMARC to validate email, setup steps](../email-authentication-dmarc-configure.md).

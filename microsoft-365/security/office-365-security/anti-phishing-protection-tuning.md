@@ -4,10 +4,9 @@ f1.keywords:
   - NOCSH
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.topic: how-to
-
 ms.localizationpriority: medium
 search.appverid: 
 ms.collection: 
@@ -20,7 +19,7 @@ ms.service: microsoft-365-security
 ms.date: 06/09/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 1 and Plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
@@ -59,7 +58,7 @@ You can also use the [configuration analyzer](configuration-analyzer-for-securit
 
 - On a monthly basis, run [Secure Score](../defender/microsoft-secure-score.md) to assess your organization's security settings.
 
-- For messages that end up in quarantine by mistake (false positives), or for messages that are allowed through (false negatives), we recommend that you search for those messages in [Threat Explorer and real-time detections](threat-explorer-about.md). You can search by sender, recipient, or message ID. After you locate the message, go to details by clicking on the subject. For a quarantined message, look to see what the "detection technology" was so that you can use the appropriate method to override. For an allowed message, look to see which policy allowed the message.
+- For messages that end up in quarantine by mistake (false positives), or for messages that are allowed through (false negatives), we recommend that you search for those messages in [Threat Explorer and real-time detections](threat-explorer-real-time-detections-about.md). You can search by sender, recipient, or message ID. After you locate the message, go to details by clicking on the subject. For a quarantined message, look to see what the "detection technology" was so that you can use the appropriate method to override. For an allowed message, look to see which policy allowed the message.
 
 - Email from spoofed senders (the From address of the message doesn't match the source of the message) is classified as _phishing_ in Defender for Office 365. Sometimes spoofing is benign, and sometimes users don't want messages from specific spoofed sender to be quarantined. To minimize the impact to users, periodically review the [spoof intelligence insight](anti-spoofing-spoof-intelligence.md), [entries for spoofed senders in the Tenant Allow/Block List](tenant-allow-block-list-email-spoof-configure.md#use-the-microsoft-defender-portal-to-view-entries-for-spoofed-senders-in-the-tenant-allowblock-list), and the [Spoof detections report](reports-email-security.md#spoof-detections-report). After you review allowed and blocked spoofed senders and make any necessary overrides, you can confidently [configure spoof intelligence in anti-phishing policies](anti-phishing-policies-about.md#spoof-settings) to **Quarantine** suspicious messages instead of delivering them to the user's Junk Email folder.
 

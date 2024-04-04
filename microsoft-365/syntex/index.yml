@@ -9,7 +9,7 @@ metadata:
   ms.service: microsoft-syntex #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.subservice: subservice
   ms.topic: landing-page # Required
-  ms.collection: m365initiative-syntex, essentials-hub-or-landing, essentials-navigation
+  ms.collection: m365initiative-syntex, essentials-navigation, essentials-navigation
   ms.custom: intro-hub-or-landing
   author: chuckedmonson #Required; your GitHub user alias, with correct capitalization.
   ms.author: chucked #Required; microsoft alias of author; optional team alias.
@@ -39,7 +39,7 @@ landingContent:
             url: https://www.linkedin.com/learning/search?keywords=syntex&upsellOrderOrigin=default_guest_learning&trk=homepage-learning_learning-search-bar_search-submit
       - linkListType: whats-new
         links:
-          - text: Syntex services promotion
+          - text: Try Syntex services
             url: promo-syntex.md
           - text: Document translation
             url: translation-overview.md

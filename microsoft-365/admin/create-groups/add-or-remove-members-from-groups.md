@@ -34,7 +34,7 @@ In Microsoft 365, group members typically create their own groups, add themselve
   
 ## Add a member to a group in the admin center
 
-1. In the admin center, go to the [**Active groups**](https://admin.microsoft.com/Adminportal/Home?#/groups) page.  
+1. In the admin center, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855">Active groups</a> page.  
 
 2. Click a group name.
 
@@ -46,7 +46,7 @@ In Microsoft 365, group members typically create their own groups, add themselve
 
 ## Add a group to a member in the admin center
 
-1. In the admin center, go to the [**Active users**](https://admin.microsoft.com/Adminportal/Home?#/users) page.  
+1. In the admin center, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=834822">Active users</a> page.  
 
 2. Click a user.
 
@@ -61,7 +61,7 @@ In Microsoft 365, group members typically create their own groups, add themselve
 > [!NOTE]
 > When you remove a member from a private group, it takes 5 minutes for the person to be blocked from the group.
 
-1. In the admin center, go to the [**Active groups**](https://admin.microsoft.com/Adminportal/Home?#/groups) page.  
+1. In the admin center, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855">Active groups</a> page.  
 
 2. Click a group name.
 
@@ -77,7 +77,7 @@ By default, the person who created the group is the group owner. Often a group w
   
 ### Promote a member to owner status in the admin center
 
-1. In the admin center, go to the [**Active groups**](https://admin.microsoft.com/Adminportal/Home?#/groups) page.  
+1. In the admin center, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855">Active groups</a> page.  
 
 2. Click a group name.
 
@@ -91,7 +91,7 @@ By default, the person who created the group is the group owner. Often a group w
 
 ### Remove owner status in the admin center
 
-1. In the admin center, go to the [**Active groups**](https://admin.microsoft.com/Adminportal/Home?#/groups) page.  
+1. In the admin center, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855">Active groups</a> page.  
 
 2. Click a group name.
 
