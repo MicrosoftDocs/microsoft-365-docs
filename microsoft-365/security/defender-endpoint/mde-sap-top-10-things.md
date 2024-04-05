@@ -37,7 +37,7 @@ Follow these best practices to ensure a smooth deployment of Microsoft Defender 
 
 6. **Use the latest versions:** Deploy the latest version of Defender for Endpoint and use the latest releases of Windows, ideally Windows Server 2019 or higher. Older releases, such as Windows Server 2012, haven't been tested. See [Microsoft Defender Antivirus security intelligence and product updates](microsoft-defender-antivirus-updates.md).
 
-7. **Configure exclusions for Microsoft Defender Antivirus:** Exclude the following items from scanning:
+7. **Configure exclusions for Microsoft Defender Antivirus:** Exclude the following items in SAP from scanning:
 
    - DBMS data files, log files, and temp files, including disks containing backup files
    - Entire contents of the SAPMNT, SAPLOC, and TRANS directories
