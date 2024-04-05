@@ -14,7 +14,7 @@ ms.collection:
   - tier1
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 11/10/2023
+ms.date: 04/05/2024
 ---
 
 # Before you begin using Defender Experts for Hunting
