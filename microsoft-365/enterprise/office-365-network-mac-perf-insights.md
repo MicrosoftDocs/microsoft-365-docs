@@ -29,8 +29,8 @@ These are network insights that might be shown for each office location:
 - [Backhauled network egress](#backhauled-network-egress)
 - [Network intermediary device](#network-intermediary-device)
 - [Better performance detected for customers near you](#better-performance-detected-for-customers-near-you)
-- [Use of a nonoptimal Exchange Online service front door](#use-of-a-non-optimal-exchange-online-service-front-door)
-- [Use of a nonoptimal SharePoint service front door](#use-of-a-non-optimal-sharepoint-online-service-front-door)
+- [Use of a nonoptimal Exchange Online service front door](#use-of-a-nonoptimal-exchange-online-service-front-door)
+- [Use of a nonoptimal SharePoint service front door](#use-of-a-nonoptimal-sharepoint-service-front-door)
 - [Low download speed from SharePoint front door](#low-download-speed-from-sharepoint-front-door)
 - [China user optimal network egress](#china-user-optimal-network-egress)
 
