@@ -11,7 +11,7 @@ audience: ITPro
 ms.collection: 
   - Tier1
 ms.topic: conceptual
-ms.date: 03/15/2024
+ms.date: 04/01/2024
 ---
 
 # Using Microsoft Copilot for Security for threat intelligence
