@@ -23,13 +23,13 @@ ai-usage:
 
 # Microsoft Defender for Endpoint on Linux and SAP Support
 
-As an admin, it's essential to understand the compatibility and support between Microsoft Defender for Endpoint on Linux with EDR and SAP applications. This article helps you understand the support provided by SAP for advanced threat protection (ATP) security solutions like Microsoft Defender for Endpoint with EDR and how it interacts with SAP applications.
+As an admin, it's essential to understand the compatibility and support between Microsoft Defender for Endpoint on Linux with EDR and SAP applications. This article helps you understand the support provided by SAP for endpoint protection security solutions like Microsoft Defender for Endpoint with EDR and how it interacts with SAP applications.
 
 ## SAP Support for Conventional Antivirus Solutions
 
 SAP provides basic documentation for conventional file scan antivirus solutions. These solutions compare file signatures against a database of known threats and alert or quarantine infected files. SAP can offer a basic level of support for their applications interacting with conventional file scan antivirus software, as their mechanisms and behavior are well known and predictable.
 
-## Advanced Threat Protection (ATP) Security Solutions
+## Endpoint protection Security Solutions
 
 Traditional antivirus security solutions aren't sufficient to stop modern threats such as fileless malware, highly polymorphic threats, and human-operated attacks. Artificial intelligence (AI) and machine learning (ML) backed capabilities, like behavioral blocking and containment, are required. Microsoft Defender for Endpoint with EDR offers ATP features to mitigate these modern threats.
 
