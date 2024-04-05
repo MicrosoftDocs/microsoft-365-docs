@@ -31,9 +31,11 @@ Microsoft and SAP advise against deploying Microsoft Defender for Endpoint on Wi
 
 Using tools like Endpoint Security Policies to deploy Defender for Endpoint to an entire SAP landscape without testing can cause downtime. Ensure the following factors are tested:
 
-1. Deploy Defender for Endpoint with Tamper Protection enabled. If issues arise, disable Real Time Scanning and configure scheduled scans. Open a support case using the Microsoft Defender Portal if necessary.
+1. Deploy Defender for Endpoint with [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) enabled. If issues arise, disable [real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md) and configure [scheduled scans](schedule-antivirus-scans.md). 
 
-2. Exclude DBMS files and executables per DBMS vendor recommendations.
+   If you need help, [Contact Microsoft Defender for Endpoint support](contact-support.md).
+
+2. [Configure exclusions](/microsoft-365/security/defender-endpoint/defender-endpoint-antivirus-exclusions#custom-exclusions) for DBMS files and executables per DBMS vendor recommendations.
 
 3. Analyze SAPMNT, SAP TRANS_DIR, Spool, and Job Log directories. Archive files if there are over 100,000 files.
 
@@ -43,9 +45,9 @@ Using tools like Endpoint Security Policies to deploy Defender for Endpoint to a
 
 6. Host interface files on a dedicated non-SAP file server with Real Time Protection enabled. SAP servers shouldn't be used for interface files.
 
-## Important Configuration Settings for Microsoft Defender for Endpoint with SAP on Linux
+## Important Configuration Settings for Microsoft Defender for Endpoint on Windows Server with SAP
 
-The following sections detail essential configuration settings for Microsoft Defender for Endpoint on Linux with SAP:
+The following sections detail essential configuration settings for Microsoft Defender for Endpoint on Windows Server with SAP:
 
 1. **Microsoft Defender for Endpoint Overview:** Learn about Microsoft 365 Defender at [What is Microsoft 365 Defender?](/learn/modules/introduction-to-microsoft-365-defender/).
 
