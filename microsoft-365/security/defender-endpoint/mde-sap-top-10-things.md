@@ -21,9 +21,9 @@ ai-usage:
 - ai-assisted  
 ---  
 
-# Top 10 Recommendations for Microsoft Defender for Endpoint on Linux in SAP Environments
+# Top 10 Recommendations for Microsoft Defender for Endpoint in SAP Environments
 
-Follow these best practices to ensure a smooth deployment of Microsoft Defender for Endpoint on Linux in your SAP environment:
+Follow these best practices to ensure a smooth deployment of Microsoft Defender for Endpoint in your SAP environment:
 
 1. **Ensure basic security measures:** Limit access to SAP servers, block network ports, and implement other common security protection measures as a crucial first step. Modern threats recently evolved beyond traditional file-based viruses, so these measures are necessary but not sufficient to mitigate all risks.
 
@@ -39,26 +39,30 @@ Follow these best practices to ensure a smooth deployment of Microsoft Defender 
 
 7. **Configure exclusions for Microsoft Defender Antivirus:** Exclude the following items from scanning:
 
-    - DBMS data files, log files, and temp files, including disks containing backup files
-    - Entire contents of the SAPMNT, SAPLOC, and TRANS directories
-    - Entire contents of directories for standalone engines, such as TREX
+   - DBMS data files, log files, and temp files, including disks containing backup files
+   - Entire contents of the SAPMNT, SAPLOC, and TRANS directories
+   - Entire contents of directories for standalone engines, such as TREX
 
     For more information on DBMS exclusions, see the following resources:
-    - [SQL Server: Configure antivirus software to work with SQL Server](/sql/sql-server/install/configure-antivirus-software-to-work-with-sql-server)
-    - Oracle: See How To Configure Anti-Virus On Oracle Database Server (Doc ID 782354.1)
-    - [DB2: Which DB2 directories to exclude for Linux anti-virus software](https://www.ibm.com/support/pages/which-db2-directories-exclude-linux-anti-virus-software) (use the same commands on Windows OS)
-    - SAP ASE: Contact SAP
-    - MaxDB: Contact SAP
+
+      - [SQL Server: Configure antivirus software to work with SQL Server](/sql/sql-server/install/configure-antivirus-software-to-work-with-sql-server)
+      - Oracle: See How To Configure Anti-Virus On Oracle Database Server (Doc ID 782354.1)
+      - [DB2: Which DB2 directories to exclude for Linux anti-virus software](https://www.ibm.com/support/pages/which-db2-directories-exclude-linux-anti-virus-software) (use the same commands on Windows OS)
+      - SAP ASE: Contact SAP
+      - MaxDB: Contact SAP
 
 8. **Recommended Microsoft Defender Antivirus settings for SAP applications:** Configure the following settings:
-    - AntivirusEnabled: True
-    - AntivirusSignatureAge: 0
-    - BehaviorMonitorEnabled: True
-    - DefenderSignaturesOutOfDate: False
-    - IsTamperProtected: True
-    - RealTimeProtectionEnabled: True
 
-9. **Use security policies:** Utilize Defender for Endpoint security policies to ensure uniform deployment and configuration. In the Microsoft Defender portal, navigate to **Endpoints \> Configuration management \> Endpoint security policies** and select **Create new Policy**. For more information, review the [Microsoft Defender for Endpoint security policies documentation](/microsoft-365/security/defender-endpoint/manage-security-policies).
+   - AntivirusEnabled: True
+   - AntivirusSignatureAge: 0
+   - BehaviorMonitorEnabled: True
+   - DefenderSignaturesOutOfDate: False
+   - IsTamperProtected: True
+   - RealTimeProtectionEnabled: True
+
+9. **Use security policies:** Utilize Defender for Endpoint security policies to ensure uniform deployment and configuration. In the Microsoft Defender portal, navigate to **Endpoints** > **Configuration management** > **Endpoint security policies**, and then select **Create new Policy**. 
+
+   For more information, review the [Microsoft Defender for Endpoint security policies documentation](/microsoft-365/security/defender-endpoint/manage-security-policies).
 
 10. **Stay up-to-date:** New features in Defender for Endpoint on Windows have been tested with SAP systems and offer improved performance. Always use the latest release to benefit from these enhancements.
 
