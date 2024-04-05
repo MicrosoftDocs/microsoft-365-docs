@@ -1,13 +1,13 @@
 ---  
 title: "Top 10 recommendations for SAP customers using Microsoft Defender for Endpoint"  
-description: Learn best practices for deploying Microsoft Defender for Endpoint on Linux in SAP environments. 
+description: Learn best practices for deploying Microsoft Defender for Endpoint on Windows Server in SAP environments. 
 author: denisebmsft
 ms.author: deniseb  
 manager: dansimp
 ms.date: 04/04/2024
 ms.topic: overview 
 ms.service: defender-endpoint  
-ms.subservice: linux  
+ms.subservice: ngp
 ms.localizationpriority: normal 
 ms.collection:  
 ms.custom: 
@@ -27,9 +27,9 @@ Follow these best practices to ensure a smooth deployment of Microsoft Defender 
 
 1. **Ensure basic security measures:** Limit access to SAP servers, block network ports, and implement other common security protection measures as a crucial first step. Modern threats recently evolved beyond traditional file-based viruses, so these measures are necessary but not sufficient to mitigate all risks.
 
-2. **Test on non-productive systems:** Deploy Defender for Endpoint to nonproductive systems first before rolling out to production systems. This reduces the risk of downtime due to untested configurations. If immediate deployment to production systems is necessary, consider temporarily disabling Tamper Protection and Real-Time Protection.
+2. **Test on non-productive systems:** Deploy Defender for Endpoint to nonproductive systems first before rolling out to production systems. This reduces the risk of downtime due to untested configurations. If immediate deployment to production systems is necessary, consider temporarily disabling [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) and [real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md).
 
-3. **Configure exclusions and support:** Real-Time Protection is enabled by default on Windows OS. If you encounter issues related to Defender for Endpoint, configure exclusions or open a support case via the Microsoft Defender portal.
+3. **Configure exclusions and support:** Real-time protection is enabled by default on Windows OS. If you encounter issues related to Defender for Endpoint, configure [exclusions](defender-endpoint-antivirus-exclusions.md) or [open a support case via the Microsoft Defender portal](contact-support.md).
 
 4. **Collaborate with relevant teams:** Involve both the SAP Basis Team and the Enterprise Security Team in the deployment process. Create a phased deployment, testing, and monitoring plan together.
 
@@ -47,7 +47,6 @@ Follow these best practices to ensure a smooth deployment of Microsoft Defender 
 
       - [SQL Server: Configure antivirus software to work with SQL Server](/sql/sql-server/install/configure-antivirus-software-to-work-with-sql-server)
       - Oracle: See How To Configure Anti-Virus On Oracle Database Server (Doc ID 782354.1)
-      - [DB2: Which DB2 directories to exclude for Linux anti-virus software](https://www.ibm.com/support/pages/which-db2-directories-exclude-linux-anti-virus-software) (use the same commands on Windows OS)
       - SAP ASE: Contact SAP
       - MaxDB: Contact SAP
 
