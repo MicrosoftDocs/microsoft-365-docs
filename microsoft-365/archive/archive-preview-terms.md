@@ -16,7 +16,7 @@ ms.localizationpriority:  medium
 description: Read the preview terms and conditions for Microsoft 365 Archive (Preview).
 ---
 
-# Microsoft 365 Archive preview terms
+# Microsoft 365 Archive preview terms and conditions
 
 Effective Date:  November 15, 2023
 
@@ -24,13 +24,13 @@ Effective Date:  November 15, 2023
 
 **By using this Preview Feature, you accept these Terms and Conditions and all rights and obligations within.  If you do not agree to these Terms and Conditions, DO NOT use the Preview Feature.**  These Terms and Conditions govern the use of the Preview Feature offerings as described below.
 
-"Feedback" is all suggestions, comments, feedback, ideas, or know how, in any form, that Company provides to Microsoft. It doesn't include sales forecasts, financial results, future release scheduled, marketing plans and high-level product plans or feature lists for anticipated products.
+“Feedback” is all suggestions, comments, feedback, ideas, or know how, in any form, that Company provides to Microsoft.  It doesn't include sales forecasts, financial results, future release scheduled, marketing plans and high-level product plans or feature lists for anticipated products.
 
 **MICROSOFT OFFERING**:  The goal of the Microsoft 365 Archive is to provide customers with a cost-effective, long-term storage for their inactive aging content. Customers can archive their SharePoint site using Microsoft 365 Archive from SharePoint Admin Center. Admins can also reactivate an archived site that will move the site and its contents from archived (cold tier) storage to SharePoint tenant (standard tier) storage.
 
-**PREVIEW FEATURE**:  To terminate your Feature Preview during the Preview Period, stop using the Preview Feature. Microsoft may change or discontinue the Preview Feature at any time with or without notice. Microsoft may also choose not to make the Preview Feature commercially available.
+**PREVIEW FEATURE**:  To terminate your Feature Preview during the Preview Period, stop using the Preview Feature. Microsoft may change or discontinue the Preview Feature at any time with or without notice. Microsoft may also choose not to make the Preview Feature generally commercially available.
 
-During the Preview Period, Company allows its SharePoint tenant admins to Archive SharePoint sites. Company must be aware that this is a preview service and all the limitations described in these Terms and Conditions, including but not limited, that Microsoft may change or discontinue the Preview Feature at any time and that Microsoft may also choose not to make the Preview Feature commercially available.  
+During the Preview Period, Company allows its SharePoint tenant admins to Archive SharePoint sites. Company must be aware that this is a preview service and all the limitations described in these Terms and Conditions, including but not limited, that Microsoft may change or discontinue the Preview Feature at any time and that Microsoft may also choose not to make the Preview Feature generally commercially available.  
 
 Prerequisite Requirements to enable Microsoft 365 Archive pay-as-you-go are:  
 
@@ -40,9 +40,9 @@ Prerequisite Requirements to enable Microsoft 365 Archive pay-as-you-go are:
 
 3. An Azure resource group
 
-No SLA applies to this Feature Preview.
+No service-level agreement (SLA) applies to this Feature Preview.
 
-THE PREVIEW FEATURE IS PROVIDED "AS-IS," "WITH ALL FAULTS," AND "AS AVAILABLE."  Microsoft provides no performance guarantee for the Feature Preview (including accompanying URLs provided for embedded or unauthenticated viewing) and Company bear the risk of using it.  The Feature Preview isn't included in the SLA for Microsoft Syntex and may not be covered by customer support.
+THE PREVIEW FEATURE IS PROVIDED “AS-IS,” “WITH ALL FAULTS,” AND “AS AVAILABLE.”  Microsoft provides no performance guarantee for the Feature Preview (including accompanying URLs provided for embedded or unauthenticated viewing) and Company bear the risk of using it. The Feature Preview isn't included in the SLA for Microsoft Syntex and may not be covered by customer support.
 
 **<ins>LICENSE</ins>**
 
@@ -66,7 +66,7 @@ Company won't be charged for reactivation of an archived content within the firs
 
 **<ins>LENGTH OF OBLIGATIONS; DISCLOSURE</ins>**
 
-**Preview Period.**  The Preview Period continues in effect until <ins>June 30, 2024, or 30 days after Commercial General Availability of the Preview Feature, whichever is first</ins>.  Company may terminate their use of the Preview Feature at any time.  Terminating use of the Preview Feature won't change any of the rights, licenses granted, or duties made while the Preview Period is in effect. Termination is defined as i) the Company’s termination of use of the Preview Feature and/or ii) the Preview Period ends. 
+**Preview Period.**  The Preview Period continues in effect until <ins>June 30, 2024, or 30 days after Commercial General Availability of the Preview Feature, whichever is first</ins>.  Company may terminate their use of the Preview Feature at any time. Terminating use of the Preview Feature won't change any of the rights, licenses granted, or duties made while the Preview Period is in effect. Termination is defined as i) the Company’s termination of use of the Preview Feature and/or ii) the Preview Period ends. 
 
 **Effects upon Termination.**   Once terminated, Company will no longer have access to Microsoft 365 Archive and all the archived content if Microsoft doesn't continue with the then generally available Microsoft 365 Archive use pay-as-you-go (PAYG) billing through an Azure subscription should Microsoft choose to make the Microsoft 365 Archive service generally available.  
 
@@ -74,7 +74,7 @@ Company won't be charged for reactivation of an archived content within the firs
 
 In case the Company’s Azure subscription goes into an unhealthy stage of deleted or canceled or suspended, we'll prevent any future archival and restores until the subscription is back to a healthy state. Company has 30 days to recover any archived data and restores by bringing back the subscription to an active state. If no action is taken from the Company to bring subscription back to active state in 30 days, we'll soft delete the archived data from systems after this 30 days. Upon reactivation, Company must also pay for Microsoft 365 Archive usage for the days the subscription was in unhealthy state.
 
-This Agreement can't be extended. Microsoft may also choose not to make the Preview Feature commercially available.
+This Agreement can't be extended. Microsoft may also choose not to make the Preview Feature generally commercially available.
 
 **<ins>REPRESENTATIONS AND LIMITATIONS</ins>**
 

@@ -16,7 +16,7 @@ ms.localizationpriority:  medium
 description: Learn about the archive states and what they mean in Microsoft 365 Archive.
 ---
 
-# Archive states in Microsoft 365 Archive
+# Archive states in Microsoft 365 Archive (Preview)
 
 > [!NOTE]
 > This feature is currently in preview and subject to change. The feature is currently rolling out and might not yet be fully available to all organizations.
