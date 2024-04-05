@@ -40,7 +40,7 @@ When a site is archived, compliance features such as eDiscovery and retention la
 
 4. Archived sites can be seen on the **Archived sites** page in the SharePoint admin center.
 
-    ![Screenshot of the Archived sites page in the SharePoint admin center.](../../media/m365-archive/archived-sites-page.png)
+    ![Screenshot of the Archived sites page in the SharePoint admin center.](../media/m365-archive/archived-sites-page.png)
 
     > [!NOTE]
     > To archive a hub site, you first need to unregister it as a hub site. Archiving Microsoft Teams-connected sites with private or shared channel sites is not supported. Teams sites with standard channels are supported.
@@ -70,7 +70,7 @@ After reactivation, the site will move back to the **Active sites** page. The si
 
 5. If you're trying to reactivate a site from “Archived” state, you'll see a confirmation pop-up that shows an estimated price for reactivation. Select **Confirm** to reactivate. The site will enter the “Reactivating” state. It will move to active sites once reactivation is complete.
 
-    ![Screenshot of an example site that you are reactivating in the SharePoint admin center.](../../media/m365-archive/reactivate-site-example.png)
+    ![Screenshot of an example site that you are reactivating in the SharePoint admin center.](../media/m365-archive/reactivate-site-example.png)
 
 When you reactivate a site, its permissions, lists, pages, files, folder-structure, site-level policies, and other metadata will revert to the prearchival state, except if files are deleted from archived sites. The only two exceptions are when files are deleted while the site is archived:
 
