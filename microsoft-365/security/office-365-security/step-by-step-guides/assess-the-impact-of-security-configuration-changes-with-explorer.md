@@ -1,12 +1,8 @@
 ---
 title: Assess the impact of security configuration changes with Explorer
-description: Examples and walkthrough of using Explorer to determine the impact of a security control (configuration) change in Microsoft Defender for Office 365
-search.product:
+description: Examples and walk-through of using Explorer to determine the impact of a security control (configuration) change in Microsoft Defender for Office 365.
 ms.service: microsoft-365-security
 ms.subservice: mdo
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords:
   - NOCSH
 ms.author: chrisda
@@ -20,24 +16,24 @@ ms.collection:
 - tier3
 ms.topic: how-to
 search.appverid: met150
-ms.date: 1/31/2023
+ms.date: 04/04/2024
 ---
 
 # Assess the impact of security configuration changes with Explorer
 
-Before you make change(s) to your security configuration, such as policies or transport rules, it's important to understand the impact of the change(s) so that you can plan and ensure *minimal* disruption to your organization.
+Before you make changes to your security configuration, such as policies or transport rules, it's important to understand the impact of those changes so that you can plan and ensure *minimal* disruption to your organization.
 
-This step-by-step guide takes you through assessing a change, and exporting the impacted emails for assessment. The procedure can be applied to many different changes, by altering the criteria (filters) you use in explorer.
+This step-by-step guide takes you through assessing a change, and exporting the impacted emails for assessment. 
 
-## What you'll need
+## What you need
 
 - Microsoft Defender for Office 365 Plan 2 (included as part of E5).
 - Sufficient permissions (Security reader minimum required to assess via Threat Explorer).
-- 5-10 minutes to perform the steps below.
+- 5-10 minutes to perform the following procedures.
 
 ## Assess changing normal confidence phish delivery location to quarantine (from the Junk email folder)
 
-1. **Login** to the security portal and navigate to Explorer (underneath *Email & Collaboration* on the left nav) <https://security.microsoft.com/threatexplorer>.
+1. Sign in to the [Microsoft Defender portal](https://security.microsoft.com) and navigate to Explorer (underneath *Email & Collaboration* on the left nav) <https://security.microsoft.com/threatexplorer>.
 1. Select **Phish** from the top tab selection (*All email* is the default view).
 1. Press the **filter** button (defaulted to *Sender*) and select **Phish confidence level**.
 1. Select the **Phish confidence level** of **Normal**.
@@ -48,7 +44,7 @@ This step-by-step guide takes you through assessing a change, and exporting the 
 
 ## Assess removing a sender / domain override removal
 
-1. **Login** to the security portal and navigate to **Explorer** (underneath Email & Collaboration on the left nav) <https://security.microsoft.com/threatexplorer>.
+1. Sign in to the [Microsoft Defender portal](https://security.microsoft.com) and navigate to **Explorer** (underneath Email & Collaboration on the left nav) <https://security.microsoft.com/threatexplorer>.
 1. Select **All email** if not already selected.
 1. Press the **filter** button (defaulted to *Sender*) and add either a sender or sender domain filter, then add the entry where you wish to assess the impact of removal.
 1. Expand the date range to the maximum & press **Refresh** You should now see mail listed if the sender / sending domain is still active in messaging your organization. If *not* you may need to tweak the filter, or alternatively you no longer receive mail from that domain / sender and can remove the entry safely.
@@ -59,8 +55,8 @@ This step-by-step guide takes you through assessing a change, and exporting the 
 
 ### Further reading
 
-Consider using secure presets [Ensuring you always have the optimal security controls with preset security policies](ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies.md)
+Consider using secure presets [Ensuring you always have the optimal security controls with preset security policies](ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies.md).
 
-You can also manage email authentication issues with spoof intelligence [Spoof intelligence insight](../anti-spoofing-spoof-intelligence.md)
+You can also manage email authentication issues with spoof intelligence [Spoof intelligence insight](../anti-spoofing-spoof-intelligence.md).
 
-Learn more about email authentication [Email Authentication in Exchange Online Protection](../email-authentication-about.md)
+Learn more about email authentication [Email Authentication in Exchange Online Protection](../email-authentication-about.md).

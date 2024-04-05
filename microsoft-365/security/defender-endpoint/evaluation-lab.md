@@ -266,7 +266,7 @@ Running threat simulations using third-party platforms is a good way to evaluate
 
 6. View the progress of a simulation by selecting the **Simulations** tab. View the simulation state, active alerts, and other details.
 
-   :::image type="content" source="images/simulations-tab.png" alt-text="Simulations tab" lightbox="images/simulations-tab.png":::
+   :::image type="content" source="media/simulations-tab.png" alt-text="Simulations tab" lightbox="media/simulations-tab.png":::
 
 After running your simulations, we encourage you to walk through the lab progress bar and explore **Microsoft Defender for Endpoint triggered an automated investigation and remediation**. Check out the evidence collected and analyzed by the feature.
 
@@ -282,15 +282,15 @@ A list of supported third-party threat simulation agents are listed, and specifi
 
 You can conveniently run any available simulation right from the catalog.
 
-:::image type="content" source="images/simulations-catalog.png" alt-text="Simulations catalog" lightbox="images/simulations-catalog.png":::
+:::image type="content" source="media/simulations-catalog.png" alt-text="Simulations catalog" lightbox="media/simulations-catalog.png":::
 
 Each simulation comes with an in-depth description of the attack scenario and references such as the MITRE attack techniques used and sample Advanced hunting queries you run.
 
 **Examples:**
 
-:::image type="content" source="images/simulation-details-aiq.png" alt-text="The simulation description details pane example for persistence methods" lightbox="images/simulation-details-aiq.png":::
+:::image type="content" source="media/simulation-details-aiq.png" alt-text="The simulation description details pane example for persistence methods" lightbox="media/simulation-details-aiq.png":::
 
-:::image type="content" source="images/simulation-details-sb.png" alt-text="The simulation description details for APT29" lightbox="images/simulation-details-sb.png":::
+:::image type="content" source="media/simulation-details-sb.png" alt-text="The simulation description details for APT29" lightbox="media/simulation-details-sb.png":::
 
 ## Evaluation report
 
