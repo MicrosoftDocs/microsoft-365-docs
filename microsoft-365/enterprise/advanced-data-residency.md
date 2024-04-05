@@ -151,7 +151,7 @@ Microsoft does not provide a granular status to indicate progress toward migrati
 
 Customer administrators can stay informed of migration updates through Message center notifications and by reviewing the “Data location” section within the Microsoft 365 admin center to see when a workload completes migration to their _Local Region Geography_. From the Microsoft 365 admin center, customer administrators can access the Message center by navigating to **Health > Message center** and the "Data location" section by navigating to **Settings > Org settings > Organization profile > Data location**.
 
-For more information on Migration, customer administrators can refer to the following pages: 
+For more information on Migration, customer administrators can refer to the following pages:
 
 [Overview and Definitions - Microsoft 365 Enterprise](https://learn.microsoft.com/microsoft-365/enterprise/m365-dr-overview?view=o365-worldwide#migrationsmoves) 
 
