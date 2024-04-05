@@ -1,13 +1,13 @@
 ---  
-title: "Deploy Microsoft Defender for Endpoint with SAP"  
-description: Deploy and configure Microsoft Defender for Endpoint on Linux in an SAP environment, ensuring optimal security and performance.
+title: "Deploy Microsoft Defender for Endpoint on Windows Server with SAP"  
+description: Deploy and configure Microsoft Defender for Endpoint on Windows Server in an SAP environment, ensuring optimal security and performance.
 author: denisebmsft
 ms.author: deniseb  
 manager: dansimp
 ms.date: 04/04/2024
 ms.topic: how-to
 ms.service: defender-endpoint  
-ms.subservice: linux  
+ms.subservice: ngp
 ms.localizationpriority: normal 
 ms.collection:  
 ms.custom: 
@@ -21,7 +21,7 @@ ai-usage:
 - ai-assisted  
 ---  
 
-## Deploying Microsoft Defender for Endpoint on Linux in an SAP Environment
+## Deploying Microsoft Defender for Endpoint on Windows Server with SAP
 
 This article provides a comprehensive overview of deploying Microsoft Defender for Endpoint on Linux in an environment running SAP. By following the recommended deployment methodology and important configuration settings, administrators can ensure a secure and efficient SAP system.
 
