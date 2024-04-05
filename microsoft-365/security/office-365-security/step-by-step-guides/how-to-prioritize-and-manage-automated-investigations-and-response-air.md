@@ -1,9 +1,9 @@
 ---
 title: How to prioritize and manage Automated Investigations and Response (AIR).
 description: How to steps to analyze and approve AIR actions directly from the Action Center. When alerts are triggered, Automated Investigation and Response (AIR) determines the scope of impact of a threat in your organization and provided recommended remediation actions.
-ms.service: microsoft-365-security
 ms.service: defender-office-365
-  - NOCSH
+f1.keywords: 
+ - NOCSH
 author: chrisda
 ms.author: chrisda
 ms.localizationpriority: medium

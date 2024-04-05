@@ -1,9 +1,9 @@
 ---
 title: Review and remove unnecessary allowlist entries with Advanced Hunting in Microsoft Defender for Office 365
 description: Steps and sample queries for advanced hunting to start reviewing your security configuration and removing unnecessary allowlist entries.
-ms.service: microsoft-365-security
 ms.service: defender-office-365
-  - NOCSH
+f1.keywords: 
+ - NOCSH
 ms.author: chrisda
 author: MSFTBen
 ms.localizationpriority: medium

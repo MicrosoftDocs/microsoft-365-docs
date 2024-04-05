@@ -1,9 +1,9 @@
 ---
 title: How to enable DMARC Reporting for Microsoft Online Email Routing Address (MOERA) and parked Domains
 description: The steps to configure DMARC for MOERA and parked domains.
-ms.service: microsoft-365-security
 ms.service: defender-office-365
-  - NOCSH
+f1.keywords: 
+ - NOCSH
 author: chrisda
 ms.author: chrisda
 ms.localizationpriority: medium

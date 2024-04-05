@@ -1,7 +1,6 @@
 ---
 title: Assess and tune your filtering for bulk mail in Defender for Office 365
 description: Tune bulk filtering settings within Exchange Online and Microsoft Defender for Office 365
-ms.service: microsoft-365-security
 ms.service: defender-office-365
 f1.keywords:
   - NOCSH

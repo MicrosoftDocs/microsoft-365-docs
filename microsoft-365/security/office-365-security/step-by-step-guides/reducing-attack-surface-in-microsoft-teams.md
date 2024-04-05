@@ -1,9 +1,7 @@
 ---
 title: Reduce the attack surface for Microsoft Teams
 description: Configuration which can be used to reduce the attack surface in Microsoft Teams, including enabling Microsoft Defender for Office 365.
-ms.service: microsoft-365-security
 ms.service: defender-office-365
-  - NOCSH
 ms.author: chrisda
 author: MSFTBen
 ms.localizationpriority: medium
