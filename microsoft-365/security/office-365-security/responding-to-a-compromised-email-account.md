@@ -23,8 +23,7 @@ ms.localizationpriority: high
 search.appverid: 
   - MET150
 description: Learn how to recognize and respond to a compromised email account using tools available in Microsoft 365.
-ms.subservice: mdo
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 ms.date: 6/19/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>

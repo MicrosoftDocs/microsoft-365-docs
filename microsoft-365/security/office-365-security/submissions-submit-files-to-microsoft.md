@@ -15,8 +15,7 @@ ms.collection:
   - m365-security
   - tier1
 description: Admins and end-users can learn about submitting undetected malware or mis-identified malware attachments to Microsoft for analysis.
-ms.subservice: mdo
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 ms.date: 6/20/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
