@@ -27,7 +27,7 @@ This article provides a comprehensive overview of deploying Microsoft Defender f
 
 ## Deployment Methodology
 
-Microsoft and SAP advise against deploying Microsoft Defender for Endpoint on Linux directly to all development, QAS, and production systems without careful testing and monitoring. Uncontrolled deployment can lead to system downtime. Instead, deploy the software in development systems first, validate it in QAS, and then proceed with production environments.
+Microsoft and SAP advise against deploying Microsoft Defender for Endpoint on Windows Server directly to all development, QAS, and production systems without careful testing and monitoring. Uncontrolled deployment can lead to system downtime. Instead, deploy the software in development systems first, validate it in QAS, and then proceed with production environments.
 
 Using tools like Endpoint Security Policies to deploy Defender for Endpoint to an entire SAP landscape without testing can cause downtime. Ensure the following factors are tested:
 
