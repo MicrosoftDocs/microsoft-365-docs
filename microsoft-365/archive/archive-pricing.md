@@ -35,4 +35,4 @@ To see the pricing for Microsoft 365 Archive, see [Pay-as-you-go services and pr
 
 The following table helps visualize the savings you'll realize by archiving content based on the frequency and percent of all archived content you're restoring. The key takeaway is that if you are not reactivating more than 30% of your data more than twice a year, you'll achieve most of the savings offered by the product.
 
-![Table showing the COGS savings if you archive with Microsoft 365 Archive.](../../media/m365-archive/archive-cogs-savings.png)
+![Table showing the COGS savings if you archive with Microsoft 365 Archive.](../media/m365-archive/archive-cogs-savings.png)
