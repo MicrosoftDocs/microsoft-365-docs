@@ -21,13 +21,13 @@ ai-usage:
 - ai-assisted  
 ---  
 
-## Top 10 Recommendations for Microsoft Defender for Endpoint on Linux in SAP Environments
+# Top 10 Recommendations for Microsoft Defender for Endpoint on Linux in SAP Environments
 
 Follow these best practices to ensure a smooth deployment of Microsoft Defender for Endpoint on Linux in your SAP environment:
 
-1. **Ensure basic security measures:** Limit access to SAP servers, block network ports, and implement other common security protection measures as a crucial first step. Modern threats have evolved beyond traditional file-based viruses, so these measures are necessary but not sufficient to mitigate all risks.
+1. **Ensure basic security measures:** Limit access to SAP servers, block network ports, and implement other common security protection measures as a crucial first step. Modern threats recently evolved beyond traditional file-based viruses, so these measures are necessary but not sufficient to mitigate all risks.
 
-2. **Test on non-productive systems:** Deploy Defender for Endpoint to non-productive systems first before rolling out to production systems. This reduces the risk of downtime due to untested configurations. If immediate deployment to production systems is necessary, consider temporarily disabling Tamper Protection and Real-Time Protection.
+2. **Test on non-productive systems:** Deploy Defender for Endpoint to nonproductive systems first before rolling out to production systems. This reduces the risk of downtime due to untested configurations. If immediate deployment to production systems is necessary, consider temporarily disabling Tamper Protection and Real-Time Protection.
 
 3. **Configure exclusions and support:** Real-Time Protection is enabled by default on Windows OS. If you encounter issues related to Defender for Endpoint, configure exclusions or open a support case via the Microsoft Defender portal.
 
