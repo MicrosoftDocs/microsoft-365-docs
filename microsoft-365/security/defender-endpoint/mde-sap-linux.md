@@ -1,5 +1,5 @@
 ---  
-title: "Microsoft Defender Endpoint for SAP Applications on Windows Server"  
+title: "Microsoft Defender Endpoint for SAP Applications on Linux Server"  
 description: Understand how Microsoft Defender for Endpoint with EDR and other advanced security capabilities interacts with SAP applications.
 author: denisebmsft
 ms.author: deniseb  
