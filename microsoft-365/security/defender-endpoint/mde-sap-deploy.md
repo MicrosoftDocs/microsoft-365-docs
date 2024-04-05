@@ -23,7 +23,7 @@ ai-usage:
 
 ## Deploying Microsoft Defender for Endpoint on Windows Server with SAP
 
-This article provides a comprehensive overview of deploying Microsoft Defender for Endpoint on Linux in an environment running SAP. By following the recommended deployment methodology and important configuration settings, administrators can ensure a secure and efficient SAP system.
+This article provides a comprehensive overview of deploying Microsoft Defender for Endpoint on Windows Server in an environment running SAP. By following the recommended deployment methodology and important configuration settings, administrators can ensure a secure and efficient SAP system.
 
 ## Deployment Methodology
 
@@ -61,7 +61,7 @@ The following sections detail essential configuration settings for Microsoft Def
 
 6. **Recommended setting for RealTimeProtectionEnabled:** Enable Real Time Scanning with Tamper Protection and Behavior Monitoring, unless a specific problem is identified.
 
-7. **Scanning network shares with Defender for Endpoint on Linux:** By default, Microsoft Defender Antivirus scans SMB shared network file systems on Windows. However, it doesn't scan NFS file systems during scheduled scans on Linux. EDR on Windows might scan SMB shared network file systems.
+7. **Scanning network shares with Defender for Endpoint on Windows Server:** By default, Microsoft Defender Antivirus scans SMB shared network file systems on Windows. However, it doesn't scan NFS file systems during scheduled scans on Windows Server. EDR on Windows might scan SMB shared network file systems.
 
 8. **Defender for Endpoint Client Analyzer Support tool:** Download the latest version of the Microsoft Defender for Endpoint client analyzer at <https://aka.ms/MDEAnalyzer>.
 
