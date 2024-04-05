@@ -15,8 +15,7 @@ ms.collection:
   - m365-security
   - tier2
 description: Learn how the delivery pools are used to protect the reputation of email servers in the Microsoft 365 datacenters.
-ms.subservice: mdo
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 ms.date: 11/3/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>

@@ -5,14 +5,13 @@ author: chrisda
 manager: deniseb
 audience: ITPro
 ms.topic: how-to
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 ms.localizationpriority: medium
 ms.collection:
   - m365-security
   - tier2
 ms.custom:
 description: Admins can learn how to create and manage payloads for Attack simulation training in Microsoft Defender for Office 365 Plan 2.
-ms.subservice: mdo
 search.appverid: met150
 ms.date: 3/11/2024
 appliesto:
