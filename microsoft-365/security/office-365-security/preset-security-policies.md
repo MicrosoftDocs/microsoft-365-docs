@@ -14,8 +14,7 @@ ms.collection:
   - tier1
 ms.custom:
 description: Admins can learn how to apply Standard and Strict policy settings across the protection features of Exchange Online Protection (EOP) and Microsoft Defender for Office 365
-ms.subservice: mdo
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 search.appverid: met150
 ms.date: 11/2/2023
 appliesto:

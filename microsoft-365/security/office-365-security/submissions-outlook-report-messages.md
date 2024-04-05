@@ -12,8 +12,7 @@ ms.collection:
   - m365-security
   - tier1
 description: Learn how to report phishing and suspicious emails in Outlook using the built-in Report button or the Report Message and Report Phishing add-ins.
-ms.subservice: mdo
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 search.appverid: met150
 ms.date: 11/9/2023
 appliesto:

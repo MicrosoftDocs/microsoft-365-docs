@@ -11,12 +11,11 @@ ms.collection:
 - m365-security
 - tier1
 ms.localizationpriority: high
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 search.appverid:
 - MOE150
 - MET150
 description: "Microsoft Defender for Office 365 solutions trial user guide."
-ms.subservice: mdo
 ms.custom: trial-user guide
 ms.date: 6/23/2023
 appliesto:
