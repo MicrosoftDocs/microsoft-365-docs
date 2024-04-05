@@ -8,8 +8,7 @@ manager: dansimp
 ms.date: 6/15/2023
 audience: ITPro
 ms.topic: conceptual
-ms.service: microsoft-365-security
-ms.subservice: mdo
+ms.service: defender-office-365
 ms.localizationpriority: medium
 ms.collection:
 - m365-security

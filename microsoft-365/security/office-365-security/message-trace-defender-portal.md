@@ -15,8 +15,7 @@ ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 ms.custom: 
   - seo-marvel-apr2020
 description: Admins can use the Message trace link in the Microsoft Defender portal to find out what happened to messages.
-ms.subservice: mdo
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 search.appverid: met150
 ms.date: 10/9/2023
 appliesto:
