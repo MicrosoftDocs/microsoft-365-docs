@@ -45,7 +45,7 @@ Using tools like [Intune to deploy Defender for Endpoint security policies](/mem
 
 6. Host interface files on a dedicated non-SAP file server with Real Time Protection enabled. SAP servers shouldn't be used for interface files.
 
-## Important Configuration Settings for Microsoft Defender for Endpoint on Windows Server with SAP
+## Important configuration settings for Defender for Endpoint on Windows Server with SAP
 
 The following sections detail essential configuration settings for Microsoft Defender for Endpoint on Windows Server with SAP:
 
