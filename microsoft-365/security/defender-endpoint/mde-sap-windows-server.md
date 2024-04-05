@@ -1,5 +1,5 @@
 ---  
-title: "Microsoft Defender Endpoint for SAP Applications on Windows Server"  
+title: "Microsoft Defender Endpoint on Windows Server with SAP"  
 description: Understand how Microsoft Defender for Endpoint with EDR and other advanced security capabilities interacts with SAP applications.
 author: denisebmsft
 ms.author: deniseb  
@@ -21,7 +21,7 @@ ai-usage:
 - ai-assisted  
 ---  
 
-# Microsoft Defender for Endpoint on Windows Server and SAP Support
+# Microsoft Defender for Endpoint on Windows Server with SAP
 
 As an admin, it's essential to understand the compatibility and support between Microsoft Defender for Endpoint on Windows Server with EDR and SAP applications. This article helps you understand the support provided by SAP for endpoint protection security solutions like Microsoft Defender for Endpoint with EDR and how it interacts with SAP applications.
 
