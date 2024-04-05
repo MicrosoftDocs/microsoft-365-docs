@@ -123,7 +123,7 @@ Data moves are a back-end service operation with minimal impact to a customer's 
 
 ### During and After your Migration
 
-No action is needed from the customer while Microsoft moves each ADR workload and associated customer tenant data to the customer's eligible _Local Region Geography_. 
+No action is needed from the customer while Microsoft moves each ADR workload and associated customer tenant data to the customer's eligible _Local Region Geography_.
 
 Customer administrators can visit the Message center or “Data location” section within the Microsoft 365 admin center throughout the migration process to review any migration notices and see when each workload service completes migration. From the Microsoft 365 admin center, customer administrators can access the Message center by navigating to **Health > Message center** and the "Data location" section by navigating to **Settings > Org settings > Organization profile > Data location**.
 
@@ -153,7 +153,7 @@ Customer administrators can stay informed of migration updates through Message c
 
 For more information on Migration, customer administrators can refer to the following pages:
 
-[Overview and Definitions - Microsoft 365 Enterprise](https://learn.microsoft.com/microsoft-365/enterprise/m365-dr-overview?view=o365-worldwide#migrationsmoves) 
+[Overview and Definitions - Microsoft 365 Enterprise](https://learn.microsoft.com/microsoft-365/enterprise/m365-dr-overview?view=o365-worldwide#migrationsmoves)
 
 [Where your Microsoft 365 customer data is stored - Microsoft 365 Enterprise](https://learn.microsoft.com/microsoft-365/enterprise/o365-data-locations?view=o365-worldwide)
 
