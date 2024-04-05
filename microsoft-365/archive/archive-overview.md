@@ -16,7 +16,7 @@ ms.localizationpriority:  medium
 description: Learn about how Microsoft 365 Archive can provide your with organization cost-effective storage solutions.
 ---
 
-# Overview of Microsoft 365 Archive
+# Overview of Microsoft 365 Archive (Preview)
 
 > [!NOTE]
 > This feature is currently in preview and subject to change. The feature is currently rolling out and might not yet be fully available to all organizations. Before you begin, read the [Microsoft 365 Archive preview terms and conditions](archive-preview-terms.md).

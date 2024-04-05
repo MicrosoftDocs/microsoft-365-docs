@@ -16,7 +16,7 @@ ms.localizationpriority:  medium
 description: Learn about compliance features for archived sites in Microsoft 365 Archive.
 ---
 
-# Compliance features in Microsoft 365 Archive
+# Compliance features in Microsoft 365 Archive (Preview)
 
 > [!NOTE]
 > Microsoft Purview features work seamlessly with archived content. For example, you can apply retention hold on archived content without needing to unarchive it. Likewise, you can also archive content in retention hold without needing to move or delete it from retention scope.
