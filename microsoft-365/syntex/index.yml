@@ -87,7 +87,7 @@ landingContent:
       - linkListType: architecture
         links:
           - text: Microsoft 365 Archive (Preview)
-            url: archive/archive-overview.md
+            url: /microsoft-365/archive
           - text: Microsoft Backup (Preview)
             url: backup/backup-overview.md
 
