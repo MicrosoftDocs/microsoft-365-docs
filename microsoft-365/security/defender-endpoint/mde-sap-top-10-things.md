@@ -50,14 +50,14 @@ Follow these best practices to ensure a smooth deployment of Microsoft Defender 
       - SAP ASE: Contact SAP
       - MaxDB: Contact SAP
 
-8. **Recommended Microsoft Defender Antivirus settings for SAP applications:** Configure the following settings:
+8. **Recommended Microsoft Defender Antivirus settings for SAP applications:** Configure the following [settings](/powershell/module/defender/set-mppreference):
 
-   - AntivirusEnabled: True
-   - AntivirusSignatureAge: 0
-   - BehaviorMonitorEnabled: True
-   - DefenderSignaturesOutOfDate: False
-   - IsTamperProtected: True
-   - RealTimeProtectionEnabled: True
+   - `AntivirusEnabled: True`
+   - `AntivirusSignatureAge: 0`
+   - `BehaviorMonitorEnabled: True`
+   - `DefenderSignaturesOutOfDate: False`
+   - `IsTamperProtected: True`
+   - `RealTimeProtectionEnabled: True`
 
 9. **Use security policies:** Utilize Defender for Endpoint security policies to ensure uniform deployment and configuration. In the Microsoft Defender portal, navigate to **Endpoints** > **Configuration management** > **Endpoint security policies**, and then select **Create new Policy**. 
 
@@ -65,3 +65,8 @@ Follow these best practices to ensure a smooth deployment of Microsoft Defender 
 
 10. **Stay up-to-date:** New features in Defender for Endpoint on Windows have been tested with SAP systems and offer improved performance. Always use the latest release to benefit from these enhancements.
 
+## Related articles
+
+[Microsoft Defender for Endpoint on Windows Server with SAP](mde-sap-windows-server.md)
+
+[Deploying Microsoft Defender for Endpoint on Windows Server with SAP](mde-sap-deploy.md)

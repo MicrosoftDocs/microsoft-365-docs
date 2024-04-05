@@ -51,7 +51,7 @@ The following sections detail essential configuration settings for Microsoft Def
 
 1. **Microsoft Defender for Endpoint Overview:** Learn about Microsoft 365 Defender at [What is Microsoft 365 Defender?](/learn/modules/introduction-to-microsoft-365-defender/).
 
-2. **Checking Microsoft Defender Antivirus status:** Open a command prompt with Administrative rights and run the provided PowerShell commands.
+2. **Checking Microsoft Defender Antivirus status:** Open a command prompt with Administrative rights and run the [Defender PowerShell commands](/powershell/module/defender).
 
 3. **Checking Microsoft Defender Endpoint Detection and Response (EDR) status:** Use the Get-Service command in PowerShell to check the status of the EDR service.
 
@@ -67,5 +67,8 @@ The following sections detail essential configuration settings for Microsoft Def
 
 9.  **Opening a support case:** Contact Microsoft Defender for Endpoint support at [Contact Microsoft Defender for Endpoint support](/microsoft-365/security/defender-endpoint/contact-support?view=o365-worldwide).
 
-For more helpful commands, refer to the [Microsoft Defender for Endpoint with SAP on Windows documentation](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-on-windows-server).
+## Related articles
 
+[Top 10 Recommendations for Microsoft Defender for Endpoint in SAP Environments](mde-sap-top-10-things.md)
+
+[Microsoft Defender for Endpoint on Windows Server with SAP](mde-sap-windows-server.md)

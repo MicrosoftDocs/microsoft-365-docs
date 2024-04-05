@@ -78,3 +78,4 @@ SAP is unable to provide support for EDR/XDR software, as their adaptive mechani
 - [3315834 - Antivirus is reporting that files under \usr\sap\<SID>\<instance name>\data\cache are a malware - SAP for Me](https://me.sap.com/notes/3315834/E)
 
 - [3158904 - Does Object Store Service on SAP BTP support Antivirus scanning - SAP for Me](https://me.sap.com/notes/3158904/E)
+
