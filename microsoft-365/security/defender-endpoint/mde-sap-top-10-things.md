@@ -21,7 +21,7 @@ ai-usage:
 - ai-assisted  
 ---  
 
-# Top 10 Recommendations for Microsoft Defender for Endpoint in SAP Environments
+# Top 10 recommendations for Microsoft Defender for Endpoint in SAP Environments
 
 Follow these best practices to ensure a smooth deployment of Microsoft Defender for Endpoint in your SAP environment:
 

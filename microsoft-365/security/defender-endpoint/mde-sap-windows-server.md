@@ -25,11 +25,11 @@ ai-usage:
 
 As an admin, it's essential to understand the compatibility and support between Microsoft Defender for Endpoint on Windows Server with EDR and SAP applications. This article helps you understand the support provided by SAP for endpoint protection security solutions like Microsoft Defender for Endpoint with EDR and how it interacts with SAP applications.
 
-## SAP Support for Conventional Antivirus Solutions
+## SAP Support for conventional antivirus solutions
 
 SAP provides basic documentation for conventional file scan antivirus solutions. These solutions compare file signatures against a database of known threats and alert or quarantine infected files. SAP can offer a basic level of support for their applications interacting with conventional file scan antivirus software, as their mechanisms and behavior are well known and predictable.
 
-## Endpoint protection Security Solutions
+## Endpoint protection security solutions
 
 Traditional antivirus security solutions aren't sufficient to stop modern threats such as fileless malware, highly polymorphic threats, and human-operated attacks. Artificial intelligence (AI) and machine learning (ML) backed capabilities, like behavioral blocking and containment, are required. Microsoft Defender for Endpoint with EDR offers ATP features to mitigate these modern threats.
 
@@ -37,7 +37,7 @@ Traditional antivirus security solutions aren't sufficient to stop modern threat
 
 Defender for Endpoint EDR continuously monitors operating system calls such as file read, file write, and other process-level operations. The EDR sensor acquires Opportunistic Locks on local NTFS file systems, making it unlikely to impact applications. However, Opportunistic Locks aren't possible on remote network file systems, and in rare cases, a lock can cause general nonspecific errors in SAP applications, such as "Access Denied."
 
-## SAP Support for EDR/XDR Software
+## SAP support for EDR/XDR software
 
 SAP is unable to provide support for EDR/XDR software, as their adaptive mechanisms aren't predictable or reproducible. If problems arise on systems running advanced security solutions like Defender for Endpoint, SAP recommends disabling the security software and attempting to reproduce the problem. A support case can then be raised with the security software vendor. SAP Support's policy is documented in [3356389 - Antivirus or other security software affecting SAP operations](https://launchpad.support.sap.com/#/notes/3356389).
 
