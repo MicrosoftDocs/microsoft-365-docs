@@ -7,7 +7,7 @@ manager: dansimp
 ms.date: 04/04/2024
 ms.topic: overview
 ms.service: defender-endpoint  
-ms.subservice: linux  
+ms.subservice: ngp
 ms.localizationpriority: normal
 ms.collection:  
 ms.custom: 
@@ -64,8 +64,6 @@ SAP is unable to provide support for EDR/XDR software, as their adaptive mechani
 - [3186509 - How can I enable antivirus scanning for uploaded files? - SAP for Me](https://me.sap.com/notes/3186509/E)
 
 - [1730930 - Using antivirus software in an SAP HANA appliance - SAP for Me](https://me.sap.com/notes/1730930/E)
-
-- [2248916 - Which files and directories should be excluded from an antivirus scan for SAP BusinessObjects Business Intelligence Platform products in Linux/Unix? - SAP for Me](https://me.sap.com/notes/2248916/E)
 
 - [106267 - Virus scanner software on Windows - SAP for Me](https://me.sap.com/notes/106267/E)
 
