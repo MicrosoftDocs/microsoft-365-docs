@@ -45,10 +45,10 @@ Follow these best practices to ensure a smooth deployment of Microsoft Defender 
 
     For more information on DBMS exclusions, see the following resources:
 
-      - [SQL Server: Configure antivirus software to work with SQL Server](/sql/sql-server/install/configure-antivirus-software-to-work-with-sql-server)
-      - Oracle: See How To Configure Anti-Virus On Oracle Database Server (Doc ID 782354.1)
-      - SAP ASE: Contact SAP
-      - MaxDB: Contact SAP
+      - [SQL Server: Configure antivirus software to work with SQL Server](/troubleshoot/sql/database-engine/security/antivirus-and-sql-server)
+      - [Oracle: How to configure antivirus On Oracle Database Server (Doc ID 782354.1)](https://support.oracle.com/knowledge/Oracle%20Database%20Products/782354_1.html)
+      - [SAP ASE documentation](https://help.sap.com/docs/SUPPORT_CONTENT/sybase/3362697907.html)
+      - [MaxDB: Contact SAP](https://help.sap.com/docs/SUPPORT_CONTENT/sybase/3362697907.html)
 
 8. **Recommended Microsoft Defender Antivirus settings for SAP applications:** Configure the following [settings](/powershell/module/defender/set-mppreference):
 
