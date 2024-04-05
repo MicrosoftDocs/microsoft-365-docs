@@ -35,7 +35,7 @@ Follow these best practices to ensure a smooth deployment of Microsoft Defender 
 
 5. **Establish a performance baseline:** Use tools like Perfmon (Windows) to measure performance before and after deploying Defender for Endpoint. This helps identify any impact on system performance.
 
-6. **Use the latest versions:** Deploy the latest version of Defender for Endpoint and use the latest releases of Windows, ideally Windows Server 2019 or higher. Older releases, such as Windows Server 2012, have not been tested.
+6. **Use the latest versions:** Deploy the latest version of Defender for Endpoint and use the latest releases of Windows, ideally Windows Server 2019 or higher. Older releases, such as Windows Server 2012, haven't been tested.
 
 7. **Configure exclusions for Microsoft Defender Antivirus:** Exclude the following items from scanning:
 
@@ -43,7 +43,7 @@ Follow these best practices to ensure a smooth deployment of Microsoft Defender 
     - Entire contents of the SAPMNT, SAPLOC, and TRANS directories
     - Entire contents of directories for standalone engines, such as TREX
 
-    For more information on DBMS exclusions, refer to the following resources:
+    For more information on DBMS exclusions, see the following resources:
     - [SQL Server: Configure antivirus software to work with SQL Server](/sql/sql-server/install/configure-antivirus-software-to-work-with-sql-server)
     - Oracle: See How To Configure Anti-Virus On Oracle Database Server (Doc ID 782354.1)
     - [DB2: Which DB2 directories to exclude for Linux anti-virus software](https://www.ibm.com/support/pages/which-db2-directories-exclude-linux-anti-virus-software) (use the same commands on Windows OS)
