@@ -15,8 +15,7 @@ ms.assetid:
 ms.custom: 
   - seo-marvel-apr2020
 description: Admins can use the Audit page in the Microsoft Defender portal to search the unified audit log for user and admin actions in the organization.
-ms.subservice: mdo
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 search.appverid: met150
 ms.date: 10/9/2023
 appliesto:

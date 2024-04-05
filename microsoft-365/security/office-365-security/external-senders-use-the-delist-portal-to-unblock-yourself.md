@@ -19,8 +19,7 @@ ms.collection:
 ms.custom:
   - seo-marvel-apr2020
 description: In this article, you learn how to use the delist portal to remove yourself from the Microsoft 365 blocked senders list. This action is the best response to address 5.7.511 Access denied errors.
-ms.subservice: mdo
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 1 and Plan 2</a>
