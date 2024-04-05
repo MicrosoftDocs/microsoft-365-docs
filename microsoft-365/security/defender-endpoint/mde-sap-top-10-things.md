@@ -33,9 +33,9 @@ Follow these best practices to ensure a smooth deployment of Microsoft Defender 
 
 4. **Collaborate with relevant teams:** Involve both the SAP Basis Team and the Enterprise Security Team in the deployment process. Create a phased deployment, testing, and monitoring plan together.
 
-5. **Establish a performance baseline:** Use tools like Perfmon (Windows) to measure performance before and after deploying Defender for Endpoint. This helps identify any impact on system performance.
+5. **Establish a performance baseline:** Use tools like [PerfMon (Windows)](/windows-server/administration/windows-commands/perfmon) to measure performance before and after deploying Defender for Endpoint. This helps identify any impact on system performance.
 
-6. **Use the latest versions:** Deploy the latest version of Defender for Endpoint and use the latest releases of Windows, ideally Windows Server 2019 or higher. Older releases, such as Windows Server 2012, haven't been tested.
+6. **Use the latest versions:** Deploy the latest version of Defender for Endpoint and use the latest releases of Windows, ideally Windows Server 2019 or higher. Older releases, such as Windows Server 2012, haven't been tested. See [Microsoft Defender Antivirus security intelligence and product updates](microsoft-defender-antivirus-updates.md).
 
 7. **Configure exclusions for Microsoft Defender Antivirus:** Exclude the following items from scanning:
 
