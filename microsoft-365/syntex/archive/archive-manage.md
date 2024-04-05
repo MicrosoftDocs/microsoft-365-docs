@@ -16,7 +16,7 @@ ms.localizationpriority:  medium
 description: Learn how to archive, reactivate, and manage sites in Microsoft 365 Archive.
 ---
 
-# Manage Microsoft 365 Archive (Preview)
+# Manage Microsoft 365 Archive
 
 > [!NOTE]
 > This feature is currently in preview and subject to change. The feature is currently rolling out and might not yet be fully available to all organizations.
