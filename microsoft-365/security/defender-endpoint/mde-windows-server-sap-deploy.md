@@ -57,7 +57,7 @@ The following sections detail essential configuration settings for Microsoft Def
 
 5. **Behavior Monitoring:** Understand Behavior Monitoring at [Behavioral blocking and containment](/windows/security/threat-protection/microsoft-defender-atp/behavioral-blocking-and-containment).
 
-6. **Recommended setting for RealTimeProtectionEnabled:** Enable Real Time Scanning with Tamper Protection and Behavior Monitoring, unless a specific problem has been identified.
+6. **Recommended setting for RealTimeProtectionEnabled:** Enable Real Time Scanning with Tamper Protection and Behavior Monitoring, unless a specific problem is identified.
 
 7. **Scanning network shares with Defender for Endpoint on Linux:** By default, Microsoft Defender Antivirus scans SMB shared network file systems on Windows. However, it doesn't scan NFS file systems during scheduled scans on Linux. EDR on Windows might scan SMB shared network file systems.
 
