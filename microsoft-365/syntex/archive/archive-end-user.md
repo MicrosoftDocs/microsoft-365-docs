@@ -16,7 +16,7 @@ ms.localizationpriority:  medium
 description: Learn about end-user features for archived sites in Microsoft 365 Archive.
 ---
 
-# End user experience in Microsoft 365 Archive (Preview)
+# End user experience in Microsoft 365 Archive
 
 > [!NOTE]
 > This feature is currently in preview and subject to change. The feature is currently rolling out and might not yet be fully available to all organizations.
