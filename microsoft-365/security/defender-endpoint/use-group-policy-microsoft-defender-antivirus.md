@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 author: siosulli
 ms.author: siosulli
 ms.custom: nextgen
-ms.date: 05/24/2023
+ms.date: 04/03/2024
 ms.reviewer: ksarens, jtoole, pahuijbr
 manager: deniseb
 ms.subservice: ngp
@@ -45,15 +45,15 @@ We recommend using [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) t
 
 In general, you can use the following procedure to configure or change some settings for Microsoft Defender Antivirus.
 
-1. On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object (GPO) you want to configure and click **Edit**.
+1. On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object (GPO) you want to configure and select **Edit**.
 
 2. Using the **Group Policy Management Editor** go to **Computer configuration**.
 
-3. Click **Administrative templates**.
+3. Select **Administrative templates**.
 
 4. Expand the tree to **Windows components** \> **Microsoft Defender Antivirus**.
 
-5. Expand the section (referred to as **Location** in the table in this topic) that contains the setting you want to configure, double-click the setting to open it, and make configuration changes.
+5. Expand the section (referred to as **Location** in the table in this article) that contains the setting you want to configure, double-click the setting to open it, and make configuration changes.
 
 6. [Deploy the updated GPO as you normally do](/windows/win32/srvnodes/group-policy).
 
@@ -68,7 +68,7 @@ The following table lists commonly used Group Policy settings that are available
 |Location|Setting|Article|
 |---|---|---|
 |Client interface|Enable headless UI mode|[Prevent users from seeing or interacting with the Microsoft Defender Antivirus user interface](prevent-end-user-interaction-microsoft-defender-antivirus.md)|
-|Client interface|Display additional text to clients when they need to perform an action|[Configure the notifications that appear on endpoints](configure-notifications-microsoft-defender-antivirus.md)|
+|Client interface|Display more text to clients when they need to perform an action|[Configure the notifications that appear on endpoints](configure-notifications-microsoft-defender-antivirus.md)|
 |Client interface|Suppress all notifications|[Configure the notifications that appear on endpoints](configure-notifications-microsoft-defender-antivirus.md)|
 |Client interface|Suppresses reboot notifications|[Configure the notifications that appear on endpoints](configure-notifications-microsoft-defender-antivirus.md)|
 |Exclusions|Extension Exclusions|[Configure and validate exclusions in Microsoft Defender Antivirus scans](configure-exclusions-microsoft-defender-antivirus.md)|
@@ -81,7 +81,7 @@ The following table lists commonly used Group Policy settings that are available
 |MAPS|Configure local setting override for reporting to Microsoft MAPS|[Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
 |MpEngine|Configure extended cloud check|[Configure the cloud block timeout period](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md)|
 |MpEngine|Select cloud protection level|[Specify the cloud-delivered protection level](specify-cloud-protection-level-microsoft-defender-antivirus.md)|
-|Network inspection system|Specify additional definition sets for network traffic inspection| Not used (deprecated) |
+|Network inspection system|Specify more definition sets for network traffic inspection| Not used (deprecated) |
 |Network inspection system|Turn on definition retirement| Not used (deprecated)|
 |Network inspection system|Turn on protocol recognition| Not used (deprecated)|
 |Quarantine|Configure local setting override for the removal of items from Quarantine folder|[Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
@@ -89,7 +89,7 @@ The following table lists commonly used Group Policy settings that are available
 |Real-time protection|Configure local setting override for monitoring file and program activity on your computer|[Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
 |Real-time protection|Configure local setting override for monitoring for incoming and outgoing file activity|[Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
 |Real-time protection|Configure local setting override for scanning all downloaded files and attachments|[Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
-|Real-time protection|Configure local setting override for turn on behavior monitoring|[Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
+|Real-time protection|Configure local setting override to turn on behavior monitoring|[Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
 |Real-time protection|Configure local setting override to turn on real-time protection|[Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
 |Real-time protection|Define the maximum size of downloaded files and attachments to be scanned|[Enable and configure Microsoft Defender Antivirus always-on protection and monitoring](configure-real-time-protection-microsoft-defender-antivirus.md)|
 |Real-time protection|Monitor file and program activity on your computer|[Enable and configure Microsoft Defender Antivirus always-on protection and monitoring](configure-real-time-protection-microsoft-defender-antivirus.md)|
@@ -192,4 +192,5 @@ The following table lists commonly used Group Policy settings that are available
 - [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md)
 - [Reference topics for management and configuration tools](configuration-management-reference-microsoft-defender-antivirus.md)
 - [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
