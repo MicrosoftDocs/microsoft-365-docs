@@ -77,7 +77,7 @@ Applying multiple different web content filtering policies to the same device re
 
 The result is that categories 1-4 are all blocked, as illustrated in the following image.
 
-:::image type="content" source="images/web-content-filtering-policies-mode-precedence.png" alt-text="Illustrates precedence of web content filtering policy block mode over audit mode":::
+:::image type="content" source="media/web-content-filtering-policies-mode-precedence.png" alt-text="Illustrates precedence of web content filtering policy block mode over audit mode":::
 
 ## Turn on web content filtering
 
@@ -167,25 +167,25 @@ This card lists the parent web content categories with the largest increase or d
 
 In the first 30 days of using this feature, your organization might not have enough data to display this information.
 
-:::image type="content" source="images/web-activity-by-category600.png" alt-text="The web activity by category card" lightbox="images/web-activity-by-category600.png":::
+:::image type="content" source="media/web-activity-by-category600.png" alt-text="The web activity by category card" lightbox="media/web-activity-by-category600.png":::
 
 ### Web content filtering  summary card
 
 This card displays the distribution of blocked access attempts across the different parent web content categories. Select one of the colored bars to view more information about a specific parent web category.
 
-:::image type="content" source="images/web-content-filtering-summary.png" alt-text="The web content filtering summary card" lightbox="images/web-content-filtering-summary.png":::
+:::image type="content" source="media/web-content-filtering-summary.png" alt-text="The web content filtering summary card" lightbox="media/web-content-filtering-summary.png":::
 
 ### Web activity summary card
 
 This card displays the total number of requests for web content in all URLs.
 
-:::image type="content" source="images/web-activity-summary.png" alt-text="The web activity summary card" lightbox="images/web-activity-summary.png":::
+:::image type="content" source="media/web-activity-summary.png" alt-text="The web activity summary card" lightbox="media/web-activity-summary.png":::
 
 ### View card details
 
 You can access the **Report details** for each card by selecting a table row or colored bar from the chart in the card. The report details page for each card contains extensive statistical data about web content categories, website domains, and device groups.
 
-:::image type="content" source="images/web-protection-report-details.png" alt-text="The web protection report details" lightbox="images/web-protection-report-details.png":::
+:::image type="content" source="media/web-protection-report-details.png" alt-text="The web protection report details" lightbox="media/web-protection-report-details.png":::
 
 - **Web categories**: Lists the web content categories that have had access attempts in your organization. Select a specific category to open a summary flyout.
 

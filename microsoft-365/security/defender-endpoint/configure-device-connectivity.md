@@ -138,7 +138,7 @@ Devices must meet specific prerequisites to use the streamlined connectivity met
 
 The following illustration shows the streamlined connectivity process and the corresponding stages:
 
-:::image type="content" source="images/streamlined-connectivity-process.png" alt-text="Illustration of  streamlined connectivity process":::
+:::image type="content" source="media/streamlined-connectivity-process.png" alt-text="Illustration of  streamlined connectivity process":::
 
 
 ### Stage 1. Configure your network environment for cloud connectivity 
