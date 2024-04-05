@@ -2,7 +2,7 @@
 title: How-to deploy and configure the report message add-in
 description: The steps to deploy and configure Microsoft's phish reporting add-ins aimed at security administrators.
 ms.service: microsoft-365-security
-ms.subservice: mdo
+ms.service: defender-office-365
 f1.keywords:
   - NOCSH
 ms.author: chrisda

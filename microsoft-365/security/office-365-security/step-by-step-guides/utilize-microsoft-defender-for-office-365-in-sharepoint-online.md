@@ -2,7 +2,7 @@
 title: Use Microsoft Defender for Office 365 in SharePoint Online
 description: The steps to ensure that you can use, and get the value from, Microsoft Defender for Office 365 in SharePoint Online and OneDrive.
 ms.service: microsoft-365-security
-f1.keywords: 
+ms.service: defender-office-365
   - NOCSH
 ms.author: chrisda
 author: MSFTBen
@@ -14,7 +14,6 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: how-to
-ms.subservice: mdo
 search.appverid: met150
 ms.date: 01/31/2023
 ---
