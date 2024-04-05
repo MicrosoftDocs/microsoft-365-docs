@@ -56,7 +56,7 @@ Download the installation and onboarding packages from Microsoft Defender portal
 5. From a command prompt, verify that you have the two files.
     - Type *cd Downloads* and press **Enter**.
     - Type *ls* and press **Enter**.
-     :::image type="content" source="images/Terminal-image-step5.png" alt-text="Screenshot that displays the two download files.":::
+     :::image type="content" source="media/Terminal-image-step5.png" alt-text="Screenshot that displays the two download files.":::
 6. Copy the *wdav.pkg* and *MicrosoftDefenderATPOnboardingMacOs.sh* to the device where you want to deploy the Microsoft Defender for Endpoint on macOS.
 
 ## Application installation (macOS 11 and newer versions)
@@ -75,13 +75,13 @@ To complete this process, you must have admin privileges on the device.
      sudo installer -store -pkg /Users/admin/Downloads/wdav.pkg -target /
      ```
 
-   :::image type="content" source="images/monterey-install-1.png" alt-text="Screenshot that shows the installation process for the application":::
+   :::image type="content" source="media/monterey-install-1.png" alt-text="Screenshot that shows the installation process for the application":::
 
 2. Select **Continue**.
 
 3. Read through the **Software License Agreement** and select **Continue** to agree with the terms.
 
-    :::image type="content" source="images/software-license-agreement.png" alt-text="Screenshot that shows the Software License Agreement.":::
+    :::image type="content" source="media/software-license-agreement.png" alt-text="Screenshot that shows the Software License Agreement.":::
 
 4. Read through the *End-User License Agreement (EULA)* and select **Agree**.
 
@@ -108,21 +108,21 @@ To complete this process, you must have admin privileges on the device.
 
 10. At the end of the installation process, for macOS Big Sur (11.0) or latest version, you're prompted to approve the system extensions used by the product. Select **Open Security Preferences**.
 
-    :::image type="content" source="images/monterey-install-2.png" alt-text="Screenshot that shows the system extension approval":::
+    :::image type="content" source="media/monterey-install-2.png" alt-text="Screenshot that shows the system extension approval":::
 
 11. To enable system extention, select **Details**.
 
-    :::image type="content" source="images/system-extention-image.png" alt-text="Screenshot that shows the system extention.":::
+    :::image type="content" source="media/system-extention-image.png" alt-text="Screenshot that shows the system extention.":::
 
 12. From the **Security & Privacy** window, select the checkboxes next to **Microsoft Defender** and select **OK**.
 
-    :::image type="content" source="images/security-privacy-window-updated.png" alt-text="Screenshot that shows the security and privacy window.":::
+    :::image type="content" source="media/security-privacy-window-updated.png" alt-text="Screenshot that shows the security and privacy window.":::
 
 13. Repeat steps 11 and 12 for all system extensions distributed with Microsoft Defender for Endpoint on Mac.
 
 14. As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint on Mac inspects socket traffic and reports this information to the Microsoft Defender portal. When prompted to grant Microsoft Defender for Endpoint permissions to filter network traffic, select **Allow**.
 
-    :::image type="content" source="images/monterey-install-4.png" alt-text="Screenshot that shows the system extension security preferences2":::
+    :::image type="content" source="media/monterey-install-4.png" alt-text="Screenshot that shows the system extension security preferences2":::
 
     To troubleshoot System Extension issues, refer [Troubleshoot System Extension](mac-support-sys-ext.md).
 
@@ -143,7 +143,7 @@ To grant full disk access:
 
 1. Select **General** \> **Restart** for the new system extensions to take effect.
 
-   :::image type="content" source="images/restart-fulldisk.png" alt-text="Screenshot that allows you to restart the system for new system extensions to be enabled.":::
+   :::image type="content" source="media/restart-fulldisk.png" alt-text="Screenshot that allows you to restart the system for new system extensions to be enabled.":::
 
 1. Enable *Potentially Unwanted Application* (PUA) in block mode.
 

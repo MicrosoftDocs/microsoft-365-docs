@@ -14,7 +14,7 @@ ms.collection:
   - tier1
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 11/10/2023
+ms.date: 04/05/2024
 ---
 
 # Before you begin using Defender Experts for Hunting
@@ -37,7 +37,6 @@ To enable us to get started with this threat hunting service, we require the fol
 
 - Microsoft Defender for Endpoint P2 must be licensed and enabled on eligible devices
 - Microsoft Defender Antivirus must be licensed and enabled in active mode on devices onboarded to Defender for Endpoint (required for endpoint detection and response capabilities)
-- Microsoft Entra ID P1 must be licensed for all users and enabled (required for enabling secure service provider access)
 
 The following products are also eligible to get Defender Experts for Hunting coverage, and you must have their appropriate product licenses to get started with the service:
 
