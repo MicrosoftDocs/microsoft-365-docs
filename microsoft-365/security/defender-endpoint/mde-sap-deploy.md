@@ -21,7 +21,7 @@ ai-usage:
 - ai-assisted  
 ---  
 
-## Deploying Microsoft Defender for Endpoint on Windows Server with SAP
+# Deploying Microsoft Defender for Endpoint on Windows Server with SAP
 
 This article provides a comprehensive overview of deploying Microsoft Defender for Endpoint on Windows Server in an environment running SAP. By following the recommended deployment methodology and important configuration settings, administrators can ensure a secure and efficient SAP system.
 
@@ -49,7 +49,7 @@ Using tools like Endpoint Security Policies to deploy Defender for Endpoint to a
 
 The following sections detail essential configuration settings for Microsoft Defender for Endpoint on Windows Server with SAP:
 
-1. **Microsoft Defender for Endpoint Overview:** Learn about Microsoft 365 Defender at [What is Microsoft 365 Defender?](/learn/modules/introduction-to-microsoft-365-defender/).
+1. **Microsoft Defender for Endpoint Overview:** Learn about Microsoft 365 Defender at [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md).
 
 2. **Checking Microsoft Defender Antivirus status:** Open a command prompt with Administrative rights and run the [Defender PowerShell commands](/powershell/module/defender).
 
@@ -57,15 +57,15 @@ The following sections detail essential configuration settings for Microsoft Def
 
 4. **Updating Microsoft Defender Antivirus software components:** Ensure engine and signatures are updated via Windows Update. Contact the Security Team if updates fail.
 
-5. **Behavior Monitoring:** Understand Behavior Monitoring at [Behavioral blocking and containment](/windows/security/threat-protection/microsoft-defender-atp/behavioral-blocking-and-containment).
+5. **Behavior Monitoring:** Understand Behavior Monitoring at [Behavioral blocking and containment](behavioral-blocking-containment.md).
 
-6. **Recommended setting for RealTimeProtectionEnabled:** Enable Real Time Scanning with Tamper Protection and Behavior Monitoring, unless a specific problem is identified.
+6. **Recommended setting for RealTimeProtectionEnabled:** Enable [real-time scanning](configure-real-time-protection-microsoft-defender-antivirus.md) with [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) and behavior monitoring, unless a specific problem is identified. See [Built-in protection helps guard against ransomware](built-in-protection.md).
 
 7. **Scanning network shares with Defender for Endpoint on Windows Server:** By default, Microsoft Defender Antivirus scans SMB shared network file systems on Windows. However, it doesn't scan NFS file systems during scheduled scans on Windows Server. EDR on Windows might scan SMB shared network file systems.
 
-8. **Defender for Endpoint Client Analyzer Support tool:** Download the latest version of the Microsoft Defender for Endpoint client analyzer at <https://aka.ms/MDEAnalyzer>.
+8. **Defender for Endpoint Client Analyzer Support tool:** Download the latest version of the [Microsoft Defender for Endpoint client analyzer](https://aka.ms/MDEAnalyzer).
 
-9.  **Opening a support case:** Contact Microsoft Defender for Endpoint support at [Contact Microsoft Defender for Endpoint support](/microsoft-365/security/defender-endpoint/contact-support?view=o365-worldwide).
+9.  **Opening a support case:** Contact Microsoft Defender for Endpoint support at [Contact Microsoft Defender for Endpoint support](/microsoft-365/security/defender-endpoint/contact-support).
 
 ## Related articles
 
