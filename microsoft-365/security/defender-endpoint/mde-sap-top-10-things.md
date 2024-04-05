@@ -59,7 +59,7 @@ Follow these best practices to ensure a smooth deployment of Microsoft Defender 
    - `IsTamperProtected: True`
    - `RealTimeProtectionEnabled: True`
 
-9. **Use security policies**: Utilize Defender for Endpoint security policies to ensure uniform deployment and configuration. In the Microsoft Defender portal, navigate to **Endpoints** > **Configuration management** > **Endpoint security policies**, and then select **Create new Policy**. 
+9. **Use security policies**: Utilize Defender for Endpoint security policies to ensure uniform deployment and configuration. In the Microsoft Defender portal, go to **Endpoints** > **Configuration management** > **Endpoint security policies**, and then select **Create new Policy**. 
 
    For more information, review the [Microsoft Defender for Endpoint security policies documentation](/microsoft-365/security/defender-endpoint/manage-security-policies).
 
