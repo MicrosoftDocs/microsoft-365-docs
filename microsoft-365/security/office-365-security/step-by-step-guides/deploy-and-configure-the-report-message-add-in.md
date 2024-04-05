@@ -1,15 +1,11 @@
 ---
 title: How-to deploy and configure the report message add-in
 description: The steps to deploy and configure Microsoft's phish reporting add-ins aimed at security administrators.
-search.product:
 ms.service: microsoft-365-security
 ms.subservice: mdo
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords:
   - NOCSH
-ms.author: tracyp
+ms.author: chrisda
 author: MSFTBen
 ms.localizationpriority: medium
 manager: dansimp
@@ -20,7 +16,7 @@ ms.collection:
 - tier3
 ms.topic: how-to
 search.appverid: met150
-ms.date: 1/31/2023
+ms.date: 01/31/2023
 ---
 
 # Deploy and configure the Report Message add-in to users

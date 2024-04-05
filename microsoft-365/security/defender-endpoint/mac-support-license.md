@@ -43,15 +43,15 @@ Select the **x** symbol.
 
 When you select the **x** symbol, you see options as shown in the following screenshot:
 
-:::image type="content" source="images/x-symbol-menu-items.png" alt-text="Screenshot that shows the option that gets listed on selecting the x symbol.":::
+:::image type="content" source="media/x-symbol-menu-items.png" alt-text="Screenshot that shows the option that gets listed on selecting the x symbol.":::
 
 When you select **Action needed**, you get the error message as shown in the following screenshot:
 
-:::image type="content" source="images/license-not-found-message.png" alt-text="Screenshot of the page displaying the No license found message and its description.":::
+:::image type="content" source="media/license-not-found-message.png" alt-text="Screenshot of the page displaying the No license found message and its description.":::
 
 You encounter this message in a different way: If you're using the terminal to enter **mdatp health** without the double quotes, the message as shown in the following screenshot is displayed:
 
-:::image type="content" source="images/no-license-found-warning.png" alt-text="Screenshot of the product page on which the No license found warning message is displayed.":::
+:::image type="content" source="media/no-license-found-warning.png" alt-text="Screenshot of the product page on which the No license found warning message is displayed.":::
 
 ### Cause
 
@@ -99,15 +99,15 @@ If the file exists, it will prevent the macOS from being onboarded again.  Delet
  
 2. Select **Licenses**.
 
-   :::image type="content" source="images/selecting-licenses-option-from-endpoints-screen.png" alt-text="Screenshot of the Endpoints page from which the Licenses options can be selected." lightbox="images/selecting-licenses-option-from-endpoints-screen.png":::
+   :::image type="content" source="media/selecting-licenses-option-from-endpoints-screen.png" alt-text="Screenshot of the Endpoints page from which the Licenses options can be selected." lightbox="media/selecting-licenses-option-from-endpoints-screen.png":::
        
 3. Select **View and purchase licenses in the Microsoft 365 admin center**. The following screen in the Microsoft 365 admin center portal appears:
 
-   :::image type="content" source="images/m365-admin-center-purchase-assign-licenses.png" alt-text="Screenshot of the Microsoft 365 admin center portal page from which licenses can be purchased and assigned." lightbox="images/m365-admin-center-purchase-assign-licenses.png":::
+   :::image type="content" source="media/m365-admin-center-purchase-assign-licenses.png" alt-text="Screenshot of the Microsoft 365 admin center portal page from which licenses can be purchased and assigned." lightbox="media/m365-admin-center-purchase-assign-licenses.png":::
 
 4. Check the checkbox of the license you want to purchase from Microsoft, and select it. The screen displaying detail of the chosen license appears:
 
-   :::image type="content" source="images/resultant-screen-of-selecting-preferred-license.png" alt-text="Screenshot of the product page from which you can select the option of assigning the purchased license.":::
+   :::image type="content" source="media/resultant-screen-of-selecting-preferred-license.png" alt-text="Screenshot of the product page from which you can select the option of assigning the purchased license.":::
 
 5. Select the **Assign licenses** link.
 
@@ -115,7 +115,7 @@ If the file exists, it will prevent the macOS from being onboarded again.  Delet
 
    The following screen appears:
 
-   :::image type="content" source="images/screen-containing-option-to-assign-licenses.png" alt-text="Screenshot of the page containing the + Assign licenses option." lightbox="images/screen-containing-option-to-assign-licenses.png":::
+   :::image type="content" source="media/screen-containing-option-to-assign-licenses.png" alt-text="Screenshot of the page containing the + Assign licenses option." lightbox="media/screen-containing-option-to-assign-licenses.png":::
 
 6. Select **+ Assign licenses**.
 
@@ -127,11 +127,11 @@ If the file exists, it will prevent the macOS from being onboarded again.  Delet
 
 On implementing these solution-options (either of them), if the licensing issues have been resolved, and then you run **mdatp health**, you should see the following results:
 
-:::image type="content" source="images/results-after-license-issues-resolved.png" alt-text="Screenshot of the page containing the results displayed after running mdatp health.":::
+:::image type="content" source="media/results-after-license-issues-resolved.png" alt-text="Screenshot of the page containing the results displayed after running mdatp health.":::
 
 ## Sign in with your Microsoft account
 
-:::image type="content" source="images/mac-consumer-login.png" alt-text="Screenshot of the page from which the users have to sign in with their Microsoft account's credentials to get started.":::
+:::image type="content" source="media/mac-consumer-login.png" alt-text="Screenshot of the page from which the users have to sign in with their Microsoft account's credentials to get started.":::
 
 ### Message
 

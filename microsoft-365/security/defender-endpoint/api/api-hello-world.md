@@ -88,7 +88,7 @@ For the Application registration stage, you must have a **Global administrator**
    > [!NOTE]
    > Every time you add permission, you must click on **Grant consent** for the new permission to take effect.
 
-   :::image type="content" source="../images/grant-consent.png" alt-text="The grant permission consent option in the Microsoft Entra admin center" lightbox="../images/grant-consent.png":::
+   :::image type="content" source="../media/grant-consent.png" alt-text="The grant permission consent option in the Microsoft Entra admin center" lightbox="../media/grant-consent.png":::
 
 6. Add a secret to the application.
 
@@ -97,7 +97,7 @@ For the Application registration stage, you must have a **Global administrator**
     > [!IMPORTANT]
     > After click Add, **copy the generated secret value**. You won't be able to retrieve after you leave!
 
-    :::image type="content" source="../images/webapp-create-key2.png" alt-text="The Certificates & secrets menu item in the Manage pane in the Microsoft Entra admin center" lightbox="../images/webapp-create-key2.png":::
+    :::image type="content" source="../media/webapp-create-key2.png" alt-text="The Certificates & secrets menu item in the Manage pane in the Microsoft Entra admin center" lightbox="../media/webapp-create-key2.png":::
 
 7. Write down your application ID and your tenant ID.
 

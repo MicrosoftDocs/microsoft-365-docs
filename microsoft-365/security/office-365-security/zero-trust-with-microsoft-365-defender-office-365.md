@@ -6,8 +6,8 @@ search.appverid: met150
 ms.service: microsoft-365-zero-trust
 f1.keywords:
   - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+author: chrisda
+ms.author: chrisda
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -19,7 +19,7 @@ ms.date: 10/5/2023
 ms.topic: conceptual
 adobe-target: true
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison" target="_blank">Microsoft Defender for Office 365</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 1 and Plan 2</a>
 ---
 
 # Zero Trust with Microsoft Defender for Office 365

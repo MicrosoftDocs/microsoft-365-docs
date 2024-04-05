@@ -32,7 +32,7 @@ During and after an automated investigation, remediation actions for threat dete
 
 Recently, the Action center was updated. You now have a unified Action center experience. To access your Action center, go to [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) and sign in.
 
-:::image type="content" source="images/mde-action-center-unified.png" alt-text="The Action center page in the Microsoft Defender portal" lightbox="images/mde-action-center-unified.png":::
+:::image type="content" source="media/mde-action-center-unified.png" alt-text="The Action center page in the Microsoft Defender portal" lightbox="media/mde-action-center-unified.png":::
 
 ### What's changed?
 
@@ -70,7 +70,7 @@ To get to the unified Action center in the improved Microsoft Defender portal:
 
 4. To customize, sort, filter, and export data in the Action center, take one or more of the following steps:
 
-   :::image type="content" source="images/new-action-center-columnsfilters.png" alt-text="The Action center with Columns and filters" lightbox="images/new-action-center-columnsfilters.png":::
+   :::image type="content" source="media/new-action-center-columnsfilters.png" alt-text="The Action center with Columns and filters" lightbox="media/new-action-center-columnsfilters.png":::
 
    - Select a column heading to sort items in ascending or descending order.
    - Use the time period filter to view data for the past day, week, 30 days, or 6 months.

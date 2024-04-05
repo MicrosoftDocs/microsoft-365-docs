@@ -120,7 +120,7 @@ This page explains how to create a Microsoft Entra application, get an access to
       > [!NOTE]
       > Every time you add permission you must select on **Grant consent** for the new permission to take effect.
 
-      :::image type="content" source="../images/grant-consent.png" alt-text="The Grand admin consent option" lightbox="../images/grant-consent.png":::
+      :::image type="content" source="../media/grant-consent.png" alt-text="The Grand admin consent option" lightbox="../media/grant-consent.png":::
 
 5. Write down your application ID and your tenant ID.
 
@@ -183,7 +183,7 @@ Verify to make sure you got a correct token:
 - Validate you get a 'scp' claim with the desired app permissions.
 - In the screenshot below you can see a decoded token acquired from the app in the tutorial:
 
-  :::image type="content" source="../images/nativeapp-decoded-token.png" alt-text="The token validation page" lightbox="../images/nativeapp-decoded-token.png":::
+  :::image type="content" source="../media/nativeapp-decoded-token.png" alt-text="The token validation page" lightbox="../media/nativeapp-decoded-token.png":::
 
 ## Use the token to access Microsoft Defender for Endpoint API
 

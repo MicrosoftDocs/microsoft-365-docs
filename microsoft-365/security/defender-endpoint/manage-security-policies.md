@@ -2,8 +2,8 @@
 title: Manage endpoint security policies in Microsoft Defender for Endpoint
 description: Learn how to set windows, mac, and linux endpoint security policies such as antivirus, firewall, endpoint detection and response in Microsoft Defender for Endpoint.
 ms.service: defender-endpoint
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro
@@ -102,14 +102,14 @@ To verify that you have successfully created a policy, select a policy name from
 
 >[!NOTE]
 >It can take up to 90 minutes for a policy to reach a device. To expedite the process, for devices Managed by Defender for Enpoint, you can select **Policy sync** from the actions menu so that it is applied in approximately 10 minutes.
-> :::image type="content" source="./images/policy-sync.png" alt-text="Image showing policy sync button":::
+> :::image type="content" source="./media/policy-sync.png" alt-text="Image showing policy sync button":::
 
 The policy page displays details that summarize the status of the policy. You can view a policy's status, which devices it has been applied to, and assigned groups.
 
 During an investigation, you can also view the **Security policies** tab in the device page to view the list of policies that are being applied to a particular device. For more information, see [Investigating devices](investigate-machines.md#security-policies).
 
 
-:::image type="content" source="./images/security-policies-list.png" alt-text="Security policies tab with list of policies":::
+:::image type="content" source="./media/security-policies-list.png" alt-text="Security policies tab with list of policies":::
 
 
 

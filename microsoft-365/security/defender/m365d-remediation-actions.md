@@ -1,12 +1,8 @@
 ---
 title: Remediation actions in Microsoft Defender XDR
 description: Get an overview of remediation actions that follow automated investigations in Microsoft Defender XDR
-keywords: automated, investigation, alert, trigger, action, remediation
 search.appverid: met150
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: 
   - NOCSH
 ms.author: dansimp

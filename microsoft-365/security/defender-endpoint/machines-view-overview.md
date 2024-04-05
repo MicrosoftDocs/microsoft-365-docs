@@ -102,7 +102,7 @@ You can use this information to help you prioritize devices for security posture
 
 The **Newly discovered** device count for network devices and IoT devices tabs, shows the number of new devices discovered, in the last 7 days, listed in the current view.
 
-:::image type="content" alt-text="Image of new discovered device count." source="images/new-discovered-devices.png":::
+:::image type="content" alt-text="Image of new discovered device count." source="media/new-discovered-devices.png":::
 
 ## Explore the device inventory
 
@@ -157,11 +157,11 @@ On the **Computer and Mobiles** tab, select **Customize columns** to see the col
 
 On the **Network devices** tab, select **Customize columns** to see the columns available. The default values are checked in the following image:
 
-:::image type="content" alt-text="Image of network device columns" source="images/networkdevicescolumns.png":::
+:::image type="content" alt-text="Image of network device columns" source="media/networkdevicescolumns.png":::
 
 On the **IoT devices** tab, select **Customize columns** to see the columns available. The default values are checked in the following image:
 
-:::image type="content" alt-text="Image of IoT device columns" source="images/iotdevicescolumns.png":::
+:::image type="content" alt-text="Image of IoT device columns" source="media/iotdevicescolumns.png":::
 
 ## Related articles
 

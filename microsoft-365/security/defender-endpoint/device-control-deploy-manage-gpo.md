@@ -45,7 +45,7 @@ If you're using Group Policy to manage Defender for Endpoint settings, you can u
 
 You can set default access such as, `Deny` or `Allow` for all device control features, such as `RemovableMediaDevices`, `CdRomDevices`, `WpdDevices`, and `PrinterDevices`.
 
-:::image type="content" source="images/set-default-enforcement-deny-gp.png" alt-text="Screenshot of set default enforcement." lightbox="images/set-default-enforcement-deny-gp.png":::
+:::image type="content" source="media/set-default-enforcement-deny-gp.png" alt-text="Screenshot of set default enforcement." lightbox="media/set-default-enforcement-deny-gp.png":::
 
 For example, you can have either a `Deny` or an `Allow` policy for `RemovableMediaDevices`, but not for `CdRomDevices` or `WpdDevices`. If you set `Default Deny` through this policy, then Read/Write/Execute access to `CdRomDevices` or `WpdDevices` is blocked. If you only want to manage storage, make sure to create `Allow` policy for printers. Otherwise, default enforcement (Deny) is applied to printers, too.
 
