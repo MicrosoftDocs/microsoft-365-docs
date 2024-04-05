@@ -18,8 +18,7 @@ ms.custom:
   - seo-marvel-apr2020
   - admindeeplinkSPO
 description: Manual configurations for Exchange Online Protection, Microsoft Defender for Office 365, Plan 1 and 2, and Microsoft Defender XDR, for complete protection of your Office 365 subscription.
-ms.subservice: mdo
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 ms.date: 10/16/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>

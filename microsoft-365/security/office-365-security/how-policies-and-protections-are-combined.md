@@ -15,8 +15,7 @@ ms.collection:
 ms.custom: 
   - seo-marvel-apr2020
 description: Admins can learn how the order of protection settings and the priority order of security policies affect the application of security policies in Microsoft 365.
-ms.subservice: mdo
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 search.appverid: met150
 ms.date: 10/20/2023
 appliesto:
