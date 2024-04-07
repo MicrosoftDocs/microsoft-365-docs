@@ -117,7 +117,7 @@ The following are the solution's categories:
 |---|---|---|
 |[Corrata Mobile Security](https://go.microsoft.com/fwlink/?linkid=2201879)|Corrata|Corrata is an immune system for mobile devices and tablets that detects & protects mobile devices from the full spectrum of security threats like phishing, malware, man-in-the-middle attacks, and data loss.|
 |[Better Mobile Security Platform](https://go.microsoft.com/fwlink/?linkid=2202043)|Better Mobile Security Inc.|Provides solution for Threat, Phishing, and Privacy Protection and Simulation.|
-|[Zimperium Mobile Threat Defense](https://go.microsoft.com/fwlink/?linkid=2202141)|Zimperuim|Extends your Microsoft Defender for Endpoint to iOS and Android with Machine Learning-based Mobile Threat Defense.|
+|[Zimperium Mobile Threat Defense](https://go.microsoft.com/fwlink/?linkid=2202141)|Zimperium|Extends your Microsoft Defender for Endpoint to iOS and Android with Machine Learning-based Mobile Threat Defense.|
 |[Bitdefender](https://go.microsoft.com/fwlink/?linkid=2201968)|Bitdefender|Bitdefender GravityZone is a layered next generation endpoint protection platform offering comprehensive protection against the full spectrum of sophisticated cyber threats.|
 
 ### Business cloud applications

@@ -62,7 +62,7 @@ The subscription only enters the **Expired** status after all the licenses are r
 |--|--------|---------|----------|---------|
 | Customer data | Data is accessible to all | Data is accessible to all | Data is accessible to admins only | Data is deleted and Microsoft Entra ID is removed, if not in use by other services |
 | Users | Users have normal access to Microsoft 365, files, and Microsoft 365 apps  | Users have normal access to Microsoft 365, files, and Microsoft 365 apps  | Users can't access Microsoft 365 apps. Microsoft 365 apps eventually move into a read-only, reduced functionality mode and display [Unlicensed Product notifications](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380) | Users can't access Microsoft 365, files, or Microsoft 365 apps  |
-| Licenses bought via the Volume Licensing program and assigned across the organization| | Service is immediately unavailable on the subscription end date, or if there's a reduction in license quatity | N/A | N/A |
+| Licenses bought via the Volume Licensing program and assigned across the organization| | Service is immediately unavailable on the subscription end date, or if there's a reduction in license quantity | N/A | N/A |
 | Admins | Admins have normal access to Microsoft 365, data, and Microsoft 365 apps | Admins can access the admin center  | Admins can access the admin center, but can't assign licenses to users  | Admins can access the admin center to manage other subscriptions, or to buy new subscriptions |
 | Reactivation | Subscription is already active | Global or billing admins can reactivate the subscription in the admin center | Global or billing admins can reactivate the subscription in the admin center | Subscription can't be reactivated |
 

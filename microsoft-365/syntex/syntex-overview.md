@@ -139,7 +139,7 @@ Both structured and freeform models use Microsoft Power Apps AI Builder to creat
 
 :::row:::
    :::column span="3":::
-      Easily create a translated copy of a document or video transcipt in a SharePoint document library. You translate the file, while preserving the original format and structure of the file. Translation is available for all supported languages and dialects.
+      Easily create a translated copy of a document or video transcript in a SharePoint document library. You translate the file, while preserving the original format and structure of the file. Translation is available for all supported languages and dialects.
    :::column-end:::
    :::column span="":::
       ![Image of generic translation icon.](../media/content-understanding/translation-image.png)

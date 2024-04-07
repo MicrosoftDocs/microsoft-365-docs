@@ -67,7 +67,7 @@ In the left-hand menu under **Package catalog**, select the **New package**. The
    - A **Flown Driven test** allows you to arrange your test scripts with enhanced flow control. To help you comprehensively validate the impact of an in-place Windows upgrade, you can use flow driven tests to execute your tests on both the baseline OS and target OS with a side-by-side test result comparison.
 
    > [!NOTE]
-   > Users can also select the pre-installed Microsoft apps option. This option will install Microsft apps, like Office, before the user application is installed.
+   > Users can also select the pre-installed Microsoft apps option. This option will install Microsoft apps, like Office, before the user application is installed.
    >
    > Out of Box test is optional now.
 

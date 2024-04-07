@@ -89,7 +89,7 @@ This will give you output like:
 > [!NOTE]
 > You will need this text to create the TXT record in the publicly registered DNS zone. Be sure to copy and save it.
 
-### Add a TXT record to the publically registered DNS zone
+### Add a TXT record to the publicly registered DNS zone
 
 Before Microsoft 365 will start accepting traffic that is directed to the publicly registered domain name, you must prove that you own and have administrator permissions to the domain. You prove you own the domain by creating a TXT record in the domain. A TXT record doesn't do anything in your domain, and it can be deleted after your ownership of the domain is established. To create the TXT records, follow the procedures at [Add DNS records to connect your domain](../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md). If those procedures don't work for you , you need to find the procedures for your DNS registrar.
 
@@ -109,7 +109,7 @@ This will give you output like:
 
 ### Validate domain ownership in Microsoft 365
 
-In this last step, you validate to Microsoft 365 that you own the publically registered domain. After this step, Microsoft 365 will begin accepting traffic routed to the new domain name. To complete the domain creation and registration process, run this command.
+In this last step, you validate to Microsoft 365 that you own the publicly registered domain. After this step, Microsoft 365 will begin accepting traffic routed to the new domain name. To complete the domain creation and registration process, run this command.
 
 ```powershell
 Confirm-MsolDomain -TenantId <customer TenantId> -DomainName <FQDN of new domain>

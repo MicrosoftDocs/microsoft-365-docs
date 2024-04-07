@@ -145,7 +145,7 @@ header.from=contoso.com;compauth=pass reason=130
 
 ## Trusted ARC sealer mail flow diagrams
 
-The diagrams in this section contrast mail flow and the affect on email authentication results with and without a trusted ARC sealer. In both diagrams, the Microsoft 365 organization uses a legitimate email service that modifies inbound mail before delivered into Microsoft 365. This modification interrupts mail flow, which can cause email authentication failures by changing the source IP and updating the email message header.
+The diagrams in this section contrast mail flow and the effect on email authentication results with and without a trusted ARC sealer. In both diagrams, the Microsoft 365 organization uses a legitimate email service that modifies inbound mail before delivered into Microsoft 365. This modification interrupts mail flow, which can cause email authentication failures by changing the source IP and updating the email message header.
 
 This diagram demonstrates the result _without_ a trusted ARC sealer:
 
