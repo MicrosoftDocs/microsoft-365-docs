@@ -16,8 +16,7 @@ ms.collection:
   - m365-security
   - tier1
 ms.custom: 
-ms.subservice: mdo
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 ROBOTS:
 ms.date: 7/31/2023
 ---

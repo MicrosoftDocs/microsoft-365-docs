@@ -7,7 +7,7 @@ metadata:
   title: Microsoft Defender for Office 365 security documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Learn about the robust security solutions in Defender for Office 365 to better protect your email and collaboration tools. # Required; article description that is displayed in search results. < 160 chars.
   services: office-365-security-compliance
-  ms.service: microsoft-365-security
+  ms.service: defender-office-365
   ms.subservice: mdo
   ms.topic: landing-page # Required
   ms.collection: 

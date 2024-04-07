@@ -7,7 +7,6 @@ metadata:
   description: This page contains links to some important topics related to Microsoft Syntex features. Start here to learn about compliance for Syntex. # Required; article description that is displayed in search results. < 160 chars.
   services: 
   ms.service: microsoft-syntex #Required; service per approved list. service slug assigned to your service by ACOM.
-  ms.subservice: subservice
   ms.topic: landing-page # Required
   ms.collection: m365initiative-syntex, essentials-navigation, essentials-navigation
   ms.custom: intro-hub-or-landing
@@ -88,7 +87,7 @@ landingContent:
       - linkListType: architecture
         links:
           - text: Microsoft 365 Archive (Preview)
-            url: archive/archive-overview.md
+            url: /microsoft-365/archive
           - text: Microsoft Backup (Preview)
             url: backup/backup-overview.md
 
