@@ -114,8 +114,8 @@ Select **Ask Defender Experts** directly inside the Microsoft 365 security porta
 You need to select the following permissions before submitting inquires to our Defender experts:
 
 - Microsoft Defender for Endpoint RBAC- Manage security settings in Security Center.
-- Microsoft Defender XDR Unified RBAC - In your Microsoft Defender XDR navigation pane, go to **Authorization and settings** > **Security settings** > **Core security settings (manage)**, or
-**Authorization and settings** > **Security settings** > **Detection tuning (manage)**.
+- Microsoft Defender XDR Unified RBAC - Authorization and settings \ Security settings \ Core security settings (manage) , or
+Authorization and settings \ Security settings \ Detection tuning (manage). For more details see: [Map Defender for Endpoint and Defender Vulnerability Management permissions to the Microsoft Defender XDR RBAC permissions](../defender/compare-rbac-roles#map-defender-for-endpoint-and-defender-vulnerability-management-permissions-to-the-microsoft-defender-xdr-rbac-permissions)
 
 The option to **Ask Defender Experts** is available in several places throughout the portal:
 
