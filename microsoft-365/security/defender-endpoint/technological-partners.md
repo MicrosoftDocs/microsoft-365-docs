@@ -117,7 +117,7 @@ The following are the solution's categories:
 |---|---|---|
 |[Corrata Mobile Security](https://go.microsoft.com/fwlink/?linkid=2201879)|Corrata|Corrata is an immune system for mobile devices and tablets that detects & protects mobile devices from the full spectrum of security threats like phishing, malware, man-in-the-middle attacks, and data loss.|
 |[Better Mobile Security Platform](https://go.microsoft.com/fwlink/?linkid=2202043)|Better Mobile Security Inc.|Provides solution for Threat, Phishing, and Privacy Protection and Simulation.|
-|[Zimperium Mobile Threat Defense](https://go.microsoft.com/fwlink/?linkid=2202141)|Zimperuim|Extends your Microsoft Defender for Endpoint to iOS and Android with Machine Learning-based Mobile Threat Defense.|
+|[Zimperium Mobile Threat Defense](https://go.microsoft.com/fwlink/?linkid=2202141)|Zimperium|Extends your Microsoft Defender for Endpoint to iOS and Android with Machine Learning-based Mobile Threat Defense.|
 |[Bitdefender](https://go.microsoft.com/fwlink/?linkid=2201968)|Bitdefender|Bitdefender GravityZone is a layered next generation endpoint protection platform offering comprehensive protection against the full spectrum of sophisticated cyber threats.|
 
 ### Business cloud applications
@@ -152,7 +152,7 @@ The following are the solution's categories:
 |---|---|---|
 |[Attack Path Management](https://go.microsoft.com/fwlink/?linkid=2201774)|XM Cyber|Hybrid cloud security company providing attack path management changing the ways organizations approach cyber risk.|
 |[Corrata Mobile Security](https://go.microsoft.com/fwlink/?linkid=2201879)|Corrata|Corrata is an immune system for mobile devices and tablets that detects & protects mobile devices from the full spectrum of security threats like phishing, malware, man-in-the-middle attacks, and data loss.|
-|[Zimperium Mobile Threat Defense](https://go.microsoft.com/fwlink/?linkid=2202141)|Zimperuim|Extend your Microsoft Defender for Endpoint to iOS and Android with Machine Learning-based Mobile Threat Defense.|
+|[Zimperium Mobile Threat Defense](https://go.microsoft.com/fwlink/?linkid=2202141)|Zimperium|Extend your Microsoft Defender for Endpoint to iOS and Android with Machine Learning-based Mobile Threat Defense.|
 |[RiskAnalyzer](https://go.microsoft.com/fwlink/?linkid=2202245)|DeepSurface Security|DeepSurface RiskAnalyzer helps quickly and efficiently discover, analyze and prioritize cybersecurity risk.|
 |[Vulnerability Control](https://go.microsoft.com/fwlink/?linkid=2201965)|Skybox security|Global security posture management leader with solutions for vulnerability management and network security policy management.|
 |[Vulcan Cyber risk management platform](https://go.microsoft.com/fwlink/?linkid=2201770)|Vulcan Cyber|Vulcan Cyber gives you the tools to effectively manage the vulnerability and risk lifecycle for all your cyber assets, including application, cloud, and infrastructure.|
