@@ -99,7 +99,7 @@ The Organization.Read.All permission scope is required to read the licenses avai
 
 ```powershell
 Connect-MgGraph -Scopes "User.ReadBasic.All"
-Get-MgUser -All | Select DisplayName, UsageLocation
+Get-MgUser -All -Property DisplayName, UsageLocation | Select DisplayName, UsageLocation
 ```
 
 Here's an example of the results:
@@ -120,7 +120,7 @@ The interpretation of this PowerShell command is: Get all of the users in the cu
 Because PowerShell for Microsoft 365 supports a command-shell language, you can further manipulate the information obtained by the **Get-MgUser** command. For example, maybe you'd like to sort these users by their location, grouping all the Brazilian users together, all the United States users together, and so on. Here's the command:
 
 ```powershell
-Get-MgUser -All | Select DisplayName, UsageLocation | Sort UsageLocation, DisplayName
+Get-MgUser -All -Property DisplayName, UsageLocation | Select DisplayName, UsageLocation | Sort UsageLocation, DisplayName
 ```
 
 Here's an example of the results:
@@ -141,7 +141,7 @@ The interpretation of this PowerShell command is: Get all the users in the curre
 You can also use additional filtering. For example, if you only want to see information about users based in Brazil, use this command:
 
 ```powershell
-Get-MgUser -All | Where-Object {$_.Country -eq "BR"} | Select-Object DisplayName, Country
+Get-MgUser -All -Property DisplayName, Country | Where-Object {$_.Country -eq "BR"} | Select DisplayName, Country 
 ```
 
 Here's an example of the results:
@@ -168,7 +168,7 @@ Get-MgUser -All | Select DisplayName, UsageLocation
 That works great for smaller domains. But in a large organization, you might want to split that operation into two commands: one command to store the user account information in a variable and another to display the needed information. Here's an example:
 
 ```powershell
-$x = Get-MgUser -All
+$x = Get-MgUser -All -Property DisplayName, UsageLocation
 $x | Select DisplayName, UsageLocation
 ```
 
