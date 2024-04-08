@@ -164,10 +164,10 @@
       items:
       - name: Overview
         href: mde-sap-windows-server.md
-      - name: Deployment considerations
-        href: mde-sap-deploy.md
-      - name: Top 10 things to consider for SAP
+      - name: Top 10 considerations before deployment
         href: mde-sap-top-10-things.md
+      - name: Deploy Defender for Endpoint on Windows Server with SAP
+        href: mde-sap-deploy.md
     - name: Onboard non-Windows devices
       href: configure-endpoints-non-windows.md
     - name: Defender for Endpoint on macOS
