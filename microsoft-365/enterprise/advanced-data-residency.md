@@ -94,7 +94,7 @@ If any customer tenant data covered by the Advanced Data Residency feature is no
 
 After receiving the Advanced Data Residency licenses and applying them to the customer's tenant, the customer administrator must select the option to initiate the data migration process for ADR workloads that do not currently reside in their _Local Region Geography_. To initiate data migration for a tenant, the customer administrator should visit the "Data location" section in the Microsoft 365 admin center by navigating to **Settings > Org settings > Organization profile > Data location**. From here, the customer administrator can see the current location of the customer's data-at-rest and what _Local Region Geography_ their customer data currently resides in or is eligible to be migrated to upon selection.
 
-###### Microsoft 365 Admin Center Data Location:
+#### Microsoft 365 Admin Center Data Location
 
 :::image type="content" source="media\data-residency\1-adr-microsoft-365-data-location-card.png" alt-text="<Screenshot of M365 Admin Center Data location View.>":::
 
@@ -103,13 +103,13 @@ After receiving the Advanced Data Residency licenses and applying them to the cu
 
 The following screenshot is an example of the Microsoft 365 admin center Data location view that an ADR customer can expect to see before opting for migration to their _Local Region Geography_.
 
-###### Before Migration Opt-in:
+#### Before Migration Opt-in
 
 :::image type="content" source="media\data-residency\2-adr-microsoft-365-data-location-card-before-move.png" alt-text="<Screenshot of Data Location View Before Migration.>":::
 
 Once a customer administrator chooses the option to initiate migration, they are provided with confirmation of their opt-in date and migration initiation as shown in the screenshot below.
 
-###### After Migration Opt-in:
+#### After Migration Opt-in
 
 :::image type="content" source="media\data-residency\3-adr-microsoft-365-data-location-card-move-initiated.png" alt-text="<Screenshot of Data Location View Migration Requested.>":::
 
@@ -119,7 +119,7 @@ The "Data location" section in the Microsoft 365 admin center (referenced in the
 
 Microsoft adheres to the [Microsoft Online Services Service Level Agreement (SLA)](https://go.microsoft.com/fwlink/p/?LinkId=523897) for service availability and uses reasonable efforts to complete an Advanced Data Residency add-on customer data migration within 12 months from the time the customer administrator selects the option to initiate migration. However, large, complex customers, and situations outside of Microsoft's control, may require more time for migration to complete.
 
-Data moves are a back-end service operation with minimal impact to a customer's operations. For information related to specific workloads, customer administrators can refer to the “Migration” sections in the following Workload Data Residency Capabilities pages: [Exchange Online](https://learn.microsoft.com/microsoft-365/enterprise/m365-dr-workload-exo?view=o365-worldwide#migration), [SharePoint and OneDrive](https://learn.microsoft.com/microsoft-365/enterprise/m365-dr-workload-spo?view=o365-worldwide#migration-with-advanced-data-residency), [Microsoft Teams](https://learn.microsoft.com/microsoft-365/enterprise/m365-dr-workload-teams?view=o365-worldwide#migration), [Microsoft Copilot for Microsoft 365](https://learn.microsoft.com/microsoft-365/enterprise/m365-dr-workload-copilot?view=o365-worldwide), [Microsoft Defender for Office P1](https://learn.microsoft.com/microsoft-365/enterprise/m365-dr-workload-mdo-p1?view=o365-worldwide#migration), [Office for the Web](https://learn.microsoft.com/microsoft-365/enterprise/m365-dr-workload-office-for-web?view=o365-worldwide#migration), [Viva Connections](https://learn.microsoft.com/microsoft-365/enterprise/m365-dr-workload-viva-connections?view=o365-worldwide#migration), [Viva Topics](https://learn.microsoft.com/microsoft-365/enterprise/m365-dr-workload-viva-topics?view=o365-worldwide#migration), [Microsoft Purview](https://learn.microsoft.com/microsoft-365/enterprise/m365-dr-workload-purview?view=o365-worldwide#migration), and [Other Services](https://learn.microsoft.com/microsoft-365/enterprise/m365-dr-workload-other?view=o365-worldwide).
+Data moves are a back-end service operation with minimal impact to a customer's operations. For information related to specific workloads, customer administrators can refer to the “Migration” sections in the following Workload Data Residency Capabilities pages: [Exchange Online](m365-dr-workload-exo.md#migration), [SharePoint and OneDrive](microsoft-365/enterprise/m365-dr-workload-spo.md#migration-with-advanced-data-residency), [Microsoft Teams](m365-dr-workload-teams.md#migration), [Microsoft Copilot for Microsoft 365](m365-dr-workload-copilot.md#migration), [Microsoft Defender for Office P1](m365-dr-workload-mdo-p1.md#migration), [Office for the Web](m365-dr-workload-office-for-web.md#migration), [Viva Connections](m365-dr-workload-viva-connections.md#migration), [Viva Topics](m365-dr-workload-viva-topics.md#migration), [Microsoft Purview](m365-dr-workload-purview.md#migration), and [Other Services](m365-dr-workload-other.md).
 
 ### During and After your Migration
 
@@ -129,11 +129,11 @@ Customer administrators can visit the Message center or “Data location” sect
 
 The following screenshots are examples of the Microsoft 365 admin center Data location view that an ADR customer can expect to see during and after their migration.
 
-###### During Migration:
+#### During Migration
 
 :::image type="content" source="media\data-residency\4-adr-microsoft-365-data-location-card-move-in-progress.png" alt-text="<Screenshot of Data Location View Migration in Progress.>":::
 
-###### After Migration:
+#### After Migration
 
 :::image type="content" source="media\data-residency\5-adr-microsoft-365-data-location-card-move-completed.png" alt-text="<Screenshot of Data Location View Migration Completed.>":::
 
@@ -147,22 +147,22 @@ Given the complex nature of services included in an E3 or E5 license, the migrat
 
 ### Status Notification
 
-Microsoft does not provide a granular status to indicate progress toward migration completion for individual customer scenarios. 
+Microsoft does not provide a granular status to indicate progress toward migration completion for individual customer scenarios.
 
 Customer administrators can stay informed of migration updates through Message center notifications and by reviewing the “Data location” section within the Microsoft 365 admin center to see when a workload completes migration to their _Local Region Geography_. From the Microsoft 365 admin center, customer administrators can access the Message center by navigating to **Health > Message center** and the "Data location" section by navigating to **Settings > Org settings > Organization profile > Data location**.
 
 For more information on Migration, customer administrators can refer to the following pages:
 
-[Overview and Definitions - Microsoft 365 Enterprise](https://learn.microsoft.com/microsoft-365/enterprise/m365-dr-overview?view=o365-worldwide#migrationsmoves)
+[Overview and Definitions - Microsoft 365 Enterprise](m365-dr-overview.md#migrationsmoves)
 
-[Where your Microsoft 365 customer data is stored - Microsoft 365 Enterprise](https://learn.microsoft.com/microsoft-365/enterprise/o365-data-locations?view=o365-worldwide)
+[Where your Microsoft 365 customer data is stored - Microsoft 365 Enterprise](o365-data-locations.md)
 
 ## Related articles
 
 [Legacy Move Program](m365-dr-legacy-move-program.md)
- 
+
 [New datacenter geos for Microsoft Dynamics CRM Online](/power-platform/admin/new-datacenter-regions?branch=main)
- 
+
 [Azure services by region](https://azure.microsoft.com/regions/)
 
 [Teams experience in a Microsoft 365 Multi-Geo-enabled tenancy](/microsoftteams/teams-experience-o365odb-spo-multi-geo?branch=main)
