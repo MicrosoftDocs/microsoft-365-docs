@@ -111,7 +111,7 @@ Select **Ask Defender Experts** directly inside the Microsoft 365 security porta
 
 ### Required permissions for submitting inquiries in the Ask Defender Experts panel
 
-You need to select the following permissions before submitting inquires to our Defender experts. For more details on RBAC permissions see: [Microsoft Defender for Endpoint and Microsoft Defender XDR RBAC permissions](/microsoft-365/security/defender/compare-rbac-roles#map-defender-for-endpoint-and-defender-vulnerability-management-permissions-to-the-microsoft-defender-xdr-rbac-permissions)
+You need to select the following permissions before submitting inquires to our Defender experts. For more details on RBAC permissions see: [Microsoft Defender for Endpoint and Microsoft Defender XDR RBAC permissions](/microsoft-365/security/defender/compare-rbac-roles#map-defender-for-endpoint-and-defender-vulnerability-management-permissions-to-the-microsoft-defender-xdr-rbac-permissions).
 
 |**Microsoft Defender for Endpoint RBAC**|**Microsoft Defender XDR Unified RBAC**|
 |---|---|---|
