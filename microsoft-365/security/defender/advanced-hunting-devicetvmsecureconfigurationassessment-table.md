@@ -1,14 +1,9 @@
 ---
 title: DeviceTvmSecureConfigurationAssessment table in the advanced hunting schema
 description: Learn about security assessment events in the DeviceTvmSecureConfigurationAssessment table of the advanced hunting schema. These events provide device information, security configuration details, impact, and compliance information.
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft Defender XDR, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, threat & vulnerability management, TVM, device management, security configuration, DeviceTvmSecureConfigurationAssessment
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
 ms.subservice: adv-hunting
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: 
   - NOCSH
 ms.author: maccruz

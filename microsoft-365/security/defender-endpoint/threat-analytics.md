@@ -16,7 +16,7 @@ ms.collection:
   - mde-edr
 ms.topic: conceptual
 ms.subservice: edr
-ms.date: 12/18/2020
+ms.date: 12/18/2023
 ---
 
 # Track and respond to emerging threats through threat analytics
@@ -66,7 +66,7 @@ The threat analytics dashboard is a great jump off point for getting to the repo
 
 Select a threat from the dashboard to view the report for that threat.
 
-:::image type="content" source="media/ta_dashboard.png" alt-text="The threat analytics dashboard" lightbox="media/ta_dashboard.png":::
+:::image type="content" source="media/ta-dashboard.png" alt-text="The threat analytics dashboard" lightbox="media/ta-dashboard.png":::
 
 ## View a threat analytics report
 

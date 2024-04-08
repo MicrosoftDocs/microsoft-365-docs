@@ -15,8 +15,7 @@ ms.assetid:
 ms.custom: 
   - seo-marvel-apr2020
 description: Admins can use the Alert policy page in the Microsoft Defender portal to view and create alert policies to trigger alerts when the specified actions occur.
-ms.subservice: mdo
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 search.appverid: met150
 ms.date: 10/9/2023
 appliesto:

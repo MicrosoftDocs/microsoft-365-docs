@@ -32,11 +32,11 @@ Web protection lets you monitor your organization's web browsing security throug
 
 - **Web threat protection detections over time** - this trending card displays the number of web threats detected by type during the selected time period (Last 30 days, Last 3 months, Last 6 months)
 
-  :::image type="content" source="images/wtp-blocks-over-time.png" alt-text="The card showing web threats protection detections over time" lightbox="images/wtp-blocks-over-time.png":::
+  :::image type="content" source="media/wtp-blocks-over-time.png" alt-text="The card showing web threats protection detections over time" lightbox="media/wtp-blocks-over-time.png":::
 
 - **Web threat protection summary** - this card displays the total web threat detections in the past 30 days, showing distribution across the different types of web threats. Selecting a slice opens the list of the domains that were found with malicious or unwanted websites.
 
-  :::image type="content" source="images/wtp-summary.png" alt-text="The card showing web threats protection summary"  lightbox="images/wtp-summary.png":::
+  :::image type="content" source="media/wtp-summary.png" alt-text="The card showing web threats protection summary"  lightbox="media/wtp-summary.png":::
 
 > [!NOTE]
 > It can take up to 12 hours before a block is reflected in the cards or the domain list.
