@@ -88,6 +88,7 @@ Two new ASR rules are now in public preview:
    - Defender Boxed opens automatically when you go to the **Incidents** page in the Microsoft Defender portal. 
    - If you close Defender Boxed and you want to reopen it, in the Microsoft Defender portal, go to **Incidents**, and then select **Your Defender Boxed**.
    - Act quickly! Defender Boxed is available only for a short period of time.
+- (GA) [User Contain](https://www.microsoft.com/en-us/security/blog/2023/10/11/microsoft-defender-for-endpoint-now-stops-human-operated-attacks-on-its-own) can now contain compromised users automatically stopping Human Operated Ransomware in its track using Automatic Attack Disruption.
 
 
 ## November 2023
