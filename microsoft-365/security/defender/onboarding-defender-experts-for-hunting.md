@@ -115,7 +115,7 @@ You need to select the following permissions before submitting inquires to our D
 
 |**Microsoft Defender for Endpoint RBAC**|**Microsoft Defender XDR Unified RBAC**|
 |---|---|---|
-|Manage security settings in the Security Center | Authorization and settings \ Security settings \ Core security settings (manage) </br> Authorization and settings\Security settings \ Detection tuning (manage)|
+|Manage security settings in the Security Center | Authorization and settings \ Security settings \ Core security settings (manage) </br> Authorization and settings \ Security settings \ Detection tuning (manage)|
 
 For more details on RBAC permissions see: [Microsoft Defender for Endpoint and Microsoft Defender XDR RBAC permissions](/microsoft-365/security/defender/compare-rbac-roles#map-defender-for-endpoint-and-defender-vulnerability-management-permissions-to-the-microsoft-defender-xdr-rbac-permissions)
 
