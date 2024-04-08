@@ -1,10 +1,10 @@
 ---
 title: Continuous access evaluation for Microsoft 365 - Microsoft 365 for enterprise
 description: Describes how conditional access evaluation for Microsoft 365 and Microsoft Entra ID proactively terminates active user sessions and enforces tenant policy changes in near real time.
-ms.author: dansimp
-author: dansimp
+author: chrisda
+ms.author: chrisda
 manager: dansimp
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 ms.topic: conceptual
 audience: Admin
 f1.keywords:
@@ -19,7 +19,6 @@ ms.collection:
   - m365solution-scenario
   - highpri
   - tier1
-ms.subservice: mdo
 search.appverid: met150
 ms.date: 1/31/2023
 ---
@@ -54,7 +53,7 @@ Microsoft is working on additional Microsoft 365 services and clients to support
 Continuous access evaluation will be included in all versions of Office 365 and Microsoft 365. Configuring Conditional Access policies requires Microsoft Entra ID P1, which is included in all Microsoft 365 versions.
 
 > [!NOTE]
-> See [this article](/azure/active-directory/conditional-access/concept-continuous-access-evaluation#limitations) for the limitations of continuous access evaluation.
+> See [this article](/entra/identity/conditional-access/concept-continuous-access-evaluation#limitations) for the limitations of continuous access evaluation.
 
 ## Scenarios supported by Microsoft 365
 
@@ -69,7 +68,7 @@ Critical events include:
 - Password is changed
 - User sessions are revoked
 - Multifactor authentication is enabled for the user
-- Account risk increased based on the evaluation of the access from [Microsoft Entra ID Protection](/azure/active-directory/identity-protection/overview-identity-protection)
+- Account risk increased based on the evaluation of the access from [Microsoft Entra ID Protection](/entra/id-protection/overview-identity-protection)
 
 Conditional Access policy evaluation occurs when the user account is no longer connecting from a trusted network.
 
@@ -87,7 +86,7 @@ The following Microsoft 365 services currently support continuous access evaluat
 
 \** Calls, meetings, and chat in Teams do not conform to IP-based Conditional Access policies.
 
-For more information about how to set up a Conditional Access policy, see [this article](/azure/active-directory/conditional-access/overview).
+For more information about how to set up a Conditional Access policy, see [this article](/entra/identity/conditional-access/overview).
 
 ## Microsoft 365 clients supporting continuous access evaluation
 
@@ -107,6 +106,6 @@ For clients that don't support continuous access evaluation, the access token li
 
 ## See also
 
-- [Continuous access evaluation](/azure/active-directory/conditional-access/concept-continuous-access-evaluation)
-- [Conditional Access documentation](/azure/active-directory/conditional-access/overview)
-- [Microsoft Entra ID Protection documentation](/azure/active-directory/identity-protection/overview-identity-protection)
+- [Continuous access evaluation](/entra/identity/conditional-access/concept-continuous-access-evaluation)
+- [Conditional Access documentation](/entra/identity/conditional-access/overview)
+- [Microsoft Entra ID Protection documentation](/entra/id-protection/overview-identity-protection)

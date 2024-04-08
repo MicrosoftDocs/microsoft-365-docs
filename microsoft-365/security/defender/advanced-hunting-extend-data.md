@@ -1,14 +1,9 @@
 ---
 title: Extend advanced hunting coverage with the right settings
 description: Check auditing settings on Windows devices and other settings to help ensure that you get the most comprehensive data in advanced hunting
-keywords: advanced hunting, incident, pivot, entity, audit settings, user account management, security group management, threat hunting, cyber threat hunting, search, query, telemetry, Microsoft 365, Microsoft Defender XDR
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
 ms.subservice: adv-hunting
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: 
   - NOCSH
 ms.author: maccruz
@@ -20,7 +15,7 @@ ms.collection:
 - m365-security
 - tier2
 ms.topic: conceptual
-ms.date: 02/16/2021
+ms.date: 02/16/2024
 ---
 
 # Extend advanced hunting coverage with the right settings

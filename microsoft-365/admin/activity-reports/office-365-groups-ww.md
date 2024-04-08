@@ -3,7 +3,7 @@ title: "Microsoft 365 admin center groups reports"
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 12/07/2020
+ms.date: 01/30/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -34,7 +34,7 @@ The Microsoft 365 Reports dashboard shows you the activity overview across the p
 
 1. In the admin center, select **Reports**, and then select **Usage**.
 
-2. From the dashboard homepage, click on the **View more** button on the Active users - Microsoft 365 Apps or the Active users - Microsoft 365 Services card to get to the Office 365 report page.
+2. From the dashboard homepage, under Reports, select **Microsoft 365 apps** then **Groups activity** to get to the Office 365 report page.
 
 ## Interpret the groups report
 

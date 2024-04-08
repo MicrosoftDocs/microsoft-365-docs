@@ -1,15 +1,15 @@
 ---
 title: Manage tamper protection on an individual device
 ms.reviewer: joshbregman, mattcall, pahuijbr, hayhov, oogunrinde
-manager: dansimp
+manager: deniseb
 description: Turn tamper protection on or off for an individual device.
 ms.service: defender-endpoint
 ms.localizationpriority: medium
 ms.date: 10/24/2023
 audience: ITPro
 ms.topic: conceptual
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 ms.custom: 
 - nextgen
 - admindeeplinkDEFENDER
@@ -41,7 +41,7 @@ If you're a home user, or you aren't subject to settings managed by a security t
 
 Here's what you see in the Windows Security app:
 
-:::image type="content" source="images/tamperprotectionturnedon.png" alt-text="Turn tamper protection turned on in Windows 10 Home" lightbox="images/tamperprotectionturnedon.png":::
+:::image type="content" source="media/tamperprotectionturnedon.png" alt-text="Turn tamper protection turned on in Windows 10 Home" lightbox="media/tamperprotectionturnedon.png":::
 
 
 > [!NOTE]

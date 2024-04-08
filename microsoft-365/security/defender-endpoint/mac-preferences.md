@@ -1,18 +1,17 @@
 ---
 title: Set preferences for Microsoft Defender for Endpoint on Mac
 description: Configure Microsoft Defender for Endpoint on Mac in enterprise organizations.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, management, preferences, enterprise, intune, jamf, macos,  big sur, monterey, ventura, mde for mac
 ms.service: defender-endpoint
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
 - mde-macos
-ms.topic: conceptual
+ms.topic: how-to
 ms.subservice: macos
 search.appverid: met150
 ms.date: 06/22/2023
@@ -666,6 +665,20 @@ Specifies the value of tag
 >
 > - Only one value per tag type can be set.
 > - Type of tags are unique, and should not be repeated in the same configuration profile.
+
+#### Group identifier
+
+EDR Group identifiers
+
+****
+
+|Section|Value|
+|---|---|
+|**Domain**|`com.microsoft.wdav`|
+|**Key**|groupIds|
+|**Data type**|String|
+|**Comments**|Group identifier|
+|||
 
 ### Tamper Protection
 

@@ -1,12 +1,7 @@
 ---
 title: Microsoft Defender XDR data security and privacy
 description: Describes the privacy and data security of the service.
-keywords: privacy, data, security, trust center, information collection
-search.product: eADQiWindows 10XVcnh
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: 
   - NOCSH
 ms.author: macapara
@@ -17,6 +12,9 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier2
+- essentials-security
+- essentials-privacy
+- essentials-compliance
 ms.topic: conceptual
 search.appverid: 
   - MOE150

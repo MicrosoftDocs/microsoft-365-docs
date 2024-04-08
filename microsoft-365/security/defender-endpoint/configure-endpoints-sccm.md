@@ -1,15 +1,11 @@
 ---
 title: Onboard Windows devices using Configuration Manager
 description: Use Configuration Manager to deploy the configuration package on devices so that they are onboarded to the Defender for Endpoint service.
-keywords: onboard devices using sccm, device management, configure Microsoft Defender for Endpoint devices
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -105,39 +101,39 @@ Follow these steps to onboard endpoints using Microsoft Configuration Manager:
 
 1. In the Microsoft Configuration Manager console, navigate to **Assets and Compliance \> Overview \> Device Collections**.
 
-    :::image type="content" source="images/configmgr-device-collections.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard1." lightbox="images/configmgr-device-collections.png":::
+    :::image type="content" source="media/configmgr-device-collections.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard1." lightbox="media/configmgr-device-collections.png":::
 
 2. Select and hold (or right-click) **Device Collection** and select **Create Device Collection**.
 
-    :::image type="content" source="images/configmgr-create-device-collection.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard2." lightbox="images/configmgr-create-device-collection.png":::
+    :::image type="content" source="media/configmgr-create-device-collection.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard2." lightbox="media/configmgr-create-device-collection.png":::
 
 3. Provide a **Name** and **Limiting Collection**, then select **Next**.
 
-    :::image type="content" source="images/configmgr-limiting-collection.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard3." lightbox="images/configmgr-limiting-collection.png":::
+    :::image type="content" source="media/configmgr-limiting-collection.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard3." lightbox="media/configmgr-limiting-collection.png":::
 
 4. Select **Add Rule** and choose **Query Rule**.
 
-    :::image type="content" source="images/configmgr-query-rule.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard4." lightbox="images/configmgr-query-rule.png":::
+    :::image type="content" source="media/configmgr-query-rule.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard4." lightbox="media/configmgr-query-rule.png":::
 
 5. Select **Next** on the **Direct Membership Wizard** and then select **Edit Query Statement**.
 
-    :::image type="content" source="images/configmgr-direct-membership.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard5." lightbox="images/configmgr-direct-membership.png":::
+    :::image type="content" source="media/configmgr-direct-membership.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard5." lightbox="media/configmgr-direct-membership.png":::
 
 6. Select **Criteria** and then choose the star icon.
 
-    :::image type="content" source="images/configmgr-criteria.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard6." lightbox="images/configmgr-criteria.png":::
+    :::image type="content" source="media/configmgr-criteria.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard6." lightbox="media/configmgr-criteria.png":::
 
 7. Keep criterion type as **simple value**, choose whereas **Operating System - build number**, operator as **is greater than or equal to** and value **14393**, and select **OK**.
 
-    :::image type="content" source="images/configmgr-simple-value.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard7." lightbox="images/configmgr-simple-value.png":::
+    :::image type="content" source="media/configmgr-simple-value.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard7." lightbox="media/configmgr-simple-value.png":::
 
 8. Select **Next** and **Close**.
 
-    :::image type="content" source="images/configmgr-membership-rules.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard8." lightbox="images/configmgr-membership-rules.png":::
+    :::image type="content" source="media/configmgr-membership-rules.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard8." lightbox="media/configmgr-membership-rules.png":::
 
 9. Select **Next**.
 
-    :::image type="content" source="images/configmgr-confirm.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard9." lightbox="images/configmgr-confirm.png":::
+    :::image type="content" source="media/configmgr-confirm.png" alt-text="Screenshot of the Microsoft Configuration Manager wizard9." lightbox="media/configmgr-confirm.png":::
 
 After completing this task you have a device collection with all the Windows endpoints in the environment.
 
@@ -296,7 +292,7 @@ If you're using System Center 2012 R2 Configuration Manager, monitoring consists
 
     If there are failed deployments (devices with **Error**, **Requirements Not Met**, or **Failed statuses**), you may need to  troubleshoot the devices. For more information, see, [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md).
 
-    :::image type="content" source="images/sccm-deployment.png" alt-text="The Configuration Manager showing successful deployment with no errors" lightbox="images/sccm-deployment.png":::
+    :::image type="content" source="media/sccm-deployment.png" alt-text="The Configuration Manager showing successful deployment with no errors" lightbox="media/sccm-deployment.png":::
 
 ### Check that the devices are compliant with the Microsoft Defender for Endpoint service
 

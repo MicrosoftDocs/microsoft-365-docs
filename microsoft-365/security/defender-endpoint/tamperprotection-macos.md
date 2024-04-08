@@ -1,15 +1,11 @@
 ---
 title: Protect macOS security settings with tamper protection
 description: Use tamper protection to prevent malicious apps from changing important macOS security settings.
-keywords: macos, tamper protection, security settings, malware
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security
@@ -18,7 +14,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: macos
 search.appverid: met150
-ms.date: 03/24/2023
+ms.date: 01/29/2024
 ---
 
 # Protect macOS security settings with tamper protection
@@ -63,11 +59,11 @@ When tamper protection is set to audit or block mode, you can expect the followi
 - Creation of new files under Defender for Endpoint location is blocked
 - Deletion of Defender for Endpoint files is blocked
 - Renaming of Defender for Endpoint files is blocked
-- Commands to stop the agent fail
+- Commands to stop the agent (wdavdaemon) fail
 
 Here's an example of a system message in response to a blocked action:
 
-![Screenshot of operation blocked message.](images/operation-blocked.png)
+![Screenshot of operation blocked message.](media/operation-blocked.png)
 
 You can configure the tamper protection mode by providing the mode name as enforcement-level.
 
@@ -130,7 +126,7 @@ tamper_protection                           : "audit"
 sudo mdatp config tamper-protection enforcement-level --value block
 ```
 
-![Image of manual configuration command](images/manual-config-cmd.png)
+![Image of manual configuration command](media/manual-config-cmd.png)
 
 > [!NOTE]
 > You must use managed configuration profile (deployed via MDM) on production machines. If a local admin changed tamper protection mode via a manual configuration, they can change it to a less restrictive mode at any time as well. If tamper protection mode was set via a managed profile, only a global admin will be able to undo it.
@@ -268,7 +264,7 @@ Check the tamper protection status by running the following command:
 
 The result shows "block" if tamper protection is on:
 
-![Image of tamper protection in block mode](images/tp-block-mode.png)
+![Image of tamper protection in block mode](media/tp-block-mode.png)
 
 You can also run full `mdatp health` and look for the "tamper_protection" in the output.
 
@@ -282,14 +278,14 @@ You can verify that tamper protection is on through various ways.
 
 Tampering alert is raised in the Microsoft Defender portal
 
-:::image type="content" source="images/tampering-sensor-portal.png" alt-text="Screenshot of tampering alert raised in the Microsoft Defender portal." lightbox="images/tampering-sensor-portal.png":::
+:::image type="content" source="media/tampering-sensor-portal.png" alt-text="Screenshot of tampering alert raised in the Microsoft Defender portal." lightbox="media/tampering-sensor-portal.png":::
 
 ### Verify block mode and audit modes
 
 - Using Advanced hunting, you see tampering alerts appear
 - Tampering events can be found in the local device logs: `sudo grep -F '[{tamperProtection}]' /Library/Logs/Microsoft/mdatp/microsoft_defender_core.log`
 
-![Screenshot of tamper protection log.](images/tamper-protection-log.png)
+![Screenshot of tamper protection log.](media/tamper-protection-log.png)
 
 ### DIY scenarios
 

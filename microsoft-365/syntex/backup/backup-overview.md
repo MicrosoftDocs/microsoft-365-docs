@@ -20,11 +20,11 @@ description: Learn about the backup and recovery capabilities for SharePoint, Ex
 # Overview of Microsoft 365 Backup (Preview)
 
 > [!NOTE]
-> Microsoft 365 Backup (Preview) is now available worldwide in all commercial cloud environments. This preview feature is subject to change and [limitations as defined](backup-limitations.md). Before you begin, read the [Microsoft 365 Backup preview terms and conditions](backup-preview-terms.md).
+> Microsoft 365 Backup (Preview) is now available worldwide in all commercial cloud environments. General availability is expected to be mid-2024. This preview feature is subject to change and [limitations as defined](backup-limitations.md). Before you begin, read the [Microsoft 365 Backup preview terms and conditions](backup-preview-terms.md).
 
 ## About the preview
 
-Microsoft 365 Backup is currently in preview and will begin rolling out to organizations in early 2024. You can set up billing for the product as described in [Set up Microsoft 365 Backup](backup-setup.md). Once Microsoft 365 Backup has been deployed and is available for use in your tenant, you'll see it in the Microsoft 365 admin center page under **Settings**.
+Microsoft 365 Backup is currently in preview and begins rolling out to organizations in mid-2024. You can set up billing for the product as described in [Set up Microsoft 365 Backup](backup-setup.md). Once Microsoft 365 Backup has been deployed and is available for use in your tenant, you'll see it in the Microsoft 365 admin center page under **Settings**.
 
 During the preview period, performance and speed of web interfaces, initial configuration, and restores might be slower than expected as we scale up our infrastructure to remove undesirable latency from our system.
 
@@ -38,7 +38,7 @@ In the case of a partner application, operation of the Microsoft 365 Backup tool
 
 Business continuity assurance is a top-of-mind concern for many companies. Microsoft 365 Backup delivers business continuity peace of mind by providing performance and reliable restore confidence. When evaluating a backup and restore offering, what really matters isn't solely the backup, but the ability to restore your data to a healthy state quickly when you need to do so. Recovering large volumes of content is difficult when copying data at a scale from a remote, air-gapped location requiring weeks or even months to get your business back up and running.
 
-In cases of a ransomware attack that encrypts large swaths of your data, or instances of an internal accidental or malicious data deletion or overwrite event, you need to be able to get your business back to a healthy state as soon as possible. This is what the Microsoft 365 Backup product offers, both through the Microsoft 365 admin center, as well as via third-party applications built on the Microsoft 365 Backup Storage platform.
+In cases of a ransomware attack that encrypts large swaths of your data, or instances of an internal accidental or malicious data deletion or overwrite event, you need to be able to get your business back to a healthy state as soon as possible. This is what the Microsoft 365 Backup product offers, both through the Microsoft 365 admin center, and via partner applications built on the Microsoft 365 Backup Storage platform.
 
 To summarize, applications built on top of the Microsoft 365 Backup Storage platform deliver the following benefits regardless of the size or scale of the protected tenant:
 
@@ -83,7 +83,7 @@ Key architectural takeaways:
 
 #### Backup policy performance
 
-Creating a new protection policy initiates the process of backing up selected SharePoint sites, OneDrive accounts, and Exchange mailboxes. Once you submit a request to activate a valid protection policy, it takes on average up to 60 minutes to process and another 60 minutes to create publish restore points.
+Creating a new protection policy initiates the process of backing up selected SharePoint sites, OneDrive accounts, and Exchange mailboxes. Once you submit a request to activate a valid protection policy, it takes on average up to 60 minutes to process and another 60 minutes to create restore points.
 
 Restore points are physically created in the service as soon as the policy is confirmed to be activated in the tool, even if those restore points take some additional time to become visible in the restore tool.
 
@@ -96,12 +96,13 @@ All restore points and restores to new URLs will be relatively fast, but same UR
 
 It will take on average less than one hour for the first full site or account protection unit to be restored when a new restore session is initiated. After the first site or account is restored in a session, the remaining protection units will complete in relatively fast succession.
 
-The following table summarizes expected performance for a normally distributed tenant, including tenants of very large size and scale. During the preview period, actual performance might deviate from these general availability targets.
+The following table summarizes expected performance for a normally distributed tenant, including tenants of large size and scale. During the preview period, actual performance might deviate from these general availability targets.
 
-|Scenario |First full-container restore completes |Restore of all containers complete |
-|:-------|:-------|:--------|
-| 1,000 sites<br>(30-GB average site size)  |Less than 1 hour  |Less than 12 hours  |
-| 1,000 mailboxes<br>(30-GB average mailbox size)| Less than 1 hour | Less than 12 hours |
+|Scenario |Restore of all protection units* complete |
+|:-------|:--------|
+| 1,000 accounts, sites, or mailboxes<br>(30-GB average size)  |Less than 12 hours  |
+
+<sup>*A *protection unit* is a OneDrive account, SharePoint site, or Exchange mailbox.</sup>
 
 ## General Data Protection Regulations (GDPR)
 

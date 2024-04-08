@@ -4,7 +4,7 @@ description: View and manage alerts, respond to threats, manage devices, and rev
 search.appverid: MET150
 author: siosulli
 ms.author: siosulli
-manager: dansimp 
+manager: deniseb 
 audience: Admin
 ms.topic: how-to
 ms.service: defender-business

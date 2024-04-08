@@ -47,7 +47,7 @@ The table below represents which apps and services are currently connected to th
 |**PowerPoint**|Yes|Yes|Yes|Yes|
 |**Project**|Yes|Yes|Yes|Yes|
 |**Publisher**|Yes|Yes|Yes|Yes|
-|**SharePoint**|[Some settings currently managed by other controls.](/powershell/module/sharepoint-online/set-spotenant)||||
+|**SharePoint**|Yes|Yes|Yes|Yes|
 |**Teams**|[Some settings currently managed by other controls.](/microsoftteams/manage-feedback-policies-in-teams)||Yes||
 |**To Do**|Yes|Yes|Yes|Yes|
 |**Word**|Yes|Yes|Yes|Yes|

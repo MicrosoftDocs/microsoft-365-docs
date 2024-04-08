@@ -1,12 +1,8 @@
 ---
 title: Step 7. Promote your Microsoft Defender XDR evaluation environment to Production
-description: Use this article to promote your evals of MDI, MDO, MDE, and Defender for Cloud Apps to your live environment in Microsoft Defender XDR or M365D.
-search.product: eADQiWindows 10XVcnh
+description: Use this article to promote your trial subscriptions of Defender for Identity, Defender for Office 365, Defender for Endpoint, and Defender for Cloud Apps to your live environment in Microsoft Defender XDR.
 search.appverid: met150
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: bcarter
 author: brendacarter
 f1.keywords: 
@@ -32,19 +28,19 @@ ms.date: 05/13/2021
 
 To promote your Microsoft Defender XDR evaluation environment to production, first purchase the necessary license. Follow the steps in [Create the eval environment](eval-create-eval-environment.md) and purchase the Office 365 E5 license (instead of selecting Start free trial).
 
-Next, complete any other configuration and expand your pilot groups until these have reached full production.
+Next, complete any other configuration and expand your pilot groups until these reach full production.
 
 ## Microsoft Defender for Identity
 
-Defender for Identity doesn't require any other configuration. Just make sure you've purchased the necessary licenses and installed the sensor on all of your Active Directory domain controllers and Active Directory Federation Services (AD FS) servers.
+Defender for Identity doesn't require any other configuration. Just make sure to purchase the necessary licenses and install the sensor on all of your Active Directory domain controllers and Active Directory Federation Services (AD FS) servers.
 
 ## Microsoft Defender for Office 365
 
-After successfully evaluating or piloting MDO, it can be promoted to your entire production environment.
+After successfully evaluating or piloting Defender for Office 365, it can be promoted to your entire production environment.
 
 1. Purchase and provision the necessary licenses and assign them to your production users.
-2. Re-run recommended baseline policy configurations (either Standard or Strict) against your production email domain or specific groups of users.
-3. Optionally create and configure any custom MDO policies against your production email domain or groups of users.  However, remember that any assigned baseline policies will always take precedence over custom policies.
+2. Rerun recommended baseline policy configurations (either Standard or Strict) against your production email domain or specific groups of users.
+3. Optionally create and configure any custom Defender for Office 365 policies against your production email domain or groups of users.  However, remember that any assigned baseline policies will always take precedence over custom policies.
 4. Update the public MX record for your production email domain to resolve directly to EOP.
 5. Decommission any third-party SMTP gateways and disable or delete any EXO connectors associated with this relay.
 
@@ -61,5 +57,6 @@ Use the following general guidelines to onboard more devices to Microsoft Defend
 
 ## Microsoft Defender for Cloud Apps
 
-Microsoft Defender for Cloud Apps doesn't require any other configuration. Just make sure you've purchased the necessary licenses. If you've scoped the deployment to certain user groups, increase the scope of these groups until you reach production scale.
+Microsoft Defender for Cloud Apps doesn't require any other configuration. Just make sure to purchase the necessary licenses. If you've scoped the deployment to certain user groups, increase the scope of these groups until you reach production scale.
+
 [!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

@@ -8,8 +8,6 @@
          href: mdo-about.md
        - name: Exchange Online Protection overview
          href: eop-about.md
-       - name: Defender for Office 365 security comparison
-         href: mdo-security-comparison.md
        - name: What's new in Defender for Office 365
          href: defender-for-office-365-whats-new.md
 
@@ -49,14 +47,10 @@
          href: email-authentication-spf-configure.md
        - name: Set up DKIM
          href: email-authentication-dkim-configure.md
-       - name: Support for DKIM-signed messages
-         href: email-authentication-dkim-support-about.md
        - name: Set up DMARC
          href: email-authentication-dmarc-configure.md
        - name: Configure trusted ARC sealers
          href: email-authentication-arc-configure.md
-       - name: Use DMARC Reports to validate email
-         href: email-authentication-dmarc-reports.md
      - name: Step 2 - Configure protection policies
        items:
        - name: Preset security policies
@@ -188,8 +182,6 @@
              href: anti-spoofing-spoof-intelligence.md
            - name: Impersonation insight
              href: anti-phishing-mdo-impersonation-insight.md
-           - name: How Microsoft 365 uses SPF to prevent spoofing
-             href: email-authentication-anti-spoofing.md
          - name: Safe Attachments in Defender for Office 365
            items:
            - name: Safe Attachments in Defender for Office 365
@@ -362,8 +354,6 @@
        href: mdo-sec-ops-guide.md
      - name: Analyze and classify
        items:
-       - name: Investigate malicious email
-         href: investigate-malicious-email-that-was-delivered.md
        - name: Campaign Views
          href: campaigns.md
        - name: Report suspicious messages and files
@@ -388,16 +378,14 @@
            href: submissions-error-messages.md
        - name: Threat Explorer and real-time detections
          items:
-         - name: What is Threat Explorer and Real-time detections?
-           href: real-time-detections.md
-         - name: Email security with Threat Explorer
-           href: email-security-in-microsoft-defender.md
-         - name: Threat hunting in Threat Explorer
+         - name: About Threat Explorer and Real-time detections
+           href: threat-explorer-real-time-detections-about.md
+         - name: Threat hunting in Threat Explorer and Real-time detections
            href: threat-explorer-threat-hunting.md
-         - name: Improvements to Threat Hunting in Threat Explorer
-           href: threat-explorer-about.md
-         - name: Threat Explorer views
-           href: threat-explorer-views.md
+         - name: Email security with Threat Explorer and Real-time detections
+           href: threat-explorer-email-security.md
+         - name: Investigate delivered malicious email with Threat Explorer and Real-time detections
+           href: threat-explorer-investigate-delivered-malicious-email.md
          - name: Email entity page
            href: mdo-email-entity-page.md
          - name: Teams message entity panel
@@ -422,7 +410,7 @@
            href: message-trace-defender-portal.md
        - name: Threat Trackers
          items:
-         - name: Use Threat Trackers
+         - name: Threat trackers
            href: threat-trackers.md
      - name: SIEM server integration
        items:

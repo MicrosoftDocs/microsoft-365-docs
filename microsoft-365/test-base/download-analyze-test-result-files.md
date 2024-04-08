@@ -18,6 +18,8 @@ f1.keywords: NOCSH
 
 # Downloading and Analyzing Test Result Files
 
+[!INCLUDE [test-base-deprecation](./includes/test-base-deprecation.md)]
+
 **Test Base for Microsoft 365** generates downloadable event trace log (ETL) files that collect low-level data based on application testing. These trace files contain event data that is captured during test execution, from which memory utilization, CPU utilization, and other performance data is derived.
 
 Additional relevant test execution results data that you can analyze is described in the table that follows. The data folders listed in the table below exist within the a **logs.zip** folder that is accessible from the **Log files: Download** link in the Test Base results for an application that completed testing against a specified operating system version.

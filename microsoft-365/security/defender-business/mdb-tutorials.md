@@ -4,7 +4,7 @@ description: Learn about several tutorials to help you get started using Defende
 search.appverid: MET150
 author: siosulli
 ms.author: siosulli
-manager: dansimp 
+manager: deniseb 
 audience: Admin
 ms.topic: conceptual
 ms.service: defender-business

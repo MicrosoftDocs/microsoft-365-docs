@@ -1,16 +1,13 @@
 ---
 title: Troubleshoot performance issues for Microsoft Defender for Endpoint on Linux
 description: Troubleshoot performance issues in Microsoft Defender for Endpoint on Linux.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, performance, AuditD, XMDEClientAnalyzer, installation, deploy, uninstallation
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
+ms.reviewer: gopkr
 ms.localizationpriority: medium
 ms.date: 01/18/2023
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security
@@ -259,7 +256,7 @@ The XMDEClientAnalyzer support tool contains syntax that can be used to add Audi
 
 AuditD exclusion – support tool syntax help:
 
-:::image type="content" source="images/auditd-exclusion-support-tool-syntax-help.png" alt-text="syntax that can be used to add AuditD exclusion configuration rules" lightbox="images/auditd-exclusion-support-tool-syntax-help.png":::
+:::image type="content" source="media/auditd-exclusion-support-tool-syntax-help.png" alt-text="syntax that can be used to add AuditD exclusion configuration rules" lightbox="media/auditd-exclusion-support-tool-syntax-help.png":::
 
 **By initiator**
 

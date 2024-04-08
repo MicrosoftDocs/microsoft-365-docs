@@ -3,8 +3,8 @@ title: Allow or block URLs using the Tenant Allow/Block List
 f1.keywords:
   - NOCSH
 ms.author: chrisda
-author: dansimp
-manager: dansimp
+author: chrisda
+manager: deniseb
 audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: medium
@@ -14,12 +14,11 @@ ms.collection:
   - m365-security
   - tier1
 description: Admins can learn how to allow or block URLs in the Tenant Allow/Block List.
-ms.subservice: mdo
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 ms.date: 11/2/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 1 and Plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
@@ -62,7 +61,7 @@ This article describes how admins can manage entries for URLs in the Microsoft D
       - **Security Reader**
       - **View-Only Configuration**
       - **View-Only Organization Management**
-  - [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions *and* permissions for other features in Microsoft 365.
+  - [Microsoft Entra permissions](/entra/identity/role-based-access-control/manage-roles-portal): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions *and* permissions for other features in Microsoft 365.
 
 ## Create allow entries for URLs
 
@@ -96,8 +95,6 @@ You have the following options to create block entries for URLs:
 - From the **URLs** tab on the **Submissions** page at <https://security.microsoft.com/reportsubmission?viewid=url>. When you submit a message as **Should have been blocked (False negative)**, you can select **Block this URL** to add a block entry to the **URLs** tab on the **Tenant Allow/Block Lists** page. For instructions, see [Report questionable URLs to Microsoft](submissions-admin.md#report-questionable-urls-to-microsoft).
 
 - From the **URLs** tab on the **Tenant Allow/Block Lists** page or in PowerShell as described in this section.
-
-<a name='use-the-microsoft-365-defender-portal-to-create-block-entries-for-urls-in-the-tenant-allowblock-list'></a>
 
 ### Use the Microsoft Defender portal to create block entries for URLs in the Tenant Allow/Block List
 
@@ -140,8 +137,6 @@ New-TenantAllowBlockListItems -ListType Url -Block -Entries *contoso.com
 
 For detailed syntax and parameter information, see [New-TenantAllowBlockListItems](/powershell/module/exchange/new-tenantallowblocklistitems).
 
-<a name='use-the-microsoft-365-defender-portal-to-view-entries-for-urls-in-the-tenant-allowblock-list'></a>
-
 ## Use the Microsoft Defender portal to view entries for URLs in the Tenant Allow/Block List
 
 In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Tenant Allow/Block Lists** in the **Rules** section. Or, to go directly to the **Tenant Allow/Block Lists** page, use <https://security.microsoft.com/tenantAllowBlockList>.
@@ -150,12 +145,12 @@ Select the **URLs** tab.
 
 On the **URLs** tab, you can sort the entries by clicking on an available column header. The following columns are available:
 
-   - **Value**: The URL.
-   - **Action**: The available values are **Allow** or **Block**.
-   - **Modified by**
-   - **Last updated**
-   - **Remove on**: The expiration date.
-   - **Notes**
+- **Value**: The URL.
+- **Action**: The available values are **Allow** or **Block**.
+- **Modified by**
+- **Last updated**
+- **Remove on**: The expiration date.
+- **Notes**
 
 To filter the entries, select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter**. The following filters are available in the **Filter** flyout that opens:
 
@@ -191,8 +186,6 @@ Get-TenantAllowBlockListItems -ListType Url -Block
 ```
 
 For detailed syntax and parameter information, see [Get-TenantAllowBlockListItems](/powershell/module/exchange/get-tenantallowblocklistitems).
-
-<a name='use-the-microsoft-365-defender-portal-to-modify-entries-for-urls-in-the-tenant-allowblock-list'></a>
 
 ## Use the Microsoft Defender portal to modify entries for URLs in the Tenant Allow/Block List
 
@@ -241,8 +234,6 @@ Set-TenantAllowBlockListItems -ListType Url -Entries "~contoso.com" -ExpirationD
 ```
 
 For detailed syntax and parameter information, see [Set-TenantAllowBlockListItems](/powershell/module/exchange/set-tenantallowblocklistitems).
-
-<a name='use-the-microsoft-365-defender-portal-to-remove-entries-for-urls-from-the-tenant-allowblock-list'></a>
 
 ## Use the Microsoft Defender portal to remove entries for URLs from the Tenant Allow/Block List
 
@@ -340,8 +331,8 @@ Valid URL entries and their results are described in the following subsections.
   - b.abcd.TLD
   - TLD/contoso.com
   - TLD/q=contoso.com
-  - www.abcd.TLD
-  - www.abcd.TLD/q=a@contoso.com
+  - `www.abcd.TLD`
+  - `www.abcd.TLD/q=a@contoso.com`
 
 #### Scenario: No wildcards
 
@@ -355,8 +346,8 @@ Valid URL entries and their results are described in the following subsections.
   - payroll.contoso.com
   - test.com/contoso.com
   - test.com/q=contoso.com
-  - www.contoso.com
-  - www.contoso.com/q=a@contoso.com
+  - `www.contoso.com`
+  - `www.contoso.com/q=a@contoso.com`
 
 - **Block match**:
   - contoso.com
@@ -364,8 +355,8 @@ Valid URL entries and their results are described in the following subsections.
   - payroll.contoso.com
   - test.com/contoso.com
   - test.com/q=contoso.com
-  - www.contoso.com
-  - www.contoso.com/q=a@contoso.com
+  - `www.contoso.com`
+  - `www.contoso.com/q=a@contoso.com`
 
 - **Block not matched**: abc-contoso.com
 
@@ -377,14 +368,14 @@ Valid URL entries and their results are described in the following subsections.
 **Entry**: `*.contoso.com`
 
 - **Allow match** and **Block match**:
-  - www.contoso.com
+  - `www.contoso.com`
   - xyz.abc.contoso.com
 
 - **Allow not matched** and **Block not matched**:
   - 123contoso.com
   - contoso.com
   - test.com/contoso.com
-  - www.contoso.com/abc
+  - `www.contoso.com/abc`
 
 #### Scenario: Right wildcard at top of path
 
@@ -398,8 +389,8 @@ Valid URL entries and their results are described in the following subsections.
 - **Allow not matched** and **Block not matched**:
   - contoso.com
   - contoso.com/a
-  - www.contoso.com
-  - www.contoso.com/q=a@contoso.com
+  - `www.contoso.com`
+  - `www.contoso.com/q=a@contoso.com`
 
 #### Scenario: Left tilde
 
@@ -410,13 +401,13 @@ Valid URL entries and their results are described in the following subsections.
 
 - **Allow match** and **Block match**:
   - contoso.com
-  - www.contoso.com
+  - `www.contoso.com`
   - xyz.abc.contoso.com
 
 - **Allow not matched** and **Block not matched**:
   - 123contoso.com
   - contoso.com/abc
-  - www.contoso.com/abc
+  - `www.contoso.com/abc`
 
 #### Scenario: Right wildcard suffix
 
@@ -443,8 +434,8 @@ Valid URL entries and their results are described in the following subsections.
 - **Allow match** and **Block match**:
   - abc.contoso.com/ab
   - abc.xyz.contoso.com/a/b/c
-  - www.contoso.com/a
-  - www.contoso.com/b/a/c
+  - `www.contoso.com/a`
+  - `www.contoso.com/b/a/c`
   - xyz.contoso.com/ba
 
 - **Allow not matched** and **Block not matched**: contoso.com/b
@@ -452,23 +443,21 @@ Valid URL entries and their results are described in the following subsections.
 #### Scenario: Left and right tilde
 
 > [!TIP]
->  Allow entries of this pattern are supported only from [advanced delivery configuration](advanced-delivery-policy-configure.md).
+> Allow entries of this pattern are supported only from [advanced delivery configuration](advanced-delivery-policy-configure.md).
 
 **Entry**: `~contoso.com~`
 
 - **Allow match** and **Block match**:
-
   - contoso.com
   - contoso.com/a
-  - www.contoso.com
-  - www.contoso.com/b
+  - `www.contoso.com`
+  - `www.contoso.com/b`
   - xyz.abc.contoso.com
   - abc.xyz.contoso.com/a/b/c
   - contoso.com/b/a/c
   - test.com/contoso.com
 
--  **Allow not matched** and **Block not matched**:
-
+- **Allow not matched** and **Block not matched**:
   - 123contoso.com
   - contoso.org
   - test.com/q=contoso.com
@@ -480,7 +469,6 @@ Valid URL entries and their results are described in the following subsections.
 - **Allow match** and **Block match**: 1.2.3.4
 
 - **Allow not matched** and **Block not matched**:
-
   - 1.2.3.4/a
   - 11.2.3.4/a
 
@@ -489,7 +477,6 @@ Valid URL entries and their results are described in the following subsections.
 **Entry**: `1.2.3.4/*`
 
 - **Allow match** and **Block match**:
-
   - 1.2.3.4/b
   - 1.2.3.4/baaaa
 
@@ -498,14 +485,12 @@ Valid URL entries and their results are described in the following subsections.
 The following entries are invalid:
 
 - **Missing or invalid domain values**:
-
   - contoso
   - \*.contoso.\*
   - \*.com
   - \*.pdf
 
 - **Wildcard on text or without spacing characters**:
-
   - \*contoso.com
   - contoso.com\*
   - \*1.2.3.4
@@ -514,22 +499,18 @@ The following entries are invalid:
   - contoso.com/ab\*
 
 - **IP addresses with ports**:
-
   - contoso.com:443
   - abc.contoso.com:25
 
 - **Non-descriptive wildcards**:
-
   - \*
   - \*.\*
 
 - **Middle wildcards**:
-
   - conto\*so.com
   - conto~so.com
 
 - **Double wildcards**
-
   - contoso.com/\*\*
   - contoso.com/\*/\*
 

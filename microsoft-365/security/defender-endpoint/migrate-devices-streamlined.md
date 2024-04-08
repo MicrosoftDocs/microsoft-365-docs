@@ -3,17 +3,17 @@ title: Migrate devices to use the streamlined onboarding method
 description: Learn how to migrate devices to Defender for Endpoint using the streamlined connectivity method.
 search.appverid: met150
 ms.service: defender-endpoint
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier1
 ms.topic: how-to
 ms.subservice: onboard
-ms.date: 09/21/2023
+ms.date: 02/01/2024
 ---
 
 # Migrate devices to use the streamlined connectivity method
@@ -238,7 +238,7 @@ Open the Defender for Endpoint service event log using the following steps:
 
 2. In the log list, under **Log Summary**, scroll down until you see **Microsoft-Windows-SENSE/Operational**. Double-click the item to open the log. 
 
-	:::image type="content" source="images/log-summary-event-viewer.png" alt-text="Screenshot of Event Viewer with log summary section":::
+	:::image type="content" source="media/log-summary-event-viewer.png" alt-text="Screenshot of Event Viewer with log summary section":::
 
 	You can also access the log by expanding**Applications and Services Logs>Microsoft>Windows>SENSE** and select **Operational**. 
 
@@ -325,7 +325,7 @@ For macOS and Linux, you can use the following methods:
 
 ### MDATP connectivity test (macOS and Linux)
 
-Run `mdatp health -details` to confirm simplified_connectivity: "enabled".
+Run `mdatp health -details features ` to confirm simplified_connectivity: "enabled".
 
 Run `mdatp health -details edr` to confirm `edr_partner_geo_location` is available. The value should be `GW_<geo>` where 'geo' is your tenant's geo-location.
 

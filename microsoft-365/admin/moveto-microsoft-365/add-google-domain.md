@@ -43,7 +43,7 @@ Check out this video and others on our [YouTube channel](https://go.microsoft.co
 
 Add your Google Workspace domain to Microsoft 365 for business so you can keep using your business email address.
 
-1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com).
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 1. In the Microsoft 365 admin center, in the left nav, select **Show all** > **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
 1. Choose **Add domain**, enter your domain name then select **Use this domain**. 
 1. Choose, **Add a TXT record to the domains DNS records**, select **Continue**, and copy the TXT value. 

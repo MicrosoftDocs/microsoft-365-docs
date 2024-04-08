@@ -1,19 +1,14 @@
 ---
 title: Zero Trust with Microsoft Defender for Endpoint
 description: Microsoft Defender for Endpoint contributes to a strong Zero Trust strategy and architecture.
-keywords: Zero Trust, Microsoft Defender XDR for Endpoint, Microsoft Defender XDR, security architecture, security strategy, cyber security, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: microsoft-365-zero-trust
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords:
   - NOCSH
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
   - m365-security

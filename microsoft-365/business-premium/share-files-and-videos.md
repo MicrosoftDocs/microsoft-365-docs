@@ -4,13 +4,13 @@ f1.keywords:
 - NOCSH
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-business
 ms.date: 09/08/2023
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - M365-Campaigns
 - m365solution-smb
 - tier1
@@ -65,4 +65,3 @@ Download an infographic in [PDF](https://go.microsoft.com/fwlink/?linkid=2079435
 ## Next step
 
 Upon completion of this step, [create a communication site](create-communications-site.md) for your team.
-

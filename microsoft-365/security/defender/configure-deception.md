@@ -1,11 +1,7 @@
 ---
 title: Configure the deception capability in Microsoft Defender XDR
 description: Learn how to create, edit, and delete deception rules in Microsoft Defender XDR.
-keywords:  deception, defender for endpoint, Microsoft Defender XDR, Microsoft defender for endpoint, lures, fake hosts, fake users, fake network, honeypot, honeytoken, decoy, fake host, fake user, deception technology, create deception rule, modify deception rule, edit deception rule, delete deception rule
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: 
 - NOCSH
 ms.author: diannegali
@@ -32,7 +28,7 @@ ms.date: 01/12/2024
 - Microsoft Defender XDR
 
 > [!NOTE]
-> The built-in [deception](deception-overview.md) capability in Microsoft Defender XDR covers all Windows clients onboarded to Microsoft Defender for Endpoint. Learn how to onboard clients to Defender for Endpoint in [Onboard to Microsoft Defender for Endpoint](/defender-for-endpoint/onboarding/).
+> The built-in [deception](deception-overview.md) capability in Microsoft Defender XDR covers all Windows clients onboarded to Microsoft Defender for Endpoint. Learn how to onboard clients to Defender for Endpoint in [Onboard to Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/onboarding).
 
 Microsoft Defender XDR has [deception technology](deception-overview.md) built in to protect your environment from high-impact attacks that use human-operated lateral movement. This article describes how to configure the deception capability in Microsoft Defender XDR.
 

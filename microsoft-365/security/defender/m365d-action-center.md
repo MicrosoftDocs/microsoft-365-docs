@@ -1,12 +1,8 @@
 ---
 title: Go to the Action center to view and approve your automated investigation and remediation tasks
 description: Use the Action center to view details about automated investigation and approve pending actions
-keywords: Action center, threat protection, investigation, alert, pending, automated, detection
 search.appverid: met150
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: 
 - NOCSH
 ms.author: diannegali
@@ -117,7 +113,7 @@ In addition to remediation actions that are taken automatically as a result of [
 | **Automated device action** | An automated action taken on an entity, such as a file or process. Examples of automated actions include sending a file to quarantine, stopping a process, and removing a registry key. (See [Remediation actions in Microsoft Defender for Endpoint](../defender-endpoint/manage-auto-investigation.md#remediation-actions).) |
 | **Automated email action** | An automated action taken on email content, such as an email message, attachment, or URL. Examples of automated actions include soft-deleting email messages, blocking URLs, and turning off external mail forwarding. (See [Remediation actions in Microsoft Defender for Office 365](../office-365-security/air-remediation-actions.md).) |
 | **Advanced hunting action** | Actions taken on devices or email with [advanced hunting](./advanced-hunting-overview.md). |
-| **Explorer action** | Actions taken on email content with [Explorer](../office-365-security/threat-explorer-about.md). |
+| **Explorer action** | Actions taken on email content with [Explorer](../office-365-security/threat-explorer-real-time-detections-about.md). |
 | **Manual live response action** | Actions taken on a device with [live response](../defender-endpoint/live-response.md). Examples include deleting a file, stopping a process, and removing a scheduled task. |
 | **Live response action** | Actions taken on a device with [Microsoft Defender for Endpoint APIs](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis). Examples of actions include isolating a device, running an antivirus scan, and getting information about a file. |
 

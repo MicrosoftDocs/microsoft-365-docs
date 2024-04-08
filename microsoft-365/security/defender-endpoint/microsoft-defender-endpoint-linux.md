@@ -2,12 +2,11 @@
 title: Microsoft Defender for Endpoint on Linux
 ms.reviewer:
 description: Describes how to install and use Microsoft Defender for Endpoint on Linux.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 ms.service: defender-endpoint
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security
@@ -31,14 +30,14 @@ ms.date: 11/29/2023
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-This topic describes how to install, configure, update, and use Microsoft Defender for Endpoint on Linux.
+This article describes how to install, configure, update, and use Microsoft Defender for Endpoint on Linux.
 
 > [!CAUTION]
 > Running other third-party endpoint protection products alongside Microsoft Defender for Endpoint on Linux is likely to lead to performance problems and unpredictable side effects. If non-Microsoft endpoint protection is an absolute requirement in your environment, you can still safely take advantage of Defender for Endpoint on Linux EDR functionality after configuring the antivirus functionality to run in [Passive mode](linux-preferences.md#enforcement-level-for-antivirus-engine).
 
 ## How to install Microsoft Defender for Endpoint on Linux
 
-Microsoft Defender for Endpoint for Linux includes antimalware and endpoint detection and response (EDR) capabilities.
+Microsoft Defender for Endpoint for Linux includes anti-malware and endpoint detection and response (EDR) capabilities.
 
 ### Prerequisites
 
@@ -89,11 +88,16 @@ In general you need to take the following steps:
   - Ubuntu 16.04 LTS or higher LTS
    - Debian 9 - 12
   - SUSE Linux Enterprise Server 12 or higher
+  - SUSE Linux Enterprise Server 15 or higher
   - Oracle Linux 7.2 or higher
   - Oracle Linux 8.x
+  - Oracle Linux 9.x
   - Amazon Linux 2
   - Amazon Linux 2023
   - Fedora 33 or higher
+  - Rocky 8.7 and higher
+  - Alma 8.4 and higher
+  - Mariner 2
 
     > [!NOTE]
     > Distributions and version that are not explicitly listed are unsupported (even if they are derived from the officially supported distributions).
@@ -102,8 +106,8 @@ In general you need to take the following steps:
 
 - List of supported kernel versions
   > [!NOTE]
-  > Microsoft Defender for Endpoint on Red Hat Enterprise Linux and CentOS - 6.7 to 6.10 is a Kernel based solution. You must verify that the kernel version is supported before updating to a newer kernel version. See the list below for the list of supported kernels.
-  > Microsoft Defender for Endpoint for all other supported distributions and versions is kernel-version-agnostic. With a minimal requirement for the kernel version to be at or above 3.10.0-327.
+  > Microsoft Defender for Endpoint on Red Hat Enterprise Linux and CentOS - 6.7 to 6.10 is a Kernel based solution. You must verify that the kernel version is supported before updating to a newer kernel version.
+  > Microsoft Defender for Endpoint for all other supported distributions and versions is kernel-version-agnostic. With a minimal requirement for the kernel version to be at or greater than 3.10.0-327.
 
   - The `fanotify` kernel option must be enabled
   - Red Hat Enterprise Linux 6 and CentOS 6:
@@ -161,7 +165,7 @@ In general you need to take the following steps:
     > [!NOTE]
     > Please make sure that you have free disk space in /var.
 
-- Below is the list of supported filesystems for RTP, Quick, Full and Custom Scan.
+- List of supported filesystems for RTP, Quick, Full and Custom Scan.
   
   |RTP, Quick, Full Scan| Custom Scan|
   |---|---|
@@ -247,7 +251,7 @@ High I/O workloads from certain applications can experience performance issues w
 
 ## Resources
 
-- For more information about logging, uninstalling, or other topics, see [Resources](linux-resources.md).
+- For more information about logging, uninstalling, or other articles, see [Resources](linux-resources.md).
 
 ## Related articles
 

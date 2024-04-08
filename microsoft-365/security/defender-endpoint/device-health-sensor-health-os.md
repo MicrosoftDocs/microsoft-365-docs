@@ -1,18 +1,13 @@
 ---
 title: Device health Sensor health & OS report
 description: Use the device health report to track device health, OS platforms, and Windows 10 versions.
-keywords: health state, antivirus, os platform, windows 10 version, version, health, compliance, state
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 localization_priority: Normal
 ms.date: 09/06/2022 
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -70,7 +65,7 @@ For more information about user role management, see [Create and manage roles fo
 
 Sensor health and OS cards report on general operating system health, which includes detection sensor health, up to date versus out-of-date operating systems, and Windows 10 versions.
 
->:::image type="content" source="images/device-health-sensor-health-os-tab.png" alt-text="Shows Sensor health and Operating system information." lightbox="images/device-health-sensor-health-os-tab.png":::
+>:::image type="content" source="media/device-health-sensor-health-os-tab.png" alt-text="Shows Sensor health and Operating system information." lightbox="media/device-health-sensor-health-os-tab.png":::
 
 Each of the three cards on the **Sensor health** tab has two reporting sections, _Current state_ and _device trends_, presented as graphs:
 
@@ -78,14 +73,14 @@ Each of the three cards on the **Sensor health** tab has two reporting sections,
 
 In each card, the Current state (referred to in some documentation as _Device summary_) is the top, horizontal bar graph. Current state is a snapshot that shows information collected about devices in your organization, scoped to the current day. This graph represents the distribution of devices across your organization that report status or are detected to be in a specific state.
 
->:::image type="content" source="images/device-health-sensor-health-os-current-state-graph.png" alt-text="Shows the current state graph." lightbox="images/device-health-sensor-health-os-current-state-graph.png":::
+>:::image type="content" source="media/device-health-sensor-health-os-current-state-graph.png" alt-text="Shows the current state graph." lightbox="media/device-health-sensor-health-os-current-state-graph.png":::
 
 ### Device trends graph
 
 The lower graph on each of the three cards isn't named, but is commonly known as _device trends_. The device trends graph depicts the collection of devices across your organization, throughout the time span indicated directly above the graph.
 By default, the device trends graph displays device information from the 30-day period, ending in the latest full day. To gain a better perspective about trends occurring in your organization, you can fine-tune the reporting period by adjusting the time period shown. To adjust the time period, open the filter and select a start day and end day.
 
->:::image type="content" source="images/device-health-sensor-health-os-device-trends-graph.png" alt-text="Shows the Device Health versions trends graph." lightbox="images/device-health-sensor-health-os-device-trends-graph.png":::
+>:::image type="content" source="media/device-health-sensor-health-os-device-trends-graph.png" alt-text="Shows the Device Health versions trends graph." lightbox="media/device-health-sensor-health-os-device-trends-graph.png":::
 
 ### Filtering data
 

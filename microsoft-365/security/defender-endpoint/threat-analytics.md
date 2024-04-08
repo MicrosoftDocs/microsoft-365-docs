@@ -2,17 +2,12 @@
 title: Track and respond to emerging threats with Microsoft Defender for Endpoint threat analytics
 ms.reviewer:
 description: Understand emerging threats and attack techniques and how to stop them. Assess their impact to your organization and evaluate your organizational resilience.
-keywords: threat analytics, risk evaluation, OS mitigation, microcode mitigation, mitigation status
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: maccruz
 author: schmurky
 ms.localizationpriority: medium
-manager: dansimp
+manager: dolmont
 audience: ITPro
 ms.collection:
   - m365-security
@@ -21,7 +16,7 @@ ms.collection:
   - mde-edr
 ms.topic: conceptual
 ms.subservice: edr
-ms.date: 12/18/2020
+ms.date: 12/18/2023
 ---
 
 # Track and respond to emerging threats through threat analytics
@@ -71,7 +66,7 @@ The threat analytics dashboard is a great jump off point for getting to the repo
 
 Select a threat from the dashboard to view the report for that threat.
 
-:::image type="content" source="images/ta_dashboard.png" alt-text="The threat analytics dashboard" lightbox="images/ta_dashboard.png":::
+:::image type="content" source="media/ta-dashboard.png" alt-text="The threat analytics dashboard" lightbox="media/ta-dashboard.png":::
 
 ## View a threat analytics report
 
@@ -81,7 +76,7 @@ Each threat analytics report provides information in three sections: **Overview*
 
 The **Overview** section provides a preview of the detailed analyst report. It also provides charts that highlight the impact of the threat to your organization and your exposure through misconfigured and unpatched devices.
 
-:::image type="content" source="images/ta-overview.png" alt-text="The Overview section of a threat analytics report" lightbox="images/ta-overview.png":::
+:::image type="content" source="media/ta-overview.png" alt-text="The Overview section of a threat analytics report" lightbox="media/ta-overview.png":::
 _Overview section of a threat analytics report_
 
 #### Assess the impact to your organization
@@ -117,7 +112,7 @@ In the **Mitigations** section, review the list of specific actionable recommend
 
 Mitigation information in this section incorporates data from [Microsoft Defender Vulnerability Management](next-gen-threat-and-vuln-mgt.md), which also provides detailed drill-down information from various links in the report.
 
-:::image type="content" source="images/ta-mitigations.png" alt-text="The Mitigations section of a threat analytics report" lightbox="images/ta-mitigations.png":::
+:::image type="content" source="media/ta-mitigations.png" alt-text="The Mitigations section of a threat analytics report" lightbox="media/ta-mitigations.png":::
 
 
 _Mitigations section of a threat analytics report_

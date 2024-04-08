@@ -14,6 +14,7 @@ ms.collection:
 ms.custom:
   - Adm_O365
   - has-azure-ad-ps-ref
+  - azure-ad-ref-level-one-done
 search.appverid:
 - OGA150
 - OGC150
@@ -31,6 +32,7 @@ hideEdit: true
 As part of onboarding to Office 365 GCC High, you need to add your Simple Mail Transfer Protocol (SMTP) and SIP domains to your Online Services tenant. You do this using the New-MsolDomain cmdlet in Azure AD PowerShell or use the [Azure Government Portal](https://portal.azure.us) to start the process of adding the domain and proving ownership.
 
 Once you have your domains added to your tenant and validated, use the following guidance to add the appropriate DNS records for the following services. You might need to modify the below table to fit your organization’s needs with respect to the inbound MX record(s) and any existing Exchange Autodiscover records you have in place. We strongly recommend coordinating these DNS records with your messaging team to avoid any outages or mis-delivery of email.
+[!INCLUDE [Azure AD PowerShell deprecation note](~/../microsoft-365/reusable-content/msgraph-powershell/includes/aad-powershell-deprecation-note.md)]
 
 ## Exchange Online
 

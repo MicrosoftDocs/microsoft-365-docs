@@ -4,7 +4,7 @@ f1.keywords:
   - NOCSH
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.topic: conceptual
 ms.localizationpriority: medium
@@ -18,12 +18,11 @@ ms.collection:
 description: "Admins can learn how to find and use the email security reports that are available in the Microsoft Defender portal. This article helps answer the question, 'What is the Threat protection status report in EOP and Microsoft Defender for Office 365?'"
 ms.custom: 
 - seo-marvel-apr2020
-ms.subservice: mdo
-ms.service: microsoft-365-security
-ms.date: 11/2/2023
+ms.service: defender-office-365
+ms.date: 3/7/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 1 and Plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
@@ -46,8 +45,6 @@ The rest of this article describes the reports that are exclusive to Defender fo
 > - Reports that are related to mail flow are now in the Exchange admin center. For more information about these reports, see [Mail flow reports in the new Exchange admin center](/exchange/monitoring/mail-flow-reports/mail-flow-reports).
 >
 >   A link to these reports is available in the Defender portal at **Reports** \> **Email & collaboration** \> **Email & collaboration reports** \> **Exchange mail flow reports**, which takes you to <https://admin.exchange.microsoft.com/#/reports/mailflowreportsmain>.
-
-<a name='email-security-report-changes-in-the-microsoft-365-defender-portal'></a>
 
 ## Email security report changes in the Microsoft Defender portal
 
@@ -94,7 +91,7 @@ Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" bord
 
 - **Date (UTC)**: **Start date** and **End date**.
 - **Activity**: **Restricted** or **Suspicious**
-- **Tag**: **All** or the specified user tag (including priority accounts).
+- **Tag**: Select **All** or the specified user tag (including priority accounts). For more information, see [User tags](user-tags-about.md).
 
 When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
@@ -135,7 +132,8 @@ On the **Mailflow status report** page, the **Type** tab is selected by default.
 - **Phishing email**: Email that's blocked as phishing by various filters.
 - **Spam**: Email that's blocked as spam by various filters.
 - **Edge protection**: Email that's rejected at the edge/perimeter before examination by EOP or Defender for Office 365.
-- **Rule messages**: Email messages that were acted on by mail flow rules (also known as transport rules).
+- **Rule messages**: Email messages that were quarantined by mail flow rules (also known as transport rules).
+- **Data loss prevention**: Email messages that were quarantined by [data loss prevention (DLP) policies](/purview/dlp-learn-about-dlp).
 
 The details table below the graph shows the following information:
 
@@ -150,22 +148,24 @@ The details table below the graph shows the following information:
 Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter** to modify the report and the details table by selecting one or more of the following values in the flyout that opens:
 
 - **Date (UTC)**: **Start date** and **End date**.
-- **Mail direction**: **Inbound** and **Outbound**.
-- **Type**:
+- **Mail direction**: Select **Inbound**, **Outbound**, and **Intra-org**.
+- **Type**: Select one or more of the following values:
   - **Good mail**
   - **Malware**
   - **Spam**
   - **Edge protection**
   - **Rule messages**
   - **Phishing email**
+  - **Data loss prevention**
+- **Domain**: Select **All** or an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
 When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
 On the **Type** tab, select **Choose a category for more details** to see more information:
 
-- **Phishing email**: This selection takes you to the [Threat protection status report](reports-email-security.md#threat-protection-status-report).
-- **Malware in email**: This selection takes you to the [Threat protection status report](reports-email-security.md#threat-protection-status-report).
-- **Spam detections**: This selection takes you to the [Spam detections report](reports-email-security.md#spam-detections-report).
+- **Phishing email**: This selection takes you to [View data by Email \> Phish and Chart breakdown by Detection Technology](#view-data-by-email--phish-and-chart-breakdown-by-detection-technology) in the Threat protection status report.
+- **Malware in email**: This selection takes you to [View data by Email \> Malware and Chart breakdown by Detection Technology](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) in the Threat protection status report.
+- **Spam detections**: This selection takes you to [View data by Email \> Spam and Chart breakdown by Detection Technology](#view-data-by-email--spam-and-chart-breakdown-by-detection-technology) in the Threat protection status report.
 
 On the ***Type** tab, the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](#schedule-recurring-reports)** and :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report-data)** actions are available.
 
@@ -176,27 +176,30 @@ On the ***Type** tab, the :::image type="icon" source="../../media/m365-cc-sc-cr
 On the **Direction** tab, the chart shows the following information for the specified date range:
 
 - **Inbound**
+- **Intra-org**
 - **Outbound**
 
 Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter** to modify the report and the details table by selecting one or more of the following values in the flyout that opens:
 
 - **Date (UTC)**: **Start date** and **End date**.
-- **Mail direction**: **Inbound** and **Outbound**.
-- **Type**:
+- **Mail direction**: Select **Inbound**, **Outbound**, and **Intra-org**.
+- **Type**: Select one or more of the following values:
   - **Good mail**
   - **Malware**
   - **Spam**
   - **Edge protection**
   - **Rule messages**
   - **Phishing email**
+  - **Data loss prevention**: Email messages that were quarantined by [data loss prevention (DLP) policies](/purview/dlp-learn-about-dlp).
+- **Domain**: Select **All** or an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
 When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
 On the **Direction** tab, select **Choose a category for more details** to see more information:
 
-- **Phishing email**: This selection takes you to the [Threat protection status report](reports-email-security.md#threat-protection-status-report).
-- **Malware in email**: This selection takes you to the [Threat protection status report](reports-email-security.md#threat-protection-status-report).
-- **Spam detections**: This selection takes you to the [Spam Detections report](reports-email-security.md#spam-detections-report).
+- **Phishing email**: This selection takes you to [View data by Email \> Phish and Chart breakdown by Detection Technology](#view-data-by-email--phish-and-chart-breakdown-by-detection-technology) in the Threat protection status report.
+- **Malware in email**: This selection takes you to [View data by Email \> Malware and Chart breakdown by Detection Technology](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) in the Threat protection status report.
+- **Spam detections**: This selection takes you to [View data by Email \> Spam and Chart breakdown by Detection Technology](#view-data-by-email--spam-and-chart-breakdown-by-detection-technology) in the Threat protection status report.
 
 On the **Direction** tab, the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Create schedule** and :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** actions are available.
 
@@ -217,6 +220,7 @@ The diagram is organized into the following horizontal bands:
   - **Edge block**: Messages that were filtered at the edge and identified as Edge Protection.
   - **Processed**: Messages that were handled by the filtering stack.
 - Outcomes band:
+  - **Data loss prevention block**
   - **Rule Block**: Messages that were quarantined by Exchange mail flow rules (transport rules).
   - **Malware block**: Messages that were identified as malware.<sup>\*</sup>
   - **Phishing block**: Messages that were identified as phishing.<sup>\*</sup>
@@ -250,7 +254,8 @@ Select a row in the details table to see a further breakdown of the email counts
 Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter** to modify the report and the details table by selecting one or more of the following values in the flyout that opens:
 
 - **Date (UTC)** **Start date** and **End date**.
-- **Direction**: **Inbound** and **Outbound**.
+- **Mail direction**: Select **Inbound**, **Outbound**, and **Intra-org**.
+- **Domain**: Select **All** or an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
 When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
@@ -271,54 +276,7 @@ The **Mail latency report** in Defender for Office 365 contains information on t
 
 ## Post-delivery activities report
 
-The **Post-delivery activities** report shows information about email messages that removed from user mailboxes after delivery by zero-hour auto purge (ZAP). For more information about ZAP, see [Zero-hour auto purge (ZAP) in Exchange Online](zero-hour-auto-purge.md).
-
-The report shows real-time information, with updated threat information.
-
-On the **Email & collaboration reports** page at <https://security.microsoft.com/emailandcollabreport>, find **Post-delivery activities**, and then select **View details**. Or, to go directly to the report, use <https://security.microsoft.com/reports/ZapReport>.
-
-:::image type="content" source="../../media/post-delivery-activities-widget.png" alt-text="The Post-delivery activities widget on the Email & collaboration reports page." lightbox="../../media/post-delivery-activities-widget.png":::
-
-On the **Post-delivery activities** page, the chart shows the following information for the specified date range:
-
-- **No threat**: The number of unique delivered messages that were found to be not spam by ZAP.
-- **Spam**: The number of unique messages that were removed from mailboxes by ZAP for spam.
-- **Phishing**: The number of unique messages that were removed from mailboxes by ZAP for phishing.
-- **Malware**: The number of unique messages that were removed from mailboxes by ZAP for phishing.
-
-The details table below the graph shows the following information:
-
-- **Subject**
-- **Received time**
-- **Sender**
-- **Recipient**
-- **ZAP time**
-- **Original threat**
-- **Original location**
-- **Updated threat**
-- **Updated delivery location**
-- **Detection technology**
-
-  To see all columns, you likely need to do one or more of the following steps:
-
-  - Horizontally scroll in your web browser.
-  - Narrow the width of appropriate columns.
-  - Zoom out in your web browser.
-
-Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter** to modify the report and the details table by selecting one or more of the following values in the flyout that opens:
-
-- **Date (UTC)**: **Start date** and **End date**.
-- **Verdict**:
-  - **No threat**
-  - **Spam**
-  - **Phishing**
-  - **Malware**
-
-When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
-
-On the **Post delivery activities** page, the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](#schedule-recurring-reports)** and :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report-data)** actions are available.
-
-:::image type="content" source="../../media/post-delivery-activities-report.png" alt-text="The Post-delivery activities report." lightbox="../../media/post-delivery-activities-report.png":::
+The **Post-delivery activities** report is available only in organizations with Microsoft Defender for Office 365 Plan 2. For information about the report, see [Post-delivery activities report](reports-defender-for-office-365.md#post-delivery-activities-report).
 
 ## Spam detections report
 
@@ -401,7 +359,13 @@ The chart shows the following information:
 - **Pending**
 - **Completed**
 
-The details table below the graph shows the same information and has the same :::image type="icon" source="../../media/m365-cc-sc-group-icon.png" border="false"::: **Group**, :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns**, and :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Submit to Microsoft for analysis** actions as the **Emails** tab on the **Submissions** page at <https://security.microsoft.com/reportsubmission?viewid=email>. For more information, see [View email admin submissions to Microsoft](submissions-admin.md#view-email-admin-submissions-to-microsoft).
+The details table below the graph shows the same information and has the same available actions actions as the **Emails** tab on the **Submissions** page at <https://security.microsoft.com/reportsubmission?viewid=email>:
+
+- :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns**
+- :::image type="icon" source="../../media/m365-cc-sc-group-icon.png" border="false"::: **Group**
+- :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Submit to Microsoft for analysis**
+
+For more information, see [View email admin submissions to Microsoft](submissions-admin.md#view-email-admin-submissions-to-microsoft).
 
 Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter** to modify the report and the details table by selecting one or more of the following values in the flyout that opens:
 
@@ -414,17 +378,19 @@ Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" bord
 - **Submitted by**
 - **Reason for submitting**:
   - **Not junk**
+  - **Appears clean**
+  - **Appears suspicious**
   - **Phish**
   - **Malware**
   - **Spam**
 - **Rescan status**:
   - **Pending**
   - **Completed**
-- **Tags**: For more information about user tags, see [User tags](user-tags-about.md).
+- **Tags**: **All** or one or more [user tags](user-tags-about.md).
 
 When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
-On the **Submissions** report page, the **[Export](#export-report-data)** action is available.
+On the **Submissions** page, the **[Export](#export-report-data)** action is available.
 
 :::image type="content" source="../../media/submissions-report-page.png" alt-text="The Submissions report page in the Microsoft Defender portal." lightbox="../../media/submissions-report-page.png":::
 
@@ -463,7 +429,7 @@ In the **View data by Overview** view, the following detection information is sh
 - **Email malware**
 - **Email phish**
 - **Email spam**
-- **Content malware** (Defender for Office 365 only)
+- **Content malware** (Defender for Office 365 only: Files detected by [Built-in virus protection in SharePoint Online, OneDrive, and Microsoft Teams](anti-malware-protection-for-spo-odfb-teams-about.md) and [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-about.md))
 
 No details table is available below the chart.
 
@@ -472,14 +438,10 @@ Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" bord
 - **Date (UTC)** **Start date** and **End date**.
 - **Detection**: The same values as in the chart.
 - **Protected by**: **MDO** (Defender for Office 365) and **EOP**.
-- **Tag**: **All** or the specified user tag (including priority accounts). For more information about user tags, see [User tags](user-tags-about.md).
-- **Direction**:
-  - **All**
-  - **Inbound**
-  - **Outbound**
-- **Domain**: **All** or an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
-- **Policy type**:
-  - **All**
+- **Tag**: Leave the value **All** or remove it, double-click in the empty box, and then select **Priority account**. For more information about user tags, see [User tags](user-tags-about.md).
+- **Direction**: Leave the value **All** or remove it, double-click in the empty box, and then select **Inbound**, **Outbound**, or **Intra-org**.
+- **Domain**: Leave the value **All** or remove it, double-click in the empty box, and then select an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
+- **Policy type**: Leave the value **All** or remove it, double-click in the empty box, and then select one of the following values:
   - **Anti-malware**
   - **Safe Attachments**
   - **Anti-phish**
@@ -543,22 +505,18 @@ Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" bord
 - **Priority account protection**: **Yes** and **No**. For more information, see [Configure and review priority account protection in Microsoft Defender for Office 365](priority-accounts-turn-on-priority-account-protection.md).
 - **Evaluation**: **Yes** or **No**.
 - **Protected by**: **MDO** (Defender for Office 365) and **EOP**
-- **Direction**:
-  - **All**
-  - **Inbound**
-  - **Outbound**
-- **Tag**: **All** or the specified user tag (including priority accounts).
-- **Domain**: **All** or an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
-- **Policy type**:
-  - **All**
+- **Direction**: Leave the value **All** or remove it, double-click in the empty box, and then select **Inbound**, **Outbound**, or **Intra-org**.
+- **Tag**: Leave the value **All** or remove it, double-click in the empty box, and then select **Priority account**. For more information about user tags, see [User tags](user-tags-about.md).
+- **Domain**: Leave the value **All** or remove it, double-click in the empty box, and then select an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
+- **Policy type**: Select **All** or one of the following values:
   - **Anti-malware**
   - **Safe Attachments**
   - **Anti-phish**
   - **Anti-spam**
   - **Mail flow rule** (transport rule)
   - **Others**
-- **Policy name (details table view only)**: **All** or the specified policy.
-- **Recipients**
+- **Policy name (details table view only)**: Select **All** or a specific policy.
+- **Recipients (separated by commas)**
 
 When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
@@ -605,21 +563,18 @@ Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" bord
   If the **Detection** value **Bulk** isn't selected, the slider is grayed-out and bulk detections aren't included in the report.
 
 - **Priority account protection**: **Yes** and **No**. For more information, see [Configure and review priority account protection in Microsoft Defender for Office 365](priority-accounts-turn-on-priority-account-protection.md).
-- **Direction**:
-  - **All**
-  - **Inbound**
-  - **Outbound**
-- **Tag**: **All** or the specified user tag (including priority accounts).
-- **Domain**: **All** or an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
-- **Policy type**:
-  - **All**
+- **Direction**: **All** or enter **Inbound**, **Outbound** and **Intra-org**.
+- **Direction**: Leave the value **All** or remove it, double-click in the empty box, and then select **Inbound**, **Outbound**, or **Intra-org**.
+- **Tag**: Leave the value **All** or remove it, double-click in the empty box, and then select **Priority account**. For more information about user tags, see [User tags](user-tags-about.md).
+- **Domain**: Leave the value **All** or remove it, double-click in the empty box, and then select an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
+- **Policy type**: Select **All** or one of the following values:
   - **Anti-malware**
   - **Safe Attachments**
   - **Anti-phish**
   - **Anti-spam**
   - **Mail flow rule** (transport rule)
   - **Others**
-- **Policy name (details table view only)**: **All** or the specified policy.
+- **Policy name (details table view only)**: Select **All** or a specific policy.
 - **Recipients**
 
 When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
@@ -670,22 +625,18 @@ Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" bord
 - **Priority account protection**: **Yes** and **No**. For more information, see [Configure and review Priority accounts in Microsoft Defender for Office 365](priority-accounts-turn-on-priority-account-protection.md).
 - **Evaluation**: **Yes** or **No**.
 - **Protected by**: **MDO** (Defender for Office 365) and **EOP**
-- **Direction**:
-  - **All**
-  - **Inbound**
-  - **Outbound**
-- **Tag**: **All** or the specified user tag (including priority accounts).
-- **Domain**: **All** or an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
-- **Policy type**:
-  - **All**
+- **Direction**: Leave the value **All** or remove it, double-click in the empty box, and then select **Inbound**, **Outbound**, or **Intra-org**.
+- **Tag**: Leave the value **All** or remove it, double-click in the empty box, and then select **Priority account**. For more information about user tags, see [User tags](user-tags-about.md).
+- **Domain**: Leave the value **All** or remove it, double-click in the empty box, and then select an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
+- **Policy type**: Select **All** or one of the following values:
   - **Anti-malware**
   - **Safe Attachments**
   - **Anti-phish**
   - **Anti-spam**
   - **Mail flow rule** (transport rule)
   - **Others**
-- **Policy name (details table view only)**: **All** or the specified policy.
-- **Recipients**
+- **Policy name (details table view only)**: Select **All** or a specific policy.
+- **Recipients (separated by commas)**
 
 When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
@@ -728,22 +679,18 @@ Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" bord
 - **Priority account protection**: **Yes** and **No**. For more information, see [Configure and review Priority accounts in Microsoft Defender for Office 365](priority-accounts-turn-on-priority-account-protection.md).
 - **Evaluation**: **Yes** or **No**.
 - **Protected by**: **MDO** (Defender for Office 365) and **EOP**
-- **Direction**:
-  - **All**
-  - **Inbound**
-  - **Outbound**
-- **Tag**: **All** or the specified user tag (including priority accounts).
-- **Domain**: **All** or an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
-- **Policy type**:
-  - **All**
+- **Direction**: Leave the value **All** or remove it, double-click in the empty box, and then select **Inbound**, **Outbound**, or **Intra-org**.
+- **Tag**: Leave the value **All** or remove it, double-click in the empty box, and then select **Priority account**. For more information about user tags, see [User tags](user-tags-about.md).
+- **Domain**: Leave the value **All** or remove it, double-click in the empty box, and then select an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
+- **Policy type**: Select **All** or one of the following values:
   - **Anti-malware**
   - **Safe Attachments**
   - **Anti-phish**
   - **Anti-spam**
   - **Mail flow rule** (transport rule)
   - **Others**
-- **Policy name (details table view only)**: **All** or the specified policy.
-- **Recipients**
+- **Policy name (details table view only)**: Select **All** or a specific policy.
+- **Recipients (separated by commas)**
 
 <sup>\*</sup> Defender for Office 365 only
 
@@ -789,22 +736,18 @@ Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" bord
 - **Date (UTC)** **Start date** and **End date**
 - **Detection**: Detection technology values as previously described in this article and at [Detection technologies](/office/office-365-management-api/office-365-management-activity-api-schema#detection-technologies).
 - **Protected by**: **MDO** (Defender for Office 365) and **EOP**
-- **Direction**:
-  - **All**
-  - **Inbound**
-  - **Outbound**
-- **Tag**: **All** or the specified user tag (including priority accounts).
-- **Domain**: **All** or an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
-- **Policy type**:
-  - **All**
+- **Direction**: Leave the value **All** or remove it, double-click in the empty box, and then select **Inbound**, **Outbound**, or **Intra-org**.
+- **Tag**: Leave the value **All** or remove it, double-click in the empty box, and then select **Priority account**. For more information about user tags, see [User tags](user-tags-about.md).
+- **Domain**: Leave the value **All** or remove it, double-click in the empty box, and then select an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
+- **Policy type**: Select **All** or one of the following values:
   - **Anti-malware**
   - **Safe Attachments**
   - **Anti-phish**
   - **Anti-spam**
   - **Mail flow rule** (transport rule)
   - **Others**
-- **Policy name (details table view only)**: **All** or the specified policy.
-- **Recipients**
+- **Policy name (details table view only)**: Select **All** or a specific policy.
+- **Recipients (separated by commas)**
 
 <sup>\*</sup> Defender for Office 365 only
 
@@ -847,20 +790,28 @@ On the **Threat protection status** page, the :::image type="icon" source="../..
 
 In the **View data by System override** and **Chart breakdown by Reason** view, the following override reason information is shown in the chart:
 
-- **Exchange transport rule** (mail flow rule)
+- **Data Loss Prevention**: Email messages that were quarantined by [data loss prevention (DLP) policies](/purview/dlp-learn-about-dlp).
+- **Exchange transport rule**
+- **Exclusive setting (Outlook)**
 - **IP Allow**
 - **On-premises skip**
 - **Organization allowed domains**
 - **Organization allowed senders**
 - **Phishing simulation**: For more information, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](advanced-delivery-policy-configure.md).
+- **Sender Domain List**
 - **TABL - Both URL and file allowed**
 - **TABL - File allowed**
 - **TABL - File blocked**
-- **TABL - Sender allowed**
-- **TABL - Sender blocked**
 - **TABL - URL allowed**
 - **TABL - URL blocked**
+- **TABL Sender email address Allow**
+- **TABL Sender email address block**
+- **TABL Spoof Block**
 - **Third party filter**
+- **Trusted Contact List - Sender in Address Book**
+- **Trusted Recipient Address List**
+- **Trusted Recipient Domain List**
+- **Trusted Senders List (Outlook)**
 - **User Safe Domain**
 - **User Safe Sender**
 - **ZAP not enabled**
@@ -879,16 +830,19 @@ Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" bord
 
 - **Date (UTC)** **Start date** and **End date**
 - **Reason**: The same values as the chart.
-- **Delivery Location**: **Junk Mail folder not enabled** or **SecOps mailbox**.
-- **Direction**:
-  - **All**
-  - **Inbound**
-  - **Outbound**
-- **Tag**: **All** or the specified user tag (including priority accounts).
-- **Domain**: **All** or an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
-- **Policy type**: **All**
-- **Policy name (details table view only)**: **All**
-- **Recipients**
+- **Delivery Location**: **Junk Mail folder not enabled** and **SecOps mailbox**.
+- **Direction**: Leave the value **All** or remove it, double-click in the empty box, and then select **Inbound**, **Outbound**, or **Intra-org**.
+- **Tag**: Leave the value **All** or remove it, double-click in the empty box, and then select **Priority account**. For more information about user tags, see [User tags](user-tags-about.md).
+- **Domain**: Leave the value **All** or remove it, double-click in the empty box, and then select an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
+- **Policy type**: Select **All** or one of the following values:
+  - **Anti-malware**
+  - **Safe Attachments**
+  - **Anti-phish**
+  - **Anti-spam**
+  - **Mail flow rule** (transport rule)
+  - **Others**
+- **Policy name (details table view only)**: Select **All** or a specific policy.
+- **Recipients (separated by commas)**
 
 When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
@@ -917,23 +871,19 @@ Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" bord
 
 - **Date (UTC)** **Start date** and **End date**
 - **Reason**: The same values as in [Chart breakdown by Policy type](#chart-breakdown-by-policy-type)
-- **Delivery Location**: **Junk Mail folder not enabled** or **SecOps mailbox**.
-- **Direction**:
-  - **All**
-  - **Inbound**
-  - **Outbound**
-- **Tag**: **All** or the specified user tag (including priority accounts). For more information about user tags, see [User tags](user-tags-about.md).
-- **Domain**: **All** or an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
-- **Policy type**:
-  - **All**
+- **Delivery Location**: **Junk Mail folder not enabled** and **SecOps mailbox**.
+- **Direction**: Leave the value **All** or remove it, double-click in the empty box, and then select **Inbound**, **Outbound**, or **Intra-org**.
+- **Tag**: Leave the value **All** or remove it, double-click in the empty box, and then select **Priority account**. For more information about user tags, see [User tags](user-tags-about.md).
+- **Domain**: Leave the value **All** or remove it, double-click in the empty box, and then select an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
+- **Policy type**: Select **All** or one of the following values:
   - **Anti-malware**
-  - **Safe Attachments** (Defender for Office 365 only)
+  - **Safe Attachments**
   - **Anti-phish**
   - **Anti-spam**
   - **Mail flow rule** (transport rule)
   - **Others**
-- **Policy name (details table view only)**: **All**
-- **Recipients**
+- **Policy name (details table view only)**: Select **All** or a specific policy.
+- **Recipients (separated by commas)**
 
 When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
@@ -988,6 +938,13 @@ On the **Top senders and recipients** page, a larger version of the pie chart is
 - **Show data for Top phishing recipients**
 - **Show data for Top malware recipients (MDO)**
 - **Show data for Top phish recipients (MDO)**
+- **Show data for Top intra.org mail senders**
+- **Show data for Top intra.org mail recipients**
+- **Show data for Top intra.org spam recipients**
+- **Show data for Top intra.org malware recipients**
+- **Show data for Top intra.org phishing recipients**
+- **Show data for Top intra.org phishing recipients (MDO)**
+- **Show data for Top intra.org malware recipients (MDO)**
 
 Hover over a wedge in the pie chart to see the message count for that specific sender or recipient.
 
@@ -1000,7 +957,7 @@ For each chart, the details table below the chart shows the following informatio
 Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter** to modify the report by selecting one or more of the following values in the flyout that opens:
 
 - **Date (UTC)** **Start date** and **End date**
-- **Tag**
+- **Tag**: Select **All** or the specified user tag (including priority accounts). For more information, see [User tags](user-tags-about.md).
 
 When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
@@ -1027,11 +984,11 @@ To go directly to the **User reported** tab on the **Submissions** page in the D
 
 The chart shows the following information:
 
-- **Spam**
-- **Phish**
 - **Not junk**
+- **Phish**
+- **Spam**
 
-The details table below the graph shows the same information and has the same actions that are available on the **User reported** tab on the **Submissions** page at <https://security.microsoft.com/reportsubmission?viewid=user>
+The details table below the graph shows the same information and has the same actions that are available on the **User reported** tab on the **Submissions** page at <https://security.microsoft.com/reportsubmission?viewid=user>:
 
 - :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns**
 - :::image type="icon" source="../../media/m365-cc-sc-group-icon.png" border="false"::: **Group**
@@ -1043,7 +1000,7 @@ For more information, see [View user reported messages to Microsoft](submissions
 
 :::image type="content" source="../../media/user-reported-messages-report.png" alt-text="The user-reported messages report." lightbox="../../media/user-reported-messages-report.png":::
 
-On the **User reported messages** page, the :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report-data)** action is available.
+On the report page, the :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report-data)** action is available.
 
 :::image type="content" source="../../media/user-reported-messages-report.png" alt-text="The user-reported messages report." lightbox="../../media/user-reported-messages-report.png":::
 
@@ -1057,7 +1014,7 @@ You need to be assigned permissions before you can view and use the reports that
   - **Security Administrator**
   - **Security Reader**
   - **Global Reader**
-- [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator**<sup>\*</sup>, **Security Administrator**, **Security Reader**, or **Global Reader** roles in Microsoft Entra ID gives users the required permissions _and_ permissions for other features in Microsoft 365.
+- [Microsoft Entra permissions](/entra/identity/role-based-access-control/manage-roles-portal): Membership in the **Global Administrator**<sup>\*</sup>, **Security Administrator**, **Security Reader**, or **Global Reader** roles in Microsoft Entra ID gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 <sup>\*</sup> Membership in the **Organization Management** role group or in the **Global Administrator** role is required to use the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](#schedule-recurring-reports)** or :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Request report](#request-on-demand-reports-for-download)** actions in reports (where available).
 
@@ -1067,11 +1024,11 @@ If you don't see data in the reports, check the report filters and double-check 
 
 - [Configuration analyzer for protection policies in EOP and Microsoft Defender for Office 365](configuration-analyzer-for-security-policies.md)
 - [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md)
-- [How do I turn off spam filtering?](/microsoft-365/security/office-365-security/anti-spam-protection-faq#how-do-i-turn-off-spam-filtering-)
+- [How do I turn off spam filtering?](anti-spam-protection-faq.yml#how-do-i-turn-off-spam-filtering-)
 
 ## Download and export report information
 
-Depending on the report and possibly the specific view in the report, one or more of the following actions might be available on the main report page as previously described:
+Depending on the report and the specific view in the report, one or more of the following actions might be available on the main report page as previously described:
 
 - :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report-data)**
 - :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](#schedule-recurring-reports)**

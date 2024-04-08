@@ -21,8 +21,6 @@ ms.date: 09/01/2023
 
 - [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-[!include[Prerelease information](../../includes/prerelease.md)]
-
 >[!Tip]
 >To learn how to turn on preview features, see [Microsoft Defender XDR preview features](preview.md).
 
