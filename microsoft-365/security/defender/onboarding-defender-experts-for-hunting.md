@@ -109,19 +109,13 @@ Select **Ask Defender Experts** directly inside the Microsoft 365 security porta
 - Gain clarity into suspicious devices, alerts, or incidents and take next steps if faced with an advanced attacker
 - Determine risks and available protections related to threat actors, campaigns, or emerging attacker techniques
 
-**Required permissions for submitting inquiries in the Ask Defender Experts panel**
+### Required permissions for submitting inquiries in the Ask Defender Experts panel
 
-You need to select the following permissions before submitting inquires to our Defender experts:
+You need to select the following permissions before submitting inquires to our Defender experts. For more details on RBAC permissions see: [Microsoft Defender for Endpoint and Microsoft Defender XDR RBAC permissions](/microsoft-365/security/defender/compare-rbac-roles#map-defender-for-endpoint-and-defender-vulnerability-management-permissions-to-the-microsoft-defender-xdr-rbac-permissions)
 
 |**Microsoft Defender for Endpoint RBAC**|**Microsoft Defender XDR Unified RBAC**|
 |---|---|---|
 |Manage security settings in the Security Center | Authorization and settings \ Security settings \ Core security settings (manage) </br> Authorization and settings \ Security settings \ Detection tuning (manage)|
-
-For more details on RBAC permissions see: [Microsoft Defender for Endpoint and Microsoft Defender XDR RBAC permissions](/microsoft-365/security/defender/compare-rbac-roles#map-defender-for-endpoint-and-defender-vulnerability-management-permissions-to-the-microsoft-defender-xdr-rbac-permissions)
-
-- **Microsoft Defender for Endpoint RBAC**- Manage security settings in Security Center.
-- **Microsoft Defender XDR Unified RBAC** - Authorization and settings \ Security settings \ Core security settings (manage) , or
-Authorization and settings \ Security settings \ Detection tuning (manage). For more details on RBAC permissions see: [Microsoft Defender for Endpoint and Microsoft Defender XDR RBAC permissions](/microsoft-365/security/defender/compare-rbac-roles#map-defender-for-endpoint-and-defender-vulnerability-management-permissions-to-the-microsoft-defender-xdr-rbac-permissions)
 
 The option to **Ask Defender Experts** is available in several places throughout the portal:
 
