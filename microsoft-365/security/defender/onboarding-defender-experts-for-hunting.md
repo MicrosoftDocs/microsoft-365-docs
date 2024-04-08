@@ -69,7 +69,7 @@ You can receive Defender Experts Notifications from Defender Experts through the
 You can filter your incidents and alerts if you want to only see the Defender Experts Notifications among the many alerts. To do so:
 
 1. On the navigation menu, go to **Incidents & alerts** > **Incidents** > select the ![Filter icon](../../media/mte/defenderexperts/filter.png) icon.
-2. Scroll down to the **Service/detection sources** field > select the **Microsoft Defender Experts** check boxes under Microsoft Defender for Endpoint and Microsoft Defender XDR.
+2. Scroll down to **Service/detection sources** then select the **Microsoft Defender Experts** checkboxes under *Microsoft Defender for Endpoint* and *Microsoft Defender XDR*S.
 3. Select **Apply**.
 
 ### Set up Defender Experts email notifications
