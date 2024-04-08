@@ -27,7 +27,7 @@ appliesto:
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-For what microsoft does to your submissions, [check this out](submissions-report-messages-files-to-microsoft.md#report-suspicious-email-messages-to-microsoft).
+For more information about what Microsoft does to your submissions, [check this out](submissions-report-messages-files-to-microsoft.md#report-suspicious-email-messages-to-microsoft).
 
 In Microsoft 365 organizations with Exchange Online mailboxes, admins can use the **Submissions** page in the Microsoft Defender portal to submit messages, URLs, and attachments to Microsoft for analysis. There are two basic types of admin submissions:
 
