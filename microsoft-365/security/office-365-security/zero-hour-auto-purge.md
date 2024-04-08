@@ -193,7 +193,7 @@ ZAP takes action on a message based on the configuration of anti-spam policies a
 
 ### How is ZAP affected by the exceptions to protection features in EOP and Defender for Office 365?
 
-[Safe sender lists](create-safe-sender-lists-in-office-365.md), mail flow rules, and other organizational block and allow settings take precedence over ZAP. These messages are excluded from ZAP, since the service is doing what you configured it to do. This behavior is another reason to be careful about configuring messages to bypass filtering.
+ZAP actions might be overridden by [Safe sender lists](create-safe-sender-lists-in-office-365.md), mail flow rules, and other organizational block and allow settings. For malware and high-confidence phishing verdicts, ZAP always takes action to protect users. Carefully consider the implications of bypassing filtering, as it may affect the security posture of your organization.
 
 ### What are the licensing requirements for ZAP?
 
