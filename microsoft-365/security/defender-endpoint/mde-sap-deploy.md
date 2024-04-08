@@ -17,8 +17,6 @@ ms.reviewer: cgardin; shlomiakirav; deniseb; siosulli
 search.appverid: MET150  
 f1.keywords: NOCSH
 audience: ITPro
-ai-usage:  
-- ai-assisted  
 ---  
 
 # Deploying Microsoft Defender for Endpoint on Windows Server with SAP

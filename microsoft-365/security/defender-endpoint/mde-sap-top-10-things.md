@@ -17,8 +17,6 @@ ms.reviewer: cgardin; shlomiakirav; deniseb; siosulli
 search.appverid: MET150  
 f1.keywords: NOCSH
 audience: ITPro
-ai-usage:  
-- ai-assisted  
 ---  
 
 # Top 10 recommendations for Microsoft Defender for Endpoint in SAP environments

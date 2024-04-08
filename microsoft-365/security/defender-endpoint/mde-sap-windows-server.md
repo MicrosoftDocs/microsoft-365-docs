@@ -4,7 +4,7 @@ description: Understand how Microsoft Defender for Endpoint with EDR and other a
 author: denisebmsft
 ms.author: deniseb  
 manager: dansimp
-ms.date: 04/04/2024
+ms.date: 04/08/2024
 ms.topic: overview
 ms.service: defender-endpoint  
 ms.subservice: ngp
@@ -17,8 +17,6 @@ ms.reviewer: cgardin; deniseb; siosulli; shlomiakirav
 search.appverid: MET150  
 f1.keywords: NOCSH 
 audience: ITPro
-ai-usage:  
-- ai-assisted  
 ---  
 
 # Microsoft Defender for Endpoint on Windows Server with SAP
