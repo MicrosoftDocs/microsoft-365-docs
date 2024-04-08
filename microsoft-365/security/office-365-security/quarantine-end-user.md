@@ -18,8 +18,7 @@ ms.collection:
 ms.custom:
   - seo-marvel-apr2020
 description: Users can learn how to view and manage quarantined messages in Exchange Online Protection (EOP) that should have been delivered to them.
-ms.subservice: mdo
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 adobe-target: true
 ms.date: 8/2/2023
 appliesto:

@@ -97,7 +97,7 @@ For the Application registration stage, you must have a **Global administrator**
     > [!IMPORTANT]
     > After click Add, **copy the generated secret value**. You won't be able to retrieve after you leave!
 
-    :::image type="content" source="../images/webapp-create-key2.png" alt-text="The Certificates & secrets menu item in the Manage pane in the Microsoft Entra admin center" lightbox="../images/webapp-create-key2.png":::
+    :::image type="content" source="../media/webapp-create-key2.png" alt-text="The Certificates & secrets menu item in the Manage pane in the Microsoft Entra admin center" lightbox="../media/webapp-create-key2.png":::
 
 7. Write down your application ID and your tenant ID.
 
