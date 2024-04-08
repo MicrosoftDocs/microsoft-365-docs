@@ -308,7 +308,7 @@ Users can request the release of email messages if the quarantine policy used **
 After a recipient requests the release of the email message, the **Release status** value changes to **Release requested**, and an admin can approve or deny the request.
 
 > [!TIP]
-> One alert to release the message might be created for multiple release requests for that message.
+> One alert to release the message might be created for multiple release requests for that message. Use the **Quarantine** link in the alert email message to take action on the release request from users in the organization for the past 7 days.
 
 If you don't release or remove a message, it's automatically deleted from quarantine after the date shown in the **Expires** column.
 
