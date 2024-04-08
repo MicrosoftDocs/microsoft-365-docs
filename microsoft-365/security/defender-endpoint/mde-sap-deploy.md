@@ -4,7 +4,7 @@ description: Deploy and configure Microsoft Defender for Endpoint on Windows Ser
 author: denisebmsft
 ms.author: deniseb  
 manager: dansimp
-ms.date: 04/04/2024
+ms.date: 04/08/2024
 ms.topic: how-to
 ms.service: defender-endpoint  
 ms.subservice: ngp
@@ -27,9 +27,9 @@ This article provides a comprehensive overview of deploying Microsoft Defender f
 
 ## Deployment methodology
 
-Microsoft and SAP advise against deploying Microsoft Defender for Endpoint on Windows Server directly to all development, QAS, and production systems without careful testing and monitoring. Uncontrolled deployment can lead to system downtime. Instead, deploy the software in development systems first, validate it in QAS, and then proceed with production environments.
+Microsoft and SAP advise against deploying Microsoft Defender for Endpoint on Windows Server directly to all development, QAS, and production systems without careful testing and monitoring. Uncontrolled deployment can lead to system downtime, even if you use tools like [Intune to deploy Defender for Endpoint security policies](/mem/intune/protect/endpoint-security). 
 
-Using tools like [Intune to deploy Defender for Endpoint security policies](/mem/intune/protect/endpoint-security) to an entire SAP landscape without testing can cause downtime. Make sure to test the following factors:
+Deploy the software in your development systems first, validate it in QAS, and then proceed with your production environments. Make sure to test the following factors:
 
 1. Deploy Defender for Endpoint with [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) enabled. If issues arise, disable [real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md) and configure [scheduled scans](schedule-antivirus-scans.md). 
 
