@@ -193,7 +193,7 @@ ZAP takes action on a message based on the configuration of anti-spam policies a
 
 ### How is ZAP affected by the exceptions to protection features in EOP and Defender for Office 365?
 
-Zero-hour auto purge (ZAP) actions may be overridden by [Safe sender lists](create-safe-sender-lists-in-office-365.md), mail flow rules, and other organizational block and allow settings, as these configurations instruct the service to behave as specified. However, for malware and high-confidence phishing, ZAP will still take action to protect users. It is crucial to carefully consider the implications of bypassing filtering, as it may affect the security posture of the organization. 
+ZAP actions might be overridden by [Safe sender lists](create-safe-sender-lists-in-office-365.md), mail flow rules, and other organizational block and allow settings. For malware and high-confidence phishing verdicts, ZAP always takes action to protect users. Carefully consider the implications of bypassing filtering, as it may affect the security posture of your organization.
 
 ### What are the licensing requirements for ZAP?
 
