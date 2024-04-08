@@ -109,7 +109,7 @@ end
 
 #Extract WindowsDefenderATPOnbaordingPackage.zip into /etc/opt/microsoft/mdatp
 
-bash 'Extract Organizations Json MDATP' do
+bash 'Extract Onboarding Json MDATP' do
   code <<-EOS
   unzip #{zip_path} -d #{mdatp}
   EOS
