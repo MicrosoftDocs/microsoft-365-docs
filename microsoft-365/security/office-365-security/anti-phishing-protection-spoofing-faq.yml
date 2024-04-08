@@ -18,7 +18,7 @@ metadata:
     - tier2
   description: Admins can view frequently asked questions and answers about anti-spoofing protection in Exchange Online Protection (EOP).
   ms.subservice: mdo
-  ms.service: microsoft-365-security
+  ms.service: defender-office-365
 title: Anti-spoofing protection FAQ
 summary: |
   [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]

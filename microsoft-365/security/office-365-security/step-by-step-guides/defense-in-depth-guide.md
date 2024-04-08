@@ -1,8 +1,7 @@
 ---
 title: Getting started with defense in-depth configuration for email security
 description: Step-by-step configuration guidance on how to get security value from Microsoft Defender for Office 365 when you have third party email filtering.
-ms.service: microsoft-365-security
-ms.subservice: mdo
+ms.service: defender-office-365
 f1.keywords:
   - NOCSH
 ms.author: benharri

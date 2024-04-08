@@ -14,8 +14,7 @@ ms.collection:
   - tier2
 ms.custom:
 description: Admins can learn how to remove connectors from the Restricted entities page in the Microsoft Defender portal. Connectors are added to the Restricted entities page after signs of compromise.
-ms.subservice: mdo
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 search.appverid: met150
 ms.date: 6/14/2023
 appliesto:

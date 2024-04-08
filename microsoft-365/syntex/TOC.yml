@@ -221,23 +221,7 @@
           href: ocr.md
 
     - name: Microsoft 365 Archive (Preview)
-      items: 
-        - name: Overview 
-          href: archive/archive-overview.md
-        - name: Admin setup 
-          href: archive/archive-setup.md
-        - name: Pricing model 
-          href: archive/archive-pricing.md
-        - name: Archive states 
-          href: archive/archive-states.md
-        - name: Manage 
-          href: archive/archive-manage.md
-        - name: Compliance 
-          href: archive/archive-compliance.md
-        - name: End user experience 
-          href: archive/archive-end-user.md
-        - name: FAQs
-          href: archive/archive-faq.md
+      href: /microsoft-365/archive
 
     - name: Microsoft 365 Backup (Preview)
       items: 
