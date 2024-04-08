@@ -38,9 +38,9 @@ Watch this video that shows more information about the unified submissions exper
 
 > [!IMPORTANT]
 >
-> When you report a message to Microsoft, everything associated with the message is copied and included in the continual algorithm reviews. This copy includes email content, email headers, any attachments, and related data about email routing.
->
-> Microsoft treats your feedback as your organization's permission to analyze all the information to fine tune the message hygiene algorithms. Your message is held in secured and audited data centers in the USA. The submission is deleted as soon as it's no longer required. Microsoft personnel might read your submitted messages and attachments, which is normally not permitted for email in Microsoft 365. However, your email is still treated as confidential between you and Microsoft, and your email or attachments isn't shared with any other party as part of the review process.
+> When you make a submission to Microsoft, everything associated with the submission is copied and included in the continual algorithm reviews. This copy includes all data associated with submission, including: message content, headers, any attachments, related data about routing and all other data directly associated with the submission.
+> 
+> Microsoft treats your submission as your organization's permission to analyze all the information to fine tune the submission hygiene algorithms. Your submission is held in secured and audited data centers in the USA. The submission is deleted as soon as it's no longer required. Microsoft personnel might read your submitted messages and attachments, which is normally not permitted for customer data in Microsoft 365. However, your submission is still treated as confidential between you and Microsoft, and your data isn't shared with any other party as part of the review process. Microsoft may also use AI to evaluate and create responses tailored to your submissions.
 >
 > For information about reporting messages in Microsoft Teams in Defender for Office 365 Plan 2, see [User reported message settings in Microsoft Teams](submissions-teams.md).
 
