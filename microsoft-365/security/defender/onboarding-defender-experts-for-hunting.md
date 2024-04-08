@@ -116,8 +116,7 @@ You need to select the following permissions before submitting inquires to our D
 |**Product name**|**Product RBAC permission**|
 |---|---|---|
 | Microsoft Defender for Endpoint RBAC | Manage security settings in the Security Center|
-| Microsoft Defender XDR Unified RBAC | Authorization and settings \ Security settings \ Core security settings (manage)
-</br> Authorization and settings \ Security settings \ Detection tuning (manage) |
+| Microsoft Defender XDR Unified RBAC | Authorization and settings \ Security settings \ Core security settings (manage)</br>Authorization and settings \ Security settings \ Detection tuning (manage) |
 
 ### Where to find Ask Defender Experts
 
