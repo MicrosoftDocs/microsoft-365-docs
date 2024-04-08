@@ -160,14 +160,14 @@
         href: configure-endpoints-script.md
       - name: Onboard non-persistent virtual desktop infrastructure (VDI) devices
         href: configure-endpoints-vdi.md
-    - name: Defender for Endpoint on Windows Server with SAP
-      items:
-      - name: Overview
-        href: mde-sap-windows-server.md
-      - name: Top 10 considerations before deployment
-        href: mde-sap-top-10-things.md
-      - name: Deploy Defender for Endpoint on Windows Server with SAP
-        href: mde-sap-deploy.md
+      - name: Defender for Endpoint on Windows Server with SAP
+        items:
+        - name: Overview
+          href: mde-sap-windows-server.md
+        - name: Top 10 considerations before deployment
+          href: mde-sap-top-10-things.md
+        - name: Deploy Defender for Endpoint on Windows Server with SAP
+          href: mde-sap-deploy.md
     - name: Onboard non-Windows devices
       href: configure-endpoints-non-windows.md
     - name: Defender for Endpoint on macOS
