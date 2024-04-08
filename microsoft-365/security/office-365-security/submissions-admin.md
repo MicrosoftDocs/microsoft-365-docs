@@ -400,7 +400,7 @@ For URLs reported as false positives, we allow subsequent messages that contain 
        - **7 days**
        - **30 days**
        - **Specific date**: The maximum value is 30 days from today.
-     - **Allow entry note (optional)**: Enter optional information about why you're allow this item.
+     - **Allow entry note (optional)**: Enter optional information about why you're allowing this item.
 
      When you're finished on the second page of the **Submit to Microsoft for analysis** flyout, select **Submit**.
 
