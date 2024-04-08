@@ -216,7 +216,7 @@ First, you should check that the service is set to start automatically when Wind
 
    If the service is enabled, then the result should look like the following screenshot:
 
-   :::image type="content" source="images/windefatp-sc-qc-diagtrack.png" alt-text="The result of the sc query command for diagtrack" lightbox="images/windefatp-sc-qc-diagtrack.png":::
+   :::image type="content" source="media/windefatp-sc-qc-diagtrack.png" alt-text="The result of the sc query command for diagtrack" lightbox="media/windefatp-sc-qc-diagtrack.png":::
 
    If the `START_TYPE` isn't set to `AUTO_START`, then you need to set the service to automatically start.
 

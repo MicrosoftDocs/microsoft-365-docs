@@ -8,7 +8,6 @@ ms.service:  microsoft-365-security
 ms.topic:    how-to
 ms.date:     07/03/2023
 audience: ITPro
-ms.subservice: mdo
 ms.collection:
 - m365-guidance-templates
 - m365-security
