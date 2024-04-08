@@ -54,7 +54,7 @@ Accessing the new support widget can be done in one of two ways:
 
 2. Clicking on the **Need help?**  button in the bottom right of the Microsoft Defender portal:
 
-   :::image type="content" source="images/need-help-option.png" alt-text="The Need help button" lightbox="images/need-help-option.png":::
+   :::image type="content" source="media/need-help-option.png" alt-text="The Need help button" lightbox="media/need-help-option.png":::
 
 In the widget you'll be offered two options:
 

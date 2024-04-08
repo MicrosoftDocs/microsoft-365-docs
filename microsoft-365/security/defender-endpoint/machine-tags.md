@@ -61,12 +61,12 @@ To add device tags using API, see [Add or remove device tags API](api/add-or-rem
 
 2. Select **Manage tags** from the row of Response actions.
 
-    :::image type="content" source="images/manage-tags-option.png" alt-text="Image of manage tags button" lightbox="images/manage-tags-option.png":::
+    :::image type="content" source="media/manage-tags-option.png" alt-text="Image of manage tags button" lightbox="media/manage-tags-option.png":::
     
 
 3. Type to find or create tags
 
-    :::image type="content" source="images/create-new-tag.png" alt-text="Adding tags on device1" lightbox="images/create-new-tag.png":::
+    :::image type="content" source="media/create-new-tag.png" alt-text="Adding tags on device1" lightbox="media/create-new-tag.png":::
 
 Tags are added to the device view and will also be reflected on the **Devices inventory** view. You can then use the **Tags** filter to see the relevant list of devices.
 
@@ -77,7 +77,7 @@ Tags are added to the device view and will also be reflected on the **Devices in
 
 You can also delete tags from this view.
 
-:::image type="content" source="images/new-tag-label-display.png" alt-text="Adding tags on device2" lightbox="images/new-tag-label-display.png":::
+:::image type="content" source="media/new-tag-label-display.png" alt-text="Adding tags on device2" lightbox="media/new-tag-label-display.png":::
 
 ## Add device tags using dynamic rules for device tagging
 

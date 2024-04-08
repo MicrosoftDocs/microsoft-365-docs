@@ -9,6 +9,7 @@ ms.reviewer: armanv, nicholak
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
 ms.collection: 
 - Tier1
@@ -20,6 +21,7 @@ ms.custom:
 - TopSMBIssues
 - okr_SMB
 - AdminSurgePortfolio
+- admindeeplinkMAC
 search.appverid: MET150
 description: "Learn how to change how often you're billed for your Microsoft 365 for business subscription."
 ms.date: 10/13/2023

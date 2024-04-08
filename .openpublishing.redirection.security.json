@@ -41,8 +41,13 @@
        "redirect_document_id": true
      },
      {
+      "source_path": "microsoft-365/security/defender/device-profile.md",
+      "redirect_url": "/microsoft-365/security/defender/entity-page-device",
+      "redirect_document_id": true
+    },
+    {
               "source_path": "microsoft-365/security/defender-endpoint/experts-on-demand.md",
-              "redirect_url": "/microsoft-365/security/defender/onboarding-defender-experts-for-hunting/collaborate-with-experts-on-demand",
+              "redirect_url": "/microsoft-365/security/defender/onboarding-defender-experts-for-hunting#collaborate-with-experts-on-demand",
               "redirect_document_id": false
      },
      {
@@ -1217,7 +1222,7 @@
      },
      {
        "source_path": "microsoft-365/security/defender-365-security/threat-explorer.md",
-       "redirect_url": "/microsoft-365/security/office-365-security/threat-explorer-about",
+       "redirect_url": "/microsoft-365/security/office-365-security/threat-explorer-real-time-detections-about",
        "redirect_document_id": false
      },
      {
@@ -2542,7 +2547,7 @@
      },
      {
        "source_path": "microsoft-365/security/office-365-security/threat-explorer.md",
-       "redirect_url": "/microsoft-365/security/office-365-security/threat-explorer-about",
+       "redirect_url": "/microsoft-365/security/office-365-security/threat-explorer-real-time-detections-about",
        "redirect_document_id": false
      },
      {
@@ -2862,7 +2867,7 @@
      },
      {
        "source_path": "microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview.md",
-       "redirect_url": "/microsoft-365/security/office-365-security/mdo-security-comparison",
+       "redirect_url": "/microsoft-365/security/office-365-security/mdo-about",
        "redirect_document_id": false
      },
      {
@@ -3716,9 +3721,19 @@
        "redirect_document_id": true
      },
      {
-       "source_path": "microsoft-365/security/office-365-security/messaging-policy-and-compliance-in-eop.md",
-       "redirect_url": "/microsoft-365/security/office-365-security/auditing-reports-in-eop",
-       "redirect_document_id": true
+      "source_path": "microsoft-365/security/office-365-security/messaging-policy-and-compliance-in-eop.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/auditing-reports-in-eop",
+      "redirect_document_id": true
+     },
+     {
+       "source_path": "microsoft-365/security/office-365-security/threat-explorer-views.md",
+       "redirect_url": "/microsoft-365/security/office-365-security/threat-explorer-real-time-detections-about",
+       "redirect_document_id": false
+     },
+     {
+      "source_path": "microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/threat-explorer-investigate-delivered-malicious-email",
+      "redirect_document_id": true
      },
      {
        "source_path": "microsoft-365/security/office-365-security/manage-recipients-and-admin-role-groups-in-eop.md",
@@ -3750,6 +3765,11 @@
        "redirect_url": "/microsoft-365/security/office-365-security/safe-links-about#block-the-following-urls-list-for-safe-links",
        "redirect_document_id": false
      },
+     {
+      "source_path": "microsoft-365/security/office-365-security/mdo-security-comparison.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/mdo-about",
+      "redirect_document_id": false
+    },
      {
        "source_path": "microsoft-365/security/defender-endpoint/enable-microsoft-defender-for-iot-integration.md",
        "redirect_url": "/azure/defender-for-iot/organizations/concept-enterprise",
@@ -3799,6 +3819,21 @@
        "source_path": "microsoft-365/security/office-365-security/email-authentication-dmarc-reports.md",
        "redirect_url": "/microsoft-365/security/office-365-security/email-authentication-dmarc-configure",
        "redirect_document_id": false
+     },
+     {
+      "source_path": "microsoft-365/security/office-365-security/real-time-detections.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/threat-explorer-real-time-detections-about",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "microsoft-365/security/office-365-security/email-security-in-microsoft-defender.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/threat-explorer-email-security",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "microsoft-365/security/office-365-security/threat-explorer-about.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/threat-explorer-real-time-detections-about",
+      "redirect_document_id": false
      },
      {
        "source_path": "microsoft-365/security/defender-endpoint/device-control-removable-storage-protection.md",
@@ -3931,8 +3966,18 @@
       "redirect_document_id": false
      },
      {
+      "source_path": "microsoft-365/security/defender-endpoint/troubleshoot-reporting.md",
+      "redirect_url": "/mem/intune/protect/advanced-threat-protection-configure",
+      "redirect_document_id": false
+     },
+     {
       "source_path": "microsoft-365/security/defender-endpoint/manage-mde-post-migration-intune.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/preferences-setup",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management-trial",
+      "redirect_url": "/microsoft-365/security/defender-vulnerability-management/trial-user-guide-defender-vulnerability-management",
       "redirect_document_id": false
      }
    ]

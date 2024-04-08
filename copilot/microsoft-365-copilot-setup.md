@@ -41,12 +41,14 @@ Your users must have one of the following base licenses to be eligible for a Cop
 - Microsoft 365 E3
 - Office 365 E3
 - Office 365 E5
-- Microsoft 365 A5 for faculty
-- Microsoft 365 A3 for faculty
-- Office 365 A5 for faculty
-- Office 365 A3 for faculty
 - Microsoft 365 Business Standard
 - Microsoft 365 Business Premium
+- Microsoft 365 A5 for faculty*
+- Microsoft 365 A3 for faculty*
+- Office 365 A5 for faculty*
+- Office 365 A3 for faculty*
+
+*Available via Enrollment for Education Solutions (EES) or Cloud Solution Provider only.
 
 >[!NOTE]
 > Customers with Education or Business subscriptions that do not include Teams can still purchase Copilot for Microsoft 365 licenses.

@@ -5,23 +5,22 @@ author: chrisda
 manager: deniseb
 audience: ITPro
 ms.topic: how-to
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 ms.localizationpriority: medium
 ms.collection:
   - m365-security
   - tier2
 description: Admins can learn about the addition of Microsoft Teams in delivering simulated phishing attacks in Attack simulation training in Microsoft Defender for Office 365 Plan 2.
-ms.subservice: mdo
 search.appverid: met150
-ms.date: 11/3/2023
+ms.date: 3/15/2024
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison" target="_blank">Microsoft Defender for Office 365 plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 2</a>
 ---
 
 # Microsoft Teams in Attack simulation training
 
 > [!IMPORTANT]
-> Microsoft Teams in Attack simulation training is currently available only in a Private Preview.
+> Currently, Microsoft Teams in Attack simulation training is in Private Preview. The information in this article is subject to change.
 
 In organizations with Microsoft Defender for Office 365 Plan 2 or Microsoft Defender XDR, admins can now use Attack simulation training to deliver simulated phishing messages in Microsoft Teams. For more information about attack simulation training, see [Get started using Attack simulation training in Defender for Office 365](attack-simulation-training-get-started.md).
 
@@ -37,7 +36,8 @@ The addition of Teams in Attack simulation training affects the following featur
 
 ## Teams simulation configuration
 
-**If your organization is enrolled in Attack simulation training for Teams Private Preview**, carry out the following configuration steps.
+> [!NOTE]
+> Currently, the steps in this section apply only if your organization is enrolled in the Private Preview of **Attack simulation training for Teams**.
 
 In addition to having user reporting for Teams messages turned on as described in [User reported message settings in Microsoft Teams](submissions-teams.md), you also need to configure the Teams accounts that can be used as sources for simulation messages in Attack simulation training. To configure the accounts, do the following steps:
 
@@ -47,9 +47,9 @@ In addition to having user reporting for Teams messages turned on as described i
 4. In the **Teams simulation configuration** flyout that opens, select **Generate token**. Read the information in the confirmation dialog, and then select **I agree**.
 5. Back on the **Settings** tab, select **Manager user accounts** in the **Teams simulation configuration** section again to reopen the **Teams simulation configuration** flyout. The user account that you were logged in as now appears in the **User accounts available for Teams phishing** section.
 
-To remove a user from the list, select the round check box that appears next to the user's **Display name** without clicking anywhere else in the row. Select the :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png" border="false"::: **Delete** action that appears, and then select **Delete** in the confirmation dialog.
+To remove a user from the list, select the check box next to the display name value without clicking anywhere else in the row. Select the :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png" border="false"::: **Delete** action that appears, and then select **Delete** in the confirmation dialog.
 
-Or, to prevent the account from being used in Teams simulations but keep the linked simulations history for the account, you can block the account from signing in as described [here](/microsoft-365/admin/add-users/remove-former-employee-step-1).
+To prevent the account from being used in Teams simulations but keep the linked simulations history for the account, select the check box next to the display name value without clicking anywhere else in the row. Select the :::image type="icon" source="../../media/m365-cc-sc-block-sender-icon.png" border="false"::: **Deactivate** action that appears.
 
 ## Changes in simulations for Microsoft Teams
 
@@ -59,9 +59,14 @@ Teams introduces the following changes to viewing and creating simulations as de
 
 - If you select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Launch a simulation** on the **Simulations** tab to create a simulation, the first page of the new simulation wizard is **Select delivery platform** where you can select **Microsoft Teams**. Selecting **Microsoft Teams** introduces the following changes to the rest of the new simulation wizard:
 
-  - On the **[Select technique](attack-simulation-training-simulations.md#select-a-social-engineering-technique)** page, the **Malware Attachment** and **Link in Attachment** social engineering techniques aren't available.
+  - On the **[Select technique](attack-simulation-training-simulations.md#select-a-social-engineering-technique)** page, the following social engineering techniques aren't available:
+    - **Malware Attachment**
+    - **Link in Attachment**
+    - **How-to Guide**
 
   - On the **[Name simulation](attack-simulation-training-simulations.md#name-and-describe-the-simulation)** page, a **Select sender's Microsoft Teams account** section and **Select user account** link are present. Select **Select user account** to find and select the account to use as the source for the Teams message.
+
+    The list of users comes from the **Teams simulation configuration** section on the **Settings** tab of Attack simulation training at <https://security.microsoft.com/attacksimulator?viewid=setting>. Configuring accounts is described in the [Teams simulation configuration](#teams-simulation-configuration) section earlier in this article.
 
   - On the **[Select payload and login page](attack-simulation-training-simulations.md#select-a-payload-and-login-page)**, no payloads are listed by default because there are no built-in payloads for Teams. You need to create a payload for the combination of Teams and the social engineering technique that you selected.
 
@@ -69,7 +74,6 @@ Teams introduces the following changes to viewing and creating simulations as de
 
   - On the **[Target users](attack-simulation-training-simulations.md#target-users)** page, the following settings are different for Teams:
     - As noted on the page, guest users in Teams are excluded from simulations.
-    - If you select **Include only specific users and groups**, **City** isn't an available filter in the **Filter users by category** section.
 
 Other settings related to simulations are the same for Teams messages as described in the existing content for email messages.
 

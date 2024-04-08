@@ -1,13 +1,12 @@
 ---
 title: What's new in Microsoft Defender XDR
 description: Lists the new features and functionality in Microsoft Defender XDR
-keywords: what's new in Microsoft Defender XDR, ga, generally available, capabilities, available, new
 search.appverid: met150
 ms.service: defender-xdr
 ms.author: diannegali
 author: diannegali
 ms.localizationpriority: medium
-ms.date: 01/30/2024
+ms.date: 04/03/2024
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,15 +19,28 @@ ms.topic: conceptual
 
 Lists the new features and functionality in Microsoft Defender XDR.
 
-For more information on what's new with other Microsoft Defender security products, see:
+For more information on what's new with other Microsoft Defender security products and Microsoft Sentinel, see:
 
 - [What's new in Microsoft Defender for Office 365](../office-365-security/defender-for-office-365-whats-new.md)
 - [What's new in Microsoft Defender for Endpoint](../defender-endpoint/whats-new-in-microsoft-defender-endpoint.md)
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
 - [What's new in Microsoft Defender for Cloud Apps](/cloud-app-security/release-notes)
+- [What's new in Microsoft Sentinel](/azure/sentinel/whats-new)
 
 You can also get product updates and important notifications through the [message center](https://admin.microsoft.com/Adminportal/Home#/MessageCenter).
 
+## April 2024
+
+- (Preview) The **unified security operations platform** in the Microsoft Defender portal is now available. This release brings together the full capabilities of Microsoft Sentinel, Microsoft Defender XDR, and Microsoft Copilot in Microsoft Defender. For more information, see the following resources:
+
+  - Blog announcement: [​​Unified security operations platform ready to revolutionize protection and efficiency](https://aka.ms/unified-soc-announcement)
+  - [Microsoft Sentinel in the Microsoft Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2263690)
+  - [Connect Microsoft Sentinel to Microsoft Defender XDR](microsoft-sentinel-onboard.md)
+  - [Microsoft Security Copilot in Microsoft Defender](security-copilot-in-microsoft-365-defender.md)
+  
+- (GA) **[Microsoft Copilot in Microsoft Defender](security-copilot-in-microsoft-365-defender.md)** is now generally available. Copilot in Defender helps you investigate and respond to incidents faster and more effectively. Copilot provides guided responses, incident summaries and reports, helps you build KQL queries to hunt for threats, provide file and script analyses, and enable you to summarize relevant and actionable threat intelligence.
+- Copilot in Defender customers can now export incident data to PDF. Use the exported data to easily share incident data, facilitating discussions with your security teams and other stakeholders. For details, see **[Export incident data to PDF](manage-incidents.md#export-incident-data-to-pdf)**.
+- **Notifications in the Microsoft Defender portal** are now available. On the top right-hand side of the Defender portal, select the bell icon to view all your active notifications. Different types of notifications are supported such as success, info, warning, and error. Dismiss individual notifications or dismiss all from the notifications tab. 
 
 ## February 2024
 
@@ -36,6 +48,10 @@ You can also get product updates and important notifications through the [messag
 - (GA) **Assigning severity to incidents**, **assigning an incident to a group**, and the ***go hunt*** option from the attack story graph are now generally available. Guides to learn how to [assign or change incident severity](manage-incidents.md#assign-or-change-incident-severity) and [assign an incident to a group](manage-incidents.md#assign-an-incident) are in the [Manage incidents](manage-incidents.md) page. Learn how you can use the *go hunt* option by exploring [attack story](investigate-incidents.md#attack-story).
 
 - (Preview) **[Custom detection rules in Microsoft Graph security API](/graph/api/resources/security-api-overview?view=graph-rest-beta&preserve-view=true#custom-detections)** are now available.  Create advanced hunting custom detection rules specific to your org to proactively monitor for threats and take action.
+
+>[!Warning]
+> The 2024-02 platform release causes inconsistent results for device control customers using removable media policies with disk/device-level access only (masks that are less of equal to 7). The enforcement might not work as expected. 
+> To mitigate this issue, rolling back to the previous version of the Defender platform is recommended.
 
 ## January 2024
 
@@ -95,13 +111,13 @@ You can also get product updates and important notifications through the [messag
 
 - (Preview) The [DeviceInfo](advanced-hunting-deviceinfo-table.md) table in advanced hunting now also includes the columns `DeviceManualTags` and `DeviceDynamicTags` in public preview to surface both manually and dynamically assigned tags related to the device you are investigating.
 
-- The **Guided response** feature in Microsoft Defender Experts for XDR has been renamed to **[Managed response](start-using-mdex-xdr.md#how-to-use-managed-response-in-microsoft-365-defender)**. We have also added a [new FAQ section](faq-incident-notifications-xdr.md#understanding-and-managing-defender-experts-for-xdr-incident-updates) on incident updates.
+- The **Guided response** feature in Microsoft Defender Experts for XDR has been renamed to **[Managed response](managed-detection-and-response-xdr.md)**. We have also added a [new FAQ section](faq-incident-notifications-xdr.md#understanding-and-managing-defender-experts-for-xdr-incident-updates) on incident updates.
 
 ## July 2023
 
 - (GA) The [Attack story](investigate-incidents.md#attack-story) in incidents is now generally available. The attack story provides the full story of the attack and allows incident response teams to view the details and apply remediation.
 
-- A new URL and domain page is now available in Microsoft Defender XDR. The updated URL and domain page provides a single place to view all the information about a URL or a domain, including its reputation, the users who clicked it, the devices that accessed it, and emails where the URL or domain was seen. For details, see [Investigate URLs in Microsoft Defender XDR](/microsoft-365/security/defender-endpoint/investigate-domain).
+- A new URL and domain page is now available in Microsoft Defender XDR. The updated URL and domain page provides a single place to view all the information about a URL or a domain, including its reputation, the users who clicked it, the devices that accessed it, and emails where the URL or domain was seen. For details, see [Investigate URLs in Microsoft Defender XDR](../defender-endpoint/investigate-domain.md).
 
 ## June 2023
 
@@ -119,7 +135,7 @@ You can also get product updates and important notifications through the [messag
 
 - (GA) The [unified Assets tab in the Incidents page](investigate-incidents.md) is now generally available.
 
-- Microsoft is using a new weather-based naming taxonomy for threat actors. This new naming schema will provide more clarity and will be easier to reference. [Learn more about the new naming taxonomy](/microsoft-365/security/intelligence/microsoft-threat-actor-naming).
+- Microsoft is using a new weather-based naming taxonomy for threat actors. This new naming schema will provide more clarity and will be easier to reference. [Learn more about the new naming taxonomy](../intelligence/microsoft-threat-actor-naming.md).
 
 ## March 2023 
 
@@ -145,7 +161,7 @@ This change introduces a new navigation menu within the Microsoft Defender porta
 
 - (GA) Live Response is now generally available for macOS and Linux.
 
-- (GA) Identity timeline is now generally available as part of the new Identity page in Microsoft Defender XDR. The updated User page has a new look, an expanded view of related assets and a new dedicated timeline tab. The timeline represents activities and alerts from the last 30 days. It unifies a user’s identity entries across all available workloads: Microsoft Defender for Identity, Microsoft Defender for Cloud Apps, and Microsoft Defender for Endpoint. Using the timeline helps you easily focus on a user's activities (or activities performed on them) in specific timeframes.
+- (GA) Identity timeline is now generally available as part of the new Identity page in Microsoft Defender XDR. The updated User page has a new look, an expanded view of related assets and a new dedicated timeline tab. The timeline represents activities and alerts from the last 30 days. It unifies a user's identity entries across all available workloads: Microsoft Defender for Identity, Microsoft Defender for Cloud Apps, and Microsoft Defender for Endpoint. Using the timeline helps you easily focus on a user's activities (or activities performed on them) in specific timeframes.
 
 ## December 2022
 
@@ -261,11 +277,11 @@ The security operations team can view all actions pending approval, and the stip
 
 - [New alert page in the Microsoft Defender portal](https://techcommunity.microsoft.com/t5/microsoft-365-defender/easily-find-anomalies-in-incidents-and-alerts/ba-p/2339243)
 
-  Provides enhanced information for the context into an attack. You can see which other triggered alert caused the current alert and all the affected entities and activities involved in the attack, including files, users and mailboxes. See [Investigate alerts](/microsoft-365/security/defender/investigate-alerts) for more information.
+  Provides enhanced information for the context into an attack. You can see which other triggered alert caused the current alert and all the affected entities and activities involved in the attack, including files, users and mailboxes. See [Investigate alerts](investigate-alerts.md) for more information.
 
 - [Trend graph for incidents and alerts in the Microsoft Defender portal](https://techcommunity.microsoft.com/t5/microsoft-365-defender/new-alert-page-for-microsoft-365-defender-incident-detections/ba-p/2350425)
 
-  Determine if there are several alerts for a single incident or that your organization is under attack with several different incidents. See [Prioritize incidents](/microsoft-365/security/defender/incident-queue) for more information.
+  Determine if there are several alerts for a single incident or that your organization is under attack with several different incidents. See [Prioritize incidents](incident-queue.md) for more information.
 
 ## April 2021
 

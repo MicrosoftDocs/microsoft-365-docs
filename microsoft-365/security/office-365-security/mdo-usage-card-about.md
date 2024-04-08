@@ -17,11 +17,10 @@ ms.collection:
 - tier2
 ms.custom:
 description: Learn about your organization's active usage of Microsoft Defender for Office 365 licenses versus the actual number of licenses purchased.
-ms.subservice: mdo
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 ms.date: 1/17/2024
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 1 and Plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
@@ -48,7 +47,7 @@ Usage cards can help determine the following scenarios:
 
    :::image type="content" source="../../media/usage-card-mdo.png" alt-text="The Defender for Office 365 usage card in the Defender portal." lightbox="../../media/usage-card-mdo.png":::
 
-For members of **Global Administrator** or **Billing Administrator** roles in [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles), following items are available on the card:
+For members of **Global Administrator** or **Billing Administrator** roles in [Microsoft Entra permissions](/entra/identity/role-based-access-control/manage-roles-portal), following items are available on the card:
 
 - **Add more licenses**
 - **See licensing details**
@@ -75,7 +74,7 @@ The details flyout that opens contains the following information from the last 2
 
 **Threat protection status report** takes you to the [Threat protection status report](reports-email-security.md#threat-protection-status-report).
 
-**See licensing details** is available for members of the **Global Administrators** or **Security Operator** roles in [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles).
+**See licensing details** is available for members of the **Global Administrators** or **Security Operator** roles in [Microsoft Entra permissions](/entra/identity/role-based-access-control/manage-roles-portal).
 
 ## Frequently asked questions
 
@@ -95,7 +94,7 @@ Usage count can be determined by:
 - **Users with email protection**: Distinct count of active users of Safe Links for email or Safe Attachments for email.
 - **Users for whom manual and automated investigations were triggered**: Manual investigations triggered from Threat Explorer or auto investigations actions approved or rejected by SecOps in Incidents or in Action center.
 - **Users for whom remediations were triggered**: Manual remediations in Threat Explorer, Email entity, Advanced Hunting, Automation, or Action center.
-- **Users targeted by phishing simulation training**: Users who were targeted as part of simulations over past 28 days.
+- **Users targeted by Attack simulation training**: Users who were targeted as part of simulations over past 28 days.
 
 ### I have Defender for Office 365 Plan 1 or Plan 2 paid license. Why can I not see the usage card?
 
@@ -110,6 +109,6 @@ If you see **Collecting license and usage data** status in your usage card, it m
 
 :::image type="content" source="../../media/usage-card-collecting-data.png" alt-text="Screenshot of the usage card showing the collecting data status." lightbox="../../media/usage-card-collecting-data.png":::
 
-### Why does it still show overage even though you don't have any Microsoft Defender for Office 365 Plan 2 license and no usage of SecOps capabilities?
+### Why does the Usage card show an overage even though you don't have Defender for Office 365 Plan 2 and no usage of SecOps capabilities?
 
-If you have overage across Microsoft Defender for Office 365 Plan 1 licenses offering protection and detection, you can remediate this overage by purchasing more Microsoft Defender for Office 365 Plan 1 licenses.
+The usage card shows usage of both Defender for Office 365 Plan 1 and Plan 2. If you don't have any Plan 2 licenses, the usage is coming from Plan 1 features (for example, Safe Links or Safe Attachments). You can fix this overage by purchasing more Plan 1 licenses.

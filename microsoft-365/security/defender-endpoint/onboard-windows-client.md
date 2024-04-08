@@ -1,6 +1,6 @@
 ---
 title: Defender for Endpoint onboarding Windows Client
-description: Onboard Windows Client.
+description: Onboard Windows Client devices to Microsoft Defender for Endpoint.
 ms.service: defender-endpoint
 ms.author: siosulli
 author: siosulli
@@ -13,10 +13,10 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: onboard
 search.appverid: met150
-ms.date: 05/19/2022
+ms.date: 04/03/2024
 ---
 
-# Defender for Endpoint onboarding Windows Client
+# Defender for Endpoint onboarding Windows client devices
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
@@ -30,23 +30,19 @@ ms.date: 05/19/2022
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https:%2F%2Faka.ms%2FMDEp2OpenTrial)
 
-You'll need to go through onboarding steps of the Defender for Endpoint portal to onboard any of the supported devices. Depending on the device, you'll be guided with appropriate steps and provided management and deployment tool options suitable for the device.
+To onboard Windows client devices, follow the onboarding steps in the [Microsoft Defender portal](https://security.microsoft.com) (Go to **Settings** > **Endpoints** > **Onboarding**). You can onboard any of the supported devices. Depending on the particular device, you're guided ny appropriate steps and are provided with management and deployment tool options suitable for the device.
 
-Devices in your organization must be configured so that the Defender for Endpoint service can get sensor data from them. There are various methods and deployment tools that you can use to configure the devices in your organization.
+Devices in your organization must be configured so that the Defender for Endpoint service can get sensor data from them. There are various methods and deployment tools that you can use to configure the devices in your organization. In general, you identify the client you're onboarding, then follow the corresponding tool appropriate to the device or your environment.
 
-In general, you'll identify the client you're onboarding, then follow the corresponding tool appropriate to the device or your environment.
-
-:::image type="content" source="images/onboarddevices.png" alt-text="Onboard devices" lightbox="images/onboarddevices.png":::
-
-
+:::image type="content" source="media/onboarddevices.png" alt-text="Onboard devices" lightbox="media/onboarddevices.png":::
 
 [!INCLUDE [Defender for Endpoint repackaging warning](../../includes/repackaging-warning.md)]
 
+## Related articles
 
-
-## Related topics
 - [Onboard Windows devices using Microsoft Intune](configure-endpoints-mdm.md)
 - [Onboard Windows devices using Group Policy](configure-endpoints-gp.md)
 - [Onboard Windows devices using a local script](configure-endpoints-script.md)
 - [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

@@ -45,7 +45,7 @@ The following recommendations have been added as Microsoft Secure Score improvem
 
 - Ensure 'Phishing-resistant MFA strength' is required for Administrators. 
 - Ensure custom banned passwords lists are used. 
-- Ensure 'Microsoft Azure Management' is limited to administrative roles.
+- Ensure 'Windows Azure Service Management API' is limited to administrative roles.
 
 **Admin Center:**
 

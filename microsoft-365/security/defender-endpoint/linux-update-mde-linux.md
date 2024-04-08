@@ -4,6 +4,7 @@ description: Learn how to schedule an update of the Microsoft Defender for Endpo
 ms.service: defender-endpoint
 ms.author: siosulli
 author: siosulli
+ms.reviewer: gopkr
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro
@@ -118,7 +119,7 @@ Type "`:wq`" w/o the double quotes.
 
 To view your cron jobs, type `sudo crontab -l`
 
-:::image type="content" source="images/update-MDE-linux-4634577.jpg" alt-text="update Defender for Endpoint on Linux.":::
+:::image type="content" source="media/update-MDE-linux-4634577.jpg" alt-text="update Defender for Endpoint on Linux.":::
 
 To inspect cron job runs:
 
@@ -142,7 +143,7 @@ Use the following commands:
 cron - Manage cron.d and crontab entries
 ```
 
-See <https://docs.ansible.com/ansible/latest/modules/cron_module.html> for more information.
+See <https://docs.ansible.com/ansible/latest> for more information.
 
 ### To set crontabs in Chef
 

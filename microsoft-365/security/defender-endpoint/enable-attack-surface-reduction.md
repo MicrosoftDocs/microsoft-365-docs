@@ -154,7 +154,7 @@ You can use Microsoft Intune OMA-URI to configure custom attack surface reductio
 
 1. Open the Microsoft Intune admin center. In the **Home** menu, click  **Devices**, select **Configuration profiles**, and then click **Create profile**.
 
-   :::image type="content" source="images/mem01-create-profile.png" alt-text="The Create profile page in the Microsoft Intune admin center portal." lightbox="images/mem01-create-profile.png":::
+   :::image type="content" source="media/mem01-create-profile.png" alt-text="The Create profile page in the Microsoft Intune admin center portal." lightbox="media/mem01-create-profile.png":::
 
 2. In **Create a profile**, in the following two drop-down lists, select the following:
 
@@ -164,15 +164,15 @@ You can use Microsoft Intune OMA-URI to configure custom attack surface reductio
 
    Select **Custom**, and then select **Create**.
 
-   :::image type="content" source="images/mem02-profile-attributes.png" alt-text="The rule profile attributes in the Microsoft Intune admin center portal." lightbox="images/mem02-profile-attributes.png":::
+   :::image type="content" source="media/mem02-profile-attributes.png" alt-text="The rule profile attributes in the Microsoft Intune admin center portal." lightbox="media/mem02-profile-attributes.png":::
 
 3. The Custom template tool opens to step **1 Basics**. In **1 Basics**, in **Name**, type a name for your template, and in **Description** you can type a description (optional).
 
-   :::image type="content" source="images/mem03-1-basics.png" alt-text="The basic attributes in the Microsoft Intune admin center portal" lightbox="images/mem03-1-basics.png":::
+   :::image type="content" source="media/mem03-1-basics.png" alt-text="The basic attributes in the Microsoft Intune admin center portal" lightbox="media/mem03-1-basics.png":::
 
 4. Click **Next**. Step **2 Configuration settings** opens. For OMA-URI Settings, click **Add**. Two options now appear: **Add** and **Export**.
 
-    :::image type="content" source="images/mem04-2-configuration-settings.png" alt-text="The configuration settings in the Microsoft Intune admin center portal." lightbox="images/mem04-2-configuration-settings.png":::
+    :::image type="content" source="media/mem04-2-configuration-settings.png" alt-text="The configuration settings in the Microsoft Intune admin center portal." lightbox="media/mem04-2-configuration-settings.png":::
 
 1. Click **Add** again. The **Add Row OMA-URI Settings** opens. In **Add Row**, do the following:
 
@@ -187,7 +187,7 @@ You can use Microsoft Intune OMA-URI to configure custom attack surface reductio
      - 2: Audit (Evaluate how the attack surface reduction rule would impact your organization if enabled)
      - 6: Warn (Enable the attack surface reduction rule but allow the end-user to bypass the block)
 
-   :::image type="content" source="images/mem05-add-row-oma-uri.png" alt-text="The OMA URI configuration in the Microsoft Intune admin center portal" lightbox="images/mem05-add-row-oma-uri.png":::
+   :::image type="content" source="media/mem05-add-row-oma-uri.png" alt-text="The OMA URI configuration in the Microsoft Intune admin center portal" lightbox="media/mem05-add-row-oma-uri.png":::
 
 1. Select **Save**. **Add Row** closes. In **Custom**, select **Next**. In step **3 Scope tags**, scope tags are optional. Do one of the following:
 
@@ -200,7 +200,7 @@ You can use Microsoft Intune OMA-URI to configure custom attack surface reductio
    - **Add all users**
    - **Add all devices**
 
-   :::image type="content" source="images/mem06-4-assignments.png" alt-text="The assignments in the Microsoft Intune admin center portal" lightbox="images/mem06-4-assignments.png":::
+   :::image type="content" source="media/mem06-4-assignments.png" alt-text="The assignments in the Microsoft Intune admin center portal" lightbox="media/mem06-4-assignments.png":::
 
 1. In **Excluded groups**, select any groups that you want to exclude from this rule, and then select **Next**.
 
@@ -211,11 +211,11 @@ You can use Microsoft Intune OMA-URI to configure custom attack surface reductio
    - In **Property**, select the property to which you want this rule to apply
    - In **Value**, enter the applicable value or value range
 
-   :::image type="content" source="images/mem07-5-applicability-rules.png" alt-text="The applicability rules in the Microsoft Intune admin center portal" lightbox="images/mem07-5-applicability-rules.png":::
+   :::image type="content" source="media/mem07-5-applicability-rules.png" alt-text="The applicability rules in the Microsoft Intune admin center portal" lightbox="media/mem07-5-applicability-rules.png":::
 
 10. Select **Next**. In step **6 Review + create**, review the settings and information you've selected and entered, and then select **Create**.
 
-    :::image type="content" source="images/mem08-6-review-create.png" alt-text="The Review and create option in the Microsoft Intune admin center portal" lightbox="images/mem08-6-review-create.png":::
+    :::image type="content" source="media/mem08-6-review-create.png" alt-text="The Review and create option in the Microsoft Intune admin center portal" lightbox="media/mem08-6-review-create.png":::
 
     Rules are active and live within minutes.
 
@@ -287,7 +287,7 @@ Example:
    - 2: Audit (Evaluate how the attack surface reduction rule would impact your organization if enabled)
    - 6: Warn  (Enable the attack surface reduction rule but allow the end-user to bypass the block)
 
-      :::image type="content" source="images/asr-rules-gp.png" alt-text="attack surface reduction rules in Group Policy" lightbox="images/asr-rules-gp.png":::
+      :::image type="content" source="media/asr-rules-gp.png" alt-text="attack surface reduction rules in Group Policy" lightbox="media/asr-rules-gp.png":::
 
 5. To exclude files and folders from attack surface reduction rules, select the **Exclude files and paths from Attack surface reduction rules** setting and set the option to **Enabled**. Select **Show** and enter each file or folder in the **Value name** column. Enter **0** in the **Value** column for each item.
 

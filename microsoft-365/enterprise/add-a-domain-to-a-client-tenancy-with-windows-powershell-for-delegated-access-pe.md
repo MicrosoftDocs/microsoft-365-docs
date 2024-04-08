@@ -20,6 +20,7 @@ ms.custom:
   - seo-marvel-apr2020
   - admindeeplinkMAC
   - has-azure-ad-ps-ref
+  - azure-ad-ref-level-one-done
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
 description: "Summary: Use PowerShell for Microsoft 365 to add an alternate domain name to an existing customer tenant."
 ---
@@ -66,6 +67,8 @@ This command creates the domain in Microsoft Entra ID but doesn't associate it w
 First, use a **Microsoft Entra DC admin**, **Cloud Application Admin**, or **Global admin** account to [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md).
 
 Assigning and removing licenses for a user requires the **Domain.ReadWrite.All** permission scope or one of the other permissions listed in the ['Assign license' Graph API reference page](/graph/api/user-assignlicense).
+
+[!INCLUDE [Azure AD PowerShell deprecation note](~/../microsoft-365/reusable-content/msgraph-powershell/includes/aad-powershell-deprecation-note.md)]
 
 ```powershell
 Connect-MgGraph -Scopes "Domain.ReadWrite.All"

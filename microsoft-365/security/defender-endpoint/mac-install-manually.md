@@ -51,12 +51,12 @@ Download the installation and onboarding packages from Microsoft Defender portal
 2. In Section 1 of the page, set operating system to **macOS** and Deployment method to **Local script**.
 3. In Section 2 of the page, select **Download installation package**. Save it as wdav.pkg to a local directory.
 4. In Section 2 of the page, select **Download onboarding package**. Save it as WindowsDefenderATPOnboardingPackage.zip to the same directory.
-   :::image type="content" source="images/onboarding-package-step4.png" alt-text="Screenshot that shows the options to download the installation and onboarding packages.":::
+   :::image type="content" source="media/onboarding-package-step4.png" alt-text="Screenshot that shows the options to download the installation and onboarding packages.":::
 
 5. From a command prompt, verify that you have the two files.
     - Type *cd Downloads* and press **Enter**.
     - Type *ls* and press **Enter**.
-     :::image type="content" source="images/Terminal-image-step5.png" alt-text="Screenshot that displays the two download files.":::
+     :::image type="content" source="media/Terminal-image-step5.png" alt-text="Screenshot that displays the two download files.":::
 6. Copy the *wdav.pkg* and *MicrosoftDefenderATPOnboardingMacOs.sh* to the device where you want to deploy the Microsoft Defender for Endpoint on macOS.
 
 ## Application installation (macOS 11 and newer versions)
@@ -75,54 +75,54 @@ To complete this process, you must have admin privileges on the device.
      sudo installer -store -pkg /Users/admin/Downloads/wdav.pkg -target /
      ```
 
-   :::image type="content" source="images/monterey-install-1.png" alt-text="Screenshot that shows the installation process for the application":::
+   :::image type="content" source="media/monterey-install-1.png" alt-text="Screenshot that shows the installation process for the application":::
 
 2. Select **Continue**.
 
 3. Read through the **Software License Agreement** and select **Continue** to agree with the terms.
 
-    :::image type="content" source="images/software-license-agreement.png" alt-text="Screenshot that shows the Software License Agreement.":::
+    :::image type="content" source="media/software-license-agreement.png" alt-text="Screenshot that shows the Software License Agreement.":::
 
 4. Read through the *End-User License Agreement (EULA)* and select **Agree**.
 
-    :::image type="content" source="images/agree-license.png" alt-text="Screenshot that shows the acceptance of the agreement.":::
+    :::image type="content" source="media/agree-license.png" alt-text="Screenshot that shows the acceptance of the agreement.":::
 
 5. From **Destination Select**, select the disk where you want to install the Microsoft Defender Software, for example, *Macintosh HD* and select **Continue**.
 
-    :::image type="content" source="images/destination-select.png" alt-text="Screenshot that shows the selection of destination for installation.":::
+    :::image type="content" source="media/destination-select.png" alt-text="Screenshot that shows the selection of destination for installation.":::
 
    > [!NOTE]
    > The amount of disk space required for installation is around 777 MB.
 
 6. To change the installation destination, select **Change Install Location...**.
 
-    :::image type="content" source="images/installation-type.png" alt-text="Screenshot that shows the final installation step.":::
+    :::image type="content" source="media/installation-type.png" alt-text="Screenshot that shows the final installation step.":::
 
 7. Click **Install**.
 
 8. Enter the password, when prompted.
 
-    :::image type="content" source="images/password-2g.png" alt-text="Screenshot that shows the password dialog box.":::
+    :::image type="content" source="media/password-2g.png" alt-text="Screenshot that shows the password dialog box.":::
 
 9. Click **Install Software**.
 
 10. At the end of the installation process, for macOS Big Sur (11.0) or latest version, you're prompted to approve the system extensions used by the product. Select **Open Security Preferences**.
 
-    :::image type="content" source="images/monterey-install-2.png" alt-text="Screenshot that shows the system extension approval":::
+    :::image type="content" source="media/monterey-install-2.png" alt-text="Screenshot that shows the system extension approval":::
 
 11. To enable system extention, select **Details**.
 
-    :::image type="content" source="images/system-extention-image.png" alt-text="Screenshot that shows the system extention.":::
+    :::image type="content" source="media/system-extention-image.png" alt-text="Screenshot that shows the system extention.":::
 
 12. From the **Security & Privacy** window, select the checkboxes next to **Microsoft Defender** and select **OK**.
 
-    :::image type="content" source="images/security-privacy-window-updated.png" alt-text="Screenshot that shows the security and privacy window.":::
+    :::image type="content" source="media/security-privacy-window-updated.png" alt-text="Screenshot that shows the security and privacy window.":::
 
 13. Repeat steps 11 and 12 for all system extensions distributed with Microsoft Defender for Endpoint on Mac.
 
 14. As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint on Mac inspects socket traffic and reports this information to the Microsoft Defender portal. When prompted to grant Microsoft Defender for Endpoint permissions to filter network traffic, select **Allow**.
 
-    :::image type="content" source="images/monterey-install-4.png" alt-text="Screenshot that shows the system extension security preferences2":::
+    :::image type="content" source="media/monterey-install-4.png" alt-text="Screenshot that shows the system extension security preferences2":::
 
     To troubleshoot System Extension issues, refer [Troubleshoot System Extension](mac-support-sys-ext.md).
 
@@ -139,11 +139,11 @@ To grant full disk access:
 
 1. Grant **Full Disk Access** permission to **Microsoft Defender** and **Microsoft Defenders Endpoint Security Extension**.
 
-   :::image type="content" source="images/full-disk-access-security-privacy.png" alt-text="The screenshot shows the full disk access's security and privacy.":::
+   :::image type="content" source="media/full-disk-access-security-privacy.png" alt-text="The screenshot shows the full disk access's security and privacy.":::
 
 1. Select **General** \> **Restart** for the new system extensions to take effect.
 
-   :::image type="content" source="images/restart-fulldisk.png" alt-text="Screenshot that allows you to restart the system for new system extensions to be enabled.":::
+   :::image type="content" source="media/restart-fulldisk.png" alt-text="Screenshot that allows you to restart the system for new system extensions to be enabled.":::
 
 1. Enable *Potentially Unwanted Application* (PUA) in block mode.
 
@@ -168,11 +168,11 @@ To grant full disk access:
 Starting with macOS 13, a user must explicitly allow an application to run in background.
 macOS will pop a prompt up, telling the user that Microsoft Defender can run in background.
 
-:::image type="content" source="images/background-items-notification.png" alt-text="Screenshot that shows background items notification":::
+:::image type="content" source="media/background-items-notification.png" alt-text="Screenshot that shows background items notification":::
 
 You can view applications permitted to run in background in System Settings => Login Items => Allow in the Background at any time:
 
-:::image type="content" source="images/background-items.png" alt-text="Screenshot that shows background items":::
+:::image type="content" source="media/background-items.png" alt-text="Screenshot that shows background items":::
 
 Make sure all Microsoft Defender and Microsoft Corporation items are enabled. If they are disabled then macOS will not start Microsoft Defender after a machine restart.
 
@@ -205,7 +205,7 @@ Once you have installed the MDE on macOS client, you must now onboard the packag
    After installation, you'll see the Microsoft Defender icon in the macOS status bar in the top-right corner.
 
    > [!div class="mx-imgBorder"]
-   > :::image type="content" source="images/mdatp-icon-bar.png" alt-text="Screenshot that shows the Microsoft Defender icon in status bar":::
+   > :::image type="content" source="media/mdatp-icon-bar.png" alt-text="Screenshot that shows the Microsoft Defender icon in status bar":::
 
    You can [troubleshoot license issues for Microsoft Defender for Endpoint on macOS](mac-support-license.md).
 
