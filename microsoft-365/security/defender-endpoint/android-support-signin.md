@@ -38,7 +38,7 @@ This article provides solutions to help address the sign-on issues.
 
 **Sign in failed:** *Unexpected error, try later*
 
-:::image type="content" source="images/f9c3bad127d636c1f150d79814f35d4c.png" alt-text="A screenshot showing a sign-in failed error Unexpected error in the sign-in page of the Microsoft Defender 365 portal." lightbox="images/f9c3bad127d636c1f150d79814f35d4c.png":::
+:::image type="content" source="media/f9c3bad127d636c1f150d79814f35d4c.png" alt-text="A screenshot showing a sign-in failed error Unexpected error in the sign-in page of the Microsoft Defender 365 portal." lightbox="media/f9c3bad127d636c1f150d79814f35d4c.png":::
 
 **Message:**
 
@@ -147,23 +147,23 @@ If a user faces an issue, which isn't already addressed in the above sections or
 
 1. Open the **MDE application** on your device and select on the **profile icon** in the top-left corner.
 
-    :::image type="content" source="images/select-profile-icon-1.jpg" alt-text="The profile icon in the Microsoft Defender for Endpoint portal" lightbox="images/select-profile-icon-1.jpg":::
+    :::image type="content" source="media/select-profile-icon-1.jpg" alt-text="The profile icon in the Microsoft Defender for Endpoint portal" lightbox="media/select-profile-icon-1.jpg":::
 
 2. Select "Help & feedback".
 
-    :::image type="content" source="images/selecthelpandfeedback2.png" alt-text="The Help & feedback option that can be selected in the Microsoft Defender for Endpoint portal" lightbox="images/selecthelpandfeedback2.png":::
+    :::image type="content" source="media/selecthelpandfeedback2.png" alt-text="The Help & feedback option that can be selected in the Microsoft Defender for Endpoint portal" lightbox="media/selecthelpandfeedback2.png":::
 
 3. Select "Send feedback to Microsoft".
 
-    :::image type="content" alt-text="Select send feedback to Microsoft" source="images/send-feedback-to-microsoft-3.jpg":::
+    :::image type="content" alt-text="Select send feedback to Microsoft" source="media/send-feedback-to-microsoft-3.jpg":::
 
 4. Choose from the given options. To report an issue, select "I want to report an issue".
 
-    :::image type="content" source="images/report-issue-4.jpg" alt-text="The I want to report an issue option" lightbox="images/report-issue-4.jpg":::
+    :::image type="content" source="media/report-issue-4.jpg" alt-text="The I want to report an issue option" lightbox="media/report-issue-4.jpg":::
 
 5. Provide details of the issue that you're facing and check "Send diagnostic data". We recommend checking "Include your email address" so that the team can reach back to you with a solution or a follow-up.
 
-    :::image type="content" source="images/finalsubmit5.png" alt-text="The pane on which you can add details and attach diagnostic data" lightbox="images/finalsubmit5.png":::
+    :::image type="content" source="media/finalsubmit5.png" alt-text="The pane on which you can add details and attach diagnostic data" lightbox="media/finalsubmit5.png":::
 
 6. Select on "Submit" to successfully send the feedback.
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

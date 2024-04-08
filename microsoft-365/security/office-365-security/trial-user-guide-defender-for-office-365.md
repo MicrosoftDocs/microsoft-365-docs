@@ -11,16 +11,15 @@ ms.collection:
 - m365-security
 - tier1
 ms.localizationpriority: high
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 search.appverid:
 - MOE150
 - MET150
 description: "Microsoft Defender for Office 365 solutions trial user guide."
-ms.subservice: mdo
 ms.custom: trial-user guide
 ms.date: 6/23/2023
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 1 and Plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
@@ -59,7 +58,7 @@ The key factors that determine which modes are available to you are:
 - Whether or not you currently have Defender for Office 365 (Plan 1 or Plan 2) as described in [Evaluation vs. trial for Defender for Office 365](try-microsoft-defender-for-office-365.md#evaluation-vs-trial-for-defender-for-office-365).
 - How email is delivered to your Microsoft 365 organization as described in the following scenarios:
 
-  - Mail from the internet flows directly Microsoft 365, but your current subscription has only [Exchange Online Protection (EOP)](eop-about.md) or [Defender for Office 365 Plan 1](overview.md#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet).
+  - Mail from the internet flows directly Microsoft 365, but your current subscription has only [Exchange Online Protection (EOP)](eop-about.md) or [Defender for Office 365 Plan 1](mdo-about.md#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet).
 
     :::image type="content" source="../../media/mdo-trial-mail-flow.png" alt-text="Mail flows from the internet into Microsoft 365, with protection from EOP and/or Defender for Office 365 Plan 1." lightbox="../../media/mdo-trial-mail-flow.png":::
 
@@ -252,6 +251,6 @@ Equip your users with the right knowledge to identify threats and report suspici
 
 - **Interactive guide**: Unfamiliar with Defender for Office 365? Review the [interactive guide](https://mslearn.cloudguides.com/guides/Safeguard%20your%20organization%20with%20Microsoft%20Defender%20for%20Office%20365) to understand how to get started.
 - **Fast Track Get Started Guide***: [Microsoft Defender for Office 365](https://go.microsoft.com/fwlink/p/?linkid=2197415)
-- **Microsoft Defender for Office 365 documentation**: Get detailed information on how Defender for Office 365 works and how to best implement it for your organization. Visit the [Microsoft Defender for Office 365 documentation](defender-for-office-365.md).
+- **Microsoft Defender for Office 365 documentation**: Get detailed information on how Defender for Office 365 works and how to best implement it for your organization. Visit the [Microsoft Defender for Office 365 documentation](mdo-about.md).
 - **What's included**: For a full list of Office 365 email security features listed by product tier, view the [Feature Matrix](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability).
 - **Why Defender for Office 365**: The [Defender for Office 365 Datasheet](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4FCiy) shows the top 10 reasons customers choose Microsoft.

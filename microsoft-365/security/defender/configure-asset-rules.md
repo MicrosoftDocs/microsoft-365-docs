@@ -1,11 +1,7 @@
 ---
 title: Asset rule management - Dynamic rules 
 description: You can use Microsoft Defender for Endpoint to configure dynamic tagging 
-keywords: asset rule management, dynamic tagging, Microsoft Defender for Endpoint, devices, Microsoft Defender XDR, Defender
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium

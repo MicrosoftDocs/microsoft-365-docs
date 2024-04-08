@@ -32,6 +32,10 @@ ms.date: 02/27/2024
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
+   > [!IMPORTANT]
+   > As Microsoft continues to evaluate the value of the features and services to provide, Microsoft has made the decision to retire the Defender Evaluation Lab.
+   > This change will rollout in mid-January 2024 and expect to complete by late January 2024.
+
 Conducting a comprehensive security product evaluation can be a complex process requiring cumbersome environment and device configuration before an end-to-end attack simulation can actually be done. Adding to the complexity is the challenge of tracking where the simulation activities, alerts, and results are reflected during the evaluation.
 
 The Microsoft Defender for Endpoint evaluation lab is designed to eliminate the complexities of device and environment configuration so that you can  focus on evaluating the capabilities of the platform, running simulations, and seeing the prevention, detection, and remediation features in action.
@@ -85,18 +89,18 @@ Already have a lab? Make sure to enable the new threat simulators and have activ
 
 2. Depending on your evaluation needs, you can choose to setup an environment with fewer devices for a longer period or more devices for a shorter period. Select your preferred lab configuration then select **Next**.
 
-    :::image type="content" source="images/lab-creation-page.png" alt-text="The lab configuration options" lightbox="images/lab-creation-page.png":::
+    :::image type="content" source="media/lab-creation-page.png" alt-text="The lab configuration options" lightbox="media/lab-creation-page.png":::
 
 3. (Optional) You can choose to install threat simulators in the lab.
 
-    :::image type="content" source="images/install-agent.png" alt-text="The install simulators agent page" lightbox="images/install-agent.png":::
+    :::image type="content" source="media/install-agent.png" alt-text="The install simulators agent page" lightbox="media/install-agent.png":::
 
    > [!IMPORTANT]
    > You'll first need to accept and provide consent to the terms and information sharing statements.
 
 4. Select the threat simulation agent you'd like to use and enter your details. You can also choose to install threat simulators at a later time. If you choose to install threat simulation agents during the lab setup, you'll enjoy the benefit of having them conveniently installed on the devices you add.
 
-   :::image type="content" source="images/lab-setup-summary.png" alt-text="The summary page" lightbox="images/lab-setup-summary.png":::
+   :::image type="content" source="media/lab-setup-summary.png" alt-text="The summary page" lightbox="media/lab-setup-summary.png":::
 
 5. Review the summary and select **Setup lab**.
 
@@ -151,7 +155,7 @@ Automated investigation settings will be dependent on tenant settings. It will b
 
 5. See the status of test devices, the risk and exposure levels, and the status of simulator installations by selecting the **Devices** tab.
 
-   :::image type="content" source="images/machines-tab.png" alt-text="The devices tab" lightbox="images/machines-tab.png":::
+   :::image type="content" source="media/machines-tab.png" alt-text="The devices tab" lightbox="media/machines-tab.png":::
 
    > [!TIP]
    > In the **Simulator status** column, you can hover over the information icon to know the installation status of an agent.
@@ -178,7 +182,7 @@ When all existing devices are used and deleted, you can request for more devices
 
 1. From the evaluation lab dashboard, select **Request for more devices**.
 
-   :::image type="content" source="images/request-more-devices.png" alt-text="The request for more devices option" lightbox="images/request-more-devices.png":::
+   :::image type="content" source="media/request-more-devices.png" alt-text="The request for more devices option" lightbox="media/request-more-devices.png":::
 
 2. Choose your configuration.
 3. Submit the request.
@@ -212,16 +216,16 @@ If you are looking for a pre-made simulation, you can use our ["Do It Yourself" 
 
 1. Connect to your device and run an attack simulation by selecting **Connect**.
 
-    :::image type="content" source="images/test-machine-table.png" alt-text="The Connect button for the test devices" lightbox="images/test-machine-table.png":::
+    :::image type="content" source="media/test-machine-table.png" alt-text="The Connect button for the test devices" lightbox="media/test-machine-table.png":::
 
-   :::image type="content" source="images/remote-connection.png" alt-text="The remote desktop connection screen" lightbox="images/remote-connection.png":::
+   :::image type="content" source="media/remote-connection.png" alt-text="The remote desktop connection screen" lightbox="media/remote-connection.png":::
 
     For **Linux devices**: you'll need to use a local SSH client and the provided command.
 
     > [!NOTE]
     > If you don't have a copy of the password saved during the initial setup, you can reset the password by selecting **Reset password** from the menu:
     >
-    > :::image type="content" source="images/reset-password-test-machine.png" alt-text="The Reset password option" lightbox="images/reset-password-test-machine.png":::
+    > :::image type="content" source="media/reset-password-test-machine.png" alt-text="The Reset password option" lightbox="media/reset-password-test-machine.png":::
     >
     > The device will change it's state to "Executing password reset", then you'll be presented with your new password in a few minutes.
 
@@ -248,7 +252,7 @@ Running threat simulations using third-party platforms is a good way to evaluate
 
 2. Select a threat simulator.
 
-   :::image type="content" source="images/select-simulator.png" alt-text="The threat simulator selection" lightbox="images/select-simulator.png":::
+   :::image type="content" source="media/select-simulator.png" alt-text="The threat simulator selection" lightbox="media/select-simulator.png":::
 
 3. Choose a simulation or look through the simulation gallery to browse through the available simulations.
 
@@ -262,7 +266,7 @@ Running threat simulations using third-party platforms is a good way to evaluate
 
 6. View the progress of a simulation by selecting the **Simulations** tab. View the simulation state, active alerts, and other details.
 
-   :::image type="content" source="images/simulations-tab.png" alt-text="Simulations tab" lightbox="images/simulations-tab.png":::
+   :::image type="content" source="media/simulations-tab.png" alt-text="Simulations tab" lightbox="media/simulations-tab.png":::
 
 After running your simulations, we encourage you to walk through the lab progress bar and explore **Microsoft Defender for Endpoint triggered an automated investigation and remediation**. Check out the evidence collected and analyzed by the feature.
 
@@ -278,15 +282,15 @@ A list of supported third-party threat simulation agents are listed, and specifi
 
 You can conveniently run any available simulation right from the catalog.
 
-:::image type="content" source="images/simulations-catalog.png" alt-text="Simulations catalog" lightbox="images/simulations-catalog.png":::
+:::image type="content" source="media/simulations-catalog.png" alt-text="Simulations catalog" lightbox="media/simulations-catalog.png":::
 
 Each simulation comes with an in-depth description of the attack scenario and references such as the MITRE attack techniques used and sample Advanced hunting queries you run.
 
 **Examples:**
 
-:::image type="content" source="images/simulation-details-aiq.png" alt-text="The simulation description details pane example for persistence methods" lightbox="images/simulation-details-aiq.png":::
+:::image type="content" source="media/simulation-details-aiq.png" alt-text="The simulation description details pane example for persistence methods" lightbox="media/simulation-details-aiq.png":::
 
-:::image type="content" source="images/simulation-details-sb.png" alt-text="The simulation description details for APT29" lightbox="images/simulation-details-sb.png":::
+:::image type="content" source="media/simulation-details-sb.png" alt-text="The simulation description details for APT29" lightbox="media/simulation-details-sb.png":::
 
 ## Evaluation report
 
@@ -309,5 +313,5 @@ Your feedback helps us get better in protecting your environment from advanced a
 
 Let us know what you think, by selecting **Provide feedback**.
 
-:::image type="content" source="images/send-us-feedback-eval-lab.png" alt-text="The feedback page" lightbox="images/send-us-feedback-eval-lab.png":::
+:::image type="content" source="media/send-us-feedback-eval-lab.png" alt-text="The feedback page" lightbox="media/send-us-feedback-eval-lab.png":::
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

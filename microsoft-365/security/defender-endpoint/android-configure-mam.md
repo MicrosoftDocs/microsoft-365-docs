@@ -54,7 +54,7 @@ End users also need to take steps to install Microsoft Defender for Endpoint on 
 
   d. Go to the **Microsoft Intune admin center** and Validate whether Microsoft Defender for Endpoint-Intune connector is enabled.
 
-     :::image type="content" source="images/validate-intune-connector.png" alt-text="The intune-connector status pane in the Microsoft Defender portal." lightbox="images/validate-intune-connector.png":::
+     :::image type="content" source="media/validate-intune-connector.png" alt-text="The intune-connector status pane in the Microsoft Defender portal." lightbox="media/validate-intune-connector.png":::
 
 - **Enable Microsoft Defender for Endpoint on Android Connector for App Protection Policy (APP)**.
 
@@ -94,7 +94,7 @@ End users also need to take steps to install Microsoft Defender for Endpoint on 
 
         *Example: Outlook as a managed app*
 
-        :::image type="content" source="images/managed-app.png" alt-text="The Public apps pane in the Microsoft Defender portal." lightbox="images/managed-app.png":::
+        :::image type="content" source="media/managed-app.png" alt-text="The Public apps pane in the Microsoft Defender portal." lightbox="media/managed-app.png":::
 
   3. Set sign-in security requirements for your protection policy.
 

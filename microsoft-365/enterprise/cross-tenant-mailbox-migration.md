@@ -42,9 +42,6 @@ This article describes the process for cross-tenant mailbox moves and provides g
 
 When a mailbox is migrated cross-tenant with this feature, only user-visible content in the mailbox (email, contacts, calendar, tasks, and notes) is migrated to the target (destination tenant). After a successful migration, the source mailbox is deleted. This deletion means that after migration, under no circumstances is the source mailbox available, discoverable, or accessible in the source tenant.
 
-> [!NOTE]
-> If you are interested in previewing our new feature **Domain Sharing for email** alongside your cross-tenant mailbox migrations, complete the form at [aka.ms/domainsharingpreview](https://aka.ms/domainsharingpreview). The **Domain sharing for email** feature enables users in separate Microsoft 365 tenants to send and receive email using addresses from the same custom domain. The feature is intended to solve scenarios where users in separate tenants need to represent a common corporate brand in their email addresses. The current preview supports sharing domains indefinitely and shared domains during cross-tenant mailbox migration coexistence.
-
 ## Licensing
 
 > [!IMPORTANT]
@@ -633,6 +630,13 @@ Yes. It's possible to have two instances of Microsoft Entra Connect synchronize 
 - Preprovisioning the user's accounts with the script provided in this article shouldn't be done. Instead, a selective OU sync of the users in scope for the migration can be performed to populate the target tenant. You'll receive a warning about the UPN not matching during Microsoft Entra Connect configuration.
 - Depending on your current state of hybrid Exchange, you need to verify that the on-premises directory objects have the required attributes (such as msExchMailboxGUID and proxyAddresses) populated correctly before attempting to sync to another tenant; else you'll run into issues with double mailboxes and migration failures.
 - You must take some extra steps to manage UPN transitioning, changing it on-premises once the migration has been completed for a user unless you're also moving the custom domain during a cut-over migration.
+
+### How should I handle mailboxes that are close to, or over quota.
+
+Mailboxes nearing their quota prior to migration may end up over quota either before or during the actual migration. If this happens, these mailboxes will fail migration and will need to be remediated and restarted. To mitigate this, it is recommend the source tenant admin identify mailboxes at or near quota prior to migration and take the necessary steps to either reduce the mailbox size, provision a primary archive or in some cases enable auto expanding archives for the user's mailboxes.
+
+> [!NOTE]
+> Once enabling an archive or auto expanding archive for a user, ensure the correct archiving policies are applied to the user and the process is run to move the mailbox data to it's new location and free up space.
 
 ### Do auto-expanded archive mailboxes move?
 

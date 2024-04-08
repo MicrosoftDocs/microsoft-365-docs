@@ -78,7 +78,7 @@ To implement a multitenant delegated access solution, take the following steps:
 
     To do so, in the customer AD tenant,  access Identity Governance: Catalogs, and add **New Catalog**. In our example, it's called, **MSSP Accesses**.
 
-    :::image type="content" source="images/goverance-catalog.png" alt-text="The new catalog page" lightbox="images/goverance-catalog.png":::
+    :::image type="content" source="media/goverance-catalog.png" alt-text="The new catalog page" lightbox="media/goverance-catalog.png":::
 
     Further more information, see [Create a catalog of resources](/azure/active-directory/governance/entitlement-management-catalog-create).
 
@@ -94,7 +94,7 @@ To implement a multitenant delegated access solution, take the following steps:
     - Access auto expires after 365 days
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/new-access-package.png" alt-text="The New access package page" lightbox="images/new-access-package.png":::
+    > :::image type="content" source="media/new-access-package.png" alt-text="The New access package page" lightbox="media/new-access-package.png":::
 
     For more information, see [Create a new access package](/azure/active-directory/governance/entitlement-management-access-package-create).
 

@@ -49,7 +49,7 @@ You'll need to take the following steps:
 
 2. Select macOS as the operating system and Mobile Device Management / Microsoft Intune as the deployment method.
 
-   :::image type="content" source="images/onboarding-macos.png" alt-text="The Settings page." lightbox="images/onboarding-macos.png":::
+   :::image type="content" source="media/onboarding-macos.png" alt-text="The Settings page." lightbox="media/onboarding-macos.png":::
 
 3. Select **Download onboarding package** (WindowsDefenderATPOnboardingPackage.zip).
 
@@ -61,11 +61,11 @@ You'll need to take the following steps:
 
 1. Locate the file `WindowsDefenderATPOnboarding.plist` from the previous section.
 
-   :::image type="content" source="images/plist-onboarding-file.png" alt-text="The  Windows Defender ATP Onboarding file." lightbox="images/plist-onboarding-file.png":::
+   :::image type="content" source="media/plist-onboarding-file.png" alt-text="The  Windows Defender ATP Onboarding file." lightbox="media/plist-onboarding-file.png":::
 
 2. Sign in to Jamf Pro, navigate to **Computers** > **Configuration Profiles**, and select **New**.
 
-   :::image type="content" source="images/jamf-pro-configure-profile.png" alt-text="The page on which you create a new Jamf Pro dashboard." lightbox="images/jamf-pro-configure-profile.png":::
+   :::image type="content" source="media/jamf-pro-configure-profile.png" alt-text="The page on which you create a new Jamf Pro dashboard." lightbox="media/jamf-pro-configure-profile.png":::
 
 3. Enter the following details in the **General** tab:
    
@@ -77,43 +77,43 @@ You'll need to take the following steps:
 
 4.  Navigate to the **Application & Custom Settings** page and select **Upload** > **Add**.
 
-    :::image type="content" source="images/jamfpro-mac-profile.png" alt-text="The configurate app and custom settings." lightbox="images/jamfpro-mac-profile.png":::
+    :::image type="content" source="media/jamfpro-mac-profile.png" alt-text="The configurate app and custom settings." lightbox="media/jamfpro-mac-profile.png":::
 
 5. Select **Upload File (PLIST file)** then in **Preference Domain** enter: `com.microsoft.wdav.atp`.
 
-   :::image type="content" source="images/jamfpro-plist-upload.png" alt-text="The jamfpro plist upload file." lightbox="images/jamfpro-plist-upload.png":::
+   :::image type="content" source="media/jamfpro-plist-upload.png" alt-text="The jamfpro plist upload file." lightbox="media/jamfpro-plist-upload.png":::
 
-   :::image type="content" source="images/jamfpro-plist-file.png" alt-text="The upload file property List file." lightbox="images/jamfpro-plist-file.png":::
+   :::image type="content" source="media/jamfpro-plist-file.png" alt-text="The upload file property List file." lightbox="media/jamfpro-plist-file.png":::
 
 6. Select **Open** and select the onboarding file.
 
-   :::image type="content" source="images/jamfpro-plist-file-onboard.png" alt-text="The onboarding file." lightbox="images/jamfpro-plist-file-onboard.png":::
+   :::image type="content" source="media/jamfpro-plist-file-onboard.png" alt-text="The onboarding file." lightbox="media/jamfpro-plist-file-onboard.png":::
 
 7. Select **Upload**.
 
-   :::image type="content" source="images/jamfpro-upload-plist.png" alt-text="The uploading plist file." lightbox="images/jamfpro-upload-plist.png":::
+   :::image type="content" source="media/jamfpro-upload-plist.png" alt-text="The uploading plist file." lightbox="media/jamfpro-upload-plist.png":::
 
 8. Select the **Scope** tab.
 
-   :::image type="content" source="images/jamfpro-scope-tab.png" alt-text="The Scope tab." lightbox="images/jamfpro-scope-tab.png":::
+   :::image type="content" source="media/jamfpro-scope-tab.png" alt-text="The Scope tab." lightbox="media/jamfpro-scope-tab.png":::
 
 9. Select the target computers.
 
-   :::image type="content" source="images/jamfpro-target-computer.png" alt-text="The target computers." lightbox="images/jamfpro-target-computer.png":::
+   :::image type="content" source="media/jamfpro-target-computer.png" alt-text="The target computers." lightbox="media/jamfpro-target-computer.png":::
 
-   :::image type="content" source="images/jamfpro-targets.png" alt-text="The targets." lightbox="images/jamfpro-targets.png":::
+   :::image type="content" source="media/jamfpro-targets.png" alt-text="The targets." lightbox="media/jamfpro-targets.png":::
 
 10. Select **Save**.
 
-    :::image type="content" source="images/jamfpro-deployment-target.png" alt-text="The deployment of target computers." lightbox="images/jamfpro-deployment-target.png":::
+    :::image type="content" source="media/jamfpro-deployment-target.png" alt-text="The deployment of target computers." lightbox="media/jamfpro-deployment-target.png":::
 
-    :::image type="content" source="images/jamfpro-target-selected.png" alt-text="The selection of target computers." lightbox="images/jamfpro-target-selected.png":::
+    :::image type="content" source="media/jamfpro-target-selected.png" alt-text="The selection of target computers." lightbox="media/jamfpro-target-selected.png":::
 
 11. Select **Done**.
 
-    :::image type="content" source="images/jamfpro-target-group.png" alt-text="The computers of a target group." lightbox="images/jamfpro-target-group.png":::
+    :::image type="content" source="media/jamfpro-target-group.png" alt-text="The computers of a target group." lightbox="media/jamfpro-target-group.png":::
 
-    :::image type="content" source="images/jamfpro-configuration-policies.png" alt-text="The list of configuration profiles." lightbox="images/jamfpro-configuration-policies.png":::
+    :::image type="content" source="media/jamfpro-configuration-policies.png" alt-text="The list of configuration profiles." lightbox="media/jamfpro-configuration-policies.png":::
 
 ## Step 3: Configure Microsoft Defender for Endpoint settings
 
@@ -347,7 +347,7 @@ All you need to do to have updates is to download an updated schema, edit existi
 
     :::image type="content" source="media/0adb21c13206861ba9b30a879ade93d3.png" alt-text="The configuration setting upload." lightbox="media/0adb21c13206861ba9b30a879ade93d3.png":::
 
-    :::image type="content" source="images/f624de59b3cc86e3e2d32ae5de093e02.png" alt-text="The prompt to upload the image related to the configuration settings." lightbox="images/f624de59b3cc86e3e2d32ae5de093e02.png":::
+    :::image type="content" source="media/f624de59b3cc86e3e2d32ae5de093e02.png" alt-text="The prompt to upload the image related to the configuration settings." lightbox="media/f624de59b3cc86e3e2d32ae5de093e02.png":::
 
     > [!NOTE]
     > If you happen to upload the Intune file, you'll get the following error:
@@ -558,7 +558,7 @@ These steps are applicable on macOS 11 (Big Sur) or later.
 
 8. Click the `+` sign next to **App Access** to add a new entry.
 
-   :::image type="content" source="images/tcc-add-entry.png" alt-text="The save operation relating to the configuration setting." lightbox="images/tcc-add-entry.png":::
+   :::image type="content" source="media/tcc-add-entry.png" alt-text="The save operation relating to the configuration setting." lightbox="media/tcc-add-entry.png":::
 
 9. Enter the following details:
 
@@ -568,7 +568,7 @@ These steps are applicable on macOS 11 (Big Sur) or later.
 
 10. Select **+ Add**.
 
-    :::image type="content" source="images/tcc-epsext-entry.png" alt-text="The configuration setting tcc epsext entry." lightbox="images/tcc-epsext-entry.png":::
+    :::image type="content" source="media/tcc-epsext-entry.png" alt-text="The configuration setting tcc epsext entry." lightbox="media/tcc-epsext-entry.png":::
 
     - Under App or service: Set to **SystemPolicyAllFiles**
 
@@ -576,7 +576,7 @@ These steps are applicable on macOS 11 (Big Sur) or later.
 
 11. Select **Save** (not the one at the bottom right).
 
-    :::image type="content" source="images/tcc-epsext-entry2.png" alt-text="The other instance of configuration setting tcc epsext." lightbox="images/tcc-epsext-entry2.png":::
+    :::image type="content" source="media/tcc-epsext-entry2.png" alt-text="The other instance of configuration setting tcc epsext." lightbox="media/tcc-epsext-entry2.png":::
 
 12. Select the **Scope** tab.
 
@@ -616,11 +616,11 @@ Alternatively, you can download [fulldisk.mobileconfig](https://github.com/micro
     - Distribution Method: Install Automatically
     - Level: Computer Level
 
-    :::image type="content" source="images/sysext-new-profile.png" alt-text="The configuration settings sysext new profile." lightbox="images/sysext-new-profile.png":::
+    :::image type="content" source="media/sysext-new-profile.png" alt-text="The configuration settings sysext new profile." lightbox="media/sysext-new-profile.png":::
 
 3. In **System Extensions** select **Configure**.
 
-   :::image type="content" source="images/sysext-configure.png" alt-text="The pane with the Configure option for the system extensions." lightbox="images/sysext-configure.png":::
+   :::image type="content" source="media/sysext-configure.png" alt-text="The pane with the Configure option for the system extensions." lightbox="media/sysext-configure.png":::
 
 4. In **System Extensions**, enter the following details:
 
@@ -631,7 +631,7 @@ Alternatively, you can download [fulldisk.mobileconfig](https://github.com/micro
      - **com.microsoft.wdav.epsext**
      - **com.microsoft.wdav.netext**
 
-    :::image type="content" source="images/sysext-configure2.png" alt-text="The MDATP MDAV system extensions pane." lightbox="images/sysext-configure2.png":::
+    :::image type="content" source="media/sysext-configure2.png" alt-text="The MDATP MDAV system extensions pane." lightbox="media/sysext-configure2.png":::
 
 5. Select the **Scope** tab.
 
@@ -647,11 +647,11 @@ Alternatively, you can download [fulldisk.mobileconfig](https://github.com/micro
 
 9. Select **Save**.
 
-   :::image type="content" source="images/sysext-scope.png" alt-text="The display of options regarding MDATP MDAV System Extensions." lightbox="images/sysext-scope.png":::
+   :::image type="content" source="media/sysext-scope.png" alt-text="The display of options regarding MDATP MDAV System Extensions." lightbox="media/sysext-scope.png":::
 
 10. Select **Done**.
 
-    :::image type="content" source="images/sysext-final.png" alt-text="The configuration settings sysext - final." lightbox="images/sysext-final.png":::
+    :::image type="content" source="media/sysext-final.png" alt-text="The configuration settings sysext - final." lightbox="media/sysext-final.png":::
 
 ## Step 8: Configure Network Extension
 
@@ -681,7 +681,7 @@ These steps are applicable on macOS 11 (Big Sur) or later.
 
         Note that **Identifier**, **Socket Filter** and **Socket Filter Designated Requirement** exact values as specified above.
 
-        :::image type="content" source="images/netext-create-profile.png" alt-text="The mdatpmdav configuration setting." lightbox="images/netext-create-profile.png":::
+        :::image type="content" source="media/netext-create-profile.png" alt-text="The mdatpmdav configuration setting." lightbox="media/netext-create-profile.png":::
 
 3. Select the **Scope** tab.
 
@@ -697,11 +697,11 @@ These steps are applicable on macOS 11 (Big Sur) or later.
 
 7. Select **Save**.
 
-   :::image type="content" source="images/netext-scope.png" alt-text="The Content Filter pane." lightbox="images/netext-scope.png":::
+   :::image type="content" source="media/netext-scope.png" alt-text="The Content Filter pane." lightbox="media/netext-scope.png":::
 
 8. Select **Done**.
 
-   :::image type="content" source="images/netext-final.png" alt-text="The configuration settings netext - final." lightbox="images/netext-final.png":::
+   :::image type="content" source="media/netext-final.png" alt-text="The configuration settings netext - final." lightbox="media/netext-final.png":::
 
 Alternatively, you can download [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig) and upload it to JAMF Configuration Profiles as described in [Deploying Custom Configuration Profiles using Jamf Pro|Method 2: Upload a Configuration Profile to Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
@@ -733,7 +733,7 @@ Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint 
 
 2. Rename it to `wdav_MDM_Contoso_200329.pkg`.
 
-   :::image type="content" source="images/fb2220fed3a530f4b3ef36f600da0c27.png" alt-text="The file explorer1 wdavmdm package." lightbox="images/fb2220fed3a530f4b3ef36f600da0c27.png":::
+   :::image type="content" source="media/fb2220fed3a530f4b3ef36f600da0c27.png" alt-text="The file explorer1 wdavmdm package." lightbox="media/fb2220fed3a530f4b3ef36f600da0c27.png":::
 
 3. Open the Jamf Pro dashboard.
 
@@ -778,7 +778,7 @@ Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint 
 
 9. Navigate to the **Policies** page.
 
-   :::image type="content" source="images/f878f8efa5ebc92d069f4b8f79f62c7f.png" alt-text="The configuration settings policies." lightbox="images/f878f8efa5ebc92d069f4b8f79f62c7f.png":::
+   :::image type="content" source="media/f878f8efa5ebc92d069f4b8f79f62c7f.png" alt-text="The configuration settings policies." lightbox="media/f878f8efa5ebc92d069f4b8f79f62c7f.png":::
 
 10. Select **+ New** to create a new policy.
 
@@ -821,7 +821,7 @@ Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint 
 
     Select **Profile Name** as a criterion, and use the name of a previously created configuration profile as Value:
 
-    :::image type="content" source="images/ffae2332be230870f865585c84733225.png" alt-text="Creating a smart group." lightbox="images/ffae2332be230870f865585c84733225.png":::
+    :::image type="content" source="media/ffae2332be230870f865585c84733225.png" alt-text="Creating a smart group." lightbox="media/ffae2332be230870f865585c84733225.png":::
 
     Click **Save**. Return back to the window where you configure a package policy.
 

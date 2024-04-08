@@ -17,11 +17,10 @@ ms.collection:
   - essentials-get-started
 ms.custom:
 description: Learn how to get started with the initial deployment and configuration of Microsoft Defender for Office 365.
-ms.subservice: mdo
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 ms.date: 01/31/2024
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 1 and Plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
@@ -40,7 +39,7 @@ The steps to configure EOP and Defender for Office 365 are described in the foll
 
 ## Requirements
 
-Email threat protection features are included in _all_ Microsoft 365 subscriptions with cloud mailboxes via EOP. Defender for Office 365 includes additional protection features. For detailed comparisons about the features in EOP, Defender for Office 365 for Plan 1, and Defender for Office 365 Plan 2, see [The Microsoft 365 security ladder from EOP to Defender for Office 365](mdo-security-comparison.md#the-microsoft-365-security-ladder-from-eop-to-defender-for-office-365).
+Email threat protection features are included in _all_ Microsoft 365 subscriptions with cloud mailboxes via EOP. Defender for Office 365 includes additional protection features. For detailed comparisons about the features in EOP, Defender for Office 365 for Plan 1, and Defender for Office 365 Plan 2, see [Microsoft Defender for Office 365 overview](mdo-about.md).
 
 ### Roles and permissions
 

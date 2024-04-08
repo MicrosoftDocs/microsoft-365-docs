@@ -20,12 +20,11 @@ ms.collection:
 ms.custom:
   - seo-marvel-apr2020
 description: Zero-hour auto purge (ZAP) moves delivered messages in Microsoft 365 mailboxes to the Junk Email folder or quarantine if those messages are retroactively found to be spam, phishing, or contain malware.
-ms.subservice: mdo
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 ms.date: 11/16/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 1 and Plan 2</a>
 ---
 
 # Zero-hour auto purge (ZAP) in Microsoft Defender for Office 365
@@ -194,7 +193,7 @@ ZAP takes action on a message based on the configuration of anti-spam policies a
 
 ### How is ZAP affected by the exceptions to protection features in EOP and Defender for Office 365?
 
-[Safe sender lists](create-safe-sender-lists-in-office-365.md), mail flow rules, and other organizational block and allow settings take precedence over ZAP. These messages are excluded from ZAP, since the service is doing what you configured it to do. This behavior is another reason to be careful about configuring messages to bypass filtering.
+ZAP actions might be overridden by [Safe sender lists](create-safe-sender-lists-in-office-365.md), mail flow rules, and other organizational block and allow settings. For malware and high-confidence phishing verdicts, ZAP always takes action to protect users. Carefully consider the implications of bypassing filtering, as it may affect the security posture of your organization.
 
 ### What are the licensing requirements for ZAP?
 

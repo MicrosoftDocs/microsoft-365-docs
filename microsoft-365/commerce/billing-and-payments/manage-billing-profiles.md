@@ -9,6 +9,7 @@ ms.reviewer: jkinma, ramagane
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-management
 ms.localizationpriority: medium
 ms.collection:
 - Tier1
@@ -20,6 +21,7 @@ ms.custom:
 - admindeeplinkMAC
 - AdminSurgePortfolio
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid: MET150
 description: "Learn about billing profiles and how they're used to pay invoices for Microsoft business accounts."
 ms.date: 02/16/2024 

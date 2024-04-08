@@ -1,14 +1,9 @@
 ---
 title: Link query results to an incident
 description: Link query results to an incident
-keywords: advanced hunting, incident, pivot, entity, go hunt, relevant events, threat hunting, cyber threat hunting, search, query, telemetry, Microsoft 365, Microsoft Defender XDR
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
 ms.subservice: adv-hunting
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: 
   - NOCSH
 ms.author: maccruz
@@ -21,7 +16,7 @@ ms.collection:
   - m365initiative-m365-defender
   - tier1
 ms.topic: conceptual
-ms.date: 06/25/2021
+ms.date: 02/25/2024
 ---
 
 # Link query results to an incident

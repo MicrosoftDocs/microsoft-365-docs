@@ -39,25 +39,25 @@ For more information on installing the listed prerequisites, see [related topics
 Copy the unified solution package, onboarding script and migration script to the same content source you deploy other apps with MECM.
 
 1. Download Onboarding Script and the unified solution from [Microsoft Defender XDR settings page](https://sip.security.microsoft.com/preferences2/onboarding).
-   :::image type="content" source="images/onboarding-script.png" alt-text="Screenshot of onboarding script and unified solution download" lightbox="images/onboarding-script.png":::
+   :::image type="content" source="media/onboarding-script.png" alt-text="Screenshot of onboarding script and unified solution download" lightbox="media/onboarding-script.png":::
    > [!Note]
    > You must select the Group Policy from the Deployment method dropdown to obtain the .cmd file.
 2. Download the migration script from the document: [Server migration scenarios from the previous, MMA-based Microsoft Defender for Endpoint solution](server-migration.md). This script can also be found on GitHub: [GitHub - microsoft/mdefordownlevelserver](https://github.com/microsoft/mdefordownlevelserver).
 3. Save all three files in a shared folder used by MECM as a Software Source.
 
-   :::image type="content" source="images/ua-migration.png" alt-text="Screenshot of saving the shared folder by MECM.":::
+   :::image type="content" source="media/ua-migration.png" alt-text="Screenshot of saving the shared folder by MECM.":::
 
 ## Create the package as an application
 
 1. In the MECM console, follow these steps: **Software Library>Applications>Create Application**.
 2. Select **Manually specify the application information**.
-   :::image type="content" source="images/manual-application-information.png" alt-text="Screenshot of manually specifying the application information selection." lightbox="images/manual-application-information.png":::
+   :::image type="content" source="media/manual-application-information.png" alt-text="Screenshot of manually specifying the application information selection." lightbox="media/manual-application-information.png":::
 3. Select **Next** on the Software Center screen of the wizard.
 4. On the Deployment Types, click **Add**.
 5. Select **Manually to specify the deployment type information** and select **Next**.
 6. Give a name to your script deployment and select **Next**.
 
-   :::image type="content" source="images/manual-deployment-information.png" alt-text="Screenshot specifying the script deployment information.":::
+   :::image type="content" source="media/manual-deployment-information.png" alt-text="Screenshot specifying the script deployment information.":::
 7. On this step, copy the UNC path that your content is located. Example: `\\ServerName\h$\SOFTWARE_SOURCE\path`.
 
    :::image type="content" source="media/deployment-type-wizard.png" alt-text="Screenshot that shows UNC path copy.":::
@@ -89,7 +89,7 @@ Copy the unified solution package, onboarding script and migration script to the
      > [!TIP]
      > The maximum allowed runtime can be lowered from (default) 120 minutes to 60 minutes.
 
-     :::image type="content" source="images/user-experience-in-deployment-type-wizard.png" alt-text="Screenshot that shows user experience in deployment-type wizard.":::
+     :::image type="content" source="media/user-experience-in-deployment-type-wizard.png" alt-text="Screenshot that shows user experience in deployment-type wizard.":::
 
 12. Add any additional requirements then select **Next**.
 13. Under the Dependencies section, select **Next**.
