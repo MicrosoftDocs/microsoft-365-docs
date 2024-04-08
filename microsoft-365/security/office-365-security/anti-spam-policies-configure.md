@@ -85,7 +85,7 @@ You can configure anti-spam policies in the Microsoft Defender portal or in Powe
 
    Multiple values in the same condition use OR logic (for example, _\<recipient1\>_ or _\<recipient2\>_).
 
-   Different conditions use AND logic (for example, _\<recipient1\>_ and _\<member of group 1\>_). The recipient must satisfy _all_ of the specified conditions, which is typically difficult or redundant. For more information, see [Recipient filters in anti-spam policies](anti-spam-protection-about.md#recipient-filters-in-anti-spam-policies).
+   Different conditions use AND logic (for example, _\<recipient1\>_ and _\<member of group1\>_). The recipient must satisfy _all_ of the specified conditions, which is typically difficult or redundant. For more information, see [Recipient filters in anti-spam policies](anti-spam-protection-about.md#recipient-filters-in-anti-spam-policies).
 
    - **Exclude these users, groups, and domains**: To add exceptions for the internal recipients that the policy applies to (recipient exceptions), select this option and configure the exceptions. The settings and behavior are exactly like the conditions.
 
