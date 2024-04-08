@@ -20,8 +20,7 @@ ms.custom:
   - intro-overview
   - curated-apr-2023
 description: Is Microsoft Defender for Office 365 worth it? Let's find out.
-ms.subservice: mdo
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 adobe-target: true
 ms.date: 4/1/2024
 appliesto:

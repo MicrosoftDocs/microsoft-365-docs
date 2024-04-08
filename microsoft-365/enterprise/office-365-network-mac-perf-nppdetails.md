@@ -1,9 +1,9 @@
 ---
 title: "Network provider details in the Microsoft 365 Admin Center (PREVIEW)"
-ms.author: teleary
-author: temanteleary
+ms.author: kvice
+author: kelleyvice-msft
 manager: scotv
-ms.date: 01/30/2024
+ms.date: 04/05/2024
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
