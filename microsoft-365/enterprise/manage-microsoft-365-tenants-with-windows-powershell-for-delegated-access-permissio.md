@@ -27,9 +27,9 @@ description: In this article, learn how to use PowerShell for Microsoft 365 to m
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
-Windows PowerShell allows Syndication and Cloud Solution Provider (CSP) partners to easily administer and report on customer tenancy settings that are not available in the Microsoft 365 admin center. Note that Administer on Behalf Of (AOBO) permissions are required for the partner administrator account to connect to its customer tenancies.
+Windows PowerShell allows Syndication and Cloud Solution Provider (CSP) partners to easily administer and report on customer tenancy settings that aren't available in the Microsoft 365 admin center. Administer on Behalf Of (AOBO) permissions are required for the partner administrator account to connect to its customer tenancies.
 
-Delegated Access Permission (DAP) partners are Syndication and Cloud Solution Providers (CSP) Partners. They are frequently network or telecom providers to other companies. They bundle Microsoft 365 subscriptions into their service offerings to their customers. When they sell a Microsoft 365 subscription, they are automatically granted Administer On Behalf Of (AOBO) permissions to the customer tenancies so they can administer and report on the customer tenancies.
+Delegated Access Permission (DAP) partners are Syndication and Cloud Solution Providers (CSP) Partners. They're frequently network or telecom providers to other companies. They bundle Microsoft 365 subscriptions into their service offerings to their customers. When they sell a Microsoft 365 subscription, they're automatically granted Administer On Behalf Of (AOBO) permissions to the customer tenancies so they can administer and report on the customer tenancies.
 ## What do you need to know before you begin?
 
 The procedures in this topic require you to connect to [Connect to Microsoft 365 with PowerShell](connect-to-microsoft-365-powershell.md).
@@ -49,7 +49,7 @@ To list all customer tenant Ids that you have access to, run this command.
 Get-MsolPartnerContract -All | Select-Object TenantId
 ```
 
-This will display a listing of all your customer tenants by **TenantId**.
+This displays a listing of all your customer tenants by **TenantId**.
 
 >[!Note]
 >PowerShell Core does not support the Microsoft Azure Active Directory module for Windows PowerShell module and cmdlets with **Msol** in their name. To continue using these cmdlets, you must run them from Windows PowerShell.
@@ -71,7 +71,7 @@ To get all domains for any one customer tenant, run this command. Replace  _\<cu
 Get-MsolDomain -TenantId <customer TenantId value>
 ```
 
-If you have registered additional domains, this will return all domains associated with the customer **TenantId**.
+If you have registered additional domains, this returns all domains associated with the customer **TenantId**.
 
 ### Get a mapping of all tenants and registered domains
 
@@ -83,7 +83,7 @@ $Tenants = Get-MsolPartnerContract -All; $Tenants | foreach {$Domains = $_.Tenan
 
 ### Get all users for a tenant
 
-This will display the **UserPrincipalName**, the **DisplayName**, and the **isLicensed** status for all users for a particular tenant. Replace _\<customer TenantId value>_ with the actual value.
+This displays the **UserPrincipalName**, the **DisplayName**, and the **isLicensed** status for all users for a particular tenant. Replace _\<customer TenantId value>_ with the actual value.
 
 ```powershell
 Get-MsolUser -TenantID <customer TenantId value>
@@ -111,7 +111,7 @@ where:
 
 - **UsageLocation**: The value for this is the two-letter ISO country/region code of the user. The country/region codes can be looked up at the[ISO Online Browsing Platform](https://go.microsoft.com/fwlink/p/?LinkId=532703). For example, the code for the United States is US, and the code for Brazil is BR.
 
-- **LicenseAssignment**: The value for this uses this format: `syndication-account:<PROVISIONING_ID>`. For example, if you are assigning customer tenant users O365_Business_Premium licenses, the **LicenseAssignment** value looks like this: **syndication-account:O365_Business_Premium**. You will find the PROVISIONING_IDs in the Syndication Partner Portal that you have access to as a Syndication or CSP partner.
+- **LicenseAssignment**: The value for this uses this format: `syndication-account:<PROVISIONING_ID>`. For example, if you're assigning customer tenant users O365_Business_Premium licenses, the **LicenseAssignment** value looks like this: **syndication-account:O365_Business_Premium**. You'll find the PROVISIONING_IDs in the Syndication Partner Portal that you have access to as a Syndication or CSP partner.
 
 #### Import the CSV file and create the users
 

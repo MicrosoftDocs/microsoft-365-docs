@@ -18,7 +18,7 @@ description: "Step 3 of the OneDrive Cross-tenant migration feature"
 ---
 # Step 3: Verifying trust
 
-This is Step 3 in a solution designed to complete a Cross-tenant OneDrive migration. To learn more, see [Cross-tenant OneDrive migration overview](cross-tenant-onedrive-migration.md).
+This step is Step 3 in a solution designed to complete a Cross-tenant OneDrive migration. To learn more, see [Cross-tenant OneDrive migration overview](cross-tenant-onedrive-migration.md).
 
 - Step 1: [Connect to the source and the target tenants](cross-tenant-onedrive-migration-step1.md)
 - Step 2: [Establish trust between the source and the target tenant](cross-tenant-onedrive-migration-step2.md) 
@@ -52,7 +52,7 @@ When verifying trust, possible values
 
 |Value|Description|
 |:-----|:-----|
-|NotEstablished|Trust hasn't been requested locally.|
+|NotEstablished|Trust wasn't requested locally.|
 |NotEstablishedByPartner|Partner hasn't requested the Trust.|
 |DormantByPartner|Partner’s requested trust is within the seven days waiting period after creation.|
 |CouldNotContactPartner|Couldn't contact the partner to determine status.|

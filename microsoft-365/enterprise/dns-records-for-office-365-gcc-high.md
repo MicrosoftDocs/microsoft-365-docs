@@ -1,5 +1,5 @@
 ---
-title: "DNS records for Office 365 GCC High"
+title: "Domain Name System (DNS) records for Office 365 Government Community Cloud (GCC) High"
 ms.author: dzazzo
 author: dzazzo-msft
 manager: dzazzo
@@ -28,9 +28,9 @@ hideEdit: true
 
 *This article applies to Office 365 GCC High and Microsoft 365 GCC High*
 
-As part of onboarding to Office 365 GCC High, you will need to add your SMTP and SIP domains to your Online Services tenant.  You’ll do this using the New-MsolDomain cmdlet in Azure AD PowerShell or use the [Azure Government Portal](https://portal.azure.us) to start the process of adding the domain and proving ownership.
+As part of onboarding to Office 365 GCC High, you need to add your Simple Mail Transfer Protocol (SMTP) and SIP domains to your Online Services tenant. You do this using the New-MsolDomain cmdlet in Azure AD PowerShell or use the [Azure Government Portal](https://portal.azure.us) to start the process of adding the domain and proving ownership.
 
-Once you have your domains added to your tenant and validated, use the following guidance to add the appropriate DNS records for the services below.  You may need to modify the below table to fit your organization’s needs with respect to the inbound MX record(s) and any existing Exchange Autodiscover record(s) you have in place.  We strongly recommend coordinating these DNS records with your messaging team to avoid any outages or mis-delivery of email.
+Once you have your domains added to your tenant and validated, use the following guidance to add the appropriate DNS records for the following services. You might need to modify the below table to fit your organization’s needs with respect to the inbound MX record(s) and any existing Exchange Autodiscover records you have in place. We strongly recommend coordinating these DNS records with your messaging team to avoid any outages or mis-delivery of email.
 
 ## Exchange Online
 
@@ -42,11 +42,11 @@ Once you have your domains added to your tenant and validated, use the following
 
 ### Exchange Autodiscover record
 
-If you have Exchange Server on-premises, we recommend leaving your existing record in place while you migrate to Exchange Online, and update that record once you have completed your migration. 
+If you have Exchange Server on-premises, we recommend leaving your existing record in place while you migrate to Exchange Online, and update that record once you complete your migration.
 
 ### Exchange Online MX Record
 
-The MX record value for your accepted domains follows a standard format as noted above: *tenant*.mail.protection.office365.us, replacing *tenant* with the first part of your default tenant name.
+The MX record value for your accepted domains follows a standard format as noted previously: *tenant*.mail.protection.office365.us, replacing *tenant* with the first part of your default tenant name.
 
 For example, if your tenant name is contoso.onmicrosoft.us, you’d use **contoso.mail.protection.office365.us** as the value for your MX record.
 
