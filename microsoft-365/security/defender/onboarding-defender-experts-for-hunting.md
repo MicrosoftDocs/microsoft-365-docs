@@ -1,7 +1,7 @@
 ---
 title: How to subscribe to Microsoft Defender Experts for Hunting
 ms.reviewer:
-description: If you're new to Microsoft Defender XDR and Defender Experts for Hunting, this is how you subscribe to Defender experts notifications
+description: If you're new to Microsoft Defender XDR and Defender Experts for Hunting, this is how you onboard, receive, and set up Defender experts notifications
 keywords: managed threat hunting service,onboarding to Defender Experts, sample DEN, defender experts notifications, Ask Defender Experts, MTE, Microsoft Threat Experts, EOD, endpoint attack notifications, Microsoft Defender Experts for hunting, managed response.
 search.product: Windows 10
 ms.service: defender-experts
@@ -19,7 +19,7 @@ ms.collection:
   - essentials-get-started
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 02/28/2024
+ms.date: 04/08/2024
 ---
 
 # Start using Microsoft Defender Experts for Hunting
@@ -69,7 +69,7 @@ You can receive Defender Experts Notifications from Defender Experts through the
 You can filter your incidents and alerts if you want to only see the Defender Experts Notifications amongst the many alerts. To do so:
 
 1. On the navigation menu, go to **Incidents & alerts** > **Incidents** > select the ![Filter icon](../../media/mte/defenderexperts/filter.png) icon.
-2. Scroll down to the **Tags** field > select the **Defender Experts** check box.
+2. Scroll down to the **Service/detection sources** field > select the **Microsoft Defender Experts** check boxes under Microsoft Defender for Endpoint and Microsoft Defender XDR.
 3. Select **Apply**.
 
 ### Set up Defender Experts email notifications
@@ -109,6 +109,14 @@ Select **Ask Defender Experts** directly inside the Microsoft 365 security porta
 - Gain clarity into suspicious devices, alerts, or incidents and take next steps if faced with an advanced attacker
 - Determine risks and available protections related to threat actors, campaigns, or emerging attacker techniques
 
+**Required permissions for submitting inquiries in the Ask Defender Experts panel**
+
+You need to select the following permissions before submitting inquires to our Defender experts:
+
+- Microsoft Defender for Endpoint RBAC- Manage security settings in Security Center.
+- Microsoft Defender XDR Unified RBAC - In your Microsoft Defender XDR navigation pane, go to **Authorization and settings** > **Security settings** > **Core security settings (manage)**, or
+**Authorization and settings** > **Security settings** > **Detection tuning (manage)**.
+
 The option to **Ask Defender Experts** is available in several places throughout the portal:
 
 - ***Device page actions menu***
@@ -126,9 +134,6 @@ The option to **Ask Defender Experts** is available in several places throughout
 - ***Incidents page actions menu***
 
 ![Screenshot of the Ask Defender Experts menu option in the Incidents page actions menu in the Microsoft Defender portal.](../../media/mte/defenderexperts/incidents-page-actions-menu.png)
-
-> [!NOTE]
-> If you'd like to track the status of your Experts on Demand cases through Microsoft Services Hub, reach out to your Customer Success Account Manager. Watch this [video](https://www.microsoft.com/videoplayer/embed/RE4pk9f) for a quick overview of the Microsoft Services Hub.
 
 ### Sample questions you can ask from Defender Experts
 
