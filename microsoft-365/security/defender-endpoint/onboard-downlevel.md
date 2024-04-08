@@ -260,7 +260,7 @@ You could also use an **immediate task** to run the deployMMA.cmd if you don't w
 
 This could be done in two phases. First create **the files and the folder in** GPO - Give the system time to ensure the GPO has been applied, and all the servers have the install files. Then, add the immediate task. This will achieve the same result without requiring a reboot.
 
-As the Script has an exit method and won't re-run if the MMA is installed, you could also use a daily scheduled task to achieve the same result. Similar to a Configuration Manager compliance policy it will check daily to ensure the MMA is present.
+As the Script has an exit method and wont re-run if the MMA is installed, you could also use a daily scheduled task to achieve the same result. Similar to a Configuration Manager compliance policy it will check daily to ensure the MMA is present.
 
 :::image type="content" source="media/schtask.png" alt-text="schedule task" lightbox="media/schtask.png":::
 

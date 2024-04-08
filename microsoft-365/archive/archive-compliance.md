@@ -31,7 +31,7 @@ Archived SharePoint sites, just like active SharePoint sites, maintain a baselin
 
 - **Microsoft EU data boundary** – All archived data complies with the EU data boundary promise.
 
-The effect of Microsoft 365 Archive on compliance offerings includes the following elements:
+The affect of Microsoft 365 Archive on compliance offerings includes the following elements:
 
 - **Data lifecycle management and records management** – Archived sites still honor the retention and deletion periods from any retention policies or retention labels. For more information, see [How retention works with Microsoft 365 Archive](/purview/retention-policies-sharepoint#how-retention-works-with-microsoft-365-archive).
 

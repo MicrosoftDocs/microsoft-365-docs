@@ -112,7 +112,7 @@ Apps may handle app configuration policy settings differently with respect to us
 With Microsoft Intune, app configuration delivered through the MDM OS channel is referred to as a **Managed Devices** App Configuration Policy (ACP). App configuration delivered through the App Protection Policy channel is referred to as a **Managed Apps** App Configuration Policy.
 
 > [!IMPORTANT]
-> App configuration within Intune is dependent on the management workflow (MDM, MAM, or MDM+MAM) that you and your organization uses. For more information, see [Determine your management deployment model](#determine-your-management-deployment-model).
+> App configuration within Intune is dependant on the management workflow (MDM, MAM, or MDM+MAM) that you and your organization uses. For more information, see [Determine your management deployment model](#determine-your-management-deployment-model).
 
 ## Understand the app configuration policy
 

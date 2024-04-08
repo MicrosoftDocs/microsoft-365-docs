@@ -68,7 +68,7 @@ The following network endpoints are contacted on first launch of an Office app. 
 |```https://officeclient.microsoft.com/```  <br/> |WXPON  <br/> |ST  <br/> |Office Configuration Service - Master list of service endpoints.  <br/> |
 |```https://nexusrules.officeapps.live.com/```  <br/> |WXPON  <br/> |ST  <br/> |Office Rules Telemetry download - Informs the client about what data and events to upload to the telemetry service.  <br/> |
 |```https://mobile.pipe.aria.microsoft.com/```  <br/> |N  <br/> |CS  <br/> |OneNote Telemetry Service  <br/> |
-|```https://nexus.officeapps.live.com/```  <br/> |WXPON  <br/> |ST  <br/> |Office Telemetry Upload Reporting - "Heartbeat" and error events that occur on the client are uploaded to the telemetry service.  <br/> |
+|```https://nexus.officeapps.live.com/```  <br/> |WXPON  <br/> |ST  <br/> |Office Telemetry Upload Reporting - "Heartbeart" and error events that occur on the client are uploaded to the telemetry service.  <br/> |
 |```https://templateservice.office.com/```  <br/> |WXP  <br/> |CS  <br/> |Office Template Service - Provides users with online document templates.  <br/> |
 |```https://omextemplates.content.office.net/```  <br/> |WXP  <br/> |CS  <br/> |Office Templates Downloads - Storage of PNG template images.  <br/> |
 |```https://store.office.com/```  <br/> |WXP  <br/> |CS  <br/> |Store configuration for Office apps.  <br/> |

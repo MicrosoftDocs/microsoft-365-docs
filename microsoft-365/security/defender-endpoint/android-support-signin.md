@@ -137,7 +137,7 @@ Users need to disable MDE VPN from the Settings page. The following steps can be
 Users should enable VPN when they're no longer using the banking app to ensure that their devices are protected. 
 
 >[!NOTE]
-> This a temporary workaround. We are working on other alternatives to provide users more control over the VPN settings from within the app. 
+> This a temporary workaround. We are working on other alternatives to provide users more control over the VPN settings from wihtin the app. 
 
 
 
