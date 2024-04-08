@@ -16,10 +16,9 @@ ms.collection:
   - tier2
 ms.custom:
 description: Admins can learn how to identify specific groups of users with user tags in Microsoft Defender for Office 365 Plan 2. Tag filtering is available across alerts, reports, and investigations in Microsoft Defender for Office 365 to quickly identify the tagged users.
-ms.subservice: mdo
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 1 and Plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
@@ -27,7 +26,7 @@ appliesto:
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-_User tags_ are identifiers for specific groups of users in [Microsoft Defender for Office 365](defender-for-office-365.md). There are two types of user tags:
+_User tags_ are identifiers for specific groups of users in [Microsoft Defender for Office 365](mdo-about.md). There are two types of user tags:
 
 - **System tags**: Currently, [Priority account](/microsoft-365/admin/setup/priority-accounts) is the only type of system tag.
 - **Custom tags**: You create these types of tags.
@@ -55,7 +54,7 @@ To see how user tags are part of the strategy to help protect high-impact user a
     - _Create, modify, and delete custom user tags_: Membership in the **Organization Management** or **Security Administrator** role groups.
     - _Apply and remove the Priority account tag from users_: Membership in the **Security Administrator** and **Exchange Admin** role groups.
     - _Apply and remove existing custom user tags from users_: Membership in the **Organization Management** or **Security Administrator** role groups.
-  - [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator** and **Security Administrator** roles gives users the required permissions *and* permissions for other features in Microsoft 365.
+  - [Microsoft Entra permissions](/entra/identity/role-based-access-control/manage-roles-portal): Membership in the **Global Administrator** and **Security Administrator** roles gives users the required permissions *and* permissions for other features in Microsoft 365.
 
   > [!NOTE]
   > User tag management is controlled by the **Tag Reader** and **Tag Manager** roles.
@@ -176,7 +175,7 @@ After you apply system tags or custom tags to users, you can use those tags as f
 - [Alerts](../defender/investigate-alerts.md)
 - [Incidents](mdo-sec-ops-manage-incidents-and-alerts.md)
 - [Custom alert policies](/purview/alert-policies#view-alerts)
-- [Threat Explorer](threat-explorer-about.md)
+- [Threat Explorer](threat-explorer-real-time-detections-about.md)
 - [Campaign Views](campaigns.md)
 - [Email entity page](mdo-email-entity-page.md)
 - [Email security reports](reports-email-security.md)

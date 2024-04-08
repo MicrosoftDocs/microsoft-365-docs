@@ -78,7 +78,7 @@ To implement a multitenant delegated access solution, take the following steps:
 
     To do so, in the customer AD tenant,  access Identity Governance: Catalogs, and add **New Catalog**. In our example, it's called, **MSSP Accesses**.
 
-    :::image type="content" source="images/goverance-catalog.png" alt-text="The new catalog page" lightbox="images/goverance-catalog.png":::
+    :::image type="content" source="media/goverance-catalog.png" alt-text="The new catalog page" lightbox="media/goverance-catalog.png":::
 
     Further more information, see [Create a catalog of resources](/azure/active-directory/governance/entitlement-management-catalog-create).
 
@@ -94,7 +94,7 @@ To implement a multitenant delegated access solution, take the following steps:
     - Access auto expires after 365 days
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/new-access-package.png" alt-text="The New access package page" lightbox="images/new-access-package.png":::
+    > :::image type="content" source="media/new-access-package.png" alt-text="The New access package page" lightbox="media/new-access-package.png":::
 
     For more information, see [Create a new access package](/azure/active-directory/governance/entitlement-management-access-package-create).
 
@@ -103,7 +103,7 @@ To implement a multitenant delegated access solution, take the following steps:
     The My Access portal link is used by MSSP SOC analysts to request access via the access packages created. The link is durable, meaning the same link may be used over time for new analysts. The analyst request goes into a queue for approval by the **MSSP Analyst Approvers**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/access-properties.png" alt-text="The Properties page" lightbox="images/access-properties.png":::
+    > :::image type="content" source="media/access-properties.png" alt-text="The Properties page" lightbox="media/access-properties.png":::
 
     The link is located on the overview page of each access package.
 

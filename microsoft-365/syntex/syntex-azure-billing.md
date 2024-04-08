@@ -3,7 +3,7 @@ title: Configure Microsoft Syntex for pay-as-you-go billing
 ms.author: chucked
 author: chuckedmonson
 ms.reviewer: kkamath
-ms.date: 05/15/2023
+ms.date: 03/12/2024
 manager: jtremper
 audience: admin
 ms.topic: conceptual

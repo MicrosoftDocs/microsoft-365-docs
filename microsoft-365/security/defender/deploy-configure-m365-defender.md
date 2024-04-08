@@ -1,12 +1,7 @@
 ---
 title: Setup guides for Microsoft Defender XDR 
 description: Learn how to deploy and configure Microsoft Defender XDR by using online setup guides 
-keywords: deploy, licenses, supported services, provisioning, configuration Microsoft Defender XDR, M365, license eligibility, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Cloud Apps
-search.product: eADQiWindows 10XVcnh
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: 
   - NOCSH
 ms.author: dansimp

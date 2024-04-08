@@ -1,13 +1,8 @@
 ---
 title: Microsoft Defender XDR for US Government customers
 description: Learn about the Microsoft Defender XDR for US Government customers requirements and capabilities available
-keywords: government, gcc, high, requirements, capabilities, defender, Microsoft Defender XDR, xdr, dod
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
@@ -110,7 +105,7 @@ These are the known gaps:
 
 |Feature name|GCC|GCC High|DoD|
 |---|:---:|:---:|:---:|
-|Microsoft Threat Experts|![No](../defender-endpoint/images/svg/check-no.svg) On engineering backlog|![No](../defender-endpoint/images/svg/check-no.svg) On engineering backlog|![No](../defender-endpoint/images/svg/check-no.svg) On engineering backlog|
+|Microsoft Threat Experts|![No](../defender-endpoint/media/svg/check-no.svg) On engineering backlog|![No](../defender-endpoint/media/svg/check-no.svg) On engineering backlog|![No](../defender-endpoint/media/svg/check-no.svg) On engineering backlog|
 
 For detailed list of Event Streaming API tables, see [Microsoft Defender XDR streaming event types supported in Event Streaming API](supported-event-types.md).
 

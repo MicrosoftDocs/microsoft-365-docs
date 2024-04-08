@@ -1,14 +1,9 @@
 ---
 title: Create and manage custom detection rules in Microsoft Defender XDR
-description: Learn how to create and manage custom detections rules based on advanced hunting queries
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft Defender XDR, microsoft 365, m365, search, query, telemetry, custom detections, rules, schema, kusto, RBAC, permissions, Microsoft Defender for Endpoint
-search.product: eADQiWindows 10XVcnh
+description: Learn how to create and manage custom detections rules based on advanced hunting queries.
 search.appverid: met150
 ms.service: defender-xdr
 ms.subservice: adv-hunting
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords:
   - NOCSH
 ms.author: maccruz
@@ -21,7 +16,7 @@ ms.collection:
   - m365initiative-m365-defender
   - tier2
 ms.topic: conceptual
-ms.date: 02/16/2021
+ms.date: 03/28/2024
 ---
 
 # Create and manage custom detections rules
@@ -116,7 +111,7 @@ DeviceEvents
 With the query in the query editor, select **Create detection rule** and specify the following alert details:
 
 - **Detection name**—name of the detection rule; should be unique
-- **Frequency**—interval for running the query and taking action. [See additional guidance below](#rule-frequency)
+- **Frequency**—interval for running the query and taking action. [See more guidance in the rule frequency section](#rule-frequency)
 - **Alert title**—title displayed with alerts triggered by the rule; should be unique
 - **Severity**—potential risk of the component or activity identified by the rule
 - **Category**—threat component or activity identified by the rule
@@ -132,7 +127,7 @@ When you save a new rule, it runs and checks for matches from the past 30 days o
 - **Every 12 hours**—runs every 12 hours, checking data from the past 48 hours
 - **Every 3 hours**—runs every 3 hours, checking data from the past 12 hours
 - **Every hour**—runs hourly, checking data from the past 4 hours
-- **Continuous (NRT)**—runs continuously, checking data from events as they are collected and processed in near real-time (NRT), see [Continuous (NRT) frequency](custom-detection-rules.md#continuous-nrt-frequency)
+- **Continuous (NRT)**—runs continuously, checking data from events as they're collected and processed in near real-time (NRT), see [Continuous (NRT) frequency](custom-detection-rules.md#continuous-nrt-frequency)
 
 > [!TIP]
 > Match the time filters in your query with the lookback duration. Results outside of the lookback duration are ignored.
@@ -152,7 +147,7 @@ Setting a custom detection to run in Continuous (NRT) frequency allows you to in
 You can run a query continuously as long as:
 - The query references one table only.
 - The query uses an operator from the list of supported KQL operators. **[Supported KQL features](/azure/azure-monitor/essentials/data-collection-transformations-structure#supported-kql-features)**
-- The query does not use joins, unions, or the `externaldata` operator.
+- The query doesn't use joins, unions, or the `externaldata` operator.
 
 ###### Tables that support Continuous (NRT) frequency
 
@@ -189,7 +184,7 @@ Near real-time detections are supported for the following tables:
 
 Identify the columns in your query results where you expect to find the main affected or impacted entity. For example, a query might return sender (`SenderFromAddress` or `SenderMailFromAddress`) and recipient (`RecipientEmailAddress`) addresses. Identifying which of these columns represent the main impacted entity helps the service aggregate relevant alerts, correlate incidents, and target response actions.
 
-You can select only one column for each entity type (mailbox, user, or device). Columns that are not returned by your query can't be selected.
+You can select only one column for each entity type (mailbox, user, or device). Columns that aren't returned by your query can't be selected.
 
 ### 4. Specify actions
 
@@ -209,7 +204,7 @@ These actions are applied to devices in the `DeviceId` column of the query resul
 
 #### Actions on files
 
-- When selected, the **Allow/Block** action can be applied to the file. Blocking files are only allowed if you have *Remediate* permissions for files and if the query results have identified a file ID, such as a SHA1. Once a file is blocked, other instances of the same file in all devices are also blocked. You can control which device group the blocking is applied to, but not specific devices.
+- When selected, the **Allow/Block** action can be applied to the file. Blocking files are only allowed if you have *Remediate* permissions for files and if the query results have identified a file ID, such as an SHA1. Once a file is blocked, other instances of the same file in all devices are also blocked. You can control which device group the blocking is applied to, but not specific devices.
 
 - When selected, the **Quarantine file** action can be applied to files in the `SHA1`, `InitiatingProcessSHA1`, `SHA256`, or `InitiatingProcessSHA256` column of the query results. This action deletes the file from its current location and places a copy in quarantine.
 
@@ -220,7 +215,7 @@ These actions are applied to devices in the `DeviceId` column of the query resul
 - Select **Disable user** to temporarily prevent a user from logging in.
 - Select **Force password reset** to prompt the user to change their password on the next sign in session.
 
-Both the Disable user and Force password reset options require the user SID, which are in the columns `AccountSid`, `InitiatingProcessAccountSid`, `RequestAccountSid`, and `OnPremSid`.
+Both the `Disable user` and `Force password reset` options require the user SID, which are in the columns `AccountSid`, `InitiatingProcessAccountSid`, `RequestAccountSid`, and `OnPremSid`.
 
 For more details on user actions, read [Remediation actions in Microsoft Defender for Identity](/defender-for-identity/remediation-actions).
 
@@ -243,7 +238,7 @@ When setting the scope, you can select:
 - All devices
 - Specific device groups
 
-Only data from devices in the scope will be queried. Also, actions will be taken only on those devices.
+Only data from devices in the scope will be queried. Also, actions are taken only on those devices.
 
 > [!NOTE]
 > Users are able to create or edit a custom detection rule only if they have the corresponding permissions for the devices included in the scope of the rule. For instance, admins can only create or edit rules that are scoped to all device groups if they have permissions for all device groups. 
@@ -261,7 +256,7 @@ After reviewing the rule, select **Create** to save it. The custom detection rul
 
 ## Manage existing custom detection rules
 
-You can view the list of existing custom detection rules, check their previous runs, and review the alerts they have triggered. You can also run a rule on demand and modify it.
+You can view the list of existing custom detection rules, check their previous runs, and review the alerts that were triggered. You can also run a rule on demand and modify it.
 
 > [!TIP]
 > Alerts raised by custom detections are available over alerts and incident APIs. For more information, see [Supported Microsoft Defender XDR APIs](api-supported.md).

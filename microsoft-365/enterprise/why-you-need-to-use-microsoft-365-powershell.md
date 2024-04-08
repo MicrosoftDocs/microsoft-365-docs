@@ -82,6 +82,8 @@ This view provides the information that you need in many cases. However, there a
 
 You must repeat this procedure for each user. If you have many users, this process can be tedious. With PowerShell for Microsoft 365, you can display this information for all of your users by using the following command:
 
+[!INCLUDE [Azure AD PowerShell deprecation note](~/../microsoft-365/reusable-content/msgraph-powershell/includes/aad-powershell-deprecation-note.md)]
+
 ```powershell
 Get-AzureADUser | Select DisplayName, UsageLocation
 ```

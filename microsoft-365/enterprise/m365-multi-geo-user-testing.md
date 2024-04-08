@@ -47,7 +47,9 @@ We recommend that you include setting the user's Preferred Data Location as a pa
 
 First, use a **Microsoft Entra DC admin**, **Cloud Application Admin**, or **Global admin** account to [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md).
 
-Assigning and removing licenses for a user requires the **User.ReadWrite.All** permission scope or one of the other permissions listed in the ['Assign license' Graph API reference page](/graph/api/user-assignlicense).
+[!INCLUDE [Azure AD PowerShell deprecation note](~/../microsoft-365/reusable-content/msgraph-powershell/includes/aad-powershell-deprecation-note.md)]
+
+[Connect and sign in](connect-to-microsoft-365-powershell.md) with a set of global administrator credentials for your _Tenant_.
 
 ```powershell
 Connect-Graph -Scopes User.ReadWrite.All
