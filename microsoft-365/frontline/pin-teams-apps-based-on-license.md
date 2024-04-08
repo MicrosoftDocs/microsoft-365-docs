@@ -35,7 +35,7 @@ With the tailored frontline app experience, your frontline workers get the most 
 
 Apps are pinned to the app bar, which is the bar at the bottom of the Teams mobile clients (iOS and Android) and on the side of the Teams desktop client. The following apps are pinned for users who have an [F license](https://www.microsoft.com/microsoft-365/enterprise/frontline#office-SKUChooser-0dbn8nt):
 
-- [Viva Connections](#viva-connections) [Learn what Viva Connections is](https://support.microsoft.com/office/your-intranet-is-now-in-microsoft-teams-8b4e7f76-f305-49a9-b6d2-09378476f95b)
+- [Viva Connections](#viva-connections)
 - [Activity](https://support.microsoft.com/office/explore-the-activity-feed-in-teams-91c635a1-644a-4c60-9c98-233db3e13a56)
 - [Chat](https://support.microsoft.com/office/get-started-with-chat-0b506ce2-eb6d-4fca-9668-e56980ba755e)
 - [Teams](https://support.microsoft.com/office/teams-and-channels-in-microsoft-teams-c6d0e61d-a61e-44a6-a972-04f2a8fa4155)
@@ -104,11 +104,14 @@ Viva Connections is part of the tailored apps experience. Frontline users who se
 
 This experience includes a default dashboard with relevant frontline cards such as Shifts, Planner, Approvals, and Top News that can be customized to fit the needs of your organization. If your organization already set up a Viva Connections home site, it takes precedence over the default experience.
 
+ [Learn more about Viva Connections](https://support.microsoft.com/office/access-and-use-the-viva-connections-app-in-microsoft-teams-8b4e7f76-f305-49a9-b6d2-09378476f95b). 
+
 ## Related articles
 
 - [Manage the Walkie Talkie app in Teams](/microsoftteams/walkie-talkie?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)
 - [Manage the Planner app in Teams](/microsoftteams/manage-planner-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)
 - [Manage the Shifts app in Teams](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)
 - [Manage the Approvals app in Teams](/microsoftteams/approval-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)
+- [Overview of Viva Connections](/viva/connections/viva-connections-overview)
 - [Manage app setup policies in Teams](/microsoftteams/teams-app-setup-policies)
 - [Manage app permission policies in Teams](/microsoftteams/teams-app-permission-policies)
