@@ -96,7 +96,7 @@ After receiving the Advanced Data Residency licenses and applying them to the cu
 
 #### Microsoft 365 Admin Center Data Location
 
-:::image type="content" source="media\data-residency\1-adr-microsoft-365-data-location-card.png" alt-text="<Screenshot of M365 Admin Center Data location View.>":::
+:::image type="content" source="media\data-residency\1-adr-microsoft-365-data-location-card.png" alt-text="<Screenshot of Microsoft 365 Admin Center Data location View.>":::
 
 > [!NOTE]
 > The data migration process described in the sections below will not initiate until the customer administrator completes this task.
