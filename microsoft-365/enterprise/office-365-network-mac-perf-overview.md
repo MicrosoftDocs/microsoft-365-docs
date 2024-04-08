@@ -3,7 +3,7 @@ title: "Network connectivity in the Microsoft 365 Admin Center"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 01/30/2024
+ms.date: 04/05/2024
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
@@ -41,7 +41,7 @@ To access the network connectivity page, you must be an administrator for the or
 
 ## Prerequisites for network connectivity assessments to appear
 
-To get started, turn on your location opt-in setting to automatically collect data from devices using Windows Location Services, go to your Locations list to add or upload location data, or run the Microsoft 365 network connectivity test from your office locations. These three options for office location information are detailed below. Whilst network connectivity can be evaluated across the organization, any network design improvements need to be done for specific office locations. Network connectivity information is provided for each office location once those locations can be determined. There are three options for getting network assessments from your office locations:
+To get started, turn on your location opt-in setting to automatically collect data from devices using Windows Location Services, go to your Locations list to add or upload location data, or run the Microsoft 365 network connectivity test from your office locations. These three options for office location information are detailed below. While network connectivity can be evaluated across the organization, any network design improvements need to be done for specific office locations. Network connectivity information is provided for each office location once those locations can be determined. There are three options for getting network assessments from your office locations:
 
 ### 1. Enable Windows Location Services
 
@@ -56,13 +56,13 @@ You don't need to add locations in the Admin Center with this method as they're 
 
 The machines should have Wi-Fi networking rather than an ethernet cable. Machines with an ethernet cable don't have accurate location information.
 
-Measurement samples and office locations should start to appear 24 hours after these prerequisites have been met. Office locations discovered from Windows Location Services are aggregated per City and are retained in your view for 90 days after samples are no longer received. If you choose to switch to office locations added by the Administrator with LAN subnet information you can disable Windows Location Services and hide all of the discovered locations. They'll be removed after the 90 day period.
+Measurement samples and office locations should start to appear 24 hours after these prerequisites have been met. Office locations discovered from Windows Location Services are aggregated per City and are retained in your view for 90 days after samples are no longer received. If you choose to switch to office locations added by the Administrator with LAN subnet information, you can disable Windows Location Services and hide all of the discovered locations. They'll be removed after the 90 day period.
 
 ### 2. Add locations and provide LAN subnet information
 
 For this option, neither Windows Location Services nor Wi-Fi is required. Your OneDrive for Windows version must be up-to-date and installed on at least one computer at the location and you must know your LAN subnet information for each of your offices. This option allows multiple office locations per city and you can name your office locations. You can also upload them from other sources.
 
-Make sure that you also add locations in the **locations page** or import those from a CSV file. The locations added must include your office LAN subnet information. In the dialog for adding or editing a location, you can specify a number of LAN subnets and a number of public egress IP subnets. The LAN subnets are required and one of them must match the LAN subnet attribute on a received network assessment for results to show up. We now support matching of all subnets under a given network when you add locations using LAN subnets. The main advantage with this is, you no longer need to define exact matches for LAN subnets when you add locations. For example, you added a location using /20 as the LAN subnet definition, in the network assessment we received a LAN subnet attribute containing /24 which is part of the supernet you defined using /20 and there is no other specific match for the /24 subnet, we will map this network assessment to the location you added using the /20 LAN subnet definition. 
+Make sure that you also add locations in the **locations page** or import those from a CSV file. The locations added must include your office LAN subnet information. In the dialog for adding or editing a location, you can specify a number of LAN subnets and a number of public egress IP subnets. The LAN subnets are required and one of them must match the LAN subnet attribute on a received network assessment for results to show up. We now support matching of all subnets under a given network when you add locations using LAN subnets. The main advantage with this is, you no longer need to define exact matches for LAN subnets when you add locations. For example, you added a location using /20 as the LAN subnet definition, in the network assessment we received a LAN subnet attribute containing /24 which is part of the supernet you defined using /20 and there's no other specific match for the /24 subnet, we'll map this network assessment to the location you added using the /20 LAN subnet definition.
 
 Usually, LAN subnets are private IP address ranges as defined in RFC1918 such that the use of public IP addresses as the LAN subnets is likely to be incorrect. The dialog shows suggestions of LAN subnets that have been seen in recent network assessment tests for your organization so that you can choose.
 
@@ -74,7 +74,7 @@ All test measurements from client machines include the LAN subnet information, w
 
 ### 3. Manually gather test reports with the Microsoft 365 network connectivity test tool
 
-For this option, you need to identify a person at each location. Ask them to browse to [Microsoft 365 network connectivity test](https://connectivity.office.com) on a Windows machine on which they have administrative permissions. On the web site, they need to sign in to their Office 365 account for the same organization that you want to see the results. Then they should click **Run test**. During the test there's a downloaded Connectivity test EXE. They need to open and execute that. Once the tests are completed, the test result is uploaded to the Admin Center.
+For this option, you need to identify a person at each location. Ask them to browse to [Microsoft 365 network connectivity test](https://connectivity.office.com) on a Windows machine on which they have administrative permissions. On the web site, they need to sign in to their Office 365 account for the same organization that you want to see the results. Then they should click **Run test**. During the test, there's a downloaded Connectivity test EXE. They need to open and execute that. Once the tests are completed, the test result is uploaded to the Admin Center.
 
 Test reports are linked to a location if it was added with LAN subnet information, otherwise they're shown at the discovered City location only.
 
@@ -100,7 +100,7 @@ Many enterprises have network perimeter configurations, which have grown over ti
 
 ## How we can solve these challenges
 
-Enterprises can improve general user experience and secure their environment by following [Office 365 connectivity principles](./microsoft-365-network-connectivity-principles.md) and by using the Microsoft 365 Admin Center network connectivity feature. In most cases, following these general principles will have a significant positive impact on end-user latency, service reliability and overall performance of Microsoft 365.
+Enterprises can improve general user experience and secure their environment by following [Office 365 connectivity principles](./microsoft-365-network-connectivity-principles.md) and by using the Microsoft 365 Admin Center network connectivity feature. In most cases, following these general principles will have a significant positive impact on end-user latency, service reliability, and overall performance of Microsoft 365.
 
 Microsoft is sometimes asked to investigate network performance issues with Microsoft 365 for large enterprise customers, and these frequently have a root cause related to the customer's network perimeter infrastructure. When a common root cause of a customer network perimeter issue is found, we seek to identify simple test measurements. A test with a measurement threshold that identifies a specific problem is valuable because we can test the same measurement at any location, tell whether this root cause is present there and share it as a network insight with the administrator.
 
@@ -120,16 +120,16 @@ The overview page also shows the network assessment for the customer as a weight
 > [!div class="mx-imgBorder"]
 > ![Network assessment.](../media/m365-mac-perf/m365-mac-perf-overview-score.png)
 
-You can view a table view of the locations where they can be filtered, sorted, and edited in the **Locations** tab. Locations with specific recommendations may also include an estimated potential latency improvement. This is calculated by taking the median latency of your organization users at the location and subtracting the median latency for all organizations in the same city.
+You can view a table view of the locations where they can be filtered, sorted, and edited in the **Locations** tab. Locations with specific recommendations might also include an estimated potential latency improvement. This is calculated by taking the median latency of your organization users at the location and subtracting the median latency for all organizations in the same city.
 
 > [!div class="mx-imgBorder"]
 > ![Network insights locations.](../media/m365-mac-perf/m365-mac-perf-locations.png)
 
 ## Remote worker assessment and user connection metrics
 
-We classify network traffic logs as remote or onsite users and show their percentages in the user connection metrics section of the overview pane. For cities where you have remote users, you'll find the location specific remote network assessment score when you open that location's page. The locations list will have both office locations and remote worker cities, which can be filtered and sorted. We provide the remote worker assessment score, with points breakdown for Exchange, SharePoint and Teams.
+We classify network traffic logs as remote or onsite users and show their percentages in the user connection metrics section of the overview pane. For cities where you have remote users, you'll find the location specific remote network assessment score when you open that location's page. The locations list will have both office locations and remote worker cities, which can be filtered and sorted. We provide the remote worker assessment score, with points breakdown for Exchange, SharePoint, and Teams.
 
-Home user networking insights are aggregated and reported at a city level and limited to cities with a minimum of five remote employees. We are not identifying individual employees working from home.
+Home user networking insights are aggregated and reported at a city level and limited to cities with a minimum of five remote employees. We aren't identifying individual employees working from home.
 
 Locations are auto classified as onsite or remote, however, you have the option to enter all your onsite egress IP addresses manually to ensure a 100% classification. If you decide to go this route, you'll have to check the **Enter all onsite egress IP addresses manually** checkbox in the Locations Settings flyout after adding all your egress IP addresses. When this is done, all network traffic logs from egress IP addresses you've marked as onsite will always be classified as offices and every other egress IP address will be classified as remote.
 
@@ -168,7 +168,7 @@ By default, the network assessments for your organization and the network insigh
 
 ## CSV Import for LAN subnet office locations
 
-For LAN subnet office identification, you need to add each location in advance. Instead of adding individual office locations in the **Locations** tab you can import them from a CSV file. You may be able to obtain this data from other places you have stored it such as the Call Quality Dashboard or Active Directory Sites and Services
+For LAN subnet office identification, you need to add each location in advance. Instead of adding individual office locations in the **Locations** tab you can import them from a CSV file. You might be able to obtain this data from other places you have stored it such as the Call Quality Dashboard or Active Directory Sites and Services.
 
 In the CSV file, a discovered city location shows in the userEntered column as blank, and a manually added office location shows as 1.
 
@@ -179,7 +179,7 @@ In the CSV file, a discovered city location shows in the userEntered column as b
    > [!div class="mx-imgBorder"]
    > ![CSV import message.](../media/m365-mac-perf/m365-mac-perf-import.png)
 
-1. Click the **Download current office locations (.csv)** link to export the current locations list to a CSV file, and save it to your local hard disk. This will provide you with a correctly formatted CSV with column headings to which you can add locations. You can leave the existing exported locations as they are; they won't be duplicated when you import the updated CSV. If you wish to change the address of an existing location, it is updated when you import the CSV. You can't change the address of a discovered city.
+1. Click the **Download current office locations (.csv)** link to export the current locations list to a CSV file, and save it to your local hard disk. This will provide you with a correctly formatted CSV with column headings to which you can add locations. You can leave the existing exported locations as they are; they won't be duplicated when you import the updated CSV. If you wish to change the address of an existing location, it's updated when you import the CSV. You can't change the address of a discovered city.
 
 1. Open the CSV and add your locations by filling out the following fields on a new line for each location you want to add. Leave all other fields blank; values you enter in other fields will be ignored.
 
@@ -228,7 +228,7 @@ If you've uploaded building data to your Call Quality Dashboard, you can add tho
    > [!div class="mx-imgBorder"]
    > ![We couldnt upload your file flyout.](../media/m365-mac-perf/m365-mac-perf-import-cqd-couldnt-upload.png)
 
-6. If there are no errors in the file, you'll see the message: _Your file test.tsv is uploaded and ready. Select Import to upload your information._
+6. If there are no errors in the file, you'll see the message: _Your file test.tsv is uploaded and ready. Select **Import** to upload your information._
 
    > [!div class="mx-imgBorder"]
    > ![Select a .tsc file to upload.](../media/m365-mac-perf/m365-mac-perf-import-cqd-select-tsv.png)
@@ -239,8 +239,9 @@ If you've uploaded building data to your Call Quality Dashboard, you can add tho
 
 ## FAQ
 
-### What role is needed to access Network Connectivity in Microsoft 365 Admin Center? 
-You will need Network Administrator or Global Administrator role. 
+### What role is needed to access Network Connectivity in Microsoft 365 Admin Center?
+
+You'll need the Network Administrator or Global Administrator role.
 
 ### What is a Microsoft 365 service front door?
 
@@ -255,11 +256,11 @@ An optimal Microsoft 365 service front door is one that is closest to your netwo
 
 ### What is an internet egress location?
 
-The internet egress location is the location where your network traffic exits your enterprise network and connects to the Internet. This is also identified as the location where you have a Network Address Translation (NAT) device and usually where you connect with an Internet Service Provider (ISP). If you see a long distance between your location and your internet egress location, this may indicate a significant WAN backhaul.
+The internet egress location is the location where your network traffic exits your enterprise network and connects to the Internet. This is also identified as the location where you have a Network Address Translation (NAT) device and usually where you connect with an Internet Service Provider (ISP). If you see a long distance between your location and your internet egress location, this might indicate a significant WAN backhaul.
 
 ### What license is needed for this capability?
 
-You require a  license that provides access to the Microsoft 365 admin center.
+You require a license that provides access to the Microsoft 365 admin center.
 
 ## Related articles
 

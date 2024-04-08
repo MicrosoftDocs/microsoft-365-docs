@@ -14,8 +14,7 @@ ms.localizationpriority: medium
 search.appverid: 
   - MET150s
 description: Admins can learn about the available and preferred options to block inbound messages in Exchange Online Protection (EOP).
-ms.subservice: mdo
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 ms.date: 6/14/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
