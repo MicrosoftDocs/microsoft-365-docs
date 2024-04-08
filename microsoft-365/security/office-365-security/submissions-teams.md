@@ -119,9 +119,9 @@ For more information, see [User reported settings](submissions-user-reported-mes
 
 > [!IMPORTANT]
 >
-> When a user reports a Teams message to Microsoft, everything associated with the message is copied to include in the continual algorithm reviews. This copy includes the all the data associated with the message, including: message content, headers, any attachments, related data about routing and all other data directly associated with the submission
-> 
-> Microsoft treats your feedback as your organization's permission to analyze all the information to fine tune the submission hygiene algorithms. Your message is held in secured and audited data centers in the USA. The submission is deleted as soon as it's no longer required. Microsoft personnel might read your submitted messages and files, which is normally not permitted for Teams messages in Microsoft 365. However, your message is still treated as confidential between you and Microsoft, and your message or file isn't shared with any other party as part of the review process. Microsoft may also use AI to evaluate and create responses tailored to your submissions.
+> When a user reports a Teams message to Microsoft, everything associated with the message is copied to include in the continual algorithm reviews. This copy includes the all the data associated with the message, including: message content, headers, any attachments, related data about routing and all other data directly associated with the submission.
+
+> Microsoft treats your feedback as your organization's permission to analyze all the information to fine tune the submission hygiene algorithms. Your message is held in secured and audited data centers in the USA. The submission is deleted as soon as it's no longer required. Microsoft personnel might read your submitted messages and files, which is normally not permitted for Teams messages in Microsoft 365. However, your message is still treated as confidential between you and Microsoft, and your message or file isn't shared with any other party as part of the review process. Microsoft might also use AI to evaluate and create responses tailored to your submissions.
 
 ## View and triage user reported messages in Teams
 
