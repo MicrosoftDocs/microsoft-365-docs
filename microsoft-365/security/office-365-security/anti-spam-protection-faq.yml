@@ -44,7 +44,7 @@ sections:
       - question: |
           By default, what happens to a message that's detected as spam?
         answer: |
-          - **Inbound messages:** Most spam is deleted via connection filtering at the edge of the service, which is based on the IP address of the source email server. Anti-spam policies (also known as spam filter policies or content filter policies) inspect and classify messages as bulk, spam, high confidence spam, phishing, or high confidence phishing.
+          - **Inbound messages:** Most spam is detected via connection filtering at the edge of the service, which is based on the IP address of the source email server. Anti-spam policies (also known as spam filter policies or content filter policies) inspect and classify messages as bulk, spam, high confidence spam, phishing, or high confidence phishing.
 
             Anti-spam policies are used in the Standard and Strict preset security policies. You can create custom anti-spam policies that apply to specific groups of users. There's also a default anti-spam policy that applies to all recipients who aren't specified in the Standard and Strict preset security policies or in custom policies.
 
