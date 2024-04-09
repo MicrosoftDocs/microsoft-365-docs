@@ -193,7 +193,13 @@ ZAP takes action on a message based on the configuration of anti-spam policies a
 
 ### How is ZAP affected by the exceptions to protection features in EOP and Defender for Office 365?
 
-[Safe sender lists](create-safe-sender-lists-in-office-365.md), mail flow rules, and other organizational block and allow settings take precedence over ZAP. These messages are excluded from ZAP, since the service is doing what you configured it to do. This behavior is another reason to be careful about configuring messages to bypass filtering.
+ZAP actions might be overridden by [Safe sender lists](create-safe-sender-lists-in-office-365.md), Exchange mail flow rules (transport rules), and other organizational block and allow settings. However, for malware and high-confidence phishing verdicts, there are very few scenarios where ZAP doesn't act on messages to protect users:
+
+- [Third-party phishing simulation URLs identified in the Advanced delivery policy]](advanced-delivery-policy-configure.md#use-the-microsoft-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy) (high-confidence phishing).
+- [SecOps mailboxes identified in the Advanced delivery policy](advanced-delivery-policy-configure.md#use-the-microsoft-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy) (malware and high-confidence phishing).
+- [Admin submissions of false positives to Microsoft](submissions-admin.md#report-good-email-to-microsoft). By default, allow entries for domains and email addresses, files, and URLs exist for 30 days (malware and high-confidence phishing).
+
+It's important for you to carefully consider the implications of bypassing filtering, as it could compromise the security posture of your organizatione.
 
 ### What are the licensing requirements for ZAP?
 
