@@ -24,7 +24,7 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # Block user sign-in in Microsoft 365 Lighthouse
 
-You can block a user account if you think it's compromised. When you block a user account, it immediately blocks anyone from signing in to that account. If a user tries to sign in, they're automatically signed out of all Microsoft 365 services within 60 minutes. Blocking a user account won't delete any data, and it won't stop the account from receiving mail.
+You can block a user account if you think it's compromised. When you block a user account, it immediately blocks anyone from signing in to that account. If a user tries to sign in, they're automatically signed out of all Microsoft 365 services within 60 minutes. Blocking a user account doesn't delete any data, and it doesn't stop the account from receiving mail.
 
 ## Block sign-in for a user
 
