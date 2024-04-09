@@ -20,7 +20,7 @@ description: This article provides information for Global or SharePoint admins a
 
 # Enabling SharePoint Multi-Geo in your satellite geo location
 
-This article is for Global or SharePoint administrators who created a Multi-Geo satellite location **before** SharePoint Multi-Geo capabilities became generally available on March 27, 2019, and who haven't enabled SharePoint Multi-Geo in their satellite geo locations.
+This article is for Global or SharePoint administrators who created a Multi-Geo satellite location **before** SharePoint Multi-Geo capabilities became generally available on March 27, 2019, and who didn't enable SharePoint Multi-Geo in their satellite geo locations.
 
 >[!Note]
 >If you have added a new geo location **after March 27th, 2019**, you do not need to perform these instructions, as your new geo location will already be enabled for OneDrive and SharePoint Multi-Geo.

@@ -38,7 +38,7 @@ The procedures in this article require you to connect to SharePoint Online. For 
 
 Create multiple sites using PowerShell and a .csv file that you create using the example code provided and Notepad. For the procedure, you're replacing the placeholder information shown in brackets with your own site- and tenant-specific information. This process lets you create a single file and run a single PowerShell command that uses that file. This process makes the actions both repeatable and portable and eliminates many, if not all, errors that can come from typing long commands into the SharePoint Online Management Shell. There are two parts to this procedure. First you create a .csv file, and then you reference that .csv file using PowerShell, which uses its contents to create the sites.
 
-The PowerShell cmdlet imports the .csv file and pipes it to a loop inside the curly brackets that reads the first line of the file as column headers. The PowerShell cmdlet then iterates through the remaining records, creates a new site collection for each record, and assigns properties of the site collection according to the column headers.
+The PowerShell cmdlet imports the .csv file and pipes it to a loop inside the curly brackets that reads the opening line of the file as column headers. The PowerShell cmdlet then iterates through the remaining records, creates a new site collection for each record, and assigns properties of the site collection according to the column headers.
 
 ### Create a .csv file
 
@@ -84,7 +84,7 @@ The PowerShell cmdlet imports the .csv file and pipes it to a loop inside the cu
 
 4. Note the new site collections in the list. Using our example CSV file, you would see the following site collections: **TeamSite01**, **Blog01**, **Project01**, and **Community01**
 
-That’s it. You’ve created multiple site collections using the .csv file you created and a single Windows PowerShell command. You’re now ready to create and assign users to these sites.
+That’s it. You created multiple site collections using the .csv file you created and a single Windows PowerShell command. You’re now ready to create and assign users to these sites.
 
 ## Step 2: Add users and groups
 
@@ -139,7 +139,7 @@ The following procedures continue using the example sites TeamSite01, Blog01, Pr
 
    Where MyAlias equals the user name of the user that is currently logged on.
 
-6. Save the file to your desktop as **UsersAndGroups.ps1**. This is a simple Windows PowerShell script.
+6. Save the file to your desktop as **UsersAndGroups.ps1**, which is a simple Windows PowerShell script.
 
 You’re now ready to run the UsersAndGroup.ps1 script to add users and groups to multiple site collections.
 
@@ -163,7 +163,7 @@ You’re now ready to run the UsersAndGroup.ps1 script to add users and groups t
 
    Where *MyAlias* equals your user name
 
-5. Wait for the prompt to return before moving on. You'll first see the groups appear as they're created. Then you see the group list repeated as users are added.
+5. Wait for the prompt to return before moving on. You initially see the groups appear as they're created. Then the group list is repeated as users are added.
 
 ## See also
 

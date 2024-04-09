@@ -28,13 +28,13 @@ This article explains what specific aspects you need to consider when designing 
 
 The following broad metrics for SharePoint Online provide real-world data about performance:
   
-- How fast pages load
+- The speed at which pages load
     
-- How many round-trips required per page
+- The number of round-trips required per page
     
-- Issues with the service
+- The issues with the service
     
-- Other things that cause performance degradation
+- The other things that cause performance degradation
     
 ### Conclusions reached because of the data
 
@@ -54,7 +54,7 @@ One simple benchmark test you can use would be to measure performance by compari
 
 A Site Collection Administrator, Site Owner, Editor, or Contributor belong to another security groups, have more permissions, and therefore have extra elements that SharePoint loads on a page.
   
-This is applicable to SharePoint on-premises and SharePoint Online but in an on-premises scenario the differences won't be as easily noticed as in SharePoint Online.
+This scenario is applicable to SharePoint on-premises and SharePoint Online but in an on-premises scenario the differences can't be as easily noticed as in SharePoint Online.
   
 In order to correctly evaluate how a page performs for users, you should use a standard user account to avoid loading the authoring controls and extra traffic related to security groups.
   
@@ -116,7 +116,7 @@ With SharePoint Online, there are a few more factors to consider; for example:
     
 - The Internet Service Provider (ISP)
     
-Regardless of which version of SharePoint (and which network) you're using, things that will typically cause the network to be busy include:
+Regardless of which version of SharePoint (and which network) you're using, things that typically cause the network to be busy include:
   
 - Large payload
     
@@ -124,17 +124,17 @@ Regardless of which version of SharePoint (and which network) you're using, thin
     
 - Large physical distance to the server
     
-One feature that you can use in SharePoint Online is the Microsoft CDN (Content Delivery Network). A CDN is basically a distributed collection of servers deployed across multiple datacenters. With a CDN, content on pages can be hosted on a server close to the client even if the client is far away from the originating SharePoint Server. Microsoft will be using this more in the future to store local instances of pages that can't be customized, for example the SharePoint Online admin home page. For more information about CDNs, see [Content delivery networks](content-delivery-networks.md).
+One feature that you can use in SharePoint Online is the Microsoft CDN (Content Delivery Network). A CDN is basically a distributed collection of servers deployed across multiple datacenters. With a CDN, content on pages can be hosted on a server close to the client even if the client is far away from the originating SharePoint Server. Microsoft will be using this feature more in the future to store local instances of pages that can't be customized, for example the SharePoint Online admin home page. For more information about CDNs, see [Content delivery networks](content-delivery-networks.md).
   
-Something that you need to be aware of but not be able to do much about is the connection speed of your ISP. A simple speed test tool tells you the connection speed.
+Something that you need to be aware of but have no control over is the connection speed of your ISP. A simple speed test tool tells you the connection speed.
   
 ### Browser connection
 
 There are a few factors to consider with web browsers from a performance perspective.
   
-Visiting complex pages affects performance. Most browsers only have a small cache (around 90 MB), while the average web page is typically around 1.6 MB. This doesn't take long to get used up.
+Visiting complex pages affects performance. Most browsers only have a small cache (around 90 MB), while the average web page is typically around 1.6 MB, which doesn't take long to get used up.
   
-Bandwidth can also be an issue. For example, if a user is watching videos in another session, this affects the performance of your SharePoint page. While you can't prevent users from streaming media, you can control the way a page loads for users.
+Bandwidth can also be an issue. For example, if a user is watching videos in another session, it affects the performance of your SharePoint page. While you can't prevent users from streaming media, you can control the way a page loads for users.
   
 Check out the following articles for different SharePoint Online page customization techniques and other best practices to help you achieve optimal performance.
   
