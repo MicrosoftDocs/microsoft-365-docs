@@ -28,7 +28,7 @@ This article describes how you can deploy to SharePoint Online without tradition
 The best approach to ensuring the success of launching your site is to follow basic principles, practices, and recommendations that are highlighted in the [plan your portal launch roll-out](planportallaunchroll-out.md).
 
 ## Overview of how SharePoint Online performs Capacity planning 
-One of the main benefits of SharePoint Online over an on-premises deployment is the elasticity of the cloud and optimizations for users in distributed regions. Our large-scale environment is set up to service millions of users on a daily basis, so it's important that we handle capacity effectively by balancing and expanding farms.
+One of the main benefits of SharePoint Online over an on-premises deployment is the elasticity of the cloud and optimizations for users in distributed regions. Our large-scale environment is set up to service millions of users on a daily basis. So it's important that we handle capacity effectively by balancing and expanding farms.
   
 While the growth is often unpredictable for any one tenant in any one farm, the aggregated sum of requests is predictable over time. By identifying the growth trends in SharePoint Online, we can plan for future expansion.
   
@@ -40,6 +40,6 @@ Capacity is more than just about adding more hardware on a continuous basis but 
 With on-premises environments, load testing is used to validate scale assumption and ultimately find the breaking point of a farm; by saturating it with load. 
 
 With SharePoint Online, we need to do things differently because the scale is relatively fluid and adjusts, throttles, and controls load, based on certain heuristics. Being such a large-scale multi-tenant environment, we must protect all tenants in the same farm, so we automatically throttle any load tests. 
-If you do however attempt to load test, besides being throttled, you'll receive disappointing and potentially misleading results because the farm you tested today could have had scale changes during the testing window or within hours after testing, as scale and farm balancing actions are performed on an on-going basis.
+If you do however attempt to load test, besides being throttled, you could receive disappointing and potentially misleading results. The reason it could happen is because the farm you tested today could have scale changes during the testing window or within hours after testing, as scale and farm balancing actions are performed on an on-going basis.
 
 Instead of trying to load test SharePoint as a service, rather focus on following the recommended practices and follow the [Creating, launching, and maintaining a healthy portal](/sharepoint/portal-health) guidance.
