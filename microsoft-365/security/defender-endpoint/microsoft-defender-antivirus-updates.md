@@ -117,7 +117,7 @@ All our updates contain
 - Introducted performance improvements when processing paths for exclusions.
 - Added improvements to allow recovering from erroneously added [Indicators of compromise (IoC)](manage-indicators.md).
 - Improved resilience in processing [attack surface reduction](attack-surface-reduction.md) exclusions for Anti Malware Scan Interface (AMSI) scans.
-- Fixed a high memory issue related to the [Behavior Monitoring](behavior-monitor.md) queue that occured when MAPS is disabled.
+- Fixed a high memory issue related to the [Behavior Monitoring](behavior-monitor.md) queue that occurred when MAPS is disabled.
 - A possible deadlock when receiving a [Tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) configuration change from the [Microsoft Defender portal](https://security.microsoft.com) no longer occurs.
 
 ### February-2024 (Engine: 1.1.24020.9 | Platform: 4.18.24020.7)

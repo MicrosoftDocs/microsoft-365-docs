@@ -591,7 +591,7 @@ Dependencies: Microsoft Defender Antivirus
  
 This rule blocks the use of executable files that are identified as copies of Windows system tools. These files are either duplicates or impostors of the original system tools.
  
-Some malicious programs may try to copy or impersonate Windows system tools to avoid detection or gain privileges. Allowing such executable files can lead to potential attacks. This rule prevents propagation and execution of such duplicates and imposters of the system tools on Windows machines. 
+Some malicious programs may try to copy or impersonate Windows system tools to avoid detection or gain privileges. Allowing such executable files can lead to potential attacks. This rule prevents propagation and execution of such duplicates and impostors of the system tools on Windows machines. 
 
 > [!NOTE]
 > This capability is currently in preview. Additional upgrades to improve efficacy are under development.
