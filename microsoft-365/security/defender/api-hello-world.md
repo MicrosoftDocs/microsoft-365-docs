@@ -18,7 +18,7 @@ search.appverid:
   - MOE150
   - MET150
 ms.custom: api
-ms.date: 02/16/2021
+ms.date: 02/16/2024
 ---
 
 # Hello World for Microsoft Defender XDR REST API

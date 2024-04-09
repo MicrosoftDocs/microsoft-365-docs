@@ -1,14 +1,9 @@
 ---
 title: Hunt for threats across devices, emails, apps, and identities with advanced hunting
 description: Study common hunting scenarios and sample queries that cover devices, emails, apps, and identities.
-keywords: advanced hunting, Office365 data, Windows devices, Office365 emails normalize, emails, apps, identities, threat hunting, cyber threat hunting, search, query, telemetry, Microsoft 365, Microsoft Defender XDR
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
 ms.subservice: adv-hunting
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords:
   - NOCSH
 ms.author: maccruz
@@ -20,7 +15,7 @@ ms.collection:
   - m365-security
   - tier1
 ms.topic: conceptual
-ms.date: 02/16/2021
+ms.date: 02/16/2024
 ---
 
 # Hunt for threats across devices, emails, apps, and identities

@@ -4,7 +4,7 @@ description: Exclude files from Microsoft Defender Antivirus scans based on thei
 ms.service: defender-endpoint
 ms.subservice: ngp
 ms.localizationpriority: medium
-ms.date: 06/06/2023
+ms.date: 04/03/2024
 author: siosulli
 ms.author: siosulli
 ms.topic: conceptual
@@ -56,7 +56,7 @@ The following table lists some examples of exclusions based on file extension an
 
 |Exclusion|Examples|Exclusion list|
 |---|---|---|
-|Any file with a specific extension|All files with the specified extension, anywhere on the machine. <p> Valid syntax: `.test` and `test`|Extension exclusions|
+|Any file with a specific extension|All files with the specified extension, anywhere on the machine. <br/><br/> Valid syntax: `.test` and `test`|Extension exclusions|
 |Any file under a specific folder|All files under the `c:\test\sample` folder|File and folder exclusions|
 |A specific file in a specific folder|The file `c:\sample\sample.test` only|File and folder exclusions|
 |A specific process|The executable file `c:\test\process.exe`|File and folder exclusions|
@@ -64,19 +64,19 @@ The following table lists some examples of exclusions based on file extension an
 ## Characteristics of exclusion lists
 
 - Folder exclusions apply to all files and folders under that folder, unless the subfolder is a reparse point. Reparse point subfolders must be excluded separately.
-- File extensions apply to any file name with the defined extension if a path or folder is not defined.
+- File extensions apply to any file name with the defined extension if a path or folder isn't defined.
 
 ## Important notes about exclusions based on file extensions and folder locations
 
-- Using wildcards such as the asterisk (\*) will alter how the exclusion rules are interpreted. See the [Use wildcards in the file name and folder path or extension exclusion lists](#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) section for important information about how wildcards work.
+- Using wildcards such as the asterisk (\*) alters how exclusion rules are interpreted. See the section, [Use wildcards in the file name and folder path or extension exclusion lists](#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) for important information about how wildcards work.
 
 - Don't exclude mapped network drives. Specify the actual network path.
 
-- Folders that are reparse points are created after the Microsoft Defender Antivirus service starts, and those that have been added to the exclusion list will not be included. Restart the service by restarting Windows for new reparse points to be recognized as a valid exclusion target.
+- Folders that are reparse points are created after the Microsoft Defender Antivirus service starts, and those that were added to the exclusion list aren't included. Restart the service by restarting Windows for new reparse points to be recognized as a valid exclusion target.
 
 - Exclusions apply to [scheduled scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md), [on-demand scans](run-scan-microsoft-defender-antivirus.md), and [real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md), but not across all Defender for Endpoint capabilities. To define exclusions across Defender for Endpoint, use [custom indicators](manage-indicators.md).
 
-- By default, local changes made to the lists (by users with administrator privileges, including changes made with PowerShell and WMI) will be merged with the lists as defined (and deployed) by Group Policy, Configuration Manager, or Intune. The Group Policy lists take precedence when there are conflicts. In addition, exclusion list changes made with Group Policy are visible in the [Windows Security app](microsoft-defender-security-center-antivirus.md).
+- By default, local changes made to the lists (by users with administrator privileges, including changes made with PowerShell and WMI) are merged with the lists as defined (and deployed) by Group Policy, Configuration Manager, or Intune. The Group Policy lists take precedence when there are conflicts. In addition, exclusion list changes made with Group Policy are visible in the [Windows Security app](microsoft-defender-security-center-antivirus.md).
 
 - To allow local changes to override managed deployment settings, [configure how locally and globally defined exclusions lists are merged](configure-local-policy-overrides-microsoft-defender-antivirus.md#merge-lists).
 
@@ -153,7 +153,7 @@ The following table lists values that you can use in the `<exclusion list>` port
 |All files under a folder (including files in sub-directories), or a specific file|`-ExclusionPath`|
 
 > [!IMPORTANT]
-> If you have created a list, either with `Set-MpPreference` or `Add-MpPreference`, using the `Set-MpPreference` cmdlet again will overwrite the existing list.
+> If you have created a list, either with `Set-MpPreference` or `Add-MpPreference`, using the `Set-MpPreference` cmdlet again overwrites the existing list.
 
 For example, the following code snippet would cause Microsoft Defender Antivirus scans to exclude any file with the `.test` file extension:
 
@@ -201,14 +201,14 @@ The following table describes how the wildcards can be used and provides some ex
 
 |Wildcard|Examples|
 |---|---|
-|`*` (asterisk) <p> In **file name and file extension inclusions**, the asterisk replaces any number of characters, and only applies to files in the last folder defined in the argument. <p> In **folder exclusions**, the asterisk replaces a single folder. Use multiple `*` with folder slashes `\` to indicate multiple nested folders. After matching the number of wild carded and named folders, all subfolders are also included.|`C:\MyData\*.txt` includes `C:\MyData\notes.txt` <p> `C:\somepath\*\Data` includes any file in `C:\somepath\Archives\Data` and its subfolders, and `C:\somepath\Authorized\Data` and its subfolders <p> `C:\Serv\*\*\Backup` includes any file in `C:\Serv\Primary\Denied\Backup` and its subfolders, and `C:\Serv\Secondary\Allowed\Backup` and its subfolders|
-|`?` (question mark)  <p> In **file name and file extension inclusions**, the question mark replaces a single character, and only applies to files in the last folder defined in the argument. <p> In **folder exclusions**, the question mark replaces a single character in a folder name. After matching the number of wild carded and named folders, all subfolders are also included.|`C:\MyData\my?.zip` includes `C:\MyData\my1.zip` <p> `C:\somepath\?\Data` includes any file in `C:\somepath\P\Data` and its subfolders  <p> `C:\somepath\test0?\Data` would include any file in `C:\somepath\test01\Data` and its subfolders|
-|Environment variables <p> The defined variable is populated as a path when the exclusion is evaluated.|`%ALLUSERSPROFILE%\CustomLogFiles` would include `C:\ProgramData\CustomLogFiles\Folder1\file1.txt`|
+|`*` (asterisk) <br/><br/> In **file name and file extension inclusions**, the asterisk replaces any number of characters, and only applies to files in the last folder defined in the argument. <br/><br/> In **folder exclusions**, the asterisk replaces a single folder. Use multiple `*` with folder slashes `\` to indicate multiple nested folders. After matching the number of wild carded and named folders, all subfolders are also included.|`C:\MyData\*.txt` includes `C:\MyData\notes.txt` <br/><br/> `C:\somepath\*\Data` includes any file in `C:\somepath\Archives\Data` and its subfolders, and `C:\somepath\Authorized\Data` and its subfolders <br/><br/> `C:\Serv\*\*\Backup` includes any file in `C:\Serv\Primary\Denied\Backup` and its subfolders, and `C:\Serv\Secondary\Allowed\Backup` and its subfolders|
+|`?` (question mark)  <br/><br/> In **file name and file extension inclusions**, the question mark replaces a single character, and only applies to files in the last folder defined in the argument. <br/><br/> In **folder exclusions**, the question mark replaces a single character in a folder name. After matching the number of wild carded and named folders, all subfolders are also included.|`C:\MyData\my?.zip` includes `C:\MyData\my1.zip` <br/><br/> `C:\somepath\?\Data` includes any file in `C:\somepath\P\Data` and its subfolders  <br/><br/> `C:\somepath\test0?\Data` would include any file in `C:\somepath\test01\Data` and its subfolders|
+|Environment variables <br/><br/> The defined variable is populated as a path when the exclusion is evaluated.|`%ALLUSERSPROFILE%\CustomLogFiles` would include `C:\ProgramData\CustomLogFiles\Folder1\file1.txt`|
 
 > [!IMPORTANT]
-> If you mix a file exclusion argument with a folder exclusion argument, the rules will stop at the file argument match in the matched folder, and will not look for file matches in any subfolders.
+> If you mix a file exclusion argument with a folder exclusion argument, the rules stop at the file argument match in the matched folder, and don't look for file matches in any subfolders.
 > For example, you can exclude all files that start with "date" in the folders `c:\data\final\marked` and `c:\data\review\marked` by using the rule argument `c:\data\*\marked\date*`.
-> This argument, however, will not match any files in subfolders under `c:\data\final\marked` or `c:\data\review\marked`.
+> This argument doesn't match any files in subfolders under `c:\data\final\marked` or `c:\data\review\marked`.
 
 <a id="review"></a>
 
@@ -310,7 +310,7 @@ MpCmdRun.exe -CheckExclusion -path <path>
 ```
 
 > [!NOTE]
-> Checking exclusions with MpCmdRun requires Microsoft Defender Antivirus CAMP version 4.18.2111-5.0 (released in  December 2021) or later.
+> Checking exclusions with `MpCmdRun` requires Microsoft Defender Antivirus [version 4.18.2111-5.0 (released in December 2021)](/microsoft-365/security/defender-endpoint/msda-updates-previous-versions-technical-upgrade-support#november-2021-platform-41821115--engine-11188004) or later.
 
 ### Review the list of exclusions alongside all other Microsoft Defender Antivirus preferences by using PowerShell
 
@@ -348,7 +348,7 @@ For more information, see [Use PowerShell cmdlets to configure and run Microsoft
 
 You can validate that your exclusion lists are working by using PowerShell with either the `Invoke-WebRequest` cmdlet or the .NET WebClient class to download a test file.
 
-In the following PowerShell snippet, replace `test.txt` with a file that conforms to your exclusion rules. For example, if you have excluded the `.testing` extension, replace `test.txt` with `test.testing`. If you are testing a path, ensure you run the cmdlet within that path.
+In the following PowerShell snippet, replace `test.txt` with a file that conforms to your exclusion rules. For example, if you have excluded the `.testing` extension, replace `test.txt` with `test.testing`. If you're testing a path, make sure that you run the cmdlet within that path.
 
 ```PowerShell
 Invoke-WebRequest "https://secure.eicar.org/eicar.com.txt" -OutFile "test.txt"

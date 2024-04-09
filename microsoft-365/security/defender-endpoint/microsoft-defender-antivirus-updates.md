@@ -3,7 +3,7 @@ title: Microsoft Defender Antivirus security intelligence and product updates
 description: Manage how Microsoft Defender Antivirus receives protection and product updates.
 ms.service: defender-endpoint
 ms.localizationpriority: high
-ms.date: 03/20/2024
+ms.date: 04/03/2024
 audience: ITPro
 ms.topic: reference
 author: siosulli
@@ -98,6 +98,28 @@ All our updates contain
 - Serviceability improvements
 - Integration improvements (Cloud, [Microsoft Defender XDR](/microsoft-365/security/defender/microsoft-365-defender))
 
+### March-2024 (Engine: 1.1.24030.4 | Platform: Coming soon)
+
+- Security intelligence update version: **1.409.1.0**
+- Release date: **April 2, 2024** (Engine) / **Coming soon** (Platform)
+- Engine: **1.1.24030.4**
+- Platform: **Coming soon**
+- Support phase: **Security and Critical Updates**
+
+#### What's new
+
+- Added manageability settings to opt-out for One Collector telemetry channel and Experimentation and Configuration Service (ECS).
+- Microsoft Defender Core Service will be disabled when 3rd party Antivirus is installed (except when Defender for Endpoint is running in Passive mode).
+- The known issue in [4.18.24020.7](#february-2024-engine-11240209--platform-418240207) where enforcement of device level access policies wasn't working as expected no longer occurs.
+- Fixed high CPU issue caused by redetection done during Sense originating scans.
+- Fixed an issue with Security Intelligence Update disk cleanup.
+- Fixed an issue where the Signature date information on the Security Health report wasn't accurate.
+- Introducted performance improvements when processing paths for exclusions.
+- Added improvements to allow recovering from erroneously added [Indicators of compromise (IoC)](manage-indicators.md).
+- Improved resilience in processing [attack surface reduction](attack-surface-reduction.md) exclusions for Anti Malware Scan Interface (AMSI) scans.
+- Fixed a high memory issue related to the [Behavior Monitoring](behavior-monitor.md) queue that occurred when MAPS is disabled.
+- A possible deadlock when receiving a [Tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) configuration change from the [Microsoft Defender portal](https://security.microsoft.com) no longer occurs.
+
 ### February-2024 (Engine: 1.1.24020.9 | Platform: 4.18.24020.7)
 
 - Security intelligence update version: **1.407.46.0**
@@ -139,32 +161,6 @@ All our updates contain
 - Fixed an issue to remove a vulnerability in the Microsoft Defender Core service.
 - Fixed an onboarding issue in the Unified Agent installation script [install.ps1](https://github.com/microsoft/mdefordownlevelserver).
 - Fixed a memory leak that impacted some devices that received platform update `4.18.24010.7`
-
-### November-2023 (Platform: 4.18.23110.3 | Engine: 1.1.23110.2)
-
-- Security intelligence update version: **1.403.7.0**
-- Release date: **December 5, 2023 (Platform)** / **December 6, 2023 (Engine)**
-- Platform: **4.18.23110.3**
-- Engine: **1.1.23110.2**
-- Support phase: **Security and Critical Updates**
-
-#### What's new
-
-- Fixed PowerShell cmdlet [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) to show the correct date/time for `AntivirusSignatureLastUpdated`
-- Resolved deadlock issue that occurred on systems with multiple filter drivers reading a file when the file is copied 
-- Added the `InitializationProgress` field to [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) output 
-- Fixed installation failure on Windows Server 2016 due to existing Defender EventLog registry key 
-- Added the ability to have [quick scans](schedule-antivirus-scans.md) ignore Microsoft Defender Antivirus exclusions 
-- Fixed remediation for long running [on-demand scans](run-scan-microsoft-defender-antivirus.md) where the service may have been restarted 
-- Fixed an issue with Microsoft Defender Vulnerability Management to allow the execution of a [blocked application](/microsoft-365/security/defender-vulnerability-management/tvm-block-vuln-apps) when the [warn option](/microsoft-365/security/defender-vulnerability-management/tvm-block-vuln-apps#block-or-warn-mitigation-action) is selected 
-- Added support for managing schedule day/time for [signature updates in Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-windows#updates) and [Defender for Endpoint security settings management](/mem/intune/protect/mde-security-integration) 
-- Fixed non-standard signature path loading across platforms ([Windows](microsoft-defender-antivirus-windows.md), [Mac](microsoft-defender-endpoint-mac.md), [Linux](microsoft-defender-endpoint-linux.md), [Android](microsoft-defender-endpoint-android.md), and [iOS](microsoft-defender-endpoint-ios.md))
-- Improved handling of cached detections in [attack surface reduction](overview-attack-surface-reduction.md) capabilities
-- Improved performance for enumerating virtual memory ranges
-
-#### Known issues
-
-- None
 
 ### Previous version updates: Technical upgrade support only
 

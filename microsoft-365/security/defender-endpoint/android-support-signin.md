@@ -137,7 +137,7 @@ Users need to disable MDE VPN from the Settings page. The following steps can be
 Users should enable VPN when they're no longer using the banking app to ensure that their devices are protected. 
 
 >[!NOTE]
-> This a temporary workaround. We are working on other alternatives to provide users more control over the VPN settings from wihtin the app. 
+> This a temporary workaround. We are working on other alternatives to provide users more control over the VPN settings from within the app. 
 
 
 
@@ -147,15 +147,15 @@ If a user faces an issue, which isn't already addressed in the above sections or
 
 1. Open the **MDE application** on your device and select on the **profile icon** in the top-left corner.
 
-    :::image type="content" source="images/select-profile-icon-1.jpg" alt-text="The profile icon in the Microsoft Defender for Endpoint portal" lightbox="images/select-profile-icon-1.jpg":::
+    :::image type="content" source="media/select-profile-icon-1.jpg" alt-text="The profile icon in the Microsoft Defender for Endpoint portal" lightbox="media/select-profile-icon-1.jpg":::
 
 2. Select "Help & feedback".
 
-    :::image type="content" source="images/selecthelpandfeedback2.png" alt-text="The Help & feedback option that can be selected in the Microsoft Defender for Endpoint portal" lightbox="images/selecthelpandfeedback2.png":::
+    :::image type="content" source="media/selecthelpandfeedback2.png" alt-text="The Help & feedback option that can be selected in the Microsoft Defender for Endpoint portal" lightbox="media/selecthelpandfeedback2.png":::
 
 3. Select "Send feedback to Microsoft".
 
-    :::image type="content" alt-text="Select send feedback to Microsoft" source="images/send-feedback-to-microsoft-3.jpg":::
+    :::image type="content" alt-text="Select send feedback to Microsoft" source="media/send-feedback-to-microsoft-3.jpg":::
 
 4. Choose from the given options. To report an issue, select "I want to report an issue".
 
