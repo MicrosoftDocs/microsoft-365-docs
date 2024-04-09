@@ -36,8 +36,6 @@ There are three types of scheduled scans that are configurable: hourly, daily, a
 **Pre-requisites:**
 
 - Platform Update version: [101.23122.0005](mac-whatsnew.md#jan-2024-build-101231220005---release-version-2012312250) or newer
-- [Beta Channel (formerly Insiders-Fast), or Current Channel (Preview) (formerly Insiders-Slow)](/microsoft-365/security/defender-endpoint/mac-updates)
-
 ## Schedule a scan with *Microsoft Defender for Endpoint on macOS*
 
 You can create a scheduled scan for your macOS, which is built in to *Microsoft Defender for Endpoint on macOS*.
