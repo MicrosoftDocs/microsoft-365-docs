@@ -31,7 +31,7 @@ appliesto:
 
 In Microsoft 365 organizations with Exchange Online mailboxes or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, _connection filtering_ and the default connection filter policy identify good or bad source email servers by IP addresses. The key components of the default connection filter policy are:
 
-- **IP Allow List**: Skip spam filtering for all incoming messages from the specified source IP addresses or IP address ranges. All incoming messages are scanned for malware and high-confidence phishing. For other scenarios where spam filtering still occurs on messages from servers in the IP Allow List, see the [Scenarios where messages from sources in the IP Allow List are still filtered](#scenarios-where-messages-from-sources-in-the-ip-allow-list-are-still-filtered) section later in this article. For more information about how the IP Allow List should fit into your overall safe senders strategy, see [Create safe sender lists in EOP](create-safe-sender-lists-in-office-365.md).
+- **IP Allow List**: Skip spam filtering for all incoming messages from the specified source IP addresses or IP address ranges. All incoming messages are scanned for malware and high confidence phishing. For other scenarios where spam filtering still occurs on messages from servers in the IP Allow List, see the [Scenarios where messages from sources in the IP Allow List are still filtered](#scenarios-where-messages-from-sources-in-the-ip-allow-list-are-still-filtered) section later in this article. For more information about how the IP Allow List should fit into your overall safe senders strategy, see [Create safe sender lists in EOP](create-safe-sender-lists-in-office-365.md).
 
 - **IP Block List**: Block all incoming messages from the specified source IP addresses or IP address ranges. The incoming messages are rejected, aren't marked as spam, and no other filtering occurs. For more information about how the IP Block List should fit into your overall blocked senders strategy, see [Create block sender lists in EOP](create-block-sender-lists-in-office-365.md).
 
@@ -160,7 +160,7 @@ To verify that you've successfully modified the default connection filter policy
 The following sections identify additional items that you need to know about when you configure the IP Allow List.
 
 > [!NOTE]
-> All incoming messages are scanned for malware and high-confidence phishing, regardless of whether the message source is in the IP Allow List.
+> All incoming messages are scanned for malware and high confidence phishing, regardless of whether the message source is in the IP Allow List.
 
 ### Skip spam filtering for a CIDR IP outside of the available range
 

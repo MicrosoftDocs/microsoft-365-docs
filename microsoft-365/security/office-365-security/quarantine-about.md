@@ -40,7 +40,7 @@ Whether a detected message is quarantined by default depends on the following fa
 
 - The protection feature that detected the message. For example, the following detections are always quarantined:
   - Malware detections by [anti-malware policies](anti-malware-policies-configure.md) and [Safe Attachments policies](safe-attachments-policies-configure.md), including [Built-in protection](preset-security-policies.md) for Safe Attachments<sup>\*</sup>.
-  - High-confidence phishing detections by [anti-spam policies](anti-spam-policies-configure.md).
+  - High confidence phishing detections by [anti-spam policies](anti-spam-policies-configure.md).
 - Whether you're using the Standard and/or Strict [preset security policies](preset-security-policies.md). The Strict profile quarantines more types of detections than the Standard profile.
 
 <sup>\*</sup> Malware filtering is skipped on SecOps mailboxes that are identified in the advanced delivery policy. For more information, see [Configure the advanced delivery policy for third-party phishing simulations and email delivery to SecOps mailboxes](advanced-delivery-policy-configure.md).
@@ -70,7 +70,7 @@ The default quarantine policies that are assigned to protection feature verdicts
 Admins can create and apply custom quarantine policies that define less restrictive or more restrictive capabilities for users, and also turn on quarantine notifications. For more information, see [Create quarantine policies](quarantine-policies.md#step-1-create-quarantine-policies-in-the-microsoft-defender-portal).
 
 > [!NOTE]
-> Users can't release their own messages that were quarantined as malware by anti-malware or Safe Attachments policies, or as high confidence phishing by anti-spam policies, regardless of how the quarantine policy is configured. If the policy allows users to release their own quarantined messages, users are instead allowed to _request_ the release of their quarantined malware or high-confidence phishing messages.
+> Users can't release their own messages that were quarantined as malware by anti-malware or Safe Attachments policies, or as high confidence phishing by anti-spam policies, regardless of how the quarantine policy is configured. If the policy allows users to release their own quarantined messages, users are instead allowed to _request_ the release of their quarantined malware or high confidence phishing messages.
 
 Both users and admins can work with quarantined messages:
 
