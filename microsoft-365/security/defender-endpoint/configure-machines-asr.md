@@ -1,15 +1,11 @@
 ---
 title: Optimize ASR rule deployment and detections
 description: Optimize your attack surface reduction rules to identify and prevent typical malware exploits.
-keywords: onboard, Intune management, Microsoft Defender for Endpoint, Microsoft Defender, Windows Defender, attack surface reduction, ASR, security baseline
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -19,7 +15,7 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.subservice: asr
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 12/18/2023
 ---
 
 # Optimize ASR rule deployment and detections
@@ -47,7 +43,7 @@ The *Attack surface management card* is an entry point to tools in <a href="http
 
 Select **Go to attack surface management** \> **Reports** \> **Attack surface reduction rules** \> **Add exclusions**. From there, you can navigate to other sections of Microsoft Defender portal.
 
-:::image type="content" source="images/secconmgmt_asr_m365exlusions.png" alt-text="Add exclusions tab in the Attack surface reduction rules page in the Microsoft Defender portal" lightbox="images/secconmgmt_asr_m365exlusions.png":::
+:::image type="content" source="media/secconmgmt-asr-m365exlusions.png" alt-text="Add exclusions tab in the Attack surface reduction rules page in the Microsoft Defender portal" lightbox="media/secconmgmt-asr-m365exlusions.png":::
 
 > *The **Add exclusions** tab in the Attack surface reduction rules page in Microsoft Defender portal*
 

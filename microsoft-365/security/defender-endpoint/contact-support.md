@@ -1,15 +1,11 @@
 ---
 title: Contact Microsoft Defender for Endpoint support
 description: Learn how to contact Microsoft Defender for Endpoint support
-keywords: support, contact, premier support, solutions, problems, case
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -58,7 +54,7 @@ Accessing the new support widget can be done in one of two ways:
 
 2. Clicking on the **Need help?**  button in the bottom right of the Microsoft Defender portal:
 
-   :::image type="content" source="images/need-help-option.png" alt-text="The Need help button" lightbox="images/need-help-option.png":::
+   :::image type="content" source="media/need-help-option.png" alt-text="The Need help button" lightbox="media/need-help-option.png":::
 
 In the widget you'll be offered two options:
 

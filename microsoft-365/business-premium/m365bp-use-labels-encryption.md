@@ -4,13 +4,13 @@ f1.keywords:
 - NOCSH
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-business
 ms.date: 11/01/2023
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - M365-Campaigns
 - m365solution-smb
 - tier1
@@ -38,7 +38,7 @@ Before individuals send email with confidential or sensitive information, they s
 
 ## Set it up
 
-If you want to encrypt a message that doesn't meet a pre-defined rule or your admin hasn't set up any rules, you can apply a variety of different encryption rules before you send the message. To send an encrypted message from Outlook 2013 or 2016, or Outlook 2016 for Mac, select **Options > Permissions**, then select the protection option you need. You can also send an encrypted message by selecting the **Protect** button in Outlook on the web. For more information, see [Send, view, and reply to encrypted messages in Outlook for PC](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980).
+If you want to encrypt a message that doesn't meet a pre-defined rule or your admin hasn't set up any rules, you can apply a variety of different encryption rules before you send the message. To send an encrypted message from Outlook 2013 or 2016, or Outlook 2016 for Mac, select **Options > Permissions**, then select the protection option you need. You can also send an encrypted message by selecting the **Protect** button in Outlook on the web. For more information, see [Send, view, and reply to encrypted messages in Outlook for PC](https://support.microsoft.com/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980).
 
 ## Admin settings
 
@@ -54,7 +54,7 @@ You create mail flow rules to encrypt email messages with Microsoft Purview Mess
 
 2. Choose the Admin tile.
 
-3. In the Admin center, choose **Admin centers > Exchange**.
+3. In the Admin center, choose **Admin centers** \> **Exchange**.
 
 For more information, see [Define mail flow rules to encrypt email messages](../compliance/define-mail-flow-rules-to-encrypt-email.md).
 

@@ -2,11 +2,7 @@
 title: Key infrastructure requirements before enrolling in the Microsoft Defender Experts for Hunting service
 ms.reviewer:
 description: This section outlines the key infrastructure requirements you must meet and important information on data access and compliance
-keywords: managed threat hunting service, defender experts eligibility, managed detection and response (MDR) service, defender experts notifications, apply for defender experts service, dex, defender experts notification, Microsoft Defender Experts for hunting, threat hunting and analysis, managed response
 ms.service: defender-experts
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: vpattnaik
 author: vpattnai
 ms.localizationpriority: medium
@@ -18,7 +14,7 @@ ms.collection:
   - tier1
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 11/10/2023
+ms.date: 04/05/2024
 ---
 
 # Before you begin using Defender Experts for Hunting
@@ -41,7 +37,6 @@ To enable us to get started with this threat hunting service, we require the fol
 
 - Microsoft Defender for Endpoint P2 must be licensed and enabled on eligible devices
 - Microsoft Defender Antivirus must be licensed and enabled in active mode on devices onboarded to Defender for Endpoint (required for endpoint detection and response capabilities)
-- Microsoft Entra ID P1 must be licensed for all users and enabled (required for enabling secure service provider access)
 
 The following products are also eligible to get Defender Experts for Hunting coverage, and you must have their appropriate product licenses to get started with the service:
 
@@ -55,7 +50,7 @@ The following product is **not** covered by this service:
 
 ### Server coverage
 
-Defender Experts for Hunting also covers servers—whether on premises or on a hyperscale cloud service provider—that have Defender for Endpoint deployed on them with a Microsoft Defender for Server license. For Defender Experts coverage, a server is considered as a user account for billing. The service doesn't cover Microsoft Defender for Cloud.
+Defender Experts for Hunting also covers servers—whether on premises or on a hyperscale cloud service provider—that have Defender for Endpoint deployed on them with a Microsoft Defender for Endpoint for Servers license. For Defender Experts coverage, a server is considered as a user account for billing. The service doesn't cover Microsoft Defender for Cloud.
 [Learn more about specific hardware and software requirements](/microsoft-365/security/defender-endpoint/minimum-requirements)
 
 ### Ask Defender Experts

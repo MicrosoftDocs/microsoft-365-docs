@@ -2,13 +2,8 @@
 title: Get started with Microsoft Defender XDR
 ms.reviewer: 
 description: Learn what steps you need to take to get started with Microsoft Defender XDR
-keywords: get started, Microsoft Defender XDR, turn on, onboard, deploy
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
@@ -19,6 +14,7 @@ ms.collection:
   - m365solution-getstarted
   - highpri
   - tier1
+  - essentials-overview
 ms.custom: intro-get-started
 ms.topic: conceptual
 ms.date: 09/21/2023

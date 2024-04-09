@@ -1,17 +1,12 @@
 ---
 title: Microsoft Defender for Endpoint SmartScreen app reputation demonstration
 description: Test how Microsoft Defender for Endpoint SmartScreen helps you identify phishing and malware websites
-keywords: Microsoft Defender for Endpoint, phishing website, malware website, app reputation, 
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-endpoint
-ms.mktglfcycl: evaluation
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp 
-author: dansimp 
+ms.author: siosulli 
+author: siosulli 
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -48,7 +43,7 @@ This program has a good reputation; the download should run uninterrupted:
 
   Launching this link should render a message similar to the following:
 
-  :::image type="content" source="images/smartscreen-app-reputation-known-good.png" alt-text="Based on the target file's reputation, SmartScreen allows the download without interference.":::
+  :::image type="content" source="media/smartscreen-app-reputation-known-good.png" alt-text="Based on the target file's reputation, SmartScreen allows the download without interference.":::
 
 ### Unknown program
 
@@ -58,7 +53,7 @@ Because the program download doesn't have sufficient reputation to ensure that i
   
   Launching this link should render a message similar to the following:
 
-  :::image type="content" source="images/smartscreen-app-reputation-unknown.png" alt-text="SmartScreen doesn't have sufficient reputation information about the download file, and warns the user to stop or proceed with caution.":::
+  :::image type="content" source="media/smartscreen-app-reputation-unknown.png" alt-text="SmartScreen doesn't have sufficient reputation information about the download file, and warns the user to stop or proceed with caution.":::
 
 ### Known malware
 
@@ -68,7 +63,7 @@ This download is known malware; SmartScreen should block this program from runni
 
 Launching this link should render a message similar to the following:
 
-  :::image type="content" source="images/smartscreen-app-reputation-known-malware.png" alt-text="Screenshot showing how SmartScreen detects a file download with an unsafe reputation; the download is blocked.":::
+  :::image type="content" source="media/smartscreen-app-reputation-known-malware.png" alt-text="Screenshot showing how SmartScreen detects a file download with an unsafe reputation; the download is blocked.":::
 
 ## Learn more
 

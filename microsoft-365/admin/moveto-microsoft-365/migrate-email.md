@@ -59,18 +59,16 @@ It is recommended that you [get help from Microsoft](/microsoft-365/admin/get-he
 
 If you are a VSB (very small business) where you have a small number of users, you should migrate your email using a different method, such as [importing to Outlook through a PST file](https://support.microsoft.com/office/import-gmail-to-outlook-20fdb8f2-fed8-4b14-baf0-bf04b9c44bf7).
 
-
-
 ## Prerequisites for automated batch migration from Google Workspace
 
-Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198034).
->
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/p/?linkid=2198034).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RW10Wot?autoplay=false]
 
-To successfully use the automated batch migration tool, it is important to correctly complete all of the prerequisite tasks. For more detailed information, see [Google Workspace migration prerequisites](/exchange/mailbox-migration/googleworkspace-migration-prerequisites).
+To successfully use the automated batch migration tool, it is important to correctly complete all of the prerequisite tasks. For more detailed information, see [Google Workspace migration prerequisites](/exchange/mailbox-migration/google-workspace-migration-prerequisites).
 
 These tasks include:
+
 - Creating a subdomain to correctly route email to users who have been migrated to Microsoft 365.
 - Creating a subdomain to correctly route email from users you have migrated to Microsoft 365 back to users in your Google Workspace environment.
 - Adding all mail user accounts to Microsoft 365 for users you are migrating.
@@ -82,14 +80,14 @@ These tasks include:
 ### Create a subdomain for email going to Microsoft 365
 
 1. Return to the **Google Workspace admin** console.
-1. Select **Add a domain**.
-1. Enter a domain name for your subdomain, such as *m365.contoso.com*.
-1. Select **User alias domain**, select **Add domain and start verification**, and then select **Continue**. Follow the instructions to verify domain ownership.
+2. Select **Add a domain**.
+3. Enter a domain name for your subdomain, such as *m365.contoso.com*.
+4. Select **User alias domain**, select **Add domain and start verification**, and then select **Continue**. Follow the instructions to verify domain ownership.
 
     Domain verification usually takes just a few minutes, but it can take up to 48 hours.
 
-1. Go to the **Microsoft 365 admin center**.
-6. In the Microsoft 365 admin center, in the left nav, select **Show all**, select **Settings**, select **Domains**, and then **Add domain**. 
+5. Go to the **Microsoft 365 admin center**.
+6. In the Microsoft 365 admin center, in the left nav, select **Show all**, select **Settings**, select **Domains**, and then **Add domain**.
 7. Enter the subdomain you previously created, then select **Use this domain**.
 8. To connect the domain, select **Continue**.
 9. Select **Add DNS records**. Depending on your domain host provider, Microsoft 365 will try to update your DNS records for the domain.

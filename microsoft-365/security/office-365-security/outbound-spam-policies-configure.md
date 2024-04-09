@@ -4,7 +4,7 @@ f1.keywords:
   - NOCSH
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: medium
@@ -17,12 +17,11 @@ ms.collection:
 ms.custom:
   - seo-marvel-apr2020
 description: Admins can learn how to view, create, modify, and delete outbound spam policies in Exchange Online Protection (EOP).
-ms.subservice: mdo
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 ms.date: 11/2/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 1 and Plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
@@ -51,13 +50,11 @@ You can configure outbound spam policies in the Microsoft Defender portal or in 
   - [Exchange Online permissions](/exchange/permissions-exo/permissions-exo):
     - _Add, modify, and delete policies_: Membership in the **Organization Management** or **Security Administrator** role groups.
     - _Read-only access to policies_: Membership in the **Global Reader**, **Security Reader**, or **View-Only Organization Management** role groups.
-  - [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
+  - [Microsoft Entra permissions](/entra/identity/role-based-access-control/manage-roles-portal): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 - For our recommended settings for outbound spam policies, see [EOP outbound spam policy settings](recommended-settings-for-eop-and-office365.md#eop-outbound-spam-policy-settings).
 
 - The default [alert policies](/purview/alert-policies#threat-management-alert-policies) named **Email sending limit exceeded**, **Suspicious email sending patterns detected**, and **User restricted from sending email** already send email notifications to members of the **TenantAdmins** (**Global admins**) group about unusual outbound email activity and blocked users due to outbound spam. For more information, see [Verify the alert settings for restricted users](outbound-spam-restore-restricted-users.md#verify-the-alert-settings-for-restricted-users). We recommend that you use these alert policies instead of the notification options in outbound spam policies.
-
-<a name='use-the-microsoft-365-defender-portal-to-create-outbound-spam-policies'></a>
 
 ## Use the Microsoft Defender portal to create outbound spam policies
 
@@ -137,7 +134,7 @@ You can configure outbound spam policies in the Microsoft Defender portal or in 
 
    - **Notifications** section: Use the settings in the section to configure additional recipients who should receive copies and notifications of suspicious outbound email messages:
 
-     - **Send a copy of suspicious outbound that exceed these limits to these users and groups**: This setting adds the specified recipients to the Bcc field of suspicious outbound messages.
+     - **Send a copy of suspicious outbound that exceed these limits to these users and groups**: This setting adds the specified recipients to the Bcc field of suspicious outbound messages that were marked as spam, phishing, or malware.
 
        > [!NOTE]
        > This setting works only in the default outbound spam policy. It doesn't work in custom outbound spam policies that you create.
@@ -166,8 +163,6 @@ You can configure outbound spam policies in the Microsoft Defender portal or in 
 
    Back on the **Anti-spam policies** page, the new policy is listed.
 
-<a name='use-the-microsoft-365-defender-portal-to-view-outbound-spam-policy-details'></a>
-
 ## Use the Microsoft Defender portal to view outbound spam policy details
 
 In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-spam** in the **Policies** section. Or, to go directly to the **Anti-spam policies** page, use <https://security.microsoft.com/antispam>.
@@ -178,7 +173,7 @@ On the **Anti-spam policies** page, the following properties are displayed in th
 - **Status**: Values are:
   - **Always on** for the default outbound spam policy (for example, **Anti-spam outbound policy (Default)**).
   - **On** or **Off** for other outbound spam policies.
-- **Priority**: For more information, see the [Set the priority of custom outbound spam policies](#use-the-microsoft-365-defender-portal-to-set-the-priority-of-custom-outbound-spam-policies) section.
+- **Priority**: For more information, see the [Set the priority of custom outbound spam policies](#use-the-microsoft-defender-portal-to-set-the-priority-of-custom-outbound-spam-policies) section.
 - **Type**: One of the following values for outbound spam policies:
   - **Custom outbound spam policy**
   - Blank for the default outbound spam policy (for example, **Anti-spam outbound policy (Default)**).
@@ -191,8 +186,6 @@ Select an outbound spam policy by clicking anywhere in the row other than the ch
 
 > [!TIP]
 > To see details about other outbound spam policies without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
-
-<a name='use-the-microsoft-365-defender-portal-to-take-action-on-outbound-spam-policies'></a>
 
 ## Use the Microsoft Defender portal to take action on outbound spam policies
 
@@ -209,15 +202,11 @@ On the **Anti-spam policies** page, select the outbound spam policy from the lis
 
 The actions are described in the following subsections.
 
-<a name='use-the-microsoft-365-defender-portal-to-modify-outbound-spam-policies'></a>
-
 ### Use the Microsoft Defender portal to modify outbound spam policies
 
-After you select the default outbound spam policy or a custom policy by clicking anywhere in the row other than the check box next to the name, the policy settings are shown in the details flyout that opens. Select **Edit** in each section to modify the settings within the section. For more information about the settings, see the [Create outbound spam policies](#use-the-microsoft-365-defender-portal-to-create-outbound-spam-policies) section earlier in this article.
+After you select the default outbound spam policy or a custom policy by clicking anywhere in the row other than the check box next to the name, the policy settings are shown in the details flyout that opens. Select **Edit** in each section to modify the settings within the section. For more information about the settings, see the [Create outbound spam policies](#use-the-microsoft-defender-portal-to-create-outbound-spam-policies) section earlier in this article.
 
 For the default policy, you can't modify the name of the policy, and there are no sender filters to configure (the policy applies to all senders). But, you can modify all other settings in the policy.
-
-<a name='use-the-microsoft-365-defender-portal-to-enable-or-disable-custom-outbound-spam-policies'></a>
 
 ### Use the Microsoft Defender portal to enable or disable custom outbound spam policies
 
@@ -230,8 +219,6 @@ After you select a disabled custom outbound spam policy (the **Status** value is
 When you're finished in the policy details flyout, select **Close**.
 
 On the **Anti-spam policies** page, the **Status** value of the policy is now **On** or **Off**.
-
-<a name='use-the-microsoft-365-defender-portal-to-set-the-priority-of-custom-outbound-spam-policies'></a>
 
 ### Use the Microsoft Defender portal to set the priority of custom outbound spam policies
 
@@ -254,8 +241,6 @@ After you select the custom outbound spam policy by clicking anywhere in the row
 When you're finished in the policy details flyout, select **Close**.
 
 Back on the **Anti-spam policies** page, the order of the policy in the list matches the updated **Priority** value.
-
-<a name='use-the-microsoft-365-defender-portal-to-remove-custom-outbound-spam-policies'></a>
 
 ### Use the Microsoft Defender portal to remove custom outbound spam policies
 

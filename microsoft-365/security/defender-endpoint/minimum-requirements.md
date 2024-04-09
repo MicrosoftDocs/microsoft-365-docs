@@ -2,12 +2,12 @@
 title: Minimum requirements for Microsoft Defender for Endpoint
 description: Understand the licensing requirements and requirements for onboarding devices to the service
 ms.service: defender-endpoint
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.reviewer: pahuijbr
 ms.localizationpriority: medium
 ms.date: 11/15/2023
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -68,14 +68,14 @@ Devices on your network must be running one of these editions. New features or c
 ### Supported Windows versions
 
 - Windows 11 Enterprise
-- Windows 11 Enterprise IoT
+- Windows 11 IoT Enterprise
 
 - Windows 11 Education
 - Windows 11 Pro
 - Windows 11 Pro Education
 - Windows 10 Enterprise
 - [Windows 10 Enterprise LTSC 2016 (or later)](/windows/whats-new/ltsc/)
-- Windows 10 Enterprise IoT (including LTSC)
+- Windows 10 IoT Enterprise (including LTSC)
 - Windows 10 Education
 - Windows 10 Pro
 - Windows 10 Pro Education

@@ -3,11 +3,11 @@ title: Address false positives/negatives in Microsoft Defender for Endpoint
 description: Learn how to handle false positives or false negatives in Microsoft Defender for Endpoint.
 ms.service: defender-endpoint
 ms.subservice: ngp
-ms.author: deniseb
-author: denisebmsft
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 ms.date: 07/18/2023
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security
@@ -37,7 +37,7 @@ search.appverid: met150
 
 In endpoint protection solutions, a false positive is an entity, such as a file or a process that was detected and identified as malicious even though the entity isn't actually a threat. A false negative is an entity that wasn't detected as a threat, even though it actually is malicious. False positives/negatives can occur with any threat protection solution, including [Defender for Endpoint](microsoft-defender-endpoint.md).
 
-:::image type="content" source="images/false-positives-overview.png" alt-text="The definition of false positive and negatives in the Microsoft Defender portal" lightbox="images/false-positives-overview.png":::
+:::image type="content" source="media/false-positives-overview.png" alt-text="The definition of false positive and negatives in the Microsoft Defender portal" lightbox="media/false-positives-overview.png":::
 
 Fortunately, steps can be taken to address and reduce these kinds of issues. If you're seeing false positives/negatives occurring with Defender for Endpoint, your security operations can take steps to address them by using the following process:
 
@@ -49,7 +49,7 @@ Fortunately, steps can be taken to address and reduce these kinds of issues. If 
 
 You can get help if you still have issues with false positives/negatives after performing the tasks described in this article. See [Still need help?](#still-need-help)
 
-:::image type="content" source="images/false-positives-step-diagram.png" alt-text="The steps to address false positives and negatives" lightbox="images/false-positives-step-diagram.png":::
+:::image type="content" source="media/false-positives-step-diagram.png" alt-text="The steps to address false positives and negatives" lightbox="media/false-positives-step-diagram.png":::
 
 > [!NOTE]
 > This article is intended as guidance for security operators and security administrators who are using [Defender for Endpoint](microsoft-defender-endpoint.md).
@@ -153,7 +153,7 @@ When you're done reviewing and undoing actions that were taken as a result of fa
 ### Remove a file from quarantine across multiple devices
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/autoir-quarantine-file-1.png" alt-text="The Quarantine file" lightbox="images/autoir-quarantine-file-1.png":::
+> :::image type="content" source="media/autoir-quarantine-file-1.png" alt-text="The Quarantine file" lightbox="media/autoir-quarantine-file-1.png":::
 
 1. In the [Microsoft Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2077139), select **Actions & submissions** and then select **Action center**.
 
@@ -260,7 +260,7 @@ To specify entities as exclusions for Defender for Endpoint, create "allow" indi
 - [IP addresses, URLs, and domains](#indicators-for-ip-addresses-urls-or-domains)
 - [Application certificates](#indicators-for-application-certificates)
 
-:::image type="content" source="images/false-positives-indicators.png" alt-text="The Indicator types" lightbox="images/false-positives-indicators.png":::
+:::image type="content" source="media/false-positives-indicators.png" alt-text="The Indicator types" lightbox="media/false-positives-indicators.png":::
 
 #### Indicators for files
 
@@ -375,7 +375,7 @@ See [Configure PUA protection in Microsoft Defender Antivirus](detect-block-pote
 Depending on the [level of automation](/microsoft-365/security/defender-endpoint/automation-levels) set for your organization and other security settings, remediation actions are taken on artifacts that are considered to be *Malicious* or *Suspicious*. In some cases, remediation actions occur automatically; in other cases, remediation actions are taken manually or only upon approval by your security operations team.
 
 - [Learn more about automation levels](/microsoft-365/security/defender-endpoint/automation-levels); and then
-- [Configure AIR capabilities in Defender for Endpoint](/microsoft-365/security/defender-endpoint/configure-automated-investigations-remediation).
+- [Configure AIR capabilities in Defender for Endpoint](configure-automated-investigations-remediation.md).
 
 > [!IMPORTANT]
 > We recommend using *Full automation* for automated investigation and remediation. Don't turn these capabilities off because of a false positive. Instead, use ["allow" indicators to define exceptions](#indicators-for-defender-for-endpoint), and keep automated investigation and remediation set to take appropriate actions automatically. Following [this guidance](automation-levels.md#levels-of-automation) helps reduce the number of alerts your security operations team must handle.

@@ -1,17 +1,12 @@
 ---
 title: Microsoft Defender for Endpoint Cloud-delivered protection demonstration
 description: See how Cloud-delivered protection can automatically detect and delete malicious files. 
-keywords: Microsoft Defender for Endpoint, Microsoft Defender ATP, virus protection, virus detection, virus deletion, 
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-endpoint
-ms.mktglfcycl: evaluation
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security
@@ -48,11 +43,11 @@ Cloud-delivered protection for Microsoft Defender Antivirus, also referred to as
 
 2. If you see file blocked by Microsoft Defender SmartScreen, select on "View downloads" button.
 
-   :::image type="content" source="images/cloud-delivered-protection-smartscreen-block.png" alt-text="SmartScreen blocks an unsafe download, and provides a button to select to view the **Downloads** list details.":::
+   :::image type="content" source="media/cloud-delivered-protection-smartscreen-block.png" alt-text="SmartScreen blocks an unsafe download, and provides a button to select to view the **Downloads** list details.":::
 
 3. In Downloads menu right select on the blocked file and select on **Download unsafe file**.
 
-   :::image type="content" source="images/cloud-delivered-protection-smartscreen-block-view-downloads.png" alt-text="Lists the download as unsafe, but provides an option to proceed with the download":::
+   :::image type="content" source="media/cloud-delivered-protection-smartscreen-block-view-downloads.png" alt-text="Lists the download as unsafe, but provides an option to proceed with the download":::
 
 4. You should see that "Microsoft Defender Antivirus" found a virus and deleted it.
 
@@ -60,7 +55,7 @@ Cloud-delivered protection for Microsoft Defender Antivirus, also referred to as
    >
    > In some cases, you might also see **Threat Found** notification from Microsoft Defender Security Center.
 
-   :::image type="content" source="images/cloud-delivered-protection-smartscreen-threat-found-notification.png" alt-text="Microsoft Defender Antivirus Threats found notification provides options to get details":::
+   :::image type="content" source="media/cloud-delivered-protection-smartscreen-threat-found-notification.png" alt-text="Microsoft Defender Antivirus Threats found notification provides options to get details":::
 
 5. If the file executes, or if you see that it was blocked by Microsoft Defender SmartScreen,  cloud-delivered protection isn't working. For more information, see [Configure and validate network connections for Microsoft Defender Antivirus](/windows/threat-protection/windows-defender-antivirus/configure-network-connections-windows-defender-antivirus?ocid=wd-av-demo-cloud-middle).
 

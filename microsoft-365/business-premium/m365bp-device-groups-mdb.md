@@ -4,15 +4,15 @@ description: "Learn about device groups and how to apply policies with Intune in
 search.appverid: MET150
 ms.author: siosulli
 author: siosulli
-manager: dansimp 
+manager: deniseb
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
 ms.date: 07/19/2023
 ms.localizationpriority: medium
 ms.reviewer: nehabha
-f1.keywords: NOCSH 
-ms.collection: 
+f1.keywords: NOCSH
+ms.collection:
 - SMB
 - m365-security
 - tier1
@@ -20,7 +20,7 @@ ms.collection:
 
 # Device groups and categories in Microsoft 365 Business Premium
 
-Microsoft 365 Business Premium includes endpoint protection through Microsoft Defender for Business and Microsoft Intune. Device protection policies are applied to devices through certain collections that are called device groups. In Intune, devices are grouped into device categories as a different way of organizing them. 
+Microsoft 365 Business Premium includes endpoint protection through Microsoft Defender for Business and Microsoft Intune. Device protection policies are applied to devices through certain collections that are called device groups. In Intune, devices are grouped into device categories as a different way of organizing them.
 
 ## Working with device groups
 
@@ -83,7 +83,7 @@ You can also go to the Microsoft Entra ID portal ([https://entra.microsoft.com](
 
 In the Microsoft Entra ID portal, you can create dynamic groups based on the device category and device category name. Use dynamic group rules to automatically add and remove devices. If a device's attributes change, the system looks at your dynamic group rules for the directory to see if the device meets the rule requirements (is added) or no longer meets the rules requirements (is removed).
 
-You can create a dynamic group for either devices or users, but not for both. You also can't create a device group based on the device owners' attributes. Device membership rules can only reference device attributions. 
+You can create a dynamic group for either devices or users, but not for both. You also can't create a device group based on the device owners' attributes. Device membership rules can only reference device attributions.
 
 ## How categories are used when enrolling devices
 
@@ -96,20 +96,21 @@ After categories and device groups are established, people who have iOS and Andr
 After choosing a category, the device is automatically added to the corresponding group. If a device is already enrolled before you configure categories, the user sees a notification about the device on the Company Portal website. This lets the user know to select a category the next time they access the Company Portal app on iOS/iPadOS or Android.
 
 > [!NOTE]
+>
 > - You can edit a device category in the Microsoft Entra ID portal, but you must manually update any security groups that reference this category.
 > - If you delete a category, devices assigned to it display the category name **Unassigned**.
 
 ## View the categories of devices that you manage
 
-1. Sign in to the [Microsoft Intune admin center](https://intune.microsoft.com), choose **Devices** > **All devices**.
+1. Sign in to the [Microsoft Intune admin center](https://intune.microsoft.com), choose **Devices** \> **All devices**.
 
 2. In the list of devices, examine the **Device category** column.
 
-3. If the Device category column isn't shown, select **Columns** > **Category** > **Apply**.
+3. If the Device category column isn't shown, select **Columns** \> **Category** \> **Apply**.
 
 ## Change the category of a device
 
-1. Sign in to the [Microsoft Intune admin center](https://intune.microsoft.com), choose **Devices** > **All devices**. 
+1. Sign in to the [Microsoft Intune admin center](https://intune.microsoft.com), choose **Devices** \> **All devices**.
 
 2. Select the category you want from the list, to see its properties.
 

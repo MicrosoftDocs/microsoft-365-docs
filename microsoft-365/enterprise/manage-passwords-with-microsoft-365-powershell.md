@@ -1,9 +1,9 @@
 ---
-title: "Manage passwords with PowerShell"
+title: "Manage passwords with Microsoft Graph PowerShell"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 11/12/2020
+ms.date: 03/07/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -13,6 +13,7 @@ search.appverid:
 ms.collection: 
 - scotvorg
 - Ent_O365
+- must-keep
 f1.keywords:
 - CSH
 ms.custom:
@@ -20,44 +21,25 @@ ms.custom:
   - Ent_Office_Other
   - O365ITProTrain
   - has-azure-ad-ps-ref
-description: "Learn how to use PowerShell to manage passwords."
+  - azure-ad-ref-level-one-done
+description: "Learn how to use Microsoft Graph PowerShell to manage passwords."
 ---
 
-# Manage passwords with PowerShell
+# Manage passwords with Microsoft Graph PowerShell
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
-You can use PowerShell for Microsoft 365 as an alternative to the Microsoft 365 admin center to manage passwords in Microsoft 365. 
+You can use Microsoft Graph PowerShell as an alternative to the Microsoft 365 admin center to manage passwords in Microsoft 365.
 
-When a command block in this article requires that you specify variable values, use these steps.
+>[!NOTE]
+> The Azure Active Directory module is being replaced by the Microsoft Graph PowerShell SDK. You can use the Microsoft Graph PowerShell SDK to access all Microsoft Graph APIs. For more information, see [Get started with the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/get-started).
 
-1. Copy the command block to the clipboard and paste it into Notepad or the PowerShell Integrated Script Environment (ISE).
-2. Fill in the variable values and remove the "<" and ">" characters.
-3. Run the commands in the PowerShell window or the PowerShell ISE.
+First, use a **Microsoft Entra DC admin**, **Cloud Application Admin**, or **Global admin** account to [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md).
 
-## Use the Azure Active Directory PowerShell for Graph module
-
-First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
-
-### Set a password
-
-Use these commands to specify a password for a user account.
+Managing passwords for a user requires the **User.ReadWrite.All** permission scope or one of the other permissions listed in the ['Assign license' Graph API reference page](/graph/api/user-assignlicense).
 
 ```powershell
-$userUPN="<user account sign in name, such as belindan@contoso.com>"
-$newPassword="<new password>"
-$secPassword = ConvertTo-SecureString $newPassword -AsPlainText -Force
-Set-AzureADUserPassword -ObjectId  $userUPN -Password $secPassword
-```
-### Force a user to change their password
-
-Use these commands to set a password and force a user to change their new password.
-
-```powershell
-$userUPN="<user account sign in name, such as belindan@contoso.com>"
-$newPassword="<new password>"
-$secPassword = ConvertTo-SecureString $newPassword -AsPlainText -Force
-Set-AzureADUserPassword -ObjectId  $userUPN -Password $secPassword -EnforceChangePasswordPolicy $true
+Connect-Graph -Scopes User.ReadWrite.All
 ```
 
 Use these commands to set a password and force a user to change their new password the next time they sign in.
@@ -66,30 +48,7 @@ Use these commands to set a password and force a user to change their new passwo
 $userUPN="<user account sign in name, such as belindan@contoso.com>"
 $newPassword="<new password>"
 $secPassword = ConvertTo-SecureString $newPassword -AsPlainText -Force
-Set-AzureADUserPassword -ObjectId  $userUPN -Password $secPassword -ForceChangePasswordNextLogin $true
-```
-
-## Use the Microsoft Azure Active Directory module for Windows PowerShell
-
-First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
-
-### Set a password
-
-Use these commands to specify a password for a user account.
-
-```powershell
-$userUPN="<user account sign in name>"
-$newPassword="<new password>"
-Set-MsolUserPassword -UserPrincipalName $userUPN -NewPassword $newPassword
-```
-
-### Force a user to change their password
-
-Use these commands to force a user to change their password.
-
-```powershell
-$userUPN="<user account sign in name>"
-Set-MsolUserPassword -UserPrincipalName $userUPN -ForceChangePassword $true
+Update-MgUser -UserId $userUPN -PasswordProfile @{ ForceChangePasswordNextSignIn = $true; Password = $newPassword }
 ```
 
 ## See also

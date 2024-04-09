@@ -4,13 +4,13 @@ f1.keywords:
 - NOCSH
 ms.author: siosulli
 author: siosulli
-manager: dansimp
+manager: deniseb
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
 ms.date: 11/02/2023
 ms.localizationpriority: medium
-ms.collection: 
+ms.collection:
 - M365-Campaigns
 - m365solution-smb
 - m365-security

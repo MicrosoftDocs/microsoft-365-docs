@@ -1,12 +1,12 @@
 ---
-ms.date: 05/24/2023
+ms.date: 04/01/2024
 ---
 |  Geo location                          |  Code  |  eDiscovery data location        |
 |:---------------------------------------|:-------|:---------------------------------|
 |Macro Region Geography 2 - Asia-Pacific |APC     |Southeast or East Asia datacenters|
 |Australia                               |AUS     |Southeast or East Asia datacenters|
 |Brazil                                  |BRA     |(eDiscovery data location coming soon)|
-|Canada                                  |CAN     |US datacenters                    |
+|Canada                                  |CAN     |- eDiscovery (Premium): Canada datacenters <br> - eDiscovery (Standard): US datacenters|
 |Macro Region Geography 1 - EMEA         |EUR     |Europe datacenters                |
 |France                                  |FRA     |Europe datacenters                |
 |Germany                                 |DEU     |Europe datacenters                |

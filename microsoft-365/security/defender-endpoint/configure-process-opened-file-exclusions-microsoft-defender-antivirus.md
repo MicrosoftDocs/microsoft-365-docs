@@ -4,22 +4,23 @@ description: You can exclude files from scans if they've been opened by a specif
 ms.service: defender-endpoint
 ms.subservice: ngp
 ms.localizationpriority: medium
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 ms.topic: conceptual
 ms.custom: nextgen
 ms.reviewer:
-manager: dansimp
+manager: deniseb
 ms.collection: 
 - m365-security
 - tier2
 - mde-ngp
 search.appverid: met150
-ms.date: 07/18/2023
+ms.date: 03/19/2024
 ---
 
-# Configure exclusions for files opened by processes
 
+
+# Configure exclusions for files opened by processes
 
 **Applies to:**
 
@@ -36,7 +37,7 @@ See [Important points about exclusions](configure-exclusions-microsoft-defender-
 
 This article describes how to configure exclusion lists.
 
-## Examples of exclusions
+## Examples of process exclusions
 
 |Exclusion|Example|
 |---|---|
@@ -60,6 +61,34 @@ You can [configure how locally and globally defined exclusions lists are merged]
     
 > [!NOTE]
 > **Network Protection** and **Attack surface reduction rules** are directly impacted by process exclusions on all platforms, meaning that a process exclusion on any OS (Windows, MacOS, Linux) will result in Network Protection or ASR being unable to inspect traffic or enforce rules for that specific process.
+
+### Image name vs full path for process exclusions
+
+Two different types of process exclusions may be set. A process may be excluded by image name, or by full path. The image name is simply the file name of the process, without the path.
+
+For example, given the process `MyProcess.exe` running from `C:\MyFolder\` the full path to this process would be `C:\MyFolder\MyProcess.exe` and the image name is `MyProcess.exe`. 
+
+Image name exclusions are much more broad - an exclusion on `MyProcess.exe` will exclude any processes with this image name, regardless of the path they are run from. So for example, if the process `MyProcess.exe` is excluded by image name, it will also be excluded if it is run from `C:\MyOtherFolder`, from removable media, et cetera. As such it is recommended that whenever possible, the full path is used. 
+
+### Use wildcards in the process exclusion list
+
+The use of wildcards in the process exclusion list is different from their use in other exclusion lists. When the process exclusion is defined as an image name only, wildcard usage is not allowed. However when a full path is used, wildcards are supported and the wildcard behavior behaves as described in [File and Folder Exclusions](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
+
+The use of environment variables (such as `%ALLUSERSPROFILE%`) as wildcards when defining items in the process exclusion list is also supported. Details and a full list of supported environment variables are described in [File and Folder Exclusions](configure-extension-file-exclusions-microsoft-defender-antivirus.md). 
+
+The following table describes how the wildcards can be used in the process exclusion list, when a path is supplied:
+
+|Wildcard|Example use|Example matches|
+|---|---|---|
+|`*` (asterisk) <p> Replaces any number of characters.|`C:\MyFolder\*`|Any file opened by `C:\MyFolder\MyProcess.exe` or `C:\MyFolder\AnotherProcess.exe`|
+|                                                     |`C:\*\*\MyProcess.exe`|Any file opened by `C:\MyFolder1\MyFolder2\MyProcess.exe` or `C:\MyFolder3\MyFolder4\MyProcess.exe`|
+|                                                     |`C:\*\MyFolder\My*.exe`|Any file opened by `C:\MyOtherFolder\MyFolder\MyProcess.exe` or `C:\AnotherFolder\MyFolder\MyOtherProcess.exe`|
+|'?' (question mark) <p> Replaces one character.      |`C:\MyFolder\MyProcess??.exe`|Any file opened by `C:\MyFolder\MyProcess42.exe` or `C:\MyFolder\MyProcessAA.exe` or `C:\MyFolder\MyProcessF5.exe`|
+| Envionment Variables                                |`%ALLUSERSPROFILE%\MyFolder\MyProcess.exe`|Any file opened by `C:\ProgramData\MyFolder\MyProcess.exe`|
+
+### Contextual Process Exclusions
+
+Note that a process exclusion may also be defined via a [Contextual exclusion](configure-contextual-file-folder-exclusions-microsoft-defender-antivirus.md) allowing for example a specific file to be excluded only if it is opened by a specific process. 
 
 ## Configure the list of exclusions for files opened by specified processes
 
@@ -115,7 +144,7 @@ Add-MpPreference -ExclusionProcess "c:\internal\test.exe"
 
 For more information on how to use PowerShell with Microsoft Defender Antivirus, see Manage antivirus with PowerShell cmdlets and [Microsoft Defender Antivirus cmdlets](/powershell/module/defender).
 
-### Use Windows Management Instruction (WMI) to exclude files that have been opened by specified processes from scans
+## Use Windows Management Instruction (WMI) to exclude files that have been opened by specified processes from scans
 
 Use the [**Set**, **Add**, and **Remove** methods of the **MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) class for the following properties:
 
@@ -127,22 +156,9 @@ The use of **Set**, **Add**, and **Remove** is analogous to their counterparts i
 
 For more information and allowed parameters, see  [Windows Defender WMIv2 APIs](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal).
 
-### Use the Windows Security app to exclude files that have been opened by specified processes from scans
+## Use the Windows Security app to exclude files that have been opened by specified processes from scans
 
-See [Add exclusions in the Windows Security app](microsoft-defender-security-center-antivirus.md) for instructions.
-
-## Use wildcards in the process exclusion list
-
-The use of wildcards in the process exclusion list is different from their use in other exclusion lists.
-
-In particular, you can't use the question mark (`?`) wildcard, and the asterisk (`*`) wildcard can only be used at the end of a complete path. You can still use environment variables (such as `%ALLUSERSPROFILE%`) as wildcards when defining items in the process exclusion list.
-
-The following table describes how the wildcards can be used in the process exclusion list:
-
-|Wildcard|Example use|Example matches|
-|---|---|---|
-|`*` (asterisk) <p> Replaces any number of characters|`C:\MyData\*`|Any file opened by `C:\MyData\file.exe`|
-|Environment variables <p> The defined variable is populated as a path when the exclusion is evaluated|`%ALLUSERSPROFILE%\CustomLogFiles\file.exe`|Any file opened by `C:\ProgramData\CustomLogFiles\file.exe`|
+Follow the instructions in [Add exclusions in the Windows Security app](microsoft-defender-security-center-antivirus.md).
 
 ## Review the list of exclusions
 

@@ -3,12 +3,12 @@ title: Use network protection to help prevent connections to bad sites
 description: Protect your network by preventing users from accessing known malicious and suspicious network addresses
 ms.service: defender-endpoint
 ms.localizationpriority: medium
-ms.date: 09/13/2023
+ms.date: 02/28/2024
 audience: ITPro
-author: denisebmsft
-ms.author: deniseb
-ms.reviewer: oogunrinde
-manager: dansimp
+author: siosulli
+ms.author: siosulli
+ms.reviewer: mkaminska
+manager: deniseb
 ms.custom: asr
 ms.subservice: asr
 ms.topic: overview
@@ -48,9 +48,9 @@ The following table summarizes network protection areas of coverage.
 
 | Feature | Microsoft Edge | 3rd-party browsers | Non-browser processes <br> (e.g. PowerShell) |
 |:---|:---|:---|:---|
-| Web Threat Protection | SmartScreen must be enabled | NP has to be in block mode | NP has to be in block mode |
-| Custom Indicators | SmartScreen must be enabled | NP has to be in block mode | NP has to be in block mode |
-| Web Content Filtering | SmartScreen must be enabled | NP has to be in block mode | Not supported |
+| Web Threat Protection | SmartScreen must be enabled | Network protection must be in block mode | Network protection must be in block mode |
+| Custom Indicators | SmartScreen must be enabled | Network protection must be in block mode | Network protection must be in block mode |
+| Web Content Filtering | SmartScreen must be enabled | Network protection must be in block mode | Not supported |
 
 > [!NOTE]
 > On Mac and Linux, you must have network protection in block mode to get support for these features in Edge.
@@ -61,7 +61,7 @@ The following table summarizes network protection areas of coverage.
 > - Encrypted URLs (FQDN only) can be blocked in third party browsers (i.e. other than Internet Explorer, Edge).
 > - Full URL path blocks can be applied for unencrypted URLs.
 >
-> There may be up to 2 hours of latency (usually less) between the time the action is taken, and the URL and IP being blocked.
+> There might be up to 2 hours of latency (usually less) between the time the action is taken, and the URL and IP being blocked.
 
 Watch this video to learn how Network protection helps reduce the attack surface of your devices from phishing scams, exploits, and other malicious content.
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4r4yZ]
@@ -72,7 +72,7 @@ Network protection requires Windows 10 or 11 (Pro or Enterprise), Windows Server
 
 | Windows version | Microsoft Defender Antivirus |
 |:---|:---|
-| Windows 10 version 1709 or later, Windows 11, Windows Server 1803 or later | Make sure that [Microsoft Defender Antivirus real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md) and [cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md) are enabled (active) |
+| Windows 10 version 1709 or later, Windows 11, Windows Server 1803 or later | Make sure that [Microsoft Defender Antivirus real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md), [behavior monitoring](/microsoft-365/security/defender-endpoint/behavior-monitor) and [cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md) are enabled (active) |
 | Windows Server 2012 R2 and Windows Server 2016 with the unified agent | Platform Update version 4.18.2001.x.x or newer |
 
 ## Why network protection is important
@@ -142,7 +142,7 @@ A user visits a website:
   - **Unblock** - The user will have access to the site for 24 hours; at which point the block is reenabled. The user can continue to use **Unblock** to access the site until such time that the administrator prohibits (blocks) the site, thus removing the option to **Unblock**.
   - **Feedback** - The toast notification presents the user with a link to submit a ticket, which the user can use to submit feedback to the administrator in an attempt to justify access to the site.
 
-    :::image type="content" source="images/network-protection-phishing-warn-2.png" alt-text="Shows a network protection phishing content warn notification.":::
+    :::image type="content" source="media/network-protection-phishing-warn-2.png" alt-text="Shows a network protection phishing content warn notification.":::
 
   > [!NOTE]
   > The images shown here for warn experience and block experience (below) both list **"blocked url"** as example placeholder text; in a functioning environment the actual url or domain will be listed.  
@@ -155,17 +155,17 @@ A user visits a website:
   - **Ok** The toast notification is released (removed), and the attempt to access the site is ended.
   - **Feedback** The toast notification presents the user with a link to submit a ticket, which the user can use to submit feedback to the administrator in an attempt to justify access to the site.
 
-    :::image type="content" source="images/network-protection-phishing-blocked.png" alt-text="Shows a network protection known phishing content blocked notification." lightbox="images/network-protection-phishing-blocked.png":::
+    :::image type="content" source="media/network-protection-phishing-blocked.png" alt-text="Shows a network protection known phishing content blocked notification." lightbox="media/network-protection-phishing-blocked.png":::
 
 ## SmartScreen Unblock
 
 With indicators in Defender for Endpoint, administrators can allow end users to bypass warnings that are generated for some URLs and IPs. Depending on why the URL was blocked, when a SmartScreen block is encountered it may offer the ability to unblock the site for up to 24 hours. In such cases, a Windows Security toast notification will appear, permitting the end-user to **Unblock** the URL or IP for the defined period of time.  
 
-:::image type="content" source="images/network-protection-smart-screen-block-notification.png" alt-text="Windows Security notification for network protection.":::
+:::image type="content" source="media/network-protection-smart-screen-block-notification.png" alt-text="Windows Security notification for network protection.":::
 
 Microsoft Defender for Endpoint administrators can configure SmartScreen Unblock functionality in the [Microsoft Defender portal](https://security.microsoft.com) using an "allow" indicator for IPs, URLs, and domains.
 
-:::image type="content" source="images/network-protection-smart-screen-block-configuration.png" alt-text="Network protection SmartScreen block configuration ULR and IP form.":::
+:::image type="content" source="media/network-protection-smart-screen-block-configuration.png" alt-text="Network protection SmartScreen block configuration ULR and IP form.":::
 
 See [Create indicators for IPs and URLs/domains](indicator-ip-domain.md).
 
@@ -197,7 +197,7 @@ DeviceEvents
 
 ```
 
-:::image type="content" source="images/network-protection-advanced-hunting.png" alt-text="Advanced hunting for auditing and identifying events." lightbox="images/network-protection-advanced-hunting.png":::
+:::image type="content" source="media/network-protection-advanced-hunting.png" alt-text="Advanced hunting for auditing and identifying events." lightbox="media/network-protection-advanced-hunting.png":::
 
 > [!TIP]
 > These entries have data in the **AdditionalFields** column which gives you great info around the action, if you expand **AdditionalFields** you can also get the fields: **IsAudit**, **ResponseCategory**, and **DisplayName**.
@@ -358,15 +358,15 @@ Verify whether network protection is enabled on a local device by using Registry
 
 For additional information, see: [Turn on network protection](enable-network-protection.md)
 
-##### Network protection suggestion
+#### Network protection suggestion
 
 For Windows Server 2012R2/2016 unified MDE client, Windows Server version 1803 or newer, Windows Server 2019 or newer, and Windows 10 Enterprise Multi-Session 1909 and up (used in Windows Virtual Desktop on Azure), there are additional registry keys that must be enabled:
 
-**HKEY_LOCAL_MACHINE**\**SOFTWARE**\**Policies**\**Microsoft**\**Windows Defender**\**Windows Defender Exploit Guard**\**Network Protection**
+**HKEY_LOCAL_MACHINE**\\**SOFTWARE**\\**Microsoft**\\**Windows Defender**\\**Windows Defender Exploit Guard**\\**Network Protection**
 
-**AllowNetworkProtectionDownLevel** (dword) 1 (hex)
-**AllowNetworkProtectionOnWinServer** (dword) 1 (hex)
-**EnableNetworkProtection** (dword) 1 (hex)
+- **AllowNetworkProtectionOnWinServer** (dword) 1 (hex)
+- **EnableNetworkProtection** (dword) 1 (hex)
+- **AllowNetworkProtectionDownLevel** (dword) 1 (hex) - Windows Server 2012R2 and Windows Server 2016 only
 
 > [!NOTE]
 > Depending on your infrastructure, volume of traffic, and other conditions, **HKEY_LOCAL_MACHINE**\\**SOFTWARE**\\**Policies**\\**Microsoft**\\**Windows Defender** \\**NIS**\\**Consumers**\\**IPS** - **AllowDatagramProcessingOnWinServer (dword) 1 (hex)** can have an effect on network performance.

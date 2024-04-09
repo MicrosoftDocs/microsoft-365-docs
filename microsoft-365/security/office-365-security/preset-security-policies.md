@@ -4,7 +4,7 @@ f1.keywords:
   - NOCSH
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: medium
@@ -14,13 +14,12 @@ ms.collection:
   - tier1
 ms.custom:
 description: Admins can learn how to apply Standard and Strict policy settings across the protection features of Exchange Online Protection (EOP) and Microsoft Defender for Office 365
-ms.subservice: mdo
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 search.appverid: met150
 ms.date: 11/2/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 1 and Plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
@@ -30,7 +29,7 @@ appliesto:
 
 _Preset security policies_ allow you to apply protection features to users based on our recommended settings. Unlike custom policies that are infinitely configurable, virtually all of the settings in preset security policies aren't configurable, and are based on our observations in the datacenters. The settings in preset security policies provide a balance between keeping harmful content away from users while avoiding unnecessary disruptions.
 
-Depending on your organization, preset security policies provide many of the protection features that are available in [Exchange Online Protection (EOP)](eop-about.md) and [Microsoft Defender for Office 365](mdo-security-comparison.md).
+Depending on your organization, preset security policies provide many of the protection features that are available in [Exchange Online Protection (EOP)](eop-about.md) and [Microsoft Defender for Office 365](mdo-about.md).
 
 The following preset security policies are available:
 
@@ -53,9 +52,7 @@ The rest of this article how to configure preset security policies.
   - [Exchange Online permissions](/exchange/permissions-exo/permissions-exo):
     - _Configure preset security policies_: Membership in the **Organization Management** or **Security Administrator** role groups.
     - _Read-only access to preset security policies_: Membership in the **Global Reader** role group.
-  - [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-role): Membership in the **Global Administrator**, **Security Administrator**, or **Global Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
-
-<a name='use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users'></a>
+  - [Microsoft Entra permissions](/entra/identity/role-based-access-control/manage-roles-portal): Membership in the **Global Administrator**, **Security Administrator**, or **Global Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 ## Use the Microsoft Defender portal to assign Standard and Strict preset security policies to users
 
@@ -143,7 +140,7 @@ The rest of this article how to configure preset security policies.
 
    Click in the **Add domains** box, enter a domain value, press the ENTER key or select the value that's displayed below the box. To remove a domain from the box and start over, select :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: next to the domain. When you're ready to add the domain, select **Add**. Repeat this step as many times as necessary.
 
-  The domains you added are listed on the page. To remove the domain, select :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: next to the value.
+   The domains you added are listed on the page. To remove the domain, select :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: next to the value.
 
    The domains you added are listed on the page. To remove a domain, select :::image type="icon" source="../../media/m365-cc-sc-close-icon.png" border="false"::: next to the entry.
 
@@ -168,15 +165,11 @@ The rest of this article how to configure preset security policies.
 
 10. On the **Standard protection updated** or **Strict protection updated** page, select **Done**.
 
-<a name='use-the-microsoft-365-defender-portal-to-modify-the-assignments-of-standard-and-strict-preset-security-policies'></a>
-
 ## Use the Microsoft Defender portal to modify the assignments of Standard and Strict preset security policies
 
-The steps to modify the assignment of the **Standard protection** or **Strict protection** preset security policy are the same as when you initially [assigned the preset security policies to users](#use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users).
+The steps to modify the assignment of the **Standard protection** or **Strict protection** preset security policy are the same as when you initially [assigned the preset security policies to users](#use-the-microsoft-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users).
 
 To disable the **Standard protection** or **Strict protection** preset security policies while still preserving the existing conditions and exceptions, slide the toggle to :::image type="icon" source="../../media/scc-toggle-off.png" border="false":::. To enable the policies, slide the toggle to :::image type="icon" source="../../media/scc-toggle-on.png" border="false":::.
-
-<a name='use-the-microsoft-365-defender-portal-to-add-exclusions-to-the-built-in-protection-preset-security-policy'></a>
 
 ## Use the Microsoft Defender portal to add exclusions to the Built-in protection preset security policy
 
@@ -552,7 +545,7 @@ The differences in meaningful policy settings in the Standard preset security po
 |&nbsp;&nbsp;**Spam** detection action (_SpamAction_)|**Move message to Junk Email folder** (`MoveToJmf`)|**Quarantine message** (`Quarantine`)|
 |**Anti-phishing policy**|||
 |&nbsp;&nbsp;**If the message is detected as spoof by spoof intelligence** (_AuthenticationFailAction_)|**Move message to Junk Email folder** (`MoveToJmf`)|**Quarantine message** (`Quarantine`)|
-|**Show first contact safety tip** (_EnableFirstContactSafetyTips_)|Selected (`$true`)|Not selected (`$false`)|
+|**Show first contact safety tip** (_EnableFirstContactSafetyTips_)|Selected (`$true`)|Selected (`$true`)|
 |&nbsp;&nbsp;**If mailbox intelligence detects an impersonated user** (_MailboxIntelligenceProtectionAction_)|**Move message to Junk Email folder** (`MoveToJmf`)|**Quarantine message** (`Quarantine`)|
 |&nbsp;&nbsp;**Phishing email threshold** (_PhishThresholdLevel_)|**3 - More aggressive** (`3`)|**4 - Most aggressive** (`4`)|
 |**Safe Attachments policy**|No difference|No difference|

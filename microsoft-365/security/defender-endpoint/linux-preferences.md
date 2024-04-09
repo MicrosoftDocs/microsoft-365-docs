@@ -1,13 +1,13 @@
 ---
 title: Set preferences for Microsoft Defender for Endpoint on Linux
-ms.reviewer:
+ms.reviewer: gopkr
 description: Describes how to configure Microsoft Defender for Endpoint on Linux in enterprises.
 ms.service: defender-endpoint
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 ms.date: 07/07/2023
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -79,8 +79,8 @@ Specifies the enforcement preference of antivirus engine. There are three values
 #### Enable/disable behavior-monitoring 
 
 Determines whether behavior monitoring and blocking capability is enabled on the device or not. 
-
-<br>
+> [!NOTE]
+> This feature is applicable only when Real-Time Protection feature is enabled.
 
 ****
 |Description|Value|
@@ -408,6 +408,9 @@ When this feature is enabled, Defender for Endpoint will scan network socket eve
 
 The *cloudService* entry in the configuration profile is used to configure the cloud-driven protection feature of the product.
 
+> [!NOTE]
+> Cloud-delivered protection is applicable with any Enforcement level settings (real_time, on_demand, passive).
+
 |Description|Value|
 |---|---|
 |**Key**|cloudService|
@@ -696,9 +699,12 @@ The following configuration profile contains entries for all settings described 
 ```JSON
 {
    "antivirusEngine":{
-      "enforcementLevel":"passive",
+      "enforcementLevel":"real_time",
+      "behaviorMonitoring": "enabled",
       "scanAfterDefinitionUpdate":true,
       "scanArchives":true,
+      "scanHistoryMaximumItems": 10000,
+      "scanResultsRetentionDays": 90,
       "maximumOnDemandScanThreads":2,
       "exclusionsMergePolicy":"merge",
       "exclusions":[
@@ -814,7 +820,6 @@ To verify that your /etc/opt/microsoft/mdatp/managed/mdatp_managed.json is worki
   **Exception:** The following configurations require a daemon restart to take effect:
 > - cloud-diagnostic
 > - log-rotation-parameters
-
 ## Configuration profile deployment
 
 Once you've built the configuration profile for your enterprise, you can deploy it through the management tool that your enterprise is using. Defender for Endpoint on Linux reads the managed configuration from the */etc/opt/microsoft/mdatp/managed/mdatp_managed.json* file.

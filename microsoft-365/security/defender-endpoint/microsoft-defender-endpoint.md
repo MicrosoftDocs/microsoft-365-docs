@@ -1,23 +1,20 @@
 ---
 title: Microsoft Defender for Endpoint
 description: Microsoft Defender for Endpoint is an enterprise endpoint security platform that helps defend against advanced persistent threats.
-keywords: introduction to Microsoft Defender for Endpoint, introduction to Microsoft Defender for Endpoint, cybersecurity, advanced persistent threat, enterprise security, machine behavioral sensor, cloud security, analytics, threat intelligence, attack surface reduction, next-generation protection, automated investigation and remediation, microsoft threat experts, secure score, advanced hunting, Microsoft Defender XDR, cyber threat hunting
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: high
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier1
+- essentials-overview
 ms.custom: intro-overview
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 06/14/2023
+ms.date: 01/19/2024
 ---
 
 # Microsoft Defender for Endpoint
@@ -61,12 +58,12 @@ Defender for Endpoint uses the following combination of technology built into Wi
 <center><h2>Microsoft Defender for Endpoint</center></h2>
 <table>
 <tr>
-<td><a href="#tvm"><center><img src="images/logo-mdvm.png" alt="Vulnerability Management"> <br><b> Core Defender Vulnerability Management</b></center></a></td>
-<td><a href="#asr"><center><img src="images/asr-icon.png" alt="Attack surface reduction"><br><b>Attack surface reduction</b></center></a></td>
-<td><center><a href="#ngp"><img src="images/ngp-icon.png" alt="Next-generation protection"><br> <b>Next-generation protection</b></a></center></td>
-<td><center><a href="#edr"><img src="images/edr-icon.png" alt="Endpoint detection and response"><br> <b>Endpoint detection and response</b></a></center></td>
-<td><center><a href="#ai"><img src="images/air-icon.png" alt="Automated investigation and remediation"><br> <b>Automated investigation and remediation</b></a></center></td>
-<td><center><a href="#mte"><img src="images/mte-icon.png" alt="Microsoft Threat Experts"><br> <b>Microsoft Threat Experts</b></a></center></td>
+<td><a href="#tvm"><center><img src="media/logo-mdvm.png" alt="Vulnerability Management"> <br><b> Core Defender Vulnerability Management</b></center></a></td>
+<td><a href="#asr"><center><img src="media/asr-icon.png" alt="Attack surface reduction"><br><b>Attack surface reduction</b></center></a></td>
+<td><center><a href="#ngp"><img src="media/ngp-icon.png" alt="Next-generation protection"><br> <b>Next-generation protection</b></a></center></td>
+<td><center><a href="#edr"><img src="media/edr-icon.png" alt="Endpoint detection and response"><br> <b>Endpoint detection and response</b></a></center></td>
+<td><center><a href="#ai"><img src="media/air-icon.png" alt="Automated investigation and remediation"><br> <b>Automated investigation and remediation</b></a></center></td>
+<td><center><a href="#mte"><img src="media/mte-icon.png" alt="Microsoft Threat Experts"><br> <b>Microsoft Threat Experts</b></a></center></td>
 </tr>
 <tr>
 <td colspan="7">

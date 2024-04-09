@@ -1,15 +1,11 @@
 ---
 title: Export browser extensions assessment
 description: Returns a table with an entry for every unique combination of DeviceId, BrowserName, ExtensionID.
-keywords: api, apis, export assessment, per device assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, browser extension assessment
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security

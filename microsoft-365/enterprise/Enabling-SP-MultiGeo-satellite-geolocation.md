@@ -2,9 +2,9 @@
 title: "Enabling SharePoint Multi-Geo in your satellite geo location"
 ms.reviewer: adwood
 ms.date: 08/10/2020
-ms.author: mikeplum
-author: MikePlumleyMSFT
-manager: pamgreen
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise

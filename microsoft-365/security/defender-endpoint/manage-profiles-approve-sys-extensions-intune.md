@@ -1,15 +1,11 @@
 ---
 title: Manage profiles and approve extensions using Intune
 description: Manage profiles and approve extensions using Intune for Microsoft Defender for Endpoint to work properly on macOS.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, performance, big sur, monterey, ventura, mde for mac
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -39,7 +35,7 @@ To approve the system extensions:
    |com.microsoft.wdav.epsext     |    UBF8T346G9     |
    |com.microsoft.wdav.netext     |    UBF8T346G9     |
 
-   :::image type="content" source="images/entries-in-configuration-settings-tab.png" alt-text="Adding entries in the Configuration settings tab." lightbox="images/entries-in-configuration-settings-tab.png":::
+   :::image type="content" source="media/entries-in-configuration-settings-tab.png" alt-text="Adding entries in the Configuration settings tab." lightbox="media/entries-in-configuration-settings-tab.png":::
 
 1. In the **Assignments** tab, assign this profile to **All Users & All devices**.
 1. Review and create this configuration profile.
@@ -161,7 +157,7 @@ sysext.xml: OK
 1. Open the configuration profile and upload the *sysext.xml* file.
 1. Select **OK**.
 
-:::image type="content" source="images/deploy-custom-configuration-profile.png" alt-text="Deploying custom configuration profile." lightbox="images/deploy-custom-configuration-profile.png":::
+:::image type="content" source="media/deploy-custom-configuration-profile.png" alt-text="Deploying custom configuration profile." lightbox="media/deploy-custom-configuration-profile.png":::
 
 5. In the **Assignments** tab, assign this profile to **All Users & All devices**.
 6. Review and create this configuration profile.

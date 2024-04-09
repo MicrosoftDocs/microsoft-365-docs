@@ -6,10 +6,9 @@ metadata:
     - NOCSH
   ms.author: chrisda
   author: chrisda
-  manager: dansimp
+  manager: deniseb
   audience: ITPro
   ms.article: faq
-
   ms.localizationpriority: medium
   search.appverid:
     - MET150
@@ -21,14 +20,14 @@ metadata:
     - seo-marvel-apr2020
   description: Admins can view frequently asked questions and answers about anti-spam protection in Exchange Online Protection (EOP).
   ms.subservice: mdo
-  ms.service: microsoft-365-security
+  ms.service: defender-office-365
 title: Anti-spam protection FAQ
 summary: |
   [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
   **Applies to**
   - [Exchange Online Protection](eop-about.md)
-  - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+  - [Microsoft Defender for Office 365 Plan 1 and Plan 2](mdo-about.md#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet)
   - [Microsoft Defender XDR](../defender/microsoft-365-defender.md)
 
   This article provides frequently asked questions and answers about anti-spam protection for Microsoft 365 organizations with mailboxes in Exchange Online, or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes.

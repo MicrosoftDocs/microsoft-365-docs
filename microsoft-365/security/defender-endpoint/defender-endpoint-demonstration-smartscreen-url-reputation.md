@@ -1,17 +1,12 @@
 ---
 title: Microsoft Defender for Endpoint SmartScreen URL reputation demonstrations
 description: Demonstrates how Microsoft Defender SmartScreen identifies phishing and malware websites based on URL reputation.
-keywords: Microsoft Defender for Endpoint, website phishing protection, website malware protection, URL reputation, demonstration, 
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-endpoint
-ms.mktglfcycl: evaluation
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security
@@ -48,7 +43,7 @@ Alerts the user to a suspicious page and ask for feedback:
 
   Launching this link should render a message similar to the following screenshot:
 
-  :::image type="content" source="images/smartscreen-url-reputation-is-this-phishing.png" alt-text="SmartScreen alerts the user the site is potentially a phishing site and possibly unsafe":::
+  :::image type="content" source="media/smartscreen-url-reputation-is-this-phishing.png" alt-text="SmartScreen alerts the user the site is potentially a phishing site and possibly unsafe":::
 
 ### Phishing Page
 
@@ -58,7 +53,7 @@ A page known for phishing that should be blocked:
 
   Launching this link should render a message similar to the following example:
 
-  :::image type="content" source="images/smartscreen-url-reputation-this-is-phishing.png" alt-text="SmartScreen reports the site is known for containing phishing threats":::
+  :::image type="content" source="media/smartscreen-url-reputation-this-is-phishing.png" alt-text="SmartScreen reports the site is known for containing phishing threats":::
 
 ### Malware page
 
@@ -68,7 +63,7 @@ A page that hosts malware and should be blocked:
 
   Launching this link should render a message similar to the following screenshot:
 
-  :::image type="content" source="images/smartscreen-url-reputation-malware-page.png" alt-text="SmartScreen alerts the user that the site is know for containing harmful programs":::
+  :::image type="content" source="media/smartscreen-url-reputation-malware-page.png" alt-text="SmartScreen alerts the user that the site is know for containing harmful programs":::
 
 ### Blocked download
 
@@ -94,7 +89,7 @@ A benign page hosting a malicious advertisement
 
   Launching this link should render a message similar to the following screenshot:
 
-  :::image type="content" source="images/smartscreen-url-reputation-malvertising.png" alt-text="A demonstration of how SmartScreen responds to a frame on a page that is detected to be malicious. Only the malicious frame is blocked":::
+  :::image type="content" source="media/smartscreen-url-reputation-malvertising.png" alt-text="A demonstration of how SmartScreen responds to a frame on a page that is detected to be malicious. Only the malicious frame is blocked":::
 
 ## See also
 

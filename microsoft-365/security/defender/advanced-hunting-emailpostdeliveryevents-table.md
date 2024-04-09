@@ -1,14 +1,9 @@
 ---
 title: EmailPostDeliveryEvents table in the advanced hunting schema
 description: Learn about post-delivery actions taken on Microsoft 365 emails in the EmailPostDeliveryEvents table of the advanced hunting schema
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft Defender XDR, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, EmailPostDeliveryEvents, network message id, sender, recipient, attachment id, attachment name, malware verdict, phishing verdict, attachment count, link count, url count
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
 ms.subservice: adv-hunting
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: 
   - NOCSH
 ms.author: maccruz
@@ -30,7 +25,6 @@ ms.date: 01/16/2024
 
 **Applies to:**
 - Microsoft Defender XDR
-
 
 The `EmailPostDeliveryEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about post-delivery actions taken on email messages processed by Microsoft 365. Use this reference to construct queries that return information from this table.
 
@@ -58,13 +52,15 @@ To get more information about individual email messages, you can also use the [`
 | `ReportId` | `string` | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns. |
 
 ## Supported event types
+
 This table captures events with the following `ActionType` values:
 
-- **Manual remediation** – An administrator manually took action on an email message after it was delivered to the user mailbox. This includes actions taken manually through [Threat Explorer](../office-365-security/threat-explorer-about.md) or approvals of [automated investigation and response (AIR) actions](m365d-autoir-actions.md).
+- **Manual remediation** – An administrator manually took action on an email message after it was delivered to the user mailbox. This includes actions taken manually through [Threat Explorer](../office-365-security/threat-explorer-real-time-detections-about.md) or approvals of [automated investigation and response (AIR) actions](m365d-autoir-actions.md).
 - **Phish ZAP** – [Zero-hour auto purge (ZAP)](../office-365-security/zero-hour-auto-purge.md) took action on a phishing email after delivery.
 - **Malware ZAP** – Zero-hour auto purge (ZAP) took action on an email message found containing malware after delivery.
 
 ## Related topics
+
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Learn the query language](advanced-hunting-query-language.md)
 - [Use shared queries](advanced-hunting-shared-queries.md)

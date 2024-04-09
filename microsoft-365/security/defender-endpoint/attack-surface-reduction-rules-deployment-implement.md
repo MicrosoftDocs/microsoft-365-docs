@@ -1,19 +1,14 @@
 ---
 title: Implement attack surface reduction rules
 description: Provides guidance to implement your attack surface reduction rules deployment.
-keywords: Attack surface reduction rules deployment, ASR deployment, enable asr rules, configure ASR, host intrusion prevention system, protection rules, anti-exploit rules, anti-exploit, exploit rules, infection prevention rules, Microsoft Defender for Endpoint, configure ASR rules
-search.product: eADQiWindows 10XVcnh
-ms.mktglfcycl: manage
-ms.sitesec: library
 ms.service: defender-endpoint
 ms.subservice: asr
-ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-author: dansimp
-ms.author: dansimp
-ms.reviewer: oogunrinde, sugamar
-manager: dansimp
+author: siosulli
+ms.author: siosulli
+ms.reviewer: sugamar
+manager: deniseb
 ms.custom: asr
 ms.topic: conceptual
 ms.collection: 
@@ -35,7 +30,7 @@ search.appverid: met150
 
 Implementing attack surface reduction rules move the first test ring into an enabled, functional state.
 
-> :::image type="content" source="images/asr-rules-implementation-steps.png" alt-text="The procedure to implement attack surface reduction rules" lightbox="images/asr-rules-implementation-steps.png":::
+> :::image type="content" source="media/asr-rules-implementation-steps.png" alt-text="The procedure to implement attack surface reduction rules" lightbox="media/asr-rules-implementation-steps.png":::
   
 
 ## Step 1: Transition attack surface reduction rules from Audit to Block
@@ -53,7 +48,7 @@ Implementing attack surface reduction rules move the first test ring into an ena
 
 ### How does Warn mode work?
 
-Warn mode is effectively a Block instruction, but with the option for the user to "Unblock" subsequent executions of the given flow or app. Warn mode unblocks on a per device, user, file and process combination. The warn mode information is stored locally and has a duration of 24 hours.
+Warn mode is effectively a Block instruction, but with the option for the user to "Unblock" subsequent executions of the given flow or app. Warn mode unblocks on a per device, user, file, and process combination. The warn mode information is stored locally and has a duration of 24 hours.
 
 ### Step 2: Expand deployment to ring n + 1
 
@@ -87,7 +82,7 @@ In cases in which blocks aren't self resolved in a timely manner, customers can 
 > [!WARNING]
 > Excluding or unblocking files or folders could potentially allow unsafe files to run and infect your devices. Excluding files or folders can severely reduce the protection provided by attack surface reduction rules. Files that would have been blocked by a rule will be allowed to run, and there will be no report or event recorded.
 
-An exclusion can apply to all rules that allow exclusions or apply to specific rules using [per-rule exclusions](attack-surface-reduction-rules-deployment-test.md#configure-asr-per-rule-exclusions). You can specify an individual file, folder path, or the fully qualified domain name for a resource.
+An exclusion can apply to all rules that allow exclusions or apply to specific rules using [per-rule exclusions](attack-surface-reduction-rules-deployment-test.md#configure-attack-surface-reduction-per-rule-exclusions). You can specify an individual file, folder path, or the fully qualified domain name for a resource.
 
 An exclusion is applied only when the excluded application or service starts. For example, if you add an exclusion for an update service that is already running, the update service continues to trigger events until the service is stopped and restarted.
 
@@ -98,9 +93,9 @@ See the [attack surface reduction rules reference](attack-surface-reduction-rule
 
 ##### Use Group Policy to exclude files and folders
 
-1. On your Group Policy management computer, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and select **Edit**.
+1. On your Group Policy management computer, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx). Right-click the Group Policy Object you want to configure and select **Edit**.
 
-2. In the **Group Policy Management Editor**, go to **Computer configuration** and click **Administrative templates**.
+2. In the **Group Policy Management Editor**, go to **Computer configuration** and select **Administrative templates**.
 
 3. Expand the tree to **Windows components** \> **Microsoft Defender Antivirus** \> **Microsoft Defender Exploit Guard** \> **Attack surface reduction**.
 

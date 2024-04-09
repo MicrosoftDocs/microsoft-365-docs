@@ -5,7 +5,7 @@ metadata:
   search.appverid: MET150
   author: siosulli
   ms.author: siosulli
-  manager: dansimp 
+  manager: deniseb 
   audience: Admin
   ms.topic: faq
   ms.service: defender-business
@@ -125,7 +125,7 @@ sections:
         answer: |
           If you have Microsoft 365 Business Premium, then Defender for Business is included in your subscription. Defender for Business provides advanced threat protection for your organization's devices. To learn more, see [Overview of Defender for Business](mdb-overview.md)
 
-          Microsoft 365 Business Premium also includes [Microsoft Defender for Office 365 Plan 1](/microsoft-365/security/office-365-security/mdo-security-comparison#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet), which provides protection for your company's email and Office files.
+          Microsoft 365 Business Premium also includes [Microsoft Defender for Office 365 Plan 1](/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet), which provides protection for your company's email and Office files.
 
       - question: What are the differences between Defender for Business and Defender for Endpoint Plans 1 and 2?
         answer: |
