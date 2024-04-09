@@ -31,7 +31,7 @@ ms.date: 12/18/2020
 
 Each [threat analytics report](threat-analytics.md) includes dynamic sections and a comprehensive written section called the _analyst report_. To access this section, open the report about the tracked threat and select the **Analyst report** tab.
 
-:::image type="content" source="images/ta-analyst-report-small.png" alt-text="The analyst report section of a threat analytics report" lightbox="images/ta-analyst-report-small.png":::
+:::image type="content" source="media/ta-analyst-report-small.png" alt-text="The analyst report section of a threat analytics report" lightbox="media/ta-analyst-report-small.png":::
 
 _Analyst report section of a threat analytics report_
 

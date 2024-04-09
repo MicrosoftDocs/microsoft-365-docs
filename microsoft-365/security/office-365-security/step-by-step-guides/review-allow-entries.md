@@ -1,13 +1,9 @@
 ---
-title: Review and remove unnecessary allow list entries with Advanced Hunting in Microsoft Defender for Office 365
-description: Steps and sample queries for advanced hunting to start reviewing your security configuration and removing unnecessary allow list entries.
-search.product:
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-f1.keywords:
-  - NOCSH
+title: Review and remove unnecessary allowlist entries with Advanced Hunting in Microsoft Defender for Office 365
+description: Steps and sample queries for advanced hunting to start reviewing your security configuration and removing unnecessary allowlist entries.
+ms.service: defender-office-365
+f1.keywords: 
+ - NOCSH
 ms.author: chrisda
 author: MSFTBen
 ms.localizationpriority: medium
@@ -18,36 +14,35 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: how-to
-ms.subservice: mdo
 search.appverid: met150
 ms.date: 01/04/2023
 ---
 
 # Introduction
 
-Historically, allow lists have told Exchange Online Protection to ignore the signals indicating an email is malicious. It's commonplace for vendors to request IPs, domains, and sender addresses be overridden unnecessarily. Attackers have been known to take advantage of this mistake and it's a pressing security loophole to have unnecessary allow list entries. This step-by-step guide walks you through using advanced hunting to identify these misconfigured overrides and remove them, so you can increase your organization's security posture.
+Historically, allowlists enabled Exchange Online Protection to ignore the signals indicating an email is malicious. It's commonplace for vendors to request IPs, domains, and sender addresses be overridden unnecessarily. Attackers are known to take advantage of this mistake and it's a pressing security loophole to have unnecessary allowlist entries. This step-by-step guide walks you through using advanced hunting to identify these misconfigured overrides and remove them, so you can increase your organization's security posture.
 
-## What you will need
+## What you need
 
 - Microsoft Defender for Office 365 Plan 2 (Included in E5 plans, or trial available at aka.ms/trymdo)
 - Sufficient permissions (Security reader role)
-- 5-10 minutes to do the steps below.
+- 5-10 minutes to do the following procedures.
 
 ## Common steps for all the below queries
 
-1. [Login to the security portal and navigate to advanced hunting](https://security.microsoft.com/advanced-hunting)
+1. [Sign in to the security portal and navigate to advanced hunting](https://security.microsoft.com/advanced-hunting)
 2. Enter the KQL query into the query box, and press **Run Query**.
-3. Pressing the **NetworkMessageId** hyperlink for individual emails when shown in the results loads a flyout, allowing easy access to the email entity page, where the **analysis** tab provides further details, such as the transport rule(s) that email matched.
+3. Pressing the **NetworkMessageId** hyperlink for individual emails when shown in the results loads a flyout, allowing easy access to the email entity page, where the **analysis** tab provides further details, such as the transport rules that email matched.
 4. The results can also be exported by pressing **Export** for manipulation / analysis offline.
 
 > [!TIP]
-> Changing **OrgLevelAction** to **UserLevelAction** will allow you to search for emails getting overridden by users rather than administrators, and can also be a useful insight.
+> Changing **OrgLevelAction** to **UserLevelAction** will allow you to search for email warnings that were overridden by users rather than administrators, and can also be a useful insight.
 
 ## Queries
 
 ### Top override source
 
-Use this query to find where the most unnecessary overrides are located. This query looks for emails that have been overridden without any detection that needed an override.
+Use this query to find where the most unnecessary overrides are located. This query looks for emails that were overridden without any detection that needed an override.
 
 ```kusto
 EmailEvents
@@ -67,7 +62,7 @@ EmailEvents
 
 ### Top overridden IPs
 
-This query looks for emails that have been overridden by IP, without any detection that called for an override.
+This query looks for emails that were overridden by IP, without any detection that called for an override.
 
 ```kusto
 EmailEvents
@@ -78,7 +73,7 @@ EmailEvents
 
 ### Top overridden domains
 
-This query looks for emails that have been overridden by sending domain without any detection that called for an override. **(Change to SenderMailFromDomain to check the 5321.MailFrom)**
+This query looks for emails that were overridden by sending domain without any detection that called for an override. **(Change to SenderMailFromDomain to check the 5321.MailFrom)**
 
 ```kusto
 EmailEvents
@@ -89,7 +84,7 @@ EmailEvents
 
 ### Top overridden senders
 
-This query looks for emails that have been overridden by sending address without any detection that requires an override. **(Change to SenderMailFromAddress to check the 5321.MailFrom)**
+This query looks for emails that were overridden by sending address without any detection that requires an override. **(Change to SenderMailFromAddress to check the 5321.MailFrom)**
 
 ```kusto
 EmailEvents
@@ -100,8 +95,8 @@ EmailEvents
 
 ## Learn More
 
-Hopefully you found this useful, with some basic queries to get you started with advanced hunting, to learn more check out the below articles
+Hopefully you found this article to be useful, with some basic queries to get you started with advanced hunting, to learn more check out the below articles:
 
-Learn more about advanced hunting: [Overview - Advanced hunting](../../defender/advanced-hunting-overview.md)
+Learn more about advanced hunting: [Overview - Advanced hunting](../../defender/advanced-hunting-overview.md).
 
-Learn more about authentication: [Email Authentication in Exchange Online Protection](../email-authentication-about.md)
+Learn more about authentication: [Email Authentication in Exchange Online Protection](../email-authentication-about.md).

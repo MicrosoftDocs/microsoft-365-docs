@@ -1,5 +1,5 @@
 ---
-title: Resolve incidents with guided responses with Microsoft Copilot in Microsoft Defender
+title: Triage and investigate incidents with guided responses with Microsoft Copilot in Microsoft Defender
 description: Resolve incidents using guided responses delivered by Microsoft Copilot in Microsoft Defender.
 keywords: security copilot, Microsoft Defender XDR, embedded experience, incident summary, script analyzer, script analysis, query assistant, m365, incident report, guided response, incident response playbooks, incident response, incident response playbooks, remediate incident, remediation actions, incident solution, resolve incidents, guided responses, security copilot guided response, copilot in security guided response, security copilot guided response in Microsoft Defender XDR, Microsoft Copilot for Security, Microsoft Defender, Copilot in Defender
 ms.service: defender-xdr
@@ -16,14 +16,15 @@ audience: ITPro
 ms.collection:
   - m365-security
   - tier1
+  - security-copilot
 ms.topic: conceptual
 search.appverid:
   - MOE150
   - MET150
-ms.date: 03/28/2024
+ms.date: 04/01/2024
 ---
 
-# Resolve incidents with guided responses from Microsoft Copilot in Microsoft Defender
+# Triage and investigate incidents with guided responses from Microsoft Copilot in Microsoft Defender
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
