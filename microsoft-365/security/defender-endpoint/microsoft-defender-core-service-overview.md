@@ -60,23 +60,8 @@ The following table summarizes Microsoft Defender Antivirus processes and servic
 | Process or service | Where to view its status |
 |--|--|
 | **Microsoft Defender Antivirus Core service** 
-(`MdCoreSvc`) | - **Processes** tab: `Antimalware Core Service` 
-- **Details** tab: `MpDefenderCoreService.exe` 
-- **Services** tab: `Microsoft Defender Core Service` | 
-| **Microsoft Defender Antivirus service** 
-(`WinDefend`) | - **Processes** tab: `Antimalware Service Executable` 
-- **Details** tab: `MsMpEng.exe` 
-- **Services** tab: `Microsoft Defender Antivirus` | 
-| **Microsoft Defender Antivirus Network Realtime Inspection service** 
-(`WdNisSvc`) |  - **Processes** tab: `Microsoft Network Realtime Inspection Service` 
-- **Details** tab: `NisSrv.exe` 
-- **Services** tab: `Microsoft Defender Antivirus Network Inspection Service` | 
-| **Microsoft Defender Antivirus command-line utility** | - **Processes** tab: N/A 
-- **Details** tab: `MpCmdRun.exe` 
-- **Services** tab: N/A  | 
-| **Microsoft Security Client Policy Configuration Tool** | - **Processes** tab: N/A 
-- **Details** tab: `ConfigSecurityPolicy.exe` 
-- **Services** tab: N/A | 
+(`MdCoreSvc`) | - **Processes** tab: `Antimalware Core Service` - **Details** tab: `MpDefenderCoreService.exe` - **Services** tab: `Microsoft Defender Core Service` |
+
 
 To learn more about the Microsoft Defender Core service configurations and experimentation (ECS) visit [here](/microsoft-365/security/defender-endpoint/microsoft-defender-core-service-configurations-and-experimentation).
 
