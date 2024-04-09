@@ -4,7 +4,7 @@ description: Learn about Device control policies in Defender for Endpoint
 author: siosulli
 ms.author: siosulli
 manager: deniseb 
-ms.date: 03/20/2024
+ms.date: 04/09/2024
 ms.topic: overview
 ms.service: defender-endpoint
 ms.subservice: asr
@@ -65,6 +65,33 @@ To further refine access to devices, device control uses policies.  A policy is 
 Rules and groups are identified by Global Unique ID (GUIDs). If device control policies are deployed using a management tool other than Intune, the GUIDs must be generated. You can generate the GUIDs by using [PowerShell](/powershell/module/microsoft.powershell.utility/new-guid).
 
 For schema details, see [JSON schema for Mac](https://github.com/microsoft/mdatp-devicecontrol/blob/main/macOS/policy/device_control_policy_schema.json).
+
+## Users
+
+Device control policies can be applied to users and/or user groups.
+
+> [!NOTE]  
+> In the articles related to device control, groups of users are referred to as <i>user groups</i>.  The term <i>groups</i> refer to [groups](#groups) defined in the device control policy.  
+
+ Using Intune, on either Mac and Windows, device control policies can be targeted to user groups defined in Entra Id.
+
+On Windows, a user or user group can be a condition on an [entry](#entries) in a policy.  
+
+Entries with user or user groups can reference objects from either Entra Id or a local Active Directory.  
+
+### Best practices for using device control with users and user groups
+
+- To create a rule for an indidual user on Windows, create an entry with a  `Sid` condition foreach user in a [rule](#rules)
+
+- To create a rule for a user group on Windows and Intune, **either** create an entry with a `Sid` condition for each user group in a [rule] and target the policy to a machine group in Intune **or** create a rule without conditions and target the policy with Intune to the user group.
+
+- On Mac, use Intune and target the policy to a user group in Entra Id.
+
+> [!WARNING]
+> Do not use both user/user group conditions in rules and user group targeting in Intune.
+
+> [!NOTE]
+> If network connectivity is an issue, use Intune user group targeting **or** a local Active Directory groups.  User/user group conditions that reference Entra Id should **only** be used in environments that have a reliable connection to Entra Id.
 
 ## Rules
 
@@ -180,7 +207,14 @@ If device control is configured, and a user attempts to use a device that's not 
 
 An entry supports the following optional conditions:
 
-- User Condition: Applies the action only to the user/group identified by the SID
+- User/User Group Condition: Applies the action only to the user/user group identified by the SID
+
+> [!NOTE]
+> For user groups and users that are stored in Microsoft Entra Id, use the object id in the condition.  For user groups and users that are stored localy, use the Security Identifier (SID)
+
+> [!NOTE] 
+> On Windows, The SID of the user who's signed in can be retrieved by running the PowerShell command `whoami /user`.
+
 - Machine Condition:  Applies the action only to the device/group identified by the SID
 - Parameters Condition:  Applies the action only if the parameters match (See Advanced Conditions)
 
@@ -192,10 +226,6 @@ Entries can be further scoped to specific users and devices.  For example, allow
 | Write access for USBs | Writeable USBs |  | Write Access for User 1<br/><br/>Write Access for User 2 on Device Group A |
 
 All of the conditions in the entry must be true for the action to be applied.
-
-### Determine the Security ID of a User, Group, or Device
-
-Entries can include user, group, or device restrictions based on Security ID (SID).  The SID of the user who's signed in can be retrieved by running the PowerShell command `whoami /user`.
 
 You can configure entries using Intune, an XML file in Windows, or a JSON file on Mac. Select each tab for more details.
 
@@ -327,6 +357,9 @@ The following table describes the device type specific access and how they map t
 
 Groups define criteria for filtering objects by their properties. The object is assigned to the group if its properties match the properties defined for the group.   
 
+> [!NOTE]
+> Groups in this section **do not** refer to [user groups](#users).    
+
 For example:
 
 - Allowed USBs are all the devices that match any of these manufacturers
@@ -409,6 +442,9 @@ Device properties have slightly different labels in advanced hunting. The table 
 ### Configure groups in Intune, XML in Windows, or JSON on Mac
 
 You can configure groups in Intune, by using an XML file for Windows, or by using a JSON file on Mac. Select each tab for more details.
+
+> [!NOTE]
+> The `Group Id` in XML and `id` in JSON is used to identify the group within device control.  Its not a reference to any other such as a [user group](#users) in Entra Id. 
 
 ### [**Intune**](#tab/Removable)
 
