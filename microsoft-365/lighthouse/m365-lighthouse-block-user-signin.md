@@ -54,5 +54,5 @@ You can block a user account if you think it's compromised. When you block a use
 
 ## Related content
 
-[Manage Microsoft 365 user accounts](../enterprise/manage-microsoft-365-accounts.md) (article)\
-[Reset user password](m365-lighthouse-reset-user-password.md) (article)
+[Manage Microsoft 365 user accounts](../enterprise/manage-microsoft-365-accounts.md). (article)\
+[Reset user password](m365-lighthouse-reset-user-password.md). (article)
