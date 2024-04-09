@@ -45,7 +45,7 @@ If you're using Intune to manage Defender for Endpoint settings, you can use it 
 
 5. On the **Configuration settings** tab, you see a list of settings. You don't have to configure all of these settings at once. Consider starting with **Device Control**.
 
-   :::image type="content" source="media/device-control-policy-intune.png" alt-text="Screeenshot of Intune user interface for device control policies." lightbox="media/device-control-policy-intune.png":::
+   :::image type="content" source="media/device-control-policy-intune.png" alt-text="Screenshot of Intune user interface for device control policies." lightbox="media/device-control-policy-intune.png":::
 
    - Under **Administrative Templates**, you have [Device Installation](/windows/client-management/mdm/policy-csp-deviceinstallation?WT.mc_id=Portal-fx) and [Removable Storage Access](/windows/client-management/mdm/policy-csp-admx-removablestorage) settings.
    - Under **Defender**, see [Allow Full Scan Removable Drive Scanning](/windows/client-management/mdm/policy-csp-defender#allowfullscanremovabledrivescanning) settings.
@@ -74,7 +74,7 @@ For information on how to add the reusable groups of settings that are included 
 
 Policies can be added and removed using the **+** and **–** icons.  The name of the policy appears in the warning to users, and in advanced hunting and reports.
 
-You can add audit policies, and you can add Allow/Deny policies. It is recomended to always add an Allow and/or Deny policy when adding an audit policy so that you don't experience unexpected results.  
+You can add audit policies, and you can add Allow/Deny policies. It is recommended to always add an Allow and/or Deny policy when adding an audit policy so that you don't experience unexpected results.  
 
 > [!IMPORTANT]
 > If you only configure audit policies, the permissions are inherited from the default enforcement setting.

@@ -1,7 +1,6 @@
 ---
 title: Update incident API
 description: Learn how to update incidents using Microsoft Defender XDR API
-search.product: eADQiWindows 10XVcnh
 ms.service: defender-xdr
 f1.keywords:
   - NOCSH
@@ -19,7 +18,7 @@ search.appverid:
   - MOE150
   - MET150
 ms.custom: api
-ms.date: 02/08/2023
+ms.date: 02/08/2024
 ---
 
 # Update incidents API

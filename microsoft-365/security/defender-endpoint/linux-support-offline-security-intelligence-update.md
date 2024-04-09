@@ -1,5 +1,5 @@
 ---
-title: Configure Offline Security Intelligence Update for Microsoft Defender for Endpoint on Linux
+title: Configure Offline Security Intelligence Update for Microsoft Defender for Endpoint on Linux (preview)
 description: Offline Security Intelligence Update in Microsoft Defender for Endpoint on Linux.
 ms.service: defender-endpoint
 ms.author: siosulli
@@ -17,7 +17,7 @@ search.appverid: met150
 ms.date: 03/12/2024
 ---
 
-# Configure Offline Security Intelligence Update for Microsoft Defender for Endpoint on Linux
+# Configure Offline Security Intelligence Update for Microsoft Defender for Endpoint on Linux (preview)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -28,6 +28,9 @@ ms.date: 03/12/2024
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 This document describes the Offline Security Intelligence Update feature of Microsoft Defender for Endpoint on Linux.
+
+> [!IMPORTANT]
+> Information in this article relates to a prerelease product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 This feature enables an organization to update the security intelligence (also referred to as definitions or signatures in this document) on Linux endpoints with limited or no exposure to the internet using a local hosting server (termed as *Mirror Server* in this document).
 
@@ -61,9 +64,7 @@ Fig. 2: Process flow diagram on the Linux endpoint for security intelligence upd
 
 ## Prerequisites
 
-- Defender for Endpoint version "101.24022.0001" or higher in InsiderSlow ring needs to be installed on the Linux endpoints. 
-  > [!NOTE]
-  > This version of Defender for Endpoint on Linux will be rolled out to the Production ring soon.
+- Defender for Endpoint version "101.24022.0001" or higher needs to be installed on the Linux endpoints. 
 - The Linux endpoints need to have connectivity to the Mirror Server.
 - The Mirror Server can be either an HTTP/ HTTPS server or a network share server. For example, an NFS Server.
 - The Mirror Server needs to have access to the following URLs:
@@ -212,7 +213,7 @@ definitions_version                         : "1.407.417.0"
 definitions_status                          : "up_to_date"
 definitions_update_source_uri               : "https://go.microsoft.com/fwlink/?linkid=2144709"
 definitions_update_fail_reason              : ""
-offline_definition_url_configured           : "http://172.22.199.67:8000/linux/production/" [managed]
+offline_definition_url_configured           : "http://172.XX.XXX.XX:8000/linux/production/" [managed]
 offline_definition_update                   : "enabled" [managed]
 offline_definition_update_verify_sig        : "enabled"
 offline_definition_update_fallback_to_cloud : false[managed]

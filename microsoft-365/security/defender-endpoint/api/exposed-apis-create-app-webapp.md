@@ -90,7 +90,7 @@ This article explains how to create a Microsoft Entra application, get an access
     > [!NOTE]
     > After you select **Add**, select **copy the generated secret value**. You won't be able to retrieve this value after you leave.
 
-      :::image type="content" source="../images/webapp-create-key2.png" alt-text="The create application option" lightbox="../images/webapp-create-key2.png":::
+      :::image type="content" source="../media/webapp-create-key2.png" alt-text="The create application option" lightbox="../media/webapp-create-key2.png":::
 
 7. Write down your application ID and your tenant ID. On your application page, go to **Overview** and copy the following.
 
@@ -210,7 +210,7 @@ Ensure that you got the correct token:
 
    In the following image, you can see a decoded token acquired from an app with permissions to all of  Microsoft Defender for Endpoint's roles:
 
-   :::image type="content" source="../images/webapp-decoded-token.png" alt-text="The token details portion" lightbox="../images/webapp-decoded-token.png":::
+   :::image type="content" source="../media/webapp-decoded-token.png" alt-text="The token details portion" lightbox="../media/webapp-decoded-token.png":::
 
 ## Use the token to access Microsoft Defender for Endpoint API
 
