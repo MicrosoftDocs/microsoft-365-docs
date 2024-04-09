@@ -3,7 +3,7 @@ title: Configure advanced features in Microsoft Defender for Endpoint
 description: Turn on advanced features such as block file in Microsoft Defender for Endpoint.
 ms.service: defender-endpoint
 ms.author: siosulli
-author: siosulli
+author: siosulli, yongrhee
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro
@@ -13,7 +13,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: onboard
 search.appverid: met150
-ms.date: 08/15/2023
+ms.date: 04/08/2024
 ---
 
 # Configure advanced features in Defender for Endpoint
