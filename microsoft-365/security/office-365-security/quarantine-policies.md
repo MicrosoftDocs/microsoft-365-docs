@@ -202,7 +202,7 @@ The rest of this step explains how to assign quarantine policies for supported f
 ## Assign quarantine policies in supported policies in the Microsoft Defender portal
 
 > [!NOTE]
-> Users can't release their own messages that were quarantined as **malware** by anti-malware or Safe Attachments policies, or as **high confidence phishing** by anti-spam policies, regardless of how the quarantine policy is configured. If the policy allows users to release their own quarantined messages, users are instead allowed to _request_ the release of their quarantined malware or high-confidence phishing messages.
+> Users can't release their own messages that were quarantined as **malware** by anti-malware or Safe Attachments policies, or as **high confidence phishing** by anti-spam policies, regardless of how the quarantine policy is configured. If the policy allows users to release their own quarantined messages, users are instead allowed to _request_ the release of their quarantined malware or high confidence phishing messages.
 
 ### Anti-spam policies
 
@@ -242,7 +242,7 @@ If you'd rather use PowerShell to assign quarantine policies in anti-spam polici
 
   Specify a different quarantine policy to turn on quarantine notifications or change the default end-user capabilities on quarantined messages for that particular spam filtering verdict.
 
-  Users can't release their own messages that were quarantined as high confidence phishing, regardless of how the quarantine policy is configured. If the policy allows users to release their own quarantined messages, users are instead allowed to _request_ the release of their quarantined high-confidence phishing messages.
+  Users can't release their own messages that were quarantined as high confidence phishing, regardless of how the quarantine policy is configured. If the policy allows users to release their own quarantined messages, users are instead allowed to _request_ the release of their quarantined high confidence phishing messages.
 
 - In PowerShell, a new anti-spam policy in PowerShell requires a spam filter policy using the **New-HostedContentFilterPolicy** cmdlet (settings), and an exclusive spam filter rule using the **New-HostedContentFilterRule** cmdlet (recipient filters). For instructions, see [Use PowerShell to create anti-spam policies](anti-spam-policies-configure.md#use-powershell-to-create-anti-spam-policies).
 
