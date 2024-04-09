@@ -10,6 +10,7 @@ ms.localizationpriority: high
 ms.collection: 
 - privacy-microsoft365
 - privacy-copilot
+- m365copilot
 hideEdit: true
 ms.date: 03/04/2024
 ---
