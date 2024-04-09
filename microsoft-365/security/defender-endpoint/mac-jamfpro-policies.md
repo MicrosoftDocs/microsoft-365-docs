@@ -77,7 +77,7 @@ You'll need to take the following steps:
 
 4.  Navigate to the **Application & Custom Settings** page and select **Upload** > **Add**.
 
-    :::image type="content" source="media/jamfpro-mac-profile.png" alt-text="The configurate app and custom settings." lightbox="media/jamfpro-mac-profile.png":::
+    :::image type="content" source="media/jamfpro-mac-profile.png" alt-text="The configuration app and custom settings." lightbox="media/jamfpro-mac-profile.png":::
 
 5. Select **Upload File (PLIST file)** then in **Preference Domain** enter: `com.microsoft.wdav.atp`.
 
@@ -616,11 +616,11 @@ Alternatively, you can download [fulldisk.mobileconfig](https://github.com/micro
     - Distribution Method: Install Automatically
     - Level: Computer Level
 
-    :::image type="content" source="images/sysext-new-profile.png" alt-text="The configuration settings sysext new profile." lightbox="images/sysext-new-profile.png":::
+    :::image type="content" source="media/sysext-new-profile.png" alt-text="The configuration settings sysext new profile." lightbox="media/sysext-new-profile.png":::
 
 3. In **System Extensions** select **Configure**.
 
-   :::image type="content" source="images/sysext-configure.png" alt-text="The pane with the Configure option for the system extensions." lightbox="images/sysext-configure.png":::
+   :::image type="content" source="media/sysext-configure.png" alt-text="The pane with the Configure option for the system extensions." lightbox="media/sysext-configure.png":::
 
 4. In **System Extensions**, enter the following details:
 
@@ -631,7 +631,7 @@ Alternatively, you can download [fulldisk.mobileconfig](https://github.com/micro
      - **com.microsoft.wdav.epsext**
      - **com.microsoft.wdav.netext**
 
-    :::image type="content" source="images/sysext-configure2.png" alt-text="The MDATP MDAV system extensions pane." lightbox="images/sysext-configure2.png":::
+    :::image type="content" source="media/sysext-configure2.png" alt-text="The MDATP MDAV system extensions pane." lightbox="media/sysext-configure2.png":::
 
 5. Select the **Scope** tab.
 
@@ -647,11 +647,11 @@ Alternatively, you can download [fulldisk.mobileconfig](https://github.com/micro
 
 9. Select **Save**.
 
-   :::image type="content" source="images/sysext-scope.png" alt-text="The display of options regarding MDATP MDAV System Extensions." lightbox="images/sysext-scope.png":::
+   :::image type="content" source="media/sysext-scope.png" alt-text="The display of options regarding MDATP MDAV System Extensions." lightbox="media/sysext-scope.png":::
 
 10. Select **Done**.
 
-    :::image type="content" source="images/sysext-final.png" alt-text="The configuration settings sysext - final." lightbox="images/sysext-final.png":::
+    :::image type="content" source="media/sysext-final.png" alt-text="The configuration settings sysext - final." lightbox="media/sysext-final.png":::
 
 ## Step 8: Configure Network Extension
 
@@ -864,7 +864,7 @@ You need to make sure that all machines receiving Defender's package, also recei
 > While using this criterion may sound logical, it creates problems that are difficult to diagnose.
 >
 > Defender relies on all these profiles at the moment of its installation.
-> Making configuration profiles depending on Defender's presence effectively delays deployment of configuration profiles, and results in an initially unhealthy product and/or prompts for manual approval of certian application permissions, that are otherwise auto approved by profiles.
+> Making configuration profiles depending on Defender's presence effectively delays deployment of configuration profiles, and results in an initially unhealthy product and/or prompts for manual approval of certain application permissions, that are otherwise auto approved by profiles.
 
 Deploying a policy with Microsoft Defender's package *after* deploying configuration profiles ensures the end user's best experience, because all required configurations will be applied before the package installs.
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

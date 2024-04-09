@@ -43,7 +43,7 @@ Be aware of the following before you start:
 
 - Defender for Endpoint must be onboarded and running on the Windows host OS.
 
-- The host OS must be running Windows 10, version 2004 and higher (build 19041 and higher) or Windows 11 to support the Windows Subsystem for Linux versions that can work with the plug-in.
+- The host OS must be running Windows 10, version 2004 and higher (build 19044 and higher) or Windows 11 to support the Windows Subsystem for Linux versions that can work with the plug-in.
 
 ## Software components and installer file names
 
@@ -113,24 +113,19 @@ Reuse the Defender for Endpoint static proxy setting (`TelemetryProxyServer`).
 
 If you want to use the host [static proxy](configure-proxy-internet.md) configuration for MDE for the WSL plug-in, nothing more is required. This configuration is adopted by the plug-in automatically.
 
-### Set up a different/specific proxy configuration for MDE WSL
+If you want to use the host network and network proxy setting for MDE for WSL plug-in, nothing more is required. This configuration is adopted by the plug-in automatically.
 
-If you want to set up a different proxy for Defender running in WSL (other than the Windows proxy specified with `TelemetryProxyServer`), or you have currently configured a system-wide proxy, the proxy configuration isn't automatically available for the plug-in. In this case, take these steps:
+## Plug-in Proxy selection
 
-1. Open Registry Editor as an administrator or use a tool that can configure registry keys across devices.
+If your host machine contains multiple proxy settings, the plug-in will select the proxy configurations with the following hierarchy
 
-2. Create a registry key with the following details:
+1. Defender for Endpoint static proxy setting (`TelemetryProxyServer`)
 
-   - **Name:** `DefenderProxyServer`
-   - **Type:** `REG_SZ`
-   - **Value:** *IP address*: *port number* (Example: `192.126.30.222:8888`)
-   - **Path:** `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Lxss\Plugins\DefenderPlug-in`
+2. Winhttp proxy (configured through netsh command)
 
-3. Once the registry is set, if WSL is already running or plug-in is already installed, restart wsl using the following steps:
+3. Network & Internet proxy settings
 
-   1. Open Command Prompt and run `wsl --shutdown`.
-
-   2. Then, run the command `wsl`.
+Example: If your host machine as both Winhttp proxy as well as Network & Internet proxy, plug-in will select `Winhttp proxy` as the proxy configuration for plug-in. 
 
 ## Connectivity test for Defender running in WSL
 
@@ -259,7 +254,7 @@ DeviceProcessEvents
 
       :::image type="content" source="media/mdeplugin-wsl/wsl-health-check-support.png" alt-text="Screenshot showing status in PowerShell." lightbox="media/mdeplugin-wsl/wsl-health-check-support.png":::
 
-  - Enable the connectivity test and check for Defender for Endpoint connectivity in WSL. If the connectivity test fails, provide the output of the health check tool to [mdeforwsl-preview@microsoft.com](mailto:mdeforwsl-preview@microsoft.com).
+- Enable the connectivity test and check for Defender for Endpoint connectivity in WSL. If the connectivity test fails, provide the output of the health check tool to [mdeforwsl-preview@microsoft.com](mailto:mdeforwsl-preview@microsoft.com).
 
 5. In case you face any other challenges or issues, open the terminal and run the following commands to generate the support bundle: 
 

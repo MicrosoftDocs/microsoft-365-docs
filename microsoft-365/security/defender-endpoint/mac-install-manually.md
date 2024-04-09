@@ -81,7 +81,7 @@ To complete this process, you must have admin privileges on the device.
 
 3. Read through the **Software License Agreement** and select **Continue** to agree with the terms.
 
-    :::image type="content" source="images/software-license-agreement.png" alt-text="Screenshot that shows the Software License Agreement.":::
+    :::image type="content" source="media/software-license-agreement.png" alt-text="Screenshot that shows the Software License Agreement.":::
 
 4. Read through the *End-User License Agreement (EULA)* and select **Agree**.
 
@@ -110,9 +110,9 @@ To complete this process, you must have admin privileges on the device.
 
     :::image type="content" source="media/monterey-install-2.png" alt-text="Screenshot that shows the system extension approval":::
 
-11. To enable system extention, select **Details**.
+11. To enable system extension, select **Details**.
 
-    :::image type="content" source="media/system-extention-image.png" alt-text="Screenshot that shows the system extention.":::
+    :::image type="content" source="media/system-extention-image.png" alt-text="Screenshot that shows the system extension.":::
 
 12. From the **Security & Privacy** window, select the checkboxes next to **Microsoft Defender** and select **OK**.
 

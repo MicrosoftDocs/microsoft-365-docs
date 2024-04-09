@@ -89,7 +89,7 @@ Network protection in Microsoft Defender for endpoint is disabled by default. Ad
 
    Any other separation characters are invalid.
 
-   > ![Image of trusted CA certificate.](images/trustca.png)
+   > ![Image of trusted CA certificate.](media/trustca.png)
 
 1. For other configurations related to Network protection, add the following keys and appropriate corresponding value.
 
@@ -329,7 +329,7 @@ Use the following steps to configure the Device tags:
 
 
 > [!NOTE] 
-> The Defender app needs to be opened for tags to be synced with Intune and passed to Security Portal. It may take upto 18 hours for tags to reflect in the portal.
+> The Defender app needs to be opened for tags to be synced with Intune and passed to Security Portal. It may take up to 18 hours for tags to reflect in the portal.
 
 ## Related articles
 
