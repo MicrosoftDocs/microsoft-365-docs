@@ -443,7 +443,8 @@ Device properties have slightly different labels in advanced hunting. The table 
 
 You can configure groups in Intune, by using an XML file for Windows, or by using a JSON file on Mac. Select each tab for more details.
 
->[!NOTE] The `Group Id` in XML and `id` in JSON is used to identify the group within device control.  Its not a reference to any other such as a [user group](#users) in Entra Id. 
+> [!NOTE]
+> The `Group Id` in XML and `id` in JSON is used to identify the group within device control.  Its not a reference to any other such as a [user group](#users) in Entra Id. 
 
 ### [**Intune**](#tab/Removable)
 
