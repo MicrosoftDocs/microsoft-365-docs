@@ -27,6 +27,8 @@ appliesto:
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
+For more information about what Microsoft does to your submissions, [check this out](submissions-report-messages-files-to-microsoft.md#report-suspicious-email-messages-to-microsoft).
+
 In Microsoft 365 organizations with Exchange Online mailboxes, admins can use the **Submissions** page in the Microsoft Defender portal to submit messages, URLs, and attachments to Microsoft for analysis. There are two basic types of admin submissions:
 
 - **Admin-originated submissions**: Admins identify and report messages, attachments, or URLs (entities) by selecting :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Submit to Microsoft for analysis** from the tabs on the **Submissions** page as described in the [Admin-originated submissions](#admin-originated-submissions) section.
@@ -398,7 +400,7 @@ For URLs reported as false positives, we allow subsequent messages that contain 
        - **7 days**
        - **30 days**
        - **Specific date**: The maximum value is 30 days from today.
-     - **Allow entry note (optional)**: Enter optional information about why you're allow this item.
+     - **Allow entry note (optional)**: Enter optional information about why you're allowing this item.
 
      When you're finished on the second page of the **Submit to Microsoft for analysis** flyout, select **Submit**.
 

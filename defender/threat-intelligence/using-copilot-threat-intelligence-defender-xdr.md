@@ -10,6 +10,7 @@ manager: dolmont
 audience: ITPro
 ms.collection: 
   - Tier1
+  - security-copilot
 ms.topic: conceptual
 ms.date: 04/01/2024
 ---
