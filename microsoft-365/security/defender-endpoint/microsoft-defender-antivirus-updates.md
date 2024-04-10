@@ -3,7 +3,7 @@ title: Microsoft Defender Antivirus security intelligence and product updates
 description: Manage how Microsoft Defender Antivirus receives protection and product updates.
 ms.service: defender-endpoint
 ms.localizationpriority: high
-ms.date: 04/03/2024
+ms.date: 04/09/2024
 audience: ITPro
 ms.topic: reference
 author: siosulli
@@ -98,12 +98,12 @@ All our updates contain
 - Serviceability improvements
 - Integration improvements (Cloud, [Microsoft Defender XDR](/microsoft-365/security/defender/microsoft-365-defender))
 
-### March-2024 (Engine: 1.1.24030.4 | Platform: Coming soon)
+### March-2024 (Engine: 1.1.24030.4 | Platform: 4.18.24030.9)
 
 - Security intelligence update version: **1.409.1.0**
-- Release date: **April 2, 2024** (Engine) / **Coming soon** (Platform)
+- Release date: **April 2, 2024** (Engine) / **April 9, 2024** (Platform)
 - Engine: **1.1.24030.4**
-- Platform: **Coming soon**
+- Platform: **4.18.24030.9**
 - Support phase: **Security and Critical Updates**
 
 #### What's new
@@ -117,7 +117,7 @@ All our updates contain
 - Introducted performance improvements when processing paths for exclusions.
 - Added improvements to allow recovering from erroneously added [Indicators of compromise (IoC)](manage-indicators.md).
 - Improved resilience in processing [attack surface reduction](attack-surface-reduction.md) exclusions for Anti Malware Scan Interface (AMSI) scans.
-- Fixed a high memory issue related to the [Behavior Monitoring](behavior-monitor.md) queue that occured when MAPS is disabled.
+- Fixed a high memory issue related to the [Behavior Monitoring](behavior-monitor.md) queue that occurred when MAPS is disabled.
 - A possible deadlock when receiving a [Tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) configuration change from the [Microsoft Defender portal](https://security.microsoft.com) no longer occurs.
 
 ### February-2024 (Engine: 1.1.24020.9 | Platform: 4.18.24020.7)
