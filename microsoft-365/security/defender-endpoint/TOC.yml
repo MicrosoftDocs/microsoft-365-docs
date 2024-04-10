@@ -1518,6 +1518,9 @@
       href: troubleshoot-collect-support-log.md
     - name: Troubleshoot Microsoft Defender Antivirus settings
       href: troubleshoot-settings.md
+    - name: Troubleshooting Security Intelligence Updates from Microsoft Update source
+      href: security-intelligence-update-tshoot.md
+      displayName: Troubleshooting Security Intelligence Updates from Microsoft Update source
     - name: Troubleshoot attack surface reduction issues
       items:
       - name: Network protection
