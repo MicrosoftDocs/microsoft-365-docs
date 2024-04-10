@@ -168,7 +168,7 @@ When optimizing connectivity to Microsoft 365, certain network configurations ma
 
 We recommend that customers avoid using these network techniques to traffic destined to Microsoft 365 domains and bypass these for Microsoft 365 connections.
 
-Microsoft recommends setting up an automated system to download and apply the M365 network endpoint list regularly. Please refer to [Change management for Microsoft 365 IP addresses and URLs for more information](managing-office-365-endpoints?view=o365-worldwide.md#change-management-for-microsoft-365-ip-addresses-and-urls). 
+Microsoft recommends setting up an automated system to download and apply the M365 network endpoint list regularly. Please refer to [Change management for Microsoft 365 IP addresses and URLs for more information](managing-office-365-endpoints.md#change-management-for-microsoft-365-ip-addresses-and-urls). 
 
 ## Comparing network perimeter security with endpoint security
 <a name="BKMK_SecurityComparison"> </a>
