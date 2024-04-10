@@ -12,7 +12,7 @@ ms.collection:
 - m365-security
 - tier2
 audience: ITPro
-ms.date: 12/13/2023
+ms.date: 04/09/2024
 search.appverid: MET150
 
 ---
@@ -270,3 +270,28 @@ DeviceProcessEvents
 
    :::image type="content" source="media/mdeplugin-wsl/wsl-health-check-overview.png" alt-text="Screenshot showing status in PowerShell output." lightbox="media/mdeplugin-wsl/wsl-health-check-overview.png":::
 
+6. Microsoft Defender Endpoint for WSL supports Linux distributions running on WSL 2. If they are associated with WSL 1, you may face issues. Therefore, it is advised to disable WSL 1. To do so with the Intune policy, perform the following steps :
+
+   1. Navigate to your Microsoft Intune admin center portal.
+
+   2. Go to Devices -> Configuration Profiles -> Create -> New Policy.
+
+   3. Select Windows 10 and later -> Settings catalog.
+
+   4. Create a name for the new profile and search for “Windows Subsystem for Linux” to see and add the full list of available settings.
+   
+   5. Set the Allow WSL1 setting to Disabled.
+
+   This will ensure only WSL 2 distributions can be used.
+
+   Alternately, if you want to keep using WSL 1, or not use the Intune Policy, you can selectively associate your installed distributions to run on WSL 2, by running the command in PowerShell: 
+   
+   ```powershell
+   wsl --set-version <YourDistroName> 2
+   ```
+
+   To have WSL 2 as your default WSL version for new distributions to be installed in the system, run the following command in PowerShell: 
+   
+   ```powershell
+   wsl --set-default-version 2
+   ```
