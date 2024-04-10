@@ -137,8 +137,7 @@ The **Analysis** view contains information that helps you analyze the message in
 
     The :::image type="icon" source="../../media/m365-cc-sc-copy-icon.png" border="false"::: **Copy to clipboard** action is available to copy the rule GUID. For more information about mail flow rules, see [Mail flow rules (transport rules) in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules).
 
-    > [!TIP]
-    > Don't use the **Go to Exchange admin center** link. To open the **Rules** page in the new Exchange admin center, use <https://admin.exchange.microsoft.com/#/transportrules>.
+    The **Go to Exchange admin center** link opens the **Rules** page in the new Exchange admin center at <https://admin.exchange.microsoft.com/#/transportrules>.
 
   - **Connector**: If the message was delivered through an Inbound connector, the connector name is shown. For more information about connectors, see [Configure mail flow using connectors in Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
   - **Bulk complaint level (BCL)**: A higher BCL value indicates the message is more likely to be spam. For more information, see [Bulk complaint level (BCL) in EOP](anti-spam-bulk-complaint-level-bcl-about.md).
