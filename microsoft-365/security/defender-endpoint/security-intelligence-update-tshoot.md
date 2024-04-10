@@ -23,18 +23,14 @@ audience: ITPro
 **Applies to:**
 
 - [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
-
 - [Microsoft Defender for Endpoint Plan 1 and 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-
 - [Microsoft Defender for Business](https://www.microsoft.com/security/business/endpoint-security/microsoft-defender-business)
-
 - [Microsoft Defender for Individuals](https://www.microsoft.com/microsoft-365/microsoft-defender-for-individuals)
-
 - Microsoft Defender Antivirus
 
 Use this article to learn how to troubleshoot security intelligence updates for Microsoft Defender Antivirus when the first source is from Microsoft Update (formerly known as Windows Update). Follow these steps to troubleshoot issues with getting your security intelligence updates:
 
-1. Make sure that the URLs needed for security intelligence updates are allowed thru the firewall or proxy. See the URL spreadsheets in [STEP 1: Configure your network environment to ensure connectivity with Defender for Endpoint service](configure-environment.md).
+1. Make sure that the URLs needed for security intelligence updates are allowed thru the firewall or proxy. See the Defender for Endpoint URL spreadsheets in [Configure your network environment to ensure connectivity with Defender for Endpoint service](configure-environment.md).
 
    If you're only using Microsoft Defender Antivirus, see the **Windows Update** section in [Manage connection endpoints for Windows 11 Enterprise](/windows/privacy/manage-windows-11-endpoints). 
 
