@@ -72,7 +72,7 @@ Once the Storage account is created, you'll need to:
 
 - A blob container is created for each event type:
 
-  :::image type="content" source="../defender-endpoint/images/storage-account-event-schema.png" alt-text="Example of a blob container" lightbox="../defender-endpoint/images/storage-account-event-schema.png":::
+  :::image type="content" source="../defender-endpoint/media/storage-account-event-schema.png" alt-text="Example of a blob container" lightbox="../defender-endpoint/media/storage-account-event-schema.png":::
 
 - The schema of each row in a blob is the following JSON:
 

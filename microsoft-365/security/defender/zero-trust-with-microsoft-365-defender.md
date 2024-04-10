@@ -1,13 +1,8 @@
 ---
 title: Zero Trust with Microsoft Defender XDR
 description: Microsoft Defender XDR contributes to a strong Zero Trust strategy and architecture
-keywords: Zero Trust, Microsoft Defender XDR, security architecture, security strategy, cyber security, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords:
   - NOCSH
 ms.author: macapara

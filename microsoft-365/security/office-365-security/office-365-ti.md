@@ -2,8 +2,8 @@
 title: Threat investigation & response capabilities in Microsoft Defender for Office 365
 f1.keywords:
   - NOCSH
-ms.author: tracyp
-author: msfttracyp
+author: chrisda
+ms.author: chrisda
 manager: dansimp
 ms.date: 10/10/2023
 audience: Admin
@@ -19,17 +19,16 @@ ms.collection:
 ms.custom:
   - seo-marvel-apr2020
 description: Learn about threat investigation and response capabilities in Microsoft Defender for Office 365 Plan.
-ms.subservice: mdo
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison" target="_blank">Microsoft Defender for Office 365 plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 2</a>
 ---
 
 # Threat investigation and response
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-Threat investigation and response capabilities in [Microsoft Defender for Office 365](defender-for-office-365.md) help security analysts and administrators protect their organization's Microsoft 365 for business users by:
+Threat investigation and response capabilities in [Microsoft Defender for Office 365](mdo-about.md) help security analysts and administrators protect their organization's Microsoft 365 for business users by:
 
 - Making it easy to identify, monitor, and understand cyberattacks.
 - Helping to quickly address threats in Exchange Online, SharePoint Online, OneDrive for Business and Microsoft Teams.
@@ -87,7 +86,7 @@ As part of the Microsoft Defender for Office 365 Plan 2 offering, security analy
 
 ## How do we get these capabilities?
 
-Microsoft 365 threat investigation and response capabilities are included in Microsoft Defender for Office 365 Plan 2, which is included in Enterprise E5 or as an add-on to certain subscriptions. To learn more, see [Defender for Office 365 Plan 1 and Plan 2](defender-for-office-365.md#whats-the-difference-between-microsoft-defender-for-office-365-plan-1-and-plan-2).
+Microsoft 365 threat investigation and response capabilities are included in Microsoft Defender for Office 365 Plan 2, which is included in Enterprise E5 or as an add-on to certain subscriptions. To learn more, see [Defender for Office 365 Plan 1 vs. Plan 2 cheat sheet](mdo-about.md#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet).
 
 ## Required roles and permissions
 

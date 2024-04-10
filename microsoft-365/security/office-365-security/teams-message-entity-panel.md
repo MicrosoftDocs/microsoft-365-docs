@@ -1,7 +1,7 @@
 ---
-title: The Teams message entity panel
-ms.author: tracyp
-author: msfttracyp
+title: The Teams Message Entity Panel in Microsoft Defender for Office 365
+author: chrisda
+ms.author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: conceptual
@@ -14,12 +14,11 @@ ms.collection:
   - m365-security
   - tier1
   - highpri
-description: Describes the Teams message entity panel for Microsoft Teams in Microsoft Defender for Office 365 Plan 2, how it does post-breach work like ZAP and Safe Links and gives admins a single pane of glass on Teams chat and channel threats like suspicious URLs.
-ms.subservice: mdo
-ms.service: microsoft-365-security
+description: Describes the Teams message entity panel for Microsoft Teams in Microsoft Defender for Office 365 Plan 2, how it does post-breach work like ZAP and Safe Links and gives admins a single pane of glass on Teams chat and channel threats like suspicious URLs..
+ms.service: defender-office-365
 ms.date: 11/16/2023
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison" target="_blank">Microsoft Defender for Office 365 plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 1 and Plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 

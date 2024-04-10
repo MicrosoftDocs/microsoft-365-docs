@@ -16,11 +16,10 @@ ms.collection:
 description: Learn about the available views, filters, and actions in Threat Explorer (Explorer) or Real-time detections to investigate and respond to threats.
 ms.custom:
 - seo-marvel-apr2020
-ms.subservice: mdo
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 search.appverid: met150
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 1 and Plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
@@ -28,7 +27,7 @@ appliesto:
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-Microsoft 365 organizations that have [Microsoft Defender for Office 365](defender-for-office-365.md) included in their subscription or purchased as an add-on have **Explorer** (also known as **Threat Explorer**) or **Real-time detections**. These features are powerful, near real-time reporting tools that help Security Operations (SecOps) teams investigate and respond to threats.
+Microsoft 365 organizations that have [Microsoft Defender for Office 365](mdo-about.md) included in their subscription or purchased as an add-on have **Explorer** (also known as **Threat Explorer**) or **Real-time detections**. These features are powerful, near real-time reporting tools that help Security Operations (SecOps) teams investigate and respond to threats.
 
 Depending on your subscription, Threat Explorer or Real-time detections is available in the **Email & collaboration** section in the Microsoft Defender portal at <https://security.microsoft.com>:
 
@@ -46,7 +45,7 @@ Threat Explorer contains the same information and capabilities as Real-time dete
 - More property filtering options, including the option to save queries.
 - More actions.
 
-For more information about the differences between Defender for Office 365 Plan 1 and Plan 2, see the [Defender for Office 365 Plan 1 vs. Plan 2 cheat sheet](mdo-security-comparison.md#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet).
+For more information about the differences between Defender for Office 365 Plan 1 and Plan 2, see the [Defender for Office 365 Plan 1 vs. Plan 2 cheat sheet](mdo-about.md#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet).
 
 The rest of this article explains the views and features that are available in Threat Explorer and Real-time detections.
 
@@ -62,9 +61,9 @@ The rest of this article explains the views and features that are available in T
 To use Explorer or Real-time detections, you need to be assigned permissions. You have the following options:
 
 - [Microsoft Defender XDR Unified role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac) (Affects the Defender portal only, not PowerShell):
-  - _Read access for email and Teams message headers_: **Security operations/Raw data (email & collaboration)/Email message headers (read)**.
-  - _Preview and download email messages_: **Security operations/Raw data (email & collaboration)/Email content (read)**.
-  - _Remediate malicious email_: **Security operations/Security data/Email advanced actions (manage)**.
+  - _Read access for email and Teams message headers_: **Security operations/Raw data (email & collaboration)/Email & collaboration metadata (read)**.
+  - _Preview and download email messages_: **Security operations/Raw data (email & collaboration)/Email & collaboration content (read)**.
+  - _Remediate malicious email_: **Security operations/Security data/Email & collaboration advanced actions (manage)**.
 - [Email & collaboration permissions in the Microsoft Defender portal](mdo-portal-permissions.md):
   - _Full access_: Membership in the **Organization Management** or **Security Administrator** role groups. More permissions are required to do all available actions:
     - _Preview and download messages_: Membership in the **Data Investigator** or **eDiscovery Manager** role groups. Or, [create a new role group](mdo-portal-permissions.md#create-email--collaboration-role-groups-in-the-microsoft-defender-portal) with the same roles as **Organization Management** or **Security Administrator**, and then add the **Preview** role.

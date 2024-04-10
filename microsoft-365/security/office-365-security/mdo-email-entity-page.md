@@ -8,8 +8,7 @@ manager: deniseb
 ms.date: 3/25/2024
 audience: ITPro
 ms.topic: conceptual
-ms.service: microsoft-365-security
-ms.subservice: mdo
+ms.service: defender-office-365
 ms.localizationpriority: medium
 ms.collection:
 - m365-security
@@ -19,14 +18,14 @@ ms.custom:
 description: Admins can learn about the Email entity page in Microsoft Defender for Office 365. This page shows many details about email messages. For example, email headers, threat detection details, the latest and original delivery locations, delivery actions, and IDs (for example, the Network message ID and the associated Alert ID).
 search.appverid: met150
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 1 and Plan 2</a>
 ---
 
 # The Email entity page in Microsoft Defender for Office 365
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-Microsoft 365 organizations that have [Microsoft Defender for Office 365](defender-for-office-365.md) included in their subscription or purchased as an add-on have the _Email entity page_. The Email entity page in the Microsoft Defender portal contains highly detailed information about an email message and any related entities.
+Microsoft 365 organizations that have [Microsoft Defender for Office 365](mdo-about.md) included in their subscription or purchased as an add-on have the _Email entity page_. The Email entity page in the Microsoft Defender portal contains highly detailed information about an email message and any related entities.
 
 This article explains the information and actions on the Email entity page.
 

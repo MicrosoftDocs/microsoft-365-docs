@@ -8,8 +8,6 @@
          href: mdo-about.md
        - name: Exchange Online Protection overview
          href: eop-about.md
-       - name: Defender for Office 365 security comparison
-         href: mdo-security-comparison.md
        - name: What's new in Defender for Office 365
          href: defender-for-office-365-whats-new.md
 
