@@ -49,6 +49,8 @@ The following table describes the different types of scans you can configure.
 > [!NOTE]
 > By default, quick scans run on mounted removable devices, such as USB drives.
 
+> [!TIP]
+> If you have a Network-Attached Storage (NAS) or Storage Area Network (SAN) you are able to utilize Internet Content Adaption Protocol (ICAP) scanning with the Microsoft Defender Antivirus engine, to learn more, please visit [here](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/metadefender-icap-with-windows-defender-antivirus-world-class/ba-p/800234).   
 ## How to choose a scan type
 
 Use the following table to choose a scan type.
