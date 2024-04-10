@@ -410,7 +410,7 @@ This configuration is available for both the enrolled (MDM) devices as well as u
 1. Click Next and assign this policy to targeted devices/users.
 
 > [!NOTE] 
-> The Defender app needs to be opened for tags to be synced with Intune and passed to Security Portal. It may take upto 18 hours for tags to reflect in the portal.
+> The Defender app needs to be opened for tags to be synced with Intune and passed to Security Portal. It may take up to 18 hours for tags to reflect in the portal.
 
 ## Configure option to send in-app feedback
 
