@@ -55,11 +55,11 @@ You can access the device summary capability through the following ways:
 
 2. From an incident page, you can choose a device on the incident graph and then select **Device details** (1). On the device pane, select **Summarize** (2) to generate the device summary. The summary is displayed in the Copilot pane.
 
-   :::image type="content" source="../../media/copilot-in-defender/device-summary/copilot-defender-device-summary-‌incident-small.png" alt-text="Screenshot highlighting the steps to access the device summary in an incident page in Copilot in Defender." lightbox="../../media/copilot-in-defender/device-summary/copilot-defender-device-summary-‌incident-small.png":::
+   :::image type="content" source="../../media/copilot-in-defender/device-summary/copilot-defender-device-summary-‌incident-small.png" alt-text="Screenshot highlighting the steps to access the device summary in an incident page in Copilot in Defender." lightbox="../../media/copilot-in-defender/device-summary/copilot-defender-device-summary-‌incident.png":::
 
    You can also access the device summary capability by choosing a device listed in the **Assets** tab of an incident. Select **Copilot** in the device pane to generate the device summary.
 
-   :::image type="content" source="../../media/copilot-in-defender/device-summary/copilot-defender-device-summary-assets-small.png" alt-text="Screenshot highlighting the device summary option in the assets tab of an incident page in Copilot in Defender." lightbox="../../media/copilot-in-defender/device-summary/copilot-defender-device-summary-assets-small.png":::
+   :::image type="content" source="../../media/copilot-in-defender/device-summary/copilot-defender-device-summary-assets-small.png" alt-text="Screenshot highlighting the device summary option in the assets tab of an incident page in Copilot in Defender." lightbox="../../media/copilot-in-defender/device-summary/copilot-defender-device-summary-assets.png":::
 
 Review the results. You can copy the results to clipboard, regenerate the results, or open the Copilot for Security portal by selecting the More actions ellipsis (...) on top of the device summary card.
 
