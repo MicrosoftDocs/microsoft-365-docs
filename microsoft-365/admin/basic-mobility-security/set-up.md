@@ -32,7 +32,7 @@ Check out all of our small business content on [Small business help & learning](
 
 The built-in Basic Mobility and Security for Microsoft 365 helps you secure and manage users' mobile devices such as iPhones, iPads, Androids, and Windows phones. You can create and manage device security policies, remotely wipe a device, and view detailed device reports.
 
-Have questions? For a FAQ to help address common questions, see [Basic Mobility and Security Frequently asked questions (FAQs)](frequently-asked-questions.yml). Be aware that you cannot use a delegated administrator account to manage Basic Mobility and Security. For more info, see [Partners: Offer delegated administration](https://support.microsoft.com/office/partners-offer-delegated-administration-26530dc0-ebba-415b-86b1-b55bc06b073e). 
+Have questions? For an FAQ to help address common questions, see [Basic Mobility and Security Frequently asked questions (FAQs)](frequently-asked-questions.yml). Be aware that you cannot use a delegated administrator account to manage Basic Mobility and Security. For more info, see [Partners: Offer delegated administration](https://support.microsoft.com/office/partners-offer-delegated-administration-26530dc0-ebba-415b-86b1-b55bc06b073e). 
 
 ## Activate the Basic Mobility and Security service
 
