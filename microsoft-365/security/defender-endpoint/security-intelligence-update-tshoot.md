@@ -34,7 +34,7 @@ Use this article to learn how to troubleshoot security intelligence updates for 
 
    If you're only using Microsoft Defender Antivirus, see the **Windows Update** section in [Manage connection endpoints for Windows 11 Enterprise](/windows/privacy/manage-windows-11-endpoints). 
 
-2. Make sure that the URLs you reviewed during the previous step aren't SSL inspected. If not, you might see the following error in the event log:
+2. Make sure that the URLs you reviewed during the previous step aren't SSL inspected. Otherwise, you might see the following error in the event log:
 
    ```properties
 
