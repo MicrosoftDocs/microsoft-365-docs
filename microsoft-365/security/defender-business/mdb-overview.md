@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: overview
 ms.service: defender-business
 ms.localizationpriority: medium
-ms.date: 11/30/2023
+ms.date: 04/10/2024
 ms.reviewer: yaelbenari, efratka, nehabha
 f1.keywords: NOCSH 
 ms.collection: 
@@ -17,6 +17,7 @@ ms.collection:
 - m365-security
 - m365-initiative-defender-business
 - tier1
+- essentials-overview
 ms.custom: intro-overview
 ---
 
