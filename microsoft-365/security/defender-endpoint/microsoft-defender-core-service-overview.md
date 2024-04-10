@@ -1,16 +1,20 @@
 ---
-# Required metadata
-# For more information, see https://review.learn.microsoft.com/en-us/help/platform/learn-editor-add-metadata?branch=main
-# For valid values of ms.service, ms.prod, and ms.topic, see https://review.learn.microsoft.com/en-us/help/platform/metadata-taxonomies?branch=main
-
 title: Microsoft Defender Core service overview
-description: Microsoft Defender Core service overview
-author:      YongRhee-MSFT # GitHub alias
-ms.author:   yongrhee # Microsoft alias
+description: Get an overview of Microsoft Defender Core service
+author: siosulli
+ms.author: siosulli
+ms.reviewer: yongrhee
+manager: deniseb
 ms.service: defender-endpoint
-ms.topic: overview
-ms.date:     04/09/2024
 ms.subservice: ngp
+ms.topic: overview
+ms.date: 04/10/2024
+search.appverid: met150
+ms.localizationpriority: medium
+audience: ITPro
+ms.collection: 
+- m365-security
+- tier2
 ---
 
 # Microsoft Defender Core service overview
@@ -32,6 +36,7 @@ The Microsoft Defender Core service is releasing with [Microsoft Defender Antivi
   - Mid June 2024 to U.S. Government customers running Windows clients and Windows Servers.
     
 - Enterprise customers should allow the following URLs:
+
   - `*.events.data.microsoft.com`
     
   - `*.endpoint.security.microsoft.com`
@@ -39,6 +44,7 @@ The Microsoft Defender Core service is releasing with [Microsoft Defender Antivi
   - `*.ecs.office.com` 
     
 - Enterprise U.S. Government customers should allow the following URLs:
+
   - `*.events.data.microsoft.com`
     
   - `*.endpoint.security.microsoft.us (GCC-H & DoD)`
@@ -53,15 +59,19 @@ The Microsoft Defender Core service is releasing with [Microsoft Defender Antivi
 
 - Consumers need not take any actions to prepare. 
 
-Microsoft Defender Antivirus processes and services
+## Microsoft Defender Antivirus processes and services
 
-The following table summarizes Microsoft Defender Antivirus processes and services. You can view them in Task Manager in Windows.
+The following table summarizes where you can view Microsoft Defender Antivirus processes and services (`MdCoreSvc`) using Task Manager on Windows devices.
 
 | Process or service | Where to view its status |
 |--|--|
 | **Microsoft Defender Antivirus Core service** 
-(`MdCoreSvc`) | - **Processes** tab: `Antimalware Core Service` - **Details** tab: `MpDefenderCoreService.exe` - **Services** tab: `Microsoft Defender Core Service` |
+ | - **Processes** tab: `Antimalware Core Service` <br/>- **Details** tab: `MpDefenderCoreService.exe` <br/>- **Services** tab: `Microsoft Defender Core Service` |
 
 
-To learn more about the Microsoft Defender Core service configurations and experimentation (ECS) visit [here](/microsoft-365/security/defender-endpoint/microsoft-defender-core-service-configurations-and-experimentation).
+To learn more about the Microsoft Defender Core service configurations and experimentation (ECS), see [Microsoft Defender Core service configurations and experimentation](microsoft-defender-core-service-configurations-and-experimentation.md) 
+
+
+
+visit [here](/microsoft-365/security/defender-endpoint/microsoft-defender-core-service-configurations-and-experimentation).
 
