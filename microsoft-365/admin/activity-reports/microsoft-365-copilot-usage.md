@@ -14,6 +14,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+- m365copilot
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
@@ -215,7 +216,7 @@ The information captured in audit log records differs from that in [Microsoft 36
 
  Not yet. [Roadmap ID #375760 Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=375760) states that feature Intelligent Recap in Teams has been available for Microsoft Copilot for Microsoft 365 users since January 2024. However, telemetry is not captured in Usage reports, Adoption Score, and Microsoft Copilot Dashboard. We are working on bringing this feature into those products and will announce in Message Center once it’s available.
 
-### What’s the scope of user-level table?
+### What’s the scope of the user-level table?
 
 The user-level table in the report is configured to show all users who were licensed for Copilot for Microsoft 365 at any point over the past 180 days, even if the user has since had the license removed or never had any Copilot active usage.
 

@@ -92,7 +92,7 @@ As part of your organization's security team, you can configure attack surface r
 - Controlled folder access
 - Device control
 
-Audit mode lets you see a record of what *would* have happened if you had enabled the feature.
+Audit mode lets you see a record of what *would* have happened if the feature were enabled.
 
 You can enable audit mode when testing how the features work. Enabling audit mode only for testing helps to prevent audit mode from affecting your line-of-business apps. You can also get an idea of how many suspicious file modification attempts occur over a certain period of time.
 
@@ -111,7 +111,7 @@ You can enable audit mode using Group Policy, PowerShell, and configuration serv
 | Audit applies to all events | [Enable network protection](enable-network-protection.md) | [Network protection events](evaluate-network-protection.md#review-network-protection-events-in-windows-event-viewer) |
 | Audit applies to individual mitigations | [Enable exploit protection](enable-exploit-protection.md) | [Exploit protection events](exploit-protection.md#review-exploit-protection-events-in-windows-event-viewer) |
 
-For example, you can test attack surface reduction rules in audit mode prior to enabling (block mode) them. Attack surface reduction rules are predefined to harden common, known attack surfaces. There are several methods you can use to implement attack surface reduction rules. The preferred method is documented in the following attack surface reduction rules deployment articles:
+For example, you can test attack surface reduction rules in audit mode before you enable them in block mode. Attack surface reduction rules are predefined to harden common, known attack surfaces. There are several methods you can use to implement attack surface reduction rules. The preferred method is documented in the following attack surface reduction rules deployment articles:
 
 - [Attack surface reduction rules deployment overview](attack-surface-reduction-rules-deployment.md)
 - [Plan attack surface reduction rules deployment](attack-surface-reduction-rules-deployment-plan.md)
@@ -301,4 +301,5 @@ As mentioned in the video, Defender for Endpoint includes several attack surface
 | [Network protection](network-protection.md) | Extend protection to your network traffic and connectivity on your organization's devices. (Requires Microsoft Defender Antivirus). |
 | [Test attack surface reduction rules](attack-surface-reduction-rules-deployment-test.md) | Provides steps to use audit mode to test attack surface reduction rules. |
 | [Web protection](web-protection-overview.md) | Web protection lets you secure your devices against web threats and helps you regulate unwanted content. |
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
