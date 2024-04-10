@@ -55,3 +55,5 @@ Translation in Syntex is available for [all supported languages and dialects](/a
 ### Frequently asked questions
 
 For answers to frequently asked questions about document translation, see [Document Translation: FAQ](/azure/ai-services/translator/document-translation/faq#document-translation-faq).
+
+For specific questions about character count, see [How does Translator count characters?](/azure/ai-services/translator/translator-faq#how-does-translator-count-characters).
