@@ -30,12 +30,6 @@ search.appverid: met150
 
 You can set up regular, scheduled antivirus scans on devices. These scheduled scans are in addition to always-on, real-time protection and [on-demand antivirus](run-scan-microsoft-defender-antivirus.md) scans. When you schedule a scan, you can specify the type of scan, when the scan should occur, and if the scan should occur after a [protection update](manage-protection-updates-microsoft-defender-antivirus.md) or when a device isn't being used. You can also set up special scans to complete remediation actions if needed.
 
-- [Compare the quick scan, full scan, and custom scan](#comparing-the-quick-scan-full-scan-and-custom-scan)
-- [Choose a scan type](#how-to-choose-a-scan-type)
-- [Keep these important points](#important-points-to-keep-in-mind)
-- [Try the scheduled quick scan performance optimization](#scheduled-quick-scan-performance-optimization)
-- [Additional resources](#see-also)
-
 ## Comparing the quick scan, full scan, and custom scan
 
 The following table describes the different types of scans you can configure.
@@ -50,7 +44,8 @@ The following table describes the different types of scans you can configure.
 > By default, quick scans run on mounted removable devices, such as USB drives.
 
 > [!TIP]
-> If you have a Network-Attached Storage (NAS) or Storage Area Network (SAN) you are able to utilize Internet Content Adaption Protocol (ICAP) scanning with the Microsoft Defender Antivirus engine, to learn more, please visit [here](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/metadefender-icap-with-windows-defender-antivirus-world-class/ba-p/800234).   
+> If you have a Network-Attached Storage (NAS) or Storage Area Network (SAN), you can use Internet Content Adaption Protocol (ICAP) scanning with the Microsoft Defender Antivirus engine. For more information, see [Tech Community Blog: MetaDefender ICAP with Windows Defender Antivirus: World-class security for hybrid environments](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/metadefender-icap-with-windows-defender-antivirus-world-class/ba-p/800234).   
+
 ## How to choose a scan type
 
 Use the following table to choose a scan type.
