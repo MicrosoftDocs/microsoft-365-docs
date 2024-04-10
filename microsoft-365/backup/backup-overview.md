@@ -74,7 +74,7 @@ Key architectural takeaways:
 
 - OneDrive, SharePoint, and Exchange have multiple physically redundant copies of your data to protect against physical disasters.
 
-    ![Diagram showing the Microsoft 365 data trust boundaries.](../../media/content-understanding/backup-boundaries-diagram.png)
+    ![Diagram showing the Microsoft 365 data trust boundaries.](../media/m365-backup/backup-boundaries-diagram.png)
 
 ### General availability performance targets
 

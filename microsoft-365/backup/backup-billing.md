@@ -33,7 +33,7 @@ Use these steps to set up pay-as-you-go billing for Microsoft 365 Backup.
 
 4. On the **Use content AI with Microsoft Syntex** page, select **Set up billing**.
 
-    ![Screenshot of the Set up billing option in the Microsoft 365 admin center.](../../media/content-understanding/backup-setup-billing.png)
+    ![Screenshot of the Set up billing option in the Microsoft 365 admin center.](../media/m365-backup/backup-setup-billing.png)
 
     > [!NOTE]
     > To set up pay-as-you-go billing for Microsoft 365 Backup, you must provide an owner or contribution role on the Azure subscription to be used.
@@ -54,7 +54,7 @@ Use these steps to set up pay-as-you-go billing for Microsoft 365 Backup.
 
     1. Or, you can follow steps in [Manage Azure resource groups by using the Azure portal](/azure/azure-resource-manager/management/manage-resource-groups-portal) to create a resource group.
 
-    ![Screenshot of the Set up pay-as-you-go billing panel in the Microsoft 365 admin center.](../../media/content-understanding/backup-billing-panel.png)
+    ![Screenshot of the Set up pay-as-you-go billing panel in the Microsoft 365 admin center.](../media/m365-backup/backup-billing-panel.png)
 
     > [!NOTE]
     > The resource group should be mapped to the Azure subscription you provided when you set up pay-as-you-go.
@@ -66,7 +66,7 @@ Use these steps to set up pay-as-you-go billing for Microsoft 365 Backup.
        > [!NOTE]
        > The subscription dropdown list will not populate if you don't have an owner or contributor on the subscription.
 
-       ![Screenshot of the Set up pay-as-you-go billing panel showing the Azure subscription dropdown list.](../../media/content-understanding/back-billing-subscription.png)
+       ![Screenshot of the Set up pay-as-you-go billing panel showing the Azure subscription dropdown list.](../media/m365-backup/back-billing-subscription.png)
 
     1. Under **Resource group**, select the resource group from the dropdown list.
 
@@ -90,7 +90,7 @@ You can view actual and accumulated cost breakdown by tenants and service type f
 
     - Select **+Add Filter** to see breakdown of cost by meters and tags.
 
-       ![Screenshot of the cost analysis page in Microsoft Cost Management.](../../media/content-understanding/backup-cost-analysis.png)
+       ![Screenshot of the cost analysis page in Microsoft Cost Management.](../media/m365-backup/backup-cost-analysis.png)
 
 ### Billing attribution by tenants, service type, and applications
 

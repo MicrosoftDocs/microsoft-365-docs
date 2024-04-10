@@ -24,7 +24,7 @@ description: Learn about the charge model and pricing calculator for Microsoft 3
 
 ## Microsoft 365 Backup charge model
 
-The Microsoft 365 Backup service, offered through the Microsoft 365 admin center, is a [pay-as-you-go consumption-based service](../syntex-pay-as-you-go-services.md). The preview list price is $0.15/GB/month of protected content.
+The Microsoft 365 Backup service, offered through the Microsoft 365 admin center, is a [pay-as-you-go consumption-based service](microsoft-365/syntex/syntex-pay-as-you-go-services). The preview list price is $0.15/GB/month of protected content.
 
 ### What’s counted towards protected backup storage?
 
@@ -85,7 +85,7 @@ The Microsoft 365 Backup pricing calculator uses the input data about your curre
 
 You can change the period that the reports display data for by selecting the **Past *n* days** on the right-hand side and then selecting the period.
 
-![Screenshot showing an example of how to change the period for reporting display data.](../../media/content-understanding/backup-change-period-data.png)
+![Screenshot showing an example of how to change the period for reporting display data.](../media/m365-backup/backup-change-period-data.png)
   
 As a recommendation and if there's usage data available, the longer the period is—for example, 180-days—the more accurate your usage estimates will be and therefore more accurate the Microsoft 365 Backup pricing calculator estimates will be.
 
@@ -97,55 +97,55 @@ For each of the service types (Exchange, OneDrive, and SharePoint) record the fo
 
 Once you have this information, enter it into the **High-Level Estimates** worksheet as shown in the following example.
 
-![Screenshot showing an example of the High-Level Estimates worksheet in Excel.](../../media/content-understanding/backup-estimates-worksheet.png)
+![Screenshot showing an example of the High-Level Estimates worksheet in Excel.](../media/m365-backup/backup-estimates-worksheet.png)
 
 #### OneDrive - Usage
 
-![Screenshot showing the Usage page for OneDrive in the Microsoft 365 admin center.](../../media/content-understanding/backup-onedrive-account-usage.png)
+![Screenshot showing the Usage page for OneDrive in the Microsoft 365 admin center.](../media/m365-backup/backup-onedrive-account-usage.png)
 
 ##### Accounts
 
 Number of total and active accounts at the start of the period and at the end of the period. For example, 14 accounts and 16 accounts:
 
-![Screenshot showing the number of total and active accounts for OneDrive.](../../media/content-understanding/backup-onedrive-account-total.png)
+![Screenshot showing the number of total and active accounts for OneDrive.](../media/m365-backup/backup-onedrive-account-total.png)
 
 ##### Storage
 
 Amount of storage used at the start of at the start of the period and at the end of the period. For example, 0.58 GB and 0.37 GB:
 
-![Screenshot showing the amount of storage used for OneDrive.](../../media/content-understanding/backup-onedrive-storage-total.png)
+![Screenshot showing the amount of storage used for OneDrive.](../media/m365-backup/backup-onedrive-storage-total.png)
 
 #### SharePoint - Site usage
 
-![Screenshot showing the Usage page for SharePoint in the Microsoft 365 admin center.](../../media/content-understanding/backup-sharepoint-site-usage.png)
+![Screenshot showing the Usage page for SharePoint in the Microsoft 365 admin center.](../media/m365-backup/backup-sharepoint-site-usage.png)
 
 ##### Sites
 
 Number of total and active sites at the start of the period and at the end of the period. For example, 2,457,360 sites and 2,457,454 sites:
 
-![Screenshot showing the number of total and active sites for SharePoint.](../../media/content-understanding/backup-sharepoint-site-total.png)
+![Screenshot showing the number of total and active sites for SharePoint.](../media/m365-backup/backup-sharepoint-site-total.png)
 
 ##### Storage
 
 Amount of storage used at the start of at the start of the period and at the end of the period. For example, 2,200 GB and 2,200 GB:
 
-![Screenshot showing the amount of storage used for SharePoint.](../../media/content-understanding/backup-sharepoint-storage-total.png)
+![Screenshot showing the amount of storage used for SharePoint.](../media/m365-backup/backup-sharepoint-storage-total.png)
 
 #### Exchange - Mailbox usage
 
-![Screenshot showing the Usage page for Exchange in the Microsoft 365 admin center.](../../media/content-understanding/backup-exchange-mailbox-usage.png)
- 
+![Screenshot showing the Usage page for Exchange in the Microsoft 365 admin center.](../media/m365-backup/backup-exchange-mailbox-usage.png)
+
 ##### Mailbox
 
 Number of total and active user mailboxes at the start of the period and at the end of the period. For example, 26 mailboxes and 30 mailboxes:
 
-![Screenshot showing the number of total and active user mailboxes for Exchange.](../../media/content-understanding/backup-exchange-mailbox-total.png)
+![Screenshot showing the number of total and active user mailboxes for Exchange.](../media/m365-backup/backup-exchange-mailbox-total.png)
 
 ##### Storage
 
 Amount of storage used at the start of the period and at the end of the period. For example, 5.5 GB and 4.3 GB:
 
-![Screenshot showing the amount of storage used for Exchange.](../../media/content-understanding/backup-exchange-storage-total.png)
+![Screenshot showing the amount of storage used for Exchange.](../media/m365-backup/backup-exchange-storage-total.png)
 
 ### Pricing calculator notes
 

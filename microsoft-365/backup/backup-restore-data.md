@@ -67,17 +67,17 @@ Follow these steps to restore data backed up for OneDrive.
 
 2. On the **Select type of content** page, you'll see **OneDrive accounts** preselected. Select **Next**.
 
-    ![Screenshot showing the Select type of content page with OneDrive accounts selected.](../../media/content-understanding/backup-onedrive-select-type.png)
+    ![Screenshot showing the Select type of content page with OneDrive accounts selected.](../media/m365-backup/backup-onedrive-select-type.png)
 
 3. From the list of backed up OneDrive accounts, select the accounts to restore, and then select **Next**.
 
 4. On the **Select the date and time** page, select the date and time from which you want to restore the content.
 
-    ![Screenshot showing the Select the date and time page for OneDrive.](../../media/content-understanding/backup-onedrive-select-date-time.png)
+    ![Screenshot showing the Select the date and time page for OneDrive.](../media/m365-backup/backup-onedrive-select-date-time.png)
 
     Choose a recommended restore point from **Select a faster restore point**, which will offer a faster restore compared to standard restore points.
 
-    ![Screenshot showing the Select a faster restore point option for OneDrive.](../../media/content-understanding/backup-onedrive-select-faster-restore.png)
+    ![Screenshot showing the Select a faster restore point option for OneDrive.](../media/m365-backup/backup-onedrive-select-faster-restore.png)
 
     Backup will restore the closest backed up content *before* the specified date and time. Select **Next**.
 
@@ -85,17 +85,17 @@ Follow these steps to restore data backed up for OneDrive.
 
 5. On the **Confirm restore points** page, you'll be presented with a list of available express restore points that will restore with better performance than non-express restore points. We highly recommend that you choose an express restore point all else equal.
 
-    ![Screenshot showing the Confirm restore points page for OneDrive.](../../media/content-understanding/backup-onedrive-confirm-restore.png)
+    ![Screenshot showing the Confirm restore points page for OneDrive.](../media/m365-backup/backup-onedrive-confirm-restore.png)
 
 6. Confirm the restore point in time to which the data will be restored from backup. If the restore point is correct, select **Next**.
 
 7. On the **Select another backup** panel, choose another backup for the account selected, if needed.
 
-    ![Screenshot showing the Select another backup panel for OneDrive.](../../media/content-understanding/backup-onedrive-select-another-backup.png)
+    ![Screenshot showing the Select another backup panel for OneDrive.](../media/m365-backup/backup-onedrive-select-another-backup.png)
 
 8. On the **Set destination** page, selected OneDrive accounts can be restored by choosing  either the **Restore to the original OneDrive accounts** or **Create new SharePoint site and restore to there** option.
 
-    ![Screenshot showing the Select destination page and options for OneDrive.](../../media/content-understanding/backup-onedrive-set-destination.png)
+    ![Screenshot showing the Select destination page and options for OneDrive.](../media/m365-backup/backup-onedrive-set-destination.png)
 
     a. **Restore to the original OneDrive accounts** option
         - The entire OneDrive is replaced by the backed-up version chosen based on the restore point.
@@ -106,7 +106,7 @@ Follow these steps to restore data backed up for OneDrive.
 
 9. On the **Review and Finish** page, you'll be asked to review and finish all your choices. If everything looks as you want it, select **Restore OneDrive accounts**.
 
-    ![Screenshot showing the Review and finish page for OneDrive.](../../media/content-understanding/backup-onedrive-review-finish.png)
+    ![Screenshot showing the Review and finish page for OneDrive.](../media/m365-backup/backup-onedrive-review-finish.png)
 
 # [SharePoint](#tab/sharepoint)
 
@@ -116,17 +116,17 @@ Follow these steps to restore data backed up for SharePoint.
 
 2. On the **Select type of content** page, you'll see **SharePoint site content** preselected. Select **Next**.
 
-    ![Screenshot showing the Select type of content page with SharePoint site content selected.](../../media/content-understanding/backup-sharepoint-select-type.png)
+    ![Screenshot showing the Select type of content page with SharePoint site content selected.](../media/m365-backup/backup-sharepoint-select-type.png)
 
 3. From the list of backed up SharePoint sites, select the sites to restore, and then select **Next**.
 
 4. On the **Select the date and time** page, select the date and time from which you want to restore the content.
 
-    ![Screenshot showing the Select the date and time page for SharePoint.](../../media/content-understanding/backup-sharepoint-select-date-time.png)
+    ![Screenshot showing the Select the date and time page for SharePoint.](../media/m365-backup/backup-sharepoint-select-date-time.png)
 
     Choose a recommended restore point from **Select a faster restore point**, which will offer a faster restore compared to standard restore points.
 
-    ![Screenshot showing the Select a faster restore point option for SharePoint.](../../media/content-understanding/backup-sharepoint-select-faster-restore.png)
+    ![Screenshot showing the Select a faster restore point option for SharePoint.](../media/m365-backup/backup-sharepoint-select-faster-restore.png)
 
     Backup will restore the closest backed up content *before* the specified date and time. Select **Next**.
 
@@ -134,17 +134,17 @@ Follow these steps to restore data backed up for SharePoint.
 
 5. On the **Confirm restore points** page, you'll be presented with a list of available express restore points that will restore with better performance than non-express restore points. We highly recommend that you choose an express restore point all else equal.
 
-    ![Screenshot showing the Confirm restore points page for SharePoint.](../../media/content-understanding/backup-sharepoint-confirm-restore.png)
+    ![Screenshot showing the Confirm restore points page for SharePoint.](../media/m365-backup/backup-sharepoint-confirm-restore.png)
 
 6. Confirm the restore point in time to which the data will be restored from backup. If the restore point is correct, select **Next**.
 
 7. On the **Select another backup** panel, choose another backup for the site selected, if needed.
 
-    ![Screenshot showing the Select another backup panel for SharePoint.](../../media/content-understanding/backup-sharepoint-select-another-backup.png)
+    ![Screenshot showing the Select another backup panel for SharePoint.](../media/m365-backup/backup-sharepoint-select-another-backup.png)
 
 8. On the **Set destination** page, selected SharePoint sites can be restored by choosing  either the **Restore to the original OneDrive accounts** or **Create new SharePoint site and restore to there** option.
 
-    ![Screenshot showing the Select destination page and options for SharePoint.](../../media/content-understanding/backup-sharepoint-set-destination.png)
+    ![Screenshot showing the Select destination page and options for SharePoint.](../media/m365-backup/backup-sharepoint-set-destination.png)
 
     a. **Restore to original sites** option
         - The entire original site is replaced by the backed up version chosen based on the restore point.
@@ -155,7 +155,7 @@ Follow these steps to restore data backed up for SharePoint.
 
 9. On the **Review and Finish** page, you'll be asked to review and finish your choices. If everything looks as you want it, select **Restore sites**.
 
-    ![Screenshot showing the Review and finish page for SharePoint.](../../media/content-understanding/backup-sharepoint-review-finish.png)
+    ![Screenshot showing the Review and finish page for SharePoint.](../media/m365-backup/backup-sharepoint-review-finish.png)
   
 
 # [Exchange](#tab/exchange)
@@ -179,7 +179,7 @@ Follow these steps to restore data backed up for Exchange.
 
 1. Use this option to perform a full mailbox restore, On the **Content scope** page, the **All emails, notes, contacts, calendars, and tasks** option lets you restore all emails, notes, contacts, and tasks, and modified calendar items for that user account. Select the last known good (LKG) date and time from which you want to restore the content. Make sure that the time zone in the dropdown menu reflects your intention, and select **Next**.
 
-    ![Screenshot showing the Content scope page with the All emails, notes, contacts, calendars, and tasks option selected.](../../media/content-understanding/backup-exchange-content-scope-all.png)
+    ![Screenshot showing the Content scope page with the All emails, notes, contacts, calendars, and tasks option selected.](../media/m365-backup/backup-exchange-content-scope-all.png)
 
     For example, the last time the end user remembers seeing their mailbox in a “good state” was October 2, 2023 8:00 AM. However, on October 2, 2023 9:00 AM they saw all of their emails were encrypted (possible ransomware attack), choose the last known good time as October 2, 2023 8:00 AM.
 
@@ -199,7 +199,7 @@ Follow these steps to restore data backed up for Exchange.
 
 1. Use this option to perform a partial mailbox restore. On the **Content scope** page, the **Selected content only** option gives the admin the ability to do a granular restore (not full mailbox restore).
 
-    ![Screenshot showing the Content scope page with the Selected content only option selected.](../../media/content-understanding/backup-exchange-content-scope-selected.png)
+    ![Screenshot showing the Content scope page with the Selected content only option selected.](../media/m365-backup/backup-exchange-content-scope-selected.png)
 
     The search for items is based on four options:
 
@@ -217,8 +217,8 @@ Follow these steps to restore data backed up for Exchange.
     a. **Restore to a new folder** where the content will be restored to a newly created folder named *Recovered Items YYYY-MM-DD, HH:MM*.
 
     Example:
-    
-    ![Screenshot showing an example of newly create folder where content has been restored.](../../media/content-understanding/backup-restore-to-new-folder.png)
+
+    ![Screenshot showing an example of newly create folder where content has been restored.](../media/m365-backup/backup-restore-to-new-folder.png)
 
     b. **Restore in place** where the current version of the item will be overwritten by the restored content.
 

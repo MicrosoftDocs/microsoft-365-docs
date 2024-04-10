@@ -69,13 +69,17 @@ Performance and speed of web interfaces, initial configuration, and restores mig
 - Calendar item backup and restore is limited to modified items only and doesn't cover deleted items. This action includes the following specific limitations:
 
     - Restoring deleted calendar items with the ability to send updates post-restore isn't yet supported.
+
     - Replacing encrypted items with healthy items during a cross mailbox restore (mailboxes all belonging to the same user account) isn't supported.
+
     - Resolving orphaned conflict (in between ransomware and restore) isn't supported.
+
     - Restoring organizer copy doesn't automatically make attendee copies catch up, it only allows future updates by organizer to work for all users added on the calendar item.
 
 - Deleting the user account (for example, deleting the Microsoft Entra ID user) that owns the OneDrive account or Exchange mailbox renders the OneDrive account and Exchange mailbox as inactive or orphaned. The end-to-end workflow to restore such sites or mailboxes isn't supported directly in the Microsoft 365 Backup product. The Microsoft 365 Backup product ensures retention of the content. For more information about how to restore inactive mailboxes or orphaned OneDrive accounts, see:
 
     - OneDrive and Sharepoint: [Fix site user ID mismatch in SharePoint or OneDrive](/sharepoint/troubleshoot/sharing-and-permissions/fix-site-user-id-mismatch)
+
     - Exchange: [Recover an inactive mailbox](/purview/recover-an-inactive-mailbox)
 
 - While restoring Exchange mailboxes at a granular level, the search feature provides several search parameters. These parameters allow you to enter up to a maximum of five keywords each. For example, the parameters "from" and "to" allow you to enter up to a maximum of five email addresses each.
