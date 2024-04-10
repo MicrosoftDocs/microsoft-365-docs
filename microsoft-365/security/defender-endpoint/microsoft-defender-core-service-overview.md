@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender Core service overview
-description: Get an overview of Microsoft Defender Core service
+description: Get an overview of Microsoft Defender Core service.
 author: siosulli
 ms.author: siosulli
 ms.reviewer: yongrhee
@@ -55,9 +55,9 @@ The Microsoft Defender Core service is releasing with [Microsoft Defender Antivi
     
   - `*.config.ecs.dod.teams.microsoft.us (DoD)`
     
-- If you're using [Application Control for Windows](/windows/security/application-security/application-control/windows-defender-application-control/wdac), or you're running non-Microsoft antivirus or endpoint detection and response software, make sure to add the processes mentioned earlier to your allow list. 
+- If you're using [Application Control for Windows](/windows/security/application-security/application-control/windows-defender-application-control/wdac), or you're running non-Microsoft antivirus or endpoint detection and response software, make sure to add the processes mentioned earlier to your allowlist. 
 
-- Consumers need not take any actions to prepare. 
+- Consumers don't need to take any actions to prepare. 
 
 ## Microsoft Defender Antivirus processes and services
 
