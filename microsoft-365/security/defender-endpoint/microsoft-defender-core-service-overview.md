@@ -65,13 +65,9 @@ The following table summarizes where you can view Microsoft Defender Antivirus p
 
 | Process or service | Where to view its status |
 |--|--|
-| **Microsoft Defender Antivirus Core service** 
- | - **Processes** tab: `Antimalware Core Service` <br/>- **Details** tab: `MpDefenderCoreService.exe` <br/>- **Services** tab: `Microsoft Defender Core Service` |
-
+| `Antimalware Core Service` | **Processes** tab |
+| `MpDefenderCoreService.exe` | **Details** tab | 
+| `Microsoft Defender Core Service` | **Services** tab |
 
 To learn more about the Microsoft Defender Core service configurations and experimentation (ECS), see [Microsoft Defender Core service configurations and experimentation](microsoft-defender-core-service-configurations-and-experimentation.md) 
-
-
-
-visit [here](/microsoft-365/security/defender-endpoint/microsoft-defender-core-service-configurations-and-experimentation).
 
