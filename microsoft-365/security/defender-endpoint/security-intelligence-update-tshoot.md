@@ -69,7 +69,7 @@ Use this article to learn how to troubleshoot security intelligence updates for 
 3. Make sure that the Sservices needed for Windows Update are started. These services include:
 
    - Windows Update service
-   
+
    - Background Intelligence Transfer Service (BITS) 
 
 4. If you're using a [Fallback order](/microsoft-365/security/defender-endpoint/manage-protection-updates-microsoft-defender-antivirus) policy, make sure that *Microsoft Update* (`MicrosoftUpdateServer`) is the first item in the list.
@@ -82,7 +82,7 @@ Use this article to learn how to troubleshoot security intelligence updates for 
 
    - If either method doesn't work for you, use Microsoft Defender Antivirus diagnostic data collection. See [Collect Microsoft Defender Antivirus diagnostic data](collect-diagnostic-data.md).
 
-6. When you have your diagnostic data, convert the `WindowsUpdate.etl` logs into a human readable format by using the PowerShell command, [Get-WindowsUpdateLog](/powershell/module/windowsupdate/get-windowsupdatelog?view=windowsserver2022-ps). Use that information to troubleshoot issues with security intelligence updates.
+6. When you have your diagnostic data, convert the `WindowsUpdate.etl` logs into a human readable format by using the PowerShell command, [Get-WindowsUpdateLog](/powershell/module/windowsupdate/get-windowsupdatelog). Use that information to troubleshoot issues with security intelligence updates.
 
 ## See also
 
