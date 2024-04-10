@@ -28,9 +28,9 @@ landingContent:
       - linkListType: overview
         links:
           - text: Introduction to Microsoft 365 Backup
-            url: /microsoft-365/syntex/backup/backup-overview
+            url: backup-overview.md
           - text: FAQs
-            url: /microsoft-365/syntex/backup/backup-faq
+            url: backup-faq.md
 
 # Card 2
   - title: Get started
@@ -38,11 +38,11 @@ landingContent:
       - linkListType: overview
         links:
           - text: Set up Microsoft 365 Backup
-            url: /microsoft-365/syntex/backup/backup-setup
+            url: backup-setup.md
           - text: Set up billing
-            url: /microsoft-365/syntex/backup/backup-billing
+            url: backup-billing.md
           - text: Pricing model
-            url: /microsoft-365/syntex/backup/backup-pricing
+            url: backup-pricing.md
 
 # Card 3
   - title: Manage backups
@@ -50,11 +50,11 @@ landingContent:
       - linkListType: overview
         links:
           - text: View and edit backup policies
-            url: /microsoft-365/syntex/backup/backup-view-edit-policies
+            url: backup-view-edit-policies.md
           - text: Restore data
-            url: /microsoft-365/syntex/backup/backup-restore-data
+            url: backup-restore-data.md
           - text: Offboard usage
-            url: /microsoft-365/syntex/backup/backup-offboarding
+            url: backup-offboarding.md
 
 # Card 4
   - title: Preview information
@@ -62,15 +62,15 @@ landingContent:
       - linkListType: overview
         links:
           - text: Preview limitations
-            url: /microsoft-365/syntex/backup/backup-limitations
+            url: backup-limitations.md
 
 # Card 5
   - title: More solutions
     linkLists:
       - linkListType: overview
         links:
-          - text: Microsoft 365 Backup (Preview)
-            url: /microsoft-365/syntex/backup/backup-overview
+          - text: Microsoft 365 Archive (Preview)
+            url: /microsoft-365/archive
           - text: SharePoint Advanced Management
             url: /sharepoint/advanced-management
           - text: SharePoint Embedded
