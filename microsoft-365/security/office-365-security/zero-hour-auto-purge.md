@@ -4,7 +4,7 @@ f1.keywords:
   - NOCSH
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 audience: Admin
 ms.topic: conceptual
 ms.localizationpriority: medium
@@ -20,12 +20,11 @@ ms.collection:
 ms.custom:
   - seo-marvel-apr2020
 description: Zero-hour auto purge (ZAP) moves delivered messages in Microsoft 365 mailboxes to the Junk Email folder or quarantine if those messages are retroactively found to be spam, phishing, or contain malware.
-ms.subservice: mdo
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 ms.date: 11/16/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 1 and Plan 2</a>
 ---
 
 # Zero-hour auto purge (ZAP) in Microsoft Defender for Office 365
@@ -83,7 +82,7 @@ For more information about configuring spam filtering verdicts, see [Configure a
 For _read or unread messages_ that are identified as _high confidence phishing_ after delivery, ZAP quarantines the message. By default, only admins can view and manage quarantined high confidence phishing messages. But, admins can create and use _quarantine policies_ to define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy).
 
 > [!NOTE]
-> Users can't release their own messages that were quarantined as high confidence phishing, regardless of how the quarantine policy is configured. If the policy allows users to release their own quarantined messages, users are instead allowed to _request_ the release of their quarantined high-confidence phishing messages.
+> Users can't release their own messages that were quarantined as high confidence phishing, regardless of how the quarantine policy is configured. If the policy allows users to release their own quarantined messages, users are instead allowed to _request_ the release of their quarantined high confidence phishing messages.
 
 ZAP for high confidence phishing is enabled by default. For more information, see [Secure by Default in Office 365](secure-by-default.md).
 
@@ -115,7 +114,7 @@ For more information about configuring spam filtering verdicts, see [Configure a
 To determine if ZAP moved your message, you have the following options:
 
 - **Number of messages**: Use the [Mailflow view in the Mailflow status report](reports-email-security.md#mailflow-view-for-the-mailflow-status-report) to see the number of ZAP-affected messages for the specified date range.
-- **Message details**: Use [Threat Explorer (or real-time detections)](threat-explorer-about.md) to filter **All email** events by the value **ZAP** for the **Additional action** column.
+- **Message details**: Use [Threat Explorer (or real-time detections)](threat-explorer-real-time-detections-about.md) to filter **All email** events by the value **ZAP** for the **Additional action** column.
 
 > [!NOTE]
 > ZAP is not logged in the Exchange mailbox audit logs as a system action.
@@ -194,7 +193,14 @@ ZAP takes action on a message based on the configuration of anti-spam policies a
 
 ### How is ZAP affected by the exceptions to protection features in EOP and Defender for Office 365?
 
-[Safe sender lists](create-safe-sender-lists-in-office-365.md), mail flow rules, and other organizational block and allow settings take precedence over ZAP. These messages are excluded from ZAP, since the service is doing what you configured it to do. This behavior is another reason to be careful about configuring messages to bypass filtering.
+ZAP actions might be overridden by [Safe sender lists](create-safe-sender-lists-in-office-365.md), Exchange mail flow rules (transport rules), and other organizational block and allow settings. However, for malware and high confidence phishing verdicts, there are very few scenarios where ZAP doesn't act on messages to protect users:
+
+- [Third-party phishing simulation URLs identified in the Advanced delivery policy](advanced-delivery-policy-configure.md#use-the-microsoft-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy) (high confidence phishing).
+- [SecOps mailboxes identified in the Advanced delivery policy](advanced-delivery-policy-configure.md#use-the-microsoft-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy) (malware and high confidence phishing).
+- The MX record for your Microsoft 365 domain points to another service or device, and you use a mail flow rule to [bypass spam filtering](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl) (high confidence phishing).
+- [Admin submissions of false positives to Microsoft](submissions-admin.md#report-good-email-to-microsoft). By default, allow entries for domains and email addresses, files, and URLs exist for 30 days (malware and high confidence phishing).
+
+It's important for you to carefully consider the implications of bypassing filtering, as it could compromise the security posture of your organizatione.
 
 ### What are the licensing requirements for ZAP?
 

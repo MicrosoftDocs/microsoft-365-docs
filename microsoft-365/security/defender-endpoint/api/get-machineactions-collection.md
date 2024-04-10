@@ -1,15 +1,11 @@
 ---
 title: List machineActions API
 description: Learn how to use the List MachineActions API to retrieve a collection of Machine Actions in Microsoft Defender for Endpoint.
-keywords: apis, graph api, supported apis, machineaction collection
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security

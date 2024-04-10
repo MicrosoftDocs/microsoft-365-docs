@@ -9,6 +9,7 @@ ms.reviewer: shegu, nicholak
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
 ms.collection:
 - Tier1
@@ -20,6 +21,7 @@ ms.custom:
 - commerce_licensing
 - AdminSurgePortfolio
 - okr_SMB
+- admindeeplinkMAC
 search.appverid: MET150
 ms.date: 12/19/2023
 ---

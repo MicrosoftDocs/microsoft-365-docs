@@ -7,7 +7,7 @@ audience: ITPro
 ms.topic: conceptual
 author: siosulli
 ms.author: siosulli
-ms.reviewer: 
+ms.reviewer: yongrhee
 manager: deniseb
 ms.subservice: asr
 ms.collection: 
@@ -15,7 +15,7 @@ ms.collection:
 - tier2
 - mde-asr
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 03/28/2024
 ---
 
 # Evaluate network protection
@@ -35,8 +35,9 @@ This article helps you evaluate network protection by enabling the feature and g
 
 Enable network protection in audit mode to see which IP addresses and domains might be blocked. You can make sure it doesn't affect line-of-business apps, or get an idea of how often blocks occur.
 
-1. Type **powershell** in the Start menu, right-click **Windows PowerShell** and select **Run as administrator**
-2. Enter the following cmdlet:
+1. Type **powershell** in the Start menu, right-click **Windows PowerShell** and select **Run as administrator**.
+
+2. Run the following cmdlet:
 
     ```PowerShell
     Set-MpPreference -EnableNetworkProtection AuditMode
@@ -50,7 +51,7 @@ Enable network protection in audit mode to see which IP addresses and domains mi
 
     The network connection is allowed and a test message displays.
     
-    :::image type="content" source="images/np-notif.png" alt-text="The connection blockage notification" lightbox="images/np-notif.png":::
+    :::image type="content" source="media/np-notif.png" alt-text="The connection blockage notification" lightbox="media/np-notif.png":::
 
 > [!NOTE]
 > Network connections can be successful even though a site is blocked by network protection. To learn more, see [Network protection and the TCP three-way handshake](network-protection.md#network-protection-and-the-tcp-three-way-handshake).
@@ -65,7 +66,19 @@ To review apps that would have been blocked, open Event Viewer and filter for Ev
 | 1125 | Windows Defender (Operational) | Event when a network connection is audited |
 | 1126 | Windows Defender (Operational) | Event when a network connection is blocked |
 
-## See also
+### Troubleshooting Network Protection
+
+If network protection fails to detect, make sure that the following prerequisites are enabled:
+
+1. Microsoft Defender Antivirus is the primary antivirus app (active mode)
+
+2. [Behavior Monitoring is enabled](/microsoft-365/security/defender-endpoint/behavior-monitor)
+
+3. [Cloud Protection is enabled](/microsoft-365/security/defender-endpoint/enable-cloud-protection-microsoft-defender-antivirus)
+
+4. [Cloud Protection network connectivity is functional](/microsoft-365/security/defender-endpoint/configure-network-connections-microsoft-defender-antivirus)
+
+## Related articles
 
 - [Network protection](network-protection.md)
 

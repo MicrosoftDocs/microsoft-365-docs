@@ -48,7 +48,7 @@ This article describes error messages and problems that you might encounter whil
 
 ## Customer tenant onboarding  
 
-### Customer tenants show a status other than "Active" in the tenant list  
+### Customer tenants show a status other than "Managed" in the tenant list  
 
 **Cause:** Your customer tenants don't meet the following criteria:
 
@@ -63,11 +63,12 @@ Either granular delegated admin privileges (GDAP) plus an indirect reseller rela
 
 | Status | Description | Resolution |
 |--|--|--|
-| Inactive | Your organization has excluded this customer tenant from Lighthouse management. | You need to reactivate the tenant. On the **Tenants** page, select the three dots (more actions) next to the tenant that you want to reactivate, and then select **Activate tenant**. It can take 24–48 hours for initial customer data to appear in Lighthouse. |
 | Limited | This customer tenant has access to only a limited set of experiences in Lighthouse, including GDAP setup and management, user search, user details, tenant tagging, and service health. | Select the tenant name to see a detailed status of Lighthouse management requirements. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md). |
-| In process | An error occurred during the onboarding process for this customer tenant and we're working on a fix. | If this error persists for more than 48 hours, please contact Support. |
+| Removed by partner | Your organization has excluded this customer tenant from Lighthouse management. | You need to reactivate the tenant for management by Lighthouse. On the **Tenants** page, select the three dots (more actions) next to the tenant that you want to manage, and then select **Manage tenant**. It can take 24–48 hours for initial customer data to appear in Lighthouse. |
+| Removed by customer | The customer chose to disallow the use of Microsoft 365 Lighthouse to manage their tenant. | An admin in the customer tenant needs to go to **Org settings** in the Microsoft 365 admin center, select **Microsoft 365 Lighthouse** on the **Services** tab, and then select the option to allow the use of Microsoft 365 Lighthouse customer management experiences in their tenant. |
+| Error | An error occurred during the onboarding process for this customer tenant and we're working on a fix. | If this error persists for more than 48 hours, please contact Support. |
 
-If you confirmed that your customer tenant meets the onboarding criteria and they're still not showing as **Active** in Lighthouse, contact Support. For more information, see [Get help and support for Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
+If you confirmed that your customer tenant meets the onboarding criteria and they're still not showing as **Managed** in Lighthouse, contact Support. For more information, see [Get help and support for Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
 
 ## Access and permissions
 

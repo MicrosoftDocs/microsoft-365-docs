@@ -1,14 +1,8 @@
 ---
 title: Reduce the attack surface for Microsoft Teams
 description: Configuration which can be used to reduce the attack surface in Microsoft Teams, including enabling Microsoft Defender for Office 365.
-search.product:
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-f1.keywords: 
-  - NOCSH
-ms.author: tracyp
+ms.service: defender-office-365
+ms.author: chrisda
 author: MSFTBen
 ms.localizationpriority: medium
 manager: dansimp
@@ -18,7 +12,6 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: how-to
-ms.subservice: mdo
 search.appverid: met150
 ms.date: 01/05/2023
 ---
@@ -44,7 +37,7 @@ Microsoft Teams is a widely used collaboration tool, where many users are now sp
 
 If licensed for Microsoft Defender for Office 365 (free 90-day evaluation available at aka.ms/trymdo) you can ensure seamless protection from zero-day malware and time of click protection within Microsoft Teams.
 
-[Learn More (SafeLinks)](/microsoft-365/security/office-365-security/safe-links#safe-links-settings-for-microsoft-teams) & [Learn More (Safe Attachments)](/microsoft-365/security/office-365-security/turn-on-mdo-for-spo-odb-and-teams) (Detailed Documentation)
+[Learn More (SafeLinks)](../safe-links-about.md#safe-links-settings-for-microsoft-teams) & [Learn More (Safe Attachments)](../safe-attachments-for-spo-odfb-teams-configure.md) (Detailed Documentation)
 
 1. **Login** to the security center's safe attachments configuration page at <https://security.microsoft.com/safeattachmentv2>.
 2. Press **Global settings**.
@@ -54,8 +47,8 @@ If licensed for Microsoft Defender for Office 365 (free 90-day evaluation availa
 6. **Select** a policy, a flyout appears on the left-hand side.
 7. Press **Edit protection settings**.
 8. Ensure **Safe Links checks a list of known, malicious links when users click links in Microsoft Teams** is checked.
-1. Press **Save**.
-1. In organizations with Microsoft Defender for Office 365 Plan 2 or Microsoft Defender XDR, admins can decide whether users can report malicious messages in Microsoft Teams. Learn more here. [User reported message settings in Microsoft Teams](/microsoft-365/security/office-365-security/submissions-teams)
+9. Press **Save**.
+10. In organizations with Microsoft Defender for Office 365 Plan 2 or Microsoft Defender XDR, admins can decide whether users can report malicious messages in Microsoft Teams. Learn more here. [User reported message settings in Microsoft Teams](../submissions-teams.md)
 
 ## Restricting channel email messages to approved domains
 
@@ -133,6 +126,6 @@ Note that external organizations must also allow your organization's domain for 
 
 Consider configuring access policies to implement Zero Trust identity and device access policies to protect Microsoft Teams chats, groups, and content such as files and calendars.
 
-Learn more about teams access policies: [Recommended Teams policies - Microsoft 365 for enterprise - Office 365 | Microsoft Docs](/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-teams)
+Learn more about teams access policies: [Policy recommendations for securing Teams chats, groups, and files](../zero-trust-identity-device-access-policies-teams.md).
 
-Security in Microsoft Teams:[Overview of security and compliance - Microsoft Teams | Microsoft Docs](/microsoftteams/security-compliance-overview)
+Security in Microsoft Teams: [Overview of security and compliance - Microsoft Teams | Microsoft Docs](/microsoftteams/security-compliance-overview).

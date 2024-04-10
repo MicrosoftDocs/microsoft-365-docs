@@ -17,6 +17,8 @@ f1.keywords: NOCSH
 ---
 # Windows Server Application Testing
 
+[!INCLUDE [test-base-deprecation](./includes/test-base-deprecation.md)]
+
 With Test Base for Microsoft 365, you can now validate your applications against Windows Server 2016 and 2019, including Server Core!
 
 To get started with validating your uploaded applications against pre-release updates for Windows Server 2016 and 2019 operating systems on Test Base for Microsoft 365, kindly adhere to the following steps:

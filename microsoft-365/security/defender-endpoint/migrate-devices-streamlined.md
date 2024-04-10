@@ -86,7 +86,7 @@ Follow the guidance in [Group policy](configure-endpoints-gp.md) using the strea
 
 ### Microsoft Intune
 
-Follow the guidance in [Intune](/mem/intune/protect/endpoint-security-edr-policy#updating-the-onboarding-state-for-a-device) using the streamlined onboarding pacakge. After completing the steps, you must restart the device for device connectivity to switch over.
+Follow the guidance in [Intune](/mem/intune/protect/endpoint-security-edr-policy#updating-the-onboarding-state-for-a-device) using the streamlined onboarding package. After completing the steps, you must restart the device for device connectivity to switch over.
 
 ### Microsoft Configuration Manager 
 
@@ -238,7 +238,7 @@ Open the Defender for Endpoint service event log using the following steps:
 
 2. In the log list, under **Log Summary**, scroll down until you see **Microsoft-Windows-SENSE/Operational**. Double-click the item to open the log. 
 
-	:::image type="content" source="images/log-summary-event-viewer.png" alt-text="Screenshot of Event Viewer with log summary section":::
+	:::image type="content" source="media/log-summary-event-viewer.png" alt-text="Screenshot of Event Viewer with log summary section":::
 
 	You can also access the log by expanding**Applications and Services Logs>Microsoft>Windows>SENSE** and select **Operational**. 
 

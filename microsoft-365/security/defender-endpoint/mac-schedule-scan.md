@@ -4,8 +4,9 @@ description: Learn how to schedule an automatic scanning time for Microsoft Defe
 ms.service: defender-endpoint
 ms.author: siosulli
 author: siosulli
+ms.reviewer: yongrhee
 ms.localizationpriority: medium
-ms.date: 02/12/2024
+ms.date: 04/09/2024
 manager: deniseb
 audience: ITPro
 ms.collection: 
@@ -28,21 +29,15 @@ search.appverid: met150
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-> [!IMPORTANT]
-> Some information relates to a pre-released product feature in public preview which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
-> [!NOTE] 
->The built-in Scheduled Scan is currently in public preview. Review the prerequisites carefully.
-
 ## Schedule a scan *built-in to* Microsoft Defender for Endpoint on macOS
 
 While you can start a threat scan at any time with Microsoft Defender for Endpoint, your enterprise might benefit from scheduled or timed scans. For example, you can schedule a scan to run at the beginning of every workday or week. 
 
 There are three types of scheduled scans that are configurable: hourly, daily, and weekly scans. Hourly and daily scheduled scans are always run as quick scans, weekly scans can be configured to be either quick or full scans. It is possible to have all three types of scheduled scans at the same time. See the samples below. 
-**Pre-requisites:**
+
+**Prerequisites**:
 
 - Platform Update version: [101.23122.0005](mac-whatsnew.md#jan-2024-build-101231220005---release-version-2012312250) or newer
-- [Beta Channel (formerly Insiders-Fast), or Current Channel (Preview) (formerly Insiders-Slow)](/microsoft-365/security/defender-endpoint/mac-updates)
 
 ## Schedule a scan with *Microsoft Defender for Endpoint on macOS*
 
@@ -214,8 +209,8 @@ Use the following command:
 
  
 > [!IMPORTANT]
-> Scheduled scans will not run at the scheduled time while the device is asleep. They will instead run once the device resumes from sleep mode.
-> If the device is turned off, the scan will run at the next scheduled scan time.
+> Scheduled scans do not run at the scheduled time while the device is asleep. Instead, scheduled scans run when the device resumes from sleep mode.
+> If the device is turned off, the scan runs at the next scheduled scan time.
 
 > [!TIP]
 > Do you want to learn more? Engage with the Microsoft Security community in our Tech Community: [**Microsoft Defender for Endpoint Tech Community**](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/bd-p/MicrosoftDefenderATP).

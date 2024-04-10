@@ -4,7 +4,7 @@ f1.keywords:
   - NOCSH
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 audience: Admin
 ms.topic: conceptual
 ms.localizationpriority: medium
@@ -18,21 +18,17 @@ ms.collection:
   - tier1
 ms.custom: migrationguides
 description: "Complete the steps for migrating from a third-party protection service or device to Microsoft Defender for Office 365 protection."
-ms.subservice: mdo
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 ms.date: 6/15/2023
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 2</a>
 ---
 
 # Migrate to Microsoft Defender for Office 365 - Phase 3: Onboard
 
-**Applies to**
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+<br/>
 
-<br>
-
-|[:::image type="content" source="../../media/phase-diagrams/prepare.png" alt-text="Phase 1: Prepare." lightbox="../../media/phase-diagrams/prepare.png":::](migrate-to-defender-for-office-365-prepare.md) <br> [Phase 1: Prepare](migrate-to-defender-for-office-365-prepare.md)|[:::image type="content" source="../../media/phase-diagrams/setup.png" alt-text="Phase 2: Set up." lightbox="../../media/phase-diagrams/setup.png":::](migrate-to-defender-for-office-365-setup.md) <br> [Phase 2: Set up](migrate-to-defender-for-office-365-setup.md)|:::image type="content" source="../../media/phase-diagrams/onboard.png" alt-text="Phase 3: Onboard." lightbox="../../media/phase-diagrams/onboard.png"::: <br> Phase 3: Onboard|
+|[:::image type="content" source="../../media/phase-diagrams/prepare.png" alt-text="Phase 1: Prepare." lightbox="../../media/phase-diagrams/prepare.png":::](migrate-to-defender-for-office-365-prepare.md) <br/> [Phase 1: Prepare](migrate-to-defender-for-office-365-prepare.md)|[:::image type="content" source="../../media/phase-diagrams/setup.png" alt-text="Phase 2: Set up." lightbox="../../media/phase-diagrams/setup.png":::](migrate-to-defender-for-office-365-setup.md) <br/> [Phase 2: Set up](migrate-to-defender-for-office-365-setup.md)|:::image type="content" source="../../media/phase-diagrams/onboard.png" alt-text="Phase 3: Onboard." lightbox="../../media/phase-diagrams/onboard.png"::: <br/> Phase 3: Onboard|
 |---|---|---|
 |||*You are here!*|
 
@@ -54,11 +50,11 @@ If your organization has a security response team, now is the time to begin inte
 - Learn the new tools and integrate them into existing flows. For example:
   - Admin management of quarantined messages is important. For instructions, see [Manage quarantined messages and files as an admin](quarantine-admin-manage-messages-files.md).
   - Message trace allows you to see what happened to messages as they enter or leave Microsoft 365. For more information, see [Message trace in the modern Exchange admin center in Exchange Online](/exchange/monitoring/trace-an-email-message/message-trace-modern-eac).
-- Identify risks that may have been let into the organization.
+- Identify risks that might have been let into the organization.
 - Tune and customize [alerts](alert-policies-defender-portal.md) for organizational processes.
 - Manage the incident queue and remediate potential risks.
 
-If your organization has purchased Microsoft Defender for Office 365 Plan 2, they should begin familiarizing themselves with and using features such as Threat Explorer, Advanced Hunting, and Incidents. For relevant trainings, see <https://aka.ms/mdoninja>.
+If your organization purchased Microsoft Defender for Office 365 Plan 2, they should begin familiarizing themselves with and using features such as Threat Explorer, Advanced Hunting, and Incidents. For relevant trainings, see <https://aka.ms/mdoninja>.
 
 If your security response team collects and analyzes unfiltered messages, you can configure a SecOps mailbox to receive these unfiltered messages. For instructions, see [Configure SecOps mailboxes in the advanced delivery policy](advanced-delivery-policy-configure.md#use-the-microsoft-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy).
 
@@ -93,7 +89,7 @@ Although this step isn't required, you should consider configuring your pilot us
 
 ## Step 3: Tune spoof intelligence
 
-Check the [Spoof intelligence insight](anti-spoofing-spoof-intelligence.md) to see what's being allowed or blocked as spoofing, and to determine if you need to override the system verdict for spoofing. Some sources of your business-critical email might have incorrectly configured email authentication records in DNS (SPF, DKIM, and DMARC) and you might be using overrides in your existing protection service to mask their domain issues.
+Check the [Spoof intelligence insight](anti-spoofing-spoof-intelligence.md) to see what's being allowed or blocked as spoofing, and to determine if you need to override the system verdict for spoofing. Some sources of your business-critical email might have misconfigured email authentication records in DNS (SPF, DKIM, and DMARC) and you might be using overrides in your existing protection service to mask their domain issues.
 
 Spoof intelligence can rescue email from domains without proper email authentication records in DNS, but the feature sometimes needs assistance in distinguishing good spoofing from bad spoofing. Focus on the following types of message sources:
 
@@ -118,7 +114,7 @@ The longer you monitor the impersonation protection results without acting on th
 
 ### Tune mailbox intelligence
 
-Although mailbox intelligence has been configured to take no action on messages that were [determined to be impersonation attempts](anti-phishing-mdo-impersonation-insight.md), it has been on and learning the email sending and receiving patterns of the pilot users. If an external user is in contact with one your pilot users, messages from that external user aren't identified as impersonation attempts by mailbox intelligence (thus reducing false positives).
+Although mailbox intelligence is configured to take no action on messages that were [determined to be impersonation attempts](anti-phishing-mdo-impersonation-insight.md), it's turned on and learning the email sending and receiving patterns of the pilot users. If an external user is in contact with one your pilot users, messages from that external user aren't identified as impersonation attempts by mailbox intelligence (thus reducing false positives).
 
 When you're ready, do the following steps to allow mailbox intelligence to act on messages that are detected as impersonation attempts:
 
@@ -128,7 +124,7 @@ When you're ready, do the following steps to allow mailbox intelligence to act o
 
 To modify the policies, see [Configure anti-phishing policies in Defender for Office 365](anti-phishing-policies-mdo-configure.md).
 
-After you've observed the results and made any adjustments, proceed to the next section to quarantine messages detected by user impersonation.
+After you observed the results and made any adjustments, proceed to the next section to quarantine messages detected by user impersonation.
 
 ### Tune user impersonation protection
 
@@ -157,7 +153,7 @@ As your pilot users report false positives and false negatives, the messages app
 Use the following features to monitor and iterate on the protection settings in Defender for Office 365:
 
 - [Quarantine](quarantine-admin-manage-messages-files.md)
-- [Threat Explorer](email-security-in-microsoft-defender.md)
+- [Threat Explorer (Explorer)](threat-explorer-real-time-detections-about.md)
 - [Email security reports](reports-email-security.md)
 - [Defender for Office 365 reports](reports-defender-for-office-365.md)
 - [Mail flow insights](/exchange/monitoring/mail-flow-insights/mail-flow-insights)

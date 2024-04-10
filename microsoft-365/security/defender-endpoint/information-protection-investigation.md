@@ -46,25 +46,25 @@ Learn how to use data sensitivity labels to prioritize incident investigation.
 
 2. Scroll over to see the **Data sensitivity** column. This column reflects sensitivity labels that are observed on devices related to the incidents providing an indication of whether sensitive files are impacted by the incident.
 
-   :::image type="content" source="images/data-sensitivity-column.png" alt-text="The Highly confidential option in the data sensitivity column" lightbox="images/data-sensitivity-column.png":::
+   :::image type="content" source="media/data-sensitivity-column.png" alt-text="The Highly confidential option in the data sensitivity column" lightbox="media/data-sensitivity-column.png":::
 
     You can also filter based on **Data sensitivity**
 
-    :::image type="content" source="images/data-sensitivity-filter.png" alt-text="The data sensitivity filter" lightbox="images/data-sensitivity-filter.png":::
+    :::image type="content" source="media/data-sensitivity-filter.png" alt-text="The data sensitivity filter" lightbox="media/data-sensitivity-filter.png":::
 
 3. Open the incident page to further investigate.
 
-   :::image type="content" source="images/incident-page.png" alt-text="The incident page details" lightbox="images/incident-page.png":::
+   :::image type="content" source="media/incident-page.png" alt-text="The incident page details" lightbox="media/incident-page.png":::
 
 4. Select the **Devices** tab to identify devices storing files with sensitivity labels.
 
-   :::image type="content" source="images/investigate-devices-tab.png" alt-text="The Device tab" lightbox="images/investigate-devices-tab.png":::
+   :::image type="content" source="media/investigate-devices-tab.png" alt-text="The Device tab" lightbox="media/investigate-devices-tab.png":::
 
 5. Select the devices that store sensitive data and search through the timeline to identify which files might be impacted then take appropriate action to ensure that data is protected.
 
    You can narrow down the events shown on the device timeline by searching for data sensitivity labels. Doing this shows only events associated with files that the label name.
 
-   :::image type="content" source="images/machine-timeline-labels.png" alt-text="The device timeline with narrowed down search results based on label" lightbox="images/machine-timeline-labels.png":::
+   :::image type="content" source="media/machine-timeline-labels.png" alt-text="The device timeline with narrowed down search results based on label" lightbox="media/machine-timeline-labels.png":::
 
 > [!TIP]
 > These data points are also exposed through the 'DeviceFileEvents' in advanced hunting, allowing advanced queries and schedule detection to take into account sensitivity labels and file protection status.

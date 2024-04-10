@@ -1,12 +1,11 @@
 ---
 title: Onboard previous versions of Windows on Microsoft Defender for Endpoint
 description: Onboard supported previous versions of Windows devices so that they can send sensor data to the Microsoft Defender for Endpoint sensor
-keywords: onboard, windows, 7, 81, oms, sp1, enterprise, pro, down level
 ms.service: defender-endpoint
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 ms.reviewer: pahuijbr
 audience: ITPro
 ms.collection:
@@ -227,22 +226,22 @@ Create a new group policy specifically for onboarding devices such as "Microsoft
 
 - Create a Group Policy Folder named "c:\windows\MMA"
 
-     :::image type="content" source="images/grppolicyconfig1.png" alt-text="The folders location" lightbox="images/grppolicyconfig1.png":::
+     :::image type="content" source="media/grppolicyconfig1.png" alt-text="The folders location" lightbox="media/grppolicyconfig1.png":::
 
     **This will add a new folder on every server that gets the GPO applied, called MMA, and will be stored in c:\windows. This will contain the installation files for the MMA, prerequisites, and install script.**
 
 - Create a Group Policy Files preference for each of the files stored in Net logon.
 
-     :::image type="content" source="images/grppolicyconfig2.png" alt-text="The group policy - 1" lightbox="images/grppolicyconfig2.png":::
+     :::image type="content" source="media/grppolicyconfig2.png" alt-text="The group policy - 1" lightbox="media/grppolicyconfig2.png":::
 
 It copies the files from DOMAIN\NETLOGON\MMA\filename to
 C:\windows\MMA\filename - **so the installation files are local to the server**:
 
-:::image type="content" source="images/deploymma.png" alt-text="The deploy mma cmd properties" lightbox="images/deploymma.png":::
+:::image type="content" source="media/deploymma.png" alt-text="The deploy mma cmd properties" lightbox="media/deploymma.png":::
 
 Repeat the process but create item level targeting on the COMMON tab, so the file only gets copied to the appropriate platform/Operating system version in scope:
 
-:::image type="content" source="images/targeteditor.png" alt-text="The target editor" lightbox="images/targeteditor.png":::
+:::image type="content" source="media/targeteditor.png" alt-text="The target editor" lightbox="media/targeteditor.png":::
 
 For Windows Server 2008 R2 you'll need (and it will only copy down) the following:
 
@@ -252,7 +251,7 @@ For Windows Server 2008 R2 you'll need (and it will only copy down) the followin
 
 Once this is done, you'll need to create a start-up script policy:
 
-:::image type="content" source="images/startupprops.png" alt-text="The start up properties" lightbox="images/startupprops.png":::
+:::image type="content" source="media/startupprops.png" alt-text="The start up properties" lightbox="media/startupprops.png":::
 
 The name of the file to run here is c:\windows\MMA\DeployMMA.cmd.
 Once the server is restarted as part of the start-up process it will install the Update for customer experience and diagnostic telemetry KB, and then install the MMA Agent, while setting the Workspace ID and Key, and the server will be onboarded.
@@ -261,15 +260,15 @@ You could also use an **immediate task** to run the deployMMA.cmd if you don't w
 
 This could be done in two phases. First create **the files and the folder in** GPO - Give the system time to ensure the GPO has been applied, and all the servers have the install files. Then, add the immediate task. This will achieve the same result without requiring a reboot.
 
-As the Script has an exit method and wont re-run if the MMA is installed, you could also use a daily scheduled task to achieve the same result. Similar to a Configuration Manager compliance policy it will check daily to ensure the MMA is present.
+As the Script has an exit method and won't re-run if the MMA is installed, you could also use a daily scheduled task to achieve the same result. Similar to a Configuration Manager compliance policy it will check daily to ensure the MMA is present.
 
-:::image type="content" source="images/schtask.png" alt-text="schedule task" lightbox="images/schtask.png":::
+:::image type="content" source="media/schtask.png" alt-text="schedule task" lightbox="media/schtask.png":::
 
-:::image type="content" source="images/newtaskprops.png" alt-text="The new task properties" lightbox="images/newtaskprops.png":::
+:::image type="content" source="media/newtaskprops.png" alt-text="The new task properties" lightbox="media/newtaskprops.png":::
 
-:::image type="content" source="images/deploymmadowmload.png" alt-text="The deploy mma download properties" lightbox="images/deploymmadowmload.png":::
+:::image type="content" source="media/deploymmadowmload.png" alt-text="The deploy mma download properties" lightbox="media/deploymmadowmload.png":::
 
-:::image type="content" source="images/tasksch.png" alt-text="The task scheduler" lightbox="images/tasksch.png":::
+:::image type="content" source="media/tasksch.png" alt-text="The task scheduler" lightbox="media/tasksch.png":::
 
 As mentioned in the onboarding documentation for Server specifically around Server 2008 R2 please see below:
 For Windows Server 2008 R2 SP1, ensure that you fulfill the following requirements:
@@ -307,7 +306,7 @@ You can use either of the following methods:
 
 2. Select the Defender for Endpoint workspace, and click **Remove**.
 
-    :::image type="content" source="images/atp-mma.png" alt-text="The Workspaces pane" lightbox="images/atp-mma.png":::
+    :::image type="content" source="media/atp-mma.png" alt-text="The Workspaces pane" lightbox="media/atp-mma.png":::
 
 #### Run a PowerShell command to remove the configuration
 
