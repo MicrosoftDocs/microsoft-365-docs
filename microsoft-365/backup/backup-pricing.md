@@ -24,7 +24,7 @@ description: Learn about the charge model and pricing calculator for Microsoft 3
 
 ## Microsoft 365 Backup charge model
 
-The Microsoft 365 Backup service, offered through the Microsoft 365 admin center, is a [pay-as-you-go consumption-based service](microsoft-365/syntex/syntex-pay-as-you-go-services). The preview list price is $0.15/GB/month of protected content.
+The Microsoft 365 Backup service, offered through the Microsoft 365 admin center, is a [pay-as-you-go consumption-based service](/microsoft-365/syntex/syntex-pay-as-you-go-services). The preview list price is $0.15/GB/month of protected content.
 
 ### What’s counted towards protected backup storage?
 
@@ -65,7 +65,7 @@ The Microsoft 365 Backup pricing calculator, when calculating the storage requir
 
 To use the Microsoft 365 Backup pricing calculator, you'll need to perform the following steps. Information about how to collect data from each of these steps is detailed later in this article.
 
-1. Download the latest version of the Microsoft 365 Backup pricing calculator tool from [https://aka.ms/M365BackupCalculator](https://aka.ms/M365BackupCalculator).
+1. Download the latest version of the [Microsoft 365 Backup pricing calculator tool](https://aka.ms/M365BackupCalculator).
 
 2. Review your [Microsoft 365 usage reports](https://admin.microsoft.com/Adminportal/Home#/reportsUsage) to get historical information about your current usage. Heuristics from the usage reports will be used to populate the inputs (orange boxes) in the pricing calculator tool.
 
