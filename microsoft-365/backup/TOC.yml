@@ -2,23 +2,23 @@
       href: index.yml
 
     - name: Overview 
-      href: /microsoft-365/syntex/backup/backup-overview
+      href: backup-overview.md
     - name: Admin setup 
-      href: /microsoft-365/syntex/backup/backup-setup
+      href: backup-setup.md
     - name: Billing setup
-      href: /microsoft-365/syntex/backup/backup-billing
+      href: backup-billing.md
     - name: Pricing model
-      href: /microsoft-365/syntex/backup/backup-pricing
+      href: backup-pricing.md
     - name: View and edit policies 
-      href: /microsoft-365/syntex/backup/backup-view-edit-policies
+      href: backup-view-edit-policies.md
     - name: Restore data 
-      href: /microsoft-365/syntex/backup/backup-restore-data
+      href: backup-restore-data.md
     - name: Offboarding
-      href: /microsoft-365/syntex/backup/backup-offboarding
+      href: backup-offboarding.md
     - name: Preview limitations
-      href: /microsoft-365/syntex/backup/backup-limitations
+      href: backup-limitations.md
     - name: FAQs
-      href: /microsoft-365/syntex/backup/backup-faq
+      href: backup-faq.md
 
 
 
