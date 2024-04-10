@@ -17,7 +17,7 @@ ms.localizationpriority:  medium
 description: Learn how to restore data using restore points and express restore points in Microsoft 365 Backup.
 ---
 
-# Restore data in Microsoft 365 Backup (Preview)
+# Restore data in Microsoft 365 Backup
 
 > [!NOTE]
 > This feature is currently in preview and subject to change.

@@ -17,7 +17,7 @@ ms.localizationpriority:  medium
 description: Learn about how to offboard usage in Microsoft 365 Backup.
 ---
 
-# Offboarding in Microsoft 365 Backup (Preview)
+# Offboarding in Microsoft 365 Backup
 
 > [!NOTE]
 > This feature is currently in preview and subject to change.

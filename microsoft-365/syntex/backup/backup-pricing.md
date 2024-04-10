@@ -17,7 +17,7 @@ ms.localizationpriority:  medium
 description: Learn about the charge model and pricing calculator for Microsoft 365 Backup.
 ---
 
-# Pricing model for Microsoft 365 Backup (Preview)
+# Pricing model for Microsoft 365 Backup
 
 > [!NOTE]
 > This feature is currently in preview and subject to change.
