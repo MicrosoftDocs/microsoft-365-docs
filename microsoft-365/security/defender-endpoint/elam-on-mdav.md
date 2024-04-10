@@ -19,7 +19,6 @@ audience: ITPro
 # Early Launch Antimalware (ELAM) and Microsoft Defender Antivirus
 
 **Applies to:**
-
 - [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender for Business
@@ -30,11 +29,11 @@ audience: ITPro
 - Windows 11, Windows 10, Windows 8.1, Windows 8
 - Windows Server 2019, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012
 
-Detecting malware that starts early in the boot cycle was a challenge before Windows 8. To combat early boot threats such as rootkits or malicious drivers that can hide from detection, as of August 1, 2012, Microsoft Defender Antivirus (MDAV) for Windows 8 and newer, or Windows Server 2012 and newer, incorporated a new feature called [Early Launch Antimalware (ELAM)](/windows/compatibility/early-launch-antimalware) driver. Microsoft Defender Antivirus uses Wdboot.sys driver that starts before other boot-start drivers, enables the evaluation of those drivers, and helps the Windows kernel decide whether they should be initialized.
+Detecting malware that starts early in the boot cycle was a challenge before Windows 8. In August 2012, Microsoft Defender Antivirus (MDAV) for Windows 8 or later, and Windows Server 2012 and later incorporated a new feature called the [Early Launch Antimalware (ELAM)](/windows/compatibility/early-launch-antimalware) driver. ELAM combats early boot threats (for example, rootkits or malicious drivers that can hide from detection) by using a Wdboot.sys driver that starts before other boot-start drivers. ELAM enables the evaluation of other drivers, and helps the Windows kernel decide whether those drivers should be initialized.
 
-## Where is the ELAM detection(s) logged?
+## Where are the ELAM detections logged?
 
-The ELAM detection is logged in the same location as the other Microsoft Defender Antivirus threats,such as [Event ID 1006](/microsoft-365/security/defender-endpoint/troubleshoot-microsoft-defender-antivirus).
+The ELAM detection is logged in the same location as the other Microsoft Defender Antivirus threats, such as [Event ID 1006](/microsoft-365/security/defender-endpoint/troubleshoot-microsoft-defender-antivirus).
 
 ## How do I keep the MDAV ELAM driver up to date?
 
