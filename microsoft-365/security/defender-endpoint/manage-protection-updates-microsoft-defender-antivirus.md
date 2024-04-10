@@ -69,7 +69,7 @@ There are five locations where you can specify where an endpoint should obtain u
 
 To ensure the best level of protection, Microsoft Update allows for rapid releases, which means smaller downloads on a frequent basis. The Windows Server Update Service, Microsoft Endpoint Configuration Manager, Microsoft security intelligence updates, and platform updates sources deliver less frequent updates. Thus, the delta might be larger, resulting in larger downloads.
 
-Platform updates contain engine updates and are released on a monthly cadence. Security intelligence updates are also delivered multiple times a day, but this package doesn't contain an engine. See [Microsoft Defender Antivirus security intelligence and product updates](microsoft-defender-antivirus-updates.md).
+Platform updates and engine updates are released on a monthly cadence. Security intelligence updates are delivered multiple times a day, but this delta package doesn't contain an engine update. See [Microsoft Defender Antivirus security intelligence and product updates](microsoft-defender-antivirus-updates.md).
 
 
 > [!IMPORTANT]
