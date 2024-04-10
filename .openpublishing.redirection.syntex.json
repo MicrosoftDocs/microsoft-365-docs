@@ -34,7 +34,52 @@
         "source_path":"microsoft-365/syntex/copilot-syntex.md",
         "redirect_url":"https://www.microsoft.com/microsoft-365/business/copilot-for-microsoft-365",
         "redirect_document_id":false 
-       }
-
+       },
+       {
+        "source_path":"microsoft-365/syntex/archive/archive-overview.md",
+        "redirect_url":"/microsoft-365/archive/archive-overview",
+        "redirect_document_id":true
+     },
+     {
+       "source_path":"microsoft-365/syntex/archive/archive-setup.md",
+       "redirect_url":"/microsoft-365/archive/archive-setup",
+       "redirect_document_id":true
+     },
+     {
+       "source_path":"microsoft-365/syntex/archive/archive-pricing.md",
+       "redirect_url":"/microsoft-365/archive/archive-pricing",
+       "redirect_document_id":true
+     },
+     {
+       "source_path":"microsoft-365/syntex/archive/archive-states.md",
+       "redirect_url":"/microsoft-365/archive/archive-states",
+       "redirect_document_id":true
+     },
+     {
+       "source_path":"microsoft-365/syntex/archive/archive-manage.md",
+       "redirect_url":"/microsoft-365/archive/archive-manage",
+       "redirect_document_id":true
+     },
+     {
+        "source_path":"microsoft-365/syntex/archive/archive-compliance.md",
+        "redirect_url":"/microsoft-365/archive/archive-compliance",
+        "redirect_document_id":true
+     },
+     {
+       "source_path":"microsoft-365/syntex/archive/archive-end-user.md",
+       "redirect_url":"/microsoft-365/archive/archive-end-user",
+       "redirect_document_id":true
+     },
+     {
+       "source_path":"microsoft-365/syntex/archive/archive-faq.md",
+       "redirect_url":"/microsoft-365/archive/archive-faq",
+       "redirect_document_id":true
+     },
+     {
+       "source_path":"microsoft-365/syntex/archive/archive-preview-terms.md",
+       "redirect_url":"/microsoft-365/archive/archive-preview-terms",
+       "redirect_document_id":true
+     }
+            
     ]
  }
