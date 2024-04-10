@@ -760,6 +760,9 @@
             href: device-health-microsoft-defender-antivirus-health.md
           - name: Sensor health and OS report
             href: device-health-sensor-health-os.md
+        - name: Microsoft Defender Core service overview
+          href: microsoft-defender-core-service-overview.md
+          displayName: Microsoft Defender Core service overview
         - name: Microsoft Defender Core service configurations and experimentation 
           href: microsoft-defender-core-service-configurations-and-experimentation.md
         - name: Troubleshoot performance issues related to real-time protection
