@@ -1,16 +1,21 @@
 ---
-# Required metadata
-# For more information, see https://review.learn.microsoft.com/en-us/help/platform/learn-editor-add-metadata?branch=main
-# For valid values of ms.service, ms.prod, and ms.topic, see https://review.learn.microsoft.com/en-us/help/platform/metadata-taxonomies?branch=main
-
 title: Security Intelligence update troubleshooting from Microsoft Update source
-description: Security Intelligence update troubleshooting from Microsoft Update source
-author:      YongRhee-MSFT # GitHub alias
-ms.author:   yongrhee # Microsoft alias
+description: Learn how to troubleshoot security intelligence updates from your Microsoft Update source.
+author: siosulli
+ms.author: siosulli
+manager: deniseb 
+ms.date: 04/10/2024
+ms.topic: troubleshooting
 ms.service: defender-endpoint
-ms.topic: overview
-ms.date:     04/10/2024
 ms.subservice: ngp
+ms.localizationpriority: medium 
+ms.collection: # Useful for querying on a set of strategic or high-priority content.
+ms.custom: 
+- partner-contribution
+ms.reviewer: yongrhee
+search.appverid: MET150
+f1.keywords: NOCSH
+audience: ITPro
 ---
 
 # Troubleshooting Security Intelligence Updates from Microsoft Update source
@@ -27,61 +32,61 @@ ms.subservice: ngp
 
 - Microsoft Defender Antivirus
 
-In this article we will be going over troubleshooting Microsoft Defender Antivirus "Security Intelligence updates" when the first source is from Microsoft Update (MU) (used to be known as Windows Update (WU)).
+Use this article to learn how to troubleshoot security intelligence updates for Microsoft Defender Antivirus when the first source is from Microsoft Update (formerly known as Windows Update). Follow these steps to troubleshoot issues with getting your security intelligence updates:
 
-Step 1) Check that the URL's needed for the "Security Intelligence update" are allowed thru the firewall or proxy.
+1. Make sure that the URLs needed for security intelligence updates are allowed thru the firewall or proxy. See the URL spreadsheets in [STEP 1: Configure your network environment to ensure connectivity with Defender for Endpoint service](configure-environment.md).
 
-Take a look at the MDE URL list for commercial (streamlined) or commercial (standard) using the spreadsheet available [here](/microsoft-365/security/defender-endpoint/configure-environment). 
+   If you're only using Microsoft Defender Antivirus, see the **Windows Update** section in [Manage connection endpoints for Windows 11 Enterprise](/windows/privacy/manage-windows-11-endpoints). 
 
-If just using Microsoft Defender Antivirus, please review the Microsoft Update URL's needed in the "Windows Update" section [here](/windows/privacy/manage-windows-11-endpoints). 
+2. Make sure that the URLs you reviewed during the previous step aren't SSL inspected. If not, you might see the following error in the event log:
 
-Step 2) Make sure that the URL's in Step 1 are not being SSL inspected.
+   ```properties
 
-If Step 1 or 2 are missing, in the event log, you might see the following error:
+   Source: Windows Defender
+   
+   Event ID: 2001 
 
-Source: Windows Defender
+   Microsoft Defender Antivirus has encountered an error trying to update security intelligence.
 
-Event ID: 2001 
+   Error code: 0x80072ee7
 
-Microsoft Defender Antivirus has encountered an error trying to update security intelligence.
+   Error description: The server name or address could not be resolved.
 
-Error code: 0x80072ee7
+   ```
 
-Error description: The server name or address could not be resolved.
+   What is error code `0x80072ee7`?
 
-What is error code 0x80072ee7?
+   ```properties
+   
+   C:\>err 0x80072ee7
 
-C:\>err 0x80072ee7
+   # as an HRESULT: Severity: FAILURE (1), Facility: 0x7, Code 0x2ee7
 
-# as an HRESULT: Severity: FAILURE (1), Facility: 0x7, Code 0x2ee7
+   # for hex 0x2ee7 / decimal 12007 :
 
-# for hex 0x2ee7 / decimal 12007 :
+   ERROR_INTERNET_NAME_NOT_RESOLVED                              inetmsg.h
 
-  ERROR_INTERNET_NAME_NOT_RESOLVED                              inetmsg.h
+   ERROR_INTERNET_NAME_NOT_RESOLVED                              wininet.h
 
-  ERROR_INTERNET_NAME_NOT_RESOLVED                              wininet.h
+   ```
 
-Step 3) Make sure that the Services needed for Windows Update are started such as:
+3. Make sure that the Sservices needed for Windows Update are started. These services include:
 
-- Windows Update service
+   - Windows Update service
+   - Background Intelligence Transfer Service (BITS) 
 
-- Background Intelligence Transfer Service (BITS) 
+4. If you're using a [Fallback order](/microsoft-365/security/defender-endpoint/manage-protection-updates-microsoft-defender-antivirus) policy, make sure that *Microsoft Update* (`MicrosoftUpdateServer`) is the first item in the list.
 
-Step 4) If using "[Fallback order](/microsoft-365/security/defender-endpoint/manage-protection-updates-microsoft-defender-antivirus)" policy, make sure that "Microsoft Update" (MicrosoftUpdateServer) is the first item in the line.
+5. Gather diagnostic data from the [Microsoft Defender for Endpoint Client Analyzer tool](download-client-analyzer.md). 
 
-Step 5) Gather the MDE Client Analyzer diagnostic data.
+   - If you have Microsoft Defender for Endpoint Plan 2 and access to Live Response, you can gather the diagnostic data remotely. See [Collect support logs in Microsoft Defender for Endpoint using live response](troubleshoot-collect-support-log.md).
+   - If you have Microsoft Defender for Endpoint Plan 1 or only Microsoft Defender Antivirus, you can gather the diagnostic data using the client analyzer on Windows. See [Run the client analyzer on Windows](run-analyzer-windows.md).
+   - If either method doesn't work for you, use Microsoft Defender Antivirus diagnostic data collection. See [Collect Microsoft Defender Antivirus diagnostic data](collect-diagnostic-data.md).
 
-If you have Microsoft Defender for Endpoint Plan 2 and Live Response access, you can gather the diagnostic data remotely:
+6. When you have your diagnostic data, convert the `WindowsUpdate.etl` logs into a human readable format by using the PowerShell command, [Get-WindowsUpdateLog](/powershell/module/windowsupdate/get-windowsupdatelog?view=windowsserver2022-ps). Use that information to troubleshoot issues with security intelligence updates.
 
-[https://learn.microsoft.com/microsoft-365/security/defender-endpoint/troubleshoot-collect-support-log](/microsoft-365/security/defender-endpoint/troubleshoot-collect-support-log?view=o365-worldwide)
+## See also
 
-If you have Microsoft Defender for Endpoint Plan 1 or Microsoft Defender Antivirus, you can gather the diagnostic data:
+- [Troubleshoot Microsoft Defender Antivirus settings](troubleshoot-settings.md)
 
-[https://learn.microsoft.com/microsoft-365/security/defender-endpoint/run-analyzer-windows](/microsoft-365/security/defender-endpoint/run-analyzer-windows)
-
-If for some reason, you are unable to run the MDE Client Analyzer diagnostic data, please use the Microsoft Defender Antivirus diagnostic data collection (aka "Support Cab"):
-
-[https://learn.microsoft.com/microsoft-365/security/defender-endpoint/collect-diagnostic-data](/microsoft-365/security/defender-endpoint/collect-diagnostic-data)
-
-Step 6) Once you have the diagnostic data, you are able to convert the WindowsUpdate.etl logs into a human readable format by using [Get-WindowsUpdateLog](/powershell/module/windowsupdate/get-windowsupdatelog?view=windowsserver2022-ps)
-
+- [Troubleshoot problems with tamper protection](troubleshoot-problems-with-tamper-protection.yml)
