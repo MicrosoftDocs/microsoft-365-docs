@@ -38,13 +38,13 @@ Once you have your domains added to your tenant and validated, use the following
 
 | Type | Priority | Host name | Points to address or value | TTL |
 | --- | --- | --- | --- | --- |
-| MX | 0 | @ | *tenant*.mail.protection.office365.us (see below for more details) | One Hour |
+| MX | 0 | @ | *tenant*.mail.protection.office365.us (for more information, see below) | One Hour |
 | TXT | - | @ | v=spf1 include:spf.protection.office365.us -all | One Hour |
 | CNAME | - | autodiscover | autodiscover-dod.office365.us | One Hour |
 
 ### Exchange Autodiscover record
 
-If you have Exchange Server on-premises, we recommend leaving your existing record in place while you migrate to Exchange Online, and update that record once you have completed your migration.
+If you have Exchange Server on-premises, we recommend leaving your existing record in place while you migrate to Exchange Online, and update that record once you complete your migration.
 
 ### Exchange Online MX Record
 
@@ -52,23 +52,15 @@ The MX record value for your accepted domains follows a standard format as noted
 
 For example, if your tenant name is contoso.onmicrosoft.us, you’d use **contoso.mail.protection.office365.us** as the value for your MX record.
 
-## Skype for Business Online
-
-### CNAME records
-
-| Type | Host name | Points to address or value | TTL |
-| --- | --- | --- | --- |
-| CNAME | sip | sipdir.online.dod.skypeforbusiness.us | One Hour |
-| CNAME | lyncdiscover | webdir.online.dod.skypeforbusiness.us | One Hour | 
+## External DNS records required for Teams
 
 ### SRV records
 
 | Type | Service | Protocol | Port | Weight | Priority | Name | Target | TTL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| SRV | \_sip | \_tls | 443 | 1 | 100 | @ | sipdir.online.dod.skypeforbusiness.us | One Hour |
 | SRV | \_sipfederationtls | \_tcp | 5061 | 1 | 100 | @ | sipfed.online.dod.skypeforbusiness.us | One Hour |
 
 ## Other DNS records
 
 > [!IMPORTANT]
-> If you have an existing *msoid* CNAME record in your DNS zone, you must **remove** the record from DNS at this time.  The msoid record is incompatible with Microsoft 365 Enterprise Apps *(formerly Office 365 ProPlus)* and will prevent activation from succeeding.
+> If you have an existing *msoid* CNAME record in your DNS zone, you must **remove** the record from DNS at this time. The msoid record is incompatible with Microsoft 365 Enterprise Apps *(formerly Office 365 ProPlus)* and will prevent activation from succeeding.

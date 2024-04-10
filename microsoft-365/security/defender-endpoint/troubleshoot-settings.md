@@ -57,6 +57,8 @@ To remove policy conflicts, here's our current, recommended process:
 
 When policies and settings are configured in multiple tools, in general, here's the order of precedence:
 
+1. Microsoft Defender for Endpoint security settings management
+
 1. Group Policy (GPO)
 2. Microsoft Configuration Manager co-management
 3. Microsoft Configuration Manager (standalone)
@@ -73,7 +75,7 @@ Find out whether Microsoft Defender Antivirus settings are coming through a poli
 
 |Policy or setting| Registry location | Tools|
 | -------- | -------- | -------- |
-|Policy| `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`|- Microsoft Configuration Manager co-management<br/>- Microsoft Configuration Manager<br/>- GPO|
+|Policy| `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`|- Microsoft Defender for Endpoint security settings management<br/>- Microsoft Configuration Manager co-management<br/>- Microsoft Configuration Manager<br/>- GPO|
 |MDM|`HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Policy Manager` |- Microsoft Intune (MDM)<br/>- Microsoft Configuration Manager with Tenant Attach|
 |Local setting|`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender`|- MpCmdRun.exe<br/>- PowerShell (Set-MpPreference)<br/>- Windows Management Instrumentation (WMI)|
 
