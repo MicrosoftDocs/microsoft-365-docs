@@ -66,7 +66,7 @@ Use this article to learn how to troubleshoot security intelligence updates for 
 
    ```
 
-3. Make sure that the Sservices needed for Windows Update are started. These services include:
+3. Make sure that the services needed for Windows Update are started. These services include:
 
    - Windows Update service
 
