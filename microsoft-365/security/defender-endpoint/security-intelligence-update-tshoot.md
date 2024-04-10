@@ -48,7 +48,11 @@ Use this article to learn how to troubleshoot security intelligence updates for 
 
    Error description: The server name or address could not be resolved.
 
-   What is error code 0x80072ee7?
+   ```
+
+   What is error code `0x80072ee7`?
+
+   ```properties
 
    C:\>err 0x80072ee7
 
