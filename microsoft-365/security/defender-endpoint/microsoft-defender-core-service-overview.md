@@ -69,5 +69,5 @@ The following table summarizes where you can view Microsoft Defender Antivirus p
 | `MpDefenderCoreService.exe` | **Details** tab | 
 | `Microsoft Defender Core Service` | **Services** tab |
 
-To learn more about the Microsoft Defender Core service configurations and experimentation (ECS), see [Microsoft Defender Core service configurations and experimentation](microsoft-defender-core-service-configurations-and-experimentation.md) 
+To learn more about the Microsoft Defender Core service configurations and experimentation (ECS), see [Microsoft Defender Core service configurations and experimentation](microsoft-defender-core-service-configurations-and-experimentation.md).
 
