@@ -34,7 +34,7 @@ Loop components in Teams chat, Outlook emails, Whiteboards, or other places in t
 
 **Share components.** In this release, you can share Loop components into different Teams chats, Outlook emails, Whiteboards, and other places in the Microsoft 365 ecosystem. Recipients can edit from wherever they are and see updates instantly, no matter where the changes were made.
 
-**Start in chat or email, build from there.** Every component you create from Teams chat or Outlook email is automatically saved to a file in OneDrive. So, you might begin collaborating in chat; then, later move to the file in a full tab on Office.com, where you have a larger visual space for editing and can add as many components as you like.
+**Start in chat or email, build from there.** Every component you create from Teams chat or Outlook email is automatically saved to a file in OneDrive. So, you might begin collaborating in chat. Then, later move to the file in a full tab on Office.com, where you have a larger visual space for editing and can add as many components as you like.
 
 For information on admin settings for Loop components in Teams, see [Settings management in Cloud Policy](loop-workspaces-configuration.md#settings-management-in-cloud-policy).
 
@@ -76,7 +76,7 @@ The .loop files can only be opened as links in your browser, such as Office.com,
 
 If you disable these experiences as outlined in the [Settings management](loop-workspaces-configuration.md#settings-management-in-cloud-policy) section, the following experience-changes will apply:
 - The create/insert entry point within Teams messaging and Outlook email will be hidden. The users won't be able to create new .loop files.
-- Existing messages that would have formerly rendered as an interactive Loop component will instead render as a hyperlink. No interactive content will be displayed within the app that Loop components have been disabled in.
+- Existing messages that would have formerly rendered as an interactive Loop component will instead render as a hyperlink. No interactive content is displayed within the app that Loop components have been disabled in.
 - When you click on the hyperlink or browse to a .loop file in OneDrive and click it to open, it will open in a separate browser tab. You will still be able to edit the file.
 
 ## Known issues
