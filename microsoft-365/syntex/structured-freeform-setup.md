@@ -60,8 +60,8 @@ By default, structured and default document processing is turned on for librarie
 ## Preparing the default Power Platform environment 
 Your tenant comes with a default Power Platform environment. By default, AI Builder will be using the default Power Platform environment. This will require the *AI Builder for Project Cortex* app to be installed. For some tenants it's automatically turned on. For some that where it's not enabled you will encounter this error during the model creation, "AI Builder requires a Dataverse database..." error during model creation.
 
-    > Understanding the Error:
-    > This error indicates that the AI Builder for Project Cortex app needs to be installed within your default Power Platform environment before you can start building models.
+> [!NOTE]
+> This error indicates that the AI Builder for Project Cortex app needs to be installed within your default Power Platform environment before you can start building models.
 
 ### Steps to Install *AI Builder for Project Cortex*:
 
@@ -73,11 +73,11 @@ Your tenant comes with a default Power Platform environment. By default, AI Buil
 
 3. Find the **AI Builder for Project Cortex** app, click on the *more* icon and select **Install**.
 
-   ![image](https://github.com/MicrosoftDocs/microsoft-365-docs/assets/13330257/a90670b3-3287-466f-ad93-1b9a2a1115ed)
+   ![AI Builder for Project Cortex in Dynamics 365 apps](https://github.com/MicrosoftDocs/microsoft-365-docs/assets/13330257/a90670b3-3287-466f-ad93-1b9a2a1115ed)
 
 4. You will be prompted to select a target environment. Use the dropdown to select your default environment, review the terms and condition and start the installation.
    
-   ![image](https://github.com/MicrosoftDocs/microsoft-365-docs/assets/13330257/597ff192-ba12-4f6c-87f2-cf6905536c84)
+   ![Selecting environment and initiate installation.](https://github.com/MicrosoftDocs/microsoft-365-docs/assets/13330257/597ff192-ba12-4f6c-87f2-cf6905536c84)
   
 6. Allow a few minutes for the installation to complete.
    
