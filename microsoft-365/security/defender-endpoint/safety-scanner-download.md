@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.localizationpriority: medium
 ms.author: dansimp
 author: dansimp
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
