@@ -30,13 +30,13 @@ Loop components in Teams chat, Outlook emails, Whiteboards, or other places in t
 > [!Note]
 > Loop components is the first feature of the [Microsoft Loop app](https://www.microsoft.com/en-us/microsoft-loop) to become available in Teams.
 
-**Get tasks done faster together.** Crowd-source an agenda, track a group's action items, or take notes collectively. These are just a few scenarios made easier with Loop components.
+**Get tasks done faster together.** Crowd-source an agenda, track a group's action items, or take notes collectively. These scenarios are just a few scenarios made easier with Loop components.
 
 **Share components.** In this release, you can share Loop components into different Teams chats, Outlook emails, Whiteboards, and other places in the Microsoft 365 ecosystem. Recipients can edit from wherever they are and see updates instantly, no matter where the changes were made.
 
-**Start in chat or email, build from there.** Every component you create from Teams chat or Outlook email is automatically saved to a file in OneDrive. So, you might begin collaborating in chat; then, later move to the file in a full tab on Office.com, where you have a larger visual space for editing and can add as many components as you like.
+**Start in chat or email, build from there.** Every component you create from Teams chat or Outlook email is automatically saved to a file in OneDrive. You might begin collaborating in chat and then later move to the file in a full tab in Loop, where you have a larger visual space for editing and can add more content and more components as needed.
 
-For information on admin settings for Loop components in Teams, see [Settings management in Cloud Policy](loop-workspaces-configuration.md#settings-management-in-cloud-policy).
+For information on admin settings for Loop components in Teams, see [Settings management for Loop functionality in Teams](loop-components-configuration.md#settings-management-for-loop-functionality-in-teams).
 
 ## Clients and platforms
 
@@ -46,13 +46,13 @@ For information on admin settings for Loop components in Teams, see [Settings ma
 
 ## Loop components and .loop files
 
-Loop components created in Teams and Outlook are backed by a .loop (earlier versions of Loop-created .fluid) file stored in the creator's OneDrive. A file being in OneDrive means that users can create, discover, and manage Loop components (.loop files) as easily as any Office document.
+Loop components created in Teams and Outlook are just .loop (earlier versions of Loop-created .fluid) files stored in the creator's OneDrive. A file being in OneDrive means that users can create, discover, and manage Loop components (.loop files) as easily as any Office document.
 
 ## How are .loop files stored?
 
 The .loop files appear on Office.com and OneDrive, such as in the Recent and Recommended areas. Users can search for content in .loop files from Office.com and OneDrive. The .loop files can be restored to previous versions from OneDrive. To create Loop components, chat or email creators must have a OneDrive account. Without a valid OneDrive account, chat or email creators might still be able to collaborate on a component created by other users who have a valid OneDrive account, but can't create their own Loop components.
 
-Moving a .loop file from OneDrive to a SharePoint site will result in the Live component failing to load in Teams chat, Outlook email, or any other place it was previously shared to.
+Moving a .loop file from OneDrive to a SharePoint site results in the Loop component failing to load in Teams chat, Outlook email, or any other place it was previously shared to.
 
 ## What happens if the owner of the file leaves the company?
 
@@ -74,21 +74,20 @@ The .loop files can only be opened as links in your browser, such as Office.com,
 
 ## If Loop is disabled from the admin switch, what will the user experience be?
 
-If you disable these experiences as outlined in the [Settings management](loop-components-configuration.md#settings-management-in-cloud-policy) section, the following experience-changes will apply:
-- The create/insert entry point within Teams messaging and Outlook email will be hidden. The users won't be able to create new .loop files.
-- Existing messages that would have formerly rendered as an interactive Loop component will instead render as a hyperlink. No interactive content will be displayed within the app that Loop components have been disabled in.
-- When you click on the hyperlink or browse to a .loop file in OneDrive and click it to open, it will open in a separate browser tab. You will still be able to edit the file.
+If you disable these experiences as outlined in the [Settings management](loop-components-configuration.md#settings-management-in-cloud-policy) section, the following experience-changes apply:
+- The create/insert entry point within Teams messaging and Outlook email is hidden. The users won't be able to create new .loop files.
+- Existing messages will no longer render as an interactive Loop component, instead they render as a hyperlink. No interactive content will be displayed within the app that Loop components are disabled.
+- When you click on the hyperlink or browse to a .loop file in OneDrive and click it to open, it opens in a separate browser tab in the Loop component viewer and editor. You will still be able to edit the file.
 
 ## Known issues
 
-- With tenant default file permissions set to *Specific people* (only the people the user specifies), copying the link to the Loop component and pasting it in another Teams chat requires the sender to use the permissions dialog and add the recipients in the Specific people option to grant access properly.
-- With tenant default file permissions set to *Specific people* (only the people the user specifies), creating a Loop component in a group chat with more than 20 members requires the sender to manually select the permission options for the component.
-- Searching for Loop components in Teams search or Outlook email search returns a link to the component in Office.com, not the message itself that contained the Loop component link.
+- With your tenant's default file permissions set to *Specific people* (only the people the user specifies), copying the link to the Loop component and pasting it in another Teams chat requires the sender to use the permissions dialog and add the recipients in the Specific people option to grant access properly.
+- With your tenant's default file permissions set to *Specific people* (only the people the user specifies), creating a Loop component in a group chat with more than 20 members requires the sender to manually select the permission options for the component.
+- Searching for Loop components in Teams search or Outlook email search returns a link to the Loop component, not the message itself that contained the Loop component link.
 - Loop components are disabled in federated chats.
-- Guests won't be able to view or collaborate on a Loop component.
-- External recipients of emails won't be able to view or collaborate on a Loop component.
-- Loop components aren't supported in Teams channels.
-- Loop components won't load only if the file was moved to a different library. If the file is moved to different folder within the same library, then the Loop components continue to load in the message containing the link to the Loop component.
+- Guests aren't able to view or collaborate on a Loop component.
+- External recipients of emails aren't able to view or collaborate on a Loop component.
+- Loop components don't load if the file was moved to a different library. If the file is moved to a different folder within the same library, then the Loop components continue to load in the message containing the link to the Loop component.
 
 ## Related topics
 
