@@ -211,8 +211,6 @@
               href: mac-device-control-faq.md
           - name: Schedule scans
             href: mac-schedule-scan.md
-          - name: Configure Microsoft Defender for Endpoint on macOS
-            items:
       - name: Update Defender for Endpoint on macOS
         href: mac-updates.md
       - name: Privacy for Microsoft Defender for Endpoint on macOS
