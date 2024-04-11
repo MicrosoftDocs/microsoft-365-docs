@@ -2,8 +2,8 @@
 title: "End of lifecycle options for groups, teams, and Viva Engage"
 ms.reviewer: mmclean
 ms.date: 08/12/2020
-ms.author: mikeplum
-author: MikePlumleyMSFT
+ms.author: jtremper
+author: jacktremper
 manager: pamgreen
 audience: Admin
 ms.topic: article

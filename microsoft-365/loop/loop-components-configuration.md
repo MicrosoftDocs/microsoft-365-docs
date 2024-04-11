@@ -2,8 +2,8 @@
 ms.date: 08/21/2023
 title: "Manage Loop components in OneDrive and SharePoint"
 ms.reviewer: dancost, tonchan
-ms.author: mikeplum
-author: MikePlumleyMSFT
+ms.author: jtremper
+author: jacktremper
 manager: dansimp
 recommendations: true
 audience: Admin

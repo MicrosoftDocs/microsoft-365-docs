@@ -1,8 +1,8 @@
 ---
 title: Configure teams with protection for highly sensitive data
 f1.keywords: NOCSH
-ms.author: mikeplum
-author: MikePlumleyMSFT
+ms.author: jtremper
+author: jacktremper
 manager: pamgreen
 ms.date: 12/08/2023
 audience: ITPro
