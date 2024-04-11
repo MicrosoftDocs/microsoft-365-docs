@@ -30,7 +30,7 @@ Loop components in Teams chat, Outlook emails, Whiteboards, or other places in t
 > [!Note]
 > Loop components is the first feature of the [Microsoft Loop app](https://www.microsoft.com/en-us/microsoft-loop) to become available in Teams.
 
-**Get tasks done faster together.** Crowd-source an agenda, track a group's action items, or take notes collectively. These are just a few scenarios made easier with Loop components.
+**Get tasks done faster together.** Crowd-source an agenda, track a group's action items, or take notes collectively are just a few scenarios made easier with Loop components.
 
 **Share components.** In this release, you can share Loop components into different Teams chats, Outlook emails, Whiteboards, and other places in the Microsoft 365 ecosystem. Recipients can edit from wherever they are and see updates instantly, no matter where the changes were made.
 
@@ -77,7 +77,7 @@ The .loop files can only be opened as links in your browser, such as Office.com,
 If you disable these experiences as outlined in the [Settings management](loop-workspaces-configuration.md#settings-management-in-cloud-policy) section, the following experience-changes will apply:
 - The create/insert entry point within Teams messaging and Outlook email will be hidden. The users won't be able to create new .loop files.
 - Existing messages that would have formerly rendered as an interactive Loop component will instead render as a hyperlink. No interactive content is displayed within the app that Loop components have been disabled in.
-- When you click on the hyperlink or browse to a .loop file in OneDrive and click it to open, it will open in a separate browser tab. You will still be able to edit the file.
+- When you click on the hyperlink or browse to a .loop file in OneDrive and click it to open, it opens in a separate browser tab. You will still be able to edit the file.
 
 ## Known issues
 
