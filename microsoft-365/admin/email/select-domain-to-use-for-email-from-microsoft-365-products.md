@@ -67,7 +67,7 @@ The setting is available via the Microsoft 365 Admin Center **Settings** menu it
 4. On the **Organization profile** page, select **Send email notifications from your domain**.
 5. In the **Send email notifications from your domain** page, select **Use a custom send-from domain address**.
 6. The **Domains** menu, select the domain that you want to use for your email replies.The domains listed in the menu includes verified complete and incomplete domains as Microsoft 365 allows DNS settings to be configured and managed outside of the tenant. Your System or Exchange administrator must ensure that they follow and meet all DNS and domain requirements. 
-7. For **Custom username**, administrators can optionally configure the no-reply prefix. They could then create a matching email address in Exchange, if they would like to monitor responses from users.
+7. For **Custom username**, administrators can optionally configure the no-reply prefix. They could then create a matching mailbox in Exchange, if they would like to monitor responses from users. Please note that if a mailbox is configured for the address utilized, then the mailbox will need to be managed to ensure that it does not exceed the specific quota configured by the exchange admin. A full mailbox may affect the ability to send email when this occurs.
 8. Select **Save**. Changes will take a few minutes to complete.
 
 :::image type="content" alt-text="Send email notifications setting." source="../../media/save-email-notifications-domain.png":::
