@@ -29,7 +29,7 @@ Remediation means to take a prescribed action against a threat. Malicious email 
 
 - You need to be assigned permissions before you can do the procedures in this article. Admins can take the required action on email messages, but the **Search and Purge** role is required to get those actions approved. To assign the **Search and Purge** role, you have the following options:
   - [Microsoft Defender XDR Unified role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac) (Affects the Defender portal only, not PowerShell): **Security operations/Security data/Email & collaboration advanced actions (manage)**.
-  - [Email & collaboration permissions in the Microsoft Defender portal](mdo-portal-permissions.md): Membership in the **Organization Management** or **Data Investigator** role groups. Or, you can [create a new role group](mdo-portal-permissions.md#create-email--collaboration-role-groups-in-the-microsoft-defender-portal) and add the **Search and Purge** role to it.
+  - [Email & collaboration permissions in the Microsoft Defender portal](mdo-portal-permissions.md): Membership in the **Organization Management** or **Data Investigator** role groups. Or, you can [create a new role group](mdo-portal-permissions.md#create-email--collaboration-role-groups-in-the-microsoft-defender-portal) with the **Search and Purge** role assigned, and add the users to the custom role group.
 
 - Verify **Automated Investigation** is turned on at <https://security.microsoft.com/securitysettings/endpoints/integration>.
 
