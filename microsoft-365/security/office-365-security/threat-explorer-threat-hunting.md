@@ -185,7 +185,7 @@ In Threat Explorer and Real-time detections, selecting one or more messages enab
   - **Start new submission**
     - Submit to Microsoft
 
-  ¹ The **Move & delete** actions require the **Search and Purge** role in [Email & collaboration permissions](mdo-portal-permissions.md). By default, this role is assigned to the **Data Investigator** and **Organization Management** role groups. Members of the **Security Administrators** role group don't see these actions. You can add the members of the group to the **Data Investigator** role group, or you can [create a new role group](mdo-portal-permissions.md#create-email--collaboration-role-groups-in-the-microsoft-defender-portal) with the **Search and Purge** role assigned, and then add the members of the **Security Administrators** role group.
+  ¹ The **Move & delete** actions require the **Search and Purge** role in [Email & collaboration permissions](mdo-portal-permissions.md). By default, this role is assigned only to the **Data Investigator** and **Organization Management** role groups. You can add users to those role groups, or you can [create a new role group](mdo-portal-permissions.md#create-email--collaboration-role-groups-in-the-microsoft-defender-portal) with the **Search and Purge** role assigned, and add the users to the custom role group.
 
 - In Real-time detectionsAvailable, the available **Message actions** in the **Malware** and **Phish** views are described in the following list:
   - **Start new submission**
@@ -326,7 +326,7 @@ The available actions in the **Take action** wizard in Threat Explorer and Real-
 |**Initiate automated investigation**|✔||
 |**Propose remediation**|✔|✔|
 
-¹ This action requires the **Search and Purge** role in [Email & collaboration permissions](mdo-portal-permissions.md). By default, this role is assigned to the **Data Investigator** and **Organization Management** role groups. Members of the **Security Administrators** role group don't see this action. You can add the members of the group to the **Data Investigator** role group, or you can [create a new role group](mdo-portal-permissions.md#create-email--collaboration-role-groups-in-the-microsoft-defender-portal) with the **Search and Purge** role assigned, and then add the members of the **Security Administrators** role group.
+¹ This action requires the **Search and Purge** role in [Email & collaboration permissions](mdo-portal-permissions.md). By default, this role is assigned only to the **Data Investigator** and **Organization Management** role groups. You can add users to those role groups, or you can [create a new role group](mdo-portal-permissions.md#create-email--collaboration-role-groups-in-the-microsoft-defender-portal) with the **Search and Purge** role assigned, and add the users to the custom role group.
 
 1. On the **Choose response actions** page, select one or more of the following options in the **Email message actions** section:
 
