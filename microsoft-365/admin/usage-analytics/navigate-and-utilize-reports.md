@@ -43,10 +43,9 @@ To get started with your reports, here are some tips:
 
     ![Shows a slicer.](../../media/navigate-usage-analytics3.png)
 
-    ![Shows a slicer.](../../media/navigate-usage-analytics4.png)
+    ![Shows a slicer in a drop down list.](../../media/navigate-usage-analytics4.png)
 
-
-- Hover over data points to view a callout that contains details.
+Hover data points to view a callout that contains details.
 
     ![Shows hover example.](../../media/navigate-usage-analytics6.png)
 
@@ -55,7 +54,6 @@ The user who has instantiated the template app will have the ability to customiz
 - Select **Edit report** at the top of the report.
 
     ![Shows Edit report.](../../media/navigate-usage-analytics7.png)
-
 
 - Create your own visuals by using the underlying [datasets](usage-analytics-data-model.md).
 
