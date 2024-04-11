@@ -27,7 +27,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Introduction to Microsoft 365 Archive
+          - text: Learn about Microsoft 365 Archive
             url: archive-overview.md
           - text: FAQs
             url: archive-faq.md
