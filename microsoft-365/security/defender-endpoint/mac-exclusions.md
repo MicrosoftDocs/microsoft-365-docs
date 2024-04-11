@@ -7,7 +7,7 @@ author: siosulli
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro
-ms.collection: 
+ms.collection:
 - m365-security
 - tier3
 - mde-macos
@@ -20,7 +20,6 @@ ms.date: 02/29/2024
 # Configure and validate exclusions for Microsoft Defender for Endpoint on macOS
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
-
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -56,47 +55,46 @@ Process|A specific process (specified either by the full path or file name) and 
 
 File, folder, and process exclusions support the following wildcards:
 
-Wildcard|Description|Examples|
----|---|---
-\*|Matches any number of any characters including none (note if this wildcard is not used at the end of the path then it will substitute only one folder)| `/var/*/tmp` includes any file in `/var/abc/tmp` and its subdirectories, and `/var/def/tmp` and its subdirectories. It does not include `/var/abc/log` or `/var/def/log` <p> <p> `/var/*/` includes any file in `/var` and its subdirectories. 
-?|Matches any single character|`file?.log` includes `file1.log` and `file2.log`, but not`file123.log`
+|Wildcard|Description|Examples|
+|---|---|---|
+|\*|Matches any number of any characters including none (note if this wildcard is not used at the end of the path then it will substitute only one folder)| `/var/*/tmp` includes any file in `/var/abc/tmp` and its subdirectories, and `/var/def/tmp` and its subdirectories. It does not include `/var/abc/log` or `/var/def/log` <p> <p> `/var/*/` includes any file in `/var` and its subdirectories.|
+|?|Matches any single character|`file?.log` includes `file1.log` and `file2.log`, but not `file123.log`|
+
 > [!NOTE]
 > When using the * wildcard at the end of the path, it will match all files and subdirectories under the parent of the wildcard.
-
-
-> [!NOTE]
+>
 > The product attempts to resolve firmlinks when evaluating exclusions. Firmlink resolution does not work when the exclusion contains wildcards or the target file (on the `Data` volume) does not exist.
 
-## Best practices for adding antimalware exclusions for Microsoft Defender for Endpoint on macOS. 
+## Best practices for adding antimalware exclusions for Microsoft Defender for Endpoint on macOS.
 
-1. Write down why an exclusion was added to a central location where only SecOps and/or Security Administrator have access.
+1. Write down why an exclusion was added to a central location where only SecOps and/or Security Administrator have access.
 
-   e.g. Submitter, date, app name, reason, and exclusion information.  
-   
-1. Make sure to have an expiration date* for the exclusions 
+   e.g. Submitter, date, app name, reason, and exclusion information.
 
-   *except for apps that the ISV stated that there is no additional tweaking that could be done to prevent the false positive or higher cpu utilization from occurring.
-   
-1. Avoid migrating 3rd party antimalware exclusions since they may no longer be applicable nor applicable to Microsoft Defender for Endpoint on macOS. 
+1. Make sure to have an expiration date* for the exclusions
 
-1. Order of exclusions to consider top (more secure) to bottom (least secure): 
+   *except for apps that the ISV stated that there is no additional tweaking that could be done to prevent the false positive or higher cpu utilization from occurring.
 
-   1. Indicators - Certificate - allow 
-   
-      1. Add an extended validation (EV) code signing. 
-   
-   1. Indicators - File hash - allow 
-   
-      1. If a process or daemon doesn't change often, e.g. the app doesn't have a monthly security update. 
-      
-   1. Path & Process 
-   
-   1. Process 
-   
-   1. Path 
-   
+1. Avoid migrating 3rd party antimalware exclusions since they may no longer be applicable nor applicable to Microsoft Defender for Endpoint on macOS.
+
+1. Order of exclusions to consider top (more secure) to bottom (least secure):
+
+   1. Indicators - Certificate - allow
+
+      1. Add an extended validation (EV) code signing.
+
+   1. Indicators - File hash - allow
+
+      1. If a process or daemon doesn't change often, e.g. the app doesn't have a monthly security update.
+
+   1. Path & Process
+
+   1. Process
+
+   1. Path
+
    1. Extension
-   
+
 ## How to configure the list of exclusions
 
 ### From the Microsoft Defender for Endpoint Security Settings management console
@@ -123,7 +121,7 @@ For more information on how to configure exclusions from JAMF, Intune, or anothe
 
 1. Open the Defender for Endpoint application and navigate to **Manage settings** \> **Add or Remove Exclusion...**, as shown in the following screenshot:
 
-:::image type="content" source="media/mdatp-37-exclusions.png" alt-text="The Manage exclusions page" lightbox="media/mdatp-37-exclusions.png":::
+   :::image type="content" source="media/mdatp-37-exclusions.png" alt-text="The Manage exclusions page" lightbox="media/mdatp-37-exclusions.png":::
 
 2. Select the type of exclusion that you wish to add and follow the prompts.
 
@@ -168,4 +166,5 @@ For example, to add `EICAR-Test-File (not a virus)` (the threat name associated 
 ```bash
 mdatp threat allowed add --name "EICAR-Test-File (not a virus)"
 ```
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

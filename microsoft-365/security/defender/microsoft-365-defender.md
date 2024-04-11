@@ -12,6 +12,9 @@ audience: ITPro
 ms.custom: 
   - admindeeplinkDEFENDER
   - intro-overview
+ms.collection:
+- essentials-overview
+- tier1
 ms.topic: conceptual
 adobe-target: true
 ms.date: 03/28/2024
