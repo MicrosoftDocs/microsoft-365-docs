@@ -18,7 +18,7 @@ metadata:
     - seo-marvel-apr2020
   description: Admins can view frequently asked questions and answers about delegated administration tasks in Microsoft 365 for Microsoft partners and resellers.
   ms.subservice: mdo
-  ms.service: microsoft-365-security
+  ms.service: defender-office-365
 
 title: Delegated administration FAQ
 summary: |

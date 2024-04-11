@@ -14,6 +14,7 @@ audience: ITPro
 ms.collection:
   - m365-security
   - tier1
+  - security-copilot
 ms.topic: conceptual
 ms.date: 04/01/2024
 ---

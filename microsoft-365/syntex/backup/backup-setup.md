@@ -17,7 +17,7 @@ ms.localizationpriority:  medium
 description: Learn how to set up and configure Microsoft 365 Backup and backup policies.
 ---
 
-# Set up Microsoft 365 Backup (Preview)
+# Set up Microsoft 365 Backup
 
 > [!NOTE]
 > Microsoft 365 Backup (Preview) is now available worldwide in all commercial cloud environments. General availability is expected to be mid-2024. This preview feature is subject to change and [limitations as defined](backup-limitations.md). Before you begin, read the [Microsoft 365 Backup preview terms and conditions](backup-preview-terms.md).

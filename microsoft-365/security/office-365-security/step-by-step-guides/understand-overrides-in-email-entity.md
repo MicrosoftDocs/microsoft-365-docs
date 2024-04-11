@@ -4,10 +4,9 @@ description: Shows the different overrides in the email entity page in Microsoft
 author: MSFTBen
 ms.author: benharri
 manager: dansimp
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 ms.topic: how-to
 audience: ITPro
-ms.subservice: mdo
 ms.collection:
 - m365-guidance-templates
 - m365-security
