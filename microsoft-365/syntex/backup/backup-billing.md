@@ -17,7 +17,7 @@ ms.localizationpriority:  medium
 description: Learn how to set up pay-as-you-go billing for Microsoft 365 Backup.
 ---
 
-# Set up pay-as-you-go billing for Microsoft 365 Backup (Preview)
+# Set up pay-as-you-go billing for Microsoft 365 Backup
 
 As a first step to start using Microsoft 365 Backup, you should link an Azure subscription in Syntex pay-as-you-go, if you haven't already done so. Although Microsoft 365 Backup isn't part of the Microsoft Syntex product suite, this offering is still using the Syntex billing setup for consistency with other Microsoft 365 pay-as-you-go offerings.
 

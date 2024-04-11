@@ -30,7 +30,7 @@ additionalContent:
               url: /security/zero-trust/zero-trust-microsoft-365-copilot
             - text: Sensitivity labels
               url: /microsoft-365/compliance/sensitivity-labels
-            - text: Review current access, Entra ID
+            - text: Review current access, Microsoft Entra ID
               url: /azure/active-directory/governance/review-your-access
             - text: Data loss prevention
               url: /microsoft-365/compliance/dlp-learn-about-dlp
