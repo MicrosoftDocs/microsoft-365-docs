@@ -128,6 +128,47 @@ To change which users are synchronized to other tenants
 
 This procedure updates the *MTO_Sync_\<TenantID\>* synchronization configurations in Microsoft Entra ID for each tenant in your multitenant organization.
 
+## Set up calendar sharing for tenants in your MTO
+
+Calendar sharing allows users in each MTO tenant to view free/busy (time only) calendar availability information.
+
+To manage free/busy calendar sharing for tenants in your MTO
+
+1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) as a global administrator.
+1. Expand **Settings** and select **Org settings**.
+1. On the **Organization profile** tab, select **Multitenant collaboration**.
+1. Select **Manage settings**.
+1. Select **Edit calendar settings** under **Calendar**.
+1. Select tenants to enable free/busy calendar sharing.
+1. Select **Save changes**.
+
+The organization relationship must also be set up by the other tenants in your MTO for calendar free/busy availability information to be shared. For additional information about Free/Busy calendar sharing, see [Organization relationships in Exchange Online](/exchange/sharing/organization-relationships/organization-relationships).
+
+## Set up MTO user labels in Teams for tenants in your MTO (Preview)
+
+MTO group admins can now configure an optional label for each tenant that will be displayed alongside MTO synced user's display name in Teams. This allows MTO synced users to be distinguishable within the MTO in Teams interactions. 
+
+![Teams People Card MTO user label](../media/mt-sync/teams-people-card-label.png)
+
+> _Fig 1: Teams people card shows MTO user label "US"_
+
+![Teams search MTO user label](../media/mt-sync/teams-search-label.png)
+
+> _Fig 2: Teams search experience shows MTO user label “US”_
+
+Only MTO owners can manage the MTO user labels. Label changes may take some time to process and will only apply to active tenants.
+
+To manage MTO user labels for tenants in your MTO
+
+1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) as a global administrator.
+1. Expand **Settings** and select **Org settings**.
+1. On the **Organization profile** tab, select **Multitenant collaboration**.
+1. Select **Manage settings**.
+1. Select **Edit** under **Tenant label**.
+1. Select either: No label, Use the multitenant organization name for all tenants, or Custom (assign a label for each tenant, which cannot be blank).
+1. Select **Save changes**.
+
+
 ## Related topics
 
 [Troubleshooting tips for multitenant organizations](/azure/active-directory/multi-tenant-organizations/cross-tenant-synchronization-configure#troubleshooting-tips)
