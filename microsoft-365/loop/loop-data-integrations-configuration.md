@@ -2,9 +2,9 @@
 ms.date: 02/22/2024
 title: "Configuring external data integrations for Loop experiences"
 ms.reviewer: dancost, dimple
-ms.author: mikeplum
-author: MikePlumleyMSFT
-manager: serdars
+ms.author: jtremper
+author: jacktremper
+manager: pamgreen
 recommendations: true
 audience: Admin
 f1.keywords:
