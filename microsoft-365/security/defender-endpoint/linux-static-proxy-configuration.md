@@ -62,7 +62,7 @@ During installation, the `HTTPS_PROXY` environment variable must be passed to th
 
 The `HTTPS_PROXY` environment variable may similarly be defined during uninstallation.
 
-Note that installation and uninstallation will not necessarily fail if a proxy is required but not configured. However, telemetry will not be submitted, and the operation could take much longer due to network timeouts.
+Note that installation and uninstallation will not necessarily fail if a proxy is required but not configured. However, telemetry won't be submitted, and the operation could take longer due to network timeouts.
 
 ## Post installation configuration
 
