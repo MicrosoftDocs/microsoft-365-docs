@@ -61,7 +61,7 @@
     items:
     - name: Evaluate capabilities overview
       href: evaluation-lab.md
-    - name: Microsoft defender for endpoint demonstrations
+    - name: Microsoft Defender for Endpoint demonstrations
       items:
       - name: Overview
         href: evaluate-microsoft-defender-antivirus.md
