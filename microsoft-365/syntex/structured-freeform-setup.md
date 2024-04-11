@@ -57,9 +57,36 @@ By default, structured and default document processing is turned on for librarie
 
     c. Select **Save**.
 
+## Preparing the default Power Platform environment 
+Your tenant comes with a default Power Platform environment. By default, AI Builder will be using the default Power Platform environment. This will require the *AI Builder for Project Cortex* app to be installed. For some tenants it's automatically turned on. For some that where it's not enabled you will encounter this error during the model creation, "AI Builder requires a Dataverse database..." error during model creation.
+
+    > Understanding the Error:
+    > This error indicates that the AI Builder for Project Cortex app needs to be installed within your default Power Platform environment before you can start building models.
+
+### Steps to Install *AI Builder for Project Cortex*:
+
+*Important:* You must access the Power Platform admin center with Power Platform administrator access to complete these steps.
+
+1. Access the [Power Platform admin center](https://admin.powerplatform.microsoft.com/)
+  
+2. On the navigation menu, select **Resources** > **Dynamics 365 apps**.
+
+3. Find the **AI Builder for Project Cortex** app, click on the *more* icon and select **Install**.
+
+   ![image](https://github.com/MicrosoftDocs/microsoft-365-docs/assets/13330257/a90670b3-3287-466f-ad93-1b9a2a1115ed)
+
+4. You will be prompted to select a target environment. Use the dropdown to select your default environment, review the terms and condition and start the installation.
+   
+   ![image](https://github.com/MicrosoftDocs/microsoft-365-docs/assets/13330257/597ff192-ba12-4f6c-87f2-cf6905536c84)
+  
+6. Allow a few minutes for the installation to complete.
+   
+7. Once installed, retry creating your new model. The error should no longer appear.
+
+
 ## Using a custom Power Platform environment
 
-Your tenant comes with a default Power Platform environment. If you plan to use a custom Power Platform environment, you must install the *AI Builder for Project Cortex* app in this environment. See [Manage Dynamics 365 apps](/power-platform/admin/manage-apps#install-an-app-in-the-environment-view) for details and look for the *AI Builder for Project Cortex* app in the list of Dynamics 365 apps. The environment must not be of the Sandbox type.
+If you plan to use a custom Power Platform environment, you must install the *AI Builder for Project Cortex* app in this environment. See [Manage Dynamics 365 apps](/power-platform/admin/manage-apps#install-an-app-in-the-environment-view) for details and look for the *AI Builder for Project Cortex* app in the list of Dynamics 365 apps. The environment must not be of the Sandbox type.
 
 You also need to [allocate AI Builder credits](/power-platform/admin/capacity-add-on) to the custom environment before you can create document processing models.
 
@@ -113,6 +140,8 @@ By default, structured and freeform document processing is turned off for all si
     b. To restrict user access to this service, select **No SharePoint libraries** or **Libraries in selected SharePoint sites** and follow the instructions to either select the sites or upload a CSV listing a maximum of 100 sites. Be sure to add your content center site if you want it to be included. You can then manage site access permissions for the sites you selected.
 
     c. Select **Save**.
+
+
 
 ## Using a custom Power Platform environment
 
