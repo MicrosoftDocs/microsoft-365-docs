@@ -50,7 +50,7 @@ Loop components created in Teams and Outlook are just .loop files (earlier versi
 
 ## How are .loop files stored?
 
-The .loop files appear on Office.com and OneDrive, such as in the Recent and Recommended areas. Users can search for content in .loop files from Office.com and OneDrive. The .loop files can be restored to previous versions from OneDrive. To create Loop components, chat or email creators must have a OneDrive account. Without a valid OneDrive account, chat or email creators might still be able to collaborate on a component created by other users who have a valid OneDrive account, but can't create their own Loop components.
+The .loop files appear on Office.com and OneDrive, such as in the Recent and Recommended areas. They also appear in the Loop app. Users can search for content in .loop files from Loop, Office.com and OneDrive. The .loop files can be restored to previous versions from OneDrive. To create Loop components, chat or email creators must have a OneDrive account. Without a valid OneDrive account, chat or email creators might still be able to collaborate on a component created by other users who have a valid OneDrive account, but can't create their own Loop components.
 
 Moving a .loop file from OneDrive to a SharePoint site results in the Loop component failing to load in Teams chat, Outlook email, or any other place it was previously shared to.
 
@@ -60,9 +60,9 @@ Moving a .loop file from OneDrive to a SharePoint site results in the Loop compo
 
 ## How are .loop files shared?
 
-Loop components can be inserted in Teams chat, Outlook email, and so on, or be copied from one chat, email, and so on, to another. (Loop components aren't yet supported in Teams channels.) They default to the organization's existing permissions, but users can change permissions before sending to ensure everyone has access.
+Loop components can be inserted in Teams chat, Teams channels, Outlook email, and so on, or be copied from one chat, email, channel, and so on, to another. They default to the organization's existing permissions, but users can change permissions before sending to ensure everyone has access.
 
-Opening components from Teams chat, Outlook email, or Whiteboard in Office.com offers share functionality at the top of the window, similar to the sharing options offered for other Office documents.
+Opening components from Teams chat, Teams channels, Outlook email, or Whiteboard in Loop offers share functionality at the top of the window, similar to the sharing options offered for other Office documents.
 
 ## What if a .loop file becomes corrupted or damaged?
 
@@ -70,7 +70,7 @@ Version History allows you to review, restore, or copy from previous versions of
 
 ## What apps can open and edit .loop files?
 
-The .loop files can only be opened as links in your browser, such as Office.com, and as Loop components in Teams chat, Outlook email, Whiteboard, and Word for the web. If downloaded, they can't be opened again without first uploading them back to OneDrive or SharePoint.
+The .loop files can only be opened as links in your browser, such as in Loop, and as Loop components in Teams chat, Outlook email, Whiteboard, and Word for the web. If downloaded, they can't be opened again without first uploading them back to OneDrive or SharePoint.
 
 ## If Loop is disabled from the admin switch, what will the user experience be?
 
