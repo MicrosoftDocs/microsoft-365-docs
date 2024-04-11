@@ -4,7 +4,7 @@ description: Configure automatic attack disruption options in Microsoft Defender
 search.appverid: MET150
 ms.author: diannegali
 author: diannegali
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.topic: how-to
 ms.service: defender-xdr
@@ -61,9 +61,9 @@ Review the configured automation level for your device group policies, wWhether 
 
 3. Review your device group policies. Look at the **Automation level** column. We recommend using **Full - remediate threats automatically**.  You might need to create or edit your device groups to get the level of automation you want. To exclude a device group from automated containment, set its automation level to **no automated response**. Note that this is not highly recommended and should only be done for a limited number of devices.
 
-#### Device Discovery configuration
+#### Device discovery configuration
 
-Device Discovery settings must be activated to "Standard Discovery" at a minimum. Learn how to configure Device Discovery in [Set up device discovery](/defender-endpoint/configure-device-discovery).
+Device discovery settings must be activated to "Standard Discovery" at a minimum. Learn how to configure device discovery in [Set up device discovery](/microsoft-365/security/defender-endpoint/configure-device-discovery).
 
 >[!NOTE]
 >Attack disruption can act on devices independent of a device's Microsoft Defender Antivirus operating state. The operating state can be in Active, Passive, or EDR Block Mode.
@@ -111,7 +111,7 @@ The following mailbox events need to be audited by minimum:
 - SoftDelete
 - HardDelete
 
-Review [Manage mailbox auditing](/purview/audit-mailboxes) to learn about managing mailbox auditing.
+Review [manage mailbox auditing](/purview/audit-mailboxes) to learn about managing mailbox auditing.
 
 #### Safelinks policy needs to be present.
 

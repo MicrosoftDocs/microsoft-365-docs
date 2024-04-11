@@ -39,7 +39,7 @@ Combined with always-on, real-time protection, which reviews files when they are
 
 1. Go to the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com/)) and sign-in.
 2. Go to the **device page** that you would like to run a remote scan.
-3. Click on the ellipses **(…)**.
+3. Click on the ellipses **(...)**.
 4. Click on **Run Antivirus Scan**.
 5. Under **Select scan type**, select the radio button for **Quick Scan** or **Full Scan**.
 6. Add a comment.

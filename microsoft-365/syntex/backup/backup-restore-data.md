@@ -17,12 +17,12 @@ ms.localizationpriority:  medium
 description: Learn how to restore data using restore points and express restore points in Microsoft 365 Backup.
 ---
 
-# Restore data in Microsoft 365 Backup (Preview)
+# Restore data in Microsoft 365 Backup
 
 > [!NOTE]
 > This feature is currently in preview and subject to change.
 
-Once you back up your data, you might need to restore the data in case of an accidental deletion, ransomware attack, or other event. The Restore feature in Microsoft 365 Backup is created to help you restore backed up data.
+Once you back up your data, you might need to restore the data if there was an accidental deletion, ransomware attack, or other event. The Restore feature in Microsoft 365 Backup is created to help you restore backed up data.
 
 As part of restoring data from backup, admin needs to choose a *restore point* manually or from a recommended *express restore point* by the tool.
 
@@ -32,7 +32,7 @@ As part of restoring data from backup, admin needs to choose a *restore point* m
 
 Currently, you can restore OneDrive accounts, SharePoint sites, and Exchange mailbox content from specific prior points in time from the backups. Site restores to a prior point in time, if restored to the same URL, will overwrite the state and the content of the site to match the exact state at the prior point in time. This is commonly referred to as a rollback versus a roll-forward.
 
-Mailbox restores inherently restore only changed items such that current items that remain unchanged since the desired prior restore point won't be modified or overwritten. Thus, mailbox restores follow a roll-forward process. Site, OneDrive, and mailbox restores can be done in place or in the case of SharePoint sites to a new URL, or in the case of mailbox items a new folder. By restoring to a new location, any undesirable overwriting any existing data is avoided.
+Mailbox restores inherently restore only changed items such that current items that remain unchanged since the desired prior restore point won't be modified or overwritten. Thus, mailbox restores follow a roll-forward process. Site, OneDrive, and mailbox restores can be done in place or if SharePoint sites to a new URL, or in the case of mailbox items a new folder. By restoring to a new location, any undesirable overwriting any existing data is avoided.
 
 > [!NOTE]
 > During the preview, only full OneDrive account and SharePoint site restore is possible. In the future, file-level granular restore will be possible.
@@ -52,7 +52,7 @@ The restore point frequency, also known as the [recovery point objective](backup
 
 ## Restore data from backup for OneDrive, SharePoint, and Exchange
 
-Once you back up your data, you might need to restore the data in case of an accidental deletion, ransomware attack, or other event. The restore feature in Microsoft 365 Backup is created to help you restore backed up data.
+Once you back up your data, you might need to restore the data if there was an accidental deletion, ransomware attack, or other event. The restore feature in Microsoft 365 Backup is created to help you restore backed up data.
 
 > [!NOTE]
 > We recommend choosing an express restore point for full account, site, or mailbox restores as it will provide the fastest restore experience.
@@ -65,7 +65,7 @@ Follow these steps to restore data backed up for OneDrive.
 
 1. In the Microsoft 365 admin center, on the **Microsoft 365 Backup** page, in the **OneDrive** section, select **Restore**.
 
-2. On the **Select type of content** page, you'll see **OneDrive accounts** preselected. Select **Next**.
+2. On the **Select type of content** page, you see **OneDrive accounts** preselected. Select **Next**.
 
     ![Screenshot showing the Select type of content page with OneDrive accounts selected.](../../media/content-understanding/backup-onedrive-select-type.png)
 

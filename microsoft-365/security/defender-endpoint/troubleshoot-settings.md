@@ -9,7 +9,7 @@ ms.service: defender-endpoint
 ms.topic: troubleshooting-general
 ms.date: 03/19/2024
 ms.subservice: ngp
-ms.localizationpriority: medium 
+ms.localizationpriority: medium
 ms.collection: # Useful for querying on a set of strategic or high-priority content.
 ms.custom: partner-contribution
 search.appverid: MET150
@@ -40,7 +40,7 @@ Microsoft Defender Antivirus provides numerous ways to manage the product, which
 - Registry
 
 > [!TIP]
-> For best results, use one method of managing Microsoft Defender Antivirus. 
+> For best results, use one method of managing Microsoft Defender Antivirus.
 
 ## Troubleshooting Microsoft Defender Antivirus settings
 
@@ -57,23 +57,24 @@ To remove policy conflicts, here's our current, recommended process:
 
 When policies and settings are configured in multiple tools, in general, here's the order of precedence:
 
+1. Microsoft Defender for Endpoint security settings management
 1. Group Policy (GPO)
-2. Microsoft Configuration Manager co-management
-3. Microsoft Configuration Manager (standalone)
-4. Microsoft Intune (MDM)
-5. Microsoft Configuration Manager with Tenant Attach
-6. PowerShell ([Set-MpPreference](/powershell/module/defender/set-mppreference)), [MpCmdRun.exe](command-line-arguments-microsoft-defender-antivirus.md), or [Windows Management Instrumentation](use-wmi-microsoft-defender-antivirus.md) (WMI).
+1. Microsoft Configuration Manager co-management
+1. Microsoft Configuration Manager (standalone)
+1. Microsoft Intune (MDM)
+1. Microsoft Configuration Manager with Tenant Attach
+1. PowerShell ([Set-MpPreference](/powershell/module/defender/set-mppreference)), [MpCmdRun.exe](command-line-arguments-microsoft-defender-antivirus.md), or [Windows Management Instrumentation](use-wmi-microsoft-defender-antivirus.md) (WMI).
 
 > [!WARNING]
 > [MDMWinsOverGP](/windows/client-management/mdm/policy-csp-controlpolicyconflict) is a Policy CSP setting that does not apply for all settings, such as [attack surface reduction rules](attack-surface-reduction-rules-reference.md) (ASR rules) in Windows 10.
- 
+
 ## Step 2: Determine where Microsoft Defender Antivirus settings are configured
 
 Find out whether Microsoft Defender Antivirus settings are coming through a policy, MDM, or a local setting. The following table describes policies, settings, and relevant tools.
 
 |Policy or setting| Registry location | Tools|
 | -------- | -------- | -------- |
-|Policy| `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`|- Microsoft Configuration Manager co-management<br/>- Microsoft Configuration Manager<br/>- GPO|
+|Policy| `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`|- Microsoft Defender for Endpoint security settings management<br/>- Microsoft Configuration Manager co-management<br/>- Microsoft Configuration Manager<br/>- GPO|
 |MDM|`HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Policy Manager` |- Microsoft Intune (MDM)<br/>- Microsoft Configuration Manager with Tenant Attach|
 |Local setting|`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender`|- MpCmdRun.exe<br/>- PowerShell (Set-MpPreference)<br/>- Windows Management Instrumentation (WMI)|
 
@@ -90,5 +91,3 @@ The following table describes how to identify policies and settings.
 ## Step 4: Remove or revise conflicting policies
 
 Once you have identified the conflicting policy, work with your security administrators to change device targeting so that devices receive the correct Microsoft Defender Antivirus settings.
-
-
