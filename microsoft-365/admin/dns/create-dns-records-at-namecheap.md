@@ -79,7 +79,7 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
     |---|---|---|---|
     |TXT|@|MS=ms *XXXXXXXX*  <br/>**Note:** This is an example. Use your specific **Destination or Points to Address** value here, from the table.  [How do I find this?](../get-help-with-domains/information-for-dns-records.md)|30 min|
 
-     :::image type="content" source="../../media/fe75c0fd-f85c-4bef-8068-edaf9779b7f1.png" alt-text="Copy and paste the values from the table.":::
+     :::image type="content" source="../../media/fe75c0fd-f85c-4bef-8068-edaf9779b7f1.png" alt-text="Copy and paste the values from the table for the domain verification TXT record.":::
 
 1. Select the **Save Changes** (check mark) control.
 
@@ -140,7 +140,7 @@ To verify the record in Microsoft 365:
     |---|---|---|---|---|
     |MX Record|@|\<*domain-key*\>.mail.protection.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> **Note:** Get your *\<domain-key\>* from your Microsoft account.  [How do I find this?](../get-help-with-domains/information-for-dns-records.md)|0  <br/> For more information about priority, see [What is MX priority?](../setup/domains-faq.yml)|30 min|
 
-     :::image type="content" source="../../media/f3b76d62-5022-48c1-901b-8615a8571309.png" alt-text="Copy and paste the values from the table.":::
+     :::image type="content" source="../../media/f3b76d62-5022-48c1-901b-8615a8571309.png" alt-text="Copy and paste the values from the table for the MX record.":::
 
 1. Select the **Save Changes** (check mark) control.
 
@@ -193,7 +193,7 @@ To verify the record in Microsoft 365:
     |---|---|---|---|
     |CNAME|autodiscover|autodiscover.outlook.com.  <br/> **This value MUST end with a period (.)**|Automatic|
 
-     :::image type="content" source="../../media/f79c5679-34eb-4544-8517-caa2e8a4111a.png" alt-text="Copy and paste the values from the table.":::
+     :::image type="content" source="../../media/f79c5679-34eb-4544-8517-caa2e8a4111a.png" alt-text="Copy and paste the values from the table for the CNAME record.":::
 
 1. Select the **Save Changes** (check mark) control.
 
@@ -237,7 +237,7 @@ To verify the record in Microsoft 365:
     |---|---|---|---|
     |TXT|@|v=spf1 include:spf.protection.outlook.com -all  <br/> **Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct.|30 min|
 
-     :::image type="content" source="../../media/ea0829f1-990b-424b-b26e-9859468318dd.png" alt-text="Copy and paste the values from the table.":::
+     :::image type="content" source="../../media/ea0829f1-990b-424b-b26e-9859468318dd.png" alt-text="Copy and paste the values from the table for the SPF TXT record.":::
 
 1. Select the **Save Changes** (check mark) control.
 
@@ -283,7 +283,7 @@ Only select this option if your organization uses Microsoft Teams. Teams needs 4
     |_sip|_tls|100|1|443|sipdir.online.lync.com.  <br/> **This value MUST end with a period (.)**|Automatic|
     |_sipfederationtls|_tcp|100|1|5061|sipfed.online.lync.com.  <br/> **This value MUST end with a period (.)**|Automatic|
 
-     :::image type="content" source="../../media/ff9566ea-0096-4b7f-873c-027080a23b56.png" alt-text="Copy and paste the values from the table.":::
+     :::image type="content" source="../../media/ff9566ea-0096-4b7f-873c-027080a23b56.png" alt-text="Copy and paste the values from the table for the SRV records.":::
 
 1. Select the **Save Changes** (check mark) control.
 
@@ -365,7 +365,7 @@ This service helps you secure and remotely manage mobile devices that connect to
     |CNAME|enterpriseregistration|enterpriseregistration.windows.net.  <br/> **This value MUST end with a period (.)**|Automatic|
     |CNAME|enterpriseenrollment|enterpriseenrollment-s.manage.microsoft.com.  <br/> **This value MUST end with a period (.)**|Automatic|
 
-     :::image type="content" source="../../media/f79c5679-34eb-4544-8517-caa2e8a4111a.png" alt-text="Copy and paste the values from the table.":::
+     :::image type="content" source="../../media/f79c5679-34eb-4544-8517-caa2e8a4111a.png" alt-text="Copy and paste the values from the table for the CNAME records for Mobile Device Management.":::
 
 1. Select the **Save Changes** control.
 
