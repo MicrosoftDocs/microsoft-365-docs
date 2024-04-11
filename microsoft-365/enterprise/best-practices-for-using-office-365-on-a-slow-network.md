@@ -3,7 +3,7 @@ title: "Best practices for using Office 365 on a slow network"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 03/15/2024
+ms.date: 04/09/2024
 audience: End User
 ms.topic: overview
 ms.service: microsoft-365-enterprise
@@ -30,7 +30,7 @@ description: "This article guides you through the best practices that you can ad
 Wouldn't it be nice if your Internet connection was always fast and never down? Perhaps that day will come. But in the meantime, there are practical things you can do to work around a balky network and still get your day-to-day work done. Although Office 365 is a cloud-based service, it also provides many ways to work with your content offline and to smoothly keep your changes synchronized. Besides, it's sometimes more efficient to work with content offline just because applications run faster and the user interface is more responsive. The point is this: Office 365 gives you the best of both worlds. Here's how to take advantage of that.
 
 > [!TIP]
-> Want to see how slow (or fast) your network connection is? Try the [OOKLA Speed test](https://www.speedtest.net/) or the [Network Speed Test App](https://www.windowsphone.com/store/app/network-speed-test/9b9ae06b-2961-41ef-987d-b09567cffe70).
+> Want to see how slow (or fast) your network connection is? Try the [OOKLA Speed test](https://www.speedtest.net/).
 
 ## Why is my network so slow?
 

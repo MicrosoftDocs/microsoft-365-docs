@@ -17,7 +17,7 @@ ms.localizationpriority:  medium
 description: Read frequently asked questions about Microsoft 365 Backup.
 ---
 
-# Frequently asked questions about Microsoft 365 Backup (Preview)
+# Frequently asked questions about Microsoft 365 Backup
 
 > [!NOTE]
 > This feature is currently in preview and subject to change.

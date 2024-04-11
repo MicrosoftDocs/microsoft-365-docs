@@ -15,9 +15,10 @@ ms.collection:
   - highpri
   - tier1
   - essentials-overview
+  - essentials-get-started
 ms.custom: intro-get-started
 ms.topic: conceptual
-ms.date: 09/21/2023
+ms.date: 04/10/2024
 ---
 
 # Get started with Microsoft Defender XDR

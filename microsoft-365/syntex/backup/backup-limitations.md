@@ -17,7 +17,7 @@ ms.localizationpriority:  medium
 description: Learn about the preview limitations in Microsoft 365 Backup.
 ---
 
-# Preview limitations in Microsoft 365 Backup (Preview)
+# Preview limitations in Microsoft 365 Backup
 
 > [!NOTE]
 > This feature is currently in preview and subject to change.

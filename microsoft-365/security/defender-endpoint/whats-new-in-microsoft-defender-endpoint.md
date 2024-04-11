@@ -5,8 +5,9 @@ search.appverid: met150
 ms.service: defender-endpoint
 ms.author: siosulli
 author: siosulli
+ms.reviewer: noamhadash
 ms.localizationpriority: medium
-ms.date: 04/01/2024
+ms.date: 04/09/2024
 manager: deniseb
 audience: ITPro
 ms.collection: 
@@ -49,14 +50,6 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 - [What's new in Defender for Endpoint on Android](android-whatsnew.md)
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 
-
-> [!TIP]
-> RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader:        > 
-> 
-> (/api/search/rss?search=%22features+are+generally+available+%28GA%29+in+the+latest+release+of+Microsoft+Defender+for+Endpoint%22&locale=en-us&facet=)
-> 
-> (/api/search/rss?search=%22features+are+generally+available+%28GA%29+in+the+latest+release+of+Microsoft+Defender+for+Endpoint%22&locale=en-us&facet=)
-
 ## April 2024
 
 **Microsoft Defender for Endpoint on macOS** feature now in GA:
@@ -88,6 +81,7 @@ Two new ASR rules are now in public preview:
    - Defender Boxed opens automatically when you go to the **Incidents** page in the Microsoft Defender portal. 
    - If you close Defender Boxed and you want to reopen it, in the Microsoft Defender portal, go to **Incidents**, and then select **Your Defender Boxed**.
    - Act quickly! Defender Boxed is available only for a short period of time.
+- (GA) [User Contain](https://www.microsoft.com/en-us/security/blog/2023/10/11/microsoft-defender-for-endpoint-now-stops-human-operated-attacks-on-its-own) can now contain compromised users automatically stopping Human Operated Ransomware in its track using [Automatic Attack Disruption](/microsoft-365/security/defender/automatic-attack-disruption).
 
 
 ## November 2023
