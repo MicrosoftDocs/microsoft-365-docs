@@ -76,8 +76,8 @@ The .loop files can only be opened as links in your browser, such as Office.com,
 
 If you disable these experiences as outlined in the [Settings management](loop-workspaces-configuration.md#settings-management-in-cloud-policy) section, the following experience-changes will apply:
 - The create/insert entry point within Teams messaging and Outlook email will be hidden. The users won't be able to create new .loop files.
-- Existing messages that would have formerly rendered as an interactive Loop component will instead render as a hyperlink. No interactive content is displayed within the app that Loop components have been disabled in.
-- When you click on the hyperlink or browse to a .loop file in OneDrive and click it to open, it opens in a separate browser tab. You will still be able to edit the file.
+- Existing messages that would have rendered as an interactive Loop component will instead render as a hyperlink. No interactive content is displayed within the app that Loop components have been disabled in.
+- When you click on the hyperlink or browse to a .loop file in OneDrive and click it to open, it opens in a separate browser tab. You can still edit the file.
 
 ## Known issues
 
