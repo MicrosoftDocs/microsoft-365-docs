@@ -25,7 +25,7 @@ appliesto:
 
 # Overview of Loop components in the Microsoft 365 ecosystem
 
-Loop components in Teams chat, Outlook emails, Whiteboards, or other places in the Microsoft 365 ecosystem offer a new way to ideate, create, and make decisions together. Send a component - like a table, task list, or paragraph — where everyone in your chat, email, or document can edit inline and see changes as they're made.
+Loop components in Teams chat, Outlook emails, Whiteboards, or other places in the Microsoft 365 ecosystem offer a new way to ideate, create, and make decisions together. Send a component—like a table, task list, or paragraph—where everyone in your chat, email, or document can edit inline and see changes as they're made.
 
 > [!Note]
 > Loop components is the first feature of the [Microsoft Loop app](https://www.microsoft.com/en-us/microsoft-loop) to become available in Teams.
