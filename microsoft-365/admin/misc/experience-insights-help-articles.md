@@ -18,13 +18,13 @@ description: "Get a report of the Microsoft 365 help articles people in your org
 
 As the admin of a Microsoft 365 organization, you get a report of the Microsoft 365 help articles people in your organization are reading. You can use this information to see which Microsoft 365 product or service your users need the most help using and provide more resources and help. To learn more about adoption and training for users in your organization, see [Microsoft 365 Experience insights dashboard](experience-insights-dashboard.md).
 
-:::image type="content" source="../../media/experience-insights-teams-help-article2.png" alt-text="Screenshot: Image showing the number of help articles read and the corresponding Microsoft 365 product":::
+:::image type="content" source="../../media/experience-insights-teams-help-article2.png" alt-text="Screenshot: Image showing the number of help articles read and the corresponding Microsoft 365 product.":::
 
 ## How to get to the Experience insights dashboard
 
 There are a couple of ways to get the Experience insights dashboard page. If you’re a member of the global admin or global reader roles, when you log in to the Microsoft 365 admin center, you’ll see a one-time prompt to go to the Experience insights (preview) dashboard. You can access it at any time by selecting Experience insights (preview) from the admin home page.
 
-:::image type="content" source="../../media/experience-insights-fre.png" alt-text="Screenshot: Image showing how to get to the experience insights dashboard":::
+:::image type="content" source="../../media/experience-insights-fre.png" alt-text="Screenshot: Image showing how to get to the experience insights dashboard.":::
 
 If you’re a member of the reports reader role, once you sign into the admin center, you’ll automatically go to the Experience insights (preview) dashboard page. You can switch back to the admin center Dashboard view by selecting that option in the top right.
 
@@ -34,7 +34,7 @@ Select an app or service and then select **Help content**.
 
 Chart information gives you insight into the apps and services that you want to track data on. Help article views is the total number of help article page views that users in your organization have viewed in a Microsoft 365 app or on support.microsoft.com.
 
-:::image type="content" source="../../media/help-articles-detail-view2.png" alt-text="Screenshot: Image showing the number of help articles read and the corresponding Microsoft 365 product":::
+:::image type="content" source="../../media/help-articles-detail-view2.png" alt-text="Screenshot: Image showing the Help article views.":::
 
 > [!NOTE]
 > Help article views are only shown for users who have signed in to the desktop app or have signed in to [support.microsoft.com](https://support.microsoft.com).

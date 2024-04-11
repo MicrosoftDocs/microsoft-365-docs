@@ -1,12 +1,7 @@
 ---
 title: Step 4. Define Microsoft Defender XDR roles, responsibilities, and oversight
 description: The basics of defining roles, responsibilities, and oversight when integrating Microsoft Defender XDR into your security operations.
-keywords: incidents, alerts, investigate, correlation, attack, devices, users, identities, identity, mailbox, email, 365, microsoft, Microsoft 365, incident response, cyber-attack, secops, security operations, soc
-search.product: eADQiWindows 10XVcnh
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: 
   - NOCSH
 ms.author: dansimp

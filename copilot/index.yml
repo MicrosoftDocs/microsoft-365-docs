@@ -9,7 +9,9 @@ metadata:
   description: Learn about Microsoft Copilot for Microsoft 365 and how your organization can use this copilot for work. # Required; article description that is displayed in search results. < 160 chars.
   ms.service: microsoft-365-copilot 
   ms.topic: hub-page # Required
-  ms.collection: essentials-navigation # Optional; Remove if not applicable.
+  ms.collection: 
+  - essentials-navigation
+  - m365copilot
   author: samanro #Required; your GitHub user alias, with correct capitalization.
   ms.author: samanro #Required; microsoft alias of author; optional team alias.
   ms.date: 09/21/2023 #Required; mm/dd/yyyy format.
@@ -28,7 +30,7 @@ additionalContent:
               url: /security/zero-trust/zero-trust-microsoft-365-copilot
             - text: Sensitivity labels
               url: /microsoft-365/compliance/sensitivity-labels
-            - text: Review current access, Entra ID
+            - text: Review current access, Microsoft Entra ID
               url: /azure/active-directory/governance/review-your-access
             - text: Data loss prevention
               url: /microsoft-365/compliance/dlp-learn-about-dlp
@@ -71,9 +73,9 @@ additionalContent:
           links:
             - text: Manage Copilot for Microsoft 365 with the Copilot page
               url: microsoft-365-copilot-page.md
-            - text: Connect to the Microsoft Copilot Dashboard (Preview)
+            - text: Connect to the Microsoft Copilot Dashboard
               url: /viva/insights/org-team-insights/copilot-dashboard
-            - text: Manage Plugins in Integrated Apps (PREVIEW)
+            - text: Manage Plugins in Integrated Apps (Preview)
               url: /microsoft-365/admin/manage/manage-plugins-for-copilot-in-integrated-apps
             - text: Related Microsoft 365 admin controls
               url: /microsoft-365/solutions/tenant-management-overview

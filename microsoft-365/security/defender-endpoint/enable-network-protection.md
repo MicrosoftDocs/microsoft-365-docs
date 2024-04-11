@@ -3,11 +3,11 @@ title: Turn on network protection
 description: Enable network protection with Group Policy, PowerShell, or Mobile Device Management and Configuration Manager.
 ms.service: defender-endpoint
 ms.localizationpriority: medium
-ms.date: 10/18/2022
+ms.date: 04/03/2024
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
-ms.reviewer: mkaminska
+ms.reviewer: tdoucett
 manager: deniseb
 ms.subservice: asr
 ms.collection: 
@@ -37,13 +37,13 @@ search.appverid: met150
 > [!TIP]
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-[Network protection](network-protection.md) helps to prevent employees from using any application to access dangerous domains that may host phishing scams, exploits, and other malicious content on the internet. You can [audit network protection](evaluate-network-protection.md) in a test environment to view which apps would be blocked before enabling network protection.
+[Network protection](network-protection.md) helps to prevent employees from using any application to access dangerous domains that might host phishing scams, exploits, and other malicious content on the internet. You can [audit network protection](evaluate-network-protection.md) in a test environment to view which apps would be blocked before enabling network protection.
 
 [Learn more about network filtering configuration options.](/mem/intune/protect/endpoint-protection-windows-10#network-filtering)
 
 ## Check if network protection is enabled
 
-Check if network protection has been enabled on a local device by using Registry editor.
+Check to see if network protection is enabled on a local device by using Registry editor.
 
 1. Select the **Start** button in the task bar and type **regedit** to open Registry editor.
 
@@ -87,7 +87,7 @@ Enable network protection by using any of these methods:
     Set-MpPreference -EnableNetworkProtection AuditMode
     ```
 
-    Use `Disabled` instead of `AuditMode` or `Enabled` to turn off the feature.
+    To turn off the feature, use `Disabled` instead of `AuditMode` or `Enabled`.
 
 ### Mobile device management (MDM)
 
@@ -99,22 +99,36 @@ Use the [./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](/windows/
 
 #### Microsoft Defender for Endpoint Baseline method
 
-1. Sign into the Microsoft Intune admin center (https://endpoint.microsoft.com).
+1. Sign into the [Microsoft Intune admin center](https://endpoint.microsoft.com).
+
 2. Go to **Endpoint security** > **Security baselines** > **Microsoft Defender for Endpoint Baseline**.
+
 3. Select **Create a profile**, then provide a name for your profile, and then select **Next**.
-4. In the **Configuration settings** section, go to **Attack Surface Reduction Rules** > set **Block**, **Enable** or **Audit** for **Enable network protection**. Select **Next**.
+
+4. In the **Configuration settings** section, go to **Attack Surface Reduction Rules** > set **Block**, **Enable**, or **Audit** for **Enable network protection**. Select **Next**.
+
 5. Select the appropriate **Scope tags** and **Assignments** as required by your organization.
+
 7. Review all the information, and then select **Create**.
 
 #### Antivirus policy method
-1. Sign into the Microsoft Intune admin center (https://endpoint.microsoft.com).
-2. Go to **Endpoint security** > **Antivirus**
-3. Select **Create a policy**
+
+1. Sign into the [Microsoft Intune admin center](https://endpoint.microsoft.com).
+
+2. Go to **Endpoint security** > **Antivirus**.
+
+3. Select **Create a policy**.
+
 4. In the **Create a policy** flyout, choose **Windows 10, Windows 11, and Windows Server** from the **Platform** list.
-5. Choose **Microsoft Defender Antivirus** from the **Profile** list then choose **Create**
+
+5. Choose **Microsoft Defender Antivirus** from the **Profile** list then choose **Create**.
+
 6. Provide a name for your profile, and then select **Next**.
+
 7. In the **Configuration settings** section, select **Disabled**, **Enabled (block mode)** or **Enabled (audit mode)** for **Enable Network Protection**, then select **Next**.
+
 8. Select the appropriate **Assignments** and **Scope tags** as required by your organization.
+
 9. Review all the information, and then select **Create**.
 
 #### Configuration profile method
@@ -153,8 +167,9 @@ Use the following procedure to enable network protection on domain-joined comput
    > On older versions of Windows, the group policy path may say "Windows Defender Antivirus" instead of "Microsoft Defender Antivirus."
 
 4. Double-click the **Prevent users and apps from accessing dangerous websites** setting and set the option to **Enabled**. In the options section, you must specify one of the following options:
+
     - **Block** - Users can't access malicious IP addresses and domains.
-    - **Disable (Default)** - The Network protection feature won't work. Users won't be blocked from accessing malicious domains.
+    - **Disable (Default)** - The Network protection feature won't work. Users aren't blocked from accessing malicious domains.
     - **Audit Mode** - If a user visits a malicious IP address or domain, an event will be recorded in the Windows event log. However, the user won't be blocked from visiting the address.
 
    > [!IMPORTANT]
@@ -175,6 +190,7 @@ Use the following procedure to enable network protection on domain-joined comput
 4. On the **General** page, specify a name for the new policy and verify the **Network protection** option is enabled.
 
 5. On the **Network protection** page, select one of the following settings for the **Configure network protection** option:
+
    - **Block**
    - **Audit**
    - **Disabled**
@@ -215,4 +231,6 @@ Use the following procedure to enable network protection on domain-joined comput
 - [Evaluate network protection](evaluate-network-protection.md)
 
 - [Troubleshoot network protection](troubleshoot-np.md)
+
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

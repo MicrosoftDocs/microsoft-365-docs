@@ -14,13 +14,12 @@ ms.collection:
   - tier2
 ms.custom:
 description: Learn how to recognize and respond to a compromised connector in Microsoft 365.
-ms.subservice: mdo
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 search.appverid: met150
 ms.date: 6/14/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 1 and Plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
@@ -56,7 +55,7 @@ Do **all** of the following steps to regain control of the connector. Go through
 
 #### Review recent suspicious connector traffic or related messages
 
-In [Microsoft Defender for Office 365 Plan 2](defender-for-office-365.md), open the Microsoft Defender portal at <https://security.microsoft.com> and go to **Explorer**. Or, to go directly to the **Explorer** page, use <https://security.microsoft.com/threatexplorer>.
+In [Microsoft Defender for Office 365 Plan 2](mdo-about.md), open the Microsoft Defender portal at <https://security.microsoft.com> and go to **Explorer**. Or, to go directly to the **Explorer** page, use <https://security.microsoft.com/threatexplorer>.
 
 1. On the **Explorer** page, verify that the **All email** tab is selected and then configure the following options:
    - Select the date/time range.
@@ -77,7 +76,7 @@ In [Microsoft Defender for Office 365 Plan 2](defender-for-office-365.md), open 
 
     :::image type="content" source="../../media/connector-compromise-sender-ip.png" alt-text="Sender IP and your organization's on-prem IP address" lightbox="../../media/connector-compromise-sender-ip.png":::
 
-In [Microsoft Defender for Office 365 Plan 1](defender-for-office-365.md) or [Exchange Online Protection](eop-about.md), use **Alerts** and **Message trace** to look for the symptoms of connector compromise:
+In [Microsoft Defender for Office 365](mdo-about.md) or [Exchange Online Protection](eop-about.md), use **Alerts** and **Message trace** to look for the symptoms of connector compromise:
 
 1. Open the Defender portal at <https://security.microsoft.com> and go to **Incidents & alerts** \> **Alerts**. Or, to go directly to the **Alerts** page, useOpen **Suspicious connector activity** alert in <https://security.microsoft.com/alerts>.
 

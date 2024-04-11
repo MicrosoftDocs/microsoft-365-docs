@@ -41,7 +41,7 @@ If you're a home user, or you aren't subject to settings managed by a security t
 
 Here's what you see in the Windows Security app:
 
-:::image type="content" source="images/tamperprotectionturnedon.png" alt-text="Turn tamper protection turned on in Windows 10 Home" lightbox="images/tamperprotectionturnedon.png":::
+:::image type="content" source="media/tamperprotectionturnedon.png" alt-text="Turn tamper protection turned on in Windows 10 Home" lightbox="media/tamperprotectionturnedon.png":::
 
 
 > [!NOTE]
