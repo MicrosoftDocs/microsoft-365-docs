@@ -1,5 +1,5 @@
 ---
-title: Synchronize users in multitenant organizations in Microsoft 365 (Preview)
+title: Synchronize users in multitenant organizations in Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
@@ -15,14 +15,9 @@ f1.keywords:
 description: Learn how to manage user sync in multitenant organizations in Microsoft 365.
 ---
 
-# Synchronize users in multitenant organizations in Microsoft 365 (Preview)
-
-> [!NOTE]
-> Multitenant organizations in Microsoft 365 is available in [targeted release](/microsoft-365/admin/manage/release-options-in-office-365).
+# Synchronize users in multitenant organizations in Microsoft 365
 
 For users in your tenant to be able to collaborate with those in other tenants, you must synchronize your users to the other tenants.
-
-We recommend that you [set up security groups in Microsoft Entra ID](/azure/active-directory/fundamentals/how-to-manage-groups) and add the users that you want to synchronize. Note that users must be members of the security group - owners of the group aren't synchronized.
 
 There are two ways to set up user synchronization:
 
@@ -33,7 +28,7 @@ Both methods use cross-tenant synchronization in Microsoft Entra ID.
 
 If you want to synchronize the same users with all the other tenants in a multitenant organization, we recommend sharing users in the Microsoft 365 admin center. This creates the necessary configurations in Microsoft Entra ID for you.
 
-If you want to synchronize different users to different tenants, then you must configure cross-tenant synchronization directly in Microsoft Entra ID.
+If you want to synchronize different users to different tenants or synchronize Entra groups, then you must configure cross-tenant synchronization directly in Microsoft Entra ID.
 
 While you can create multiple cross-tenant synchronization configurations for a single external tenant, we recommend that you only use one for ease of administration.
 
@@ -93,7 +88,7 @@ To synchronize identities to other tenants in a multitenant organization
 1. Expand **Settings** and select **Org settings**.
 1. On the **Organization profile** tab, select **Multitenant collaboration**.
 1. Select **Share users**.
-1. Select **Select users and groups to share**.
+1. Select **Select users to share**.
 1. Choose the security group that you created, and then select **Save**.
 1. Select **Yes** to confirm.
 
@@ -122,7 +117,7 @@ To change which users are synchronized to other tenants
 1. Expand **Settings** and select **Org settings**.
 1. On the **Organization profile** tab, select **Multitenant collaboration**.
 1. Select **Share users**.
-1. Select **Edit shared users and groups**.
+1. Select **Edit shared users**.
 1. Update the users and groups that you want to sync to other tenants and then select **Save**.
 1. Select **Yes** to confirm.
 
