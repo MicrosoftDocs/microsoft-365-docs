@@ -114,7 +114,7 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
 
 1. On the DNS management page, select **+Add record**.
 
-   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-add-record.png" alt-text="Select Add record.":::
+   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-add-record.png" alt-text="Screenshot of where you select Add record to add a domain verification TXT record.":::
 
 1. Select the TXT type from the drop-down list, and type or copy and paste the values from this table.
 
@@ -124,7 +124,7 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
 
 1. Select **Save**.
 
-   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-TXT-save.png" alt-text="Select Add record.":::
+   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-TXT-save.png" alt-text="Screenshot of where you select Save to add a domain verification TXT record.":::
 
    Wait a few minutes before you continue, so that the record you just created can update across the Internet.
 
@@ -159,7 +159,7 @@ To verify the record in Microsoft 365:
 
 1. On the DNS management page, select **+Add record**.
 
-   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-add-record.png" alt-text="Select Add record.":::
+   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-add-record.png" alt-text="Screenshot of where you select Add record to add an MX record.":::
 
 1. Select the MX type from the drop-down list, and type or copy and paste the values from this table.
 
@@ -169,7 +169,7 @@ To verify the record in Microsoft 365:
 
 1. Select **Save**.
 
-   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-mx-save.png" alt-text="Select Add record.":::
+   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-mx-save.png" alt-text="Screenshot of where you select Save record to add an MX record.":::
 
 1. If there are any other MX records listed in the **MX Records** section, delete them by selecting **Edit**, and then select **Delete**.
 
@@ -191,7 +191,7 @@ To verify the record in Microsoft 365:
 
 1. On the **DNS management** page, select **+Add record**
 
-   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-add-record.png" alt-text="Select Add record.":::
+   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-add-record.png" alt-text="Screenshot of where you select Add record to add a CNAME record.":::
 
 1. Select the CNAME type from the drop-down list, and type or copy and paste the values from this table.
 
@@ -201,7 +201,7 @@ To verify the record in Microsoft 365:
 
 1. Select **Save**.
 
-   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-cname-save.png" alt-text="Select Save.":::
+   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-cname-save.png" alt-text="Screenshot of where you select Save to add a CNAME record.":::
 
 ### Add a TXT record for SPF to help prevent email spam
 
@@ -220,7 +220,7 @@ To verify the record in Microsoft 365:
 
 1. On the DNS management page, select **+Add record**.
 
-   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-add-record.png" alt-text="Select Add record.":::
+   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-add-record.png" alt-text="Screenshot of where you select Add record to add an SPF TXT record.":::
 
 1. Select the TXT type from the drop-down list, and type or copy and paste the values from this table.
 
@@ -230,7 +230,7 @@ To verify the record in Microsoft 365:
 
 1. Select **Save**.
 
-   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-TXT-save.png" alt-text="Select Save.":::
+   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-TXT-save.png" alt-text="Screenshot of where you select Save to add an SPF TXT record.":::
 
 ## Advanced option: Skype for Business
 
@@ -253,7 +253,7 @@ Only select this option if your organization uses Skype for Business for online 
 
 1. On the DNS management page, select **+Add record**
 
-   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-add-record.png" alt-text="Select Add record.":::
+   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-add-record.png" alt-text="Screenshot of where you select Add record to add an SRV record.":::
 
 1. Select the SRV type from the drop-down list, and type or copy and paste the values from this table.
 
@@ -264,7 +264,7 @@ Only select this option if your organization uses Skype for Business for online 
 
 1. Select **Save**.
 
-   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-srv-save.png" alt-text="Select Save.":::
+   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-srv-save.png" alt-text="Screenshot of where you select Save to add an SRV record.":::
 
 1. Add the other SRV record by copying the values from the second row of the table.
 
@@ -285,7 +285,7 @@ Only select this option if your organization uses Skype for Business for online 
 
 1. On the DNS management page, select **+Add record**
 
-   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-add-record.png" alt-text="Select Add record.":::
+   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-add-record.png" alt-text="Screenshot of where you select Add record to add CNAME records for Skype for Business.":::
 
 1. Select the CNAME type from the drop-down list, and type or copy and paste the values from this table.
 
@@ -296,7 +296,7 @@ Only select this option if your organization uses Skype for Business for online 
 
 1. Select the **Save**.
 
-   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-cname-save.png" alt-text="Select Save.":::
+   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-cname-save.png" alt-text="Screenshot of where you select Save to add CNAME records for Skype for Business.":::
 
 1. Add the other CNAME record by copying the values from the second row of the table.
 
@@ -321,7 +321,7 @@ This service helps you secure and remotely manage mobile devices that connect to
 
 1. On the DNS management page, select **+Add record**
 
-   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-add-record.png" alt-text="Select Add record.":::
+   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-add-record.png" alt-text="Screenshot of where you select Add record to add CNAME records for Mobile Device Management.":::
 
 1. Select the CNAME type from the drop-down list, and type or copy and paste the values from this table.
 
@@ -332,7 +332,7 @@ This service helps you secure and remotely manage mobile devices that connect to
 
 1. Select **Save**.
 
-   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-cname-save.png" alt-text="Select Save.":::
+   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-cname-save.png" alt-text="Screenshot of where you select Save to add an CNAME record for Mobile Device Management.":::
 
 1. Add the other CNAME record by copying the values from the second row of the table.
 
