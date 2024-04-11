@@ -153,7 +153,7 @@ To turn on Teams notifications and chat after the initial setup, go to **Setting
 
 :::image type="content" source="../../media/xdr/Teams-managed-response.png" alt-text="Screenshot of option to activate Teams for receiving managed response." lightbox="../../media/xdr/Teams-managed-response.png":::
 
-You can add new members to the channel by navigating to **Defender Experts team** > **More options (…)** >  **Manage team** > **Add member**.
+You can add new members to the channel by navigating to **Defender Experts team** \> **More options (...)** >  **Manage team** > **Add member**.
 
 ## Prepare your environment for the Defender Experts service
 
