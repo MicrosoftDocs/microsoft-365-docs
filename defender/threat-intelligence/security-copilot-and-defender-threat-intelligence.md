@@ -10,6 +10,7 @@ manager: dolmont
 audience: ITPro
 ms.collection:
   - Tier1
+  - security-copilot
 ms.topic: conceptual
 ms.date: 12/04/2023
 ---
@@ -48,7 +49,7 @@ This article introduces you to Copilot and includes sample prompts that can help
     ![Screenshot of the prompt bar in Microsoft Copilot for Security with the Sources icon highlighted.](media/defender-ti-and-copilot/copilot-prompts-bar-sources.png)
   
   
-    In the **Manage plugins** pop-up window that appears, confirm that the **Microsoft Defender Threat Intelligence** toggle is turned on, then close the window.
+    In the **Manage sources** pop-up window that appears, under **Plugins**, confirm that the **Microsoft Defender Threat Intelligence** toggle is turned on, then close the window.
 
     ![Screenshot of the Manage plugins pop-up window with the Microsoft Defender Threat Intelligence plugin highlighted.](media/defender-ti-and-copilot/copilot-manage-plugins.png)
 

@@ -5,13 +5,12 @@ author: chrisda
 manager: deniseb
 audience: ITPro
 ms.topic: how-to
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 ms.localizationpriority: medium
 ms.collection:
   - m365-security
   - tier2
 description: Admins can learn how to create automated simulations that contain specific techniques and payloads that launch when the specified conditions are met in Microsoft Defender for Office 365 Plan 2.
-ms.subservice: mdo
 search.appverid: met150
 ms.date: 3/14/2024
 appliesto:
