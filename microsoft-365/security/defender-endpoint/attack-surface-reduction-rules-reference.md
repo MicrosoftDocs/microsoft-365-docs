@@ -327,6 +327,11 @@ LSASS authenticates users who sign in on a Windows computer. Microsoft Defender 
 
 By default the state of this rule is set to block. In most cases, many processes make calls to LSASS for access rights that are not needed. For example, such as when the initial block from the ASR rule results in a subsequent call for a lesser privilege which subsequently succeeds. For information about the types of rights that are typically requested in process calls to LSASS, see: [Process Security and Access Rights](/windows/win32/procthread/process-security-and-access-rights).
 
+Enabling this rule will not provide additional protection if you have LSA protection enabled since both the ASR rule and LSA protection work similarly. However, when LSA protection cannot be enabled, this rule can be configured to provide equivalent protection against malware that target lsass.exe.
+
+> [!NOTE]
+> In this scenario, the ASR rule will be classified as "not applicable" on MDE Settings management in the Microsoft Defender XDR portal. 
+
 > [!NOTE]
 > The Block credential stealing from the Windows local security authority subsystem ASR rule does not support WARN mode.
 
@@ -516,6 +521,9 @@ This rule prevents malware from abusing WMI to attain persistence on a device.
 > File and folder exclusions don't apply to this attack surface reduction rule.
 
 Fileless threats employ various tactics to stay hidden, to avoid being seen in the file system, and to gain periodic execution control. Some threats can abuse the WMI repository and event model to stay hidden.
+
+> [!NOTE]
+> if CcmExec.exe (SCCM Agent) is detected on the device, the ASR rule will be classified as "not applicable" on MDE Settings management in the Microsoft Defender XDR portal. 
 
 Intune name: `Persistence through WMI event subscription`
 
