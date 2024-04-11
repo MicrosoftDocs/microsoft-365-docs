@@ -17,7 +17,7 @@ ms.localizationpriority:  medium
 description: Learn how to view and edit backup policies in Microsoft 365 Backup.
 ---
 
-# View and edit backup policies in Microsoft 365 Backup (Preview)
+# View and edit backup policies in Microsoft 365 Backup
 
 > [!NOTE]
 > This feature is currently in preview and subject to change.
