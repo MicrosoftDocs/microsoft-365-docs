@@ -18,9 +18,10 @@ ms.collection:
 - Adm_TOC
 - basic-mobility-security
 ms.custom:
-  - AdminSurgePortfolio
-  - has-azure-ad-ps-ref
-  - azure-ad-ref-level-one-done
+- AdminSurgePortfolio
+- has-azure-ad-ps-ref
+- azure-ad-ref-level-one-done
+- basic-mobility-security
 search.appverid:
 - MET150
 description: "For devices you can't manage with Basic Mobility and Security, block Exchange ActiveSync app access to email and use Microsoft Graph PowerShell to get details about org devices."

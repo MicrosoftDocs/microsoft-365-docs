@@ -22,6 +22,7 @@ ms.custom:
 - VSBFY23
 - AdminSurgePortfolio
 - AdminTemplateSet
+- basic-mobility-security
 search.appverid:
 - MET150
 description: "Manage and secure mobile devices connected to your Microsoft 365 organization by setting up and using Basic Mobility and Security."

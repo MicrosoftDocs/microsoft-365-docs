@@ -21,6 +21,7 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkEXCHANGE
+- basic-mobility-security
 description: "Use Basic Mobility and Security to create device policies that protect your organization information."
 ---
 

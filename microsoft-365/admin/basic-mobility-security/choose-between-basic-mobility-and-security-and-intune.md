@@ -20,6 +20,7 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
+- basic-mobility-security
 description: "Basic Mobility and Security is part of the Microsoft 365 plans, while Microsoft Intune is a standalone product included with certain Microsoft 365 plans."
 ---
 
