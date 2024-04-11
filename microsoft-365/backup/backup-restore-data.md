@@ -22,7 +22,7 @@ description: Learn how to restore data using restore points and express restore 
 > [!NOTE]
 > This feature is currently in preview and subject to change.
 
-Once you back up your data, you might need to restore the data in case of an accidental deletion, ransomware attack, or other event. The Restore feature in Microsoft 365 Backup is created to help you restore backed up data.
+Once you back up your data, you might need to restore the data if there was an accidental deletion, ransomware attack, or other event. The Restore feature in Microsoft 365 Backup is created to help you restore backed up data.
 
 As part of restoring data from backup, admin needs to choose a *restore point* manually or from a recommended *express restore point* by the tool.
 
@@ -52,7 +52,7 @@ The restore point frequency, also known as the [recovery point objective](backup
 
 ## Restore data from backup for OneDrive, SharePoint, and Exchange
 
-Once you back up your data, you might need to restore the data in case of an accidental deletion, ransomware attack, or other event. The restore feature in Microsoft 365 Backup is created to help you restore backed up data.
+Once you back up your data, you might need to restore the data if there was an accidental deletion, ransomware attack, or other event. The restore feature in Microsoft 365 Backup is created to help you restore backed up data.
 
 > [!NOTE]
 > We recommend choosing an express restore point for full account, site, or mailbox restores as it will provide the fastest restore experience.
@@ -83,7 +83,7 @@ Follow these steps to restore data backed up for OneDrive.
 
     For example, assume backup is taken October 2, 2023 8:00 AM and October 2, 10:00 AM PST. If you select date and time as October 2, 2023 9:00 AM PST, Microsoft 365 Backup will restore the OneDrive and its content to its state on October 2, 2023 8:00 AM PST.
 
-5. On the **Confirm restore points** page, you'll be presented with a list of available express restore points that will restore with better performance than non-express restore points. We highly recommend that you choose an express restore point all else equal.
+5. On the **Confirm restore points** page, you're presented with a list of available express restore points that will restore with better performance than non-express restore points. We highly recommend that you choose an express restore point all else equal.
 
     ![Screenshot showing the Confirm restore points page for OneDrive.](../media/m365-backup/backup-onedrive-confirm-restore.png)
 
@@ -104,7 +104,7 @@ Follow these steps to restore data backed up for OneDrive.
     b. **Create new SharePoint site and restore to there** option
         - The entire OneDrive will restore to a new SharePoint site where you can then copy or move data into the original OneDrive to create a roll-forward type of restore and avoid overwriting currently healthy data.
 
-9. On the **Review and Finish** page, you'll be asked to review and finish all your choices. If everything looks as you want it, select **Restore OneDrive accounts**.
+9. On the **Review and Finish** page, you're asked to review and finish all your choices. If everything looks as you want it, select **Restore OneDrive accounts**.
 
     ![Screenshot showing the Review and finish page for OneDrive.](../media/m365-backup/backup-onedrive-review-finish.png)
 
@@ -147,13 +147,13 @@ Follow these steps to restore data backed up for SharePoint.
     ![Screenshot showing the Select destination page and options for SharePoint.](../media/m365-backup/backup-sharepoint-set-destination.png)
 
     a. **Restore to original sites** option
-        - The entire original site is replaced by the backed up version chosen based on the restore point.
+        - The entire original site is replaced by the backed-up version chosen based on the restore point.
         - File and folder permissions and all metadata state are also reverted to the selected date and time.
 
     b. **Create new SharePoint site and restore to there** option
         - The entire site will restore to a new SharePoint site where you can then copy or move data into the original site or a different site to create a roll-forward type of restore and avoid overwriting currently healthy data.
 
-9. On the **Review and Finish** page, you'll be asked to review and finish your choices. If everything looks as you want it, select **Restore sites**.
+9. On the **Review and Finish** page, you're asked to review and finish your choices. If everything looks as you want it, select **Restore sites**.
 
     ![Screenshot showing the Review and finish page for SharePoint.](../media/m365-backup/backup-sharepoint-review-finish.png)
   
@@ -181,9 +181,9 @@ Follow these steps to restore data backed up for Exchange.
 
     ![Screenshot showing the Content scope page with the All emails, notes, contacts, calendars, and tasks option selected.](../media/m365-backup/backup-exchange-content-scope-all.png)
 
-    For example, the last time the end user remembers seeing their mailbox in a “good state” was October 2, 2023 8:00 AM. However, on October 2, 2023 9:00 AM they saw all of their emails were encrypted (possible ransomware attack), choose the last known good time as October 2, 2023 8:00 AM.
+    For example, the last time the end user remembers seeing their mailbox in a "good state" was October 2, 2023 8:00 AM. However, on October 2, 2023 9:00 AM they saw all of their emails were encrypted (possible ransomware attack), choose the last known good time as October 2, 2023 8:00 AM.
 
-2. Now you'll be asked to confirm the restore point in time to which the data will be restored from backup. The page informs you whether there are any backups to restore from the LKG time chosen. If you see no errors, you can proceed. If there are errors, you have the option to choose another LKG time. Select **Next**.
+2. Now you're asked to confirm the restore point in time to which the data will be restored from backup. The page informs you whether there are any backups to restore from the LKG time chosen. If you see no errors, you can proceed. If there are errors, you have the option to choose another LKG time. Select **Next**.
 
 3. The destination of restored items can be chosen from two options, then select **Next**.
 
@@ -210,7 +210,7 @@ Follow these steps to restore data backed up for Exchange.
 
     Choose the time period, then filter and value that you want to do a granular search on to find matching items.
   
-2. Now you'll be asked to confirm the restore point in time to which the data will be restored from backup. If the restore point is what you want, select **Next**.
+2. Now you're asked to confirm the restore point in time to which the data will be restored from backup. If the restore point is what you want, select **Next**.
 
 3. The destination of restored items can be chosen from two options, then select **Next**.
 
