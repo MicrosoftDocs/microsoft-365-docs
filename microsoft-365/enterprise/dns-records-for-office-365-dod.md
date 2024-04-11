@@ -32,13 +32,13 @@ As part of onboarding to Office 365 DoD, you need to add your SMTP and SIP domai
 
 [!INCLUDE [Azure AD PowerShell deprecation note](~/../microsoft-365/reusable-content/msgraph-powershell/includes/aad-powershell-deprecation-note.md)]
 
-Once you have your domains added to your tenant and validated, use the following guidance to add the appropriate DNS records for the services. You may need to modify the below table to fit your organization’s needs with respect to the inbound MX records and any existing Exchange Autodiscover records you have in place. We strongly recommend coordinating these DNS records with your messaging team to avoid any outages or mis-delivery of email.
+Once you have your domains added to your tenant and validated, use the following guidance to add the appropriate DNS records for the services below. You may need to modify the below table to fit your organization’s needs with respect to one or more inbound MX records and any existing Exchange Autodiscover records you have in place. We strongly recommend coordinating these DNS records with your messaging team to avoid any outages or mis-delivery of email.
 
 ## Exchange Online
 
 | Type | Priority | Host name | Points to address or value | TTL |
 | --- | --- | --- | --- | --- |
-| MX | 0 | @ | *tenant*.mail.protection.office365.us (see below for more details) | One Hour |
+| MX | 0 | @ | *tenant*.mail.protection.office365.us (for more information, see below) | One Hour |
 | TXT | - | @ | v=spf1 include:spf.protection.office365.us -all | One Hour |
 | CNAME | - | autodiscover | autodiscover-dod.office365.us | One Hour |
 
@@ -52,20 +52,12 @@ The MX record value for your accepted domains follows a standard format as noted
 
 For example, if your tenant name is contoso.onmicrosoft.us, you’d use **contoso.mail.protection.office365.us** as the value for your MX record.
 
-## Skype for Business Online
-
-### CNAME records
-
-| Type | Host name | Points to address or value | TTL |
-| --- | --- | --- | --- |
-| CNAME | sip | sipdir.online.dod.skypeforbusiness.us | One Hour |
-| CNAME | lyncdiscover | webdir.online.dod.skypeforbusiness.us | One Hour | 
+## External DNS records required for Teams
 
 ### SRV records
 
 | Type | Service | Protocol | Port | Weight | Priority | Name | Target | TTL |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| SRV | \_sip | \_tls | 443 | 1 | 100 | @ | sipdir.online.dod.skypeforbusiness.us | One Hour |
 | SRV | \_sipfederationtls | \_tcp | 5061 | 1 | 100 | @ | sipfed.online.dod.skypeforbusiness.us | One Hour |
 
 ## Other DNS records
