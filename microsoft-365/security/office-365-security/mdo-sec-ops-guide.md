@@ -222,10 +222,10 @@ Defender for Office 365 exposes most of its data through a set of programmatic A
 - [Incident API](/microsoft-365/security/defender/api-incident): Defender for Office 365 alerts and automated investigations are active parts of incidents in Microsoft Defender XDR. Security teams can focus on what's critical by grouping the full attack scope and all impacted assets together.
 
 - [Event streaming API](/microsoft-365/security/defender/streaming-api): Allows shipping of real-time events and alerts into a single data stream as they happen. Supported event types in Defender for Office 365 include:
-  - [EmailEvents](/microsoft-365/security/defender/advanced-hunting-emailevents-table)
-  - [EmailUrlInfo](/microsoft-365/security/defender/advanced-hunting-emailurlinfo-table)
   - [EmailAttachmentInfo](/microsoft-365/security/defender/advanced-hunting-emailattachmentinfo-table)
+  - [EmailEvents](/microsoft-365/security/defender/advanced-hunting-emailevents-table)
   - [EmailPostDeliveryEvents](/microsoft-365/security/defender/advanced-hunting-emailpostdeliveryevents-table)
+  - [EmailUrlInfo](/microsoft-365/security/defender/advanced-hunting-emailurlinfo-table)
 
   The events contain data from processing all email (including intra-org messages) in the last 30 days.
 
