@@ -46,7 +46,7 @@ For information on admin settings for Loop components in Teams, see [Settings ma
 
 ## Loop components and .loop files
 
-Loop components created in Teams and Outlook are just .loop (earlier versions of Loop-created .fluid) files stored in the creator's OneDrive. A file being in OneDrive means that users can create, discover, and manage Loop components (.loop files) as easily as any Office document.
+Loop components created in Teams and Outlook are just .loop files (earlier versions of Loop-created .fluid) stored in the creator's OneDrive. A file being in OneDrive means that users can create, discover, and manage Loop components (.loop files) as easily as any Office document.
 
 ## How are .loop files stored?
 
