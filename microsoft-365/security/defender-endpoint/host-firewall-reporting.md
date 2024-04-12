@@ -31,15 +31,16 @@ If you're a Global or security administrator, you can now host firewall reportin
 
 ## What do you need to know before you begin?
 
-- You must be running Windows 10 or later, Windows Server 2012 R2 or later.
-     > [!NOTE]
-     > For Windows2012 R2 and Windows Server 2016 to appear in Firewall reports, these devices must be onboarded using the modern unified solution package. For more information, see [New functionality in the modern unified solution for Windows Server 2012 R2 and 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution).
-- To onboard devices to the Microsoft Defender for Endpoint service, see [here](onboard-configure.md).
-- For <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a> to start receiving the data, you must enable **Audit Events** for Windows Defender Firewall with Advanced Security:
+- Your devices must be running Windows 10 or later, or Windows Server 2012 R2 or later. For Windows Server 2012 R2 and Windows Server 2016 to appear in firewall reports, these devices must be onboarded using the modern unified solution package. For more information, see [New functionality in the modern unified solution for Windows Server 2012 R2 and 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution).
+
+- To onboard devices to the Microsoft Defender for Endpoint service, see [onboarding guidance](onboard-configure.md).
+
+- For the [Microsoft Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2077139) to start receiving data, you must enable **Audit Events** for Windows Defender Firewall with Advanced Security. See the following articles:
+
   - [Audit Filtering Platform Packet Drop](/windows/security/threat-protection/auditing/audit-filtering-platform-packet-drop)
   - [Audit Filtering Platform Connection](/windows/security/threat-protection/auditing/audit-filtering-platform-connection)
-- Enable these events by using Group Policy Object Editor, Local Security Policy, or the auditpol.exe commands. For more information, see [here](/windows/win32/fwp/auditing-and-logging).
-  - The two PowerShell commands are:
+
+- Enable these events by using Group Policy Object Editor, Local Security Policy, or the auditpol.exe commands. For more information, see [documentation about auditing and logging](/windows/win32/fwp/auditing-and-logging). The two PowerShell commands are as follows:
     - `auditpol /set /subcategory:"Filtering Platform Packet Drop" /failure:enable`
     - `auditpol /set /subcategory:"Filtering Platform Connection" /failure:enable`
 
@@ -79,24 +80,25 @@ catch {
 ## The process
 
 > [!NOTE]
-> Make sure to follow the instructions from the section above and properly configure your devices for the early preview participation.
+> Make sure to follow the instructions from previous the section and properly configure your devices to participate in the preview program.
 
-- After enabling the events, Microsoft Defender XDR will start to monitor the data, which includes: 
+- After events are enabled, Microsoft Defender for Endpoint begins to monitor data, which includes: 
    - Remote IP
    - Remote Port
    - Local Port
    - Local IP
    - Computer Name
    - Process across inbound and outbound connections
-- Admins can now see Windows host firewall activity [here](https://security.microsoft.com/firewall).
-   - Additional reporting can be facilitated by downloading the [Custom Reporting script](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Firewall) to monitor the Windows Defender Firewall activities using Power BI.
+
+- Admins can now see Windows host firewall activity [here](https://security.microsoft.com/firewall). Additional reporting can be facilitated by downloading the [Custom Reporting script](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Firewall) to monitor the Windows Defender Firewall activities using Power BI.
+
    - It can take up to 12 hours before the data is reflected.
 
 ## Supported scenarios
 
 - [Firewall reporting](#firewall-reporting)
-- [From "Computers with a blocked connection" to device](#from-computers-with-a-blocked-connection-to-device)
-- [Drill into advanced hunting (preview refresh)](#drill-into-advanced-hunting-preview-refresh)
+- [From "Computers with a blocked connection" to device](#from-computers-with-a-blocked-connection-to-device) (requires Defender for Endpoint Plan 2)
+- [Drill into advanced hunting (preview refresh)](#drill-into-advanced-hunting-preview-refresh) (requires Defender for Endpoint Plan 2)
 
 ### Firewall reporting
 
@@ -107,6 +109,9 @@ Here are some examples of the firewall report pages. Here you'll find a summary 
 These reports can also be accessed by going to **Reports** > **Security Report** > **Devices** (section) located at the bottom of the **Firewall Blocked Inbound Connections** card.
 
 ### From "Computers with a blocked connection" to device
+
+> [!NOTE]
+> This feature requires Defender for Endpoint Plan 2.
 
 Cards support interactive objects. You can drill into the activity of a device by clicking on the device name, which will launch the Microsoft Defender portal in a new tab, and take you directly to the **Device Timeline** tab.
 
@@ -120,7 +125,10 @@ After clicking on the **Filters** button on the upper right-hand corner of the v
 
 ### Drill into advanced hunting (preview refresh)
 
-Firewall reports support drilling from the card directly into **Advanced Hunting** by clicking the **Open Advanced hunting** button. The query will be pre-populated.
+> [!NOTE]
+> This feature requires Defender for Endpoint Plan 2.
+
+Firewall reports support drilling from the card directly into **Advanced Hunting** by clicking the **Open Advanced hunting** button. The query is prepopulated.
 
 :::image type="content" source="media/firewall-reporting-advanced-hunting.png" alt-text="The Open Advanced hunting button" lightbox="media/firewall-reporting-advanced-hunting.png":::
 
