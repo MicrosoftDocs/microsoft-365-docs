@@ -45,7 +45,7 @@ If you're a Global or security administrator, you can now host firewall reportin
     - `auditpol /set /subcategory:"Filtering Platform Packet Drop" /failure:enable`
     - `auditpol /set /subcategory:"Filtering Platform Connection" /failure:enable`
 
-   The following code sample provides an example of hwo to use the commands:
+   Here's an example query:
 
    ```powershell
    param (
