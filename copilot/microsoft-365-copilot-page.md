@@ -79,13 +79,13 @@ This control allows you to control how non-Microsoft apps and first party apps c
 
 This control allows you to enable or disable Copilot’s ability to access the public web to get the latest information available when responding to prompts. Note that this is a separate control from Copilot with commercial data protection. Learn more about [how to Manage access to web content in Copilot for Microsoft 365 responses](manage-public-web-access.md).
 
-### Data Security and Compliance
+### Data, Security, and Compliance
 
 This link navigates you to the Microsoft Purview compliance portal where you can manage sensitivity labels, retention policies, Copilot interactions, audit records for Copilot, search Copilot interactions, and configure how Copilot for Microsoft 365 interacts and references protected documents. Learn more about [how to protect and manage Microsoft Copilot for Microsoft 365 interactions with Microsoft Purview](/purview/ai-microsoft-purview).
 
 ### Microsoft Copilot for Security
 
-This link directs you to the Copilot for Security portal to manage settings. Copilot for Security is a separate product and license from Copilot for Microsoft 365. If purchased, you can use this link to navigate to Copilot for Security settings page. To learn more, see [Copilot for Security](/security-copilot/).
+This link directs you to the Copilot for Security portal to manage settings. Copilot for Security is a separate product and license from Copilot for Microsoft 365. If purchased, you can use this link to navigate to Copilot for Security settings page. To learn more, see [Copilot for Security](/copilot/security/).
 
 ### Copilot for Microsoft 365 feedback logs
 
