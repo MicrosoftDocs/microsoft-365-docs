@@ -92,7 +92,7 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
 
 1. Under **Type**, select **TXT** from the drop-down list.
 
-    :::image type="content" source="../../media/dns-webcom/webcom-domains-TXT.png" alt-text="Select TXT from the Type drop-down list.":::
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-TXT.png" alt-text="Select TXT from the Type drop-down list for the domain verification TXT record.":::
 
 1. Select, or copy and paste, the values from the following table.
 
@@ -216,7 +216,7 @@ To verify the record in Microsoft 365:
 
 1. Under **Type**, select **TXT** from the drop-down list.
 
-    :::image type="content" source="../../media/dns-webcom/webcom-domains-TXT.png" alt-text="Select TXT from the Type drop-down list.":::
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-TXT.png" alt-text="Select TXT from the Type drop-down list for the SPF TXT record.":::
 
 1. Select, or copy and paste, the values from the following table.
 
