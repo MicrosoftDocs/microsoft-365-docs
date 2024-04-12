@@ -15,7 +15,7 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: reference
-ms.date: 01/16/2024
+ms.date: 04/11/2024
 ---
 
 # DeviceRegistryEvents
@@ -48,9 +48,9 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `PreviousRegistryValueName` | `string` | Original name of the registry value before it was modified |
 | `PreviousRegistryValueData` | `string` | Original data of the registry value before it was modified |
 | `InitiatingProcessAccountDomain` | `string` | Domain of the account that ran the process responsible for the event |
-| `InitiatingProcessAccountName` | `string` | User name of the account that ran the process responsible for the event |
+| `InitiatingProcessAccountName` | `string` | User name of the account that ran the process responsible for the event; if the device is registered in Microsoft Entra ID, the Entra ID user name of the account that ran the process responsible for the event might be shown instead |
 | `InitiatingProcessAccountSid` | `string` | Security Identifier (SID) of the account that ran the process responsible for the event |
-| `InitiatingProcessAccountUpn` | `string` | User principal name (UPN) of the account that ran the process responsible for the event |
+| `InitiatingProcessAccountUpn` | `string` | User principal name (UPN) of the account that ran the process responsible for the event; if the device is registered in Microsoft Entra ID, the Entra ID UPN of the account that ran the process responsible for the event might be shown instead |
 | `InitiatingProcessAccountObjectId` | `string` | Microsoft Entra object ID of the user account that ran the process responsible for the event |
 | `InitiatingProcessSHA1` | `string` | SHA-1 of the process (image file) that initiated the event |
 | `InitiatingProcessSHA256` | `string` | SHA-256 of the process (image file) that initiated the event. This field is usually not populated — use the SHA1 column when available. |

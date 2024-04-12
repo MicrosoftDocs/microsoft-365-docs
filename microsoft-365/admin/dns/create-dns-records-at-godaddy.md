@@ -89,7 +89,7 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
 
 4. Select **TXT** option from the filter box.
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-add-txt-records.png" alt-text="Select TXT from the Type drop-down list.":::
+   :::image type="content" source="../../media/dns-godaddy/godaddy-add-txt-records.png" alt-text="Select TXT from the Type drop-down list for the domain verification TXT record.":::
 
 5. In the boxes for the new record, type or copy and paste the values from the table.
 
@@ -204,7 +204,7 @@ To verify the record in Microsoft 365:
 
 4. Choose **TXT** from the drop-down list.
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-TXT-save.png" alt-text="Select TXT from the Type drop-down list.":::
+   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-TXT-save.png" alt-text="Select TXT from the Type drop-down list for the SPF TXT record.":::
 
 5. In the boxes for the new record, type or copy and paste the following values.
 
