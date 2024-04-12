@@ -3,9 +3,9 @@ title: "Restore a deleted Microsoft 365 group"
 ms.reviewer: rahulnayak
 ms.date: 02/18/2020
 f1.keywords: CSH
-ms.author: mikeplum
-author: MikePlumleyMSFT
-manager: serdars
+ms.author: jtremper
+author: jacktremper
+manager: pamgreen
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business

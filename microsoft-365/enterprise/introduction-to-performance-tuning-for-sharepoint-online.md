@@ -28,13 +28,13 @@ This article explains what specific aspects you need to consider when designing 
 
 The following broad metrics for SharePoint Online provide real-world data about performance:
   
-- How fast pages load
+- The speed at which pages load
     
-- How many round-trips required per page
+- The number of round-trips required per page
     
-- Issues with the service
+- The issues with the service
     
-- Other things that cause performance degradation
+- The other things that cause performance degradation
     
 ### Conclusions reached because of the data
 
@@ -48,19 +48,19 @@ The data tells us:
     
 - The slowest 1% of SharePoint Online pages take more than 5,000 milliseconds to load.
     
-One simple benchmark test you can use would be to measure performance by comparing the load time of your own portal against the load time of the OneDrive for Business home page as it uses few customized features. This will often be the first step Support will ask you to complete when troubleshooting network performance issues.
+One simple benchmark test you can use would be to measure performance by comparing the load time of your own portal against the load time of the OneDrive for Business home page as it uses few customized features. This step is often the first step Support asks you to complete when troubleshooting network performance issues.
   
 ## Use a standard user account when checking performance
 
 A Site Collection Administrator, Site Owner, Editor, or Contributor belong to another security groups, have more permissions, and therefore have extra elements that SharePoint loads on a page.
   
-This is applicable to SharePoint on-premises and SharePoint Online but in an on-premises scenario the differences will not be as easily noticed as in SharePoint Online.
+This scenario is applicable to SharePoint on-premises and SharePoint Online but in an on-premises scenario the differences can't be as easily noticed as in SharePoint Online.
   
-In order to correctly evaluate how a page will perform for users, you should use a standard user account to avoid loading the authoring controls and extra traffic related to security groups.
+In order to correctly evaluate how a page performs for users, you should use a standard user account to avoid loading the authoring controls and extra traffic related to security groups.
   
 ## Connection categories for performance tuning
 
-You can categorize the connections between the server and the user into three main components. Consider these when designing SharePoint Online pages for insight into load times.
+You can categorize the connections between the server and the user into three main components. Consider these components when designing SharePoint Online pages for insight into load times.
   
 - **Server** The servers that Microsoft hosts in datacenters.
     
@@ -68,7 +68,7 @@ You can categorize the connections between the server and the user into three ma
     
 - **Browser** Where the page is loaded.
     
-Within these three connections there are typically five reasons that cause 95% of slow pages. Each of these reasons is discussed in this article:
+Within these three connections, there are typically five reasons that cause 95% of slow pages. Each of these reasons is discussed in this article:
   
 - Navigation issues
     
@@ -84,7 +84,7 @@ Within these three connections there are typically five reasons that cause 95% o
 
 Many of the issues that affect performance with SharePoint on-premises also apply to SharePoint Online.
   
-As you would expect, you have far more control over how servers perform with on-premises SharePoint. With SharePoint Online things are a little different. The more work you make a server do, the longer it takes to render a page. With SharePoint, the biggest culprits in this respect are complex pages with multiple web parts.
+As you would expect, you have far more control over how servers perform with on-premises SharePoint. With SharePoint Online, things are a little different. The more work you make a server do, the longer it takes to render a page. With SharePoint, the biggest culprits in this respect are complex pages with multiple web parts.
   
 SharePoint Server on-premises
   
@@ -94,7 +94,7 @@ SharePoint Online
   
 ![Screenshot of server online.](../media/46b27ded-d8a4-4287-b3e0-2603a764b8f8.png)
   
-With SharePoint Online, certain page requests may actually end up calling multiple servers. You could end up with a matrix of requests between servers for an individual request. These interactions are expensive from a page load perspective and will make things slow.
+With SharePoint Online, certain page requests might actually end up calling multiple servers. You could end up with a matrix of requests between servers for an individual request. These interactions are expensive from a page load perspective and make things slow.
   
 Examples of these server-to-server interactions are:
   
@@ -102,11 +102,11 @@ Examples of these server-to-server interactions are:
     
 - Web to application servers
     
-The other thing that can slow down server interactions is cache misses. Unlike on-premises SharePoint, there is a slim chance that you will hit the same server for a page that you have visited previously; this makes object caching obsolete.
+The other thing that can slow down server interactions is cache misses. Unlike on-premises SharePoint, there's a slim chance that you would hit the same server for a page that you visited previously; this makes object caching obsolete.
   
 ### Network connection
 
-With on-premises SharePoint that doesn't make use of a WAN, you may use a high-speed connection between datacenter and end users. Generally, things are easy to manage from a network perspective.
+With on-premises SharePoint that doesn't make use of a WAN, you can use a high-speed connection between datacenter and end users. Generally, things are easy to manage from a network perspective.
   
 With SharePoint Online, there are a few more factors to consider; for example:
   
@@ -114,9 +114,9 @@ With SharePoint Online, there are a few more factors to consider; for example:
     
 - The Internet
     
-- The ISP
+- The Internet Service Provider (ISP)
     
-Regardless of which version of SharePoint (and which network) you are using, things that will typically cause the network to be busy include:
+Regardless of which version of SharePoint (and which network) you're using, things that typically cause the network to be busy include:
   
 - Large payload
     
@@ -124,17 +124,17 @@ Regardless of which version of SharePoint (and which network) you are using, thi
     
 - Large physical distance to the server
     
-One feature that you can use in SharePoint Online is the Microsoft CDN (Content Delivery Network). A CDN is basically a distributed collection of servers deployed across multiple datacenters. With a CDN, content on pages can be hosted on a server close to the client even if the client is far away from the originating SharePoint Server. Microsoft will be using this more in the future to store local instances of pages that cannot be customized, for example the SharePoint Online admin home page. For more information about CDNs, see [Content delivery networks](content-delivery-networks.md).
+One feature that you can use in SharePoint Online is the Microsoft CDN (Content Delivery Network). A CDN is basically a distributed collection of servers deployed across multiple datacenters. With a CDN, content on pages can be hosted on a server close to the client even if the client is far away from the originating SharePoint Server. Microsoft will be using this feature more in the future to store local instances of pages that can't be customized, for example the SharePoint Online admin home page. For more information about CDNs, see [Content delivery networks](content-delivery-networks.md).
   
-Something that you need to be aware of but may not be able to do much about is the connection speed of your ISP. A simple speed test tool will tell you the connection speed.
+Something that you need to be aware of but have no control over is the connection speed of your ISP. A simple speed test tool tells you the connection speed.
   
 ### Browser connection
 
 There are a few factors to consider with web browsers from a performance perspective.
   
-Visiting complex pages will affect performance. Most browsers only have a small cache (around 90 MB), while the average web page is typically around 1.6 MB. This doesn't take long to get used up.
+Visiting complex pages affects performance. Most browsers only have a small cache (around 90 MB), while the average web page is typically around 1.6 MB, which doesn't take long to get used up.
   
-Bandwidth may also be an issue. For example, if a user is watching videos in another session, this will affect the performance of your SharePoint page. While you can't prevent users from streaming media, you can control the way a page will load for users.
+Bandwidth can also be an issue. For example, if a user is watching videos in another session, it affects the performance of your SharePoint page. While you can't prevent users from streaming media, you can control the way a page loads for users.
   
 Check out the following articles for different SharePoint Online page customization techniques and other best practices to help you achieve optimal performance.
   

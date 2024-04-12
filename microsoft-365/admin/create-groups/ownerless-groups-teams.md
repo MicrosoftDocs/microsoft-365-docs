@@ -3,9 +3,9 @@ title: "Manage ownerless Microsoft 365 groups and teams"
 ms.reviewer: rahulnayak
 ms.date: 04/04/2022
 f1.keywords: NOCSH
-ms.author: mikeplum
-author: MikePlumleyMSFT
-manager: serdars
+ms.author: jtremper
+author: jacktremper
+manager: pamgreen
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
