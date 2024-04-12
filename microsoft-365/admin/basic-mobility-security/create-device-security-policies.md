@@ -119,7 +119,7 @@ If you want to exclude some people from conditional access checks on their mobil
 
 When you apply a policy to user devices, the impact on each device varies somewhat among device types. See the following table for examples of the impact of policies on different devices.
 
-|**Security Policy**|**Android**|**Samsung KNOX**|**iOS**|**Notes**|
+| Security Policy | Android | Samsung KNOX | iOS | Notes |
 |:-----|:-----|:-----|:-----|:-----|
 |Require encrypted backup|No|Yes|Yes|iOS encrypted backup required.|
 |Block cloud backup|Yes|Yes|Yes|Block Google backup on Android (grayed out), cloud backup on supervised iOS.|
@@ -137,7 +137,7 @@ When you apply a policy to user devices, the impact on each device varies somewh
 
 When you delete a policy or remove a user from a group to which the policy was deployed, the policy settings, Microsoft 365 email profile and cached emails might be removed from the user's device. See the following table to see what is removed for the different device types.
 
-|**What's removed**|**iOS**|**Android (including Samsung KNOX**|
+| What's removed | iOS | Android (including Samsung KNOX) |
 |:-----|:-----|:-----|
 |Managed email profiles<sup>1</sup>|Yes|No|
 |Block cloud backup|Yes|No|
