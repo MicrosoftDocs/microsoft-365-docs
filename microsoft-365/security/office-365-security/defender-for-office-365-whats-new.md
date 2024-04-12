@@ -50,7 +50,7 @@ For more information on what's new with other Microsoft Defender security produc
 
 ## February 2024
 
-- **Hunting and responding to QR code-based attacks**: Security teams will now be able to see the URLs extracted from QR codes with "QR code" as URL source in Email Entity URL tab, and "QRCode" in "UrlLocation" column of EmailUrlInfo table in Advanced Hunting. Users can also filter for emails having URLs embedded within QR codes using "URL Source" filter in Threat Explorer which now supports "QR code" option.
+- **Hunting and responding to QR code-based attacks**: Security teams are now able to see the URLs extracted from QR codes with **QR code** as URL source on the **URL** tab of the [Email entity page](mdo-email-entity-page.md), and **QRCode** in the **UrlLocation** column of **EmailUrlInfo** table in [Advanced Hunting](../defender/advanced-hunting-overview.md). You can also filter for email with URLs embedded within QR codes using the **URL Source** filter value **QR code** in the **All email**, **Malware**, and **Phish** views in [Threat Explorer (Explorer)](threat-explorer-real-time-detections-about.md).
 
 ## January 2024
 
@@ -167,7 +167,7 @@ For more information on what's new with other Microsoft Defender security produc
 
 ## July 2022
 
-- [Introducing actions into the email entity page](mdo-email-entity-page.md): Admins can take preventative, remediation, and submission actions from the email entity page.
+- [Introducing actions into the Email entity page](mdo-email-entity-page.md): Admins can take preventative, remediation, and submission actions from the Email entity page.
 
 ## June 2022
 
@@ -177,7 +177,7 @@ For more information on what's new with other Microsoft Defender security produc
 
 - [Submit user reported messages to Microsoft for analysis](submissions-admin.md#submit-user-reported-messages-to-microsoft-for-analysis): Configure a reporting mailbox to intercept user-reported messages without sending the messages to Microsoft for analysis.
 
-- View the associated alerts for [user reported messages](submissions-admin.md#actions-for-user-reported-messages-in-defender-for-office-365-plan-2) and [admin submissions](submissions-admin.md#actions-for-admin-submissions-in-defender-for-office-365-plan-2): View the corresponding alert for each user reported phish message and admin email submission.
+- View the associated alerts for [user reported messages](submissions-admin.md#actions-for-user-reported-messages-in-defender-for-office-365) and [admin submissions](submissions-admin.md#actions-for-admin-submissions-in-defender-for-office-365): View the corresponding alert for each user reported phishing message and admin email submission.
 
 - [Configurable impersonation protection custom users and domains and increased scope within Preset policies](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/configurable-impersonation-protection-and-scope-for-preset/ba-p/3294459):
   - (Choose to) Apply Preset Strict/Standard policies to entire organization and avoid the hassle of selecting specific recipient users, groups, or domains, thereby securing all recipient users of your organization.
