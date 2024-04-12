@@ -1,7 +1,7 @@
 ---
 title: Require conditional access for people outside your organization
-ms.author: mikeplum
-author: MikePlumleyMSFT
+ms.author: jtremper
+author: jacktremper
 manager: pamgreen
 ms.date: 12/08/2023
 audience: ITPro
