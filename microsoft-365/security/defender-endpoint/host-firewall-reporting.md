@@ -41,6 +41,7 @@ If you're a Global or security administrator, you can now host firewall reportin
   - [Audit Filtering Platform Connection](/windows/security/threat-protection/auditing/audit-filtering-platform-connection)
 
 - Enable these events by using Group Policy Object Editor, Local Security Policy, or the auditpol.exe commands. For more information, see [documentation about auditing and logging](/windows/win32/fwp/auditing-and-logging). The two PowerShell commands are as follows:
+
     - `auditpol /set /subcategory:"Filtering Platform Packet Drop" /failure:enable`
     - `auditpol /set /subcategory:"Filtering Platform Connection" /failure:enable`
 
