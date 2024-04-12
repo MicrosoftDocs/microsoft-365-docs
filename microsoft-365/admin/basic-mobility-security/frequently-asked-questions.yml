@@ -1,7 +1,7 @@
 ### YamlMime:FAQ
 metadata:
   ms.date: 10/25/2023
-  title: "Basic Mobility and Security frequently-asked questions (FAQs)"
+  title: "Basic Mobility and Security frequently asked questions (FAQs)"
   f1.keywords:
   - NOCSH
   ms.author: kwekua
@@ -24,8 +24,8 @@ metadata:
   - basic-mobility-security
   search.appverid:
   - MET150
-  description: "Frequently-asked questions about Basic Mobility and Security."
-title: Basic Mobility and Security frequently-asked questions (FAQs)
+  description: "Frequently asked questions about Basic Mobility and Security."
+title: Basic Mobility and Security frequently asked questions (FAQs)
 summary: This article contains frequently asked questions about Basic Mobility and Security, a feature that helps you manage and secure mobile devices in Microsoft 365. If you can't find an answer to your question, let us know by leaving a comment on the page so we can consider adding your question to this article.
 
 
@@ -33,7 +33,7 @@ sections:
   - name: Ignored
     questions:
       - question: |
-          How can I get Basic Mobility and Security? I don't see it in the Microsoft 365 admin center
+          How can I get Basic Mobility and Security? I don't see it in the Microsoft 365 admin center.
         answer: |
           1.  Activate Basic Mobility and Security by going to the [home page](https://compliance.microsoft.com/basicmobilityandsecurity/).
           
@@ -73,7 +73,7 @@ sections:
         answer: |
           - Make sure that you have set up an APNs certificate. For more info, see [Create an APNs Certificate for iOS devices](create-an-apns-certificate-for-ios-devices.md).
 
-          - In **Settings** > **General** > **Profile (or Device Management)**, make sure that a Management Profile is not already installed. If it is, remove it.
+          - In **Settings** > **General** > **Profile (or Device Management)**, make sure that a Management Profile isn't already installed. If it is, remove it.
 
           - If you see the error message, "Device failed to enroll," sign in to Microsoft 365. Make sure a license that includes Exchange Online has been assigned to the user who is signed in to the device.
 
@@ -124,7 +124,7 @@ sections:
       - question: |
           What's the difference between Intune and Basic Mobility and Security?
         answer: |
-          Basic Mobility and Security is hosted by the Intune service. It is a subset of Intune services provided as an added benefit to Microsoft 365 and is a built-in cloud-based solution for managing devices in your organization. For a side-by-side comparison of the two services to help you decide if using Intune or Basic Mobility and Security for Microsoft 365 is the best fit for you, see [Choose between Basic Mobility Security and Intune](choose-between-basic-mobility-and-security-and-intune.md).
+          Basic Mobility and Security is hosted by the Intune service. It's a subset of Intune services provided as an added benefit to Microsoft 365 and is a built-in cloud-based solution for managing devices in your organization. For a side-by-side comparison of the two services to help you decide if using Intune or Basic Mobility and Security for Microsoft 365 is the best fit for you, see [Choose between Basic Mobility Security and Intune](choose-between-basic-mobility-and-security-and-intune.md).
           
       - question: |
           How do policies work for Basic Mobility and Security? How do I set them up? Disable them?
