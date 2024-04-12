@@ -84,6 +84,17 @@ You can check on site privacy by going to Active Sites, then selecting a site, a
 
 With an eligible license, you can set up auto-classifiers for content on a SharePoint site by going to the site, selecting the Settings icon on the top right, going to Library Settings, and adjusting default sensitivity labels. This feature ensures that content created or edited inherits this label. Content that is moved to the site without appropriate labels will trigger a notification.
 
+### Copilot and multiple account access
+
+Copilot features for Excel, Word, PowerPoint, and OneNote will work seamlessly for users who have multiple Microsoft accounts (work/school account or personal account) signed into a single Windows session when one of those accounts has a Copilot Pro or Copilot for Microsoft 365 license assigned. For example, when a user on their work machine with a Copilot for Microsoft 365 license opens a document from their personal OneDrive, they'll be able to use Copilot in the document. Or when a Copilot Pro user signs in on their work device with their Microsoft account (MSA), they'll be able to use Copilot with Office files stored on their OneDrive or in SharePoint document libraries.
+
+As an admin, you can turn off a user's ability to add a Microsoft account to their work device, which prevents these users with Copilot Pro from being able to see Copilot features with their Microsoft 365 apps on their work device. For steps on how to do this, see [Set up tenant restrictions](/entra/external-id/tenant-restrictions-v2). You'll need to set up tenant restriction policies for each of the Microsoft 365 apps.
+
+If you'd like to prevent Entra IDs from your tenant being used on non-managed machines which may have access to Copilot, you can use Conditional Access to prevent access to tenant resources on non-compliant devices.
+
+>[!NOTE]
+> In sovereign tenants where Copilot for Microsoft 365 is not available, even if a device has multiple accounts signed in and one of those accounts has Copilot, users will still be blocked from using Copilot features.
+
 ### Configure advanced policies with Microsoft Purview
 
 :::image type="content" source="media/purview-labels-sensitivity.png" alt-text="Screenshot showing the Microsoft Purview screen for sensitivity labels." lightbox="media/purview-labels-sensitivity.png":::
