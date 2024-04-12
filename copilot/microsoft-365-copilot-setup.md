@@ -71,7 +71,7 @@ Your users must have one of the following base licenses to be eligible for a Cop
 
 Microsoft Copilot for Microsoft 365 provides the ability for users to find and access their content through natural language prompting. Copilot ensures data security and privacy by adhering to existing obligations and integrating with your organization's policies. It utilizes your Microsoft Graph content with the same access controls as other Microsoft 365 services. To get the most out of Copilot, you should consider optimizing data and content for Search, to ensure optimal secure access. To learn more about privacy with Microsoft Copilot for Microsoft 365, see [Data, Privacy, and Security for Microsoft Copilot for Microsoft 365](microsoft-365-copilot-privacy.md).
 
-### Applying principles of Just Enough Access
+## Applying principles of Just Enough Access
 
 From the SharePoint admin center, you can review SharePoint site access to check permissions and access to ensure data is secure, prioritizing sites that contain sensitive information.
 
@@ -110,6 +110,8 @@ All activity from Copilot for Microsoft 365 can be discoverable using content se
 For more information on data security and compliance configurations using Microsoft Purview, see [Microsoft Purview data security and compliance protections for Microsoft Copilot](/purview/ai-microsoft-purview).
 
 Review your privacy settings for Microsoft 365 Apps because those settings might have an effect on the availability of Microsoft Copilot for Microsoft 365 features. For more information, see [Microsoft Copilot for Microsoft 365 and policy settings for connected experiences](microsoft-365-copilot-privacy.md#microsoft-copilot-for-microsoft-365-and-policy-settings-for-connected-experiences).
+
+
 
 ## Update channels
 
