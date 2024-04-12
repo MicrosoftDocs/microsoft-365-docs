@@ -1,8 +1,8 @@
 ---
 title: Overview of Loop components in the Microsoft 365 ecosystem
-ms.author: mikeplum
-author: MikePlumleyMSFT
-manager: serdars
+ms.author: jtremper
+author: jacktremper
+manager: pamgreen
 audience: Admin
 ms.topic: conceptual
 ms.service: loop

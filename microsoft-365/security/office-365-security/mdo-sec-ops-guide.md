@@ -191,23 +191,23 @@ The following permissions (roles and role groups) are available in Defender for 
 
 - **Exchange Online** and **Email & collaboration**: Roles and role groups that grant permission specific to Microsoft Defender for Office 365. The following roles aren't available in Microsoft Entra ID, but can be important for security teams:
 
-  - **Preview** role (Email & collaboration): Assign this role to team members who need to preview or download email messages as part of investigation activities. Allows users to preview and download email messages from cloud mailboxes using [Threat Explorer (Explorer) and Real-time detections](threat-explorer-real-time-detections-about.md#about-threat-explorer-and-real-time-detections-in-microsoft-defender-for-office-365) and the [email entity page](mdo-email-entity-page.md#email-preview-and-download-for-cloud-mailboxes).
+  - **Preview** role (Email & collaboration): Assign this role to team members who need to preview or download email messages as part of investigation activities. Allows users to preview and download email messages from cloud mailboxes using [Threat Explorer (Explorer) or Real-time detections](threat-explorer-real-time-detections-about.md#about-threat-explorer-and-real-time-detections-in-microsoft-defender-for-office-365) and the [Email entity page](mdo-email-entity-page.md#email-preview-and-download-for-cloud-mailboxes).
 
-    By default, this role is assigned only to the following role groups:
+    By default, the **Preview** role is assigned only to the following role groups:
 
     - Data Investigator
     - eDiscovery Manager
 
-    To assign this role to a new or existing custom role group, see [Email & collaboration roles in the Microsoft Defender portal](mdo-portal-permissions.md#email--collaboration-roles-in-the-microsoft-defender-portal).
+    You can add users to those role groups, or you can [create a new role group](mdo-portal-permissions.md#create-email--collaboration-role-groups-in-the-microsoft-defender-portal) with the **Preview** role assigned, and add the users to the custom role group.
 
   - **Search and Purge** role (Email & collaboration): Approve the deletion of malicious messages as recommended by AIR or take manual action on messages in hunting experiences like Threat Explorer.
 
-    By default, this role is assigned only to the following role groups:
+    By default, the **Search and Purge** role is assigned only to the following role groups:
 
     - Data Investigator
     - Organization Management
 
-    To assign this role to a new or existing custom role group, see [Email & collaboration roles in the Microsoft Defender portal](mdo-portal-permissions.md#email--collaboration-roles-in-the-microsoft-defender-portal).
+    You can add users to those role groups, or you can [create a new role group](mdo-portal-permissions.md#create-email--collaboration-role-groups-in-the-microsoft-defender-portal) with the **Search and Purge** role assigned, and add the users to the custom role group.
 
   - **Tenant AllowBlockList Manager** (Exchange Online): Manage allow and block entries in the [Tenant Allow/Block List](tenant-allow-block-list-about.md). Blocking URLs, files (using file hash) or senders is a useful response action to take when investigating malicious email that was delivered.
 
@@ -222,10 +222,10 @@ Defender for Office 365 exposes most of its data through a set of programmatic A
 - [Incident API](/microsoft-365/security/defender/api-incident): Defender for Office 365 alerts and automated investigations are active parts of incidents in Microsoft Defender XDR. Security teams can focus on what's critical by grouping the full attack scope and all impacted assets together.
 
 - [Event streaming API](/microsoft-365/security/defender/streaming-api): Allows shipping of real-time events and alerts into a single data stream as they happen. Supported event types in Defender for Office 365 include:
-  - [EmailEvents](/microsoft-365/security/defender/advanced-hunting-emailevents-table)
-  - [EmailUrlInfo](/microsoft-365/security/defender/advanced-hunting-emailurlinfo-table)
   - [EmailAttachmentInfo](/microsoft-365/security/defender/advanced-hunting-emailattachmentinfo-table)
+  - [EmailEvents](/microsoft-365/security/defender/advanced-hunting-emailevents-table)
   - [EmailPostDeliveryEvents](/microsoft-365/security/defender/advanced-hunting-emailpostdeliveryevents-table)
+  - [EmailUrlInfo](/microsoft-365/security/defender/advanced-hunting-emailurlinfo-table)
 
   The events contain data from processing all email (including intra-org messages) in the last 30 days.
 
