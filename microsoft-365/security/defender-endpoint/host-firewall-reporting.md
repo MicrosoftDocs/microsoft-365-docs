@@ -44,38 +44,40 @@ If you're a Global or security administrator, you can now host firewall reportin
     - `auditpol /set /subcategory:"Filtering Platform Packet Drop" /failure:enable`
     - `auditpol /set /subcategory:"Filtering Platform Connection" /failure:enable`
 
-```powershell
-param (
-    [switch]$remediate
-)
-try {
+   The following code sample provides an example of hwo to use the commands:
 
-    $categories = "Filtering Platform Packet Drop,Filtering Platform Connection"
-    $current = auditpol /get /subcategory:"$($categories)" /r | ConvertFrom-Csv    
-    if ($current."Inclusion Setting" -ne "failure") {
-        if ($remediate.IsPresent) {
-            Write-Host "Remediating. No Auditing Enabled. $($current | ForEach-Object {$_.Subcategory + ":" + $_.'Inclusion Setting' + ";"})"
-            $output = auditpol /set /subcategory:"$($categories)" /failure:enable
-            if($output -eq "The command was successfully executed.") {
-                Write-Host "$($output)"
-                exit 0
-            }
-            else {
-                Write-Host "$($output)"
-                exit 1
-            }
-        }
-        else {
-            Write-Host "Remediation Needed. $($current | ForEach-Object {$_.Subcategory + ":" + $_.'Inclusion Setting' + ";"})."
-            exit 1
-        }
-    }
+   ```powershell
+   param (
+       [switch]$remediate
+   )
+   try {
 
-}
-catch {
-    throw $_
-} 
-```
+       $categories = "Filtering Platform Packet Drop,Filtering Platform Connection"
+       $current = auditpol /get /subcategory:"$($categories)" /r | ConvertFrom-Csv    
+       if ($current."Inclusion Setting" -ne "failure") {
+           if ($remediate.IsPresent) {
+               Write-Host "Remediating. No Auditing Enabled. $($current | ForEach-Object {$_.Subcategory + ":" + $_.'Inclusion Setting' + ";"})"
+               $output = auditpol /set /subcategory:"$($categories)" /failure:enable
+               if($output -eq "The command was successfully executed.") {
+                   Write-Host "$($output)"
+                   exit 0
+               }
+               else {
+                   Write-Host "$($output)"
+                   exit 1
+               }
+           }
+           else {
+               Write-Host "Remediation Needed. $($current | ForEach-Object {$_.Subcategory + ":" + $_.'Inclusion Setting' + ";"})."
+               exit 1
+           }
+       }
+
+   }
+   catch {
+       throw $_
+   } 
+   ```
 
 ## The process
 
