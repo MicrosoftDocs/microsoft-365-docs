@@ -17,7 +17,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - m365copilot
-description: "Learn about the Copilot page in the Microsoft 365 admin center."
+description: "Learn about the Copilot page and how you can manage Copilot for Microsoft 365 settings in the Microsoft 365 admin center."
 ---
 
 # Manage Microsoft Copilot for Microsoft 365 with the Copilot page
@@ -30,7 +30,7 @@ You can manage Copilot for Microsoft 365 through the Microsoft 365 admin center 
 
 - You must be a Global Administrator to access the Copilot page. For more information, see [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles).
 
-## How to get to Settings tab on the Copilot page
+## How to get to the Settings tab on the Copilot page
 
 1. Sign in to the Microsoft 365 admin center.
 
