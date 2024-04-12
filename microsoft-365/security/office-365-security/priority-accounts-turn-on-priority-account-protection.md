@@ -111,7 +111,7 @@ To view the results of priority account protection in Threat Explorer, do the fo
 
 ### Email entity page
 
-The email entity page is available from many locations in the Defender portal, including **Threat Explorer** (also known as **Explorer**). For more information, see [The Email entity page](mdo-email-entity-page.md).
+The Email entity page is available from many locations in the Defender portal, including **Threat Explorer** (also known as **Explorer**). For more information, see [The Email entity page](mdo-email-entity-page.md).
 
 On the Email entity page, select the **Analysis** tab. **Priority account protection** is listed in the **Threat detection details** section.
 
