@@ -53,7 +53,7 @@ Your users must have one of the following base licenses to be eligible for a Cop
 >[!NOTE]
 > Customers with Education or Business subscriptions that do not include Teams can still purchase Copilot for Microsoft 365 licenses.
 
-- **Microsoft 365 Apps** desktop applications such as Word, Excel, PowerPoint, Outlook, and Teams. Copilot will be available in web versions of the apps when a license is assigned.To get started with the implementation process, see [Deployment guide for Microsoft 365 Apps](/deployoffice/deployment-guide-microsoft-365-apps).
+- **Microsoft 365 Apps** desktop applications such as Word, Excel, PowerPoint, Outlook, and Teams. Copilot will be available in web versions of the apps when a license is assigned. To get started with the implementation process, see [Deployment guide for Microsoft 365 Apps](/deployoffice/deployment-guide-microsoft-365-apps).
 
 - **OneDrive Account** You need to have a OneDrive account for several features within Copilot for Microsoft 365, such as saving and sharing your files. For more information, see [Sign in or create an account for OneDrive](https://support.microsoft.com/office/video-sign-in-or-create-an-account-for-onedrive-3adf09fd-90e3-4420-8c4e-b55e2cde40d2?ui=en-us&rs=en-us&ad=us).
 
