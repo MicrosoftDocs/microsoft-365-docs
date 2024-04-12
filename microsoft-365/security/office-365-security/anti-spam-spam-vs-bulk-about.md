@@ -18,7 +18,7 @@ ms.custom:
   - seo-marvel-apr2020
 description: Admins can learn about the differences between junk email (spam) and bulk email (gray mail) in Exchange Online Protection (EOP).
 ms.service: defender-office-365
-ms.date: 9/25/2023
+ms.date: 3/22/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 1 and Plan 2</a>
@@ -67,7 +67,9 @@ EmailEvents
 
 This query allows admins to identify wanted and unwanted senders. If a bulk sender has a BCL score that's more than the bulk threshold, admins can [report the sender's messages to Microsoft for analysis](submissions-admin.md#report-good-email-to-microsoft). This action also adds the sender as an allow entry in the Tenant Allow/Block List.
 
-Organizations without Defender for Office 365 Plan 2 can try the features in Microsoft Defender XDR for Office 365 Plan 2 for free. Use the 90-day Defender for Office 365 evaluation at <https://security.microsoft.com/atpEvaluation>. Learn about who can sign up and trial terms [here](try-microsoft-defender-for-office-365.md) or you can use the [Threat protection status report](reports-email-security.md#threat-protection-status-report) to identify wanted and unwanted bulk senders:
+Organizations without Defender for Office 365 Plan 2 can try the features in Microsoft Defender XDR for Office 365 Plan 2 for free. Use the 90-day Defender for Office 365 evaluation at <https://security.microsoft.com/atpEvaluation>. Learn about who can sign up and trial terms [here](try-microsoft-defender-for-office-365.md).
+
+If you have Defender for Office 365 Plan 1 or Plan 2, you can use the [Threat protection status report](reports-email-security.md#threat-protection-status-report) to identify wanted and unwanted bulk senders:
 
 1. Open the **Threat protection status** report at one of the following URLs:
    - **EOP**: <https://security.microsoft.com/reports/TPSAggregateReport>
@@ -81,7 +83,9 @@ Organizations without Defender for Office 365 Plan 2 can try the features in Mic
 
    When you're finished in the **Filters** flyout, select **Apply**.
 
-4. In Defender for Office 365 Plan 2, select a bulk message to investigate, and then select email entity to learn more about the sender.
+4. Back on the **Threat protection status** page, select one of the bulk messages from the details table below the chart by clicking anywhere in the row other than the check box next to the first column.
+
+   In the message details flyout that opens, select :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity** at the top of the flyout to see details about the message in [the Email entity page in Microsoft Defender for Office 365](mdo-email-entity-page.md).
 
 5. After you identify wanted and unwanted bulk senders, adjust the bulk threshold in the default anti-spam policy and in custom anti-spam policies. If some bulk senders don't fit within your bulk threshold, [report the messages to Microsoft for analysis](submissions-admin.md#report-good-email-to-microsoft).
 
