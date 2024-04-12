@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: deniseb
-ms.date: 3/25/2024
+ms.date: 4/12/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: defender-office-365
@@ -70,19 +70,90 @@ The details pane on the left side of the page contains collapsible sections with
 - **Tags** section. Shows any user tags (including Priority account) that are assigned to senders or recipients. For more information about user tags, see [User tags in Microsoft Defender for Office 365](user-tags-about.md).
 - **Detection details** section:
   - **Original Threats**
-  - **Original delivery location**
+  - **Original delivery location**:
+    - **Deleted Items folder**
+    - **Dropped**
+    - **Delivered failed**
+    - **Inbox folder**
+    - **Junk Email folder**
+    - **External**
+    - **Quarantine**
+    - **Unknown**
   - **Latest Threats**
   - **Latest delivery location**: The location of the message after system actions on the message (for example, [ZAP](zero-hour-auto-purge.md)), or admin actions on the message (for example, [Move to Deleted Items](threat-explorer-threat-hunting.md#email-remediation)). User actions on the message (for example, deleting or archiving the message) aren't shown, so this value doesn't guarantee the _current location_ of the message.
-  - **Detection technology**
-  - **Delivery action**
+
+    > [!TIP]
+    > There are scenarios where **Original delivery location**/**Latest delivery location** and/or **Delivery action** have the value **Unknown**. For example:
+    >
+    > - The message was delivered (**Delivery action** is **Delivered**), but an Inbox rule moved the message to a default folder other than the Inbox or Junk Email folder (for example, the Draft or Archive folder).
+    > - ZAP attempted to move the message after delivery, but the message wasn't found (for example, the user moved or deleted the message).
+
+  - **Detection technology**:
+    - **Advanced filter**: Phishing signals based on machine learning.
+    - **Campaign**: Messages identified as part of a [campaign](campaigns.md).
+    - **File detonation**: [Safe Attachments](safe-attachments-about.md) detected a malicious attachment during detonation analysis.
+    - **File detonation reputation**: File attachments previously detected by [Safe Attachments](safe-attachments-about.md) detonations in other Microsoft 365 organizations.
+    - **File reputation**: The message contains a file that was previously identified as malicious in other Microsoft 365 organizations.
+    - **Fingerprint matching**: The message closely resembles a previous detected malicious message.
+    - **General filter**: Phishing signals based on analyst rules.
+    - **Impersonation brand**: Sender impersonation of well-known brands.
+    - **Impersonation domain**: Impersonation of sender domains that you own or specified for protection in [anti-phishing policies](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
+    - **Impersonation user**: Impersonation of protected senders that you specified in [anti-phishing policies](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) or learned through mailbox intelligence.
+    - **Mailbox intelligence impersonation**: Impersonation detections from mailbox intelligence in [anti-phishing policies](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
+    - **Mixed analysis detection**: Multiple filters contributed to the message verdict.
+    - **Spoof DMARC**: The message failed [DMARC authentication](email-authentication-dmarc-configure.md).
+    - **Spoof external domain**: Sender email address spoofing using a domain that's external to your organization.
+    - **Spoof intra-org**: Sender email address spoofing using a domain that's internal to your organization.
+    - **URL detonation**: [Safe Links](safe-links-about.md) detected a malicious URL in the message during detonation analysis.
+    - **URL detonation reputation**: URLs previously detected by [Safe Links](safe-links-about.md) detonations in other Microsoft 365 organizations.
+    - **URL malicious reputation**: The message contains a URL that was previously identified as malicious in other Microsoft 365 organizations.
+  - **Delivery action**:
+    - **Delivered**
+    - **Junked**
+    - **Blocked**
   - **Primary Override : Source**
+    - Values for **Primary override**:
+      - **Allowed by organization policy**
+      - **Allowed by user policy**
+      - **Blocked by organization policy**
+      - **Blocked by user policy**
+      - **None**
+    - Values for **Primary override source**:
+      - **3rd Party Filter**
+      - **Admin initiated time travel** (ZAP)
+      - **Antimalware policy block by file type**
+      - **Antispam policy settings**
+      - **Connection policy**
+      - **Exchange transport rule**
+      - **Exclusive mode (User override)**
+      - **Filtering skipped due to on-prem organization**
+      - **IP region filter from policy**
+      - **Language filter from policy**
+      - **Phishing Simulation**
+      - **Quarantine release**
+      - **SecOps Mailbox**
+      - **Sender address list (Admin Override)**
+      - **Sender address list (User override)**
+      - **Sender domain list (Admin Override)**
+      - **Sender domain list (User override)**
+      - **Tenant Allow/Block List file block**
+      - **Tenant Allow/Block List sender email address block**
+      - **Tenant Allow/Block List spoof block**
+      - **Tenant Allow/Block List URL block**
+      - **Trusted contact list (User override)**
+      - **Trusted domain (User override)**
+      - **Trusted recipient (User override)**
+      - **Trusted senders only (User override)**
 - **Email details** section:
-  - **Directionality**
+  - **Directionality**:
+    - **Inbound**
+    - **Intra-irg**
+    - **Outbound**
   - **Recipient (To)**<sup>\*</sup>
   - **Sender**<sup>\*</sup>
   - **Time received**
-  - **Internet Message ID**<sup>\*</sup>
-  - **Network Message ID**<sup>\*</sup>
+  - **Internet Message ID**<sup>\*</sup>: Available in the **Message-ID** header field in the message header. An example value is `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (note the angle brackets).
+  - **Network Message ID**<sup>\*</sup>: A GUID value that's available in the **X-MS-Exchange-Organization-Network-Message-Id** header field in the message header.
   - **Cluster ID**
   - **Language**
 
