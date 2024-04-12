@@ -4,17 +4,17 @@ description: Learn about endpoint detection and response in block mode
 author: siosulli
 ms.author: siosulli
 manager: deniseb
-ms.reviewer: 
+ms.reviewer: pahuijbr
 audience: ITPro
 ms.topic: conceptual
 ms.service: defender-endpoint
 ms.subservice: edr
 ms.localizationpriority: medium
 ms.custom:
-  - next-gen
-  - mde-edr
-  - admindeeplinkDEFENDER
-ms.date: 01/12/2024
+- next-gen
+- mde-edr
+- admindeeplinkDEFENDER
+ms.date: 04/11/2024
 ms.collection: 
 - m365-security
 - tier2
