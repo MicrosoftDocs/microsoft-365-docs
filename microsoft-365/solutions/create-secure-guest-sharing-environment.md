@@ -1,7 +1,7 @@
 ---
 title: Create a more secure guest sharing environment
-ms.author: mikeplum
-author: MikePlumleyMSFT
+ms.author: jtremper
+author: jacktremper
 manager: pamgreen
 ms.date: 01/02/2024
 audience: ITPro
