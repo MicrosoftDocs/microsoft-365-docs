@@ -148,10 +148,10 @@ The organization relationship must also be set up by the other tenants in your M
 
 MTO group admins can now configure an optional label for each tenant that will be displayed alongside MTO synced user's display name in Teams. This allows MTO synced users to be distinguishable within the MTO in Teams interactions. 
 
-![teams-mto-label-people-card](media/sync-users-multi-tenant-orgs/teams-mto-label-people-card.png)
+![Teams people card shows MTO user label "US".](media/sync-users-multi-tenant-orgs/teams-mto-label-people-card.png)
 > _Fig 1: Teams people card shows MTO user label "US"_
 
-![teams-mto-search](media/sync-users-multi-tenant-orgs/teams-mto-search.png)
+![Teams search experience shows MTO user label "US".](media/sync-users-multi-tenant-orgs/teams-mto-search.png)
 > _Fig 2: Teams search experience shows MTO user label “US”_
 
 
@@ -163,7 +163,13 @@ To manage MTO user labels for tenants in your MTO
 1. On the **Organization profile** tab, select **Multitenant collaboration**.
 1. Select **Manage settings**.
 1. Select **Edit** under **Tenant label**.
-1. Select either: No label, Use the multitenant organization name for all tenants, or Custom (assign a label for each tenant, which cannot be blank).
+1. Select either: 
+
+   1. No label.
+      
+   1. Use the multitenant organization name for all tenants.
+      
+   1. Custom (assign a label for each tenant, which cannot be blank).
 1. Select **Save changes**.
 
 ## Related topics
