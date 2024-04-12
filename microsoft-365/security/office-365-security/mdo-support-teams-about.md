@@ -41,7 +41,7 @@ In Microsoft 365 E5 and Defender for Office 365 Plan 2, we've extended Teams pro
 
 - **Teams messages in quarantine**: As with email messages that are identified as malware or high confidence phishing, only admins are able to manage Teams messages that are quarantined by ZAP for Teams by default. For more information, see [Manage quarantined Teams messages](quarantine-admin-manage-messages-files.md#use-the-microsoft-defender-portal-to-manage-microsoft-teams-quarantined-messages).
 
-- The **Teams Message Entity Panel** is a single place to store all Teams message metadata for immediate SecOps review. Any threats coming from Teams chats, group chats, meeting chats, and other channels can be found in one place as soon as they're assessed. For more information, see [Teams Message Entity Panel for Microsoft Teams](teams-message-entity-panel.md).
+- The **Teams message entity panel** is a single place to store all Teams message metadata for immediate SecOps review. Any threats coming from Teams chats, group chats, meeting chats, and other channels can be found in one place as soon as they're assessed. For more information, see [The Teams message entity panel in Microsoft Defender for Office 365 Plan 2](teams-message-entity-panel.md).
 
 - **Attack simulation training using Teams messages**: To ensure users are resilient to phishing attacks in Microsoft Teams, admins can configure phishing simulations using Teams messages instead of email messages. For more information, see [Microsoft Teams in Attack simulation training](attack-simulation-training-teams.md).
 
