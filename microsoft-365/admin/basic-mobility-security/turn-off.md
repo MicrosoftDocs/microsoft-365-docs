@@ -16,7 +16,9 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - basic-mobility-security
-ms.custom: AdminSurgePortfolio
+ms.custom: 
+- AdminSurgePortfolio
+- basic-mobility-security
 description: "Remove groups or policies to turn off Basic Mobility and Security."
 ---
 

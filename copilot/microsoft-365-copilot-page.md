@@ -17,28 +17,28 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - m365copilot
-description: "Learn about the Copilot page in the Microsoft 365 admin center."
+description: "Learn about the Copilot page and how you can manage Copilot for Microsoft 365 settings in the Microsoft 365 admin center."
 ---
 
 # Manage Microsoft Copilot for Microsoft 365 with the Copilot page
 
-You can manage Microsoft Copilot for Microsoft 365 through the Microsoft 365 admin center by using the Copilot page. Use the Copilot page to review licensing, get the latest information, and to view additional resources. You can also manage how users in your organization interact with Microsoft Copilot for Microsoft 365, Security Copilot, and more.
+You can manage Copilot for Microsoft 365 through the Microsoft 365 admin center by going to the Settings tab on the Copilot page. Manage how users in your organization interact with Copilot for Microsoft 365, Copilot for Security, and more.
 
 ## Before you begin
 
-- Your organization must have purchased Copilot licenses to access the Copilot page in the Microsoft 365 admin center. While you don't need a license assigned to your admin account, you must have these licenses present within the organization for the Copilot page to be visible. For more information, see [Get started with Microsoft Copilot for Microsoft 365](microsoft-365-copilot-setup.md).
+- Your organization must have purchased Copilot licenses to access the Settings tab on the Copilot page in the Microsoft 365 admin center. While you don't need a license assigned to your admin account, you must have these licenses present within the organization for the Copilot page to be visible. For more information, see [Get started with Microsoft Copilot for Microsoft 365](microsoft-365-copilot-setup.md).
 
 - You must be a Global Administrator to access the Copilot page. For more information, see [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles).
 
-## How to get to the Copilot page
+## How to get to the Settings tab on the Copilot page
 
 1. Sign in to the Microsoft 365 admin center.
 
 2. In the left navigation, select **Copilot**.
 
-## How can I use the Copilot page?
+3. Select the **Settings** tab.
 
-In this dashboard, you can access essential resources to help your organization use Copilot effectively:
+## Settings
 
 :::image type="content" source="media/copilot-page-settings.png" alt-text="Screenshot showing the Copilot page in the Microsoft 365 admin center." lightbox="media/copilot-page-settings.png":::
 
@@ -73,32 +73,22 @@ To turn on or turn off Copilot for Microsoft 365 in Bing, Edge, and Windows, fol
 
 Microsoft Copilot for Microsoft 365 is powered by an advanced processing and orchestration engine that seamlessly integrates Microsoft 365 apps, Microsoft Graph, and large language models (LLMs) to turn your words into the most powerful productivity tool. While Copilot is already able to use the apps and data within the Microsoft 365 ecosystem, many users still depend on various external tools and services for work management and collaboration. You can extend Microsoft Copilot for Microsoft 365 by building a plugin or by connecting to an external data source.
 
-This control navigates you to the Integrated App settings to control how non-Microsoft apps and first party apps can work with Microsoft Copilot for Microsoft 365.
+This control allows you to control how non-Microsoft apps and first party apps can work with Microsoft Copilot for Microsoft 365.
 
 ### Improved responses with web content in Copilot for Microsoft 365
 
 This control allows you to enable or disable Copilot’s ability to access the public web to get the latest information available when responding to prompts. Note that this is a separate control from Copilot with commercial data protection. Learn more about [how to Manage access to web content in Copilot for Microsoft 365 responses](manage-public-web-access.md).
 
-### Data Security and Compliance
+### Data, Security, and Compliance
 
-This link navigates you to the Microsoft Purview compliance portal where you can manage sensitivity labels, retention policies, Copilot interactions, audit records for Copilot, search Copilot interactions, and configure how Microsoft Copilot for Microsoft 365 interacts and references protected documents. Learn more about [how to protect and manage Microsoft Copilot for Microsoft 365 interactions with Microsoft Purview](/purview/ai-microsoft-purview).
+This link navigates you to the Microsoft Purview compliance portal where you can manage sensitivity labels, retention policies, Copilot interactions, audit records for Copilot, search Copilot interactions, and configure how Copilot for Microsoft 365 interacts and references protected documents. Learn more about [how to protect and manage Microsoft Copilot for Microsoft 365 interactions with Microsoft Purview](/purview/ai-microsoft-purview).
 
-### Security Copilot
+### Microsoft Copilot for Security
 
-This link directs you to the Security Copilot portal to manage settings. Security Copilot is a separate product and license from Microsoft Copilot for Microsoft 365. If purchased, you can use this link to navigate to Microsoft Security Copilot settings page. To learn more, see [Microsoft Security Copilot](/security-copilot/).
+This link directs you to the Copilot for Security portal to manage settings. Copilot for Security is a separate product and license from Copilot for Microsoft 365. If purchased, you can use this link to navigate to Copilot for Security settings page. To learn more, see [Copilot for Security](/copilot/security/).
 
-### Latest info
+### Copilot for Microsoft 365 feedback logs
 
-You can get the latest information on Copilot by viewing the top three latest updates in the Message Center. To view a list of all Copilot posts for your organization, you can use this page to visit the Message Center.
+When users have an issue and aren't able to send feedback logs to Microsoft, you can submit feedback logs on their behalf. The data will include prompts and generated responses, relevant content samples, and additional log file. Using this feature to send feedback logs will temporarily override any user level feedback policy.
 
-### Microsoft Copilot for Microsoft 365 resources
-
-You can view additional resources for Microsoft Copilot for Microsoft 365 to help you learn more. Here’s a list of resources you can access through the Copilot page:
-
-- [Microsoft Copilot for Microsoft 365 documentation](index.yml)
-
-- [End user help and learning](https://support.microsoft.com/copilot)
-
-- [Responsible AI Principles and Approach \| Microsoft AI](https://www.microsoft.com/ai/principles-and-approach/)
-
-- [Frequently asked questions about the Microsoft Copilot for Microsoft 365 Early Access Program for businesses](https://support.microsoft.com/office/frequently-asked-questions-about-the-microsoft-365-copilot-early-access-program-for-businesses-6630289c-3e93-4065-8350-fdecadb5a1f3)
+To learn more, see [Provide user feedback for Microsoft Copilot for Microsoft 365](provide-feedback.md).
