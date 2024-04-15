@@ -30,7 +30,7 @@ Loop components in Teams chat, Outlook emails, Whiteboards, or other places in t
 > [!Note]
 > Loop components is the first feature of the [Microsoft Loop app](https://www.microsoft.com/en-us/microsoft-loop) to become available in Teams.
 
-**Get tasks done faster together.** Crowd-source an agenda, track a group's action items, or take notes collectively. These scenarios are just a few scenarios made easier with Loop components.
+**Get tasks done faster together.** Crowd-source an agenda, track a group's action items, or take notes collectively. These are just a few scenarios made easier with Loop components.
 
 **Share components.** In this release, you can share Loop components into different Teams chats, Outlook emails, Whiteboards, and other places in the Microsoft 365 ecosystem. Recipients can edit from wherever they are and see updates instantly, no matter where the changes were made.
 
