@@ -27,7 +27,7 @@ description: In this article, learn how to use PowerShell for Microsoft 365 to m
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
-Windows PowerShell allows Syndication and Cloud Solution Provider (CSP) partners to easily administer and report on customer tenancy settings that aren't available in the Microsoft 365 admin center. Note that Administer on Behalf Of (AOBO) permissions are required for the partner administrator account to connect to its customer tenancies.
+Windows PowerShell allows Syndication and Cloud Solution Provider (CSP) partners to easily administer and report on customer tenancy settings that aren't available in the Microsoft 365 admin center. Administer on Behalf Of (AOBO) permissions are required for the partner administrator account to connect to its customer tenancies.
 
 Delegated Access Permission (DAP) partners are Syndication and Cloud Solution Providers (CSP) Partners. They're frequently network or telecom providers to other companies. They bundle Microsoft 365 subscriptions into their service offerings to their customers. When they sell a Microsoft 365 subscription, they're automatically granted Administer On Behalf Of (AOBO) permissions to the customer tenancies so they can administer and report on the customer tenancies.
 ## What do you need to know before you begin?
@@ -73,7 +73,7 @@ To get all domains for any one customer tenant, run this command. Replace  _\<cu
 Get-MsolDomain -TenantId <customer TenantId value>
 ```
 
-If you registered additional domains, this returns all domains associated with the customer **TenantId**.
+If you have registered additional domains, this returns all domains associated with the customer **TenantId**.
 
 ### Get a mapping of all tenants and registered domains
 
@@ -85,7 +85,7 @@ $Tenants = Get-MsolPartnerContract -All; $Tenants | foreach {$Domains = $_.Tenan
 
 ### Get all users for a tenant
 
-This command displays the **UserPrincipalName**, the **DisplayName**, and the **isLicensed** status for all users for a particular tenant. Replace _\<customer TenantId value>_ with the actual value.
+This displays the **UserPrincipalName**, the **DisplayName**, and the **isLicensed** status for all users for a particular tenant. Replace _\<customer TenantId value>_ with the actual value.
 
 ```powershell
 Get-MsolUser -TenantID <customer TenantId value>

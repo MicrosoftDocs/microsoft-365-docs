@@ -78,7 +78,7 @@ See the [Supportability topic for Skype for Business with MA](/skypeforbusiness/
 
 ## Collect all HMA-specific info you'll need
 
-After you double-check that you meet the [prerequisites](hybrid-modern-auth-overview.md) to use Modern Authentication (see the note above), you should create a file to hold the info you'll need for configuring HMA in the steps ahead. Examples used in this article:
+After you've checked that you meet the [prerequisites](hybrid-modern-auth-overview.md) to use Modern Authentication (see the previous note), you should create a file to hold the info you'll need for configuring HMA in the steps ahead. Examples used in this article:
 
 - **SIP/SMTP domain**
 
@@ -90,7 +90,7 @@ After you double-check that you meet the [prerequisites](hybrid-modern-auth-over
 
 - **SFB 2015 CU5 Web Service URLs**
 
-You need internal and external web service URLs for all SfB 2015 pools deployed. To obtain these URLs, run the following command from Skype for Business Management Shell:
+You need internal and external web service URLs for all SfB 2015 pools deployed. To obtain these, run the following command from Skype for Business Management Shell:
 
 ```powershell
 Get-CsService -WebServer | Select-Object PoolFqdn, InternalFqdn, ExternalFqdn | FL
@@ -100,7 +100,7 @@ Get-CsService -WebServer | Select-Object PoolFqdn, InternalFqdn, ExternalFqdn | 
 
 - Ex. External: https://lyncwebext01.contoso.com
 
-If you're using a Standard Edition server, the internal URL is blank. In this case, use the pool fqdn for the internal URL.
+If you're using a Standard Edition server, the internal URL would be blank. In this case, use the pool fqdn for the internal URL.
 
 ## Turn on Modern Authentication for EXO
 
@@ -131,7 +131,7 @@ Now you need to run commands to add the URLs (collected earlier) as Service Prin
 
 2. Run this command, on-premises, to get a list of SFB web service URLs.
 
-   The AppPrincipalId begins with `00000004`. This value corresponds to Skype for Business Online.
+   The AppPrincipalId begins with `00000004`. This corresponds to Skype for Business Online.
 
    Take note of (and screenshot for later comparison) the output of this command, which includes an SE and WS URL, but mostly consist of SPNs that begin with `00000004-0000-0ff1-ce00-000000000000/`.
 
@@ -139,9 +139,9 @@ Now you need to run commands to add the URLs (collected earlier) as Service Prin
    Get-MsolServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 | Select -ExpandProperty ServicePrincipalNames
    ```
 
-3. If the internal **or** external SFB URLs from on-premises are missing (for example, https://lyncwebint01.contoso.com and https://lyncwebext01.contoso.com) you need to add those specific records to this list.
+3. If the internal **or** external SFB URLs from on-premises are missing (for example, https://lyncwebint01.contoso.com and https://lyncwebext01.contoso.com) we'll need to add those specific records to this list.
 
-    Be sure to replace  *the example URLs* below with your actual URLs in the Add commands!
+    Be sure to replace *the example URLs* with your actual URLs in the Add commands!
 
     ```powershell
     $x= Get-MsolServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000
@@ -150,7 +150,7 @@ Now you need to run commands to add the URLs (collected earlier) as Service Prin
     Set-MSOLServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
     ```
 
-4. Verify your new records were added by running the **Get-MsolServicePrincipal** command from step 2 again, and looking through the output. Compare the list or screenshot from before to the new list of SPNs. You might also screenshot the new list for your records. If you're successful, you see the two new URLs in the list. Going by our example, the list of SPNs now include the specific URLs https://lyncwebint01.contoso.com and https://lyncwebext01.contoso.com/.
+4. Verify your new records were added by running the **Get-MsolServicePrincipal** command from step 2 again, and looking through the output. Compare the list or screenshot from before to the new list of SPNs. You can also screenshot the new list for your records. If you were successful, you can view the two new URLs in the list. Going by our example, the list of SPNs will now include the specific URLs https://lyncwebint01.contoso.com and https://lyncwebext01.contoso.com/.
 
 ### Create the EvoSTS Auth Server Object
 
@@ -170,15 +170,15 @@ Set-CsOAuthConfiguration -ClientAuthorizationOAuthServerIdentity evoSTS
 
 ## Verify
 
-Once you enable HMA, a client's next login will use the new auth flow. Just turning on HMA doesn't trigger a reauthentication for any client. The clients reauthenticate based on the lifetime of the auth tokens and/or certs they have.
+Once you enable HMA, a client's next login will use the new auth flow. Just turning on HMA wouldn't trigger a reauthentication for any client. The clients reauthenticate based on the lifetime of the auth tokens and/or certs they have.
 
-To test that HMA is working after you enable it, sign out of a test SFB Windows client and be sure to click 'delete my credentials'. Sign in again. The client should now use the Modern Auth flow and your login now includes an **Office 365** prompt for a 'Work or school' account, seen right before the client contacts the server and logs you in.
+To test that HMA is working after you've enabled it, sign out of a test SFB Windows client and be sure to select 'delete my credentials'. Sign in again. The client should now use the Modern Auth flow and your login will now include an **Office 365** prompt for a 'Work or school' account, seen right before the client contacts the server and logs you in.
 
-You should also check the 'Configuration Information' for Skype for Business Clients for an 'OAuth Authority'. To do this check on your client computer, hold down the CTRL key at the same time you right-click the Skype for Business Icon in the Windows Notification tray. Click **Configuration Information** in the menu that appears. In the 'Skype for Business Configuration Information' window that appears on the desktop, look for the following:
+You should also check the 'Configuration Information' for Skype for Business Clients for an 'OAuth Authority'. To do this on your client computer, hold down the CTRL key at the same time you right-click the Skype for Business Icon in the Windows Notification tray. Select **Configuration Information** in the menu that appears. In the 'Skype for Business Configuration Information' window that appears on the desktop, look for the following:
 
 :::image type="content" alt-text="The Configuration information of a Skype for Business Client using Modern Authentication shows a Lync and EWS OAUTH Authority URL of https://login.windows.net/common/oauth2/authorize." source="../media/4e54edf5-c8f8-4e7f-b032-5d413b0232de.png":::
 
-You should also hold down the CTRL key at the same time you right-click the icon for the Outlook client (also in the Windows Notifications tray) and click 'Connection Status'. Look for the client's SMTP address against an AuthN type of 'Bearer\*', which represents the bearer token used in OAuth.
+You should also hold down the CTRL key at the same time you right-click the icon for the Outlook client (also in the Windows Notifications tray) and select 'Connection Status'. Look for the client's SMTP address against an AuthN type of 'Bearer\*', which represents the bearer token used in OAuth.
 
 ## Related articles
 
