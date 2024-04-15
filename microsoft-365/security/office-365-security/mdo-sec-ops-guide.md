@@ -191,7 +191,7 @@ The following permissions (roles and role groups) are available in Defender for 
 
 - **Exchange Online** and **Email & collaboration**: Roles and role groups that grant permission specific to Microsoft Defender for Office 365. The following roles aren't available in Microsoft Entra ID, but can be important for security teams:
 
-  - **Preview** role (Email & collaboration): Assign this role to team members who need to preview or download email messages as part of investigation activities. Allows users to preview and download email messages from cloud mailboxes using [Threat Explorer (Explorer) or Real-time detections](threat-explorer-real-time-detections-about.md#about-threat-explorer-and-real-time-detections-in-microsoft-defender-for-office-365) and the [Email entity page](mdo-email-entity-page.md#email-preview-and-download-for-cloud-mailboxes).
+  - **Preview** role (Email & collaboration): Assign this role to team members who need to preview or download email messages as part of investigation activities. Allows users to preview and download email messages from cloud mailboxes using [Threat Explorer (Explorer) or Real-time detections](threat-explorer-real-time-detections-about.md#about-threat-explorer-and-real-time-detections-in-microsoft-defender-for-office-365) and the [Email entity page](mdo-email-entity-page.md).
 
     By default, the **Preview** role is assigned only to the following role groups:
 
@@ -222,10 +222,10 @@ Defender for Office 365 exposes most of its data through a set of programmatic A
 - [Incident API](/microsoft-365/security/defender/api-incident): Defender for Office 365 alerts and automated investigations are active parts of incidents in Microsoft Defender XDR. Security teams can focus on what's critical by grouping the full attack scope and all impacted assets together.
 
 - [Event streaming API](/microsoft-365/security/defender/streaming-api): Allows shipping of real-time events and alerts into a single data stream as they happen. Supported event types in Defender for Office 365 include:
-  - [EmailEvents](/microsoft-365/security/defender/advanced-hunting-emailevents-table)
-  - [EmailUrlInfo](/microsoft-365/security/defender/advanced-hunting-emailurlinfo-table)
   - [EmailAttachmentInfo](/microsoft-365/security/defender/advanced-hunting-emailattachmentinfo-table)
+  - [EmailEvents](/microsoft-365/security/defender/advanced-hunting-emailevents-table)
   - [EmailPostDeliveryEvents](/microsoft-365/security/defender/advanced-hunting-emailpostdeliveryevents-table)
+  - [EmailUrlInfo](/microsoft-365/security/defender/advanced-hunting-emailurlinfo-table)
 
   The events contain data from processing all email (including intra-org messages) in the last 30 days.
 

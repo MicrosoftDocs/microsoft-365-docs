@@ -39,7 +39,7 @@ The procedures in this article require you to connect to SharePoint. For instruc
 
 Create multiple sites using PowerShell and a .csv file that you create using the example code provided and Notepad. For this procedure, you're replacing the placeholder information shown in brackets with your own site- and tenant-specific information. This process lets you create a single file and run a single PowerShell command that uses that file. This makes the actions both repeatable and portable and eliminates many, if not all, errors that can come from typing long commands into the SharePoint Management Shell. There are two parts to this procedure. First you create a .csv file, and then you reference that .csv file using PowerShell, which uses its contents to create the sites.
 
-The PowerShell cmdlet imports the .csv file and pipes it to a loop inside the curly brackets that reads the first line of the file as column headers. The PowerShell cmdlet then iterates through the remaining records, creates a new site collection for each record, and assigns properties of the site collection according to the column headers.
+The PowerShell cmdlet imports the .csv file and pipes it to a loop inside the curly brackets that reads the opening line of the file as column headers. The PowerShell cmdlet then iterates through the remaining records, creates a new site collection for each record, and assigns properties of the site collection according to the column headers.
 
 ### Create a .csv file
 
@@ -73,7 +73,7 @@ The PowerShell cmdlet imports the .csv file and pipes it to a loop inside the cu
    Import-Csv C:\users\MyAlias\desktop\SiteCollections.csv | ForEach-Object {New-SPOSite -Owner $_.Owner -StorageQuota $_.StorageQuota -Url $_.Url -NoWait -ResourceQuota $_.ResourceQuota -Template $_.Template -TimeZoneID $_.TimeZoneID -Title $_.Name}
    ```
 
-   Where *MyAlias* equals your user alias.
+   Where *MyAlias* equals your user alias
 
 2. Wait for the Windows PowerShell prompt to reappear. It might take a minute or two.
 
@@ -109,7 +109,7 @@ The following procedures continue using the example sites TeamSite01, Blog01, Pr
    https://tenant.sharepoint.com/sites/Project01,Project Alpha Approvers,Full Control
    ```
 
-   Where *tenant* equals your tenant name.
+   Where *tenant* equals your tenant name
 
 2. Save the file to your desktop as **GroupsAndPermissions.csv**.
 
@@ -140,7 +140,7 @@ The following procedures continue using the example sites TeamSite01, Blog01, Pr
 
    Where MyAlias equals the user name of the user that is currently logged on.
 
-6. Save the file to your desktop as **UsersAndGroups.ps1**. This is a simple Windows PowerShell script.
+6. Save the file to your desktop as **UsersAndGroups.ps1**, which is a simple Windows PowerShell script.
 
 You’re now ready to run the UsersAndGroup.ps1 script to add users and groups to multiple site collections.
 
@@ -162,7 +162,7 @@ You’re now ready to run the UsersAndGroup.ps1 script to add users and groups t
    c:\users\MyAlias\desktop\UsersAndGroups.ps1
    ```
 
-   Where *MyAlias* equals your user name.
+   Where *MyAlias* equals your user name
 
 5. Wait for the prompt to return before moving on. You'll first see the groups appear as they're created. Then you'll see the group list repeated as users are added.
 
