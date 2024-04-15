@@ -66,16 +66,16 @@ Note that installation and uninstallation will not necessarily fail if a proxy i
 
 ## Post installation configuration
 
-After installation, configure Defender for Endpoint with a static proxy. These can be done in two ways: 
+After installation, configure Defender for Endpoint with a static proxy. This can be done in two ways: 
 
-### Using mdatp command-line tool
+### 1. Using mdatp command-line tool
 
 Run  the following command on the endpoint to configure proxy for Defender for Endpoint
 ```bash
 mdatp config proxy set --value http://address:port
 ```
 
-### Using managed configuration
+### 2. Using managed configuration
 
 Set the proxy in the managed configuration at `/etc/opt/microsoft/mdatp/managed/mdatp_managed.json`. This is an example of the json schema:
 ```
