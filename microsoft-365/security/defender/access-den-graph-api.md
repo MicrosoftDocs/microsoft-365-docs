@@ -48,7 +48,7 @@ The following fields are also available in Graph Security API.
 
 Your approach to consuming DENs from the API will vary depending on the downstream system you intend to use and your specific requirements. However, below is a basic implementation to help you get started.
 
-- Get incidents from Graph Security API
-- Check for new incidents where displayName starts with _Defender Experts_ to identify DENs
-- Read the rest of the fields for such incidents
-- Sync the DEN information into your downstream tool (such as ServiceNow, etc.)
+- Get incidents from Graph Security API.
+- Check for new incidents where displayName starts with _Defender Experts_ to identify DENs.
+- Continue reading the remaining fields for such incidents.
+- Sync the DEN information into your downstream tool (such as ServiceNow, etc).
