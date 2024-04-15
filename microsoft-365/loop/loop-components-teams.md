@@ -42,6 +42,7 @@ For information on admin settings for Loop components in Teams, see [Settings ma
 
 - Available on Teams apps on Windows, Mac, iOS, Android, and web.
 - Available on Outlook apps on Windows and web.
+- Available on OneNote apps on Windows and web.
 - Available on Whiteboard apps on Windows, Surface, iOS, Android, and web. iOS and Android are "view and edit" but users can't paste new ones.
 
 ## Loop components and .loop files
