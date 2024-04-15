@@ -54,7 +54,7 @@ End users also need to take steps to install Microsoft Defender for Endpoint on 
 
   d. Go to the **Microsoft Intune admin center** and Validate whether Microsoft Defender for Endpoint-Intune connector is enabled.
 
-     :::image type="content" source="images/validate-intune-connector.png" alt-text="The intune-connector status pane in the Microsoft Defender portal." lightbox="images/validate-intune-connector.png":::
+     :::image type="content" source="media/validate-intune-connector.png" alt-text="The intune-connector status pane in the Microsoft Defender portal." lightbox="media/validate-intune-connector.png":::
 
 - **Enable Microsoft Defender for Endpoint on Android Connector for App Protection Policy (APP)**.
 
@@ -293,7 +293,7 @@ Use the following steps to configure the Device tags:
 
 
 > [!NOTE] 
-> The Defender app needs to be opened for tags to be synced with Intune and passed to Security Portal. It may take upto 18 hours for tags to reflect in the portal.
+> The Defender app needs to be opened for tags to be synced with Intune and passed to Security Portal. It may take up to 18 hours for tags to reflect in the portal.
 
 ## Related topics
 

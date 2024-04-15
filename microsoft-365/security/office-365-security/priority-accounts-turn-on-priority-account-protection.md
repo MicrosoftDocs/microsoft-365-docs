@@ -16,10 +16,9 @@ ms.collection:
   - tier1
 ms.custom:
 description: Admins can learn how to turn on priority account protection in Microsoft Defender for Office 365 Plan 2 organizations.
-ms.subservice: mdo
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
@@ -112,7 +111,7 @@ To view the results of priority account protection in Threat Explorer, do the fo
 
 ### Email entity page
 
-The email entity page is available from many locations in the Defender portal, including **Threat Explorer** (also known as **Explorer**). For more information, see [The Email entity page](mdo-email-entity-page.md).
+The Email entity page is available from many locations in the Defender portal, including **Threat Explorer** (also known as **Explorer**). For more information, see [The Email entity page](mdo-email-entity-page.md).
 
 On the Email entity page, select the **Analysis** tab. **Priority account protection** is listed in the **Threat detection details** section.
 

@@ -20,7 +20,7 @@ metadata:
   description: Admins can view frequently asked questions and answers about quarantined messages in Exchange Online Protection (EOP).
   ms.custom: seo-marvel-apr2020
   ms.subservice: mdo
-  ms.service: microsoft-365-security
+  ms.service: defender-office-365
 
 title: Quarantined messages FAQ
 summary: |
@@ -28,7 +28,7 @@ summary: |
 
   **Applies to**
   - [Exchange Online Protection](eop-about.md)
-  - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+  - [Microsoft Defender for Office 365 Plan 1 and Plan 2](mdo-about.md#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet)
   - [Microsoft Defender XDR](../defender/microsoft-365-defender.md)
 
   This article provides frequently asked questions and answers about quarantined email messages for Microsoft 365 organizations with mailboxes in Exchange Online, or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes.
@@ -52,7 +52,7 @@ sections:
 
           But, admins can create and apply _quarantine policies_ to anti-malware policies that define more capabilities for users. For more information, see [Create quarantine policies](quarantine-policies.md#step-1-create-quarantine-policies-in-the-microsoft-defender-portal).
 
-          Users can't release their own messages that were quarantined as malware by anti-malware policies, regardless of how the quarantine policy is configured. If the policy allows users to release their own quarantined messages, users are instead allowed to _request_ the release of their quarantined malware or high-confidence phishing messages.
+          Users can't release their own messages that were quarantined as malware by anti-malware policies, regardless of how the quarantine policy is configured. If the policy allows users to release their own quarantined messages, users are instead allowed to _request_ the release of their quarantined malware or high confidence phishing messages.
 
       - question: |
           How do I quarantine spam?
@@ -88,7 +88,7 @@ sections:
 
           For the default access to quarantined messages, see the table in [Find and release quarantined messages as a user in EOP](quarantine-end-user.md)
 
-          Users can't release their own messages that were quarantined as **malware** by anti-malware or Safe Attachments policies, or as **high confidence phishing** by anti-spam policies, regardless of how the quarantine policy is configured. If the policy allows users to release their own quarantined messages, users are instead allowed to _request_ the release of their quarantined malware or high-confidence phishing messages.
+          Users can't release their own messages that were quarantined as **malware** by anti-malware or Safe Attachments policies, or as **high confidence phishing** by anti-spam policies, regardless of how the quarantine policy is configured. If the policy allows users to release their own quarantined messages, users are instead allowed to _request_ the release of their quarantined malware or high confidence phishing messages.
 
       - question: |
           How can I prevent users from accessing quarantined messages?

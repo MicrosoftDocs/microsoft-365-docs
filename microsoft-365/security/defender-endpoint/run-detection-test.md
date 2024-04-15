@@ -6,7 +6,7 @@ ms.service: defender-endpoint
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
-ms.date: 04/24/2023
+ms.date: 04/03/2024
 manager: deniseb
 audience: ITPro
 ms.collection: 
@@ -43,14 +43,8 @@ Verifying that a device is added to the service successfully is a critical step 
 
 Run the following PowerShell script on a newly onboarded device to verify that it's properly reporting to the Defender for Endpoint service.
 
-1. Open an elevated command-line prompt on the device and run the script:
+1. On the device, open Command Prompt as an administrator. 
 
-   1. Go to **Start** and type **cmd**.
-
-   1. Right-click **Command Prompt** and select **Run as administrator**.
-
-      :::image type="content" source="images/run-as-admin.png" alt-text="The Start menu pointing to Run as administrator" lightbox="images/run-as-admin.png":::
-    
 2. At the prompt, copy and run the following command:
 
    ```powershell
@@ -67,4 +61,5 @@ The Command Prompt window closes automatically. If successful, a new alert appea
 - [Onboard Windows devices](configure-endpoints.md)
 - [Onboard servers](configure-server-endpoints.md)
 - [Troubleshoot Microsoft Defender for Endpoint onboarding issues](/microsoft-365/security/defender-endpoint/troubleshoot-onboarding)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

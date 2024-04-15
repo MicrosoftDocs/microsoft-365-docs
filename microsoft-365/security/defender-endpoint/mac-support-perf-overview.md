@@ -7,7 +7,7 @@ ms.service: defender-endpoint
 ms.topic: overview
 ms.date:     03/01/2024
 ms.subservice: ngp
-manager: dansimp
+manager: deniseb
 ---
 
 # Overview for how to troubleshoot performance issues for Microsoft Defender for Endpoint on macOS

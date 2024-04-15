@@ -15,8 +15,7 @@ ms.collection:
 - m365-security
 - tier3
 description: Get the latest in hardware-based isolation. Prevent current and emerging attacks like exploits or malicious links from disrupting employee productivity and enterprise security.
-ms.subservice: mdo
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 ms.date: 11/27/2023
 ---
 
