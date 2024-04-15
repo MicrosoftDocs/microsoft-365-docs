@@ -2,9 +2,9 @@
 
 
 
-## Week of November 13, 2023
+## Week of February 26, 2024
 
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 11/17/2023 | [Microsoft Security Copilot and Microsoft Defender Threat Intelligence](/defender/threat-intelligence/security-copilot-and-defender-threat-intelligence) | added |
+| 3/1/2024 | [Microsoft Security Copilot and Microsoft Defender Threat Intelligence](/defender/threat-intelligence/security-copilot-and-defender-threat-intelligence) | modified |

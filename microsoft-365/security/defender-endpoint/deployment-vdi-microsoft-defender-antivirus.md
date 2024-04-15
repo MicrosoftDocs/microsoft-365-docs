@@ -4,13 +4,13 @@ description: Get an overview of how to configure Microsoft Defender Antivirus in
 ms.localizationpriority: medium
 ms.date: 03/06/2023
 ms.topic: conceptual
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 ms.custom: nextgen
 ms.reviewer: jesquive
-manager: dansimp
-ms.subservice: mde
-ms.service: microsoft-365-security
+manager: deniseb
+ms.subservice: ngp
+ms.service: defender-endpoint
 ms.collection:
 - m365-security
 - tier2

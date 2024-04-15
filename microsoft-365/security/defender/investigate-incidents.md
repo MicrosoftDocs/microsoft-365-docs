@@ -1,11 +1,7 @@
 ---
 title: Investigate incidents in Microsoft Defender XDR
 description: Investigate incidents related to devices, users, and mailboxes.
-keywords: incident, incidents, attack story, analyze, response, machines, devices, users, identities, mail, email, mailbox, investigation, graph, evidence
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: 
   - NOCSH
 ms.author: diannegali
@@ -20,12 +16,12 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.date: 05/24/2023
+ms.date: 12/04/2023
 ---
 
 # Investigate incidents in Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -65,9 +61,7 @@ The incident alert page has these sections:
 - Alert story, which includes:
 
    - What happened
-
    - Actions taken
-
    - Related events
 
 - Alert properties in the right pane (state, details, description, and others)
@@ -88,11 +82,23 @@ From the graph, you can:
 
 - Highlight the alerts based on the entity to which they are related.
 
-Use the **Summary** page to assess the relative importance of the incident and quickly access the associated alerts and impacted entities.
+- Hunt for entity information of a device, file, IP address, or URL.
+
+The *go hunt* option takes advantage of the [advanced hunting](advanced-hunting-go-hunt.md) feature to find relevant information about an entity. The *go hunt* query checks relevant schema tables for any events or alerts involving the specific entity you're investigating. You can select any of the options to find relevant information about the entity:
+
+  - See all available queries – the option returns all available queries for the entity type you're investigating.
+  - All Activity – the query returns all activities associated with an entity, providing you with a comprehensive view of the incident's context.
+  - Related Alerts – the query searches for and returns all security alerts involving a specific entity, ensuring you don't miss any information.
+
+:::image type="content" source="../../media/investigate-incidents/fig1-gohunt-attackstory.png" alt-text="Selecting the go hunt option on a device in an attack story" lightbox="../../media/investigate-incidents/fig1-gohunt-attackstory.png":::
+
+The resulting logs or alerts can be linked to an incident by selecting a results and then selecting *Link to incident*.
+
+:::image type="content" source="../../media/investigate-incidents/fig2-gohunt-attackstory.png" alt-text="Highlighting the link to incident option in go hunt query results" lightbox="../../media/investigate-incidents/fig2-gohunt-attackstory.png":::
 
 ## Summary
 
-The **Summary** page gives you a snapshot glance at the top things to notice about the incident.
+Use the **Summary** page to assess the relative importance of the incident and quickly access the associated alerts and impacted entities. The **Summary** page gives you a snapshot glance at the top things to notice about the incident.
 
 :::image type="content" source="../../media/incidents-overview/incidents-investigate-summary.png" alt-text="Screenshot that shows the summary information for an incident in the Microsoft Defender portal." lightbox="../../media/incidents-overview/incidents-investigate-summary.png":::
 
@@ -223,7 +229,7 @@ For incidents with a remediation status of **Pending approval**, you can approve
    - Select the Approve pending action option to initiate a pending action.
    - Select the Reject pending action option to prevent a pending action from being taken.
 
-:::image type="content" source="../../media/defender//m365-defender-approve-reject-action.png" alt-text="The Approve\Reject option in the Evidence and Response management pane for an incident in the Microsoft Defender portal" lightbox="../../media/defender//m365-defender-approve-reject-action.png":::
+:::image type="content" source="../../media/defender/m365-defender-approve-reject-action.png" alt-text="The Approve\Reject option in the Evidence and Response management pane for an incident in the Microsoft Defender portal." lightbox="../../media/defender/m365-defender-approve-reject-action.png":::
 
 ## Next steps
 
@@ -237,4 +243,4 @@ As needed:
 - [Incidents overview](incidents-overview.md)
 - [Prioritize incidents](incident-queue.md)
 - [Manage incidents](manage-incidents.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

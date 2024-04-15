@@ -1,21 +1,16 @@
 ---
 title: Use role-based access control to grant fine-grained access to Microsoft Defender portal
 description: Create roles and groups within your security operations to grant access to the portal.
-keywords: rbac, role, based, access, control, groups, control, tier, aad
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security
 - tier2
 ms.topic: conceptual
-ms.subservice: mde
 search.appverid: met150
 ms.date: 12/18/2020
 ---
@@ -25,7 +20,7 @@ ms.date: 12/18/2020
 > [!NOTE]
 > If you are running the Microsoft Defender XDR preview program you can now experience the new Microsoft Defender 365 Unified role-based access control (RBAC) model. For more information, see [Microsoft Defender 365 Unified role-based access control (RBAC)](../defender/manage-rbac.md).
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -44,9 +39,9 @@ Large geo-distributed security operations teams typically adopt a tier-based mod
 
 |Tier|Description|
 |---|---|
-|Tier 1|**Local security operations team / IT team** <br> This team usually triages and investigates alerts contained within their geolocation and escalates to Tier 2 in cases where an active remediation is required.|
-|Tier 2|**Regional security operations team** <br> This team can see all the devices for their region and perform remediation actions.|
-|Tier 3|**Global security operations team** <br> This team consists of security experts and are authorized to see and perform all actions from the portal.|
+|Tier 1|**Local security operations team / IT team** <br/> This team usually triages and investigates alerts contained within their geolocation and escalates to Tier 2 in cases where an active remediation is required.|
+|Tier 2|**Regional security operations team** <br/>This team can see all the devices for their region and perform remediation actions.|
+|Tier 3|**Global security operations team** <br/>This team consists of security experts and are authorized to see and perform all actions from the portal.|
 
 > [!NOTE]
 > For Tier 0 assets, refer to [Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure) for security admins to provide more granular control of Microsoft Defender for Endpoint and Microsoft Defender XDR.
@@ -87,4 +82,5 @@ Someone with a Defender for Endpoint Global administrator role has unrestricted 
 
 - [RBAC roles](../office-365-security/migrate-to-defender-for-office-365-onboard.md#rbac-roles)
 - [Create and manage device groups in Microsoft Defender for Endpoint](machine-groups.md)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

@@ -1,22 +1,18 @@
 ---
 title: Microsoft Defender for Endpoint on Android - Privacy information
 description: Privacy controls, how to configure policy settings that impact privacy and information about the diagnostic data collected in Microsoft Defender for Endpoint on Android.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, android, privacy, diagnostic
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
 - mde-android
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: android
 search.appverid: met150
 ms.date: 12/18/2020
 ---

@@ -45,4 +45,4 @@ By default, content assembly is available for libraries on all SharePoint sites.
 
 3. On the **Manage Microsoft Syntex** page, select **Content assembly**.
 
-4. On the **Content assembly** page, select **No libraries**, and then select **Save**.
+4. On the **Content assembly** page, select **No sites**, and then select **Save**.

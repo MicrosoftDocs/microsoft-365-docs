@@ -1,12 +1,8 @@
 ---
 title: Alert classification playbooks
 description: Review the alerts for well-known attacks and take recommended actions to remediate the attack and protect your network.
-keywords: incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, alert classification, alert grading, classify alert
 search.appverid: met150
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords:
 - NOCSH
 ms.author: diannegali
@@ -22,12 +18,12 @@ ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.date: 08/11/2023
+ms.date: 02/11/2024
 ---
 
 # Alert classification playbooks
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 - Microsoft Defender XDR
@@ -95,4 +91,4 @@ See these playbooks for steps to more quickly classify alerts for the following 
 - [Password spray attacks](alert-grading-password-spray-attack.md)
 
 See [Investigate alerts](investigate-alerts.md) for information on how to examine alerts with the Microsoft Defender portal.
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

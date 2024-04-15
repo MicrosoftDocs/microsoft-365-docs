@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
-    - enabler-strategic
+    - essentials-manage
     - m365initiative-syntex
 ms.localizationpriority:  medium
 description: Learn how to apply a retention label to a model in Microsoft Syntex.
@@ -18,7 +18,7 @@ description: Learn how to apply a retention label to a model in Microsoft Syntex
 
 # Apply a retention label to a model in Microsoft Syntex
 
-<sup>**Applies to:**  &ensp; &#10003; Unstructured document processing &ensp; | &ensp; &#10003; Structured document processing &ensp;| &ensp; &#10003; All prebuilt models</sup>
+<sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
 </br>
 
@@ -77,33 +77,33 @@ On your model's view page in your document library, a new **Retention label** co
 
 For example, all *Insurance notice* documents that your model identifies will also have the *Business* retention label applied to them, preventing them from being deleted from the document library for five months. If an attempt is made to delete the file from the document library, an error will display saying it isn't allowed because of the applied retention label.
 
-## Add a retention label to a structured document processing model
+## Add a retention label to a structured or freeform document processing model
 
 > [!Important]
-> For retention labels to be available to apply to your structured document processing models, they need to be [created](../compliance/file-plan-manager.md#create-retention-labels) and [published](../compliance/create-apply-retention-labels.md#how-to-publish-retention-labels) in the Microsoft Purview compliance portal.
+> For retention labels to be available to apply to your structured or freeform document processing models, they need to be [created](../compliance/file-plan-manager.md#create-retention-labels) and [published](../compliance/create-apply-retention-labels.md#how-to-publish-retention-labels) in the Microsoft Purview compliance portal.
 
-You can either apply a retention label to a structured document processing model when you're creating a model, or apply it to an existing model.
+You can either apply a retention label to a structured or freeform document processing model when you're creating a model, or apply it to an existing model.
 
-### To add a retention label when you create a structured document processing model
+### To add a retention label when you create a structured or freeform document processing model
 
-1. When you're [creating a new structured document processing model](./create-a-form-processing-model.md), select **Advanced settings**.
+1. When you're [creating a new structured or freeform document processing model](./create-a-form-processing-model.md), select **Advanced settings**.
 
 2. In **Advanced settings**, in the **Retention label** section, select the menu and then select the retention label you want to apply to the model.
  
-     ![Add to a new structured document processing model.](../media/content-understanding/retention-label-forms.png)
+     ![Add label to a new structured or freeform document processing model.](../media/content-understanding/retention-label-forms.png)
 
-3.  After you've completed your remaining model settings, select **Create** to build your model.
+3. After you've completed your remaining model settings, select **Create** to build your model.
 
-### To add a retention label to an existing structured document processing model
+### To add a retention label to an existing structured or freeform document processing model
 
-You can add a retention label to an existing structured document processing model in different ways:
+You can add a retention label to an existing structured or freeform document processing model in different ways:
 
 - Through the **Automate** menu in the document library
-- Through the **Active model** settings in the document library 
+- Through the **Active model** settings in the document library
 
-#### To add a retention label to an existing structured document processing model through the Automate menu
+#### To add a retention label to an existing structured or freeform document processing model through the Automate menu
 
-You can add a retention label to an existing structured document processing model that you own through the **Automate** menu in the document library in which the model is applied.
+You can add a retention label to an existing structured or freeform document processing model that you own through the **Automate** menu in the document library in which the model is applied.
 
 1. In your document library to which the model is applied, select the **Automate** > **AI Builder** > **View model details**.
 
@@ -111,11 +111,11 @@ You can add a retention label to an existing structured document processing mode
 
 2. In the model details, in the **Retention label** section, select the retention label you want to apply, and then select **Save**.
 
-    ![Add to an existing structured document processing model.](../media/content-understanding/retention-label-model-details.png)</br> 
+    ![Add label to an existing structured or freeform document processing model.](../media/content-understanding/retention-label-model-details.png)</br>
 
-#### To add a retention label to an existing structured document processing model in the active model settings
+#### To add a retention label to an existing structured or freeform document processing model in the active model settings
 
-You can add a retention label to an existing structured document processing model that you own through the Active model settings in the document library in which the model is applied.
+You can add a retention label to an existing structured or freeform document processing model that you own through the Active model settings in the document library in which the model is applied.
 
 1. In the SharePoint document library in which the model is applied, select the **View active models** icon, and then select **View active models**.
 
@@ -123,11 +123,11 @@ You can add a retention label to an existing structured document processing mode
 
 2. In **Active models**, select the model to which you want to apply the retention label.
 
-    ![Model details.](../media/content-understanding/retention-label-model-details.png)</br> 
+    ![Model details.](../media/content-understanding/retention-label-model-details.png)</br>
 
 3. In the model details, in the **Retention label** section, select the retention label you want to apply, and then select **Save**.
 
 > [!NOTE]
-> You must be the model owner for the model settings pane to be editable. 
+> You must be the model owner for the model settings pane to be editable.
 
 

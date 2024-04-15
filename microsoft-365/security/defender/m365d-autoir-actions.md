@@ -1,12 +1,8 @@
 ---
 title: View and manage actions in the Action center
 description: Use the Action center to view and manage remediation actions
-keywords: action, center, autoair, automated, investigation, response, remediation
 search.appverid: met150
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: 
 - NOCSH
 ms.author: diannegali
@@ -101,4 +97,4 @@ If you've determined that a device or a file is not a threat, you can undo remed
 
 - [View the details and results of an automated investigation](m365d-autoir-results.md)
 - [Address false positives or false negatives](m365d-autoir-report-false-positives-negatives.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

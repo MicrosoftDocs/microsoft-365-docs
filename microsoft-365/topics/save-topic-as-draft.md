@@ -1,10 +1,10 @@
 ---
 ms.date: 11/29/2021
 title: Save a topic as a draft in Topics
-ms.author: daisyfeller
+ms.author: cjtan
 author: daisyfell
-manager: pamgreen
-ms.reviewer: hoanth
+manager: elizapo
+ms.reviewer: daisyfeller
 audience: admin
 ms.topic: article
 ms.collection:
@@ -36,7 +36,7 @@ You can save as a draft a new topic or a revised topic that you're working on, b
 
    ![Screenshot showing the save as draft option.](../media/knowledge-management/draft-save-as-draft.png)
 
-4. Select **Publish** to save your changes. After you publish the page, the topic name, alternate name description, and pinned people will display to users who can view the topic. Specific files, pages, and sites will only appear on the topic page, if the viewer has permissions to the topic.
+4. Select **Publish** to save your changes. After you publish the page, the topic name, alternate name description, and pinned people will display to users who can view the topic. Specific files, pages, and sites will only appear on the topic page, if the viewer has access to them.
 
 ## Save a revised topic as a draft
 

@@ -1,8 +1,8 @@
 ---
 title: Overview of Loop components in the Microsoft 365 ecosystem
-ms.author: mikeplum
-author: MikePlumleyMSFT
-manager: serdars
+ms.author: jtremper
+author: jacktremper
+manager: pamgreen
 audience: Admin
 ms.topic: conceptual
 ms.service: loop
@@ -12,6 +12,7 @@ ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection: 
   - M365-collaboration
+  - essentials-overview
 description: Learn how to manage Loop components in the Microsoft 365 ecosystem.
 f1.keywords:
 - CSH
@@ -24,16 +25,16 @@ appliesto:
 
 # Overview of Loop components in the Microsoft 365 ecosystem
 
-Loop components in Teams chat, Outlook emails, Whiteboards, or other places in the Microsoft 365 ecosystem offer a new way to ideate, create, and make decisions together. Send a component - like a table, task list, or paragraph — where everyone in your chat, email, or document can edit inline and see changes as they're made.
+Loop components in Teams chat, Outlook emails, Whiteboards, or other places in the Microsoft 365 ecosystem offer a new way to ideate, create, and make decisions together. Send a component—like a table, task list, or paragraph—where everyone in your chat, email, or document can edit inline and see changes as they're made.
 
 > [!Note]
 > Loop components is the first feature of the [Microsoft Loop app](https://www.microsoft.com/en-us/microsoft-loop) to become available in Teams.
 
-**Get tasks done faster together.** Crowd-source an agenda, track a group's action items, or take notes collectively. These are just a few scenarios made easier with Loop components.
+**Get tasks done faster together.** Crowd-source an agenda, track a group's action items, or take notes collectively are just a few scenarios made easier with Loop components.
 
 **Share components.** In this release, you can share Loop components into different Teams chats, Outlook emails, Whiteboards, and other places in the Microsoft 365 ecosystem. Recipients can edit from wherever they are and see updates instantly, no matter where the changes were made.
 
-**Start in chat or email, build from there.** Every component you create from Teams chat or Outlook email is automatically saved to a file in OneDrive. So, you might begin collaborating in chat; then, later move to the file in a full tab on Office.com, where you have a larger visual space for editing and can add as many components as you like.
+**Start in chat or email, build from there.** Every component you create from Teams chat or Outlook email is automatically saved to a file in OneDrive. So, you might begin collaborating in chat. Then, later move to the file in a full tab on Office.com, where you have a larger visual space for editing and can add as many components as you like.
 
 For information on admin settings for Loop components in Teams, see [Settings management in Cloud Policy](loop-workspaces-configuration.md#settings-management-in-cloud-policy).
 
@@ -41,6 +42,7 @@ For information on admin settings for Loop components in Teams, see [Settings ma
 
 - Available on Teams apps on Windows, Mac, iOS, Android, and web.
 - Available on Outlook apps on Windows and web.
+- Available on OneNote apps on Windows and web.
 - Available on Whiteboard apps on Windows, Surface, iOS, Android, and web. iOS and Android are "view and edit" but users can't paste new ones.
 
 ## Loop components and .loop files
@@ -71,18 +73,12 @@ Version History allows you to review, restore, or copy from previous versions of
 
 The .loop files can only be opened as links in your browser, such as Office.com, and as Loop components in Teams chat, Outlook email, Whiteboard, and Word for the web. If downloaded, they can't be opened again without first uploading them back to OneDrive or SharePoint.
 
-## Do .loop (and .fluid) files support eDiscovery?
-
-Loop components created in Teams, Outlook, and Word for the web, are discoverable and have eDiscovery workflow support using the Microsoft Purview tool. Currently, these files are stored in the creator’s OneDrive and are available for search and collection in both eDiscovery (Standard) and eDiscovery (Premium). Render in review and HTML offline export format is supported on eDiscovery (Premium). You can also download and re-upload the files to any OneDrive to view them in their native format.
-
-A [graph export API](/graph/api/driveitem-get-content-format) solution is also available for Loop components that supports both raw export and an HTML offline format.
-
 ## If Loop is disabled from the admin switch, what will the user experience be?
 
 If you disable these experiences as outlined in the [Settings management](loop-workspaces-configuration.md#settings-management-in-cloud-policy) section, the following experience-changes will apply:
 - The create/insert entry point within Teams messaging and Outlook email will be hidden. The users won't be able to create new .loop files.
-- Existing messages that would have formerly rendered as an interactive Loop component will instead render as a hyperlink. No interactive content will be displayed within the app that Loop components have been disabled in.
-- When you click on the hyperlink or browse to a .loop file in OneDrive for Business and click it to open, it will open in a separate browser tab. You will still be able to edit the file.
+- Existing messages that would have rendered as an interactive Loop component will instead render as a hyperlink. No interactive content is displayed within the app that Loop components have been disabled in.
+- When you click on the hyperlink or browse to a .loop file in OneDrive and click it to open, it opens in a separate browser tab. You can still edit the file.
 
 ## Known issues
 
@@ -100,6 +96,8 @@ If you disable these experiences as outlined in the [Settings management](loop-w
 [Overview of Loop components in Teams](/microsoftteams/live-components-in-teams)
 
 [Use Loop components in Outlook](https://support.microsoft.com/office/9b47c279-011d-4042-bd7f-8bbfca0cb136)
+
+[Use Loop components in OneNote](https://support.microsoft.com/office/use-loop-components-in-onenote-ed8a43d9-f6fd-4ad6-bc9d-8841db4da459)
 
 [Use Loop components in Word for the web](https://support.microsoft.com/office/use-loop-components-in-word-for-the-web-645cc20d-5c98-4bdb-b559-380c5a27c5e5)
 

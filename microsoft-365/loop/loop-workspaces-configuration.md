@@ -16,6 +16,7 @@ ms.collection:
 - Strat_SP_admin
 - Microsoft 365-collaboration
 - Tier3
+- essentials-manage
 search.appverid:
 - SPO160
 - MET150
@@ -34,7 +35,7 @@ Just like other Microsoft 365 experiences, Loop also uses core services across S
 
 ### License requirements
 
-Licensing through the new Loop with workspaces service plan covers the creation of new workspaces. If these requirements are not met, users will experience failures in the Loop app; won't receive notifications or signals when they collaborate and update; and encounter failures in other experiences also.
+Licensing through the new Loop with workspaces service plan covers the creation of new workspaces and management of workspace members. The full set of experiences enabled and the specific licenses that include the Loop with workspaces service plan are covered in [Loop access via Microsoft 365 subscriptions](https://support.microsoft.com/office/loop-access-via-microsoft-365-subscriptions-92915461-4b14-49a4-9cd4-d1c259292afa).
 
 ### WebSocket connections
 
@@ -88,7 +89,7 @@ The Loop app checks the following Cloud Policy setting to see if workspaces are 
 
 To configure this Cloud Policy setting, perform the following steps:
 
-1. Sign in to https://config.office.com/ with your Microsoft 365 admin credentials.
+1. Sign in to [https://config.office.com](https://config.office.com) with your Microsoft 365 admin credentials.
 1. Select **Customization** from the left pane.
 1. Select **Policy Management**.
 1. Create a new policy configuration or edit an existing one.
@@ -102,12 +103,12 @@ To configure this Cloud Policy setting, perform the following steps:
 1. Reassign priority for any security group, if necessary. (If two or more policy configurations are applicable to the same set of users, the one with the higher priority is applied.)
 
 In case you create a new policy configuration or change the configuration for an existing policy, there will be a delay in the change being reflected:
-- If there were existing policy configurations prior to the change, then it takes 90 mins for the change to be reflected.
-- If there were no policy configurations prior to the change, then it takes 24 hours for the change to be reflected.
+
+- If there were existing policy configurations before the change, then it takes 90 mins for the change to be reflected.
+- If there were no policy configurations before the change, then it takes 24 hours for the change to be reflected.
 
 > [!NOTE]
->  In order to target only a group of users in your organization to be able to create and view Loop content in workspaces, create a second group that targets All users, set this group to Disabled, and make it a lower priority than your target group that is set to Enabled. This will override the default Not Configured state to Disabled for all users but your target group.
-
+> In order to target only a group of users in your organization to be able to create and view Loop content in workspaces, create a second group that targets All users, set this group to Disabled, and make it a lower priority than your target group that is set to Enabled. This will override the default Not Configured state to Disabled for all users but your target group.
 
 ## Related topics
 

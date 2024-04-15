@@ -4,7 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: ragovind
+ms.reviewer: crimora, ebamoh
 ms.date: 7/03/2023
 audience: Admin
 ms.topic: article
@@ -32,7 +32,7 @@ You must be a Global Administrator of the partner tenant.
 
 ## Create a tag
 
-1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Tenants**.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Tenants**.
 
 2. Select **Manage Tags**.
 
@@ -44,7 +44,7 @@ You must be a Global Administrator of the partner tenant.
 
 ## Edit a tag
 
-1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Tenants**.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Tenants**.
 
 2. Select **Manage Tags**.
 
@@ -56,7 +56,7 @@ You must be a Global Administrator of the partner tenant.
 
 ## Assign a tag
 
-1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Tenants**.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Tenants**.
 
 2. From the list of tenants, select the three dots (more actions) next to the tenant you want to tag.
 
@@ -71,7 +71,7 @@ Tags that are already assigned to the tenant have a check mark to the right of t
 
 ## Delete a tag
 
-1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Tenants**.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Tenants**.
 
 2. Select **Manage Tags**.
 
@@ -83,7 +83,7 @@ Tags that are already assigned to the tenant have a check mark to the right of t
 
 ## Remove a tag
 
-1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Tenants**.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Tenants**.
 
 2. From the list of tenants, select the three dots (more actions) next to the tenant you want to edit.
 

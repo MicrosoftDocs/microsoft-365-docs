@@ -1,14 +1,9 @@
 ---
 title: Get relevant info about an entity with go hunt
 description: Learn how to use the go hunt tool on to quickly query for relevant information about an entity or event using advanced hunting.
-keywords: advanced hunting, incident, pivot, entity, go hunt, relevant events, threat hunting, cyber threat hunting, search, query, telemetry, Microsoft 365, Microsoft 365 Defender
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
 ms.subservice: adv-hunting
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: 
   - NOCSH
 ms.author: maccruz
@@ -25,7 +20,7 @@ ms.date: 08/31/2023
 
 # Quickly hunt for entity or event information with go hunt
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 - Microsoft Defender XDR
@@ -120,4 +115,4 @@ In addition to modifying the query to get more relevant results, you can also:
 - [Learn the query language](advanced-hunting-query-language.md)
 - [Work with query results](advanced-hunting-query-results.md)
 - [Custom detection rules](custom-detection-rules.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

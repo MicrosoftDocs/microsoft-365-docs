@@ -1,17 +1,15 @@
 ---
 title: Use attack surface reduction rules to prevent malware infection
 description: Attack surface reduction rules can help prevent exploits from using apps and scripts to infect devices with malware.
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: asr
 ms.localizationpriority: medium
 audience: ITPro
-author: dansimp
-ms.author: dansimp
-ms.reviewer: oogunrinde, sugamar
-manager: dansimp
-ms.custom:
-- mde-asr
-- admindeeplinkDEFENDER
+author: siosulli
+ms.author: siosulli
+ms.reviewer: sugamar
+manager: deniseb
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.collection:
 - m365-security
@@ -57,7 +55,7 @@ For a sequential, end-to-end process of how to manage attack surface reduction r
 
 You can assess how an attack surface reduction rule might affect your network by opening the security recommendation for that rule in [Microsoft Defender Vulnerability Management](/windows/security/threat-protection/).
 
-:::image type="content" source="images/asrrecommendation.png" alt-text="The attack surface reduction recommendation" lightbox="images/asrrecommendation.png":::
+:::image type="content" source="media/asrrecommendation.png" alt-text="The attack surface reduction recommendation" lightbox="media/asrrecommendation.png":::
 
 In the recommendation details pane, check for user impact to determine what percentage of your devices can accept a new policy enabling the rule in blocking mode without adversely affecting productivity.
 

@@ -1,93 +1,88 @@
 ---
 title: Investigate users in Microsoft Defender XDR
 description: Investigate users for an incident in the Microsoft Defender portal.
-keywords: security, malware, Microsoft 365, M365, security center, monitor, report, identities, data, devices, apps, incident, analyze, response
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-f1.keywords:
+f1.keywords: 
 - NOCSH
 ms.author: diannegali
 author: diannegali
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - m365-security
-  - tier2 
+  - tier2
+  - usx-security
 ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
-ms.date: 08/04/2023
+ms.date: 03/29/2024
+appliesto:
+    - Microsoft Defender XDR
+    - Microsoft Sentinel in the Microsoft Defender portal
 ---
 
-# Investigate users in Microsoft Defender XDR
+# User entity page in Microsoft Defender
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+The user entity page in the Microsoft Defender portal helps you in your investigation of user entities. The page contains all the important information about a given user entity. If an alert or incident indicates that a user might be compromised or is suspicious, check and investigate the user entity.
 
-**Applies to:**
+You can find user entity information in the following views:
 
-- Microsoft Defender XDR
-
-The user entity page in Microsoft Defender XDR helps you in your investigation of user identities. The page has all the important information about each identity. If an alert or incident indicates that a user might be compromised or is suspicious, check and investigate the user profile. 
-
-You can find identity information in the following views:
-
-- Identities page
+- Identities page, under **Assets**
 - Alerts queue
 - Any individual alert/incident
-- Device page
+- Devices page
+- Any individual device entity page
 - Activity log
 - Advanced hunting queries
 - Action center
- 
-A clickable identity link is available in these views that will take you to the **User** page where more details about the user are shown. For example, you can see the details of user accounts identified in the alerts of an incident in the Microsoft Defender portal at **Incidents & alerts** \> ***incident*** \> **Users**.
 
-:::image type="content" source="../../media/investigate-users/Fig1-user-incident-overview.png" alt-text="The Users page for an incident in the Microsoft Defender portal." lightbox="../../media/investigate-users/Fig1-user-incident-overview.png":::
+Wherever user entities appear in these views, select the entity to view the **User** page, which displays more details about the user. For example, you can see the details of user accounts identified in the alerts of an incident in the Microsoft Defender portal at **Incidents & alerts > Incidents > *incident* > Assets > Users**.
 
-When you investigate a specific identity, you'll see the:
+:::image type="content" source="../../media/investigate-users/user-incident-assets.png" alt-text="Screenshot of the Users page for an incident in the Microsoft Defender portal.":::
 
-- [Overview](#overview), including identity details, incident and alerts visual view, investigation priority, and scored timeline
-- [Active Alerts](#alerts) tab
+When you investigate a specific user entity, you see the following tabs on its entity page:
+
+- [Overview](#overview), including entity details, incidents and alerts visual view, investigation priority, and scored timeline
+- [Incidents and alerts](#incidents-and-alerts) tab
 - [Observed in organization](#observed-in-organization) tab
-- [Identity timeline](#timeline) tab
-- [Remediation actions](#remediation-actions)
+- [Timeline](#timeline) tab
+- [Sentinel events](#sentinel-events) tab
 
-:::image type="content" source="../../media/investigate-users/Fig2-user-incident-overview.png" alt-text="A specific user's page in the Microsoft Defender portal" lightbox="../../media/investigate-users/Fig2-user-incident-overview.png":::
+The user page shows the Microsoft Entra organization as well as groups, helping you understand the groups and permissions associated with a user.
 
-> [!NOTE]
-> The user page shows the Microsoft Entra organization as well as groups, helping you understand the groups and permissions associated with a user.
-
+[!INCLUDE [unified-soc-preview](../../includes/unified-soc-preview.md)]
 ## Overview
 
 ### Entity details
 
-The **Entity details** on the left of the page provide information about the user, such as the Microsoft Entra identity risk level, the number of devices the user is signed in to, when the user was first and last seen, the user's accounts, groups that the user belongs to, contact information, and more. You'll see other details depending on the integration features you've enabled.
+The **Entity details** panel on the left side of the page provides information about the user, such as the Microsoft Entra identity risk level, the number of devices the user is signed in to, when the user was first and last seen, the user's accounts, groups that the user belongs to, contact information, and more. You see other details depending on the integration features you enabled.
 
 ### Visual view of incidents and alerts
 
-This card includes all incidents and alerts, grouped into severities, associated with an identity.
+This card includes all incidents and alerts associated with the user entity, grouped by severity.
 
 ### Investigation priority
 
-This card includes the calculated investigation priority score breakdown and a two-week trend for an identity, including whether the identity score is on the high percentile for that tenant.
+This card includes the user entity's calculated investigation priority score breakdown, and a two-week trend for that score, including the percentile of the score in relation to the tenant.
 
-### Active directory account control 
+### Active directory account controls
 
-In this card, Defender for Identity surfaces security settings that may need your attentions. You can see important flags about the user, such as if the user can press enter to bypass the password, and if the user has a password that never expires, etc.
+This card surfaces Microsoft Defender for Identity security settings that may need your attention. You can see important flags about the user's account settings, such as if the user can press enter to bypass the password, and if the user has a password that never expires, etc.
 
 For more information, see [User Account Control flags](/windows/win32/adschema/a-useraccountcontrol).
 
 ### Scored activities
 
-This card includes all activities and alerts contributing to the overall Investigation priority score over the last seven days.
+This card includes all activities and alerts contributing to the entity's investigation priority score over the last seven days.
 
 ### Organization tree
 
-This section shows the hierarchy for the identity as reported by Microsoft Defender for Identity.
+This section shows the user entity's place in the organizational hierarchy as reported by Microsoft Defender for Identity.
 
 ### Account tags
 
-Defender for Identity pulls tags out of Active Directory to give you a single interface for monitoring your Active Directory users and entities. Tags provide you with details from Active Directory about the entity, and include:
+Microsoft Defender for Identity pulls tags out of Active Directory to give you a single interface for monitoring your Active Directory users and entities. Tags provide you with details from Active Directory about the entity, and include:
 
 |Name | Description |
 |-----|-------------|
@@ -107,18 +102,31 @@ For more information, see [Defender for Identity entity tags in Microsoft Defend
 > [!NOTE]
 > The organization tree section and the account tags are available when a Microsoft Defender for Identity license is available.
 
-## Alerts
+:::image type="content" source="../../media/investigate-users/user-incident-overview.png" alt-text="Screenshot of a specific user's page in the Microsoft Defender portal" lightbox="../../media/investigate-users/user-incident-overview.png":::
 
-You can see all active alerts involving the user from the last 180 days in this tab. Information like alert severity and the time the alert was generated is available in this tab. Clicking on the alert row shows you additional information about the alert.
+## Incidents and alerts
 
-:::image type="content" source="../../media/investigate-users/Fig3-user-incident-alertstab.png" alt-text="The user account's related alerts seen in the Alerts tab in the Microsoft Defender portal" lightbox="../../media/investigate-users/Fig3-user-incident-alertstab.png":::
+You can see all active incidents and alerts involving the user from the last six months in this tab. All the information from the main incidents and alerts queues is shown here. This list is a filtered version of the [incidents queue](incidents-overview.md), and shows a short description of the incident or alert, its severity (high, medium, low, informational), its status in the queue (new, in progress, resolved), its classification (not set, false alert, true alert), investigation state, category, who is assigned to address it, and last activity observed.
+
+You can customize the number of items displayed and which columns are displayed for each item. The default behavior is to list 30 items per page. You can also filter the alerts by severity, status, or any other column in the display.
+
+The *impacted entities* column refers to all the device and user entities referenced in the incident or alert.
+
+When an incident or alert is selected, a fly-out appears. From this panel you can manage the incident or alert and view more details such as incident/alert number and related devices. Multiple alerts can be selected at a time.
+
+To see a full page view of an incident or alert, select its title.
+
+:::image type="content" source="../../media/investigate-users/user-incident-alertstab.png" alt-text="Screenshot of the user account's related alerts seen in the Alerts tab in the Microsoft Defender portal" lightbox="../../media/investigate-users/user-incident-alertstab.png":::
 
 ## Observed in organization
 
-- Devices - this section includes information on the devices the identity signed in to, including most and least used in the last 180 days.
-- Locations - this section includes all the observed locations for the identity in the last 30 days.
-- Groups - this section includes all observed on-premises groups for the identity, as reported by Defender for Identity.
-- Lateral movement paths - this section includes all profiled lateral movement paths from the on-premises environment detected by Defender for Identity.
+- **Devices**: this section shows all the devices the user entity signed into in the prior 180 days, indicating the most and least used.
+
+- **Locations**: this section shows all the observed locations for the user entity in the last 30 days.
+
+- **Groups**: this section shows all observed on-premises groups for the user entity, as reported by Microsoft Defender for Identity.
+
+- **Lateral movement paths**: this section shows all profiled lateral movement paths from the on-premises environment, as detected by Defender for Identity.
 
 > [!NOTE]
 > Groups and lateral movement paths are available when a Microsoft Defender for Identity license is available.
@@ -129,27 +137,30 @@ The map provides a list of other devices or users an attacker can take advantage
 
 The lateral movement path report, which can be viewed by date, is always available to provide information about the potential lateral movement paths discovered and can be customized by time. Select a different date using **View a different date** to view previous lateral movement paths found for an entity. The graph only displays if a potential lateral movement path has been found for an entity in the past two days.
 
-:::image type="content" source="../../media/investigate-users/Fig4-user-incident-difftabs.png" alt-text="The Observed in organization view showing device, group, location, and lateral movement paths for a user in the Microsoft Defender portal" lightbox="../../media/investigate-users/Fig4-user-incident-difftabs.png":::
+:::image type="content" source="../../media/investigate-users/user-incident-observed.png" alt-text="Screenshot of the Observed in organization view showing device, group, location, and lateral movement paths for a user in the Microsoft Defender portal" lightbox="../../media/investigate-users/user-incident-observed.png":::
 
 ## Timeline
 
-The timeline represents activities and alerts observed from a user's identity in the last 30 days. It unifies the user's identity entries across Microsoft Defender for Identity, Microsoft Defender for Cloud Apps, and Microsoft Defender for Endpoint workloads. By using the timeline, you can focus on activities a user performed or were performed on them in specific timeframes.
+The timeline displays user activities and alerts observed from a user's identity in the last 30 days. It unifies the user's identity entries across Microsoft Defender for Identity, Microsoft Defender for Cloud Apps, and Microsoft Defender for Endpoint workloads. By using the timeline, you can focus on activities a user performed or were performed on them in specific timeframes.
+
+For users of the unified SOC platform to see alerts from Microsoft Sentinel based on data sources other than the ones in the previous paragraph, they can find these alerts and other information in the **Sentinel events** tab, [described below](#sentinel-events).
 
 - **Custom time range picker:** You can choose a timeframe to focus your investigation on the last 24 hours, the last 3 days and so on. Or you can choose a specific timeframe by clicking on **Custom range**. For example:
 
-  ![Screenshot that shows how to choose time frame.](media/investigate-users/image.png)
-  
+  :::image type="content" source="../../media/image.png" alt-text="Screenshot that shows how to choose time frame." lightbox="../../media/image.png":::
+
 - **Timeline filters:** In order to improve your investigation experience, you can use the timeline filters: Type (Alerts and/or user's related activities), Alert severity, Activity type, App, Location, Protocol. Each filter depends on the others, and the options in each filter (drop-down) only contains the data that is relevant for the specific user.
 
-- **Export button:** You can export the timeline to a CSV file. Export is limited to the first 5000 records and contains the data as it displays in the UI (same filters and columns). 
+- **Export button:** You can export the timeline to a CSV file. Export is limited to the first 5000 records and contains the data as it displays in the UI (same filters and columns).
 
 - **Customized columns:** You can choose which columns to expose in the timeline by selecting the **Customize columns** button. For example:
 
-  ![Screenshot that shows the user's image.](image2.png)
+  :::image type="content" source="../../media/image2.png" alt-text="Screenshot that shows the user's image." lightbox="../../media/image2.png":::
 
 ### What data types are available?
 
 The following data types are available in the timeline:
+
 - A user's impacted alerts
 - Active Directory and Microsoft Entra activities
 - Cloud apps' events
@@ -159,24 +170,73 @@ The following data types are available in the timeline:
 ### What information is displayed?
 
 The following information is displayed in the timeline:
-- Activity/alert description
+
 - Date and time of the activity
+- Activity/alert description
 - Application that performed the activity
 - Source device/IP address
-- [MITRE ATT&CK](https://attack.mitre.org/) techniques 
-- Alert status and severity
+- [MITRE ATT&CK](https://attack.mitre.org/) techniques
+- Alert severity and status
 - Country/region where the client IP address is geolocated
 - Protocol used during the communication
-- Target device (customized column)
-- Number of times the activity happened (customized column)
+- Target device (optional, viewable by customizing columns)
+- Number of times the activity happened (optional, viewable by customizing columns)
 
 For example:
 
-![Screenshot of the Timeline tab.](media/investigate-users/time.png)
+:::image type="content" source="../../media/investigate-users/user-incident-timeline.png" alt-text="Screenshot of the Timeline tab." lightbox="../../media/investigate-users/user-incident-timeline.png":::
 
 > [!NOTE]
-> Microsoft Defender XDR can display date and time information using either your local time zone or UTC. The selected time zone will apply to all date and time information shown in the Identity timeline. 
-> To set the time zone for these features, go to **Settings** > **Security center** > **Time zone**.
+> Microsoft Defender XDR can display date and time information using either your local time zone or UTC. The selected time zone will apply to all date and time information shown in the Identity timeline.
+>
+> To set the time zone for these features, go to **Settings** \> **Security center** \> **Time zone**.
+
+## Sentinel events
+
+If your organization onboarded Microsoft Sentinel to the Defender portal, this additional tab is on the user entity page. This tab imports the [Account entity page from Microsoft Sentinel](/azure/sentinel/entity-pages).
+
+### Sentinel timeline
+
+This timeline shows alerts associated with the user entity. These alerts include those seen on the **Incidents and alerts** tab and those created by Microsoft Sentinel from third-party, non-Microsoft data sources.
+
+This timeline also shows [bookmarked hunts](/azure/sentinel/bookmarks) from other investigations that reference this user entity, user activity events from external data sources, and unusual behaviors detected by Microsoft Sentinel's [anomaly rules](/azure/sentinel/soc-ml-anomalies).
+
+### Insights
+
+Entity insights are queries defined by Microsoft security researchers to help you investigate more efficiently and effectively. These insights automatically ask the big questions about your user entity, providing valuable security information in the form of tabular data and charts. The insights include data regarding sign-ins, group additions, anomalous events and more, and include advanced machine learning algorithms to detect anomalous behavior.
+
+The following are some of the insights shown:
+
+- User peers based on security groups membership.
+- Actions by account.
+- Actions on account.
+- Event logs cleared by user.
+- Group additions.
+- Anomalously high office operation count.
+- Resource access.
+- Anomalously high Azure sign-in result count.
+- UEBA insights.
+- User access permissions to Azure subscriptions.
+- Threat indicators related to user.
+- Watchlist insights (Preview).
+- Windows sign-in activity.
+
+The insights are based on the following data sources:
+
+- Syslog (Linux)
+- SecurityEvent (Windows)
+- AuditLogs (Microsoft Entra ID)
+- SigninLogs (Microsoft Entra ID)
+- OfficeActivity (Office 365)
+- BehaviorAnalytics (Microsoft Sentinel UEBA)
+- Heartbeat (Azure Monitor Agent)
+- CommonSecurityLog (Microsoft Sentinel)
+
+:::image type="content" source="../../media/investigate-users/user-incident-sentinel-events.png" alt-text="Screenshot of Sentinel events tab in user entity page.":::
+
+If you want to further explore any of the insights in this panel, select the link accompanying the insight. The link takes you to the **Advanced hunting** page, where it displays the query underlying the insight, along with its raw results. You can modify the query or drill down into the results to expand your investigation or just satisfy your curiosity.
+
+:::image type="content" source="../../media/investigate-users/insights-advanced-hunting.png" alt-text="Screenshot of Advanced hunting screen with insight query.":::
 
 ## Remediation actions
 
@@ -187,7 +247,7 @@ From the Overview page, you can do these additional actions:
 - Reset investigation priority score for the user
 - View Microsoft Entra account settings, related governance, the user's owned files, or the user's shared files
 
-:::image type="content" source="../../media/investigate-users/Fig6-user-incident-actions.png" alt-text="The actions for remediation for a user in the Microsoft Defender portal" lightbox="../../media/investigate-users/Fig6-user-incident-actions.png":::
+:::image type="content" source="../../media/investigate-users/user-incident-actions.png" alt-text="Screenshot of the actions for remediation for a user in the Microsoft Defender portal" lightbox="../../media/investigate-users/user-incident-actions.png":::
 
 For more information, see [Remediation actions in Microsoft Defender for Identity](/defender-for-identity/remediation-actions).
 
@@ -200,8 +260,12 @@ As needed for in-process incidents, continue your [investigation](investigate-in
 - [Incidents overview](incidents-overview.md)
 - [Prioritize incidents](incident-queue.md)
 - [Manage incidents](manage-incidents.md)
+- [Microsoft Defender XDR overview](microsoft-365-defender.md)
+- [Turn on Microsoft Defender XDR](m365d-enable.md)
+- [Device entity page in Microsoft Defender](entity-page-device.md)
+- [IP address entity page in Microsoft Defender](entity-page-ip.md)
+- [Microsoft Defender XDR integration with Microsoft Sentinel](microsoft-365-defender-integration-with-azure-sentinel.md)
+- [Connect Microsoft Sentinel to Microsoft Defender XDR (preview)](microsoft-sentinel-onboard.md)
 
 
-
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

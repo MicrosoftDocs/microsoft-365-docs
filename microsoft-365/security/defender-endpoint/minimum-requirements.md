@@ -1,19 +1,19 @@
 ---
 title: Minimum requirements for Microsoft Defender for Endpoint
 description: Understand the licensing requirements and requirements for onboarding devices to the service
-ms.service: microsoft-365-security
-ms.author: macapara
-author: mjcaparas
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
 ms.reviewer: pahuijbr
 ms.localizationpriority: medium
 ms.date: 11/15/2023
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier1
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: onboard
 search.appverid: met150
 ---
 
@@ -37,7 +37,7 @@ There are some minimum requirements for onboarding devices to the Defender for E
 
 ## Licensing requirements
 
-- [Defender for Endpoint Plan 1 and Plan 2](defender-endpoint-plan-1-2.md) (standalone or as part of other Microsoft 365 plans)
+- [Defender for Endpoint Plan 1 and Plan 2](microsoft-defender-endpoint.md) (standalone or as part of other Microsoft 365 plans)
 
 - [Microsoft Defender for Business](../defender-business/mdb-overview.md) (for small and medium-sized businesses)
 
@@ -68,14 +68,14 @@ Devices on your network must be running one of these editions. New features or c
 ### Supported Windows versions
 
 - Windows 11 Enterprise
-- Windows 11 Enterprise IoT
+- Windows 11 IoT Enterprise
 
 - Windows 11 Education
 - Windows 11 Pro
 - Windows 11 Pro Education
 - Windows 10 Enterprise
 - [Windows 10 Enterprise LTSC 2016 (or later)](/windows/whats-new/ltsc/)
-- Windows 10 Enterprise IoT (including LTSC)
+- Windows 10 IoT Enterprise (including LTSC)
 - Windows 10 Education
 - Windows 10 Pro
 - Windows 10 Pro Education
@@ -114,7 +114,7 @@ To add antimalware protection to these older operating systems, you can use [Sys
 > - Endpoints running mobile versions of Windows (such as Windows CE and Windows 10 Mobile) aren't supported.
 > - Virtual Machines running Windows 10 Enterprise 2016 LTSB can encounter performance issues when used on non-Microsoft virtualization platforms.
 > - For virtual environments, we recommend using Windows 10 Enterprise LTSC 2019 or later.
-> - The standalone versions of [Defender for Endpoint Plan 1 and Plan 2](defender-endpoint-plan-1-2.md) do not include server licenses. To onboard servers to those plans, you'll need an additional license, such as Microsoft Defender for Servers Plan 1 or Plan 2 (as part of the [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) offering). To learn more. see [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md).
+> - The standalone versions of [Defender for Endpoint Plan 1 and Plan 2](microsoft-defender-endpoint.md) do not include server licenses. To onboard servers to those plans, you'll need an additional license, such as Microsoft Defender for Servers Plan 1 or Plan 2 (as part of the [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) offering). To learn more. see [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md).
 > - If your organization is a small or medium-sized business, see [Microsoft Defender for Business requirements](../defender-business/mdb-requirements.md). 
 
 ### Hardware requirements

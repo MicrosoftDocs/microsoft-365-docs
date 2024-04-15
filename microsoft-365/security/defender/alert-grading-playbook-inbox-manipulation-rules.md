@@ -1,11 +1,7 @@
 ---
 title: Alert classification for suspicious inbox manipulation rules
 description: Alert classification for suspicious inbox manipulation rules to review the alerts and take recommended actions to remediate the attack and protect your network.
-keywords: incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, alert classification, alert grading, classify alert
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords:
   - NOCSH
 ms.author: diannegali
@@ -26,22 +22,22 @@ ms.date: 04/05/2023
 
 # Alert classification for suspicious inbox manipulation rules
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 - Microsoft Defender XDR
 
-Threat actors can use compromised user accounts for many malicious purposes including reading emails in a user's inbox, creating inbox rules to forward emails to external accounts, deleting traces, and sending phishing mails. Malicious inbox rules are common during business email compromise (BEC) and phishing campaigns and it is important to monitor for them consistently.
+Threat actors can use compromised user accounts for many malicious purposes including reading emails in a user's inbox, creating inbox rules to forward emails to external accounts, deleting traces, and sending phishing mails. Malicious inbox rules are common during business email compromise (BEC) and phishing campaigns and it's important to monitor for them consistently.
 
 This playbook helps you investigate any incident related to suspicious inbox manipulation rules configured by attackers and take recommended actions to remediate the attack and protect your network. This playbook is for security teams, including security operations center (SOC) analysts and IT administrators who review, investigate, and grade the alerts. You can quickly grade alerts as either a true positive (TP) or a false positive (TP) and take recommended actions for the TP alerts to remediate the attack.
 
 The results of using this playbook are:
 
-- You have identified the alerts associated with inbox manipulation rules as malicious (TP) or benign (FP) activities.
+- You identify the alerts associated with inbox manipulation rules as malicious (TP) or benign (FP) activities.
 
-  If malicious, you have removed malicious inbox manipulation rules.
+  If malicious, you remove malicious inbox manipulation rules.
 
-- You have taken the necessary action if emails have been forwarded to a malicious email address.
+- You take the necessary action if emails were forwarded to a malicious email address.
 
 ## Inbox manipulation rules
 
@@ -49,13 +45,13 @@ Inbox rules are set to automatically manage email messages based on predefined c
 
 ### Malicious inbox manipulation rules
 
-Attackers might set up email rules to hide incoming emails in the compromised user mailbox to obscure their malicious activities from the user. They might also set rules in the compromised user mailbox to delete emails, move the emails into another less noticeable folder (like RSS), or forward mails to an external account. Some rules might move all the emails to another folder and mark them as "read", while some rules might move only mails which contain specific keywords in the email message or subject.
+Attackers might set up email rules to hide incoming emails in the compromised user mailbox to obscure their malicious activities from the user. They might also set rules in the compromised user mailbox to delete emails, move the emails into another less noticeable folder (like RSS), or forward mails to an external account. Some rules might move all the emails to another folder and mark them as "read", while some rules might move only mails that contain specific keywords in the email message or subject.
 
-For example, the inbox rule might be set to look for keywords like "invoice", "phish", "do not reply", "suspicious email", or "spam" among others, and move them to an external email account. Attackers might also use the compromised user mailbox to distribute spam, phishing emails, or malware.
+For example, the inbox rule might be set to look for keywords like "invoice," "phish," "do not reply," "suspicious email," or "spam," among others, and move them to an external email account. Attackers might also use the compromised user mailbox to distribute spam, phishing emails, or malware.
 
 ## Workflow
 
-Here is the workflow to identify suspicious inbox manipulation rule activities.
+Here's the workflow to identify suspicious inbox manipulation rule activities.
 
 :::image type="content" source="../../media/alert-grading-playbook-inbox-manipulation-rules/alert-grading-playbook-inbox-manipulation-rules-workflow.png" alt-text="Alert investigation workflow for inbox manipulation rules" lightbox="../../media/alert-grading-playbook-inbox-manipulation-rules/alert-grading-playbook-inbox-manipulation-rules-workflow.png":::
 
@@ -79,9 +75,9 @@ Determine if the rules look suspicious according to the following rule parameter
 
 - Keywords
 
-   The attacker might apply the manipulation rule only to emails that contains certain words. You can find these keywords under certain attributes such as: "BodyContainsWords", "SubjectContainsWords" or "SubjectOrBodyContainsWords".
+   The attacker might apply the manipulation rule only to emails that contains certain words. You can find these keywords under certain attributes such as: "BodyContainsWords," "SubjectContainsWords," or "SubjectOrBodyContainsWords."
 
-   If there are filtering by keywords, then check whether the keywords seem suspicious to you (common scenarios are to filter emails related to the attacker activities, such as "phish", "spam", "do not reply", among others).
+   If there are filtering by keywords, then check whether the keywords seem suspicious to you (common scenarios are to filter emails related to the attacker activities, such as "phish," "spam," and "do not reply," among others).
 
    If there is no filter at all, it might be suspicious as well.
 
@@ -192,4 +188,4 @@ CloudAppEvents
 - [Suspicious email forwarding activity](alert-grading-playbook-email-forwarding.md)
 - [Suspicious inbox forwarding rules](alert-grading-playbook-inbox-forwarding-rules.md)
 - [Investigate alerts](investigate-alerts.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

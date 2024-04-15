@@ -1,12 +1,7 @@
 ---
 title: Microsoft Defender XDR integration with Microsoft Sentinel
 description: Use Microsoft Sentinel as the SIEM for Microsoft Defender XDR incident and events.
-keywords: incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365
-search.product: eADQiWindows 10XVcnh
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: 
   - NOCSH
 ms.author: dansimp
@@ -26,7 +21,7 @@ ms.date: 02/22/2023
 
 # Microsoft Defender XDR integration with Microsoft Sentinel
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 - Microsoft Defender XDR
@@ -57,4 +52,4 @@ Here's how it works.
 
 - [Overview of incidents in Microsoft Defender XDR](incidents-overview.md)
 - [Investigate incidents with Microsoft Sentinel](/azure/sentinel/tutorial-investigate-cases)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

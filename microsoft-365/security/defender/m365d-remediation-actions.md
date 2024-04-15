@@ -1,12 +1,8 @@
 ---
 title: Remediation actions in Microsoft Defender XDR
 description: Get an overview of remediation actions that follow automated investigations in Microsoft Defender XDR
-keywords: automated, investigation, alert, trigger, action, remediation
 search.appverid: met150
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: 
   - NOCSH
 ms.author: dansimp
@@ -25,7 +21,7 @@ ms.date: 02/17/2021
 
 # Remediation actions in Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -71,7 +67,7 @@ In addition to remediation actions that follow automated investigations, your se
 - Manual email action, such as soft-deleting email messages
 - Manual user action, such as disable user or reset user password
 - [Advanced hunting](../defender-endpoint/advanced-hunting-overview.md) action on devices, users, or email
-- [Explorer](../office-365-security/threat-explorer-about.md) action on email content, such as moving email to junk, soft-deleting email, or hard-deleting email
+- [Explorer](../office-365-security/threat-explorer-real-time-detections-about.md) action on email content, such as moving email to junk, soft-deleting email, or hard-deleting email
 - Manual [live response](/windows/security/threat-protection/microsoft-defender-atp/live-response) action, such as deleting a file, stopping a process, and removing a scheduled task
 - Live response action with [Microsoft Defender for Endpoint APIs](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis), such as isolating a device, running an antivirus scan, and getting information about a file
 
@@ -81,4 +77,4 @@ In addition to remediation actions that follow automated investigations, your se
 - [View and manage remediation actions](m365d-autoir-actions.md)
 - [Address false positives or false negatives](m365d-autoir-report-false-positives-negatives.md)
 - [Contain devices from the network](../defender-endpoint\respond-machine-alerts.md#contain-devices-from-the-network)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

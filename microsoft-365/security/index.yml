@@ -1,7 +1,7 @@
 ### YamlMime:Hub
 
 title: Microsoft 365 security # < 60 chars
-summary: Protect your Microsoft 365 environment with Microsoft Defender XDR # < 160 chars
+summary: Protect your Microsoft 365 environment with Microsoft Defender XDR. # < 160 chars
 # brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-apps | power-automate | power-bi | power-platform | power-virtual-agents | sql | sql-server | vs | visual-studio | windows | xamarin
 brand: m365
 
@@ -49,7 +49,7 @@ conceptualContent:
       # Card
       - title: Protect against and recover from ransomware
         links:
-         - url: /security/compass/human-operated-ransomware
+         - url: /security/ransomware/human-operated-ransomware
            itemType: concept
            text: What is ransomware?
          - url: /compliance/assurance/assurance-malware-and-ransomware-protection
@@ -86,12 +86,12 @@ conceptualContent:
            text: Insights and reporting for attack simulation
          - url: /microsoft-365/security/office-365-security/advanced-delivery-policy-configure
            itemType: how-to-guide
-           text: Configure 3rd party phishing simulation
+           text: Configure third-party phishing simulation
 
         # Card
       - title: Enable safe email messages
         links:
-         - url: /microsoft-365/security/office-365-security/mdo-security-comparison
+         - url: /microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet
            itemType: overview
            text: Get Started with Defender for Office 365
          - url: /microsoft-365/security/office-365-security/mdo-sec-ops-guide
@@ -145,7 +145,7 @@ additionalContent:
        - url: /microsoft-365/security/office-365-security/preset-security-policies
          text: Get Started
     # Card
-    - title: Microsoft Defender Endpoint
+    - title: Microsoft Defender for Endpoint
       links:
       - url: /microsoft-365/security/defender-endpoint/microsoft-defender-endpoint
         text: Overview  
@@ -176,7 +176,7 @@ additionalContent:
 # additionalContent section (optional)
 # Card with summary style
   - title: Learning, Training, and Certification # < 60 chars (optional)
-    summary: Explore topics in-depth through guided paths and training modules or prepare for the next step in your career with a certification.  # < 160 chars (optional)
+    summary: Explore articles in-depth through guided paths and training modules or prepare for the next step in your career with a certification.  # < 160 chars (optional)
     items:
         # Card
         - title: Microsoft Defender XDR Ninja training
@@ -190,4 +190,3 @@ additionalContent:
         - title: Security Operations Analyst Certification & Exams
           summary: Prepare yourself for Microsoft Security certifications.
           url: https://learn.microsoft.com/en-us/certifications/browse/
-          

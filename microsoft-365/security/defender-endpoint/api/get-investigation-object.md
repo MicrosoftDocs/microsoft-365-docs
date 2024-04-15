@@ -1,22 +1,18 @@
 ---
 title: Get Investigation object API
 description: Use this API to create calls related to get Investigation object
-keywords: apis, graph api, supported apis, Investigation object
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
 - must-keep
 ms.topic: reference
-ms.subservice: mde
+ms.subservice: reference
 ms.custom: api
 search.appverid: met150
 ms.date: 12/18/2020
@@ -24,7 +20,7 @@ ms.date: 12/18/2020
 
 # Get Investigation API
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
@@ -81,6 +77,6 @@ Empty
 
 ## Response
 
-If successful, this method returns 200, Ok response code with a [Investigations](investigation.md) entity.
+If successful, this method returns 200, Ok response code with an [Investigations](investigation.md) entity.
 
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../../includes/defender-mde-techcommunity.md)]

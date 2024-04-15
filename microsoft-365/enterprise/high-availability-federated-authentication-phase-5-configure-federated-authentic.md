@@ -3,7 +3,7 @@ title: "High availability federated authentication Phase 5 Configure federated a
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 11/25/2019
+ms.date: 04/10/2024
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -11,6 +11,7 @@ ms.localizationpriority: medium
 ms.collection: 
 - scotvorg
 - Ent_O365
+- must-keep
 f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
@@ -34,7 +35,7 @@ Get a digital certificate from a public certification authority with the followi
     
 - The certificate must have the private key and be stored in PFX format.
     
-Additionally, your organization computers and devices must trust the public certification authority that is issuing the digital certificate. This trust is established by having a root certificate from the public certification authority installed in the trusted root certification authorities store on your computers and devices. Computers running Microsoft Windows typically have a set of these types of certificates installed from commonly-used certification authorities. If the root certificate from your public certification authority is not already installed, you must deploy this to the computers and devices of your organization.
+Additionally, your organization computers and devices must trust the public certification authority that is issuing the digital certificate. This trust is established by having a root certificate from the public certification authority installed in the trusted root certification authorities store on your computers and devices. Computers running Microsoft Windows typically have a set of these types of certificates installed from commonly used certification authorities. If the root certificate from your public certification authority isn't already installed, you must deploy this to the computers and devices of your organization.
   
 For more information about certificate requirements for federated authentication, see [Prerequisites for federation installation and configuration](/azure/active-directory/connect/active-directory-aadconnect-prerequisites#prerequisites-for-federation-installation-and-configuration).
   
@@ -42,7 +43,7 @@ When you receive the certificate, copy it to a folder on the C: drive of the dir
   
 ## Verify your configuration
 
-You should now be ready to configure Microsoft Entra Connect and federated authentication for Microsoft 365. To ensure that you are, here is a checklist:
+You should now be ready to configure Microsoft Entra Connect and federated authentication for Microsoft 365. To ensure that you are, here's a checklist:
   
 - Your organization's public domain is added to your Microsoft 365 subscription.
     
@@ -54,11 +55,11 @@ You should now be ready to configure Microsoft Entra Connect and federated authe
     
 - A private DNS A record for your federation service FQDN points to the private IP address of the internal Azure load balancer for the AD FS servers.
     
-- A public certification authority-isssued digital certificate suitable for SSL connections with the SAN set to your federation service FQDN is a PFX file stored on your directory synchronization server.
+- A public certification authority-issued digital certificate suitable for SSL connections with the SAN set to your federation service FQDN is a PFX file stored on your directory synchronization server.
     
 - The root certificate for the public certification authority is installed in the Trusted Root Certification Authorities store on your computers and devices.
     
-Here is an example for the Contoso organization:
+Here's an example for the Contoso organization:
   
 **An example configuration for a high availability federated authentication infrastructure in Azure**
 
@@ -130,7 +131,7 @@ The Microsoft Entra Connect tool configures the AD FS servers, the web applicati
     
 28. On the **Installation complete** page, click **Exit**.
     
-Here is the final configuration, with placeholder names for the servers.
+Here's the final configuration, with placeholder names for the servers.
   
 **Phase 5: The final configuration of a high availability federated authentication infrastructure in Azure**
 

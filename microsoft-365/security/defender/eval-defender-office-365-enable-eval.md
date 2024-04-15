@@ -1,12 +1,8 @@
 ---
 title: Enable the evaluation environment for Microsoft Defender for Office 365 in your production environment
 description: Steps to activate Microsoft Defender for Office 365 evaluation, with trial licenses, MX record handling, & auditing of accepted domains and inbound connections.
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: 
   - NOCSH
 ms.author: tracyp
@@ -102,4 +98,4 @@ Step 3 of 3: Set up the pilot for Microsoft Defender for Office 365
 Return to the overview for [Evaluate Microsoft Defender for Office 365](eval-defender-office-365-overview.md)
 
 Return to the overview for [Evaluate and pilot Microsoft Defender XDR](eval-overview.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

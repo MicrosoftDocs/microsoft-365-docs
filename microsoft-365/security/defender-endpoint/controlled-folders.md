@@ -1,20 +1,16 @@
 ---
 title: Protect important folders from ransomware from encrypting your files with controlled folder access
 description: Files in default folders can be protected from being changed by malicious apps. Prevent ransomware from encrypting your files.
-keywords: controlled folder access, windows 10, windows defender, ransomware, protect, files, folders
-ms.service: microsoft-365-security
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
+ms.service: defender-endpoint
 ms.localizationpriority: medium
-ms.date: 01/06/2023
-author: denisebmsft
-ms.author: deniseb
+ms.date: 03/05/2024
+author: siosulli
+ms.author: siosulli
 audience: ITPro
-ms.reviewer: oogunrinde, sugamar 
-manager: dansimp
+ms.reviewer: sugamar 
+manager: deniseb
 ms.custom: asr
-ms.subservice: mde
+ms.subservice: asr
 ms.topic: how-to
 ms.collection: 
 - m365-security
@@ -25,7 +21,7 @@ search.appverid: met150
 
 # Protect important folders with controlled folder access
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -64,7 +60,7 @@ Apps can also be added manually to the trusted list by using Configuration Manag
 
 ## Why controlled folder access is important
 
-Controlled folder access is especially useful in helping to protect your documents and information from [ransomware](https://www.microsoft.com/wdsi/threats/ransomware). In a ransomware attack, your files can get encrypted and held hostage. With controlled folder access in place, a notification appears on the computer where an app attempted to make changes to a file in a protected folder. You can [customize the notification](attack-surface-reduction-rules-deployment-implement.md#customize-attack-surface-reduction-rules) with your company details and contact information. You can also enable the rules individually to customize what techniques the feature monitors.
+Controlled folder access is especially useful in helping to protect your documents and information from [ransomware](https://www.microsoft.com/wdsi/threats). In a ransomware attack, your files can get encrypted and held hostage. With controlled folder access in place, a notification appears on the computer where an app attempted to make changes to a file in a protected folder. You can [customize the notification](attack-surface-reduction-rules-deployment-implement.md#customize-attack-surface-reduction-rules) with your company details and contact information. You can also enable the rules individually to customize what techniques the feature monitors.
 
 The [protected folders](#review-controlled-folder-access-events-in-windows-event-viewer) include common system folders (including boot sectors), and you can [add more folders](customize-controlled-folders.md#protect-additional-folders). You can also [allow apps](customize-controlled-folders.md#allow-specific-apps-to-make-changes-to-controlled-folders) to give them access to the protected folders.
 
@@ -97,7 +93,7 @@ The protected folders include common system folders (including boot sectors), an
 
 Default folders appear in the user's profile, under **This PC**.
    > [!div class="mx-imgBorder"]
-   > ![Protected Windows default systems folders](images/defaultfolders.png)
+   > ![Protected Windows default systems folders](media/defaultfolders.png)
 
 > [!NOTE]
 > You can configure additional folders as protected, but you cannot remove the Windows system folders that are protected by default.
@@ -133,13 +129,13 @@ You can review the Windows event log to see events that are created when control
 
 The following table shows events related to controlled folder access:
 
-<br/><br/>
-
 |Event ID|Description|
 |---|---|
 |5007|Event when settings are changed|
 |1124|Audited controlled folder access event|
 |1123|Blocked controlled folder access event|
+|1127|Blocked controlled folder access sector write block event|
+|1128|Audited controlled folder access sector write block event|
 
 ## View or change the list of protected folders
 

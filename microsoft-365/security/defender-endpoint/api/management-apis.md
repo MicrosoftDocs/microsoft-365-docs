@@ -2,22 +2,18 @@
 title: Overview of management and APIs
 ms.reviewer:
 description: Learn about the management tools and API categories in Microsoft Defender for Endpoint
-keywords: onboarding, api, siem, rbac, access, portal, integration, investigation, response, entities, entity, user context, application context, streaming
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
 - must-keep
 ms.topic: reference
-ms.subservice: mde
+ms.subservice: reference
 ms.custom: api
 search.appverid: met150
 ms.date: 12/18/2020
@@ -25,7 +21,7 @@ ms.date: 12/18/2020
 
 # Overview of management and APIs
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -55,7 +51,7 @@ The Microsoft Defender for Endpoint solution is built on top of an integration-r
 
 Defender for Endpoint exposes much of its data and actions through a set of programmatic APIs. Those APIs will enable you to automate workflows and innovate based on Defender for Endpoint capabilities.
 
-:::image type="content" source="../images/mdatp-apis.png" alt-text="The available API and integration in Microsoft Defender for Endpoint" lightbox="../images/mdatp-apis.png":::
+:::image type="content" source="../media/mdatp-apis.png" alt-text="The available API and integration in Microsoft Defender for Endpoint" lightbox="../media/mdatp-apis.png":::
 
 The Defender for Endpoint APIs can be grouped into three:
 

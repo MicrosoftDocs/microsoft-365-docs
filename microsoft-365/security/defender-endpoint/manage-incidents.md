@@ -1,30 +1,25 @@
 ---
 title: Manage Microsoft Defender for Endpoint incidents
 description: Manage incidents by assigning it, updating its status, or setting its classification.
-keywords: incidents, manage, assign, status, classification, true alert, false alert
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier2
 - mde-edr
 ms.topic: conceptual
-ms.subservice: mde
-ms.date: 12/18/2020
+ms.subservice: edr
+ms.date: 01/24/2024
 ---
 
 # Manage Microsoft Defender for Endpoint incidents
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
@@ -36,10 +31,12 @@ ms.date: 12/18/2020
 
 Managing incidents is an important part of every cybersecurity operation. You can manage incidents by selecting an incident from the **Incidents queue** or the **Incidents management pane**. 
 
+> [!TIP]
+> For a limited time during January 2024, when you visit the **Incidents** page, Defender Boxed appears. Defender Boxed highlights your organization's security successes, improvements, and response actions during 2023. To reopen Defender Boxed, in the Microsoft Defender portal, go to **Incidents**, and then select **Your Defender Boxed**.
 
 Selecting an incident from the **Incidents queue** brings up the **Incident management pane** where you can open the incident page for details.
 
-:::image type="content" source="images/atp-incidents-mgt-pane-updated.png" alt-text="The incidents management pane" lightbox="images/atp-incidents-mgt-pane-updated.png":::
+:::image type="content" source="media/atp-incidents-mgt-pane-updated.png" alt-text="The incidents management pane" lightbox="media/atp-incidents-mgt-pane-updated.png":::
 
 You can assign incidents to yourself, change the status and classification, rename, or comment on them to keep track of their progress.
 
@@ -51,7 +48,7 @@ You can assign incidents to yourself, change the status and classification, rena
 > Incidents that existed prior the rollout of automatic incident naming will retain their names.
 >
 
-:::image type="content" source="images/atp-incident-details-updated.png" alt-text="The incident detail page" lightbox="images/atp-incident-details-updated.png":::
+:::image type="content" source="media/atp-incident-details-updated.png" alt-text="The incident detail page" lightbox="media/atp-incident-details-updated.png":::
 
 ## Assign incidents
 If an incident has not been assigned yet, you can select **Assign to me** to assign the incident to yourself. Doing so assumes ownership of not just the incident, but also all the alerts associated with it.

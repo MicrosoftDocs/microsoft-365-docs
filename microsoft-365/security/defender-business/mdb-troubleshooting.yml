@@ -3,9 +3,9 @@ metadata:
   title: Microsoft Defender for Business troubleshooting
   description: Troubleshoot issues in Microsoft Defender for Business. See how to resolve problems with setup or device management. 
   search.appverid: MET150
-  author: denisebmsft
-  ms.author: deniseb
-  manager: dansimp 
+  author: siosulli
+  ms.author: siosulli
+  manager: deniseb 
   audience: Admin3
   ms.topic: faq
   ms.service: defender-business

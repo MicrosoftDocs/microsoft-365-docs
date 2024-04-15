@@ -10,8 +10,10 @@ ms.topic: conceptual
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
-    - enabler-strategic
+    - essentials-privacy
     - m365initiative-syntex
+    - essentials-security
+    - essentials-compliance
 ms.localizationpriority:  medium
 description: Learn about privacy, security, and compliance in Microsoft Syntex.
 ---
@@ -54,7 +56,7 @@ Microsoft Syntex is also covered under the [Microsoft Product Terms](https://www
 
 For more detailed information, see the following resources:
 
-- **Microsoft 365** – [Plan for security and compliance](/purview/plan-for-security-and-compliance)
+- **Microsoft 365** – [Quick tasks for getting started with compliance in Microsoft Purview](/purview/compliance-quick-tasks)
 
 - **Microsoft SharePoint** – [Plan compliance requirements for SharePoint and OneDrive](/SharePoint/compliant-environment)
 

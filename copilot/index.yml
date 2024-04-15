@@ -9,11 +9,12 @@ metadata:
   description: Learn about Microsoft Copilot for Microsoft 365 and how your organization can use this copilot for work. # Required; article description that is displayed in search results. < 160 chars.
   ms.service: microsoft-365-copilot 
   ms.topic: hub-page # Required
-  ms.collection: essentials-hub-or-landing # Optional; Remove if not applicable.
+  ms.collection: 
+  - essentials-navigation
+  - m365copilot
   author: samanro #Required; your GitHub user alias, with correct capitalization.
   ms.author: samanro #Required; microsoft alias of author; optional team alias.
   ms.date: 09/21/2023 #Required; mm/dd/yyyy format.
-
 
 
 # additionalContent section (Optional; Remove if not applicable.)
@@ -25,11 +26,11 @@ additionalContent:
         # Card
         - title: Get ready for Copilot for Microsoft 365
           links:
-            - text: Copilot for Microsoft 365 overview
-              url: microsoft-365-copilot-overview.md
+            - text: Apply principles of Zero Trust to Microsoft Copilot for Microsoft 365
+              url: /security/zero-trust/zero-trust-microsoft-365-copilot
             - text: Sensitivity labels
               url: /microsoft-365/compliance/sensitivity-labels
-            - text: Review current access, Entra ID
+            - text: Review current access, Microsoft Entra ID
               url: /azure/active-directory/governance/review-your-access
             - text: Data loss prevention
               url: /microsoft-365/compliance/dlp-learn-about-dlp
@@ -37,13 +38,19 @@ additionalContent:
               url: /MicrosoftSearch/semantic-index-for-copilot
             - text: Copilot for Microsoft 365 Service Description
               url: /office365/servicedescriptions/office-365-platform-service-description/microsoft-365-copilot/
+            - text: Copilot for Microsoft 365 - best practices with SharePoint
+              url: /sharepoint/sharepoint-copilot-best-practices/
         # Card
         - title: Get started with Copilot for Microsoft 365
           links:
+            - text: Copilot for Microsoft 365 overview
+              url: microsoft-365-copilot-overview.md
             - text: Requirements
               url: microsoft-365-copilot-requirements.md
-            - text: Setup
+            - text: Get started
               url: microsoft-365-copilot-setup.md
+            - text: Wizard-based setup guide
+              url: https://go.microsoft.com/fwlink/?linkid=2249661
             - text: Change update channel of Microsoft 365 Apps to enable Copilot
               url: /deployoffice/updates/change-channel-for-copilot
             - text: Enable users
@@ -55,8 +62,6 @@ additionalContent:
           links:
             - text: Data, Privacy, and Security
               url: microsoft-365-copilot-privacy.md
-            - text: Apply principles of Zero Trust to Microsoft 365 Copilot
-              url: /security/zero-trust/zero-trust-microsoft-365-copilot
             - text: Zero trust illustrations
               url: /security/zero-trust/zero-trust-tech-illus#zero-trust-for-microsoft-365-copilot
             - text: Microsoft Purview data security and compliance protections for Microsoft Copilot
@@ -64,14 +69,18 @@ additionalContent:
             - text: Isolation controls
               url: /compliance/assurance/assurance-microsoft-365-isolation-controls
         # Card
-        - title: Manage and extend Copilot for Microsoft 365
+        - title: Manage Copilot for Microsoft 365
           links:
             - text: Manage Copilot for Microsoft 365 with the Copilot page
               url: microsoft-365-copilot-page.md
-            - text: Manage Plugins in Integrated Apps (PREVIEW)
+            - text: Connect to the Microsoft Copilot Dashboard
+              url: /viva/insights/org-team-insights/copilot-dashboard
+            - text: Manage Plugins in Integrated Apps (Preview)
               url: /microsoft-365/admin/manage/manage-plugins-for-copilot-in-integrated-apps
-            - text: Related admin controls
+            - text: Related Microsoft 365 admin controls
               url: /microsoft-365/solutions/tenant-management-overview
+            - text: Manage Copilot with commercial data protection
+              url: /copilot/overview
 
         # Card
         - title: Get trained on Copilot for Microsoft 365
@@ -79,7 +88,7 @@ additionalContent:
             - text: Getting ready for Copilot for Microsoft 365 learning path
               url: /training/paths/prepare-your-organization-microsoft-365-copilot/
             - text: 30-day challenge
-              url: /collections/moqrteeo227?WT.mc_id=cloudskillschallenge_27423acc-98fb-44fc-855a-f976517fe2de
+              url: /training/challenges?id=5675b9c6-4dbe-4b1b-abcf-a8fbccdb149f&wt.mc_id=cloudskillschallenge_5675b9c6-4dbe-4b1b-abcf-a8fbccdb149f_30dtli_web_wwl
 #            - text: Virtual training days
 #              url: index.yml
         # Card
@@ -90,11 +99,9 @@ additionalContent:
 #            - text: Copilot for Microsoft 365 - Security & Privacy
 #              url: index.yml
         # Card
-        - title: End user content about Copilot for Microsoft 365
+        - title: End user Copilot resources
           links:
-            - text: Copilot for Microsoft 365 capabilities
-              url: https://support.microsoft.com/copilot
-            - text: Copilot for Microsoft 365 lab
+            - text: Copilot Lab
               url: https://copilot.cloud.microsoft
 #            - text: Use additional data sources with Microsoft 365 Chat
 #              url: https://go.microsoft.com/fwlink/?linkid=2250210

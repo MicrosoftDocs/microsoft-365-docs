@@ -1,11 +1,7 @@
 ---
 title: Configure alert notifications in Microsoft Defender XDR
 description: You can use Microsoft Defender for Endpoint to configure email notification settings for security alerts, based on severity and other criteria.
-keywords: email notifications, configure alert notifications, Microsoft Defender for Endpoint, Microsoft Defender for Endpoint notifications, Microsoft Defender for Endpoint alerts, windows enterprise, windows education, Microsoft 365 Defender, Defender
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: diannegali
 author: diannegali
 ms.localizationpriority: medium
@@ -16,12 +12,12 @@ ms.collection:
 - tier2
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 10/11/2022
+ms.date: 10/11/2023
 ---
 
 # Configure alert notifications in Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -103,4 +99,4 @@ This section lists various issues that you may encounter when using email notifi
 - [Update data retention settings](../defender-endpoint/data-retention-settings.md)
 - [Configure advanced features](../defender-endpoint/advanced-features.md)
 - [Configure vulnerability email notifications](../defender-endpoint/configure-vulnerability-email-notifications.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

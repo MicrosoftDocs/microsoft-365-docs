@@ -68,11 +68,10 @@ Each insight captures the number of Copilot-enabled users in your organization p
 
 ### Summarize
 
-- **Summarize a Teams meeting:** This represents the number of users who summarize meetings using Copilot in Microsoft Teams. This doesn't include the instances when the user types to summarize a meeting in the Copilot chat box.
-- **Summarize a Teams conversation**: This represents the number of users who summarize Teams conversations using Copilot in Microsoft Teams. This doesn't include the instances when the user types to summarize a conversation in the Copilot chat box.
-- **Summarize an email thread:** This represents the number of users who summarize email threads using Copilot in Outlook. This doesn't include the instances when the user types to summarize an Outlook thread in the Copilot chat box.
-- **Summarize a Word document:** This represents the number of users who summarize Word documents using Copilot in Microsoft Word. This doesn't include the instances when the user types to summarize a document in the Copilot chat box.
-- **Summarize a presentation:** This represents the number of users who summarize a presentation using Copilot in Microsoft PowerPoint. This doesn't include the instances when the user types to summarize a presentation in the Copilot chat box.
+- **Summarize a Teams meeting:** This represents the number of users who summarize meetings using Copilot in Microsoft Teams.
+- **Summarize a Teams conversation**: This represents the number of users who summarize Teams conversations using Copilot in Microsoft Teams.
+- **Summarize an email thread:** This represents the number of users who summarize email threads using Copilot in Outlook.
+- **Summarize a Word document:** This represents the number of users who summarize Word documents using Copilot in Microsoft Word.
 
 ### Create
 
@@ -83,3 +82,44 @@ Each insight captures the number of Copilot-enabled users in your organization p
 
 >[!NOTE]
 > When you select the settings to opt out specific user groups from calculating People experience insights in Adoption Score, the AI assistance category would not be respecting that opt out for the current release. This will be changed in the future releases.
+
+## Sentiment survey upload experience
+
+In this section, you can upload Copilot survey results to have them displayed in the [Microsoft Copilot Dashboard](https://aka.ms/learn-copilot-insights).
+
+>[!NOTE]
+> You won't be able to view the results on this page; they are only available in the Microsoft Copilot Dashboard.
+
+Use this feature to provide your organizational leaders with a centralized location for insights on how users feel about the AI assistance they receive from Copilot.
+
+### Upload survey data
+
+:::image type="content" source="../../media/as-upload-survey.png" alt-text="Screenshot showing the dashboard to upload survey data for Copilot sentiment" lightbox="../../media/as-upload-survey.png":::
+
+:::image type="content" source="../../media/as-survey-results.png" alt-text="Screenshot showing the pop-up pane for survey results for Copilot sentiment":::
+
+### Update results over time
+
+:::image type="content" source="../../media/as-update-results.png" alt-text="Screenshot showing the screen for updating survey results for Copilot sentiment" lightbox="../../media/as-update-results.png":::
+
+You can upload new survey data as often as you want to keep the Copilot Dashboard updated with the latest feedback from your users.
+
+:::image type="content" source="../../media/as-delete-survey.png" alt-text="Screenshot showing the screen for deleting survey results for Copilot sentiment":::
+
+If you want to delete or overwrite the existing survey data, select the Delete or Overwrite buttons at the bottom of the page. Note, these actions can't be undone.
+
+### Suggested Copilot survey questions
+
+To measure Copilot user sentiment in your organization, we recommend delivering a survey to users that asks them to indicate their level of agreement with the following four statements:
+
+- *Using Copilot helps improve the quality of my work or output*
+
+- *Using Copilot helps me spend less mental effort on mundane or repetitive tasks*
+
+- *Using Copilot allows me to complete tasks faster*
+
+- *When using Copilot, I am more productive*
+
+For each of these, we recommend allowing users to indicate whether or not they Strongly Disagree, Disagree, Neither Agree Nor Disagree, Agree, or Strongly Agree with the statement. You can then combine the “Agree” and “Strongly Agree” responses to compute the % of users who agreed with each statement and compare results with the Microsoft benchmarks shown in this tab.
+
+Your user survey doesn't need to be limited to these four statements, but we recommend including them at a minimum for easy comparison with Microsoft’s benchmark results.

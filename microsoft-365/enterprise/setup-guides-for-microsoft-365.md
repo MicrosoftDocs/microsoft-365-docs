@@ -3,7 +3,7 @@ title: "Advanced deployment guides for Microsoft 365 and Office 365 products"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 08/10/2020
+ms.date: 12/19/2023
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
@@ -14,6 +14,7 @@ ms.collection:
 - M365-subscription-management
 - SPO_Content
 - m365initiative-coredeploy
+- must-keep
 f1.keywords:
 - CSH
 ms.custom: Adm_O365_Setup
@@ -52,14 +53,16 @@ Advanced deployment guides are accessible from the [Advanced deployment guides &
 > You must be assigned an admin role such as _Global Reader_ to access advanced deployment guides in the Microsoft 365 admin center. Only admins with the _Global Administrator_ role can use the guides to change settings in the tenant.
 
 > [!IMPORTANT]
-> Any selections, task assignments, and progress status saved **before January 10, 2023** within each advanced deployment guide in the admin center has been reset due to EU data regulations.
+> Any selections, task assignments, and progress status saved **before January 10, 2023** within each advanced deployment guide in the admin center were reset due to EU data regulations.
 
 To reach the **Advanced deployment guides & assistance** page:
 
 1. In the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/?linkid=2224913), go to the **Home** page.
 
-2. Find the _Training, guides & assistance_ card and click **Advanced deployment guides & assistance**.
+2. Find the _Training, guides & assistance_ card and select **Advanced deployment guides & assistance**.
 
+3. If you don’t see that card, access the page directly at (https://aka.ms/advanceddeploymentguides).
+   
    :::image type="content" alt-text="This screenshot shows the training & guides card in the Microsoft 365 admin center." source="../media/setup-guides-for-microsoft-365/thumbnail_ADG-TrainingCard.png":::
 
 ## Guides for initial setup
@@ -84,7 +87,7 @@ Advanced deployment guides in the admin center require authentication to a Micro
 
 |Guide - [Setup Portal](https://go.microsoft.com/fwlink/?linkid=2220880) |Guide - [Admin Center](https://go.microsoft.com/fwlink/?linkid=2224913) |Description |
 |---------|---------|---------|
-| | [Configure multi-factor authentication (MFA) guide](https://go.microsoft.com/fwlink/?linkid=2224780) | The **Configure multi-factor authentication (MFA) guide** provides customers with Microsoft Entra ID P1 or Microsoft Entra ID P2 customizable Conditional Access templates that include the most common and least intrusive security standards. When Microsoft Entra ID P1 or P2 licensing isn’t available, we provide a one-click solution to enable Security Defaults, a baseline protection policy for all users, or we provide steps to enable legacy (per-user) MFA. |
+| | [Configure multi-factor authentication (MFA) guide](https://go.microsoft.com/fwlink/?linkid=2224780) |The Configure multifactor authentication (MFA) guide provides customers who have the Microsoft Entra ID P1 or Microsoft Entra ID P2 license with customizable Conditional Access templates that include the most common and least intrusive security standards. Customers with the P2 license can also use risk-based Conditional Access policies. Customers without a P1 or P2 license can use a one-click solution to enable security defaults, a baseline protection policy for all users. They can also enable legacy (per-user) MFA.|
 ||[Identity security for Teams guide](https://go.microsoft.com/fwlink/?linkid=2224786)|The **Identity security for Teams guide** helps you with some basic security steps you can take to ensure your users are safe and have the most productive time using Teams.|
 |[Microsoft Entra setup guide](https://go.microsoft.com/fwlink/?linkid=2223229)|[Microsoft Entra setup guide](https://go.microsoft.com/fwlink/?linkid=2224193)|The **Microsoft Entra setup guide** provides information to ensure your organization has a strong security foundation. In this guide you'll set up initial features, like Azure Role-based access control (Azure RBAC) for admins, Microsoft Entra Connect for your on-premises directory, and Microsoft Entra Connect Health, so you can monitor your hybrid identity's health during automated syncs.<br>It also includes essential information on enabling self-service password resets, conditional access, and integrated third party sign-on including optional advanced identity protection and user provisioning automation.|
 |[Add or sync users to Microsoft Entra ID guide](https://go.microsoft.com/fwlink/?linkid=2223230)|[Add or sync users to Microsoft Entra ID guide](https://go.microsoft.com/fwlink/?linkid=2224811)|The **Add or sync users to Microsoft Entra ID guide** will help streamline the process of getting your user accounts set up in Microsoft 365. Based on your environment and needs, you can choose to add users individually, migrate your on-premises directory with Microsoft Entra Cloud Sync or Microsoft Entra Connect, or troubleshoot existing sync problems when necessary.|
@@ -122,10 +125,14 @@ Advanced deployment guides in the admin center require authentication to a Micro
 |[Enable ‎Microsoft Viva Insights](https://go.microsoft.com/fwlink/?linkid=2240668)    | [Enable ‎Microsoft Viva Insights](https://go.microsoft.com/fwlink/?linkid=2224795)       | Viva Insights‎ helps improve productivity and wellbeing through data-driven, privacy-protected insights and recommendations.        |
 |[Enable Microsoft Viva Learning](https://go.microsoft.com/fwlink/?linkid=2223163)     |[Enable Microsoft Viva Learning](https://go.microsoft.com/fwlink/?linkid=2225000)         | Bring enterprise learning into the flow of work by connecting content from your organization, learning management systems, non-‎Microsoft‎ providers, and ‎Microsoft‎.     |
 |[Enable Microsoft Viva Topics](https://go.microsoft.com/fwlink/?linkid=2222986)    |[Enable Microsoft Viva Topics](https://go.microsoft.com/fwlink/?linkid=2224826)         |  Use AI to automatically organize content and expertise across your systems and teams into related topics, like projects, products, processes, and customers.      |
+|[Enable Microsoft Viva Amplify ](https://go.microsoft.com/fwlink/?linkid=2263448)    |[Enable Microsoft Viva Amplify](https://go.microsoft.com/fwlink/?linkid=2263282)         |  Centralize campaign management, publishing, and reporting to reach and engage employees.      |
+|[Enable Microsoft Viva Glint ](https://go.microsoft.com/fwlink/?linkid=2264113)    |[Enable Microsoft Viva Glint](https://go.microsoft.com/fwlink/?linkid=2263279)         |  Improve engagement and performance with recommended actions and data-driven insights across employee lifecycle and organization-wide surveys.      |
+|[Enable Microsoft Viva Pulse](https://go.microsoft.com/fwlink/?linkid=2263280)    |[Enable Microsoft Viva Pulse](https://go.microsoft.com/fwlink/?linkid=2263281)         |  Empower managers to seek out and act on confidential feedback using smart templates, research-backed questions and analytics.      |
 |[Microsoft 365 Apps setup guide](https://go.microsoft.com/fwlink/?linkid=2234169)|[Microsoft 365 Apps setup guide](https://go.microsoft.com/fwlink/?linkid=2233871)|The **Microsoft 365 Apps setup guide** provides comprehensive guidance for setting up and deploying the latest versions of Office products like Word, Excel, PowerPoint, and OneNote on your users' devices. You'll be walked through the activation process for your Microsoft 365 product key, as well as various deployment methods including easy self-install options and enterprise deployments with management tools. Additionally, the guide offers instructions on assessing your environment, determining your specific deployment requirements, and implementing the necessary support tools to ensure a successful installation.|
 ||[Mobile apps setup guide](https://go.microsoft.com/fwlink/?linkid=2224813)|The **Mobile apps setup guide** provides instructions for the download and installation of Office apps on your Windows, iOS, and Android mobile devices. This guide provides you with step-by-step information to download and install Microsoft 365 and Office 365 apps on your phone and tablet devices.|
 |[Microsoft Teams setup guide]( https://go.microsoft.com/fwlink/?linkid=2222975)|[Microsoft Teams setup guide](https://go.microsoft.com/fwlink/?linkid=2224815)|The **Microsoft Teams setup guide** provides your organization with guidance to set up team workspaces that host real-time conversations through messaging, calls, and audio or video meetings for both team and private communication. Use the tools in this guide to configure Guest access, set who can create teams, and add team members from a .csv file, all without the need to open a PowerShell session. You'll also get best practices for determining your organization's network requirements and ensuring a successful Teams deployment.|
 |[Plan and implement your Microsoft Teams Phone deployment](https://go.microsoft.com/fwlink/?linkid=2223356)|[Plan and implement your Microsoft Teams Phone deployment](https://go.microsoft.com/fwlink/?linkid=2224790)|This guide will help you transition from your existing voice solution to Microsoft Teams Phone. You'll be guided through discovery and planning phases, or you can go straight to deployment. You'll be able to configure a calling plan, Operator Connect, Teams Phone Mobile, Direct Routing, caller ID, and other features.|
+|[Plan and deploy ‎Teams Premium‎ features](https://go.microsoft.com/fwlink/?linkid=2263689)|[Plan and deploy ‎Teams Premium‎ features](https://go.microsoft.com/fwlink/?linkid=2264353)|Microsoft Teams Premium helps make every meeting more intelligent, engaging, and protected. This guide will help you to plan for and deploy one or more Teams Premium features and take advantage of your Teams Premium licenses.|
 |[SharePoint setup guide](https://go.microsoft.com/fwlink/?linkid=2223320)|[SharePoint setup guide](https://go.microsoft.com/fwlink/?linkid=2224196)|The **SharePoint setup guide** helps you set up your SharePoint document storage and content management, create sites, configure external sharing, migrate data and configure advanced settings, and drive user engagement and communication within your organization. You'll follow steps for configuring your content-sharing permission policies, choose your migration sync tools, and enable the security settings for your SharePoint environment.|
 |[Surface Hub and Microsoft Teams Rooms setup guide](https://go.microsoft.com/fwlink/?linkid=2222974)|[Surface Hub and Microsoft Teams Rooms setup guide](https://go.microsoft.com/fwlink/?linkid=2224463)|The **Surface Hub and Microsoft Teams Rooms setup guide** will customize your experience based on your environment. If you're hosted in Exchange Online and using Microsoft Teams, the guide will automatically create your device account with the correct settings.|
 |[OneDrive setup guide](https://go.microsoft.com/fwlink/?linkid=2223143)|[OneDrive setup guide](https://go.microsoft.com/fwlink/?linkid=2224690)|Use the **OneDrive setup guide** to get started with OneDrive file storage, sharing, collaboration, and syncing capabilities. OneDrive provides a central location where users can sync their Microsoft 365 Apps files, configure external sharing, migrate user data, and configure advanced security and device access settings. The OneDrive setup guide can be deployed using a OneDrive subscription or a standalone OneDrive plan.|

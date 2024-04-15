@@ -136,7 +136,7 @@ For each virtual machine, join them to the appropriate Active Directory Domain S
   
 ```powershell
 $domName="<AD DS domain name to join, such as corp.contoso.com>"
-$cred=Get-Credential -Message "Type the name and password of a domain acccount."
+$cred=Get-Credential -Message "Type the name and password of a domain account."
 Add-Computer -DomainName $domName -Credential $cred
 Restart-Computer
 ```

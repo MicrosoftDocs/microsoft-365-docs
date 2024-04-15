@@ -12,7 +12,7 @@ ms.collection:
 - tier3
 ms.custom: 
 ms.topic: reference
-ms.date: 11/8/2023
+ms.date: 04/11/2024
 ms.reviewer: 
 search.appverid: met150
 ---
@@ -32,8 +32,7 @@ This article describes how existing roles and permissions in Microsoft Defender 
 - [Microsoft Defender for Identity](https://go.microsoft.com/fwlink/p/?LinkID=2198108)
 - [Microsoft Defender for Office 365 Plan 2](https://go.microsoft.com/fwlink/p/?LinkID=2158212)
 - [Microsoft Defender Vulnerability Management](https://go.microsoft.com/fwlink/p/?linkid=2229011)
-
-[!include[Prerelease information](../../includes/prerelease.md)]
+- [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction)
 
 <a name='map-microsoft-365-defender-unified-rbac-permissions-to-existing-rbac-permissions'></a>
 
@@ -136,7 +135,7 @@ Use this table to learn about the permissions assigned by default for each workl
 |Global reader|Security operations \ Security data \ Security data basics (read)</br>Security posture \ Posture management \ Secure Score (read) </br>|_**Defender for Endpoint and Defender Vulnerability Management permissions only permissions**_ </br>Security posture \ Posture management \ Vulnerability management (read)</br></br> _**Defender for Office only permissions**_ </br> Security operations \ Security data \ Response (manage)</br>Security operations \ Raw data (Email & collaboration) \ Email message headers (read)</br>Authorization and settings \ Authorization (read) </br></br>_**Defender for Office and Defender for Identity only permissions**_ </br>Authorization and settings \ Security settings \ Core security settings (read)</br>Authorization and settings \ System settings (read)|
 |Security reader|Security operations \ Security data \ Security data basics (read)</br>Security posture \ Posture management \ Secure Score (read) </br>|_**Defender for Endpoint and Defender Vulnerability Management permissions only permissions**_ </br>Security posture \ Posture management \ Vulnerability management (read)</br></br> _**Defender for Office only permissions**_ </br> Security operations \ Security data \ Response (manage)</br>Security operations \ Raw data (Email & collaboration) \ Email message headers (read) </br></br>_**Defender for Office and Defender for Identity only permissions**_ </br>Authorization and settings \ Security settings \ Core security settings (read)</br>Authorization and settings \ System settings (read)|
 |Security operator|Security operations \ Security data \ Security data basics (read)</br>Security operations \ Security data \ Alerts (manage) </br>Security operations \ Security data \ Response (manage)</br>Security posture \ Posture management \ Secure Score (read)</br>Authorization and settings \ Security settings (All permissions)|_**Defender for Endpoint and Defender Vulnerability Management permissions only permissions**_</br>Security operations  \ Security data \ Basic live response (manage)</br>Security operations  \ Security data \ Advanced live response (manage)</br> Security operations \ Security data \ File collection (manage) </br>Security posture \ Posture management \ Vulnerability management (read)</br>Security posture \ Posture management \ Exception handling (manage)</br>Security posture \ Posture management \ Remediation handling (manage)</br></br>_**Defender for Office only permissions**_ </br>Security operations \ Raw data (Email & collaboration) \ Email message headers (read)</br>Authorization and settings \ System settings (Read and manage)</br></br>_**Defender for Identity only permissions**_ </br>Authorization and settings \ System settings (read)|
-|Exchange Administrator|Security posture \ Posture management \ Secure Score (read) </br> Security posture \ Posture management \ Secure Score (manage)|_**Defender for Office only permissions**_ </br>Security operations \ Raw data (Email & collaboration) \ Email message headers (read)</br>Authorization and settings \ System settings (Read and manage)|
+|Exchange Administrator|Security posture \ Posture management \ Secure Score (read) </br> Security posture \ Posture management \ Secure Score (manage) |_**Defender for Office only permissions**_ </br>Security operations \ Security data \ Security data basic (read) </br>Security operations \ Raw data (Email & collaboration) \ Email message headers (read) </br>Authorization and settings \ System settings (Read and manage)|
 |SharePoint Administrator|Security posture \ Posture management \ Secure Score (read) </br> Security posture \ Posture management \ Secure Score (manage)|not applicable|
 |Service Support Administrator|Security posture \ Posture management \ Secure Score (read) |not applicable|
 |User Administrator|Security posture \ Posture management \ Secure Score (read) |not applicable|
@@ -152,4 +151,4 @@ Use this table to learn about the permissions assigned by default for each workl
 
 - [Import existing RBAC roles](import-rbac-roles.md)
 - [Activate Microsoft Defender XDR Unified RBAC](activate-defender-rbac.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

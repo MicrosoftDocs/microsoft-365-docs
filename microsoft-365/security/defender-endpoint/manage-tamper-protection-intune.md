@@ -1,19 +1,19 @@
 ---
 title: Manage tamper protection for your organization using Microsoft Intune
 ms.reviewer: joshbregman, mattcall, pahuijbr, hayhov, oogunrinde
-manager: dansimp
+manager: deniseb
 description: Turn tamper protection on or off for your organization in Microsoft Intune.
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.localizationpriority: medium
 ms.date: 10/24/2023
 audience: ITPro
 ms.topic: how-to
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 ms.custom: 
 - nextgen
 - admindeeplinkDEFENDER
-ms.subservice: mde
+ms.subservice: ngp
 ms.collection: 
 - m365-security
 - tier2
@@ -66,7 +66,7 @@ Tamper protection helps protect certain [security settings](prevent-changes-to-s
 
 ## Turn tamper protection on (or off) in Microsoft Intune
 
-:::image type="content" source="images/turnontamperprotectinmem.png" alt-text="Turn tamper protection turned on with Intune" lightbox="images/turnontamperprotectinmem.png":::
+:::image type="content" source="media/turnontamperprotectinmem.png" alt-text="Turn tamper protection turned on with Intune" lightbox="media/turnontamperprotectinmem.png":::
 
 1. In the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Endpoint security** \> **Antivirus**, and then choose **+ Create Policy**.
 

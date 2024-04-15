@@ -1,16 +1,16 @@
 ---
 title: Manage exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus
 description: Learn about exclusions for Defender for Endpoint and Microsoft Defender Antivirus. Suppress alerts, submit files for analysis, and define exclusions and indicators to reduce noise and risk for your organization.
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: ngp
 ms.localizationpriority: medium
 ms.topic: how-to
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 ms.custom: nextgen
 ms.date: 08/07/2023
 ms.reviewer: pahuijbr, yongrhee, tudobril
-manager: dansimp
+manager: deniseb
 ms.collection: 
 - m365-security
 - tier2
@@ -20,7 +20,7 @@ search.appverid: met150
 
 # Manage exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -54,7 +54,7 @@ When you're dealing with false positives, or known entities that are generating 
 
 | Scenario | Steps to consider |
 |:---|:----|
-| [False positive](defender-endpoint-false-positives-negatives.md): An entity, such as a file or a process, was detected and identified as malicious, even though the entity isn't a threat. | 1. [Review and classify alerts](defender-endpoint-false-positives-negatives.md#part-1-review-and-classify-alerts) that were generated as a result of the detected entity. <br/>2. [Suppress an alert](defender-endpoint-false-positives-negatives.md#suppress-an-alert) for a known entity. <br/>3. [Review remediation actions](defender-endpoint-false-positives-negatives.md#part-2-review-remediation-actions) that were taken for the detected entity. <br/>4. [Submit the false positive to Microsoft](../intelligence/submission-guide.md) for analysis. <br/>5. [Define an exclusion](defender-endpoint-false-positives-negatives.md#part-3-review-or-define-exclusions) for the entity (only if necessary). |
+| [False positive](defender-endpoint-false-positives-negatives.md): An entity, such as a file or a process, was detected and identified as malicious, even though the entity isn't a threat. | 1. [Review and classify alerts](defender-endpoint-false-positives-negatives.md#part-1-review-and-classify-alerts) that were generated as a result of the detected entity. <br/>2. [Suppress an alert](defender-endpoint-false-positives-negatives.md#suppress-an-alert) for a known entity. <br/>3. [Review remediation actions](defender-endpoint-false-positives-negatives.md#part-2-review-remediation-actions) that were taken for the detected entity. <br/>4. [Submit the false positive to Microsoft](../defender/submission-guide.md) for analysis. <br/>5. [Define an exclusion](defender-endpoint-false-positives-negatives.md#part-3-review-or-define-exclusions) for the entity (only if necessary). |
 | [Performance issues](troubleshoot-performance-issues.md) such as one of the following issues:<br/>- A system is having high CPU usage or other performance issues.<br/>- A system is having memory leak issues.<br/>- An app is slow to load on devices.<br/>- An app is slow to open a file on devices. | 1. [Collect diagnostic data](collect-diagnostic-data.md) for Microsoft Defender Antivirus.<br/>2. If you're using a non-Microsoft antivirus solution, [check with the vendor for any needed exclusions](troubleshoot-performance-issues.md#check-with-vendor-for-antivirus-exclusions).<br/>3. [Analyze the Microsoft Protection Log](troubleshoot-performance-issues.md#analyze-the-microsoft-protection-log) to see the estimated performance impact.<br/>4. [Define an exclusion for Microsoft Defender Antivirus](configure-exclusions-microsoft-defender-antivirus.md) (if necessary).<br/>5. [Create an indicator for Defender for Endpoint](manage-indicators.md) (only if necessary). |
 | [Compatibility issues](microsoft-defender-antivirus-compatibility.md) with non-Microsoft antivirus products. <br/>Example: Defender for Endpoint relies on security intelligence updates for devices, whether they're running Microsoft Defender Antivirus or a non-Microsoft antivirus solution.  | 1. If you're using a non-Microsoft antivirus product as your primary antivirus/antimalware solution, [set Microsoft Defender Antivirus to passive mode](microsoft-defender-antivirus-compatibility.md#requirements-for-microsoft-defender-antivirus-to-run-in-passive-mode).<br/>2. If you're switching from a non-Microsoft antivirus/antimalware solution to Defender for Endpoint, see [Make the switch to Defender for Endpoint](switch-to-mde-overview.md). This guidance includes:<br/>- [Exclusions you might need to define for the non-Microsoft antivirus/antimalware solution](switch-to-mde-phase-2.md#step-3-add-microsoft-defender-for-endpoint-to-the-exclusion-list-for-your-existing-solution);<br/>- [Exclusions you might need to define for Microsoft Defender Antivirus](switch-to-mde-phase-2.md#step-4-add-your-existing-solution-to-the-exclusion-list-for-microsoft-defender-antivirus); and <br/>- [Troubleshooting information](switch-to-mde-troubleshooting.md) (just in case something goes wrong while migrating). |
 
@@ -96,8 +96,8 @@ The following table summarizes exclusion types that can be defined for Defender 
 
 | Product/service | Exclusion types  |
 |:---|:----|
-| [Microsoft Defender Antivirus](microsoft-defender-antivirus-windows.md) <br/>[Defender for Endpoint Plan 1 or Plan 2](defender-endpoint-plan-1-2.md) | - [Automatic exclusions](#automatic-exclusions) (for active roles on Windows Server 2016 and later)<br/>- [Built-in exclusions](#built-in-exclusions) (for operating system files in Windows)<br/>- [Custom exclusions](#custom-exclusions), such as process-based exclusions, folder location-based exclusions, file extension exclusions, or contextual file and folder exclusions<br/>- [Custom remediation actions](#custom-remediation-actions) based on threat severity or for specific threats<br/><br/>*The standalone versions of Defender for Endpoint Plan 1 and Plan 2 don't include server licenses. To onboard servers, you need another license, such as Microsoft Defender for Endpoint for Servers or [Microsoft Defender for Servers Plan 1 or 2](/azure/defender-for-cloud/defender-for-servers-introduction). To learn more, see [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md).*<br/><br/>*If you're a small or medium-sized business using [Microsoft Defender for Business](../defender-business/mdb-overview.md), you can get [Microsoft Defender for Business servers](../defender-business/get-defender-business.md#how-to-get-microsoft-defender-for-business-servers).* |
-| [Defender for Endpoint Plan 1 or Plan 2](defender-endpoint-plan-1-2.md) | - [Indicators](#defender-for-endpoint-indicators) for files, certificates, or IP addresses, URLs/domains<br/>- [Attack surface reduction exclusions](#attack-surface-reduction-exclusions)<br/>- [Controlled folder access exclusions](#controlled-folder-access-exclusions) |
+| [Microsoft Defender Antivirus](microsoft-defender-antivirus-windows.md) <br/>[Defender for Endpoint Plan 1 or Plan 2](microsoft-defender-endpoint.md) | - [Automatic exclusions](#automatic-exclusions) (for active roles on Windows Server 2016 and later)<br/>- [Built-in exclusions](#built-in-exclusions) (for operating system files in Windows)<br/>- [Custom exclusions](#custom-exclusions), such as process-based exclusions, folder location-based exclusions, file extension exclusions, or contextual file and folder exclusions<br/>- [Custom remediation actions](#custom-remediation-actions) based on threat severity or for specific threats<br/><br/>*The standalone versions of Defender for Endpoint Plan 1 and Plan 2 don't include server licenses. To onboard servers, you need another license, such as Microsoft Defender for Endpoint for Servers or [Microsoft Defender for Servers Plan 1 or 2](/azure/defender-for-cloud/defender-for-servers-introduction). To learn more, see [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md).*<br/><br/>*If you're a small or medium-sized business using [Microsoft Defender for Business](../defender-business/mdb-overview.md), you can get [Microsoft Defender for Business servers](../defender-business/get-defender-business.md#how-to-get-microsoft-defender-for-business-servers).* |
+| [Defender for Endpoint Plan 1 or Plan 2](microsoft-defender-endpoint.md) | - [Indicators](#defender-for-endpoint-indicators) for files, certificates, or IP addresses, URLs/domains<br/>- [Attack surface reduction exclusions](#attack-surface-reduction-exclusions)<br/>- [Controlled folder access exclusions](#controlled-folder-access-exclusions) |
 | [Defender for Endpoint Plan 2](microsoft-defender-endpoint.md) | [Automation folder exclusions](#automation-folder-exclusions) (for automated investigation and remediation)  |
 
 The following sections describe these exclusions in more detail:
@@ -222,7 +222,7 @@ Most organizations have several different types of exclusions and indicators to 
 
 The following image summarizes how exclusions and indicators are handled across Defender for Endpoint and Microsoft Defender Antivirus:
 
-:::image type="content" source="images/mdav-mde-flow.png" alt-text="Screenshot that Shows the order in which exclusions and indicators are evaluated." lightbox="images/mdav-mde-flow.png":::
+:::image type="content" source="media/mdav-mde-flow.png" alt-text="Screenshot that Shows the order in which exclusions and indicators are evaluated." lightbox="media/mdav-mde-flow.png":::
 
 Here's how it works:
 
@@ -252,7 +252,7 @@ In cases where Defender for Endpoint indicators conflict, here's what to expect:
 
 The following diagram shows how [automated investigation and remediation works with indicators](manage-indicators.md#automated-investigation-and-remediation-engine):
 
-:::image type="content" source="images/air-exclusions.png" alt-text="Screenshot that Shows automated investigation and remediation and indicators." lightbox="images/air-exclusions.png":::
+:::image type="content" source="media/air-exclusions.png" alt-text="Screenshot that Shows automated investigation and remediation and indicators." lightbox="media/air-exclusions.png":::
 
 ## Other server workloads and exclusions
 

@@ -1,12 +1,7 @@
 ---
 title: Integrating Microsoft Defender XDR into your security operations
 description: The basics of integrating Microsoft Defender XDR into your security operations.
-keywords: incidents, alerts, investigate, correlation, attack, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, incident response, cyber-attack, secops, security operations, soc
-search.product: eADQiWindows 10XVcnh
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: 
   - NOCSH
 ms.author: dansimp
@@ -27,7 +22,7 @@ ms.date: 07/15/2021
 
 # Integrating Microsoft Defender XDR into your security operations
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 - Microsoft Defender XDR
@@ -71,4 +66,4 @@ Use these steps to integrate Microsoft Defender XDR into your SOC.
 
 
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

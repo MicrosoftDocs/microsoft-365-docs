@@ -1,30 +1,26 @@
 ---
 title: Deploy Microsoft Defender for Endpoint on Linux with Puppet
-ms.reviewer: 
+ms.reviewer: gopkr
 description: Describes how to deploy Microsoft Defender for Endpoint on Linux using Puppet.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos, fedora, amazon linux 2
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
 - mde-linux
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: linux
 search.appverid: met150
 ms.date: 12/18/2020
 ---
 
 # Deploy Microsoft Defender for Endpoint on Linux with Puppet
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
@@ -61,7 +57,7 @@ Download the onboarding package from Microsoft Defender portal.
 2. In the first drop-down menu, select **Linux Server** as the operating system. In the second drop-down menu, select **Your preferred Linux configuration management tool** as the deployment method.
 3. Select **Download onboarding package**. Save the file as WindowsDefenderATPOnboardingPackage.zip.
 
-   :::image type="content" source="images/portal-onboarding-linux-2.png" alt-text="The option to download the onboarded package" lightbox="images/portal-onboarding-linux-2.png":::
+   :::image type="content" source="media/portal-onboarding-linux-2.png" alt-text="The option to download the onboarded package" lightbox="media/portal-onboarding-linux-2.png":::
 
 4. From a command prompt, verify that you have the file. 
 

@@ -1,12 +1,8 @@
 ---
 title: Review architecture requirements and the structure for Microsoft Defender for Cloud Apps
 description: Microsoft Defender for Cloud Apps technical diagrams explain the architecture in Microsoft Defender XDR, which will help you build a pilot environment.
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords:
   - NOCSH
 ms.author: bcarter
@@ -155,4 +151,4 @@ Step 2 of 3: [Enable the evaluation environment for Microsoft Defender for Cloud
 Return to the overview for [Evaluate Microsoft Defender for Cloud Apps](eval-defender-mcas-overview.md)
 
 Return to the overview for [Evaluate and pilot Microsoft Defender XDR](eval-overview.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

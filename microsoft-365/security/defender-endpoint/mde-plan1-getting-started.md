@@ -2,14 +2,14 @@
 title: Get started with Microsoft Defender for Endpoint Plan 1
 description: Get started using Defender for Endpoint Plan 1. Learn how to use the Microsoft Defender portal, manage alerts and devices, and view reports. 
 search.appverid: MET150 
-author: denisebmsft
-ms.author: deniseb
-manager: dansimp 
+author: siosulli
+ms.author: siosulli
+manager: deniseb 
 audience: ITPro
 ms.topic: overview
 ms.date: 08/22/2023
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: onboard
 ms.localizationpriority: medium
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
@@ -66,7 +66,7 @@ The navigation bar on the left side of the screen enables you to move easily bet
 | **Incidents & alerts** | Expands to show **Incidents** and **Alerts**. |
 | **Incidents & alerts** > **Incidents** | Navigates to the **Incidents** list. Incidents are created when alerts are triggered and/or threats are detected. By default, the **Incidents** list displays data for the last 30 days, with the most recent incident listed first. <br/><br/> To learn more, see [Incidents](view-incidents-queue.md). |
 | **Incidents & alerts** > **Alerts** | Navigates to the **Alerts** list (also referred to as the **Alerts queue**). Alerts are triggered when a suspicious or malicious file, process, or behavior is detected. By default, the **Alerts** list displays data for the last 30 days, with the most recent alert listed first. <br/><br/> To learn more, see [Alerts](alerts-queue.md). |
-| **Incidents & alerts** > **Email & collaboration alerts** | If your subscription includes [Microsoft Defender for Office 365](../office-365-security/mdo-security-comparison.md), alerts are generated when potential threats are detected in email and Office files. |
+| **Incidents & alerts** > **Email & collaboration alerts** | If your subscription includes [Microsoft Defender for Office 365](../office-365-security/mdo-about.md#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet), alerts are generated when potential threats are detected in email and Office files. |
 | **Actions & submissions** > **Action center** | Navigates to the Action center, which tracks remediation and manual response actions. The Action center tracks activities like these: <br/>- Microsoft Defender Antivirus encounters a malicious file and then blocks/removes that file. <br/>- Your security team isolates a device.<br/>- Defender for Endpoint detects and quarantines a file. <br/><br/> To learn more, see [Action center](auto-investigation-action-center.md). | 
 | **Actions & submissions** > **Submissions** | Navigates to the unified submissions portal, where admins can submit files to Microsoft for review. <br/><br/>To learn more, see [Submit files in Microsoft Defender for Endpoint](admin-submissions-mde.md). | 
 | **Secure score** | Displays a representation of your organization's security posture along with a list of recommended actions and metrics. <br/><br/> To learn more, see [Microsoft Secure Score](../defender/microsoft-secure-score.md). |

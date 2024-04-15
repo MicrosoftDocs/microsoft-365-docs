@@ -1,14 +1,9 @@
 ---
 title: Take action on advanced hunting query results in Microsoft Defender XDR
 description: Quickly address threats and affected assets in your advanced hunting query results
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, take action
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
 ms.subservice: adv-hunting
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords:
   - NOCSH
 ms.author: maccruz
@@ -20,12 +15,12 @@ ms.collection:
   - m365-security
   - tier1
 ms.topic: conceptual
-ms.date: 02/16/2021
+ms.date: 02/16/2024
 ---
 
 # Take action on advanced hunting query results
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 - Microsoft Defender XDR
@@ -107,4 +102,4 @@ Each action is individually recorded in the [action center](m365d-action-center.
 - [Work with query results](advanced-hunting-query-results.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
 - [Action center overview](m365d-action-center.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

@@ -15,6 +15,7 @@ ms.collection:
 - scotvorg
 - M365-subscription-management
 - Adm_O365
+- essentials-privacy
 ms.custom:
 - AdminSurgePortfolib
 - M365-Lighthouse                         
@@ -50,9 +51,9 @@ This information isn't shared with other parties, and is protected by strict pri
 
 ## Data collection for MSP customers
 
-Lighthouse collects data from customer tenants through a service plan that enables it to access the customer’s data with their consent. The MSP must also have delegated access to the customer’s tenant delegate admin relationship.
+Lighthouse collects data from customer tenants through a service plan that enables it to access the customer's data with their consent. The MSP must also have delegated access to the customer's tenant delegate admin relationship.
 
-The data collected from customer tenants helps Lighthouse provide better security and performance for those tenants. For example, by collecting device information, Lighthouse can help the MSP identify and resolve issues affecting the customer’s devices, such as malware infections, hardware failures, or software updates. Microsoft respects the privacy and security of the data collected from customer tenants. Lighthouse uses encryption, access control, auditing, and retention policies to protect the data from unauthorized or inappropriate use or disclosure.
+The data collected from customer tenants helps Lighthouse provide better security and performance for those tenants. For example, by collecting device information, Lighthouse can help the MSP identify and resolve issues affecting the customer's devices, such as malware infections, hardware failures, or software updates. Microsoft respects the privacy and security of the data collected from customer tenants. Lighthouse uses encryption, access control, auditing, and retention policies to protect the data from unauthorized or inappropriate use or disclosure.
 
 The following table summarizes the types of data that Lighthouse collects from customer tenants, where it collects it from, what scope it covers, and what purpose it serves.
 
@@ -71,13 +72,13 @@ The following table summarizes the types of data that Lighthouse collects from c
 
 Lighthouse empowers MSPs to grow, manage, and secure their Microsoft 365 customers more effectively and efficiently. To do this, Lighthouse collects data only for specific purposes, such as enhancing the service reliability, maintainability, and scalability of Microsoft 365 applications and services. Microsoft also complies with strict standards for handling the data securely and responsibly.
 
-Lighthouse will never collect data that isn’t necessary or relevant to its service. Lighthouse won't do anything to compromise the security or integrity of its MSPs and customers. Following are examples of data that Lighthouse will never collect:
+Lighthouse will never collect data that isn't necessary or relevant to its service. Lighthouse won't do anything to compromise the security or integrity of its MSPs and customers. Following are examples of data that Lighthouse will never collect:
 
 - **Biometric data:** Data that identifies or verifies the identity of MSPs and customers based on their physical or behavioral characteristics, such as fingerprints, facial recognition, voice recognition, or iris scans.
 - **Content of emails, messages, and documents:** Data that MSPs and customers create, send, receive, or store in their email, chat, or document applications.
 - **Credentials, passwords, or keys:** Data that MSPs and customers use to access their accounts, devices, or applications.
 - **Data from inactive customer tenants:** Management data from customer tenants that have been inactivated in Lighthouse by the MSP.
-- **Data from inactive delegated admin relationships:** Data from customer tenants where the MSP doesn’t have an active delegated admin relationship.
+- **Data from inactive delegated admin relationships:** Data from customer tenants where the MSP doesn't have an active delegated admin relationship.
 - **Location data:** Data that reveals the physical or geographical location of MSPs and customers, such as GPS coordinates, IP addresses, or Wi-Fi networks.
 - **Personal or financial information:** Data that partners and customers may have in their profiles, preferences, transactions, or records.
 Lighthouse ensures that it collects only necessary and relevant data for its service and protects the privacy and confidentiality of its MSPs and customers.

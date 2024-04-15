@@ -2,29 +2,24 @@
 title: Endpoint Attack Notifications
 ms.reviewer:
 description: Endpoint Attack Notifications provides proactive hunting for the most important threats to your network.
-keywords: Endpoint Attack Notification, managed threat hunting, managed detection and response (MDR) service, MTE, Microsoft Threat Experts, endpoint attack notification, Ask Defender Experts, experts on demand
-search.product: Windows 10
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.service: defender-endpoint
 ms.author: vpattnaik
 author: vpattnai
 ms.localizationpriority: medium
-manager: dansimp
+manager: dolmont
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier2
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: edr
 search.appverid: met150
 ms.date: 09/23/2022
 ---
 
 # Endpoint Attack Notifications
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)

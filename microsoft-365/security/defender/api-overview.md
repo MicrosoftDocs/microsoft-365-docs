@@ -1,12 +1,7 @@
 ---
 title: Overview of Microsoft Defender XDR APIs
 description: Learn about the available APIs in Microsoft Defender XDR
-keywords: api, apis, overview, incident, incidents, threat hunting, microsoft 365 defender
-search.product: eADQiWindows 10XVcnh
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: 
   - NOCSH
 ms.author: macapara
@@ -23,12 +18,12 @@ search.appverid:
   - MOE150
   - MET150
 ms.custom: api
-ms.date: 02/08/2023
+ms.date: 02/08/2024
 ---
 
 # Overview of Microsoft Defender XDR APIs
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -74,4 +69,4 @@ Watch this short video to learn how you can use Microsoft Defender XDR to automa
 | [Understand API error codes](api-error-codes.md) |
 | [Manage secrets in your apps with Azure Key Vault](/training/modules/manage-secrets-with-azure-key-vault/) |
 | [Implement OAuth 2.0 authorization for user sign in](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code) |
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

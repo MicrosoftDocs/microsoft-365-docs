@@ -3,7 +3,7 @@ title: "Microsoft 365 monitoring"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 03/25/2022
+ms.date: 03/21/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -14,6 +14,7 @@ ms.collection:
 - scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
+- must-keep
 ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH
@@ -32,13 +33,13 @@ Monitoring provides you with information about incidents and advisories that are
 
 - **Third-party infrastructure**. Issue is detected in third-party infrastructure on which your organization has taken a dependency and requires action from your organization for resolution. For example, user authentication transactions are getting throttled by a third-party security token service (STS) provider that prevents users from connecting to Exchange Online.
 
-- **Customer infrastructure**. Issue is detected in your organization's infrastructure and requires action from your organization for resolution. For example, users can't access Exchange Online because they are unable to obtain an authentication token from STS provider hosted by your organization because of an expired certificate.
+- **Customer infrastructure**. Issue is detected in your organization's infrastructure and requires action from your organization for resolution. For example, users can't access Exchange Online because they're unable to obtain an authentication token from STS provider hosted by your organization because of an expired certificate.
 
 Here's an example of the **Service health** page in the Microsoft 365 admin center, which is available at **Health** > **Service health** for organization scenarios and [priority account](../admin/setup/priority-accounts.md) scenarios.
 
 [![Screenshot of the Service health page in the Microsoft 365 admin center.](../media/m365-monitoring-final.png)](../media/m365-monitoring-final.png#lightbox)
 
-If Microsoft 365 monitoring discovers issues that need your attention, these will be show under the **Issues in your environment that require action** in the Active Issues section of the page.
+If Microsoft 365 monitoring discovers issues that need your attention, these are shown under the **Issues in your environment that require action** in the Active Issues section of the page.
 
 To access detailed monitoring pages for specific services, select **View** under **Organizational-level monitoring** on the service health page.
 
@@ -90,7 +91,7 @@ Then make sure you meet both of the following requirements:
 
 - Your organization needs to have a license count of at least 5,000, from one or a combination of these products: Office 365 E3, Microsoft 365 E3, Office 365 E5, or Microsoft 365 E5.
 
-- Your organization needs to have at least 50 monthly active users for one or more core Microsoft 365 services, which include Microsoft Teams, OneDrive for Business, SharePoint Online, Exchange Online, and Office apps.
+- Your organization needs to have at least 50 monthly active users for one or more core Microsoft 365 services, which include Microsoft Teams, OneDrive, SharePoint, Exchange Online, and Office apps.
 
 If the license count for your organization falls below 5,000 users and the monthly active users falls below 50 users in the core services, Exchange Online monitoring won't be enabled until these requirements are met.
 
@@ -110,7 +111,7 @@ Microsoft 365 Monitoring features are in preview for eligible customers. While i
 
 For general feedback, use the **Give feedback** icon on the bottom-right corner of the monitoring page.
 
-For feedback on incidents or advisories, use the **Is this post helpful? link.
+For feedback on incidents or advisories, use the **Is this post helpful?** link.
 
 ### 6. Are there any privacy concerns?
 

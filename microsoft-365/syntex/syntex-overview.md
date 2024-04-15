@@ -1,17 +1,17 @@
 ---
 title: Overview of Microsoft Syntex
 ms.author: chucked
-author: chuckedmonson
+author: lkueter
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 09/13/2023
+ms.date: 03/25/2024
 audience: admin
 ms.topic: overview
 ms.custom: intro-overview
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
-    - enabler-strategic
+    - essentials-get-started
     - m365initiative-syntex
     - essentials-overview
 ms.localizationpriority:  medium
@@ -20,11 +20,11 @@ description: Learn about the capabilities, services, and features in Microsoft S
 
 # Overview of Microsoft Syntex
 
-</br>
+<!---</br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RW15yuU] 
 
-</br>
+</br>--->
 
 Microsoft Syntex is a content understanding, processing, and compliance service that uses intelligent document processing, content artificial intelligence (AI), and advanced machine learning to automatically and thoughtfully find, organize, and classify documents in your SharePoint libraries, Microsoft Teams, OneDrive for Business, and Exchange.
 
@@ -64,7 +64,9 @@ You create *modern templates* based on the business documents you use most. You 
 
 [Learn more about how to generate documents using content assembly.](content-assembly.md)
 
-### Prebuilt document processing
+### Document processing
+
+#### Prebuilt document processing
 
 :::row:::
    :::column span="":::
@@ -79,14 +81,14 @@ Instead of having to create a new document processing model from scratch, you ca
 
 [Learn more about prebuilt models in Microsoft Syntex.](prebuilt-overview.md)
 
-### Structured and freeform document processing
+#### Structured and freeform document processing
 
 :::row:::
    :::column span="":::
       ![Icon for structured document processing model.](../media/content-understanding/custom-extract-by-layout.png)
    :::column-end:::
    :::column span="3":::
-      Use a [structured model](form-processing-overview.md) to automatically identify field and table values. It works best for structured or semi-structured documents, such as forms and invoices. Use a [freeform model](freeform-document-processing-overview.md) to automatically extract information from unstructured and freeform documents, such as letters and contracts where the information can appear anywhere in the document.
+      Use a [structured model](form-processing-overview.md) to automatically identify field and table values. It works best for structured or semi-structured documents, such as forms and invoices. Use a [freeform model](form-processing-overview.md) to automatically extract information from unstructured and freeform documents, such as letters and contracts where the information can appear anywhere in the document.
    :::column-end:::
 :::row-end:::
 
@@ -94,7 +96,7 @@ Both structured and freeform models use Microsoft Power Apps AI Builder to creat
 
 [Learn more about structured and freeform models in Microsoft Syntex.](form-processing-overview.md)
 
-### Unstructured document processing
+#### Unstructured document processing
 
 :::row:::
    :::column span="":::
@@ -133,27 +135,41 @@ Both structured and freeform models use Microsoft Power Apps AI Builder to creat
 
 [Learn more about taxonomy tagging in Microsoft Syntex.](taxonomy-tagging-overview.md)
 
-### Syntex eSignature
+### Document translation
 
 :::row:::
    :::column span="3":::
-      Send electronic requests using Syntex eSignature, keeping your content in Microsoft 365 while it’s being reviewed and signed. Use Syntex eSignature to quickly and securely send documents for signature to people both inside and outside of your organization.
+      Easily create a translated copy of a document or video transcipt in a SharePoint document library. You translate the file, while preserving the original format and structure of the file. Translation is available for all supported languages and dialects.
    :::column-end:::
    :::column span="":::
-      ![Image of generic esignature icon.](../media/content-understanding/esignature-image.png)
+      ![Image of generic translation icon.](../media/content-understanding/translation-image.png)
    :::column-end:::
 :::row-end:::
 
-[Learn more about using Microsoft Syntex eSignature.](esignature-overview.md)
+[Learn more about translation in Microsoft Syntex.](translation-overview.md)
+
+
+### SharePoint eSignature
+
+:::row:::
+   :::column span="":::
+      ![Image of generic esignature icon.](../media/content-understanding/esignature-image.png)
+   :::column-end:::
+   :::column span="3":::
+      Send electronic requests using SharePoint eSignature, keeping your content in Microsoft 365 while it’s being reviewed and signed. Use eSignature to quickly and securely send documents for signature to people both inside and outside of your organization.
+   :::column-end:::
+:::row-end:::
+
+[Learn more about using SharePoint eSignature.](esignature-overview.md)
 
 ### Optical character recognition
 
 :::row:::
-   :::column span="":::
-      ![Image of generic OCR icon.](../media/content-understanding/ocr-image.png)
-   :::column-end:::
    :::column span="3":::
       The optical character recognition (OCR) service in Syntex lets you extract printed or handwritten text from images. Syntex automatically scans the image files, extracts the relevant text, and makes the text from the images available for search and indexing. This lets you quickly and accurately find the keywords and phrases you're looking for.
+   :::column-end:::
+   :::column span="":::
+      ![Image of generic OCR icon.](../media/content-understanding/ocr-image.png)
    :::column-end:::
 :::row-end:::
 

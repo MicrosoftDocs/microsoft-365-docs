@@ -1,15 +1,14 @@
 ---
 title: Enable and configure Microsoft Defender Antivirus always-on protection
-description: Enable and configure Microsoft Defender Antivirus real-time protection features such as behavior monitoring, heuristics, and machine learning
-keywords: antivirus, real-time protection, rtp, machine learning, behavior monitoring, heuristics
-ms.service: microsoft-365-security
-ms.subservice: mde
+description: Enable and configure Microsoft Defender Antivirus real-time protection features such as behavior monitoring, heuristics, and machine learning.
+ms.service: defender-endpoint
+ms.subservice: ngp
 ms.localizationpriority: medium
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 ms.topic: conceptual
-ms.date: 05/24/2023
-manager: dansimp
+ms.date: 04/03/2024
+manager: deniseb
 ms.custom: nextgen
 ms.collection: 
 - m365-security
@@ -56,9 +55,9 @@ You can use Intune to configure antivirus policies, and then apply those policie
 > [!IMPORTANT]
 > We recommend using [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) to manage Microsoft Defender Antivirus settings for your organization. With Intune, you can control where tamper protection is enabled (or disabled) through policies. You can also protect Microsoft Defender Antivirus exclusions. For more information, see [Protect Microsoft Defender Antivirus exclusions from tampering](prevent-changes-to-security-settings-with-tamper-protection.md#protect-microsoft-defender-antivirus-exclusions).
 
-You can use Group Policy to manage some Microsoft Defender Antivirus settings. Note that if [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) is enabled in your organization, any changes made to [tamper-protected settings](/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection#what-happens-when-tamper-protection-is-turned-on) are ignored. You can't turn off tamper protection by using Group Policy. 
+You can use Group Policy to manage some Microsoft Defender Antivirus settings. If [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) is enabled in your organization, any changes made to [tamper-protected settings](/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection#what-happens-when-tamper-protection-is-turned-on) are ignored. You can't turn off tamper protection by using Group Policy. 
 
-If you must make changes to a device and those changes are blocked by tamper protection, we recommend using [troubleshooting mode](/microsoft-365/security/defender-endpoint/enable-troubleshooting-mode) to temporarily disable tamper protection on the device. Note that after troubleshooting mode ends, any changes made to tamper-protected settings are reverted to their configured state.
+If you must make changes to a device and those changes are blocked by tamper protection, we recommend using [troubleshooting mode](/microsoft-365/security/defender-endpoint/enable-troubleshooting-mode) to temporarily disable tamper protection on the device. After troubleshooting mode ends, any changes made to tamper-protected settings are reverted to their configured state.
  
 You can use **Local Group Policy Editor** to enable and configure Microsoft Defender Antivirus always-on protection settings.
 
@@ -70,7 +69,7 @@ You can use **Local Group Policy Editor** to enable and configure Microsoft Defe
 
     2. Under **Best match**, select **Edit group policy** to launch **Local Group Policy Editor**.
     
-       :::image type="content" source="images/gpedit-search.png" alt-text="The GPEdit taskbar search result in the Control panel" lightbox="images/gpedit-search.png":::
+       :::image type="content" source="media/gpedit-search.png" alt-text="The GPEdit taskbar search result in the Control panel" lightbox="media/gpedit-search.png":::
 
 2. In the left pane of **Local Group Policy Editor**, expand the tree to **Computer Configuration** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus**.
 
@@ -111,7 +110,8 @@ For the most current settings, get the latest ADMX files in your central store. 
 
 1. Open **Local Group Policy Editor**.
 
-   1. In your Windows 10 or Windows 11 taskbar search box, type **gpedit**.
+   1. In your Windows 10 or Windows 11 taskbar search box, type `gpedit`.
+
    2. Under **Best match**, select **Edit group policy** to launch **Local Group Policy Editor**.
 
 2. In the left pane of **Local Group Policy Editor**, expand the tree to **Computer Configuration** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **Real-time Protection**.
@@ -137,4 +137,5 @@ If you're looking for antivirus-related information for other platforms, see:
 - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
 - [Configure Defender for Endpoint on Android features](android-configure.md)
 - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

@@ -1,30 +1,25 @@
 ---
 title: Configure and validate exclusions for Microsoft Defender for Endpoint on Mac
 description: Provide and validate exclusions for Microsoft Defender for Endpoint on Mac. Exclusions can be set for files, folders, and processes.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, exclusions, scans, antivirus
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
-ms.collection: 
+ms.collection:
 - m365-security
 - tier3
 - mde-macos
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: macos
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 02/29/2024
 ---
 
 # Configure and validate exclusions for Microsoft Defender for Endpoint on macOS
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -42,6 +37,8 @@ You can exclude certain files, folders, processes, and process-opened files from
 
 Exclusions can be useful to avoid incorrect detections on files or software that are unique or customized to your organization. They can also be useful for mitigating performance issues caused by Defender for Endpoint on Mac.
 
+To narrow down which process and/or path and/or extension you need to exclude, please use [real-time-protection-statistics](/microsoft-365/security/defender-endpoint/mac-support-perf).
+
 > [!WARNING]
 > Defining exclusions lowers the protection offered by Defender for Endpoint on Mac. You should always evaluate the risks that are associated with implementing exclusions, and you should only exclude files that you are confident are not malicious.
 
@@ -58,18 +55,63 @@ Process|A specific process (specified either by the full path or file name) and 
 
 File, folder, and process exclusions support the following wildcards:
 
-Wildcard|Description|Examples|
----|---|---
-\*|Matches any number of any characters including none (note if this wildcard is not used at the end of the path then it will substitute only one folder)| `/var/*/tmp` includes any file in `/var/abc/tmp` and its subdirectories, and `/var/def/tmp` and its subdirectories. It does not include `/var/abc/log` or `/var/def/log` <p> <p> `/var/*/` includes any file in `/var` and its subdirectories. 
-?|Matches any single character|`file?.log` includes `file1.log` and `file2.log`, but not`file123.log`
+|Wildcard|Description|Examples|
+|---|---|---|
+|\*|Matches any number of any characters including none (note if this wildcard is not used at the end of the path then it will substitute only one folder)| `/var/*/tmp` includes any file in `/var/abc/tmp` and its subdirectories, and `/var/def/tmp` and its subdirectories. It does not include `/var/abc/log` or `/var/def/log` <p> <p> `/var/*/` includes any file in `/var` and its subdirectories.|
+|?|Matches any single character|`file?.log` includes `file1.log` and `file2.log`, but not `file123.log`|
+
 > [!NOTE]
 > When using the * wildcard at the end of the path, it will match all files and subdirectories under the parent of the wildcard.
-
-
-> [!NOTE]
+>
 > The product attempts to resolve firmlinks when evaluating exclusions. Firmlink resolution does not work when the exclusion contains wildcards or the target file (on the `Data` volume) does not exist.
 
+## Best practices for adding antimalware exclusions for Microsoft Defender for Endpoint on macOS.
+
+1. Write down why an exclusion was added to a central location where only SecOps and/or Security Administrator have access.
+
+   e.g. Submitter, date, app name, reason, and exclusion information.
+
+1. Make sure to have an expiration date* for the exclusions
+
+   *except for apps that the ISV stated that there is no additional tweaking that could be done to prevent the false positive or higher cpu utilization from occurring.
+
+1. Avoid migrating 3rd party antimalware exclusions since they may no longer be applicable nor applicable to Microsoft Defender for Endpoint on macOS.
+
+1. Order of exclusions to consider top (more secure) to bottom (least secure):
+
+   1. Indicators - Certificate - allow
+
+      1. Add an extended validation (EV) code signing.
+
+   1. Indicators - File hash - allow
+
+      1. If a process or daemon doesn't change often, e.g. the app doesn't have a monthly security update.
+
+   1. Path & Process
+
+   1. Process
+
+   1. Path
+
+   1. Extension
+
 ## How to configure the list of exclusions
+
+### From the Microsoft Defender for Endpoint Security Settings management console
+
+1. Login to the [Microsoft Defender portal](https://security.microsoft.com).
+2. Go to **Configuration management > Endpoint Security Policies > Create new Policy**
+   - Select Platform: macOS
+   - Select Template: Microsoft Defender Antivirus exclusions
+3. Select **Create Policy**
+4. Enter a name and description and select **Next**
+5. Expand **Antivirus engine**
+6. Select **Add**
+7. Select **Path** or **File extension** or **File name**
+8. Select **Configure instance** and add the exclusions as needed
+9. Select **Next**
+10. Assign the exclusion to a group and Select **Next**
+11. Select **Save**
 
 ### From the management console
 
@@ -77,11 +119,11 @@ For more information on how to configure exclusions from JAMF, Intune, or anothe
 
 ### From the user interface
 
-Open the Defender for Endpoint application and navigate to **Manage settings** \> **Add or Remove Exclusion...**, as shown in the following screenshot:
+1. Open the Defender for Endpoint application and navigate to **Manage settings** \> **Add or Remove Exclusion...**, as shown in the following screenshot:
 
-:::image type="content" source="images/mdatp-37-exclusions.png" alt-text="The Manage exclusions page" lightbox="images/mdatp-37-exclusions.png":::
+   :::image type="content" source="media/mdatp-37-exclusions.png" alt-text="The Manage exclusions page" lightbox="media/mdatp-37-exclusions.png":::
 
-Select the type of exclusion that you wish to add and follow the prompts.
+2. Select the type of exclusion that you wish to add and follow the prompts.
 
 ## Validate exclusions lists with the EICAR test file
 
@@ -124,4 +166,5 @@ For example, to add `EICAR-Test-File (not a virus)` (the threat name associated 
 ```bash
 mdatp threat allowed add --name "EICAR-Test-File (not a virus)"
 ```
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

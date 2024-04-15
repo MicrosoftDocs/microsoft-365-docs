@@ -1,13 +1,8 @@
 ---
 title: Try Microsoft Defender XDR incident response capabilities in a pilot environment
 description: Try incident response capabilities in Microsoft Defender XDR to prioritize and manage incidents, automate investigations, and use advanced hunting in threat detection.
-keywords: Microsoft 365 Defender trial, try Microsoft 365 Defender, evaluate Microsoft 365 Defender, Microsoft 365 Defender evaluation lab, Microsoft 365 Defender pilot, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: 
   - NOCSH
 ms.localizationpriority: medium
@@ -304,4 +299,4 @@ See [Get expert training on advanced hunting](advanced-hunting-expert-training.m
 ### Navigation you may need
 
 [Create the Microsoft Defender XDR Evaluation Environment](eval-create-eval-environment.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

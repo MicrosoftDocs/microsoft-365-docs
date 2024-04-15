@@ -18,9 +18,10 @@ ms.collection:
 - Adm_TOC
 - basic-mobility-security
 ms.custom:
-  - AdminSurgePortfolio
-  - has-azure-ad-ps-ref
-  - azure-ad-ref-level-one-done
+- AdminSurgePortfolio
+- has-azure-ad-ps-ref
+- azure-ad-ref-level-one-done
+- basic-mobility-security
 search.appverid:
 - MET150
 description: "For devices you can't manage with Basic Mobility and Security, block Exchange ActiveSync app access to email and use Microsoft Graph PowerShell to get details about org devices."
@@ -28,7 +29,7 @@ description: "For devices you can't manage with Basic Mobility and Security, blo
 
 # Manage device access settings in Basic Mobility and Security
 
-If you're using Basic Mobility and Security, there might be devices that you can't manage with Basic Mobility and Security. If so, you should block Exchange ActiveSync app access to Microsoft 365 email for mobile devices that aren't supported by Basic Mobility and Security. This helps secure your organization information across more devices.
+If you're using Basic Mobility and Security, there might be devices that you can't manage with Basic Mobility and Security. If so, you should block Exchange ActiveSync app access to Microsoft 365 email for mobile devices that aren't supported by Basic Mobility and Security. Blocking Exchange ActiveSync app access helps secure your organization information across more devices.
 
 Use these steps:
 
@@ -88,7 +89,7 @@ For more info on these steps, see [Connect to Microsoft 365 with PowerShell](/po
 
 2. A popup will open for you to sign in. Provide the credentials of your Administrative Account and log in.
 
-3. If your account has the necessary permissions you'll see "Welcome To Microsoft Graph!" in the Powershell window.
+3. If your account has the necessary permissions, you see "Welcome To Microsoft Graph!" in the Powershell window.
 
 ### Step 3: Make sure you're able to run PowerShell scripts
 
@@ -214,7 +215,7 @@ First, save the script to your computer.
 	}
 	```
 
-2. Save it as a Windows PowerShell script file by using the file extension .ps1; for example, Get-MgGraphDeviceOwnership.ps1.
+2. Save it as a Windows PowerShell script file by using the file extension ".ps1". For example, Get-MgGraphDeviceOwnership.ps1.
 
 	> [!NOTE]
 	> The script is also available for download on [Github](https://github.com/Raindrops-dev/RAIN-MicrosoftGraphPowershellCode/blob/main/Get-MgGraphDeviceOwnership.ps1).
@@ -241,7 +242,7 @@ First, save the script to your computer.
    .\Get-GraphUserDeviceComplianceStatus.ps1 -users $user -Export
    ```
 
-The information is exported to your Windows Desktop as a CSV file. You can use additional parameters to specify the file name and path of the CSV.
+The information is exported to your Windows Desktop as a CSV file. You can specify the file name and path of the CSV.
 
 ### Run the script to get device information for a group of users
 
@@ -278,6 +279,6 @@ The information is exported to your Windows Desktop as a CSV file. You can use a
 
 [Get-MgUser](/powershell/module/microsoft.graph.users/get-mguser)
 
-[Get-MgDevice](/powershell/module/microsoft.graph.users/get-mgdevice)
+[Get-MgDevice](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevice)
 
 [Get-MgUserOwnedDevice](/powershell/module/microsoft.graph.users/get-mguserowneddevice)

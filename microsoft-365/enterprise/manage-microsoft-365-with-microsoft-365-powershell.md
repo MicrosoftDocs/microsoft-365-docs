@@ -3,7 +3,7 @@ title: "Manage Microsoft 365 with PowerShell"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 08/10/2020
+ms.date: 12/27/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
@@ -13,6 +13,7 @@ search.appverid:
 ms.collection: 
 - scotvorg
 - Ent_O365
+- must-keep
 f1.keywords:
 - CSH
 ms.custom: 

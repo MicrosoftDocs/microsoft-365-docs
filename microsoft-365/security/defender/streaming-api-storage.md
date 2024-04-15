@@ -23,7 +23,7 @@ ms.date: 02/08/2023
 
 # Configure Microsoft Defender XDR to stream Advanced Hunting events to your Storage account
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -41,9 +41,9 @@ ms.date: 02/08/2023
 
 ### Add contributor permissions
 
-Once the Storage account is created you will need to:
+Once the Storage account is created, you'll need to:
 
-1. Define the user who will be logging into Microsoft Defender XDR as Contributor.
+1. Define the user who is logging into Microsoft Defender XDR as Contributor.
 
     Go to **Storage Account > Access control (IAM) > Add** and verify under **Role assignments**.
 
@@ -51,9 +51,9 @@ Once the Storage account is created you will need to:
 
 1. Log in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender XDR</a> as a ***Global Administrator*** or ***Security Administrator***.
 
-2. Go to **Settings** \> **Microsoft 365 Defender** \> **Streaming API**. To go directly to the **Streaming API** page, use <https://security.microsoft.com/settings/mtp_settings/raw_data_export>.
+2. Go to **Settings** \> **Microsoft Defender XDR** \> **Streaming API**. To go directly to the **Streaming API** page, use <https://security.microsoft.com/settings/mtp_settings/raw_data_export>.
 
-3. Click **Add**.
+3. Select **Add**.
 
 4. In the **Add new Streaming API settings** flyout that appears, configure the following settings:
    1. **Name**: Choose a name for your new settings.
@@ -66,28 +66,28 @@ Once the Storage account is created you will need to:
 
    4. Back on the **Add new Streaming API settings** flyout, choose the **Event types** that you want to stream.
 
-   When you're finished, click **Submit**.
+   When you're finished, select **Submit**.
 
 ## The schema of the events in the Storage account
 
-- A blob container will be created for each event type:
+- A blob container is created for each event type:
 
-  :::image type="content" source="../defender-endpoint/images/storage-account-event-schema.png" alt-text="Example of a blob container" lightbox="../defender-endpoint/images/storage-account-event-schema.png":::
+  :::image type="content" source="../defender-endpoint/media/storage-account-event-schema.png" alt-text="Example of a blob container" lightbox="../defender-endpoint/media/storage-account-event-schema.png":::
 
 - The schema of each row in a blob is the following JSON:
 
   ```JSON
   {
-          "time": "<The time Microsoft 365 Defender received the event>"
+          "time": "<The time Microsoft Defender XDR received the event>"
           "tenantId": "<Your tenant ID>"
           "category": "<The Advanced Hunting table name with 'AdvancedHunting-' prefix>"
-          "properties": { <Microsoft 365 Defender Advanced Hunting event as Json> }
+          "properties": { <Microsoft Defender XDR Advanced Hunting event as Json> }
   }
   ```
 
 - Each blob contains multiple rows.
 
-- Each row contains the event name, the time Defender for Endpoint received the event, the tenant it belongs (you will only get events from your tenant), and the event in JSON format in a property called "properties".
+- Each row contains the event name, the time Defender for Endpoint received the event, the tenant it belongs (you'll only get events from your tenant), and the event in JSON format in a property called "properties".
 
 - For more information about the schema of Microsoft Defender XDR events, see [Advanced Hunting overview](../defender/advanced-hunting-overview.md).
 
@@ -105,9 +105,9 @@ In order to get the data types for our events properties do the following:
    | project ColumnName, ColumnType
    ```
 
-- Here is an example for Device Info event:
+- Here's an example for Device Info event:
 
-  :::image type="content" source="../defender-endpoint/images/machine-info-datatype-example.png" alt-text="An example device info query" lightbox="../defender-endpoint/images/machine-info-datatype-example.png":::
+  :::image type="content" source="../defender-endpoint/media/machine-info-datatype-example.png" alt-text="An example device info query" lightbox="../defender-endpoint/media/machine-info-datatype-example.png":::
 
 ## Monitoring created resources
 
@@ -122,4 +122,4 @@ For more information, see [Monitor destinations - Azure Monitor | Microsoft Docs
 - [Microsoft Defender XDR Streaming API](streaming-api.md)
 - [Stream Microsoft Defender XDR events to your Azure storage account](streaming-api-storage.md)
 - [Azure Storage Account documentation](/azure/storage/common/storage-account-overview)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

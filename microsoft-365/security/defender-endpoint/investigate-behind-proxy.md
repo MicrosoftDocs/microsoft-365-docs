@@ -1,29 +1,25 @@
 ---
 title: Investigate connection events that occur behind forward proxies
 description: Learn how to use advanced HTTP level monitoring through network protection in Microsoft Defender for Endpoint, which surfaces a real target, instead of a proxy.
-keywords: proxy, network protection, forward proxy, network events, audit, block, domain names, domain
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier2
 - mde-edr
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: edr
 search.appverid: met150
 ms.date: 12/18/2020
 ---
 
 # Investigate connection events that occur behind forward proxies
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -59,13 +55,13 @@ For more information, see [Enable network protection](enable-network-protection.
 
 When network protection is turned on, you'll see that on a device's timeline the IP address keeps representing the proxy, while the real target address shows up.
 
-:::image type="content" source="images/atp-proxy-investigation.png" alt-text="The network events on device's timeline" lightbox="images/atp-proxy-investigation.png":::
+:::image type="content" source="media/atp-proxy-investigation.png" alt-text="The network events on device's timeline" lightbox="media/atp-proxy-investigation.png":::
 
 Other events triggered by the network protection layer are now available to surface the real domain names even behind a proxy.
 
 Event's information:
 
-:::image type="content" source="images/atp-proxy-investigation-event.png" alt-text="The URLs of a single network event" lightbox="images/atp-proxy-investigation-event.png":::
+:::image type="content" source="media/atp-proxy-investigation-event.png" alt-text="The URLs of a single network event" lightbox="media/atp-proxy-investigation-event.png":::
 
 ## Hunt for connection events using advanced hunting
 
@@ -79,7 +75,7 @@ DeviceNetworkEvents
 | take 10
 ```
 
-:::image type="content" source="images/atp-proxy-investigation-ah.png" alt-text="The advanced hunting query" lightbox="images/atp-proxy-investigation-ah.png":::
+:::image type="content" source="media/atp-proxy-investigation-ah.png" alt-text="The advanced hunting query" lightbox="media/atp-proxy-investigation-ah.png":::
 
 You can also filter out  events that are related to connection to the proxy itself.
 

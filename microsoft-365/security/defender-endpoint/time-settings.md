@@ -1,28 +1,24 @@
 ---
 title: Microsoft Defender XDR time zone settings
 description: Use the info contained here to configure the Microsoft Defender XDR time zone settings and view license information.
-keywords: settings, Microsoft Defender, cybersecurity threat intelligence, Microsoft Defender for Endpoint, time zone, utc, local time, license
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier2
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: reference
 search.appverid: met150
 ms.date: 12/18/2020
 ---
 
 # Microsoft Defender XDR time zone settings
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
@@ -32,7 +28,7 @@ ms.date: 12/18/2020
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-settings-abovefoldlink)
 
 Use the **Time zone** menu to configure the time zone and view license information.
-:::image type="content" source="images/atp-time-zone.png" alt-text="The Time zone settings-1" lightbox="images/atp-time-zone.png":::
+:::image type="content" source="media/atp-time-zone.png" alt-text="The Time zone settings-1" lightbox="media/atp-time-zone.png":::
 
 ## Time zone settings
 
@@ -44,7 +40,7 @@ Microsoft Defender for Endpoint can display either Coordinated Universal Time (U
 
 Your current time zone setting is shown in the Microsoft Defender for Endpoint menu. You can change the displayed time zone in the **Time zone** menu.
 
-:::image type="content" source="images/atp-time-zone-menu.png" alt-text="The Time zone settings-2" lightbox="images/atp-time-zone-menu.png":::
+:::image type="content" source="media/atp-time-zone-menu.png" alt-text="The Time zone settings-2" lightbox="media/atp-time-zone-menu.png":::
 
 ### UTC time zone
 
@@ -67,7 +63,7 @@ The Microsoft Defender for Endpoint time zone is set by default to UTC. Setting 
 To set the time zone:
 
 1. Click the **Time zone** menu.
-   :::image type="content" source="images/atp-time-zone.png" alt-text="The Time zone settings-3" lightbox="images/atp-time-zone.png":::
+   :::image type="content" source="media/atp-time-zone.png" alt-text="The Time zone settings-3" lightbox="media/atp-time-zone.png":::
 1. Select the **Timezone UTC** indicator.
 1. Select **Timezone UTC** or your local time zone, for example -7:00.
 

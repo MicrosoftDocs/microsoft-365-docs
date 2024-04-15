@@ -2,25 +2,25 @@
 title: Microsoft Defender for Endpoint on Mac
 ms.reviewer: yongrhee
 description: Learn how to install, configure, update, and use Microsoft Defender for Endpoint on Mac.
-ms.service: microsoft-365-security
-ms.author: dansimp
-author: dansimp
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
 - mde-macos
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: macos
 search.appverid: met150
-ms.date: 11/22/2023
+ms.date: 01/02/2024
 ---
 
 # Microsoft Defender for Endpoint on Mac
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -70,7 +70,7 @@ There are several methods and deployment tools that you can use to install and c
 ### System requirements
 
 The three most recent major releases of macOS are supported.
-- 14 (Sonoma), 13 (Ventura), 12 (Monterey), 11 (Big Sur)
+- 14 (Sonoma), 13 (Ventura), 12 (Monterey)
   > [!IMPORTANT]
   > On macOS 11 (Big Sur) and above, Microsoft Defender for Endpoint requires additional configuration profiles. If you are an existing customer upgrading from earlier versions of macOS, make sure to deploy the additional configuration profiles listed on [New configuration profiles for macOS Big Sur and newer versions of macOS](mac-sysext-policies.md).
 
@@ -91,7 +91,8 @@ Microsoft Defender for Endpoint on Mac requires one of the following Microsoft V
 - Windows 10 Enterprise E5
 - Microsoft 365 Business Premium
 - Windows 11 Enterprise E5
-- Microsoft Defender for Endpoint
+- Microsoft Defender for Endpoint P2
+- Microsoft Defender for Endpoint P1 (which is included in [Microsoft 365 E3 (M365 E3)](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-for-endpoint-plan-1-now-included-in-m365-e3/ba-p/3060639))
 
 > [!NOTE]
 > Eligible licensed users may use Microsoft Defender for Endpoint on up to five concurrent devices.

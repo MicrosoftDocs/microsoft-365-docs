@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
-    - enabler-strategic
+    - essentials-manage
     - m365initiative-syntex
 ms.localizationpriority:  medium
 description: Learn how to apply a sensitivity label to a model in Microsoft Syntex.
@@ -21,9 +21,6 @@ description: Learn how to apply a sensitivity label to a model in Microsoft Synt
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
 You can easily apply a [sensitivity label](../compliance/sensitivity-labels.md) to unstructured document processing models in Microsoft Syntex. 
-
-> [!Note]
-> Sensitivity labels are not yet available for prebuilt models or for freeform or structured document processing models.
 
 Sensitivity labels let you apply encryption to the documents that your models identify. For example, you want your model to not only identify any financial documents that contain bank account numbers or credit card numbers that are uploaded to your document library, but also to apply a sensitivity label that's configured with encryption settings to restrict who can access that content and how it can be used. Syntex models honor the [label order](../compliance/apply-sensitivity-label-automatically.md#how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label) rules and also don't overwrite an existing label that was manually applied by a user to the file. 
 

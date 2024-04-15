@@ -1,12 +1,7 @@
 ---
 title: Example of an identity-based attack
 description: Step through an example analysis of an identity-based attack.
-keywords: incidents, alerts, investigate, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, incident response, cyber-attack
-search.product: eADQiWindows 10XVcnh
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: 
   - NOCSH
 ms.author: diannegali
@@ -28,7 +23,7 @@ ms.date: 04/20/2021
 
 # Example of an identity-based attack
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 - Microsoft Defender XDR
@@ -93,4 +88,4 @@ See the [phishing](first-incident-path-phishing.md) investigation path.
 - [Incidents overview](incidents-overview.md)
 - [Manage incidents](manage-incidents.md)
 - [Investigate incidents](investigate-incidents.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

@@ -53,7 +53,7 @@ By default, structured and default document processing is turned on for librarie
     > [!NOTE]
     > Disabling a site after a model is made available to process files on that site will not disable the model. Models can still be used to process files and incur charges. A model can be made available to process files by being created either on that site or in a content center.
 
-    b. To restrict user access to this service, select **No SharePoint libraries** or **Libraries in selected SharePoint sites** and follow the instructions to either select the sites or upload a CSV listing a maximum of 100 sites. Be sure to add your content center site if you want it to be included. You can then manage site access permissions for the sites you selected.
+    b. To restrict the sites where users can create models, select **No SharePoint libraries** or **Libraries in selected SharePoint sites** and follow the instructions to either select the sites or upload a CSV listing a maximum of 100 sites. Be sure to add your content center site if you want it to be included. You can then manage site access permissions for the sites you selected.
 
     c. Select **Save**.
 
@@ -65,7 +65,7 @@ You also need to [allocate AI Builder credits](/power-platform/admin/capacity-ad
 
 If you have [AI Builder credits allocated](/power-platform/admin/capacity-add-on) to the environment, these credits will be used first. Once the credits are exhausted, the processing transactions are charged to the meter.
 
-When using a custom environment, model creators must be assigned the Environment Maker security role and model users must be assigned the Basic User security role. For more information, see [Assign a security role to a user](/power-platform/admin/assign-security-roles). Custom security roles can be created to specifically grant access to the AI Builder tables as the Environment Maker role so those users can create models. You don't need to assign users this role if you're using the default Power Platform environment.
+When using a custom environment, model creators must be assigned the Environment Maker security role. Model users must have permission to use (not edit) the model file in SharePoint libraries. For more information, see [Assign a security role to a user](/power-platform/admin/assign-security-roles). Custom security roles can be created to specifically grant access to the AI Builder tables as the Environment Maker role so those users can create models. You don't need to assign users this role if you're using the default Power Platform environment.
 
 <!---
 Users creating models in a [content center site](create-a-content-center.md) must be site members. Users creating models locally outside the content center must be site owners of those sites.--->

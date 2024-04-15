@@ -9,6 +9,7 @@ ms.reviewer: armanv, nicholak
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
 ms.collection: 
 - Tier1
@@ -34,7 +35,7 @@ ms.date: 11/16/2023
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> This article applies to Office 365 operated by 21Vianet in China. It is for organizations who want to allow a 21Vianet Partner to administer their Office 365 subscription for them.
+> This article applies to Microsoft 365 operated by 21Vianet in China. It is for organizations who want to allow a 21Vianet Partner to administer their Microsoft 365 subscription for them.
 
 ::: moniker-end
 
@@ -47,7 +48,7 @@ A Microsoft authorized partner can act as your subscription advisor and provide 
 ## Before you begin
 
 - [Find out what type of billing account you have](../../commerce/manage-billing-accounts.md#view-my-billing-accounts).
-- If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a Billing account owner or contributor, a Billing profile owner or contributor, or an Invoice manager to do the tasks in this article. For information about billing account and billing profile roles, see [Understand your Microsoft business billing account](../../commerce/manage-billing-accounts.md) and [Understand your Microsoft business billing profile](../../commerce/billing-and-payments/manage-billing-profiles.md).
+- If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a Billing account owner or contributor, a Billing profile owner or contributor, or an Invoice manager to do the tasks in this article. For information about billing account and billing profile roles, see [Understand your Microsoft business billing account](../../commerce/manage-billing-accounts.md) and [Manage your Microsoft business billing profiles](../../commerce/billing-and-payments/manage-billing-profiles.md).
 - If you have a Microsoft Online Subscription Agreement (MOSA), you must be a Global or Billing admin to do the tasks in this article. For more information, see [About admin roles in the Microsoft 365 admin center](../add-users/about-admin-roles.md).
 
 > [!NOTE]

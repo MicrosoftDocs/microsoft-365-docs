@@ -1,12 +1,8 @@
 ---
 title: Investigate and respond using Microsoft Defender XDR in a pilot environment
 description: Set up attack simulations in Microsoft Defender XDR trial lab or pilot environment to try out the security solution designed to teach users to protect devices, identity, data, and applications.
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: 
   - NOCSH
 ms.localizationpriority: medium
@@ -46,4 +42,4 @@ The following table describes the steps in the illustration.
 ## Navigation you may need
 
 [Create the Microsoft Defender XDR Evaluation Environment](eval-create-eval-environment.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

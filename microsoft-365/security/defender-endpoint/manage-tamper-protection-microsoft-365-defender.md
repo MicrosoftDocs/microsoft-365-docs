@@ -1,19 +1,19 @@
 ---
 title: Manage tamper protection for your organization using Microsoft Defender XDR
 ms.reviewer: joshbregman, mattcall, pahuijbr, hayhov, oogunrinde
-manager: dansimp
+manager: deniseb
 description: Turn tamper protection on or off for your tenant using the Microsoft Defender portal.
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.localizationpriority: medium
 ms.date: 10/24/2023
 audience: ITPro
 ms.topic: conceptual
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 ms.custom: 
 - nextgen
 - admindeeplinkDEFENDER
-ms.subservice: mde
+ms.subservice: ngp
 ms.collection: 
 - m365-security
 - tier2

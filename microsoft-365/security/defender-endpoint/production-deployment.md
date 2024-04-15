@@ -1,12 +1,11 @@
 ---
 title: Set up Microsoft Defender for Endpoint deployment
 description: Learn how to set up the deployment for Microsoft Defender for Endpoint
-keywords: deploy, setup, licensing validation, tenant configuration, network configuration
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.author: siosulli
-author: mjcaparas
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
   - m365-security
@@ -16,14 +15,14 @@ ms.collection:
   - tier1
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: onboard
 search.appverid: met150
 ms.date: 11/29/2023
 ---
 
 # Set up Microsoft Defender for Endpoint deployment
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -50,13 +49,13 @@ Checking for the license state and whether it was properly provisioned can be do
 
 1. To view your licenses, go to the **Microsoft Azure portal** and navigate to the [Microsoft Azure portal license section](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products).
 
-   :::image type="content" source="images/atp-licensing-azure-portal.png" alt-text="The Azure Licensing page" lightbox="images/atp-licensing-azure-portal.png":::
+   :::image type="content" source="media/atp-licensing-azure-portal.png" alt-text="The Azure Licensing page" lightbox="media/atp-licensing-azure-portal.png":::
 
 1. Alternately, in the admin center, navigate to **Billing** \> **Subscriptions**.
 
     On the screen, you'll see all the provisioned licenses and their current **Status**.
 
-    :::image type="content" source="images/atp-billing-subscriptions.png" alt-text="The billing licenses page":::
+    :::image type="content" source="media/atp-billing-subscriptions.png" alt-text="The billing licenses page":::
 
 ## Cloud Service Provider validation
 
@@ -66,7 +65,7 @@ To gain access into which licenses are provisioned to your company, and to check
 
 2. Clicking on the **Partner portal** link will open the **Admin on behalf** option and will give you access to the customer admin center.
 
-   :::image type="content" source="images/atp-O365-admin-portal-customer.png" alt-text="The Office 365 admin portal" lightbox="images/atp-O365-admin-portal-customer.png":::
+   :::image type="content" source="media/atp-O365-admin-portal-customer.png" alt-text="The Office 365 admin portal" lightbox="media/atp-O365-admin-portal-customer.png":::
 
 ## Tenant Configuration
 
@@ -107,13 +106,13 @@ Configure a registry-based static proxy to allow only Microsoft Defender for End
 2. Create a policy or edit an existing policy based off the organizational practices.
 3. Edit the Group Policy and navigate to **Administrative Templates \> Windows Components \> Data Collection and Preview Builds \> Configure Authenticated Proxy usage for the Connected User Experience and Telemetry Service**.
 
-   :::image type="content" source="images/atp-gpo-proxy1.png" alt-text="The options related to configuration of the usage policy" lightbox="images/atp-gpo-proxy1.png":::
+   :::image type="content" source="media/atp-gpo-proxy1.png" alt-text="The options related to configuration of the usage policy" lightbox="media/atp-gpo-proxy1.png":::
 
 4. Select **Enabled**.
 5. Select **Disable Authenticated Proxy usage**.
 6. Navigate to **Administrative Templates \> Windows Components \> Data Collection and Preview Builds \> Configure connected user experiences and telemetry**.
 
-   :::image type="content" source="images/atp-gpo-proxy2.png" alt-text="The options related to configuration of the connected user experience and telemetry" lightbox="images/atp-gpo-proxy2.png":::
+   :::image type="content" source="media/atp-gpo-proxy2.png" alt-text="The options related to configuration of the connected user experience and telemetry" lightbox="media/atp-gpo-proxy2.png":::
 
 7. Select **Enabled**.
 8. Enter the **Proxy Server Name**.

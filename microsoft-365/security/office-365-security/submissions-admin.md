@@ -2,9 +2,9 @@
 title: Manage submissions
 f1.keywords:
   - NOCSH
-ms.author: dansimp
-author: dansimp
-manager: dansimp
+ms.author: chrisda
+author: chrisda
+manager: deniseb
 audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: medium
@@ -15,18 +15,19 @@ ms.collection:
   - tier1
 ms.custom: seo-marvel-apr2020
 description: "Admins can learn how to use the Submissions page in the Microsoft Defender portal to submit messages, URLs, and email attachments to Microsoft for analysis. Reasons for submission include: legitimate messages that were blocked, suspicious messages that were allowed, suspected phishing email, spam, malware, and other potentially harmful messages."
-ms.subservice: mdo
-ms.service: microsoft-365-security
-ms.date: 8/7/2023
+ms.service: defender-office-365
+ms.date: 3/25/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 1 and Plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # Use the Submissions page to submit suspected spam, phish, URLs, legitimate email getting blocked, and email attachments to Microsoft
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
+For more information about what Microsoft does to your submissions, [check this out](submissions-report-messages-files-to-microsoft.md#report-suspicious-email-messages-to-microsoft).
 
 In Microsoft 365 organizations with Exchange Online mailboxes, admins can use the **Submissions** page in the Microsoft Defender portal to submit messages, URLs, and attachments to Microsoft for analysis. There are two basic types of admin submissions:
 
@@ -61,8 +62,9 @@ For other ways that **admins** can report messages to Microsoft in the Defender 
 - You open the Microsoft Defender portal at <https://security.microsoft.com/>. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
+  - [Microsoft Defender XDR Unified role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac) (Affects the Defender portal only, not PowerShell): **Security operations/Security data/Response (manage)** or **Security operations/Security data/Security data basics (read)**.
   - [Email & collaboration permissions in the Microsoft Defender portal](mdo-portal-permissions.md): Membership in the **Security Administrator** or **Security Reader** role groups.
-  - [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Security Administrator** or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
+  - [Microsoft Entra permissions](/entra/identity/role-based-access-control/manage-roles-portal): Membership in the **Security Administrator** or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 - Admins can submit email messages as old as 30 days if they're still available in the mailbox and haven't been purged by the user or an admin.
 
@@ -88,7 +90,7 @@ For other ways that **admins** can report messages to Microsoft in the Defender 
 
 3. On the **Emails** tab, select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Submit to Microsoft for analysis**.
 
-4. In the **Submit to Microsoft for analysis** flyout that opens, enter the following information:
+4. On the first page of the **Submit to Microsoft for analysis** flyout that opens, enter the following information:
 
    - **Select the submission type**: Verify the value **Email** is selected.
 
@@ -96,29 +98,45 @@ For other ways that **admins** can report messages to Microsoft in the Defender 
      - **Add the email network message ID**: The GUID value is available in the **X-MS-Exchange-Organization-Network-Message-Id** header in the message or in the **X-MS-Office365-Filtering-Correlation-Id** header in quarantined messages.
      - **Upload the email file (.msg or .eml)**: Select **Browse files**. In the dialog that opens, find and select the .eml or .msg file, and then select **Open**.
 
-   - **Choose a recipient who had an issue**: Specify the recipients to run a policy check against. The policy check determines if the email bypassed scanning due to user or organization policies or override.
+   - **Choose at least one recipient who had an issue**: Specify the recipients to run a policy check against. The policy check determines if the email bypassed scanning due to user or organization policies or override.
 
-   - **Select a reason for submitting to Microsoft**: Verify **Should have been blocked (False negative)** is selected.
+   - **Why are you submitting this message to Microsoft?**: Select one of the following values:
+     - **It appears suspicious**: Select this value if you're unsure and you want a verdict from Microsoft, select **Submit**, and then go to Step 6.
 
-     - **The email should have been categorized as**: Select **Phish**, **Malware**, or **Spam**. If you're not sure, use your best judgment.
+     or
 
-     - **Block all emails from this sender or domain**: Select this option to create a block entry for the sender domain or email address in the Tenant Allow/Block List. For more information about the Tenant Allow/Block List, see [Manage allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md).
+     - **I've confirmed it's a threat**: Select this value if you're sure that the item is malicious, and then select one of the following values in the **Choose a category** section that appears:
+       - **Phish**
+       - **Malware**
+       - **Spam**
 
-       After you select this option, the following settings are available:
+       Select **Next**.
 
-       - By default, **Sender** is selected but you can select **Domain** instead.
-       - **Remove block entry after**: The default value is **30 days**, but you can select from the following values:
-           - **1 day**
-           - **7 days**
-           - **30 days**
-           - **90 days**
-           - **Never expire**
-           - **Specific date**: The maximum value is 90 days from today.
-       - **Block entry note**: Enter optional information about why you're blocking this email.
+       :::image type="content" source="../../media/admin-submission-email-block.png" alt-text="Submit a false negative (bad) email to Microsoft for analysis on the Submissions page in the Defender portal." lightbox="../../media/admin-submission-email-block.png":::
 
-   When you're finished in the **Submit to Microsoft for analysis** flyout, select **Submit**, and then select **Done**.
+5. On the second page of the **Submit to Microsoft for analysis** flyout that opens, do one of the following steps:
+   - Select **Submit**.
 
-:::image type="content" source="../../media/admin-submission-email-block.png" alt-text="Submit a false negative (bad) email to Microsoft for analysis on the Submissions page in the Defender portal." lightbox="../../media/admin-submission-email-block.png":::
+   or
+
+   - Select **Block all emails from this sender or domain**: This option creates a block entry for the sender domain or email address in the Tenant Allow/Block List. For more information about the Tenant Allow/Block List, see [Manage allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md).
+
+     After you select this option, the following settings are available:
+
+     - By default, **Sender** is selected but you can select **Domain** instead.
+     - **Remove block entry after**: The default value is **30 days**, but you can select from the following values:
+       - **1 day**
+       - **7 days**
+       - **30 days**
+       - **Never expire**
+       - **Specific date**: The maximum value is 30 days from today.
+     - **Block entry note (optional)**: Enter optional information about why you're blocking this item.
+
+     When you're finished on the second page of the **Submit to Microsoft for analysis** flyout, select **Submit**.
+
+     :::image type="content" source="../../media/admin-submission-email-block-page-2.png" alt-text="Choose whether to create a corresponding block entry for the sender domain or email address in the Tenant Allow/Block List." lightbox="../../media/admin-submission-email-block-page-2.png":::
+
+6. Select **Done**.
 
 After a few moments, the block entry is available on the **Domains & addresses** tab on the **Tenant Allow/Block Lists** page at <https://security.microsoft.com/tenantAllowBlockList?viewid=Sender>.
 
@@ -130,33 +148,47 @@ After a few moments, the block entry is available on the **Domains & addresses**
 
 3. On the **Email attachments** tab, select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Submit to Microsoft for analysis**.
 
-4. On the **Submit to Microsoft for analysis** flyout that opens, enter the following information:
+4. On the first page of the **Submit to Microsoft for analysis** flyout that opens, enter the following information:
 
    - **Select the submission type**: Verify the value **Email attachment** is selected.
 
    - **File**: Select :::image type="icon" source="../../media/m365-cc-sc-import-icon.png" border="false"::: **Browse files** to find and select the file to submit.
 
-   - **Select a reason for submitting to Microsoft**: Verify **Should have been blocked (False negative)** is selected.
+   - **Why are you submitting this email attachment to Microsoft?**: Select one of the following values:
+     - **It appears suspicious**: Select this value if you're unsure and you want a verdict from Microsoft, select **Submit**, and then go to Step 6.
 
-     - **The email should have been categorized as**: Select **Phish** or **Malware**. If you're not sure, use your best judgment.
+     or
 
-     - **Block this file**: Select this option to create a block entry for the file in the Tenant Allow/Block List. For more information about the Tenant Allow/Block List, see [Manage allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md).
+     - **I've confirmed it's a threat**: Select this value if you're sure that the item is malicious, and then select one of the following values in the **Choose a category** section that appears:
+       - **Phish**
+       - **Malware**
 
-       After you select this option, the following settings are available:
+       Select **Next**.
 
-       - **Remove block entry after**: The default value is **30 days**, but you can select from the following values:
-           - **1 day**
-           - **7 days**
-           - **30 days**
-           - **90 days**
-           - **Never expire**
-           - **Specific date**: The maximum value is 90 days from today.
+       :::image type="content" source="../../media/admin-submission-file-block.png" alt-text="Submit a false negative (bad) email attachment to Microsoft for analysis on the Submissions page in the Defender portal." lightbox="../../media/admin-submission-file-block.png":::
 
-       - **Block entry note**: Enter optional information about why you're blocking this file.
+5. On the second page of the **Submit to Microsoft for analysis** flyout that opens, do one of the following steps:
+   - Select **Submit**.
 
-   When you're finished in the **Submit to Microsoft for analysis** flyout, select **Submit**, and then select **Done**.
+   or
 
-:::image type="content" source="../../media/admin-submission-file-block.png" alt-text="Submit a false negative (bad) email attachment to Microsoft for analysis on the Submissions page in the Defender portal." lightbox="../../media/admin-submission-file-block.png":::
+   - Select **Block this file**: This option creates a block entry for the file in the Tenant Allow/Block List. For more information about the Tenant Allow/Block List, see [Manage allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md).
+
+     After you select this option, the following settings are available:
+
+     - **Remove block entry after**: The default value is **30 days**, but you can select from the following values:
+       - **1 day**
+       - **7 days**
+       - **30 days**
+       - **Never expire**
+       - **Specific date**: The maximum value is 30 days from today.
+     - **Block entry note (optional)**: Enter optional information about why you're blocking this item.
+
+     When you're finished in the **Submit to Microsoft for analysis** flyout, select **Submit**.
+
+   :::image type="content" source="../../media/admin-submission-file-block-page-2.png" alt-text="Choose whether to create a corresponding block entry for the file in the Tenant Allow/Block List." lightbox="../../media/admin-submission-file-block-page-2.png":::
+
+6. Select **Done**.
 
 After a few moments, the block entry is available on the **Files** tab on the **Tenant Allow/Block Lists** page at <https://security.microsoft.com/tenantAllowBlockList?viewid=FileHash>.
 
@@ -174,27 +206,41 @@ After a few moments, the block entry is available on the **Files** tab on the **
 
    - **URL**: Enter the full URL (for example, `https://www.fabrikam.com/marketing.html`), and then select it in the box that appears. You can enter up to 50 URLs at once.
 
-   - **Select a reason for submitting to Microsoft**: Verify **Should have been blocked (False negative)** is selected.
+   - **Why are you submitting this URL to Microsoft?**: Select one of the following values:
+     - **It appears suspicious**: Select this value if you're unsure and you want a verdict from Microsoft, select **Submit**, and then go to Step 6.
 
-     - **The email should have been categorized as**: Select **Phish** or **Malware**. If you're not sure, use your best judgment.
+     or
 
-     - **Block this URL**: Select this option to create a block entry for the URL in the Tenant Allow/Block List. For more information about the Tenant Allow/Block List, see [Manage allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md).
+     - **I've confirmed it's a threat**: Select this value if you're sure that the item is malicious, and then select one of the following values in the **Choose a category** section that appears:
+       - **Phish**
+       - **Malware**
 
-       After you select this option, the following settings are available:
+       Select **Next**.
 
-       - **Remove block entry after**: The default value is **30 days**, but you can select from the following values:
-           - **1 day**
-           - **7 days**
-           - **30 days**
-           - **90 days**
-           - **Never expire**
-           - **Specific date**: The maximum value is 90 days from today.
+       :::image type="content" source="../../media/admin-submission-url-block.png" alt-text="Submit a false negative (bad) URL to Microsoft for analysis on the Submissions page in the Defender portal." lightbox="../../media/admin-submission-url-block.png":::
 
-       - **Block entry note**: Enter optional information about why you're blocking this URL.
+5. On the second page of the **Submit to Microsoft for analysis** flyout that opens, do one of the following steps:
+   - Select **Submit**.
 
-   When you're finished in the **Submit to Microsoft for analysis** flyout, select **Submit**, and then select **Done**.
+   or
 
-:::image type="content" source="../../media/admin-submission-url-block.png" alt-text="Submit a false negative (bad) URL to Microsoft for analysis on the Submissions page in the Defender portal." lightbox="../../media/admin-submission-url-block.png":::
+   - Select **Block this URL**: This option creates a block entry for the URL in the Tenant Allow/Block List. For more information about the Tenant Allow/Block List, see [Manage allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md).
+
+     After you select this option, the following settings are available:
+
+     - **Remove block entry after**: The default value is **30 days**, but you can select from the following values:
+       - **1 day**
+       - **7 days**
+       - **30 days**
+       - **Never expire**
+       - **Specific date**: The maximum value is 30 days from today.
+     - **Block entry note (optional)**: Enter optional information about why you're blocking this itme.
+
+     When you're finished in the **Submit to Microsoft for analysis** flyout, select **Submit**.
+
+   :::image type="content" source="../../media/admin-submission-url-block-page-2.png" alt-text="Choose whether to create a corresponding block entry for the URL in the Tenant Allow/Block List." lightbox="../../media/admin-submission-url-block-page-2.png":::
+
+6. Select **Done**.
 
 After a few moments, the block entry is available on the **URL** tab on the **Tenant Allow/Block Lists** page at <https://security.microsoft.com/tenantAllowBlockList?viewid=Url>.
 
@@ -206,7 +252,7 @@ After a few moments, the block entry is available on the **URL** tab on the **Te
 
 3. On the **Emails** tab, select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Submit to Microsoft for analysis**.
 
-4. In the **Submit to Microsoft for analysis** flyout that opens, enter the following information:
+4. In the first page of the **Submit to Microsoft for analysis** flyout that opens, enter the following information:
 
    - **Select the submission type**: Verify the value **Email** is selected.
 
@@ -214,27 +260,41 @@ After a few moments, the block entry is available on the **URL** tab on the **Te
      - **Add the email network message ID**: The GUID value is available in the **X-MS-Exchange-Organization-Network-Message-Id** header in the message or in the **X-MS-Office365-Filtering-Correlation-Id** header in quarantined messages.
      - **Upload the email file (.msg or .eml)**: Select **Browse files**. In the dialog that opens, find and select the .eml or .msg file, and then select **Open**.
 
-   - **Choose a recipient who had an issue**: Specify the recipients to run a policy check against. The policy check determines if the email was blocked due to user or organization policies or overrides.
+   - **Choose at least one recipient who had an issue**: Specify the recipients to run a policy check against. The policy check determines if the email was blocked due to user or organization policies or overrides.
 
-   - **Select a reason for submitting to Microsoft**: Select **Should not have been blocked (False positive)**, and then configure the following settings:
+   - **Why are you submitting this message to Microsoft?**: Select one of the following values:
+     - **It appears clean**: Select this value if you're unsure and you want a verdict from Microsoft, select **Submit**, and then go to Step 6.
 
-     - **Allow emails with similar attributes (URL, sender, etc.)**: Turn on this setting :::image type="icon" source="../../media/scc-toggle-on.png" border="false":::.
+     or
 
-         - **Remove allow entry after**: The default value is **30 days**, but you can select from the following values:
-           - **1 day**
-           - **7 days**
-           - **30 days**
-           - **Specific date**: The maximum value is 30 days from today.
-
-           For spoofed senders, this value is meaningless, because entries for spoofed senders never expire.
-
-         - **Allow entry note**: Enter optional information about why you're allowing and submitting this email message.
-
-           For spoofed senders, any value you enter here isn't shown in the allow entry on the **Spoofed senders** tab on the **Tenant Allow/Block Lists** page.
-
-   When you're finished in the **Submit to Microsoft for analysis** flyout, select **Submit**, and then select **Done**.
+     - **I've confirmed it's clean**: Select this value if you're sure that the item is clean, and then select **Next**
 
    :::image type="content" source="../../media/admin-submission-email-allow.png" alt-text="Submit a false positive (good) email to Microsoft for analysis on the Submissions page in the Defender portal." lightbox="../../media/admin-submission-email-allow.png":::
+
+5. On the second page of the **Submit to Microsoft for analysis** flyout that opens, do one of the following steps:
+   - Select **Submit**.
+
+   or
+
+   - Select **Allow this message**: This option creates an allow entry for the elements of the message in the Tenant Allow/Block List. For more information about the Tenant Allow/Block List, see [Manage allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md).
+
+     After you select this option, the following settings are available:
+
+     - **Remove allow entry after**: The default value is **30 days**, but you can select from the following values:
+       - **1 day**
+       - **7 days**
+       - **30 days**
+       - **Specific date**: The maximum value is 30 days from today.
+
+       For spoofed senders, this value is meaningless, because entries for spoofed senders never expire.
+
+     - **Allow entry note (optional)**: Enter optional information about why you're allowing this item. For spoofed senders, any value you enter here isn't shown in the allow entry on the **Spoofed senders** tab on the **Tenant Allow/Block Lists** page.
+
+     When you're finished on the second page of the **Submit to Microsoft for analysis** flyout, select **Submit**.
+
+     :::image type="content" source="../../media/admin-submission-email-allow-page-2.png" alt-text="Choose whether to create a corresponding allow entry for the elements of the message in the Tenant Allow/Block List." lightbox="../../media/admin-submission-email-block-page-2.png":::
+
+6. Select **Done**.
 
 After a few moments, the associated allow entries appear on the **Domains & addresses**, **Spoofed senders**, **URLs**, or **Files** tabs on the **Tenant Allow/Block Lists** page at <https://security.microsoft.com/tenantAllowBlockList>.
 
@@ -245,7 +305,7 @@ After a few moments, the associated allow entries appear on the **Domains & addr
 > - When an allowed domain or email address, spoofed sender, URL, or file (_entity_) is encountered again, all filters that are associated with the entity are skipped. For email messages, all other entities are still evaluated by the filtering system before making a decision.
 > - During mail flow, if messages from the allowed domain or email address pass other checks in the filtering stack, the messages are delivered. For example, if a message passes [email authentication checks](email-authentication-about.md), a message from an allowed sender email address are delivered.
 > - By default, allow entries for domains and email addresses exist for 30 days. During those 30 days, Microsoft learns from the allow entries and [removes them or automatically extends them](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447). After Microsoft learns from the removed allow entries, messages from those domains or email addresses are delivered, unless something else in the message is detected as malicious. By default, allow entries for spoofed senders never expire.
-> - For messages that were incorrectly blocked by [domain or user impersonation protection](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365), the allow entry for the domain or sender is not created in the Tenant Allow/Block List. Instead, the domain or sender is added to the **Trusted senders and domains** section in the [anti-phishing policy](anti-phishing-policies-mdo-configure.md#use-the-microsoft-365-defender-portal-to-modify-anti-phishing-policies) that detected the message.
+> - For messages that were incorrectly blocked by [domain or user impersonation protection](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365), the allow entry for the domain or sender is not created in the Tenant Allow/Block List. Instead, the domain or sender is added to the **Trusted senders and domains** section in the [anti-phishing policy](anti-phishing-policies-mdo-configure.md#use-the-microsoft-defender-portal-to-modify-anti-phishing-policies) that detected the message.
 > - When you override the verdict in the spoof intelligence insight, the spoofed sender becomes a manual allow or block entry that only appears on the **Spoofed senders** on the **Tenant Allow/Block Lists** page at <https://security.microsoft.com/tenantAllowBlockList?viewid=SpoofItem>.
 
 ### Report good email attachments to Microsoft
@@ -262,21 +322,36 @@ After a few moments, the associated allow entries appear on the **Domains & addr
 
    - **File**: Select **Browse files** to find and select the file to submit.
 
-   - **Select a reason for submitting to Microsoft**: Select **Should not have been blocked (False positive)**, and then configure the following settings:
+   - **Why are you submitting the message to Microsoft?**: Select one of the following values:
+     - **It appears clean**: Select this value if you're unsure and you want a verdict from Microsoft, select **Submit**, and then go to Step 6.
 
-     - **Allow this file**: Turn on this setting :::image type="icon" source="../../media/scc-toggle-on.png" border="false":::.
+     or
 
-         - **Remove allow entry after**: The default value is **30 days**, but you can select from the following values:
-           - **1 day**
-           - **7 days**
-           - **30 days**
-           - **Specific date**: The maximum value is 30 days from today.
-
-         - **Allow entry note**: Enter optional information about why you're allowing and submitting this file.
-
-   When you're finished in the **Submit to Microsoft for analysis** flyout, select **Submit**, and then select **Done**.
+     - **I've confirmed it's clean**: Select this value if you're sure that the item is clean, and then select **Next**.
 
    :::image type="content" source="../../media/admin-submission-file-allow.png" alt-text="Submit a false positive (good) email attachment to Microsoft for analysis on the Submissions page in the Defender portal." lightbox="../../media/admin-submission-file-allow.png":::
+
+5. On the second page of the **Submit to Microsoft for analysis** flyout that opens, do one of the following steps:
+   - Select **Submit**.
+
+   or
+
+   - Select **Allow this file**: This option creates a allow entry for the file in the Tenant Allow/Block List. For more information about the Tenant Allow/Block List, see [Manage allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md).
+
+     After you select this option, the following settings are available:
+
+     - **Remove allow entry after**: The default value is **30 days**, but you can select from the following values:
+       - **1 day**
+       - **7 days**
+       - **30 days**
+       - **Specific date**: The maximum value is 30 days from today.
+     - **Block entry note (optional)**: Enter optional information about why you're blocking this item.
+
+     When you're finished on the second page of the **Submit to Microsoft for analysis** flyout, select **Submit**.
+
+   :::image type="content" source="../../media/admin-submission-file-allow-page-2.png" alt-text="Choose whether to create a corresponding allow entry for the file in the Tenant Allow/Block List." lightbox="../../media/admin-submission-file-allow-page-2.png":::
+
+6. Select **Done**.
 
 After a few moments, the allow entry is available on the **Files** tab on the **Tenant Allow/Block List** page. For more information about the Tenant Allow/Block List, see [Manage allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md).
 
@@ -288,7 +363,7 @@ After a few moments, the allow entry is available on the **Files** tab on the **
 
 ### Report good URLs to Microsoft
 
-For URLs reported as false positives, we allow subsequent messages that contain variations of the original URL. For example, you use the **Submissions** page to report the incorrectly blocked URL `www.contoso.com/abc`. If your organization later receives a message that contains the URL (for example but not limited to: `www.contoso.com/abc`, `www.contoso.com/abc?id=1`, `www.contoso.com/abc/def/gty/uyt?id=5`, or `*.contoso.com/abc`), the message won't be blocked based on the URL. In other words, you don't need to report multiple variations of the same URL as good to Microsoft.
+For URLs reported as false positives, we allow subsequent messages that contain variations of the original URL. For example, you use the **Submissions** page to report the incorrectly blocked URL `www.contoso.com/abc`. If your organization later receives a message that contains the URL (for example but not limited to: `www.contoso.com/abc`, `www.contoso.com/abc?id=1`, `www.contoso.com/abc/def/gty/uyt?id=5`, or `www.contoso.com/abc/whatever`), the message won't be blocked based on the URL. In other words, you don't need to report multiple variations of the same URL as good to Microsoft.
 
 1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Actions & submissions** \> **Submissions**. Or, to go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
 
@@ -302,21 +377,36 @@ For URLs reported as false positives, we allow subsequent messages that contain 
 
    - **URL**: Enter the full URL (for example, `https://www.fabrikam.com/marketing.html`), and then select it in the box that appears. You can also provide a top level domain (for example, `https://www.fabrikam.com/*`), and then select it in the box that appears. You can enter up to 50 URL at once.
 
-   - **Select a reason for submitting to Microsoft**: Select **Should not have been blocked (False positive)**, and then configure the following settings:
+   - **Why are you submitting this URL to Microsoft?**: Select one of the following values:
+     - **It appears clean**: Select this value if you're unsure and you want a verdict from Microsoft, select **Submit**, and then go to Step 6.
 
-     - **Allow this URL**: Turn on this setting :::image type="icon" source="../../media/scc-toggle-on.png" border="false":::.
+     or
 
-         - **Remove allow entry after**: The default value is **30 days**, but you can select from the following values:
-           - **1 day**
-           - **7 days**
-           - **30 days**
-           - **Specific date**: The maximum value is 30 days from today.
+     - **I've confirmed it's clean**: Select this value if you're sure that the item is clean, and then select **Next**.
 
-         - **Allow entry note**: Enter optional information about why you're allowing and submitting this URL.
+       :::image type="content" source="../../media/admin-submission-url-allow.png" alt-text="Submit a false positive (good) URL to Microsoft for analysis on the Submissions page in the Defender portal." lightbox="../../media/admin-submission-url-allow.png":::
 
-   When you're finished in the **Submit to Microsoft for analysis** flyout, select **Submit**, and then select **Done**.
+5. On the second page of the **Submit to Microsoft for analysis** flyout that opens, do one of the following steps:
+   - Select **Submit**.
 
-   :::image type="content" source="../../media/admin-submission-url-allow.png" alt-text="Submit a false positive (good) URL to Microsoft for analysis on the Submissions page in the Defender portal." lightbox="../../media/admin-submission-url-allow.png":::
+   or
+
+   - Select **Allow this URL**: This option creates an allow entry for the URL in the Tenant Allow/Block List. For more information about the Tenant Allow/Block List, see [Manage allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md).
+
+     After you select this option, the following settings are available:
+
+     - **Remove block entry after**: The default value is **30 days**, but you can select from the following values:
+       - **1 day**
+       - **7 days**
+       - **30 days**
+       - **Specific date**: The maximum value is 30 days from today.
+     - **Allow entry note (optional)**: Enter optional information about why you're allowing this item.
+
+     When you're finished on the second page of the **Submit to Microsoft for analysis** flyout, select **Submit**.
+
+   :::image type="content" source="../../media/admin-submission-url-allow-page-2.png" alt-text="Choose whether to create a corresponding allow entry for the URL in the Tenant Allow/Block List." lightbox="../../media/admin-submission-url-allow-page-2.png":::
+
+6. Select **Done**.
 
 After a few moments, the allow entry is available on the **URL** tab on the **Tenant Allow/Block Lists** page at <https://security.microsoft.com/tenantAllowBlockList?viewid=Url>.
 
@@ -326,9 +416,12 @@ After a few moments, the allow entry is available on the **URL** tab on the **Te
 > - When the URL is encountered again during mail flow, [Safe Links](safe-links-about.md) detonation or URL reputation checks and all other URL-based filters are overridden. If the filtering system determines that all other entities in the email message are clean, the message are delivered.
 > - During selection, all URL-based filters, including [Safe Links](safe-links-about.md) detonation or URL reputation checks are overridden, allowing user access to content at the URL.
 
-### Report Teams messages to Microsoft
+### Report Teams messages to Microsoft in Defender for Office 365 Plan 2
 
-You can't submit Teams messages from the **Teams messages** tab on the **Submissions** page. The only way to submit a Teams message to Microsoft for analysis is to submit a user reported Teams message from the **User reported** tab as described in the [Submit user reported messages to Microsoft for analysis](#submit-user-reported-messages-to-microsoft-for-analysis) section later in this article.
+> [!TIP]
+> [Submission of Teams message to Microsoft](submissions-teams.md) is currently in Preview, isn't available in all organizations, and is subject to change.
+
+In Microsoft 365 organizations that have Microsoft Defender for Office 365 Plan 2 (add-on licenses or included in subscriptions like Microsoft 365 E5), You can't submit Teams messages from the **Teams messages** tab on the **Submissions** page. The only way to submit a Teams message to Microsoft for analysis is to submit a user reported Teams message from the **User reported** tab as described in the [Submit user reported messages to Microsoft for analysis](#submit-user-reported-messages-to-microsoft-for-analysis) section later in this article.
 
 The entries on the **Teams messages** tab are the result of submitting user reported Teams message to Microsoft. For more information, see the [View converted admin submissions](#view-converted-admin-submissions) section later in this article.
 
@@ -350,9 +443,9 @@ You can sort the entries by clicking on an available column header. Select :::im
 - **Submission name**<sup>\*</sup>
 - **Sender**<sup>\*</sup>
 - **Recipient**
+- **Submitted by**<sup>\*</sup>
 - **Date submitted**<sup>\*</sup>
 - **Reason for submitting**<sup>\*</sup>
-- **Original verdict**<sup>\*</sup>
 - **Status**<sup>\*</sup>
 - **Result**<sup>\*</sup>
 - **Delivery/Block reason**
@@ -363,7 +456,6 @@ You can sort the entries by clicking on an available column header. Select :::im
 - **Bulk compliant level (BCL)**
 - **Destination**
 - **Policy action**
-- **Submitted by**
 - **Phish simulation**
 - **Tags**<sup>\*</sup>: For more information about user tags, see [User tags](user-tags-about.md).
 - **Action**
@@ -371,7 +463,6 @@ You can sort the entries by clicking on an available column header. Select :::im
 To group the entries, select :::image type="icon" source="../../media/m365-cc-sc-group-icon.png" border="false"::: **Group** and then select one of the following values:
 
 - **Reason**
-- **Original verdict**
 - **Status**
 - **Result**
 - **Tags**
@@ -389,6 +480,8 @@ To filter the entries, select :::image type="icon" source="../../media/m365-cc-s
 - **Submitted by**
 - **Reason for submitting**: Any of the following values:
   - **Not junk**
+  - **Appears clean**
+  - **Appears suspicious**
   - **Phish**
   - **Malware**
   - **Spam**.
@@ -399,7 +492,50 @@ When you're finished on the **Filter** flyout, select **Apply**. To clear the fi
 
 Use :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** to export the list of entries to a CSV file.
 
-### View Teams admin submissions to Microsoft
+#### View email admin submission details
+
+If you select an entry on the **Emails** tab of the **Submissions** page by clicking anywhere in the row other than the check box next to the first column, a details flyout opens.
+
+At the top of the details flyout, the following message information is available:
+
+- The title of the flyout is the message Subject value.
+- Any user tags that are assigned to the recipients of the message (including the Priority account tag). For more information, see [User tags in Microsoft Defender for Office 365](user-tags-about.md)
+- In Defender for Office 365, the actions that are available at the top of the flyout are described in the [Actions for admin submissions in Defender for Office 365](#actions-for-admin-submissions-in-defender-for-office-365) section.
+
+> [!TIP]
+> To see details about other submissions without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
+
+The next sections in the details flyout are related to email message submissions:
+
+- **Result details** section:
+  - **Result**: Contains the **Result** value for the submission. For example:
+    - **Should not have been blocked**
+    - **Allowed due to user overrides**
+    - **Allowed due to a rule**
+  - **Recommended steps for email submissions**: Contains links to related actions. For example:
+    - **View Exchange mail flow rules (transport rules)**
+    - **View this message in Explorer** (Threat Explorer or Real-time detections in Defender for Office 365 only)
+    - **Search for similar messages in Explorer** (Threat Explorer or Real-time detections in Defender for Office 365 only)
+
+- **Submission details** section:
+  - **Date submitted**
+  - **Submission name**
+  - **Submission type**: The value is **Email**.
+  - **Reason for submitting**
+  - **Submission ID**
+  - **Submitted by**
+  - **Submission status**
+
+- **Allow details** section: Available only for email submissions where the **Result** value is **Allowed due to user overrides** or **Allowed to a rule**: Contains the **Name** (email address) and **Type** (**Sender**) values.
+
+The rest of the details flyout contains the **Delivery details**, **Email details**, **URLs**, and **Attachments** sections that are part of the _Email summary panel_. For more information, see [The Email summary panel](mdo-email-entity-page.md#the-email-summary-panel).
+
+When you're finished in the details flyout, select **Close**.
+
+### View Teams admin submissions to Microsoft in Defender for Office 365 Plan 2
+
+> [!TIP]
+> [Submission of Teams message to Microsoft](submissions-teams.md) is currently in Preview, isn't available in all organizations, and is subject to change.
 
 In the Microsoft Defender portal at <https://security.microsoft.com>, go to the **Submissions** page at **Actions & submissions** \> **Submissions**. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
 
@@ -424,7 +560,6 @@ You can sort the entries by clicking on an available column header. Select :::im
 To group the entries, select :::image type="icon" source="../../media/m365-cc-sc-group-icon.png" border="false"::: **Group** and then select one of the following values:
 
 - **Reason**
-- **Original verdict**
 - **Status**
 - **Result**
 - **Tags**
@@ -435,10 +570,15 @@ To filter the entries, select :::image type="icon" source="../../media/m365-cc-s
 
 - **Date submitted**: **Start date** and **End date**.
 - **Submission ID**: A GUID value that's assigned to every submission.
+- **Teams message ID**
+- **Sender**
+- **Recipient**
 - **Teams message**
 - **Submitted by**
 - **Reason for submitting**: Any of the following values:
   - **Not junk**
+  - **Appears clean**
+  - **Appears suspicious**
   - **Phish**
   - **Malware**
 - **Status**: **Pending** and **Completed**.
@@ -447,6 +587,42 @@ To filter the entries, select :::image type="icon" source="../../media/m365-cc-s
 When you're finished on the **Filter** flyout, select **Apply**. To clear the filters, select :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
 Use :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** to export the list of entries to a CSV file.
+
+#### View Teams admin submission details
+
+If you select an entry on the **Teams messages** tab of the **Submissions** page by clicking anywhere in the row other than the check box next to the first column, a details flyout opens.
+
+At the top of the details flyout, the following message information is available:
+
+- The title of the flyout is the subject or the first 100 characters of the Teams message.
+- The current message verdict.
+- The number of links in the message.
+- :::image type="icon" source="../../media/m365-cc-sc-view-alert-icon.png" border="false"::: **View alert**. An alert is triggered when an admin submission is created or updated. Selecting this action takes you to the details of the alert.
+
+> [!TIP]
+> To see details about other submissions without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
+
+The next sections in the details flyout are related to Teams submissions:
+
+- **Submission results** section:
+  - **Result**: Contains the **Result** value for the submission. For example:
+    - **Should have been blocked**
+    - **We did not receive the submission, please fix the problem and resubmit**
+  - **Recommended steps for email submissions**: Contains links to related actions. For example:
+    - **View Exchange mail flow rules (transport rules)**
+
+- **Submission details** section:
+  - **Date submitted**
+  - **Submission name**
+  - **Submission type**: The value is **Teams**
+  - **Reason for submitting**
+  - **Submission ID**
+  - **Submitted by**
+  - **Submission status**
+
+The rest of the details flyout contains the **Message details**, **Sender**, **Participants**, **Channel details**, and **URLs** sections that are part of the _Teams message entity panel_. For more information, see [The Teams mMessage entity panel in Microsoft Defender for Office 365 Plan 2](teams-message-entity-panel.md).
+
+When you're finished in the details flyout, select **Close**.
 
 ### View email attachment admin submissions to Microsoft
 
@@ -480,7 +656,6 @@ You can sort the entries by clicking on an available column header. Select :::im
 To group the entries, select :::image type="icon" source="../../media/m365-cc-sc-group-icon.png" border="false"::: **Group** and then select one of the following values:
 
 - **Reason**
-- **Original verdict**
 - **Status**
 - **Result**
 - **Tags**
@@ -495,15 +670,49 @@ To filter the entries, select :::image type="icon" source="../../media/m365-cc-s
 - **Submitted by**
 - **Reason for submitting**: Any of the following values:
   - **Not junk**
+  - **Appears clean**
+  - **Appears suspicious**
   - **Phish**
   - **Malware**
-  - **Spam**.
 - **Status**: **Pending** and **Completed**.
 - **Tags**: **All** or select [user tags](user-tags-about.md) from the dropdown list.
 
 When you're finished on the **Filter** flyout, select **Apply**. To clear the filters, select :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
 Use :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** to export the list of entries to a CSV file.
+
+#### View email attachment admin submission details
+
+If you select an entry on the **Email attachments** tab of the **Submissions** page by clicking anywhere in the row other than the check box next to the first column, a details flyout opens.
+
+At the top of the details flyout, the following message information is available:
+
+- The title of the flyout is the filename of the attachment.
+- The **Status** and **Result** values of the submission.
+- :::image type="icon" source="../../media/m365-cc-sc-view-alert-icon.png" border="false"::: **View alert**. In Defender for Office 365, an alert is triggered when an admin submission is created or updated. Selecting this action takes you to the details of the alert.
+
+> [!TIP]
+> To see details about other submissions without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
+
+The next sections in the details flyout are related to email attachment submissions:
+
+- **Result details** section:
+  - **Result**: Contains the **Result** value for the submission. For example:
+    - **Should have been blocked**
+    - **Should not have been blocked**
+  - **Recommended steps for email submissions**: Contains links to related actions. For example:
+    - **Block URL/file in Tenant Allow/Block List**
+
+- **Submission details** section:
+  - **Date submitted**
+  - **Submission name**
+  - **Submission type**: The value is **File**.
+  - **Reason for submitting**
+  - **Submission ID**
+  - **Submitted by**
+  - **Submission status**
+
+When you're finished in the details flyout, select **Close**.
 
 ### View URL admin submissions to Microsoft
 
@@ -537,7 +746,6 @@ You can sort the entries by clicking on an available column header. Select :::im
 To group the entries, select :::image type="icon" source="../../media/m365-cc-sc-group-icon.png" border="false"::: **Group** and then select one of the following values:
 
 - **Reason**
-- **Original verdict**
 - **Status**
 - **Result**
 - **Tags**
@@ -552,9 +760,10 @@ To filter the entries, select :::image type="icon" source="../../media/m365-cc-s
 - **Submitted by**
 - **Reason for submitting**: Any of the following values:
   - **Not junk**
+  - **Appears clean**
+  - **Appears suspicious**
   - **Phish**
   - **Malware**
-  - **Spam**
 - **Status**: **Pending** and **Completed**.
 - **Tags**: **All** or select [user tags](user-tags-about.md) from the dropdown list.
 
@@ -562,11 +771,44 @@ When you're finished on the **Filter** flyout, select **Apply**. To clear the fi
 
 Use :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** to export the list of entries to a CSV file.
 
-### Admin submission result details
+#### View URL admin submission details
 
-Email messages, Teams messages, email attachments, and URLs that admins submit to Microsoft for analysis are available on the corresponding tabs on the **Submissions** page.
+If you select an entry on the **URLs** tab of the **Submissions** page by clicking anywhere in the row other than the check box next to the first column, a details flyout opens.
 
-When you select an entry on the tab by clicking anywhere in the row other than the check box next to the first column, complete information about the original reported item, the status of the reported item, and the analysis results of the reported item are shown in the details flyout that opens:
+At the top of the details flyout, the following message information is available:
+
+- The title of the flyout is the domain of the URL.
+- The **Status** and **Result** values of the submission.
+- :::image type="icon" source="../../media/m365-cc-sc-view-alert-icon.png" border="false"::: **View alert**. In Defender for Office 365, an alert is triggered when an admin submission is created or updated. Selecting this action takes you to the details of the alert.
+
+> [!TIP]
+> To see details about other submissions without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
+
+The remaining sections in the details flyout are related to URL submissions:
+
+- **Result details** section:
+  - **Result**: Contains the **Result** value for the submission. For example:
+    - **Should have been blocked**
+    - **Should not have been blocked**
+  - **Recommended steps for email submissions**: Contains links to related actions. For example:
+    - **Block URL/file in Tenant Allow/Block List**
+
+- **Submission details** section:
+  - **Date submitted**
+  - **URL**
+  - **Submission type**: The value is **URL**.
+  - **Reason for submitting**
+  - **Submission ID**
+  - **Submitted by**
+  - **Submission status**
+
+- **Allows details** or **Block details** sections: Available only for URL submissions where the URL was blocked or allowed: Contains the **Name** (URL domain) and **Type** (**URL**) values.
+
+When you're finished in the details flyout, select **Close**.
+
+### Results from Microsoft
+
+The analysis results of the reported item are shown in the details flyout that opens when you select an entry on the **Emails**, **Teams messages**, **Email attachments**, or **URLs** tab of the **Submissions** page:
 
 - If there was a failure in the sender's email authentication at the time of delivery.
 - Information about any policies or overrides that could have affected or overridden the message verdict from filtering system.
@@ -575,24 +817,24 @@ When you select an entry on the tab by clicking anywhere in the row other than t
 
 If an override or policy configuration was found, the result should be available in several minutes. If there wasn't a problem in email authentication or delivery wasn't affected by an override or policy, the detonation and feedback from graders could take up to a day.
 
-### Actions for admin submissions in Defender for Office 365 Plan 2
+### Actions for admin submissions in Defender for Office 365
 
-In organizations with Microsoft Defender for Office 365 Plan 2 (add-on licenses or included in subscriptions like Microsoft 365 E5), the following actions are available for admin submissions in the details flyout that opens after you select an entry from the list by clicking anywhere in the row other than the check box:
+In organizations with Microsoft Defender for Office 365 (add-on licenses or included in subscriptions like Microsoft 365 E5 or Microsoft 365 Business Premium), the following actions are available for admin submissions in the details flyout that opens after you select an entry from the list by clicking anywhere in the row other than the check box:
 
-- :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity**: Available in the details flyout of entries on the **Emails** tab only. For more information, see [How to read the email entity page](mdo-email-entity-page.md#how-to-read-the-email-entity-page).
+- :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity**: Available in the details flyout of entries on the **Emails** tab only. For more information, see [What's on the Email entity page](mdo-email-entity-page.md#whats-on-the-email-entity-page).
 
-- :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take actions**: Available in the details flyout of entries on the **Emails** tab only. This action starts the same Action wizard that's available on the email entity page. For more information, see [Actions you can take on the Email entity Page](mdo-email-entity-page.md#actions-you-can-take-on-the-email-entity-page).
+- :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take actions**: Available in the details flyout of entries on the **Emails** tab only. This action starts the same Action wizard that's available on the Email entity page. For more information, see [Actions on the Email entity page](mdo-email-entity-page.md#actions-on-the-email-entity-page).
 
 - :::image type="icon" source="../../media/m365-cc-sc-view-alert-icon.png" border="false"::: **View alert**. An alert is triggered when an admin submission is created or updated. Selecting this action takes you to the details of the alert.
 
-- In the **Result details** section, the following links for [Threat Explorer](threat-explorer-about.md) might also be available, depending on the status and result of the reported item:
+- In the **Result details** section, the following links for [Threat Explorer](threat-explorer-real-time-detections-about.md) might also be available, depending on the status and result of the reported item:
   - **View this message in Explorer**: **Emails** tab only.
   - **Search for similar messages in Explorer**: **Emails** tab only.
   - **Search for URL or file**: **Email attachments** or **URL** tabs only.
 
 ## Admin options for user reported messages
 
-Admins can see what users are reporting on the **User reported** tab on the **Submissions** page if the following statements are true:
+For email messages, admins can see what users are reporting on the **User reported** tab on the **Submissions** page if the following statements are true:
 
 - The [user reported settings](submissions-user-reported-messages-custom-mailbox.md) are turned on.
 - **Email messages**: You're using supported methods for users to report messages:
@@ -605,6 +847,10 @@ Admins can see what users are reporting on the **User reported** tab on the **Su
 
 - User reported messages that are sent to Microsoft only or to Microsoft and the [reporting mailbox](submissions-user-reported-messages-custom-mailbox.md) appear on the **User reported** tab. Although these messages have already been reported to Microsoft, admins can resubmit the reported messages.
 - User reported messages that are sent only to the reporting mailbox appear on the **User reported** tab with the **Result** value **Not Submitted to Microsoft**. Admins should report these messages to Microsoft for analysis.
+
+In organizations with Microsoft Defender for Office 365 Plan 2 (add-on licenses or included in subscriptions like Microsoft 365 E5), admins can also see [user reported messages in Microsoft Teams in Defender for Office 365 Plan 2](submissions-teams.md) (currently in Preview).
+
+In organizations with Defender for Office 365 Plan 2 (add-For [user reported messages in Microsoft Teams in Defender for Office 365 Plan 2](submissions-teams.md) (currently in Preview)
 
 In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Actions & submissions** \> **Submissions**. Or, to go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
 
@@ -630,7 +876,6 @@ You can sort the entries by clicking on an available column header. Select :::im
 - **Date reported**<sup>\*</sup>
 - **Sender**<sup>\*</sup>
 - **Reported reason**<sup>\*</sup>
-- **Original verdict**<sup>\*</sup>
 - **Result**<sup>\*</sup>: Contains the following information for reported messages based on the [user reported settings](submissions-user-reported-messages-custom-mailbox.md):
   - **Send the reported messages to** \> **Microsoft and my reporting mailbox** or **Microsoft only**: Values derived from the following analysis:
     - **Policy hits**: Information about any policies or overrides that may have allowed or blocked the incoming messages, including overrides to our filtering verdicts. The result should be available within several minutes. Otherwise, detonation and feedback from graders could take up to one day.
@@ -645,7 +890,7 @@ You can sort the entries by clicking on an available column header. Select :::im
 - **Phish simulation**
 - **Converted to admin submission**
 - **Marked as**<sup>\*</sup>
-- **Marked by**
+- **Marked by**<sup>\*</sup>
 - **Date marked**
 - **Tags**<sup>\*</sup>: For more information about user tags, see [User tags](user-tags-about.md).
 
@@ -653,7 +898,6 @@ To group the entries, select :::image type="icon" source="../../media/m365-cc-sc
 
 - **Sender**
 - **Reported by**
-- **Original verdict**
 - **Result**
 - **Reported from**
 - **Converted to admin submission**
@@ -674,14 +918,115 @@ To filter the entries, select :::image type="icon" source="../../media/m365-cc-s
 - **Reported from**: The values **Microsoft** and **Third party**.
 - **Phish simulation**: The values **Yes** and **No**.
 - **Converted to admin submission**: The values **Yes** and **No**.
-- **Message type**: The values **Email** and **Teams**.
-- **Tags**: **All** or select [user tags](user-tags-about.md) from the dropdown list.
+- **Message type**: The available values are:
+  - **Email**
+  - **Teams message** (Defender for Office 365 Plan 2 only; currently in Preview).
+- **Tags**: **All** or select one or more user tags (including Priority account) that are assigned to users. For more information about user tags, see [User tags in Microsoft Defender for Office 365](user-tags-about.md).
 
 When you're finished on the **Filter** flyout, select **Apply**. To clear the filters, select :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
 Use :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** to export the list of entries to a CSV file.
 
 For more information about the actions that are available for messages on the **User reported** tab, see the next subsection.
+
+### View user reported email message details
+
+If you select an email-related entry on the **User reported** tab of the **Submissions** page by clicking anywhere in the row other than the check box next to the first column, a details flyout opens.
+
+At the top of the details flyout, the following message information is available:
+
+- The title of the flyout is the message Subject value.
+- Any user tags that are assigned to the recipients of the message (including the Priority account tag). For more information, see [User tags in Microsoft Defender for Office 365](user-tags-about.md)
+- The actions that are available at the top of the flyout are described in the [Admin actions for user reported messages](#admin-actions-for-user-reported-messages) section.
+
+> [!TIP]
+> To see details about other submissions without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
+
+The next sections in the details flyout are related to user reported submissions:
+
+- **Result details** section:
+  - **Result**: Contains the **Result** value for the submission. For example:
+    - **Should not have been blocked**
+    - **Allowed due to user overrides**
+    - **Allowed due to a rule**
+  - **Recommended steps for email submissions**: Contains links to related actions. For example:
+    - **View Exchange mail flow rules (transport rules)**
+    - **View this message in Explorer** (Threat Explorer or Real-time detections in Defender for Office 365 only)
+    - **Search for similar messages in Explorer** (Threat Explorer or Real-time detections in Defender for Office 365 only)
+
+- **Reported message details** section:
+  - **Date submitted**
+  - **Submission name**
+  - **Reported reason**.
+  - **Message reported ID**
+  - **Reported by**
+  - **Phish simulation**: The value is **Yes** or **No**.
+  - **Converted to admin submission**: The value is **Yes** or **No**. For more information, see [View converted admin submissions](#view-converted-admin-submissions).
+
+The rest of the details flyout contains the **Delivery details**, **Email details**, **URLs**, and **Attachments** sections that are part of the _Email summary panel_. For more information, see [The Email summary panel](mdo-email-entity-page.md#the-email-summary-panel).
+
+> [!TIP]
+> If the **Result** value is **Phish simulation**, the details flyout might contain the following information only:
+>
+> - **Result details** section
+> - **Reported message details** section
+> - **Email details** section with the following values:
+>   - **Network Message ID**
+>   - **Sender**
+>   - **Sent date**
+
+When you're finished in the details flyout, select **Close**.
+
+### View user reported Teams message details in Defender for Office 365 Plan 2
+
+> [!TIP]
+> [User reporting of messages in Microsoft Teams](submissions-teams.md#how-users-report-messages-in-teams) is currently in Preview, isn't available in all organizations, and is subject to change.
+
+In Microsoft 365 organizations that have Microsoft Defender for Office 365 Plan 2 (add-on licenses or included in subscriptions like Microsoft 365 E5), user reported Teams messages are available on the **User reported** tab of the **Submissions** page. It's easy to find them if you filter the results by the **Message type** value **Teams message**.
+
+If you select a Teams message entry on the **User reported** tab by clicking anywhere in the row other than the check box next to the first column, a details flyout opens.
+
+At the top of the details flyout, the following message information is available:
+
+- The title of the flyout is the subject or the first 100 characters of the Teams message.
+- The current message verdict.
+- The number of links in the message.
+- The available actions are described in the [Admin actions for user reported messages](#admin-actions-for-user-reported-messages) section.
+
+> [!TIP]
+> To see details about other submissions without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
+
+The next sections in the details flyout are related to user reported Teams submissions:
+
+- **Submission results** section:
+  - **Result**: Contains the **Result** value for the submission. For example:
+    - **Should not have been blocked**
+    - **Not submitted to Microsoft**
+  - **Recommended steps for email submissions**: Contains links to related actions. For example:
+    - **View Exchange mail flow rules (transport rules)**
+
+- **Reported message details** section:
+  - **Date reported**
+  - **Submission name**
+  - **Reported reason**.
+  - **Message reported ID**
+  - **Reported by**
+  - **Phish simulation**: The value is **Yes** or **No**.
+  - **Converted to admin submission**: The value is **Yes** or **No**. For more information, see [View converted admin submissions](#view-converted-admin-submissions).
+
+The rest of the details flyout contains the **Message details**, **Sender**, **Participants**, **Channel details**, and **URLs** sections that are part of the _Teams message entity panel_. For more information, see [The Teams mMessage entity panel in Microsoft Defender for Office 365 Plan 2](teams-message-entity-panel.md).
+
+> [!TIP]
+> If the **Result** value is **Phish simulation**, the details flyout might contain the following information only:
+>
+> - **Result details** section
+> - **Reported message details** section
+> - **Email details** section with the following values:
+>   - **Network Message ID**
+>   - **Sender**
+>   - **Sent date**
+
+When you're finished in the details flyout, select **Close**.
 
 ### Admin actions for user reported messages
 
@@ -690,15 +1035,18 @@ On the **User reported** tab, actions for user reported messages are available o
 - Select the message from the list by selecting the check box next to the first column. The following actions are available on the **User reported** tab:
   - :::image type="icon" source="../../media/m365-cc-sc-submit-user-reported-message-icon.png" border="false"::: **[Submit to Microsoft for analysis](#submit-user-reported-messages-to-microsoft-for-analysis)**
   - :::image type="icon" source="../../media/m365-cc-scc-mark-and-notify-icon.png" border="false"::: **[Mark as and notify](#notify-users-about-admin-submitted-messages-to-microsoft)**
+  - **[Trigger investigation](#trigger-an-investigation-in-defender-for-office-365-plan-2)** (Defender for Office 365 Plan 2 only)
 
 - Select the message from the list by clicking anywhere in the row other than the check box. The following actions are available in the details flyout that opens<sup>\*</sup>:
   - :::image type="icon" source="../../media/m365-cc-sc-submit-user-reported-message-icon.png" border="false"::: **[Submit to Microsoft for analysis](#submit-user-reported-messages-to-microsoft-for-analysis)**
   - :::image type="icon" source="../../media/m365-cc-scc-mark-and-notify-icon.png" border="false"::: **[Mark as and notify](#notify-users-about-admin-submitted-messages-to-microsoft)**
   - :::image type="icon" source="../../media/m365-cc-sc-view-submission-icon.png" border="false"::: **[View the converted admin submission](#view-converted-admin-submissions)**
-  - [Actions in Microsoft Defender for Office 365 Plan 2 only](#actions-for-user-reported-messages-in-defender-for-office-365-plan-2):
+  - [Actions in Microsoft Defender for Office 365 only](#actions-for-user-reported-messages-in-defender-for-office-365):
     - :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity**
     - :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take actions**
     - :::image type="icon" source="../../media/m365-cc-sc-view-alert-icon.png" border="false"::: **View alert**
+
+[Actions for user reported messages in Defender for Office](#actions-for-user-reported-messages-in-defender-for-office-365)
 
   > [!TIP]
   > To see details or take action on other user reported messages without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
@@ -714,50 +1062,92 @@ These actions are described in the following subsections.
 
 After you select the message on the **User reported** tab, use either of the following methods to submit the message to Microsoft:
 
-- **On the User reported tab**: Select :::image type="icon" source="../../media/m365-cc-sc-submit-user-reported-message-icon.png" border="false"::: **Submit to Microsoft for analysis***.
+- **On the User reported tab**: Select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Submit to Microsoft for analysis***.
 
-- **In the details flyout of the selected message**: Select :::image type="icon" source="../../media/m365-cc-sc-submit-user-reported-message-icon.png" border="false"::: **Submit to Microsoft for analysis** or :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More options** \> :::image type="icon" source="../../media/m365-cc-sc-submit-user-reported-message-icon.png" border="false"::: **Submit to Microsoft for analysis** at the top of the flyout.
+- **In the details flyout of the selected message**: Select **Submit to Microsoft for analysis** or :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More options** \> **Submit to Microsoft for analysis** at the top of the flyout.
 
-In the **Submit to Microsoft for analysis** dropdown list, select one of the following values:
+In the **Submit to Microsoft for analysis** flyout that opens, do the following steps based on whether the message an email message or a Teams message:
 
-- **Available values for email messages**:
+- **Email messages**:
+  - **Why are you submitting this message to Microsoft?**: Select one of the following values:
+    - **It appears clean** or **It appears suspicious**: Select one of these values if you're unsure and you want a verdict from Microsoft.
 
-  - **Report clean**: In the dialog that opens, review or configure the following settings:
+      Select **Submit**, and then select **Done**.
 
-    **Allow email with similar attributes (URL, sender, etc.)**: Select this option to add corresponding allow entries in Tenant Allow/Block List. The following settings are available:
+    - **I've confirmed it's clean**: Select this value if you're sure that the item is clean, and then select **Next**.
+
+      On the next page of the flyout, do one of the following steps:
+
+      - Select **Submit**, and then select **Done**.
+
+      or
+
+      - Select **Allow this message**: This option creates an allow entry for the elements of the message in the Tenant Allow/Block List. For more information about the Tenant Allow/Block List, see [Manage allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md).
+
+      After you select this option, the following settings are available:
 
       - **Remove allow entry after**: The default value is **30 days**, but you can select from the following values:
         - **1 day**
         - **7 days**
         - **30 days**
         - **Specific date**: The maximum value is 30 days from today.
-      - **Allow entry note**: Enter optional information about why you're blocking this email.
 
-    When you're finished in the **Submit message as clean to Microsoft** dialog, select **Submit**.
+      - **Allow entry note (optional)**: Enter optional information about why you're allowing this item. For spoofed senders, any value you enter here isn't shown in the allow entry on the **Spoofed senders** tab on the **Tenant Allow/Block Lists** page.
 
-  - **Report phishing**, **Report malware** or **Report spam**: These selections have the same options in the dialog that opens:
+      When you're finished in the flyout, select **Submit**, and then select **Done**.
 
-    **Block all email from this sender or domain**: Select this option to add a sender or domain block entry in Tenant Allow/Block List. The following settings are available:
+    - **I've confirmed it's a threat**: Select this value if you're sure that the item is malicious, and then select one of the following values in the **Choose a category** section that appears:
+      - **Phish**
+      - **Malware**
+      - **Spam**
 
-    - Select **Sender** or **Domain**.
-    - **Remove allow entry after**: The default value is **30 days**, but you can select from the following values:
-      - **1 day**
-      - **7 days**
-      - **30 days**
-      - **Specific date**: The maximum value is 30 days from today.
+      Select **Next**.
 
-    When you're finished in the dialog, select **Submit**.
+      On the next page of the flyout, do one of the following steps:
 
-  - **Trigger investigation**: Defender for Office 365 Plan 2 only. For more information, see [Trigger an investigation](air-about-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).
+      - Select **Submit**, and then select **Done**.
+
+      or
+
+      - Select **Block all emails from this sender or domain**: This option creates a block entry for the sender domain or email address in the Tenant Allow/Block List. For more information about the Tenant Allow/Block List, see [Manage allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md).
+
+      After you select this option, the following settings are available:
+
+      - By default, **Sender** is selected but you can select **Domain** instead.
+      - **Remove block entry after**: The default value is **30 days**, but you can select from the following values:
+        - **1 day**
+        - **7 days**
+        - **30 days**
+        - **Never expire**
+        - **Specific date**: The maximum value is 30 days from today.
+      - **Block entry note (optional)**: Enter optional information about why you're blocking this item.
+
+      When you're finished in the flyout, select **Submit**, and then select **Done**.
 
   :::image type="content" source="../../media/admin-submission-user-reported-submit-button-options.png" alt-text="The available actions in the Submit to Microsoft for analysis dropdown list." lightbox="../../media/admin-submission-user-reported-submit-button-options.png":::
 
-- **Available values for Teams messages**: No other options are available when you select one of the following values:
-  - **Report clean**
-  - **Report phishing**
-  - **Report malware**
+- **Teams messages**: Select one of the following values:
+  - **I've confirmed its clean**
+  - **It appears clean**
+  - **It appears suspicious**
+
+  After you select one of these values, select **Submit**, and then select **Done**.
+
+  - **I've confirmed it's a threat**: Select this value if you're sure that the item is malicious, and then select one of the following values in the **Choose a category** section that appears:
+  - **Phish**
+  - **Malware**
+
+    Select **Submit**, and then select **Done**.
 
 After you submit a user reported message to Microsoft from the **User reported** tab, the value of **Converted to admin submission** turns from **No** to **Yes**, and a corresponding admin submission entry is created on the appropriate tab on the **Submissions** page (for example, the **Emails** tab).
+
+#### Trigger an investigation in Defender for Office 365 Plan 2
+
+- **On the User reported tab**, select **Trigger investigation** in the dropdown list on :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Submit to Microsoft for analysis***.
+
+:::image type="content" source="../../media/admin-submission-user-reported-submit-button-options.png" alt-text="The Trigger investigation action in the Submit to Microsoft for analysis dropdown list." lightbox="../../media/admin-submission-user-reported-submit-button-options.png":::
+
+For more information, see [Trigger an investigation](air-about-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).
 
 #### Notify users about admin submitted messages to Microsoft
 
@@ -782,12 +1172,12 @@ If you select one of these messages by clicking anywhere in the row other than t
 
 This action takes you to the corresponding admin submission entry on the appropriate tab (for example, the **Emails** tab).
 
-#### Actions for user reported messages in Defender for Office 365 Plan 2
+#### Actions for user reported messages in Defender for Office 365
 
-In organizations with Microsoft Defender for Office 365 Plan 2 (add-on licenses or included in subscriptions like Microsoft 365 E5), the following actions might also be available in the details flyout of a user reported message on the **User reported** tab:
+In organizations with Microsoft Defender for Office 365 (add-on licenses or included in subscriptions like Microsoft 365 E5 or Microsoft 365 Business Premium), the following actions might also be available in the details flyout of a user reported message on the **User reported** tab:
 
-- :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity** (email messages only): For more information, see [How to read the email entity page](mdo-email-entity-page.md#how-to-read-the-email-entity-page).
+- :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity** (email messages only): For more information, see [What's on the Email entity page](mdo-email-entity-page.md#whats-on-the-email-entity-page).
 
-- :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take actions** (email messages only): This action starts the same Action wizard that's available on the email entity page. For more information, see [Actions you can take on the Email entity Page](mdo-email-entity-page.md#actions-you-can-take-on-the-email-entity-page).
+- :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take actions** (email messages only): This action starts the same Action wizard that's available on the Email entity page. For more information, see [Actions on the Email entity page](mdo-email-entity-page.md#actions-on-the-email-entity-page).
 
 - :::image type="icon" source="../../media/m365-cc-sc-view-alert-icon.png" border="false"::: **View alert**. An alert is triggered when an admin submission is created or updated. Selecting this action takes you to the details of the alert.

@@ -1,14 +1,14 @@
 ---
 title: Operationalize attack surface reduction rules
 description: Provides guidance to operationalize your attack surface reduction rules deployment.
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: asr
 ms.localizationpriority: medium
 audience: ITPro
-author: Dansimp
-ms.author: dansimp
-ms.reviewer: oogunrinde, sugamar
-manager: dansimp
+author: siosulli
+ms.author: siosulli
+ms.reviewer: sugamar
+manager: deniseb
 ms.custom: asr
 ms.topic: conceptual
 ms.collection: 
@@ -42,7 +42,7 @@ Consistent, regular review of reports is an essential aspect of maintaining your
 
 One of the most powerful features of [Microsoft Defender XDR](https://security.microsoft.com) is advanced hunting. If you're not familiar with advanced hunting, see: [Proactively hunt for threats with advanced hunting](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview).
 
-> :::image type="content" source="images/asr-defender365-advanced-hunting2.png" alt-text="The Advanced Hunting page in the Microsoft Defender portal. Microsoft Defender for Endpoint attack surface reduction rules used in advanced hunting" lightbox="images/asr-defender365-advanced-hunting2.png":::
+> :::image type="content" source="media/asr-defender365-advanced-hunting2.png" alt-text="The Advanced Hunting page in the Microsoft Defender portal. Microsoft Defender for Endpoint attack surface reduction rules used in advanced hunting" lightbox="media/asr-defender365-advanced-hunting2.png":::
 
 Advanced hunting is a query-based (Kusto Query Language) threat-hunting tool that lets you explore up to 30 days of the captured data. Through advanced hunting, you can proactively inspect events in order to locate interesting indicators and entities. The flexible access to data facilitates unconstrained hunting for both known and potential threats.
 
@@ -60,7 +60,7 @@ DeviceEvents
 ```
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-defender365-advanced-hunting4.png" alt-text="The Advanced hunting query results in the Microsoft Defender portal" lightbox="images/asr-defender365-advanced-hunting4.png":::
+> :::image type="content" source="media/asr-defender365-advanced-hunting4.png" alt-text="The Advanced hunting query results in the Microsoft Defender portal" lightbox="media/asr-defender365-advanced-hunting4.png":::
 
 The above shows that 187 events were registered for AsrLsassCredentialTheft:
 
@@ -79,7 +79,7 @@ DeviceEvents
 ```
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-defender365-advanced-hunting5b.png" alt-text="The Advanced hunting query focused results in the Microsoft Defender portal" lightbox="images/asr-defender365-advanced-hunting5b.png":::
+> :::image type="content" source="media/asr-defender365-advanced-hunting5b.png" alt-text="The Advanced hunting query focused results in the Microsoft Defender portal" lightbox="media/asr-defender365-advanced-hunting5b.png":::
 
 The true benefit of advanced hunting is that you can shape the queries to your liking. By shaping your query you can see the exact story of what was happening, regardless of whether you want to pinpoint something on an individual machine, or you want to extract insights from your entire environment.
 

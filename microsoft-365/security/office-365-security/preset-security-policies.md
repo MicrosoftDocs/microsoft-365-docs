@@ -4,7 +4,7 @@ f1.keywords:
   - NOCSH
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: medium
@@ -14,13 +14,12 @@ ms.collection:
   - tier1
 ms.custom:
 description: Admins can learn how to apply Standard and Strict policy settings across the protection features of Exchange Online Protection (EOP) and Microsoft Defender for Office 365
-ms.subservice: mdo
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 search.appverid: met150
 ms.date: 11/2/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 1 and Plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
@@ -30,7 +29,7 @@ appliesto:
 
 _Preset security policies_ allow you to apply protection features to users based on our recommended settings. Unlike custom policies that are infinitely configurable, virtually all of the settings in preset security policies aren't configurable, and are based on our observations in the datacenters. The settings in preset security policies provide a balance between keeping harmful content away from users while avoiding unnecessary disruptions.
 
-Depending on your organization, preset security policies provide many of the protection features that are available in [Exchange Online Protection (EOP)](eop-about.md) and [Microsoft Defender for Office 365](mdo-security-comparison.md).
+Depending on your organization, preset security policies provide many of the protection features that are available in [Exchange Online Protection (EOP)](eop-about.md) and [Microsoft Defender for Office 365](mdo-about.md).
 
 The following preset security policies are available:
 
@@ -49,12 +48,11 @@ The rest of this article how to configure preset security policies.
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
+  - [Microsoft Defender XDR Unified role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac) (Affects the Defender portal only, not PowerShell): **Authorization and settings/Security settings/Core Security settings (manage)** or **Authorization and settings/Security settings/Core Security settings (read)**.
   - [Exchange Online permissions](/exchange/permissions-exo/permissions-exo):
     - _Configure preset security policies_: Membership in the **Organization Management** or **Security Administrator** role groups.
     - _Read-only access to preset security policies_: Membership in the **Global Reader** role group.
-  - [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-role): Membership in the **Global Administrator**, **Security Administrator**, or **Global Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
-
-<a name='use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users'></a>
+  - [Microsoft Entra permissions](/entra/identity/role-based-access-control/manage-roles-portal): Membership in the **Global Administrator**, **Security Administrator**, or **Global Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 ## Use the Microsoft Defender portal to assign Standard and Strict preset security policies to users
 
@@ -68,7 +66,7 @@ The rest of this article how to configure preset security policies.
 
    - **All recipients**
 
-   - **Specific recipients**: Configure one of the following settings that appears:
+   - **Specific recipients**: Configure one of the following recipient conditions that appear:
      - **Users**: The specified mailboxes, mail users, or mail contacts.
      - **Groups**:
        - Members of the specified distribution groups or mail-enabled security groups (dynamic distribution groups aren't supported).
@@ -79,21 +77,23 @@ The rest of this article how to configure preset security policies.
 
    For users or groups, you can use most identifiers (name, display name, alias, email address, account name, etc.), but the corresponding display name is shown in the results. For users or groups, enter an asterisk (\*) by itself to see all available values.
 
-   Multiple values in the same condition use OR logic (for example, _\<recipient1\>_ or _\<recipient2\>_). Different conditions use AND logic (for example, _\<recipient1\>_ and _\<member of group 1\>_).
+   You can use a condition only once, but the condition can contain multiple values:
 
-   > [!IMPORTANT]
-   > Multiple different types of conditions or exceptions aren't additive; they're inclusive. The policy is applied _only_ to those recipients that match _all_ of the specified recipient filters. For example, you configure a recipient filter condition in the policy with the following values:
-   >
-   > - Users: romain@contoso.com
-   > - Groups: Executives
-   >
-   > The policy is applied to romain@contoso.com _only_ if he's also a member of the Executives group. If he's not a member of the group, then the policy isn't applied to him.
-   >
-   > Likewise, if you use the same recipient filter as an exception to the policy, the policy isn't applied to romain@contoso.com _only_ if he's also a member of the Executives group. If he's not a member of the group, then the policy still applies to him.
+   - Multiple **values** of the **same condition** use OR logic (for example, _\<recipient1\>_ or _\<recipient2\>_). If the recipient matches **any** of the specified values, the policy is applied to them.
+   - Different **types of conditions** use AND logic. The recipient must match **all** of the specified conditions for the policy to apply to them. For example, you configure a condition with the following values:
+     - Users: `romain@contoso.com`
+     - Groups: Executives
+
+     The policy is applied to `romain@contoso.com` _only_ if he's also a member of the Executives group. Otherwise, the policy isn't applied to him.
 
    - **None**
 
-   - **Exclude these recipients**: If you selected **All recipients** or **Specific recipients**, select this option and configure the recipient exceptions. The settings and behavior are exactly like the recipient conditions.
+   - **Exclude these recipients**: If you selected **All recipients** or **Specific recipients**, select this option to configure recipient exceptions.
+
+     You can use an exception only once, but the exception can contain multiple values:
+
+     - Multiple **values** of the **same exception** use OR logic (for example, _\<recipient1\>_ or _\<recipient2\>_). If the recipient matches **any** of the specified values, the policy isn't applied to them.
+     - Different **types of exceptions** use OR logic (for example, _\<recipient1\>_ or _\<member of group1\>_ or _\<member of domain1\>_). If the recipient matches **any** of the specified exception values, the policy isn't applied to them.
 
    When you're finished on the **Apply Exchange Online Protection** page, select **Next**.
 
@@ -142,7 +142,7 @@ The rest of this article how to configure preset security policies.
 
    Click in the **Add domains** box, enter a domain value, press the ENTER key or select the value that's displayed below the box. To remove a domain from the box and start over, select :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: next to the domain. When you're ready to add the domain, select **Add**. Repeat this step as many times as necessary.
 
-  The domains you added are listed on the page. To remove the domain, select :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: next to the value.
+   The domains you added are listed on the page. To remove the domain, select :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: next to the value.
 
    The domains you added are listed on the page. To remove a domain, select :::image type="icon" source="../../media/m365-cc-sc-close-icon.png" border="false"::: next to the entry.
 
@@ -167,20 +167,18 @@ The rest of this article how to configure preset security policies.
 
 10. On the **Standard protection updated** or **Strict protection updated** page, select **Done**.
 
-<a name='use-the-microsoft-365-defender-portal-to-modify-the-assignments-of-standard-and-strict-preset-security-policies'></a>
-
 ## Use the Microsoft Defender portal to modify the assignments of Standard and Strict preset security policies
 
-The steps to modify the assignment of the **Standard protection** or **Strict protection** preset security policy are the same as when you initially [assigned the preset security policies to users](#use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users).
+The steps to modify the assignment of the **Standard protection** or **Strict protection** preset security policy are the same as when you initially [assigned the preset security policies to users](#use-the-microsoft-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users).
 
 To disable the **Standard protection** or **Strict protection** preset security policies while still preserving the existing conditions and exceptions, slide the toggle to :::image type="icon" source="../../media/scc-toggle-off.png" border="false":::. To enable the policies, slide the toggle to :::image type="icon" source="../../media/scc-toggle-on.png" border="false":::.
-
-<a name='use-the-microsoft-365-defender-portal-to-add-exclusions-to-the-built-in-protection-preset-security-policy'></a>
 
 ## Use the Microsoft Defender portal to add exclusions to the Built-in protection preset security policy
 
 > [!TIP]
-> The **Built-in protection** preset security policy is assigned to all recipients, and doesn't affect recipients who are defined in the **Standard** or **Strict** preset security policies, or in custom Safe Links or Safe Attachments policies. Therefore, we typically don't recommend exceptions to the **Built-in protection** preset security policy.
+> The **Built-in protection** preset security policy is applied to all users in organizations with any amount of licenses for Defender for Microsoft 365. This application is in the spirit of securing the broadest set of users until admins specifically configure Defender for Office 365 protections. Because **Built-in protection** is enabled by default, customers don't need to worry about violating product licensing terms. However, we recommend purchasing enough Defender for Office 365 licenses to ensure **Built-in protection** continues for all users.
+>
+> The **Built-in protection** preset security policy doesn't affect recipients who are defined in the **Standard** or **Strict** preset security policies, or in custom Safe Links or Safe Attachments policies. Therefore, we typically don't recommend exceptions to the **Built-in protection** preset security policy.
 
 1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Preset Security Policies** in the **Templated policies** section. Or, to go directly to the **Preset security policies** page, use <https://security.microsoft.com/presetSecurityPolicies>.
 
@@ -197,13 +195,10 @@ To disable the **Standard protection** or **Strict protection** preset security 
 
    For users or groups, you can use most identifiers (name, display name, alias, email address, account name, etc.), but the corresponding display name is shown in the results. For users, enter an asterisk (\*) by itself to see all available values.
 
-   > [!IMPORTANT]
-   > Multiple different types of exceptions aren't additive; they're inclusive. The policy isn't applied _only_ if those recipients that match _all_ of the specified recipient filters. For example, you configure a recipient filter exception with the following values:
-   >
-   > - Users: romain@contoso.com
-   > - Groups: Executives
-   >
-   > The policy isn't applied to romain@contoso.com _only_ if he's also a member of the Executives group. If he's not a member of the group, then the policy still applies to him.
+   You can use an exception only once, but the exception can contain multiple values:
+
+   - Multiple **values** of the **same exception** use OR logic (for example, _\<recipient1\>_ or _\<recipient2\>_). If the recipient matches **any** of the specified values, the policy isn't applied to them.
+   - Different **types of exceptions** use OR logic (for example, _\<recipient1\>_ or _\<member of group1\>_ or _\<member of domain1\>_). If the recipient matches **any** of the specified exception values, the policy isn't applied to them.
 
 4. When you're finished in the **Exclude from Built-in protection** flyout, select **Save**.
 
@@ -392,7 +387,7 @@ If your organization has Defender for Office 365, you enable or disable the rule
 
 - **Organizations with Defender for Office 365**:
 
-  - Run the following command to determine whether the rules for the Standard and Strict preset security policies are currently enabled or disabled:    
+  - Run the following command to determine whether the rules for the Standard and Strict preset security policies are currently enabled or disabled:
 
     ```powershell
     Write-Output -InputObject ("`r`n"*3),"EOP protection rule",("-"*50);Get-EOPProtectionPolicyRule -Identity "Standard Preset Security Policy" | Format-Table Name,State; Write-Output -InputObject `r`n,"Defender for Office 365 protection rule",("-"*50);Get-ATPProtectionPolicyRule -Identity "Standard Preset Security Policy" | Format-Table Name,State; Write-Output -InputObject ("`r`n"*3),"EOP protection rule",("-"*50);Get-EOPProtectionPolicyRule -Identity "Strict Preset Security Policy" | Format-Table Name,State; Write-Output -InputObject `r`n,"Defender for Office 365 protection rule",("-"*50);Get-ATPProtectionPolicyRule -Identity "Strict Preset Security Policy" | Format-Table Name,State
@@ -424,15 +419,19 @@ If your organization has Defender for Office 365, you enable or disable the rule
 
 ### Use PowerShell to specify recipient conditions and exceptions for preset security policies
 
-> [!IMPORTANT]
-  > Multiple different types of conditions or exceptions aren't additive; they're inclusive. The preset security policy is applied _only_ to those recipients that match _all_ of the specified recipient filters. For example, you configure a recipient filter condition in the policy with the following values:
-  >
-  > - Users: romain@contoso.com
-  > - Groups: Executives
-  >
-  > The policy is applied to romain@contoso.com _only_ if he's also a member of the Executives group. If he's not a member of the group, then the policy isn't applied to him.
-  >
-  > Likewise, if you use the same recipient filter as an exception to the policy, the policy isn't applied to romain@contoso.com _only_ if he's also a member of the Executives group. If he's not a member of the group, then the policy still applies to him.
+You can use a recipient condition or exception only once, but the condition or exception can contain multiple values:
+
+- Multiple **values** of the **same condition or exception** use OR logic (for example, _\<recipient1\>_ or _\<recipient2\>_):
+  - **Conditions**: If the recipient matches **any** of the specified values, the policy is applied to them.
+  - **Exceptions**: If the recipient matches **any** of the specified values, the policy isn't applied to them.
+
+- Different **types of exceptions** use OR logic (for example, _\<recipient1\>_ or _\<member of group1\>_ or _\<member of domain1\>_). If the recipient matches **any** of the specified exception values, the policy isn't applied to them.
+
+- Different **types of conditions** use AND logic. The recipient must match **all** of the specified conditions for the policy to apply to them. For example, you configure a condition with the following values:
+  - Users: `romain@contoso.com`
+  - Groups: Executives
+
+  The policy is applied to `romain@contoso.com` _only_ if he's also a member of the Executives group. Otherwise, the policy isn't applied to him.
 
 For the Built-in protection preset security policy, you can specify only recipient exceptions. If all exception parameter values are empty (`$null`), there are no exceptions to the policy.
 
@@ -549,7 +548,7 @@ The differences in meaningful policy settings in the Standard preset security po
 |&nbsp;&nbsp;**Spam** detection action (_SpamAction_)|**Move message to Junk Email folder** (`MoveToJmf`)|**Quarantine message** (`Quarantine`)|
 |**Anti-phishing policy**|||
 |&nbsp;&nbsp;**If the message is detected as spoof by spoof intelligence** (_AuthenticationFailAction_)|**Move message to Junk Email folder** (`MoveToJmf`)|**Quarantine message** (`Quarantine`)|
-|**Show first contact safety tip** (_EnableFirstContactSafetyTips_)|Selected (`$true`)|Not selected (`$false`)|
+|**Show first contact safety tip** (_EnableFirstContactSafetyTips_)|Selected (`$true`)|Selected (`$true`)|
 |&nbsp;&nbsp;**If mailbox intelligence detects an impersonated user** (_MailboxIntelligenceProtectionAction_)|**Move message to Junk Email folder** (`MoveToJmf`)|**Quarantine message** (`Quarantine`)|
 |&nbsp;&nbsp;**Phishing email threshold** (_PhishThresholdLevel_)|**3 - More aggressive** (`3`)|**4 - Most aggressive** (`4`)|
 |**Safe Attachments policy**|No difference|No difference|

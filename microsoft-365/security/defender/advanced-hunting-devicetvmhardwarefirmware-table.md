@@ -1,14 +1,9 @@
 ---
 title: DeviceTvmHardwareFirmware table in the advanced hunting schema
 description: Learn about the DeviceTvmHardwareFirmware table in the advanced hunting schema, which includes information on devices like processor, BIOS, and others, as checked in threat and vulnerability management in Microsoft Defender XDR.
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, threat & vulnerability management, TVM, device management, security configuration, DeviceTvmHardwareFirmware
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
 ms.subservice: adv-hunting
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: 
   - NOCSH
 ms.author: maccruz
@@ -20,12 +15,12 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: reference
-ms.date: 11/24/2022
+ms.date: 12/29/2023
 ---
 
 # DeviceTvmHardwareFirmware
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 
 **Applies to:**
@@ -47,7 +42,7 @@ For information on other tables in the advanced hunting schema, see [the advance
 | `ComponentName` | `string` | Name of hardware or firmware component |
 | `ComponentFamily` | `string` | Component family or class, a grouping of components that have similar features or characteristics as determined by the manufacturer |
 | `ComponentVersion` | `string` | Component version (for example, BIOS version) |
-| `AdditionalFields` | `string` | Additional information about the components in JSON array format|
+| `AdditionalFields` | `dynamic` | Additional information about the components in JSON array format |
 
 You can try the following sample queries to use the information available in the `DeviceTvmHardwareFirmware` table:
 
@@ -72,4 +67,4 @@ DeviceTvmHardwareFirmware
 - [Understand the schema](advanced-hunting-schema-tables.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)
 - [Overview of Microsoft Defender Vulnerability Management](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

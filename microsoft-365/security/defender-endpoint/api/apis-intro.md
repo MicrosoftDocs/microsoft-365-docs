@@ -2,17 +2,13 @@
 title: Access the Microsoft Defender for Endpoint APIs
 ms.reviewer:
 description: Learn how you can use APIs to automate workflows and innovate based on Microsoft Defender for Endpoint capabilities
-keywords: apis, api, wdatp, open api, microsoft defender for endpoint api, microsoft defender atp, public api, supported apis, alerts, device, user, domain, ip, file, advanced hunting, query
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.service: microsoft-365-security
-ms.subservice: mde
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.service: defender-endpoint
+ms.subservice: reference
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 ms.date: 01/25/2022
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -25,7 +21,7 @@ search.appverid: met150
 
 # Access the Microsoft Defender for Endpoint APIs
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -46,7 +42,7 @@ Watch this video for a quick overview of Defender for Endpoint's APIs.
 
 In general, you'll need to take the following steps to use the APIs:
 
-- Create an [Microsoft Entra application](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-nativeapp)
+- Create a [Microsoft Entra application](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-nativeapp)
 - Get an access token using this application
 - Use the token to access Defender for Endpoint API
 

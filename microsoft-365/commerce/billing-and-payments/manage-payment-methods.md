@@ -9,6 +9,7 @@ ms.reviewer: lishepar, ramagane
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-management
 ms.localizationpriority: high
 ms.collection: 
 - Tier1
@@ -23,14 +24,15 @@ ms.custom:
 - AdminTemplateSet
 - adminvideo
 - business_assist
+- admindeeplinkMAC
 search.appverid: MET150
 description: "Learn how to manage your payment methods for Microsoft business products or services in the Microsoft 365 admin center."
-ms.date: 08/24/2023
+ms.date: 02/16/2024
 ---
 
 # Manage payment methods for Microsoft business accounts
 
-When you buy Microsoft business products or services, you can use an existing payment method to pay for then, or add a new one. You can use a credit or debit card to pay for the things you buy.
+When you buy Microsoft business products or services, you can use an existing payment method to pay for them, or add a new one. You can use a credit or debit card to pay for the things you buy.
 
 > [!IMPORTANT]
 >
@@ -43,9 +45,9 @@ When you buy Microsoft business products or services, you can use an existing pa
 ## Before you begin
 
 - [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
-- If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a billing account owner or contributor, or a billing profile owner or contributor to dp the tasks in this article. For more information about billing account and billing profile roles, see [Understand your Microsoft business billing account](../manage-billing-accounts.md) and [Understand your Microsoft business billing profile](manage-billing-profiles.md).
+- If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a billing account owner or contributor, or a billing profile owner or contributor to dp the tasks in this article. For more information about billing account and billing profile roles, see [Understand your Microsoft business billing account](../manage-billing-accounts.md) and [Manage your Microsoft business billing profiles](manage-billing-profiles.md).
 - If you have a Microsoft Online Subscription Agreement (MOSA), you must be a global or billing admin to do the tasks in this article. For more information, see [[About admin roles]](../../admin/add-users/about-admin-roles.md).
-- If you have an MCA billing account type and you’re a billing profile owner or contributor, you can use the billing profile that's backed by a credit or debit card or invoice payment to make purchases or pay bills. If you're a billing invoice manager, you can only use a billing profile to pay bills. To learn more about billing profiles and roles, see [Understand your Microsoft business billing profile](manage-billing-profiles.md).
+- If you have an MCA billing account type and you’re a billing profile owner or contributor, you can use the billing profile that's backed by a credit or debit card or invoice payment to make purchases or pay bills. If you're a billing invoice manager, you can only use a billing profile to pay bills. To learn more about billing profiles and roles, see [Manage your Microsoft business billing profiles](manage-billing-profiles.md).
 
 > [!NOTE]
 > If you're the person who signed up for the subscription, you're automatically a billing account owner or global admin.
@@ -60,7 +62,7 @@ If you have an MOSA billing account type, you can replace the payment method for
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
    - If you're using the **Simplified view**, select **Billing**, then select **View payment methods**.
-   - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Bills & payments</a> page, and select the **Payment methods** tab.
+   - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page, and select the **Payment methods** tab.
 2. Select **Add a payment method**.
 3. On the **Add a payment method** page, enter the information for the new payment method, then select **Save**.
 4. To use the new payment method to pay for all subscriptions currently paid for with another payment method, select **Replace an existing payment method**.
@@ -72,7 +74,7 @@ You can change the name, billing address, or expiration date for an existing cre
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.
    - If you're using the **Simplified view**, select **Billing**, then select **View payment methods**.
-   - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Bills & payments</a> page, and select the **Payment methods** tab.
+   - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page, and select the **Payment methods** tab.
 2. Select the payment method to update. In the edit pane, select **Edit**.
 3. Update your payment method information, including the name on the credit or debit card, billing address, or expiration date, and then select **Save**.
 
@@ -96,13 +98,13 @@ When you replace an existing payment method, you can add a new one, or use a pay
 
 If you have an MCA billing account type, you can replace the payment method that's linked with a billing profile.
 
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.
-   - If you're using the **Simplified view**, select **Billing** > **View payment methods**.
-   - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Bills & payments</a> page.
-2. Select the **Billing profiles** tab, then select the billing profile to update.
-3. On the **Billing profile** page, under **Payment method**, select **Replace**.
-4. If you need to add a new payment method first, select **Add payment method**, enter the details, then select **Save**.
-5. In the **Replace payment method** pane, select a different payment method from the drop-down list, then select **Replace**.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Billing accounts</a> page.
+2. On the **Overview** tab, select a billing account.
+3. On the billing account details page, select the **Billing profile** tab. The tab lists all billing profiles associated with the selected billing account.
+4. Select a billing profile name to view its details page.
+5. On the billing profile details page, in the **Invoice and billing notifications** section, under **Payment method**, select **Replace**.
+6. Select a new payment method from the drop-down list. If you need to add a new payment method first, select **Add payment method**, enter the details, then select **Save**.
+7. In the **Replace payment method** pane, select a different payment method from the drop-down list, then select **Replace**.
 
 ### Replace the payment method for a single subscription
 
@@ -122,7 +124,7 @@ If you have an MOSA billing account type, you can change the payment method used
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.
    - If you're using the **Simplified view**, select **Billing**, then select **View payment methods**.
-   - If you're using the Dashboard view, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Bills & payments</a> page, and select the **Payment methods** tab.
+   - If you're using the Dashboard view, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page, and select the **Payment methods** tab.
 2. Select the payment method to replace. The right pane lists all the individual subscriptions that use the selected payment method.
 3. In the right pane, select **Replace payment method for all items**.
 4. Review the payment method details, then select **Next**.
@@ -143,7 +145,7 @@ If a payment method isn't associated with any subscriptions or billing profiles,
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.
    - If you're using the **Simplified view**, select **Billing**, then select **View payment methods**.
-   - If you're using the Dashboard view, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Bills & payments</a> page, and select the **Payment methods** tab.
+   - If you're using the Dashboard view, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page, and select the **Payment methods** tab.
 2. Select the payment method to delete.
 3. In the edit pane, select **Delete**.
 4. Review the payment method details, then select **Next**.
@@ -155,7 +157,7 @@ If a payment method is attached to any subscriptions or billing profiles, first 
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.
    - If you're using the **Simplified view**, select **Billing**, then select **View payment methods**.
-   - If you're using the Dashboard view, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Bills & payments</a> page, and select the **Payment methods** tab.
+   - If you're using the Dashboard view, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page, and select the **Payment methods** tab.
 2. Select the payment method to delete.
 3. In the edit pane, select **Delete**. The **Delete a payment method** pane lists existing subscriptions and billing profiles that use that payment method.
 4. Select **Next**.
@@ -178,5 +180,5 @@ If a payment method is attached to any subscriptions or billing profiles, first 
 ## Related content
 
 [Payment options for your Microsoft business subscription](pay-for-your-subscription.md) (article) \
-[Understand your Microsoft business billing profile](manage-billing-profiles.md) (article) \
+[Manage your Microsoft business billing profiles](manage-billing-profiles.md) (article) \
 [Change your billing frequency](change-payment-frequency.md) (article)

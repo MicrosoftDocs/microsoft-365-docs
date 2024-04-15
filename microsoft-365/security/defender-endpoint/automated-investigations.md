@@ -1,17 +1,13 @@
 ---
 title: Use automated investigations to investigate and remediate threats
 description: Understand the automated investigation flow in Microsoft Defender for Endpoint.
-keywords: automated, investigation, detection, Microsoft Defender for Endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.service: microsoft-365-security
-ms.subservice: mde
-author: dansimp
-ms.author: dansimp
+ms.service: defender-endpoint
+ms.subservice: edr
+author: siosulli
+ms.author: siosulli
 ms.localizationpriority: medium
 ms.date: 08/31/2022
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -24,7 +20,7 @@ search.appverid: met150
 
 # Overview of automated investigations
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)

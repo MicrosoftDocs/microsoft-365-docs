@@ -1,12 +1,8 @@
 ---
 title: Step 3. Evaluate Microsoft Defender for Office 365 overview
 description: Use this overview to learn the steps to set up an MDO pilot, including requirements, enabling or activating the eval, and setting up the pilot.
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords:
   - NOCSH
 ms.author: dansimp
@@ -43,4 +39,4 @@ The following table describes the steps in the illustration.
 |1|[Review architecture requirements and key concepts](eval-defender-office-365-architecture.md)|Understand the Defender for Office architecture and be sure your Exchange Online environment meets the architecture prerequisites.|
 |2|[Enable the evaluation environment](eval-defender-office-365-enable-eval.md)|Follow the steps to set up the evaluation environment.|
 |3|[Set up the pilot](eval-defender-office-365-pilot.md)|Create pilot groups, configure protection, and become familiar with key features and dashboards.|
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

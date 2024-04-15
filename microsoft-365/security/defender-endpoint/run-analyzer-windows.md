@@ -1,22 +1,21 @@
 ---
 title:  Run the client analyzer on Windows
 description: Learn how to run the Microsoft Defender for Endpoint Client Analyzer on Windows.
-keywords: client analyzer, troubleshoot sensor, analyzer, mdeanalyzer, windows
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 f1.keywords:
 - NOCSH
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 ms.reviewer: younghree
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier2
 - mde-ngp
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: ngp
 search.appverid: met150
 ms.date: 11/01/2023
 ---
@@ -69,15 +68,15 @@ In addition to the previous procedure, you can also [collect the analyzer suppor
 
 All the PowerShell scripts and modules included with the analyzer are Microsoft-signed. If files were modified in any way, then the analyzer is expected to exit with the following error:
 
-:::image type="content" source="images/sigerror.png" alt-text="The client analyzer error" lightbox="images/sigerror.png":::
+:::image type="content" source="media/sigerror.png" alt-text="The client analyzer error" lightbox="media/sigerror.png":::
 
 If you see this error, the issuerInfo.txt output contains detailed information about why this happened and the affected file:
 
-:::image type="content" source="images/issuerinfo.png" alt-text="The issuer info" lightbox="images/issuerinfo.png":::
+:::image type="content" source="media/issuerinfo.png" alt-text="The issuer info" lightbox="media/issuerinfo.png":::
 
 Example contents after MDEClientAnalyzer.ps1 is modified:
 
-:::image type="content" source="images/modified-ps1.png" alt-text="The  modified ps1 file" lightbox="images/modified-ps1.png":::
+:::image type="content" source="media/modified-ps1.png" alt-text="The  modified ps1 file" lightbox="media/modified-ps1.png":::
 
 ## Result package contents on Windows
 

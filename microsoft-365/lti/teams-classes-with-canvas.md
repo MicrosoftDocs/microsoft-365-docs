@@ -1,8 +1,8 @@
 ---
 title: Use Microsoft Teams classes with Canvas
-ms.author: danismith
-author: cichur
-manager: serdars
+author: MicrosoftHeidi
+ms.author: heidip
+manager: jacktremper
 ms.reviewer: sovaish
 ms.date: 05/26/2021
 audience: admin

@@ -3,7 +3,7 @@ title: "Microsoft 365 Experience insights dashboard"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 11/21/2023
+ms.date: 12/05/2023
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
@@ -25,13 +25,15 @@ Experience insights is optimized for organizations with 2000 plus seats. We are 
 
 ## Go to the Experience insights dashboard
 
-There are a couple of ways to get the Experience insights dashboard page. If you’re a member of the global admin or global reader roles, when you log in to the Microsoft 365 admin center, you’ll see a one-time prompt to go to the Experience insights (preview) dashboard. You can access it at any time by selecting **Experience insights (preview)** from the admin home page.
-
-:::image type="content" source="../../media/experience-insights-fre.png" alt-text="Screenshot: Image showing how to get to the experience insights dashboard":::
+From the Microsoft 365 admin center, you can access it at any time by selecting **Experience insights (preview)** from the admin home page.
 
 If you’re a member of the reports reader role, once you sign into the admin center, you’ll automatically go to the Experience insights (preview) dashboard page. You can switch back to the admin center Dashboard view by selecting the dropdown option next to **Experience insights (preview)**.
 
 To learn more, see [About admin roles](../add-users/about-admin-roles.md) and [Assign admin roles](../add-users/assign-admin-roles.md).
+
+## Overview
+
+The Overview page shows you data and information on feedback and help article views in your organization.
 
 ## Suggested training
 

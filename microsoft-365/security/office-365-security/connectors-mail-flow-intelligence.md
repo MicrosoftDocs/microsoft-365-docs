@@ -2,9 +2,9 @@
 title: Mail flow intelligence
 f1.keywords: 
   - NOCSH
-ms.author: dansimp
-author: dansimp
-manager: dansimp
+ms.author: chrisda
+author: chrisda
+manager: deniseb
 audience: ITPro
 ms.topic: troubleshooting
 ms.custom:
@@ -13,15 +13,14 @@ search.appverid:
   - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Admins can learn about the error codes that are associated with message delivery using connectors (also known as mail flow intelligence).
-ms.subservice: mdo
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 ms.collection: 
 - m365-security
 - tier2
 ms.date: 6/14/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 1 and Plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
@@ -80,7 +79,7 @@ Microsoft 365 encountered a connection error when it tried to connect to the des
 
        - Select the connector from the list by clicking anywhere in the row other than the round check box that appears next to the **Status** column. In the connector details flyout that opens, do either of the following actions:
          - Delete the connector by selecting :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png" border="false"::: **Delete** at the top of the flyout, and then select **Confirm** in the confirmation flyout that opens.
-         - Disable the connector by selecting :::image type="icon" source="../../media/m365-cc-sc-disable-icon.png" border="false"::: **Disable** at the top of the flyout, and then select **Confirm** in the confirmation flyout that opens. 
+         - Disable the connector by selecting :::image type="icon" source="../../media/m365-cc-sc-disable-icon.png" border="false"::: **Disable** at the top of the flyout, and then select **Confirm** in the confirmation flyout that opens.
 
   - In Microsoft 365, change the accepted domain that's associated with your on-premises email environment from **Internal Relay** to **Authoritative**. For instructions, see [Manage accepted domains in Exchange Online](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 

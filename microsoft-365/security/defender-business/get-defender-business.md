@@ -2,9 +2,9 @@
 title: Get Microsoft Defender for Business
 description: Find out how to get Microsoft Defender for Business, endpoint protection for small and medium sized businesses.
 search.appverid: MET150
-author: denisebmsft
-ms.author: deniseb
-manager: dansimp 
+author: siosulli
+ms.author: siosulli
+manager: deniseb 
 audience: Admin
 ms.topic: overview
 ms.service: defender-business

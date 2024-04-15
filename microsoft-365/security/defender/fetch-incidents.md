@@ -1,13 +1,8 @@
 ---
 title: Fetch Microsoft Defender XDR incidents 
 description: Learn how to fetch Microsoft Defender XDR incidents from a customer tenant
-keywords: managed security service provider, mssp, configure, integration
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
@@ -24,7 +19,7 @@ ms.date: 10/25/2021
 
 # Fetch Microsoft Defender XDR incidents 
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
@@ -189,4 +184,4 @@ For information on how to fetch alerts using REST API, see [Pull alerts using RE
 ## Related topics
 
 [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

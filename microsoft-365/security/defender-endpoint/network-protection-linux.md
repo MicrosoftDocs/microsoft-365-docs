@@ -1,19 +1,13 @@
 ---
 title: Use network protection to help prevent Linux connections to bad sites
 description: Protect your network by preventing Linux users from accessing known malicious and suspicious network addresses
-keywords: Network protection, Linux exploits, malicious website, ip, domain, domains, command and control, SmartScreen, toast notification
-ms.service: microsoft-365-security
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
+ms.service: defender-endpoint
 ms.localizationpriority: medium
 audience: ITPro
-author: dansimp
-ms.author: dansimp
-ms.reviewer: oogunrinde
-manager: dansimp
-ms.custom: asr
-ms.subservice: mde
+author: siosulli
+ms.author: siosulli
+manager: deniseb
+ms.subservice: linux
 ms.topic: overview
 ms.collection: 
 - m365-security
@@ -25,7 +19,7 @@ ms.date: 02/17/2023
 
 # Network protection for Linux
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -94,24 +88,25 @@ sudo python3 MicrosoftDefenderATPOnboardingLinuxServer.py
 
 ### Validation
 
-A. Check Network Protection has effect on always blocked sites:
-<!--These links are purposely blocked; will trigger as broken link--->
-- [http://www.smartscreentestratings2.net](http://www.smartscreentestratings2.net)
-- [https://www.smartscreentestratings2.net](https://www.smartscreentestratings2.net)
+1. Check Network Protection has effect on always blocked sites:
+   - <http://smartscreentestratings2.net>
+   - <https://smartscreentestratings2.net>
 
-B. Inspect diagnostic logs
+   <!--These links are purposely blocked; will trigger as broken link--->
 
-```bash
-$ sudo mdatp log level set --level debug
-$ sudo tail -f /var/log/microsoft/mdatp/microsoft_defender_np_ext.log
-```
+2. Inspect diagnostic logs
+
+   ```bash
+   sudo mdatp log level set --level debug
+   sudo tail -f /var/log/microsoft/mdatp/microsoft_defender_np_ext.log
+   ```
 
 #### To exit the validation mode
 
 Disable network protection and restart the network connection:
 
 ```bash
-$ sudo mdatp config network-protection enforcement-level --value disabled
+sudo mdatp config network-protection enforcement-level --value disabled
 ```
 
 ## Advanced configuration
@@ -140,7 +135,7 @@ Also, make sure that in **Microsoft Defender** \> **Settings** \> **Endpoints** 
 > [!IMPORTANT]
 > The above **'Custom network indicators'** toggle controls **Custom Indicators** enablement **for ALL platforms** with Network Protection support, including Windows. Reminder that—on Windows—for indicators to be enforced you also must have Network Protection explicitly enabled.
 
-:::image type="content" source="images/network-protection-linux-defender-security-center-advanced-features-settings.png" alt-text="MEM Create Profile" lightbox="images/network-protection-linux-defender-security-center-advanced-features-settings.png":::
+:::image type="content" source="media/network-protection-linux-defender-security-center-advanced-features-settings.png" alt-text="MEM Create Profile" lightbox="media/network-protection-linux-defender-security-center-advanced-features-settings.png":::
 
 ## How to explore the features
 
@@ -154,7 +149,7 @@ Also, make sure that in **Microsoft Defender** \> **Settings** \> **Endpoints** 
    > Pro tip: You can deploy a policy without selecting any category on a device group. This action will create an audit only policy, to help you understand user behavior before creating a block policy.
    >
    > Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
- 
+
 4. [Integrate Microsoft Defender for Endpoint with Defender for Cloud Apps](/defender-cloud-apps/mde-integration) and your network protection-enabled macOS devices will have endpoint policy enforcement capabilities.
 
    > [!NOTE]
@@ -174,7 +169,7 @@ Web threat protection is part of Web protection in Microsoft Defender for Endpoi
 - untrusted or low-reputation sites
 - sites you've blocked in your custom indicator list
 
->:::image type="content" source="images/network-protection-reports-web-protection.png" alt-text="Web Protection reports web threat detections." lightbox="images/network-protection-reports-web-protection.png":::
+>:::image type="content" source="media/network-protection-reports-web-protection.png" alt-text="Web Protection reports web threat detections." lightbox="media/network-protection-reports-web-protection.png":::
 
 For more information, see [Protect your organization against web threat](web-threat-protection.md)
 
@@ -186,7 +181,7 @@ Create indicators that define the detection, prevention, and exclusion of entiti
 
 Currently supported sources are the cloud detection engine of Defender for Endpoint, the automated investigation and remediation engine, and the endpoint prevention engine (Microsoft Defender Antivirus).
 
-:::image type="content" source ="images/network-protection-add-url-domain-indicator.png" alt-text="Shows network protection add URL or domain indicator." lightbox="images/network-protection-add-url-domain-indicator.png":::
+:::image type="content" source="media/network-protection-add-url-domain-indicator.png" alt-text="Shows network protection add URL or domain indicator." lightbox="media/network-protection-add-url-domain-indicator.png":::
 
 For more information, see: [Create indicators for IPs and URLs/domains](indicator-ip-domain.md).
 
@@ -198,7 +193,7 @@ Configure policies across your device groups to block certain categories. Blocki
 
 Web content filtering is available on the major web browsers, with blocks performed by Windows Defender SmartScreen (Microsoft Edge) and Network Protection (Chrome, Firefox, Brave, and Opera). For more information about browser support, see [Prerequisites](#prerequisites).
 
-:::image type="content" source="images/network-protection-wcf-add-policy.png" alt-text="Shows network protection web content filtering add policy." lightbox="images/network-protection-wcf-add-policy.png":::
+:::image type="content" source="media/network-protection-wcf-add-policy.png" alt-text="Shows network protection web content filtering add policy." lightbox="media/network-protection-wcf-add-policy.png":::
 
 For more information about reporting, see [Web content filtering](web-content-filtering.md).
 
@@ -206,11 +201,11 @@ For more information about reporting, see [Web content filtering](web-content-fi
 
 The Microsoft Defender for Cloud Apps / Cloud App Catalog identifies apps you would want end users to be warned upon accessing with Microsoft Defender XDR for Endpoint, and mark them as _Monitored_. The domains listed under monitored apps would be later synced to Microsoft Defender XDR for Endpoint:
 
-:::image type="content" source="images/network-protection-macos-mcas-monitored-apps.png" alt-text="Shows network protection mcas monitored apps." lightbox="images/network-protection-macos-mcas-monitored-apps.png":::
+:::image type="content" source="media/network-protection-macos-mcas-monitored-apps.png" alt-text="Shows network protection mcas monitored apps." lightbox="media/network-protection-macos-mcas-monitored-apps.png":::
 
 Within 10-15 minutes, these domains will be listed in Microsoft Defender XDR under Indicators > URLs/Domains with Action=Warn. Within the enforcement SLA (see details at the end of this article).
 
-:::image type="content" source="images/network-protection-macos-mcas-cloud-app-security.png" alt-text="Shows network protection mcas cloud app security." lightbox="images/network-protection-macos-mcas-cloud-app-security.png":::
+:::image type="content" source="media/network-protection-macos-mcas-cloud-app-security.png" alt-text="Shows network protection mcas cloud app security." lightbox="media/network-protection-macos-mcas-cloud-app-security.png":::
 
 ## See also
 
@@ -220,6 +215,5 @@ Within 10-15 minutes, these domains will be listed in Microsoft Defender XDR und
 - [Create indicators](manage-indicators.md)
 - [Web content filtering](web-content-filtering.md)
 - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
-
 
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

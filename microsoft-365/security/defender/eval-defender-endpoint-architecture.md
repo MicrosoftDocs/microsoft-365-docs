@@ -1,12 +1,8 @@
 ---
 title: Review Microsoft Defender for Endpoint architecture requirements and key concepts
 description: The technical diagram for Microsoft Defender for Endpoint in Microsoft Defender XDR will help you understand identity in Microsoft 365 before you build your trial lab or pilot environment.
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: 
   - NOCSH
 ms.author: dansimp
@@ -82,4 +78,4 @@ Microsoft Defender for Endpoint can also be integrated into other Security Infor
 Return to the overview for [Evaluate Microsoft Defender for Endpoint](eval-defender-endpoint-overview.md)
 
 Return to the overview for [Evaluate and pilot Microsoft Defender XDR](eval-overview.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

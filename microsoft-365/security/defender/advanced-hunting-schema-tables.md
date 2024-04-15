@@ -1,14 +1,9 @@
 ---
 title: Data tables in the Microsoft Defender XDR advanced hunting schema
-description: Learn about the tables in the advanced hunting schema to understand the data you can run threat hunting queries on
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, data
-search.product: eADQiWindows 10XVcnh
+description: Learn about the tables in the advanced hunting schema to understand the data you can run threat hunting queries on.
 search.appverid: met150
 ms.service: defender-xdr
 ms.subservice: adv-hunting
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords:
   - NOCSH
 ms.author: maccruz
@@ -20,12 +15,12 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: reference
-ms.date: 02/16/2021
+ms.date: 02/16/2024
 ---
 
 # Understand the advanced hunting schema
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -84,8 +79,10 @@ The following reference lists all the tables in the schema. Each table name link
 | **[DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md)** | Knowledge base of publicly disclosed vulnerabilities, including whether exploit code is publicly available |
 | **[EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md)** | Information about files attached to emails |
 | **[EmailEvents](advanced-hunting-emailevents-table.md)** | Microsoft 365 email events, including email delivery and blocking events |
-| **[EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** | Security events that occur post-delivery, after Microsoft 365 has delivered the emails to the recipient mailbox |
+| **[EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** | Security events that occur post-delivery, after Microsoft 365 delivers the emails to the recipient mailbox |
 | **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | Information about URLs on emails |
+| **[ExposureGraphEdges](advanced-hunting-exposuregraphedges-table.md)** | Microsoft Security Exposure Management exposure graph edge information provides visibility into relationships between entities and assets in the graph |
+| **[ExposureGraphNodes](advanced-hunting-exposuregraphnodes-table.md)** | Microsoft Security Exposure Management exposure graph node information, about organizational entities and their properties |
 | **[IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md)** | Events involving an on-premises domain controller running Active Directory (AD). This table covers a range of identity-related events and system events on the domain controller. |
 | **[IdentityInfo](advanced-hunting-identityinfo-table.md)** | Account information from various sources, including Microsoft Entra ID |
 | **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | Authentication events on Active Directory and Microsoft online services |
@@ -99,4 +96,4 @@ The following reference lists all the tables in the schema. Each table name link
 - [Use shared queries](advanced-hunting-shared-queries.md)
 - [Hunt across devices, emails, apps, and identities](advanced-hunting-query-emails-devices.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

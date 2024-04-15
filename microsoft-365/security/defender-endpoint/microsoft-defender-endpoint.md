@@ -1,34 +1,30 @@
 ---
 title: Microsoft Defender for Endpoint
 description: Microsoft Defender for Endpoint is an enterprise endpoint security platform that helps defend against advanced persistent threats.
-keywords: introduction to Microsoft Defender for Endpoint, introduction to Microsoft Defender for Endpoint, cybersecurity, advanced persistent threat, enterprise security, machine behavioral sensor, cloud security, analytics, threat intelligence, attack surface reduction, next-generation protection, automated investigation and remediation, microsoft threat experts, secure score, advanced hunting, Microsoft 365 Defender, cyber threat hunting
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: high
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier1
+- essentials-overview
 ms.custom: intro-overview
 ms.topic: conceptual
-ms.subservice: mde
 search.appverid: met150
-ms.date: 06/14/2023
+ms.date: 01/19/2024
 ---
 
 # Microsoft Defender for Endpoint
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](defender-endpoint-plan-1.md)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender Vulnerability Management](../defender-vulnerability-management/index.yml)
 - [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -43,7 +39,7 @@ Microsoft Defender for Endpoint is an enterprise endpoint security platform desi
 > [!TIP]
 > Microsoft Defender for Endpoint is available in two plans, Defender for Endpoint Plan 1 and Plan 2. A new Microsoft Defender Vulnerability Management add-on is now available for Plan 2.
 >
-> For more information on the features and capabilities included in each plan, including the new Defender Vulnerability Management add-on, see [Compare Microsoft Defender for Endpoint plans](defender-endpoint-plan-1-2.md).
+> For more information on the features and capabilities included in each plan, including the new Defender Vulnerability Management add-on, see [Microsoft 365 guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 <p><p>
 
@@ -62,19 +58,19 @@ Defender for Endpoint uses the following combination of technology built into Wi
 <center><h2>Microsoft Defender for Endpoint</center></h2>
 <table>
 <tr>
-<td><a href="#tvm"><center><img src="images/logo-mdvm.png" alt="Vulnerability Management"> <br><b> Core Defender Vulnerability Management</b></center></a></td>
-<td><a href="#asr"><center><img src="images/asr-icon.png" alt="Attack surface reduction"><br><b>Attack surface reduction</b></center></a></td>
-<td><center><a href="#ngp"><img src="images/ngp-icon.png" alt="Next-generation protection"><br> <b>Next-generation protection</b></a></center></td>
-<td><center><a href="#edr"><img src="images/edr-icon.png" alt="Endpoint detection and response"><br> <b>Endpoint detection and response</b></a></center></td>
-<td><center><a href="#ai"><img src="images/air-icon.png" alt="Automated investigation and remediation"><br> <b>Automated investigation and remediation</b></a></center></td>
-<td><center><a href="#mte"><img src="images/mte-icon.png" alt="Microsoft Threat Experts"><br> <b>Microsoft Threat Experts</b></a></center></td>
+<td><a href="#tvm"><center><img src="media/logo-mdvm.png" alt="Vulnerability Management"> <br><b> Core Defender Vulnerability Management</b></center></a></td>
+<td><a href="#asr"><center><img src="media/asr-icon.png" alt="Attack surface reduction"><br><b>Attack surface reduction</b></center></a></td>
+<td><center><a href="#ngp"><img src="media/ngp-icon.png" alt="Next-generation protection"><br> <b>Next-generation protection</b></a></center></td>
+<td><center><a href="#edr"><img src="media/edr-icon.png" alt="Endpoint detection and response"><br> <b>Endpoint detection and response</b></a></center></td>
+<td><center><a href="#ai"><img src="media/air-icon.png" alt="Automated investigation and remediation"><br> <b>Automated investigation and remediation</b></a></center></td>
+<td><center><a href="#mte"><img src="media/mte-icon.png" alt="Microsoft Threat Experts"><br> <b>Microsoft Threat Experts</b></a></center></td>
 </tr>
 <tr>
 <td colspan="7">
 <a href="#apis"><center><b>Centralized configuration and administration, APIs</a></b></center></td>
 </tr>
 <tr>
-<td colspan="7"><a href="#mtp"><center><b>Microsoft 365 Defender</a></center></b></td>
+<td colspan="7"><a href="#mtp"><center><b>Microsoft Defender XDR</a></center></b></td>
 </tr>
 </table>
 <br>
@@ -160,7 +156,7 @@ Defender for Endpoint directly integrates with various Microsoft solutions, incl
 - Microsoft Defender for Office
 - Skype for Business
 
-**[Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)**
+**[Microsoft Defender XDR](/microsoft-365/security/defender/microsoft-365-defender)**
 
 With Microsoft Defender XDR, Defender for Endpoint, and various Microsoft security solutions, form a unified pre- and post-breach enterprise defense suite that natively integrates across endpoint, identity, email, and applications to detect, prevent, investigate, and automatically respond to sophisticated attacks.
 

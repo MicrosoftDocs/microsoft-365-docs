@@ -1,10 +1,10 @@
 ---
 ms.date: 11/29/2023
 title: Manage topics in the topic center in Topics
-ms.author: daisyfeller
+ms.author: starscott
 author: daisyfell
-manager: pamgreen
-ms.reviewer: ergradel
+manager: elizapo
+ms.reviewer: daisyfeller
 audience: admin
 ms.topic: article
 ms.collection:

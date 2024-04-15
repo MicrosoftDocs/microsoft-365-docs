@@ -1,10 +1,10 @@
 ---
 ms.date: 04/20/2023
 title: Manage topic discovery in Topics
-ms.author: daisyfeller
+ms.author: mithunas
 author: daisyfell
-manager: pamgreen
-ms.reviewer: cjtan
+manager: elizapo
+ms.reviewer: daisyfeller
 audience: admin
 ms.topic: article
 ms.collection:

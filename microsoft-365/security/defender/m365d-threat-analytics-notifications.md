@@ -2,17 +2,13 @@
 title: Get email notifications for Threat analytics updates in Microsoft Defender XDR
 ms.reviewer: 
 description: Set up email notifications to get notified of new Threat analytics reports in Microsoft Defender XDR.
-keywords: threat analytics, risk evaluation, Microsoft 365 Defender, M365D, mitigation status, secure configuration, Microsoft Defender for Office 365, Microsoft Defender for Office 365 threat analytics, MDO threat analytics, integrated MDE and MDO threat analytics data, threat analytics data integration, integrated Microsoft 365 Defender threat analytics, notifications, email notifications   
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords:
 - NOCSH
 ms.author: diannegali
 author: diannegali
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security 
@@ -21,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: seo-marvel-apr2020
 search.appverid: met150
-ms.date: 09/18/2023
+ms.date: 03/28/2024
 ---
 
 # Get email notifications for Threat analytics updates in Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -38,7 +34,7 @@ You can set up email notifications that will send you updates on [threat analyti
 
 To set up email notifications for threat analytics reports, perform the following steps:
 
-1. Select **Settings** in the Microsoft Defender XDR sidebar. Select **Microsoft 365 Defender** from the list of settings.
+1. Select **Settings** in the Microsoft Defender XDR sidebar. Select **Microsoft Defender XDR** from the list of settings.
  
 ![Screenshot with "Settings" and "Microsoft Defender XDR" both highlighted in red](../../media/threat-analytics/ta_create_notification_0.png)
 
@@ -78,4 +74,4 @@ To set up email notifications for threat analytics reports, perform the followin
 - [Get email notifications on incidents](m365d-notifications-incidents.md)
 - [Get email notifications on response actions](m365d-response-actions-notifications.md)
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

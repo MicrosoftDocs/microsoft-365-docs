@@ -1,10 +1,10 @@
 ---
 ms.date: 04/20/2023
 title: Manage topic permissions in Topics
-ms.author: daisyfeller
+ms.author: mithunas
 author: daisyfell
-manager: pamgreen
-ms.reviewer: nkokoye
+manager: elizapo
+ms.reviewer: daisyfeller
 audience: admin
 ms.topic: article
 ms.collection:

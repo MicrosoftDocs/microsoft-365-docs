@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 5/12/2023
+ms.date: 03/11/2024
 audience: admin
 ms.topic: conceptual
 ms.custom: intro-overview
@@ -19,6 +19,9 @@ description: Learn about prebuilt models in Microsoft Syntex.
 ---
 
 # Overview of prebuilt document processing in Microsoft Syntex
+
+> [!NOTE]
+> Through June 2024, you can try out prebuilt document processing and other selected Syntex services at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For information and limitations, see [Try out Microsoft Syntex and explore its services](promo-syntex.md).
 
 In addition to [custom models](model-types-overview.md#custom-models), Microsoft Syntex provides *prebuilt models* to automate the extraction of information.
 

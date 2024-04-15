@@ -22,7 +22,7 @@ description: "Set how long user's session will last in Microsoft 365 before they
 > [!IMPORTANT]
 > Idle session timeout isn't available for Microsoft 365 operated by 21Vianet or Microsoft 365 Germany.
 
-Use idle session timeout to configure a policy on how long users are inactive in your organization before they are signed out of Microsoft 365 web apps. This helps protect sensitive company data and adds another layer of security for end users who work on non-company or shared devices.
+Use idle session timeout to configure a policy on how long users are inactive in your organization before they're signed out of Microsoft 365 web apps. This helps protect sensitive company data and adds another layer of security for end users who work on non-company or shared devices.
 
 When a user reaches the idle timeout session you've set, they'll get a notification that they're about to be signed out. They have to select to stay signed in or they'll be automatically signed out of all Microsoft 365 web apps.
 
@@ -76,7 +76,7 @@ When a user has been inactive in Microsoft 365 web apps for the time period you 
 
 - Once you turn on idle session timeout, it applies to your entire organization and can't be scoped to specific users, organizational units, or groups. Use [Microsoft Entra Conditional Access](/azure/active-directory/conditional-access/) policies for different users and groups to access SharePoint and Exchange Online.
 
-- Users must be inactive on all Microsoft 365 web app tabs for the configured duration. If the user is active on one tab (say OWA) while being inactive on another tab (say SPO), they will be considered active and will not be signed out.  
+- Users must be inactive on all Microsoft 365 web app tabs for the configured duration. If the user is active on one tab (say OWA) while being inactive on another tab (say SPO), they'll be considered active and won't be signed out.  
 
 - Users won’t get signed out in these cases.
     - If they get single sign-on (SSO) into the web app from the device joined account.
@@ -113,7 +113,7 @@ Idle session timeout isn't supported when third party cookies are disabled in th
 
 If you're already using existing Outlook web app and SharePoint Online idle timeout policies, you can still turn on idle session timeout feature. When you turn on the idle timeout policy, it takes precedence over the existing Outlook web app and SharePoint Online policies. We're planning to deprecate the existing Outlook web app and SharePoint Online policies in the near future. To better prepare your organization, we recommend you turn on idle session timeout.
 
-### What happens if I am inactive on an included Microsoft 365 web app, but active on a Microsoft web app or SaaS web app that doesn't have idle session timeout turned on?  
+### What happens if I'm inactive on an included Microsoft 365 web app, but active on a Microsoft web app or SaaS web app that doesn't have idle session time out turned on?  
 
 The following Microsoft 365 apps are supported.
 
@@ -137,7 +137,7 @@ The following Microsoft 365 apps are supported.
 
 If you're working on a different web app with the same account, the activity in that web app won't be applied to the idle session timeout.
 
-### I am active in Azure Portal, but I am logged out of other M365 Apps for inactivity.  Why am I logged out?
+### I'm active in Azure Portal, but I'm logged out of other M365 Apps for inactivity.  Why am I logged out?
 
 Azure Portal supports a similar inactivity feature, but is supported by Azure Portal only. For more information, see [Azure Portal: Signing-Out + Notification](/azure/azure-portal/set-preferences#signing-out--notifications).
 
@@ -145,12 +145,12 @@ Azure Portal supports a similar inactivity feature, but is supported by Azure Po
 
 Update the policy:
 
-1. In the Microsoft 365 admin center, select **Org settings**, go to the **Security & Privacy** tab and select **Idle session timeout**.
+1. In the Microsoft 365 admin center, select **Settings** > **Org settings**, go to the **Security & Privacy** tab and select **Idle session timeout**.
 
 2. In the dropdown menu, select a different timeout value and then **Save**.  
 
 Delete the policy:
 
-1. In the Microsoft 365 admin center, select **Org settings**, go to the **Security & Privacy** tab and select **Idle session timeout**.
+1. In the Microsoft 365 admin center, select **Settings** > **Org settings**, go to the **Security & Privacy** tab and select **Idle session timeout**.
 
 2. Uncheck **Turn on to set the period of inactivity for users to be signed off of Microsoft 365 apps** and select **Save**.

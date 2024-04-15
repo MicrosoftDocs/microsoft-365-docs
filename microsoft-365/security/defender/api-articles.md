@@ -1,12 +1,7 @@
 ---
 title: Other security and threat protection APIs
 description: View a list of APIs related to Microsoft security and threat protection products.
-keywords: api, security, threat protection, mde, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, cloud app security
-search.product: eADQiWindows 10XVcnh
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: 
   - NOCSH
 ms.author: macapara
@@ -23,12 +18,12 @@ search.appverid:
   - MOE150
   - MET150
 ms.custom: api
-ms.date: 02/08/2023
+ms.date: 02/08/2024
 ---
 
 # Other security and threat protection APIs
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -45,4 +40,4 @@ The following resources provide more information about APIs available for other 
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/apis-intro)
 - [Microsoft Defender for Office 365](/office/office-365-management-api/)
 - [Microsoft Defender for Cloud Apps](/cloud-app-security/api-introduction)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

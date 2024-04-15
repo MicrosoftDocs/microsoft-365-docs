@@ -1,22 +1,18 @@
 ---
 title: Hardware and firmware assessment methods and properties per device
 description: Provides information about the Firmware and Hardware APIs that pull "Microsoft Defender Vulnerability Management" data. There are different API calls to get different types of data. In general, each API call contains the requisite data for devices in your organization.
-keywords: api, apis, export assessment, per device assessment, per machine assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report, software vulnerabilities assessment, software vulnerability report, vulnerability report by machine, firmware and hardware assessment 
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.service: defender-endpoint
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
 - must-keep
 ms.topic: reference
-ms.subservice: mde
+ms.subservice: reference
 ms.custom: api
 search.appverid: met150
 ms.date: 11/24/2022
@@ -24,7 +20,7 @@ ms.date: 11/24/2022
 
 # Export Hardware and firmware assessment inventory per device
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -46,7 +42,7 @@ There are different API calls to get different types of data. In general, each A
 Data that is collected using either '_JSON response_ or _via files_' is the current snapshot of the current state. It doesn't contain historic data. To collect historic data, customers must save the data in their own data storages.
 
 > [!NOTE]
-> Unless indicated otherwise, all export hardware and firmware assessment assessment methods listed are **_full export_** and **_by device_** (also referred to as **_per device_**)
+> Unless indicated otherwise, all export hardware and firmware assessment methods listed are **_full export_** and **_by device_** (also referred to as **_per device_**)
 
 ## 1. Export hardware and firmware assessment (JSON response)
 

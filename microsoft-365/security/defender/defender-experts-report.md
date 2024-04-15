@@ -2,13 +2,9 @@
 title: Understand the Defender Experts for Hunting report in Microsoft Defender XDR
 ms.reviewer: 
 description: The Defender Experts for Hunting service publishes reports to help you understand all the threats the hunting service surfaced in your environment
-keywords: analyst report, DEX report, DEX hunting report, defender experts for hunting report, detections, defender experts notification, hunting, notifications, threat categories, hunting reports, suspicious activities report, security weak spots, identify threats
 search.appverid: met150
 ms.service: defender-experts
 ms.subservice: dex-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords:
 - NOCSH
 ms.author: vpattnaik
@@ -19,13 +15,14 @@ audience: ITPro
 ms.collection: 
 - m365-security 
 - tier1
+- essentials-manage
 ms.topic: conceptual
 ms.date: 10/17/2023
 ---
 
 # Understand the Defender Experts for Hunting report in Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -80,4 +77,4 @@ The **Top trending suspicious activities** section of the report identifies up t
 By showing the most critical and frequently observed activities, you can assess and evaluate their impact and develop strategies to prevent or mitigate potential threats to your environment
 
 Select **View details** in each card to open a flyout panel detailing the impacted devices and users. If applicable, the page also provides links to view related Defender Expert Notifications.
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

@@ -1,12 +1,7 @@
 ---
 title: Create an app to access Microsoft Defender XDR without a user
 description: Learn how to create an app to access Microsoft Defender XDR without a user.
-keywords: app, access, api, create
-search.product: eADQiWindows 10XVcnh
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: 
   - NOCSH
 ms.author: macapara
@@ -23,12 +18,12 @@ search.appverid:
   - MOE150
   - MET150
 ms.custom: api
-ms.date: 02/16/2021
+ms.date: 02/16/2024
 ---
 
 # Create an app to access Microsoft Defender XDR without a user
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -282,4 +277,4 @@ The following example shows how to send a request to get a list of incidents **u
 - [Understand error codes](api-error-codes.md)
 - [Manage secrets in your server apps with Azure Key Vault](/training/modules/manage-secrets-with-azure-key-vault/)
 - [OAuth 2.0 authorization for user sign in and API access](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

@@ -1,10 +1,10 @@
 ---
 ms.date: 03/14/2023
 title: Change the name of the topic center in Topics
-ms.author: daisyfeller
+ms.author: mithunas
 author: daisyfell
-manager: pamgreen
-ms.reviewer: nkokoye
+manager: elizapo
+ms.reviewer: daisyfeller
 audience: admin
 ms.topic: article
 ms.collection:

@@ -23,7 +23,7 @@ ms.date: 02/08/2023
 
 # Configure Microsoft Defender XDR to stream Advanced Hunting events to your Azure Event Hub
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -64,7 +64,7 @@ Prior to configuring Microsoft Defender XDR to stream data to Event Hubs, ensure
 
    To get your **Event Hub resource ID**, go to your Azure Event Hubs namespace page on [Azure](https://ms.portal.azure.com/) > **Properties** tab > copy the text under **Resource ID**:
 
-   :::image type="content" source="../defender-endpoint/images/event-hub-resource-id.png" alt-text="An Event Hub resource ID" lightbox="../defender-endpoint/images/event-hub-resource-id.png":::
+   :::image type="content" source="../defender-endpoint/media/event-hub-resource-id.png" alt-text="An Event Hub resource ID" lightbox="../defender-endpoint/media/event-hub-resource-id.png":::
 
 8. Go to the [Supported Microsoft Defender XDR event types in event streaming API](supported-event-types.md) to review the support status of event types in the Microsoft 365 Streaming API.
 
@@ -76,10 +76,10 @@ Prior to configuring Microsoft Defender XDR to stream data to Event Hubs, ensure
 {
    "records": [
                {
-                  "time": "<The time Microsoft 365 Defender received the event>"
+                  "time": "<The time Microsoft Defender XDR received the event>"
                   "tenantId": "<The Id of the tenant that the event belongs to>"
                   "category": "<The Advanced Hunting table name with 'AdvancedHunting-' prefix>"
-                  "properties": { <Microsoft 365 Defender Advanced Hunting event as Json> }
+                  "properties": { <Microsoft Defender XDR Advanced Hunting event as Json> }
                }
                ...
             ]
@@ -110,7 +110,7 @@ To get the data types for event properties, do the following steps:
 
 - Here's an example for Device Info event:
 
-  :::image type="content" source="../defender-endpoint/images/machine-info-datatype-example.png" alt-text="An example query for device info" lightbox="../defender-endpoint/images/machine-info-datatype-example.png":::
+  :::image type="content" source="../defender-endpoint/media/machine-info-datatype-example.png" alt-text="An example query for device info" lightbox="../defender-endpoint/media/machine-info-datatype-example.png":::
 
 ## Estimating initial Event Hub capacity
 The following Advanced Hunting query can help provide a rough estimate of data volume throughput and initial event hub capacity based on events/sec and estimated MB/sec. We recommend running the query during regular business hours so as to capture 'real' throughput.
@@ -140,4 +140,4 @@ For more information, see [Log Analytics workspace data export in Azure Monitor]
 - [Stream Microsoft Defender XDR events to your Azure storage account](streaming-api-storage.md)
 - [Azure Event Hubs documentation](/azure/event-hubs/)
 - [Troubleshoot connectivity issues - Azure Event Hubs](/azure/event-hubs/troubleshooting-guide)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

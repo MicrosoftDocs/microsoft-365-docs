@@ -26,7 +26,7 @@ ms.date: 02/16/2021
 
 # Assess your security posture with Microsoft Secure Score
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 Microsoft Secure Score is a measurement of an organization's security posture, with a higher number indicating more recommended actions taken. It can be found at https://security.microsoft.com/securescore in the [Microsoft Defender portal](microsoft-365-defender.md).
 
@@ -75,7 +75,7 @@ When you select a specific recommended action, a full page flyout appears.
 
 To complete the action, you have a few options:
 
-- Select **Manage in Microsoft 365 Defender** to go to the configuration screen and make the change. You'll then gain the points that the action is worth, visible in the flyout. Points generally take about 24 hours to update.
+- Select **Manage in Microsoft Defender XDR** to go to the configuration screen and make the change. You'll then gain the points that the action is worth, visible in the flyout. Points generally take about 24 hours to update.
 
 - Select **Share** to copy the direct link to the recommended action. You can also choose the platform to share the link, such as email, Microsoft Teams, or Microsoft Planner.
 
@@ -125,4 +125,4 @@ If you have any issues, let us know by posting in the [Security, Privacy & Compl
 - [Track your Microsoft Secure Score history and meet goals](microsoft-secure-score-history-metrics-trends.md)
 - [What's coming](microsoft-secure-score-whats-coming.md)
 - [What's new](microsoft-secure-score-whats-new.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

@@ -1,10 +1,10 @@
 ---
 ms.date: 06/12/2023
 title: Export topics created in Viva Engage with PowerShell
-ms.author: daisyfeller
+ms.author: ergradel
 author: daisyfell
-manager: pamgreen
-ms.reviewer: ergradel
+manager: elizapo
+ms.reviewer: daisyfeller
 audience: admin
 ms.topic: article
 ms.collection:

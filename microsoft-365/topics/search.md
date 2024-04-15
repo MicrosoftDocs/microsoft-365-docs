@@ -1,10 +1,10 @@
 ---
 ms.date: 11/15/2021
 title: Use Microsoft Search to find topics in Topics
-ms.author: daisyfeller
+ms.author: ninay
 author: daisyfell
-manager: pamgreen
-ms.reviewer: cjtan
+manager: elizapo
+ms.reviewer: daisyfeller
 audience: admin
 ms.topic: article
 ms.collection:
@@ -31,8 +31,8 @@ The topic answer will display:
 - Topic name
 - Alternate names: Alternate names or acronyms for the topic.
 - Definition: Description of the topic provided by AI or manually added by a person.
-- Suggested or Pinned people: People suggested by AI or pinned to the topic by a person
-- Suggested or Pinned resources: Files, pages, or sites either suggested by AI or pinned to the topic by a person.
+- Suggested or Confirmed people: People suggested by AI or added to the topic by a person
+- Suggested or Confirmed resources: Files, pages, or sites either suggested by AI or added to the topic by a person.
 
    ![Screenshot of a topic showing up in Search.](../media/knowledge-management/search-topic-answer.png)
 

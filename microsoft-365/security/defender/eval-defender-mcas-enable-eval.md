@@ -1,12 +1,8 @@
 ---
 title: Enable the evaluation environment for Microsoft Defender for Cloud Apps
 description: Learn the architecture of Defender for Cloud Apps within Microsoft Defender for Office 365 and understand interactions between the Microsoft Defender XDR products.
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: 
   - NOCSH
 ms.author: bcarter
@@ -101,4 +97,4 @@ Step 3 of 3: [Pilot Microsoft Defender for Cloud Apps](eval-defender-mcas-pilot.
 Return to the overview for [Evaluate Microsoft Defender for Cloud Apps](eval-defender-mcas-overview.md)
 
 Return to the overview for [Evaluate and pilot Microsoft Defender XDR](eval-overview.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

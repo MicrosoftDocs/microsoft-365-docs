@@ -2,12 +2,8 @@
 title: What is Microsoft Defender Experts for XDR offering
 ms.reviewer:
 description: Defender Experts for XDR augments your SOC with a combination of automation and human expertise
-keywords: XDR, Xtended detection and response, defender experts for xdr, Microsoft Defender Experts for XDR, managed threat hunting, managed detection and response (MDR) service, service delivery manager, Microsoft Defender Experts for hunting, threat hunting and analysis.
 ms.service: defender-experts
 ms.subservice: dex-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: vpattnaik
 author: vpattnai
 ms.localizationpriority: medium
@@ -16,6 +12,7 @@ audience: ITPro
 ms.collection:
   - m365-security
   - tier1
+  - essentials-overview
 ms.topic: conceptual
 search.appverid: met150
 ms.date: 08/08/2023
@@ -52,4 +49,4 @@ In addition to the constantly updated research and intelligence tailored for the
 ### Next step
 
 [Before you begin](before-you-begin-xdr.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

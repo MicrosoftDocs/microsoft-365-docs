@@ -1,8 +1,8 @@
 ---
 title: OneDrive Cross-tenant OneDrive migration Step 6
-ms.author: jhendr
-author: JoanneHendrickson
-manager: serdars
+ms.author: heidip
+author: MicrosoftHeidi
+manager: jtremper
 ms.date: 10/13/2023
 recommendations: true
 audience: ITPro
@@ -66,7 +66,7 @@ These commands can be useful when planning bulk batches of OneDrive migrations. 
 
 ## OneDrive status pre-migration
 
-Before starting the migration, the users current source OneDrive status is similar to the example below.  This example is from the users source tenant, showing their current files and folders.
+Before you start the migration, the users current source OneDrive status is similar to the example below.  This example is from the users source tenant, showing their current files and folders.
 
 :::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-status-premigration.png" alt-text="pre-migration status":::
 
@@ -140,13 +140,13 @@ Get-SPOCrossTenantUserContentMoveState -PartnerCrossTenantHostURL https://ttestt
 |Scheduled|The migration is now in the queue and is scheduled to run when a slot becomes available.|
 |ReadytoTrigger|The Migration is in its preflight stage and will start the Migration shortly.|
 |InProgress|The migration is in progress in one of the following states: </br>- Validation </br>- Backup </br>- Restore </br>- Cleanup|
-|Success|The Migration has completed successfully.|
+|Success|The Migration completed successfully.|
 |Rescheduled|The migration may not have completed and has been requeued for another pass.|
 |Failed|The migration failed to complete.|
 
 ## Post-migration status checks
 
-**Target tenant**: After the migration has successfully completed, check the status of the user on the target tenant by logging into their new OneDrive account.
+**Target tenant**: After the migration successfully completes, check the status of the user on the target tenant by logging into their new OneDrive account.
 
 **Source tenant**: Since the user has successfully migrated to the target tenant, they no longer have an active OneDrive account on the source.
 

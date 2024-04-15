@@ -1,13 +1,9 @@
 ---
 title: Advanced hunting example for Microsoft Defender for Office 365
 description: Get started searching for email threats using advanced hunting
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, custom detections, schema, kusto
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.subservice: adv-hunting
 f1.keywords: 
   - NOCSH
 ms.author: dansimp
@@ -24,8 +20,7 @@ ms.date: 9/13/2023
 
 # Advanced hunting example for Microsoft Defender for Office 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 - Microsoft Defender XDR
@@ -44,7 +39,7 @@ Quickly navigating to Kusto query language to hunt for issues is an advantage of
    ```kusto
    EmailPostDeliveryEvents 
    | where Timestamp > ago(7d)
-   //List malicious emails that were not zapped successfullyconverge-2-endpoints-new.png
+   //List malicious emails that were not zapped successfully
    | where ActionType has "ZAP" and ActionResult == "Error"
    | project ZapTime = Timestamp, ActionType, NetworkMessageId , RecipientEmailAddress 
    //Get logon activity of recipients using RecipientEmailAddress and AccountUpn
@@ -62,6 +57,7 @@ Quickly navigating to Kusto query language to hunt for issues is an advantage of
 The data from this query appears in the **Results** panel below the query itself. Results include information like `DeviceName`, `AccountDisplayName`, and `ZapTime` in a customizable result set. Results can also be exported for your records. To save the query for reuse, select **Save** \> **Save As** to add the query to your list of queries, shared, or community queries.
 
 ## Related information
+
 - [Advanced hunting best practices](advanced-hunting-best-practices.md)
 - [Overview - Advanced hunting](advanced-hunting-overview.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

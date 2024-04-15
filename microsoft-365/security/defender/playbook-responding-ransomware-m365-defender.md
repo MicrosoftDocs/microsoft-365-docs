@@ -19,7 +19,7 @@ f1.keywords:               NOCSH
 ---
 # Responding to ransomware attacks
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender-for-office.md)]
 
 When you suspect you were or are currently under a ransomware attack, establish secure communications with your incident response team immediately. They can perform the following response phases to disrupt the attack and mitigate the damage:
 
@@ -27,7 +27,7 @@ When you suspect you were or are currently under a ransomware attack, establish 
 * Eradication and recovery
 
 This article provides a generalized playbook for responding to ransomware attacks. Consider adapting the described steps and tasks in this article to your own security operations playbook.
-NOTE: For information about preventing ransomware attacks, see [Rapidly protect against ransomware and extortion](/security/compass/protect-against-ransomware).
+NOTE: For information about preventing ransomware attacks, see [Quickly deploy ransomware preventions](/security/ransomware/protect-against-ransomware).
 
 ## Containment
 
@@ -54,7 +54,7 @@ Run through this list of questions and tasks to discover the extent of the attac
 
 Run through this list of tasks and questions to protect existing systems from attack:
 
-* If you have online backups, consider disconnecting the backup system from the network until you're confident that the attack is contained, see [Backup and restore plan to protect against ransomware | Microsoft Docs](/security/compass/backup-plan-to-protect-against-ransomware).
+* If you have online backups, consider disconnecting the backup system from the network until you're confident that the attack is contained, see [Backup and restore plan to protect against ransomware | Microsoft Docs](/azure/security/fundamentals/backup-plan-to-protect-against-ransomware).
 * If you're experiencing or expect an imminent and active ransomware deployment:
   * [Suspend privileged and local accounts](./investigate-users.md) that you suspect are part of the attack. You can do this from the **Users** tab in the properties of the incident in the Microsoft Defender portal.
   * Stop all [remote logon sessions](/defender-for-identity/playbook-domain-dominance).
@@ -257,4 +257,4 @@ Recover deleted email.
 ### Step 9: Re-enable Exchange ActiveSync and OneDrive sync
 
 * After you've cleaned your computers and devices and recovered the data, you can re-enable Exchange ActiveSync and OneDrive sync that you previously disabled in step 3 of containment.
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

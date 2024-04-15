@@ -1,7 +1,7 @@
 ---
 title: Set up your Microsoft Defender XDR trial lab or pilot environment
 description: Access Microsoft Defender portal then set up your Microsoft Defender XDR trial lab environment
-keywords: Microsoft 365 Defender trial setup, Microsoft 365 Defender pilot setup, try Microsoft 365 Defender, Microsoft 365 Defender evaluation lab setup
+keywords: Microsoft Defender XDR trial setup, Microsoft Defender XDR pilot setup, try Microsoft Defender XDR, Microsoft Defender XDR evaluation lab setup
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
@@ -25,7 +25,7 @@ ms.date: 02/17/2021
 
 # Set up your Microsoft Defender XDR trial in a lab environment
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 - Microsoft Defender XDR
@@ -139,4 +139,4 @@ This topic guides you to set up a dedicated lab environment. For information on 
 
 |[Phase 3: Configure & Onboard](config-m365d-eval.md) | Configure each Microsoft Defender XDR pillar for your Microsoft Defender XDR trial lab or pilot environment and onboard your endpoints.
 |:-------|:-----|
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

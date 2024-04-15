@@ -1,12 +1,8 @@
 ---
 title: Pilot Microsoft Defender for Office 365, use the evaluation in your production environment
 description: Steps to pilot your Evaluation with groups of active and existing users in order to properly test the features of Microsoft Defender for Office 365.
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords:
   - NOCSH
 ms.author: tracyp
@@ -62,7 +58,7 @@ Distribution groups can be created and defined directly in Exchange Online or sy
 
    :::image type="content" source="../../media/mdo-eval/3-mdo-eval-pilot-group-type.png" alt-text=" The Choose a group type section." lightbox="../../media/mdo-eval/3-mdo-eval-pilot-group-type.png":::
 
-5. Give the group a **Name** and and optional **Description**, and then click Next.
+5. Give the group a **Name** and optional **Description**, and then click Next.
 
    :::image type="content" source="../../media/mdo-eval/4_mdo-eval-pilot-set-up-basics.png" alt-text="The Set up the basics section." lightbox="../../media/mdo-eval/4_mdo-eval-pilot-set-up-basics.png":::
 
@@ -96,7 +92,7 @@ For example, an EOP condition for pilot evaluations could be applied if the reci
 
 Likewise, a Defender for Office 365 condition for pilot evaluations could be applied if the recipients are *members* of a defined *Defender for Office 365 Standard Protection* group and then managed by adding / removing accounts via the group.
 
-For complete instructions, see [Use the Microsoft Defender portal to assign Standard and Strict preset security policies to users](../office-365-security/preset-security-policies.md#use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users).
+For complete instructions, see [Use the Microsoft Defender portal to assign Standard and Strict preset security policies to users](../office-365-security/preset-security-policies.md#use-the-microsoft-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users).
 
 ### Configure custom protection policies
 
@@ -112,7 +108,7 @@ Now that your pilot is set up and configured, it's helpful to become familiar wi
 
 |Capability|Description|More information|
 |---|---|---|
-|Threat Explorer|Threat Explorer is a powerful near real-time tool to help Security Operations teams investigate and respond to threats and displays information about suspected malware and phish in email and files in Office 365, as well as other security threats and risks to your organization.|[Views in Threat Explorer and real-time detections](../office-365-security/threat-explorer-views.md)|
+|Threat Explorer|Threat Explorer is a powerful near real-time tool to help Security Operations teams investigate and respond to threats and displays information about detected malware and phishing in email and files in Office 365, as well as other security threats and risks to your organization.|[About Threat Explorer](../office-365-security/threat-explorer-real-time-detections-about.md)|
 |Attack simulation training|You can use Attack simulation training in the Microsoft Defender portal to run realistic attack scenarios in your organization, which help you identify and find vulnerable users before a real attack impacts your environment.|[Get started using Attack simulation training](../office-365-security/attack-simulation-training-get-started.md)|
 |Reports dashboard|On the left navigation menu, click Reports and expand the Email & collaboration heading. The Email & collaboration reports are about spotting security trends some of which will allow you to take action (through buttons like 'Go to submissions'), and others that will show trends. These metrics are generated automatically.|[View email security reports in the Microsoft Defender portal](../office-365-security/reports-email-security.md) <br/><br/> [View Defender for Office 365 reports in the Microsoft Defender portal](../office-365-security/reports-defender-for-office-365.md)|
 
@@ -124,4 +120,4 @@ Return to the overview for [Evaluate Microsoft Defender for Office 365](eval-def
 
 Return to the overview for [Evaluate and pilot Microsoft Defender XDR](eval-overview.md)
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

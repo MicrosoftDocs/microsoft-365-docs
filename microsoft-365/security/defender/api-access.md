@@ -1,12 +1,7 @@
 ---
 title: Access the Microsoft Defender XDR APIs
 description: Learn how to access the Microsoft Defender XDR APIs
-keywords: access, apis, application context, user context, aad application, access token
-search.product: eADQiWindows 10XVcnh
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: 
   - NOCSH
 ms.author: macapara
@@ -23,12 +18,12 @@ search.appverid:
   - MOE150
   - MET150
 ms.custom: api
-ms.date: 02/08/2023
+ms.date: 02/08/2024
 ---
 
 # Access the Microsoft Defender XDR APIs
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -63,7 +58,7 @@ Use this context for apps that run without a signed-in user present, such as bac
 4. Get a security token using the application and its key.
 5. Use the token to access the Microsoft Defender XDR API.
 
-For more information, see **[Create an app to access Microsoft 365 Defender without a user](api-create-app-web.md)**.
+For more information, see **[Create an app to access Microsoft Defender XDR without a user](api-create-app-web.md)**.
 
 ## User context
 
@@ -74,7 +69,7 @@ Use this context to perform actions on behalf of a single user.
 3. Get a security token using the user credentials for the application.
 4. Use the token to access the Microsoft Defender XDR API.
 
-For more information, see **[Create an app to access Microsoft 365 Defender APIs on behalf of a user](api-create-app-user-context.md)**.
+For more information, see **[Create an app to access Microsoft Defender XDR APIs on behalf of a user](api-create-app-user-context.md)**.
 
 ## Partner context
 
@@ -86,7 +81,7 @@ Use this context when you need to provide an app to many users across [multiple 
 4. Get a security token using user credentials based on a customer's tenant ID.
 5. Use the token to access the Microsoft Defender XDR API.
 
-For more information, see **[Create an app with partner access to Microsoft 365 Defender APIs](api-partner-access.md)**.
+For more information, see **[Create an app with partner access to Microsoft Defender XDR APIs](api-partner-access.md)**.
 
 ## Related articles
 
@@ -96,4 +91,4 @@ For more information, see **[Create an app with partner access to Microsoft 365 
 - [OAuth 2.0 authorization for user sign in and API access](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
 - [Manage secrets in your server apps with Azure Key Vault](/training/modules/manage-secrets-with-azure-key-vault/)
 - [Create a 'Hello world' application that accesses the Microsoft 365 APIs](api-hello-world.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

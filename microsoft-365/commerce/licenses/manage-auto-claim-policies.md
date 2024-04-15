@@ -9,6 +9,7 @@ ms.reviewer: sinakassaw, nicholak
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
 ms.collection: 
 - Tier1
@@ -18,9 +19,10 @@ ms.collection:
 ms.custom: 
 - commerce_licensing
 - AdminSurgePortfolio
+- admindeeplinkMAC
 description: "Learn how to create and manage auto-claim policies that automatically assign licenses to users for certain apps."
 search.appverid: MET150
-ms.date: 10/13/2023
+ms.date: 02/12/2024
 ---
 
 # Manage auto-claim policies in the Microsoft 365 admin center
@@ -40,6 +42,9 @@ You must be a Global admin to create and manage auto-claim policies. For more in
 ## Turn the auto-claim policy feature on or off
 
 By default, the auto-claim policy feature is turned off. Before you can use the feature, you must first turn it on in the Microsoft 365 admin center. After you turn on the feature, you can create an auto-claim policy.
+
+> [!NOTE]
+> In some cases, the auto-claim feature is turned on by default, and the auto-claim policies for certain apps and services are preconfigured.
 
 ### Turn on auto-claim policies
 
@@ -172,6 +177,29 @@ If a user lacks a standalone Power Apps license and launches an app that require
 
 If a user without a standalone Power Apps license launches an app within a Managed environment, they're automatically granted a Power Apps per user license.
 
+## Auto-claim policies for Microsoft Power Automate
+
+Auto-claim for Power Automate licenses is supported for the following plans:
+
+- Power Automate premium plan
+- Power Automate per user plan
+
+When the auto-claim policy is configured and a user doesn't have a license for the product, the user is automatically assigned a license when they take any of the following actions:
+
+**For Power Automate per user plans**
+
+- Trigger a premium cloud flow 
+- Save a premium cloud flow
+- Turn on a premium cloud flow
+
+**For Power Automate premium plans**
+
+In addition to the actions listed in **For Power Automate per user plans**, the following actions also apply:
+
+- Trigger a premium cloud flow with Attended Robotic Process Automation (RPA)
+- Save a premium cloud flow with Attended RPA
+- Turn on a premium cloud flow with Attended RPA
+
 ## Next steps
 
 You can periodically return to the **Auto-claim policy** tab to see a list of users who have claimed licenses under the policies you created.
@@ -180,4 +208,4 @@ You can periodically return to the **Auto-claim policy** tab to see a list of us
 
 [Assign licenses to users](../../admin/manage/assign-licenses-to-users.md) (article)\
 [Buy or remove subscription licenses](buy-licenses.md) (article)\
-u[Understand subscriptions and licenses in Microsoft 365 for business](subscriptions-and-licenses.md) (article)
+[Understand subscriptions and licenses in Microsoft 365 for business](subscriptions-and-licenses.md) (article)

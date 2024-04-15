@@ -1,197 +1,149 @@
 ---
 title: Why do I need Microsoft Defender for Office 365?
-ms.author: tracyp
-author: msfttracyp
-manager: dansimp
+ms.author: chrisda
+author: chrisda
+manager: deniseb
 audience: Admin
 ms.topic: conceptual
 ms.localizationpriority: high
-search.appverid:
+search.appverid: 
   - MET150
   - MOE150
 ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
-ms.collection:
+ms.collection: 
   - m365-security
   - tier1
   - highpri
+  - essentials-overview
 ms.custom:
   - seo-marvel-apr2020
   - intro-overview
   - curated-apr-2023
 description: Is Microsoft Defender for Office 365 worth it? Let's find out.
-ms.subservice: mdo
-ms.service: microsoft-365-security
-ms.date: 9/14/2023
+ms.service: defender-office-365
+adobe-target: true
+ms.date: 4/1/2024
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 1 and Plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # Microsoft Defender for Office 365 overview
 
-> [!IMPORTANT]
-> **If Safe Links pages is blocking your access**, go here for info: [Advanced Outlook.com security for Microsoft 365 subscribers](https://support.microsoft.com/office/advanced-outlook-com-security-for-microsoft-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2?storagetype=live).
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-**Microsoft Defender for Office 365 is a seamless integration into your Office 365 subscription** that protects against threats in email, links (URLS), attachments, or collaboration tools.
+Microsoft Defender for Office 365 is a seamless integration into Microsoft 365 subscriptions that protects against threats in email, links (URLS), file attachments, and collaboration tools. This article explains the _protection ladder_ in Microsoft 365 organizations. The protection ladder starts with Exchange Online Protection (EOP) and continues through to Defender for Office 365, which includes Defender for Office 365 Plan 1 and Defender for Office 365 Plan 2.
 
-For email threats that are identified after the fact, Zero-hour autopurge (ZAP) can remove those messages from user mailboxes. Automated Investigation and Response (AIR) allows you to automate monitoring and remediation, making it more efficient for security operations (SecOps) teams. The deep integration with Office 365 and robust reporting ensures that you're always on top of security operations.
-
-Defender for Office 365 safeguards organizations against malicious threats by providing admins and SecOps teams a wide range of capabilities. Users, admins, and SecOps personnel benefit from these features from the beginning of the organization. For example:
-
-- **[Preset security policies can configure everything for you](preset-security-policies.md)**: The protection policies included in Standard and Strict preset security policies contain our recommended settings. All you need to do is decide who gets the protection (by user, group, domain, or all recipients) and specify the entries and optional exceptions for user and domain impersonation protection. For instructions, see [Use the Microsoft Defender portal to assign Standard and Strict preset security policies to users](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users).
-
-- **[Threat protection policies](#defender-for-office-365-protection-policies)**: Define threat-protection policies so admins can set the right level of protection for the organization.
-
-- **[Reports](#view-defender-for-office-365-reports)**: SecOps personnel can view real-time reports to monitor Defender for Office 365 performance in the organization.
-
-- **[Threat investigation and response capabilities](#best-of-class-threat-investigation-and-response-capabilities)**: These tools are leading-edge and allow you to investigate, understand, simulate, and prevent threats.
-
-- **[Automated investigation and response capabilities](air-about.md)**: Save time and effort investigating and mitigating threats by automating what you can.
-
-## Interactive guide to Defender for Office 365
-
-If you need more information, this interactive guide shows why Defender for Office 365 is worth it, and give examples on how to safeguard your organization.
-
-You can also see how Defender for Office 365 can help you define protection policies, analyze threats to your organization, and respond to attacks.
-
-[Check out the interactive guide](https://aka.ms/MSDO-IG)
-
-## What is the difference between Plan 1 and Plan 2 Defender for Office 365?
-
-For more information on what's included in Microsoft 365 Plan 1 and Plan 2, see [this article](mdo-security-comparison.md). Not only does this article quickly spell out what makes up the two products, but it also  describes the ***emphasis*** of each part of *Defender for Office 365* using a familiar structure: *Protect*, *Detect*, *Investigate*, and *Respond*.
-
-Graphics and short, scannable paragraphs answer questions like:
-
-- What is *Plan 1* optimized to do for you?
-- What's the biggest benefit to your company in *Plan 2*?
-- Who has *Exchange Online Protection* and what's it optimized to do?
-
-So, don't miss it!
-
-## How do you get started?
-
-There are two methods to enhance the default protection that's provided in Defender for Office 365:
-
-- **Preset security policies**: We **recommended** that you turn on and use the Standard and/or strict [preset security policies](preset-security-policies.md). The Standard and Strict profiles contain anti-malware, anti-spam, anti-phishing, Safe Links, and Safe Attachments policies that are pre-configured with our recommended standard and strict settings based on observations from the Microsoft datacenters.
-
-  For a quick comparison of the differences between Standard and Strict, see the table at [Policy settings in preset security policies](preset-security-policies.md#policy-settings-in-preset-security-policies). For a complete comparison of all policy values, see the tables in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md).
-
-  And, we can tune the protection in preset security policies automatically if the security landscape changes (for example, we might change an action from deliver to Junk to quarantine if the threat level increases). For more information and set up instructions, see [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md#preset-security-policies-in-eop-and-microsoft-defender-for-office-365).
-
-- **Manual setup**: Most of the policy settings in preset security policies are locked down. If your organization requires security settings that are *different* from or *undefined* in preset security policies, you can go manual. Keep in mind that anti-malware, anti-spam, anti-phishing, outbound spam, and connection filtering have default policies that are always on and apply to all recipients (and you can change any of the settings). The settings and values in the default policies are described in the tables in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md).
-
-  You can also create custom policies to meet your business needs. For a discussion about when or why to use preset vs. custom policies, see [Determine your protection policy strategy](mdo-deployment-guide.md#determine-your-protection-policy-strategy).
+This article is intended for Security Operations (SecOps) personnel, admins in Microsoft 365, or decisions makers who want to learn more about Defender for Office 365.
 
 > [!TIP]
-> Defender for Office 365 comes in two different licenses:
+> If you're using **Outlook.com**, **Microsoft 365 Family**, or **Microsoft 365 Personal**, and need information about _Safelinks_ or _advanced attachment scanning_, see [Advanced Outlook.com security for Microsoft 365 subscribers](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 >
-> - You have **Plan 1** if you have **Real-time detections** at <https://security.microsoft.com/realtimereports>.
-> - You have **Plan 2**, if you have **Threat Explorer** (also called *Explorer*) at <https://security.microsoft.com/threatexplorer> and **Attack simulation training** at <https://security.microsoft.com/attacksimulator>.
+> If you're new to your Microsoft 365 subscription and would like to know your licenses before you begin, go the **Your products** page in the Microsoft 365 admin center at <https://admin.microsoft.com/Adminportal/Home#/subscriptions>.
+
+All Microsoft 365 subscriptions include built-in security and protection features. The goals and available actions of these features vary. In Microsoft 365, there are three main security services (or products):
+
+1. **Exchange Online Protection (EOP)**: Included in any subscription that includes Exchange Online mailboxes. Also available as a [standalone subscription](/exchange/standalone-eop/standalone-eop) to protect on-premises email environments.
+2. **Defender for Office 365 365 Plan 1**: Included in some Microsoft 365 subscriptions with Exchange Online mailboxes that cater to small to medium-sized businesses (for example, Microsoft 365 Business Premium).
+3. **Defender for Office 365 365 Plan 2**: Included in some Microsoft 365 subscriptions with Exchange Online mailboxes that cater to enterprise organizations (for example, Microsoft 365 E5, Microsoft 365 A5, and Microsoft 365 GCC G5).
+
+Defender for Office 365 always includes EOP. Defender for Office 365 is also available as an add-in subscription to many Microsoft 365 subscriptions with Exchange Online mailboxes.
+
+Defender for Office 365 Plan 1 contains a subset of the features that are available in Plan 2. Defender for Office 365 Plan 2 contains many features that aren't available in Plan 1.
+
+> [!TIP]
+> For information about subscriptions that contain Defender for Office 365, see the [Microsoft 365 business plan comparison](https://aka.ms/M365BusinessPlans) and the [Microsoft 365 Enterprise plan comparison](https://aka.ms/M365EnterprisePlans).
 >
-> Your license influences the tools you see, so be sure that you're aware of your license as you learn.
+> Use the following exhaustive reference to determine if Defender for Office 365 Plan 1 or Plan 2 licenses are included in a Microsoft 365 subscription: [Product names and service plan identifiers for licensing](/entra/identity/users/licensing-service-plan-reference).
+>
+> Use the following interactive guide to see how Defender for Office 365 is able to protect your organization: [Safeguard your organization with Microsoft Defender for Office 365](https://aka.ms/MSDO-IG).
+>
+> Use [this page](https://www.microsoft.com/security/business/siem-and-xdr/microsoft-defender-office-365#pmg-allup-content) to compare plans and purchase Defender for Office 365.
 
-## Defender for Office 365 protection policies
+EOP and Defender for Office 365 can be summarized with the following descriptions:
 
-The protection policies that are configured in your organization determine the behavior and protection level from threats.
+- **EOP** prevents broad, volume-based, known email attacks.
+- **Defender for Office 365 Plan 1** protects email and collaboration features from zero-day malware, phishing, and business email compromise (BEC).
+- **Defender for Office 365 Plan 2** adds phishing simulations, post-breach investigation, hunting, and response, and automation.
 
-Policy options are flexible. For example, your organization's security team can set fine-grained threat protection at the user, group, and domain level for both preset security policies and custom policies. It's important to use the [configuration analyzer](configuration-analyzer-for-security-policies.md) regularly to *review the settings in the default and any custom policies*, because new threats and challenges emerge regularly.
+However, you can also think about the _architecture_ of EOP and Defender for Office 365 as _cumulative layers of security_, where each layer has a different _security emphasis_. This architecture is shown in the following diagram:
 
-### Anti-phishing policies
+:::image type="content" source="../../media/eop-mdop1-mdop2-comparison.png" alt-text="Diagram about EOP and Defender for Office 365 and their relationships to one another with service emphasis, including a note for email authentication." lightbox="../../media/eop-mdop1-mdop2-comparison.png":::
 
-In addition to [anti-spoofing protection](anti-phishing-policies-about.md#spoof-settings) that's available in anti-phishing policies in EOP, anti-phishing policies in Defender for Office 365 also contain [additional impersonation protection features](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) for specified users and domains. Machine learning models and advanced impersonation-detection algorithms are applied to these users and domains to avert phishing attacks.
+EOP and Defender for Office 365 are capable of protecting, detecting, investigating, and responding to threats. But as you move up the protection ladder, the _available features_ and _automation_ increase.
 
-Anti-phishing policies with spoofing and impersonation protection are included in the Standard and Strict preset security policies. There's also a default anti-phishing policy, and you can create custom policies as needed. You need to configure the entries and optional exceptions for user and domain impersonation protection in any of these policies.
+Whether you're using the onmicrosoft.com domain only or custom domains for email in Microsoft 365, it's important to configure email authentication for your used and unused domains. SPF, DKIM, and DMARC records in DNS allow Microsoft 365 to more accurately protect against spoofing attacks. For more information, see [Email authentication in Microsoft 365](email-authentication-about.md).
 
-### Safe Attachments policies
+## The Microsoft 365 security ladder from EOP to Defender for Office 365
 
-[Safe Attachments](safe-attachments-about.md) provides zero-day protection for email by checking message attachments for malicious content *in addition to* the regular malware scanning in EOP. Safe Attachments opens all attachments in virtual environment to see what happens (a process known as _detonation_). If no suspicious activity is detected, the message is delivered to the mailbox.
+It can be difficult to identity the advantages of Defender for Office 365 over EOP. The following subsections describe the capabilities of each product using the following security emphases:
 
-Safe Attachments protection is on by default for all recipients thanks to the [Built-in protection preset security policy](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-add-exclusions-to-the-built-in-protection-preset-security-policy), but you can specify exceptions.
+- Preventing and detecting threats.
+- Investigating threats.
+- Responding to threats.
 
-Safe Attachments policies are also included in the Standard and Strict preset security policies, and you can create custom policies as needed.
+### EOP capabilities
 
-### Safe Attachments for SharePoint, OneDrive, and Microsoft Teams
+The capabilities of **EOP** are summarized in the following table:
 
-[Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-about.md)**: Protects your organization when users collaborate and share files, by identifying and blocking malicious files in Teams sites and document libraries. To turn it on, see [Turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-configure.md).
+|Prevent/Detect|Investigate|Respond|
+|---|---|---|
+|<ul><li>[Anti-malware protection](anti-malware-protection-about.md)<sup>\*</sup></li><li>[Anti-spam protection](anti-spam-protection-about.md)<sup>\*</sup>, including [bulk email protection](anti-spam-spam-vs-bulk-about.md)</li><li>[Anti-phishing (spoofing) protection](anti-phishing-protection-spoofing-about.md)<sup>\*</sup>, including the [Spoof intelligence insight](anti-spoofing-spoof-intelligence.md)</li><li>[Outbound spam filtering](outbound-spam-protection-about.md)</li><li>[Connection filtering](connection-filter-policies-configure.md)</li><li>[Quarantine](quarantine-about.md) and [quarantine policies](quarantine-policies.md)</li><li>False positives and false negative reporting by [admin submissions to Microsoft](submissions-admin.md) and [user reported messages](submissions-user-reported-messages-custom-mailbox.md)</li><li>[Allow and block entries in the Tenant Allow/Block List](tenant-allow-block-list-about.md) for: <ul><li>Domains and email addresses</li><li>Spoof</li><li>URLs</li><li>Files</li></ul></li></ul>|<ul><li>[Audit log search](audit-log-search-defender-portal.md)</li><li>[Message Trace](message-trace-defender-portal.md)</li><li>[Email security reports](reports-email-security.md)</li></ul>|<ul><li>[Zero-hour auto purge (ZAP) for email](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-for-email-messages)</li><li>Refine and test entries in the [Tenant Allow/Block List](tenant-allow-block-list-about.md)</li></ul>|
 
-### Safe Links policies
+<sup>\*</sup> The associated protection polices are available in default policies, custom policies, and [the Standard and Strict preset security policies](preset-security-policies.md). For help with deciding which method to use, see [Determine your protection policy strategy](mdo-deployment-guide.md#determine-your-protection-policy-strategy).
 
-[Safe Links](safe-links-about.md) provides time-of-click verification of URLs in email messages, supported Office files, and Microsoft Teams. Protection is ongoing and applies across your messaging and Office environment. Links are scanned for each click. Benign links remain accessible, but malicious links are dynamically blocked.
+For more information about EOP, see [Exchange Online Protection overview](eop-about.md).
 
-Safe Links protection is on by default for all recipients thanks to the [Built-in protection preset security policy](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-add-exclusions-to-the-built-in-protection-preset-security-policy), but you can specify exceptions.
+### Defender for Office 365 Plan 1 capabilities
 
-Safe Links policies are also included in the Standard and Strict preset security policies, and you can create custom policies as needed.
+Defender for Office 365 Plan 1 expands on the _prevention_ and _detection_ capabilities of EOP.
 
-## View Defender for Office 365 reports
+The additional features that you get in **Defender for Office 365 Plan 1** on top of EOP are described in the following table:
 
-Defender for Office 365 includes [reports](reports-defender-for-office-365.md) to monitor Defender for Office 365. You can access the reports in the Microsoft Defender portal at <https://security.microsoft.com> at **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. You can also go directly to the **Email and collaboration reports** page using <https://security.microsoft.com/securityreports>.
+|Prevent/Detect|Investigate|Respond|
+|---|---|---|
+|<ul><li>The following [additional features in anti-phishing policies](anti-phishing-protection-about.md#additional-anti-phishing-protection-in-microsoft-defender-for-office-365): <ul><li>User and domain impersonation protection</li><li>Mailbox intelligence impersonation protection (contact graph)</li><li>Advanced phishing thresholds</li></ul></li><li>[Safe Attachments in email](safe-attachments-about.md)</li><li>[Safe Attachments for files in SharePoint, OneDrive, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-about.md)</li><li>[Safe Links in email, Office clients, and Teams](safe-links-about.md)</li><li>Email & collaboration alerts at <https://security.microsoft.com/viewalertsv2><li>SIEM integration API for **alerts**</li></ul>|<ul><li>[Real-time detections](threat-explorer-real-time-detections-about.md)<sup>\*</sup></li><li>[The Email entity page](mdo-email-entity-page.md)</li><li>SIEM integration API for **detections**</li><li>[URL trace](../defender-endpoint/investigate-domain.md)</li><li>[Defender for Office 365 reports](reports-defender-for-office-365.md)</li></ul>|<ul><li>Same</li></ul>|
 
-Reports update in real-time, providing you with the latest insights. These reports also provide recommendations and alert you to imminent threats. Available predefined reports include:
+<sup>\*</sup> The presence of **Email & collaboration** \> **Real-time detections** in the Microsoft Defender portal is a quick way to differentiate between Defender for Office 365 Plan 1 and Plan 2.
 
-- [Threat Explorer (or real-time detections)](threat-explorer-about.md)
-- [Threat protection status report](reports-defender-for-office-365.md#threat-protection-status-report)
-- ... and several more.
+:::image type="content" source="../../media/te-rtd-select-real-time-detections.png" alt-text="Screenshot of the Real-time detections selection in the Email & collaboration section in the Microsoft Defender portal." lightbox="../../media/te-rtd-select-real-time-detections.png":::
 
-## Best of class threat investigation and response capabilities
+### Defender for Office 365 Plan 2 capabilities
 
-Defender for Office 365 Plan 2 includes best-of-class [threat investigation and response tools](office-365-ti.md) that enable your organization's security team to anticipate, understand, and prevent malicious attacks.
+Defender for Office 365 Plan 2 expands on the _investigation_ and _response_ capabilities of Plan 1 and EOP, including the addition of _automation_.
 
-### Threat Trackers on the latest threats
+The additional features that you get in **Defender for Office 365 Plan 2** on top of Defender for Office 365 Plan 1 and EOP are described in the following table:
 
-- **[Threat trackers](threat-trackers.md)** provide the latest intelligence on prevailing cybersecurity issues. For example, you can view information about the latest malware, and take countermeasures before it becomes an actual threat to your organization. Available trackers include [Noteworthy trackers](threat-trackers.md#noteworthy-trackers), [Trending trackers](threat-trackers.md#trending-trackers), [Tracked queries](threat-trackers.md#tracked-queries), and [Saved queries](threat-trackers.md#saved-queries).
+|Prevent/Detect|Investigate|Respond|
+|---|---|---|
+|<ul><li>[Attack simulation training](attack-simulation-training-get-started.md)</li>|<li>[Threat Explorer (Explorer)](threat-explorer-real-time-detections-about.md) instead of Real-time detections.<sup>\*</sup></li><li>[Threat Trackers](threat-trackers.md)</li><li>[Campaigns](campaigns.md)</li></ul>|<ul><li>[Automated Investigation and Response (AIR)](air-about.md): <ul><li>AIR from Threat Explorer</li><li>AIR for compromised users</li></ul></li><li>SIEM Integration API for **Automated Investigations**</li></ul>|
 
-### Threat Explorer or Real-Time Detections
+<sup>\*</sup> The presence of **Email & collaboration** \> **Explorer** in the Microsoft Defender portal is a quick way to differentiate between Defender for Office 365 Plan 2 and Plan 1.
 
-- **[Threat Explorer in Plan 2 (or real-time detections in Plan 1)](threat-explorer-about.md)** (also referred to as Explorer) is a real-time report that allows you to identify and analyze recent threats. You can configure Explorer to show data for custom periods.
+:::image type="content" source="../../media/te-rtd-select-threat-explorer.png" alt-text="Screenshot of the Explorer selection in the Email & collaboration section in the Microsoft Defender portal." lightbox="../../media/te-rtd-select-threat-explorer.png":::
 
-### Attack simulation training for user readiness
+## Defender for Office 365 Plan 1 vs. Plan 2 cheat sheet
 
-- **[Attack simulation training](attack-simulation-training-simulations.md)** in Defender for Office 365 Plan 2 allows you to run realistic simulated attacks in your organization to identify vulnerabilities and offer training.
+This quick-reference section summarizes the different capabilities between Defender for Office 365 Plan 1 and Plan 2 that aren't included in EOP.
 
-## Save time with automated investigation and response
-
-When SecOps is investigating a potential cyberattack, time is of the essence. The sooner you can identify and mitigate threats, the better off your organization will be.
-
-[Automated investigation and response](air-about.md) (AIR) capabilities include a set of security playbooks that can be launched automatically, such as when an alert is triggered, or manually, such as from a view in Explorer.
-
-AIR can save your security operations team time and effort in mitigating threats effectively and efficiently. To learn more, see [AIR in Office 365](air-about.md).
-
-## Permissions needed to use Defender for Office 365 features
-
-To access Defender for Office 365 features, you *must* be assigned an appropriate role. The following table includes some examples:
-
-|Role or role group|Resources to learn more|
+|Defender for Office 365 Plan 1|Defender for Office 365 Plan 2|
 |---|---|
-|Global Administrator (or Organization Management)|You can assign this role in Azure Active Directory or in the Microsoft Defender portal. For more information, see [Permissions in the Microsoft Defender portal](mdo-portal-permissions.md).|
-|Security Administrator|You can assign this role in Azure Active Directory or in the Microsoft Defender portal. For more information, see [Permissions in the Microsoft Defender portal](mdo-portal-permissions.md).|
-|Organization Management in Exchange Online|[Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo) <p> [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)|
-|Search and Purge|This role is available only in the Microsoft Defender portal or the Microsoft Purview compliance portal. For more information, see [Permissions in the Microsoft Defender portal](mdo-portal-permissions.md) and [Permissions in the Microsoft Purview compliance portal](/purview/microsoft-365-compliance-center-permissions).|
+|Prevent and detect capabilities: <ul><li>[Anti-phishing policies with impersonation protection and Advanced phishing thresholds](anti-phishing-policies-about.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[Safe Attachments](safe-attachments-about.md), including [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-about.md)</li><li>[Safe Links](safe-links-about.md)</li></ul> <br/> Investigate and respond capabilities: <ul><li>[Real-time detections](threat-explorer-real-time-detections-about.md)</li><li>[The Email entity page](mdo-email-entity-page.md)</li></ul>|Everything in Defender for Office 365 Plan 1 capabilities <br/><br/> --- plus --- <br/><br/> Prevent and detect capabilities: <ul><li>[Attack simulation training](attack-simulation-training-simulations.md)</li></ul> <br/> Investigate and respond capabilities: <ul><li>[Threat Explorer (Explorer)](threat-explorer-real-time-detections-about.md)</li><li>[Threat Trackers](threat-trackers.md)</li><li>[AIR](air-about.md)</li><li>[Proactively hunt for threats with advanced hunting in Microsoft Defender XDR](../defender/advanced-hunting-overview.md)</li><li>[Investigate incidents in Microsoft Defender XDR](../defender/investigate-incidents.md)</li><li>[Investigate alerts in Microsoft Defender XDR](../defender/investigate-alerts.md)</li></ul>|
 
-## Where can you get MDefender for Office 365?
+- For more information, see [Feature availability across Defender for Office 365 plans](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability).
+- [Safe Documents](safe-documents-in-e5-plus-security-about.md) is available to users with the Microsoft 365 A5 or Microsoft 365 E5 Security licenses (not included in Defender for Office 365 plans).
+- If your current subscription doesn't include Defender for Office 365 Plan 2, you can [try Defender for Office 365](try-microsoft-defender-for-office-365.md) free for 90 days. Or, [contact sales to start a trial](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html).
+- Defender for Office 365 P2 customers have access to **Microsoft Defender XDR integration** to efficiently detect, review, and respond to incidents and alerts.
 
-Defender for Office 365 is included in certain subscriptions. For example, Microsoft 365 E5, Office 365 E5, Office 365 A5, and Microsoft 365 Business Premium.
+## Where to go next
 
-### What if your subscription doesn't include Defender for Office 365
+[Get started with Microsoft Defender for Office 365](mdo-deployment-guide.md)
 
-If your subscription doesn't include Defender for Office 365, you can get Defender for Office 365 as an add-on. To learn more, take a look at the following resources:
+[Microsoft Defender for Office 365 Security Operations Guide](mdo-sec-ops-guide.md)
 
-- [Microsoft Defender for Office 365 availability](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#office-365-advanced-threat-protection-atp-availability) for a list of subscriptions that include Defender for Office 365 plans.
+[Migrate from a third-party protection service or device to Microsoft Defender for Office 365](migrate-to-defender-for-office-365.md)
 
-- [Feature availability across Microsoft Defender for Office 365 plans](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans) for a list of features included in Plan 1 and 2.
+[What's new in Microsoft Defender for Office 365](defender-for-office-365-whats-new.md)
 
-- [Get the right Microsoft Defender for Office 365](https://products.office.com/exchange/advance-threat-protection#pmg-allup-content) to compare plans and purchase Defender for Office 365.
-
-- [Start a free trial](https://go.microsoft.com/fwlink/p/?LinkID=698279)
-
-## What new features are coming for Defender for Office 365?
-
-New features are continually added to Defender for Office 365 continually. To learn more, see the following resources:
-
-- [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=Microsoft%2CDefender%2Cfor%2COffice%2C365) provides a list of new features in development and rolling out.
-
-- [Microsoft Defender for Office 365 Service Description](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp) describes features and availability across Defender for Office 365 plans.
-
-## See also
-
-- [Microsoft Defender XDR](../defender/microsoft-365-defender.md)
-- [Automated investigation and response (AIR) in Microsoft Defender XDR](../defender/m365d-autoir.md)
+The [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=Microsoft%2CDefender%2Cfor%2COffice%2C365) describes new features that are being added to Defender for Office 365.

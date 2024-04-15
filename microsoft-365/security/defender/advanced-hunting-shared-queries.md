@@ -1,14 +1,9 @@
 ---
 title: Use shared queries in Microsoft Defender XDR advanced hunting
 description: Start threat hunting immediately with predefined and shared queries. Share your queries to the public or to your organization.
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, custom detections, schema, kusto, github repo, my queries, shared queries
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
 ms.subservice: adv-hunting
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords:
   - NOCSH
 ms.author: maccruz
@@ -20,12 +15,12 @@ ms.collection:
 - m365-security
 - tier2
 ms.topic: conceptual
-ms.date: 02/16/2021
+ms.date: 02/16/2024
 ---
 
 # Use shared queries in advanced hunting
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 - Microsoft Defender XDR
@@ -86,4 +81,4 @@ Community queries are grouped into folders like *Campaigns*, *Collection*, *Defe
 - [Hunt across devices, emails, apps, and identities](advanced-hunting-query-emails-devices.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

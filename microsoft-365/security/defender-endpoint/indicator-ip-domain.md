@@ -2,11 +2,11 @@
 title: Create indicators for IPs and URLs/domains
 ms.reviewer: thdoucet
 description: Create indicators for IPs and URLs/domains that define the detection, prevention, and exclusion of entities.
-ms.service: microsoft-365-security
-ms.author: macapara
-author: mjcaparas
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -20,7 +20,7 @@ ms.date: 10/06/2023
 
 # Create indicators for IPs and URLs/domains
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -77,7 +77,7 @@ The _Antimalware client version_ must be 4.18.1906.x or later.
 
 ### Custom network indicators requirements
 
-Ensure that **Custom network indicators** is enabled in **Microsoft 365 Defender** \> **Settings** \> **Advanced features**. For more information, see [Advanced features](advanced-features.md).
+Ensure that **Custom network indicators** is enabled in **Microsoft Defender XDR** \> **Settings** \> **Advanced features**. For more information, see [Advanced features](advanced-features.md).
 
 For support of indicators on iOS, see [Microsoft Defender for Endpoint on iOS](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-custom-indicators).
 
@@ -156,7 +156,7 @@ Applying multiple different web content filtering policies to the same device wi
 
 The result is that categories 1-4 are all blocked. This is illustrated in the following image.
 
-:::image type="content" source="images/web-content-filtering-policies-mode-precedence.png" alt-text="Diagram that shows the precedence of web content filtering policy block mode over audit mode.":::
+:::image type="content" source="media/web-content-filtering-policies-mode-precedence.png" alt-text="Diagram that shows the precedence of web content filtering policy block mode over audit mode.":::
 
 ## Create an indicator for IPs, URLs, or domains from the settings page
 

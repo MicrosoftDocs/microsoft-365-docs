@@ -1,12 +1,12 @@
 ---
 title: Review remediation actions following automated investigations
 description: Review and approve (or reject) remediation actions following an automated investigation.
-ms.service: microsoft-365-security
-author: dansimp
-ms.author: dansimp
+ms.service: defender-endpoint
+author: siosulli
+ms.author: siosulli
 ms.localizationpriority: medium
 ms.date: 07/13/2023
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -14,7 +14,7 @@ ms.collection:
 - mde-edr
 ms.custom: admindeeplinkDEFENDER
 ms.topic: how-to
-ms.subservice: mde
+ms.subservice: edr
 search.appverid: met150
 ---
 
@@ -86,7 +86,7 @@ For incidents with a remediation status of **Pending approval**, you can also ap
    - Select the Approve pending action option to initiate a pending action.
    - Select the Reject pending action option to prevent a pending action from being taken.
 
-:::image type="content" source="../../media/defender//m365-defender-approve-reject-action.png" alt-text="The Approve\Reject option in the Evidence and Response management pane for an incident in the Microsoft Defender portal" lightbox="../../media/defender//m365-defender-approve-reject-action.png":::
+:::image type="content" source="../../media/defender/m365-defender-approve-reject-action.png" alt-text="The Approve\Reject option in the Evidence and Response management pane for an incident in the Microsoft Defender portal" lightbox="../../media/defender/m365-defender-approve-reject-action.png":::
 
 ## Review completed actions
 

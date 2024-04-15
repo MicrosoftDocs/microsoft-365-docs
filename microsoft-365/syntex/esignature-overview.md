@@ -1,5 +1,5 @@
 ---
-title: Overview of Microsoft Syntex eSignature
+title: Overview of SharePoint eSignature
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
@@ -14,32 +14,47 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority: medium
-description: Learn about Microsoft Syntex eSignature and how to send electronic signature requests to people inside and outside of your organization. 
+description: Learn about SharePoint eSignature and how to send electronic signature requests to people inside and outside of your organization. 
 ---
 
-# Overview of Microsoft Syntex eSignature
+# Overview of SharePoint eSignature
 
-Microsoft Syntex eSignature simplifies the process of signing and sharing documents, while providing the security and compliance of Microsoft 365.
+> [!NOTE]
+> Through June 2024, you can try out eSignature and other selected Syntex services at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For information and limitations, see [Try out Microsoft Syntex and explore its services](promo-syntex.md).
 
-With Syntex eSignature, you can quickly and securely send documents for signature to people both inside and outside of your organization. You also have a digital audit trail, which can be used to verify the authenticity of documents and transactions.
+SharePoint eSignature simplifies the process of signing and sharing documents, while providing the security and compliance of Microsoft 365.
+
+With SharePoint eSignature, you can quickly and securely send documents for signature to people both inside and outside of your organization. You also have a digital audit trail, which can be used to verify the authenticity of documents and transactions.
 
 ![Diagram showing the eSignature process.](../media/content-understanding/esignature-overview-flow.png)
 
 ## Before you begin
 
-Before you can use Syntex eSignature, an admin must [set up Syntex eSignature](esignature-setup.md) in the Microsoft 365 admin center.
+## Legal considerations
 
-You must be signed in to SharePoint Online by using your work email address.
+SharePoint eSignature uses simple electronic signatures. Determine whether this is appropriate for your needs and then read the [SharePoint eSignature terms of service](/legal/microsoft-365/esignature-terms-of-service).
+
+
+### Licensing
+
+Before you can use SharePoint eSignature, you must first link your Azure subscription in [Syntex pay-as-you-go](syntex-azure-billing.md). SharePoint eSignature is billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md). Before you can enable SharePoint eSignature, an admin must [set up SharePoint eSignature](esignature-setup.md) in the Microsoft 365 admin center.
+
+
+### External sharing
+
+SharePoint eSignature enables binding agreements between parties by allowing guests access to SharePoint to electronically sign documents. Certain external sharing must be enabled at a tenant or site level to allow this access. For more information, see [Set up SharePoint eSignature for external recipients](esignature-setup.md#external-recipients). Consider whether this meets your compliance and security requirements when enabling eSignature.
+
+
 
 ## Release notes
 
-- Currently, Syntex eSignature is rolling out to the US market. The feature rolls out to other regions in 2024.
+- Currently, SharePoint eSignature is rolling out to the US market. The feature rolls out to other regions later in 2024.
 
-- Syntex eSignature is available for only PDF documents at this time.
+- SharePoint eSignature is available for only PDF documents at this time.
 
 - Support for other electronic signature providers, such as Adobe Acrobat Sign and DocuSign, will be provided in 2024.
 
-- You'll be able to track your Syntex eSignature requests using the Approval app in Microsoft Teams in 2024.
+- You'll be able to track your SharePoint eSignature requests using the Approvals app in Microsoft Teams in 2024.
 
 <br>
 

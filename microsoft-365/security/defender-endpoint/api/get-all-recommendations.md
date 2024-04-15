@@ -1,22 +1,18 @@
 ---
 title: List all recommendations
 description: Retrieves a list of all security recommendations affecting the organization.
-keywords: apis, graph api, supported apis, get, security recommendations, Microsoft Defender for Endpoint tvm api, threat and vulnerability management, threat and vulnerability management api, mdvm
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
 - must-keep
 ms.topic: reference
-ms.subservice: mde
+ms.subservice: reference
 ms.custom: api
 search.appverid: met150
 ms.date: 12/18/2020
@@ -24,7 +20,7 @@ ms.date: 12/18/2020
 
 # List all recommendations
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../../includes/microsoft-defender.md)]
 
 **Applies to:**
 

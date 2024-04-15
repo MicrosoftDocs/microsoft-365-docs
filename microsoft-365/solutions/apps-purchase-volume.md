@@ -5,6 +5,7 @@ author: erikre
 manager: dougeby
 audience: ITPro
 ms.topic: article
+ms.date: 03/29/2024
 description: Purchase apps in-volume for Intune.
 ms.service: o365-solutions
 ms.localizationpriority: high
@@ -63,7 +64,7 @@ For related information about purchasing apps, see [Intro to purchasing content 
 Microsoft Intune helps you manage apps you purchased from Apple Business Manager by synchronizing app license information (location tokens) you download from Apple Business Manager. Location tokens are volume purchase licenses that were commonly known as Volume Purchase Program (VPP) tokens. With VPP tokens, you can assign and manage licenses purchased using Apple Business Manager. These tokens are then downloaded from Apple Business Manager and uploaded (synched) into Microsoft Intune. Each token is commonly valid for one year.  
 
 > [!NOTE]
-> VPP apps can only be added via a connector to the service. The connnector syncs the location tokens. 
+> VPP apps can only be added via a connector to the service. The connector syncs the location tokens. 
 
 Follow the Intune guidelines to upload and sync an Apple VPP token:
 - Upload multiple location tokens per tenant](/mem/intune/apps/vpp-apps-ios#upload-an-apple-vpp-or-apple-business-manager-location-token) using Intune.

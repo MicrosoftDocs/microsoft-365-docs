@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: crimora
-ms.date: 07/03/2023
+ms.date: 12/13/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -15,6 +15,7 @@ ms.collection:
 - scotvorg
 - M365-subscription-management
 - Adm_O365
+- essentials-get-started
 ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse                         
@@ -28,7 +29,7 @@ Several options are available if you need help. First, check to see if there are
 
 - Review the current health of customer tenant services:
 
-    1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Service health**. 
+    1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Service health**. 
     2. View detailed information about current and past issues.
 
 - Review the current health of the Lighthouse tenant services:
@@ -50,7 +51,7 @@ If you're experiencing an issue that isn't listed in any of these resources, the
 
 ## Access help and support
 
-1. In Lighthouse, select the **?** icon at the top of the portal to open the **Help** pane, and then do one of the following:
+1. In Lighthouse, select the **?** icon at the top of the portal or the **Help & support** widget in the lower-right corner of the portal to open the **Help** pane, and then do one of the following:
   
    - If you're on the page of the portal where the issue occurred, select **Show diagnostics**.
 

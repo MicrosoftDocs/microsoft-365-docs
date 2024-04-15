@@ -19,7 +19,7 @@ search.appverid: met150
 
 # Create custom roles with Microsoft Defender XDR Unified RBAC
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -28,8 +28,7 @@ search.appverid: met150
 - [Microsoft Defender for Identity](https://go.microsoft.com/fwlink/?LinkID=2198108)
 - [Microsoft Defender for Office 365 P2](https://go.microsoft.com/fwlink/?LinkID=2158212)
 - [Microsoft Defender Vulnerability Management](https://go.microsoft.com/fwlink/?linkid=2229011)
-
-[!include[Prerelease information](../../includes/prerelease.md)]
+- [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction)
 
 ## Create a custom role
 
@@ -52,7 +51,7 @@ The following steps guide you on how to create custom roles in Microsoft Defende
     - Select all read and manage permissions – Users will be assigned all permissions in this category (read and manage permissions).
     - Select custom permissions – Users will be assigned the custom permissions selected.
 
-   :::image type="content" source="../../media/defender/m365-defender-rbac-permissions-secops-flyout.png" alt-text="Screenshot of the permissions flyout screen" lightbox="../../media/defender/m365-defender-rbac-permissions-secops-flyout.png":::
+   :::image type="content" source="../../media/defender/m365-defender-rbac-assignments-fig.png" alt-text="Screenshot of the permissions flyout screen" lightbox="../../media/defender/m365-defender-rbac-assignments-fig.png":::
 
     For more information on the RBAC custom permissions, see [About RBAC custom permissions](custom-permissions-details.md).
 
@@ -112,4 +111,4 @@ To access and manage roles and permissions, without being a Global Administrator
 
 - [Import existing RBAC roles](import-rbac-roles.md)
 - [Activate Microsoft Defender XDR Unified RBAC](activate-defender-rbac.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

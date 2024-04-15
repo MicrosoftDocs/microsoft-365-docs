@@ -2,17 +2,17 @@
 title: Trial user guide - Microsoft Defender for Endpoint
 description: Use this guide to get the most of your 90-day free trial. See how Defender for Endpoint can help prevent, detect, investigate, and respond to advanced threats.
 search.appverid: MET150 
-author: denisebmsft
-ms.author: deniseb
-manager: dansimp 
+author: siosulli
+ms.author: siosulli
+manager: deniseb 
 audience: ITPro
 ms.topic: how-to
 ms.date: 07/07/2022
 ms.collection: 
 - m365-security
 - tier2
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: onboard
 ms.localizationpriority: medium
 ms.reviewer: 
 f1.keywords: NOCSH
@@ -37,19 +37,19 @@ This playbook is a simple guide to help you make the most of your free trial. Us
 <center><h2>Microsoft Defender for Endpoint</center></h2>
 <table>
 <tr>
-<td><a href="microsoft-defender-endpoint.md#tvm"><center><img src="images/logo-mdvm.png" alt="Vulnerability Management"> <br><b> Core Defender Vulnerability Management</b></center></a></td>
-<td><a href="microsoft-defender-endpoint.md#asr"><center><img src="images/asr-icon.png" alt="Attack surface reduction"><br><b>Attack surface reduction</b></center></a></td>
-<td><center><a href="microsoft-defender-endpoint.md#ngp"><img src="images/ngp-icon.png" alt="Next-generation protection"><br> <b>Next-generation protection</b></a></center></td>
-<td><center><a href="microsoft-defender-endpoint.md#edr"><img src="images/edr-icon.png" alt="Endpoint detection and response"><br> <b>Endpoint detection and response</b></a></center></td>
-<td><center><a href="microsoft-defender-endpoint.md#ai"><img src="images/air-icon.png" alt="Automated investigation and remediation"><br> <b>Automated investigation and remediation</b></a></center></td>
-<td><center><a href="microsoft-defender-endpoint.md#mte"><img src="images/mte-icon.png" alt="Microsoft Threat Experts"><br> <b>Microsoft Threat Experts</b></a></center></td>
+<td><a href="microsoft-defender-endpoint.md#tvm"><center><img src="media/logo-mdvm.png" alt="Vulnerability Management"> <br><b> Core Defender Vulnerability Management</b></center></a></td>
+<td><a href="microsoft-defender-endpoint.md#asr"><center><img src="media/asr-icon.png" alt="Attack surface reduction"><br><b>Attack surface reduction</b></center></a></td>
+<td><center><a href="microsoft-defender-endpoint.md#ngp"><img src="media/ngp-icon.png" alt="Next-generation protection"><br> <b>Next-generation protection</b></a></center></td>
+<td><center><a href="microsoft-defender-endpoint.md#edr"><img src="media/edr-icon.png" alt="Endpoint detection and response"><br> <b>Endpoint detection and response</b></a></center></td>
+<td><center><a href="microsoft-defender-endpoint.md#ai"><img src="media/air-icon.png" alt="Automated investigation and remediation"><br> <b>Automated investigation and remediation</b></a></center></td>
+<td><center><a href="microsoft-defender-endpoint.md#mte"><img src="media/mte-icon.png" alt="Microsoft Threat Experts"><br> <b>Microsoft Threat Experts</b></a></center></td>
 </tr>
 <tr>
 <td colspan="7">
 <a href="microsoft-defender-endpoint.md#apis"><center><b>Centralized configuration and administration, APIs</a></b></center></td>
 </tr>
 <tr>
-<td colspan="7"><a href="microsoft-defender-endpoint.md#mtp"><center><b>Microsoft 365 Defender</a></center></b></td>
+<td colspan="7"><a href="microsoft-defender-endpoint.md#mtp"><center><b>Microsoft Defender XDR</a></center></b></td>
 </tr>
 </table>
 <br>

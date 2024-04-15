@@ -4,7 +4,7 @@ f1.keywords:
   - NOCSH
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 audience: Admin
 ms.topic: overview
 ms.localizationpriority: medium
@@ -18,12 +18,11 @@ ms.collection:
 ms.custom: 
   - seo-marvel-apr2020
 description: Admins can learn about the anti-spam settings and filters that help prevent spam in Exchange Online Protection (EOP).
-ms.subservice: mdo
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 ms.date: 10/18/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 1 and Plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
@@ -54,6 +53,7 @@ To configure the default anti-spam policy, and to create, modify, and remove cus
 
 > [!TIP]
 > If you disagree with the spam filtering verdict, you can report the message to Microsoft as a false positive (good mail marked as bad) or a false negative (bad email allowed). For more information, see:
+>
 > - [How do I report a suspicious email or file to Microsoft?](submissions-report-messages-files-to-microsoft.md).
 > - [How to handle legitimate emails getting blocked (false positive), using Microsoft Defender for Office 365](step-by-step-guides/how-to-handle-false-positives-in-microsoft-defender-for-office-365.md)
 > - [How to handle malicious emails that are delivered to recipients (false negatives), using Microsoft Defender for Office 365](step-by-step-guides/how-to-handle-false-negatives-in-microsoft-defender-for-office-365.md)
@@ -61,6 +61,7 @@ To configure the default anti-spam policy, and to create, modify, and remove cus
 > The anti-spam message headers can tell you why a message was marked as spam, or why it skipped spam filtering. For more information, see [Anti-spam message headers](message-headers-eop-mdo.md).
 >
 > You can't completely turn off spam filtering in Microsoft 365, but you can use Exchange mail flow rules (also known as transport rules) to bypass most spam filtering on incoming messages (for example, if you route email through a third-party protection service or device before delivery to Microsoft 365). For more information, see [Use mail flow rules to set the spam confidence level (SCL) in messages](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
+>
 > - High confidence phishing messages are still filtered. Other features in EOP aren't affected (for example, messages are always scanned for malware).
 > - If you need to bypass spam filtering for SecOps mailboxes or phishing simulations, don't use mail flow rules. For more information, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](advanced-delivery-policy-configure.md).
 >
@@ -75,23 +76,27 @@ Anti-spam policies control the configurable settings for spam filtering. The imp
 
 ### Recipient filters in anti-spam policies
 
-In [custom anti-spam policies](anti-spam-policies-configure.md) and in the Standard and Strict [preset security policies](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users), you can specify recipient conditions and exceptions that determine who the policy applies to. You can use the following properties for conditions and exceptions:
+Recipient filters use conditions and exceptions to identify the internal recipients that the policy applies to. At least one condition is required in custom policies. Conditions and exceptions aren't available in the default policy (the default policy applies to all recipients). You can use the following recipient filters for conditions and exceptions:
 
-- **Users**
-- **Groups**
-- **Domains**
+- **Users**: One or more mailboxes, mail users, or mail contacts in the organization.
+- **Groups**:
+  - Members of the specified distribution groups or mail-enabled security groups (dynamic distribution groups aren't supported).
+  - The specified Microsoft 365 Groups.
+- **Domains**: One or more of the configured [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in Microsoft 365. The recipient's primary email address is in the specified domain.
 
-You can only use a condition or exception once, but the condition or exception can contain multiple values. Multiple values of the same condition or exception use OR logic (for example, _\<recipient1\>_ or _\<recipient2\>_). Different conditions or exceptions use AND logic (for example, _\<recipient1\>_ and _\<member of group 1\>_).
+You can use a condition or exception only once, but the condition or exception can contain multiple values:
 
-> [!IMPORTANT]
-> Multiple different types of conditions or exceptions aren't additive; they're inclusive. The policy is applied _only_ to those recipients that match _all_ of the specified recipient filters. For example, you configure a recipient filter condition in the policy with the following values:
->
-> - Users: romain@contoso.com
-> - Groups: Executives
->
-> The policy is applied to romain@contoso.com _only_ if he's also a member of the Executives group. If he's not a member of the group, then the policy is not applied to him.
->
-> Likewise, if you use the same recipient filter as an exception to the policy, the policy is not applied to romain@contoso.com _only_ if he's also a member of the Executives group. If he's not a member of the group, then the policy still applies to him.
+- Multiple **values** of the **same condition or exception** use OR logic (for example, _\<recipient1\>_ or _\<recipient2\>_):
+  - **Conditions**: If the recipient matches **any** of the specified values, the policy is applied to them.
+  - **Exceptions**: If the recipient matches **any** of the specified values, the policy isn't applied to them.
+
+- Different **types of exceptions** use OR logic (for example, _\<recipient1\>_ or _\<member of group1\>_ or _\<member of domain1\>_). If the recipient matches **any** of the specified exception values, the policy isn't applied to them.
+
+- Different **types of conditions** use AND logic. The recipient must match **all** of the specified conditions for the policy to apply to them. For example, you configure a condition with the following values:
+  - Users: `romain@contoso.com`
+  - Groups: Executives
+
+  The policy is applied to `romain@contoso.com` _only_ if he's also a member of the Executives group. Otherwise, the policy isn't applied to him.
 
 ### Bulk complaint threshold (BCL) in anti-spam policies
 
@@ -101,6 +106,7 @@ For more information about BCL, see [Bulk complaint level (BCL) in EOP](anti-spa
 
 > [!TIP]
 > By default, the PowerShell only setting _MarkAsSpamBulkMail_ is `On` in anti-spam policies in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). This setting dramatically affects the results of a **Bulk compliant level (BCL) met or exceeded** filtering verdict:
+>
 > - **_MarkAsSpamBulkMail_ is On**: A BCL that's greater than or equal to the threshold value is converted to an SCL 6 that corresponds to a filtering verdict of **Spam**, and the action for the **Bulk compliant level (BCL) met or exceeded** filtering verdict is taken on the message.
 > - **_MarkAsSpamBulkMail_ is Off**: The message is stamped with the BCL, but _no action_ is taken for a **Bulk compliant level (BCL) met or exceeded** filtering verdict. In effect, the BCL threshold and **Bulk compliant level (BCL) met or exceeded** filtering verdict action are irrelevant.
 
@@ -143,7 +149,7 @@ These settings aren't configured in the default anti-spam policy by default, or 
 
   ⁴ If the spam filtering verdict quarantines messages by default (**Quarantine message** is already selected when you get to the page), the default quarantine policy name is shown in the **Select quarantine policy** box. If you _change_ the action of a spam filtering verdict to **Quarantine message**, the **Select quarantine policy** box is blank by default. A blank value means the default quarantine policy for that verdict is used. When you later view or edit the anti-spam policy settings, the quarantine policy name is shown. For more information about the quarantine policies that are used by default for spam filter verdicts, see [EOP anti-spam policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings).
 
-  ⁵ Users can't release their own messages that were quarantined as high confidence phishing, regardless of how the quarantine policy is configured. If the policy allows users to release their own quarantined messages, users are instead allowed to _request_ the release of their quarantined high-confidence phishing messages.
+  ⁵ Users can't release their own messages that were quarantined as high confidence phishing, regardless of how the quarantine policy is configured. If the policy allows users to release their own quarantined messages, users are instead allowed to _request_ the release of their quarantined high confidence phishing messages.
 
 - **Intra-Organizational messages to take action on**: Controls whether spam filtering and the corresponding verdict actions are applied to internal messages (messages sent between users within the organization). The action that's configured in the policy for the specified spam filter verdicts is taken on messages sent between internal users. The available values are:
   - **Default**: This is the default value. This value is the same as selecting **High confidence phishing messages**.
@@ -204,7 +210,7 @@ The functionality of these lists has been largely replaced by:
 
 ### Priority of anti-spam policies
 
-If they're [turned on](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users), the Standard and Strict preset security policies are applied before any custom anti-spam policies or the default policy (Strict is always first). If you create multiple custom anti-spam policies, you can specify the order that they're applied. Policy processing stops after the first policy is applied (the highest priority policy for that recipient).
+If they're [turned on](preset-security-policies.md#use-the-microsoft-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users), the Standard and Strict preset security policies are applied before any custom anti-spam policies or the default policy (Strict is always first). If you create multiple custom anti-spam policies, you can specify the order that they're applied. Policy processing stops after the first policy is applied (the highest priority policy for that recipient).
 
 For more information about the order of precedence and how multiple policies are evaluated, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md) and [Order of precedence for preset security policies and other policies](preset-security-policies.md#order-of-precedence-for-preset-security-policies-and-other-policies).
 

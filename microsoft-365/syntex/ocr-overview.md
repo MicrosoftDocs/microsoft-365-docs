@@ -20,6 +20,9 @@ description: Learn about optical character recognition in Microsoft Syntex.
 
 # Overview of optical character recognition in Microsoft Syntex
 
+> [!NOTE]
+> Through June 2024, you can try out optical character recognition and other selected Syntex services at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For information and limitations, see [Try out Microsoft Syntex and explore its services](promo-syntex.md).
+
 The optical character recognition (OCR) service in Microsoft Syntex lets you extract printed or handwritten text from images and documents. Examples of images include posters, drawings, and product labels. Examples of documents include articles, reports, forms, and invoices.
 
 The text is typically extracted as words, text lines, and paragraphs or text blocks, enabling access to digital version of the scanned text. The extracted information is indexed in search and can be made available for compliance features like [data loss prevention (DLP)](../compliance/dlp-learn-about-dlp.md).
@@ -34,6 +37,9 @@ For example, you enable the OCR service and then add image files to your documen
 |---------|---------|
 |SharePoint and OneDrive     |.bmp, .png, .jpeg, .jpg, .jfif, .arw, .cr2, .crw, .erf, .gif, .mef, .mrw, .nef, .nrw, .orf, .pef, .raw, .rw2, .rw1, .sr2, .tif, .tiff, .heic, .heif, .ari, .bay, .cap, .cr3, .dcs, .dcr, .drf, .eip, .fff, .iiq, .k25, .kdc, .mef, .mos, .ptx, .pxn, .raf, .rwl, .sr2, .srf, .srw, .x3f, .dng, .tiff, and .pdf (image only)  |
 |Teams, Exchange, and Windows devices     |.bmp, .png, .jpeg, .jpg, .tiff, and .pdf (image only)     |
+
+> [!NOTE]
+> When you apply OCR to an image file, the text is stored in the **Extracted text** metadata column. When you apply OCR to a PDF or TIFF file, the extracted text is indexed in search but not available in the metadata column.
 
 ### Supported languages
 
@@ -53,11 +59,11 @@ The OCR service supports multiple solutions, as shown in the following table. Fo
 
 ### File limitations
 
-- Image file sizes must be less than 50 MB.
+- Images must be less than 50 MB.
 
 - Images must be at least 50 x 50 pixels and not larger than 16,000 x 16,000 pixels.
 
-- Only images uploaded after OCR has been enabled are scanned.
+- Images uploaded after OCR has been enabled are the only images that are scanned.
 
-- Currently, images that are embedded in Office documents aren't supported.
+- Images that are embedded in Office documents aren't supported.
 

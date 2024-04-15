@@ -23,7 +23,7 @@ ms.date: 05/09/2023
 
 # Step 3. Plan for Microsoft Defender XDR integration with your SOC catalog of services
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 - Microsoft Defender XDR
@@ -69,4 +69,4 @@ To integrate the capabilities of Microsoft Defender XDR, you will need to refine
 ## Next step
 
 [Step 4. Define Microsoft Defender XDR roles, responsibilities, and oversight](integrate-microsoft-365-defender-secops-roles.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]
