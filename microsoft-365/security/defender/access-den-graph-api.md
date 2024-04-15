@@ -44,7 +44,7 @@ The following fields are also available in Graph Security API.
 1. displayName
 2. description
 3. recommendedActions
-4. recommendedHuntingQuries
+4. recommendedHuntingQueries
 
 Your approach to consuming DENs from the API will vary depending on the downstream system you intend to use and your specific requirements. However, below is a basic implementation to help you get started.
 
