@@ -27,9 +27,9 @@ ms.date: 04/15/2024
 Defender Experts Notifications (DENs) are incidents in Microsoft Defender portal that have been generated from hunting conducted by Defender Experts in your tenant.
 
 > [!NOTE]
-> Any incident in the Microsoft Defender portal is a collection of correlated alerts. [Learn more](/graph/api/resources/security-incident.md)
+> Any incident in the Microsoft Defender portal is a collection of correlated alerts. [Learn more](/graph/api/resources/security-incident)
 
-DENs contain information provided by Defender Experts regarding the hunting investigation and recommended actions in the following fields. The below fields are available in Microsoft Defender portal. [Learn more](/../../onboarding-defender-experts-for-hunting#receive-defender-experts-notifications) about that experience here.
+DENs contain information provided by Defender Experts regarding the hunting investigation and recommended actions in the following fields. The below fields are available in Microsoft Defender portal. [Learn more](../../onboarding-defender-experts-for-hunting#receive-defender-experts-notifications) about that experience here.
 
 - **Incident Title**- starts with _Defender Experts_ to identify which incidents are DENs
 - **Executive Summary**- lists investigation summary
