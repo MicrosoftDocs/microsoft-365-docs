@@ -38,9 +38,9 @@ You can now use content query to search for metadata in any of the queriable col
 - 'TaxonomyFieldType':
 - 'TaxonomyFieldTypeMulti':
 
-**New document libraries** — For new libraries, all of the columns will be available in content query.
+**New document libraries** — For new libraries, all of the columns are available in content query.
 
-**Existing document libraries** — For existing libraries, all of the queriable columns won't be immediately available. You'll need to select the content query icon (![Screenshot of the metadata search icon.](../media/content-understanding/metadata-search-icon.png)) in the existing library. Then after five days, check the library again and all of the columns should be available.
+**Existing document libraries** — For existing libraries, all of the queriable columns won't be immediately available. You need to select the content query icon (![Screenshot of the metadata search icon.](../media/content-understanding/metadata-search-icon.png)) in the existing library. Then after five days, check the library again and all of the columns should be available.
 
 > [!NOTE]
 > This feature is available for users who have Syntex [per-user](set-up-content-understanding.md) or [pay-as-you-go](syntex-azure-billing.md) licensing.
@@ -64,7 +64,7 @@ You can now use content query to search for metadata in any of the queriable col
    |People   |Search for a match on people in any column in the library.   |
    |Modified date |Search by selected date range in the **Modified** column in the library.         |
    |File type     |Search by selected file type (for example, Word document or PDF).        |
-   |Content type  |Search by selected content type. This option will only appear if there's a non-default content type applied to the library. Default content types are *document* and *folder*.        |
+   |Content type  |Search by selected content type. This option will only appear if there's a nondefault content type applied to the library. Default content types are *document* and *folder*.        |
 
 3. You can also search for custom site columns that are in the current library view. This is especially useful if you have a model running on the library because the metadata extractors automatically populate information into site columns.  
 
