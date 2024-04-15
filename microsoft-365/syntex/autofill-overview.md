@@ -14,6 +14,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
+ROBOTS: NOINDEX, NOFOLLOW
 description: Learn about the autofill columns service in Microsoft Syntex.
 ---
 
@@ -33,7 +34,6 @@ Autofill columns can work alongside other Microsoft Syntex models. You can assoc
 ### Supported file types
 
 Autofill columns is available for the following file types: TBD
-
 
 ## Supported column data types
 
