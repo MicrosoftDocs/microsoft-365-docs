@@ -1,11 +1,7 @@
 ---
 title: Alert classification for suspicious email forwarding activity
 description: Alert classification for suspicious email forwarding activity to review the alerts and take recommended actions to remediate the attack and protect your network.
-keywords: incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, alert classification, alert grading, classify alert
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords:
   - NOCSH
 ms.author: diannegali
@@ -21,7 +17,7 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - met150
-ms.date: 04/05/2023
+ms.date: 04/03/2024
 ---
 
 # Alert classification for suspicious email forwarding activity
@@ -31,9 +27,9 @@ ms.date: 04/05/2023
 **Applies to:**
 - Microsoft Defender XDR
 
-Threat actors can use compromised user accounts for several malicious purposes, including reading emails in a user's inbox, forwarding emails to external recipients, and sending phishing mails, among others. The targeted user might be unaware that their emails are being forwarded. This is a very common tactic that attackers use when user accounts are compromised.
+Threat actors can use compromised user accounts for several malicious purposes, including reading emails in a user's inbox, forwarding emails to external recipients, and sending phishing mails, among others. The targeted user might be unaware that their emails are being forwarded. This is a common tactic that attackers use when user accounts are compromised.
 
-Emails can be forwarded either manually or automatically using forwarding rules. Automatic forwarding can be implemented in multiple ways like Inbox Rules, Exchange Transport Rule (ETR), and SMTP Forwarding. While manual forwarding requires direct action from users, they might not be aware of all the auto-forwarded emails. In Microsoft 365, an alert is raised when a user auto-forwards an email to a potentially malicious email address.
+Emails can be forwarded either manually or automatically using forwarding rules. Automatic forwarding can be implemented in multiple ways like Inbox Rules, Exchange Transport Rule (ETR), and SMTP Forwarding. While manual forwarding requires direct action from users, they might not be aware of all the autoforwarded emails. In Microsoft 365, an alert is raised when a user autoforwards an email to a potentially malicious email address.
 
 This playbook helps you investigate Suspicious Email Forwarding Activity alerts and quickly grade them as either a true positive (TP) or a false positive (FP). You can then take recommended actions for the TP alerts to remediate the attack.
 
@@ -41,11 +37,11 @@ For an overview of alert classifications for Microsoft Defender for Office 365 a
 
 The results of using this playbook are:
 
-- You have identified the alerts associated with auto-forwarded emails as malicious (TP) or benign (FP) activities.
+- You identify the alerts associated with autoforwarded emails as malicious (TP) or benign (FP) activities.
 
-  If malicious, you have [stopped email auto-forwarding](../office-365-security/outbound-spam-policies-external-email-forwarding.md) for the affected mailboxes.
+  If malicious, you have [stop email autoforwarding](../office-365-security/outbound-spam-policies-external-email-forwarding.md) for the affected mailboxes.
 
-- You have taken the necessary action if emails have been forwarded to a malicious email address.
+- You take the necessary action if emails were forwarded to a malicious email address.
 
 ## Email forwarding rules
 
@@ -55,7 +51,7 @@ Email forwarding rules allow users to create a rule to forward email messages se
 
 Attackers might set up email rules to hide incoming emails in the compromised user mailbox to obscure their malicious activities from the user. They might also set rules in the compromised user mailbox to delete emails, move the emails into another less noticeable folder such as an RSS folder, or forward emails to an external account.
 
-Some rules might move all the emails to another folder and mark them as "read", while some rules might move only mails which contain specific keywords in the email message or subject. For example, the inbox rule might be set to look for keywords like "invoice", "phish", "do not reply", "suspicious email", or "spam" among others, and move them to an external email account. Attackers might also use the compromised user mailbox to distribute spam, phishing emails, or malware.
+Some rules might move all the emails to another folder and mark them as "read", while some rules might move only mails that contain specific keywords in the email message or subject. For example, the inbox rule might be set to look for keywords like "invoice," "phish," "do not reply," "suspicious email," or "spam," among others, and move them to an external email account. Attackers might also use the compromised user mailbox to distribute spam, phishing emails, or malware.
 
 Microsoft Defender for Office 365 can detect and alert on suspicious email forwarding rules, allowing you to find and delete hidden rules at the source.
 
@@ -85,10 +81,10 @@ While investigating this alert, you must determine:
 
 By looking at sender's past behavior and recent activities, you should be able to determine whether the user's account should be considered compromised or not. You can see the details of alerts raised from the user's page in the Microsoft Defender portal.
 
-You can also analyze these additional activities for the affected mailbox:
+You can also analyze these other activities for the affected mailbox:
 
 - Use Threat Explorer to understand email related threats
-  - Observe how many of the recent email sent by the sender are detected as phish, spam or malware.
+  - Observe how many of the recent email sent by the sender are detected as phish, spam, or malware.
   - Observe how many of the sent emails contain sensitive information.
 
 - Assess risky sign-in behavior in the Microsoft Azure portal.
@@ -100,12 +96,12 @@ Investigate the email forwarding activity. For instance, check the type of email
 
 For more information, see the following articles:
 
-- [Auto-forwarded messages report in the EAC](/exchange/monitoring/mail-flow-reports/mfr-auto-forwarded-messages-report)
+- [Autoforwarded messages report in the EAC](/exchange/monitoring/mail-flow-reports/mfr-auto-forwarded-messages-report)
 - [New users forwarding email insight in the EAC](/exchange/monitoring/mail-flow-insights/mfi-new-users-forwarding-email-insight)
 - [Responding to a Compromised Email Account](/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account)
 - [Report false positives and false negatives in Outlook](/microsoft-365/security/office-365-security/submissions-outlook-report-messages)
 
-Here is the workflow to identify suspicious email forwarding activities.
+Here's the workflow to identify suspicious email forwarding activities.
 
 :::image type="content" source="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-workflow.png" alt-text="Alert investigation workflow for email forwarding" lightbox="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-workflow.png":::
 
@@ -127,7 +123,7 @@ Threat Explorer provides an interactive investigation experience for email relat
 
     :::image type="content" source="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-network-message-id.png" alt-text="Example of the Network Message ID" lightbox="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-network-message-id.png":::
 
-  - What additional details are available for this email? For example: subject, return path, and timestamp.
+  - What other details are available for this email? For example: subject, return path, and timestamp.
   - What is the origin of this email? Are there any similar emails?
   - Does this email contain any URLs? Does the URL point to any sensitive data?
   - Does the email contain any attachments? Do the attachments contain sensitive information?
@@ -146,12 +142,12 @@ To use [advanced Hunting](advanced-hunting-overview.md) queries to gather inform
 
 - CloudAppEvents -Contains audit log of user activities.
 
-- IdentityLogonEvents - Contains login information for all users.
+- IdentityLogonEvents - Contains sign-in information for all users.
 
 > [!NOTE]
 > Certain parameters are unique to your organization or network. Fill in these specific parameters as instructed in each query.
 
-Run this query to find out who else has forwarded emails to these recipients (SRL/RL).
+Run this query to find out who else forwarded emails to these recipients (SRL/RL).
 
 ```kusto
 let srl=pack_array("{SRL}"); //Put values from SRL here.
@@ -210,7 +206,7 @@ CloudAppEvents
 | where ActionType in (action_types)
 ```
 
-Run this query to find out if there were any anomalous login events from this user. For example: unknown IPs, new applications, uncommon countries/regions, multiple LogonFailed events.
+Run this query to find out if there were any anomalous sign-in events from this user. For example: unknown IPs, new applications, uncommon countries/regions, multiple LogonFailed events.
 
 ```kusto
 let sender = "{SENDER}"; //Replace {SENDER} with email of the Forwarder
@@ -250,7 +246,7 @@ Once you determine that the activities associated make this alert a True Positiv
 
     - Reset the user account's credentials.
 
-4. Check for additional activities originated from impacted accounts, IP addresses, and suspicious senders.
+4. Check for other activities originated from impacted accounts, IP addresses, and suspicious senders.
 
 ## See also
 
@@ -258,4 +254,5 @@ Once you determine that the activities associated make this alert a True Positiv
 - [Suspicious inbox forwarding rules](alert-grading-playbook-inbox-forwarding-rules.md)
 - [Suspicious inbox manipulation rules](alert-grading-playbook-inbox-manipulation-rules.md)
 - [Investigate alerts](investigate-alerts.md)
+
 [!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

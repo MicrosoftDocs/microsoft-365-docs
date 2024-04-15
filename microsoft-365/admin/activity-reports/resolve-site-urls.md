@@ -41,13 +41,13 @@ To display site URLs using PowerShell, follow these steps.
 
 ### Create an Entra ID Application
 
-1. Go to [Microsoft Entra admin center](https://entra.microsoft.com/) **>** Applications **>** App registrations.
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2067268" target="_blank">Microsoft Entra admin center</a> > **Applications** > **App registrations**.
 
 2. On the App registrations page, select **New registrations**.
 
 3. Pick a name for this application, and use the default configuration to register the app.
 
-Remember, the **client id** and **tenant id** are displayed in the app’s **Essentials** section.
+Remember, the **client id** and **tenant id** are displayed in the app's **Essentials** section.
 
 :::image type="content" source="../../media/client-tenant-id-field.png" alt-text="Screenshot showing the fields for client and field ID highlighted.":::
 
@@ -73,9 +73,9 @@ Download the site details report on the two report pages and put the CSV report 
 
 Before downloading the reports, make sure to turn off the privacy setting for user details. For details, see [Microsoft 365 admin center activity reports](activity-reports.md).
 
-For SharePoint site usage, go to the [SharePoint site usage page in the Microsoft 365 admin center](https://admin.microsoft.com/AdminPortal/Home#/reportsUsage/SharePointSiteUsageV1).
+For SharePoint site usage, go to the <a href="https://admin.cloud.microsoft/?#/reportsUsage/SharePointSiteUsageV1" target="_blank">SharePoint site usage</a> page in the Microsoft 365 admin center.
 
-For OneDrive site usage, go to the [OneDrive site usage page in the Microsoft 365 admin center](https://admin.microsoft.com/AdminPortal/Home#/reportsUsage/OneDriveSiteUsage).
+For OneDrive site usage, go to the <a href="https://admin.cloud.microsoft/?#/reportsUsage/OneDriveSiteUsage" target="_blank">OneDrive site usage</a> page in the Microsoft 365 admin center.
 
 ### Update the reports with site URLs
 
@@ -108,7 +108,8 @@ To clean up the environment, go back to the application's **Certificates & secre
 The following is the PowerShell script for Update-Report.
 
    ```PowerShell
-       [Parameter(Mandatory=$true)]
+    param(
+    [Parameter(Mandatory=$true)]
     [string]$tenantId,
     [Parameter(Mandatory=$true)]
     [string]$clientId,

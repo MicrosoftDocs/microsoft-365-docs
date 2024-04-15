@@ -7,6 +7,7 @@ ms.reviewer: jkinma, ramagane
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-management
 ms.localizationpriority: medium
 ms.collection: 
 - Tier1
@@ -15,8 +16,9 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom: 
-- commerce_subscriptions
+- commerce_billing
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid: MET150 
 description: "Learn how to use the cost management feature in the Microsoft 365 admin center to view, analyze, and manage costs for your organization."
 ms.date: 03/09/2022
@@ -24,7 +26,7 @@ ms.date: 03/09/2022
 
 # Use Cost management in the Microsoft 365 admin center
 
-If you're a Global or Billing admin with a Microsoft Customer Agreement (MCA), you can use the **Cost management** page in the Microsoft 365 admin center to view, analyze, and manage your service costs. To get to the **Cost management** page, in the admin center left navigation pane, select **Billing** > **Cost management**.
+If you're a Global or Billing admin with a Microsoft Customer Agreement (MCA), you can use the <a href="https://go.microsoft.com/fwlink/p/?linkid=2201187" target="_blank">Cost management</a> page in the Microsoft 365 admin center to view, analyze, and manage your service costs. To get to the **Cost management** page, in the admin center left navigation pane, select **Billing** > **Cost management**.
 
 ## Before you begin
 

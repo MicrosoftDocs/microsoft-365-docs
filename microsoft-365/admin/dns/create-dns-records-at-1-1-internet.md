@@ -94,7 +94,7 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
 
 1. Select **Add record**.
 
-    :::image type="content" source="../../media/dns-ionos/ionos-domains-3.png" alt-text="Select Add record.":::
+    :::image type="content" source="../../media/dns-ionos/ionos-domains-3.png" alt-text="Screenshot of where you select Add record to add a domain verification TXT record.":::
 
 1. Select the **TXT** section.
 
@@ -108,7 +108,7 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
 
 1. Select **Save**.
 
-    :::image type="content" source="../../media/dns-ionos/ionos-domains-5.png" alt-text="Select Save.":::
+    :::image type="content" source="../../media/dns-ionos/ionos-domains-5.png" alt-text="Screenshot of where you select Save to add a TXT verification record.":::
 
     Wait a few minutes before you continue, so that the record you just created can update across the Internet.
 
@@ -146,7 +146,7 @@ To verify the record in Microsoft 365:
 
 1. Select **Add record**.
 
-    :::image type="content" source="../../media/dns-ionos/ionos-domains-3.png" alt-text="Select Add record.":::
+    :::image type="content" source="../../media/dns-ionos/ionos-domains-3.png" alt-text="Screenshot of where you select Add record to add an MX record.":::
 
 1. Select the **MX** section.
 
@@ -160,7 +160,7 @@ To verify the record in Microsoft 365:
 
 1. Select **Save**.
 
-    :::image type="content" source="../../media/dns-ionos/ionos-domains-mx-save.png" alt-text="Select Save.":::
+    :::image type="content" source="../../media/dns-ionos/ionos-domains-mx-save.png" alt-text="Screenshot of where you select Save to add an MX record.":::
 
 1. If there are any MX records already listed, delete each of them by selecting the **Delete record** trash can on the **Add record** page.
 
@@ -233,7 +233,7 @@ To verify the record in Microsoft 365:
 
 1. Select **Add record**.
 
-    :::image type="content" source="../../media/dns-ionos/ionos-domains-3.png" alt-text="Select Add record.":::
+    :::image type="content" source="../../media/dns-ionos/ionos-domains-3.png" alt-text="Screenshot of where you select Add record to add an SPF TXT record.":::
 
 1. Select the **SPF (TXT)** section.
 
@@ -247,7 +247,7 @@ To verify the record in Microsoft 365:
 
 1. Select **Save**.
 
-   :::image type="content" source="../../media/dns-ionos/ionos-domains-spftxt-save.png" alt-text="Select Save.":::
+   :::image type="content" source="../../media/dns-ionos/ionos-domains-spftxt-save.png" alt-text="Screenshot of where you select Save to add an SPF TXT record.":::
 
 ## Advanced option: Skype for Business
 
@@ -307,7 +307,7 @@ Only select this option if your organization uses Skype for Business for online 
 
 1. Select **Add record**.
 
-    :::image type="content" source="../../media/dns-ionos/ionos-domains-3.png" alt-text="Select Add record.":::
+    :::image type="content" source="../../media/dns-ionos/ionos-domains-3.png" alt-text="Screenshot of where you select Add record to add CNAME records for Skype for Business.":::
 
 1. Select the **CNAME** section.
 
@@ -336,7 +336,7 @@ Only select this option if your organization uses Skype for Business for online 
 
 1. Select **Add record**.
 
-    :::image type="content" source="../../media/dns-ionos/ionos-domains-3.png" alt-text="Select Add record.":::
+    :::image type="content" source="../../media/dns-ionos/ionos-domains-3.png" alt-text="Screenshot of where you select Add record to add an SRV record.":::
 
 1. Select the **SRV** section.
 
@@ -351,7 +351,7 @@ Only select this option if your organization uses Skype for Business for online 
 
 1. Select **Save**.
 
-    :::image type="content" source="../../media/dns-ionos/ionos-domains-srv-save.png" alt-text="Select Save.":::
+    :::image type="content" source="../../media/dns-ionos/ionos-domains-srv-save.png" alt-text="Screenshot of where you select Save to add an SRV record.":::
 
 1. Add the other SRV record.
 
@@ -419,7 +419,7 @@ This service helps you secure and remotely manage mobile devices that connect to
 
 1. Select **Add record**.
 
-    :::image type="content" source="../../media/dns-ionos/ionos-domains-3.png" alt-text="Select Add record.":::
+    :::image type="content" source="../../media/dns-ionos/ionos-domains-3.png" alt-text="Screenshot of where you select Add record to add CNAME records for Mobile Device Management.":::
 
 1. Select the **CNAME** section.
 

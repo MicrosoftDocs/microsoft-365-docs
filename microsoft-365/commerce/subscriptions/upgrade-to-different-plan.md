@@ -9,6 +9,7 @@ ms.reviewer: mijeffer, nicholak
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
 ms.collection: 
 - Tier1
@@ -20,6 +21,7 @@ ms.custom:
 - SaRA
 - AdminSurgePortfolio
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid: MET150 
 description: "Learn how to upgrade or change to a different plan in the Microsoft 365 admin center."
 ms.date: 02/23/2024

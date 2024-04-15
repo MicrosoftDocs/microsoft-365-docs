@@ -97,6 +97,8 @@ Getting information for a user requires the **User.ReadBasic.All** permission sc
 
 The Organization.Read.All permission scope is required to read the licenses available in the tenant.
 
+[!INCLUDE [Azure AD PowerShell deprecation note](~/../microsoft-365/reusable-content/msgraph-powershell/includes/aad-powershell-deprecation-note.md)]
+
 ```powershell
 Connect-MgGraph -Scopes "User.ReadBasic.All"
 Get-MgUser -All -Property DisplayName, UsageLocation | Select DisplayName, UsageLocation
