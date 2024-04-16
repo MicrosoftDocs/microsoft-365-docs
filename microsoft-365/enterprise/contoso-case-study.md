@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: kvice
 manager: scotv
-ms.date: 09/13/2018
+ms.date: 04/12/2024
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -14,6 +14,7 @@ ms.collection:
 - scotvorg 
 - Strat_O365_Enterprise
 - M365-subscription-management
+- must-keep
 ms.custom:
 
 description: How a fictional but representative global organization adopted Microsoft 365 for enterprise. 
@@ -86,7 +87,6 @@ See these additional IT scenarios and configurations:
 ## Next step
 
 Learn [about the Contoso Corporation](contoso-overview.md) and the design considerations that were addressed when they deployed Microsoft 365 for enterprise.
-
 
 ## See also
 
