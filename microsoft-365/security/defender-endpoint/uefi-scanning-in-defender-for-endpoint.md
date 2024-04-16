@@ -80,7 +80,7 @@ Firmware scanning is orchestrated by runtime events like suspicious driver load 
 
 :::image type="content" source="media/windows-security-detecting-malicious-content-in-nvram.png" alt-text="Screenshot that shows Windows Security notification for malicious content in NVRAM":::
 
-Defender for Endpoint customers also see these detections raised as alerts in the [Microsoft Defender portal](https://security.microsoft.com/), empowering security operations teams to investigate and respond to firmware attacks and suspicious activities at the firmware level in their environments.
+Defender for Endpoint customers can see these detections raised as alerts in the [Microsoft Defender portal](https://security.microsoft.com/), empowering security operations teams to investigate and respond to firmware attacks and suspicious activities at the firmware level in their environments.
 
 :::image type="content" source="media/mde-alert-detecting-malicious-code-in-firmware.png" alt-text="Screenshot that shows Defender for Endpoint alert detecting malicious code":::
 
