@@ -1,7 +1,7 @@
 ---
-title: Accessing Defender Experts notifications via Graph API
+title: Accessing Defender Experts notifications using Graph API
 ms.reviewer:
-description: The method to access Defender Experts Notifications via Graph security API
+description: The method to access Defender Experts Notifications using Graph security API
 ms.service: defender-experts
 ms.subservice: dex-xdr
 ms.author: vpattnaik
@@ -24,31 +24,30 @@ ms.date: 04/15/2024
 
 - [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Defender Experts Notifications (DENs) are incidents in Microsoft Defender portal that have been generated from hunting conducted by Defender Experts in your tenant.
+[Defender Experts Notifications](onboarding-defender-experts-for-hunting.md#receive-defender-experts-notifications) are incidents that have been generated from hunting conducted by Defender Experts in your environment. They contain information regarding the hunting investigation and recommended actions provided by Defender Experts.
 
 > [!NOTE]
 > Any incident in the Microsoft Defender portal is a collection of correlated alerts. [Learn more](/graph/api/resources/security-incident)
 
-DENs contain information provided by Defender Experts regarding the hunting investigation and recommended actions in the following fields. The below fields are available in Microsoft Defender portal. [Learn more](onboarding-defender-experts-for-hunting.md#receive-defender-experts-notifications) about that experience here.
+The following Defender Experts Notification details are available in the Microsoft Defender portal:
 
-- **Incident Title**- starts with _Defender Experts_ to identify which incidents are DENs
-- **Executive Summary**- lists investigation summary
-- **Recommendation Summary**- list recommended actions
-- **AHQs**- lists converted KQL queries that were used in hunting
+- **Incident title** - starts with _Defender Experts_ to distinguish Defender Experts Notifications from other incidents
+- **Executive summary** - provides an overview of the investigation summary
+- **Recommendation summary** - lists the recommended actions from Defender Experts
+- **Advanced huting queries** - lists the converted KQL hunting queries used for the investigation
 
-The following fields are also available in Graph Security API.
+In Graph Security API, the following fields are also available:
 
 - **Graph endpoint** -  https://graph.microsoft.com/beta/security/incidents 
-- **Fields names** - corresponding to above mentioned fields
+- The following **field names** that correspond to the details mentioned earlier:
+  - displayName
+  - description
+  - recommendedActions
+  - recommendedHuntingQueries
 
-1. displayName
-2. description
-3. recommendedActions
-4. recommendedHuntingQueries
+Your approach to consuming Defender Experts Notifications from the API will vary depending on the downstream system you intend to use and your specific requirements. However, the following is a basic implementation to help you get started:
 
-Your approach to consuming DENs from the API will vary depending on the downstream system you intend to use and your specific requirements. However, below is a basic implementation to help you get started.
-
-- Get incidents from Graph Security API.
-- Check for new incidents where displayName starts with _Defender Experts_ to identify DENs.
-- Continue reading the remaining fields for such incidents.
-- Sync the DEN information into your downstream tool (such as ServiceNow, etc).
+1. Get incidents from Graph Security API
+2. Check for new incidents where **displayName** starts with _Defender Experts_
+3. Continue reading the remaining fields for such incidents
+4. Synchronize the Defender Experts Notification information into your downstream tool (for example, ServiceNow).
