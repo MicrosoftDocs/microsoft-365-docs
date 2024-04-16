@@ -130,9 +130,9 @@ This procedure updates the *MTO_Sync_\<TenantID\>* synchronization configuration
 
 ## Set up calendar sharing for tenants in your MTO
 
-Calendar sharing allows users in each MTO tenant to view free/busy (time only) calendar availability information.
+Calendar sharing allows users in each multitenant organization (MTO) tenant to view free/busy (time only) calendar availability information.
 
-To manage free/busy calendar sharing for tenants in your MTO
+To manage free/busy calendar sharing for tenants in your MTO:
 
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) as a global administrator.
 1. Expand **Settings** and select **Org settings**.
