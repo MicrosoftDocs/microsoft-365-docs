@@ -1,15 +1,9 @@
 ---
 title: Optimize and correct security policies with configuration analyzer
 description: The steps to optimize and correct security policies with configuration analyzer. Configuration analyzer is a central location and single pane of glass for administering and viewing the email security policies you have configured in your tenant.
-search.product:
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-f1.keywords:
-  - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.service: defender-office-365
+author: chrisda
+ms.author: chrisda
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -18,9 +12,8 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: how-to
-ms.subservice: mdo
 search.appverid: met150
-ms.date: 1/31/2023
+ms.date: 01/31/2023
 ---
 
 # Optimize and correct security policies with configuration analyzer

@@ -1,11 +1,7 @@
 ---
 title: Overview - Advanced hunting
 description: Learn about advanced hunting queries in Microsoft 365 and how to use them to proactively find threats and weaknesses in your network
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft Defender XDR, microsoft 365, m365, search, query, telemetry, custom detections, schema, kusto
 ms.service: defender-xdr
-ms.subservice: adv-hunting
-ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
@@ -21,7 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: seo-marvel-apr2020
 search.appverid: met150
-ms.date: 02/16/2021
+ms.date: 03/28/2024
 ---
 
 # Proactively hunt for threats with advanced hunting in Microsoft Defender XDR

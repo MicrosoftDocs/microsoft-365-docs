@@ -33,7 +33,7 @@ When collaborating with Microsoft support professionals, you might be asked to u
 
 Run `MDEClientAnalyzer.cmd /?` to see the list of available parameters and their description:
 
-:::image type="content" source="images/MDEClientAnalyzerHelp.png" alt-text="The parameters for MDEClientAnalyzer.cmd" lightbox="images/MDEClientAnalyzerHelp.png":::
+:::image type="content" source="media/MDEClientAnalyzerHelp.png" alt-text="The parameters for MDEClientAnalyzer.cmd" lightbox="media/MDEClientAnalyzerHelp.png":::
 
 | Switch | Description | When to use| Process that you're troubleshooting. |
 |:---|:---|:---|:---|
@@ -48,7 +48,7 @@ Run `MDEClientAnalyzer.cmd /?` to see the list of available parameters and their
 |`-t` |Starts verbose trace of all client-side components relevant to Endpoint DLP, which is useful for scenarios where [DLP actions](/microsoft-365/compliance/endpoint-dlp-learn-about#endpoint-activities-you-can-monitor-and-take-action-on) aren't happening as expected for files. |When running into issues where the Microsoft Endpoint Data Loss Prevention (DLP) actions expected aren't occurring.|`MpDlpService.exe` |
 |`-q`|Calls into DLPDiagnose.ps1 script from the analyzer `Tools` directory that validates the basic configuration and requirements for Endpoint DLP. |Checks the basic configuration and requirements for Microsoft Endpoint DLP|`MpDlpService.exe`|
 |`-d`|Collects a memory dump of `MsSenseS.exe` (the sensor process on Windows Server 2016 or older OS) and related processes. - \* This flag can be used with above mentioned flags. - \*\* Capturing a memory dump of [PPL protected processes](/windows-hardware/drivers/install/early-launch-antimalware) such as `MsSense.exe` or `MsMpEng.exe` isn't supported by the analyzer at this time.|On Windows 7 SP1, Windows 8.1, Windows Server 2008 R2, Windows Server 2012 R2 or Windows Server 2016 running w/ the MMA agent and having performance (high cpu or high memory usage) or application compatibility issues. |`MsSenseS.exe`|
-|`-z` |Configures registry keys on the machine to prepare it for full machine memory dump collection via [CrashOnCtrlScroll](/windows-hardware/drivers/debugger/forcing-a-system-crash-from-the-keyboard). This would be useful for analysis of computer freeze issues. \* Hold down the rightmost CTRL key, then press the SCROLL LOCK key twice. |Machine hanging or being unresponsive or slow. High memory usage (Memory leak): a) User mode: Private bytes b) Kernel mode: paged pool or nonaged pool memory, handle leaks.|`MSSense.exe` or `MsMpEng.exe` |
+|`-z` |Configures registry keys on the machine to prepare it for full machine memory dump collection via [CrashOnCtrlScroll](/windows-hardware/drivers/debugger/forcing-a-system-crash-from-the-keyboard). This would be useful for analysis of computer freeze issues. \* Hold down the rightmost CTRL key, then press the SCROLL LOCK key twice. |Machine hanging or being unresponsive or slow. High memory usage (Memory leak): a) User mode: Private bytes b) Kernel mode: paged pool or nonpaged pool memory, handle leaks.|`MSSense.exe` or `MsMpEng.exe` |
 |`-k` |Uses [NotMyFault](/sysinternals/downloads/notmyfault) tool to force the system to crash and generate a machine memory dump. This would be useful for analysis of various OS stability issues. |Same as above.|`MSSense.exe` or `MsMpEng.exe` |
 
 The analyzer, and all of the scenario flags listed in this article, can be initiated remotely by running `RemoteMDEClientAnalyzer.cmd`, which is also bundled into the analyzer toolset:

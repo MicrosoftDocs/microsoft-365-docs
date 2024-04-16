@@ -64,7 +64,7 @@ An alternative to advanced hunting, but with a narrower scope, is the Microsoft 
 
 The following screenshot shows the Timeline view of these events on a given endpoint. From this view, you can filter the events list based on any of the Event Groups along the right-side pane. You can also enable or disable Flagged and Verbose events while viewing alerts and scrolling through the historical timeline.
 
-:::image type="content" source="images/mic-sec-def-timelinenew.png" alt-text="The Microsoft Defender XDR timeline" lightbox="images/mic-sec-def-timelinenew.png":::
+:::image type="content" source="media/mic-sec-def-timelinenew.png" alt-text="The Microsoft Defender XDR timeline" lightbox="media/mic-sec-def-timelinenew.png":::
 
 ## How to troubleshoot attack surface reduction rules?
 
@@ -118,7 +118,7 @@ You can find this utility in *%ProgramFiles%\Windows Defender\MpCmdRun.exe*. You
 
 To generate the support information, type *MpCmdRun.exe -getfiles*. After a while, several logs will be packaged into an archive (MpSupportFiles.cab) and made available in *C:\ProgramData\Microsoft\Windows Defender\Support*.
 
-:::image type="content" source="images/malware-prot-logsnew.png" alt-text="The malware protection logs" lightbox="images/malware-prot-logsnew.png":::
+:::image type="content" source="media/malware-prot-logsnew.png" alt-text="The malware protection logs" lightbox="media/malware-prot-logsnew.png":::
 
 Extract that archive and you'll have many files available for troubleshooting purposes.
 

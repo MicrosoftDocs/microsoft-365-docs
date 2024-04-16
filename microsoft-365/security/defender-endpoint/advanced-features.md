@@ -4,6 +4,7 @@ description: Turn on advanced features such as block file in Microsoft Defender 
 ms.service: defender-endpoint
 ms.author: siosulli
 author: siosulli
+ms.reviewer: yongrhee
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro
@@ -13,7 +14,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: onboard
 search.appverid: met150
-ms.date: 08/15/2023
+ms.date: 04/08/2024
 ---
 
 # Configure advanced features in Defender for Endpoint
@@ -56,12 +57,6 @@ For more information about role assignments, see [Create and manage roles](user-
 ## Live response unsigned script execution
 
 Enabling this feature allows you to run unsigned scripts in a live response session.
-
-## Always remediate PUA
-
-Potentially unwanted applications (PUA) are a category of software that can cause your machine to run slowly, display unexpected ads, or at worst, install other software, which might be unexpected or unwanted.
-
-Turn on this feature so that potentially unwanted applications (PUA) are remediated on all devices in your tenant even if PUA protection isn't configured on the devices. This activation of the feature helps to protect users from inadvertently installing unwanted applications on their device. When turned off, remediation is dependent on the device configuration.
 
 ## Restrict correlation to within scoped device groups
 

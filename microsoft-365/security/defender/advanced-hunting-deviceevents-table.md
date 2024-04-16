@@ -1,14 +1,9 @@
 ---
 title: DeviceEvents table in the advanced hunting schema
 description: Learn about antivirus, firewall, and other event types in the miscellaneous device events (DeviceEvents) table of the advanced hunting schema
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft Defender XDR, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, security events, antivirus, firewall, exploit guard, DeviceEvents
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
 ms.subservice: adv-hunting
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: 
   - NOCSH
 ms.author: maccruz
@@ -20,7 +15,7 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: reference
-ms.date: 01/16/2024
+ms.date: 04/11/2024
 ---
 
 # DeviceEvents
@@ -52,7 +47,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `MD5` | `string` | MD5 hash of the file that the recorded action was applied to |
 | `FileSize` | `long` | Size of the file in bytes |
 | `AccountDomain` | `string` | Domain of the account |
-| `AccountName` | `string` | User name of the account |
+| `AccountName` | `string` | User name of the account; if the device is registered in Microsoft Entra ID, the Entra ID user name of the account might be shown instead |
 | `AccountSid` | `string` | Security Identifier (SID) of the account |
 | `RemoteUrl` | `string` | URL or fully qualified domain name (FQDN) that was being connected to |
 | `RemoteDeviceName` | `string` | Name of the device that performed a remote operation on the affected device. Depending on the event being reported, this name could be a fully-qualified domain name (FQDN), a NetBIOS name, or a host name without domain information. |
@@ -80,9 +75,9 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `InitiatingProcessCommandLine` | `string` | Command line used to run the process that initiated the event |
 | `InitiatingProcessCreationTime` | `datetime` | Date and time when the process that initiated the event was started |
 | `InitiatingProcessAccountDomain` | `string` | Domain of the account that ran the process responsible for the event |
-| `InitiatingProcessAccountName` | `string` | User name of the account that ran the process responsible for the event |
+| `InitiatingProcessAccountName` | `string` | User name of the account that ran the process responsible for the event; if the device is registered in Microsoft Entra ID, the Entra ID user name of the account that ran the process responsible for the event might be shown instead |
 | `InitiatingProcessAccountSid` | `string` | Security Identifier (SID) of the account that ran the process responsible for the event |
-| `InitiatingProcessAccountUpn` | `string` | User principal name (UPN) of the account that ran the process responsible for the event |
+| `InitiatingProcessAccountUpn` | `string` | User principal name (UPN) of the account that ran the process responsible for the event; if the device is registered in Microsoft Entra ID, the Entra ID UPN of the account that ran the process responsible for the event might be shown instead |
 | `InitiatingProcessAccountObjectId` | `string` | Microsoft Entra object ID of the user account that ran the process responsible for the event |
 | `InitiatingProcessVersionInfoCompanyName` | `string` | Company name from the version information of the process (image file) responsible for the event |
 | `InitiatingProcessVersionInfoProductName` | `string` | Product name from the version information of the process (image file) responsible for the event |

@@ -21,6 +21,7 @@ ms.custom:
 - VSBFY23
 - AdminSurgePortfolio
 - AdminTemplateSet
+- basic-mobility-security
 search.appverid:
 - MET150
 description: "Set up Basic Mobility and Security to secure and manage your users' mobile devices by performing actions such as remotely wiping a device."
@@ -38,7 +39,7 @@ Have questions? For a FAQ to help address common questions, see [Basic Mobility 
 
 1. Sign in to Microsoft 365 with your global admin account.
 
-2. Go to <a href="https://admin.cloud.microsoft.com/EAdmin/Device/IntuneInventory.aspx" target="_blank">Activate Basic Mobility and Security</a>.
+2. Go to <a href="https://admin.cloud.microsoft/EAdmin/Device/IntuneInventory.aspx" target="_blank">Activate Basic Mobility and Security</a>.
 
    It can take some time to activate Basic Mobility and Security. When it finishes, select **Manage devices** on the page. You'll also receive an email that explains the next steps to take if you don't see the Manage devices page.
 

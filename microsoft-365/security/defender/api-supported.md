@@ -1,12 +1,7 @@
 ---
 title: Supported Microsoft Defender XDR APIs
 description: Supported Microsoft Defender XDR APIs
-keywords: Microsoft Defender XDR, APIs, api
-search.product: eADQiWindows 10XVcnh
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: 
   - NOCSH
 ms.author: macapara
@@ -23,7 +18,7 @@ search.appverid:
   - MOE150
   - MET150
 ms.custom: api
-ms.date: 02/08/2023
+ms.date: 02/08/2024
 ---
 
 # Supported Microsoft Defender XDR APIs

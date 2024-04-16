@@ -2,20 +2,20 @@
 title: Responding to your first incident in Microsoft Defender XDR
 description: The basics of responding to your first incident in Microsoft Defender XDR.
 ms.service: defender-xdr
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: diannegali
 author: diannegali
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - m365-security
   - m365solution-firstincident
   - highpri
   - tier1
 ms.topic: conceptual
-search.appverid: 
+search.appverid:
   - MOE150
   - MET150
 ms.date: 01/22/2024
@@ -44,7 +44,7 @@ This guide has three main sections:
 
 ## Understanding incidents
 
-An [incident](incidents-overview.md) is a chain of processes created, commands, and actions that might not have coincided. An incident provides a holistic picture and context of suspicious or malicious activity. A single incident gives you an attack's complete context instead of triaging hundreds of alerts from multiple services. 
+An [incident](incidents-overview.md) is a chain of processes created, commands, and actions that might not have coincided. An incident provides a holistic picture and context of suspicious or malicious activity. A single incident gives you an attack's complete context instead of triaging hundreds of alerts from multiple services.
 
 > [!TIP]
 > For a limited time during January 2024, when you visit the **Incidents** page, Defender Boxed appears. Defender Boxed highlights your organization's security successes, improvements, and response actions during 2023. To reopen Defender Boxed, in the Microsoft Defender portal, go to **Incidents**, and then select **Your Defender Boxed**.
@@ -61,7 +61,7 @@ Each incident contains automatically correlated [alerts](investigate-alerts.md) 
 
 ## Incident triage
 
-Incident prioritization varies per responder, security team, and organization. [Incident response plans](/security/operations/incident-response-planning) and security teams' direction can mandate incident priority. 
+Incident prioritization varies per responder, security team, and organization. [Incident response plans](/security/operations/incident-response-planning) and security teams' direction can mandate incident priority.
 
 Microsoft Defender XDR has various indicators like incident severity, types of users, or threat types to triage and prioritize incidents. You can use any combination of these indicators readily available through the [incident queue](incident-queue.md) filters.
 
@@ -91,10 +91,9 @@ Learn how to classify incidents and alerts through this video:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LHJq]
 
-
 ## Next steps
 
--	[Analyze your first incident](respond-first-incident-analyze.md)
+- [Analyze your first incident](respond-first-incident-analyze.md)
 - [Remediate your first incident](respond-first-incident-remediate.md)
 - Watch demos and the portal's new developments in action in the [Microsoft Defender XDR Virtual Ninja Training](https://adoption.microsoft.com/en-us/ninja-show/)
 
