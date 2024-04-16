@@ -47,7 +47,7 @@ This article provides information about Microsoft Defender for Endpoint attack s
 
 Attack surface reduction rules are categorized as one of two types:
 
-- **Standard protection rules**: Are the minimum set of rules which Microsoft recommends you always enable, while you are evaluating the impact and configuration needs of the other ASR rules. These rules typically have minimal-to-no noticeable impact on the end user.
+- **Standard protection rules**: Are the minimum set of rules which Microsoft recommends you always enable, while you're evaluating the affect and configuration needs of the other ASR rules. These rules typically have minimal-to-no noticeable impact on the end user.
 
 - **Other rules**: Rules which require some measure of following the documented deployment steps [Plan > Test (audit) > Enable (block/warn modes)], as documented in the [Attack surface reduction rules deployment guide](attack-surface-reduction-rules-deployment.md)
 
