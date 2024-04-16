@@ -5,7 +5,7 @@ f1.keywords:
 author: kelleyvice-msft
 ms.author: kvice
 manager: scotv
-ms.date: 12/28/2023
+ms.date: 04/12/2024
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -69,7 +69,7 @@ There are three ways to require your users to use MFA based on your Microsoft 36
 
 ### Security defaults
 
-Security defaults is a new feature for Microsoft 365 and Office 365 paid or trial subscriptions created after October 21, 2019. These subscriptions have security defaults turned on, which ***requires all of your users to use MFA with the Microsoft Authenticator app***.
+**Security defaults** is a new feature for Microsoft 365 and Office 365 paid or trial subscriptions created after October 21, 2019. These subscriptions have security defaults turned on, which ***requires all of your users to use MFA with the Microsoft Authenticator app***.
 
 Users have 14 days to register for MFA with the Microsoft Authenticator app from their smart phones, which begins from the first time they sign in after security defaults has been enabled. After 14 days have passed, the user won't be able to sign in until MFA registration is completed.
 
@@ -83,7 +83,7 @@ Conditional Access policies are a set of rules that specify the conditions under
 
 - If the user account name is a member of a group for users that are assigned the Exchange, user, password, security, SharePoint, **Exchange admin**, **SharePoint admin**, or **Global admin** roles, require MFA before allowing access.
 
-This policy allows you to require MFA based on group membership, rather than trying to configure individual user accounts for MFA when they are assigned or unassigned from these administrator roles.
+This policy allows you to require MFA based on group membership, rather than trying to configure individual user accounts for MFA when they're assigned or unassigned from these administrator roles.
 
 You can also use Conditional Access policies for more advanced capabilities, such as requiring that the sign-in is done from a compliant device, such as your laptop running Windows 11.
 
@@ -95,8 +95,8 @@ For more information, see the [overview of Conditional Access](/azure/active-dir
 
 Keep the following in mind:
 
-- You cannot enable security defaults if you have any Conditional Access policies enabled.
-- You cannot enable any Conditional Access policies if you have security defaults enabled.
+- You can't enable security defaults if you have any Conditional Access policies enabled.
+- You can't enable any Conditional Access policies if you have security defaults enabled.
 
 If security defaults are enabled, all new users are prompted for MFA registration and the use of the Microsoft Authenticator app.
 

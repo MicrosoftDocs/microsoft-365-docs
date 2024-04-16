@@ -5,9 +5,9 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 11/15/2023
+ms.date: 04/11/2024
 ms.topic: conceptual
-ms.service: microsoft-syntex
+ms.service: microsoft-365-archive
 ms.custom: archive
 search.appverid:
 ms.collection:
