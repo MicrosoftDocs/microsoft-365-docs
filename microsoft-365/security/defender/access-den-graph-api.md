@@ -15,7 +15,7 @@ ms.collection:
   - essentials-overview
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 04/15/2024
+ms.date: 04/16/2024
 ---
 
 # Access Defender Experts Notifications using Graph API
@@ -36,7 +36,7 @@ The following Defender Experts Notification details are available in the Microso
 - **Recommendation summary** - lists the recommended actions from Defender Experts
 - **Advanced huting queries** - lists the converted KQL hunting queries used for the investigation
 
-In Graph Security API, the following fields are also available:
+In [Microsoft Graph security API](/graph/api/resources/security-api-overview), the following fields are also available:
 
 - **Graph endpoint** -  https://graph.microsoft.com/beta/security/incidents 
 - The following **field names** that correspond to the details mentioned earlier:
@@ -47,7 +47,7 @@ In Graph Security API, the following fields are also available:
 
 Your approach to consuming Defender Experts Notifications from the API will vary depending on the downstream system you intend to use and your specific requirements. However, the following is a basic implementation to help you get started:
 
-1. Get incidents from Graph Security API
+1. Get incidents from Graph security API
 2. Check for new incidents where **displayName** starts with _Defender Experts_
 3. Continue reading the remaining fields for such incidents
 4. Synchronize the Defender Experts Notification information into your downstream tool (for example, ServiceNow).
