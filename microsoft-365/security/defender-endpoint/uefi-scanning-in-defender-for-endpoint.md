@@ -60,13 +60,13 @@ Technically, the firmware is not stored and is not accessible from main memory. 
 
 The UEFI scanner performs dynamic analysis on the firmware it gets from the hardware flash storage. By obtaining the firmware, the scanner is able to parse the firmware, enabling Defender for Endpoint to inspect firmware content at runtime.
 
-## How do you turn on UEFI scanner?
+## How do you turn on the UEFI scanner?
 
 The new UEFI scanner is a component of Microsoft Defender Antivirus, thus, as long as it's the primary AV, it includes this capability to scan and access UEFI firmware.
 
-## How do you manage UEFI scanner?
+## How do you manage the UEFI scanner?
 
-It's a built-in functionality of Microsoft Defender Antivirus, thus, there is no additional management.
+It's a built-in functionality of Microsoft Defender Antivirus. Thus, there is no additional management.
 
 ## How does the UEFI scanner in Defender for Endpoint work?
 
@@ -108,4 +108,4 @@ Hardware backed security features like Secure Launch and device attestation help
 
 With its UEFI scanner, [Defender for Endpoint](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp) gets even richer visibility into threats at the firmware level, where attackers have been increasingly focusing their efforts on. Security operations teams can use this new level of visibility, along with the rich set of detection and response capabilities in Defender for Endpoint, to investigate and contain such advanced attacks.
 
-This level of visibility is also available in [Microsoft 365 Defender (M365D)](https://www.microsoft.com/security/technology/threat-protection), which delivers an even broader cross-domain defense that coordinates protection across endpoints, identities, email, and apps.
+This level of visibility is also available in the [Microsoft Defender portal](https://www.microsoft.com/security/technology/threat-protection), which delivers an even broader cross-domain defense that coordinates protection across endpoints, identities, email, and apps.
