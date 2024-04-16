@@ -18,7 +18,7 @@ search.appverid: met150
 ms.date: 04/16/2024
 ---
 
-# Access Defender Experts Notifications using Graph API
+# Access Defender Experts Notifications using Graph security API
 
 **Applies to:**
 
@@ -38,7 +38,7 @@ The following Defender Experts Notification details are available in the Microso
 
 In Microsoft Graph security API, the following fields are also available:
 
-- **Graph endpoint** -  https://graph.microsoft.com/beta/security/incidents 
+- **Graph endpoint** -  <https://graph.microsoft.com/beta/security/incidents>
 - The following **field names** that correspond to the details mentioned earlier:
   - displayName
   - description
