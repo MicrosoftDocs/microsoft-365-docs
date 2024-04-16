@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 03/01/2024
+ms.date: 04/15/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -33,9 +33,9 @@ Autofill columns can work alongside other Microsoft Syntex models. You can assoc
 
 ### Supported file types
 
-Autofill columns are available for the following file types: TBD
+Autofill columns are available for the following file types: .csv, .doc, .docx, .eml, .heic, .heif, .htm, .html, .jpeg, .jpg, .markdown, .md, .msg, .pdf, .png, .ppt, .pptx, .rtf, .tif, .tiff, .txt, .xls, and .xlsx.
 
-## Supported column data types
+### Supported column data types
 
 Autofill columns are available for the following column data types:
 
