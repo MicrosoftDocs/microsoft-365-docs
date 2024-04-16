@@ -24,7 +24,7 @@ ms.date: 04/16/2024
 
 - [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-[Defender Experts Notifications](onboarding-defender-experts-for-hunting.md#receive-defender-experts-notifications) are incidents that have been generated from hunting conducted by Defender Experts in your environment. They contain information regarding the hunting investigation and recommended actions provided by Defender Experts.
+[Defender Experts Notifications](onboarding-defender-experts-for-hunting.md#receive-defender-experts-notifications) are incidents that have been generated from hunting conducted by Defender Experts in your environment. They contain information regarding the hunting investigation and recommended actions provided by Defender Experts. You can now access DENs using the [Microsoft Graph security API](/graph/api/resources/security-api-overview).
 
 > [!NOTE]
 > Any incident in the Microsoft Defender portal is a collection of correlated alerts. [Learn more](/graph/api/resources/security-incident)
@@ -34,9 +34,9 @@ The following Defender Experts Notification details are available in the Microso
 - **Incident title** - starts with _Defender Experts_ to distinguish Defender Experts Notifications from other incidents
 - **Executive summary** - provides an overview of the investigation summary
 - **Recommendation summary** - lists the recommended actions from Defender Experts
-- **Advanced huting queries** - lists the converted KQL hunting queries used for the investigation
+- **Advanced hunting queries** - lists the converted KQL hunting queries used for the investigation
 
-In [Microsoft Graph security API](/graph/api/resources/security-api-overview), the following fields are also available:
+In Microsoft Graph security API, the following fields are also available:
 
 - **Graph endpoint** -  https://graph.microsoft.com/beta/security/incidents 
 - The following **field names** that correspond to the details mentioned earlier:
