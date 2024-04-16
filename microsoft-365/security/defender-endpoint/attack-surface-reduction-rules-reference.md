@@ -274,8 +274,8 @@ GUID: `56a863a9-875e-4185-98a7-b882c64b5ce5`
 
 Advanced hunting action type:
 
-- AsrVulnerableSignedDriverAudited
-- AsrVulnerableSignedDriverBlocked
+- `AsrVulnerableSignedDriverAudited`
+- `AsrVulnerableSignedDriverBlocked`
 
 <!-- 
 Dependencies: none provided by engineering
@@ -295,8 +295,8 @@ GUID: `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`
 
 Advanced hunting action type:
 
-- AsrAdobeReaderChildProcessAudited
-- AsrAdobeReaderChildProcessBlocked
+- `AsrAdobeReaderChildProcessAudited`
+- `AsrAdobeReaderChildProcessBlocked`
 
 Dependencies: Microsoft Defender Antivirus
 
@@ -314,8 +314,8 @@ GUID: `d4f940ab-401b-4efc-aadc-ad5f3c50688a`
 
 Advanced hunting action type:
 
-- AsrOfficeChildProcessAudited
-- AsrOfficeChildProcessBlocked
+- `AsrOfficeChildProcessAudited`
+- `AsrOfficeChildProcessBlocked`
 
 Dependencies: Microsoft Defender Antivirus
 
@@ -330,12 +330,11 @@ By default the state of this rule is set to block. In most cases, many processes
 Enabling this rule doesn't provide additional protection if you have LSA protection enabled since the ASR rule and LSA protection work similarly. However, when LSA protection cannot be enabled, this rule can be configured to provide equivalent protection against malware that target `lsass.exe`.
 
 > [!NOTE]
+>
 > In this scenario, the ASR rule is classified as "not applicable" in Defender for Endpoint settings in the Microsoft Defender portal. 
-
-> [!NOTE]
-> The Block credential stealing from the Windows local security authority subsystem ASR rule does not support WARN mode.
-
-> [!NOTE]
+>
+> The *Block credential stealing from the Windows local security authority subsystem* ASR rule doesn't support WARN mode.
+> 
 > In some apps, the code enumerates all running processes and attempts to open them with exhaustive permissions. This rule denies the app's process open action and logs the details to the security event log. This rule can generate a lot of noise. If you have an app that simply enumerates LSASS, but has no real impact in functionality, there is no need to add it to the exclusion list. By itself, this event log entry doesn't necessarily indicate a malicious threat.
 
 Intune name: `Flag credential stealing from the Windows local security authority subsystem`
@@ -346,8 +345,8 @@ GUID: `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`
 
 Advanced hunting action type:
 
-- AsrLsassCredentialTheftAudited
-- AsrLsassCredentialTheftBlocked
+- `AsrLsassCredentialTheftAudited`
+- `AsrLsassCredentialTheftBlocked`
 
 Dependencies: Microsoft Defender Antivirus
 
@@ -366,8 +365,8 @@ GUID: `be9ba2d9-53ea-4cdc-84e5-9b1eeee46550`
 
 Advanced hunting action type:
 
-- AsrExecutableEmailContentAudited
-- AsrExecutableEmailContentBlocked
+- `AsrExecutableEmailContentAudited`
+- `AsrExecutableEmailContentBlocked`
 
 Dependencies: Microsoft Defender Antivirus
 
@@ -397,8 +396,8 @@ GUID: `01443614-cd74-433a-b99e-2ecdc07bfc25`
 
 Advanced hunting action type:
 
-- AsrUntrustedExecutableAudited
-- AsrUntrustedExecutableBlocked
+- `AsrUntrustedExecutableAudited`
+- `AsrUntrustedExecutableBlocked`
 
 Dependencies: Microsoft Defender Antivirus, Cloud Protection
 
@@ -419,8 +418,8 @@ GUID: `5beb7efe-fd9a-4556-801d-275e5ffc04cc`
 
 Advanced hunting action type:
 
-- AsrObfuscatedScriptAudited
-- AsrObfuscatedScriptBlocked
+- `AsrObfuscatedScriptAudited`
+- `AsrObfuscatedScriptBlocked`
 
 Dependencies: Microsoft Defender Antivirus, AntiMalware Scan Interface (AMSI)
 
@@ -438,8 +437,8 @@ GUID: `d3e037e1-3eb8-44c8-a917-57927947596d`
 
 Advanced hunting action type:
 
-- AsrScriptExecutableDownloadAudited
-- AsrScriptExecutableDownloadBlocked
+- `AsrScriptExecutableDownloadAudited`
+- `AsrScriptExecutableDownloadBlocked`
 
 Dependencies: Microsoft Defender Antivirus, AMSI
 
@@ -457,8 +456,8 @@ GUID: `3b576869-a4ec-4529-8536-b80a7769e899`
 
 Advanced hunting action type:
 
-- AsrExecutableOfficeContentAudited
-- AsrExecutableOfficeContentBlocked
+- `AsrExecutableOfficeContentAudited`
+- `AsrExecutableOfficeContentBlocked`
 
 Dependencies: Microsoft Defender Antivirus, RPC
 
@@ -486,8 +485,8 @@ GUID: `75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84`
 
 Advanced hunting action type:
 
-- AsrOfficeProcessInjectionAudited
-- AsrOfficeProcessInjectionBlocked
+- `AsrOfficeProcessInjectionAudited`
+- `AsrOfficeProcessInjectionBlocked`
 
 Dependencies: Microsoft Defender Antivirus
 
@@ -508,8 +507,8 @@ GUID: `26190899-1602-49e8-8b27-eb1d0a1ce869`
 
 Advanced hunting action type:
 
-- AsrOfficeCommAppChildProcessAudited
-- AsrOfficeCommAppChildProcessBlocked
+- `AsrOfficeCommAppChildProcessAudited`
+- `AsrOfficeCommAppChildProcessBlocked`
 
 Dependencies: Microsoft Defender Antivirus
 
@@ -533,8 +532,8 @@ GUID: `e6db77e5-3df2-4cf1-b95a-636979351e5b`
 
 Advanced hunting action type:
 
-- AsrPersistenceThroughWmiAudited
-- AsrPersistenceThroughWmiBlocked
+- `AsrPersistenceThroughWmiAudited`
+- `AsrPersistenceThroughWmiBlocked`
 
 Dependencies: Microsoft Defender Antivirus, RPC
 
@@ -553,8 +552,8 @@ GUID: `d1e49aac-8f56-4280-b9ba-993a6d77406c`
 
 Advanced hunting action type:
 
-- AsrPsexecWmiChildProcessAudited
-- AsrPsexecWmiChildProcessBlocked
+- `AsrPsexecWmiChildProcessAudited`
+- `AsrPsexecWmiChildProcessBlocked`
 
 Dependencies: Microsoft Defender Antivirus
 
@@ -590,8 +589,8 @@ GUID: `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`
 
 Advanced hunting action type:
 
-- AsrUntrustedUsbProcessAudited
-- AsrUntrustedUsbProcessBlocked
+- `AsrUntrustedUsbProcessAudited`
+- `AsrUntrustedUsbProcessBlocked`
 
 Dependencies: Microsoft Defender Antivirus
 
@@ -638,8 +637,8 @@ GUID: `92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b`
 
 Advanced hunting action type:
 
-- AsrOfficeMacroWin32ApiCallsAudited
-- AsrOfficeMacroWin32ApiCallsBlocked
+- `AsrOfficeMacroWin32ApiCallsAudited`
+- `AsrOfficeMacroWin32ApiCallsBlocked`
 
 Dependencies: Microsoft Defender Antivirus, AMSI
 
@@ -664,8 +663,8 @@ GUID: `c1db55ab-c21a-4637-bb3f-a12568109d35`
 
 Advanced hunting action type:
 
-- AsrRansomwareAudited
-- AsrRansomwareBlocked
+- `AsrRansomwareAudited`
+- `AsrRansomwareBlocked`
 
 Dependencies: Microsoft Defender Antivirus, Cloud Protection
 
@@ -676,7 +675,9 @@ Dependencies: Microsoft Defender Antivirus, Cloud Protection
 - [Test attack surface reduction rules](attack-surface-reduction-rules-deployment-test.md)
 - [Enable attack surface reduction rules](attack-surface-reduction-rules-deployment-implement.md)
 - [Operationalize attack surface reduction rules](attack-surface-reduction-rules-deployment-operationalize.md)
-- [Attack surface reduction \(ASR\) rules report](attack-surface-reduction-rules-report.md)
+- [Attack surface reduction rules report](attack-surface-reduction-rules-report.md)
 - [Attack surface reduction rules reference](attack-surface-reduction-rules-reference.md)
 - [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)
+
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
