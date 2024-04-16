@@ -31,7 +31,7 @@ The UEFI scanner is a new component of the [built-in antivirus](/windows/securit
 
 ## Prerequisites
 
-- [Microsoft Defender Antivirus](microsoft-defender-antivirus-windows.md) as the primary antivirus product and in active mode. UEFI scanner does not work with [EDR in block mode](edr-in-block-mode.md) (with Microsoft Defender Antivirus in passive mode).
+- [Microsoft Defender Antivirus](microsoft-defender-antivirus-windows.md) as the primary antivirus product and in active mode. UEFI scanner doesn't work with [EDR in block mode](edr-in-block-mode.md) (with Microsoft Defender Antivirus in passive mode).
 - [Real-time protection](configure-protection-features-microsoft-defender-antivirus.md) is turned on
 - [Behavior monitoring](behavior-monitor.md) is turned on
 - Devices are running a current [Microsoft Defender Antivirus platform version](microsoft-defender-antivirus-updates.md#monthly-platform-and-engine-versions)
@@ -54,7 +54,7 @@ The [Serial Peripheral Interface (SPI)](https://en.wikipedia.org/wiki/Serial_Per
 
 Once an implant is deployed, it's hard to detect. To catch threats at this level, security solutions at the OS level rely on information from the firmware, but the chain of trust is weakened.
 
-Technically, the firmware is not stored and is not accessible from main memory. As opposed to other software, it is stored in SPI flash storage, so the new UEFI scanner must follow the hardware protocol provided by hardware manufacturers. To be compatible and be up to date with all platforms, it needs to take into consideration protocol differences.
+Technically, the firmware isn't stored and isn't accessible from main memory. As opposed to other software, it's stored in SPI flash storage, so the new UEFI scanner must follow the hardware protocol provided by hardware manufacturers. To be compatible and be up to date with all platforms, it needs to take into consideration protocol differences.
 
 :::image type="content" source="media/uefi-scanner-internals-overview.png" alt-text="Screenshot that shows UEFI scanner internals overview":::
 
@@ -80,17 +80,17 @@ Firmware scanning is orchestrated by runtime events like suspicious driver load 
 
 :::image type="content" source="media/windows-security-detecting-malicious-content-in-nvram.png" alt-text="Screenshot that shows Windows Security notification for malicious content in NVRAM":::
 
-Defender for Endpoint customers will also see these detections raised as alerts in [Microsoft Defender Security Center](https://security.microsoft.com/), empowering security operations teams to investigate and respond to firmware attacks and suspicious activities at the firmware level in their environments.
+Defender for Endpoint customers also see these detections raised as alerts in the [Microsoft Defender portal](https://security.microsoft.com/), empowering security operations teams to investigate and respond to firmware attacks and suspicious activities at the firmware level in their environments.
 
 :::image type="content" source="media/mde-alert-detecting-malicious-code-in-firmware.png" alt-text="Screenshot that shows Defender for Endpoint alert detecting malicious code":::
 
-To detect unknown threats in SPI flash, signals from the UEFI scanner are analyzed to identify anomalies and where they have been executed. Anomalies are reported to the Microsoft Defender Security Center for investigation.
+To detect unknown threats in SPI flash, signals from the UEFI scanner are analyzed to identify anomalies and where they have been executed. Anomalies are reported to the Microsoft Defender portal for investigation.
 
 :::image type="content" source="media/mde-alert-malware-implant-in-uefi-file-system.png" alt-text="Screenshot that shows Defender for Endpoint alert for malware implant in UEFI":::
 
-These events can likewise be queried through Advanced Hunting as shown:
+These events can likewise be queried through advanced hunting as shown:
 
-```powershell
+```kusto
 DeviceAlertEvents
 
 | where Title has "UEFI"
