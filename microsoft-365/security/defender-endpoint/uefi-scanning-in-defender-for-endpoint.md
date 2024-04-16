@@ -16,12 +16,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.date: 12/10/2023
+ms.date: 04/16/2024
 ---
 
 # UEFI scanning in Defender for Endpoint
 
-Beginning June 17 2020, Microsoft Defender for Endpoint extended its protection capabilities to the firmware level with a new [Unified Extensible Firmware Interface (UEFI)](/windows-hardware/drivers/bringup/unified-extensible-firmware-interface) scanner.
+Recently, Microsoft Defender for Endpoint extended its protection capabilities to the firmware level with a new [Unified Extensible Firmware Interface (UEFI)](/windows-hardware/drivers/bringup/unified-extensible-firmware-interface) scanner.
 
 Hardware and firmware-level attacks have continued to rise in recent years, as modern security solutions made persistence and detection evasion on the operating system more difficult. Attackers compromise the boot flow to achieve low-level malware behavior that's hard to detect, posing a significant risk to an organization's security posture.
 
