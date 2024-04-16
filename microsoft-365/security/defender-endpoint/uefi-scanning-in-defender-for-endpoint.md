@@ -85,26 +85,6 @@ Defender for Endpoint customers will also see these detections raised as alerts 
 
 :::image type="content" source="media/mde-alert-detecting-malicious-code-in-firmware.png" alt-text="Screenshot that shows Defender for Endpoint alert detecting malicious code":::
 
-Security operations teams can also use the [advanced hunting](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview) capabilities in Defender for Endpoint to hunt for these threats:
-
-```powershell
-DeviceEvents
-
-| where ActionType == "AntivirusDetection"
-
-| extend ParsedFields=parse_json(AdditionalFields)
-
-| extend ThreatName=tostring(ParsedFields.ThreatName)
-
-| where ThreatName contains_cs "UEFI"
-
-| project ThreatName=tostring(ParsedFields.ThreatName),
-
- FileName, SHA1, DeviceName, Timestamp
-
-| limit 100
-```
-
 To detect unknown threats in SPI flash, signals from the UEFI scanner are analyzed to identify anomalies and where they have been executed. Anomalies are reported to the Microsoft Defender Security Center for investigation.
 
 :::image type="content" source="media/mde-alert-malware-implant-in-uefi-file-system.png" alt-text="Screenshot that shows Defender for Endpoint alert for malware implant in UEFI":::
