@@ -15,7 +15,7 @@ ms.collection:
 - m365-security
 - tier2
 - mde-asr
-ms.date: 02/23/2024
+ms.date: 04/16/2024
 search.appverid: met150
 ---
 
@@ -327,10 +327,10 @@ LSASS authenticates users who sign in on a Windows computer. Microsoft Defender 
 
 By default the state of this rule is set to block. In most cases, many processes make calls to LSASS for access rights that are not needed. For example, such as when the initial block from the ASR rule results in a subsequent call for a lesser privilege which subsequently succeeds. For information about the types of rights that are typically requested in process calls to LSASS, see: [Process Security and Access Rights](/windows/win32/procthread/process-security-and-access-rights).
 
-Enabling this rule will not provide additional protection if you have LSA protection enabled since both the ASR rule and LSA protection work similarly. However, when LSA protection cannot be enabled, this rule can be configured to provide equivalent protection against malware that target lsass.exe.
+Enabling this rule doesn't provide additional protection if you have LSA protection enabled since the ASR rule and LSA protection work similarly. However, when LSA protection cannot be enabled, this rule can be configured to provide equivalent protection against malware that target `lsass.exe`.
 
 > [!NOTE]
-> In this scenario, the ASR rule will be classified as "not applicable" on MDE Settings management in the Microsoft Defender XDR portal. 
+> In this scenario, the ASR rule is classified as "not applicable" in Defender for Endpoint settings in the Microsoft Defender portal. 
 
 > [!NOTE]
 > The Block credential stealing from the Windows local security authority subsystem ASR rule does not support WARN mode.
