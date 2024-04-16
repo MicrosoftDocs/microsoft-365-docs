@@ -31,15 +31,14 @@ The UEFI scanner is a new component of the [built-in antivirus](/windows/securit
 
 ## Prerequisites
 
-- Microsoft Defender Antivirus as the primary antivirus product
-
-  > [!NOTE]
-  > UEFI scanner does not work with Endpoint detection and response (EDR) in block mode, since Microsoft Defender Antivirus would be operating in passive mode.
-
-- Real-Time Protection should be ON
-- Behavior Monitoring should be ON
-- Supported version of Microsoft Defender Antivirus Platform Update (N-2)
-- Windows 10, Windows 11 and newer versions, [Windows Server 2012 R2 and Windows Server 2016](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/defending-windows-server-2012-r2-and-2016/ba-p/2783292) running the unified Defender for Endpoint client, Windows Server 2019, Windows Server 2022 and newer versions
+- [Microsoft Defender Antivirus](microsoft-defender-antivirus-windows.md) as the primary antivirus product and in active mode. UEFI scanner does not work with [EDR in block mode](edr-in-block-mode.md) (with Microsoft Defender Antivirus in passive mode).
+- [Real-time protection](configure-protection-features-microsoft-defender-antivirus.md) is turned on
+- [Behavior monitoring](behavior-monitor.md) is turned on
+- Devices are running a current [Microsoft Defender Antivirus platform version](microsoft-defender-antivirus-updates.md#monthly-platform-and-engine-versions)
+- Devices are running one of the following versions of Windows:
+   - Windows 10, Windows 11 or newer on client devices
+   - Windows Server 2019, Windows Server 2022, or newer versions
+   - [Windows Server 2012 R2 and Windows Server 2016](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/defending-windows-server-2012-r2-and-2016/ba-p/2783292) with the [unified Defender for Endpoint client](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution) installed
 
 ## How did we build the UEFI scanner?
 
