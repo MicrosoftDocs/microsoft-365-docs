@@ -51,3 +51,8 @@ Your approach to consuming Defender Experts Notifications from the API will vary
 2. Check for new incidents where **displayName** starts with _Defender Experts_
 3. Continue reading the remaining fields for such incidents
 4. Synchronize the Defender Experts Notification information into your downstream tool (for example, ServiceNow).
+
+### Next step
+
+- [Collaborate with Experts on Demand](experts-on-demand.md)
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

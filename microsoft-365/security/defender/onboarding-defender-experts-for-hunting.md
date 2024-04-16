@@ -98,3 +98,7 @@ A sample Defender Experts Notification shows up in your **Incidents** page with 
 
 :::image type="content" source="../../media/mte/defenderexperts/sample-den-links-dexh.png" alt-text="Screenshot of Sample DEN links." lightbox="../../media/mte/defenderexperts/sample-den-links-dexh.png":::
 
+### Next step
+
+- [Access Defender Experts Notifications using Microsoft Graph security API](access-den-graph-api.md)
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]
