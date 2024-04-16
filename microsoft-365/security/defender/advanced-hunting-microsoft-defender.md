@@ -50,7 +50,8 @@ After connecting your Microsoft Sentinel workspace and Microsoft Defender XDR ad
 - **Use the time filter dropdown instead of setting the time span in the query** – If you're filtering ingestion of Defender XDR tables to Sentinel instead of streaming the tables as is, don't filter the time in the query as this might generate incomplete results. If you set the time in the query, the streamed, filtered data from Sentinel is used because it usually has the longer data retention period. If you would like to make sure you're querying all Defender XDR data for up to 30 days, use the time filter dropdown provided in the query editor instead. 
 - **View `SourceSystem` and `MachineGroup` columns for Defender XDR data that have been streamed from Microsoft Sentinel** – Since the columns `SourceSystem` and `MachineGroup` are added to Defender XDR tables once they're streamed to Microsoft Sentinel, they also appear in results in advanced hunting in Defender. However, they remain blank for Defender XDR tables that weren't streamed (tables that follow the default 30-day data retention period).
 
-
+> [!NOTE]
+> Using the unified portal, where you can query Microsoft Sentinel data after connecting a Microsoft Sentinel workspace, does not automatically mean you can also query Defender XDR data while in Microsoft Sentinel. Raw data ingestion of Defender XDR should still be configured in Microsoft Sentinel for this to happen.
 
 ## Where to find your Microsoft Sentinel data
 You can use advanced hunting KQL (Kusto Query Language) queries to hunt through Microsoft Defender XDR and Microsoft Sentinel data.
