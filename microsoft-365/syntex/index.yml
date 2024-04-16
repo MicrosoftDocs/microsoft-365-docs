@@ -89,7 +89,7 @@ landingContent:
           - text: Microsoft 365 Archive (Preview)
             url: /microsoft-365/archive
           - text: Microsoft Backup (Preview)
-            url: backup/backup-overview.md
+            url: /microsoft-365/backup
 
 # Card 4
   - title: Extensibility

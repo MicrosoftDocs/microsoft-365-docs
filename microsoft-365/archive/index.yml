@@ -27,7 +27,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Introduction to Microsoft 365 Archive
+          - text: Learn about Microsoft 365 Archive
             url: archive-overview.md
           - text: FAQs
             url: archive-faq.md
@@ -68,7 +68,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: Microsoft 365 Backup (Preview)
-            url: /microsoft-365/syntex/backup/backup-overview
+            url: /microsoft-365/backup
           - text: SharePoint Advanced Management
             url: /sharepoint/advanced-management
           - text: SharePoint Embedded

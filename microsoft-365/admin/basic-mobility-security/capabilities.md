@@ -20,6 +20,7 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
+- basic-mobility-security
 search.appverid:
 - MET150
 description: "Basic Mobility and Security helps you secure and manage mobile devices with policies that control access to organization Microsoft 365 email and documents."
