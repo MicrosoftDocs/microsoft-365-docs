@@ -66,6 +66,16 @@ To access the Lighthouse permissions page and manage permissions, you must be a 
     - To remove multiple users from the Lighthouse RBAC role, select the users you want to remove, and then select **Remove users**.
 
 4. In the confirmation window, select **Remove users** to confirm removal.
+ 
+## Update or change the security group for a Lighthouse RBAC role
+
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Permissions** > **Lighthouse permissions**.
+
+2. Select a Lighthouse role from the list to open the Lighthouse role details pane.
+
+3. Do one of the following:
+    - Select **Use an existing security group**, select the security group, and then select **Save**.
+    - Select **Create a new security group**, provide a name and description, add users, and then select **Save**.
 
 ## Next steps
 
