@@ -20,7 +20,6 @@ ms.custom:
   - seo-marvel-apr2020
   - admindeeplinkMAC
   - has-azure-ad-ps-ref
-  - azure-ad-ref-level-one-done
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
 description: "Summary: Use PowerShell for Microsoft 365 to add an alternate domain name to an existing customer tenant."
 ---
@@ -82,14 +81,14 @@ New-MgDomain -Id <customer TenantId> -DomainNameReferences <FQDN of new domain>
 
 ### Get the data for the DNS TXT verification record
 
- Microsoft 365 will generate the specific data that you need to place into the DNS TXT verification record. To get the data, run this command.
+ Microsoft 365 generates the specific data that you need to place into the DNS TXT verification record. To get the data, run this command.
 
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 (Get-MgDomainVerificationDnsRecord -DomainId <domain ID, i.e. contoso.com> | Where-Object {$_.RecordType -eq "Txt"}).AdditionalProperties.text
 ```
 
-This will give you output like:
+This command gives you output like:
 
  `MS=ms########`
 
@@ -106,7 +105,7 @@ Confirm the successful creation of the TXT record via nslookup. Follow this synt
 nslookup -type=TXT <FQDN of registered domain>
 ```
 
-This will give you output like:
+This command gives you output like:
 
  `Non-authoritative answer:`
 
@@ -122,7 +121,7 @@ In this last step, you validate to Microsoft 365 that you own the publically reg
 Confirm-MgDomain -DomainId <FQDN of new domain> -InputObject @{TenantId=<customer TenantId>}
 ```
 
-This command won't return any output, so to confirm that this worked, run this command.
+This command doesn't return any output, so to confirm that the command worked, run this command.
 
 ```powershell
 Get-MgDomain -DomainId <FQDN of new domain>
