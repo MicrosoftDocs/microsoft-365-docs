@@ -61,7 +61,7 @@ User reported messages are also available to admins in the following locations i
 - [Automated investigation and response (AIR) results](air-view-investigation-results.md) (Defender for Office 365 Plan 2)
 - [Threat Explorer](threat-explorer-real-time-detections-about.md) (Defender for Office 365 Plan 2)
 
-In Defender for Office 365 Plan 2, admins can also submit messages from the [Email entity page](mdo-email-entity-page.md#actions-you-can-take-on-the-email-entity-page) and from [Alerts](../defender/investigate-alerts.md) in the Defender portal.
+In Defender for Office 365, admins can also submit messages from the [Email entity page](mdo-email-entity-page.md#actions-on-the-email-entity-page) and from [Alerts](../defender/investigate-alerts.md) in the Defender portal.
 
 Admins can use the sample submission portal at <https://www.microsoft.com/wdsi/filesubmission> to submit other suspected files to Microsoft for analysis. For more information, see [Submit files for analysis](../defender/submission-guide.md).
 
