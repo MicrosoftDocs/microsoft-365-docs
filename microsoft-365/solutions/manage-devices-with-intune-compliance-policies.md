@@ -26,7 +26,7 @@ keywords:
 
 Enrolling devices to Intune gives you the ability to achieve even greater security and control of data in your environment. [Step 2. Enroll devices to Intune](manage-devices-with-intune-enroll.md) details how to accomplish this using Intune. This article covers the next step, which is to configure device compliance policies. 
 
-![Steps managing devices](../media/devices/intune-mdm-step-2.png#lightbox)
+:::image type="content" source="../media/devices/intune-mdm-step-2.png" alt-text="Steps for managing devices." lightbox="../media/devices/intune-mdm-step-2.png":::
 
 You want to be sure devices that are accessing your apps and data meet minimum requirements. For example, they’re password or pin-protected and the operating system is up to date. Compliance policies are the way to define the requirements that devices must meet. Intune uses these compliance policies to mark a device as compliant or non-compliant. This binary status is passed to Microsoft Entra which can use this status in conditional access rules to allow or prevent a device from accessing resources. 
 
@@ -36,7 +36,7 @@ This guidance is tightly coordinated with the recommended [Zero Trust identity a
 
 This illustration highlights where the work of defining compliance policies fits into the overall Zero Trust recommended policy set. 
 
-[![Zero Trust identity and device access policies](../media/devices/identity-device-define-compliance.png#lightbox)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/devices/identity-device-define-compliance.png)
+[![Zero Trust identity and device access policies](../media/devices/identity-device-define-compliance.svg#lightbox)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/devices/identity-device-define-compliance.svg)
 
 In this illustration, defining device compliance policies is a dependency for achieving the recommended level of protection within the Zero Trust framework. 
 

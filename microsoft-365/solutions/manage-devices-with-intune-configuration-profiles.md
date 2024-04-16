@@ -29,8 +29,7 @@ Microsoft Intune includes settings and features you can enable or disable on dif
 
 This article provides guidance on getting started with configuration profiles. 
 
-
-![Steps for managing devices](../media/devices/intune-mdm-step-4.png#lightbox)
+:::image type="content" source="../media/devices/intune-mdm-step-4.png" alt-text="Steps for managing devices." lightbox="../media/devices/intune-mdm-step-4.png":::
 
 Configuration profiles give you the ability to configure important protection and to bring devices into compliance so they can access your resources. Previously, these kinds of configuration changes were configured by using Group Policy settings in Active Directory Domain Services. A modern security strategy includes moving security controls to the cloud where enforcement of these controls isn't dependent on on-premises resources and access. Intune configuration profiles are the way to transition these security controls to the cloud. 
 
@@ -54,7 +53,7 @@ In addition to deploying the pre-configured baselines, many enterprise-scale org
 
 The many settings you can configure by using configuration profiles can be grouped into four categories, as illustrated below.
 
-![Intune device profile categories](../media/devices/intune-device-profile-categories.png#lightbox)
+:::image type="content" source="../media/devices/intune-device-profile-categories.png" alt-text="Intune device profile categories." lightbox="../media/devices/intune-device-profile-categories.png":::
 
 The following table describes the illustration.
 

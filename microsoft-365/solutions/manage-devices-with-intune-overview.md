@@ -57,7 +57,7 @@ Protecting the data and apps on devices and the devices themselves is a multi-la
 
 The following diagram illustrates building blocks to achieve a Zero Trust security posture for Microsoft 365 and other SaaS apps that you introduce to this environment. The elements related to devices are numbered 1 through 7. These are the layers of protection device admins will coordinate with other administrators to accomplish.
 
-![Microsoft 365 Zero Trust deployment stack](../media/devices/m365-zero-trust-deployment-stack-devices.png#lightbox)
+:::image type="content" source="../media/devices/m365-zero-trust-deployment-stack-devices.svg" alt-text="desc." lightbox="../media/devices/m365-zero-trust-deployment-stack-devices.svg":::
 
 In this illustration:
 
@@ -77,7 +77,7 @@ This guidance is tightly coordinated with the recommended [**Zero Trust identity
 
 Here’s an illustration of the recommended policy set with step callouts for the work you will do in Intune and the related Conditional Access policies you will help coordinate in Microsoft Entra ID.
 
-[![Zero Trust identity and device access policies](../media/devices/identity-device-overview-steps.png#lightbox)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/devices/identity-device-overview-steps.png)
+:::image type="content" source="m../media/devices/identity-device-overview-steps.svg" alt-text="Zero Trust identity and device access policies." lightbox="../media/devices/identity-device-overview-steps.svg":::
 
 In this illustration:
 
@@ -97,7 +97,7 @@ If you follow this guidance, you will enroll devices into management using Intun
 
 The following illustration details how this works using Intune.
 
-![Process for enrolling and onboarding devices](../media/devices/devices-enroll-onboard-process.png#lightbox)
+:::image type="content" source="../media/devices/devices-enroll-onboard-process.png" alt-text="Process for enrolling and onboarding devices." lightbox="../media/devices/devices-enroll-onboard-process.png":::
 
 In the illustration:
 
