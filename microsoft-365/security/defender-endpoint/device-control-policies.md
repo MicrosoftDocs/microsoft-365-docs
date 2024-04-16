@@ -81,7 +81,7 @@ Entries with user or user groups can reference objects from either Entra Id or a
 
 ### Best practices for using device control with users and user groups
 
-- To create a rule for an indidual user on Windows, create an entry with a  `Sid` condition foreach user in a [rule](#rules)
+- To create a rule for an individual user on Windows, create an entry with a  `Sid` condition foreach user in a [rule](#rules)
 
 - To create a rule for a user group on Windows and Intune, **either** create an entry with a `Sid` condition for each user group in a [rule] and target the policy to a machine group in Intune **or** create a rule without conditions and target the policy with Intune to the user group.
 
@@ -121,7 +121,7 @@ The following image depicts configuration settings for a device control policy i
 
 In the screenshot, the Included ID and Excluded ID are the references to included and excluded reusable settings groups. A policy can have multiple rules.
 
-The ordering of the rules isn't honored by Intune. The rules can be evaluated in any order, so make sure to explicitly exclude groups of devices that aren't in scope for the rule.
+Intune doesn't honor the ordering of the rules. The rules can be evaluated in any order, so make sure to explicitly exclude groups of devices that aren't in scope for the rule.
 
 ### [**XML (Windows)**](#tab/XML)
 
@@ -153,9 +153,9 @@ The following table provides more context for the XML code snippet:
 |---------|---------|---------|
 | `PolicyRule Id`  | GUID, a unique ID, represents the policy and is used in reporting and troubleshooting. | You can generate the ID through [PowerShell](/powershell/module/microsoft.powershell.utility/new-guid). |
 | `Name` | String, the name of the policy and displays on the toast based on the policy setting. | |
-| `IncludedIdList` | The group(s) that the policy applies to. If multiple groups are added, the media must be a member of each group in the list to be included. | The Group ID/GUID must be used at this instance. <br/><br/>The following example shows the usage of GroupID: `<IncludedIdList> <GroupId> {EAA4CCE5-F6C9-4760-8BAD-FDCC76A2ACA1}</GroupId> </IncludedIdList>` |
-| `ExcludedIDList` | The group(s) that the policy doesn't apply to. If multiple groups are added, the media must be a member of a group in the list to be excluded. | The Group ID/GUID must be used at this instance. |
-| `Entry` | One PolicyRule can have multiple entries; each entry with a unique GUID tells device control one restriction. | See Entry properties table below to get details. |
+| `IncludedIdList` | The groups that the policy applies to. If multiple groups are added, the media must be a member of each group in the list to be included. | The Group ID/GUID must be used at this instance. <br/><br/>The following example shows the usage of GroupID: `<IncludedIdList> <GroupId> {EAA4CCE5-F6C9-4760-8BAD-FDCC76A2ACA1}</GroupId> </IncludedIdList>` |
+| `ExcludedIDList` | The groups that the policy doesn't apply to. If multiple groups are added, the media must be a member of a group in the list to be excluded. | The Group ID/GUID must be used at this instance. |
+| `Entry` | One PolicyRule can have multiple entries; each entry with a unique GUID tells device control one restriction. | See  Entry properties table below to get details. |
 
 ### [**JSON (Mac)**](#tab/JSON)
 
@@ -183,9 +183,9 @@ The following table provides more context for the XML code snippet:
 | Property name | Description | Options |
 |---|---|---|
 | `id` | GUID, a unique ID, represents the rule and is used in the policy. | `New-Guid (Microsoft.PowerShell.Utility) - PowerShell<br/>uuidgen` |
-| `name` | String, the name of the policy and will display on the toast based on the policy setting. |  |
-| `includeGroups` | The group(s) that the policy is applied to. If multiple groups are specified, the policy applies to any media in all those groups. If not specified, the rule applies to all devices. | The ID value inside the group must be used in this instance. If multiple groups are in the includeGroups, it's `AND`. <br/> `"includeGroups": ["3f082cd3-f701-4c21-9a6a-ed115c28e217"]` |
-| `excludeGroups` | The group(s) that the policy doesn't apply to. | The `id` value inside the group must be used in this instance. If multiple groups are in the excludeGroups, it's `OR`. |
+| `name` | String, name of the policy and displays on the toast based on the policy setting. |  |
+| `includeGroups` | The groups that the policy is applied to. If multiple groups are specified, the policy applies to any media in all those groups. If not specified, the rule applies to all devices. | The ID value inside the group must be used in this instance. If multiple groups are in the includeGroups, it's `AND`. <br/> `"includeGroups": ["3f082cd3-f701-4c21-9a6a-ed115c28e217"]` |
+| `excludeGroups` | The group that the policy doesn't apply to. | The `id` value inside the group must be used in this instance. If multiple groups are in the excludeGroups, it's `OR`. |
 | `entries` | One rule can have multiple entries; each entry with a unique GUID tells Device Control one restriction. | See entry properties table later in this article to get the details. |
 
 ---
@@ -196,7 +196,7 @@ Device control policies define access (called an entry) for a set of devices. En
 
 | Entry setting | Options |
 |---|---|
-| AccessMask | Applies the action only if the access operations matches the access mask -  The access mask is the bit-wise OR of the access values:<br><br>  1 - Device Read<br>2 - Device Write<br>4 - Device Execute<br>8 - File Read<br>16 - File Write<br>32 - File Execute<br>64 - Print<br><br>For example:<br>Device Read, Write and Execute = 7 (1+2+4)<br>Device Read, Disk Read = 9 (1+8)<br>
+| AccessMask | Applies the action only if the access operations match the access mask -  The access mask is the bit-wise OR of the access values:<br><br>  1 - Device Read<br>2 - Device Write<br>4 - Device Execute<br>8 - File Read<br>16 - File Write<br>32 - File Execute<br>64 - Print<br><br>For example:<br>Device Read, Write, and Execute = 7 (1+2+4)<br>Device Read, Disk Read = 9 (1+8)<br>
 | Action | Allow <br/> Deny <br/> AuditAllow <br/> AuditDeny |
 | Notification | None (default) <br/> An event is generated <br/> The user receives notification <br/> File evidence is captured |
 
