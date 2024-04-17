@@ -9,6 +9,7 @@ ms.reviewer: emmasheridan, nicholak
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
 ms.collection:
 - Tier1
@@ -20,6 +21,7 @@ ms.custom:
   - AdminSurgePortfolio
   - fwlink 2133922 to Delete subscription heading
   - AdminTemplateSet
+  - admindeeplinkMAC
   - has-azure-ad-ps-ref
 search.appverid: MET150
 description: "Learn how to close your business account with Microsoft. All information related to your account is deleted including licenses, users, and user data."

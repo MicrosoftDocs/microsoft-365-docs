@@ -10,14 +10,15 @@ ms.reviewer: denik, socheng
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
 ms.collection:
-- Tier2
+- Tier1
 - scotvorg
 - M365-subscription-management
 - Adm_O365
 ms.custom: 
-- commerce_subscriptions
+- commerce_signup
 - AdminSurgePortfolio
 - admindeeplinkMAC
 search.appverid: MET150

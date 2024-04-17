@@ -3,7 +3,7 @@ title: "Azure ExpressRoute for Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 08/10/2020
+ms.date: 03/15/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
@@ -12,6 +12,7 @@ ms.collection:
 - scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
+- must-keep
 f1.keywords:
 - CSH
 ms.custom: 
@@ -22,7 +23,7 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
-description: Learn about Azure ExpressRoute with Microsoft 365 and plan the network implementation project if you are deploying with it.
+description: Learn about Azure ExpressRoute with Microsoft 365 and plan the network implementation project if you're deploying with it.
 ---
 
 # Azure ExpressRoute for Microsoft 365
@@ -38,7 +39,7 @@ Learn how Azure ExpressRoute is used with Microsoft 365 and how to plan the netw
 
 In addition to internet connectivity, you may choose to route a subset of your Microsoft 365 network traffic over Azure ExpressRoute.
 
-Regardless of whether you have an existing MPLS WAN, ExpressRoute can be added to your network architecture in one of three ways; through a supported cloud exchange co-location provider, an Ethernet point-to-point connection provider, or through an MPLS connection provider. See what [providers are available in your region](/azure/expressroute/expressroute-locations). The direct ExpressRoute connection will enable connectivity to the applications outlined in [What Microsoft 365 services are included?](#BKMK_WhatDoIGet) below. Network traffic for all other applications and services will continue to traverse the internet.
+Regardless of whether you have an existing MPLS WAN, ExpressRoute can be added to your network architecture in one of three ways; through a supported cloud exchange colocation provider, an Ethernet point-to-point connection provider, or through an MPLS connection provider. See what [providers are available in your region](/azure/expressroute/expressroute-locations). The direct ExpressRoute connection enables connectivity to the applications outlined in [What Microsoft 365 services are included?](#BKMK_WhatDoIGet). Network traffic for all other applications and services will continue to traverse the internet.
 
 Consider the following high level network diagram, which shows a typical Microsoft 365 customer connecting to Microsoft's datacenters over the internet for access to all Microsoft applications such as Microsoft 365, Windows Update, and TechNet. Customers use a similar network path regardless of whether they're connecting from an on-premises network or from an independent internet connection.
 
@@ -57,10 +58,10 @@ The following table lists the Microsoft 365 services that are supported over Exp
 |:-----|
 |Exchange Online<sup>1</sup> <br/> Exchange Online Protection<sup>1</sup> <br/> Delve<sup>1</sup> <br/> |
 |Skype for Business Online<sup>1</sup> <br/> Microsoft Teams <sup>1</sup> <br/> |
-|SharePoint Online<sup>1</sup> <br/> OneDrive for Business<sup>1</sup> <br/> Project Online<sup>1</sup> <br/> |
+|SharePoint<sup>1</sup> <br/> OneDrive<sup>1</sup> <br/> Project Online<sup>1</sup> <br/> |
 |Portal and shared<sup>1</sup> <br/> Microsoft Entra ID <sup>1</sup> <br/> Microsoft Entra Connect<sup>1</sup> <br/> Office<sup>1</sup> <br/> |
 
-<sup>1</sup> Each of these applications has internet connectivity requirements not supported over ExpressRoute, see the [Microsoft 365 endpoints article](./urls-and-ip-address-ranges.md) for more information.
+<sup>1</sup> Each of these applications has internet connectivity requirements not supported over ExpressRoute. See the [Microsoft 365 endpoints article](./urls-and-ip-address-ranges.md) for more information.
 
 The services that aren't included with ExpressRoute for Microsoft 365 are Microsoft 365 Apps for enterprise client downloads, On-premises Identity Provider Sign-In, and Microsoft 365 (operated by 21 Vianet) service in China.
 
@@ -69,9 +70,9 @@ The services that aren't included with ExpressRoute for Microsoft 365 are Micros
 
 ## Implementing ExpressRoute for Microsoft 365
 
-Implementing ExpressRoute requires the involvement of network and application owners and requires careful planning to determine the new [network routing architecture](/azure/architecture/guide/networking/networking-start-here), bandwidth requirements, where security will be implemented, high availability, and so on. To implement ExpressRoute, you'll need to:
+Implementing ExpressRoute requires the involvement of network and application owners and requires careful planning to determine the new [network routing architecture](/azure/architecture/guide/networking/networking-start-here), bandwidth requirements, where security is implemented, high availability, and so on. To implement ExpressRoute, you'll need to:
 
-1. Fully understand the need ExpressRoute satisfies in your Microsoft 365 connectivity planning. Understand what applications will use the internet or ExpressRoute and fully plan your network capacity, security, and high availability needs in the context of using both the internet and ExpressRoute for Microsoft 365 traffic.
+1. Fully understand the need ExpressRoute satisfies in your Microsoft 365 connectivity planning. Understand what applications use the internet or ExpressRoute and fully plan your network capacity, security, and high availability needs in the context of using both the internet and ExpressRoute for Microsoft 365 traffic.
 
 2. Determine the egress and peering locations for both internet and ExpressRoute traffic<sup>1</sup>.
 
@@ -97,7 +98,7 @@ Here's a short link you can use to come back: [https://aka.ms/expressrouteoffice
 
 Ready to sign up for [ExpressRoute for Microsoft 365](https://aka.ms/ert)?
 
-## Related Topics
+## Related articles
 
 [Assessing Microsoft 365 network connectivity](assessing-network-connectivity.md)
 

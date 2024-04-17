@@ -1,14 +1,9 @@
 ---
 title: Build queries using guided mode in Microsoft Defender XDR advanced hunting
 description: Learn how to build queries in guided mode by combining different available filters and conditions.
-keywords: guided mode, advanced hunting, threat hunting, cyber threat hunting, Microsoft Defender XDR, microsoft 365, m365, search, query, telemetry, custom detections, schema, kusto
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
 ms.subservice: adv-hunting
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords:
   - NOCSH
 ms.author: maccruz
@@ -20,7 +15,7 @@ ms.collection:
   - m365-security
   - tier2
 ms.topic: conceptual
-ms.date: 08/11/2022
+ms.date: 08/11/2023
 ---
 
 # Build hunting queries using guided mode in Microsoft Defender XDR
@@ -62,7 +57,7 @@ You can choose from:
 - All domains - to look through all available data in your query
 - Endpoints - to look through endpoint data as provided by Microsoft Defender for Endpoint
 - Apps and identities - to look through application and identity data as provided by Microsoft Defender for Cloud Apps and Microsoft Defender for Identity; users familiar with [Activity log](/defender-cloud-apps/activity-filters) can find the same data here
-- Email and collaboration - to look through email and collaboration apps data like SharePoint, OneDrive and others; users familiar with [Threat Explorer](../office-365-security/threat-explorer-about.md) can find the same data here
+- Email and collaboration - to look through email and collaboration apps data like SharePoint, OneDrive and others; users familiar with [Threat Explorer](../office-365-security/threat-explorer-real-time-detections-about.md) can find the same data here
 
 ## Use basic filters
 

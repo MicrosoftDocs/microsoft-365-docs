@@ -6,6 +6,7 @@ ms.service: defender-endpoint
 ms.subservice: onboard
 ms.author: maccruz
 author: schmurky
+ms.reviewer: noamhadash
 ms.localizationpriority: medium
 manager: dolmont
 audience: ITPro
@@ -13,10 +14,13 @@ ms.collection:
 - m365-security
 - tier2
 ms.topic: conceptual
-ms.date: 12/18/2020
+ms.date: 04/09/2024
 ---
 
 # Experience Microsoft Defender for Endpoint through simulated attacks 
+
+> [!IMPORTANT]
+> **The Microsoft Defender for Endpoint evaluation lab was deprecated in January, 2024**.
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 

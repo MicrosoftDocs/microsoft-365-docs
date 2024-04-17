@@ -8,8 +8,6 @@
          href: mdo-about.md
        - name: Exchange Online Protection overview
          href: eop-about.md
-       - name: Defender for Office 365 security comparison
-         href: mdo-security-comparison.md
        - name: What's new in Defender for Office 365
          href: defender-for-office-365-whats-new.md
 
@@ -356,8 +354,6 @@
        href: mdo-sec-ops-guide.md
      - name: Analyze and classify
        items:
-       - name: Investigate malicious email
-         href: investigate-malicious-email-that-was-delivered.md
        - name: Campaign Views
          href: campaigns.md
        - name: Report suspicious messages and files
@@ -382,16 +378,14 @@
            href: submissions-error-messages.md
        - name: Threat Explorer and real-time detections
          items:
-         - name: What is Threat Explorer and Real-time detections?
-           href: real-time-detections.md
-         - name: Email security with Threat Explorer
-           href: email-security-in-microsoft-defender.md
-         - name: Threat hunting in Threat Explorer
+         - name: About Threat Explorer and Real-time detections
+           href: threat-explorer-real-time-detections-about.md
+         - name: Threat hunting in Threat Explorer and Real-time detections
            href: threat-explorer-threat-hunting.md
-         - name: Improvements to Threat Hunting in Threat Explorer
-           href: threat-explorer-about.md
-         - name: Threat Explorer views
-           href: threat-explorer-views.md
+         - name: Email security with Threat Explorer and Real-time detections
+           href: threat-explorer-email-security.md
+         - name: Investigate delivered malicious email with Threat Explorer and Real-time detections
+           href: threat-explorer-investigate-delivered-malicious-email.md
          - name: Email entity page
            href: mdo-email-entity-page.md
          - name: Teams message entity panel
@@ -416,7 +410,7 @@
            href: message-trace-defender-portal.md
        - name: Threat Trackers
          items:
-         - name: Use Threat Trackers
+         - name: Threat trackers
            href: threat-trackers.md
      - name: SIEM server integration
        items:

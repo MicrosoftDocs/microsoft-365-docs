@@ -1,7 +1,6 @@
 ---
 title: Create custom Microsoft Defender XDR reports using Microsoft Graph security API and Power BI
 description: How to create custom Microsoft Defender XDR reports using Microsoft Graph security API and Power BI.
-keywords: reports, Microsoft Defender XDR, Microsoft Graph security API, Power BI
 ms.service: defender-xdr
 ms.sitesec: library
 ms.pagetype: security

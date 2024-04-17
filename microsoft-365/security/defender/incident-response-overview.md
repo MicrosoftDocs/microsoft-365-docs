@@ -1,12 +1,7 @@
 ---
 title: Investigate and respond with Microsoft Defender XDR
 description: Investigate and respond to incidents with the capabilities of Microsoft Defender XDR.
-keywords: incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, incident response, cyberattack
-search.product: eADQiWindows 10XVcnh
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: 
   - NOCSH
 ms.author: diannegali
