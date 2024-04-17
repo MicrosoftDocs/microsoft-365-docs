@@ -249,6 +249,11 @@ Another option is to use this command:
 
 `PS C:\Program Files\Windows Defender> Update-MpSignature`
 
+For more information about these commands, see the following resources:
+
+- [MpCmdRun.exe](command-line-arguments-microsoft-defender-antivirus.md)
+- [Update-MpSignature](/powershell/module/defender/update-mpsignature?view=windowsserver2022-ps&preserve=true)
+
 ### Determine whether EDR in block mode is turned on
 
 [EDR in block mode](edr-in-block-mode.md) provides added protection from malicious artifacts when Microsoft Defender Antivirus isn't the primary antivirus product and is running in passive mode. You can determine whether EDR in block mode is enabled by running the following command:
@@ -257,6 +262,8 @@ Another option is to use this command:
 
 There are two modes: Normal and Passive Mode. Testing with SAP systems was done only with `AMRunningMode = Normal` for SAP systems. 
 
+For more information about this command, see [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus?view=windowsserver2022-ps&preserve=true).
+
 ### Configure antivirus exclusions
 
 Before you configure exclusions, make sure that the SAP Basis team coordinates with your security team.  Exclusions should be configured centrally and not at the VM level. Exclusions such as the shared SAPMNT file system should be excluded via a policy using the Intune admin tool.
@@ -264,6 +271,8 @@ Before you configure exclusions, make sure that the SAP Basis team coordinates w
 To view exclusions, use the following command:
 
 `Get-MpPreference | Select-Object -Property ExclusionPath`
+
+For more information about this command, see [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus?view=windowsserver2022-ps&preserve=true).
 
 For more information about exclusions, see the following resources:
 
@@ -293,7 +302,10 @@ Set-MpPreference -DisableIOAVProtection $true
 Set-MpPreference -EnableNetworkProtection Disabled 
 ```
 
-You can't turn off EDR subcomponents on a device. The only way to turn off EDR is to [offboard the device](configure-endpoints-script.md#offboard-devices-using-a-local-script).
+For more information about these commands, see [Set-MpPreference](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps&preserve=true).
+
+> [!IMPORTANT]
+> You can't turn off EDR subcomponents on a device. The only way to turn off EDR is to [offboard the device](configure-endpoints-script.md#offboard-devices-using-a-local-script).
 
 To turn off [cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md) (Microsoft Advanced Protection Service, or MAPS), run the following commands:
 
@@ -309,8 +321,8 @@ For more information about cloud-delivered protection, see the following resourc
 
 ## Related articles
 
-[Deployment guidance for Microsoft Defender for Endpoint on Linux for SAP](mde-linux-deployment-on-sap.md)
+- [Deployment guidance for Microsoft Defender for Endpoint on Linux for SAP](mde-linux-deployment-on-sap.md)
 
-[Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md)
+- [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md)
 
-[Overview of endpoint detection and response](overview-endpoint-detection-response.md)
+- [Overview of endpoint detection and response](overview-endpoint-detection-response.md)
