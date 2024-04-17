@@ -18,16 +18,10 @@ f1.keywords:
 description: Learn about People Search in multitenant Microsoft 365 organizations.
 ---
 
-# Microsoft 365 multitenant Organization People Search (public preview)
+# Microsoft 365 multitenant Organization People Search 
 
 The multitenant Organization (MTO) People Search is a collaboration feature that enables search and discovery of people across multiple tenants. A tenant admin can enable cross-tenant synchronization that allows users to be synced to another tenant and be discoverable in its global address list. Once enabled, users are able to search and discover synced user profiles from the other tenant and view their corresponding people cards.
 
->[!NOTE]
->This Public Preview program is designed to give customers the opportunity to try out the multitenant people search feature. You can then validate the scenario and provide feedback to the product development team. The purpose of this article is to:
->
->- Give an overview of the feature
->- Define use cases that we currently support as part of the preview
->- Provide instructions on how you can configure and test the feature
 
 ![Azure AD Sync](../media/mt-people-search/aad-sync.png)
 
