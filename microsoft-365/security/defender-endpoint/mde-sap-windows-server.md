@@ -272,7 +272,7 @@ For more information about exclusions, see the following resources:
 
 ### Configure EDR exclusions
 
-It is not recommended to exclude files, paths or processes from EDR as this comprises the protection from modern non-file based threats. If required, open a support case with Microsoft Support via the Microsoft Defender portal specifying executables and/or paths to exclude. See [Contact Microsoft Defender for Endpoint support](contact-support.md).
+It isn't recommended to exclude files, paths, or processes from EDR as such exclusions comprise the protection from modern non-file based threats. If required, open a support case with Microsoft Support via the Microsoft Defender portal specifying executables and/or paths to exclude. See [Contact Microsoft Defender for Endpoint support](contact-support.md).
 
 ### Completely disable Defender for Endpoint on Windows for testing purposes
 
@@ -309,3 +309,7 @@ For more information about cloud-delivered protection, see the following resourc
 ## Related articles
 
 [Deployment guidance for Microsoft Defender for Endpoint on Linux for SAP](mde-linux-deployment-on-sap.md)
+
+[Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md)
+
+[Overview of endpoint detection and response](overview-endpoint-detection-response.md)
