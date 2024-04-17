@@ -82,19 +82,19 @@ SAP Support policy is documented in [3356389 - Antivirus or other security softw
 
 ## SAP applications on Windows: Top 10 recommendations
 
-1. Limit access to SAP servers, block network ports, and all other common security protection measures. This is an essential first step. The threat landscape has evolved from "file based" Viruses to file-less complex and sophisticated threats. Steps such as **blocking ports and limiting logon/access** to VMs is **no longer considered sufficient** to fully mitigate modern threats.
+1. **Limit access to SAP servers, block network ports, and take all other common security protection measures**. This is an essential first step. The threat landscape has evolved from "file based" Viruses to file-less complex and sophisticated threats. Steps such as **blocking ports and limiting logon/access** to VMs is **no longer considered sufficient** to fully mitigate modern threats.
 
-2. Deploy Defender for Endpoint to nonproductive systems first before deploying to production systems. Deploying Defender for Endpoint directly to production systems without testing is highly risky and can lead to downtime. If you can't delay deploying Defender for Endpoint to your production systems, consider temporarily disabling [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) and [real-time protection](configure-protection-features-microsoft-defender-antivirus.md). 
+2. **Deploy Defender for Endpoint to nonproductive systems first before deploying to production systems**. Deploying Defender for Endpoint directly to production systems without testing is highly risky and can lead to downtime. If you can't delay deploying Defender for Endpoint to your production systems, consider temporarily disabling [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) and [real-time protection](configure-protection-features-microsoft-defender-antivirus.md). 
 
-3. Real-time protection is enabled by default in Windows Server. If problems are identified that might be related to Defender for Endpoint, it's recommended to [configure exclusions](defender-endpoint-antivirus-exclusions.md) and/or [open a support case](contact-support.md) via the Microsoft Defender portal. 
+3. **Real-time protection is enabled by default in Windows Server**. If problems are identified that might be related to Defender for Endpoint, it's recommended to [configure exclusions](defender-endpoint-antivirus-exclusions.md) and/or [open a support case](contact-support.md) via the Microsoft Defender portal. 
 
-4. Defender for Endpoint deployment should be a joint project between the SAP Basis Team and your organization's security Team. The two teams need to create a phased deployment, testing and monitoring plan.
+4. **Defender for Endpoint deployment should be a joint project between the SAP Basis Team and your organization's security team**. The two teams need to create a phased deployment, testing and monitoring plan.
 
-5. Use tools such as PerfMon (Windows) to create a performance baseline before deploying and activating Defender for Endpoint. Compare the performance utilization before and after activating Defender for Endpoint.
+5. **Use tools such as PerfMon (Windows) to create a performance baseline before deploying and activating Defender for Endpoint**. Compare the performance utilization before and after activating Defender for Endpoint. See [perfmon](/windows-server/administration/windows-commands/perfmon).
 
-6. Deploy the latest version of Defender for Endpoint and use the latest releases of Windows, ideally Windows Server 2019 or newer. Older releases of Windows Server, such as Windows Server 2012, weren't tested. 
+6. **Deploy the latest version of Defender for Endpoint and use the latest releases of Windows**, ideally Windows Server 2019 or newer. See [Minimum requirements for Microsoft Defender for Endpoint](minimum-requirements.md). 
 
-7. Configure the following exclusions for Microsoft Defender Antivirus: 
+7. **Configure certain exclusions for Microsoft Defender Antivirus**. These include: 
 
    - DBMS data files, log files and temp files, including disks containing backup files
    - The entire contents of the SAPMNT directory
@@ -110,7 +110,7 @@ SAP Support policy is documented in [3356389 - Antivirus or other security softw
       - **SAP ASE**: Contact SAP 
       - **MaxDB**: Contact SAP
 
-8. Microsoft Defender Antivirus with SAP applications should have the following settings in most cases: 
+8. **Verify Defender for Endpoint settings**. Microsoft Defender Antivirus with SAP applications should have the following settings in most cases: 
 
    - `AntivirusEnabled                   : True`
    - `AntivirusSignatureAge              : 0`
@@ -119,9 +119,9 @@ SAP Support policy is documented in [3356389 - Antivirus or other security softw
    - `IsTamperProtected                  : True`
    - `RealTimeProtectionEnabled          : True`
 
-9. Tools, such as [Intune](/mem/intune/protect/endpoint-security) or [Defender for Endpoint security settings management](/mem/intune/protect/mde-security-integration) are recommended to ensure that Defender for Endpoint is configured correctly and uniformly deployed. In the Microsoft Defender portal, go to **Endpoints** > **Configuration management** > **Endpoint security policies**, and then select **Create new Policy**. For more information, see [Manage endpoint security policies in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/manage-security-policies). 
+9. **Tools, such as [Intune](/mem/intune/protect/endpoint-security) or [Defender for Endpoint security settings management](/mem/intune/protect/mde-security-integration) are recommended to ensure that Defender for Endpoint is configured correctly and uniformly deployed**. In the Microsoft Defender portal, go to **Endpoints** > **Configuration management** > **Endpoint security policies**, and then select **Create new Policy**. For more information, see [Manage endpoint security policies in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/manage-security-policies). 
 
-10. Several new features are being implemented in Defender for Endpoint on Windows, and these features were tested with SAP systems. These new features reduce blocking and lower CPU consumption. It's recommended to use the latest Defender for Endpoint for Windows release. See [Microsoft Defender Antivirus security intelligence and product updates](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-updates).
+10. **Use the latest Defender for Endpoint for Windows release**. Several new features are being implemented in Defender for Endpoint on Windows, and these features were tested with SAP systems. These new features reduce blocking and lower CPU consumption. See [Microsoft Defender Antivirus security intelligence and product updates](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-updates).
 
 ## Deployment methodology
 
