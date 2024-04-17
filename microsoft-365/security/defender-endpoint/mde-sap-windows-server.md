@@ -227,9 +227,7 @@ Here's a list of what to check:
 
    Defender for Endpoint on Linux doesn't scan NFS file systems during scheduled scans. 
 
-8. **Troubleshoot sense health or reliability issues**. To troubleshoot such issues, use the [Defender for Endpoint Client Analyzer tool](overview-client-analyzer.md). The Defender for Endpoint Client Analyzer can be useful when diagnosing sensor health or reliability issues on onboarded devices running either Windows, Linux, or macOS. 
-
-   Get the latest version of the Defender for Endpoint Client Analyzer here: [https://aka.ms/MDEAnalyzer](https://aka.ms/MDEAnalyzer).
+8. **Troubleshoot sense health or reliability issues**. To troubleshoot such issues, use the [Defender for Endpoint Client Analyzer tool](overview-client-analyzer.md). The Defender for Endpoint Client Analyzer can be useful when diagnosing sensor health or reliability issues on onboarded devices running either Windows, Linux, or macOS. Get the latest version of the Defender for Endpoint Client Analyzer here: [https://aka.ms/MDEAnalyzer](https://aka.ms/MDEAnalyzer).
 
 9. **Open a support case** if you need help. See [Contact Microsoft Defender for Endpoint support](contact-support.md).
 
