@@ -64,7 +64,7 @@ An alternative to advanced hunting, but with a narrower scope, is the Microsoft 
 
 The following screenshot shows the Timeline view of these events on a given endpoint. From this view, you can filter the events list based on any of the Event Groups along the right-side pane. You can also enable or disable Flagged and Verbose events while viewing alerts and scrolling through the historical timeline.
 
-:::image type="content" source="images/mic-sec-def-timelinenew.png" alt-text="The Microsoft Defender XDR timeline" lightbox="images/mic-sec-def-timelinenew.png":::
+:::image type="content" source="media/mic-sec-def-timelinenew.png" alt-text="The Microsoft Defender XDR timeline" lightbox="media/mic-sec-def-timelinenew.png":::
 
 ## How to troubleshoot attack surface reduction rules?
 

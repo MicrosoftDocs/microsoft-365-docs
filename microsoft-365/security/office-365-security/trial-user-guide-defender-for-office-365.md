@@ -11,12 +11,11 @@ ms.collection:
 - m365-security
 - tier1
 ms.localizationpriority: high
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 search.appverid:
 - MOE150
 - MET150
 description: "Microsoft Defender for Office 365 solutions trial user guide."
-ms.subservice: mdo
 ms.custom: trial-user guide
 ms.date: 6/23/2023
 appliesto:
@@ -142,8 +141,6 @@ Defender for Office 365 enables you to investigate activities that put people in
 - [Find suspicious email that was delivered](threat-explorer-investigate-delivered-malicious-email.md#find-suspicious-email-that-was-delivered): Find and delete messages, identify the IP address of a malicious email sender, or start an incident for further investigation.
 - [Email security scenarios in Threat Explorer and Real-time detections](threat-explorer-threat-hunting.md#email-security-scenarios-in-threat-explorer-and-real-time-detections)
 
-<!--- - [View the timeline of your email](threat-explorer-investigate-delivered-malicious-email.md#view-the-timeline-of-your-email): Simply hunting for your security operations team. --->
-
 #### See campaigns targeting your organization
 
 See the bigger picture with Campaign Views in Defender for Office 365, which gives you a view of the attack campaigns targeting your organization and the impact they have on your users.
@@ -223,8 +220,6 @@ Defender for Office 365 enables you to investigate activities that put people in
 
 - [Find suspicious email that was delivered](threat-explorer-investigate-delivered-malicious-email.md#find-suspicious-email-that-was-delivered): Find and delete messages, identify the IP address of a malicious email sender, or start an incident for further investigation.
 - [Email security scenarios in Threat Explorer and Real-time detections](threat-explorer-threat-hunting.md#email-security-scenarios-in-threat-explorer-and-real-time-detections)
-
-<!--- - [View the timeline of your email](threat-explorer-investigate-delivered-malicious-email.md#view-the-timeline-of-your-email): Simply hunting for your security operations team. --->
 
 #### Convert to Standard Protection at the end of evaluation period
 

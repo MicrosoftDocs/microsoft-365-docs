@@ -308,7 +308,7 @@ You can also submit a sample through the [Microsoft Defender portal](https://www
 
 2. In the **Deep analysis** tab of the file view, select **Submit**.
 
-   :::image type="content" source="images/submit-file.png" alt-text="The submit PE files button" lightbox="images/submit-file.png":::
+   :::image type="content" source="media/submit-file.png" alt-text="The submit PE files button" lightbox="media/submit-file.png":::
 
    > [!NOTE]
    > Only PE files are supported, including _.exe_ and _.dll_ files.

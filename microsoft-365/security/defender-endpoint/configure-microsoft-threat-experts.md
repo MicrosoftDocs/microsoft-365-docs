@@ -44,15 +44,15 @@ If you're already a Defender for Endpoint customer, you can apply through the Mi
 
 2. Click **Apply**.
 
-   :::image type="content" source="images/mte-collaboratewithmte.png" alt-text="The Microsoft Defender Experts settings" lightbox="images/mte-collaboratewithmte.png":::
+   :::image type="content" source="media/mte-collaboratewithmte.png" alt-text="The Microsoft Defender Experts settings" lightbox="media/mte-collaboratewithmte.png":::
 
 3. Enter your name and email address so that Microsoft can get back to you on your application.
 
-   :::image type="content" source="images/mte-apply.png" alt-text="The Name field on the Microsoft Defender Experts application page" lightbox="images/mte-apply.png":::
+   :::image type="content" source="media/mte-apply.png" alt-text="The Name field on the Microsoft Defender Experts application page" lightbox="media/mte-apply.png":::
 
 4. Read the [privacy statement](https://privacy.microsoft.com/privacystatement), then click **Submit** when you're done. You'll receive a welcome email once your application is approved.
 
-   :::image type="content" source="images/mte-applicationconfirmation.png" alt-text="The Microsoft Defender Experts application confirmation message" lightbox="images/mte-applicationconfirmation.png":::
+   :::image type="content" source="media/mte-applicationconfirmation.png" alt-text="The Microsoft Defender Experts application confirmation message" lightbox="media/mte-applicationconfirmation.png":::
 
 When accepted, you'll receive a welcome email and you'll see the **Apply** button change to a toggle that is "on". In case you want to take yourself out of the Endpoint Attack Notifications service, slide the toggle "off" and click **Save preferences** at the bottom of the page.
 

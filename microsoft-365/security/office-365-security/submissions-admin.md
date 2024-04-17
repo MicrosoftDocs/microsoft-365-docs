@@ -15,9 +15,8 @@ ms.collection:
   - tier1
 ms.custom: seo-marvel-apr2020
 description: "Admins can learn how to use the Submissions page in the Microsoft Defender portal to submit messages, URLs, and email attachments to Microsoft for analysis. Reasons for submission include: legitimate messages that were blocked, suspicious messages that were allowed, suspected phishing email, spam, malware, and other potentially harmful messages."
-ms.subservice: mdo
-ms.service: microsoft-365-security
-ms.date: 8/7/2023
+ms.service: defender-office-365
+ms.date: 3/25/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 1 and Plan 2</a>
@@ -27,6 +26,8 @@ appliesto:
 # Use the Submissions page to submit suspected spam, phish, URLs, legitimate email getting blocked, and email attachments to Microsoft
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
+For more information about what Microsoft does to your submissions, [check this out](submissions-report-messages-files-to-microsoft.md#report-suspicious-email-messages-to-microsoft).
 
 In Microsoft 365 organizations with Exchange Online mailboxes, admins can use the **Submissions** page in the Microsoft Defender portal to submit messages, URLs, and attachments to Microsoft for analysis. There are two basic types of admin submissions:
 
@@ -61,7 +62,7 @@ For other ways that **admins** can report messages to Microsoft in the Defender 
 - You open the Microsoft Defender portal at <https://security.microsoft.com/>. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
-  - [Microsoft Defender XDR Unified role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac) (Affects the Defender portal only, not PowerShell): **Security operations/Security data/Response (manage)** or **Security operations/Security data/Read-only**.
+  - [Microsoft Defender XDR Unified role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac) (Affects the Defender portal only, not PowerShell): **Security operations/Security data/Response (manage)** or **Security operations/Security data/Security data basics (read)**.
   - [Email & collaboration permissions in the Microsoft Defender portal](mdo-portal-permissions.md): Membership in the **Security Administrator** or **Security Reader** role groups.
   - [Microsoft Entra permissions](/entra/identity/role-based-access-control/manage-roles-portal): Membership in the **Security Administrator** or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
@@ -399,7 +400,7 @@ For URLs reported as false positives, we allow subsequent messages that contain 
        - **7 days**
        - **30 days**
        - **Specific date**: The maximum value is 30 days from today.
-     - **Allow entry note (optional)**: Enter optional information about why you're allow this item.
+     - **Allow entry note (optional)**: Enter optional information about why you're allowing this item.
 
      When you're finished on the second page of the **Submit to Microsoft for analysis** flyout, select **Submit**.
 
@@ -415,9 +416,12 @@ After a few moments, the allow entry is available on the **URL** tab on the **Te
 > - When the URL is encountered again during mail flow, [Safe Links](safe-links-about.md) detonation or URL reputation checks and all other URL-based filters are overridden. If the filtering system determines that all other entities in the email message are clean, the message are delivered.
 > - During selection, all URL-based filters, including [Safe Links](safe-links-about.md) detonation or URL reputation checks are overridden, allowing user access to content at the URL.
 
-### Report Teams messages to Microsoft
+### Report Teams messages to Microsoft in Defender for Office 365 Plan 2
 
-You can't submit Teams messages from the **Teams messages** tab on the **Submissions** page. The only way to submit a Teams message to Microsoft for analysis is to submit a user reported Teams message from the **User reported** tab as described in the [Submit user reported messages to Microsoft for analysis](#submit-user-reported-messages-to-microsoft-for-analysis) section later in this article.
+> [!TIP]
+> [Submission of Teams message to Microsoft](submissions-teams.md) is currently in Preview, isn't available in all organizations, and is subject to change.
+
+In Microsoft 365 organizations that have Microsoft Defender for Office 365 Plan 2 (add-on licenses or included in subscriptions like Microsoft 365 E5), You can't submit Teams messages from the **Teams messages** tab on the **Submissions** page. The only way to submit a Teams message to Microsoft for analysis is to submit a user reported Teams message from the **User reported** tab as described in the [Submit user reported messages to Microsoft for analysis](#submit-user-reported-messages-to-microsoft-for-analysis) section later in this article.
 
 The entries on the **Teams messages** tab are the result of submitting user reported Teams message to Microsoft. For more information, see the [View converted admin submissions](#view-converted-admin-submissions) section later in this article.
 
@@ -488,7 +492,50 @@ When you're finished on the **Filter** flyout, select **Apply**. To clear the fi
 
 Use :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** to export the list of entries to a CSV file.
 
-### View Teams admin submissions to Microsoft
+#### View email admin submission details
+
+If you select an entry on the **Emails** tab of the **Submissions** page by clicking anywhere in the row other than the check box next to the first column, a details flyout opens.
+
+At the top of the details flyout, the following message information is available:
+
+- The title of the flyout is the message Subject value.
+- Any user tags that are assigned to the recipients of the message (including the Priority account tag). For more information, see [User tags in Microsoft Defender for Office 365](user-tags-about.md)
+- In Defender for Office 365, the actions that are available at the top of the flyout are described in the [Actions for admin submissions in Defender for Office 365](#actions-for-admin-submissions-in-defender-for-office-365) section.
+
+> [!TIP]
+> To see details about other submissions without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
+
+The next sections in the details flyout are related to email message submissions:
+
+- **Result details** section:
+  - **Result**: Contains the **Result** value for the submission. For example:
+    - **Should not have been blocked**
+    - **Allowed due to user overrides**
+    - **Allowed due to a rule**
+  - **Recommended steps for email submissions**: Contains links to related actions. For example:
+    - **View Exchange mail flow rules (transport rules)**
+    - **View this message in Explorer** (Threat Explorer or Real-time detections in Defender for Office 365 only)
+    - **Search for similar messages in Explorer** (Threat Explorer or Real-time detections in Defender for Office 365 only)
+
+- **Submission details** section:
+  - **Date submitted**
+  - **Submission name**
+  - **Submission type**: The value is **Email**.
+  - **Reason for submitting**
+  - **Submission ID**
+  - **Submitted by**
+  - **Submission status**
+
+- **Allow details** section: Available only for email submissions where the **Result** value is **Allowed due to user overrides** or **Allowed to a rule**: Contains the **Name** (email address) and **Type** (**Sender**) values.
+
+The rest of the details flyout contains the **Delivery details**, **Email details**, **URLs**, and **Attachments** sections that are part of the _Email summary panel_. For more information, see [The Email summary panel](mdo-email-entity-page.md#the-email-summary-panel).
+
+When you're finished in the details flyout, select **Close**.
+
+### View Teams admin submissions to Microsoft in Defender for Office 365 Plan 2
+
+> [!TIP]
+> [Submission of Teams message to Microsoft](submissions-teams.md) is currently in Preview, isn't available in all organizations, and is subject to change.
 
 In the Microsoft Defender portal at <https://security.microsoft.com>, go to the **Submissions** page at **Actions & submissions** \> **Submissions**. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
 
@@ -497,7 +544,7 @@ On the **Submissions** page, select the **Teams messages** tab.
 You can sort the entries by clicking on an available column header. Select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns** to change the columns that are shown. The default values are marked with an asterisk (<sup>\*</sup>):
 
 - **Submission name**<sup>\*</sup>
-- **Sender**sup>\*</sup>
+- **Sender**<sup>\*</sup>
 - **Date submitted**<sup>\*</sup>
 - **Reason for submitting**<sup>\*</sup>
 - **Submitted by**
@@ -540,6 +587,42 @@ To filter the entries, select :::image type="icon" source="../../media/m365-cc-s
 When you're finished on the **Filter** flyout, select **Apply**. To clear the filters, select :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
 Use :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** to export the list of entries to a CSV file.
+
+#### View Teams admin submission details
+
+If you select an entry on the **Teams messages** tab of the **Submissions** page by clicking anywhere in the row other than the check box next to the first column, a details flyout opens.
+
+At the top of the details flyout, the following message information is available:
+
+- The title of the flyout is the subject or the first 100 characters of the Teams message.
+- The current message verdict.
+- The number of links in the message.
+- :::image type="icon" source="../../media/m365-cc-sc-view-alert-icon.png" border="false"::: **View alert**. An alert is triggered when an admin submission is created or updated. Selecting this action takes you to the details of the alert.
+
+> [!TIP]
+> To see details about other submissions without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
+
+The next sections in the details flyout are related to Teams submissions:
+
+- **Submission results** section:
+  - **Result**: Contains the **Result** value for the submission. For example:
+    - **Should have been blocked**
+    - **We did not receive the submission, please fix the problem and resubmit**
+  - **Recommended steps for email submissions**: Contains links to related actions. For example:
+    - **View Exchange mail flow rules (transport rules)**
+
+- **Submission details** section:
+  - **Date submitted**
+  - **Submission name**
+  - **Submission type**: The value is **Teams**
+  - **Reason for submitting**
+  - **Submission ID**
+  - **Submitted by**
+  - **Submission status**
+
+The rest of the details flyout contains the **Message details**, **Sender**, **Participants**, **Channel details**, and **URLs** sections that are part of the _Teams message entity panel_. For more information, see [The Teams mMessage entity panel in Microsoft Defender for Office 365 Plan 2](teams-message-entity-panel.md).
+
+When you're finished in the details flyout, select **Close**.
 
 ### View email attachment admin submissions to Microsoft
 
@@ -598,6 +681,39 @@ When you're finished on the **Filter** flyout, select **Apply**. To clear the fi
 
 Use :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** to export the list of entries to a CSV file.
 
+#### View email attachment admin submission details
+
+If you select an entry on the **Email attachments** tab of the **Submissions** page by clicking anywhere in the row other than the check box next to the first column, a details flyout opens.
+
+At the top of the details flyout, the following message information is available:
+
+- The title of the flyout is the filename of the attachment.
+- The **Status** and **Result** values of the submission.
+- :::image type="icon" source="../../media/m365-cc-sc-view-alert-icon.png" border="false"::: **View alert**. In Defender for Office 365, an alert is triggered when an admin submission is created or updated. Selecting this action takes you to the details of the alert.
+
+> [!TIP]
+> To see details about other submissions without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
+
+The next sections in the details flyout are related to email attachment submissions:
+
+- **Result details** section:
+  - **Result**: Contains the **Result** value for the submission. For example:
+    - **Should have been blocked**
+    - **Should not have been blocked**
+  - **Recommended steps for email submissions**: Contains links to related actions. For example:
+    - **Block URL/file in Tenant Allow/Block List**
+
+- **Submission details** section:
+  - **Date submitted**
+  - **Submission name**
+  - **Submission type**: The value is **File**.
+  - **Reason for submitting**
+  - **Submission ID**
+  - **Submitted by**
+  - **Submission status**
+
+When you're finished in the details flyout, select **Close**.
+
 ### View URL admin submissions to Microsoft
 
 In the Microsoft Defender portal at <https://security.microsoft.com>, go to the **Submissions** page at **Actions & submissions** \> **Submissions**. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
@@ -655,11 +771,44 @@ When you're finished on the **Filter** flyout, select **Apply**. To clear the fi
 
 Use :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** to export the list of entries to a CSV file.
 
-### Admin submission result details
+#### View URL admin submission details
 
-Email messages, Teams messages, email attachments, and URLs that admins submit to Microsoft for analysis are available on the corresponding tabs on the **Submissions** page.
+If you select an entry on the **URLs** tab of the **Submissions** page by clicking anywhere in the row other than the check box next to the first column, a details flyout opens.
 
-When you select an entry on the tab by clicking anywhere in the row other than the check box next to the first column, complete information about the original reported item, the status of the reported item, and the analysis results of the reported item are shown in the details flyout that opens:
+At the top of the details flyout, the following message information is available:
+
+- The title of the flyout is the domain of the URL.
+- The **Status** and **Result** values of the submission.
+- :::image type="icon" source="../../media/m365-cc-sc-view-alert-icon.png" border="false"::: **View alert**. In Defender for Office 365, an alert is triggered when an admin submission is created or updated. Selecting this action takes you to the details of the alert.
+
+> [!TIP]
+> To see details about other submissions without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
+
+The remaining sections in the details flyout are related to URL submissions:
+
+- **Result details** section:
+  - **Result**: Contains the **Result** value for the submission. For example:
+    - **Should have been blocked**
+    - **Should not have been blocked**
+  - **Recommended steps for email submissions**: Contains links to related actions. For example:
+    - **Block URL/file in Tenant Allow/Block List**
+
+- **Submission details** section:
+  - **Date submitted**
+  - **URL**
+  - **Submission type**: The value is **URL**.
+  - **Reason for submitting**
+  - **Submission ID**
+  - **Submitted by**
+  - **Submission status**
+
+- **Allows details** or **Block details** sections: Available only for URL submissions where the URL was blocked or allowed: Contains the **Name** (URL domain) and **Type** (**URL**) values.
+
+When you're finished in the details flyout, select **Close**.
+
+### Results from Microsoft
+
+The analysis results of the reported item are shown in the details flyout that opens when you select an entry on the **Emails**, **Teams messages**, **Email attachments**, or **URLs** tab of the **Submissions** page:
 
 - If there was a failure in the sender's email authentication at the time of delivery.
 - Information about any policies or overrides that could have affected or overridden the message verdict from filtering system.
@@ -668,13 +817,13 @@ When you select an entry on the tab by clicking anywhere in the row other than t
 
 If an override or policy configuration was found, the result should be available in several minutes. If there wasn't a problem in email authentication or delivery wasn't affected by an override or policy, the detonation and feedback from graders could take up to a day.
 
-### Actions for admin submissions in Defender for Office 365 Plan 2
+### Actions for admin submissions in Defender for Office 365
 
-In organizations with Microsoft Defender for Office 365 Plan 2 (add-on licenses or included in subscriptions like Microsoft 365 E5), the following actions are available for admin submissions in the details flyout that opens after you select an entry from the list by clicking anywhere in the row other than the check box:
+In organizations with Microsoft Defender for Office 365 (add-on licenses or included in subscriptions like Microsoft 365 E5 or Microsoft 365 Business Premium), the following actions are available for admin submissions in the details flyout that opens after you select an entry from the list by clicking anywhere in the row other than the check box:
 
-- :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity**: Available in the details flyout of entries on the **Emails** tab only. For more information, see [How to read the email entity page](mdo-email-entity-page.md#how-to-read-the-email-entity-page).
+- :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity**: Available in the details flyout of entries on the **Emails** tab only. For more information, see [What's on the Email entity page](mdo-email-entity-page.md#whats-on-the-email-entity-page).
 
-- :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take actions**: Available in the details flyout of entries on the **Emails** tab only. This action starts the same Action wizard that's available on the email entity page. For more information, see [Actions you can take on the Email entity Page](mdo-email-entity-page.md#actions-you-can-take-on-the-email-entity-page).
+- :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take actions**: Available in the details flyout of entries on the **Emails** tab only. This action starts the same Action wizard that's available on the Email entity page. For more information, see [Actions on the Email entity page](mdo-email-entity-page.md#actions-on-the-email-entity-page).
 
 - :::image type="icon" source="../../media/m365-cc-sc-view-alert-icon.png" border="false"::: **View alert**. An alert is triggered when an admin submission is created or updated. Selecting this action takes you to the details of the alert.
 
@@ -685,7 +834,7 @@ In organizations with Microsoft Defender for Office 365 Plan 2 (add-on licenses 
 
 ## Admin options for user reported messages
 
-Admins can see what users are reporting on the **User reported** tab on the **Submissions** page if the following statements are true:
+For email messages, admins can see what users are reporting on the **User reported** tab on the **Submissions** page if the following statements are true:
 
 - The [user reported settings](submissions-user-reported-messages-custom-mailbox.md) are turned on.
 - **Email messages**: You're using supported methods for users to report messages:
@@ -698,6 +847,10 @@ Admins can see what users are reporting on the **User reported** tab on the **Su
 
 - User reported messages that are sent to Microsoft only or to Microsoft and the [reporting mailbox](submissions-user-reported-messages-custom-mailbox.md) appear on the **User reported** tab. Although these messages have already been reported to Microsoft, admins can resubmit the reported messages.
 - User reported messages that are sent only to the reporting mailbox appear on the **User reported** tab with the **Result** value **Not Submitted to Microsoft**. Admins should report these messages to Microsoft for analysis.
+
+In organizations with Microsoft Defender for Office 365 Plan 2 (add-on licenses or included in subscriptions like Microsoft 365 E5), admins can also see [user reported messages in Microsoft Teams in Defender for Office 365 Plan 2](submissions-teams.md) (currently in Preview).
+
+In organizations with Defender for Office 365 Plan 2 (add-For [user reported messages in Microsoft Teams in Defender for Office 365 Plan 2](submissions-teams.md) (currently in Preview)
 
 In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Actions & submissions** \> **Submissions**. Or, to go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
 
@@ -765,14 +918,115 @@ To filter the entries, select :::image type="icon" source="../../media/m365-cc-s
 - **Reported from**: The values **Microsoft** and **Third party**.
 - **Phish simulation**: The values **Yes** and **No**.
 - **Converted to admin submission**: The values **Yes** and **No**.
-- **Message type**: The values **Email** and **Teams**.
-- **Tags**: **All** or select [user tags](user-tags-about.md) from the dropdown list.
+- **Message type**: The available values are:
+  - **Email**
+  - **Teams message** (Defender for Office 365 Plan 2 only; currently in Preview).
+- **Tags**: **All** or select one or more user tags (including Priority account) that are assigned to users. For more information about user tags, see [User tags in Microsoft Defender for Office 365](user-tags-about.md).
 
 When you're finished on the **Filter** flyout, select **Apply**. To clear the filters, select :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
 Use :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Export** to export the list of entries to a CSV file.
 
 For more information about the actions that are available for messages on the **User reported** tab, see the next subsection.
+
+### View user reported email message details
+
+If you select an email-related entry on the **User reported** tab of the **Submissions** page by clicking anywhere in the row other than the check box next to the first column, a details flyout opens.
+
+At the top of the details flyout, the following message information is available:
+
+- The title of the flyout is the message Subject value.
+- Any user tags that are assigned to the recipients of the message (including the Priority account tag). For more information, see [User tags in Microsoft Defender for Office 365](user-tags-about.md)
+- The actions that are available at the top of the flyout are described in the [Admin actions for user reported messages](#admin-actions-for-user-reported-messages) section.
+
+> [!TIP]
+> To see details about other submissions without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
+
+The next sections in the details flyout are related to user reported submissions:
+
+- **Result details** section:
+  - **Result**: Contains the **Result** value for the submission. For example:
+    - **Should not have been blocked**
+    - **Allowed due to user overrides**
+    - **Allowed due to a rule**
+  - **Recommended steps for email submissions**: Contains links to related actions. For example:
+    - **View Exchange mail flow rules (transport rules)**
+    - **View this message in Explorer** (Threat Explorer or Real-time detections in Defender for Office 365 only)
+    - **Search for similar messages in Explorer** (Threat Explorer or Real-time detections in Defender for Office 365 only)
+
+- **Reported message details** section:
+  - **Date submitted**
+  - **Submission name**
+  - **Reported reason**.
+  - **Message reported ID**
+  - **Reported by**
+  - **Phish simulation**: The value is **Yes** or **No**.
+  - **Converted to admin submission**: The value is **Yes** or **No**. For more information, see [View converted admin submissions](#view-converted-admin-submissions).
+
+The rest of the details flyout contains the **Delivery details**, **Email details**, **URLs**, and **Attachments** sections that are part of the _Email summary panel_. For more information, see [The Email summary panel](mdo-email-entity-page.md#the-email-summary-panel).
+
+> [!TIP]
+> If the **Result** value is **Phish simulation**, the details flyout might contain the following information only:
+>
+> - **Result details** section
+> - **Reported message details** section
+> - **Email details** section with the following values:
+>   - **Network Message ID**
+>   - **Sender**
+>   - **Sent date**
+
+When you're finished in the details flyout, select **Close**.
+
+### View user reported Teams message details in Defender for Office 365 Plan 2
+
+> [!TIP]
+> [User reporting of messages in Microsoft Teams](submissions-teams.md#how-users-report-messages-in-teams) is currently in Preview, isn't available in all organizations, and is subject to change.
+
+In Microsoft 365 organizations that have Microsoft Defender for Office 365 Plan 2 (add-on licenses or included in subscriptions like Microsoft 365 E5), user reported Teams messages are available on the **User reported** tab of the **Submissions** page. It's easy to find them if you filter the results by the **Message type** value **Teams message**.
+
+If you select a Teams message entry on the **User reported** tab by clicking anywhere in the row other than the check box next to the first column, a details flyout opens.
+
+At the top of the details flyout, the following message information is available:
+
+- The title of the flyout is the subject or the first 100 characters of the Teams message.
+- The current message verdict.
+- The number of links in the message.
+- The available actions are described in the [Admin actions for user reported messages](#admin-actions-for-user-reported-messages) section.
+
+> [!TIP]
+> To see details about other submissions without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
+
+The next sections in the details flyout are related to user reported Teams submissions:
+
+- **Submission results** section:
+  - **Result**: Contains the **Result** value for the submission. For example:
+    - **Should not have been blocked**
+    - **Not submitted to Microsoft**
+  - **Recommended steps for email submissions**: Contains links to related actions. For example:
+    - **View Exchange mail flow rules (transport rules)**
+
+- **Reported message details** section:
+  - **Date reported**
+  - **Submission name**
+  - **Reported reason**.
+  - **Message reported ID**
+  - **Reported by**
+  - **Phish simulation**: The value is **Yes** or **No**.
+  - **Converted to admin submission**: The value is **Yes** or **No**. For more information, see [View converted admin submissions](#view-converted-admin-submissions).
+
+The rest of the details flyout contains the **Message details**, **Sender**, **Participants**, **Channel details**, and **URLs** sections that are part of the _Teams message entity panel_. For more information, see [The Teams mMessage entity panel in Microsoft Defender for Office 365 Plan 2](teams-message-entity-panel.md).
+
+> [!TIP]
+> If the **Result** value is **Phish simulation**, the details flyout might contain the following information only:
+>
+> - **Result details** section
+> - **Reported message details** section
+> - **Email details** section with the following values:
+>   - **Network Message ID**
+>   - **Sender**
+>   - **Sent date**
+
+When you're finished in the details flyout, select **Close**.
 
 ### Admin actions for user reported messages
 
@@ -787,10 +1041,12 @@ On the **User reported** tab, actions for user reported messages are available o
   - :::image type="icon" source="../../media/m365-cc-sc-submit-user-reported-message-icon.png" border="false"::: **[Submit to Microsoft for analysis](#submit-user-reported-messages-to-microsoft-for-analysis)**
   - :::image type="icon" source="../../media/m365-cc-scc-mark-and-notify-icon.png" border="false"::: **[Mark as and notify](#notify-users-about-admin-submitted-messages-to-microsoft)**
   - :::image type="icon" source="../../media/m365-cc-sc-view-submission-icon.png" border="false"::: **[View the converted admin submission](#view-converted-admin-submissions)**
-  - [Actions in Microsoft Defender for Office 365 Plan 2 only](#actions-for-user-reported-messages-in-defender-for-office-365-plan-2):
+  - [Actions in Microsoft Defender for Office 365 only](#actions-for-user-reported-messages-in-defender-for-office-365):
     - :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity**
     - :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take actions**
     - :::image type="icon" source="../../media/m365-cc-sc-view-alert-icon.png" border="false"::: **View alert**
+
+[Actions for user reported messages in Defender for Office](#actions-for-user-reported-messages-in-defender-for-office-365)
 
   > [!TIP]
   > To see details or take action on other user reported messages without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
@@ -916,12 +1172,12 @@ If you select one of these messages by clicking anywhere in the row other than t
 
 This action takes you to the corresponding admin submission entry on the appropriate tab (for example, the **Emails** tab).
 
-#### Actions for user reported messages in Defender for Office 365 Plan 2
+#### Actions for user reported messages in Defender for Office 365
 
-In organizations with Microsoft Defender for Office 365 Plan 2 (add-on licenses or included in subscriptions like Microsoft 365 E5), the following actions might also be available in the details flyout of a user reported message on the **User reported** tab:
+In organizations with Microsoft Defender for Office 365 (add-on licenses or included in subscriptions like Microsoft 365 E5 or Microsoft 365 Business Premium), the following actions might also be available in the details flyout of a user reported message on the **User reported** tab:
 
-- :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity** (email messages only): For more information, see [How to read the email entity page](mdo-email-entity-page.md#how-to-read-the-email-entity-page).
+- :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity** (email messages only): For more information, see [What's on the Email entity page](mdo-email-entity-page.md#whats-on-the-email-entity-page).
 
-- :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take actions** (email messages only): This action starts the same Action wizard that's available on the email entity page. For more information, see [Actions you can take on the Email entity Page](mdo-email-entity-page.md#actions-you-can-take-on-the-email-entity-page).
+- :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take actions** (email messages only): This action starts the same Action wizard that's available on the Email entity page. For more information, see [Actions on the Email entity page](mdo-email-entity-page.md#actions-on-the-email-entity-page).
 
 - :::image type="icon" source="../../media/m365-cc-sc-view-alert-icon.png" border="false"::: **View alert**. An alert is triggered when an admin submission is created or updated. Selecting this action takes you to the details of the alert.

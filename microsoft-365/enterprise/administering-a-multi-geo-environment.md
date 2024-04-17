@@ -1,7 +1,7 @@
 ---
 title: "Service Behavior in a Multi-Geo Enabled Environment"
 ms.reviewer:
-ms.date: 08/10/2020
+ms.date: 04/10/2024
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
@@ -16,6 +16,7 @@ ms.custom:
 ms.collection: 
 - Strat_SP_gtc
 - SPO_Content
+- must-keep
 ms.localizationpriority: medium
 description: Admins can learn about how to administer SharePoint and OneDrive services in a multi-geo environment.
 ---
@@ -34,7 +35,7 @@ A unified [Audit log](https://support.office.com/article/0d4d0f35-390b-4518-800e
 
 ## BCS, Secure Store, Apps
 
-BCS, Secure Store, and Apps all have separate instances in each satellite location, therefore the SharePoint Online administrator should manage and configure these services separately from each satellite location.
+BCS, Secure Store, and Apps all have separate instances in each satellite location, and therefore the SharePoint administrator should manage and configure these services separately from each satellite location.
 
 ## Compliance admin center
 
@@ -50,7 +51,7 @@ Users' Exchange Online mailboxes are moved automatically if their PDL is changed
 
 ## Information Protection (IP) Data Loss Prevention (DLP) policy
 
-You can set your IP DLP policies for OneDrive for Business, SharePoint Online, and Exchange Online in the Security and Compliance center, scoping policies as needed to the whole _Tenant_ or to applicable users. For example: If you wish to select a policy for a user in a satellite location, select to apply the policy to a specific OneDrive for Business and enter the user's OneDrive for Business URL. See [Overview of data loss prevention policies](https://support.office.com/article/1966b2a7-d1e2-4d92-ab61-42efbb137f5e) for general guidance in creating DLP policies.
+You can set your IP DLP policies for OneDrive, SharePoint, and Exchange Online in the Security and Compliance center, scoping policies as needed to the whole _Tenant_ or to applicable users. For example: If you wish to select a policy for a user in a satellite location, select to apply the policy to a specific OneDrive and enter the user's OneDrive URL. See [Overview of data loss prevention policies](https://support.office.com/article/1966b2a7-d1e2-4d92-ab61-42efbb137f5e) for general guidance in creating DLP policies.
 
 The DLP policies are automatically synchronized based on their applicability to each geo location.
 
@@ -62,19 +63,19 @@ Power Apps created for the satellite location will use the end point located in 
 
 ## Microsoft Power Automate
 
-Flows created for the satellite location will use the end point located in the default geo location for the _Tenant_.  Microsoft Power Automate isn't a Multi-Geo service. 
+Flows created for the satellite location will use the end point located in the default geo location for the _Tenant_. Microsoft Power Automate isn't a Multi-Geo service. 
 
-## SharePoint Online storage quota
+## SharePoint storage quota
 
-By default, all geo locations of a multi-geo environment share the available _Tenant_ storage quota.  You can also manage the storage quota by allocating a specific quota for a particular geo location. For more information, see [SharePoint storage quotas in multi-geo environments](sharepoint-multi-geo-storage-quota.md).
+By default, all geo locations of a multi-geo environment share the available _Tenant_ storage quota. You can also manage the storage quota by allocating a specific quota for a particular geo location. For more information, see [SharePoint storage quotas in multi-geo environments](sharepoint-multi-geo-storage-quota.md).
 
 ## Sharing
 
-Administrators can set and manage sharing policies for each of their locations. The OneDrive for Business and SharePoint Online sites in each geo location will honor only the corresponding geo-specific sharing settings. (For example, you can allow [external sharing](https://support.office.com/article/C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85) for your central location, but not for your satellite location or vice versa.) Note that the sharing settings don't allow configuring sharing limitations between geo locations.
+Administrators can set and manage sharing policies for each of their locations. The OneDrive and SharePoint sites in each geo location will honor only the corresponding geo-specific sharing settings. (For example, you can allow [external sharing](https://support.office.com/article/C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85) for your central location, but not for your satellite location or vice versa.) Note that the sharing settings don't allow configuring sharing limitations between geo locations.
 
 ## Microsoft Stream
 
-Videos uploaded to Microsoft Stream in a 1:1 chat are stored in the OneDrive for Business of the person uploading. Meeting recordings are stored in the OneDrive for Business of each attendee who records the meeting.
+Videos uploaded to Microsoft Stream in a 1:1 chat are stored in the OneDrive of the person uploading. Meeting recordings are stored in the OneDrive of each attendee who records the meeting.
 
 ## Taxonomy
 
@@ -92,4 +93,4 @@ See [Work with user profiles in a Multi-Geo tenant](/sharepoint/dev/solution-gui
 
 ## Viva Engage
 
-Viva Engage is not a Multi-Geo workload. Viva Engage threads stored in Viva Engage will be placed in the _Tenant's_ central location. Viva Engage is rolling out a file storage change which will store Viva Engage files within SharePoint. Viva Engage files stored in SharePoint will be placed the SharePoint site associated with the Viva Engage group. SharePoint group sites are based on PDL logic as outlined in [SharePoint Sites and Groups](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md#sharepoint-sites-and-groups).
+Viva Engage isn't a Multi-Geo workload. Viva Engage threads stored in Viva Engage will be placed in the _Tenant's_ central location. Viva Engage is rolling out a file storage change which will store Viva Engage files within SharePoint. Viva Engage files stored in SharePoint will be placed the SharePoint site associated with the Viva Engage group. SharePoint group sites are based on PDL logic as outlined in [SharePoint Sites and Groups](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md#sharepoint-sites-and-groups).

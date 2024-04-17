@@ -60,7 +60,7 @@ Review the _read me_ article at [Readme](https://github.com/microsoft/defender-u
 
 This section describes the process for setting up the pilot UAT / Test / QA environment. On about 10-500* Windows and/or Windows Server systems, depending on how many total systems that you all have.
 
-:::image type="content" source="images/microsoft-defender-antivirus-gp-network-schedule.png" alt-text="Screenshot that shows an example Microsoft Defender Antivirus ring deployment schedule for Group Policy and network share environments." lightbox="images/microsoft-defender-antivirus-gp-network-schedule.png":::
+:::image type="content" source="media/microsoft-defender-antivirus-gp-network-schedule.png" alt-text="Screenshot that shows an example Microsoft Defender Antivirus ring deployment schedule for Group Policy and network share environments." lightbox="media/microsoft-defender-antivirus-gp-network-schedule.png":::
 
 > [!NOTE]
 > Security intelligence update (SIU) is equivalent to signature updates, which is the same as definition updates.

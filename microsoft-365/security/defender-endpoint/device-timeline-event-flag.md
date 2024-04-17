@@ -42,17 +42,17 @@ The Defender for Endpoint device timeline helps you research and investigate ano
    
 - All MITRE techniques are shown when there's more than one related technique:
 
-    :::image type="content" source="images/new-timeline-mitre-techniques.png" alt-text="Screenshot of all MITRE techniques. " lightbox="images/new-timeline-mitre-techniques.png":::
+    :::image type="content" source="media/new-timeline-mitre-techniques.png" alt-text="Screenshot of all MITRE techniques. " lightbox="media/new-timeline-mitre-techniques.png":::
 
 - Timeline events are linked to the new user page:
 
-    :::image type="content" source="images/new-timeline-user.png" alt-text="Screenshot of timeline events linked to the new user page." lightbox="images/new-timeline-user.png":::
+    :::image type="content" source="media/new-timeline-user.png" alt-text="Screenshot of timeline events linked to the new user page." lightbox="media/new-timeline-user.png":::
 
-    :::image type="content" source="images/new-timeline-user-details.png" alt-text="Screenshot of timeline events linked to the new user page 2." lightbox="images/new-timeline-user-details.png":::
+    :::image type="content" source="media/new-timeline-user-details.png" alt-text="Screenshot of timeline events linked to the new user page 2." lightbox="media/new-timeline-user-details.png":::
 
 - Defined filters are now visible at the top of the timeline: 
 
-    :::image type="content" source="images/new-timeline-highlight.png" alt-text="Screenshot of defined filters." lightbox="images/new-timeline-highlight.png":::
+    :::image type="content" source="media/new-timeline-highlight.png" alt-text="Screenshot of defined filters." lightbox="media/new-timeline-highlight.png":::
 
 ## Techniques in the device timeline
 
@@ -69,7 +69,7 @@ This feature simplifies the investigation experience by helping analysts underst
 
 During preview, Techniques are available by default and shown together with events when a device's timeline is viewed.
 
-:::image type="content" source="images/new-timeline-mitre-techniques.png" alt-text="Screenshot of all MITRE techniques." lightbox="images/new-timeline-mitre-techniques.png":::
+:::image type="content" source="media/new-timeline-mitre-techniques.png" alt-text="Screenshot of all MITRE techniques." lightbox="media/new-timeline-mitre-techniques.png":::
 
 Techniques are highlighted in bold text and appear with a blue icon on the left. The corresponding MITRE ATT&CK ID and technique name also appear as tags under Additional information.
 
@@ -83,19 +83,19 @@ Select the specific *Attack technique* to open the related ATT&CK technique page
 
 You can copy an entity's details when you see a blue icon on the right. For instance, to copy a related file's SHA1, select the blue page icon.
 
-:::image type="content" source="images/new-timeline-process-tree.png" alt-text="Screenshot that shows the copy entity details." lightbox="images/new-timeline-process-tree.png":::
+:::image type="content" source="media/new-timeline-process-tree.png" alt-text="Screenshot that shows the copy entity details." lightbox="media/new-timeline-process-tree.png":::
 
-:::image type="content" source="images/new-timeline-side-panel-1.png" alt-text="Screenshot that shows the side pane details." lightbox="images/new-timeline-side-panel-1.png":::
+:::image type="content" source="media/new-timeline-side-panel-1.png" alt-text="Screenshot that shows the side pane details." lightbox="media/new-timeline-side-panel-1.png":::
 
 You can do the same for command lines.
 
-:::image type="content" source="images/techniques-side-pane-command-1.png" alt-text="Screenshot that shows the option to copy command line." lightbox="images/techniques-side-pane-command-1.png":::
+:::image type="content" source="media/techniques-side-pane-command-1.png" alt-text="Screenshot that shows the option to copy command line." lightbox="media/techniques-side-pane-command-1.png":::
 
 ### Investigate related events
 
 To use [advanced hunting](advanced-hunting-overview.md) to find events related to the selected Technique, select **Hunt for related events**. This leads to the advanced hunting page with a query to find events related to the Technique.
 
-:::image type="content" source="images/techniques-hunt-for-related-events-1.png" alt-text="Screenshot that shows the Hunt for related events option." lightbox="images/techniques-hunt-for-related-events-1.png":::
+:::image type="content" source="media/techniques-hunt-for-related-events-1.png" alt-text="Screenshot that shows the Hunt for related events option." lightbox="media/techniques-hunt-for-related-events-1.png":::
 
 > [!NOTE]
 > Querying using the **Hunt for related events** button from a Technique side pane displays all the events related to the identified technique but does not include the Technique itself in the query results.
@@ -110,7 +110,7 @@ You can customize which columns to expose. You can also filter for flagged event
 
 You can choose which columns to expose in the timeline by selecting the **Choose columns** button.
 
-:::image type="content" source="images/new-timeline-customize-columns.png" alt-text="Screenshot that shows the pane in which you can customize columns." lightbox="images/new-timeline-customize-columns.png":::
+:::image type="content" source="media/new-timeline-customize-columns.png" alt-text="Screenshot that shows the pane in which you can customize columns." lightbox="media/new-timeline-customize-columns.png":::
 
 
 From there you can select which information set to include.
@@ -119,7 +119,7 @@ From there you can select which information set to include.
 
 To view only either events or techniques, select **Filters** from the device timeline and choose your preferred Data type to view.
 
-:::image type="content" source="images/new-timeline-filter.png" alt-text="Screenshot that shows the Filters pane." lightbox="images/new-timeline-filter.png":::
+:::image type="content" source="media/new-timeline-filter.png" alt-text="Screenshot that shows the Filters pane." lightbox="media/new-timeline-filter.png":::
 
 ## Timeline event flags
 

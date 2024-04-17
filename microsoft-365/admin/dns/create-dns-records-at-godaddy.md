@@ -85,11 +85,15 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
 
 3. Under **DNS Records**, select **ADD** on the top right corner.
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-add.png" alt-text="Select ADD.":::
+   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-add.png" alt-text="Screenshot of where you select Add to add a domain verification TXT record.":::
 
 4. Select **TXT** option from the filter box.
 
+<<<<<<< HEAD
    :::image type="content" source="../../media/dns-godaddy/godaddy-add-txt-records.png" alt-text="Select TXT(Text) from the Type drop-down list.":::
+=======
+   :::image type="content" source="../../media/dns-godaddy/godaddy-add-txt-records.png" alt-text="Select TXT from the Type drop-down list for the domain verification TXT record.":::
+>>>>>>> main
 
 5. In the boxes for the new record, type or copy and paste the values from the table.
 
@@ -97,11 +101,15 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
    |---|---|---|---|
    |TXT|@|MS=ms *XXXXXXXX*<br>**Note**: This is an example. Use your specific **Destination or Points to Address** value here, from the table. [How do I find this?](../get-help-with-domains/information-for-dns-records.md)|1 hour  <br>|
 
+<<<<<<< HEAD
    :::image type="content" source="../../media/dns-godaddy/godaddy-domains-TXTvalue.png" alt-text="Paste the values for the TXT record.":::
+=======
+   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-TXTvalue.png" alt-text="Fill in the values from the table for the domain verification TXT record.":::
+>>>>>>> main
 
 6. Select **Save**.
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-TXT-save.png" alt-text="Select Save.":::
+   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-TXT-save.png" alt-text="Screenshot of where you select Save to add a domain verification TXT record.":::
 
    Wait a few minutes before you continue, so that the record you just created can update across the Internet.
 
@@ -134,11 +142,15 @@ To verify the record in Microsoft 365:
 
 3. Under **Records**, select **ADD**.
 
+<<<<<<< HEAD
    :::image type="content" source="../../media/dns-godaddy/godaddy-domains-add.png" alt-text="Screenshot showing Select ADD.":::
+=======
+   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-add.png" alt-text="Screenshot of where you select Add to add an MX record.":::
+>>>>>>> main
 
 4. Choose **MX** option from the filter box.
 
-  :::image type="content" source="../../media/dns-godaddy/godaddy-domains-add-MX-records.png" alt-text="Drop down menu showing MX record selected.":::
+   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-add-MX-records.png" alt-text="Drop down menu showing MX record selected.":::
 
 5. In the boxes for the new record, type or copy and paste the values from the following table.
 
@@ -164,7 +176,11 @@ To verify the record in Microsoft 365:
 
 3. Under **Records**, select **ADD**.
 
+<<<<<<< HEAD
    :::image type="content" source="../../media/dns-godaddy/godaddy-domains-add.png" alt-text="Screenshot to Select ADD.":::
+=======
+   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-add.png" alt-text="Screenshot of where you select Add to add a CNAME record.":::
+>>>>>>> main
 
 4. Choose **CNAME** from the drop-down list.
 
@@ -200,11 +216,19 @@ To verify the record in Microsoft 365:
 
 3. Under **Records**, select **ADD**.
 
+<<<<<<< HEAD
    :::image type="content" source="../../media/dns-godaddy/godaddy-domains-add.png" alt-text="Screenshot showing Select ADD.":::
 
 4. Choose **TXT** from the drop-down list.
 
    :::image type="content" source="../../media/dns-godaddy/godaddy-domains-TXT-save.png" alt-text="Screenshot showing drop-down list to select TXT.":::
+=======
+   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-add.png" alt-text="Screenshot of where you select Add to add an SPF TXT record.":::
+
+4. Choose **TXT** from the drop-down list.
+
+   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-TXT-save.png" alt-text="Select TXT from the Type drop-down list for the SPF TXT record.":::
+>>>>>>> main
 
 5. In the boxes for the new record, type or copy and paste the following values.
 
@@ -214,7 +238,11 @@ To verify the record in Microsoft 365:
    |---|---|---|---|
    |TXT|@|v=spf1 include:secureserver.net -all <br/> **Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct.|1 hour|
 
+<<<<<<< HEAD
     :::image type="content" source="../../media/dns-godaddy/godaddy-add-TXTvalue-spf.png" alt-text="Screenshot displaying values from the table for the TXT record.":::
+=======
+    :::image type="content" source="../../media/dns-godaddy/godaddy-add-TXTvalue-spf.png" alt-text="Fill in the values from the table for the SPF TXT record.":::
+>>>>>>> main
 
 6. Select **Save**.
 
@@ -234,7 +262,11 @@ Only select this option if your organization uses Microsoft Teams. Teams needs 4
 
 3. Under **Records**, select **ADD**.
 
+<<<<<<< HEAD
    :::image type="content" source="../../media/dns-godaddy/godaddy-domains-add.png" alt-text="Screenshot showing Select ADD.":::
+=======
+   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-add.png" alt-text="Screenshot of where you select Add to add an SRV record.":::
+>>>>>>> main
 
 4. Choose **SRV** from the drop-down list.
 
@@ -251,7 +283,11 @@ Only select this option if your organization uses Microsoft Teams. Teams needs 4
    |SRV|_sip|_tls|@|sipdir.online.lync.com|100| 1|443|1 Hour|
    |SRV|_sipfederationtls|_tcp|@| sipfed.online.lync.com| 100|1|5061|1 Hour|
 
+<<<<<<< HEAD
    :::image type="content" source="../../media/dns-godaddy/godaddy-domains-SRV-records.png" alt-text="Screenshot showing the values pasted for the SRV record.":::
+=======
+   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-SRV-records.png" alt-text="Fill in the values from the table for the SRV records.":::
+>>>>>>> main
 
 6. Select **Save**.
 
@@ -260,7 +296,7 @@ Only select this option if your organization uses Microsoft Teams. Teams needs 4
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
 
-### Add the two required CNAME records for Microsoft Teams 
+### Add the two required CNAME records for Microsoft Teams
   
 1. To get started, go to your domains page at GoDaddy by using [this link](https://account.godaddy.com/products/?go_redirect=disabled).
 
@@ -272,7 +308,11 @@ Only select this option if your organization uses Microsoft Teams. Teams needs 4
 
 3. Under **Records**, select **ADD**.
 
+<<<<<<< HEAD
    :::image type="content" source="../../media/dns-godaddy/godaddy-domains-add.png" alt-text="Screenshot to Select ADD.":::
+=======
+   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-add.png" alt-text="Screenshot of where you select Add to add CNAME records for Microsoft Teams.":::
+>>>>>>> main
 
 4. Choose **CNAME** from the drop-down list.
 
@@ -285,11 +325,15 @@ Only select this option if your organization uses Microsoft Teams. Teams needs 4
    |CNAME|sip|sipdir.online.lync.com.  <br/> **This value MUST end with a period (.)**|1 Hour|
    |CNAME|lyncdiscover|webdir.online.lync.com.  <br/> **This value MUST end with a period (.)**|1 Hour|
 
+<<<<<<< HEAD
    :::image type="content" source="../../media/dns-godaddy/godaddy-domains-CNAME-records.png" alt-text="Screenshot showing values for the CNAME record.":::
+=======
+   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-CNAME-records.png" alt-text="Fill in the values from the table for the CNAME records for Microsoft Teams.":::
+>>>>>>> main
   
-1. Select **Save**.
+6. Select **Save**.
   
-1. Add the other CNAME record by choosing the values from the second row of the table.
+7. Add the other CNAME record by choosing the values from the second row of the table.
 
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
@@ -310,24 +354,32 @@ This service helps you secure and remotely manage mobile devices that connect to
 
 3. Under **Records**, select **ADD**.
 
+<<<<<<< HEAD
    :::image type="content" source="../../media/dns-godaddy/godaddy-domains-add.png" alt-text="Screenshot showing Select ADD.":::
+=======
+   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-add.png" alt-text="Screenshot of where you select Add to add CNAME records for Mobile Device Management.":::
+>>>>>>> main
 
 4. Choose **CNAME** from the drop-down list.
 
    :::image type="content" source="../../media/dns-godaddy/godaddy-domains-CNAME-type.png" alt-text="Screenshot to Select CNAME from the Type drop-down list.":::
 
-1. In the empty boxes for the new records, type or copy and paste the values from the first row in the following table.
+5. In the empty boxes for the new records, type or copy and paste the values from the first row in the following table.
 
    |Type|Name|Value|TTL|
    |---|---|---|---|
    |CNAME|enterpriseregistration|enterpriseregistration.windows.net.  <br/> **This value MUST end with a period (.)**|1 Hour|
    |CNAME|enterpriseenrollment|enterpriseenrollment-s.manage.microsoft.com.  <br/> **This value MUST end with a period (.)**|1 Hour|
 
+<<<<<<< HEAD
    :::image type="content" source="../../media/dns-godaddy/godaddy-domains-CNAME-values.png" alt-text="Diagram showing values for the CNAME record.":::
+=======
+   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-CNAME-values.png" alt-text="Fill in the values from the table for the CNAME records for Mobile Device Management.":::
+>>>>>>> main
   
-1. Select **Save**.
+6. Select **Save**.
   
-1. Add the other CNAME record by choosing the values from the second row of the table.
+7. Add the other CNAME record by choosing the values from the second row of the table.
 
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
