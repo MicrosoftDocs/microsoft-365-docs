@@ -84,7 +84,7 @@ SAP Support policy is documented in [3356389 - Antivirus or other security softw
 
 ## SAP applications on Windows: Top 10 recommendations
 
-1. **Limit access to SAP servers, block network ports, and take all other common security protection measures**. This is an essential first step. The threat landscape has evolved from "file based" Viruses to file-less complex and sophisticated threats. Steps such as **blocking ports and limiting logon/access** to VMs is **no longer considered sufficient** to fully mitigate modern threats.
+1. **Limit access to SAP servers, block network ports, and take all other common security protection measures**. This is an essential first step. The threat landscape has evolved from file-based viruses to file-less complex and sophisticated threats. Steps such as **blocking ports and limiting logon/access** to VMs is **no longer considered sufficient** to fully mitigate modern threats.
 
 2. **Deploy Defender for Endpoint to nonproductive systems first before deploying to production systems**. Deploying Defender for Endpoint directly to production systems without testing is highly risky and can lead to downtime. If you can't delay deploying Defender for Endpoint to your production systems, consider temporarily disabling [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) and [real-time protection](configure-protection-features-microsoft-defender-antivirus.md). 
 
