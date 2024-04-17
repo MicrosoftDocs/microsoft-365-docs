@@ -133,7 +133,7 @@ Here's a list of SAP articles you can use as needed:
 
    For more information, see the following resources:
 
-      - [Microsoft Defender Antivirus security intelligence and product updates](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-updates)
+      - [Microsoft Defender Antivirus security intelligence and product updates](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-updates)   
       - [What's new in Microsoft Defender for Endpoint](whats-new-in-microsoft-defender-endpoint.md)
 
 ## Deployment methodology
