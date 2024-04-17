@@ -1,15 +1,11 @@
 ---
 title: Get domain statistics API
 description: Learn how to use the Get domain statistics API to retrieve the statistics on the given domain in Microsoft Defender for Endpoint.
-keywords: apis, graph api, supported apis, get, domain, domain related devices
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -19,7 +15,7 @@ ms.topic: reference
 ms.subservice: reference
 ms.custom: api
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 04/17/2024
 ---
 
 # Get domain statistics API
@@ -93,7 +89,7 @@ If successful and domain exists - 200 OK, with statistics object in the response
 Here's an example of the request.
 
 ```http
-GET https://api.securitycenter.microsoft.com/api/domains/example.com/stats?lookBackHours=48
+GET https://api.security.microsoft.com/api/domains/example.com/stats?lookBackHours=48
 ```
 
 ### Response example
@@ -102,7 +98,7 @@ Here's an example of the response.
 
 ```json
 {
-    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#microsoft.windowsDefenderATP.api.InOrgDomainStats",
+    "@odata.context": "https://api.security.microsoft.com/api/$metadata#microsoft.windowsDefenderATP.api.InOrgDomainStats",
     "host": "example.com",
     "organizationPrevalence": 4070,
     "orgFirstSeen": "2017-07-30T13:23:48Z",

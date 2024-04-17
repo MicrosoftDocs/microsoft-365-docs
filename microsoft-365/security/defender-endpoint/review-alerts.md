@@ -1,15 +1,13 @@
 ---
 title: Review alerts in Microsoft Defender for Endpoint
 description: Review alert information, including a visualized alert story and details for each step of the chain.
-keywords: incident, incidents, machines, devices, users, alerts, alert, investigation, graph, evidence
 ms.service: defender-endpoint
-ms.pagetype: security
 f1.keywords: 
   - NOCSH
 ms.author: diannegali
 author: diannegali
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
   - m365-security
@@ -52,19 +50,19 @@ Note the detection status for your alert.
 
 - Prevented: The attempted suspicious action was avoided. For example, a file either wasn't written to disk or executed.
 
-  :::image type="content" source="images/detstat-prevented.png" alt-text="The page showing the prevention of a threat" lightbox="images/detstat-prevented.png":::
+  :::image type="content" source="media/detstat-prevented.png" alt-text="The page showing the prevention of a threat" lightbox="media/detstat-prevented.png":::
 
 - Blocked: Suspicious behavior was executed and then blocked. For example, a process was executed but because it subsequently exhibited suspicious behaviors, the process was terminated.
 
-  :::image type="content" source="images/detstat-blocked.png" alt-text="The page showing the blockage of a threat" lightbox="images/detstat-blocked.png":::
+  :::image type="content" source="media/detstat-blocked.png" alt-text="The page showing the blockage of a threat" lightbox="media/detstat-blocked.png":::
 
 - Detected: An attack was detected and is possibly still active.
 
-  :::image type="content" source="images/detstat-detected.png" alt-text="The page showing the detection of a threat" lightbox="images/detstat-detected.png":::
+  :::image type="content" source="media/detstat-detected.png" alt-text="The page showing the detection of a threat" lightbox="media/detstat-detected.png":::
 
 You can then also review the *automated investigation details* in your alert's details pane, to see which actions were already taken, as well as reading the alert's description for recommended actions.
 
-:::image type="content" source="images/alert-air-and-alert-description.png" alt-text="The details pane with the alert description and automatic investigation sections highlighted" lightbox="images/alert-air-and-alert-description.png":::
+:::image type="content" source="media/alert-air-and-alert-description.png" alt-text="The details pane with the alert description and automatic investigation sections highlighted" lightbox="media/alert-air-and-alert-description.png":::
 
 Other information available in the details pane when the alert opens includes MITRE techniques, source, and additional contextual details.
 
@@ -77,11 +75,11 @@ Selecting a device or a user card in the affected assets sections will switch to
 
 - **For devices**, the details pane will display information about the device itself, like Domain, Operating System, and IP. Active alerts and the logged on users on that device are also available. You can take immediate action by isolating the device, restricting app execution, or running an antivirus scan. Alternatively, you could collect an investigation package, initiate an automated investigation, or go to the device page to investigate from the device's point of view.
 
-   :::image type="content" source="images/device-page-details.png" alt-text="The details pane when a device is selected" lightbox="images/device-page-details.png":::
+   :::image type="content" source="media/device-page-details.png" alt-text="The details pane when a device is selected" lightbox="media/device-page-details.png":::
 
 - **For users**, the details pane will display detailed user information, such as the user's SAM name and SID, as well as logon types performed by this user and any alerts and incidents related to it. You can select *Open user page* to continue the investigation from that user's point of view.
 
-   :::image type="content" source="images/user-page-details.png" alt-text="The details pane when a  user is selected" lightbox="images/user-page-details.png":::
+   :::image type="content" source="media/user-page-details.png" alt-text="The details pane when a  user is selected" lightbox="media/user-page-details.png":::
 
 ## Related topics
 

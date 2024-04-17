@@ -17,12 +17,11 @@ ms.collection:
   - tier1
 ms.custom:
 description: Admins can learn how to use the configuration analyzer to find and fix security policies that are less secure than Standard protection and Strict protection in preset security policies.
-ms.subservice: mdo
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 ms.date: 1/29/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 1 and Plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
@@ -66,7 +65,7 @@ The configuration analyzer also checks the following non-policy settings:
     - _Use the configuration analyzer and update the affected security policies_: Membership in the **Organization Management** or **Security Administrator** role groups.
     - _Read-only access to the configuration analyzer_: Membership in the **Global Reader** or **Security Reader** role groups.
   - [Exchange Online permissions](/Exchange/permissions-exo/permissions-exo): Membership in the **View-Only Organization Management** role group gives read-only access to the configuration analyzer.
-  - [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
+  - [Microsoft Entra permissions](/entra/identity/role-based-access-control/manage-roles-portal): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 ## Use the configuration analyzer in the Microsoft Defender portal
 

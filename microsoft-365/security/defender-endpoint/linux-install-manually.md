@@ -1,10 +1,10 @@
 ---
 title: Deploy Microsoft Defender for Endpoint on Linux manually
-ms.reviewer:
 description: Describes how to deploy Microsoft Defender for Endpoint on Linux manually from the command line.
 ms.service: defender-endpoint
 ms.author: siosulli
 author: siosulli
+ms.reviewer: gopkr
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro
@@ -37,7 +37,7 @@ This article describes how to deploy Microsoft Defender for Endpoint on Linux ma
 
 - [Prerequisites and system requirements](#prerequisites-and-system-requirements)
 - [Configure the Linux software repository](#configure-the-linux-software-repository)
-  - [RHEL and variants (CentOS, Fedora, Oracle Linux, Amazon Linux 2, Rocky and Alma)](#rhel-and-variants-centos-fedora-oracle-linux-amazon-linux-2-rocky-and-alma-1)
+  - [RHEL and variants (CentOS, Fedora, Oracle Linux, Amazon Linux 2, Rocky, and Alma)](#rhel-and-variants-centos-fedora-oracle-linux-amazon-linux-2-rocky-and-alma-1)
   - [SLES and variants](#sles-and-variants-1)
   - [Ubuntu and Debian systems](#ubuntu-and-debian-systems-1)
   - [Mariner](#mariner)
@@ -109,7 +109,7 @@ Read more [here](https://github.com/microsoft/mdatp-xplat/tree/master/linux/inst
   |For Alma 8.4 and higher|<https://packages.microsoft.com/config/alma/8/prod.repo>|
   |For Alma 9.2 and higher|<https://packages.microsoft.com/config/alma/9/prod.repo>|
   |For RHEL/Centos/Oracle 9.0-9.8|<https://packages.microsoft.com/config/rhel/9/prod.repo>|
-  |For RHEL/Centos/Oracle 8.0-8.8|<https://packages.microsoft.com/config/rhel/8/prod.repo>|
+  |For RHEL/Centos/Oracle 8.0-8.9|<https://packages.microsoft.com/config/rhel/8/prod.repo>|
   |For RHEL/Centos/Oracle 7.2-7.9 & Amazon Linux 2 |<https://packages.microsoft.com/config/rhel/7.2/prod.repo>|
   |For Amazon Linux 2023 |<https://packages.microsoft.com/config/amazonlinux/2023/prod.repo>|
   |For Fedora 33|<https://packages.microsoft.com/config/fedora/33/prod.repo>|
@@ -222,7 +222,7 @@ Read more [here](https://github.com/microsoft/mdatp-xplat/tree/master/linux/inst
   sudo apt-get install gpg
   ```
 
-  If `gpg` is not available, then install `gnupg`.
+  If `gpg` isn't available, then install `gnupg`.
 
   ```bash
   sudo apt-get install gnupg
@@ -279,7 +279,7 @@ curl -sSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | su
 
 ## Application installation
 
-### RHEL and variants (CentOS, Fedora, Oracle Linux, Amazon Linux 2, Rocky and Alma)
+### RHEL and variants (CentOS, Fedora, Oracle Linux, Amazon Linux 2, Rocky, and Alma)
 
 ```bash
 sudo yum install mdatp
@@ -382,7 +382,7 @@ Download the onboarding package from Microsoft Defender portal.
 2. In the first drop-down menu, select **Linux Server** as the operating system. In the second drop-down menu, select **Local Script** as the deployment method.
 3. Select **Download onboarding package**. Save the file as WindowsDefenderATPOnboardingPackage.zip.
 
-   :::image type="content" source="images/portal-onboarding-linux.png" alt-text="Downloading an onboarding package in the Microsoft Defender portal" lightbox="images/portal-onboarding-linux.png":::
+   :::image type="content" source="media/portal-onboarding-linux.png" alt-text="Downloading an onboarding package in the Microsoft Defender portal" lightbox="media/portal-onboarding-linux.png":::
 
 4. From a command prompt, verify that you have the file, and extract the contents of the archive:
 
@@ -423,13 +423,13 @@ Download the onboarding package from Microsoft Defender portal.
    > [!NOTE]
    > To onboard a device that was previously offboarded you must remove the mdatp_offboard.json file located at /etc/opt/microsoft/mdatp.
 
-   If you're running RHEL 8.x or Ubuntu 20.04 or higher, you'll need to use `python3`.
+   If you're running RHEL 8.x or Ubuntu 20.04 or higher, you need to use `python3`.
 
    ```bash
    sudo python3 MicrosoftDefenderATPOnboardingLinuxServer.py
    ```
 
-   For the rest of distros and versions, you'll need to use `python`.
+   For the rest of distros and versions, you need to use `python`.
 
    ```bash
    sudo python MicrosoftDefenderATPOnboardingLinuxServer.py
@@ -476,7 +476,7 @@ Download the onboarding package from Microsoft Defender portal.
      curl -o /tmp/eicar.com.txt https://secure.eicar.org/eicar.com.txt
      ```
 
-   - The file should have been quarantined by Defender for Endpoint on Linux. Use the following command to list all the detected threats:
+   - The file should be quarantined by Defender for Endpoint on Linux. Use the following command to list all the detected threats:
 
      ```bash
      mdatp threat list
@@ -503,9 +503,9 @@ The following external package dependencies exist for the mdatp package:
 
 The mde-netfilter package also has the following package dependencies:
 
-- For DEBIAN the mde-netfilter package requires "libnetfilter-queue1", "libglib2.0-0"
-- For RPM the mde-netfilter package requires "libmnl", "libnfnetlink", "libnetfilter_queue", "glib2"
-- For Mariner the mde-netfilter package requires "libnfnetlink", "libnetfilter_queue"
+- For DEBIAN, the mde-netfilter package requires "libnetfilter-queue1", "libglib2.0-0"
+- For RPM, the mde-netfilter package requires "libmnl", "libnfnetlink", "libnetfilter_queue", "glib2"
+- For Mariner, the mde-netfilter package requires "libnfnetlink", "libnetfilter_queue"
 
 If the Microsoft Defender for Endpoint installation fails due to missing dependencies errors, you can manually download the prerequisite dependencies.
 

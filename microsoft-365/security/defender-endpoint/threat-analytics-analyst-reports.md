@@ -2,15 +2,11 @@
 title: Understand the analyst report section in threat analytics.
 ms.reviewer:
 description: How the report section of threat analytics reports provides information about threats, mitigation, detections, advanced hunting queries, and more.
-keywords: analyst report, threat analytics, detections, advanced hunting queries, mitigations,
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: maccruz
 author: schmurky
 ms.localizationpriority: medium
-manager: dansimp
+manager: dolmont
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -35,7 +31,7 @@ ms.date: 12/18/2020
 
 Each [threat analytics report](threat-analytics.md) includes dynamic sections and a comprehensive written section called the _analyst report_. To access this section, open the report about the tracked threat and select the **Analyst report** tab.
 
-:::image type="content" source="images/ta-analyst-report-small.png" alt-text="The analyst report section of a threat analytics report" lightbox="images/ta-analyst-report-small.png":::
+:::image type="content" source="media/ta-analyst-report-small.png" alt-text="The analyst report section of a threat analytics report" lightbox="media/ta-analyst-report-small.png":::
 
 _Analyst report section of a threat analytics report_
 

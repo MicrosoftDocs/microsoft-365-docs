@@ -1,19 +1,14 @@
 ---
 title: Delete a file from the live response library
 description: Learn how to delete a file from the live response library.
-keywords: apis, graph api, supported apis, delete from library
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security
@@ -22,7 +17,7 @@ ms.collection:
 ms.topic: reference
 ms.subservice: reference
 ms.custom: api
-ms.date: 06/03/2021
+ms.date: 04/17/2024
 ---
 
 #  Delete a file from the live response library
@@ -61,7 +56,7 @@ including how to choose permissions, see [Get started](apis-intro.md).
 
 ## HTTP request
 
-DELETE https://api.securitycenter.microsoft.com/api/libraryfiles/{fileName}
+DELETE https://api.security.microsoft.com/api/libraryfiles/{fileName}
 
 ## Request headers
 
@@ -86,7 +81,7 @@ Request
 Here is an example of the request.
 
 ```HTTP
-DELETE https://api.securitycenter.microsoft.com/api/libraryfiles/script1.ps1
+DELETE https://api.security.microsoft.com/api/libraryfiles/script1.ps1
 ```
 
 ## Related topic

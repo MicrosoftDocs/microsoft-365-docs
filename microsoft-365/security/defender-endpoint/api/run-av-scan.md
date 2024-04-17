@@ -1,15 +1,11 @@
 ---
 title: Run antivirus scan API
 description: Use this API to create calls related to running an antivirus scan on a device.
-keywords: apis, graph api, supported apis, remove device from isolation
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -19,7 +15,7 @@ ms.topic: reference
 ms.subservice: reference
 ms.custom: api
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 04/17/2024
 ---
 
 # Run antivirus scan API
@@ -71,7 +67,7 @@ Delegated (work or school account)|Machine.Scan|'Scan machine'
 ## HTTP request
 
 ```http
-POST https://api.securitycenter.microsoft.com/api/machines/{id}/runAntiVirusScan
+POST https://api.security.microsoft.com/api/machines/{id}/runAntiVirusScan
 ```
 
 ## Request headers
@@ -108,7 +104,7 @@ If you send  multiple API calls to run an antivirus scan for the same device, it
 Here is an example of the request.
 
 ```http
-POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/runAntiVirusScan 
+POST https://api.security.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/runAntiVirusScan 
 ```
 
 ```json

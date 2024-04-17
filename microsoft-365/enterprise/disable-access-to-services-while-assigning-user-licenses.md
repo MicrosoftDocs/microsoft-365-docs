@@ -40,7 +40,9 @@ Next, list the license plans for your tenant with this command.
 Get-AzureADSubscribedSku | Select SkuPartNumber
 ```
 
-Next, get the sign-in name of the account to which you want add a license, also known as the user principal name (UPN).
+[!INCLUDE [Azure AD PowerShell deprecation note](~/../microsoft-365/reusable-content/msgraph-powershell/includes/aad-powershell-deprecation-note.md)]
+
+Next, get the sign-in name of the account to which you want to add a license, also known as the user principal name (UPN).
 
 Next, compile a list of services to enable. For a complete list of license plans (also known as product names), their included service plans, and their corresponding friendly names, see [Product names and service plan identifiers for licensing](/azure/active-directory/users-groups-roles/licensing-service-plan-reference).
 
@@ -81,11 +83,11 @@ In the display of the  `Get-MsolAccountSku` command:
 
 - **AccountSkuId** is a subscription for your organization in \<OrganizationName>:\<Subscription> format. The \<OrganizationName> is the value that you provided when you enrolled in Microsoft 365, and is unique for your organization. The \<Subscription> value is for a specific subscription. For example, for litwareinc:ENTERPRISEPACK, the organization name is litwareinc, and the subscription name is ENTERPRISEPACK (Office 365 Enterprise E3).
 
-- **ActiveUnits** is the number of licenses that you've purchased for the subscription.
+- **ActiveUnits** is the number of licenses that you purchased for the subscription.
 
 - **WarningUnits** is the number of licenses in a subscription that you haven't renewed, and that will expire after the 30-day grace period.
 
-- **ConsumedUnits** is the number of licenses that you've assigned to users for the subscription.
+- **ConsumedUnits** is the number of licenses that you assigned to users for the subscription.
 
 Note the AccountSkuId for your Microsoft 365 subscription that contains the users you want to license. Also, ensure that there are enough licenses to assign (subtract **ConsumedUnits** from **ActiveUnits**).
 
@@ -97,7 +99,7 @@ Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
 
 From the display of this command, determine which service plans you would like to disable when you assign licenses to users.
 
-Here is a partial list of service plans and their corresponding Microsoft 365 services.
+Here's a partial list of service plans and their corresponding Microsoft 365 services.
 
 The following table shows the Microsoft 365 service plans and their friendly names for the most common services. Your list of service plans might be different.
 
@@ -131,7 +133,7 @@ Sleep -Seconds 5
 Set-MsolUserLicense -UserPrincipalName $userUpn -LicenseOptions $licenseOptions -ErrorAction SilentlyContinue
 ```
 
-Here is an example command block for the account named belindan@contoso.com, for the contoso:ENTERPRISEPACK license, and the service plans to disable are RMS_S_ENTERPRISE, SWAY, INTUNE_O365, and YAMMER_ENTERPRISE:
+Here's an example command block for the account named belindan@contoso.com, for the contoso:ENTERPRISEPACK license, and the service plans to disable are RMS_S_ENTERPRISE, SWAY, INTUNE_O365, and YAMMER_ENTERPRISE:
 
 ```powershell
 $userUPN="belindan@contoso.com"
@@ -145,7 +147,7 @@ Set-MsolUserLicense -UserPrincipalName $userUpn -LicenseOptions $licenseOptions 
 
 ### For multiple users
 
-To perform this administration task for multiple users, create a comma-separated value (CSV) text file that contains the UserPrincipalName and UsageLocation fields. Here is an example:
+To perform this administration task for multiple users, create a comma-separated value (CSV) text file that contains the UserPrincipalName and UsageLocation fields. Here's an example:
 
 ```powershell
 UserPrincipalName,UsageLocation

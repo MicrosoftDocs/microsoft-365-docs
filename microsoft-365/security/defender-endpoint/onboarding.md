@@ -1,15 +1,11 @@
 ---
 title: Onboard to Microsoft Defender for Endpoint
-description: Learn how to onboard endpoints to Microsoft Defender for Endpoint service
-keywords: microsoft defender for endpoint, onboard, deploy
+description: Learn how to onboard endpoints to Microsoft Defender for Endpoint service.
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
   - m365-security
@@ -21,7 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: onboard
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 04/03/2024
 ---
 
 # Onboard to Microsoft Defender for Endpoint
@@ -95,7 +91,7 @@ With macOS and Linux, you could take a couple of systems and run in the Beta cha
 
 The choice of the channel determines the type and frequency of updates that are offered to your device. Devices in Beta are the first ones to receive updates and new features, followed later by Preview and lastly by Current.
 
-:::image type="content" source="images/insider-rings.png" alt-text="The insider rings." lightbox="images/insider-rings.png":::
+:::image type="content" source="media/insider-rings.png" alt-text="The insider rings." lightbox="media/insider-rings.png":::
 
 In order to preview new features and provide early feedback, it's recommended that you configure some devices in your enterprise to use either Beta or Preview.
 
@@ -105,7 +101,7 @@ In order to preview new features and provide early feedback, it's recommended th
 
 ## Example deployments
 
-To provide some guidance on your deployments, in this section we'll guide you through using two deployment tools to onboard endpoints.
+To provide some guidance on your deployments, in this section we guide you through using two deployment tools to onboard endpoints.
 
 The tools in the example deployments are:
 
@@ -121,4 +117,5 @@ The example deployments will guide you on configuring some of the Defender for E
 After onboarding the endpoints move on to the next step where you'll configure the various capabilities such as endpoint detection and response, next-generation protection, and attack surface reduction.
 
 - [Step 5 - Configure capabilities](onboard-configure.md)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

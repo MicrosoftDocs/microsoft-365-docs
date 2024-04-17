@@ -1,6 +1,6 @@
 ---
 title: Report and troubleshoot Microsoft Defender for Endpoint attack surface reduction rules
-description: This article describes how to report and troubleshoot Microsoft Defender for Endpoint attack surface reduction ules
+description: This article describes how to report and troubleshoot Microsoft Defender for Endpoint attack surface reduction rules
 ms.service: defender-endpoint
 ms.localizationpriority: medium
 audience: ITPro
@@ -35,7 +35,7 @@ The <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">
 In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a>, we offer you a complete look at the current attack surface reduction rules configuration and events in your estate. Your devices must be onboarded into the Microsoft Defender for Endpoint service for these reports to be populated.
 Here's a screenshot from the Microsoft Defender portal (under **Reports** \> **Devices** \> **Attack surface reduction**). At the device level, select **Configuration** from the **Attack surface reduction rules** pane. The following screen is displayed, where you can select a specific device and check its individual attack surface reduction rule configuration.
 
-:::image type="content" source="images/asrrulesnew.png" alt-text="The attack surface reduction rules page" lightbox="images/asrrulesnew.png":::
+:::image type="content" source="media/asrrulesnew.png" alt-text="The attack surface reduction rules page" lightbox="media/asrrulesnew.png":::
 
 ## Microsoft Defender for Endpoint - Advanced hunting
 
@@ -54,7 +54,7 @@ DeviceEvents
 | summarize EventCount=count() by ActionType
 ```
 
-:::image type="content" source="images/adv-hunt-sc-2new.png" alt-text="The Advanced hunting page" lightbox="images/adv-hunt-sc-2new.png":::
+:::image type="content" source="media/adv-hunt-sc-2new.png" alt-text="The Advanced hunting page" lightbox="media/adv-hunt-sc-2new.png":::
 
 With advanced hunting you can shape the queries to your liking, so that you can see what is happening, regardless of whether you want to pinpoint something on an individual machine, or you want to extract insights from your entire environment.
 
@@ -64,7 +64,7 @@ An alternative to advanced hunting, but with a narrower scope, is the Microsoft 
 
 The following screenshot shows the Timeline view of these events on a given endpoint. From this view, you can filter the events list based on any of the Event Groups along the right-side pane. You can also enable or disable Flagged and Verbose events while viewing alerts and scrolling through the historical timeline.
 
-:::image type="content" source="images/mic-sec-def-timelinenew.png" alt-text="The Microsoft Defender XDR timeline" lightbox="images/mic-sec-def-timelinenew.png":::
+:::image type="content" source="media/mic-sec-def-timelinenew.png" alt-text="The Microsoft Defender XDR timeline" lightbox="media/mic-sec-def-timelinenew.png":::
 
 ## How to troubleshoot attack surface reduction rules?
 
@@ -78,7 +78,7 @@ One of the easiest ways to determine if attack surface reduction rules are alrea
 
 Here's an example:
 
-:::image type="content" source="images/getmpreferencescriptnew.png" alt-text="The get mppreference script" lightbox="images/getmpreferencescriptnew.png":::
+:::image type="content" source="media/getmpreferencescriptnew.png" alt-text="The get mppreference script" lightbox="media/getmpreferencescriptnew.png":::
 
 There are multiple attack surface reduction rules active, with different configured actions.
 
@@ -90,7 +90,7 @@ Example:
 Get-MPPreference | Select-Object -ExpandProperty AttackSurfaceReductionRules_Ids
 ```
 
-:::image type="content" source="images/getmpref-examplenew.png" alt-text="The get mpreference example" lightbox="images/getmpref-examplenew.png":::
+:::image type="content" source="media/getmpref-examplenew.png" alt-text="The get mpreference example" lightbox="media/getmpref-examplenew.png":::
 
 The above shows all the IDs for attack surface reduction rules that have a setting different from 0 (Not Configured).
 
@@ -100,7 +100,7 @@ The next step is then to list the actual actions (Block or Audit) that each rule
 Get-MPPreference | Select-Object -ExpandProperty AttackSurfaceReductionRules_Actions
 ```
 
-:::image type="content" source="images/getmpref-example2new.png" alt-text="The get mppreference example2" lightbox="images/getmpref-example2new.png":::
+:::image type="content" source="media/getmpref-example2new.png" alt-text="The get mppreference example2" lightbox="media/getmpref-example2new.png":::
 
 ### Querying blocking and auditing events
 
@@ -108,7 +108,7 @@ attack surface reduction rule events can be viewed within the Windows Defender l
 
 To access it, open Windows Event Viewer, and browse to **Applications and Services Logs** \> **Microsoft** \> **Windows** \> **Windows Defender** \> **Operational**.
 
-:::image type="content" source="images/eventviewerscrnew.png" alt-text="The Event Viewer page" lightbox="images/eventviewerscrnew.png":::
+:::image type="content" source="media/eventviewerscrnew.png" alt-text="The Event Viewer page" lightbox="media/eventviewerscrnew.png":::
 
 ## Microsoft Defender Antimalware Protection Logs
 
@@ -118,7 +118,7 @@ You can find this utility in *%ProgramFiles%\Windows Defender\MpCmdRun.exe*. You
 
 To generate the support information, type *MpCmdRun.exe -getfiles*. After a while, several logs will be packaged into an archive (MpSupportFiles.cab) and made available in *C:\ProgramData\Microsoft\Windows Defender\Support*.
 
-:::image type="content" source="images/malware-prot-logsnew.png" alt-text="The malware protection logs" lightbox="images/malware-prot-logsnew.png":::
+:::image type="content" source="media/malware-prot-logsnew.png" alt-text="The malware protection logs" lightbox="media/malware-prot-logsnew.png":::
 
 Extract that archive and you'll have many files available for troubleshooting purposes.
 

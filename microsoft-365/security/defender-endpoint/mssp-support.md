@@ -1,15 +1,11 @@
 ---
 title: Managed security service provider (MSSP) partnership opportunities
 description: Understand how Microsoft Defender for Endpoint integrates with managed security service providers (MSSP)
-keywords: mssp, integration, managed, security, service, provider
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security

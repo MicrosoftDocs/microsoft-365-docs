@@ -1,8 +1,8 @@
 ---
 title: How to subscribe to Microsoft Defender Experts for Hunting
 ms.reviewer:
-description: If you're new to Microsoft Defender XDR and Defender Experts for Hunting, this is how you subscribe to Defender experts notifications
-keywords: managed threat hunting service, sample DEN, defender experts notifications, managed detection and response (MDR) service, MTE, Microsoft Threat Experts, EOD, endpoint attack notifications, Microsoft Defender Experts for hunting, managed response.
+description: If you're new to Microsoft Defender XDR and Defender Experts for Hunting, this is how you onboard, receive, and set up Defender experts notifications.
+keywords: managed threat hunting service,onboarding to Defender Experts, sample DEN, defender experts notifications, Ask Defender Experts, MTE, Microsoft Threat Experts, EOD, endpoint attack notifications, Microsoft Defender Experts for hunting, managed response.
 search.product: Windows 10
 ms.service: defender-experts
 ms.mktglfcycl: deploy
@@ -19,7 +19,7 @@ ms.collection:
   - essentials-get-started
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 01/03/2024
+ms.date: 04/12/2024
 ---
 
 # Start using Microsoft Defender Experts for Hunting
@@ -36,8 +36,8 @@ If you're new to Microsoft Defender XDR and Defender Experts for Hunting:
 
 1. Upon getting your welcome email, select **Log into Microsoft Defender XDR**.
 2. Sign in if you already have a Microsoft account. If none, create one.
-3. The Microsoft Defender XDR quick tour will get you familiar with the security suite, where the capabilities are and how important they are. Select **Take a quick tour**.
-4. Read the short descriptions about what the Microsoft Defender Experts service is and the capabilities it provides. Select **Next**. You'll see the welcome page:
+3. The Microsoft Defender XDR quick tour gets you familiar with the security suite, where the capabilities are and how important they are. Select **Take a quick tour**.
+4. Read the short descriptions about what the Microsoft Defender Experts service is and the capabilities it provides. Select **Next**. You see the welcome page:
 
 ![Screenshot of the Microsoft Defender XDR welcome page with a card for the Defender Experts for Hunting service.](../../media/mte/defenderexperts/start-using-defender-experts-for-hunting.png)
 
@@ -54,7 +54,7 @@ Refer to the following screenshot to see a sample Defender Experts Notification:
 
 ![Screenshot of a Defender Experts Notification in Microsoft Defender XDR. A Defender Expert Notification includes a title that describes the threat or activity observed, an executive summary, and list of recommendations.](../../media/mte/defenderexperts/receive-defender-experts-notification.png)
 
-### Where you'll find Defender Experts Notifications
+### Where to find Defender Experts Notifications
 
 You can receive Defender Experts Notifications from Defender Experts through the following mediums:
 
@@ -66,10 +66,10 @@ You can receive Defender Experts Notifications from Defender Experts through the
 
 ### Filter to view just the Defender Experts Notifications
 
-You can filter your incidents and alerts if you want to only see the Defender Experts Notifications amongst the many alerts. To do so:
+You can filter your incidents and alerts if you want to only see the Defender Experts Notifications among the many alerts. To do so:
 
 1. On the navigation menu, go to **Incidents & alerts** > **Incidents** > select the ![Filter icon](../../media/mte/defenderexperts/filter.png) icon.
-2. Scroll down to the **Tags** field > select the **Defender Experts** check box.
+2. Scroll down to **Service/detection sources** then select the **Microsoft Defender Experts** checkboxes under *Microsoft Defender for Endpoint* and *Microsoft Defender XDR*.
 3. Select **Apply**.
 
 ### Set up Defender Experts email notifications
@@ -98,37 +98,45 @@ A sample Defender Experts Notification shows up in your **Incidents** page with 
 
 :::image type="content" source="../../media/mte/defenderexperts/sample-den-links-dexh.png" alt-text="Screenshot of Sample DEN links." lightbox="../../media/mte/defenderexperts/sample-den-links-dexh.png":::
 
-## Collaborate with Experts on Demand
+## Collaborate with experts on demand
 
 > [!NOTE]
-> Experts on Demand is included in your Defender Experts for Hunting subscription with [monthly allocations](/microsoft-365/security/defender/before-you-begin-defender-experts#eligibility-and-licensing). However, it's not a security incident response service. It's intended to provide a better understanding of complex threats affecting your organization. Engage with your own security incident response team to address urgent security incident response issues. If you don't have your own security incident response team and would like Microsoft's help, create a support request in the [Premier Services Hub](/services-hub/).
+> Ask Defender Experts is included in your Defender Experts for Hunting subscription with [monthly allocations](/microsoft-365/security/defender/before-you-begin-defender-experts#eligibility-and-licensing). However, it's not a security incident response service. It's intended to provide a better understanding of complex threats affecting your organization. Engage with your own security incident response team to address urgent security incident response issues. If you don't have your own security incident response team and would like Microsoft's help, create a support request in the [Premier Services Hub](/services-hub/).
 
-Select **Ask Defender Experts** directly inside the Microsoft 365 security portal to get swift and accurate responses to all your threat hunting questions. Experts can provide insight to better understand the complex threats your organization may face. Experts on Demand can help to:
+Select **Ask Defender Experts** directly inside the Microsoft 365 security portal to get swift and accurate responses to all your threat hunting questions. Experts can provide insight to better understand the complex threats your organization might face. Ask Defender Experts can help:
 
 - Gather additional information on alerts and incidents, including root causes and scope
 - Gain clarity into suspicious devices, alerts, or incidents and take next steps if faced with an advanced attacker
 - Determine risks and available protections related to threat actors, campaigns, or emerging attacker techniques
 
+### Required permissions for submitting inquiries in the Ask Defender Experts panel
+
+You need to select one of the following permissions before submitting inquires to our Defender experts. For more details about role-based access control (RBAC) permissions, see: [Microsoft Defender for Endpoint and Microsoft Defender XDR RBAC permissions](/microsoft-365/security/defender/compare-rbac-roles#map-defender-for-endpoint-and-defender-vulnerability-management-permissions-to-the-microsoft-defender-xdr-rbac-permissions).
+
+|**Product name**|**Product RBAC permission**|
+|---|---|---|
+| Microsoft Defender for Endpoint RBAC | Manage security settings in the Security Center|
+| Microsoft Defender XDR Unified RBAC | Authorization and settings \ Security settings \ Core security settings (manage)</br>Authorization and settings \ Security settings \ Detection tuning (manage) |
+
+### Where to find Ask Defender Experts
+
 The option to **Ask Defender Experts** is available in several places throughout the portal:
 
-- ***Device page actions menu***
+- **Device page actions menu**
 
-![Screenshot of the Ask Defender Experts menu option in the Device page action menu in the Microsoft Defender portal.](../../media/mte/defenderexperts/device-page-actions-menu.png)
+   ![Screenshot of the Ask Defender Experts menu option in the Device page action menu in the Microsoft Defender portal.](../../media/mte/defenderexperts/device-page-actions-menu.png)
 
-- ***Device inventory page flyout menu***
+- **Device inventory page flyout menu**
 
-![Screenshot of the Ask Defender Experts menu option in the Device inventory page flyout menu in the Microsoft Defender portal.](../../media/mte/defenderexperts/device-inventory-flyout-menu.png)
+   ![Screenshot of the Ask Defender Experts menu option in the Device inventory page flyout menu in the Microsoft Defender portal.](../../media/mte/defenderexperts/device-inventory-flyout-menu.png)
 
-- ***Alerts page flyout menu***
+- **Alerts page flyout menu**
 
-![Screenshot of the Ask Defender Experts menu option in the Alerts page flyout menu in the Microsoft Defender portal.](../../media/mte/defenderexperts/alerts-flyout-menu.png)
+   ![Screenshot of the Ask Defender Experts menu option in the Alerts page flyout menu in the Microsoft Defender portal.](../../media/mte/defenderexperts/alerts-flyout-menu.png)
 
-- ***Incidents page actions menu***
+- **Incidents page actions menu**
 
-![Screenshot of the Ask Defender Experts menu option in the Incidents page actions menu in the Microsoft Defender portal.](../../media/mte/defenderexperts/incidents-page-actions-menu.png)
-
-> [!NOTE]
-> If you'd like to track the status of your Experts on Demand cases through Microsoft Services Hub, reach out to your Customer Success Account Manager. Watch this [video](https://www.microsoft.com/videoplayer/embed/RE4pk9f) for a quick overview of the Microsoft Services Hub.
+   ![Screenshot of the Ask Defender Experts menu option in the Incidents page actions menu in the Microsoft Defender portal.](../../media/mte/defenderexperts/incidents-page-actions-menu.png)
 
 ### Sample questions you can ask from Defender Experts
 

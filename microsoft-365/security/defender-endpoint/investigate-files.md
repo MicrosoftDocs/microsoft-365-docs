@@ -100,7 +100,7 @@ This section shows all the cloud applications where the file is observed. It als
 
 The **File names** tab lists all names the file has been observed to use, within your organizations.
 
-:::image type="content" source="images/atp-file-names.png" alt-text="The File names tab" lightbox="images/atp-file-names.png":::
+:::image type="content" source="media/atp-file-names.png" alt-text="The File names tab" lightbox="media/atp-file-names.png":::
 
 ## File content and capabilities
 

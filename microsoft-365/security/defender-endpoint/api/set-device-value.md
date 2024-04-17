@@ -1,15 +1,11 @@
 ---
 title: Set device value API
 description: Learn how to specify the value of a device using a Microsoft Defender for Endpoint API.
-keywords: apis, graph api, supported apis, tags, machine tags
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -19,7 +15,7 @@ ms.topic: reference
 ms.subservice: reference
 ms.custom: api
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 04/17/2024
 ---
 
 # Set device value API
@@ -66,7 +62,7 @@ Delegated (work or school account)|Machine.ReadWrite|'Read and write machine inf
 ## HTTP request
 
 ```http
-POST https://api.securitycenter.microsoft.com/api/machines/{machineId}/setDeviceValue
+POST https://api.security.microsoft.com/api/machines/{machineId}/setDeviceValue
 ```
 
 ## Request headers
@@ -95,7 +91,7 @@ If successful, this method returns 200 - Ok response code and the updated Machin
 Here is an example of a request that adds machine tag.
 
 ```http
-POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/setDeviceValue
+POST https://api.security.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/setDeviceValue
 ```
 
 ```json

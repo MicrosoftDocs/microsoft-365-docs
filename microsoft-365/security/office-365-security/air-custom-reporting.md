@@ -1,11 +1,10 @@
 ---
 title: Custom reporting solutions with automated investigation and response
-keywords: SIEM, API, AIR, autoIR, Microsoft Defender for Endpoint, automated investigation, integration, custom report
 f1.keywords: 
 - NOCSH
-author: dansimp
-ms.author: dansimp
-manager: dansimp
+author: chrisda
+ms.author: chrisda
+manager: deniseb
 audience: ITPro
 ms.topic: conceptual
 ms.localizationpriority: medium
@@ -19,10 +18,9 @@ description: Learn how to integrate automated investigation and response with a 
 ms.date: 06/09/2023
 ms.custom: 
 - air
-ms.subservice: mdo
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison" target="_blank">Microsoft Defender for Office 365 plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
@@ -30,9 +28,9 @@ appliesto:
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-With [Microsoft Defender for Office 365](defender-for-office-365.md), you get [detailed information about automated investigations](air-view-investigation-results.md). However, some organizations also use a custom or third-party reporting solution. If your organization wants to integrate information about [automated investigations](air-about.md) with such a solution, you can use the Office 365 Management Activity API.
+With [Microsoft Defender for Office 365](mdo-about.md), you get [detailed information about automated investigations](air-view-investigation-results.md). However, some organizations also use a custom or third-party reporting solution. If your organization wants to integrate information about [automated investigations](air-about.md) with such a solution, you can use the Office 365 Management Activity API.
 
-With [Microsoft Defender for Office 365](defender-for-office-365.md), you get [detailed information about automated investigations](air-view-investigation-results.md). However, some organizations also use a custom or third-party reporting solution. If your organization wants to integrate information about automated investigations with such a solution, you can use the Office 365 Management Activity API.
+With [Microsoft Defender for Office 365](mdo-about.md), you get [detailed information about automated investigations](air-view-investigation-results.md). However, some organizations also use a custom or third-party reporting solution. If your organization wants to integrate information about automated investigations with such a solution, you can use the Office 365 Management Activity API.
 
 |Resource|Description|
 |:---|:---|
@@ -43,5 +41,5 @@ With [Microsoft Defender for Office 365](defender-for-office-365.md), you get [d
 
 ## See also
 
-- [Microsoft Defender for Office 365](defender-for-office-365.md)
+- [Microsoft Defender for Office 365](mdo-about.md)
 - [Automated investigation and response in Microsoft Defender XDR](/microsoft-365/security/defender/m365d-autoir)

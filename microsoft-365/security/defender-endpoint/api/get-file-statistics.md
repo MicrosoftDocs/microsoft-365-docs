@@ -1,15 +1,11 @@
 ---
 title: Get file statistics API
 description: Learn how to use the Get file statistics API to retrieve the statistics for the given file in Microsoft Defender for Endpoint.
-keywords: apis, graph api, supported apis, get, file, statistics
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -19,7 +15,7 @@ ms.topic: reference
 ms.subservice: reference
 ms.custom: api
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 04/17/2024
 ---
 
 # Get file statistics API
@@ -93,7 +89,7 @@ If successful and file exists - 200 OK with statistical data in the body. If fil
 Here's an example of the request.
 
 ```http
-GET https://api.securitycenter.microsoft.com/api/files/0991a395da64e1c5fbe8732ed11e6be064081d9f/stats?lookBackHours=48
+GET https://api.security.microsoft.com/api/files/0991a395da64e1c5fbe8732ed11e6be064081d9f/stats?lookBackHours=48
 ```
 
 ### Response example
@@ -102,7 +98,7 @@ Here's an example of the response.
 
 ```json
 {
-    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#microsoft.windowsDefenderATP.api.InOrgFileStats",
+    "@odata.context": "https://api.security.microsoft.com/api/$metadata#microsoft.windowsDefenderATP.api.InOrgFileStats",
     "sha1": "0991a395da64e1c5fbe8732ed11e6be064081d9f",
     "organizationPrevalence": 14850,
     "orgFirstSeen": "2019-12-07T13:44:16Z",

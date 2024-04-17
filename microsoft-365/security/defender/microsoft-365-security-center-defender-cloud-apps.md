@@ -1,9 +1,7 @@
 ---
 title: Microsoft Defender for Cloud Apps in Microsoft Defender XDR
 description: Learn about changes from the Microsoft Defender for Cloud Apps to Microsoft Defender XDR
-keywords: Getting started with Microsoft Defender XDR, Microsoft Defender for Cloud Apps
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
@@ -113,11 +111,6 @@ The capabilities on the following pages are fully integrated into Microsoft Defe
 - [Settings > Microsoft Entra ID Protection](investigate-alerts.md)
 - [Settings > App Governance](/defender-cloud-apps/app-governance-get-started)
 - [Settings > Microsoft Defender for Identity](/defender-for-identity/deploy-defender-identity)
-
-## Limitations
-
-- The new Defender for Cloud Apps experience in the Microsoft Defender portal is currently available for all users detailed in [Manage admin access](/defender-cloud-apps/manage-admins), except for:
-  - **App/Instance admin**, **User group admin**, **Cloud Discovery global admin**, and **Cloud Discovery report admin**, as defined in [Built-in admin roles in Defender for Cloud Apps](/defender-cloud-apps/manage-admins#built-in-admin-roles-in-defender-for-cloud-apps).
 
 ## What's changed
 
