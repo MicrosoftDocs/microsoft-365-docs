@@ -141,17 +141,17 @@ Using tools, such as [Defender for Endpoint security settings management](/mem/i
 
 Here's a list of what to check:
 
-1. Deploy Defender for Endpoint with [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) enabled. If issues arise, enable [troubleshooting mode](enable-troubleshooting-mode.md), disable [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md), disable [real-time protection](configure-protection-features-microsoft-defender-antivirus.md), and configure [scheduled scans](schedule-antivirus-scans.md). 
+1. **Deploy Defender for Endpoint with [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) enabled**. If issues arise, enable [troubleshooting mode](enable-troubleshooting-mode.md), disable [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md), disable [real-time protection](configure-protection-features-microsoft-defender-antivirus.md), and configure [scheduled scans](schedule-antivirus-scans.md). 
 
-2. Exclude DBMS files and executables following your DBMS vendor recommendations.
+2. **Exclude DBMS files and executables** following your DBMS vendor recommendations.
 
-3. Analyze SAPMNT, SAP TRANS_DIR, Spool, and Job Log directories. If there are more than 100,000 files, consider archiving to reduce the number of files.
+3. **Analyze SAPMNT, SAP TRANS_DIR, Spool, and Job Log directories**. If there are more than 100,000 files, consider archiving to reduce the number of files.
 
-4. Confirm the performance limits and quotas of the shared file system used for SAPMNT. The SMB share source could be a NetApp appliance, a Windows Server shared disk, or Azure Files SMB. 
+4. **Confirm the performance limits and quotas of the shared file system used for SAPMNT**. The SMB share source could be a NetApp appliance, a Windows Server shared disk, or Azure Files SMB. 
 
-5. Configure exclusions so that all SAP application servers aren't scanning the SAPMNT share simultaneously, as it could overload your shared storage server.
+5. **Configure exclusions so that all SAP application servers aren't scanning the SAPMNT share simultaneously**, as it could overload your shared storage server.
 
-6. In general, host interface files on a dedicated non-SAP file server. Interface files are recognized as an attack vector. Real-time protection should be activated on this dedicated file server. SAP Servers should never be used as file servers for interface files. 
+6. **In general, host interface files on a dedicated non-SAP file server**. Interface files are recognized as an attack vector. Real-time protection should be activated on this dedicated file server. SAP Servers should never be used as file servers for interface files. 
 
    > [!NOTE]
    > Some large SAP systems have more than 20 SAP application servers each with a connection to the same SAPMNT SMB share. 20 application servers simultaneously scanning the same SMB server may overload the SMB server. It is recommended to exclude SAPMNT from regular scans. 
