@@ -92,7 +92,7 @@ SAP Support policy is documented in [3356389 - Antivirus or other security softw
 
 5. Use tools such as PerfMon (Windows) to create a performance baseline before deploying and activating Defender for Endpoint. Compare the performance utilization before and after activating Defender for Endpoint.
 
-6. Deploy the latest version of Defender for Endpoint and use the latest releases of Windows, ideally Windows Server 2019 or newer. No testing has been done on old releases of Windows such as Windows Server 2012. 
+6. Deploy the latest version of Defender for Endpoint and use the latest releases of Windows, ideally Windows Server 2019 or newer. Older releases of Windows Server, such as Windows Server 2012, weren't tested. 
 
 7. Configure the following exclusions for Microsoft Defender Antivirus: 
 
@@ -119,7 +119,7 @@ SAP Support policy is documented in [3356389 - Antivirus or other security softw
    - `IsTamperProtected                  : True`
    - `RealTimeProtectionEnabled          : True`
 
-9. Tools, such as Defender for Endpoint security policies are recommended to ensure that Defender for Endpoint is configured correctly and uniformly deployed. In the Microsoft Defender portal, go to **Endpoints** > **Configuration management** > **Endpoint security policies**, and then select **Create new Policy**. For more information, see [Manage endpoint security policies in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/manage-security-policies). 
+9. Tools, such as [Intune](/mem/intune/protect/endpoint-security) or [Defender for Endpoint security settings management](/mem/intune/protect/mde-security-integration) are recommended to ensure that Defender for Endpoint is configured correctly and uniformly deployed. In the Microsoft Defender portal, go to **Endpoints** > **Configuration management** > **Endpoint security policies**, and then select **Create new Policy**. For more information, see [Manage endpoint security policies in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/manage-security-policies). 
 
 10. Several new features are being implemented in Defender for Endpoint on Windows, and these features have been tested with SAP systems. These new features reduce blocking and lower CPU consumption. It is recommended to use the very latest Defender for Endpoint for Windows release. See [Microsoft Defender Antivirus security intelligence and product updates](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-updates).
 
@@ -221,65 +221,87 @@ Here's a list of what to test:
 
 10. If you're using production SAP VMs with Microsoft Defender for Cloud, keep in mind that Defender for Cloud deploys the Defender for Endpoint extension to all VMs. If a VM isn't onboarded to Defender for Endpoint, it could be used as an attack vector. If you need more time to test Defender for Endpoint before deplying to your production environment, [contact support](contact-support.md). 
 
-While testing Defender for Endpoint in development and on QAS VMs,  is it possible to delay the Defender for Endpoint extension deployment to Production SAP VMs if Defender for Cloud is activated? Is it possible to selectively deploy Defender for Endpoint to VMs by Resource Group or other criteria? 
-
-By default, Defender for Cloud deploys the Defender for Endpoint extension to all VMs in a subscription.  Even one VM in a subscription that does not have Defender for Endpoint deployed can be used as an attack vector.  If additional time is required to test Defender for Endpoint  before deploying to production, contact Microsoft Support via the Microsoft Defender portal.
-
-
-
 ## Useful Commands: Microsoft Defender for Endpoint with SAP on Windows Server
 
-- 
-- How to manually update Microsoft Defender Antivirus definitions?
+### Update Microsoft Defender Antivirus definitions manually
 
-  ```
-  PS C:\Program Files\Windows Defender> .\MpCmdRun.exe -SignatureUpdate
-  Signature update started . . .
-  Service Version: 4.18.23050.9
-  Engine Version: 1.1.23060.1005
-  AntiSpyware Signature Version: 1.393.925.0
-  Antivirus Signature Version: 1.393.925.0
-  Signature update finished.
-  PS C:\Program Files\Windows Defender>
-  PS C:\Program Files\Windows Defender> Update-MpSignature
-  ```
+Use Windows Update, or run the following command:
 
-- What is EDR Block Mode (AMRunningMode) and which running mode is recommended?
+`PS C:\Program Files\Windows Defender> .\MpCmdRun.exe -SignatureUpdate`
 
-```
-Get-MPComputerStatus|select AMRunningMode
+You should see an output that resembles the following code snippet:
+
+```properties
+Signature update started . . .
+Service Version: 4.18.23050.9
+Engine Version: 1.1.23060.1005
+AntiSpyware Signature Version: 1.393.925.0
+Antivirus Signature Version: 1.393.925.0
+Signature update finished.
+PS C:\Program Files\Windows Defender>
 ```
 
-- 
-- How to configure antivirus exclusions?
+Another option is to use this command: 
 
+`PS C:\Program Files\Windows Defender> Update-MpSignature`
+
+### Determine whether EDR in block mode is turned on
+
+[EDR in block mode](edr-in-block-mode.md) provides added protection from malicious artifacts when Microsoft Defender Antivirus is not the primary antivirus product and is running in passive mode. You can determine whether EDR in block mode is enabled by running the following command:
+
+`Get-MPComputerStatus|select AMRunningMode`
+
+There are two modes: Normal and Passive Mode. Testing with SAP systems has only been completed with `AMRunningMode = Normal` for SAP systems. 
+
+### Configure antivirus exclusions
+
+Before you configure exclusions, make sure that the SAP Basis Team coordinates with your security team.  Exclusions should be configured centrally and not at the VM level. Exclusions such as the shared SAPMNT file system should be excluded via a policy using the Intune admin tool.
+
+To view exclusions, use the following command:
+
+`Get-MpPreference | Select-Object -Property ExclusionPath`
+
+For more information about exclusions, see the following resources:
+
+- [Manage exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)
+- [Configure custom exclusions for Microsoft Defender Antivirus](configure-exclusions-microsoft-defender-antivirus.md)
+
+### Configure EDR exclusions
+
+It is not recommended to exclude files, paths or processes from EDR as this comprises the protection from modern non-file based threats. If required, open a support case with Microsoft Support via the Microsoft Defender portal specifying executables and/or paths to exclude. See [Contact Microsoft Defender for Endpoint support](contact-support.md).
+
+### Completely disable Defender for Endpoint on Windows for testing purposes
+
+> [!WARNING]
+> It is not recommended to disable security software unless there is no alternative to solve or isolate a problem. 
+
+Defender for Endpoint should be configured with [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) turned on. To temporarily disable Defender for Endpoint to isolate problems, it is recommended to use [troubleshooting mode](/microsoft-365/security/defender-endpoint/enable-troubleshooting-mode).
+
+To shut down various subcomponents of the Microsoft Defender Antivirus solution, run the following commands:
+
+```powershell
+Set-MPPreference -DisableTamperProtection $true
+Set-MpPreference -DisableRealtimeMonitoring $true
+Set-MpPreference -DisableBehaviorMonitoring $true
+Set-MpPreference -MAPSReporting Disabled
+Set-MpPreference -DisableIOAVProtection $true
+Set-MpPreference -EnableNetworkProtection Disabled 
 ```
-Get-MpPreference | Select-Object -Property ExclusionPath
+
+You cannot turn off EDR subcomponents on a device. The only way to turn EDR off is to [offboard the device](configure-endpoints-script.md#offboard-devices-using-a-local-script).
+
+To turn off [cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md) (Microsoft Advanced Protection Service, or MAPS), run the following commands:
+
+```powershell
+PowerShell Set-MpPreference -MAPSReporting 0​
+PowerShell Set-MpPreference -MAPSReporting Disabled​
 ```
 
-- 
-- How to configure Endpoint Detection and Response (EDR) exclusions?
-- How to completely disable Defender for Endpoint on Windows for testing purposes?
+For more information about cloud-delivered protection, see the following resources:
 
-  ```
-  PowerShell Set-MpPreference -MAPSReporting 0​
-  PowerShell Set-MpPreference -MAPSReporting Disabled​
-  ```
+- [Cloud protection and Microsoft Defender Antivirus](cloud-protection-microsoft-defender-antivirus.md)
+- [Cloud protection and sample submission at Microsoft Defender Antivirus](cloud-protection-microsoft-antivirus-sample-submission.md) (You might want to consider whether to use automatic sample submission with your security policies)
 
-  | **MpCmdRun.exe** | **Microsoft Defender Antivirus command-line utility** |
-  |---|---|
-  | **MpDlpCmd.exe** | Microsoft Endpoint DLP command-line utility |
-  | **MsMpEng.exe** | Microsoft Defender Antivirus service executable |
-  | **ConfigSecurityPolicy.exe** | Microsoft Security Client Policy Configuration Tool |
-  | **NisSrv.exe** | Microsoft Defender Antivirus Network Realtime Inspection |
-  | **MsSense.exe** | Microsoft Defender for Endpoint service executable |
-  | **SenseCnCProxy.exe** | Microsoft Defender for Endpoint communication module |
-  | **SenseIR.exe** | Microsoft Defender for Endpoint Sense IR (Incident Response) module |
-  | **SenseCE.exe** | Microsoft Defender for Endpoint Sense CE (Classification Engine) module |
-  | **SenseSampleUploader.exe** | Microsoft Defender for Endpoint Sample Upload module |
-  | **SenseNdr.exe** | Microsoft Defender for Endpoint Sense NDR (Network Detection and Response) module |
-  | **SenseSC.exe** | Microsoft Defender for Endpoint Sense SC (Screenshot Capture) module |
-  | **SenseCM.exe** | Microsoft Defender for Endpoint Sense CM (Configuration Management) |
+## Related articles
 
-- 
-
+[Deployment guidance for Microsoft Defender for Endpoint on Linux for SAP](mde-linux-deployment-on-sap.md)
