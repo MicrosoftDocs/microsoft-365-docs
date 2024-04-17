@@ -82,7 +82,7 @@ If successful and file exists - 200 OK with the [file](files.md) entity in the b
 Here's an example of the request.
 
 ```http
-GET https://api.securitycenter.microsoft.com/api/files/4388963aaa83afe2042a46a3c017ad50bdcdafb3
+GET https://api.security.microsoft.com/api/files/4388963aaa83afe2042a46a3c017ad50bdcdafb3
 ```
 
 ### Response example
@@ -91,7 +91,7 @@ Here's an example of the response.
 
 ```json
 {
-    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Files/$entity",
+    "@odata.context": "https://api.security.microsoft.com/api/$metadata#Files/$entity",
     "sha1": "4388963aaa83afe2042a46a3c017ad50bdcdafb3",
     "sha256": "413c58c8267d2c8648d8f6384bacc2ae9c929b2b96578b6860b5087cd1bd6462",
     "globalPrevalence": 180022,
