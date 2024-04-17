@@ -21,7 +21,7 @@ audience: ITPro
 # Microsoft Defender for Endpoint on Windows Server with SAP
 
 > [!NOTE]
-> As a Principal Software Architect, Cameron Gardiner contributed to and provided material feedback for this article.
+> As a Principal Software Architect for Microsoft, Cameron Gardiner contributed to and provided material feedback for this article.
 
 If your organization uses SAP, it's essential to understand the compatibility and support between [antivirus](microsoft-defender-antivirus-on-windows-server.md) and [EDR](overview-endpoint-detection-response.md) in Microsoft Defender for Endpoint and your SAP applications. This article helps you understand the support provided by SAP for endpoint protection security solutions like Defender for Endpoint and how they interact with SAP applications.
 
@@ -137,7 +137,7 @@ Using tools, such as [Defender for Endpoint security settings management](/mem/i
 
 Here's a list of what to test:
 
-1. Deploy Defender for Endpoint  with [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) enabled. If testing identifies file locking or other blocking issues, determine whether to disable [real-time protection](configure-protection-features-microsoft-defender-antivirus.md) and configure [scheduled scans](schedule-antivirus-scans.md). If testing identifies problems, open a [support case](contact-support.md) using the Microsoft Defender portal. 
+1. Deploy Defender for Endpoint with [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) enabled. If issues arise, enable [troubleshooting mode](enable-troubleshooting-mode.md), disable [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md), disable [real-time protection](configure-protection-features-microsoft-defender-antivirus.md), and configure [scheduled scans](schedule-antivirus-scans.md). 
 
 2. Exclude DBMS files and executables following your DBMS vendor recommendations.
 
@@ -158,7 +158,6 @@ Here's a list of what to test:
 
    > [!NOTE]
    > The term *Defender* is sometimes used to refer to an entire suite of products and solutions. See [What is Microsoft Defender XDR?](/microsoft-365/security/defender/microsoft-365-defender). In this article, we focus on Defender for Endpoint.
-
     
 2. To check Microsoft Defender Antivirus status, open Command Prompt and then run these PowerShell commands:
 
