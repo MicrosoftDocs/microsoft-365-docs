@@ -89,7 +89,7 @@ If successful and domain exists - 200 OK, with statistics object in the response
 Here's an example of the request.
 
 ```http
-GET https://api.securitycenter.microsoft.com/api/domains/example.com/stats?lookBackHours=48
+GET https://api.security.microsoft.com/api/domains/example.com/stats?lookBackHours=48
 ```
 
 ### Response example
@@ -98,7 +98,7 @@ Here's an example of the response.
 
 ```json
 {
-    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#microsoft.windowsDefenderATP.api.InOrgDomainStats",
+    "@odata.context": "https://api.security.microsoft.com/api/$metadata#microsoft.windowsDefenderATP.api.InOrgDomainStats",
     "host": "example.com",
     "organizationPrevalence": 4070,
     "orgFirstSeen": "2017-07-30T13:23:48Z",
