@@ -88,7 +88,7 @@ If machine with the specified ID wasn't found - 404 Not Found.
 Here's an example of the request.
 
 ```http
-GET https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07
+GET https://api.security.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07
 ```
 
 ### Response example
@@ -99,7 +99,7 @@ Here's an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Machine",
+    "@odata.context": "https://api.security.microsoft.com/api/$metadata#Machine",
     "id": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",
     "computerDnsName": "mymachine1.contoso.com",
     "firstSeen": "2018-08-02T14:55:03.7791856Z",
