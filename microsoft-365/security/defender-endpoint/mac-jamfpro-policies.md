@@ -40,8 +40,9 @@ You'll need to take the following steps:
 7. [Approve System extensions for Microsoft Defender for Endpoint](#step-7-approve-system-extensions-for-microsoft-defender-for-endpoint)
 8. [Configure Network Extension](#step-8-configure-network-extension)
 9. [Configure Background Services](#step-9-configure-background-services)
-10. [Schedule scans with Microsoft Defender for Endpoint on macOS](/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)
-11. [Deploy Microsoft Defender for Endpoint on macOS](#step-11-deploy-microsoft-defender-for-endpoint-on-macos)
+10. [Grant Bluetooth Permissions](#step-10-grant-bluetooth-permissions)
+11. [Schedule scans with Microsoft Defender for Endpoint on macOS](#step-11-schedule-scans-with-microsoft-defender-for-endpoint-on-macos)
+12. [Deploy Microsoft Defender for Endpoint on macOS](#step-12-deploy-microsoft-defender-for-endpoint-on-macos)
 
 ## Step 1: Get the Microsoft Defender for Endpoint onboarding package
 
@@ -602,6 +603,9 @@ These steps are applicable on macOS 11 (Big Sur) or later.
 
 Alternatively, you can download [fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) and upload it to JAMF Configuration Profiles as described in [Deploying Custom Configuration Profiles using Jamf Pro|Method 2: Upload a Configuration Profile to Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
+> [!NOTE]
+> Full Disk Access granted through Apple MDM Configuration Profile is not reflected in System Settings => Privacy & Security => Full Disk Access.
+
 ## Step 7: Approve System extensions for Microsoft Defender for Endpoint
 
 1. In the **Configuration Profiles**, select **+ New**.
@@ -716,11 +720,46 @@ Download [**background_services.mobileconfig**](https://raw.githubusercontent.co
 
 Upload downloaded mobileconfig to JAMF Configuration Profiles as described in [Deploying Custom Configuration Profiles using Jamf Pro|Method 2: Upload a Configuration Profile to Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
-## Step 10: Schedule scans with Microsoft Defender for Endpoint on macOS
+## Step 10: Grant Bluetooth Permissions
+
+   > [!CAUTION]
+   > macOS 14 (Sonoma) contains new privacy enhancements. Beginning with this version, by default, applications cannot access Bluetooth without explicit consent. Microsoft Defender for Endpoint uses it if you configure Bluetooth policies for Device Control.
+
+Download [bluetooth.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/bluetooth.mobileconfig) from [GitHub repository](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles).
+
+   > [!WARNING]
+   > Current version of JAMF Pro does not support this kind of payload yet. If you upload this mobileconfig as-is, JAMF Pro will remove unsupported payload,
+   > and it will fail to apply to client machines. You need to sign downloaded mobileconfig first, after that JAMF Pro will consider it "sealed" and will not 
+   > tamper with it. See instructions below:
+
+- You need to have at least one signing certificate installed into your KeyChain, even a self-signed certificate will work. You can inspect what you have with:
+
+```bash
+> /usr/bin/security find-identity -p codesigning -v
+
+  1) 70E46A47F552EA8D58521DAC1E7F5144BA3012BC "DevCert"
+  2) 67FC43F3FAB77662BB7688C114585BAA37CA8175 "Mac Developer: John Doe (1234XX234)"
+  3) E142DFD879E5EB60FA249FB5B24CEAE3B370394A "Apple Development: Jane Doe 7XX7778888)"
+  4) 21DE31645BBF1D9F5C46E82E87A6968111E41C75 "Apple Development: me@example.com (8745XX123)"
+     4 valid identities found
+```
+
+- Choose any of them, and provide the quoted text as the -N parameter:
+
+```bash
+/usr/bin/security cms -S -N "DevCert" -i bluetooth.mobileconfig -o bluetooth-signed.mobileconfig
+```
+
+- Now you can upload the generated bluetooth-signed.mobileconfig to JAMF Pro as described in [Deploying Custom Configuration Profiles using Jamf Pro|Method 2: Upload a Configuration Profile to Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
+
+> [!NOTE]
+> Bluetooth granted through Apple MDM Configuration Profile is not reflected in System Settings => Privacy & Security => Bluetooth.
+
+## Step 11: Schedule scans with Microsoft Defender for Endpoint on macOS
 
 Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint on macOS](/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp).
 
-## Step 11: Deploy Microsoft Defender for Endpoint on macOS
+## Step 12: Deploy Microsoft Defender for Endpoint on macOS
 
 > [!NOTE]
 > In the steps that follow, the name of the `.pkg` file and the **Display Name** values are examples. In these examples, `200329` represents the date on which the
