@@ -81,9 +81,9 @@ SAP Support policy is documented in [3356389 - Antivirus or other security softw
 
 1. Limit access to SAP servers, block network ports, and all other common security protection measures. This is an essential first step. The threat landscape has evolved from "file based" Viruses to file-less complex and sophisticated threats. Steps such as **blocking ports and limiting logon/access** to VMs is **no longer considered sufficient** to fully mitigate modern threats.
 
-2. Deploy Defender for Endpoint to non-productive systems first before deploying to production systems. Deploying Defender for Endpoint directly to production systems without testing is highly risky and has led to downtime. If it is not possible to delay deploying Defender for Endpoint to production systems, consider temporarily disabling Tamper Protection and Real Time Protection. 
+2. Deploy Defender for Endpoint to nonproductive systems first before deploying to production systems. Deploying Defender for Endpoint directly to production systems without testing is highly risky and can lead to downtime. If you can't delay deploying Defender for Endpoint to your production systems, consider temporarily disabling [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) and [real-time protection](configure-protection-features-microsoft-defender-antivirus.md). 
 
-3. Real-time protection is enabled by default in Windows Server. If problems are identified that might be related to Defender for Endpoint, it is recommended to configure exclusions and/or open a support case via the Microsoft Defender portal. 
+3. Real-time protection is enabled by default in Windows Server. If problems are identified that might be related to Defender for Endpoint, it is recommended to [configure exclusions](defender-endpoint-antivirus-exclusions.md) and/or [open a support case](contact-support.md) via the Microsoft Defender portal. 
 
 4. Defender for Endpoint deployment should be a joint project between the SAP Basis Team and your organization's security Team. The two teams need to create a phased deployment, testing and monitoring plan.
 
