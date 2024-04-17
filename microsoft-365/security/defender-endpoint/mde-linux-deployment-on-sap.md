@@ -14,10 +14,13 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: linux
 search.appverid: met150
-ms.date: 01/10/2024
+ms.date: 04/17/2024
 ---
 
 # Deployment guidance for Microsoft Defender for Endpoint on Linux for SAP
+
+> [!NOTE]
+> As a Principal Software Architect for Microsoft, [Cameron Gardiner](https://linkedin.com/in/cameron-gardiner-142a202) contributed to and provided material feedback for this article.
 
 **Applies to:**
 
@@ -53,7 +56,7 @@ Conventional security defenses that have been commonly used to protect SAP syste
 - Microsoft Defender for Endpoint [version](./linux-whatsnew.md) >= 101.23082.0009 | Release version: 30.123082.0009 or higher must be deployed.
 - Microsoft Defender for Endpoint on Linux supports all the [Linux releases](microsoft-defender-endpoint-linux.md#system-requirements) used by SAP applications.
 - Microsoft Defender for Endpoint on Linux requires connectivity to [specific Internet endpoints](microsoft-defender-endpoint-linux.md#network-connections) from VMs to update antivirus Definitions.
-- Microsoft Defender for Endpoint on Linux requires some crontab (or other task scheduler) entries to schedule scans, log rotation, and Microsoft Defender for Endpoint updates. Enterprise Security teams normally manage these entries. Refer to [How to schedule an update of the Microsoft Defender for Endpoint (Linux) | Microsoft Learn](linux-update-mde-linux.md).
+- Microsoft Defender for Endpoint on Linux requires some crontab (or other task scheduler) entries to schedule scans, log rotation, and Microsoft Defender for Endpoint updates. Enterprise Security teams normally manage these entries. Refer to [How to schedule an update of the Microsoft Defender for Endpoint (Linux)](linux-update-mde-linux.md).
 
 The default configuration option for deployment as an Azure Extension for AntiVirus (AV) will be Passive Mode. This means that the AV component of Microsoft Defender for Endpoint won't intercept IO calls. It's recommended to run Microsoft Defender for Endpoint in Passive Mode on all SAP applications and to schedule a scan once per day. In this mode:
 
@@ -63,7 +66,7 @@ The default configuration option for deployment as an Azure Extension for AntiVi
 - **Security intelligence updates are turned on**: Alerts are available on security administrator's tenant.
 
 The Linux crontab is typically used to schedule Microsoft Defender for Endpoint AV scan and log rotation tasks:
-[How to schedule scans with Microsoft Defender for Endpoint (Linux) | Microsoft Learn](linux-schedule-scan-mde.md)
+[How to schedule scans with Microsoft Defender for Endpoint (Linux)](linux-schedule-scan-mde.md)
 
 Endpoint Detection and Response (EDR) functionality is active whenever Microsoft Defender for Endpoint on Linux is installed. There's no simple way to disable EDR functionality through command line or configuration. For more information on troubleshooting EDR, see the sections [Useful Commands](#useful-commands) and [Useful Links](#useful-links).
 
@@ -96,7 +99,7 @@ It's recommended to initially exclude:
 - The entire contents of the TRANS directory
 - The entire contents of directories for standalone engines such as TREX
 - Hana – exclude /hana/shared, /hana/data, and /hana/log - see Note 1730930
-- SQL Server – [Configure antivirus software to work with SQL Server - SQL Server | Microsoft Learn](/troubleshoot/sql/database-engine/security/antivirus-and-sql-server)
+- SQL Server – [Configure antivirus software to work with SQL Server - SQL Server](/troubleshoot/sql/database-engine/security/antivirus-and-sql-server)
 - Oracle – See How To Configure Anti-Virus On Oracle Database Server (Doc ID 782354.1)
 - DB2 – [https://www.ibm.com/support/pages/which-db2-directories-exclude-linux-anti-virus-software](https://www.ibm.com/support/pages/which-db2-directories-exclude-linux-anti-virus-software)
 - SAP ASE – contact SAP
@@ -134,14 +137,14 @@ sudo azsecd status
 
 The following articles detail how to configure AV exclusions for processes, files, and folders per individual VM:
 
-- [Set up exclusions for Microsoft Defender Antivirus scans | Microsoft Learn](configure-exclusions-microsoft-defender-antivirus.md)
-- [Common mistakes to avoid when defining exclusions | Microsoft Learn](common-exclusion-mistakes-microsoft-defender-antivirus.md)
+- [Set up exclusions for Microsoft Defender Antivirus scans](configure-exclusions-microsoft-defender-antivirus.md)
+- [Common mistakes to avoid when defining exclusions](common-exclusion-mistakes-microsoft-defender-antivirus.md)
 
 ## Scheduling a Daily AV Scan
 
 The recommended configuration for SAP applications disables real-time interception of IO calls for AV scanning. The recommended setting is passive mode in which real_time_protection_enabled = false.
 
-The following link details how to schedule a scan: [How to schedule scans with Microsoft Defender for Endpoint (Linux) | Microsoft Learn](linux-schedule-scan-mde.md).
+The following link details how to schedule a scan: [How to schedule scans with Microsoft Defender for Endpoint (Linux)](linux-schedule-scan-mde.md).
 
 Large SAP systems might have more than 20 SAP application servers each with a connection to the SAPMNT NFS share. Twenty or more application servers simultaneously scanning the same NFS server will likely overload the NFS server. By default, Defender for Endpoint on Linux doesn't scan NFS sources.
 
@@ -206,8 +209,13 @@ sudo mdatp diagnostic create
 ## Useful Links
 
 - Microsoft Endpoint Manager doesn't support Linux at this time
-- [Manage Microsoft Defender for Endpoint configuration settings on devices with Microsoft Endpoint Manager | Microsoft Learn](security-config-management.md)
-- [Microsoft Defender for Endpoint Linux - Configuration and Operation Command List - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/microsoft-defender-for-endpoint-linux-configuration-and/ba-p/1577902)
-- [Deploying Microsoft Defender for Endpoint on Linux Servers. - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/deploying-microsoft-defender-for-endpoint-on-linux-servers/ba-p/1560326)
-- [Troubleshoot cloud connectivity issues for Microsoft Defender for Endpoint on Linux | Microsoft Docs](linux-support-connectivity.md#run-the-connectivity-test)
-- [Troubleshoot performance issues for Microsoft Defender for Endpoint on Linux | Microsoft Docs](linux-support-perf.md#troubleshoot-performance-issues-using-microsoft-defender-for-endpoint-client-analyzer)
+
+- [Manage Microsoft Defender for Endpoint configuration settings on devices with Microsoft Endpoint Manager](security-config-management.md)
+
+- [Microsoft Tech Community: Microsoft Defender for Endpoint Linux - Configuration and Operation Command List](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/microsoft-defender-for-endpoint-linux-configuration-and/ba-p/1577902)
+
+- [Microsoft Tech Community: Deploying Microsoft Defender for Endpoint on Linux Servers](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/deploying-microsoft-defender-for-endpoint-on-linux-servers/ba-p/1560326)
+
+- [Troubleshoot cloud connectivity issues for Microsoft Defender for Endpoint on Linux](linux-support-connectivity.md#run-the-connectivity-test)
+
+- [Troubleshoot performance issues for Microsoft Defender for Endpoint on Linux](linux-support-perf.md#troubleshoot-performance-issues-using-microsoft-defender-for-endpoint-client-analyzer)
