@@ -12,7 +12,7 @@ ms.localizationpriority: normal
 ms.collection:  
 ms.custom: 
 - partner-contribution
-ms.reviewer: cgardin; deniseb; siosulli; shlomiakirav  
+ms.reviewer: cgardin; shlomiakirav  
 search.appverid: MET150  
 f1.keywords: NOCSH 
 audience: ITPro
