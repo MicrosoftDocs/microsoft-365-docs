@@ -135,19 +135,19 @@ Here's a list of what to test:
 
 1. Deploy Defender for Endpoint  with [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) enabled. If testing identifies file locking or other blocking issues, determine whether to disable [real-time protection](configure-protection-features-microsoft-defender-antivirus.md) and configure [scheduled scans](schedule-antivirus-scans.md). If testing identifies problems, open a [support case](contact-support.md) using the Microsoft Defender portal. 
 
-2. Exclude DBMS files and executables following DBMS vendor recommendation 
+2. Exclude DBMS files and executables following your DBMS vendor recommendations.
 
-3. Analyze SAPMNT, SAP TRANS_DIR, Spool and Job Log directories. If there are > 100,000 files consider archiving to reduce the number of files
+3. Analyze SAPMNT, SAP TRANS_DIR, Spool and Job Log directories. If there are more than 100,000 files, consider archiving to reduce the number of files.
 
 4. Confirm the performance limits and quotas of the shared file system used for SAPMNT. The SMB share source could be a NetApp appliance, a Windows server shared disk or Azure Files SMB. 
 
-5. Configure exclusions such that all SAP application servers are not scanning the SAPMNT share simultaneously as this may overload shared storage server  
+5. Configure exclusions such that all SAP application servers are not scanning the SAPMNT share simultaneously as this may overload shared storage server.
 
-6. Interface files are recognized as an attack vector and it is generally recommend to host interface files on a dedicated non-SAP file server. Real Time Protection should be activated on this dedicated file server. SAP Servers should never be used as file servers for interface files. 
+6. In general, host interface files on a dedicated non-SAP file server. Interface files are recognized as an attack vector. Real-time protection should be activated on this dedicated file server. SAP Servers should never be used as file servers for interface files. 
 
-   
-Note: some large SAP systems have more than 20 SAP application servers each with a connection to the same SAPMNT SMB share. 20 application servers simultaneously scanning the same SMB server may overload the SMB server. It is recommended to exclude SAPMNT from regular scans. 
-
+   > [!NOTE]
+   > Some large SAP systems have more than 20 SAP application servers each with a connection to the same SAPMNT SMB share. 20 application servers simultaneously scanning the same SMB server may overload the SMB server. It is recommended to exclude SAPMNT from regular scans. 
+> 
 ## Important Configuration Settings for Microsoft Defender for Endpoint with SAP on Windows
 
 1. What is Microsoft Defender for Endpoint?
