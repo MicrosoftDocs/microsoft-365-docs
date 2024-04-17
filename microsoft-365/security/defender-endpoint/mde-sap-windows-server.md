@@ -37,7 +37,8 @@ Enterprise security is a specialist role and the activities described in this ar
 
 Defender for Endpoint is a component of [Microsoft Defender XDR](/microsoft-365/security/defender/), and can be integrated with your SIEM/SOAR solution. 
 
-Before you begin to plan or deploy Defender for Endpoint on Windows Server with SAP, take a moment to get an overview. Watch the following video to learn more about Defender for Endpoint:
+Before you begin to plan or deploy Defender for Endpoint on Windows Server with SAP, take a moment to get an overview. Watch the following video to learn more about Defender for Endpoint: 
+<br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4wDob]
 
@@ -60,9 +61,9 @@ Microsoft and other security software vendors track threats and provide trend in
 
 SAP provides basic documentation for conventional file scan antivirus solutions. Conventional file scan antivirus solutions compare file signatures against a database of known threats. When an infected file is identified, the antivirus software typically alerts and quarantines the file. The mechanisms and behavior of file scan antivirus solutions are reasonably well known and are predictable; therefore, SAP support can provide a basic level of support for SAP applications interacting with file scan antivirus software. 
 
-File based threats are now only one possible vector for malicious software. Fileless malware and malware that lives off the land, highly polymorphic threats that mutate faster than traditional solutions can keep up with, and human-operated attacks that adapt to what adversaries find on compromised devices. Traditional antivirus security solutions aren't sufficient to stop such attacks. Artificial intelligence (AI) and device learning (ML) backed capabilities, such as behavioral blocking and containment are required. Security software such as Defender for Endpoint EDR has advanced threat protection (ATP) features to mitigate modern threats. 
+File based threats are now only one possible vector for malicious software. Fileless malware and malware that lives off the land, highly polymorphic threats that mutate faster than traditional solutions can keep up with, and human-operated attacks that adapt to what adversaries find on compromised devices. Traditional antivirus security solutions aren't sufficient to stop such attacks. Artificial intelligence (AI) and device learning (ML) backed capabilities, such as behavioral blocking and containment are required. Security software such as Defender for Endpoint has advanced threat protection features to mitigate modern threats. 
 
-Defender for Endpoint is continuously monitoring Operating System calls such as file read, file write, create socket, and other process level operations. The Defender for Endpoint EDR sensor acquires Opportunistic Locks on local NTFS files systems and is, therefore, unlikely to impact applications. Opportunistic locks aren't possible on remote network file systems, and in rare cases, a lock could cause general nonspecific errors in SAP applications such as *Access Denied*.
+Defender for Endpoint is continuously monitoring operating system calls, such as file read, file write, create socket, and other process level operations. The Defender for Endpoint EDR sensor acquires opportunistic locks on local NTFS files systems and is, therefore, unlikely to impact applications. Opportunistic locks aren't possible on remote network file systems. In rare cases, a lock could cause general nonspecific errors in SAP applications such as *Access Denied*.
 
 SAP isn't able to provide any level of support for EDR/XDR software as the mechanisms are adaptive; therefore, the mechanisms aren't predictable and potentially aren't reproducible. When problems are identified on systems running advanced security solutions, SAP recommends disabling the security software and trying to reproduce the problem. A support case can then be raised with the security software vendor. 
 
