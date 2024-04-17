@@ -158,12 +158,12 @@ Here's a list of what to check:
 > 
 ## Important configuration settings for Defender for Endpoint on Windows Server with SAP
 
-1. Get an overview of [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md).
+1. **Get an overview of [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)**. In particular, review information about [next-generation protection](next-generation-protection.md) and [EDR](overview-endpoint-detection-response.md).
 
    > [!NOTE]
    > The term *Defender* is sometimes used to refer to an entire suite of products and solutions. See [What is Microsoft Defender XDR?](/microsoft-365/security/defender/microsoft-365-defender). In this article, we focus on antivirus and EDR capabilities in Defender for Endpoint.
     
-2. To check Microsoft Defender Antivirus status, open Command Prompt and then run these PowerShell commands:
+2. **Check the status of Microsoft Defender Antivirus**. Open Command Prompt, and then run these PowerShell commands:
 
    - `Get-MpComputerStatus`
    - `Get-MpPreference`
@@ -178,7 +178,7 @@ Here's a list of what to check:
 
    ```
    
-3. To check Defender for Endpoint EDR status, in Command Prompt, run the following command:
+3. **Check the status of EDR**. Open Command Prompt, and then run the following command:
 
    `PS C:\Windows\System32> Get-Service -Name sense | FL *`
 
