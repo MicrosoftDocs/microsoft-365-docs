@@ -14,7 +14,6 @@ ms.collection:
 ms.custom:
   - Adm_O365
   - has-azure-ad-ps-ref
-  - azure-ad-ref-level-one-done
 search.appverid:
 - OGA150
 - OGC150

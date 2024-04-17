@@ -13,7 +13,6 @@ ms.date: 03/05/2024
 ms.custom:
   - it-pro
   - has-azure-ad-ps-ref
-  - azure-ad-ref-level-one-done
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management

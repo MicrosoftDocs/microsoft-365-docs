@@ -34,7 +34,7 @@ This article describes how to enable the troubleshooting mode in Microsoft Defen
 
 For example, if the tamper protection is enabled, certain settings can't be modified or turned off, but you can use troubleshooting mode on the device to edit those settings temporarily.
 
-Troubleshooting mode is disabled by default, and requires you to turn it on for a device (and/or group of devices) for a limited time. Troubleshooting mode is exclusively an enterprise-only feature, and requires access to [Microsoft Defender XDR portal](https://security.microsoft.com/).
+Troubleshooting mode is disabled by default, and requires you to turn it on for a device (and/or group of devices) for a limited time. Troubleshooting mode is exclusively an enterprise-only feature, and requires access to [Microsoft Defender portal](https://security.microsoft.com/).
 
 ## What do you need to know before you begin
 
@@ -68,7 +68,7 @@ or newer.
 
 ## Enable troubleshooting mode on macOS
 
-1. Go to the [Microsoft Defender XDR portal](https://security.microsoft.com/), and sign in.
+1. Go to the [Microsoft Defender portal](https://security.microsoft.com/), and sign in.
 2. Navigate to the device page you would like to turn on troubleshooting mode. Then, select the ellipses(...) and select **Turn on troubleshooting mode**.
 
    :::image type="content" source="media/troubleshooting-mode-on-mac.png" alt-text="Screenshot displaying the screenshot of the troubleshooting mode on mac.":::
