@@ -52,7 +52,7 @@ Use the following poster to start envisioning what your organization can do with
 
 | Item | Description |
 |:-----|:-----|
-|[![Microsoft 365 for frontline workers: Retail scenarios.](media/m365-frontline-retail-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206476) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206476) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206271)  <br>Updated January 2024   |This poster provides an overview of the scenarios you can implement for your frontline workforce in a retail setting.|
+|[![Microsoft 365 for frontline workers: Retail scenarios.](media/m365-frontline-retail-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206476) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206476) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206271)  <br>Updated April 2024   |This poster provides an overview of the scenarios you can implement for your frontline workforce in a retail setting.|
 
 <!-- ### Video overviews
 

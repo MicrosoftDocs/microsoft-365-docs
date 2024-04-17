@@ -84,7 +84,7 @@ Use the following poster to start envisioning what your organization can do with
 
 | Item | Description |
 |:-----|:-----|
-|[![Microsoft 365 for frontline workers: Healthcare scenarios.](media/m365-frontline-healthcare-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206475) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206475) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206474)  <br>Updated January 2024   |This poster provides an overview of the scenarios you can implement for your frontline workforce in a healthcare setting.|
+|[![Microsoft 365 for frontline workers: Healthcare scenarios.](media/m365-frontline-healthcare-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206475) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206475) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206474)  <br>Updated April 2024   |This poster provides an overview of the scenarios you can implement for your frontline workforce in a healthcare setting.|
 
 ## Provide seamless virtual visits
 
