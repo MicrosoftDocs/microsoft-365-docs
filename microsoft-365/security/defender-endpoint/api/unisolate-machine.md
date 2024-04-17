@@ -70,7 +70,7 @@ Delegated (work or school account)|Machine.Isolate|'Isolate machine'
 ## HTTP request
 
 ```http
-POST https://api.securitycenter.microsoft.com/api/machines/{id}/unisolate
+POST https://api.security.microsoft.com/api/machines/{id}/unisolate
 ```
 
 ## Request headers
@@ -101,7 +101,7 @@ If you send multiple API calls to remove isolation for the same device, it retur
 Here is an example of the request.
 
 ```http
-POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/unisolate 
+POST https://api.security.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/unisolate 
 ```
 
 ```json
