@@ -77,7 +77,7 @@ Follow these steps to automatically generate documents using a modern template a
 
 10. Whenever a template consists of a table placeholder, that field has all the column names in the suggestion as shown in the **Risks** field.
 
-   ![Screenshot showing the Risks field.](../media/content-understanding/document-generation-risks.png)
+    ![Screenshot of the template showing column suggestions in the Risks field.](../media/content-understanding/document-generation-risks.png)
 
 To fill the table, placeholder values should be passed as a list of JSON objects with column name and values. For example:
 
