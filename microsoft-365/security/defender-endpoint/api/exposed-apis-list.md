@@ -6,7 +6,7 @@ ms.service: defender-endpoint
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
-ms.date: 01/25/2023
+ms.date: 04/17/2024
 manager: deniseb
 audience: ITPro
 ms.collection: 
@@ -39,19 +39,17 @@ search.appverid: met150
 
 ### Endpoint URI
 
-> The service base URI is: [https://api.securitycenter.microsoft.com](https://api.securitycenter.microsoft.com)
->
-> The queries based OData have the '/api' prefix. For example, to get Alerts you can send GET request to [https://api.securitycenter.microsoft.com/api/alerts](https://api.securitycenter.microsoft.com/api/alerts)
+> The service base URI is: [https://api.security.microsoft.com](https://api.security.microsoft.com)
+> 
+> The queries based OData have the '/api' prefix. For example, to get Alerts you can send GET request to [https://api.security.microsoft.com/api/alerts](https://api.security.microsoft.com/api/alerts)
 
 ### Versioning
 
 > The API supports versioning.
->
-> The current version is **V1.0**.
->
-> To use a specific version, use this format: `https://api.securitycenter.microsoft.com/api/{Version}`. For example: `https://api.securitycenter.microsoft.com/api/v1.0/alerts`
->
-> If you don't specify any version (e.g. `https://api.securitycenter.microsoft.com/api/alerts`) you will get to the latest version.
+> > The current version is **V1.0**.
+> > To use a specific version, use this format: `https://api.security.microsoft.com/api/{Version}`. For example: `https://api.security.microsoft.com/api/v1.0/alerts`
+> 
+> If you don't specify any version (e.g. `https://api.security.microsoft.com/api/alerts`) you will get to the latest version.
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../../includes/microsoft-defender-api-usgov.md)]
 
