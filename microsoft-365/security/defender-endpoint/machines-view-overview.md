@@ -4,6 +4,7 @@ description: Learn about the available features that you can use from the Device
 ms.service: defender-endpoint
 ms.author: siosulli
 author: siosulli
+ms.reviewer: yongrhee
 ms.localizationpriority: medium
 manager: deniseb
 audience: ITPro
@@ -12,7 +13,7 @@ ms.collection:
 - tier2
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 04/17/2024
 ---
 
 # Device inventory
@@ -28,15 +29,12 @@ ms.date: 12/18/2020
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-machinesview-abovefoldlink)
 
-The **Device inventory** shows a list of the devices in your network where alerts were generated. By default, the queue displays devices seen in the last 30 days.
-
-At a glance, you see information such as domain, risk level, OS platform, and other details for easy identification of devices most at risk.
+The **Device inventory** shows a list of the devices in your network where alerts were generated. By default, the queue displays devices seen in the last 30 days. At a glance, you see information such as domain, risk level, OS platform, and other details for easy identification of devices most at risk.
 
 > [!NOTE]
-> The device inventory is available in different Microsoft Defender XDR services. The information available to you will differ depending on your license. You'll get the most complete set of capabilities when using [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037).
-
-> [!NOTE]
-> Risk Level which can influence enforcement of conditional access and other security policies on Microsoft Intune, is available in Windows today.
+> The device inventory is available in different Microsoft Defender XDR services. The information available to you can differ depending on your license. To get the most complete set of capabilities, use [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037).
+> 
+> Risk Level, which can influence enforcement of Conditional Access and other security policies in Microsoft Intune, is now available for Windows devices.
 
 There are several options you can choose from to customize the devices list view. On the top navigation you can:
 
@@ -48,9 +46,13 @@ There are several options you can choose from to customize the devices list view
 During the onboarding process, the **Devices list** is gradually populated with devices as they begin to report sensor data. Use this view to track your onboarded endpoints as they come online, or download the complete endpoint list as a CSV file for offline analysis.
 
 > [!NOTE]
-> If you export the device list, it will contain every device in your organization. It might take a significant amount of time to download, depending on how large your organization is. Exporting the list in CSV format displays the data in an unfiltered manner. The CSV file will include all devices in the organization, regardless of any filtering applied in the view itself.
-> [!TIP]
-> If you export the device list, the Antivirus status will show as Not-Supported, this was because we released a report called “[Microsoft Defender Antivirus health](/microsoft-365/security/defender-endpoint/device-health-microsoft-defender-antivirus-health)” which allows you to export even more details.
+> 
+> If you export the devices list, it contains every device in your organization. It might take a significant amount of time to download, depending on how large your organization is. Exporting the list in CSV format displays the data in an unfiltered manner. The CSV file includes all devices in the organization, regardless of any filtering applied in the view itself.
+> 
+> In addition, when you export the devices list, the antivirus status shows as `Not-Supported`. For antivirus status, use the recently released [Microsoft Defender Antivirus health report](/microsoft-365/security/defender-endpoint/device-health-microsoft-defender-antivirus-health) instead. This report allows you to export even more details.
+
+The following image depicts the devices list:
+
 :::image type="content" source="media/device-inventory.png" alt-text="The list of devices" lightbox="media/device-inventory.png":::
 
 ## Sort and filter the device list
