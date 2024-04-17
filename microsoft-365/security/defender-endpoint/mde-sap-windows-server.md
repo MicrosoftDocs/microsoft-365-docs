@@ -209,19 +209,23 @@ Here's a list of what to test:
 
 7. Keep in mind how scans work with network shares. By default, the Microsoft Defender Antivirus component on Windows scans SMB shared network file systems (for example, a Windows server share `\\server\smb-share` or a NetApp share) when these files are accessed by processes. 
 
-   Defender for Endpoint EDR on Windows might scan SMB shared network file systems. The EDR sensor scans certain files that are identified as interesting for EDR analysis during file modification, delete and move operations.
+   [Defender for Endpoint EDR](overview-endpoint-detection-response.md) on Windows might scan SMB shared network file systems. The EDR sensor scans certain files that are identified as interesting for EDR analysis during file modification, delete and move operations.
 
    Defender for Endpoint on Linux does not scan NFS file systems during scheduled scans. 
 
 8. To troubleshoot sense health or reliability issues, use the [Defender for Endpoint Client Analyzer tool](overview-client-analyzer.md). The Defender for Endpoint Client Analyzer an be useful when diagnosing sensor health or reliability issues on onboarded devices running either Windows, Linux, or macOS. 
 
-   Get the latest version here: [https://aka.ms/MDEAnalyzer](https://aka.ms/MDEAnalyzer).
+   Get the latest version of the Defender for Endpoint Client Analyzer here: [https://aka.ms/MDEAnalyzer](https://aka.ms/MDEAnalyzer).
 
-What is the recommended setting for RealTimeProtectionEnabled?
-- Does Defender for Endpoint on Windows scan network shares?
-- Defender for Endpoint Client Analyzer Support tool 
-- Where to open a support case?
-- While testing Defender for Endpoint in Development and on QAS VMs is it possible to delay the Defender for Endpoint extension deployment to Production SAP VMs if Defender for Cloud is activated? Is it possible to selectively deploy Defender for Endpoint to VMs by Resource Group or other criteria? 
+9. To open a support case, see [Contact Microsoft Defender for Endpoint support](contact-support.md).
+
+10. If you're using production SAP VMs with Microsoft Defender for Cloud, keep in mind that Defender for Cloud deploys the Defender for Endpoint extension to all VMs. If a VM isn't onboarded to Defender for Endpoint, it could be used as an attack vector. If you need more time to test Defender for Endpoint before deplying to your production environment, [contact support](contact-support.md). 
+
+While testing Defender for Endpoint in development and on QAS VMs,  is it possible to delay the Defender for Endpoint extension deployment to Production SAP VMs if Defender for Cloud is activated? Is it possible to selectively deploy Defender for Endpoint to VMs by Resource Group or other criteria? 
+
+By default, Defender for Cloud deploys the Defender for Endpoint extension to all VMs in a subscription.  Even one VM in a subscription that does not have Defender for Endpoint deployed can be used as an attack vector.  If additional time is required to test Defender for Endpoint  before deploying to production, contact Microsoft Support via the Microsoft Defender portal.
+
+
 
 ## Useful Commands: Microsoft Defender for Endpoint with SAP on Windows Server
 
