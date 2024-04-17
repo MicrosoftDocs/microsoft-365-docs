@@ -20,7 +20,7 @@ description: Learn how to use a prebuilt sensitive information model in Microsof
 
 # Use a prebuilt model to extract sensitive information from documents in Microsoft Syntex
 
-The prebuilt *sensitive information model* analyzes and extracts key information from documents. The model recognizes documents in various formats and extracts key sensitive information, such as names; identification numbers; personal addresses, emails, and phone numbers; and financial or health information.
+The prebuilt *sensitive information model* analyzes and extracts key information from documents. The model recognizes documents in various formats and extracts key sensitive information, such personal identification numbers; personal addresses, emails, and phone numbers; and financial or health information.
 
 > [!NOTE]
 > Currently, this model is available only for .pdf and image file types. More file types will be added in future releases.
@@ -40,11 +40,11 @@ Follow the instructions in [Create a model in Syntex](create-syntex-model.md#set
 
 1. On the **Models** page, in the **Add a file to analyze** section, select **Add a file**.
 
-    ![Screenshot of the new models page showing the Add a file to analyze section.](../media/content-understanding/prebuilt-add-file-to-analyze-contract.png) 
+    ![Screenshot of the new models page showing the Add a file to analyze section.](../media/content-understanding/prebuilt-add-file-to-analyze-sensitive-info.png)
 
 2. On the **Files to analyze the model** page, select **Add** to find the file you want to use.
 
-    ![Screenshot of the Files to analyze the model page showing the Add button.](../media/content-understanding/prebuilt-add-file-button.png) 
+    ![Screenshot of the Files to analyze the model page showing the Add button.](../media/content-understanding/prebuilt-add-file-button.png)
 
 3. On the **Add a file from the training files library** page, select the file, and then select **Add**.
 
