@@ -16,7 +16,7 @@ ms.collection:
 - tier2
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 03/04/2024
+ms.date: 04/17/2024
 ---
 
 # How Microsoft names threat actors
@@ -110,7 +110,7 @@ Use the following reference table to understand how our previously publicly disc
 |Salmon Typhoon|SODIUM|China|APT4, Maverick Panda|
 |Sangria Tempest|ELBRUS|Financially motivated|Carbon Spider, FIN7|
 |Sapphire Sleet|COPERNICIUM|North Korea|Genie Spider, BlueNoroff|
-|Seashell Blizzard|IRIDIUM|Russia|Sandworm|
+|Seashell Blizzard|IRIDIUM|Russia|APT44, Sandworm|
 |Secret Blizzard|KRYPTON|Russia|Venomous Bear, Turla, Snake|
 |Silk Typhoon|HAFNIUM|China||
 |Smoke Sandstorm|BOHRIUM|Iran||
