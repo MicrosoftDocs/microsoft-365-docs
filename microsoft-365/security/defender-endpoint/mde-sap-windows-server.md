@@ -150,23 +150,60 @@ Here's a list of what to test:
 > 
 ## Important configuration settings for Defender for Endpoint on Windows Server with SAP
 
-1. What is Microsoft Defender for Endpoint?
+1. Get an overview of [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md).
 
-   The term "Defender" can be used to refer to an entire suite of products and solutions. The term "Defender" is used across multiple products and technologies. An overview of Microsoft 365 Defender is illustrated here [What is Microsoft 365 Defender?](/microsoft-365/security/defender/microsoft-365-defender).
+   > [!NOTE]
+   > The term *Defender* is sometimes used to refer to an entire suite of products and solutions. See [What is Microsoft Defender XDR?](/microsoft-365/security/defender/microsoft-365-defender). In this article, we focus on Defender for Endpoint.
 
     
+2. To check Microsoft Defender Antivirus status, open Command Prompt and then run these PowerShell commands:
 
-2. How to check Microsoft Defender Antivirus status?
+   - `Get-MpComputerStatus`
+   - `Get-MpPreference`
 
-   Open a command prompt with Administrative rights and run these PowerShell commands 
+   The most significant settings for SAP are as follows:
 
-   Get-MpComputerStatus
+   ```powershell
+   Get-MpPreference |Select-Object -Property  DisableCpuThrottleOnIdleScans, DisableRealtimeMonitoring, DisableScanningMappedNetworkDrivesForFullScan , DisableScanningNetworkFiles, ExclusionPath, MAPSReporting 
 
-   Get-MpPreference
+   Get-MpComputerStatus |Select-Object -Property AMRunningMode, AntivirusEnabled, BehaviorMonitorEnabled, IsTamperProtected , OnAccessProtectionEnabled, RealTimeProtectionEnabled
 
+   ```
+   
+3. To check Defender for Endpoint EDR status, in Command Prompt, run the following command:
+
+   `PS C:\Windows\System32> Get-Service -Name sense | FL *`
+
+   You should see output that resembles the following:
+
+   ```powershell
+
+   Name        : sense
+   RequiredServices  : {}
+   CanPauseAndContinue : False
+   CanShutdown     : False
+   CanStop       : False
+   DisplayName     : Windows Defender Advanced Threat Protection Service
+   DependentServices  : {}
+   MachineName     : .
+   ServiceName     : sense
+   ServicesDependedOn : {}
+   ServiceHandle    :
+   Status       : Running
+   ServiceType     : Win32OwnProcess
+   StartType      : Automatic
+   Site        :
+   Container      :
+
+   ```
+
+   The values you want to see are `Status: Running` and `StartType: Automatic`.
+   
    
 
-- The most significant settings for SAP are:
+
+
+1. 
 - How to check Microsoft Defender Endpoint Detection and Response (EDR) status?
 - How to check Microsoft Defender Antivirus software components are up to date?  
 - What is Behavior Monitoring?
