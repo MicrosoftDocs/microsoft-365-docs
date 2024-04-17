@@ -171,6 +171,7 @@ Here's a list of what to check:
    The most significant settings for SAP are as follows:
 
    ```powershell
+
    Get-MpPreference |Select-Object -Property  DisableCpuThrottleOnIdleScans, DisableRealtimeMonitoring, DisableScanningMappedNetworkDrivesForFullScan , DisableScanningNetworkFiles, ExclusionPath, MAPSReporting 
 
    Get-MpComputerStatus |Select-Object -Property AMRunningMode, AntivirusEnabled, BehaviorMonitorEnabled, IsTamperProtected , OnAccessProtectionEnabled, RealTimeProtectionEnabled
@@ -241,6 +242,7 @@ Use Windows Update, or run the following command:
 You should see an output that resembles the following code snippet:
 
 ```properties
+
 Signature update started . . .
 Service Version: 4.18.23050.9
 Engine Version: 1.1.23060.1005
@@ -248,6 +250,7 @@ AntiSpyware Signature Version: 1.393.925.0
 Antivirus Signature Version: 1.393.925.0
 Signature update finished.
 PS C:\Program Files\Windows Defender>
+
 ```
 
 Another option is to use this command: 
@@ -299,12 +302,14 @@ Defender for Endpoint should be configured with [tamper protection](prevent-chan
 To shut down various subcomponents of the Microsoft Defender Antivirus solution, run the following commands:
 
 ```powershell
+
 Set-MPPreference -DisableTamperProtection $true
 Set-MpPreference -DisableRealtimeMonitoring $true
 Set-MpPreference -DisableBehaviorMonitoring $true
 Set-MpPreference -MAPSReporting Disabled
 Set-MpPreference -DisableIOAVProtection $true
 Set-MpPreference -EnableNetworkProtection Disabled 
+
 ```
 
 For more information about these commands, see [Set-MpPreference](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps&preserve=true).
@@ -315,8 +320,10 @@ For more information about these commands, see [Set-MpPreference](/powershell/mo
 To turn off [cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md) (Microsoft Advanced Protection Service, or MAPS), run the following commands:
 
 ```powershell
+
 PowerShell Set-MpPreference -MAPSReporting 0​
 PowerShell Set-MpPreference -MAPSReporting Disabled​
+
 ```
 
 For more information about cloud-delivered protection, see the following resources:
