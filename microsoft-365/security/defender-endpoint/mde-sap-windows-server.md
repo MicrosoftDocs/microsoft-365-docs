@@ -333,7 +333,7 @@ PowerShell Set-MpPreference -MAPSReporting Disabled​
 For more information about cloud-delivered protection, see the following resources:
 
 - [Cloud protection and Microsoft Defender Antivirus](cloud-protection-microsoft-defender-antivirus.md)
-- [Cloud protection and sample submission at Microsoft Defender Antivirus](cloud-protection-microsoft-antivirus-sample-submission.md) (You might want to consider whether to use automatic sample submission with your security policies)
+- [Cloud protection and sample submission at Microsoft Defender Antivirus](cloud-protection-microsoft-antivirus-sample-submission.md) (if you're considering whether to use automatic sample submission with your security policies)
 
 ## Related articles
 
