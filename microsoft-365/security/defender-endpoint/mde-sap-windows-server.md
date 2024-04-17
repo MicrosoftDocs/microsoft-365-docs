@@ -99,7 +99,7 @@ SAP Support policy is documented in [3356389 - Antivirus or other security softw
 
 7. **Configure certain exclusions for Microsoft Defender Antivirus**. These include: 
 
-   - DBMS data files, log files and temp files, including disks containing backup files
+   - DBMS data files, log files, and temp files, including disks containing backup files
    - The entire contents of the SAPMNT directory
    - The entire contents of the SAPLOC directory
    - The entire contents of the TRANS directory
@@ -178,7 +178,7 @@ Here's a list of what to test:
 
    `PS C:\Windows\System32> Get-Service -Name sense | FL *`
 
-   You should see output that resembles the following:
+   You should see output that resembles the following code snippet:
 
    ```powershell
 
