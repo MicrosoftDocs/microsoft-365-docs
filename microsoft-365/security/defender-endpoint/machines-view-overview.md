@@ -49,7 +49,8 @@ During the onboarding process, the **Devices list** is gradually populated with 
 
 > [!NOTE]
 > If you export the device list, it will contain every device in your organization. It might take a significant amount of time to download, depending on how large your organization is. Exporting the list in CSV format displays the data in an unfiltered manner. The CSV file will include all devices in the organization, regardless of any filtering applied in the view itself.
-
+> [!TIP]
+> If you export the device list, the Antivirus status will show as Not-Supported, this was because we released a report called “[Microsoft Defender Antivirus health](/microsoft-365/security/defender-endpoint/device-health-microsoft-defender-antivirus-health)” which allows you to export even more details.
 :::image type="content" source="media/device-inventory.png" alt-text="The list of devices" lightbox="media/device-inventory.png":::
 
 ## Sort and filter the device list
