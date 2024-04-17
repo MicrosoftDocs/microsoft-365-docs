@@ -57,7 +57,7 @@ started](apis-intro.md).
 ## HTTP request
 
 ```HTTP
-GET https://api.securitycenter.microsoft.com/api/libraryfiles
+GET https://api.security.microsoft.com/api/libraryfiles
 ```
 
 ## Request headers
@@ -80,7 +80,7 @@ If successful, this method returns 200 - OK response code with a collection
 Here's an example of a request that gets all live response library files.
 
 ```HTTP
-GET https://api.securitycenter.microsoft.com/api/libraryfiles
+GET https://api.security.microsoft.com/api/libraryfiles
 ```
 
 ## Response example
@@ -91,7 +91,7 @@ Here's an example of the response.
 HTTP/1.1 200 Ok
 Content-type: application/json
 {
-"\@odata.context": "https://api.securitycenter.microsoft.com
+"\@odata.context": "https://api.security.microsoft.com
 /api/\$metadata\#LibraryFiles",
 "value": [
     {
