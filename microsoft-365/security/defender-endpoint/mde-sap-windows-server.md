@@ -131,9 +131,9 @@ SAP Support policy is documented in [3356389 - Antivirus or other security softw
 
 SAP and Microsoft don't recommend deploying Defender for Endpoint on Windows directly to all development, QAS, and production systems simultaneously, and/or without careful testing and monitoring. Customers who deployed Defender for Endpoint and other similar software in an uncontrolled manner without adequate testing have experienced system downtime as a result. 
 
-Defender for Endpoint on Windows and any other software or configuration change should be deployed into development systems first, validated in QAS and only then deployed into production environments. 
+Defender for Endpoint on Windows and any other software or configuration change should be deployed into development systems first, validated in QAS, and only then deployed into production environments. 
 
-Using tools, such as [Defender for Endpoint security settings management](/mem/intune/protect/mde-security-integration) to deploy Defender for Endpoint to an entire SAP landscape without testing is very likely to cause downtime.
+Using tools, such as [Defender for Endpoint security settings management](/mem/intune/protect/mde-security-integration) to deploy Defender for Endpoint to an entire SAP landscape without testing is likely to cause downtime.
 
 Here's a list of what to test:
 
@@ -141,11 +141,11 @@ Here's a list of what to test:
 
 2. Exclude DBMS files and executables following your DBMS vendor recommendations.
 
-3. Analyze SAPMNT, SAP TRANS_DIR, Spool and Job Log directories. If there are more than 100,000 files, consider archiving to reduce the number of files.
+3. Analyze SAPMNT, SAP TRANS_DIR, Spool, and Job Log directories. If there are more than 100,000 files, consider archiving to reduce the number of files.
 
-4. Confirm the performance limits and quotas of the shared file system used for SAPMNT. The SMB share source could be a NetApp appliance, a Windows server shared disk or Azure Files SMB. 
+4. Confirm the performance limits and quotas of the shared file system used for SAPMNT. The SMB share source could be a NetApp appliance, a Windows Server shared disk, or Azure Files SMB. 
 
-5. Configure exclusions such that all SAP application servers are not scanning the SAPMNT share simultaneously as this may overload shared storage server.
+5. Configure exclusions so that all SAP application servers aren't scanning the SAPMNT share simultaneously, as it could overload your shared storage server.
 
 6. In general, host interface files on a dedicated non-SAP file server. Interface files are recognized as an attack vector. Real-time protection should be activated on this dedicated file server. SAP Servers should never be used as file servers for interface files. 
 
@@ -204,11 +204,11 @@ Here's a list of what to test:
    
    For more information about the output, see [Review events and errors using Event Viewer](event-error-codes.md).
 
-4. To check whether Microsoft Defender Antivirus software components are up to date, use Windows Update. If Microsoft Defender Antivirus isn't up to date, or if you get an error, contact your security team. For more infomration about updates, see [Microsoft Defender Antivirus security intelligence and product updates](microsoft-defender-antivirus-updates.md).
+4. To check whether Microsoft Defender Antivirus software components are up to date, use Windows Update. If Microsoft Defender Antivirus isn't up to date, or if you get an error, contact your security team. For more information about updates, see [Microsoft Defender Antivirus security intelligence and product updates](microsoft-defender-antivirus-updates.md).
 
 5. Make sure [behavior monitoring](behavioral-blocking-containment.md) is turned on. If tamper protection is enabled, behavior monitoring is turned on by default. Use the default configuration of tamper protection enabled, behavior monitoring enabled, and real-time monitoring enabled unless a specific problem is identified. For more information, see [Built-in protection helps guard against ransomware](built-in-protection.md).
 
-6. Make sure [real-time protection is enabled](configure-real-time-protection-microsoft-defender-antivirus.md). The current recommendation for Defender for Endpoint on Windows is to enable real-time scanning, with tamper protection enabled, behavior monitoring enabled, and real-time monitoring enabled, unless a specific problem has been identified.  
+6. Make sure [real-time protection is enabled](configure-real-time-protection-microsoft-defender-antivirus.md). The current recommendation for Defender for Endpoint on Windows is to enable real-time scanning, with tamper protection enabled, behavior monitoring enabled, and real-time monitoring enabled, unless a specific problem is identified.  
 
 7. Keep in mind how scans work with network shares. By default, the Microsoft Defender Antivirus component on Windows scans SMB shared network file systems (for example, a Windows server share `\\server\smb-share` or a NetApp share) when these files are accessed by processes. 
 
