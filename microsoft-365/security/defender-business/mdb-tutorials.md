@@ -4,18 +4,19 @@ description: Learn about several tutorials to help you get started using Defende
 search.appverid: MET150
 author: siosulli
 ms.author: siosulli
-manager: dansimp 
+manager: deniseb 
 audience: Admin
 ms.topic: conceptual
 ms.service: defender-business
 ms.localizationpriority: medium
 ms.reviewer: efratka, nehabha, yaelbenari
-ms.date: 01/26/2023
+ms.date: 04/10/2024
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
 - m365-security
 - tier1
+- essentials-get-started
 ---
 
 # Tutorials and simulations in Microsoft Defender for Business

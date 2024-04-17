@@ -1,11 +1,9 @@
 ---
 title: UEFI scanning in Defender for Endpoint
 description: Learn how Microsoft Defender for Endpoint is extending its protection capabilities to the firmware level with a new Unified Extensible Firmware Interface (UEFI) scanner.
-keywords: Microsoft Defender for Endpoint, EDR in block mode, passive mode blocking
-ms.pagetype: security
-author: v-jmathew
-ms.author: v-jmathew
-manager: dansimp
+author: siosulli
+ms.author: siosulli
+manager: deniseb
 ms.reviewer: yongrhee
 audience: ITPro
 ms.topic: conceptual
@@ -18,12 +16,12 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.date: 12/10/2023
+ms.date: 04/16/2024
 ---
 
 # UEFI scanning in Defender for Endpoint
 
-Beginning June 17 2020, Microsoft Defender for Endpoint extended its protection capabilities to the firmware level with a new [Unified Extensible Firmware Interface (UEFI)](/windows-hardware/drivers/bringup/unified-extensible-firmware-interface) scanner.
+Recently, Microsoft Defender for Endpoint extended its protection capabilities to the firmware level with a new [Unified Extensible Firmware Interface (UEFI)](/windows-hardware/drivers/bringup/unified-extensible-firmware-interface) scanner.
 
 Hardware and firmware-level attacks have continued to rise in recent years, as modern security solutions made persistence and detection evasion on the operating system more difficult. Attackers compromise the boot flow to achieve low-level malware behavior that's hard to detect, posing a significant risk to an organization's security posture.
 
@@ -33,17 +31,16 @@ The UEFI scanner is a new component of the [built-in antivirus](/windows/securit
 
 ## Prerequisites
 
-- Microsoft Defender Antivirus as the primary antivirus product
+- [Microsoft Defender Antivirus](microsoft-defender-antivirus-windows.md) as the primary antivirus product and in active mode. UEFI scanner doesn't work with [EDR in block mode](edr-in-block-mode.md) (with Microsoft Defender Antivirus in passive mode).
+- [Real-time protection](configure-protection-features-microsoft-defender-antivirus.md) is turned on
+- [Behavior monitoring](behavior-monitor.md) is turned on
+- Devices are running a current [Microsoft Defender Antivirus platform version](microsoft-defender-antivirus-updates.md#monthly-platform-and-engine-versions)
+- Devices are running one of the following versions of Windows:
+   - Windows 10, Windows 11 or newer on client devices
+   - Windows Server 2019, Windows Server 2022, or newer versions
+   - [Windows Server 2012 R2 and Windows Server 2016](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/defending-windows-server-2012-r2-and-2016/ba-p/2783292) with the [unified Defender for Endpoint client](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution) installed
 
-  > [!NOTE]
-  > UEFI scanner does not work with Endpoint detection and response (EDR) in block mode, since Microsoft Defender Antivirus would be operating in passive mode.
-
-- Real-Time Protection should be ON
-- Behavior Monitoring should be ON
-- Supported version of Microsoft Defender Antivirus Platform Update (N-2)
-- Windows 10, Windows 11 and newer versions, [Windows Server 2012 R2 and Windows Server 2016](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/defending-windows-server-2012-r2-and-2016/ba-p/2783292) running the unified Defender for Endpoint client, Windows Server 2019, Windows Server 2022 and newer versions
-
-## How did we build the UEFI scanner?
+## What is the UEFI scanner?
 
 The Unified Extensible Firmware Interface (UEFI) is a replacement for [legacy BIOS](/windows-hardware/drivers/bringup/smbios). If the chipset is configured correctly ([UEFI](https://uefi.org/sites/default/files/resources/UEFI%20Spec%202_6.pdf) & chipset configuration itself) and [secure boot](/windows-hardware/design/device-experiences/oem-secure-boot) is enabled, the firmware is reasonably secure. To perform a hardware-based attack, attackers exploit a vulnerable firmware or a misconfigured machine to deploy a [rootkit](https://www.microsoft.com/en-us/microsoft-365-life-hacks/privacy-and-safety/what-is-a-rootkit), which allows attackers to gain foothold on the machine.
 
@@ -57,19 +54,19 @@ The [Serial Peripheral Interface (SPI)](https://en.wikipedia.org/wiki/Serial_Per
 
 Once an implant is deployed, it's hard to detect. To catch threats at this level, security solutions at the OS level rely on information from the firmware, but the chain of trust is weakened.
 
-Technically, the firmware is not stored and is not accessible from main memory. As opposed to other software, it is stored in SPI flash storage, so the new UEFI scanner must follow the hardware protocol provided by hardware manufacturers. To be compatible and be up to date with all platforms, it needs to take into consideration protocol differences.
+Technically, the firmware isn't stored and isn't accessible from main memory. As opposed to other software, it's stored in SPI flash storage, so the new UEFI scanner must follow the hardware protocol provided by hardware manufacturers. To be compatible and be up to date with all platforms, it needs to take into consideration protocol differences.
 
 :::image type="content" source="media/uefi-scanner-internals-overview.png" alt-text="Screenshot that shows UEFI scanner internals overview":::
 
 The UEFI scanner performs dynamic analysis on the firmware it gets from the hardware flash storage. By obtaining the firmware, the scanner is able to parse the firmware, enabling Defender for Endpoint to inspect firmware content at runtime.
 
-## How do you turn on UEFI scanner?
+## How do you turn on the UEFI scanner?
 
 The new UEFI scanner is a component of Microsoft Defender Antivirus, thus, as long as it's the primary AV, it includes this capability to scan and access UEFI firmware.
 
-## How do you manage UEFI scanner?
+## How do you manage the UEFI scanner?
 
-It's a built-in functionality of Microsoft Defender Antivirus, thus, there is no additional management.
+It's a built-in functionality of Microsoft Defender Antivirus. Thus, there is no additional management.
 
 ## How does the UEFI scanner in Defender for Endpoint work?
 
@@ -83,37 +80,17 @@ Firmware scanning is orchestrated by runtime events like suspicious driver load 
 
 :::image type="content" source="media/windows-security-detecting-malicious-content-in-nvram.png" alt-text="Screenshot that shows Windows Security notification for malicious content in NVRAM":::
 
-Defender for Endpoint customers will also see these detections raised as alerts in [Microsoft Defender Security Center](https://security.microsoft.com/), empowering security operations teams to investigate and respond to firmware attacks and suspicious activities at the firmware level in their environments.
+Defender for Endpoint customers can see these detections raised as alerts in the [Microsoft Defender portal](https://security.microsoft.com/), empowering security operations teams to investigate and respond to firmware attacks and suspicious activities at the firmware level in their environments.
 
 :::image type="content" source="media/mde-alert-detecting-malicious-code-in-firmware.png" alt-text="Screenshot that shows Defender for Endpoint alert detecting malicious code":::
 
-Security operations teams can also use the [advanced hunting](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview) capabilities in Defender for Endpoint to hunt for these threats:
-
-```powershell
-DeviceEvents
-
-| where ActionType == "AntivirusDetection"
-
-| extend ParsedFields=parse_json(AdditionalFields)
-
-| extend ThreatName=tostring(ParsedFields.ThreatName)
-
-| where ThreatName contains_cs "UEFI"
-
-| project ThreatName=tostring(ParsedFields.ThreatName),
-
- FileName, SHA1, DeviceName, Timestamp
-
-| limit 100
-```
-
-To detect unknown threats in SPI flash, signals from the UEFI scanner are analyzed to identify anomalies and where they have been executed. Anomalies are reported to the Microsoft Defender Security Center for investigation.
+To detect unknown threats in SPI flash, signals from the UEFI scanner are analyzed to identify anomalies and where they have been executed. Anomalies are reported to the Microsoft Defender portal for investigation.
 
 :::image type="content" source="media/mde-alert-malware-implant-in-uefi-file-system.png" alt-text="Screenshot that shows Defender for Endpoint alert for malware implant in UEFI":::
 
-These events can likewise be queried through Advanced Hunting as shown:
+These events can likewise be queried through advanced hunting as shown:
 
-```powershell
+```kusto
 DeviceAlertEvents
 
 | where Title has "UEFI"
@@ -131,4 +108,4 @@ Hardware backed security features like Secure Launch and device attestation help
 
 With its UEFI scanner, [Defender for Endpoint](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp) gets even richer visibility into threats at the firmware level, where attackers have been increasingly focusing their efforts on. Security operations teams can use this new level of visibility, along with the rich set of detection and response capabilities in Defender for Endpoint, to investigate and contain such advanced attacks.
 
-This level of visibility is also available in [Microsoft 365 Defender (M365D)](https://www.microsoft.com/security/technology/threat-protection), which delivers an even broader cross-domain defense that coordinates protection across endpoints, identities, email, and apps.
+This level of visibility is also available in the [Microsoft Defender portal](https://www.microsoft.com/security/technology/threat-protection), which delivers an even broader cross-domain defense that coordinates protection across endpoints, identities, email, and apps.

@@ -1,19 +1,14 @@
 ---
 title: Upload files to the live response library
 description: Learn how to upload a file to the live response library.
-keywords: apis, graph api, supported apis, upload to library
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security
@@ -22,7 +17,7 @@ ms.collection:
 ms.topic: reference
 ms.subservice: reference
 ms.custom: api
-ms.date: 06/03/2021
+ms.date: 04/17/2024
 ---
 
 # Upload files to the live response library
@@ -66,7 +61,7 @@ including how to choose permissions, see [Get started](apis-intro.md).
 Upload
 
 ```HTTP
-POST https://api.securitycenter.microsoft.com/api/libraryfiles
+POST https://api.security.microsoft.com/api/libraryfiles
 ```
 
 ## Request headers
@@ -102,7 +97,7 @@ Request
 Here is an example of the request using curl.
 
 ```CURL
-curl -X POST https://api.securitycenter.microsoft.com/api/libraryfiles -H
+curl -X POST https://api.security.microsoft.com/api/libraryfiles -H
 "Authorization: Bearer \$token" -F "file=\@mdatp1.png" -F
 "ParametersDescription=test"
 -F "HasParameters=true" -F "OverrideIfExists=true" -F "Description=test

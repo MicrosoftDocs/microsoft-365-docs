@@ -1,13 +1,13 @@
 ---
 title: How to schedule scans with Microsoft Defender for Endpoint on macOS
 description: Learn how to schedule an automatic scanning time for Microsoft Defender for Endpoint in macOS to better protect your organization's assets.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, scans, antivirus, big sur, monterey, ventura, mde for mac
 ms.service: defender-endpoint
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
+ms.reviewer: yongrhee
 ms.localizationpriority: medium
-ms.date: 02/12/2024
-manager: dansimp
+ms.date: 04/09/2024
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -29,20 +29,15 @@ search.appverid: met150
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-> [!IMPORTANT]
-> Some information relates to a pre-released product feature in public preview which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
-> [!NOTE] 
->The built-in Scheduled Scan is currently in public preview. Review the prerequisites carefully.
-
 ## Schedule a scan *built-in to* Microsoft Defender for Endpoint on macOS
 
 While you can start a threat scan at any time with Microsoft Defender for Endpoint, your enterprise might benefit from scheduled or timed scans. For example, you can schedule a scan to run at the beginning of every workday or week. 
 
-**Pre-requisites:**
+There are three types of scheduled scans that are configurable: hourly, daily, and weekly scans. Hourly and daily scheduled scans are always run as quick scans, weekly scans can be configured to be either quick or full scans. It is possible to have all three types of scheduled scans at the same time. See the samples below. 
+
+**Prerequisites**:
 
 - Platform Update version: [101.23122.0005](mac-whatsnew.md#jan-2024-build-101231220005---release-version-2012312250) or newer
-- [Beta Channel (formerly Insiders-Fast), or Current Channel (Preview) (formerly Insiders-Slow)](/microsoft-365/security/defender-endpoint/mac-updates)
 
 ## Schedule a scan with *Microsoft Defender for Endpoint on macOS*
 
@@ -68,13 +63,13 @@ The following sample shows the daily and/or weekly configuration for the schedul
 
 Your scheduled scan runs at the date, time, and frequency you defined in your _plist_.
 
-### Option 1: Schedule a quick scan using a _plist_
+### Example 1: Schedule a daily quick scan and weekly full scan using a _plist_
 
 In the following example, the daily quick scan configuration is set to run at 885 minutes after midnight (2:45 p.m.).<br>
-The weekly configuration is set to run a quick scan on Wednesday at 880 minutes after midnight (2:40 p.m.).
-And it's set to ignore exclusions and run on a low priority scan.
+The weekly configuration is set to run a full scan on Wednesday at 880 minutes after midnight (2:40 p.m.).
+And it's set to ignore exclusions and run a low priority scan.
 
-The following code shows the schema you need to use to schedule a quick scan.
+The following code shows the schema you need to use to schedule scans according to the requirements above.
 
 1. Open a text editor and use this example as a guide for your own scheduled scan file.
 
@@ -98,8 +93,6 @@ The following code shows the schema you need to use to schedule a quick scan.
         <dict> 
             <key>timeOfDay</key> 
             <integer>885</integer> 
-            <key>interval</key> 
-            <string>0</string> 
         </dict> 
         <key>weeklyConfiguration</key> 
         <dict> 
@@ -108,18 +101,19 @@ The following code shows the schema you need to use to schedule a quick scan.
             <key>timeOfDay</key> 
             <integer>880</integer> 
             <key>scanType</key> 
-            <string>quick</string> 
-        </dict> 
+            <string>full</string> 
         </dict> 
     </dict> 
+</dict> 
 </plist> 
 ```
 
 2. Save the file as _com.microsoft.wdav.plist_.
 
-### Option 2: Schedule a full scan using a _plist_
+### Example 2: Schedule an hourly quick scan, a daily quick scan, and weekly full scan using a _plist_
 
-1. Open a text editor and use this example for a full scan.
+In the following example, an hourly quick scan will run every 6 hours, a daily quick scan configuration is set to run at 885 minutes after midnight (2:45 p.m.), and a weekly full scan will run on Wednesdays at 880 minutes after midnight (2:40 p.m).
+1. Open a text editor and use this example.
 
 ```XML
 <?xml version="1.0" encoding="UTF-8"?> 
@@ -215,8 +209,8 @@ Use the following command:
 
  
 > [!IMPORTANT]
-> Scheduled scans will not run at the scheduled time while the device is asleep. They will instead run once the device resumes from sleep mode.
-> If the device is turned off, the scan will run at the next scheduled scan time.
+> Scheduled scans do not run at the scheduled time while the device is asleep. Instead, scheduled scans run when the device resumes from sleep mode.
+> If the device is turned off, the scan runs at the next scheduled scan time.
 
 > [!TIP]
 > Do you want to learn more? Engage with the Microsoft Security community in our Tech Community: [**Microsoft Defender for Endpoint Tech Community**](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/bd-p/MicrosoftDefenderATP).

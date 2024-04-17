@@ -1,11 +1,7 @@
 ---
 title: Alert classification for password spray attacks
 description: Alert classification guide for password spray attacks coming to review the alerts and take recommended actions to remediate the attack and protect your network.
-keywords: incidents, alerts, investigate, analyze, response, correlation, attack, devices, users, 365, microsoft, m365, password, spray, alert classification, alert grading, cloud apps, password spray, password spray attack
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords:
   - NOCSH
 ms.author: diannegali
@@ -21,7 +17,7 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - met150
-ms.date: 08/11/2023
+ms.date: 02/11/2024
 ---
 
 # Alert classification for password spray attacks

@@ -3,12 +3,12 @@ title: Schedule regular quick and full scans with Microsoft Defender Antivirus
 description: Set up recurring (scheduled) scans, including when they should run and whether they run as full or quick scans
 ms.service: defender-endpoint
 ms.localizationpriority: medium
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 ms.custom: nextgen
-ms.date: 12/14/2023
-ms.reviewer: pauhijbr, ksarens, mkaminska
-manager: dansimp
+ms.date: 04/10/2024
+ms.reviewer: pauhijbr, ksarens, yongrhee
+manager: deniseb
 ms.subservice: ngp
 ms.topic: how-to
 ms.collection: 
@@ -30,12 +30,6 @@ search.appverid: met150
 
 You can set up regular, scheduled antivirus scans on devices. These scheduled scans are in addition to always-on, real-time protection and [on-demand antivirus](run-scan-microsoft-defender-antivirus.md) scans. When you schedule a scan, you can specify the type of scan, when the scan should occur, and if the scan should occur after a [protection update](manage-protection-updates-microsoft-defender-antivirus.md) or when a device isn't being used. You can also set up special scans to complete remediation actions if needed.
 
-- [Compare the quick scan, full scan, and custom scan](#comparing-the-quick-scan-full-scan-and-custom-scan)
-- [Choose a scan type](#how-to-choose-a-scan-type)
-- [Keep these important points](#important-points-to-keep-in-mind)
-- [Try the scheduled quick scan performance optimization](#scheduled-quick-scan-performance-optimization)
-- [Additional resources](#see-also)
-
 ## Comparing the quick scan, full scan, and custom scan
 
 The following table describes the different types of scans you can configure.
@@ -48,6 +42,9 @@ The following table describes the different types of scans you can configure.
 
 > [!NOTE]
 > By default, quick scans run on mounted removable devices, such as USB drives.
+
+> [!TIP]
+> If you have a Network-Attached Storage (NAS) or Storage Area Network (SAN), you can use Internet Content Adaption Protocol (ICAP) scanning with the Microsoft Defender Antivirus engine. For more information, see [Tech Community Blog: MetaDefender ICAP with Windows Defender Antivirus: World-class security for hybrid environments](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/metadefender-icap-with-windows-defender-antivirus-world-class/ba-p/800234).   
 
 ## How to choose a scan type
 

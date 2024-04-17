@@ -6,7 +6,7 @@ ms.author: diannegali
 author: diannegali
 ms.localizationpriority: medium
 ms.date: 12/15/2023
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security
@@ -43,7 +43,7 @@ Response actions run along the top of a specific device page and include:
 - Consult a threat expert
 - Action center
 
-[![Image of response actions.](images/response-actions.png)](images/response-actions.png#lightbox)
+[![Image of response actions.](media/response-actions.png)](media/response-actions.png#lightbox)
 
 > [!IMPORTANT]
 > [Defender for Endpoint Plan 1](defender-endpoint-plan-1.md) includes only the following manual response actions:
@@ -102,19 +102,19 @@ Alternate steps:
 
 1. Select **Collect Investigation Package** from the response actions section of the device page.
 
-    ![Image of collect investigation package](images/collect-investigation-package.png)
+    ![Image of collect investigation package](media/collect-investigation-package.png)
    
 1. Add comments and select **Confirm**.
 
-    ![Image of confirm comment](images/comments-confirm.png)
+    ![Image of confirm comment](media/comments-confirm.png)
    
 1. Select **Action center** from the response actions section of the device page.
 
-    ![Image of action center](images/action-center-selected.png)
+    ![Image of action center](media/action-center-selected.png)
    
 1. Click the **Package collection package available** to download the collection package.
 
-    ![Image of download package](images/download-package.png)
+    ![Image of download package](media/download-package.png)
    
    For Windows devices, the package contains the following folders:
 
@@ -161,7 +161,7 @@ As part of the investigation or response process, you can remotely initiate an a
 
 One you have selected **Run antivirus scan**, select the scan type that you'd like to run (quick or full) and add a comment before confirming the scan.
 
-:::image type="content" source="images/run-antivirus.png" alt-text="The notification to select quick scan or full scan and add comment" lightbox="images/run-antivirus.png":::
+:::image type="content" source="media/run-antivirus.png" alt-text="The notification to select quick scan or full scan and add comment" lightbox="media/run-antivirus.png":::
 
 The Action center will show the scan information and the device timeline will include a new event, reflecting that a scan action was submitted on the device. Microsoft Defender Antivirus alerts will reflect any detections that surfaced during the scan.
 
@@ -187,13 +187,13 @@ To restrict an application from running, a code integrity policy is applied that
 
 Once you have selected **Restrict app execution** on the device page, type a comment and select **Confirm**. The Action center will show the scan information and the device timeline will include a new event.
 
-:::image type="content" source="images/restrict-app-execution.png" alt-text="The application restriction notification" lightbox="images/restrict-app-execution.png":::
+:::image type="content" source="media/restrict-app-execution.png" alt-text="The application restriction notification" lightbox="media/restrict-app-execution.png":::
 
 ### Notification on device user
 
 When an app is restricted, the following notification is displayed to inform the user that an app is being restricted from running:
 
-:::image type="content" source="images/atp-app-restriction.png" alt-text="The application restriction message" lightbox="images/atp-app-restriction.png":::
+:::image type="content" source="media/atp-app-restriction.png" alt-text="The application restriction message" lightbox="media/atp-app-restriction.png":::
 
 > [!NOTE]
 > The notification is not available on Windows Server 2016 and Windows Server 2012 R2.
@@ -225,7 +225,7 @@ On Windows 10, version 1709 or later, you'll have more control over the network 
 
 Once you have selected **Isolate device** on the device page, type a comment and select **Confirm**. The Action center will show the scan information and the device timeline will include a new event.
 
-:::image type="content" source="images/isolate-device.png" alt-text="An isolated device details page" lightbox="images/isolate-device.png":::
+:::image type="content" source="media/isolate-device.png" alt-text="An isolated device details page" lightbox="media/isolate-device.png":::
 
 > [!NOTE]
 > The device will remain connected to the Defender for Endpoint service even if it is isolated from the network. If you've chosen to enable Outlook and Skype for Business communication, then you'll be able to communicate to the user while the device is isolated. Selective isolation only works on the classic versions of Outlook and Microsoft Teams.
@@ -259,7 +259,7 @@ The minimum requirements for 'forcibly release device from isolation' feature ar
 
 When a device is being isolated, the following notification is displayed to inform the user that the device is being isolated from the network:
 
-:::image type="content" source="images/atp-notification-isolate.png" alt-text="A no network connection message" lightbox="images/atp-notification-isolate.png":::
+:::image type="content" source="media/atp-notification-isolate.png" alt-text="A no network connection message" lightbox="media/atp-notification-isolate.png":::
 
 > [!NOTE]
 > The notification is not available on non-Windows platforms.
@@ -310,7 +310,7 @@ You'll be able to stop containing a device at any time.
 
 ## Contain user from the network
 
-When an identity in your network might be compromised, you must prevent that identity from accessing the network and different endpoints. Defender for Endpoint can "contain" an identity, blocking it from access, and helping prevent attacks-- specifically, ransomware. When an identity is contained, any supported Microsoft Defender for Endpoint onboarded device will block incoming traffic in specific protocols related to attacks (network logons, RPC, SMB, RDP) while enabling legitimate traffic. This action can significantly help to reduce the impact of an attack. When an identity is contained, security operations analysts have extra time to locate, identify and remediate the threat to the compromised identity.
+When an identity in your network might be compromised, you must prevent that identity from accessing the network and different endpoints. Defender for Endpoint can "contain" an identity, blocking it from access, and helping prevent attacks-- specifically, ransomware. When an identity is contained, any supported Microsoft Defender for Endpoint onboarded device will block incoming traffic in specific protocols related to attacks (network logons, RPC, SMB, RDP), terminate ongoing remote sessions and logoff existing RDP connections (termination the session itself including all its related processes), while enabling legitimate traffic. This action can significantly help to reduce the impact of an attack. When an identity is contained, security operations analysts have extra time to locate, identify and remediate the threat to the compromised identity.
 
 > [!NOTE]
 > Blocking incoming communication with a "contained" user is supported on onboarded Microsoft Defender for Endpoint Windows 10 and 11 devices (Sense version 8740 and higher), Windows Server 2019+ devices, and Windows Servers 2012R2 and 2016 with the modern agent.
@@ -367,7 +367,7 @@ The **Action center** provides information on actions that were taken on a devic
 
 All other related details are also shown, for example, submission date/time, submitting user, and if the action succeeded or failed.
 
-:::image type="content" source="images/action-center-details.png" alt-text="The action center with information" lightbox="images/action-center-details.png":::
+:::image type="content" source="media/action-center-details.png" alt-text="The action center with information" lightbox="media/action-center-details.png":::
 
 ## See also
 

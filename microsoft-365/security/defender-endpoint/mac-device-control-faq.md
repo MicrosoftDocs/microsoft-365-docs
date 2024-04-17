@@ -1,15 +1,11 @@
 ---
 title: macOS Device control policies frequently asked questions (FAQ)
 description: Get answers to common questions about device control policies using JAMF or Intune.
-keywords: microsoft, defender, endpoint, Microsoft Defender for Endpoint, mac, device, control, usb, removable, media, jamf, intune, faq,
 ms.service: defender-endpoint
-ms.mktglfcycl: security
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -41,17 +37,17 @@ This article provides answers to frequently asked questions about Device Control
 
 Answer: Run _mdatp device-control policy preferences list_ to see all the iOS policies on this machine:
 
-:::image type="content" source="images/macos-device-control-faq-enabled-default-enforcement.png" alt-text="Shows how to run mdatp device-control policy preferences list to see if a device is Device Control enabled. " lightbox="images/macos-device-control-faq-enabled-default-enforcement.png":::
+:::image type="content" source="media/macos-device-control-faq-enabled-default-enforcement.png" alt-text="Shows how to run mdatp device-control policy preferences list to see if a device is Device Control enabled. " lightbox="media/macos-device-control-faq-enabled-default-enforcement.png":::
 
 ### How do I know whether the policy has been delivered to the client machine?
 
 Answer: Run _mdatp device-control policy rules list_ to see all the iOS policies on this machine:
 
-:::image type="content" source="images/macos-device-control-faq-policy-is-on-client.png" alt-text="Shows how to run mdatp device-control policy rules list to determine whether a policy has been configured on the endpoint." lightbox="images/macos-device-control-faq-policy-is-on-client.png":::
+:::image type="content" source="media/macos-device-control-faq-policy-is-on-client.png" alt-text="Shows how to run mdatp device-control policy rules list to determine whether a policy has been configured on the endpoint." lightbox="media/macos-device-control-faq-policy-is-on-client.png":::
 
 Answer 2: Run _mdatp device-control policy groups list_ to see all the iOS groups on this machine:
 
-:::image type="content" source="images/macos-device-control-faq-policy-is-on-client-ios-groups.png" alt-text="Shows how to see all of the iOS groups on the device." lightbox="images/macos-device-control-faq-policy-is-on-client-ios-groups.png":::
+:::image type="content" source="media/macos-device-control-faq-policy-is-on-client-ios-groups.png" alt-text="Shows how to see all of the iOS groups on the device." lightbox="media/macos-device-control-faq-policy-is-on-client-ios-groups.png":::
 
 ## See also
 

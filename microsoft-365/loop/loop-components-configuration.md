@@ -2,8 +2,8 @@
 ms.date: 08/21/2023
 title: "Manage Loop components in OneDrive and SharePoint"
 ms.reviewer: dancost, tonchan
-ms.author: mikeplum
-author: MikePlumleyMSFT
+ms.author: jtremper
+author: jacktremper
 manager: dansimp
 recommendations: true
 audience: Admin
@@ -56,7 +56,7 @@ There are several IT Admin settings provided to enable the Loop component experi
 
 |Configure  |Setting Type  |Specific Policy  |Notes  |
 |---------|---------|---------|---------|
-|Loop component experiences across Microsoft 365*    |  Cloud Policy       | **Create and view Loop files in Microsoft apps that support Loop**        |   Applies to: <br/> - Outlook integration<br> -  Word for the web integration<br> - Whiteboard integration<br> Does **NOT** apply to:<br>   - Loop workspaces<br>   - Teams integration      |
+|Loop component experiences across Microsoft 365*    |  Cloud Policy       | **Create and view Loop files in Microsoft apps that support Loop**        |   Applies to: <br/> - Outlook integration<br> - OneNote integration<br> - Word for the web integration<br> - Whiteboard integration<br> Does **NOT** apply to:<br>   - Loop workspaces<br>   - Teams integration      |
 |Outlook integration of Loop experiences     |   Cloud Policy      |  **Create and view Loop files in Outlook**       |  First checks **Create and view Loop files in Microsoft apps that support Loop**; then applies **Create and view Loop files in Outlook**, if applicable.       |
 |Teams integration     |     SharePoint property    |   See [Settings management for Loop components in Teams](#settings-management-for-loop-functionality-in-teams)      |  *Teams only checks the settings in this row.       |
 
@@ -64,8 +64,9 @@ There are several IT Admin settings provided to enable the Loop component experi
 
 |Scenario  |Policies Configured  |
 |---------|---------|
-|Enable Loop components everywhere     |  **Create and view Loop files in Microsoft apps that support Loop** = Enabled<br/>[Teams-only] `Set-SPOTenant -IsLoopEnabled $true`       |
-|Enable Loop components everywhere, but Disable integration in Communication app (Outlook, Teams)     |    **Create and view Loop files in Microsoft apps that support Loop** = Enabled<br/>**Create and view Loop files in Outlook** = Disabled<br/>[Teams-only] `Set-SPOTenant -IsLoopEnabled $false`     |
+|Enable Loop components everywhere     |  **Create and view Loop files in Microsoft apps that support Loop** = Enabled<br/>[Teams-only] `Set-SPOTenant -IsLoopEnabled $true`, `Set-SPOTenant -IsCollabMeetingNotesFluidEnabled $true`       |
+|Enable Loop components everywhere, but Disable integration in Communication app (Outlook, Teams)     |    **Create and view Loop files in Microsoft apps that support Loop** = Enabled<br/>**Create and view Loop files in Outlook** = Disabled<br/>[Teams-only] `Set-SPOTenant -IsLoopEnabled $false`, `Set-SPOTenant -IsCollabMeetingNotesFluidEnabled $false`     |
+|Disable Loop components everywhere     |    **Create and view Loop files in Microsoft apps that support Loop** = Disabled<br/>[Teams-only] `Set-SPOTenant -IsLoopEnabled $false`, `Set-SPOTenant -IsCollabMeetingNotesFluidEnabled $false`     |
 
 ## User experience expectations when admin settings are configured
 
@@ -97,9 +98,17 @@ The Loop experiences (except for Microsoft Teams) check the following [Cloud Pol
 1. From the **Choose the scope** dropdown list, choose either **All users** or select the group for which you want to apply the policy. For more information, See [Microsoft 365 Groups for Cloud Policy](#microsoft-365-groups-for-cloud-policy).
 1. In **Configure Settings**, choose one of the following settings:
     - For **Create and view Loop files in Microsoft apps that support Loop**:
+        - recall:
+            - this setting applies to:
+                - Outlook integration
+                - Word for the web integration
+                - Whiteboard integration
+            - this setting does **NOT** apply to:
+                - Loop workspaces (see [Manage Loop workspaces in SharePoint Embedded](/microsoft-365/loop/loop-workspaces-configuration))
+                - Teams integration (see [Settings management for Loop components in Teams](#settings-management-for-loop-functionality-in-teams))
         - **Enabled**: Loop experience is available to the users.
         - **Disabled**: Loop experience isn't available to the users.
-        - **Not configured**: Loop experience is available to the users.
+        - **Not configured**: Loop experience is available to the users.   
     - For **Create and view Loop files in Outlook**:
         - **Enabled**: Loop experience is available to the users.
         - **Disabled**: Loop experience isn't available to the users.
@@ -107,13 +116,13 @@ The Loop experiences (except for Microsoft Teams) check the following [Cloud Pol
 1. Save the policy configuration.
 1. Reassign priority for any security group, if required. (If two or more policy configurations are applicable to the same set of users, the one with the higher priority is applied.)
 
-In case you create a new policy configuration or change the configuration for an existing policy, there will be a delay in the change being reflected as described below:
+In case you create a new policy configuration or change the configuration for an existing policy, there can be a delay in the change being reflected as described below:
 - If there were existing policy configurations prior to the change, then it will take 90 mins for the change to be reflected.
 - If there were no policy configurations prior to the change, then it will take 24 hours for the change to be reflected.
 
 ## Settings management for Loop functionality in Teams
 
-You'll need the latest version of SharePoint PowerShell module to enable or disable Loop experiences in Teams. Loop components default to **ON** for all organizations. Because Loop components are designed for collaboration, the components are always shared as editable by others, even if your organization is set to create shareable links that have **view-only** permissions as the default value for other file types. For more information, see the **Learn more** link next to the setting.
+You'll need the [latest version of SharePoint PowerShell module](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) to enable or disable Loop experiences in Teams. Loop components default to **ON** for all organizations. Because Loop components are designed for collaboration, the components are always shared as editable by others, even if your organization is set to create shareable links that have **view-only** permissions as the default value for other file types. For more information, see the **Learn more** link next to the setting.
 
 |Experience  |SharePoint organization properties  |Notes  |
 |---------|---------|---------|
@@ -136,5 +145,6 @@ To disable Loop components in Teams, run `Set-SPOTenant -IsLoopEnabled $false`. 
 
 - [Overview of Loop components in Teams](/microsoftteams/live-components-in-teams)
 - [Use Loop components in Outlook](https://support.microsoft.com/office/9b47c279-011d-4042-bd7f-8bbfca0cb136)
+- [Use Loop components in OneNote](https://support.microsoft.com/office/use-loop-components-in-onenote-ed8a43d9-f6fd-4ad6-bc9d-8841db4da459)
 - [Loop components in Whiteboard](https://support.microsoft.com/office/loop-components-in-whiteboard-c5f08f54-995e-473e-be6e-7f92555da347)
 - [Get started with Microsoft Loop - Microsoft Support](https://support.microsoft.com/office/get-started-with-microsoft-loop-9f4d8d4f-dfc6-4518-9ef6-069408c21f0c)

@@ -5,12 +5,12 @@ ms.service: defender-endpoint
 ms.subservice: ngp
 ms.localizationpriority: medium
 ms.topic: how-to
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 ms.custom: nextgen
 ms.date: 08/07/2023
 ms.reviewer: pahuijbr, yongrhee, tudobril
-manager: dansimp
+manager: deniseb
 ms.collection: 
 - m365-security
 - tier2
@@ -222,7 +222,7 @@ Most organizations have several different types of exclusions and indicators to 
 
 The following image summarizes how exclusions and indicators are handled across Defender for Endpoint and Microsoft Defender Antivirus:
 
-:::image type="content" source="images/mdav-mde-flow.png" alt-text="Screenshot that Shows the order in which exclusions and indicators are evaluated." lightbox="images/mdav-mde-flow.png":::
+:::image type="content" source="media/mdav-mde-flow.png" alt-text="Screenshot that Shows the order in which exclusions and indicators are evaluated." lightbox="media/mdav-mde-flow.png":::
 
 Here's how it works:
 
@@ -252,7 +252,7 @@ In cases where Defender for Endpoint indicators conflict, here's what to expect:
 
 The following diagram shows how [automated investigation and remediation works with indicators](manage-indicators.md#automated-investigation-and-remediation-engine):
 
-:::image type="content" source="images/air-exclusions.png" alt-text="Screenshot that Shows automated investigation and remediation and indicators." lightbox="images/air-exclusions.png":::
+:::image type="content" source="media/air-exclusions.png" alt-text="Screenshot that Shows automated investigation and remediation and indicators." lightbox="media/air-exclusions.png":::
 
 ## Other server workloads and exclusions
 

@@ -47,21 +47,21 @@ Permissions for managing day-to-day operations and responding to incidents and a
 
 |Permission name|Level|Description|
 |---|---|---|
-|Security data basic|Read|View info about incidents, alerts, investigations, advanced hunting, devices, submissions, evaluation lab, and reports.|
+|Security data basics|Read|View info about incidents, alerts, investigations, advanced hunting, devices, submissions, evaluation lab, and reports.|
 |Alerts|Manage|Manage alerts, start automated investigations, run scans, collect investigation packages, and manage device tags.|
 |Response|Manage|Take response actions, approve or dismiss pending remediation actions, and manage blocked and allowed lists for automation.|
 |Basic live response|Manage|Initiate a live response session, download files, and perform read-only actions on devices remotely.|
 |Advanced live response|Manage|Create live response sessions and perform advanced actions, including uploading files and running scripts on devices remotely.|
 |File collection|Manage|Collect or download relevant files for analysis, including executable files.|
-|Email quarantine|Manage|View and release email from quarantine.|
-|Email advanced actions|Manage|Move or Delete email to the junk email folder, deleted items or inbox, including soft and hard delete of email.|
+|Email & collaboration quarantine|Manage|View and release email from quarantine.|
+|Email & collaboration advanced actions|Manage|Move or Delete email to the junk email folder, deleted items or inbox, including soft and hard delete of email.|
 
 ### Security operations – Raw data (Email & collaboration)
 
 |Permission name|Level|Description|
 |---|---|---|---|
-|Email message headers|Read|View email and collaboration data in a hunting scenarios, including advanced hunting, threat explorer, campaigns, and email entity.|
-|Email content|Read|View and download email content and attachments.|
+|Email & collaboration metadata|Read|View email and collaboration data in a hunting scenarios, including advanced hunting, threat explorer, campaigns, and email entity.|
+|Email & collaboration content|Read|View and download email content and attachments.|
 
 ### Security posture – Posture management
 

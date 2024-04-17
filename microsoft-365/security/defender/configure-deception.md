@@ -1,11 +1,7 @@
 ---
 title: Configure the deception capability in Microsoft Defender XDR
 description: Learn how to create, edit, and delete deception rules in Microsoft Defender XDR.
-keywords:  deception, defender for endpoint, Microsoft Defender XDR, Microsoft defender for endpoint, lures, fake hosts, fake users, fake network, honeypot, honeytoken, decoy, fake host, fake user, deception technology, create deception rule, modify deception rule, edit deception rule, delete deception rule
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: 
 - NOCSH
 ms.author: diannegali

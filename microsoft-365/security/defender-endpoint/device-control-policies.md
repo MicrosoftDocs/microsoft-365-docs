@@ -1,41 +1,47 @@
 ---
-title: Device control policies in Microsoft Defender for Endpoint            
-description: Learn about Device control policies in Defender for Endpoint           
-author: denisebmsft
-ms.author: deniseb
-manager: dansimp 
-ms.date: 02/01/2024
+title: Device control policies in Microsoft Defender for Endpoint
+description: Learn about Device control policies in Defender for Endpoint
+author: siosulli
+ms.author: siosulli
+manager: deniseb
+ms.date: 04/09/2024
 ms.topic: overview
 ms.service: defender-endpoint
 ms.subservice: asr
 audience: ITPro
-ms.collection: 
+ms.collection:
 - m365-security
 - tier2
 - mde-asr
 ms.custom:
 - partner-contribution
-ms.reviewer: joshbregman
+ms.reviewer: joshbregman, ksarens
 search.appverid: MET150
-f1.keywords: NOCSH 
+f1.keywords: NOCSH
 ---
 
 # Device control policies in Microsoft Defender for Endpoint
 
-This article describes device control policies, rules, entries, groups, and advanced conditions. Essentially, device control policies define access for a set of devices. The devices that are in scope are determined by a list of included device groups and a list of excluded device groups. A policy applies if the device is in all of the included device groups and none of the excluded device groups. If no policies apply, then the default enforcement is applied. 
+**Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Business](/microsoft-365/security/defender-business)
+
+This article describes device control policies, rules, entries, groups, and advanced conditions. Essentially, device control policies define access for a set of devices. The devices that are in scope are determined by a list of included device groups and a list of excluded device groups. A policy applies if the device is in all of the included device groups and none of the excluded device groups. If no policies apply, then the default enforcement is applied.
 
 By default device control is disabled, so access to all types of devices is allowed. To learn more about device control, see [Device control in Microsoft Defender for Endpoint](device-control-overview.md).
 
 ## Controlling default behavior
 
-When device control is enabled, it's enabled for all device types by default. The default enforcement can also be changed from *Allow* to *Deny*. Your security team can also configure the types of devices that device control protects. The following table below illustrates how various combinations of settings change the access control decision. 
+When device control is enabled, it's enabled for all device types by default. The default enforcement can also be changed from *Allow* to *Deny*. Your security team can also configure the types of devices that device control protects. The following table below illustrates how various combinations of settings change the access control decision.
 
 | Is device control enabled? | Default behavior | Device types |
 |---|---|---|
 | No | Access is allowed | - CD/DVD drives <br/>- Printers <br/>- Removable media devices <br/>- Windows portable devices |
 | Yes | (Not specified) <br/>Access is allowed | - CD/DVD drives <br/>- Printers <br/>- Removable media devices <br/>- Windows portable devices |
 | Yes | Deny | - CD/DVD drives <br/>- Printers <br/>- Removable media devices <br/>- Windows portable devices |
-| Yes | Deny removable media devices and printers | - Printers and removable media devices (blocked) <br/>- CD/DVD drives and Windows portable devices (allowed) | 
+| Yes | Deny removable media devices and printers | - Printers and removable media devices (blocked) <br/>- CD/DVD drives and Windows portable devices (allowed) |
 
 When device types are configured, device control in Defender for Endpoint ignores requests to other device families.
 
@@ -60,9 +66,36 @@ Rules and groups are identified by Global Unique ID (GUIDs). If device control p
 
 For schema details, see [JSON schema for Mac](https://github.com/microsoft/mdatp-devicecontrol/blob/main/macOS/policy/device_control_policy_schema.json).
 
+## Users
+
+Device control policies can be applied to users and/or user groups.
+
+> [!NOTE]
+> In the articles related to device control, groups of users are referred to as <i>user groups</i>.  The term <i>groups</i> refer to [groups](#groups) defined in the device control policy.
+
+ Using Intune, on either Mac and Windows, device control policies can be targeted to user groups defined in Entra Id.
+
+On Windows, a user or user group can be a condition on an [entry](#entries) in a policy.
+
+Entries with user or user groups can reference objects from either Entra Id or a local Active Directory.
+
+### Best practices for using device control with users and user groups
+
+- To create a rule for an individual user on Windows, create an entry with a  `Sid` condition foreach user in a [rule](#rules)
+
+- To create a rule for a user group on Windows and Intune, **either** create an entry with a `Sid` condition for each user group in a [rule] and target the policy to a machine group in Intune **or** create a rule without conditions and target the policy with Intune to the user group.
+
+- On Mac, use Intune and target the policy to a user group in Entra Id.
+
+> [!WARNING]
+> Do not use both user/user group conditions in rules and user group targeting in Intune.
+
+> [!NOTE]
+> If network connectivity is an issue, use Intune user group targeting **or** a local Active Directory groups.  User/user group conditions that reference Entra Id should **only** be used in environments that have a reliable connection to Entra Id.
+
 ## Rules
 
-A rule defines the list of included groups and a list of excluded groups. For the rule to apply, the device must be in all of the included groups and none of the excluded groups.  If the device matches the rule, then the entries for that rule are evaluated.  An entry defines the action and notification options applied, if the request matches the conditions. If no rules apply or no entries match the request then the default enforcement is applied. 
+A rule defines the list of included groups and a list of excluded groups. For the rule to apply, the device must be in all of the included groups and none of the excluded groups.  If the device matches the rule, then the entries for that rule are evaluated.  An entry defines the action and notification options applied, if the request matches the conditions. If no rules apply or no entries match the request then the default enforcement is applied.
 
 For example, to allow write access for some USB devices, and read access for all other USB devices, use the following policies, groups, and entries with default enforcement set to deny.
 
@@ -88,7 +121,7 @@ The following image depicts configuration settings for a device control policy i
 
 In the screenshot, the Included ID and Excluded ID are the references to included and excluded reusable settings groups. A policy can have multiple rules.
 
-The ordering of the rules isn't honored by Intune. The rules can be evaluated in any order, so make sure to explicitly exclude groups of devices that aren't in scope for the rule.
+Intune doesn't honor the ordering of the rules. The rules can be evaluated in any order, so make sure to explicitly exclude groups of devices that aren't in scope for the rule.
 
 ### [**XML (Windows)**](#tab/XML)
 
@@ -105,10 +138,10 @@ The following code snippet shows the syntax for a device control policy rule in 
       <GroupId>{3f5253e4-0e73-4587-bb9e-bb29a2171695}</GroupId>
   <ExcludedIdList>
   <Entry Id="{e3837e60-5e56-43ce-8095-043ccd793eac}">
-   …
+   ...
   </Entry>
   <Entry Id="{34413b98-8198-4e16-accf-c95c3c775ba3}">
-    …
+    ...
   </Entry>
 </PolicyRule>
 
@@ -120,9 +153,9 @@ The following table provides more context for the XML code snippet:
 |---------|---------|---------|
 | `PolicyRule Id`  | GUID, a unique ID, represents the policy and is used in reporting and troubleshooting. | You can generate the ID through [PowerShell](/powershell/module/microsoft.powershell.utility/new-guid). |
 | `Name` | String, the name of the policy and displays on the toast based on the policy setting. | |
-| `IncludedIdList` | The group(s) that the policy applies to. If multiple groups are added, the media must be a member of each group in the list to be included. | The Group ID/GUID must be used at this instance. <br/><br/>The following example shows the usage of GroupID: `<IncludedIdList> <GroupId> {EAA4CCE5-F6C9-4760-8BAD-FDCC76A2ACA1}</GroupId> </IncludedIdList>` |
-| `ExcludedIDList` | The group(s) that the policy doesn't apply to. If multiple groups are added, the media must be a member of a group in the list to be excluded. | The Group ID/GUID must be used at this instance. |
-| `Entry` | One PolicyRule can have multiple entries; each entry with a unique GUID tells device control one restriction. | See Entry properties table below to get details. |
+| `IncludedIdList` | The groups that the policy applies to. If multiple groups are added, the media must be a member of each group in the list to be included. | The Group ID/GUID must be used at this instance. <br/><br/>The following example shows the usage of GroupID: `<IncludedIdList> <GroupId> {EAA4CCE5-F6C9-4760-8BAD-FDCC76A2ACA1}</GroupId> </IncludedIdList>` |
+| `ExcludedIDList` | The groups that the policy doesn't apply to. If multiple groups are added, the media must be a member of a group in the list to be excluded. | The Group ID/GUID must be used at this instance. |
+| `Entry` | One PolicyRule can have multiple entries; each entry with a unique GUID tells device control one restriction. | See  Entry properties table below to get details. |
 
 ### [**JSON (Mac)**](#tab/JSON)
 
@@ -139,7 +172,7 @@ The following code snippet shows the syntax for a device control policy rule in 
          "3f5253e4-0e73-4587-bb9e-bb29a2171695"
       ]
       "entries": [
-        …
+        ...
       ]
     }
 
@@ -150,28 +183,38 @@ The following table provides more context for the XML code snippet:
 | Property name | Description | Options |
 |---|---|---|
 | `id` | GUID, a unique ID, represents the rule and is used in the policy. | `New-Guid (Microsoft.PowerShell.Utility) - PowerShell<br/>uuidgen` |
-| `name` | String, the name of the policy and will display on the toast based on the policy setting. |  |
-| `includeGroups` | The group(s) that the policy is applied to. If multiple groups are specified, the policy applies to any media in all those groups. If not specified, the rule applies to all devices. | The ID value inside the group must be used in this instance. If multiple groups are in the includeGroups, it's `AND`. <br/> `"includeGroups": ["3f082cd3-f701-4c21-9a6a-ed115c28e217"]` |
-| `excludeGroups` | The group(s) that the policy doesn't apply to. | The `id` value inside the group must be used in this instance. If multiple groups are in the excludeGroups, it's `OR`. |
+| `name` | String, name of the policy and displays on the toast based on the policy setting. |  |
+| `includeGroups` | The groups that the policy is applied to. If multiple groups are specified, the policy applies to any media in all those groups. If not specified, the rule applies to all devices. | The ID value inside the group must be used in this instance. If multiple groups are in the includeGroups, it's `AND`. <br/> `"includeGroups": ["3f082cd3-f701-4c21-9a6a-ed115c28e217"]` |
+| `excludeGroups` | The group that the policy doesn't apply to. | The `id` value inside the group must be used in this instance. If multiple groups are in the excludeGroups, it's `OR`. |
 | `entries` | One rule can have multiple entries; each entry with a unique GUID tells Device Control one restriction. | See entry properties table later in this article to get the details. |
 
 ---
 
 ## Entries
 
-Device control policies define access (called an entry) for a set of devices. Entries define the action and notification options for devices that match the policy and the conditions defined in the entry.  
+Device control policies define access (called an entry) for a set of devices. Entries define the action and notification options for devices that match the policy and the conditions defined in the entry.
 
 | Entry setting | Options |
 |---|---|
+| AccessMask | Applies the action only if the access operations match the access mask -  The access mask is the bit-wise OR of the access values:<br><br>  1 - Device Read<br>2 - Device Write<br>4 - Device Execute<br>8 - File Read<br>16 - File Write<br>32 - File Execute<br>64 - Print<br><br>For example:<br>Device Read, Write, and Execute = 7 (1+2+4)<br>Device Read, Disk Read = 9 (1+8)<br>
 | Action | Allow <br/> Deny <br/> AuditAllow <br/> AuditDeny |
 | Notification | None (default) <br/> An event is generated <br/> The user receives notification <br/> File evidence is captured |
+
+> [!WARNING]
+> The [February 2024](microsoft-defender-antivirus-updates.md#february-2024-engine-11240209--platform-418240207) release causes inconsistent results for device control customers who are using removable media policies with disk/device-level access only (masks that are less than or equal to 7). Enforcement might not work as expected. To mitigate this issue, rolling back to the previous version is recommended.
 
 If device control is configured, and a user attempts to use a device that's not allowed, the user gets a notification that contains the name of the device control policy and the name of the device. The notification appears once every hour after initial access is denied.
 
 An entry supports the following optional conditions:
 
-- Access Condition: Applies the action only to the access defined in the access mask
-- User Condition: Applies the action only to the user/group identified by the SID
+- User/User Group Condition: Applies the action only to the user/user group identified by the SID
+
+> [!NOTE]
+> For user groups and users that are stored in Microsoft Entra Id, use the object id in the condition.  For user groups and users that are stored localy, use the Security Identifier (SID)
+
+> [!NOTE]
+> On Windows, The SID of the user who's signed in can be retrieved by running the PowerShell command `whoami /user`.
+
 - Machine Condition:  Applies the action only to the device/group identified by the SID
 - Parameters Condition:  Applies the action only if the parameters match (See Advanced Conditions)
 
@@ -184,10 +227,6 @@ Entries can be further scoped to specific users and devices.  For example, allow
 
 All of the conditions in the entry must be true for the action to be applied.
 
-### Determine the Security ID of a User, Group, or Device
-
-Entries can include user, group, or device restrictions based on Security ID (SID).  The SID of the user who's signed in can be retrieved by running the PowerShell command `whoami /user`.
-
 You can configure entries using Intune, an XML file in Windows, or a JSON file on Mac. Select each tab for more details.
 
 ### [**Intune**](#tab/Removable)
@@ -197,7 +236,7 @@ In Intune, the **Access mask** field has options, such as:
 - **Read** (Disk Level Read = 1)
 - **Write** (Disk Level Write = 2)
 - **Execute** (Disk Level Execute = 4)
-- **Print** (Print = 64). 
+- **Print** (Print = 64).
 
 Not all features are shown in the Intune user interface. For more information, see [Deploy and manage device control with Intune](device-control-deploy-manage-intune.md).
 
@@ -226,13 +265,13 @@ The following table provides more context for the XML code snippet:
 | `Option` | If type is `AuditAllowed` | - `0`: nothing<br/>- `1`: nothing <br/>- `2`: send event |
 | `Option` | If type is `AuditDenied` | - `0`: nothing <br/>- `1`: show notification <br/>- `2`: send event <br/>- `3`: show notification and send event |
 | `AccessMask` | Defines the access | See the following section [Understand mask access](#understand-mask-access-windows) |
-| `Sid` | Local user SID or user SID group, or the SID of the Microsoft Entra object or the Object ID. It defines whether to apply this policy over a specific user or user group. One entry can have a maximum of one SID and an entry without any SID means to apply the policy over the device. | SID | 
-| `ComputerSid` | Local computer SID or computer SID group, or the SID of the Microsoft Entra object or the Object Id. It defines whether to apply this policy over a specific device or device group. One entry can have a maximum of one ComputerSID and an entry without any ComputerSID means to apply the policy over the device. If you want to apply an Entry to a specific user and specific device, add both SID and ComputerSID into the same Entry. | SID | 
+| `Sid` | Local user SID or user SID group, or the SID of the Microsoft Entra object or the Object ID. It defines whether to apply this policy over a specific user or user group. One entry can have a maximum of one SID and an entry without any SID means to apply the policy over the device. | SID |
+| `ComputerSid` | Local computer SID or computer SID group, or the SID of the Microsoft Entra object or the Object Id. It defines whether to apply this policy over a specific device or device group. One entry can have a maximum of one ComputerSID and an entry without any ComputerSID means to apply the policy over the device. If you want to apply an Entry to a specific user and specific device, add both SID and ComputerSID into the same Entry. | SID |
 | `Parameters` | Condition for an entry, such as network condition. | Can add groups (non-device types) or even put parameters into parameters. For more information, see the [advanced conditions](#advanced-conditions) section (in this article).  |
 
 #### Understand mask access (Windows)
 
-Device control applies an access mask to determine if the request matches the entry.  The following actions are available on `CdRomDevices`, `RemovableMediaDevices`, and `WpdDevices`: 
+Device control applies an access mask to determine if the request matches the entry.  The following actions are available on `CdRomDevices`, `RemovableMediaDevices`, and `WpdDevices`:
 
 | Access | Mask |
 |--|--|
@@ -248,11 +287,10 @@ The following actions are available on PrinterDevices:
 - Access: Print
 - Mask: 64
 
-You can have multiple access settings by performing a binary OR operation. Here's an example: 
+You can have multiple access settings by performing a binary OR operation. Here's an example:
 
 - The AccessMask for Read and Write and Execute is 7
 - The AccessMask for Read and Write is 3
-
 
 ### [**JSON (Mac)**](#tab/JSON)
 
@@ -278,17 +316,17 @@ The following table provides more context for the JSON code snippet:
 | Property name | Description | Options |
 |---|---|---|
 | `id` | GUID, a unique ID, represents the entry and is used in reporting and troubleshooting. | You can generate the ID by using PowerShell. |
-| `enforcement $type`  | Defines the action for the removable storage groups in `includedGroups`. <br/>- `allow` <br/>- `deny` <br/>- `auditAllow`: Defines notification and event when access is allowed <br/>- `AuditDeny`: Defines notification and event when access is denied; has to work together with the Deny entry. <br/><br/>When there are conflict types for the same media, the system applies the first one in the policy. An example of a conflict type is Allow and Deny. | The `enforcement $type` attribute can be one of the following values:<br/>- `allow`<br/>- `deny`<br/>- `auditAllow`<br/>- `auditDeny` | 
+| `enforcement $type`  | Defines the action for the removable storage groups in `includedGroups`. <br/>- `allow` <br/>- `deny` <br/>- `auditAllow`: Defines notification and event when access is allowed <br/>- `AuditDeny`: Defines notification and event when access is denied; has to work together with the Deny entry. <br/><br/>When there are conflict types for the same media, the system applies the first one in the policy. An example of a conflict type is Allow and Deny. | The `enforcement $type` attribute can be one of the following values:<br/>- `allow`<br/>- `deny`<br/>- `auditAllow`<br/>- `auditDeny` |
 | `enforcement $options` | If enforcement $type is allow | `disable_audit_allow`: If Allow occurs and the auditAllow is setting configured, the system doesn't send events. |
 | `enforcement $options` | If enforcement $type is deny | `disable_audit_deny`: If Block happens and the auditDeny is setting configured, the system doesn't show notifications or send events. |
 | `enforcement $options` | If enforcement $type is auditAllow | `send_event`: Sends telemetry |
 | `enforcement $options` | If enforcement $type is auditDeny | <br/>- `send_event`: Sends telemetry <br/>- `show_notification`: Displays block message to user |
-| `$type` | The type of entry.  The type determines the operations that can be protected by device control | The `$type` attributes can be any of the following values:<br/>- `removableMedia`<br/>- `appleDevice`<br/>- `PortableDevice`<br/>- `bluetoothDevice` | 
-| `access` | A list of operations that this entry grants | See the next section, "Understand access on Mac" | 
+| `$type` | The type of entry.  The type determines the operations that can be protected by device control | The `$type` attributes can be any of the following values:<br/>- `removableMedia`<br/>- `appleDevice`<br/>- `PortableDevice`<br/>- `bluetoothDevice` |
+| `access` | A list of operations that this entry grants | See the next section, "Understand access on Mac" |
 
 #### Understand access (Mac)
 
-There are two kinds of access for an entry:  generic and device type specific. 
+There are two kinds of access for an entry:  generic and device type specific.
 
 - Generic access options include `generic_read`, `generic_write`, and `generic_execute`.
 - Device type specific access provides a finer granularity of control, because the device type specific access values are included in the generic access types.
@@ -297,32 +335,35 @@ The following table describes the device type specific access and how they map t
 
 | Device Type ($type) | Device Type Specific Access | Description | Read | Write | Execute |
 |---|---|---|---|---|---|
-| `appleDevice` | `backup_device` |  | X |  |  |      
-| `appleDevice` | `update_device` |  |  | X |   |   
-| `appleDevice` | `download_photos_from_device` | download photo(s) from the specific iOS device to local device | X  |  |  |         
-| `appleDevice` | `download_files_from_device` | download file(s) from the specific iOS device to local device | X  |  |  |        
+| `appleDevice` | `backup_device` |  | X |  |  |
+| `appleDevice` | `update_device` |  |  | X |   |
+| `appleDevice` | `download_photos_from_device` | download photo(s) from the specific iOS device to local device | X  |  |  |
+| `appleDevice` | `download_files_from_device` | download file(s) from the specific iOS device to local device | X  |  |  |
 | `appleDevice` | `sync_content_to_device` | sync content from local device to specific iOS device |  | X |  |
-| `portableDevice` | `download_files_from_device` | X  |  |  |        
-| `portableDevice` | `send_files_to_device`  |  |  | X |  |     
-| `portableDevice` | `download_photos_from_device` |  | X |  |  |        
+| `portableDevice` | `download_files_from_device` | X  |  |  |
+| `portableDevice` | `send_files_to_device`  |  |  | X |  |
+| `portableDevice` | `download_photos_from_device` |  | X |  |  |
 | `portableDevice` | `debug` | ADB tool control |  |  | X |
-| `removableMedia` | `read` |  | X |  |  |        
-| `removableMedia` | `write` |  |  | X  |  |    
+| `removableMedia` | `read` |  | X |  |  |
+| `removableMedia` | `write` |  |  | X  |  |
 | `removableMedia` | `execute` |  |  |  | X |
 | `bluetoothDevice` | `download_files_from_device` |  | X  |  |  |
-| `bluetoothDevice` | `send_files_to_device` |  |  | X |  |    
+| `bluetoothDevice` | `send_files_to_device` |  |  | X |  |
 
 ---
 
 ## Groups
 
-Groups define criteria for filtering objects by their properties. The object is assigned to the group if its properties match the properties defined for the group.   
+Groups define criteria for filtering objects by their properties. The object is assigned to the group if its properties match the properties defined for the group.
+
+> [!NOTE]
+> Groups in this section **do not** refer to [user groups](#users).
 
 For example:
 
 - Allowed USBs are all the devices that match any of these manufacturers
 - Lost USBs are all the devices that match any of these serial numbers
-- Allowed printers are all the devices that match any of these VID/PID 
+- Allowed printers are all the devices that match any of these VID/PID
 
 The properties can be matched in four ways:  `MatchAll`, `MatchAny`, `MatchExcludeAll`, and `MatchExcludeAny`
 
@@ -335,7 +376,7 @@ Groups are used two ways:  to select devices for inclusion/exclusion in rules, a
 
 | Type | Description | O/S | Include/Exclude Rules | Advanced conditions |
 |---|---|---|---|---|
-| Device (default) | Filter devices and printers | Windows/Mac | X |  |    
+| Device (default) | Filter devices and printers | Windows/Mac | X |  |
 | Network | Filter network conditions | Windows |  | X |
 | VPN Connection | Filter VPN conditions | Windows |  | X |
 | File | Filter file properties | Windows |  | X |
@@ -358,14 +399,13 @@ The devices that are in scope for the policy determined by a list of included gr
 | `VID` | Vendor ID is the four-digit vendor code that the USB committee assigns to the vendor. | Y | Y | N |
 | `APFS Encrypted` | If the device is APFS encrypted | N | Y | N |
 
-
 ### Using Windows Device Manager to determine device properties
 
-For Windows devices, you can use Device Manager to understand the properties of devices. 
+For Windows devices, you can use Device Manager to understand the properties of devices.
 
 1. Open Device Manager, locate the device, right-click on **Properties**, and then select the **Details** tab.
 
-2. In the Property list, select **Device instance path**. 
+2. In the Property list, select **Device instance path**.
 
    The value shown for device instance path is the `InstancePathId`, but it also contains other properties:
 
@@ -381,7 +421,6 @@ For Windows devices, you can use Device Manager to understand the properties of 
    | Parent | `VID_PID` |
    | DeviceInstancePath | `InstancePathId` |
 
-
 ### Using reports and advanced hunting to determine properties of devices
 
 Device properties have slightly different labels in advanced hunting. The table below maps the labels in the portal to the `propertyId` in a device control policy.
@@ -393,7 +432,6 @@ Device properties have slightly different labels in advanced hunting. The table 
 | DeviceId | `InstancePathId` |
 | Serial Number | `SerialNumberId` |
 
-
 > [!NOTE]
 > Make sure that the object selected has the correct Media Class for the policy. In general, for removable storage, use `Class Name == USB`.
 
@@ -401,13 +439,16 @@ Device properties have slightly different labels in advanced hunting. The table 
 
 You can configure groups in Intune, by using an XML file for Windows, or by using a JSON file on Mac. Select each tab for more details.
 
+> [!NOTE]
+> The `Group Id` in XML and `id` in JSON is used to identify the group within device control.  Its not a reference to any other such as a [user group](#users) in Entra Id.
+
 ### [**Intune**](#tab/Removable)
 
 Reusable settings in Intune map to device groups. You can configure reusable settings in Intune.
 
 :::image type="content" source="media/device-control-groups-reusablesettings.png" alt-text="Screenshot of configuring reusable settings in Intune." lightbox="media/device-control-groups-reusablesettings.png":::
 
-There are two types of groups: Printer Device and Removable Storage. The following table lists the properties for these groups. 
+There are two types of groups: Printer Device and Removable Storage. The following table lists the properties for these groups.
 
 | Group type | Properties |
 |---|---|
@@ -423,7 +464,7 @@ The following XML snippet shows the syntax for matching groups:
 <Group Id="{3f5253e4-0e73-4587-bb9e-bb29a2171694}">
   <MatchType>MatchAny</MatchType>
   <DescriptorIdList>
-   …
+   ...
   </DescriptorIdList>
 </Group>
 
@@ -438,7 +479,6 @@ The following table describes properties for groups.
 | `MatchType` | The matching algorithm used | - `MatchAny`<br/>- `MatchAll`<br/>- `MatchExcludeAll`<br/>- `MatchExcludeAny` |
 | `DescriptionIdList` | The list of properties evaluated for inclusion in the group | See [DescriptionIdList properties](#descriptionidlist-properties) (section after this table)  |
 
-
 #### DescriptionIdList properties
 
 The properties described in the following table can be included in the `DescriptionIdList`:
@@ -449,7 +489,7 @@ The properties described in the following table can be included in the `Descript
 | `InstancePathId` | String that uniquely identifies the device in the system, for example, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0`. It corresponds to the device instance path in Device Manager in Windows. The number at the end (for example `&0`) represents the available slot and might change from device to device. For best results, use a wildcard at the end. For example, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`. |
 | `DeviceId` | To transform Device instance path to Device ID format, use Standard USB Identifiers, such as this example: `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07` |
 | `HardwareId` | String that identifies the device in the system, like `USBSTOR\DiskGeneric_Flash_Disk___8.07`. It corresponds to the hardware ID in Device Manager in Windows. Keep in mind that `HardwareId` isn't unique; different devices might share the same value. |
-| `FriendlyNameId` | String attached to the device, like `Generic Flash Disk USB Device`. It's corresponds to the friendly name in Device Manager in Windows.  |
+| `FriendlyNameId` | String attached to the device, like `Generic Flash Disk USB Device`. It corresponds to the friendly name in Device Manager in Windows.  |
 | `BusId` | For example, `USB`, `SCSI` |
 | `SerialNumberId` | You can find `SerialNumberId` from Device instance path in Device Manager in Windows. For example, `03003324080520232521` is `SerialNumberId` in `USBSTOR\DISK&VEN__USB&PROD__SANDISK_3.2GEN1&REV_1.00\03003324080520232521&0` |
 | `VID_PID` | - Vendor ID is the four-digit vendor code that the USB committee assigns to the vendor. <br/>- Product ID is the four-digit product code that the vendor assigns to the device. It supports wildcards.<br/>- To transform Device instance path to Vendor ID and Product ID format, use Standard USB Identifiers. Here are some examples: <br/>`0751_55E0`: match this exact VID/PID pair <br/>`_55E0`: match any media with `PID=55E0` <br/>`0751_`: match any media with `VID=0751` |
@@ -472,7 +512,7 @@ The following JSON snippet shows the syntax for defining groups on Mac:
       "query": {
         "$type": "or",
         "clauses": [
-    …
+    ...
         ]
       }
     }
@@ -625,13 +665,13 @@ Then the group is then referenced as parameters in an entry, as illustrated in t
           <Options>0</Options>
           <AccessMask>64</AccessMask>
           <Parameters MatchType="MatchAny">
+            <VPNConnection>
                     <GroupId>{d633d17d-d1d1-4c73-aa27-c545c343b6d7}</GroupId>
             </VPNConnection>
         </Parameters>
        </Entry>
 
 ```
-
 
 ### File Conditions
 
@@ -644,7 +684,7 @@ The following table describes file group properties:
 The following table illustrates how properties are added to the `DescriptorIdList` of a file group:
 
 ```xml
-  
+
 <Group Id="{e5f619a7-5c58-4927-90cd-75da2348a30f}" Type="File" MatchType="MatchAny">
     <DescriptorIdList>
         <PathId>*.exe</PathId>
@@ -670,7 +710,6 @@ The group is then referenced as parameters in an entry, as illustrated in the fo
    </Entry>
 
 ```
-
 
 ### Print Job Conditions
 
@@ -714,7 +753,7 @@ The group is then referenced as parameters in an entry, as illustrated in the fo
 
 ## File evidence
 
-With device control, you can store evidence of files that were copied to removablee devices or were printed. When file evidence is enabled, a `RemovableStorageFileEvent` is created. The behavior of file evidence is controlled by options on the Allow action, as described in the following table:
+With device control, you can store evidence of files that were copied to removable devices or were printed. When file evidence is enabled, a `RemovableStorageFileEvent` is created. The behavior of file evidence is controlled by options on the Allow action, as described in the following table:
 
 | Option | Description |
 |---|---|
@@ -722,7 +761,6 @@ With device control, you can store evidence of files that were copied to removab
 | `16` | Create a `RemovableStorageFileEvent` without `FileEvidenceLocation` |
 
 The `FileEvidenceLocation` field of has the location of the evidence file, if one is created. The evidence file has a name which ends in `.dup`, and its location is controlled by the `DataDuplicationFolder` setting.
-
 
 ## Next steps
 

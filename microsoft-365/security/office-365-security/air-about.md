@@ -1,11 +1,10 @@
 ---
 title: Automated investigation and response in Microsoft Defender for Office 365
-keywords: AIR, autoIR, Microsoft Defender for Endpoint, automated, investigation, response, remediation, threats, advanced, threat, protection
 f1.keywords:
 - NOCSH
-author: dansimp
-ms.author: dansimp
-manager: dansimp
+author: chrisda
+ms.author: chrisda
+manager: deniseb
 audience: ITPro
 ms.topic: conceptual
 ms.date: 06/09/2023
@@ -20,10 +19,9 @@ description: Get started using automated investigation and response capabilities
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.subservice: mdo
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison" target="_blank">Microsoft Defender for Office 365 plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
@@ -31,7 +29,7 @@ appliesto:
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-[Microsoft Defender for Office 365](defender-for-office-365.md) includes powerful automated investigation and response (AIR) capabilities that can save your security operations team time and effort. As alerts are triggered, it's up to your security operations team to review, prioritize, and respond to those alerts. Keeping up with the volume of incoming alerts can be overwhelming. Automating some of those tasks can help.
+[Microsoft Defender for Office 365](mdo-about.md) includes powerful automated investigation and response (AIR) capabilities that can save your security operations team time and effort. As alerts are triggered, it's up to your security operations team to review, prioritize, and respond to those alerts. Keeping up with the volume of incoming alerts can be overwhelming. Automating some of those tasks can help.
 
 AIR enables your security operations team to operate more efficiently and effectively. AIR capabilities include automated investigation processes in response to well-known threats that exist today. Appropriate remediation actions await approval, enabling your security operations team to respond effectively to detected threats. With AIR, your security operations team can focus on higher-priority tasks without losing sight of important alerts that are triggered.
 
@@ -49,7 +47,7 @@ An alert is triggered, and a security playbook starts an automated investigation
 
 1. An automated investigation is initiated in one of the following ways:
    - Either [an alert is triggered](#which-alert-policies-trigger-automated-investigations) by something suspicious in email (such as a message, attachment, URL, or compromised user account). An incident is created, and an automated investigation begins; or
-   - A security analyst [starts an automated investigation](air-about-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer) while using [Explorer](threat-explorer-about.md).
+   - A security analyst [starts an automated investigation](air-about-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer) while using [Explorer](threat-explorer-real-time-detections-about.md).
 
 2. While an automated investigation runs, it gathers data about the email in question and _entities_ related to that email (for example, files, URLs, and recipients). The investigation's scope can increase as new and related alerts are triggered.
 
@@ -75,7 +73,7 @@ During and after each automated investigation, your security operations team can
 
 ## How to get AIR
 
-AIR capabilities are included in [Microsoft Defender for Office 365](defender-for-office-365.md#whats-the-difference-between-microsoft-defender-for-office-365-plan-1-and-plan-2), as long as [audit logging is turned on](/purview/audit-log-enable-disable) (it's on by default).
+AIR capabilities are included in [Microsoft Defender for Office 365 Plan 2](mdo-about.md#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet), as long as [audit logging is turned on](/purview/audit-log-enable-disable) (it's on by default).
 
 In addition, make sure to review your organization's [alert policies](alert-policies-defender-portal.md), especially the [default policies in the Threat management category](/purview/alert-policies#default-alert-policies).
 
@@ -101,16 +99,28 @@ Microsoft 365 provides many built-in alert policies that help identify Exchange 
 
 ## Required permissions to use AIR capabilities
 
-Permissions are granted through certain roles, such as those that are described in the following table:
+You need to be assigned permissions to use AIR. You have the following options:
 
-|Task|Role(s) required|
-|---|---|
-|Set up AIR features|One of the following roles: <ul><li>Global Administrator</li><li>Security Administrator</li></ul> <br/> These roles can be assigned in [Microsoft Entra ID](/entra/identity/role-based-access-control/permissions-reference) or in the [Microsoft Defender portal](mdo-portal-permissions.md).|
-|Start an automated investigation <p> --- or --- <p> Approve or reject recommended actions|One of the following roles, assigned in [Microsoft Entra ID](/entra/identity/role-based-access-control/permissions-reference) or in the [Microsoft Defender portal](mdo-portal-permissions.md): <ul><li>Global Administrator</li><li>Security Administrator</li><li>Security Operator</li><li>Global Reader</li><li>Security Reader <br> --- and --- </li><li>Search and Purge (this role is assigned only in the [Microsoft Defender portal](mdo-portal-permissions.md). You might need to create a new **Email & collaboration** role group there and add the Search and Purge role to that new role group.</li></ul>|
+- [Microsoft Defender XDR Unified role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac) (Affects the Defender portal only, not PowerShell):
+  - _Start an automated investigation_ or _Approve or reject recommended actions_: **Security Operator/Email advanced remediation actions (manage)**.
+- [Email & collaboration permissions in the Microsoft Defender portal](mdo-portal-permissions.md):
+  - _Set up AIR features_: Membership in the **Organization Management** or **Security Administrator** role groups.
+  - _Start an automated investigation_ or _Approve or reject recommended actions_:
+    - Membership in the **Organization Management**, **Security Administrator**, **Security Operator**, **Security Reader**, or **Global Reader** role groups.
+      and
+    - Membership in a role group with the **Search and Purge** role assigned. By default, this role is assigned to the **Data Investigator** and **Organization Management** role groups. Or, you can [create a custom role group](mdo-portal-permissions.md#create-email--collaboration-role-groups-in-the-microsoft-defender-portal) to assign the **Search and Purge** role.
+- [Microsoft Entra permissions](/entra/identity/role-based-access-control/manage-roles-portal):
+  - _Set up AIR features_ Membership in the **Global Administrator** or **Security Administrator** roles.
+  - _Start an automated investigation_ or _Approve or reject recommended actions_:
+    - Membership in the **Global Administrator**, **Security Administrator**, **Security Operator**, **Security Reader**, or **Global Reader** roles.
+      and
+    - Membership in an Email & collaboration role group with the **Search and Purge** role assigned. By default, this role is assigned to the **Data Investigator** and **Organization Management** role groups. Or, you can [create a custom Email & collaboration role group](mdo-portal-permissions.md#create-email--collaboration-role-groups-in-the-microsoft-defender-portal) to assign the **Search and Purge** role.
+
+  Microsoft Entra permissions give users the required permissions _and_ permissions for other features in Microsoft 365.
 
 ## Required licenses
 
-[Microsoft Defender for Office 365 Plan 2](defender-for-office-365.md#whats-the-difference-between-microsoft-defender-for-office-365-plan-1-and-plan-2) licenses should be assigned to:
+[Microsoft Defender for Office 365 Plan 2](mdo-about.md#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet) licenses should be assigned to:
 
 - Security administrators (including global administrators)
 - Your organization's security operations team (including security readers and those with the **Search and Purge** role)

@@ -3,11 +3,11 @@ title: Configure your network environment to ensure connectivity with Defender f
 description: Learn how to configure your network environment to connect with the Defender for Endpoint service
 search.appverid: met150
 ms.service: defender-endpoint
-ms.author: deniseb
-author: denisebmsft
+ms.author: siosulli
+author: siosulli
 ms.reviewer: mkaminska
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -47,7 +47,7 @@ The following downloadable spreadsheet lists the services and their associated U
 > - To use the new onboarding method, devices must meet specific prerequisites and use a new onboarding package. For more information, see [prerequisites](configure-device-connectivity.md#prerequisites). You can migrate previously onboarded devices. See, [migrating devices to streamlined connectivity](migrate-devices-streamlined.md
 ).<br>
 > - Certain services are not included in this consolidation. You must verify that you maintain connectivity with the required services. For details on services **not** included in the consolidation, see the [streamlined URL sheet](https://go.microsoft.com/fwlink/?linkid=2248278) or [onboarding devices using streamlined method](configure-device-connectivity.md).
-> - Devices running the MMA agent are not supported under streamlined solution and must be onboarded using the down-level method. For a list of required URLs, see the MMA tab in the [streamlined URL list](https://go.microsoft.com/fwlink/?linkid=2248278). Devices running legacy Windows version 1607, 1703, 1709, or 1803 can onboard using the new onboarding package but still require a longer list of URLs. For more information, see the preceeding table.
+> - Devices running the MMA agent are not supported under streamlined solution and must be onboarded using the down-level method. For a list of required URLs, see the MMA tab in the [streamlined URL list](https://go.microsoft.com/fwlink/?linkid=2248278). Devices running legacy Windows version 1607, 1703, 1709, or 1803 can onboard using the new onboarding package but still require a longer list of URLs. For more information, see the preceding table.
 
 <br>
 

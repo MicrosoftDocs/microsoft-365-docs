@@ -1,15 +1,11 @@
 ---
 title: Submit or Update Indicator API
 description: Learn how to use the Submit or Update Indicator API to submit or update a new Indicator entity in Microsoft Defender for Endpoint.
-keywords: apis, graph api, supported apis, submit, ti, indicator, update
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -42,22 +38,22 @@ ms.date: 12/18/2020
 
 Submits or Updates new [Indicator](ti-indicator.md) entity.
 
-CIDR notation for IPs is not supported.
+CIDR notation for IPs isn't supported.
 
 ## Limitations
 
-1. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
-2. There is a limit of 15,000 active indicators per tenant.
+1. Rate limitations for this API are 100 calls per minute and 1,500 calls per hour.
+2. There's a limit of 15,000 active indicators per tenant.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Get started](apis-intro.md)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Get started](apis-intro.md).
 
-Permission type|Permission|Permission display name
-:---|:---|:---
-Application|Ti.ReadWrite|'Read and write Indicators'
-Application|Ti.ReadWrite.All|'Read and write All Indicators'
-Delegated (work or school account)|Ti.ReadWrite|'Read and write Indicators'
+|Permission type|Permission|Permission display name|
+|:---|:---|:---|
+|Application|Ti.ReadWrite|`Read and write Indicators`|
+|Application|Ti.ReadWrite.All|`Read and write All Indicators`|
+|Delegated (work or school account)|Ti.ReadWrite|`Read and write Indicators`|
 
 ## HTTP request
 
@@ -79,17 +75,17 @@ In the request body, supply a JSON object with the following parameters:
 Parameter|Type|Description
 :---|:---|:---
 indicatorValue|String|Identity of the [Indicator](ti-indicator.md) entity. **Required**
-indicatorType|Enum|Type of the indicator. Possible values are: "FileSha1", "FileMd5", "CertificateThumbprint", "FileSha256", "IpAddress", "DomainName" and "Url". **Required**
-action|Enum|The action that will be taken if the indicator will be discovered in the organization. Possible values are: "Alert", "Warn", "Block", "Audit, "BlockAndRemediate", "AlertAndBlock", and "Allowed". **Required**. The "GenerateAlert" parameter must be set to "TRUE" when creating an action with "Audit".
-application|String|The application associated with the indicator. This field only works for new indicators. It will not update the value on an existing indicator. **Optional**
+indicatorType|Enum|Type of the indicator. Possible values are: `FileSha1`, `FileMd5`, `CertificateThumbprint`, `FileSha256`, `IpAddress`, `DomainName`, and `Url`. **Required**
+action|Enum|The action that is taken if the indicator is discovered in the organization. Possible values are: `Alert`, `Warn`, `Block`, `Audit`, `BlockAndRemediate`, `AlertAndBlock`, and `Allowed`. **Required**. The `GenerateAlert` parameter must be set to `TRUE` when creating an action with `Audit`.
+application|String|The application associated with the indicator. This field only works for new indicators. It doesn't update the value on an existing indicator. **Optional**
 title|String|Indicator alert title. **Required**
 description|String|Description of the indicator. **Required**
 expirationTime|DateTimeOffset|The expiration time of the indicator. **Optional**
-severity|Enum|The severity of the indicator. Possible values are: "Informational", "Low", "Medium", and "High". **Optional**
+severity|Enum|The severity of the indicator. Possible values are: `Informational`, `Low`, `Medium`, and `High`. **Optional**
 recommendedActions|String|TI indicator alert recommended actions. **Optional**
 rbacGroupNames|String|Comma-separated list of RBAC group names the indicator would be applied to. **Optional**
 educateUrl|String|Custom notification/support URL. Supported for Block and Warn action types for URL indicators. **Optional**
-generateAlert|Enum|**True** if alert generation is required, **False** if this indicator should not generate an alert.
+generateAlert|Enum|**True** if alert generation is required, **False** if this indicator shouldn't generate an alert.
 ## Response
 
 - If successful, this method returns 200 - OK response code and the created / updated [Indicator](ti-indicator.md) entity in the response body.
@@ -99,7 +95,7 @@ generateAlert|Enum|**True** if alert generation is required, **False** if this i
 
 ### Request
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```http
 POST https://api.securitycenter.microsoft.com/api/indicators
@@ -120,7 +116,7 @@ POST https://api.securitycenter.microsoft.com/api/indicators
 }
 ```
 
-## Related topic
+## Related article
 
 - [Manage indicators](../manage-indicators.md)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../../includes/defender-mde-techcommunity.md)]

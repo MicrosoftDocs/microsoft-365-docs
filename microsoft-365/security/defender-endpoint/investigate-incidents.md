@@ -3,10 +3,10 @@ title: Investigate incidents in Microsoft Defender for Endpoint
 description: See associated alerts, manage the incident, and see alert metadata to help you investigate an incident
 search.appverid: met150
 ms.service: defender-endpoint
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -44,7 +44,7 @@ When you investigate an incident, you'll see:
 
 Click an incident to see the **Incident pane**. Select **Open incident page** to see the incident details and related information (alerts, devices, investigations, evidence, graph).
 
-:::image type="content" source="images/atp-incident-details.png" alt-text="The details of an incident" lightbox="images/atp-incident-details.png":::
+:::image type="content" source="media/atp-incident-details.png" alt-text="The details of an incident" lightbox="media/atp-incident-details.png":::
 
 ### Alerts
 
@@ -57,7 +57,7 @@ You can investigate the alerts and see how they were linked together in an incid
 - Same file - The files associated with the alert are exactly the same
 - Same URL - The URL that triggered the alert is exactly the same
 
-:::image type="content" source="images/atp-incidents-alerts-reason.png" alt-text="The Alerts tab with incident details page showing the reasons the alerts were linked together in that incident" lightbox="images/atp-incidents-alerts-reason.png":::
+:::image type="content" source="media/atp-incidents-alerts-reason.png" alt-text="The Alerts tab with incident details page showing the reasons the alerts were linked together in that incident" lightbox="media/atp-incidents-alerts-reason.png":::
 
 You can also manage an alert and see alert metadata along with other information. For more information, see [Investigate alerts](investigate-alerts.md).
 
@@ -65,13 +65,13 @@ You can also manage an alert and see alert metadata along with other information
 
 You can also investigate the devices that are part of, or related to, a given incident. For more information, see [Investigate devices](investigate-machines.md).
 
-:::image type="content" source="images/atp-incident-device-tab.png" alt-text="The Devices tab in incident details page" lightbox="images/atp-incident-device-tab.png":::
+:::image type="content" source="media/atp-incident-device-tab.png" alt-text="The Devices tab in incident details page" lightbox="media/atp-incident-device-tab.png":::
 
 ### Investigations
 
 Select **Investigations** to see all the automatic investigations launched by the system in response to the incident alerts.
 
-:::image type="content" source="images/atp-incident-investigations-tab.png" alt-text="The investigations tab in the incident details page" lightbox="images/atp-incident-investigations-tab.png":::
+:::image type="content" source="media/atp-incident-investigations-tab.png" alt-text="The investigations tab in the incident details page" lightbox="media/atp-incident-investigations-tab.png":::
 
 ## Going through the evidence
 
@@ -79,7 +79,7 @@ Microsoft Defender for Endpoint automatically investigates all the incidents' su
 
 Each of the analyzed entities will be marked as infected, remediated, or suspicious.
 
-:::image type="content" source="images/atp-incident-evidence-tab.png" alt-text="The Evidence tab in incident details page" lightbox="images/atp-incident-evidence-tab.png":::
+:::image type="content" source="media/atp-incident-evidence-tab.png" alt-text="The Evidence tab in incident details page" lightbox="media/atp-incident-evidence-tab.png":::
 
 ## Visualizing associated cybersecurity threats
 
@@ -89,11 +89,11 @@ Microsoft Defender for Endpoint aggregates the threat information into an incide
 
 The **Graph** tells the story of the cybersecurity attack. For example, it shows you what was the entry point, which indicator of compromise or activity was observed on which device. etc.
 
-:::image type="content" source="images/atp-incident-graph-tab.png" alt-text="The incident graph" lightbox="images/atp-incident-graph-tab.png":::
+:::image type="content" source="media/atp-incident-graph-tab.png" alt-text="The incident graph" lightbox="media/atp-incident-graph-tab.png":::
 
 You can click the circles on the incident graph to view the details of the malicious files, associated file detections, how many instances have there been worldwide, whether it's been observed in your organization, if so, how many instances.
 
-:::image type="content" source="images/atp-incident-graph-details.png" alt-text="The incident details page" lightbox="images/atp-incident-graph-details.png":::
+:::image type="content" source="media/atp-incident-graph-details.png" alt-text="The incident details page" lightbox="media/atp-incident-graph-details.png":::
 
 ## Related topics
 

@@ -1,15 +1,11 @@
 ---
 title: Troubleshoot issues on Microsoft Defender for Endpoint on Android
 description: Troubleshoot issues for Microsoft Defender for Endpoint on Android
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mde, android, cloud, connectivity, communication
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -42,7 +38,7 @@ This article provides solutions to help address the sign-on issues.
 
 **Sign in failed:** *Unexpected error, try later*
 
-:::image type="content" source="images/f9c3bad127d636c1f150d79814f35d4c.png" alt-text="A screenshot showing a sign-in failed error Unexpected error in the sign-in page of the Microsoft Defender 365 portal." lightbox="images/f9c3bad127d636c1f150d79814f35d4c.png":::
+:::image type="content" source="media/f9c3bad127d636c1f150d79814f35d4c.png" alt-text="A screenshot showing a sign-in failed error Unexpected error in the sign-in page of the Microsoft Defender 365 portal." lightbox="media/f9c3bad127d636c1f150d79814f35d4c.png":::
 
 **Message:**
 
@@ -61,7 +57,7 @@ from Google Play Store and try again.
 
 **Sign in failed:** *Invalid license, contact administrator*
 
-:::image type="content" source="images/920e433f440fa1d3d298e6a2a43d4811.png" alt-text="The directive contact details in the sign-in page of the Microsoft Defender 365 portal" lightbox="images/920e433f440fa1d3d298e6a2a43d4811.png":::
+:::image type="content" source="media/920e433f440fa1d3d298e6a2a43d4811.png" alt-text="The directive contact details in the sign-in page of the Microsoft Defender 365 portal" lightbox="media/920e433f440fa1d3d298e6a2a43d4811.png":::
 
 **Message:** *Invalid license, contact administrator*
 
@@ -86,7 +82,7 @@ Phishing websites impersonate trustworthy websites for obtaining your personal o
 Phishing and harmful web threats detected by Defender for Endpoint
 for Android aren't blocked on some Xiaomi devices. The following functionality doesn't work on these devices.
 
-:::image type="content" source="images/0c04975c74746a5cdb085e1d9386e713.png" alt-text="A site-unsafe notification message" lightbox="images/0c04975c74746a5cdb085e1d9386e713.png":::
+:::image type="content" source="media/0c04975c74746a5cdb085e1d9386e713.png" alt-text="A site-unsafe notification message" lightbox="media/0c04975c74746a5cdb085e1d9386e713.png":::
 
 **Cause:**
 
@@ -94,7 +90,7 @@ Xiaomi devices include a new permission model. This permission model prevents De
 
 Xiaomi devices permission: "Display pop-up windows while running in the background."
 
-:::image type="content" source="images/6e48e7b29daf50afddcc6c8c7d59fd64.png" alt-text="The pop-up setting pane in the Microsoft Defender 365 portal" lightbox="images/6e48e7b29daf50afddcc6c8c7d59fd64.png":::
+:::image type="content" source="media/6e48e7b29daf50afddcc6c8c7d59fd64.png" alt-text="The pop-up setting pane in the Microsoft Defender 365 portal" lightbox="media/6e48e7b29daf50afddcc6c8c7d59fd64.png":::
 
 **Solution:**
 
@@ -141,7 +137,7 @@ Users need to disable MDE VPN from the Settings page. The following steps can be
 Users should enable VPN when they're no longer using the banking app to ensure that their devices are protected. 
 
 >[!NOTE]
-> This a temporary workaround. We are working on other alternatives to provide users more control over the VPN settings from wihtin the app. 
+> This a temporary workaround. We are working on other alternatives to provide users more control over the VPN settings from within the app. 
 
 
 
@@ -151,23 +147,23 @@ If a user faces an issue, which isn't already addressed in the above sections or
 
 1. Open the **MDE application** on your device and select on the **profile icon** in the top-left corner.
 
-    :::image type="content" source="images/select-profile-icon-1.jpg" alt-text="The profile icon in the Microsoft Defender for Endpoint portal" lightbox="images/select-profile-icon-1.jpg":::
+    :::image type="content" source="media/select-profile-icon-1.jpg" alt-text="The profile icon in the Microsoft Defender for Endpoint portal" lightbox="media/select-profile-icon-1.jpg":::
 
 2. Select "Help & feedback".
 
-    :::image type="content" source="images/selecthelpandfeedback2.png" alt-text="The Help & feedback option that can be selected in the Microsoft Defender for Endpoint portal" lightbox="images/selecthelpandfeedback2.png":::
+    :::image type="content" source="media/selecthelpandfeedback2.png" alt-text="The Help & feedback option that can be selected in the Microsoft Defender for Endpoint portal" lightbox="media/selecthelpandfeedback2.png":::
 
 3. Select "Send feedback to Microsoft".
 
-    :::image type="content" alt-text="Select send feedback to Microsoft" source="images/send-feedback-to-microsoft-3.jpg":::
+    :::image type="content" alt-text="Select send feedback to Microsoft" source="media/send-feedback-to-microsoft-3.jpg":::
 
 4. Choose from the given options. To report an issue, select "I want to report an issue".
 
-    :::image type="content" source="images/report-issue-4.jpg" alt-text="The I want to report an issue option" lightbox="images/report-issue-4.jpg":::
+    :::image type="content" source="media/report-issue-4.jpg" alt-text="The I want to report an issue option" lightbox="media/report-issue-4.jpg":::
 
 5. Provide details of the issue that you're facing and check "Send diagnostic data". We recommend checking "Include your email address" so that the team can reach back to you with a solution or a follow-up.
 
-    :::image type="content" source="images/finalsubmit5.png" alt-text="The pane on which you can add details and attach diagnostic data" lightbox="images/finalsubmit5.png":::
+    :::image type="content" source="media/finalsubmit5.png" alt-text="The pane on which you can add details and attach diagnostic data" lightbox="media/finalsubmit5.png":::
 
 6. Select on "Submit" to successfully send the feedback.
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

@@ -1,10 +1,10 @@
 ---
 title: Continuous access evaluation for Microsoft 365 - Microsoft 365 for enterprise
 description: Describes how conditional access evaluation for Microsoft 365 and Microsoft Entra ID proactively terminates active user sessions and enforces tenant policy changes in near real time.
-ms.author: dansimp
-author: dansimp
+author: chrisda
+ms.author: chrisda
 manager: dansimp
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 ms.topic: conceptual
 audience: Admin
 f1.keywords:
@@ -19,7 +19,6 @@ ms.collection:
   - m365solution-scenario
   - highpri
   - tier1
-ms.subservice: mdo
 search.appverid: met150
 ms.date: 1/31/2023
 ---

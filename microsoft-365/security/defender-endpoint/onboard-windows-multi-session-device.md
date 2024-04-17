@@ -5,11 +5,11 @@ ms.service: defender-endpoint
 ms.localizationpriority: medium
 audience: ITPro
 ms.topic: conceptual
-author: dansimp
-ms.author: dansimp
+author: siosulli
+ms.author: siosulli
 ms.custom: nextgen
 ms.reviewer: thdoucet
-manager: dansimp
+manager: deniseb
 ms.collection: 
 - m365-security
 - tier3

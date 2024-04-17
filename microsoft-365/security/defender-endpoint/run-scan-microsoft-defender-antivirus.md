@@ -4,12 +4,12 @@ description: Run and configure on-demand scans using PowerShell, Windows Managem
 ms.service: defender-endpoint
 ms.localizationpriority: medium
 ms.topic: conceptual
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 ms.custom: nextgen
 ms.date: 12/15/2023
 ms.reviewer:
-manager: dansimp
+manager: deniseb
 ms.subservice: ngp
 ms.collection: 
 - m365-security
@@ -39,7 +39,7 @@ Combined with always-on, real-time protection, which reviews files when they are
 
 1. Go to the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com/)) and sign-in.
 2. Go to the **device page** that you would like to run a remote scan.
-3. Click on the ellipses **(…)**.
+3. Click on the ellipses **(...)**.
 4. Click on **Run Antivirus Scan**.
 5. Under **Select scan type**, select the radio button for **Quick Scan** or **Full Scan**.
 6. Add a comment.
@@ -68,7 +68,7 @@ To check on the detections, see [Review the results of Microsoft Defender Antivi
 
 4. From the list of actions provided, select **Quick Scan** (recommended) or **Full Scan**.
 
-   [![Scan options on the Windows 10 unhealthy endpoints tab.](images/mem-antivirus-scan-on-demand.png)](images/mem-antivirus-scan-on-demand.png#lightbox)
+   [![Scan options on the Windows 10 unhealthy endpoints tab.](media/mem-antivirus-scan-on-demand.png)](media/mem-antivirus-scan-on-demand.png#lightbox)
 
 > [!TIP]
 > For more information about using Microsoft Configuration Manager to run a scan, see [Antimalware and firewall tasks: How to perform an on-demand scan](/configmgr/protect/deploy-use/endpoint-antimalware-firewall#how-to-perform-an-on-demand-scan-of-computers).

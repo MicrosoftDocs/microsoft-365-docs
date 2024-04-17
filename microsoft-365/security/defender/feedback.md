@@ -1,12 +1,7 @@
 ---
 title: Provide feedback on Microsoft Defender XDR
-description: Provide product feedback on Microsoft Defender XDR
-keywords: feedback, m365 security, security, 365, capabilities
-search.product: eADQiWindows 10XVcnh
+description: Provide product feedback on Microsoft Defender XDR.
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: 
   - NOCSH
 ms.author: macapara
@@ -32,18 +27,19 @@ ms.date: 02/16/2021
 **Applies to:**
 - Microsoft Defender XDR
 
-Your feedback helps us get better in protecting your environment from advanced attacks. Share your experience, impressions, and  requests by providing feedback.
+Your feedback helps us get better in protecting your environment from advanced attacks. Share your experience, impressions, and requests by providing feedback.
 
-Check out this video to see how easy it is to provide feedback.
+Check out this video to see how to provide feedback.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LWeP]
 
 
-1. From any part of the portal, select **Give feedback**. 
+1. From any part of the Microsoft Defender portal, select **Give feedback**. 
 
     :::image type="content" source="../../media/feedback.png" alt-text="The incidents in the Microsoft 365 security portal" lightbox="../../media/feedback.png":::   
  
 2. Rate your experience and provide details on what you liked or where improvement can be made. You can also choose to be contacted about the feedback. 
 
 3. Select **Submit**.
+
 [!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

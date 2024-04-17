@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 10/26/2020
+ms.date: 02/29/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -34,7 +34,7 @@ The Viva Engage device usage reports give you information about which devices yo
 ## How do I get to the Viva Engage device usage report?
 
 1. In the admin center, go to the **Reports**, and then select **Usage**. 
-2. From the dashboard homepage, select **View more** on the Viva Engage card.
+2. From the dashboard homepage, select **Viva Engage** in the left navigation, then select **Device usage**.
   
 ## Interpret the Viva Engage device usage report
 

@@ -1,15 +1,11 @@
 ---
 title: Get file information API
 description: Learn how to use the Get file information API to get a file by Sha1, Sha256, or MD5 identifier in Microsoft Defender for Endpoint.
-keywords: apis, graph api, supported apis, get, file, information, sha1, sha256, md5
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -19,7 +15,7 @@ ms.topic: reference
 ms.subservice: reference
 ms.custom: api
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 04/17/2024
 ---
 
 # Get file information API
@@ -86,7 +82,7 @@ If successful and file exists - 200 OK with the [file](files.md) entity in the b
 Here's an example of the request.
 
 ```http
-GET https://api.securitycenter.microsoft.com/api/files/4388963aaa83afe2042a46a3c017ad50bdcdafb3
+GET https://api.security.microsoft.com/api/files/4388963aaa83afe2042a46a3c017ad50bdcdafb3
 ```
 
 ### Response example
@@ -95,7 +91,7 @@ Here's an example of the response.
 
 ```json
 {
-    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Files/$entity",
+    "@odata.context": "https://api.security.microsoft.com/api/$metadata#Files/$entity",
     "sha1": "4388963aaa83afe2042a46a3c017ad50bdcdafb3",
     "sha256": "413c58c8267d2c8648d8f6384bacc2ae9c929b2b96578b6860b5087cd1bd6462",
     "globalPrevalence": 180022,

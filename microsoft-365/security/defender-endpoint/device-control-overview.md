@@ -1,10 +1,10 @@
 ---
 title: Device control in Microsoft Defender for Endpoint            
 description: Get an overview of device control, including removable storage access control and device installation policies in Defender for Endpoint           
-author: denisebmsft
-ms.author: deniseb
-manager: dansimp 
-ms.date: 01/30/2024
+author: siosulli
+ms.author: siosulli
+manager: deniseb 
+ms.date: 02/14/2024
 ms.topic: overview
 ms.service: defender-endpoint
 ms.subservice: asr
@@ -21,6 +21,12 @@ f1.keywords: NOCSH
 ---
 
 # Device control in Microsoft Defender for Endpoint
+
+**Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Business](/microsoft-365/security/defender-business)
 
 Device control capabilities in Microsoft Defender for Endpoint enable your security team to control whether users can install and use peripheral devices, like removable storage (USB thumb drives, CDs, disks, etc.), printers, Bluetooth devices, or other devices with their computers. Your security team can configure device control policies to configure rules like these:
 

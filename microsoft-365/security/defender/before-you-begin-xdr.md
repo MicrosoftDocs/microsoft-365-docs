@@ -2,12 +2,8 @@
 title: Before you begin using Defender Experts for XDR
 ms.reviewer:
 description: To enable us to get started with this managed service, we require the following licensing prerequisites
-keywords: XDR, Xtended detection and response, defender experts for xdr, Microsoft Defender Experts for XDR, managed threat hunting, managed detection and response (MDR) service, service delivery manager, Microsoft Defender Experts for hunting, threat hunting and analysis, Microsoft XDR service
 ms.service: defender-experts
 ms.subservice: dex-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: vpattnaik
 author: vpattnai
 ms.localizationpriority: medium
@@ -51,7 +47,7 @@ Defender Experts for XDR is a managed extended detection and response (XDR) serv
 
 ### Server coverage
 
-Defender Experts for XDR also covers servers—whether on premises or on a hyperscale cloud service provider—that have Defender for Endpoint deployed on them with a Microsoft Defender for Server license. For Defender Experts coverage, a server is considered as a user account for billing. The service doesn't cover Microsoft Defender for Cloud.
+Defender Experts for XDR also covers servers—whether on premises or on a hyperscale cloud service provider—that have Defender for Endpoint deployed on them with a Microsoft Defender for Endpoint for Server license. For Defender Experts coverage, a server is considered as a user account for billing. The service doesn't cover Microsoft Defender for Cloud workloads.
 [Learn more about specific hardware and software requirements](/microsoft-365/security/defender-endpoint/minimum-requirements).
 
 ### Ask Defender Experts

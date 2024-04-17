@@ -20,6 +20,7 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
+- basic-mobility-security
 search.appverid:
 - MET150
 description: "Before you can use Microsoft 365 services with your device, you might need to first enroll it in Basic Mobility and Security for Microsoft 365."

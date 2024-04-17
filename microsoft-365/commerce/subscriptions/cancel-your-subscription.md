@@ -9,6 +9,7 @@ ms.reviewer: emmasheridan, nicholak
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: high
 ms.collection:
 - Tier1
@@ -31,7 +32,9 @@ ms.date: 10/13/2023
 
 Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
-This article only applies to canceling **Dynamics 365**, **Intune**, **Power Platform**, **Windows 365**, **Microsoft Defender for Business**, and **Microsoft 365 for business** subscriptions. If you have an Azure subscription, see [Cancel your Azure subscription](/azure/cost-management-billing/manage/cancel-azure-subscription). If you have Microsoft 365 Family or Personal, see [Cancel a Microsoft 365 subscription](https://support.microsoft.com/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b?OCID=M365_DocsCancel_Link).
+This article only applies to canceling **Dynamics 365**, **Intune**, **Power Platform**, **Windows 365**, **Microsoft Defender for Business**, and **Microsoft 365 for business** subscriptions. If you have an **Azure** subscription, see [Cancel your Azure subscription](/azure/cost-management-billing/manage/cancel-azure-subscription). If you have the **Power BI service**, see [Close your account](/power-bi/enterprise/service-admin-closing-your-account). If you have the **Fabric trial**, see [Cancel your trial](/power-bi/fundamentals/service-self-service-signup-for-power-bi#trial-expiration).
+
+If you have **Microsoft 365 Family** or **Microsoft 365 Personal**, see [Cancel a Microsoft 365 subscription](https://support.microsoft.com/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b?OCID=M365_DocsCancel_Link). 
 
 > [!WARNING]
 > Before you cancel a subscription, make sure your users [save their data](#save-your-data).
@@ -39,7 +42,7 @@ This article only applies to canceling **Dynamics 365**, **Intune**, **Power Pla
 ## Before you begin
 
 - [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
-- If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a Billing account owner or contributor, or a Billing profile owner or contributor to do the tasks in this article. For information about Billing account roles and Billing profile roles, see [Understand your Microsoft business billing account](../manage-billing-accounts.md) and [Understand your Microsoft business billing profile](../billing-and-payments/manage-billing-profiles.md).
+- If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a Billing account owner or contributor, or a Billing profile owner or contributor to do the tasks in this article. For information about Billing account roles and Billing profile roles, see [Understand your Microsoft business billing account](../manage-billing-accounts.md) and [Manage your Microsoft business billing profiles](../billing-and-payments/manage-billing-profiles.md).
 - If you have a Microsoft Online Subscription Agreement (MOSA), you must be a Global or Billing admin to do the tasks in this article. For more information, see [About admin roles in the Microsoft 365 admin center](../../admin/add-users/about-admin-roles.md).
 - If you added your own domain name to use with your subscription, you must [remove the domain](../../admin/get-help-with-domains/remove-a-domain.md) before you cancel your subscription.
 - If you have a domain subscription, to prevent any other charges for that subscription, [turn off recurring billing](renew-your-subscription.md).

@@ -30,13 +30,25 @@ With SharePoint eSignature, you can quickly and securely send documents for sign
 
 ## Before you begin
 
-Before you can use SharePoint eSignature, an admin must [set up SharePoint eSignature](esignature-setup.md) in the Microsoft 365 admin center.
+## Legal considerations
 
-You must be signed in to SharePoint Online by using your work email address.
+SharePoint eSignature uses simple electronic signatures. Determine whether this is appropriate for your needs and then read the [SharePoint eSignature terms of service](/legal/microsoft-365/esignature-terms-of-service).
+
+
+### Licensing
+
+Before you can use SharePoint eSignature, you must first link your Azure subscription in [Syntex pay-as-you-go](syntex-azure-billing.md). SharePoint eSignature is billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md). Before you can enable SharePoint eSignature, an admin must [set up SharePoint eSignature](esignature-setup.md) in the Microsoft 365 admin center.
+
+
+### External sharing
+
+SharePoint eSignature enables binding agreements between parties by allowing guests access to SharePoint to electronically sign documents. Certain external sharing must be enabled at a tenant or site level to allow this access. For more information, see [Set up SharePoint eSignature for external recipients](esignature-setup.md#external-recipients). Consider whether this meets your compliance and security requirements when enabling eSignature.
+
+
 
 ## Release notes
 
-- Currently, SharePoint eSignature is rolling out to the US market. The feature rolls out to other regions in 2024.
+- Currently, SharePoint eSignature is rolling out to the US market. The feature rolls out to other regions later in 2024.
 
 - SharePoint eSignature is available for only PDF documents at this time.
 

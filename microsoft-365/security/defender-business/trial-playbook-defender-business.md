@@ -4,14 +4,15 @@ f1.keywords:
 - NOCSH
 ms.author: siosulli
 author: siosulli
-manager: dansimp
+manager: deniseb
 audience: Admin
 ms.topic: how-to
 ms.collection: 
 - m365-security
 - tier1
+- essentials-get-started
 ms.localizationpriority: high
-ms.date: 05/04/2023
+ms.date: 04/10/2024
 ms.service: defender-business
 search.appverid: 
 - MOE150

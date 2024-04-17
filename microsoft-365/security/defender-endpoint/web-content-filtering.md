@@ -2,12 +2,12 @@
 title: Web content filtering
 description: Use web content filtering in Microsoft Defender for Endpoint to track and regulate access to websites based on their content categories.
 ms.service: defender-endpoint
-ms.author: deniseb
-author: denisebmsft
+ms.author: siosulli
+author: siosulli
 ms.reviewer: tdoucett
 ms.localizationpriority: medium
 ms.date: 02/02/2024
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security
@@ -35,7 +35,7 @@ search.appverid: met150
 
 Web content filtering is part of the [Web protection](web-protection-overview.md) capabilities in Microsoft Defender for Endpoint and Microsoft Defender for Business. Web content filtering enables your organization to track and regulate access to websites based on their content categories. Many of these websites (even if they're not malicious) might be problematic because of compliance regulations, bandwidth usage, or other concerns.
 
-Configure policies across your device groups to block certain categories. Blocking a category prevents users within specified device groups from accessing URLs associated with the category. For any category that's not blocked, the URLs are automatically audited. Your users can access the URLs without disruption, and you'll gather access statistics to help create a more custom policy decision. Your users will see a block notification if an element on the page they're viewing is making calls to a blocked resource.
+Configure policies across your device groups to block certain categories. Blocking a category prevents users within specified device groups from accessing URLs associated with the category. For any category that's not blocked, the URLs are automatically audited. Your users can access the URLs without disruption, and you gather access statistics to help create a more custom policy decision. Your users see a block notification if an element on the page they're viewing is making calls to a blocked resource.
 
 > [!NOTE]
 > Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
@@ -49,8 +49,8 @@ Web content filtering is available on the major web browsers, with blocks perfor
 
 - Users are prevented from accessing websites in blocked categories, whether they're browsing on-premises or away.
 - Your security team can access web reports in the same central location, with visibility over actual blocks and web usage.
-- If you are using Defender for Endpoint, your security team can conveniently deploy policies to groups of users using device groups defined in [Microsoft Defender for Endpoint role-based access control settings](/microsoft-365/security/defender-endpoint/rbac).
-- If you are using Defender for Business, you can define one web content filtering policy that will be applied to all users.
+- If you're using Defender for Endpoint, your security team can conveniently deploy policies to groups of users using device groups defined in [Microsoft Defender for Endpoint role-based access control settings](/microsoft-365/security/defender-endpoint/rbac).
+- If you're using Defender for Business, you can define one web content filtering policy that is applied to all users.
 
 ## Prerequisites
 
@@ -58,26 +58,26 @@ Before trying out this feature, make sure you meet the requirements described in
 
 | Requirement | Description |
 |:---|:---|
-| Subscription | Your subscription must include one of the following:<br/>- [Windows 10/11 Enterprise E5](/windows/deployment/deploy-enterprise-licenses)<br/>- [Microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise/e5?activetab=pivot%3aoverviewtab)<br/>- Microsoft 365 A5<br/>- Microsoft 365 E5 Security<br/>- [Microsoft 365 E3](https://www.microsoft.com/microsoft-365/enterprise/e3?activetab=pivot%3aoverviewtab)<br/>- [Microsoft Defender for Endpoint Plan 1 or Plan 2](../defender/eval-defender-endpoint-overview.md)<br/>- [Microsoft Defender for Business](../defender-business/mdb-overview.md)<br/>- [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium)|
+| Subscription | Your subscription must include one of the following plans:<br/>- [Windows 10/11 Enterprise E5](/windows/deployment/deploy-enterprise-licenses)<br/>- [Microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise/e5?activetab=pivot%3aoverviewtab)<br/>- Microsoft 365 A5<br/>- Microsoft 365 E5 Security<br/>- [Microsoft 365 E3](https://www.microsoft.com/microsoft-365/enterprise/e3?activetab=pivot%3aoverviewtab)<br/>- [Microsoft Defender for Endpoint Plan 1 or Plan 2](../defender/eval-defender-endpoint-overview.md)<br/>- [Microsoft Defender for Business](../defender-business/mdb-overview.md)<br/>- [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium)|
 | Portal access | You must have access to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a>. |
-| Operating system | Your organization's devices must be running one of the following operating systems with the [latest antivirus/antimalware updates](microsoft-defender-antivirus-updates.md): <br/>- Windows 11<br/>- Windows 10 Anniversary Update (version 1607) or later <br/>- For information on MacOS availability, see [Network Protection for MacOS](network-protection-macos.md)<br/>- For information on Linux availability, see [Network Protection for Linux](network-protection-linux.md)|
+| Operating system | Your organization's devices must be running one of the following operating systems with the [latest antivirus/antimalware updates](microsoft-defender-antivirus-updates.md): <br/>- Windows 11<br/>- Windows 10 Anniversary Update (version 1607) or later <br/>- For information on macOS availability, see [Network Protection for macOS](network-protection-macos.md)<br/>- For information on Linux availability, see [Network Protection for Linux](network-protection-linux.md)|
 | Browser | Your organization's devices must be running one of the following browsers: <br/>- Microsoft Edge<br/>- Google Chrome<br/>- Mozilla FireFox<br/>- Brave<br/>- Opera<br/>- Internet Explorer|
 | Related protection | [Windows Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) and [network protection](network-protection.md) must be enabled on your organization's devices. |
 
 ## Data handling
 
-Data is stored in the region that was selected as part of your [Microsoft Defender for Endpoint data handling settings](data-storage-privacy.md). Your data will not leave the data center in that region. In addition, your data will not be shared with any third parties, including our data providers.
+Data is stored in the region that was selected as part of your [Microsoft Defender for Endpoint data handling settings](data-storage-privacy.md). Your data won't leave the data center in that region. In addition, your data won't be shared with any third parties, including our data providers.
 
 ## Precedence for multiple active policies
 
-Applying multiple different web content filtering policies to the same device will result in the more restrictive policy applying for each category. Consider the following scenario:
+Applying multiple different web content filtering policies to the same device results in applying the more restrictive policy for each category. Consider the following scenario:
 
 - **Policy 1**: blocks categories 1 and 2 and audits the rest
 - **Policy 2**: blocks categories 3 and 4 and audits the rest
 
-The result is that categories 1 - 4 are all blocked.  This is illustrated in the following image.
+The result is that categories 1-4 are all blocked, as illustrated in the following image.
 
-:::image type="content" source="images/web-content-filtering-policies-mode-precedence.png" alt-text="Illustrates precedence of web content filtering policy block mode over audit mode":::
+:::image type="content" source="media/web-content-filtering-policies-mode-precedence.png" alt-text="Illustrates precedence of web content filtering policy block mode over audit mode":::
 
 ## Turn on web content filtering
 
@@ -97,11 +97,11 @@ Policies can be deployed to block any of the following parent or child categorie
 
 | Parent category | Child categories |
 |---|---|
-| **Adult content** | - **Cults**: Sites related to groups or movements whose members demonstrate passion for a belief system that is different from those that are socially accepted.<br/><br/>- **Gambling**: Online gambling and sites that promote gambling skills and practice.<br/><br/>- **Nudity**: Sites that provide full-frontal and semi-nude images or videos, typically in artistic form, and might allow the download or sale of such materials.<br/><br/>- **Pornography / Sexually explicit**: Sites containing sexually explicit content in an image-based or textual form. Any form of sexually oriented material is also listed here.<br/><br/>- **Sex education**: Sites that discuss sex and sexuality in an informative and non-voyeuristic way, including sites that provide education about human reproduction and contraception, sites that offer advice on preventing infection from sexual diseases, and sites that offer advice on sexual health matters.<br/><br/>- **Tasteless**: Sites oriented towards content unsuitable for school children to view or that an employer would be uncomfortable with their staff accessing, but not necessarily violent or pornographic.<br/><br/>- **Violence**: Sites that display or promote content related to violence against humans or animals. |
+| **Adult content** | - **Cults**: Sites related to groups or movements whose members demonstrate passion for a belief system that is different from those that are socially accepted.<br/><br/>- **Gambling**: Online gambling and sites that promote gambling skills and practice.<br/><br/>- **Nudity**: Sites that provide full-frontal and semi-nude images or videos, typically in artistic form, and might allow the download or sale of such materials.<br/><br/>- **Pornography / Sexually explicit**: Sites containing sexually explicit content in an image-based or textual form. Any form of sexually oriented material is also listed here.<br/><br/>- **Sex education**: Sites that discuss sex and sexuality in an informative and nonvoyeuristic way, including sites that provide education about human reproduction and contraception, sites that offer advice on preventing infection from sexual diseases, and sites that offer advice on sexual health matters.<br/><br/>- **Tasteless**: Sites oriented towards content unsuitable for school children to view or that an employer would be uncomfortable with their staff accessing, but not necessarily violent or pornographic.<br/><br/>- **Violence**: Sites that display or promote content related to violence against humans or animals. |
 | **High bandwidth** | - **Download sites**: Sites whose primary function is to allow users to download media content or programs, such as computer programs.<br/><br/>- **Image sharing**: Sites that are used primarily for searching or sharing photos, including those that have social aspects.<br/><br/>- **Peer-to-peer**: Sites that host peer-to-peer (P2P) software or facilitate the sharing of files using P2P software.<br/><br/>- **Streaming media & downloads**: Sites whose primary function is the distribution of streaming media, or sites that allow users to search, watch, or listen to streaming media. |
-| **Legal liability** | - **Child abuse images**: Sites that include child abuse images or pornography.<br/><br/>- **Criminal activity**: Sites that give instruction on, advice about, or promotion of illegal activities.<br/><br/>- **Hacking**: Sites that provide resources for illegal or questionable use of computer software or hardware, including sites that distribute copyrighted material that has been cracked.<br/><br/>- **Hate & intolerance**: Sites promoting aggressive, degrading, or abusive opinions about any section of the population that could be identified by race, religion, gender, age, nationality, physical disability, economic situation, sexual preferences or any other lifestyle choice.<br/><br/>- **Illegal drug**: Sites that sell illegal/controlled substances, promote substance abuse, or sell related paraphernalia.<br/><br/>- **Illegal software**: Sites that contain or promote the use of malware, spyware, botnets, phishing scams, or piracy & copyright theft.<br/><br/>- **School cheating**: Sites related to plagiarism or school cheating.<br/><br/>- **Self-harm**: Sites that promote self-harm, including cyberbullying sites that contain abusive and/or threatening messages towards users.<br/><br/>- **Weapons**: Any site that sells weapons or advocates the use of weapons, including but not limited to guns, knives, and ammunition. |
+| **Legal liability** | - **Child abuse images**: Sites that include child abuse images or pornography.<br/><br/>- **Criminal activity**: Sites that give instruction on, advice about, or promotion of illegal activities.<br/><br/>- **Hacking**: Sites that provide resources for illegal or questionable use of computer software or hardware, including sites that distribute copyrighted material that has been cracked.<br/><br/>- **Hate & intolerance**: Sites promoting aggressive, degrading, or abusive opinions about any section of the population that could be identified by race, religion, gender, age, nationality, physical disability, economic situation, sexual orientations or any other lifestyle choice.<br/><br/>- **Illegal drug**: Sites that sell illegal/controlled substances, promote substance abuse, or sell related paraphernalia.<br/><br/>- **Illegal software**: Sites that contain or promote the use of malware, spyware, botnets, phishing scams, or piracy & copyright theft.<br/><br/>- **School cheating**: Sites related to plagiarism or school cheating.<br/><br/>- **Self-harm**: Sites that promote self-harm, including cyberbullying sites that contain abusive and/or threatening messages towards users.<br/><br/>- **Weapons**: Any site that sells weapons or advocates the use of weapons, including but not limited to guns, knives, and ammunition. |
 | **Leisure** | - **Chat**: Sites that are primarily web-based chat rooms.<br/><br/>- **Games**: Sites relating to video or computer games, including sites that promote gaming through hosting online services or information related to gaming.<br/><br/>- **Instant messaging**: Sites that can be used to download instant messaging software or client based instant messaging.<br/><br/>- **Professional network**: Sites that provide professional networking services.<br/><br/>- **Social networking**: Sites that provide social networking services.<br/><br/>- **Web-based email**: Sites offering web-based mail services. |
-| **Uncategorized** | - **Newly registered domains**: Sites that have been newly registered in the past 30 days and have not yet been moved to another category.<br/><br/>- **Parked domains**: Sites that have no content or are parked for later use. |
+| **Uncategorized** | - **Newly registered domains**: Sites that are newly registered in the past 30 days and haven't yet been moved to another category.<br/><br/>- **Parked domains**: Sites that have no content or are parked for later use. |
 
 > [!NOTE]
 > Uncategorized contains only newly registered domains and parked domains, and does not include all other sites outside of these categories.
@@ -133,9 +133,13 @@ To add a new policy, follow these steps:
 
 The blocking experience for third-party supported browsers is provided by network protection, which provides a system-level message notifying the user of a blocked connection. For a more user-friendly, in-browser experience, consider using Microsoft Edge.
 
+The following experience is shown for all Web Content Filtering blocks, beginning in Microsoft Edge version 124.
+
+:::image type="content" source="media/wcf-content-blocked.jpg" alt-text="Screenshot of notification that content is blocked." lightbox="media/wcf-content-blocked.jpg":::
+
 ### Allow specific websites
 
-It's possible to override the blocked category in web content filtering to allow a single site by creating a custom indicator policy. The custom indicator policy will supersede the web content filtering policy when it's applied to the device group in question.
+It's possible to override the blocked category in web content filtering to allow a single site by creating a custom indicator policy. The custom indicator policy supersedes the web content filtering policy when it's applied to the device group in question.
 
 To define a custom indicator, follow these steps:
 
@@ -163,25 +167,25 @@ This card lists the parent web content categories with the largest increase or d
 
 In the first 30 days of using this feature, your organization might not have enough data to display this information.
 
-:::image type="content" source="images/web-activity-by-category600.png" alt-text="The web activity by category card" lightbox="images/web-activity-by-category600.png":::
+:::image type="content" source="media/web-activity-by-category600.png" alt-text="The web activity by category card" lightbox="media/web-activity-by-category600.png":::
 
 ### Web content filtering  summary card
 
 This card displays the distribution of blocked access attempts across the different parent web content categories. Select one of the colored bars to view more information about a specific parent web category.
 
-:::image type="content" source="images/web-content-filtering-summary.png" alt-text="The web content filtering summary card" lightbox="images/web-content-filtering-summary.png":::
+:::image type="content" source="media/web-content-filtering-summary.png" alt-text="The web content filtering summary card" lightbox="media/web-content-filtering-summary.png":::
 
 ### Web activity summary card
 
 This card displays the total number of requests for web content in all URLs.
 
-:::image type="content" source="images/web-activity-summary.png" alt-text="The web activity summary card" lightbox="images/web-activity-summary.png":::
+:::image type="content" source="media/web-activity-summary.png" alt-text="The web activity summary card" lightbox="media/web-activity-summary.png":::
 
 ### View card details
 
 You can access the **Report details** for each card by selecting a table row or colored bar from the chart in the card. The report details page for each card contains extensive statistical data about web content categories, website domains, and device groups.
 
-:::image type="content" source="images/web-protection-report-details.png" alt-text="The web protection report details" lightbox="images/web-protection-report-details.png":::
+:::image type="content" source="media/web-protection-report-details.png" alt-text="The web protection report details" lightbox="media/web-protection-report-details.png":::
 
 - **Web categories**: Lists the web content categories that have had access attempts in your organization. Select a specific category to open a summary flyout.
 

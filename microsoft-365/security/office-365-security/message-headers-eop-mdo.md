@@ -4,7 +4,7 @@ f1.keywords:
   - NOCSH
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.topic: conceptual
 
@@ -17,12 +17,11 @@ ms.collection:
   - tier2
 description: Admins can learn about the header fields that are added to messages by Exchange Online Protection (EOP). These header fields provide information about the message and how it was processed.
 ms.custom: seo-marvel-apr2020
-ms.subservice: mdo
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 ms.date: 9/8/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 1 and Plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
@@ -147,7 +146,7 @@ The following table describes the fields and possible values for each email auth
 |Field|Description|
 |---|---|
 |`action`|Indicates the action taken by the spam filter based on the results of the DMARC check. For example: <ul><li>`pct.quarantine`: Indicates that a percentage less than 100% of messages that don't pass DMARC are delivered anyway. This result means that the message failed DMARC and the DMARC policy was set to `p=quarantine`. But, the pct field wasn't set to 100%, and the system randomly determined not to apply the DMARC action per the specified domain's DMARC policy.</li><li>`pct.reject`: Indicates that a percentage less than 100% of messages that don't pass DMARC are delivered anyway. This result means that the message failed DMARC and the DMARC policy was set to `p=reject`. But, the pct field wasn't set to 100% and the system randomly determined not to apply the DMARC action per the specified domain's DMARC policy.</li><li>`permerror`: A permanent error occurred during DMARC evaluation, such as encountering an incorrectly formed DMARC TXT record in DNS. Attempting to resend this message isn't likely to end with a different result. Instead, you might need to contact the domain's owner in order to resolve the issue.</li><li>`temperror`: A temporary error occurred during DMARC evaluation. You might be able to request that the sender resend the message later in order to process the email properly.</li></ul>|
-|`compauth`|Composite authentication result. Used by Microsoft 365 to combine multiple types of authentication (SPF, DKIM, and DMARC), or any other part of the message to determine whether or not the message is authenticated. Uses the From: domain as the basis of evaluation.|
+|`compauth`|Composite authentication result. Used by Microsoft 365 to combine multiple types of authentication (SPF, DKIM, and DMARC), or any other part of the message to determine whether or not the message is authenticated. Uses the From: domain as the basis of evaluation. **Note**: Despite a `compauth` failure, the message might still be allowed if other assessments don't indicate a suspicious nature.|
 |`dkim`|Describes the results of the DKIM check for the message. Possible values include: <ul><li>**pass**: Indicates the DKIM check for the message passed.</li><li>**fail (reason)**: Indicates the DKIM check for the message failed and why. For example, if the message wasn't signed or the signature wasn't verified.</li><li>**none**: Indicates that the message wasn't signed. This result might or might not indicate that the domain has a DKIM record or the DKIM record doesn't evaluate to a result.</li></ul>|
 |`dmarc`|Describes the results of the DMARC check for the message. Possible values include: <ul><li>**pass**: Indicates the DMARC check for the message passed.</li><li>**fail**: Indicates the DMARC check for the message failed.</li><li>**bestguesspass**: Indicates that no DMARC TXT record exists for the domain exists. If the domain had a DMARC TXT record, the DMARC check for the message would have passed.</li><li>**none**: Indicates that no DMARC TXT record exists for the sending domain in DNS.|
 |`header.d`|Domain identified in the DKIM signature if any. This is the domain that's queried for the public key.|

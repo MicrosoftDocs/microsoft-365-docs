@@ -4,7 +4,7 @@ description: Learn about your options for managing your Defender for Business or
 search.appverid: MET150  
 author: siosulli
 ms.author: siosulli
-manager: dansimp 
+manager: deniseb 
 audience: ITPro
 ms.topic: overview
 ms.date: 01/03/2024
@@ -15,6 +15,7 @@ f1.keywords: NOCSH
 ms.collection: 
 - M365-security-compliance
 - m365initiative-defender-business
+- essentials-manage
 ---
 
 # Change your endpoint security subscription

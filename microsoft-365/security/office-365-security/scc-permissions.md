@@ -4,7 +4,7 @@ f1.keywords:
   - NOCSH
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 audience: Admin
 ms.topic: conceptual
 f1_keywords: 
@@ -19,8 +19,7 @@ search.appverid:
 description: Admins can learn about the roles and role groups in Microsoft Defender for Office 365 and Microsoft Purview.
 ms.custom: 
 - seo-marvel-apr2020
-ms.subservice: mdo
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 ms.date: 11/14/2023
 ---
 
@@ -28,9 +27,9 @@ ms.date: 11/14/2023
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-The [Microsoft Defender portal](/microsoft-365/security/defender/microsoft-365-defender-portal), [Microsoft Purview portal](/purview/purview-portal), and the classic Microsoft Purview [compliance](/purview/microsoft-365-compliance-center) and [governance](/purview/use-microsoft-purview-governance-portal) portals have replaced the Security & Compliance Center as the places to manage Microsoft Defender for Office 365 and Microsoft Purview roles and role groups for your organization. For more information about permissions within these portals, see the following articles:
+The [Microsoft Defender portal](../defender/microsoft-365-defender-portal.md), [Microsoft Purview portal](/purview/purview-portal), and the classic Microsoft Purview [compliance](/purview/microsoft-365-compliance-center) and [governance](/purview/use-microsoft-purview-governance-portal) portals have replaced the Security & Compliance Center as the places to manage Microsoft Defender for Office 365 and Microsoft Purview roles and role groups for your organization. For more information about permissions within these portals, see the following articles:
 
-- [Email & collaboration permissions in the Microsoft Defender portal](/microsoft-365/security/office-365-security/mdo-portal-permissions)
+- [Email & collaboration permissions in the Microsoft Defender portal](mdo-portal-permissions.md)
 - [Permissions in the Microsoft Purview portal](/purview/purview-portal)
 - [Permissions in the Microsoft Purview compliance portal](/purview/microsoft-365-compliance-center-permissions)
 - [Permissions in the Microsoft Purview governance portal](/purview/roles-permissions)

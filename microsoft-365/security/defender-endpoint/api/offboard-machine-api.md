@@ -1,12 +1,11 @@
 ---
 title: Offboard machine API
 description: Learn how to use an API to offboard a device from Microsoft Defender for Endpoint.
-keywords: apis, graph api, supported apis, collect investigation package
 ms.service: defender-endpoint
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
@@ -16,7 +15,7 @@ ms.topic: reference
 ms.subservice: reference
 ms.custom: api
 search.appverid: met150
-ms.date: 12/13/2023
+ms.date: 04/17/2024
 ---
 
 # Offboard machine API
@@ -69,7 +68,7 @@ Delegated (work or school account)|Machine.Offboard|'Offboard machine'
 ## HTTP request
 
 ```http
-POST https://api.securitycenter.microsoft.com/api/machines/{id}/offboard
+POST https://api.security.microsoft.com/api/machines/{id}/offboard
 ```
 
 The machine ID can be found in the URL when you select the device. Generally, it's a 40 digit alphanumeric number that can be found in the URL.
@@ -100,7 +99,7 @@ If successful, this method returns 200 - Created response code and [Machine Acti
 Here's an example of the request. If there's no JSON comment added, it will error out with code **400**.
 
 ```http
-POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/offboard
+POST https://api.security.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/offboard
 ```
 
 ```json

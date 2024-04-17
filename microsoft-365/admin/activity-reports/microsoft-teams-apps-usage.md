@@ -50,7 +50,7 @@ The Teams app usage report is available in the Microsoft 365 admin center and th
 ## How to get to the Microsoft Teams apps usage report
 
 1. In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page.
-2. From the dashboard homepage, select on the **View more** button on the Microsoft Teams apps activity card.
+2. From the dashboard homepage, select the **View more** button on the Microsoft Teams apps activity card.
 
     :::image type="content" source="../../media/teams-apps-tile.png" alt-text="Microsoft Teams app.":::
 
@@ -125,8 +125,8 @@ You can view the **user activity** in the Teams app usage report by choosing the
 
 On the top of the report, three charts describe cross-app trends across your organization.
 
-- Users who have installed apps
-- User who have used apps
+- Users who installed apps
+- Users who used apps
 - Platform
 
 You can filter all charts by the time range picker in the top right.
@@ -139,7 +139,7 @@ This chart shows you the total number of unique users that have installed an app
 
 :::image type="content" source="../../media/users-who-installed-apps.png" alt-text="Microsoft Teams apps Users who have installed apps chart.":::
 
-### User who have used apps
+### Users who have used apps
 
 This chart shows you the number of unique users that have used any app on each date within the selected period. For example – if you select January 28, the chart will show you the total number of users on January 28.
 
@@ -170,11 +170,11 @@ This table shows you per-user view with the following metrics for each app. A su
 
 ## Managing apps in the Teams Admin Center
 
-For more information about how to manage your Teams apps, please refer to [About apps in Microsoft Teams](/microsoftteams/deploy-apps-microsoft-teams-landing-page).
+For more information about how to manage your Teams apps, refer to [About apps in Microsoft Teams](/microsoftteams/deploy-apps-microsoft-teams-landing-page).
 
 To link an app in this report to the Manage Apps experience in Teams Admin Center, you can use the following items:
 
 - App Name
 - External App ID
 
-External App IDs are equivalent to the ID in the Manage apps page for Store apps. For custom apps, to view External App ID in the Manage Apps page, follow the instructions on [Manage apps setup policies in Microsoft Teams](/microsoftteams/teams-app-setup-policies) to add the column in the column settings. You can also view it on the app details page for a custom app
+External App IDs are equivalent to the ID in the Manage apps page for Store apps. For custom apps, to view External App ID in the Manage Apps page, follow the instructions on [Manage apps setup policies in Microsoft Teams](/microsoftteams/teams-app-setup-policies) to add the column in the column settings. You can also view it on the app details page for a custom app.

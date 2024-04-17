@@ -1,18 +1,14 @@
 ---
 title:  Run the client analyzer on macOS or Linux
-description: Learn how to run the Microsoft Defender for Endpoint Client Analyzer on macOS or Linux.
-keywords: client analyzer, troubleshoot sensor, analyzer, mdeanalyzer, macos, linux, mdeanalyzer
+description: Learn how to run the Microsoft Defender for Endpoint Client Analyzer on macOS or Linux
 ms.service: defender-endpoint
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: macapara
-author: mjcaparas
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-ms.date: 06/15/2023
-manager: dansimp
+ms.date: 04/16/2024
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security
@@ -49,11 +45,20 @@ If you're using a terminal, download the tool by entering the following command:
 2. Verify the download.
 
     > [!NOTE]
-    > The current SHA256 hash of 'XMDEClientAnalyzerBinary.zip' that is downloaded from this link is: '0A8E32B618F278BED60AB6763E9458BA2CD02C99D718E50DCCE51A7DBAC69863'
+    > The current SHA256 hash of 'XMDEClientAnalyzerBinary.zip' that is downloaded from this link is: '9D0552DBBD1693D2E2ED55F36147019CFECFDC009E76BAC4186CF03CD691B469'
+
+   - Linux
 
     ```console
-    echo '0A8E32B618F278BED60AB6763E9458BA2CD02C99D718E50DCCE51A7DBAC69863 XMDEClientAnalyzerBinary.zip' | sha256sum -c
+    echo '9D0552DBBD1693D2E2ED55F36147019CFECFDC009E76BAC4186CF03CD691B469 XMDEClientAnalyzerBinary.zip' | sha256sum -c
     ```
+
+   - macOS
+
+    ```console
+    echo '9D0552DBBD1693D2E2ED55F36147019CFECFDC009E76BAC4186CF03CD691B469  XMDEClientAnalyzerBinary.zip' | shasum -a 256 -c
+    ```
+
 
 3. Extract the contents of _XMDEClientAnalyzerBinary.zip_ on the machine.
 
@@ -72,11 +77,10 @@ If you're using a terminal, download the tool by entering the following command:
 5. Three new zip files are produced:
 
    - **SupportToolLinuxBinary.zip** : For all Linux devices
-   - **SupportToolmacOSBinary.zip** : For Intel-based Mac devices
-   - **SupportToolmacOS-armBinary.zip** : For Arm-based Mac devices
+   - **SupportToolMacOSBinary.zip** : For Mac devices
 
-6. Unzip one of the above 3 zip files based on the machine you need to investigate.\
-When using a terminal, unzip the file by entering one of the following commands based on machine type:
+6. Unzip one of the above 2 zip files based on the machine you need to investigate.\
+When using a terminal, unzip the file by entering one of the following commands based on OS type:
 
    - Linux
 
@@ -84,16 +88,10 @@ When using a terminal, unzip the file by entering one of the following commands 
      unzip -q SupportToolLinuxBinary.zip
      ```
 
-   - Intel-based Mac
+   - Mac
 
      ```console
-     unzip -q SupportToolmacOSBinary.zip
-     ```
-
-   - For Arm-based Mac devices
-
-     ```console
-     unzip -q SupportToolmacOS-armBinary.zip
+     unzip -q SupportToolMacOSBinary.zip
      ```
 
 7. Run the tool as _root_ to generate diagnostic package:
@@ -127,8 +125,16 @@ When using a terminal, unzip the file by entering one of the following commands 
 
 2. Verify the download
 
+   - Linux
+
     ```console
-    echo '926DEF4C6857641E205E7978126F7C2CE541D52AEA1C0E194DDB85F7BCFDE3D9 XMDEClientAnalyzer.zip' | sha256sum -c
+    echo '36C2B13AE657456119F3DC2A898FD9D354499A33F65015670CE2CD8A937F3C66 XMDEClientAnalyzer.zip' | sha256sum -c
+    ```
+
+   - macOS
+
+    ```console
+    echo '36C2B13AE657456119F3DC2A898FD9D354499A33F65015670CE2CD8A937F3C66  XMDEClientAnalyzer.zip' | shasum -a 256 -c
     ```
 
 3. Extract the contents of XMDEClientAnalyzer.zip on the machine.\
