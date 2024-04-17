@@ -31,7 +31,7 @@ This article doesn't cover SAP client software, such as SAPGUI or Microsoft Defe
 
 ## Enterprise security and your SAP Basis team
 
-Enterprise security is a specialist role and the activities described below should be planned as a joint activity between your enterprise security team and the SAP Basis Team. The enterprise security team needs to coordinate with the SAP Basis Team and jointly design the Defender for Endpoint configuration and analyze any exclusions. 
+Enterprise security is a specialist role and the activities described below should be planned as a joint activity between your enterprise security team and the SAP Basis team. The enterprise security team needs to coordinate with the SAP Basis team and jointly design the Defender for Endpoint configuration and analyze any exclusions. 
 
 ### Get an overview of Defender for Endpoint
 
@@ -90,7 +90,7 @@ SAP Support policy is documented in [3356389 - Antivirus or other security softw
 
 3. **Real-time protection is enabled by default in Windows Server**. If problems are identified that might be related to Defender for Endpoint, it's recommended to [configure exclusions](defender-endpoint-antivirus-exclusions.md) and/or [open a support case](contact-support.md) via the Microsoft Defender portal. 
 
-4. **Defender for Endpoint deployment should be a joint project between the SAP Basis Team and your organization's security team**. The two teams need to create a phased deployment, testing and monitoring plan.
+4. **Defender for Endpoint deployment should be a joint project between the SAP Basis team and your organization's security team**. The two teams need to create a phased deployment, testing and monitoring plan.
 
 5. **Use tools such as PerfMon (Windows) to create a performance baseline before deploying and activating Defender for Endpoint**. Compare the performance utilization before and after activating Defender for Endpoint. See [perfmon](/windows-server/administration/windows-commands/perfmon).
 
@@ -259,7 +259,7 @@ There are two modes: Normal and Passive Mode. Testing with SAP systems has only 
 
 ### Configure antivirus exclusions
 
-Before you configure exclusions, make sure that the SAP Basis Team coordinates with your security team.  Exclusions should be configured centrally and not at the VM level. Exclusions such as the shared SAPMNT file system should be excluded via a policy using the Intune admin tool.
+Before you configure exclusions, make sure that the SAP Basis team coordinates with your security team.  Exclusions should be configured centrally and not at the VM level. Exclusions such as the shared SAPMNT file system should be excluded via a policy using the Intune admin tool.
 
 To view exclusions, use the following command:
 
@@ -269,6 +269,7 @@ For more information about exclusions, see the following resources:
 
 - [Manage exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)
 - [Configure custom exclusions for Microsoft Defender Antivirus](configure-exclusions-microsoft-defender-antivirus.md)
+- [Contextual file and folder exclusions](configure-contextual-file-folder-exclusions-microsoft-defender-antivirus.md)
 
 ### Configure EDR exclusions
 
