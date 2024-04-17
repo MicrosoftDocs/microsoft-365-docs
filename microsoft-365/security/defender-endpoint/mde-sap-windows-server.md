@@ -199,13 +199,14 @@ Here's a list of what to test:
 
    The values you want to see are `Status: Running` and `StartType: Automatic`.
    
-   For more information, see [Review events and errors using Event Viewer](event-error-codes.md).
+   For more information about the output, see [Review events and errors using Event Viewer](event-error-codes.md).
+
+4. To check whether Microsoft Defender Antivirus software components are up to date, use Windows Update. If Microsoft Defender Antivirus isn't up to date, or if you get an error, contact your security team. For more infomration about updates, see [Microsoft Defender Antivirus security intelligence and product updates](microsoft-defender-antivirus-updates.md).
+
+5. Make sure behavior monitoring is turned on. If tamper protection is enabled, behavior monitoring is turned on by default. Use the default configuration of tamper protection enabled, behavior monitoring enabled, and real-time monitoring enabled unless a specific problem is identified. For more information, see [Built-in protection helps guard against ransomware](built-in-protection.md).
 
 
-
-1. 
-- How to check Microsoft Defender Endpoint Detection and Response (EDR) status?
-- How to check Microsoft Defender Antivirus software components are up to date?  
+1. If ?  
 - What is Behavior Monitoring?
 - What is the recommended setting for RealTimeProtectionEnabled?
 - Does Defender for Endpoint on Windows scan network shares?
