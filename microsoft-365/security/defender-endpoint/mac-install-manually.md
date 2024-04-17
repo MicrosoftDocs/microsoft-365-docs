@@ -182,11 +182,11 @@ Starting with macOS 14, a user must explicitly allow an application to access Bl
 macOS will pop a prompt up, telling the user that Microsoft Defender can access Bluetooth (applies only if you use Bluetooth based policies for Device Control).
 Click Allow to grant Microsoft Defender to access Bluetooth.
 
-:::image type="content" source="media/macos-defender-bluetooth.png" alt-text="Bluetooth access request":::
+:::image type="content" source="media/macos-defender-bluetooth.png" alt-text="Screenshot that shows Bluetooth access request":::
 
-You can confirm that permissions are granted in System Settings => Privacy Settings => Bluetooth:
+You can confirm that permissions are granted in System Settings => Privacy Settings => Bluetooth.
 
-:::image type="content" source="media/macos-defender-bluetooth-review.png" alt-text="Review Bluetooth access":::
+:::image type="content" source="media/macos-defender-bluetooth-review.png" alt-text="Screenshot that shows Review Bluetooth access":::
 
 ## Onboarding Package
 
