@@ -78,7 +78,7 @@ Microsoft Defender for Endpoint no longer supports Big Sur (11)
 
     > [!NOTE]
     > You need to deploy a new MDM configuration profile for Defender to access Bluetooth.
-    > See details for [JAMF](mac-jamfpro-policies.md#step-10-grant-bluetooth-permssions) and [Intune](mac-install-with-intune.md#step-7-bluetooth-permissions)
+    > See details for [JAMF](mac-jamfpro-policies.md#step-10-grant-bluetooth-permissions) and [Intune](mac-install-with-intune.md#step-7-bluetooth-permissions)
 
 ### Mar-2024 (Build: 101.24012.0010  | Release version: 20.124012.10.0)
 

@@ -40,7 +40,7 @@ You'll need to take the following steps:
 7. [Approve System extensions for Microsoft Defender for Endpoint](#step-7-approve-system-extensions-for-microsoft-defender-for-endpoint)
 8. [Configure Network Extension](#step-8-configure-network-extension)
 9. [Configure Background Services](#step-9-configure-background-services)
-10. [Grant Bluetooth Permissions](#step-10-grant-bluetooth-permssions)
+10. [Grant Bluetooth Permissions](#step-10-grant-bluetooth-permissions)
 11. [Schedule scans with Microsoft Defender for Endpoint on macOS](#step-11-schedule-scans-with-microsoft-defender-for-endpoint-on-macos)
 12. [Deploy Microsoft Defender for Endpoint on macOS](#step-12-deploy-microsoft-defender-for-endpoint-on-macos)
 
