@@ -55,7 +55,7 @@ You encounter this message in a different way: If you're using the terminal to e
 
 ### Cause
 
-- You can encounter an error if you've deployed and/or installed the Microsoft Defender for Endpoint on macOS package [Download installation packages](mac-install-manually.md#download-installation-and-onboarding-packages), but you might not have run the configuration script [Download the onboarding package](mac-install-with-intune.md#step-14-download-the-onboarding-package) that contains the license settings. For information on troubleshooting in this scenario, see [If you didn't run the configuration script](#if-you-did-not-run-the-configuration-script).
+- You can encounter an error if you've deployed and/or installed the Microsoft Defender for Endpoint on macOS package [Download installation packages](mac-install-manually.md#download-installation-and-onboarding-packages), but you might not have run the configuration script [Download the onboarding package](mac-install-with-intune.md#step-15-download-the-onboarding-package) that contains the license settings. For information on troubleshooting in this scenario, see [If you didn't run the configuration script](#if-you-did-not-run-the-configuration-script).
 
 - You can encounter an error message when the Microsoft Defender for Endpoint on macOS agent isn't up to date. For information on troubleshooting in this scenario, see [If Microsoft Defender for Endpoint on macOS isn't up to date](#if-microsoft-defender-for-endpoint-on-macos-is-not-up-to-date).
 
@@ -73,7 +73,7 @@ Depending on the deployment management tool used, follow the tool-specific instr
 
 |Management  |License deployment instructions (Onboarding instructions)  |
 |---------|---------|
-|Intune     |   [Download the onboarding package](mac-install-with-intune.md#step-14-download-the-onboarding-package)     |
+|Intune     |   [Download the onboarding package](mac-install-with-intune.md#step-15-download-the-onboarding-package)     |
 |JamF     |    [Step 1: Get the Microsoft Defender for Endpoint onboarding package](mac-jamfpro-policies.md#step-1-get-the-microsoft-defender-for-endpoint-onboarding-package)     |
 |Other MDM     |     [License settings](mac-install-with-other-mdm.md#license-settings)   |
 |Manual installation      |    [Download installation and onboarding packages](mac-install-manually.md#download-installation-and-onboarding-packages); and [Onboarding Package](mac-install-manually.md#onboarding-package)     |
