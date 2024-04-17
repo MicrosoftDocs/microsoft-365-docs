@@ -199,7 +199,7 @@ Here's a list of what to test:
 
    The values you want to see are `Status: Running` and `StartType: Automatic`.
    
-   
+   For more information, see [Review events and errors using Event Viewer](event-error-codes.md).
 
 
 
