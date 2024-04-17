@@ -94,7 +94,7 @@ Here's a list of SAP articles you can use as needed:
 
 4. **Have the SAP Basis team and your security team work together on Defender for Endpoint deployment**. The two teams need to jointly create a phased deployment, testing, and monitoring plan.
 
-5. **Use tools such as PerfMon (Windows) to create a performance baseline before deploying and activating Defender for Endpoint**. Compare the performance utilization before and after activating Defender for Endpoint. See [perfmon](/windows-server/administration/windows-commands/perfmon).
+5. **Use tools like PerfMon (Windows) to create a performance baseline before deploying and activating Defender for Endpoint**. Compare the performance utilization before and after activating Defender for Endpoint. See [perfmon](/windows-server/administration/windows-commands/perfmon).
 
 6. **Deploy the latest version of Defender for Endpoint and use the latest releases of Windows**, ideally Windows Server 2019 or newer. See [Minimum requirements for Microsoft Defender for Endpoint](minimum-requirements.md). 
 
