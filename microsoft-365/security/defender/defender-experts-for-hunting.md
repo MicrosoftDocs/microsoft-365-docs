@@ -37,7 +37,7 @@ The following capabilities included in this managed threat hunting service could
 
 - **Threat hunting and analysis** – Defender Experts for Hunting look deeper to expose advanced threats and identify the scope and impact of malicious activity associated with human adversaries or hands-on-keyboard attacks.
 - **Defender Experts Notifications** – Notifications show up as incidents in Microsoft Defender XDR, helping to improve your security operations' incident response with specific information about the scope, method of entry, and remediation instructions.
-- **Ask Defender Experts** – Select **Ask Defender Experts** in the Microsoft Defender portal to get expert advice about threats your organization is facing. You can ask for help on a specific incident, nation-state actor, or attack vector-related notifications.
+- **Ask Defender Experts** – Select [**Ask Defender Experts**](experts-on-demand.md) in the Microsoft Defender portal to get expert advice about threats your organization is facing. You can ask for help on a specific incident, nation-state actor, or attack vector-related notifications.
 - **Hunter-trained AI** – Our Defender Experts for Hunting share their learning back into the automated tools they use to improve threat discovery and prioritization.
 - **Reports** – An interactive report summarizing what we hunted and what we found.
 
