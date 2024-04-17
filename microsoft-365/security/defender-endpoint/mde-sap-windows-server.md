@@ -272,14 +272,14 @@ For more information about exclusions, see the following resources:
 
 ### Configure EDR exclusions
 
-It isn't recommended to exclude files, paths, or processes from EDR as such exclusions comprise the protection from modern non-file based threats. If required, open a support case with Microsoft Support via the Microsoft Defender portal specifying executables and/or paths to exclude. See [Contact Microsoft Defender for Endpoint support](contact-support.md).
+It isn't recommended to exclude files, paths, or processes from EDR as such exclusions comprise the protection from modern nonfile based threats. If necessary, open a support case with Microsoft Support via the Microsoft Defender portal specifying executables and/or paths to exclude. See [Contact Microsoft Defender for Endpoint support](contact-support.md).
 
 ### Completely disable Defender for Endpoint on Windows for testing purposes
 
 > [!WARNING]
 > It is not recommended to disable security software unless there is no alternative to solve or isolate a problem. 
 
-Defender for Endpoint should be configured with [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) turned on. To temporarily disable Defender for Endpoint to isolate problems, it is recommended to use [troubleshooting mode](/microsoft-365/security/defender-endpoint/enable-troubleshooting-mode).
+Defender for Endpoint should be configured with [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) turned on. To temporarily disable Defender for Endpoint to isolate problems, it's recommended to use [troubleshooting mode](/microsoft-365/security/defender-endpoint/enable-troubleshooting-mode).
 
 To shut down various subcomponents of the Microsoft Defender Antivirus solution, run the following commands:
 
@@ -292,7 +292,7 @@ Set-MpPreference -DisableIOAVProtection $true
 Set-MpPreference -EnableNetworkProtection Disabled 
 ```
 
-You cannot turn off EDR subcomponents on a device. The only way to turn EDR off is to [offboard the device](configure-endpoints-script.md#offboard-devices-using-a-local-script).
+You can't turn off EDR subcomponents on a device. The only way to turn off EDR is to [offboard the device](configure-endpoints-script.md#offboard-devices-using-a-local-script).
 
 To turn off [cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md) (Microsoft Advanced Protection Service, or MAPS), run the following commands:
 
