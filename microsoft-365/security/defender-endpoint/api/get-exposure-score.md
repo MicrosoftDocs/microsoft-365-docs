@@ -74,7 +74,7 @@ If successful, this method returns 200 OK, with the exposure data in the respons
 Here is an example of the request.
 
 ```http
-GET https://api.securitycenter.microsoft.com/api/exposureScore
+GET https://api.security.microsoft.com/api/exposureScore
 ```
 
 ### Response
@@ -86,7 +86,7 @@ Here is an example of the response.
 
 ```json
 {
-    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#ExposureScore/$entity",
+    "@odata.context": "https://api.security.microsoft.com/api/$metadata#ExposureScore/$entity",
     "time": "2019-12-03T07:23:53.280499Z",
     "score": 33.491554051195706
 }
