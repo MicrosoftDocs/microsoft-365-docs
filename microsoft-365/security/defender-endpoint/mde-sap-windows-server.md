@@ -101,18 +101,22 @@ SAP Support policy is documented in [3356389 - Antivirus or other security softw
 
    For more information about DBMS exclusions, use the following resources:
 
-
+      - **SQL Server**: [Configure antivirus software to work with SQL Server](https://learn.microsoft.com/en-US/troubleshoot/sql/database-engine/security/antivirus-and-sql-server)
+      - **Oracle**: [How To Configure Anti-Virus On Oracle Database Server (Doc ID 782354.1)](https://support.oracle.com/knowledge/Oracle%20Database%20Products/782354_1.html)
+      - **DB2** – [Which DB2 directories to exclude from Linux Anti-virus software](https://www.ibm.com/support/pages/which-db2-directories-exclude-linux-anti-virus-software) (use the same commands on Windows Server) 
+      - **SAP ASE**: Contact SAP 
+      - **MaxDB**: Contact SAP
 
 8. Microsoft Defender Antivirus with SAP applications should have the following settings in most cases: 
 
-AntivirusEnabled                         : True
-AntivirusSignatureAge                    : 0
-BehaviorMonitorEnabled                   : True
-DefenderSignaturesOutOfDate          : False
-IsTamperProtected                        : True
-RealTimeProtectionEnabled            : True
+   - `AntivirusEnabled                   : True`
+   - `AntivirusSignatureAge              : 0`
+   - `BehaviorMonitorEnabled             : True`
+   - `DefenderSignaturesOutOfDate        : False`
+   - `IsTamperProtected                  : True`
+   - `RealTimeProtectionEnabled          : True`
 
-9. Tools such as Defender for Endpoint security policies are recommended to ensure that the deployment and configuration of Defender for Endpoint  is configured and uniformly deployed. In the Microsoft Defender portal navigate to  Endpoints > Configuration management > Endpoint security policies and then select Create new Policy. For more information review this link   <https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/manage-security-policies?view=o365-worldwide> 
+9. Tools, such as Defender for Endpoint security policies are recommended to ensure that Defender for Endpoint is configured correctly and uniformly deployed. In the Microsoft Defender portal, go to **Endpoints** > **Configuration management** > **Endpoint security policies**, and then select **Create new Policy**. For more information, see [Manage endpoint security policies in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/manage-security-policies). 
 
 10. Several new features are being implemented in Defender for Endpoint on  Windows and these features have been tested with SAP systems. These new features reduce blocking and lower CPU consumption. It is recommended to use the very latest Defender for Endpoint for Windows release
 
