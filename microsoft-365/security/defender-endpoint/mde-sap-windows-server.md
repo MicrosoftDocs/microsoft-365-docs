@@ -86,13 +86,13 @@ SAP Support policy is documented in [3356389 - Antivirus or other security softw
 
 2. Deploy Defender for Endpoint to nonproductive systems first before deploying to production systems. Deploying Defender for Endpoint directly to production systems without testing is highly risky and can lead to downtime. If you can't delay deploying Defender for Endpoint to your production systems, consider temporarily disabling [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) and [real-time protection](configure-protection-features-microsoft-defender-antivirus.md). 
 
-3. Real-time protection is enabled by default in Windows Server. If problems are identified that might be related to Defender for Endpoint, it is recommended to [configure exclusions](defender-endpoint-antivirus-exclusions.md) and/or [open a support case](contact-support.md) via the Microsoft Defender portal. 
+3. Real-time protection is enabled by default in Windows Server. If problems are identified that might be related to Defender for Endpoint, it's recommended to [configure exclusions](defender-endpoint-antivirus-exclusions.md) and/or [open a support case](contact-support.md) via the Microsoft Defender portal. 
 
 4. Defender for Endpoint deployment should be a joint project between the SAP Basis Team and your organization's security Team. The two teams need to create a phased deployment, testing and monitoring plan.
 
 5. Use tools such as PerfMon (Windows) to create a performance baseline before deploying and activating Defender for Endpoint. Compare the performance utilization before and after activating Defender for Endpoint.
 
-6. Deploy the latest version of Defender for Endpoint and use the latest releases of Windows, ideally Windows Server 2019 or newer. No testing has been done on old releases of Windows such as Windows 2012. 
+6. Deploy the latest version of Defender for Endpoint and use the latest releases of Windows, ideally Windows Server 2019 or newer. No testing has been done on old releases of Windows such as Windows Server 2012. 
 
 7. Configure the following exclusions for Microsoft Defender Antivirus: 
 
@@ -121,21 +121,19 @@ SAP Support policy is documented in [3356389 - Antivirus or other security softw
 
 9. Tools, such as Defender for Endpoint security policies are recommended to ensure that Defender for Endpoint is configured correctly and uniformly deployed. In the Microsoft Defender portal, go to **Endpoints** > **Configuration management** > **Endpoint security policies**, and then select **Create new Policy**. For more information, see [Manage endpoint security policies in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/manage-security-policies). 
 
-10. Several new features are being implemented in Defender for Endpoint on  Windows and these features have been tested with SAP systems. These new features reduce blocking and lower CPU consumption. It is recommended to use the very latest Defender for Endpoint for Windows release
+10. Several new features are being implemented in Defender for Endpoint on Windows, and these features have been tested with SAP systems. These new features reduce blocking and lower CPU consumption. It is recommended to use the very latest Defender for Endpoint for Windows release. See [Microsoft Defender Antivirus security intelligence and product updates](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-updates).
 
+## Deployment methodology
 
-
-## Deployment Methodology
-
-SAP and Microsoft do not recommend deploying Defender for Endpoint on Windows directly to all development, QAS and production systems simultaneously and/or without careful testing and monitoring. Customers that have deployed Defender for Endpoint and other similar software in an uncontrolled manner without adequate testing have experienced system downtime as a result. 
+SAP and Microsoft do not recommend deploying Defender for Endpoint on Windows directly to all development, QAS, and production systems simultaneously, and/or without careful testing and monitoring. Customers who have deployed Defender for Endpoint and other similar software in an uncontrolled manner without adequate testing have experienced system downtime as a result. 
 
 Defender for Endpoint on Windows and any other software or configuration change should be deployed into development systems first, validated in QAS and only then deployed into production environments. 
 
-Using tools such as Endpoint Security Policies to deploy Defender for Endpoint to an entire SAP landscape without testing is very likely to cause downtime. 
+Using tools, such as [Defender for Endpoint security settings management](/mem/intune/protect/mde-security-integration) to deploy Defender for Endpoint to an entire SAP landscape without testing is very likely to cause downtime.
 
-The factors that need to be tested include:
+Here's a list of what to test:
 
-1. Deploy Defender for Endpoint  with Tamper Protection enabled. If testing identifies file locking or blocking issues determine whether to disable Real Time Scanning and configure scheduled scans. If testing identifies problems open a support case using the Microsoft Defender Portal. 
+1. Deploy Defender for Endpoint  with [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) enabled. If testing identifies file locking or other blocking issues, determine whether to disable [real-time protection](configure-protection-features-microsoft-defender-antivirus.md) and configure [scheduled scans](schedule-antivirus-scans.md). If testing identifies problems, open a [support case](contact-support.md) using the Microsoft Defender portal. 
 
 2. Exclude DBMS files and executables following DBMS vendor recommendation 
 
