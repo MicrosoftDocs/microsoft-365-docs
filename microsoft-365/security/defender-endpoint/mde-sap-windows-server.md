@@ -54,19 +54,17 @@ Microsoft and other security software vendors track threats and provide trend in
 
 ## SAP support statement on Defender for Endpoint and other Microsoft security solutions
 
-SAP provide basic documentation for conventional file scan antivirus solutions.  Conventional file scan antivirus solutions compare file signatures against a database of known threats.  When an infected file is identified, the antivirus software typically alerts and quarantines the file.  The mechanisms and behavior of file scan antivirus solutions are reasonably well known and are predictable, therefore SAP support can provide a basic level of support for SAP applications interacting with file scan antivirus software.  
+SAP provides basic documentation for conventional file scan antivirus solutions. Conventional file scan antivirus solutions compare file signatures against a database of known threats. When an infected file is identified, the antivirus software typically alerts and quarantines the file. The mechanisms and behavior of file scan antivirus solutions are reasonably well known and are predictable; therefore, SAP support can provide a basic level of support for SAP applications interacting with file scan antivirus software.  
 
-File based threats are now only one possible vector for malicious software.  Fileless malware and that lives off the land, highly polymorphic threats that mutate faster than traditional solutions can keep up with, and human-operated attacks that adapt to what adversaries find on compromised devices. Traditional antivirus security solutions are not sufficient to stop such attacks. Artificial intelligence (AI) and device learning (ML) backed capabilities, such as behavioral blocking and containment are required.  Security software such as Defender for Endpoint EDR has advanced threat protection (ATP) features to mitigate modern threats.  
+File based threats are now only one possible vector for malicious software. Fileless malware and that lives off the land, highly polymorphic threats that mutate faster than traditional solutions can keep up with, and human-operated attacks that adapt to what adversaries find on compromised devices. Traditional antivirus security solutions are not sufficient to stop such attacks. Artificial intelligence (AI) and device learning (ML) backed capabilities, such as behavioral blocking and containment are required.  Security software such as Defender for Endpoint EDR has advanced threat protection (ATP) features to mitigate modern threats.  
 
-ATP security software is continuously monitoring Operating System calls such as file read, file write, create socket and other process level operations.  The Defender for Endpoint EDR sensor acquires Opportunistic Locks on local NTFS files systems and is therefore very unlikely to impact applications.  Opportunistic locks are not possible on remote network file systems and in rare cases a lock may cause general non-specific errors in SAP applications such as "Access Denied".   
+Defender for Endpoint is continuously monitoring Operating System calls such as file read, file write, create socket and other process level operations. The Defender for Endpoint EDR sensor acquires Opportunistic Locks on local NTFS files systems and is therefore very unlikely to impact applications.  Opportunistic locks are not possible on remote network file systems and in rare cases a lock may cause general non-specific errors in SAP applications such as "Access Denied".
 
- 
-
-SAP is not able to provide any level of support for EDR/XDR software as the mechanisms are adaptive; therefore, the mechanisms are not predictable and potentially are not reproducible.  When problems are identified on systems running Advanced Security solutions, SAP recommends disabling the security software and trying to reproduce the problem.  A support case can then be raised with the security software vendor.  
+SAP is not able to provide any level of support for EDR/XDR software as the mechanisms are adaptive; therefore, the mechanisms are not predictable and potentially are not reproducible. When problems are identified on systems running Advanced Security solutions, SAP recommends disabling the security software and trying to reproduce the problem.  A support case can then be raised with the security software vendor.  
 
 SAP Support policy is documented in [3356389 - Antivirus or other security software affecting SAP operations](https://me.sap.com/notes/3356389)
 
-# Recommended SAP OSS Notes
+## Recommended SAP OSS Notes
 
 [3356389 - Antivirus or other security software affecting SAP operations - SAP for Me](https://me.sap.com/notes/3356389)
 
@@ -80,14 +78,20 @@ SAP Support policy is documented in [3356389 - Antivirus or other security softw
 
 - [1497394 - Which files and directories should be excluded from an antivirus scan for SAP BusinessObjects Business Intelligence Platform products in Windows? - SAP for Me](https://me.sap.com/notes/1497394/E)
 
-# SAP Applications on Windows: Top 10 Recommendations
+## SAP Applications on Windows: Top 10 Recommendations
 
 1. Limiting access to SAP servers, blocking network ports and all other common security protection measures remain an essential first step.  The threat landscape has evolved from "file based" Viruses to file-less complex and sophisticated threats.  Steps such as **blocking ports and limiting logon/access** to VMs is **no longer considered sufficient** to fully mitigate modern threats.
+
 2. Deploy Defender for Endpoint to non-productive systems first before deploying to production systems.  Deploying Defender for Endpoint directly to production systems without testing is highly risky and has led to downtime.  If it is not possible to delay deploying Defender for Endpoint to production systems, consider temporarily disabling Tamper Protection and Real Time Protection. 
+
 3. Real Time Protection is enabled by default on Windows OS.  If problems are identified that might be related to Defender for Endpoint, it is recommended to configure exclusions and/or open a support case via the Microsoft Defender portal 
+
 4. Defender for Endpoint deployment should be a joint project between the SAP Basis Team and the Enterprise Security Team. The two teams need to create a phased deployment, testing and monitoring plan 
+
 5. Use tools such as Perfmon (Windows) to create a performance baseline before deploying and activating Defender for Endpoint.  Compare the performance utilization before and after activating Defender for Endpoint.
+
 6. Deploy the latest version of Defender for Endpoint and use the latest releases of Windows, ideally Windows 2019 or higher.  No testing has been done on old releases of Windows such as Windows 2012. 
+
 7. Configure the following exclusions for Microsoft Defender Antivirus: 
 
    DBMS data files, log files and temp files, including disks containing backup files
@@ -107,7 +111,7 @@ SAP Support policy is documented in [3356389 - Antivirus or other security softw
 - Tools such as Defender for Endpoint security policies are recommended to ensure that the deployment and configuration of Defender for Endpoint  is configured and uniformly deployed.  In the Microsoft Defender portal navigate to  Endpoints > Configuration management > Endpoint security policies and then select Create new Policy.  For more information review this link   <https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/manage-security-policies?view=o365-worldwide> 
 - Several new features are being implemented in Defender for Endpoint on  Windows and these features have been tested with SAP systems.  These new features reduce blocking and lower CPU consumption.  It is recommended to use the very latest Defender for Endpoint for Windows release
 
-# Deployment Methodology
+## Deployment Methodology
 
 SAP and Microsoft do not recommend deploying Defender for Endpoint on Windows directly to all development, QAS and production systems simultaneously and/or without careful testing and monitoring.  Customers that have deployed Defender for Endpoint and other similar software in an uncontrolled manner without adequate testing have experienced system downtime as a result.  
 
@@ -118,17 +122,21 @@ Using tools such as Endpoint Security Policies to deploy Defender for Endpoint t
 The factors that need to be tested include:
 
 1. Deploy Defender for Endpoint  with Tamper Protection enabled.  If testing identifies file locking or blocking issues determine whether to disable Real Time Scanning and configure scheduled scans.  If testing identifies problems open a support case using the Microsoft Defender Portal.  
+
 2. Exclude DBMS files and executables following DBMS vendor recommendation 
+
 3. Analyze SAPMNT, SAP TRANS_DIR, Spool and Job Log directories.  If there are > 100,000 files consider archiving to reduce the number of files
+
 4. Confirm the performance limits and quotas of the shared file system used for SAPMNT.  The SMB share source could be a NetApp appliance, a Windows server shared disk or Azure Files SMB.  
+
 5. Configure exclusions such that all SAP application servers are not scanning the SAPMNT share simultaneously as this may overload shared storage server  
+
 6. Interface files are recognized as an attack vector and it is generally recommend to host interface files on a dedicated non-SAP file server. Real Time Protection should be activated on this dedicated file server.  SAP Servers should never be used as file servers for interface files.  
 
    
+Note: some large SAP systems have more than 20 SAP application servers each with a connection to the same SAPMNT SMB share.  20 application servers simultaneously scanning the same SMB server may overload the SMB server.  It is recommended to exclude SAPMNT from regular scans.  
 
-- Note: some large SAP systems have more than 20 SAP application servers each with a connection to the same SAPMNT SMB share.  20 application servers simultaneously scanning the same SMB server may overload the SMB server.  It is recommended to exclude SAPMNT from regular scans.  
-
-# Important Configuration Settings for Microsoft Defender for Endpoint with SAP on Windows
+## Important Configuration Settings for Microsoft Defender for Endpoint with SAP on Windows
 
 1. What is Microsoft Defender for Endpoint?
 
@@ -156,7 +164,7 @@ The factors that need to be tested include:
 - Where to open a support case?
 - While testing Defender for Endpoint in Development and on QAS VMs is it possible to delay the Defender for Endpoint extension deployment to Production SAP VMs if Defender for Cloud is activated? Is it possible to selectively deploy Defender for Endpoint to VMs by Resource Group or other criteria? 
 
-# Useful Commands:  Microsoft Defender for Endpoint with SAP on Windows
+## Useful Commands: Microsoft Defender for Endpoint with SAP on Windows Server
 
 - 
 - How to manually update Microsoft Defender Antivirus definitions?
