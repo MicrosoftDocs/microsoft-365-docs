@@ -25,13 +25,13 @@ audience: ITPro
 
 If your organization uses SAP, it's essential to understand the compatibility and support between [antivirus](microsoft-defender-antivirus-on-windows-server.md) and [EDR](overview-endpoint-detection-response.md) in Microsoft Defender for Endpoint and your SAP applications. This article helps you understand the support provided by SAP for endpoint protection security solutions like Defender for Endpoint and how they interact with SAP applications.
 
-This article applies to Microsoft Defender for Endpoint running on Windows Server OS Releases with SAP applications such, as NetWeaver, S4 Hana, and SAP standalone engines, such as LiveCache. In this article, we focus on antivirus and EDR capabilities in Defender for Endpoint; however, Defender for Endpoint includes additional capabilities (see [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)). 
+This article applies to Microsoft Defender for Endpoint running on Windows Server OS Releases with SAP applications such, as NetWeaver, S4 Hana, and SAP standalone engines, such as LiveCache. In this article, we focus on antivirus and EDR capabilities in Defender for Endpoint; however, Defender for Endpoint includes more capabilities (see [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)). 
 
 This article doesn't cover SAP client software, such as SAPGUI or Microsoft Defender Antivirus on Windows client devices. 
 
 ## Enterprise security and your SAP Basis team
 
-Enterprise security is a specialist role and the activities described below should be planned as a joint activity between your enterprise security team and the SAP Basis team. The enterprise security team needs to coordinate with the SAP Basis team and jointly design the Defender for Endpoint configuration and analyze any exclusions. 
+Enterprise security is a specialist role and the activities described in this article should be planned as a joint activity between your enterprise security team and the SAP Basis team. The enterprise security team needs to coordinate with the SAP Basis team and jointly design the Defender for Endpoint configuration and analyze any exclusions. 
 
 ### Get an overview of Defender for Endpoint
 
@@ -157,7 +157,7 @@ Here's a list of what to test:
 1. Get an overview of [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md).
 
    > [!NOTE]
-   > The term *Defender* is sometimes used to refer to an entire suite of products and solutions. See [What is Microsoft Defender XDR?](/microsoft-365/security/defender/microsoft-365-defender). In this article, we focus on Defender for Endpoint.
+   > The term *Defender* is sometimes used to refer to an entire suite of products and solutions. See [What is Microsoft Defender XDR?](/microsoft-365/security/defender/microsoft-365-defender). In this article, we focus on antivirus and EDR capabilities in Defender for Endpoint.
     
 2. To check Microsoft Defender Antivirus status, open Command Prompt and then run these PowerShell commands:
 
