@@ -25,11 +25,13 @@ audience: ITPro
 
 If your organization uses SAP, it's essential to understand the compatibility and support between [antivirus](microsoft-defender-antivirus-on-windows-server.md) and [EDR](overview-endpoint-detection-response.md) in Microsoft Defender for Endpoint and your SAP applications. This article helps you understand the support provided by SAP for endpoint protection security solutions like Defender for Endpoint and how it interacts with SAP applications.
 
-This article applies to Microsoft Defender for Endpoint running on Windows Server OS Releases with SAP applications such, as NetWeaver, S4 Hana, and SAP standalone engines, such as LiveCache. In this article, we focus on antivirus and EDR capabilities in Defender for Endpoint; however, Defender for Endpoint includes additional capabilities. This article doesn't cover SAP client software, such as SAPGUI or Microsoft Defender Antivirus on Windows client devices. 
+This article applies to Microsoft Defender for Endpoint running on Windows Server OS Releases with SAP applications such, as NetWeaver, S4 Hana, and SAP standalone engines, such as LiveCache. In this article, we focus on antivirus and EDR capabilities in Defender for Endpoint; however, Defender for Endpoint includes additional capabilities (see [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)). 
+
+This article doesn't cover SAP client software, such as SAPGUI or Microsoft Defender Antivirus on Windows client devices. 
 
 ## Enterprise security and your SAP Basis team
 
-Enterprise Security is a specialist role and the activities described below should be planned as a joint activity between the Enterprise Security Team and the SAP Basis Team. The Enterprise Security Team needs to coordinate with the SAP Basis Team and jointly design the Defender for Endpoint configuration and analyze any exclusions. 
+Enterprise security is a specialist role and the activities described below should be planned as a joint activity between your enterprise security team and the SAP Basis Team. The enterprise security team needs to coordinate with the SAP Basis Team and jointly design the Defender for Endpoint configuration and analyze any exclusions. 
 
 ### Get an overview of Defender for Endpoint
 
