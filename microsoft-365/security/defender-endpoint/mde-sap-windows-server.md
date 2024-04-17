@@ -103,7 +103,9 @@ SAP Support policy is documented in [3356389 - Antivirus or other security softw
    - The entire contents of the SAPLOC directory
    - The entire contents of the TRANS directory
    - The entire contents of directories for standalone engines such as TREX
-
+   
+   Advanced users can consider using [contextual file and folder exclusions](configure-contextual-file-folder-exclusions-microsoft-defender-antivirus.md). 
+   
    For more information about DBMS exclusions, use the following resources:
 
       - **SQL Server**: [Configure antivirus software to work with SQL Server](/troubleshoot/sql/database-engine/security/antivirus-and-sql-server)
