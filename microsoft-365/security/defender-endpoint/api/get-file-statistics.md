@@ -89,7 +89,7 @@ If successful and file exists - 200 OK with statistical data in the body. If fil
 Here's an example of the request.
 
 ```http
-GET https://api.securitycenter.microsoft.com/api/files/0991a395da64e1c5fbe8732ed11e6be064081d9f/stats?lookBackHours=48
+GET https://api.security.microsoft.com/api/files/0991a395da64e1c5fbe8732ed11e6be064081d9f/stats?lookBackHours=48
 ```
 
 ### Response example
@@ -98,7 +98,7 @@ Here's an example of the response.
 
 ```json
 {
-    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#microsoft.windowsDefenderATP.api.InOrgFileStats",
+    "@odata.context": "https://api.security.microsoft.com/api/$metadata#microsoft.windowsDefenderATP.api.InOrgFileStats",
     "sha1": "0991a395da64e1c5fbe8732ed11e6be064081d9f",
     "organizationPrevalence": 14850,
     "orgFirstSeen": "2019-12-07T13:44:16Z",
