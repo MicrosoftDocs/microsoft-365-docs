@@ -47,6 +47,7 @@ The following table summarizes the steps you would need to take to deploy and ma
 |Background services|`background_services.mobileconfig`|N/A|
 |Configure Microsoft Defender for Endpoint notifications|`notif.mobileconfig`|`com.microsoft.wdav.tray`|
 |Accessibility settings|`accessibility.mobileconfig`|`com.microsoft.dlp.daemon`|
+|Bluetooth|`bluetooth.mobileconfig`|`com.microsoft.dlp.agent`|
 |Configure Microsoft AutoUpdate (MAU)|`com.microsoft.autoupdate2.mobileconfig`|`com.microsoft.autoupdate2`|
 |Device Control|`DeviceControl.mobileconfig`|N/A|
 |Data Loss Prevention|`DataLossPrevention.mobileconfig`|N/A|
@@ -159,6 +160,9 @@ To configure Full Disk Access:
 
 1. Review the configuration profile. Select **Create**.
 
+> [!NOTE]
+> Full Disk Access granted through Apple MDM Configuration Profile is not reflected in System Settings => Privacy & Security => Full Disk Access.
+
 ### Step 4: Background services
 
    > [!CAUTION]
@@ -235,7 +239,6 @@ To configure notifications:
 
 1. Review the configuration profile. Select **Create**.
 
-
 ### Step 6: Accessibility settings
 
 This profile is used to allow Microsoft Defender for Endpoint on macOS to access the accessibility settings on Apple macOS High Sierra (10.13.6) and newer.
@@ -268,7 +271,17 @@ Download [accessibility.mobileconfig](https://github.com/microsoft/mdatp-xplat/b
 
 1. Review the configuration profile. Select **Create**.
 
-### Step 7: Microsoft AutoUpdate
+### Step 7: Bluetooth permissions
+
+   > [!CAUTION]
+   > macOS 14 (Sonoma) contains new privacy enhancements. Beginning with this version, by default, applications cannot access Bluetooth without explicit consent. Microsoft Defender for Endpoint uses it if you configure Bluetooth policies for Device Control.
+
+Download [bluetooth.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/bluetooth.mobileconfig) from [GitHub repository](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles) and use the same workflow as for the Accessibility settings above to enable Bluetooth access.
+
+> [!NOTE]
+> Bluetooth granted through Apple MDM Configuration Profile is not reflected in System Settings => Privacy & Security => Bluetooth.
+
+### Step 8: Microsoft AutoUpdate
 
 This profile is used to update the Microsoft Defender for Endpoint on macOS via Microsoft AutoUpdate (MAU). If you're deploying Microsoft Defender for Endpoint on macOS, you have the options to get an updated version of the application (Platform Update) that are in the different channels mentioned here:
 
@@ -309,7 +322,7 @@ Download [AutoUpdate2.mobileconfig](https://github.com/microsoft/mdatp-xplat/blo
 
 1. Review the configuration profile. Select **Create**.
 
-### Step 8: Microsoft Defender for Endpoint configuration settings
+### Step 9: Microsoft Defender for Endpoint configuration settings
 
 In this step, we go over the "Preferences," which enables you to configure anti-malware and EDR policies using Microsoft Defender portal and Microsoft Intune.
 
@@ -343,7 +356,7 @@ You can manage the security settings for Microsoft Defender for Endpoint on macO
 
 For more information, see [Set preferences for Microsoft Defender for Endpoint on Mac](mac-preferences.md).
 
-### Step 9: Network protection for Microsoft Defender for Endpoint on macOS
+### Step 10: Network protection for Microsoft Defender for Endpoint on macOS
 
 In the [Microsoft Defender portal](https://sip.security.microsoft.com/homepage?tid=72f988bf-86f1-41af-91ab-2d7cd011db47):
 
@@ -373,18 +386,18 @@ In the [Microsoft Defender portal](https://sip.security.microsoft.com/homepage?t
 > [!TIP]
 > You can also configure network protection by appending the information from [**Network protection to help prevent macOS connections to bad sites**](network-protection-macos.md) to the .mobileconig from step 8.
 
-### Step 10: Device Control for Microsoft Defender for Endpoint on macOS
+### Step 11: Device Control for Microsoft Defender for Endpoint on macOS
 
 To set Device Control for Microsoft Defender for Endpoint on macOS, follow the steps in:
 
 - [Device Control for macOS](mac-device-control-overview.md)
 - [Deploy and manage Device Control using Intune](mac-device-control-intune.md)
 
-### Step 11: Data Loss Prevention (DLP) for Endpoint
+### Step 12: Data Loss Prevention (DLP) for Endpoint
 
 To set Purview's Data Loss Prevention (DLP) for endpoint on macOS, follow the steps in [Onboard and offboard macOS devices into Compliance solutions using Microsoft Intune](/purview/device-onboarding-offboarding-macos-intune-mde).
 
-### Step 12: Check status of PList(.mobileconfig)
+### Step 13: Check status of PList(.mobileconfig)
 
 After completing the profile configuration, you'll be able to review the status of the policies.
 
@@ -430,7 +443,7 @@ A standard [Company Portal installation](/intune-user-help/enroll-your-device-in
 
    :::image type="content" source="media/mdatp-icon-bar.png" alt-text="The icon for Microsoft Defender for Endpoint in the status bar":::
 
-### Step 13: Publish application
+### Step 14: Publish application
 
 This step enables deploying Microsoft Defender for Endpoint to enrolled machines.
 
@@ -462,7 +475,7 @@ For more information, see [Add Microsoft Defender for Endpoint to macOS devices 
 > [!IMPORTANT]
 > You should create and deploy the configuration profiles in the above order (step 1-13) for a successful system configuration.
 
-#### Step 14: Download the onboarding package
+#### Step 15: Download the onboarding package
 
 To download the onboarding packages from Microsoft 365 Defender portal:
 
@@ -490,7 +503,7 @@ To download the onboarding packages from Microsoft 365 Defender portal:
 
   :::image type="content" alt-text="Sample description" source="media/deploy-onboarding-package.png" lightbox="media/deploy-onboarding-package.png":::
 
-### Step 15: Deploy the onboarding package
+### Step 16: Deploy the onboarding package
 
 This profile contains license information for Microsoft Defender for Endpoint. 
 
@@ -530,11 +543,11 @@ To deploy the onboarding package:
 
 1. Open **Devices** > **Configuration profiles** to see the created profile.
 
-## Step 16: Verify anti-malware detection
+## Step 17: Verify anti-malware detection
 
 See the following article to test for an anti-malware detection review: [Antivirus detection test for verifying device's onboarding and reporting services](validate-antimalware.md)
 
-## Step 17: Verifying EDR detection
+## Step 18: Verifying EDR detection
 
 See the following article to test for an EDR detection review: [EDR detection test for verifying device onboarding and reporting services](edr-detection.md)
 

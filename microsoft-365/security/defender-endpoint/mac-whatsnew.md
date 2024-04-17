@@ -61,7 +61,26 @@ Microsoft Defender supports macOS Sonoma (14.0) in the current Defender release.
 **macOS Deprecation**
 Microsoft Defender for Endpoint no longer supports Big Sur (11)
 
-### Apr-2024 (Build: 101.24012.0010  | Release version: 20.124012.10.0)
+### Apr-2024 (Build: 101.24032.0006  | Release version: 20.124032.06.0)
+
+| Build:             | **101.24032.0006**    |
+|--------------------|-----------------------|
+| Release version:   | **20.124012.10.0**    |
+| Engine version:    | **1.1.24030.4**       |
+| Signature version: | **1.407.521.0**       |
+
+##### What's new
+
+- Improvements to `mdatp threat` command
+- Remove Big Sur from supported versions of macOS
+- [device control] Fix Bluetooth support on Sonoma (see Note below)
+- Bug and performance fixes
+
+    > [!NOTE]
+    > You need to deploy a new MDM configuration profile for Defender to access Bluetooth.
+    > See details for [JAMF](mac-jamfpro-policies.md#step-10-grant-bluetooth-permssions) and [Intune](mac-install-with-intune.md#step-7-bluetooth-permissions)
+
+### Mar-2024 (Build: 101.24012.0010  | Release version: 20.124012.10.0)
 
 | Build:             | **101.24012.0010**    |
 |--------------------|-----------------------|
