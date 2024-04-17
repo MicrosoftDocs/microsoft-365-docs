@@ -25,7 +25,7 @@ audience: ITPro
 
 If your organization uses SAP, it's essential to understand the compatibility and support between [antivirus](microsoft-defender-antivirus-on-windows-server.md) and [EDR](overview-endpoint-detection-response.md) in Microsoft Defender for Endpoint and your SAP applications. This article helps you understand the support provided by SAP for endpoint protection security solutions like Defender for Endpoint and how they interact with SAP applications.
 
-This article applies to Microsoft Defender for Endpoint running on Windows Server OS Releases with SAP applications such, as NetWeaver, S4 Hana, and SAP standalone engines, such as LiveCache. In this article, we focus on antivirus and EDR capabilities in Defender for Endpoint; however, Defender for Endpoint includes more capabilities (see [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)). 
+This article applies to Microsoft Defender for Endpoint running on Windows Server with SAP applications such, as NetWeaver, S4 Hana, and SAP standalone engines, such as LiveCache. In this article, we focus on antivirus and EDR capabilities in Defender for Endpoint; however, Defender for Endpoint includes more capabilities (see [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)). 
 
 This article doesn't cover SAP client software, such as SAPGUI or Microsoft Defender Antivirus on Windows client devices. 
 
@@ -37,8 +37,7 @@ Enterprise security is a specialist role and the activities described in this ar
 
 Defender for Endpoint is a component of [Microsoft Defender XDR](/microsoft-365/security/defender/), and can be integrated with your SIEM/SOAR solution. 
 
-Before you begin to plan or deploy Defender for Endpoint on Windows Server with SAP, take a moment to get an overview. Watch the following video to learn more about Defender for Endpoint: 
-<br/>
+Before you begin to plan or deploy Defender for Endpoint on Windows Server with SAP, take a moment to get an overview of Defender for Endpoint. The following video provides an overview:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4wDob]
 
@@ -47,7 +46,7 @@ For more detailed information about Defender for Endpoint and Microsoft security
 - [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)
 - [Microsoft Security documentation and training - Security documentation](/security/)
 
-The Microsoft Defender XDR solution incorporates many security components that are beyond the scope of this article. In this article, we focus on two main areas of Defender for Endpoint:
+The Defender for Endpoint incorporates many security components that are beyond the scope of this article. In this article, we focus on two main capabilities:
 
 - **Next-generation protection** (which includes antivirus protection). [Next-generation protection](/microsoft-365/security/defender-endpoint/next-generation-protection) is an antivirus product like other antivirus solutions for Windows environments.
 - **Endpoint Detection and Response** (EDR). [EDR capabilities](overview-endpoint-detection-response.md) detect suspicious activity and system calls, and provide an extra layer of protection against threats that bypassed antivirus protection. 
@@ -57,7 +56,7 @@ Microsoft and other security software vendors track threats and provide trend in
 > [!NOTE]
 > For information on Microsoft Defender for SAP on Linux, see [Deployment guidance for Microsoft Defender for Endpoint on Linux for SAP](/microsoft-365/security/defender-endpoint/mde-linux-deployment-on-sap). Defender for Endpoint on Linux is significantly different than the Windows version. 
 
-## SAP support statement on Defender for Endpoint and other Microsoft security solutions
+## SAP support statement on Defender for Endpoint and other security solutions
 
 SAP provides basic documentation for conventional file scan antivirus solutions. Conventional file scan antivirus solutions compare file signatures against a database of known threats. When an infected file is identified, the antivirus software typically alerts and quarantines the file. The mechanisms and behavior of file scan antivirus solutions are reasonably well known and are predictable; therefore, SAP support can provide a basic level of support for SAP applications interacting with file scan antivirus software. 
 
@@ -67,7 +66,7 @@ Defender for Endpoint is continuously monitoring operating system calls, such as
 
 SAP isn't able to provide any level of support for EDR/XDR software like [Microsoft Defender XDR](../defender/microsoft-365-defender.md) or [Defender for Endpoint](microsoft-defender-endpoint.md). The mechanisms in such solutions are adaptive; therefore, they're not predictable. Further, issues are potentially not reproducible. When problems are identified on systems running advanced security solutions, SAP recommends disabling the security software and then attempting to reproduce the problem. A support case can then be raised with the security software vendor.
 
-SAP Support policy is documented in [3356389 - Antivirus or other security software affecting SAP operations](https://me.sap.com/notes/3356389).
+For more information about the SAP Support policy, see [3356389 - Antivirus or other security software affecting SAP operations](https://me.sap.com/notes/3356389).
 
 ## Recommended SAP OSS Notes
 
