@@ -233,9 +233,7 @@ Here's a list of what to check:
 
 9. **Open a support case** if you need help. See [Contact Microsoft Defender for Endpoint support](contact-support.md).
 
-10. **If you're using production SAP VMs with [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction), keep in mind that Defender for Cloud deploys the Defender for Endpoint extension to all VMs**. If a VM isn't onboarded to Defender for Endpoint, it could be used as an attack vector. 
-
-   If you need more time to test Defender for Endpoint before deplying to your production environment, [contact support](contact-support.md). 
+10. **If you're using production SAP VMs with [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction), keep in mind that Defender for Cloud deploys the Defender for Endpoint extension to all VMs**. If a VM isn't onboarded to Defender for Endpoint, it could be used as an attack vector. If you need more time to test Defender for Endpoint before deplying to your production environment, [contact support](contact-support.md). 
 
 ## Useful Commands: Microsoft Defender for Endpoint with SAP on Windows Server
 
