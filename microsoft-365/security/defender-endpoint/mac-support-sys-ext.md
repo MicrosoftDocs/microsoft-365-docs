@@ -43,17 +43,17 @@ Starting with macOS BigSur (11), Apple's macOS requires all system extensions to
 
 You'll notice that the Microsoft Defender for Endpoint has an **x** symbol in the shield, as shown in the following screenshot:
 
-:::image type="content" source="images/mde-screen-with-x-symbol.png" alt-text="The Microsoft Defender for Endpoint screen that displays the x symbol on its menu." lightbox="images/mde-screen-with-x-symbol.png":::
+:::image type="content" source="media/mde-screen-with-x-symbol.png" alt-text="The Microsoft Defender for Endpoint screen that displays the x symbol on its menu." lightbox="media/mde-screen-with-x-symbol.png":::
 
 If you click the shield with the **x** symbol, you'll get options as shown in the following screenshot:
 
-:::image type="content" source="images/options-on-clicking-x-symbol.png" alt-text="The options you get on clicking the x symbol." lightbox="images/options-on-clicking-x-symbol.png":::
+:::image type="content" source="media/options-on-clicking-x-symbol.png" alt-text="The options you get on clicking the x symbol." lightbox="media/options-on-clicking-x-symbol.png":::
 
 Click **Action needed**.
 
 The screen as shown in the following screenshot appears:
 
-:::image type="content" source="images/screen-on-clicking-action-needed.png" alt-text="The screen that is displayed on clicking the Action needed option." lightbox="images/screen-on-clicking-action-needed.png":::
+:::image type="content" source="media/screen-on-clicking-action-needed.png" alt-text="The screen that is displayed on clicking the Action needed option." lightbox="media/screen-on-clicking-action-needed.png":::
 
 You can also run **mdatp health**: It reports if real-time protection is enabled but not available. This report indicates that the system extension isn't approved to run on your device.
 
@@ -73,7 +73,7 @@ full_disk_access_enabled        : false
 ```
 The output report displayed on running **mdatp health** is shown in the following screenshot:
 
-:::image type="content" source="images/screen-on-clicking-fix.png" alt-text="The screen that is displayed on clicking the Fix button." lightbox="images/screen-on-clicking-fix.png":::
+:::image type="content" source="media/screen-on-clicking-fix.png" alt-text="The screen that is displayed on clicking the Fix button." lightbox="media/screen-on-clicking-fix.png":::
 
 ## Cause
 
@@ -140,12 +140,12 @@ Prior to approving the system extension (using any of the specified management t
 
 If you're using Intune, see [Manage macOS software update policies in Intune](/mem/intune/protect/software-updates-macos).
 
-:::image type="content" source="images/refresh-devices.png" alt-text="The screen on which you refresh the devices." lightbox="images/refresh-devices.png":::
+:::image type="content" source="media/refresh-devices.png" alt-text="The screen on which you refresh the devices." lightbox="media/refresh-devices.png":::
 
 1. Click the ellipses (three dots).
 1. Select **Refresh devices**. The screen as shown in the following screenshot appears:
 
-   :::image type="content" source="images/screen-on-clicking-refresh-devices.png" alt-text="The screen that appears on clicking Refresh devices." lightbox="images/screen-on-clicking-refresh-devices.png":::
+   :::image type="content" source="media/screen-on-clicking-refresh-devices.png" alt-text="The screen that appears on clicking Refresh devices." lightbox="media/screen-on-clicking-refresh-devices.png":::
 
 1. In Launchpad, type **System Preferences**.
 1. Double-click **Profiles**.

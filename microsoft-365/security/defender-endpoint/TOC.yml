@@ -14,8 +14,11 @@
       href: minimum-requirements.md
     - name: Supported Microsoft Defender for Endpoint capabilities by platform
       href: supported-capabilities-by-platform.md
-    - name: What's new in Microsoft Defender for Endpoint?
+    - name: What's new in Defender for Endpoint
       href: whats-new-in-microsoft-defender-endpoint.md
+      items: 
+      - name: What's new in Defender for Endpoint - archive
+        href: whats-new-mde-archive.md
     - name: What's new in Microsoft Defender for Endpoint on Windows
       href: windows-whatsnew.md
     - name: What's new in Microsoft Defender for Endpoint on other platforms
@@ -58,8 +61,12 @@
     items:
     - name: Evaluate capabilities overview
       href: evaluation-lab.md
-    - name: Microsoft defender for endpoint demonstrations
+    - name: Microsoft Defender for Endpoint demonstrations
       items:
+      - name: Overview
+        href: evaluate-microsoft-defender-antivirus.md
+      - name: Evaluate Microsoft Defender Antivirus using Powershell
+        href: microsoft-defender-antivirus-using-powershell.md
       - name: Microsoft Defender for Endpoint demonstration scenarios
         href: defender-endpoint-demonstrations.md
       - name: App reputation demonstration
@@ -202,8 +209,6 @@
               href: mac-device-control-faq.md
           - name: Schedule scans
             href: mac-schedule-scan.md
-          - name: Configure Microsoft Defender for Endpoint on macOS
-            items:
       - name: Update Defender for Endpoint on macOS
         href: mac-updates.md
       - name: Privacy for Microsoft Defender for Endpoint on macOS
@@ -271,8 +276,6 @@
            href: schedule-antivirus-scan-in-mde.md
          - name: Schedule an update of the Microsoft Defender for Endpoint (Linux)
            href: linux-update-MDE-Linux.md
-         - href: linux-support-offline-security-intelligence-update.md
-           name: Configure Offline Security Intelligence Updates for Defender for Endpoint on Linux
          - name: Configure eBPF-based sensor
            href: linux-support-ebpf.md 
          - name: Configure Offline Security Intelligence Update
@@ -579,12 +582,6 @@
           href: office-365-microsoft-defender-antivirus.md
       - name: Safety Scanner Download
         href: safety-scanner-download.md
-      - name: Evaluate Microsoft Defender Antivirus
-        items:
-          - name: Overview
-            href: evaluate-microsoft-defender-antivirus.md
-          - name: Evaluate Microsoft Defender Antivirus using Powershell
-            href: microsoft-defender-antivirus-using-powershell.md
       - name: Configure Microsoft Defender Antivirus features
         href: configure-microsoft-defender-antivirus-features.md
       - name: Manage exclusions for Defender for Endpoint and Microsoft Defender Antivirus
@@ -759,6 +756,11 @@
             href: device-health-microsoft-defender-antivirus-health.md
           - name: Sensor health and OS report
             href: device-health-sensor-health-os.md
+        - name: Microsoft Defender Core service overview
+          href: microsoft-defender-core-service-overview.md
+          displayName: Microsoft Defender Core service overview
+        - name: Microsoft Defender Core service configurations and experimentation 
+          href: microsoft-defender-core-service-configurations-and-experimentation.md
         - name: Troubleshoot performance issues related to real-time protection
           href: troubleshoot-performance-issues.md
         - name: Collect diagnostic data of Microsoft Defender Antivirus
@@ -1509,13 +1511,15 @@
         href: troubleshoot-mdatp.md
       - name: Contact Microsoft Defender for Endpoint support
         href: contact-support.md
-
     - name: Troubleshoot live response issues
       href: troubleshoot-live-response.md
-
     - name: Collect support logs using LiveAnalyzer
       href: troubleshoot-collect-support-log.md
-
+    - name: Troubleshoot Microsoft Defender Antivirus settings
+      href: troubleshoot-settings.md
+    - name: Troubleshooting Security Intelligence Updates from Microsoft Update source
+      href: security-intelligence-update-tshoot.md
+      displayName: Troubleshooting Security Intelligence Updates from Microsoft Update source
     - name: Troubleshoot attack surface reduction issues
       items:
       - name: Network protection

@@ -46,6 +46,7 @@ Microsoft 365 apps (such as Word, Excel, PowerPoint, Outlook, Teams, loop, and m
 | PowerPoint            | Draft with Copilot             | Create a new presentation from a prompt or Word file, leveraging enterprise templates. PowerPoint files can also be used for grounding data |
 |                       | Chat                           | Summary and Q&A |
 |                       | Light commanding               | Add slides, pictures, or make deck-wide formatting changes. |
+| Excel                 | Draft with Copilot             | Get suggestions for formulas, chart types, and insights about data in your spreadsheet. |
 | Loop                  | Collaborative content creation | Create content that can be collaboratively improved through direct editing or refinement by Copilot. |
 | Outlook               | Coaching tips                  | Get coaching tips and suggestions on clarity, sentiment, and tone, along with an overall message assessment and suggestions for improvement. |
 |                       | Summarize                      | Summarize an email thread to help the user quickly understand the discussion. |

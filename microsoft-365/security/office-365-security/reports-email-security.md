@@ -18,12 +18,11 @@ ms.collection:
 description: "Admins can learn how to find and use the email security reports that are available in the Microsoft Defender portal. This article helps answer the question, 'What is the Threat protection status report in EOP and Microsoft Defender for Office 365?'"
 ms.custom: 
 - seo-marvel-apr2020
-ms.subservice: mdo
-ms.service: microsoft-365-security
-ms.date: 3/7/2024
+ms.service: defender-office-365
+ms.date: 4/8/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 1 and Plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
@@ -92,7 +91,7 @@ Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" bord
 
 - **Date (UTC)**: **Start date** and **End date**.
 - **Activity**: **Restricted** or **Suspicious**
-- **Tag**: Select **All** or the specified user tag (including priority accounts). For more information, see [User tags](user-tags-about.md).
+- **Tag**: Select **All** or the specified user tag (including Priority account). For more information, see [User tags](user-tags-about.md).
 
 When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
@@ -206,7 +205,7 @@ On the **Direction** tab, the :::image type="icon" source="../../media/m365-cc-s
 
 ### Mailflow view for the Mailflow status report
 
-The **Mailflow** tab shows you how Microsoft's email threat protection features filter incoming and outgoing email in your organization. This view uses a horizontal flow diagram (known as a *Sankey* diagram) to provide details on the total email count, and how threat protection features affect this count.
+The **Mailflow** tab shows you how Microsoft's email threat protection features filter incoming and outgoing email in your organization. This view uses a horizontal flow diagram (known as a _Sankey_ diagram) to provide details on the total email count, and how threat protection features affect this count.
 
 :::image type="content" source="../../media/mail-flow-status-report-mailflow-view.png" alt-text="The Mailflow view in the Mailflow status report." lightbox="../../media/mail-flow-status-report-mailflow-view.png":::
 
@@ -521,6 +520,13 @@ Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" bord
 
 When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
+If you select an entry from the details table by clicking anywhere in the row other than the check box next to the first column, an email details flyout opens. This details flyout is known as the _Email summary panel_ and contains summarized information that's also available on the [Email entity page in Defender for Office 365](mdo-email-entity-page.md) for the message. For details about the information in the Email summary panel, see [The Email summary panel](mdo-email-entity-page.md#the-email-summary-panel).
+
+In Defender for Microsoft 365, the following actions are available at the top of the Email summary panel for the Threat protection status report:
+
+- :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity**: For more information, see [The Email entity page in Microsoft Defender for Office 365](mdo-email-entity-page.md).
+- :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take action**: For information, see [Remediate using Take action](threat-explorer-threat-hunting.md#remediate-using-take-action).
+
 On the **Threat protection status** page, the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](#schedule-recurring-reports)**, :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Request report](#request-on-demand-reports-for-download)**, and :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report-data)** actions are available.
 
 ### View data by Email \> Spam and Chart breakdown by Detection Technology
@@ -579,6 +585,13 @@ Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" bord
 - **Recipients**
 
 When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
+
+If you select an entry from the details table by clicking anywhere in the row other than the check box next to the first column, an email details flyout opens. This details flyout is known as the _Email summary panel_ and contains summarized information that's also available on the [Email entity page in Defender for Office 365](mdo-email-entity-page.md) for the message. For details about the information in the Email summary panel, see [The Email summary panel](mdo-email-entity-page.md#the-email-summary-panel).
+
+In Defender for Microsoft 365, the following actions are available at the top of the Email summary panel for the Threat protection status report:
+
+- :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity**: For more information, see [The Email entity page in Microsoft Defender for Office 365](mdo-email-entity-page.md).
+- :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take action**: For information, see [Remediate using Take action](threat-explorer-threat-hunting.md#remediate-using-take-action).
 
 On the **Threat protection status** page, the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](#schedule-recurring-reports)**, :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Request report](#request-on-demand-reports-for-download)**, and :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report-data)** actions are available.
 
@@ -641,6 +654,13 @@ Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" bord
 
 When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
+If you select an entry from the details table by clicking anywhere in the row other than the check box next to the first column, an email details flyout opens. This details flyout is known as the _Email summary panel_ and contains summarized information that's also available on the [Email entity page in Defender for Office 365](mdo-email-entity-page.md) for the message. For details about the information in the Email summary panel, see [The Email summary panel](mdo-email-entity-page.md#the-email-summary-panel).
+
+In Defender for Microsoft 365, the following actions are available at the top of the Email summary panel for the Threat protection status report:
+
+- :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity**: For more information, see [The Email entity page in Microsoft Defender for Office 365](mdo-email-entity-page.md).
+- :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take action**: For information, see [Remediate using Take action](threat-explorer-threat-hunting.md#remediate-using-take-action).
+
 On the **Threat protection status** page, the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](#schedule-recurring-reports)**, :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Request report](#request-on-demand-reports-for-download)**, and :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report-data)** actions are available.
 
 ### Chart breakdown by Policy type
@@ -696,6 +716,13 @@ Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" bord
 <sup>\*</sup> Defender for Office 365 only
 
 When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
+
+If you select an entry from the details table by clicking anywhere in the row other than the check box next to the first column, an email details flyout opens. This details flyout is known as the _Email summary panel_ and contains summarized information that's also available on the [Email entity page in Defender for Office 365](mdo-email-entity-page.md) for the message. For details about the information in the Email summary panel, see [The Email summary panel](mdo-email-entity-page.md#the-email-summary-panel).
+
+In Defender for Microsoft 365, the following actions are available at the top of the Email summary panel for the Threat protection status report:
+
+- :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity**: For more information, see [The Email entity page in Microsoft Defender for Office 365](mdo-email-entity-page.md).
+- :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take action**: For information, see [Remediate using Take action](threat-explorer-threat-hunting.md#remediate-using-take-action).
 
 On the **Threat protection status** page, the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](#schedule-recurring-reports)**, :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Request report](#request-on-demand-reports-for-download)**, and :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report-data)** actions are available.
 
@@ -753,6 +780,13 @@ Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" bord
 <sup>\*</sup> Defender for Office 365 only
 
 When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
+
+If you select an entry from the details table by clicking anywhere in the row other than the check box next to the first column, an email details flyout opens. This details flyout is known as the _Email summary panel_ and contains summarized information that's also available on the [Email entity page in Defender for Office 365](mdo-email-entity-page.md) for the message. For details about the information in the Email summary panel, see [The Email summary panel](mdo-email-entity-page.md#the-email-summary-panel).
+
+In Defender for Microsoft 365, the following actions are available at the top of the Email summary panel for the Threat protection status report:
+
+- :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity**: For more information, see [The Email entity page in Microsoft Defender for Office 365](mdo-email-entity-page.md).
+- :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take action**: For information, see [Remediate using Take action](threat-explorer-threat-hunting.md#remediate-using-take-action).
 
 On the **Threat protection status** page, the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](#schedule-recurring-reports)**, :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Request report](#request-on-demand-reports-for-download)**, and :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](#export-report-data)** actions are available.
 
@@ -958,7 +992,7 @@ For each chart, the details table below the chart shows the following informatio
 Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter** to modify the report by selecting one or more of the following values in the flyout that opens:
 
 - **Date (UTC)** **Start date** and **End date**
-- **Tag**: Select **All** or the specified user tag (including priority accounts). For more information, see [User tags](user-tags-about.md).
+- **Tag**: Select **All** or the specified user tag (including Priority account). For more information, see [User tags](user-tags-about.md).
 
 When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
@@ -1009,7 +1043,7 @@ On the report page, the :::image type="icon" source="../../media/m365-cc-sc-down
 
 You need to be assigned permissions before you can view and use the reports that are described in this article. You have the following options:
 
-- [Microsoft Defender XDR Unified role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac) (Affects the Defender portal only, not PowerShell): **Authorization and settings/System settings/manage** or **Security operations/Security data/Read-only**.
+- [Microsoft Defender XDR Unified role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac) (Affects the Defender portal only, not PowerShell): **Security operations/Security data/Security data basics (read)** or **Authorization and settings/System settings/manage**.
 - [Email & collaboration permissions in the Microsoft Defender portal](mdo-portal-permissions.md): Membership in any of the following role groups:
   - **Organization Management**<sup>\*</sup>
   - **Security Administrator**
@@ -1073,7 +1107,7 @@ Depending on the report and the specific view in the report, one or more of the 
 3. On the **Set preferences** page, review or configure the following settings:
    - **Frequency**: Select one of the following values:
      - **Weekly** (default)
-     - **Daily**
+     - **Daily** (this value results in no data being shown in charts)
      - **Monthly**
    - **Start date**: Enter the date when generation of the report begins. The default value is today.
    - **Expiry date**: Enter the date when generation of the report ends. The default value is one year from today.

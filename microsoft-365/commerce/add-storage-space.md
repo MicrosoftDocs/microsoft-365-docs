@@ -9,6 +9,7 @@ ms.reviewer: jkinma, ramagane
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-management
 ms.localizationpriority: medium
 ms.collection:
 - Tier1
@@ -17,12 +18,13 @@ ms.collection:
 - Adm_O365
 - SPO_Content
 ms.custom:
-- commerce_purchase
+- commerce_billing
 - MAX_CampaignID
 - okr_SMB
 - AdminSurgePortfolio
 - business_assist
 - AdminTemplateSet
+- admindeeplinkMAC
 - admindeeplinkSPO
 search.appverid: MET150
 description: "Learn how to add extra SharePoint file storage in your Microsoft 365 subscription."

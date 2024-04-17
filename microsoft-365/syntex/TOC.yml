@@ -221,44 +221,10 @@
           href: ocr.md
 
     - name: Microsoft 365 Archive (Preview)
-      items: 
-        - name: Overview 
-          href: archive/archive-overview.md
-        - name: Admin setup 
-          href: archive/archive-setup.md
-        - name: Pricing model 
-          href: archive/archive-pricing.md
-        - name: Archive states 
-          href: archive/archive-states.md
-        - name: Manage 
-          href: archive/archive-manage.md
-        - name: Compliance 
-          href: archive/archive-compliance.md
-        - name: End user experience 
-          href: archive/archive-end-user.md
-        - name: FAQs
-          href: archive/archive-faq.md
+      href: /microsoft-365/archive
 
     - name: Microsoft 365 Backup (Preview)
-      items: 
-        - name: Overview 
-          href: backup/backup-overview.md
-        - name: Admin setup 
-          href: backup/backup-setup.md
-        - name: Set up billing 
-          href: backup/backup-billing.md
-        - name: Pricing model
-          href: backup/backup-pricing.md
-        - name: View and edit policies 
-          href: backup/backup-view-edit-policies.md
-        - name: Restore data 
-          href: backup/backup-restore-data.md
-        - name: Preview limitations
-          href: backup/backup-limitations.md
-        - name: Offboarding
-          href: backup/backup-offboarding.md
-        - name: FAQs
-          href: backup/backup-faq.md
+      href: /microsoft-365/backup
 
     - name: Annotations
       href: annotations.md

@@ -6,7 +6,7 @@ ms.service: defender-endpoint
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
-ms.date: 01/25/2023
+ms.date: 03/19/2024
 manager: deniseb
 audience: ITPro
 ms.collection: 
@@ -83,14 +83,14 @@ This article explains how to create a Microsoft Entra application, get an access
      > [!NOTE]
      > Every time you add a permission, you must select **Grant consent** for the new permission to take effect.
 
-    :::image type="content" source="../images/grant-consent.png" alt-text="The grant permissions page" lightbox="../images/grant-consent.png":::
+    :::image type="content" source="../media/grant-consent.png" alt-text="The grant permissions page" lightbox="../media/grant-consent.png":::
 
 6. To add a secret to the application, select **Certificates & secrets**, add a description to the secret, and then select **Add**.
 
     > [!NOTE]
     > After you select **Add**, select **copy the generated secret value**. You won't be able to retrieve this value after you leave.
 
-      :::image type="content" source="../images/webapp-create-key2.png" alt-text="The create application option" lightbox="../images/webapp-create-key2.png":::
+      :::image type="content" source="../media/webapp-create-key2.png" alt-text="The create application option" lightbox="../media/webapp-create-key2.png":::
 
 7. Write down your application ID and your tenant ID. On your application page, go to **Overview** and copy the following.
 
@@ -132,7 +132,7 @@ $appId = '' ### Paste your Application ID here
 $appSecret = '' ### Paste your Application key here
 
 $sourceAppIdUri = 'https://api.securitycenter.microsoft.com/.default'
-$oAuthUri = "https://login.microsoftonline.com/$TenantId/oauth2/token"
+$oAuthUri = "https://login.microsoftonline.com/$TenantId/oauth2/v2.0/token"
 $authBody = [Ordered] @{
     scope = "$sourceAppIdUri"
     client_id = "$appId"
@@ -210,7 +210,7 @@ Ensure that you got the correct token:
 
    In the following image, you can see a decoded token acquired from an app with permissions to all of  Microsoft Defender for Endpoint's roles:
 
-   :::image type="content" source="../images/webapp-decoded-token.png" alt-text="The token details portion" lightbox="../images/webapp-decoded-token.png":::
+   :::image type="content" source="../media/webapp-decoded-token.png" alt-text="The token details portion" lightbox="../media/webapp-decoded-token.png":::
 
 ## Use the token to access Microsoft Defender for Endpoint API
 

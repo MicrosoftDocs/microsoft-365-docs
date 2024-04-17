@@ -9,6 +9,7 @@ ms.reviewer: emmasheridan, nicholak
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
 ms.collection: 
 - Tier1
@@ -22,6 +23,7 @@ ms.custom:
 - SaRA
 - AdminSurgePortfolio
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid: MET150 
 description: "Learn how to manage your subscription renewal for a Microsoft business subscription by turning recurring billing off or on."
 ms.date: 08/18/2023

@@ -2,10 +2,7 @@
 title: Top scoring in industry tests - Microsoft Defender XDR
 ms.reviewer:
 description: View the latest scores and analysis of Microsoft Defender XDR. It consistently achieves high scores in independent tests (AV-TEST, AV Comparatives, SE Labs, MITRE ATT&CK). View the latest scores and analysis.
-keywords: Microsoft Defender Antivirus, Windows Defender Antivirus, av reviews, antivirus test, av testing, latest av scores, detection scores, security product testing, security industry tests, industry antivirus tests, best antivirus, av-test, av-comparatives, SE labs, MITRE ATT&CK, endpoint protection platform, EPP, endpoint detection and response, EDR, Windows 10, Windows 11 Microsoft Defender Antivirus, WDAV, Microsoft Defender for Endpoint, Microsoft Defender XDR, security, malware, av, antivirus, scores, scoring, next generation protection, ranking, success
 ms.service: defender-xdr
-ms.mktglfcycl: secure
-ms.sitesec: library
 ms.localizationpriority: high
 ms.author: dansimp
 author: dansimp
@@ -37,7 +34,7 @@ Microsoft Defender XDR combines the capabilities of [Microsoft Defender for Endp
 
 Core to MITRE's testing approach is emulating real-world attacks to understand whether solutions can adequately detect and respond to them. While the test focused on endpoint detection and response, MITRE's simulated APT29 attack spans multiple attack domains, creating opportunities to empower defenders beyond just endpoint protection. Microsoft expanded visibility beyond the endpoint with Microsoft Defender XDR.
 
-- ATT&CK-based evaluation of Microsoft Defender XDR - April 2022: [Microsoft Defender XDR demonstrates industry-leading protection in the 2022 MITRE Engenuity ATT&CK® Evaluations]([Microsoft Security Blog: Microsoft Defender XDR demonstrates industry-leading protection in the 2022 MITRE Engenuity ATT&CK® Evaluations](https://www.microsoft.com/en-us/security/blog/2022/04/05/microsoft-365-defender-demonstrates-industry-leading-protection-in-the-2022-mitre-engenuity-attck-evaluations/))
+- ATT&CK-based evaluation of Microsoft Defender XDR - April 2022: [Microsoft Defender XDR demonstrates industry-leading protection in the 2022 MITRE Engenuity ATT&CK&reg; Evaluations]([Microsoft Security Blog: Microsoft Defender XDR demonstrates industry-leading protection in the 2022 MITRE Engenuity ATT&CK&reg; Evaluations](https://www.microsoft.com/en-us/security/blog/2022/04/05/microsoft-365-defender-demonstrates-industry-leading-protection-in-the-2022-mitre-engenuity-attck-evaluations/))
 
 - ATT&CK-based evaluation of Microsoft Defender XDR - April 2021: [Evaluation proves Microsoft Defender for Endpoint stops advanced attacks across platforms](https://www.microsoft.com/security/blog/2021/04/21/)
 

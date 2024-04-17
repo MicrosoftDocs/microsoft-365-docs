@@ -9,6 +9,7 @@ ms.reviewer: mijeffer, nicholak
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
 ms.collection: 
 - Tier1
@@ -18,6 +19,7 @@ ms.collection:
 ms.custom:
   - commerce_subscriptions
   - AdminSurgePortfolio
+  - admindeeplinkMAC
   - has-azure-ad-ps-ref
   - azure-ad-ref-level-one-done
 search.appverid: MET150

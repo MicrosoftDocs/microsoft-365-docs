@@ -17,12 +17,11 @@ ms.collection:
 ms.custom:
   - seo-marvel-apr2020
 description: Admins can learn how to view and manage quarantined messages for all users in Exchange Online Protection (EOP). Admins in organizations with Microsoft Defender for Office 365 can also manage quarantined files in SharePoint Online, OneDrive for Business, and Microsoft Teams.
-ms.subservice: mdo
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 ms.date: 11/2/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 1 and Plan 2</a>
 ---
 
 # Manage quarantined messages and files as an admin
@@ -51,7 +50,9 @@ Watch this short video to learn how to manage quarantined messages as an admin.
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
-  - [Microsoft Defender XDR Unified role based access control (RBAC)](../defender/manage-rbac.md) (Affects the Defender portal only, not PowerShell): **Security Data / email quarantine (manage)** (management via PowerShell).
+  - [Microsoft Defender XDR Unified role based access control (RBAC)](../defender/manage-rbac.md) (Affects the Defender portal only, not PowerShell):
+    - _Take action on quarantined messages for all users_: **Security operations / Security data / Email & collaboration quarantine (manage)**.
+    - _Read-only access to quarantined messages for all users_: **Security operations / Security data / Security data basics (read)**.
   - [Email & collaboration permissions in the Microsoft Defender portal](mdo-portal-permissions.md):
     - _Take action on quarantined messages for all users_: Membership in the **Quarantine Administrator**, **Security Administrator**, or **Organization Management** role groups.
       - _Submit messages from quarantine to Microsoft_: Membership in the **Quarantine Administrator** or **Security Administrator** role groups.
@@ -69,6 +70,8 @@ Watch this short video to learn how to manage quarantined messages as an admin.
   > Guest admins from other organizations can't manage quarantined messages. The admin needs to be in the same organization as the recipients.
 
 - Quarantined messages and files are retained for a default period of time based on why they were quarantined. After the retention period expires, the messages are automatically deleted and aren't recoverable. For more information, see [Quarantine retention](quarantine-about.md#quarantine-retention).
+
+- All actions taken by admins or users on quarantined messages are audited. For more information about audited quarantine events, see [Quarantine schema in the Office 365 Management API](/office/office-365-management-api/office-365-management-activity-api-schema#quarantine-schema).
 
 ## Use the Microsoft Defender portal to manage quarantined email messages
 
@@ -163,7 +166,7 @@ After you find a specific quarantined message, select the message to view detail
 > [!TIP]
 > On mobile devices, the previously described controls are available under :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More**.
 >
-> :::image type="content" source="../../media/quarantine-message-main-page-mobile-actions.png" alt-text="Selecting a quarantined message and selecting More on a mobile device." lightbox="../../media/quarantine-message-main-page-mobile-actions.png":::
+> :::image type="content" source="../../media/quarantine-message-main-page-mobile-actions.png" alt-text="Screenshot of selecting a quarantined message and then selecting More on a mobile device." lightbox="../../media/quarantine-message-main-page-mobile-actions.png":::
 
 ### View quarantined email details
 
@@ -172,6 +175,11 @@ After you find a specific quarantined message, select the message to view detail
 2. On the **Email** tab, select the quarantined message by clicking anywhere in the row other than the check box.
 
 In the details flyout that opens, the following information is available:
+
+  > [!TIP]
+  > The actions that are available at the top of the flyout are described in [Take action on quarantined email](#take-action-on-quarantined-email).
+  >
+  > To see details about other quarantined messages without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
 
 - **Quarantine details** section:
   - **Received**: The date/time when the message was received.
@@ -185,36 +193,13 @@ In the details flyout that opens, the following information is available:
 
     Recipient email addresses always resolve to the primary email address, even if the message was sent to a [proxy address](/exchange/recipients-in-exchange-online/manage-user-mailboxes/add-or-remove-email-addresses).
 
-  - **Released to**: All email addresses (if any) to which the message has been released.
-- **Delivery details** section:
-  - **Threats**
-  - **Delivery action**
-  - **Original location**
-  - **Latest delivery location**
-  - **Detection technologies**
-  - **Primary override**
-- **Email details** section:
-  - **Sender display name**
-  - **Sender address**
-  - **SMTP Mail From address**
-  - **Sent on behalf of**
-  - **Return path**
-  - **Sender IP**
-  - **Location**
-  - **Recipients**
-  - **Time received**
-  - **Directionality**
-  - **Network message ID**
-  - **Internet message ID**
-  - **Campaign ID**
-  - **DMARC**
-  - **DKIM**
-  - **SPF**
-  - **Composite authentication**
-- **URLs** section
-- **Attachments** section
+  - **Released to** or **Not yet released to**: If the message requires review by an admin before it's released:
+    - **Released to**: Email addresses of recipients that the message was released to.
+    - **Not yet released to**:  Email addresses of recipients that the message hasn't been released to.
 
-:::image type="content" source="../../media/quarantine-message-details-flyout.png" alt-text="The details flyout of a quarantined message" lightbox="../../media/quarantine-message-details-flyout.png":::
+The rest of the details flyout contains the **Delivery details**, **Email details**, **URLs**, and **Attachments** sections that are part of the _Email summary panel_. For more information, see [The Email summary panel](mdo-email-entity-page.md#the-email-summary-panel).
+
+:::image type="content" source="../../media/quarantine-message-details-flyout.png" alt-text="Screenshot of the details flyout that opens after you select a quarantined email message from the Email tab of the Quarantine page." lightbox="../../media/quarantine-message-details-flyout.png":::
 
 To take action on the message, see the next section.
 
@@ -229,11 +214,11 @@ To take action on the message, see the next section.
 
    - Select the message from the list by selecting the check box next to the first column. The available actions are no longer grayed out.
 
-     :::image type="content" source="../../media/quarantine-message-selected-message-actions.png" alt-text="Available actions after you select a quarantined message on the Email tab of the Quarantine page." lightbox="../../media/quarantine-message-selected-message-actions.png":::
+     :::image type="content" source="../../media/quarantine-message-selected-message-actions.png" alt-text="Screenshot of the available actions after you select the check box of a quarantined message on the Email tab on the Quarantine page." lightbox="../../media/quarantine-message-selected-message-actions.png":::
 
    - Select the message from the list by clicking anywhere in the row other than the check box. The available actions are in the details flyout that opens.
 
-     :::image type="content" source="../../media/quarantine-message-details-flyout-actions.png" alt-text="Available actions in the details flyout of a selected message." lightbox="../../media/quarantine-message-details-flyout-actions.png":::
+     :::image type="content" source="../../media/quarantine-message-details-flyout-actions.png" alt-text="Screenshot of the available actions in the details flyout that opens after you select a quarantined message on the Email tab of the Quarantine page." lightbox="../../media/quarantine-message-details-flyout-actions.png":::
 
    Using either method to select the message, many actions are available under :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More** or **More options**.
 
@@ -244,11 +229,11 @@ After you select the quarantined message, the available actions are described in
 >
 > - When you select the message by selecting the check box, all actions are under :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More**:
 >
->   :::image type="content" source="../../media/quarantine-message-main-page-mobile-actions.png" alt-text="Selecting a quarantined message and selecting More on a mobile device." lightbox="../../media/quarantine-message-main-page-mobile-actions.png":::
+>   :::image type="content" source="../../media/quarantine-message-main-page-mobile-actions.png" alt-text="Screenshot of selecting a quarantined message and selecting More on a mobile device." lightbox="../../media/quarantine-message-main-page-mobile-actions.png":::
 >
 > - When you select the message by clicking anywhere in the row other than the check box, description text isn't available on some of the action icons in the details flyout. But, the actions and their order is the same as on a PC:
 >
->   :::image type="content" source="../../media/quarantine-message-details-flyout-mobile-actions.png" alt-text="The details of a quarantined message with available actions being highlighted" lightbox="../../media/quarantine-message-details-flyout-mobile-actions.png":::
+>   :::image type="content" source="../../media/quarantine-message-details-flyout-mobile-actions.png" alt-text="Screenshot of the details of a quarantined message with available actions highlighted." lightbox="../../media/quarantine-message-details-flyout-mobile-actions.png":::
 
 #### Release quarantined email
 
@@ -307,7 +292,7 @@ Users can request the release of email messages if the quarantine policy used **
 After a recipient requests the release of the email message, the **Release status** value changes to **Release requested**, and an admin can approve or deny the request.
 
 > [!TIP]
-> One alert to release the message might be created for multiple release requests for that message.
+> One alert to release the message might be created for multiple release requests for that message. Use the **quarantine** link in the **Details** section of the alert message to take action on the release request from users in the organization for the past 7 days.
 
 If you don't release or remove a message, it's automatically deleted from quarantine after the date shown in the **Expires** column.
 
@@ -440,13 +425,13 @@ Accept or change the downloaded file details, and then select **Save**.
 
 Back on the **Download file** flyout, select **Done**.
 
-#### Actions for quarantined email messages in Defender for Office 365 Plan 2
+#### Actions for quarantined email messages in Defender for Office 365
 
-In organizations with Microsoft Defender for Office 365 Plan 2 (add-on licenses or included in subscriptions like Microsoft 365 E5), the following actions are also available in the details flyout of a selected message:
+In organizations with Microsoft Defender for Office 365 (add-on licenses or included in subscriptions like Microsoft 365 E5 or Microsoft 365 Business Premium), the following actions are also available in the details flyout of a selected message:
 
-- :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity**: For more information, see [How to read the email entity page](mdo-email-entity-page.md#how-to-read-the-email-entity-page).
+- :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity**: For more information, see [What's on the Email entity page](mdo-email-entity-page.md#whats-on-the-email-entity-page).
 
-- :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take actions**: This action starts the same Action wizard that's available on the email entity page. For more information, see [Actions you can take on the Email entity page](mdo-email-entity-page.md#actions-you-can-take-on-the-email-entity-page).
+- :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take actions**: This action starts the same Action wizard that's available on the Email entity page. For more information, see [Actions on the Email entity page](mdo-email-entity-page.md#actions-on-the-email-entity-page).
 
 #### Take action on multiple quarantined email messages
 
@@ -464,7 +449,7 @@ When you select multiple quarantined messages on the **Email** tab by selecting 
 
 - [Download email from quarantine](#download-email-from-quarantine)
 
-:::image type="content" source="../../media/quarantine-message-bulk-actions.png" alt-text="The available actions when selecting multiple messages on the Email tab in quarantine." lightbox="../../media/quarantine-message-bulk-actions.png":::
+:::image type="content" source="../../media/quarantine-message-bulk-actions.png" alt-text="Screenshot of the available actions on the Email tab of the Quarantine page after you select the check box of multiple quarantined messages." lightbox="../../media/quarantine-message-bulk-actions.png":::
 
 ### Find who deleted a quarantined message
 
@@ -546,7 +531,7 @@ After you find a specific quarantined file, select the file to view details abou
 
 In the details flyout that opens, the following information is available:
 
-:::image type="content" source="../../media/quarantine-file-details-flyout.png" alt-text="The details flyout of a quarantined file" lightbox="../../media/quarantine-file-details-flyout.png":::
+:::image type="content" source="../../media/quarantine-file-details-flyout.png" alt-text="Screenshot of the details flyout that opens after you select a quarantined file from the Files tab of the Quarantine page." lightbox="../../media/quarantine-file-details-flyout.png":::
 
 - **File details** section:
   - **File Name**
@@ -576,7 +561,7 @@ To take action on the file, see the next section.
 
 After you select the quarantined file, the available actions in the file details flyout that opens are described in the following subsections.
 
-:::image type="content" source="../../media/quarantine-file-details-flyout-actions.png" alt-text="The actions in the details flyout of a quarantined file" lightbox="../../media/quarantine-file-details-flyout-actions.png":::
+:::image type="content" source="../../media/quarantine-file-details-flyout-actions.png" alt-text="Screenshot of the available actions in the details flyout that opens after you select a quarantined file from the Files tab of the Quarantine page." lightbox="../../media/quarantine-file-details-flyout-actions.png":::
 
 #### Release quarantined files from quarantine
 
@@ -629,21 +614,22 @@ When you select multiple quarantined files on the **Files** tab by selecting the
 - [Delete quarantined files from quarantine](#delete-quarantined-files-from-quarantine)
 - [Download quarantined files from quarantine](#download-quarantined-files-from-quarantine)
 
-:::image type="content" source="../../media/quarantine-file-bulk-actions.png" alt-text="The Bulk actions dropdown list for files in quarantine" lightbox="../../media/quarantine-file-bulk-actions.png":::
+:::image type="content" source="../../media/quarantine-file-bulk-actions.png" alt-text="Screenshot of the available actions on the Files tab of the Quarantine page after you select the check box of multiple quarantined files." lightbox="../../media/quarantine-file-bulk-actions.png":::
 
 ## Use the Microsoft Defender portal to manage Microsoft Teams quarantined messages
 
-Quarantine in Microsoft Teams is available only in organizations with Microsoft Defender for Office 365 Plan 2 (add-on licenses or included in subscriptions like Microsoft 365 E5)
+> [!TIP]
+> [Zero-hour auto purge (ZAP) in Microsoft Teams](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-in-microsoft-teams) is currently in Preview, isn't available in all organizations, and is subject to change.
+
+Quarantine in Microsoft Teams is available only in organizations with Microsoft Defender for Office 365 Plan 2 (add-on licenses or included in subscriptions like Microsoft 365 E5).
 
 When a potentially malicious chat message is detected in Microsoft Teams, zero-hour auto purge (ZAP) removes the message and quarantines it. Admins can view and manage these quarantined Teams messages. The message is quarantined for 30 days. After that the Teams message is permanently removed.
 
 This feature is enabled by default.
 
-### View quarantined messages in Microsoft Teams
+### View quarantined Teams messages
 
 In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Review** \> **Quarantine** \> **Teams messages** tab. Or, to go directly to the **Teams messages** tab on the **Quarantine** page, use <https://security.microsoft.com/quarantine?viewid=Teams>.
-
-:::image type="content" source="../../media/admin-quarantine-teams-message-tab.png" alt-text="Screenshot of the Teams messages tab in quarantine." lightbox="../../media/admin-quarantine-teams-message-tab.png":::
 
 On the **Teams messages** tab, you can decrease the vertical spacing in the list by clicking :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal** and then selecting :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false"::: **Compact list**.
 
@@ -687,42 +673,52 @@ Use the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" bor
 
 After you find a specific quarantined Teams message, select the message to view details about it and to take action on it (for example, view, release, download, or delete the message).
 
-### View quarantined message details in Microsoft Teams
+### View quarantined Teams message details
 
-1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Review** \> **Quarantine** \> **Teams messages** tab. Or, to go directly to the **Teams messages** tab on the **Quarantine** page, use <https://security.microsoft.com/quarantine?viewid=Teams>.
+On the **Teams messages** tab of the **Quarantine** page, select the quarantined message by clicking anywhere in the row other than the check box next to the first column.
 
-2. On the **Teams messages** tab, select the quarantined message by clicking anywhere in the row other than the check box.
+The following message information is available at the top of the details flyout:
 
-In the details flyout that opens, the following information is available:
-
-:::image type="content" source="../../media/admin-quarantine-teams-details-flyout.png" alt-text="Screenshot of the Teams message details flyout in quarantine." lightbox="../../media/admin-quarantine-teams-details-flyout.png":::
-
-- **Quarantine details** section: Includes quarantine reason, expiry date, quarantine policy type, and other information.
-- **Message details** section: Includes the primary threat reason, date and time of the message sent, and the sender address. Also includes the Teams message ID and the detection technology.
-- **Sender** section: Includes the sender name, their domain location, and whether the sender is from outside the organization.
-- **Participants** section: The names and email IDs of all the people who received the same message.
-- **URLs** section: Includes the details of any malicious URLs that were detected in the chat message.
-
-To take action on the message, see the next section.
+- The title of the flyout is the subject or the first 100 characters of the Teams message.
+- The **Quarantine reason** value.
+- The number of links in the message.
+- The available actions are described in the [Take action on quarantined Teams messages](#take-action-on-quarantined-teams-messages) section.
 
 > [!TIP]
-> To see details about other quarantined messages without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
+> To see details about other quarantined Teams messages without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
 
-### Take action on quarantined messages in Microsoft Teams
+The next section in the details flyout is related to quarantined Teams messages:
 
-1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Review** \> **Quarantine** \> **Teams messages** tab. Or, to go directly to the **Teams messages** tab on the **Quarantine** page, use <https://security.microsoft.com/quarantine?viewid=Teams>.
+- **Quarantine details** section:
+  - **Expires**
+  - **Time received**
+  - **Quarantine reason**
+  - **Release status**
+  - **Policy type**: The value is **None**.
+  - **Policy name**: The value is **Teams Protection Policy**.
+  - **Quarantine policy**
 
-2. On the **Teams messages** tab, select the quarantined message by using either of the following methods:
+The rest of the details flyout contains the **Message details**, **Sender**, **Participants**, **Channel details**, and **URLs** sections that are part of the _Teams message entity panel_. For more information, see [The Teams mMessage entity panel in Microsoft Defender for Office 365 Plan 2](teams-message-entity-panel.md).
 
-   - Select the message from the list by selecting the check box next to the first column. The available actions are no longer grayed out.
+When you're finished in the details flyout, select **Close**.
 
-     :::image type="content" source="../../media/quarantine-teams-message-selected-message-actions.png" alt-text="Available actions after you select a quarantined message on the Teams message tab of the Quarantine page." lightbox="../../media/quarantine-teams-message-selected-message-actions.png":::
+:::image type="content" source="../../media/quarantine-teams-details-flyout.png" alt-text="Screenshot of the details flyout that opens after you select a quarantined Teams message from the Teams messages tab of the Quarantine page." lightbox="../../media/quarantine-teams-details-flyout.png":::
 
-   - Select the message from the list by clicking anywhere in the row other than the check box. The available actions are in the details flyout that opens.
+### Take action on quarantined Teams messages
 
-     :::image type="content" source="../../media/admin-quarantine-teams-actions-details.png" alt-text="Screenshot of the actions menu for messages in quarantine." lightbox="../../media/admin-quarantine-teams-actions-details.png":::
+In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Review** \> **Quarantine** \> **Teams messages** tab. Or, to go directly to the **Teams messages** tab on the **Quarantine** page, use <https://security.microsoft.com/quarantine?viewid=Teams>.
 
-   Using either method to select the message, some actions are available under :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More**.
+On the **Teams messages** tab, select the quarantined message by using either of the following methods:
+
+- Select the message from the list by selecting the check box next to the first column. The available actions are no longer grayed out.
+
+  :::image type="content" source="../../media/quarantine-teams-message-selected-message-actions.png" alt-text="Screenshot of the available actions after you select the check box of a quarantined Teams message on the Teams message tab of the Quarantine page." lightbox="../../media/quarantine-teams-message-selected-message-actions.png":::
+
+- Select the message from the list by clicking anywhere in the row other than the check box. The available actions are in the details flyout that opens.
+
+  :::image type="content" source="../../media/quarantine-teams-details-flyout-actions.png" alt-text="Screenshot of the available actions in the details flyout that opens after you select a quarantined Teams message from the Teams messages tab of the Quarantine page." lightbox="../../media/quarantine-teams-details-flyout-actions.png":::
+
+Using either method to select the message, some actions are available under :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More**.
 
 After you select the quarantined message, the available actions are described in the following subsections.
 
@@ -760,8 +756,9 @@ After you select the Teams message, use either of the following methods to previ
 - **In the details flyout of the selected message**: Select :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: :::image type="icon" source="../../media/m365-cc-sc-preview-message-icon.png" border="false"::: **Preview message**.
 
 In the flyout that opens, choose one of the following tabs:
-  - **Source**: Shows the HTML version of the message body with all links disabled.
-  - **Plain text**: Shows the message body in plain text.
+
+- **Source**: Shows the HTML version of the message body with all links disabled.
+- **Plain text**: Shows the message body in plain text.
 
 #### Report Teams messages to Microsoft for review from quarantine
 
@@ -799,7 +796,7 @@ When you select multiple quarantined messages on the **Teams messages** tab by s
 - [Report Teams messages to Microsoft for review from quarantine](#report-teams-messages-to-microsoft-for-review-from-quarantine)
 - [Download Teams messages from quarantine](#download-teams-messages-from-quarantine)
 
-:::image type="content" source="../../media/admin-quarantine-teams-bulk-action.png" alt-text="Screenshot of the Bulk action options for files in quarantine." lightbox="../../media/admin-quarantine-teams-bulk-action.png":::
+:::image type="content" source="../../media/quarantine-teams-bulk-action.png" alt-text="Screenshot of the available actions on the Teams messages tab of the Quarantine page after you select multiple quarantined Teams messages." lightbox="../../media/quarantine-teams-bulk-action.png":::
 
 #### Approve or deny release requests from users for quarantined Teams messages
 

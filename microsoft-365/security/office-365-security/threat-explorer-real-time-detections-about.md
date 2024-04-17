@@ -7,7 +7,7 @@ author: chrisda
 manager: deniseb
 audience: ITPro
 ms.topic: conceptual
-ms.date: 3/13/2024
+ms.date: 3/22/2024
 ms.localizationpriority: medium
 ms.collection:
   - m365-security
@@ -16,11 +16,10 @@ ms.collection:
 description: Learn about the available views, filters, and actions in Threat Explorer (Explorer) or Real-time detections to investigate and respond to threats.
 ms.custom:
 - seo-marvel-apr2020
-ms.subservice: mdo
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 search.appverid: met150
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 1 and Plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
@@ -28,7 +27,7 @@ appliesto:
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-Microsoft 365 organizations that have [Microsoft Defender for Office 365](defender-for-office-365.md) included in their subscription or purchased as an add-on have **Explorer** (also known as **Threat Explorer**) or **Real-time detections**. These features are powerful, near real-time reporting tools that help Security Operations (SecOps) teams investigate and respond to threats.
+Microsoft 365 organizations that have [Microsoft Defender for Office 365](mdo-about.md) included in their subscription or purchased as an add-on have **Explorer** (also known as **Threat Explorer**) or **Real-time detections**. These features are powerful, near real-time reporting tools that help Security Operations (SecOps) teams investigate and respond to threats.
 
 Depending on your subscription, Threat Explorer or Real-time detections is available in the **Email & collaboration** section in the Microsoft Defender portal at <https://security.microsoft.com>:
 
@@ -46,7 +45,7 @@ Threat Explorer contains the same information and capabilities as Real-time dete
 - More property filtering options, including the option to save queries.
 - More actions.
 
-For more information about the differences between Defender for Office 365 Plan 1 and Plan 2, see the [Defender for Office 365 Plan 1 vs. Plan 2 cheat sheet](mdo-security-comparison.md#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet).
+For more information about the differences between Defender for Office 365 Plan 1 and Plan 2, see the [Defender for Office 365 Plan 1 vs. Plan 2 cheat sheet](mdo-about.md#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet).
 
 The rest of this article explains the views and features that are available in Threat Explorer and Real-time detections.
 
@@ -62,18 +61,20 @@ The rest of this article explains the views and features that are available in T
 To use Explorer or Real-time detections, you need to be assigned permissions. You have the following options:
 
 - [Microsoft Defender XDR Unified role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac) (Affects the Defender portal only, not PowerShell):
-  - _Read access for email and Teams message headers_: **Security operations/Raw data (email & collaboration)/Email message headers (read)**.
-  - _Preview and download email messages_: **Security operations/Raw data (email & collaboration)/Email content (read)**.
-  - _Remediate malicious email_: **Security operations/Security data/Email advanced actions (manage)**.
+  - _Read access for email and Teams message headers_: **Security operations/Raw data (email & collaboration)/Email & collaboration metadata (read)**.
+  - _Preview and download email messages_: **Security operations/Raw data (email & collaboration)/Email & collaboration content (read)**.
+  - _Remediate malicious email_: **Security operations/Security data/Email & collaboration advanced actions (manage)**.
 - [Email & collaboration permissions in the Microsoft Defender portal](mdo-portal-permissions.md):
   - _Full access_: Membership in the **Organization Management** or **Security Administrator** role groups. More permissions are required to do all available actions:
-    - _Preview and download messages_: Membership in the **Data Investigator** or **eDiscovery Manager** role groups. Or, [create a new role group](mdo-portal-permissions.md#create-email--collaboration-role-groups-in-the-microsoft-defender-portal) with the same roles as **Organization Management** or **Security Administrator**, and then add the **Preview** role.
-    - _Move messages in and delete messages from mailboxes_: Membership in the **Data Investigator** or **Organization Management** role groups. Or, [create a new role group](mdo-portal-permissions.md#create-email--collaboration-role-groups-in-the-microsoft-defender-portal) with the same roles as **Security Administrator**, and then add the **Search and Purge** role.
+    - _Preview and download messages_: Requires the **Preview** role, which is assigned only to the **Data Investigator** or **eDiscovery Manager** role groups by default. Or, you can [create a new role group](mdo-portal-permissions.md#create-email--collaboration-role-groups-in-the-microsoft-defender-portal) with the **Preview** role assigned, and add the users to the custom role group.
+    - _Move messages in and delete messages from mailboxes_: Requires the **Search and Purge** role, which is assigned only to the **Data Investigator** or **Organization Management** role groups by default. Or, you can [create a new role group](mdo-portal-permissions.md#create-email--collaboration-role-groups-in-the-microsoft-defender-portal) with the **Search and Purge** role assigned, and add the users to the custom role group.
   - _Read-only access_: Membership in the **Security Reader** role group.
-- [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership these roles gives users the required permissions _and_ permissions for other features in Microsoft 365:
+- [Microsoft Entra permissions](/entra/identity/role-based-access-control/manage-roles-portal): Membership these roles gives users the required permissions _and_ permissions for other features in Microsoft 365:
   - _Full access_: Membership in the **Global Administrator** or **Security Administrator** roles.
-  - _Search for Exchange mail flow rules (transport rules) by name in Threat Explorer_: Membership in the **Security Admin** or **Security Reader** roles.
+  - _Search for Exchange mail flow rules (transport rules) by name in Threat Explorer_: Membership in the **Security Administrator** or **Security Reader** roles.
   - _Read-only access_: Membership in the **Global Reader** or **Security Reader** roles.
+
+ 
 
 > [!TIP]
 > Audit log entries are generated when admins preview or download email messages. You can search the admin audit log by user for **AdminMailAccess** activity. For instructions, see [Audit New Search](/purview/audit-new-search).
@@ -173,7 +174,7 @@ The filterable properties that are available in the **Delivery action** box in t
 |Data loss prevention rule|Text. Separate multiple values by commas.|
 |Context|Select one or more values: <ul><li>**Evaluation**</li><li>**Priority account protection**</li></ul>|
 |Connector|Text. Separate multiple values by commas.|
-|Delivery action|Select one or more values: <ul><li>**Blocked**: Email messages that were quarantined, that failed delivery, or were dropped.</li><li>**Delivered**: Email delivered to the user's Inbox or other folder where the user can access the message.</li><li>**Delivered to junk**: Email delivered to the user's Junk Email folder or Deleted Items folder where the user can access the message.</li><li>**Replaced**: This value is no longer relevant. [Anti-malware policies](anti-malware-protection-about.md) in Exchange Online Protection (EOP) used to have an option to deliver the message with all attachments replaced by TXT files. This action is no longer available in Microsoft 365, but is still available in anti-malware policies in Exchange Server.</li></ul>|
+|Delivery action|Select one or more values: <ul><li>**Blocked**: Email messages that were quarantined, that failed delivery, or were dropped.</li><li>**Delivered**: Email delivered to the user's Inbox or other folder where the user can access the message.</li><li>**Delivered to junk**: Email delivered to the user's Junk Email folder or Deleted Items folder where the user can access the message.</li><li>**Replaced**: Message attachments that were replaced by [Dynamic Delivery in Safe Attachments policies](safe-attachments-about.md#dynamic-delivery-in-safe-attachments-policies).</li></ul>|
 |Additional action|Select one or more values: <ul><li>**Automated remediation**</li><li>**Dynamic Delivery**: For more information, see [Dynamic Delivery in Safe Attachments policies](safe-attachments-about.md#dynamic-delivery-in-safe-attachments-policies).</li><li>**Manual remediation**</li><li>**None**</li><li>**Quarantine release**</li><li>**Reprocessed**: The message was retroactively identified as good.</li><li>**ZAP**: For more information, see [Zero-hour auto purge (ZAP) in Microsoft Defender for Office 365](zero-hour-auto-purge.md).</li></ul>|
 |Directionality|Select one or more values: <ul><li>**Inbound**</li><li>**Intra-irg**</li><li>**Outbound**</li></ul>|
 |Detection technology|Select one or more values: <ul><li>**Advanced filter**: Signals based on machine learning.</li><li>**Antimalware protection**</li><li>**Bulk**</li><li>**Campaign**</li><li>**Domain reputation**</li><li>**File detonation**: [Safe Attachments](safe-attachments-about.md) detected a malicious attachment during detonation analysis.</li><li>**File detonation reputation**: File attachments previously detected by [Safe Attachments](safe-attachments-about.md) detonations in other Microsoft 365 organizations.</li><li>**File reputation**: The message contains a file that was previously identified as malicious in other Microsoft 365 organizations.</li><li>**Fingerprint matching**: The message closely resembles a previous detected malicious message.</li><li>**General filter**</li><li>**Impersonation brand**: Sender impersonation of well-known brands.</li><li>**Impersonation domain**: Impersonation of sender domains that you own or specified for protection in [anti-phishing policies](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>**Impersonation user**</li><li>**IP reputation**</li><li>**Mailbox intelligence impersonation**: Impersonation detections from mailbox intelligence in [anti-phishing policies](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).</li><li>**Mixed analysis detection**: Multiple filters contributed to the message verdict.</li><li>**spoof DMARC**: The message failed [DMARC authentication](email-authentication-dmarc-configure.md).</li><li>**Spoof external domain**: Sender email address spoofing using a domain that's external to your organization.</li><li>**Spoof intra-org**: Sender email address spoofing using a domain that's internal to your organization.</li><li>**URL detonation reputation**: URLs previously detected by [Safe Links](safe-links-about.md) detonations in other Microsoft 365 organizations.</li><li>**URL malicious reputation**: The message contains a URL that was previously identified as malicious in other Microsoft 365 organizations.</li></ul>|
@@ -181,7 +182,7 @@ The filterable properties that are available in the **Delivery action** box in t
 |Latest delivery location¹|Same values as **Original delivery location**</li></ul>|
 |Phish confidence level|Select one or more values: <ul><li>**High**</li><li>**Normal**</li></ul>|
 |Primary override|Select one or more values: <ul><li>**Allowed by organization policy**</li><li>**Allowed by user policy**</li><li>**Blocked by organization policy**</li><li>**Blocked by user policy**</li><li>**None**</li></ul>|
-|Primary override source|Select one or more values: <ul><li>**3rd Party Filter**</li><li>**Admin initiated time travel** (ZAP)</li><li>**Antimalware policy block by file type**</li><li>**Antispam policy settings**</li><li>**Connection policy**</li><li>**Exchange transport rule**</li><li>**Exclusive mode (User override)**</li><li>**Filtering skipped due to on-prem organization**</li><li>**IP region filter from policy**</li><li>**Language filter from policy**</li><li>**Phishing Simulation**</li><li>**Quarantine release**</li><li>**SecOps Mailbox**</li><li>**Sender address list (Admin Override)**</li><li>**Sender address list (User override)**</li><li>**Sender domain list (Admin Override)**</li><li>**Sender domain list (User override)**</li><li>**Tenant Allow/Block List file block**</li><li>**Tenant Allow/Block List sender email address block**</li><li>**Tenant Allow/Block List spoof block**</li><li>**Tenant Allow/Block List URL block**</li><li>**Trusted contact list (User override)**</li><li>**Trusted domain (User override)**</li><li>**Trusted recipient (User override)**</li><li>**Trusted senders only (User override)**</li></ul>|
+|Primary override source|Messages can have multiple allow or block overrides as identified in **Override source**. The override that ultimately allowed or blocked the message is identified in **Primary override source**. <br/> Select one or more values: <ul><li>**3rd Party Filter**</li><li>**Admin initiated time travel** (ZAP)</li><li>**Antimalware policy block by file type**</li><li>**Antispam policy settings**</li><li>**Connection policy**</li><li>**Exchange transport rule**</li><li>**Exclusive mode (User override)**</li><li>**Filtering skipped due to on-prem organization**</li><li>**IP region filter from policy**</li><li>**Language filter from policy**</li><li>**Phishing Simulation**</li><li>**Quarantine release**</li><li>**SecOps Mailbox**</li><li>**Sender address list (Admin Override)**</li><li>**Sender address list (User override)**</li><li>**Sender domain list (Admin Override)**</li><li>**Sender domain list (User override)**</li><li>**Tenant Allow/Block List file block**</li><li>**Tenant Allow/Block List sender email address block**</li><li>**Tenant Allow/Block List spoof block**</li><li>**Tenant Allow/Block List URL block**</li><li>**Trusted contact list (User override)**</li><li>**Trusted domain (User override)**</li><li>**Trusted recipient (User override)**</li><li>**Trusted senders only (User override)**</li></ul>|
 |Override source|Same values as **Primary override source**</li></ul>|
 |Policy type|Select one or more values: <ul><li>**Anti-malware policy**</li><li>**Anti-phishing policy**</li><li>**Exchange transport rule** (mail flow rule), **Hosted content filter policy** (anti-spam policy), **Hosted outbound spam filter policy** (outbound spam policy), **Safe Attachments policy**</li><li>**Unknown**</li></ul>|
 |Policy action|Select one or more values: <ul><li>**Add x-header**</li><li>**Bcc message**</li><li>**Delete message**</li><li>**Modify subject**</li><li>**Move to Junk Email folder**</li><li>**No action taken**</li><li>**Redirect message**</li><li>**Send to quarantine**</li></ul>|
@@ -358,72 +359,37 @@ In the **Subject** value for the entry, the :::image type="icon" source="../../m
 
 When you click on the **Subject** or **Recipient** values in an entry, details flyouts open. These flyouts are described in the following subsections.
 
-##### Subject details from the Email view of the details area in the All email view
+##### Email details from the Email view of the details area in the All email view
 
-When you select an entry by clicking on the **Subject** value, a details flyout opens with the following information:
+When you select the **Subject** value of an entry in the table, an email details flyout opens. This details flyout is known as the _Email summary panel_ and contains standardized summary information that's also available on the [Email entity page](mdo-email-entity-page.md) for the message.
 
-> [!TIP]
-> To see details about other message subjects without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
+For details about the information in the Email summary panel, see [The Email summary panel in Defender](mdo-email-entity-page.md#the-email-summary-panel).
 
-- The number of attachments or links in the message.
-- Any [user tags](user-tags-about.md) that are assigned to the recipients of the message.
-- The following actions are available:
-  - :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity**
-  - :::image type="icon" source="../../media/m365-cc-sc-view-message-headers-icon.png" border="false"::: **View header**
-  - :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take action**: For information, see [Remediate using Take action](threat-explorer-threat-hunting.md#remediate-using-take-action).
-  - :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More options**:
-    - :::image type="icon" source="../../media/m365-cc-sc-view-message-headers-icon.png" border="false"::: **Email preview**¹
-    - :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Download email**¹
+The following actions are available at the top of the Email summary panel for Threat Explorer and Real-time detections:
 
-      > [!TIP]
-      > **Download email** isn't available for messages that were quarantined. Instead, [download a password protected copy of the message from quarantine](quarantine-admin-manage-messages-files.md#download-email-from-quarantine).
+- :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open email entity**
+- :::image type="icon" source="../../media/m365-cc-sc-view-message-headers-icon.png" border="false"::: **View header**
+- :::image type="icon" source="../../media/m365-cc-sc-take-actions-icon.png" border="false"::: **Take action**: For information, see [Remediate using Take action](threat-explorer-threat-hunting.md#remediate-using-take-action).
+- :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More options**:
+  - :::image type="icon" source="../../media/m365-cc-sc-view-message-headers-icon.png" border="false"::: **Email preview**¹ ²
+  - :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Download email**¹ ² ³
+  - :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **View in Explorer**
+  - :::image type="icon" source="../../media/m365-cc-sc-view-message-headers-icon.png" border="false"::: **Go hunt**⁴
 
-    - :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **View in Explorer**
-    - :::image type="icon" source="../../media/m365-cc-sc-view-message-headers-icon.png" border="false"::: **Go hunt**
+¹ The **Email preview** and **Download email** actions require the **Preview** role in [Email & collaboration permissions](mdo-portal-permissions.md). By default, this role is assigned to the **Data Investigator** and **eDiscovery Manager** role groups. By default, members of the **Organization Management** or **Security Administrators** role groups can't do these actions. To allow these actions for the members of those groups, you have the following options:
 
-¹ The **Email preview** and **Download email** actions require the **Preview** role in [Email & collaboration permissions](mdo-portal-permissions.md). By default, this role is assigned to the **Data Investigator** and **eDiscovery Manager** role groups. Members of only the **Organization Management** or **Security Administrators** role groups can't open these actions. You can add the members of the groups to the **Data Investigator** and **eDiscovery Manager** role groups, or you can [create a new role group](mdo-portal-permissions.md#create-email--collaboration-role-groups-in-the-microsoft-defender-portal) with the same roles as **Organization Management** or **Security Administrator**, and then add the **Search and Purge** role to the custom role group.
+- Add the users to the **Data Investigator** or **eDiscovery Manager** role groups.
+- [Create a new role group](mdo-portal-permissions.md#create-email--collaboration-role-groups-in-the-microsoft-defender-portal) with the **Search and Purge** role assigned, and add the users to the custom role group.
 
-- The following sections are available:
-  - **Delivery details** section:
-    - **Original threats**
-    - **Latest threats**
-    - **Original location**
-    - **Latest delivery location**
-    - **Delivery action**
-    - **Detection technologies**
-    - **Primary override : Source**
-  - **Email details** section:
-    - **Sender display name**
-    - **Sender address**
-    - **Sender email from address**
-    - **Sent on behalf of**
-    - **Return path**
-    - **Sender IP**
-    - **Location**
-    - **Recipient(s)**
-    - **Time received**
-    - **Directionality**
-    - **Network message ID**
-    - **Internet message ID**
-    - **Campaign ID**
-    - **DMARC**
-    - **DKIM**
-    - **SPF**
-    - **Composite authentication**
-  - **URLs** section: Details about any URLs in the message:
-    - **URL**
-    - **Threat** status
+² You can preview or download email messages that are available in Microsoft 365 mailboxes. Examples of when messages are no longer available in mailboxes include:
 
-    If the message has more than three URLs, select **View all URLs** to see all of them.
+- The message was dropped before delivery or delivery failed.
+- The message was _soft deleted_ (deleted from the Deleted items folder, which moves the message to the Recoverable Items\Deletions folder).
+- ZAP moved the message to quarantine.
 
-  - **Attachments** section: Details about any file attachments in the message:
-    - **Attachment name**
-    - **Threat**
-    - **Detection tech / Malware family**
+³ **Download email** isn't available for messages that were quarantined. Instead, [download a password protected copy of the message from quarantine](quarantine-admin-manage-messages-files.md#download-email-from-quarantine).
 
-    If the message has more than three attachments, select **View all attachments** to see all of them.
-
-:::image type="content" source="../../media/te-rtd-all-email-view-email-tab-details-area-subject-details-flyout.png" alt-text="Screenshot of the details tab after you select a subject in the Email tab of the details area in the All email view." lightbox="../../media/te-rtd-all-email-view-email-tab-details-area-subject-details-flyout.png":::
+⁴ **Go hunt** is available only in Threat Explorer. It isn't available in Real-time detections.
 
 ##### Recipient details from the Email view of the details area in the All email view
 
@@ -438,7 +404,7 @@ When you select an entry by clicking on the **Recipient** value, a details flyou
     - Whether the user has permission to see archive information.
     - Whether the user has permission to see retention information.
     - Whether the user is covered by data loss prevention (DLP).
-    - Whether the user is covered by **Mobile management** at <https://portal.office.com/EAdmin/Device/IntuneInventory.aspx>. <!-- Security Administrator can't open the page--->
+    - Whether the user is covered by **Mobile management** at <https://portal.office.com/EAdmin/Device/IntuneInventory.aspx>. 
 - **Email** section: A table showing the following related information for messages sent to the recipient:
   - **Date**
   - **Subject**
@@ -465,7 +431,7 @@ When you select an entry by clicking on the **Recipient** value, a details flyou
    > [!TIP]
    > Members of the **Security Administrators** role group in [Email & collaboration permissions](mdo-portal-permissions.md) can't expand the **Recent activity** section. You need to be a member of a role group in [Exchange Online permissions](/exchange/permissions-exo/permissions-exo) that has the **Audit Logs**, **Information Protection Analyst**, or **Information Protection Investigator** roles assigned. By default, those roles are assigned to the **Records Management**, **Compliance Management**, **Information Protection**, **Information Protection Analysts**, **Information Protection Investigators**, and **Organization Management** role groups. You can add the members of **Security Administrators** to those role groups, or you can [create a new role group](/exchange/recipients-in-exchange-online/manage-permissions-for-recipients#use-the-eac-to-assign-permissions-to-individual-mailboxes) with with the **Audit Logs** role assigned.
 
-:::image type="content" source="../../media/te-rtd-all-email-view-email-tab-details-area-recipient-details-flyout.png" alt-text="Screenshot of the details flyout after you select a recipient in the Email tab of the details area in the All email view." lightbox="../../media/te-rtd-all-email-view-email-tab-details-area-recipient-details-flyout.png":::
+:::image type="content" source="../../media/te-rtd-all-email-view-email-tab-details-area-recipient-details-flyout.png" alt-text="Screenshot of the recipient details flyout after you select a Recipient value in the Email tab of the details area in the All email view." lightbox="../../media/te-rtd-all-email-view-email-tab-details-area-recipient-details-flyout.png":::
 
 #### URL clicks view for the details area of the All email view in Threat Explorer
 
@@ -534,7 +500,7 @@ When you select an entry by clicking anywhere in the row other than the check bo
     - :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Report clean**
     - :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Report phishing**
     - :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Report malware**
-    <!--- The target URL is constructed such that it should open a new submission with the details filled out. But it takes me to the Email tab on the main Submissions page. Perhaps another permissions issue?--->
+    <!--- The target URL is constructed such that it should open a new submission with the details filled out. But it takes me to the Email tab on the main Submissions page.--->
   - :::image type="icon" source="../../media/m365-cc-sc-manage-indicator-icon.png" border="false"::: **Manage indicator**:
     - :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Add indicator**
     - :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Manage in tenant block list**
@@ -657,14 +623,14 @@ The filterable properties that are available in the **Sender address** box in th
 |Data loss prevention rule|Text. Separate multiple values by commas.|✔||
 |Context|Select one or more values: <ul><li>**Evaluation**</li><li>**Priority account protection**</li></ul>|✔||
 |Connector|Text. Separate multiple values by commas.|✔||
-|Delivery action|Select one or more values: <ul><li>**Blocked**</li><li>**Delivered**</li><li>**Delivered to junk**</li><li>**Replaced**</li></ul>|✔|✔|
+|Delivery action|Select one or more values: <ul><li>**Blocked**</li><li>**Delivered**</li><li>**Delivered to junk**</li><li>**Replaced**: Message attachments that were replaced by [Dynamic Delivery in Safe Attachments policies](safe-attachments-about.md#dynamic-delivery-in-safe-attachments-policies).</li></ul>|✔|✔|
 |Additional action|Select one or more values: <ul><li>**Automated remediation**</li><li>**Dynamic Delivery**: For more information, see [Dynamic Delivery in Safe Attachments policies](safe-attachments-about.md#dynamic-delivery-in-safe-attachments-policies).</li><li>**Manual remediation**</li><li>**None**</li><li>**Quarantine release**</li><li>**Reprocessed**</li><li>**ZAP**: For more information, see [Zero-hour auto purge (ZAP) in Microsoft Defender for Office 365](zero-hour-auto-purge.md).</li></ul>|✔|✔|
 |Directionality|Select one or more values: <ul><li>**Inbound**</li><li>**Intra-irg**</li><li>**Outbound**</li></ul>|✔|✔|
 |Detection technology|Select one or more values: <ul><li>**Advanced filter**: Signals based on machine learning.</li><li>**Antimalware protection**</li><li>**Bulk**</li><li>**Campaign**</li><li>**Domain reputation**</li><li>**File detonation**: [Safe Attachments](safe-attachments-about.md) detected a malicious attachment during detonation analysis.</li><li>**File detonation reputation**: File attachments previously detected by [Safe Attachments](safe-attachments-about.md) detonations in other Microsoft 365 organizations.</li><li>**File reputation**: The message contains a file that was previously identified as malicious in other Microsoft 365 organizations.</li><li>**Fingerprint matching**: The message closely resembles a previous detected malicious message.</li><li>**General filter**</li><li>**Impersonation brand**: Sender impersonation of well-known brands.</li><li>**Impersonation domain**: Impersonation of sender domains that you own or specified for protection in [anti-phishing policies](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>**Impersonation user**</li><li>**IP reputation**</li><li>**Mailbox intelligence impersonation**: Impersonation detections from mailbox intelligence in [anti-phishing policies](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).</li><li>**Mixed analysis detection**: Multiple filters contributed to the message verdict.</li><li>**spoof DMARC**: The message failed [DMARC authentication](email-authentication-dmarc-configure.md).</li><li>**Spoof external domain**: Sender email address spoofing using a domain that's external to your organization.</li><li>**Spoof intra-org**: Sender email address spoofing using a domain that's internal to your organization.</li><li>**URL detonation**: [Safe Links](safe-links-about.md) detected a malicious URL in the message during detonation analysis.</li><li>**URL detonation reputation**: URLs previously detected by [Safe Links](safe-links-about.md) detonations in other Microsoft 365 organizations.</li><li>**URL malicious reputation**: The message contains a URL that was previously identified as malicious in other Microsoft 365 organizations.</li></ul>|✔|✔|
 |Original delivery location|Select one or more values: <ul><li>**Deleted Items folder**</li><li>**Dropped**</li><li>**Failed**</li><li>**Inbox/folder**</li><li>**Junk folder**</li><li>**On-prem/external**</li><li>**Quarantine**</li><li>**Unknown**</li></ul>|✔|✔|
 |Latest delivery location|Same values as **Original delivery location**</li></ul>|✔|✔|
 |Primary override|Select one or more values: <ul><li>**Allowed by organization policy**</li><li>**Allowed by user policy**</li><li>**Blocked by organization policy**</li><li>**Blocked by user policy**</li><li>**None**</li></ul>|✔|✔|
-|Primary override source|Select one or more values: <ul><li>**3rd Party Filter**</li><li>**Admin initiated time travel**</li><li>**Antimalware policy block by file type**</li><li>**Antispam policy settings**</li><li>**Connection policy**</li><li>**Exchange transport rule**</li><li>**Exclusive mode (User override)**</li><li>**Filtering skipped due to on-prem organization**</li><li>**IP region filter from policy**</li><li>**Language filter from policy**</li><li>**Phishing Simulation**</li><li>**Quarantine release**</li><li>**SecOps Mailbox**</li><li>**Sender address list (Admin Override)**</li><li>**Sender address list (User override)**</li><li>**Sender domain list (Admin Override)**</li><li>**Sender domain list (User override)**</li><li>**Tenant Allow/Block List file block**</li><li>**Tenant Allow/Block List sender email address block**</li><li>**Tenant Allow/Block List spoof block**</li><li>**Tenant Allow/Block List URL block**</li><li>**Trusted contact list (User override)**</li><li>**Trusted domain (User override)**</li><li>**Trusted recipient (User override)**</li><li>**Trusted senders only (User override)**</li></ul>|✔|✔|
+|Primary override source|Messages can have multiple allow or block overrides as identified in **Override source**. The override that ultimately allowed or blocked the message is identified in **Primary override source**. <br/> Select one or more values: <ul><li>**3rd Party Filter**</li><li>**Admin initiated time travel** (ZAP)</li><li>**Antimalware policy block by file type**</li><li>**Antispam policy settings**</li><li>**Connection policy**</li><li>**Exchange transport rule**</li><li>**Exclusive mode (User override)**</li><li>**Filtering skipped due to on-prem organization**</li><li>**IP region filter from policy**</li><li>**Language filter from policy**</li><li>**Phishing Simulation**</li><li>**Quarantine release**</li><li>**SecOps Mailbox**</li><li>**Sender address list (Admin Override)**</li><li>**Sender address list (User override)**</li><li>**Sender domain list (Admin Override)**</li><li>**Sender domain list (User override)**</li><li>**Tenant Allow/Block List file block**</li><li>**Tenant Allow/Block List sender email address block**</li><li>**Tenant Allow/Block List spoof block**</li><li>**Tenant Allow/Block List URL block**</li><li>**Trusted contact list (User override)**</li><li>**Trusted domain (User override)**</li><li>**Trusted recipient (User override)**</li><li>**Trusted senders only (User override)**</li></ul>|✔|✔|
 |Override source|Same values as **Primary override source**</li></ul>|✔|✔|
 |Policy type|Select one or more values: <ul><li>**Anti-malware policy**</li><li>**Anti-phishing policy**</li><li>**Exchange transport rule** (mail flow rule), **Hosted content filter policy** (anti-spam policy), **Hosted outbound spam filter policy** (outbound spam policy), **Safe Attachments policy**</li><li>**Unknown**</li></ul>|✔|✔|
 |Policy action|Select one or more values: <ul><li>**Add x-header**</li><li>**Bcc message**</li><li>**Delete message**</li><li>**Modify subject**</li><li>**Move to Junk Email folder**</li><li>**No action taken**</li><li>**Redirect message**</li><li>**Send to quarantine**</li></ul>|✔|✔|
@@ -827,12 +793,13 @@ When you select one or more entries from the list by selecting the check box nex
 
 When you click on the **Subject** or **Recipient** values in an entry, details flyouts open. These flyouts are described in the following subsections.
 
-##### Subject details from the Email view of the details area in the Malware view
+##### Email details from the Email view of the details area in the Malware view
 
-When you select an entry by clicking on the **Subject** value, a details flyout opens. The information in the flyout is the same as described in [Subject details from the Email view of the details area in the All email view](#subject-details-from-the-email-view-of-the-details-area-in-the-all-email-view).
+When you select the **Subject** value of an entry in the table, an email details flyout opens. This details flyout is known as the _Email summary panel_ and contains standardized summary information that's also available on the [Email entity page](mdo-email-entity-page.md) for the message.
 
-> [!TIP]
-> The :::image type="icon" source="../../media/m365-cc-sc-go-hunt-icon.png" border="false"::: **Go hunt** action is available only in Threat Explorer. It isn't available in Real-time detections.
+For details about the information in the Email summary panel, see [The Email summary panels](mdo-email-entity-page.md#the-email-summary-panel).
+
+The available actions at the top of the Email summary panel for Threat Explorer and Real-time detections are described in the [Email details from the Email view of the details area in the All email view](#email-details-from-the-email-view-of-the-details-area-in-the-all-email-view).
 
 ##### Recipient details from the Email view of the details area in the Malware view
 
@@ -919,7 +886,7 @@ The filterable properties that are available in the **Sender address** box in th
 |Data loss prevention rule|Text. Separate multiple values by commas.|✔||
 |Context|Select one or more values: <ul><li>**Evaluation**</li><li>**Priority account protection**</li></ul>|✔||
 |Connector|Text. Separate multiple values by commas.|✔||
-|Delivery action|Select one or more values: <ul><li>**Blocked**</li><li>**Delivered**</li><li>**Delivered to junk**</li><li>**Replaced**</li></ul>|✔|✔|
+|Delivery action|Select one or more values: <ul><li>**Blocked**</li><li>**Delivered**</li><li>**Delivered to junk**</li><li>**Replaced**: Message attachments that were replaced by [Dynamic Delivery in Safe Attachments policies](safe-attachments-about.md#dynamic-delivery-in-safe-attachments-policies).</li></ul>|✔|✔|
 |Additional action|Select one or more values: <ul><li>**Automated remediation**</li><li>**Dynamic Delivery**</li><li>**Manual remediation**</li><li>**None**</li><li>**Quarantine release**</li><li>**Reprocessed**</li><li>**ZAP**</li></ul>|✔|✔|
 |Directionality|Select one or more values: <ul><li>**Inbound**</li><li>**Intra-irg**</li><li>**Outbound**</li></ul>|✔|✔|
 |Detection technology|Select one or more values: <ul><li>**Advanced filter**</li><li>**Antimalware protection**</li><li>**Bulk**</li><li>**Campaign**</li><li>**Domain reputation**</li><li>**File detonation**</li><li>**File detonation reputation**</li><li>**File reputation**</li><li>**Fingerprint matching**</li><li>**General filter**</li><li>**Impersonation brand**</li><li>**Impersonation domain**</li><li>**Impersonation user**</li><li>**IP reputation**</li><li>**Mailbox intelligence impersonation**</li><li>**Mixed analysis detection**</li><li>**spoof DMARC**</li><li>**Spoof external domain**</li><li>**Spoof intra-org**</li><li>**URL detonation**</li><li>**URL detonation reputation**</li><li>**URL malicious reputation**</li></ul>|✔|✔|
@@ -927,7 +894,7 @@ The filterable properties that are available in the **Sender address** box in th
 |Latest delivery location|Same values as **Original delivery location**</li></ul>|✔|✔|
 |Phish confidence level|Select one or more values: <ul><li>**High**</li><li>**Normal**</li></ul>|✔||
 |Primary override|Select one or more values: <ul><li>**Allowed by organization policy**</li><li>**Allowed by user policy**</li><li>**Blocked by organization policy**</li><li>**Blocked by user policy**</li><li>**None**</li></ul>|✔|✔|
-|Primary override source|Select one or more values: <ul><li>**3rd Party Filter**</li><li>**Admin initiated time travel**</li><li>**Antimalware policy block by file type**</li><li>**Antispam policy settings**</li><li>**Connection policy**</li><li>**Exchange transport rule**</li><li>**Exclusive mode (User override)**</li><li>**Filtering skipped due to on-prem organization**</li><li>**IP region filter from policy**</li><li>**Language filter from policy**</li><li>**Phishing Simulation**</li><li>**Quarantine release**</li><li>**SecOps Mailbox**</li><li>**Sender address list (Admin Override)**</li><li>**Sender address list (User override)**</li><li>**Sender domain list (Admin Override)**</li><li>**Sender domain list (User override)**</li><li>**Tenant Allow/Block List file block**</li><li>**Tenant Allow/Block List sender email address block**</li><li>**Tenant Allow/Block List spoof block**</li><li>**Tenant Allow/Block List URL block**</li><li>**Trusted contact list (User override)**</li><li>**Trusted domain (User override)**</li><li>**Trusted recipient (User override)**</li><li>**Trusted senders only (User override)**</li></ul>|✔|✔|
+|Primary override source|Messages can have multiple allow or block overrides as identified in **Override source**. The override that ultimately allowed or blocked the message is identified in **Primary override source**. <br/> Select one or more values: <ul><li>**3rd Party Filter**</li><li>**Admin initiated time travel** (ZAP)</li><li>**Antimalware policy block by file type**</li><li>**Antispam policy settings**</li><li>**Connection policy**</li><li>**Exchange transport rule**</li><li>**Exclusive mode (User override)**</li><li>**Filtering skipped due to on-prem organization**</li><li>**IP region filter from policy**</li><li>**Language filter from policy**</li><li>**Phishing Simulation**</li><li>**Quarantine release**</li><li>**SecOps Mailbox**</li><li>**Sender address list (Admin Override)**</li><li>**Sender address list (User override)**</li><li>**Sender domain list (Admin Override)**</li><li>**Sender domain list (User override)**</li><li>**Tenant Allow/Block List file block**</li><li>**Tenant Allow/Block List sender email address block**</li><li>**Tenant Allow/Block List spoof block**</li><li>**Tenant Allow/Block List URL block**</li><li>**Trusted contact list (User override)**</li><li>**Trusted domain (User override)**</li><li>**Trusted recipient (User override)**</li><li>**Trusted senders only (User override)**</li></ul>|✔|✔|
 |Override source|Same values as **Primary override source**</li></ul>|✔|✔|
 |Policy type|Select one or more values: <ul><li>**Anti-malware policy**</li><li>**Anti-phishing policy**</li><li>**Exchange transport rule** (mail flow rule), **Hosted content filter policy** (anti-spam policy), **Hosted outbound spam filter policy** (outbound spam policy), **Safe Attachments policy**</li><li>**Unknown**</li></ul>|✔|✔|
 |Policy action|Select one or more values: <ul><li>**Add x-header**</li><li>**Bcc message**</li><li>**Delete message**</li><li>**Modify subject**</li><li>**Move to Junk Email folder**</li><li>**No action taken**</li><li>**Redirect message**</li><li>**Send to quarantine**</li></ul>|✔|✔|
@@ -1111,12 +1078,13 @@ When you select one or more entries from the list by selecting the check box nex
 
 When you click on the **Subject** or **Recipient** values in an entry, details flyouts open. These flyouts are described in the following subsections.
 
-##### Subject details from the Email view of the details area in the Phish view
+##### Email details from the Email view of the details area in the Phish view
 
-When you select an entry by clicking on the **Subject** value, a details flyout opens. The information in the flyout is the same as described in [Subject details from the Email view of the details area in the All email view](#subject-details-from-the-email-view-of-the-details-area-in-the-all-email-view).
+When you select the **Subject** value of an entry in the table, an email details flyout opens. This details flyout is known as the _Email summary panel_ and contains standardized summary information that's also available on the [Email entity page](mdo-email-entity-page.md) for the message.
 
-> [!TIP]
-> The :::image type="icon" source="../../media/m365-cc-sc-go-hunt-icon.png" border="false"::: **Go hunt** action is available only in Threat Explorer. It isn't available in Real-time detections.
+For details about the information in the Email summary panel, see [The Email summary panel in Defender for Office 365 features](mdo-email-entity-page.md#the-email-summary-panel).
+
+The available actions at the top of the Email summary panel for Threat Explorer and Real-time detections are described in the [Email details from the Email view of the details area in the All email view](#email-details-from-the-email-view-of-the-details-area-in-the-all-email-view).
 
 ##### Recipient details from the Email view of the details area in the Phish view
 
@@ -1145,7 +1113,7 @@ The same chart pivots are available and described for the **All email** view in 
 :::image type="content" source="../../media/te-rtd-all-email-view-details-area-url-clicks-tab-default-view.png" alt-text="Screenshot of the details area of the Phish view in Threat Explorer with the URL clicks tab selected and showing the available pivots with no pivot selected." lightbox="../../media/te-rtd-all-email-view-details-area-url-clicks-tab-default-view.png":::
 
 > [!TIP]
-> In Threat Explorer, each pivot in **URL clicks** view has a :::image type="icon" source="../../media/m365-cc-sc-view-icon.png" border="false"::: **View all clicks** action that opens the [URL clicks view in Threat Explorer](#url-clicks-view-in-threat-explorer) in a new tab. This action isn't available in Real-time detections, because the **URL clicks** view isn't avaialble in Real-time detections.
+> In Threat Explorer, each pivot in **URL clicks** view has a :::image type="icon" source="../../media/m365-cc-sc-view-icon.png" border="false"::: **View all clicks** action that opens the [URL clicks view in Threat Explorer](#url-clicks-view-in-threat-explorer) in a new tab. This action isn't available in Real-time detections, because the **URL clicks** view isn't available in Real-time detections.
 
 #### Top URLs view for the details area of the Phish view in Threat Explorer and Real-time detections
 
@@ -1494,7 +1462,7 @@ The **Top clicks** view shows a details table. You can sort the entries by click
 > - Narrow the width of appropriate columns.
 > - Zoom out in your web browser.
 
-Select an entry by selecting the check box next to the first column in the row, and then select :::image type="icon" source="../../media/m365-cc-sc-view-icon.png" border="false"::: **View all clicks** to open Threat Explorer in a new tab in **URL clicks** view. <!--- Doesn't work? No filters --->
+Select an entry by selecting the check box next to the first column in the row, and then select :::image type="icon" source="../../media/m365-cc-sc-view-icon.png" border="false"::: **View all clicks** to open Threat Explorer in a new tab in **URL clicks** view.
 
 When you select an entry by clicking anywhere in the row other than the check box next to the first column, a details flyout opens. The information in the flyout is the same as described in [Top URLs details for the All email view](#top-urls-details-for-the-all-email-view).
 
@@ -1561,11 +1529,11 @@ The steps to create property filter/query conditions are the same in all views i
 ### Saved queries in Threat Explorer
 
 > [!TIP]
-> **Save query** isn't available in Real-time detections. It's available only in Threat Explorer.
+> **Save query** is part of [Threat trackers](threat-trackers.md) and isn't available in Real-time detections. Saved queries and Threat trackers are available only in Defender for Office 365 Plan 2.
 >
 > **Save query** isn't available in the [Content malware view](#content-malware-view-in-threat-explorer-and-real-time-detections).
 
-Most views in Threat Explorer allow you to save filters (queries) for later use. Saved queries are available on the **Threat tracker** page in the Defender portal at <https://security.microsoft.com/threattrackerv2>. For more information about Threat trackers, see [About Threat trackers](threat-trackers.md).
+Most views in Threat Explorer allow you to save filters (queries) for later use. Saved queries are available on the **Threat tracker** page in the Defender portal at <https://security.microsoft.com/threattrackerv2>. For more information about Threat trackers, see [Threat trackers in Microsoft Defender for Office 365 Plan 2](threat-trackers.md).
 
 To save queries in Threat Explorer, do the following steps:
 
@@ -1577,8 +1545,8 @@ To save queries in Threat Explorer, do the following steps:
      - **Exact dates**: Select a start date and end date in the boxes. The oldest start date that you can select is 30 days before today. The newest end date that you can select is today.
      - **Relative dates**: Select the number of days in the **Show last nn days when search is run**. The default value is 7, but you can select 1 to 30.
    - **Track query**: By default, this option isn't selected. This option affects whether the query runs automatically:
-     - **Track query** not selected: The query is available for you to run manually in Threat Explorer. The query is saved on the **Saved queries** tab on the **Threat tracker** page.
-     - **Track query** selected: The query periodically runs in the background. The results and the query are saved on the **Tracked queries** tab on the **Threat tracker** page.
+     - **Track query** not selected: The query is available for you to run manually in Threat Explorer. The query is saved on the **Saved queries** tab on the **Threat tracker** page with the **Tracked query** property value **No**.
+     - **Track query** selected: The query periodically runs in the background. The query is available on the **Saved queries** tab on the **Threat tracker** page with the **Tracked query** property value **Yes**. The periodic results of the query are shown on the **Tracked queries** tab on the **Threat tracker** page.
 
    When you're finished in the **Save query** flyout, select **Save**, and then select **OK** in the confirmation dialog.
 
@@ -1586,7 +1554,7 @@ To save queries in Threat Explorer, do the following steps:
 
 On the **Saved query** or **Tracked query** tabs on the **Threat tracker** page in the Defender portal at <https://security.microsoft.com/threattrackerv2>, you can select **Explore** in the **Actions** column to open and use the query in Threat Explorer.
 
-When you open the query from the **Threat tracker** page, :::image type="icon" source="../../media/m365-cc-sc-save-icon.png" border="false"::: **Save query as** and :::image type="icon" source="../../media/m365-cc-sc-gear-icon.png" border="false"::: **Saved query settings** are now available in **Save query** on the **Explorer** page:
+When you open the query by selecting **Explore** from the **Threat tracker** page, :::image type="icon" source="../../media/m365-cc-sc-save-icon.png" border="false"::: **Save query as** and :::image type="icon" source="../../media/m365-cc-sc-gear-icon.png" border="false"::: **Saved query settings** are now available in **Save query** on the **Explorer** page:
 
 - If you select :::image type="icon" source="../../media/m365-cc-sc-save-icon.png" border="false"::: **Save query as**, the **Save query** flyout opens with all previously selected settings. If you make changes, select **Save**, and then select **OK** in the **Success** dialog, the updated query is saved as a new query on the **Threat tracker** page (you might need to select :::image type="icon" source="../../media/m365-cc-sc-refresh-icon.png" border="false":::**Refresh** to see it).
 
@@ -1596,7 +1564,7 @@ When you open the query from the **Threat tracker** page, :::image type="icon" s
 
 ## More information
 
-- [Threat Explorer collect email details on the email entity page](mdo-email-entity-page.md)
+- [Threat Explorer collect email details on the Email entity page](mdo-email-entity-page.md)
 - [Find and investigate malicious email that was delivered](threat-explorer-investigate-delivered-malicious-email.md)
 - [View malicious files detected in SharePoint Online, OneDrive, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-about.md)
 - [Threat protection status report](reports-email-security.md#threat-protection-status-report)

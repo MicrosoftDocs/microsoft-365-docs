@@ -5,17 +5,16 @@ author: chrisda
 manager: deniseb
 audience: ITPro
 ms.topic: how-to
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 ms.localizationpriority: medium
 ms.collection: 
   - m365-security
   - tier2
 description: Admins can learn about the Training modules that are available to use in Training campaigns in Attack simulation training in Microsoft Defender for Office 365 Plan 2.
-ms.subservice: mdo
 search.appverid: met150
-ms.date: 6/14/2023
+ms.date: 3/11/2024
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison" target="_blank">Microsoft Defender for Office 365 plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 2</a>
 ---
 
 # Training modules for Training campaigns in Attack simulation training
@@ -26,10 +25,10 @@ In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Offi
 
 To see the available Training modules, open the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Content library** tab \> and then select **Training modules**. Or, to go directly to the **Content library** tab where you can select **Training modules**, use <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>.
 
-The **Training modules** page shows the following information for each module<sup>\*</sup>:
+The **Training modules** page shows the following information for each module. You can sort the modules by clicking on an available column header. Select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns** to change the columns that are shown. By default, all available columns are selected.
 
 - **Training name**
-- **Languages**: The available values are: **Arabic**, **Chinese(Simplified)**, **Chinese(Traditional, Hong Kong), **Chinese(Traditional, Taiwan), **Czech**, **Danish**, **Dutch**, **English**, **English**, **Finnish**, **French**, **French**, **German**, **Hebrew**, **Hindi**, **Hungarian**, **Indonesian**, **Italian**, **Japanese**, **Korean**, **Malay**, **NorwegianBokmål**, **Persian**, **Polish**, **Portuguese**, **Portuguese**, **Russian**, **Slovakian**, **Spanish**, **Swedish**, **Thai**, **Turkish**, **Ukrainian**, **Vietnamese**
+- **Languages**: The available values are: **Turkish**, **Polish**, **Persian**, **Danish**, **Slovak**, **Korean**, **Portuguese**, **Italian**, **German**, **French**, **Swedish**, **Spanish**, **Arabic**, **Norwegian Bokmål**, **Russian**, **Portuguese**, **Japanese**, **Czech**, **Greek**, **Spanish**, **Thai**, **Romanian**, **French**, **Hungarian**, **Chinese (Simplified)**, **English**, **Indonesian**, **Finnish**, **Malay**, **English**, **Hindi**, **Chinese (Traditional**, **Hong Kong)**, **Chinese (Traditional**, **Taiwan)**, **Macedonian**, **Ukrainian**, **Vietnamese**, **Hebrew**, **Serbian (Cyrillic)/Serbian (Latin)**, and **Dutch**
 - **Tags**: Training modules are organized into one or more of the following categories:
   - **AttachmentMalware**
   - **Basic**
@@ -41,6 +40,7 @@ The **Training modules** page shows the following information for each module<su
   - **LinkToMalwareFile**
   - **OAuthConsentGrant**
   - **Phishing**
+  - **SocialEngineering**
 - **Source**: All built-in modules have the value **Global**.
 - **Duration (mins)**
 - **Last assigned date**
@@ -48,14 +48,13 @@ The **Training modules** page shows the following information for each module<su
 - **Completion rate**
 - **Preview**: Select the **Preview** button in this column to watch the training.
 
-Select a column header to sort by that column. To add or remove columns, select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns**. By default, all available columns are selected.
-
-<sup>\*</sup> To see all columns, you likely need to do one or more of the following steps:
-
-- Horizontally scroll in your web browser.
-- Narrow the width of appropriate columns.
-- Remove columns from the view.
-- Zoom out in your web browser.
+> [!TIP]
+> To see all columns, you likely need to do one or more of the following steps:
+>
+> - Horizontally scroll in your web browser.
+> - Narrow the width of appropriate columns.
+> - Remove columns from the view.
+> - Zoom out in your web browser.
 
 To find a Training module in the list, type the name of the module in the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box, and then press the ENTER key.
 
@@ -74,9 +73,13 @@ When you select a Training module from the list by clicking anywhere in the row 
 - **Languages**
 - **Duration**
 - **Preview**: Select this button to watch the training.
+- **Tags**
 
 - **Active Training campaigns and simulations**: This section shows the following information about active Training campaigns that are using the selected module:
   - **Name**
   - **Type**
   - **Status**
   - **End by**
+
+> [!TIP]
+> To see details about other training modules without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
