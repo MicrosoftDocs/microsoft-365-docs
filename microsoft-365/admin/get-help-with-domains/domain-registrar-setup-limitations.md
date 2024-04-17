@@ -34,7 +34,7 @@ description: "Some domain registrars offer limited services, which means not all
 [Create DNS records when your domain is managed by Google (eNom)](#create-dns-records-when-your-domain-is-managed-by-google-enom)\
 [Create DNS records at IONOS for Microsoft](#create-dns-records-at-ionos-for-microsoft)
 
-Some domain registrars have significant service limitations, which means not all Microsoft features will work with every domain. Specific limitations for some registrars are identified in this article. 
+Some domain registrars have significant service limitations, which means not all Microsoft features work with every domain. Specific limitations for some registrars are identified in this article. 
 
 ## Create DNS records at DNSMadeEasy for Microsoft
 
