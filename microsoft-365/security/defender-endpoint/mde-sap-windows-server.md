@@ -205,15 +205,17 @@ Here's a list of what to test:
 
 5. Make sure [behavior monitoring](behavioral-blocking-containment.md) is turned on. If tamper protection is enabled, behavior monitoring is turned on by default. Use the default configuration of tamper protection enabled, behavior monitoring enabled, and real-time monitoring enabled unless a specific problem is identified. For more information, see [Built-in protection helps guard against ransomware](built-in-protection.md).
 
-
 6. Make sure [real-time protection is enabled](configure-real-time-protection-microsoft-defender-antivirus.md). The current recommendation for Defender for Endpoint on Windows is to enable real-time scanning, with tamper protection enabled, behavior monitoring enabled, and real-time monitoring enabled, unless a specific problem has been identified.  
 
-7. With respect to network shares, by default, the Microsoft Defender Antivirus component on Windows scans SMB shared network file systems (for example, a Windows server share `\\server\smb-share` or a NetApp share) when these files are accessed by processes. 
+7. Keep in mind how scans work with network shares. By default, the Microsoft Defender Antivirus component on Windows scans SMB shared network file systems (for example, a Windows server share `\\server\smb-share` or a NetApp share) when these files are accessed by processes. 
 
-   - Defender for Endpoint on Linux does not scan NFS file systems during scheduled scans. 
-   - Defender for Endpoint EDR on Windows might scan SMB shared network file systems. The EDR sensor scans certain files that are identified as interesting for EDR analysis during file modification, delete and move operations.
+   Defender for Endpoint EDR on Windows might scan SMB shared network file systems. The EDR sensor scans certain files that are identified as interesting for EDR analysis during file modification, delete and move operations.
 
-8. Use the Defender for Endpoint Client Analyzer tool if necessary. The Defender for Endpoint Client Analyzer an be useful when diagnosing sensor health or reliability issues on onboarded devices running either Windows, Linux, or macOS. For example, you may want to run the analyzer on a machine that appears to be unhealthy according to the displayed sensor health status (Inactive, No Sensor Data or Impaired Communications) in the security portal.
+   Defender for Endpoint on Linux does not scan NFS file systems during scheduled scans. 
+
+8. To troubleshoot sense health or reliability issues, use the [Defender for Endpoint Client Analyzer tool](overview-client-analyzer.md). The Defender for Endpoint Client Analyzer an be useful when diagnosing sensor health or reliability issues on onboarded devices running either Windows, Linux, or macOS. 
+
+   Get the latest version here: [https://aka.ms/MDEAnalyzer](https://aka.ms/MDEAnalyzer).
 
 What is the recommended setting for RealTimeProtectionEnabled?
 - Does Defender for Endpoint on Windows scan network shares?
