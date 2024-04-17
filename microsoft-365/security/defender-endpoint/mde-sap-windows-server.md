@@ -209,25 +209,31 @@ Here's a list of what to check:
    
    For more information about the output, see [Review events and errors using Event Viewer](event-error-codes.md).
 
-4. To check whether Microsoft Defender Antivirus software components are up to date, use Windows Update. If Microsoft Defender Antivirus isn't up to date, or if you get an error, contact your security team. For more information about updates, see [Microsoft Defender Antivirus security intelligence and product updates](microsoft-defender-antivirus-updates.md).
+4. **Make sure that Microsoft Defender Antivirus is up to date**. The best way to make sure your antivirus protection is up to date is by using Windows Update. If Microsoft Defender Antivirus isn't up to date, or if you get an error, contact your security team. 
 
-5. Make sure [behavior monitoring](behavioral-blocking-containment.md) is turned on. If tamper protection is enabled, behavior monitoring is turned on by default. Use the default configuration of tamper protection enabled, behavior monitoring enabled, and real-time monitoring enabled unless a specific problem is identified. For more information, see [Built-in protection helps guard against ransomware](built-in-protection.md).
+   For more information about updates, see [Microsoft Defender Antivirus security intelligence and product updates](microsoft-defender-antivirus-updates.md).
 
-6. Make sure [real-time protection is enabled](configure-real-time-protection-microsoft-defender-antivirus.md). The current recommendation for Defender for Endpoint on Windows is to enable real-time scanning, with tamper protection enabled, behavior monitoring enabled, and real-time monitoring enabled, unless a specific problem is identified.  
+5. **Make sure [behavior monitoring](behavioral-blocking-containment.md) is turned on**. If tamper protection is enabled, behavior monitoring is turned on by default. Use the default configuration of tamper protection enabled, behavior monitoring enabled, and real-time monitoring enabled unless a specific problem is identified. 
 
-7. Keep in mind how scans work with network shares. By default, the Microsoft Defender Antivirus component on Windows scans SMB shared network file systems (for example, a Windows server share `\\server\smb-share` or a NetApp share) when these files are accessed by processes. 
+   For more information, see [Built-in protection helps guard against ransomware](built-in-protection.md).
+
+6. **Make sure [real-time protection is enabled](configure-real-time-protection-microsoft-defender-antivirus.md)**. The current recommendation for Defender for Endpoint on Windows is to enable real-time scanning, with tamper protection enabled, behavior monitoring enabled, and real-time monitoring enabled, unless a specific problem is identified.  
+
+   For more information, see [Built-in protection helps guard against ransomware](built-in-protection.md).
+
+7. **Keep in mind how scans work with network shares**. By default, the Microsoft Defender Antivirus component on Windows scans SMB shared network file systems (for example, a Windows server share `\\server\smb-share` or a NetApp share) when these files are accessed by processes. 
 
    [Defender for Endpoint EDR](overview-endpoint-detection-response.md) on Windows might scan SMB shared network file systems. The EDR sensor scans certain files that are identified as interesting for EDR analysis during file modification, delete, and move operations.
 
    Defender for Endpoint on Linux doesn't scan NFS file systems during scheduled scans. 
 
-8. To troubleshoot sense health or reliability issues, use the [Defender for Endpoint Client Analyzer tool](overview-client-analyzer.md). The Defender for Endpoint Client Analyzer can be useful when diagnosing sensor health or reliability issues on onboarded devices running either Windows, Linux, or macOS. 
+8. **Troubleshoot sense health or reliability issues**. To troubleshoot such issues, use the [Defender for Endpoint Client Analyzer tool](overview-client-analyzer.md). The Defender for Endpoint Client Analyzer can be useful when diagnosing sensor health or reliability issues on onboarded devices running either Windows, Linux, or macOS. 
 
    Get the latest version of the Defender for Endpoint Client Analyzer here: [https://aka.ms/MDEAnalyzer](https://aka.ms/MDEAnalyzer).
 
-9. To open a support case, see [Contact Microsoft Defender for Endpoint support](contact-support.md).
+9. **Open a support case** if you need help. See [Contact Microsoft Defender for Endpoint support](contact-support.md).
 
-10. If you're using production SAP VMs with [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction), keep in mind that Defender for Cloud deploys the Defender for Endpoint extension to all VMs. If a VM isn't onboarded to Defender for Endpoint, it could be used as an attack vector. 
+10. **If you're using production SAP VMs with [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction), keep in mind that Defender for Cloud deploys the Defender for Endpoint extension to all VMs**. If a VM isn't onboarded to Defender for Endpoint, it could be used as an attack vector. 
 
    If you need more time to test Defender for Endpoint before deplying to your production environment, [contact support](contact-support.md). 
 
