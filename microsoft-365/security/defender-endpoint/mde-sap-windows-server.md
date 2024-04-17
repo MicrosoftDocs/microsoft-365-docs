@@ -20,6 +20,9 @@ audience: ITPro
 
 # Microsoft Defender for Endpoint on Windows Server with SAP
 
+> [!NOTE]
+> As a Principal Software Architect, Cameron Gardiner contributed to and provided material feedback for this article.
+
 If your organization uses SAP, it's essential to understand the compatibility and support between Microsoft Defender for Endpoint on Windows Server with EDR and SAP applications. This article helps you understand the support provided by SAP for endpoint protection security solutions like Defender for Endpoint with EDR and how it interacts with SAP applications.
 
 This documentation applies to Microsoft Defender for Endpoint running on Windows Server OS Releases with SAP applications such, as NetWeaver, S4 Hana, and SAP standalone engines, such as LiveCache. This documentation doesn't cover SAP client software, such as SAPGUI or Microsoft Defender Antivirus on Windows client devices.
