@@ -129,12 +129,7 @@ Here's a list of SAP articles you can use as needed:
 
    To use Defender for Endpoint security settings management, in the Microsoft Defender portal, go to **Endpoints** > **Configuration management** > **Endpoint security policies**, and then select **Create new Policy**. For more information, see [Manage endpoint security policies in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/manage-security-policies). 
 
-10. **Use the latest release of Defender for Endpoint**. Several new features are being implemented in Defender for Endpoint on Windows, and these features were tested with SAP systems. These new features reduce blocking and lower CPU consumption. 
-
-   For more information, see the following resources:
-
-      - [Microsoft Defender Antivirus security intelligence and product updates](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-updates)   
-      - [What's new in Microsoft Defender for Endpoint](whats-new-in-microsoft-defender-endpoint.md)
+10. **Use the latest release of Defender for Endpoint**. Several new features are being implemented in Defender for Endpoint on Windows, and these features were tested with SAP systems. These new features reduce blocking and lower CPU consumption. For more information about new features, see [What's new in Microsoft Defender for Endpoint](whats-new-in-microsoft-defender-endpoint.md).
 
 ## Deployment methodology
 
