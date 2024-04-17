@@ -2,13 +2,8 @@
 title: How to search the audit logs for actions performed by Defender Experts
 ms.reviewer:
 description: As a tenant administrator, you can use Microsoft Purview to search the audit logs for the actions Microsoft Defender Experts did in your tenant to perform their investigations
-keywords: XDR, Xtended detection and response, defender experts for xdr, Microsoft Defender Experts for XDR, managed threat hunting, managed detection and response (MDR) service, service delivery manager, real-time visibility with XDR experts, threat hunting and analysis
-search.product: Windows 10
-ms.service: microsoft-365-security
-ms.subservice: m365d
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.service: defender-experts
+ms.subservice: dex-xdr
 ms.author: vpattnaik
 author: vpattnai
 ms.localizationpriority: medium
@@ -17,6 +12,7 @@ audience: ITPro
 ms.collection:
   - m365-security
   - tier1
+  - essentials-compliance
 ms.topic: conceptual
 search.appverid: met150
 ms.date: 05/29/2023
@@ -26,7 +22,7 @@ ms.date: 05/29/2023
 
 **Applies to:**
 
-- [Microsoft 365 Defender](microsoft-365-defender.md)
+- [Microsoft Defender XDR](microsoft-365-defender.md)
 
 As a tenant administrator, you can use Microsoft Purview to search the audit logs for the times Microsoft Defender Experts signed into your tenant and the actions they did there to perform their investigations. You can also search the audit logs for the changes done by your tenant administrators to the Defender Experts settings.
 
@@ -47,8 +43,8 @@ As a tenant administrator, you can use Microsoft Purview to search the audit log
 | Action performed by Defender Experts | Workload | Record type |
 |--------------|-----|-----------|
 | Sign into customer tenant |  AzureActiveDirectory | AzureActiveDirectoryStsLogon |
-| Make changes to incidents in Microsoft 365 Defender portal      |  Microsoft365Defender |  MS365Dincident |
-|Make changes to alert suppression rules in Microsoft 365 Defender portal|Microsoft365Defender|MS365DSuppressionRule|
+| Make changes to incidents in Microsoft Defender portal      |  Microsoft365Defender |  MS365Dincident |
+|Make changes to alert suppression rules in Microsoft Defender portal|Microsoft365Defender|MS365DSuppressionRule|
 |Make changes to indicators in Microsoft Defender for Endpoint|MicrosoftDefenderForEndpoint|MSDEIndicatorsSettings|
 |Perform device remediation actions in Microsoft Defender for Endpoint|MicrosoftDefenderForEndpoint|MSDEResponseActions|
 
@@ -69,5 +65,5 @@ In addition to using Audit New Search in the Microsoft Purview compliance portal
 
 ### See also
 
-[Additional information](additional-information-xdr.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[Important considerations for Microsoft Defender Experts for XDR](additional-information-xdr.md)
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

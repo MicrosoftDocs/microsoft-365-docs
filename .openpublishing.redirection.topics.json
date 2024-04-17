@@ -1,0 +1,14 @@
+{
+  "redirections": [
+    {
+      "source_path": "microsoft-365/topics/index.md",
+      "redirect_url": "/microsoft-365/topics/topic-experiences-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/manage/manage-self-service-purchases-org-trials-for-msproject.md",
+      "redirect_url": "/ProjectWeb/manage-self-service-purchases-org-trials-for-msproject",
+      "redirect_document_id": false
+    }
+  ]
+}

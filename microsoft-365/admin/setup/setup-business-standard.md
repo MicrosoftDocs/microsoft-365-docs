@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 05/27/2020
+ms.date: 10/10/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -27,10 +27,6 @@ ms.custom:
 - AdminTemplateSet
 - admindeeplinkMAC
 - admindeeplinkEXCHANGE
-search.appverid:
-- MET150
-- MOE150
-- BEA160
 description: "When you purchase Microsoft 365 Business Standard, you have the option of using a domain you own, or buying one during the sign-up."
 ---
 
@@ -163,18 +159,6 @@ You can also use <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" tar
 Select the OneDrive cloud icon from your taskbar and follow the steps to move your files to your new OneDrive for Business folder. Select **Next** to set up Microsoft Teams.
 
 1. Open Microsoft Teams, select your profile icon, and then **Add work or school account**. Follow the steps to add your new account to Teams.
-
-## Use a public website
-
-Microsoft 365 doesn't include a public website for your business. If you want to set one up, consider using a Microsoft partner, such as GoDaddy or WIX.
-  
-1. From the admin center, go to **Resources**, and then select **Public website**.
-
-2. Select **Learn more** under one of the options, and then sign up with a website partner and use their tools to set up and design your site.
-
-## Watch: Create your business website
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/4839abc6-9323-4cbf-a79d-2907235f9ebb]
 
 ## Invite users to join your subscription and organization
 

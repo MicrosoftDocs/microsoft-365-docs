@@ -2,7 +2,7 @@
 title: Troubleshoot Microsoft Teams EHR connector setup and configuration
 author: lana-chin
 ms.author: v-chinlana
-manager: serdars
+manager: jtremper
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-frontline
@@ -21,11 +21,11 @@ ms.collection:
   - m365solution-scenario
   - m365-frontline
   - highpri
-  - tier2
+  - m365-virtual-appointments 
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.reviewer: casjacks
+ms.reviewer: beolson
 description: Use this guidance to help you troubleshoot common setup and configuration issues for the Teams Electronic Health Record (EHR) connector.  
 ms.date: 04/21/2023
 ---

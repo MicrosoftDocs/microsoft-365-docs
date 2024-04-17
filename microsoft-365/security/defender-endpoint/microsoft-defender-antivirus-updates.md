@@ -1,33 +1,36 @@
 ---
 title: Microsoft Defender Antivirus security intelligence and product updates
 description: Manage how Microsoft Defender Antivirus receives protection and product updates.
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.localizationpriority: high
-ms.date: 08/30/2023
+ms.date: 04/09/2024
 audience: ITPro
 ms.topic: reference
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska, tudobril
-manager: dansimp
-ms.subservice: mde
+manager: deniseb
+ms.subservice: ngp
 ms.collection: 
 - m365-security
 - tier2
+- mde-ngp
 search.appverid: met150
 ---
 
 # Microsoft Defender Antivirus security intelligence and product updates
 
 **Applies to:**
+
 - [Microsoft Defender for Endpoint Plans 1 and 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender Antivirus
 
 **Platforms**
+
 - Windows
 
-Keeping Microsoft Defender Antivirus up to date is critical to assure your devices have the latest technology and features needed to protect against new malware and attack techniques. Make sure to update your antivirus protection, even if Microsoft Defender Antivirus is running in [passive mode](microsoft-defender-antivirus-compatibility.md). This article includes information about the two types of updates for keeping Microsoft Defender Antivirus current:
+Keeping Microsoft Defender Antivirus up to date is critical to assure your devices have the latest technology and features needed to protect against new malware and attack techniques. Update your antivirus protection, even if Microsoft Defender Antivirus is running in [passive mode](microsoft-defender-antivirus-compatibility.md). This article includes information about the two types of updates for keeping Microsoft Defender Antivirus current:
 
 - [Security intelligence updates](#security-intelligence-updates)
 - [Product updates](#product-updates)
@@ -48,6 +51,7 @@ Microsoft Defender Antivirus uses [cloud-delivered protection](cloud-protection-
 
 > [!NOTE]
 > Updates are released under the following KBs:
+>
 > - Microsoft Defender Antivirus: KB2267602
 > - System Center Endpoint Protection: KB2461484
 
@@ -79,7 +83,8 @@ For more information, see [Manage the sources for Microsoft Defender Antivirus p
 
 - To learn more about security intelligence updates, see [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/en-us/wdsi/defenderupdates).
 
-- If you're looking for a list of Microsoft Defender processes, **[download the mde-urls workbook](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)**, and then select the **Microsoft Defender Processes** worksheet. The `mde-urls` workbook also lists the services and their associated URLs that your network must be able to connect to, as described in [Enable access to Microsoft Defender for Endpoint service URLs in the proxy server](configure-proxy-internet.md).
+- If you're looking for a list of Microsoft Defender processes, **[download the mde-urls workbook](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx
+)**, and then select the **Microsoft Defender Processes** worksheet. The `mde-urls` workbook also lists the services and their associated URLs that your network must be able to connect to, as described in [Enable access to Microsoft Defender for Endpoint service URLs in the proxy server](configure-proxy-internet.md).
 
 - Platform updates can be temporarily postponed if other protection features (such as [Endpoint DLP](../../compliance/endpoint-dlp-getting-started.md) or [Device Control](device-control-report.md)) are actively monitoring running processes. Platform updates are retried after a reboot or when all monitored services are stopped.
 
@@ -91,111 +96,71 @@ All our updates contain
 
 - Performance improvements
 - Serviceability improvements
-- Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
+- Integration improvements (Cloud, [Microsoft Defender XDR](/microsoft-365/security/defender/microsoft-365-defender))
 
-### August-2023 (Platform: 4.18.23080.2006 | Engine: 1.1.23080.2005)
+### March-2024 (Engine: 1.1.24030.4 | Platform: 4.18.24030.9)
 
-- Security intelligence update version: **1.397.x.x** (*version number coming soon*)
-- Released:  **August 29, 2023 (Platform)**
-- Platform: **4.18.23080.2006**
-- Engine: **1.1.23080.2005**
-- Support phase: **Security and Critical Updates**
-
-### What's new
-
-- Fixed an issue where Microsoft Defender Antivirus switched from [passive mode to active mode](microsoft-defender-antivirus-windows.md#comparing-active-mode-passive-mode-and-disabled-mode) following an update on Windows Server 2016 and Windows Server 2012 R2 [onboarded using the modern, unified client](configure-server-endpoints.md)
-- Fixed an issue where [exclusions](defender-endpoint-antivirus-exclusions.md) were not applied correctly using [gpupdate](/windows-server/administration/windows-commands/gpupdate) when registry policy processing was set to process even if the Group Policy Objects did not change
-- Excluded IP addresses can now be configured using [Intune](/windows/client-management/mdm/defender-csp#configurationexcludedipaddresses)
-- Improved [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) on Windows Server 2016
-- [DisableFtpParsing](/windows/client-management/mdm/defender-csp#configurationdisableftpparsing) can now be configured through [Set-MpPreference](/powershell/module/defender/set-mppreference)
-- Fixed an issue where [device control](device-control-removable-storage-protection.md) policies were not applied correctly without a reboot following product updates
-
-### Known issues
-
-- None
-
-### July-2023 (Platform: 4.18.23070.1004 | Engine: 1.1.23070.1005)
- 
-- Security intelligence update version: **1.395.30.0**
-- Released:  **August 9, 2023 (Engine and Platform)**
-- Platform: **4.18.23070.1004**
-- Engine: **1.1.23070.1005**
-- Support phase: **Security and Critical Updates**
-
-### What's new
- 
-- Improved output for [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) if scan results fail to retrieve
-- Extended management options for configuring security intelligence updates with Intune, Group Policy, and PowerShell
-- Extended management options for disabling IOAV scans over the network using Intune, Group Policy, and PowerShell. The new setting is `ApplyDisableNetworkScanningToIOAV` for [Set-MpPreference](/powershell/module/defender/set-mppreference).
-- Improved the Unified agent installation process to handle [MsMpEng.exe](troubleshooting-mode-scenarios.md#scenario-2-high-cpu-usage-due-to-windows-defender-msmpengexe) debugger extensions, if present
-- Fixed an issue pertaining to showing the exclusions list with PowerShell [Get-MpPreference](/powershell/module/defender/get-mppreference) on systems managed by Intune
-- Fixed warn notifications for two attack surface reduction (ASR) rules ([Block Office applications from injecting code into other processes](attack-surface-reduction-rules-reference.md#block-office-applications-from-injecting-code-into-other-processes) and [Block credential stealing from the Windows local security authority subsystem](attack-surface-reduction-rules-reference.md#block-credential-stealing-from-the-windows-local-security-authority-subsystem))
-- Fixed an issue with running `Update-MpSignature -UpdateSource:MMPC` when using a nonelevated PowerShell console (see [Update-MpSignature](/powershell/module/defender/update-mpsignature))
-- Fixed an issue with [ASR rules deployed via Intune](enable-attack-surface-reduction.md#intune) to display accurately in the Microsoft 365 Defender portal
-- Fixed [tamper protection management](prevent-changes-to-security-settings-with-tamper-protection.md) for customers who have Microsoft 365 E3 or [Defender for Endpoint Plan 1](defender-endpoint-plan-1.md)
-- Improved installation and uninstallation logic on Server SKUs using the modern, unified agent (see [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md))
-- Fixed an issue where `AntivirusSignatureLastUpdated` was incorrect when executing [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus)
-- Addressed a deadlock caused by Microsoft Defender Antivirus in rare cases
-- Added `ProcessId` to ASR Warn exclusion events (see [ASR rules configuration summary card](attack-surface-reduction-rules-report.md#asr-rules-configuration-summary-card))
-- Fixed an issue where values specified in [ThreatSeverityDefaultAction](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-threatseveritydefaultaction) weren't honored intermittently
-- Improved error reporting in the [modern, unified agent installer](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution)
-- Fixed the overriding logic in the ASR rule [Block all Office applications from creating child processes](attack-surface-reduction-rules-reference.md#block-all-office-applications-from-creating-child-processes) configured in warn mode
-- Added support for scanning Zstandard (Zstd) containers/archives
- 
-### Known issues
- 
-- None
-
-### May-2023 *UPDATE* (Platform: 4.18.23050.9)
-
-*Microsoft has released a platform update (**4.18.23050.9**) for the May 2023 release.*
-
-- Security intelligence update version: **1.393.1315.0**
-- Released: **July 24, 2023 (Platform only)**
-- Platform: **4.18.23050.9**
-- Engine: **1.1.23060.1005**
+- Security intelligence update version: **1.409.1.0**
+- Release date: **April 2, 2024** (Engine) / **April 9, 2024** (Platform)
+- Engine: **1.1.24030.4**
+- Platform: **4.18.24030.9**
 - Support phase: **Security and Critical Updates**
 
 #### What's new
 
-- Fixed a regression where HTTP requests were being handled sequentially, causing high latency for [network protection](network-protection.md) scenarios
-- Fixed a bug where DNS requests with empty authority records were being improperly parsed
+- Added manageability settings to opt-out for One Collector telemetry channel and Experimentation and Configuration Service (ECS).
+- Microsoft Defender Core Service will be disabled when 3rd party Antivirus is installed (except when Defender for Endpoint is running in Passive mode).
+- The known issue in [4.18.24020.7](#february-2024-engine-11240209--platform-418240207) where enforcement of device level access policies wasn't working as expected no longer occurs.
+- Fixed high CPU issue caused by redetection done during Sense originating scans.
+- Fixed an issue with Security Intelligence Update disk cleanup.
+- Fixed an issue where the Signature date information on the Security Health report wasn't accurate.
+- Introducted performance improvements when processing paths for exclusions.
+- Added improvements to allow recovering from erroneously added [Indicators of compromise (IoC)](manage-indicators.md).
+- Improved resilience in processing [attack surface reduction](attack-surface-reduction.md) exclusions for Anti Malware Scan Interface (AMSI) scans.
+- Fixed a high memory issue related to the [Behavior Monitoring](behavior-monitor.md) queue that occurred when MAPS is disabled.
+- A possible deadlock when receiving a [Tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) configuration change from the [Microsoft Defender portal](https://security.microsoft.com) no longer occurs.
 
-### June-2023 (Engine: 1.1.23060.1005)
+### February-2024 (Engine: 1.1.24020.9 | Platform: 4.18.24020.7)
 
-- Security intelligence update version: **1.393.71.0**
-- Released:  **July 10, 2023 (Engine only)** 
-- Engine: **1.1.23060.1005**
+- Security intelligence update version: **1.407.46.0**
+- Release date: **March 6, 2024** (Engine) / **March 12, 2024** (Platform)
+- Engine: **1.1.24020.9**
+- Platform: **4.18.24020.7**
 - Support phase: **Security and Critical Updates**
-   
-#### What's new  
 
-- Fixed an issue with [ASR rules deployed via Intune](/mem/intune/protect/endpoint-security-asr-policy) to display accurately in the Microsoft 365 Defender portal
-- Fixed a performance issue when building and validating the Microsoft Defender Antivirus cache
-- Improved performance by removing redundant exclusion checks
- 
-#### Known Issues  
+#### What's new
 
-- See [May-2023 *UPDATE* (Platform: 4.18.23050.9 | Engine: 1.1.23060.1005)](#may-2023-update-platform-418230509) for platform updates.
+- Improved support for virtualizing while compressing or decompressing zip files
+- Improved reporting in the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) for block-only remediations
+- Reduced the number of false positives for [attack surface reduction rules](/microsoft-365/security/defender-endpoint/attack-surface-reduction) for known trusted processes
+- Improved [Get-MpPreference](/powershell/module/defender/get-mppreference) logic for proxy bypass settings
+- Extended the toast notification support for [Indicators of Compromise](/microsoft-365/security/defender-endpoint/manage-indicators#indicator-of-compromise-ioc-overview) (IoC) detections
 
-### May-2023 *UPDATE* (Platform: 4.18.23050.5 | Engine:  1.1.23050.2)
+#### Known issues
 
-*Microsoft released a platform update (**4.18.23050.5**) for the May 2023 release, followed by [an additional update](#may-2023-update-platform-418230509).*
+- For [device control](device-control-overview.md) customers using removable media policies with disk/device-level access only (masks that include the values 1, 2, 3, 4, and 7), enforcement might not work as expected. In such situations, we recommend customers roll back to the previous version of the Defender platform.
 
-- Security intelligence update version: **1.391.860.0**
-- Released: **June 12, 2023**
-- Platform: **4.18.23050.5**
-- Engine: **1.1.23050.2**
+### January-2024 (Platform: 4.18.24010.12 | Engine: 1.1.24010.10)
+
+- Security intelligence update version: **1.405.702.0**
+- Release date:  **February 27, 2024**
+- Platform: **4.18.24010.12**
+- Engine: **1.1.24010.10**
 - Support phase: **Security and Critical Updates**
-   
-#### What's new  
 
-- Fixed issue that could lead to resolution of incorrect service endpoint
-  
-#### Known Issues  
+#### What's new
 
-- Users encounter slow loading webpages in non-Microsoft web browsers with [web content filtering](/microsoft-365/security/defender-endpoint/web-content-filtering) enabled
-
+- Microsoft Defender Antivirus now caches the Mark of the Web (MoTW) Alternative Data Stream (ADS) for better performance while scanning.
+- Fixed an issue that occurred in [attack surface reduction](attack-surface-reduction-rules-reference.md) in warn mode when removing scan results from the real-time protection cache.
+- Performance improvement added for `OneNote.exe`.
+- Cloud-based entries are regularly removed from the persistent user mode cache in Windows Defender to prevent an uncommon issue where a user could still add a certificate, based on an Indicator of compromise (IoC), to the cache after a file with that certificate had already been added via cloud signature.
+- The Sense onboarding event is now sent in passive mode for operating systems with the old Sense client.
+- Improved performance for logs created/accessed by powershell.
+- Improved performance for folders included in [Controlled folder access(CFA)](controlled-folders.md) when accessing network files.
+- Fixed a deadlock that occurred at shutdown for Data Loss Prevention (DLP) enabled devices.
+- Fixed an issue to remove a vulnerability in the Microsoft Defender Core service.
+- Fixed an onboarding issue in the Unified Agent installation script [install.ps1](https://github.com/microsoft/mdefordownlevelserver).
+- Fixed a memory leak that impacted some devices that received platform update `4.18.24010.7`
 
 ### Previous version updates: Technical upgrade support only
 
@@ -832,4 +797,3 @@ For more information, see [Microsoft Defender update for Windows operating syste
 
 
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
-

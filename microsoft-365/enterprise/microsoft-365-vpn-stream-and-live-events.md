@@ -1,9 +1,10 @@
 ---
-title: "Special considerations for Stream and live events in VPN environments"
+title: "Special considerations for Stream and Teams events in VPN environments"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 3/3/2022
+ms.reviewer: bryanyce
+ms.date: 10/10/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
@@ -15,35 +16,36 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - remotework
+- must-keep
 f1.keywords:
 - NOCSH
-description: "Special considerations for Stream and live events in VPN environments"
+description: "Special considerations for Stream and Teams events in VPN environments"
 ---
 
-# Special considerations for Stream and live events in VPN environments
+# Special considerations for Stream and Teams events in VPN environments
 
->[!NOTE]
+> [!NOTE]
 >This article is part of a set of articles that address Microsoft 365 optimization for remote users.
-
+>
 >- For an overview of using VPN split tunneling to optimize Microsoft 365 connectivity for remote users, see [Overview: VPN split tunneling for Microsoft 365](microsoft-365-vpn-split-tunnel.md).
 >- For detailed guidance on implementing VPN split tunneling, see [Implementing VPN split tunneling for Microsoft 365](microsoft-365-vpn-implement-split-tunnel.md).
 >- For a detailed list of VPN split tunneling scenarios, see [Common VPN split tunneling scenarios for Microsoft 365](microsoft-365-vpn-common-scenarios.md).
 >- For guidance on securing Teams media traffic in VPN split tunneling environments, see [Securing Teams media traffic for VPN split tunneling](microsoft-365-vpn-securing-teams.md).
 >- For information about optimizing Microsoft 365 worldwide tenant performance for users in China, see [Microsoft 365 performance optimization for China users](microsoft-365-networking-china.md).
 
-Microsoft 365 Live Events traffic (this includes attendees to Teams-produced live events and those produced with an external encoder via Teams, Stream, or Viva Engage) and on-demand Stream traffic is currently categorized as **Default** versus **Optimize** in the [URL/IP list for the service](urls-and-ip-address-ranges.md). These endpoints are categorized as **Default** because they're hosted on CDNs that may also be used by other services. Customers generally prefer to proxy this type of traffic and apply any security elements normally done on endpoints such as these.
+Microsoft 365 Live Events attendee traffic (this includes attendees to Teams-produced live events and those produced with an external encoder via Teams, Stream, or Viva Engage), Microsoft Teams Town hall attendee traffic and on-demand Stream attendee traffic is currently categorized as **Default** versus **Optimize** in the [URL/IP list for the service](urls-and-ip-address-ranges.md). These endpoints are categorized as **Default** because they're hosted on CDNs that might also be used by other services. Customers generally prefer to proxy this type of traffic and apply any security elements normally done on endpoints such as these.
 
-Many customers have asked for URL/IP data needed to connect their users to Stream/Live Events directly from their local internet connection, rather than route the high-volume and latency-sensitive traffic via the VPN infrastructure. Typically, this isn't possible without both dedicated namespaces and accurate IP information for the endpoints, which isn't provided for Microsoft 365 endpoints categorized as **Default**.
+Many customers have asked for URL/IP data needed to connect their attendees to Stream or Teams events directly from their local internet connection, rather than route the high-volume and latency-sensitive traffic via the VPN infrastructure. Typically, this isn't possible without both dedicated namespaces and accurate IP information for the endpoints, which isn't provided for Microsoft 365 endpoints categorized as **Default**.
 
-Use the following steps to enable direct connectivity for the Stream/Live Events service from clients using a forced tunnel VPN. This solution is intended to provide customers with an option to avoid routing Live Events traffic over VPN while there's high network traffic due to work-from-home scenarios. If possible, it's advised to access the service through an inspecting proxy.
+Use the following steps to enable direct connectivity for the Stream or Teams events services from clients using a forced tunnel VPN. This solution is intended to provide customers with an option to avoid routing Events attendee traffic over VPN while there's high network traffic due to work-from-home scenarios. If possible, we recommend accessing the service through an inspecting proxy.
 
->[!NOTE]
->Using this solution, there may be service elements that do not resolve to the IP addresses provided and thus traverse the VPN, but the bulk of high-volume traffic like streaming data should. There may be other elements outside the scope of Live Events/Stream which get caught by this offload, but these should be limited as they must meet both the FQDN _and_ the IP match before going direct.
+> [!NOTE]
+> Using this solution, there might be service elements that do not resolve to the IP addresses provided and thus traverse the VPN, but the bulk of high-volume traffic like streaming data should. There might be other elements outside the scope of Live Events/Stream which get caught by this offload, but these should be limited as they must meet both the FQDN _and_ the IP match before going direct.
 
->[!IMPORTANT]
->Customers are advised to weigh the risk of sending more traffic that bypasses the VPN over the performance gain for Live Events.
+> [!IMPORTANT]
+>We recommend you weigh the risk of sending more traffic that bypasses the VPN over the performance gain for Live Events.
 
-To implement the forced tunnel exception for Teams Live Events and Stream, the following steps should be applied:
+To implement the forced tunnel exception for Teams Events and Stream, the following steps should be applied:
 
 ## 1. Configure external DNS resolution
 
@@ -52,34 +54,37 @@ Clients need external, recursive DNS resolution to be available so that the foll
 - \*.azureedge.net
 - \*.media.azure.net
 - \*.bmc.cdn.office.net
+- \*.ml.cdn.office.net
 
 **\*.azureedge.net** is used for Stream events ([Configure encoders for live streaming in Microsoft Stream - Microsoft Stream | Microsoft Docs](/stream/live-encoder-setup)).
 
-**\*.media.azure.net** and **\*.bmc.cdn.office.net** are used for Teams-produced Live Events (Quick Start events, RTMP-In supported events [Roadmap ID 84960]) scheduled from the Teams client.
+**\*.media.azure.net** and **\*.bmc.cdn.office.net** are used for Teams-produced Live Events (Quick Start events and RTMP-In supported events) scheduled from the Teams client.
 
- Some of these endpoints are shared with other elements outside of Stream/Live Events, it isn't advised to just use these FQDNs to configure VPN offload even if technically possible in your VPN solution (eg if it works at the FQDN rather than IP).
+**\*.media.azure.net**, **\*.bmc.cdn.office.net** and **\*.ml.cdn.office.net** are used for Teams Town hall events.
+
+Some of these endpoints are shared with other elements outside of Stream or Teams events. We don't recommend just using these FQDNs to configure VPN offload even if technically possible in your VPN solution (for example, if it works at the FQDN rather than IP).
 
 FQDNs aren't required in the VPN configuration, they're purely for use in PAC files in combination with the IPs to send the relevant traffic direct.
 
 ## 2. Implement PAC file changes (where required)
 
-For organizations that utilize a PAC file to route traffic through a proxy while on VPN, this is normally achieved using FQDNs. However, with Stream/Live Events, the host names provided contain wildcards such as **\*.azureedge.net**, which also encompasses other elements for which it isn't possible to provide full IP listings. Thus, if the request is sent direct based on DNS wildcard match alone, traffic to these endpoints will be blocked as there's no route via the direct path for it in [Step 3](#3-configure-routing-on-the-vpn-to-enable-direct-egress) later in this article.
+For organizations that utilize a PAC file to route traffic through a proxy while on VPN, this is normally achieved using FQDNs. However, with Stream/Live Events/Town hall, the host names provided contain wildcards such as **\*.azureedge.net**, which also encompasses other elements for which it isn't possible to provide full IP listings. Thus, if the request is sent direct based on DNS wildcard match alone, traffic to these endpoints will be blocked as there's no route via the direct path for it in [Step 3](#3-configure-routing-on-the-vpn-to-enable-direct-egress) later in this article.
 
-To solve this, we can provide the following IPs and use them in combination with the host names in an example PAC file as described in [Step 1](#1-configure-external-dns-resolution). The PAC file checks if the URL matches those used for Stream/Live Events and then if it does, it then also checks to see if the IP returned from a DNS lookup matches those provided for the service. If _both_ match, then the traffic is routed direct. If either element (FQDN/IP) doesn't match, then the traffic is sent to the proxy. As a result, the configuration ensures that anything which resolves to an IP outside of the scope of both the IP and defined namespaces will traverse the proxy via the VPN as normal.
+To solve this, we can provide the following IPs and use them in combination with the host names in an example PAC file as described in [Step 1](#1-configure-external-dns-resolution). The PAC file checks if the URL matches those used for Stream/Live Events/Town hall and then if it does, it then also checks to see if the IP returned from a DNS lookup matches those provided for the service. If _both_ match, then the traffic is routed direct. If either element (FQDN/IP) doesn't match, then the traffic is sent to the proxy. As a result, the configuration ensures that anything that resolves to an IP outside of the scope of both the IP and defined namespaces traverses the proxy via the VPN as normal.
 
 ### Gathering the current lists of CDN Endpoints
 
-Live Events uses multiple CDN providers to stream to customers, to provide the best coverage, quality, and resiliency. Currently, both Azure CDN from Microsoft and from Verizon are used. Over time this could be changed due to situations such as regional availability. This article is a source to enable you to keep up to date on IP ranges.
+Teams events use multiple CDN providers to stream to customers, to provide the best coverage, quality, and resiliency. Currently, both Azure CDN from Microsoft and from Verizon are used. Over time this could be changed due to situations such as regional availability. This article is a source to enable you to keep up to date on IP ranges.
 
-For Azure CDN from Microsoft, you can download the list from [Download Azure IP Ranges and Service Tags – Public Cloud from Official Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=56519) - you'll need to look specifically for the service tag *AzureFrontdoor.Frontend* in the JSON; *addressPrefixes* will show the IPv4/IPv6 subnets. Over time the IPs can change, but the service tag list is always updated before they're put in use.
+For Azure CDN from Microsoft, you can download the list from [Download Azure IP Ranges and Service Tags – Public Cloud from Official Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=56519) - you'll need to look specifically for the service tag _AzureFrontdoor.Frontend_ in the JSON; _addressPrefixes_ will show the IPv4/IPv6 subnets. Over time the IPs can change, but the service tag list is always updated before they're put in use.
 
 For Azure CDN from Verizon (Edgecast) you can find an exhaustive list using [Edge Nodes - List](/rest/api/cdn/edge-nodes/list) (select **Try It** ) - you'll need to look specifically for the  **Premium\_Verizon**  section. Note that this API shows all Edgecast IPs (origin and Anycast). Currently there isn't a mechanism for the API to distinguish between origin and Anycast.
 
-To implement this in a PAC file you can use the following example which sends the Microsoft 365 Optimize traffic direct (which is recommended best practice) via FQDN, and the critical Stream/Live Events traffic direct via a combination of the FQDN and the returned IP address. The placeholder name _Contoso_ would need to be edited to your specific tenant's name where _contoso_ is from contoso.onmicrosoft.com
+To implement this in a PAC file, you can use the following example that sends the Microsoft 365 Optimize traffic direct (which is recommended best practice) via FQDN, and the critical Stream/Live Events traffic direct via a combination of the FQDN and the returned IP address. The placeholder name _Contoso_ would need to be edited to your specific tenant's name where _contoso_ is from contoso.onmicrosoft.com
 
 #### Example PAC file
 
-Here is an example of how to generate the PAC files:
+Here's an example of how to generate the PAC files:
 
 1. Save the script below to your local hard disk as _Get-TLEPacFile.ps1_.
 1. Go to the [Verizon URL](/rest/api/cdn/edge-nodes/list#code-try-0) and download the resulting JSON (copy paste it into a file like cdnedgenodes.json)
@@ -90,7 +95,7 @@ Here is an example of how to generate the PAC files:
    .\Get-TLEPacFile.ps1 -Instance Worldwide -Type 2 -TenantName <contoso> -CdnEdgeNodesFilePath .\cdnedgenodes.json -FilePath TLE.pac
    ```
 
-5. The TLE.pac file will contain all the namespaces and IPs (IPv4/IPv6).
+1. The TLE.pac file will contain all the namespaces and IPs (IPv4/IPv6).
 
 ##### Get-TLEPacFile.ps1
 
@@ -100,7 +105,7 @@ Here is an example of how to generate the PAC files:
 
 <#PSScriptInfo
 
-.VERSION 1.0.4
+.VERSION 1.0.5
 
 .AUTHOR Microsoft Corporation
 
@@ -315,6 +320,7 @@ function Get-TLEPacConfiguration {
 
     if(shExpMatch(host, "*.azureedge.net")
     || shExpMatch(host, "*.bmc.cdn.office.net")
+    || shExpMatch(host, "*.ml.cdn.office.net")
     || shExpMatch(host, "*.media.azure.net"))
     {
         var resolved_ip = dnsResolveEx(host);
@@ -496,15 +502,15 @@ else
 }
 ```
 
-The script will automatically parse the Azure list based on the [download URL](https://www.microsoft.com/download/details.aspx?id=56519) and keys off of **AzureFrontDoor.Frontend**, so there is no need to get that manually.
+The script will automatically parse the Azure list based on the [download URL](https://www.microsoft.com/download/details.aspx?id=56519) and keys off of **AzureFrontDoor.Frontend**, so there's no need to get that manually.
 
-Again, it isn't advised to perform VPN offload using just the FQDNs; utilizing **both** the FQDNs and the IP addresses in the function helps scope the use of this offload to a limited set of endpoints including Live Events/Stream. The way the function is structured will result in a DNS lookup being done for the FQDN that matches those listed by the client directly, i.e. DNS resolution of the remaining namespaces remains unchanged.
+Again, we don't recommend performing VPN offload using just the FQDNs; utilizing **both** the FQDNs and the IP addresses in the function helps scope the use of this offload to a limited set of endpoints including Live Events/Stream. The way the function is structured will result in a DNS lookup being done for the FQDN that matches those listed by the client directly, i.e. DNS resolution of the remaining namespaces remains unchanged.
 
-If you wish to limit the risk of offloading endpoints not related to Live Events and Stream, you can remove the **\*.azureedge.net** domain from the configuration which is where most of this risk lies as this is a shared domain used for all Azure CDN customers. The downside of this is that any event using an external encoder won't be optimized but events produced/organized within Teams will be.
+If you wish to limit the risk of offloading endpoints not related to Teams events and Stream, you can remove the **\*.azureedge.net** domain from the configuration which is where most of this risk lies as this is a shared domain used for all Azure CDN customers. The downside of this is that any event using an external encoder powered by Stream won't be optimized, but events produced/organized within Teams will be.
 
 ## 3. Configure routing on the VPN to enable direct egress
 
-The final step is to add a direct route for the Live Event IPs described in **Gathering the current lists of CDN Endpoints** into the VPN configuration to ensure the traffic isn't sent via the forced tunnel into the VPN. Detailed information on how to do this for Microsoft 365 Optimize endpoints can be found in the [Implement VPN split tunneling](microsoft-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling) section of [Implementing VPN split tunneling for Microsoft 365](microsoft-365-vpn-implement-split-tunnel.md). The process is exactly the same for the Stream/Live Events IPs listed in this document.
+The final step is to add a direct route for the Teams event IPs described in **Gathering the current lists of CDN Endpoints** into the VPN configuration to ensure the traffic isn't sent via the forced tunnel into the VPN. Detailed information on how to do this for Microsoft 365 Optimize endpoints can be found in the [Implement VPN split tunneling](microsoft-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling) section of [Implementing VPN split tunneling for Microsoft 365](microsoft-365-vpn-implement-split-tunnel.md). The process is exactly the same for the Stream or Teams events IPs listed in this document.
 
 Note that only the IPs (not FQDNs) from [Gathering the current lists of CDN Endpoints](#gathering-the-current-lists-of-cdn-endpoints) should be used for VPN configuration.
 
@@ -512,7 +518,7 @@ Note that only the IPs (not FQDNs) from [Gathering the current lists of CDN Endp
 
 ### Will this send all my traffic to the service direct?
 
-No, this will send the latency-sensitive streaming traffic for a Live Event or Stream video direct, any other traffic will continue to use the VPN tunnel if they don't resolve to the IPs published.
+No, this will send the latency-sensitive streaming traffic for a Teams Event or Stream video direct, any other traffic will continue to use the VPN tunnel if they don't resolve to the IPs published.
 
 ### Do I need to use the IPv6 Addresses?
 
@@ -522,11 +528,11 @@ No, the connectivity can be IPv4 only if required.
 
 Microsoft has strict controls around the format and type of information that is in the service to ensure customers can reliably use the information to implement secure and optimal routing based on endpoint category.
 
-The **Default** endpoint category has no IP information provided for numerous reasons (Default endpoints may be outside of the control of Microsoft, may change too frequently, or may be in blocks shared with other elements). For this reason, Default endpoints are designed to be sent via FQDN to an inspecting proxy, like normal web traffic.
+The **Default** endpoint category has no IP information provided for numerous reasons (Default endpoints might be outside of the control of Microsoft, might change too frequently, or might be in blocks shared with other elements). For this reason, Default endpoints are designed to be sent via FQDN to an inspecting proxy, like normal web traffic.
 
-In this case, the above endpoints are CDNs that may be used by non-Microsoft controlled elements other than Live Events or Stream, and thus sending the traffic direct will also mean anything else which resolves to these IPs will also be sent direct from the client. Due to the unique nature of the current global crisis and to meet the short-term needs of our customers, Microsoft has provided the information above for customers to use as they see fit.
+In this case, the above endpoints are CDNs that might be used by non-Microsoft controlled elements other than Live Events or Stream, and thus sending the traffic direct will also mean anything else which resolves to these IPs will also be sent direct from the client. Due to the unique nature of the current global crisis and to meet the short-term needs of our customers, Microsoft has provided the information above for customers to use as they see fit.
 
-Microsoft is working to reconfigure the Live Events endpoints to allow them to be included in the Allow/Optimize endpoint categories in the future.
+Microsoft is working to reconfigure the Teams events endpoints to allow them to be included in the Allow/Optimize endpoint categories in the future.
 
 ### Do I only need to allow access to these IPs?
 
@@ -537,14 +543,15 @@ No, access to all of the **Required** marked endpoints in [the URL/IP service](u
 1. Live events produced within the Teams App
 2. Viewing Stream hosted content
 3. External device (encoder) produced events
+4. Teams Town hall
 
 ### Does this advice cover presenter traffic?
 
-It doesn't, the advice above is purely for those consuming the service. Presenting from within Teams will see the presenter's traffic flowing to the Optimize marked UDP endpoints listed in URL/IP service row 11 with detailed VPN offload advice outlined in the [Implement VPN split tunneling](microsoft-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling) section of [Implementing VPN split tunneling for Microsoft 365](microsoft-365-vpn-implement-split-tunnel.md).
+It doesn't; the advice above is purely for those consuming the service. Presenting from within Teams will see the presenter's traffic flowing to the Optimize marked UDP endpoints listed in URL/IP service row 11 with detailed VPN offload advice outlined in the [Implement VPN split tunneling](microsoft-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling) section of [Implementing VPN split tunneling for Microsoft 365](microsoft-365-vpn-implement-split-tunnel.md).
 
-### Does this configuration risk traffic other than Live Events &amp; Stream being sent direct?
+### Does this configuration risk traffic other than Town hall, Live Events &amp; Stream being sent direct?
 
-Yes, due to shared FQDNs used for some elements of the service, this is unavoidable. This traffic is normally sent via a corporate proxy which can apply inspection. In a VPN split tunnel scenario, using both the FQDNs and IPs will scope this risk down to a minimum, but it will still exist. Customers can remove the **\*.azureedge.net** domain from the offload configuration and reduce this risk to a bare minimum but this will remove the offload of Stream-supported Live Events (Teams-scheduled, external encoder events, Viva Engage events produced in Teams, Viva Engage-scheduled external encoder events, and Stream scheduled events or on-demand viewing from Stream). Events scheduled and produced in Teams are unaffected.
+Yes, due to shared FQDNs used for some elements of the service, this is unavoidable. This traffic is normally sent via a corporate proxy which can apply inspection. In a VPN split tunnel scenario, using both the FQDNs and IPs will scope this risk down to a minimum, but it will still exist. Customers can remove the **\*.azureedge.net** domain from the offload configuration and reduce this risk to a bare minimum but this will remove the offload of Stream-supported Live Events (Teams-scheduled, Stream encoder events, Viva Engage events produced in Teams, Viva Engage-scheduled Stream encoder events, and Stream scheduled events or on-demand viewing from Stream). Events scheduled and produced in Teams (including Town hall) are unaffected.
 
 ## Related articles
 

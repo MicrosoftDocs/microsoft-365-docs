@@ -1,10 +1,10 @@
 ---
 title: Create an enterprise model in Microsoft Syntex
 ms.author: chucked
-author: chuckedmonson
-manager: pamgreen
+author: lkueter
+manager: jtremper
 ms.reviewer: ssquires
-ms.date: 04/26/2023
+ms.date: 03/25/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -55,7 +55,7 @@ The **Train a custom model** section shows the training method for the type of c
 
 - **Teaching method** – Creates an [unstructured document processing model](document-understanding-overview.md).
 
-- **Freeform selection method** – Creates a [freeform document processing model](freeform-document-processing-overview.md).
+- **Freeform selection method** – Creates a [freeform document processing model](form-processing-overview.md).
 
 - **Layout method** – Creates a [structured document processing model](form-processing-overview.md).
 
@@ -89,7 +89,7 @@ Use the **Teaching method** to create an [unstructured document processing model
 
 # [Freeform selection method](#tab/freeform-selection-method)
 
-Use the **Freeform selection method** to create a [freeform document processing model](freeform-document-processing-overview.md).
+Use the **Freeform selection method** to create a [freeform document processing model](form-processing-overview.md).
 
 1. Select **Freeform selection method**.
 

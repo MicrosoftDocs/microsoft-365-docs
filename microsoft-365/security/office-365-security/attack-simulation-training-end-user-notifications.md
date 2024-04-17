@@ -2,20 +2,19 @@
 title: End-user notifications for Attack simulation training
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.topic: how-to
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 ms.localizationpriority: medium
 ms.collection: 
   - m365-security
   - tier2
 description: Admins can learn how to create end-user notification email messages for Attack simulation training in Microsoft Defender for Office 365 Plan 2.
-ms.subservice: mdo
 search.appverid: met150
-ms.date: 6/14/2023
+ms.date: 3/11/2024
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview" target="_blank">Microsoft Defender for Office 365 plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 2</a>
 ---
 
 # End-user notifications for Attack simulation training
@@ -29,14 +28,14 @@ In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Offi
 - **Training assignment notification**: Sent when users are assigned required trainings as a result of a simulation or simulation automations.
 - **Training reminder notification**: Sent as reminders for required trainings.
 
-To see the available end-user notifications, open the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Content library** tab \> and then select **End user notifications**. To go directly to the **Content library** tab where you can select **End user notifications**, use <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>.
+To see the available end-user notifications, open the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Content library** tab \> and then select **End user notifications**. To go directly to the **Content library** tab where you can select **End user notifications**, use <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>.
 
 **End user notifications** in the **Content library** tab has two tabs:
 
-- **Global notifications**: Contains the built-in, nonmodifiable notifications.
-- **Tenant notifications**: Contains the custom notifications that you've created.
+- **Global notifications**: Contains the built-in, unmodifiable notifications.
+- **Tenant notifications**: Contains the custom notifications that you created.
 
-The following information is shown for each notification<sup>\*</sup>:
+The following information is shown for each notification. You can sort the notifications by clicking on an available column header. Select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns** to change the columns that are shown. By default, all available columns are selected.
 
 - **Notifications**: The name of the notification.
 - **⋮** (**Actions** control): Take action on the notification. The available actions depend on the **Status** value of the notification as described in the procedure sections.
@@ -45,22 +44,20 @@ The following information is shown for each notification<sup>\*</sup>:
 - **Source**: For built-in notifications, the value is **Global**. For custom notifications, the value is **Tenant**.
 - **Status**: The value is **Ready** or **Draft**. On the **Global notifications** tab, the value is always **Ready**.
 - **Linked simulations**: The total number of [simulations](attack-simulation-training-simulations.md) or [simulation automations](attack-simulation-training-simulation-automations.md) that use the notification.
-- **Created by**: For built-in notifications, the value is **Microsoft**. For custom notifications, the value is the UPN of the user who created the notification.
+- **Created by**: For built-in notifications, the value is **Microsoft**. For custom notifications, the value is the user principal name (UPN) of the user who created the notification.
 - **Created time**
 - **Modified by**
 - **Last modified time**
 
-Select a column header to sort by that column. To add or remove columns, select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns**. By default, all available columns are selected.
-
 > [!TIP]
+> To see all columns, you likely need to do one or more of the following steps:
+>
+> - Horizontally scroll in your web browser.
+> - Narrow the width of appropriate columns.
+> - Remove columns from the view.
+> - Zoom out in your web browser.
+>
 > The **⋮** (**Actions** control) is associated with the **Notifications** column. If you remove that column from view, the **⋮** control goes away.
-
-<sup>\*</sup> To see all columns, you likely need to do one or more of the following steps:
-
-- Horizontally scroll in your web browser.
-- Narrow the width of appropriate columns.
-- Remove columns from the view.
-- Zoom out in your web browser.
 
 To find a notification in the list, type part of the notification name in the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box and then press the ENTER key.
 
@@ -70,7 +67,7 @@ On the **Tenant notifications** tab only, select :::image type="icon" source="..
 
 When you select a notification from the list, a details flyout appears with the following information:
 
-- **Preview** tab: View the notification message as users will see it. To view the message in different languages, use the **Select notification language** dropdown list.
+- **Preview** tab: View the notification message as users see it. To view the message in different languages, use the **Select notification language** dropdown list.
 - **Details** tab: View details about the notification:
   - **Notification description**
   - **Source**: For built-in notifications, the value is **Global**. For custom notifications, the value is **Tenant**.
@@ -78,15 +75,19 @@ When you select a notification from the list, a details flyout appears with the 
   - **Modified by**
   - **Last modified**
   - **Active training campaigns and phishing simulations**
-    - **Simulation names**
-    - **Simulation status**
+    - **Name**
+    - **Type**
+    - **Status**
     - **End by**
 
 On the details flyout from the **Tenant notifications** tab only, select **Edit notification** to modify the notification.
 
+> [!TIP]
+> To see details about other notifications without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
+
 ## Create end-user notifications
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Content library** tab \> **End user notifications** \> and then select the **Tenant notifications** tab. To go directly to the **Content library** tab where you can select **End user notifications**, use <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>.
+1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Content library** tab \> **End user notifications** \> and then select the **Tenant notifications** tab. To go directly to the **Content library** tab where you can select **End user notifications**, use <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>.
 
 2. On the **Tenant notifications** tab, select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Create new** to start the new end-user notification wizard.
 
@@ -106,10 +107,10 @@ On the details flyout from the **Tenant notifications** tab only, select **Edit 
 
    When you're finished n the **Define details** page, select **Next**.
 
-4. On the **Define content** page, the only setting that's available is the **Add content in business language** button. When you select it, an **Add content in default language** flyout opens that contains the following settings:
+4. On the **Define content** page, the only setting that's available is **Add content in business language**. When you select it, an **Add content in default language** flyout opens that contains the following settings:
    - **From display name**: Enter the display name of the sender.
    - **From email address**: Enter the email address of the sender.
-   - **Select the language of the email**: Select a language from the list.
+   - **Select the language of the email**: Select one of the following languages: **Chinese (Simplified)**, **Chinese (Traditional, Taiwan)**, **English**, **French**, **German**, **Italian**, **Japanese**, **Korean**, **Portuguese**, **Russian**, **Spanish**, **Dutch**, **Polish**, **Arabic**, **Finnish**, **Greek**, **Hungarian**, **Indonesian**, **Norwegian Bokmål**, **Romanian**, **Slovak**, **Swedish**, **Thai**, **Turkish**, **Vietnamese**, **Catalan**, **Croatian**, or **Slovenian**.
    - **Mark this as the default language**: Because this is the first and only language for the notification, this language value is selected as the default, and you can't change it.
    - **Subject**: The default that's used depends on the notification type that you selected in the previous step, but you can change it:
      - Positive reinforcement: **Thank you for reporting a phish!**
@@ -124,30 +125,31 @@ On the details flyout from the **Tenant notifications** tab only, select **Edit 
 
        The following controls are also available on the **Text** tab:
 
-       - **Dynamic tag**: Select from the following tags:
+       - **Dynamic tag**: Select from the following tags based on the notification type:
 
-          |Tag name|Tag value|
-          |---|---|
-          |**Insert User name**|`${userName}`|
-          |**Insert First name**|`${firstName}`|
-          |**Insert Last name**|`${lastName}`|
-          |**Insert UPN**|`${upn}`|
-          |**Insert Email**|`${emailAddress}`|
-          |**Insert Department**|`${department}`|
-          |**Insert Manager**|`${manager}`|
-          |**Insert Mobile phone**|`${mobilePhone}`|
-          |**Insert City**|`${city}`|
-          |**Insert Date**|`${date|MM/dd/yyyy|offset}`|
-          |**Insert training count**|`${trainingCount}`|
-          |**Insert training due date**|`${trainingDueDate}`|
-          |**Insert training duration**|`${trainingDuration}`|
-          |**Insert training details**|`${trainingDetails}`|
+          |Tag name|Tag value|Positive<br/>reinforcement|Simulation|Training<br/>assignment|Training<br/>reminder|
+          |---|---|:---:|:---:|:---:|:---:|
+          |**Insert User name**|`${userName}`|✔|✔|✔|✔|
+          |**Insert First name**|`${firstName}`|✔|✔|✔|✔|
+          |**Insert Last name**|`${lastName}`|✔|✔|✔|✔|
+          |**Insert UPN**|`${upn}`|✔|✔|✔|✔|
+          |**Insert Email**|`${emailAddress}`|✔|✔|✔|✔|
+          |**Insert Department**|`${department}`|✔|✔|✔|✔|
+          |**Insert Manager**|`${manager}`|✔|✔|✔|✔|
+          |**Insert Mobile phone**|`${mobilePhone}`|✔|✔|✔|✔|
+          |**Insert City**|`${city}`|✔|✔|✔|✔|
+          |**Insert Date**|`${date|MM/dd/yyyy|offset}`|✔|✔|✔|✔|
+          |**Insert training count**|`${trainingCount}`|||✔|✔|
+          |**Insert training due date**|`${trainingDueDate}`|||✔|✔|
+          |**Insert training duration**|`${trainingDuration}`|||✔|✔|
+          |**Insert training details**|`${trainingDetails}`|||✔|✔|
+          |**Insert payload**|`${payloadSnapshotEmailContent}`|✔|✔|✔||
 
        - **Use from default**: Select an available template to start with. You can modify the text and layout in the editing area. To reset the notification back to the default text and layout of the template, select **Reset to default**.
 
      - **Code** tab: You can view and modify the HTML code directly.
 
-   You can preview the results by clicking the **Preview email** button at the top of the page.
+   You can preview the results by selecting **Preview email** at the top of the page.
 
    When you're finished in new end-user notification wizard, select **Save**.
 
@@ -179,7 +181,7 @@ You can't modify built-in notifications on the **Global notifications** tab. You
 
 To modify an existing custom notification on the **Tenant notifications** tab, do one of the following steps:
 
-- Select the notification from the list by clicking the check box next to the name. Select the :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png" border="false"::: **Edit** action that appears.
+- Select the notification from the list by selecting the check box next to the name. Select the :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png" border="false"::: **Edit** action that appears.
 - Select **⋮** (**Actions**) next to the **Notifications** value, and then select :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png" border="false"::: **Edit**.
 - Select the notification from the list by clicking anywhere in the row other than the check box. In the details flyout that opens, select **Edit notification** at the bottom of the flyout.
 
@@ -194,7 +196,7 @@ To copy an existing notification on the **Tenant notifications** or **Global not
 
 When you copy a custom notification on the **Tenant notifications** tab, a copy of the notification named "\<OriginalName\> - Copy" is added to the list.
 
-When you copy a built-in notification on the **Global notifications** tab, a **Create copy** dialog appears. The dialog confirms that a copy of the notification has been created, and is available on the **Tenant notifications** tab. If you select **Go to Tenant notification** you're taken to the **Tenant notifications** tab, where the copied built-in notification is named "\<OriginalName\> - Copy" is available. If you select **Stay here** in the dialog, you return to the **Global notifications** tab.
+When you copy a built-in notification on the **Global notifications** tab, a **Create copy** dialog appears. The dialog confirms that a copy of the notification was created, and is available on the **Tenant notifications** tab. If you select **Go to Tenant notification** you're taken to the **Tenant notifications** tab, where the copied built-in notification is named "\<OriginalName\> - Copy" is available. If you select **Stay here** in the dialog, you return to the **Global notifications** tab.
 
 After the copy is created, you can modify it as [previously described](#modify-end-user-notifications).
 

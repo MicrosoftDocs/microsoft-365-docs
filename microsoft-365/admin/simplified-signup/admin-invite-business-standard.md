@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 04/22/2021
+ms.date: 11/27/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -32,8 +32,8 @@ As the admin of a Microsoft 365 Business Standard subscription, you can invite y
 - Use one license to cover fully installed Microsoft 365 apps on five mobile devices, five tablets, and five PCs or Macs per user.
 - Get help anytime with around-the-clock phone and web support from Microsoft.
 
-> [!Note]
-> The person who signs up for Microsoft 365 for business (usually the business owner) automatically becomes the technical administrator of the organization. You can add other people as admins if you want help managing your Microsoft 365 services. Check out [Assign admin roles](../add-users/assign-admin-roles.md) for more info.
+> [!NOTE]
+> The person who signs up for Microsoft 365 for business (usually the business owner) automatically becomes the technical administrator of the organization. You can add other people as admins if you want help managing your Microsoft 365 services. For more information, see [Assign admin roles](../add-users/assign-admin-roles.md).
 
 ## Before you begin
 
@@ -78,12 +78,12 @@ Send them this article to help them install Microsoft 365: [Download and install
 
 Under GDPR, an employee or customer may ask that you retrieve, or delete all information about them in your Microsoft cloud. For more info, check out, [Data Subject Requests](/compliance/regulatory/gdpr-data-subject-requests).
 
-To search data that's been saved in the Microsoft cloud as part of your Microsoft 365 Business subscription, you and each user you’ve invited will need to visit [https://account.microsoft.com/account/privacy](https://account.microsoft.com/account/privacy) to search data in locations such as OneDrive.  In addition, you (business or admin) may need to search for employee account data that's saved in the [Azure Active Directory portal](/compliance/regulatory/gdpr-dsr-office365).
+To search data that's been saved in the Microsoft cloud as part of your Microsoft 365 Business subscription, you and each user you’ve invited will need to visit [https://account.microsoft.com/account/privacy](https://account.microsoft.com/account/privacy) to search data in locations such as OneDrive.  In addition, you (business or admin) may need to search for employee account data that's saved in the [Microsoft Entra admin center](/compliance/regulatory/gdpr-dsr-office365).
 
-Depending on how you and other users save documents, you and every user you’ve invited may need to use built in search, and delete functionality to discover what is saved on your Windows PCs or Macs, on business apps on smartphones, and on non-Microsoft apps and sites.
+Depending on how you and other users save documents, you and every user you’ve invited may need to use built-in search, and delete functionality to discover what is saved on your Windows PCs or Macs, on business apps on smartphones, and on non-Microsoft apps and sites.
 
 > [!NOTE]
-> Once you attach a domain, and you and your users use business accounts to save data into the Microsoft cloud, you can conduct data subject requests on behalf of all users by following guidance in the [Microsoft 365 Data Subject Requests for the GDPR and CCPA](/compliance/regulatory/gdpr-dsr-office365) topic.
+> Once you attach a domain, and you and your users use business accounts to save data into the Microsoft cloud, you can conduct data subject requests on behalf of all users by following guidance in [Microsoft 365 Data Subject Requests for the GDPR and CCPA](/compliance/regulatory/gdpr-dsr-office365).
 
 ## Related content
 

@@ -4,7 +4,7 @@ f1.keywords:
   - NOCSH
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 audience: Admin
 ms.topic: overview
 ms.localizationpriority: medium
@@ -16,19 +16,18 @@ ms.collection:
   - m365-security
   - tier1
 description: Admins can learn about the Safe Attachments feature in Microsoft Defender for Office 365.
-ms.subservice: mdo
-ms.service: microsoft-365-security
-ms.date: 6/19/2023
+ms.service: defender-office-365
+ms.date: 4/8/2024
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 1 and Plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # Safe Attachments in Microsoft Defender for Office 365
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-Safe Attachments in [Microsoft Defender for Office 365](defender-for-office-365.md) provides an additional layer of protection for email attachments that have already been scanned by [anti-malware protection in Exchange Online Protection (EOP)](anti-malware-protection-about.md). Specifically, Safe Attachments uses a virtual environment to check attachments in email messages before they're delivered to recipients (a process known as _detonation_).
+Safe Attachments in [Microsoft Defender for Office 365](mdo-about.md) provides an additional layer of protection for email attachments that have already been scanned by [anti-malware protection in Exchange Online Protection (EOP)](anti-malware-protection-about.md). Specifically, Safe Attachments uses a virtual environment to check attachments in email messages before they're delivered to recipients (a process known as _detonation_).
 
 Safe Attachments protection for email messages is controlled by Safe Attachments policies. Although there's no default Safe Attachments policy, the **Built-in protection** preset security policy provides Safe Attachments protection to all recipients (users who aren't defined in the Standard or Strict preset security policies or in custom Safe Attachments policies). For more information, see [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md). You can also create Safe Attachments policies that apply to specific users, group, or domains. For instructions, see [Set up Safe Attachments policies in Microsoft Defender for Office 365](safe-attachments-policies-configure.md).
 
@@ -44,7 +43,7 @@ The following table describes scenarios for Safe Attachments in Microsoft 365 an
 Safe Attachments scanning takes place in the same region where your Microsoft 365 data resides. For more information about datacenter geography, see [Where is your data located?](https://products.office.com/where-is-your-data-located?geo=All)
 
 > [!NOTE]
-> The following features are located in the global settings of Safe Attachments policies in the Microsoft 365 Defender portal. But, these settings are enabled or disabled globally, and don't require Safe Attachments policies:
+> The following features are located in the global settings of Safe Attachments policies in the Microsoft Defender portal. But, these settings are enabled or disabled globally, and don't require Safe Attachments policies:
 >
 > - [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-about.md).
 > - [Safe Documents in Microsoft 365 E5](safe-documents-in-e5-plus-security-about.md)
@@ -53,22 +52,26 @@ Safe Attachments scanning takes place in the same region where your Microsoft 36
 
 This section describes the settings in Safe Attachments policies:
 
-- **Recipient filters**: You need to specify the recipient conditions and exceptions that determine who the policy applies to. You can use these properties for conditions and exceptions:
-  - **Users**
-  - **Groups**
-  - **Domains**
+- **Recipient filters**: Conditions and exceptions to identify the internal recipients that the policy applies to. At least one condition is required. You can use the following recipient filters for conditions and exceptions:
+  - **Users**: One or more mailboxes, mail users, or mail contacts in the organization.
+  - **Groups**:
+    - Members of the specified distribution groups or mail-enabled security groups (dynamic distribution groups aren't supported).
+    - The specified Microsoft 365 Groups.
+  - **Domains**: One or more of the configured [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in Microsoft 365. The recipient's primary email address is in the specified domain.
 
-  You can only use a condition or exception once, but the condition or exception can contain multiple values. Multiple values of the same condition or exception use OR logic (for example, _\<recipient1\>_ or _\<recipient2\>_). Different conditions or exceptions use AND logic (for example, _\<recipient1\>_ and _\<member of group 1\>_).
+  You can use a condition or exception only once, but the condition or exception can contain multiple values:
 
-  > [!IMPORTANT]
-  > Multiple different types of conditions or exceptions are not additive; they're inclusive. The policy is applied _only_ to those recipients that match _all_ of the specified recipient filters. For example, you configure a recipient filter condition in the policy with the following values:
-  >
-  > - Users: romain@contoso.com
-  > - Groups: Executives
-  >
-  > The policy is applied to romain@contoso.com _only_ if he's also a member of the Executives group. If he's not a member of the group, then the policy is not applied to him.
-  >
-  > Likewise, if you use the same recipient filter as an exception to the policy, the policy is not applied to romain@contoso.com _only_ if he's also a member of the Executives group. If he's not a member of the group, then the policy still applies to him.
+  - Multiple **values** of the **same condition or exception** use OR logic (for example, _\<recipient1\>_ or _\<recipient2\>_):
+    - **Conditions**: If the recipient matches **any** of the specified values, the policy is applied to them.
+    - **Exceptions**: If the recipient matches **any** of the specified values, the policy isn't applied to them.
+
+  - Different **types of exceptions** use OR logic (for example, _\<recipient1\>_ or _\<member of group1\>_ or _\<member of domain1\>_). If the recipient matches **any** of the specified exception values, the policy isn't applied to them.
+
+  - Different **types of conditions** use AND logic. The recipient must match **all** of the specified conditions for the policy to apply to them. For example, you configure a condition with the following values:
+  - Users: `romain@contoso.com`
+  - Groups: Executives
+
+    The policy is applied to `romain@contoso.com` _only_ if he's also a member of the Executives group. Otherwise, the policy isn't applied to him.
 
 - **Safe Attachments unknown malware response**: This setting controls the action for Safe Attachments malware scanning in email messages. The available options are described in the following table:
 
@@ -81,7 +84,7 @@ This section describes the settings in Safe Attachments policies:
 
   ¹ Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy). Users can't release their own messages that were quarantined as malware by Safe Attachments, regardless of how the quarantine policy is configured. If the policy allows users to release their own quarantined messages, users are instead allowed to _request_ the release of their quarantined malware messages.
 
-- **Redirect messages with detected attachments**: **Enable redirect** and **Send messages that contain blocked, monitored, or replaced attachments to the specified email address**: For the **Monitor** action only, send messages that contain malware attachments to the specified internal or external email address for analysis and investigation.
+- **Redirect messages with detected attachments**: **Enable redirect** and **Send messages that contain monitored attachments to the specified email address**: For the **Monitor** action only, send messages that contain malware attachments to the specified internal or external email address for analysis and investigation.
 
   The recommendation for Standard and Strict policy settings is to enable redirection. For more information, see [Safe Attachments settings](recommended-settings-for-eop-and-office365.md#safe-attachments-settings).
 

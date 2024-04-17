@@ -1,13 +1,13 @@
 ---
 title: Cross-tenant OneDrive migration overview
-ms.author: jhendr
-author: JoanneHendrickson
-manager: serdars
-ms.date: 10/10/2022
+ms.author: jtremper
+author: MicrosoftHeidi
+manager: pamgreen
+ms.date: 10/13/2023
 recommendations: true
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-365-migration
 ms.localizationpriority: high
 ms.collection: 
 - SPMigration

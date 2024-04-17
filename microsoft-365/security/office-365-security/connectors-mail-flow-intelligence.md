@@ -2,9 +2,9 @@
 title: Mail flow intelligence
 f1.keywords: 
   - NOCSH
-ms.author: dansimp
-author: dansimp
-manager: dansimp
+ms.author: chrisda
+author: chrisda
+manager: deniseb
 audience: ITPro
 ms.topic: troubleshooting
 ms.custom:
@@ -13,16 +13,15 @@ search.appverid:
   - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Admins can learn about the error codes that are associated with message delivery using connectors (also known as mail flow intelligence).
-ms.subservice: mdo
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 ms.collection: 
 - m365-security
 - tier2
 ms.date: 6/14/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 1 and Plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # Mail flow intelligence in EOP
@@ -64,7 +63,7 @@ Microsoft 365 encountered a connection error when it tried to connect to the des
 
 ### How do I fix error code 450 4.4.316?
 
-- If you have mailboxes in your on-premises environment, modify your firewall settings to allow connections from Microsoft 365 IP addresses on TCP port 25 to your on-premises email servers. For a list of the Microsoft 365 IP addresses, see [Microsoft 365 URLs and IP address ranges](../../enterprise/urls-and-ip-address-ranges.md).
+- If you have mailboxes in your on-premises environment, modify your firewall settings to allow connections from Microsoft 365 IP addresses on TCP port 25 to your on-premises email servers. For a list of the Microsoft 365 IP addresses, see [Microsoft 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges).
 
 - If no more messages should be delivered to your on-premises environment, select **Fix now** in the alert so Microsoft 365 can immediately reject the messages with invalid recipients. This action reduces the risk of exceeding your organization's quota for invalid recipients, which could impact normal message delivery. Or, use the following instructions to manually fix the issue:
 
@@ -80,7 +79,7 @@ Microsoft 365 encountered a connection error when it tried to connect to the des
 
        - Select the connector from the list by clicking anywhere in the row other than the round check box that appears next to the **Status** column. In the connector details flyout that opens, do either of the following actions:
          - Delete the connector by selecting :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png" border="false"::: **Delete** at the top of the flyout, and then select **Confirm** in the confirmation flyout that opens.
-         - Disable the connector by selecting :::image type="icon" source="../../media/m365-cc-sc-disable-icon.png" border="false"::: **Disable** at the top of the flyout, and then select **Confirm** in the confirmation flyout that opens. 
+         - Disable the connector by selecting :::image type="icon" source="../../media/m365-cc-sc-disable-icon.png" border="false"::: **Disable** at the top of the flyout, and then select **Confirm** in the confirmation flyout that opens.
 
   - In Microsoft 365, change the accepted domain that's associated with your on-premises email environment from **Internal Relay** to **Authoritative**. For instructions, see [Manage accepted domains in Exchange Online](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 

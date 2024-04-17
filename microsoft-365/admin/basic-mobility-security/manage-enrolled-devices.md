@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 09/01/2020
+ms.date: 10/25/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -16,9 +16,11 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+- basic-mobility-security
 ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
+- basic-mobility-security
 search.appverid:
 - MET150
 description: "Sign in to Microsoft 365 and set up Basic Mobility and Security to use the built-in mobile device management to secure and manage your users' mobile devices."

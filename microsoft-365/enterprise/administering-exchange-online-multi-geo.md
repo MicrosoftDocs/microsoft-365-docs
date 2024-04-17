@@ -4,7 +4,7 @@ ms.reviewer: adwood
 ms.date: 6/29/2023
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: deniseb
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -22,7 +22,7 @@ description: Learn how to administer Exchange Online multi-geo settings in your 
 
 Exchange Online PowerShell is required to view and configure multi geo properties in your Microsoft 365 environment. To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-You need the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/installation) to see the **PreferredDataLocation** property on user objects. User objects that are synchronized via Azure Active Direct Connect into Microsoft Azure Active Directory (Azure AD) have their **PreferredDataLocation** value directly. Admins can manually modify cloud-only user objects via Microsoft Graph PowerShell as described in this article. To connect to Microsoft Graph PowerShell, see [Sign in to Microsoft Graph PowerShell](/powershell/microsoftgraph/get-started#sign-in).
+You need the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/installation) to see the **PreferredDataLocation** property on user objects. User objects that are synchronized via Azure Active Direct Connect into Microsoft Entra ID have their **PreferredDataLocation** value directly. Admins can manually modify cloud-only user objects via Microsoft Graph PowerShell as described in this article. To connect to Microsoft Graph PowerShell, see [Sign in to Microsoft Graph PowerShell](/powershell/microsoftgraph/get-started#sign-in).
 
 In Exchange Online multi-geo environments, you don't need to do any manual steps to add geo locations to your tenant. After you receive the Message Center post that says multi-geo is ready for Exchange Online, all available geo locations are ready and configured for you to use.
 
@@ -77,7 +77,7 @@ Get-OrganizationConfig | Select DefaultMailboxRegion
 The **Get-Mailbox** cmdlet in Exchange Online PowerShell displays the following multi-geo related properties on mailboxes:
 
 - **Database**: The first three letters of the database name correspond to the geo code, which tells you where the mailbox is currently located. For Online Archive Mailboxes the **ArchiveDatabase** property should be used.
-- **MailboxRegion**: Specifies the geo location code that was set by the admin (synchronized from **PreferredDataLocation** in Azure AD).
+- **MailboxRegion**: Specifies the geo location code that was set by the admin (synchronized from **PreferredDataLocation** in Microsoft Entra ID).
 - **MailboxRegionLastUpdateTime**: Indicates when MailboxRegion was last updated (either automatically or manually).
 
 To see these properties for a mailbox, use the following syntax:
@@ -105,7 +105,7 @@ MailboxRegionLastUpdateTime : 2/6/2023 8:21:01 PM
 
 ## Move an existing cloud-only mailbox to a specific geo location
 
-A cloud-only user (a user created directly in Azure AD) is a user that's not synchronized to the tenant via Azure AD Connect. Use the **Get-MgUser** and **Set-MgUser** cmdlets in Microsoft Graph PowerShell to view or specify the geo location where a cloud-only user's mailbox is stored.
+A cloud-only user (a user created directly in Microsoft Entra ID) is a user that's not synchronized to the tenant via Microsoft Entra Connect. Use the **Get-MgUser** and **Set-MgUser** cmdlets in Microsoft Graph PowerShell to view or specify the geo location where a cloud-only user's mailbox is stored.
 
 To view the **PreferredDataLocation** value for users, run the following command in Microsoft Graph PowerShell:
 
@@ -129,7 +129,7 @@ For detailed syntax and parameter information, see [Get-MgUser](/powershell/modu
 
 > [!NOTE]
 >
-> - As mentioned previously, you can't use this procedure for synchronized user objects from on-premises Active Directory. You need to change the **PreferredDataLocation** value in Active Directory and synchronize it using Azure AD Connect. For more information, see [Azure Active Directory Connect sync: Configure preferred data location for Microsoft 365 resources](/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
+> - As mentioned previously, you can't use this procedure for synchronized user objects from on-premises Active Directory. You need to change the **PreferredDataLocation** value in Active Directory and synchronize it using Microsoft Entra Connect. For more information, see [Microsoft Entra Connect Sync: Configure preferred data location for Microsoft 365 resources](/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
 >
 > - How long it takes to relocate a mailbox to a new geo location depends on several factors:
 >   - The size and type of mailbox.
@@ -172,7 +172,7 @@ To create a new mailbox in a specific geo location, you need to do either of the
 - Configure the **PreferredDataLocation** value as described in the previous [Move an existing cloud-only mailbox to a specific geo location](#move-an-existing-cloud-only-mailbox-to-a-specific-geo-location) section *before* you create the mailbox in Exchange Online. For example, configure the **PreferredDataLocation** value on a user before you assign a license.
 - Assign a license at the same time you set the **PreferredDataLocation** value.
 
-To create a new cloud-only licensed user (not Azure AD Connect synchronized) in a specific geo location, use the following syntax in Microsoft Graph PowerShell:
+To create a new cloud-only licensed user (not Microsoft Entra Connect synchronized) in a specific geo location, use the following syntax in Microsoft Graph PowerShell:
 
 ```powershell
 $PasswordProfile = @{Password = '<Password>'}
@@ -205,11 +205,11 @@ For detailed syntax and parameter information, see [New-MgUser](/powershell/modu
 
 You can use the standard onboarding tools and processes to migrate a mailbox from an on-premises Exchange organization to Exchange Online, including the [Migration dashboard in the EAC](https://support.office.com/article/d164b35c-f624-4f83-ac58-b7cae96ab331), and the [New-MigrationBatch](/powershell/module/exchange/new-migrationbatch) cmdlet in Exchange Online PowerShell.
 
-The first step is to verify a user object exists for each mailbox to be onboarded, and verify the correct **PreferredDataLocation** value is configured in Azure AD. The onboarding tools respect the **PreferredDataLocation** value and migrate the mailboxes directly to the specified geo location.
+The first step is to verify a user object exists for each mailbox to be onboarded, and verify the correct **PreferredDataLocation** value is configured in Microsoft Entra ID. The onboarding tools respect the **PreferredDataLocation** value and migrate the mailboxes directly to the specified geo location.
 
 Or, you can use the following steps to onboard mailboxes directly in a specific geo location using the [New-MoveRequest](/powershell/module/exchange/new-moverequest) cmdlet in Exchange Online PowerShell.
 
-1. Verify the user object exists for each mailbox to be onboarded and that **PreferredDataLocation** is set to the desired value in Azure AD. The value of **PreferredDataLocation** is synchronized to the **MailboxRegion** attribute of the corresponding mail user object in Exchange Online.
+1. Verify the user object exists for each mailbox to be onboarded and that **PreferredDataLocation** is set to the desired value in Microsoft Entra ID. The value of **PreferredDataLocation** is synchronized to the **MailboxRegion** attribute of the corresponding mail user object in Exchange Online.
 
 2. Connect directly to the specific satellite geo location using the connection instructions from earlier in this article.
 

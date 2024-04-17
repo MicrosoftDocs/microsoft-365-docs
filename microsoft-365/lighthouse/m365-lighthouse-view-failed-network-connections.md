@@ -24,7 +24,7 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # View an enterprise Cloud PC failed network connection in Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse provides the connection status between your customer tenants and Azure Active Directory (Azure AD). When a Cloud PC has a failed network connection, you can view detailed information in the Microsoft Intune admin center.
+Microsoft 365 Lighthouse provides the connection status between your customer tenants and Microsoft Entra ID. When a Cloud PC has a failed network connection, you can view detailed information in the Microsoft Intune admin center.
 
 ## Before you begin
 
@@ -33,7 +33,7 @@ Microsoft 365 Lighthouse provides the connection status between your customer te
 
 ## View a failed network connection
 
-1. In the left navigation pane in Lighthouse, select **Devices** > **Windows 365**.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Devices** > **Windows 365**.
 
 2. Select the **Azure network connections** tab.
 
@@ -51,4 +51,4 @@ To troubleshoot connection issues, see [Troubleshoot on-premises network connect
 
 [Cloud PC role-based access control ](/windows-365/enterprise/role-based-access)(article)\
 [Active Directory domain join](/windows-365/enterprise/troubleshoot-on-premises-network-connection#active-directory-domain-join) (article)\
-[Azure Active Directory device Sync](/windows-365/enterprise/troubleshoot-on-premises-network-connection#azure-active-directory-device-sync) (article)
+[Microsoft Entra device Sync](/windows-365/enterprise/troubleshoot-on-premises-network-connection#azure-active-directory-device-sync) (article)

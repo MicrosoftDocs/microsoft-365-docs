@@ -33,29 +33,27 @@ To get started with your reports, here are some tips:
 
 - Use the navigation tabs on the left or on a related metric on the **Executive Summary** page to navigate to each top-level report.
 
-    ![Shows the navigation tabs on the left.](../../media/navigate-usage-analytics1.png)
+  ![Shows the navigation tabs on the left.](../../media/navigate-usage-analytics1.png)
 
 - Use the navigation tabs at the top of each top-level report to navigate to different reports within that level.
 
-    ![Shows the navigation tabs at the top of each report.](../../media/navigate-usage-analytics2.png)
+  ![Shows the navigation tabs at the top of each report.](../../media/navigate-usage-analytics2.png)
 
-- Many reports contain a slicer where you can filter on the product, AAD attribute, or activity that you want to view. These can be either single-select or multi-select.
+- Many reports contain a slicer where you can filter on the product, Microsoft Entra attribute, or activity that you want to view. These can be either single-select or multi-select.
 
-    ![Shows a slicer.](../../media/navigate-usage-analytics3.png)
+  ![Shows a slicer.](../../media/navigate-usage-analytics3.png)
 
-    ![Shows a slicer.](../../media/navigate-usage-analytics4.png)
+  ![Shows a slicer in a drop down list.](../../media/navigate-usage-analytics4.png)
 
+  Hover data points to view a call out that contains details.
 
-- Hover over data points to view a callout that contains details.
-
-    ![Shows hover example.](../../media/navigate-usage-analytics6.png)
+  ![Shows hover example.](../../media/navigate-usage-analytics6.png)
 
 The user who has instantiated the template app will have the ability to customize the report to their needs. To customize the template app:
 
 - Select **Edit report** at the top of the report.
 
-    ![Shows Edit report.](../../media/navigate-usage-analytics7.png)
-
+  ![Shows Edit report.](../../media/navigate-usage-analytics7.png)
 
 - Create your own visuals by using the underlying [datasets](usage-analytics-data-model.md).
 
@@ -69,12 +67,12 @@ You can find lots of additional information in the Power BI help documentation:
 
 - [Power BI basic concepts](/power-bi/service-basic-concepts)
 
-    Learn about dashboard, datasets, reports, and other Power BI concepts.
+  Learn about dashboard, datasets, reports, and other Power BI concepts.
 
 - [Get started with Power BI](/power-bi/service-get-started?wt.mc_id=O365_Reports_PBI_contentpack)
 
-    Learn the basic functionality in Power BI. Find links to how to use Power BI Desktop.
+  Learn the basic functionality in Power BI. Find links to how to use Power BI Desktop.
 
 - [Share dashboards and reports](/power-bi/service-share-dashboards)
 
-    Learn how to share reports with your colleagues or people outside your organization. You can also share the report or a filtered version of the report.
+  Learn how to share reports with your colleagues or people outside your organization. You can also share the report or a filtered version of the report.

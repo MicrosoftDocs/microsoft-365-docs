@@ -34,22 +34,24 @@
   items:
     - name: Buy or remove subscription licenses
       href: licenses/buy-licenses.md
-    - name: Assign licenses to users
+    - name: Assign or unassign licenses for users
       href: ../admin/manage/assign-licenses-to-users.md
-    - name: Unassign licenses from users
-      href: ../admin/manage/remove-licenses-from-users.md
     - name: Move users to a different subscription
       href: subscriptions/move-users-different-subscription.md
     - name: Manage ISV app licenses
       href: licenses/manage-third-party-app-licenses.md
     - name: Manage auto-claim policies
       href: licenses/manage-auto-claim-policies.md
+    - name: Understand Microsoft 365 E3 and E5 Extra Features licenses
+      href: licenses/e3-extra-features-licenses.md
     - name: Understand subscriptions and licenses
       href: licenses/subscriptions-and-licenses.md
 - name: Manage volume licensing
   items:
     - name: Contracts FAQs
       href: licenses/contracts-faq.yml
+    - name: User roles FAQs
+      href: licenses/user-roles-faq.yml
     - name: Downloads FAQs
       href: licenses/downloads-faq.yml
     - name: Product keys FAQ
@@ -58,6 +60,8 @@
       href: licenses/manage-license-requests-faq.yml
     - name: Online service activation FAQ
       href: licenses/online-service-activation-faq.yml
+    - name: Volume licensing invoices
+      href: licenses/volume-licensing-invoices.md
 - name: Bills and payments
   items: 
     - name: View your invoice
@@ -78,12 +82,16 @@
       href: billing-and-payments/manage-billing-notifications.md
     - name: Understand billing accounts
       href: manage-billing-accounts.md
-    - name: Understand billing profiles
+    - name: Manage billing profiles
       href: billing-and-payments/manage-billing-profiles.md
     - name: Change your billing addresses
       href: billing-and-payments/change-your-billing-addresses.md
     - name: Request a credit for Withholding Tax on your account
       href: billing-and-payments/withholding-tax-credit-global.md
+    - name: Italy billing information
+      href: billing-and-payments/italy-billing-info.md
+    - name: Mexico billing information
+      href: billing-and-payments/mexico-billing-info.md
 - name: Manage relationships with your partners
   href: manage-partners.md
 - name: Review partner privileges

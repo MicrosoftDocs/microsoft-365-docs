@@ -9,6 +9,7 @@ ms.reviewer: jkinma, ramagane
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-management
 ms.localizationpriority: medium
 ms.collection: 
 - Tier1
@@ -21,6 +22,7 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - AdminTemplateSet
+- admindeeplinkMAC
 description: "Learn about tax information for Microsoft 365 billing and payments, including how to update your address and tax status."
 ms.date: 08/10/2023
 ---
@@ -45,7 +47,7 @@ When you buy Microsoft 365 for business products and services, the tax that you 
 
 When you buy Microsoft 365 products or services in the EMEA region, the purchase could be subject to Value-Added Tax (VAT).
   
-- If you're located in a European Union Member State, Armenia, Belarus, Norway, Turkey, or United Arab Emirates, and you don't provide your valid local VAT ID, Microsoft Ireland Operations Ltd. applies the current local VAT rate, based on the billing country/region your account is set to.
+- If you're located in a European Union Member State, Armenia, Belarus, Norway, Türkiye, or United Arab Emirates, and you don't provide your valid local VAT ID, Microsoft Ireland Operations Ltd. applies the current local VAT rate, based on the billing country/region your account is set to.
 
 - If you're located in Liechtenstein, Russia, Serbia, South Africa, or Switzerland, the VAT is applied, whether you provide your VAT ID or not.
 
@@ -57,7 +59,7 @@ You might qualify for VAT zero-rating if you meet one of the following criteria:
 
 - **You're in Ireland and have the relevant valid VAT exemption certification:** Microsoft Ireland Operations Ltd. might be entitled to exempt the transaction from VAT. If you don't have a VAT exemption certification, Microsoft Ireland Operations Ltd. applies the current Irish VAT rate, whether you provide a VAT ID or not.
 
-- **You're in Armenia, Belarus, Norway, Turkey, or United Arab Emirates:** You can provide your local VAT ID. Providing the VAT ID entitles Microsoft Ireland Operations Ltd. to VAT zero-rate the transaction. However, you might have a local VAT accounting obligation, so check with your tax advisors if you have any concerns. For instructions about adding the VAT ID for your organization, see [Add your VAT ID](#add-your-vat-id).
+- **You're in Armenia, Belarus, Norway, Türkiye, or United Arab Emirates:** You can provide your local VAT ID. Providing the VAT ID entitles Microsoft Ireland Operations Ltd. to VAT zero-rate the transaction. However, you might have a local VAT accounting obligation, so check with your tax advisors if you have any concerns. For instructions about adding the VAT ID for your organization, see [Add your VAT ID](#add-your-vat-id).
 
 ## Asia Pacific countries/regions (APAC)
 

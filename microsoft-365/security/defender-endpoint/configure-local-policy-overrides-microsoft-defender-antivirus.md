@@ -1,24 +1,24 @@
 ---
 title: Configure local overrides for Microsoft Defender Antivirus settings
 description: Enable or disable users from locally changing settings in Microsoft Defender Antivirus.
-ms.service: microsoft-365-security
-ms.subservice: mde
+ms.service: defender-endpoint
+ms.subservice: ngp
 ms.localizationpriority: medium
-author: denisebmsft
-ms.author: deniseb
+author: siosulli
+ms.author: siosulli
 ms.topic: conceptual
 ms.custom: nextgen
 ms.date: 07/13/2023
 ms.reviewer: 
-manager: dansimp
+manager: deniseb
 ms.collection: 
 - m365-security
 - tier2
+- mde-ngp
 search.appverid: met150
 ---
 
 # Prevent or allow users to locally modify Microsoft Defender Antivirus policy settings
-
 
 **Applies to:**
 
@@ -103,6 +103,7 @@ By default, lists that have been configured in local group policy and the Window
 
 > [!TIP]
 > If you're looking for Antivirus related information for other platforms, see:
+
 > - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
 > - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
 > - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
@@ -113,7 +114,7 @@ By default, lists that have been configured in local group policy and the Window
 
 ## Related topics
 
-- [Microsoft Intune](/protect/advanced-threat-protection-configure)
+- [Microsoft Intune](/mem/intune/protect/advanced-threat-protection-configure)
 - [Microsoft Defender Antivirus in Windows](microsoft-defender-antivirus-in-windows-10.md)
 - [Configure end-user interaction with Microsoft Defender Antivirus](configure-end-user-interaction-microsoft-defender-antivirus.md)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

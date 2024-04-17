@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 09/01/2020
+ms.date: 10/25/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -21,6 +21,7 @@ ms.custom:
 - VSBFY23
 - AdminSurgePortfolio
 - AdminTemplateSet
+- basic-mobility-security
 search.appverid:
 - MET150
 description: "Set up Basic Mobility and Security to secure and manage your users' mobile devices by performing actions such as remotely wiping a device."
@@ -32,15 +33,15 @@ Check out all of our small business content on [Small business help & learning](
 
 The built-in Basic Mobility and Security for Microsoft 365 helps you secure and manage users' mobile devices such as iPhones, iPads, Androids, and Windows phones. You can create and manage device security policies, remotely wipe a device, and view detailed device reports.
 
-Have questions? For a FAQ to help address common questions, see [Basic Mobility and Security Frequently-asked questions (FAQs)](frequently-asked-questions.yml). Be aware that you cannot use a delegated administrator account to manage Basic Mobility and Security. For more info, see [Partners: Offer delegated administration](https://support.microsoft.com/office/partners-offer-delegated-administration-26530dc0-ebba-415b-86b1-b55bc06b073e). 
+Have questions? For a FAQ to help address common questions, see [Basic Mobility and Security Frequently asked questions (FAQs)](frequently-asked-questions.yml). Be aware that you cannot use a delegated administrator account to manage Basic Mobility and Security. For more info, see [Partners: Offer delegated administration](https://support.microsoft.com/office/partners-offer-delegated-administration-26530dc0-ebba-415b-86b1-b55bc06b073e). 
 
 ## Activate the Basic Mobility and Security service
 
 1. Sign in to Microsoft 365 with your global admin account.
 
-2. Go to [Activate Basic Mobility and Security](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx).
+2. Go to <a href="https://admin.cloud.microsoft/EAdmin/Device/IntuneInventory.aspx" target="_blank">Activate Basic Mobility and Security</a>.
 
-   It can take some time to activate Basic Mobility and Security. When it finishes, you'll receive an email that explains the next steps to take.
+   It can take some time to activate Basic Mobility and Security. When it finishes, select **Manage devices** on the page. You'll also receive an email that explains the next steps to take if you don't see the Manage devices page.
 
 ## Set up Mobile Device Management
 
@@ -50,7 +51,12 @@ When the service is ready, complete the following steps to finish setup.
 
 If you don't have a custom domain associated with Microsoft 365 or if you're not managing Windows devices, you can skip this section. Otherwise, you'll need to add DNS records for the domain at your DNS host. If you've added the records already, as part of setting up your domain with Microsoft 365, you're all set. After you add the records, Microsoft 365 users in your organization who sign in on their Windows device with an email address that uses your custom domain are redirected to enroll in Basic Mobility and Security.
 
-Need help setting up the records? Find your domain registrar and select the registrar name to go to step-by-step help for creating DNS record in the list provided in [Add DNS records to connect your domain](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider). Use those instructions to create CNAME records described in [Simplify Windows enrollment without Azure AD Premium](/mem/intune/enrollment/windows-enroll#simplify-windows-enrollment-without-azure-ad-premium).
+Need help with setting up the records? Find your domain registrar and select the registrar name to go to step-by-step help for creating DNS records in the list provided in [Add DNS records to connect your domain](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider). Use the following details to create CNAME records:
+
+| Type | Host name | Points to | TTL |
+| --- | --- | --- | --- |
+| CNAME | EnterpriseEnrollment.company_domain.com | EnterpriseEnrollment-s.manage.microsoft.us | 1 hour|
+|CNAME | EnterpriseRegistration.company_domain.com | EnterpriseRegistration.windows.net | 1 hour |
 
 After you add the two CNAME records, go back to the Security & Compliance Center and go to **Data loss prevention** > **Device management** to complete the next step.
 
@@ -60,13 +66,13 @@ To manage iOS devices like iPad and iPhones, you need to create an APNs certific
 
 1. Sign in to Microsoft 365 with your global admin account.
 
-2. Go to the [Microsoft 365 admin center](https://portal.office.com/adminportal/home?#/MifoDevices), and choose **APNs Certificate for iOS**.
+2. Go to the <a href="https://admin.cloud.microsoft/?#/MifoDevices" target="_blank">Microsoft 365 admin center</a>, and choose **APNs Certificate for iOS**.
 
-4. On the Apple Push Notification Certificate Settings page, choose **Next**.
+3. On the Apple Push Notification Certificate Settings page, choose **Next**.
 
-5. Select **Download your CSR file** and save the Certificate signing request to somewhere on your computer that you'll remember. Select **Next**.
+4. Select **Download your CSR file** and save the Certificate signing request to somewhere on your computer that you'll remember. Select **Next**.
 
-6. On the Create an APNs certificate page:
+5. On the Create an APNs certificate page:
 
    - Select Apple APNS Portal to open the Apple Push Certificates Portal.
    - Sign in with an Apple ID.
@@ -81,11 +87,11 @@ To manage iOS devices like iPad and iPhones, you need to create an APNs certific
      > [!TIP]
      > If you're having trouble downloading the certificate, refresh your browser.
 
-7. Go back to Microsoft 365 and select **Next**.
+6. Go back to Microsoft 365 and select **Next**.
 
-8. Browse to the APN certificate you downloaded from the Apple Push Certificates Portal.
+7. Browse to the APN certificate you downloaded from the Apple Push Certificates Portal.
 
-9. Select **Finish**.
+8. Select **Finish**.
 
 ## Make sure users enroll their devices
 

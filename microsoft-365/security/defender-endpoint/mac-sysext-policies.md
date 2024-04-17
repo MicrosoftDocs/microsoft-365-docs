@@ -1,35 +1,31 @@
 ---
 title: New configuration profiles for macOS Big Sur and newer versions of macOS
 description: This topic describes the changes that are must be made in order to benefit from the system extensions, which are a replacement for kernel extensions on macOS Big Sur and newer versions of macOS.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, kernel, system, extensions, big sur, monterey, ventura, mde for mac
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.mktglfcycl: security
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
+- mde-macos
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
-ms.subservice: mde
+ms.subservice: macos
 ms.date: 12/18/2020
 ---
 
 # New configuration profiles for macOS Big Sur and newer versions of macOS 
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -49,7 +45,7 @@ To approve the system extensions, create the following payload:
     - **com.microsoft.wdav.epsext**
     - **com.microsoft.wdav.netext**
 
-    :::image type="content" source="images/mac-approved-system-extensions.png" alt-text=" The Approved system extensions page" lightbox="images/mac-approved-system-extensions.png":::
+    :::image type="content" source="media/mac-approved-system-extensions.png" alt-text=" The Approved system extensions page" lightbox="media/mac-approved-system-extensions.png":::
 
 ### Privacy Preferences Policy Control
 
@@ -60,11 +56,11 @@ Add the following JAMF payload to grant Full Disk Access to the Microsoft Defend
 3. Set Code Requirement to `identifier "com.microsoft.wdav.epsext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`
 4. Set **App or service** to **SystemPolicyAllFiles** and access to **Allow**.
 
-   :::image type="content" source="images/mac-system-extension-privacy.png" alt-text=" The Privacy Preferences Policy Control menu item" lightbox="images/mac-system-extension-privacy.png":::
+   :::image type="content" source="media/mac-system-extension-privacy.png" alt-text=" The Privacy Preferences Policy Control menu item" lightbox="media/mac-system-extension-privacy.png":::
 
 ### Network Extension Policy
 
-As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint on macOS inspects socket traffic and reports this information to the Microsoft 365 Defender portal. The following policy allows the network extension to perform this functionality.
+As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint on macOS inspects socket traffic and reports this information to the Microsoft Defender portal. The following policy allows the network extension to perform this functionality.
 
 > [!NOTE]
 > JAMF doesn't have built-in support for content filtering policies, which are a pre-requisite for enabling the network extensions that Microsoft Defender for Endpoint on macOS installs on the device. Furthermore, JAMF sometimes changes the content of the policies being deployed.
@@ -188,7 +184,7 @@ To approve the system extensions:
    |com.microsoft.wdav.netext|UBF8T346G9|
    |||
 
-   :::image type="content" source="images/mac-system-extension-intune2.png" alt-text=" The System configuration profiles page" lightbox="images/mac-system-extension-intune2.png":::
+   :::image type="content" source="media/mac-system-extension-intune2.png" alt-text=" The System configuration profiles page" lightbox="media/mac-system-extension-intune2.png":::
 
 5. In the `Assignments` tab, assign this profile to **All Users & All devices**.
 6. Review and create this configuration profile.
@@ -310,7 +306,7 @@ To deploy this custom configuration profile:
 3. Open the configuration profile and upload **sysext.xml**. This file was created in the preceding step.
 4. Select **OK**.
 
-   :::image type="content" source="images/mac-system-extension-intune.png" alt-text=" The System extension in Intune page" lightbox="images/mac-system-extension-intune.png":::
+   :::image type="content" source="media/mac-system-extension-intune.png" alt-text=" The System extension in Intune page" lightbox="media/mac-system-extension-intune.png":::
 
 5. In the `Assignments` tab, assign this profile to **All Users & All devices**.
 6. Review and create this configuration profile.

@@ -2,9 +2,9 @@
 title: Microsoft Teams Advanced Virtual Appointments activity report
 author: lana-chin
 ms.author: v-chinlana
-manager: serdars
+manager: jtremper
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-365-frontline
 ms.reviewer: ansantam
 f1.keywords:
@@ -15,7 +15,7 @@ ms.collection:
   - M365-collaboration
   - m365-frontline
   - m365initiative-meetings
-  - tier1
+  - m365-virtual-appointments 
 description: Learn how to use the Advanced Virtual Appointments activity report, which provides usage information for advanced Virtual Appointments capabilities that are available with Teams Premium.
 appliesto: 
   - Microsoft Teams

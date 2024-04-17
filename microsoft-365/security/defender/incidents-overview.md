@@ -1,13 +1,7 @@
 ---
-title: Incident response with Microsoft 365 Defender
-description: Investigate incidents seen across devices, users, and mailboxes in the Microsoft 365 Defender portal.
-keywords: incidents, alerts, attack story, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, incident response, cyber-attack
-search.product: eADQiWindows 10XVcnh
-ms.service: microsoft-365-security
-ms.subservice: m365d
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+title: Incident response in the Microsoft Defender portal
+description: Investigate incidents seen across devices, users, and mailboxes in the unified security operations platform in the Microsoft Defender portal.
+ms.service: defender-xdr
 f1.keywords:
   - NOCSH
 ms.author: diannegali
@@ -18,129 +12,135 @@ audience: ITPro
 ms.collection:
   - m365-security
   - tier1
+  - usx-security
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
   - MOE150
   - MET150
-ms.date: 03/06/2023
+ms.date: 03/29/2024
+appliesto: 
+- Microsoft Defender XDR
+- Microsoft Sentinel in the Microsoft Defender portal
 ---
 
-# Incident response with Microsoft 365 Defender
+# Incident response in the Microsoft Defender portal
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+An *incident* in the Microsoft Defender portal is a collection of related alerts and associated data that make up the story of an attack. It's also a case file that your SOC can use to investigate that attack and manage, implement, and document the response to it.
 
+The Microsoft Sentinel and Microsoft Defender services create alerts when they detect a suspicious or malicious event or activity. Individual alerts provide valuable evidence of a completed or ongoing attack. However, increasingly prevalent and sophisticated attacks typically employ a variety of techniques and vectors against different types of asset entities, such as devices, users, and mailboxes. The result is multiple alerts, from multiple sources, for multiple asset entities in your digital estate.
 
-**Applies to:**
-- Microsoft 365 Defender
+Because individual alerts each tell only part of the story, and because manually grouping individual alerts together to gain insight into an attack can be challenging and time-consuming, the unified security operations platform automatically identifies alerts that are related&mdash;from both Microsoft Sentinel and Microsoft Defender XDR&mdash;and aggregates them and their associated information into an incident.
 
-An incident in Microsoft 365 Defender is a collection of correlated alerts and associated data that make up the story of an attack.
-
-Microsoft 365 services and apps create alerts when they detect a suspicious or malicious event or activity. Individual alerts provide valuable clues about a completed or ongoing attack. However, attacks typically employ various techniques against different types of entities, such as devices, users, and mailboxes. The result is multiple alerts for multiple entities in your tenant.
-
-Because piecing the individual alerts together to gain insight into an attack can be challenging and time-consuming, Microsoft 365 Defender automatically aggregates the alerts and their associated information into an incident.
-
-:::image type="content" source="../../media/incidents-overview/incidents.png" alt-text="How Microsoft 365 Defender correlates events from entities into an incident." lightbox="../../media/incidents-overview/incidents.png":::
+:::image type="content" source="../../media/incidents-overview/incidents.png" alt-text="How Microsoft Defender XDR correlates events from entities into an incident." lightbox="../../media/incidents-overview/incidents.png":::
 
 Grouping related alerts into an incident gives you a comprehensive view of an attack. For example, you can see:
 
 - Where the attack started.
 - What tactics were used.
-- How far the attack has gone into your tenant.
+- How far the attack has gone into your digital estate.
 - The scope of the attack, such as how many devices, users, and mailboxes were impacted.
 - All of the data associated with the attack.
 
-If [enabled](m365d-enable.md), Microsoft 365 Defender can [automatically investigate and resolve](m365d-autoir.md) alerts through automation and artificial intelligence. You can also perform additional remediation steps to resolve the attack.
+The unified security operations platform in the Microsoft Defender portal includes methods to automate and assist in the triage, investigation, and resolution of incidents.
 
-## Incidents and alerts in the Microsoft 365 Defender portal
+- [Microsoft Copilot in Defender](security-copilot-in-microsoft-365-defender.md) harnesses AI to support analysts with complex and time-consuming daily workflows, including end-to-end incident investigation and response with clearly described attack stories, step-by-step actionable remediation guidance and incident activity summarized reports, natural language KQL hunting, and expert code analysis&mdash;optimizing on SOC efficiency across Microsoft Sentinel and Defender XDR data.
 
-You manage incidents from **Incidents & alerts > Incidents** on the quick launch of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target=" blank">Microsoft 365 Defender portal</a>. Here's an example.
+    This capability is in addition to the other AI-based functionality that Microsoft Sentinel brings to the unified platform, in the areas of user and entity behavior analytics, anomaly detection, multi-stage threat detection, and more.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="The Incidents page in the Microsoft 365 Defender portal." lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
+- Automated attack disruption uses high-confidence signals collected from Microsoft Defender XDR and Microsoft Sentinel to automatically disrupt active attacks at machine speed, containing the threat and limiting the impact.
 
-Selecting an incident name displays the entire attack story of the incident, including:
+- If [enabled](m365d-enable.md), Microsoft Defender XDR can [automatically investigate and resolve](m365d-autoir.md) alerts from Microsoft 365 and Entra ID sources through automation and artificial intelligence. You can also perform additional remediation steps to resolve the attack.
 
-- Alert page within incident: The scope of alerts related to the incident and their information on the same tab.
-- Graph: A visual representation of the attack that connects the different suspicious entities that are part of the attack with their related assets such as users, devices, and mailboxes. 
+- Microsoft Sentinel [automation rules](/azure/sentinel/automate-incident-handling-with-automation-rules) can automate triage, assignment, and management of incidents, regardless of their source. They can apply tags to incidents based on their content, suppress noisy (false positive) incidents, and close resolved incidents that meet the appropriate criteria, specifying a reason and adding comments.
 
-You can view the entity details directly from the graph and act on them with response options like file delete or device isolation.
+<a name='incidents-and-alerts-in-the-microsoft-365-defender-portal'></a>
 
-:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Screenshot that shows the attack story page for an incident in the Microsoft 365 Defender portal." lightbox="../../media/incidents-overview/incidents-ss-incident-summary.png":::
+[!INCLUDE [unified-soc-preview](../../includes/unified-soc-preview.md)]
 
-The additional tabs for an incident are:
+## Incidents and alerts in the Microsoft Defender portal
 
-- Attack story
+> [!TIP]
+> For a limited time during January 2024, when you visit the **Incidents** page, Defender Boxed appears. Defender Boxed highlights your organization's security successes, improvements, and response actions during 2023. To reopen Defender Boxed, in the Microsoft Defender portal, go to **Incidents**, and then select **Your Defender Boxed**.
 
-  The full story of the attack, including all the alerts, assets, and remediation actions taken.
+You manage incidents from **Investigation & response > Incidents & alerts > Incidents** on the quick launch of the [Microsoft Defender portal](https://security.microsoft.com). Here's an example:
 
-- Alerts
+:::image type="content" source="../../media/incidents-overview/incidents-ss-incidents.png" alt-text="The Incidents page in the Microsoft Defender portal." lightbox="../../media/incidents-overview/incidents-ss-incidents.png":::
 
-  All the alerts related to the incident and their information.
+Selecting an incident name displays the incident page, starting with the entire **attack story** of the incident, including:
 
-- Assets
+- **Alert page within incident**: The scope of alerts related to the incident and their information on the same tab.
 
-  All the assets (devices, users, mailboxes, and apps) that have been identified to be part of or related to the incident.
+- **Graph**: A visual representation of the attack that connects the different suspicious entities that are part of the attack with the asset entities that make up the attack's targets, such as users, devices, apps, and mailboxes.
 
-- Investigations
+You can view the asset and other entity details directly from the graph and act on them with response options such as like disabling an account, deleting a file, or isolating a device.
 
-  All the [automated investigations](m365d-autoir.md) triggered by alerts in the incident.
+:::image type="content" source="../../media/incidents-overview/incident-summary.png" alt-text="Screenshot that shows the attack story page for an incident in the Microsoft Defender portal." lightbox="../../media/incidents-overview/incident-summary.png":::
 
-- Evidence and Response
+The incident page consists of the following tabs:
 
-  All the supported events and suspicious entities in the alerts of the incident.
+- **Attack story**
 
-- Summary
+  Mentioned above, this tab includes the timeline of the attack, including all the alerts, asset entities, and remediation actions taken.
+
+- **Alerts**
+
+  All the alerts related to the incident, their sources, and information.
+
+- **Assets**
+
+  All the assets (protected entities such as devices, users, mailboxes, apps, and cloud resources) that have been identified to be part of or related to the incident.
+
+- **Investigations**
+
+  All the [automated investigations](m365d-autoir.md) triggered by alerts in the incident, including the status of the investigations and their results.
+
+- **Evidence and Response**
+
+  All the suspicious entities in the alerts of the incident, which constitute evidence supporting the attack story. These entities can include IP addresses, files, processes, URLs, registry keys and values, and more.
+
+- **Summary**
 
   A quick overview of the impacted assets associated with alerts.
 
 > [!NOTE]
 > If you see an *Unsupported alert type* alert status, it means that automated investigation capabilities cannot pick up that alert to run an automated investigation. However, you can [investigate these alerts manually](investigate-incidents.md#alerts).
 
-## Example incident response workflow for Microsoft 365 Defender
+<a name='example-incident-response-workflow-for-microsoft-365-defender'></a>
 
-Here's an example workflow for responding to incidents in Microsoft 365 with the Microsoft 365 Defender portal.
+## Incident response workflow example in the Microsoft Defender portal
 
-:::image type="content" source="../../media/incidents-overview/incidents-example-workflow.png" alt-text="An example of an incident response workflow for the Microsoft 365 Defender portal." lightbox="../../media/incidents-overview/incidents-example-workflow.png":::
+Here's a workflow example for responding to incidents in Microsoft 365 with the Microsoft Defender portal.
+
+:::image type="content" source="../../media/incidents-overview/incidents-example-workflow.png" alt-text="An example of an incident response workflow for the Microsoft Defender portal." lightbox="../../media/incidents-overview/incidents-example-workflow.png":::
 
 On an ongoing basis, identify the highest priority incidents for analysis and resolution in the incident queue and get them ready for response. This is a combination of:
 
 - [Triaging](incident-queue.md) to determining the highest priority incidents through filtering and sorting of the incident queue.
 - [Managing](manage-incidents.md) incidents by modifying their title, assigning them to an analyst, and adding tags and comments.
 
+You can use Microsoft Sentinel automation rules to automatically triage and manage (and even respond to) some incidents as they're created, removing the easiest-to-handle incidents from taking up space in your queue.
+
 Consider these steps for your own incident response workflow:
 
-1. For each incident, begin an [attack and alert investigation and analysis](investigate-incidents.md):
-
-   1. View the attack story of the incident to understand its scope, severity, detection source, and what entities are affected.
-
-   1. Begin analyzing the alerts to understand their origin, scope, and severity with the alert story within the incident.
-
-   1. As needed, gather information on impacted devices, users, and mailboxes with the graph. Right click on any entity to open a flyout with all the details.
-
-   1. See how Microsoft 365 Defender has [automatically resolved some alerts](m365d-autoir.md) with the **Investigations** tab.
-
-   1. As needed, use information in the data set for the incident for more information with the **Evidence and Response** tab.
-
-2. After or during your analysis, perform containment to reduce any additional impact of the attack and eradication of the security threat.
-
-3. As much as possible, recover from the attack by restoring your tenant resources to the state they were in before the incident.
-
-4. [Resolve](manage-incidents.md#resolve-an-incident) the incident and take time for post-incident learning to:
-
-   - Understand the type of the attack and its impact.
-   - Research the attack in [Threat Analytics](threat-analytics.md) and the security community for a security attack trend.
-   - Recall the workflow you used to resolve the incident and update your standard workflows, processes, policies, and playbooks as needed.
-   - Determine whether changes in your security configuration are needed and implement them.
+| Stage | Steps |
+| ----- | ----- |
+| For each incident, begin an [attack and alert investigation and analysis](investigate-incidents.md). | <ol><li> View the attack story of the incident to understand its scope, severity, detection source, and which asset entities are affected.<li>Begin analyzing the alerts to understand their origin, scope, and severity with the alert story within the incident.<li>As needed, gather information on impacted devices, users, and mailboxes with the graph. Select any entity to open a flyout with all the details. Follow through to the entity page for more insights.<li>See how Microsoft Defender XDR has [automatically resolved some alerts](m365d-autoir.md) with the **Investigations** tab.<li>As needed, use information in the data set for the incident for more information with the **Evidence and Response** tab. |
+| After or during your analysis, perform containment to reduce any additional impact of the attack and eradication of the security threat. | For example,<li>Disable compromised users<li>Isolate impacted devices<li>Block hostile IP addresses. |
+| As much as possible, recover from the attack by restoring your tenant resources to the state they were in before the incident.||
+| [Resolve](manage-incidents.md#resolve-an-incident) the incident and document your findings. | Take time for post-incident learning to: <li>Understand the type of the attack and its impact.<li>Research the attack in [Threat Analytics](threat-analytics.md) and the security community for a security attack trend.<li>Recall the workflow you used to resolve the incident and update your standard workflows, processes, policies, and playbooks as needed.<li>Determine whether changes in your security configuration are needed and implement them. |
 
 If you're new to security analysis, see the [introduction to responding to your first incident](incidents-overview.md) for additional information and to step through an example incident.
 
-For more information about incident response across Microsoft products, see [this article](/security/compass/incident-response-overview).
+For more information about incident response across Microsoft products, see [this article](/security/operations/incident-response-overview).
 
-## Example security operations for Microsoft 365 Defender
+<a name='example-security-operations-for-microsoft-365-defender'></a>
 
-Here's an example of security operations (SecOps) for Microsoft 365 Defender.
+## Integrating security operations in the Microsoft Defender portal
 
-:::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="An example of security operations for Microsoft 365 Defender" lightbox="../../media/incidents-overview/incidents-example-operations.png":::
+Here's an example of integrating security operations (SecOps) processes in the Microsoft Defender portal.
+
+:::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="An example of security operations for Microsoft Defender XDR" lightbox="../../media/incidents-overview/incidents-example-operations.png":::
 
 Daily tasks can include:
 
@@ -161,73 +161,33 @@ Annual tasks can include conducting a major incident or breach exercise to test 
 
 Daily, monthly, quarterly, and annual tasks can be used to update or refine processes, policies, and security configurations.
 
-See [Integrating Microsoft 365 Defender into your security operations](integrate-microsoft-365-defender-secops.md) for more details.
+See [Integrating Microsoft Defender XDR into your security operations](integrate-microsoft-365-defender-secops.md) for more details.
 
 ### SecOps resources across Microsoft products
 
 For more information about SecOps across Microsoft's products, see these resources:
 
 - [Capabilities](/security/compass/security-operations-capabilities)
-- [Best practices](/security/compass/security-operations)
-- [Videos and slides](/security/compass/security-operations-videos-and-decks)
+- [Best practices](/azure/cloud-adoption-framework/secure/security-operations)
+- [Videos and slides](/security/operations/security-operations-videos-and-decks)
 
-## Get incident notifications by email
+## Incident notifications by email
 
-You can set up Microsoft 365 Defender to notify your staff with an email about new incidents or updates to existing incidents. You can choose to get notifications based on:
+You can set up the Microsoft Defender portal to notify your staff with an email about new incidents or updates to existing incidents. You can choose to get notifications based on:
 
 - Alert severity
-- Alert sources 
+- Alert sources
 - Device group
 
-**Choose to receive email notifications only for specific service source**:
-You can easily select specific service sources that you want to get email notifications for.
- 
-**Get more granularity with specific detection sources**:
-You can get notifications only for a specific detection source. 
-
-**Set the severity per detection or service source**:
-You can choose to get email notifications only on specific severities per source. For example, you can get notified for Medium and High alerts for EDR and all severities for Microsoft Defender Experts.  
-
-The email notification contains important details about the incident like the incident name, severity, and categories, among others. You can also go directly to the incident and start your analysis right away. For more information, see [Investigate incidents](investigate-incidents.md).
-
-You can add or remove recipients in the email notifications. New recipients get notified about incidents after they're added.
-
-> [!NOTE]
-> You need the **Manage security settings** permission to configure email notification settings. If you've chosen to use basic permissions management, users with Security Administrator or Global Administrator roles can configure email notifications. <br> <br>
-Likewise, if your organization is using role-based access control (RBAC), you can only create, edit, delete, and receive notifications based on device groups that you are allowed to manage.
-
-### Create a rule for email notifications
-
-Follow these steps to create a new rule and customize email notification settings.
-
-1. Go to [Microsoft 365 Defender](https://security.microsoft.com) in the navigation pane, select **Settings > Microsoft 365 Defender > Incident email notifications**.
-2. Select **Add item**.
-3. On the **Basics** page, type the rule name and a description, and then select **Next**.
-4. On the **Notification settings** page, configure:
-    - **Alert severity** - Choose the alert severities that will trigger an incident notification. For example, if you only want to be informed about high-severity incidents, select **High**.
-    - **Device group scope** - You can specify all device groups or select from the list of device groups in your tenant.
-    - **Send only one notification per incident** - Select if you want one notification per incident.
-    - **Include organization name in the email** - Select if you want your organization name to appear in the email notification.
-    - **Include tenant-specific portal link** - Select if you want to add a link with the tenant ID in the email notification for access to a specific Microsoft 365 tenant.
-
-    :::image type="content" source="../../media/get-incident-notifications/incidents-email-notification-settings.png" alt-text="Screenshot of the Notification settings page for incident email notifications in the Microsoft 365 Defender portal." lightbox="../../media/get-incident-notifications/incidents-email-notification-settings.png":::
-
-5. Select **Next**. On the **Recipients** page, add the email addresses that will receive the incident notifications. Select **Add** after typing each new email address. To test notifications and ensure that the recipients receive them in the inboxes, select **Send test email**.
-6. Select **Next**. On the **Review rule** page, review the settings of the rule, and then select **Create rule**. Recipients will start receiving incident notifications through email based on the settings.
-
-To edit an existing rule, select it from the list of rules. On the pane with the rule name, select **Edit rule** and make your changes on the **Basics**, **Notification settings**, and **Recipients** pages.
-
-To delete a rule, select it from the list of rules. On the pane with the rule name, select **Delete**.
-
-Once you get the notification, you can go directly to the incident and start your investigation right away. For more information on investigating incidents, see [Investigate incidents in Microsoft 365 Defender](investigate-incidents.md).
+To set up email notifications for incidents, see [get email notifications on incidents](m365d-notifications-incidents.md).
 
 ## Training for security analysts
 
-Use this learning module from Microsoft Learn to understand how to use Microsoft 365 Defender to manage incidents and alerts.
+Use this learning module from Microsoft Learn to understand how to use Microsoft Defender XDR to manage incidents and alerts.
 
-|Training:|Investigate incidents with Microsoft 365 Defender|
+|Training:|Investigate incidents with Microsoft Defender XDR|
 |---|---|
-|![Investigate incidents with Microsoft 365 Defender training icon.](../../media/incidents-overview/m365-defender-address-security-investigation.svg)| Microsoft 365 Defender unifies threat data from multiple services and uses AI to combine them into incidents and alerts. Learn how to minimize the time between an incident and its management for subsequent response and resolution. <p> 27 min - 6 Units |
+|![Investigate incidents with Microsoft Defender XDR training icon.](../../media/incidents-overview/m365-defender-address-security-investigation.svg)| Microsoft Defender XDR unifies threat data from multiple services and uses AI to combine them into incidents and alerts. Learn how to minimize the time between an incident and its management for subsequent response and resolution. <p> 27 min - 6 Units |
 
 > [!div class="nextstepaction"]
 > [Start >](/training/modules/defender-investigate-incidents/)
@@ -242,8 +202,8 @@ Follow this table for your level of experience with security analysis and incide
 
 | Level | Steps |
 |:-------|:-----|
-| **New** | <ol><li> See the [Respond to your first incident walkthrough](first-incident-overview.md) to get a guided tour of a typical process of analysis, remediation, and post-incident review in the Microsoft 365 Defender portal with an example attack. </li><li> See which incidents should be [prioritized](incident-queue.md) based on severity and other factors. </li><li> [Manage incidents](manage-incidents.md), which includes renaming, assigning, classifying, and adding tags and comments based on your incident management workflow.</li></ol> |
-| **Experienced** | <ol><li> Get started with the incident queue from the **Incidents** page of the Microsoft 365 Defender portal. From here you can: </li> <ul><li> See which incidents should be [prioritized](incident-queue.md) based on severity and other factors. </li><li> [Manage incidents](manage-incidents.md), which includes renaming, assigning, classifying, and adding tags and comments based on your incident management workflow. </li><li> Perform [investigations](investigate-incidents.md) of incidents. </li></ul> </li><li> Track and respond to emerging threats with [threat analytics](threat-analytics.md). </li><li>  Proactively hunt for threats with [advanced threat hunting](advanced-hunting-overview.md). </li><li> See these [incident response playbooks](/security/compass/incident-response-playbooks) for detailed guidance for phishing, password spray, and app consent grant attacks. </li></ol> |
+| **New** | <ol><li> See the [Respond to your first incident walkthrough](first-incident-overview.md) to get a guided tour of a typical process of analysis, remediation, and post-incident review in the Microsoft Defender portal with an example attack. </li><li> See which incidents should be [prioritized](incident-queue.md) based on severity and other factors. </li><li> [Manage incidents](manage-incidents.md), which includes renaming, assigning, classifying, and adding tags and comments based on your incident management workflow.</li></ol> |
+| **Experienced** | <ol><li> Get started with the incident queue from the **Incidents** page of the Microsoft Defender portal. From here you can: </li> <ul><li> See which incidents should be [prioritized](incident-queue.md) based on severity and other factors. </li><li> [Manage incidents](manage-incidents.md), which includes renaming, assigning, classifying, and adding tags and comments based on your incident management workflow. </li><li> Perform [investigations](investigate-incidents.md) of incidents. </li></ul> </li><li> Track and respond to emerging threats with [threat analytics](threat-analytics.md). </li><li>  Proactively hunt for threats with [advanced threat hunting](advanced-hunting-overview.md). </li><li> See these [incident response playbooks](/security/operations/incident-response-playbooks) for detailed guidance for phishing, password spray, and app consent grant attacks. </li></ol> |
 
 ### Security team role
 
@@ -251,8 +211,9 @@ Follow this table based on your security team role.
 
 | Role | Steps |
 |---|---|
-| Incident responder (Tier 1) | Get started with the incident queue from the **Incidents** page of the Microsoft 365 Defender portal. From here you can: <ul><li> See which incidents should be [prioritized](incident-queue.md) based on severity and other factors. </li><li> [Manage incidents](manage-incidents.md), which includes renaming, assigning, classifying, and adding tags and comments based on your incident management workflow. </li></ul> |
-| Security investigator or analyst (Tier 2) | <ol><li> Perform [investigations](investigate-incidents.md) of incidents from the **Incidents** page of the Microsoft 365 Defender portal. </li><li> See these [incident response playbooks](/security/compass/incident-response-playbooks) for detailed guidance for phishing, password spray, and app consent grant attacks. </li></ol> |
-| Advanced security analyst or threat hunter (Tier 3) | <ol><li>Perform [investigations](investigate-incidents.md) of incidents from the **Incidents** page of the Microsoft 365 Defender portal. </li><li> Track and respond to emerging threats with [threat analytics](threat-analytics.md). </li><li> Proactively hunt for threats with [advanced threat hunting](advanced-hunting-overview.md). </li><li> See these [incident response playbooks](/security/compass/incident-response-playbooks) for detailed guidance for phishing, password spray, and app consent grant attacks. |
-| SOC manager | See how to [integrate Microsoft 365 Defender into your Security Operations Center (SOC)](integrate-microsoft-365-defender-secops.md). |
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+| Incident responder (Tier 1) | Get started with the incident queue from the **Incidents** page of the Microsoft Defender portal. From here you can: <ul><li> See which incidents should be [prioritized](incident-queue.md) based on severity and other factors. </li><li> [Manage incidents](manage-incidents.md), which includes renaming, assigning, classifying, and adding tags and comments based on your incident management workflow. </li></ul> |
+| Security investigator or analyst (Tier 2) | <ol><li> Perform [investigations](investigate-incidents.md) of incidents from the **Incidents** page of the Microsoft Defender portal. </li><li> See these [incident response playbooks](/security/operations/incident-response-playbooks) for detailed guidance for phishing, password spray, and app consent grant attacks. </li></ol> |
+| Advanced security analyst or threat hunter (Tier 3) | <ol><li>Perform [investigations](investigate-incidents.md) of incidents from the **Incidents** page of the Microsoft Defender portal. </li><li> Track and respond to emerging threats with [threat analytics](threat-analytics.md). </li><li> Proactively hunt for threats with [advanced threat hunting](advanced-hunting-overview.md). </li><li> See these [incident response playbooks](/security/operations/incident-response-playbooks) for detailed guidance for phishing, password spray, and app consent grant attacks. |
+| SOC manager | See how to [integrate Microsoft Defender XDR into your Security Operations Center (SOC)](integrate-microsoft-365-defender-secops.md). |
+
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

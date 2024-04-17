@@ -1,45 +1,40 @@
 ---
 title: Network device discovery and vulnerability management
 description: Security recommendations and vulnerability detection are now available for operating systems of switches, routers, WLAN controllers, and firewalls.
-keywords: network devices, network devices vulnerability detection, operating systems of switches, routers, WLAN controllers, and firewalls
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: levinec
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier1
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.subservice: mde
 search.appverid: met150
-ms.date: 03/30/2021
+ms.date: 04/03/2024
 ---
 
 # Network device discovery and vulnerability management
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Defender Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 > [!NOTE]
 > The [Network device discovery and vulnerability assessments](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/network-device-discovery-and-vulnerability-assessments/ba-p/2267548) Blog \(published 04-13-2021\) provides insights into the new **Network device discovery** capabilities in Defender for Endpoint. This article provides an overview of the challenge that **Network device discovery** is designed to address, and detailed information about how get started using these new capabilities.
 
-Network discovery capabilities are available in the **Device inventory** section of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and Microsoft 365 Defender consoles.
+Network discovery capabilities are available in the **Device inventory** section of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a> and Microsoft Defender XDR consoles.
 
-A designated Microsoft Defender for Endpoint device is used on each network segment to perform periodic authenticated scans of preconfigured network devices. Once discovered, Defender for Endpoint's Vulnerability Management capabilities provide integrated workflows to secure discovered switches, routers, WLAN controllers, firewalls, and VPN gateways.
+A designated Microsoft Defender for Endpoint device is used on each network segment to perform periodic authenticated scans of preconfigured network devices. Once discovered, vulnerability management capabilities in Defender for Endpoint provide integrated workflows to secure discovered switches, routers, WLAN controllers, firewalls, and VPN gateways.
 
 Once the network devices are discovered and classified, security administrators are able to receive the latest security recommendations and review recently discovered vulnerabilities on network devices deployed across their organizations.
 
@@ -61,10 +56,11 @@ Once the network devices are discovered and classified, security administrators 
 The following operating systems are currently supported:
 
 - Cisco IOS, IOS-XE, NX-OS
+- Fortinet FortiOS
 - Juniper JUNOS
+- HPE Aruba Networking ArubaOS, AOS-CX
 - HPE ArubaOS, Procurve Switch Software
 - Palo Alto Networks PAN-OS
-- Fortinet FortiOS
 
 More networking vendors and OS will be added over time, based on data gathered from customer usage. Therefore, you're encouraged to configure all your network devices, even if they're not specified in this list.
 
@@ -76,7 +72,7 @@ Your first step is to select a device that performs the authenticated network sc
 
 2. SNMP traffic between the Defender for Endpoint scanning device and the targeted network devices must be allowed (for example, by the Firewall).
 
-3. Decide which network devices will be assessed for vulnerabilities (for example: a Cisco switch or a Palo Alto Networks firewall).
+3. Decide which network devices are assessed for vulnerabilities (for example: a Cisco switch or a Palo Alto Networks firewall).
 
 4. Make sure SNMP read-only is enabled on all configured network devices to allow the Defender for Endpoint scanning device to query the configured network devices. 'SNMP write' isn't needed for the proper functionality of this feature.
 
@@ -137,36 +133,38 @@ To complete the scanner registration process:
 
 The scanner has a scheduled task that, by default, is configured to look for updates regularly. When the task runs, it compares the version of the scanner on the client device to the version of the agent on the update location. The update location is where Windows looks for updates, such as on a network share or from the internet.
 
-If there's a difference between the two versions, the update process determines which files are different and need to be updated on the local computer. Once the required updates are determined, the downloading of the updates will start.
-
-It's possible to disable automatic updates of the scanner by going to the **MDATP Network Scanner Updater** inside the Windows Task Scheduler. To do this:
-
-- In Windows, go to **Computer Management** \> **Task Scheduler** \> **Task Scheduler Library**.
-- Select **MDATP Network Scanner Updater** \> right-click \> and select **Disable**.
-- To re-enable, right-click on **MDATP Network Scanner Updater** and select **Enable**.
+If there's a difference between the two versions, the update process determines which files are different and need to be updated on the local computer. Once the required updates are determined, the downloading of the updates start.
 
 ## Configure a new network device authenticated scan
 
-1. Go to **Settings** \> **Device discovery** \> **Authenticated scans** in the [Microsoft 365 Defender portal](https://security.microsoft.com).
+1. Go to **Settings** \> **Device discovery** \> **Authenticated scans** in the [Microsoft Defender portal](https://security.microsoft.com).
+
 2. Select **Add new scan** and choose **Network device authenticated scan** and select **Next**.
 
      :::image type="content" source="../../media/defender-endpoint/network-authenticated-scan.png" alt-text="Screenshot of the add new network device authenticated scan screen" lightbox="../../media/defender-endpoint/network-authenticated-scan.png":::
 
 3. Choose whether to **Activate scan**.
-4. Enter a **Scan name**.
-5. Select the **Scanning device:** The onboarded device you use to scan the network devices.
-6. Enter the **Target (range):** The IP address ranges or hostnames you want to scan. You can either enter the addresses or import a CSV file. Importing a file overrides any manually added addresses.
-7. Select the **Scan interval:** By default, the scan runs every four hours, you can change the scan interval or have it only run once, by selecting 'Don't repeat'.
-8. Choose your **Authentication method**.
-    - You can select to **Use azure KeyVault for providing credentials:** If you manage your credentials in Azure KeyVault, you can enter the Azure KeyVault URL and Azure KeyVault secret name to be accessed by the scanning device to provide credentials. The secret value is dependent on the Authenticated Method you choose:
 
-        |Authentication Method|Azure KeyVault secret value|
-        |:----|:----:|
-        |AuthPriv|Username;AuthPassword;PrivPassword|
-        |AuthNoPriv|Username;AuthPassword|
-        |CommunityString |CommunityString|
+4. Enter a **Scan name**.
+
+5. Select the **Scanning device:** The onboarded device you use to scan the network devices.
+
+6. Enter the **Target (range):** The IP address ranges or hostnames you want to scan. You can either enter the addresses or import a CSV file. Importing a file overrides any manually added addresses.
+
+7. Select the **Scan interval:** By default, the scan runs every four hours, you can change the scan interval or have it only run once, by selecting **Don't repeat**.
+
+8. Choose your **Authentication method**.
+
+   You can select to **Use azure KeyVault for providing credentials:** If you manage your credentials in Azure KeyVault, you can enter the Azure KeyVault URL and Azure KeyVault secret name to be accessed by the scanning device to provide credentials. The secret value is dependent on the Authenticated Method you choose, as described in the following table:
+
+   |Authentication Method|Azure KeyVault secret value|
+   |:----|:----:|
+   |AuthPriv|Username;AuthPassword;PrivPassword|
+   |AuthNoPriv|Username;AuthPassword|
+   |CommunityString |CommunityString|
 
 9. Select **Next** to run or skip the test scan.
+
 10. Select **Next** to review the settings and the select **Submit** to create your new network device authenticated scan.
 
 > [!NOTE]
@@ -243,4 +241,5 @@ Change command-line settings on your device to allow copying and change text siz
 
 - [Device inventory](machines-view-overview.md)
 - [Windows authenticated scan](../defender-vulnerability-management/windows-authenticated-scan.md)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

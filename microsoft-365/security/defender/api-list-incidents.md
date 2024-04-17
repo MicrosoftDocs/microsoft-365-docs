@@ -1,13 +1,7 @@
 ---
-title: List incidents API in Microsoft 365 Defender
-description: Learn how to list incidents API in Microsoft 365 Defender
-keywords: list, incident, incidents, api
-search.product: eADQiWindows 10XVcnh
-ms.service: microsoft-365-security
-ms.subservice: m365d
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+title: List incidents API in Microsoft Defender XDR
+description: Learn how to list incidents API in Microsoft Defender XDR
+ms.service: defender-xdr
 f1.keywords: 
   - NOCSH
 ms.author: macapara
@@ -24,17 +18,17 @@ search.appverid:
   - MOE150
   - MET150
 ms.custom: api
-ms.date: 02/08/2023
+ms.date: 02/08/2024
 ---
 
-# List incidents API in Microsoft 365 Defender
+# List incidents API in Microsoft Defender XDR
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 
 **Applies to:**
 
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!NOTE]
 > **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview).
@@ -58,7 +52,7 @@ The API supports the following **OData** operators:
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Access Microsoft 365 Defender APIs](api-access.md)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Access Microsoft Defender XDR APIs](api-access.md)
 
 Permission type|Permission|Permission display name
 ---|---|---
@@ -127,7 +121,7 @@ resolvedTime|Time when alert was resolved.|2020-09-10T05:22:59Z
 firstActivity|Time when alert first reported that activity was updated at the backend.|2020-09-04T05:22:59Z
 title|Brief identifying string value available for each alert.|Ransomware activity
 description|String value describing each alert.|The user Test User2 (testUser2@contoso.com) manipulated 99 files with multiple extensions ending with the uncommon extension *herunterladen*. This is an unusual number of file manipulations and is indicative of a potential ransomware attack.
-category|Visual and numeric view of how far the attack has progressed along the kill chain. Aligned to the [MITRE ATT&CK™ framework](https://attack.mitre.org/).|Impact
+category|Visual and numeric view of how far the attack has progressed along the kill chain. Aligned to the [MITRE ATT&CK&trade; framework](https://attack.mitre.org/).|Impact
 status|Categorize alerts (as *New*, *Active*, or *Resolved*). It can help you organize and manage your response to alerts.|New
 severity|Indicates the possible impact on assets. The higher the severity the bigger the impact. Typically higher severity items require the most immediate attention.<br>One of the following values: *Informational*, *Low*, *Medium*, and *High*.|Medium
 investigationId|The automated investigation ID triggered by this alert.|1234
@@ -137,7 +131,7 @@ determination|Specifies the determination of the incident. The property values a
 assignedTo|Owner of the incident, or *null* if no owner is assigned.|secop2@contoso.com
 actorName|The activity group, if any, the  associated with this alert.|BORON
 threatFamilyName|Threat family associated with this alert.|null
-mitreTechniques|The attack techniques, as aligned with the [MITRE ATT&CK](https://attack.mitre.org/)™ framework.|\[\]
+mitreTechniques|The attack techniques, as aligned with the [MITRE ATT&CK](https://attack.mitre.org/)&trade; framework.|\[\]
 devices|All devices where alerts related to the incident were sent.|\[\] (see details on entity fields below)
 
 ### Device format
@@ -145,7 +139,7 @@ devices|All devices where alerts related to the incident were sent.|\[\] (see de
 Field name|Description|Example value
 ---|---|---
 DeviceId|The device ID as designated in Microsoft Defender for Endpoint.|24c222b0b60fe148eeece49ac83910cc6a7ef491
-aadDeviceId|The device ID as designated in [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis). Only available for domain-joined devices.|null
+aadDeviceId|The device ID as designated in [Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-whatis). Only available for domain-joined devices.|null
 deviceDnsName|The fully qualified domain name for the device.|user5cx.middleeast.corp.contoso.com
 osPlatform|The OS platform the device is running.|WindowsServer2016
 osBuild|The build version for the OS the device is running.|14393
@@ -727,10 +721,10 @@ GET https://api.security.microsoft.com/api/incidents
 
 - [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview)
 
-- [Access the Microsoft 365 Defender APIs](api-access.md)
+- [Access the Microsoft Defender XDR APIs](api-access.md)
 - [Learn about API limits and licensing](api-terms.md)
 - [Understand error codes](api-error-codes.md)
 - [Incidents overview](incidents-overview.md)
 - [Incident APIs](api-incident.md)
 - [Update incident API](api-update-incidents.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

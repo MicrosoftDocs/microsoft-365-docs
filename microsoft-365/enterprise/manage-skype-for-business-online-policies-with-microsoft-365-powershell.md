@@ -45,7 +45,7 @@ Use these instructions to get set up to run the commands (skip the steps you hav
     
 ## Manage user account policies
 
-Many Skype for Business Online user account properties are configured by using policies. Policies are simply collections of settings that can be applied to one or more users. To take a look at how the a policy has been configured, you can run this example command for the FederationAndPICDefault policy:
+Many Skype for Business Online user account properties are configured by using policies. Policies are simply collections of settings that can be applied to one or more users. To take a look at how a policy has been configured, you can run this example command for the FederationAndPICDefault policy:
   
 ```powershell
 Get-CsExternalAccessPolicy -Identity "FederationAndPICDefault"
@@ -63,7 +63,7 @@ EnablePublicCloudAudioVideoAccess : True
 EnableOutsideAccess               : True
 ```
 
-In this example, the values within this policy determine what a use can or cannot do when it comes to communicating with federated users. For example, the EnableOutsideAccess property must be set to True for a user to be able to communicate with people outside the organization. Note that this property does not appear in the Microsoft 365 admin center. Instead, the property is automatically set to True or False based on the other selections that you make. The other two properties of interest are:
+In this example, the values within this policy determine what a use can or can't do when it comes to communicating with federated users. For example, the EnableOutsideAccess property must be set to True for a user to be able to communicate with people outside the organization. This property doesn't appear in the Microsoft 365 admin center. Instead, the property is automatically set to True or False based on the other selections that you make. The other two properties of interest are:
   
 - **EnableFederationAccess** indicates whether the user can communicate with people from federated domains.
     
@@ -73,9 +73,9 @@ Therefore, you don't directly change federation-related properties on user accou
   
 If you want to know whether or not someone can communicate with users from outside the organization, you have to:
   
-- Determine which external access policy has been assigned to that user.
+- Determine which external access policy is assigned to that user.
     
-- Determine which capabilities are or are not allowed by that policy.
+- Determine which capabilities are or aren't allowed by that policy.
     
 For example, you can do that by using this command:
   
@@ -113,9 +113,9 @@ Get-CsExternalAccessPolicy -ApplicableTo "Alex Darrow"
 
 The ApplicableTo parameter limits the returned data to policies that can be assigned to the specified user (for example, Alex Darrow). Depending on licensing and usage location restrictions, that might represent a subset of all the available policies. 
   
-In some cases, properties of policies are not used with Microsoft 365, while others can only be managed by Microsoft support personnel. 
+In some cases, properties of policies aren't used with Microsoft 365, while others can only be managed by Microsoft support personnel. 
   
-With Skype for Business Online, users must be managed by a policy of some kind. If a valid policy-related property is blank, that means that the user in question is being managed by a global policy, which is a policy that is automatically applied to a user unless he or she is specifically assigned a per-user policy. Because we don't see a client policy listed for a user account, it is managed by the global policy. You can determine the global client policy with this command:
+With Skype for Business Online, users must be managed by a policy of some kind. If a valid policy-related property is blank, that means that the user in question is being managed by a global policy, which is a policy that is automatically applied to a user unless they're specifically assigned a per-user policy. Because we don't see a client policy listed for a user account, it's managed by the global policy. You can determine the global client policy with this command:
   
 ```powershell
 Get-CsClientPolicy -Identity "Global"

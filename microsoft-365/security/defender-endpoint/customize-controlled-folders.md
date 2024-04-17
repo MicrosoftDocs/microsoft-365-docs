@@ -1,21 +1,21 @@
 ---
 title: Customize controlled folder access
 description: Add other folders that should be protected by controlled folder access, or allow apps that are incorrectly blocking changes to important files.
-keywords: Controlled folder access, windows 10, windows 11, windows defender, ransomware, protect, files, folders, customize, add folder, add app, allow, add executable
-ms.service: microsoft-365-security
+ms.service: defender-endpoint
 ms.localizationpriority: medium
 audience: ITPro
-author: denisebmsft
-ms.author: deniseb
-ms.reviewer: oogunrinde, dbodorin, vladiso, nixanm, anvascon
-manager: dansimp
-ms.subservice: mde
+author: siosulli
+ms.author: siosulli
+ms.reviewer: dbodorin, vladiso, nixanm, anvascon
+manager: deniseb
+ms.subservice: asr
 ms.topic: how-to
 ms.collection: 
 - m365-security
 - tier2
+- mde-asr
 search.appverid: met150
-ms.date: 03/14/2023
+ms.date: 10/27/2023
 ---
 
 # Customize controlled folder access
@@ -24,7 +24,7 @@ ms.date: 03/14/2023
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Microsoft Defender Antivirus
 
 **Platforms**
@@ -49,7 +49,7 @@ Controlled folder access applies to many system folders and default locations, i
 
 Adding other folders to controlled folder access can be helpful for cases when you don't store files in the default Windows libraries, or you've changed the default location of your libraries.
 
-You can also specify network shares and mapped drives. Environment variables and wildcards are supported. For information about using wildcards, see [Use wildcards in the file name and folder path or extension exclusion lists](configure-extension-file-exclusions-microsoft-defender-antivirus.md).
+You can also specify network shares and mapped drives. Environment variables are supported; however, wildcards are not.
 
 You can use the Windows Security app, Group Policy, PowerShell cmdlets, or mobile device management configuration service providers to add and remove protected folders.
 
@@ -92,7 +92,7 @@ You can use the Windows Security app, Group Policy, PowerShell cmdlets, or mobil
     ```
 3. Repeat step 2 for each folder that you want to protect. Folders that are protected are visible in the Windows Security app.
 
-   :::image type="content" source="images/cfa-allow-folder-ps.png" alt-text="The PowerShell window with cmdlet shown" lightbox="images/cfa-allow-folder-ps.png":::
+   :::image type="content" source="media/cfa-allow-folder-ps.png" alt-text="The PowerShell window with cmdlet shown" lightbox="media/cfa-allow-folder-ps.png":::
 
 > [!IMPORTANT]
 > Use `Add-MpPreference` to append or add apps to the list and not `Set-MpPreference`. Using the `Set-MpPreference` cmdlet will overwrite the existing list.
@@ -122,7 +122,7 @@ An allowed application or service only has write access to a controlled folder a
 
 4. Select **Add an allowed app** and follow the prompts to add apps.
 
-   :::image type="content" source="images/cfa-allow-app.png" alt-text="The Add an allowed app button" lightbox="images/cfa-allow-app.png":::
+   :::image type="content" source="media/cfa-allow-app.png" alt-text="The Add an allowed app button" lightbox="media/cfa-allow-app.png":::
 
 ### Use Group Policy to allow specific apps
 
@@ -153,7 +153,7 @@ An allowed application or service only has write access to a controlled folder a
 
    Continue to use `Add-MpPreference -ControlledFolderAccessAllowedApplications` to add more apps to the list. Apps added using this cmdlet will appear in the Windows Security app.
 
-   :::image type="content" source="images/cfa-allow-app-ps.png" alt-text="The PowerShell cmdlet to allow an application" lightbox="images/cfa-allow-app-ps.png":::
+   :::image type="content" source="media/cfa-allow-app-ps.png" alt-text="The PowerShell cmdlet to allow an application" lightbox="media/cfa-allow-app-ps.png":::
 
 > [!IMPORTANT]
 > Use `Add-MpPreference` to append or add apps to the list. Using the `Set-MpPreference` cmdlet will overwrite the existing list.

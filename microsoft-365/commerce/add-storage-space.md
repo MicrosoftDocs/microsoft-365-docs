@@ -9,6 +9,7 @@ ms.reviewer: jkinma, ramagane
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-management
 ms.localizationpriority: medium
 ms.collection:
 - Tier1
@@ -17,12 +18,13 @@ ms.collection:
 - Adm_O365
 - SPO_Content
 ms.custom:
-- commerce_purchase
+- commerce_billing
 - MAX_CampaignID
 - okr_SMB
 - AdminSurgePortfolio
 - business_assist
 - AdminTemplateSet
+- admindeeplinkMAC
 - admindeeplinkSPO
 search.appverid: MET150
 description: "Learn how to add extra SharePoint file storage in your Microsoft 365 subscription."
@@ -43,7 +45,7 @@ If you start to run out of storage for your SharePoint sites, you can use the Of
 ## Before you begin
 
 - [Find out what type of billing account you have.](manage-billing-accounts.md#view-my-billing-accounts).
-- If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a billing account owner or contributor, or a billing profile owner or contributor to do the tasks in this article. For information about billing account and billing profile roles, see [Understand your Microsoft business billing account](manage-billing-accounts.md) and [Understand your Microsoft business billing profile](billing-and-payments/manage-billing-profiles.md).
+- If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a billing account owner or contributor, or a billing profile owner or contributor to do the tasks in this article. For information about billing account and billing profile roles, see [Understand your Microsoft business billing account](manage-billing-accounts.md) and [Manage your Microsoft business billing profiles](billing-and-payments/manage-billing-profiles.md).
 - If you have a Microsoft Online Subscription Agreement (MOSA), you must be a global or billing admin to do the tasks in this article. For more information, see [About admin roles](../admin/add-users/about-admin-roles.md).
 
 > [!NOTE]

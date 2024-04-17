@@ -25,6 +25,7 @@ ms.custom:
 - OKR_SMB_Videos
 - AdminSurgePortfolio
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid:
 - MET150
 - MOE150
@@ -50,7 +51,7 @@ When you purchase Microsoft 365 Business Basic, you have the option of using a d
 
  ::: moniker range="o365-worldwide"
 
-1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
+1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.cloud.microsoft</a>.
 
 ::: moniker-end
 
@@ -79,14 +80,14 @@ You can add users in the wizard, but you can also [add users later](../add-users
 
 Any users you add in the wizard get automatically assigned a Microsoft 365 Business Basic license.
 
-1. If your Microsoft 365 Business Basic subscription has existing users (for example, if you used Azure AD Connect), you get an option to assign licenses to them now. Go ahead and add licenses to them as well.
+1. If your Microsoft 365 Business Basic subscription has existing users (for example, if you used Microsoft Entra Connect), you get an option to assign licenses to them now. Go ahead and add licenses to them as well.
 
 2. After you've added the users, you'll also get an option to share credentials with the new users you added. You can choose to print them out, email them, or download them.
 
 ## Connect your domain
 
 > [!NOTE]
-> If you chose to use the .onmicrosoft domain, or used Azure AD Connect to set up users, you will not see this step.
+> If you chose to use the .onmicrosoft domain, or used Microsoft Entra Connect to set up users, you will not see this step.
   
 To set up services, you have to update some records at your DNS host or domain registrar.
   

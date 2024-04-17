@@ -1,10 +1,10 @@
 ---
 title: Microsoft Syntex video library
 ms.author: chucked
-author: chuckedmonson
-manager: pamgreen
+author: lkueter
+manager: jtremper
 ms.reviewer: ssquires
-ms.date: 03/06/2023
+ms.date: 03/25/2024
 audience: admin
 ms.topic: conceptual
 ms.custom: 
@@ -14,6 +14,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
+ROBOTS: NOINDEX, NOFOLLOW
 description: Watch videos to learn about some of the different features in Microsoft Syntex.
 ---
 
@@ -26,7 +27,7 @@ description: Watch videos to learn about some of the different features in Micro
 
 |Unstructured models  |Freeform and structured models  |
 |---------|---------|
-|[:::image type="content" source="../media/content-understanding/video-thumbnail-unstructured-document-processing.png" alt-text="Thumbnail image of overview of unstructured document processing video.":::](https://www.microsoft.com/videoplayer/embed/RE4CSu7)<br>[Learn more about unstructured models](document-understanding-overview.md)    |[:::image type="content" source="../media/content-understanding/video-thumbnail-freeform-structured.png" alt-text="Thumbnail image of overview of freeform and structured document processing video.":::](https://www.microsoft.com/videoplayer/embed/RW15YNo)<br>[Learn about freeform and structured models](freeform-document-processing-overview.md)         |
+|[:::image type="content" source="../media/content-understanding/video-thumbnail-unstructured-document-processing.png" alt-text="Thumbnail image of overview of unstructured document processing video.":::](https://www.microsoft.com/videoplayer/embed/RE4CSu7)<br>[Learn more about unstructured models](document-understanding-overview.md)    |[:::image type="content" source="../media/content-understanding/video-thumbnail-freeform-structured.png" alt-text="Thumbnail image of overview of freeform and structured document processing video.":::](https://www.microsoft.com/videoplayer/embed/RW15YNo)<br>[Learn about freeform and structured models](form-processing-overview.md)         |
 
 
 |Create a content center  |Apply a model to a document library  |

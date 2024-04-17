@@ -26,7 +26,7 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 Microsoft 365 Lighthouse lets you search for a specific user across all active tenants. This allows you to find a user quickly without needing to navigate different tenants.
 
-1. In the left navigation pane in Lighthouse, select **Users** > **Account management** > **Search users**.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Users** > **Account management** > **Search users**.
 
 2. In the search box, enter a display name or user principal name (UPN).
 

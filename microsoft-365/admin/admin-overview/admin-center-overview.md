@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: efrene
 author: efrene
 manager: scotv
-ms.date: 08/10/2023
+ms.date: 10/23/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -62,7 +62,7 @@ Here are the features and settings you'll find in the left-hand navigation of th
 |**Setup**|Manage existing domains, turn on and manage multi-factor authentication, manage admin access, migrate user mailboxes to Microsoft 365, manage feature updates, and help users install their Microsoft 365 apps.|
 |**Reports**|See at a glance how your organization is using Microsoft 365 with detailed reports on email use, Microsoft 365 activations, and more. Learn how to use the new [activity reports](../activity-reports/activity-reports.md).|
 |**Health**|View health at a glance. You can also check out more details and the health history. See [How to check service health](../../enterprise/view-service-health.md) and [How to check Windows release health](/windows/deployment/update/check-release-health) for more information. <p> Use Message center to keep track of upcoming changes to features and services. We post announcements there with information that helps you plan for change and understand how it may affect users. Get more details in [Message center](../manage/message-center.md).|
-|**Admin centers**|Open separate admin centers for Exchange, Skype for Business, SharePoint, Viva Engage, and Azure AD. Each admin center includes all available settings for that service. <p> For example, in the Exchange admin center, set up and manage email, calendars, distribution groups, and more. In the SharePoint admin center, create and manage site collections, site settings, and OneDrive for Business. In the Skype for Business admin center, set up instant messaging notifications, dial-in conferencing, and online presence. <p> Learn more about the [Exchange admin center](/exchange/exchange-admin-center) and [SharePoint Admin Center](/sharepoint/sharepoint-online). <p> **Note:** The admin centers available to you depend on your plan and region.|
+|**Admin centers**|Open separate admin centers for Exchange, Skype for Business, SharePoint, Viva Engage, and Microsoft Entra. Each admin center includes all available settings for that service. <p> For example, in the Exchange admin center, set up and manage email, calendars, distribution groups, and more. In the SharePoint admin center, create and manage site collections, site settings, and OneDrive for Business. In the Skype for Business admin center, set up instant messaging notifications, dial-in conferencing, and online presence. <p> Learn more about the [Exchange admin center](/exchange/exchange-admin-center) and [SharePoint Admin Center](/sharepoint/sharepoint-online). <p> **Note:** The admin centers available to you depend on your plan and region.|
 
 ## Two dashboard views
 
@@ -105,7 +105,7 @@ The <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">
 
 Specialist workspaces, like Security or Device management, allow for more granular control. For more information about how the admin centers work together, see [What about the specific types of IT roles and other workspaces like Security, Device Management, or Exchange?](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) in this article.
 
-To get to the Microsoft 365 admin center, go to [admin.microsoft.com](https://admin.microsoft.com) or, if you're already signed in, select the app launcher, and choose **Admin**.
+To get to the Microsoft 365 admin center, go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.cloud.microsoft</a> or, if you're already signed in, select the app launcher, and choose **Admin**.
 
 On the home page, you can create cards for tasks that you perform frequently. To add a new card, select **Add card**, then select the plus sign next to the card you want to add. When you are finished, close the window. You can rearrange the cards by selecting and then dragging them to where you want. To remove a card, select the three dots (more actions), and then choose **Remove**.
 
@@ -125,9 +125,9 @@ For more information on managing billing, passwords, users, and admins, see the 
 
 ## Who is an admin?
 
-By default, the person who signs up for and buys an Microsoft 365 for business subscription gets admin permissions. That person can assign admin permissions to other people to help them manage Microsoft 365 for their organization.
+By default, the person who signs up for and buys a Microsoft 365 for business subscription gets admin permissions. That person can assign admin permissions to other people to help them manage Microsoft 365 for their organization.
 
-If you get the message "**You don't have permission to access this page or perform this action**," you aren't an admin.
+If you get the message "You don't have permission to access this page or perform this action," you aren't an admin.
 
 ### Who has admin permissions in my business?
 
@@ -146,7 +146,7 @@ If you have no idea who to contact at your work or school for help, try asking t
 
 ## Turn on Targeted release
 
-1. Sign in at [admin.microsoft.com](https://admin.microsoft.com), go to the navigation pane and select **Settings** > **Org settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank">**Organization profile** tab</a>.
+1. Sign in at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.cloud.microsoft</a>, go to the navigation pane and select **Settings** > **Org settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank">**Organization profile** tab</a>.
 
 2. Go to the **Release preferences** card, and then select **Edit**.
 
@@ -168,7 +168,7 @@ Microsoft 365 is a complete, intelligent solution that includes Microsoft 365, W
 - Microsoft 365 Enterprise E3
 - Microsoft 365 Enterprise E5
 
-For more information, see [Try or buy a Microsoft 365 for business subscription](../../commerce/try-or-buy-microsoft-365.md). 
+For more information, see [Try or buy a Microsoft 365 for business subscription](../../commerce/try-or-buy-microsoft-365.md).
 
 ### I found a bug or I want to request a feature enhancement. How do I let Microsoft know?
 
@@ -178,7 +178,7 @@ We love to hear from you! Reporting bugs and sharing feedback helps us make the 
 
 ### What about the specific types of IT roles and other workspaces like Security, Device Management, or Exchange?
 
-The <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> is the common entry point for all teams and roles managing Microsoft 365. The experience, information, and controls are tailored and customizable for each admin and role. Additionally, specialist workspaces allow for deep, granular control. These specialist workspaces include SharePoint, Teams &amp; Skype, Exchange, Security, Compliance, Device Management, and Azure Active Directory. You can find the specialist workspaces from the navigation pane in the Microsoft 365 admin center at [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339).
+The <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> is the common entry point for all teams and roles managing Microsoft 365. The experience, information, and controls are tailored and customizable for each admin and role. Additionally, specialist workspaces allow for deep, granular control. These specialist workspaces include SharePoint, Teams &amp; Skype, Exchange, Security, Compliance, Device Management, and Microsoft Entra ID. You can find the specialist workspaces from the navigation pane in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
 ### What language options are available the Admin Center?
 

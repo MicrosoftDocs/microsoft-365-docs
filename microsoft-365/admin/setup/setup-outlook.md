@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 11/17/2020
+ms.date: 09/14/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -20,10 +20,6 @@ ms.custom:
 - VSBFY23
 - AdminSurgePortfolio
 - adminvideo
-search.appverid:
-- BCS160
-- MET150
-- MOE150
 description: "Learn how to set up Outlook for your Microsoft 365 email."
 ---
 # Set up Outlook for Microsoft 365 for business email

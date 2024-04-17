@@ -97,7 +97,7 @@ We also provide supporting information that helps you gain additional visibility
 
 This chart shows the trend-line of the devices running supported versions and latest versions of Microsoft 365 apps over the last 180 days.
 
-:::image type="content" source="../../media/trendline-devices-supportedversions.png" alt-text="Chart that showa how many devices run supported and latest versions of apps over time.":::
+:::image type="content" source="../../media/trendline-devices-supportedversions.png" alt-text="Chart that shows how many devices run supported and latest versions of apps over time.":::
 
 ## Devices in your organization
 

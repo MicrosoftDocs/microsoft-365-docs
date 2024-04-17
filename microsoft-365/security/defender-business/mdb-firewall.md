@@ -2,13 +2,12 @@
 title: Firewall in Microsoft Defender for Business
 description: Learn about Windows Defender Firewall settings in Defender for Business. Firewall can help prevent unwanted network traffic from flowing to your company devices.
 search.appverid: MET150
-author: denisebmsft
-ms.author: deniseb
-manager: dansimp 
+author: siosulli
+ms.author: siosulli
+manager: deniseb 
 audience: Admin
 ms.topic: overview
-ms.service: microsoft-365-security
-ms.subservice: mdb
+ms.service: defender-business
 ms.localizationpriority: medium
 ms.date: 05/04/2023
 ms.reviewer: nehabha
@@ -33,11 +32,11 @@ You can use firewall protection to specify whether to allow or to block connecti
 
 ## View or edit your firewall policies and custom rules
 
-Depending on whether you're using the Microsoft 365 Defender portal or Intune to manage your firewall protection, use one of the following procedures.
+Depending on whether you're using the Microsoft Defender portal or Intune to manage your firewall protection, use one of the following procedures.
 
 | Portal | Procedure |
 |:---|:---|
-| Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) |1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.<br/>2. In the navigation pane, choose **Device configuration**. Policies are organized by operating system and policy type.<br/>3. Select an operating system tab (such as **Windows clients**).<br/>4. Expand **Firewall** to view your list of policies.<br/>5. Select a policy to view the details. <br/><br/>To make changes or to learn more about policy settings, see the following articles:<br/>- [View or edit device policies](mdb-view-edit-policies.md)<br/>- [Firewall settings](mdb-firewall.md)<br/>- [Manage your custom rules for firewall policies](mdb-firewall.md)  |
+| Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) |1. Go to the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.<br/>2. In the navigation pane, choose **Device configuration**. Policies are organized by operating system and policy type.<br/>3. Select an operating system tab (such as **Windows clients**).<br/>4. Expand **Firewall** to view your list of policies.<br/>5. Select a policy to view the details. <br/><br/>To make changes or to learn more about policy settings, see the following articles:<br/>- [View or edit device policies](mdb-view-edit-policies.md)<br/>- [Firewall settings](mdb-firewall.md)<br/>- [Manage your custom rules for firewall policies](mdb-firewall.md)  |
 | Microsoft Intune admin center ([https://intune.microsoft.com](https://intune.microsoft.com)) |1. Go to [https://intune.microsoft.com](https://intune.microsoft.com) and sign in. You're now in the Intune admin center.<br/>2. Select **Endpoint security**.<br/>3. Select **Firewall** to view your policies in that category. Custom rules that are defined for firewall protection are listed as separate policies. <br/><br/>For help with managing your security settings in Intune, start with [Manage endpoint security in Microsoft Intune](/mem/intune/protect/endpoint-security).|
 
 ## Manage your custom rules for firewall policies in Microsoft Defender for Business
@@ -46,7 +45,7 @@ You can use custom rules to define exceptions for your firewall policies. That i
 
 ### Create a custom rule for a firewall policy
 
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+1. Go to the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
 2. Go to **Endpoints** > **Device configuration**, and review the list of policies.
 
@@ -69,7 +68,7 @@ You can use custom rules to define exceptions for your firewall policies. That i
 
 ### Edit a custom rule for a firewall policy
 
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+1. Go to the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
 2. Go to **Endpoints** > **Device configuration**, and review the list of policies.
 
@@ -94,7 +93,7 @@ You can use custom rules to define exceptions for your firewall policies. That i
 
 ### Delete a custom rule
 
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+1. Go to the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
 2. Go to **Endpoints** > **Device configuration**, and review the list of policies.
 
@@ -134,3 +133,4 @@ Defender for Business includes firewall protection through Windows Defender Fire
 - [View and manage incidents in Defender for Business](mdb-view-manage-incidents.md)
 - [Respond to and mitigate threats in Defender for Business](mdb-respond-mitigate-threats.md)
 - [Review remediation actions in the Action center](mdb-review-remediation-actions.md)
+

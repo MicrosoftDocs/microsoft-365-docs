@@ -30,7 +30,7 @@ Lighthouse uses sign-in activity to detect inactive users accounts. The **Inacti
 
 ## Review inactive users
 
-1. In the left navigation pane in Lighthouse, select **Users** > **Account management** > **Inactive users**.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Users** > **Account management** > **Inactive users**.
 
 2. On the **Inactive Users** tab, set filters to the desired result.
 
@@ -42,7 +42,7 @@ Lighthouse uses sign-in activity to detect inactive users accounts. The **Inacti
 
 ## Block sign-in for multiple user accounts
 
-1. In the left navigation pane in Lighthouse, select **Users** > **Account management** > **Inactive users**.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Users** > **Account management** > **Inactive users**.
 
 2. On the **Inactive users** tab, expand any tenant in the list to see a list of inactive users within the tenant, select the users you want to block, and then select **Block sign-in**.
 
@@ -52,4 +52,4 @@ Lighthouse uses sign-in activity to detect inactive users accounts. The **Inacti
 
 ## Related content
 
-[How to manage inactive user accounts in Azure AD](/azure/active-directory/reports-monitoring/howto-manage-inactive-user-accounts) (article)
+[How to manage inactive user accounts in Microsoft Entra ID](/azure/active-directory/reports-monitoring/howto-manage-inactive-user-accounts) (article)

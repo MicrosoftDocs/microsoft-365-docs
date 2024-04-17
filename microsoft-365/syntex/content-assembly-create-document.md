@@ -2,12 +2,13 @@
 title: Create a document from a modern template in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 audience: admin
 ms.reviewer: anrasto, shrganguly
-ms.date: 09/30/2022
+ms.date: 04/12/2024
 ms.topic: conceptual
 ms.service: microsoft-syntex
+ms.subservice: syntex-content-intelligence
 search.appverid:
 ms.collection:
     - enabler-strategic

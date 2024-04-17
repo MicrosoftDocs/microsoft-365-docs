@@ -5,7 +5,7 @@ f1.keywords:
   - NOCSH
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 audience: Admin
 ms.topic: conceptual
 ms.localizationpriority: medium
@@ -19,16 +19,15 @@ ms.collection:
   - tier1
 ms.custom: migrationguides
 description: "Prerequisite steps for migrating from a third-party protection service or device to Microsoft Defender for Office 365 protection."
-ms.subservice: mdo
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 ms.date: 6/15/2023
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 2</a>
 ---
 
 # Migrate to Microsoft Defender for Office 365 - Phase 1: Prepare
 
-<br>
+<br/>
 
 |:::image type="content" source="../../media/phase-diagrams/prepare.png" alt-text="Phase 1: Prepare." lightbox="../../media/phase-diagrams/prepare.png"::: <br> Phase 1: Prepare|[:::image type="content" source="../../media/phase-diagrams/setup.png" alt-text="Phase 2: Set up." lightbox="../../media/phase-diagrams/setup.png":::](migrate-to-defender-for-office-365-setup.md) <br> [Phase 2: Set up](migrate-to-defender-for-office-365-setup.md)|[:::image type="content" source="../../media/phase-diagrams/onboard.png" alt-text="Phase 3: Onboard." lightbox="../../media/phase-diagrams/onboard.png":::](migrate-to-defender-for-office-365-onboard.md) <br> [Phase 3: Onboard](migrate-to-defender-for-office-365-onboard.md)|
 |---|---|---|
@@ -97,7 +96,7 @@ Microsoft is working with the industry to support the Authenticated Received Cha
 
 ## Account for any active phishing simulations
 
-If you have active third-party phishing simulations, you need to prevent the messages, links, and attachments from being identified as phishing by Defender for Office 365. For more information, see [Configure third-party phishing simulations in the advanced delivery policy](skip-filtering-phishing-simulations-sec-ops-mailboxes.md#use-the-microsoft-365-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy).
+If you have active third-party phishing simulations, you need to prevent the messages, links, and attachments from being identified as phishing by Defender for Office 365. For more information, see [Configure third-party phishing simulations in the advanced delivery policy](advanced-delivery-policy-configure.md#use-the-microsoft-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy).
 
 ## Define spam and bulk user experiences
 

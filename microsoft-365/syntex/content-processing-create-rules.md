@@ -2,9 +2,9 @@
 title: Create a rule to move or copy a file from one document library to another in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: ssquires
-ms.date: 01/10/2023
+ms.date: 04/12/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex

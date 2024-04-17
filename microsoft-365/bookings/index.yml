@@ -10,14 +10,15 @@ metadata:
   description: Learn how to set up Microsoft Bookings to provide services to customers on an appointment basis. # Required; article description that is displayed in search results. < 160 chars.
   ms.service: bookings #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: hub-page # Required
-  author: dmaguire #Required; your GitHub user alias, with correct capitalization.
+  author: camillepack #Required; your GitHub user alias, with correct capitalization.
   ms.author: camillepack #Required; microsoft alias of author; optional team alias.
   manager: scotv
   audience: Admin
   ms.localizationpriority: high
   ms.collection: 
   - scotvorg
-  ms.date: 09/04/2020 #Required; mm/dd/yyyy format.
+  - essentials-navigation
+  ms.date: 03/29/2024 #Required; mm/dd/yyyy format.
 
 
 
@@ -36,7 +37,7 @@ additionalContent:
           url: bookings-overview.md
         # Card
         - title: Enter your business information
-          summary: Enter your create your About Us page, including business name, address, phone number, website URL, logo, and business hours in Microsoft Bookings.
+          summary: Create your About Us page, including business name, address, phone number, website URL, logo, and business hours in Microsoft Bookings.
           url: enter-business-information.md
         # Card
         - title: Customize and publish your booking page

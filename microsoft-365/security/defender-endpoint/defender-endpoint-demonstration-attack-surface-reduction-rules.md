@@ -1,35 +1,32 @@
 ---
 title: Microsoft Defender for Endpoint attack surface reduction rules demonstrations
 description: See how attack surface reduction rules block various known threat types.
-keywords: Microsoft Defender for Endpoint demonstration, attack surface reduction rules demonstration, ASR rules, demonstration
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.mktglfcycl: evaluation
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp 
-author: dansimp
+ms.service: defender-endpoint
+ms.author: siosulli 
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security
 - tier2
 - demo
 ms.topic: article
-ms.subservice: mde
-ms.date: 10/21/2022
+ms.subservice: asr
+ms.date: 01/15/2024
 ---
 
 # Attack surface reduction rules demonstrations
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Business](https://www.microsoft.com/security/business/endpoint-security/microsoft-defender-business)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows)
 
-Attack Surface Reduction (ASR) rules target specific behaviors that are typically used by malware and malicious apps to infect machines, such as:
+Attack surface reduction rules target specific behaviors that are typically used by malware and malicious apps to infect machines, such as:
 
 - Executable files and scripts used in Office apps or web mail that attempt to download or run files
 - Scripts that are obfuscated or otherwise suspicious
@@ -37,13 +34,14 @@ Attack Surface Reduction (ASR) rules target specific behaviors that are typicall
 
 ## Scenario requirements and setup
 
-- Windows 10 1709 build 16273
-- Windows 10 1803 build (1803 rules)
-- Microsoft Defender AV
-- Microsoft Office (required for Office rules and sample)
-- [Download ASR PowerShell scripts](https://demo.wd.microsoft.com/Content/WindowsDefender_ASR_scripts.zip)
+- Windows 11, Windows 10 1709 build 16273 or later
+- Windows Server 2022, Windows Server 2019, Windows Server 2016, or Windows Server 2012 R2 with the unified MDE client.
+- Microsoft Defender Antivirus
+- Microsoft 365 Apps (Office; required for Office rules and sample)
+- [Download attack surface reduction PowerShell scripts](https://demo.wd.microsoft.com/Content/WindowsDefender_ASR_scripts.zip)
 
 ## PowerShell commands
+
 
 ```powershell
 Add-MpPreference -AttackSurfaceReductionRules_Ids BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550 -AttackSurfaceReductionRules_Actions Enabled
@@ -57,6 +55,10 @@ Add-MpPreference -AttackSurfaceReductionRules_Ids D1E49AAC-8F56-4280-B9BA-993A6D
 Add-MpPreference -AttackSurfaceReductionRules_Ids B2B3F03D-6A65-4F7B-A9C7-1C7EF74A9BA4 -AttackSurfaceReductionRules_Actions Enabled
 Add-MpPreference -AttackSurfaceReductionRules_Ids C1DB55AB-C21A-4637-BB3F-A12568109D35 -AttackSurfaceReductionRules_Actions Enabled
 Add-MpPreference -AttackSurfaceReductionRules_Ids 01443614-CD74-433A-B99E-2ECDC07BFC25 -AttackSurfaceReductionRules_Actions Enabled
+Add-MpPreference -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Enabled
+Add-MpPreference -AttackSurfaceReductionRules_Ids 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2 -AttackSurfaceReductionRules_Actions Enabled
+Add-MpPreference -AttackSurfaceReductionRules_Ids e6db77e5-3df2-4cf1-b95a-636979351e5b -AttackSurfaceReductionRules_Actions Enabled
+Add-MpPreference -AttackSurfaceReductionRules_Ids a8f5898e-1dc8-49a9-9878-85004b8a61e6 -AttackSurfaceReductionRules_Actions Enabled
 Add-MpPreference -AttackSurfaceReductionRules_Ids 26190899-1602-49E8-8B27-EB1D0A1CE869 -AttackSurfaceReductionRules_Actions AuditMode
 Add-MpPreference -AttackSurfaceReductionRules_Ids 7674BA52-37EB-4A4F-A9A1-F0F9A1619A2C -AttackSurfaceReductionRules_Actions AuditMode
 ```
@@ -78,22 +80,26 @@ Get-MpPreference
 
 ## Test files
 
-Note - some test files have multiple exploits embedded and will trigger multiple rules
+Note - some test files have multiple exploits embedded and triggers multiple rules
 
-| Rule name | Rule GUID | Windows version |
-|:---|:---|:---|
-| Block executable content from email client and webmail | BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550 | 1709 |
-| [Block Office applications from creating child processes](https://demo.wd.microsoft.com/Content/TestFile_OfficeChildProcess_D4F940AB-401B-4EFC-AADC-AD5F3C50688A.docm) | D4F940AB-401B-4EFC-AADC-AD5F3C50688A | 1709 |
-| [Block Office applications from creating executable content](https://demo.wd.microsoft.com/Content/TestFile_Block_Office_applications_from_creating_executable_content_3B576869-A4EC-4529-8536-B80A7769E899.docm) | 3B576869-A4EC-4529-8536-B80A7769E899 | 1709 |
-| Block Office applications from injecting into other processes | 75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84 | 1709 |
-| [Impede JavaScript and VBScript to launch executables](https://demo.wd.microsoft.com/Content/TestFile_Impede_JavaScript_and_VBScript_to_launch_executables_D3E037E1-3EB8-44C8-A917-57927947596D.js) | D3E037E1-3EB8-44C8-A917-57927947596D | 1709 |
-| Block execution of potentially obfuscated scripts | 5BEB7EFE-FD9A-4556-801D-275E5FFC04CC | 1709 |
-| [Block Win32 imports from Macro code in Office](https://demo.wd.microsoft.com/Content/Block_Win32_imports_from_Macro_code_in_Office_92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B.docm) | 92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B | 1709 |
-|[{Block Process Creations originating from PSExec & WMI commands](https://demo.wd.microsoft.com/Content/TestFile_PsexecAndWMICreateProcess_D1E49AAC-8F56-4280-B9BA-993A6D77406C.vbs) | D1E49AAC-8F56-4280-B9BA-993A6D77406C | 1803 |
-| [Block Execution of untrusted or unsigned executables inside removable USB media](https://demo.wd.microsoft.com/Content/UNSIGNED_ransomware_test_exe.exe) | B2B3F03D-6A65-4F7B-A9C7-1C7EF74A9BA4 | 1803 |
-| Aggressive Ransomware Prevention | C1DB55AB-C21A-4637-BB3F-A12568109D35 | 1803 |
-| Block executable files from running unless they meet a prevalence, age, or trusted list criteria | 01443614-CD74-433A-B99E-2ECDC07BFC25 | 1803 |
-| Block Adobe Reader from creating child processes | 7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c | 1803 |
+| Rule name | Rule GUID | 
+|:---|:---|
+| Block executable content from email client and webmail | BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550 |
+| [Block Office applications from creating child processes](https://demo.wd.microsoft.com/Content/TestFile_OfficeChildProcess_D4F940AB-401B-4EFC-AADC-AD5F3C50688A.docm) | D4F940AB-401B-4EFC-AADC-AD5F3C50688A |
+| [Block Office applications from creating executable content](https://demo.wd.microsoft.com/Content/TestFile_Block_Office_applications_from_creating_executable_content_3B576869-A4EC-4529-8536-B80A7769E899.docm) | 3B576869-A4EC-4529-8536-B80A7769E899 | 
+| Block Office applications from injecting into other processes | 75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84 | 
+| [Impede JavaScript and VBScript to launch executables](https://demo.wd.microsoft.com/Content/TestFile_Impede_JavaScript_and_VBScript_to_launch_executables_D3E037E1-3EB8-44C8-A917-57927947596D.js) | D3E037E1-3EB8-44C8-A917-57927947596D |  
+| Block execution of potentially obfuscated scripts | 5BEB7EFE-FD9A-4556-801D-275E5FFC04CC | 
+| [Block Win32 imports from Macro code in Office](https://demo.wd.microsoft.com/Content/Block_Win32_imports_from_Macro_code_in_Office_92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B.docm) | 92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B |  
+|[{Block Process Creations originating from PSExec & WMI commands](https://demo.wd.microsoft.com/Content/TestFile_PsexecAndWMICreateProcess_D1E49AAC-8F56-4280-B9BA-993A6D77406C.vbs) | D1E49AAC-8F56-4280-B9BA-993A6D77406C | 
+| [Block Execution of untrusted or unsigned executables inside removable USB media](https://demo.wd.microsoft.com/Content/UNSIGNED_ransomware_test_exe.exe) | B2B3F03D-6A65-4F7B-A9C7-1C7EF74A9BA4 |  
+| Aggressive Ransomware Prevention | C1DB55AB-C21A-4637-BB3F-A12568109D35 |  
+| Block executable files from running unless they meet a prevalence, age, or trusted list criteria | 01443614-CD74-433A-B99E-2ECDC07BFC25 | 
+| Block Adobe Reader from creating child processes | 7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c | 
+| Block abuse of exploited vulnerable signed drivers | 56a863a9-875e-4185-98a7-b882c64b5ce5 | 
+| Block credential stealing from the Windows local security authority subsystem (lsass.exe) | 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2 | 
+| Block persistence through WMI event subscription | e6db77e5-3df2-4cf1-b95a-636979351e5b | 
+| Block Webshell creation for Servers | a8f5898e-1dc8-49a9-9878-85004b8a61e6 | 
 
 ## Scenarios
 
@@ -110,12 +116,12 @@ You can perform these manual steps instead:
 
 1. Create a folder under c: named demo, "c:\demo"
 2. Save this [clean file](https://demo.wd.microsoft.com/Content/testfile_safe.txt) into c:\demo.
-3. Enable all rules using the powershell commands above.
+3. Enable all rules using the PowerShell command.
 
-### Scenario 1: ASR blocks a test file with multiple vulnerabilities
+### Scenario 1: Attack surface reduction blocks a test file with multiple vulnerabilities
 
-1. Enable all rules in block mode using the PowerShell commands above (you can copy paste all)
-2. Download and open any of the test file/documents linked above, enable editing and content if prompted.
+1. Enable all rules in block mode using the PowerShell commands (you can copy paste all)
+2. Download and open any of the test file/documents, and enable editing and content, if prompted.
 
 #### Scenario 1 expected results
 
@@ -123,18 +129,21 @@ You should immediately see an "Action blocked" notification.
 
 ### Scenario 2: ASR rule blocks the test file with the corresponding vulnerability
 
-1. Configure the rule you want to test using the PowerShell command from above.
-2. Example: `Add-MpPreference -AttackSurfaceReductionRules_Ids D4F940AB-401B-4EfC-AADC-AD5F3C50688A -AttackSurfaceReductionRules_Actions Enabled`
-3. Download and open the test file/document for the rule you want to test linked above, enable editing and content if prompted
-4. Example: [Block Office applications from creating child processes](https://demo.wd.microsoft.com/Content/ransomware_testfile_doc.docm) D4F940AB-401B-4EFC-AADC-AD5F3C50688A
+1. Configure the rule you want to test using the PowerShell command from the previous step. 
+
+   Example: `Add-MpPreference -AttackSurfaceReductionRules_Ids D4F940AB-401B-4EfC-AADC-AD5F3C50688A -AttackSurfaceReductionRules_Actions Enabled`
+
+2. Download and open the test file/document for the rule you want to test, and enable editing and content, if prompted.
+
+   Example: [Block Office applications from creating child processes](https://demo.wd.microsoft.com/Content/ransomware_testfile_doc.docm) D4F940AB-401B-4EFC-AADC-AD5F3C50688A
 
 #### Scenario 2 expected results
 
 You should immediately see an "Action blocked" notification.
 
-### Scenario 3 (1803): ASR rule blocks unsigned USB content from executing
+### Scenario 3 (Windows 10 or later): ASR rule blocks unsigned USB content from executing
 
-1. Configure the rule for USB protection (B2B3F03D-6A65-4F7B-A9C7-1C7EF74A9BA4).
+1. Configure the rule for USB protection (`B2B3F03D-6A65-4F7B-A9C7-1C7EF74A9BA4`).
 
 ```powershell
 Add-MpPreference -AttackSurfaceReductionRules_Ids B2B3F03D-6A65-4F7B-A9C7-1C7EF74A9BA4 -AttackSurfaceReductionRules_Actions Enabled
@@ -146,14 +155,15 @@ Add-MpPreference -AttackSurfaceReductionRules_Ids B2B3F03D-6A65-4F7B-A9C7-1C7EF7
 
 You should immediately see an "Action blocked" notification.
 
-### Scenario 4: What would happen without ASR
+### Scenario 4: What would happen without attack surface reduction
 
-1. Turn off all ASR rules using PowerShell commands below in the cleanup section
-2. Download any test file/document linked above, enable editing and content if prompted
+1. Turn off all attack surface reduction rules using PowerShell commands in the cleanup section.
+
+2. Download any test file/document, and enable editing and content, if prompted.
 
 #### Scenario 4 expected results
 
-- The files in c:\demo will be encrypted and you should get a warning message
+- The files in c:\demo are encrypted and you should get a warning message
 - Execute the test file again to decrypt the files
 
 ## Clean-up
@@ -174,11 +184,15 @@ Add-MpPreference -AttackSurfaceReductionRules_Ids D1E49AAC-8F56-4280-B9BA-993A6D
 Add-MpPreference -AttackSurfaceReductionRules_Ids B2B3F03D-6A65-4F7B-A9C7-1C7EF74A9BA4 -AttackSurfaceReductionRules_Actions Disabled
 Add-MpPreference -AttackSurfaceReductionRules_Ids C1DB55AB-C21A-4637-BB3F-A12568109D35 -AttackSurfaceReductionRules_Actions Disabled
 Add-MpPreference -AttackSurfaceReductionRules_Ids 01443614-CD74-433A-B99E-2ECDC07BFC25 -AttackSurfaceReductionRules_Actions Disabled
+Add-MpPreference -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Disabled
+Add-MpPreference -AttackSurfaceReductionRules_Ids 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2 -AttackSurfaceReductionRules_Actions Disabled
+Add-MpPreference -AttackSurfaceReductionRules_Ids e6db77e5-3df2-4cf1-b95a-636979351e5b -AttackSurfaceReductionRules_Actions Disabled
+Add-MpPreference -AttackSurfaceReductionRules_Ids a8f5898e-1dc8-49a9-9878-85004b8a61e6 -AttackSurfaceReductionRules_Actions Disabled
 Add-MpPreference -AttackSurfaceReductionRules_Ids 26190899-1602-49E8-8B27-EB1D0A1CE869 -AttackSurfaceReductionRules_Actions Disabled
 Add-MpPreference -AttackSurfaceReductionRules_Ids 7674BA52-37EB-4A4F-A9A1-F0F9A1619A2C -AttackSurfaceReductionRules_Actions Disabled
 ```
 
-Cleanup c:\demo encryption run the [encrypt/decrypt file](https://demo.wd.microsoft.com/Content/ransomware_cleanup_encrypt_decrypt.exe)
+Clean up **c:\demo** encryption by running the [encrypt/decrypt file](https://demo.wd.microsoft.com/Content/ransomware_cleanup_encrypt_decrypt.exe)
 
 ## See also
 
@@ -187,4 +201,5 @@ Cleanup c:\demo encryption run the [encrypt/decrypt file](https://demo.wd.micros
 [Attack surface reduction rules reference](attack-surface-reduction-rules-reference.md)
 
 [Microsoft Defender for Endpoint - demonstration scenarios](defender-endpoint-demonstrations.md)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

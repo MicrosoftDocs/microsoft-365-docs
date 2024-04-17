@@ -2,34 +2,30 @@
 title: Track and respond to emerging threats with Microsoft Defender for Endpoint threat analytics
 ms.reviewer:
 description: Understand emerging threats and attack techniques and how to stop them. Assess their impact to your organization and evaluate your organizational resilience.
-keywords: threat analytics, risk evaluation, OS mitigation, microcode mitigation, mitigation status
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.service: defender-endpoint
 ms.author: maccruz
 author: schmurky
 ms.localizationpriority: medium
-manager: dansimp
+manager: dolmont
 audience: ITPro
 ms.collection:
   - m365-security
   - m365initiative-defender-endpoint
   - tier1
+  - mde-edr
 ms.topic: conceptual
-ms.subservice: mde
-ms.date: 12/18/2020
+ms.subservice: edr
+ms.date: 12/18/2023
 ---
 
 # Track and respond to emerging threats through threat analytics
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -54,9 +50,9 @@ Watch this short video to learn more about how threat analytics can help you tra
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bw1f]
 
 ## Required roles and permissions
-The following table outlines the roles and permissions required to access Threat Analytics. Roles defined in the table below refer to custom roles in individual portals and are not connected to global roles in Azure AD, even if similarly named.
+The following table outlines the roles and permissions required to access Threat Analytics. Roles defined in the table below refer to custom roles in individual portals and are not connected to global roles in Microsoft Entra ID, even if similarly named.
 
-| **One of the following roles are required for Microsoft 365 Defender**  | **One of the following roles are required for Defender for Endpoint**  | **One of the following roles are required for Defender for Office 365** | **One of the following roles are required for Defender for Cloud Apps** | 
+| **One of the following roles are required for Microsoft Defender XDR**  | **One of the following roles are required for Defender for Endpoint**  | **One of the following roles are required for Defender for Office 365** | **One of the following roles are required for Defender for Cloud Apps** | 
 |---------|---------|---------|---------|
 | Threat Analytics | Alerts and incidents data: <ul><li>View data- security operations</li></ul>Defender Vulnerability Management mitigations:<ul><li>View data - Threat and vulnerability management</li></ul> | Alerts and incidents data:<ul> <li>View-only manage alerts</li> <li>Manage alerts</li> <li>Organization configuration</li><li>Audit logs</li> <li>View-only audit logs</li><li>Security reader</li> <li>Security admin</li><li>View-only recipients</li> </ul> Prevented email attempts: <ul><li>Security reader</li> <li>Security admin</li><li>View-only recipients</li> | Not available for Defender for Cloud Apps or MDI users |
 
@@ -70,7 +66,7 @@ The threat analytics dashboard is a great jump off point for getting to the repo
 
 Select a threat from the dashboard to view the report for that threat.
 
-:::image type="content" source="images/ta_dashboard.png" alt-text="The threat analytics dashboard" lightbox="images/ta_dashboard.png":::
+:::image type="content" source="media/ta-dashboard.png" alt-text="The threat analytics dashboard" lightbox="media/ta-dashboard.png":::
 
 ## View a threat analytics report
 
@@ -80,7 +76,7 @@ Each threat analytics report provides information in three sections: **Overview*
 
 The **Overview** section provides a preview of the detailed analyst report. It also provides charts that highlight the impact of the threat to your organization and your exposure through misconfigured and unpatched devices.
 
-:::image type="content" source="images/ta-overview.png" alt-text="The Overview section of a threat analytics report" lightbox="images/ta-overview.png":::
+:::image type="content" source="media/ta-overview.png" alt-text="The Overview section of a threat analytics report" lightbox="media/ta-overview.png":::
 _Overview section of a threat analytics report_
 
 #### Assess the impact to your organization
@@ -116,7 +112,7 @@ In the **Mitigations** section, review the list of specific actionable recommend
 
 Mitigation information in this section incorporates data from [Microsoft Defender Vulnerability Management](next-gen-threat-and-vuln-mgt.md), which also provides detailed drill-down information from various links in the report.
 
-:::image type="content" source="images/ta-mitigations.png" alt-text="The Mitigations section of a threat analytics report" lightbox="images/ta-mitigations.png":::
+:::image type="content" source="media/ta-mitigations.png" alt-text="The Mitigations section of a threat analytics report" lightbox="media/ta-mitigations.png":::
 
 
 _Mitigations section of a threat analytics report_

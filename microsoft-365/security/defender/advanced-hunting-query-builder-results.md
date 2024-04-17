@@ -1,14 +1,9 @@
 ---
-title: Work with query results in guided mode for hunting in Microsoft 365 Defender
-description: Use and customize query results in guided mode for advanced hunting in Microsoft 365 Defender
-keywords: guided mode, advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, custom detections, schema, kusto
-search.product: eADQiWindows 10XVcnh
+title: Work with query results in guided mode for hunting in Microsoft Defender XDR
+description: Use and customize query results in guided mode for advanced hunting in Microsoft Defender XDR
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: m365d
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.service: defender-xdr
+ms.subservice: adv-hunting
 f1.keywords:
   - NOCSH
 ms.author: maccruz
@@ -20,15 +15,15 @@ ms.collection:
   - m365-security
   - tier2
 ms.topic: conceptual
-ms.date: 08/11/2022
+ms.date: 08/11/2023
 ---
 
 # Work with query results in guided mode
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -63,4 +58,4 @@ To view more columns:
 - [Advanced hunting quotas and usage parameters](advanced-hunting-limits.md)
 - [Switch to advanced mode](advanced-hunting-query-builder-details.md#switch-to-advanced-mode-after-building-a-query)
 - [Refine your query in guided mode](advanced-hunting-query-builder-details.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

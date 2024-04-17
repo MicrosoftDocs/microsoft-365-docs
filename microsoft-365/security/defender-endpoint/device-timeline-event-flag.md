@@ -2,32 +2,29 @@
 title: Microsoft Defender for Endpoint device timeline
 description: Use Microsoft Defender for Endpoint device timeline and timeline event flags.
 keywords: Defender for Endpoint device timeline, event flags
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
+ms.reviewer: efratka, alonshar
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier2
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: edr
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 11/06/2023
 ---
 
 # Microsoft Defender for Endpoint device timeline
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!NOTE]
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
@@ -36,26 +33,26 @@ The Defender for Endpoint device timeline helps you research and investigate ano
 
 - Custom time range picker:
 
-    :::image type="content" source="images/custom-time-range.png" alt-text="Screenshot of the custom time range.":::
+    :::image type="content" source="media/custom-time-range.png" alt-text="Screenshot of the custom time range.":::
 
 - Process tree experience – event side panel:
 
-    :::image type="content" source="images/event-side-panel.png" alt-text="Screenshot of the event side panel." lightbox="images/event-side-panel.png":::
+    :::image type="content" source="media/event-side-panel.png" alt-text="Screenshot of the event side panel." lightbox="media/event-side-panel.png":::
 
    
-- All MITRE techniques are shown when there's more than 1 related technique:
+- All MITRE techniques are shown when there's more than one related technique:
 
-    :::image type="content" source="images/new-timeline-mitre-techniques.png" alt-text="Screenshot of all MITRE techniques. " lightbox="images/new-timeline-mitre-techniques.png":::
+    :::image type="content" source="media/new-timeline-mitre-techniques.png" alt-text="Screenshot of all MITRE techniques. " lightbox="media/new-timeline-mitre-techniques.png":::
 
 - Timeline events are linked to the new user page:
 
-    :::image type="content" source="images/new-timeline-user.png" alt-text="Screenshot of timeline events linked to the new user page." lightbox="images/new-timeline-user.png":::
+    :::image type="content" source="media/new-timeline-user.png" alt-text="Screenshot of timeline events linked to the new user page." lightbox="media/new-timeline-user.png":::
 
-    :::image type="content" source="images/new-timeline-user-details.png" alt-text="Screenshot of timeline events linked to the new user page 2." lightbox="images/new-timeline-user-details.png":::
+    :::image type="content" source="media/new-timeline-user-details.png" alt-text="Screenshot of timeline events linked to the new user page 2." lightbox="media/new-timeline-user-details.png":::
 
 - Defined filters are now visible at the top of the timeline: 
 
-    :::image type="content" source="images/new-timeline-highlight.png" alt-text="Screenshot of defined filters." lightbox="images/new-timeline-highlight.png":::
+    :::image type="content" source="media/new-timeline-highlight.png" alt-text="Screenshot of defined filters." lightbox="media/new-timeline-highlight.png":::
 
 ## Techniques in the device timeline
 
@@ -66,13 +63,13 @@ You can gain more insight in an investigation by analyzing the events that happe
 > [!IMPORTANT]
 > Some information relates to a prereleased product feature in public preview which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-In Microsoft Defender for Endpoint, **Techniques** are an additional data type in the event timeline. Techniques provide more insight on activities associated with [MITRE ATT&CK](https://attack.mitre.org/) techniques or sub-techniques.
+In Microsoft Defender for Endpoint, **Techniques** are an additional data type in the event timeline. Techniques provide more insight on activities associated with [MITRE ATT&CK](https://attack.mitre.org/) techniques or subtechniques.
 
 This feature simplifies the investigation experience by helping analysts understand the activities that were observed on a device. Analysts can then decide to investigate further.
 
-For public preview, Techniques are available by default and shown together with events when a device's timeline is viewed.
+During preview, Techniques are available by default and shown together with events when a device's timeline is viewed.
 
-:::image type="content" source="images/new-timeline-mitre-techniques.png" alt-text="Screenshot of all MITRE techniques." lightbox="images/new-timeline-mitre-techniques.png":::
+:::image type="content" source="media/new-timeline-mitre-techniques.png" alt-text="Screenshot of all MITRE techniques." lightbox="media/new-timeline-mitre-techniques.png":::
 
 Techniques are highlighted in bold text and appear with a blue icon on the left. The corresponding MITRE ATT&CK ID and technique name also appear as tags under Additional information.
 
@@ -86,19 +83,19 @@ Select the specific *Attack technique* to open the related ATT&CK technique page
 
 You can copy an entity's details when you see a blue icon on the right. For instance, to copy a related file's SHA1, select the blue page icon.
 
-:::image type="content" source="images/new-timeline-process-tree.png" alt-text="Screenshot that shows the copy entity details." lightbox="images/new-timeline-process-tree.png":::
+:::image type="content" source="media/new-timeline-process-tree.png" alt-text="Screenshot that shows the copy entity details." lightbox="media/new-timeline-process-tree.png":::
 
-:::image type="content" source="images/new-timeline-side-panel-1.png" alt-text="Screenshot that shows the side pane details." lightbox="images/new-timeline-side-panel-1.png":::
+:::image type="content" source="media/new-timeline-side-panel-1.png" alt-text="Screenshot that shows the side pane details." lightbox="media/new-timeline-side-panel-1.png":::
 
 You can do the same for command lines.
 
-:::image type="content" source="images/techniques-side-pane-command-1.png" alt-text="Screenshot that shows the option to copy command line." lightbox="images/techniques-side-pane-command-1.png":::
+:::image type="content" source="media/techniques-side-pane-command-1.png" alt-text="Screenshot that shows the option to copy command line." lightbox="media/techniques-side-pane-command-1.png":::
 
 ### Investigate related events
 
 To use [advanced hunting](advanced-hunting-overview.md) to find events related to the selected Technique, select **Hunt for related events**. This leads to the advanced hunting page with a query to find events related to the Technique.
 
-:::image type="content" source="images/techniques-hunt-for-related-events-1.png" alt-text="Screenshot that shows the Hunt for related events option." lightbox="images/techniques-hunt-for-related-events-1.png":::
+:::image type="content" source="media/techniques-hunt-for-related-events-1.png" alt-text="Screenshot that shows the Hunt for related events option." lightbox="media/techniques-hunt-for-related-events-1.png":::
 
 > [!NOTE]
 > Querying using the **Hunt for related events** button from a Technique side pane displays all the events related to the identified technique but does not include the Technique itself in the query results.
@@ -113,7 +110,7 @@ You can customize which columns to expose. You can also filter for flagged event
 
 You can choose which columns to expose in the timeline by selecting the **Choose columns** button.
 
-:::image type="content" source="images/new-timeline-customize-columns.png" alt-text="Screenshot that shows the pane in which you can customize columns." lightbox="images/new-timeline-customize-columns.png":::
+:::image type="content" source="media/new-timeline-customize-columns.png" alt-text="Screenshot that shows the pane in which you can customize columns." lightbox="media/new-timeline-customize-columns.png":::
 
 
 From there you can select which information set to include.
@@ -122,7 +119,7 @@ From there you can select which information set to include.
 
 To view only either events or techniques, select **Filters** from the device timeline and choose your preferred Data type to view.
 
-:::image type="content" source="images/new-timeline-filter.png" alt-text="Screenshot that shows the Filters pane." lightbox="images/new-timeline-filter.png":::
+:::image type="content" source="media/new-timeline-filter.png" alt-text="Screenshot that shows the Filters pane." lightbox="media/new-timeline-filter.png":::
 
 ## Timeline event flags
 
@@ -142,16 +139,16 @@ While navigating the device timeline, you can search and filter for specific eve
 
 1. Find the event that you want to flag.
 
-2. Click the flag icon in the Flag column. 
+2. Select the flag icon in the Flag column. 
 
-:::image type="content" source="images/device-flags.png" alt-text="The device timeline flag" lightbox="images/device-flags.png":::
+:::image type="content" source="media/device-flags.png" alt-text="The device timeline flag" lightbox="media/device-flags.png":::
 
 ## View flagged events
 
 1. In the timeline **Filters** section, enable **Flagged events**.
-2. Click **Apply**. Only flagged events are displayed.
+2. Select **Apply**. Only flagged events are displayed.
 
-You can apply additional filters by clicking on the time bar. This will only show events prior to the flagged event.  
+You can apply more filters by clicking on the time bar. This will only show events prior to the flagged event.  
 
-:::image type="content" source="images/device-flag-filter.png" alt-text="Screenshot that shows the device timeline flag with the filter switched on." lightbox="images/device-flag-filter.png":::
+:::image type="content" source="media/device-flag-filter.png" alt-text="Screenshot that shows the device timeline flag with the filter switched on." lightbox="media/device-flag-filter.png":::
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

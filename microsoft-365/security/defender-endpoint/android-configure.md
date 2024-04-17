@@ -1,37 +1,34 @@
 ---
 title: Configure Microsoft Defender for Endpoint on Android features
 description: Describes how to configure Microsoft Defender for Endpoint on Android
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mde, android, configuration
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security
 - tier3
+- mde-android
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: android
 search.appverid: met150
 ms.date: 12/18/2020
 ---
 
 # Configure Defender for Endpoint on Android features
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 ## Conditional Access with Defender for Endpoint on Android
 
-Microsoft Defender for Endpoint on Android, along with Microsoft Intune and Azure Active Directory, enables enforcing Device compliance and Conditional Access policies based on device risk levels. Defender for Endpoint is a Mobile Threat Defense (MTD) solution that you can deploy through Intune.
+Microsoft Defender for Endpoint on Android, along with Microsoft Intune and Microsoft Entra ID, enables enforcing Device compliance and Conditional Access policies based on device risk levels. Defender for Endpoint is a Mobile Threat Defense (MTD) solution that you can deploy through Intune.
 
 For more information about how to set up Defender for Endpoint on Android and Conditional Access, see [Defender for Endpoint and Intune](/mem/intune/protect/advanced-threat-protection).
 
@@ -64,20 +61,20 @@ Network protection in Microsoft Defender for endpoint is disabled by default. Ad
 1. In the Microsoft Intune admin center, navigate to Apps > App configuration policies. Create a new App configuration policy.
 
     > [!div class="mx-imgBorder"]
-    > ![Image of how to create a policy.](images/android-mem.png)
+    > ![Image of how to create a policy.](media/android-mem.png)
 
 1. Provide a name and description to uniquely identify the policy. Select **'Android Enterprise'** as the platform and **'Personally-owned work profile only'** as the profile type and **'Microsoft Defender'** as the Targeted app.
 
     > [!div class="mx-imgBorder"]
-    > ![Image of policy details.](images/appconfigdetails.png)
+    > ![Image of policy details.](media/appconfigdetails.png)
 
 1. In Settings page, select **'Use configuration designer'** and add **'Enable Network Protection in Microsoft Defender'** as the key and value as **'1'** to enable Network Protection. (Network protection is disabled by default)
 
     > [!div class="mx-imgBorder"]
-    > ![Image of how to select enable network protection policy](images/selectnp.png)
+    > ![Image of how to select enable network protection policy](media/selectnp.png)
 
     > [!div class="mx-imgBorder"]
-    > ![Image of add configuration policy.](images/npvalue.png)
+    > ![Image of add configuration policy.](media/npvalue.png)
 
 1. If your organization uses root CAs that are private, you must establish explicit trust between Intune (MDM solution) and user devices. Establishing trust helps prevent Defender from flagging root CAs as rogue certificates.
 
@@ -92,7 +89,7 @@ Network protection in Microsoft Defender for endpoint is disabled by default. Ad
 
    Any other separation characters are invalid.
 
-   > ![Image of trusted CA certificate.](images/trustca.png)
+   > ![Image of trusted CA certificate.](media/trustca.png)
 
 1. For other configurations related to Network protection, add the following keys and appropriate corresponding value.
 
@@ -316,7 +313,7 @@ Use the following steps to configure Disable sign-out:
 
 ## Device Tagging
 
-Defender for Endpoint on Android enables bulk tagging the mobile devices during onboarding by allowing the admins to set up tags via Intune. Admin can configure the device tags through Intune via configuration policies and push them to user’s devices. Once the User installs and activates Defender, the client app passes the device tags to the Security Portal. The Device tags appear against the devices in the Device Inventory. 
+Defender for Endpoint on Android enables bulk tagging the mobile devices during onboarding by allowing the admins to set up tags via Intune. Admin can configure the device tags through Intune via configuration policies and push them to user's devices. Once the User installs and activates Defender, the client app passes the device tags to the Security Portal. The Device tags appear against the devices in the Device Inventory. 
 
 Use the following steps to configure the Device tags:
 
@@ -332,11 +329,10 @@ Use the following steps to configure the Device tags:
 
 
 > [!NOTE] 
-> The Defender app needs to be opened for tags to be synced with Intune and passed to Security Portal. It may take upto 18 hours for tags to reflect in the portal.
+> The Defender app needs to be opened for tags to be synced with Intune and passed to Security Portal. It may take up to 18 hours for tags to reflect in the portal.
 
 ## Related articles
 
 - [Overview of Microsoft Defender for Endpoint on Android](microsoft-defender-endpoint-android.md)
 - [Deploy Microsoft Defender for Endpoint on Android with Microsoft Intune](android-intune.md)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
-

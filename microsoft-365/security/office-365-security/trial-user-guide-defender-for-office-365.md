@@ -4,24 +4,23 @@ f1.keywords:
 - NOCSH
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 audience: Admin
 ms.topic: conceptual
 ms.collection: 
 - m365-security
 - tier1
 ms.localizationpriority: high
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 search.appverid:
 - MOE150
 - MET150
 description: "Microsoft Defender for Office 365 solutions trial user guide."
-ms.subservice: mdo
 ms.custom: trial-user guide
 ms.date: 6/23/2023
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 1 and Plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # Trial user guide: Microsoft Defender for Office 365
@@ -50,7 +49,7 @@ Do you want your Defender for Office 365 experience to be active or passive? The
 
 - **Blocking mode**: The Standard template for [preset security policies](preset-security-policies.md#profiles-in-preset-security-policies) is turned on and used for the trial, and the users you specify to include in the trial are added to the Standard preset security policy. Defender for Office 365 *detects* and *takes action on* harmful messages (for example, detected messages are quarantined).
 
-  The default and recommended selection is to scope these Defender for Office 365 policies to all users in the organization. But, during or after the setup of your trial, you can change the policy assignment to specific users, groups, or email domains in the Microsoft 365 Defender portal or in PowerShell.
+  The default and recommended selection is to scope these Defender for Office 365 policies to all users in the organization. But, during or after the setup of your trial, you can change the policy assignment to specific users, groups, or email domains in the Microsoft Defender portal or in PowerShell.
 
   Blocking mode doesn't provide customized reports for threats detected by Defender for Office 365. Instead, the information is available in the regular reports and investigation features of Defender for Office 365 Plan 2. For more information, see [Reports for blocking mode](try-microsoft-defender-for-office-365.md#reports-for-blocking-mode).
 
@@ -59,7 +58,7 @@ The key factors that determine which modes are available to you are:
 - Whether or not you currently have Defender for Office 365 (Plan 1 or Plan 2) as described in [Evaluation vs. trial for Defender for Office 365](try-microsoft-defender-for-office-365.md#evaluation-vs-trial-for-defender-for-office-365).
 - How email is delivered to your Microsoft 365 organization as described in the following scenarios:
 
-  - Mail from the internet flows directly Microsoft 365, but your current subscription has only [Exchange Online Protection (EOP)](eop-about.md) or [Defender for Office 365 Plan 1](overview.md#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet).
+  - Mail from the internet flows directly Microsoft 365, but your current subscription has only [Exchange Online Protection (EOP)](eop-about.md) or [Defender for Office 365 Plan 1](mdo-about.md#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet).
 
     :::image type="content" source="../../media/mdo-trial-mail-flow.png" alt-text="Mail flows from the internet into Microsoft 365, with protection from EOP and/or Defender for Office 365 Plan 1." lightbox="../../media/mdo-trial-mail-flow.png":::
 
@@ -108,7 +107,7 @@ Use the reporting capabilities in Defender for Office 365 to get more details ab
 - See where threats are blocked with the [Mailflow status report](reports-email-security.md#mailflow-status-report).
 - Use the [URL protection report](reports-defender-for-office-365.md#url-protection-report) to review links that were viewed by users or blocked by the system.
 
-:::image type="content" source="../../media/mdo-trial-playbook-reporting.png" alt-text="The Email & collaboration reports in the Microsoft 365 Defender portal." lightbox="../../media/mdo-trial-playbook-reporting.png":::
+:::image type="content" source="../../media/mdo-trial-playbook-reporting.png" alt-text="The Email & collaboration reports in the Microsoft Defender portal." lightbox="../../media/mdo-trial-playbook-reporting.png":::
 
 ### Step 2: Intermediate steps in blocking mode
 
@@ -117,12 +116,12 @@ Use the reporting capabilities in Defender for Office 365 to get more details ab
 Protect your most targeted and most visible users with Priority Account Protection in Defender for Office 365, which helps you prioritize your workflow to ensure these users are safe.
 
 - Identify your most targeted or most visible users.
-- [Tag these users](../../admin/setup/priority-accounts.md#add-priority-accounts-from-the-microsoft-365-defender-page) as priority accounts.
+- [Tag these users](/microsoft-365/admin/setup/priority-accounts#add-priority-accounts-from-the-microsoft-365-defender-page) as priority accounts.
 - Track threats to priority accounts throughout the portal.
 
 Watch this video to learn more: [Protecting priority accounts in Microsoft Defender for Office 365 - YouTube](https://www.youtube.com/watch?v=tqnj0TlzQcI&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=11).
 
-:::image type="content" source="../../media/mdo-trial-playbook-alerts.png" alt-text="The Alerts in the Microsoft 365 Defender portal." lightbox="../../media/mdo-trial-playbook-alerts.png":::
+:::image type="content" source="../../media/mdo-trial-playbook-alerts.png" alt-text="The Alerts in the Microsoft Defender portal." lightbox="../../media/mdo-trial-playbook-alerts.png":::
 
 ### Avoid costly breaches by preventing user compromise
 
@@ -137,21 +136,20 @@ Watch this video to learn more: [Detect and respond to compromise in Microsoft D
 
 #### Use Threat Explorer to investigate malicious email
 
-Defender for Office 365 enables you to investigate activities that put people in your organization at risk and to take action to protect your organization. You can do this using [Threat Explorer](threat-explorer-about.md).
+Defender for Office 365 enables you to investigate activities that put people in your organization at risk and to take action to protect your organization. You can do this using [Threat Explorer (Explorer)](threat-explorer-real-time-detections-about.md):
 
-- [Find suspicious email that was delivered](investigate-malicious-email-that-was-delivered.md#find-suspicious-email-that-was-delivered): Find and delete messages, identify the IP address of a malicious email sender, or start an incident for further investigation.
-- [Check the delivery action and location](investigate-malicious-email-that-was-delivered.md#check-the-delivery-action-and-location): This check lets you know the location of problem email messages.
-- [View the timeline of your email](investigate-malicious-email-that-was-delivered.md#view-the-timeline-of-your-email): Simply hunting for your security operations team.
+- [Find suspicious email that was delivered](threat-explorer-investigate-delivered-malicious-email.md#find-suspicious-email-that-was-delivered): Find and delete messages, identify the IP address of a malicious email sender, or start an incident for further investigation.
+- [Email security scenarios in Threat Explorer and Real-time detections](threat-explorer-threat-hunting.md#email-security-scenarios-in-threat-explorer-and-real-time-detections)
 
 #### See campaigns targeting your organization
 
 See the bigger picture with Campaign Views in Defender for Office 365, which gives you a view of the attack campaigns targeting your organization and the impact they have on your users.
 
 - [Identify campaigns](campaigns.md#what-is-a-campaign) targeting your users.
-- [Visualize the scope](campaigns.md#campaigns-page-in-the-microsoft-365-defender-portal) of the attack.
+- [Visualize the scope](campaigns.md#campaigns-page-in-the-microsoft-defender-portal) of the attack.
 - [Track user interaction](campaigns.md#campaign-details) with these messages.
 
-  :::image type="content" source="../../media/mdo-trial-playbook-campaign-details.png" alt-text="The Campaign details in the Microsoft 365 Defender portal." lightbox="../../media/mdo-trial-playbook-campaign-details.png":::
+  :::image type="content" source="../../media/mdo-trial-playbook-campaign-details.png" alt-text="The Campaign details in the Microsoft Defender portal." lightbox="../../media/mdo-trial-playbook-campaign-details.png":::
 
 Watch this video to learn more: [Campaign Views in Microsoft Defender for Office 365 - YouTube](https://www.youtube.com/watch?v=DvqzzYKu7cQ&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=14).
 
@@ -174,7 +172,7 @@ Use Advanced hunting to write custom detection rules, proactively inspect events
 - [Build custom detection rules](../defender/custom-detections-overview.md).
 - [Access shared queries](../defender/advanced-hunting-shared-queries.md) created by others.
 
-Watch this video to learn more: [Threat hunting with Microsoft 365 Defender - YouTube](https://www.youtube.com/watch?v=l3OmH4U6XAs&list=PL3ZTgFEc7Lyt1O81TZol31YXve4e6lyQu&index=4).
+Watch this video to learn more: [Threat hunting with Microsoft Defender XDR - YouTube](https://www.youtube.com/watch?v=l3OmH4U6XAs&list=PL3ZTgFEc7Lyt1O81TZol31YXve4e6lyQu&index=4).
 
 #### Train users to spot threats by simulating attacks
 
@@ -184,7 +182,7 @@ Equip your users with the right knowledge to identify threats and report suspici
 - [Assign training](attack-simulation-training-simulations.md#assign-training) to users based on simulation results.
 - [Track progress](attack-simulation-training-insights.md) of your organization in simulations and training completion.
 
-  :::image type="content" source="../../media/mdo-trial-playbook-attack-simulation-training-results.png" alt-text="The attack simulation training insights in the Microsoft 365 Defender portal." lightbox="../../media/mdo-trial-playbook-attack-simulation-training-results.png":::
+  :::image type="content" source="../../media/mdo-trial-playbook-attack-simulation-training-results.png" alt-text="The attack simulation training insights in the Microsoft Defender portal." lightbox="../../media/mdo-trial-playbook-attack-simulation-training-results.png":::
 
 ## Auditing mode
 
@@ -218,11 +216,10 @@ Use the reporting capabilities in Defender for Office 365 to get more details ab
 
 #### Use Threat Explorer to investigate malicious email in auditing mode
 
-Defender for Office 365 enables you to investigate activities that put people in your organization at risk and to take action to protect your organization. You can do this using [Threat Explorer](threat-explorer-about.md).
+Defender for Office 365 enables you to investigate activities that put people in your organization at risk and to take action to protect your organization. You can do this using [Threat Explorer (Explorer)](threat-explorer-real-time-detections-about.md):
 
-- [Find suspicious email that was delivered](investigate-malicious-email-that-was-delivered.md#find-suspicious-email-that-was-delivered): Find and delete messages, identify the IP address of a malicious email sender, or start an incident for further investigation.
-- [Check the delivery action and location](investigate-malicious-email-that-was-delivered.md#check-the-delivery-action-and-location): This check lets you know the location of problem email messages.
-- [View the timeline of your email](investigate-malicious-email-that-was-delivered.md#view-the-timeline-of-your-email): Simply hunting for your security operations team.
+- [Find suspicious email that was delivered](threat-explorer-investigate-delivered-malicious-email.md#find-suspicious-email-that-was-delivered): Find and delete messages, identify the IP address of a malicious email sender, or start an incident for further investigation.
+- [Email security scenarios in Threat Explorer and Real-time detections](threat-explorer-threat-hunting.md#email-security-scenarios-in-threat-explorer-and-real-time-detections)
 
 #### Convert to Standard Protection at the end of evaluation period
 
@@ -244,12 +241,12 @@ Equip your users with the right knowledge to identify threats and report suspici
 - [Assign training](attack-simulation-training-simulations.md#assign-training) to users based on simulation results.
 - [Track progress](attack-simulation-training-insights.md) of your organization in simulations and training completion.
 
-  :::image type="content" source="../../media/mdo-trial-playbook-attack-simulation-training-results.png" alt-text="The attack simulation training insights in the Microsoft 365 Defender portal." lightbox="../../media/mdo-trial-playbook-attack-simulation-training-results.png":::
+  :::image type="content" source="../../media/mdo-trial-playbook-attack-simulation-training-results.png" alt-text="The attack simulation training insights in the Microsoft Defender portal." lightbox="../../media/mdo-trial-playbook-attack-simulation-training-results.png":::
 
 ## Additional resources
 
 - **Interactive guide**: Unfamiliar with Defender for Office 365? Review the [interactive guide](https://mslearn.cloudguides.com/guides/Safeguard%20your%20organization%20with%20Microsoft%20Defender%20for%20Office%20365) to understand how to get started.
 - **Fast Track Get Started Guide***: [Microsoft Defender for Office 365](https://go.microsoft.com/fwlink/p/?linkid=2197415)
-- **Microsoft Defender for Office 365 documentation**: Get detailed information on how Defender for Office 365 works and how to best implement it for your organization. Visit the [Microsoft Defender for Office 365 documentation](defender-for-office-365.md).
+- **Microsoft Defender for Office 365 documentation**: Get detailed information on how Defender for Office 365 works and how to best implement it for your organization. Visit the [Microsoft Defender for Office 365 documentation](mdo-about.md).
 - **What's included**: For a full list of Office 365 email security features listed by product tier, view the [Feature Matrix](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability).
 - **Why Defender for Office 365**: The [Defender for Office 365 Datasheet](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4FCiy) shows the top 10 reasons customers choose Microsoft.

@@ -1,28 +1,24 @@
 ---
 title: Defender for Endpoint onboarding Windows Server
 description: Onboard Windows Server to Microsoft Defender for Endpoint.
-keywords: onboarding, Microsoft Defender for Endpoint onboarding, sccm, group policy, mdm, local script, detection test
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.service: defender-endpoint
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier2
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: onboard
 search.appverid: met150
 ms.date: 05/19/2022
 ---
 
 # Defender for Endpoint onboarding Windows Server
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -41,7 +37,7 @@ ms.date: 05/19/2022
 
 You'll need to go through the onboarding section of the Defender for Endpoint portal to onboard any of the supported devices. Depending on the device, you'll be guided with appropriate steps and provided management and deployment tool options suitable for the device.
 
-Defender for Endpoint extends support to also include the Windows Server operating system. This support provides advanced attack detection and investigation capabilities seamlessly through the Microsoft 365 Defender console. Support for Windows Server provides deeper insight into server activities, coverage for kernel and memory attack detection, and enables response actions.
+Defender for Endpoint extends support to also include the Windows Server operating system. This support provides advanced attack detection and investigation capabilities seamlessly through the Microsoft Defender XDR console. Support for Windows Server provides deeper insight into server activities, coverage for kernel and memory attack detection, and enables response actions.
 
 This topic describes how to onboard specific Windows servers to Microsoft Defender for Endpoint.
 
@@ -51,7 +47,7 @@ For guidance on how to download and use Windows Security Baselines for Windows s
 
 You'll need to complete the following general steps to successfully onboard servers 2008 R2, 2012 R2, 2016, 2019, 2022.
 
-:::image type="content" source="images/server-onboarding.png" alt-text="Server Onboarding" lightbox="images/server-onboarding.png":::
+:::image type="content" source="media/server-onboarding.png" alt-text="Server Onboarding" lightbox="media/server-onboarding.png":::
 
 ### Windows Server 2012 R2 and Windows Server 2016
 - Download installation and onboarding packages.

@@ -2,20 +2,19 @@
 title: Login pages in Attack simulation training
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.topic: how-to
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 ms.localizationpriority: medium
 ms.collection: 
   - m365-security
   - tier2
 description: Admins can learn how to create and manage login pages for simulated phishing attacks in Microsoft Defender for Office 365 Plan 2.
-ms.subservice: mdo
 search.appverid: met150
-ms.date: 6/14/2023
+ms.date: 3/11/2024
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview" target="_blank">Microsoft Defender for Office 365 plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 2</a>
 ---
 
 # Login pages in Attack simulation training
@@ -24,19 +23,19 @@ In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Offi
 
 For getting started information about Attack simulation training, see [Get started using Attack simulation training](attack-simulation-training-get-started.md).
 
-To see the available login pages, open the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Content library** tab \> and then select **Login pages**. To go directly to the **Content library** tab where you can select **Login pages**, use <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>.
+To see the available login pages, open the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Content library** tab \> and then select **Login pages**. To go directly to the **Content library** tab where you can select **Login pages**, use <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>.
 
 **Login pages** in the **Content library** tab has two tabs:
 
-- **Global login pages** tab: Contains the built-in, non-modifiable login pages. There are four built-in login pages localized into 12+ languages:
+- **Global login pages** tab: Contains the built-in, unmodifiable login pages. There are four built-in login pages localized into 12+ languages:
   - **GitHub login page**
   - **LinkedIn login page**
   - **Microsoft login page**
   - **Non-branded login page**
 
-- **Tenant login pages** tab: Contains the custom login pages that you've created.
+- **Tenant login pages** tab: Contains the custom login pages that you created.
 
-The following information is shown for each login page:
+The following information is shown for each login page. You can sort the login pages by clicking on an available column header. Select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns** to change the columns that are shown. By default, all available columns are selected.
 
 - **Name**
 - **⋮** (**Actions** control): Take action on the login page. The available actions depend on the **Status** value of the login page as described in the procedure sections.
@@ -46,8 +45,6 @@ The following information is shown for each login page:
 - **Created by**: For built-in login pages, the value is **Microsoft**. For custom login pages, the value is the UPN of the user who created the login page.
 - **Last modified**
 
-Select a column header to sort by that column. To remove columns, select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns**.
-
 To find a login page in the list, type part of the login page name in the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box and then press the ENTER key.
 
 Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter** to filter the login pages by **Language** or **Status**.
@@ -56,7 +53,7 @@ When you select a login page from the list by clicking anywhere in the row other
 
 - :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png" border="false"::: **Edit** is available only in custom login pages on the **Tenant login pages** tab.
 - :::image type="icon" source="../../media/m365-cc-sc-set-as-default-icon.png" border="false"::: **Mark as default** to make this login page the default selection in **Credential Harvest** or **Link in Attachment** [payloads](attack-simulation-training-payloads.md) or [payload automations](attack-simulation-training-payload-automations.md). If the login page is already the default, :::image type="icon" source="../../media/m365-cc-sc-set-as-default-icon.png" border="false"::: **Mark as default** isn't available.
-- **Preview** tab: View the login page as users will see it. **Page 1** and **Page 2** links are available at the bottom of the page for two-page login pages.
+- **Preview** tab: View the login page as users see it. **Page 1** and **Page 2** links are available at the bottom of the page for two-page login pages.
 - **Details** tab: View details about the login page:
   - **Description**
   - **Status**: **Ready** or **Draft**.
@@ -65,9 +62,12 @@ When you select a login page from the list by clicking anywhere in the row other
   - **Language**
   - **Last modified**
 
+> [!TIP]
+> To see details about other login pages without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
+
 ## Create login pages
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Content library** tab \> and then select **Login pages**. To go directly to the **Content library** tab where you can select **Login pages**, use <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>.
+1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Content library** tab \> and then select **Login pages**. To go directly to the **Content library** tab where you can select **Login pages**, use <https://security.microsoft.com/attacksimulator?viewid=contentlibrary>.
 
 2. On the **Tenant login pages** tab, select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Create new** to start the new login page wizard.
 
@@ -84,7 +84,7 @@ When you select a login page from the list by clicking anywhere in the row other
 
 4. On the **Configure login page** page, configure the following settings:
 
-   - **Select a language**: The available values are: **Chinese (Simplified)**, **Chinese (Traditional)**, **English**, **French**, **German**, **Italian**, **Japanese**, **Korean**, **Portuguese**, **Russian**, **Spanish**, and **Dutch**.
+   - **Select a language**: The available values are: **Chinese (Simplified)**, **Chinese (Traditional)**, **English**, **French**, **German**, **Italian**, **Japanese**, **Korean**, **Portuguese**, **Russian**, **Spanish**, **Dutch**, and **Other**.
 
    - **Make this the default login page**: If you select this option, the login page is the default selection in **Credential Harvest** or **Link in Attachment** [payloads](attack-simulation-training-payloads.md) or [payload automations](attack-simulation-training-payload-automations.md).
 
@@ -182,7 +182,7 @@ To make a login page the default on the **Tenant login pages** or **Global login
 - Select **Make this the default login page** on the **Configure login page** page in the wizard when you [create or modify a login page](#create-login-pages).
 
 > [!NOTE]
-> The previous procedures are not available if the login page is already the default.
+> The previous procedures aren't available if the login page is already the default.
 >
 > The default login page is also marked in the list, although you might need to widen the **Name** column to see it:
 >

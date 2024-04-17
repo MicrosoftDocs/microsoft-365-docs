@@ -3,13 +3,13 @@ title: Configure Microsoft Syntex for pay-as-you-go billing
 ms.author: chucked
 author: chuckedmonson
 ms.reviewer: kkamath
-ms.date: 05/15/2023
-manager: pamgreen
+ms.date: 03/12/2024
+manager: jtremper
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
 ms.collection: 
-    - enabler-strategic
+    - essentials-get-started
     - m365initiative-syntex
     - Tier1
 search.appverid: MET150
@@ -32,7 +32,7 @@ To use Microsoft Syntex pay-as-you go, you need:
 
 If you already have these resources for other purposes, you can also use them with Microsoft Syntex.
 
-For information about how to create an Azure subscription, see [Create your initial Azure subscriptions](/azure/cloud-adoption-framework/ready/azure-best-practices/initial-subscriptions)
+For information about how to create an Azure subscription, see [Create your initial Azure subscriptions](/azure/cloud-adoption-framework/ready/azure-best-practices/initial-subscriptions).
 
 For information about how to create an Azure resource group, see [Manage Azure resource groups by using the Azure portal](/azure/azure-resource-manager/management/manage-resource-groups-portal).
 
@@ -72,10 +72,16 @@ To see the charges applied to the Syntex meters
 The following Microsoft Syntex products are currently available:
 
 - Prebuilt document processing
+- Structured and freeform document processing
 - Unstructured document processing
 - Content assembly
 - Image tagging
+- Taxonomy tagging
+- Translation
+- Syntex eSignature
 - Optical character recognition
+- Microsoft 365 Archive (Preview)
+- Microsoft 365 Backup (Preview)
 
 The following tags are available:
 - Site

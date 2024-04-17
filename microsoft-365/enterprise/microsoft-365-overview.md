@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 08/08/2022
+ms.date: 02/08/2024
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -13,6 +13,8 @@ ms.localizationpriority: high
 ms.collection: 
 - scotvorg
 - M365-subscription-management
+- must-keep
+- essentials-overview
 ms.custom: 
 - it-pro
 - intro-overview
@@ -32,7 +34,7 @@ Microsoft 365 for enterprise consists of:
 |Services|Description|
 |---|---|
 |Local apps and cloud-based apps and productivity services|Includes both Microsoft 365 Apps for enterprise, the latest Office apps for your PC and Mac (such as Word, Excel, PowerPoint, Outlook, and others), and a full suite of online services for email, file storage and collaboration, meetings, and more.|
-|Windows 10 Enterprise|Meets the needs of both large and midsize organizations. It's the most productive and secure version of Windows for users. For IT professionals, it also provides comprehensive deployment, device, and app management.|
+|Windows 11 Enterprise|Meets the needs of both large and midsize organizations. It's the most productive and secure version of Windows for users. For IT professionals, it also provides comprehensive deployment, device, and app management.|
 |Device management and advanced security services|Includes Microsoft Intune, which is a cloud-based enterprise mobility management service that helps enable your workforce to be productive while protecting your organization data.|
 
 ## Plans
@@ -58,14 +60,12 @@ For more information, see [Features and capabilities for each plan](https://www.
 
 ## Get the big picture
 
-The [Microsoft 365 for enterprise poster](../downloads/Microsoft365Enterprise.pdf) is a central location for you to view:
+The [Microsoft 365 for enterprise poster](https://download.microsoft.com/download/f/4/a/f4a4b49c-1dea-4299-a2cb-65bc08abdcb2/Microsoft365Enterprise.pdf) is a central location for you to view:
 
 - The benefits of Microsoft 365 for enterprise, and how apps and services map to its value pillars.
 - Microsoft 365 for enterprise plans and which components they contain.
 - The key components of the Microsoft modern workplace, which Microsoft 365 for enterprise enables.
 - The [Microsoft 365 Productivity Library](https://www.microsoft.com/microsoft-365/success/) and representative scenarios for some common organization departments.
-
-[![Image for the Microsoft 365 for enterprise poster.](../media/microsoft-365-overview/m365e-poster.png)](../downloads/Microsoft365Enterprise.pdf)
 
 You can also [download a copy of the poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft365Enterprise.pdf).
 
@@ -89,13 +89,13 @@ These products reached end of support on **October 13, 2020**:
 
 [SharePoint Server 2010](upgrade-from-sharepoint-2010.md) will reach end of support on **April 13, 2021**.
 
-For a visual summary of the upgrade, migrate, and move-to-the-cloud options for these products, see the [end of support poster](../downloads/Office2010Windows7EndOfSupport.pdf).
+For a visual summary of the upgrade, migrate, and move-to-the-cloud options for these products, see the [end of support poster](https://download.microsoft.com/download/2/7/d/27da4118-32ae-4ffe-90d8-a61e7c895ba0/Office2010Windows7EndOfSupport.pdf).
 
-[![Image for the end of support for Office 2010 clients and servers and Windows 7 poster.](../media/microsoft-365-overview/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
+[![Image for the end of support for Office 2010 clients and servers and Windows 7 poster.](../media/microsoft-365-overview/office2010-windows7-end-of-support.png)](https://download.microsoft.com/download/2/7/d/27da4118-32ae-4ffe-90d8-a61e7c895ba0/Office2010Windows7EndOfSupport.pdf)
 
 This one-page poster is a quick way to understand the various paths you can take to prevent Windows 7 and Office 2010 client and server products from reaching end of support, with preferred paths and support in Microsoft 365 for enterprise highlighted.
 
-You can also [download this poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Office2010Windows7EndOfSupport.pdf) and print it in letter, legal, or tabloid (11 x 17) formats.
+You can also [download this poster](https://download.microsoft.com/download/2/7/d/27da4118-32ae-4ffe-90d8-a61e7c895ba0/Office2010Windows7EndOfSupport.pdf) and print it in letter, legal, or tabloid (11 x 17) formats.
 
 ## Plan for and deploy
 
@@ -146,12 +146,11 @@ For more information and configuration examples for a small and medium business 
 
 [![Image for the Best together with Surface and the Edge browser poster.](../media/microsoft-365-overview/best-together-poster-thumbnail.png)](https://download.microsoft.com/download/2/8/d/28db0cf9-2f5a-4f63-91e2-46ff5c4d3baf/microsoft-best-together-poster.pdf)
 
-
 ## Microsoft 365 training
 
 ![Microsoft 365 Fundamentals training.](../media/microsoft-365-overview/m365-fundamentals.svg)
 
-To learn more about Microsoft 365 and work toward a Microsoft 365 certification, you can start with [Microsoft 365 Certified: Fundamentals](/training/paths/m365-fundamentals/).
+To learn more about Microsoft 365 and work toward a Microsoft 365 certification, you can start with [Microsoft 365 Fundamentals](/training/courses/ms-900t01/).
 
 ## See also
 

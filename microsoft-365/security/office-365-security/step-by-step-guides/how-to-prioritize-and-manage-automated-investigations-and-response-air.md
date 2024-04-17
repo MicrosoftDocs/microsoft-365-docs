@@ -1,15 +1,11 @@
 ---
 title: How to prioritize and manage Automated Investigations and Response (AIR).
 description: How to steps to analyze and approve AIR actions directly from the Action Center. When alerts are triggered, Automated Investigation and Response (AIR) determines the scope of impact of a threat in your organization and provided recommended remediation actions.
-search.product:
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.service: defender-office-365
 f1.keywords: 
-  - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ - NOCSH
+author: chrisda
+ms.author: chrisda
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -18,9 +14,8 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: how-to
-ms.subservice: mdo
 search.appverid: met150
-ms.date: 1/31/2023
+ms.date: 04/04/2024
 ---
 
 # Prioritize and manage Automated Investigations and Response (AIR)
@@ -45,7 +40,7 @@ As automated investigations on *Email & collaboration* content results in verdic
 
 ## Steps to analyze and approve AIR actions directly from the Action Center
 
-1. Navigate to [Microsoft 365 Defender portal](https://security.microsoft.com/action-center) and sign in.
+1. Navigate to [Microsoft Defender portal](https://security.microsoft.com/action-center) and sign in.
 2. When the Action center loads, filter and prioritize by clicking columns to sort the actions, or press **Filters** to apply a filter such as *entity type* (for a particular URL) or action type (such as soft delete email).
 3. A flyout will open once an action is clicked. It will appear on right-hand side of the screen for review.
 4. For more information about why an action is requested, select **Open investigation page** in the flyout to learn more about the investigation or alerts linked to this action. (Admins can also approve actions seen on the investigation page by selecting the *Pending Actions* tab.)
@@ -54,7 +49,7 @@ As automated investigations on *Email & collaboration* content results in verdic
 
 ## Check AIR history
 
-1. Navigate to the [Microsoft 365 Defender portal](https://security.microsoft.com) and sign in.
+1. Navigate to the [Microsoft Defender portal](https://security.microsoft.com) and sign in.
 2. In the left-hand navigation pane, expand **Action & submissions** then click **Action Center**.
 3. When the Action Center loads press the **History** tab.
 4. View the history of AIR, including decisions made, source of action, and admin who made the decision, if appropriate.

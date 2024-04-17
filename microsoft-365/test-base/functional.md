@@ -17,9 +17,11 @@ f1.keywords: NOCSH
 ---
 # Functional testing
 
+[!INCLUDE [test-base-deprecation](./includes/test-base-deprecation.md)]
+
 As a software publisher, you can now perform custom functional tests, using the test framework of your choice - via the self-serve Test Base for Microsoft 365 portal. 
 
-When we initially launched the service, we offered the Out-of-box tests, which is a pre-defined set of tests driven through standardized scripting. However, this couldn't achieve full test coverage for many Independent Software Vendors (ISVs). 
+When we initially launched the service, we offered the Out-of-box tests, which is a pre-defined set of tests driven through standardized scripting. However, it couldn't achieve full test coverage for many Independent Software Vendors (ISVs). 
 
 Hence, in response to your feedback, we're providing our ISVs with the ability to upload automated functional tests.
 
@@ -38,16 +40,17 @@ To get started, navigate to the Upload page, select Upload new application under
 
 Tab 1 - Enter basic information. Provide the name and version of your application. In the Type of test option, select ```Functional tests```. 
 
-*The Out-of-Box (OOB) option is required by default.*
+> [!NOTE]
+> Scripts within packages all have an execution time limit of 60 mins. Scripts execution after 60 minutes would time out.
 
 
 ![Select the functional testing tab.](Media/functional_testing_tab1.png)
 
-Tab 2 - Upload the components of your package by uploading a zip file with your entire test (binaries, dependencies, scripts etc). 
+Tab 2 - Upload the components of your package by uploading a zip file with your entire test (binaries, dependencies, scripts, etc.). 
 
 See aka.ms/usl-package-outline for details. (Note: Both the Out-of-Box test scripts and the Functional test contents should be placed into the same zip file). Currently, the file size is limited to 2 GB.
 
-Tab 3 - Configure the Out-of-Box and Functional test tasks. Here, choose the path(s) to the PowerShell scripts that will install, launch, close, and uninstall your application (for Out-of-Box) and the path(s) to all your custom scripts to perform your functional test. **(Note: A script to uninstall your application is optional).**
+Tab 3 - Configure the Out-of-Box and Functional test tasks. Here, choose the path(s) to the PowerShell scripts that install, launch, close, and uninstall your application (for Out-of-Box) and the path(s) to all your custom scripts to perform your functional test. **(Note: A script to uninstall your application is optional).**
 
 Currently, you can upload 1 to 8 scripts for your functional tests. (Kindly comment on this post if you need more scripts!)
 
@@ -69,8 +72,8 @@ We run an initial test to install, launch, close, and uninstall your application
 
 The verification process could take up to 24 hours. Once verification is complete, you can see the status in the ```Manage packages``` menu, which would be one of two entries:
 
-1. Verification succeeds: The package will be automatically tested against pre-release Windows updates for the OS builds you selected.
+1. Verification succeeds: The package is automatically tested against pre-release Windows updates for the OS builds you selected.
 or
-2. Verification fails: You'll need to investigate the reasons for the failure, fix the issue, and reupload your package.
+2. Verification fails: You need to investigate the reasons for the failure, fix the issue, and reupload your package.
 
-You'll also be notified of either outcome via the notification icon in the Azure portal.
+You are also notified of either outcome via the notification icon in the Azure portal.

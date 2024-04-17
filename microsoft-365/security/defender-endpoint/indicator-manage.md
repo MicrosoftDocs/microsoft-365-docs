@@ -2,34 +2,31 @@
 title: Manage indicators
 ms.reviewer:
 description: Manage indicators for a file hash, IP address, URLs, or domains that define the detection, prevention, and exclusion of entities.
-keywords: import, indicator, list, ioc, csv, manage, allowed, blocked, block, clean, malicious, file hash, ip address, urls, domain
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier2
+- mde-asr
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: asr
 search.appverid: met150
 ms.date: 12/18/2020
 ---
 
 # Manage indicators
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
@@ -38,7 +35,7 @@ ms.date: 12/18/2020
 
 2. Select the tab of the entity type you'd like to manage.
 
-3. Update the details of the indicator and click **Save** or click the **Delete** button if you'd like to remove the entity from the list.
+3. Update the details of the indicator and select **Save** or select the **Delete** button if you'd like to remove the entity from the list.
 
 ## Import a list of IoCs
 
@@ -52,7 +49,7 @@ Download the sample CSV to know the supported column attributes.
 
 3. Select **Import** \> **Choose file**.
 
-4. Select **Import**. Do this for all the files you'd like to import.
+4. Select **Import**. Repeat for all the files you'd like to import.
 
 5. Select **Done**.
 
@@ -63,20 +60,20 @@ Download the sample CSV to know the supported column attributes.
 
 The following table shows the supported parameters.
 
-Parameter|Type|Description
-:---|:---|:---
-indicatorType|Enum|Type of the indicator. Possible values are: "FileSha1", "FileSha256", "IpAddress", "DomainName" and "Url". **Required**
-indicatorValue|String|Identity of the [Indicator](ti-indicator.md) entity. **Required**
-action|Enum|The action that will be taken if the indicator will be discovered in the organization. Possible values are: "Allowed", "Audit", "BlockAndRemediate", "Warn", and "Block". **Required**
-title|String|Indicator alert title. **Required**
-description|String| Description of the indicator. **Required**
-expirationTime|DateTimeOffset|The expiration time of the indicator in the following format YYYY-MM-DDTHH:MM:SS.0Z. The indicator gets deleted if the expiration time passes and whatever happens at the expiration time occurs at the seconds (SS) value. **Optional**
-severity|Enum|The severity of the indicator. Possible values are: "Informational", "Low", "Medium" and "High". **Optional**
-recommendedActions|String|TI indicator alert recommended actions. **Optional**
-rbacGroups|String|Comma-separated list of RBAC groups the indicator would be applied to. **Optional**
-category|String|Category of the alert. Examples include: Execution and credential access. **Optional**
-mitretechniques|String|MITRE techniques code/id (comma separated). For more information, see [Enterprise tactics](https://attack.mitre.org/tactics/enterprise/). **Optional** It is recommended to add a value in category when a MITRE technique.
-GenerateAlert|String|Whether the alert should be generated. Possible Values are: True or False. **Optional**
+| Parameter|Type|Description |
+| ---| ---| --- |
+| indicatorType|Enum|Type of the indicator. Possible values are: *FileSha1*, *FileSha256*, *IpAddress*, *DomainName*, and *Url*. **Required** |
+| indicatorValue|String|Identity of the [Indicator](ti-indicator.md) entity. **Required** |
+| action|Enum|The action that is taken if the indicator is discovered in the organization. Possible values are: *Allowed*, *Audit*, *BlockAndRemediate*, *Warn*, and *Block*. **Required** |
+| title|String|Indicator alert title. **Required** |
+| description|String| Description of the indicator. **Required** |
+| expirationTime|DateTimeOffset|The expiration time of the indicator in the following format YYYY-MM-DDTHH:MM:SS.0Z. The indicator gets deleted if the expiration time passes and whatever happens at the expiration time occurs at the seconds (SS) value. **Optional** |
+| severity|Enum|The severity of the indicator. Possible values are: *Informational*, *Low*, *Medium*, and *High*. **Optional** |
+| recommendedActions|String|TI indicator alert recommended actions. **Optional** |
+| rbacGroups|String|Comma-separated list of RBAC groups the indicator would be applied to. **Optional** |
+| category|String|Category of the alert. Examples include: Execution and credential access. **Optional** |
+| mitretechniques|String|MITRE techniques code/id (comma separated). For more information, see [Enterprise tactics](https://attack.mitre.org/tactics/enterprise/). **Optional** It's recommended to add a value in category when a MITRE technique. |
+| GenerateAlert|String|Whether the alert should be generated. Possible Values are: True or False. **Optional** |
 
 > [!NOTE]
 > Classless Inter-Domain Routing (CIDR) notation for IP addresses is not supported.

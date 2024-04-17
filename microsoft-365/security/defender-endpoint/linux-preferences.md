@@ -1,32 +1,33 @@
 ---
 title: Set preferences for Microsoft Defender for Endpoint on Linux
-ms.reviewer:
+ms.reviewer: gopkr
 description: Describes how to configure Microsoft Defender for Endpoint on Linux in enterprises.
-ms.service: microsoft-365-security
-ms.author: dansimp
-author: dansimp
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
 ms.date: 07/07/2023
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
+- mde-linux
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: linux
 search.appverid: met150
 ---
 
 # Set preferences for Microsoft Defender for Endpoint on Linux
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
@@ -78,8 +79,8 @@ Specifies the enforcement preference of antivirus engine. There are three values
 #### Enable/disable behavior-monitoring 
 
 Determines whether behavior monitoring and blocking capability is enabled on the device or not. 
-
-<br>
+> [!NOTE]
+> This feature is applicable only when Real-Time Protection feature is enabled.
 
 ****
 |Description|Value|
@@ -221,13 +222,40 @@ Specifies the behavior of RTP on mount point marked as noexec. There are two val
 
 Configure filesystems to be unmonitored/excluded from Real Time Protection(RTP). The filesystems configured are validated against Microsoft Defender's list of permitted filesystems. Only post successful validation, will the filesystem be allowed to be unmonitored. These configured unmonitored filesystems will still be scanned by Quick, Full, and custom scans.
 
-By default, NFS and Fuse are unmonitored from RTP, Quick, and Full scans. However, they can still be scanned by a custom scan.
-
 |Description|Value|
 |---|---|
 |**Key**|unmonitoredFilesystems|
 |**Data type**|Array of strings|
 |**Comments**|Configured filesystem will be unmonitored only if it is present in Microsoft's list of permitted unmonitored filesystems.|
+
+By default, NFS and Fuse are unmonitored from RTP, Quick, and Full scans. However, they can still be scanned by a custom scan. For example, to remove NFS from the list of unmonitored filesystems list, update the managed config file as shown below. This will automatically add NFS to the list of monitored filesystems for RTP.
+
+```JSON
+{
+   "antivirusEngine":{
+      "unmonitoredFilesystems": ["Fuse"]
+  }
+}
+```
+To remove both NFS and Fuse from unmonitored list of filesystems, do the following
+
+```JSON
+{
+   "antivirusEngine":{
+      "unmonitoredFilesystems": []
+  }
+}
+```
+
+
+>[!NOTE]
+> Below is the default list of monitored filesystems for RTP -
+>
+>**[btrfs, ecryptfs, ext2, ext3, ext4, fuseblk, jfs, overlay, ramfs, reiserfs, tmpfs, vfat, xfs]**
+>
+>If any monitored filesystem needs to be added to the list of unmonitored filesystems,then it needs to be evaluated and enabled by Microsoft via cloud config. Following which customers can update managed_mdatp.json to unmonitor that filesystem.
+
+
 
 #### Configure file hash computation feature
 
@@ -379,6 +407,9 @@ When this feature is enabled, Defender for Endpoint will scan network socket eve
 ### Cloud-delivered protection preferences
 
 The *cloudService* entry in the configuration profile is used to configure the cloud-driven protection feature of the product.
+
+> [!NOTE]
+> Cloud-delivered protection is applicable with any Enforcement level settings (real_time, on_demand, passive).
 
 |Description|Value|
 |---|---|
@@ -668,9 +699,12 @@ The following configuration profile contains entries for all settings described 
 ```JSON
 {
    "antivirusEngine":{
-      "enforcementLevel":"passive",
+      "enforcementLevel":"real_time",
+      "behaviorMonitoring": "enabled",
       "scanAfterDefinitionUpdate":true,
       "scanArchives":true,
+      "scanHistoryMaximumItems": 10000,
+      "scanResultsRetentionDays": 90,
       "maximumOnDemandScanThreads":2,
       "exclusionsMergePolicy":"merge",
       "exclusions":[
@@ -786,7 +820,6 @@ To verify that your /etc/opt/microsoft/mdatp/managed/mdatp_managed.json is worki
   **Exception:** The following configurations require a daemon restart to take effect:
 > - cloud-diagnostic
 > - log-rotation-parameters
-
 ## Configuration profile deployment
 
 Once you've built the configuration profile for your enterprise, you can deploy it through the management tool that your enterprise is using. Defender for Endpoint on Linux reads the managed configuration from the */etc/opt/microsoft/mdatp/managed/mdatp_managed.json* file.

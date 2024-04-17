@@ -5,6 +5,7 @@ author: erikre
 manager: dougeby
 audience: ITPro
 ms.topic: article
+ms.date: 03/29/2024
 description: Add apps overview for Microsoft Intune.
 ms.service: o365-solutions
 ms.localizationpriority: high
@@ -16,7 +17,7 @@ keywords:
 
 # Add apps to Microsoft Intune Overview
 
-Before you can add apps to Microsoft Intune, you must first set up Intune. If you're new to Intune, start with the [Microsoft Intune free trail](/mem/intune/fundamentals/free-trial-sign-up). Trying out Intune is free for 30 days. When you complete the sign-up process, you'll have a new tenant that you can use to evaluate Intune. A tenant is a dedicated instance of [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis) (Azure AD) where your subscription to Intune is hosted. You can then configure the tenant, which involves many capabilities that you can use to protect your organization. One of those involves adding apps to Intune.
+Before you can add apps to Microsoft Intune, you must first set up Intune. If you're new to Intune, start with the [Microsoft Intune free trail](/mem/intune/fundamentals/free-trial-sign-up). Trying out Intune is free for 30 days. When you complete the sign-up process, you'll have a new tenant that you can use to evaluate Intune. A tenant is a dedicated instance of [Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-whatis) (Microsoft Entra ID) where your subscription to Intune is hosted. You can then configure the tenant, which involves many capabilities that you can use to protect your organization. One of those involves adding apps to Intune.
 
 As an IT admin, you can use Intune to manage the apps that members of your organization use. This management functionality is in addition to managing devices and protecting data. One of your priorities as an admin is to ensure that the members of your organization have access to the apps they need to do their work. This goal can be a challenge because:
 - There are a wide range of device platforms and app types.

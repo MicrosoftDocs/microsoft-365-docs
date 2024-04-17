@@ -2,9 +2,9 @@
 title: Use metadata to find content in document libraries in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: kkameth
-ms.date: 08/11/2022
+ms.date: 04/15/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -20,10 +20,30 @@ description: Learn how to use Syntex content query and search for custom site co
 
 Microsoft Syntex gives you the ability to quickly search through your document's metadata with ease. The Syntex content query feature lets you perform specific metadata-based queries on SharePoint document libraries. You can make faster, more precise queries based on specific metadata column values, rather than just searching for keywords.
 
-Syntex content query lets you use the metadata associated with a document to help locate the file in a SharePoint document library. This feature is particularly useful when you have a specific piece of information you want to search for, such as when a document was last modified, a specific person associated with a file, or a specific file type.
+Syntex content query lets you use the metadata associated with a document to help locate the file in a SharePoint document library. This feature is particularly useful when you have a specific piece of information you want to search for, such as when a document was last modified, a specific person associated with a file, specific keywords in a file, or a specific file type.
+
+## Columns you can query
+
+You can now use content query to search for metadata in any of the queriable columns in your document library. Queriable columns include the following content types:
+
+- 'Text':
+- 'Note':
+- 'DateTime':
+- 'Choice':
+- 'MultiChoice':
+- 'User':
+- 'Boolean':
+- 'Currency':
+- 'Number':
+- 'TaxonomyFieldType':
+- 'TaxonomyFieldTypeMulti':
+
+**New document libraries** — For new libraries, all of the columns are available in content query.
+
+**Existing document libraries** — For existing libraries, all of the queriable columns won't be immediately available. You need to select the content query icon (![Screenshot of the metadata search icon.](../media/content-understanding/metadata-search-icon.png)) in the existing library. Then after five days, check the library again and all of the columns should be available.
 
 > [!NOTE]
-> This feature is available only for licensed Syntex users. 
+> This feature is available for users who have Syntex [per-user](set-up-content-understanding.md) or [pay-as-you-go](syntex-azure-billing.md) licensing.
 
 ## To use Syntex content query
 
@@ -44,7 +64,7 @@ Syntex content query lets you use the metadata associated with a document to hel
    |People   |Search for a match on people in any column in the library.   |
    |Modified date |Search by selected date range in the **Modified** column in the library.         |
    |File type     |Search by selected file type (for example, Word document or PDF).        |
-   |Content type  |Search by selected content type. This option will only appear if there's a non-default content type applied to the library. Default content types are *document* and *folder*.        |
+   |Content type  |Search by selected content type. This option will only appear if there's a nondefault content type applied to the library. Default content types are *document* and *folder*.        |
 
 3. You can also search for custom site columns that are in the current library view. This is especially useful if you have a model running on the library because the metadata extractors automatically populate information into site columns.  
 
@@ -55,3 +75,4 @@ Syntex content query lets you use the metadata associated with a document to hel
     For numbers, currency, and date columns, you can scope parameters of the query—for example, greater than a specific amount or within a specific period of time. For text columns, you can specify if you want to contain or not contain certain words.
 
 4. Select **Search**. The documents that match your metadata query are shown on the results page. 
+

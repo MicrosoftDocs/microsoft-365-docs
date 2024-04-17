@@ -9,6 +9,8 @@
     href: reputation-scoring.md
   - name: Analyst insights
     href: analyst-insights.md 
+  - name: Microsoft Copilot for Security and Defender TI
+    href: security-copilot-and-defender-threat-intelligence.md 
 - name: Concept
   items:
   - name: Infrastructure chaining
@@ -27,6 +29,8 @@
     href: using-tags.md
   - name: Using projects
     href: using-projects.md
+  - name: Using Microsoft Copilot in Defender for threat intelligence
+    href: /defender/threat-intelligence/using-copilot-threat-intelligence-defender-xdr
 - name: Tutorials
   items:
   - name: Gathering threat intelligence and infrastructure chaining

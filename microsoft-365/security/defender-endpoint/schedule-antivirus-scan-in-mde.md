@@ -1,22 +1,19 @@
 ---
 title: How to schedule an antivirus scan using Anacron in Microsoft Defender for Endpoint on Linux
 description: Learn how to schedule an antivirus scan in Microsoft Defender for Endpoint on Linux for better protection of your organization's assets.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, scans, antivirus, microsoft defender for endpoint on linux
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.service: defender-endpoint
+ms.author: siosulli
+author: siosulli
 ms.localizationpriority: medium
-ms.date: 12/02/2022
-manager: dansimp
+ms.date: 12/02/2023
+manager: deniseb
 audience: ITPro
 ms.collection:
 - m365-security
 - tier3
+- mde-linux
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: linux
 search.appverid: met150
 ---
 
@@ -52,12 +49,11 @@ Use the following steps to schedule scans:
 
 1. Connect to the RedHat server using PuTTY.
 1. Edit the anacron file:
-
    ```shell
    vi /etc/anacron
    ```
 
-   :::image type="content" source="images/vi_etc_anacron.png" alt-text="anacron file":::
+1.  :::image type="content" source="media/vi-etc-anacron.png" alt-text="Sample Anacron Job Linux." lightbox="media/vi-etc-anacron.png" link="media/vi-etc-anacron.png":::
 
    ```shell
    # /etc/anacrontab: configuration file for anacron
@@ -82,7 +78,7 @@ Use the following steps to schedule scans:
    ls -lh /etc/cron*
    ```
 
-   :::image type="content" source="images/ls_lh_etc_cron.png" alt-text="anacron jobs":::
+    :::image type="content" source="media/vi-etc-anacron.png" alt-text="Sample Anacron Job Linux." lightbox="media/vi-etc-anacron.png" link="media/vi-etc-anacron.png":::
 
    ```shell
    [root@redhat7 /] # ls -lh /etc/cron*
@@ -133,7 +129,7 @@ Use the following steps to schedule scans:
    Press Insert
    ```
 
-   :::image type="content" source="images/vi_mdavfullscan.png" alt-text="weekly antivirus scans":::
+   :::image type="content" source="media/vi-mdavfullscan.png" alt-text="weekly antivirus scans":::
 
    ```shell
    #!/bin/sh
@@ -157,7 +153,7 @@ Use the following steps to schedule scans:
    ls -la
    ```
 
-   :::image type="content" source="images/chmod-755-mdavfullscan.png" alt-text="7. Change file permissions":::
+   :::image type="content" source="media/chmod-755-mdavfullscan.png" alt-text="7. Change file permissions":::
 
    ```shell
    [root@redhat7 cron.weekly]# ls -la
@@ -184,7 +180,7 @@ Use the following steps to schedule scans:
    cat /logs/mdav_avacron_full_scan.log
    ```
 
-    :::image type="content" source="images/mdav_avacron_full_scan_log.png" alt-text="verify the job ran":::
+    :::image type="content" source="media/mdav-avacron-full-scan-log.png" alt-text="verify the job ran":::
 
     ```shell
     [root@redhat7 cron.weekly] # cat /logs/mdav_avacron_full_scan.log
@@ -195,4 +191,6 @@ Use the following steps to schedule scans:
     Tue Jun 14 20:20:50 UTC 2022 Time Scan Finished
     [root@redhat7 cron.weekly] #
     ```
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+

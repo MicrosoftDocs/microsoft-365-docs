@@ -10,20 +10,19 @@
       href: zero-trust-with-microsoft-defender-endpoint.md
     - name: Trial user guide - Microsoft Defender for Endpoint
       href: defender-endpoint-trial-user-guide.md
-    - name: Compare Microsoft endpoint security plans
-      href: defender-endpoint-plan-1-2.md
     - name: Minimum requirements
       href: minimum-requirements.md
     - name: Supported Microsoft Defender for Endpoint capabilities by platform
       href: supported-capabilities-by-platform.md
-    - name: What's new in Microsoft Defender for Endpoint?
+    - name: What's new in Defender for Endpoint
       href: whats-new-in-microsoft-defender-endpoint.md
+      items: 
+      - name: What's new in Defender for Endpoint - archive
+        href: whats-new-mde-archive.md
     - name: What's new in Microsoft Defender for Endpoint on Windows
       href: windows-whatsnew.md
     - name: What's new in Microsoft Defender for Endpoint on other platforms
       items:
-      - name: What's new in Defender for Endpoint on macOS
-        href: mac-whatsnew.md
       - name: What's new in Defender for Endpoint on Linux
         href: linux-whatsnew.md
       - name: What's new in Defender for Endpoint on Android
@@ -48,8 +47,6 @@
     - name: Overview of Microsoft Defender for Endpoint on other platforms
       href: non-windows.md
       items: 
-      - name: Microsoft Defender for Endpoint on macOS
-        href: microsoft-defender-endpoint-mac.md
       - name: Microsoft Defender for Endpoint on Linux
         href: microsoft-defender-endpoint-linux.md
       - name: Microsoft Defender for Endpoint on Android
@@ -64,22 +61,28 @@
     items:
     - name: Evaluate capabilities overview
       href: evaluation-lab.md
-    - name: Microsoft defender for endpoint demonstrations
+    - name: Microsoft Defender for Endpoint demonstrations
       items:
+      - name: Overview
+        href: evaluate-microsoft-defender-antivirus.md
+      - name: Evaluate Microsoft Defender Antivirus using Powershell
+        href: microsoft-defender-antivirus-using-powershell.md
       - name: Microsoft Defender for Endpoint demonstration scenarios
         href: defender-endpoint-demonstrations.md
       - name: App reputation demonstration
         href: defender-endpoint-demonstration-app-reputation.md
+      - name: Validate antimalware
+        href: validate-antimalware.md
       - name: Attack surface reduction rules demonstrations
         href: defender-endpoint-demonstration-attack-surface-reduction-rules.md
-      - name: Block at First Sight (BAFS) demonstration
-        href: defender-endpoint-demonstration-block-at-first-sight-bafs.md
       - name: Cloud-delivered protection demonstration
         href: defender-endpoint-demonstration-cloud-delivered-protection.md
       - name: Controlled folder access (CFA) demonstration (block script)
         href: defender-endpoint-demonstration-controlled-folder-access-test-tool.md
       - name: Controlled folder access (CFA) demonstrations (block ransomware)
         href: defender-endpoint-demonstration-controlled-folder-access.md
+      - name: EDR detections
+        href: edr-detection.md
       - name: Exploit protection (EP) demonstrations
         href: defender-endpoint-demonstration-exploit-protection.md
       - name: Network protection demonstrations
@@ -106,6 +109,22 @@
 
   - name: Onboard and configure devices
     items:
+    - name: Configure service connections
+      items:
+        - name: Step 1 - Configure your network environment 
+          href: configure-environment.md
+        - name: Step 2 - Configure device proxy and Internet settings
+          href: configure-proxy-internet.md
+        - name: Step 3 - Verify client connectivity to service URLs
+          href: verify-connectivity.md
+        
+    - name: Streamlined connectivity
+      items:
+        - name: Onboarding devices using streamlined method
+          href: configure-device-connectivity.md
+        - name: Migrating devices to streamlined method
+          href: migrate-devices-streamlined.md
+
     - name: Onboarding Windows Client
       items:
       - name: Onboarding Windows Client overview
@@ -140,35 +159,36 @@
       - name: Onboard non-persistent virtual desktop infrastructure (VDI) devices
         href: configure-endpoints-vdi.md
 
-    - name: Microsoft Defender for Endpoint on other platforms
+    - name: Onboard non-Windows devices
+      href: configure-endpoints-non-windows.md
+    - name: Defender for Endpoint on macOS
       items:
-      - name: Onboard non-Windows devices
-        href: configure-endpoints-non-windows.md
       - name: Microsoft Defender for Endpoint on macOS
+        href: microsoft-defender-endpoint-mac.md
+      - name: What's new in Defender for Endpoint on macOS
+        href: mac-whatsnew.md
+      - name: Deploy Defender for Endpoint on macOS
         items:
-        - name: Deploy Defender for Endpoint on macOS
+        - name: Deployment with Microsoft Intune
+          href: mac-install-with-intune.md
+        - name: JAMF Pro-based deployment
           items:
-          - name: Deployment with Microsoft Intune
-            href: mac-install-with-intune.md
-          - name: JAMF Pro-based deployment
-            items:
-            - name: Deploying Microsoft Defender for Endpoint on macOS using Jamf Pro
-              href: mac-install-with-jamf.md
-            - name: Log in to Jamf Pro
-              href: mac-install-jamfpro-login.md
-            - name: Set up device groups
-              href: mac-jamfpro-device-groups.md
-            - name: Set up policies
-              href: mac-jamfpro-policies.md
-            - name: Enroll devices
-              href: mac-jamfpro-enroll-devices.md
-                
+          - name: Deploying Microsoft Defender for Endpoint on macOS using Jamf Pro
+            href: mac-install-with-jamf.md
+          - name: Log in to Jamf Pro
+            href: mac-install-jamfpro-login.md
+          - name: Set up device groups
+            href: mac-jamfpro-device-groups.md
+          - name: Set up policies
+            href: mac-jamfpro-policies.md
+          - name: Enroll devices
+            href: mac-jamfpro-enroll-devices.md        
           - name: Deployment with Mobile Device Management (MDM) systems
             href: mac-install-with-other-mdm.md
-          - name: Manual deployment
-            href: mac-install-manually.md
-        - name: Configure Defender for Endpoint on macOS
-          items:
+        - name: Manual deployment
+          href: mac-install-manually.md
+      - name: Configure Defender for Endpoint on macOS
+        items:
           - name: Configure and validate exclusions
             href: mac-exclusions.md
           - name: Set preferences
@@ -189,55 +209,85 @@
               href: mac-device-control-faq.md
           - name: Schedule scans
             href: mac-schedule-scan.md
-        - name: Update Defender for Endpoint on macOS
-          href: mac-updates.md
-        - name: Privacy for Microsoft Defender for Endpoint on macOS
-          href: mac-privacy.md
-        - name: Resources for Microsoft Defender for Endpoint on macOS
-          href: mac-resources.md
-
-      - name: Microsoft Defender for Endpoint on Linux
+      - name: Update Defender for Endpoint on macOS
+        href: mac-updates.md
+      - name: Privacy for Microsoft Defender for Endpoint on macOS
+        href: mac-privacy.md
+      - name: Resources for Microsoft Defender for Endpoint on macOS
+        href: mac-resources.md
+      - name: Troubleshoot Microsoft Defender for Endpoint on macOS
         items:
-        - name: Deploy Defender for Endpoint on Linux
+        - name: Troubleshooting mode on macOS
+          href: mac-troubleshoot-mode.md
+        - name: Troubleshoot macOS installation issues
+          href: mac-support-install.md
+        - name: Troubleshoot macOS performance issues overview
+          href: mac-support-perf-overview.md
+          displayName: Troubleshoot performance issues for Microsoft Defender for Endpoint on macOS
+        - name: Troubleshoot performance issues
+          href: mac-support-perf.md
+        - name: Troubleshoot cloud connectivity
+          href: troubleshoot-cloud-connect-mdemac.md
+        - name: Troubleshoot license issues
+          href: mac-support-license.md
+        - name: Troubleshoot system extention issues
+          href: mac-support-sys-ext.md
           items:
-          - name: Puppet based deployment
-            href: linux-install-with-puppet.md
-          - name: Ansible based deployment
-            href: linux-install-with-ansible.md
-          - name: Chef based deployment
-            href: linux-deploy-defender-for-endpoint-with-chef.md
+          - name: Intune
+            href: manage-profiles-approve-sys-extensions-intune.md
+          - name: JamF
+            href: manage-sys-extensions-using-jamf.md
           - name: Manual deployment
-            href: linux-install-manually.md
-          - name: Saltstack-based deployment
-            href: linux-install-with-saltack.md
-          - name: Advanced deployment for Defender for Endpoint on Linux
-            href: comprehensive-guidance-on-linux-deployment.md
-        - name: Configure Defender for Endpoint on Linux
-          items:
-          - name: Configure and validate exclusions
-            href: linux-exclusions.md
-          - name: Static proxy configuration
-            href: linux-static-proxy-configuration.md
-          - name: Set preferences
-            href: linux-preferences.md
-          - name: Detect and block Potentially Unwanted Applications
-            href: linux-pua.md
-          - name: Schedule scans with Microsoft Defender for Endpoint on Linux
-            href: linux-schedule-scan-mde.md
-          - name: Schedule antivirus scan in Defender for Endpoint on Linux
-            href: schedule-antivirus-scan-in-mde.md
-          - name: Schedule an update of the Microsoft Defender for Endpoint (Linux)
-            href: linux-update-MDE-Linux.md
-          - name: Configure eBPF-based sensor
-            href: linux-support-ebpf.md 
-        - name: Update Defender for Endpoint on Linux
-          href: linux-updates.md
-        - name: Privacy for Defender for Endpoint on Linux
-          href: linux-privacy.md
-        - name: Resources for Microsoft Defender for Endpoint on Linux
-          href: linux-resources.md
-      - name: Mobile Threat Defense
-        items:
+            href: manage-sys-extensions-manual-deployment.md
+        
+    - name: Microsoft Defender for Endpoint on Linux
+      items:
+       - name: Deploy Defender for Endpoint on Linux
+         items:
+         - name: Defender for Endpoint plug-in for WSL
+           href: mde-plugin-wsl.md
+         - name: Puppet based deployment
+           href: linux-install-with-puppet.md
+         - name: Ansible based deployment
+           href: linux-install-with-ansible.md
+         - name: Chef based deployment
+           href: linux-deploy-defender-for-endpoint-with-chef.md
+         - name: Manual deployment
+           href: linux-install-manually.md
+         - name: Saltstack-based deployment
+           href: linux-install-with-saltack.md
+         - name: Advanced deployment for Defender for Endpoint on Linux
+           href: comprehensive-guidance-on-linux-deployment.md
+         - name: Deployment guidance for Defender for Endpoint on Linux for SAP
+           href: mde-linux-deployment-on-sap.md
+       - name: Configure Defender for Endpoint on Linux
+         items:
+         - name: Configure and validate exclusions
+           href: linux-exclusions.md
+         - name: Static proxy configuration
+           href: linux-static-proxy-configuration.md
+         - name: Set preferences
+           href: linux-preferences.md
+         - name: Detect and block Potentially Unwanted Applications
+           href: linux-pua.md
+         - name: Schedule scans with Microsoft Defender for Endpoint on Linux
+           href: linux-schedule-scan-mde.md
+         - name: Schedule antivirus scan in Defender for Endpoint on Linux
+           href: schedule-antivirus-scan-in-mde.md
+         - name: Schedule an update of the Microsoft Defender for Endpoint (Linux)
+           href: linux-update-MDE-Linux.md
+         - name: Configure eBPF-based sensor
+           href: linux-support-ebpf.md 
+         - name: Configure Offline Security Intelligence Update
+           href: linux-support-offline-security-intelligence-update.md
+       - name: Update Defender for Endpoint on Linux
+         href: linux-updates.md
+       - name: Privacy for Defender for Endpoint on Linux
+         href: linux-privacy.md
+       - name: Resources for Microsoft Defender for Endpoint on Linux
+         href: linux-resources.md
+    - name: Mobile Threat Defense
+      items:
         - name: Mobile Threat Defense Overview
           href: mtd.md
         - name: Deploy
@@ -248,25 +298,24 @@
             href: ios-install.md
           - name: Deployment on iOS with Mobile Application Manager
             href: ios-install-unmanaged.md
-
-    - name: Configure Mobile Threat Defense
-      items:
-      - name: Configure Defender for Endpoint on Android features
-        href: android-configure.md
-      - name: Configure Defender for Endpoint on Android risk signals using app protection policy
-        href: android-configure-mam.md
-      - name: Privacy for Defender for Endpoint on Android
-        href: android-privacy.md
-      - name: Configure Defender for Endpoint on iOS features
-        href: ios-configure-features.md
-      - name: Privacy for Defender for Endpoint on iOS
-        href: ios-privacy.md
+        - name: Configure Mobile Threat Defense
+          items:
+          - name: Mobile device resources for Defender for Endpoint 
+            href: mobile-resources-defender-endpoint.md
+          - name: Configure Defender for Endpoint on Android features
+            href: android-configure.md
+          - name: Configure Defender for Endpoint on Android risk signals using app protection policy
+            href: android-configure-mam.md
+          - name: Privacy for Defender for Endpoint on Android
+            href: android-privacy.md
+          - name: Configure Defender for Endpoint on iOS features
+            href: ios-configure-features.md
+          - name: Privacy for Defender for Endpoint on iOS
+            href: ios-privacy.md
     - name: Run a detection test on a newly onboarded Microsoft Defender for Endpoint
       href: run-detection-test.md
-    - name: Onboard devices without Internet access
-      href: onboard-offline-machines.md
-    - name: Configure proxy and Internet connectivity settings
-      href: configure-proxy-internet.md
+
+
   - name: How to guides
     items:
     - name: Integration with Microsoft Defender for Cloud
@@ -299,21 +348,6 @@
         href: switch-to-mde-phase-2.md
       - name: Phase 3 - Onboard
         href: switch-to-mde-phase-3.md
-
-    - name: Manage Defender for Endpoint after migration or setup
-      items:
-      - name: Overview
-        href: manage-mde-post-migration.md
-      - name: Use Intune (recommended)
-        href: manage-mde-post-migration-intune.md
-      - name: Use Configuration Manager
-        href: manage-mde-post-migration-configuration-manager.md
-      - name: Use Group Policy
-        href: manage-mde-post-migration-group-policy-objects.md
-      - name: Use PowerShell, WMI, or MPCmdRun.exe
-        href: manage-mde-post-migration-other-tools.md
-      - name: Updating MMA on Windows devices
-        href: update-agent-mma-windows.md
       - name: Server migration scenarios
         items:
         - name: Overview
@@ -340,8 +374,6 @@
         href: basic-permissions.md
       - name: Assign user access to the portal
         href: assign-portal-access.md
-      - name: Manage portal access using RBAC
-        href: rbac.md
         items:
         - name: Create and manage roles
           href: user-roles.md
@@ -349,7 +381,6 @@
           href: machine-groups.md
         - name: Create and manage device tags
           href: machine-tags.md
-
     - name: Rules
       items:
       - name: Manage suppression rules
@@ -380,6 +411,8 @@
           href: configure-machines.md
         - name: Monitor and increase device onboarding
           href: configure-machines-onboarding.md
+        - name: Updating MMA on Windows devices
+          href: update-agent-mma-windows.md
 
     - name: Configure time zone settings
       href: time-settings.md
@@ -437,27 +470,27 @@
       items:
       - name: Attack surface reduction overview
         href: overview-attack-surface-reduction.md
-      - name: Attack surface reduction (ASR) rules
+      - name: Attack surface reduction rules
         items:
         - name: Learn about ASR rules
           href: attack-surface-reduction.md
-        - name: Attack surface reduction (ASR) rules deployment guide
+        - name: Attack surface reduction rules deployment guide
           items:
-          - name: Attack surface reduction (ASR) rules deployment overview
+          - name: Attack surface reduction rules deployment overview
             href: attack-surface-reduction-rules-deployment.md
-          - name: Plan attack surface reduction (ASR) rules deployment
+          - name: Plan attack surface reduction rules deployment
             href: attack-surface-reduction-rules-deployment-plan.md
-          - name: Test attack surface reduction (ASR) rules
+          - name: Test attack surface reduction rules
             href: attack-surface-reduction-rules-deployment-test.md
-          - name: Enable attack surface reduction (ASR) rules
+          - name: Enable attack surface reduction rules
             href: attack-surface-reduction-rules-deployment-implement.md
-          - name: Operationalize attack surface reduction (ASR) rules
+          - name: Operationalize attack surface reduction rules
             href: attack-surface-reduction-rules-deployment-operationalize.md
-        - name: Attack surface reduction (ASR) rules reference
+        - name: Attack surface reduction rules reference
           href: attack-surface-reduction-rules-reference.md
         - name: Attack surface reduction rules report
           href: attack-surface-reduction-rules-report.md
-        - name: Troubleshoot attack surface reduction (ASR) rules
+        - name: Troubleshoot attack surface reduction rules
           href: troubleshoot-asr-rules.md
         - name: Enable ASR rules alternate configuration methods
           href: enable-attack-surface-reduction.md
@@ -475,32 +508,19 @@
           href: customize-controlled-folders.md
       - name: Device Control
         items:
-        - name: Removable Storage Protection
-          href: device-control-removable-storage-protection.md
-        - name: Removable Storage Access Control
-          items:
-          - name: Overview
-            href: device-control-removable-storage-access-control.md
-          - name: Deploy and manage using Intune
-            href: deploy-manage-removable-storage-intune.md
-          - name: Deploy and manage using group policy
-            href: deploy-manage-removable-storage-group-policy.md
-          - name: Frequently asked questions
-            href: device-control-removable-storage-access-control-faq.md
-        - name: Device Installation
-          href: mde-device-control-device-installation.md
-        - name: Device Control Printer Protection
-          href: printer-protection.md
-          items:
-          - name: Printer Protection Overview
-            href: printer-protection-overview.md
-          - name: Deploy and manage using group policy
-            href: deploy-and-manage-using-group-policy.md
-          - name: Deploy and manage using Intune
-            href: deploy-and-manage-using-intune.md
-          - name: Printer Protection frequently asked questions
-            href: printer-protection-frequently-asked-questions.md
-        - name: Device Control Reports
+        - name: Overview of device control
+          href: device-control-overview.md
+        - name: Device control walkthroughs
+          href: device-control-walkthroughs.md
+        - name: Understand device control policies
+          href: device-control-policies.md
+        - name: Deploy and manage device control with Microsoft Intune
+          href: device-control-deploy-manage-intune.md
+        - name: Deploy and manage device control with Group Policy
+          href: device-control-deploy-manage-gpo.md
+        - name: Device control frequently asked questions
+          href: device-control-faq.md
+        - name: Device control reports
           href: device-control-report.md
       - name: Exploit protection
         items:
@@ -560,8 +580,8 @@
           href: why-use-microsoft-defender-antivirus.md
         - name: Better together - Microsoft Defender Antivirus and Office 365
           href: office-365-microsoft-defender-antivirus.md
-      - name: Evaluate Microsoft Defender Antivirus
-        href: evaluate-microsoft-defender-antivirus.md
+      - name: Safety Scanner Download
+        href: safety-scanner-download.md
       - name: Configure Microsoft Defender Antivirus features
         href: configure-microsoft-defender-antivirus-features.md
       - name: Manage exclusions for Defender for Endpoint and Microsoft Defender Antivirus
@@ -573,17 +593,17 @@
           href: enable-cloud-protection-microsoft-defender-antivirus.md
         - name: Specify the cloud protection level
           href: specify-cloud-protection-level-microsoft-defender-antivirus.md
+        - name: Configure the cloud block timeout period
+          href: configure-cloud-block-timeout-period-microsoft-defender-antivirus.md
         - name: Cloud protection and sample submission
           href: cloud-protection-microsoft-antivirus-sample-submission.md
       - name: Configure and validate Microsoft Defender Antivirus network connections
         href: configure-network-connections-microsoft-defender-antivirus.md
-      - name: Specify additional definition sets for network traffic inspection
-        href: specify-additional-definitions-network-traffic-inspection-mdav.md
       - name: Tamper protection
         items:
         - name: Protect security settings with tamper protection
           href: prevent-changes-to-security-settings-with-tamper-protection.md
-        - name: Manage tamper protection using Microsoft 365 Defender
+        - name: Manage tamper protection using Microsoft Defender XDR
           href: manage-tamper-protection-microsoft-365-defender.md
         - name: Manage tamper protection with Intune
           href: manage-tamper-protection-intune.md
@@ -595,10 +615,14 @@
           href: faqs-on-tamper-protection.yml
       - name: Turn on block at first sight
         href: configure-block-at-first-sight-microsoft-defender-antivirus.md
-      - name: Configure the cloud block timeout period
-        href: configure-cloud-block-timeout-period-microsoft-defender-antivirus.md
+      - name: Antimalware Scan Interface (AMSI) integration
+        href: amsi-on-mdav.md
       - name: Configure behavioral, heuristic, and real-time protection
         href: configure-protection-features-microsoft-defender-antivirus.md
+      - name: Advanced technologies at the core of Microsoft Defender Antivirus
+        href: adv-tech-of-mdav.md
+      - name: Behavior monitoring with Microsoft Defender Antivirus
+        href: behavior-monitor.md
       - name: Detect and block potentially unwanted applications
         href: detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md
       - name: Enable and configure Microsoft Defender Antivirus always-on protection in Group Policy
@@ -683,8 +707,6 @@
           href: configure-local-policy-overrides-microsoft-defender-antivirus.md
         - name: Specify whether users can see or interact with Microsoft Defender Antivirus user interface
           href: prevent-end-user-interaction-microsoft-defender-antivirus.md
-        - name: Turn on definition retirement
-          href: turn-on-definition-retirement.md
 
       - name: Deploy and report on Microsoft Defender Antivirus
         href: deploy-manage-report-microsoft-defender-antivirus.md
@@ -734,10 +756,13 @@
             href: device-health-microsoft-defender-antivirus-health.md
           - name: Sensor health and OS report
             href: device-health-sensor-health-os.md
+        - name: Microsoft Defender Core service overview
+          href: microsoft-defender-core-service-overview.md
+          displayName: Microsoft Defender Core service overview
+        - name: Microsoft Defender Core service configurations and experimentation 
+          href: microsoft-defender-core-service-configurations-and-experimentation.md
         - name: Troubleshoot performance issues related to real-time protection
           href: troubleshoot-performance-issues.md
-        - name: Troubleshoot Microsoft Defender Antivirus reporting in Update Compliance
-          href: troubleshoot-reporting.md
         - name: Collect diagnostic data of Microsoft Defender Antivirus
           href: collect-diagnostic-data.md
         - name: Collect diagnostic data for Update Compliance and Microsoft Defender Antivirus
@@ -761,6 +786,15 @@
         - name: Feedback-loop blocking
           href: feedback-loop-blocking.md
 
+      - name: UEFI scanning in Defender for Endpoint
+        href: uefi-scanning-in-defender-for-endpoint.md
+      - name: Run Microsoft Defender Antivirus in a sandbox
+        href: sandbox-mdav.md
+      - name: Early Launch Antimalware (ELAM) and Microsoft Defender Antivirus
+        href: elam-on-mdav.md
+      - name: Hardware acceleration and Microsoft Defender Antivirus
+        href:  hardware-acceleration-and-mdav.md
+        
     - name: Address false positives/negatives in Microsoft Defender for Endpoint
       href: defender-endpoint-false-positives-negatives.md
 
@@ -795,7 +829,7 @@
 
       - name: Alerts queue
         items:
-        - name: Alerts queue in Microsoft 365 Defender
+        - name: Alerts queue in Microsoft Defender XDR
           href: alerts-queue-endpoint-detection-response.md
         - name: View and organize the Alerts queue
           href: alerts-queue.md
@@ -805,6 +839,8 @@
           href: manage-alerts.md
         - name: Investigate alerts
           href: investigate-alerts.md
+        - name: Review and manage detected threats
+          href: review-detected-threats.md
         - name: Investigate files
           href: investigate-files.md
         - name: Investigate devices
@@ -839,6 +875,8 @@
             href: respond-machine-alerts.md#isolate-devices-from-the-network
           - name: Contain devices from the network
             href: respond-machine-alerts.md#contain-devices-from-the-network
+          - name: Contain user from the network
+            href: respond-machine-alerts.md#contain-user-from-the-network
           - name: Consult a threat expert
             href: respond-machine-alerts.md#consult-a-threat-expert
           - name: Check activity details in Action center
@@ -854,8 +892,6 @@
             href: respond-file-alerts.md#restore-file-from-quarantine
           - name: Add indicators to block or allow a file
             href: respond-file-alerts.md#add-indicator-to-block-or-allow-a-file
-          - name: Consult a threat expert
-            href: respond-file-alerts.md#consult-a-threat-expert
           - name: Check activity details in Action center
             href: respond-file-alerts.md#check-activity-details-in-action-center
           - name: Download or collect file
@@ -922,11 +958,54 @@
     - name: Endpoint Attack Notifications
       href: endpoint-attack-notifications.md
 
-    - name: Experts on Demand
-      href: experts-on-demand.md
-
   - name: Reference
     items:
+    - name: Microsoft Security Resources
+      items: 
+        - name: Threat actor naming
+          href: ../defender/microsoft-threat-actor-naming.md
+        - name: Malware names
+          href: ../defender/malware-naming.md
+        - name: How Microsoft identifies malware and PUA
+          href: ../defender/criteria.md
+        - name: Submit files for analysis
+          href: ../defender/submission-guide.md
+        - name: Troubleshoot MSI portal errors caused by admin block
+          href: ../defender/portal-submission-troubleshooting.md
+        - name: Microsoft virus initiative
+          href: ../defender/virus-initiative-criteria.md
+        - name: Software developer FAQ
+          href: ../defender/developer-faq.yml
+    - name: Malware information
+      items: 
+       - name: Coinminers
+         href: malware/coinminer-malware.md
+       - name: Exploits and Exploit Kits
+         href: malware/exploits-malware.md
+       - name: Fileless threats
+         href: malware/fileless-threats.md
+       - name: Macro threats
+         href: malware/macro-malware.md
+       - name: Phishing trends
+         href: malware/phishing-trends.md
+       - name: Phishing
+         href: malware/phishing.md
+       - name: Prevent malware infection
+         href: malware/prevent-malware-infection.md
+       - name: Rootkits
+         href: malware/rootkits-malware.md
+       - name: Supply chain malware
+         href: malware/supply-chain-malware.md
+       - name: Support scams
+         href: malware/support-scams.md
+       - name: Trojans
+         href: malware/trojans-malware.md
+       - name: Understanding malware
+         href: malware/understanding-malware.md
+       - name: Unwanted software
+         href: malware/unwanted-software.md
+       - name: Worms
+         href: malware/worms-malware.md
     - name: Understand threat intelligence concepts
       href: threat-indicator-concepts.md
     - name: Configure integration with other Microsoft solutions
@@ -938,9 +1017,9 @@
     - name: Management and APIs
       items:
       - name: Overview of management and APIs
-        href: management-apis.md
+        href: api/management-apis.md
       - name: API release notes
-        href: api-release-notes.md
+        href: api/api-release-notes.md
       - name: Microsoft Defender for Endpoint API
         items:
         - name: Get started
@@ -948,156 +1027,156 @@
           - name: Microsoft Defender for Endpoint API license and terms
             href: api-terms-of-use.md
           - name: Access the Microsoft Defender for Endpoint APIs
-            href: apis-intro.md
+            href: api/apis-intro.md
           - name: Hello World
-            href: api-hello-world.md
+            href: api/api-hello-world.md
           - name: Get access with application context
-            href: exposed-apis-create-app-webapp.md
+            href: api/exposed-apis-create-app-webapp.md
           - name: Get access with user context
-            href: exposed-apis-create-app-nativeapp.md
+            href: api/exposed-apis-create-app-nativeapp.md
 
         - name: Microsoft Defender for Endpoint APIs Schema
           items:
           - name: Supported Microsoft Defender for Endpoint APIs
-            href: exposed-apis-list.md
+            href: api/exposed-apis-list.md
           - name: Common REST API error codes
-            href: common-errors.md
+            href: api/common-errors.md
           - name: Advanced Hunting
-            href: run-advanced-query-api.md
+            href: api/run-advanced-query-api.md
 
           - name: Alert
             items:
             - name: Alert methods and properties
-              href: alerts.md
+              href: api/alerts.md
             - name: List alerts
-              href: get-alerts.md
+              href: api/get-alerts.md
             - name: Create alert
-              href: create-alert-by-reference.md
+              href: api/create-alert-by-reference.md
             - name: Batch update alerts
-              href: batch-update-alerts.md
+              href: api/batch-update-alerts.md
             - name: Update Alert
-              href: update-alert.md
+              href: api/update-alert.md
             - name: Get alert information by ID
-              href: get-alert-info-by-id.md
+              href: api/get-alert-info-by-id.md
             - name: Get alert related domains information
-              href: get-alert-related-domain-info.md
+              href: api/get-alert-related-domain-info.md
             - name: Get alert related file information
-              href: get-alert-related-files-info.md
+              href: api/get-alert-related-files-info.md
             - name: Get alert-related IPs information
-              href: get-alert-related-ip-info.md
+              href: api/get-alert-related-ip-info.md
             - name: Get alert-related device information
-              href: get-alert-related-machine-info.md
+              href: api/get-alert-related-machine-info.md
             - name: Get alert-related user information
-              href: get-alert-related-user-info.md
+              href: api/get-alert-related-user-info.md
 
           - name: Assessments of vulnerabilities and secure configurations
             items:
             - name: Export assessment methods and properties
-              href: get-assessment-methods-properties.md
+              href: api/get-assessment-methods-properties.md
             - name: Export secure configuration assessment
-              href: get-assessment-secure-config.md
+              href: api/get-assessment-secure-config.md
             - name: Export software inventory assessment
-              href: get-assessment-software-inventory.md
+              href: api/get-assessment-software-inventory.md
             - name: Export non product code software inventory assessment
-              href: get-assessment-non-cpe-software-inventory.md
+              href: api/get-assessment-non-cpe-software-inventory.md
             - name: Export software vulnerabilities assessment
-              href: get-assessment-software-vulnerabilities.md
+              href: api/get-assessment-software-vulnerabilities.md
 
           - name: Authenticated scan
             items:
             - name: Authenticated scan methods and properties
-              href: get-authenticated-scan-properties.md
+              href: api/get-authenticated-scan-properties.md
             - name: Get all scan definitions
-              href: get-all-scan-definitions.md
+              href: api/get-all-scan-definitions.md
             - name: Add, delete or update a scan definition
-              href: add-a-new-scan-definition.md
+              href: api/add-a-new-scan-definition.md
             - name: Get all scan agents
-              href: get-all-scan-agents.md
+              href: api/get-all-scan-agents.md
             - name: Get scan agent by Id
-              href: get-agent-details.md
+              href: api/get-agent-details.md
             - name: Get scan history by definition
-              href: get-scan-history-by-definition.md
+              href: api/get-scan-history-by-definition.md
             - name: Get scan history by session
-              href: get-scan-history-by-session.md
+              href: api/get-scan-history-by-session.md
 
           - name: Browser extensions
             items:
             - name: Export browser extensions assessment
-              href: get-assessment-browser-extensions.md
+              href: api/get-assessment-browser-extensions.md
             - name: Get browser extensions permission information
-              href: get-browser-extensions-permission-info.md
+              href: api/get-browser-extensions-permission-info.md
 
           - name: Automated investigation
             items:
             - name: Investigation methods and properties
-              href: investigation.md
+              href: api/investigation.md
             - name: List Investigation
-              href: get-investigation-collection.md
+              href: api/get-investigation-collection.md
             - name: Get Investigation
-              href: get-investigation-object.md
+              href: api/get-investigation-object.md
             - name: Start Investigation
-              href: initiate-autoir-investigation.md
+              href: api/initiate-autoir-investigation.md
 
           - name: Device Health
             items:
             - name: Export device health methods and properties
-              href: device-health-api-methods-properties.md
+              href: api/device-health-api-methods-properties.md
             - name: Export device antivirus health report
-              href: device-health-export-antivirus-health-report-api.md
+              href: api/device-health-export-antivirus-health-report-api.md
 
           - name: Certificate inventory
             items:
             - name: Export certificate inventory assessment
-              href: export-certificate-inventory-assessment.md
+              href: api/export-certificate-inventory-assessment.md
 
           - name: Domain
             items:
             - name: Get domain related alerts
-              href: get-domain-related-alerts.md
+              href: api/get-domain-related-alerts.md
             - name: Get domain related machines
-              href: get-domain-related-machines.md
+              href: api/get-domain-related-machines.md
             - name: Get domain statistics
-              href: get-domain-statistics.md
+              href: api/get-domain-statistics.md
 
           - name: File
             items:
             - name: File methods and properties
-              href: files.md
+              href: api/files.md
             - name: Get file information
-              href: get-file-information.md
+              href: api/get-file-information.md
             - name: Get file related alerts
-              href: get-file-related-alerts.md
+              href: api/get-file-related-alerts.md
             - name: Get file related machines
-              href: get-file-related-machines.md
+              href: api/get-file-related-machines.md
             - name: Get file statistics
-              href: get-file-statistics.md
+              href: api/get-file-statistics.md
 
           - name: Indicators
             items:
             - name: Indicators methods and properties
-              href: ti-indicator.md
+              href: api/ti-indicator.md
             - name: List Indicators
-              href: get-ti-indicators-collection.md
+              href: api/get-ti-indicators-collection.md
             - name: Submit Indicator
-              href: post-ti-indicator.md
+              href: api/post-ti-indicator.md
             - name: Import Indicator
-              href: import-ti-indicators.md
+              href: api/import-ti-indicators.md
             - name: Delete Indicator
-              href: delete-ti-indicator-by-id.md
+              href: api/delete-ti-indicator-by-id.md
 
             - name: Batch Delete Indicators
-              href: batch-delete-ti-indicators.md
+              href: api/batch-delete-ti-indicators.md
           - name: Information gathering
             items:
             - name: Export information gathering assessment
-              href: get-assessment-information-gathering.md
+              href: api/get-assessment-information-gathering.md
 
           - name: IP
             items:
             - name: Get IP related alerts
-              href: get-ip-related-alerts.md
+              href: api/get-ip-related-alerts.md
             - name: Get IP statistics
-              href: get-ip-statistics.md
+              href: api/get-ip-statistics.md
 
           - name: Live response library
             items:
@@ -1113,185 +1192,182 @@
           - name: Machine
             items:
             - name: Machine methods and properties
-              href: machine.md
+              href: api/machine.md
             - name: List machines
-              href: get-machines.md
+              href: api/get-machines.md
             - name: Get machine by ID
-              href: get-machine-by-id.md
+              href: api/get-machine-by-id.md
             - name: Get machine log on users
-              href: get-machine-log-on-users.md
+              href: api/get-machine-log-on-users.md
             - name: Get machine related alerts
-              href: get-machine-related-alerts.md
+              href: api/get-machine-related-alerts.md
             - name: Get installed software
-              href: get-installed-software.md
+              href: api/get-installed-software.md
             - name: Get discovered vulnerabilities
-              href: get-discovered-vulnerabilities.md
+              href: api/get-discovered-vulnerabilities.md
             - name: Get security recommendations
-              href: get-security-recommendations.md
+              href: api/get-security-recommendations.md
             - name: Add or remove a machine tag
-              href: add-or-remove-machine-tags.md
+              href: api/add-or-remove-machine-tags.md
             - name: Add or remove a tag from multiple machines
-              href: add-or-remove-multiple-machine-tags.md
+              href: api/add-or-remove-multiple-machine-tags.md
             - name: Find machines by IP
-              href: find-machines-by-ip.md
+              href: api/find-machines-by-ip.md
             - name: Find device information by internal IP
-              href: find-machine-info-by-ip.md
+              href: api/find-machine-info-by-ip.md
             - name: Find machines by tag
-              href: find-machines-by-tag.md
+              href: api/find-machines-by-tag.md
             - name: Get missing KBs
-              href: get-missing-kbs-machine.md
+              href: api/get-missing-kbs-machine.md
             - name: Set device value
-              href: set-device-value.md
+              href: api/set-device-value.md
             - name: Update machine
-              href: update-machine-method.md
+              href: api/update-machine-method.md
 
           - name: Machine Action
             items:
             - name: Machine Action methods and properties
-              href: machineaction.md
+              href: api/machineaction.md
             - name: List Machine Actions
-              href: get-machineactions-collection.md
+              href: api/get-machineactions-collection.md
             - name: Get Machine Action
-              href: get-machineaction-object.md
+              href: api/get-machineaction-object.md
             - name: Collect investigation package
-              href: collect-investigation-package.md
+              href: api/collect-investigation-package.md
             - name: Get investigation package SAS URI
-              href: get-package-sas-uri.md
+              href: api/get-package-sas-uri.md
             - name: Get live response result
-              href: get-live-response-result.md
+              href: api/get-live-response-result.md
             - name: Isolate machine
-              href: isolate-machine.md
+              href: api/isolate-machine.md
             - name: Release machine from isolation
-              href: unisolate-machine.md
+              href: api/unisolate-machine.md
             - name: Restrict app execution
-              href: restrict-code-execution.md
+              href: api/restrict-code-execution.md
             - name: Remove app restriction
-              href: unrestrict-code-execution.md
+              href: api/unrestrict-code-execution.md
             - name: Run antivirus scan
-              href: run-av-scan.md
+              href: api/run-av-scan.md
             - name: Run live response
-              href: run-live-response.md
+              href: api/run-live-response.md
             - name: Offboard machine
-              href: offboard-machine-api.md
+              href: api/offboard-machine-api.md
             - name: Stop and quarantine file
-              href: stop-and-quarantine-file.md
+              href: api/stop-and-quarantine-file.md
             - name: Cancel machine action
-              href: cancel-machine-action.md
+              href: api/cancel-machine-action.md
 
           - name: Recommendation
             items:
             - name: Recommendation methods and properties
               href: recommendation.md
             - name: List all recommendations
-              href: get-all-recommendations.md
+              href: api/get-all-recommendations.md
             - name: Get recommendation by ID
-              href: get-recommendation-by-id.md
+              href: api/get-recommendation-by-id.md
             - name: Get recommendation by software
-              href: list-recommendation-software.md
+              href: api/list-recommendation-software.md
             - name: List machines by recommendation
-              href: get-recommendation-machines.md
+              href: api/get-recommendation-machines.md
             - name: List vulnerabilities by recommendation
-              href: get-recommendation-vulnerabilities.md
+              href: api/get-recommendation-vulnerabilities.md
 
           - name: Remediation activity
             items:
             - name: Remediation activity methods and properties
-              href: get-remediation-methods-properties.md
+              href: api/get-remediation-methods-properties.md
             - name: Get one remediation activity by ID
-              href: get-remediation-one-activity.md
+              href: api/get-remediation-one-activity.md
             - name: List all remediation activities
-              href: get-remediation-all-activities.md
+              href: api/get-remediation-all-activities.md
             - name: List exposed devices of one remediation activity
-              href: get-remediation-exposed-devices-activities.md
+              href: api/get-remediation-exposed-devices-activities.md
 
           - name: Score
             items:
             - name: Score methods and properties
-              href: score.md
+              href: api/score.md
             - name: List exposure score by machine group
-              href: get-machine-group-exposure-score.md
+              href: api/get-machine-group-exposure-score.md
             - name: Get exposure score
-              href: get-exposure-score.md
+              href: api/get-exposure-score.md
             - name: Get device secure score
-              href: get-device-secure-score.md
+              href: api/get-device-secure-score.md
 
           - name: Security baselines
             items:
             - name: Export security baselines assessment
-              href: export-security-baseline-assessment.md
+              href: api/export-security-baseline-assessment.md
             - name: List security baselines assessment profiles
-              href: get-security-baselines-assessment-profiles.md
+              href: api/get-security-baselines-assessment-profiles.md
             - name: Get baseline profile configurations
-              href: get-security-baselines-assessment-configurations.md
+              href: api/get-security-baselines-assessment-configurations.md
 
           - name: Software
             items:
             - name: Software methods and properties
-              href: software.md
+              href: api/software.md
             - name: List software
-              href: get-software.md
+              href: api/get-software.md
             - name: Get software by ID
-              href: get-software-by-id.md
+              href: api/get-software-by-id.md
             - name: List software version distribution
-              href: get-software-ver-distribution.md
+              href: api/get-software-ver-distribution.md
             - name: List machines by software
-              href: get-machines-by-software.md
+              href: api/get-machines-by-software.md
             - name: List vulnerabilities by software
-              href: get-vuln-by-software.md
+              href: api/get-vuln-by-software.md
             - name: Get missing KBs
-              href: get-missing-kbs-software.md
-            - name: Get KB collection API
-              href: get-machinegroups-collection.md
-
+              href: api/get-missing-kbs-software.md
           - name: User
             items:
             - name: User methods
-              href: user.md
+              href: api/user.md
             - name: Get user related alerts
-              href: get-user-related-alerts.md
+              href: api/get-user-related-alerts.md
             - name: Get user related machines
-              href: get-user-related-machines.md
+              href: api/get-user-related-machines.md
 
           - name: Vulnerability
             items:
             - name: Vulnerability methods and properties
-              href: vulnerability.md
+              href: api/vulnerability.md
             - name: List vulnerabilities
-              href: get-all-vulnerabilities.md
+              href: api/get-all-vulnerabilities.md
             - name: List vulnerabilities by machine and software
-              href: get-all-vulnerabilities-by-machines.md
+              href: api/get-all-vulnerabilities-by-machines.md
             - name: Get vulnerability by ID
-              href: get-vulnerability-by-id.md
+              href: api/get-vulnerability-by-id.md
             - name: List machines by vulnerability
-              href: get-machines-by-vulnerability.md
+              href: api/get-machines-by-vulnerability.md
 
         - name: How to use APIs - Samples
           items:
           - name: Power Automate
             href: api-microsoft-flow.md
           - name: Power BI
-            href: api-power-bi.md
+            href: api/api-power-bi.md
           - name: Advanced Hunting using Python
-            href: run-advanced-query-sample-python.md
+            href: api/run-advanced-query-sample-python.md
           - name: Advanced Hunting using PowerShell
-            href: run-advanced-query-sample-powershell.md
+            href: api/run-advanced-query-sample-powershell.md
           - name: Using OData Queries
-            href: exposed-apis-odata-samples.md
+            href: api/exposed-apis-odata-samples.md
           - name: Advanced Hunting with PowerShell API Guide
-            href: exposed-apis-full-sample-powershell.md
+            href: api/exposed-apis-full-sample-powershell.md
 
       - name: Raw data streaming API
         items:
         - name: Raw data streaming
-          href: raw-data-export.md
+          href: api/raw-data-export.md
         - name: Stream advanced hunting events to Azure Events hub
-          href: raw-data-export-event-hub.md
+          href: api/raw-data-export-event-hub.md
         - name: Stream advanced hunting events to your storage account
-          href: raw-data-export-storage.md
+          href: api/raw-data-export-storage.md
 
       - name: SIEM integration
         items:
-        - name: Migrate from the MDE SIEM API to the Microsoft 365 Defender alerts API
+        - name: Migrate from the MDE SIEM API to the Microsoft Defender XDR alerts API
           href: configure-siem.md
         - name: Troubleshoot SIEM tool integration issues
           href: troubleshoot-siem.md
@@ -1304,20 +1380,6 @@
           href: connected-applications.md
         - name: API explorer
           href: api-explorer.md
-
-      - name: Role-based access control
-        items:
-        - name: Manage portal access using RBAC
-          href: rbac.md
-        - name: Create and manage roles
-          href: user-roles.md
-        - name: Create and manage device groups
-          items:
-          - name: Using device groups
-            href: machine-groups.md
-          - name: Create and manage device tags
-            href: machine-tags.md
-
     - name: Managed security service provider (MSSP) integration
       items:
       - name: Configure managed security service provider integration
@@ -1348,14 +1410,6 @@
         href: conditional-access.md
       - name: Microsoft Defender for Cloud Apps integration overview
         href: microsoft-cloud-app-security-integration.md
-
-    - name: Access the Microsoft Defender for Endpoint Community Center
-      href: community.md
-
-    - name: Helpful resources
-      href: helpful-resources.md
-
-
   - name: Troubleshoot
     items:
     - name: Troubleshoot onboarding issues
@@ -1385,20 +1439,34 @@
 
     - name: Troubleshoot Microsoft Defender for Endpoint on macOS
       items:
-      - name: Troubleshoot installation issues
+      - name: Troubleshooting mode on macOS
+        href: mac-troubleshoot-mode.md
+      - name: Troubleshoot macOS installation issues
         href: mac-support-install.md
+      - name: Troubleshoot macOS performance issues overview
+        href: mac-support-perf-overview.md
+        displayName: Troubleshoot performance issues for Microsoft Defender for Endpoint on macOS
       - name: Troubleshoot performance issues
         href: mac-support-perf.md
       - name: Troubleshoot cloud connectivity
         href: troubleshoot-cloud-connect-mdemac.md
-      - name: Troubleshoot kernel extension issues
-        href: mac-support-kext.md
       - name: Troubleshoot license issues
         href: mac-support-license.md
+      - name: Troubleshoot system extention issues
+        href: mac-support-sys-ext.md
+        items:
+        - name: Intune
+          href: manage-profiles-approve-sys-extensions-intune.md
+        - name: JamF
+          href: manage-sys-extensions-using-jamf.md
+        - name: Manual deployment
+          href: manage-sys-extensions-manual-deployment.md
+
+
 
     - name: Troubleshoot Microsoft Defender for Endpoint on Linux
       items:
-      - name: Troubleshoot installation issues
+      - name: Troubleshoot Linux installation issues
         href: linux-support-install.md
       - name: Investigate agent health issues
         href: health-status.md
@@ -1443,13 +1511,15 @@
         href: troubleshoot-mdatp.md
       - name: Contact Microsoft Defender for Endpoint support
         href: contact-support.md
-
     - name: Troubleshoot live response issues
       href: troubleshoot-live-response.md
-
     - name: Collect support logs using LiveAnalyzer
       href: troubleshoot-collect-support-log.md
-
+    - name: Troubleshoot Microsoft Defender Antivirus settings
+      href: troubleshoot-settings.md
+    - name: Troubleshooting Security Intelligence Updates from Microsoft Update source
+      href: security-intelligence-update-tshoot.md
+      displayName: Troubleshooting Security Intelligence Updates from Microsoft Update source
     - name: Troubleshoot attack surface reduction issues
       items:
       - name: Network protection
@@ -1459,9 +1529,9 @@
       - name: Migrate to Attack surface reduction rules
         href: migrating-asr-rules.md
 
-  - name: Microsoft 365 Defender docs
+  - name: Microsoft Defender XDR docs
     items:
-    - name: Microsoft 365 Defender
+    - name: Microsoft Defender XDR
       href: ../defender/index.yml
     - name: Defender for Office 365
       href: ../office-365-security/index.yml
@@ -1511,12 +1581,3 @@
 
 
         
-
-
-
-
-
-
-
-
-

@@ -1,9 +1,8 @@
 ---
 title: Address compromised user accounts with automated investigation and response
-keywords: AIR, autoIR, Microsoft Defender for Endpoint, automated, investigation, response, remediation, threats, advanced, threat, protection, compromised
-ms.author: deniseb
-author: denisebmsft
-manager: dansimp
+ms.author: chrisda
+author: chrisda
+manager: deniseb
 audience: ITPro
 ms.topic: conceptual
 ms.localizationpriority: medium
@@ -16,19 +15,18 @@ ms.collection:
 ms.custom:
 ms.date: 06/09/2023
 description: Learn how to speed up the process of detecting and addressing compromised user accounts with automated investigation and response capabilities in Microsoft Defender for Office 365 Plan 2.
-ms.subservice: mdo
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 1 and Plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # Address compromised user accounts with automated investigation and response
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-[Microsoft Defender for Office 365 Plan 2](defender-for-office-365.md#whats-the-difference-between-microsoft-defender-for-office-365-plan-1-and-plan-2) includes powerful [automated investigation and response](air-about.md) (AIR) capabilities. Such capabilities can save your security operations team a lot of time and effort dealing with threats. This article describes one of the facets of the AIR capabilities, the compromised user security playbook.
+[Microsoft Defender for Office 365 Plan 2](mdo-about.md#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet) includes powerful [automated investigation and response](air-about.md) (AIR) capabilities. Such capabilities can save your security operations team a lot of time and effort dealing with threats. This article describes one of the facets of the AIR capabilities, the compromised user security playbook.
 
 The compromised user security playbook enables your organization's security team to:
 
@@ -52,25 +50,26 @@ When a user account is compromised, alerts are triggered. And in some cases, tha
 > You must have appropriate permissions to perform the following tasks. See [Required permissions to use AIR capabilities](air-about.md#required-permissions-to-use-air-capabilities).
 
 Watch this short video to learn how you can detect and respond to user compromise in Microsoft Defender for Office 365 using Automated Investigation and Response (AIR) and compromised user alerts.
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWAl83]
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWAl83]
 
 ### View and investigate restricted users
 
-You have a few options for navigating to a list of restricted users. For example, in the Microsoft 365 Defender portal, you can go to **Email & collaboration** \> **Review** \> **Restricted Users**. The following procedure describes navigation using the **Alerts** dashboard, which is a good way to see various kinds of alerts that might have been triggered.
+You have a few options for navigating to a list of restricted users. For example, in the Microsoft Defender portal, you can go to **Email & collaboration** \> **Review** \> **Restricted Users**. The following procedure describes navigation using the **Alerts** dashboard, which is a good way to see various kinds of alerts that might have been triggered.
 
-1. Open the Microsoft 365 Defender portal at <https://security.microsoft.com> and go to **Incidents & alerts** \> **Alerts**. Or, to go directly to the **Alerts** page, use <https://security.microsoft.com/alerts>.
+1. Open the Microsoft Defender portal at <https://security.microsoft.com> and go to **Incidents & alerts** \> **Alerts**. Or, to go directly to the **Alerts** page, use <https://security.microsoft.com/alerts>.
 
 2. On the **Alerts** page, filter the results by time period and the policy named **User restricted from sending email**.
 
-   :::image type="content" source="../../media/m365-sc-alerts-page-with-restricted-user.png" alt-text="The Alerts page in the Microsoft 365 Defender portal filtered for restricted users" lightbox="../../media/m365-sc-alerts-page-with-restricted-user.png":::
+   :::image type="content" source="../../media/m365-sc-alerts-page-with-restricted-user.png" alt-text="The Alerts page in the Microsoft Defender portal filtered for restricted users" lightbox="../../media/m365-sc-alerts-page-with-restricted-user.png":::
 
-3. If you select the entry by clicking on the name, a **User restricted from sending email** page opens with additional details for you to review. Next to the **Manage alert** button, you can click ![More options icon.](../../media/m365-cc-sc-more-actions-icon.png) **More options** and then select **View restricted user details** to go to the **Restricted users** page, where you can [release the restricted user](removing-user-from-restricted-users-portal-after-spam.md).
+3. If you select the entry by clicking on the name, a **User restricted from sending email** page opens with additional details for you to review. Next to the **Manage alert** button, you can click :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More options** and then select **View restricted user details** to go to the **Restricted users** page, where you can [release the restricted user](outbound-spam-restore-restricted-users.md).
 
   :::image type="content" source="../../media/m365-sc-alerts-user-restricted-from-sending-email-page.png" alt-text="The User restricted from sending email page" lightbox="../../media/m365-sc-alerts-user-restricted-from-sending-email-page.png":::
 
 ### View details about automated investigations
 
-When an automated investigation has begun, you can see its details and results in the **Action center** in the Microsoft 365 Defender portal.
+When an automated investigation has begun, you can see its details and results in the **Action center** in the Microsoft Defender portal.
 
 To learn more, see [View details of an investigation](air-view-investigation-results.md).
 
@@ -84,7 +83,7 @@ To learn more, see [View details of an investigation](air-view-investigation-res
 
 - [Review the required permissions to use AIR capabilities](air-about.md#required-permissions-to-use-air-capabilities)
 
-- [Find and investigate malicious email in Office 365](investigate-malicious-email-that-was-delivered.md)
+- [Find and investigate malicious email in Office 365](threat-explorer-investigate-delivered-malicious-email.md)
 
 - [Learn about AIR in Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 

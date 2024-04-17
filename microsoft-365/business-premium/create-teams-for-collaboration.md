@@ -2,18 +2,17 @@
 title: "Use Microsoft Teams for collaboration"
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
-manager: dansimp
+ms.author: chrisda
+author: chrisda
+manager: deniseb
 ms.audience: Admin
 ms.topic: how-to
-ms.service: microsoft-365-security
-ms.subservice: m365bp
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.date: 09/15/2022
-ms.collection: 
+ms.date: 10/10/2023
+ms.collection:
 - Adm_O365
-- M365-subscription-management 
+- M365-subscription-management
 - M365-identity-device-management
 - M365-Campaigns
 - tier1
@@ -107,7 +106,7 @@ Learn more about Microsoft Teams at [Microsoft Teams technical documentation](/m
 > [!NOTE]
 > You must be an admin to create an organization-wide team. For more information, see [What is an Admin in Microsoft 365?](https://support.office.com/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US).
 
-## Next objective
+## Next step
 
-Once you complete this objective, you need to securely [set up meetings](set-up-meetings.md).
+[Set up meetings](set-up-meetings.md).
 

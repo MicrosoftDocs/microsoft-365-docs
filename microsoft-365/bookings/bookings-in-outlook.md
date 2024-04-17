@@ -3,7 +3,7 @@ title: "Bookings with me"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 05/02/2022
+ms.date: 03/25/2023
 audience: Admin
 ms.topic: article
 ms.service: bookings
@@ -11,6 +11,9 @@ ms.localizationpriority: medium
 ms.collection:
 - Tier1
 - scotvorg
+- essentials-overview
+- essentials-get-started
+- essentials-manage
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Use Bookings with me to let others schedule meetings with you in Outlook."
 ---
@@ -54,6 +57,7 @@ Bookings with me is available in the following subscriptions:
 
 - Office 365: A3, A5, E1, E3, E5, F1, F3
 - Microsoft 365: A3, A5, E1, E3, E5, F1, F3, Business Basic, Business Standard, Business Premium
+- Bookings with me is available for G1, G3, G5
 
 Bookings with me is on by default for users with these subscriptions.
 
@@ -63,9 +67,9 @@ For more information, see the [Bookings with me Microsoft 365 Roadmap item](http
 
 ### Prerequisites for using Bookings with me
 
-1. Bookings with me and Bookings share the same licensing model. However, Bookings doesn't have to be turned on for the organization using tenant settings for users to access Bookings with me. The Bookings app must be enabled for users to have access to Bookings with me.
+Bookings with me and Bookings share the same licensing model. However, Bookings doesn't have to be turned on for the organization using tenant settings for users to access Bookings with me. The Bookings app must be enabled for users to have access to Bookings with me.
 
-   To turn on Bookings with me without access to Bookings, block access to Microsoft Bookings using the [OWA Mailbox policy PowerShell command](/powershell/module/exchange/set-owamailboxpolicy) or follow the instructions here: [Turn Microsoft Bookings on or off](turn-bookings-on-or-off.md).
+To turn on Bookings with me without access to Bookings, block access to Microsoft Bookings using the [OWA Mailbox policy PowerShell command](/powershell/module/exchange/set-owamailboxpolicy) or follow the instructions here: [Turn Microsoft Bookings on or off](turn-bookings-on-or-off.md).
 
 ## Turn Bookings with me on or off
 
@@ -88,14 +92,15 @@ Use the **Get-OrganizationConfig** and **Set-OrganizationConfig** commands to fi
 
     If the command returns "EwsEnabled: **$true**" then proceed to Step 2.
 
-    If the command returns "EwsEnabled:" (empty is default), then enable, but only if need to block "Bookings with", and proceed to Step 2.
-    Otherwise the default values of EwsEnabled is enough to leave "Bookings with me" enabled, no further changes are needed.
+    If the command returns "EwsEnabled:" (empty is default), no further changes are needed, proceed to Step 2.
 
+    If the command returns "EwsEnabled: **$false**" then run the following command and proceed to Step 2.
+   
    ```PowerShell
    Set-OrganizationConfig -EwsEnabled: $true
    ```
 
-2. Check your EwsApplicationAccessPolicy by running the following command:
+3. Check your EwsApplicationAccessPolicy by running the following command:
 
    ```PowerShell
    Get-OrganizationConfig | Format-List EwsApplicationAccessPolicy,Ews*List

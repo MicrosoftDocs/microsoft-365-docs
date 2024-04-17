@@ -1,14 +1,9 @@
 ---
-title: Handle errors in advanced hunting for Microsoft 365 Defender
+title: Handle errors in advanced hunting for Microsoft Defender XDR
 description: Understand errors displayed when using advanced hunting
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema, kusto, timeout, resources, errors, unknown error, limits, quota, parameter, allocation
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
-ms.subservice: m365d
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.service: defender-xdr
+ms.subservice: adv-hunting
 f1.keywords: 
   - NOCSH
 ms.author: maccruz
@@ -20,16 +15,16 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: conceptual
-ms.date: 02/16/2021
+ms.date: 02/16/2024
 ---
 
 # Handle advanced hunting errors
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../includes/microsoft-defender.md)]
 
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 
 Advanced hunting displays errors to notify for syntax mistakes and whenever queries hit [predefined quotas and usage parameters](advanced-hunting-limits.md). Refer to the table below for tips on how to resolve or avoid errors.
@@ -51,4 +46,4 @@ Advanced hunting displays errors to notify for syntax mistakes and whenever quer
 - [Quotas and usage parameters](advanced-hunting-limits.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
 - [Kusto Query Language overview](/azure/data-explorer/kusto/query/)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]
