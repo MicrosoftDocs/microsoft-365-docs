@@ -209,7 +209,7 @@ Here's a list of what to check:
    
    For more information about the output, see [Review events and errors using Event Viewer](event-error-codes.md).
 
-4. **Make sure that Microsoft Defender Antivirus is up to date**. The best way to make sure your antivirus protection is up to date is by using Windows Update. If Microsoft Defender Antivirus isn't up to date, or if you get an error, contact your security team. 
+4. **Make sure that Microsoft Defender Antivirus is up to date**. The best way to make sure your antivirus protection is up to date is by using Windows Update. If you encounter issues or get an error, contact your security team. 
 
    For more information about updates, see [Microsoft Defender Antivirus security intelligence and product updates](microsoft-defender-antivirus-updates.md).
 
