@@ -59,9 +59,9 @@ File based threats are now only one possible vector for malicious software. File
 
 Defender for Endpoint is continuously monitoring Operating System calls such as file read, file write, create socket, and other process level operations. The Defender for Endpoint EDR sensor acquires Opportunistic Locks on local NTFS files systems and is, therefore, unlikely to impact applications. Opportunistic locks aren't possible on remote network file systems, and in rare cases, a lock could cause general nonspecific errors in SAP applications such as *Access Denied*.
 
-SAP is not able to provide any level of support for EDR/XDR software as the mechanisms are adaptive; therefore, the mechanisms are not predictable and potentially are not reproducible. When problems are identified on systems running advanced security solutions, SAP recommends disabling the security software and trying to reproduce the problem. A support case can then be raised with the security software vendor. 
+SAP isn't able to provide any level of support for EDR/XDR software as the mechanisms are adaptive; therefore, the mechanisms aren't predictable and potentially aren't reproducible. When problems are identified on systems running advanced security solutions, SAP recommends disabling the security software and trying to reproduce the problem. A support case can then be raised with the security software vendor. 
 
-SAP Support policy is documented in [3356389 - Antivirus or other security software affecting SAP operations](https://me.sap.com/notes/3356389)
+SAP Support policy is documented in [3356389 - Antivirus or other security software affecting SAP operations](https://me.sap.com/notes/3356389).
 
 ## Recommended SAP OSS Notes
 
@@ -79,7 +79,7 @@ SAP Support policy is documented in [3356389 - Antivirus or other security softw
 
 ## SAP applications on Windows: Top 10 recommendations
 
-1. Limiting access to SAP servers, blocking network ports and all other common security protection measures remain an essential first step. The threat landscape has evolved from "file based" Viruses to file-less complex and sophisticated threats. Steps such as **blocking ports and limiting logon/access** to VMs is **no longer considered sufficient** to fully mitigate modern threats.
+1. Limit access to SAP servers, block network ports, and all other common security protection measures. This is an essential first step. The threat landscape has evolved from "file based" Viruses to file-less complex and sophisticated threats. Steps such as **blocking ports and limiting logon/access** to VMs is **no longer considered sufficient** to fully mitigate modern threats.
 
 2. Deploy Defender for Endpoint to non-productive systems first before deploying to production systems. Deploying Defender for Endpoint directly to production systems without testing is highly risky and has led to downtime. If it is not possible to delay deploying Defender for Endpoint to production systems, consider temporarily disabling Tamper Protection and Real Time Protection. 
 
