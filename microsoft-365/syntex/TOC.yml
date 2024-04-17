@@ -39,12 +39,14 @@
               href: prebuilt-overview.md
             - name: Admin setup
               href: prebuilt-setup.md
-            - name: Use a contracts model 
+            - name: Contracts model 
               href: prebuilt-model-contract.md
-            - name: Use an invoices model 
+            - name: Invoices model 
               href: prebuilt-model-invoice.md
-            - name: Use a receipts model 
+            - name: Receipts model 
               href: prebuilt-model-receipt.md
+            - name: Sensitive information model 
+              href: prebuilt-model-sensitive-info.md
             - name: Manage your model
               items:
                 - name: Apply a model
