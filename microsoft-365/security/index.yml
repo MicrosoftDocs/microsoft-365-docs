@@ -65,14 +65,14 @@ conceptualContent:
            text: Data, Privacy, and Security for Microsoft Copilot for Microsoft 365     
  
    # Card
-      - title: Microsoft Teams security
+      - title: Microsoft Teams
         links:
          - url: /microsoftteams/teams-security-guide
            itemType: overview
            text: Teams Security guide
 
   # Card
-      - title: SharePoint and OneDrive
+      - title: Microsoft SharePoint and Microsoft OneDrive
         links:
          - url: /sharepoint/safeguarding-your-data
            itemType: overview
@@ -85,7 +85,7 @@ conceptualContent:
         links:
          - url: /Viva/viva-security
            itemType: overview
-           text: Understand how security works in Microsoft 
+           text: Understand how security works in Microsoft Viva
   # Card
       - title: Microsoft Defender products and services
         links:
