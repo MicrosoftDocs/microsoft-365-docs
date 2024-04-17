@@ -138,7 +138,7 @@ Here's a list of SAP articles you can use as needed:
 
 ## Deployment methodology
 
-SAP and Microsoft don't recommend deploying Defender for Endpoint on Windows directly to all development, QAS, and production systems simultaneously, and/or without careful testing and monitoring. Customers who deployed Defender for Endpoint and other similar software in an uncontrolled manner without adequate testing experienced system downtime as a result. 
+SAP and Microsoft both don't recommend deploying Defender for Endpoint on Windows directly to all development, QAS, and production systems simultaneously, and/or without careful testing and monitoring. Customers who deployed Defender for Endpoint and other similar software in an uncontrolled manner without adequate testing experienced system downtime as a result. 
 
 Defender for Endpoint on Windows and any other software or configuration change should be deployed into development systems first, validated in QAS, and only then deployed into production environments. 
 
