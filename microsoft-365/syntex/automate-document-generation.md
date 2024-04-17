@@ -85,6 +85,3 @@ To fill the table, placeholder values should be passed as a list of JSON objects
 
 11. The action doesn't support images, and templates containing these fields are hidden while selecting the templates in the action.
 
-## See also
-
- [Overview of content assembly in Microsoft Syntex](content-assembly.md)
