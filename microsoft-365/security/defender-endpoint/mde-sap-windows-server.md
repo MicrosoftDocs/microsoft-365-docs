@@ -31,13 +31,27 @@ Enterprise Security is a specialist role and the activities described below shou
 
 ### Get an overview of Defender for Endpoint
 
+Defender for Endpoint is a component of [Microsoft Defender XDR](/microsoft-365/security/defender/), and can be integrated with your SIEM/SOAR solution. 
+
 Before you begin to plan or deploy Defender for Endpoint on Windows Server with SAP, take a moment to get an overview. Watch the following video to learn more about Defender for Endpoint:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4wDob]
 
-Also, see [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) for a detailed overview.
+Also, see the following resources for more detailed information:
 
-Defender for Endpoint is a component of [Microsoft Defender XDR](/microsoft-365/security/defender/), and can be integrated with your SIEM/SOAR solution. 
+- [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)
+- [Microsoft Security documentation and training - Security documentation](/security/)
+
+The Microsoft Defender XDR solution incorporates many security components that are beyond the scope of this article. In this article, we focus on two main areas of Defender for Endpoint:
+
+- Next-generation protection (which includes antivirus protection). Next-generation protection is an antivirus product like other antivirus solutions for Windows environments.
+- Endpoint Detection and Response (EDR). EDR detects suspicious activity and system calls and provides an additional layer of protection against threats that have bypassed antivirus protection. 
+
+Microsoft and other security software vendors track threats and provide trend information. For information, see [Cyberthreats, viruses, and malware - Microsoft Security Intelligence](https://www.microsoft.com/en-us/wdsi/threats). 
+
+
+> [!NOTE]
+> For information on Microsoft Defender for SAP on Linux, see [Deployment guidance for Microsoft Defender for Endpoint on Linux for SAP](/microsoft-365/security/defender-endpoint/mde-linux-deployment-on-sap). Defender for Endpoint on Linux is significantly different than the Windows version. 
 
 ## SAP support for conventional antivirus solutions
 
