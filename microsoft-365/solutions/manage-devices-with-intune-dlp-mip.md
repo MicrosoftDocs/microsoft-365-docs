@@ -26,6 +26,8 @@ ms.custom:
 keywords: 
 ---
 
+# Step 7. Implement data loss prevention (DLP) with information protection capabilities
+
 If your organization has already put the time into understanding your data, developing a data sensitivity schema, and applying the schema, you might be ready to extend elements of this schema to endpoints by using Microsoft Purview Data Loss Prevention (DLP) policies.
 
 Endpoint data loss prevention (Endpoint DLP) currently applies to:

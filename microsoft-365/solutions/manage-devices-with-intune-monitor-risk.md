@@ -25,11 +25,13 @@ ms.custom:
 keywords: 
 ---
 
-After your organization has deployed Microsoft Defender for Endpoint, you can gain greater insights and protection of your devices by integrating Microsoft Intune with Defender for Endpoint. For mobile devices, this includes the ability to monitor device risk as a condition for access. For Windows devices, you can monitor compliance of these devices to security baselines. 
+# Step 6. Monitor device risk and compliance to security baselines
+
+After your organization has deployed Microsoft Defender for Endpoint, you can gain greater insights and protection of your devices by integrating Microsoft Intune with Defender for Endpoint. For mobile devices, this includes the ability to monitor device risk as a condition for access. For Windows devices, you can monitor compliance of these devices to security baselines.
 
 Deploying Microsoft Defender for Endpoint includes onboarding endpoints. If you used Intune to onboard endpoints (recommended), then you have already connected Microsoft Intune to Defender for Endpoint. If you used a different method to onboard endpoints to Defender for Endpoint, see [Configure Microsoft Defender for Endpoint in Intune](/mem/intune/protect/advanced-threat-protection-configure) to ensure you have set up the service-to-service connection between Intune and Microsoft Defender for Endpoint. 
 
-:::image type="content" source="../media/devices/devices-defender-for-endpoint-steps.png" alt-text="Defender for Endpoint and Microsoft Intune integration illustration." lightbox="../media/devices/devices-defender-for-endpoint-steps.png":::
+:::image type="content" source="../media/devices/devices-defender-for-endpoint-steps.svg" alt-text="Defender for Endpoint and Microsoft Intune integration illustration." lightbox="../media/devices/devices-defender-for-endpoint-steps.svg":::
 
 In this illustration:
 
@@ -64,7 +66,7 @@ To benefit from the latest data on risks and threats and to minimize conflicts a
 
 Using Defender for Endpoint, you can monitor compliance to these baselines. 
 
-:::image type="content" source="m../media/devices/secconmgmt-baseline-card.png" alt-text="The card for monitoring compliance to security baselines." lightbox="../media/devices/secconmgmt-baseline-card.png":::
+:::image type="content" source="../media/devices/secconmgmt-baseline-card.png" alt-text="The card for monitoring compliance to security baselines." lightbox="../media/devices/secconmgmt-baseline-card.png":::
 
 To deploy security baselines and monitor compliance to these settings, use the steps in this table.
 
