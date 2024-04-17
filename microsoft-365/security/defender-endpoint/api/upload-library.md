@@ -5,8 +5,7 @@ search.appverid: met150
 ms.service: defender-endpoint
 f1.keywords:
 - NOCSH
-ms.author: siosulli![image](https://github.com/itsela-ms/microsoft-365-docs-pr/assets/131248200/7f16464f-ae2f-4a72-a4f0-019aff8c377f)
-
+ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
 manager: deniseb
@@ -18,7 +17,7 @@ ms.collection:
 ms.topic: reference
 ms.subservice: reference
 ms.custom: api
-ms.date: 06/03/2021
+ms.date: 04/17/2024
 ---
 
 # Upload files to the live response library
