@@ -5,7 +5,8 @@ search.appverid: met150
 ms.service: defender-endpoint
 f1.keywords:
 - NOCSH
-ms.author: siosulli
+ms.author: siosulli![image](https://github.com/itsela-ms/microsoft-365-docs-pr/assets/131248200/7f16464f-ae2f-4a72-a4f0-019aff8c377f)
+
 author: siosulli
 ms.localizationpriority: medium
 manager: deniseb
@@ -61,7 +62,7 @@ including how to choose permissions, see [Get started](apis-intro.md).
 Upload
 
 ```HTTP
-POST https://api.securitycenter.microsoft.com/api/libraryfiles
+POST https://api.security.microsoft.com/api/libraryfiles
 ```
 
 ## Request headers
@@ -97,7 +98,7 @@ Request
 Here is an example of the request using curl.
 
 ```CURL
-curl -X POST https://api.securitycenter.microsoft.com/api/libraryfiles -H
+curl -X POST https://api.security.microsoft.com/api/libraryfiles -H
 "Authorization: Bearer \$token" -F "file=\@mdatp1.png" -F
 "ParametersDescription=test"
 -F "HasParameters=true" -F "OverrideIfExists=true" -F "Description=test
