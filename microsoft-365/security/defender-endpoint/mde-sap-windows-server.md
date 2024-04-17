@@ -65,7 +65,7 @@ File based threats are now only one possible vector for malicious software. File
 
 Defender for Endpoint is continuously monitoring operating system calls, such as file read, file write, create socket, and other process level operations. The Defender for Endpoint EDR sensor acquires opportunistic locks on local NTFS files systems and is, therefore, unlikely to impact applications. Opportunistic locks aren't possible on remote network file systems. In rare cases, a lock could cause general nonspecific errors in SAP applications such as *Access Denied*.
 
-SAP isn't able to provide any level of support for EDR/XDR software as the mechanisms are adaptive; therefore, the mechanisms aren't predictable and potentially aren't reproducible. When problems are identified on systems running advanced security solutions, SAP recommends disabling the security software and trying to reproduce the problem. A support case can then be raised with the security software vendor. 
+SAP isn't able to provide any level of support for EDR/XDR software like [Microsoft Defender XDR](../defender/microsoft-365-defender.md) or [Defender for Endpoint](microsoft-defender-endpoint.md). The mechanisms in such solutions are adaptive; therefore, they're not predictable. Further, issues are potentially not reproducible. When problems are identified on systems running advanced security solutions, SAP recommends disabling the security software and then attempting to reproduce the problem. A support case can then be raised with the security software vendor.
 
 SAP Support policy is documented in [3356389 - Antivirus or other security software affecting SAP operations](https://me.sap.com/notes/3356389).
 
