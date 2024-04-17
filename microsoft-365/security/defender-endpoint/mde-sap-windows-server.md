@@ -268,7 +268,7 @@ Another option is to use this command:
 For more information about these commands, see the following resources:
 
 - [MpCmdRun.exe](command-line-arguments-microsoft-defender-antivirus.md)
-- [Update-MpSignature](/powershell/module/defender/update-mpsignature?view=windowsserver2022-ps&preserve=true)
+- [Update-MpSignature](/powershell/module/defender/update-mpsignature?view=windowsserver2022-ps&preserve-view=true)
 
 ### Determine whether EDR in block mode is turned on
 
@@ -278,7 +278,7 @@ For more information about these commands, see the following resources:
 
 There are two modes: Normal and Passive Mode. Testing with SAP systems was done only with `AMRunningMode = Normal` for SAP systems. 
 
-For more information about this command, see [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus?view=windowsserver2022-ps&preserve=true).
+For more information about this command, see [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus?view=windowsserver2022-ps&preserve-view=true).
 
 ### Configure antivirus exclusions
 
@@ -288,7 +288,7 @@ To view exclusions, use the following command:
 
 `Get-MpPreference | Select-Object -Property ExclusionPath`
 
-For more information about this command, see [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus?view=windowsserver2022-ps&preserve=true).
+For more information about this command, see [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus?view=windowsserver2022-ps&preserve-view=true).
 
 For more information about exclusions, see the following resources:
 
