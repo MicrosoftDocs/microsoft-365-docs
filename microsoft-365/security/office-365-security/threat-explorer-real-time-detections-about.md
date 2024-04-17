@@ -404,7 +404,7 @@ When you select an entry by clicking on the **Recipient** value, a details flyou
     - Whether the user has permission to see archive information.
     - Whether the user has permission to see retention information.
     - Whether the user is covered by data loss prevention (DLP).
-    - Whether the user is covered by **Mobile management** at <https://portal.office.com/EAdmin/Device/IntuneInventory.aspx>. <!-- Security Administrator can't open the page--->
+    - Whether the user is covered by **Mobile management** at <https://portal.office.com/EAdmin/Device/IntuneInventory.aspx>. 
 - **Email** section: A table showing the following related information for messages sent to the recipient:
   - **Date**
   - **Subject**
