@@ -11,7 +11,6 @@ ms.subservice: ngp
 ms.localizationpriority: normal
 ms.collection:  
 ms.custom: 
-- QuickDraft  
 - partner-contribution
 ms.reviewer: cgardin; deniseb; siosulli; shlomiakirav  
 search.appverid: MET150  
@@ -23,11 +22,11 @@ audience: ITPro
 
 If your organization uses SAP, it's essential to understand the compatibility and support between Microsoft Defender for Endpoint on Windows Server with EDR and SAP applications. This article helps you understand the support provided by SAP for endpoint protection security solutions like Defender for Endpoint with EDR and how it interacts with SAP applications.
 
-This documentation applies to Microsoft Defender for Endpoint running on Windows Server OS Releases with SAP applications such, as NetWeaver, S4 Hana, and SAP standalone engines, such as LiveCache. This documentation does not cover SAP client software, such as SAPGUI or Microsoft Defender Antivirus on Windows client devices.
+This documentation applies to Microsoft Defender for Endpoint running on Windows Server OS Releases with SAP applications such, as NetWeaver, S4 Hana, and SAP standalone engines, such as LiveCache. This documentation doesn't cover SAP client software, such as SAPGUI or Microsoft Defender Antivirus on Windows client devices.
 
 ## Enterprise security and your SAP Basis team
 
-Enterprise Security is a specialist role and the activities described below should be planned as a joint activity between the Enterprise Security Team and the SAP Basis Team. The Enterprise Security Team will need to coordinate with the SAP Basis Team and jointly design the Defender for Endpoint configuration and analyze any exclusions.  
+Enterprise Security is a specialist role and the activities described below should be planned as a joint activity between the Enterprise Security Team and the SAP Basis Team. The Enterprise Security Team needs to coordinate with the SAP Basis Team and jointly design the Defender for Endpoint configuration and analyze any exclusions.  
 
 ### Get an overview of Defender for Endpoint
 
@@ -37,7 +36,7 @@ Before you begin to plan or deploy Defender for Endpoint on Windows Server with 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4wDob]
 
-Also, see the following resources for more detailed information:
+For more detailed information about Defender for Endpoint and Microsoft securty offerings, see the following resources:
 
 - [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)
 - [Microsoft Security documentation and training - Security documentation](/security/)
