@@ -56,7 +56,7 @@ including how to choose permissions, see [Get started](apis-intro.md).
 
 ## HTTP request
 
-DELETE https://api.securitycenter.microsoft.com/api/libraryfiles/{fileName}
+DELETE https://api.security.microsoft.com/api/libraryfiles/{fileName}
 
 ## Request headers
 
@@ -81,7 +81,7 @@ Request
 Here is an example of the request.
 
 ```HTTP
-DELETE https://api.securitycenter.microsoft.com/api/libraryfiles/script1.ps1
+DELETE https://api.security.microsoft.com/api/libraryfiles/script1.ps1
 ```
 
 ## Related topic
