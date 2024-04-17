@@ -38,7 +38,7 @@ Follow the instructions in [Create a model in Syntex](create-syntex-model.md#set
 
 ## Step 2: Upload an example file to analyze
 
-1. On the **Models** page, in the **Add a file to analyze** section, select **Add a file**.
+1. On the **Models** page, in the **Add entities to detect** section, select **Add entities**.
 
     ![Screenshot of the new models page showing the Add a file to analyze section.](../media/content-understanding/prebuilt-add-file-to-analyze-sensitive-info.png)
 
