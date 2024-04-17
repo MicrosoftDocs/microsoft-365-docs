@@ -235,7 +235,7 @@ Here's a list of what to check:
 
 ## Useful Commands: Microsoft Defender for Endpoint with SAP on Windows Server
 
-The following sections describe how to confirm or configure Defender for Endpoint setings by using PowerShell and Command Prompt:s
+The following sections describe how to confirm or configure Defender for Endpoint setings by using PowerShell and Command Prompt:
 
 ### Update Microsoft Defender Antivirus definitions manually
 
