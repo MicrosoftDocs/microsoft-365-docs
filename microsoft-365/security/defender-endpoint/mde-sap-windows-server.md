@@ -70,6 +70,8 @@ For more information about the SAP Support policy, see [3356389 - Antivirus or o
 
 ## Recommended SAP OSS Notes
 
+Here's a list of SAP articles you can use as needed:
+
 - [3356389 - Antivirus or other security software affecting SAP operations - SAP for Me](https://me.sap.com/notes/3356389)
 
 - [106267 - Virus scanner software on Windows - SAP for Me](https://me.sap.com/notes/106267)
@@ -82,15 +84,15 @@ For more information about the SAP Support policy, see [3356389 - Antivirus or o
 
 - [1497394 - Which files and directories should be excluded from an antivirus scan for SAP BusinessObjects Business Intelligence Platform products in Windows? - SAP for Me](https://me.sap.com/notes/1497394/E)
 
-## SAP applications on Windows: Top 10 recommendations
+## SAP applications on Windows Server: Top 10 recommendations
 
 1. **Limit access to SAP servers, block network ports, and take all other common security protection measures**. This first step is essential. The threat landscape has evolved from file-based viruses to file-less complex and sophisticated threats. Actions, such as **blocking ports and limiting logon/access** to VMs are **no longer considered sufficient** to fully mitigate modern threats.
 
 2. **Deploy Defender for Endpoint to nonproductive systems first before deploying to production systems**. Deploying Defender for Endpoint directly to production systems without testing is highly risky and can lead to downtime. If you can't delay deploying Defender for Endpoint to your production systems, consider temporarily disabling [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) and [real-time protection](configure-protection-features-microsoft-defender-antivirus.md). 
 
-3. **Real-time protection is enabled by default in Windows Server**. If problems are identified that might be related to Defender for Endpoint, it's recommended to [configure exclusions](defender-endpoint-antivirus-exclusions.md) and/or [open a support case](contact-support.md) via the Microsoft Defender portal. 
+3. **Remember that real-time protection is enabled by default in Windows Server**. If problems are identified that might be related to Defender for Endpoint, it's recommended to [configure exclusions](defender-endpoint-antivirus-exclusions.md) and/or [open a support case](contact-support.md) via the Microsoft Defender portal. 
 
-4. **Defender for Endpoint deployment should be a joint project between the SAP Basis team and your organization's security team**. The two teams need to create a phased deployment, testing and monitoring plan.
+4. **Have the SAP Basis team and your security team work together on Defender for Endpoint deployment**. The two teams need to jointly create a phased deployment, testing, and monitoring plan.
 
 5. **Use tools such as PerfMon (Windows) to create a performance baseline before deploying and activating Defender for Endpoint**. Compare the performance utilization before and after activating Defender for Endpoint. See [perfmon](/windows-server/administration/windows-commands/perfmon).
 
@@ -123,9 +125,11 @@ For more information about the SAP Support policy, see [3356389 - Antivirus or o
    - `IsTamperProtected                  : True`
    - `RealTimeProtectionEnabled          : True`
 
-9. **Use tools, such as [Intune](/mem/intune/protect/endpoint-security) or [Defender for Endpoint security settings management](/mem/intune/protect/mde-security-integration) to set up Defender for Endpoint**. Such tools can help ensure that Defender for Endpoint is configured correctly and uniformly deployed. In the Microsoft Defender portal, go to **Endpoints** > **Configuration management** > **Endpoint security policies**, and then select **Create new Policy**. For more information, see [Manage endpoint security policies in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/manage-security-policies). 
+9. **Use tools, such as [Intune](/mem/intune/protect/endpoint-security) or [Defender for Endpoint security settings management](/mem/intune/protect/mde-security-integration) to set up Defender for Endpoint**. Such tools can help ensure that Defender for Endpoint is configured correctly and uniformly deployed. 
 
-10. **Use the latest Defender for Endpoint for Windows release**. Several new features are being implemented in Defender for Endpoint on Windows, and these features were tested with SAP systems. These new features reduce blocking and lower CPU consumption. See [Microsoft Defender Antivirus security intelligence and product updates](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-updates).
+   To use Defender for Endpoitnt security settings management, in the Microsoft Defender portal, go to **Endpoints** > **Configuration management** > **Endpoint security policies**, and then select **Create new Policy**. For more information, see [Manage endpoint security policies in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/manage-security-policies). 
+
+10. **Use the latest release of Defender for Endpoint**. Several new features are being implemented in Defender for Endpoint on Windows, and these features were tested with SAP systems. These new features reduce blocking and lower CPU consumption. See [Microsoft Defender Antivirus security intelligence and product updates](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-updates).
 
 ## Deployment methodology
 
@@ -135,7 +139,7 @@ Defender for Endpoint on Windows and any other software or configuration change 
 
 Using tools, such as [Defender for Endpoint security settings management](/mem/intune/protect/mde-security-integration) to deploy Defender for Endpoint to an entire SAP landscape without testing is likely to cause downtime.
 
-Here's a list of what to test:
+Here's a list of what to check:
 
 1. Deploy Defender for Endpoint with [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) enabled. If issues arise, enable [troubleshooting mode](enable-troubleshooting-mode.md), disable [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md), disable [real-time protection](configure-protection-features-microsoft-defender-antivirus.md), and configure [scheduled scans](schedule-antivirus-scans.md). 
 
