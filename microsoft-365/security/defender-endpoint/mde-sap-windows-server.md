@@ -127,7 +127,7 @@ Here's a list of SAP articles you can use as needed:
 
 9. **Use tools, such as [Intune](/mem/intune/protect/endpoint-security) or [Defender for Endpoint security settings management](/mem/intune/protect/mde-security-integration) to set up Defender for Endpoint**. Such tools can help ensure that Defender for Endpoint is configured correctly and uniformly deployed. 
 
-   To use Defender for Endpoitnt security settings management, in the Microsoft Defender portal, go to **Endpoints** > **Configuration management** > **Endpoint security policies**, and then select **Create new Policy**. For more information, see [Manage endpoint security policies in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/manage-security-policies). 
+   To use Defender for Endpoint security settings management, in the Microsoft Defender portal, go to **Endpoints** > **Configuration management** > **Endpoint security policies**, and then select **Create new Policy**. For more information, see [Manage endpoint security policies in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/manage-security-policies). 
 
 10. **Use the latest release of Defender for Endpoint**. Several new features are being implemented in Defender for Endpoint on Windows, and these features were tested with SAP systems. These new features reduce blocking and lower CPU consumption. 
 
@@ -138,7 +138,7 @@ Here's a list of SAP articles you can use as needed:
 
 ## Deployment methodology
 
-SAP and Microsoft don't recommend deploying Defender for Endpoint on Windows directly to all development, QAS, and production systems simultaneously, and/or without careful testing and monitoring. Customers who deployed Defender for Endpoint and other similar software in an uncontrolled manner without adequate testing have experienced system downtime as a result. 
+SAP and Microsoft don't recommend deploying Defender for Endpoint on Windows directly to all development, QAS, and production systems simultaneously, and/or without careful testing and monitoring. Customers who deployed Defender for Endpoint and other similar software in an uncontrolled manner without adequate testing experienced system downtime as a result. 
 
 Defender for Endpoint on Windows and any other software or configuration change should be deployed into development systems first, validated in QAS, and only then deployed into production environments. 
 
@@ -235,7 +235,7 @@ Here's a list of what to check:
 
 ## Useful Commands: Microsoft Defender for Endpoint with SAP on Windows Server
 
-The following sections describe how to confirm or configure Defender for Endpoint setings by using PowerShell and Command Prompt:
+The following sections describe how to confirm or configure Defender for Endpoint settings by using PowerShell and Command Prompt:
 
 ### Update Microsoft Defender Antivirus definitions manually
 
@@ -276,7 +276,7 @@ For more information about this command, see [Get-MpComputerStatus](/powershell/
 
 ### Configure antivirus exclusions
 
-Before you configure exclusions, make sure that the SAP Basis team coordinates with your security team.  Exclusions should be configured centrally and not at the VM level. Exclusions such as the shared SAPMNT file system should be excluded via a policy using the Intune admin tool.
+Before you configure exclusions, make sure that the SAP Basis team coordinates with your security team. Exclusions should be configured centrally and not at the VM level. Exclusions such as the shared SAPMNT file system should be excluded via a policy using the Intune admin tool.
 
 To view exclusions, use the following command:
 
