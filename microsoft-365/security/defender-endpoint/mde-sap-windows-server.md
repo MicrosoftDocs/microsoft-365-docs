@@ -121,11 +121,11 @@ SAP Support policy is documented in [3356389 - Antivirus or other security softw
 
 9. Tools, such as [Intune](/mem/intune/protect/endpoint-security) or [Defender for Endpoint security settings management](/mem/intune/protect/mde-security-integration) are recommended to ensure that Defender for Endpoint is configured correctly and uniformly deployed. In the Microsoft Defender portal, go to **Endpoints** > **Configuration management** > **Endpoint security policies**, and then select **Create new Policy**. For more information, see [Manage endpoint security policies in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/manage-security-policies). 
 
-10. Several new features are being implemented in Defender for Endpoint on Windows, and these features were tested with SAP systems. These new features reduce blocking and lower CPU consumption. It is recommended to use the very latest Defender for Endpoint for Windows release. See [Microsoft Defender Antivirus security intelligence and product updates](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-updates).
+10. Several new features are being implemented in Defender for Endpoint on Windows, and these features were tested with SAP systems. These new features reduce blocking and lower CPU consumption. It's recommended to use the latest Defender for Endpoint for Windows release. See [Microsoft Defender Antivirus security intelligence and product updates](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-updates).
 
 ## Deployment methodology
 
-SAP and Microsoft do not recommend deploying Defender for Endpoint on Windows directly to all development, QAS, and production systems simultaneously, and/or without careful testing and monitoring. Customers who have deployed Defender for Endpoint and other similar software in an uncontrolled manner without adequate testing have experienced system downtime as a result. 
+SAP and Microsoft don't recommend deploying Defender for Endpoint on Windows directly to all development, QAS, and production systems simultaneously, and/or without careful testing and monitoring. Customers who deployed Defender for Endpoint and other similar software in an uncontrolled manner without adequate testing have experienced system downtime as a result. 
 
 Defender for Endpoint on Windows and any other software or configuration change should be deployed into development systems first, validated in QAS and only then deployed into production environments. 
 
