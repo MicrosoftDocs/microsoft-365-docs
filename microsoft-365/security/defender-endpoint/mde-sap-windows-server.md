@@ -250,11 +250,11 @@ Another option is to use this command:
 
 ### Determine whether EDR in block mode is turned on
 
-[EDR in block mode](edr-in-block-mode.md) provides added protection from malicious artifacts when Microsoft Defender Antivirus is not the primary antivirus product and is running in passive mode. You can determine whether EDR in block mode is enabled by running the following command:
+[EDR in block mode](edr-in-block-mode.md) provides added protection from malicious artifacts when Microsoft Defender Antivirus isn't the primary antivirus product and is running in passive mode. You can determine whether EDR in block mode is enabled by running the following command:
 
 `Get-MPComputerStatus|select AMRunningMode`
 
-There are two modes: Normal and Passive Mode. Testing with SAP systems has only been completed with `AMRunningMode = Normal` for SAP systems. 
+There are two modes: Normal and Passive Mode. Testing with SAP systems was done only with `AMRunningMode = Normal` for SAP systems. 
 
 ### Configure antivirus exclusions
 
