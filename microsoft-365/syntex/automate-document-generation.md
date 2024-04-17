@@ -60,7 +60,7 @@ Follow these steps to automatically generate documents using a modern template a
 
    ![Screenshot of the SharePoint connector Actions tab showing Generate document using Syntex (preview) action.](../media/content-understanding/document-generation-action.png)
 
-6. Enter the site information and select the document library that contains the modern template.
+6. Enter the site information, and select the document library that contains the modern template.
 
 7. Once the template is selected, you'll start seeing the template fields. Associate the fields with the columns in the list.
 
