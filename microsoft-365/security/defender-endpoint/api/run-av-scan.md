@@ -67,7 +67,7 @@ Delegated (work or school account)|Machine.Scan|'Scan machine'
 ## HTTP request
 
 ```http
-POST https://api.securitycenter.microsoft.com/api/machines/{id}/runAntiVirusScan
+POST https://api.security.microsoft.com/api/machines/{id}/runAntiVirusScan
 ```
 
 ## Request headers
@@ -104,7 +104,7 @@ If you send  multiple API calls to run an antivirus scan for the same device, it
 Here is an example of the request.
 
 ```http
-POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/runAntiVirusScan 
+POST https://api.security.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/runAntiVirusScan 
 ```
 
 ```json
