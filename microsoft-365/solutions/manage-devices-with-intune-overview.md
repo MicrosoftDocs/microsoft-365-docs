@@ -8,7 +8,7 @@ f1.keywords:
 - zero trust deployment stack
 - device management with zero trust
 manager: dougeby
-ms.date: 10/20/2021
+ms.date: 04/17/2024
 audience: ITPro
 ms.topic: article
 description: Enroll your endpoint devices in Microsoft Intune as part of your Zero Trust security architecture, protecting against ransomware while building in protection for remote workers.
@@ -114,14 +114,15 @@ Note that only Intune is managing devices. Onboarding refers to the ability for 
 |Scope     | These device management tools manage the entire device, including configuring the device to meet specific objectives, like security.        |Onboarding only affects the services that apply.     |
 |Recommended method     | Microsoft Entra join automatically enrolls devices into Intune.        | Intune is the preferred method for onboarding devices to Windows Defender for Endpoint, and consequently Microsoft Purview capabilities.<br><br>Note that devices that are onboarded to Microsoft Purview capabilities using other methods aren't automatically enrolled for Defender for Endpoint.        |
 |Other methods     |   Other methods of enrollment depend on the platform of the device and whether it's BYOD or managed by your organization.      | Other methods for onboarding devices include, in recommended order:<br><li>Configuration Manager<li>Other mobile device management tool (if the device is managed by one)<li>Local script<li>VDI configuration package for onboarding non-persistent virtual desktop infrastructure (VDI) devices<li>Group Policy|
-| | |     |
 
 ## Learning for administrators
 
 The following resources help administrators learn concepts about using Intune.
 
-[Simplify device management with Microsoft Intune](/training/modules/simplify-device-management-with-microsoft-endpoint-manager/)
-Description: Learn about modern management and the Microsoft Intune family of products, and how the business management tools in Microsoft 365 can simplify management of all your devices.
+- [Simplify device management with Microsoft Intune](/training/modules/simplify-device-management-with-microsoft-endpoint-manager/)
 
-[Set up Microsoft Intune](/training/modules/set-up-microsoft-intune/)
-Description: Microsoft Intune helps you protect the devices, apps, and data that the people at your organization use to be productive. After completing this module, you'll have set up Microsoft Intune. Set up includes reviewing the supported configurations, signing up for Intune, adding users and groups, assigning licenses to users, granting admin permissions, and setting the Mobile Device Management (MDM) authority.
+  Learn about modern management and the Microsoft Intune family of products, and how the business management tools in Microsoft 365 can simplify management of all your devices.
+
+- [Set up Microsoft Intune](/training/modules/set-up-microsoft-intune/)
+
+  Microsoft Intune helps you protect the devices, apps, and data that the people at your organization use to be productive. After completing this module, you'll have set up Microsoft Intune. Set up includes reviewing the supported configurations, signing up for Intune, adding users and groups, assigning licenses to users, granting admin permissions, and setting the Mobile Device Management (MDM) authority.

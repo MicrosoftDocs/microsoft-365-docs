@@ -32,7 +32,7 @@ If your organization has already put the time into understanding your data, deve
 
 Endpoint data loss prevention (Endpoint DLP) currently applies to:
 
-- Windows 10, Windows 11
+- Windows 10 and Windows 11
 - macOS
 
 DLP policies are created by your information protection and governance team. Each DLP policy defines what elements within a data set to look for, like sensitive information types or labels, and how to protect this data.
@@ -43,7 +43,7 @@ The DLP policy also specifies the location to apply the policy to, such as Excha
 
 If your information protection and governance team is ready to extend DLP policies to endpoints, you need to coordinate with them to enable devices for Endpoint DLP, test and tune DLP policies, train users, and monitor the results.
 
-:::image type="content" source="../media/devices/endpoint-dlp-steps.png" alt-text="Endpoint DLP steps for the device admin." lightbox="../media/devices/endpoint-dlp-steps.png":::
+:::image type="content" source="../media/devices/endpoint-dlp-steps.png" alt-text="The three steps to implement Endpoint DLP steps for device admins." lightbox="../media/devices/endpoint-dlp-steps.png":::
 
 Use the following steps to work with your information protection team.
 
