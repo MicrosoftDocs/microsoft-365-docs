@@ -27,7 +27,7 @@ keywords:
 
 There are several ways to secure the endpoint, a term often used to refer to the combined entity including devices, apps, and user identity. Security policies must be enforced consistently and reliably not only on the apps but the device itself. Enrolling the device to Intune and registering with a cloud identity provider, such as Microsoft Entra ID, is a great start.
 
-Whether a device is a personally-owned Bring Your Own Device (BYOD) or a corporate-owned and fully managed device, it's good to have visibility into the endpoints accessing your organization’s resources to ensure you’re only allowing healthy and compliant devices. This includes the health and trustworthiness of mobile and desktop apps that run on endpoints. You want to ensure those apps are healthy and compliant and that they prevent corporate data from leaking to consumer apps or services through malicious intent or accidental means.
+Whether a device is a personally owned Bring Your Own Device (BYOD) or a corporate-owned and fully managed device, it's good to have visibility into the endpoints accessing your organization’s resources to ensure you’re only allowing healthy and compliant devices. This includes the health and trustworthiness of mobile and desktop apps that run on endpoints. You want to ensure those apps are healthy and compliant and that they prevent corporate data from leaking to consumer apps or services through malicious intent or accidental means.
 
 The device enrollment process establishes a relationship between the user, the device, and the Microsoft Intune service. Using Microsoft Intune as a standalone service enables you to use a single web-based administration console to manage Windows PCs, macOS, and the most popular mobile device platforms.
 
