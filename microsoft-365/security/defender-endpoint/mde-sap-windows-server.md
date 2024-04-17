@@ -212,11 +212,11 @@ Here's a list of what to test:
 
 7. Keep in mind how scans work with network shares. By default, the Microsoft Defender Antivirus component on Windows scans SMB shared network file systems (for example, a Windows server share `\\server\smb-share` or a NetApp share) when these files are accessed by processes. 
 
-   [Defender for Endpoint EDR](overview-endpoint-detection-response.md) on Windows might scan SMB shared network file systems. The EDR sensor scans certain files that are identified as interesting for EDR analysis during file modification, delete and move operations.
+   [Defender for Endpoint EDR](overview-endpoint-detection-response.md) on Windows might scan SMB shared network file systems. The EDR sensor scans certain files that are identified as interesting for EDR analysis during file modification, delete, and move operations.
 
-   Defender for Endpoint on Linux does not scan NFS file systems during scheduled scans. 
+   Defender for Endpoint on Linux doesn't scan NFS file systems during scheduled scans. 
 
-8. To troubleshoot sense health or reliability issues, use the [Defender for Endpoint Client Analyzer tool](overview-client-analyzer.md). The Defender for Endpoint Client Analyzer an be useful when diagnosing sensor health or reliability issues on onboarded devices running either Windows, Linux, or macOS. 
+8. To troubleshoot sense health or reliability issues, use the [Defender for Endpoint Client Analyzer tool](overview-client-analyzer.md). The Defender for Endpoint Client Analyzer can be useful when diagnosing sensor health or reliability issues on onboarded devices running either Windows, Linux, or macOS. 
 
    Get the latest version of the Defender for Endpoint Client Analyzer here: [https://aka.ms/MDEAnalyzer](https://aka.ms/MDEAnalyzer).
 
