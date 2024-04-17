@@ -432,7 +432,7 @@
            - name: AIR overview
              href: air-about.md
            - name: How automated investigation and response works
-             href: air-about-office.md
+             href: air-examples.md
          - name: Review and approve (or reject) pending actions
            href: air-review-approve-pending-completed-actions.md
          - name: Manage false positives and false negatives in AIR
