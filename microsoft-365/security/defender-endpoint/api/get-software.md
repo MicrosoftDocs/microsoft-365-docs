@@ -15,7 +15,7 @@ ms.topic: reference
 ms.subservice: reference
 ms.custom: api
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 04/17/2024
 ---
 
 # List software inventory API
@@ -79,7 +79,7 @@ If successful, this method returns 200 OK with the software inventory in the bod
 Here is an example of the request.
 
 ```http
-GET https://api.securitycenter.microsoft.com/api/Software
+GET https://api.security.microsoft.com/api/Software
 ```
 
 ### Response example
@@ -88,7 +88,7 @@ Here is an example of the response.
 
 ```json
 {
-    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Software",
+    "@odata.context": "https://api.security.microsoft.com/api/$metadata#Software",
     "value": [
             {
                 "id": "microsoft-_-edge",
