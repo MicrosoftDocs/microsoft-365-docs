@@ -62,7 +62,7 @@ Delegated (work or school account)|Machine.ReadWrite|'Read and write machine inf
 ## HTTP request
 
 ```http
-POST https://api.securitycenter.microsoft.com/api/machines/{machineId}/setDeviceValue
+POST https://api.security.microsoft.com/api/machines/{machineId}/setDeviceValue
 ```
 
 ## Request headers
@@ -91,7 +91,7 @@ If successful, this method returns 200 - Ok response code and the updated Machin
 Here is an example of a request that adds machine tag.
 
 ```http
-POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/setDeviceValue
+POST https://api.security.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/setDeviceValue
 ```
 
 ```json
