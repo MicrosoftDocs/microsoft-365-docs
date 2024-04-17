@@ -148,11 +148,11 @@ Here's a list of what to test:
    > [!NOTE]
    > Some large SAP systems have more than 20 SAP application servers each with a connection to the same SAPMNT SMB share. 20 application servers simultaneously scanning the same SMB server may overload the SMB server. It is recommended to exclude SAPMNT from regular scans. 
 > 
-## Important Configuration Settings for Microsoft Defender for Endpoint with SAP on Windows
+## Important configuration settings for Defender for Endpoint on Windows Server with SAP
 
 1. What is Microsoft Defender for Endpoint?
 
-   The term "Defender" can be used to refer to an entire suite of products and solutions. The term "Defender" is used across multiple products and technologies. An overview of Microsoft 365 Defender is illustrated here [What is Microsoft 365 Defender? | Microsoft Learn](https://learn.microsoft.com/en-us/microsoft-365/security/defender/microsoft-365-defender?view=o365-worldwide)
+   The term "Defender" can be used to refer to an entire suite of products and solutions. The term "Defender" is used across multiple products and technologies. An overview of Microsoft 365 Defender is illustrated here [What is Microsoft 365 Defender?](/microsoft-365/security/defender/microsoft-365-defender).
 
     
 
