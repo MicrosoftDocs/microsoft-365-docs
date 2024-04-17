@@ -294,7 +294,7 @@ It isn't recommended to exclude files, paths, or processes from EDR as such excl
 
 ### Completely disable Defender for Endpoint on Windows for testing purposes
 
-> [!WARNING]
+> [!CAUTION]
 > It is not recommended to disable security software unless there is no alternative to solve or isolate a problem. 
 
 Defender for Endpoint should be configured with [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) turned on. To temporarily disable Defender for Endpoint to isolate problems, it's recommended to use [troubleshooting mode](/microsoft-365/security/defender-endpoint/enable-troubleshooting-mode).
