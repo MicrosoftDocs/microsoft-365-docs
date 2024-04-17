@@ -1,12 +1,8 @@
 ---
 title: Evaluate and pilot Microsoft Defender XDR security, an XDR solution that unifies threat data so you can take action.
 description: What is XDR security? How can you evaluate a Microsoft XDR in Microsoft Defender XDR? Use this blog series to plan your Microsoft Defender XDR trial lab or pilot environment and test and pilot a security solution designed to protect devices, identity, data, and applications. Take that XDR seccurity test to production.
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: 
   - NOCSH
 ms.author: tracyp

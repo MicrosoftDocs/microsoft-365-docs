@@ -64,7 +64,7 @@ Prior to configuring Microsoft Defender XDR to stream data to Event Hubs, ensure
 
    To get your **Event Hub resource ID**, go to your Azure Event Hubs namespace page on [Azure](https://ms.portal.azure.com/) > **Properties** tab > copy the text under **Resource ID**:
 
-   :::image type="content" source="../defender-endpoint/images/event-hub-resource-id.png" alt-text="An Event Hub resource ID" lightbox="../defender-endpoint/images/event-hub-resource-id.png":::
+   :::image type="content" source="../defender-endpoint/media/event-hub-resource-id.png" alt-text="An Event Hub resource ID" lightbox="../defender-endpoint/media/event-hub-resource-id.png":::
 
 8. Go to the [Supported Microsoft Defender XDR event types in event streaming API](supported-event-types.md) to review the support status of event types in the Microsoft 365 Streaming API.
 
@@ -110,7 +110,7 @@ To get the data types for event properties, do the following steps:
 
 - Here's an example for Device Info event:
 
-  :::image type="content" source="../defender-endpoint/images/machine-info-datatype-example.png" alt-text="An example query for device info" lightbox="../defender-endpoint/images/machine-info-datatype-example.png":::
+  :::image type="content" source="../defender-endpoint/media/machine-info-datatype-example.png" alt-text="An example query for device info" lightbox="../defender-endpoint/media/machine-info-datatype-example.png":::
 
 ## Estimating initial Event Hub capacity
 The following Advanced Hunting query can help provide a rough estimate of data volume throughput and initial event hub capacity based on events/sec and estimated MB/sec. We recommend running the query during regular business hours so as to capture 'real' throughput.

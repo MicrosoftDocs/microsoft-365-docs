@@ -74,31 +74,31 @@ The following OS versions are supported:
 
 OS version|GCC|GCC High|DoD
 :---|:---:|:---:|:---:
-Windows 11|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
-Windows 10, version 21H1 and above|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
-Windows 10, version 20H2 (with [KB4586853](https://support.microsoft.com/help/4586853) <sup>1</sup>)|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
-Windows 10, version 2004 (with [KB4586853](https://support.microsoft.com/help/4586853) <sup>1</sup>)|![Yes.](images/svg/check-yes.svg) <br /> Note: [Deprecated](/lifecycle/announcements/windows-10-version-2004-end-of-servicing), please upgrade|![Yes](images/svg/check-yes.svg) <br /> Note: [Deprecated](/lifecycle/announcements/windows-10-version-2004-end-of-servicing), please upgrade|![Yes](images/svg/check-yes.svg) <br /> Note: [Deprecated](/lifecycle/announcements/windows-10-version-2004-end-of-servicing), please upgrade
-Windows 10, version 1909 (with [KB4586819](https://support.microsoft.com/help/4586819) <sup>1</sup>)|![Yes.](images/svg/check-yes.svg) <br /> Note: [Deprecated](/lifecycle/announcements/windows-10-1909-end-of-servicing), please upgrade|![Yes](images/svg/check-yes.svg) <br /> Note: [Deprecated](/lifecycle/announcements/windows-10-1909-end-of-servicing), please upgrade|![Yes](images/svg/check-yes.svg) <br /> Note: [Deprecated](/lifecycle/announcements/windows-10-1909-end-of-servicing), please upgrade
-Windows 10, version 1903 (with [KB4586819](https://support.microsoft.com/help/4586819) <sup>1</sup>)|![Yes.](images/svg/check-yes.svg) <br /> Note: [Deprecated](/lifecycle/announcements/windows-10-1903-end-of-servicing), please upgrade|![Yes](images/svg/check-yes.svg) <br /> Note: [Deprecated](/lifecycle/announcements/windows-10-1903-end-of-servicing), please upgrade|![Yes](images/svg/check-yes.svg) <br /> Note: [Deprecated](/lifecycle/announcements/windows-10-1903-end-of-servicing), please upgrade
-Windows 10, version 1809 (with [KB4586839](https://support.microsoft.com/help/4586839) <sup>1</sup>)|![Yes.](images/svg/check-yes.svg) <br /> Note: [Deprecated](/lifecycle/announcements/windows-10-1803-1809-end-of-servicing), please upgrade|![Yes](images/svg/check-yes.svg) <br /> Note: [Deprecated](/lifecycle/announcements/windows-10-1803-1809-end-of-servicing), please upgrade|![Yes](images/svg/check-yes.svg) <br /> Note: [Deprecated](/lifecycle/announcements/windows-10-1803-1809-end-of-servicing), please upgrade
-Windows 10, version 1803 (with [KB4598245](https://support.microsoft.com/help/4598245) <sup>1</sup>)|![Yes.](images/svg/check-yes.svg) <br /> Note: [Deprecated](/lifecycle/announcements/windows-10-1803-1809-end-of-servicing), please upgrade|![Yes](images/svg/check-yes.svg) <br /> Note: [Deprecated](/lifecycle/announcements/windows-10-1803-1809-end-of-servicing), please upgrade|![Yes](images/svg/check-yes.svg) <br /> Note: [Deprecated](/lifecycle/announcements/windows-10-1803-1809-end-of-servicing), please upgrade
-Windows 10, version 1709|![No.](images/svg/check-no.svg) <br /> Note: Won't be supported|![Yes](images/svg/check-yes.svg) With [KB4499147](https://support.microsoft.com/help/4499147) <sup>1</sup> <br /> Note: [Deprecated](/lifecycle/announcements/revised-end-of-service-windows-10-1709), please upgrade|![No](images/svg/check-no.svg) <br /> Note: Won't be supported
-Windows 10, version 1703 and earlier|![No.](images/svg/check-no.svg) <br /> Note: Won't be supported|![No](images/svg/check-no.svg) <br /> Note: Won't be supported|![No](images/svg/check-no.svg) <br /> Note: Won't be supported
-Windows Server 2022|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
-Windows Server 2019 (with [KB4586839](https://support.microsoft.com/help/4586839) <sup>1</sup>)|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
-Windows Server 2016 (Modern) <sup>2</sup>|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
-Windows Server 2012 R2 (Modern) <sup>2</sup>|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
-Windows Server 2016 (Legacy) <sup>3</sup>|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
-Windows Server 2012 R2 (Legacy) <sup>3</sup>|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
-Windows Server 2008 R2 SP1 (Legacy) <sup>3</sup>|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
-Windows 8.1 Enterprise (Legacy) <sup>3</sup>|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
-Windows 8 Pro (Legacy) <sup>3</sup>|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
-Windows 7 SP1 Enterprise (Legacy) <sup>3</sup>|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
-Windows 7 SP1 Pro (Legacy) <sup>3</sup>|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
-Linux|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
-macOS|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
-Android|![Yes.](images/svg/check-yes.svg) <br /> |![Yes](images/svg/check-yes.svg) <br /> |![Yes](images/svg/check-yes.svg) <br /> 
-iOS|![Yes.](images/svg/check-yes.svg) <br /> |![Yes](images/svg/check-yes.svg) <br /> |![Yes](images/svg/check-yes.svg) <br /> 
+Windows 11|![Yes.](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)
+Windows 10, version 21H1 and above|![Yes.](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)
+Windows 10, version 20H2 (with [KB4586853](https://support.microsoft.com/help/4586853) <sup>1</sup>)|![Yes.](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)
+Windows 10, version 2004 (with [KB4586853](https://support.microsoft.com/help/4586853) <sup>1</sup>)|![Yes.](media/svg/check-yes.svg) <br /> Note: [Deprecated](/lifecycle/announcements/windows-10-version-2004-end-of-servicing), please upgrade|![Yes](media/svg/check-yes.svg) <br /> Note: [Deprecated](/lifecycle/announcements/windows-10-version-2004-end-of-servicing), please upgrade|![Yes](media/svg/check-yes.svg) <br /> Note: [Deprecated](/lifecycle/announcements/windows-10-version-2004-end-of-servicing), please upgrade
+Windows 10, version 1909 (with [KB4586819](https://support.microsoft.com/help/4586819) <sup>1</sup>)|![Yes.](media/svg/check-yes.svg) <br /> Note: [Deprecated](/lifecycle/announcements/windows-10-1909-end-of-servicing), please upgrade|![Yes](media/svg/check-yes.svg) <br /> Note: [Deprecated](/lifecycle/announcements/windows-10-1909-end-of-servicing), please upgrade|![Yes](media/svg/check-yes.svg) <br /> Note: [Deprecated](/lifecycle/announcements/windows-10-1909-end-of-servicing), please upgrade
+Windows 10, version 1903 (with [KB4586819](https://support.microsoft.com/help/4586819) <sup>1</sup>)|![Yes.](media/svg/check-yes.svg) <br /> Note: [Deprecated](/lifecycle/announcements/windows-10-1903-end-of-servicing), please upgrade|![Yes](media/svg/check-yes.svg) <br /> Note: [Deprecated](/lifecycle/announcements/windows-10-1903-end-of-servicing), please upgrade|![Yes](media/svg/check-yes.svg) <br /> Note: [Deprecated](/lifecycle/announcements/windows-10-1903-end-of-servicing), please upgrade
+Windows 10, version 1809 (with [KB4586839](https://support.microsoft.com/help/4586839) <sup>1</sup>)|![Yes.](media/svg/check-yes.svg) <br /> Note: [Deprecated](/lifecycle/announcements/windows-10-1803-1809-end-of-servicing), please upgrade|![Yes](media/svg/check-yes.svg) <br /> Note: [Deprecated](/lifecycle/announcements/windows-10-1803-1809-end-of-servicing), please upgrade|![Yes](media/svg/check-yes.svg) <br /> Note: [Deprecated](/lifecycle/announcements/windows-10-1803-1809-end-of-servicing), please upgrade
+Windows 10, version 1803 (with [KB4598245](https://support.microsoft.com/help/4598245) <sup>1</sup>)|![Yes.](media/svg/check-yes.svg) <br /> Note: [Deprecated](/lifecycle/announcements/windows-10-1803-1809-end-of-servicing), please upgrade|![Yes](media/svg/check-yes.svg) <br /> Note: [Deprecated](/lifecycle/announcements/windows-10-1803-1809-end-of-servicing), please upgrade|![Yes](media/svg/check-yes.svg) <br /> Note: [Deprecated](/lifecycle/announcements/windows-10-1803-1809-end-of-servicing), please upgrade
+Windows 10, version 1709|![No.](media/svg/check-no.svg) <br /> Note: Won't be supported|![Yes](media/svg/check-yes.svg) With [KB4499147](https://support.microsoft.com/help/4499147) <sup>1</sup> <br /> Note: [Deprecated](/lifecycle/announcements/revised-end-of-service-windows-10-1709), please upgrade|![No](media/svg/check-no.svg) <br /> Note: Won't be supported
+Windows 10, version 1703 and earlier|![No.](media/svg/check-no.svg) <br /> Note: Won't be supported|![No](media/svg/check-no.svg) <br /> Note: Won't be supported|![No](media/svg/check-no.svg) <br /> Note: Won't be supported
+Windows Server 2022|![Yes.](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)
+Windows Server 2019 (with [KB4586839](https://support.microsoft.com/help/4586839) <sup>1</sup>)|![Yes.](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)
+Windows Server 2016 (Modern) <sup>2</sup>|![Yes.](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)
+Windows Server 2012 R2 (Modern) <sup>2</sup>|![Yes.](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)
+Windows Server 2016 (Legacy) <sup>3</sup>|![Yes.](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)
+Windows Server 2012 R2 (Legacy) <sup>3</sup>|![Yes.](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)
+Windows Server 2008 R2 SP1 (Legacy) <sup>3</sup>|![Yes.](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)
+Windows 8.1 Enterprise (Legacy) <sup>3</sup>|![Yes.](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)
+Windows 8 Pro (Legacy) <sup>3</sup>|![Yes.](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)
+Windows 7 SP1 Enterprise (Legacy) <sup>3</sup>|![Yes.](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)
+Windows 7 SP1 Pro (Legacy) <sup>3</sup>|![Yes.](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)
+Linux|![Yes.](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)
+macOS|![Yes.](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)
+Android|![Yes.](media/svg/check-yes.svg) <br /> |![Yes](media/svg/check-yes.svg) <br /> |![Yes](media/svg/check-yes.svg) <br /> 
+iOS|![Yes.](media/svg/check-yes.svg) <br /> |![Yes](media/svg/check-yes.svg) <br /> |![Yes](media/svg/check-yes.svg) <br /> 
 
 **Footnotes**
 
@@ -116,11 +116,11 @@ The following OS versions are supported when using [Microsoft Defender for serve
 
 OS version|GCC|GCC High|DoD
 :---|:---:|:---:|:---:
-Windows Server 2022|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
-Windows Server 2019|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
-Windows Server 2016|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
-Windows Server 2012 R2|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
-Windows Server 2008 R2 SP1|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
+Windows Server 2022|![Yes.](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)
+Windows Server 2019|![Yes.](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)
+Windows Server 2016|![Yes.](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)
+Windows Server 2012 R2|![Yes.](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)
+Windows Server 2008 R2 SP1|![Yes.](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)
 
 ## Required connectivity settings
 
@@ -159,9 +159,9 @@ These are the known gaps:
 
 |Feature name|GCC|GCC High|DoD|
 |---|:---:|:---:|:---:|
-|Microsoft Secure Score|![Yes](images/svg/check-yes.svg)<sup>1</sup>|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
-|Microsoft Threat Experts|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|
-|Microsoft Defender for Endpoint Security Configuration Management|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|
+|Microsoft Secure Score|![Yes](media/svg/check-yes.svg)<sup>1</sup>|![Yes](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)|
+|Microsoft Threat Experts|![No](media/svg/check-no.svg)|![No](media/svg/check-no.svg)|![No](media/svg/check-no.svg)|
+|Microsoft Defender for Endpoint Security Configuration Management|![No](media/svg/check-no.svg)|![No](media/svg/check-no.svg)|![No](media/svg/check-no.svg)|
 
 > [!NOTE]
 > <sup>1</sup> While Microsoft Secure Score is available for GCC customers, there are some security recommendations that aren't available.
@@ -170,16 +170,16 @@ These are the features and known gaps for [Mobile Threat Defense (Microsoft Defe
 
 |Feature name|GCC|GCC High|DoD|
 |---|:---:|:---:|:---:|
-|Reports: Web content filtering|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
-|Reports: Device health|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
-|Web Protection (Anti-Phishing and custom indicators)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
-|Malware Protection (Android-Only)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
-|Jailbreak Detection (iOS-Only)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
-|Conditional Access/Conditional Launch|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
-|Support for MAM|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
-|Privacy Controls|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
-|Microsoft Defender Vulnerability Management core capabilities <br/> (included in Defender for Endpoint Plan 2) |![Yes](images/svg/check-yes.svg) <sup>1</sup>|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
-|Microsoft Defender Vulnerability Management premium capabilities |![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|
+|Reports: Web content filtering|![Yes](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)|
+|Reports: Device health|![Yes](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)|
+|Web Protection (Anti-Phishing and custom indicators)|![Yes](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)|
+|Malware Protection (Android-Only)|![Yes](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)|
+|Jailbreak Detection (iOS-Only)|![Yes](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)|
+|Conditional Access/Conditional Launch|![Yes](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)|
+|Support for MAM|![Yes](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)|
+|Privacy Controls|![Yes](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)|
+|Microsoft Defender Vulnerability Management core capabilities <br/> (included in Defender for Endpoint Plan 2) |![Yes](media/svg/check-yes.svg) <sup>1</sup>|![Yes](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)|
+|Microsoft Defender Vulnerability Management premium capabilities |![Yes](media/svg/check-yes.svg) <sup>1</sup>|![Yes](media/svg/check-yes.svg)|![Yes](media/svg/check-yes.svg)|
 
 > [!NOTE]
 >

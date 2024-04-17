@@ -4,17 +4,17 @@ description: Learn about endpoint detection and response in block mode
 author: siosulli
 ms.author: siosulli
 manager: deniseb
-ms.reviewer: 
+ms.reviewer: pahuijbr
 audience: ITPro
 ms.topic: conceptual
 ms.service: defender-endpoint
 ms.subservice: edr
 ms.localizationpriority: medium
 ms.custom:
-  - next-gen
-  - mde-edr
-  - admindeeplinkDEFENDER
-ms.date: 01/12/2024
+- next-gen
+- mde-edr
+- admindeeplinkDEFENDER
+ms.date: 04/11/2024
 ms.collection: 
 - m365-security
 - tier2
@@ -40,7 +40,7 @@ This recommendation is primarily for devices using an active non-Microsoft antiv
 
 ## What is EDR in block mode?
 
-[Endpoint detection and response](overview-endpoint-detection-response.md) (EDR) in block mode provides added protection from malicious artifacts when Microsoft Defender Antivirus is not the primary antivirus product and is running in passive mode. 
+[Endpoint detection and response](overview-endpoint-detection-response.md) (EDR) in block mode provides added protection from malicious artifacts when Microsoft Defender Antivirus is not the primary antivirus product and is running in passive mode. EDR in block mode is available in Defender for Endpoint Plan 2.
 
 > [!IMPORTANT]
 > EDR in block mode cannot provide all available protection when Microsoft Defender Antivirus real-time protection is in passive mode. Some capabilities that depend on Microsoft Defender Antivirus to be the active antivirus solution will not work, such as the following examples:
@@ -53,7 +53,7 @@ EDR in block mode works behind the scenes to remediate malicious artifacts that 
 
 EDR in block mode is integrated with [threat & vulnerability management](next-gen-threat-and-vuln-mgt.md) capabilities. Your organization's security team gets a [security recommendation](tvm-security-recommendation.md) to turn EDR in block mode on if it isn't already enabled. 
 
-:::image type="content" source="images/edrblockmode-TVMrecommendation.png" alt-text="The recommendation to turn on EDR in block mode" lightbox="images/edrblockmode-TVMrecommendation.png":::
+:::image type="content" source="media/edrblockmode-TVMrecommendation.png" alt-text="The recommendation to turn on EDR in block mode" lightbox="media/edrblockmode-TVMrecommendation.png":::
 
 > [!TIP]
 > To get the best protection, make sure to **[deploy Microsoft Defender for Endpoint baselines](configure-machines-security-baseline.md)**.
@@ -65,18 +65,19 @@ Watch this video to learn why and how to turn on endpoint detection and response
 
 When EDR in block mode is turned on, and a malicious artifact is detected, Defender for Endpoint remediates that artifact. Your security operations team sees the detection status as **Blocked** or **Prevented** in the [Action center](respond-machine-alerts.md#check-activity-details-in-action-center), listed as completed actions. The following image shows an instance of unwanted software that was detected and remediated through EDR in block mode:
 
-:::image type="content" source="images/edr-in-block-mode-detection.png" alt-text="The detection by EDR in block mode" lightbox="images/edr-in-block-mode-detection.png":::
+:::image type="content" source="media/edr-in-block-mode-detection.png" alt-text="The detection by EDR in block mode" lightbox="media/edr-in-block-mode-detection.png":::
 
 ## Enable EDR in block mode
 
 > [!IMPORTANT]
-> Make sure the [requirements](#requirements-for-edr-in-block-mode) are met before turning on EDR in block mode. 
-> Starting with [platform version 4.18.2202.X](microsoft-defender-antivirus-updates.md), you can now set EDR in block mode to target specific device groups using Intune CSPs. You can  continue to set EDR in block mode tenant-wide in the [Microsoft Defender portal](https://security.microsoft.com). 
-> EDR in block mode is primarily recommended for devices that are running Microsoft Defender Antivirus in passive mode (a non-Microsoft antivirus solution is installed and active on the device). 
+> - Make sure the [requirements](#requirements-for-edr-in-block-mode) are met before turning on EDR in block mode.   
+> - Defender for Endpoint Plan 2 licenses are required.
+> - Beginning with [platform version 4.18.2202.X](microsoft-defender-antivirus-updates.md), you can set EDR in block mode to target specific device groups using Intune CSPs. You can continue to set EDR in block mode tenant-wide in the [Microsoft Defender portal](https://security.microsoft.com).
+> - EDR in block mode is primarily recommended for devices that are running Microsoft Defender Antivirus in passive mode (a non-Microsoft antivirus solution is installed and active on the device). 
 
 <a name='microsoft-365-defender'></a>
 
-### Microsoft Defender XDR
+### Microsoft Defender portal
 
 1. Go to the Microsoft Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)) and sign in.
 
@@ -98,7 +99,7 @@ The following table lists requirements for EDR in block mode:
 |---|---|
 |Permissions|You must have either the Global Administrator or Security Administrator role assigned in [Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal). For more information, see [Basic permissions](basic-permissions.md).|
 |Operating system|Devices must be running one of the following versions of Windows: <br/>- Windows 11<br/>- Windows 10 (all releases)<br/>- Windows Server 2019 or later<br/>- Windows Server, version 1803 or later<br/>- Windows Server 2016 and Windows Server 2012 R2 (with the [new unified client solution](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution))|
-|Microsoft Defender for Endpoint|Devices must be onboarded to Defender for Endpoint. See the following articles: <br/>- [Minimum requirements for Microsoft Defender for Endpoint](minimum-requirements.md)<br/>- [Onboard devices and configure Microsoft Defender for Endpoint capabilities](onboard-configure.md)<br/>- [Onboard Windows servers to the Defender for Endpoint service](configure-server-endpoints.md)<br/>- [New Windows Server 2012 R2 and 2016 functionality in the modern unified solution](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution)<br/>(See [Is EDR in block mode supported on Windows Server 2016 and Windows Server 2012 R2?](edr-block-mode-faqs.yml)) |
+|Microsoft Defender for Endpoint Plan 2|Devices must be onboarded to Defender for Endpoint. See the following articles: <br/>- [Minimum requirements for Microsoft Defender for Endpoint](minimum-requirements.md)<br/>- [Onboard devices and configure Microsoft Defender for Endpoint capabilities](onboard-configure.md)<br/>- [Onboard Windows servers to the Defender for Endpoint service](configure-server-endpoints.md)<br/>- [New Windows Server 2012 R2 and 2016 functionality in the modern unified solution](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution)<br/>(See [Is EDR in block mode supported on Windows Server 2016 and Windows Server 2012 R2?](edr-block-mode-faqs.yml)) |
 |Microsoft Defender Antivirus|Devices must have Microsoft Defender Antivirus installed and running in either active mode or passive mode. [Confirm Microsoft Defender Antivirus is in active or passive mode](edr-block-mode-faqs.yml).|
 |Cloud-delivered protection|Microsoft Defender Antivirus must be configured such that [cloud-delivered protection is enabled](enable-cloud-protection-microsoft-defender-antivirus.md).|
 |Microsoft Defender Antivirus platform|Devices must be up to date. To confirm, using PowerShell, run the [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) cmdlet as an administrator. In the **AMProductVersion** line, you should see **4.18.2001.10** or above. <br/><br/> To learn more, see [Manage Microsoft Defender Antivirus updates and apply baselines](microsoft-defender-antivirus-updates.md).|
@@ -110,5 +111,6 @@ The following table lists requirements for EDR in block mode:
 ## See also
 
 - [Endpoint detection and response (EDR) in block mode frequently asked questions (FAQ)](edr-block-mode-faqs.yml)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
 

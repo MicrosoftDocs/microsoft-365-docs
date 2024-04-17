@@ -1,12 +1,8 @@
 ---
 title: Run an attack simulation in a Microsoft Defender XDR pilot environment
 description: Run attack simulations for Microsoft Defender XDR to see how alerts and incidents are presented, insights are gained, and threats are quickly remediated.
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords:
   - NOCSH
 ms.author: dansimp
@@ -130,7 +126,7 @@ You'll simulate a sophisticated attack that leverages advanced techniques to hid
 
 In this simulation, our sample scenario starts with a PowerShell script. In the real world, a user might be tricked into running a script or the script might run from a remote connection to another computer from a previously infected device, which indicates that the attacker is attempting to move laterally in the network. Detection of these scripts can be difficult because administrators also often run scripts remotely to carry out various administrative activities.
 
-:::image type="content" source="../../media/mtp/mtpdiydiagram.png" alt-text="The Fileless PowerShell attack with process injection and SMB reconnaisance attack" lightbox="../../media/mtp/mtpdiydiagram.png":::
+:::image type="content" source="../../media/mtp/mtpdiydiagram.png" alt-text="The Fileless PowerShell attack with process injection and SMB reconnaissance attack" lightbox="../../media/mtp/mtpdiydiagram.png":::
 
 During the simulation, the attack injects shellcode into a seemingly innocent process. The scenario requires the use of notepad.exe. We chose this process for the simulation, but attackers would more likely target a long-running system process, such as svchost.exe. The shellcode then goes on to contact the attacker's command-and-control (C2) server to receive instructions on how to proceed. The script attempts executing reconnaissance queries against the domain controller (DC). Reconnaissance allows an attacker to get information about recent user login information. Once attackers have this information, they can move laterally in the network to get to a specific sensitive account
 

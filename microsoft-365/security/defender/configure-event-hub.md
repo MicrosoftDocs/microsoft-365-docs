@@ -1,13 +1,8 @@
 ---
 title: Configure your Event Hubs
 description: Learn how to configure your Event Hubs
-keywords: event hub, configure, insights
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords:
 - NOCSH
 ms.author: macapara

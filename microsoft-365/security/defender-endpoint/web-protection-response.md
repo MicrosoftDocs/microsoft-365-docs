@@ -44,7 +44,7 @@ Each alert provides the following information:
 - Malicious URL or URL in the custom indicator list
 - Recommended actions for responders
 
-:::image type="content" source="images/wtp-alert.png" alt-text="The alert related to web threat protection" lightbox="images/wtp-alert.png":::
+:::image type="content" source="media/wtp-alert.png" alt-text="The alert related to web threat protection" lightbox="media/wtp-alert.png":::
 
 > [!NOTE]
 > To reduce the volume of alerts, Microsoft Defender for Endpoint consolidates web threat detections for the same domain on the same device each day to a single alert. Only one alert is generated and counted into the [web protection report](web-protection-monitoring.md).
@@ -57,7 +57,7 @@ You can dive deeper by selecting the URL or domain of the website in the alert. 
 - Incidents and alerts related to the website
 - How frequent the website was seen in events in your organization
 
-  :::image type="content" source="images/wtp-website-details.png" alt-text="The domain or URL entity details page" lightbox="images/wtp-website-details.png":::
+  :::image type="content" source="media/wtp-website-details.png" alt-text="The domain or URL entity details page" lightbox="media/wtp-website-details.png":::
 
 For more information, see [About URL or domain entity pages](investigate-domain.md).
 
@@ -71,11 +71,11 @@ For more information, see [About device entity pages](investigate-machines.md).
 
 With web protection in Defender for Endpoint, your end users are prevented from visiting malicious or unwanted websites using Microsoft Edge or other browsers. Because blocking is done by [network protection](network-protection.md) and not their web browser, users see a generic error from the web browser. They also see a notification from Windows.
 
-:::image type="content" source="images/wtp-browser-blocking-page.png" alt-text="The Microsoft Edge showing a 403 error, and the Windows notification" lightbox="images/wtp-browser-blocking-page.png":::
+:::image type="content" source="media/wtp-browser-blocking-page.png" alt-text="The Microsoft Edge showing a 403 error, and the Windows notification" lightbox="media/wtp-browser-blocking-page.png":::
 
 *Web threat blocked on Microsoft Edge*
 
-:::image type="content" source="images/wtp-chrome-browser-blocking-page.png" alt-text="The Chrome web browser showing a secure connection warning, and the Windows notification" lightbox="images/wtp-chrome-browser-blocking-page.png":::
+:::image type="content" source="media/wtp-chrome-browser-blocking-page.png" alt-text="The Chrome web browser showing a secure connection warning, and the Windows notification" lightbox="media/wtp-chrome-browser-blocking-page.png":::
 *Web threat blocked on Chrome*
 
 ## Related articles

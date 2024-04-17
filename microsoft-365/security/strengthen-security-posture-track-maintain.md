@@ -6,7 +6,7 @@ f1.keywords:
 - strengthen security posture
 ms.author: siosulli
 author: siosulli
-manager: densieb
+manager: deniseb
 audience: Admin
 description: Learn how to strengthen your organization's security posture - track and maintain.
 ms.topic: tutorial

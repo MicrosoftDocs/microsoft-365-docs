@@ -10,14 +10,14 @@ ms.sitesec: library
 ms.localizationpriority: medium
 ms.author: dansimp
 author: dansimp
-manager: dansimp
+manager: deniseb
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier2
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 02/06/2023
+ms.date: 03/08/2024
 
 ---
 

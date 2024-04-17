@@ -2,12 +2,8 @@
 title: Get started with Microsoft Defender Experts for XDR
 ms.reviewer:
 description: Defender Experts for XDR lets you determine the individuals or groups within your organization that need to be notified if there's a critical incident
-keywords: XDR, protected assets, defender experts for xdr, set up microsoft xdr, set up permissions in xdr, managed detection and response (MDR) service, service delivery manager, managed response in Teams, readiness, threat hunting and analysis, actions needed xdr
 ms.service: defender-experts
 ms.subservice: dex-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: vpattnaik
 author: vpattnai
 ms.localizationpriority: medium
@@ -157,7 +153,7 @@ To turn on Teams notifications and chat after the initial setup, go to **Setting
 
 :::image type="content" source="../../media/xdr/Teams-managed-response.png" alt-text="Screenshot of option to activate Teams for receiving managed response." lightbox="../../media/xdr/Teams-managed-response.png":::
 
-You can add new members to the channel by navigating to **Defender Experts team** > **More options (…)** >  **Manage team** > **Add member**.
+You can add new members to the channel by navigating to **Defender Experts team** \> **More options (...)** >  **Manage team** > **Add member**.
 
 ## Prepare your environment for the Defender Experts service
 
@@ -185,7 +181,7 @@ The readiness assessment has two parts:
 
 After you complete all the required tasks and met the onboarding targets in your readiness assessment, your service delivery manager (SDM) initiates the monitoring phase of the Defender Experts for XDR service, where, for a few days, our experts start monitoring your environment closely to identify latent threats, sources of risk, and normal activity. As we get better understanding of your critical assets, we can streamline the service and fine-tune our responses.
 
-Once our experts begin to perform comprehensive response work on your behalf, you’ll start receiving [notifications about incidents](managed-detection-and-response-xdr.md#incident-updates) that require remediation steps and targeted recommendations on critical incidents. You can also [chat with our experts](communicate-defender-experts-xdr.md) or your SDMs regarding important queries and regular business and security posture reviews, and [view real-time reports](reports-xdr.md) on the number of incidents we’ve investigated and resolved on your behalf.
+Once our experts begin to perform comprehensive response work on your behalf, you'll start receiving [notifications about incidents](managed-detection-and-response-xdr.md#incident-updates) that require remediation steps and targeted recommendations on critical incidents. You can also [chat with our experts](communicate-defender-experts-xdr.md) or your SDMs regarding important queries and regular business and security posture reviews, and [view real-time reports](reports-xdr.md) on the number of incidents we've investigated and resolved on your behalf.
 
 ### Next step
 
