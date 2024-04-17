@@ -27,17 +27,17 @@ keywords:
 
 # Step 6. Monitor device risk and compliance to security baselines
 
-After your organization has deployed Microsoft Defender for Endpoint, you can gain greater insights and protection of your devices by integrating Microsoft Intune with Defender for Endpoint. For mobile devices, this includes the ability to monitor device risk as a condition for access. For Windows devices, you can monitor compliance of these devices to security baselines.
+After your organization deploys Microsoft Defender for Endpoint, you can gain greater insights and protection of your devices by integrating Microsoft Intune with Defender for Endpoint. For mobile devices, this includes the ability to monitor device risk as a condition for access. For Windows devices, you can monitor compliance of these devices to security baselines.
 
-Deploying Microsoft Defender for Endpoint includes onboarding endpoints. If you used Intune to onboard endpoints (recommended), then you have already connected Microsoft Intune to Defender for Endpoint. If you used a different method to onboard endpoints to Defender for Endpoint, see [Configure Microsoft Defender for Endpoint in Intune](/mem/intune/protect/advanced-threat-protection-configure) to ensure you have set up the service-to-service connection between Intune and Microsoft Defender for Endpoint. 
+Deploying Microsoft Defender for Endpoint includes onboarding endpoints. If you used Intune to onboard endpoints (recommended), then you've connected Microsoft Intune to Defender for Endpoint. If you used a different method to onboard endpoints to Defender for Endpoint, see [Configure Microsoft Defender for Endpoint in Intune](/mem/intune/protect/advanced-threat-protection-configure) to ensure you set up the service-to-service connection between Intune and Microsoft Defender for Endpoint. 
 
 :::image type="content" source="../media/devices/devices-defender-for-endpoint-steps.svg" alt-text="The integration of Microsoft Intune with Microsoft Defender for Endpoint, including how Defender for Endpoint shares its signals with Microsoft Defender XDR." lightbox="../media/devices/devices-defender-for-endpoint-steps.svg":::
 
 In this illustration:
 
 - Microsoft Defender for Endpoint greatly increases the sophistication of threat protection for devices.
-- While Microsoft Intune allows you to set App Protection Policies and manage devices (including configuration changes), Defender for Endpoint continuously monitors your devices for threats, and can take automated action to remediate attacks.
-- You can use Intune to onboard devices to Defender for Endpoint. When you do this, you're also enabling these devices to work with Microsoft Purview Endpoint Data Loss Prevention (Endpoint DLP).
+- Microsoft Intune allows you to set App Protection Policies and manage devices (including configuration changes). Defender for Endpoint continuously monitors your devices for threats, and can take automated action to remediate attacks.
+- You can use Intune to onboard devices to Defender for Endpoint, which enables these devices to work with Microsoft Purview Endpoint Data Loss Prevention (DLP).
 
 This article includes these steps:
 
@@ -48,7 +48,7 @@ If Defender for Endpoint hasn’t already been set up, work with your threat pro
 
 ## Monitor device risk as a condition for access
 
-With Microsoft Defender for Endpoint deployed, you can take advantage of threat risk signals. This allows you to block access to devices based on their risk score. Microsoft recommends allowing access to devices with a risk score of medium or below.
+With Microsoft Defender for Endpoint deployed, you can take advantage of threat risk signals. This allows you to block access to devices based on their risk score. Microsoft recommends allowing access to devices with a risk score of medium or lower.
 
 For Android and iOS/iPadOS, threat signals can be used within your App Protection Policies (APP). For more information, see [Create and assign app protection policy to set device risk level](/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level).
 
@@ -73,7 +73,7 @@ To deploy security baselines and monitor compliance to these settings, use the s
 |Step  |Description  |
 |---------|---------|
 |1     |Review key concepts and compare the Microsoft Defender for Endpoint and the Windows Intune security baselines. <br><br> See [Increase compliance to the Microsoft Defender for Endpoint security baseline](../security/defender-endpoint/configure-machines-security-baseline.md) to learn recommendations. <br><br> See [Use security baselines to configure Windows devices in Intune](/mem/intune/protect/security-baselines) to review the list of available security baselines and how to avoid conflicts.         |
-|2     |  Deploy Windows security baseline settings for Intune. You might have already accomplished this if you followed the guidance in [Step 5. Deploy configuration profiles](manage-devices-with-intune-configuration-profiles.md).        |
+|2     |  Deploy Windows security baseline settings for Intune. If not, see the guidance in [Step 5. Deploy configuration profiles](manage-devices-with-intune-configuration-profiles.md).        |
 |3    |  Deploy Defender for Endpoint baseline settings for Intune. See [Manage security baseline profiles in Microsoft Intune](/mem/intune/protect/security-baselines-configure) to create the profile and choose the baseline version. <br><br> You can also follow the instructions here: [Review and assign the Microsoft Defender for Endpoint security baseline](../security/defender-endpoint/configure-machines-security-baseline.md#review-and-assign-the-microsoft-defender-for-endpoint-security-baseline). |
 |4     | In Defender for Endpoint, review the [Security baseline card on device configuration management](../security/defender-endpoint/configure-machines.md). |
 
