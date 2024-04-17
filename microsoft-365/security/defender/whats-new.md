@@ -41,6 +41,7 @@ You can also get product updates and important notifications through the [messag
 - (GA) **[Microsoft Copilot in Microsoft Defender](security-copilot-in-microsoft-365-defender.md)** is now generally available. Copilot in Defender helps you investigate and respond to incidents faster and more effectively. Copilot provides guided responses, incident summaries and reports, helps you build KQL queries to hunt for threats, provide file and script analyses, and enable you to summarize relevant and actionable threat intelligence.
 - Copilot in Defender customers can now export incident data to PDF. Use the exported data to easily share incident data, facilitating discussions with your security teams and other stakeholders. For details, see **[Export incident data to PDF](manage-incidents.md#export-incident-data-to-pdf)**.
 - **Notifications in the Microsoft Defender portal** are now available. On the top right-hand side of the Defender portal, select the bell icon to view all your active notifications. Different types of notifications are supported such as success, info, warning, and error. Dismiss individual notifications or dismiss all from the notifications tab.
+- The `AzureResourceId` column is now available in the [DeviceInfo](advanced-hunting-deviceinfo-table.md) table in advanced hunting.
 
 ## February 2024
 
