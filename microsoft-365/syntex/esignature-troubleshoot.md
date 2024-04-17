@@ -52,7 +52,7 @@ Get-SPOSite -Limit All | Select-Object Url, SharingCapability
 
 Certain [conditional access](/entra/identity/conditional-access/overview) policies might determine whether an external recipient (signers outside of your organization or Microsoft 365 tenant) is able sign a document. When this happens, the external signers might not be able to access the document for signing. In some other cases, they might be able to access the document for signing but the signing operation is unsuccessful. One common way to resolve this is to contact your IT admin who will be able to add the SharePoint eSignature app to the list of approved apps via the  Microsoft Entra admin center. 
 
-In some cases they may need to add SharePoint eSignature app to the Excluded Apps list in the Conditional Access policy -> Target resources section so that the policy doesn't apply to the SharePoint eSignature app. They can verify their changes using the WhatIf tool with the Policy.
+In some cases, the admin might need to the add SharePoint eSignature app to the **Excluded Apps** list in the **Conditional Access policy** > **Target resources** section so that the policy doesn't apply to the SharePoint eSignature app. The admin can verify the changes using the WhatIf tool with the policy.
 
 ## Unable to find the request emails
 
