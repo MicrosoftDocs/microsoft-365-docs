@@ -40,7 +40,6 @@ Watch this video for an overview of the deployment process.
 <br>
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Y4fC]
 
-
 ## Why manage endpoints?
 
 The modern enterprise has an incredible diversity of endpoints accessing their data. This setup creates a massive attack surface, and as a result, endpoints can easily become the weakest link in your Zero Trust security strategy.
@@ -61,7 +60,7 @@ The following diagram illustrates building blocks to achieve a Zero Trust securi
 
 In this illustration:
 
-|&nbsp;|Step|Description|Licensing requirements|
+|&nbsp;| Step | Description | Licensing requirements |
 |---|---|---|---|
 |1|Configure starting-point Zero Trust identity and device access policies|Work with your identity administrator to [**Implement Level 2 App Protection Policies (APP) data protection**](manage-devices-with-intune-app-protection.md). These policies don't require that you manage devices. You configure the APP policies in Intune. Your identity admin configures a Conditional Access policy to require approved apps.|E3, E5, F1, F3, F5|
 |2|Enroll devices to Intune|This task requires more planning and time to implement. Microsoft recommends using Intune to enroll devices because this tool provides optimal integration. There are several options for enrolling devices, depending on the platform. For example, Windows devices can be enrolled by using Microsoft Entra join or by using Autopilot. You need to review the options for each platform and decide which enrollment option is best for your environment. See [**Step 2. Enroll devices to Intune**](manage-devices-with-intune-enroll.md) for more information.|E3, E5, F1, F3, F5|
@@ -110,19 +109,23 @@ Note that only Intune is managing devices. Onboarding refers to the ability for 
 
 | &nbsp; |Enroll     |Onboard  |
 |---------|---------|---------|
-|Description     |  Enrollment applies to managing devices. Devices are enrolled for management with Intune or Configuration Manager.        | Onboarding configures a device to work with a specific set of capabilities in Microsoft 365. Currently, onboarding applies to Microsoft Defender for Endpoint and Microsoft compliance capabilities. <br><br>On Windows devices, onboarding involves toggling a setting in Windows Defender that allows Defender to connect to the online service and accept policies that apply to the device.        |
+|Description     |  Enrollment applies to managing devices. Devices are enrolled for management with Intune or Configuration Manager.        | Onboarding configures a device to work with a specific set of capabilities in Microsoft 365. Currently, onboarding applies to Microsoft Defender for Endpoint and Microsoft compliance capabilities. <br><br> On Windows devices, onboarding involves toggling a setting in Windows Defender that allows Defender to connect to the online service and accept policies that apply to the device.        |
 |Scope     | These device management tools manage the entire device, including configuring the device to meet specific objectives, like security.        |Onboarding only affects the services that apply.     |
-|Recommended method     | Microsoft Entra join automatically enrolls devices into Intune.        | Intune is the preferred method for onboarding devices to Windows Defender for Endpoint, and consequently Microsoft Purview capabilities.<br><br>Note that devices that are onboarded to Microsoft Purview capabilities using other methods aren't automatically enrolled for Defender for Endpoint.        |
-|Other methods     |   Other methods of enrollment depend on the platform of the device and whether it's BYOD or managed by your organization.      | Other methods for onboarding devices include, in recommended order:<br><li>Configuration Manager<li>Other mobile device management tool (if the device is managed by one)<li>Local script<li>VDI configuration package for onboarding non-persistent virtual desktop infrastructure (VDI) devices<li>Group Policy|
+|Recommended method     | Microsoft Entra join automatically enrolls devices into Intune.        | Intune is the preferred method for onboarding devices to Windows Defender for Endpoint, and consequently Microsoft Purview capabilities. <br><br> Note that devices that are onboarded to Microsoft Purview capabilities using other methods aren't automatically enrolled for Defender for Endpoint.        |
+|Other methods     |   Other methods of enrollment depend on the platform of the device and whether it's BYOD or managed by your organization.      | Other methods for onboarding devices include, in recommended order: <br><li> Configuration Manager <li> Other mobile device management tool (if the device is managed by one) <li> Local script <li> VDI configuration package for onboarding non-persistent virtual desktop infrastructure (VDI) devices <li> Group Policy|
 
 ## Learning for administrators
 
 The following resources help administrators learn concepts about using Intune.
 
-- [Simplify device management with Microsoft Intune](/training/modules/simplify-device-management-with-microsoft-endpoint-manager/)
+- [Simplify device management with Microsoft Intune](/training/modules/simplify-device-management-with-microsoft-endpoint-manager/) training module
 
-  Learn about modern management and the Microsoft Intune family of products, and how the business management tools in Microsoft 365 can simplify management of all your devices.
+  Learn about how the business management solutions through Microsoft 365 provide people with a secure, personalized desktop experience and help organizations easily manage updates for all devices with a simplified admin experience.
 
-- [Set up Microsoft Intune](/training/modules/set-up-microsoft-intune/)
+- [Evaluate Microsoft Intune](/training/modules/set-up-microsoft-intune/)
 
-  Microsoft Intune helps you protect the devices, apps, and data that the people at your organization use to be productive. After completing this module, you'll have set up Microsoft Intune. Set up includes reviewing the supported configurations, signing up for Intune, adding users and groups, assigning licenses to users, granting admin permissions, and setting the Mobile Device Management (MDM) authority.
+  Microsoft Intune helps you protect the devices, apps, and data that the people at your organization use to be productive. This article tells you how to set up Microsoft Intune. Setup includes reviewing the supported configurations, signing up for Intune, adding users and groups, assigning licenses to users, granting admin permissions, and setting the Mobile Device Management (MDM) authority.
+
+## Next step
+
+Go to [Step 1. Implement App Protection Policies](manage-devices-with-intune-app-protection.md).

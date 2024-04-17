@@ -48,4 +48,4 @@ To configure device compliance policies, use the recommended guidance and settin
 
 ## Next step
 
-Go to [Step 4. Require healthy and compliant devices](manage-devices-with-intune-require-compliance.md).
+Go to [Step 4. Require healthy and compliant devices with Intune](manage-devices-with-intune-require-compliance.md).

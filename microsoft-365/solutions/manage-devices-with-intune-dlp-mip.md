@@ -52,3 +52,7 @@ Use the following steps to work with your information protection team.
 |1     |  [Learn about Endpoint DLP](../compliance/endpoint-dlp-learn-about.md).        |
 |2     | Enable devices for Endpoint DLP. If you onboarded devices to Microsoft Defender for Endpoint, your devices are already enabled for Endpoint DLP. If your devices aren't onboarded to Defender for Endpoint, see [Get started with Endpoint data loss prevention](../compliance/endpoint-dlp-getting-started.md) for instructions.|
 |3     |   Work with your information protection and governance team to define, test, and tune policies. This includes monitoring the results. See these resources: <br><br> - [Using Endpoint data loss prevention](../compliance/endpoint-dlp-using.md) <br><br> - [Get started with Activity Explorer](../compliance/data-classification-activity-explorer.md)    |
+
+## Next step
+
+Go to [Step 7. Implement data loss prevention (DLP) with information protection capabilities](manage-devices-with-intune-dlp-mip.md).
