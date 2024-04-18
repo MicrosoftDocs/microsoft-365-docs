@@ -53,11 +53,11 @@ The option to **Ask Defender Experts** is available in several places throughout
 
 - **Device page actions menu**
 
-   ![Screenshot of the Ask Defender Experts menu option in the Device page action menu in the Microsoft Defender portal.](../../media/mte/defenderexperts/device-page-actions-menu.png)
+:::image type="content" source="../../media/mte/defenderexperts/device-page-actions-menu.png" alt-text="Screenshot of the Ask Defender Experts menu option in the Device page action menu in the Microsoft Defender portal." lightbox="../../media/mte/defenderexperts/device-page-actions-menu.png":::
 
 - **Device inventory page flyout menu**
 
-   ![Screenshot of the Ask Defender Experts menu option in the Device inventory page flyout menu in the Microsoft Defender portal.](../../media/mte/defenderexperts/device-inventory-flyout-menu.png)
+:::image type="content" source="../../media/mte/defenderexperts/device-inventory-flyout-menu.png" alt-text="Screenshot of the Ask Defender Experts menu option in the Device inventory page flyout menu in the Microsoft Defender portal.." lightbox="../../media/mte/defenderexperts/device-inventory-flyout-menu.png":::
 
 - **Alerts page flyout menu**
 
