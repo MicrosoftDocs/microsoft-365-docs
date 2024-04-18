@@ -20,17 +20,16 @@ description: Learn how to use a prebuilt sensitive information model in Microsof
 
 # Use a prebuilt model to extract sensitive information from documents in Microsoft Syntex
 
-The prebuilt *sensitive information model* analyzes and extracts key information from documents. The model recognizes documents in various formats and extracts key sensitive information, such personal identification numbers; personal addresses, emails, and phone numbers; and financial or health information.
-
-> [!NOTE]
-> Currently, this model is available only for .pdf and image file types. More file types will be added in future releases.
+The prebuilt *sensitive information model* analyzes and extracts key information from documents. The model recognizes documents in various formats and extracts key sensitive information, such personal identification numbers, personal physical and email addresses, phone numbers, and personal financial or health information.
 
 To use a sensitive information model, follow these steps:
 
 - Step 1: [Create a sensitive information model](#step-1-create-a-sensitive-information-model)
-- Step 2: [Upload an example file to analyze](#step-2-upload-an-example-file-to-analyze)
-- Step 3: [Select extractors for your model](#step-3-select-extractors-for-your-model)
-- Step 4: [Apply the model](#step-4-apply-the-model)
+- Step 2: [Select the information types to detect](#step-2-select-the-information-types-to-detect)
+- Step 3: [Configure the information to detect](#step-3-configure-the-information-to-detect)
+- Step 4: [Configure the information to extract](#step-4-configure-the-information-to-extract)
+- Step 5: [Test the model](#step-5-test-the-model)
+- Step 6: [Apply the model](#step-6-apply-the-model)
 
 ## Step 1: Create a sensitive information model
 
@@ -54,13 +53,13 @@ On the **Configure extraction** page, select the sensitive information types you
 
 ![Screenshot of the Configure extraction page.](../media/content-understanding/prebuilt-sensitive-select-extract.png)
 
-## Step 4: Test the model
+## Step 5: Test the model
 
 On the **Test model** page, select **+Add files** to select sample files to test your model.
 
 ![Screenshot of the Test model page.](../media/content-understanding/prebuilt-sensitive-test-model.png)
 
-## Step 5: Apply the model
+## Step 6: Apply the model
 
 On the **Apply model** page, select **Finish** to apply the model to detect sensitive information in files.
 
