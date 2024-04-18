@@ -14,7 +14,7 @@ ms.collection:
   - essentials-overview
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 04/17/2024
+ms.date: 04/18/2024
 ---
 
 # Microsoft Defender Experts for Hunting

@@ -19,7 +19,7 @@ ms.collection:
   - essentials-get-started
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 04/12/2024
+ms.date: 04/18/2024
 ---
 
 # Start using Microsoft Defender Experts for Hunting
