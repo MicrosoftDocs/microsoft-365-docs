@@ -157,8 +157,6 @@ Here is an example of an enterprise organization and its tenant with optimal net
 
 ![Example of a tenant with optimal networking.](../media/tenant-management-overview/tenant-management-tenant-build-step2.png)
 
-[See a larger version of this image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-management-overview/tenant-management-tenant-build-step2.png)
-
 In this illustration, the tenant for this enterprise organization has:
 
 - Local internet access for each branch office with an SDWAN device that forwards trusted Microsoft 365 traffic to a local front door.
