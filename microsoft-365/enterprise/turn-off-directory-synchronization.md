@@ -37,7 +37,7 @@ You can use PowerShell to turn off directory synchronization and convert your sy
 
 To turn off Directory synchronization:
   
-1. First, install the required software and connect to your Microsoft 365 subscription. For instructions, see [Connect with the Microsoft Graph PowerShell module for Windows PowerShell](connect-to-microsoft-365-powershell#connect-with-microsoft-graph-powershell).
+1. First, install the required software and connect to your Microsoft 365 subscription. For instructions, see [Connect with the Microsoft Graph PowerShell module for Windows PowerShell](/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-microsoft-graph-powershell).
 
 2. Use **Update-MgBetaOrganization** to disable directory synchronization:
 
