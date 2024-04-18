@@ -88,7 +88,7 @@ Security and information protection for multi-region organizations with a single
 
 | Item | Description |
 |:-----|:-----|
-|[![Multi-region infographic.](../media/solutions-architecture-center/multi-region-single-tenant-security-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.vsdx)<br>Updated March 2020 |Using a single Microsoft 365 tenant for your global organization is the best choice and experience for many reasons. However, many architects wrestle with how to meet security and information protection objectives across different regions. This set of topics provides recommendations. |
+|[![Multi-region infographic.](../media/solutions-architecture-center/multi-region-single-tenant-security-thumb.png)](https://download.microsoft.com/download/b/4/8/b482e1b1-8688-4319-b4ff-a476a4ba46ab/msft-security-info-protect-multi-region.pdf) <br/> [PDF](https://download.microsoft.com/download/b/4/8/b482e1b1-8688-4319-b4ff-a476a4ba46ab/msft-security-info-protect-multi-region.pdf) \| [Visio](https://download.microsoft.com/download/6/8/9/689c1c79-6229-443c-874d-df501bb86f10/msft-security-info-protect-multi-region.vsdx)<br>Updated March 2020 |Using a single Microsoft 365 tenant for your global organization is the best choice and experience for many reasons. However, many architects wrestle with how to meet security and information protection objectives across different regions. This set of topics provides recommendations. |
 
 <!--
 ## Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations
@@ -109,18 +109,7 @@ Depending on your environment, some tools are better suited for certain architec
 | Item | Description |
 |:-----|:-----|
 |[![Thumb image for Microsoft Defender for Endpoint deployment strategy.](../media/solutions-architecture-center/mde-deployment-strategy.png)](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)  \| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) <br>Updated September 2021| The architectural material helps you plan your deployment for the following architectures: <ul><li> Cloud-native </li><li> Co-management </li><li> On-premises</li><li>Evaluation and local onboarding</li> |
-<!--
 
-<a name="BKMK_O365IDP"></a>
-## Zero Trust identity and device protection for Microsoft 365
-
-Recommended Zero Trust capabilities for protecting identities and devices that access Microsoft 365, other SaaS services, and on-premises applications published with Azure AD Application Proxy.
-
-| Item | Description |
-|:-----|:-----|
-|[![Model poster: Zero Trust identity and device protection for Microsoft 365.](../media/zero-trust-identity-device-access-policies-overview/zero-trust-id-device-protection-model-thumbnail.png)](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br/>  [View as a PDF](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Download as a PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf)  \| [Download as a Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx) <br/> Updated November 2021|It's important to use consistent levels of protection across your data, identities, and devices. This model shows you which Zero Trust capabilities are comparable with more information on capabilities to protect identities and devices.  <br/> |
-
---> 
 <a name="BKMK_ediscovery"></a>
 
 ## eDiscovery (Premium) architecture in Microsoft 365

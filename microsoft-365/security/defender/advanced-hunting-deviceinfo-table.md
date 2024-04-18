@@ -73,6 +73,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `DeviceDynamicTags` | `string` | Device tags added and removed dynamically based on dynamic rules |
 | `ConnectivityType` | `string` | Type of connectivity from the device to the cloud |
 | `HostDeviceId` | `string` | Device ID of the device running Windows Subsystem for Linux |
+| `AzureResourceId` | `string` | Unique identifier of the Azure resource associated with the device |
 
 
 
