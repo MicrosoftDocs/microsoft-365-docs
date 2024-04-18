@@ -103,16 +103,21 @@ Copilot for Microsoft 365 is available as an add-on plan with one of the followi
 
 - Microsoft 365 E5
 - Microsoft 365 E3
+- Microsoft 365 F1
+- Microsoft 365 F3
+- Office 365 E1
 - Office 365 E3
 - Office 365 E5
-- Microsoft 365 Business Standard
+- Office 365 F3
+- Microsoft 365 Business Basic
 - Microsoft 365 Business Premium
+- Microsoft 365 Business Standard
 - Microsoft 365 A5 for faculty*
 - Microsoft 365 A3 for faculty*
 - Office 365 A5 for faculty*
 - Office 365 A3 for faculty*
 
-*Available via Enrollment for Education Solutions (EES) or Cloud Solution Provider only.
+*Available via Enrollment for Education Solutions (EES) or Cloud Solution Provider only.
 
 You can use the [Microsoft Copilot for Microsoft 365 setup guide](https://admin.microsoft.com/Adminportal/Home?Q=learndocs#/modernonboarding/microsoft365copilotsetupguide) in the Microsoft 365 admin center to assign the required licenses to users. For more information, see [Assign licenses to users in the Microsoft 365 admin center](/microsoft-365/admin/manage/assign-licenses-to-users) and [Microsoft Copilot for Microsoft 365 requirements](microsoft-365-copilot-requirements.md).
 
