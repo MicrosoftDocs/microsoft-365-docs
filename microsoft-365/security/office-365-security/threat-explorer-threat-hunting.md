@@ -561,4 +561,4 @@ In addition to the scenarios outlined in this article, you have more options in 
 
 - [Threat protection status report](reports-email-security.md#threat-protection-status-report)
 - [Automated investigation and response in Microsoft Defender XDR](../defender/m365d-autoir.md)
-- [Trigger an investigation from Threat Explorer](air-about-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).
+- [Trigger an investigation from Threat Explorer](air-examples.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).
