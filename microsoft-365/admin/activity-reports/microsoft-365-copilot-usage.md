@@ -48,16 +48,21 @@ You can see the following summary charts in this report:
 
 - Microsoft 365 E5
 - Microsoft 365 E3
+- Microsoft 365 F1
+- Microsoft 365 F3
+- Office 365 E1
 - Office 365 E3
 - Office 365 E5
-- Microsoft 365 Business Standard
+- Office 365 F3
+- Microsoft 365 Business Basic
 - Microsoft 365 Business Premium
+- Microsoft 365 Business Standard
 - Microsoft 365 A5 for faculty*
 - Microsoft 365 A3 for faculty*
 - Office 365 A5 for faculty*
 - Office 365 A3 for faculty*
 
-*Available via Enrollment for Education Solutions (EES) or Cloud Solution Provider only.
+*Available via Enrollment for Education Solutions (EES) or Cloud Solution Provider only.
 
 **Users on an eligible update channel** This number is the sum of all users who are enrolled in Current Channel or Monthly Enterprise Channel for app updates in your organization and could be assigned with a Copilot license.
 
