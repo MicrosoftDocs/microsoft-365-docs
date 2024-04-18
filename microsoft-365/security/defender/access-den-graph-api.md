@@ -1,5 +1,5 @@
 ---
-title: Accessing Defender Experts notifications using Graph API
+title: Accessing Defender Experts notifications using Graph security API
 ms.reviewer:
 description: The method to access Defender Experts Notifications using Graph security API
 ms.service: defender-experts
@@ -18,7 +18,7 @@ search.appverid: met150
 ms.date: 04/18/2024
 ---
 
-# Access Defender Experts Notifications using Graph security API
+# Access incident notifications using Graph API
 
 **Applies to:**
 
