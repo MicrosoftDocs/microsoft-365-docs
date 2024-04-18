@@ -15,7 +15,7 @@ ms.topic: reference
 ms.subservice: reference
 ms.custom: api
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 04/17/2024
 ---
 
 # Get software by ID
@@ -73,7 +73,7 @@ If successful, this method returns 200 OK with the specified software data in th
 Here's an example of the request.
 
 ```http
-GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge
+GET https://api.security.microsoft.com/api/Software/microsoft-_-edge
 ```
 
 ### Response example
@@ -82,7 +82,7 @@ Here's an example of the response.
 
 ```json
 {
-    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Software/$entity",
+    "@odata.context": "https://api.security.microsoft.com/api/$metadata#Software/$entity",
     "id": "microsoft-_-edge",
     "name": "edge",
     "vendor": "microsoft",

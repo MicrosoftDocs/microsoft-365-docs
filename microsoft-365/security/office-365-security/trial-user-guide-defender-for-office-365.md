@@ -157,7 +157,7 @@ Watch this video to learn more: [Campaign Views in Microsoft Defender for Office
 
 Respond efficiently using Automated investigation and response (AIR) to review, prioritize, and respond to threats.
 
-- [Learn more](air-about-office.md) about investigation user guides.
+- [Learn more](air-examples.md) about investigation user guides.
 - [View details and results](email-analysis-investigations.md) of an investigation.
 - Eliminate threats by [approving remediation actions](air-remediation-actions.md).
 
