@@ -246,5 +246,23 @@ Select one of the following tabs to continue with the prebuilt model you want to
 
 6. You're now ready to [complete setting up the model](prebuilt-model-receipt.md).
 
+# [Sensitive information processing](#tab/sensitive-information-processing)
+
+1. Select **Sensitive information processing**.
+
+2. On the **Sensitive information processing: Details** page, you'll find more information about the model. If you want to proceed with using the model, select **Next**.
+
+3. On the right panel of the **Create a sensitive informationprocessing model** page, enter the following information.
+
+    - **Model name** – Enter the name of the model, for example *Service agreement*.
+
+    - **Description** – Enter information about how this model will be used.
+
+        ![Screenshot of the right panel of the Create a sensitive information processing model page.](../media/content-understanding/create-a-model-panel.png) 
+    
+4. When you're ready to create the model, select **Create**.
+
+5. You're now ready to [complete setting up the model](prebuilt-model-sensitive-info.md).
+
 ---
 
