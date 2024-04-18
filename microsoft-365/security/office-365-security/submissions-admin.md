@@ -1147,7 +1147,7 @@ After you submit a user reported message to Microsoft from the **User reported**
 
 :::image type="content" source="../../media/admin-submission-user-reported-submit-button-options.png" alt-text="The Trigger investigation action in the Submit to Microsoft for analysis dropdown list." lightbox="../../media/admin-submission-user-reported-submit-button-options.png":::
 
-For more information, see [Trigger an investigation](air-about-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).
+For more information, see [Trigger an investigation](air-examples.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).
 
 #### Notify users about admin submitted messages to Microsoft
 
