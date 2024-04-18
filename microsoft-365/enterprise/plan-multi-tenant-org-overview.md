@@ -40,6 +40,8 @@ Once user synchronization has been configured, you can adjust the synchronizatio
 
 If you have existing cross-tenant synchronization configurations in Microsoft Entra ID, they continue to operate after you set up a multitenant organization in Microsoft 365. You can continue to use these configurations to synchronize users for your Microsoft 365 multitenant organization. (Note that the Microsoft 365 admin center won't recognize these configurations and the outbound sync status will show as not configured.)
 
+If you already have B2B member users synchronized with tenants that are part of the MTO, those users will immediately become MTO members upon MTO formation.
+
 You can synchronize users between tenants using the Microsoft 365 admin center. This will create new cross-tenant synchronization configurations in Microsoft Entra ID. Both the new and previously existing configurations will run and synchronize the users that you've specified.
 
 We recommend that you only have a single configuration to synchronize users to a given tenant. If you want to synchronize the same users to every tenant, [configure synchronization in the Microsoft 365 admin center](sync-users-multi-tenant-orgs.md). If you want to synchronize different users to different tenants, [configure synchronization in Microsoft Entra ID](/azure/active-directory/multi-tenant-organizations/cross-tenant-synchronization-configure).
