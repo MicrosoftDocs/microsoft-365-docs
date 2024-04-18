@@ -20,9 +20,6 @@ audience: ITPro
 
 # Microsoft Defender for Endpoint on Windows Server with SAP
 
-> [!NOTE]
-> As a Principal Software Architect for Microsoft, [Cameron Gardiner](https://linkedin.com/in/cameron-gardiner-142a202) contributed to and provided material feedback for this article.
-
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
