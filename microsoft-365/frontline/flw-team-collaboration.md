@@ -10,11 +10,11 @@ f1.keywords:
 - NOCSH
 ms.service: microsoft-365-frontline
 ms.collection: 
-  - M365-collaboration
-  - m365-frontline
-  - highpri
-  - m365solution-frontline
-  - m365solution-scenario
+- M365-collaboration
+- m365-frontline
+- highpri
+- m365solution-frontline
+- m365solution-scenario
 ms.localizationpriority: high
 search.appverid: MET150
 searchScope:

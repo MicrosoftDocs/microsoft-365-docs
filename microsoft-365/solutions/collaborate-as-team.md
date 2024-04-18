@@ -1,7 +1,7 @@
 ---
 title: Collaborate with guests in a team (IT Admins)
-ms.author: mikeplum
-author: MikePlumleyMSFT
+ms.author: jtremper
+author: jacktremper
 manager: pamgreen
 ms.date: 07/18/2023
 audience: ITPro
