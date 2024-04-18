@@ -15,7 +15,7 @@ ms.collection:
 ms.subservice: reference
 ms.custom: api
 search.appverid: met150
-ms.date: 09/15/2023
+ms.date: 04/17/2024
 ---
 
 # List machines API
@@ -69,7 +69,7 @@ Delegated (work or school account)|Machine.ReadWrite|'Read and write machine inf
 ## HTTP request
 
 ```http
-GET https://api.securitycenter.microsoft.com/api/machines
+GET https://api.security.microsoft.com/api/machines
 ```
 
 ## Request headers
@@ -93,7 +93,7 @@ If successful and machines exists - 200 OK with list of [machine](machine.md) en
 Here's an example of the request.
 
 ```http
-GET https://api.securitycenter.microsoft.com/api/machines
+GET https://api.security.microsoft.com/api/machines
 ```
 
 ### Response example
@@ -104,7 +104,7 @@ Here's an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-    "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#Machines",
+    "@odata.context": "https://api.security.microsoft.com/api/$metadata#Machines",
     "value": [
         {
             "id": "1e5bc9d7e413ddd7902c2932e418702b84d0cc07",

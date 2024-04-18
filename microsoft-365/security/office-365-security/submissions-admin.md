@@ -544,7 +544,7 @@ On the **Submissions** page, select the **Teams messages** tab.
 You can sort the entries by clicking on an available column header. Select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns** to change the columns that are shown. The default values are marked with an asterisk (<sup>\*</sup>):
 
 - **Submission name**<sup>\*</sup>
-- **Sender**sup>\*</sup>
+- **Sender**<sup>\*</sup>
 - **Date submitted**<sup>\*</sup>
 - **Reason for submitting**<sup>\*</sup>
 - **Submitted by**
@@ -1147,7 +1147,7 @@ After you submit a user reported message to Microsoft from the **User reported**
 
 :::image type="content" source="../../media/admin-submission-user-reported-submit-button-options.png" alt-text="The Trigger investigation action in the Submit to Microsoft for analysis dropdown list." lightbox="../../media/admin-submission-user-reported-submit-button-options.png":::
 
-For more information, see [Trigger an investigation](air-about-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).
+For more information, see [Trigger an investigation](air-examples.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).
 
 #### Notify users about admin submitted messages to Microsoft
 
