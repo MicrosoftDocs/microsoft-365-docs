@@ -61,11 +61,11 @@ The option to **Ask Defender Experts** is available in several places throughout
 
 - **Alerts page flyout menu**
 
-   ![Screenshot of the Ask Defender Experts menu option in the Alerts page flyout menu in the Microsoft Defender portal.](../../media/mte/defenderexperts/alerts-flyout-menu.png)
+:::image type="content" source="../../media/mte/defenderexperts/alerts-flyout-menu.png" alt-text="Screenshot of the Ask Defender Experts menu option in the Alerts page flyout menu in the Microsoft Defender portal.." lightbox="../../media/mte/defenderexperts/alerts-flyout-menu.png":::
 
 - **Incidents page actions menu**
 
-   ![Screenshot of the Ask Defender Experts menu option in the Incidents page actions menu in the Microsoft Defender portal.](../../media/mte/defenderexperts/incidents-page-actions-menu.png)
+:::image type="content" source="../../media/mte/defenderexperts/incidents-page-actions-menu.png" alt-text="Screenshot of the Ask Defender Experts menu option in the Incidents page actions menu in the Microsoft Defender portal.." lightbox="../../media/mte/defenderexperts/incidents-page-actions-menu.png":::
 
 ### Sample questions you can ask from Defender Experts
 
