@@ -4,11 +4,11 @@ description: Describes the new cloud.microsoft domain for Microsoft 365 apps
 author: dansimp
 ms.author: dansimp
 manager: dansimp
-ms.date: 02/15/2024
+ms.date: 04/18/2024
 ms.topic: overview
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection:
+ms.collection: must-keep
 ms.custom: QuickDraft
 ms.reviewer: dansimp
 search.appverid: MET150
@@ -31,6 +31,10 @@ The `.microsoft` top-level domain is exclusive to Microsoft. The new domain does
 Consolidating authenticated user-facing Microsoft 365 experiences to a single domain benefits customer in several ways. For end users, it streamlines the overall experience by reducing sign-ins, redirects, and delays when navigating across apps. For admins, it reduces the complexity of allowlists that are required to help your organization stay secure and productive. For all our customers – and our developers – this change helps align for better and tighter integration across the Microsoft 365 ecosystem by streamlining development and improving performance of cross-app experiences.
 
 'Dot brand' top-level domains like `.microsoft` enhance security, trustworthiness, and integrity. Microsoft has exclusive rights to the `.microsoft` top-level domain, enabling enhanced security protocols and governance controls. All experiences on the `.microsoft` domain are legitimate and authentic, as Microsoft is the registry operator and sole registrant.
+
+## Security considerations
+
+To ensure that the cloud.microsoft domain is secure and trustworthy, the entire domain hierarchy is isolated, purpose built, and dedicated to secure and compliant Microsoft product experiences. The domain is managed to highest standards of domain security and reputation, and is kept free of scenarios such as 3P websites, IaaS/PaaS resources, and hosting of active content, code or scripts that may affect the trust and integrity of products and applications residing in the domain.
 
 ## Requirements for admins
 
