@@ -17,7 +17,7 @@ ms.collection:
 ms.topic: reference
 ms.subservice: reference
 ms.custom: api
-ms.date: 06/03/2021
+ms.date: 04/17/2024
 ---
 
 # Upload files to the live response library
@@ -61,7 +61,7 @@ including how to choose permissions, see [Get started](apis-intro.md).
 Upload
 
 ```HTTP
-POST https://api.securitycenter.microsoft.com/api/libraryfiles
+POST https://api.security.microsoft.com/api/libraryfiles
 ```
 
 ## Request headers
@@ -97,7 +97,7 @@ Request
 Here is an example of the request using curl.
 
 ```CURL
-curl -X POST https://api.securitycenter.microsoft.com/api/libraryfiles -H
+curl -X POST https://api.security.microsoft.com/api/libraryfiles -H
 "Authorization: Bearer \$token" -F "file=\@mdatp1.png" -F
 "ParametersDescription=test"
 -F "HasParameters=true" -F "OverrideIfExists=true" -F "Description=test
