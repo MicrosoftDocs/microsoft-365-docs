@@ -48,7 +48,7 @@ To create and configure a sensitive information model, follow these steps:
 
 3. On the **Configure detection** page, select the sensitive information types you want to detect, and then select **Next**.
 
-    ![Screenshot of the Configure detection page.](../media/content-understanding/prebuilt-sensitive-add-entities.png)
+    ![Screenshot of the Configure detection page.](../media/content-understanding/prebuilt-sensitive-configure-detection.png)
 
 4. On the **Configure extraction** page, select the sensitive information types you want to extract, and then select **Next**.
 
@@ -64,7 +64,7 @@ To create and configure a sensitive information model, follow these steps:
 
 ## Create a rule to apply a sensitivity label
 
-To create a rule to automatically apply a sensitivity label to file, see [link to article TBD].
+To create a rule to automatically apply a sensitivity label or a retention to a document, see [link to article TBD].
 <!---
 
 2. On the **Files to analyze the model** page, select **Add** to find the file you want to use.
