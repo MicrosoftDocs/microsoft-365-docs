@@ -60,7 +60,7 @@ When you set up user synchronization with another tenant in a multitenant organi
 |givenName|telephoneNumber|
 |IsSoftDeleted|userPrincipalName|
 |jobTitle|UserType (member)|
-|mailNickname||
+|mailNickname|manager|
 
 You can change the properties that are synchronized after the synchronization has been configured. For more information, see [Configure cross-tenant synchronization](/azure/active-directory/multi-tenant-organizations/cross-tenant-synchronization-configure#step-9-review-attribute-mappings).
 
@@ -130,9 +130,9 @@ This procedure updates the *MTO_Sync_\<TenantID\>* synchronization configuration
 
 ## Set up calendar sharing for tenants in your MTO
 
-Calendar sharing allows users in each multitenant organization (MTO) tenant to view free/busy (time only) calendar availability information.
+Calendar sharing allows users in each multitenant organization (MTO) tenant to view free/busy (time only) calendar availability information. 
 
-To manage free/busy calendar sharing for tenants in your MTO:
+To manage free/busy calendar sharing for tenants in your MTO
 
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) as a global administrator.
 1. Expand **Settings** and select **Org settings**.
@@ -142,7 +142,7 @@ To manage free/busy calendar sharing for tenants in your MTO:
 1. Select tenants to enable free/busy calendar sharing.
 1. Select **Save changes**.
 
-The organization relationship must also be set up by the other tenants in your MTO for calendar free/busy availability information to be shared. For additional information about Free/Busy calendar sharing, see [Organization relationships in Exchange Online](/exchange/sharing/organization-relationships/organization-relationships).
+The calendar sharing feature for MTO utilizes [Organization relationships in Exchange Online](/exchange/sharing/organization-relationships/organization-relationships). The organization relationship will share all users calendar availability and must also be set up by the other tenants in your MTO for free/busy information to be shared.
 
 ## Set up MTO user labels in Teams for tenants in your MTO (Preview)
 
