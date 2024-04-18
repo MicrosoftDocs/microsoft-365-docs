@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: taylorau
-ms.date: 01/17/2024
+ms.date: 04/19/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -67,15 +67,18 @@ To access the Lighthouse permissions page and manage permissions, you must be a 
 
 4. In the confirmation window, select **Remove users** to confirm removal.
  
-## Update or change the security group for a Lighthouse RBAC role
+## Create or update a security group for a Lighthouse RBAC role
 
 1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Permissions** > **Lighthouse permissions**.
 
 2. Select a Lighthouse role from the list to open the Lighthouse role details pane.
 
 3. Do one of the following:
-    - Select **Use an existing security group**, select the security group, and then select **Save**.
-    - Select **Create a new security group**, provide a name and description, add users, and then select **Save**.
+    - Select **Use an existing security group**, select the security group from the list, and then select **Save**.
+    - Select **Create a new security group**, enter a name for the new group, optionally enter a description and add users, and then select **Save**.
+
+> [!NOTE]
+> You must assign the Lighthouse RBAC Administrator role to a role-assignable security group, and each user in the security group must have a Microsoft Entra ID P1 license. You can assign all other Lighthouse RBAC roles to any security group, including existing security groups.
 
 ## Next steps
 
