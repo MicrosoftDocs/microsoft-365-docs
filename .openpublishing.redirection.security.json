@@ -2177,7 +2177,7 @@
      },
      {
        "source_path": "microsoft-365/security/office-365-security/automated-investigation-response-office.md",
-       "redirect_url": "/microsoft-365/security/office-365-security/air-about-office",
+       "redirect_url": "/microsoft-365/security/office-365-security/air-examples",
        "redirect_document_id": true
      },
      {
@@ -3978,6 +3978,16 @@
      {
       "source_path": "microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management-trial",
       "redirect_url": "/microsoft-365/security/defender-vulnerability-management/trial-user-guide-defender-vulnerability-management",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "microsoft-365/security/defender/advanced-hunting-example.md",
+      "redirect_url": "/microsoft-365/security/defender/advanced-hunting-email-threats",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "microsoft-365/security/office-365-security/air-about-office.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/air-examples",
       "redirect_document_id": false
      }
    ]

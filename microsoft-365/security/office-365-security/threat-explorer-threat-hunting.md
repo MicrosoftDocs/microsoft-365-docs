@@ -54,6 +54,8 @@ The following information is available in this article:
 >
 > - [Email security with Threat Explorer and Real-time detections in Microsoft Defender for Office 365](threat-explorer-email-security.md)
 > - [Investigate malicious email that was delivered in Microsoft 365](threat-explorer-investigate-delivered-malicious-email.md)
+>
+> If you're hunting for attacks based on malicious URLs embedded within QR codes, the **URL Source** filter value **QR code** in the **All email**, **Malware**, and **Phish** views in Threat Explorer or Real-time detections allows you to search for email message with URLs extracted from QR codes.
 
 ## What do you need to know before you begin?
 
@@ -559,4 +561,4 @@ In addition to the scenarios outlined in this article, you have more options in 
 
 - [Threat protection status report](reports-email-security.md#threat-protection-status-report)
 - [Automated investigation and response in Microsoft Defender XDR](../defender/m365d-autoir.md)
-- [Trigger an investigation from Threat Explorer](air-about-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).
+- [Trigger an investigation from Threat Explorer](air-examples.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).
