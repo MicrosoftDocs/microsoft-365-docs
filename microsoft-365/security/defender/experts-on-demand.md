@@ -21,7 +21,7 @@ search.appverid: met150
 ms.date: 04/18/2024
 ---
 
-## Collaborate with experts on demand
+# Collaborate with experts on demand
 
 [!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
