@@ -34,7 +34,7 @@ Consolidating authenticated user-facing Microsoft 365 experiences to a single do
 
 ## Security considerations
 
-To ensure that the cloud.microsoft domain is secure and trustworthy, the entire domain hierarchy is isolated, purpose built, and dedicated to secure and compliant Microsoft product experiences. The domain is managed to highest standards of domain security and reputation, and is kept free of scenarios such as 3P websites, IaaS/PaaS resources, and hosting of active content, code or scripts that may affect the trust and integrity of products and applications residing in the domain.
+To ensure that customers and users can treat everything under the *.cloud.microsoft domain as fully trusted, the entire domain hierarchy is isolated, purpose built, and dedicated to hosting only secure and compliant Microsoft product experiences. The domain is managed to the highest standards of domain security and reputation, and is kept free of scenarios such as third-party websites, IaaS/PaaS resources (such as file and blob storage), and hosting of active content, code or scripts that may affect the trust and integrity of products and applications residing in the domain.
 
 ## Requirements for admins
 
