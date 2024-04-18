@@ -73,7 +73,7 @@ You create *modern templates* based on the business documents you use most. You 
       ![Icon for Receipts model.](../media/content-understanding/trained-receipts-model.png) 
    :::column-end:::
    :::column span="3":::
-      Use a [prebuilt model](prebuilt-overview.md) to save time processing and extracting information from [contracts](prebuilt-model-contract.md), [invoices](prebuilt-model-invoice.md), or [receipts](prebuilt-model-receipt.md). Prebuilt models are pretrained to recognize common business documents and the structured information in the documents.
+      Use a [prebuilt model](prebuilt-overview.md) to save time processing and extracting information from [contracts](prebuilt-model-contract.md), [invoices](prebuilt-model-invoice.md), [receipts](prebuilt-model-receipt.md), and [sensitive information](prebuilt-model-contract.md) from documents. Prebuilt models are pretrained to recognize common business documents and the structured information in the documents.
    :::column-end:::
 :::row-end:::
 
