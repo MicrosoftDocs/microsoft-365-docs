@@ -31,35 +31,35 @@ To use a sensitive information model, follow these steps:
 - Step 5: [Test the model](#step-5-test-the-model)
 - Step 6: [Apply the model](#step-6-apply-the-model)
 
-## Step 1: Create a sensitive information model
+### Step 1: Create a sensitive information model
 
 Follow the instructions in [Create a model in Syntex](create-syntex-model.md#set-up-a-prebuilt-model) to create a prebuilt sensitive information model. Then continue with the following steps to complete your model.
 
-## Step 2: Select the information types to detect
+### Step 2: Select the information types to detect
 
 On the **Models** page, in the **Add entities to detect** section, select **Add entities**.
 
 ![Screenshot of the new models page showing the Add entities to detect section.](../media/content-understanding/prebuilt-add-file-to-analyze-sensitive-info.png)
 
-## Step 3: Configure the information to detect
+### Step 3: Configure the information to detect
 
 On the **Configure detection** page, select the sensitive information types you want to detect, and then select **Next**.
 
 ![Screenshot of the Configure detection page.](../media/content-understanding/prebuilt-sensitive-add-entities.png)
 
-## Step 4: Configure the information to extract
+### Step 4: Configure the information to extract
 
 On the **Configure extraction** page, select the sensitive information types you want to extract, and then select **Next**.
 
 ![Screenshot of the Configure extraction page.](../media/content-understanding/prebuilt-sensitive-select-extract.png)
 
-## Step 5: Test the model
+### Step 5: Test the model
 
 On the **Test model** page, select **+Add files** to select sample files to test your model.
 
 ![Screenshot of the Test model page.](../media/content-understanding/prebuilt-sensitive-test-model.png)
 
-## Step 6: Apply the model
+### Step 6: Apply the model
 
 On the **Apply model** page, select **Finish** to apply the model to detect sensitive information in files.
 
