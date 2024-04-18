@@ -28,6 +28,7 @@ Because of the sensitive nature of the information you extract, you also can cre
 
 To create and configure a sensitive information model, follow these steps:
 
+<!---
 - Step 1: [Create a sensitive information model](#step-1-create-a-sensitive-information-model)
 - Step 2: [Select the information types to detect](#step-2-select-the-information-types-to-detect)
 - Step 3: [Configure the information to detect](#step-3-configure-the-information-to-detect)
@@ -37,41 +38,33 @@ To create and configure a sensitive information model, follow these steps:
 
 ### Step 1: Create a sensitive information model
 
-Follow the instructions in [Create a model in Syntex](create-syntex-model.md#set-up-a-prebuilt-model) to create a prebuilt sensitive information model. Then continue with the following steps to complete your model.
+--->
 
-### Step 2: Select the information types to detect
+1. Follow the instructions in [Create a model in Syntex](create-syntex-model.md#set-up-a-prebuilt-model) to create a prebuilt sensitive information model. Then continue with the following steps to complete your model.
 
-On the **Models** page, in the **Add entities to detect** section, select **Add entities**.
+2. On the **Models** page, in the **Add entities to detect** section, select **Add entities**.
 
-![Screenshot of the new models page showing the Add entities to detect section.](../media/content-understanding/prebuilt-add-file-to-analyze-sensitive-info.png)
+    ![Screenshot of the new models page showing the Add entities to detect section.](../media/content-understanding/prebuilt-add-file-to-analyze-sensitive-info.png)
 
-### Step 3: Configure the information to detect
+3. On the **Configure detection** page, select the sensitive information types you want to detect, and then select **Next**.
 
-On the **Configure detection** page, select the sensitive information types you want to detect, and then select **Next**.
+    ![Screenshot of the Configure detection page.](../media/content-understanding/prebuilt-sensitive-add-entities.png)
 
-![Screenshot of the Configure detection page.](../media/content-understanding/prebuilt-sensitive-add-entities.png)
+4. On the **Configure extraction** page, select the sensitive information types you want to extract, and then select **Next**.
 
-### Step 4: Configure the information to extract
+    ![Screenshot of the Configure extraction page.](../media/content-understanding/prebuilt-sensitive-select-extract.png)
 
-On the **Configure extraction** page, select the sensitive information types you want to extract, and then select **Next**.
+5. On the **Test model** page, select **+Add files** to select sample files to test your model.
 
-![Screenshot of the Configure extraction page.](../media/content-understanding/prebuilt-sensitive-select-extract.png)
+    ![Screenshot of the Test model page.](../media/content-understanding/prebuilt-sensitive-test-model.png)
 
-### Step 5: Test the model
+6. On the **Apply model** page, select **Finish** to apply the model to detect sensitive information in files.
 
-On the **Test model** page, select **+Add files** to select sample files to test your model.
-
-![Screenshot of the Test model page.](../media/content-understanding/prebuilt-sensitive-test-model.png)
-
-### Step 6: Apply the model
-
-On the **Apply model** page, select **Finish** to apply the model to detect sensitive information in files.
-
-![Screenshot of the Apply model page.](../media/content-understanding/prebuilt-sensitive-apply-model.png)
+    ![Screenshot of the Apply model page.](../media/content-understanding/prebuilt-sensitive-apply-model.png)
 
 ## Create a rule to apply a sensitivity label
 
-To create a rule to automatically apply a sensitivity label to file, see [article TBD].
+To create a rule to automatically apply a sensitivity label to file, see [link to article TBD].
 <!---
 
 2. On the **Files to analyze the model** page, select **Add** to find the file you want to use.
