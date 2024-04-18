@@ -15,7 +15,7 @@ ms.collection:
   - essentials-overview
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 04/16/2024
+ms.date: 04/18/2024
 ---
 
 # Access Defender Experts Notifications using Graph security API
@@ -44,6 +44,8 @@ In Microsoft Graph security API, the following fields are also available:
   - description
   - recommendedActions
   - recommendedHuntingQueries
+> [!NOTE]
+> These fields will soon be available in Graph v1.o endpoint as well. For more details, see: [Microsoft Graph REST API v1.0](/graph/api/resources/security-incident.md)
 
 Your approach to consuming Defender Experts Notifications from the API will vary depending on the downstream system you intend to use and your specific requirements. However, the following is a basic implementation to help you get started:
 
