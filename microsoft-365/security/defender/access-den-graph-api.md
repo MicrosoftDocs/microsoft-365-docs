@@ -46,7 +46,7 @@ In Microsoft Graph security API, the following fields are also available:
   - recommendedHuntingQueries
 
 > [!NOTE]
-> These fields will soon be available in Graph v1.o endpoint as well. For more details, see: [Microsoft Graph REST API v1.0](/graph/api/resources/security-incident)
+> These fields will soon be available in Graph v1.0 endpoint. For more details, see: [Microsoft Graph REST API v1.0](/graph/api/resources/security-incident)
 
 Your approach to consuming Defender Experts Notifications from the API will vary depending on the downstream system you intend to use and your specific requirements. However, the following is a basic implementation to help you get started:
 
