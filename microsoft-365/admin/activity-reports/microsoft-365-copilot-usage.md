@@ -126,7 +126,7 @@ You can see the following summary charts in this report as default view:
 
 The definitions for Enabled Users and Active Users metrics are the same as provided earlier.
 
-To note, Active users of Word, Excel, and PowerPoint is incomplete prior to Jan 25, 2024. Active users of Outlook might increase from February 1st, 2024, as we have restarted ‘Draft with Copilot’ and ‘Coaching by Copilot’ tried actions data for Outlook Win32.
+To note, Active users of Word, Excel, and PowerPoint is incomplete prior to Jan 25, 2024. Active users of Outlook might increase from February 1st, 2024, as we have restated ‘Draft with Copilot’ and ‘Coaching by Copilot’ tried actions data for Outlook Win32.
 
 >[!IMPORTANT]
 > Your organization must have optional diagnostic telemetry for Office apps enabled for Windows, Mac, iOS, and Android in order for comprehensive usage information to be captured in this report. [Learn more about diagnostic telemetry settings](/DeployOffice/privacy/optional-diagnostic-data).
