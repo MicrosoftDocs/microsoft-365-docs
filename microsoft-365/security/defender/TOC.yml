@@ -439,7 +439,13 @@
               - name: Before you begin
                 href: before-you-begin-defender-experts.md
               - name: Start using Defender Experts for Hunting
-                href: onboarding-defender-experts-for-hunting.md
+                items:
+                - name: Onboarding and setting up Defender Experts Notifications
+                  href: onboarding-defender-experts-for-hunting.md
+                - name: Access Defender Experts Notifications using Graph security API
+                  href: access-den-graph-api.md
+                - name: Ask Defender Experts
+                  href: experts-on-demand.md
               - name: Understand Defender Experts for Hunting reports
                 href: defender-experts-report.md
        - name: Collaborate with Microsoft Defender Experts for XDR
@@ -461,7 +467,7 @@
                 - name: Defender Experts for Hunting
                   href: defender-experts-for-hunting.md
                 - name: Ask Defender Experts
-                  href: onboarding-defender-experts-for-hunting.md#collaborate-with-experts-on-demand
+                  href: experts-on-demand.md
                 - name: Auditing
                   href: auditing.md
               - name: Frequently asked questions
