@@ -60,17 +60,17 @@ You can use web content filtering for testing with Network protection for Linux.
 - Licensing: Microsoft Defender for Endpoint tenant (can be trial) and platform specific requirements found in [Microsoft Defender for Endpoint for non-Windows platforms](non-windows.md#licensing-requirements)
 - Onboarded Machines:
   - **Minimum Linux version**: For a list of supported distributions, see [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md).
-  - **Microsoft Defender for Endpoint Linux client version**: 101.78.13 -insiderSlow(Preview)
-
+  - **Microsoft Defender for Endpoint Linux client version**: 101.78.13 -insiderFast(Preview)
+    
 ## Instructions
 
 Deploy Linux manually, see [Deploy Microsoft Defender for Endpoint on Linux manually](linux-install-manually.md)
 
-The following example shows the sequence of commands needed to the mdatp package on ubuntu 20.04 for insiders-Slow channel.
+The following example shows the sequence of commands needed to the mdatp package on ubuntu 20.04 for insiders-Fast channel.
 
 ```bash
-curl -o microsoft.list https://packages.microsoft.com/config/ubuntu/20.04/insiders-slow.list
-sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-insiders-slow.list
+curl -o microsoft.list https://packages.microsoft.com/config/ubuntu/20.04/insiders-fast.list
+sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-insiders-fast.list
 sudo apt-get install gpg
 curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
 sudo apt-get install apt-transport-https
