@@ -48,16 +48,18 @@ Turning on HMA requires that your environment meets the following:
 
 1. Make sure you meet the prerequisites before you begin.
 
-1. Since many prerequisites are common for both Skype for Business and Exchange, review them in [Hybrid Modern Authentication overview and prerequisites for using it with on-premises Skype for Business and Exchange servers](hybrid-modern-auth-overview.md). Do this before you begin any of the steps in this article.
+2. Since many prerequisites are common for both Skype for Business and Exchange, review them in [Hybrid Modern Authentication overview and prerequisites for using it with on-premises Skype for Business and Exchange servers](hybrid-modern-auth-overview.md). Do this before you begin any of the steps in this article.
 Requirements about linked mailboxes to be inserted.
 
-1. Add on-premises web service URLs as **Service Principal Names (SPNs)** in Microsoft Entra ID. In case EXCH is in hybrid with **multiple tenants**, these on-premises web service URLs must be added as SPNs in the Microsoft Entra ID of all the tenants, which are in hybrid with EXCH.
+3. Add on-premises web service URLs as **Service Principal Names (SPNs)** in Microsoft Entra ID. In case EXCH is in hybrid with **multiple tenants**, these on-premises web service URLs must be added as SPNs in the Microsoft Entra ID of all the tenants, which are in hybrid with EXCH.
 
-1. Ensure all Virtual Directories are enabled for HMA
+4. Ensure all Virtual Directories are enabled for HMA
 
-1. Check for the EvoSTS Auth Server object
+5. Check for the EvoSTS Auth Server object
 
-1. Enable HMA in EXCH.
+6. Ensure that the [Exchange Server OAuth certificate](/exchange/plan-and-deploy/integration-with-sharepoint-and-skype/maintain-oauth-certificate) is valid
+
+7. Enable HMA in EXCH.
 
 > [!NOTE]
 > Does your version of Office support MA? See [How modern authentication works for Office 2013 and Office 2016 client apps](modern-auth-for-office-2013-and-2016.md).
@@ -74,12 +76,12 @@ Run the commands that assign your on-premises web service URLs as Microsoft Entr
 1. First, run the following commands on your Microsoft Exchange Server:
 
     ```powershell
-    Get-MapiVirtualDirectory | fl server,*url*
-    Get-WebServicesVirtualDirectory | fl server,*url*
-    Get-ClientAccessServer | fl Name, AutodiscoverServiceInternalUri
-    Get-OABVirtualDirectory | fl server,*url*
-    Get-AutodiscoverVirtualDirectory | fl server,*url*
-    Get-OutlookAnywhere | fl server,*hostname*
+    Get-MapiVirtualDirectory -ADPropertiesOnly | fl server,*url*
+    Get-WebServicesVirtualDirectory -ADPropertiesOnly | fl server,*url*
+    Get-ClientAccessService | fl Name, AutodiscoverServiceInternalUri
+    Get-OABVirtualDirectory -ADPropertiesOnly | fl server,*url*
+    Get-AutodiscoverVirtualDirectory -ADPropertiesOnly | fl server,*url*
+    Get-OutlookAnywhere -ADPropertiesOnly | fl server,*hostname*
     ```
 
     Ensure the URLs clients might connect to are listed as HTTPS service principal names in Microsoft Entra ID. In case EXCH is in hybrid with **multiple tenants**, these HTTPS SPNs should be added in the Microsoft Entra ID of all the tenants in hybrid with EXCH.
@@ -220,11 +222,11 @@ Customers who have already run the Hybrid Configuration Wizard (HCW) to configur
 1. Query the `OWA` and `ECP` URLs that are configured on your Exchange Server on-premises . This is important because they must be added as reply url to Microsoft Entra ID:
 
    ```powershell
-   Get-OwaVirtualDirectory | fl name, *url*
-   Get-EcpVirtualDirectory | fl name, *url*
+   Get-OwaVirtualDirectory -ADPropertiesOnly | fl name, *url*
+   Get-EcpVirtualDirectory -ADPropertiesOnly | fl name, *url*
    ```
 
-2. Install the Microsoft Graph PowerShell module:
+2. Install the Microsoft Graph PowerShell module if it has not yet been installed:
 
    ```powershell
    Install-Module Microsoft.Graph -Scope AllUsers
@@ -264,10 +266,12 @@ Customers who have already run the Hybrid Configuration Wizard (HCW) to configur
 
    > [!IMPORTANT]
    > It's important to execute these commands in the given order. Otherwise, you'll see an error message when running the commands. After running these commands, login to `OWA` and `ECP` will stop work until the OAuth authentication for those virtual directories has been activated.
+   >
+   > Also make sure that the accounts used for administration are synchronized to Microsoft Entra ID. Otherwise the login will stop work until they are synchronized.
 
    ```powershell
-   Set-OwaVirtualDirectory <identity> -AdfsAuthentication $false –BasicAuthentication $false –FormsAuthentication $false –DigestAuthentication $false
-   Set-EcpVirtualDirectory <identity> -AdfsAuthentication $false –BasicAuthentication $false –FormsAuthentication $false –DigestAuthentication $false
+   Get-OwaVirtualDirectory -Server <computername> | Set-OwaVirtualDirectory -AdfsAuthentication $false –BasicAuthentication $false –FormsAuthentication $false –DigestAuthentication $false
+   Get-EcpVirtualDirectory -Server <computername> | Set-EcpVirtualDirectory -AdfsAuthentication $false –BasicAuthentication $false –FormsAuthentication $false –DigestAuthentication $false
    ```
 
 9. Enable OAuth for the `OWA` and `ECP` virtual directory. Run these commands for each `OWA` and `ECP` virtual directory on each Exchange Server:
@@ -276,8 +280,8 @@ Customers who have already run the Hybrid Configuration Wizard (HCW) to configur
    > It's important to execute these commands in the given order. Otherwise, you'll see an error message when running the commands.
 
    ```powershell
-   Set-EcpVirtualDirectory <identity> -OAuthAuthentication $true
-   Set-OwaVirtualDirectory <identity> -OAuthAuthentication $true
+   Get-EcpVirtualDirectory -Server <computername> | Set-EcpVirtualDirectory -OAuthAuthentication $true
+   Get-OwaVirtualDirectory -Server <computername> | Set-OwaVirtualDirectory -OAuthAuthentication $true
    ```
 
 ## Using Hybrid Modern Authentication with Outlook for iOS and Android
