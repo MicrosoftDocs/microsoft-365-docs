@@ -18,7 +18,7 @@ ms.collection: essentials-get-started
 
 This guide walks you through how to access Microsoft Threat Intelligence (Defender TI) from the Microsoft Defender portal, adjust the portal’s theme to make it easier on your eyes when using it, and find sources for enrichment so you can see more results when gathering threat intelligence. 
 
-   :::image type="content" source="/defender/threat-intelligence/media/quickstart-intel-explorer.png" alt-text="Screenshot of the Microsoft Defender Threat Intelligence Intel explorer in the Microsoft Defender portal." lightbox="/defender/threat-intelligence/media/quickstart-intel-explorer":::
+   :::image type="content" source="/defender/threat-intelligence/media/quickstart-intel-explorer.png" alt-text="Screenshot of the Microsoft Defender Threat Intelligence Intel explorer in the Microsoft Defender portal." lightbox="/defender/threat-intelligence/media/quickstart-intel-explorer.png":::
 
 ## Prerequisites
 
