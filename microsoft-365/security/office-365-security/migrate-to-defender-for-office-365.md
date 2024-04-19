@@ -18,11 +18,10 @@ ms.collection:
   - tier1
 ms.custom:
 description: Learn the right way to migrate from third-party protection services or devices to Microsoft Defender for Office 365. For example, Google Postini, the Barracuda Spam and Virus Firewall, or Cisco IronPort.
-ms.subservice: mdo
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 ms.date: 6/15/2023
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 PlanPlan 2</a>
 ---
 
 # Migrate from a third-party protection service or device to Microsoft Defender for Office 365

@@ -39,6 +39,8 @@ First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershel
 
 ### Add or remove user accounts as members of a group
 
+[!INCLUDE [Azure AD PowerShell deprecation note](~/../microsoft-365/reusable-content/msgraph-powershell/includes/aad-powershell-deprecation-note.md)]
+
 **To add a user account by its UPN**, fill in the user account User Principal Name (UPN) (example: belindan@contoso.com) and the security group display name, removing the “<” and “>” characters, and run these commands in the PowerShell window or the PowerShell Integrated Script Environment (ISE).
 
 ```powershell

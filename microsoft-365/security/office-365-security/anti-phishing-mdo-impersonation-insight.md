@@ -18,11 +18,10 @@ ms.collection:
 description: Admins use the impersonation insight in Microsoft Defender for Office 365 to view information about the senders and sender domains that are detected as impersonation attempts over the last week by anti-phishing policies.
 ms.custom: 
 - seo-marvel-apr2020
-ms.subservice: mdo
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 ms.date: 11/2/2023
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 1 and Plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
@@ -52,7 +51,7 @@ Admins can use the impersonation insight in the Microsoft Defender portal to qui
     - **Security Administrator**
     - **Security Reader**
     - **Global Reader**
-  - [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator**, **Security Administrator**, **Security Reader**, or **Global Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
+  - [Microsoft Entra permissions](/entra/identity/role-based-access-control/manage-roles-portal): Membership in the **Global Administrator**, **Security Administrator**, **Security Reader**, or **Global Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 - You enable and configure impersonation protection in anti-phishing policies in Microsoft Defender for Office 365. Impersonation protection isn't enabled by default. For more information, see [Configure anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-mdo-configure.md) and [Use the Microsoft Defender portal to assign Standard and Strict preset security policies to users](preset-security-policies.md#use-the-microsoft-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users).
 
@@ -118,7 +117,7 @@ The following information is available in the details flyout:
   - **Domain expiration date**
   - **Registrant**
 
-- **Explorer investigation**: Select the link to open [Threat Explorer or Real-time detections](threat-explorer-about.md) for additional details about the sender.
+- **Explorer investigation**: Select the link to open [Threat Explorer or Real-time detections](threat-explorer-real-time-detections-about.md) for additional details about the sender.
 
 - **Email from sender**: This section shows the following information about similar messages from senders in the domain:
   - **Date**
@@ -188,7 +187,7 @@ The following information is available in the details flyout:
 - **What do you need to do?**
 - **Sender summary**: The sender that was detected as impersonation.
 
-- **Explorer investigation**: Select the link to open [Threat Explorer or Real-time detections](threat-explorer-about.md) for additional details about the sender.
+- **Explorer investigation**: Select the link to open [Threat Explorer or Real-time detections](threat-explorer-real-time-detections-about.md) for additional details about the sender.
 
 - **Email from sender**: This section shows the following information about similar messages from the sender:
   - **Date**

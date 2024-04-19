@@ -5,6 +5,7 @@ author: erikre
 manager: dougeby
 audience: ITPro
 ms.topic: article
+ms.date: 03/29/2024
 description: Step 5. Verify and monitor app protection
 ms.service: o365-solutions
 ms.localizationpriority: high

@@ -4,11 +4,11 @@ description: Describes the new cloud.microsoft domain for Microsoft 365 apps
 author: dansimp
 ms.author: dansimp
 manager: dansimp
-ms.date: 02/15/2024
+ms.date: 04/18/2024
 ms.topic: overview
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
-ms.collection:
+ms.collection: must-keep
 ms.custom: QuickDraft
 ms.reviewer: dansimp
 search.appverid: MET150
@@ -32,6 +32,10 @@ Consolidating authenticated user-facing Microsoft 365 experiences to a single do
 
 'Dot brand' top-level domains like `.microsoft` enhance security, trustworthiness, and integrity. Microsoft has exclusive rights to the `.microsoft` top-level domain, enabling enhanced security protocols and governance controls. All experiences on the `.microsoft` domain are legitimate and authentic, as Microsoft is the registry operator and sole registrant.
 
+## Security considerations
+
+To ensure that customers and users can treat everything under the *.cloud.microsoft domain as fully trusted, the entire domain hierarchy is isolated, purpose built, and dedicated to hosting only secure and compliant Microsoft product experiences. The domain is managed to the highest standards of domain security and reputation, and is kept free of scenarios such as third-party websites, IaaS/PaaS resources (such as file and blob storage), and hosting of active content, code or scripts that may affect the trust and integrity of products and applications residing in the domain.
+
 ## Requirements for admins
 
 Organizations currently following standard [Microsoft network guidance on domains and service endpoints](/microsoft-365/enterprise/urls-and-ip-address-ranges) shouldn't see an impact to the Microsoft 365 experience. The *.cloud.microsoft domain is already added to the official list of Office 365 URLs and IP address ranges. 
@@ -42,6 +46,7 @@ The following Microsoft 365 products and services are now available in the `clou
 |**Service**|**URL**|
 |:-----|:-----|
 |Microsoft 365 Service Health Status Page | status.cloud.microsoft|
+|Microsoft Admin Center| admin.cloud.microsoft|
 |Microsoft Loop | loop.cloud.microsoft|
 |Microsoft Mesh | mesh.cloud.microsoft|
 |Microsoft Setup | setup.cloud.microsoft|

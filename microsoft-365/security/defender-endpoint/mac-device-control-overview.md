@@ -51,7 +51,7 @@ Microsoft Defender for Endpoint Device Control feature enables you to:
 
 - Microsoft Defender for Endpoint entitlement (can be trial)
 - Minimum OS version: macOS 11 or higher
-- Deploy Full Disk Access: you may already have been previously created and deployed this [https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) for other MDE features. You need to grant Full Disk Access permission for a new application: `com.microsoft.dlp.daemon`.
+- Deploy Full Disk Access: you may already have previously created and deployed this [https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) for other MDE features. You need to grant Full Disk Access permission for a new application: `com.microsoft.dlp.daemon`.
 - Enable Device Control on the MDE Preference setting:
 
    Data Loss Prevention (DLP)/Features/
@@ -62,9 +62,9 @@ Microsoft Defender for Endpoint Device Control feature enables you to:
 
 Example 1: JAMF using [schema.json](https://github.com/microsoft/mdatp-xplat/tree/master/macos/schema)
 
-:::image type="content" source="images/macos-device-control-jamf-json.png" alt-text="Screenshot that shows how to enable Device Control in Microsoft Defender for Endpoint Data Loss Prevention / Features.":::
+:::image type="content" source="media/macos-device-control-jamf-json.png" alt-text="Screenshot that shows how to enable Device Control in Microsoft Defender for Endpoint Data Loss Prevention / Features.":::
 
-Example 2: [demo.mobileconfig](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/macOS/mobileconfig/demo.mobileconfig)
+<details><summary>Example 2: [demo.mobileconfig](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/macOS/mobileconfig/demo.mobileconfig)</summary>
 
 ```xml
    <key>dlp</key>
@@ -80,28 +80,44 @@ Example 2: [demo.mobileconfig](https://github.com/microsoft/mdatp-devicecontrol/
       </array>
     </dict>
 ```
+</details>
 
 - Minimum product version: 101.91.92 or higher
 - Run _mdatp version_ through Terminal to see the product version on your client machine:
 
-  :::image type="content" source="images/macos-device-control-mdatp-version-terminal.png " alt-text="Screenshot that shows the results when you run mdatp version in Terminal to see the product version on a client machine." lightbox="images/macos-device-control-mdatp-version-terminal.png ":::
+  :::image type="content" source="media/macos-device-control-mdatp-version-terminal.png " alt-text="Screenshot that shows the results when you run mdatp version in Terminal to see the product version on a client machine." lightbox="media/macos-device-control-mdatp-version-terminal.png ":::
 
-## Device Control for macOS properties
+## Understanding policies
 
-The Device Control for macOS includes global setting, group creation and access policy rule creation:
+Policies determine the behavior of device control for macOS.  The policy is targeted via Intune or JAMF to a collection of machines or users.  
+
+The Device Control for macOS policy includes settings, groups, and rules:
 
 - Global setting called 'settings' allows you to define the global environment.
 - Group called 'groups' allows you to create media groups. For example, authorized USB group or encrypted USB group.
 - Access policy rule called 'rules' allows you to create policy to restrict each group. For example, only allow authorized user to Write access-authorized USB group.
 
-Here are the properties you can use when you create the group and policy.
+
 
 > [!NOTE]
 > We recommend you use the examples on the GitHub to understand the properties: [mdatp-devicecontrol/Removable Storage Access Control Samples/macOS/policy at main - microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples/macOS/policy). 
 > 
-> You can also use the scripts at [mdatp-devicecontrol/Removable Storage Access Control Samples/macOS/policy/scripts at main - microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples/macOS/policy/scripts) to translate Windows Device Control policy to macOS Device Control policy or translate macOS Device Control V1 policy to this V2 policy.
+> You can also use the scripts at [mdatp-devicecontrol/tree/main/python#readme at main - microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/tree/main/python#readme) to translate Windows Device Control policy to macOS Device Control policy or translate macOS Device Control V1 policy to this V2 policy.
+
+> [!NOTE]
+> There are [known issues](#known-issues) with device control for macOS that customers should consider when creating policies. 
+
+### Best practices
+
+Device control for macOS has similar capabilities to Device control for Windows, but macOS and Windows provide different underlying capabilities to manage devices, so there are some important differences:
+
+- macOS doesn't have a centralized Device Manager or view of devices. Access is granted/denied to applications that interact with devices.  This is why on macOS there are a richer set of [access types](#access-types).  For example on a ```portableDevice``` device control for macOS can deny or allow ```download_photos_from_device```.
+- To stay consistent with Windows, there are ```generic_read```,```generic_write``` and ```generic_execute``` access types.  Policies with generic access types don't need to be changed if/when additional specific access types are added in the future.  The best practice is to use generic access types unless there's a specific need to deny/allow a more specific operation.
+- Creating a ```deny``` policy using generic access types is the best way to attempt to completely block all operations for that type of device (e.g. Android phones), but there may still be gaps if the operation is performed using an application that isn't supported by macOS device control.     
+
 
 ### Settings
+Here are the properties you can use when you create the groups, rules, and settings in device control policy for macOS.
 
 | Property name | Description | Options |
 |:---|:---|:---|
@@ -202,7 +218,7 @@ The following table lists the properties you can use in entry:
 |:---|:---|:---|:---|
 | **appleDevice** | backup_device | generic_read | |
 | appleDevice | update_device | generic_write | |
-| appleDevice | download_photos_from_device | generic_read | download photo(s) from the specific iOS device to local machine |
+| appleDevice | download_photos_from_device | generic_read | download photo from the specific iOS device to local machine |
 | appleDevice | download_files_from_device | generic_read | download file(s) from the specific iOS device to local machine |
 | appleDevice | sync_content_to_device | generic_write | sync content from local machine to specific iOS device |
 | **portableDevice**| download_files_from_device | generic_read | |
@@ -222,7 +238,7 @@ The following table lists the properties you can use in entry:
 
 Once Deny happens and the notification is enabled in the policy, the end user sees a dialog:
 
-:::image type="content" source="images/macos-device-control-enduser-experience-dialog.png" alt-text="Screenshot that shows a Device Control Dialog that indicates the USB device is restricted" lightbox="images/macos-device-control-enduser-experience-dialog.png":::
+:::image type="content" source="media/macos-device-control-enduser-experience-dialog.png" alt-text="Screenshot that shows a Device Control Dialog that indicates the USB device is restricted" lightbox="media/macos-device-control-enduser-experience-dialog.png":::
 
 ## Status
 
@@ -239,19 +255,19 @@ v2_full_disk_access                         : "approved"
 ```
 
 - `active` - feature version, you should see ["v2"]. (Device Control is enabled, but not configured.)
-    - [] - Device Control is not configured on this machine
-    - ["v1"] - You are on a preview version of Device Control. Please migrate to version 2 using this guide. v1 is considered obsolete and not described in this documentation.
-    - ["v1","v2"] - You have both v1 and v2 enabled. Please offboard from v1.
+    - [] - Device Control isn't configured on this machine.
+    - ["v1"] - You are on a preview version of Device Control. Migrate to version 2 using this guide. v1 is considered obsolete and not described in this documentation.
+    - ["v1","v2"] - You have both v1 and v2 enabled. Offboard from v1.
 - `v1_configured` - v1 configuration is applied
 - `v1_enforcement_level` - when v1 is enabled
 - `v2_configured` - v2 configuration is applied
 - `v2_state` - v2 status, `enabled` if fully working
 - `v2_sensor_connection` - if `created_ok`, then Device Control established connection to the system extension
-- `v2_full_disk_access` - if not `approved`, then Device Control cannot prevent some or all operations
+- `v2_full_disk_access` - if not `approved`, then Device Control can't prevent some or all operations
 
 ## Reporting
 
-You'll be able to see the policy event on Advanced hunting and Device Control report. For more information, see [Protect your organization's data with Device Control](device-control-report.md).
+You are able to see the policy event on Advanced hunting and Device Control report. For more information, see [Protect your organization's data with Device Control](device-control-report.md).
 
 ## Scenarios
 
@@ -450,6 +466,17 @@ Create access policy rule and put into 'rules':
 ```
 
 In this case, only have one access rule policy, but if you have multiple, make sure to add all into 'rules'.
+
+
+## Known Issues
+
+>[!WARNING]
+>In macOS Sonoma 14.3.1, Apple made a change to the [handling of Bluetooth devices](https://developer.apple.com/forums/thread/738748) that impacts Defender for Endpoint device controls ability to intercept and block access to Bluetooth devices.  At this time, the recommended mitigation is to use a version of macOS less than 14.3.1.
+
+>[!WARNING]
+>Device Control on macOS restricts Android devices that are connected using PTP mode **only**.  Device control does not restrict other modes such as File Transfer, USB Tethering and MIDI
+
+
 
 ## See also
 

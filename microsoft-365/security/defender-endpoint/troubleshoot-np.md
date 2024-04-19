@@ -6,16 +6,16 @@ ms.localizationpriority: medium
 audience: ITPro
 author: siosulli
 ms.author: siosulli
-ms.reviewer: oogunrinde
+ms.reviewer: oogunrinde, yongrhee
 manager: deniseb
 ms.subservice: asr
 ms.topic: how-to
-ms.collection: 
+ms.collection:
 - m365-security
 - tier3
 - mde-asr
 search.appverid: met150
-ms.date: 02/16/2024
+ms.date: 03/03/2024
 ---
 
 # Troubleshoot network protection
@@ -23,9 +23,10 @@ ms.date: 02/16/2024
 [!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Business](https://www.microsoft.com/security/business/endpoint-security/microsoft-defender-business?branch=main)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > [!TIP]
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
@@ -47,16 +48,17 @@ There are four steps to troubleshooting these problems:
 Network protection works on devices with the following conditions:
 
 > [!div class="checklist"]
->
-> - Endpoints are running Windows 10 Pro or Enterprise edition, version 1709 or higher.
+> > - Endpoints are running Windows 10 Pro or Enterprise edition, version 1709 or higher.
 > - Endpoints are using Microsoft Defender Antivirus as the sole antivirus protection app. [See what happens when you're using a non-Microsoft antivirus solution](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
 > - [Real-time protection](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) is enabled.
+> - [Behavior Monitoring](/microsoft-365/security/defender-endpoint/behavior-monitor) is enabled.
 > - [Cloud-delivered protection](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) is enabled.
+> - [Cloud Protection network connectivity](/microsoft-365/security/defender-endpoint/configure-network-connections-microsoft-defender-antivirus) is functional.
 > - Audit mode isn't enabled. Use [Group Policy](enable-network-protection.md#group-policy) to set the rule to **Disabled** (value: **0**).
 
 ## Use audit mode
 
-You can enable network protection in audit mode and then visit a website that's designed to demo the feature. All website connections are allowed by network protection but an event is logged to indicate any connection that would be blocked if network protection were enabled.
+You can enable network protection in audit mode and then visit a website designed to demo the feature. All website connections are allowed by network protection but an event is logged to indicate any connection that would be blocked if network protection were enabled.
 
 1. Set network protection to **Audit mode**.
 
@@ -88,7 +90,29 @@ The current exclusion options are:
 
 2. Using IP exclusions: `Add-MpPreference -ExclusionIpAddress 192.168.1.1`.
 
-3. Excluding an entire process. For more information, see [Microsoft Defender Antivirus exclusions](configure-exclusions-microsoft-defender-antivirus.md). 
+3. Excluding an entire process. For more information, see [Microsoft Defender Antivirus exclusions](configure-exclusions-microsoft-defender-antivirus.md).
+
+## Network Performance issues
+
+In certain circumstances, a network protections component might contribute to slow network connections to Domain Controllers and/or Exchange servers. You might also notice Event ID 5783 NETLOGON errors.
+
+To attempt to solve these issues, change Network Protection from ‘block mode’ to either ‘[audit mode](troubleshoot-np.md)’ or 'disabled'. If your network issues are fixed, follow the next steps to find out which component in Network Protection is contributing to the behavior.
+
+Disable the following components in order and test your network connectivity performance after disabling each one:
+
+1. [Disable Datagram Processing on Windows Server](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps&preserve-view=true)
+1. [Disable Network Protection Perf Telemetry](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps&preserve-view=true)
+1. [Disable FTP parsing](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps&preserve-view=true)
+1. [Disable SSH parsing](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps&preserve-view=true)
+1. [Disable RDP parsing](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps&preserve-view=true)
+1. [Disable HTTP parsing](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps&preserve-view=true)
+1. [Disable SMTP parsing](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps&preserve-view=true)
+1. [Disable DNS over TCP parsing](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps&preserve-view=true)
+1. [Disable DNS parsing ](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps&preserve-view=true)
+1. [Disable inbound connection filtering](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps&preserve-view=true)
+1. [Disable TLS parsing](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps&preserve-view=true)
+
+If your network performance issues persist after following these troubleshooting steps, then they're probably not related to network protection and you should look for other causes of your network performance issues.
 
 ## Collect diagnostic data for file submissions
 
@@ -135,4 +159,5 @@ You can configure the registry key by using PowerShell, Microsoft Configuration 
 - [Evaluate network protection](evaluate-network-protection.md)
 - [Enable network protection](enable-network-protection.md)
 - [Address false positives/negatives in Defender for Endpoint](defender-endpoint-false-positives-negatives.md)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

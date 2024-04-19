@@ -48,7 +48,7 @@ To enable Defender for Servers for Azure VMs and non-Azure machines connected th
 
 4. Make sure the [MDE integration](/azure/defender-for-cloud/integration-defender-for-endpoint?tabs=windows) is enabled on your subscription. If you have pre-existing Azure subscriptions, you might see one (or both) of the two opt-in buttons shown in the image below.
 
-     :::image type="content" source="images/mde-integration.png" alt-text="Screenshot that shows how to enable MDE integration." lightbox="images/mde-integration.png":::
+     :::image type="content" source="media/mde-integration.png" alt-text="Screenshot that shows how to enable MDE integration." lightbox="media/mde-integration.png":::
 
    If you have any of these buttons in your environment, make sure to enable integration for both. On new subscriptions, both options are enabled by default. In this case, you don't see these buttons in your environment.
 
@@ -56,7 +56,7 @@ To enable Defender for Servers for Azure VMs and non-Azure machines connected th
 
 6. *Recommended:* If you want to see vulnerability findings in Defender for Cloud, make sure to enable [Microsoft Defender Vulnerability Management](/azure/defender-for-cloud/enable-data-collection?tabs=autoprovision-va) for Defender for Cloud.
 
-   :::image type="content" source="images/enable-threat-and-vulnerability-management.png" alt-text="Screenshot that shows how to enable vulnerability management." lightbox="images/enable-threat-and-vulnerability-management.png"::: 
+   :::image type="content" source="media/enable-threat-and-vulnerability-management.png" alt-text="Screenshot that shows how to enable vulnerability management." lightbox="media/enable-threat-and-vulnerability-management.png"::: 
 
 ## How do I migrate existing Azure VMs to Microsoft Defender for Cloud?
 
@@ -74,7 +74,7 @@ Once all prerequisites are met, [connect](/azure/defender-for-cloud/quickstart-o
 
 3. Enable autoprovisioning on the multicloud connector for the Azure Arc agent, Microsoft Defender for Endpoint extension, Vulnerability Assessment and, optionally, Log Analytics extension.
 
-     :::image type="content" source="images/select-plans-aws-gcp.png" alt-text="Screenshot that shows how to enable autoprovisioning for Azure Arc agent." lightbox="images/select-plans-aws-gcp.png":::
+     :::image type="content" source="media/select-plans-aws-gcp.png" alt-text="Screenshot that shows how to enable autoprovisioning for Azure Arc agent." lightbox="media/select-plans-aws-gcp.png":::
 
    For more information, see [Defender for Cloud's multicloud capabilities](https://aka.ms/mdcmc).
 

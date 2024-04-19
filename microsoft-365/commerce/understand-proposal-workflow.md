@@ -9,6 +9,7 @@ ms.reviewer: mijeffer, nicholak
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
 ms.collection: 
 - Tier1
@@ -16,8 +17,9 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom: 
-- commerce_purchase
+- commerce_subscriptions
 - AdminSurgePortfolio
+- admindeeplinkMAC
 search.appverid: MET150 
 description: "Learn about the proposal workflow used when you buy Microsoft business products and services. Discover how to review and approve proposals."
 ROBOTS: NOINDEX

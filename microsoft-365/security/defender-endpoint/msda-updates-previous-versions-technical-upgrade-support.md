@@ -5,8 +5,8 @@ ms.service: defender-endpoint
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
-ms.reviewer: pahuijbr, mkaminska, v-vutrieu
-ms.date: 02/27/2024
+ms.reviewer: pahuijbr
+ms.date: 04/03/2024
 manager: deniseb
 audience: ITPro
 ms.collection:
@@ -27,14 +27,63 @@ search.appverid: met150
 
 Microsoft regularly releases [security intelligence updates and product updates for Microsoft Defender Antivirus](microsoft-defender-antivirus-updates.md). It's important to keep Microsoft Defender Antivirus up to date. When a new package version is released, support for the previous two versions is reduced to technical support only. Versions that are older than the previous two versions are listed in this article and are provided for technical upgrade support only.
 
+## November-2023 (Platform: 4.18.23110.3 | Engine: 1.1.23110.2)
+
+- Security intelligence update version: **1.403.7.0**
+- Release date: **December 5, 2023 (Platform)** / **December 6, 2023 (Engine)**
+- Platform: **4.18.23110.3**
+- Engine: **1.1.23110.2**
+- Support phase: **Technical upgrade support (only)**
+
+### What's new
+
+- Fixed PowerShell cmdlet [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) to show the correct date/time for `AntivirusSignatureLastUpdated`
+- Resolved deadlock issue that occurred on systems with multiple filter drivers reading a file when the file is copied
+- Added the `InitializationProgress` field to [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) output
+- Fixed installation failure on Windows Server 2016 due to existing Defender EventLog registry key
+- Added the ability to have [quick scans](schedule-antivirus-scans.md) ignore Microsoft Defender Antivirus exclusions
+- Fixed remediation for long running [on-demand scans](run-scan-microsoft-defender-antivirus.md) where the service may have been restarted
+- Fixed an issue with Microsoft Defender Vulnerability Management to allow the execution of a [blocked application](/microsoft-365/security/defender-vulnerability-management/tvm-block-vuln-apps) when the [warn option](/microsoft-365/security/defender-vulnerability-management/tvm-block-vuln-apps#block-or-warn-mitigation-action) is selected
+- Added support for managing schedule day/time for [signature updates in Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-windows#updates) and [Defender for Endpoint security settings management](/mem/intune/protect/mde-security-integration)
+- Fixed non-standard signature path loading across platforms ([Windows](microsoft-defender-antivirus-windows.md), [Mac](microsoft-defender-endpoint-mac.md), [Linux](microsoft-defender-endpoint-linux.md), [Android](microsoft-defender-endpoint-android.md), and [iOS](microsoft-defender-endpoint-ios.md))
+- Improved handling of cached detections in [attack surface reduction](overview-attack-surface-reduction.md) capabilities
+- Improved performance for enumerating virtual memory ranges
+
+### Known issues
+
+- None
+
+## October-2023 (Platform: 4.18.23100.2009 | Engine: 1.1.23100.2009)
+
+- Security intelligence update version: **1.401.3.0**
+- Release date:  **November 3, 2023 (Engine) / November 6, 2023 (Platform)**
+- Platform: **4.18.23100.2009**
+- Engine: **1.1.23100.2009**
+- Support phase: **Technical upgrade support (only)**
+
+### What's new
+
+- Improved processing of environment variables in protected folders list for [controlled folder access](controlled-folders.md)
+- Improved performance of [on-access scanning](configure-advanced-scan-types-microsoft-defender-antivirus.md) of files with Mark of the Web (MoTW)
+- Added support for Active Directory device groups with [device control](device-control-overview.md)
+- Fixed an issue so that [ASROnlyPerRuleExclusions](/windows/client-management/mdm/defender-csp#configurationasronlyperruleexclusions) don't apply during an engine reboot
+- [Microsoft Defender Core service overview](microsoft-defender-core-service-overview.md) is generally available for consumer devices and is coming soon for business customers.
+- Fixed an issue with device control so that device control policies remain enforced when a platform update requires a reboot
+- Improved performance of [device control for printing scenarios](device-control-policies.md)
+- Fixed truncation issue in the output of [MpCmdRun.exe -scan](command-line-arguments-microsoft-defender-antivirus.md) (processing Unicode characters)
+
+### Known issues
+
+- None
+
 ## September-2023 (Platform: 4.18.23090.2008 | Engine: 1.1.23090.2007)
- 
+
 - Security intelligence update version: **1.399.44.0**
 - Release date:  **October 3, 2023 (Engine) | October 4, 2023 (Platform)**
 - Platform: **4.18.23090.2008**
 - Engine: **1.1.23090.2007**
 - Support phase: **Technical upgrade support (only)**
- 
+
 ### What's new
 
 - Fixed automatic remediation during on demand scans involving archives with multiple threats
@@ -73,7 +122,7 @@ Microsoft regularly releases [security intelligence updates and product updates 
 - None
 
 ## July-2023 (Platform: 4.18.23070.1004 | Engine: 1.1.23070.1005)
- 
+
 - Security intelligence update version: **1.395.30.0**
 - Released:  **August 9, 2023 (Engine and Platform)**
 - Platform: **4.18.23070.1004**
@@ -81,7 +130,7 @@ Microsoft regularly releases [security intelligence updates and product updates 
 - Support phase: **Technical upgrade support (only)**
 
 ### What's new
- 
+
 - Improved output for [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) if scan results fail to retrieve
 - Extended management options for configuring security intelligence updates with Intune, Group Policy, and PowerShell
 - Extended management options for disabling IOAV scans over the network using Intune, Group Policy, and PowerShell. The new setting is `ApplyDisableNetworkScanningToIOAV` for [Set-MpPreference](/powershell/module/defender/set-mppreference).
@@ -99,9 +148,9 @@ Microsoft regularly releases [security intelligence updates and product updates 
 - Improved error reporting in the [modern, unified agent installer](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution)
 - Fixed the overriding logic in the ASR rule [Block all Office applications from creating child processes](attack-surface-reduction-rules-reference.md#block-all-office-applications-from-creating-child-processes) configured in warn mode
 - Added support for scanning Zstandard (Zstd) containers/archives
- 
+
 ### Known issues
- 
+
 - None
 
 ## May-2023 *UPDATE* (Platform: 4.18.23050.9)
@@ -122,17 +171,17 @@ Microsoft regularly releases [security intelligence updates and product updates 
 ## June-2023 (Engine: 1.1.23060.1005)
 
 - Security intelligence update version: **1.393.71.0**
-- Released:  **July 10, 2023 (Engine only)** 
+- Released:  **July 10, 2023 (Engine only)**
 - Engine: **1.1.23060.1005**
 - Support phase: **Technical upgrade support (only)**
-   
-### What's new  
+
+### What's new
 
 - Fixed an issue with [ASR rules deployed via Intune](/mem/intune/protect/endpoint-security-asr-policy) to display accurately in the Microsoft Defender portal
 - Fixed a performance issue when building and validating the Microsoft Defender Antivirus cache
 - Improved performance by removing redundant exclusion checks
- 
-### Known Issues  
+
+### Known Issues
 
 - See [May-2023 *UPDATE* (Platform: 4.18.23050.9 | Engine: 1.1.23060.1005)](#may-2023-update-platform-418230509) for platform updates.
 
@@ -145,41 +194,41 @@ Microsoft regularly releases [security intelligence updates and product updates 
 - Platform: **4.18.23050.5**
 - Engine: **1.1.23050.2**
 - Support phase: **Technical upgrade support (only)**
-   
-### What's new  
+
+### What's new
 
 - Fixed issue that could lead to resolution of incorrect service endpoint
-  
-### Known Issues  
+
+### Known Issues
 
 - Users encounter slow loading webpages in non-Microsoft web browsers with [web content filtering](/microsoft-365/security/defender-endpoint/web-content-filtering) enabled
 
 ## May-2023 (Platform: 4.18.23050.3 | Engine:  1.1.23050.2)
 
-- Security intelligence update version:  **1.391.64.0**    
-- Released: **May 31, 2023**    
-- Platform: **4.18.23050.3**    
-- Engine: **1.1.23050.2**    
-- Support phase: **Technical upgrade support (only)**  
-   
-### What's new  
+- Security intelligence update version:  **1.391.64.0**
+- Released: **May 31, 2023**
+- Platform: **4.18.23050.3**
+- Engine: **1.1.23050.2**
+- Support phase: **Technical upgrade support (only)**
+
+### What's new
 
 - New version format for Platform and Engine (see the [April-2023 update](#whats-new))
-- Improved processing of SmartLockerMode  
-- Fixed input parameters for DefinitionUpdateChannel cmdlet in [Set-MpPreference](/powershell/module/defender/set-mppreference)  
-- Improved installation experience for [Windows Server 2012 R2 and Windows Server 2016](microsoft-defender-antivirus-on-windows-server.md)  
-- Added ability to disable Defender task maintenance tasks programmatically  
-- Fixed WDFilter 0x50 bug check  
-- Fixed print enforcement issue for device control  
-- Fixed scan randomization issue when setting Intune policy  
-- Fixed sense offboarding on Windows Server 2016 when [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) is enabled  
-- Fixed inconsistent results of caching files with the internal Defender file cache  
-- Augmented attack surface reduction telemetry with more data related to an ASR detection  
+- Improved processing of SmartLockerMode
+- Fixed input parameters for DefinitionUpdateChannel cmdlet in [Set-MpPreference](/powershell/module/defender/set-mppreference)
+- Improved installation experience for [Windows Server 2012 R2 and Windows Server 2016](microsoft-defender-antivirus-on-windows-server.md)
+- Added ability to disable Defender task maintenance tasks programmatically
+- Fixed WDFilter 0x50 bug check
+- Fixed print enforcement issue for device control
+- Fixed scan randomization issue when setting Intune policy
+- Fixed sense offboarding on Windows Server 2016 when [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) is enabled
+- Fixed inconsistent results of caching files with the internal Defender file cache
+- Augmented attack surface reduction telemetry with more data related to an ASR detection
 - Removed Image File Execution Options (IFEO) debugger value during installation, which can be used to prevent service starts
-- Fixed memory leaked in ASR logic  
+- Fixed memory leaked in ASR logic
 - Improved validation guard-rail for Malicious Software Removal Tool (MSRT) releases
-  
-### Known Issues  
+
+### Known Issues
 
 - Potential issue that could lead to resolution of incorrect service endpoint
 
@@ -187,15 +236,15 @@ Microsoft regularly releases [security intelligence updates and product updates 
 
 - Security intelligence update version: **1.387.2997.0**
 - Release date:  **May 2, 2023 (Engine) / May 2, 2023 (Platform)**
-- Platform: **4.18.2304.8** 
+- Platform: **4.18.2304.8**
 - Engine: **1.1.20300.3**
 - Support phase: **Technical upgrade support (only)**
 
 ### What's new
 
-- **Beginning in May 2023, the Platform and Engine version schema have a new format**. Here's what the new version format looks like: 
-   - Platform: `4.18.23050.1` 
-   - Engine: `1.1.23050.63000` 
+- **Beginning in May 2023, the Platform and Engine version schema have a new format**. Here's what the new version format looks like:
+   - Platform: `4.18.23050.1`
+   - Engine: `1.1.23050.63000`
 - Fixed memory leak in behavior monitoring
 - Improved resiliency of signature loading and platform updates
 - Quarantine and restore support for [WMI](use-wmi-microsoft-defender-antivirus.md)
@@ -534,7 +583,7 @@ Microsoft regularly releases [security intelligence updates and product updates 
 ### What's new
 
 - Improved CPU usage efficiency of certain intensive scenarios on Exchange servers
-- Added new device control status fields under Get-MpComputerStatus in Defender PowerShell module. 
+- Added new device control status fields under Get-MpComputerStatus in Defender PowerShell module.
 - Fixed bug in which `SharedSignatureRoot` value couldn't be removed when set with PowerShell
 - Fixed bug in which [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) failed to be enabled, even though Microsoft Defender for Endpoint indicated that tamper protection was turned on
 - Added supportability and bug fixes to performance analyzer for Microsoft Defender Antivirus tool. For more information, see [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md).

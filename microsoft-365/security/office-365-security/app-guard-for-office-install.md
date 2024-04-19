@@ -15,8 +15,7 @@ ms.collection:
 - m365-security
 - tier3
 description: Get the latest in hardware-based isolation. Prevent current and emerging attacks like exploits or malicious links from disrupting employee productivity and enterprise security.
-ms.subservice: mdo
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 ms.date: 11/27/2023
 ---
 
@@ -34,7 +33,7 @@ Microsoft Defender Application Guard for Office (Application Guard for Office) h
 ### Licensing requirements
 
 - Microsoft 365 E5 or Microsoft 365 E5 Security
-- [Safe Documents in Microsoft 365](/microsoft-365/security/office-365-security/safe-documents-in-e5-plus-security-about)
+- [Safe Documents in Microsoft 365](safe-documents-in-e5-plus-security-about.md)
 
 ### Minimum hardware requirements
 
@@ -178,7 +177,7 @@ You can also submit feedback from within Word, Excel, and PowerPoint if the issu
 
 Application Guard for Office is integrated with Microsoft Defender for Endpoint to provide monitoring and alerting on malicious activity that happens in the isolated environment.
 
-[Safe Documents in Microsoft E365 E5](/microsoft-365/security/office-365-security/safe-documents-in-e5-plus-security-about) is a feature that uses Microsoft Defender for Endpoint to scan documents opened in Application Guard for Office. For an additional layer of protection, users can't leave Application Guard for Office until the results of the scan have been determined.
+[Safe Documents in Microsoft E365 E5](safe-documents-in-e5-plus-security-about.md) is a feature that uses Microsoft Defender for Endpoint to scan documents opened in Application Guard for Office. For an additional layer of protection, users can't leave Application Guard for Office until the results of the scan have been determined.
 
 ## Limitations and considerations
 

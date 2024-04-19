@@ -1,8 +1,8 @@
 ---
 title: Zero Trust identity and device access configurations - Microsoft 365 for enterprise
 description: Describes Microsoft recommendations and core concepts for deploying secure email, docs, and apps policies and configurations for Zero Trust.
-ms.author: tracyp
-author: MSFTTracyP
+author: chrisda
+ms.author: chrisda
 manager: dansimp
 ms.service: microsoft-365-zero-trust
 ms.topic: conceptual
@@ -51,7 +51,7 @@ Zero Trust identity and device access policies address the **Verify explicitly**
   - Control user actions.
   - Validate secure configuration options.
 
-This series of articles describe a set of identity and device access configurations and policies using Azure Active Directory (Azure AD) Conditional Access, Microsoft Intune, and other features. These configurations and policies provide Zero Trust access to Microsoft 365 for enterprise cloud apps and services, other SaaS services, and on-premises applications that are published with Azure AD Application Proxy.
+This series of articles describe a set of identity and device access configurations and policies using Microsoft Entra ID, Conditional Access, Microsoft Intune, and other features. These configurations and policies provide Zero Trust access to Microsoft 365 for enterprise cloud apps and services, other SaaS services, and on-premises applications that are published with Microsoft Entra application proxy.
 
 Zero Trust identity and device access settings and policies are recommended in three tiers:
 
@@ -175,7 +175,7 @@ This guidance shows you how to implement a set of policies to protect access to 
 
 ### Windows 11 or Windows 10 with Microsoft 365 Apps for enterprise
 
-Windows 11 or Windows 10 with Microsoft 365 Apps for enterprise is the recommended client environment for PCs. We recommend Windows 11 or Windows 10 because Azure is designed to provide the smoothest experience possible for both on-premises and Microsoft Entra ID. Windows 11 or Windows 10 also includes advanced security capabilities that can be managed through Intune. Microsoft 365 Apps for enterprise includes the latest versions of Office applications. These use modern authentication, which is more secure and a requirement for Conditional Access. These apps also include enhanced compliance and security tools.
+Windows 11 or Windows 10 with Microsoft 365 Apps for enterprise is the recommended client environment for PCs. We recommend Windows 11 or Windows 10 because Microsoft Entra is designed to provide the smoothest experience possible for both on-premises and Microsoft Entra ID. Windows 11 or Windows 10 also includes advanced security capabilities that can be managed through Intune. Microsoft 365 Apps for enterprise includes the latest versions of Office applications. These use modern authentication, which is more secure and a requirement for Conditional Access. These apps also include enhanced compliance and security tools.
 
 ## Applying these capabilities across the three levels of protection
 
@@ -215,7 +215,7 @@ Once you have determined the set of policies for the apps you want to secure, ro
 
 Similarly, for your sensitive apps, create the set of policies and add one app at a time. Work through any issues until they're all included in the sensitive app policy set.
 
-Microsoft recommends that you don't create policy sets that apply to all apps because it can result in some unintended configurations. For example, policies that block all apps could lock your admins out of the Azure portal and exclusions can't be configured for important endpoints such as Microsoft Graph.
+Microsoft recommends that you don't create policy sets that apply to all apps because it can result in some unintended configurations. For example, policies that block all apps could lock your admins out of the Microsoft Entra admin center and exclusions can't be configured for important endpoints such as Microsoft Graph.
 
 ## Steps to configure Zero Trust identity and device access
 

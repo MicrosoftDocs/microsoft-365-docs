@@ -38,7 +38,7 @@ Microsoft Defender Antivirus is a major component of your next-generation protec
 
 Microsoft Defender Antivirus provides anomaly detection, a layer of protection for malware that doesn’t fit any predefined pattern. Anomaly detection monitors for process creation events or files that are downloaded from the internet. Through machine learning and cloud-delivered protection, Microsoft Defender Antivirus can stay one step ahead of attackers. Anomaly detection is on by default and can help block attacks such as [3CX Security Alert for Electron Windows App](https://www.3cx.com/blog/news/desktopapp-security-alert/). Microsoft Defender Antivirus started blocking this malware four days before the attack was registered in VirusTotal.  
 
-Modern malware requires modern solutions. Microsoft Defender Antivirus stopped using signature-based engine detections many years ago. The scale and scope of today’s ever-evolving malware landscape requires adaptive,  predictive technologies such as, machine learning, applied science, and artificial intelligence to keep you and your organizations safe.
+Modern malware requires modern solutions. In 2015, Microsoft Defender Antivirus moved away from using a static signature-based engine to a model that uses predictive technologies such as, machine learning, applied science, and artificial intelligence as this is what's necessary to keep you and your organizations safe from the complexity of today’s ever-evolving malware landscape.
 
 Microsoft Defender Antivirus can block almost all malware at first sight, in milliseconds.
 
@@ -62,36 +62,14 @@ The following table summarizes Microsoft Defender Antivirus processes and servic
 | **Microsoft Defender Antivirus command-line utility** | - **Processes** tab: N/A <br/>- **Details** tab: `MpCmdRun.exe` <br/>- **Services** tab: N/A  | 
 | **Microsoft Security Client Policy Configuration Tool** | - **Processes** tab: N/A <br/>- **Details** tab: `ConfigSecurityPolicy.exe` <br/>- **Services** tab: N/A | 
 
+To learn more about the Microsoft Defender Core service, please visit [Microsoft Defender Core service overview](/microsoft-365/security/defender-endpoint/microsoft-defender-core-service-overview).
+
 For [Microsoft Endpoint Data Loss Prevention](/purview/endpoint-dlp-getting-started) (Endpoint DLP), the following table summarizes processes and services. You can view them in Task Manager in Windows.
 
 | Process or service | Where to view its status |
 |--|--|
 | **Microsoft Endpoint DLP service** <br/>(`MDDlpSvc`) | - **Processes** tab: `MpDlpService.exe` <br/>- **Details** tab: `MpDlpService.exe` <br/>- **Services** tab: `Microsoft Data Loss Prevention Service` |
 | **Microsoft Endpoint DLP command-line utility**  | - **Processes** tab: N/A <br/>- **Details** tab: `MpDlpCmd.exe` <br/>- **Services** tab: N/A |
-
-## Microsoft Defender Core service
-
-To enhance your endpoint security experience, Microsoft is releasing the Microsoft Defender Core service to help with the stability and performance of Microsoft Defender Antivirus. For customers who are using Microsoft Endpoint Data Loss Prevention in the small, medium, and enterprise business sectors, Microsoft is splitting the codebase to its own service.  
-
-The Microsoft Defender Core service is releasing with [Microsoft Defender Antivirus platform version 4.18.23110.2009](microsoft-defender-antivirus-updates.md#october-2023-platform-418231002009--engine-11231002009).
-
-- Rollout begins in November 2023 to prerelease customers, with plans to release to all enterprise customers in the coming months.
-
-- Enterprise customers should allow the following URLs:
-   - `*.events.data.microsoft.com`
-   - `*.endpoint.security.microsoft.com`
-   - `*.ecs.office.com` 
-
-- Enterprise U.S. Government customers should allow the following URLs:
-   - `*.events.data.microsoft.com`
-   - `*.endpoint.security.microsoft.us (GCC-H & DoD)`
-   - `*.gccmod.ecs.office.com (GCC-M)`
-   - `*.config.ecs.gov.teams.microsoft.us (GCC-H)`
-   - `*.config.ecs.dod.teams.microsoft.us (DoD)`
-     
-- If you're using [Application Control for Windows](/windows/security/application-security/application-control/windows-defender-application-control/wdac), or you're running non-Microsoft antivirus or endpoint detection and response software, make sure to add the processes mentioned earlier to your allow list. 
-
-- Consumers need not take any actions to prepare. 
 
 ## Comparing active mode, passive mode, and disabled mode
 

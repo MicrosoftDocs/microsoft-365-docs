@@ -1,7 +1,7 @@
 ---
 title: Collaborate with guests from other Microsoft 365 cloud environments
-ms.author: mikeplum
-author: MikePlumleyMSFT
+ms.author: jtremper
+author: jacktremper
 manager: pamgreen
 ms.date: 09/29/2023
 audience: ITPro
@@ -40,10 +40,9 @@ In order to invite guests from an organization in a different Microsoft Azure cl
 Note that tenants in Microsoft Azure Government (Microsoft 365 GCC High and DoD) can't create a cross-tenant connection with tenants in Microsoft Azure China.
 
 > [!NOTE]
-> Cross-cloud guest access between Microsoft 365 China (21Vianet) and other Microsoft 365 cloud environments is in preview.
-
-> [!NOTE]
 > VDI clients aren't supported for cross-cloud guests.
+> 
+> B2B Member accounts aren't supported for cross cloud guests.  All cross cloud users must be of type B2B guest.
 
 > [!IMPORTANT]
 > The organization that you're collaborating with must also configure these settings for their organization.

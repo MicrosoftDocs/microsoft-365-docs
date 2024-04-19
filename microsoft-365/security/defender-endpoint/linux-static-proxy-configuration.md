@@ -62,38 +62,30 @@ During installation, the `HTTPS_PROXY` environment variable must be passed to th
 
 The `HTTPS_PROXY` environment variable may similarly be defined during uninstallation.
 
-Note that installation and uninstallation will not necessarily fail if a proxy is required but not configured. However, telemetry will not be submitted, and the operation could take much longer due to network timeouts.
+Note that installation and uninstallation will not necessarily fail if a proxy is required but not configured. However, telemetry won't be submitted, and the operation could take longer due to network timeouts.
 
 ## Post installation configuration
 
-After installation, configure Defender for Endpoint with static proxy using the following method:
+After installation, configure Defender for Endpoint with a static proxy. This can be done in two ways: 
 
+### 1. Using mdatp command-line tool
+
+Run  the following command on the endpoint to configure proxy for Defender for Endpoint
 ```bash
 mdatp config proxy set --value http://address:port
 ```
-> [!NOTE]
-> This method works for every distribution of Defender for Endpoint on Linux and is **Recommended**.
 
+### 2. Using managed configuration
 
-The `HTTPS_PROXY` environment variable must be defined in the Defender for Endpoint service file. To do this, run `sudo systemctl edit --full mdatp.service`.
-You can then propagate the variable to the service in one of two ways:
-
-1) Uncomment the line `#Environment="HTTPS_PROXY=http://address:port"` and specify your static proxy address.
-
-2) Add a line `EnvironmentFile=/path/to/env/file`. This path can point to `/etc/environment` or a custom file, either of which needs to add the following line:
-
-  ```bash
-  HTTPS_PROXY="http://proxy.server:port/"
-  ```
-
-After modifying `mdatp.service`, save the file and restart the service so the changes can be applied using the following commands:
-
-```bash
-sudo systemctl daemon-reload; sudo systemctl restart mdatp
+Set the proxy in the managed configuration at `/etc/opt/microsoft/mdatp/managed/mdatp_managed.json`. This is an example of the json schema:
 ```
-> [!NOTE]
-> To remove any additions you might have made before uninstalling `mdatp`, delete the custom file from `/etc/systemd/system`.
+{
+  "cloudService":{
+    "proxy": "http://proxy.server:port/"
+  }
+}
+```
 
-> [!NOTE]
-> Red Hat Enterprise Linux 6.X and CentOS 6.X don't support **systemctl** and **/etc/environment** methods. To configure static proxy for MDE on these distributions, use the Recommended **mdatp config proxy set** method.
+A management tool of choice can be used to deploy the above configuration. Please check [Set preferences for Microsoft Defender for Endpoint on Linux](./linux-preferences.md) for more details on managed configuration.
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

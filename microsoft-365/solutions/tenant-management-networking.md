@@ -3,7 +3,7 @@ title: Step 2. Optimal networking for your Microsoft 365 for enterprise tenants
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 12/01/2020
+ms.date: 04/05/2024
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,6 +15,7 @@ ms.collection:
 - m365solution-tenantmanagement
 - tenant-management
 - m365solution-scenario
+- must-keep
 ms.custom:
 - Ent_Solutions
 description: "Optimize the network access to your Microsoft 365 tenants."
@@ -104,8 +105,8 @@ These are the specific network insights for each office location:
 
 - [Backhauled network egress](../enterprise/office-365-network-mac-perf-insights.md#backhauled-network-egress)
 - [Better performance detected for customers near you](../enterprise/office-365-network-mac-perf-insights.md#better-performance-detected-for-customers-near-you)
-- [Use of a non-optimal Exchange Online service front door](../enterprise/office-365-network-mac-perf-insights.md#use-of-a-non-optimal-exchange-online-service-front-door)
-- [Use of a non-optimal SharePoint Online service front door](../enterprise/office-365-network-mac-perf-insights.md#use-of-a-non-optimal-sharepoint-online-service-front-door)
+- [Use of a non-optimal Exchange Online service front door](../enterprise/office-365-network-mac-perf-insights.md#use-of-a-nonoptimal-exchange-online-service-front-door)
+- [Use of a non-optimal SharePoint Online service front door](../enterprise/office-365-network-mac-perf-insights.md#use-of-a-nonoptimal-sharepoint-service-front-door)
 - [Low download speed from SharePoint front door](../enterprise/office-365-network-mac-perf-insights.md#low-download-speed-from-sharepoint-front-door)
 - [China user optimal network egress](../enterprise/office-365-network-mac-perf-insights.md#china-user-optimal-network-egress)
 
@@ -155,8 +156,6 @@ For your Microsoft 365 tenant with optimal networking, you have determined:
 Here is an example of an enterprise organization and its tenant with optimal networking.
 
 ![Example of a tenant with optimal networking.](../media/tenant-management-overview/tenant-management-tenant-build-step2.png)
-
-[See a larger version of this image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-management-overview/tenant-management-tenant-build-step2.png)
 
 In this illustration, the tenant for this enterprise organization has:
 

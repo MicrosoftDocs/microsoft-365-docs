@@ -84,7 +84,7 @@ Proactively search for threats, malware, and malicious activity across your endp
 
 [Custom detection rules](/windows/security/threat-protection/microsoft-defender-atp/custom-detection-rules) can be built from advanced hunting queries to help you proactively watch for events that might be indicative of breach activity and misconfigured devices.
 
-Here's an [example on advanced hunting](advanced-hunting-example.md) in Microsoft Defender for Office 365.
+Here's an [example on advanced hunting](advanced-hunting-email-threats.md) in Microsoft Defender for Office 365.
 
 ### Action center
 
@@ -137,7 +137,7 @@ This table is a quick reference of Threat management where change has occurred b
 
 No changes to these areas:
 
-- [Explorer](../office-365-security/threat-explorer-about.md)
+- [Explorer](../office-365-security/threat-explorer-real-time-detections-about.md)
 - [Policies & Rules](../../compliance/alert-policies.md)
 - [Campaign](../office-365-security/campaigns.md)
 - [Submissions](../office-365-security/submissions-admin.md)

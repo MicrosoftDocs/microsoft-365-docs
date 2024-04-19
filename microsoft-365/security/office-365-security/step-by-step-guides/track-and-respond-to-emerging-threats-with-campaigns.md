@@ -1,15 +1,11 @@
 ---
 title: Track and respond to emerging security threats with campaigns view in Microsoft Defender for Office 365
 description: Walkthrough of threat campaigns within Microsoft Defender for Office 365 to demonstrate how they can be used to investigate a coordinated email attack against your organization.
-search.product:
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.service: defender-office-365
 f1.keywords: 
-  - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ - NOCSH
+author: chrisda
+ms.author: chrisda
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -18,9 +14,8 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: how-to
-ms.subservice: mdo
 search.appverid: met150
-ms.date: 1/31/2023
+ms.date: 01/31/2023
 ---
 
 # Track and respond to emerging threats with campaigns in Microsoft Defender for Office 365
@@ -47,7 +42,7 @@ Microsoft leverages vast amounts of anti-phishing, anti-spam, and anti-malware d
 A campaign might be short-lived, or could span several days, weeks, or months with active and inactive periods. A campaign might be launched against your specific organization, or your organization might be part of a larger campaign across *multiple* companies.
 
 > [!TIP]
-> To learn more about the data available within a campaign, read [Campaign Views in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/campaigns).
+> To learn more about the data available within a campaign, read [Campaign Views in Microsoft Defender for Office 365](../campaigns.md).
 
 ## Watch the *Exploring campaign views* video
 
@@ -81,4 +76,4 @@ In the event that a campaign has targeted your organization and you'd like to le
 
 ## Next steps
 
-To learn more, read, [Campaign Views in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/campaigns).
+To learn more, read, [Campaign Views in Microsoft Defender for Office 365](../campaigns.md).
