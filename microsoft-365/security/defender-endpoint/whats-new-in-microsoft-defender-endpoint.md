@@ -86,7 +86,7 @@ Two new ASR rules are now in public preview:
 
 ## November 2023
 
-- [Microsoft Defender Core service](microsoft-defender-antivirus-windows.md#microsoft-defender-core-service) is now available for consumers and is planned to begin rolling out to enterprise customers in early 2024.
+- [Microsoft Defender Core service overview](microsoft-defender-core-service-overview.md) is now available for consumers and is planned to begin rolling out to enterprise customers in early 2024.
 - The [Microsoft Defender for Endpoint plug-in for Windows Subsystem for Linux (WSL)](/microsoft-365/security/defender-endpoint/mde-plugin-wsl) is now available in public preview.
 - Support for [mixed-license scenarios](defender-endpoint-subscription-settings.md) is now generally available in Defender for Endpoint.
 
