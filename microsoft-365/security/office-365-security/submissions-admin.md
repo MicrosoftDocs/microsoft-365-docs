@@ -16,7 +16,7 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 description: "Admins can learn how to use the Submissions page in the Microsoft Defender portal to submit messages, URLs, and email attachments to Microsoft for analysis. Reasons for submission include: legitimate messages that were blocked, suspicious messages that were allowed, suspected phishing email, spam, malware, and other potentially harmful messages."
 ms.service: defender-office-365
-ms.date: 3/25/2024
+ms.date: 4/19/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 1 and Plan 2</a>
@@ -101,11 +101,11 @@ For other ways that **admins** can report messages to Microsoft in the Defender 
    - **Choose at least one recipient who had an issue**: Specify the recipients to run a policy check against. The policy check determines if the email bypassed scanning due to user or organization policies or override.
 
    - **Why are you submitting this message to Microsoft?**: Select one of the following values:
-     - **It appears suspicious**: Select this value if you're unsure and you want a verdict from Microsoft, select **Submit**, and then go to Step 6.
+     - **It appears suspicious**: Select this value only when you don't know or you're unsure of the message verdict and you would like to get a verdict from Microsoft. Select **Submit**, and then go to Step 6.
 
      or
 
-     - **I've confirmed it's a threat**: Select this value if you're sure that the item is malicious, and then select one of the following values in the **Choose a category** section that appears:
+     - **I've confirmed it's a threat**: In all other cases, select this value after you've already determined the message verdict as malicious. Select one of the following values in the **Choose a category** section that appears:
        - **Phish**
        - **Malware**
        - **Spam**
@@ -263,11 +263,11 @@ After a few moments, the block entry is available on the **URL** tab on the **Te
    - **Choose at least one recipient who had an issue**: Specify the recipients to run a policy check against. The policy check determines if the email was blocked due to user or organization policies or overrides.
 
    - **Why are you submitting this message to Microsoft?**: Select one of the following values:
-     - **It appears clean**: Select this value if you're unsure and you want a verdict from Microsoft, select **Submit**, and then go to Step 6.
+     - **It appears clean**: Select this value only when you don't know or you're unsure of the message verdict and you would like to get a verdict from Microsoft. Select **Submit**, and then go to Step 6.
 
      or
 
-     - **I've confirmed it's clean**: Select this value if you're sure that the item is clean, and then select **Next**
+     - **I've confirmed it's clean**: In all other cases, select this value after you've already determined the message verdict as clean. Select **Next**.
 
    :::image type="content" source="../../media/admin-submission-email-allow.png" alt-text="Submit a false positive (good) email to Microsoft for analysis on the Submissions page in the Defender portal." lightbox="../../media/admin-submission-email-allow.png":::
 
@@ -544,7 +544,7 @@ On the **Submissions** page, select the **Teams messages** tab.
 You can sort the entries by clicking on an available column header. Select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns** to change the columns that are shown. The default values are marked with an asterisk (<sup>\*</sup>):
 
 - **Submission name**<sup>\*</sup>
-- **Sender**sup>\*</sup>
+- **Sender**<sup>\*</sup>
 - **Date submitted**<sup>\*</sup>
 - **Reason for submitting**<sup>\*</sup>
 - **Submitted by**
@@ -1147,7 +1147,7 @@ After you submit a user reported message to Microsoft from the **User reported**
 
 :::image type="content" source="../../media/admin-submission-user-reported-submit-button-options.png" alt-text="The Trigger investigation action in the Submit to Microsoft for analysis dropdown list." lightbox="../../media/admin-submission-user-reported-submit-button-options.png":::
 
-For more information, see [Trigger an investigation](air-about-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).
+For more information, see [Trigger an investigation](air-examples.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).
 
 #### Notify users about admin submitted messages to Microsoft
 

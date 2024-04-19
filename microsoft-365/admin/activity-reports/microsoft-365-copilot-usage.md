@@ -48,16 +48,21 @@ You can see the following summary charts in this report:
 
 - Microsoft 365 E5
 - Microsoft 365 E3
+- Microsoft 365 F1
+- Microsoft 365 F3
+- Office 365 E1
 - Office 365 E3
 - Office 365 E5
-- Microsoft 365 Business Standard
+- Office 365 F3
+- Microsoft 365 Business Basic
 - Microsoft 365 Business Premium
+- Microsoft 365 Business Standard
 - Microsoft 365 A5 for faculty*
 - Microsoft 365 A3 for faculty*
 - Office 365 A5 for faculty*
 - Office 365 A3 for faculty*
 
-*Available via Enrollment for Education Solutions (EES) or Cloud Solution Provider only.
+*Available via Enrollment for Education Solutions (EES) or Cloud Solution Provider only.
 
 **Users on an eligible update channel** This number is the sum of all users who are enrolled in Current Channel or Monthly Enterprise Channel for app updates in your organization and could be assigned with a Copilot license.
 
@@ -121,7 +126,7 @@ You can see the following summary charts in this report as default view:
 
 The definitions for Enabled Users and Active Users metrics are the same as provided earlier.
 
-To note, Active users of Word, Excel, and PowerPoint is incomplete prior to Jan 25, 2024. Active users of Outlook might be lower than expected if there are people in your organization using the Coach feature on Outlook Win32 over the selected time period. We are currently working on integrating this data into our reports and will notify you as soon as it becomes available.
+To note, Active users of Word, Excel, and PowerPoint is incomplete prior to Jan 25, 2024. Active users of Outlook might increase from February 1st, 2024, as we have restated ‘Draft with Copilot’ and ‘Coaching by Copilot’ tried actions data for Outlook Win32.
 
 >[!IMPORTANT]
 > Your organization must have optional diagnostic telemetry for Office apps enabled for Windows, Mac, iOS, and Android in order for comprehensive usage information to be captured in this report. [Learn more about diagnostic telemetry settings](/DeployOffice/privacy/optional-diagnostic-data).
@@ -139,8 +144,6 @@ In the hover status in Summary view, you can see the selected time frame and dat
 When switching to Trend view, you can select one product in the dropdown list to see daily usage.
 
 :::image type="content" alt-text="Screenshot showing the dropdown list of products for Microsoft 365 Copilot adoption chart." source="../../media/copilot-usage-trend-view2.png":::
-
-:::image type="content" alt-text="Screenshot showing the hover status for Microsoft 365 Copilot adoption chart." source="../../media/copilot-usage-hover-status.png":::
 
 In the Adoption section, you may see a recommendation card:
 
@@ -201,8 +204,6 @@ This report now includes a new metric for Microsoft Copilot with Graph-grounded 
 - Typing a message into the chat window and submitting.
 - Selecting a prompt from the "Try these Prompts" section, which will automatically copy the prompt into the chat box.
 - Clicking on one of the suggestions from the "Stay on top" tab in some platforms (such as Microsoft365.com).
-
-Note that automated prompts are not included in this feature.
 
 ### What are the behaviors of All up last activity date and last activity date per app in user-level table?
 
