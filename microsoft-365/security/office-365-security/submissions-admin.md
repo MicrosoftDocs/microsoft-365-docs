@@ -16,7 +16,7 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 description: "Admins can learn how to use the Submissions page in the Microsoft Defender portal to submit messages, URLs, and email attachments to Microsoft for analysis. Reasons for submission include: legitimate messages that were blocked, suspicious messages that were allowed, suspected phishing email, spam, malware, and other potentially harmful messages."
 ms.service: defender-office-365
-ms.date: 3/25/2024
+ms.date: 4/19/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 1 and Plan 2</a>
@@ -101,11 +101,11 @@ For other ways that **admins** can report messages to Microsoft in the Defender 
    - **Choose at least one recipient who had an issue**: Specify the recipients to run a policy check against. The policy check determines if the email bypassed scanning due to user or organization policies or override.
 
    - **Why are you submitting this message to Microsoft?**: Select one of the following values:
-     - **It appears suspicious**: Select this value if you're unsure and you want a verdict from Microsoft, select **Submit**, and then go to Step 6.
+     - **It appears suspicious**: Select this value only when you don't know or you're unsure of the message verdict and you would like to get a verdict from Microsoft. Select **Submit**, and then go to Step 6.
 
      or
 
-     - **I've confirmed it's a threat**: Select this value if you're sure that the item is malicious, and then select one of the following values in the **Choose a category** section that appears:
+     - **I've confirmed it's a threat**: In all other cases, select this value after you've already determined the message verdict as malicious. Select one of the following values in the **Choose a category** section that appears:
        - **Phish**
        - **Malware**
        - **Spam**
@@ -263,11 +263,11 @@ After a few moments, the block entry is available on the **URL** tab on the **Te
    - **Choose at least one recipient who had an issue**: Specify the recipients to run a policy check against. The policy check determines if the email was blocked due to user or organization policies or overrides.
 
    - **Why are you submitting this message to Microsoft?**: Select one of the following values:
-     - **It appears clean**: Select this value if you're unsure and you want a verdict from Microsoft, select **Submit**, and then go to Step 6.
+     - **It appears clean**: Select this value only when you don't know or you're unsure of the message verdict and you would like to get a verdict from Microsoft. Select **Submit**, and then go to Step 6.
 
      or
 
-     - **I've confirmed it's clean**: Select this value if you're sure that the item is clean, and then select **Next**
+     - **I've confirmed it's clean**: In all other cases, select this value after you've already determined the message verdict as clean. Select **Next**.
 
    :::image type="content" source="../../media/admin-submission-email-allow.png" alt-text="Submit a false positive (good) email to Microsoft for analysis on the Submissions page in the Defender portal." lightbox="../../media/admin-submission-email-allow.png":::
 
