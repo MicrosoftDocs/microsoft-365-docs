@@ -218,7 +218,7 @@ The verdict values are described in the following list:
 
 ## Start automated investigation and response in Threat Explorer
 
-[Automated investigation and response (AIR)](air-about-office.md) in Defender for Office 365 Plan 2 can save time and effort as you investigate and mitigate cyberattacks. You can configure alerts that trigger a security playbook, and you can start AIR in Threat Explorer. For details, see [Example: A security administrator triggers an investigation from Explorer](air-about-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).
+[Automated investigation and response (AIR)](air-about.md) in Defender for Office 365 Plan 2 can save time and effort as you investigate and mitigate cyberattacks. You can configure alerts that trigger a security playbook, and you can start AIR in Threat Explorer. For details, see [Example: A security administrator triggers an investigation from Explorer](air-examples.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).
 
 ## Other articles
 

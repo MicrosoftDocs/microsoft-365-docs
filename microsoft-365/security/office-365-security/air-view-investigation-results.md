@@ -46,7 +46,7 @@ The investigation status indicates the progress of the analysis and actions. As 
 |**Partially Remediated**|The investigation resulted in remediation actions, and some were approved and completed. Other actions are still [pending](air-review-approve-pending-completed-actions.md).|
 |**Failed**|At least one investigation analyzer ran into a problem where it couldn't complete properly. <p> **NOTE** If an investigation fails after remediation actions were approved, the remediation actions might still have succeeded. View the investigation details.|
 |**Queued By Throttling**|An investigation is being held in a queue. When other investigations complete, queued investigations begin. Throttling helps avoid poor service performance.  <p> **TIP**: Pending actions can limit how many new investigations can run. Make sure to [approve (or reject) pending actions](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions).|
-|**Terminated By Throttling**|If an investigation is held in the queue too long, it stops. <p> **TIP**: You can [start an investigation from Threat Explorer](air-about-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).|
+|**Terminated By Throttling**|If an investigation is held in the queue too long, it stops. <p> **TIP**: You can [start an investigation from Threat Explorer](air-examples.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).|
 
 ## View details of an investigation
 
