@@ -213,7 +213,7 @@ In addition to this it's important that OAuth setup between Exchange Server on-p
 Customers who have already run the Hybrid Configuration Wizard (HCW) to configure hybrid, will have an OAuth configuration in place. If OAuth was not configured before, it can be done by running the HCW or by following the steps as outlined in the [Configure OAuth authentication between Exchange and Exchange Online organizations](/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help) documentation.
 
 > [!IMPORTANT]
-> All servers must have at least the [Exchange Server 2019 CU14](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-2024-h1-cumulative-update-for-exchange-server/ba-p/4047506) update installed together with the [March 2024 SU](https://support.microsoft.com/help/5036401) or later update.
+> All servers must have at least the [Exchange Server 2019 CU14](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-2024-h1-cumulative-update-for-exchange-server/ba-p/4047506) update installed. They must also run the [Exchange Server 2019 CU14 April 2024 HU](https://support.microsoft.com/help/5037224) or a later update.
 
 ### Steps to enable Hybrid Modern Authentication for OWA and ECP
 
