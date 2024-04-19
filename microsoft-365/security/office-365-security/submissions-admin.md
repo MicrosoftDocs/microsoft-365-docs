@@ -101,11 +101,11 @@ For other ways that **admins** can report messages to Microsoft in the Defender 
    - **Choose at least one recipient who had an issue**: Specify the recipients to run a policy check against. The policy check determines if the email bypassed scanning due to user or organization policies or override.
 
    - **Why are you submitting this message to Microsoft?**: Select one of the following values:
-     - **It appears suspicious**: Select this value if you're unsure and you want a verdict from Microsoft, select **Submit**, and then go to Step 6.
+     - **It appears suspicious**: Select this only when you do not know or are unsure of the message verdict and you would like to get a verdict from Microsoft. select **Submit**, and then go to Step 6.
 
      or
 
-     - **I've confirmed it's a threat**: Select this value if you're sure that the item is malicious, and then select one of the following values in the **Choose a category** section that appears:
+     - **I've confirmed it's a threat**: in all other cases when you already  determined the message verdict use this option, and then select one of the following values in the **Choose a category** section that appears:
        - **Phish**
        - **Malware**
        - **Spam**
@@ -263,11 +263,11 @@ After a few moments, the block entry is available on the **URL** tab on the **Te
    - **Choose at least one recipient who had an issue**: Specify the recipients to run a policy check against. The policy check determines if the email was blocked due to user or organization policies or overrides.
 
    - **Why are you submitting this message to Microsoft?**: Select one of the following values:
-     - **It appears clean**: Select this value if you're unsure and you want a verdict from Microsoft, select **Submit**, and then go to Step 6.
-
+     - **It appears clean**: Select this only when you do not know or are unsure of the message verdict and you would like to get a verdict from Microsoft. select **Submit**, and then go to Step 6.
+       
      or
 
-     - **I've confirmed it's clean**: Select this value if you're sure that the item is clean, and then select **Next**
+     - **I've confirmed it's clean**: in all other cases when you already determined the message verdict as clean use this option, and then select **Next**.
 
    :::image type="content" source="../../media/admin-submission-email-allow.png" alt-text="Submit a false positive (good) email to Microsoft for analysis on the Submissions page in the Defender portal." lightbox="../../media/admin-submission-email-allow.png":::
 
