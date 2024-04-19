@@ -176,6 +176,18 @@ You can view applications permitted to run in background in System Settings => L
 
 Make sure all Microsoft Defender and Microsoft Corporation items are enabled. If they are disabled then macOS will not start Microsoft Defender after a machine restart.
 
+## Bluetooth permissions
+
+Starting with macOS 14, a user must explicitly allow an application to access Bluetooth.
+macOS will pop a prompt up, telling the user that Microsoft Defender can access Bluetooth (applies only if you use Bluetooth based policies for Device Control).
+Click Allow to grant Microsoft Defender to access Bluetooth.
+
+:::image type="content" source="media/macos-defender-bluetooth.png" alt-text="Screenshot that shows Bluetooth access request":::
+
+You can confirm that permissions are granted in System Settings => Privacy Settings => Bluetooth.
+
+:::image type="content" source="media/macos-defender-bluetooth-review.png" alt-text="Screenshot that shows Review Bluetooth access":::
+
 ## Onboarding Package
 
 Once you have installed the MDE on macOS client, you must now onboard the package, which registers to your Microsoft Defender for Endpoint tenant and licenses it.
