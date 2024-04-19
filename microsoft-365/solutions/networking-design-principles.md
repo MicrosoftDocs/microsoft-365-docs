@@ -99,7 +99,7 @@ Other times, hardware that was sized and purchased before the organization start
 
 If your organization requires [tenant restrictions](/azure/active-directory/manage-apps/tenant-restrictions), you'll need to use a proxy with TLS break and inspect to  force some traffic through the proxy, but you don't have to force all traffic through it.  It's not an all or nothing proposition, so pay attention to what does need to be modified by the proxy.
 
-If you're going to permit split tunneling but also use a proxy for general web traffic, make sure your PAC file defines what must go direct as well as how you define interesting traffic for what goes through the VPN tunnel. We offer sample PAC files at [https://aka.ms/ipaddrs](../enterprise/urls-and-ip-address-ranges.md) that will make this easier to manage.
+If you're going to permit split tunneling but also use a proxy for general web traffic, make sure your PAC file defines what must go direct as well as how you define interesting traffic for what goes through the VPN tunnel. We offer sample PAC files at [https://aka.ms/ipaddrs](../enterprise/urls-and-ip-address-ranges.md) that makes this easier to manage.
 
 ## Conclusion
 
