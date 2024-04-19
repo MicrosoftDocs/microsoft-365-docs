@@ -51,7 +51,7 @@ Microsoft 365 and Teams offer capabilities that help financial services organiza
 
 Bring associates and management together across branches to collaborate and streamline operations with Teams and Teams apps.
 
-**Key apps and capabilities:** Shifts, Walkie Talkie, Tasks, Approvals, Praise, Lists, Updates, Viva Connections, Chat, Files
+**Key apps and capabilities:** Shifts, Walkie Talkie, Planner, Approvals, Praise, Lists, Updates, Viva Connections, Chat, Files
 
 **Additional services:** SharePoint, Power Platform and Power Apps
 
@@ -100,7 +100,7 @@ More information: [Corporate communications with frontline workers](flw-corp-com
 
 ### Apps and services for financial services
 
-Ensure that your workers can communicate, collaborate, and deliver great customer service with Teams apps like Shifts, Tasks, Lists, Praise, and more. You can determine which apps are available for your users by enabling them in the Teams admin center or by using a team template. Learn more about [managing Teams apps](/microsoftteams/manage-apps).
+Ensure that your workers can communicate, collaborate, and deliver great customer service with Teams apps like Shifts, Planner, Lists, Praise, and more. You can determine which apps are available for your users by enabling them in the Teams admin center or by using a team template. Learn more about [managing Teams apps](/microsoftteams/manage-apps).
 
 For financial services environments, the following apps and services can help you transform your business processes and support communication.
 
@@ -111,7 +111,7 @@ For financial services environments, the following apps and services can help yo
 | Documents and files | Share standard operating procedures, regulatory compliance policies, company policies, and financial product fact sheets. | [Teams and SharePoint integration](/sharepoint/teams-connected-sites) | [Share files](https://support.microsoft.com/office/upload-and-share-files-57b669db-678e-424e-b0a0-15d19215cb12) |
 | Praise | Recognize coworkers for great teamwork with the Praise app. | [Manage the Praise app](/microsoftteams/manage-praise-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Send Praise to people](https://support.microsoft.com/office/send-praise-to-people-50f26b47-565f-40fe-8642-5ca2a5ed261e) |
 | Shifts | Create and manage schedules and clock in and out with Shifts. | [Shifts for frontline workers](shifts-for-teams-landing-page.md) | [Use Shifts](https://support.microsoft.com/office/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821) |
-| Tasks | Help employees know what they should focus on when not with customers by assigning tasks. Your corporate office can use [task publishing](/microsoftteams/manage-tasks-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json#task-publishing) to send out tasks to locations and track progress across those locations. | [Manage the Tasks app](/microsoftteams/manage-tasks-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Use Tasks](https://support.microsoft.com/office/use-the-tasks-app-in-teams-e32639f3-2e07-4b62-9a8c-fd706c12c070) |
+| Planner | Help employees know what they should focus on when not with customers by assigning tasks. Your corporate office can use [task publishing](/microsoftteams/manage-planner-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json#task-publishing) to send out tasks to locations and track progress across those locations. | [Manage the Planner app](/microsoftteams/manage-planner-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Use Planner](https://support.microsoft.com/office/getting-started-with-planner-in-teams-7a5e58f1-2cee-41b0-a41d-55d512c4a59c) |
 | Updates | Check in on recurring or one-off priorities such as daily counts. Managers can create templates for employees to fill out and submit. | [Manage the Updates app](/microsoftteams/manage-updates-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Use Updates](https://support.microsoft.com/office/get-started-in-updates-c03a079e-e660-42dc-817b-ca4cfd602e5a) |
 | Virtual Appointments| Schedule and manage virtual consultations with clients, view analytics, and more, in the Virtual Appointments app.| [Manage the Virtual Appointments app](/microsoftteams/manage-virtual-appointments-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [What is the Virtual Appointments app?](https://support.microsoft.com/topic/22df0079-e6d9-4225-bc65-22747fb2cb5f) |
 | Viva Connections | Viva Connections creates an experience in Teams that connects employees with tools, news, and resources. Employees can view a tailored news feed from your organization and a personalized dashboard with the resources they need. | [Overview of Viva Connections](/viva/connections/viva-connections-overview) | Use [Viva Connections](https://support.microsoft.com/office/your-intranet-is-now-in-microsoft-teams-8b4e7f76-f305-49a9-b6d2-09378476f95b) |
