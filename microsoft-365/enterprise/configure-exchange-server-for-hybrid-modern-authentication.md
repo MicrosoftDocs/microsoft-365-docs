@@ -291,10 +291,10 @@ Customers who have already run the Hybrid Configuration Wizard (HCW) to configur
 
 10. To enable Hybrid Modern Authentication for `OWA` and `ECP`, you must first disable any other authentication method on these virtual directories. Run these commands for each `OWA` and `ECP` virtual directory on each Exchange Server:
 
-   > [!IMPORTANT]
-   > It's important to execute these commands in the given order. Otherwise, you'll see an error message when running the commands. After running these commands, login to `OWA` and `ECP` will stop work until the OAuth authentication for those virtual directories has been activated.
-   >
-   > Also make sure that the accounts used for administration are synchronized to Microsoft Entra ID. Otherwise the login will stop work until they are synchronized.
+      > [!IMPORTANT]
+      > It's important to execute these commands in the given order. Otherwise, you'll see an error message when running the commands. After running these commands, login to `OWA` and `ECP` will stop work until the OAuth authentication for those virtual directories has been activated.
+      >
+      > Also make sure that the accounts used for administration are synchronized to Microsoft Entra ID. Otherwise the login will stop work until they are synchronized.
 
    ```powershell
    Get-OwaVirtualDirectory -Server <computername> | Set-OwaVirtualDirectory -AdfsAuthentication $false –BasicAuthentication $false –FormsAuthentication $false –DigestAuthentication $false
@@ -303,8 +303,8 @@ Customers who have already run the Hybrid Configuration Wizard (HCW) to configur
 
 11. Enable OAuth for the `OWA` and `ECP` virtual directory. Run these commands for each `OWA` and `ECP` virtual directory on each Exchange Server:
 
-   > [!IMPORTANT]
-   > It's important to execute these commands in the given order. Otherwise, you'll see an error message when running the commands.
+      > [!IMPORTANT]
+      > It's important to execute these commands in the given order. Otherwise, you'll see an error message when running the commands.
 
    ```powershell
    Get-EcpVirtualDirectory -Server <computername> | Set-EcpVirtualDirectory -OAuthAuthentication $true
