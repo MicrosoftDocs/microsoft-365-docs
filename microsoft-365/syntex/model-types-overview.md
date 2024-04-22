@@ -134,6 +134,6 @@ For more information about receipt processing models, see [Use a prebuilt model 
 
 ### Sensitive information processing
 
-The prebuilt sensitive information processing model analyzes and extracts key information from documents. The API analyzes contracts in various formats and extracts key sensitiveinformation such as social security numbers, financial account numbers, driver license identification numbers, and other personal information.
+The prebuilt sensitive information processing model analyzes, detects, and extracts key information from documents. The API analyzes contracts in various formats and extracts key sensitive information such as social security numbers, financial account numbers, driver license identification numbers, and other personal information.
 
-For more information about sensitive information processing models, see [Use a prebuilt model to extract sensitive information from documents](prebuilt-model-sensitive-info.md).
+For more information about sensitive information processing models, see [Use a prebuilt model to detect sensitive information from documents](prebuilt-model-sensitive-info.md).
