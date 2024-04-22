@@ -41,8 +41,6 @@ Before you begin, review the feature documentation to understand the product cha
    - [Microsoft Sentinel in the Microsoft Defender portal](/azure/sentinel/microsoft-sentinel-defender-portal)
    - [Advanced hunting in the Microsoft Defender portal](advanced-hunting-microsoft-defender.md)
    - [Automation with the unified security operations platform](/azure/sentinel/automation#automation-with-the-unified-security-operations-platform)
-   - [Incident response in the Microsoft Defender portal](incidents-overview.md)
-   - [Prioritize incidents in the Microsoft Defender portal](incident-queue.md)
 
 The Microsoft Defender portal supports a single Microsoft Entra tenant and the connection to one workspace at a time. In the context of this article, a workspace is a Log Analytics workspace with Microsoft Sentinel enabled.
 
