@@ -61,7 +61,7 @@ The following table provides links to the specific setup instructions for each s
 |Image tagging                    | [Set up image tagging](image-tagging-setup.md)  |
 |Taxonomy tagging                 | [Set up taxonomy tagging](taxonomy-tagging-setup.md)  |
 |Document translation             | [Set up document translation](translation-setup.md)  |
-|Video translation                | [Set up video transcript translation](https://prod.support.services.microsoft.com/office/2e34ad1b-e213-47ed-a806-5cc0d88751de#bkmk_enabletranslations)  |
+|Video translation                | [Set up video translation](https://prod.support.services.microsoft.com/office/2e34ad1b-e213-47ed-a806-5cc0d88751de#bkmk_enabletranslations)  |
 |Syntex eSignature                | [Set up Syntex eSignature](esignature-setup.md)  |
 |Optical character recognition    | [Set up optical character recognition](ocr.md)  |
 |Microsoft 365 Archive (Preview)  | [Set up Microsoft 365 Archive](archive/archive-setup.md)  |
