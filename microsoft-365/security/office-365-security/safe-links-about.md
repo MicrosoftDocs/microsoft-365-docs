@@ -61,6 +61,8 @@ Safe Links protection by Safe Links policies is available in the following locat
   >
   > Safe Links supports only HTTP(S) and FTP formats.
   >
+  > Safe Links will no longer wrap URLs pointing to a SharePoint site. SharePoint URLs will still be processed by the Safe Links service. This change does not cause a degradation in the protection a tenant receives. It is intended to improve the performance of loading SharePoint URLs.
+  >
   > Using another service to wrap links before Defender for Office 365 might prevent Safe Links from process links, including wrapping, detonating, or otherwise validating the "maliciousness" of the link.
 
 - **Microsoft Teams**: Safe Links protection for links in Teams conversations, group chats, or from channels.
