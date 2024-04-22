@@ -262,7 +262,34 @@ Customers who have already run the Hybrid Configuration Wizard (HCW) to configur
 
 7. To enable Exchange Server on-premises ability to perform Hybrid Modern Authentication, follow the steps outlined in the [Enable HMA](#enable-hma) section.
 
-8. To enable Hybrid Modern Authentication for `OWA` and `ECP`, you must first disable any other authentication method on these virtual directories. Run these commands for each `OWA` and `ECP` virtual directory on each Exchange Server:
+8. (Optional) Only required if [Download Domains](/exchange/plan-and-deploy/post-installation-tasks/security-best-practices/exchange-download-domains) are used:
+
+
+   Create a new global setting override by running the following commands from an elevated Exchange Management Shell (EMS). Run these commands on one Exchange Server:
+
+   ```powershell
+   New-SettingOverride -Name "OWA HMA Download Domain Support" -Component "OAuth" -Section "OAuthIdentityCacheFixForDownloadDomains" -Parameters ("Enabled=true") -Reason "Enable support for OWA HMA when Download Domains are in use"
+   Get-ExchangeDiagnosticInfo -Process Microsoft.Exchange.Directory.TopologyService -Component VariantConfiguration -Argument RefreshRestart-Service -Name W3SVC, WAS -Force
+   ```
+
+9. (Optional) Only required in [Exchange resource forest topology](/exchange/deploy-exchange-2013-in-an-exchange-resource-forest-topology-exchange-2013-help) scenarios:
+
+   Add the following keys to the `<appSettings>` node of the `<ExchangeInstallPath>\ClientAccess\Owa\web.config` file. Do this on each Exchange Server:
+
+   ```notepad
+   <add key="OAuthHttpModule.ConvertToSidBasedIdentity" value="true"/>
+   <add key="OAuthHttpModule.UseMasterAccountSid" value="true"/>
+   ```
+
+   Create a new global setting override by running the following commands from an elevated Exchange Management Shell (EMS). Run these commands on one Exchange Server:
+
+   ```powershell
+   New-SettingOverride -Name "OWA HMA AFRF Support" -Component "OAuth" -Section "OwaHMAFixForAfRfScenarios" -Parameters ("Enabled=true") -Reason "Enable support for OWA HMA in AFRF scenarios"
+   Get-ExchangeDiagnosticInfo -Process Microsoft.Exchange.Directory.TopologyService -Component VariantConfiguration -Argument Refresh
+   Restart-Service -Name W3SVC, WAS -Force
+   ```
+
+10. To enable Hybrid Modern Authentication for `OWA` and `ECP`, you must first disable any other authentication method on these virtual directories. Run these commands for each `OWA` and `ECP` virtual directory on each Exchange Server:
 
    > [!IMPORTANT]
    > It's important to execute these commands in the given order. Otherwise, you'll see an error message when running the commands. After running these commands, login to `OWA` and `ECP` will stop work until the OAuth authentication for those virtual directories has been activated.
@@ -274,7 +301,7 @@ Customers who have already run the Hybrid Configuration Wizard (HCW) to configur
    Get-EcpVirtualDirectory -Server <computername> | Set-EcpVirtualDirectory -AdfsAuthentication $false –BasicAuthentication $false –FormsAuthentication $false –DigestAuthentication $false
    ```
 
-9. Enable OAuth for the `OWA` and `ECP` virtual directory. Run these commands for each `OWA` and `ECP` virtual directory on each Exchange Server:
+11. Enable OAuth for the `OWA` and `ECP` virtual directory. Run these commands for each `OWA` and `ECP` virtual directory on each Exchange Server:
 
    > [!IMPORTANT]
    > It's important to execute these commands in the given order. Otherwise, you'll see an error message when running the commands.
