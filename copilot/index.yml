@@ -105,6 +105,13 @@ additionalContent:
               url: https://copilot.cloud.microsoft
 #            - text: Use additional data sources with Microsoft 365 Chat
 #              url: https://go.microsoft.com/fwlink/?linkid=2250210
+        # Card
+        - title: Enable Copilot in Viva
+          links:
+            - text: Set up Copilot in Viva Engage
+              url: /viva/engage/configure-copilot-for-engage
+            - text: Enable Copilot in Viva Goals
+              url: /viva/goals/copilot-intro
 
     - title: Develop Copilot plugins and connectors for Microsoft 365
       items:
