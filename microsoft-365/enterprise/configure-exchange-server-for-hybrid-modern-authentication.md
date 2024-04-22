@@ -269,7 +269,8 @@ Customers who have already run the Hybrid Configuration Wizard (HCW) to configur
 
    ```powershell
    New-SettingOverride -Name "OWA HMA Download Domain Support" -Component "OAuth" -Section "OAuthIdentityCacheFixForDownloadDomains" -Parameters ("Enabled=true") -Reason "Enable support for OWA HMA when Download Domains are in use"
-   Get-ExchangeDiagnosticInfo -Process Microsoft.Exchange.Directory.TopologyService -Component VariantConfiguration -Argument RefreshRestart-Service -Name W3SVC, WAS -Force
+   Get-ExchangeDiagnosticInfo -Process Microsoft.Exchange.Directory.TopologyService -Component VariantConfiguration -Argument Refresh
+   Restart-Service -Name W3SVC, WAS -Force
    ```
 
 9. (Optional) Only required in [Exchange resource forest topology](/exchange/deploy-exchange-2013-in-an-exchange-resource-forest-topology-exchange-2013-help) scenarios:
@@ -296,20 +297,20 @@ Customers who have already run the Hybrid Configuration Wizard (HCW) to configur
       >
       > Also make sure that the accounts used for administration are synchronized to Microsoft Entra ID. Otherwise the login will stop work until they are synchronized.
 
-   ```powershell
-   Get-OwaVirtualDirectory -Server <computername> | Set-OwaVirtualDirectory -AdfsAuthentication $false –BasicAuthentication $false –FormsAuthentication $false –DigestAuthentication $false
-   Get-EcpVirtualDirectory -Server <computername> | Set-EcpVirtualDirectory -AdfsAuthentication $false –BasicAuthentication $false –FormsAuthentication $false –DigestAuthentication $false
-   ```
+      ```powershell
+      Get-OwaVirtualDirectory -Server <computername> | Set-OwaVirtualDirectory -AdfsAuthentication $false –BasicAuthentication $false –FormsAuthentication $false –DigestAuthentication $false
+      Get-EcpVirtualDirectory -Server <computername> | Set-EcpVirtualDirectory -AdfsAuthentication $false –BasicAuthentication $false –FormsAuthentication $false –DigestAuthentication $false
+      ```
 
 11. Enable OAuth for the `OWA` and `ECP` virtual directory. Run these commands for each `OWA` and `ECP` virtual directory on each Exchange Server:
 
       > [!IMPORTANT]
       > It's important to execute these commands in the given order. Otherwise, you'll see an error message when running the commands.
 
-   ```powershell
-   Get-EcpVirtualDirectory -Server <computername> | Set-EcpVirtualDirectory -OAuthAuthentication $true
-   Get-OwaVirtualDirectory -Server <computername> | Set-OwaVirtualDirectory -OAuthAuthentication $true
-   ```
+      ```powershell
+      Get-EcpVirtualDirectory -Server <computername> | Set-EcpVirtualDirectory -OAuthAuthentication $true
+      Get-OwaVirtualDirectory -Server <computername> | Set-OwaVirtualDirectory -OAuthAuthentication $true
+      ```
 
 ## Using Hybrid Modern Authentication with Outlook for iOS and Android
 
