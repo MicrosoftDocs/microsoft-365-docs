@@ -33,7 +33,6 @@ ms.date: 07/31/2023
 
 [!include[Improve request performance](../../../includes/improve-request-performance.md)]
 
-
 ## API description
 
 Deletes [Indicator](ti-indicator.md) entities by ID.
@@ -63,9 +62,9 @@ POST https://api.securitycenter.microsoft.com/api/indicators/BatchDelete
 
 ## Request headers
 
-Name|Type|Description
-:---|:---|:---
-Authorization | String | Bearer {token}. **Required**.
+|Name|Type|Description|
+|:---|:---|:---|
+|Authorization | String | Bearer {token}. **Required**.|
 
 ## Request body
 
@@ -97,9 +96,8 @@ Here's an example of the request.
 POST https://api.securitycenter.microsoft.com/api/indicators/BatchDelete
 ```
 
-
 ```json
 {
-	"IndicatorIds": [ "1", "2", "5" ]
+    "IndicatorIds": [ "1", "2", "5" ]
 }
 ```

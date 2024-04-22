@@ -15,7 +15,7 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: reference
-ms.date: 01/16/2024
+ms.date: 04/11/2024
 ---
 
 # DeviceProcessEvents
@@ -60,15 +60,15 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `ProcessTokenElevation` | `string` | Indicates the type of token elevation applied to the newly created process. Possible values: TokenElevationTypeLimited (restricted), TokenElevationTypeDefault (standard), and TokenElevationTypeFull (elevated) |
 | `ProcessCreationTime` | `datetime` | Date and time the process was created |
 | `AccountDomain` | `string` | Domain of the account |
-| `AccountName` | `string` | User name of the account |
+| `AccountName` | `string` | User name of the account; if the device is registered in Microsoft Entra ID, the Entra ID user name of the account might be shown instead |
 | `AccountSid` | `string` | Security Identifier (SID) of the account |
-| `AccountUpn` | `string` | User principal name (UPN) of the account |
+| `AccountUpn` | `string` | User principal name (UPN) of the account; if the device is registered in Microsoft Entra ID, the Entra ID UPN of the account might be shown instead |
 | `AccountObjectId` | `string` | Unique identifier for the account in Microsoft Entra ID |
 | `LogonId` | `long` | Identifier for a logon session. This identifier is unique on the same device only between restarts. |
 | `InitiatingProcessAccountDomain` | `string` | Domain of the account that ran the process responsible for the event |
-| `InitiatingProcessAccountName` | `string` | User name of the account that ran the process responsible for the event |
+| `InitiatingProcessAccountName` | `string` | User name of the account that ran the process responsible for the event; if the device is registered in Microsoft Entra ID, the Entra ID user name of the account that ran the process responsible for the event might be shown instead |
 | `InitiatingProcessAccountSid` | `string` | Security Identifier (SID) of the account that ran the process responsible for the event |
-| `InitiatingProcessAccountUpn` | `string` | User principal name (UPN) of the account that ran the process responsible for the event |
+| `InitiatingProcessAccountUpn` | `string` | User principal name (UPN) of the account that ran the process responsible for the event; if the device is registered in Microsoft Entra ID, the Entra ID UPN of the account that ran the process responsible for the event might be shown instead |
 | `InitiatingProcessAccountObjectId` | `string` | Microsoft Entra object ID of the user account that ran the process responsible for the event |
 | `InitiatingProcessLogonId` | `long` | Identifier for a logon session of the process that initiated the event. This identifier is unique on the same device only between restarts. |
 | `InitiatingProcessIntegrityLevel` | `string` | Integrity level of the process that initiated the event. Windows assigns integrity levels to processes based on certain characteristics, such as if they were launched from an internet download. These integrity levels influence permissions to resources. |

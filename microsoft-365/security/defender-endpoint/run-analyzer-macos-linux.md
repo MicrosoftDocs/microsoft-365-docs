@@ -7,7 +7,7 @@ f1.keywords:
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
-ms.date: 02/02/2024
+ms.date: 04/16/2024
 manager: deniseb
 audience: ITPro
 ms.collection:
@@ -45,19 +45,18 @@ If you're using a terminal, download the tool by entering the following command:
 2. Verify the download.
 
     > [!NOTE]
-    > The current SHA256 hash of 'XMDEClientAnalyzerBinary.zip' that is downloaded from this link is: '00E314DD1C1F90F0DF177189E67D0BCBF03CAF7515D4F10BD509A4BFD1889253'
+    > The current SHA256 hash of 'XMDEClientAnalyzerBinary.zip' that is downloaded from this link is: '9D0552DBBD1693D2E2ED55F36147019CFECFDC009E76BAC4186CF03CD691B469'
 
-    
    - Linux
 
     ```console
-    echo '00E314DD1C1F90F0DF177189E67D0BCBF03CAF7515D4F10BD509A4BFD1889253 XMDEClientAnalyzerBinary.zip' | sha256sum -c
+    echo '9D0552DBBD1693D2E2ED55F36147019CFECFDC009E76BAC4186CF03CD691B469 XMDEClientAnalyzerBinary.zip' | sha256sum -c
     ```
 
    - macOS
 
     ```console
-    echo '00E314DD1C1F90F0DF177189E67D0BCBF03CAF7515D4F10BD509A4BFD1889253  XMDEClientAnalyzerBinary.zip' | shasum -a 256 -c
+    echo '9D0552DBBD1693D2E2ED55F36147019CFECFDC009E76BAC4186CF03CD691B469  XMDEClientAnalyzerBinary.zip' | shasum -a 256 -c
     ```
 
 
@@ -78,11 +77,10 @@ If you're using a terminal, download the tool by entering the following command:
 5. Three new zip files are produced:
 
    - **SupportToolLinuxBinary.zip** : For all Linux devices
-   - **SupportToolmacOSBinary.zip** : For Intel-based Mac devices
-   - **SupportToolmacOS-armBinary.zip** : For Arm-based Mac devices
+   - **SupportToolMacOSBinary.zip** : For Mac devices
 
-6. Unzip one of the above 3 zip files based on the machine you need to investigate.\
-When using a terminal, unzip the file by entering one of the following commands based on machine type:
+6. Unzip one of the above 2 zip files based on the machine you need to investigate.\
+When using a terminal, unzip the file by entering one of the following commands based on OS type:
 
    - Linux
 
@@ -90,16 +88,10 @@ When using a terminal, unzip the file by entering one of the following commands 
      unzip -q SupportToolLinuxBinary.zip
      ```
 
-   - Intel-based Mac
+   - Mac
 
      ```console
-     unzip -q SupportToolmacOSBinary.zip
-     ```
-
-   - For Arm-based Mac devices
-
-     ```console
-     unzip -q SupportToolmacOS-armBinary.zip
+     unzip -q SupportToolMacOSBinary.zip
      ```
 
 7. Run the tool as _root_ to generate diagnostic package:
@@ -136,13 +128,13 @@ When using a terminal, unzip the file by entering one of the following commands 
    - Linux
 
     ```console
-    echo '2F33B35ABA3B5B9161E7CCD88CDC0ADACD7D27173768DD68632651950ADF77B8 XMDEClientAnalyzer.zip' | sha256sum -c
+    echo '36C2B13AE657456119F3DC2A898FD9D354499A33F65015670CE2CD8A937F3C66 XMDEClientAnalyzer.zip' | sha256sum -c
     ```
 
    - macOS
 
     ```console
-    echo '2F33B35ABA3B5B9161E7CCD88CDC0ADACD7D27173768DD68632651950ADF77B8  XMDEClientAnalyzer.zip' | shasum -a 256 -c
+    echo '36C2B13AE657456119F3DC2A898FD9D354499A33F65015670CE2CD8A937F3C66  XMDEClientAnalyzer.zip' | shasum -a 256 -c
     ```
 
 3. Extract the contents of XMDEClientAnalyzer.zip on the machine.\

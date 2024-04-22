@@ -15,6 +15,7 @@ f1.keywords: NOCSH
 ms.collection: 
 - M365-security-compliance
 - m365initiative-defender-business
+- essentials-manage
 ---
 
 # Change your endpoint security subscription

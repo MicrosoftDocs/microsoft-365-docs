@@ -1,7 +1,7 @@
 ---
 title: "Limit who can invite guests"
-ms.author: mikeplum
-author: MikePlumleyMSFT
+ms.author: jtremper
+author: jacktremper
 manager: pamgreen
 ms.date: 12/11/2023
 audience: ITPro
