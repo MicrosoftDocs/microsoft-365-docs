@@ -17,6 +17,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - m365copilot
+- magic-ai-copilot
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn about Copilot for Microsoft 365 admin and how it can help simplify admin tasks."
 ---
