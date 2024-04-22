@@ -32,7 +32,7 @@ To learn more about how Microsoft 365 can help your frontline workers, see [Choo
 
 | Item | Description |
 |:-----|:-----|
-|[![Microsoft 365 for frontline worker scenarios.](media/m365-frontline-scenarios-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206713) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206713) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206386)  <br>Updated January 2024   |This poster provides an overview of the scenarios you can implement for your frontline workforce to increase communications, enhance wellbeing and engagement, train and onboard your workers, and manage your workforce and operations.|
+|[![Microsoft 365 for frontline worker scenarios.](media/m365-frontline-scenarios-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206713) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206713) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206386)  <br>Updated April 2024   |This poster provides an overview of the scenarios you can implement for your frontline workforce to increase communications, enhance wellbeing and engagement, train and onboard your workers, and manage your workforce and operations.|
 
 ## Scenarios for healthcare organizations
 
@@ -40,7 +40,7 @@ Use the following poster to start envisioning what your organization can do with
 
 | Item | Description |
 |:-----|:-----|
-|[![Microsoft 365 for frontline workers: Healthcare scenarios.](media/m365-frontline-healthcare-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206475) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206475) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206474)  <br>Updated January 2024   |This poster provides an overview of the scenarios you can implement for your frontline workforce in a healthcare setting.|
+|[![Microsoft 365 for frontline workers: Healthcare scenarios.](media/m365-frontline-healthcare-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206475) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206475) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206474)  <br>Updated April 2024   |This poster provides an overview of the scenarios you can implement for your frontline workforce in a healthcare setting.|
 
 ## Scenarios for retail organizations
 
@@ -48,7 +48,7 @@ Use the following poster to start envisioning what your organization can do with
 
 | Item | Description |
 |:-----|:-----|
-|[![Microsoft 365 for frontline workers: Retail scenarios.](media/m365-frontline-retail-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206476) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206476) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206271)  <br>Updated January 2024   |This poster provides an overview of the scenarios you can implement for your frontline workforce in a retail setting.|
+|[![Microsoft 365 for frontline workers: Retail scenarios.](media/m365-frontline-retail-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206476) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206476) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206271)  <br>Updated April 2024   |This poster provides an overview of the scenarios you can implement for your frontline workforce in a retail setting.|
 
 ## See also
 
