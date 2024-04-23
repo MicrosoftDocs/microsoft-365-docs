@@ -30,18 +30,6 @@ ms.custom:
 
 Hybrid Modern Authentication (HMA) is a method of identity management that offers more secure user authentication and authorization, and is available for Exchange server on-premises hybrid deployments.
 
-## Definitions
-
-Before we begin, you should be familiar with some definitions:
-
-- Hybrid Modern Authentication \> HMA
-
-- Exchange on-premises \> EXCH
-
-- Exchange Online \> EXO
-
-Also, if a graphic in this article has an object that's 'grayed-out' or 'dimmed' that means the element shown in gray isn't included in HMA-specific configuration.
-
 ## Enabling Hybrid Modern Authentication
 
 Turning on HMA requires that your environment meets the following:
@@ -51,7 +39,7 @@ Turning on HMA requires that your environment meets the following:
 2. Since many prerequisites are common for both Skype for Business and Exchange, review them in [Hybrid Modern Authentication overview and prerequisites for using it with on-premises Skype for Business and Exchange servers](hybrid-modern-auth-overview.md). Do this before you begin any of the steps in this article.
 Requirements about linked mailboxes to be inserted.
 
-3. Add on-premises web service URLs as **Service Principal Names (SPNs)** in Microsoft Entra ID. In case EXCH is in hybrid with **multiple tenants**, these on-premises web service URLs must be added as SPNs in the Microsoft Entra ID of all the tenants, which are in hybrid with EXCH.
+3. Add on-premises web service URLs as **Service Principal Names (SPNs)** in Microsoft Entra ID. In case Exchange on-premises is in hybrid with **multiple tenants**, these on-premises web service URLs must be added as SPNs in the Microsoft Entra ID of all the tenants, which are in hybrid with Exchange on-premises.
 
 4. Ensure all Virtual Directories are enabled for HMA
 
@@ -61,7 +49,7 @@ Requirements about linked mailboxes to be inserted.
 
 7. Ensure that all user identities are synchronized with Microsoft Entra ID
 
-8. Enable HMA in EXCH.
+8. Enable HMA in Exchange on-premises.
 
 > [!NOTE]
 > Does your version of Office support MA? See [How modern authentication works for Office 2013 and Office 2016 client apps](modern-auth-for-office-2013-and-2016.md).
@@ -86,7 +74,7 @@ Run the commands that assign your on-premises web service URLs as Microsoft Entr
     Get-OutlookAnywhere -ADPropertiesOnly | fl server,*hostname*
     ```
 
-    Ensure the URLs clients might connect to are listed as HTTPS service principal names in Microsoft Entra ID. In case EXCH is in hybrid with **multiple tenants**, these HTTPS SPNs should be added in the Microsoft Entra ID of all the tenants in hybrid with EXCH.
+    Ensure the URLs clients might connect to are listed as HTTPS service principal names in Microsoft Entra ID. In case Exchange on-premises is in hybrid with **multiple tenants**, these HTTPS SPNs should be added in the Microsoft Entra ID of all the tenants in hybrid with Exchange on-premises.
 
 2. Install the Microsoft Graph PowerShell module:
 
@@ -160,7 +148,7 @@ Get-AuthServer | where {$_.Name -like "EvoSts*"} | ft name,enabled
 Your output should show an AuthServer of the Name EvoSts with a GUID and the 'Enabled' state should be **True**. If not, you should download and run the most recent version of the Hybrid Configuration Wizard.
 
 > [!NOTE]
-> In case EXCH is in hybrid with **multiple tenants**, your output should show one AuthServer of the Name `EvoSts - {GUID}` for each tenant in hybrid with EXCH and the *Enabled* state should be **True** for all of these AuthServer objects.
+> In case Exchange on-premises is in hybrid with **multiple tenants**, your output should show one AuthServer of the Name `EvoSts - {GUID}` for each tenant in hybrid with Exchange on-premises and the *Enabled* state should be **True** for all of these AuthServer objects.
 
 > [!IMPORTANT]
 > If you're running Exchange 2010 in your environment, the EvoSTS authentication provider won't be created.
@@ -181,7 +169,7 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 > Set-AuthServer -Identity EvoSTS -IsDefaultAuthorizationEndpoint $true
 > ```
 
-If the EXCH version is Exchange 2016 (CU18 or higher) or Exchange 2019 (CU7 or higher) and hybrid was configured with HCW downloaded after September 2020, run the following command in the Exchange Management Shell, on-premises:
+If the Exchange on-premises version is Exchange 2016 (CU18 or higher) or Exchange 2019 (CU7 or higher) and hybrid was configured with HCW downloaded after September 2020, run the following command in the Exchange Management Shell, on-premises:
 
 ```powershell
 Set-AuthServer -Identity "EvoSTS - {GUID}" -DomainName "Tenant Domain" -IsDefaultAuthorizationEndpoint $true
@@ -189,7 +177,7 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 ```
 
 > [!NOTE]
-> In case EXCH is in hybrid with **multiple tenants**, there are multiple AuthServer objects present in EXCH with domains corresponding to each tenant.  The **IsDefaultAuthorizationEndpoint** flag should be set to true (using the **IsDefaultAuthorizationEndpoint** cmdlet) for any one of these AuthServer objects. This flag can't be set to true for all the Authserver objects and HMA would be enabled even if one of these AuthServer object's **IsDefaultAuthorizationEndpoint** flag is set to true.
+> In case Exchange on-premises is in hybrid with **multiple tenants**, there are multiple AuthServer objects present in Exchange on-premises with domains corresponding to each tenant.  The **IsDefaultAuthorizationEndpoint** flag should be set to true (using the **IsDefaultAuthorizationEndpoint** cmdlet) for any one of these AuthServer objects. This flag can't be set to true for all the Authserver objects and HMA would be enabled even if one of these AuthServer object's **IsDefaultAuthorizationEndpoint** flag is set to true.
 
 > [!NOTE]
 > For the **DomainName** parameter, use the tenant domain value, which is usually in the form `contoso.onmicrosoft.com`.
@@ -318,7 +306,7 @@ It is recommended to document the `OwaVirtualDirectory` and `EcpVirtualDirectory
 
 ## Using Hybrid Modern Authentication with Outlook for iOS and Android
 
-If you're an on-premises customer using Exchange server on TCP 443, allow network traffic from the following IP ranges:
+If you're an on-premises customer using Exchange Server on TCP 443, allow network traffic from the following IP ranges:
 
 ```console
 52.125.128.0/20
