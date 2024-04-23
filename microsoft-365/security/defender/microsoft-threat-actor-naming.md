@@ -21,7 +21,7 @@ ms.date: 04/17/2024
 
 # How Microsoft names threat actors
 
-Microsoft shifted to a new naming taxonomy for threat actors aligned with the theme of weather. We intend to bring better clarity to customers and other security researchers with the nex taxonomy. We offer a more organized, articulate, and easy way to reference threat actors so that organizations can better prioritize and protect themselves and aid security researchers already confronted with an overwhelming amount of threat intelligence data.
+Microsoft shifted to a new naming taxonomy for threat actors aligned with the theme of weather. We intend to bring better clarity to customers and other security researchers with the new taxonomy. We offer a more organized, articulate, and easy way to reference threat actors so that organizations can better prioritize and protect themselves and aid security researchers already confronted with an overwhelming amount of threat intelligence data.
 
 :::image type="content" source="../../media/threat-actor-naming/threat-actor-categories.png" alt-text="Nation-state actors based on Microsoft naming" lightbox="../../media/threat-actor-naming/threat-actor-categories-lg.png":::
 
