@@ -31,8 +31,12 @@ To export the topics, you run a PowerShell script. Requirements to run the scrip
 
 - PowerShell 7 or later. To install the latest version of PowerShell, go to [Installing PowerShell on Windows](/powershell/scripting/install/installing-powershell-on-windows#installing-the-msi-package).
 - The user running the script needs to be a Topics admin or Knowledge Manager.
+- Create a subfolder for the Lib files called "lib"
+- Copy the following DLL from the AzureAD PowerShell module folder on your local desktop to the same directory has the lib files displayed below
+	- Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+   	- If you don't have the Azure AD module, install it and then grab the file from C:\Program Files\WindowsPowerShell\Modules\AzureAD\2.x.x.x
 
-Key support files are included in this document:
+Key support files are included in this document (place in the Lib subfolder listed in Requirements):
 
 - [Key support file AuthLib.ps1](#key-support-file-authlibps1)
 - [Key support file TopicLib.ps1](#key-support-file-topiclibps1)
@@ -46,7 +50,7 @@ Export-TopicLite -Upn < string > | Export-Csv -Path < string >
 Example:
 
 ```powershell
-Export-TopicLite -Upn "user@domain.com" -Path "C:\"
+Export-TopicLite -Upn "user@domain.com" | Export-Csv -Path "C:\temp\export.csv"
 ```
 
 ## Output
