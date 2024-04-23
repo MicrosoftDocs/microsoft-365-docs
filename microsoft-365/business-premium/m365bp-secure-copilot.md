@@ -16,6 +16,7 @@ ms.collection:
  - essentials-security
  - essentials-privacy
  - essentials-compliance
+ - magic-ai-copilot
 ms.custom:
 ---
 
