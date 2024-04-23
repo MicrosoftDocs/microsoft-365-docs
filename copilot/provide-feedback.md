@@ -17,6 +17,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - m365copilot
+- magic-ai-copilot
 description: "Learn how to provide Copilot for Microsoft 365 feedback to Microsoft on behalf of their users who encounter issues"
 ---
 
