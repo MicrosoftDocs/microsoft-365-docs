@@ -79,6 +79,9 @@ By default, SharePoint eSignature is turned on for libraries in all SharePoint s
 
 4. Select **Save**.
 
+> [!NOTE]
+> Although [pay-as-you-go billing](syntex-azure-billing.md) must be set up to use eSignature, you are not charged for using other signature providers.
+
 ## External recipients
 
 ### Microsoft Entra B2B
