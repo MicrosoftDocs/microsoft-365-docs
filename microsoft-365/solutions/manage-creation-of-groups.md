@@ -117,7 +117,7 @@ Connect-MgGraph -Scopes "Directory.ReadWrite.All", "Group.Read.All"
 $GroupName = ""
 $AllowGroupCreation = "False"
 
-$settingsObjectID = (Get-MgBetaDirectorySetting | Where-object -Property Displayname -Value "Group.Unified" -EQ).id
+$settingsObjectID = (Get-MgBetaDirectorySetting -All | Where-object -Property Displayname -Value "Group.Unified" -EQ).id
 
 if(!$settingsObjectID)
 {
@@ -133,11 +133,11 @@ if(!$settingsObjectID)
 	
     New-MgBetaDirectorySetting -BodyParameter $params
 	
-    $settingsObjectID = (Get-MgBetaDirectorySetting | Where-object -Property Displayname -Value "Group.Unified" -EQ).Id
+    $settingsObjectID = (Get-MgBetaDirectorySetting -All | Where-object -Property Displayname -Value "Group.Unified" -EQ).Id
 }
 
  
-$groupId = (Get-MgBetaGroup | Where-object {$_.displayname -eq $GroupName}).Id
+$groupId = (Get-MgBetaGroup -All | Where-object {$_.displayname -eq $GroupName}).Id
 
 $params = @{
 	templateId = "62375ab9-6b52-47ed-826b-58e47e0e304b"
