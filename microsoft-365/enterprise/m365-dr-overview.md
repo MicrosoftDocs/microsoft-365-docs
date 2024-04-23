@@ -171,7 +171,7 @@ The following Regional Geographies can store data at rest.
 |Japan   |Osaka, Tokyo   |
 |South Korea  |Busan, Seoul    |
 |Spain   |Madrid    |
-|Mexico   |Mexico City    |
+|Mexico   |Queretaro    |
 |Norway   |Oslo, Stavanger    |
 |Poland   |Warsaw    |
 |Qatar   |Doha     |
