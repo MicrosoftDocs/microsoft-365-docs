@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: anrasto, shrganguly
-ms.date: 08/08/2023
+ms.date: 04/23/2024
 ms.topic: conceptual
 ms.service: microsoft-syntex
 search.appverid:
@@ -19,22 +19,6 @@ description: Learn how to automatically create documents and other content using
 # Automate document generation with Microsoft Syntex and Power Automate
 
 Using content assembly in Microsoft Syntex together with Power Automate, you can automate the generation of documents using modern templates.
-<!---
-This preview version is a Power Automate action in a SharePoint connector. The action is named “Generate document using Syntex (Preview)” and has limited capabilities for preview. 
-
-## Scope of the preview 
-
-The current scope of the preview lets you:  
-
-- Choose a SharePoint list as a starting point for document generation. That is, you want a document to be generated using the values in the SharePoint list once an item in the list has been added, modified, or deleted. 
-
-- Choose a modern template and associate its fields with columns from the chosen SharePoint list. 
-
-The preview is created and tested to work for the following three triggers in SharePoint Connector:
-
-- When an item is created
-- When an item is created or modified
-- When an item is deleted--->
 
 ## Automate document generation
 
@@ -58,7 +42,7 @@ Follow these steps to automatically generate documents using a modern template a
 
 5. Select the SharePoint connector again. In the search box, search for and select the action **Generate document using Syntex**.
 
-   ![Screenshot of the SharePoint connector Actions tab showing Generate document using Syntex (preview) action.](../media/content-understanding/document-generation-action.png)
+   ![Screenshot of the SharePoint connector Actions tab showing Generate document using Syntex action.](../media/content-understanding/document-generation-action.png)
 
 6. Enter the site information, and select the document library that contains the modern template.
 
@@ -77,11 +61,9 @@ Follow these steps to automatically generate documents using a modern template a
 
 10. Whenever a template consists of a table placeholder, that field has all the column names in the suggestion as shown in the **Risks** field.
 
-    ![Screenshot of the template showing column suggestions in the Risks field.](../media/content-understanding/document-generation-risks.png)
+    To fill the table, placeholder values should be passed as a list of JSON objects with column name and values. For example:
 
-To fill the table, placeholder values should be passed as a list of JSON objects with column name and values. For example:
-
-*[{"Column 1":"Low","Column 2":"Test","Column 3":"Test","Column 4":"Low"},{"Column 1":"Medium","Column 2":"Test","Column 3":"Test","Column 4":"Medium"}]*
+    *[{"Column 1":"Low","Column 2":"Test","Column 3":"Test","Column 4":"Low"},{"Column 1":"Medium","Column 2":"Test","Column 3":"Test","Column 4":"Medium"}]*
 
 11. The action doesn't support images, and templates containing these fields are hidden while selecting the templates in the action.
 
