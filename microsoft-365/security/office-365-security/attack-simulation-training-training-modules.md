@@ -5,17 +5,16 @@ author: chrisda
 manager: deniseb
 audience: ITPro
 ms.topic: how-to
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 ms.localizationpriority: medium
 ms.collection: 
   - m365-security
   - tier2
 description: Admins can learn about the Training modules that are available to use in Training campaigns in Attack simulation training in Microsoft Defender for Office 365 Plan 2.
-ms.subservice: mdo
 search.appverid: met150
 ms.date: 3/11/2024
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison" target="_blank">Microsoft Defender for Office 365 plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 2</a>
 ---
 
 # Training modules for Training campaigns in Attack simulation training

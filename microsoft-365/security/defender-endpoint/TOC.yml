@@ -61,14 +61,12 @@
     items:
     - name: Evaluate capabilities overview
       href: evaluation-lab.md
-    - name: Evaluate Microsoft Defender Antivirus
+    - name: Microsoft Defender for Endpoint demonstrations
       items:
       - name: Overview
         href: evaluate-microsoft-defender-antivirus.md
       - name: Evaluate Microsoft Defender Antivirus using Powershell
         href: microsoft-defender-antivirus-using-powershell.md
-    - name: Microsoft defender for endpoint demonstrations
-      items:
       - name: Microsoft Defender for Endpoint demonstration scenarios
         href: defender-endpoint-demonstrations.md
       - name: App reputation demonstration
@@ -160,7 +158,8 @@
         href: configure-endpoints-script.md
       - name: Onboard non-persistent virtual desktop infrastructure (VDI) devices
         href: configure-endpoints-vdi.md
-
+      - name: Defender for Endpoint on Windows Server with SAP
+        href: mde-sap-windows-server.md
     - name: Onboard non-Windows devices
       href: configure-endpoints-non-windows.md
     - name: Defender for Endpoint on macOS
@@ -211,8 +210,6 @@
               href: mac-device-control-faq.md
           - name: Schedule scans
             href: mac-schedule-scan.md
-          - name: Configure Microsoft Defender for Endpoint on macOS
-            items:
       - name: Update Defender for Endpoint on macOS
         href: mac-updates.md
       - name: Privacy for Microsoft Defender for Endpoint on macOS
@@ -244,7 +241,7 @@
           - name: Manual deployment
             href: manage-sys-extensions-manual-deployment.md
         
-    - name: Microsoft Defender for Endpoint on Linux
+    - name: Defender for Endpoint on Linux
       items:
        - name: Deploy Defender for Endpoint on Linux
          items:
@@ -760,6 +757,11 @@
             href: device-health-microsoft-defender-antivirus-health.md
           - name: Sensor health and OS report
             href: device-health-sensor-health-os.md
+        - name: Microsoft Defender Core service overview
+          href: microsoft-defender-core-service-overview.md
+          displayName: Microsoft Defender Core service overview
+        - name: Microsoft Defender Core service configurations and experimentation 
+          href: microsoft-defender-core-service-configurations-and-experimentation.md
         - name: Troubleshoot performance issues related to real-time protection
           href: troubleshoot-performance-issues.md
         - name: Collect diagnostic data of Microsoft Defender Antivirus
@@ -1516,6 +1518,9 @@
       href: troubleshoot-collect-support-log.md
     - name: Troubleshoot Microsoft Defender Antivirus settings
       href: troubleshoot-settings.md
+    - name: Troubleshooting Security Intelligence Updates from Microsoft Update source
+      href: security-intelligence-update-tshoot.md
+      displayName: Troubleshooting Security Intelligence Updates from Microsoft Update source
     - name: Troubleshoot attack surface reduction issues
       items:
       - name: Network protection

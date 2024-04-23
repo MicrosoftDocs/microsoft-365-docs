@@ -7,9 +7,9 @@ ms.reviewer: kellycrider
 manager: deniseb
 ms.topic: overview
 ms.date: 12/21/2023
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison" target="_blank">Microsoft Defender for Office 365 plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
@@ -101,4 +101,4 @@ To learn more about submissions and investigations in Defender for Microsoft 365
 - [Automated investigation and response in Microsoft Defender for Office 365](air-about.md)
 - [View the results of an automated investigation in Microsoft 365](air-view-investigation-results.md)
 - [Admin review for reported messages](admin-review-reported-message.md)
-- [How automated investigation and response works in Microsoft Defender for Office 365](air-about-office.md)
+- [How automated investigation and response works in Microsoft Defender for Office 365](air-examples.md)

@@ -77,7 +77,7 @@ Tags are added to the device view and will also be reflected on the **Devices in
 
 You can also delete tags from this view.
 
-:::image type="content" source="images/new-tag-label-display.png" alt-text="Adding tags on device2" lightbox="images/new-tag-label-display.png":::
+:::image type="content" source="media/new-tag-label-display.png" alt-text="Adding tags on device2" lightbox="media/new-tag-label-display.png":::
 
 ## Add device tags using dynamic rules for device tagging
 
@@ -167,7 +167,7 @@ You can use Microsoft Intune to define and apply device tags. You can perform th
 > - iOS
 > - Android
 
-You can use Microsoft Intune to define and apply tag for mobile devices. You can perform this task by creating a app configuration profile in Intune. For more information, please refer to following information.
+You can use Microsoft Intune to define and apply tag for mobile devices. You can perform this task by creating an app configuration profile in Intune. For more information, please refer to following information.
 
 - [Tag mobile devices with Microsoft Defender for Endpoint](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-mobile-device-tagging-for-ios-and-android/ba-p/3897368)
 

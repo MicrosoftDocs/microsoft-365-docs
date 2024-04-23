@@ -1,13 +1,9 @@
 ---
 title: AADSpnSignInEventsBeta table in the advanced hunting schema
 description: Learn about information associated with Microsoft Entra service principal and managed identity sign-in events table.
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
 ms.subservice: adv-hunting
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: 
   - NOCSH
 ms.author: maccruz
@@ -19,7 +15,7 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: reference
-ms.date: 01/16/2024
+ms.date: 04/03/2024
 ---
 
 # AADSpnSignInEventsBeta

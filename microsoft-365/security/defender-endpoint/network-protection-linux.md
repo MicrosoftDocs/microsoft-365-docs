@@ -60,17 +60,17 @@ You can use web content filtering for testing with Network protection for Linux.
 - Licensing: Microsoft Defender for Endpoint tenant (can be trial) and platform specific requirements found in [Microsoft Defender for Endpoint for non-Windows platforms](non-windows.md#licensing-requirements)
 - Onboarded Machines:
   - **Minimum Linux version**: For a list of supported distributions, see [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md).
-  - **Microsoft Defender for Endpoint Linux client version**: 101.78.13 -insiderSlow(Preview)
-
+  - **Microsoft Defender for Endpoint Linux client version**: 101.78.13 -insiderFast(Preview)
+    
 ## Instructions
 
 Deploy Linux manually, see [Deploy Microsoft Defender for Endpoint on Linux manually](linux-install-manually.md)
 
-The following example shows the sequence of commands needed to the mdatp package on ubuntu 20.04 for insiders-Slow channel.
+The following example shows the sequence of commands needed to the mdatp package on ubuntu 20.04 for insiders-Fast channel.
 
 ```bash
-curl -o microsoft.list https://packages.microsoft.com/config/ubuntu/20.04/insiders-slow.list
-sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-insiders-slow.list
+curl -o microsoft.list https://packages.microsoft.com/config/ubuntu/20.04/insiders-fast.list
+sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-insiders-fast.list
 sudo apt-get install gpg
 curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
 sudo apt-get install apt-transport-https
@@ -135,7 +135,7 @@ Also, make sure that in **Microsoft Defender** \> **Settings** \> **Endpoints** 
 > [!IMPORTANT]
 > The above **'Custom network indicators'** toggle controls **Custom Indicators** enablement **for ALL platforms** with Network Protection support, including Windows. Reminder that—on Windows—for indicators to be enforced you also must have Network Protection explicitly enabled.
 
-:::image type="content" source="images/network-protection-linux-defender-security-center-advanced-features-settings.png" alt-text="MEM Create Profile" lightbox="images/network-protection-linux-defender-security-center-advanced-features-settings.png":::
+:::image type="content" source="media/network-protection-linux-defender-security-center-advanced-features-settings.png" alt-text="MEM Create Profile" lightbox="media/network-protection-linux-defender-security-center-advanced-features-settings.png":::
 
 ## How to explore the features
 
@@ -169,7 +169,7 @@ Web threat protection is part of Web protection in Microsoft Defender for Endpoi
 - untrusted or low-reputation sites
 - sites you've blocked in your custom indicator list
 
->:::image type="content" source="images/network-protection-reports-web-protection.png" alt-text="Web Protection reports web threat detections." lightbox="images/network-protection-reports-web-protection.png":::
+>:::image type="content" source="media/network-protection-reports-web-protection.png" alt-text="Web Protection reports web threat detections." lightbox="media/network-protection-reports-web-protection.png":::
 
 For more information, see [Protect your organization against web threat](web-threat-protection.md)
 
@@ -181,7 +181,7 @@ Create indicators that define the detection, prevention, and exclusion of entiti
 
 Currently supported sources are the cloud detection engine of Defender for Endpoint, the automated investigation and remediation engine, and the endpoint prevention engine (Microsoft Defender Antivirus).
 
-:::image type="content" source="images/network-protection-add-url-domain-indicator.png" alt-text="Shows network protection add URL or domain indicator." lightbox="images/network-protection-add-url-domain-indicator.png":::
+:::image type="content" source="media/network-protection-add-url-domain-indicator.png" alt-text="Shows network protection add URL or domain indicator." lightbox="media/network-protection-add-url-domain-indicator.png":::
 
 For more information, see: [Create indicators for IPs and URLs/domains](indicator-ip-domain.md).
 
@@ -193,7 +193,7 @@ Configure policies across your device groups to block certain categories. Blocki
 
 Web content filtering is available on the major web browsers, with blocks performed by Windows Defender SmartScreen (Microsoft Edge) and Network Protection (Chrome, Firefox, Brave, and Opera). For more information about browser support, see [Prerequisites](#prerequisites).
 
-:::image type="content" source="images/network-protection-wcf-add-policy.png" alt-text="Shows network protection web content filtering add policy." lightbox="images/network-protection-wcf-add-policy.png":::
+:::image type="content" source="media/network-protection-wcf-add-policy.png" alt-text="Shows network protection web content filtering add policy." lightbox="media/network-protection-wcf-add-policy.png":::
 
 For more information about reporting, see [Web content filtering](web-content-filtering.md).
 
@@ -201,11 +201,11 @@ For more information about reporting, see [Web content filtering](web-content-fi
 
 The Microsoft Defender for Cloud Apps / Cloud App Catalog identifies apps you would want end users to be warned upon accessing with Microsoft Defender XDR for Endpoint, and mark them as _Monitored_. The domains listed under monitored apps would be later synced to Microsoft Defender XDR for Endpoint:
 
-:::image type="content" source="images/network-protection-macos-mcas-monitored-apps.png" alt-text="Shows network protection mcas monitored apps." lightbox="images/network-protection-macos-mcas-monitored-apps.png":::
+:::image type="content" source="media/network-protection-macos-mcas-monitored-apps.png" alt-text="Shows network protection mcas monitored apps." lightbox="media/network-protection-macos-mcas-monitored-apps.png":::
 
 Within 10-15 minutes, these domains will be listed in Microsoft Defender XDR under Indicators > URLs/Domains with Action=Warn. Within the enforcement SLA (see details at the end of this article).
 
-:::image type="content" source="images/network-protection-macos-mcas-cloud-app-security.png" alt-text="Shows network protection mcas cloud app security." lightbox="images/network-protection-macos-mcas-cloud-app-security.png":::
+:::image type="content" source="media/network-protection-macos-mcas-cloud-app-security.png" alt-text="Shows network protection mcas cloud app security." lightbox="media/network-protection-macos-mcas-cloud-app-security.png":::
 
 ## See also
 

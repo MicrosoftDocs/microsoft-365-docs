@@ -36,7 +36,7 @@ search.appverid: met150
 - Windows
 
 > [!NOTE]  
-> **Microsoft does not support using this feature in Enterprise environments.** This feature only uses a limited subset of the Microsoft Defender Antivirus capabilities to detect malware, and can't detect most malware and potentially unwanted software. Management of the feature is not supported, the feature cannot be enabled or disabled through policies, and reporting capabilities are extremely limited. Microsoft recommends that enterprise orgnaizations choose a primary antivirus/antimalware solution, and use it exclusively. 
+> **Microsoft does not support using this feature in Enterprise environments.** This feature only uses a limited subset of the Microsoft Defender Antivirus capabilities to detect malware, and can't detect most malware and potentially unwanted software. Management of the feature is not supported, the feature cannot be enabled or disabled through policies, and reporting capabilities are extremely limited. Microsoft recommends that enterprise organizations choose a primary antivirus/antimalware solution, and use it exclusively. 
 
 Limited periodic scanning is a special type of threat detection and remediation that can be enabled when another antivirus product is installed on a Windows 10 or Windows 11 device. It can only be enabled in certain situations. For more information about limited periodic scanning and how Microsoft Defender Antivirus works with other antivirus products, see [Microsoft Defender Antivirus compatibility](microsoft-defender-antivirus-compatibility.md).
 
@@ -44,7 +44,7 @@ Limited periodic scanning is a special type of threat detection and remediation 
 
 By default, Microsoft Defender Antivirus enables itself on a Windows 10 or a Windows 11 device if there is no other antivirus product installed, or if the other product is out-of-date, expired, or not working correctly. If Microsoft Defender Antivirus is enabled, the usual options to configure it are available on that device:
 
-:::image type="content" source="images/vtp-wdav.png" alt-text="The Windows Security app showing Microsoft Defender Antivirus options, including scan options, settings, and update options" lightbox="images/vtp-wdav.png":::
+:::image type="content" source="media/vtp-wdav.png" alt-text="The Windows Security app showing Microsoft Defender Antivirus options, including scan options, settings, and update options" lightbox="media/vtp-wdav.png":::
 
 If another antivirus product is installed and working correctly, Microsoft Defender Antivirus disables itself. In this case, the Windows Security app changes the **Virus & threat protection** section to show status about the antivirus product, and provides a link to the product's configuration options. 
 

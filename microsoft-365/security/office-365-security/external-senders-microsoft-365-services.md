@@ -15,8 +15,7 @@ ms.collection:
   - m365-security
   - tier2
 description: To help maintain user trust in the use of email, Microsoft has put in place various policies and technologies to help protect our users.
-ms.subservice: mdo
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 ms.date: 10/9/2023
 ---
 

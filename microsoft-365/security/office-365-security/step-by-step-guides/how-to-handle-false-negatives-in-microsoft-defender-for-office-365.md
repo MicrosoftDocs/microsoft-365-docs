@@ -1,15 +1,11 @@
 ---
 title: (False Negatives) How to handle malicious emails that are delivered to recipients using Microsoft Defender for Office 365
 description: The steps to handle malicious emails coming through to end users and inboxes (as False Negatives) with Microsoft Defender for Office 365 in order to prevent loss of business.
-search.product:
-ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-f1.keywords:
-  - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.service: defender-office-365
+f1.keywords: 
+ - NOCSH
+author: chrisda
+ms.author: chrisda
 ms.localizationpriority: medium
 manager: jarogers
 audience: ITPro
@@ -18,9 +14,8 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: how-to
-ms.subservice: mdo
 search.appverid: met150
-ms.date: 1/31/2023
+ms.date: 01/31/2023
 ---
 
 # How to handle malicious emails that are delivered to recipients (False Negatives), using Microsoft Defender for Office 365

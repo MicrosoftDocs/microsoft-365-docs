@@ -41,6 +41,11 @@
        "redirect_document_id": true
      },
      {
+      "source_path": "microsoft-365/security/defender/device-profile.md",
+      "redirect_url": "/microsoft-365/security/defender/entity-page-device",
+      "redirect_document_id": true
+    },
+    {
               "source_path": "microsoft-365/security/defender-endpoint/experts-on-demand.md",
               "redirect_url": "/microsoft-365/security/defender/onboarding-defender-experts-for-hunting#collaborate-with-experts-on-demand",
               "redirect_document_id": false
@@ -2172,7 +2177,7 @@
      },
      {
        "source_path": "microsoft-365/security/office-365-security/automated-investigation-response-office.md",
-       "redirect_url": "/microsoft-365/security/office-365-security/air-about-office",
+       "redirect_url": "/microsoft-365/security/office-365-security/air-examples",
        "redirect_document_id": true
      },
      {
@@ -2862,7 +2867,7 @@
      },
      {
        "source_path": "microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview.md",
-       "redirect_url": "/microsoft-365/security/office-365-security/mdo-security-comparison",
+       "redirect_url": "/microsoft-365/security/office-365-security/mdo-about",
        "redirect_document_id": false
      },
      {
@@ -3761,6 +3766,11 @@
        "redirect_document_id": false
      },
      {
+      "source_path": "microsoft-365/security/office-365-security/mdo-security-comparison.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/mdo-about",
+      "redirect_document_id": false
+    },
+     {
        "source_path": "microsoft-365/security/defender-endpoint/enable-microsoft-defender-for-iot-integration.md",
        "redirect_url": "/azure/defender-for-iot/organizations/concept-enterprise",
        "redirect_document_id": false
@@ -3968,6 +3978,16 @@
      {
       "source_path": "microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management-trial",
       "redirect_url": "/microsoft-365/security/defender-vulnerability-management/trial-user-guide-defender-vulnerability-management",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "microsoft-365/security/defender/advanced-hunting-example.md",
+      "redirect_url": "/microsoft-365/security/defender/advanced-hunting-email-threats",
+      "redirect_document_id": false
+     },
+     {
+      "source_path": "microsoft-365/security/office-365-security/air-about-office.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/air-examples",
       "redirect_document_id": false
      }
    ]

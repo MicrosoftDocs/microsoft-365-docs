@@ -40,8 +40,9 @@ You'll need to take the following steps:
 7. [Approve System extensions for Microsoft Defender for Endpoint](#step-7-approve-system-extensions-for-microsoft-defender-for-endpoint)
 8. [Configure Network Extension](#step-8-configure-network-extension)
 9. [Configure Background Services](#step-9-configure-background-services)
-10. [Schedule scans with Microsoft Defender for Endpoint on macOS](/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)
-11. [Deploy Microsoft Defender for Endpoint on macOS](#step-11-deploy-microsoft-defender-for-endpoint-on-macos)
+10. [Grant Bluetooth Permissions](#step-10-grant-bluetooth-permissions)
+11. [Schedule scans with Microsoft Defender for Endpoint on macOS](#step-11-schedule-scans-with-microsoft-defender-for-endpoint-on-macos)
+12. [Deploy Microsoft Defender for Endpoint on macOS](#step-12-deploy-microsoft-defender-for-endpoint-on-macos)
 
 ## Step 1: Get the Microsoft Defender for Endpoint onboarding package
 
@@ -49,7 +50,7 @@ You'll need to take the following steps:
 
 2. Select macOS as the operating system and Mobile Device Management / Microsoft Intune as the deployment method.
 
-   :::image type="content" source="images/onboarding-macos.png" alt-text="The Settings page." lightbox="images/onboarding-macos.png":::
+   :::image type="content" source="media/onboarding-macos.png" alt-text="The Settings page." lightbox="media/onboarding-macos.png":::
 
 3. Select **Download onboarding package** (WindowsDefenderATPOnboardingPackage.zip).
 
@@ -61,7 +62,7 @@ You'll need to take the following steps:
 
 1. Locate the file `WindowsDefenderATPOnboarding.plist` from the previous section.
 
-   :::image type="content" source="images/plist-onboarding-file.png" alt-text="The  Windows Defender ATP Onboarding file." lightbox="images/plist-onboarding-file.png":::
+   :::image type="content" source="media/plist-onboarding-file.png" alt-text="The  Windows Defender ATP Onboarding file." lightbox="media/plist-onboarding-file.png":::
 
 2. Sign in to Jamf Pro, navigate to **Computers** > **Configuration Profiles**, and select **New**.
 
@@ -77,7 +78,7 @@ You'll need to take the following steps:
 
 4.  Navigate to the **Application & Custom Settings** page and select **Upload** > **Add**.
 
-    :::image type="content" source="media/jamfpro-mac-profile.png" alt-text="The configurate app and custom settings." lightbox="media/jamfpro-mac-profile.png":::
+    :::image type="content" source="media/jamfpro-mac-profile.png" alt-text="The configuration app and custom settings." lightbox="media/jamfpro-mac-profile.png":::
 
 5. Select **Upload File (PLIST file)** then in **Preference Domain** enter: `com.microsoft.wdav.atp`.
 
@@ -558,7 +559,7 @@ These steps are applicable on macOS 11 (Big Sur) or later.
 
 8. Click the `+` sign next to **App Access** to add a new entry.
 
-   :::image type="content" source="images/tcc-add-entry.png" alt-text="The save operation relating to the configuration setting." lightbox="images/tcc-add-entry.png":::
+   :::image type="content" source="media/tcc-add-entry.png" alt-text="The save operation relating to the configuration setting." lightbox="media/tcc-add-entry.png":::
 
 9. Enter the following details:
 
@@ -568,7 +569,7 @@ These steps are applicable on macOS 11 (Big Sur) or later.
 
 10. Select **+ Add**.
 
-    :::image type="content" source="images/tcc-epsext-entry.png" alt-text="The configuration setting tcc epsext entry." lightbox="images/tcc-epsext-entry.png":::
+    :::image type="content" source="media/tcc-epsext-entry.png" alt-text="The configuration setting tcc epsext entry." lightbox="media/tcc-epsext-entry.png":::
 
     - Under App or service: Set to **SystemPolicyAllFiles**
 
@@ -576,7 +577,7 @@ These steps are applicable on macOS 11 (Big Sur) or later.
 
 11. Select **Save** (not the one at the bottom right).
 
-    :::image type="content" source="images/tcc-epsext-entry2.png" alt-text="The other instance of configuration setting tcc epsext." lightbox="images/tcc-epsext-entry2.png":::
+    :::image type="content" source="media/tcc-epsext-entry2.png" alt-text="The other instance of configuration setting tcc epsext." lightbox="media/tcc-epsext-entry2.png":::
 
 12. Select the **Scope** tab.
 
@@ -602,6 +603,9 @@ These steps are applicable on macOS 11 (Big Sur) or later.
 
 Alternatively, you can download [fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) and upload it to JAMF Configuration Profiles as described in [Deploying Custom Configuration Profiles using Jamf Pro|Method 2: Upload a Configuration Profile to Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
+> [!NOTE]
+> Full Disk Access granted through Apple MDM Configuration Profile is not reflected in System Settings => Privacy & Security => Full Disk Access.
+
 ## Step 7: Approve System extensions for Microsoft Defender for Endpoint
 
 1. In the **Configuration Profiles**, select **+ New**.
@@ -616,11 +620,11 @@ Alternatively, you can download [fulldisk.mobileconfig](https://github.com/micro
     - Distribution Method: Install Automatically
     - Level: Computer Level
 
-    :::image type="content" source="images/sysext-new-profile.png" alt-text="The configuration settings sysext new profile." lightbox="images/sysext-new-profile.png":::
+    :::image type="content" source="media/sysext-new-profile.png" alt-text="The configuration settings sysext new profile." lightbox="media/sysext-new-profile.png":::
 
 3. In **System Extensions** select **Configure**.
 
-   :::image type="content" source="images/sysext-configure.png" alt-text="The pane with the Configure option for the system extensions." lightbox="images/sysext-configure.png":::
+   :::image type="content" source="media/sysext-configure.png" alt-text="The pane with the Configure option for the system extensions." lightbox="media/sysext-configure.png":::
 
 4. In **System Extensions**, enter the following details:
 
@@ -631,7 +635,7 @@ Alternatively, you can download [fulldisk.mobileconfig](https://github.com/micro
      - **com.microsoft.wdav.epsext**
      - **com.microsoft.wdav.netext**
 
-    :::image type="content" source="images/sysext-configure2.png" alt-text="The MDATP MDAV system extensions pane." lightbox="images/sysext-configure2.png":::
+    :::image type="content" source="media/sysext-configure2.png" alt-text="The MDATP MDAV system extensions pane." lightbox="media/sysext-configure2.png":::
 
 5. Select the **Scope** tab.
 
@@ -647,11 +651,11 @@ Alternatively, you can download [fulldisk.mobileconfig](https://github.com/micro
 
 9. Select **Save**.
 
-   :::image type="content" source="images/sysext-scope.png" alt-text="The display of options regarding MDATP MDAV System Extensions." lightbox="images/sysext-scope.png":::
+   :::image type="content" source="media/sysext-scope.png" alt-text="The display of options regarding MDATP MDAV System Extensions." lightbox="media/sysext-scope.png":::
 
 10. Select **Done**.
 
-    :::image type="content" source="images/sysext-final.png" alt-text="The configuration settings sysext - final." lightbox="images/sysext-final.png":::
+    :::image type="content" source="media/sysext-final.png" alt-text="The configuration settings sysext - final." lightbox="media/sysext-final.png":::
 
 ## Step 8: Configure Network Extension
 
@@ -681,7 +685,7 @@ These steps are applicable on macOS 11 (Big Sur) or later.
 
         Note that **Identifier**, **Socket Filter** and **Socket Filter Designated Requirement** exact values as specified above.
 
-        :::image type="content" source="images/netext-create-profile.png" alt-text="The mdatpmdav configuration setting." lightbox="images/netext-create-profile.png":::
+        :::image type="content" source="media/netext-create-profile.png" alt-text="The mdatpmdav configuration setting." lightbox="media/netext-create-profile.png":::
 
 3. Select the **Scope** tab.
 
@@ -697,11 +701,11 @@ These steps are applicable on macOS 11 (Big Sur) or later.
 
 7. Select **Save**.
 
-   :::image type="content" source="images/netext-scope.png" alt-text="The Content Filter pane." lightbox="images/netext-scope.png":::
+   :::image type="content" source="media/netext-scope.png" alt-text="The Content Filter pane." lightbox="media/netext-scope.png":::
 
 8. Select **Done**.
 
-   :::image type="content" source="images/netext-final.png" alt-text="The configuration settings netext - final." lightbox="images/netext-final.png":::
+   :::image type="content" source="media/netext-final.png" alt-text="The configuration settings netext - final." lightbox="media/netext-final.png":::
 
 Alternatively, you can download [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig) and upload it to JAMF Configuration Profiles as described in [Deploying Custom Configuration Profiles using Jamf Pro|Method 2: Upload a Configuration Profile to Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
@@ -716,11 +720,46 @@ Download [**background_services.mobileconfig**](https://raw.githubusercontent.co
 
 Upload downloaded mobileconfig to JAMF Configuration Profiles as described in [Deploying Custom Configuration Profiles using Jamf Pro|Method 2: Upload a Configuration Profile to Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
-## Step 10: Schedule scans with Microsoft Defender for Endpoint on macOS
+## Step 10: Grant Bluetooth Permissions
+
+   > [!CAUTION]
+   > macOS 14 (Sonoma) contains new privacy enhancements. Beginning with this version, by default, applications cannot access Bluetooth without explicit consent. Microsoft Defender for Endpoint uses it if you configure Bluetooth policies for Device Control.
+
+Download [bluetooth.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/bluetooth.mobileconfig) from [GitHub repository](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles).
+
+   > [!WARNING]
+   > Current version of JAMF Pro does not support this kind of payload yet. If you upload this mobileconfig as-is, JAMF Pro will remove unsupported payload,
+   > and it will fail to apply to client machines. You need to sign downloaded mobileconfig first, after that JAMF Pro will consider it "sealed" and will not 
+   > tamper with it. See instructions below:
+
+- You need to have at least one signing certificate installed into your KeyChain, even a self-signed certificate will work. You can inspect what you have with:
+
+```bash
+> /usr/bin/security find-identity -p codesigning -v
+
+  1) 70E46A47F552EA8D58521DAC1E7F5144BA3012BC "DevCert"
+  2) 67FC43F3FAB77662BB7688C114585BAA37CA8175 "Mac Developer: John Doe (1234XX234)"
+  3) E142DFD879E5EB60FA249FB5B24CEAE3B370394A "Apple Development: Jane Doe 7XX7778888)"
+  4) 21DE31645BBF1D9F5C46E82E87A6968111E41C75 "Apple Development: me@example.com (8745XX123)"
+     4 valid identities found
+```
+
+- Choose any of them, and provide the quoted text as the -N parameter:
+
+```bash
+/usr/bin/security cms -S -N "DevCert" -i bluetooth.mobileconfig -o bluetooth-signed.mobileconfig
+```
+
+- Now you can upload the generated bluetooth-signed.mobileconfig to JAMF Pro as described in [Deploying Custom Configuration Profiles using Jamf Pro|Method 2: Upload a Configuration Profile to Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
+
+> [!NOTE]
+> Bluetooth granted through Apple MDM Configuration Profile is not reflected in System Settings => Privacy & Security => Bluetooth.
+
+## Step 11: Schedule scans with Microsoft Defender for Endpoint on macOS
 
 Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint on macOS](/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp).
 
-## Step 11: Deploy Microsoft Defender for Endpoint on macOS
+## Step 12: Deploy Microsoft Defender for Endpoint on macOS
 
 > [!NOTE]
 > In the steps that follow, the name of the `.pkg` file and the **Display Name** values are examples. In these examples, `200329` represents the date on which the
@@ -864,7 +903,7 @@ You need to make sure that all machines receiving Defender's package, also recei
 > While using this criterion may sound logical, it creates problems that are difficult to diagnose.
 >
 > Defender relies on all these profiles at the moment of its installation.
-> Making configuration profiles depending on Defender's presence effectively delays deployment of configuration profiles, and results in an initially unhealthy product and/or prompts for manual approval of certian application permissions, that are otherwise auto approved by profiles.
+> Making configuration profiles depending on Defender's presence effectively delays deployment of configuration profiles, and results in an initially unhealthy product and/or prompts for manual approval of certain application permissions, that are otherwise auto approved by profiles.
 
 Deploying a policy with Microsoft Defender's package *after* deploying configuration profiles ensures the end user's best experience, because all required configurations will be applied before the package installs.
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

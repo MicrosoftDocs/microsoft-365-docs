@@ -84,7 +84,7 @@ The following table describes how the wildcards can be used in the process exclu
 |                                                     |`C:\*\*\MyProcess.exe`|Any file opened by `C:\MyFolder1\MyFolder2\MyProcess.exe` or `C:\MyFolder3\MyFolder4\MyProcess.exe`|
 |                                                     |`C:\*\MyFolder\My*.exe`|Any file opened by `C:\MyOtherFolder\MyFolder\MyProcess.exe` or `C:\AnotherFolder\MyFolder\MyOtherProcess.exe`|
 |'?' (question mark) <p> Replaces one character.      |`C:\MyFolder\MyProcess??.exe`|Any file opened by `C:\MyFolder\MyProcess42.exe` or `C:\MyFolder\MyProcessAA.exe` or `C:\MyFolder\MyProcessF5.exe`|
-| Envionment Variables                                |`%ALLUSERSPROFILE%\MyFolder\MyProcess.exe`|Any file opened by `C:\ProgramData\MyFolder\MyProcess.exe`|
+| Environment Variables                                |`%ALLUSERSPROFILE%\MyFolder\MyProcess.exe`|Any file opened by `C:\ProgramData\MyFolder\MyProcess.exe`|
 
 ### Contextual Process Exclusions
 

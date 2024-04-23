@@ -14,6 +14,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+- m365copilot
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
@@ -37,9 +38,9 @@ The Copilot for Microsoft 365 report, which is in continuous enhancement, includ
 
 ## Interpret the Readiness section in Copilot for Microsoft 365 report
 
-You can use this report to see how ready your organization is to adopt Copilot for Microsoft 365. The Readiness section is set up to show your data over the past 28 days. Currently this portion does not include any other time period options, but we'll be rolling out updates soon to enable 7-day, 30-day, 90-day and 180-day periods.
+You can use this report to see how ready your organization is to adopt Copilot for Microsoft 365. The Readiness section is set up to show your data over the past 28 days. Currently this portion does not include any other time period options, but we'll be rolling out updates soon to enable 7-day, 30-day, 90-day, and 180-day periods.
 
-You can see the following summary charts in this report
+You can see the following summary charts in this report:
 
 :::image type="content" alt-text="Screenshot showing how you can ensure users are eligible for Copilot for Microsoft 365." source="../../media/copilot-usage-ensure-readiness.png":::
 
@@ -47,16 +48,21 @@ You can see the following summary charts in this report
 
 - Microsoft 365 E5
 - Microsoft 365 E3
+- Microsoft 365 F1
+- Microsoft 365 F3
+- Office 365 E1
 - Office 365 E3
 - Office 365 E5
-- Microsoft 365 Business Standard
+- Office 365 F3
+- Microsoft 365 Business Basic
 - Microsoft 365 Business Premium
+- Microsoft 365 Business Standard
 - Microsoft 365 A5 for faculty*
 - Microsoft 365 A3 for faculty*
 - Office 365 A5 for faculty*
 - Office 365 A3 for faculty*
 
-*Available via Enrollment for Education Solutions (EES) or Cloud Solution Provider only.
+*Available via Enrollment for Education Solutions (EES) or Cloud Solution Provider only.
 
 **Users on an eligible update channel** This number is the sum of all users who are enrolled in Current Channel or Monthly Enterprise Channel for app updates in your organization and could be assigned with a Copilot license.
 
@@ -120,7 +126,7 @@ You can see the following summary charts in this report as default view:
 
 The definitions for Enabled Users and Active Users metrics are the same as provided earlier.
 
-To note, Active users of Word, Excel and PowerPoint is incomplete prior to Jan 25, 2024. Active users of Outlook might be lower than expected if there are people in your organization using the Coach feature on Outlook Win32 over the selected time period. We are currently working on integrating this data into our reports and will notify you as soon as it becomes available.
+To note, Active users of Word, Excel, and PowerPoint is incomplete prior to Jan 25, 2024. Active users of Outlook might increase from February 1st, 2024, as we have restated ‘Draft with Copilot’ and ‘Coaching by Copilot’ tried actions data for Outlook Win32.
 
 >[!IMPORTANT]
 > Your organization must have optional diagnostic telemetry for Office apps enabled for Windows, Mac, iOS, and Android in order for comprehensive usage information to be captured in this report. [Learn more about diagnostic telemetry settings](/DeployOffice/privacy/optional-diagnostic-data).
@@ -138,8 +144,6 @@ In the hover status in Summary view, you can see the selected time frame and dat
 When switching to Trend view, you can select one product in the dropdown list to see daily usage.
 
 :::image type="content" alt-text="Screenshot showing the dropdown list of products for Microsoft 365 Copilot adoption chart." source="../../media/copilot-usage-trend-view2.png":::
-
-:::image type="content" alt-text="Screenshot showing the hover status for Microsoft 365 Copilot adoption chart." source="../../media/copilot-usage-hover-status.png":::
 
 In the Adoption section, you may see a recommendation card:
 
@@ -201,11 +205,9 @@ This report now includes a new metric for Microsoft Copilot with Graph-grounded 
 - Selecting a prompt from the "Try these Prompts" section, which will automatically copy the prompt into the chat box.
 - Clicking on one of the suggestions from the "Stay on top" tab in some platforms (such as Microsoft365.com).
 
-Note that automated prompts are not included in this feature.
-
 ### What are the behaviors of All up last activity date and last activity date per app in user-level table?
 
-All up last activity date and last activity date per app are reflecting different narratives now. All up last activity date is reflecting the historical last activity date no matter what period is selected on the page, while last activity date per app is reflecting the last activity date within the selected time period; hence, if there is no activity in selected time period, the last activity date per app will be empty. We are planning to make them consistent to reflect the historical last activity date narrative and will provide update once it’s done.
+All up last activity date and last activity date per app are reflecting different narratives now. All up last activity date is reflecting the historical last activity date no matter what period is selected on the page, while last activity date per app is reflecting the last activity date within the selected time period; hence, if there's no activity in selected time period, the last activity date per app will be empty. We are planning to make them consistent to reflect the historical last activity date narrative and will provide update once it’s done.
 
 ### What's the difference between the user activity table and audit log?
 
@@ -213,8 +215,15 @@ The information captured in audit log records differs from that in [Microsoft 36
 
 ### Is Intelligent Recap usage in Teams is captured in [Usage reports](activity-reports.md), [Adoption Score](../adoption/adoption-score.md), and [Microsoft Copilot Dashboard](/viva/insights/org-team-insights/copilot-dashboard)?
 
- Not yet. [Roadmap ID #375760 Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=375760) states that feature Intelligent Recap in Teams has been available for Microsoft Copilot for Microsoft 365 users since Jan, 2024. However, telemetry is not captured in Usage reports, Adoption Score, and Microsoft Copilot Dashboard. We are working on bringing this feature into those products and will announce in Message Center once it’s available.
+ Not yet. [Roadmap ID #375760 Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=375760) states that feature Intelligent Recap in Teams has been available for Microsoft Copilot for Microsoft 365 users since January 2024. However, telemetry is not captured in Usage reports, Adoption Score, and Microsoft Copilot Dashboard. We are working on bringing this feature into those products and will announce in Message Center once it’s available.
 
-### What’s the scope of user-level table?
+### What’s the scope of the user-level table?
 
 The user-level table in the report is configured to show all users who were licensed for Copilot for Microsoft 365 at any point over the past 180 days, even if the user has since had the license removed or never had any Copilot active usage.
+
+### I assigned the Copilot for Microsoft 365 license to users, but why is 'last activity date' for users empty in rare cases?
+
+Based on system constraints, some users may not have a 'last activity date' in the user-level table of the report under the following conditions:
+
+1. The user used Copilot for Microsoft 365 within a short time window (less than 24 hours) after the Copilot for Microsoft 365 license was assigned.
+2. The user subsequently had no other Copilot for Microsoft 365 usage up to the date on which the report is viewed.

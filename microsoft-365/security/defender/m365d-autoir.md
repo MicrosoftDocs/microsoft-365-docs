@@ -1,12 +1,8 @@
 ---
 title: Automated investigation and response in Microsoft Defender XDR
 description: Get an overview of automated investigation and response capabilities, also called self-healing, in Microsoft Defender XDR
-keywords: automated, investigation, alert, trigger, action, remediation, self-healing
 search.appverid: met150
 ms.service: defender-xdr
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: 
 - NOCSH
 ms.author: diannegali

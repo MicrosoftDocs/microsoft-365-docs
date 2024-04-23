@@ -17,11 +17,10 @@ ms.collection:
   - tier2
 ms.custom:
 description: Learn about Threat Trackers, including new Noteworthy Trackers, to help your organization stay on top of security concerns.
-ms.subservice: mdo
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 ms.date: 3/19/2024
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison" target="_blank">Microsoft Defender for Office 365 plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
@@ -29,7 +28,7 @@ appliesto:
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-Microsoft 365 organizations that have [Microsoft Defender for Office 365 Plan 2](mdo-security-comparison.md#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet) included in their subscription or purchased as an add-on have _Threat trackers_. Threat trackers are queries that you create and save in [Threat Explorer (also known as Explorer)](threat-explorer-real-time-detections-about.md). You use these queries to automatically or manually discover cybersecurity threats in your organization.
+Microsoft 365 organizations that have [Microsoft Defender for Office 365 Plan 2](mdo-about.md#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet) included in their subscription or purchased as an add-on have _Threat trackers_. Threat trackers are queries that you create and save in [Threat Explorer (also known as Explorer)](threat-explorer-real-time-detections-about.md). You use these queries to automatically or manually discover cybersecurity threats in your organization.
 
 For information about creating and saving queries in Threat Explorer, see [Saved queries in Threat Explorer](threat-explorer-real-time-detections-about.md#saved-queries-in-threat-explorer).
 

@@ -37,7 +37,7 @@ If you also require Defender Antivirus support logs (MpSupportFiles.cab), then f
 
 3. Select **Upload file to library**.
 
-   :::image type="content" source="images/upload-file.png" alt-text="The upload file" lightbox="images/upload-file.png":::
+   :::image type="content" source="media/upload-file.png" alt-text="The upload file" lightbox="media/upload-file.png":::
 
 4. Select **Choose file**.
 

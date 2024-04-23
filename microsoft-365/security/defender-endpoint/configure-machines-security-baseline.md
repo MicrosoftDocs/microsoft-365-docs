@@ -51,7 +51,7 @@ Ideally, devices onboarded to Defender for Endpoint are deployed both baselines:
 
 The **Security baseline** card on [device configuration management](configure-machines.md) provides an overview of compliance across Windows 10 and Windows 11 devices that have been assigned the Defender for Endpoint security baseline.
 
-:::image type="content" source="images/secconmgmt_baseline_card.png" alt-text="The Security baseline card" lightbox="images/secconmgmt_baseline_card.png":::
+:::image type="content" source="media/secconmgmt-baseline-card.png" alt-text="The Security baseline card" lightbox="media/secconmgmt-baseline-card.png":::
 
 *Card showing compliance to the Defender for Endpoint security baseline*
 
@@ -78,22 +78,22 @@ Device configuration management monitors baseline compliance only of Windows 10 
 
 2. Create a new profile.
 
-   :::image type="content" source="images/secconmgmt_baseline_intuneprofile1.png" alt-text="The Create profile tab in the Microsoft Defender for Endpoint security baseline overview on Intune" lightbox="images/secconmgmt_baseline_intuneprofile1.png":::<br>
+   :::image type="content" source="media/secconmgmt-baseline-intuneprofile1.png" alt-text="The Create profile tab in the Microsoft Defender for Endpoint security baseline overview on Intune" lightbox="media/secconmgmt-baseline-intuneprofile1.png":::<br>
    *Microsoft Defender for Endpoint security baseline overview on Intune*
 
 3. During profile creation, you can review and adjust specific settings on the baseline.
 
-   :::image type="content" source="images/secconmgmt_baseline_intuneprofile2.png" alt-text="The Security baseline options during profile creation on Intune" lightbox="images/secconmgmt_baseline_intuneprofile2.png":::<br>
+   :::image type="content" source="media/secconmgmt-baseline-intuneprofile2.png" alt-text="The Security baseline options during profile creation on Intune" lightbox="media/secconmgmt-baseline-intuneprofile2.png":::<br>
    *Security baseline options during profile creation on Intune*
 
 4. Assign the profile to the appropriate device group.
 
-   :::image type="content" source="images/secconmgmt_baseline_intuneprofile3.png" alt-text="The Security baseline profiles on Intune" lightbox="images/secconmgmt_baseline_intuneprofile3.png":::<br>
+   :::image type="content" source="media/secconmgmt-baseline-intuneprofile3.png" alt-text="The Security baseline profiles on Intune" lightbox="media/secconmgmt-baseline-intuneprofile3.png":::<br>
    *Assigning the security baseline profile on Intune*
 
 5. Create the profile to save it and deploy it to the assigned device group.
 
-   :::image type="content" source="images/secconmgmt_baseline_intuneprofile4.png" alt-text="Assigning the security baseline on Intune" lightbox="images/secconmgmt_baseline_intuneprofile4.png":::<br>
+   :::image type="content" source="media/secconmgmt-baseline-intuneprofile4.png" alt-text="Assigning the security baseline on Intune" lightbox="media/secconmgmt-baseline-intuneprofile4.png":::<br>
    *Creating the security baseline profile on Intune*
 
 > [!TIP]

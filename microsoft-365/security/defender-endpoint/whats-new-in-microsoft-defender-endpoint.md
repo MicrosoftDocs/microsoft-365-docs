@@ -5,8 +5,9 @@ search.appverid: met150
 ms.service: defender-endpoint
 ms.author: siosulli
 author: siosulli
+ms.reviewer: noamhadash
 ms.localizationpriority: medium
-ms.date: 03/11/2024
+ms.date: 04/09/2024
 manager: deniseb
 audience: ITPro
 ms.collection: 
@@ -49,13 +50,15 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 - [What's new in Defender for Endpoint on Android](android-whatsnew.md)
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 
+## April 2024
 
-> [!TIP]
-> RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader:        > 
-> 
-> (/api/search/rss?search=%22features+are+generally+available+%28GA%29+in+the+latest+release+of+Microsoft+Defender+for+Endpoint%22&locale=en-us&facet=)
-> 
-> (/api/search/rss?search=%22features+are+generally+available+%28GA%29+in+the+latest+release+of+Microsoft+Defender+for+Endpoint%22&locale=en-us&facet=)
+**Microsoft Defender for Endpoint on macOS** feature now in GA:
+
+- **Troubleshooting mode for macOS** : Troubleshooting mode helps you identify instances where antivirus might be causing issues with your applications or system resources. To learn more, see [Troubleshooting mode in Microsoft Defender for Endpoint on macOS](mac-troubleshoot-mode.md).
+
+## (GA) March 2024
+
+**Built-in Scheduled scan for macOS**: For information on Scheduled Scan built-in for Microsoft Defender for Endpoint on macOS, see [How to schedule scans with Microsoft Defender for Endpoint on macOS](mac-schedule-scan.md)
 
 ## February 2024
 
@@ -78,11 +81,12 @@ Two new ASR rules are now in public preview:
    - Defender Boxed opens automatically when you go to the **Incidents** page in the Microsoft Defender portal. 
    - If you close Defender Boxed and you want to reopen it, in the Microsoft Defender portal, go to **Incidents**, and then select **Your Defender Boxed**.
    - Act quickly! Defender Boxed is available only for a short period of time.
+- (GA) [User Contain](https://www.microsoft.com/en-us/security/blog/2023/10/11/microsoft-defender-for-endpoint-now-stops-human-operated-attacks-on-its-own) can now contain compromised users automatically stopping Human Operated Ransomware in its track using [Automatic Attack Disruption](/microsoft-365/security/defender/automatic-attack-disruption).
 
 
 ## November 2023
 
-- [Microsoft Defender Core service](microsoft-defender-antivirus-windows.md#microsoft-defender-core-service) is now available for consumers and is planned to begin rolling out to enterprise customers in early 2024.
+- [Microsoft Defender Core service overview](microsoft-defender-core-service-overview.md) is now available for consumers and is planned to begin rolling out to enterprise customers in early 2024.
 - The [Microsoft Defender for Endpoint plug-in for Windows Subsystem for Linux (WSL)](/microsoft-365/security/defender-endpoint/mde-plugin-wsl) is now available in public preview.
 - Support for [mixed-license scenarios](defender-endpoint-subscription-settings.md) is now generally available in Defender for Endpoint.
 

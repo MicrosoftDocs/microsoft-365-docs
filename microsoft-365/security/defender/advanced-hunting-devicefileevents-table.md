@@ -1,14 +1,9 @@
 ---
 title: DeviceFileEvents table in the advanced hunting schema
 description: Learn about file-related events in the DeviceFileEvents table of the advanced hunting schema
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft Defender XDR, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, filecreationevents, DeviceFileEvents, files, path, hash, sha1, sha256, md5
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
 ms.subservice: adv-hunting
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: 
   - NOCSH
 ms.author: maccruz
@@ -20,7 +15,7 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: reference
-ms.date: 01/16/2024
+ms.date: 04/11/2024
 ---
 
 # DeviceFileEvents
@@ -57,9 +52,9 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `PreviousFileName` | `string` | Original name of the file that was renamed as a result of the action |
 | `FileSize` | `long` | Size of the file in bytes |
 | `InitiatingProcessAccountDomain` | `string` | Domain of the account that ran the process responsible for the event |
-| `InitiatingProcessAccountName` | `string` | User name of the account that ran the process responsible for the event |
+| `InitiatingProcessAccountName` | `string` | User name of the account that ran the process responsible for the event; if the device is registered in Microsoft Entra ID, the Entra ID user name of the account that ran the process responsible for the event might be shown instead |
 | `InitiatingProcessAccountSid` | `string` | Security Identifier (SID) of the account that ran the process responsible for the event |
-| `InitiatingProcessAccountUpn` | `string` | User principal name (UPN) of the account that ran the process responsible for the event |
+| `InitiatingProcessAccountUpn` | `string` | User principal name (UPN) of the account that ran the process responsible for the event; if the device is registered in Microsoft Entra ID, the Entra ID UPN of the account that ran the process responsible for the event might be shown instead |
 | `InitiatingProcessAccountObjectId` | `string` | Microsoft Entra object ID of the user account that ran the process responsible for the event |
 | `InitiatingProcessMD5` | `string` | MD5 hash of the process (image file) that initiated the event |
 | `InitiatingProcessSHA1` | `string` | SHA-1 of the process (image file) that initiated the event |

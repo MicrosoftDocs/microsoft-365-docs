@@ -66,7 +66,7 @@ Tamper protection helps protect certain [security settings](prevent-changes-to-s
 
 ## Turn tamper protection on (or off) in Microsoft Intune
 
-:::image type="content" source="images/turnontamperprotectinmem.png" alt-text="Turn tamper protection turned on with Intune" lightbox="images/turnontamperprotectinmem.png":::
+:::image type="content" source="media/turnontamperprotectinmem.png" alt-text="Turn tamper protection turned on with Intune" lightbox="media/turnontamperprotectinmem.png":::
 
 1. In the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Endpoint security** \> **Antivirus**, and then choose **+ Create Policy**.
 

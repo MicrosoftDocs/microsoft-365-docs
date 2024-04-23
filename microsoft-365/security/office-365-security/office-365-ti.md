@@ -2,8 +2,8 @@
 title: Threat investigation & response capabilities in Microsoft Defender for Office 365
 f1.keywords:
   - NOCSH
-ms.author: tracyp
-author: msfttracyp
+author: chrisda
+ms.author: chrisda
 manager: dansimp
 ms.date: 10/10/2023
 audience: Admin
@@ -19,22 +19,21 @@ ms.collection:
 ms.custom:
   - seo-marvel-apr2020
 description: Learn about threat investigation and response capabilities in Microsoft Defender for Office 365 Plan.
-ms.subservice: mdo
-ms.service: microsoft-365-security
+ms.service: defender-office-365
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison" target="_blank">Microsoft Defender for Office 365 plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-about#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 Plan 2</a>
 ---
 
 # Threat investigation and response
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-Threat investigation and response capabilities in [Microsoft Defender for Office 365](defender-for-office-365.md) help security analysts and administrators protect their organization's Microsoft 365 for business users by:
+Threat investigation and response capabilities in [Microsoft Defender for Office 365](mdo-about.md) help security analysts and administrators protect their organization's Microsoft 365 for business users by:
 
 - Making it easy to identify, monitor, and understand cyberattacks.
 - Helping to quickly address threats in Exchange Online, SharePoint Online, OneDrive for Business and Microsoft Teams.
 - Providing insights and knowledge to help security operations prevent cyberattacks against their organization.
-- Employing [automated investigation and response in Office 365](air-about-office.md) for critical email-based threats.
+- Employing [automated investigation and response in Office 365](air-about.md) for critical email-based threats.
 
 Threat investigation and response capabilities provide insights into threats and related response actions that are available in the Microsoft Defender portal. These insights can help your organization's security team protect users from email- or file-based attacks. The capabilities help monitor signals and gather data from multiple sources, such as user activity, authentication, email, compromised PCs, and security incidents. Business decision makers and your security operations team can use this information to understand and respond to threats against your organization and protect your intellectual property.
 
@@ -45,7 +44,7 @@ Threat investigation and response capabilities in the Microsoft Defender portal 
 - [Explorer](#explorer)
 - [Incidents](#incidents)
 - [Attack simulation training](attack-simulation-training-simulations.md)
-- [Automated investigation and response](air-about-office.md)
+- [Automated investigation and response](air-about.md)
 
 ### Explorer
 
@@ -77,7 +76,7 @@ To view and use this feature in the Microsoft Defender portal at <https://securi
 
 ### Automated investigation and response
 
-Use automated investigation and response (AIR) capabilities to save time and effort correlating content, devices, and people at risk from threats in your organization. AIR processes can begin whenever certain alerts are triggered, or when started by your security operations team. To learn more, see [automated investigation and response in Office 365](air-about-office.md).
+Use automated investigation and response (AIR) capabilities to save time and effort correlating content, devices, and people at risk from threats in your organization. AIR processes can begin whenever certain alerts are triggered, or when started by your security operations team. To learn more, see [automated investigation and response in Office 365](air-examples.md).
 
 ## Threat intelligence widgets
 
@@ -87,7 +86,7 @@ As part of the Microsoft Defender for Office 365 Plan 2 offering, security analy
 
 ## How do we get these capabilities?
 
-Microsoft 365 threat investigation and response capabilities are included in Microsoft Defender for Office 365 Plan 2, which is included in Enterprise E5 or as an add-on to certain subscriptions. To learn more, see [Defender for Office 365 Plan 1 and Plan 2](defender-for-office-365.md#whats-the-difference-between-microsoft-defender-for-office-365-plan-1-and-plan-2).
+Microsoft 365 threat investigation and response capabilities are included in Microsoft Defender for Office 365 Plan 2, which is included in Enterprise E5 or as an add-on to certain subscriptions. To learn more, see [Defender for Office 365 Plan 1 vs. Plan 2 cheat sheet](mdo-about.md#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet).
 
 ## Required roles and permissions
 

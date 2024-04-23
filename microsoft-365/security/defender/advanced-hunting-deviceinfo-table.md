@@ -1,14 +1,9 @@
 ---
 title: DeviceInfo table in the advanced hunting schema
 description: Learn about OS, computer name, and other machine information in the DeviceInfo table of the advanced hunting schema
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft Defender XDR, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, machineinfo, DeviceInfo, device, machine, OS, platform, users
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
 ms.subservice: adv-hunting
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: 
   - NOCSH
 ms.author: maccruz
@@ -78,6 +73,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `DeviceDynamicTags` | `string` | Device tags added and removed dynamically based on dynamic rules |
 | `ConnectivityType` | `string` | Type of connectivity from the device to the cloud |
 | `HostDeviceId` | `string` | Device ID of the device running Windows Subsystem for Linux |
+| `AzureResourceId` | `string` | Unique identifier of the Azure resource associated with the device |
 
 
 
