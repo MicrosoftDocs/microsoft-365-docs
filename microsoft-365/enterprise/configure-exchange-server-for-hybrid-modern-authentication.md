@@ -59,12 +59,14 @@ Requirements about linked mailboxes to be inserted.
 
 6. Ensure that the [Exchange Server OAuth certificate](/exchange/plan-and-deploy/integration-with-sharepoint-and-skype/maintain-oauth-certificate) is valid
 
-7. Enable HMA in EXCH.
+7. Ensure that all user identities are synchronized with Microsoft Entra ID
+
+8. Enable HMA in EXCH.
 
 > [!NOTE]
 > Does your version of Office support MA? See [How modern authentication works for Office 2013 and Office 2016 client apps](modern-auth-for-office-2013-and-2016.md).
 
-> [!NOTE]
+> [!WARNING]
 > Publishing Outlook Web App and Exchange Control Panel through Microsoft Entra application proxy is unsupported.
 
 <a name='add-on-premises-web-service-urls-as-spns-in-azure-ad'></a>
@@ -104,7 +106,7 @@ Run the commands that assign your on-premises web service URLs as Microsoft Entr
    Get-MgServicePrincipal -Filter "AppId eq '00000002-0000-0ff1-ce00-000000000000'" | select -ExpandProperty ServicePrincipalNames
    ```
 
-   Take note of (and screenshot for later comparison) the output of this command, which should include an `https://*autodiscover.yourdomain.com*` and `https://*mail.yourdomain.com*` URL, but mostly consist of SPNs that begin with `00000002-0000-0ff1-ce00-000000000000/`. If there are `https://` URLs from your on-premises that are missing, those specific records should be added to this list.
+   Take a note of (and screenshot for later comparison) the output of this command, which should include an `https://*autodiscover.yourdomain.com*` and `https://*mail.yourdomain.com*` URL, but mostly consist of SPNs that begin with `00000002-0000-0ff1-ce00-000000000000/`. If there are `https://` URLs from your on-premises that are missing, those specific records should be added to this list.
 
 5. If you don't see your internal and external `MAPI/HTTP`, `EWS`, `ActiveSync`, `OAB`, and `Autodiscover` records in this list, you must add them. Use the following command to add all URLs that are missing:
 
@@ -196,7 +198,7 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 
 Once you enable HMA, a client's next sign in will use the new auth flow. Just turning on HMA won't trigger a reauthentication for any client, and it might take a while for Exchange to pick up the new settings.
 
-You should also hold down the CTRL key at the same time you right-click the icon for the Outlook client (also in the Windows Notifications tray) and select **Connection Status**. Look for the client's SMTP address against an **Authn** type of `Bearer\*`, which represents the bearer token used in OAuth.
+You should also hold down the CTRL key at the same time you right-click the icon for the Outlook client (also in the Windows Notifications tray) and select **Connection Status**. Look for the client's SMTP address against an **AuthN** type of `Bearer\*`, which represents the bearer token used in OAuth.
 
 > [!NOTE]
 > Need to configure Skype for Business with HMA? You'll need two articles: One that lists [supported topologies](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported), and one that shows you [how to do the configuration](configure-skype-for-business-for-hybrid-modern-authentication.md).
@@ -213,6 +215,8 @@ To enable Hybrid Modern Authentication for `OWA` and `ECP`, all user identities 
 In addition to this it's important that OAuth setup between Exchange Server on-premises and Exchange Online has been established before further configuration steps can be done.
 
 Customers who have already run the Hybrid Configuration Wizard (HCW) to configure hybrid, will have an OAuth configuration in place. If OAuth was not configured before, it can be done by running the HCW or by following the steps as outlined in the [Configure OAuth authentication between Exchange and Exchange Online organizations](/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help) documentation.
+
+It is recommended to document the `OwaVirtualDirectory` and `EcpVirtualDirectory` settings before making any changes. This documentation will enable you to restore the original settings if any issues arise after configuring the feature.
 
 > [!IMPORTANT]
 > All servers must have at least the [Exchange Server 2019 CU14](https://techcommunity.microsoft.com/t5/exchange-team-blog/released-2024-h1-cumulative-update-for-exchange-server/ba-p/4047506) update installed. They must also run the [Exchange Server 2019 CU14 April 2024 HU](https://support.microsoft.com/help/5037224) or a later update.
@@ -262,7 +266,7 @@ Customers who have already run the Hybrid Configuration Wizard (HCW) to configur
 
 7. To enable Exchange Server on-premises ability to perform Hybrid Modern Authentication, follow the steps outlined in the [Enable HMA](#enable-hma) section.
 
-8. (Optional) Only required if [Download Domains](/exchange/plan-and-deploy/post-installation-tasks/security-best-practices/exchange-download-domains) are used:
+8. **(Optional)** Only required if [Download Domains](/exchange/plan-and-deploy/post-installation-tasks/security-best-practices/exchange-download-domains) are used:
 
 
    Create a new global setting override by running the following commands from an elevated Exchange Management Shell (EMS). Run these commands on one Exchange Server:
@@ -273,7 +277,7 @@ Customers who have already run the Hybrid Configuration Wizard (HCW) to configur
    Restart-Service -Name W3SVC, WAS -Force
    ```
 
-9. (Optional) Only required in [Exchange resource forest topology](/exchange/deploy-exchange-2013-in-an-exchange-resource-forest-topology-exchange-2013-help) scenarios:
+9. **(Optional)** Only required in [Exchange resource forest topology](/exchange/deploy-exchange-2013-in-an-exchange-resource-forest-topology-exchange-2013-help) scenarios:
 
    Add the following keys to the `<appSettings>` node of the `<ExchangeInstallPath>\ClientAccess\Owa\web.config` file. Do this on each Exchange Server:
 
@@ -295,7 +299,7 @@ Customers who have already run the Hybrid Configuration Wizard (HCW) to configur
       > [!IMPORTANT]
       > It's important to execute these commands in the given order. Otherwise, you'll see an error message when running the commands. After running these commands, login to `OWA` and `ECP` will stop work until the OAuth authentication for those virtual directories has been activated.
       >
-      > Also make sure that the accounts used for administration are synchronized to Microsoft Entra ID. Otherwise the login will stop work until they are synchronized.
+      > Also, make sure that all accounts are synchronized, especially the accounts used for administration to Microsoft Entra ID. Otherwise, the login will stop working until they are synchronized. Note that accounts, such as the built-in Administrator, won’t be synchronized with Microsoft Entra ID and, therefore, can’t be used for administration once HMA for OWA and ECP has been enabled. This is due to the `isCriticalSystemObject` attribute, which is set to `TRUE` for some accounts.
 
       ```powershell
       Get-OwaVirtualDirectory -Server <computername> | Set-OwaVirtualDirectory -AdfsAuthentication $false –BasicAuthentication $false –FormsAuthentication $false –DigestAuthentication $false
