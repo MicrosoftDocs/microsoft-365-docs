@@ -59,7 +59,7 @@ Follow these steps to automatically generate documents using a modern template a
 
 9. To generate a PDF file using this action, provide **.pdf** as the extension in the file name.
 
-10. Whenever a template consists of a table placeholder, that field has all the column names in the suggestion as shown in the **Risks** field.
+10. Whenever a template consists of a table placeholder, that field has all the column names in the suggestion shown in the **Risks** field.
 
     To fill the table, placeholder values should be passed as a list of JSON objects with column name and values. For example:
 
