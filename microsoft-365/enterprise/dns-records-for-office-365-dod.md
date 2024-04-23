@@ -14,7 +14,6 @@ ms.collection:
 ms.custom:
   - Adm_O365
   - has-azure-ad-ps-ref
-  - azure-ad-ref-level-one-done
 search.appverid:
 - OGA150
 - OGC150
@@ -31,9 +30,8 @@ hideEdit: true
 
 As part of onboarding to Office 365 DoD, you need to add your SMTP and SIP domains to your Online Services tenant. You do this using the New-MsolDomain cmdlet in Azure AD PowerShell or use the [Azure Government Portal](https://portal.azure.us) to start the process of adding the domain and proving ownership.
 
+Once you have your domains added to your tenant and validated, use the following guidance to add the appropriate DNS records for the services. You might need to modify the below table to fit your organization’s needs with respect to the inbound MX record(s) and any existing Exchange Autodiscover records you have in place. We strongly recommend coordinating these DNS records with your messaging team to avoid any outages or mis-delivery of email.
 [!INCLUDE [Azure AD PowerShell deprecation note](~/../microsoft-365/reusable-content/msgraph-powershell/includes/aad-powershell-deprecation-note.md)]
-
-Once you have your domains added to your tenant and validated, use the following guidance to add the appropriate DNS records for the services below. You may need to modify the below table to fit your organization’s needs with respect to one or more inbound MX records and any existing Exchange Autodiscover records you have in place. We strongly recommend coordinating these DNS records with your messaging team to avoid any outages or mis-delivery of email.
 
 ## Exchange Online
 
@@ -49,7 +47,7 @@ If you have Exchange Server on-premises, we recommend leaving your existing reco
 
 ### Exchange Online MX Record
 
-The MX record value for your accepted domains follows a standard format as noted above: *tenant*.mail.protection.office365.us, replacing *tenant* with the first part of your default tenant name.
+The MX record value for your accepted domains follows a standard format as noted previously: *tenant*.mail.protection.office365.us, replacing *tenant* with the first part of your default tenant name.
 
 For example, if your tenant name is contoso.onmicrosoft.us, you’d use **contoso.mail.protection.office365.us** as the value for your MX record.
 

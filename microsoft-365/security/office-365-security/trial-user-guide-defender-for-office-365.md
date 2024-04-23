@@ -141,8 +141,6 @@ Defender for Office 365 enables you to investigate activities that put people in
 - [Find suspicious email that was delivered](threat-explorer-investigate-delivered-malicious-email.md#find-suspicious-email-that-was-delivered): Find and delete messages, identify the IP address of a malicious email sender, or start an incident for further investigation.
 - [Email security scenarios in Threat Explorer and Real-time detections](threat-explorer-threat-hunting.md#email-security-scenarios-in-threat-explorer-and-real-time-detections)
 
-<!--- - [View the timeline of your email](threat-explorer-investigate-delivered-malicious-email.md#view-the-timeline-of-your-email): Simply hunting for your security operations team. --->
-
 #### See campaigns targeting your organization
 
 See the bigger picture with Campaign Views in Defender for Office 365, which gives you a view of the attack campaigns targeting your organization and the impact they have on your users.
@@ -159,7 +157,7 @@ Watch this video to learn more: [Campaign Views in Microsoft Defender for Office
 
 Respond efficiently using Automated investigation and response (AIR) to review, prioritize, and respond to threats.
 
-- [Learn more](air-about-office.md) about investigation user guides.
+- [Learn more](air-examples.md) about investigation user guides.
 - [View details and results](email-analysis-investigations.md) of an investigation.
 - Eliminate threats by [approving remediation actions](air-remediation-actions.md).
 
@@ -222,8 +220,6 @@ Defender for Office 365 enables you to investigate activities that put people in
 
 - [Find suspicious email that was delivered](threat-explorer-investigate-delivered-malicious-email.md#find-suspicious-email-that-was-delivered): Find and delete messages, identify the IP address of a malicious email sender, or start an incident for further investigation.
 - [Email security scenarios in Threat Explorer and Real-time detections](threat-explorer-threat-hunting.md#email-security-scenarios-in-threat-explorer-and-real-time-detections)
-
-<!--- - [View the timeline of your email](threat-explorer-investigate-delivered-malicious-email.md#view-the-timeline-of-your-email): Simply hunting for your security operations team. --->
 
 #### Convert to Standard Protection at the end of evaluation period
 

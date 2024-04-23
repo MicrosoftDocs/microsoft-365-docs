@@ -5,9 +5,9 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 01/17/2024
+ms.date: 04/15/2024
 ms.topic: conceptual
-ms.service: microsoft-syntex
+ms.service: microsoft-365-backup
 ms.custom: backup
 search.appverid:
 ms.collection:
@@ -43,9 +43,9 @@ Performance and speed of web interfaces, initial configuration, and restores mig
 - The rule-based feature for bulk addition of user accounts via security groups or distribution lists can accommodate a maximum of three groups at a time. These rules are static and applied one time only. That is, the security groups or distribution lists are flattened at the time of adding to the backup configuration policy. Groups or list won't be dynamically updated in the system if users are added or removed from the original security group, for example.
 
 - Backup and restore of tenants that have the multi-geo feature enabled for OneDrive and SharePoint might not work properly. We recommend not using the preview version of Backup until multi-geo support is fully enabled.
-<!---
-- When you remove a OneDrive for Business account or a SharePoint site from a backup policy, you continue to be billed for the existing backups for the next one year of their retention. Additionally, the price of that backup will be proportional to the size of the site or account throughout that remaining year.
---->
+
+- Backing up a parent site won't back up the channel sites.
+
 ### Restore
 
 - Site search is case-sensitive and is a prefix-type search.
@@ -86,7 +86,7 @@ Performance and speed of web interfaces, initial configuration, and restores mig
 
 - The multi-geo feature isn't supported for SharePoint or OneDrive services in this release. This might affect the restore of sites across different geos. Exchange Online multi-geo is supported, however, when configuring a restore each mailbox in a single restore request must be in the same geo.
 
-- OneDrive accounts and SharePoint sites that have undergone the following types of changes won't be undoable via restore: tenant rename, tenant move, and site URL change.  
+- OneDrive accounts and SharePoint sites that undergoes the following types of changes won't be undoable via restore: tenant rename, tenant move, and site URL change.  
 
 - If there are no differences between the current state of a mailbox and the prior point in time from which you're attempting a restore, a restore isn't performed and no new folders are created when a "restore to a new location" request is made. We don't plan to modify this behavior in the future.
 

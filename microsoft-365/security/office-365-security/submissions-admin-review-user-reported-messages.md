@@ -89,8 +89,8 @@ To customize the notification email, see the next section.
 3. Find the **Email notifications** section and configure one or more of the following settings:
 
    - **Results email** section: Select **Customize results email**. In the **Customize admin review email notifications** flyout that opens, configure the following settings on the **Phishing**, **Junk** and **No threats found** tabs:
-    - **Email body results text**: Enter the custom text to use. You can use different text for **Phishing**, **Junk** and **No threats found**.
-    - **Email footer text**: Enter the custom message footer text to use. The same text is used for **Phishing**, **Junk** and **No threats found**.
+     - **Email body results text**: Enter the custom text to use. You can use different text for **Phishing**, **Junk** and **No threats found**.
+     - **Email footer text**: Enter the custom message footer text to use. The same text is used for **Phishing**, **Junk** and **No threats found**.
 
      When you're finished in the **Customize admin review email notifications** flyout, select **Confirm** to return to the **User reported settings** page.
 

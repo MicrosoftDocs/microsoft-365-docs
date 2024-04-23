@@ -5,9 +5,9 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 01/17/2024
+ms.date: 04/11/2024
 ms.topic: conceptual
-ms.service: microsoft-syntex
+ms.service: microsoft-365-backup
 ms.custom: backup
 search.appverid:
 ms.collection:
@@ -140,6 +140,8 @@ Amount of storage used at the start of at the start of the period and at the end
 Number of total and active user mailboxes at the start of the period and at the end of the period. For example, 26 mailboxes and 30 mailboxes:
 
 ![Screenshot showing the number of total and active user mailboxes for Exchange.](../media/m365-backup/backup-exchange-mailbox-total.png)
+
+This example does not show archive mailboxes, but any archive mailbox size will count towards your backup storage.
 
 ##### Storage
 

@@ -5,9 +5,9 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 01/17/2024
+ms.date: 04/11/2024
 ms.topic: conceptual
-ms.service: microsoft-syntex
+ms.service: microsoft-365-backup
 ms.custom: backup
 search.appverid:
 ms.collection:
@@ -100,7 +100,7 @@ The following table summarizes expected performance for a normally distributed t
 
 |Scenario |Restore of all protection units* complete |
 |:-------|:--------|
-| 1,000 accounts, sites, or mailboxes<br>(30-GB average size)  |Less than 12 hours  |
+| 1,000 accounts, sites, or mailboxes<br>(10-GB average size)  |Less than 12 hours  |
 
 <sup>*A *protection unit* is a OneDrive account, SharePoint site, or Exchange mailbox.</sup>
 
