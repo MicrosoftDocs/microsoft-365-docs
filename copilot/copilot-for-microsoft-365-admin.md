@@ -48,48 +48,48 @@ With Copilot for Microsoft 365 admin, you can:
 
 As an example, check out these prompts:
 
-- “Show me users in Australia with Teams license assigned”
-- “Identify all groups in my organization without an owner”
-- “Identify all users who are unlicensed"
+- "Show me users in Australia with Teams license assigned"
+- "Identify all groups in my organization without an owner"
+- "Identify all users who are unlicensed"
 
 **Navigate** to different pages, features, and experiences within the admin center. Copilot provides a breadcrumb trail and direct link to your desired page.
 
 Examples:
 
-- “Where do I manage integrated apps”
-- “Where do I manage roles”
+- "Where do I manage integrated apps"
+- "Where do I manage roles"
 
 **Get support** for any challenges or questions that you have related to administering Microsoft 365 for your tenant.
 
 Examples:
 
-- “How do I view my bill?”
-- “How do I set up Multi-factor Authentication?”
+- "How do I view my bill?"
+- "How do I set up Multi-factor Authentication?"
 
 Provide **deployment guidance** for setting up and managing various aspects of identity and security within the tenant.
 
 Examples:
 
-- “What is the status of my security defaults?”
-- “What is the identity user status in my org?”
+- "What is the status of my security defaults?"
+- "What is the identity user status in my org?"
 
-**Surface general status** of Microsoft services, tenant health status, health advice and recommendations.
+**Surface general status** of Microsoft services, tenant health status, health advice, and recommendations.
 
 Examples:
 
-- "Are there any service issues right now?”
-- “Show me health of teams”
+- "Are there any service issues right now?"
+- "Show me health of teams"
 
 **Marketplace navigation** to help admins discover, trial, or purchase solutions and take advantage of value from Microsoft 365.
 
 Examples:
 
-- “Tell me about Microsoft Business Premium”
-- “I want to buy Visio”
+- "Tell me about Microsoft Business Premium"
+- "I want to buy Visio"
 
-During the preview, use the pre-populated prompt options in the Copilot pane for the best results.
+During the preview, use the prepopulated prompt options in the Copilot pane for the best results.
 
-To maintain your security and privacy, Copilot won't make any configuration changes on behalf of you. To learn more about security and privacy with Copilot, see [Data, Privacy, and Security for Microsoft 365 Copilot](microsoft-365-copilot-privacy.md).
+To maintain your security and privacy, Copilot doesn't make any configuration changes on your behalf. To learn more about security and privacy with Copilot, see [Data, Privacy, and Security for Microsoft 365 Copilot](microsoft-365-copilot-privacy.md).
 
 ## Frequently Asked Questions
 
@@ -99,7 +99,7 @@ In preview, Copilot is automatically enabled for select customers who have purch
 
 ### Which admin roles can use Copilot for Microsoft 365 admin?
 
-It will be available to all admins, and respect role-based access controls (RBAC) within the admin center, only surfacing information and controls that the particular admin has access to. Copilot won't make any configuration changes on behalf of an admin, keeping security integrity intact.
+It will be available to all admins, and respect role-based access controls (RBAC) within the admin center, only surfacing information and controls that the particular admin has access to. Copilot doesn't make any configuration changes on behalf of an admin, keeping security integrity intact.
 
 ### Are there differences with how Copilot treats prompts from the admin center or admin vs. Users?
 
