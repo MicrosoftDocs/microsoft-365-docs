@@ -36,7 +36,7 @@ ID | Category | ER | Addresses | Ports
 10 | Allow<BR>Required | No | `*.partner.microsoftonline.cn`<BR>`103.9.8.0/22` | **TCP:** 443, 80
 11 | Default<BR>Required | No | `activation.sls.microsoft.com, crl.microsoft.com, odc.officeapps.live.com, officecdn.microsoft.com, officeclient.microsoft.com` | **TCP:** 443, 80
 13 | Default<BR>Required | No | `*.msauth.cn, *.msauthimages.cn, *.msftauth.cn, *.msftauthimages.cn, login.microsoftonline.com` | **TCP:** 443, 80
-15 | Default<BR>Required | No | `loki.office365.cn` | **TCP:** 443
+15 | Default<BR>Required | No | `loki.office365.cn`,`partner.outlook.cn` | **TCP:** 443
 16 | Default<BR>Required | No | `*.cdn.office.net, shellprod.msocdn.com` | **TCP:** 443
 17 | Allow<BR>Required | No | `*.auth.microsoft.cn, login.partner.microsoftonline.cn, microsoftgraph.chinacloudapi.cn`<BR>`40.72.70.0/23, 52.130.2.32/27, 52.130.3.64/27, 52.130.17.192/27, 52.130.18.32/27, 2406:e500:5500::/48` | **TCP:** 443, 80
 18 | Default<BR>Optional<BR>**Notes:** If using Exchange Online, follow Allow category guidance for *.protection.partner.outlook.cn | No | `*.aadrm.cn, *.protection.partner.outlook.cn` | **TCP:** 443
