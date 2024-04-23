@@ -17,6 +17,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - m365copilot
+- magic-ai-copilot
 - essentials-get-started
 description: "Learn how to prepare your organization for Microsoft Copilot for Microsoft 365."
 ---
