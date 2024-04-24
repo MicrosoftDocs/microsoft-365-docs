@@ -17,6 +17,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - m365copilot
+- magic-ai-copilot
 description: "Learn about the requirements for Microsoft Copilot for Microsoft 365."
 ---
 
