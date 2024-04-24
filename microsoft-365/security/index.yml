@@ -69,7 +69,7 @@ conceptualContent:
         links:
          - url: /microsoftteams/teams-security-guide
            itemType: overview
-           text: Teams Security guide
+           text: Security and Microsoft Teams
 
   # Card
       - title: Microsoft SharePoint and Microsoft OneDrive
