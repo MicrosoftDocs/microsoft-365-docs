@@ -109,6 +109,8 @@ additionalContent:
         # Card
         - title: Enable Copilot in Viva
           links:
+            - text: Microsoft Copilot Dashboard in Viva Insights
+              url: /viva/insights/org-team-insights/copilot-dashboard
             - text: Set up Copilot in Viva Engage
               url: /viva/engage/configure-copilot-for-engage
             - text: Enable Copilot in Viva Goals
