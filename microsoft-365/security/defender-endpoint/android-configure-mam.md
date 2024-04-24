@@ -170,18 +170,18 @@ Web protection helps to secure devices against web threats and protect users fro
 
 2. Provide a name and description to uniquely identify the policy. Target the policy to **'Selected apps'** and search for **'Microsoft Defender Endpoint for Android'**. Click the entry and then click **Select** and then **Next**.
 
-3. Add the key and value from the following table. Ensure that the **"DefenderMAMConfigs"** key is present in every policy that you create using Managed Apps route. For Managed Devices route, this key shouldn't exist. When you're done, click **Next**.
+1. Add the key and value from the following table. Ensure that the **"DefenderMAMConfigs"** key is present in every policy that you create using Managed Apps route. For Managed Devices route, this key shouldn't exist. When you're done, click **Next**.
 
    | Key | Value Type | Default (true-enable, false-disable) | Description |
    | --- | --- | --- | --- |
-   | `DefenderNetworkProtectionEnable` | Integer | 0 | 1 - Enable , 0 - Disable ; This setting is used by IT admins to enable or disable the network protection capabilities in the defender app|
-   |`DefenderAllowlistedCACertificates`| String | None | None-Disable; This setting is managed by an admin to establish trust for root CA and self signed certificates.|
-   |`DefenderCertificateDetection`|Integer| 1 |0 - Disable , 1 - Audit mode , 2 - Enable ; When network protection is enabled, Audit mode for certificate detection is enabled by default. In audit mode, notification alerts are sent to SOC admins, but no end user notifications are displayed to the user when Defender detects a bad certificate. Admins can disable this detection with 0 as the value and enable full feature functionality by setting 2 as the value. When this feature is enabled with value as 2, end user notifications are sent to the user when Defender detects a bad certificate. Alerts are also sent to SOC Admins. |
-   | `DefenderOpenNetworkDetection` | Integer | 0 | 1 - enable, 0 - disable; This setting is managed by IT Admins to enable or disable open network detection informational alerts with no end user detection experience. |
-   | `DefenderEndUserTrustFlowEnable` | String | false | true - enable, false - disable; This setting is used by IT admins to enable or disable the end user in-app experience to trust and untrust the unsecure and suspicious networks. |
-   | `DefenderNetworkProtectionAutoRemediation` | String | true | true - enable, false - disable; This setting is used by the IT admin to enable or disable the remediation alerts that are sent when a user performs remediation activities like switching to safer Wi-Fi access points or deleting suspicious certificates detected by Defender. |
-   | `DefenderNetworkProtectionPrivacy` | String | true | true - enable, false - disable; This setting is managed by IT admins to enable or disable privacy in network protection. |
-
+   | `DefenderNetworkProtectionEnable` | Integer | 0 | 1 - Enable, 0 - Disable; This setting is used by IT admins to enable or disable the network protection capabilities in the defender app.|
+   |`DefenderAllowlistedCACertificates`| String | None | None-Disable; This setting is used by IT admins to establish trust for root CA and self-signed certificates.|
+   |`DefenderCertificateDetection`|Integer| 0 |2-Enable, 1 - Audit mode, 0 - Disable; When this feature is enabled with value as 2, end user notifications are sent to the user when Defender detects a bad certificate. Alerts are also sent to SOC Admins. In audit mode (1), notification alerts are sent to SOC admins, but no end user notifications are displayed to the user when Defender detects a bad certificate. Admins can disable this detection with 0 as the value and enable full feature functionality by setting 2 as the value.  |
+   | `DefenderOpenNetworkDetection` | Integer | 0 |2-Enable, 1 - Audit mode, 0 - Disable; This setting is used by IT Admins to enable or disable open network detection. By default, the open network detection is disabled with value as 0 and defender does not send end user notifications or alerts to SOC admins in security portal. If switched to audit mode with value 1, notification alert is sent to SOC admin, but no end user notification is displayed to the user when defender detects an open network. If it's enabled with value 2, then end user notification is displayed and also alerts to SOC admins is sent.|
+   | `DefenderEndUserTrustFlowEnable` | Integer | 0 | 1 - Enable, 0 - Disable; This setting is used by IT admins to enable or disable the end user in-app experience to trust and untrust the unsecure and suspicious networks. |
+   | `DefenderNetworkProtectionAutoRemediation` | Integer | 1 | 1 - Enable, 0 - Disable; This setting is used by IT admins to enable or disable the remediation alerts that are sent when a user performs remediation activities like switching to safer Wi-Fi access points or deleting suspicious certificates detected by Defender. |
+   | `DefenderNetworkProtectionPrivacy` | Integer | 1 | 1 - Enable, 0 - Disable; This setting is used by IT admins to enable or disable privacy in network protection. If privacy is disabled with value 0, then user consent is shown to share the malicious wifi or certs data. If its in enabled state with value 1, then no user consent is shown and no app data is collected.|
+   
 4. Include or exclude the groups you want the policy to apply to. Proceed to review and submit the policy.
 
 > [!NOTE]
@@ -298,6 +298,7 @@ Use the following steps to configure the Device tags:
 ## Related topics
 
 - [Overview of Microsoft Defender for Endpoint on Android](microsoft-defender-endpoint-android.md)
+
 - [Deploy Microsoft Defender for Endpoint on Android with Microsoft Intune](android-intune.md)
 
 
