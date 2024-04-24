@@ -20,14 +20,14 @@ description: In this article, learn how to expand your Microsoft 365 presence to
 
 The Microsoft 365 Multi-Geo Capabilities add-on provides Enterprise Agreement customers with the ability to expand their Microsoft 365 presence to multiple geographic regions within a single existing Microsoft 365 _Tenant_. Multi-Geo enables customers to manage data-at-rest locations at a granular level for their users, SharePoint sites, Microsoft 365 Groups, and Microsoft Teams teams level. Multi-Geo is targeted to customers who have a need to store data in multiple geographies to satisfy their data residency requirements.
   
-Starting June 1, 2023, CSP partners can purchase Multi-Geo Capabilities for their customers who are using Microsoft 365, Office 365, Exchange, OneDrive and SharePoint subscriptions. With Microsoft 365 Multi-Geo, CSP partners will be able to ensure their customers meet their data residency requirements.    
+Starting June 1, 2023, CSP partners can purchase Multi-Geo Capabilities for their customers who are using Microsoft 365, Office 365, Exchange, OneDrive and SharePoint subscriptions. With Microsoft 365 Multi-Geo, CSP partners will be able to ensure their customers meet their data residency requirements.
   
 Microsoft 365 Multi-Geo is designed to meet your data residency requirements while retaining single-tenant administration and full-fidelity collaboration experiences between users as necessary.
 
-If a customer requires performance optimization functionalities for Microsoft 365, see <a href="https://support.office.com/article/e5f1228c-da3c-4654-bf16-d163daee8848" target="_blank">Network planning and performance tuning for Microsoft 365</a> or contact your support group.
+If a customer requires performance optimization functionalities for Microsoft 365, see [Network planning and performance tuning for Microsoft 365](network-planning-and-performance.md) or contact your support group.
 
->[!NOTE]
->Exchange Online, SharePoint, OneDrive, and Microsoft Teams are available for Multi-Geo configuration. For more information about data residency commitments, see [Exchange Online](m365-dr-workload-exo.md), [SharePoint and OneDrive](m365-dr-workload-spo.md), and [Microsoft Teams](m365-dr-workload-teams.md#data-residency-commitments-available) for more details.
+> [!NOTE]
+> Exchange Online, SharePoint, OneDrive, and Microsoft Teams are available for Multi-Geo configuration. For more information about data residency commitments, see [Exchange Online](m365-dr-workload-exo.md), [SharePoint and OneDrive](m365-dr-workload-spo.md), and [Microsoft Teams](m365-dr-workload-teams.md#data-residency-commitments-available) for more details.
 
 For a video introduction to Microsoft 365 Multi-Geo, see [SharePoint and OneDrive Multi-Geo to control where your data resides](https://www.youtube.com/watch?v=Do9U3JuROhk).
 
@@ -49,7 +49,7 @@ Enterprise Agreement customers must purchase a quantity of Multi-Geo licenses eq
 - Standalone OneDrive Plan 1 or Plan 2
 - Standalone SharePoint Plan 1 or Plan 2
 
-***Note that Small Business products do not currently qualify for Multi-Geo, even if they contain elements of the above list.***
+**Note that Small Business products do not currently qualify for Multi-Geo, even if they contain elements of the above list.**
 
 Note that _Multi-Geo Capabilities in Microsoft 365_ is a user-level add-on license. You need a license for each user that you want to host in a _Satellite Geography_ location. You can add more licenses over time as you add users in _Satellite Geography_ locations.
 
@@ -61,11 +61,15 @@ Microsoft 365 Multi-Geo is currently offered in these regions:
 
 [!INCLUDE [Microsoft 365 Multi-Geo locations](../includes/microsoft-365-multi-geo-locations.md)]
 
+To learn more about the definition of each region such as what countries or cities contain the datacenters, see [Overview and Definitions](m365-dr-overview.md).
+
+If you utilize Microsoft Purview eDiscovery Standard or Premium, see [Microsoft 365 Multi-Geo eDiscovery configuration](multi-geo-ediscovery-configuration.md) and [Set up compliance boundaries for eDiscovery investigations](https://learn.microsoft.com/en-us/purview/ediscovery-set-up-compliance-boundaries?view=o365-worldwide&source=docs#searching-and-exporting-content-in-multi-geo-environments) for additional information on region usage and data storage as it relates to Microsoft Purview eDiscovery.
+
 ## Getting started
 
 Whether you're a CSP partner managing your customer’s Microsoft 365 subscriptions or an Enterprise Agreement customer managing your own subscriptions, you can follow these steps to get started with Multi-Geo:
 
-1. Ensure that you purchase Multi-Geo for at least 5% of the total eligible users in your Microsoft 365 subscription. Remember that you'll need a license for each user you want to host in a _Satellite Geography_ location. 
+1. Ensure that you purchase Multi-Geo for at least 5% of the total eligible users in your Microsoft 365 subscription. Remember that you'll need a license for each user you want to host in a _Satellite Geography_ location.
 
 2. Before you can start using Microsoft 365 Multi-Geo, Microsoft needs to configure your _Tenant_ for Multi-Geo support. This one-time automatic configuration process is triggered after you order the _Multi-Geo Capabilities in Microsoft 365_ and the licenses show up in your _Tenant_. You'll receive workload-specific notifications in the [Microsoft 365 message center](https://support.office.com/article/38FB3333-BFCC-4340-A37B-DEDA509C2093) once the _Tenant_ has completed the configuration process for each workload, and then you may begin configuring and using your Microsoft 365 Multi-Geo capabilities. The time required to configure a _Tenant_ for Multi-Geo support varies from _Tenant_ to _Tenant_, but most _Tenants_ finish within a month after receipt of the feature licenses. Larger or more complex _Tenants_ may require more time to complete the configuration process.
 
