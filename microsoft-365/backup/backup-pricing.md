@@ -141,6 +141,8 @@ Number of total and active user mailboxes at the start of the period and at the 
 
 ![Screenshot showing the number of total and active user mailboxes for Exchange.](../media/m365-backup/backup-exchange-mailbox-total.png)
 
+This example does not show archive mailboxes, but any archive mailbox size will count towards your backup storage.
+
 ##### Storage
 
 Amount of storage used at the start of the period and at the end of the period. For example, 5.5 GB and 4.3 GB:
