@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: taylorau
-ms.date: 04/19/2024
+ms.date: 04/24/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -72,13 +72,19 @@ To access the Lighthouse permissions page and manage permissions, you must be a 
 1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Permissions** > **Lighthouse permissions**.
 
 2. Select a Lighthouse role from the list to open the Lighthouse role details pane.
+ 
+3. Select **Update security group**.
 
-3. Do one of the following:
-    - Select **Use an existing security group**, select the security group from the list, and then select **Save**.
+4. Do one of the following:
+    - Select **Use an existing security group**, select a security group from the list, and then select **Save**.
     - Select **Create a new security group**, enter a name for the new group, optionally enter a description and add users, and then select **Save**.
 
 > [!NOTE]
-> You must assign the Lighthouse RBAC Administrator role to a role-assignable security group, and each user in the security group must have a Microsoft Entra ID P1 license. You can assign all other Lighthouse RBAC roles to any security group, including existing security groups.
+> You must assign the Lighthouse RBAC Administrator role to a role-assignable security group. In addition, to be able to assign roles to a role-assignable security group and/or create role-assignable security groups, you must have a Microsoft Entra ID P1 license. To enable Just-in-Time (JIT) roles, Microsoft Entra IDE Governance or a Microsoft Entra ID P2 license is required.
+> 
+> You can assign all other Lighthouse RBAC roles to any security group, whether it's role-assignable or not, but keep the P1 license requirement in mind for role-assignable security groups.
+>  
+> To learn more, see [Use Microsoft Entra groups to manage role assignments](/entra/identity/role-based-access-control/groups-concept).
 
 ## Next steps
 
@@ -93,4 +99,5 @@ To learn more about each Lighthouse RBAC role to determine which roles users in 
 
 [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md) (article)\
 [Set up GDAP for your customers](m365-lighthouse-setup-gdap.md) (article)\
-[Overview of Delegated Access in Microsoft 365 Lighthouse](m365-lighthouse-delegated-access-overview.md) (article)
+[Overview of Delegated Access in Microsoft 365 Lighthouse](m365-lighthouse-delegated-access-overview.md) (article)\
+[Use Microsoft Entra groups to manage role assignments](/entra/identity/role-based-access-control/groups-concept)
