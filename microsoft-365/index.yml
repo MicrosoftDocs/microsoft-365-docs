@@ -45,6 +45,10 @@ highlightedContent:
     - title: Set up your infrastructure for hybrid work
       itemType: how-to-guide
       url: solutions/empower-people-to-work-remotely.md
+    # Card
+    - title: Copilot for Microsoft 365
+      itemType: get-started
+      url: /copilot/microsoft-365/
 
 # conceptualContent section (optional)
 conceptualContent:
