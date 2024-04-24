@@ -17,6 +17,7 @@ ms.collection:
 - M365-subscription-management
 - must-keep
 - m365copilot
+- magic-ai-copilot
 ---
 
 # Data Residency for Microsoft Copilot for Microsoft 365
