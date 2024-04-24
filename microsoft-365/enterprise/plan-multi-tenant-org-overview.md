@@ -79,7 +79,7 @@ External access is required for chats and calls between tenants. External access
 Using [shared channels in Teams](/microsoftteams/shared-channels) with other tenants in a multitenant organization works the same as using shared channels with any other external organization. While the organizational relationship in Microsoft Entra ID is configured as part of multitenant organization configuration, you must still enable shared channels in Teams and configure the B2B direct connect settings in Microsoft Entra ID. For details, see [Collaborate with external participants in a shared channel](/microsoft-365/solutions/collaborate-teams-direct-connect).
 
 ## License requirements
-Use of the multitenant organization feature requires Microsoft 365 E3 or E5 subscriptions and Microsoft Entra ID P1 licenses or above in all multitenant organization tenants. For additional details, see [Entra licensing requirements](/azure/active-directory/multi-tenant-organizations/cross-tenant-synchronization-configure-overview#license-requirements).
+Use of the multitenant organization feature requires Microsoft 365 E3 or E5 subscriptions and Microsoft Entra ID P1 licenses or above in all multitenant organization tenants. For additional details, see [Entra licensing requirements](/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-overview#license-requirements).
 
 ## Limitations for multitenant organizations in Microsoft 365
 
