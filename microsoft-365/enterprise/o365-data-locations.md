@@ -54,7 +54,7 @@ See the following links to understand how you can determine current data residen
 - Intune [Data Location](m365-dr-workload-other.md#intune)
 - Planner [Data Location](m365-dr-workload-other.md#planner)
 - Viva Goals [Data Location](m365-dr-workload-other.md#viva-goals)
-- Viva Insights – Advanced, Mgr, Leader [Data Location](m365-dr-workload-other.md#viva-insights--advanced-mgr-leader)
+- Viva Insights – Advanced, Manager and leader [Data Location](m365-dr-workload-other.md#viva-insights--advanced-mgr-leader)
 - Viva Insights – Personal [Data Location](m365-dr-workload-other.md#viva-insights--personal)
 - Viva Learning [Data Location](m365-dr-workload-other.md#viva-learning)
 - Viva Pulse [Data Location](/viva/pulse/get-started/data-residency-for-viva-pulse)
