@@ -1,7 +1,7 @@
 ### YamlMime:Hub
 
 title: Microsoft 365 security # < 60 chars
-summary: Protect your Microsoft 365 environment # < 160 chars
+summary: Protect your Microsoft 365 environment. # < 160 chars
 # brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-apps | power-automate | power-bi | power-platform | power-virtual-agents | sql | sql-server | vs | visual-studio | windows | xamarin
 brand: m365
 
