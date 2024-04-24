@@ -30,6 +30,12 @@ Get started with Microsoft 365 Backup by following these simple three steps in t
 
 ## Step 1: Set up pay-as-you-go billing
 
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW1k4TO]
+
+</br>
+
 Microsoft 365 Backup is a pay-as-you-go offering that charges based on consumption, unlike traditional seat-based licenses. To set up pay-as-you-go for Microsoft 365 Backup, you will need to have this information:
 
 > [!div class="checklist"]
