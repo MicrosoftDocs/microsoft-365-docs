@@ -7,8 +7,7 @@ manager: elizapo
 audience: admin
 ms.reviewer: daisyfeller
 ms.topic: article
-ms.service: viva 
-ms.subservice: viva-topics
+ms.service: viva-topics
 search.appverid: 
 ms.collection:
   - enabler-strategic
