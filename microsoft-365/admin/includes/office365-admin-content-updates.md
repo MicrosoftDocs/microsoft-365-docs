@@ -63,14 +63,14 @@ ms.date: 02/18/2020
 | 1/10/2020 | [Microsoft 365 Group Expiration Policy](/Office365/Admin/create-groups/office-365-groups-expiration-policy) | modified |
 | 1/10/2020 | [Overview of Microsoft 365 Groups for administrators](/Office365/Admin/create-groups/office-365-groups) | modified |
 | 1/10/2020 | [Add or edit custom DNS records in Office 365](/Office365/Admin/dns/add-or-edit-custom-dns-records) | modified |
-| 1/10/2020 | [Change nameservers to set up Office 365 with 1&1 IONOS](/Office365/Admin/dns/change-nameservers-at-1-1-internet) | modified |
+| 1/10/2020 | [Change nameservers to set up Office 365 with IONOS](/Office365/Admin/dns/change-nameservers-at-ionos) | modified |
 | 1/10/2020 | [Change nameservers to set up Office 365 with Amazon Web Services (AWS)](/Office365/Admin/dns/change-nameservers-at-aws) | modified |
 | 1/10/2020 | [Change nameservers to set up Office 365 with Bluehost](/Office365/Admin/dns/change-nameservers-at-bluehost) | modified |
 | 1/10/2020 | [Change nameservers to set up Office 365 with Google Domains](/Office365/Admin/dns/change-nameservers-at-google-domains) | modified |
 | 1/10/2020 | [Change nameservers to set up Office 365 with Hostgator](/Office365/Admin/dns/change-nameservers-at-hostgator) | modified |
 | 1/10/2020 | [Change nameservers to set up Office 365 with MyDomain](/Office365/Admin/dns/change-nameservers-at-mydomain) | modified |
 | 1/10/2020 | [Change nameservers to set up Office 365 with Network Solutions](/Office365/Admin/dns/change-nameservers-at-network-solutions) | modified |
-| 1/10/2020 | [Create DNS records at 1&1 IONOS for Office 365](/Office365/Admin/dns/create-dns-records-at-1-1-internet) | modified |
+| 1/10/2020 | [Create DNS records at IONOS for Office 365](/Office365/Admin/dns/create-dns-records-at-ionos) | modified |
 | 1/10/2020 | [Create DNS records at 123-reg.co.uk for Office 365](/Office365/Admin/dns/create-dns-records-at-123-reg-co-uk) | modified |
 | 1/10/2020 | [Create DNS records at Amazon Web Services (AWS) for Office 365](/Office365/Admin/dns/create-dns-records-at-aws) | modified |
 | 1/10/2020 | [Create DNS records at Bluehost for Office 365](/Office365/Admin/dns/create-dns-records-at-bluehost) | modified |
