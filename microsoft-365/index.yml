@@ -30,6 +30,10 @@ highlightedContent:
       itemType: whats-new
       url: https://www.m365conf.com/#!/?wt.mc_id=m365conf_docs_webpage_mwmktg
     # Card
+    - title: Copilot for Microsoft 365
+      itemType: get-started
+      url: /copilot/microsoft-365/
+    # Card
     - title: Remote learning with Microsoft Teams
       itemType: get-started
       url: /MicrosoftTeams/remote-learning-edu
