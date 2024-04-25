@@ -1675,6 +1675,11 @@
        "redirect_url": "/microsoft-365/admin/get-help-with-domains/change-nameservers-at-any-domain-registrar",
        "redirect_document_id": false
      },
+     { 
+        "source_path": "microsoft-365/admin/dns/create-dns-records-at-ionos.com.md",
+        "redirect_url": "/microsoft-365/admin/get-help-with-domains/change-nameservers-at-any-domain-registrar",
+        "redirect_document_id": true
+     },
      {
        "source_path": "microsoft-365/admin/dns/change-nameservers-at-aws.md",
        "redirect_url": "/microsoft-365/admin/get-help-with-domains/change-nameservers-at-any-domain-registrar",
