@@ -100,7 +100,7 @@ The following table summarizes expected performance for a normally distributed t
 
 |Scenario |Restore of all protection units* complete |
 |:-------|:--------|
-| 1,000 accounts, sites, or mailboxes<br>(30-GB average size)  |Less than 12 hours  |
+| 1,000 accounts, sites, or mailboxes<br>(10-GB average size)  |Less than 12 hours  |
 
 <sup>*A *protection unit* is a OneDrive account, SharePoint site, or Exchange mailbox.</sup>
 
