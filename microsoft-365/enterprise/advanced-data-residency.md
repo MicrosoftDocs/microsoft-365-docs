@@ -7,7 +7,7 @@ ms.reviewer: deanw
 ms.date: 02/29/2024
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: ent-adr
 ms.collection:
 - must-keep
 - essentials-overview

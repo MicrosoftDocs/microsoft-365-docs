@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 12/28/2023
 audience: Admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: ent
 ms.localizationpriority: medium
 f1.keywords:
 - CSH

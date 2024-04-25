@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 04/09/2024
 audience: End User
 ms.topic: overview
-ms.service: microsoft-365-enterprise
+ms.service: ent-network
 ms.localizationpriority: medium
 ms.collection: 
 - scotvorg

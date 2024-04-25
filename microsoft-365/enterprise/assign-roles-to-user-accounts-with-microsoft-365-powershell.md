@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 02/22/2024
 audience: Admin
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: ent
 ms.localizationpriority: medium
 search.appverid: 
 - MET150
