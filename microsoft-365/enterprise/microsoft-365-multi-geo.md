@@ -63,7 +63,7 @@ Microsoft 365 Multi-Geo is currently offered in these regions:
 
 To learn more about the definition of each region such as what countries or cities contain the datacenters, see [Overview and Definitions](m365-dr-overview.md).
 
-If you utilize Microsoft Purview eDiscovery Standard or Premium, see [Microsoft 365 Multi-Geo eDiscovery configuration](multi-geo-ediscovery-configuration.md) and [Set up compliance boundaries for eDiscovery investigations](https://learn.microsoft.com/en-us/purview/ediscovery-set-up-compliance-boundaries?view=o365-worldwide&source=docs#searching-and-exporting-content-in-multi-geo-environments) for additional information on region usage and data storage as it relates to Microsoft Purview eDiscovery.
+If you utilize Microsoft Purview eDiscovery Standard or Premium, see [Microsoft 365 Multi-Geo eDiscovery configuration](multi-geo-ediscovery-configuration.md) and [Set up compliance boundaries for eDiscovery investigations](https://learn.microsoft.com/purview/ediscovery-set-up-compliance-boundaries?view=o365-worldwide&source=docs#searching-and-exporting-content-in-multi-geo-environments) for additional information on region usage and data storage as it relates to Microsoft Purview eDiscovery.
 
 ## Getting started
 
@@ -83,7 +83,6 @@ Whether you're a CSP partner managing your customer’s Microsoft 365 subscripti
   
 > [!NOTE]
 > For more information on the Microsoft 365 services that support Multi-Geo, see the [EXO](m365-dr-workload-exo.md), [ODSP](m365-dr-workload-spo.md) and [Teams](m365-dr-workload-teams.md) workload data residency pages for more details.
-
 
 ## See also
 
