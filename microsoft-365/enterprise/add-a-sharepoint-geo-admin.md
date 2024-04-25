@@ -28,7 +28,7 @@ Global administrators and SharePoint administrators continue to have access to s
 
 ## Configuring _Geography_ administrators
 
-Configuring _Geography_ admins requires SharePoint Online PowerShell module.
+Configuring _Geography_ admins requires the SharePoint PowerShell module.
 
 Use [Connect-SPOService](/powershell/module/sharepoint-online/Connect-SPOService) to connect to the admin center of the _Geography_ location where you want to add the _Geography_ admin. (For example, Connect-SPOService  https://ContosoEUR-admin.sharepoint.com.)
 
@@ -42,19 +42,19 @@ To remove a user as a _Geography_ Admin of a location, run  `Remove-SPOGeoAdmini
 
 ## Adding a group as a _Geography_ admin
 
-You can add a security group or a mail-enabled security group as a _Geography_ admin. (Distribution groups and Microsoft 365 Groups are not supported.)
+You can add a security group or a mail-enabled security group as a _Geography_ admin. (Distribution groups and Microsoft 365 Groups aren't supported.)
 
 To add a group as a _Geography_ administrator, run `Add-SPOGeoAdministrator -GroupAlias <alias>`
 
 To remove a group as a _Geography_ administrator, run `Remove-SPOGeoAdministrator -GroupAlias <alias>`
 
-Note that not all security groups have a group alias. If you want to add a security group that does not have an alias, run [Get-MgGroup](/powershell/module/microsoft.graph.groups/get-mggroup) to retrieve a list of groups, find your security group's ObjectID, and then run:
+Note that not all security groups have a group alias. If you want to add a security group that doesn't have an alias, run [Get-MgGroup](/powershell/module/microsoft.graph.groups/get-mggroup) to retrieve a list of groups, find your security group's ObjectID, and then run:
 
 `Add-SPOGeoAdministrator -ObjectID <ObjectID>`
 
 To remove a group by using the ObjectID, run `Remove-SPOGeoAdministrator -ObjectID <ObjectID>`
 
-## Related topics
+## Related articles
 
 [Add-SPOGeoAdministrator](/powershell/module/sharepoint-online/add-spogeoadministrator)
 
