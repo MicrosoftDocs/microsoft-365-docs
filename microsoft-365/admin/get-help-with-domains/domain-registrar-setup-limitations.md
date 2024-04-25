@@ -42,7 +42,7 @@ For DNSMadeEasy accounts, the domain you added was purchased from a separate dom
 
 ## Create DNS records at easyDNS for Microsoft
 
-SRV Records are currently not available under any easyDNS service package. You may need to upgrade to a higher service level with easyDNS to add SRV records which are required for Teams.
+SRV Records are currently not available under any easyDNS service package. You may need to upgrade to a higher service level with easyDNS to add SRV records, which are required for Teams.
 
 ## Create DNS records at Freenom for Microsoft
 
@@ -50,7 +50,7 @@ The Freenom website doesn't support adding SRV records, which means that several
 
 ## Create DNS records at MyDomain for Microsoft
 
-The MyDomain website doesn't support SRV records, which means several Teams and Email features won't work. No matter which Microsoft plan you use, if you manage your DNS records at MyDomain, there are significant service limitations, and you might want to switch to a different DNS hosting provider.
+The MyDomain website doesn't support SRV records, which means several Teams and Email features won't work. No matter which Microsoft plan you use, there are significant service limitations if you manage your DNS records at MyDomain. You might want to switch to a different DNS hosting provider in this case. 
 
 ## Create DNS records for Microsoft using Windows-based DNS
 
@@ -81,7 +81,7 @@ IONOS requires a workaround so that you can use an MX record together with the C
 
 1.  First, you'll create the Autodiscover subdomain. In the **Subdomain Overview** section, select **Create Subdomain**.
 
-1.  In the **Create Subdomain** box for the new subdomain, type or copy and paste only the **Create Subdomain** value from the following table. (You'll add the **Alias** value at a later step.)
+1.  In the **Create Subdomain** box for the new subdomain, type or copy and paste only the **Create Subdomain** value from the following table. (Add the **Alias** value at a later step.)
 
     |Create Subdomain|Alias|
     |:----|:----|
@@ -89,7 +89,7 @@ IONOS requires a workaround so that you can use an MX record together with the C
 
 1.  Select **Create Subdomain**.
 
-1.  In the **Subdomain Overview** section, locate the autodiscover subdomain that you just created, and then select the Panel (v) control for that subdomain.
+1.  In the **Subdomain Overview** section, locate the autodiscover subdomain that you created, and then select the Panel (v) control for that subdomain.
 
 1.  In the **Subdomain Settings** area, select **Edit DNS Settings**.
 
@@ -107,7 +107,7 @@ IONOS requires a workaround so that you can use an MX record together with the C
 
 ### Additional CNAME records
 
-The additional CNAME records in the following procedure enable Skype for Business Online services. Use the same steps that you used for the two CNAME records you already created.
+The extra CNAME records in the following procedure enable Skype for Business Online services. Use the same steps that you used for the two CNAME records you already created.
 
 **Create the third subdomain (Lyncdiscover)**
 
@@ -123,7 +123,7 @@ The additional CNAME records in the following procedure enable Skype for Busines
 
 1.  On the Domain Center page, select **Manage Subdomains**.
 
-1.  In the **Subdomain Overview** section, find the lyncdiscover subdomain that you just created, and then select the Panel (v) control for that subdomain. In the **Subdomain Settings** area, select **Edit DNS Settings**.
+1.  In the **Subdomain Overview** section, find the lyncdiscover subdomain that you created, and then select the Panel (v) control for that subdomain. In the **Subdomain Settings** area, select **Edit DNS Settings**.
 
 1.  In the **A/AAAA Records (IP Addresses)** section, in the **IP address (A Record)** area, select **CNAME**.
 
@@ -151,7 +151,7 @@ The additional CNAME records in the following procedure enable Skype for Busines
 
 1.  On the Domain Center page, select **Manage Subdomains**.
 
-1.  In the **Subdomain Overview** section, find the sip subdomain that you just created, and then select the Panel (v) control for that subdomain. <br/> In the **Subdomain Settings** area, select **Edit DNS Settings**.
+1.  In the **Subdomain Overview** section, find the sip subdomain that you created, and then select the Panel (v) control for that subdomain. <br/> In the **Subdomain Settings** area, select **Edit DNS Settings**.
 
 1.  In the **A/AAAA Records (IP Addresses)** section, in the **IP address (A Record)** area, select **CNAME**.
 
