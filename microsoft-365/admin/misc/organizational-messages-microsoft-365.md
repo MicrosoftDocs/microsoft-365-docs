@@ -79,7 +79,7 @@ Before working with organizational messages, make sure your team satisfies the f
 
 ## Get started
 
-:::image type="content" source="{source}" alt-text="{alt-text}":::
+:::image type="content" source="../../media/OM-LandingPage_annotated.png" alt-text="Screenshot showing the organizational messages landing page in the Microsoft 365 admin center with numbered annotations." lightbox="../../media/OM-LandingPage_annotated.png":::
 
 There are three basic experiences to familiarize yourself with within the organizational messages centralized experience:
 
@@ -111,7 +111,7 @@ If you have the Organizational Messages Writer Entra role as described above, yo
 
 3. In the message details panel, select **Modify**.
 
-4. This will take you directly into the creation wizard where you can continue the creation of this draft message.
+4. This takes you directly into the creation wizard where you can continue the creation of this draft message.
 
 ### How to approve or reject a ‘pending approval’ message
 
@@ -135,11 +135,11 @@ If you have the Organizational Messages Writer Entra role as described above, yo
 
 2. On the message name of the rejected message you want to overcome, select **Withdraw**.
 
-3. This will set the state of the rejected message to **Draft**.
+3. This sets the state of the rejected message to **Draft**.
 
 4. From there, you can go to the message details panel, select **Modify**.
 
-5. This will take you directly into the creation wizard where you can continue the creation of this draft message, once again sending for approval to return the message to approvers for review.
+5. This takes you directly into the creation wizard where you can continue the creation of this draft message, once again sending for approval to return the message to approvers for review.
 
 > [!NOTE]
 > - Fully customized messages will require an approver to ‘approve’ any message before it is delivered to your users. However, selecting a premade message will not require any approval from your organization before it can be delivered to end users.
@@ -149,21 +149,21 @@ If you have the Organizational Messages Writer Entra role as described above, yo
 
 ## Create a message
 
-Users with the Organizational Messages Writer Entra role described above will have access to the **Create a message** button and capability in the centralized experience. Selecting this button will invoke the wizard, which includes these primary creation steps:
+Users with the Organizational Messages Writer Entra role described previously will have access to the **Create a message** button and capability in the centralized experience. Selecting this button will invoke the wizard, which includes these primary creation steps:
 
-- **Objective** for selecting the nature or purpose of your new message,
+- **Objective** for selecting the nature or purpose of your new message.
 
-- **Location** for indicating to which in-product channel the message will be sent for your users,
+- **Location** for indicating to which in-product channel the message will be sent for your users.
 
-- **Template** for choosing the format of the message, ‘create your own’ or a premade message from Microsoft,
+- **Template** for choosing the format of the message, ‘create your own’ or a premade message from Microsoft.
 
-- **Customize** for adding customization to the message, including full text and/or custom URLs,
+- **Customize** for adding customization to the message, including full text and/or custom URLs.
 
-- **Recipients** for setting the groups within your organization that should receive the message,
+- **Recipients** for setting the groups within your organization that should receive the message.
 
-- **Schedule** for configuring the start and end dates as well as the frequency with which the system will send the message to the same user over time,
+- **Schedule** for configuring the start and end dates as well as the frequency with which the system will send the message to the same user over time.
 
-- **Finish** for reviewing the message before scheduling or sending for approval by your organization’s approvers
+- **Finish** for reviewing the message before scheduling or sending for approval by your organization’s approvers.
 
 ### Choosing custom or premade messages
 
@@ -229,24 +229,7 @@ Rolling out in spring 2024, organizational messages will also include two more f
 
 For some time-sensitive communications, admins and other communicators might need to get a message out fast. For example, when an event is occurring on a corporate campus or a service outage has begun, admins might need to quickly broadcast such events to all employees so they can be prepared. To support communications in such events, admins in Microsoft 365 admin center will be able to select the ‘Urgent messages’ button in the “Top Actions” section.
 
-:::image type="content" source="{source}" alt-text="{alt-text}":::
-
-### User profile targeting
-
-The primary method for setting the audience for an organizational message is by using user groups, such as distribution lists created by your team and seen within Microsoft 365 admin center **Groups** > **Active groups**. However, sometimes, admins might need different dimensions to properly target the group of their employees who should receive a particular message. Accordingly, we’re adding the following attributes:
-
-- Departments
-
-- Companies
-
-- Country (state) – City
-
-:::image type="content" source="{source}" alt-text="{alt-text}":::
-
-> [!NOTE]
-> - These user profile attributes require your tenant to enable group-level insights, accessed in the Adoption Score page in the Microsoft 365 admin center.
-> - Further, these filtering attributes must then also be enabled via the group-level filtering management panel.
-> - Once your tenant has made both enablements, the targeting capability will be eligible for your messages within approximately 24 hours.
+:::image type="content" source="../../media/OM-urgentMessages_annotated.png" alt-text="Screenshot that highlights the button to send an urgent message.":::
 
 ## FAQ
 
@@ -257,22 +240,6 @@ After your message has been scheduled by the Organizational Messages platform, a
 Further, Windows 11 buffers messages on a set period for each of the channels. (In other words, this experience is delivered on a ‘pull’ model.) So, expect that your message might take 24 or more hours for targeted end users in your testing tenant to receive and render the message as their devices might be configured to request content at different times.
 
 Once your message has been actively delivering for over 24 hours, you can return to the Manage experience to review the latest delivery data for your message.
-
-### What will my end users see in Windows 11?
-
-Here's an illustrative, mock-up view of the three Windows 11 preview channels in the centralized experience:
-
-1. Windows 11 Notifications area:
-
-:::image type="content" source="{source}" alt-text="{alt-text}":::
-
-2. Windows 11 Taskbar:
-
-:::image type="content" source="{source}" alt-text="{alt-text}":::
-
-3. Windows 11 Windows spotlight:
-
-:::image type="content" source="{source}" alt-text="{alt-text}":::
 
 ### My team has made other organizational messages within Intune, Adoption Score, Usage reports, and others. How do they work with this?
 
@@ -345,10 +312,6 @@ There are several other public Microsoft documents for our other preview product
 
 - [Overview of organizational messages in Microsoft Intune](/mem/intune/remote-actions/organizational-messages-overview)
 
-- [Prerequisites for organizational messages](/mem/intune/remote-actions/organizational-messages-prerequisites)
-
-- [Create organizational messages](/mem/intune/remote-actions/organizational-messages-create)
-
 ### What do the different message states mean?
 
 All messages have a state that indicates their creation or delivery status, including:
@@ -370,7 +333,3 @@ All messages have a state that indicates their creation or delivery status, incl
 8. **Rejected** – message was reviewed, and an Approver admin disallowed it from proceeding to a Scheduled or Active state.
 
 9. **Pending approval** – message is awaiting review by an Approver admin.
-
-### Some of the scenarios enabled will not work for my organization, or I have a suggestion for a new scenario or improvement. Where can I share this?
-
-We’d love to hear your feedback and understand your scenarios better. Reach out to <organizational-msgs@microsoft.com>.
