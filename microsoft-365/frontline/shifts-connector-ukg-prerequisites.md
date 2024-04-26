@@ -71,7 +71,7 @@ Make sure you gather the following information and complete the following config
     If you don't have all this information, contact UKG Pro WFM support.
 
     > [!IMPORTANT]
-    > The UKG Pro WFM account you use must have an access profile which allows them full access to all API-based integrations in UKG.
+    > The UKG Pro WFM account you use must have an access profile which allows full access to all API-based integrations in UKG.
 
 <a name='enable-sso-by-setting-up-integration-between-azure-ad-and-ukg-pro-workforce-management'></a>
 
