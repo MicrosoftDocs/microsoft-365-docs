@@ -7,6 +7,7 @@ ms.date: 12/18/2023
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
+ms.subservice: network
 ms.localizationpriority: medium
 search.appverid:
 - MET150

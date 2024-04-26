@@ -6,7 +6,8 @@ manager: scotv
 ms.date: 04/10/2019
 audience: Admin
 ms.topic: conceptual
-ms.service: ent
+ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 ms.collection: 
 - scotvorg

@@ -6,7 +6,8 @@ manager: scotv
 ms.date: 03/15/2024
 audience: ITPro
 ms.topic: conceptual
-ms.service: ent-network
+ms.service: microsoft-365-enterprise
+ms.subservice: network
 ms.localizationpriority: medium
 ms.collection:
 - scotvorg

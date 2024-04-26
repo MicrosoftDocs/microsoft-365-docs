@@ -6,7 +6,8 @@ ms.author: dansimp
 manager: dansimp
 ms.date: 04/18/2024
 ms.topic: overview
-ms.service: ent-network
+ms.service: microsoft-365-enterprise
+ms.subservice: network
 ms.localizationpriority: medium
 ms.collection: must-keep
 ms.custom: QuickDraft

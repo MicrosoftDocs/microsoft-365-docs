@@ -7,7 +7,8 @@ author: kelleyvice-msft
 manager: scotv
 audience: ITPro
 ms.topic: article
-ms.service: ent-mto
+ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.collection: SPO_Content
 ms.localizationpriority: medium
 f1.keywords:
