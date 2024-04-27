@@ -50,7 +50,7 @@ If you have previously created users and would like to change their domain, foll
 > [!NOTE]
 > To find your DNS hosting provider, see [Find your domain registrar - Microsoft 365 admin | Microsoft Learn.](find-your-domain-registrar.md) 
 
-## Step 1: Add a TXT or MX record to verify you own the domain
+## Step 1: Add a TXT or MX record to verify that you own the domain
 
 ### Recommended: Verify with a TXT record
 
