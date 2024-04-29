@@ -240,7 +240,7 @@ To verify the record in Microsoft 365:
 1. Select **Save**.
 
    :::image type="content" source="../../media/dns-ionos/ionos-domains-spftxt-save.png" alt-text="Screenshot of where you select Save to add an SPF TXT record.":::
->>>>>>> main:microsoft-365/admin/dns/create-dns-records-at-1-1-internet.md
+
 
 ## Advanced option: Skype for Business
 
@@ -341,11 +341,7 @@ Only select this option if your organization uses Skype for Business for online 
 
 1. Select **Save**.
 
-<<<<<<< HEAD:microsoft-365/admin/dns/create-dns-records-at-ionos.com.md
-    :::image type="content" source="../../media/dns-ionos/ionos-domains-srv-save.png" alt-text="Screenshot of the SRV section, Select Save is highlighted.":::
-=======
     :::image type="content" source="../../media/dns-ionos/ionos-domains-srv-save.png" alt-text="Screenshot of where you select Save to add an SRV record.":::
->>>>>>> main:microsoft-365/admin/dns/create-dns-records-at-1-1-internet.md
 
 1. Add the other SRV record.
 
