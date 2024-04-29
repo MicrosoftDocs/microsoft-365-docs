@@ -11,8 +11,7 @@ ms.service: microsoft-365-backup
 ms.custom: backup
 search.appverid:
 ms.collection:
-    - enabler-strategic
-    - m365initiative-syntex
+    - essentials-get-started
 ms.localizationpriority:  medium
 description: Learn how to set up pay-as-you-go billing for Microsoft 365 Backup.
 ---
