@@ -1,5 +1,5 @@
 ---
-title: "How modern authentication works for Office 2013 and Office 2016 client apps"
+title: "How modern authentication works for Office 2016 and Office 2019 client apps"
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -26,17 +26,17 @@ ms.collection:
 - scotvorg
 - M365-security-compliance
 - must-keep
-description: Learn how Microsoft 365 modern authentication features work differently for Office 2013 and 2016 client apps.
+description: Learn how Microsoft 365 modern authentication features work differently for Office 2016 and 2019 client apps.
 ---
 
-# How modern authentication works for Office 2013, Office 2016, and Office 2019 client apps
+# How modern authentication works for Office 2016 and Office 2019 client apps
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
-Read this article to learn how Office 2013, Office 2016, and Office 2019 client apps use modern authentication features based on the authentication configuration on the Microsoft 365 tenant for Exchange Online, SharePoint Online, and Skype for Business Online.
+Read this article to learn how Office 2016 and Office 2019 client apps use modern authentication features based on the authentication configuration on the Microsoft 365 tenant for Exchange Online, SharePoint Online, and Skype for Business Online.
 
 > [!NOTE]
-> Legacy client apps, such as Office 2010 and Office for Mac 2011, do not support modern authentication and can only be used with basic authentication.
+> Legacy client apps, such as Office 2010, Office 2013, and Office for Mac 2011, do not support modern authentication and can only be used with basic authentication.
 
 ## Availability of modern authentication for Microsoft 365 services
 
@@ -51,7 +51,7 @@ For the Microsoft 365 services, the default state of modern authentication is:
 > [!NOTE]
 > For tenants created **before** August 1, 2017, modern authentication is turned **off** by default for Exchange Online and Skype for Business Online.
 
-Select the links below to see how Office 2013, Office 2016, and Office 2019 client authentication works with the Microsoft 365 services depending on whether or not modern authentication is turned on.
+Select the links below to see how Office 2016 and Office 2019 client authentication works with the Microsoft 365 services depending on whether or not modern authentication is turned on.
 
 - [Exchange Online](modern-auth-for-office-2013-and-2016.md#BK_EchangeOnline)
 
@@ -62,7 +62,7 @@ Select the links below to see how Office 2013, Office 2016, and Office 2019 clie
 <a name="BK_EchangeOnline"> </a>
 ### Exchange Online
 
-The following table describes the authentication behavior for Office 2013, Office 2016, and Office 2019 client apps when they connect to Exchange Online with or without modern authentication.
+The following table describes the authentication behavior for Office 2016 and Office 2019 client apps when they connect to Exchange Online with or without modern authentication.
 
 | Office client app version | Registry key present? | Modern authentication on? | Authentication behavior with modern authentication turned on for the tenant (default) | Authentication behavior with modern authentication turned off for the tenant |
 |:-----|:-----|:-----|:-----|:-----|
@@ -74,13 +74,11 @@ The following table describes the authentication behavior for Office 2013, Offic
 |Office 2016 |No, or EnableADAL = 1 |Yes |Modern authentication is attempted first. If the server refuses a modern authentication connection, then basic authentication is used. Server refuses modern authentication when the tenant isn't enabled. |Modern authentication is attempted first. If the server refuses a modern authentication connection, then basic authentication is used. Server refuses modern authentication when the tenant isn't enabled. |
 |Office 2016 |Yes, EnableADAL = 1 |Yes |Modern authentication is attempted first. If the server refuses a modern authentication connection, then basic authentication is used. Server refuses modern authentication when the tenant isn't enabled. |Modern authentication is attempted first. If the server refuses a modern authentication connection, then basic authentication is used. Server refuses modern authentication when the tenant isn't enabled. |
 |Office 2016 |Yes, EnableADAL=0 |No |Basic authentication |Basic authentication |
-|Office 2013 |No |No |Basic authentication |Basic authentication |
-|Office 2013 |Yes, EnableADAL = 1 |Yes |Modern authentication is attempted first. If the server refuses a modern authentication connection, then basic authentication is used. Server refuses modern authentication when the tenant isn't enabled. |Modern authentication is attempted first. If the server refuses a modern authentication connection, then basic authentication is used. Server refuses modern authentication when the tenant isn't enabled. |
 
 <a name="BK_SharePointOnline"> </a>
 ### SharePoint Online
 
-The following table describes the authentication behavior for Office 2013, Office 2016, and Office 2019 client apps when they connect to SharePoint Online with or without modern authentication.
+The following table describes the authentication behavior for Office 2016 and Office 2019 client apps when they connect to SharePoint Online with or without modern authentication.
 
 | Office client app version | Registry key present? | Modern authentication on? | Authentication behavior with modern authentication turned on for the tenant (default) | Authentication behavior with modern authentication turned off for the tenant |
 |:-----|:-----|:-----|:-----|:-----|
@@ -90,13 +88,11 @@ The following table describes the authentication behavior for Office 2013, Offic
 |Office 2016 |No, or EnableADAL = 1 |Yes |Modern authentication only. |Failure to connect. |
 |Office 2016 |Yes, EnableADAL = 1 |Yes |Modern authentication only. |Failure to connect. |
 |Office 2016 |Yes, EnableADAL = 0 |No |Microsoft Online Sign-in Assistant only. |Microsoft Online Sign-in Assistant only. |
-|Office 2013 |No |No |Microsoft Online Sign-in Assistant only. |Microsoft Online Sign-in Assistant only. |
-|Office 2013 |Yes, EnableADAL = 1 |Yes |Modern authentication only. |Failure to connect. |
 
 ### Skype for Business Online
 <a name="BK_SFBO"> </a>
 
-The following table describes the authentication behavior for Office 2013, Office 2016, and Office 2019 client apps when they connect to Skype for Business Online with or without modern authentication.
+The following table describes the authentication behavior for Office 2016 and Office 2019 client apps when they connect to Skype for Business Online with or without modern authentication.
 
 | Office client app version | Registry key present? | Modern authentication on? | Authentication behavior with modern authentication turned on for the tenant | Authentication behavior with modern authentication turned off for the tenant (default) |
 |:-----|:-----|:-----|:-----|:-----|
@@ -106,8 +102,6 @@ The following table describes the authentication behavior for Office 2013, Offic
 |Office 2016 |No, or EnableADAL = 1 |Yes |Modern authentication is attempted first. If the server refuses a modern authentication connection, then Microsoft Online Sign-in Assistant is used. Server refuses modern authentication when Skype for Business Online tenants aren't enabled. |Modern authentication is attempted first. If the server refuses a modern authentication connection, then Microsoft Online Sign-in Assistant is used. Server refuses modern authentication when Skype for Business Online tenants aren't enabled. |
 |Office 2016 |Yes, EnableADAL = 1 |Yes |Modern authentication is attempted first. If the server refuses a modern authentication connection, then Microsoft Online Sign-in Assistant is used. Server refuses modern authentication when Skype for Business Online tenants aren't enabled. |Modern authentication is attempted first. If the server refuses a modern authentication connection, then Microsoft Online Sign-in Assistant is used. Server refuses modern authentication when Skype for Business Online tenants aren't enabled. |
 |Office 2016 |Yes, EnableADAL = 0 |No |Microsoft Online Sign-in Assistant only. |Microsoft Online Sign-in Assistant only. |
-|Office 2013 |No |No |Microsoft Online Sign-in Assistant only. |Microsoft Online Sign-in Assistant only. |
-|Office 2013 |Yes, EnableADAL = 1 |Yes |Modern authentication is attempted first. If the server refuses a modern authentication connection, then Microsoft Online Sign-in Assistant is used. Server refuses modern authentication when Skype for Business Online tenants aren't enabled. |Microsoft Online Sign-in Assistant only. |
 
 ## See also
 
