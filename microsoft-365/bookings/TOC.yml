@@ -3,7 +3,7 @@
   items:
   - name: Learn about Personal Bookings
     items:
-    - name: Overview
+    - name: Bookings Overview
       href: bookings-overview.md
     - name: Create a new meeting type
       href: bookings-in-outlook.md
