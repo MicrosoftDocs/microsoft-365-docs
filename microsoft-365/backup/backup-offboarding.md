@@ -11,8 +11,7 @@ ms.service: microsoft-365-backup
 ms.custom: backup
 search.appverid:
 ms.collection:
-    - enabler-strategic
-    - m365initiative-syntex
+    - essentials-manage
 ms.localizationpriority:  medium
 description: Learn about how to offboard usage in Microsoft 365 Backup.
 ---
