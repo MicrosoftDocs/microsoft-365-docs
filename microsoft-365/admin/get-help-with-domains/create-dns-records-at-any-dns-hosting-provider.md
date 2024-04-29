@@ -50,7 +50,7 @@ If you have previously created users and would like to change their domain, foll
 > [!NOTE]
 > To find your DNS hosting provider, see [Find your domain registrar - Microsoft 365 admin | Microsoft Learn.](find-your-domain-registrar.md) 
 
-## Step 1: Add a TXT or MX record to verify you own the domain
+## Step 1: Add a TXT or MX record to verify that you own the domain
 
 ### Recommended: Verify with a TXT record
 
@@ -94,7 +94,7 @@ When Microsoft finds the correct MX record, your domain is verified.
 
 > [!NOTE]
 > To know how to verify your domain with Microsoft by adding TXT record and to know how to connect to Microsoft services by adding DNS records see:
-> - [Connect your DNS records at IONOS to Microsoft 365](../dns/create-dns-records-at-ionos.com.md)
+> - [Connect your DNS records at IONOS to Microsoft 365](../dns/create-dns-records-at-ionos-com.md)
 > - [Connect your DNS records at 123-reg.co.uk to Microsoft 365](../dns/create-dns-records-at-123-reg-co-uk.md)
 > - [Connect your DNS records at Amazon Web Services (AWS) to Microsoft 365](../dns/create-dns-records-at-aws.md)
 > - [Connect your DNS records at Cloudflare to Microsoft 365](../dns/create-dns-records-at-cloudflare.md)
