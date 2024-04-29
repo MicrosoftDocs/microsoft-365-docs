@@ -36,7 +36,7 @@ description: Learn how Microsoft 365 modern authentication features work differe
 Read this article to learn how Office 2016 and Office 2019 client apps use modern authentication features based on the authentication configuration on the Microsoft 365 tenant for Exchange Online, SharePoint Online, and Skype for Business Online.
 
 > [!NOTE]
-> Legacy client apps, such as Office 2010, Office 2013, and Office for Mac 2011, do not support modern authentication and can only be used with basic authentication.
+> Legacy client apps, such as Office 2010 and Office for Mac 2011, do not support modern authentication and can only be used with basic authentication.
 
 ## Availability of modern authentication for Microsoft 365 services
 
