@@ -1,25 +1,25 @@
 ---
-title: Overview of Microsoft 365 Archive (Preview)
+title: Overview of Microsoft 365 Archive
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 04/11/2024
+ms.date: 04/30/2024
 ms.topic: conceptual
 ms.service: microsoft-365-archive
 ms.custom: archive
 search.appverid:
 ms.collection:
-    - m365initiative-syntex
+    - essentials-overview
 ms.localizationpriority:  medium
 description: Learn about how Microsoft 365 Archive can provide your with organization cost-effective storage solutions.
 ---
 
-# Overview of Microsoft 365 Archive (Preview)
+# Overview of Microsoft 365 Archive
 
 > [!NOTE]
-> This feature is currently in preview and subject to change. The feature is currently rolling out and might not yet be fully available to all organizations. Before you begin, read the [Microsoft 365 Archive preview terms and conditions](archive-preview-terms.md).
+> This feature is now generally available. It is currently rolling out and might not yet be fully available to all organizations.
 
 Microsoft 365 Archive offers cost-effective storage for inactive SharePoint sites.
 
@@ -46,11 +46,8 @@ Archiving a site archives everything within it, including:
 - Document libraries and files
 - Lists and list data
 
-> [!NOTE]
-> Microsoft 365 Archive (Preview) is currently rolling out. More features will be rolled out as they become available.
-
 Administrators should notify the site owners and end users before a site is archived so they're aware that the site won't be accessible.
-
+<!---
 ## Preview limitations
 
 > [!NOTE]
@@ -71,3 +68,4 @@ Administrators should notify the site owners and end users before a site is arch
 - Archiving a site that is currently enrolled in Microsoft 365 Backup will be blocked.
 
 - If you archive a site that has a library syncing to a device, that device's sync client will display errors after the site is archived. We recommend that you remove syncing libraries before archiving a site.
+--->
