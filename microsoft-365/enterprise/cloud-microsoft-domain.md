@@ -18,39 +18,19 @@ content_well_notification:
 - AI-contribution
 ---
 
----
-title: "Unified cloud.microsoft domain for Microsoft 365 apps"
-description: Describes the new cloud.microsoft domain for Microsoft 365 apps
-author: dansimp
-ms.author: dansimp
-manager: dansimp
-ms.date: 04/18/2024
-ms.topic: overview
-ms.service: microsoft-365-enterprise
-ms.localizationpriority: medium
-ms.collection: must-keep
-ms.custom: QuickDraft
-ms.reviewer: dansimp
-search.appverid: MET150
-f1.keywords:
-audience:
-content_well_notification:
-- AI-contribution
----
-
 # Unified cloud.microsoft domain for Microsoft 365 apps
 
 Microsoft is unifying user-facing Microsoft 365 apps and services to a single and consistent domain: `cloud.microsoft`.
 
-The growth of Microsoft cloud services led to the expansion of the domain space they occupy, resulting in hundreds of domains. This fragmentation is a challenge for end user navigation, administrative simplicity, and the development of cross-app experiences.
+The growth of Microsoft cloud services led to the expansion of the domain space they occupy, resulting in [hundreds of domains](https://aka.ms/m365endpoints). This fragmentation is a challenge for end user navigation, administrative simplicity, and the development of cross-app experiences. To solve this problem and to make it easier for customers, end users and app developers to interface with Microsoft 365 apps and services, Microsoft has designated a special domain - `cloud.microsoft`, to be used by Microsoft SaaS products going forward.     
 
 The `.microsoft` top-level domain is exclusive to Microsoft. The new domain doesn’t have traditional suffixes such as `.com` or `.net` in the end. This is by design. `cloud.microsoft` resides under the `.microsoft` top-level domain, for which Microsoft is a registry operator and the sole registrant. This domain allows for extra security, privacy, and protection against spoofing when you interact with apps within that domain. You can trust that any website or app that ends with `cloud.microsoft` is an official Microsoft product or service.
 
 ## Benefits of a unified domain
 
-Consolidating authenticated user-facing Microsoft 365 experiences to a single domain benefits customer in several ways. For end users, it streamlines the overall experience by reducing sign-ins, redirects, and delays when navigating across apps. For admins, it reduces the complexity of allowlists that are required to help your organization stay secure and productive. For all our customers – and our developers – this change helps align for better and tighter integration across the Microsoft 365 ecosystem by streamlining development and improving performance of cross-app experiences.
+Consolidating authenticated user-facing Microsoft 365 experiences to a single domain benefits customer in several ways. For end users, it streamlines the overall experience by reducing sign-ins, redirects, and delays when navigating across apps. For admins, it reduces the complexity of allowlists that are required to connect to Microsoft 365 services and help your organization stay secure and productive. For all our customers – and our developers – this change helps align for better and tighter integration across the Microsoft 365 ecosystem by streamlining development and improving performance of cross-app experiences.
 
-'Dot brand' top-level domains like `.microsoft` enhance security, trustworthiness, and integrity. Microsoft has exclusive rights to the `.microsoft` top-level domain, enabling enhanced security protocols and governance controls. All experiences on the `.microsoft` domain are legitimate and authentic, as Microsoft is the registry operator and sole registrant.
+'Dot brand' top-level domains like `.microsoft` enhance security, trustworthiness, and integrity. Microsoft has exclusive rights to the `.microsoft` top-level domain, enabling enhanced security protocols and governance controls to be applicated across the entire domain hierarchy, starting from the top level. All experiences on the `.microsoft` domain are guaranteed to be legitimate and authentic, as Microsoft is the registry operator and sole registrant.
 
 ## Security considerations
 
@@ -66,18 +46,18 @@ The following Microsoft 365 products and services are now available in the `clou
 |**Service**|**URL**|
 |:-----|:-----|
 |Microsoft 365 Service Health Status Page |[status.cloud.microsoft]( https://status.cloud.microsoft)|
-|Microsoft Admin Center| admin.cloud.microsoft|
-|Microsoft Loop | loop.cloud.microsoft|
-|Microsoft Mesh | mesh.cloud.microsoft|
-|Microsoft Setup | setup.cloud.microsoft|
-|Microsoft Sway | sway.cloud.microsoft|
-|Microsoft Viva Engage | engage.cloud.microsoft|
-|Microsoft Viva Goals | goals.cloud.microsoft|
-|Microsoft Viva Home | viva.cloud.microsoft|
-|Microsoft Viva Insights | insights.cloud.microsoft|
-|Microsoft Viva Learning | learning.cloud.microsoft|
-|Microsoft Viva Pulse | pulse.cloud.microsoft|
-|Microsoft Viva Skills | skills.cloud.microsoft|
+|Microsoft Admin Center| [admin.cloud.microsoft](https://admin.cloud.microsoft)|
+|Microsoft Loop |[ loop.cloud.microsoft](https://loop.cloud.microsoft)|
+|Microsoft Mesh | [mesh.cloud.microsoft](https://mesh.cloud.microsoft)|
+|Microsoft Setup | [setup.cloud.microsoft](https://setup.cloud.microsoft)|
+|Microsoft Sway | [sway.cloud.microsoft](https://sway.cloud.microsoft)|
+|Microsoft Viva Engage | [engage.cloud.microsoft](https://engage.cloud.microsoft)|
+|Microsoft Viva Goals | [goals.cloud.microsoft](https://goals.cloud.microsoft)|
+|Microsoft Viva Home | [viva.cloud.microsoft](https://viva.cloud.microsoft)|
+|Microsoft Viva Insights | [insights.cloud.microsoft](https://insights.cloud.microsoft)|
+|Microsoft Viva Learning | [learning.cloud.microsoft](https://learning.cloud.microsoft)|
+|Microsoft Viva Pulse | [pulse.cloud.microsoft](https://pulse.cloud.microsoft)|
+|Microsoft Viva Skills | [skills.cloud.microsoft](https://skills.cloud.microsoft)|
 
 ## See also
 
