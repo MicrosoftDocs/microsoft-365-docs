@@ -30,7 +30,7 @@ The `.microsoft` top-level domain is exclusive to Microsoft. The new domain does
 
 Consolidating authenticated user-facing Microsoft 365 experiences to a single domain benefits customer in several ways. For end users, it streamlines the overall experience by reducing sign-ins, redirects, and delays when navigating across apps. For admins, it reduces the complexity of allowlists that are required to connect to Microsoft 365 services and help your organization stay secure and productive. For all our customers – and our developers – this change helps align for better and tighter integration across the Microsoft 365 ecosystem by streamlining development and improving performance of cross-app experiences.
 
-'Dot brand' top-level domains like `.microsoft` enhance security, trustworthiness, and integrity. Microsoft has exclusive rights to the `.microsoft` top-level domain, enabling enhanced security protocols and governance controls to be applicated across the entire domain hierarchy, starting from the top level. All experiences on the `.microsoft` domain are guaranteed to be legitimate and authentic, as Microsoft is the registry operator and sole registrant.
+'Dot brand' top-level domains like `.microsoft` enhance security, trustworthiness, and integrity. Microsoft has exclusive rights to the `.microsoft` top-level domain, enabling enhanced security protocols and governance controls to be applied across the entire domain hierarchy, starting from the top level. All experiences on the `.microsoft` domain are guaranteed to be legitimate and authentic, as Microsoft is the registry operator and sole registrant.
 
 ## Security considerations
 
@@ -47,7 +47,7 @@ The following Microsoft 365 products and services are now available in the `clou
 |:-----|:-----|
 |Microsoft 365 Service Health Status Page |[status.cloud.microsoft]( https://status.cloud.microsoft)|
 |Microsoft Admin Center| [admin.cloud.microsoft](https://admin.cloud.microsoft)|
-|Microsoft Loop |[ loop.cloud.microsoft](https://loop.cloud.microsoft)|
+|Microsoft Loop | [loop.cloud.microsoft](https://loop.cloud.microsoft)|
 |Microsoft Mesh | [mesh.cloud.microsoft](https://mesh.cloud.microsoft)|
 |Microsoft Setup | [setup.cloud.microsoft](https://setup.cloud.microsoft)|
 |Microsoft Sway | [sway.cloud.microsoft](https://sway.cloud.microsoft)|
