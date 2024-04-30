@@ -86,7 +86,7 @@ landingContent:
             url: ocr-overview.md
       - linkListType: architecture
         links:
-          - text: Microsoft 365 Archive (Preview)
+          - text: Microsoft 365 Archive
             url: /microsoft-365/archive
           - text: Microsoft Backup (Preview)
             url: /microsoft-365/backup
