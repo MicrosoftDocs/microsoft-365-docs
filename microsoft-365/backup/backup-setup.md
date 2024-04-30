@@ -11,8 +11,7 @@ ms.service: microsoft-365-backup
 ms.custom: backup
 search.appverid:
 ms.collection:
-    - enabler-strategic
-    - m365initiative-syntex
+    - essentials-get-started
 ms.localizationpriority:  medium
 description: Learn how to set up and configure Microsoft 365 Backup and backup policies.
 ---
@@ -30,6 +29,7 @@ Get started with Microsoft 365 Backup by following these simple three steps in t
 
 ## Step 1: Set up pay-as-you-go billing
 
+
 Microsoft 365 Backup is a pay-as-you-go offering that charges based on consumption, unlike traditional seat-based licenses. To set up pay-as-you-go for Microsoft 365 Backup, you will need to have this information:
 
 > [!div class="checklist"]
@@ -40,7 +40,11 @@ Microsoft 365 Backup is a pay-as-you-go offering that charges based on consumpti
 
 Once you have the information on this list, you are ready to [set up pay-as-you-go billing for Microsoft 365 Backup](backup-billing.md).
 
-<!---To set up pay-as-you-go billing, follow the steps in [Configure Microsoft Syntex for pay-as-you-go billing](../syntex-azure-billing.md).--->
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW1k4TO]
+
+</br>
 
 ### Permissions
 
