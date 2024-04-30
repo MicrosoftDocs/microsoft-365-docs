@@ -81,7 +81,7 @@ Users synchronized to your tenant from other tenants in your multitenant organiz
 
 As members, people from other tenants have a more seamless collaboration experience. This includes access to files using [*people in your organization* sharable links](/sharepoint/shareable-links-anyone-specific-people-organization). (Consider using [sensitivity labels](/purview/sensitivity-labels) if you need to limit who can access a file with a *people in your organization* link.)
 
-If some people from the other tenant already have guest accounts in your directory, the synchronization process doesn't change their user type to member. You can change these users' user type to member by [updating the user properties in Microsoft Entra ID](/azure/active-directory/fundamentals/how-to-manage-user-profile-info).
+If some people from the other tenant already have guest accounts in your directory, the synchronization process doesn't change their user type to member by default. You can change these users' user type to member by [updating the user properties in Microsoft Entra ID](/azure/active-directory/fundamentals/how-to-manage-user-profile-info) or updating your cross-tenant synchronization configuration mappings in [Microsoft Entra ID](/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-configure#step-9-review-attribute-mappings) to support converting from guest to member at scale.
 
 ## Set up initial user synchronization for a multitenant organization
 
