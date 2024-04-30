@@ -63,9 +63,10 @@ Your tenant comes with a default Power Platform environment. If you plan to use 
 
 You also need to [allocate AI Builder credits](/power-platform/admin/capacity-add-on) to the custom environment before you can create document processing models.
 
-If you have [AI Builder credits allocated](/power-platform/admin/capacity-add-on) to the environment, these credits will be used first. Once the credits are exhausted, the processing transactions are charged to the meter.
+If you have [AI Builder credits available](/power-platform/admin/capacity-add-on) to the environment, these credits will be used first. For both custom and a default Power Platform environments ,once the credits are exhausted, the processing transactions are charged to the meter.
 
 When using a custom environment, model creators must be assigned the Environment Maker security role. Model users must have permission to use (not edit) the model file in SharePoint libraries. For more information, see [Assign a security role to a user](/power-platform/admin/assign-security-roles). Custom security roles can be created to specifically grant access to the AI Builder tables as the Environment Maker role so those users can create models. You don't need to assign users this role if you're using the default Power Platform environment.
+
 
 <!---
 Users creating models in a [content center site](create-a-content-center.md) must be site members. Users creating models locally outside the content center must be site owners of those sites.--->
