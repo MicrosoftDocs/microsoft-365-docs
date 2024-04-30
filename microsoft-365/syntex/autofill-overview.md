@@ -55,3 +55,15 @@ Autofill columns are available for the following column data types:
 - Bulk processing options for existing library files will be added in a future release.
 
 - Currently, autofill columns don't support the following library types: FormServerTemplates, SitePages, Style Library, and SiteAssets.
+
+## Responsible AI
+
+### Overview
+
+An AI system includes not only the technology, but also the people who use it, the people affected by it, and the environment in which it's deployed. Microsoft's Responsible AI FAQs are intended to help you understand how AI technology works, the choices system owners and users can make that influence system performance and behavior, and the importance of thinking about the whole system, including the technology, the people, and the environment. You can use Responsible AI FAQs to better understand specific AI systems and features that Microsoft develops.
+
+Responsible AI FAQs are part of a broader effort to put Microsoft's AI principles into practice. To find out more, see [Microsoft AI principles](https://www.microsoft.com/ai/responsible-ai).
+
+### Responsible AI FAQs for autofill columns
+
+TBD.
