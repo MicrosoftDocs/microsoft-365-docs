@@ -69,7 +69,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Microsoft 365 Archive (Preview)
+          - text: Microsoft 365 Archive
             url: /microsoft-365/archive
           - text: SharePoint Advanced Management
             url: /sharepoint/advanced-management
