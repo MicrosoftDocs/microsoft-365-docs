@@ -10,14 +10,16 @@ ms.topic: article
 ms.collection:
   - m365initiative-viva-topics,
   - Tier1
-ms.service: viva 
-ms.subservice: viva-topics 
+ms.service: viva-topics 
 search.appverid:
 - MET150  
 ms.localizationpriority:  medium
 description: Learn how to use the lightweight management experience in Viva Engage.
 ---
 # Topics lightweight management in Viva Engage
+
+>[!NOTE]
+>Viva Topics will be retired in 2025. As part of that change, Viva Engage will return to a simplified topics mode. During the transition, we will pause proactive topics migrations to use Viva Topics, but continue migrations that enable Viva Engage networks to use [Answers in Viva](/viva/engage/eac-answers-overview-set-up#technical-requirements) by request. Learn more about the [migration](/microsoft-365/topics/topic-experiences-viva-engage), [the Topics experience](https://support.microsoft.com/topic/viva-topics-experience-in-yammer-8e85bc0d-086e-49a2-974b-39f60129257d), and the [Topics retirement](/microsoft-365/topics/changes-coming-to-topics).
 
 Topics lightweight management allows you to experience how Topics can enhance knowledge management in your organization without needing a license that includes Topics.
 

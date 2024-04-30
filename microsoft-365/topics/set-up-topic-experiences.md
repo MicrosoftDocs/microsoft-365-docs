@@ -12,8 +12,7 @@ ms.collection:
   - highpri
   - Tier1
   - essentials-get-started
-ms.service: viva 
-ms.subservice: viva-topics 
+ms.service: viva-topics 
 search.appverid:
 - MET150  
 ms.localizationpriority:  medium

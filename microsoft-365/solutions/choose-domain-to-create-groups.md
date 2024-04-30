@@ -3,8 +3,8 @@ title: "Choose the domain to use when creating Microsoft 365 groups"
 ms.reviewer: rahulnayak
 ms.date: 02/18/2020
 f1.keywords: NOCSH
-ms.author: mikeplum
-author: MikePlumleyMSFT
+ms.author: jtremper
+author: jacktremper
 manager: pamgreen
 audience: Admin
 ms.topic: article

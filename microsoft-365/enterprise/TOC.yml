@@ -554,8 +554,6 @@
               items: 
                 - name: Disable access to Sway
                   href: disable-access-to-sway-with-microsoft-365-powershell.md
-                - name: Disable access to services while assigning user licenses
-                  href: disable-access-to-services-while-assigning-user-licenses.md
         - name: Groups
           items: 
             - name: Manage security groups
