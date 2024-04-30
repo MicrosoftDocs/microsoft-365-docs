@@ -1,16 +1,15 @@
 ---
 ms.date: 04/01/2024
 ---
-|  Microsoft 365 Region                  |  PreferredDataLocation (PDL) Value
+|  Microsoft 365 Countries               |  PreferredDataLocation (PDL) Value
 |:---------------------------------------|:-------|
-|Macro Region Geography 2 - Asia-Pacific |APC
 |Australia                               |AUS
 |Brazil                                  |BRA
 |Canada                                  |CAN
-|Macro Region Geography 1 - EMEA         |EUR
 |France                                  |FRA
 |Germany                                 |DEU
 |India                                   |IND
+|Israel                                  |ISR
 |Italy                                   |ITA
 |Japan                                   |JPN
 |Korea                                   |KOR
