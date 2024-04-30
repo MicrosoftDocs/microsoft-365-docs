@@ -1,11 +1,11 @@
 ---
-title: Frequently asked questions about Microsoft 365 Archive (Preview)
+title: Frequently asked questions about Microsoft 365 Archive
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 04/11/2024
+ms.date: 04/30/2024
 ms.topic: conceptual
 ms.service: microsoft-365-archive
 ms.custom: archive
@@ -16,16 +16,13 @@ ms.localizationpriority:  medium
 description: Read frequently asked questions about Microsoft 365 Archive.
 ---
 
-# Frequently asked questions about Microsoft 365 Archive (Preview)
-
-> [!NOTE]
-> This feature is currently in preview and subject to change. The feature is currently rolling out and might not yet be fully available to all organizations. Before you begin, read the [Microsoft 365 Archive preview terms and conditions](archive-preview-terms.md).
+# Frequently asked questions about Microsoft 365 Archive
 
 #### What is the difference between Microsoft 365 Archive and SharePoint Advanced Management?
 
 - Microsoft 365 Archive gives the ability to archive a site in SharePoint.
 
-- Storage for archived sites is metered and charged at a $0.05/GB/month rate vs. the normal standard storage rate of $0.20/GB/month. For more information, see [Pricing model for Microsoft 365 Archive (Preview)](archive-pricing.md).
+- Storage for archived sites is metered and charged at a $0.05/GB/month rate vs. the normal standard storage rate of $0.20/GB/month. For more information, see [Pricing model for Microsoft 365 Archive](archive-pricing.md).
 
 - The site lifecycle management feature in SharePoint Advanced Management is a separate licensed offering that helps automate and orchestrate the movement of sites into the archive tier via admin-defined policies to remove manual operations. In other words, the site lifecycle management in SharePoint Advanced Management operates in conjunction with Microsoft 365 Archive.
 
