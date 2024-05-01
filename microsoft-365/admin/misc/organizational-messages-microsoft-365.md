@@ -26,6 +26,11 @@ description: "Learn how to send messages to your organization in Microsoft 365 u
 
 As an admin, you can now connect with your organization through customized messages using organizational messages, available in the Microsoft 365 admin center under **Reports**. This feature allows you to create and manage messages, and review delivery reports, all from a central location. Organizational Messages enhance in-product experiences, supporting remote and hybrid work scenarios, such as providing educational materials for employees, information on Microsoft 365 service or license availability, and updates on organizational initiatives. Use the power of organizational messages in the Microsoft 365 admin center to streamline your outreach within Microsoft products.
 
+To get started, go to [organizational messages in the Microsoft 365 admin center](https://aka.ms/organizationalmessagesportal).
+
+>[!NOTE]
+> This experience is available in preview starting May 2, 2024.
+
 ## What can I do with organizational messages?
 
 Organizational messages’ centralized experience within Microsoft 365 admin center includes the following features and capabilities:
