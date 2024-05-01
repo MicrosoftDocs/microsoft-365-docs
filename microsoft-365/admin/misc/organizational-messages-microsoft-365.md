@@ -149,7 +149,7 @@ If you have the Organizational Messages Writer Entra role as described above, yo
 > [!NOTE]
 > - Fully customized messages will require an approver to ‘approve’ any message before it is delivered to your users. However, selecting a premade message will not require any approval from your organization before it can be delivered to end users.
 > - Approvers cannot approve or reject a message that they personally created.
-> - ‘Rejecting’ a message will mark the message state as “Rejected”, requiring an author to ‘Withdraw’ the message and then ‘Modify’ the new draft.
+> - ‘Rejecting’ a message will mark the message state as 'Rejected', requiring an author to ‘Withdraw’ the message and then ‘Modify’ the new draft.
 > - Messages that are not reviewed (such as, approved or rejected) by approvers before the set “End date” of the message will automatically be rejected by the system to ensure minimum duration of delivery of messages are as expected by authors.
 
 ## Create a message
@@ -202,7 +202,7 @@ There are two primary forms of message creation that are enabled in this experie
 
 > [!NOTE]
 > - For the same channel (such as Windows Spotlight), images provided by your team for the last created message will be automatically provided for your next message. However, you can override that image with a new image upload.
-> - Once you click ‘Send for approval’ at the end of a fully customized message creation flow, anyone in your tenant that has the “Organizational Messages Approver” Entra role described above will be able to review and approve/reject your message.
+> - Once you select ‘Send for approval’ at the end of a fully customized message creation flow, anyone in your tenant that has the “Organizational Messages Approver” Entra role described above will be able to review and approve/reject your message.
 > - If you save your draft before the ‘Schedule’ step and thus do not provide a custom message name, the Draft will have a programmatically generated name based on the date-time when you saved the draft. You can edit this message name by modifying the draft message.
 > - Not all selections in the ‘Objective’ step might have premade messages available. However, all objectives will have the “create your own’ format available for full customization authoring.
 
