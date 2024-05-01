@@ -11,8 +11,7 @@ ms.service: microsoft-365-backup
 ms.custom: backup
 search.appverid:
 ms.collection:
-    - enabler-strategic
-    - m365initiative-syntex
+    - essentials-get-started
 ms.localizationpriority:  medium
 description: Learn about the charge model and pricing calculator for Microsoft 365 Backup.
 ---
@@ -140,6 +139,8 @@ Amount of storage used at the start of at the start of the period and at the end
 Number of total and active user mailboxes at the start of the period and at the end of the period. For example, 26 mailboxes and 30 mailboxes:
 
 ![Screenshot showing the number of total and active user mailboxes for Exchange.](../media/m365-backup/backup-exchange-mailbox-total.png)
+
+This example does not show archive mailboxes, but any archive mailbox size will count towards your backup storage.
 
 ##### Storage
 

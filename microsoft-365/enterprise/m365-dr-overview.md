@@ -29,11 +29,11 @@ In order to promote clarity in the capability descriptions on data residency fun
 | Term | Definition |
 |:-----|:-----|
 |Macro Region Geography <br/> |Macro Region Geography 1 – EMEA, Macro Region Geography 2 – Asia Pacific, Macro Region Geography 3 - Americas <br/> |
-|Macro Region Geography 1 - EMEA <br/> |Data centers in Austria, Finland, France, Ireland, Israel, Italy, Netherlands, Poland, Sweden <br/> |
+|Macro Region Geography 1 - EMEA <br/> |Data centers in Austria, Finland, France, Ireland, Israel, Italy, Netherlands, Poland, Spain, Sweden <br/> |
 |Macro Region Geography 2 - Asia Pacific <br/> |Data centers in Australia, Hong Kong Special Administrative Region, Japan, Malaysia, Singapore, South Korea <br/> |
-|Macro Region Geography 3 - Americas <br/> |Data centers in Brazil, Chile, United States <br/> |
-|Local Region Geography <br/> |Australia, Brazil, Canada, France, Germany, India, Israel, Italy, Japan, Poland, Qatar, South Korea, Norway, South Africa, Sweden, Switzerland, United Arab Emirates, United Kingdom <br/> |
-|Future Local Region Geography <br/> | Future planned data center regions: Indonesia, Spain, Mexico, Malaysia, Austria, Chile, New Zealand, Denmark, Greece, Taiwan, Saudi Arabia <br/> |
+|Macro Region Geography 3 - Americas <br/> |Data centers in Brazil, Chile, Mexico, United States <br/> |
+|Local Region Geography <br/> |Australia, Brazil, Canada, France, Germany, India, Israel, Italy, Japan, Mexico, Norway, Poland, Qatar, South Africa, South Korea, Spain, Sweden, Switzerland, United Arab Emirates, United Kingdom <br/> |
+|Future Local Region Geography <br/> | Future planned data center regions: Indonesia, Malaysia, Austria, Chile, New Zealand, Denmark, Greece, Taiwan, Saudi Arabia <br/> |
 |Geography <br/> |_Local Region Geography, Future Local Region Geography_, or _Macro Region Geography_ <br/> |
 |Satellite Geography <br/> |If a customer subscribes to the Multi Geo service, then they can set policy at a user level to store customer data in other Geographies outside of the _Tenant_ _Primary Provisioned Geography_ <br/> |
 |Microsoft Entra ID <br/> |Microsoft Entra ID <br/> |
@@ -134,11 +134,13 @@ There are three methods for ensuring that the _Tenant_ data location for a parti
 | Israel | M-A | M-A | M-A | M-A | A | A | A | A | A |
 | Italy | M-A | M-A | M-A | M-A | A | A | A | A | A |
 | Japan | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A | A |
+| Mexico | M-A | M-A | M-A | M-A | A | A | A | A | A |
+| Norway | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A | A |
 | Poland | M-A | M-A | M-A | M-A | A | A | A | A | A |
 | Qatar | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A | A |
-| South Korea | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A | A |
-| Norway | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A | A |
 | South Africa | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A | A |
+| South Korea | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A | A |
+| Spain | M-A | M-A | M-A | M-A | A | A | A | A | A |
 | Sweden | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A | A |
 | Switzerland | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A | A |
 | United Arab Emirates | P-M-A | P-M-A | P-M-A | P-M-A | A | A | A | A | A |
@@ -160,7 +162,7 @@ The following Regional Geographies can store data at rest.
 |Australia  |Sydney, Melbourne  |
 |Brazil  |Rio, Campinas  |
 |Canada   |Quebec City, Toronto  |
-|European Union   |Austria (Vienna), Finland (Helsinki), France (Paris, Marseille), Ireland (Dublin), Italy (Milan), Netherlands (Amsterdam), Poland (Warsaw), Sweden (Gävle, Sandviken, Staffanstorp)   |
+|European Union   |Austria (Vienna), Finland (Helsinki), France (Paris, Marseille), Ireland (Dublin), Italy (Milan), Netherlands (Amsterdam), Poland (Warsaw), Spain (Madrid), Sweden (Gävle, Sandviken, Staffanstorp)   |
 |France   |Paris, Marseille   |
 |Germany   |Frankfurt, Berlin    |
 |India  |Chennai, Mumbai, Pune    |
@@ -168,6 +170,8 @@ The following Regional Geographies can store data at rest.
 |Italy  |Milan    |
 |Japan   |Osaka, Tokyo   |
 |South Korea  |Busan, Seoul    |
+|Spain   |Madrid    |
+|Mexico   |Queretaro    |
 |Norway   |Oslo, Stavanger    |
 |Poland   |Warsaw    |
 |Qatar   |Doha     |

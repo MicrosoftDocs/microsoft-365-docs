@@ -36,7 +36,7 @@ For information about how to create an Azure subscription, see [Create your init
 
 For information about how to create an Azure resource group, see [Manage Azure resource groups by using the Azure portal](/azure/azure-resource-manager/management/manage-resource-groups-portal).
 
-## Set up Microsoft Syntex billing in Azure
+## Connect Syntex to an Azure subscription for billing
 
 When you set up Microsoft Syntex billing in Azure, events will be sent to the Azure meter in your account, and you'll be able to view the pages processed for unstructured and prebuilt document processing models.
 
@@ -45,7 +45,7 @@ The following permissions are required to set up Microsoft Syntex billing:
 - You must have Global Administrator or SharePoint Administrator permissions to be able to access the Microsoft 365 admin center and set up Syntex.
 - You must have owner or contributor rights to the Azure subscription that you want to use for Microsoft Syntex billing.
 
-To configure Microsoft Syntex billing
+To configure Microsoft Syntex billing, follow these steps:
 
 1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>, and then view the **Files and content** section.
 
@@ -77,7 +77,7 @@ The following Microsoft Syntex products are currently available:
 - Content assembly
 - Image tagging
 - Taxonomy tagging
-- Translation
+- Document translation
 - Syntex eSignature
 - Optical character recognition
 - Microsoft 365 Archive (Preview)
