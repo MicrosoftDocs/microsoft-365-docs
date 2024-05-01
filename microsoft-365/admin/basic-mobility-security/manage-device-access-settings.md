@@ -106,7 +106,7 @@ To run the Get-GraphUserDeviceComplianceStatus.ps1 script, you need to enable th
    Set-ExecutionPolicy RemoteSigned
    ```
 
-3. When prompted, type Y and then press Enter.
+1. When prompted, type **Y** and then press Enter.
 
 #### Run the Get-MgDevice cmdlet to display details for all devices in your organization
 
