@@ -90,7 +90,8 @@ To help secure your organization information, you should block app access to Mic
 **To block app access:**
 
 1. From your browser, type [https://compliance.microsoft.com/basicmobilityandsecurity](https://compliance.microsoft.com/basicmobilityandsecurity).
-2. Select **Manage organization-wide device access settings**.
+1. Select **Organization Setting** tab.
+
 3. To block unsupported devices, choose **Access** under **If a device isn't supported by Basic Mobility and Security for Microsoft 365**, and then select **Save**.
 
    :::image type="content" source="../../media/basic-mobility-security/basic-mobility-access.png" alt-text="Basic Mobility and Security block access option.":::
@@ -101,9 +102,9 @@ If you want to exclude some people from conditional access checks on their mobil
 
 1. From your browser, type [https://compliance.microsoft.com/basicmobilityandsecurity](https://compliance.microsoft.com/basicmobilityandsecurity).
 
-2. Select **Manage organization-wide device access settings**.
+1. Select  **Organization Setting** tab.
 
-   :::image type="content" source="../../media/basic-mobility-security/basic-mobility-microsoft-purview.png" alt-text="Basic Mobility and Security create a policy option.":::
+      :::image type="content" source="../../media/basic-mobility-security/basic-mobility-microsoft-purview.png" alt-text="Basic Mobility and Security create a policy option.":::
 
 3. Select **Add** to add the security group that has users you want to exclude from having blocked access to Microsoft 365. When a user has been added to this list, they can access Microsoft 365 email when they are using an unsupported device.
 
@@ -111,9 +112,9 @@ If you want to exclude some people from conditional access checks on their mobil
 
 5. Select the name, and then **Add** > **Save**.
 
-6. On the **Organization-wide device access settings** panel, choose **Save**.
+1. On the  **Organization Setting** panel, choose **Save**.
 
-   :::image type="content" source="../../media/basic-mobility-security/basic-mobility-groups.png" alt-text="Basic Mobility and Security allow access option.":::
+      :::image type="content" source="../../media/basic-mobility-security/basic-mobility-groups.png" alt-text="Basic Mobility and Security allow access option.":::
 
 ## What is the impact of security policies on different device types?
 
