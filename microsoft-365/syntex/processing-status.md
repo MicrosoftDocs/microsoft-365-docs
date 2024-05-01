@@ -33,7 +33,7 @@ The **Processing status** column shows you whether the processing of a file is i
 | Failed | The file has been queued, but can't be processed (for example, the file type isn't supported or there's an issue with an image or text). |
 
 > [!NOTE]
-> When a file is uploaded or edited, the **Processing status** column will not show as "In progress." It will remain unchanged until processing completes, and then the status will show as "Finished" or "Failed."
+> When a file is uploaded or edited, the **Processing status** column will not change to "In progress." It will remain unchanged until processing completes, and then the status will show as "Finished" or "Failed."
 
 <!---
 | Processing status | Description |
