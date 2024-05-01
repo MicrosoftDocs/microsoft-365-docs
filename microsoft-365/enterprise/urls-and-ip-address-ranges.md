@@ -3,7 +3,7 @@ title: "Microsoft 365 URLs and IP address ranges"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 03/29/2024
+ms.date: 04/23/2024
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
@@ -51,7 +51,7 @@ Data columns shown are:
 
 - **Category**: Shows whether the endpoint set is categorized as **Optimize**, **Allow**, or **Default**. This column also lists which endpoint sets are required to have network connectivity. For endpoint sets that aren't required to have network connectivity, we provide notes in this field to indicate what functionality would be missing if the endpoint set is blocked. If you're excluding an entire service area, the endpoint sets listed as required don't require connectivity.
 
-   You can read about these categories and guidance for their management in [New Microsoft 365 endpoint categories](microsoft-365-network-connectivity-principles.md#new-office-365-endpoint-categories).
+   You can read about these categories and guidance for their management in [Optimizing connectivity to Microsoft 365 services](microsoft-365-network-connectivity-principles.md#optimizing-connectivity-to-microsoft-365-services).
 
 - **ER**: This is **Yes** if the endpoint set is supported over Azure ExpressRoute with Microsoft 365 route prefixes. The BGP community that includes the route prefixes shown aligns with the service area listed. When ER is **No**, this means that ExpressRoute is not supported for this endpoint set.
 

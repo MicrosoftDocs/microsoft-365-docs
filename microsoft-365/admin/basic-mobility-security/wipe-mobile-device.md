@@ -20,6 +20,7 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
+- basic-mobility-security
 search.appverid:
 - MET150
 description: "Use built-in Basic Mobility and Security to remove information from enrolled devices."

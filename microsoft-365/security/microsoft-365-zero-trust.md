@@ -20,7 +20,7 @@ ms.collection:
 - zerotrust-solution
 - highpri
 - tier1
-ms.date: 1/31/2023
+ms.date: 04/09/2024
 ---
 
 # Zero Trust deployment plan with Microsoft 365

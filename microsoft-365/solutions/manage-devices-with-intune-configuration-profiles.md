@@ -7,7 +7,7 @@ f1.keywords:
 - Windows security baselines for Intune
 - customize configuration profiles
 manager: dougeby
-ms.date: 10/20/2021
+ms.date: 04/17/2024
 audience: ITPro
 description: Get started with configuration profiles to enforce secure settings on devices using Intune to transition these security controls to the cloud.
 ms.topic: article
@@ -29,8 +29,7 @@ Microsoft Intune includes settings and features you can enable or disable on dif
 
 This article provides guidance on getting started with configuration profiles. 
 
-
-![Steps for managing devices](../media/devices/intune-mdm-step-4.png#lightbox)
+:::image type="content" source="../media/devices/intune-mdm-step-4.png" alt-text="The fourth step of Mobile Device Management to enforce secure settings on devices with configuration profiles." lightbox="../media/devices/intune-mdm-step-4.png":::
 
 Configuration profiles give you the ability to configure important protection and to bring devices into compliance so they can access your resources. Previously, these kinds of configuration changes were configured by using Group Policy settings in Active Directory Domain Services. A modern security strategy includes moving security controls to the cloud where enforcement of these controls isn't dependent on on-premises resources and access. Intune configuration profiles are the way to transition these security controls to the cloud. 
 
@@ -42,7 +41,7 @@ As a starting point, if you want to align your device configurations to Microsof
 
 To deploy the Windows security baselines for Intune, available for Windows 10 and Windows 11. See [Use security baselines to configure Windows devices in Intune](/mem/intune/protect/security-baselines) to learn about the available baselines.
 
-For now, just deploy the most appropriate MDM security baseline. See [Manage security baseline profiles in Microsoft Intune ](/mem/intune/protect/security-baselines-configure)to create the profile and choose the baseline version.
+For now, just deploy the most appropriate MDM security baseline. See [Manage security baseline profiles in Microsoft Intune](/mem/intune/protect/security-baselines-configure)to create the profile and choose the baseline version.
 
 Later, when Microsoft Defender for Endpoint is set up and you’ve connected Intune, deploy the Defender for Endpoint baselines. This topic is covered in the next article in this series: [Step 6. Monitor device risk and compliance to security baselines](manage-devices-with-intune-monitor-risk.md).
 
@@ -54,7 +53,7 @@ In addition to deploying the pre-configured baselines, many enterprise-scale org
 
 The many settings you can configure by using configuration profiles can be grouped into four categories, as illustrated below.
 
-![Intune device profile categories](../media/devices/intune-device-profile-categories.png#lightbox)
+:::image type="content" source="../media/devices/intune-device-profile-categories.png" alt-text="Intune device profile categories including device features, device restrictions, access configuration, and custom settings." lightbox="../media/devices/intune-device-profile-categories.png":::
 
 The following table describes the illustration.
 
@@ -67,9 +66,10 @@ The following table describes the illustration.
 |    |         |         |
 
 When customizing configuration profiles for your organization, use the following guidance:
+
 - Simplify your security governance strategy by keeping the overall number of policies small.
 - Group settings into the categories listed above, or categories that make sense for your organization.
-- When moving security controls from Group Policy Objects (GPO) to Intune configuration profiles, consider whether the settings configured by each GPO are still relevant, and needed to contribute to your overall cloud security strategy. Conditional access and the many policies that can be configured across cloud services, including Intune, provide more sophisticated protection than could be configured in an on-premises environment where custom GPOs were originally designed.
+- When moving security controls from Group Policy Objects (GPO) to Intune configuration profiles, consider whether the settings configured by each GPO are still relevant, and needed to contribute to your overall cloud security strategy. Conditional Access and the many policies that can be configured across cloud services, including Intune, provide more sophisticated protection than could be configured in an on-premises environment where custom GPOs were originally designed.
 - Utilize Group Policy Analytics to compare and map your current GPO settings to capabilities within Microsoft Intune. See [Analyze your on-premises group policy objects (GPO) using Group Policy analytics](/mem/intune/configuration/group-policy-analytics) in Microsoft Intune.
 - When utilizing custom configuration profiles, be sure to use the guidance here: [Create a profile with custom settings in Intune](/mem/intune/configuration/custom-settings-configure).
 
@@ -86,6 +86,6 @@ If your environment includes on-prem GPOs, the following features are a good tra
 - [Admin templates (ADMX)](/mem/intune/configuration/administrative-templates-windows)
 - [Settings Catalog](/mem/intune/configuration/settings-catalog)
 
+## Next step
 
-## Next steps
 Go to [Step 6. Monitor device risk and compliance to security baselines](manage-devices-with-intune-monitor-risk.md).

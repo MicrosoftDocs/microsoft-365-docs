@@ -2,9 +2,9 @@
 ms.date: 08/21/2023
 title: "Summary of governance, lifecycle and compliance capabilities for Loop experiences"
 ms.reviewer: dancost, tonchan
-ms.author: mikeplum
-author: MikePlumleyMSFT
-manager: serdars
+ms.author: jtremper
+author: jacktremper
+manager: pamgreen
 recommendations: true
 audience: Admin
 f1.keywords:

@@ -20,7 +20,6 @@ ms.custom:
   - Ent_Office_Other
   - O365ITProTrain
   - has-azure-ad-ps-ref
-  - azure-ad-ref-level-one-done
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: "Learn how to use PowerShell to maintain membership in Microsoft 365 groups."
 ---

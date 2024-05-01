@@ -17,6 +17,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - m365copilot
+- magic-ai-copilot
 description: "Learn about the steps to deploy Microsoft Copilot for Microsoft 365 to your users."
 ---
 

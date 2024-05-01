@@ -2,7 +2,7 @@
 title: Performing Bulk SharePoint site Cross-tenant migrations (preview)
 ms.author: jtremper
 author: MicrosoftHeidi
-manager: serdars
+manager: pamgreen
 ms.date: 10/13/2023
 recommendations: true
 audience: ITPro

@@ -1,8 +1,8 @@
 ---
 title: Overview of Loop workspaces storage and permissions
-ms.author: mikeplum
-author: MikePlumleyMSFT
-manager: serdars
+ms.author: jtremper
+author: jacktremper
+manager: pamgreen
 audience: Admin
 ms.topic: conceptual
 ms.service: loop
