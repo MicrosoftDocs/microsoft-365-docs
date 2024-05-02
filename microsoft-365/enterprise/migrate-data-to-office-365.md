@@ -7,6 +7,7 @@ ms.date: 08/10/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 ms.collection: 
 - scotvorg
@@ -19,7 +20,7 @@ ms.assetid: e2fdfc8d-547e-4419-8628-2738ed4e0f46
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-description: "In this article, you will find the resources to help you migrate your organization data to Microsoft 365."
+description: "In this article, you'll find the resources to help you migrate your organization data to Microsoft 365."
 ---
 
 # Migrate your organization data to Microsoft 365 Enterprise
@@ -36,7 +37,7 @@ If you want help with getting Microsoft 365 setup, [FastTrack](https://fasttrack
 - Find alternative ways [people in your organization can migrate their own email, contacts, and calendars](https://support.office.com/article/Migrate-email-and-contacts-to-Office-365-for-business-a3e3bddb-582e-4133-8670-e61b9f58627e).
 
 ## Migrate files and folders
-- [Migrate to SharePoint Online and OneDrive](/sharepointmigration/migrate-to-sharepoint-online). (Administrator)
+- [Migrate to SharePoint and OneDrive](/sharepointmigration/migrate-to-sharepoint-online). (Administrator)
 - [SharePoint Server hybrid configuration roadmaps](/SharePoint/hybrid/configuration-roadmaps). (Administrator)
 
 ## Migrate Skype for Business users
