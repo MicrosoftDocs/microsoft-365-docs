@@ -42,7 +42,7 @@ Now you're ready to start your SharePoint migration. Before starting any cross-t
    Get-SPOCrossTenantCompatibilityStatus –PartnerCrossTenantHostURL [Target tenant hostname]
    ```
 
-2. To start the migration, a SharePoint Online Admin or Microsoft 365 Global Admin of the source tenant must run the following command:
+2. To start the migration, a SharePoint Admin or Microsoft 365 Global Admin of the source tenant must run the following command:
 
    ```PowerShell
    Start-SPOCrossTenantGroupContentMove  -SourceSiteUrl <…> -TargetSiteUrl <…> -TargetCrossTenantHostUrl| <…>
@@ -61,7 +61,7 @@ Now you're ready to start your SharePoint migration. Before starting any cross-t
    ```powershell
    Get-SPOCrossTenantCompatibilityStatus –PartnerCrossTenantHostURL [Target tenant hostname]
 
-2. To start the migration, a SharePoint Online Admin or Microsoft 365 Global Admin of the source tenant must run the following command:
+2. To start the migration, a SharePoint Admin or Microsoft 365 Global Admin of the source tenant must run the following command:
 
    ```powershell
    Start-SPOCrossTenantGroupContentMove  -SourceGroupAlias <…> -TargetGroupAlias <…> -TargetCrossTenantHostUrl <…>
