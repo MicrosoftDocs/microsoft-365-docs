@@ -7,6 +7,7 @@ ms.date: 09/25/2023
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-enterprise
+ms.subservice: multi-tenant
 ms.localizationpriority: medium
 ms.collection:
 - scotvorg
