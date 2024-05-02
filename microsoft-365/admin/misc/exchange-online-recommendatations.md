@@ -53,7 +53,7 @@ Use the [Exchange admin center](https://admin.exchange.microsoft.com/) to make c
 
 ## Create multiple email addresses
 
-Set up your mailbox to have more than one email address associated with it. These additional addresses are called *aliases*. For more information, see [Add or remove email addresses for a mailbox in Exchange Online](https://learn.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/add-or-remove-email-addresses).
+Set up your mailbox to have more than one email address associated with it. These additional addresses are called *aliases*. For more information, see [Add or remove email addresses for a mailbox in Exchange Online](/exchange/recipients-in-exchange-online/manage-user-mailboxes/add-or-remove-email-addresses).
 
 1. In the **Exchange Admin Center**, go to **Recipients** and then **Mailboxes**.
 2. Go to the list of user mailboxes and select the mailbox to add an email address to. A display pane opens for the selected user mailbox.
