@@ -12,8 +12,7 @@ search.appverid:
 ms.custom: 
 - intro-overview
 - intro-get-started
-ms.service: viva
-ms.subservice: viva-topics
+ms.service: viva-topics
 ms.collection:
   - enabler-strategic
   - m365initiative-viva-topics
