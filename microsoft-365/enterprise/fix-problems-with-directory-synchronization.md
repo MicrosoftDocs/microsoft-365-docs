@@ -83,8 +83,6 @@ To update from Azure AD Sync to Microsoft Entra Connect, see [the upgrade instru
     
 - [Script to count total synchronized objects](/samples/browse/?redirectedfrom=TechNet-Gallery)
     
-- [Use PowerShell to fix empty DisplayName attributes for mail-enabled groups](https://go.microsoft.com/fwlink/p/?LinkId=396728)
-    
 - [Use PowerShell to fix duplicate UPN](https://go.microsoft.com/fwlink/p/?LinkId=396730)
     
 - [Use PowerShell to fix duplicate email addresses](https://go.microsoft.com/fwlink/p/?LinkId=396731)
