@@ -54,7 +54,7 @@ When a user has been inactive in Microsoft 365 web apps for the time period you 
 
     - Outlook Web App
 
-    - OneDrive for Business
+    - OneDrive
 
     - SharePoint Online (SPO)
  
@@ -119,7 +119,7 @@ The following Microsoft 365 apps are supported.
 
 - Outlook Web App
 
-- OneDrive for Business
+- OneDrive
 
 - SharePoint Online (SPO)
 
