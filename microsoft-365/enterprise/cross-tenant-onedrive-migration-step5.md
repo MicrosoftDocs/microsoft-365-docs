@@ -8,7 +8,6 @@ recommendations: true
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-migration
-ms.subservice: multi-tenant
 ms.localizationpriority: high
 ms.collection:
 - SPMigration
