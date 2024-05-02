@@ -313,8 +313,6 @@ You can find more information in the following documents:
 
 There are several other public Microsoft documents for our other preview product experiences:
 
-- [Microsoft Adoption Score Organizational Messages](/microsoft-365/admin/adoption/organizational-messages.md)
-
 - [Overview of organizational messages in Microsoft Intune](/mem/intune/remote-actions/organizational-messages-overview)
 
 ### What do the different message states mean?
