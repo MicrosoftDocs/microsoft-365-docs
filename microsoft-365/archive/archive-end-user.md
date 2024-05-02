@@ -1,11 +1,11 @@
 ---
-title: End user experience in Microsoft 365 Archive (Preview)
+title: End user experience in Microsoft 365 Archive
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 04/11/2024
+ms.date: 04/30/2024
 ms.topic: conceptual
 ms.service: microsoft-365-archive
 ms.custom: archive
@@ -16,10 +16,7 @@ ms.localizationpriority:  medium
 description: Learn about end-user features for archived sites in Microsoft 365 Archive.
 ---
 
-# End user experience in Microsoft 365 Archive (Preview)
-
-> [!NOTE]
-> This feature is currently in preview and subject to change. The feature is currently rolling out and might not yet be fully available to all organizations.
+# End user experience in Microsoft 365 Archive
 
 End users aren't able to access or search for any content that has been archived. Whenever users try to access archived content, they see a message stating that the site has been archived.
 

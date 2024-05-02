@@ -17,6 +17,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - m365copilot
+- magic-ai-copilot
 description: "Learn how to manage Microsoft Copilot for Microsoft 365 access to web content for your organization."
 ---
 
