@@ -29,7 +29,7 @@ description: Learn how to use the tools included in SharePoint to optimize image
 
 This article will help you understand how to optimize images in SharePoint modern site pages.
 
-For information about optimizing images in classic publishing sites, see [Image optimization for SharePoint](image-optimization-for-sharepoint-online.md)..
+For information about optimizing images in classic publishing sites, see [Image optimization for SharePoint](image-optimization-for-sharepoint-online.md).
 
 >[!NOTE]
 >For more information about performance in SharePoint modern portals, see [Performance in the modern SharePoint experience](/sharepoint/modern-experience-performance).
@@ -45,8 +45,8 @@ When you analyze a SharePoint modern site with the Page Diagnostics for SharePoi
 
 Possible results include:
 
-- **Attention required** (red): The page contains **one or more** images over 300KB in size
-- **No action required** (green): The page contains no images over 300KB in size
+- **Attention required** (red): The page contains **one or more** images over 300 KB in size
+- **No action required** (green): The page contains no images over 300 KB in size
 
 If the **Large images detected** result appears in the **Attention required** section of the results, you can click the result to see additional details.
 
@@ -54,7 +54,7 @@ If the **Large images detected** result appears in the **Attention required** se
 
 ## Remediate large image issues
 
-If a page contains images over 300KB in size, select the **Large images detected** result to see which images are too large. In modern SharePoint pages, renditions of images are automatically provided and sized depending on the size of the browser window and the resolution of the client monitor. You should always optimize images for web use prior to upload to SharePoint. Very large images will be automatically reduced in size and resolution which can result in unexpected rendering characteristics.
+If a page contains images over 300 KB in size, select the **Large images detected** result to see which images are too large. In modern SharePoint pages, renditions of images are automatically provided and sized depending on the size of the browser window and the resolution of the client monitor. You should always optimize images for web use prior to upload to SharePoint. Very large images will be automatically reduced in size and resolution which can result in unexpected rendering characteristics.
 
 Before you make page revisions to remediate performance issues, make a note of the page load time in the analysis results. Run the tool again after your revision to see if the new result is within the baseline standard, and check the new page load time to see if there was an improvement.
 
@@ -63,7 +63,7 @@ Before you make page revisions to remediate performance issues, make a note of t
 >[!NOTE]
 >Page load time can vary based on a variety of factors such as network load, time of day, and other transient conditions. You should test page load time a few times before and after making changes to help you average the results.
 
-## Related topics
+## Related articles
 
 [Tune SharePoint performance](tune-sharepoint-online-performance.md)
 
