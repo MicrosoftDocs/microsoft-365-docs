@@ -265,7 +265,7 @@
           href: get-help-with-domains/find-and-fix-issues.md
     - name: Manage your data and services
       items:
-         - name: Microsoft 365 Copilot extensibility
+         - name: Copilot for Microsoft 365 extensibility
            items:
             - name: Manage plugins for Copilot
               href: manage/manage-plugins-for-copilot-in-integrated-apps.md
@@ -365,6 +365,8 @@
            href: manage/pin-apps-to-app-launcher.md
          - name: Upgrade users to the latest apps
            href: setup/upgrade-users-to-latest-office-client.md
+         - name: Organizational messages
+           href: misc/organizational-messages-microsoft-365.md
          - name: Integrated apps
            items:
             - name: What is Integrated Apps
