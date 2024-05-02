@@ -137,9 +137,9 @@ The following Microsoft 365 apps are supported.
 
 If you're working on a different web app with the same account, the activity in that web app won't be applied to the idle session timeout.
 
-### I'm active in Azure Portal, but I'm logged out of other M365 Apps for inactivity.  Why am I logged out?
+### I'm active in Azure portal, but I'm logged out of other M365 Apps for inactivity.  Why am I logged out?
 
-Azure Portal supports a similar inactivity feature, but is supported by Azure Portal only. For more information, see [Azure Portal: Signing-Out + Notification](/azure/azure-portal/set-preferences#signing-out--notifications).
+Azure portal supports a similar inactivity feature, but is supported by Azure portal only. For more information, see [Azure portal: Signing-Out + Notification](/azure/azure-portal/set-preferences#signing-out--notifications).
 
 ### I want to make changes to the idle session timeout policy or delete it. How can I do that?
 
