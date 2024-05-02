@@ -59,8 +59,8 @@ foreach ($y in $x)
 
 There are two ways to run this command set in the SharePoint Management Shell command prompt:
 
-- Copy the commands into Notepad (or another text editor), modify the value of the **$siteURL** variable, select the commands, and then paste them into the SharePoint Management Shell command prompt. When you do, PowerShell will stop at a **>>** prompt. Press Enter to execute the `foreach` command.<br/>
-- Copy the commands into Notepad (or another text editor), modify the value of the **$siteURL** variable, and then save this text file with a name and the .ps1 extension in a suitable folder. Next, run the script from the SharePoint Management Shell command prompt by specifying its path and file name. Here is an example command:
+- Copy the commands into Notepad (or another text editor), modify the value of the **$siteURL** variable, select the commands, and then paste them into the SharePoint Management Shell command prompt. When you do, PowerShell stops at a **>>** prompt. Press Enter to execute the `foreach` command.<br/>
+- Copy the commands into Notepad (or another text editor), modify the value of the **$siteURL** variable, and then save this text file with a name and the .ps1 extension in a suitable folder. Next, run the script from the SharePoint Management Shell command prompt by specifying its path and file name. Here's an example command:
 
 ```powershell
 C:\Scripts\SiteGroupsAndUsers.ps1
@@ -70,9 +70,9 @@ In both cases, you should see something similar to this:
 
 ![SharePoint site groups.](../media/SPO-site-groups.png)
 
-These are all the groups that have been created for the site `https://litwareinc.sharepoint.com/sites/finance`, and all the users assigned to those groups. The group names are in yellow to help you separate group names from their members.
+These are all the groups that were created for the site `https://litwareinc.sharepoint.com/sites/finance`, and all the users assigned to those groups. The group names are in yellow to help you separate group names from their members.
 
-As another example, here is a command set that lists the groups, and all the group memberships, for all of your SharePoint sites.
+As another example, here's a command set that lists the groups, and all the group memberships, for all of your SharePoint sites.
 
 ```powershell
 $x = Get-SPOSite

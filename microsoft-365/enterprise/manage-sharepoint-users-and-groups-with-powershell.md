@@ -56,7 +56,7 @@ Get a list of the users in your tenant with this command:
 Get-SPOSite | ForEach {Get-SPOUser -Site $_.Url}
 ```
 
-## Add a user to the Site Collection Administrators group
+## Add a user to the site admins group
 
 You use the `Set-SPOUser` cmdlet to add a user to the list of site admins on a site collection.
 
@@ -69,7 +69,7 @@ Set-SPOUser -Site https://$tenant.sharepoint.com/sites/$site -LoginName $user@$t
 
 To use these commands, replace everything within the quotes, including the < and > characters, with the correct names.
 
-For example, this set of commands adds Opal Castillo (user name opalc) to the list of Site Collection Administrators on the ContosoTest site collection in the Contoso tenancy:
+For example, this set of commands adds Opal Castillo (user name opalc) to the list of site admins on the ContosoTest site collection in the Contoso tenancy:
 
 ```powershell
 $tenant = "contoso"
@@ -82,7 +82,7 @@ You can copy and paste these commands into Notepad, change the variable values f
 
 ## Add a user to other site collection groups
 
-In this task, we'll use the `Add-SPOUser` cmdlet to add a user to a SharePoint group on a site collection.
+In this task, we use the `Add-SPOUser` cmdlet to add a user to a SharePoint group on a site collection.
 
 ```powershell
 $tenant = "<tenant name, such as litwareinc for litwareinc.com>"
@@ -131,7 +131,7 @@ New-SPOSiteGroup -Group $group -PermissionLevels $level -Site https://$tenant.sh
 
 Sometimes you have to remove a user from a site or even all sites. Perhaps the employee moves from one division to another or leaves the company. You can do this for one employee easily in the UI, but this isn't easily done when you have to move a complete division from one site to another.
 
-However by using the SharePoint Management Shell and CSV files, this is fast and easy. In this task, you'll use Windows PowerShell to remove a user from a site collection security group. Then you'll use a CSV file and remove lots of users from different sites.
+However by using the SharePoint Management Shell and CSV files, this is fast and easy. In this task, you use Windows PowerShell to remove a user from a site collection security group. Then you use a CSV file and remove lots of users from different sites.
 
 We'll be using the 'Remove-SPOUser' cmdlet to remove a single Microsoft 365 user from a site collection group so we can see the command syntax. Here's how the syntax looks:
 
@@ -172,7 +172,7 @@ The basic process is to create a CSV file that has headers (columns) that corres
 
 For example, let's create a CSV file to define a group of site collections, groups, and permissions. Next, we'll create a CSV file to populate the groups with users. Finally, we'll create and run a Windows PowerShell script that creates and populates the groups.
 
-The first CSV file will add one or more groups to one or more site collections and will have this structure:
+The first CSV file adds one or more groups to one or more site collections and will have this structure:
 
 Header:
 
@@ -200,7 +200,7 @@ https://contoso.sharepoint.com/sites/Blog01,Contoso Blog Editors,Edit
 https://contoso.sharepoint.com/sites/Project01,Project Alpha Approvers,Full Control
 ```
 
-The second CSV file will add one or more users to one or more groups and will have this structure:
+The second CSV file adds one or more users to one or more groups and will have this structure:
 
 Header:
 
@@ -253,7 +253,7 @@ $site = "<site name>"
 Get-SPOUser -Site https://$tenant.sharepoint.com/sites/$site | select * | Format-table -Wrap -AutoSize | Out-File c\UsersReport.txt -Force -Width 360 -Append
 ```
 
-This will grab the data for these three sites and write them to a text file on your local drive. The parameter –Append will add new content to an existing file.
+This grabs the data for these three sites and writes them to a text file on your local drive. The parameter –Append adds new content to an existing file.
 
 For example, let's run a report on the ContosoTest, TeamSite01, and Project01 sites for the Contoso1 tenant:
 
