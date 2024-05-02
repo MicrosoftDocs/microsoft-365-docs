@@ -11,7 +11,7 @@ ms.collection:
   - m365initiative-viva-topics,
   - highpri
   - Tier1
-ms.service: viva-topics 
+ms.service: viva-topics
 search.appverid:
 - MET150  
 ms.localizationpriority:  medium

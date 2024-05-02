@@ -11,8 +11,7 @@ ms.service: microsoft-365-backup
 ms.custom: backup
 search.appverid:
 ms.collection:
-    - enabler-strategic
-    - m365initiative-syntex
+    - essentials-get-started
 ms.localizationpriority:  medium
 description: Learn about the charge model and pricing calculator for Microsoft 365 Backup.
 ---
