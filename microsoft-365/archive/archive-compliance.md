@@ -1,22 +1,22 @@
 ---
-title: Compliance features in Microsoft 365 Archive (Preview)
+title: Compliance features in Microsoft 365 Archive
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 04/11/2024
+ms.date: 04/30/2024
 ms.topic: conceptual
 ms.service: microsoft-365-archive
 ms.custom: archive
 search.appverid:
 ms.collection:
-    - m365initiative-syntex
+    - essentials-compliance
 ms.localizationpriority:  medium
 description: Learn about compliance features for archived sites in Microsoft 365 Archive.
 ---
 
-# Compliance features in Microsoft 365 Archive (Preview)
+# Compliance features in Microsoft 365 Archive
 
 > [!NOTE]
 > Microsoft Purview features work seamlessly with archived content. For example, you can apply retention hold on archived content without needing to unarchive it. Likewise, you can also archive content in retention hold without needing to move or delete it from retention scope.
