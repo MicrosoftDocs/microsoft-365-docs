@@ -80,7 +80,7 @@ Before working with organizational messages, make sure your team satisfies the f
   - For example, any message configured to be delivered to a Windows channel, like Windows Spotlight, requires that recipients use **Windows 11 Enterprise**.
 
 > [!IMPORTANT]
-> Organizational messages public preview features will not be restricted based on the licenses held by participating tenants, authors, approvers, or message recipients. However, some organizational messages features might be restricted to particular Microsoft licenses in the future.
+> Organizational messages preview features will not be restricted based on the licenses held by participating tenants, authors, approvers, or message recipients. However, some organizational messages features might be restricted to particular Microsoft licenses in the future.
 
 ## Get started
 
@@ -150,7 +150,7 @@ If you have the Organizational Messages Writer Entra role as described above, yo
 > - Fully customized messages will require an approver to ‘approve’ any message before it is delivered to your users. However, selecting a premade message will not require any approval from your organization before it can be delivered to end users.
 > - Approvers cannot approve or reject a message that they personally created.
 > - ‘Rejecting’ a message will mark the message state as 'Rejected', requiring an author to ‘Withdraw’ the message and then ‘Modify’ the new draft.
-> - Messages that are not reviewed (such as, approved or rejected) by approvers before the set “End date” of the message will automatically be rejected by the system to ensure minimum duration of delivery of messages are as expected by authors.
+> - Messages that are not reviewed (such as, approved or rejected) by approvers before the set 'End date' of the message will automatically be rejected by the system to ensure minimum duration of delivery of messages are as expected by authors.
 
 ## Create a message
 
