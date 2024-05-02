@@ -108,7 +108,7 @@ You can choose to receive your organization's invoices as email attachments. How
 
 If you have an MCA billing account type, the option to receive your invoice as an attachment to your invoice notification emails is linked with your billing profile. To turn on the invoice email attachment setting for a specific billing profile, use the following steps.
 
-1. In the admin center, go to the **Billing** > [Billing accounts](https://go.microsoft.com/fwlink/p/?linkid=2102895"https://go.microsoft.com/fwlink/p/?linkid=2102895") page.
+1. In the admin center, go to the **Billing** > [Billing accounts](https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank") page.
 
 1. On the **Overview** tab, select a billing account.
 
@@ -120,7 +120,7 @@ If you have an MCA billing account type, the option to receive your invoice as a
 
 1. In the **Invoice email settings** pane, under **Get invoices in email attachments**, switch the toggle to **On**.
 
-1. If needed, add any additional recipient email addresses, then select __Save Changes__.
+1. If needed, add any additional recipient email addresses, then select **Save Changes**.
 
 ### Receive your invoice as an email attachment for MOSA billing account types
 
