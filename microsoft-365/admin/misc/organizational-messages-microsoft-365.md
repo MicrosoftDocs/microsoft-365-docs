@@ -29,7 +29,7 @@ As an admin, you can now connect with your organization through customized messa
 To get started, go to [organizational messages in the Microsoft 365 admin center](https://aka.ms/organizationalmessagesportal).
 
 >[!NOTE]
-> This experience is available in preview starting May 2, 2024.
+> The experience will start rolling out in preview on May 2, 2024.
 
 ## What can I do with organizational messages?
 
