@@ -35,7 +35,7 @@ Now you're ready to start your SharePoint migration. Before starting any cross-t
 
 ## Start a SharePoint Cross-tenant site migration
 
-1. Ensure you have verified the compatibility status. If you see a status of either **Compatible** or **Warning**  on your source tenant, you may continue. Run:
+1. Make sure you've verified the compatibility status. If you see a status of either **Compatible** or **Warning**  on your source tenant, you may continue. Run:
 
    ```powershell
    Get-SPOCrossTenantCompatibilityStatus –PartnerCrossTenantHostURL [Target tenant hostname]
