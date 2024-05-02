@@ -33,7 +33,7 @@ Autofill columns can work alongside other Microsoft Syntex models. You can assoc
 
 ### Supported file types
 
-Autofill columns are available for the following file types: .csv, .doc, .docx, .eml, .heic, .heif, .htm, .html, .jpeg, .jpg, .markdown, .md, .msg, .pdf, .png, .ppt, .pptx, .rtf, .tif, .tiff, .txt, .xls, and .xlsx.
+Autofill columns are available for the following file types: .csv, .doc, .docx, .eml, .heic, .heif, .htm, .html, .jpeg, .jpg, .md, .msg, .pdf, .png, .ppt, .pptx, .rtf, .tif, .tiff, .txt, .xls, and .xlsx.
 
 ### Supported column data types
 
@@ -54,9 +54,9 @@ Autofill columns are available for the following column data types:
 
 - Bulk processing options for existing library files will be added in a future release.
 
-- Currently, autofill columns doesn't support the following library types: FormServerTemplates, SitePages, Style Library, and SiteAssets.
+- Currently, autofill columns don't support the following library types: FormServerTemplates, SitePages, Style Library, and SiteAssets.
 
-- Documents with sensitivity labels will not be included.
+- Documents with sensitivity labels aren't analyzed or included the results.
 
 ## Responsible AI FAQs
 
@@ -64,15 +64,15 @@ An AI system includes not only the technology, but also the people who use it, t
 
 Responsible AI FAQs are part of a broader effort to put Microsoft's AI principles into practice. To find out more, see [Microsoft AI principles](https://www.microsoft.com/ai/responsible-ai).
 
-### Responsible AI FAQs for autofill columns
+### Responsible AI FAQs for the autofill columns service
 
 #### What are autofill columns?
 
-Autofill columns provie a column setting that allows users to construct LLM prompts that will automatically classify the file, extract or generate information from the file’s contents (extract a specific value or string or generate a summary or response based on some criteria), and save the output to the column.
+Autofill columns provide a column setting that allows users to construct LLM prompts that will automatically classify the file, extract or generate information from the file’s contents (extract a specific value or string or generate a summary or response based on some criteria), and save the output to the column.
 
 #### What can autofill columns do?
 
-Autofill columns allows a saved prompt to be used to process files created or uploaded to a SharePoint library, and the response is saved to a corresponding column. The constructed prompt is grounded to the file and can be used to extract, classify, summarize, and analyze its contents. The saved metadata, like other column data, can be indexed, used to trigger workflow, or even define criteria for setting an information protection label.
+Autofill columns allow a saved prompt to be used to process files created or uploaded to a SharePoint library, and the response is saved to a corresponding column. The constructed prompt is grounded to the file and can be used to extract, classify, summarize, and analyze its contents. The saved metadata, like other column data, can be indexed, used to trigger workflow, or even define criteria for setting an information protection label.
 
 #### What are the intended uses of autofill columns?
 
@@ -80,21 +80,21 @@ Autofill columns provide metadata automation for users. A user can use it to cla
 
 #### How was autofill columns evaluated? What metrics are used to measure performance?
 
-- Performance factors such as coherence, fluency, accuracy, and so were on F1 score, etc, we rely on base model’s performance (in this case, GPT-4 Turbo).
+- Performance factors such as coherence, fluency, accuracy, and so relied on base model’s performance (in this case, GPT-4 Turbo).
 
 - Evaluated feature specific performances. Testing included:
 
-    - Created sample libraries, each includes 20-50 typical business documents - categorized as contracts, statements of work, benefit change notices, invoices and resumes.
+    - Created sample libraries, each included typical business documents categorized as contracts, statements of work, benefit change notices, invoices, and resumes.
 
     - Created autofill columns covering different column types, including single line text and multiple choices.
 
-    - Designed prompts such as “What is the category of the document, choose from A, B, C. Reply none if it’s none of them.” Or “What is the candidate education background” for resumes.
+    - Designed prompts such as “What is the category of the document, choose from A, B, C. Reply none if it’s none of them.” Or "What is the candidate education background" for resumes.
 
-- Reviewed the results. The results fell into expectations in most cases. For the DSATs, we plan to use function calling to improve. We also compared some of the results across different LLM versions.
+- Reviewed the results. The results fell into expectations in most cases. For the dissatisfied results, function calling is used to improve the results. Some of the results were compared across different LLM versions.
 
-- Evaluated risk and safety metrics
+- Evaluated risk and safety metrics.
 
-    - Setup: Used automated programs to send similar requests as the feature does in the real world, combining meta prompts, system prompts and user question/document content, run on the same base model (in this case, GPT-4 Turbo) with same configuration.
+    - Setup: Used automated programs to send similar requests as the feature does in the real world, combining metadata prompts, system prompts, and user question or document content, run on the same base model (in this case, GPT-4 Turbo) with same configuration.
 
     - Because the feature’s prompt comes from two parts (one is the document content, the other is the question), we prepared 600 test cases.
 
@@ -108,7 +108,7 @@ Autofill columns provide metadata automation for users. A user can use it to cla
 
 #### What are the limitations of autofill columns? How can users minimize the impact of these limitations when using the system?
 
-- Scope of the prompt is restricted to just the text contents of the file. The response is text only that can be saved to the associated column. While additional actions can be configured based on the saved response, the output itself cannot execute a process.
+- Scope of the prompt is restricted to just the text contents of the file. The response is text-only that can be saved to the associated column. While other actions can be configured based on the saved response, the output itself can't execute a process.
 
 - Only users with sufficient site library permissions can create or edit autofill column prompts.
 
