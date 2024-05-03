@@ -7,6 +7,7 @@ ms.date: 08/10/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -28,7 +29,7 @@ Use remote Windows PowerShell for Microsoft Exchange Online to retrieve reports 
 
 Syndication and Cloud Solution Provider (CSP) partners can access the data that makes up customer tenant reports directly via remote Windows PowerShell for Exchange Online PowerShell. This method lets partners collect and save the reporting data and then perform other operations on it. After you open a remote connection, retrieving reporting data about a customer tenancy is identical to running any cmdlet against a customer tenancy.
 
-This article describes how you can use remote Windows PowerShell for Exchange Online to connect to a single customer tenancy and retrieve a report. By default, Windows PowerShell does not support aggregating reporting data from multiple customer tenancies. The reports you retrieve with this procedure are only for the  _DelegatedOrg_ that you connect to.
+This article describes how you can use remote Windows PowerShell for Exchange Online to connect to a single customer tenancy and retrieve a report. By default, Windows PowerShell doesn't support aggregating reporting data from multiple customer tenancies. The reports you retrieve with this procedure are only for the  _DelegatedOrg_ that you connect to.
 
 ## Before you begin
 
@@ -42,7 +43,7 @@ After you have opened a remote session to Exchange Online, run the following com
 Get-StaleMailboxReport -StartDate 03/25/2015 -EndDate 03/31/2015
 ```
 
-There are many other reporting cmdlets available for Exchange Online, Lync Online, SharePoint Online, and other services for message tracing that you can use. To learn more about the available reporting cmdlets, see the articles listed in the following section.
+There are many other reporting cmdlets available for Exchange Online, Lync Online, SharePoint, and other services for message tracing that you can use. To learn more about the available reporting cmdlets, see the articles listed in the following section.
 
 ## See also
 
