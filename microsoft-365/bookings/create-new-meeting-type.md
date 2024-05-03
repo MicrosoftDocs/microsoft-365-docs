@@ -25,11 +25,11 @@ In this article, we will discuss meeting types, public and private meetings, and
 
 ## Understanding meeting types
 
-Meeting types are various kinds of appointments that can be booked with you, such as a 30-minute consultation, a 15-minute check-in, or a 60-minute coaching session. You can customize each meeting type with a name, description, duration, location, and availability. Once a meeting type has been created and shared, people can book time with you in your preferred time slots.
+There are several kinds of appointments that can be booked with you in Microsoft Bookings. For example, a 30-minute consultation, a 15-minute check-in, or a 60-minute coaching session. You can customize each meeting type with a name, description, duration, location, and availability. Once a meeting type has been created and shared, people can book time with you in your preferred time slots.
 
 You can also add buffer time, and confirmation emails and reminders to enhance the booking experience.
 
-## Public and Private Meeting Types
+## Public and private meeting types
 
 In Microsoft Bookings, meeting types can be categorized using public and private tags to control their visibility and accessibility on your booking page.
 
@@ -49,6 +49,8 @@ In Microsoft Bookings, meeting types can be categorized using public and private
 - Selecting the meeting duration.
 - Choosing between a public or private meeting tag.
 - Declaring your availability using the schedule customization option.
+
+3. Select **Save** when you're done.
 
 ### Additional settings
 
