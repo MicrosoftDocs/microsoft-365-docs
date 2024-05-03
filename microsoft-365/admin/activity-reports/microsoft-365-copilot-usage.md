@@ -127,7 +127,7 @@ You can see the following summary charts in this report as default view:
 
 The definitions for Enabled Users and Active Users metrics are the same as provided earlier.
 
-To note, Active users of Word, Excel, and PowerPoint is incomplete prior to Jan 25, 2024. Active users of Outlook might increase from February 1st, 2024, as we have restated ‘Draft with Copilot’ and ‘Coaching by Copilot’ tried actions data for Outlook Win32.
+To note, Active users of Word, Excel, and PowerPoint is incomplete prior to Jan 25, 2024.
 
 >[!IMPORTANT]
 > Your organization must have optional diagnostic telemetry for Office apps enabled for Windows, Mac, iOS, and Android in order for comprehensive usage information to be captured in this report. [Learn more about diagnostic telemetry settings](/DeployOffice/privacy/optional-diagnostic-data).
@@ -206,7 +206,7 @@ This report now includes a new metric for Microsoft Copilot with Graph-grounded 
 - Selecting a prompt from the "Try these Prompts" section, which will automatically copy the prompt into the chat box.
 - Clicking on one of the suggestions from the "Stay on top" tab in some platforms (such as Microsoft365.com).
 
-### What are the behaviors of All up last activity date and last activity date per app in user-level table?
+### What are the behaviors of All up last activity date and last activity date per app in the user-level table?
 
 All up last activity date and last activity date per app are reflecting different narratives now. All up last activity date is reflecting the historical last activity date no matter what period is selected on the page, while last activity date per app is reflecting the last activity date within the selected time period; hence, if there's no activity in selected time period, the last activity date per app will be empty. We are planning to make them consistent to reflect the historical last activity date narrative and will provide update once it’s done.
 
@@ -214,9 +214,9 @@ All up last activity date and last activity date per app are reflecting differen
 
 The information captured in audit log records differs from that in [Microsoft 365 usage reports](#user-last-activity-table). It's important to note that audit logs are not designed for assessing user engagement in Microsoft 365, and they should not be used to replace or augment information in Microsoft 365 usage reports. To learn more about audit logs, see [Export, configure, and view audit log records](/purview/audit-log-export-records#step-1-export-audit-log-search-results).
 
-### Is Intelligent Recap usage in Teams is captured in [Usage reports](activity-reports.md), [Adoption Score](../adoption/adoption-score.md), and [Microsoft Copilot Dashboard](/viva/insights/org-team-insights/copilot-dashboard)?
+### Is Intelligent Recap usage in Teams captured in [Usage reports](activity-reports.md)?
 
- Not yet. [Roadmap ID #375760 Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=375760) states that feature Intelligent Recap in Teams has been available for Microsoft Copilot for Microsoft 365 users since January 2024. However, telemetry is not captured in Usage reports, Adoption Score, and Microsoft Copilot Dashboard. We are working on bringing this feature into those products and will announce in Message Center once it’s available.
+Yes. Intelligent Recap has been captured in Teams Copilot in Copilot for Microsoft 365 usage. 
 
 ### What’s the scope of the user-level table?
 

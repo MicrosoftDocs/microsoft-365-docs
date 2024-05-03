@@ -1,31 +1,28 @@
 ---
-title: Manage Microsoft 365 Archive (Preview)
+title: Manage Microsoft 365 Archive
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 04/11/2024
+ms.date: 04/30/2024
 ms.topic: conceptual
 ms.service: microsoft-365-archive
 ms.custom: archive
 search.appverid:
 ms.collection:
-    - m365initiative-syntex
+    - essentials-manage
 ms.localizationpriority:  medium
 description: Learn how to archive, reactivate, and manage sites in Microsoft 365 Archive.
 ---
 
-# Manage Microsoft 365 Archive (Preview)
-
-> [!NOTE]
-> This feature is currently in preview and subject to change. The feature is currently rolling out and might not yet be fully available to all organizations.
+# Manage Microsoft 365 Archive
 
 ## Archive a site
 
 Global admins and SharePoint admins can archive both non-group connected sites and group-connected sites from the SharePoint admin center. Archiving group-connected sites will archive only the site, and the rest of the group will continue being active. As soon as a site is archived, it stops consuming storage from active storage quota, and the storage starts being counted towards Microsoft 365 Archive storage. (There might be a delay in the change in storage being reflected in the admin center.)
 
-To learn more about different archive states, see [Archive states in Microsoft 365 Archive (Preview)](archive-states.md).
+To learn more about different archive states, see [Archive states in Microsoft 365 Archive](archive-states.md).
 
 When a site is archived, compliance features such as eDiscovery and retention labels continue to be applied to the site.
 
