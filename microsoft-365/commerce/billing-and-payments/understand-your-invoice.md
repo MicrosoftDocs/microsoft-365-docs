@@ -46,9 +46,9 @@ The invoice for your Microsoft business subscription provides a summary of the c
 
 ## How often and when am I billed?
 
-Depending on the billing frequency that you chose when you bought your subscription, you receive an invoice monthly, every three months, every six months, or annually. The amount of time since the last invoice date is called the *Billing Period* and is shown on page one of the invoice, above the Billing Summary section. This time   period represents the date range during which charges accrue for the current invoice. If you made a change to your subscription outside of this date range, like adding or removing licenses, the associated charges appear on the invoice for the next billing period.
+Depending on the billing frequency that you chose when you bought your subscription, you receive an invoice monthly, every three months, every six months, or annually. The amount of time since the last invoice date is called the *Billing Period* and is shown on page one of the invoice, above the Billing Summary section. This time   period represents the date range during which charges accrue for the current invoice. 
 
-Each new subscription purchase is billed the next day. You receive an invoice on the same day of the month either monthly, every three months, every six months or, annually, depending on the billing frequency you chose. Changes you make to an existing subscription are also charged the next day, except when you add and remove licenses or cancel which appear on the monthly invoice around the beginning of the following month.
+Each new subscription purchase is billed the next day. Changes you make to an existing subscription will appear on the monthly invoice around the beginning of the following month.
 
 > [!NOTE]
 > You can only change the billing frequency for a subscription when you buy, upgrade, or renew a subscription.
