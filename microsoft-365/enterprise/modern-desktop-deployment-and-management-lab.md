@@ -11,6 +11,7 @@ ms.date: 02/27/2024
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 ms.collection:
 - Ent_O365

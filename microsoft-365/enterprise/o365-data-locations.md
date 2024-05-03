@@ -8,6 +8,7 @@ ms.date: 02/29/2024
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
+ms.subservice: advanced-data-residency
 ms.localizationpriority: high
 search.appverid:
 - MET150
