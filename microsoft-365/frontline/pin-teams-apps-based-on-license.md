@@ -3,8 +3,8 @@ title: Tailor Teams apps for your frontline workers
 author: lana-chin
 ms.author: v-chinlana
 manager: jtremper
-ms.reviewer: aaglick
-ms.topic: how-to
+ms.reviewer: arnavgupta
+ms.topic: conceptual
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
@@ -18,7 +18,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 07/05/2023
+ms.date: 05/03/2024
 ---
 
 # Tailor Teams apps for your frontline workers
@@ -59,7 +59,7 @@ Apps are pinned to the app bar, which is the bar at the bottom of the Teams mobi
 
 The tailored frontline app experience is controlled by the **Show tailored apps** org-wide app setting on the [Manage apps](/microsoftteams/manage-apps#manage-org-wide-app-settings) page of the Teams admin center. If the feature is on, all users in your organization who have an F license get the tailored app experience.
 
-Keep in mind that any custom [app setup policies](/microsoftteams/teams-app-setup-policies) assigned to users take precedence. This means that if a user already has a custom app setup policy assigned to them, the user gets the configuration that's defined in the custom app setup policy. To learn more about how the feature works with Teams app policies, including the global app setup policy, see the [Scenarios](#scenarios) section later in this article.
+Keep in mind that any custom [app setup policies](/microsoftteams/teams-app-setup-policies) assigned to users take precedence. This means that if a user already has a custom app setup policy assigned to them, the user gets the configuration defined in the custom app setup policy. To learn more about how the feature works with Teams app policies, including the global app setup policy, see the [Scenarios](#scenarios) section later in this article.
 
 This feature is on by default. However, if you don't want the tailored frontline app experience provided by Microsoft, you can turn off the feature. To turn the feature off or on:
 
@@ -100,7 +100,7 @@ The feature is off.   | The frontline worker gets the apps defined in the global
 
 ### Viva Connections
 
-Viva Connections is part of the tailored apps experience. Frontline users who see the tailored app experience will have Viva Connections pinned in the first position on both mobile and desktop.
+Viva Connections is part of the tailored apps experience. Frontline users who see the tailored app experience have Viva Connections pinned in the first position on both mobile and desktop.
 
 This experience includes a default dashboard with relevant frontline cards such as Shifts, Planner, Approvals, and Top News that can be customized to fit the needs of your organization. If your organization already set up a Viva Connections home site, it takes precedence over the default experience.
 
@@ -113,5 +113,5 @@ This experience includes a default dashboard with relevant frontline cards such 
 - [Manage the Shifts app in Teams](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)
 - [Manage the Approvals app in Teams](/microsoftteams/approval-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)
 - [Overview of Viva Connections](/viva/connections/viva-connections-overview)
-- [Manage app setup policies in Teams](/microsoftteams/teams-app-setup-policies)
-- [Manage app permission policies in Teams](/microsoftteams/teams-app-permission-policies)
+- [Use app setup policies to pin and auto install apps for users](/microsoftteams/teams-app-setup-policies)
+- [Use app permission policies to control user access to apps](/microsoftteams/teams-app-permission-policies)
