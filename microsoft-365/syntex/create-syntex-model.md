@@ -260,8 +260,11 @@ Select one of the following tabs to continue with the prebuilt model you want to
 
     - **Description** – Enter information about how this model will be used.
 
-        ![Screenshot of the right panel of the Create a sensitive information processing model page.](../media/content-understanding/create-a-model-panel.png) 
+        ![Screenshot of the right panel of the Create a sensitive information processing model page.](../media/content-understanding/create-a-model-panel-sensitive-info.png) 
     
+    > [!NOTE]
+    > You do not need to designate a content type for the prebuilt sensitivity information model.
+
 4. When you're ready to create the model, select **Create**.
 
 5. You're now ready to [complete setting up the model](prebuilt-model-sensitive-info.md#set-up-a-sensitive-information-model).
