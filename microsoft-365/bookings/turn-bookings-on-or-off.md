@@ -139,7 +139,7 @@ You'll need to run the following commands using Exchange Online PowerShell. For 
 
    For more information, see [Set-CASMailbox](/powershell/module/exchange/set-casmailbox).
 
-3. Optional: Run this command if you want to disable Bookings for all other users in your organization.
+3. Optional: Run this command if you want to disable creation of booking calendars for all other users in your organization.
 
    ```PowerShell
    Set-OwaMailboxPolicy "OwaMailboxPolicy-Default" -BookingsMailboxCreationEnabled:$false

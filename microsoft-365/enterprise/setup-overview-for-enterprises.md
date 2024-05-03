@@ -7,6 +7,7 @@ ms.date: 11/19/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -15,6 +16,7 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - M365-subscription-management
+- essentials-overview
 f1.keywords:
 - CSH
 ms.custom: 
