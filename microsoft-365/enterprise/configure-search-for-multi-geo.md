@@ -8,6 +8,7 @@ manager: scotv
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.custom: seo-marvel-mar2020
 ms.collection: Strat_SP_gtc
 ms.localizationpriority: medium
@@ -24,38 +25,38 @@ Your Multi-Geo _Tenant_ will have aggregate search capabilities allowing a searc
 
 By default, searches from these entry points will return aggregate results, even though each search index is located within its relevant _Geography_ location:
 
-- OneDrive for Business
+- OneDrive
 - Delve
 - SharePoint Home
 - Search Center
 
 Additionally, Multi-Geo search capabilities can be configured for your custom search applications that use the SharePoint search API.
 
-Please review [Configure Search for OneDrive for Business Multi-Geo](configure-search-for-multi-geo.md) for instructions including any limitations and differences.
+Please review [Configure Search for OneDrive Multi-Geo](configure-search-for-multi-geo.md) for instructions including any limitations and differences.
 
 ## Validating the Microsoft 365 Multi-Geo configuration
 
 Below are some basic use cases you may wish to include in your validation plan before broadly rolling out Microsoft 365 Multi-Geo to your company. Once you have completed these tests and any additional use cases that are relevant to your company, you may choose to move on to adding the users in your initial pilot group.
 
-OneDrive for Business:
+OneDrive:
 
-Select OneDrive from the Microsoft 365 app launcher and confirm that you are automatically directed to the appropriate _Geography_ location for the user, based on the user's PDL. OneDrive for Business should now begin provisioning at that location. Once provisioned, try uploading and downloading some documents.
+Select OneDrive from the Microsoft 365 app launcher and confirm that you are automatically directed to the appropriate _Geography_ location for the user, based on the user's PDL. OneDrive should now begin provisioning at that location. Once provisioned, try uploading and downloading some documents.
 
 OneDrive Mobile App:
 
-Log in to your OneDrive mobile App with your test account credentials. Confirm that you can see your OneDrive for Business files and can interact with them from your mobile device.
+Log in to your OneDrive mobile App with your test account credentials. Confirm that you can see your OneDrive files and can interact with them from your mobile device.
 
 OneDrive sync client:
 
-Confirm that the OneDrive sync client automatically detects your OneDrive for Business _Geography_ location upon login. If you need to download the sync client, you can click **Sync** in the OneDrive library.
+Confirm that the OneDrive sync client automatically detects your OneDrive _Geography_ location upon login. If you need to download the sync client, you can click **Sync** in the OneDrive library.
 
 Office applications:
 
-Confirm that you can access OneDrive for Business by logging in from an Office application, such as Word. Open the Office application and select **OneDrive – \<TenantName\>**. Office will detect your OneDrive location and show you the files that you can open.
+Confirm that you can access OneDrive by logging in from an Office application, such as Word. Open the Office application and select **OneDrive – \<TenantName\>**. Office will detect your OneDrive location and show you the files that you can open.
 
 Sharing:
 
-Try sharing OneDrive files. Confirm that the people picker shows you all your SharePoint online users regardless of their _Geography_ location.
+Try sharing OneDrive files. Confirm that the people picker shows you all your SharePoint users regardless of their _Geography_ location.
 
 In a multi-geo environment, each _Geography_ location has its own search index and Search Center. When a user searches, the query is fanned out to all the indexes, and the returned results are merged.
 
