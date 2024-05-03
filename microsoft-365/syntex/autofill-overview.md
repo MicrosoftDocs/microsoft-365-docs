@@ -78,7 +78,7 @@ Autofill columns allow a saved prompt to be used to process files created or upl
 
 Autofill columns provide metadata automation for users. A user can use it to classify, extract, summarize, or even analyze a file, and then save the response to the column where it can then be indexed and used for search or other downstream workflow processes. Autofill columns can also be a useful complement for other machine language models, where a users could supplement the extracted metadata from a configured model with a summary or other analysis response.
 
-#### How was autofill columns evaluated? What metrics are used to measure performance?
+#### How was autofill columns evaluated? What metrics were used to measure performance?
 
 - Performance factors such as coherence, fluency, and accuracy relied on the base model’s performance (in this case, GPT-4 Turbo).
 
