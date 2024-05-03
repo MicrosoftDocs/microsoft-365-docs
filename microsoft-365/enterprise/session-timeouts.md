@@ -7,6 +7,7 @@ ms.date: 6/29/2018
 audience: Admin
 ms.topic: reference
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
