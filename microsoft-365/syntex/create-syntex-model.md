@@ -162,6 +162,8 @@ The **Set up a prebuilt model** section shows the types of prebuilt models you c
 - **Contract processing**
 - **Invoice processing**
 - **Receipt processing**
+- **Sensitive information processing**
+
  
 Select one of the following tabs to continue with the prebuilt model you want to use.
 
@@ -252,7 +254,7 @@ Select one of the following tabs to continue with the prebuilt model you want to
 
 2. On the **Sensitive information processing: Details** page, you'll find more information about the model. If you want to proceed with using the model, select **Next**.
 
-3. On the right panel of the **Create a sensitive informationprocessing model** page, enter the following information.
+3. On the right panel of the **Create a sensitive information processing model** page, enter the following information.
 
     - **Model name** – Enter the name of the model, for example *Service agreement*.
 
@@ -262,7 +264,7 @@ Select one of the following tabs to continue with the prebuilt model you want to
     
 4. When you're ready to create the model, select **Create**.
 
-5. You're now ready to [complete setting up the model](prebuilt-model-sensitive-info.md).
+5. You're now ready to [complete setting up the model](prebuilt-model-sensitive-info.md#set-up-a-sensitive-information-model).
 
 ---
 
