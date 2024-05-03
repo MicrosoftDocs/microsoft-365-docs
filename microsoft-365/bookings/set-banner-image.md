@@ -1,6 +1,5 @@
 ---  
 title: "Set your banner image for your personal booking page"  
-description: Learn how to customize the banner image on a Microsoft 365 Business Basic personal booking page.
 ms.author: pritikar
 author: camillepack 
 manager: scotv
@@ -8,12 +7,14 @@ ms.date: 05/03/2024
 ms.topic: article
 ms.service: bookings 
 ms.localizationpriority: medium
-ms.collection:  
+ms.collection:
+- scotvorg
 ms.custom: QuickDraft  
 ms.reviewer: kwekua  
 search.appverid: MET150  
 ai-usage:  
-ai-assisted  
+- ai-assisted 
+description: Learn how to customize the banner image on a Microsoft 365 Business Basic personal booking page. 
 ---
 
 # Customize your banner image in Microsoft 365 Business Basic Personal Booking Page
