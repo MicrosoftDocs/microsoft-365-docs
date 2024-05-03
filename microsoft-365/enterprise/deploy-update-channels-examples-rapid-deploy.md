@@ -9,6 +9,7 @@ ms.date: 07/21/2020
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 ms.collection: 
 - scotvorg
@@ -28,7 +29,7 @@ This channel configuration example is for an organization that uses rapid deploy
 
 These goals translate to the IT task of finding the balance between rapid production deployment and early vetting with a representative subset of users and devices to validate functionally before broad deployment.
 
-Our example organization has 5,000 employees in buildings across the world in Europe, Africa, Asia, and the Americas. 70% of the employees use Microsoft 365 E3 and the rest of the organization uses Microsoft 365 E5.
+Our example organization has 5,000 employees in buildings across the world in Europe, Africa, Asia, and the Americas. Seventy percent of the employees use Microsoft 365 E3 and the rest of the organization uses Microsoft 365 E5.
 
 >[!Note]
 >This example is designed to show you how you can use deployment stages and groups, which can work for organizations of many types and sizes.
