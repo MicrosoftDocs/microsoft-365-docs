@@ -4,9 +4,9 @@
   - name: Learn about Personal Bookings
     items:
     - name: Create a new meeting type
-      href: bookings-overview.md
+      href: create-new-meeting-type.md
     - name: Preview and share your personal booking page
-      href: bookings-in-outlook.md
+      href: preview-share-personal-booking-page.md
     - name: Add email reminders and follow-up
       href: bookings-in-outlook.md
     - name: Set your banner image
