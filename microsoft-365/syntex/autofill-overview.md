@@ -80,7 +80,7 @@ Autofill columns provide metadata automation for users. A user can use it to cla
 
 #### How was autofill columns evaluated? What metrics are used to measure performance?
 
-- Performance factors such as coherence, fluency, accuracy, and so relied on base model’s performance (in this case, GPT-4 Turbo).
+- Performance factors such as coherence, fluency, and accuracy relied on the base model’s performance (in this case, GPT-4 Turbo).
 
 - Evaluated feature specific performances. Testing included:
 
