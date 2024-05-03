@@ -7,6 +7,7 @@ ms.date: 04/23/2024
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
+ms.subservice: network
 ms.localizationpriority: high
 ms.collection:
 - scotvorg
