@@ -1,7 +1,8 @@
 ---  
 title: "Add email reminders and follow-up "  
 description: Learn how to set up and automate email reminders and follow-ups for appointments in Microsoft 365 Business Basic.
-ms.author: pritikar  
+ms.author: pritikar
+author: camillepack  
 manager:  scotv
 ms.date: 05/03/2024  
 ms.topic: article
@@ -16,21 +17,21 @@ ms.custom: QuickDraft
 ms.reviewer: kwekua  
 search.appverid: MET150  
 ai-usage:  
-- ai-assisted  
+ai-assisted  
 ---
 
 # Automate email reminders and follow-ups in Microsoft 365 Business Basic
 
-Follow-up emails and reminders are essential for maintaining effective communication with customers. Timely reminders for appointments, feedback requests, or expressing gratitude can significantly impact your relationship and results. This article will guide you through the process of automating email reminders and follow-ups for appointments in Microsoft 365 Business Basic.
+Follow-up emails and reminders are essential for maintaining effective communication with customers. Timely reminders for appointments, feedback requests, or expressing gratitude can significantly impact your relationship and results. This article guides you through the process of automating email reminders and follow-ups for appointments in Microsoft 365 Business Basic.
 
 ## Setting up email Reminders
 
 In your meeting type form, follow these steps to set up email reminders:
 
-1. SNavigate to **Advanced Settings**.
+1. Navigate to **Advanced Settings**.
 2. Select **Advanced Settings** and scroll down to locate **Email Reminders**.
 3. Select **Add an email reminder** to open the email reminder configuration form.
-4. Set the time frame for sending the reminder email, ranging from a 15-minute interval to 2 weeks before the meeting.
+4. Set the time frame for sending the reminder email, ranging from a 15-minute interval to two weeks before the meeting.
 5. Add a customized message in the email body, insert a link, and format the email body to your preference.
 6. Select **Save Changes** to finalize your email reminder settings.
 
