@@ -19,7 +19,7 @@ AI_Usage:
 description: Create a new meeting type in Bookings
 ---  
 
-## Introduction to Personal Bookings
+# Create a new meeting type in Bookings
 
 In this article, we will discuss meeting types, public and private meetings, and how to create and edit meeting types.
 

@@ -19,7 +19,7 @@ AI_Usage:
 description: Preview and share your personal booking page with clients and customers
 ---
 
-## Use Personal Booking pages
+# Preview and share your personal booking page
 
 The personal booking page is a crucial tool for sharing your availability with others, enabling them to easily schedule appointments with you. This feature provides a streamlined process for selecting meeting types, dates, and times and allows other people to book easily with you.
 
