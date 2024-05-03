@@ -98,11 +98,11 @@ To learn more about its usage and functionalities, see the following articles:
 
 - [OneDrive for Business video training](https://support.microsoft.com/office/onedrive-video-training-1f608184-b7e6-43ca-8753-2ff679203132).
 
-## Secure Sharing and File Management
+## Secure sharing and file management
 
 Share access to folders or files with specific people for easier collaboration with them. For more information, see [Share OneDrive files and folders](https://support.microsoft.com/office/share-onedrive-files-and-folders-9fcc2f7d-de0c-4cec-93b0-a82024800c07).
 
-### Securely Share Files
+### Securely share files
 
 1. Select the **circle** icon for the files or folders you want to share.
 2. Select **Share**, located at the top of the page.
@@ -183,7 +183,7 @@ Use Sensitivity labels, from Microsoft Purview Information Protection, to classi
 
 To apply sensitivity labels, users must be signed in with their Microsoft 365 work or school account.
 
-## Additional Resources
+## Additional resources
 
 See the following resources to learn more about OneDrive.
 
