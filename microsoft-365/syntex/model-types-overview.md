@@ -21,11 +21,11 @@ description: Learn about custom models and prebuilt models in Microsoft Syntex.
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
-</br>
+<!---</br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GJXS] 
 
-</br>
+</br>--->
 
 Content understanding in Microsoft Syntex starts with document processing models. Document processing models let you identify and classify documents that are uploaded to SharePoint document libraries, and then to extract the information you need from each file.
 
@@ -33,7 +33,7 @@ When applied to a SharePoint document library, the model is associated with a co
 
 Syntex uses [custom models](#custom-models) and [prebuilt models](#prebuilt-models). 
 
-![Diagram showing the types of Syntex custom and prebuilt models.](../media/content-understanding/syntex-model-types-diagram-2.png)
+![Diagram showing the types of Syntex custom and prebuilt models.](../media/content-understanding/syntex-model-types-diagram-3.png)
 
 Models can be either *enterprise models*, which are created in a [content center](create-a-content-center.md), or *local models*, which are created on your [local SharePoint site](create-local-model.md).
 

@@ -37,15 +37,37 @@ You can use PowerShell to turn off directory synchronization and convert your sy
 
 To turn off Directory synchronization:
   
-1. First, install the required software and connect to your Microsoft 365 subscription. For instructions, see [Connect with the Microsoft Azure Active Directory module for Windows PowerShell](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+1. First, install the required software and connect to your Microsoft 365 subscription. For instructions, see [Connect with the Microsoft Graph PowerShell module for Windows PowerShell](/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-microsoft-graph-powershell).
 
-2. Use **Set-MsolDirSyncEnabled** to disable directory synchronization:
+2. Use **Update-MgBetaOrganization** to disable directory synchronization:
 
   ```powershell
-  Set-MsolDirSyncEnabled -EnableDirSync $false
+    # Install v1.0 and beta Microsoft Graph PowerShell modules 
+    Install-Module Microsoft.Graph -Force
+    Install-Module Microsoft.Graph.Beta -AllowClobber -Force 
+    
+    # Connect With Global Admin Account
+    Connect-MgGraph -scopes "Organization.ReadWrite.All,Directory.ReadWrite.All" 
+    
+    # Verify the current status of the DirSync Type
+    Get-MgOrganization | Select OnPremisesSyncEnabled 
+    
+    # Store the Tenant ID in a variable named organizationId
+    $organizationId = (Get-MgOrganization).Id 
+    
+    # Store the False value for the DirSyncEnabled Attribute
+    $params = @{
+    	onPremisesSyncEnabled = $false
+    }
+    
+    # Perform the update
+    Update-MgBetaOrganization -OrganizationId $organizationId -BodyParameter $params 
+    
+    # Check that the command worked
+    Get-MgOrganization | Select OnPremisesSyncEnabled
   ```
 
 >[!Note]
 >If you use this command, you must wait 72 hours before you can turn directory synchronization back on.
 
-Visit [Set-MsolDirSyncEnabled](/powershell/module/msonline/set-msoldirsyncenabled) for more detailed information on cmdlet usage and switches.
+Visit [Update-MgBetaOrganization](/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaorganization) for more detailed information on cmdlet usage and switches.

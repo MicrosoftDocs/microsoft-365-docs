@@ -9,6 +9,7 @@ ms.reviewer: mijeffer, nicholak
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
 ms.collection:
 - Tier1

@@ -2,12 +2,13 @@
 title: "Delete a satellite location"
 ms.reviewer: anfra
 ms.date: 12/11/2023
-ms.author: mikeplum
-author: MikePlumleyMSFT
-manager: serdars
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 f1.keywords:
 - NOCSH
 ms.custom: 

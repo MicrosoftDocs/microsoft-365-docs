@@ -1,0 +1,35 @@
+---
+title: Pricing model for Microsoft 365 Archive
+ms.author: chucked
+author: chuckedmonson
+manager: jtremper
+audience: admin
+ms.reviewer: sreelakshmi
+ms.date: 04/30/2024
+ms.topic: conceptual
+ms.service: microsoft-365-archive
+ms.custom: archive
+search.appverid:
+ms.collection:
+    - essentials-get-started
+ms.localizationpriority:  medium
+description: Learn about the pricing model for storage consumption and site reactivation in Microsoft 365 Archive.
+---
+
+# Pricing model for Microsoft 365 Archive
+
+Microsoft 365 Archive charges you for storage and reactivation.
+
+- **Storage consumption** that is charged at a per-GB monthly rate. This meter is charged only when archived storage plus active storage in SharePoint exceeds the included or licensed allocated SharePoint storage capacity limit of the tenant. In other words, there's no additional storage cost for archived sites if the tenant hasn't yet consumed its already licensed Storage quota. For more information about storage capacity limits, see [SharePoint limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits).
+
+- **Site reactivation** that is charged at a per-GB rate. The reactivation fee is charged regardless of whether a tenant is above or below its SharePoint capacity limit and only if reactivation is executed more than seven days after the site was most recently put into an archive state. This seven-day grace period provides you with the opportunity to reverse an accidental archival without reaction costs.  
+
+Monthly archive usage is calculated as the sum of the usage of all currently archived sites. Each site’s usage is equal to the site storage usage of that site, which can be seen on the site itself or from the Active sites page in the SharePoint admin center. The size of an archived site, and therefore the storage for which it's billed, can only change if the content in the site changes (for example, content naturally expiring in the recycle bin or a retention policy deleting content within the site directly from archive to the recycle bin).
+
+To see the pricing for Microsoft 365 Archive, see [Pay-as-you-go services and pricing for Microsoft Syntex](/microsoft-365/syntex/syntex-pay-as-you-go-services).
+
+### Cost savings using Microsoft 365 Archive
+
+The following table helps visualize the savings you'll realize by archiving content based on the frequency and percent of all archived content you're restoring. The key takeaway is that if you are not reactivating more than 30% of your data more than twice a year, you'll achieve most of the savings offered by the product.
+
+![Table showing the COGS savings if you archive with Microsoft 365 Archive.](../media/m365-archive/archive-cogs-savings.png)

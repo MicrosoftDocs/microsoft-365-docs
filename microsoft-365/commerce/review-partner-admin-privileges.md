@@ -9,15 +9,16 @@ ms.reviewer: armanv, nicholak
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
 ms.collection:
-- Tier2
+- Tier1
 - scotvorg
 - M365-subscription-management 
 - Adm_O365
 ms.custom:
 - commerce_subscriptions
-- empty
+- admindeeplinkMAC
 search.appverid: MET150
 description: "Learn how to review your list of Microsoft-certified solution providers (partners) to determine what admin privileges they have, and how to remove those privileges."
 ms.date: 11/16/2023

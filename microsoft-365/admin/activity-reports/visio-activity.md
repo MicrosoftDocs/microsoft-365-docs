@@ -31,7 +31,7 @@ In the **Visio activity report**, you can view the activity of every Visio user
 
 ## How to get to the Visio activity report
 
-1. In the admin center, go to the **Reports** \> [Usage](https://admin.microsoft.com/Adminportal/Home#/reportsUsage/VisioActivity) page.
+1. In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page and select **Visio**.
 
 2. From the dashboard homepage, select the **View more** button on the Visio card.
 

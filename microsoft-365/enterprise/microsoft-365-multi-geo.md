@@ -2,12 +2,13 @@
 title: "Microsoft 365 Multi-Geo"
 ms.reviewer:
 ms.date: 12/11/2023
-ms.author: mikeplum
-author: MikePlumleyMSFT
-manager: serdars
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
+ms.subservice: multi-tenant
 ms.custom: seo-marvel-apr2020
 ms.collection: Strat_SP_gtc
 ms.localizationpriority: medium

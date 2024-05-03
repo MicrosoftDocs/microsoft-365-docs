@@ -8,6 +8,7 @@ ms.reviewer: jkinma, ramagane
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-management
 ms.localizationpriority: medium
 ms.collection:
 - Tier1
@@ -16,7 +17,7 @@ ms.collection:
 - Adm_O365
 ms.custom:
 - commerce_billing
-- empty
+- admindeeplinkMAC
 search.appverid: MET150
 description: "Learn how to use multi-tenant billing relationships to share billing accounts across tenants in the Microsoft 365 admin center."
 ms.date: 10/25/2023

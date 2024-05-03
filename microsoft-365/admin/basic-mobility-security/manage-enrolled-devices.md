@@ -20,6 +20,7 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
+- basic-mobility-security
 search.appverid:
 - MET150
 description: "Sign in to Microsoft 365 and set up Basic Mobility and Security to use the built-in mobile device management to secure and manage your users' mobile devices."

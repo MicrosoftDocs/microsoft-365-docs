@@ -5,19 +5,21 @@ metadata:
   ms.author: cmcatee
   manager: scotv
   ms.reviewer: racheg, ronarg
-  ms.date: 08/16/2023
   audience: Admin
   ms.topic: faq
   ms.service: microsoft-365-business
-  ms.custom: 
-  - commerce_vl
-  - empty
+  ms.subservice: m365-commerce-volume-licensing
   ms.collection: 
   - Tier2
   - scotvorg
+  ms.custom: 
+  - commerce_vl
+  - empty
   search.appverid: MET150
   ms.localizationpriority: medium
   description: "Frequently asked questions about Microsoft 365 admin center downloads."
+  ms.date: 08/16/2023
+
 title: Downloads Frequently Asked Questions
 summary: |
 

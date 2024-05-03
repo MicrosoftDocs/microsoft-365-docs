@@ -5,6 +5,7 @@ author: erikre
 manager: dougeby
 audience: ITPro
 ms.topic: article
+ms.date: 03/29/2024
 description: Understand app protection health checks using Microsoft Intune.
 ms.service: o365-solutions
 ms.localizationpriority: high

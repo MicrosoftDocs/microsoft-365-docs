@@ -75,7 +75,7 @@ People who have the following permissions:
 
 - Global reader (with no user details)
 
-- Usage Summary Reports reader (with no user details)
+- Usage Summary Reports reader (with no user details): By design, this role has read access to user, groups, and other settings by default in the Microsoft 365 admin center, as the role is based on Microsoft Entra.
 
 - Reports reader
 

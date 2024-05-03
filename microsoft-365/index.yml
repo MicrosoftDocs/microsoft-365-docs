@@ -26,9 +26,9 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
     # Card
-    - title: Join us at the Microsoft 365 Community Conference April 30 - May 2
-      itemType: whats-new
-      url: https://www.m365conf.com/#!/?wt.mc_id=m365conf_docs_webpage_mwmktg
+    - title: Copilot for Microsoft 365
+      itemType: get-started
+      url: /copilot/microsoft-365/
     # Card
     - title: Remote learning with Microsoft Teams
       itemType: get-started
@@ -64,6 +64,12 @@ conceptualContent:
             - url: frontline/index.yml
               itemType: get-started
               text: Microsoft 365 for frontline workers
+            - url: archive/index.yml
+              itemType: overview
+              text: Microsoft 365 Archive (Preview)
+            - url: backup/index.yml
+              itemType: overview
+              text: Microsoft 365 Backup (Preview)
             - url: business-premium/index.yml
               itemType: get-started
               text: Microsoft 365 Business Premium

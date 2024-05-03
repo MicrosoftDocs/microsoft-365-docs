@@ -9,13 +9,15 @@ ms.reviewer: sahilkhurana, ronarg
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-volume-licensing
 ms.localizationpriority: medium
 ms.collection: 
-- Tier3
+- Tier2
 - scotvorg
 ms.custom:
 - commerce_vl
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn how to access your non-Azure volume licensing invoices in the Microsoft 365 admin center."

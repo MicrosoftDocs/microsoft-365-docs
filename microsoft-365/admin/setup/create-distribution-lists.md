@@ -40,7 +40,7 @@ Use distribution lists (sometimes called distribution groups) when you want to s
 
 ::: moniker range="o365-worldwide"
 
-Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
+Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.cloud.microsoft</a>.
 
 ::: moniker-end
 

@@ -2,9 +2,9 @@
 ms.date: 08/21/2023
 title: "Summary of governance, lifecycle and compliance capabilities for Loop experiences"
 ms.reviewer: dancost, tonchan
-ms.author: mikeplum
-author: MikePlumleyMSFT
-manager: serdars
+ms.author: jtremper
+author: jacktremper
+manager: pamgreen
 recommendations: true
 audience: Admin
 f1.keywords:
@@ -55,7 +55,7 @@ Where the loop content was originally created determines its storage location:
 |Admin Management: Loop workspaces  |n/a|See [Admin Management of Loop workspaces](#admin-management-of-loop-workspaces) for a list of capabilities that are available and also not yet available.|
 |Admin Management: Recycle bin  |End user Recycle bin for deleted content.|End user Recycle bin for deleted content.  <br><br>**Not Yet Available**:  <br>End user Recycle bin for deleted Loop workspaces.|
 |Audit: Version history  |**Version History** [export in Purview](/purview/ediscovery-export-search-results#step-1-prepare-search-results-for-export) or via [Graph API](/graph/api/driveitem-get-content-format).|**Version History** [export in Purview](/purview/ediscovery-export-search-results#step-1-prepare-search-results-for-export).  <br><br>**Not Yet Available**:  <br>API access to Loop workspace containers - this impacts third party export and eDiscovery tools.|
-|Audit: logs and events  |**Audit** logs for all events: search and export Microsoft 365 service events for security and compliance investigations  <ol><li>use the [compliance admin center](https://compliance.microsoft.com/auditlogsearch)<li>search audit logs for "loop" or "fluid"<li>further filter exported results by "SourceFileExtension":"loop" or "SourceFileExtension":"fluid"|**Audit** logs for all events: search and export Microsoft 365 service events for security and compliance investigations  <ol><li>use the [compliance admin center](https://compliance.microsoft.com/auditlogsearch)<li>search audit logs for Loop ApplicationID `a187e399-0c36-4b98-8f04-1edc167a0996`|
+|Audit: logs and events  |**Audit** logs for all events: search and export Microsoft 365 service events for security and compliance investigations  <ol><li>use the [compliance admin center](https://compliance.microsoft.com/auditlogsearch)<li>search audit logs for "loop" or "loot" or "fluid"<li>further filter exported results by "SourceFileExtension":"loop" or "SourceFileExtension":"loot" (templates) or "SourceFileExtension":"fluid" (deprecated)|**Audit** logs for all events: search and export Microsoft 365 service events for security and compliance investigations  <ol><li>use the [compliance admin center](https://compliance.microsoft.com/auditlogsearch)<li>search audit logs for Loop ApplicationID `a187e399-0c36-4b98-8f04-1edc167a0996`</ol>Note: Loop workspaces create and update .pod files to manage content in the workspace.|
 |Audit: log access  |**Audit** logs are retained, can be exported, and can be streamed to third party tools|**Audit** logs are retained, can be exported, and can be streamed to third party tools|
 |Legal Hold and eDiscovery: Purview  |Microsoft **[Purview eDiscovery](/microsoft-365/loop/loop-components-teams#do-loop-and-fluid-files-support-ediscovery)** supports search and collection, review (premium only), and export (premium only) as HTML or original. You can also download and re-upload the files to any OneDrive to view them in their native format.|Microsoft **[Purview eDiscovery](/microsoft-365/loop/loop-components-teams#do-loop-and-fluid-files-support-ediscovery)** supports search and collection, review (premium only), and export (premium only) as HTML or original. You can also download and re-upload the files to any OneDrive to view them in their native format.|
 |Legal Hold and eDiscovery: Export  |Microsoft **[Graph API](/graph/api/driveitem-get-content-format)** export support.|**Not Yet Available**:  <br>API access to Loop workspace containers - this impacts third party export and eDiscovery tools.|

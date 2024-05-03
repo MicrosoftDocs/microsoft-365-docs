@@ -1,10 +1,10 @@
 ---
 title: Manage who can create Microsoft 365 Groups
 f1.keywords: NOCSH
-ms.author: mikeplum
+ms.author: jtremper
 ms.reviewer: rahulnayak
 ms.date: 11/22/2023
-author: MikePlumleyMSFT
+author: jacktremper
 manager: pamgreen
 audience: Admin
 ms.topic: article

@@ -9,6 +9,7 @@ ms.reviewer: drjones, jobailey
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-marketplace
 ms.localizationpriority: medium
 ms.collection: 
 - Tier1
@@ -20,6 +21,7 @@ ms.custom:
 - commerce_purchase
 - okr_SMB
 - AdminSurgePortfolio
+- admindeeplinkMAC
 description: "Learn about registration numbers and under-review notifications when you buy Microsoft business products or services."
 ms.date: 08/24/2023
 ---

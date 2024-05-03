@@ -1,0 +1,27 @@
+    - name: Microsoft 365 Backup
+      href: index.yml
+
+    - name: Overview 
+      href: backup-overview.md
+    - name: Admin setup 
+      href: backup-setup.md
+    - name: Billing setup
+      href: backup-billing.md
+    - name: Pricing model
+      href: backup-pricing.md
+    - name: View and edit policies 
+      href: backup-view-edit-policies.md
+    - name: Restore data 
+      href: backup-restore-data.md
+    - name: Offboarding
+      href: backup-offboarding.md
+    - name: Preview limitations
+      href: backup-limitations.md
+    - name: FAQs
+      href: backup-faq.md
+
+
+
+
+
+

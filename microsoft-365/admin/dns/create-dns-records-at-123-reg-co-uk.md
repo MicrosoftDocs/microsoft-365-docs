@@ -44,7 +44,7 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
 > [!NOTE]
 > This record is used only to verify that you own your domain; it doesn't affect anything else. You can delete it later, if you like.
 
-1. To get started, go to your domains page at 123-reg.co.uk by using [this link](https://www.123-reg.co.uk/secure/cpanel/domain/overview). You'll be prompted to log in first.
+1. To get started, go to your domains page at 123-reg.co.uk by using [this link](https://www.123-reg.co.uk/secure/cpanel/domain/overview) and follow the prompt to log in.
 
 2. Select **Domains**, and on the Domain name overview page, select the name of the domain that you want to verify or go to Control panel.
 
@@ -68,7 +68,7 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
 
 6. Select **Add**.
 
-   :::image type="content" source="../../media/dns-123reg/123reg-domains-TXTSPF-Add.png" alt-text="Select Add.":::
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-TXTSPF-Add.png" alt-text="Screenshot of where you select Add to add a domain verification TXT record.":::
 
    Wait a few minutes before you continue, so that the record you just created can update across the Internet.
 
@@ -115,7 +115,7 @@ To verify the record in Microsoft 365:
 
 6. Select **Add**.
 
-   :::image type="content" source="../../media/dns-123reg/123reg-domains-MX-Add.png" alt-text="Select Add.":::
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-MX-Add.png" alt-text="Screenshot of where you select Add to add an MX record.":::
 
 7. If there are any other MX records, remove each one by selecting the **Delete (trash can)** icon for that record.
 
@@ -149,7 +149,7 @@ To verify the record in Microsoft 365:
 
 6. Select **Add**.
 
-   :::image type="content" source="../../media/dns-123reg/123reg-domains-CNAME-Add.png" alt-text="Select Add.":::
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-CNAME-Add.png" alt-text="Screenshot of where you select Add to add a CNAME record.":::
 
 ## Add a TXT record for SPF to help prevent email spam
 
@@ -213,7 +213,7 @@ Only select this option if your organization uses Skype for Business for online 
 
 6. Select **Add**.
 
-   :::image type="content" source="../../media/dns-123reg/123reg-domains-TXTSPF-Add.png" alt-text="Select Add.":::
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-TXTSPF-Add.png" alt-text="Screenshot of where you select Add to add an SRV record.":::
 
 7. Add the other SRV record.
 
@@ -249,7 +249,7 @@ Only select this option if your organization uses Skype for Business for online 
 
 1. Select **Add**.
 
-   :::image type="content" source="../../media/dns-123reg/123reg-domains-CNAME-Add.png" alt-text="Select Add.":::
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-CNAME-Add.png" alt-text="Screenshot of where you select Add to add CNAME records for Skype for Business.":::
 
 1. Add the other CNAME record.
 
@@ -289,7 +289,7 @@ This service helps you secure and remotely manage mobile devices that connect to
 
 1. Select **Add**.
 
-   :::image type="content" source="../../media/dns-123reg/123reg-domains-CNAME-Add.png" alt-text="Select Add.":::
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-CNAME-Add.png" alt-text="Screenshot of where you select Add to add CNAME records for Mobile Device Management.":::
 
 1. Add the other CNAME record.
 

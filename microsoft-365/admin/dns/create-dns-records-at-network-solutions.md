@@ -74,7 +74,7 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
 
 1. Select **ADD**.
 
-   :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-add.png" alt-text="Select ADD.":::
+   :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-add.png" alt-text="Screenshot of where you select Add to add a domain verification TXT record.":::
 
    > [!NOTE]
    > Select **Classic View** in the upper right to view the TXT record you created.
@@ -130,7 +130,7 @@ To verify the record in Microsoft 365:
 
 1. Select **ADD**.
 
-   :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-MX-add.png" alt-text="Select ADD.":::
+   :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-MX-add.png" alt-text="Screenshot of where you select Add to add an MX record.":::
 
    > [!NOTE]
    > Select **Classic View** in the upper right to view the TXT record you created.
@@ -209,13 +209,13 @@ To verify the record in Microsoft 365:
 
 1. In the boxes for the new record, type or copy and paste the following values.
 
-   |Refers to|TXT Value|TTL
+   |Refers to|TXT Value|TTL|
    |---|---|---|
    |@  <br/> (The system will change this value to **@ (None)** when you save the record.)|v=spf1 include:spf.protection.outlook.com -all  <br/> **Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct.|1 Hour|
 
 1. Select **ADD**.
 
-   :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-add.png" alt-text="Select ADD.":::
+   :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-add.png" alt-text="Screenshot of where you select Add to add an SPF TXT record.":::
 
    > [!NOTE]
    > Select **Classic View** in the upper right to view the record you created.
@@ -261,7 +261,7 @@ Only select this option if your organization uses Skype for Business for online 
 
 1. Select **ADD**.
 
-   :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-srv-add.png" alt-text="Select ADD.":::
+   :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-srv-add.png" alt-text="Screenshot of where you select Add to add an SRV record.":::
 
    > [!NOTE]
    > Select **Classic View** in the upper right to view the record you created.

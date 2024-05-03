@@ -2,12 +2,13 @@
 title: "Configure Microsoft 365 Multi-Geo eDiscovery"
 ms.reviewer:
 ms.date: 08/10/2020
-ms.author: mikeplum
-author: MikePlumleyMSFT
-manager: serdars
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
+ms.subservice: multi-tenant
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020

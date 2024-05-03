@@ -9,6 +9,7 @@ ms.reviewer: jkinma, ramagane
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-management
 ms.localizationpriority: medium
 ms.collection: 
 - Tier1
@@ -23,6 +24,7 @@ ms.custom:
 - okr_smb
 - AdminSurgePortfolio
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid: MET150
 description: "Learn how to interpret the charges on your invoice for your Microsoft business subscription with an MOSA billing account."
 ms.date: 02/21/2024

@@ -3,7 +3,7 @@ title: "Configure SMS text notifications and reminders in Microsoft Bookings"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 09/15/2021
+ms.date: 02/28/2024
 audience: Admin
 ms.topic: article
 ms.service: bookings

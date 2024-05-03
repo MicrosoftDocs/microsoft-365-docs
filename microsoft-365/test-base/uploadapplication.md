@@ -18,6 +18,8 @@ f1.keywords: NOCSH
 
 # Uploading a pre-built zip package
 
+[!INCLUDE [test-base-deprecation](./includes/test-base-deprecation.md)]
+
 This section provides all the steps necessary to edit, upload, and test on Test Base when you already have a pre-built .zip file.
 
 **Pre-requests**

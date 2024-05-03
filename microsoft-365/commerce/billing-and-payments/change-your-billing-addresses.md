@@ -9,6 +9,7 @@ ms.reviewer: jkinma, ramagane
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-management
 ms.localizationpriority: medium
 ms.collection: 
 - Tier1
@@ -20,6 +21,7 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid: MET150
 description: "Learn how to change your billing address for Microsoft 365 for business."
 ms.date: 02/16/2024

@@ -1,12 +1,13 @@
 ---
-title: Join or leave a multitenant organization in Microsoft 365 (Preview)
-ms.author: mikeplum
-author: MikePlumleyMSFT
-manager: serdars
+title: Join or leave a multitenant organization in Microsoft 365
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.date: 08/17/2023
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
+ms.subservice: multi-tenant
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -15,10 +16,7 @@ f1.keywords:
 description: Learn how to join or leave a multitenant organization in Microsoft 365.
 ---
 
-# Join or leave a multitenant organization in Microsoft 365 (Preview)
-
-> [!NOTE]
-> Multitenant organizations in Microsoft 365 is available in [targeted release](/microsoft-365/admin/manage/release-options-in-office-365).
+# Join or leave a multitenant organization in Microsoft 365
 
 To join a multitenant organization, a global administrator in the owner organization must first add your organization to the multitenant organization. Once they've done that, you can join the multitenant organization. You'll need the tenant ID of the owner organization in order to join.
 

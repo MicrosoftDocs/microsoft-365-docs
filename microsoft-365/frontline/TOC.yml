@@ -13,8 +13,6 @@
       href: flw-deploy-overview.md
     - name: Start with a pilot deployment
       href: flw-pilot.md
-#    - name: Extend your pilot to a full deployment
-#      href: deploy-teams-at-scale.md 
     - name: Set up Microsoft 365 and Teams
       items: 
       - name: Set up Microsoft 365 and related services
@@ -25,6 +23,8 @@
         href: deploy-dynamic-teams-at-scale.md
       - name: Deploy frontline static teams at scale with PowerShell
         href: deploy-teams-at-scale.md
+#     - name: Frontline usage reporting
+#       href: frontline-usage-report.md 
       - name: Deploy your frontline operational hierarchy
         href: deploy-frontline-operational-hierarchy.md
     - name: Set up and configure experiences for your frontline
@@ -32,7 +32,7 @@
       - name: Set up targeted communications
         href: set-up-targeted-communications.md 
       - name: Deploy Shifts at scale
-        href: deploy-shifts-at-scale.md 
+        href: deploy-shifts-at-scale.md
     - name: Manage devices
       items:
       - name: Manage shared and personal devices
@@ -54,7 +54,7 @@
       - name: Licensing options for frontline workers
         href: flw-licensing-options.md
       - name: Considerations for switching from E to F
-        href: switch-from-enterprise-to-frontline.md 
+        href: switch-from-enterprise-to-frontline.md
   - name: Communications
     items: 
     - name: Frontline team collaboration
@@ -160,7 +160,11 @@
       - name: Use retail team templates
         href: /microsoftteams/get-started-with-retail-teams-templates?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
     - name: Manufacturing
-      href: teams-for-manufacturing.md
+      items:
+      - name: Overview
+        href: teams-for-manufacturing.md
+      - name: Use manufacturing team templates
+        href: /microsoftteams/manufacturing-teams-templates-in-the-admin-console?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
   - name: Apps for frontline workers
     items:
     - name: About apps in Microsoft Teams
@@ -177,8 +181,8 @@
       href: /microsoftteams/manage-praise-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
     - name: Manage the Shifts app
       href: /microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
-    - name: Manage the Tasks app
-      href: /microsoftteams/manage-tasks-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+    - name: Manage the Planner app
+      href: /microsoftteams/manage-planner-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
     - name: Manage the Updates app
       href: /microsoftteams/manage-updates-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
     - name: Manage the Virtual Appointments app

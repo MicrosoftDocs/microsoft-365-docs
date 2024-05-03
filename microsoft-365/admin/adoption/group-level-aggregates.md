@@ -42,7 +42,7 @@ Group Level Aggregates isn't enabled by default.
   
 To enable Group Level Aggregates:
 
-1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/) as a Global Administrator.
+1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> as a Global Administrator.
 
 2. Go to **Settings** \> **Org settings** \> **Adoption Score**.
 

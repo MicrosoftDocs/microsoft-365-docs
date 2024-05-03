@@ -33,7 +33,7 @@ For more information about the app launcher and Microsoft365.com, see [meet the 
 > [!NOTE]
 > Microsoft 365 apps are excluded from this list since they’re already displayed in the App launcher.
 
-1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
+1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.cloud.microsoft</a>.
 2. In the left nav, choose **Show all**, and under **Admin centers**, choose **Microsoft Entra**.
 3. In Microsoft Entra admin center, under **Microsoft Entra ID (Azure AD)**, choose **Go to Microsoft Entra ID**.
 4. In the left nav, select **Applications** and then **Enterprise applications**.
@@ -46,7 +46,7 @@ For more information about the app launcher and Microsoft365.com, see [meet the 
 > [!NOTE]
 > The user interface will indicate if you need need to purchase additional Microsoft Entra ID licenses to use this feature. For more information see [Microsoft Entra pricing](https://azure.microsoft.com/pricing/details/active-directory/).
 
-1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
+1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.cloud.microsoft</a>.
 2. In the left nav, choose **Show all**, and under **Admin centers**, choose **Microsoft Entra**.
 3. In Microsoft Entra admin center, under **Microsoft Entra ID (Azure AD)**, choose **Go to Microsoft Entra ID**.
 4. In the left nav, select **Applications** and then **Enterprise applications**.

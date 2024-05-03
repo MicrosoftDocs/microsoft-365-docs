@@ -5,19 +5,21 @@ metadata:
   ms.author: cmcatee
   manager: scotv
   ms.reviewer: racheg, ronarg
-  ms.date: 01/18/2024
   audience: Admin
   ms.topic: faq
   ms.service: microsoft-365-business
+  ms.subservice: m365-commerce-volume-licensing
+  ms.collection: 
+  - Tier2
+  - scotvorg
   ms.custom: 
   - commerce_vl
   - empty
   search.appverid: MET150
-  ms.collection: 
-  - Tier2
-  - scotvorg
   ms.localizationpriority: medium
   description: "Product keys Frequently Asked Questions"
+  ms.date: 01/18/2024
+
 title: Product keys Frequently Asked Questions
 summary: |
 
@@ -188,7 +190,6 @@ sections:
           
             - [Volume Activation Management Tool (VAMT) Technical Reference](/windows/deployment/volume-activation/volume-activation-management-tool)
             - [Managing Activation Using the Volume Activation Management Tool (VAMT)](/previous-versions/tn-archive/ff686876(v=technet.10))
-            - Download [Volume Activation Management Tool (VAMT)](https://www.microsoft.com/download/details.aspx?id=11936)
 
       - question: |
           What should I know about using Windows Server as the KMS host to activate Windows clients?

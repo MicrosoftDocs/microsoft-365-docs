@@ -10,7 +10,7 @@ ms.service: microsoft-365-business
 ms.collection:
 - m365-security
 - tier1
-ms.date: 09/15/2022
+ms.date: 02/29/2024
 ms.localizationpriority: medium
 search.appverid: MET150
 description: "Learn how Microsoft Defender Antivirus protects your Windows devices from software threats, such as viruses, malware, and spyware."
@@ -32,7 +32,7 @@ To provide threat protection, Microsoft Defender Antivirus uses several methods.
 
 To learn more about malware and Microsoft Defender Antivirus, see the following articles:
 
-- [Understanding malware & other threats](/windows/security/threat-protection/intelligence/understanding-malware)
+- [Understanding malware & other threats](/microsoft-365/security/defender-endpoint/malware/understanding-malware)
 - [How Microsoft identifies malware and potentially unwanted applications](/windows/security/threat-protection/intelligence/criteria)
 - [Next-generation protection in Windows 10](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)
 
