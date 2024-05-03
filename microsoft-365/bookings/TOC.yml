@@ -3,93 +3,77 @@
   items:
   - name: Learn about Personal Bookings
     items:
-    - name: Bookings Overview
-      href: bookings-overview.md
     - name: Create a new meeting type
-      href: bookings-in-outlook.md
+      href: bookings-overview.md
     - name: Preview and share your personal booking page
       href: bookings-in-outlook.md
     - name: Add email reminders and follow-up
       href: bookings-in-outlook.md
-    - name: Set your banner page
+    - name: Set your banner image
       href: bookings-in-outlook.md
     - name: Turn off your personal booking page
-      href: bookings-in-outlook.md      
+      href: bookings-in-outlook.md
   - name: Learn about Shared Bookings
     items:
-    - name: Overview
-      href: bookings-overview.md
-    - name: Create a new meeting type
-      href: bookings-in-outlook.md
     - name: Enter your Bookings business information
       href: enter-business-information.md
     - name: Define your Bookings service offerings
       href: define-service-offerings.md
     - name: Add staff to Bookings
       href: add-staff.md
-    - name: Share your booking page
-      href: enter-business-information.md
+    - name: Share your shared booking page
+      href: define-service-offerings.md
     - name: Understanding staff roles
-      href: define-service-offerings.md
-    - name: Set up different staff availability
       href: add-staff.md
-    - name: Notify staff member when they have a booking
+    - name: Configure staff availability
       href: enter-business-information.md
-    - name: Accept membership as a staff member
+    - name: Notify staff when a bookings is created or updated
       href: define-service-offerings.md
-    - name: Create multiple services
+    - name: Configure staff membership when added to a Shared Booking page
       href: add-staff.md
-    - name: Set up SMS text notification
+    - name: Create a 1:N and N:N service
+      href: enter-business-information.md
+    - name: Configure SMS text notifications and reminders
       href: bookings-sms.md
-    - name: Block out specific services depending on dates
-      href: define-service-offerings.md
+    - name: Block certain times from being bookable
+      href: add-staff.md
     - name: Define booking acceptance threshold
-      href: add-staff.md
-    - name: Use buffer time to add prep time
-      href: enter-business-information.md
-    - name: Hide services from your booking page
+      href: bookings-sms.md
+    - name: Use Buffer Time to add prep time
       href: define-service-offerings.md
-    - name: Configure notifications
+    - name: Hide services from your booking page
       href: add-staff.md
-    - name: Let customers manage their own bookings
+    - name: Configure notifications
+      href: enter-business-information.md
+    - name: Let customers manage their bookings
       href: define-service-offerings.md
     - name: Create an appointment on behalf of a customer
-      href: add-staff.md
-    - name: Add custom questions
-      href: enter-business-information.md
-    - name: Default scheduling policies
-      href: define-service-offerings.md
+      href: create-a-manual-booking.md
+    - name: Add custom questions for customers
+      href: add-questions.md
+    - name: Set default scheduling policies
+      href: set-scheduling-policies.md
     - name: Change business hours and time zone
-      href: add-staff.md         
+      href: schedule-closures-time-off-vacation.md     
   - name: Bookings for admins
     items:
-    - name: Overview
-      href: bookings-overview.md
-    - name: Bookings architecture
+    - name: Learn about admin roles
       href: bookings-overview.md
     - name: Turn bookings on or off
+      href: turn-bookings-on-or-off.md
+    - name: Bookings architecture
       href: bookings-overview.md    
     - name: Best practices
       href: bookings-overview.md
     - name: Manage settings in the Microsoft 365 admin center
-      href: bookings-overview.md    
+      href: turn-bookings-on-or-off.md    
     - name: Custom domain support in Bookings
-      href: bookings-overview.md
+      href: custom-domain-support.md
     - name: PowerShell for Bookings
       href: bookings-overview.md    
-    - name: Bookings Graph APIs
-      href: bookings-overview.md
+    - name: Use the Bookings Graph APIs
+      href: https://learn.microsoft.com/graph/api/resources/booking-api-overview?view=graph-rest-1.0
     - name: Reporting info for Bookings
-      href: bookings-overview.md    
+      href: reporting-info.md    
     - name: Delete booking page
-      href: bookings-overview.md
-  - name: Industry specific scenarios
-    items:
-    - name: Overview
-      href: bookings-overview.md
-    - name: Bookings legal scenarios
-      href: bookings-overview.md      
-  - name: What's new in Bookings
-    items:
-    - name: What's new
-      href: bookings-overview.md      
+      href: delete-calendar.md
