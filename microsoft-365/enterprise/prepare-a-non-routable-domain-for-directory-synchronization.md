@@ -30,11 +30,11 @@ description: "Learn what to do if you have a nonroutable domain associated with 
 
 # Prepare a nonroutable domain for directory synchronization
 
-When you synchronize your on-premises directory with Microsoft 365, you have to have a verified domain in Microsoft Entra ID. Only the User Principal Names (UPNs) that are associated with the on-premises Active Directory Domain Services (AD DS) domain are synchronized. However, any UPN that contains a nonroutable domain, such as ".local" (example: billa@contoso.local), is synchronized to an .onmicrosoft.com domain (example: billa@contoso.onmicrosoft.com).
+When you synchronize your on-premises directory with Microsoft 365, you have to have a verified domain in Microsoft Entra ID. Only the User Principal Names (UPNs) that are associated with the on-premises Active Directory Domain Services (AD DS) domain are synchronized. However, any UPN that contains a nonroutable domain, such as .local (example: billa@contoso.local), is synchronized to an .onmicrosoft.com domain (example: billa@contoso.onmicrosoft.com).
 
-If you currently use a ".local" domain for your user accounts in AD DS, we recommend that you change them to use a verified domain. For example, billa@contoso.com, in order to properly synchronize with your Microsoft 365 domain.
+If you currently use a .local domain for your user accounts in AD DS, we recommend that you change them to use a verified domain. For example, billa@contoso.com, in order to properly synchronize with your Microsoft 365 domain.
   
-## What if I only have a ".local" on-premises domain?
+## What if I only have a .local on-premises domain?
 
 You use Microsoft Entra Connect for synchronizing your AD DS to the Microsoft Entra tenant of your Microsoft 365 tenant. For more information, see [Integrating your on-premises identities with Microsoft Entra ID](/azure/architecture/reference-architectures/identity/azure-ad).
   
