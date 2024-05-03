@@ -241,9 +241,6 @@ Select one of the following tabs to continue with the prebuilt model you want to
 
     - In the **Compliance** section, under **Retention labels**, select the retention label you want to add. If a retention label has been already applied to the library where the file is stored, it will be selected. 
 
-    > [!NOTE]
-    > Sensitivity labels are not available for prebuilt models at this time.
-
 5. When you're ready to create the model, select **Create**.
 
 6. You're now ready to [complete setting up the model](prebuilt-model-receipt.md).
@@ -262,8 +259,8 @@ Select one of the following tabs to continue with the prebuilt model you want to
 
         ![Screenshot of the right panel of the Create a sensitive information processing model page.](../media/content-understanding/create-a-model-panel-sensitive-info.png) 
     
-    > [!NOTE]
-    > You do not need to designate a content type for the prebuilt sensitivity information model.
+        > [!NOTE]
+        > You do not need to designate a content type for the prebuilt sensitivity information model.
 
 4. When you're ready to create the model, select **Create**.
 
