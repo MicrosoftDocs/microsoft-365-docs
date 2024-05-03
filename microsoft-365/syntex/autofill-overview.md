@@ -64,11 +64,11 @@ An AI system includes not only the technology, but also the people who use it, t
 
 Responsible AI FAQs are part of a broader effort to put Microsoft's AI principles into practice. To find out more, see [Microsoft AI principles](https://www.microsoft.com/ai/responsible-ai).
 
-### Responsible AI FAQs for the autofill columns service
+### Responsible AI FAQs for autofill columns
 
 #### What are autofill columns?
 
-Autofill columns provide a column setting that allows users to construct LLM prompts that will automatically classify the file, extract or generate information from the file’s contents (extract a specific value or string or generate a summary or response based on some criteria), and save the output to the column.
+Autofill columns provide a column setting that allows users to construct large language model (LLM) prompts that will automatically classify the file, extract or generate information from the file’s contents (extract a specific value or string or generate a summary or response based on some criteria), and save the output to the column.
 
 #### What can autofill columns do?
 
@@ -76,7 +76,7 @@ Autofill columns allow a saved prompt to be used to process files created or upl
 
 #### What are the intended uses of autofill columns?
 
-Autofill columns provide metadata automation for users. A user can use it to classify, extract, summarize, or even analyze a file and save the response to the column where it can then be indexed and used for search or other downstream workflow processes. We also imagine it being a useful complement for our other ML models, where one could supplement the extracted metadata from a configured model with a summary or other analysis response.
+Autofill columns provide metadata automation for users. A user can use it to classify, extract, summarize, or even analyze a file, and then save the response to the column where it can then be indexed and used for search or other downstream workflow processes. Autofill columns can also be a useful complement for other machine language models, where a users could supplement the extracted metadata from a configured model with a summary or other analysis response.
 
 #### How was autofill columns evaluated? What metrics are used to measure performance?
 
@@ -90,21 +90,21 @@ Autofill columns provide metadata automation for users. A user can use it to cla
 
     - Designed prompts such as “What is the category of the document, choose from A, B, C. Reply none if it’s none of them.” Or "What is the candidate education background" for resumes.
 
-- Reviewed the results. The results fell into expectations in most cases. For the dissatisfied results, function calling is used to improve the results. Some of the results were compared across different LLM versions.
+- Reviewed the results. The results aligned with expectations in most cases. For the results that did not meet the satisfactory threshold, function calling was used to improve the results. Some of the results were compared across different LLM versions.
 
 - Evaluated risk and safety metrics.
 
     - Setup: Used automated programs to send similar requests as the feature does in the real world, combining metadata prompts, system prompts, and user question or document content, run on the same base model (in this case, GPT-4 Turbo) with same configuration.
 
-    - Because the feature’s prompt comes from two parts (one is the document content, the other is the question), we prepared 600 test cases.
+    - Assessment: Because the feature’s prompt comes from two parts (one is the document content, the other is the question), we prepared several hundred test cases.
 
-        - Evaluated 200 tests with standard business documents, and harmful questions. These questions contained self-harm, sexual, violence, or racial information.
+        - Evaluated test cases with standard business documents, and harmful questions. These questions contained self-harm, sexual, violence, or racial information.
 
-        - Evaluated 200 tests with harmful content, and questions prompting the model to answer something it shouldn’t. For example, “Summarize the content in the document.”
+        - Evaluated test cases with harmful content, and questions prompting the model to answer something it shouldn’t. For example, “Summarize the content in the document.”
 
     - Evaluation: Followed Microsoft curated risk and safety metrics instructions, which is provided in Microsoft Azure AI Studio, to measure the results using LLM (in this case GPT-4 Turbo) from four aspects: self-harm-related content, hateful and unfair content, violent content, and sexual content.
 
-    The evaluation rated the inputs and outputs 0-7, scaling from the least harmful to the most severe level.
+        The evaluation rated the inputs and outputs 0-7, scaling from the least harmful to the most severe level.
 
 #### What are the limitations of autofill columns? How can users minimize the impact of these limitations when using the system?
 
