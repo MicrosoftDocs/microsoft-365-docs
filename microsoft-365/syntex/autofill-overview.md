@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 04/15/2024
+ms.date: 05/03/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -56,7 +56,9 @@ Autofill columns are available for the following column data types:
 
 - Currently, autofill columns don't support the following library types: FormServerTemplates, SitePages, Style Library, and SiteAssets.
 
-- Documents with sensitivity labels aren't analyzed or included the results.
+- Documents with sensitivity labels aren't analyzed or included in the results.
+
+- Document changes are captured only if the file is reprocessed, which must be done manually by the user.
 
 ## Responsible AI FAQs
 
