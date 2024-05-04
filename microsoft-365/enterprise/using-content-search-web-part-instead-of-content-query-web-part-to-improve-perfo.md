@@ -1,5 +1,5 @@
 ---
-title: "Using Content Search Web Part instead of Content Query Web Part to improve performance in SharePoint Online"
+title: "Using Content Search Web Part instead of Content Query Web Part to improve performance in SharePoint in Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
@@ -7,6 +7,7 @@ ms.date: 4/20/2015
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 ms.collection: 
 - scotvorg
@@ -21,16 +22,16 @@ search.appverid:
 - MET150
 - SPO160
 ms.assetid: e8ce6b72-745b-464a-85c7-cbf6eb53391b
-description: Learn how to increase performance by replacing the Content Query Web Part with the Content Search Web Part in SharePoint Server 2013 and SharePoint Online.
+description: Learn how to increase performance by replacing the Content Query Web Part with the Content Search Web Part in SharePoint Server 2013 and SharePoint in Microsoft 365.
 ---
 
-# Using Content Search Web Part instead of Content Query Web Part to improve performance in SharePoint Online
+# Using Content Search Web Part instead of Content Query Web Part to improve performance in SharePoint in Microsoft 365
 
-This article describes how to increase performance by replacing the Content Query Web Part with the Content Search Web Part in SharePoint Server 2013 and SharePoint Online.
+This article describes how to increase performance by replacing the Content Query Web Part with the Content Search Web Part in SharePoint Server 2013 and SharePoint in Microsoft 365.
   
-One of the most powerful new features of SharePoint Server 2013 and SharePoint Online is the Content Search Web Part (CSWP). This Web Part uses the search index to quickly retrieve results, which are shown to the user. Use the Content Search Web Part instead of the Content Query Web Part (CQWP) in your pages to improve performance for your users.
+One of the most powerful new features of SharePoint Server 2013 and SharePoint in Microsoft 365 is the Content Search Web Part (CSWP). This Web Part uses the search index to quickly retrieve results, which are shown to the user. Use the Content Search Web Part instead of the Content Query Web Part (CQWP) in your pages to improve performance for your users.
   
-Using a Content Search Web Part over a Content Query Web Part will almost always result in better page load performance on SharePoint Online. There's a little additional configuration to get the right query, but the rewards are improved performance and happier users.
+Using a Content Search Web Part over a Content Query Web Part will almost always result in better page load performance on SharePoint. There's a little additional configuration to get the right query, but the rewards are improved performance and happier users.
   
 ## Comparing the performance gain you get from using Content Search Web Part instead of Content Query Web Part
 
@@ -58,7 +59,7 @@ In Internet Explorer, use the **Network** tab of the F12 developer tools to look
   
 ![Screen shot showing Request Duration of 106.](../media/b46387ac-660d-4e5e-a11c-cc430e912962.png)
   
-## Adding a Content Search Web Part in SharePoint Online
+## Adding a Content Search Web Part in SharePoint in Microsoft 365
 
 Adding a Content Search Web Part is similar to a regular Content Query Web Part. See the section  *"Add a Content Search Web Part"*  in [Configure a Content Search Web Part in SharePoint](https://support.office.com/article/Configure-a-Content-Search-Web-Part-in-SharePoint-0dc16de1-dbe4-462b-babb-bf8338c36c9a).
   
