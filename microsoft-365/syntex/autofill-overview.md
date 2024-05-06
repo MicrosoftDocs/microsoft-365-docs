@@ -37,8 +37,11 @@ Autofill columns are available for the following file types: .csv, .doc, .docx, 
 
 ### Supported column data types
 
-Autofill columns are available for the following column data types:
+Currently, autofill columns are available for the following column data types:
 
+- Text
+- Multiple lines of text
+<!---
 - Choice
 - Number
 - Text
@@ -49,7 +52,7 @@ Autofill columns are available for the following column data types:
 - DateTime
 - URL
 - MMD
-
+--->
 ### Current release notes
 
 - Bulk processing options for existing library files will be added in a future release.
