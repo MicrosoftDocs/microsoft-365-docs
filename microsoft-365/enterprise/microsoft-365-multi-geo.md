@@ -8,6 +8,7 @@ manager: scotv
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
+ms.subservice: multi-tenant
 ms.custom: seo-marvel-apr2020
 ms.collection: Strat_SP_gtc
 ms.localizationpriority: medium
