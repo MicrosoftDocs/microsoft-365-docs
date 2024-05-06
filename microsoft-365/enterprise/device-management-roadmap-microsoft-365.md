@@ -9,6 +9,7 @@ ms.topic: conceptual
 f1.keywords:
 - NOCSH
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune

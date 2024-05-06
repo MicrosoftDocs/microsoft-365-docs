@@ -220,7 +220,7 @@
         - name: Admin setup 
           href: ocr.md
 
-    - name: Microsoft 365 Archive (Preview)
+    - name: Microsoft 365 Archive
       href: /microsoft-365/archive
 
     - name: Microsoft 365 Backup (Preview)

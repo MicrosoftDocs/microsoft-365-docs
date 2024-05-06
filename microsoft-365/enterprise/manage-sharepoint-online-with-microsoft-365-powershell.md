@@ -7,6 +7,7 @@ ms.date: 05/01/2024
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 search.appverid:
 - MET150

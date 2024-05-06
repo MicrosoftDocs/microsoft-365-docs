@@ -3,15 +3,15 @@ title: "Use PowerShell to create reports for Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 05/01/2024
+ms.date: 07/17/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 ms.collection: 
 - scotvorg
 - Ent_O365
-- must-keep
 f1.keywords:
 - CSH
 ms.custom: 
@@ -30,29 +30,31 @@ Many different reports are available in the Microsoft 365 admin center. But thes
 These articles describe how to use PowerShell for Microsoft 365 to get information from your Microsoft 365 tenant:
   
 - Get started with reporting using PowerShell for Microsoft 365:
-
+    
   - [Why you need to use PowerShell for Microsoft 365](./why-you-need-to-use-microsoft-365-powershell.md)
-
+    
+    
 - Reports for user accounts and licenses:
-
+    
   - [View Microsoft 365 licenses and services with PowerShell](view-licenses-and-services-with-microsoft-365-powershell.md)
-
+    
   - [View Microsoft 365 licensed and unlicensed users with PowerShell](view-licensed-and-unlicensed-users-with-microsoft-365-powershell.md)
-
+    
   - [View Microsoft 365 account license and service details with PowerShell](view-account-license-and-service-details-with-microsoft-365-powershell.md)
-
+    
   - [View Microsoft 365 user accounts with PowerShell](view-user-accounts-with-microsoft-365-powershell.md)
-
+    
 - Reports for SharePoint:
-
+    
   - [Get started with SharePoint Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
-
+    
   - [Get-SPOSiteGroup - Gets all the groups on a specified site collection](/powershell/module/sharepoint-online/get-spositegroup)
-
+    
 - Reports for Exchange Online:
-
+    
   - [Use Exchange Online PowerShell to display mailbox](/exchange/recipients-in-exchange-online/manage-user-mailboxes/use-powershell-to-display-mailbox-information)
-
+    
+    
 ## Related articles
 
 [Manage Microsoft 365 with PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)

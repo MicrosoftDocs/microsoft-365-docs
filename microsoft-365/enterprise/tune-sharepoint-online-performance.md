@@ -3,10 +3,11 @@ title: "Tune SharePoint in Microsoft 365 performance"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 05/01/2024
+ms.date: 10/2/2019
 audience: Admin
 ms.topic: troubleshooting
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -15,21 +16,20 @@ ms.collection:
 - scotvorg
 - Ent_O365
 - SPO_Content
-- must-keep
 f1.keywords:
 - CSH
 ms.custom: Adm_O365
 ms.assetid: f0522d4a-fbf4-41f9-854e-c9b59555091d
-description: "Contains links to other articles that tell you how to improve performance of page download times for SharePoint in Microsoft 365"
+description: "Contains links to other articles that tell you how to improve performance of page download times for SharePoint in Microsoft 365."
 ---
 
-# Tune SharePoint performance
+# Tune SharePoint in Microsoft 365 performance
 
 This article contains links to other articles that tell you how to improve performance of page download times for SharePoint in Microsoft 365. This article is part of the [Network planning and performance tuning for Office 365](./network-planning-and-performance.md) project.
 
-## Articles about fine tuning SharePoint performance
+## Articles about fine tuning SharePoint in Microsoft 365 performance
 
-Use these articles to fine tune SharePoint performance.
+Use these articles to fine tune SharePoint in Microsoft 365 performance.
   
 - [Introduction to performance tuning for SharePoint](introduction-to-performance-tuning-for-sharepoint-online.md)
 

@@ -7,6 +7,7 @@ audience: Admin
 ms.date: 12/28/2023
 ms.topic: overview
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 ms.collection:
 - scotvorg

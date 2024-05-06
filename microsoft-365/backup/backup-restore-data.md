@@ -11,8 +11,7 @@ ms.service: microsoft-365-backup
 ms.custom: backup
 search.appverid:
 ms.collection:
-    - enabler-strategic
-    - m365initiative-syntex
+    - essentials-manage
 ms.localizationpriority:  medium
 description: Learn how to restore data using restore points and express restore points in Microsoft 365 Backup.
 ---
