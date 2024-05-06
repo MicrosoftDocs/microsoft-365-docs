@@ -123,4 +123,4 @@ Autofill columns provide metadata automation for users. A user can use it to cla
 
 - If any harmful content is generated that is unacceptable to users, either the tenant admin or Microsoft support can turn off this feature at the site or tenant level.
 
-- A feedback link is provided in the user interface. Feedback is monitored, reviewed, and appropriate actions taken as needed, including in some cases updating the product experience.
+- A **Send feedback** link is provided in the user interface. Feedback is monitored, reviewed, and appropriate actions taken as needed, including in some cases updating the product experience.
