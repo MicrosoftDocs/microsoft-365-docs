@@ -7,6 +7,7 @@ ms.date: 10/26/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
+ms.subservice: network
 ms.localizationpriority: high
 ms.collection:
 - scotvorg
@@ -161,7 +162,7 @@ Customers with complex network topologies, implementing network optimizations li
 
 ### Additional network considerations
 When optimizing connectivity to Microsoft 365, certain network configurations may have a negative impact on Microsoft 365 availability, interoperability, performance, and user experience. Microsoft has not tested the following network scenarios with our services, and they are known to cause connectivity issues.
-  - TLS termination or deep packet inspection of any M365 domains with customer proxies or other types of network devices or services [(Use third-party network devices or solutions with Microsoft 365 - Microsoft 365 | Microsoft Learn)](/troubleshoot/miscellaneous/office-365-third-party-network-devices).
+  - TLS termination or deep packet inspection of any M365 domains with customer proxies or other types of network devices or services.
   - Blocking specific protocols or protocol versions such as QUIC, WebSocket’s, etc. by intermediate network infrastructure or service. 
   - Forcing downgrade or failover of protocols (such as UDP --> TCP, TLS1.3 --> TLS1.2 --> TLS1.1) used between client applications and Microsoft 365 services.
   - Routing connections through network infrastructure applying its own authentication such as proxy authentication.

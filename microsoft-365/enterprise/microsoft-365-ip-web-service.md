@@ -7,6 +7,7 @@ ms.date: 01/19/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
+ms.subservice: network
 ms.localizationpriority: high
 ms.collection: 
 - scotvorg

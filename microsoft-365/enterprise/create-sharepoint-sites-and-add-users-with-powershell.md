@@ -7,6 +7,7 @@ ms.date: 04/12/2024
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 search.appverid:
 - MET150

@@ -7,6 +7,7 @@ ms.date: 02/21/2024
 audience: Admin
 ms.topic: troubleshooting
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 ms.collection: 
 - scotvorg

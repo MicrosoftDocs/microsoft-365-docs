@@ -7,6 +7,7 @@ ms.date: 09/25/2023
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-enterprise
+ms.subservice: multi-tenant
 ms.localizationpriority: medium
 ms.collection:
 - scotvorg
@@ -37,12 +38,12 @@ Microsoft 365 inter-tenant collaboration options include using a central locatio
 |Control how users share their calendars with people outside your organization | Administrators apply sharing policies to users mailboxes to control who it can be shared with and the level of access granted |  <ul><li> [Sharing policies](/exchange/sharing/sharing-policies/sharing-policies) </li><li> [Create a sharing policy](/exchange/sharing/sharing-policies/create-a-sharing-policy) </li><li> [Apply a sharing policy to mailboxes](/exchange/sharing/sharing-policies/apply-a-sharing-policy) </li><li> [Modify, disable, or remove a sharing policy](/exchange/sharing/sharing-policies/modify-a-sharing-policy) </li></ul> |
 |Configure secure email channels and control mail flow with partner organizations | Administrators create connectors to apply security to mail exchanges with a partner organization or service provider. The connectors enforce encryption via transport layer security (TLS) and allowing restrictions on domain names or IP address ranges your partners send email from. |  <ul><li> [How Exchange Online uses TLS to secure email connections](../compliance/exchange-online-uses-tls-to-secure-email-connections.md) </li><li> [Configure mail flow using connectors](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) </li><li> [Remote domains](/exchange/mail-flow-best-practices/remote-domains/remote-domains) </li><li> [Set up connector for secure mail flow with a partner organization](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-for-secure-mail-flow-with-a-partner) </li><li> [Mail flow best practices (overview)](/exchange/mail-flow-best-practices/mail-flow-best-practices) </li></ul> |
 
-## SharePoint Online and OneDrive for Business collaboration options
+## SharePoint and OneDrive for Business collaboration options
 
 | Sharing goals | Administrative action | How-to information |
 |:-----|:-----|:-----|
-|Share sites and documents with external users | Administrators configure sharing at the tenant, or site collection level for Microsoft account authenticated, work or school account authenticated or guest accounts |  <ul><li> [Manage external sharing for your SharePoint Online environment](https://support.office.com/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&amp;rs=en-US&amp;ad=US) </li><li> [Restrict sharing of SharePoint and OneDrive content by domain](/sharepoint/restricted-domains-sharing) </li><li> [Use SharePoint Online as a business-to-business (B2B) extranet solution](https://support.office.com/article/7b087413-165a-4e94-8871-4393e0b9c037) </li></ul> |
-|Tracking and controlling external sharing for end users | OneDrive for Business file owners and SharePoint Online end users configure site and document sharing and establish notifications to track sharing |  <ul><li> [Configure notifications for external sharing for OneDrive for Business](https://support.office.com/article/Configure-notifications-for-external-sharing-for-OneDrive-for-Business-b640c693-f170-4227-b8c1-b0a7e0fa876b) </li><li> [Share SharePoint files or folders](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c) </li></ul> |
+|Share sites and documents with external users | Administrators configure sharing at the tenant, or site collection level for Microsoft account authenticated, work or school account authenticated or guest accounts |  <ul><li> [Manage external sharing for your SharePoint environment](https://support.office.com/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&amp;rs=en-US&amp;ad=US) </li><li> [Restrict sharing of SharePoint and OneDrive content by domain](/sharepoint/restricted-domains-sharing) </li><li> [Use SharePoint as a business-to-business (B2B) extranet solution](https://support.office.com/article/7b087413-165a-4e94-8871-4393e0b9c037) </li></ul> |
+|Tracking and controlling external sharing for end users | OneDrive for Business file owners and SharePoint end users configure site and document sharing and establish notifications to track sharing |  <ul><li> [Configure notifications for external sharing for OneDrive for Business](https://support.office.com/article/Configure-notifications-for-external-sharing-for-OneDrive-for-Business-b640c693-f170-4227-b8c1-b0a7e0fa876b) </li><li> [Share SharePoint files or folders](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c) </li></ul> |
 
 ## Skype for Business collaboration options
 
@@ -95,7 +96,7 @@ Each organization maintains its own user accounts, identities, security groups, 
 
 - **Licenses &amp; subscriptions:** In Microsoft 365, licenses from licensing plans (also called SKUs or Microsoft 365 plans) give users access to the Microsoft 365 services that are defined for those plans.
 
-- **Storage:** In Microsoft 365 licensing plans, software boundaries and limits for SharePoint Online are managed separately from mailbox storage limits. Mailbox storage limits are set up and managed by using Exchange Online. In both scenarios, storage can't be shared across tenants.
+- **Storage:** In Microsoft 365 licensing plans, software boundaries and limits for SharePoint are managed separately from mailbox storage limits. Mailbox storage limits are set up and managed by using Exchange Online. In both scenarios, storage can't be shared across tenants.
 
 ### Can we share domain namespaces across Microsoft 365 tenants?
 
