@@ -7,6 +7,7 @@ ms.date: 1/24/2017
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-enterprise
+ms.subservice: network
 ms.localizationpriority: medium
 ms.collection: 
 - scotvorg

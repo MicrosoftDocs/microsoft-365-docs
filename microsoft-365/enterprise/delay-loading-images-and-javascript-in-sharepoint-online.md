@@ -1,5 +1,5 @@
 ---
-title: "Delay loading images and JavaScript in SharePoint Online"
+title: "Delay loading images and JavaScript in SharePoint"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
@@ -7,6 +7,7 @@ ms.date: 12/3/2019
 audience: Admin
 ms.topic: troubleshooting
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 ms.collection: 
 - scotvorg
@@ -21,16 +22,16 @@ search.appverid:
 - SPO160
 - MET150
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
-description: Learn how to decrease the load time for SharePoint Online pages by using JavaScript to delay loading images and nonessential JavaScript.
+description: Learn how to decrease the load time for SharePoint pages by using JavaScript to delay loading images and nonessential JavaScript.
 ---
 
-# Delay loading images and JavaScript in SharePoint Online
+# Delay loading images and JavaScript in SharePoint
 
-The article describes how you can decrease the load time for SharePoint Online pages by using JavaScript to delay loading images and also by waiting to load nonessential JavaScript until after the page loads.
+The article describes how you can decrease the load time for SharePoint pages by using JavaScript to delay loading images and also by waiting to load nonessential JavaScript until after the page loads.
   
-Images can negatively affect page load speeds on SharePoint Online. By default, most modern Internet browsers prefetch images when loading an HTML page. This process can cause the page to be slow to load if the images aren't visible on the screen until the user scrolls down. The images can block the browser from loading the visible part of the page. To work around this problem, you can use JavaScript to skip loading the images first. Also, loading nonessential JavaScript can slow download times on your SharePoint pages too. This article describes some methods you can use to improve page load times with JavaScript in SharePoint Online.
+Images can negatively affect page load speeds on SharePoint. By default, most modern Internet browsers prefetch images when loading an HTML page. This process can cause the page to be slow to load if the images aren't visible on the screen until the user scrolls down. The images can block the browser from loading the visible part of the page. To work around this problem, you can use JavaScript to skip loading the images first. Also, loading nonessential JavaScript can slow download times on your SharePoint pages too. This article describes some methods you can use to improve page load times with JavaScript in SharePoint.
   
-## Improve page load times by delaying image loading in SharePoint Online pages by using JavaScript
+## Improve page load times by delaying image loading in SharePoint pages by using JavaScript
 
 You can use JavaScript to prevent a web browser from prefetching images. This technique speeds up overall document rendering. To do it, you remove the value of the src attribute from the \<img\> tag and replace it with the path to a file in a data attribute such as: data-src. For example:
   
@@ -84,7 +85,7 @@ $(window).on("scroll", function () {
 
 ```
 
-For SharePoint Online, you need to attach the following function to the scroll event on the #s4-workspace \<div\> tag because the window events are overridden in order to ensure the ribbon remains attached to the top of the page.
+For SharePoint, you need to attach the following function to the scroll event on the #s4-workspace \<div\> tag because the window events are overridden in order to ensure the ribbon remains attached to the top of the page.
   
 ```javascript
 //Keep the ribbon at the top of the page
@@ -95,13 +96,13 @@ $('#s4-workspace').on("scroll", function () {
 
 Save the text file as a JavaScript file with the extension .js, for example delayLoadImages.js.
   
-Once you finish writing delayLoadImages.js, you can add the contents of the file to a master page in SharePoint Online by adding a script link to the header in the master page. Once it's in a master page, the JavaScript is applied to all pages in your SharePoint Online site that use that master page layout. Alternatively, if you intend to only use the functionality on one page of your site, use the script editor Web Part to embed the JavaScript into the page. For more information, see:
+Once you finish writing delayLoadImages.js, you can add the contents of the file to a master page in SharePoint by adding a script link to the header in the master page. Once it's in a master page, the JavaScript is applied to all pages in your SharePoint site that use that master page layout. Alternatively, if you intend to only use the functionality on one page of your site, use the script editor Web Part to embed the JavaScript into the page. For more information, see:
   
 - [How to: Apply a master page to a site in SharePoint 2013](/sharepoint/dev/general-development/how-to-apply-a-master-page-to-a-site-in-sharepoint)
 
 - [How to: Create a page layout in SharePoint 2013](/sharepoint/dev/general-development/how-to-create-a-page-layout-in-sharepoint)
 
-### Example: Referencing the JavaScript delayLoadImages.js file from a master page in SharePoint Online
+### Example: Referencing the JavaScript delayLoadImages.js file from a master page in SharePoint
   
 For this example to work, you also need to reference jQuery in the master page. In the following example, you can see in the initial page load that there's only one image loaded but there are several more on the page.
   

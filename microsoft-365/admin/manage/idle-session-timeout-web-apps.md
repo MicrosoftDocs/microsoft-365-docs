@@ -38,7 +38,7 @@ You must be a member of the Global admin, Security admin, Application admin, or 
 2. On the **Idle Session Timeout** select the toggle to turn it on. You can choose a default setting or choose your own custom time. It'll take a few minutes before idle session is turned on in your organization.
 
 > [!NOTE]
-> If you've set up idle session timeout policies for [Outlook web app](https://support.microsoft.com/topic/description-of-the-activity-based-authentication-timeout-for-owa-in-office-365-0c101e1b-020e-69c1-a0b0-26532d60c0a4) and [SharePoint Online](/sharepoint/sign-out-inactive-users), turning on idle session timeout in the Microsoft 365 admin center will override the Outlook web app and SharePoint settings.
+> If you've set up idle session timeout policies for [Outlook web app](https://support.microsoft.com/topic/description-of-the-activity-based-authentication-timeout-for-owa-in-office-365-0c101e1b-020e-69c1-a0b0-26532d60c0a4) and [SharePoint](/sharepoint/sign-out-inactive-users), turning on idle session timeout in the Microsoft 365 admin center will override the Outlook web app and SharePoint settings.
 
 Idle session timeout is one of the many security measures in Microsoft 365. To learn about other security tasks in Microsoft 365, see [Top security tasks in Microsoft 365](../../security/top-security-tasks-for-remote-work.md).  
 
@@ -54,9 +54,9 @@ When a user has been inactive in Microsoft 365 web apps for the time period you 
 
     - Outlook Web App
 
-    - OneDrive for Business
+    - OneDrive
 
-    - SharePoint Online (SPO)
+    - SharePoint
  
     - Microsoft Fabric
 
@@ -81,7 +81,7 @@ When a user has been inactive in Microsoft 365 web apps for the time period you 
 - Users won’t get signed out in these cases.
     - If they get single sign-on (SSO) into the web app from the device joined account.
     - If they selected **Stay signed in** at the time of sign-in. For more info on hiding this option for your organization, see [Add branding to your organization's sign-in page](/azure/active-directory/fundamentals/customize-branding).
-    - If they're on a managed device (one that is compliant or joined to a domain) and using a supported browser like Microsoft Edge or Google Chrome (with the [Windows Accounts extension](https://chrome.google.com/webstore/detail/windows-accounts/ppnbnpeolgkicgegkbkbjmhlideopiji)).
+    - If they're on a managed device (one that is compliant or joined to a domain) and using a supported browser like Microsoft Edge or Google Chrome (with the [Microsoft Single Sign On](https://chrome.google.com/webstore/detail/windows-accounts/ppnbnpeolgkicgegkbkbjmhlideopiji)) extension.
 
 ## Trigger idle session timeout only on unmanaged devices
 
@@ -109,9 +109,9 @@ For idle session timeout to get triggered only on unmanaged devices, you'll need
 
 Idle session timeout isn't supported when third party cookies are disabled in the browser. Users won't see any sign-out prompts. We recommend keeping tracking prevention setting to [Balanced (Default)](/microsoft-edge/web-platform/tracking-prevention) for Microsoft Edge, and third-party cookies enabled in your other browsers. Microsoft 365 apps and services have stopped supporting Internet Explorer 11 since August 17, 2021.
 
-### How should I prepare if my organization is already using existing Outlook web app and SharePoint Online idle timeout policies?  
+### How should I prepare if my organization is already using existing Outlook web app and SharePoint idle timeout policies?  
 
-If you're already using existing Outlook web app and SharePoint Online idle timeout policies, you can still turn on idle session timeout feature. When you turn on the idle timeout policy, it takes precedence over the existing Outlook web app and SharePoint Online policies. We're planning to deprecate the existing Outlook web app and SharePoint Online policies in the near future. To better prepare your organization, we recommend you turn on idle session timeout.
+If you're already using existing Outlook web app and SharePoint idle timeout policies, you can still turn on idle session timeout feature. When you turn on the idle timeout policy, it takes precedence over the existing Outlook web app and SharePoint Online policies. We're planning to deprecate the existing Outlook web app and SharePoint policies in the near future. To better prepare your organization, we recommend you turn on idle session timeout.
 
 ### What happens if I'm inactive on an included Microsoft 365 web app, but active on a Microsoft web app or SaaS web app that doesn't have idle session time out turned on?  
 
@@ -119,9 +119,9 @@ The following Microsoft 365 apps are supported.
 
 - Outlook Web App
 
-- OneDrive for Business
+- OneDrive
 
-- SharePoint Online (SPO)
+- SharePoint
 
 - Microsoft Fabric
 
@@ -137,9 +137,9 @@ The following Microsoft 365 apps are supported.
 
 If you're working on a different web app with the same account, the activity in that web app won't be applied to the idle session timeout.
 
-### I'm active in Azure Portal, but I'm logged out of other M365 Apps for inactivity.  Why am I logged out?
+### I'm active in Azure portal, but I'm logged out of other M365 Apps for inactivity.  Why am I logged out?
 
-Azure Portal supports a similar inactivity feature, but is supported by Azure Portal only. For more information, see [Azure Portal: Signing-Out + Notification](/azure/azure-portal/set-preferences#signing-out--notifications).
+Azure portal supports a similar inactivity feature, but is supported by Azure portal only. For more information, see [Azure portal: Signing-Out + Notification](/azure/azure-portal/set-preferences#signing-out--notifications).
 
 ### I want to make changes to the idle session timeout policy or delete it. How can I do that?
 
