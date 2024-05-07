@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: iswillia
-ms.date: 02/22/2024
+ms.date: 04/16/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -67,6 +67,10 @@ In Lighthouse, data access relationships play a pivotal role in governing how MS
     - **Role:** Resellers act as intermediaries between Microsoft services and users.
     - **Purpose:** They manage licensing, billing, and other services.
     - **Value added:** Resellers often provide additional support and expertise.
+
+The reseller relationship is established to authorize MSPs to manage orders and purchases for the customer. This arrangement provides MSPs with visibility into the subscriptions the customer has acquired through them, ensuring that they can effectively support and service those subscriptions. It can take 24 hours or longer for changes in the reseller relationship to be reflected in Lighthouse. This procedural timeframe does not affect an MSP's pre-existing knowledge of the subscriptions.
+
+Unlike the reseller relationship, the delegated admin relationship is established to authorize MSPs to access and manage the customer's data and resources. This relationship is based on the consent of the customer and can be revoked at any time. Changes to the delegated admin relationship are reflected immediately in Lighthouse, ensuring that access to customer data is protected in line with the privileges the customer has granted the MSP. This is especially important for scenarios such as security incident response, where timely and accurate data access is crucial.
 
 These relationships ensure MSPs access data responsibly while enhancing customer satisfaction. By understanding and optimizing these connections, organizations can build a robust data ecosystem.
 

@@ -7,6 +7,7 @@ ms.date: 08/10/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -20,7 +21,6 @@ ms.custom:
   - Ent_Office_Other
   - O365ITProTrain
   - has-azure-ad-ps-ref
-  - azure-ad-ref-level-one-done
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: "Learn how to use PowerShell to maintain membership in Microsoft 365 groups."
 ---

@@ -222,7 +222,7 @@ The table below shows Teams applications commonly utilized in frontline solution
 
 **Scenarios and apps**
 
-| Scenario | Approvals | Virtual Appointments or Bookings | Lists | Praise | Shifts | Tasks | Updates |
+| Scenario | Approvals | Virtual Appointments or Bookings | Lists | Praise | Shifts | Planner | Updates |
 | :---- | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 | [Team communication and collaboration](flw-team-collaboration.md) | &#x2705; | &nbsp; | &#x2705; | &#x2705; | &nbsp; | &#x2705; | &#x2705; |
 | [Corporate communications](flw-corp-comms.md) |  &nbsp; |  &nbsp; |  &nbsp; |  &nbsp; |  &nbsp; |  &nbsp; |  &nbsp; |

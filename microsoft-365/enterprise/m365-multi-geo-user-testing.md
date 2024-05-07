@@ -6,6 +6,7 @@ author: kelleyvice-msft
 manager: scotv
 ms.reviewer: deanw, anfra
 ms.service: microsoft-365-enterprise
+ms.subservice: multi-tenant
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -13,7 +14,6 @@ ms.date: 03/05/2024
 ms.custom:
   - it-pro
   - has-azure-ad-ps-ref
-  - azure-ad-ref-level-one-done
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
