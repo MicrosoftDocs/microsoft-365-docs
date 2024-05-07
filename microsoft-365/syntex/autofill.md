@@ -33,7 +33,7 @@ To create a new autofill column, follow these steps:
 
 3. In the **Autofill** section, select **Set up**.
 
-4. On the **Autofill** panel, in the **Prompt** box, create the prompt. The prompt identifies the type of information you want to extract to a column. For some ideas about how to create a prompt for the different column types, see [Starter prompts for different column types]().
+4. On the **Autofill** panel, in the **Prompt** box, create the prompt. The prompt identifies the type of information you want to extract to a column. For some ideas about how to create a prompt for the different column types, see [Starter prompts for different column types](#starter-prompts-for-different-column-types).
 
    ![Screenshot showing the Autofill panel.](../media/content-understanding/autofill-panel.png)
 
