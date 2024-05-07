@@ -33,7 +33,7 @@ To create a new autofill column, follow these steps:
 
 3. In the **Autofill** section, select **Set up**.
 
-4. On the **Autofill** panel, in the **Prompt** box, create the prompt. The prompt identifies the type of information you want to extract to a column. For some ideas about how to create a prompt for the different column types, see [x]().
+4. On the **Autofill** panel, in the **Prompt** box, create the prompt. The prompt identifies the type of information you want to extract to a column. For some ideas about how to create a prompt for the different column types, see [Starter prompts for different column types]().
 
    ![Screenshot showing the Autofill panel.](../media/content-understanding/autofill-panel.png)
 
@@ -48,4 +48,14 @@ Any new files uploaded to the library after the setting is saved will be automat
 ## Update an existing autofill column
 
 
-## 
+## Starter prompts for different column types
+
+
+|Column type  |Starter prompt  |
+|---------|---------|
+|Text     | <insert the question here>. The answer needs to be less than 255 characters. If no proper answer is found, respond with <insert default response>.<br><br><insert the question here>. If no proper answer is found, respond with <insert default response>.
+  |
+|Multiple lines of text     | <insert the question here>. If no proper answer is found, respond with <insert default response>.
+        |
+|     |         |
+|    |         |
