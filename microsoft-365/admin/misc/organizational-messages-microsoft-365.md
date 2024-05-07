@@ -238,6 +238,9 @@ For some time-sensitive communications, admins and other communicators might nee
 
 ## Setting tenant policies
 
+>[!NOTE]
+> If you recently onboarded your tenant to Microsoft Entra ID, it can take 36 to 64 hours before you're able to use the organizational messages features.
+
 There are certain policies in [Microsoft Intune](https://intune.microsoft.com) that will block the delivery of organizational messages to your end users if not configured properly. This section describes how to adjust all policy settings for your tenant so that delivery is always allowed and works as intended.
 
 ### General Instructions
