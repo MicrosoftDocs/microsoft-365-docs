@@ -7,6 +7,7 @@ manager: dansimp
 ms.date: 04/18/2024
 ms.topic: overview
 ms.service: microsoft-365-enterprise
+ms.subservice: network
 ms.localizationpriority: medium
 ms.collection: must-keep
 ms.custom: QuickDraft
@@ -38,11 +39,9 @@ To ensure that customers and users can treat everything under the *.cloud.micros
 
 ## Requirements for admins
 
-Organizations currently following standard [Microsoft network guidance on domains and service endpoints](/microsoft-365/enterprise/urls-and-ip-address-ranges) shouldn't see an impact to the Microsoft 365 experience. The *.cloud.microsoft domain is already added to the official list of Office 365 URLs and IP address ranges. 
+Since 2023, *.cloud.microsoft and other domains related to the domain unification initiative are part of the [Microsoft 365 network guidance on domains and service endpoints](/microsoft-365/enterprise/urls-and-ip-address-ranges). Customers who use the Microsoft 365 web service API to automate network settings have been getting the network settings since then. Customers who manually update endpoints should ensure that *.cloud.microsoft and other required domains are included in their allow-list to prevent connectivity and service incidents for their users. 
 
 ## Microsoft product and service URLs
-The following Microsoft 365 products and services are now available in the `cloud.microsoft` domain.
-
 |**Service**|**URL**|
 |:-----|:-----|
 |Microsoft 365 Service Health Status Page |[status.cloud.microsoft]( https://status.cloud.microsoft)|
@@ -58,6 +57,8 @@ The following Microsoft 365 products and services are now available in the `clou
 |Microsoft Viva Learning | [learning.cloud.microsoft](https://learning.cloud.microsoft)|
 |Microsoft Viva Pulse | [pulse.cloud.microsoft](https://pulse.cloud.microsoft)|
 |Microsoft Viva Skills | [skills.cloud.microsoft](https://skills.cloud.microsoft)|
+
+The above list provides examples of individual URLs for applications that users can use through the web browser. It does not represent the full set of endpoints required for functionality of these applications and should not be used to granularly control access through network allow-lists and other network settings. To configure network settings, customers should follow Microsoft official network guidance.
 
 ## See also
 
