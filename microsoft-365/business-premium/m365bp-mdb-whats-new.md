@@ -9,9 +9,8 @@ author: siosulli
 manager: deniseb
 audience: Admin
 ms.topic: overview
-ms.date: 01/02/2024
-ms.service: microsoft-365-security
-ms.subservice: mdb
+ms.date: 05/07/2024
+ms.service: smb-security
 ms.localizationpriority: medium
 ms.collection:
 - tier2
