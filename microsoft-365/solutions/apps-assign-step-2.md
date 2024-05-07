@@ -6,7 +6,7 @@ manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.date: 05/07/2024
-description: Step 2. Assign apps to groups
+description: Step 2. Assign apps to groups.
 ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:

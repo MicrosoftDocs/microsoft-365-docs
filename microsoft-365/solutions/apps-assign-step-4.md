@@ -39,7 +39,7 @@ For specific timing for each of the above issues, see [Delivery timing summary](
 
 ## Limiting app extensions
 
-You can limit Outlook add-ins and LinkedIn account connections as a method of protecting your organization's data. Outlook add-ins are available to integrate extended functionality for Outlook. These add-ins are available on the web. You can't directly manage these add-ins using Intune. However, you can remove specific roles for your end-users that will prevent them from installing and side-loading add-ins.
+You can limit Outlook add-ins and LinkedIn account connections as a method of protecting your organization's data. Outlook add-ins are available to integrate extended functionality for Outlook. These add-ins are available on the web. You can't directly manage these add-ins using Intune. However, you can remove specific roles for your end-users that prevent them from installing and side-loading add-ins.
 
 Additionally, you can disable LinkedIn account connections for your entire organization, or you can enable LinkedIn account connections for selected user groups in your organization. These settings affect LinkedIn connections across Microsoft 365 apps on all platforms (web, mobile, and desktop). 
 

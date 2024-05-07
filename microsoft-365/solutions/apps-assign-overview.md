@@ -19,9 +19,9 @@ keywords:
 
 Once you've [set up and deployed the capabilities of Intune](/microsoft-365/solutions/apps-guide-overview#deploying-intune), [added](/microsoft-365/solutions/apps-add-overview), [configured](/microsoft-365/solutions/apps-config-overview), and [secured](/microsoft-365/solutions/apps-protect-overview) your managed apps using Intune, you can begin the process to assign and deploy apps to end user's devices using Intune.
 
-The apps you apps you assign and deploy using Intune are managed apps. Managed apps are apps that you have assigned to users via a unified endpoint management provider, such as Intune. Managed apps support app protection policies and app configuration policies. These apps use mobile application management (MAM) that is provided by the unified endpoint management provider. MAM enables organizations to manage and protect their data within an application. A managed app in Intune is often times a [protected app](/mem/intune/apps/apps-supported-intune-apps) that has Intune app protection policies applied to it and is assigned and managed by Intune. A managed app has either integrated the Intune App SDK or has been wrapped using the Intune Wrapping Tool to support App Protection Policies (APP) and/or app configuration policies. You can use MAM policies to configure and protect apps on unmanaged devices, which are your end-user's personal devices that aren't MDM enrolled in Intune. Those unmanaged devices receive managed apps based on their organiztaion's credentials they use to access the app's data.
+The apps you assign and deploy using Intune are managed apps. Managed apps are apps that you have assigned to users via a unified endpoint management provider, such as Intune. Managed apps support app protection policies and app configuration policies. These apps use mobile application management (MAM) that is provided by the unified endpoint management provider. MAM enables organizations to manage and protect their data within an application. A managed app in Intune is oftentimes a [protected app](/mem/intune/apps/apps-supported-intune-apps) that has Intune app protection policies applied to it and is assigned and managed by Intune. A managed app has either integrated the Intune App SDK or has been wrapped using the Intune Wrapping Tool to support App Protection Policies (APP) and/or app configuration policies. You can use MAM policies to configure and protect apps on unmanaged devices, which are your end-user's personal devices that aren't MDM enrolled in Intune. Those unmanaged devices receive managed apps based on their organization's credentials they use to access the app's data.
 
-The content provided in this solution will help you understand the different aspects of assigning and deploying apps for each of the supported platforms.
+The content provided in this solution helps you understand the different aspects of assigning and deploying apps for each of the supported platforms.
 
 > [!TIP]
 > For information about when you should consider deploying MAM policies, see [Migration guide: Set up or move to Microsoft Intune](/mem/intune/fundamentals/deployment-guide-intune-setup).
@@ -93,12 +93,12 @@ Follow these steps if you haven't already set up Intune and added the apps you n
 
 This solution helps you understand the concepts related to assigning apps using Microsoft Intune. In addition, this solution provides recommended steps to follow when assigning apps to devices and members of your organization. Once you've completed the above [prerequisites](#prerequisites), you're ready to assign apps to your organization in Intune. In addition, using configuration and protection policies as part of your app management efforts allows members of your organization to safely use apps. By managing apps at your organization, you help to protect and secure your organization’s data.
 
-To learn about app deploying using Intune, see the following topics:
+To learn about app deploying using Intune, see the following articles:
 - [Understand app management](apps-protect-data-protection.md)
 - [Understand app assignments](apps-protect-access-requirements.md)
 - [Understand app deployment](apps-protect-conditional-launch.md)
 
-To follow the recommended steps when assigning managed apps to your organization using Intune, see the following topics:
+To follow the recommended steps when assigning managed apps to your organization using Intune, see the following articles:
 - [Step 1. Confirm users and devices](apps-assign-step-1.md)
 - [Step 2. Assign apps to groups](apps-assign-step-2.md)
 - [Step 3. Verify app assignments](apps-assign-step-3.md)
