@@ -1,5 +1,5 @@
 ---
-title: "Turn off your personal booking page"
+title: "Turn off your personal Bookings page"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -15,12 +15,12 @@ ms.collection:
 - essentials-get-started
 - essentials-manage
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Steps to turn off one's personal booking page"
+description: "Steps to turn off one's Personal Bookings page"
 ---
 
-# Turn off your personal booking page
+# Turn off your personal Bookings page
 
-Personal bookings is a personal time management solution that provides a simple and powerful scheduling page with seamless integration with outlook. It lets people schedule a meeting or appointment with you through a personal booking page that integrates with the free/busy information from your Outlook calendar. You can create custom meeting types to share with others so they can easily schedule time with you based on your availability and preferences. You both get an email confirmation and attendees can update or cancel scheduled meetings with you from your personal booking page.
+Personal Bookings is a personal time management solution that provides a simple and powerful scheduling page with seamless integration with outlook. It lets people schedule a meeting or appointment with you through a personal booking page that integrates with the free/busy information from your Outlook calendar. You can create custom meeting types to share with others so they can easily schedule time with you based on your availability and preferences. You both get an email confirmation and attendees can update or cancel scheduled meetings with you from your personal Bookings page.
 
 Personal bookings has two different views:
 
@@ -49,7 +49,7 @@ For more information on how your users can work with Bookings with me, see the f
 
 ## Before you begin
 
-Personal bookings can be turned on or off for your entire organization or for specific users. When you turn on Bookings for users, they can create a Bookings page, share their page with others, and allow other people to book time with them. This article is for owners and administrators who manage personal bookings for their organizations.
+Personal Bookings can be turned on or off for your entire organization or for specific users. When you turn on Bookings for users, they can create a Bookings page, share their page with others, and allow other people to book time with them. This article is for owners and administrators who manage personal Bookings for their organizations.
 
 Personal Bookings is available in the following subscriptions:
 
@@ -210,7 +210,7 @@ Use the **Get-CASMailbox** and **Set-CASMailbox** commands to check user status 
 Bookings with me integrates with your Outlook calendar and can only be used for 1:1 meetings. Bookings with me is intended for scheduling meeting times with individual users. Bookings is intended for managing scheduling for a group of people.
 
 Also, Bookings with me won't create a new mailbox for each Bookings with me page.
-Please note Bookings with me and personal bookings are terms used interchangeably. 
+Note that Bookings with me and Personal Bookings are terms used interchangeably. 
 
 ### Who can access my public Bookings page?
 
