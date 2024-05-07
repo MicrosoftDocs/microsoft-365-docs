@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 03/01/2024
+ms.date: 05/01/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -25,21 +25,23 @@ To create a new autofill column, follow these steps:
 
 1. In a SharePoint library, select **+Add Column**, select the type of column you want, and then select **Next**.
 
-2. On the **Create a column** panel, enter a title or column heading and other information you normally would.
+2. On the **Create a column** panel, enter a title or column heading and other information you normally would when you create a column.
 
    ![Screenshot showing the Create a column panel with the Autofill section highlighted.](../media/content-understanding/autofill-create-column.png)
 
 3. In the **Autofill** section, select **Set up**.
 
-4. On the **Autofill** panel, in the **Edit the prompt** box, create the prompt.
+4. On the **Autofill** panel, in the **Prompt** box, create the prompt. The prompt identifies the type of information you want to extract to a column. For some ideas about how to create a prompt for the different column types, see [x]().
 
    ![Screenshot showing the Autofill panel.](../media/content-understanding/autofill-panel.png)
 
-5. In the **Test the prompt** section, test the prompt using the files in the library. You can modify the prompt and retest it until you achieve the result you want.
+5. In the **Test the prompt** section, select a file to test the prompt using the files in the library. You can modify the prompt and retest it until you achieve the result you want.
 
 6. When have the prompt you want, select **Save**.
 
-Once the column settings are saved, any new files uploaded to the library will be processed, and their metadata will be saved to the corresponding columns.
+Once the column settings are saved, select the files in the library to which you want to apply the autofill column, and then select **Autofill**. You see message that indicating that autofill is starting to process the fills and the time it might take to complete processing.
+
+Any new files uploaded to the library after the setting is saved will be automatically processed, and the extracted information will be saved to the corresponding columns.
 
 ## Update an existing autofill column
 
