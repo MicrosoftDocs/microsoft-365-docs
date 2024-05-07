@@ -27,7 +27,7 @@ To create a new autofill column, follow these steps:
 
 1. In a SharePoint library, select **+Add Column**, select the type of column you want, and then select **Next**.
 
-2. On the **Create a column** panel, enter a title or column heading and other information you normally would when you create a column.
+2. On the **Create a column** panel, enter a name for the column heading and a brief description of the column information.
 
    ![Screenshot showing the Create a column panel with the Autofill section highlighted.](../media/content-understanding/autofill-create-column.png)
 
@@ -47,6 +47,27 @@ Any new files uploaded to the library after the setting is saved are automatical
 
 ## Update an existing autofill column
 
+To update an autofill, follow these steps:
+
+1. In the document library, select the column, and then select **Column settings** > **Edit**.
+
+2. On the **Edit column** panel, in the **Autofill** section, select **Edit prompt**.
+
+3. On the **Autofill** panel, in the **Prompt** box, modify the wording as needed.
+
+4. In the **Test the prompt** section, select a file to test the prompt using the files in the library. You can modify the prompt and retest it until you achieve the result you want.
+
+5. Select **Save**.
+
+## Turn off the autofill setting on a column
+
+To turn off autofill on a specific column, follow these steps:
+
+1. In the document library, select the column, and then select **Column settings** > **Edit**.
+
+2. On the **Edit column** panel, in the **Autofill** section, switch the toggle to **Off**.
+
+3. Select **Save**.
 
 ## Starter prompts for different column types
 
