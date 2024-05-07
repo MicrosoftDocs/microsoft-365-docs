@@ -62,9 +62,9 @@ More information: [Frontline team collaboration](flw-team-collaboration.md) and 
 - Create and manage schedules for your employees with Shifts
 - Check in on recurring and one-off priorities with Updates
 - Streamline approvals with the Approvals app
-- Assign and keep track of tasks with the Tasks app
+- Assign and keep track of tasks with the Planner app
 
-**Key apps:** Approvals, Shifts, Updates, Tasks
+**Key apps:** Approvals, Shifts, Updates, Planner
 
 More information: [Frontline team collaboration](flw-team-collaboration.md) and [Shifts](shifts-for-teams-landing-page.md)
 
@@ -96,7 +96,7 @@ More information: [Training and onboarding](flw-onboarding-training.md)
 
 ### Apps and services for manufacturing
 
-Ensure that your workers can communicate, collaborate, and deliver great products with apps like Shifts, Tasks, Lists, Praise, and more. You can determine which apps are available for your users by enabling them in the Teams admin center or by using a team template. Learn more about [managing Teams apps](/microsoftteams/manage-apps).
+Ensure that your workers can communicate, collaborate, and deliver great products with apps like Shifts, Planner, Lists, Praise, and more. You can determine which apps are available for your users by enabling them in the Teams admin center or by using a team template. Learn more about [managing Teams apps](/microsoftteams/manage-apps).
 
 For manufacturing environments, the following apps and services can help you transform your business processes and support communication.
 
@@ -107,7 +107,7 @@ For manufacturing environments, the following apps and services can help you tra
 | Documents and files | Share standard operating procedures, manuals, diagrams, inspection records, and more. | [Teams and SharePoint integration](/sharepoint/teams-connected-sites) | [Share files](https://support.microsoft.com/office/upload-and-share-files-57b669db-678e-424e-b0a0-15d19215cb12) |
 | Praise | Recognize coworkers for great teamwork with the Praise app. | [Manage the Praise app](/microsoftteams/manage-praise-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Send Praise to people](https://support.microsoft.com/office/send-praise-to-people-50f26b47-565f-40fe-8642-5ca2a5ed261e) |
 | Shifts | Create and manage schedules and clock in and out with Shifts. |[Shifts for frontline workers](shifts-for-teams-landing-page.md) | [Use Shifts](https://support.microsoft.com/office/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821) |
-| Tasks | Supervisors can assign tasks to let workers know what to focus on. Your organization's central office can use [task publishing](/microsoftteams/manage-tasks-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json#task-publishing) to send out tasks to locations and track progress across those locations. | [Manage the Tasks app](/microsoftteams/manage-tasks-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Use Tasks](https://support.microsoft.com/office/use-the-tasks-app-in-teams-e32639f3-2e07-4b62-9a8c-fd706c12c070) |
+| Planner | Supervisors can assign tasks to let workers know what to focus on. Your organization's central office can use [task publishing](/microsoftteams/manage-planner-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json#task-publishing) to send out tasks to locations and track progress across those locations. | [Manage the Planner app](/microsoftteams/manage-planner-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Use Planner](https://support.microsoft.com/office/use-the-tasks-app-in-teams-e32639f3-2e07-4b62-9a8c-fd706c12c070) |
 | Updates | Check in on recurring and one-off priorities such as machinery repairs and inspections. Supervisors can create templates for employees to fill out and submit. | [Manage the Updates app](/microsoftteams/manage-updates-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Use Updates](https://support.microsoft.com/office/get-started-in-updates-c03a079e-e660-42dc-817b-ca4cfd602e5a) |
 | Viva Connections | Viva Connections creates an experience in Teams that connects employees with tools, news, and resources. Employees can view a tailored news feed from your organization and a personalized dashboard with the resources they need. For example, you could create a Manuals card so your operators can easily find all the necessary manuals. | [Overview of Viva Connections](/viva/connections/viva-connections-overview) | [Use Viva Connections](https://support.microsoft.com/office/your-intranet-is-now-in-microsoft-teams-8b4e7f76-f305-49a9-b6d2-09378476f95b) |
 | Viva Learning | Provide initial and ongoing training to make sure your employees are up-to-date with their skills and knowledge base. | [Overview of Viva Learning](/viva/learning/overview-viva-learning) | [Use Viva Learning](https://support.microsoft.com/office/viva-learning-preview-01bfed12-c327-41e0-a68f-7fa527dcc98a) |

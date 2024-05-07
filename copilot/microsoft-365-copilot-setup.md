@@ -17,6 +17,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - m365copilot
+- magic-ai-copilot
 - essentials-get-started
 description: "Learn how to prepare your organization for Microsoft Copilot for Microsoft 365."
 ---
@@ -39,16 +40,21 @@ Your users must have one of the following base licenses to be eligible for a Cop
 
 - Microsoft 365 E5
 - Microsoft 365 E3
+- Microsoft 365 F1
+- Microsoft 365 F3
+- Office 365 E1
 - Office 365 E3
 - Office 365 E5
-- Microsoft 365 Business Standard
+- Office 365 F3
+- Microsoft 365 Business Basic
 - Microsoft 365 Business Premium
+- Microsoft 365 Business Standard
 - Microsoft 365 A5 for faculty*
 - Microsoft 365 A3 for faculty*
 - Office 365 A5 for faculty*
 - Office 365 A3 for faculty*
 
-*Available via Enrollment for Education Solutions (EES) or Cloud Solution Provider only.
+*Available via Enrollment for Education Solutions (EES) or Cloud Solution Provider only.
 
 >[!NOTE]
 > Customers with Education or Business subscriptions that do not include Teams can still purchase Copilot for Microsoft 365 licenses.
@@ -110,8 +116,6 @@ All activity from Copilot for Microsoft 365 can be discoverable using content se
 For more information on data security and compliance configurations using Microsoft Purview, see [Microsoft Purview data security and compliance protections for Microsoft Copilot](/purview/ai-microsoft-purview).
 
 Review your privacy settings for Microsoft 365 Apps because those settings might have an effect on the availability of Microsoft Copilot for Microsoft 365 features. For more information, see [Microsoft Copilot for Microsoft 365 and policy settings for connected experiences](microsoft-365-copilot-privacy.md#microsoft-copilot-for-microsoft-365-and-policy-settings-for-connected-experiences).
-
-
 
 ## Update channels
 

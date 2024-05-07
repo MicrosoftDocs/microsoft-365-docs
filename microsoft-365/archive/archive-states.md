@@ -1,11 +1,11 @@
 ---
-title: Archive states in Microsoft 365 Archive (Preview)
+title: Archive states in Microsoft 365 Archive
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 04/11/2024
+ms.date: 04/30/2024
 ms.topic: conceptual
 ms.service: microsoft-365-archive
 ms.custom: archive
@@ -16,10 +16,7 @@ ms.localizationpriority:  medium
 description: Learn about the archive states and what they mean in Microsoft 365 Archive.
 ---
 
-# Archive states in Microsoft 365 Archive (Preview)
-
-> [!NOTE]
-> This feature is currently in preview and subject to change. The feature is currently rolling out and might not yet be fully available to all organizations.
+# Archive states in Microsoft 365 Archive
 
 The following table describes the archive states and allowed operations.
 
