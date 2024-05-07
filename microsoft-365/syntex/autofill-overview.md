@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 05/03/2024
+ms.date: 05/07/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -41,22 +41,25 @@ Autofill columns are available for the following file types: .csv, .doc, .docx, 
 
 ### Supported column data types
 
-Currently, autofill columns are available for the following column data types:
+Currently, autofill settings are available for the following column data types:
 
 - Text
 - Multiple lines of text
-<!---
-- Choice
 - Number
-- Text
-- DateTime
-- Boolean
-- Note
+- Yes/No
+- Date and time
+- Choice
+- Hyperlink
 - Currency
-- DateTime
-- URL
-- MMD
---->
+
+There is no autofill setting for the following column data types:
+
+- Person or Group
+- Location
+- Image
+- Lookup
+- Managed metadata
+
 ### Current release notes
 
 - Bulk processing options for existing library files will be added in a future release.
