@@ -53,7 +53,7 @@ Any new files uploaded to the library after the setting is saved are automatical
 
 |Column type  |Starter prompt  |
 |---------|---------|
-|Text     | \<insert the question here>. The answer needs to be fewer than 255 characters. If no proper answer is found, respond with \<insert default response>/.<br><br>\<insert the question here>. If no proper answer is found, respond with \<insert default response>.
+|Text     | \<insert the question here>. The answer needs to be fewer than 255 characters. If no proper answer is found, respond with \<insert default response>.<br><br>\<insert the question here>. If no proper answer is found, respond with \<insert default response>.
   |
 |Multiple lines of text     | \<insert the question here>. If no proper answer is found, respond with \<insert default response>.
         |
