@@ -19,7 +19,7 @@ description: Learn how to use autofill columns in Microsoft Syntex.
 
 # Create autofill columns in Microsoft Syntex
 
-Autofill columns is a new setting in the **Create a column** panel that lets you use natural language prompts to either extract specific information or generate information from files within a SharePoint library. The information is then displayed in the columns of the library.
+Autofill is a new setting in the **Create a column** panel that lets you use natural language prompts to extract specific information or generate information from files within a SharePoint library. The information is then displayed in the columns of the library.
 
 ## Create a new autofill column
 
@@ -33,7 +33,7 @@ To create a new autofill column, follow these steps:
 
 3. In the **Autofill** section, select **Set up**.
 
-4. On the **Autofill** panel, in the **Prompt** box, create the prompt. The prompt identifies the type of information you want to extract to a column. For some ideas about how to create a prompt for the different column types, see [Starter prompts for different column types](#starter-prompts-for-different-column-types).
+4. On the **Autofill** panel, in the **Prompt** box, create the prompt. The prompt identifies the type of information you want to extract from a file to a column. For some ideas about how to create a prompt for the different column types, see [Starter prompts for different column types](#starter-prompts-for-different-column-types).
 
    ![Screenshot showing the Autofill panel.](../media/content-understanding/autofill-panel.png)
 
@@ -43,7 +43,7 @@ To create a new autofill column, follow these steps:
 
 Once the column settings are saved, select the files in the library to which you want to apply the autofill column, and then select **Autofill**. You see message that indicating that autofill is starting to process the fills and the time it might take to complete processing.
 
-Any new files uploaded to the library after the setting is saved will be automatically processed, and the extracted information will be saved to the corresponding columns.
+Any new files uploaded to the library after the setting is saved are automatically processed, and the extracted information are saved to the corresponding columns.
 
 ## Update an existing autofill column
 
@@ -53,9 +53,9 @@ Any new files uploaded to the library after the setting is saved will be automat
 
 |Column type  |Starter prompt  |
 |---------|---------|
-|Text     | <insert the question here>. The answer needs to be less than 255 characters. If no proper answer is found, respond with <insert default response>.<br><br><insert the question here>. If no proper answer is found, respond with <insert default response>.
+|Text     | \<insert the question here>. The answer needs to be fewer than 255 characters. If no proper answer is found, respond with \<insert default response>/.<br><br>\<insert the question here>. If no proper answer is found, respond with \<insert default response>.
   |
-|Multiple lines of text     | <insert the question here>. If no proper answer is found, respond with <insert default response>.
+|Multiple lines of text     | \<insert the question here>. If no proper answer is found, respond with \<insert default response>.
         |
 |     |         |
 |    |         |
