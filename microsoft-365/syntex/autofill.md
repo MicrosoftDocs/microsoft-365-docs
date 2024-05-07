@@ -27,6 +27,8 @@ To create a new autofill column, follow these steps:
 
 1. In a SharePoint library, select **+Add Column**, select the type of column you want, and then select **Next**.
 
+   ![Screenshot showing how to add a column in document library.](../media/content-understanding/autofill-add-column.png)
+
 2. On the **Create a column** panel, enter a name for the column heading and a brief description of the column information.
 
    ![Screenshot showing the Create a column panel with the Autofill section highlighted.](../media/content-understanding/autofill-create-column.png)
@@ -41,7 +43,11 @@ To create a new autofill column, follow these steps:
 
 6. When have the prompt you want, select **Save**.
 
-Once the column settings are saved, select the files in the library to which you want to apply the autofill column, and then select **Autofill**. You see message that indicating that autofill is starting to process the fills and the time it might take to complete processing.
+7. Once the column settings are saved, select the files in the library to which you want to apply the autofill column, and then on ribbon, select **More options (***) > **Autofill**.
+
+   ![Screenshot showing More option > Autofill on the ribbon.](../media/content-understanding/autofill-ribbon.png)
+
+You see message that indicating that autofill is starting to process the files and the time it might take to complete processing.
 
 Any new files uploaded to the library after the setting is saved are automatically processed, and the extracted information are saved to the corresponding columns.
 
