@@ -289,7 +289,7 @@ If using Device Restrictions, follow these steps:
 (This can be in a new or existing Windows configuration profile.)
 
 1. Go to **Devices** > **Windows** > **Configuration profiles**.
-1. In a new or existing template profile select **Device restrictions** > **Windows Spotlight**.
+1. In a new or existing template profile, select **Device restrictions** > **Windows Spotlight**.
 1. Ensure or Select ‘Not configured’ is set for the following:
     - Windows Spotlight
     - Windows Spotlight on lock screen
