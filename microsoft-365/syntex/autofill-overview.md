@@ -31,6 +31,10 @@ Autofill columns can work alongside other Microsoft Syntex models. You can assoc
 
 ## Requirements and limitations
 
+### Support languages
+
+Currently, autofill columns are available for English language files. Other languages will be added future releases.
+
 ### Supported file types
 
 Autofill columns are available for the following file types: .csv, .doc, .docx, .eml, .heic, .heif, .htm, .html, .jpeg, .jpg, .md, .msg, .pdf, .png, .ppt, .pptx, .rtf, .tif, .tiff, .txt, .xls, and .xlsx.
