@@ -23,4 +23,8 @@ keywords:
 
 ## Install apps by platform
 
+## Next step
 
+[:::image type="content" source="../media/assign-managed-apps/assign-managed-apps-01.png" alt-text="Step 1. Confirm users and devices." border="false" :::](apps-assign-step-1.md)
+
+Continue with [Step 1](apps-assign-step-1.md) to confirm users and devices using Microsoft Intune.

@@ -83,6 +83,6 @@ To help determine the app users, see [Determine who will use the app](/mem/intun
 
 ## Next step
 
-[![Step 2 to create and edit categories for apps](../media/purchase-add-managed-apps/purchase-add-managed-apps-04.png)](apps-add-step-2.md)
+[:::image type="content" source="../media/assign-managed-apps/assign-managed-apps-02.png" alt-text="Step 2. Assign apps to groups." border="false" :::](apps-assign-step-2.md)
 
-Continue with [Step 2](apps-add-step-2.md) to create and edit categories for apps in Microsoft Intune.
+Continue with [Step 2](apps-assign-step-2.md) to assign apps to groups in Microsoft Intune.

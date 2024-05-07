@@ -45,8 +45,8 @@ Additionally, you can disable LinkedIn account connections for your entire organ
 
 For more information, see [Protecting application extensions](/mem/intune/apps/app-protection-policy-extensions).  
 
-## Next step
+## After assigning and deploying apps using Intune
 
-[:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-steps-05.png" alt-text="Step 5. Verify and monitor app protection." border="false" :::](apps-protect-step-5.md)
+Once you have reviewed and completed the steps provided in this solution, you're ready to monitor the managed apps your organization uses.
 
-Continue with [Step 5](apps-protect-step-5.md) to verify and monitor app protection in Microsoft Intune.
+For more information about how to proceed, see the following articles:

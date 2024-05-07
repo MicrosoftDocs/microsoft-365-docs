@@ -28,6 +28,6 @@ keywords:
 
 ## Next step
 
-[:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-steps-04.png" alt-text="Step 4. Understand app protection delivery." border="false" :::](apps-protect-step-4.md)
+[:::image type="content" source="../media/assign-managed-apps/assign-managed-apps-04.png" alt-text="Step 4. Troubleshoot app deployment issues." border="false" :::](apps-assign-step-4.md)
 
-Continue with [Step 4](apps-protect-step-4.md) to understand app protection delivery in Microsoft Intune.
+Continue with [Step 3](apps-assign-step-4.md) to troubleshoot app deployment issues using Microsoft Intune.

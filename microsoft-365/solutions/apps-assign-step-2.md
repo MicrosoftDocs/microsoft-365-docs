@@ -39,8 +39,11 @@ The policies in level 1 enforce a reasonable data access level while minimizing 
 
 ## Include and exclude app assignments
 
+
+
+
 ## Next step
 
-[:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-steps-03.png" alt-text="Step 3 - Apply high data protection." border="false" :::](apps-protect-step-3.md)
+[:::image type="content" source="../media/assign-managed-apps/assign-managed-apps-03.png" alt-text="Step 3. Verify and monitor app assignments." border="false" :::](apps-assign-step-3.md)
 
-Continue with [Step 3](apps-protect-step-3.md) to apply high data protection in Microsoft Intune.
+Continue with [Step 3](apps-assign-step-3.md) to verify and monitor app assignments using Microsoft Intune.

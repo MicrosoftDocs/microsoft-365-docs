@@ -25,6 +25,6 @@ The policies in level 1 enforce a reasonable data access level while minimizing 
 
 ## Next step
 
-[:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-steps-02.png" alt-text="Step 2. Apply enhanced data protection." border="false" :::](apps-protect-step-2.md)
+[:::image type="content" source="../media/assign-managed-apps/assign-managed-apps-02.png" alt-text="Step 2. Apply enhanced data protection." border="false" :::](apps-assign-step-2.md)
 
-Continue with [Step 2](apps-protect-step-2.md) to apply enhanced data protection in Microsoft Intune.
+Continue with [Step 1](apps-assign-step-2.md) to assign apps to groups using Microsoft Intune.
