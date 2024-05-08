@@ -43,7 +43,7 @@ To create a new autofill column, follow these steps:
 
 6. When have the prompt you want, select **Save**.
 
-7. Once the column settings are saved, select the files in the library to which you want to apply the autofill column, and then on ribbon, select **More options (***) > **Autofill**.
+7. Once the column settings are saved, select the files in the library to which you want to apply the autofill column. Then, from the ribbon select **More options (\***\) > **Autofill**.
 
    ![Screenshot showing More option > Autofill on the ribbon.](../media/content-understanding/autofill-ribbon.png)
 
