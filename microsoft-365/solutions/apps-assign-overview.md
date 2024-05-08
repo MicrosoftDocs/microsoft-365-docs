@@ -94,9 +94,9 @@ Follow these steps if you haven't already set up Intune and added the apps you n
 This solution helps you understand the concepts related to assigning apps using Microsoft Intune. In addition, this solution provides recommended steps to follow when assigning apps to devices and members of your organization. Once you've completed the above [prerequisites](#prerequisites), you're ready to assign apps to your organization in Intune. In addition, using configuration and protection policies as part of your app management efforts allows members of your organization to safely use apps. By managing apps at your organization, you help to protect and secure your organization’s data.
 
 To learn about app deploying using Intune, see the following articles:
-- [Understand app management](apps-protect-data-protection.md)
-- [Understand app assignments](apps-protect-access-requirements.md)
-- [Understand app deployment](apps-protect-conditional-launch.md)
+- [Understand app management](apps-assign-management.md)
+- [Understand app assignments](apps-assign-assignments.md)
+- [Understand app deployment](apps-assign-deployment.md)
 
 To follow the recommended steps when assigning managed apps to your organization using Intune, see the following articles:
 - [Step 1. Confirm users and devices](apps-assign-step-1.md)

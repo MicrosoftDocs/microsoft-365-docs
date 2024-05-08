@@ -35,6 +35,6 @@ Devices that aren't enrolled in a Mobile Device Management service such as Intun
 > [!NOTE]
 > Apps that are managed (MAM) without device management (MDM), can be configured and protected using Intune. MAM enables you to manage and protect your organization's data within an application. MAM without MDM is popular for organizations that enable members of their organization to work remotely on their own devices (BYOD).
 
-[:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-steps.png" alt-text="Step 1. Apply minimum data protection." border="false" :::](apps-protect-step-1.md)
+[:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-steps.png" alt-text="Step 1. Apply minimum data protection." border="false" :::](apps-assign-step-1.md)
 
 After you've completed the above steps, you're ready to deploy, manage, and monitor the managed apps your organization uses.

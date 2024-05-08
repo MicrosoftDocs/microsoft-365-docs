@@ -43,6 +43,6 @@ After you add an app to Intune, you can use Intune to assign the managed app to 
 | iOS/iPadOS | You can prevent the iCloud   backup of the managed iOS/iPadOS app. |
 | macOS | You can prevent the iCloud   backup of the managed macOS app. |
 
-[:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-steps.png" alt-text="Step 1. Apply minimum data protection." border="false" :::](apps-protect-step-1.md)
+[:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-steps.png" alt-text="Step 1. Apply minimum data protection." border="false" :::](apps-assign-step-1.md)
 
 After you've completed the above steps, you're ready to deploy, manage, and monitor the managed apps your organization uses.

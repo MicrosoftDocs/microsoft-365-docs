@@ -64,6 +64,6 @@ End users can also you the Company Portal to view their device compliance status
 > [!NOTE]
 > End users can request an app for work or school. For more information about how end users request apps, see [Request an app for work or school](/mem/intune/user-help/install-apps-cpapp-windows#request-an-app-for-work-or-school).
 
-[:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-steps.png" alt-text="Step 1. Apply minimum data protection." border="false" :::](apps-protect-step-1.md)
+[:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-steps.png" alt-text="Step 1. Apply minimum data protection." border="false" :::](apps-assign-step-1.md)
 
 After you've completed the above steps, you're ready to deploy, manage, and monitor the managed apps your organization uses.
