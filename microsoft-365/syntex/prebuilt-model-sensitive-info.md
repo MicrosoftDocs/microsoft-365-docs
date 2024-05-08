@@ -61,15 +61,17 @@ To create and configure a sensitive information model, follow these steps:
 
     ![Screenshot of the Test model page.](../media/content-understanding/prebuilt-sensitive-test-model.png)
 
-    If the test is successful, you'll see the entities you extracted in the library column.
+    If the test is successful, you'll see the entities that were detected in the library column.
 
-    ![Screenshot of the library showing entities extracted.](../media/content-understanding/prebuilt-sensitive-entities-extracted.png)
+    ![Screenshot of the library showing entities detected.](../media/content-understanding/prebuilt-sensitive-entities-extracted.png)
 
 6. On the **Apply model** page, select **Finish** to apply the model to detect sensitive information in files.
 
     ![Screenshot of the Apply model page.](../media/content-understanding/prebuilt-sensitive-apply-model.png)
 
+Entities that are extracted are displayed in columns in the document library.
 
+For information about file types, languages, OCR, and other considerations for this model, see [Requirements and limitations for models in Microsoft Syntex](requirements-and-limitations.md#prebuilt-models).
 <!---
 ## Create a rule to apply a sensitivity label
 
