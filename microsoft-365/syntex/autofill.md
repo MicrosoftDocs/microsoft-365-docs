@@ -59,6 +59,8 @@ To update an autofill, follow these steps:
 
 2. On the **Edit column** panel, in the **Autofill** section, select **Edit prompt**.
 
+   ![Screenshot showing the Autofill section of the Edit column panel with the Edit prompt option highlighted.](../media/content-understanding/autofill-edit-prompt.png)
+
 3. On the **Autofill** panel, in the **Prompt** box, modify the wording as needed.
 
 4. In the **Test the prompt** section, select a file to test the prompt using the files in the library. You can modify the prompt and retest it until you achieve the result you want.
@@ -72,6 +74,8 @@ To turn off autofill on a specific column, follow these steps:
 1. In the document library, select the column, and then select **Column settings** > **Edit**.
 
 2. On the **Edit column** panel, in the **Autofill** section, switch the toggle to **Off**.
+
+   ![Screenshot showing the Autofill section of the Edit column panel with the setting toggle highlighted.](../media/content-understanding/autofill-turn-off.png)
 
 3. Select **Save**.
 
