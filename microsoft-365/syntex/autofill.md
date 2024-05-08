@@ -83,6 +83,6 @@ To turn off autofill on a specific column, follow these steps:
 
 |Column type  |Starter prompt  |Example   |
 |---------|---------|---------|
-|Single line of text     | \<insert the question here>. The answer needs to be fewer than 255 characters. If no proper answer is found, respond with \<insert default response>.  |
-|Single line of text     | \<insert the question here>. If no proper answer is found, respond with \<insert default response>. |   |
-|Multiple lines of text     | \<insert the question here>. If no proper answer is found, respond with \<insert default response>.   |    |
+|Single line of text     | \<insert the question here>? The answer needs to be fewer than 255 characters. If no proper answer is found, respond with \<insert default response>.  | Who is the sales representative? The answer needs to be fewer than 255 characters. If no proper answer is found, respond with None.   |
+|Single line of text     | \<insert the question here>? If no proper answer is found, respond with \<insert default response>. | What change is happening with the insurance network participation? If no proper answer is found, respond with None.   |
+|Multiple lines of text     | \<insert the question here>? If no proper answer is found, respond with \<insert default response>.   | Who are the parties listed in the contract? If no proper answer is found, respond with None.   |
