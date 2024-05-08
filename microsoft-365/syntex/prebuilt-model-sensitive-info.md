@@ -61,6 +61,10 @@ To create and configure a sensitive information model, follow these steps:
 
     ![Screenshot of the Test model page.](../media/content-understanding/prebuilt-sensitive-test-model.png)
 
+    If the test is successful, you'll see the entities you extracted in the library column.
+
+    ![Screenshot of the library showing entities extracted.](../media/content-understanding/prebuilt-sensitive-entities-extracted.png)
+
 6. On the **Apply model** page, select **Finish** to apply the model to detect sensitive information in files.
 
     ![Screenshot of the Apply model page.](../media/content-understanding/prebuilt-sensitive-apply-model.png)
