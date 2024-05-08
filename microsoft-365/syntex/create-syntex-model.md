@@ -42,7 +42,7 @@ On the **Options for model creation** page, there are two sections:
     
 - [**Set up a prebuilt model**](#set-up-a-prebuilt-model)
 
-![Screenshot of the Options for model creation page showing the custom models and prebuilt models.](../media/content-understanding/options-for-model-creation-2.png) 
+![Screenshot of the Options for model creation page showing the custom models and prebuilt models.](../media/content-understanding/options-for-model-creation-3.png) 
 
 > [!NOTE]
 > All model options might not be available. These options are configured by your Microsoft 365 admin.
