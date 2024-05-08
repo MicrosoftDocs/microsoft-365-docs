@@ -49,7 +49,7 @@ To create a new autofill column, follow these steps:
 
 You see message indicating that autofill is starting to process the files and the time it might take to complete processing.
 
-Any new files uploaded to the library after the setting is saved are automatically processed, and the extracted information are saved to the corresponding columns.
+Any new files uploaded to the library after the setting is saved are automatically processed, and the extracted information is saved to the corresponding columns.
 
 ## Update an existing autofill column
 
@@ -63,7 +63,7 @@ To update an autofill, follow these steps:
 
 4. In the **Test the prompt** section, select a file to test the prompt using the files in the library. You can modify the prompt and retest it until you achieve the result you want.
 
-5. Select **Save**.
+5. When have the prompt you want, select **Save**.
 
 ## Turn off the autofill setting on a column
 
@@ -77,12 +77,8 @@ To turn off autofill on a specific column, follow these steps:
 
 ## Starter prompts for different column types
 
-
-|Column type  |Starter prompt  |
-|---------|---------|
-|Text     | \<insert the question here>. The answer needs to be fewer than 255 characters. If no proper answer is found, respond with \<insert default response>.<br><br>\<insert the question here>. If no proper answer is found, respond with \<insert default response>.
-  |
-|Multiple lines of text     | \<insert the question here>. If no proper answer is found, respond with \<insert default response>.
-        |
-|     |         |
-|    |         |
+|Column type  |Starter prompt  |Example   |
+|---------|---------|---------|
+|Single line of text     | \<insert the question here>. The answer needs to be fewer than 255 characters. If no proper answer is found, respond with \<insert default response>.  |
+|Single line of text     | \<insert the question here>. If no proper answer is found, respond with \<insert default response>. |   |
+|Multiple lines of text     | \<insert the question here>. If no proper answer is found, respond with \<insert default response>.   |    |
