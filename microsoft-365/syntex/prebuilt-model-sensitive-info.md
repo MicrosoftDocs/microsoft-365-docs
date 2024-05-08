@@ -21,9 +21,7 @@ description: Learn how to use a prebuilt sensitive information model in Microsof
 
 # Use a prebuilt model to detect sensitive information from documents in Microsoft Syntex
 
-The prebuilt *sensitive information model* analyzes, detects, and extracts key information from documents. The model recognizes documents in various formats and [extracts key sensitive information](/azure/ai-services/language-service/personally-identifiable-information/concepts/entity-categories#entity-categories), such as personal identification numbers, personal physical and email addresses, phone numbers, and personal financial or health information.
-
-Because of the sensitive nature of the information you extract, you also can create a rule that automatically applies sensitivity labels to documents when data in a column changes or when a new file is added.
+The prebuilt *sensitive information model* analyzes, detects, and possibly extracts key information from documents. The model recognizes documents in various formats and [detects sensitive information](/azure/ai-services/language-service/personally-identifiable-information/concepts/entity-categories#entity-categories), such as personal identification numbers, personal physical and email addresses, phone numbers, and personal financial or health information. This model can also extract key sensitive information when selected.
 
 ## Set up a sensitive information model
 
@@ -47,7 +45,11 @@ To create and configure a sensitive information model, follow these steps:
 
     ![Screenshot of the new models page showing the Add entities to detect section.](../media/content-understanding/prebuilt-add-file-to-analyze-sensitive-info.png)
 
-3. On the **Configure detection** page, select the sensitive information types you want to detect, and then select **Next**.
+3. On the **Configure detection** page:
+
+    - Select the language you want to use for this model. Only one language can be selected for each model. This model supports languages for both [handwritten text](/azure/ai-services/computer-vision/language-support#handwritten-text) and [print text](/azure/ai-services/computer-vision/language-support#print-text).
+
+    - Select the sensitive information types you want to detect, and then select **Next**.
 
     ![Screenshot of the Configure detection page.](../media/content-understanding/prebuilt-sensitive-configure-detection.png)
 
@@ -63,9 +65,12 @@ To create and configure a sensitive information model, follow these steps:
 
     ![Screenshot of the Apply model page.](../media/content-understanding/prebuilt-sensitive-apply-model.png)
 
+
+<!---
 ## Create a rule to apply a sensitivity label
 
-To create a rule to automatically apply a sensitivity label or a retention to a document, see [link to article TBD].
+To create a rule to automatically apply a sensitivity label or a retention to a document, see [link to article TBD].--->
+
 <!---
 
 2. On the **Files to analyze the model** page, select **Add** to find the file you want to use.
