@@ -69,7 +69,7 @@ To create and configure a sensitive information model, follow these steps:
 
     ![Screenshot of the Apply model page.](../media/content-understanding/prebuilt-sensitive-apply-model.png)
 
-Entities that are extracted are displayed in columns in the document library.
+    Entities that are extracted are displayed in columns in the document library.
 
 For information about file types, languages, optical character recognition, and other considerations for this model, see [Requirements and limitations for models in Microsoft Syntex](requirements-and-limitations.md#prebuilt-models).
 <!---
