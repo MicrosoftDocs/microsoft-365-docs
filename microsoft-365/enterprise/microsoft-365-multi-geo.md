@@ -62,7 +62,7 @@ Microsoft 365 Multi-Geo is currently offered in these regions:
 
 To learn more about the definition of each region such as what countries or cities contain the datacenters, see [Overview and Definitions](m365-dr-overview.md).
 
-If you utilize Microsoft Purview eDiscovery Standard or Premium, see [Microsoft 365 Multi-Geo eDiscovery configuration](multi-geo-ediscovery-configuration.md) and [Set up compliance boundaries for eDiscovery investigations](https://learn.microsoft.com/purview/ediscovery-set-up-compliance-boundaries?view=o365-worldwide&source=docs#searching-and-exporting-content-in-multi-geo-environments) for additional information on region usage and data storage as it relates to Microsoft Purview eDiscovery.
+If you utilize Microsoft Purview eDiscovery Standard or Premium, see [Microsoft 365 Multi-Geo eDiscovery configuration](multi-geo-ediscovery-configuration.md) and [Set up compliance boundaries for eDiscovery investigations](/purview/ediscovery-set-up-compliance-boundaries#searching-and-exporting-content-in-multi-geo-environments) for additional information on region usage and data storage as it relates to Microsoft Purview eDiscovery.
 
 ## Getting started
 
