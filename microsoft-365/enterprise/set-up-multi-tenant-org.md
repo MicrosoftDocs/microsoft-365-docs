@@ -7,6 +7,7 @@ ms.date: 08/17/2023
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
+ms.subservice: multi-tenant
 ms.localizationpriority: medium
 search.appverid:
 - MET150
