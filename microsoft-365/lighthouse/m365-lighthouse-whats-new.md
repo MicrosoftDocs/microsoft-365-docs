@@ -38,7 +38,7 @@ We're continuously adding new features to [Microsoft 365 Lighthouse](m365-lighth
 
 We've improved the tenant details page to provide a more comprehensive view of customer tenant details. We'll release these improvements in stages over the next few months. The improved tenant details page includes a redesigned **Overview** tab that has a **Summary** section showing high-level insights around baseline deployment progress and alerts, and an expanded **Customer information** section where you can record notes about the customer to facilitate collaboration with your colleagues. We also added an **Action items** tab where you can view summarized tasks for the tenant that require your attention. This new tab includes links to the relevant pages to perform the tasks, providing an easy way to view details and take action.
 
-To check out these improvements, in the left navigation pane in Lighthouse, select **Tenants**, and then select any tenant in the list to open the tenant details page and view the **Overview** tab. From here you can also access the new **Action items** tab. 
+To check out these improvements, in the left navigation pane in Lighthouse, select **Tenants**, and then select any tenant in the list to open the tenant details page and view the **Overview** tab. From there you can also access the new **Action items** tab. 
 
 [Go to the Tenants page now](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/Tenants.ReactView) (once there, select a tenant)
 
