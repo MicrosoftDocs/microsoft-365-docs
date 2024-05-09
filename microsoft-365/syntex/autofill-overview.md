@@ -23,7 +23,7 @@ description: Learn about the autofill columns service in Microsoft Syntex.
 > [!NOTE]
 > Through June 2024, you can try out autofill columns and other selected Syntex services at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For information and limitations, see [Try out Microsoft Syntex and explore its services](promo-syntex.md).
 
-Autofill columns in Microsoft Syntex automatically extract, summarize, or generate content from files uploaded to a SharePoint document library. By using large language models (LLMs), autofill columns can save metadata automatically, streamlining the process of managing files and their associated information.
+Autofill columns in Microsoft Syntex automatically extract, summarize, or generate content from files uploaded to a SharePoint document library. By using large language models (LLMs) through generative AI, autofill columns can save metadata automatically, streamlining the process of managing files and their associated information.
 
 For example, you can ask a question (a *prompt*) of a document in natural language, and the system saves the response directly to a designated library column. Or you can have more than one of these questions set to process any file uploaded to a library, with each response allocated to a specific column.
 
@@ -33,7 +33,7 @@ Autofill columns can work alongside other Microsoft Syntex models. You can assoc
 
 ### Support languages
 
-Currently, autofill columns are available for English language files. Other languages will be added future releases.
+Currently, autofill columns are available for English language files. Other languages will be added in future releases.
 
 ### Supported file types
 
@@ -41,7 +41,7 @@ Autofill columns are available for the following file types: .csv, .doc, .docx, 
 
 ### Supported column data types
 
-Currently, autofill settings are available for the following column data types:
+Currently, autofill columns are available for the following column data types:
 
 - Text
 - Multiple lines of text
@@ -52,7 +52,7 @@ Currently, autofill settings are available for the following column data types:
 - Hyperlink
 - Currency
 
-There is no autofill setting for the following column data types:
+Currently, autofill columns are not available for the following column data types:
 
 - Person or Group
 - Location
