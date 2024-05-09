@@ -10,13 +10,11 @@ audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-description: ""
+ROBOTS: NOINDEX NOFOLLOW
+description: "License and use terms for Preview Microsoft Places for Mobile iOS."
 ---
 
-
 # Preview Microsoft Places for Mobile iOS - Terms of use
-
-PREVIEW MICROSOFT PLACES FOR MOBILE IOS
 
 **IF YOU LIVE IN (OR ARE A BUSINESS WITH A PRINCIPAL PLACE OF BUSINESS IN) THE UNITED STATES, PLEASE READ THE “BINDING ARBITRATION AND CLASS ACTION WAIVER” SECTION BELOW. IT AFFECTS HOW DISPUTES ARE RESOLVED.**
 
