@@ -59,7 +59,7 @@ To create and configure a sensitive information model, follow these steps:
 
 5. On the **Test model** page, select **+Add files** to select sample files to test your model.
 
-    ![Screenshot of the Test model page.](../media/content-understanding/prebuilt-sensitive-test-model.png)
+    ![Screenshot of the Test model page.](../media/content-understanding/prebuilt-sensitive-test-model-2.png)
 
     If the test is successful, you'll see the entities that were detected in the library column.
 
