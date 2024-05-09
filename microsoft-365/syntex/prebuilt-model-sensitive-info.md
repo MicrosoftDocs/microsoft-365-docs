@@ -55,7 +55,7 @@ To create and configure a sensitive information model, follow these steps:
     > [!NOTE]
     > This model does not detect or extract information from encrpyted files.
 
-6. On the **Apply model** page, select **+Add library**, and choose the library you want to add this model to, and then select **Add**. <!---When done, select **Finish** to apply the model to detect sensitive information in files.--->
+6. On the **Apply model** page, select **+Add library**, and choose the library you want to add this model to, and then select **Add**. 
 
     ![Screenshot of the Apply model page.](../media/content-understanding/prebuilt-sensitive-apply-model-2.png)
 
