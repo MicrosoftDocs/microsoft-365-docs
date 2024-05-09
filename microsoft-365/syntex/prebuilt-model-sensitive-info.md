@@ -27,19 +27,10 @@ The prebuilt *sensitive information model* analyzes and detects key information 
 
 To create and configure a sensitive information model, follow these steps:
 
-<!---
-- Step 1: [Create a sensitive information model](#step-1-create-a-sensitive-information-model)
-- Step 2: [Select the information types to detect](#step-2-select-the-information-types-to-detect)
-- Step 3: [Configure the information to detect](#step-3-configure-the-information-to-detect)
-- Step 4: [Configure the information to extract](#step-4-configure-the-information-to-extract)
-- Step 5: [Test the model](#step-5-test-the-model)
-- Step 6: [Apply the model](#step-6-apply-the-model)
-
-### Step 1: Create a sensitive information model
-
---->
-
 1. Follow the instructions in [Create a model in Syntex](create-syntex-model.md#set-up-a-prebuilt-model) to create a prebuilt sensitive information model. Then continue with the following steps to complete your model.
+
+    > [!NOTE]
+    > You do not need to associate a content type for this prebuilt model.
 
 2. On the **Models** page, in the **Add entities to detect** section, select **Add entities**.
 
@@ -59,17 +50,18 @@ To create and configure a sensitive information model, follow these steps:
 
 5. On the **Test model** page, select **+Add files** to select sample files to test your model.
 
-    ![Screenshot of the Test model page.](../media/content-understanding/prebuilt-sensitive-test-model.png)
+    ![Screenshot of the Test model page.](../media/content-understanding/prebuilt-sensitive-test-model-2.png)
 
-    If the test is successful, you'll see the entities that were detected in the library column.
+    > [!NOTE]
+    > This model does not detect or extract information from encrpyted files.
+
+6. On the **Apply model** page, select **+Add library**, and choose the library you want to add this model to, and then select **Add**. <!---When done, select **Finish** to apply the model to detect sensitive information in files.--->
+
+    ![Screenshot of the Apply model page.](../media/content-understanding/prebuilt-sensitive-apply-model-2.png)
+
+    Entities that are detected are displayed in columns in the document library.
 
     ![Screenshot of the library showing entities detected.](../media/content-understanding/prebuilt-sensitive-entities-extracted.png)
-
-6. On the **Apply model** page, select **Finish** to apply the model to detect sensitive information in files.
-
-    ![Screenshot of the Apply model page.](../media/content-understanding/prebuilt-sensitive-apply-model.png)
-
-    Entities that are extracted are displayed in columns in the document library.
 
 For information about file types, languages, optical character recognition, and other considerations for this model, see [Requirements and limitations for models in Microsoft Syntex](requirements-and-limitations.md#prebuilt-models).
 <!---
