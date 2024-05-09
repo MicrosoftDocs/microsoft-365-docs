@@ -1,5 +1,5 @@
 ---
-title: "Password policy recommendations"
+title: "Preview Microsoft Places for Mobile iOS - Terms of use"
 f1.keywords:
 - CSH
 ms.author: kwekua
@@ -14,7 +14,7 @@ description: ""
 ---
 
 
-# MICROSOFT SOFTWARE LICENSE TERMS
+# Preview Microsoft Places for Mobile iOS - Terms of use
 
 PREVIEW MICROSOFT PLACES FOR MOBILE IOS
 
