@@ -29,8 +29,8 @@ To create and configure a sensitive information model, follow these steps:
 
 1. Follow the instructions in [Create a model in Syntex](create-syntex-model.md#set-up-a-prebuilt-model) to create a prebuilt sensitive information model. Then continue with the following steps to complete your model.
 
-> [!NOTE]
-> You do not need to associate a content type for this prebuilt model.
+    > [!NOTE]
+    > You do not need to associate a content type for this prebuilt model.
 
 2. On the **Models** page, in the **Add entities to detect** section, select **Add entities**.
 
