@@ -238,6 +238,9 @@ For some time-sensitive communications, admins and other communicators might nee
 
 ## Setting tenant policies
 
+>[!NOTE]
+> If you recently onboarded your tenant to Microsoft Entra ID, it can take 36 to 64 hours before you're able to use the organizational messages features.
+
 There are certain policies in [Microsoft Intune](https://intune.microsoft.com) that will block the delivery of organizational messages to your end users if not configured properly. This section describes how to adjust all policy settings for your tenant so that delivery is always allowed and works as intended.
 
 ### General Instructions
@@ -286,7 +289,7 @@ If using Device Restrictions, follow these steps:
 (This can be in a new or existing Windows configuration profile.)
 
 1. Go to **Devices** > **Windows** > **Configuration profiles**.
-1. In a new or existing template profile select **Device restrictions** > **Windows Spotlight**.
+1. In a new or existing template profile, select **Device restrictions** > **Windows Spotlight**.
 1. Ensure or Select ‘Not configured’ is set for the following:
     - Windows Spotlight
     - Windows Spotlight on lock screen

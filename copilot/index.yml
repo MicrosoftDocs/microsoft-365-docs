@@ -65,7 +65,7 @@ additionalContent:
               url: microsoft-365-copilot-privacy.md
             - text: Zero trust illustrations
               url: /security/zero-trust/zero-trust-tech-illus#zero-trust-for-microsoft-365-copilot
-            - text: Microsoft Purview data security and compliance protections for Microsoft Copilot
+            - text: Microsoft Purview data security and compliance protections for generative AI apps
               url: /purview/ai-microsoft-purview
             - text: Isolation controls
               url: /compliance/assurance/assurance-microsoft-365-isolation-controls
