@@ -27,11 +27,40 @@ search.appverid:
 description: "Learn how a Microsoft 365 global admin can add, update, and remove the pictures in user account profiles and Microsoft 365 Group profiles."
 ---
 
-# Change user profile photos
+---
+title: "Change user profile photo"
+f1.keywords:
+- NOCSH
+ms.author: chrisda
+author: chrisda
+manager: deniseb
+ms.date: 9/29/2023
+audience: Admin
+ms.topic: article
+ms.service: microsoft-365-business
+ms.localizationpriority: medium
+ms.collection:
+- Tier2
+- scotvorg
+- highpri
+- M365-subscription-management
+- Adm_O365
+- Adm_TOC
+ms.custom:
+  - VSBFY23
+  - MSStore_Link
+  - AdminSurgePortfolio
+  - AdminTemplateSet
+  - has-azure-ad-ps-ref
+search.appverid:
+description: "Learn how a Microsoft 365 global admin can add, update, and remove the pictures in user account profiles and Microsoft 365 Group profiles."
+---
+
+# Change user profile photos and settings
 
 Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
-This article explains how to manage profile photos on user accounts and [Microsoft 365 Groups](../create-groups/office-365-groups.md).
+This article explains how to manage profile photos and photo update settings on user accounts and [Microsoft 365 Groups](../create-groups/office-365-groups.md).
 
 > [!TIP]
 > If you need help with the steps in this article, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
@@ -45,6 +74,8 @@ You can't remove existing user photos using the Microsoft 365 admin center. You 
 You can't manage user photos for Microsoft 365 Groups using the Microsoft 365 admin center. You can only use Microsoft Graph PowerShell.
 
 The maximum supported size of a photo is 4 MB.
+
+Configuration of user profile photo updates does not impact other user account properties.  Also, configuring of the environment where new updates can be performed does not affect existing user profile photos (neither cloud nor on-premises user profile photos). 
 
 ## Use the Microsoft 365 admin center to change a user's profile photo
 
@@ -196,27 +227,37 @@ If the user has no photo, the commands return the error: `Exception of type 'Mic
   ```powershell
   Remove-MgUserPhoto -UserId <UPN>
   ```
-
+  
   For example:
-
+  
   ```powershell
   Remove-MgUserPhoto -UserId albertas@contoso.onmicrosoft.com
   ```
-
+  
   For detailed syntax and parameter information, see [Remove-MgUserPhoto](/powershell/module/exchange/remove-userphoto).
-
+  
 - **Microsoft 365 Groups**:
 
   ```powershell
   Remove-MgGroupPhoto -GroupId <ID>
   ```
-
+  
   You get the ID GUID value of the Microsoft 365 Group from the output of a **Get-MgGroup** command.
-
+  
   For example:
-
+  
   ```powershell
   Remove-MgGroupPhoto -GroupId 173cd812-5563-439c-9da4-bc2715fa2aee
   ```
-
+  
   For detailed syntax and parameter information, see [Remove-MgGroupPhoto](/powershell/module/exchange/remove-userphoto).
+  
+## Configure photo update settings in your organisation in Microsoft 365
+
+You can configure photo update settings in your organisation. This includes controlling the environment where user profile photos can be updated within the organisation and which roles are required to update profile user photos within the organisation.
+
+> [!IMPORTANT]
+> When you update photo update settings, it can take up to **24 hours** for the changes to reflect throughout Microsoft 365. For example, if you block cloud user profile photo updates, it can take up to 24 hours before the users are blocked from making updates.
+### Select where user profile photos can be edited using Microsoft Graph
+
+This feature will soon be available in the the admin center, until then you can configure the photo update settings using Microsoft Graph, see [Manage user profile photo settings in Microsoft 365 using Microsoft Graph](https://)
