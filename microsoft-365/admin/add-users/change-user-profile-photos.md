@@ -198,7 +198,7 @@ If the user has no photo, the commands return the error: `Exception of type 'Mic
   ```powershell
   Remove-MgUserPhoto -UserId <UPN>
   ```
-  
+
   For example:
 
   ```powershell
