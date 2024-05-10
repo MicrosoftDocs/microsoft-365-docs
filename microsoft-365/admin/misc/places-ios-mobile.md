@@ -146,7 +146,7 @@ Subject to the foregoing clause ii., Microsoft will only be liable for slight ne
 
 If you have questions, complaints or claims with respect to the preview software, please contact Microsoft at **places-preview@microsoft.com**.
 
-## ONFIDENTIAL INFORMATION
+## CONFIDENTIAL INFORMATION
 
 The software, including its user interface, features and documentation, is confidential and proprietary to Microsoft and its suppliers
 
