@@ -200,29 +200,29 @@ If the user has no photo, the commands return the error: `Exception of type 'Mic
   ```
   
   For example:
-  
+
   ```powershell
   Remove-MgUserPhoto -UserId albertas@contoso.onmicrosoft.com
   ```
-  
+
   For detailed syntax and parameter information, see [Remove-MgUserPhoto](/powershell/module/exchange/remove-userphoto).
-  
+
 - **Microsoft 365 Groups**:
 
   ```powershell
   Remove-MgGroupPhoto -GroupId <ID>
   ```
-  
+
   You get the ID GUID value of the Microsoft 365 Group from the output of a **Get-MgGroup** command.
-  
+
   For example:
-  
+
   ```powershell
   Remove-MgGroupPhoto -GroupId 173cd812-5563-439c-9da4-bc2715fa2aee
   ```
-  
+
   For detailed syntax and parameter information, see [Remove-MgGroupPhoto](/powershell/module/exchange/remove-userphoto).
-  
+
 ## Configure photo update settings in your Microsoft 365 organization
 
 Photo update settings in your organization include controlling the environment where user profile photos can be updated and which roles are required.
