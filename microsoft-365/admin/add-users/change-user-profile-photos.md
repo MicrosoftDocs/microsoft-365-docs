@@ -5,36 +5,7 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: deniseb
-ms.date: 9/29/2023
-audience: Admin
-ms.topic: article
-ms.service: microsoft-365-business
-ms.localizationpriority: medium
-ms.collection:
-- Tier2
-- scotvorg
-- highpri
-- M365-subscription-management
-- Adm_O365
-- Adm_TOC
-ms.custom:
-  - VSBFY23
-  - MSStore_Link
-  - AdminSurgePortfolio
-  - AdminTemplateSet
-  - has-azure-ad-ps-ref
-search.appverid:
-description: "Learn how a Microsoft 365 global admin can add, update, and remove the pictures in user account profiles and Microsoft 365 Group profiles."
----
-
----
-title: "Change user profile photo"
-f1.keywords:
-- NOCSH
-ms.author: chrisda
-author: chrisda
-manager: deniseb
-ms.date: 9/29/2023
+ms.date: 5/10/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -75,7 +46,7 @@ You can't manage user photos for Microsoft 365 Groups using the Microsoft 365 ad
 
 The maximum supported size of a photo is 4 MB.
 
-Configuration of user profile photo updates does not impact other user account properties.  Also, configuring of the environment where new updates can be performed does not affect existing user profile photos (neither cloud nor on-premises user profile photos). 
+User profile photo updates don't affect other user account properties. Configuration of the environment where new updates can be performed doesn't affect existing user profile photos in the cloud or in on-premises environments. 
 
 ## Use the Microsoft 365 admin center to change a user's profile photo
 
@@ -252,12 +223,13 @@ If the user has no photo, the commands return the error: `Exception of type 'Mic
   
   For detailed syntax and parameter information, see [Remove-MgGroupPhoto](/powershell/module/exchange/remove-userphoto).
   
-## Configure photo update settings in your organisation in Microsoft 365
+## Configure photo update settings in your Microsoft 365 organization
 
-You can configure photo update settings in your organisation. This includes controlling the environment where user profile photos can be updated within the organisation and which roles are required to update profile user photos within the organisation.
+Photo update settings in your organization include controlling the environment where user profile photos can be updated and which roles are required.
 
 > [!IMPORTANT]
 > When you update photo update settings, it can take up to **24 hours** for the changes to reflect throughout Microsoft 365. For example, if you block cloud user profile photo updates, it can take up to 24 hours before the users are blocked from making updates.
+
 ### Select where user profile photos can be edited using Microsoft Graph
 
-This feature will soon be available in the the admin center, until then you can configure the photo update settings using Microsoft Graph, see [Manage user profile photo settings in Microsoft 365 using Microsoft Graph](https://)
+Currently, you can configure the photo update settings using Microsoft Graph only. For more information, see Manage user profile photo settings in Microsoft 365 using Microsoft Graph.
