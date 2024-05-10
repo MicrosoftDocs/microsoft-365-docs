@@ -75,9 +75,9 @@ By default, SharePoint eSignature is turned on for libraries in all SharePoint s
 
 3. On the **Add or remove other signature providers** panel, select the provider you want to add.
 
-    ![Screenshot of the Add or remove other signature providers panel.](../media/content-understanding/esignature-add-other-providers.png)
+     <img width="908" alt="image" src="https://github.com/MicrosoftDocs/microsoft-365-docs-pr/assets/89842834/9af8cde7-8179-4752-97dc-0d37f892b3b8">
 
-4. Select **Save**.
+5. Select **Save**.
 
 > [!NOTE]
 > Although [pay-as-you-go billing](syntex-azure-billing.md) must be set up to use eSignature, you are not charged for using other signature providers.
