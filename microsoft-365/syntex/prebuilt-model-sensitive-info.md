@@ -40,11 +40,11 @@ To create and configure a sensitive information model, follow these steps:
 
     - Select the language you want to use for this model. Only one language can be selected for each model. This model supports languages for both [handwritten text](/azure/ai-services/computer-vision/language-support#handwritten-text) and [print text](/azure/ai-services/computer-vision/language-support#print-text).
 
-    - Select the sensitive information types you want to detect, and then select **Next**.
+    - Select the sensitive information entities you want to detect, and then select **Next**.
 
     ![Screenshot of the Configure detection page.](../media/content-understanding/prebuilt-sensitive-configure-detection.png)
 
-4. On the **Configure extraction** page, select the sensitive information types you want to extract, and then select **Next**.
+4. On the **Configure extraction** page, select the sensitive information entities you want to extract, and then select **Next**.
 
     ![Screenshot of the Configure extraction page.](../media/content-understanding/prebuilt-sensitive-select-extract.png)
 
@@ -53,13 +53,13 @@ To create and configure a sensitive information model, follow these steps:
     ![Screenshot of the Test model page.](../media/content-understanding/prebuilt-sensitive-test-model-2.png)
 
     > [!NOTE]
-    > This model does not detect or extract information from encrpyted files.
+    > This model does not detect or extract information from encrypted files.
 
 6. On the **Apply model** page, select **+Add library**, and choose the library you want to add this model to, and then select **Add**. 
 
     ![Screenshot of the Apply model page.](../media/content-understanding/prebuilt-sensitive-apply-model-2.png)
 
-    Entities that are detected are displayed in columns in the document library.
+7. In the document library, entities that are detected are displayed in one column and entities that are selected for extraction are displayed in another column per entity.
 
     ![Screenshot of the library showing entities detected.](../media/content-understanding/prebuilt-sensitive-entities-extracted.png)
 
