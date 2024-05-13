@@ -75,7 +75,7 @@ When you return to the **Requests** list, you see the message **You're using you
 2. On the **Licenses** page, select the **Requests** tab.
 3. Select the row that contains the request you want to review. The details pane shows details about which users want licenses to the product.
 4. You can assign licenses to each user through the default **Assign license to each of the approved people** option.
-   - To approve the entire request, select on **Submit**.
+   - To approve the entire request, select **Submit**.
    - To approve some users and reject others, select the **X** next to the names of the users you want to remove. The names of the rejected users are moved to the **Reject for the following people** section.
    - To deny the entire request, select the **X** next to the name under the **Approve for the following people** section. Users whose requests were denied appear under the **Reject for the following people** section.
 5. If you have more than one product, under **Select a product**, select the one that you want to use to assign licenses for.
