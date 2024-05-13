@@ -33,7 +33,8 @@ Save files directly to a central location by saving from within a Microsoft 365 
 
 3. Enter a file name and then select **Save** to save your document to OneDrive.
 
-     **Note:** If prompted, select Sign In.
+   > [!NOTE]
+   > If prompted, select Sign In.
 
 4. To find your files later, open the Microsoft 365 app that you created the file in and check the Recent list.
 
@@ -94,6 +95,7 @@ Use your mobile device to scan documents, whiteboards, and business cards in the
 5. Enter a file name, then select **Save**.
 
 To learn more about its usage and functionalities, see the following articles:
+
 - [Overview of OneDrive for Business](https://support.microsoft.com/office/what-is-onedrive-work-or-school-10f5c3fd-b0f6-40e2-9059-04735ffe01b7).
 
 - [OneDrive for Business video training](https://support.microsoft.com/office/onedrive-video-training-1f608184-b7e6-43ca-8753-2ff679203132).
@@ -141,7 +143,8 @@ Work together, in real time, on shared documents instead of sending back and for
 
 5. To edit, select the command for editing in the Microsoft 365 for the web app. You can edit the document in the browser or the application.
 
-    **Note:** If others are also editing the document, Microsoft 365 alerts you to their presence, and shows you where in the file they’re working.
+   > [!NOTE]
+   > If others are also editing the document, Microsoft 365 alerts you to their presence, and shows you where in the file they’re working.
 
 ## Protect shared files by adding a password and expiration
 
@@ -153,7 +156,8 @@ With a Microsoft 365 subscription, you can add expiration dates and passwords to
 
 3. Set an expiration date.
 
-    **Note:** The link works until the expiration date.
+   > [!NOTE]
+   > The link works until the expiration date.
 
 4. Set a strong password.
 
@@ -171,7 +175,8 @@ Use the Microsoft Purview compliance portal to enable support for sensitivity la
 
 2. Select **Solutions** and then **Information protection**.
 
-    **Note:** If you don’t immediately see this option, first select **Show all**.
+   > [!NOTE]
+   > If you don’t immediately see this option, first select **Show all**.
 
 3. If you see a message to turn on the ability to process content in Office online files, select **Turn on now**. The command runs immediately and when the page is next refreshed, you no longer see the message or button.
 
