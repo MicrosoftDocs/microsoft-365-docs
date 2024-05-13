@@ -32,7 +32,7 @@ Microsoft 365 is designed and developed in compliance with the Microsoft Trustwo
 
 Microsoft 365 endorses security ideas like Zero Trust, and principles of Least Privilege access. This section gives an overview of fundamental elements that form a security framework for Microsoft 365.
 
-Core elements are:
+Core elements include:
 
 - Microsoft Entra ID, which provides a single trusted back-end repository for user accounts. User profile information is stored in Microsoft Entra ID through the actions of Microsoft Graph.
   - There might be multiple tokens issued which you might see if tracing your network traffic.
@@ -40,8 +40,6 @@ Core elements are:
 - Point-to-point audio, video, and application sharing streams are encrypted and integrity checked using Secure Real-Time Transport Protocol (SRTP).
 - You'll see OAuth traffic in your trace, particularly around token exchanges and negotiating permissions while switching between tabs in Teams, for example to move from Posts to Files. For an example of the OAuth flow for tabs, [see this document](/microsoftteams/platform/tabs/how-to/authentication/auth-flow-tab).
 - Microsoft 365 uses industry-standard protocols for user authentication, wherever possible.
-
-The next sections discuss some of these core technologies.
 
 <a name='azure-active-directory'></a>
 
