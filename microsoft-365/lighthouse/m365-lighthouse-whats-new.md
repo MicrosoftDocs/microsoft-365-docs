@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: sharonchoi
-ms.date: 3/07/2024
+ms.date: 5/09/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -32,11 +32,51 @@ We're continuously adding new features to [Microsoft 365 Lighthouse](m365-lighth
 >
 > To see which new features are currently available in your partner tenant, go to the **Home** page of Microsoft 365 Lighthouse, and then either select the **What's new** link in the upper-right corner of the page or select **What's new** on the **What's new & learning resources** card.
 
+## May 2024
+
+### Improved tenant details page
+
+We've improved the tenant details page to provide a more comprehensive view of customer tenant details. We'll release these improvements in stages over the next few months. The improved tenant details page includes a redesigned **Overview** tab that has a **Summary** section showing high-level insights around baseline deployment progress and alerts, and an expanded **Customer information** section where you can record notes about the customer to facilitate collaboration with your colleagues. We also added an **Action items** tab where you can view summarized tasks for the tenant that require your attention. This new tab includes links to the relevant pages to perform the tasks, providing an easy way to view details and take action.
+
+To check out these improvements, in the left navigation pane in Lighthouse, select **Tenants**, and then select any tenant in the list to open the tenant details page and view the **Overview** tab. From there you can also access the new **Action items** tab. 
+
+[Go to the Tenants page now](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/Tenants.ReactView) (once there, select a tenant)
+
+## April 2024
+
+### Apps & services usage on the Tenants page
+
+We've added a new column to the **Tenants** page in Microsoft 365 Lighthouse that shows the apps and services usage of each customer. This helps you identify customers who aren't fully utilizing the potential of Microsoft 365 and might need your guidance or support. The column displays the usage status of four core workloads: core Microsoft apps (Word, Excel, PowerPoint, and OneNote), Teams, storage (SharePoint or OneDrive), and email (Exchange). A customer who has very low or no adoption of any of these workloads is marked as unhealthy. You can use this information to prioritize your actions and reach out to those customers who need more assistance or help setting up their Microsoft 365 subscription.
+
+To access this functionality, in the left navigation pane in Lighthouse, select **Tenants**, and then check out the **Apps & services usage** column on the **Tenants** page.
+
+[Go to the Tenants page now](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/Tenants.ReactView)
+
+To learn more, see [Overview of the Tenants page](m365-lighthouse-tenants-page-overview.md).
+
+### Manage Microsoft 365 app health from Lighthouse 
+
+The new App management report lets you easily monitor and manage Microsoft 365 app health across your customer tenants. For example, you can check to see if customer devices have Cloud Update enabled, which ensures apps are always up to date. The report also identifies which Microsoft 365 app channels are deployed across customer tenants that have the inventory service enabled in the Microsoft 365 Apps admin center and which app channels customers are receiving updates through.  
+
+In addition, the App management report makes it easy to determine if customers are running unsupported Office builds or are behind on the latest build. This helps you proactively identify potential end-user issues that could arise from using Office builds that are out of date. These insights are available for any customers with Win32 devices&mdash;there's no Intune requirement on the customer tenant. 
+
+To access this new report, go to **Apps** > **App management**.  
+
+[Go to the App management page now ](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/AppHealthManagement.ReactView)
+
 ## March 2024
 
 ### Feedback and support widget
 
 We've made it easier for you to give us feedback. Check out the new feedback and support widget in the lower-right corner of the Lighthouse portal. Make a suggestion, report a problem, or give a compliment by simply selecting the widget. Share your comments today through our enhanced feedback tool and let us know how Lighthouse is working for you.
+
+## February 2024
+
+### Management of PowerShell scripts
+
+You can now create PowerShell scripts and check results for Intune-managed devices in Microsoft 365 Lighthouse instead of having to go to the device Scripts page in the Microsoft Intune admin center for each customer. To access this functionality, select **Tenants** from the left navigation pane in Lighthouse, select a tenant from the list, and then select the **Scripts** tab.
+
+To create a script, select **Create script**. To view a list of targeted devices and the last run time for an existing script, select a script from the list. You can run scripts against all Intune-managed devices in a customer tenant or you can target devices by using Microsoft Entra groups.
 
 ## January 2024
 
