@@ -7,6 +7,7 @@ ms.date: 08/23/2023
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: high
 search.appverid:
 - MET150

@@ -7,6 +7,7 @@ ms.date: 11/11/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
@@ -23,7 +24,6 @@ description: This article describes how you can launch your portal using the Por
 # Launch your portal using the SharePoint Portal launch scheduler
 
 A portal is a SharePoint communication site on your intranet that is high-traffic – a site that has anywhere from 10,000 to over 100,000 viewers over the course of several weeks. Use the Portal launch scheduler to launch your portal to ensure users have a smooth viewing experience when accessing your new SharePoint portal.
-
 
 The Portal launch scheduler is designed to help you follow a phased roll-out approach by batching viewers in waves and managing the URL redirects for the new portal. During the launch of each wave, you can gather user feedback, monitor portal performance, and pause the launch to resolve issues before proceeding with the next wave. Learn more about how to [plan a portal launch in SharePoint](/microsoft-365/Enterprise/Planportallaunchroll-out).
 
@@ -170,16 +170,16 @@ The SharePoint Portal launch scheduler tool was originally only available via [S
 > You need administrator permissions to use SharePoint PowerShell.
 > Portal launch details for launches created in PowerShell will appear and can be managed in the new Portal launch scheduler tool in SharePoint.
 
-### App setup and connecting to SharePoint Online
+### App setup and connecting to SharePoint in Microsoft 365
 
-1. [Download the latest SharePoint Online Management Shell](https://go.microsoft.com/fwlink/p/?LinkId=255251).
+1. [Download the latest SharePoint Management Shell](https://go.microsoft.com/fwlink/p/?LinkId=255251).
 
     > [!NOTE]
-    > If you installed a previous version of the SharePoint Online Management Shell, go to Add or remove programs and uninstall "SharePoint Online Management Shell."
+    > If you installed a previous version of the SharePoint Management Shell, go to Add or remove programs and uninstall "SharePoint Management Shell."
     >
     > On the Download Center page, select your language and then click the Download button. You'll be asked to choose between downloading a x64 and x86 .msi file. Download the x64 file if you're running the 64-bit version of Windows or the x86 file if you're running the 32-bit version. If you don't know, see [Which version of Windows operating system am I running?](https://support.microsoft.com/help/13443/windows-which-operating-system). After the file downloads, run it and follow the steps in the Setup Wizard.
 
-1. Connect to SharePoint as a [global admin or SharePoint admin](/sharepoint/sharepoint-admin-role) in Microsoft 365. To learn how, see [Getting started with SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
+1. Connect to SharePoint as a [global admin or SharePoint admin](/sharepoint/sharepoint-admin-role) in Microsoft 365. To learn how, see [Getting started with SharePoint Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
 
 ### View any existing portal launch setups
 
@@ -200,7 +200,7 @@ The number of waves required depends on your expected launch size.
 
 #### Steps for bidirectional redirection
 
-Bidirectional redirection involves launching a new modern SharePoint Online portal to replace an existing SharePoint classic or modern portal. Users in active waves are redirected to the new site regardless of whether they navigate to the old or new site. Users in a non-launched wave that try to access the new site are redirected back to the old site until their wave is launched.
+Bidirectional redirection involves launching a new modern SharePoint portal to replace an existing SharePoint classic or modern portal. Users in active waves are redirected to the new site regardless of whether they navigate to the old or new site. Users in a non-launched wave that try to access the new site are redirected back to the old site until their wave is launched.
 
 We only support redirection between the default home page on the old site and the default home page on the new site. Should you have administrators or owners that need access to the old and new sites without being redirected, ensure they're listed using the `WaveOverrideUsers` parameter.
 
@@ -225,7 +225,7 @@ To migrate users from an existing SharePoint site to a new SharePoint site in a 
 
 #### Steps for redirection to temporary page
 
-Temporary page redirection should be used when no existing SharePoint portal exists. Users are directed to a new modern SharePoint Online portal in a staged manner. If a user is in a wave that hasn't been launched, they're redirected to a temporary page (any URL).
+Temporary page redirection should be used when no existing SharePoint portal exists. Users are directed to a new modern SharePoint portal in a staged manner. If a user is in a wave that hasn't been launched, they're redirected to a temporary page (any URL).
 
 1. Run the following command to designate portal launch waves.
 
@@ -274,7 +274,7 @@ Temporary page redirection should be used when no existing SharePoint portal exi
 
 ## Learn more
 
-[Planning your portal launch roll-out plan in SharePoint Online](./planportallaunchroll-out.md)
+[Planning your portal launch roll-out plan in SharePoint](./planportallaunchroll-out.md)
 
 [Plan your communication site](https://support.microsoft.com/office/plan-your-sharepoint-communication-site-35d9adfe-d5cc-462f-a63a-bae7f2529182)
 
