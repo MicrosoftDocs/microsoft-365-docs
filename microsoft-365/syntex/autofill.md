@@ -35,7 +35,10 @@ To create a new autofill column, follow these steps:
 
 3. In the **Autofill** section, select **Set up**.
 
-4. On the **Autofill** panel, in the **Prompt** box, create the prompt. The prompt identifies the type of information you want to extract from a file to a column. For some ideas about how to create a prompt for the different column types, see [Starter prompts for different column types](#starter-prompts-for-different-column-types).
+4. On the **Autofill** panel, in the **Prompt** box, create the prompt. The prompt identifies the type of information you want to extract from a file to a column.
+
+    > [!NOTE]
+    > Currently, suggested prompts are automatically generated for **Text** and **Multiple lines of text** only. For other column types, see these [suggested prompts for different column types](#suggested-prompts-for-different-column-types).
 
    ![Screenshot showing the Autofill panel.](../media/content-understanding/autofill-panel.png)
 
@@ -82,11 +85,9 @@ To turn off autofill on a specific column, follow these steps:
 
 3. Select **Save**.
 
-## Starter prompts for different column types
+## Suggested prompts for different column types
 
-Currently, suggested prompts are automatically generated for **Text** and **Multiple lines of text**. Suggested prompts for other column types will be added in future releases.
-
-|Column type  |Starter prompt  |Example   |
+|Column type  |Suggested prompt  |Example   |
 |---------|---------|---------|
 |**Text**     | /<insert the question here>? The answer needs to be fewer than 255 characters. If no proper answer is found, respond with /<insert default response>.  | Who is the broker listed in the agreement? The answer needs to be fewer than 255 characters. If no proper answer is found, respond with None.   |
 |**Text**     | /<insert the question here>? If no proper answer is found, respond with /<insert default response>. | What is the current status of the project milestone? If no proper answer is found, respond with Status pending review.   |
