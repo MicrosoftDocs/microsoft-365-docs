@@ -26,34 +26,6 @@ description: "Learn how to review and approve or deny license requests for produ
 ms.date: 10/06/2023
 ---
 
----
-title: "Manage self-service license requests in the Microsoft 365 admin center"
-f1.keywords:
-- CSH
-author: cmcatee-MSFT
-ms.author: cmcatee
-manager: scotv
-ms.reviewer: sinakassaw, nicholak
-audience: Admin
-ms.topic: how-to
-ms.service: microsoft-365-business
-ms.subservice: m365-commerce-acquisition
-ms.localizationpriority: medium
-ms.collection: 
-- Tier1
-- scotvorg
-- M365-subscription-management
-- Adm_O365
-ms.custom: 
-- commerce_licensing
-- MACBillingLicensesRequests
-- AdminSurgePortfolio
-- admindeeplinkMAC
-search.appverid: MET150
-description: "Learn how to review and approve or deny license requests for products and services from users in the Microsoft 365 admin center."
-ms.date: 10/06/2023
----
-
 # Manage self-service license requests in the Microsoft 365 admin center
 
 > [!NOTE]
@@ -82,7 +54,7 @@ If your organization has its own request process, you can use it instead. You cr
 
 1. In the Microsoft 365 admin center, select the **Navigation menu**, then select **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a>.
 2. On the **Licenses** page, select the **Requests** tab.
-3. Select **Use your existing request process instead**.
+1. Select **Connect your request process**.
 4. In the **Use your request process** pane, select the **Use my organization's request process** check box.
 5. In the **Message** box, type the message you want users to see when they request a license. If you want to also include a link to your organizations policy or other documentation, enter the URL in the **Link to documentation (optional)** text box.
 6. Select **Save**.
@@ -93,7 +65,7 @@ When you return to the **Requests** list, you see the message **You're using you
 
 1. In the admin center, select the **Navigation menu**, then select **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a>.
 2. On the **Licenses** page, select the **Requests** tab.
-3. Select **Use your existing request process instead**.
+1. Select **Connect your request process**.
 4. In the **Use your request process** pane, clear the **Use my organization's request process** check box.
 5. Select **Save**.
 
