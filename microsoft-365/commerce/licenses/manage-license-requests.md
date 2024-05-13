@@ -23,7 +23,7 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: MET150
 description: "Learn how to review and approve or deny license requests for products and services from users in the Microsoft 365 admin center."
-ms.date: 10/06/2023
+ms.date: 05/13/2024
 ---
 
 # Manage self-service license requests in the Microsoft 365 admin center
@@ -54,7 +54,7 @@ If your organization has its own request process, you can use it instead. You cr
 
 1. In the Microsoft 365 admin center, select the **Navigation menu**, then select **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a>.
 2. On the **Licenses** page, select the **Requests** tab.
-1. Select **Connect your request process**.
+3. Select **Connect your request process**.
 4. In the **Use your request process** pane, select the **Use my organization's request process** check box.
 5. In the **Message** box, type the message you want users to see when they request a license. If you want to also include a link to your organizations policy or other documentation, enter the URL in the **Link to documentation (optional)** text box.
 6. Select **Save**.
@@ -65,7 +65,7 @@ When you return to the **Requests** list, you see the message **You're using you
 
 1. In the admin center, select the **Navigation menu**, then select **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a>.
 2. On the **Licenses** page, select the **Requests** tab.
-1. Select **Connect your request process**.
+3. Select **Connect your request process**.
 4. In the **Use your request process** pane, clear the **Use my organization's request process** check box.
 5. Select **Save**.
 
@@ -73,26 +73,19 @@ When you return to the **Requests** list, you see the message **You're using you
 
 1. In the admin center, select the **Navigation menu**, then select **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a>.
 2. On the **Licenses** page, select the **Requests** tab.
-1. Select the row that contains the request you want to review. The details pane shows details about which users want licenses to the product.
-1. Licenses can be assigned to each user through the default **Assign license to each of the approved people** option.
-
-   - To approve the entire request, click on **Submit**.
-   - To approve some users and reject others, click the X next to the names of the users you wish to remove. The names of the rejected users will then be moved to the **Reject for the following people** section.
-      
-   - To deny the entire request, select the 'X' next to the name under the **Approve for the following people** section. The users whose requests have been denied will then appear under the **Reject for the following people** section.
+3. Select the row that contains the request you want to review. The details pane shows details about which users want licenses to the product.
+4. You can assign licenses to each user through the default **Assign license to each of the approved people** option.
+   - To approve the entire request, select on **Submit**.
+   - To approve some users and reject others, select the **X** next to the names of the users you want to remove. The names of the rejected users are moved to the **Reject for the following people** section.
+   - To deny the entire request, select the **X** next to the name under the **Approve for the following people** section. Users whose requests were denied appear under the **Reject for the following people** section.
 5. If you have more than one product, under **Select a product**, select the one that you want to use to assign licenses for.
    - To deny users access to certain apps and services, expand **Turn apps and services on or off**, then clear the check boxes for the ones that you want to exclude.
-1. To assign licenses based on group membership, choose the radio button option **Assign license by adding the approved individuals to the following security group**.
-
+6. To assign licenses based on group membership, select **Assign license by adding the approved individuals to the following security group**.
    - A grayed-out option typically signifies that the security groups are either unlicensed or not yet configured.
-      
-   - For more information on how to assign licenses to a security group please visit [Assign licenses to users by group membership using the Microsoft 365 admin center](/entra/identity/users/licensing-admin-center)
-      
-   - When multiple security groups are available, select the one to which you wish to assign licenses.
-      
-1. In the text box at the bottom of the pane, type a message if you wish. The user will receive an email containing either the default message or your customized message.
-
-1. When you're finished, select **Submit**. The details pane shows the details of the request.
+   - For more information about how to assign licenses to a security group,seet [Assign licenses to users by group membership using the Microsoft 365 admin center](/entra/identity/users/licensing-admin-center)
+   - When multiple security groups are available, select the one to which you want to assign licenses.     
+7. In the text box at the bottom of the pane, type a message (optional). The user receives an email containing either the default message or your customized message.
+8. When you're finished, select **Submit**. The details pane shows the details of the request.
 9. Close the details pane. Users receive an email that says their request was approved or denied.
 
 ## Share a license request by email
@@ -103,7 +96,7 @@ If you don’t have the authority within your organization to make decisions abo
 2. On the **Licenses** page, select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2245727" target="_blank">Auto-claim policy</a> tab.
 3. Select the **Share request** tab, then select a request to share.
 4. In the request pane, select **Share request**.
-1. In the **Share license request details** pane, type an email address, then select the recipient name.
+5. In the **Share license request details** pane, type an email address, then select the recipient name.
    > [!NOTE]
    > You can select more than one recipient, but if the email that you entered doesn’t resolve into a user name, you can’t share the request.
 6. To personalize the email, select the **Include a personalized message** check box. Type a **Subject** and **Message** in the corresponding fields.
