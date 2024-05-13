@@ -74,11 +74,11 @@ For media authentication, the ICE and TURN protocols also use the Digest challen
 
 ### Endpoint security
 
-Microsoft is unifying user-facing Microsoft 365 apps and services to a single and consistent domain: **cloud.microsoft**.
+Microsoft is unifying user-facing Microsoft 365 apps and services to a single and consistent domain: `**cloud.microsoft**`.
 
 The growth of Microsoft cloud services led to the expansion of the domain space they occupy, resulting in hundreds of domains. This fragmentation is a challenge for end user navigation, administrative simplicity, and the development of cross-app experiences.
 
-The *.microsoft* top-level domain is exclusive to Microsoft. The new domain doesn’t have traditional suffixes such as .com or .net in the end. This is by design. cloud.microsoft resides under the .microsoft top-level domain, for which Microsoft is a registry operator and the sole registrant. This domain allows for extra security, privacy, and protection against spoofing when you interact with apps within that domain. You can trust that any website or app that ends with cloud.microsoft is an official Microsoft product or service.
+The `*.microsoft*` top-level domain is exclusive to Microsoft. The new domain doesn’t have traditional suffixes such as .com or .net in the end. This is by design. `cloud.microsoft` resides under the `.microsoft` top-level domain, for which Microsoft is a registry operator and the sole registrant. This domain allows for extra security, privacy, and protection against spoofing when you interact with apps within that domain. You can trust that any website or app that ends with `cloud.microsoft` is an official Microsoft product or service.
 
 For more information, see [Unified cloud.microsoft domain for Microsoft 365 apps](cloud-microsoft-domain.md).
 
