@@ -45,10 +45,6 @@ Microsoft 365 and Microsoft Teams offer a number of telemedicine features useful
 > [!NOTE]
 > This functionality is also part of Microsoft Cloud for Healthcare. Learn more about using this solution, which brings together capabilities from Azure, Dynamics 365, and Microsoft 365 at [Microsoft Cloud for Healthcare](/industry/healthcare).
 
-<!-- Watch the following video to learn more about using the healthcare collection to enhance health team collaboration in Teams.
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Hqan]-->
-
 To get the most benefit for your healthcare organization, first choose which scenarios Microsoft 365 and Teams can help you with in your day-to-day activities, and then make sure that you prepare your Teams environment with the right fundamentals, teams, and apps to support those scenarios.
 
 1. [Choose your scenarios](#scenarios-for-healthcare) you want to implement.

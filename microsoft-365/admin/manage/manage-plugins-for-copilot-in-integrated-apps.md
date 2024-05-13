@@ -17,6 +17,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - m365copilot
+- magic-ai-copilot
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -31,9 +32,9 @@ description: "Learn how to manage plugins for Copilot in the Integrated apps pag
 
 > [!IMPORTANT]
 > 
-> - You must be licensed with Microsoft 365 Copilot to use plugins for Copilot for Microsoft 365.
+> - You must be licensed with Copilot for Microsoft 365 to use plugins for Copilot for Microsoft 365.
 > - The capability is enabled by default in all Microsoft 365 Copilot licensed tenants.
-> - Admins can disable this functionality on a user and group basis and control how individual plugins are approved for use, and which plugins are enabled."
+> - Admins can disable this functionality on a user and group basis and control how individual plugins are approved for use, and which plugins are enabled.
 
 Microsoft Copilot for Microsoft 365 is a new experience inside Microsoft 365 that combines the power of large language models with your data and Microsoft 365 apps to capture natural language commands to produce content and analyze data. Plugins for Copilot are extensions that enable Copilot to access and use third-party apps, such as Jira, [Dynamics 365](/microsoft-365-copilot/extensibility/overview-business-applications), or Bing Web Search. Admins can manage plugins for Copilot in the same way as they manage any other app in the Integrated apps section of the Microsoft 365 admin center. This document explains how admins can enable, disable, assign, block, or remove plugins for Copilot for their organization, and about Copilot capabilities and data privacy.
 
@@ -83,6 +84,6 @@ Admins can assign or unassign plugins for Copilot to specific users or groups by
 
 Admins can block or unblock plugins for Copilot for the whole organization or specific users or groups by using the same gestures and controls that work for any other app in the Microsoft 365 admin center. Admins can select an app that has a plugin for Copilot from the Available apps or Deployed apps list and click on the block or unblock button. Admins can also choose to block or unblock the app for everyone or specific users or groups. Blocking or unblocking an app affects its availability and functionality in Copilot as well as other host products, such as Outlook, Teams, or Microsoft 365.
 
-## View and consent to permissions and data access 
+## View and consent to permissions and data access
 
-For detailed information about how Microsoft 365 Copilot uses, protects, and shares organizational information to power extensibility, see [Data, Privacy, and Security for Microsoft 365 Copilot](/microsoft-365-copilot/microsoft-365-copilot-privacy).
+For detailed information about how Copilot for Microsoft 365 uses, protects, and shares organizational information to power extensibility, see [Data, Privacy, and Security for Copilot for Microsoft 365](/microsoft-365-copilot/microsoft-365-copilot-privacy).

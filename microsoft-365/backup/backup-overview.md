@@ -11,8 +11,7 @@ ms.service: microsoft-365-backup
 ms.custom: backup
 search.appverid:
 ms.collection:
-    - enabler-strategic
-    - m365initiative-syntex
+    - essentials-overview
 ms.localizationpriority:  medium
 description: Learn about the backup and recovery capabilities for SharePoint, Exchange Online, and OneDrive for Business using Microsoft 365 Backup.
 ---
@@ -100,7 +99,7 @@ The following table summarizes expected performance for a normally distributed t
 
 |Scenario |Restore of all protection units* complete |
 |:-------|:--------|
-| 1,000 accounts, sites, or mailboxes<br>(30-GB average size)  |Less than 12 hours  |
+| 1,000 accounts, sites, or mailboxes<br>(10-GB average size)  |Less than 12 hours  |
 
 <sup>*A *protection unit* is a OneDrive account, SharePoint site, or Exchange mailbox.</sup>
 

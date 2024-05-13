@@ -64,5 +64,5 @@ The following table provides links to the specific setup instructions for each s
 |Video translation                | [Set up video translation](https://prod.support.services.microsoft.com/office/2e34ad1b-e213-47ed-a806-5cc0d88751de#bkmk_enabletranslations)  |
 |Syntex eSignature                | [Set up Syntex eSignature](esignature-setup.md)  |
 |Optical character recognition    | [Set up optical character recognition](ocr.md)  |
-|Microsoft 365 Archive (Preview)  | [Set up Microsoft 365 Archive](archive/archive-setup.md)  |
+|Microsoft 365 Archive            | [Set up Microsoft 365 Archive](archive/archive-setup.md)  |
 |Microsoft 365 Backup (Preview)   | [Set up Microsoft 365 Backup](backup/backup-setup.md)  |
