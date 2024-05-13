@@ -93,7 +93,8 @@ If you've enabled the corresponding policies, we may allow users to submit scree
 - Log files: Additional log files that aren't included in Overview of diagnostic log files for Office - Microsoft Support and that may include the user’s name or contents of the user’s files. Examples: logs that include the element of the customer’s file that is preventing the file from saving.
 
 > [!NOTE]
-> For information about what feedback data is collected about Microsoft Copilot with Microsoft 365 apps, see [Providing feedback about Microsoft Copilot with Microsoft 365 apps](https://support.microsoft.com/topic/c481c26a-e01a-4be3-bdd0-aee0b0b2a423).
+> - For information about what feedback data is collected about Microsoft Copilot with Microsoft 365 apps, see [Providing feedback about Microsoft Copilot with Microsoft 365 apps](https://support.microsoft.com/topic/c481c26a-e01a-4be3-bdd0-aee0b0b2a423).
+> - For information about log files for Microsoft Teams, see [Configure log files for monitoring and troubleshooting in Teams](/microsoftteams/log-files).
 
 ## How can I see my user's feedback?
 
