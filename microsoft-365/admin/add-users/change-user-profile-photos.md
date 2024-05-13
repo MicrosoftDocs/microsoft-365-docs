@@ -34,7 +34,7 @@ Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?l
 This article explains how to manage profile photos and photo update settings on user accounts and [Microsoft 365 Groups](../create-groups/office-365-groups.md).
 
 > [!TIP]
-> If you need help with the steps in this article, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
+> If you need help with the steps in this article, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/p/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
 
 ## Before you begin
 
@@ -228,7 +228,7 @@ If the user has no photo, the commands return the error: `Exception of type 'Mic
 Photo update settings in your organization include controlling the environment where user profile photos can be updated and which roles are required.
 
 > [!IMPORTANT]
-> When you update photo update settings, it can take up to **24 hours** for the changes to reflect throughout Microsoft 365. For example, if you block cloud user profile photo updates, it can take up to 24 hours before the users are blocked from making updates.
+> When you change photo update settings, it can take up to 24 hours for the changes to reflect throughout Microsoft 365. For example, if you block cloud user profile photo updates, it can take up to 24 hours before the users are blocked from making updates.
 
 ### Select where user profile photos can be edited using Microsoft Graph
 
