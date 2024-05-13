@@ -51,6 +51,9 @@ To create a new autofill column, follow these steps:
 
 After the autofill setting on a column is saved, any new files uploaded to the library are automatically processed, and the extracted information is saved to the corresponding columns.
 
+> [!NOTE]
+> AI-generated content might be incorrect. Be sure to check column results.
+
 ## Update an existing autofill column
 
 To update an autofill, follow these steps:
@@ -83,6 +86,21 @@ To turn off autofill on a specific column, follow these steps:
 
 |Column type  |Starter prompt  |Example   |
 |---------|---------|---------|
-|Single line of text     | \<insert the question here>? The answer needs to be fewer than 255 characters. If no proper answer is found, respond with \<insert default response>.  | Who is the sales representative? The answer needs to be fewer than 255 characters. If no proper answer is found, respond with None.   |
-|Single line of text     | \<insert the question here>? If no proper answer is found, respond with \<insert default response>. | What change is happening with the insurance network participation? If no proper answer is found, respond with None.   |
+|Text     | \<insert the question here>? The answer needs to be fewer than 255 characters. If no proper answer is found, respond with \<insert default response>.  | Who is the sales representative? The answer needs to be fewer than 255 characters. If no proper answer is found, respond with None.   |
+|Text     | \<insert the question here>? If no proper answer is found, respond with \<insert default response>. | What change is happening with the insurance network participation? If no proper answer is found, respond with None.   |
 |Multiple lines of text     | \<insert the question here>? If no proper answer is found, respond with \<insert default response>.   | Who are the parties listed in the contract? If no proper answer is found, respond with None.   |
+
+
+#### Text
+
+|Starter prompt  |Example   |
+|---------|---------|
+| \<insert the question here>? The answer needs to be fewer than 255 characters. If no proper answer is found, respond with \<insert default response>.  | Who is the sales representative? The answer needs to be fewer than 255 characters. If no proper answer is found, respond with None.   |
+|Single line of text     | \<insert the question here>? If no proper answer is found, respond with \<insert default response>. | What change is happening with the insurance network participation? If no proper answer is found, respond with None.   |
+
+
+#### Multiple lines of text
+
+|Starter prompt  |Example   |
+|---------|---------|
+| \<insert the question here>? The answer needs to be fewer than 255 characters. If no proper answer is found, respond with \<insert default response>.  | Who is the sales representative? The answer needs to be fewer than 255 characters. If no proper answer is found, respond with None.   |
