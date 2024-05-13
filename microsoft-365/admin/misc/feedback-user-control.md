@@ -90,7 +90,7 @@ If you've enabled the corresponding policies, we may allow users to submit scree
 - Screenshots: Captures of the user’s screen at the time they submitted feedback. Example: the screen including the dialog box from which the user is submitting feedback.
 - Attachments: Files the user can choose to attach to their feedback. Example: the file they were working on when they encountered a problem.
 - Content samples: Portions of content from the customer’s document or interactions with Microsoft services. Example: the prompt the user sent to an AI service and the response the user received back from that AI service.
-- Log files: Additional log files that aren't included in Overview of diagnostic log files for Office - Microsoft Support and that may include the user’s name or contents of the user’s files. Examples: logs that include the element of the customer’s file that is preventing the file from saving.
+- Log files: Additional log files that aren't included in [diagnostic log files for Office](https://support.microsoft.com/office/fba86aac-70dc-4858-ae1f-ec2034346cdf) and that may include the user’s name or contents of the user’s files. Examples: logs that include the element of the customer’s file that is preventing the file from saving.
 
 > [!NOTE]
 > - For information about what feedback data is collected about Microsoft Copilot with Microsoft 365 apps, see [Providing feedback about Microsoft Copilot with Microsoft 365 apps](https://support.microsoft.com/topic/c481c26a-e01a-4be3-bdd0-aee0b0b2a423).
