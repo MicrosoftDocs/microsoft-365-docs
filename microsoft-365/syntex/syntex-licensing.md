@@ -47,7 +47,7 @@ Pay-as-you-go currently supports the following Syntex services:
 - Translation
 - Syntex eSignature
 - Optical character recognition
-- Microsoft 365 Archive (Preview)
+- Microsoft 365 Archive
 - Microsoft 365 Backup (Preview)
 
 More Syntex services will be added as they become available.

@@ -188,7 +188,7 @@ Both structured and freeform models use Microsoft Power Apps AI Builder to creat
 
 [Learn more about using the OCR service in Microsoft Syntex.](ocr-overview.md)
 
-### Microsoft 365 Archive (Preview)
+### Microsoft 365 Archive
 
 :::row:::
    :::column span="":::

@@ -70,6 +70,9 @@ Currently, autofill columns are not available for the following column data type
 
 - Document changes are captured only if the file is reprocessed, which must be done manually by the user.
 
+> [!NOTE]
+> AI-generated content might be incorrect. Be sure to check column results.
+
 ## Responsible AI FAQs
 
 An AI system includes not only the technology, but also the people who use it, the people affected by it, and the environment in which it's deployed. Microsoft's Responsible AI FAQs are intended to help you understand how AI technology works, the choices system owners and users can make that influence system performance and behavior, and the importance of thinking about the whole system, including the technology, the people, and the environment. You can use Responsible AI FAQs to better understand specific AI systems and features that Microsoft develops.

@@ -81,7 +81,7 @@ The following Microsoft Syntex products are currently available:
 - Document translation
 - Syntex eSignature
 - Optical character recognition
-- Microsoft 365 Archive (Preview)
+- Microsoft 365 Archive
 - Microsoft 365 Backup (Preview)
 
 The following tags are available:
