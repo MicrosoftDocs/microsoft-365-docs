@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 03/18/2024
+ms.date: 05/13/2024
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -26,26 +26,13 @@ When an organization is considering relying on Microsoft 365 for communication a
 
 ## What personal data does Microsoft 365 collect and for what purposes does Microsoft 365 use this data?
 
-Microsoft processes the personal data in Microsoft 365 to deliver the agreed-upon services defined in the [Online Services Terms](https://go.microsoft.com/fwlink/p/?linkid=2050263) and for the purposes determined by the data controller obtaining the service. Microsoft 365, as an integrated set of cloud-based services, processes various types of personal data as part of delivering the services. This personal data includes:
-
-- **Content** Your meetings and conversations chats, voicemail, shared files, recordings, and transcriptions.
-- **Profile Data** Data that is shared within your company about you. Examples include your E-mail address, profile picture, and phone number.
-- **Call History** A detailed history of the phone calls you make, which allows you to go back and review your own call records.
-- **Call Quality data** Details of meetings and call data are available to your system administrators, which allows your administrators to diagnose issues related to poor call quality and service usage.
-- **Support/Feedback data** Information related to troubleshooting tickets or feedback submission to Microsoft.
-- **Diagnostic and service data** Diagnostic data related to service usage. This personal data allows Microsoft to deliver the service (troubleshoot, secure, and update the product and monitor performance) as well as perform some internal business operations, such as:
-  - Determine revenue
-  - Develop metrics
-  - Determine service usage
-  - Conduct product and capacity planning
+Microsoft processes the personal data in Microsoft 365 to deliver the services and for the purposes outlined in the [Product Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all) and the [Microsoft Online Services Data Protection Addendum (DPA)](https://aka.ms/dpa). Microsoft 365, as an integrated set of cloud-based services, processes various types of personal data as part of delivering the services.
 
 To the extent Microsoft 365 processes personal data with Microsoft's legitimate business operations, Microsoft is an independent data controller for such use and is responsible for complying with all applicable laws and controller obligations.
 
 ## Legal Basis of Processing  
 
-Our customers are controllers for the data provided to Microsoft, as set forth in the [Online Services Terms](https://go.microsoft.com/fwlink/p/?linkid=2050263), and they determine legal bases of processing. Microsoft, in turn, processes the data on the customers' instructions, as a processor.
-
-To the extent Microsoft processes personal data with its own legitimate business operations, as described in the [Online Services Terms](https://go.microsoft.com/fwlink/p/?linkid=2050263), Microsoft is an independent controller for such processing, the legal basis of which is legitimate interests. "Microsoft's legitimate business operations" consist of the following, each as incident to delivery of Microsoft 365 to the customer: (1) billing and account management; (2) compensation (for example, calculating employee commissions and partner incentives); (3) internal reporting and modeling (for example, forecasting, revenue, capacity planning, product strategy); (4) combatting fraud, cybercrime, or cyber-attacks that may affect Microsoft or Microsoft Products; (5) improving the core functionality of accessibility, privacy, or energy-efficiency; and (6) financial reporting and compliance with legal obligations.
+Our customers are controllers for the data provided to Microsoft, as set forth in the [Product Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all) and the [Microsoft Online Services Data Protection Addendum (DPA)](https://aka.ms/dpa), and they determine legal basis of processing. Microsoft, in turn, processes the data on the customers' instructions, as a processor.
 
 ## What third parties have access to personal data?
 
@@ -59,9 +46,7 @@ If law enforcement contacts Microsoft with a demand, Microsoft will attempt to r
 
 ## Where does Microsoft 365 transfer and store personal data?
 
-Personal data is transferred and stored as set forth in the [Online Service Terms](https://go.microsoft.com/fwlink/p/?linkid=2050263).
-
-For transfers of personal data from the EEA, EU, Switzerland, and the UK, Microsoft is certified to the EU-U.S. and Swiss-U.S. Privacy Shield Frameworks and the commitments they entail, although Microsoft doesn't rely on the EU-U.S. Privacy Shield Framework as a legal basis for transfers of Personal Data in light of the judgment of the Court of Justice of the EU in Case C-311/18.
+Personal data is transferred and stored as set forth in the [Online Service Terms](https://go.microsoft.com/fwlink/p/?linkid=2050263), the [Product Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all) and the [Microsoft Online Services Data Protection Addendum (DPA)](https://aka.ms/dpa).
 
 We have information on the [Microsoft 365 Data Residency overview and definitions](m365-dr-overview.md) if you need to learn more.
 
@@ -94,3 +79,9 @@ If you have a privacy concern, complaint or question for the Microsoft Chief Pri
 [Microsoft Teams privacy](/microsoftteams/teams-privacy)
 
 [Overview of privacy controls for Microsoft 365 Apps for enterprise](/deployoffice/privacy/overview-privacy-controls)
+
+[Online Service Terms](https://go.microsoft.com/fwlink/p/?linkid=2050263)
+
+[Product Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all)
+
+[Microsoft Online Services Data Protection Addendum (DPA)](https://aka.ms/dpa)

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 03/18/2024
+ms.date: 05/13/2024
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -22,15 +22,11 @@ description: Learn about security for Microsoft 365 for enterprise.
 
 # Security for Microsoft 365 for enterprise
 
-Microsoft 365 for enterprise follows all the security best practices and procedures such as service-level security through defense-in-depth, customer controls within the services, security hardening, and operational best practices. For full details, see the [Microsoft Trust Center](https://microsoft.com/trustcenter).
+Microsoft 365 for enterprise follows all the security best practices and procedures such as service-level security through defense-in-depth, customer controls within the services, security hardening, and operational best practices. For full details, see the [Microsoft Trust Center](https://microsoft.com/trustcenter) and [Microsoft Compliance](/compliance).
 
 ## Trustworthy by design
 
 Microsoft 365 is designed and developed in compliance with the Microsoft Trustworthy Computing Security Development Lifecycle (SDL), which is described at [Microsoft Security Development Lifecycle (SDL)](https://www.microsoft.com/sdl/default.aspx). The first step in creating a more secure unified communications, collaboration, and productivity system was to design threat models and test each feature as it was designed. Multiple security-related improvements were built into the coding process and practices. Build-time tools detect buffer overruns and other potential security threats before the code is checked in to the final product. It's impossible to design against all unknown security threats. No system can guarantee complete security. However, because product development embraced secure design principles from the start, Microsoft 365 incorporates industry standard security technologies as a fundamental part of its architecture.
-
-## Trustworthy by default
-
-Network communications in Microsoft 365 are encrypted by default. By requiring all servers to use certificates and by using OAUTH, all Microsoft 365 data is protected on the network.
 
 ## Security Framework for Microsoft 365
 

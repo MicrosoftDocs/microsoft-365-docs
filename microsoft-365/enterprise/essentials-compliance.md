@@ -24,15 +24,15 @@ description: Learn about compliance for Microsoft 365 for enterprise.
 
 Most organizations have business or legal requirements that govern how data is used, shared, and retained. Some organizations also have data residency requirements or regulatory requirements that restrict communication between certain users and groups.
 
-Microsoft offers a [comprehensive set of compliance offerings](/compliance) to help your organization comply with national, regional, and industry-specific requirements governing the collection and use and data.
+[Microsoft Compliance](/compliance) contains a plethora of information to help organizations understand how we as a cloud service provider can satisfy those requirements. See the [comprehensive list of compliance offerings](/compliance/regulatory/offering-home) for information detailing how Microsoft complies with national, regional, and industry-specific requirements governing the collection and use and data.
 
 ## Shared responsibility model
 
-Microsoft works to ensure that we are compliant with industry and international standards, and customers are responsible for ensuring their data within the [Microsoft Cloud](https://www.microsoft.com/en-us/trust-center/compliance/compliance-overview#compliance) is protected in a manner that is compliant with the standards and regulations imposed on the customer.
+Security and compliance in the cloud is a [shared responsibility](/compliance/assurance/assurance-risk-assessment-guide) and the division of those responsibilities between the cloud service provider and customer depends on the cloud offering utilized. Microsoft works to ensure that we are compliant with industry and international standards, and customers are responsible for ensuring their data within the [Microsoft Cloud](https://www.microsoft.com/en-us/trust-center/compliance/compliance-overview#compliance) is protected in a manner that is compliant with the standards and regulations imposed on the customer.
 
 ## Inheritance of compliance features and settings
 
-Microsoft 365 apps are built on your existing infrastructure and, depending on the app, inherit compliance features and settings from Microsoft Teams, Exchange Online, SharePoint Online, Azure, and Viva Engage. In addition, all Microsoft 365 services are built on the [Microsoft Graph API](/graph/overview).
+Microsoft 365 apps, depending on the app, inherit compliance features and settings from Microsoft Teams, Exchange Online, SharePoint Online, Azure, and Viva Engage. In addition, all Microsoft 365 services are built on the [Microsoft Graph API](/graph/overview).
 
 For detailed information on each service, see:
 
@@ -53,17 +53,19 @@ For detailed information on each service, see:
 ## General Data Protection Regulation (GDPR)
 
 All Microsoft 365 apps and services support compliance with EU General Data Protection Regulation (GDPR) requirements.
-For detailed information, see [Microsoft Viva Privacy](/Viva/viva-privacy)
+For detailed information, see [the GDPR Overview](/compliance/regulatory/gdpr)
 
 ## Data residency
 
 Multi-Geo is Microsoft 365 feature that allows organizations to span their storage over multiple geo locations and specify where to store users' data. For multinational customers with data residency requirements, you can use this feature to ensure that each user's data is stored in the geo location necessary for compliance. For more info about this feature, see [Multi-Geo Capabilities in OneDrive and SharePoint](/office365/enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365/).
 
-Features such as file sync and mobile device management work normally in a multi-geo environment. There's no special configuration or management needed. The multi-geo experience for your users has minimal difference from a single-geo configuration. For details, see [User experience in a multi-geo environment](/office365/enterprise/multi-geo-user-experience/).
-
 For more information about Microsoft 365 Multi-Geo, see [Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo).
 
-## Data lifecycle management
+## Microsoft Purview
+
+[Microsoft Purview](/purview/purview) is a family of data governance, risk, and compliance solutions that can help your organization govern, protect, and manage your entire data estate.
+
+### Data lifecycle management
 
 Use data lifecycle management capabilities in Microsoft Purview to govern your OneDrive and SharePoint content for compliance or regulatory requirements. The following table describes the capabilities to help you keep the content you need you and delete what you don't need.
 
@@ -71,7 +73,7 @@ Use data lifecycle management capabilities in Microsoft Purview to govern your O
 |:------|:------------|:----------------------------|
 |[Retention policies and retention labels](/microsoft-365/compliance/retention)<br /><br />[Learn about retention for SharePoint and OneDrive](/microsoft-365/compliance/retention-policies-sharepoint) | Retain or delete content with policy management for SharePoint and OneDrive documents | [Create and configure retention policies](/microsoft-365/compliance/create-retention-policies) <br /><br /> [Create retention labels for exceptions to your retention policies](/microsoft-365/compliance/create-retention-labels-information-governance)|
 
-### Deleted users' data
+#### Deleted users' data
 
 When a user leaves your organization and you've deleted that user's account, what happens to the user's data? When considering data retention compliance, determine what needs to happen with the deleted user's data. For some organizations, retaining deleted user data could be important continuity and preventing critical data loss.
 
@@ -79,7 +81,7 @@ If a user's Microsoft 365 account is deleted, their OneDrive files are preserved
 
 By default, when a user is deleted, the user's manager is automatically given access to the user's OneDrive. To change this, see [OneDrive retention and deletion](/onedrive/retention-and-deletion).
 
-## Information protection
+### Information protection
 
 Microsoft Purview Information Protection capabilities help you discover, classify, and protect sensitive information in OneDrive and SharePoint. The following table describes these capabilities. Consider if you want to implement any of these capabilities as part of your OneDrive and SharePoint rollout.
 
@@ -90,7 +92,7 @@ Microsoft Purview Information Protection capabilities help you discover, classif
 |[Sensitivity labels](/microsoft-365/compliance/sensitivity-labels)| A single solution across apps, services, and devices to label and protect your data as it travels inside and outside your organization. <br /><br /> Sensitivity labels can be used to protect files themselves or individual SharePoint sites and teams.|[Enable sensitivity labels for Office files in SharePoint and OneDrive](/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files) <br /><br /> [Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 Groups, and SharePoint sites](/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)|
 |[Data loss prevention](/microsoft-365/compliance/dlp-learn-about-dlp)| Helps prevent unintentional sharing of sensitive items. | [Get started with the default DLP policy](/microsoft-365/compliance/get-started-with-the-default-dlp-policy)|
 
-## File sync
+### File sync
 
 The OneDrive sync app has policies that you can use to help you maintain a compliant environment. Consider configuring these policies before you roll out SharePoint and OneDrive.
 
@@ -102,11 +104,7 @@ The OneDrive sync app has policies that you can use to help you maintain a compl
 |Prevent users from syncing personal OneDrive accounts|[DisablePersonalSync](/onedrive/use-group-policy#prevent-users-from-syncing-personal-onedrive-accounts)|[DisablePersonalSync](/onedrive/deploy-and-configure-on-macos#disablepersonalsync)|
 |Exclude specific kinds of files from being uploaded|[EnableODIgnoreListFromGPO](/onedrive/use-group-policy#exclude-specific-kinds-of-files-from-being-uploaded)|[EnableODIgnore](/onedrive/deploy-and-configure-on-macos#enableodignore)|
 
-## Microsoft Purview
-
-[Microsoft Purview](/purview/purview) is a family of data governance, risk, and compliance solutions that can help your organization govern, protect, and manage your entire data estate.
-
-## Information barriers
+### Information barriers
 
 Microsoft Purview Information Barriers is a compliance solution that allows you to restrict two-way communication and collaboration between groups and users in Microsoft Teams, SharePoint, and OneDrive. Often used in highly regulated industries, information barriers can help to avoid conflicts of interest and safeguard internal information between users and organizational areas.
 
