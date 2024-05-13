@@ -53,7 +53,7 @@ For detailed information on each service, see:
 ## General Data Protection Regulation (GDPR)
 
 All Microsoft 365 apps and services support compliance with EU General Data Protection Regulation (GDPR) requirements.
-For detailed information, see [the GDPR Overview](/compliance/regulatory/gdpr)
+For detailed information, see [the GDPR Overview](/compliance/regulatory/gdpr).
 
 ## Data residency
 
