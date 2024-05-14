@@ -21,7 +21,7 @@ description: Learn how to use a prebuilt sensitive information model in Microsof
 
 # Use a prebuilt model to detect sensitive information from documents in Microsoft Syntex
 
-The prebuilt *sensitive information model* analyzes and detects key information from documents. The model recognizes documents in various formats and [detects sensitive information](/azure/ai-services/language-service/personally-identifiable-information/concepts/entity-categories#entity-categories), such as personal identification numbers, personal physical and email addresses, phone numbers, and personal financial or health information. This model can also extract key sensitive information when selected.
+The prebuilt *sensitive information model* analyzes and detects key information from documents, and then optionally extracts the information. The model recognizes documents in various formats and [detects sensitive information](/azure/ai-services/language-service/personally-identifiable-information/concepts/entity-categories), such as personal identification numbers, personal physical and email addresses, phone numbers, and personal financial or health information.
 
 ## Set up a sensitive information model
 
@@ -30,7 +30,7 @@ To create and configure a sensitive information model, follow these steps:
 1. Follow the instructions in [Create a model in Syntex](create-syntex-model.md#set-up-a-prebuilt-model) to create a prebuilt sensitive information model. Then continue with the following steps to complete your model.
 
     > [!NOTE]
-    > You do not need to associate a content type for this prebuilt model.
+    > When you create a sensitive information model, you will notice that, unlike other models, you don't have the option to select a content type or to apply sensitivity or retention labels. If you need to associate a content type, you'll need to create a different model type. The ability to apply security labels will be provided in a future release.
 
 2. On the **Models** page, in the **Add entities to detect** section, select **Add entities**.
 
@@ -55,11 +55,11 @@ To create and configure a sensitive information model, follow these steps:
     > [!NOTE]
     > This model does not detect or extract information from encrypted files.
 
-6. On the **Apply model** page, select **+Add library**, and choose the library you want to add this model to, and then select **Add**. 
+6. On the **Apply model** page, select **+Add library**, and choose the library you want to add this model to, and then select **Add**.
 
     ![Screenshot of the Apply model page.](../media/content-understanding/prebuilt-sensitive-apply-model-2.png)
 
-7. In the document library, entities that are detected are displayed in one column and entities that are selected for extraction are displayed in another column per entity.
+7. In the document library, entities that are detected are displayed in one column and entities that are selected for extraction are displayed in their respective columns.
 
     ![Screenshot of the library showing entities detected.](../media/content-understanding/prebuilt-sensitive-entities-extracted.png)
 
