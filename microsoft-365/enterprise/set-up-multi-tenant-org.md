@@ -1,5 +1,5 @@
 ---
-title: Set up a multitenant org in Microsoft 365 (Preview)
+title: Set up a multitenant org in Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
@@ -7,6 +7,7 @@ ms.date: 08/17/2023
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
+ms.subservice: multi-tenant
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -15,10 +16,7 @@ f1.keywords:
 description: Learn how to set up a multitenant org in Microsoft 365.
 ---
 
-# Set up a multitenant org in Microsoft 365 (Preview)
-
-> [!NOTE]
-> Multitenant organizations in Microsoft 365 is available in [targeted release](/microsoft-365/admin/manage/release-options-in-office-365).
+# Set up a multitenant org in Microsoft 365
 
 You can set up a multitenant organization or add tenants to an existing one in the Microsoft 365 admin center.
 

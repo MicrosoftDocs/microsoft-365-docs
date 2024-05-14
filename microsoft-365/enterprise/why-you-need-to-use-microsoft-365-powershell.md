@@ -7,6 +7,7 @@ ms.date: 03/11/2024
 audience: ITPro
 ms.topic: overview
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 ms.collection: 
 - Ent_O365

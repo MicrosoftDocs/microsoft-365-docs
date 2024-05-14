@@ -8,6 +8,7 @@ ms.date: 10/10/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
+ms.subservice: network
 ms.localizationpriority: medium
 search.appverid:
 - MET150
