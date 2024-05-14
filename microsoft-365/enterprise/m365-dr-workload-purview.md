@@ -5,6 +5,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 ms.service: microsoft-365-enterprise
+ms.subservice: advanced-data-residency
 ms.topic: article
 f1.keywords:
 - NOCSH
