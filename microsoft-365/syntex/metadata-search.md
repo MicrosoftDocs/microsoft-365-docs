@@ -38,10 +38,17 @@ You can now use content query to search for metadata in any of the queriable col
 - 'TaxonomyFieldType':
 - 'TaxonomyFieldTypeMulti':
 
+Not all columns that show up in a document library are queriable. To learn more about queriable columns in SharePoint, see [List columns or Site columns Which one to choose?](/microsoft-365/community/list-column-or-site-column-which-one-to-choose).
+
+When users licensed for content query add new document libraries within a site, all of the library columns of the types previously listed are queriable.
+
+On existing libraries, when you select the content query icon (![Screenshot of the metadata search icon.](../media/content-understanding/metadata-search-icon.png)), the service will start a workflow to make all of the library columns of the types previously mentioned  queriable as well. This process can take up to five days to complete.
+
+<!---
 **New document libraries** — For new libraries, all of the columns are available in content query.
 
 **Existing document libraries** — For existing libraries, all of the queriable columns won't be immediately available. You need to select the content query icon (![Screenshot of the metadata search icon.](../media/content-understanding/metadata-search-icon.png)) in the existing library. Then after five days, check the library again and all of the columns should be available.
-
+--->
 > [!NOTE]
 > This feature is available for users who have Syntex [per-user](set-up-content-understanding.md) or [pay-as-you-go](syntex-azure-billing.md) licensing.
 
