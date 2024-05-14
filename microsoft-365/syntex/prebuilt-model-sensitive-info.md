@@ -44,22 +44,22 @@ To create and configure a sensitive information model, follow these steps:
 
     ![Screenshot of the Configure detection page.](../media/content-understanding/prebuilt-sensitive-configure-detection.png)
 
-4. On the **Configure extraction** page, you see the list of sensitive information entities you want to detect. Select the entities you want to extract, and then select **Next**.
+4. On the **Configure extraction** page, you see the list of sensitive information entities you want to detect. Select the entities you want to extract into columns, and then select **Next**.
 
     ![Screenshot of the Configure extraction page.](../media/content-understanding/prebuilt-sensitive-select-extract.png)
 
-5. On the **Test model** page, select **+Add files** to select sample files to test your model.
+5. On the **Test model** page, you test the model to make sure it detects and extracts the entities you want. Select **+Add files** to select sample files to test your model.
 
     ![Screenshot of the Test model page.](../media/content-understanding/prebuilt-sensitive-test-model-2.png)
 
     > [!NOTE]
     > This model does not detect or extract information from encrypted files.
 
-6. On the **Apply model** page, select **+Add library**, and choose the library you want to add this model to, and then select **Add**.
+6. On the **Apply model** page, select **+Add library**, and choose the library you want to apply this model to, and then select **Add**.
 
     ![Screenshot of the Apply model page.](../media/content-understanding/prebuilt-sensitive-apply-model-2.png)
 
-7. In the document library, entities that are detected are displayed in one column and entities that are selected for extraction are displayed in their respective columns.
+7. In the document library, entities that are detected are displayed in the **Extracted entities** column and entities that are selected for extraction are displayed in their respective columns.
 
     ![Screenshot of the library showing entities detected.](../media/content-understanding/prebuilt-sensitive-entities-extracted.png)
 
