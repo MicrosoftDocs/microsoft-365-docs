@@ -44,7 +44,7 @@ To create and configure a sensitive information model, follow these steps:
 
     ![Screenshot of the Configure detection page.](../media/content-understanding/prebuilt-sensitive-configure-detection.png)
 
-4. On the **Configure extraction** page, you see the list of sensitive information entities you want to detect. Select the entities you want to extract into columns, and then select **Next**.
+4. On the **Configure extraction** page, you see the list of sensitive information entities you chose to detect. Select the entities you want to extract into columns, and then select **Next**.
 
     ![Screenshot of the Configure extraction page.](../media/content-understanding/prebuilt-sensitive-select-extract.png)
 
@@ -59,7 +59,7 @@ To create and configure a sensitive information model, follow these steps:
 
     ![Screenshot of the Apply model page.](../media/content-understanding/prebuilt-sensitive-apply-model-2.png)
 
-7. In the document library, entities that are detected are displayed in the **Extracted entities** column and entities that are selected for extraction are displayed in their respective columns.
+7. In the document library, entities that are detected are displayed in the **Entities detected** column, and entities that are selected for extraction are displayed in their respective columns.
 
     ![Screenshot of the library showing entities detected.](../media/content-understanding/prebuilt-sensitive-entities-extracted.png)
 
