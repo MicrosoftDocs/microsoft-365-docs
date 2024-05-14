@@ -55,11 +55,11 @@ To create a new autofill column, follow these steps:
 After the autofill setting on a column is saved, any new files uploaded to the library are automatically processed, and the extracted information is saved to the corresponding columns.
 
 > [!NOTE]
-> AI-generated content might be incorrect. Be sure to check column results.
+> AI-generated content might be incorrect. Be sure to check the column results.
 
 ## Update an existing autofill column
 
-To update an autofill, follow these steps:
+To update an autofill column, follow these steps:
 
 1. In the document library, select the column, and then select **Column settings** > **Edit**.
 
@@ -89,13 +89,16 @@ To turn off autofill on a specific column, follow these steps:
 
 |Column type  |Suggested prompt  |Example   |
 |---------|---------|---------|
-|**Text**     | \<insert the question here>? The answer needs to be fewer than 255 characters. If no proper answer is found, respond with \<insert default response>.  | Who is the broker listed in the agreement? The answer needs to be fewer than 255 characters. If no proper answer is found, respond with None.   |
-|**Text**     | \<insert the question here>? If no proper answer is found, respond with \<insert default response>. | What is the current status of the project milestone? If no proper answer is found, respond with Status pending review.   |
-|**Multiple lines of text**     | \<insert the question here>? If no proper answer is found, respond with \<insert default response>.   | What is the description of the project scope? If no proper answer is found, respond with None found.   |
-|**Number**      | \<insert the question here>? Respond with a valid number. If no proper answer is found, respond with \<insert default response>.       | What is the total number of hours agreed upon? Respond with a valid number. If no proper answer is found, respond with Not applicable.       |
+|**Text**     | \<insert the question here>? The answer needs to be fewer than 255 characters. If no proper answer is found, respond with \<insert default response>.  | Who is the broker listed in the agreement? The answer needs to be fewer than 255 characters. If no proper answer is found, respond with "None."   |
+|**Text**     | \<insert the question here>? If no proper answer is found, respond with \<insert default response>. | What is the current status of the project milestone? If no proper answer is found, respond with "Status pending review."   |
+|**Multiple lines of text**     | \<insert the question here>? If no proper answer is found, respond with \<insert default response>.   | What is the description of the project scope? If no proper answer is found, respond with "None found."   |
+|**Number**      | \<insert the question here>? Respond with a valid number. If no proper answer is found, respond with \<insert default response>.       | What is the total number of hours agreed upon? Respond with a valid number. If no proper answer is found, respond with "Not applicable."       |
 |**Yes/No**     | \<insert the question here>? Respond with "Yes" or "No" and only "Yes" or "No." If the documents don't provide enough information, leave the answer blank.      | Is the tenant required to have renter's insurance? Respond with "Yes" or "No" and only "Yes" or "No." If the documents don't provide enough information, leave the answer blank.      |
-|**Date and time**      | \<insert the question here>? Format the answer as a valid C# datetime. If no proper answer is found, respond with \<insert default response>.      | What is the deadline for the quarterly financial report submission? Format the answer as a valid C# datetime. If no proper answer is found, respond with No deadline set.      |
+|**Date and time**      | \<insert the question here>? Format the answer as a valid C# datetime. If no proper answer is found, respond with \<insert default response>.      | What is the deadline for the quarterly financial report submission? Format the answer as a valid C# datetime. If no proper answer is found, respond with "No deadline set."      |
 |**Choice**      | Make a decision about this document based on the following categories: \<Choice 1>, \<Choice 2> and \<Choice 3>. Reply with one of the choices only. Reply with "None of the above" if none of the choices fits.      | Make a decision about this sales agreement based on the following categories: Signatory Approval, Legal Review, and Finalize Sale. Reply with one of the choices only. Reply with "None of the above" if none of the choices fits.      |
 |**Choice**      | Make a decision about this document based on the following categories: \<Choice 1> \<insert description for choice 1>, \<Choice 2> \<insert description for choice 2>, and \<Choice 3> \<insert description for choice 3>. Reply with one of the choices only. Reply with "None of the above" if none of the choices fits.      | Make a decision about this document based on the following categories: Approval Needed: Requires managerial review and approval before proceeding, Information Only: For informational purposes and doesn't require any action, and Urgent Update: Contains time-sensitive information that requires immediate attention and updating. Reply with one of the choices only. Reply with "None of the above" if none of the choices fits.      |
-|**Hyperlink**      | \<insert the question here>? Reply with the name formatted as a valid URL.      | Who is the insurance provider?  Reply the name formatted as a valid URL.      |
+|**Hyperlink**      | \<insert the question here>? Reply with the name formatted as a valid URL.      | Who is the insurance provider?  Reply with the name formatted as a valid URL.      |
 |**Currency**      | \<insert the question here>? Reply in a valid U.S. currency format. If the documents don't provide enough information, leave the answer blank.      | What is the total cost of the project as detailed in the invoice? Reply in a valid U.S. currency format. If the documents don't provide enough information, leave the answer blank.      |
+
+> [!NOTE]
+> To see the column types that are currently available for autofill, see [Supported column data types](autofill-overview.md#supported-column-data-types).
