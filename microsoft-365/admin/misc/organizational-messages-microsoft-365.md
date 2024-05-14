@@ -61,7 +61,7 @@ Organizational messages’ centralized experience within Microsoft 365 admin cen
 
 Before working with organizational messages, make sure your team satisfies the following requirements:
 
-- **Tenant** ensure your IT admin or others who work with Microsoft Intune enable all [organizational message policy requirements](/mem/intune/remote-actions/organizational-messages-prerequisites#policy-requirements).
+- **Tenant** see [Setting tenant policies](#setting-tenant-policies).
 
 - **Authors** anyone in your organization who wants to create messages must have one of these following admin roles assigned to them within Microsoft 365 admin center:
 
@@ -236,6 +236,68 @@ For some time-sensitive communications, admins and other communicators might nee
 
 :::image type="content" source="../../media/OM-urgentMessages_annotated.png" alt-text="Screenshot that highlights the button to send an urgent message.":::
 
+## Setting tenant policies
+
+>[!NOTE]
+> If you recently onboarded your tenant to Microsoft Entra ID, it can take 36 to 64 hours before you're able to use the organizational messages features.
+
+There are certain policies in [Microsoft Intune](https://intune.microsoft.com) that will block the delivery of organizational messages to your end users if not configured properly. This section describes how to adjust all policy settings for your tenant so that delivery is always allowed and works as intended.
+
+### General Instructions
+
+To make policy changes on your tenant, your Intune admin must:
+
+1. Sign in to the Microsoft Endpoint Manager admin center for your tenant.
+1. Configure the policies described below using a Microsoft Intune device restrictions profile template or the settings catalog.
+1. Make sure to adjust these policies in all new and existing policies that are targeted at end users and devices that may receive organizational messages.
+1. Enable Organizational Messages Policy
+
+>[!NOTE]
+> This policy is required for devices running [Windows 11](https://support.microsoft.com/topic/november-29-2022-kb5020044-os-build-22621-900-preview-43f0bdf9-0b75-4110-bab3-3bd2433d84b3), [version 22H2](https://support.microsoft.com/topic/november-29-2022-kb5020044-os-build-22621-900-preview-43f0bdf9-0b75-4110-bab3-3bd2433d84b3), [build 10.0.22621.900](https://support.microsoft.com/topic/november-29-2022-kb5020044-os-build-22621-900-preview-43f0bdf9-0b75-4110-bab3-3bd2433d84b3) and later. If you don't enable this policy, these devices can't receive organizational messages. The policy isn't required on devices running earlier builds.
+
+1. Go to **Settings catalog** > **Experience** > **Enable delivery of organizational messages (User)**.
+1. To enable delivery of organizational messages, switch the toggle to **Enabled**.
+
+### Enable Experiences Policies
+
+>[!NOTE]
+> If you use the Windows 11 MDM security baseline, you will need to change the required policies to **Not configured**. These policies control organizational messages configured by your team as well as other messages coming directly from Microsoft. To continue blocking messages coming directly from Microsoft as defined in the Windows 11 MDM security baseline, [configure the Microsoft messaging policy](/mem/intune/remote-actions/organizational-messages-prerequisites#microsoft-messaging-policy).
+
+If using Settings catalog, follow these steps:
+
+(This can be in a new or existing Windows configuration profile.)
+
+1. Go to **Devices** > **Windows** > **Configuration profiles**.
+1. Select **Settings catalog**.
+1. Select **Add Settings**.
+1. In Settings picker, select **Experience category**.
+1. In configuration settings, ensure the following are selected or set to ‘Allow’:
+    - Add Allow Windows Spotlight (User)
+    - Allow Tailored Experiences with Diagnostic Data (User)
+    - Add Third Party Suggestions in Windows Spotlight (User)
+    - Add Windows Consumer Features
+    - Add Allow Windows Spotlight on Action Center (User)
+    - Add Allow Windows Tips
+    - Add Configure Windows Spotlight on Lock Screen (User)
+1. In configuration settings, ensure the following are de-selected:
+    - Disable Cloud Optimized Content
+1. In configuration settings, ensure the following are selected or set to ‘Allow’:
+    - Enable delivery of organizational messages (User)
+
+If using Device Restrictions, follow these steps:
+
+(This can be in a new or existing Windows configuration profile.)
+
+1. Go to **Devices** > **Windows** > **Configuration profiles**.
+1. In a new or existing template profile, select **Device restrictions** > **Windows Spotlight**.
+1. Ensure or Select ‘Not configured’ is set for the following:
+    - Windows Spotlight
+    - Windows Spotlight on lock screen
+    - Consumer features
+    - Windows Tips
+    - Windows Spotlight in action center
+    - Windows Spotlight personalization
+
 ## FAQ
 
 ### Can you tell me more about delivery expectations for these messages?
@@ -311,7 +373,7 @@ You can find more information in the following documents:
 
 ### Where can I find more information on Organizational Messages experiences?
 
-There are several other public Microsoft documents for our other preview product experiences:
+There are several other public Microsoft documents for our other preview product experiences: 
 
 - [Overview of organizational messages in Microsoft Intune](/mem/intune/remote-actions/organizational-messages-overview)
 

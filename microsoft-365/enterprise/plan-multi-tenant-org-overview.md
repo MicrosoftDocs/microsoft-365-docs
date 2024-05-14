@@ -7,6 +7,7 @@ ms.date: 08/17/2023
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
+ms.subservice: multi-tenant
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -79,7 +80,7 @@ External access is required for chats and calls between tenants. External access
 Using [shared channels in Teams](/microsoftteams/shared-channels) with other tenants in a multitenant organization works the same as using shared channels with any other external organization. While the organizational relationship in Microsoft Entra ID is configured as part of multitenant organization configuration, you must still enable shared channels in Teams and configure the B2B direct connect settings in Microsoft Entra ID. For details, see [Collaborate with external participants in a shared channel](/microsoft-365/solutions/collaborate-teams-direct-connect).
 
 ## License requirements
-Use of the multitenant organization feature requires Microsoft 365 E3 or E5 subscriptions and Microsoft Entra ID P1 licenses or above in all multitenant organization tenants. For additional details, see [Entra licensing requirements](/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-overview#license-requirements).
+Use of the multitenant organization feature requires Microsoft 365 E3 or E5 subscriptions and Microsoft Entra ID P1 licenses or above in all multitenant organization tenants. For additional details, see [Entra multitenant organization licensing requirements](/entra/identity/multi-tenant-organizations/multi-tenant-organization-overview#license-requirements). If you plan on utilizing [Entra cross-tenant sync](/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-overview) via the Microsoft 365 admin center or Microsoft Entra ID, also see [Entra cross-tenant sync licensing requirements](/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-overview#license-requirements).
 
 ## Limitations for multitenant organizations in Microsoft 365
 
@@ -94,7 +95,7 @@ The following are limitations of the multitenant organizations in Microsoft 365:
 
 If you want to add more than 100 tenants, contact Microsoft support.
 
-For additional limitations, see [Known issues for multitenant organizations](/azure/active-directory/multi-tenant-organizations/multi-tenant-organization-known-issues).
+For additional limitations, see [Limitations in multitenant organizations](/azure/active-directory/multi-tenant-organizations/multi-tenant-organization-known-issues).
 
 ## Set up or join a multitenant organization
 
