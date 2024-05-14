@@ -35,8 +35,8 @@ Start by getting familiar with the service and feature differences between the p
 Some key differences include:
 
 - F plans don't include Office desktop apps or the Outlook desktop app.
-- F plans are limited to devices with integrated screens smaller than 10.9 inches on Office mobile apps.
-- F plans with Teams [pin frontline worker apps](pin-teams-apps-based-on-license.md) like Viva Connections as a home experience, Walkie Talkie, Shifts, Planner, and Approvals by default in Microsoft Teams.
+- F plans are limited to devices with integrated screens smaller than 10.9 inches on Microsoft 365 for mobile apps.
+- F plans with Teams [pin frontline worker apps](pin-teams-apps-based-on-license.md) like Viva Connections as a home experience, Walkie Talkie, Shifts, Planner, and Approvals by default in Teams.
 
 In this section, we provide more information about these key differences and highlight some additional differences to pay attention to. Keep in mind that this isn't a comprehensive list. To learn more:
 
@@ -99,14 +99,14 @@ To learn more, see [Exchange Online service description](/office365/servicedescr
 
 #### Teams
 
-F3 and F1 plans with Teams include the Teams desktop app, mobile app, and web app for frontline worker communication and collaboration. Your frontline workers have access to Teams features including meetings, chat, channels, content, and apps. However, they won't be able to use Teams Phone capabilities without the purchase of additional add-ons.
+F3 and F1 plans with Teams include the Teams desktop app, mobile app, and web app for frontline worker communication and collaboration. With an F3 or F1 plan that includes Teams, your frontline workers have access to Teams features including meetings, chat, channels, content, and apps. However, they won't be able to use Teams Phone capabilities without the purchase of an additional add-on.
 
-|Service or feature|Microsoft 365 E3/E5|Microsoft 365 F3|Microsoft 365 F1|
-|---------|---------|---------|---------|
-|Town hall|Yes|No|No|
-|Webinars|Yes|No|No|
-|Teams Phone Standard|No (E3)/Yes (E5)|No|No|
-|Teams Phone Standard for Frontline Workers|N/A|Can be added|Can be added|
+|Service or feature|Microsoft 365 E3/E5 (no Teams)|Microsoft 365 F3 (with Teams)|Microsoft 365 F3 (no Teams)|Microsoft 365 F1 (with Teams)|Microsoft 365 F1 (no Teams)|
+|---------|---------|---------|---------|---------|---------|
+|Town hall|Available by adding Teams Enterprise or Teams EEA|No|No|No|No|
+|Webinars|Available by adding Teams Enterprise or Teams EEA|No|No|No|No|
+|Teams Phone Standard|No (E3)/Available by adding Teams Enterprise or Teams EEA (E5)|No|No|No|No|
+|Teams Phone Standard for Frontline Workers|N/A|Can be added|N/A|Can be added|N/A|
 
 #### SharePoint
 
@@ -147,12 +147,12 @@ F3 and F1 users have 2 GB of OneDrive storage to store and share files. To learn
 
 #### Microsoft Viva
 
-|Service or feature|Microsoft 365 E3/E5|Microsoft 365 F3|Microsoft 365 F1|
-|---------|---------|---------|---------|
-|Viva Connections – dashboard, feed, resources, and Teams app|Yes|Yes|Yes|
-|Viva Engage – communities, conversations, and storyline|Yes|Yes|Yes|
-|Viva Insights app in Teams|Yes|Yes&sup1;|Yes&sup1;|
-|Viva Learning in Teams|Yes|Yes|Yes|
+|Service or feature|Microsoft 365 E3/E5 (no Teams)|Microsoft 365 F3 (with Teams)|Microsoft 365 F3 (no Teams)|Microsoft 365 F1 (with Teams)|Microsoft 365 F1 (no Teams)|
+|---------|---------|---------|---------|---------|---------|
+|Viva Connections – dashboard, feed, resources, and Teams app|Available by adding Teams Enterprise or Teams EEA|Yes|No|Yes|No|
+|Viva Engage – communities, conversations, and storyline|Yes|Yes|Yes|Yes|Yes|
+|Viva Insights app in Teams|Available by adding Teams Enterprise or Teams EEA|Yes&sup1;|No|Yes&sup1;|No|
+|Viva Learning in Teams|Available by adding Teams Enterprise or Teams EEA|Yes|No|Yes|No|
 
 &sup1;Limited to Reflect, Headspace, Send Praise, Virtual Commute, Microsoft To-Do (F3 only).
 
