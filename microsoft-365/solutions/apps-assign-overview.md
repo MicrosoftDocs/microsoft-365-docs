@@ -5,7 +5,7 @@ author: erikre
 manager: dougeby
 audience: ITPro
 ms.topic: article
-ms.date: 04/16/2024
+ms.date: 05/10/2024
 description: Assign and deploy apps using Microsoft Intune.
 ms.service: o365-solutions
 ms.localizationpriority: high
@@ -17,9 +17,11 @@ keywords:
 
 # Assign and deploy apps using Microsoft Intune
 
-Once you've [set up and deployed the capabilities of Intune](/microsoft-365/solutions/apps-guide-overview#deploying-intune), [added](/microsoft-365/solutions/apps-add-overview), [configured](/microsoft-365/solutions/apps-config-overview), and [secured](/microsoft-365/solutions/apps-protect-overview) your managed apps using Intune, you can begin the process to assign and deploy apps to end user's devices using Intune.
+Once you've [set up and deployed the capabilities of Intune](/microsoft-365/solutions/apps-guide-overview#deploying-intune), [added apps to Intune](/microsoft-365/solutions/apps-add-overview), [configured app policies using Intune](/microsoft-365/solutions/apps-config-overview), and [secured and protected your apps using Intune](/microsoft-365/solutions/apps-protect-overview), you can begin the process to assign and deploy apps to end user's devices using Intune.
 
-The apps you assign and deploy using Intune are managed apps. Managed apps are apps that you have assigned to users via a unified endpoint management provider, such as Intune. Managed apps support app protection policies and app configuration policies. These apps use mobile application management (MAM) that is provided by the unified endpoint management provider. MAM enables organizations to manage and protect their data within an application. A managed app in Intune is oftentimes a [protected app](/mem/intune/apps/apps-supported-intune-apps) that has Intune app protection policies applied to it and is assigned and managed by Intune. A managed app has either integrated the Intune App SDK or has been wrapped using the Intune Wrapping Tool to support App Protection Policies (APP) and/or app configuration policies. You can use MAM policies to configure and protect apps on unmanaged devices, which are your end-user's personal devices that aren't MDM enrolled in Intune. Those unmanaged devices receive managed apps based on their organization's credentials they use to access the app's data.
+The apps you assign and deploy using Intune are managed apps. Managed apps are apps that you have assigned to users via a unified endpoint management provider, such as Intune. Additionally, managed apps support app configuration policies and app protection policies that you create in Intune and apply to users and devices at your organization. The policies work to configure and protect these managed apps. 
+
+The Microsoft Intune service supports two Mobile Application Management (MAM) configurations. The first MAM configuration is MAM without device management. MAM in Intune is designed to protect organization data at the application level, including custom apps and store apps. App management can be used on organization-owned devices and personal devices. When it's used with personal devices, only organization-related access and data are managed. This configuration allows your organization's apps to be managed by Intune, but doesn't enroll the devices to be managed by Intune. The second MAM configuration is MAM with device management. This configuration allows both your organization's apps and devices to be managed. MDM, in addition to MAM, makes sure that the device is protected. For more information, see [Mobile Application Management configurations](/microsoft-365/solutions/apps-guide-overview#mobile-application-management-configurations).
 
 The content provided in this solution helps you understand the different aspects of assigning and deploying apps for each of the supported platforms.
 
@@ -36,7 +38,7 @@ Intune offers several advantages when assigning and deploying apps to your organ
 
 ### App-level data protection
 
-By assigning and deploying apps from Intune, you can protect your organization's data at the app-level. Intune applies this protection using app protection policies. By implementing app-level policies, you can restrict access to company resources and keep data within the purview of your IT department. You can use Intune app protection policies independently of any mobile-device management (MDM) solution. This independence helps you protect your company's data with or without enrolling devices in a device management solution.<p>
+By assigning and deploying apps from Intune, you can protect your organization's data at the app-level. Intune applies this protection using app protection policies. By implementing app-level policies, you can restrict access to company resources and keep data within the purview of your IT department. You can use Intune app protection policies independently of any mobile-device management (MDM) solution. This independence helps you protect your company's data with or without enrolling devices in a device management solution.
 
 In addition, you can protect data at the app-level using selective wipe. When a device is lost or stolen, or if the employee leaves your organization, you want to make sure company app data is removed from the device. However, you might not want to remove personal data on the device, especially if the device is an employee-owned device. To selectively remove company app data, you can create a wipe request for a selected user.
 
@@ -45,7 +47,7 @@ In addition, you can protect data at the app-level using selective wipe. When a 
 
 ### Multiple platform support
 
-There are four platforms where you can assign and deploy apps that you've added to Intune. In addition, you can monitor app assignments to ensure end users at your organization successfully have the apps they need to accomplish their work. 
+There are four platforms where you can assign and deploy apps that you've added to Intune. In addition, you can monitor app assignments to ensure end users at your organization successfully have the apps they need to accomplish their work.
 
 You can assign and deploy apps based on the following available platforms:
 - Android/Android Enterprise
@@ -64,7 +66,7 @@ Many app types that used in Intune support automatic updates. These apps ensure 
 
 ### App versatility
 
-Intune supports a variety app types and app functionality. For example, Intune supports store apps by platform. Intune integrates with Apple apps store, the Google Play store, and the Microsoft store to seemlessly allow you to find apps in the store and add them to Intune before assigning them to members of your organization. Also, Intune support [Windows apps (Win32)](/mem/intune/apps/apps-win32-add) along with [Win32 app supersedence](/mem/intune/apps/apps-win32-supersedence), [Enterprise App Catalog app (Win32)](/mem/intune/apps/apps-add-enterprise-app), [cross platform web apps](/mem/intune/apps/web-app), and many store apps that integrate with Microsoft technologies. For a list of app types, see [Specific app type details](/mem/intune/apps/apps-add). In addition, Intune supports creating and assigning configuration policies that help to ensure an app is installed on end users' devices based on your organization's requirements. The same is true when applying app protection policies to your organization's users and devices. To better understand app types, purchases, and licenses, see [Purchase and add apps for Microsoft Intune](/microsoft-365/solutions/apps-guide-overview).
+Intune supports a variety app types and app functionality. For example, Intune supports store apps by platform. Intune integrates with Apple apps store, the Google Play store, and the Microsoft store to seemlessly allow you to find apps in the store and add them to Intune before assigning them to members of your organization. Also, Intune supports [Windows apps (Win32)](/mem/intune/apps/apps-win32-add) along with [Win32 app supersedence](/mem/intune/apps/apps-win32-supersedence), [Enterprise App Catalog app (Win32)](/mem/intune/apps/apps-add-enterprise-app), [cross platform web apps](/mem/intune/apps/web-app), and many store apps that integrate with Microsoft technologies. For a list of app types, see [Specific app type details](/mem/intune/apps/apps-add). In addition, Intune supports creating and assigning configuration policies that help to ensure an app is installed on end users' devices based on your organization's requirements. The same is true when applying app protection policies to your organization's users and devices. To better understand app types, purchases, and licenses, see [Purchase and add apps for Microsoft Intune](/microsoft-365/solutions/apps-guide-overview).
 
 > [!IMPORTANT]
 > You can use Intune to help enforce a [Zero Trust](/security/zero-trust/zero-trust-overview) security strategy for your organization. Zero Trust is an approach to use when designing and implementing a set of security principles. For more information, see [Zero Trust with Microsoft Intune](/mem/intune/fundamentals/zero-trust-with-microsoft-intune) and [Zero Trust identity and device access configurations](/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-overview).
@@ -79,7 +81,7 @@ Before you can assign apps with Microsoft Intune, you must follow a few prerequi
 > If you're new to Intune, start with the [Microsoft Intune free trial](/mem/intune/fundamentals/free-trial-sign-up). Trying out Intune is free for 30 days. When you complete the sign-up process, you'll have a new tenant that you can use to evaluate Intune. A tenant is a dedicated instance of [Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-whatis) (Microsoft Entra ID) where your subscription to Intune is hosted. You can then configure the tenant, which involves many capabilities that you can use to protect your organization. One of those involves adding and configuring apps for Intune.
 
 Follow these steps if you haven't already set up Intune and added the apps you need to manage and protect:
-1. Set up and [deploy Intune](/microsoft-365/solutions/apps-guide-overview#deploying-intune&preserve-view=true)
+1. [Set up and deploy Intune](/microsoft-365/solutions/apps-guide-overview#deploying-intune&preserve-view=true)
 2. Understand how to [purchase and add apps for Microsoft Intune](/microsoft-365/solutions/apps-guide-overview)
 3. [Configure apps using Microsoft Intune](/microsoft-365/solutions/apps-config-overview)
 4. [Secure and protect apps using Microsoft Intune](/microsoft-365/solutions/apps-protect-overview)

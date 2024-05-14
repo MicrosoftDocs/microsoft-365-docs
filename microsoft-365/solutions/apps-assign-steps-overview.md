@@ -15,7 +15,7 @@ ms.custom:
 keywords:
 ---
 
-# Assign managed apps to your organization using Intune
+# Assign managed apps using Intune
 
 
 ## Assign the Company Portal app

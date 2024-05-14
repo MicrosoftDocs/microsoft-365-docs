@@ -22,9 +22,15 @@ After you add an app to Intune, you can use Intune to assign the managed app to 
 > [!TIP]
 > To see where app protection and compliance policies fit into the overall Intune architecture, see [High-level architecture for Microsoft Intune](/mem/intune/fundamentals/high-level-architecture).
 
+This architecture diagram includes application management details available in Microsoft Intune..  
+
+:::image type="content" source="/mem/intune/fundamentals/media/high-level-architecture/intunearchitecture_wh.png" alt-text="High-level architectural diagram for Microsoft Intune"  lightbox="/mem/intune/fundamentals/media/high-level-architecture/intunearchitecture_wh.png" :::
+
 ## Platform specific app settings
 
-| Platform | App setting |
+App capabilities provided by Microsoft Intune differ depending on the device platform that the setting applies to. However, there are some app commonalities that all platforms offer. The following table provides details about app settings that are important for you to be aware of. 
+
+| Platform | App setting details |
 |---|---|
 | All   platforms | To receive app updates on   devices that aren't enrolled with Intune, device users must go to their   organization's Company Portal and manually install app updates. |
 | All   platforms | For   almost all app types and platforms, Available   assignments are only valid when assigning to   user groups, not device groups. Win32 apps can be assigned to either user or   device groups. |
@@ -32,7 +38,7 @@ After you add an app to Intune, you can use Intune to assign the managed app to 
 | Android | Apps   deployed as Required to corporate-owned work profile and corporate-owned   fully managed devices can't be uninstalled manually by the user. |
 | Android | For unenrolled Android devices, you can use managed Google Play to deploy store   apps and line-of-business (LOB) apps to users. Once deployed, you can   use Mobile Application Management (MAM) to manage the applications.   Managed Google Play apps targeted as Available with or without   enrollment will appear in the Play Store app on the end user's device,   and not in the Company Portal app.  |
 | Android  | If you deploy an Android app   as Available with or without enrollment, reporting status will only be   available on enrolled devices. |
-| Android   Enterprise | For Android Enterprise   personally owned work profile, when managed Google Play preproduction track   apps are assigned as required, create two identical user groups and assign   the preproduction track as "available" to one and "required"   to the other. The result is that the preproduction track successfully   deploys to the device. |
+| Android   Enterprise | For Android Enterprise   personally owned work profile, when managed Google Play pre-production track   apps are assigned as required, create two identical user groups and assign   the pre-production track as "available" to one and "required"   to the other. The result is that the pre-production track successfully   deploys to the device. |
 | iOS | For managed iOS store apps only,   when you add these apps to Microsoft Intune and assign them as Required, the   apps are automatically created with both Required and Available intents. |
 | iOS | iOS   Store apps (not iOS/iPadOS VPP apps) that are targeted with required intent   will be enforced on the device at the time of the device check-in and will   also show in the Company Portal app. |
 | iOS | When   conflicts occur in Uninstall on device removal setting, the app isn't removed from the device when the device is no longer managed. |
@@ -43,6 +49,3 @@ After you add an app to Intune, you can use Intune to assign the managed app to 
 | iOS/iPadOS | You can prevent the iCloud   backup of the managed iOS/iPadOS app. |
 | macOS | You can prevent the iCloud   backup of the managed macOS app. |
 
-[:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-steps.png" alt-text="Step 1. Apply minimum data protection." border="false" :::](apps-assign-step-1.md)
-
-After you've completed the above steps, you're ready to deploy, manage, and monitor the managed apps your organization uses.
