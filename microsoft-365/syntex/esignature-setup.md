@@ -75,9 +75,9 @@ By default, SharePoint eSignature is turned on for libraries in all SharePoint s
 
 3. On the **Add or remove other signature providers** panel, select the provider you want to add.
 
-     <img width="908" alt="image" src="https://github.com/MicrosoftDocs/microsoft-365-docs-pr/assets/89842834/9af8cde7-8179-4752-97dc-0d37f892b3b8">
+    ![Screenshot showing the Edit signature providers panel.](../media/content-understanding/esignature-edit-providers-panel.png)
 
-5. Select **Save**.
+4. Select **Save**.
 
 > [!NOTE]
 > Although [pay-as-you-go billing](syntex-azure-billing.md) must be set up to use eSignature, you are not charged for using other signature providers.
@@ -116,7 +116,6 @@ Before a signature request is sent and at the completion of the request, certain
 #### Other electronic signature providers
 
 At the end of the signing process when all required parties have signed, a copy of the signed document is automatically saved to SharePoint. The signed document is saved to a provider-specific folder of a special **Apps** folder in SharePoint. Every document library has a provider-specific folder where all documents signed by using that provider are saved.
-
 
 ![Screenshot showing a signed document in a provider-specific folder.](../media/content-understanding/esignature-other-provider-folder.png)
 
