@@ -73,7 +73,7 @@ By default, SharePoint eSignature is turned on for libraries in all SharePoint s
 
 2. On the **eSignature** panel, select **Add or remove other signature providers**.
 
-3. On the **Add or remove other signature providers** panel, select the provider you want to add.
+3. On the **Edit signature providers** panel, select the provider you want to add.
 
     ![Screenshot showing the Edit signature providers panel.](../media/content-understanding/esignature-edit-providers-panel.png)
 
