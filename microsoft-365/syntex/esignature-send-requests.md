@@ -73,7 +73,7 @@ Use the following steps to start an electronic signature in SharePoint using ano
 
 2. In the document viewer, select the eSignature icon, and then select the provider you want to use from the menu.
 
-     <img width="751" alt="image" src="https://github.com/MicrosoftDocs/microsoft-365-docs-pr/assets/89842834/11d6bd2b-8d22-434e-a6c4-9e7aabdc3807">
+    ![Screenshot showing how to select a provider on the ribbon.](../media/content-understanding/esignature-select-provider.png)
 
 3. You'll be prompted to sign in to the provider using your sign-in credentials the first time. On subsequent requests, you may not be prompted to 
 
