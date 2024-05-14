@@ -30,7 +30,7 @@ To create and configure a sensitive information model, follow these steps:
 1. Follow the instructions in [Create a model in Syntex](create-syntex-model.md#set-up-a-prebuilt-model) to create a prebuilt sensitive information model. Then continue with the following steps to complete your model.
 
     > [!NOTE]
-    > When you create a sensitive information model, you will notice that, unlike other models, you don't have the option to select a content type or to apply sensitivity or retention labels. If you need to associate a content type, you'll need to create a different model type. The ability to apply security labels will be provided in a future release.
+    > When you create a sensitive information model, you will notice that, unlike other models, you don't have the options to select a content type or to apply sensitivity or retention labels. If you need to associate a content type, you'll need to create a different model type. The ability to apply security labels will be provided in future releases.
 
 2. On the **Models** page, in the **Add entities to detect** section, select **Add entities**.
 
@@ -40,11 +40,11 @@ To create and configure a sensitive information model, follow these steps:
 
     - Select the language you want to use for this model. Only one language can be selected for each model. This model supports languages for both [handwritten text](/azure/ai-services/computer-vision/language-support#handwritten-text) and [print text](/azure/ai-services/computer-vision/language-support#print-text).
 
-    - Select the sensitive information entities you want to detect, and then select **Next**.
+    - From the list of supported entities, select the sensitive information entity or entities you want to detect, and then select **Next**.
 
     ![Screenshot of the Configure detection page.](../media/content-understanding/prebuilt-sensitive-configure-detection.png)
 
-4. On the **Configure extraction** page, select the sensitive information entities you want to extract, and then select **Next**.
+4. On the **Configure extraction** page, you see the list of sensitive information entities you want to detect. Select the entities you want to extract, and then select **Next**.
 
     ![Screenshot of the Configure extraction page.](../media/content-understanding/prebuilt-sensitive-select-extract.png)
 
