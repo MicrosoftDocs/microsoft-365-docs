@@ -164,7 +164,6 @@ The **Set up a prebuilt model** section shows the types of prebuilt models you c
 - **Receipt processing**
 - **Sensitive information processing**
 
- 
 Select one of the following tabs to continue with the prebuilt model you want to use.
 
 # [Contract processing](#tab/contract-processing)
@@ -180,7 +179,7 @@ Select one of the following tabs to continue with the prebuilt model you want to
     - **Description** – Enter information about how this model will be used.
 
         ![Screenshot of the right panel of the Create a contract processing model page.](../media/content-understanding/create-a-model-panel.png) 
-    
+
 4. Under **Advanced settings**:
 
     - In the **Content type** section, choose whether to create a new content type or to use an existing one.
@@ -207,7 +206,7 @@ Select one of the following tabs to continue with the prebuilt model you want to
     - **Description** – Enter information about how this model will be used.
 
         ![Screenshot of the right panel of the Create an invoice processing model page.](../media/content-understanding/create-a-model-panel.png) 
-    
+
 4. Under **Advanced settings**:
 
     - In the **Content type** section, choose whether to create a new content type or to use an existing one.
@@ -234,7 +233,7 @@ Select one of the following tabs to continue with the prebuilt model you want to
     - **Description** – Enter information about how this model will be used.
 
         ![Screenshot of the right panel of the Create a model to process receipts page.](../media/content-understanding/create-a-model-panel.png) 
-    
+
 4. Under **Advanced settings**:
 
     - In the **Content type** section, choose whether to create a new content type or to use an existing one.
@@ -258,9 +257,9 @@ Select one of the following tabs to continue with the prebuilt model you want to
     - **Description** – Enter information about how this model will be used.
 
         ![Screenshot of the right panel of the Create a sensitive information processing model page.](../media/content-understanding/create-a-model-panel-sensitive-info.png) 
-    
+
         > [!NOTE]
-        > You do not need to designate a content type for the prebuilt sensitivity information model.
+        > Under **Advanced settings**, you see that there aren't options to select a content type or to apply sensitivity or retention labels like there are in other models. If you need a model where you want to specify a content type, you'll need to create a different model type. The ability to apply security labels will be provided in future releases.
 
 4. When you're ready to create the model, select **Create**.
 
