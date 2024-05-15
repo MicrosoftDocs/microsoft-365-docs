@@ -141,7 +141,7 @@ If you're working on a different web app with the same account, the activity in 
 
 Azure portal supports a similar inactivity feature, but is supported by Azure portal only. 
 
-Note - Upon initial activation within Azure Portal, the timeout duration is initally inherited from M365 Idle Session Timeout. Azure portal timeout policy can be set explicity within the Azure Portal.  For more information, see [Azure portal: Signing-Out + Notification](/azure/azure-portal/set-preferences#signing-out--notifications).
+Note - When initially activated within the Azure Portal, the timeout duration by default inherits from M365 Admin Center Idle Session Timeout Setting. However, the timeout policy for the Azure Portal can be explicitly configured within the portal itself.  For more information, see [Azure portal: Signing-Out + Notification](/azure/azure-portal/set-preferences#signing-out--notifications).
 
 ### I want to make changes to the idle session timeout policy or delete it. How can I do that?
 
