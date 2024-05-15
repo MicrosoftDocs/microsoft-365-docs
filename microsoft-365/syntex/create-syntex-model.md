@@ -250,7 +250,7 @@ Select one of the following tabs to continue with the prebuilt model you want to
 
 2. On the **Sensitive information processing: Details** page, you find information about the model and can see examples of a document library looks with entities detected and entities extracted. If you want to proceed with using the model, select **Next**.
 
-    ![Screenshot of the Sensitive information processing: Details** page.](../media/content-understanding/create-a-model-sensitive-info-details.png)
+    ![Screenshot of the Sensitive information processing: Details page.](../media/content-understanding/create-a-model-sensitive-info-details.png)
 
 3. On the **Create a sensitive information processing model** page, enter the following information.
 
@@ -261,7 +261,7 @@ Select one of the following tabs to continue with the prebuilt model you want to
     ![Screenshot of the right panel of the Create a sensitive information processing model page.](../media/content-understanding/create-a-model-panel-sensitive-info.png)
 
     > [!NOTE]
-    > In the **Advanced settings** section, you see that there aren't options to select a content type or to apply sensitivity or retention labels like there are in other models. If you need a model where you must specify a content type, you'll need to create a different model type. The ability to apply security labels will be provided in future releases.
+    > In the **Advanced settings** section, the options to select a content type or to apply sensitivity or retention labels are not available for this model. If you need a model where you must specify a content type, you'll need to use a [different model type](model-types-overview.md). The option to apply security labels will be available in future releases of this model.
 
 4. When you're ready to create the model, select **Create**.
 
