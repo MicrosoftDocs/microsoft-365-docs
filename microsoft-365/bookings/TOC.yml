@@ -61,14 +61,16 @@
       href: bookings-overview.md
     - name: Turn bookings on or off
       href: turn-bookings-on-or-off.md
-    - name: Bookings architecture
-      href: bookings-overview.md    
-    - name: Best practices
-      href: bookings-overview.md
-    - name: Manage settings in the Microsoft 365 admin center
-      href: turn-bookings-on-or-off.md    
-    - name: Custom domain support in Bookings
-      href: custom-domain-support.md
+    - name: Testing 2nd nesting
+      items:
+        - name: Bookings architecture
+          href: bookings-overview.md    
+        - name: Best practices
+          href: bookings-overview.md
+        - name: Manage settings in the Microsoft 365 admin center
+          href: turn-bookings-on-or-off.md    
+        - name: Custom domain support in Bookings
+          href: custom-domain-support.md
     - name: PowerShell for Bookings
       href: bookings-overview.md    
     - name: Use the Bookings Graph APIs
