@@ -29,6 +29,8 @@ To set up Microsoft 365 Archive, follow these steps:
 3. [Turn on Microsoft 365 Archive](#set-up-microsoft-365-archive) in the Microsoft 365 admin center.
 4. [Manage Microsoft 365 Archive](archive-manage.md) in the SharePoint admin center.
 
+The following video demonstrates the steps to set up pay-as-you-go billing.
+
 </br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RW1kOkz]
