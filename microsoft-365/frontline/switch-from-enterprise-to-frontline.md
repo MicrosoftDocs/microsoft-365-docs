@@ -47,12 +47,19 @@ In this section, we provide more information about these key differences and hig
 
 Desktop client apps aren't included in F3 and F1 plans. Your frontline workers can use Microsoft 365 for the web and Microsoft 365 mobile apps to get things done. Keep in mind that F3 users have full access to documents in Microsoft 365 for the web and F1 users have read-only access.
 
-|Service or feature|Microsoft 365 E3/E5  |Microsoft 365 F3|Microsoft 365 F1|
+|Service or feature|Microsoft 365 E3/E5 (no Teams)|Microsoft 365 F3 (with Teams)|Microsoft 365 F3 (no Teams)|Microsoft 365 F1 (with Teams)|Microsoft 365 F1 (no Teams)|
+|---------|---------|---------|---------|---------|---------|
+|Desktop client apps (Word, Excel, OneNote, PowerPoint, Access, Publisher)|Yes|No|No|No|No|
+|Microsoft 365 for the web |Yes|Yes|Yes|Read-only|Read-only|
+|Microsoft 365 for mobile |Yes|Yes&sup1;|Yes&sup1;|Read-only|Read-only|
+|Visio for the web|Yes|Yes|Yes|Read-only|Read-only|
+
+<!--|Service or feature|Microsoft 365 E3/E5  |Microsoft 365 F3|Microsoft 365 F1|
 |---------|---------|---------|---------|
 |Desktop client apps (Word, Excel, OneNote, PowerPoint, Access, Publisher)|Yes|No|No|
 |Microsoft 365 for the web |Yes|Yes|Read-only|
 |Microsoft 365 for mobile |Yes|Yes&sup1;|Read-only|
-|Visio for the web|Yes|Yes|Read-only|
+|Visio for the web|Yes|Yes|Read-only|-->
 
 &sup1;Limited to devices with integrated screens less than 10.9 inches.
 
@@ -86,12 +93,19 @@ F3 users have a 2 GB mailbox that they can access through Outlook on the web. Fo
 
 F1 users don't have mailbox rights. Although a mailbox is provisioned for users through the Exchange Kiosk plan, they aren't entitled to use it. We recommend that you [disable Outlook on the web](/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-outlook-web-app) for F1 users.
 
-|Service or feature|Microsoft 365 E3/E5|Microsoft 365 F3|Microsoft 365 F1|
+|Service or feature|Microsoft 365 E3/E5 (no Teams)|Microsoft 365 F3 (with Teams)|Microsoft 365 F3 (no Teams)|Microsoft 365 F1 (with Teams)|Microsoft 365 F1 (no Teams)|
+|---------|---------|---------|---------|---------|---------|
+|Exchange Online mailbox|Yes (100 GB mailbox)|Yes (2 GB mailbox)|Yes (2 GB mailbox)|No&sup1;|No&sup1;|
+|Outlook desktop app|Yes|No|No|No|No|
+|Archive mailbox|Yes|No|No|No|No|
+|Delegate access|Yes|No|No|No|No|
+
+<!--|Service or feature|Microsoft 365 E3/E5|Microsoft 365 F3|Microsoft 365 F1|
 |---------|---------|---------|---------|
 |Exchange Online mailbox|Yes (100 GB mailbox)|Yes (2 GB mailbox)|No&sup1;|
 |Outlook desktop app|Yes|No|No|
 |Archive mailbox|Yes|No|No|
-|Delegate access|Yes|No|No|
+|Delegate access|Yes|No|No|-->
 
 &sup1;F1 includes the Exchange Kiosk plan to enable Teams calendar only and doesn't include mailbox rights.
 
@@ -105,17 +119,22 @@ F3 and F1 plans with Teams include the Teams desktop app, mobile app, and web ap
 |---------|---------|---------|---------|---------|---------|
 |Town hall|Available by adding Teams Enterprise or Teams EEA|No|No|No|No|
 |Webinars|Available by adding Teams Enterprise or Teams EEA|No|No|No|No|
-|Teams Phone Standard|No (E3)/Available by adding Teams Enterprise or Teams EEA (E5)|No|No|No|No|
+|Teams Phone Standard| E3: No</br>E5: Available by adding Teams Enterprise or Teams EEA|No|No|No|No|
 |Teams Phone Standard for Frontline Workers|N/A|Can be added|N/A|Can be added|N/A|
 
 #### SharePoint
 
 F3 and F1 users can collaborate on documents and access organization-wide resources such as training materials stored in SharePoint. Keep in mind that F3 and F1 plans don't include site mailboxes or personal sites.
 
-|Service or feature|Microsoft 365 E3/E5|Microsoft 365 F3|Microsoft 365 F1|
+|Service or feature|Microsoft 365 E3/E5 (no Teams)|Microsoft 365 F3 (with Teams)|Microsoft 365 F3 (no Teams)|Microsoft 365 F1 (with Teams)|Microsoft 365 F1 (no Teams)|
+|---------|---------|---------|---------|---------|---------|
+|Site mailbox|Yes|No|No|No|No|
+|Personal site|Yes|No|No|No|No|
+
+<!--|Service or feature|Microsoft 365 E3/E5|Microsoft 365 F3|Microsoft 365 F1|
 |---------|---------|---------|---------|
 |Site mailbox|Yes|No|No|
-|Personal site|Yes|No|No|
+|Personal site|Yes|No|No|-->
 
 To learn more about SharePoint limits by plan, see [SharePoint limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits).
 
@@ -123,27 +142,41 @@ To learn more about SharePoint limits by plan, see [SharePoint limits](/office36
 
 F3 and F1 users have 2 GB of OneDrive storage to store and share files. To learn more, see [OneDrive service description](/office365/servicedescriptions/onedrive-for-business-service-description).
 
-|Service or feature|Microsoft 365 E3/E5|Microsoft 365 F3|Microsoft 365 F1|
-|---------|---------|---------|---------|
-|OneDrive|1+ TB storage&sup1;|2 GB storage|2 GB storage|
+|Service or feature|Microsoft 365 E3/E5 (no Teams)|Microsoft 365 F3 (with Teams)|Microsoft 365 F3 (no Teams)|Microsoft 365 F1 (with Teams)|Microsoft 365 F1 (no Teams)|
+|---------|---------|---------|---------|---------|---------|
+|OneDrive|1+ TB storage&sup1;|2 GB storage|2 GB storage|2 GB storage|2 GB storage|
 
-&sup1;Up to 5 TB of initial OneDrive storage per user based on the [default quota](/sharepoint/set-default-storage-space) of the tenant for subscriptions with more than five users. More storage can be requested.
+<!--|Service or feature|Microsoft 365 E3/E5|Microsoft 365 F3|Microsoft 365 F1|
+|---------|---------|---------|---------|
+|OneDrive|1+ TB storage&sup1;|2 GB storage|2 GB storage|-->
+
+&sup1;Up to 5 TB of initial OneDrive storage per user based on the [default quota](/sharepoint/set-default-storage-space) for the tenant. More storage can be requested. Subscriptions for less than five users receive 1 TB of OneDrive storage that can't be expanded.
 
 #### Content services
 
-|Service or feature|Microsoft 365 E3/E5|Microsoft 365 F3|Microsoft 365 F1|
+|Service or feature|Microsoft 365 E3/E5 (no Teams)|Microsoft 365 F3 (with Teams)|Microsoft 365 F3 (no Teams)|Microsoft 365 F1 (with Teams)|Microsoft 365 F1 (no Teams)|
+|---------|---------|---------|---------|---------|---------|
+|Microsoft Forms|Yes&sup1;|Yes&sup1;|Yes&sup1;|No|No|
+|Delve|Yes|No|No|No|No|
+
+<!--|Service or feature|Microsoft 365 E3/E5|Microsoft 365 F3|Microsoft 365 F1|
 |---------|---------|---------|---------|
 |Microsoft Forms|Yes&sup1;|Yes&sup1;|No|
-|Delve|Yes|No|No|
+|Delve|Yes|No|No|-->
 
 &sup1;Licensed users can create, share, and manage forms. A license isn't needed to complete or respond to a form.
 
 #### Project and task management
 
-|Service or feature|Microsoft 365 E3/E5|Microsoft 365 F3|Microsoft 365 F1|
+|Service or feature|Microsoft 365 E3/E5 (no Teams)|Microsoft 365 F3 (with Teams)|Microsoft 365 F3 (no Teams)|Microsoft 365 F1 (with Teams)|Microsoft 365 F1 (no Teams)|
+|---------|---------|---------|---------|---------|---------|
+|Microsoft Planner|Yes|Yes|Yes|Yes|Yes|
+|Microsoft To Do|Yes|Yes|Yes|No|No|
+
+<!--|Service or feature|Microsoft 365 E3/E5|Microsoft 365 F3|Microsoft 365 F1|
 |---------|---------|---------|---------|
 |Microsoft Planner|Yes|Yes|Yes|
-|Microsoft To Do|Yes|Yes|No|
+|Microsoft To Do|Yes|Yes|No|-->
 
 #### Microsoft Viva
 
@@ -158,18 +191,29 @@ F3 and F1 users have 2 GB of OneDrive storage to store and share files. To learn
 
 #### Automation, app building, and chatbots
 
-|Service or feature|Microsoft 365 E3/E5|Microsoft 365 F3|Microsoft 365 F1|
+|Service or feature|Microsoft 365 E3/E5 (no Teams)|Microsoft 365 F3 (with Teams)|Microsoft 365 F3 (no Teams)|Microsoft 365 F1 (with Teams)|Microsoft 365 F1 (no Teams)|
+|---------|---------|---------|---------|---------|---------|
+|Power Apps for Microsoft 365|Yes|Yes|Yes|No|No|
+|Power Automate for Microsoft 365|Yes|Yes|Yes|No|No|
+|Copilot Studio for Teams|Available by adding Teams Enterprise or Teams EEA|Yes|Yes|No|No|
+|Dataverse for Teams|Available by adding Teams Enterprise or Teams EEA|Yes|Yes|No|No|
+
+<!--|Service or feature|Microsoft 365 E3/E5|Microsoft 365 F3|Microsoft 365 F1|
 |---------|---------|---------|---------|
 |Power Apps for Microsoft 365|Yes|Yes|No|
 |Power Automate for Microsoft 365|Yes|Yes|No|
 |Copilot Studio for Teams|Yes|Yes|No|
-|Dataverse for Teams|Yes|Yes|No|
+|Dataverse for Teams|Yes|Yes|No|-->
 
 #### Windows
 
-|Service or feature|Microsoft 365 E3/E5|Microsoft 365 F3|Microsoft 365 F1|
+|Service or feature|Microsoft 365 E3/E5 (no Teams)|Microsoft 365 F3 (with Teams)|Microsoft 365 F3 (no Teams)|Microsoft 365 F1 (with Teams)|Microsoft 365 F1 (no Teams)|
+|---------|---------|---------|---------|---------|---------|
+|Windows 11 Enterprise|Yes|Yes|No|No|No|
+
+<!--|Service or feature|Microsoft 365 E3/E5|Microsoft 365 F3|Microsoft 365 F1|
 |---------|---------|---------|---------|
-|Windows 11 Enterprise|Yes|Yes|No|
+|Windows 11 Enterprise|Yes|Yes|No|-->
 
 ## What to expect
 
