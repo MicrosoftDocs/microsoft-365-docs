@@ -228,3 +228,7 @@ Based on system constraints, some users may not have a 'last activity date' in t
 
 1. The user used Copilot for Microsoft 365 within a short time window (less than 24 hours) after the Copilot for Microsoft 365 license was assigned.
 2. The user subsequently had no other Copilot for Microsoft 365 usage up to the date on which the report is viewed.
+
+### Why is the 'Last activity date of Word, Excel, PowerPoint, OneNote, or Outlook Copilot (UTC)' sometimes blank or newer than the actual date, even when users have recently used Copilot features?
+
+This may be caused by a known limitation: the uploading of client events data for Copilot features in Word, Excel, PowerPoint, OneNote, and Outlook can be delayed for various reasons, such as when end users disconnect from the internet immediately after taking a Copilot action.
