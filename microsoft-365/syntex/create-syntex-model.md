@@ -248,18 +248,20 @@ Select one of the following tabs to continue with the prebuilt model you want to
 
 1. Select **Sensitive information processing**.
 
-2. On the **Sensitive information processing: Details** page, you'll find more information about the model. If you want to proceed with using the model, select **Next**.
+2. On the **Sensitive information processing: Details** page, you find information about the model and can see examples of a document library looks with entities detected and entities extracted. If you want to proceed with using the model, select **Next**.
 
-3. On the right panel of the **Create a sensitive information processing model** page, enter the following information.
+    ![Screenshot of the Sensitive information processing: Details** page.](../media/content-understanding/create-a-model-sensitive-info-details.png)
+
+3. On the **Create a sensitive information processing model** page, enter the following information.
 
     - **Model name** – Enter the name of the model, for example *Service agreement*.
 
     - **Description** – Enter information about how this model will be used.
 
-        ![Screenshot of the right panel of the Create a sensitive information processing model page.](../media/content-understanding/create-a-model-panel-sensitive-info.png) 
+    ![Screenshot of the right panel of the Create a sensitive information processing model page.](../media/content-understanding/create-a-model-panel-sensitive-info.png)
 
-        > [!NOTE]
-        > Under **Advanced settings**, you see that there aren't options to select a content type or to apply sensitivity or retention labels like there are in other models. If you need a model where you want to specify a content type, you'll need to create a different model type. The ability to apply security labels will be provided in future releases.
+    > [!NOTE]
+    > In the **Advanced settings** section, you see that there aren't options to select a content type or to apply sensitivity or retention labels like there are in other models. If you need a model where you must specify a content type, you'll need to create a different model type. The ability to apply security labels will be provided in future releases.
 
 4. When you're ready to create the model, select **Create**.
 
