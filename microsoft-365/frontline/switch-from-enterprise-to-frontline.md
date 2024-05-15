@@ -28,6 +28,8 @@ E plans are meant for information workers (employees who typically work at a des
 
 You'll get an overview of what to expect when users are switched to an F plan, how to prepare for the change, and what to do after switching plans to transition the frontline workers in your organization.
 
+[!INCLUDE [teams-licensing-notice](includes/teams-licensing-notice.md)]
+
 ## Understand the key differences between E and F plans
 
 Start by getting familiar with the service and feature differences between the plans.
@@ -157,7 +159,6 @@ F3 and F1 users have 2 GB of OneDrive storage to store and share files. To learn
 |Service or feature|Microsoft 365 E3/E5 (no Teams)|Microsoft 365 F3 (with Teams)|Microsoft 365 F3 (no Teams)|Microsoft 365 F1 (with Teams)|Microsoft 365 F1 (no Teams)|
 |---------|---------|---------|---------|---------|---------|
 |Microsoft Forms|Yes&sup1;|Yes&sup1;|Yes&sup1;|No|No|
-|Delve|Yes|Yes|Yes|Yes|Yes|
 
 <!--|Service or feature|Microsoft 365 E3/E5|Microsoft 365 F3|Microsoft 365 F1|
 |---------|---------|---------|---------|
@@ -187,7 +188,7 @@ F3 and F1 users have 2 GB of OneDrive storage to store and share files. To learn
 |Viva Insights app in Teams|Available by adding Teams Enterprise or Teams EEA|Yes&sup1;|No|Yes&sup1;|No|
 |Viva Learning in Teams|Available by adding Teams Enterprise or Teams EEA|Yes|No|Yes|No|
 
-&sup1;Limited to Reflect, Headspace, Send Praise, Virtual Commute, Microsoft To-Do (F3 only).
+&sup1;Limited to Reflect, Headspace, Send Praise, Virtual Commute, Microsoft To Do (F3 only).
 
 #### Automation, app building, and chatbots
 
@@ -209,7 +210,9 @@ F3 and F1 users have 2 GB of OneDrive storage to store and share files. To learn
 
 |Service or feature|Microsoft 365 E3/E5 (no Teams)|Microsoft 365 F3 (with Teams)|Microsoft 365 F3 (no Teams)|Microsoft 365 F1 (with Teams)|Microsoft 365 F1 (no Teams)|
 |---------|---------|---------|---------|---------|---------|
-|Windows 11 Enterprise|Yes|Yes|No|No|No|
+|Windows 11 Enterprise|Yes|Yes&sup1;|Yes&sup1;|No|No|
+
+&sup1;Virtualized Desktop Infrastructure (VDI) only for licensed users of a shared device with a Qualifying Operating System (except for Azure Virtual Desktop).
 
 <!--|Service or feature|Microsoft 365 E3/E5|Microsoft 365 F3|Microsoft 365 F1|
 |---------|---------|---------|---------|
@@ -225,7 +228,7 @@ We'll be referring to this table in later sections of this article.
 |---------|---------|---------|
 |Microsoft 365 apps| <ul><li>Identify files that are stored on users' local computers and help users move them to their OneDrive.</li><li>Keep in mind that desktop apps will go into reduced functionality mode after changing to an F plan. Be prepared to uninstall the desktop apps after the switch.</li></ul>| Users:</br> <ul><li>Sign in to [microsoft365.com](https://www.microsoft365.com/) to access Microsoft 365 for the web.</li><li>[Install and use Microsoft 365 mobile apps](https://support.microsoft.com/office/set-up-office-apps-and-email-on-a-mobile-device-7dabb6cb-0046-40b6-81fe-767e0b1f014f) (if not already).</li><li>Users can also directly collaborate on documents from SharePoint document libraries, OneDrive, Teams, and Viva Engage.</li></ul>Admins:<ul><li>Uninstall desktop apps from users' computers.</li></ul>      |
 |Email, Exchange, Outlook|<ul><li>Identify user mailboxes over 2 GB by using the [Get-MailboxStatistics](/powershell/module/exchange/get-mailboxstatistics?view=exchange-ps&preserve-view=true) Exchange PowerShell cmdlet, and then reduce mailbox size, as needed. To learn more, see [Mailbox storage limits in Outlook on the web](https://support.microsoft.com/office/mailbox-storage-limits-in-outlook-on-the-web-f170fe90-b859-4034-bcda-e186fc6a26f5).</li><li>If users have an archive mailbox:</li><ul><li>Move archive mailbox content back to the user's mailbox.</li><li>Check for any archive policies that might automatically move email based on the age of messages by using the [Get-EXOMailbox](/powershell/module/exchange/get-exomailbox?view=exchange-ps&preserve-view=true) Exchange Online PowerShell cmdlet.</li></ul> <li>Identify site mailbox access and usage.</li><li>Outlook desktop app, data, and configuration:</li><ul><li>Identify users and computers that are using Outlook data (.pst) files.</li><li>Identify and document existing Outlook client-only rules.</li><li>Export email signatures.</li></ul></ul>|Users:</br><ul><li>Sign in to [microsoft365.com](https://www.microsoft365.com/) to access Outlook on the web.</li><li>[Set up email on mobile devices](https://support.microsoft.com/office/set-up-office-apps-and-email-on-a-mobile-device-7dabb6cb-0046-40b6-81fe-767e0b1f014f) (if not already).</li><li>Check and update mail signatures.</li><li>Check and update mailbox rules.</li></ul>Admins:<ul><li> [Disable Outlook on the web](/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-outlook-web-app) for F1 users and ask them not to access the mailbox through any other methods.</li></ul>|
-|Teams | <ul><li>Identify usage of town halls and webinars.</li><li>Identify users who have Teams Phone enabled. If users are using this feature, they might not be the appropriate set of users to transition to an F plan. To continue using Teams Phone functionality, ensure you have purchased and assigned Teams Phone Standard for Frontline Workers licenses for appropriate F plan users.</li></ul>      ||
+|Teams | <ul><li>Identify usage of town halls and webinars.</li><li>Identify users who have Teams Phone enabled. If users are using this feature, they might not be the appropriate set of users to transition to an F plan. To continue using Teams Phone functionality, purchase and assign Teams Phone Standard for Frontline Workers licenses for appropriate F plan users.</li></ul>      ||
 |OneDrive | <ul><li>Identify users who are using more than or close to 2 GB of storage. (OneDrive will become read-only for users who are over the 2 GB limit after the switch to an F plan.)</li><li>Help users reduce the number of files stored in OneDrive and the overall amount of storage used.</li><li>Make sure all files are fully synchronized from users' computers to OneDrive.</li></ul>| |
 
 ## Prepare to switch plans
