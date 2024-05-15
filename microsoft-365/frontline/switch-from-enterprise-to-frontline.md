@@ -157,7 +157,7 @@ F3 and F1 users have 2 GB of OneDrive storage to store and share files. To learn
 |Service or feature|Microsoft 365 E3/E5 (no Teams)|Microsoft 365 F3 (with Teams)|Microsoft 365 F3 (no Teams)|Microsoft 365 F1 (with Teams)|Microsoft 365 F1 (no Teams)|
 |---------|---------|---------|---------|---------|---------|
 |Microsoft Forms|Yes&sup1;|Yes&sup1;|Yes&sup1;|No|No|
-|Delve|Yes|No|No|No|No|
+|Delve|Yes|Yes|Yes|Yes|Yes|
 
 <!--|Service or feature|Microsoft 365 E3/E5|Microsoft 365 F3|Microsoft 365 F1|
 |---------|---------|---------|---------|
@@ -195,8 +195,8 @@ F3 and F1 users have 2 GB of OneDrive storage to store and share files. To learn
 |---------|---------|---------|---------|---------|---------|
 |Power Apps for Microsoft 365|Yes|Yes|Yes|No|No|
 |Power Automate for Microsoft 365|Yes|Yes|Yes|No|No|
-|Copilot Studio for Teams|Available by adding Teams Enterprise or Teams EEA|Yes|Yes|No|No|
-|Dataverse for Teams|Available by adding Teams Enterprise or Teams EEA|Yes|Yes|No|No|
+|Copilot Studio for Teams|Available by adding Teams Enterprise or Teams EEA|Yes|No|Yes|No|
+|Dataverse for Teams|Available by adding Teams Enterprise or Teams EEA|Yes|No|Yes|No|
 
 <!--|Service or feature|Microsoft 365 E3/E5|Microsoft 365 F3|Microsoft 365 F1|
 |---------|---------|---------|---------|
