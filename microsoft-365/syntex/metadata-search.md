@@ -45,7 +45,7 @@ When you add new document libraries within a site, all of these column types are
 
 On existing libraries, when you select the content query icon (![Screenshot of the metadata search icon.](../media/content-understanding/metadata-search-icon.png)), the service will start a workflow to make all of these column types queriable as well. This process can take up to five days to complete.
 
-Not all columns that show up in a document library are queriable. To learn more about queriable columns in SharePoint, see [List columns or Site columns Which one to choose?](/microsoft-365/community/list-column-or-site-column-which-one-to-choose).
+Not all columns that show up in a document library are queriable. To learn more about queriable columns in SharePoint, see [List columns or Site columns: Which one to choose?](/microsoft-365/community/list-column-or-site-column-which-one-to-choose).
 
 <!---
 **New document libraries** — For new libraries, all of the columns are available in content query.
