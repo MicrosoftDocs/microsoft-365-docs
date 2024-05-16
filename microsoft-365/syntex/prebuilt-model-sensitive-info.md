@@ -29,13 +29,6 @@ To create and configure a sensitive information model, follow these steps:
 
 1. Follow the instructions in [Create a model in Syntex](create-syntex-model.md#set-up-a-prebuilt-model) to create a prebuilt sensitive information model. Then continue with the following steps to complete your model.
 
-    in [Create a model](create-syntex-model.md#set-up-a-prebuilt-model&tabs=sensitive-information-processing#set-up-a-prebuilt-model)
-
-
-    in [Create a model](create-syntex-model.md#set-up-a-prebuilt-model&tabs=sensitive information-processing)
-
-    in [Create a model](create-syntex-model.md&tabs=sensitive information-processing#set-up-a-prebuilt-model)
-
     > [!NOTE]
     > When you create a sensitive information model, you will notice that, unlike other models, you don't have the options to select a content type or to apply sensitivity or retention labels. If you need to associate a content type, you'll need to create a different model type. The ability to apply security labels will be provided in future releases.
 
