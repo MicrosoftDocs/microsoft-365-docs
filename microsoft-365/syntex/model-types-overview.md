@@ -110,7 +110,7 @@ Prebuilt models include:
 - [Receipt processing](#receipt-processing)
 - [Sensitive information processing](#sensitive-information-processing)
 
-![Screenshot of the Options for model creation page showing the prebuilt model options.](../media/content-understanding/model-options-prebuilt.png)
+![Screenshot of the Options for model creation page showing the prebuilt model options.](../media/content-understanding/use-a-trained-model-section-2.png)
 
 Prebuilt models are pretrained to recognize documents and the structured information in the documents. Instead of having to create a new custom model from scratch, you can iterate on an existing pretrained model to add specific fields that fit the needs of your organization.
 
