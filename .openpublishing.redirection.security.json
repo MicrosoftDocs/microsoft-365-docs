@@ -4737,47 +4737,47 @@
         },
         {
           "source_path": "Microsoft-365/security/office-365-security/zero-trust-continuous-access-evaluation-microsoft-365.md",
-          "redirect_url": "/defender-office-365/zero-trust-continuous-access-evaluation-microsoft-365",
+          "redirect_url": "/security/zero-trust/zero-trust-continuous-access-evaluation-microsoft-365",
           "redirect_document_id": false
         },
         {
           "source_path": "Microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-common.md",
-          "redirect_url": "/defender-office-365/zero-trust-identity-device-access-policies-common",
+          "redirect_url": "/security/zero-trust/zero-trust-identity-device-access-policies-common",
           "redirect_document_id": false
         },
         {
           "source_path": "Microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-exchange.md",
-          "redirect_url": "/defender-office-365/zero-trust-identity-device-access-policies-exchange",
+          "redirect_url": "/security/zero-trust/zero-trust-identity-device-access-policies-exchange",
           "redirect_document_id": false
         },
         {
           "source_path": "Microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-guest-access.md",
-          "redirect_url": "/defender-office-365/zero-trust-identity-device-access-policies-guest-access",
+          "redirect_url": "/security/zero-trust/zero-trust-identity-device-access-policies-guest-access",
           "redirect_document_id": false
         },
         {
           "source_path": "Microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-mcas-saas.md",
-          "redirect_url": "/defender-office-365/zero-trust-identity-device-access-policies-mcas-saas",
+          "redirect_url": "/security/zero-trust/zero-trust-identity-device-access-policies-mcas-saas",
           "redirect_document_id": false
         },
         {
           "source_path": "Microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-overview.md",
-          "redirect_url": "/defender-office-365/zero-trust-identity-device-access-policies-overview",
+          "redirect_url": "/security/zero-trust/zero-trust-identity-device-access-policies-overview",
           "redirect_document_id": false
         },
         {
           "source_path": "Microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-prereq.md",
-          "redirect_url": "/defender-office-365/zero-trust-identity-device-access-policies-prereq",
+          "redirect_url": "/security/zero-trust/zero-trust-identity-device-access-policies-prerequisite",
           "redirect_document_id": false
         },
         {
           "source_path": "Microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-sharepoint.md",
-          "redirect_url": "/defender-office-365/zero-trust-identity-device-access-policies-sharepoint",
+          "redirect_url": "/security/zero-trust/zero-trust-identity-device-access-policies-sharepoint",
           "redirect_document_id": false
         },
         {
           "source_path": "Microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-teams.md",
-          "redirect_url": "/defender-office-365/zero-trust-identity-device-access-policies-teams",
+          "redirect_url": "/security/zero-trust/zero-trust-identity-device-access-policies-teams",
           "redirect_document_id": false
         },
         {
