@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: kkameth
-ms.date: 04/15/2024
+ms.date: 05/16/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -44,9 +44,9 @@ You can now use content query to search for metadata in any of the queriable col
 When you add new document libraries within a site, all of these column types are queriable.
 
 On existing libraries, when you select the content query icon (![Screenshot of the metadata search icon.](../media/content-understanding/metadata-search-icon.png)), the service will start a workflow to make all of these column types queriable as well. This process can take up to five days to complete.
-
+<!---
 Not all columns that show up in a document library are queriable. To learn more about queriable columns in SharePoint, see [List columns or Site columns: Which one to choose?](/microsoft-365/community/list-column-or-site-column-which-one-to-choose).
-
+--->
 <!---
 **New document libraries** — For new libraries, all of the columns are available in content query.
 
