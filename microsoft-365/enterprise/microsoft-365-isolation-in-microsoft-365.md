@@ -3,7 +3,7 @@ title: "Isolation and Access Control in Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 08/10/2020
+ms.date: 05/17/2024
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -16,6 +16,7 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 - SPO_Content
+- must-keep
 f1.keywords:
 - NOCSH
 description: "Summary: An explanation of isolation and access control within the various applications of Microsoft 365."
@@ -24,7 +25,7 @@ description: "Summary: An explanation of isolation and access control within the
 # Isolation and Access Control in Microsoft 365
 
 Microsoft Entra ID and Microsoft 365 use a highly complex data model that includes tens of services, hundreds of entities, thousands of relationships, and tens of thousands of attributes. At a high level, Microsoft Entra ID and the service directories are the containers of tenants and recipients kept in sync using state-based replication protocols. In addition to the directory information held within Microsoft Entra ID, each of the service workloads have their own directory services infrastructure.
- 
+
 ![Microsoft 365 tenant data sync.](../media/office-365-isolation-tenant-data-sync.png)
 
 Within this model, there’s no single source of directory data. Specific systems own individual pieces of data, but no single system holds all the data. Microsoft 365 services cooperate with Microsoft Entra ID in this data model. Microsoft Entra ID is the "system of truth" for shared data, which is typically small and static data used by every service. The federated model used within Microsoft 365 and Microsoft Entra ID provides the shared view of the data.
@@ -71,7 +72,7 @@ SharePoint stores encrypted file content in Microsoft Azure blobs. Each SharePoi
 
 ## Teams
 
-Your Teams data is stored differently, depending on the content type. 
+Your Teams data is stored differently, depending on the content type.
 
 Check out the [Ignite breakout session on Microsoft Teams architecture](https://channel9.msdn.com/Events/Ignite/Microsoft-Ignite-Orlando-2017/BRK3071) for an in-depth discussion.
 
