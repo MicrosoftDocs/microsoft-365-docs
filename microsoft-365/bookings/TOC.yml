@@ -23,59 +23,56 @@
       href: add-staff.md
     - name: Share your shared booking page
       href: define-service-offerings.md
-    - name: Understanding staff roles
-      href: add-staff.md
-    - name: Configure staff availability
-      href: enter-business-information.md
-    - name: Notify staff when a bookings is created or updated
-      href: define-service-offerings.md
-    - name: Configure staff membership when added to a Shared Booking page
-      href: add-staff.md
-    - name: Create a 1:N and N:N service
-      href: enter-business-information.md
-    - name: Configure SMS text notifications and reminders
-      href: bookings-sms.md
-    - name: Block certain times from being bookable
-      href: add-staff.md
-    - name: Define booking acceptance threshold
-      href: bookings-sms.md
-    - name: Use Buffer Time to add prep time
-      href: define-service-offerings.md
-    - name: Hide services from your booking page
-      href: add-staff.md
-    - name: Configure notifications
-      href: enter-business-information.md
-    - name: Let customers manage their bookings
-      href: define-service-offerings.md
-    - name: Create an appointment on behalf of a customer
-      href: create-a-manual-booking.md
-    - name: Add custom questions for customers
-      href: add-questions.md
-    - name: Set default scheduling policies
-      href: set-scheduling-policies.md
-    - name: Change business hours and time zone
-      href: schedule-closures-time-off-vacation.md     
+    - name: Manage your team availability for shared bookings
+      items:
+        - name: Understanding staff roles
+          href: add-staff.md
+        - name: Configure staff availability
+          href: enter-business-information.md
+        - name: Notify staff when a bookings is created or updated
+          href: define-service-offerings.md
+        - name: Configure staff membership when added to a Shared Booking page
+          href: add-staff.md  
+    - name: Manage your service availability for shared bookings
+      items:
+        - name: Create a 1:N and N:N service
+          href: enter-business-information.md
+        - name: Configure SMS text notifications and reminders
+          href: bookings-sms.md
+        - name: Use Buffer Time to add prep time
+          href: define-service-offerings.md
+        - name: Hide services from your booking page
+          href: add-staff.md
+    - name: Manage your customers for shared bookings
+      items:
+        - name: Let customers manage their bookings
+          href: define-service-offerings.md
+        - name: Create an appointment on behalf of a customer
+          href: create-a-manual-booking.md  
+        - name: Add custom questions for customers
+          href: add-questions.md
+        - name: Manage group attendees
+          href: manage-attendees-bookings.md
+    - name: Manage your shared booking page
+      items:
+        - name: Set your default scheduling policy
+          href: set-scheduling-policies.md
+        - name: Set business closures and time off
+          href: schedule-closures-time-off-vacation.md
+        - name: Set language and time zones
+          href: set-language-time-zones.md
+        - name: Customize and publish your booking page
+          href: customize-booking-page.md
   - name: Bookings for admins
     items:
-    - name: Learn about admin roles
-      href: bookings-overview.md
     - name: Turn bookings on or off
       href: turn-bookings-on-or-off.md
-    - name: Testing 2nd nesting
-      items:
-        - name: Bookings architecture
-          href: bookings-overview.md    
-        - name: Best practices
-          href: bookings-overview.md
-        - name: Manage settings in the Microsoft 365 admin center
-          href: turn-bookings-on-or-off.md    
-        - name: Custom domain support in Bookings
-          href: custom-domain-support.md
-    - name: PowerShell for Bookings
-      href: bookings-overview.md    
+    - name: Custom domain support in Bookings
+      href: custom-domain-support.md
     - name: Use the Bookings Graph APIs
       href: https://learn.microsoft.com/graph/api/resources/booking-api-overview?view=graph-rest-1.0
     - name: Reporting info for Bookings
-      href: reporting-info.md    
+      href: reporting-info.md
     - name: Delete booking page
       href: delete-calendar.md
+
