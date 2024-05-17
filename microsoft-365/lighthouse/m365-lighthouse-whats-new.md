@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: sharonchoi
-ms.date: 5/09/2024
+ms.date: 5/13/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -43,6 +43,14 @@ To check out these improvements, in the left navigation pane in Lighthouse, sele
 [Go to the Tenants page now](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/Tenants.ReactView) (once there, select a tenant)
 
 ## April 2024
+
+### Lighthouse RBAC Account Manager role requirement update
+
+You no longer need to have a Microsoft Entra ID P1 license to manage the Lighthouse RBAC Account Manager role. This change means that security groups assigned to the Lighthouse RBAC Account Manager role no longer need to be a role-assignable group. You can now assign any security group, including existing security groups, to the Lighthouse RBAC Account Manager role. 
+
+[Go to the Lighthouse permissions page now ](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/RBAC.ReactView)
+
+To learn more, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md).
 
 ### Apps & services usage on the Tenants page
 

@@ -400,10 +400,13 @@
               href: turn-off-directory-synchronization.md
 
 - name: Compliance
-  href: ../compliance/index.yml
+  href: essentials-compliance.md
 
 - name: Security
-  href: ../security/index.yml
+  href: essentials-security.md
+
+- name: Privacy
+  href: essentials-privacy.md
 
 - name: Cloud services
   items: 
