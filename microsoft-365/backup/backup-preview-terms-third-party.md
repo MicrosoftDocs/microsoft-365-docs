@@ -65,7 +65,7 @@ Microsoft Offering Feature Preview pricing is as follows:
 |---------|---------|---------|
 |Backup storage     |$/GB/Month         |$0.07         |
 
-****Effects upon Termination.**LENGTH OF OBLIGATIONS; DISCLOSURE</ins>**
+**<ins>LENGTH OF OBLIGATIONS; DISCLOSURE</ins>**
 
 **Preview Period.** The Preview Period continues in effect until <ins>September 30, 2024, or 30 days after Commercial General Availability of the Preview Feature, whichever is first</ins>. Company may terminate their use of the Preview Feature at any time. Terminating use of the Preview Feature will not change any of the rights, licenses granted, or duties made while the Preview Period is in effect. Termination is defined as i) the Company’s termination of use of the Preview Feature and/or ii) the Preview Period ends.
 
