@@ -41,9 +41,4 @@ Set-SPOTenant -ArchiveRedirectUrl ""
 > [!NOTE]
 >For a multi-geo tenant, the URL needs to be set for each geo location.
 
-
-
-
-For a multi-geo tenant, the URL needs to be set for each geo location.
-
 The **Request to reactivate** button won't be visible if a redirect URL hasn't been set.
