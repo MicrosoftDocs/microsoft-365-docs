@@ -61,7 +61,7 @@ Microsoft Offering uses pay-as-you-go (PAYG) billing through an Azure subscripti
 
 Microsoft Offering Feature Preview pricing is as follows:
 
-|Microsoft 365 Backup Meters  |Meter Unit  |Price  |
+|Microsoft 365 Backup Storage Meters  |Meter Unit  |Price  |
 |---------|---------|---------|
 |Backup storage     |$/GB/Month         |$0.07         |
 
