@@ -137,7 +137,7 @@ if(!$settingsObjectID)
 }
 
  
-$groupId = (Get-MgBetaGroup | Where-object {$_.displayname -eq $GroupName}).Id
+$groupId = (Get-MgBetaGroup -All | Where-object {$_.displayname -eq $GroupName}).Id
 
 $params = @{
 	templateId = "62375ab9-6b52-47ed-826b-58e47e0e304b"
