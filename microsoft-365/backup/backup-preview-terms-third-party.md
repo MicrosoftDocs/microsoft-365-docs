@@ -46,13 +46,13 @@ No service-level agreement (SLA) applies to this Feature Preview.
 
 Backup restores are meant to recover from attacks, not to circumvent primary storage costs or other unintended purposes. Periodic testing is permitted, but not in excessive amounts. Restores should be limited to no more than two (2) restores per protected site/mailbox per month, unless recovering from a real attack.
 
-**RELATIONSHIP WITH COMPANY’S CUSTOMERS**: If Company is an Independent Software Vendor (“ISV”) both Parties, Microsoft and ISV will retain responsibility for and control over all aspects of its relationship with its customers/users for the purpose of these Terms. Nothing in these Terms changes or terminates either Party’s rights or obligations with regard to, or its relationship with, its customers/users. Microsoft will not be a Party to any ISV’s customer agreement that Company may use with its customers/users to test the Feature Preview, and Microsoft will not be identified to Company’s customers/users, as a direct support provider for Company’s customers/users of the Feature Preview.
+**RELATIONSHIP WITH COMPANY’S CUSTOMERS**: If Company is an Independent Software Vendor (“ISV”) both Parties, Microsoft and ISV will retain responsibility for and control over all aspects of its relationship with its customers/users for the purpose of these Terms. Nothing in these Terms changes or terminates either Party’s rights or obligations with regard to, or its relationship with, its customers/users. Microsoft won't be a Party to any ISV’s customer agreement that Company may use with its customers/users to test the Feature Preview, and Microsoft won't be identified to Company’s customers/users, as a direct support provider for Company’s customers/users of the Feature Preview.
 
 **Nothing in this Agreement changes Company’s responsibility with regard to ISV’s customers/users data. “User Data” means any data, images, text, content, code, or other information or materials that a user provides to ISV or Microsoft. ISV is solely responsible for informing Company’s customers/users that this is a Preview Feature, and that ISV has all the legal authorizations to allow ISVs customers/users data to be stored in the Preview Feature. ISV’s and their customers/users will not hold Microsoft liable from any liability arising out of or in connection with this Agreement.**
 
 **<ins>LICENSE</ins>**
 
-If Company provides Feedback, Company grants to Microsoft, without charge, the non-exclusive License to make, modify, distribute, or otherwise commercialize the Input as part of any Microsoft offering.
+If Company provides Feedback, Company grants to Microsoft, without charge, the nonexclusive License to make, modify, distribute, or otherwise commercialize the Input as part of any Microsoft offering.
 
 The above License doesn't extend to any technologies that may also be necessary to make or use any offering or portion thereof that incorporates the Feedback but aren't themselves expressly part of the Input (for example, enabling technologies).
 
@@ -68,14 +68,14 @@ Microsoft Offering Feature Preview pricing is as follows:
 
 **<ins>LENGTH OF OBLIGATIONS; DISCLOSURE</ins>**
 
-**Preview Period.** The Preview Period continues in effect until <ins>September 30, 2024, or 30 days after Commercial General Availability of the Preview Feature, whichever is first</ins>. Company may terminate their use of the Preview Feature at any time. Terminating use of the Preview Feature will not change any of the rights, licenses granted, or duties made while the Preview Period is in effect. Termination is defined as i) the Company’s termination of use of the Preview Feature and/or ii) the Preview Period ends.
+**Preview Period.** The Preview Period continues in effect until <ins>September 30, 2024, or 30 days after Commercial General Availability of the Preview Feature, whichever is first.</ins> Company may terminate their use of the Preview Feature at any time. Terminating use of the Preview Feature won't change any of the rights, licenses granted, or duties made while the Preview Period is in effect. Termination is defined as i) the Company’s termination of use of the Preview Feature and/or ii) the Preview Period ends.
 
-**Effects upon Termination.** Once terminated, Company will no longer have access to Microsoft Offering and all the backed-up content if Microsoft does not continue with the then generally available Microsoft Offering features. Should Microsoft choose to make the Microsoft Offering service generally available using the same pay-as-you-go (PAYG) billing setup through an Azure subscription, Company may continue without interruption. As this is a preview and not commercially generally available, bugs and other system errors may occur causing interruptions or errors in operating. As referenced in the "Representations and Limitations" section below, this Preview Feature is provided “as-is” and Company bears the risk of using them.
+**Effects upon Termination.** Once terminated, Company will no longer have access to Microsoft Offering and all the backed-up content if Microsoft doesn't continue with the then generally available Microsoft Offering features. Should Microsoft choose to make the Microsoft Offering service generally available using the same pay-as-you-go (PAYG) billing setup through an Azure subscription, Company may continue without interruption. As this is a preview and not commercially generally available, bugs and other system errors may occur causing interruptions or errors in operating. As referenced in the "Representations and Limitations" section below, this Preview Feature is provided “as-is” and Company bears the risk of using them.
 
 **<ins>TERMINATION FOR NON-PAYMENT</ins>**
 
-In case the Company’s Azure subscription goes into an unhealthy stage of deleted or canceled or suspended, we'll prevent any future backup and restores until the subscription is back to a healthy state. Company will have 30 days to recover any backed-up data and restores by bringing back the subscription to an active state. If no action is taken from the Company to bring subscription back to active state in 30 days, we will soft delete the backed-up data from systems after this 30 days. Upon reactivation, Company must also pay for Microsoft Offering usage for the days the subscription was in unhealthy state.
-This Agreement cannot be extended. Microsoft may also choose not to make the Preview Feature generally commercially available.
+In case the Company’s Azure subscription goes into an unhealthy stage of deleted or canceled or suspended, we'll prevent any future backup and restores until the subscription is back to a healthy state. Company will have 30 days to recover any backed-up data and restores by bringing back the subscription to an active state. If no action is taken from the Company to bring subscription back to active state in 30 days, we'll soft delete the backed-up data from systems after this 30 days. Upon reactivation, Company must also pay for Microsoft Offering usage for the days the subscription was in unhealthy state.
+This Agreement can't be extended. Microsoft may also choose not to make the Preview Feature generally commercially available.
 
 **<ins>REPRESENTATIONS AND LIMITATIONS</ins>**
 
@@ -89,7 +89,7 @@ This Agreement cannot be extended. Microsoft may also choose not to make the Pre
 
 **Authority.** Company represents it has all rights and authority necessary to be legally bound to these Terms and Conditions and grant the rights described therein for itself and its affiliates.
 
-**Limitations.** All information, materials, and feedback are provided “as-is” and Company bears the risk of using them; Company gives no express warranties, guarantees, or conditions as to its Feedback; and to the extent permitted under local law, Company excludes the implied warranties of merchantability, fitness for a particular purpose, title, and non-infringement as to its Input.
+**Limitations.** All information, materials, and feedback are provided “as-is” and Company bears the risk of using them; Company gives no express warranties, guarantees, or conditions as to its Feedback; and to the extent permitted under local law, Company excludes the implied warranties of merchantability, fitness for a particular purpose, title, and noninfringement as to its Input.
 
 **<ins>LIMITATIONS ON AND EXCLUSIONS OF REMEDIES AND DAMAGES</ins>**
 
@@ -99,4 +99,4 @@ Except as described herein, the only remedy for claims relating to these Terms a
 
 2. Even if one of us knew or should have known about the possibility of the damages.
 
-The limitations in this section do not apply to claims arising from or in connection with any infringement, misuse, or misappropriation by one of us of the other’s intellectual property rights.
+The limitations in this section don't apply to claims arising from or in connection with any infringement, misuse, or misappropriation by one of us of the other’s intellectual property rights.
