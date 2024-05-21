@@ -5,13 +5,14 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 05/20/2024
+ms.date: 05/31/2024
 ms.topic: conceptual
 ms.service: microsoft-365-backup
 ms.custom: backup
 search.appverid:
 ms.collection:
 ms.localizationpriority: medium
+ROBOTS: NOINDEX, NOFOLLOW
 description: Read the preview terms and conditions for Microsoft 365 Backup Storage (Preview).
 ---
 
