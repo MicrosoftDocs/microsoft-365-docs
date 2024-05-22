@@ -8,7 +8,7 @@ ms.date: 05/22/2024
 ms.topic: conceptual
 ---
 
-# MICROSOFT SOFTWARE LICENSE TERMS
+# Microsoft Software License Terms - Teams Assignments LTI app private preview
 
 TEAMS ASSIGNMENTS LTI APP PRIVATE PREVIEW
 
@@ -16,13 +16,13 @@ These license terms are an agreement between You the Participant and Microsoft C
 
 1. **INSTALLATION AND USE RIGHTS.**
 
-     1. **General.** Teams Assignments is a learning tools interoperability (LTI) application that integrates Microsoft Teams and Assignments in your learning management system (LMS) where educators and students can launch and track status of Teams Assignments and sync grades from those assignments to the LMS. Teams Assignments Preview participants will be invited to the LTI Office hours, and our EIP community.
+     1. **General.** Teams Assignments is a learning tools interoperability (LTI) application that integrates Microsoft Teams and Assignments in your learning management system (LMS) where educators and students can launch and track status of Teams Assignments and sync grades from those assignments to the LMS. Teams Assignments Preview participants will be invited to the LTI Office hours, and our Education Insiders Program (EIP) community.
 
-     1. **Work or School Accounts**. You can sign into the software with a work or school email address. If you do, you agree that the owner of the domain associated with your email address may control and administer your account, and access and process your data, including the contents of your communications and files. You further agree that your use of the software may be subject to: i) your organization’s guidelines and policies regarding the use of the software; and ii) the agreements Microsoft has with you or your organization, and in such case these terms may not apply.  If you already have a Microsoft account and you use a separate work or school email address to access the software, you may be prompted to update the email address associated with your Microsoft account to continue accessing the software.
+     1. **Work or School Accounts**. You can sign into the software with a work or school email address. If you do, you agree that the owner of the domain associated with your email address may control and administer your account, and access and process your data, including the contents of your communications and files. You further agree that your use of the software may be subject to: i) your organization’s guidelines and policies regarding the use of the software; and ii) the agreements Microsoft has with you or your organization, and in such case these terms may not apply. If you already have a Microsoft account and you use a separate work or school email address to access the software, you may be prompted to update the email address associated with your Microsoft account to continue accessing the software.
 
-     1. **Package Managers.** The software may include package managers that give you the option to download other Microsoft and third party software packages to use with your application. Those packages are under their own licenses, and not this agreement. Microsoft doesn't distribute, license or provide any warranties for any of the third party packages.
+     1. **Package Managers.** The software may include package managers that give you the option to download other Microsoft and third party software packages to use with your application. Those packages are under their own licenses, and not this agreement. Microsoft doesn't distribute, license, or provide any warranties for any of the third party packages.
 
-     1. **Competitive Benchmarking.** If you are a direct competitor, and you access or use the software for purposes of competitive benchmarking, analysis, or intelligence gathering, you waive as against Microsoft, its subsidiaries, and its affiliated companies (including prospectively) any competitive use, access, and benchmarking test restrictions in the terms governing your software to the extent your terms of use are, or purport to be, more restrictive than Microsoft’s terms. If you don't waive any such purported restrictions in the terms governing your software, you aren't allowed to access or use this software, and will not do so.
+     1. **Competitive Benchmarking.** If you're a direct competitor, and you access or use the software for purposes of competitive benchmarking, analysis, or intelligence gathering, you waive as against Microsoft, its subsidiaries, and its affiliated companies (including prospectively) any competitive use, access, and benchmarking test restrictions in the terms governing your software to the extent your terms of use are, or purport to be, more restrictive than Microsoft’s terms. If you don't waive any such purported restrictions in the terms governing your software, you aren't allowed to access or use this software, and will not do so.
 
 1. **SCOPE OF LICENSE.** The software is licensed, not sold. Microsoft reserves all other rights. Unless applicable law gives you more rights despite this limitation, you will not (and have no right to):
 
@@ -38,7 +38,7 @@ These license terms are an agreement between You the Participant and Microsoft C
 
 1. **PRE-RELEASE SOFTWARE.** The software is a pre-release version. It may not operate correctly. It may be different from the commercially released version.
 
-1. **FEEDBACK.** If you give feedback about the software to Microsoft, you give to Microsoft, without charge, the right to use, share and commercialize your feedback in any way and for any purpose. You will not give feedback that is subject to a license that requires Microsoft to license its software or documentation to third parties because Microsoft includes your feedback in them. These rights survive this agreement.
+1. **FEEDBACK.** If you give feedback about the software to Microsoft, you give to Microsoft, without charge, the right to use, share and commercialize your feedback in any way and for any purpose. You won't give feedback that is subject to a license that requires Microsoft to license its software or documentation to third parties because Microsoft includes your feedback in them. These rights survive this agreement.
 
 1. **DATA.**
 
@@ -50,7 +50,7 @@ These license terms are an agreement between You the Participant and Microsoft C
 
 1. **EXPORT RESTRICTIONS.** You must comply with all domestic and international export laws and regulations that apply to the software, which include restrictions on destinations, end users, and end use. For further information on export restrictions, visit [https://aka.ms/exporting](https://aka.ms/exporting).
 
-1. **SUPPORT SERVICES.** Microsoft is not obligated under this agreement to provide any support services for the software. Any support provided is “as is”, “with all faults”, and without warranty of any kind.
+1. **SUPPORT SERVICES.** Microsoft isn't obligated under this agreement to provide any support services for the software. Any support provided is “as is”, “with all faults”, and without warranty of any kind.
 
 1. **UPDATES.** The software may periodically check for updates, and download and install them for you. You may obtain updates only from Microsoft or authorized sources. Microsoft may need to update your system to provide you with updates. You agree to receive these automatic updates without any additional notice. Updates may not include or support all existing software features, services, or peripheral devices.
 
@@ -58,7 +58,7 @@ These license terms are an agreement between You the Participant and Microsoft C
 
 1. **APPLICABLE LAW AND PLACE TO RESOLVE DISPUTES.** If you acquired the software in the United States or Canada, the laws of the state or province where you live (or, if a business, where your principal place of business is located) govern the interpretation of this agreement, claims for its breach, and all other claims (including consumer protection, unfair competition, and tort claims), regardless of conflict of laws principles. If you acquired the software in any other country, its laws apply. If U.S. federal jurisdiction exists, you and Microsoft consent to exclusive jurisdiction and venue in the federal court in King County, Washington for all disputes heard in court. If not, you and Microsoft consent to exclusive jurisdiction and venue in the Superior Court of King County, Washington for all disputes heard in court.
 
-1. **CONSUMER RIGHTS; REGIONAL VARIATIONS.** This agreement describes certain legal rights. You may have other rights, including consumer rights, under the laws of your state, province, or country. Separate and apart from your relationship with Microsoft, you may also have rights with respect to the party from which you acquired the software. This agreement does not change those other rights if the laws of your state, province, or country do not permit it to do so. For example, if you acquired the software in one of the below regions, or mandatory country law applies, then the following provisions apply to you:
+1. **CONSUMER RIGHTS; REGIONAL VARIATIONS.** This agreement describes certain legal rights. You may have other rights, including consumer rights, under the laws of your state, province, or country. Separate and apart from your relationship with Microsoft, you may also have rights with respect to the party from which you acquired the software. This agreement doesn't change those other rights if the laws of your state, province, or country don't permit it to do so. For example, if you acquired the software in one of the below regions, or mandatory country law applies, then the following provisions apply to you:
 
      1. **Australia.** You have statutory guarantees under the Australian Consumer Law and nothing in this agreement is intended to affect those rights.
 
