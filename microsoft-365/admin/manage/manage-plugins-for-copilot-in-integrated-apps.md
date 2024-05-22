@@ -87,13 +87,13 @@ For detailed information about how Copilot for Microsoft 365 uses, protects, and
 
 ## Publish extensions for Copilot
 
-The publishing process in the Microsoft 365 admin center for plugins and GPTs submitted via Copilot Studio is designed to ensure governance and quality of the custom applications. It also reduces manual work by automating the submission of manifests, freeing developers and admins from tedious tasks. The simplified approval process reduces the time it takes for you to approve apps, making it easier for you to manage custom applications in the Microsoft 365 admin center.
+The publishing process in the Microsoft 365 admin center for apps with Copilot extensions submitted via Copilot Studio is designed to ensure governance and quality of the custom applications. It also reduces manual work by automating the submission of manifests, freeing developers and admins from tedious tasks. The simplified approval process reduces the time it takes for you to approve apps, making it easier for you to manage custom applications in the Microsoft 365 admin center.
 
 The publishing process involves the following steps:
 
-1. Developers create and test their plugins and GPTs in Copilot Studio, which provides a user-friendly interface for inputting the parameters and data for the applications.
-2. Developers submit their plugins and GPTs for approval from Copilot Studio to the Microsoft 365 admin center.
-3. You can discover the plugins and GPTs that are submitted but not yet approved in admin center under the new Requested Apps tab in the Integrated Apps section. The tab shows the name, host products, status, and Copilot readiness of the applications. The status can be either ‘Publish pending’ or ‘Update pending’, depending on whether the application is new or has been updated by the developer.
+1. Developers create and test their apps with Copilot extensions in Copilot Studio, which provides a user-friendly interface for inputting the parameters and data for the applications.
+2. Developers submit their apps with Copilot extensions for approval from Copilot Studio to the Microsoft 365 admin center.
+3. You can discover the apps with Copilot extensions that are submitted but not yet approved in admin center under the new Requested Apps tab in the Integrated Apps section. The tab shows the name, host products, status, and Copilot readiness of the applications. The status can be either ‘Publish pending’ or ‘Update pending’, depending on whether the application is new or has been updated by the developer.
 4. You can select on any pending application to see more details and metadata, such as the description, requester, request date, and the status. These details help you to make an informed decision on whether to publish or reject the application.
 5. You can approve or disapprove any pending application by selecting **Publish** or **Reject**.
 
