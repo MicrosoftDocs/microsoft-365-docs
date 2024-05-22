@@ -3,14 +3,16 @@ title: Microsoft Assignments LTI app preview - Pre-Release or Evaluation Use Ter
 description: Learn about the preview Teams Assignments LTI license terms 
 author: jennplatt
 ms.author: v-jeplatt
+ms.manager: mimast
 ms.date: 05/22/2024
+ms.topic: conceptual
 ---
 
 # MICROSOFT SOFTWARE LICENSE TERMS
 
 TEAMS ASSIGNMENTS LTI APP PRIVATE PREVIEW
 
-These license terms are an agreement between You the Participant and Microsoft Corporation (or one of its affiliates). They apply to the software named above and any Microsoft services or software updates (except to the extent such services or updates are accompanied by new or additional terms, in which case those different terms apply prospectively and do not alter your or Microsoft’s rights relating to pre-updated software or services). IF YOU COMPLY WITH THESE LICENSE TERMS, YOU HAVE THE RIGHTS BELOW. BY USING THE SOFTWARE, YOU ACCEPT THESE TERMS.
+These license terms are an agreement between You the Participant and Microsoft Corporation (or one of its affiliates). They apply to the software named above and any Microsoft services or software updates (except to the extent such services or updates are accompanied by new or additional terms, in which case those different terms apply prospectively and don't alter your or Microsoft’s rights relating to pre-updated software or services). IF YOU COMPLY WITH THESE LICENSE TERMS, YOU HAVE THE RIGHTS BELOW. BY USING THE SOFTWARE, YOU ACCEPT THESE TERMS.
 
 1. **INSTALLATION AND USE RIGHTS.**
 
@@ -18,9 +20,9 @@ These license terms are an agreement between You the Participant and Microsoft C
 
      1. **Work or School Accounts**. You can sign into the software with a work or school email address. If you do, you agree that the owner of the domain associated with your email address may control and administer your account, and access and process your data, including the contents of your communications and files. You further agree that your use of the software may be subject to: i) your organization’s guidelines and policies regarding the use of the software; and ii) the agreements Microsoft has with you or your organization, and in such case these terms may not apply.  If you already have a Microsoft account and you use a separate work or school email address to access the software, you may be prompted to update the email address associated with your Microsoft account to continue accessing the software.
 
-     1. **Package Managers.** The software may include package managers that give you the option to download other Microsoft and third party software packages to use with your application. Those packages are under their own licenses, and not this agreement. Microsoft does not distribute, license or provide any warranties for any of the third party packages.
+     1. **Package Managers.** The software may include package managers that give you the option to download other Microsoft and third party software packages to use with your application. Those packages are under their own licenses, and not this agreement. Microsoft doesn't distribute, license or provide any warranties for any of the third party packages.
 
-     1. **Competitive Benchmarking.** If you are a direct competitor, and you access or use the software for purposes of competitive benchmarking, analysis, or intelligence gathering, you waive as against Microsoft, its subsidiaries, and its affiliated companies (including prospectively) any competitive use, access, and benchmarking test restrictions in the terms governing your software to the extent your terms of use are, or purport to be, more restrictive than Microsoft’s terms. If you do not waive any such purported restrictions in the terms governing your software, you are not allowed to access or use this software, and will not do so.
+     1. **Competitive Benchmarking.** If you are a direct competitor, and you access or use the software for purposes of competitive benchmarking, analysis, or intelligence gathering, you waive as against Microsoft, its subsidiaries, and its affiliated companies (including prospectively) any competitive use, access, and benchmarking test restrictions in the terms governing your software to the extent your terms of use are, or purport to be, more restrictive than Microsoft’s terms. If you don't waive any such purported restrictions in the terms governing your software, you aren't allowed to access or use this software, and will not do so.
 
 1. **SCOPE OF LICENSE.** The software is licensed, not sold. Microsoft reserves all other rights. Unless applicable law gives you more rights despite this limitation, you will not (and have no right to):
 
@@ -42,7 +44,7 @@ These license terms are an agreement between You the Participant and Microsoft C
 
      1. **Data Collection.** The software may collect information about you and your use of the software, and send that to Microsoft. Microsoft may use this information to provide services and improve our products and services. You may opt-out of many of these scenarios, but not all, as described in the product documentation.  There are also some features in the software that may enable you to collect data from users of your applications. If you use these features to enable data collection in your applications, you must comply with applicable law, including providing appropriate notices to users of your applications. You can learn more about data collection and use in the help documentation and the privacy statement at [https://aka.ms/privacy](https://aka.ms/privacy). Your use of the software operates as your consent to these practices.
 
-     1. **Processing of Personal Data.** To the extent Microsoft is a processor or subprocessor of personal data in connection with the software, Microsoft makes the commitments in the European Union General Data Protection Regulation Terms of the Online Services Terms to all customers effective May 25, 2018, at [https://learn.microsoft.com/en-us/legal/gdpr](https://learn.microsoft.com/en-us/legal/gdpr).
+     1. **Processing of Personal Data.** To the extent Microsoft is a processor or subprocessor of personal data in connection with the software, Microsoft makes the commitments in the European Union General Data Protection Regulation Terms of the Online Services Terms to all customers effective May 25, 2018, at [https://learn.microsoft.com/legal/gdpr](https://learn.microsoft.com/legal/gdpr).
 
 1. **MICROSOFT 365 EDU SUBSCRIPTION.** Use of the software requires a Microsoft 365 EDU subscription. Your access to the software made available on account of your Microsoft 365 EDU subscription must comply with the existing terms for Microsoft 365 that apply to you through your subscription or your organization's subscription. You may lose access to the service if a) your or your organization’s Microsoft 365 subscription expires, or b) your organization decides to terminate your license to access the service.
 
