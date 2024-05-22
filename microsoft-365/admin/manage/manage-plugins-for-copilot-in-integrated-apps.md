@@ -31,7 +31,7 @@ description: "Learn how to manage extensions for Copilot in the Integrated apps 
 # Manage extensions for Copilot in Integrated Apps
 
 > [!IMPORTANT]
-> 
+>
 > - You must be licensed with Copilot for Microsoft 365 to use extensions for Copilot for Microsoft 365.
 > - The capability is enabled by default in all Microsoft 365 Copilot licensed tenants.
 > - Admins can disable this functionality on a user and group basis and control how individual extensions are approved for use, and which extensions are enabled.
@@ -101,4 +101,4 @@ The publishing process involves the following steps:
 
    b. If the application is disapproved, it is removed from the ‘Pending approval’ list in the admin center, and the status is shared with Copilot Studio. The developer can then make changes and resubmit the application for approval.
 
-If the developer publishes an update to an existing application, the update is also submitted for approval and follows the same workflow as a new application. The update is shown in the ‘Pending approval’ list with the status ‘Update pending’. Until the update is approved, the previous version of the application remains available to the end users.
+6. If the developer publishes an update to an existing application, the update is also submitted for approval and follows the same workflow as a new application. The update is shown in the ‘Pending approval’ list with the status ‘Update pending’. Until the update is approved, the previous version of the application remains available to the end users.
