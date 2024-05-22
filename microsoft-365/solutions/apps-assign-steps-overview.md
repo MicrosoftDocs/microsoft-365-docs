@@ -23,7 +23,7 @@ As part of the Intune set up process, you may have already added users to Intune
 
 ## Understand Microsoft Entra ID
 
-## 
+
 
 
 

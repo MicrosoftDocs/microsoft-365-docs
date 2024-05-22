@@ -15,11 +15,9 @@ ms.custom:
 keywords:
 ---
 
-# Step 2. Assign apps to groups
+# Step 2. Assign apps to users, groups, and devices
 
-Level 1 is the minimum data protection configuration for an enterprise mobile device. This configuration replaces the need for basic Exchange Online device access policies by requiring a PIN to access work or school data, encrypting the work or school account data, and providing the capability to selectively wipe the school or work data. However, unlike Exchange Online device access policies, the below App Protection Policy settings apply to all the apps selected in the policy, thereby ensuring data access is protected beyond mobile messaging scenarios.
 
-The policies in level 1 enforce a reasonable data access level while minimizing the impact to users and mirror the default data protection and access requirements settings when creating an App Protection Policy within Microsoft Intune.
 
 ## Assign initial apps to your organization
 
@@ -45,10 +43,6 @@ Intune allows you to customize the Company Portal so that it better supports you
 ### Assign Microsoft Teams
 
 ### Assign other apps
-
-## Include and exclude app assignments
-
-
 
 
 ## Next step

@@ -433,9 +433,9 @@
         items: 
         - name: Assign apps overview      
           href: apps-assign-steps-overview.md     
-        - name: Step 1. Confirm users and devices
+        - name: Step 1. Confirm users, devices, or groups
           href: apps-assign-step-1.md
-        - name: Step 2. Assign apps to groups
+        - name: Step 2. Assign apps to users, devices, or groups
           href: apps-assign-step-2.md
         - name: Step 3. Verify and monitor app assignments
           href: apps-assign-step-3.md

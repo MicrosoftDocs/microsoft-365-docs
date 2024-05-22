@@ -17,9 +17,22 @@ keywords:
 
 # Understand app assignments using Intune
 
-When you set an application's assignment, you're setting whether the app will be **Required**, **Available for enrolled devices**, **Available with or without enrollment**, or **Uninstalled**. Each of these options has additional sub-options, such as availability, installation deadline, and restart grace period. These options are dependent on the platform of the device that the app was created for. Not all app types support all of these assignment intents.
+When you set an application's assignment, you're setting whether the app will be **Required**, **Available for enrolled devices**, **Available with or without enrollment**, or **Uninstalled**. Each of these options has additional sub-options, such as availability, installation deadline, and restart grace period. 
 
-## Include or exclude groups
+> [!NOTE]
+> App assignment options are dependent on the app platform (the platform of the device where the app will be installed). Not all app types support all assignment intents.
+
+| Assignment | Description |
+|---|---|
+| Required | The app is installed on devices in the selected groups. Some platforms may have additional prompts for the end user to acknowledge before app installation begins. |
+| Available   for enrolled devices | Assign the app to groups of users who can install the app from the Company Portal app or website. |
+| Available   with or without enrollment | Assign this app to groups of users whose devices aren't enrolled with Intune. Users must be assigned an Intune license. |
+| Uninstall | The app is uninstalled from devices in the selected groups if Intune has previously installed the application onto the device via an **Available for enrolled devices** or **Required** assignment using the same deployment.  |
+
+> [!NOTE]
+> You can assign apps based on your intent. For example, if your intent is to have the app available for a group to install, you can assign the app as **Available for enrolled devices** or **Available with or without enrollment**. If you must have the app installed for users, groups, or devices, such as Microsoft Outlook or the Company Portal, you can set the app assignment to be **Required**.
+
+## Include or exclude assignments
 
 To set the availability of an app, you include and exclude app assignments to a group of users or devices by using a combination of include and exclude group assignments. This capability can be useful when you make the app available by including a large group, and then narrow the selected users by excluding a smaller group. The smaller group might be a test group or an executive group.
 
