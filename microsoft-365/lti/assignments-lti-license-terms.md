@@ -1,9 +1,9 @@
 ---
 title: Microsoft Assignments LTI app preview - Pre-Release or Evaluation Use Terms
-description: Learn about the preview Teams Assignments LTI license terms 
+description: Learn about the preview Teams Assignments LTI license terms.
 author: jennplatt
 ms.author: v-jeplatt
-ms.manager: mimast
+manager: mimast
 ms.date: 05/22/2024
 ms.topic: conceptual
 ---
@@ -42,15 +42,15 @@ These license terms are an agreement between You the Participant and Microsoft C
 
 1. **DATA.**
 
-     1. **Data Collection.** The software may collect information about you and your use of the software, and send that to Microsoft. Microsoft may use this information to provide services and improve our products and services. You may opt-out of many of these scenarios, but not all, as described in the product documentation.  There are also some features in the software that may enable you to collect data from users of your applications. If you use these features to enable data collection in your applications, you must comply with applicable law, including providing appropriate notices to users of your applications. You can learn more about data collection and use in the help documentation and the privacy statement at [https://aka.ms/privacy](https://aka.ms/privacy). Your use of the software operates as your consent to these practices.
+     1. **Data Collection.** The software may collect information about you and your use of the software, and send that to Microsoft. Microsoft may use this information to provide services and improve our products and services. You may opt-out of many of these scenarios, but not all, as described in the product documentation. There are also some features in the software that may enable you to collect data from users of your applications. If you use these features to enable data collection in your applications, you must comply with applicable law, including providing appropriate notices to users of your applications. You can learn more about data collection and use in the help documentation and the privacy statement at [https://aka.ms/privacy](https://aka.ms/privacy). Your use of the software operates as your consent to these practices.
 
-     1. **Processing of Personal Data.** To the extent Microsoft is a processor or subprocessor of personal data in connection with the software, Microsoft makes the commitments in the European Union General Data Protection Regulation Terms of the Online Services Terms to all customers effective May 25, 2018, at [https://learn.microsoft.com/legal/gdpr](https://learn.microsoft.com/legal/gdpr).
+     1. **Processing of Personal Data.** To the extent Microsoft is a processor or subprocessor of personal data in connection with the software, Microsoft makes the commitments in the European Union General Data Protection Regulation Terms of the Online Services Terms to all customers effective May 25, 2018, at [https://learn.microsoft.com/legal/gdpr](/legal/gdpr).
 
 1. **MICROSOFT 365 EDU SUBSCRIPTION.** Use of the software requires a Microsoft 365 EDU subscription. Your access to the software made available on account of your Microsoft 365 EDU subscription must comply with the existing terms for Microsoft 365 that apply to you through your subscription or your organization's subscription. You may lose access to the service if a) your or your organization’s Microsoft 365 subscription expires, or b) your organization decides to terminate your license to access the service.
 
 1. **EXPORT RESTRICTIONS.** You must comply with all domestic and international export laws and regulations that apply to the software, which include restrictions on destinations, end users, and end use. For further information on export restrictions, visit [https://aka.ms/exporting](https://aka.ms/exporting).
 
-1. **SUPPORT SERVICES.** Microsoft isn't obligated under this agreement to provide any support services for the software. Any support provided is “as is”, “with all faults”, and without warranty of any kind.
+1. **SUPPORT SERVICES.** Microsoft isn't obligated under this agreement to provide any support services for the software. Any support provided is "as is," "with all faults," and without warranty of any kind.
 
 1. **UPDATES.** The software may periodically check for updates, and download and install them for you. You may obtain updates only from Microsoft or authorized sources. Microsoft may need to update your system to provide you with updates. You agree to receive these automatic updates without any additional notice. Updates may not include or support all existing software features, services, or peripheral devices.
 
