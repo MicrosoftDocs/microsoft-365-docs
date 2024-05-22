@@ -142,19 +142,48 @@ You can't generate a report where you enter a user's account and then get a list
 
 There are circumstances where new users show up as **unknown**. This is usually due to occasional delays in creating user profiles.
 
-## Show user details in the reports
+## Show user, group, or site details in the reports
 
-By default, user details will be hidden for all reports.
+By default, user, group, or site details will be hidden for all reports.
 
 Your user list will look like this:
 
 ![Reports - anonymized user list.](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
 
-If you want to unhide user-level information when you're generating your reports, a **global administrator** can quickly make that change in the admin center.
+If you want to unhide user, group, or site information when you're generating your reports, a **global administrator** can quickly make that change in the admin center.
 
-Reports provide information about your organization's usage data. By default, reports display information with identifiable names for users, groups, and sites. Starting September 1, 2021, we're hiding user information by default for all reports as part of our ongoing commitment to help companies support their local privacy laws.
+Reports provide information about your organization's usage data. Starting September 1, 2021, we're hiding user, group, or site information by default for all reports as part of our ongoing commitment to help companies support their local privacy laws.
 
-Global administrators can revert this change for their tenant and show identifiable user information if their organization's privacy practices allow it. It can be achieved in the Microsoft 365 admin center by following these steps:
+The org setting applies to:
+
+Properties for user-level in many reports:
+
+- User ids
+- Usernames
+- User principal names
+
+Properties for OneDrive and SharePoint site usage reports:
+
+- Site ids
+- Site URLs
+
+Properties for Microsoft 365 apps Group activity report:
+
+- Group ids
+- Group names
+
+Properties for Viva Engage group activity report:
+
+- Group name
+- Group admin
+
+Properties for Teams team usage report:
+
+- Team names
+
+There are additional reports that follow this org setting. For example, some reports in Microsoft Teams admin center follow the same.
+
+Global administrators can revert this change for their tenant and show identifiable user, group, and site information if their organization's privacy practices allow it. It can be achieved in the Microsoft 365 admin center by following these steps:
 
 1. In the admin center, go to the **Settings** \> **Org Settings** \> **Services** page.
 
