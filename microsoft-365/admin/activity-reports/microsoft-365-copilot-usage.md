@@ -172,15 +172,15 @@ To ensure data quality, we perform daily data validation checks for the past thr
 |------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
 | User name                                      | The user's principal name.                                                                                                                    |
 | Display name                                   | The full name of the user.                                                                                                                    |
-| Last activity date (UTC (Universal Time Code)) | The latest date the user had activity in Microsoft 365 Copilot among all Microsoft 365 products, including any of the intentional activities. |
-| Last activity date of Teams Copilot (UTC)      | The latest date the user had activity in Microsoft Teams Copilot, including any of the intentional activities.                                |
-| Last activity date of Word Copilot (UTC)       | The latest date the user had activity in Word Copilot, including any of the intentional activities.                                           |
-| Last activity date of Excel Copilot (UTC)      | The latest date the user had activity in Excel Copilot, including any of the intentional activities.                                        |
-| Last activity date of PowerPoint Copilot (UTC)  | The latest date the user had activity in PowerPoint Copilot, including any of the intentional activities.                                    |
-| Last activity date of Outlook Copilot (UTC)    | The latest date the user had activity in Outlook Copilot, including any of the intentional activities.                                      |
-| Last activity date of OneNote Copilot (UTC)    | The latest date the user had activity in OneNote Copilot, including any of the intentional activities.                                      |
-| Last activity date of Loop Copilot (UTC)       | The latest date the user had activity in Loop Copilot, including any of the intentional activities.                                         |
-| Last activity date of Copilot chat (UTC)        | The latest date the user had activity in Copilot chat, including any of the intentional activities.                                        |
+| Last activity date (UTC (Universal Time Code)) | The latest date the user had activity in Copilot for Microsoft 365 among all Microsoft 365 products, including any of the intentional activities, regardless of the selected time period of past 7/30/90/180 days. |
+| Last activity date of Teams Copilot (UTC)      | The latest date the user had activity in Microsoft Teams Copilot, including any of the intentional activities,regardless of the selected time period of past 7/30/90/180 days.                                |
+| Last activity date of Word Copilot (UTC)       | The latest date the user had activity in Word Copilot, including any of the intentional activities, regardless of the selected time period of past 7/30/90/180 days.                                            |
+| Last activity date of Excel Copilot (UTC)      | The latest date the user had activity in Excel Copilot, including any of the intentional activities, regardless of the selected time period of past 7/30/90/180 days.                                        |
+| Last activity date of PowerPoint Copilot (UTC)  | The latest date the user had activity in PowerPoint Copilot, including any of the intentional activities, regardless of the selected time period of past 7/30/90/180 days.                                   |
+| Last activity date of Outlook Copilot (UTC)    | The latest date the user had activity in Outlook Copilot, including any of the intentional activities, regardless of the selected time period of past 7/30/90/180 days.                                       |
+| Last activity date of OneNote Copilot (UTC)    | The latest date the user had activity in OneNote Copilot, including any of the intentional activities, regardless of the selected time period of past 7/30/90/180 days.                                       |
+| Last activity date of Loop Copilot (UTC)       | The latest date the user had activity in Loop Copilot, including any of the intentional activities, regardless of the selected time period of past 7/30/90/180 days.                                          |
+| Last activity date of Copilot chat (UTC)        | The latest date the user had activity in Copilot chat, including any of the intentional activities, regardless of the selected time period of past 7/30/90/180 days.                                         |
 
 ## Make the user-specific data anonymous
 
@@ -205,10 +205,6 @@ This report now includes a new metric for Microsoft Copilot with Graph-grounded 
 - Typing a message into the chat window and submitting.
 - Selecting a prompt from the "Try these Prompts" section, which will automatically copy the prompt into the chat box.
 - Clicking on one of the suggestions from the "Stay on top" tab in some platforms (such as Microsoft365.com).
-
-### What are the behaviors of All up last activity date and last activity date per app in the user-level table?
-
-All up last activity date and last activity date per app are reflecting different narratives now. All up last activity date is reflecting the historical last activity date no matter what period is selected on the page, while last activity date per app is reflecting the last activity date within the selected time period; hence, if there's no activity in selected time period, the last activity date per app will be empty. We are planning to make them consistent to reflect the historical last activity date narrative and will provide update once it’s done.
 
 ### What's the difference between the user activity table and audit log?
 
