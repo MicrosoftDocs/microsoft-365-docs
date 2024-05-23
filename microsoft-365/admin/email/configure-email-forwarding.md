@@ -29,11 +29,10 @@ description: "Email forwarding lets you forward email messages sent to a Microso
 
 As the admin of an organization, you might have company requirements to set up email forwarding for a user's mailbox. Email forwarding lets you forward email messages sent to a user's mailbox to another user's mailbox inside or outside of your organization.
 
-> [!WARNING]
-> When using email forwarding to a mailbox outside of your organisation, Exchange Online Protection / Defender for Office 365 will not prevent messages identified as Spam / Phishing / Malware from being forwarded to the recipient. The recipient will need to have their own email security filter in place to identify and block these messages.
-
 > [!IMPORTANT]
 > You can use outbound spam filter policies to control automatic forwarding to external recipients. For more information, see [Control automatic external email forwarding in Microsoft 365](/microsoft-365/security/office-365-security/outbound-spam-policies-external-email-forwarding#how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls).
+> 
+> Email forwarding to recipients outside the organization doesn't prevent messages identified as spam, phishing, or malware from being forwarded. The recipient needs their own email security filter to identify and block these messages.
 
 > [!TIP]
 > If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
