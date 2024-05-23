@@ -14,8 +14,7 @@ ms.collection:
   - essentials-security
   - essentials-privacy
   - essentials-compliance
-ms.service: viva 
-ms.subservice: viva-topics 
+ms.service: viva-topics 
 search.appverid:
 - MET150  
 localization_priority: Normal

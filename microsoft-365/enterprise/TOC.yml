@@ -400,10 +400,13 @@
               href: turn-off-directory-synchronization.md
 
 - name: Compliance
-  href: ../compliance/index.yml
+  href: essentials-compliance.md
 
 - name: Security
-  href: ../security/index.yml
+  href: essentials-security.md
+
+- name: Privacy
+  href: essentials-privacy.md
 
 - name: Cloud services
   items: 
@@ -551,8 +554,6 @@
               items: 
                 - name: Disable access to Sway
                   href: disable-access-to-sway-with-microsoft-365-powershell.md
-                - name: Disable access to services while assigning user licenses
-                  href: disable-access-to-services-while-assigning-user-licenses.md
         - name: Groups
           items: 
             - name: Manage security groups

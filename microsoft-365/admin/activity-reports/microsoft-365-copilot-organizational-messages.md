@@ -5,7 +5,7 @@ author: camillepack
 manager: scotv
 ms.date: 10/16/2023
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
@@ -14,7 +14,8 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
-- M365copilot
+- m365copilot
+- magic-ai-copilot
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160

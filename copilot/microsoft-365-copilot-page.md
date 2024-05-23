@@ -7,7 +7,7 @@ author: camillepack
 manager: scotv
 ms.date: 10/31/2023
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-copilot
 ms.localizationpriority: medium
 ms.collection: 
@@ -17,6 +17,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - m365copilot
+- magic-ai-copilot
 description: "Learn about the Copilot page and how you can manage Copilot for Microsoft 365 settings in the Microsoft 365 admin center."
 ---
 

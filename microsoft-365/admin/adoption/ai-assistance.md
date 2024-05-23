@@ -7,7 +7,7 @@ author: camillepack
 manager: scotv
 ms.date: 11/27/2023
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 monikerRange: 'o365-worldwide'
@@ -17,7 +17,8 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
-- M365copilot
+- m365copilot
+- magic-ai-copilot
 search.appverid:
 - MET150
 - MOE150

@@ -5,7 +5,8 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 ms.service: microsoft-365-enterprise
-ms.topic: article
+ms.subservice: advanced-data-residency
+ms.topic: conceptual
 f1.keywords:
 - NOCSH
 ms.date: 02/29/2024
@@ -17,6 +18,7 @@ ms.collection:
 - M365-subscription-management
 - must-keep
 - m365copilot
+- magic-ai-copilot
 ---
 
 # Data Residency for Microsoft Copilot for Microsoft 365

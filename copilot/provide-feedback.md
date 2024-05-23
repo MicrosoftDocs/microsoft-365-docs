@@ -7,7 +7,7 @@ author: camillepack
 manager: scotv
 ms.date: 12/12/2023
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-365-copilot
 ms.localizationpriority: medium
 ms.collection: 
@@ -17,6 +17,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - m365copilot
+- magic-ai-copilot
 description: "Learn how to provide Copilot for Microsoft 365 feedback to Microsoft on behalf of their users who encounter issues"
 ---
 
