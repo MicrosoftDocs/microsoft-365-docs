@@ -47,8 +47,8 @@ After you have [created a shared mailbox](create-a-shared-mailbox.md), you'll wa
 
 ## Forward emails that are sent to a shared mailbox
 
-> [!WARNING]
-> When using email forwarding to a mailbox outside of your organisation, Exchange Online Protection / Defender for Office 365 will not prevent messages identified as Spam / Phishing / Malware from being forwarded to the recipient. The recipient will need to have their own email security filter in place to identify and block these messages.
+> [!IMPORTANT]
+> Email forwarding to recipients outside the organization doesn't prevent messages identified as spam, phishing, or malware from being forwarded. The recipient needs their own email security filter to identify and block these messages.
 
 You do not need to assign a license to the shared mailbox in order to forward email that's sent to it. You can forward the messages to any valid email address or distribution list.
 
