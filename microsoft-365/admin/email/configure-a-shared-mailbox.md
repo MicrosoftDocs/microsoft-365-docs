@@ -47,6 +47,9 @@ After you have [created a shared mailbox](create-a-shared-mailbox.md), you'll wa
 
 ## Forward emails that are sent to a shared mailbox
 
+> [!IMPORTANT]
+> Email forwarding to recipients outside the organization doesn't prevent messages identified as spam, phishing, or malware from being forwarded. The recipient needs their own email security filter to identify and block these messages.
+
 You do not need to assign a license to the shared mailbox in order to forward email that's sent to it. You can forward the messages to any valid email address or distribution list.
 
 1. In the admin center, go to **Teams & groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Shared mailboxes</a>.
