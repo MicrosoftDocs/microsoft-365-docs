@@ -48,7 +48,7 @@ Backup restores are meant to recover from attacks, not to circumvent primary sto
 
 **RELATIONSHIP WITH COMPANY’S CUSTOMERS**: If Company is an Independent Software Vendor (“ISV”) both Parties, Microsoft and ISV will retain responsibility for and control over all aspects of its relationship with its customers/users for the purpose of these Terms. Nothing in these Terms changes or terminates either Party’s rights or obligations with regard to, or its relationship with, its customers/users. Microsoft won't be a Party to any ISV’s customer agreement that Company may use with its customers/users to test the Feature Preview, and Microsoft won't be identified to Company’s customers/users, as a direct support provider for Company’s customers/users of the Feature Preview.
 
-**Nothing in this Agreement changes Company’s responsibility with regard to ISV’s customers/users data. “User Data” means any data, images, text, content, code, or other information or materials that a user provides to ISV or Microsoft. ISV is solely responsible for informing Company’s customers/users that this is a Preview Feature, and that ISV has all the legal authorizations to allow ISVs customers/users data to be stored in the Preview Feature. ISV’s and their customers/users will not hold Microsoft liable from any liability arising out of or in connection with this Agreement.**
+**Nothing in this Agreement changes Company’s responsibility with regard to ISV’s customers/users data. “User Data” means any data, images, text, content, code, or other information or materials that a user provides to ISV or Microsoft. ISV is solely responsible for informing Company’s customers/users that this is a Preview Feature, and that ISV has all the legal authorizations to allow ISVs customers'/users' data to be stored in the Preview Feature. ISV’s and their customers/users will not hold Microsoft liable from any liability arising out of or in connection with this Agreement.**
 
 **<ins>LICENSE</ins>**
 
@@ -58,13 +58,13 @@ The above License doesn't extend to any technologies that may also be necessary 
 
 **<ins>PAYMENT TERMS</ins>**
 
-Microsoft Offering uses pay-as-you-go (PAYG) billing through an Azure subscription. Microsoft Offering billing is determined by how much data in GB your application backs up in end customer tenants, where GB is measured as the user-facing size of the content. Company will be able to view this usage as meter events through the Azure subscription it chooses.
+Microsoft Offering uses pay-as-you-go (PAYG) billing through an Azure subscription. Microsoft Offering billing is determined by how much data in GiB your application backs up in end customer tenants, where GiB is measured as the user-facing size of the content. Company will be able to view this usage as meter events through the Azure subscription it chooses.
 
 Microsoft Offering Feature Preview pricing is as follows:
 
 |Microsoft 365 Backup Storage Meters  |Meter Unit  |Price  |
 |---------|---------|---------|
-|Backup storage     |$/GB/Month         |$0.07         |
+|Backup storage     |$/GiB/Month         |$0.07         |
 
 **<ins>LENGTH OF OBLIGATIONS; DISCLOSURE</ins>**
 
@@ -74,7 +74,7 @@ Microsoft Offering Feature Preview pricing is as follows:
 
 **<ins>TERMINATION FOR NON-PAYMENT</ins>**
 
-In case the Company’s Azure subscription goes into an unhealthy stage of deleted or canceled or suspended, we'll prevent any future backup and restores until the subscription is back to a healthy state. Company will have 30 days to recover any backed-up data and restores by bringing back the subscription to an active state. If no action is taken from the Company to bring subscription back to active state in 30 days, we'll soft delete the backed-up data from systems after this 30 days. Upon reactivation, Company must also pay for Microsoft Offering usage for the days the subscription was in unhealthy state.
+In case the Company’s Azure subscription goes into an unhealthy stage of deleted or canceled or suspended, we'll prevent any future backups and restores until the subscription is back to a healthy state. Company will have 30 days to recover any backed-up data and restores by bringing the subscription back to an active state. If no action is taken from the Company to bring subscription back to active state in 30 days, we'll soft delete the backed-up data from systems after this 30 days. Upon reactivation, Company must also pay for Microsoft Offering usage for the days the subscription was in unhealthy state.
 This Agreement can't be extended. Microsoft may also choose not to make the Preview Feature generally commercially available.
 
 **<ins>REPRESENTATIONS AND LIMITATIONS</ins>**
