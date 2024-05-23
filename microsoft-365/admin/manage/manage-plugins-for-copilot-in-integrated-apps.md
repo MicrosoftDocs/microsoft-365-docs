@@ -40,9 +40,9 @@ Microsoft Copilot for Microsoft 365 is a new experience inside Microsoft 365 tha
 
 ## Overview
 
-Extensions or plugins enhance the functionality of Copilot by adding search capabilities, custom actions, connectors, and APIs. GPTs are custom versions of Copilot that combine instructions, knowledge, and skills to perform specific tasks or scenarios.
+Extensions enhance the functionality of Copilot by adding search capabilities, custom actions, connectors, and APIs. *Declarative copilots* are custom versions of Copilot that combine instructions, knowledge, and skills to perform specific tasks or scenarios.
 
-Microsoft Copilot Studio (MCS) is a low code development platform that offers a graphical environment to build GPTs and extensions tailored to the internal needs of an organization. Copilot Studio enables developers and makers to create and test their applications in a user-friendly interface.
+Microsoft Copilot Studio (MCS) is a low code development platform that offers a graphical environment to build declarative copilots and other extensions tailored to the internal needs of an organization. Copilot Studio enables developers and makers to create and test their applications in a user-friendly interface.
 
 However, before these applications can become accessible to end users, they need to undergo a streamlined process of submission and approval. To learn more, see [Publish extensions for Copilot](#publish-extensions-for-copilot).
 
