@@ -6,7 +6,7 @@ ms.author: v-jeplatt
 manager: mimast
 ms.date: 05/22/2024
 ms.topic: conceptual
-ROBOTS: NOINDEX
+ROBOTS: NOINDEX, NOFOLLOW
 ---
 
 # Microsoft Software License Terms - Teams Assignments LTI app private preview
