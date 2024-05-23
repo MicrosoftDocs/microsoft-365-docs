@@ -49,7 +49,7 @@ Use the Virtual Appointments app for all your virtual appointment needs. The app
 
 You can schedule, view, and manage virtual appointments, get real-time status updates in a queue view, send appointment reminders, view analytics and reports on virtual appointments activity, and configure calendar, staff, and booking page settings.
 
-With Microsoft 365 A3, A5, E3, E5, F1, F3, Business Basic, Business Standard, and Business Premium licenses, you can use basic Virtual Appointments capabilities that make it easy to schedule and join business-to-customer meetings. For example, you can schedule appointments in the appointment calendar and external attendees can [join through a browser](browser-join.md) without having to download Teams. [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams) unlocks advanced Virtual Appointments capabilities that your organization can use to manage and customize the experience. These include a queue view of scheduled and on-demand appointments, SMS text notifications, custom waiting rooms, and analytics.
+With a Teams license, you can use basic Virtual Appointments capabilities that make it easy to schedule and join business-to-customer meetings. For example, you can schedule appointments in the appointment calendar and external attendees can [join through a browser](browser-join.md) without having to download Teams. [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams) unlocks advanced Virtual Appointments capabilities that your organization can use to manage and customize the experience. These include a queue view of scheduled and on-demand appointments, SMS text notifications, custom waiting rooms, and analytics.
 
 To learn more, see:
 
@@ -73,9 +73,7 @@ Currently, the Teams EHR connector supports integration with the Oracle Health E
 
 ## Virtual appointment meeting template
 
-The Virtual appointment template is a default meeting template in Teams that your users can use to schedule virtual appointments with external guests, such as customers, clients and other people outside your organization.
-
-With this template, you can enable a consistent experience across your organization for virtual appointments scheduled directly within Teams.
+The Virtual appointment template is a default meeting template in Teams that your users can use to schedule virtual appointments with external guests, such as customers, clients, and other people outside your organization.
 
 To learn more, see [Manage the Virtual appointment meeting template in Teams](/microsoftteams/virtual-appointment-meeting-template).
 
