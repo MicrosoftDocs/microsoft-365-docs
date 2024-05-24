@@ -1,6 +1,6 @@
 ---
-title: Shifts for frontline workers
-description: Get the admin guidance you need to set up and manage Shifts, the schedule management tool, in Microsoft Teams.
+title: Shifts for your frontline organization
+description: Get the admin guidance you need to deploy and manage Shifts, the schedule management tool, in Microsoft Teams.
 ms.topic: conceptual
 author: lana-chin
 ms.author: v-chinlana
@@ -32,15 +32,88 @@ ms.custom: seo-marvel-jun2020
 ms.date: 03/15/2024
 ---
 
-# Shifts for frontline workers
+# Shifts for your frontline organization
 
-Shifts, the schedule management tool in Teams, keeps your frontline workforce connected and in sync. It's built mobile first for fast and effective schedule management and communications. With Shifts, frontline managers and workers can seamlessly manage schedules and keep in touch.
+Shifts, the schedule management tool in Microsoft Teams, keeps your frontline workforce connected and in sync. It's built mobile first for fast and effective schedule management and communications across your frontline teams. With Shifts and Teams, frontline managers and workers can seamlessly manage schedules, communicate, and collaborate.
 
-Managers can create, update, and manage shift schedules for their teams. They can assign shifts, add open shifts, and approve schedule requests from employees. Workers can view their own and their team's schedules, set their availability, request to swap or offer a shift, request time off, and clock in and out.
+<!--Managers can create, update, and manage shift schedules for their teams. They can assign shifts, add open shifts, and approve schedule requests from employees. Workers can view their own and their team's schedules, set their availability, request to swap or offer a shift, request time off, and clock in and out.-->
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE42FjP]
 
-Use the following resources to help you set up and manage Shifts in your organization.
+Depending on your business needs, your organization can use Shifts as a standalone app or connect it to your workforce management (WFM) system. You can also use other Microsoft services and products to extend the capabilities of Shifts.
+
+## Considerations before you deploy Shifts
+
+As previously mentioned, your organization can opt to use Shifts as a standalone app or connect it to your WFM system. Connect Shifts to your WFM system if you want to:
+
+- Know about the changes made to data through Shifts.  
+- Enforce the business rules and logic your organization configured in your WFM system before changes to data made by your frontline are saved to Shifts.  
+- Keep data in Shifts and in your WFM system in sync.
+
+Here are options for integrating Shifts with external WFM systems.
+
+|Workforce management system |Solution |Things to consider |
+|---------|---------|---------|
+|UKG Pro Workforce Management |[Teams Shifts connector for UKG Pro Workforce Management](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-pro-workforce-management) (Hosted and managed by Microsoft)||
+|Blue Yonder Workforce Management version 2020.3, 2021.1, or 2021.2 |[Teams Shifts connector for Blue Yonder](shifts-connectors.md#microsoft-teams-shifts-connector-for-blue-yonder) (Hosted and managed by Microsoft)||
+|Reflexis Workforce Management version 4.3.2, 4.4, or 4.5.|[Reflexis Shifts connector for Microsoft Teams](shifts-connectors.md#reflexis-shifts-connector-for-microsoft-teams) (Hosted and managed by Zebra)||
+|Any other WFM system|[Workforce Integration Graph API](/graph/api/resources/workforceintegration?view=graph-rest-1.0)||
+
+## Deployment overview
+
+Here’s a quick checklist for deploying Shifts in your organization.
+
+1. **Create teams for your frontline locations**. You can choose to create your teams using the [deploy frontline dynamic teams at scale](deploy-dynamic-teams-at-scale.md) experience in the Teams admin center.
+
+    To learn more, see [How to find the best frontline team solution for your organization](frontline-team-options.md).
+
+1. **Define Shifts capabilities for your frontline**.
+
+    If you created your teams through the deploy frontline dynamic teams at scale experience, you can choose to [deploy Shifts to your frontline teams at scale](deploy-shifts-at-scale.md) in the Teams admin center. By doing so, you can standardize Shifts settings across all your frontline teams and manage them centrally. You select which capabilities to turn on or off and create schedule groups and time-off reasons that are set uniformly across all your frontline teams.
+
+    Alternatively, you can use the [Create or replace schedule](/graph/api/team-put-schedule?view=graph-rest-1.0&tabs=http) Graph API to define Shifts settings for your frontline teams and the [shiftsRoleDefinition](/graph/api/resources/shiftsroledefinition?view=graph-rest-beta) Graph API to [manage permissions to Shifts capabilities for your frontline managers](manage-shifts-permissions-frontline-managers.md).
+
+> [!NOTE]
+> Optionally, [set up a frontline operational hierarchy](deploy-frontline-operational-hierarchy.md) to map your organization’s structure of frontline teams and locations to a hierarchy in the Teams admin center. Creating a frontline operational hierarchy will enable location scenarios and other capabilities for your frontline.
+
+## Shifts capabilities
+
+Here’s an overview of what frontline managers and workers can do in Shifts.
+
+**Frontline managers**
+
+|Capability  |Standalone |Microsoft managed Shifts connector|
+|---------|---------|---------|
+|Create a schedule for their team. <br/>Supported methods:<ul><li>Manually create shifts and time off one by one.</li><li>Bulk creation of shifts and time off through Excel import and copy/paste.</li></ul> | Yes | No |
+|Create open shifts for team members to request. <br/>Supported methods:<ul><li>Manually create shifts and time off one by one.</li><li>Bulk creation of shifts and time off through Excel import and copy/paste.</li></ul> | Yes | No |
+|Update and delete shfits, time, off, and open shifts.<br/>Only manual one by one changes are supported.| Yes | No<sup>1</sup>|
+|Manage Shifts settings for the team. | Yes<sup>2</sup>| No<sup>3</sup>|
+|Create schedule groups to organize workers based on common characteristics within a team. For example, department or job type. | Yes | No<sup>4</sup>|
+|Retrieve time sheet reports. | Yes | Yes |
+|Retrieve the totals for hours worked and time off. | Yes | Yes |
+|Manage requests from workers. | Yes | Yes |
+
+**Frontline workers**
+
+|Capability  |Standalone |Microsoft managed Shifts connector|
+|---------|---------|---------|
+|View their own and their team's schedule. | Yes | Yes |
+|View open shifts available in their schedule groups. | Yes | Yes |
+|Create open shift requests for manager's approval. Currently only available from within the teams the worker is a member of.| Yes | Yes<sup>5</sup>|
+|Create time-off requests for manager's approval. Currently, after the request is approved, the time off applies only to the team in which the worker requested it.| Yes | Yes<sup>5</sup>|
+|Create a request to swap a shift with a coworker on the same team. | Yes | Yes<sup>5</sup>|
+|Create a request to offer a shift to a coworker on the same team.| Yes | Yes<sup>5</sup>|
+|Clock in and out of shifts and breaks.| Yes | Yes<sup>5</sup><sup>6</sup>|
+|Edit timecard entries for clock in/out and breaks on mobile. | Yes | Yes |
+
+<sup>1</sup>Deleting shifts, time off, and open shifts is possible. Updating these entities isn’t possible.<br/>
+<sup>2</sup>Depends on how your organization deployed Shifts. This might not be available for the frontline managers to manage locally.<br/>
+<sup>3</sup>Automatically configured when you set up the connection between your WFM system and the Shifts connector. No action is needed by frontline managers.<br/>
+<sup>4</sup>;Automatically created based on the configuration of your WFM system.<br/>
+<sup>5</sup>Validations are made to ensure rules and business logic from your WFM system are applied.<br/>
+<sup>6</sup>Breaks aren't supported in the Teams Shifts connector for UKG Pro Workforce Management.
+
+<!--Use the following resources to help you set up and manage Shifts in your organization.
 
 ## Set up and manage Shifts
 
@@ -74,4 +147,4 @@ If you're using a third-party workforce management (WFM) system for scheduling, 
 
 |&nbsp;|&nbsp;|&nbsp;|&nbsp;|&nbsp;|&nbsp;|
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-|:::image type="icon" source="/office/media/icons/get-started-teams.png":::  |  [Video: What is Shifts?](https://support.office.com/article/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821) |:::image type="icon" source="/office/media/icons/calendar.png"::: |  [Video: Create a shifts schedule](https://support.microsoft.com/office/create-a-shifts-schedule-2b94ca38-36db-4a1c-8fee-f8f0fec9a984) |:::image type="icon" source="/office/media/icons/blocks-teams.png":::|  [Video: Manage a Shifts schedule](https://support.microsoft.com/office/manage-and-view-a-shifts-schedule-63acda7b-ea39-441a-b1c6-c404a72e79f7) |
+|:::image type="icon" source="/office/media/icons/get-started-teams.png":::  |  [Video: What is Shifts?](https://support.office.com/article/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821) |:::image type="icon" source="/office/media/icons/calendar.png"::: |  [Video: Create a shifts schedule](https://support.microsoft.com/office/create-a-shifts-schedule-2b94ca38-36db-4a1c-8fee-f8f0fec9a984) |:::image type="icon" source="/office/media/icons/blocks-teams.png":::|  [Video: Manage a Shifts schedule](https://support.microsoft.com/office/manage-and-view-a-shifts-schedule-63acda7b-ea39-441a-b1c6-c404a72e79f7) |-->
