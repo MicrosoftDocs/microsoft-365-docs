@@ -3,7 +3,7 @@ title: Microsoft 365 network connectivity principles
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 10/26/2023
+ms.date: 05/23/2024
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
