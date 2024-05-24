@@ -4,7 +4,7 @@ description: "Learn how Microsoft Copilot for Microsoft 365 uses data and how it
 ms.author: danbrown
 author: DHB-MSFT
 manager: laurawi
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: microsoft-365-copilot
 ms.localizationpriority: high
 ms.collection: 
