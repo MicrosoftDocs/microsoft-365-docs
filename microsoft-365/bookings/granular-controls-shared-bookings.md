@@ -1,5 +1,5 @@
 ---
-title: "Turn on or off Shared Bookings for organization"
+title: "Manage granular controls for Shared Bookings"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -16,11 +16,11 @@ ms.collection:
 description: "Configure settings to control who can use Shared Bookings"
 ---
 
-## Managing Granular Controls for Shared Bookings
+# Manage granular controls for Shared Bookings
 
 Share Bookings offers granular controls which allows administrators to manage various aspects of bookings. This article will guide you on how to configure settings to control who can use Shared Bookings and decide what information is shared. You can also set staff approval requirements, and enforce naming policies.
 
-### Accessing Shared Bookings Settings
+## Accessing Shared Bookings Settings
 
 Access the granular controls for Shared Bookings.
 
@@ -29,7 +29,7 @@ Access the granular controls for Shared Bookings.
 > [!NOTE]
 > Changes to tenant settings may take up to four hours to apply.
 
-### Configuring Shared Bookings Settings
+## Configuring Shared Bookings Settings
 
 Here are the different settings you can configure:
 
