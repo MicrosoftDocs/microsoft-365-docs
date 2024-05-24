@@ -13,7 +13,7 @@ ms.collection:
 - m365copilot
 - magic-ai-copilot
 hideEdit: true
-ms.date: 05/09/2024
+ms.date: 05/21/2024
 ---
 
 # Data, Privacy, and Security for Microsoft Copilot for Microsoft 365
