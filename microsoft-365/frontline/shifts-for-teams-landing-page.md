@@ -54,14 +54,14 @@ Here are options for integrating Shifts with external WFM systems.
 
 |Workforce management system |Solution |Things to consider |
 |---------|---------|---------|
-|UKG Pro Workforce Management |[Teams Shifts connector for UKG Pro Workforce Management](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-pro-workforce-management) (Hosted and managed by Microsoft)||
-|Blue Yonder Workforce Management version 2020.3, 2021.1, or 2021.2 |[Teams Shifts connector for Blue Yonder](shifts-connectors.md#microsoft-teams-shifts-connector-for-blue-yonder) (Hosted and managed by Microsoft)||
-|Reflexis Workforce Management version 4.3.2, 4.4, or 4.5.|[Reflexis Shifts connector for Microsoft Teams](shifts-connectors.md#reflexis-shifts-connector-for-microsoft-teams) (Hosted and managed by Zebra)||
+|UKG Pro Workforce Management |[Teams Shifts connector for UKG Pro Workforce Management](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-pro-workforce-management)<br/> (Hosted and managed by Microsoft)||
+|Blue Yonder Workforce Management version 2020.3, 2021.1, or 2021.2 |[Teams Shifts connector for Blue Yonder](shifts-connectors.md#microsoft-teams-shifts-connector-for-blue-yonder) <br/>(Hosted and managed by Microsoft)||
+|Reflexis Workforce Management version 4.3.2, 4.4, or 4.5|[Reflexis Shifts connector for Microsoft Teams](shifts-connectors.md#reflexis-shifts-connector-for-microsoft-teams) <br/> (Hosted and managed by Zebra)||
 |Any other WFM system|[Workforce Integration Graph API](/graph/api/resources/workforceintegration?view=graph-rest-1.0)||
 
 ## Deployment overview
 
-Here’s a quick checklist for deploying Shifts in your organization.
+Here’s a quick overview for deploying Shifts in your organization.
 
 1. **Create teams for your frontline locations**. You can choose to create your teams using the [deploy frontline dynamic teams at scale](deploy-dynamic-teams-at-scale.md) experience in the Teams admin center.
 
@@ -80,9 +80,7 @@ Here’s a quick checklist for deploying Shifts in your organization.
 
 Here’s an overview of what frontline managers and workers can do in Shifts.
 
-**Frontline managers**
-
-|Capability  |Standalone |Microsoft managed Shifts connector|
+|Frontline manager capabilities |Standalone |Microsoft managed Shifts connector|
 |---------|---------|---------|
 |Create a schedule for their team. <br/>Supported methods:<ul><li>Manually create shifts and time off one by one.</li><li>Bulk creation of shifts and time off through Excel import and copy/paste.</li></ul> | Yes | No |
 |Create open shifts for team members to request. <br/>Supported methods:<ul><li>Manually create shifts and time off one by one.</li><li>Bulk creation of shifts and time off through Excel import and copy/paste.</li></ul> | Yes | No |
@@ -93,25 +91,24 @@ Here’s an overview of what frontline managers and workers can do in Shifts.
 |Retrieve the totals for hours worked and time off. | Yes | Yes |
 |Manage requests from workers. | Yes | Yes |
 
-**Frontline workers**
-
-|Capability  |Standalone |Microsoft managed Shifts connector|
-|---------|---------|---------|
-|View their own and their team's schedule. | Yes | Yes |
-|View open shifts available in their schedule groups. | Yes | Yes |
-|Create open shift requests for manager's approval. Currently only available from within the teams the worker is a member of.| Yes | Yes<sup>5</sup>|
-|Create time-off requests for manager's approval. Currently, after the request is approved, the time off applies only to the team in which the worker requested it.| Yes | Yes<sup>5</sup>|
-|Create a request to swap a shift with a coworker on the same team. | Yes | Yes<sup>5</sup>|
-|Create a request to offer a shift to a coworker on the same team.| Yes | Yes<sup>5</sup>|
-|Clock in and out of shifts and breaks.| Yes | Yes<sup>5</sup><sup>6</sup>|
-|Edit timecard entries for clock in/out and breaks on mobile. | Yes | Yes |
-
 <sup>1</sup>Deleting shifts, time off, and open shifts is possible. Updating these entities isn’t possible.<br/>
 <sup>2</sup>Depends on how your organization deployed Shifts. This might not be available for the frontline managers to manage locally.<br/>
 <sup>3</sup>Automatically configured when you set up the connection between your WFM system and the Shifts connector. No action is needed by frontline managers.<br/>
-<sup>4</sup>;Automatically created based on the configuration of your WFM system.<br/>
-<sup>5</sup>Validations are made to ensure rules and business logic from your WFM system are applied.<br/>
-<sup>6</sup>Breaks aren't supported in the Teams Shifts connector for UKG Pro Workforce Management.
+<sup>4</sup>Automatically created based on the configuration of your WFM system.
+
+|Frontline worker capabilities |Standalone |Microsoft managed Shifts connector|
+|---------|---------|---------|
+|View their own and their team's schedule. | Yes | Yes |
+|View open shifts available in their schedule groups. | Yes | Yes |
+|Create open shift requests for manager's approval. Currently only available from within the teams the worker is a member of.| Yes | Yes<sup>1</sup>|
+|Create time-off requests for manager's approval. Currently, after the request is approved, the time off applies only to the team in which the worker requested it.| Yes | Yes<sup>1</sup>|
+|Create a request to swap a shift with a coworker on the same team. | Yes | Yes<sup>1</sup>|
+|Create a request to offer a shift to a coworker on the same team.| Yes | Yes<sup>1</sup>|
+|Clock in and out of shifts and breaks.| Yes | Yes<sup>1</sup><sup>,</sup><sup>2</sup>|
+|Edit timecard entries for clock in/out and breaks on mobile. | Yes | Yes |
+
+<sup>1</sup>Validations are made to ensure rules and business logic from your WFM system are applied.<br/>
+<sup>2</sup>Breaks aren't supported in the Teams Shifts connector for UKG Pro Workforce Management.
 
 <!--Use the following resources to help you set up and manage Shifts in your organization.
 
