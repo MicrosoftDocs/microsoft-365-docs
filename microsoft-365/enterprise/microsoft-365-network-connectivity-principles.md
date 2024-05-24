@@ -222,7 +222,7 @@ The methods you'll use to optimize Microsoft 365 traffic varies depending on you
   
 You can approach optimization as an incremental process, applying each method successively. The following table lists key optimization methods in order of their effect on latency and reliability for the largest number of users.
   
-|**Optimization method**|**Description**|**Impact**|
+| Optimization method | Description | Impact |
 |:-----|:-----|:-----|
 |Local DNS resolution and Internet egress  <br/> |Provision local DNS servers in each location and ensure that Microsoft 365 connections egress to the Internet as close as possible to the user's location.  <br/> | Minimize latency  <br/>  Improve reliable connectivity to the closest Microsoft 365 entry point  <br/> |
 |Add regional egress points  <br/> |If your corporate network has multiple locations but only one egress point, add regional egress points to enable users to connect to the closest Microsoft 365 entry point.  <br/> | Minimize latency  <br/>  Improve reliable connectivity to the closest Microsoft 365 entry point  <br/> |
