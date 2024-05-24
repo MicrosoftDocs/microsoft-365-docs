@@ -13,12 +13,12 @@ ms.collection:
 - Tier1
 - scotvorg
 - essentials-manage
-description: "Turn on or off Shared Bookings for organization"
+description: "Configure settings to control who can use Shared Bookings"
 ---
 
-## Managing Granular Controls for Shared Bookings in Microsoft 365 Business Basic
+## Managing Granular Controls for Shared Bookings
 
-Microsoft 365 Business Basic offers granular controls for Shared Bookings, which allows administrators to manage various aspects of bookings. This article will guide you on how to configure these settings to control who can use Shared Bookings, decide what information is shared, set staff approval requirements, and enforce naming policies.
+Share Bookings offers granular controls which allows administrators to manage various aspects of bookings. This article will guide you on how to configure settings to control who can use Shared Bookings and decide what information is shared. You can also set staff approval requirements, and enforce naming policies.
 
 ### Accessing Shared Bookings Settings
 
@@ -36,10 +36,10 @@ Here are the different settings you can configure:
 1. **Block shared bookings from outside your organization:** This setting restricts bookings to only authenticated users within your organization.
 2. **Block social sharing options:** Control how booking pages are shared on social networks.
 3. **Block sharing staff details with customers:** Prevent staff contact information from being sent to customers via email or other communication methods.
-4. **Require staff approvals before sharing free/busy information:** Enable this setting to require employees to opt-in before their availability information is shared through Bookings and before they can be bookable through a shared booking page. Staff will receive an email with a link to approve or reject the request.
+4. **Require staff approvals before sharing free/busy information:** Enable this setting to require employees to opt-in before their availability information is shared through Bookings and before they can be bookable through a shared booking page. Staff receives an email with a link to approve or reject the request.
 5. **Allow Microsoft to send SMS messages:** Set up shared booking pages to send reminders and information customers might need for a meeting or appointment.
 6. **Disable direct search engine indexing:** Hide your shared booking page from search results on Google, Bing, or other search engines.
-7. **Enforce naming policy for shared booking pages alias:** This setting allows administrators to define a Prefix and Suffix for all calendars. When enabled, these rules will be enforced across all calendars. Note that enforcement will not impact existing shared booking pages unless their business information is modified. SMTP addresses of existing calendars will not be affected.
-8. **Restrict collection of customer data:** For compliance reasons, you may not want to collect some customer information. Select the checkboxes for any options you want to restrict, and these fields will not be included on any forms shown to your clients or customers.
+7. **Enforce naming policy for shared booking pages alias:** This setting allows administrators to define a Prefix and Suffix for all calendars. When enabled, these rules will be enforced across all calendars. Note that enforcement will not impact existing shared booking pages unless their business information is modified. SMTP addresses of existing calendars won't be affected.
+8. **Restrict collection of customer data:** For compliance reasons, you may not want to collect some customer information. Select the checkboxes for any options you want to restrict, and these fields won't be included on any forms shown to your clients or customers.
 
 By configuring the granular controls for Shared Bookings, you can enhance the security and privacy of your organization's booking pages. Make sure to review and adjust these settings periodically to ensure that they align with your organization's requirements and policies.
