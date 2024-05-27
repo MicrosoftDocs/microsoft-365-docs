@@ -84,7 +84,7 @@ Here’s an overview of what frontline managers and workers can do in Shifts.
 |---------|---------|---------|
 |Create a schedule for their team. <br/>Supported methods:<ul><li>Manually create shifts and time off one by one.</li><li>Bulk creation of shifts and time off through Excel import and copy/paste.</li></ul> | Yes | No |
 |Create open shifts for team members to request. <br/>Supported methods:<ul><li>Manually create shifts and time off one by one.</li><li>Bulk creation of shifts and time off through Excel import and copy/paste.</li></ul> | Yes | No |
-|Update and delete shfits, time, off, and open shifts.<br/>Only manual one by one changes are supported.| Yes | No<sup>1</sup>|
+|Update and delete shifts, time, off, and open shifts.<br/>Only manual one by one changes are supported.| Yes | No<sup>1</sup>|
 |Manage Shifts settings for the team. | Yes<sup>2</sup>| No<sup>3</sup>|
 |Create schedule groups to organize workers based on common characteristics within a team. For example, department or job type. | Yes | No<sup>4</sup>|
 |Retrieve time sheet reports. | Yes | Yes |
@@ -109,6 +109,20 @@ Here’s an overview of what frontline managers and workers can do in Shifts.
 
 <sup>1</sup>Validations are made to ensure rules and business logic from your WFM system are applied.<br/>
 <sup>2</sup>Breaks aren't supported in the Teams Shifts connector for UKG Pro Workforce Management.
+
+## Extend Shifts capabilities
+
+Use the following resources to extend Shifts capabilities for your frontline workforce.
+
+|Resource  |Example scenario |Target apps  |
+|---------|---------|---------|
+|[shift Graph API](/graph/api/resources/shift?view=graph-rest-1.0)|Your organization wants to create reports based on Shifts scheduling data. |Apps that want to read/write Shifts data.|
+|[Graph API change notifications](/graph/api/resources/change-notifications-api-overview?view=graph-rest-1.0)|Your organization doesn't require frontline managers' approval for open shift requests. You use Shifts webhooks notifications to trigger the approval automation process for open shift requests.|Apps that read Shifts data and want to be notified about changes made in Shifts. Additionally, these apps aren’t data owners and don’t have additional validation to run. |
+|[Shifts + Power Automate](https://make.powerautomate.com/connectors/shared_shifts/shifts-for-microsoft-teams/)|Your organization wants to take information from Shifts and create custom workflows with other apps and services. For example, create a flow to automatically approve swap shift requests and receive email notifications.|[Learn more](https://learn.microsoft.com/en-us/connectors/shifts).|
+
+Additional resources
+
+
 
 <!--Use the following resources to help you set up and manage Shifts in your organization.
 
