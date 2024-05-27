@@ -54,10 +54,10 @@ Here are options for integrating Shifts with external WFM systems.
 
 |Workforce management system |Solution |Things to consider |
 |---------|---------|---------|
-|UKG Pro Workforce Management |[Teams Shifts connector for UKG Pro Workforce Management](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-pro-workforce-management)<br/> (Hosted and managed by Microsoft)||
-|Blue Yonder Workforce Management version 2020.3, 2021.1, or 2021.2 |[Teams Shifts connector for Blue Yonder](shifts-connectors.md#microsoft-teams-shifts-connector-for-blue-yonder) <br/>(Hosted and managed by Microsoft)||
-|Reflexis Workforce Management version 4.3.2, 4.4, or 4.5|[Reflexis Shifts connector for Microsoft Teams](shifts-connectors.md#reflexis-shifts-connector-for-microsoft-teams) <br/> (Hosted and managed by Zebra)||
-|Any other WFM system|[Workforce Integration Graph API](/graph/api/resources/workforceintegration?view=graph-rest-1.0)||
+|UKG Pro Workforce Management |[Teams Shifts connector for UKG Pro Workforce Management](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-pro-workforce-management)<br/> (Hosted and managed by Microsoft)|Shifts doesn't support every configuration and capability of your WFM system. Learn more about [Shifts capabilities](#shifts-capabilities).|
+|Blue Yonder Workforce Management version 2020.3, 2021.1, or 2021.2 |[Teams Shifts connector for Blue Yonder](shifts-connectors.md#microsoft-teams-shifts-connector-for-blue-yonder) <br/>(Hosted and managed by Microsoft)|Shifts doesn't support every configuration and capability of your WFM system. Learn more about [Shifts capabilities](#shifts-capabilities).|
+|Reflexis Workforce Management version 4.3.2, 4.4, or 4.5|[Reflexis Shifts connector for Microsoft Teams](shifts-connectors.md#reflexis-shifts-connector-for-microsoft-teams) <br/> (Hosted and managed by Zebra)|Shifts doesn't support every configuration and capability of your WFM system. Learn more about [Shifts capabilities](#shifts-capabilities).|
+|Any other WFM system|[Workforce Integration Graph API](/graph/api/resources/workforceintegration?view=graph-rest-1.0)|<ul><li>Your workforce integration can prevent invalid data from being written to Shifts.</li><li>The workforce integration service you build must be highly available and resilient:</li><ul><li>If the service is slow, it will affect the user experience in Shifts.</li><li>If the service is unavailable, it will prevent users from making changes in Shifts.</li></ul></ul>|
 
 ## Deployment overview
 
@@ -118,7 +118,7 @@ Use the following resources to extend Shifts capabilities for your frontline wor
 |---------|---------|---------|
 |[shift Graph API](/graph/api/resources/shift?view=graph-rest-1.0)|Your organization wants to create reports based on Shifts scheduling data. |Apps that want to read/write Shifts data.|
 |[Graph API change notifications](/graph/api/resources/change-notifications-api-overview?view=graph-rest-1.0)|Your organization doesn't require frontline managers' approval for open shift requests. You use Shifts webhooks notifications to trigger the approval automation process for open shift requests.|Apps that read Shifts data and want to be notified about changes made in Shifts. Additionally, these apps aren’t data owners and don’t have additional validation to run. |
-|[Shifts + Power Automate](https://make.powerautomate.com/connectors/shared_shifts/shifts-for-microsoft-teams/)|Your organization wants to take information from Shifts and create custom workflows with other apps and services. For example, create a flow to automatically approve swap shift requests and receive email notifications.|[Learn more](https://learn.microsoft.com/en-us/connectors/shifts).|
+|[Shifts + Power Automate](https://make.powerautomate.com/connectors/shared_shifts/shifts-for-microsoft-teams/)|Your organization wants to take information from Shifts and create custom workflows with other apps and services. For example, create a flow to automatically approve swap shift requests and receive email notifications.|[Learn more](/connectors/shifts).|
 
 ## Shifts resources
 
