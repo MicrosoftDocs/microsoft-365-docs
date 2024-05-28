@@ -11,19 +11,18 @@
       href: bookings-in-outlook.md
     - name: Set your banner image
       href: bookings-in-outlook.md
-    - name: Turn off your personal booking page
-      href: bookings-in-outlook.md
   - name: Learn about Shared Bookings
     items:
-    - name: Enter your Bookings business information
-      href: enter-business-information.md
-    - name: Define your Bookings service offerings
-      href: define-service-offerings.md
-    - name: Add staff to Bookings
-      href: add-staff.md
-    - name: Share your shared booking page
-      href: define-service-offerings.md
-    - name: Manage your team availability for shared bookings
+      items:
+        - name: Enter your Bookings business information
+          href: enter-business-information.md
+        - name: Define your Bookings service offerings
+          href: define-service-offerings.md
+        - name: Add staff to Bookings
+          href: add-staff.md
+        - name: Share your shared booking page
+          href: define-service-offerings.md
+        - name: Manage your team availability for shared bookings
       items:
         - name: Understanding staff roles
           href: add-staff.md
@@ -65,14 +64,18 @@
           href: customize-booking-page.md
   - name: Bookings for admins
     items:
-    - name: Turn bookings on or off
+    - name: Turn off your Personal Booking page
+      href: bookings-in-outlook.md
+    - name: Turn Microsoft Bookings on or off
       href: turn-bookings-on-or-off.md
-    - name: Custom domain support in Bookings
+    - name: Granular controls for Shared Bookings
+      href: granular-controls-shared-bookings.md     
+    - name: Custom domain support in Microsoft Bookings
       href: custom-domain-support.md
     - name: Use the Bookings Graph APIs
       href: https://learn.microsoft.com/graph/api/resources/booking-api-overview?view=graph-rest-1.0
     - name: Reporting info for Bookings
       href: reporting-info.md
-    - name: Delete booking page
+    - name: Delete a shared booking page
       href: delete-calendar.md
 
