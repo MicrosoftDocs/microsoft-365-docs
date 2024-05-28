@@ -38,7 +38,7 @@
         - name: Configure SMS text notifications and reminders
           href: bookings-sms.md
         - name: Configure service availability
-          href: bookings-sms.md          
+          href: configure-service-availability.md          
         - name: Use Buffer Time to add prep time
           href: set-buffer-time.md
         - name: Hide services from your booking page
@@ -79,4 +79,5 @@
       href: reporting-info.md
     - name: Delete a shared booking page
       href: delete-calendar.md
-
+    - name: Best practices for Shared Bookings
+      href: best-practices-shared-bookings.md

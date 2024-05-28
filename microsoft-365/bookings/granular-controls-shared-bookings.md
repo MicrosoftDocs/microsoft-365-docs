@@ -7,7 +7,6 @@ ms.date: 05/23/2024
 audience: Admin
 ms.topic: article
 ms.service: bookings
-ms.custom: admindeeplinkMAC
 ms.localizationpriority: medium
 ms.collection:
 - Tier1
