@@ -39,7 +39,7 @@ sections:
             - Select the **Manage activation** link, then select **Start Activation**. A product activation window opens and prepopulates the key.
             - Continue the remaining activation steps to complete product activation.
             
-            Successful activation is completed within 48 hours on the Microsoft 365 admin center. 
+            Note; It can take up to 24 hours for the service to display as activated in the Microsoft 365 admin center volume licensing section.
 
       - question: |
           I don't see my Azure order. What should I do?
@@ -74,11 +74,6 @@ sections:
           What if I want to assign my purchase to a different organization?
         answer: |
           To assign products to a new organization, go through the sign-up steps to create a new organization. Next, you can assign any seats or products you purchased.
-
-      - question: |
-          I just activated my online service. Why does it still say I need to activate my service on the Manage Activations page on the Volume Licensing Service Center?
-        answer: |
-          It can take up to 24 hours for the service you activated to appear as status **Activated**.
 
       - question: |
           How do I contact support?
