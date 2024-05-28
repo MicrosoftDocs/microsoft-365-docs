@@ -54,9 +54,9 @@ Here are options for integrating Shifts with external WFM systems.
 
 |Workforce management system |Solution |Things to consider |
 |---------|---------|---------|
-|UKG Pro Workforce Management |[Teams Shifts connector for UKG Pro Workforce Management](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-pro-workforce-management)<br/> (Hosted and managed by Microsoft)|Shifts doesn't support every configuration and capability of your WFM system. Learn more about [Shifts capabilities](#shifts-capabilities).|
-|Blue Yonder Workforce Management version 2020.3, 2021.1, or 2021.2 |[Teams Shifts connector for Blue Yonder](shifts-connectors.md#microsoft-teams-shifts-connector-for-blue-yonder) <br/>(Hosted and managed by Microsoft)|Shifts doesn't support every configuration and capability of your WFM system. Learn more about [Shifts capabilities](#shifts-capabilities).|
-|Reflexis Workforce Management version 4.3.2, 4.4, or 4.5|[Reflexis Shifts connector for Microsoft Teams](shifts-connectors.md#reflexis-shifts-connector-for-microsoft-teams) <br/> (Hosted and managed by Zebra)|Shifts doesn't support every configuration and capability of your WFM system. Learn more about [Shifts capabilities](#shifts-capabilities).|
+|UKG Pro Workforce Management |[Teams Shifts connector for UKG Pro Workforce Management](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-pro-workforce-management)<br/> (Hosted and managed by Microsoft)|Shifts doesn't support every configuration and capability of your WFM system. Learn more about [Shifts capabilities](#shifts-capabilities) when using Microsoft managed connectors.|
+|Blue Yonder Workforce Management version 2020.3, 2021.1, or 2021.2 |[Teams Shifts connector for Blue Yonder](shifts-connectors.md#microsoft-teams-shifts-connector-for-blue-yonder) <br/>(Hosted and managed by Microsoft)|Shifts doesn't support every configuration and capability of your WFM system. Learn more about [Shifts capabilities](#shifts-capabilities) when using Microsoft managed connectors.|
+|Reflexis Workforce Management version 4.3.2, 4.4, or 4.5|[Reflexis Shifts connector for Microsoft Teams](shifts-connectors.md#reflexis-shifts-connector-for-microsoft-teams) <br/> (Hosted and managed by Zebra)|Shifts doesn't support every configuration and capability of your WFM system. [Learn more](shifts-connectors.md#reflexis-shifts-connector-for-microsoft-teams).|
 |Any other WFM system|[workforceIntegration Graph API](/graph/api/resources/workforceintegration?view=graph-rest-1.0)|<ul><li>Your workforce integration can prevent invalid data from being written to Shifts.</li><li>The workforce integration service you build must be highly available and resilient:</li><ul><li>If the service is slow, it affects the user experience in Shifts.</li><li>If the service is unavailable, users can't make changes in Shifts.</li></ul></ul>|
 
 ## Deployment overview
@@ -84,17 +84,16 @@ Here’s an overview of what frontline managers and workers can do in Shifts.
 |---------|---------|---------|
 |Create a schedule for their team. <br/>Supported methods:<ul><li>Manually create shifts and time off one by one.</li><li>Bulk creation of shifts and time off through Excel import and copy/paste.</li></ul> | Yes | No |
 |Create open shifts for team members to request. <br/>Supported methods:<ul><li>Manually create shifts and time off one by one.</li><li>Bulk creation of shifts and time off through Excel import and copy/paste.</li></ul> | Yes | No |
-|Update and delete shifts, time, off, and open shifts.<br/>Only manual one by one changes are supported.| Yes | No<sup>1</sup>|
-|Manage Shifts settings for the team. | Yes<sup>2</sup>| No<sup>3</sup>|
-|Create schedule groups to organize workers based on common characteristics within a team. For example, department or job type. | Yes | No<sup>4</sup>|
+|Update and delete shifts, time, off, and open shifts.<br/>Only manual one by one changes are supported.| Yes | No|
+|Manage Shifts settings for the team. | Yes<sup>1</sup>| No<sup>2</sup>|
+|Create schedule groups to organize workers based on common characteristics within a team. For example, department or job type. | Yes | No<sup>3</sup>|
 |Retrieve time sheet reports. | Yes | Yes |
 |Retrieve the totals for hours worked and time off. | Yes | Yes |
 |Manage requests from workers. | Yes | Yes |
 
-<sup>1</sup>Deleting shifts, time off, and open shifts is possible. Updating these entities isn’t possible.<br/>
-<sup>2</sup>Depends on how your organization deployed Shifts. This might not be available for the frontline managers to manage locally.<br/>
-<sup>3</sup>Automatically configured when you set up the connection between your WFM system and the Shifts connector. No action is needed by frontline managers.<br/>
-<sup>4</sup>Automatically created based on the configuration of your WFM system.
+<sup>1</sup>Depends on how your organization deployed Shifts. This might not be available for the frontline managers to manage locally.<br/>
+<sup>2</sup>Automatically configured when you set up the connection between your WFM system and the Shifts connector. No action is needed by frontline managers.<br/>
+<sup>3</sup>Automatically created based on the configuration of your WFM system.
 
 |Frontline worker capabilities |Standalone |Microsoft managed Shifts connector|
 |---------|---------|---------|
