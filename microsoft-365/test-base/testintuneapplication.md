@@ -48,7 +48,7 @@ As an Intune customer who has an Intune package, which has been already onboarde
     > ![Upload the intune package](Media/testintuneapplication02.png) 
 
 
-5. On the Step 1 page, you'll see dependencies that listed under the Dependency section, you can either choose to upload the dependency’s install file or remove it from this step (if you plan to manage the dependency in Step 3 by self provide the related binaries). Selected dependencies in this section will be pre-installed the same way as it will be installed via Intune.
+5. On the Step 1 page, you'll see dependencies that listed under the Dependency section, you can either choose to upload the dependency’s install file or remove it from this step (if you plan to manage the dependency in Step 3 by self provide the related binaries). Selected dependencies in this section will be preinstalled the same way as it will be installed via Intune.
     
     > [!div class="mx-imgBorder"] 
     > ![Upload dependency package](Media/testintuneapplication03.png) 
@@ -93,10 +93,10 @@ The Test matrix tab is for you to indicate the specific Windows update program o
    > [!div class="mx-imgBorder"]
    > ![Screenshot shows Set test matrix configure securityupdate.](Media/settestmatrix03-configuresecurityupdate.png)
 
-   - Your selection will register your application for automatic test runs against the B release of Windows monthly quality updates of selected product(s).
+   - Your selection registers your application for automatic test runs against the B release of Windows monthly quality updates of selected products.
      - For customers who have Default Access customers on Test Base, their applications are validated against the final release version of the B release security              updates, starting from Patch Tuesday.
-     - For customers who have Full Access customers on Test Base, their applications are validated against the pre-release versions of the B release security                  updates, starting up to 3-weeks before prior to Patch Tuesday. This allows time for the Full Access customers time to take proactive steps in resolving any            issues found during testing before in advance of the final release on Patch Tuesday.  
-       (How to become a Full Access customer? Please refer to [Request to change access level | Microsoft Docs](accesslevel.md))
+     - For customers who have Full Access customers on Test Base, their applications are validated against the pre-release versions of the B release security                  updates, starting up to three weeks before prior to Patch Tuesday. It allows time for the Full Access customers time to take proactive steps in resolving any            issues found during testing before in advance of the final release on Patch Tuesday.  
+       (How to become a Full Access customer? Refer to [Request to change access level | Microsoft Docs](accesslevel.md))
 
 3. Configure **Feature Update**
    - To set up for feature updates, you must specify the target product and its preview channel from "Insider Channel" dropdown list.
@@ -117,7 +117,7 @@ Review the configuration after which the package could be published.<br/><br/>
 
 
 **Intunewin file Upload Flow (unable to synchronize with Intune account)** <br/>
-As a Test Base customer who has a standalone intunewin package. Customer can onboard the intunewin package (containing an app with/without dependencies of pre-install apps managed in Intune) without needing to get permission granted against Intune account to finish the onboarding process.
+As a Test Base customer who has a standalone intunewin package. Customer can onboard the intunewin package (containing an app with/without dependencies of preinstall apps managed in Intune) without needing to get permission granted against Intune account to finish the onboarding process.
 
 **Prep Step**
 1. Login with your Test Base account.
