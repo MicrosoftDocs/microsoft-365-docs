@@ -21,7 +21,7 @@ In Microsoft Bookings, managing service availability is essential for efficient 
 
 ## Service availability categories
 
-There are three categories of service availability:
+There are three categories of service availability.
 
 1.  **Bookable when staff are free:** This means that your service will only be available when your staff members who offer this service are also available. This option helps you avoid double-booking or conflicts in your staff's schedule.
 2.  **Not bookable:** This means that your service cannot be booked by your customers at all. You can use this option if you want to temporarily suspend a service or make it unavailable for online booking. You can still manually book this service from your calendar if you need to.

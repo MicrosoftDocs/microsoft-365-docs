@@ -38,7 +38,7 @@ See [Turn on or off Shared Bookings for organization](turn-bookings-on-or-off.md
 
 With Power Automate, Bookings admins can create workflows that automate tasks and processes in Bookings. For example, posting messages in a Teams channel when an appointment is created or syncing data with other apps. Power Automate provides a set of connectors for Bookings that let you access and control data from your booking pages, services, staff members, and customers.
 
-To get started with Power Automate and Bookings, you can use the templates available in the Power Automate gallery or create your own flows. You can also customize the connectors for your organization's needs.
+To get started with Power Automate and Bookings, use the templates available in the Power Automate gallery or create your own flows. You can also customize the connectors for your organization's needs.
 
 For more information about Power Automate and Bookings, see [Use Power Automate connectors to build Bookings workflows](power-automate-integration.md).
 

@@ -24,7 +24,7 @@ After configuring your shared booking page in Microsoft Bookings, it's time to s
 1.  Navigate to the left pane in Microsoft Bookings.
 2.  From the list of options, choose the **booking page** you want to share.
 
-You can share the link to your booking page using the methods below:
+You can share the link to your booking page using the methods below.
 
 - **Copy Link**: Copy the link to your booking page and share it by email, SMS text messages, Microsft Teams, in your email signature, or any social media you prefer.
 - **Share on Social Media**: Increase visibility by sharing the booking page link on your social media platforms, such as Facebook, Twitter, or LinkedIn. This will allow potential clients to discover your services and book appointments easily.
