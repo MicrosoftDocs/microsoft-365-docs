@@ -13,16 +13,15 @@
       href: bookings-in-outlook.md
   - name: Learn about Shared Bookings
     items:
-      items:
-        - name: Enter your Bookings business information
-          href: enter-business-information.md
-        - name: Define your Bookings service offerings
-          href: define-service-offerings.md
-        - name: Add staff to Bookings
-          href: add-staff.md
-        - name: Share your shared booking page
-          href: define-service-offerings.md
-        - name: Manage your team availability for shared bookings
+    - name: Enter your Bookings business information
+      href: enter-business-information.md
+    - name: Define your Bookings service offerings
+      href: define-service-offerings.md
+    - name: Add staff to Bookings
+      href: add-staff.md
+    - name: Share your shared booking page
+      href: define-service-offerings.md
+    - name: Manage your team availability for shared bookings
       items:
         - name: Understanding staff roles
           href: add-staff.md
@@ -38,8 +37,10 @@
           href: enter-business-information.md
         - name: Configure SMS text notifications and reminders
           href: bookings-sms.md
+        - name: Configure service availability
+          href: bookings-sms.md          
         - name: Use Buffer Time to add prep time
-          href: define-service-offerings.md
+          href: set-buffer-time.md
         - name: Hide services from your booking page
           href: add-staff.md
     - name: Manage your customers for shared bookings
