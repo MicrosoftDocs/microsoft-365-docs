@@ -40,4 +40,4 @@ Sharing your booking page link offers the following advantages:
 - **Professional Image**: A well-designed booking page reflects professionalism and efficiency. Sharing it demonstrates that you value your clients' time and convenience.
 - **Time Savings**: When clients self-book through the link, it reduces administrative tasks for you. This frees up your time for other important tasks.
 
-Remember to customize your booking page to align with your organizational needs, set availability, and choose access control options. Sharing your booking page link via email, social media, or your website empowers clients to engage with your services effortlessly!
+Remember to customize your booking page to align with your organizational needs, set availability, and choose access control options. Sharing your booking page link via email, social media, or your website empowers clients to engage with your services effortlessly.

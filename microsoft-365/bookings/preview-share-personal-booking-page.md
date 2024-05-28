@@ -19,33 +19,29 @@ AI_Usage:
 description: Preview and share your personal booking page with clients and customers
 ---
 
-# Preview and share your personal booking page
+# Sharing Your Shared Booking Page in Microsoft Bookings
 
-The personal booking page is a crucial tool for sharing your availability with others, enabling them to easily schedule appointments with you. This feature provides a streamlined process for selecting meeting types, dates, and times and allows other people to book easily with you.
+After configuring your shared booking page in Microsoft Bookings, it's time to share it with your clients or customers. Follow the steps in this article to learn about how to share the link to your booking page. This will help you reach more potential clients and make it easier for them to book appointments with you.
 
-> [!IMPORTANT]
-> Only meeting types set up to be **public** will appear on your personal booking page. To learn more about public meeting types, see [Create new meeting type](create-new-meeting-type.md).
+## Share the booking page link
 
-## Preview the customer experience
+1.  Navigate to the left pane in Microsoft Bookings.
+2.  From the list of options, choose the **booking page** you want to share.
 
-To see how the appointment booking process works for your clients and customers, select the **copy** icon next to the **Personal booking page** heading. This will copy the link to your personal booking page, allowing you to share it or open it in a new tab for previewing.
+You can share the link to your booking page using the methods below:
 
-When you open this link in a new tab, you'll see your client and customer facing booking page. Once an appointment is booked, you and your customer will receive a confirmation email.
+- **Copy Link**: Copy the link to your booking page and share it by email, SMS text messages, Microsft Teams, in your email signature, or any social media you prefer.
+- **Share on Social Media**: Increase visibility by sharing the booking page link on your social media platforms, such as Facebook, Twitter, or LinkedIn. This will allow potential clients to discover your services and book appointments easily.
+- **Share via Email**: Microsoft Bookings provides an option to share the link directly via email. Click the **Email** button, and an automated email function will open, allowing you to send the booking page link to your contacts.
+- **Embed in Your Website**: If your organization has a website, embed the booking page link directly so visitors can access your services and schedule appointments without leaving your web environment. Microsoft Bookings allows you to copy the link and the iframe in just one click.
 
-## Share your personal booking page
+### Benefits of Sharing the Booking Page Link
 
-Microsoft Bookings offers several ways to share your personal booking page with your customers. Sharing your personal booking page is essential for connecting with your customers and streamlining the appointment scheduling process.
+Sharing your booking page link offers the following advantages:
 
-### Sharing Options
+- **Convenience**: Clients can quickly access your availability and book appointments without phone calls or lengthy interactions.
+- **Increased Bookings**: Sharing the link widely expands your reach and attracts more clients. The easier it is for them to book, the more likely they are to choose your services.
+- **Professional Image**: A well-designed booking page reflects professionalism and efficiency. Sharing it demonstrates that you value your clients' time and convenience.
+- **Time Savings**: When clients self-book through the link, it reduces administrative tasks for you. This frees up your time for other important tasks.
 
-There are three ways you can share your personal booking page.
-
-1.  **Copy Link and Share**: Copy your booking page link and paste it where you want. You can add it to a Teams chat or your social media profiles. This allows you to reach a broader audience and makes booking appointments easier for clients and customers.
-2.  **Share via email**: Enter the email addresses of the person you want to share your booking page with. You can add a customized message.
-3.  **Email signature settings**: Add your booking page link to your email signature. This means every time you draft or send any email, your booking page will automatically be embedded in your email signature.
-
-### Share meeting types
-
-All meeting types in personal bookings can be shared individually by clicking on the **Share** icon present on the meeting tile. This link can be copied and shared via email. There is also the option of making the link valid only for one booking for private meetings.
-
-Maximize the visibility of your personal booking page and streamline the appointment scheduling process for your customers by sharing your personal booking page.
+Remember to customize your booking page to align with your organizational needs, set availability, and choose access control options. Sharing your booking page link via email, social media, or your website empowers clients to engage with your services effortlessly.
