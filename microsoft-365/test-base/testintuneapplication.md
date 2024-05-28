@@ -41,8 +41,8 @@ As an Intune customer who has an Intune package, which is onboarded to Intune po
 
 **Step 1: Define Content**
 1. Upload the intunewin package you choose.
-2. Grant token by clicking on below link "Grant token and select app".
-3. After automatic sync with your Intune account, you'll be listed with app your applications under your Intune account. Choose the app corresponding to your uploaded intunewin package then click "Select".
+2. Grant token by clicking on below link "Grant token and select app."
+3. After automatic sync with your Intune account, you'll be listed with app your applications under your Intune account. Choose the app corresponding to your uploaded intunewin package then click "Select."
     
     > [!div class="mx-imgBorder"] 
     > ![Upload the intune package](Media/testintuneapplication02.png) 
@@ -77,7 +77,7 @@ The Test matrix tab is for you to indicate the specific Windows update program o
    > ![Screenshot shows Set test matrix new package.](Media/settestmatrix01-newpackage.png)
 
 1. Choose **OS update type**
-   - Test Base provides scheduled testing to make sure your applications performance isn't break by the latest Windows updates. 
+   - Test Base provides scheduled testing to make sure your applications performance isn't broken by the latest Windows updates. 
 
    > [!div class="mx-imgBorder"]
    > ![Screenshot shows Set test matrix choose osupdate.](Media/settestmatrix02-chooseosupdate.png)
@@ -88,7 +88,7 @@ The Test matrix tab is for you to indicate the specific Windows update program o
      - The **Feature updates** enable your package to be tested against new features in the latest Windows Insider Preview Builds from the Windows Insider Program.
 
 2. Configure **Security Update**
-   To set up for security updates, you must specify the Windows products you want to test against from the dropdown list of "OS versions to test".
+   To set up for security updates, you must specify the Windows products you want to test against from the dropdown list of "OS versions to test."
 
    > [!div class="mx-imgBorder"]
    > ![Screenshot shows Set test matrix configure securityupdate.](Media/settestmatrix03-configuresecurityupdate.png)
@@ -106,7 +106,7 @@ The Test matrix tab is for you to indicate the specific Windows update program o
 
    - Your selection will register your application for automatic test runs against the latest feature updates of your selected product channel and all future new            updates in the latest Windows Insider Preview Builds of your selection.
 
-   - You may also set your current OS in "OS baseline for Insight". We would provide you with more test insights by regression analysis of your as-is OS environment and the      latest target OS.
+   - You may also set your current OS in "OS baseline for Insight." We would provide you with more test insights by regression analysis of your as-is OS environment and the      latest target OS.
 
    > [!div class="mx-imgBorder"]
    > ![Screenshot shows Set test matrix set os.](Media/settestmatrix05-setos.png)  
