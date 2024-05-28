@@ -20,10 +20,6 @@ f1.keywords: NOCSH
 
 [!INCLUDE [test-base-deprecation](./includes/test-base-deprecation.md)]
 
-  > [!Note] 
-  > This guide will guide you to upload your intunewin format package to Test Base. For general Test
-Base package upload instruction, please refer to this [doc](https://microsoft.sharepoint.com/:w:/t/AzureSUVPCoreTeam/EeHQIT3qA0FKqBDWI5TzmzgBiH2Syz39o5VbY2kdugMn4A?e=Rk1KD9).
-
 ## Intunewin Upload Flow
 As an effort to further enable commercial utilization, Test Base started to support intunewin format for IT Pros who manages apps for their apps within Intune as the standard onboarding package format. The intunewin upload flow provides the experience for IT Pros to reuse their intunewin format packages, which contain the apps they deployed to their end devices via Intune to onboarding their apps and test configurations quickly to Test Base. 
 
