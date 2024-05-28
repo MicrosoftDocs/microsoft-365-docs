@@ -1,5 +1,5 @@
 ---
-title: Synchronize users in multitenant organizations in Microsoft 365
+title: Synchronize users in multitenant organizations in Microsoft 365 (Preview)
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
