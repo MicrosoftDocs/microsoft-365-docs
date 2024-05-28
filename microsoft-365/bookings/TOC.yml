@@ -1,17 +1,17 @@
 - name: Microsoft Bookings
   href: bookings-overview.md
   items:
-  - name: Set up Personal Bookings
+  - name: Learn about Personal Bookings
     items:
     - name: Create a new meeting type
       href: create-new-meeting-type.md
     - name: Preview and share your personal booking page
       href: preview-share-personal-booking-page.md
-    - name: Add email reminders and follow-up
-      href: bookings-in-outlook.md
+    - name: Add email reminders and follow-up in Microsoft Bookings
+      href: add-email-reminder.md
     - name: Set your banner image
-      href: bookings-in-outlook.md
-  - name: Set up Shared Bookings
+      href: microsoft-365/bookings/set-banner-image.md
+  - name: Learn about Shared Bookings
     items:
     - name: Enter your Bookings business information
       href: enter-business-information.md
@@ -63,19 +63,19 @@
           href: set-language-time-zones.md
         - name: Customize and publish your booking page
           href: customize-booking-page.md
-  - name: Bookings for admins
+  - name: Bookings for Microsoft 365 admins
     items:
     - name: Turn off your Personal Booking page
       href: bookings-in-outlook.md
-    - name: Turn Microsoft Bookings on or off
+    - name: Turn on or off Shared Bookings for organization
       href: turn-bookings-on-or-off.md
     - name: Granular controls for Shared Bookings
       href: granular-controls-shared-bookings.md     
-    - name: Custom domain support in Microsoft Bookings
+    - name: Custom domain support in Shared Bookings
       href: custom-domain-support.md
-    - name: Use the Bookings Graph APIs
+    - name: Use the Shared Bookings Graph APIs
       href: https://learn.microsoft.com/graph/api/resources/booking-api-overview?view=graph-rest-1.0
-    - name: Reporting info for Bookings
+    - name: Reporting info for Shared Bookings
       href: reporting-info.md
     - name: Delete a shared booking page
       href: delete-calendar.md
