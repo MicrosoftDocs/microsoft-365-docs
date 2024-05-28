@@ -1,7 +1,7 @@
 - name: Microsoft Bookings
   href: bookings-overview.md
   items:
-  - name: Learn about Personal Bookings
+  - name: Set up Personal Bookings
     items:
     - name: Create a new meeting type
       href: create-new-meeting-type.md
@@ -11,7 +11,7 @@
       href: bookings-in-outlook.md
     - name: Set your banner image
       href: bookings-in-outlook.md
-  - name: Learn about Shared Bookings
+  - name: Set up Shared Bookings
     items:
     - name: Enter your Bookings business information
       href: enter-business-information.md
