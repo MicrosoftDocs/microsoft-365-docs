@@ -28,7 +28,7 @@ As an effort to further enable commercial utilization, Test Base started to supp
   - Intunewin packages to be uploaded. 
 
 **Intunewin file Upload Flow (synchronized with Intune account)** <br/>
-As an Intune customer who has an Intune package, which has been already onboarded to Intune portal. Customer can onboard the intunewin package (containing an app with/without dependencies of pre-install apps managed in Intune) to Test Base service (via Intune account, which has proper permission to sync the Intune app info).
+As an Intune customer who has an Intune package, which is onboarded to Intune portal. Customer can onboard the intunewin package (containing an app with/without dependencies of pre-install apps managed in Intune) to Test Base service (via Intune account, which has proper permission to sync the Intune app info).
 
 **Prep Step**
 1. Login with your Test Base account.
@@ -48,7 +48,7 @@ As an Intune customer who has an Intune package, which has been already onboarde
     > ![Upload the intune package](Media/testintuneapplication02.png) 
 
 
-5. On the Step 1 page, you'll see dependencies that listed under the Dependency section, you can either choose to upload the dependency’s install file or remove it from this step (if you plan to manage the dependency in Step 3 by self provide the related binaries). Selected dependencies in this section will be preinstalled the same way as it will be installed via Intune.
+5. On the Step 1 page, you can see dependencies that listed under the Dependency section, you can either choose to upload the dependency’s install file or remove it from this step (if you plan to manage the dependency in Step 3 by self provide the related binaries). Selected dependencies in this section are preinstalled the same way as it is installed via Intune.
     
     > [!div class="mx-imgBorder"] 
     > ![Upload dependency package](Media/testintuneapplication03.png) 
@@ -77,7 +77,7 @@ The Test matrix tab is for you to indicate the specific Windows update program o
    > ![Screenshot shows Set test matrix new package.](Media/settestmatrix01-newpackage.png)
 
 1. Choose **OS update type**
-   - Test Base provides scheduled testing to make sure your applications performance won’t break by the latest Windows updates. 
+   - Test Base provides scheduled testing to make sure your applications performance isn't break by the latest Windows updates. 
 
    > [!div class="mx-imgBorder"]
    > ![Screenshot shows Set test matrix choose osupdate.](Media/settestmatrix02-chooseosupdate.png)
@@ -88,7 +88,7 @@ The Test matrix tab is for you to indicate the specific Windows update program o
      - The **Feature updates** enable your package to be tested against new features in the latest Windows Insider Preview Builds from the Windows Insider Program.
 
 2. Configure **Security Update**
-   To set up for security updates, you must specify the Windows product(s) you want to test against from the dropdown list of "OS versions to test".
+   To set up for security updates, you must specify the Windows products you want to test against from the dropdown list of "OS versions to test".
 
    > [!div class="mx-imgBorder"]
    > ![Screenshot shows Set test matrix configure securityupdate.](Media/settestmatrix03-configuresecurityupdate.png)
@@ -140,13 +140,13 @@ As a Test Base customer who has a standalone intunewin package. Customer can onb
 
 **Step 3: Edit Package**
 1. Check the scripts are tagged correctly.
-2. As no install/uninstall commands are synchronized from corresponding Intune account, you'll need to provide all the scripts (install/uninstall/launch/close) by yourself.
+2. As no install/uninstall commands are synchronized from corresponding Intune account, you need to provide all the scripts (install/uninstall/launch/close) by yourself.
 3. Check the test app binaries are moved under bin folder.
 4. You can edit the scripts as needed and save.
 
 
 **Step 4: Test Matrix**
-1. No default OS version will be pre-selected.
+1. No default OS version is pre-selected.
 2. Users are allowed to make their own selection on the OSes to be scheduled.
 
 
