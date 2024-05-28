@@ -34,10 +34,10 @@ sections:
           1. After you order your online services through the Open program family, you'll receive an email with a link and instructions to activate your services.
           OR
           2. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> and sign in with your credentials.
-            - In the **Navigation menu**, select **Billing** > **Your products**, then select the **Volume licensing** tab.
-            - Go to **Product & Services** or **Contracts modules** and under the **Keys** section, select the license ID to manage.
-            - Select the **Manage activation** link, then select **Start Activation**. A product activation window opens and prepopulates the key.
-            - Continue the remaining activation steps to complete product activation.
+            a. In the **Navigation menu**, select **Billing** > **Your products**, then select the **Volume licensing** tab.
+            b. Go to **Product & Services** or **Contracts modules** and under the **Keys** section, select the license ID to manage.
+            c. Select the **Manage activation** link, then select **Start Activation**. A product activation window opens and prepopulates the key.
+            d. Continue the remaining activation steps to complete product activation.
             
             >[!NOTE]
             >It can take up to 24 hours for the service to display as activated in the Microsoft 365 admin center volume licensing section.
