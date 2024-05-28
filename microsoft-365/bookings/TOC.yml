@@ -33,7 +33,7 @@
           href: add-staff.md  
     - name: Manage your service availability for shared bookings
       items:
-        - name: Create a 1:N and N:N service
+        - name: Create a single attendee or multiple attendee booking service
           href: enter-business-information.md
         - name: Configure SMS text notifications and reminders
           href: bookings-sms.md
