@@ -48,7 +48,7 @@ As an Intune customer who has an Intune package, which has been already onboarde
     > ![Upload the intune package](Media/testintuneapplication02.png) 
 
 
-5. On the Step 1 page, you'll see dependencies listed under the Dependency section, you can either choose to upload the dependency’s install file or remove it from this step (if you plan to manage the dependency in Step 3 by self provide the related binaries). Selected dependencies in this section will be pre-installed the same way as it will be installed via Intune.
+5. On the Step 1 page, you'll see dependencies that listed under the Dependency section, you can either choose to upload the dependency’s install file or remove it from this step (if you plan to manage the dependency in Step 3 by self provide the related binaries). Selected dependencies in this section will be pre-installed the same way as it will be installed via Intune.
     
     > [!div class="mx-imgBorder"] 
     > ![Upload dependency package](Media/testintuneapplication03.png) 
@@ -82,7 +82,7 @@ The Test matrix tab is for you to indicate the specific Windows update program o
    > [!div class="mx-imgBorder"]
    > ![Screenshot shows Set test matrix choose osupdate.](Media/settestmatrix02-chooseosupdate.png)
 
-   - There are 2 available options:
+   - There are two available options:
    
      - The **Security updates** enable your package to be tested against incremental churns of Windows monthly security updates.
      - The **Feature updates** enable your package to be tested against new features in the latest Windows Insider Preview Builds from the Windows Insider Program.
@@ -106,7 +106,7 @@ The Test matrix tab is for you to indicate the specific Windows update program o
 
    - Your selection will register your application for automatic test runs against the latest feature updates of your selected product channel and all future new            updates in the latest Windows Insider Preview Builds of your selection.
 
-   - You may also set your current OS in "OS baseline for Insight". We would provide you more test insights by regression analysis of your as-is OS environment and the      latest target OS.
+   - You may also set your current OS in "OS baseline for Insight". We would provide you with more test insights by regression analysis of your as-is OS environment and the      latest target OS.
 
    > [!div class="mx-imgBorder"]
    > ![Screenshot shows Set test matrix set os.](Media/settestmatrix05-setos.png)  
