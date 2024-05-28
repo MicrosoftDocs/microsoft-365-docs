@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: efrene
 author: efrene
 manager: scotv
-ms.date: 06/21/2023
+ms.date: 05/28/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -47,8 +47,8 @@ Now that you've set up Microsoft 365, you can install individual Microsoft 365 a
 Microsoft 365 apps can be found on your  **Start** menu. If you don't see them, you can install them yourself.
 
 1. Go to microsoft365.com. You might need to sign in with your work account.
-2. Select  **Install apps**, then select **Microsoft 365 apps**. 
-1. Open the file that is downloaded to your **Downloads** folder. 
+1. Select **Install and more**, then select **Install Microsoft 365 apps**.
+1. Open the file that is downloaded to your **Downloads** folder.
 1. On the **Do you want to allow this app to make changes to your device** page, select **Yes** to begin installation.
 1. The Microsoft 365 apps are installed. The process may take several minutes. When it completes, select  **Close**.
 
