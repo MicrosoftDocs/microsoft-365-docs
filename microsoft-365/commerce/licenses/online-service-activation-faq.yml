@@ -39,8 +39,8 @@ sections:
             - Select the **Manage activation** link, then select **Start Activation**. A product activation window opens and prepopulates the key.
             - Continue the remaining activation steps to complete product activation.
             
-              >[!NOTE}
-              >It can take up to 24 hours for the service to display as activated in the Microsoft 365 admin center volume licensing section.
+            >[!NOTE}
+            >It can take up to 24 hours for the service to display as activated in the Microsoft 365 admin center volume licensing section.
 
       - question: |
           I don't see my Azure order. What should I do?
