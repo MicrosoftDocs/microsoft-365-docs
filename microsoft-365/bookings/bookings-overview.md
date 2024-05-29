@@ -5,7 +5,7 @@ author: kwekuako
 manager: scotv
 ms.date: 09/12/2023
 audience: Admin
-ms.topic: article
+ms.topic: overview
 ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 47403d64-a067-4754-9ae9-00157244c27d
