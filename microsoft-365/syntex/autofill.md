@@ -49,16 +49,16 @@ To create a new autofill column, follow these steps:
 
 6. When have the prompt you want, select **Save**.
 
-7. Once the column settings are saved, select the files in the library to which you want to apply the autofill column. Then from the command bar, select **More options** (**\***\**) > **Autofill**.
+7. To process existing library content, select the files in the library for which you want to apply the autofill column. Then from the command bar, select **More options** (**\***\**) > **Autofill**.
 
    ![Screenshot showing More option > Autofill on the ribbon.](../media/content-understanding/autofill-ribbon.png)
 
     You'll see message indicating that autofill is starting to process the files and the time it might take to complete processing.
 
-After the autofill setting on a column is saved, any new files uploaded to the library are automatically processed, and the extracted information is saved to the corresponding columns.
+8. After an autofill setting on a column is saved, any new files uploaded to the library are automatically processed, and the extracted information is saved to the corresponding columns.
 
-> [!NOTE]
-> AI-generated content might be incorrect. Be sure to check the column results.
+    > [!NOTE]
+    > AI-generated content might be incorrect. Be sure to check the column results.
 
 ## Update an existing autofill column
 
