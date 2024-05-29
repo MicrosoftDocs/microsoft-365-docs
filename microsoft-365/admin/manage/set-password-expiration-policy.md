@@ -55,7 +55,7 @@ Follow the steps below if you want to set user passwords to expire after a speci
 
     If you aren't a global admin or security admin, you won't see this page.
   
-2. In the Security and Privacy tab, on the **Password expiration policy** page, uncheck the box to change the password policy.
+2. In the **Security and Privacy** tab, on the **Password expiration policy** page, uncheck the box to change the password policy.
 
 3. Type how often passwords should expire. Choose a number of days from **14 to 730** and select **Save**.
 
