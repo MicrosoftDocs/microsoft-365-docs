@@ -18,6 +18,7 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
+- must-keep
 search.appverid:
 - MET150
 - MOE150
