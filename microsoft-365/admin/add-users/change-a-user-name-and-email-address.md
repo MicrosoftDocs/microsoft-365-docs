@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 06/14/2023
+ms.date: 05/29/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -16,6 +16,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+- must-keep
 ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
