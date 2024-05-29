@@ -37,7 +37,7 @@ To create a new autofill column, follow these steps:
 
 4. On the **Autofill** panel, in the **Prompt** box, create the prompt. The prompt identifies the type of information you want to extract from a file to a column.
 
-   For **Text** and **Multiple lines of text** only, a suggested prompt is automatically generated. Select the **Refresh** button to see a different suggested prompt. Select the suggested prompt to add it to the **Prompt** box, and you can edit it as needed. For other column types, see these [suggested prompts](#suggested-prompts-for-column-types).
+   For **Text** and **Multiple lines of text** only, a suggested prompt is automatically generated. Select the **Refresh** button to see a different suggested prompt. Select the suggested prompt to add it to the **Prompt** box, and you can edit it as needed. For other column types, see these [suggested prompts](#suggested-prompts-for-other-column-types).
 
    ![Screenshot showing the Autofill panel.](../media/content-understanding/autofill-panel.png)
 
@@ -50,6 +50,9 @@ To create a new autofill column, follow these steps:
    ![Screenshot showing More option > Autofill on the ribbon.](../media/content-understanding/autofill-ribbon.png)
 
     You'll see a message indicating that autofill is starting to process the files and that it might take time to complete processing.
+
+> [!TIP]
+> If you plan to set up more than one autofill column at the time, you might want to wait until all autofill columns are set up before you process. This will avoid paying addition al processing costs.
 
 8. After an autofill setting on a column is saved, any new files uploaded to the library are automatically processed, and the extracted information is saved to the corresponding columns.
 
@@ -84,13 +87,13 @@ To turn off autofill on a specific column, follow these steps:
 
 3. Select **Save**.
 
-## Suggested prompts for column types
+## Suggested prompts for other column types
 
 |Column type  |Suggested prompt  |Example   |
 |---------|---------|---------|
-|**Text**     | \<insert the question here>? The answer needs to be fewer than 255 characters. If no proper answer is found, respond with \<insert default response>.  | Who is the broker listed in the agreement? The answer needs to be fewer than 255 characters. If no proper answer is found, respond with "None."   |
+<!---|**Text**     | \<insert the question here>? The answer needs to be fewer than 255 characters. If no proper answer is found, respond with \<insert default response>.  | Who is the broker listed in the agreement? The answer needs to be fewer than 255 characters. If no proper answer is found, respond with "None."   |
 |**Text**     | \<insert the question here>? If no proper answer is found, respond with \<insert default response>. | What is the current status of the project milestone? If no proper answer is found, respond with "Status pending review."   |
-|**Multiple lines of text**     | \<insert the question here>? If no proper answer is found, respond with \<insert default response>.   | What is the description of the project scope? If no proper answer is found, respond with "None found."   |
+|**Multiple lines of text**     | \<insert the question here>? If no proper answer is found, respond with \<insert default response>.   | What is the description of the project scope? If no proper answer is found, respond with "None found."   |--->
 |**Number**      | \<insert the question here>? Respond with a valid number. If no proper answer is found, respond with \<insert default response>.       | What is the total number of hours agreed upon? Respond with a valid number. If no proper answer is found, respond with "Not applicable."       |
 |**Yes/No**     | \<insert the question here>? Respond with "Yes" or "No" and only "Yes" or "No." If the documents don't provide enough information, leave the answer blank.      | Is the tenant required to have renter's insurance? Respond with "Yes" or "No" and only "Yes" or "No." If the documents don't provide enough information, leave the answer blank.      |
 |**Date and time**      | \<insert the question here>? Format the answer as a valid C# datetime. If no proper answer is found, respond with \<insert default response>.      | What is the deadline for the quarterly financial report submission? Format the answer as a valid C# datetime. If no proper answer is found, respond with "No deadline set."      |
