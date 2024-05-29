@@ -1,9 +1,9 @@
 ---
-title: "Create a manual booking"
+title: "Create an appointment on behalf of a customer"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 06/18/2020
+ms.date: 05/28/2024
 audience: Admin
 ms.topic: article
 ms.service: bookings
@@ -16,11 +16,11 @@ ms.assetid: 03a9acc9-f29c-456b-9fb2-0f49474b2708
 description: "Follow these instructions to create an appointment and assign an employee."
 ---
 
-# Create a manual booking
+# Create an appointment on behalf of a customer
 
-Bookings can be scheduled and staffed in two different ways. The first way is by the customer using a standalone booking page or an embedded booking page that you add to your website. The other way is for you or one of your employees to enter the bookings manually, such as when a customer calls for an appointment. This article covers the manual scenario.
+Bookings can be scheduled and staffed in two different ways. The first way is by the customer using a standalone booking page or an embedded booking page that you add to your website. The other way is for you or one of your employees to enter the bookings manually, such as when a customer calls for an appointment.
 
-## Watch: Create a manual booking
+## Watch: Create an appointment on behalf of a customer
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Zd77]
 

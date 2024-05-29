@@ -3,7 +3,7 @@ title: "Get access to Microsoft Bookings"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 09/13/2023
+ms.date: 05/25/2024
 audience: Admin
 ms.topic: article
 ms.service: bookings

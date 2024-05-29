@@ -3,7 +3,7 @@ title: "Define your Bookings service offerings"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 06/18/2020
+ms.date: 05/28/2024
 audience: Admin
 ms.topic: article
 ms.service: bookings
@@ -27,7 +27,7 @@ You can also add customized information and URLs to the email confirmation and r
 
 ## Steps
 
-Here are the steps to add a new service. 
+Here are the steps to add a new service.
 >[!NOTE]
 > Changes to business-related settings, like enabling or disabling one-time passwords (OTP) or sending meeting invites, may take up to 10 minutes to apply.
 

@@ -12,6 +12,9 @@ ms.collection:
 - Tier1
 - scotvorg
 - essentials-manage
+ms.custom: QuickDraft
+AI_Usage:  
+- AI-Assisted
 description: "Configure settings to control who can use Shared Bookings."
 ---
 

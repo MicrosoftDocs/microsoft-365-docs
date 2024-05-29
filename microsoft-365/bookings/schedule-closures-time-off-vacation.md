@@ -3,7 +3,7 @@ title: "Schedule business closures, time off, and vacation time"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 06/24/2020
+ms.date: 05/24/2024
 audience: Admin
 ms.topic: article
 ms.service: bookings
