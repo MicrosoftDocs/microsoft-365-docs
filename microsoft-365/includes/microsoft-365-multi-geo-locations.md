@@ -15,10 +15,12 @@ ms.date: 04/01/2024
 |Italy                                   |ITA
 |Japan                                   |JPN
 |Korea                                   |KOR
+|Mexico                                  |MEX
 |Norway                                  |NOR
 |Poland                                  |POL
 |Qatar                                   |QAT
 |South Africa                            |ZAF
+|Spain                                   |ESP
 |Sweden                                  |SWE
 |Switzerland                             |CHE
 |United Arab Emirates                    |ARE
