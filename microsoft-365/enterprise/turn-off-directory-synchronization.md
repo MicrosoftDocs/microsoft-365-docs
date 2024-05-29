@@ -68,7 +68,11 @@ To turn off Directory synchronization:
     Get-MgOrganization | Select OnPremisesSyncEnabled
   ```
 
->[!Note]
->If you use this command, you must wait 72 hours before you can turn directory synchronization back on.
-
-Visit [Update-MgBetaOrganization](/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaorganization) for more detailed information on cmdlet usage and switches.
+> [!Note]
+> If you use this command, you must wait 72 hours before you can turn directory synchronization back on. Visit [Update-MgBetaOrganization](/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaorganization) for more detailed information on cmdlet usage and switches. 
+> This process will clear the following on-premises properties:
+- DnsDomainName
+- NetBiosName
+- OnPremisesDistinguishedName
+- OnPremisesSamAccountName
+- OnpremisesUserPrincipalName
