@@ -36,7 +36,7 @@ Microsoft Bookings is a powerful scheduling tool in Microsoft 365 Business Basic
 3. In the **Maximum number of attendees** field, set the desired number of customers who can join the appointment. The default value is 1, which creates a 1:1 service.
 4. Go to the **Assign staff** tab and select the radio button **Assign any of your selected staff for an appointment**. This ensures that only one staff member is assigned per booking, even if multiple staff members are available for the service.
 
-### Creating a N:N Service
+## Creating a N:N Service
 
 1. On the Bookings page, select **Services** from the left-hand menu.
 2. Select **Add a service**.
