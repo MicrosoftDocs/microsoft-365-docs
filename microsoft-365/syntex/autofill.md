@@ -49,7 +49,7 @@ To create a new autofill column, follow these steps:
 
    ![Screenshot showing More option > Autofill on the ribbon.](../media/content-understanding/autofill-ribbon.png)
 
-    You'll see message indicating that autofill is starting to process the files and the time it might take to complete processing.
+    You'll see a message indicating that autofill is starting to process the files and that it might take time to complete processing.
 
 8. After an autofill setting on a column is saved, any new files uploaded to the library are automatically processed, and the extracted information is saved to the corresponding columns.
 
