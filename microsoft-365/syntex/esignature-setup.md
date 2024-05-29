@@ -113,15 +113,6 @@ Before a signature request is sent and at the completion of the request, certain
 
 - The originating folder was deleted.
 
-#### Other electronic signature providers
-
-At the end of the signing process when all required parties have signed, a copy of the signed document is automatically saved to SharePoint. The signed document is saved to a provider-specific folder of a special **Apps** folder in SharePoint. Every document library has a provider-specific folder where all documents signed by using that provider are saved.
-
-![Screenshot showing a signed document in a provider-specific folder.](../media/content-understanding/esignature-other-provider-folder.png)
-
-> [!NOTE]
-> How long a copy of the signed document is retained in the other provider's platform depends solely on your document storage and retention policy settings for that provider service.
-
 ### Document retention
 
 When a signature request is created for a document in SharePoint, the SharePoint eSignature service creates a working copy of the document. It's this working copy that is sent out to all recipients for signing, and it's how the sender can track the status of their requests. The working copy of the request is stored in a hidden document library in SharePoint. The signature will only be added to the working copy of the request document after all parties have signed; otherwise, it will appear as unsigned even if one of the parties has added their signature.
@@ -133,3 +124,12 @@ The working copy of the request is stored and retained for five years or in acco
 Every email notification sent in relation to a signature request contains a URL link that allows the recipient to view, review, and sign the document. When a request reaches a terminal state (when the status is **Completed**, **Canceled**, or **Declined**), the recipient has 30 days to view, download, and store the document in a preferred location. After the link expires, it can no longer be used to access the document.
   
 For more protection, when a sender cancels a request, recipients immediately lose access to the request document. The email notification received by recipients won't contain a URL link to view the request.
+
+### Other electronic signature providers
+
+At the end of the signing process when all required parties have signed, a copy of the signed document is automatically saved to SharePoint. The signed document is saved to a provider-specific folder of a special **Apps** folder in SharePoint. Every document library has a provider-specific folder where all documents signed by using that provider are saved. The signed document will be stored in the folder path < Document library > → Apps → Signed documents → < Provider >
+
+![Screenshot showing a signed document in a provider-specific folder.](../media/content-understanding/esignature-other-provider-folder.png)
+
+> [!NOTE]
+> How long a copy of the signed document is retained in the other provider's platform depends solely on your document storage and retention policy settings for that provider service.
