@@ -124,9 +124,8 @@ sections:
           If the Effective Quantity in the generated license statement is shown as zero, it means that your organization isn't entitled to use the license under the terms of the set of licensing IDs selected for that statement. 
           If the Active SA Quantity is shown as zero, it means that the licenses under the set of licensing IDs used to generate the statement don't have any valid or active Software Assurance coverage. 
          
-          NOTE
-          
-          For Online Services licenses, the Active SA Quantity is always zero, because Online Services don't have SAs associated with them. 
+          > [!Note]
+          > For Online Services licenses, the Active SA Quantity is always zero, because Online Services don't have SAs associated with them. 
 
       - question: |
                 Why does the License Summary display more upgrade licenses than the number of qualifying full licenses?
