@@ -1,5 +1,5 @@
 ---
-title: Create autofill columns in Microsoft Syntex
+title: Create an autofill column in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
@@ -17,7 +17,7 @@ ms.localizationpriority:  medium
 description: Learn how to use autofill columns in Microsoft Syntex.
 ---
 
-# Create autofill columns in Microsoft Syntex
+# Create an autofill column in Microsoft Syntex
 
 Autofill is a new setting in the **Create a column** panel that lets you use natural language prompts to extract specific information or generate information from files within a SharePoint library. The information is then displayed in the columns of the library.
 
@@ -37,16 +37,18 @@ To create a new autofill column, follow these steps:
 
 4. On the **Autofill** panel, in the **Prompt** box, create the prompt. The prompt identifies the type of information you want to extract from a file to a column.
 
+     For **Text** and **Multiple lines of text** only, a suggested prompt is automatically generated. Select the **Refresh** button to get another sugggested prompt. For other column types, see these [suggested prompts](#suggested-prompts-for-column-types).
+<!---
     > [!NOTE]
     > Currently, suggested prompts are automatically generated for **Text** and **Multiple lines of text** only. For other column types, see these [suggested prompts](#suggested-prompts-for-column-types).
-
+--->
    ![Screenshot showing the Autofill panel.](../media/content-understanding/autofill-panel.png)
 
 5. In the **Test the prompt** section, select a file to test the prompt using the files in the library. You can modify the prompt and retest it until you achieve the result you want.
 
 6. When have the prompt you want, select **Save**.
 
-7. Once the column settings are saved, select the files in the library to which you want to apply the autofill column. Then from the ribbon, select **More options** (**\***\**) > **Autofill**.
+7. Once the column settings are saved, select the files in the library to which you want to apply the autofill column. Then from the command bar, select **More options** (**\***\**) > **Autofill**.
 
    ![Screenshot showing More option > Autofill on the ribbon.](../media/content-understanding/autofill-ribbon.png)
 
@@ -59,7 +61,7 @@ After the autofill setting on a column is saved, any new files uploaded to the l
 
 ## Update an existing autofill column
 
-To update an autofill column, follow these steps:
+To edit or update an autofill column, follow these steps:
 
 1. In the document library, select the column, and then select **Column settings** > **Edit**.
 
