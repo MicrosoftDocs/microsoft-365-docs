@@ -37,7 +37,7 @@ To create a new autofill column, follow these steps:
 
 4. On the **Autofill** panel, in the **Prompt** box, create the prompt. The prompt identifies the type of information you want to extract from a file to a column.
 
-     For **Text** and **Multiple lines of text** only, a suggested prompt is automatically generated. Select the **Refresh** button to get another sugggested prompt. For other column types, see these [suggested prompts](#suggested-prompts-for-column-types).
+     For **Text** and **Multiple lines of text** only, a suggested prompt is automatically generated. Select the **Refresh** button to see another suggested prompt. For other column types, see these [suggested prompts](#suggested-prompts-for-column-types).
 <!---
     > [!NOTE]
     > Currently, suggested prompts are automatically generated for **Text** and **Multiple lines of text** only. For other column types, see these [suggested prompts](#suggested-prompts-for-column-types).
