@@ -51,8 +51,8 @@ To create a new autofill column, follow these steps:
 
     You'll see a message indicating that autofill is starting to process the files and that it might take time to complete processing.
 
-> [!TIP]
-> If you plan to set up more than one autofill column at the time, you might want to wait until all autofill columns are set up before you process. This will avoid paying addition al processing costs.
+    > [!TIP]
+    > If you are setting up more than one autofill column, you can help minimize your transaction costs by completing the setup of all autofill columns before processing.
 
 8. After an autofill setting on a column is saved, any new files uploaded to the library are automatically processed, and the extracted information is saved to the corresponding columns.
 
