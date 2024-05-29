@@ -19,7 +19,7 @@ description: Learn how to use autofill columns in Microsoft Syntex.
 
 # Create an autofill column in Microsoft Syntex
 
-Autofill is a new setting in the **Create a column** panel that lets you use natural language prompts to extract specific information or generate information from files within a SharePoint library. The information is then displayed in the columns of the library.
+Autofill is a new setting in the **Create a column** panel that lets you use natural language prompts to extract specific information or generate information from files within a SharePoint library. The information is then displayed in the columns of the library. You can set up multiple autofill columns in the same library.
 
 ## Create a new autofill column
 
@@ -58,7 +58,7 @@ To create a new autofill column, follow these steps:
 
 ## Update an existing autofill column
 
-To edit or update an autofill column, follow these steps:
+To edit a promot or update an autofill column, follow these steps:
 
 1. In the document library, select the column, and then select **Column settings** > **Edit**.
 
