@@ -6,7 +6,7 @@ author: daisyfell
 manager: elizapo
 ms.reviewer: daisyfeller
 audience: admin
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.collection:
   - m365initiative-viva-topics
   - highpri
