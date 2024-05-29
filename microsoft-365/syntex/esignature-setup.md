@@ -20,7 +20,9 @@ description: Learn how to set up and manage sites in SharePoint eSignature.
 # Set up SharePoint eSignature
 
 > [!NOTE]
-> SharePoint eSignature is currently rolling out to the US market. If a tenant's location is the United States, SharePoint eSignature will be available for that tenant. For US-located, multi-geo enabled tenants, eSignature will be available in the home geo only. SharePoint eSignature will roll out to other regions later this year.
+> SharePoint eSignature is available to the US market. If a tenant's location is the United States, SharePoint eSignature will be available for that tenant. 
+For US-located, multi-geo enabled tenants, eSignature will be available in the home geo only.
+> SharePoint eSignature will roll out to other regions later this year.
 
 ## Prerequisites
 
