@@ -54,13 +54,14 @@ The following workloads are included in ADR. For more information, see:
 The Advanced Data Residency ("ADR") add-on is intended for Microsoft 365 enterprise customers who have comprehensive data residency requirements. To be eligible to purchase ADR, customers must meet the following prerequisites:
 
 - The _Tenant_ _Default Geography_ must be one of the countries or regions included in the _Local Region Geography_: Australia, Brazil, Canada, France, Germany, India, Israel, Italy, Japan, Mexico, Poland, Qatar, South Korea, Norway, South Africa, Spain, Sweden, Switzerland, United Arab Emirates, and United Kingdom.
-- Customers must have licenses one or more of the following products:
-  - Microsoft 365 F1, F3, E3, or E5
-  - Office 365 F3, E1, E3, or E5
+- Customers must have licenses for one or more of the following products:
+  - Microsoft 365 F1, F3, E3, or E5 (including SKUs without Microsoft Teams)
+  - Office 365 F3, E1, E3, or E5 (including SKUs without Microsoft Teams)
   - Exchange Online Plan 1 or Plan 2
   - OneDrive Plan 1 or Plan 2
   - SharePoint Plan 1 or Plan 2
-  - Microsoft 365 Business Basic, Standard or Premium
+  - Microsoft 365 Business Basic, Standard or Premium (including SKUs without Microsoft Teams)
+  - Microsoft Teams Enterprise, EEA, or Essentials
 
 Geographic availability is updated as available.
 
