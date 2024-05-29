@@ -58,7 +58,7 @@ To create a new autofill column, follow these steps:
 
 ## Update an existing autofill column
 
-To edit a promot or update an autofill column, follow these steps:
+To edit a prompt or update an autofill column, follow these steps:
 
 1. In the document library, select the column, and then select **Column settings** > **Edit**.
 
