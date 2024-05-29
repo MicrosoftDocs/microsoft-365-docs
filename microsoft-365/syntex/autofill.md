@@ -41,11 +41,11 @@ To create a new autofill column, follow these steps:
 
    ![Screenshot showing the Autofill panel.](../media/content-understanding/autofill-panel.png)
 
-5. In the **Test the prompt** section, select a file to test the prompt using the files in the library. You can modify the prompt and retest it until you achieve the result you want.
+5. In the **Test the prompt** section, select a file to test the prompt using the files in the library. The results will display in the **Results** box. If needed, you can modify the prompt and retest it until you achieve the result you want.
 
 6. When have the prompt you want, select **Save**.
 
-7. To process existing library content, select the files in the library for which you want to apply the autofill column. Then from the command bar, select **More options** (**\***\**) > **Autofill**.
+7. The new column will display in the library. To process existing library content, select the files for which you want to apply the autofill column. Then from the command bar, select **More options** (**\***\**) > **Autofill**.
 
    ![Screenshot showing More option > Autofill on the ribbon.](../media/content-understanding/autofill-ribbon.png)
 
