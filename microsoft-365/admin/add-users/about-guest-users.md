@@ -65,13 +65,13 @@ In addition to Microsoft Teams and SharePoint, Microsoft 365 also supports guest
 
 For Microsoft 365 apps like Microsoft Word and Excel, guest access is controlled by the location of the output file, for example, Microsoft SharePoint, Teams, and OneDrive.
 
-## Next steps: Add guests in Microsoft Entra
+## Next steps: Add guests in Microsoft Entra External ID
 
-To add guests in the Microsoft Entra, see [add guests](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal).
+To add guests in Microsoft Entra External ID, see [add a guest](/entra/external-id/b2b-quickstart-add-guest-users-portal).
 
-After you add a user you can also assign them to a group, or give them access to an app in your organization. Once you've added a user in the Microsoft Entra admin center, that user will also be listed on the **`Guest users`** page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">Microsoft 365 admin center</a>.
+After you add a user you can also assign them to a group, or give them access to an app in your organization. Once you added a user in the Microsoft Entra admin center, that user is also listed on the **Guest users** page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">Microsoft 365 admin center</a>.
 
-See [add guests in bulk](/azure/active-directory/b2b/tutorial-bulk-invite) to invite multiple guests to collaborate with your organization.
+See [add guests in bulk](/entra/external-id/tutorial-bulk-invite) to invite multiple guests to collaborate with your organization.
 
 ## Related content
 
