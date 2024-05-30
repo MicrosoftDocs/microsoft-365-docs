@@ -48,7 +48,7 @@ To create a new autofill column, follow these steps:
     > [!TIP]
     > If you are setting up more than one autofill column, you can help minimize your transaction costs by completing the setup of all autofill columns before processing.
 
-7. To process existing library content, select the files for which you want to apply the autofill column. Then from the command bar, select **More options** (**\***\**) > **Autofill**.
+7. To process existing library content, select the files for which you want to apply the autofill column. Then from the command bar, select **More options** (**...**) > **Autofill**.
 
    ![Screenshot showing More option > Autofill on the ribbon.](../media/content-understanding/autofill-ribbon.png)
 
