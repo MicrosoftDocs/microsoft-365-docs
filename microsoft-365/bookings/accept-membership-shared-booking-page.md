@@ -28,7 +28,7 @@ Alternatively, the staff member can access the Shared Booking page from the Book
 
 1. Sign in to Microsoft 365 with their work or school account.
 2. Go to the **Bookings** app.
-3. Locate the shared booking pages they have been invited to.
+3. Locate the shared booking pages staff has been invited to.
 4. Select the Shared Booking page and choose **Accept** to accept the membership.
 
 A shared booking page can have three states:
