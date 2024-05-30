@@ -15,7 +15,7 @@ ai-usage: ai-assisted
 description: "Learn how to hide specific services on your booking page." 
 ---
 
-## How to Hide a Service from Your Booking Page Link in Microsoft 365 Business Basic
+# How to Hide a Service from Your Booking Page Link in Microsoft 365 Business Basic
 
 There could be situations when you want to hide a service from your booking page so customers can't book appointments for that service. This can be helpful in situations such as:
 
