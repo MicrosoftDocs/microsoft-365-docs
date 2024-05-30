@@ -7,12 +7,14 @@ ms.date: 05/23/2024
 audience: Admin
 ms.topic: article
 ms.service: bookings
-ms.custom: admindeeplinkMAC
 ms.localizationpriority: medium
 ms.collection:
 - Tier1
 - scotvorg
 - essentials-manage
+ms.custom: QuickDraft
+AI_Usage:  
+- AI-Assisted
 description: "Configure settings to control who can use Shared Bookings."
 ---
 

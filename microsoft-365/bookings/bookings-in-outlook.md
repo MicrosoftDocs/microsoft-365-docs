@@ -3,7 +3,7 @@ title: "Turn off your Personal Bookings page"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 03/25/2023
+ms.date: 05/25/2024
 audience: Admin
 ms.topic: article
 ms.service: bookings
@@ -14,11 +14,10 @@ ms.collection:
 - essentials-overview
 - essentials-get-started
 - essentials-manage
-ROBOTS: NOINDEX, NOFOLLOW
-description: "Steps to turn off your Personal Bookings page"
+description: "Steps to turn off your Personal Bookings page."
 ---
 
-# Turn off your  Bookings page
+# Turn off your Personal Bookings page
 
  Bookings is a  time management solution that provides a simple and powerful scheduling page with seamless integration with outlook. It lets people schedule a meeting or appointment with you through a  booking page that integrates with the free/busy information from your Outlook calendar. You can create custom meeting types to share with others so they can easily schedule time with you based on your availability and preferences. You both get an email confirmation and attendees can update or cancel scheduled meetings with you from your Personal Bookings page.
 

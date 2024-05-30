@@ -17,7 +17,7 @@ description: "Use this page to create your staff list and to manage staff member
 
 # Add staff to Bookings
 
-The Staff page in Bookings is where you create your staffing list and manage staff member details such as name, phone number, and email address. You can also set working hours for each staff member from here.
+The Staff page in Bookings is where you create your staffing list and manage staff details such as name, phone number, and email address. You can also set working hours for each staff member from here.
 
 ## Before you begin
 
