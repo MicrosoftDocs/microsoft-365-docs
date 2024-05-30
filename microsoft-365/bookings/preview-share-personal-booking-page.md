@@ -19,14 +19,14 @@ AI_Usage:
 description: Preview and share your personal booking page with clients and customers
 ---
 
-# Sharing Your Shared Booking Page in Microsoft Bookings
+# Share your Shared Booking page
 
 After configuring your shared booking page in Microsoft Bookings, it's time to share it with your clients or customers. Follow the steps in this article to learn about how to share the link to your booking page. This will help you reach more potential clients and make it easier for them to book appointments with you.
 
 ## Share the booking page link
 
-1.  Navigate to the left pane in Microsoft Bookings.
-2.  From the list of options, choose the **booking page** you want to share.
+1. Navigate to the left pane in Microsoft Bookings.
+2. From the list of options, choose the **booking page** you want to share.
 
 You can share the link to your booking page using the methods below:
 

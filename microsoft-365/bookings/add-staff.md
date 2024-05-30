@@ -8,8 +8,7 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
-ms.collection: 
-- Tier1
+ms.collection:
 - scotvorg
 - essentials-manage
 description: "Use this page to create your staff list and to manage staff member details such as name, phone number, and email address."

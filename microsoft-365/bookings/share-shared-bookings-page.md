@@ -21,8 +21,8 @@ After configuring your shared booking page in Microsoft Bookings, it's time to s
 
 ## Share the booking page link
 
-1.  Navigate to the left pane in Microsoft Bookings.
-2.  From the list of options, choose the **booking page** you want to share.
+1. Navigate to the left pane in Microsoft Bookings.
+2. From the list of options, choose the **booking page** you want to share.
 
 You can share the link to your booking page using the methods below.
 
