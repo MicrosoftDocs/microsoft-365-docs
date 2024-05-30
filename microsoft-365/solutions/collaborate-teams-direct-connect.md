@@ -142,7 +142,7 @@ To configure outbound settings for an organization
 
 ## Related topics
 
-[B2B direct connect overview](/external-id/b2b-direct-connect-overview)
+[B2B direct connect overview](/entra/external-id/b2b-direct-connect-overview)
 
 [Configure cross-tenant access settings for B2B direct connect](/entra/external-id/cross-tenant-access-settings-b2b-direct-connect)
 

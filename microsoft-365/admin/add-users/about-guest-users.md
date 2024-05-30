@@ -68,7 +68,7 @@ For Microsoft 365 apps like Microsoft Word and Excel, guest access is controlled
 
 To add guests in Microsoft Entra External ID, see [add guest users](/entra/external-id/b2b-quickstart-add-guest-users-portal).
 
-After you add a guest you can also assign them to a group, or give them access to an app in your organization. Once you've added a user in the Microsoft Entra admin center, that user will also be listed on the **Guest users** page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">Microsoft 365 admin center</a>.
+After you add a user you can also assign them to a group, or give them access to an app in your organization. Once you've added a user in the Microsoft Entra admin center, that user will also be listed on the **Guest users** page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">Microsoft 365 admin center</a>.
 
 See [add guests in bulk](/entra/external-id/tutorial-bulk-invite) to invite multiple guests to collaborate with your organization.
 
