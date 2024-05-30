@@ -212,7 +212,7 @@ The information captured in audit log records differs from that in [Microsoft 36
 
 ### Is Intelligent Recap usage in Teams captured in [Usage reports](activity-reports.md)?
 
-Yes. Intelligent Recap has been captured in Teams Copilot in Copilot for Microsoft 365 usage. 
+Yes. Intelligent Recap has been captured in Teams Copilot in Copilot for Microsoft 365 usage.
 
 ### What’s the scope of the user-level table?
 
@@ -228,3 +228,7 @@ Based on system constraints, some users may not have a 'last activity date' in t
 ### Why is the 'Last activity date of Word, Excel, PowerPoint, OneNote, or Outlook Copilot (UTC)' sometimes blank or newer than the actual date, even when users have recently used Copilot features?
 
 This may be caused by a known limitation: the uploading of client events data for Copilot features in Word, Excel, PowerPoint, OneNote, and Outlook can be delayed for various reasons, such as when end users disconnect from the internet immediately after taking a Copilot action.
+
+### How do the numbers in this report compare to what is shown in the Microsoft Copilot Dashboard in Viva Insights?
+
+The data in these reports is based on the same underlying definitions of active usage, but the population of users included in the analysis and the timeframe displayed may differ. To learn more, see [Use Microsoft Copilot Dashboard advanced features with a Viva Insights subscription](/viva/insights/org-team-insights/copilot-dashboard-advanced-features#setup-and-licenses).
