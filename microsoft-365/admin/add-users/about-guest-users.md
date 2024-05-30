@@ -21,14 +21,14 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
-description: "Learn how to populate the Guest list in the Microsoft 365 admin center so guests can attend meetings, view documents and chat in Teams they're invited to."
+description: "Learn how to populate the Guest list in the Microsoft 365 admin center so guests can attend meetings, view documents, and chat in Teams they're invited to."
 ---
 
 # Guests in Microsoft 365 admin center
 
 By default, guest access for Microsoft 365 groups is turned on for your organization. Admins can control whether to allow guest access to groups for their whole organization or for individual groups.
 
-Any guests you add to your Microsoft Teams, SharePoint, or Microsoft Entra ID are also added to the **`Guest users`** list in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">Microsoft 365 admin center</a>. Guests can attend meetings, view documents and chat in Teams they're invited to.
+Any guests you add to your Microsoft Teams, SharePoint, or Microsoft Entra External ID are also added to the **`Guest users`** list in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">Microsoft 365 admin center</a>. Guests can attend meetings, view documents and chat in Teams they're invited to.
 Once a user shows up in the **`Guest users`** list, you can remove their access there.
 
 To view guests, in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">Microsoft 365 admin center</a>, in the left nav, expand **Users**, and then choose **`Guest users`**.
