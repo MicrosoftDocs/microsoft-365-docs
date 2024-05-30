@@ -70,8 +70,10 @@ Currently, autofill columns are not available for the following column data type
 
 - Document changes are captured only if the file is reprocessed, which must be done manually by the user.
 
-> [!NOTE]
-> AI-generated content might be incorrect. Be sure to check column results.
+- Autofill columns use the same classification status fields as document processing models.
+
+    > [!NOTE]
+    > AI-generated content might be incorrect. Be sure to check the column results.
 
 ## Responsible AI FAQs
 
