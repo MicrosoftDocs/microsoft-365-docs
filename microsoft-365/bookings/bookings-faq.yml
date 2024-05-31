@@ -360,8 +360,7 @@ sections:
              > [!NOTE]
              > This setting shares your free/busy information with Bookings and with other users in your organization. It doesn't include any other information.
           
-             > [!div class="mx-imgBorder"]
-             > ![Image of calendar-sharing screen with Can view when I'm busy enabled](../media/bookings-view-busy.png)
+             :::image type="content" alt-text="Image of calendar-sharing screen with Can view when I'm busy enabled." source="../media/bookings-view-busy.png" lightbox="../media/bookings-view-busy.png":::
           
           1. Select **Done**.
           
