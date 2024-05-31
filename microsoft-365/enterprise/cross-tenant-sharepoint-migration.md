@@ -141,7 +141,7 @@ When migrating SharePoint sites between tenants, it is important to communicate 
 
 ## Scheduling SharePoint site migrations
 
-You can schedule SharePoint site migrations in advance but consider the following:
+You can schedule SharePoint site migrations in advance but consider the following recommendations:
 
 - Start with a small number of sites to validate your workflows and communication strategies
 - Once you are comfortable with the process, you can schedule large batches of migrations.
