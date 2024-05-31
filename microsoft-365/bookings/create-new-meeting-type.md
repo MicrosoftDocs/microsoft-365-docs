@@ -33,10 +33,14 @@ You can also add buffer time, and confirmation emails and reminders to enhance t
 
 In Microsoft Bookings, meeting types can be categorized using public and private tags to control their visibility and accessibility on your booking page.
 
+:::image type="content" source="media/create_a_new_meeting_type_share.png" alt-text="Screenshot showing one private meeting and one public meeting in Microsoft Bookings.":::
+
 - **Public meetings:** A meeting type set as public will appear on your personal booking page.
 - **Private meetings:** A meeting type set as private will not appear on your personal booking page. To share this specific meeting type, you must share the link directly with the desired recipients.
 
 ## Create new meeting type
+
+:::image type="content" source="media/create_new_meeting_type_page.png" alt-text="Screenshot showing the home page of Microsoft Bookings where you can select to create a new meeting type.":::
 
 1. On the home page, select **Create meeting type** in the Personal booking page section.
 
@@ -65,9 +69,15 @@ In Microsoft Bookings, meeting types can be categorized using public and private
 
 Meeting types you create will be shown on the home page. The **See More** option on the meeting type tile lets you copy the meeting type link, duplicate it to re-use the configured meeting type, switch between a private and public meeting tag, and even delete a meeting type.
 
+:::image type="content" source="media/create_new_meeting_type_duplicate.png" alt-text="Screenshot showing the option to duplicate a meeting type in Microsoft Bookings." lightbox="media/create_new_meeting_type_duplicate.png":::
+
 To edit a meeting type, select the **Meeting type** tile on the home page. You can update the meeting type name, color category, description, location, duration, public/private tag, and change your availability.
 
+:::image type="content" source="media/create_new_meeting_type_public.png" alt-text="Screenshot showing the option to edit a meeting type in Microsoft Bookings." lightbox="media/create_new_meeting_type_public.png":::
+
 ## Example
+
+:::image type="content" source="media/create_new_meeting_type_time.png" alt-text="Screenshot showing the booking page where you can choose a meeting type in Microsoft Bookings." lightbox="media/create_new_meeting_type_time.png":::
 
 Mona, a financial advisor, has a personal booking page with several meeting types, including insurance planning and investment management. She sets these meeting types as public so they are visible to all her clients on her booking page.
 Mona also provides personalized retirement planning sessions, available only to a select group of clients. She sets this meeting type as private and shares the link only with specific customers interested in booking personalized sessions. By using public and private tags in meeting types, Mona can effectively manage the visibility and accessibility of her services, catering to the needs of both sets of clients.
