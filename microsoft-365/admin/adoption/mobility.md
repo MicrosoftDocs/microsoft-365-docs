@@ -125,7 +125,7 @@ We also provide you with information that helps you gain visibility into how peo
 
 ### Use of Microsoft 365 Apps across platforms
 
-:::image type="content" source="../../media/microsoft365apps-platforms.png" alt-text="Chart that shows number of people who use Microsoft 365 apps on multiple or single platforms.":::
+:::image type="content" source="../../media/microsoft365apps-platforms.png" alt-text="Chart that shows number of people who use Microsoft 365 productivity apps on multiple or single platforms.":::
 
 1. **Header:** Shows the percentage of people active on Microsoft 365 Apps (Word, Excel, PowerPoint, and OneNote) on multiple platforms.
 2. **Body:** Provides information about the value of providing people in your organization the flexibility to access their files from anywhere.

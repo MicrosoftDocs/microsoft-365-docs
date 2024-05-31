@@ -107,7 +107,7 @@ For idle session timeout to get triggered only on unmanaged devices, you'll need
 
 ### Are there any browsers or browser scenarios in which idle session timeout feature doesn't work?  
 
-Idle session timeout isn't supported when third party cookies are disabled in the browser. Users won't see any sign-out prompts. We recommend keeping tracking prevention setting to [Balanced (Default)](/microsoft-edge/web-platform/tracking-prevention) for Microsoft Edge, and third-party cookies enabled in your other browsers. Microsoft 365 apps and services have stopped supporting Internet Explorer 11 since August 17, 2021.
+Idle session timeout isn't supported when third party cookies are disabled in the browser. Users won't see any sign-out prompts. We recommend keeping tracking prevention setting to [Balanced (Default)](/microsoft-edge/web-platform/tracking-prevention) for Microsoft Edge, and third-party cookies enabled in your other browsers. Microsoft 365 productivity apps and services have stopped supporting Internet Explorer 11 since August 17, 2021.
 
 ### How should I prepare if my organization is already using existing Outlook web app and SharePoint idle timeout policies?  
 
