@@ -79,7 +79,7 @@ conceptualContent:
           text: 2. Configure your security protection
         - url: ../business-premium/m365bp-set-up-unmanaged-devices.md
           itemType: overview
-          text: 3. Protect unmanaged (BYOD) devices
+          text: 3. Protect unmanaged (personally owned) devices
         - url: ../business-premium/m365bp-use-email-securely.md
           itemType: overview
           text: 4. Use email more securely
