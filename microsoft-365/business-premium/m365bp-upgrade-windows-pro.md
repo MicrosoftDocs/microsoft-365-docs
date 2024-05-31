@@ -7,7 +7,7 @@ author: chrisda
 manager: deniseb
 audience: Admin
 ms.topic: how-to
-ms.service: microsoft-365-business
+ms.service: microsoft-365-business-security
 ms.collection:
 - tier1
 - m365-security

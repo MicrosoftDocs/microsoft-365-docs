@@ -7,7 +7,7 @@ author: siosulli
 manager: deniseb
 audience: Admin
 ms.topic: conceptual
-ms.service: microsoft-365-business
+ms.service: microsoft-365-business-security
 ms.date: 09/15/2022
 ms.localizationpriority: medium
 ms.collection:

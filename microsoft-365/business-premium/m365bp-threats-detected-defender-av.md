@@ -6,7 +6,7 @@ author: siosulli
 manager: deniseb
 audience: Admin
 ms.topic: conceptual
-ms.service: microsoft-365-business
+ms.service: microsoft-365-business-security
 ms.collection:
 - m365-security
 - tier1
