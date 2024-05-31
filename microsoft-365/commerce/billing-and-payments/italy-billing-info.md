@@ -77,7 +77,7 @@ This is a result of the Billing entity change from Microsoft Ireland to Microsof
 
 ### My invoice does not reflect split payments. How do I correct this?
 
-If you are subject to split payments and the invoice issued by Microsoft Srl Italy is incorrectly issued without the split payment requirements, [contact support for assistance](/microsoft-365/admin/get-help-support?view=o365-worldwide).
+If you are subject to split payments and the invoice issued by Microsoft Srl Italy is incorrectly issued without the split payment requirements, [contact support for assistance](/microsoft-365/admin/get-help-support).
 
 ## Related content
 
