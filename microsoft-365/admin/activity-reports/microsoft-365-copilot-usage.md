@@ -27,9 +27,9 @@ description: "Learn how to get the Microsoft 365 Copilot usage report and gain i
 
 # Microsoft 365 reports in the Admin Center – Copilot for Microsoft 365 readiness and usage
 
-The Microsoft 365 Usage dashboard shows you the activity overview across the Microsoft 365 apps in your organization. It enables you to drill into individual product-level reports to give you more granular insight about the activities within each app. To view all reports, check out the [Reports overview article](activity-reports.md).
+The Microsoft 365 Usage dashboard shows you the activity overview across the Microsoft 365 productivity apps in your organization. It enables you to drill into individual product-level reports to give you more granular insight about the activities within each app. To view all reports, check out the [Reports overview article](activity-reports.md).
 
-The Copilot for Microsoft 365 report, which is in continuous enhancement, includes a Readiness section and Usage section. In the Readiness section, you can view which users are technically eligible for Copilot, assign licenses, and monitor usage of Microsoft 365 apps that Copilot integrates best with. Within the Usage section, you can view a summary of how users’ adoption, retention, and engagement are with Copilot for Microsoft 365, and the activity of every Copilot user in your organization. The report becomes available within 72 hours, and once available, the usage data shown on the report can have up to a maximum of 72 hours latency.
+The Copilot for Microsoft 365 report, which is in continuous enhancement, includes a Readiness section and Usage section. In the Readiness section, you can view which users are technically eligible for Copilot, assign licenses, and monitor usage of Microsoft 365 productivity apps that Copilot integrates best with. Within the Usage section, you can view a summary of how users’ adoption, retention, and engagement are with Copilot for Microsoft 365, and the activity of every Copilot user in your organization. The report becomes available within 72 hours, and once available, the usage data shown on the report can have up to a maximum of 72 hours latency.
 
 ## How do I get to the Copilot for Microsoft 365 report?
 
@@ -115,7 +115,7 @@ You can view several numbers for Copilot for Microsoft 365 usage, which highligh
 
 **Enabled Users** shows the total number of unique users in your organization with Copilot for Microsoft 365 licenses over the selected time period.
 
-**Active Users** shows the total number of enabled users in your organization who tried a user-initiated Copilot for Microsoft 365 feature, in one or more Microsoft 365 apps over the selected time period.
+**Active Users** shows the total number of enabled users in your organization who tried a user-initiated Copilot for Microsoft 365 feature, in one or more apps in Microsoft 365 over the selected time period.
 
 **Active users rate** shows you the number of active users in your organization divided by the number of enabled users.
 
@@ -132,9 +132,9 @@ To note, Active users of Word, Excel, and PowerPoint is incomplete prior to Jan 
 > [!IMPORTANT]
 > Your organization must have optional diagnostic telemetry for Office apps enabled for Windows, Mac, iOS, and Android in order for comprehensive usage information to be captured in this report. [Learn more about diagnostic telemetry settings](/DeployOffice/privacy/optional-diagnostic-data).
 
-**Summary view** shows you the total usage of Copilot for Microsoft 365 among Microsoft 365 apps of the time frame.
+**Summary view** shows you the total usage of Copilot for Microsoft 365 among Microsoft 365 productivity apps of the time frame.
 
-**Trend view** shows you the daily time trend of Copilot for Microsoft 365 among Microsoft 365 apps of the time frame.
+**Trend view** shows you the daily time trend of Copilot for Microsoft 365 among Microsoft 365 productivity apps of the time frame.
 
 You can switch between Summary view and Trend view.
 
@@ -212,7 +212,7 @@ The information captured in audit log records differs from that in [Microsoft 36
 
 ### Is Intelligent Recap usage in Teams captured in [Usage reports](activity-reports.md)?
 
-Yes. Intelligent Recap has been captured in Teams Copilot in Copilot for Microsoft 365 usage. 
+Yes. Intelligent Recap has been captured in Teams Copilot in Copilot for Microsoft 365 usage.
 
 ### What’s the scope of the user-level table?
 
@@ -228,3 +228,11 @@ Based on system constraints, some users may not have a 'last activity date' in t
 ### Why is the 'Last activity date of Word, Excel, PowerPoint, OneNote, or Outlook Copilot (UTC)' sometimes blank or newer than the actual date, even when users have recently used Copilot features?
 
 This may be caused by a known limitation: the uploading of client events data for Copilot features in Word, Excel, PowerPoint, OneNote, and Outlook can be delayed for various reasons, such as when end users disconnect from the internet immediately after taking a Copilot action.
+
+### How do the numbers in this report compare to what is shown in the Microsoft Copilot Dashboard in Viva Insights?
+
+The data in these reports is based on the same underlying definitions of active usage, but the population of users included in the analysis and the timeframe displayed may differ. To learn more, see [Use Microsoft Copilot Dashboard advanced features with a Viva Insights subscription](/viva/insights/org-team-insights/copilot-dashboard-advanced-features#setup-and-licenses).
+
+### Does Teams Copilot usage include Copilot chat usage in Teams?
+
+Teams Copilot usage excludes Copilot chat usage within Teams, as Copilot chat is a Teams app. In the future, we will add the Copilot chat usage breakdown in Teams, Bing, and more.

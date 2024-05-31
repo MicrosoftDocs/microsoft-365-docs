@@ -586,7 +586,7 @@ Yes. However, we only keep the store permissions as described in this article:
 
 ### Do you have any recommendations for batches?
 
-Don't exceed 2,000 mailboxes per batch. We strongly recommend submitting batches two weeks prior to the cut-over date as there's no impact on the end users during synchronization. If you need guidance for mailboxes quantities over 50,000, you can reach out to the Engineering Feedback Distribution List at crosstenantmigrationpreview@service.microsoft.com.
+Don't exceed 2,000 mailboxes per batch. We strongly recommend submitting batches two weeks prior to the cut-over date as there's no impact on the end users during synchronization. If you need guidance for mailboxes quantities over 50,000, you can reach out to your CSAM or open a support request.
 
 ### What if I use Service encryption with Microsoft Purview Customer Key?
 

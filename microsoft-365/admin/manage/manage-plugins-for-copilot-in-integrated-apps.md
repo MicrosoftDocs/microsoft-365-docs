@@ -36,13 +36,13 @@ description: "Learn how to manage extensions for Copilot in the Integrated apps 
 > - The capability is enabled by default in all Microsoft 365 Copilot licensed tenants.
 > - Admins can disable this functionality on a user and group basis and control how individual extensions are approved for use, and which extensions are enabled.
 
-Microsoft Copilot for Microsoft 365 is a new experience inside Microsoft 365 that combines the power of large language models with your data and Microsoft 365 apps to capture natural language commands to produce content and analyze data. Extensions for Copilot are extensions that enable Copilot to access and use third-party apps, such as Jira, [Dynamics 365](/microsoft-365-copilot/extensibility/overview-business-applications), or Bing Web Search. Admins can manage extensions for Copilot in the same way as they manage any other app in the Integrated apps section of the Microsoft 365 admin center. This document explains how admins can enable, disable, assign, block, or remove extensions for Copilot for their organization, and about Copilot capabilities and data privacy.
+Microsoft Copilot for Microsoft 365 is a new experience inside Microsoft 365 that combines the power of large language models with your data and apps in Microsoft 365 to capture natural language commands to produce content and analyze data. Extensions for Copilot are extensions that enable Copilot to access and use third-party apps, such as Jira, [Dynamics 365](/microsoft-365-copilot/extensibility/overview-business-applications), or Bing Web Search. Admins can manage extensions for Copilot in the same way as they manage any other app in the Integrated apps section of the Microsoft 365 admin center. This document explains how admins can enable, disable, assign, block, or remove extensions for Copilot for their organization, and about Copilot capabilities and data privacy.
 
 ## Overview
 
-Extensions or plugins enhance the functionality of Copilot by adding search capabilities, custom actions, connectors, and APIs. GPTs are custom versions of Copilot that combine instructions, knowledge, and skills to perform specific tasks or scenarios.
+Extensions enhance the functionality of Copilot by adding search capabilities, custom actions, connectors, and APIs. *Declarative copilots* are custom versions of Copilot for Microsoft 365 that combine instructions, knowledge, and skills to perform specific tasks or scenarios.
 
-Microsoft Copilot Studio (MCS) is a low code development platform that offers a graphical environment to build GPTs and extensions tailored to the internal needs of an organization. Copilot Studio enables developers and makers to create and test their applications in a user-friendly interface.
+Microsoft Copilot Studio (MCS) is a low code development platform that offers a graphical environment to build declarative copilots and other extensions tailored to the internal needs of an organization. Copilot Studio enables developers and makers to create and test their applications in a user-friendly interface.
 
 However, before these applications can become accessible to end users, they need to undergo a streamlined process of submission and approval. To learn more, see [Publish extensions for Copilot](#publish-extensions-for-copilot).
 
