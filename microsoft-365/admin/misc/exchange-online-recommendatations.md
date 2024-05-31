@@ -33,16 +33,16 @@ Exchange Online provides the ability to **create additional mailboxes** at no ad
 
 Create a user mailbox when you assign the user account a license for Exchange Online. To learn more, see [Create user mailboxes in Exchange Online](/exchange/recipients-in-exchange-online/create-user-mailboxes).
 
-1. Go to your [Microsoft 365 admin center](https://admin.exchange.microsoft.com/).
+1. Go to your <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 2. Select **Users**, then **Active users,** and then **Add a user**.
 3. In the **Set up the basics** pane, enter the basic user information, and then select **Next**.
 4. In the **Assign product licenses** pane, select the **location** and the **appropriate license for the user,** and then select **Next**.
 5. Review your new user’s settings and make any changes necessary.
 6. Select **Finish adding** and then **Close**.
 
-Use the [Exchange admin center](https://admin.exchange.microsoft.com/) to make changes and set additional properties for a user mailbox. To learn more, [Manage user mailboxes in Exchange Online](/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes).
+Use the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a> to make changes and set additional properties for a user mailbox. To learn more, [Manage user mailboxes in Exchange Online](/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes).
 
-1. In the [Exchange admin center](https://admin.exchange.microsoft.com/), go to **Recipients** and then **Mailboxes**.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>, go to **Recipients** and then **Mailboxes**.
 
 2. Go to the list of user mailboxes and select the mailbox that you want to change the properties for. A display pane opens.
 
@@ -68,14 +68,14 @@ Set up your mailbox to have more than one email address associated with it. Thes
 
 Create shared mailboxes to make it easy for a group of people in your company to monitor and send email from a common account. For more information, see [Create shared mailboxes in the Exchange admin center](/exchange/collaboration/shared-mailboxes/create-shared-mailboxes).
 
-1. From the [Exchange admin center](https://admin.exchange.microsoft.com/), go to **Recipients**, select **Shared**, and then **Add**.
+1. From the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>, go to **Recipients**, select **Shared**, and then **Add**.
 2. Enter the **Display Name** and **Email address**.
 3. To grant **Full Access** or **Send As** permissions, select **Add** (+), and then select the users you want to grant permissions to.
 4. **Save** your changes to create a shared mailbox.
 
 Create a Microsoft 365 group for collaboration between teams and a shared workspace for conversations, files, and calendars. To learn more, see [Create and manage groups in the Exchange admin center in Exchange Online](/exchange/recipients-in-exchange-online/create-and-manage-groups).
 
-1. From the [Exchange admin center](https://admin.exchange.microsoft.com/), go to **Recipients**, select **Groups,** and then select **Add a group**.
+1. From the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>, go to **Recipients**, select **Groups**, and then select **Add a group**.
 2. On the **Choose a group type** page, select **Microsoft 365**, and then select **Next**.
 3. On the **Basics** page, enter a **name** for the group, and a **description** (optional), and then select **Next**.
 4. On the **Owners** page, choose the name of one or more people who will be designated to **manage the group**. Select **Next**.
