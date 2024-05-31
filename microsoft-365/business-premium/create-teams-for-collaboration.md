@@ -9,7 +9,7 @@ ms.audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business-security
 ms.localizationpriority: medium
-ms.date: 10/10/2023
+ms.date: 05/31/2024
 ms.collection:
 - Adm_O365
 - M365-subscription-management

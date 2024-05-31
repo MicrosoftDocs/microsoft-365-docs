@@ -4,7 +4,7 @@ description: Identify personal, unmanaged devices and company-owned devices, and
 ms.author: siosulli
 author: siosulli
 manager: deniseb
-ms.date: 10/26/2023
+ms.date: 05/31/2024
 ms.topic: conceptual
 ms.service: microsoft-365-business-security
 ms.localizationpriority: medium
