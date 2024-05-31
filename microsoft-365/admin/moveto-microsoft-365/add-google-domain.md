@@ -51,7 +51,7 @@ Add your Google Workspace domain to Microsoft 365 for business so you can keep u
 1. Open the record type drop-down, choose **TXT**, paste the TXT value you copied then select **Add**. 
 
     The update usually takes effect within a few minutes but may take up to 48 hours. 
-1. Return to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>, select **Verify**,and then **Close**. 
+1. Return to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>, select **Verify**, and then **Close**. 
 1. To set your domain as the primary email for your users, in the left nav, select **Users** > [**Active users**](https://go.microsoft.com/fwlink/p/?linkid=834822). 
 1. Choose a user, select **Manage username and email**, **Edit**, select your domain from the dropdown, then select **Done** and **Save changes**. 
 1. Repeat this process for each user. 
