@@ -31,7 +31,7 @@ For more information about the app launcher and Microsoft365.com, see [meet the 
 ## Use the Microsoft Entra admin center to pin apps
 
 > [!NOTE]
-> Microsoft 365 apps are excluded from this list since they’re already displayed in the App launcher.
+> Microsoft 365 productivity apps are excluded from this list since they’re already displayed in the App launcher.
 
 1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.cloud.microsoft</a>.
 2. In the left nav, choose **Show all**, and under **Admin centers**, choose **Microsoft Entra**.
