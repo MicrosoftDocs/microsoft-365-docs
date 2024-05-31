@@ -3,7 +3,7 @@ title: Cross-tenant SharePoint site migration overview (preview)
 ms.author: heidip
 author: MicrosoftHeidi
 manager: jtremper
-ms.date: 10/13/2023
+ms.date: 05/31/2024
 recommendations: true
 audience: ITPro
 ms.topic: article
