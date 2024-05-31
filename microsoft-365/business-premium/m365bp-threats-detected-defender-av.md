@@ -6,11 +6,11 @@ author: siosulli
 manager: deniseb
 audience: Admin
 ms.topic: conceptual
-ms.service: microsoft-365-business
+ms.service: microsoft-365-business-security
 ms.collection:
 - m365-security
-- tier1
-ms.date: 02/29/2024
+- tier2
+ms.date: 05/31/2024
 ms.localizationpriority: medium
 search.appverid: MET150
 description: "Learn how Microsoft Defender Antivirus protects your Windows devices from software threats, such as viruses, malware, and spyware."

@@ -33,26 +33,15 @@ For an overview of how these three components work together, see [Microsoft Copi
 
 The information in this article is intended to help provide answers to the following questions:
 
-- [Data, Privacy, and Security for Microsoft Copilot for Microsoft 365](#data-privacy-and-security-for-microsoft-copilot-for-microsoft-365)
-  - [How does Microsoft Copilot for Microsoft 365 use your proprietary organizational data?](#how-does-microsoft-copilot-for-microsoft-365-use-your-proprietary-organizational-data)
-  - [Data stored about user interactions with Microsoft Copilot for Microsoft 365](#data-stored-about-user-interactions-with-microsoft-copilot-for-microsoft-365)
-    - [Deleting the history of user interactions with Microsoft Copilot for Microsoft 365](#deleting-the-history-of-user-interactions-with-microsoft-copilot-for-microsoft-365)
-  - [Microsoft Copilot for Microsoft 365 and the EU Data Boundary](#microsoft-copilot-for-microsoft-365-and-the-eu-data-boundary)
-  - [Microsoft Copilot for Microsoft 365 and data residency](#microsoft-copilot-for-microsoft-365-and-data-residency)
-  - [Microsoft Copilot for Microsoft 365 and the web content plugin](#microsoft-copilot-for-microsoft-365-and-the-web-content-plugin)
-    - [How the web content plugin works](#how-the-web-content-plugin-works)
-    - [Controls available to manage the use of web content](#controls-available-to-manage-the-use-of-web-content)
-  - [Extensibility of Microsoft Copilot for Microsoft 365](#extensibility-of-microsoft-copilot-for-microsoft-365)
-  - [How does Microsoft Copilot for Microsoft 365 protect organizational data?](#how-does-microsoft-copilot-for-microsoft-365-protect-organizational-data)
-  - [Meeting regulatory compliance requirements](#meeting-regulatory-compliance-requirements)
-  - [Additional information](#additional-information)
-    - [Microsoft Copilot for Microsoft 365 and policy settings for connected experiences](#microsoft-copilot-for-microsoft-365-and-policy-settings-for-connected-experiences)
-    - [About the content that Microsoft Copilot for Microsoft 365 creates](#about-the-content-that-microsoft-copilot-for-microsoft-365-creates)
-    - [How does Copilot block harmful content?](#how-does-copilot-block-harmful-content)
-    - [Does Copilot provide protected material detection?](#does-copilot-provide-protected-material-detection)
-    - [Does Copilot block prompt injections (jailbreak attacks)?](#does-copilot-block-prompt-injections-jailbreak-attacks)
-    - [Committed to responsible AI](#committed-to-responsible-ai)
-  - [Related articles](#related-articles)
+- [How does Microsoft Copilot for Microsoft 365 use your proprietary organizational data?](#how-does-microsoft-copilot-for-microsoft-365-use-your-proprietary-organizational-data)
+- [How does Microsoft Copilot for Microsoft 365 protect organizational information and data?](#how-does-microsoft-copilot-for-microsoft-365-protect-organizational-data)
+- [What data is stored about user interactions with Microsoft Copilot for Microsoft 365?](#data-stored-about-user-interactions-with-microsoft-copilot-for-microsoft-365)
+- [What data residency commitments does Microsoft Copilot make?](#microsoft-copilot-for-microsoft-365-and-data-residency)
+- [What extensibility options are available for Microsoft Copilot for Microsoft 365](#extensibility-of-microsoft-copilot-for-microsoft-365)
+- [How does Microsoft Copilot for Microsoft 365 meet regulatory compliance requirements?](#meeting-regulatory-compliance-requirements)
+- [Do controls for connected experiences in Microsoft 365 Apps apply to Microsoft Copilot for Microsoft 365?](#microsoft-copilot-for-microsoft-365-and-policy-settings-for-connected-experiences)
+- [Can I trust the content that Microsoft Copilot for Microsoft 365 creates? Who owns that content?](#about-the-content-that-microsoft-copilot-for-microsoft-365-creates)
+- [What are Microsoft's commitments to using AI responsibly?](#committed-to-responsible-ai)
 
 > [!NOTE]
 > Microsoft Copilot for Microsoft 365 will continue to evolve over time with new capabilities. To keep up to date on Microsoft Copilot for Microsoft 365 or ask questions, visit the [Microsoft 365 Copilot community](https://techcommunity.microsoft.com/t5/microsoft-365-copilot/ct-p/Microsoft365Copilot) on the Microsoft Tech Community.
@@ -81,7 +70,7 @@ Abuse monitoring for Microsoft Copilot for Microsoft 365 occurs in real-time, wi
 
 ## Data stored about user interactions with Microsoft Copilot for Microsoft 365
 
-When a user interacts with Microsoft Copilot for Microsoft 365 productivity apps (such as Word, PowerPoint, Excel, OneNote, Loop, or Whiteboard), we store data about these interactions. The stored data includes the user's prompt and Copilot's response, including citations to any information used to ground Copilot's response. We refer to the user’s prompt and Copilot’s response to that prompt as the “content of interactions” and the record of those interactions is the user’s Copilot interaction history. For example, this stored data provides users with Copilot interaction history in [Microsoft Copilot with Graph-grounded chat](https://support.microsoft.com/topic/5b00a52d-7296-48ee-b938-b95b7209f737) and [meetings in Microsoft Teams](https://support.microsoft.com/office/0bf9dd3c-96f7-44e2-8bb8-790bedf066b1). This data is processed and stored in alignment with contractual commitments with your organization’s other content in Microsoft 365. The data is encrypted while it's stored and isn't used to train foundation LLMs, including those used by Microsoft Copilot for Microsoft 365.
+When a user interacts with Microsoft Copilot for Microsoft 365 (using apps such as Word, PowerPoint, Excel, OneNote, Loop, or Whiteboard), we store data about these interactions. The stored data includes the user's prompt and Copilot's response, including citations to any information used to ground Copilot's response. We refer to the user’s prompt and Copilot’s response to that prompt as the “content of interactions” and the record of those interactions is the user’s Copilot interaction history. For example, this stored data provides users with Copilot interaction history in [Microsoft Copilot with Graph-grounded chat](https://support.microsoft.com/topic/5b00a52d-7296-48ee-b938-b95b7209f737) and [meetings in Microsoft Teams](https://support.microsoft.com/office/0bf9dd3c-96f7-44e2-8bb8-790bedf066b1). This data is processed and stored in alignment with contractual commitments with your organization’s other content in Microsoft 365. The data is encrypted while it's stored and isn't used to train foundation LLMs, including those used by Microsoft Copilot for Microsoft 365.
 
 To view and manage this stored data, admins can use Content search or Microsoft Purview. Admins can also use Microsoft Purview to set retention policies for the data related to chat interactions with Copilot. For more information, see the following articles:
 
