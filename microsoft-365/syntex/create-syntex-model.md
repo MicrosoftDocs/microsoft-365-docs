@@ -157,12 +157,12 @@ Use the **Layout method** to create a [structured document processing model](for
 
 The **Set up a prebuilt model** section shows the types of prebuilt models you can use. 
 
-![Screenshot of the Use a prebuilt model section on the Set up a prebuilt model page.](../media/content-understanding/use-a-trained-model-section-2.png) 
+![Screenshot of the Use a prebuilt model section on the Set up a prebuilt model page.](../media/content-understanding/use-a-trained-model-section-2.png)
 
-- **Contract processing**
-- **Invoice processing**
-- **Receipt processing**
-- **Sensitive information processing**
+- Contract processing
+- Invoice processing
+- Receipt processing
+- Sensitive information processing
 
 Select one of the following tabs to continue with the prebuilt model you want to use.
 
@@ -238,7 +238,7 @@ Select one of the following tabs to continue with the prebuilt model you want to
 
     - In the **Content type** section, choose whether to create a new content type or to use an existing one.
 
-    - In the **Compliance** section, under **Retention labels**, select the retention label you want to add. If a retention label has been already applied to the library where the file is stored, it will be selected. 
+    - In the **Compliance** section, under **Retention labels**, select the retention label you want to add. If a retention label has been already applied to the library where the file is stored, it will be selected.
 
 5. When you're ready to create the model, select **Create**.
 
@@ -254,14 +254,14 @@ Select one of the following tabs to continue with the prebuilt model you want to
 
 3. On the **Create a sensitive information processing model** page, enter the following information.
 
-    - **Model name** – Enter the name of the model, for example *Service agreement*.
+    - **Model name** – Enter the name of the model, for example *Contact numbers*.
 
     - **Description** – Enter information about how this model will be used.
 
     ![Screenshot of the right panel of the Create a sensitive information processing model page.](../media/content-understanding/create-a-model-panel-sensitive-info.png)
 
     > [!NOTE]
-    > In the **Advanced settings** section, the options to select a content type or to apply sensitivity or retention labels are not available for this model. If you need a model where you must specify a content type, you'll need to use a [different model type](model-types-overview.md). The option to apply security labels will be available in future releases of this model.
+    > Unlike other prebuilt models, there isn't an **Advanced settings** section because the options to select a content type or to apply sensitivity or retention labels aren't available for this model. If you need a model where you must specify a content type, you'll need to use a [different model type](model-types-overview.md). The option to apply security labels will be available in future releases of this model.
 
 4. When you're ready to create the model, select **Create**.
 
