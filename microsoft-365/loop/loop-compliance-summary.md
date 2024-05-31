@@ -1,4 +1,4 @@
----
+[---
 ms.date: 08/21/2023
 title: "Summary of governance, lifecycle and compliance capabilities for Loop experiences"
 ms.reviewer: dancost, tonchan
@@ -129,3 +129,4 @@ By reviewing the above information, you can make an informed decision on whether
 - [Manage Loop components in OneDrive and SharePoint](/microsoft-365/loop/loop-components-configuration)
 - [Overview of Loop workspaces storage and permissions](/microsoft-365/loop/loop-workspaces-storage-permission)
 - [Manage Loop workspace experiences in SharePoint Embedded](/microsoft-365/loop/loop-workspaces-configuration)
+](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/pull/25725)
