@@ -280,7 +280,7 @@ sections:
       - question: |
           Where is Bookings data stored?
         answer: |
-          Bookings is a Microsoft 365 app, meaning all data is stored within the Microsoft 365 platform and in Exchange. Bookings follows all data storage policies that are set by Microsoft, which are the same policies that all Microsoft 365 productivity apps follow. Bookings uses shared mailboxes in Exchange to store customer, staff, service, and appointment details. Compliance policies for shared mailboxes in Exchange also apply for Bookings mailboxes. All customer data (including information provided by customers when booking) is captured in Bookings and is stored within the app, thus it's stored within Exchange. Microsoft Bookings uses the same policies used by Microsoft 365, which you can find [here.](https://www.microsoft.com/online/legal/v2/?docid=22&langid=en-us)
+          Bookings is a Microsoft 365 app, meaning all data is stored within the Microsoft 365 platform and in Exchange. Bookings follows all data storage policies that are set by Microsoft, which are the same policies that all apps in Microsoft 365 follow. Bookings uses shared mailboxes in Exchange to store customer, staff, service, and appointment details. Compliance policies for shared mailboxes in Exchange also apply for Bookings mailboxes. All customer data (including information provided by customers when booking) is captured in Bookings and is stored within the app, thus it's stored within Exchange. Microsoft Bookings uses the same policies used by Microsoft 365, which you can find [here.](https://www.microsoft.com/online/legal/v2/?docid=22&langid=en-us)
           
       - question: |
           Is there a way to centrally manage Bookings calendars for all users?
