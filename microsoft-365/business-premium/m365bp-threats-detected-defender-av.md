@@ -10,7 +10,7 @@ ms.service: microsoft-365-business-security
 ms.collection:
 - m365-security
 - tier2
-ms.date: 02/29/2024
+ms.date: 05/31/2024
 ms.localizationpriority: medium
 search.appverid: MET150
 description: "Learn how Microsoft Defender Antivirus protects your Windows devices from software threats, such as viruses, malware, and spyware."
