@@ -81,7 +81,7 @@ Where the loop content was originally created determines its storage location:
 
 For detailed information on existing capabilities in SharePoint Admin Center and PowerShell:
   - Available: [Manage SharePoint Embedded containers in SharePoint Admin Center](/sharepoint/dev/embedded/concepts/admin-exp/consuming-tenant-admin/ctaux)
-  - Available: [SharePoint Embedded container management in PowerShell](sharepoint/dev/embedded/concepts/admin-exp/consuming-tenant-admin/ctapowershell)
+  - Available: [SharePoint Embedded container management in PowerShell](/sharepoint/dev/embedded/concepts/admin-exp/consuming-tenant-admin/ctapowershell)
 
 ### Not Yet Available
 
