@@ -34,7 +34,7 @@ Up to 4,000 SharePoint accounts can be scheduled for migration in advance at a g
 
 The **Cross-Tenant User Content Migration** feature and licenses are currently only available to Enterprise Agreement customers.
 
-If you are an Enterprise Agreement customer who will be purchasing Cross-Tenant User Content Migration licenses, and you would like to evaluate Cross-Tenant SharePoint migration to improve your migration experience, sign-up at:
+If you're an Enterprise Agreement customer who will be purchasing Cross-Tenant User Content Migration licenses, and you would like to evaluate Cross-Tenant SharePoint migration to improve your migration experience, sign-up at:
 
 - **[https://aka.ms/ODSPSecurityPreviews](https://aka.ms/ODSPSecurityPreviews)**
 
@@ -59,13 +59,13 @@ For more information on licensing:
 >
 >- Don't create any target SharePoint sites before starting your migration. If the site already exists on the target tenant the migration will fail. **You can't overwrite or merge an existing site.**
 >
->- Target Microsoft 365 Groups for group-connected SharePoint site migrations CANNOT be linked to existing SharePoint sites. Target Microsoft 365 groups must be pre-created in a specific way.
+>- Target Microsoft 365 Groups for group-connected SharePoint site migrations **can't** be linked to existing SharePoint sites. Target Microsoft 365 groups must be pre-created in a specific way.
 >
 >Before starting any migrations, make certain that your source SharePoint sites are set to Read/write mode.  If they are set to read-only the migration will fail.
 >
 >- Each individual SharePoint site being migrated must have no more than 5 TB of storage, or 1 million items. If during a migration of multiple sites a site with more than 5 TB is encountered, that site will eventually timeout and fail. Sites less 5 TB will continue until completion.
 >
->- The 1 million item limit can be any "item", including files (including versions), folders, and list line entries if it is a list or library.
+>- The 1 million item limit can be any "item", including files (including versions), folders, and list line entries if it's a list or library.
 >
 >- Ensure all users and groups identified for migration have been pre-created on the target tenant.
 >- Assign the appropriate licenses to each user on either the Source **or** the Target tenant. **The license does not need to be applied in both locations.**
@@ -130,7 +130,7 @@ In order to migrate sites containing Sensitivity labels with *user-defined permi
 
 ## Communicating with your users
 
-When migrating SharePoint sites between tenants, it is important to communicate to your users what to expect.
+When migrating SharePoint sites between tenants, it's important to communicate to your users what to expect.
 
 - How will this migration impact them?
 - Will they be able to continue to work during the migration?
@@ -144,7 +144,7 @@ When migrating SharePoint sites between tenants, it is important to communicate 
 You can schedule SharePoint site migrations in advance but consider the following recommendations:
 
 - Start with a small number of sites to validate your workflows and communication strategies
-- Once you are comfortable with the process, you can schedule large batches of migrations.
+- Once you're comfortable with the process, you can schedule large batches of migrations.
 - You can schedule up to 4,000 migrations at a time per batch
 - As the migrations begin, you can schedule more, with a maximum of 4,000 pending migrations in the queue at any given time.
 
