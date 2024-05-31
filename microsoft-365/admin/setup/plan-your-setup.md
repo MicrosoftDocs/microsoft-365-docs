@@ -86,7 +86,7 @@ When you're ready to run the setup wizard and move your domain to Microsoft 365,
 
 ## What happens when you run the Microsoft 365 setup wizard
 
-The setup wizard walks you through installing the Microsoft 365 apps on your computer, adding and verifying your domain, adding users and assigning licenses to them, and connecting your domain.
+The setup wizard walks you through installing the apps in Microsoft 365 on your computer, adding and verifying your domain, adding users and assigning licenses to them, and connecting your domain.
 
 > [!NOTE]
 > If you need to [Assign admin roles in Microsoft 365 for business](../add-users/assign-admin-roles.md) to the users you add in the wizard, you can do that later on the **Users** page. 
@@ -111,9 +111,9 @@ There are a couple of scenarios that include either migrating data or users from
 
 - **Do you want to move to Microsoft 365 gradually?** If you want to move to Microsoft 365 in stages, then skip running the Microsoft 365 setup wizard and consider adopting Microsoft 365 features in the following order:
 
-    1. [Add your employees to Microsoft 365](../add-users/add-users.md) so they can download and install the Microsoft 365 apps.
+    1. [Add your employees to Microsoft 365](../add-users/add-users.md) so they can download and install the apps.
 
-    2. [Download and install the Microsoft 365 apps](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) to use Word, Excel, and PowerPoint on your computer and devices.
+    2. [Download and install the Microsoft 365 productivity apps](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) to use Word, Excel, and PowerPoint on your computer and devices.
 
     3. [Set up Microsoft Teams](#plan-for-teams) to use for your meetings.
 
@@ -123,7 +123,7 @@ There are a couple of scenarios that include either migrating data or users from
 
 ## Check that your devices meet system requirements
 
-Each person in your organization can install the Microsoft 365 apps (Word, Excel, PowerPoint, and so on) on up to five PCs and Macs. See the operating system and computer requirements for installing [Microsoft 365](https://go.microsoft.com/fwlink/?LinkId=534827) for business.
+Each person in your organization can install the Microsoft 365 productivity apps (Word, Excel, PowerPoint, and so on) on up to five PCs and Macs. See the operating system and computer requirements for installing [Microsoft 365](https://go.microsoft.com/fwlink/?LinkId=534827) for business.
   
 Mobile apps can be installed on iOS, Android, and Windows devices. You can find information on mobile device and browser support in [System requirements for Microsoft 365](https://go.microsoft.com/fwlink/?LinkId=534827).
   
