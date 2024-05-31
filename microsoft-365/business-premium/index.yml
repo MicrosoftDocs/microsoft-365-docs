@@ -38,7 +38,7 @@ productDirectory:
     # Card
     - title: Get the free partner kit
       imageSrc: /office/media/icons/education-tutorial-blue.svg
-      summary: Practical guidance and go to market resources for partners for securing hybrid work.
+      summary: Guidance and go to market resources for partners for securing hybrid work.
       url: https://aka.ms/SMBSecurityKit
     # Card
     - title: Join the partner webinar series
@@ -137,7 +137,7 @@ conceptualContent:
           text: Set up unmanaged (BYOD) devices
         - url: ../business-premium/m365bp-mfa-for-users.md
           itemType: how-to-guide
-          text: Set up multi-factor authentication on devices
+          text: Set up multifactor authentication on devices
         - url: ../business-premium/m365bp-users-install-m365-apps.md
           itemType: how-to-guide
           text: Install Microsoft 365 apps on all devices
