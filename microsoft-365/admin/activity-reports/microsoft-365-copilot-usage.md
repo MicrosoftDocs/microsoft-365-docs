@@ -232,3 +232,7 @@ This may be caused by a known limitation: the uploading of client events data fo
 ### How do the numbers in this report compare to what is shown in the Microsoft Copilot Dashboard in Viva Insights?
 
 The data in these reports is based on the same underlying definitions of active usage, but the population of users included in the analysis and the timeframe displayed may differ. To learn more, see [Use Microsoft Copilot Dashboard advanced features with a Viva Insights subscription](/viva/insights/org-team-insights/copilot-dashboard-advanced-features#setup-and-licenses).
+
+### Does Teams Copilot usage include Copilot chat usage in Teams?
+
+Teams Copilot usage excludes Copilot chat usage within Teams, as Copilot chat is a Teams app. In the future, we will add the Copilot chat usage breakdown in Teams, Bing, and more.
