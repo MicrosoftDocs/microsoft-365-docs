@@ -27,9 +27,9 @@ description: "Learn how to get the Microsoft 365 Copilot usage report and gain i
 
 # Microsoft 365 reports in the Admin Center – Copilot for Microsoft 365 readiness and usage
 
-The Microsoft 365 Usage dashboard shows you the activity overview across the Microsoft 365 apps in your organization. It enables you to drill into individual product-level reports to give you more granular insight about the activities within each app. To view all reports, check out the [Reports overview article](activity-reports.md).
+The Microsoft 365 Usage dashboard shows you the activity overview across the Microsoft 365 productivity apps in your organization. It enables you to drill into individual product-level reports to give you more granular insight about the activities within each app. To view all reports, check out the [Reports overview article](activity-reports.md).
 
-The Copilot for Microsoft 365 report, which is in continuous enhancement, includes a Readiness section and Usage section. In the Readiness section, you can view which users are technically eligible for Copilot, assign licenses, and monitor usage of Microsoft 365 apps that Copilot integrates best with. Within the Usage section, you can view a summary of how users’ adoption, retention, and engagement are with Copilot for Microsoft 365, and the activity of every Copilot user in your organization. The report becomes available within 72 hours, and once available, the usage data shown on the report can have up to a maximum of 72 hours latency.
+The Copilot for Microsoft 365 report, which is in continuous enhancement, includes a Readiness section and Usage section. In the Readiness section, you can view which users are technically eligible for Copilot, assign licenses, and monitor usage of Microsoft 365 productivity apps that Copilot integrates best with. Within the Usage section, you can view a summary of how users’ adoption, retention, and engagement are with Copilot for Microsoft 365, and the activity of every Copilot user in your organization. The report becomes available within 72 hours, and once available, the usage data shown on the report can have up to a maximum of 72 hours latency.
 
 ## How do I get to the Copilot for Microsoft 365 report?
 
@@ -115,7 +115,7 @@ You can view several numbers for Copilot for Microsoft 365 usage, which highligh
 
 **Enabled Users** shows the total number of unique users in your organization with Copilot for Microsoft 365 licenses over the selected time period.
 
-**Active Users** shows the total number of enabled users in your organization who tried a user-initiated Copilot for Microsoft 365 feature, in one or more Microsoft 365 apps over the selected time period.
+**Active Users** shows the total number of enabled users in your organization who tried a user-initiated Copilot for Microsoft 365 feature, in one or more apps in Microsoft 365 over the selected time period.
 
 **Active users rate** shows you the number of active users in your organization divided by the number of enabled users.
 
@@ -132,9 +132,9 @@ To note, Active users of Word, Excel, and PowerPoint is incomplete prior to Jan 
 >[!IMPORTANT]
 > Your organization must have optional diagnostic telemetry for Office apps enabled for Windows, Mac, iOS, and Android in order for comprehensive usage information to be captured in this report. [Learn more about diagnostic telemetry settings](/DeployOffice/privacy/optional-diagnostic-data).
 
-**Summary view** shows you the total usage of Copilot for Microsoft 365 among Microsoft 365 apps of the time frame.
+**Summary view** shows you the total usage of Copilot for Microsoft 365 among Microsoft 365 productivity apps of the time frame.
 
-**Trend view** shows you the daily time trend of Copilot for Microsoft 365 among Microsoft 365 apps of the time frame.
+**Trend view** shows you the daily time trend of Copilot for Microsoft 365 among Microsoft 365 productivity apps of the time frame.
 
 You can switch between Summary view and Trend view.
 
@@ -172,15 +172,15 @@ To ensure data quality, we perform daily data validation checks for the past thr
 |------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
 | User name                                      | The user's principal name.                                                                                                                    |
 | Display name                                   | The full name of the user.                                                                                                                    |
-| Last activity date (UTC (Universal Time Code)) | The latest date the user had activity in Microsoft 365 Copilot among all Microsoft 365 products, including any of the intentional activities. |
-| Last activity date of Teams Copilot (UTC)      | The latest date the user had activity in Microsoft Teams Copilot, including any of the intentional activities.                                |
-| Last activity date of Word Copilot (UTC)       | The latest date the user had activity in Word Copilot, including any of the intentional activities.                                           |
-| Last activity date of Excel Copilot (UTC)      | The latest date the user had activity in Excel Copilot, including any of the intentional activities.                                        |
-| Last activity date of PowerPoint Copilot (UTC)  | The latest date the user had activity in PowerPoint Copilot, including any of the intentional activities.                                    |
-| Last activity date of Outlook Copilot (UTC)    | The latest date the user had activity in Outlook Copilot, including any of the intentional activities.                                      |
-| Last activity date of OneNote Copilot (UTC)    | The latest date the user had activity in OneNote Copilot, including any of the intentional activities.                                      |
-| Last activity date of Loop Copilot (UTC)       | The latest date the user had activity in Loop Copilot, including any of the intentional activities.                                         |
-| Last activity date of Copilot chat (UTC)        | The latest date the user had activity in Copilot chat, including any of the intentional activities.                                        |
+| Last activity date (UTC (Universal Time Code)) | The latest date the user had activity in Copilot for Microsoft 365 among all Microsoft 365 products, including any of the intentional activities, regardless of the selected time period of past 7/30/90/180 days. |
+| Last activity date of Teams Copilot (UTC)      | The latest date the user had activity in Microsoft Teams Copilot, including any of the intentional activities,regardless of the selected time period of past 7/30/90/180 days.                                |
+| Last activity date of Word Copilot (UTC)       | The latest date the user had activity in Word Copilot, including any of the intentional activities, regardless of the selected time period of past 7/30/90/180 days.                                            |
+| Last activity date of Excel Copilot (UTC)      | The latest date the user had activity in Excel Copilot, including any of the intentional activities, regardless of the selected time period of past 7/30/90/180 days.                                        |
+| Last activity date of PowerPoint Copilot (UTC)  | The latest date the user had activity in PowerPoint Copilot, including any of the intentional activities, regardless of the selected time period of past 7/30/90/180 days.                                   |
+| Last activity date of Outlook Copilot (UTC)    | The latest date the user had activity in Outlook Copilot, including any of the intentional activities, regardless of the selected time period of past 7/30/90/180 days.                                       |
+| Last activity date of OneNote Copilot (UTC)    | The latest date the user had activity in OneNote Copilot, including any of the intentional activities, regardless of the selected time period of past 7/30/90/180 days.                                       |
+| Last activity date of Loop Copilot (UTC)       | The latest date the user had activity in Loop Copilot, including any of the intentional activities, regardless of the selected time period of past 7/30/90/180 days.                                          |
+| Last activity date of Copilot chat (UTC)        | The latest date the user had activity in Copilot chat, including any of the intentional activities, regardless of the selected time period of past 7/30/90/180 days.                                         |
 
 ## Make the user-specific data anonymous
 
@@ -206,17 +206,13 @@ This report now includes a new metric for Microsoft Copilot with Graph-grounded 
 - Selecting a prompt from the "Try these Prompts" section, which will automatically copy the prompt into the chat box.
 - Clicking on one of the suggestions from the "Stay on top" tab in some platforms (such as Microsoft365.com).
 
-### What are the behaviors of All up last activity date and last activity date per app in the user-level table?
-
-All up last activity date and last activity date per app are reflecting different narratives now. All up last activity date is reflecting the historical last activity date no matter what period is selected on the page, while last activity date per app is reflecting the last activity date within the selected time period; hence, if there's no activity in selected time period, the last activity date per app will be empty. We are planning to make them consistent to reflect the historical last activity date narrative and will provide update once it’s done.
-
 ### What's the difference between the user activity table and audit log?
 
 The information captured in audit log records differs from that in [Microsoft 365 usage reports](#user-last-activity-table). It's important to note that audit logs are not designed for assessing user engagement in Microsoft 365, and they should not be used to replace or augment information in Microsoft 365 usage reports. To learn more about audit logs, see [Export, configure, and view audit log records](/purview/audit-log-export-records#step-1-export-audit-log-search-results).
 
 ### Is Intelligent Recap usage in Teams captured in [Usage reports](activity-reports.md)?
 
-Yes. Intelligent Recap has been captured in Teams Copilot in Copilot for Microsoft 365 usage. 
+Yes. Intelligent Recap has been captured in Teams Copilot in Copilot for Microsoft 365 usage.
 
 ### What’s the scope of the user-level table?
 
@@ -232,3 +228,7 @@ Based on system constraints, some users may not have a 'last activity date' in t
 ### Why is the 'Last activity date of Word, Excel, PowerPoint, OneNote, or Outlook Copilot (UTC)' sometimes blank or newer than the actual date, even when users have recently used Copilot features?
 
 This may be caused by a known limitation: the uploading of client events data for Copilot features in Word, Excel, PowerPoint, OneNote, and Outlook can be delayed for various reasons, such as when end users disconnect from the internet immediately after taking a Copilot action.
+
+### How do the numbers in this report compare to what is shown in the Microsoft Copilot Dashboard in Viva Insights?
+
+The data in these reports is based on the same underlying definitions of active usage, but the population of users included in the analysis and the timeframe displayed may differ. To learn more, see [Use Microsoft Copilot Dashboard advanced features with a Viva Insights subscription](/viva/insights/org-team-insights/copilot-dashboard-advanced-features#setup-and-licenses).
