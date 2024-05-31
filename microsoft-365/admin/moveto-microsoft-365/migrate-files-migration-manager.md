@@ -59,9 +59,9 @@ Use the following steps to install the Microsoft 365 Migration app in your Googl
 1. On the **Google Drive migration** page, select **Connect to Google Workspace**.
 1. On the **Install the migration app** page, select **Install and authorize**.
 1. On the **Google Workspace Marketplace** page, select **Sign in** and enter your Google Workspace admin credentials.
-1. Select **Domain Install**.
+1. Select **Admin Install**.
 1. Select **Continue**.
-1. Select the checkbox, then select **Allow**.
+1. Select the checkbox, then select **Finish**.
 1. When the installation completes, select **Done**.
 1. Return to the **Install the migration app** page, and select **Next**.
 1. Select **Sign in to Google Workspace**, and then enter your Google Workspace admin credentials.
