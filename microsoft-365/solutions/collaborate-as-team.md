@@ -55,7 +55,7 @@ To set external collaboration settings
 1. Sign in to Microsoft Entra External ID at [https://entra.microsoft.com/](https://entra.microsoft.com/).
 1. In the left navigation pane, expand **External identities**.
 1. Select **External collaboration settings**.
-1. Ensure that either **Member users and users assigned to specific admin roles can invite guests including guests with member permissions** or **Anyone in the organization can invite guests including guests and non-admins** is selected.
+1. Ensure that either **Member users and users assigned to specific admin roles can invite guest users including guests with member permissions** or **Anyone in the organization can invite guest users including guests and non-admins** is selected.
 1. If you made changes, select **Save**.
 
 Note the settings in the **Collaboration restrictions** section. Make sure that the domains of the guests that you want to collaborate with aren't blocked.
