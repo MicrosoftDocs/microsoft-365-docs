@@ -15,7 +15,7 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-security
-- tier1
+- tier2
 ---
 
 # Device groups and categories in Microsoft 365 Business Premium

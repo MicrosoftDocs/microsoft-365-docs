@@ -16,7 +16,7 @@ ms.collection:
 - SMB
 - m365-security
 - m365-initiative-defender-business
-- tier1
+- tier2
 ---
 
 # Review remediation actions in the Microsoft Defender portal

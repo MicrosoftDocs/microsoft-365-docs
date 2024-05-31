@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
-- tier1
+- tier2
 ms.custom:
 - MiniMaven
 search.appverid:

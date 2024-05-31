@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business-security
 ms.collection:
-- tier1
+- tier2
 - m365-security
 ms.date: 04/20/2023
 localization_priority: Normal

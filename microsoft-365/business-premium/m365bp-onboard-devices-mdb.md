@@ -15,7 +15,7 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-security
-- tier1
+- tier2
 ---
 
 # Onboard enrolled devices to Microsoft Defender for Business

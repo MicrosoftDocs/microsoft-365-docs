@@ -11,7 +11,7 @@ ms.date: 10/26/2023
 ms.localizationpriority: medium
 ms.collection:
 - m365-security
-- tier1
+- tier2
 search.appverid: MET150
 description: "Learn how to review and manage threats detected by Microsoft Defender Antivirus on your Windows devices."
 ---

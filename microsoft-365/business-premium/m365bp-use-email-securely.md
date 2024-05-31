@@ -14,7 +14,7 @@ ms.collection:
 - M365-Campaigns
 - m365solution-smb
 - m365-security
-- tier1
+- tier2
 ms.custom:
 - MiniMaven
 search.appverid:

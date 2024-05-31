@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.service: microsoft-365-business-security
 ms.collection:
 - m365-security
-- tier1
+- tier2
 ms.date: 02/29/2024
 ms.localizationpriority: medium
 search.appverid: MET150

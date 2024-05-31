@@ -11,7 +11,7 @@ ms.service: microsoft-365-business-security
 ms.date: 10/26/2022
 ms.localizationpriority: medium
 ms.collection:
-- tier1
+- tier2
 ms.custom:
 - MiniMaven
 search.appverid:

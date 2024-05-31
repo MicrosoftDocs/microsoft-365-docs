@@ -15,7 +15,7 @@ ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
 - M365-Campaigns
-- tier1
+- tier2
 ms.custom:
 - Adm_O365
 - MiniMaven

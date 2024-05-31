@@ -13,7 +13,7 @@ ms.collection:
 - m365solution-smb
 - highpri
 - m365-security
-- tier1
+- tier2
 ms.reviewer: efratka
 search.appverid: MET150
 f1.keywords: NOCSH

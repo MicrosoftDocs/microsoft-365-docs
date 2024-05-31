@@ -14,7 +14,7 @@ ms.reviewer: nehabha
 f1.keywords: NOCSH
 ms.collection:
 - m365-security
-- tier1
+- tier2
 ms.custom: intro-get-started
 ---
 

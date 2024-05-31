@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: conceptual
 ms.collection:
 - m365-security
-- tier1
+- tier2
 ms.service: microsoft-365-business-security
 ms.date: 07/19/2023
 ms.reviewer: nehabha
