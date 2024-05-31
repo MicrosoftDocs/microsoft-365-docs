@@ -134,7 +134,7 @@ conceptualContent:
           text: Get started with Microsoft Defender for Business
         - url: ../business-premium/m365bp-set-up-unmanaged-devices.md
           itemType: overview
-          text: Set up unmanaged (BYOD) devices
+          text: Set up unmanaged (personally owned) devices
         - url: ../business-premium/m365bp-mfa-for-users.md
           itemType: how-to-guide
           text: Set up multifactor authentication on devices
