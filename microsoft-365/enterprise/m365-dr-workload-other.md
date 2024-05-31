@@ -97,6 +97,8 @@ Customers based in EU and UK who signed up for Viva Goals prior to December 5, 2
 
 See the [Static data location information for select workloads](#static-data-location-information-for-select-workloads) section. The data region for Manager/Leader and Advanced is determined by the _Default Geography_ of the _tenant_, not individual users.
 
+Data Residency Available Starting June 2024, Viva Insights (Advanced, Manager, Leader) customer data for new tenants in Australia will be stored in data centers located in Australia.
+
 ## Viva Insights – Personal
 
 Customer data is processed and stored in the employee's Exchange Online mailbox. Data residency for Personal insights in Viva Insights is based on the employee's mailbox location. For more information, see [Personal insights in Viva Insights privacy guide for admins](/viva/insights/personal/overview/privacy-guide-admins?branch=main#summary-of-key-points).
@@ -140,7 +142,7 @@ Refer to [Data Residency - Viva Engage | Microsoft Learn](/viva/engage/manage-se
 | AR | Argentina | AMER<sup>3</sup>| AMER<sup>3</sup>| AMER<sup>3</sup>|
 | AM | Armenia | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | AW | Aruba | AMER<sup>3</sup>| AMER<sup>3</sup>| AMER<sup>3</sup>|
-| AU | Australia | APC<sup>2</sup>| AUS<sup>4</sup>| AUS<sup>4</sup>|
+| AU | Australia | AUS<sup>4</sup>| AUS<sup>4</sup>| AUS<sup>4</sup>|
 | AT | Austria | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | AZ | Azerbaijan | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | BS | Bahamas | AMER<sup>3</sup>| AMER<sup>3</sup>| AMER<sup>3</sup>|
