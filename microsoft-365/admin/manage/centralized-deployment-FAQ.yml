@@ -33,7 +33,7 @@ sections:
       - question: |
           How do I know if my organization is set up for Centralized Deployment?
         answer: |
-          Centralized deployment of add-ins requires that users are using Microsoft 365 apps for enterprise (and are signed into Microsoft 365 using their organizational log-in credentials) and have Exchange Online mailboxes. Your subscription directory must either be in, or federated to, Microsoft Entra ID. 
+          Centralized deployment of add-ins requires that users are using apps in Microsoft 365 for enterprise (and are signed into Microsoft 365 using their organizational log-in credentials) and have Exchange Online mailboxes. Your subscription directory must either be in, or federated to, Microsoft Entra ID. 
            
           Centralized Deployment is only supported for online mailboxes. It does not support deployment to on-premises Exchange mailboxes.
           
