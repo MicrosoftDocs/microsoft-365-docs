@@ -10,7 +10,7 @@ manager: deniseb
 audience: Admin
 ms.topic: overview
 ms.date: 05/31/2024
-ms.service: microsoft-365-business-security-security
+ms.service: microsoft-365-business-security
 ms.localizationpriority: medium
 ms.collection:
 - tier2
