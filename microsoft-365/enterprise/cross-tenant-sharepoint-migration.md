@@ -63,7 +63,7 @@ For more information on licensing:
 >
 >Before starting any migrations, make certain that your source SharePoint sites are set to Read/write mode.  If they are set to read-only the migration will fail.
 >
->- Each individual SharePoint site being migrated must have no more than 2 TB of storage, or 1 million items. If during a migration of multiple sites a site with more than 2 TB is encountered, that site will eventually timeout and fail. Sites less 2 TB will continue until completion.
+>- Each individual SharePoint site being migrated must have no more than 5 TB of storage, or 1 million items. If during a migration of multiple sites a site with more than 5 TB is encountered, that site will eventually timeout and fail. Sites less 5 TB will continue until completion.
 >
 >- The 1 million item limit can be any "item", including files (including versions), folders, and list line entries if it is a list or library.
 >
