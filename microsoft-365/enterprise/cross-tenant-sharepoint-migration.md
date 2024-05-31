@@ -120,9 +120,9 @@ Labels associated with migrated files may not display correctly in M365 user exp
 
 #### Sensitivity Labels with User-Defined Permissions
 
-Sites containing Sensitivity labels with *user-defined permissions* can't be migrated using cross-tenant migration. This refers to sensitivity labels where the setting **Let users assign permissions when they apply the label** is selected in the label definition. More information can be found here: [Enable sensitivity labels for files in SharePoint and OneDrive](/purview/sensitivity-labels-sharepoint-onedrive-files#support-for-labels-configured-for-user-defined-permissions).
+Sites containing Sensitivity labels with *user-defined permissions* can't be migrated using cross-tenant migration. This guidance refers to sensitivity labels where the setting **Let users assign permissions when they apply the label** is selected in the label definition. More information can be found here: [Enable sensitivity labels for files in SharePoint and OneDrive](/purview/sensitivity-labels-sharepoint-onedrive-files#support-for-labels-configured-for-user-defined-permissions).
 
-In order to migrate sites containing Sensitivity labels with *user-defined permissions*, the labels must be first be removed from files within the sites. This can be done either manually, or by using **Unlock-SPOSensitivityLabelEncryptedFile**.
+In order to migrate sites containing Sensitivity labels with *user-defined permissions*, the labels must be first be removed from files within the sites. This action can be done either manually, or by using **Unlock-SPOSensitivityLabelEncryptedFile**.
 
 **Example**:
 
