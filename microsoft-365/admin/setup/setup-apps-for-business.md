@@ -54,9 +54,9 @@ You can add users in the wizard, but you can also [add users later](../add-users
 
 2. Choose **Go to setup** to start the wizard.
 
-3. On the first page, you'll get the option to install Microsoft 365 apps on your computer. You can also do this later.
+3. On the first page, you'll get the option to install Microsoft 365 productivity apps on your computer. You can also do this later.
 
-3. On the next page, you can add users and they'll automatically get assigned the Microsoft 365 apps for business license. After you've added the users, you'll also get an option to share credentials with the new users you added. You can choose to print them out, email them, or download them.
+3. On the next page, you can add users and they'll automatically get assigned the Microsoft 365 productivity apps for business license. After you've added the users, you'll also get an option to share credentials with the new users you added. You can choose to print them out, email them, or download them.
 
  When the sign-up process is complete, you'll be directed to the admin center, where you can add users, and assign licenses. 
 
