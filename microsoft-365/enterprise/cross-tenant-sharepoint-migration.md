@@ -72,11 +72,11 @@ For more information on licensing:
 
 ## Path size limits
 
-Microsoft character path limit cannot exceed 400 characters. We recommend shortening your Target User/Site URL names to stay within the character limit.
+Microsoft character path limit cannot exceed 400 characters. We recommend shortening your Target User and Site URL names to stay within the character limit.
 
-Consider the length of User/Site ULR names in your Target tenant when planning your migrations. Longer user/site URL names may result in migrations failing. Remember that the source's file or folder path name is combined with the new user or site name on the Target. Make sure that total doesn't exceed the 400-character path limit.
+Consider the length of User and Site ULR names in your Target tenant when planning your migrations. Longer user and site URL names may result in migrations failing. Remember that the source's file or folder path name is combined with the new user or site name on the Target. Make sure that total doesn't exceed the 400-character path limit.
 
-If your migration fails, rename the User/Site URL or work with the user to rename or move the affected files or folders higher up the directory structure to ensure it remains under the character threshold limit. Once resolved, you should be able to complete the migration.
+If your migration fails, rename the User or Site URL or work with the user to rename or move the affected files or folders higher up the directory structure to ensure it remains under the character threshold limit. Once resolved, you should be able to complete the migration.
 
 ## Support SharePoint features
 
