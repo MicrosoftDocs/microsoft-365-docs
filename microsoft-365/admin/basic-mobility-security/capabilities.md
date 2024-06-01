@@ -58,7 +58,7 @@ The supported apps for the different types of mobile devices in the following ta
 |Product|iOS|Android|
 |---|---|---|
 |**Exchange** Exchange ActiveSync includes built-in email and third-party apps, like TouchDown, that use Exchange ActiveSync Version 14.1 or later.|Mail|Email|
-|**Microsoft 365 productivity apps** and **OneDrive for Business**|Outlook </br>OneDrive </br>Word </br>Excel </br>PowerPoint|**On phones and tablets**:<br/>Outlook <br/> OneDrive <br/> Word <br/> Excel <br/> PowerPoint <br/> **On phones only:** <br/> Microsoft 365 mobile|
+|**Apps in Microsoft 365** and **OneDrive for Business**|Outlook </br>OneDrive </br>Word </br>Excel </br>PowerPoint|**On phones and tablets**:<br/>Outlook <br/> OneDrive <br/> Word <br/> Excel <br/> PowerPoint <br/> **On phones only:** <br/> Microsoft 365 mobile|
 
 > [!NOTE]
 >

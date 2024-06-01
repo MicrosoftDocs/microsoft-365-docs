@@ -29,7 +29,7 @@ description: "Learn how to get the Microsoft 365 Copilot usage report and gain i
 
 The Microsoft 365 Usage dashboard shows you the activity overview across the Microsoft 365 productivity apps in your organization. It enables you to drill into individual product-level reports to give you more granular insight about the activities within each app. To view all reports, check out the [Reports overview article](activity-reports.md).
 
-The Copilot for Microsoft 365 report, which is in continuous enhancement, includes a Readiness section and Usage section. In the Readiness section, you can view which users are technically eligible for Copilot, assign licenses, and monitor usage of Microsoft 365 productivity apps that Copilot integrates best with. Within the Usage section, you can view a summary of how users’ adoption, retention, and engagement are with Copilot for Microsoft 365, and the activity of every Copilot user in your organization. The report becomes available within 72 hours, and once available, the usage data shown on the report can have up to a maximum of 72 hours latency.
+The Copilot for Microsoft 365 report, which is in continuous enhancement, includes a Readiness section and Usage section. In the Readiness section, you can view which users are technically eligible for Copilot, assign licenses, and monitor usage of apps in Microsoft 365 that Copilot integrates best with. Within the Usage section, you can view a summary of how users’ adoption, retention, and engagement are with Copilot for Microsoft 365, and the activity of every Copilot user in your organization. The report becomes available within 72 hours, and once available, the usage data shown on the report can have up to a maximum of 72 hours latency.
 
 ## How do I get to the Copilot for Microsoft 365 report?
 
@@ -93,8 +93,8 @@ To ensure data quality, we perform daily data validation checks for the past thr
 
 ### User activity table
 
-| Item                          | Description                                                                                                               |
-|-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| Item                              | Description                                    |
+|-----------------------------------|------------------------------------------------|
 | User name                         | The user's principal name.                                                                                                    |
 | Has Copilot license been assigned | Yes/No field indicating if the user has a Copilot license assigned to them.                                                   |
 | Uses eligible update channel      | Yes/No field indicating if devices are configured to get the latest or monthly updates.                                       |
@@ -129,7 +129,7 @@ The definitions for Enabled Users and Active Users metrics are the same as provi
 
 To note, Active users of Word, Excel, and PowerPoint is incomplete prior to Jan 25, 2024.
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > Your organization must have optional diagnostic telemetry for Office apps enabled for Windows, Mac, iOS, and Android in order for comprehensive usage information to be captured in this report. [Learn more about diagnostic telemetry settings](/DeployOffice/privacy/optional-diagnostic-data).
 
 **Summary view** shows you the total usage of Copilot for Microsoft 365 among Microsoft 365 productivity apps of the time frame.
@@ -169,11 +169,11 @@ To ensure data quality, we perform daily data validation checks for the past thr
 ## User last activity table
 
 | Item | Description |
-|------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
+|------|-------------|
 | User name                                      | The user's principal name.                                                                                                                    |
 | Display name                                   | The full name of the user.                                                                                                                    |
 | Last activity date (UTC (Universal Time Code)) | The latest date the user had activity in Copilot for Microsoft 365 among all Microsoft 365 products, including any of the intentional activities, regardless of the selected time period of past 7/30/90/180 days. |
-| Last activity date of Teams Copilot (UTC)      | The latest date the user had activity in Microsoft Teams Copilot, including any of the intentional activities,regardless of the selected time period of past 7/30/90/180 days.                                |
+| Last activity date of Teams Copilot (UTC)      | The latest date the user had activity in Microsoft Teams Copilot, including any of the intentional activities, regardless of the selected time period of past 7/30/90/180 days.                                |
 | Last activity date of Word Copilot (UTC)       | The latest date the user had activity in Word Copilot, including any of the intentional activities, regardless of the selected time period of past 7/30/90/180 days.                                            |
 | Last activity date of Excel Copilot (UTC)      | The latest date the user had activity in Excel Copilot, including any of the intentional activities, regardless of the selected time period of past 7/30/90/180 days.                                        |
 | Last activity date of PowerPoint Copilot (UTC)  | The latest date the user had activity in PowerPoint Copilot, including any of the intentional activities, regardless of the selected time period of past 7/30/90/180 days.                                   |
@@ -232,3 +232,7 @@ This may be caused by a known limitation: the uploading of client events data fo
 ### How do the numbers in this report compare to what is shown in the Microsoft Copilot Dashboard in Viva Insights?
 
 The data in these reports is based on the same underlying definitions of active usage, but the population of users included in the analysis and the timeframe displayed may differ. To learn more, see [Use Microsoft Copilot Dashboard advanced features with a Viva Insights subscription](/viva/insights/org-team-insights/copilot-dashboard-advanced-features#setup-and-licenses).
+
+### Does Teams Copilot usage include Copilot chat usage in Teams?
+
+Teams Copilot usage excludes Copilot chat usage within Teams, as Copilot chat is a Teams app. In the future, we will add the Copilot chat usage breakdown in Teams, Bing, and more.
