@@ -217,6 +217,15 @@
         - name: Troubleshoot a request 
           href: esignature-troubleshoot.md
 
+    - name: Autofill columns
+      items: 
+        - name: Overview 
+          href: autofill-overview.md
+        - name: Admin setup 
+          href: autofill-setup.md
+        - name: Create autofill columns
+          href: autofill.md
+
     - name: Optical character recognition 
       items: 
         - name: Overview 
@@ -285,7 +294,7 @@
               href: scenario-document-compliance.md
         - name: Assess your environment
           href: adoption-assessment-tool.md 
-        - name: Solution accelerators
+        - name: Solution aite templates
           href: site-templates.md 
         - name: Solutions
           items:
