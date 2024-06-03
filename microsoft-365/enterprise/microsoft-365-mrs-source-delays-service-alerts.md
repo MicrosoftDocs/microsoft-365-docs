@@ -7,6 +7,7 @@ ms.date: 12/13/2021
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 search.appverid:
 - MET150

@@ -8,6 +8,7 @@ ms.date: 12/19/2023
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 ms.assetid: ef753b32-7251-4c9e-b442-1a5aec14e58d
 ms.collection:

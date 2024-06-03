@@ -1,5 +1,5 @@
 ---
-title: Use the Page Diagnostics tool for SharePoint Online
+title: Use the Page Diagnostics tool for SharePoint in Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
@@ -7,6 +7,7 @@ ms.date: 01/08/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 ms.collection: 
 - scotvorg
@@ -20,12 +21,12 @@ search.appverid:
 - BSA160
 f1.keywords:
 - NOCSH
-description: "Use the Page Diagnostics for SharePoint tool to analyze SharePoint Online modern portal and classic publishing pages against a predefined set of performance criteria."
+description: "Use the Page Diagnostics for SharePoint tool to analyze SharePoint in Microsoft 365 modern portal and classic publishing pages against a predefined set of performance criteria."
 ---
 
 # Use the Page Diagnostics for SharePoint tool
 
-This article describes how to use the **Page Diagnostics for SharePoint tool** to analyze SharePoint Online modern and classic site pages against a predefined set of performance criteria.
+This article describes how to use the **Page Diagnostics for SharePoint tool** to analyze SharePoint in Microsoft 365 modern and classic site pages against a predefined set of performance criteria.
 
 The Page Diagnostics for SharePoint tool can be installed for:
 
@@ -35,12 +36,12 @@ The Page Diagnostics for SharePoint tool can be installed for:
 > [!TIP]
 > Version **2.0.0** and later includes support for modern pages in addition to classic site pages. If you are unsure which version of the tool you are using, you can select the **About** link or the ellipses (...) to verify your version. **Always update to the latest version** when using the tool.
 
-The Page Diagnostics for SharePoint tool is a browser extension for the new Microsoft Edge (https://www.microsoft.com/edge) and Chrome browsers that analyzes both SharePoint Online modern portal and classic publishing site pages.
+The Page Diagnostics for SharePoint tool is a browser extension for the new Microsoft Edge (https://www.microsoft.com/edge) and Chrome browsers that analyzes both SharePoint in Microsoft 365 modern portal and classic publishing site pages.
 
 > [!IMPORTANT]
-> This tool only works for SharePoint Online, and can’t be used on a SharePoint system page or on a SharePoint App page. The App page type is designed to be used for specific business applications within SharePoint Online and not for portals. The tool is designed to optimize portal pages and Teams site pages.
+> This tool only works for SharePoint in Microsoft 365, and can’t be used on a SharePoint system page or on a SharePoint App page. The App page type is designed to be used for specific business applications within SharePoint in Microsoft 365 and not for portals. The tool is designed to optimize portal pages and Teams site pages.
 
-The tool generates a report for each analyzed page showing how the page performs against a predefined set of rules and displays detailed information when results for a test fall outside the baseline value. SharePoint Online administrators and designers can use the tool to troubleshoot performance issues and to ensure that new pages are optimized prior to publishing.
+The tool generates a report for each analyzed page showing how the page performs against a predefined set of rules and displays detailed information when results for a test fall outside the baseline value. SharePoint administrators and designers can use the tool to troubleshoot performance issues and to ensure that new pages are optimized prior to publishing.
 
 The Page Diagnostics tool is designed to analyze SharePoint site pages only, not system pages such as *allitems.aspx* or *sharepoint.aspx*. If you attempt to run the tool on a system page or any other nonsite page, you'll receive an error message advising that the tool can’t be run for that type of page.
 
@@ -72,7 +73,7 @@ The installation procedure in this section works for both the Chrome and Microso
 1. If you want to use the tool in Incognito or InPrivate mode, follow the procedure for your browser:
     1. In Microsoft Edge, navigate to **Extensions** or type _edge://extensions_ in the URL bar and select **Details** for the extension. In the extension settings, select the checkbox for **allow in InPrivate**.
     1. In Chrome, navigate to **Extensions** or type _chrome://extensions_ in the URL bar and select **Details** for the extension. In the extension settings, select the slider for **allow in Incognito**.
-1. Navigate to the SharePoint site page on SharePoint Online that you would like to review. We've allowed for "delay loading" of items on pages; therefore, the tool won't stop automatically (this is by design to accommodate all page load scenarios). To stop collection, select **Stop**. Make sure that the page load has completed before you stop data collection or you'll only capture a partial trace.
+1. Navigate to the SharePoint site page on SharePoint that you would like to review. We've allowed for "delay loading" of items on pages; therefore, the tool won't stop automatically (this is by design to accommodate all page load scenarios). To stop collection, select **Stop**. Make sure that the page load has completed before you stop data collection or you'll only capture a partial trace.
 1. Click on the extension's toolbar button ![Page Diagnostics for SharePoint logo.](../media/page-diagnostics-for-spo/pagediag-icon32.png) to load the tool and you'll be presented with the following extension popup window:
 
     ![Page Diagnostics tool Popup.](../media/page-diagnostics-for-spo/pagediag-Landing.png)
@@ -92,7 +93,7 @@ Select **Start** to begin collecting data for analysis.
 
    - **CorrelationID** is an important element when working with Microsoft Support as it allows them to gather more diagnostic data for the specific page.
    - **SPRequestDuration** is the time taken for SharePoint to process the page. Structural navigation, large images, lots of API calls could all contribute to longer durations.
-   - **SPIISLatency** is the time in milliseconds taken for SharePoint Online begin loading the page. This value doesn't include the time taken for the web application to respond.
+   - **SPIISLatency** is the time in milliseconds taken for SharePoint begin loading the page. This value doesn't include the time taken for the web application to respond.
    - **Page load time** is the total time recorded by the page from the time of the request to the time the response was received and rendered in the browser. This value is affected by various factors including network latency, the performance of the computer and the time it takes for the browser to load the page.
    - The **Page URL** (Uniform Resource Locator) is the web address of the current page.
 
@@ -173,7 +174,7 @@ No change is visible except that you'll be notified that you have enabled it and
 
 ## Related articles
 
-[Tune SharePoint Online performance](tune-sharepoint-online-performance.md)
+[Tune SharePoint performance](tune-sharepoint-online-performance.md)
 
 [Tune Office 365 performance](tune-microsoft-365-performance.md)
 
@@ -181,4 +182,4 @@ No change is visible except that you'll be notified that you have enabled it and
 
 [Content delivery networks](content-delivery-networks.md)
 
-[Use the Office 365 Content Delivery Network (CDN) with SharePoint Online](use-microsoft-365-cdn-with-spo.md)
+[Use the Office 365 Content Delivery Network (CDN) with SharePoint](use-microsoft-365-cdn-with-spo.md)

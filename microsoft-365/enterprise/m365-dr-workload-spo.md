@@ -5,6 +5,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 ms.service: microsoft-365-enterprise
+ms.subservice: advanced-data-residency
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -427,11 +428,17 @@ For sites with no Microsoft 365 group association, you can also rename the site 
 
 `https://Contoso.sharepoint.com/sites/projectx` to `https://ContosoEUR.sharepoint.com/sites/projecty`
 
-To start the site move, run:
+To start the site move without renaming the site, run:
 
 ```powershell
-Start-SPOSiteContentMove -SourceSiteUrl <siteURL> -DestinationDataLocation <DestinationDataLocation> -DestinationUrl <DestinationSiteURL>
+Start-SPOSiteContentMove -SourceSiteUrl <siteURL> -DestinationDataLocation <DestinationDataLocation>
 ```
+And to start the site move while also renaming the site, run:
+
+```powershell
+Start-SPOSiteContentMove -SourceSiteUrl <siteURL> -DestinationUrl <DestinationSiteURL>
+```
+You cannot use the `-DestinationDataLocation` and `-DestinationUrl` parameters in the same command.
 
 #### **Start a SharePoint site _Geography_ move for a Microsoft 365 group-connected site**
 

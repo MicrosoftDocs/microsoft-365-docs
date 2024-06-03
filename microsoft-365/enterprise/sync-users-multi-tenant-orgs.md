@@ -7,6 +7,7 @@ ms.date: 02/02/2024
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
+ms.subservice: multi-tenant
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -92,7 +93,7 @@ To synchronize identities to other tenants in a multitenant organization
 1. On the **Organization profile** tab, select **Multitenant collaboration**.
 1. Select **Share users**.
 1. Select **Select users to share**.
-1. Choose the security group that you created, and then select **Save**.
+1. Select **Save**.
 1. Select **Yes** to confirm.
 
 This creates a cross-tenant synchronization configuration in Microsoft Entra ID for each tenant in your multitenant organization. The synchronization configurations are named *MTO_Sync_\<TenantID\>*.
@@ -121,7 +122,7 @@ To change which users are synchronized to other tenants
 1. On the **Organization profile** tab, select **Multitenant collaboration**.
 1. Select **Share users**.
 1. Select **Edit shared users**.
-1. Update the users and groups that you want to sync to other tenants and then select **Save**.
+1. Update the users that you want to sync to other tenants and then select **Save**.
 1. Select **Yes** to confirm.
 
 This procedure updates the *MTO_Sync_\<TenantID\>* synchronization configurations in Microsoft Entra ID for each tenant in your multitenant organization.

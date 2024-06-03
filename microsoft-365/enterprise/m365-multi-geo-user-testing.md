@@ -6,6 +6,7 @@ author: kelleyvice-msft
 manager: scotv
 ms.reviewer: deanw, anfra
 ms.service: microsoft-365-enterprise
+ms.subservice: multi-tenant
 ms.topic: article
 f1.keywords:
 - NOCSH
