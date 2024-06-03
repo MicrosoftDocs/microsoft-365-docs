@@ -83,7 +83,7 @@ For detailed information on existing capabilities in SharePoint Admin Center and
   - Available: [Manage SharePoint Embedded containers in SharePoint Admin Center](/sharepoint/dev/embedded/concepts/admin-exp/consuming-tenant-admin/ctaux)
   - Available: [SharePoint Embedded container management in PowerShell](/sharepoint/dev/embedded/concepts/admin-exp/consuming-tenant-admin/ctapowershell)
 
-### Not Yet Available
+### Not yet available
 
 The following sections detail capabilities that are **not yet available** for Microsoft Loop to make it easier to evaluate the smaller list of capabilities your organization might require before using Microsoft Loop. As denoted in the summary table, the content applies to Loop workspaces only.
 
@@ -105,7 +105,7 @@ The following sections detail capabilities that are **not yet available** for Mi
 - **Sensitivity Labeling (MIP/CLP)** can't be configured at the Loop workspace level within the Loop app. It can be set using PowerShell per Loop workspace and viewed in the SharePoint Embedded admin center.
 
 
-## Manually Initializing Microsoft Loop app for Conditional Access management in Microsoft Entra
+## Manually initializing Microsoft Loop app for Conditional Access management in Microsoft Entra
 
 In order to select Microsoft Loop app from the cloud app target UX in the Microsoft Entra admin center: Protection | Conditional Access | Select what this policy applies to | select apps | Microsoft Loop, manual provisioning is required.
 
