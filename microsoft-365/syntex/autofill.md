@@ -41,7 +41,7 @@ To create a new autofill column, follow these steps:
 
    ![Screenshot showing the Autofill panel.](../media/content-understanding/autofill-panel.png)
 
-5. In the **Test the prompt** section, select a file to test the prompt using the files in the library. The results display in the **Results** box. If needed, you can modify the prompt and retest it until you achieve the result you want.
+5. In the **Test the prompt** section, select a file to test the prompt using the files in the library. The results display in the **Result** box. If needed, you can modify the prompt and retest it until you achieve the result you want.
 
 6. When have the prompt you want, select **Save**. The new column displays in the library.
 
