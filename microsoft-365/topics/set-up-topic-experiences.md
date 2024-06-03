@@ -23,7 +23,7 @@ description: Learn how to set up Topics and manage your settings.
 
 You can use the Microsoft 365 admin center to set up and configure [Topics](topic-experiences-overview.md).
 
-It is important to plan the best way to set up and configure topics in your environment. Be sure to read [Plan for Topics](plan-topic-experiences.md) before you begin the procedures in this article.
+It's important to plan the best way to set up and configure topics in your environment. Be sure to read [Plan for Topics](plan-topic-experiences.md) before you begin the procedures in this article.
 
 You must be [subscribed to a license that includes Topics](https://www.microsoft.com/microsoft-viva/topics) and be a global administrator, or both SharePoint administrator and groups administrator to access the Microsoft 365 admin center and set up Topics.
 
@@ -92,7 +92,7 @@ You can take either path through your Microsoft 365 admin center to set up Topic
 1. Choose which SharePoint sites Topics can source information from.
     - **All sites**: All SharePoint sites in your organization. This includes current and future sites.
     - **All, except selected sites**: Type the names of the sites you want to exclude.  You can also upload a list of sites that you want to opt out from discovery. Sites created in future will be included as sources for topic discovery.
-    - **Only selected sites**: Type the names of the sites you want to include. You can also upload a list of sites. Sites created in the future will not be included as sources for topic discovery.
+    - **Only selected sites**: Type the names of the sites you want to include. You can also upload a list of sites. Sites created in the future won't be included as sources for topic discovery.
     - **No sites**: Do not include any SharePoint sites.
 
 2. Then choose **Next**.
@@ -144,7 +144,7 @@ On the Topic discovery page, you'll choose how Viva Topics sources and identifie
 1. In the **Select SharePoint topic sources** section, select which SharePoint sites will be crawled as sources for your topics during discovery. Choose from:
     - **All sites**: All SharePoint sites in your organization. This includes current and future sites.*
     - **All, except selected sites**: Type the names of the sites you want to exclude.  You can also upload a list of sites that you want to opt out from discovery. Sites created in future will be included as sources for topic discovery.
-    - **Only selected sites**: Type the names of the sites you want to include. You can also upload a list of sites. Sites created in the future will not be included as sources for topic discovery.
+    - **Only selected sites**: Type the names of the sites you want to include. You can also upload a list of sites. Sites created in the future won't be included as sources for topic discovery.
     - **No sites**: Do not include any SharePoint sites.
 
 2. Select **Save**.
