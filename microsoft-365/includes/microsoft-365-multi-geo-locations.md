@@ -1,28 +1,28 @@
 ---
 ms.date: 04/01/2024
 ---
-|  Microsoft 365 Region                  |  PreferredDataLocation (PDL) Value
-|:---------------------------------------|:-------|
-|Macro Region Geography 2 - Asia-Pacific |APC
-|Australia                               |AUS
-|Brazil                                  |BRA
-|Canada                                  |CAN
-|Macro Region Geography 1 - EMEA         |EUR
-|France                                  |FRA
-|Germany                                 |DEU
-|India                                   |IND
-|Israel                                  |ISR
-|Italy                                   |ITA
-|Japan                                   |JPN
-|Korea                                   |KOR
-|Mexico                                  |MEX
-|Norway                                  |NOR
-|Poland                                  |POL
-|Qatar                                   |QAT
-|South Africa                            |ZAF
-|Spain                                   |ESP
-|Sweden                                  |SWE
-|Switzerland                             |CHE
-|United Arab Emirates                    |ARE
-|United Kingdom                          |GBR
-|United States                           |NAM
+|  Microsoft 365 Region                                                               |  PreferredDataLocation (PDL) Value
+|:------------------------------------------------------------------------------------|:-------|
+|South Korea, Japan, Singapore, Malaysia, Hong Kong Special Administrative Region     |APC
+|Australia                                                                            |AUS
+|Brazil                                                                               |BRA
+|Canada                                                                               |CAN
+|France, Netherlands, Ireland, Norway, Switzerland, Austria, Finland, Sweden, Germany |EUR
+|France                                                                               |FRA
+|Germany                                                                              |DEU
+|India                                                                                |IND
+|Israel                                                                               |ISR
+|Italy                                                                                |ITA
+|Japan                                                                                |JPN
+|Korea                                                                                |KOR
+|Mexico                                                                               |MEX
+|Norway                                                                               |NOR
+|Poland                                                                               |POL
+|Qatar                                                                                |QAT
+|South Africa                                                                         |ZAF
+|Spain                                                                                |ESP
+|Sweden                                                                               |SWE
+|Switzerland                                                                          |CHE
+|United Arab Emirates                                                                 |ARE
+|United Kingdom                                                                       |GBR
+|United States                                                                        |NAM

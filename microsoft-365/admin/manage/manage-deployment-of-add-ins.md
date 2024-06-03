@@ -140,7 +140,7 @@ When updating a manifest, the typical changes are to an add-in's icon and text. 
   
 Updates for add-ins happen as follows:
   
-- **Line-of-business add-in:** In this case, where an admin explicitly uploaded a manifest, the add-in requires that the admin upload a new manifest file to support metadata changes. The next time the relevant Microsoft 365 apps start, the add-in will update. The web application can change at any time.
+- **Line-of-business add-in:** In this case, where an admin explicitly uploaded a manifest, the add-in requires that the admin upload a new manifest file to support metadata changes. The next time the relevant apps in Microsoft 365 start, the add-in will update. The web application can change at any time.
 
   > [!NOTE]
   > Admin does not need to remove a LOB Add-in for doing an update.   In the Add-ins section, Admin can simply click on the LOB Add-in and choose the **Update Button** in the bottom right corner. Update will work only if the version of the new add-in is greater than that of the existing add-in.
