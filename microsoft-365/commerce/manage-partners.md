@@ -22,7 +22,7 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: MET150
 description: "Learn how to work with Microsoft-certified solution providers (partners) to buy and manage products and services for your organization or school."
-ms.date: 11/01/2023
+ms.date: 06/03/2024
 ---
 
 # Manage Microsoft-certified solution provider partner relationships
@@ -44,20 +44,20 @@ There are several ways that a partner can work with you. Based on your stated bu
 | Partner type | Description | Roles |
 | ------------ | ----------- | ----- |
 | Advisor | Partners can reset passwords and handle support incidents for you. | Global admin, Helpdesk admin. |
-| Granular delegated administrator | Partners who manage products and services for your organization or school, but who have limited access to what they can do in the Microsoft 365 admin center. Granular delegated administrator privileges (GDAP) let partners complete tasks in the admin center without having global admin permission. By giving GDAP to partners, you ensure they have the least-permissive roles and limit the risk to your organization. | Any Microsoft Entra role.<br><br>For more information, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference). |
+| Granular with GDAP access | Partners who manage products and services for your organization or school, but who have limited access to what they can do in the Microsoft 365 admin center. [Granular delegated administrator privileges (GDAP)](/partner-center/gdap-introduction) let partners complete tasks in the admin center without having global admin permission. By giving GDAP to partners, you ensure they have the least-permissive roles and limit the risk to your organization. | Any Microsoft Entra role.<br><br>For more information, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference). |
 | Independent Software Vendors | Partners who develop and sell custom software products that run on one or more computer hardware or operating system platforms. Some ISVs focus on developing software or custom applications that focus on a particular operating system, and other ISVs specialize in a particular application area. | No roles assigned. |
 | Indirect reseller | Partners who manage products and services for your organization or school. | No roles assigned. |
 | Line-of-business (LOB) partner | Partners can develop, submit, and manage LOB apps specific for your organization or school. | Not available to assign. |
 | Microsoft Products & Services Agreement (MPSA) partner | If you've worked with multiple partners through the MPSA program, you can allow them to see purchases made by each other. | No roles assigned. |
 | Original Equipment Manufacturer (OEM) | Windows Autopilot is managed and maintained by Microsoft. This service provides the backend database that associates hardware hashes with customer tenants. When an OEM registers devices for a customer, they write that data to this database and not directly to the customer's tenant. No permissions to the customer's tenant are granted or required for OEMs to register devices on the customer's behalf. | No roles assigned. |
-| Partner | You give your partner a user account in your tenant, and they work with other Microsoft services on your behalf. | Assign a role to the partner on the <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.<br><br>For more information, see [About admin roles in the Microsoft 365 admin center](../admin/add-users/about-admin-roles.md). |
+| Partner | You give your partner a user account in your tenant, and they work with other Microsoft services on your behalf. | Any Microsoft Entra role.<br><br>For more information, see [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference). |
 | Reseller | Partners who sell Microsoft products to your organization or school. | No roles assigned. |
 
 ## Find a partner
 
 1. Go to <a href="https://appsource.microsoft.com/marketplace/partner-dir" target="_blank">https://appsource.microsoft.com/marketplace/partner-dir</a>.
 2. Use the filters to narrow your search. When you find a partner that you want to work with, select **Contact me**.
-3. Enter your location and contact information. Select your organization size, include your organization name, select your industry focus, add keywords for the type of services you need, and then describe your business needs.
+3. Enter your location and contact information. Select your organization size, include your organization name, select your industry focus, and then describe your business needs.
 4. When you're finished, select **Contact me**.
 
 The partner contacts you and gives you a chance to learn more about them. If you decide to work with them, they send you an email invitation to establish a partner relationship.
@@ -84,7 +84,7 @@ If you already have a partner but haven't yet signed a Microsoft Customer Agreem
 
 ## Remove partner admin roles
 
-The granular delegated administrative privileges (GDAP) feature gives partners more granular and time-bound access to their customers' workloads. This means that partners are better able to address their customers' security concerns. Partners can also provide more services to customers who are uncomfortable with the current levels of partner access and who have regulatory requirements to provide only least-privileged access to partners. With GDAP, you agree to give partners roles specified in their request. These roles are customizable, so you can discuss with your partner if you don't approve certain permissions.
+The GDAP feature gives partners more granular and time-bound access to their customers' workloads. This means that partners are better able to address their customers' security concerns. Partners can also provide more services to customers who are uncomfortable with the current levels of partner access and who have regulatory requirements to provide only least-privileged access to partners. With GDAP, you agree to give partners roles specified in their request. These roles are customizable, so you can discuss with your partner if you don't approve certain permissions.
 
 If you don't want to give admin roles to the partner, cancel the invitation instead of accepting it.
 
