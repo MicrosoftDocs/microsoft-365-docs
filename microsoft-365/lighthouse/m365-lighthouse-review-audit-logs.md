@@ -7,7 +7,7 @@ manager: scotv
 ms.reviewer: magarlan
 ms.date: 07/03/2023
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
