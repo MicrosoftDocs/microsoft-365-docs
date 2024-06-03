@@ -187,12 +187,12 @@ Here's how frontline managers (FLM) and frontline workers (FLW) are set up in th
 
 |UKG Pro WFM location|Users|Primary job|Reports to|
 |---------|---------|---------|---------|
-|Contoso/Retail/Central London/Soho|FLW1&sup1;, FLW2<br>FLW3, FLW4<br>FLW5&sup2;, FLW6, FLW7<br>FLW8, FLW9, FLW10|Beauty advisor<br>Leather goods sales associate<br>Sales associate<br>Personal shopper|FLM1|
+|Contoso/Retail/Central London/Soho|FLW1<sup>1</sup>, FLW2<br>FLW3, FLW4<br>FLW5<sup>2</sup>, FLW6, FLW7<br>FLW8, FLW9, FLW10|Beauty advisor<br>Leather goods sales associate<br>Sales associate<br>Personal shopper|FLM1|
 |Contoso/Retail/Central London/Covent Garden|FLW11, FLW12<br>FLW13, FLW14|Leather goods sales associate<br>Sales associate|FLM2|
 |Contoso/Retail/Central London/Chelsea|FLW15<br>FLW16<br>FLW17|Sales associate<br>Personal shopper<br>Beauty advisor|FLM3|
 
-&sup1;FLW1 can also work as a beauty advisor in Central London/Chelsea.<br>
-&sup2;FLW5 can also work as a sales associate in Central London/Covent Garden and Central London/Chelsea.
+<sup>1</sup>FLW1 can also work as a beauty advisor in Central London/Chelsea.<br>
+<sup>2</sup>FLW5 can also work as a sales associate in Central London/Covent Garden and Central London/Chelsea.
 
 #### What does this mean when I set up teams in Teams?
 
