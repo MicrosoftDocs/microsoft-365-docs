@@ -7,7 +7,7 @@ manager: scotv
 ms.reviewer: sharonchoi
 ms.date: 5/13/2024
 audience: Admin
-ms.topic: article
+ms.topic: whats-new
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
