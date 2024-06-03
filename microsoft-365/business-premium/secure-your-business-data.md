@@ -7,8 +7,8 @@ author: chrisda
 manager: deniseb
 audience: Admin
 ms.topic: reference
-ms.service: microsoft-365-business
-ms.date: 11/30/2023
+ms.service: microsoft-365-business-security
+ms.date: 05/31/2024
 ms.localizationpriority: medium
 ms.collection:
 - highpri
