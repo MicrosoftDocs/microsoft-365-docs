@@ -118,7 +118,7 @@ On the **Topic center** page, you can create your topic center site where users 
 
 Review the settings you've chosen. Once everything is correct, choose **Finish**. You can manage your settings later by going back to your Topics setup page and choosing **Manage Topics**.
 
-Note that topics won't show up for your users immediately.You can monitor the number of topics found in your [analytics page](topics-analytics.md).
+Note that topics won't show up for your users immediately. You can monitor the number of topics found in your [analytics page](topics-analytics.md).
 
 By default, the only person who can manage Topics for your organization is the admin. You can change this setting by following the steps to [manage topics](#manage-topics) and going to the [**Topic permissions**](#topic-permissions) section.
 
