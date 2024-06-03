@@ -119,7 +119,7 @@ You can enable third-party storage for your users in Microsoft 365 so they can s
 
 - [Upload files and folders to a SharePoint team site](https://support.microsoft.com/office/da549fb1-1fcb-4167-87d0-4693e93cb7a0) to make collaboration with team members easier. Everyone on your team has access to the SharePoint team site.
 
-- **Set up Microsoft 365 apps on your tablets and phones.** You need to do this so you can **edit** files that are stored in OneDrive and on team sites from your tablet or phone. If you don't install the Microsoft 365 apps for your tablet or phone, you'll be able to view the files but not edit them.
+- **Set up Microsoft 365 productivity apps on your tablets and phones.** You need to do this so you can **edit** files that are stored in OneDrive and on team sites from your tablet or phone. If you don't install the apps for your tablet or phone, you'll be able to view the files but not edit them.
   - [Install and set up Microsoft 365 on an Android](https://support.microsoft.com/office/cafe9d6f-8b0c-4b03-b20a-12438a82a22d)
   - [Install and set up Microsoft 365 on an iPhone or iPad](https://support.microsoft.com/office/9df6d10c-7281-4671-8666-6ca8e339b628)
   - [Set up Microsoft 365 apps and email on a mobile device](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f)

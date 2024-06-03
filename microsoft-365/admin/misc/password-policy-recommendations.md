@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 06/15/2023
+ms.date: 05/28/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -17,6 +17,7 @@ ms.collection:
 - highpri
 - Adm_O365
 - Adm_NonTOC
+- must-keep
 ms.custom: 
 - VSBFY23
 - AdminSurgePortfolio
