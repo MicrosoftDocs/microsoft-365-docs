@@ -5,7 +5,7 @@ author: kwekuako
 manager: scotv
 ms.date: 03/25/2023
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: bookings
 ms.localizationpriority: medium
 ms.collection:
@@ -230,4 +230,4 @@ No. Anyone or any attendee can schedule time with you using your Bookings with m
 
 ### Where is Bookings with me data stored?
 
-Bookings with me is a feature of Outlook powered by Bookings. All data is stored within the Microsoft 365 platform and in Exchange. Bookings with me follows data storage policies set by Microsoft, which are the same policies that all Microsoft 365 productivity apps follow. All customer data (including information provided by attendees when booking) is captured in Bookings and is stored within Exchange. For more information, check out [Privacy: It's all about you](https://www.microsoft.com/en-us/trust-center/privacy).
+Bookings with me is a feature of Outlook powered by Bookings. All data is stored within the Microsoft 365 platform and in Exchange. Bookings with me follows data storage policies set by Microsoft, which are the same policies that all apps in Microsoft 365 follow. All customer data (including information provided by attendees when booking) is captured in Bookings and is stored within Exchange. For more information, check out [Privacy: It's all about you](https://www.microsoft.com/trust-center/privacy).

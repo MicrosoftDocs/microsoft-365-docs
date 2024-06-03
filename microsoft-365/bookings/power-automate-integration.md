@@ -5,7 +5,7 @@ author: kwekuako
 manager: scotv
 ms.date: 08/08/2022
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: bookings
 ms.localizationpriority: medium
 ms.collection:
