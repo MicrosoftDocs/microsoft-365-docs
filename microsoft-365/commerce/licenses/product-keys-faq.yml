@@ -215,7 +215,7 @@ sections:
 
           If you deploy Microsoft 365 using Key Management Service (KMS) as the activation method, note that:
             - You can't activate Microsoft 365 using KMS if you use Windows Server as the KMS host.
-            - A patch isn't available to allow activation of Microsoft 365 apps.
+            - A patch isn't available to allow activation of apps in Microsoft 365.
 
           If you're using Windows Server 2008 as a KMS host, you can:
             - Upgrade the KMS host machine to Windows Server.
