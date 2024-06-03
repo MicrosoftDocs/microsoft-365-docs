@@ -94,7 +94,7 @@ To set up services, you have to update records at your DNS host or domain regist
 
 2. Follow the steps in the wizard and email and other services will be set up for you.
 
-    When the signup process is complete, you'll be directed to the admin center, where you'll follow a wizard to install Microsoft 365 productivity apps, add your domain, add users, and assign licenses. After you complete the initial setup, you can use the **Setup** page in the admin center to continue setting up and configuring the services that come with your subscriptions.
+    When the signup process is complete, you'll be directed to the admin center, where you'll follow a wizard to install apps in Microsoft 365, add your domain, add users, and assign licenses. After you complete the initial setup, you can use the **Setup** page in the admin center to continue setting up and configuring the services that come with your subscriptions.
 
     For more information about the setup wizard and the admin center **Setup** page, see [Difference between the setup wizard and the Setup page](o365-setup-wizard-and-setup-page.md).
 
