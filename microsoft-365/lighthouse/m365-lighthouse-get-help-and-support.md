@@ -7,7 +7,7 @@ manager: scotv
 ms.reviewer: crimora
 ms.date: 12/13/2023
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
@@ -82,4 +82,4 @@ If you're experiencing an issue that isn't listed in any of these resources, the
 [View tenant service health](m365-lighthouse-view-service-health.md)
 [Known issues with Microsoft 365 Lighthouse](m365-lighthouse-known-issues.md) (article)\
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)\
-[Troubleshooot and resolve problems and error messages in Microsoft 365 Lighthouse](m365-lighthouse-troubleshoot.md) (article)
+[Troubleshoot and resolve problems and error messages in Microsoft 365 Lighthouse](m365-lighthouse-troubleshoot.md) (article)

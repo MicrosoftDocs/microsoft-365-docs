@@ -92,7 +92,7 @@ If you want to allow everyone to see the Sent email, in the admin center, edit t
 
 To learn more about litigation hold, see [Create a Litigation Hold](../../compliance/ediscovery-create-a-litigation-hold.md).
 
-1. Go to the <a href="https://admin.exchange.microsoft.com/#/homepage" target="_blank"> Exchange admin center</a>.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>.
 
 2. Select **Recipients** > **Mailboxes** and select the shared mailbox you want to manage.
 
