@@ -7,7 +7,7 @@ author: camillepack
 manager: scotv
 ms.date: 10/05/2023
 audience: Admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: microsoft-365-copilot
 ms.localizationpriority: medium
 ms.collection: 
