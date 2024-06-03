@@ -81,7 +81,7 @@ You need to tag the documents to teach the model to understand the fields and ta
 
 ### Set a page range for processing
 
-Under **Model settings**, the **Page range** setting can be used to process a range of pages for a file rather than the entire file. By default, the **Page range** setting is empty. If no page range is provided, the entire document will be processed. For more information, see [Set a page range to extract information from specific pages](page-range.md).
+For this model, you can specify to process a range of pages for a file rather than the entire file. You do this under **Model settings**, in the **Page range** setting. By default, the **Page range** setting is empty. If no page range is provided, the entire document will be processed. For more information, see [Set a page range to extract information from specific pages](page-range.md).
 
 ### Classification Date field
 
