@@ -7,7 +7,7 @@ author: camillepack
 manager: scotv
 ms.date: 11/27/2023
 audience: Admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 monikerRange: 'o365-worldwide'
