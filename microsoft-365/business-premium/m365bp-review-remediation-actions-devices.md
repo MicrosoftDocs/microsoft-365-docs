@@ -7,8 +7,8 @@ author: siosulli
 manager: deniseb
 audience: Admin
 ms.topic: how-to
-ms.service: microsoft-365-business
-ms.date: 10/26/2023
+ms.service: microsoft-365-business-security
+ms.date: 05/31/2024
 ms.localizationpriority: medium
 ms.reviewer: efratka
 f1.keywords: NOCSH
@@ -16,7 +16,7 @@ ms.collection:
 - SMB
 - m365-security
 - m365-initiative-defender-business
-- tier1
+- tier2
 ---
 
 # Review remediation actions in the Microsoft Defender portal

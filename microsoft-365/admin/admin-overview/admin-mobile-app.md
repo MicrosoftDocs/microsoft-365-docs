@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 06/30/2023
+ms.date: 05/30/2024
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
@@ -17,6 +17,7 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
+- must-keep
 ms.custom:
 - VSBFY23
 - TRN_M365B
@@ -34,7 +35,7 @@ Check out all of our small business content on [Small business help & learning](
 
 Check out [Microsoft 365 small business video help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
-Are you an admin who’s usually on the go? Even if you aren’t, there may be times when you need to manage Microsoft 365 from your phone or tablet. Check out the free [Microsoft 365 Admin app](https://go.microsoft.com/fwlink/?LinkID=627216), the perfect companion to the web-based Microsoft 365 admin center.
+Are you an admin who’s usually on the go? Even if you aren’t, there might be times when you need to manage Microsoft 365 from your phone or tablet. Check out the free [Microsoft 365 Admin app](https://go.microsoft.com/fwlink/?LinkID=627216), the perfect companion to the web-based Microsoft 365 admin center.
 
 - Download the app from the [Apple App Store](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8).
 - Download the app from the [Google Play Store](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp).
@@ -79,11 +80,11 @@ If you're an admin and you're responsible for more than one Microsoft 365 organi
 
 Below are answers to frequently asked questions.
 
-### Does the admin app support multi-tenant billing features?
+### Does the admin app support multitenant billing features?
 
-The admin mobile app is missing a few multi-tenant features where the authorized admin can see the products and licenses of the tenant in question along with the products and licenses of associated tenants in a single view.
+The admin mobile app is missing a few multitenant features where the authorized admin can see the products and licenses of the tenant in question along with the products and licenses of associated tenants in a single view.
 
-This feature is not yet part of Microsoft 365 Admin mobile app and will be coming soon. For more information, admins can go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.  
+This feature isn't yet part of the Microsoft 365 Admin mobile app, but will be coming soon. For more information, admins can go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.  
   
 ### What do I need to do to be able to use the app?
 
@@ -97,7 +98,7 @@ To use the app you need to have admin permissions and a valid subscription to on
 - Microsoft 365 E3/E5
 - Office 365: E1, E3/E5
 - Exchange Online plan
-- OneDrive for business plan
+- OneDrive plan
   
 ### Can I use the app with my Microsoft 365 Family subscription?
 
@@ -119,7 +120,7 @@ If you select a specific service incident or a message, the share option will be
 
 Yes, you can setup multiple accounts or organizations.
 
-### I’m unable to login or my app is acting funny. What can I do to troubleshoot or fix the issue?
+### I’m unable to sign in or my app is acting funny. What can I do to troubleshoot or fix the issue?
 
 You can try some common mobile app troubleshooting steps:
 
