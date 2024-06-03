@@ -18,7 +18,7 @@ description: Learn how to specify a page range for extracting information from d
 
 # Set a page range to extract information from specific pages in Microsoft Syntex
 
-<sup>**Applies to:**  &ensp; &#10003; Structured and freeform models &ensp; | &ensp; &#10003; Contract, Invoices, and Receipts prebuilt models</sup>
+<sup>**Applies to:**  &ensp; &#10003; Structured and freeform models &ensp; | &ensp; &#10003; Contracts, Invoices, and Receipts prebuilt models</sup>
 
 You can set a page range to specify which pages in a document you want to extract information from when using a document processing model. This setting can be used to process a range of pages for files rather than the entire file. Processing fewer pages can lead to cost savings, because model services are billed based on the number of pages processed. It can also be more efficient by reducing processing time.
 
