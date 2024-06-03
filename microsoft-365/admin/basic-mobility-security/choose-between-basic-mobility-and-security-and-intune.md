@@ -80,7 +80,7 @@ Microsoft Intune and built-in Basic Mobility and Security both give you the abil
 In addition to features listed in the preceding table, Basic Mobility and Security and Intune both include a set of remote actions that send commands to devices over the internet. For example, you can:
 
 - remove Microsoft 365 data from an employee’s device while leaving personal data in place (retire).
-- remove Microsoft 365 apps from an employee's device (wipe).
+- remove Microsoft 365 productivity apps from an employee's device (wipe).
 - reset a device to its factory settings (full wipe).
 
 Basic Mobility and Security remote actions include retire, wipe, and full wipe. For more information on Basic Mobility and Security actions, see [capabilities of Basic Mobility and Security](capabilities.md).

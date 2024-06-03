@@ -8,11 +8,11 @@ metadata:
   ms.author: chrisda
   manager: deniseb
   ms.topic: how-to
-  ms.service: microsoft-365-business
+  ms.service: microsoft-365-business-security
   ms.collection:
-  - tier1
+  - tier2
   - m365-security
-  ms.date: 10/26/2023
+  ms.date: 05/31/2024
   ms.localizationpriority: medium
   audience: microsoft-business
   keywords: Microsoft 365 Business Premium, Microsoft 365, SMB, FAQ, frequently asked questions, answers, business
