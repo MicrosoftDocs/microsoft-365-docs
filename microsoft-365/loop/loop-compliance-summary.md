@@ -31,13 +31,19 @@ As a Compliance Manager or IT administrator, it's crucial to stay up-to-date on 
 
 Where Loop content is stored impacts the admin management, governance, data lifecycle, and compliance capabilities available. Microsoft Loop is built on top of SharePoint, OneDrive, and [SharePoint Embedded](https://techcommunity.microsoft.com/t5/sharepoint-premium-blog/announcing-sharepoint-embedded-public-preview-at-espc23/ba-p/3993428), which means that most of these capabilities work just like existing files in your ecosystem. Because Loop pages and components are files, they can be managed in a familiar way, within your existing workflows. To help you understand how Loop content is stored in the Microsoft ecosystem, here's a high-level diagram:
 
-:::image type="content" source="media/loop-files-sharepoint.png" alt-text="Diagram showing that the place a Loop file is stored depends on where it was originally created.":::
+Where the Loop content was originally created determines its storage location:
 
-Where the loop content was originally created determines its storage location:
-- Created in the Loop app ➡️️ SharePoint Embedded
-- Created outside the Loop app in places with dedicated shared storage (for example, Teams channels) ➡️️ SharePoint
-- Created outside the Loop app in all other places without tightly associated collaborative storage (for example, Teams chat, Outlook email, Word for the web, Whiteboard) ➡️️ OneDrive
-
+|End-user Creates while using|️️️||➡️️Loop component or page saved in|
+|-----|-----|-----|-----|
+||➡️️SharePoint Embedded|➡️️SharePoint Site|➡️️User's OneDrive|
+|Loop app|Loop workspace|||
+|Teams, channel meeting note||Channel folder||
+|Teams, component in channel post||Channel folder||
+|Teams, component in private chat|||Microsoft Teams Chat files folder|
+|Teams, privately scheduled meeting note|||Meetings folder|
+|Outlook, component in email message|||Attachments folder|
+|Word for the web, component in document|||Word Loop files folder|
+|OneNote for Windows or for the web, component on page|||OneNote Loop files folder|
 
 
 ## Summary table of admin management, governance, lifecycle, and compliance capabilities based on where Loop content is stored
