@@ -24,7 +24,7 @@ description: "Learn about how Microsoft Copilot for Microsoft 365 works."
 
 # Microsoft Copilot for Microsoft 365 overview
 
-[Microsoft Copilot for Microsoft 365](/office365/servicedescriptions/office-365-platform-service-description/microsoft-365-copilot) is an AI-powered productivity tool that coordinates large language models (LLMs), content in Microsoft Graph, and the Microsoft 365 apps that you use every day, such as Word, Excel, PowerPoint, Outlook, Teams, and others. This integration provides real-time intelligent assistance, enabling users to enhance their creativity, productivity, and skills.
+[Microsoft Copilot for Microsoft 365](/office365/servicedescriptions/office-365-platform-service-description/microsoft-365-copilot) is an AI-powered productivity tool that coordinates large language models (LLMs), content in Microsoft Graph, and the Microsoft 365 productivity apps that you use every day, such as Word, Excel, PowerPoint, Outlook, Teams, and others. This integration provides real-time intelligent assistance, enabling users to enhance their creativity, productivity, and skills.
 
 Copilot for Microsoft 365 uses a combination of LLMs, a type of artificial intelligence (AI) algorithm that uses deep learning techniques and vast data sets to understand, summarize, predict, and generate content. These LLMs include pre-trained models, such as Generative Pre-Trained Transformers (GPT) like GPT-4, designed to excel in these tasks.
 
@@ -36,9 +36,9 @@ Copilot for Microsoft 365 uses a combination of LLMs, a type of artificial intel
 
 - Content in Microsoft Graph, such as emails, chats, and documents that you have permission to access.
 
-- The Microsoft 365 apps that you use every day, such as Word and PowerPoint.
+- The Microsoft 365 productivity apps that you use every day, such as Word and PowerPoint.
 
-Microsoft 365 apps (such as Word, Excel, PowerPoint, Outlook, Teams, loop, and more) operate with Copilot to support users in the context of their work. Some of these features are detailed in the following table:
+Microsoft 365 productivity apps (such as Word, Excel, PowerPoint, Outlook, Teams, loop, and more) operate with Copilot to support users in the context of their work. Some of these features are detailed in the following table:
 
 | Microsoft 365 App | Feature | Description |
 |-----------------------|--------------------------------|---------------------------------------------------------|

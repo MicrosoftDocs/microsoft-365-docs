@@ -6,7 +6,7 @@ author: daisyfell
 manager: elizapo
 ms.reviewer: daisyfeller
 audience: admin
-ms.topic: article
+ms.topic: overview
 search.appverid:
     - MET150  
 ms.custom: 
@@ -106,7 +106,7 @@ For more information about admin controls, see [assign user permissions](./plan-
 
 ## Topic curation and suggestions
 
-AI will continually work to provide you suggestions to improve your topics as changes occur in your environment.
+AI will continually work to provide you with suggestions to improve your topics as changes occur in your environment.
 
 Users with edit or create topics permissions can make updates to topic pages directly if they want to make corrections or add additional information. They can also add new topics that AI wasn't able to identify. If there's enough information on these manually added topics, and AI is able to identify this type of topic, additional suggestions from AI might enhance these manually added topics.
 
@@ -114,7 +114,7 @@ Users that you allow access to see topics in their daily work might be asked if 
 
 For more information, see [Topic discovery and curation](./topic-experiences-discovery-curation.md).
 
-## Provide us feedback
+## Provide us with feedback
 
 At Microsoft we take feedback from our customers very seriously. The feedback you provide for Topics will be used to troubleshoot, fix bugs, enhance existing features, and develop new ones.
 

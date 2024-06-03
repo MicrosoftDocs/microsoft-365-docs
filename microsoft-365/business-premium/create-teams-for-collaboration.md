@@ -7,15 +7,15 @@ author: chrisda
 manager: deniseb
 ms.audience: Admin
 ms.topic: how-to
-ms.service: microsoft-365-business
+ms.service: microsoft-365-business-security
 ms.localizationpriority: medium
-ms.date: 10/10/2023
+ms.date: 05/31/2024
 ms.collection:
 - Adm_O365
 - M365-subscription-management
 - M365-identity-device-management
 - M365-Campaigns
-- tier1
+- tier2
 ms.custom:
 - Adm_O365
 - MiniMaven
