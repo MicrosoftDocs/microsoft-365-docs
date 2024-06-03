@@ -151,11 +151,7 @@ Use PowerShell to remove schedule entities from teams.
 
 To learn more, see [Remove-CsTeamsShiftsScheduleRecord](/powershell/module/teams/remove-csteamsshiftsschedulerecord).
 
-<!--## Roles and permissions in Teams and their impact on Shifts-->
-
 ## Understand how your UKG Pro Workforce Management organizational structure influences Teams and Shifts setup
-
-<!--The way you organize your teams in Teams depends on your UKG Pro WFM structure.-->
 
 As mentioned earlier, Shifts supports grouping users by location in UKG Pro WFM. In UKG Pro WFM, the nodes in each location represent the hierarchy in your organizational chart. A location path reaches its endpoint when a job type is configured.
 
