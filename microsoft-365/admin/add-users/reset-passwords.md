@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 06/30/2023
+ms.date: 05/30/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -17,6 +17,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+- must-keep
 ms.custom:
   - VSBFY23
   - TopSMBIssues
@@ -64,7 +65,7 @@ When a user requests a new password, you'll receive a password reset request in 
 
 2. On the **Active users** page, select the user and then select **Reset password**.
 
-3. Follow the instructions on the **Reset password** page to auto-generate a new password for the user or create one for them, and then select **Reset**.  
+3. Follow the instructions on the **Reset password** page to auto-generate a new password for the user or create one for them, and then select **Reset password**.  
 
 4. Enter your email address to get the new password, and then send to the user's alternate email address or give it to them in person.
 
@@ -80,7 +81,7 @@ We strongly recommend that you set up self-service password reset. This way you 
 
 2. On the **Active users** page, select the user and then select **Reset password**.
 
-3. Follow the instructions on the **Reset password** page to auto-generate a new password for the user or create one for them, and then select **Reset**.  
+3. Follow the instructions on the **Reset password** page to auto-generate a new password for the user or create one for them, and then select **Reset password**.  
 
 4. Enter an email address the user can get to, so they receive the new password, and follow up with them to make sure they got it.
 
@@ -88,9 +89,9 @@ We strongly recommend that you set up self-service password reset. This way you 
 
 Use these steps if you forgot your password but you're able to sign in to Microsoft 365 because, for example, your password is saved in your browser:
 
-1. Select your name (icon) in upper right corner > **My Account** > **Personal Info**.
+1. Select your name (icon) in upper right corner > **View Account**.
 
-2. Under **Contact details**, double-check that your **Alternate email** is accurate and that you've provided a mobile phone number. If not, change them now.
+2. In your contact card, double-check that your **Alternate email** is accurate and that you've provided a mobile phone number. If not, change them now. Some details might be provided by your IT or human resources department. If you want to update those details, contact them or your admin.
 
 3. Sign out: select your name in the upper right corner \> **Sign out**.
 
@@ -116,7 +117,7 @@ These steps work for a business with tens of users. If you have hundreds or thou
 
 3. Select **Reset password**.
 
-4. Follow the instructions on the **Reset password** page, and select **Reset**.  If you opted for auto-generating the passwords, the new temporary passwords will be displayed.
+4. Follow the instructions on the **Reset password** page, and select **Reset password**.  If you opted for auto-generating the passwords, the new temporary passwords will be displayed.
 
 5. Enter an email address where you can receive the temporary passwords. You'll need to notify your users what their temporary passwords are.
   
@@ -161,4 +162,3 @@ Check out this great blog post by Vasil Michev, Microsoft MVP: [Force password c
 [Set an individual user's password to never expire](set-password-to-never-expire.md) (article)\
 [Set the password expiration policy for your organization](../manage/set-password-expiration-policy.md) (article)\
 [Microsoft 365 for business training videos](../../business-video/index.yml) (link page)
-

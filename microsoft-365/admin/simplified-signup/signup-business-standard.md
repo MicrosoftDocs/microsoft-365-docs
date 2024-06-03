@@ -89,7 +89,7 @@ Sign in to Microsoft 365 with this email address. For example, alliebellew@hotma
 
 2. Select how many Microsoft 365 Business Standard licenses you want for your organization and select **Add payment method** and continue with checkout to **Place order**.
 
-3. On the **Confirmation details** page, we'll give you some more info about your subscription. You can now go to the Microsoft 365 admin center to add users, install Microsoft 365 apps, invite your team to use Microsoft 365 and more. We'll also send you an email with set-up steps for Microsoft 365 Business Standard.
+3. On the **Confirmation details** page, we'll give you some more info about your subscription. You can now go to the Microsoft 365 admin center to add users, install Microsoft 365 productivity apps, invite your team to use Microsoft 365 and more. We'll also send you an email with set-up steps for Microsoft 365 Business Standard.
 
 Remember this option doesn't provide branded email, admin control for use of the services by other users, or industry specific compliance support. Subscribers don't have any access or control over other users' (employees) usage or documents under this option users may choose not to transfer data created in storage such as OneDrive/Teams to your upgraded, enterprise-level domain account should you not choose option 2 immediately.
 
@@ -110,7 +110,7 @@ If you would like to add a domain and create a business email account, you can f
 
 **Applies to: Existing subscribers of Microsoft 365 Business Standard who previously purchased using Simplified Sign-up mode**.
 
-If you previously used Simplified Sign Up mode to purchase a business subscription before October 2021 without adding a business domain you may need to accept new terms of service for uninterrupted service and usage of the Microsoft 365 apps. You may be sent emails or you'll see in-app prompts when you sign in to Microsoft 365 admin center.
+If you previously used Simplified Sign Up mode to purchase a business subscription before October 2021 without adding a business domain you may need to accept new terms of service for uninterrupted service and usage of the apps in Microsoft 365. You may be sent emails or you'll see in-app prompts when you sign in to Microsoft 365 admin center.
 
 The Simplified Sign Up terms of use have been recently updated, and notably they clarify licensing and data ownership for multi-user business subscriptions. For continued service of your business subscription, you may either visit the [Microsoft 365 admin Center](https://go.microsoft.com/fwlink/?linkid=2024339) and stay using **Simplified Sign Up** (and agree to use the Microsoft Services Agreement Supplemental), or visit the [Microsoft 365 admin Center](https://go.microsoft.com/fwlink/?linkid=2024339) and add a **business domain** (and use the Microsoft Online Services Agreement). To help you choose which of these two modes best suits your needs, consult the table at the top of this article.
 
