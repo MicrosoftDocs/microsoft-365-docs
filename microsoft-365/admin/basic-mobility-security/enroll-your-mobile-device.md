@@ -80,4 +80,4 @@ To connect and configure your Windows phone or PC with the Company portal to Mic
 
 ## Next steps
 
-After your device is enrolled in Basic Mobility and Security, you can start using Microsoft 365 apps on your device to work with email, calendar, contacts, and documents.
+After your device is enrolled in Basic Mobility and Security, you can start using Microsoft 365 productivity apps on your device to work with email, calendar, contacts, and documents.
