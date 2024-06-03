@@ -3,7 +3,7 @@ title: Create a more secure guest sharing environment
 ms.author: jtremper
 author: jacktremper
 manager: pamgreen
-ms.date: 01/02/2024
+ms.date: 05/30/2024
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions

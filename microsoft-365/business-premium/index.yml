@@ -8,7 +8,7 @@ brand: m365
 metadata:
   title: Microsoft 365 Business Premium resources # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Documentation for setting up and working with Microsoft 365 Business Premium. # Required; article description that is displayed in search results. < 160 chars.
-  ms.service: microsoft-365-business #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.service: microsoft-365-business-security #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: hub-page # Required
   ms.collection:
   - tier2
@@ -18,7 +18,7 @@ metadata:
   author: chrisda #Required; your GitHub user alias, with correct capitalization.
   ms.author: chrisda #Required; microsoft alias of author; optional team alias.
   ms.reviewer: nehabha
-  ms.date: 01/19/2024
+  ms.date: 05/31/2024
 
 # productDirectory section (optional)
 productDirectory:
@@ -38,7 +38,7 @@ productDirectory:
     # Card
     - title: Get the free partner kit
       imageSrc: /office/media/icons/education-tutorial-blue.svg
-      summary: Practical guidance and go to market resources for partners for securing hybrid work.
+      summary: Guidance and go to market resources for partners for securing hybrid work.
       url: https://aka.ms/SMBSecurityKit
     # Card
     - title: Join the partner webinar series
@@ -79,7 +79,7 @@ conceptualContent:
           text: 2. Configure your security protection
         - url: ../business-premium/m365bp-set-up-unmanaged-devices.md
           itemType: overview
-          text: 3. Protect unmanaged (BYOD) devices
+          text: 3. Protect unmanaged (personally owned) devices
         - url: ../business-premium/m365bp-use-email-securely.md
           itemType: overview
           text: 4. Use email more securely
@@ -134,10 +134,10 @@ conceptualContent:
           text: Get started with Microsoft Defender for Business
         - url: ../business-premium/m365bp-set-up-unmanaged-devices.md
           itemType: overview
-          text: Set up unmanaged (BYOD) devices
+          text: Set up unmanaged (personally owned) devices
         - url: ../business-premium/m365bp-mfa-for-users.md
           itemType: how-to-guide
-          text: Set up multi-factor authentication on devices
+          text: Set up multifactor authentication on devices
         - url: ../business-premium/m365bp-users-install-m365-apps.md
           itemType: how-to-guide
           text: Install Microsoft 365 apps on all devices
