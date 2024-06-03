@@ -3,7 +3,7 @@ title: Cross-tenant OneDrive migration overview
 ms.author: jtremper
 author: MicrosoftHeidi
 manager: pamgreen
-ms.date: 10/13/2023
+ms.date: 05/31/2024
 recommendations: true
 audience: ITPro
 ms.topic: article
@@ -45,7 +45,6 @@ Up to 4,000 OneDrive accounts can be scheduled for migration in advance at a giv
 >[!Warning]
 >You must have purchased, or verified that you can purchase, cross tenant user data migration licenses prior to the next steps. Migrations fail if this step has not been completed. Microsoft does not offer exceptions for this licensing requirement.
 
-
 ## Prerequisites and settings
 
 - **Microsoft SharePoint Online Powershell**. Confirm you have the most recent version installed. [Download SharePoint Online Management Shell from the official Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=35588).
@@ -71,7 +70,7 @@ Up to 4,000 OneDrive accounts can be scheduled for migration in advance at a giv
 
 ## Path size limits
 
-Microsoft limits the number of characters in a path to not exceed 400 characters. This is the full path limit, not just the file name. In planning your migrations, review the length of OneDrive URL names in your target tenant. Failure often occurs when files or folder paths from the source, combined with the OneDrive URL on the target exceed the 400-character path limit. 
+Microsoft limits the number of characters in a path to not exceed 400 characters. This is the full path limit, not just the file name. In planning your migrations, review the length of OneDrive URL names in your target tenant. Failure often occurs when files or folder paths from the source, combined with the OneDrive URL on the target exceed the 400-character path limit.
 
 A migration will detect if you have exceeded the character limit. Work with the site owner to update the file/folder directory structure to reduce file path lengths.
 
@@ -82,13 +81,12 @@ Any legal URL will be accepted when creating your Identity Map from Source to Ta
 
 ## OneDrive account size limits
 
-Each OneDrive account can have a maximum of 2 TB of content or 1 million items. 
+Each OneDrive account can have a maximum of 5 TB of content or 1 million items.
 
 > [!IMPORTANT]
 > The 1 million item limit can be any "item", including files (including versions), folders, and list line entries if it is a list or library.
 >
->If you attempt to migrate any OneDrive site that exceeds the 2 TB quota, the transfer will fail.
-
+>If you attempt to migrate any OneDrive site that exceeds the 5 TB quota, the transfer will fail.
 
 ## Permissions
 
@@ -101,7 +99,7 @@ To migrate these OneDrive accounts, remove the hold policy, migrate, then reappl
 
 ## Shared files
 
-After a OneDrive account is migrated, anyone clicking on a shared link to the old location will be redirected to the new one, provided they still have access to the destination. 
+After a OneDrive account is migrated, anyone clicking on a shared link to the old location will be redirected to the new one, provided they still have access to the destination.
 
 Those redirects remain until the source tenant is deprovisioned. The admin can also selectively remove redirects site-by-site.
 

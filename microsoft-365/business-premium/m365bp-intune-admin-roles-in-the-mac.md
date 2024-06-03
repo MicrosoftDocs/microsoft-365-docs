@@ -7,11 +7,11 @@ author: chrisda
 manager: deniseb
 audience: Admin
 ms.topic: overview
-ms.service: microsoft-365-business
-ms.date: 01/12/2024
+ms.service: microsoft-365-business-security
+ms.date: 05/31/2024
 ms.localizationpriority: medium
 ms.collection:
-- tier1
+- tier2
 description: "The Microsoft 365 admin center lets you manage some Microsoft Intune roles, which map to business functions and give permissions to do specific tasks."
 ---
 
