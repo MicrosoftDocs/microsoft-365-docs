@@ -94,7 +94,7 @@ With an eligible license, you can set up auto-classifiers for content on a Share
 
 Copilot features for Excel, Word, PowerPoint, and OneNote will work seamlessly for users who have multiple Microsoft accounts (work/school account or personal account) signed into a single Windows session when one of those accounts has a Copilot Pro or Copilot for Microsoft 365 license assigned. For example, when a user on their work machine with a Copilot for Microsoft 365 license opens a document from their personal OneDrive, they'll be able to use Copilot in the document. Or when a Copilot Pro user signs in on their work device with their Microsoft account (MSA), they'll be able to use Copilot with Office files stored on their OneDrive or in SharePoint document libraries.
 
-As an admin, you can turn off a user's ability to add a Microsoft account to their work device, which prevents these users with Copilot Pro from being able to see Copilot features with their Microsoft 365 apps on their work device. For steps on how to do this, see [Set up tenant restrictions](/entra/external-id/tenant-restrictions-v2). You'll need to set up tenant restriction policies for each of the Microsoft 365 apps.
+As an admin, you can turn off a user's ability to add a Microsoft account to their work device, which prevents these users with Copilot Pro from being able to see Copilot features with their Microsoft 365 productivity apps on their work device. For steps on how to do this, see [Set up tenant restrictions](/entra/external-id/tenant-restrictions-v2). You'll need to set up tenant restriction policies for each of the apps in Microsoft 365.
 
 If you'd like to prevent Entra IDs from your tenant being used on non-managed machines which may have access to Copilot, you can use Conditional Access to prevent access to tenant resources on non-compliant devices.
 
@@ -149,7 +149,7 @@ You can manage these settings by using the Copilot page in the Microsoft 365 adm
 
 ## Plan for deployment and measure adoption, impact, and sentiment
 
-The myriad uses of Copilot for Microsoft 365 across the various Microsoft 365 apps provides opportunities for users to find value in different ways.
+The myriad uses of Copilot for Microsoft 365 across the various Microsoft 365 productivity apps provides opportunities for users to find value in different ways.
 
 ### Accelerating adoption to get to value
 
