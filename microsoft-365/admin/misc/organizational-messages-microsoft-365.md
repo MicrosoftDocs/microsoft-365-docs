@@ -80,7 +80,7 @@ Before working with organizational messages, make sure your team satisfies the f
   - For example, any message configured to be delivered to a Windows channel, like Windows Spotlight, requires that recipients use **Windows 11 Enterprise**.
 
 > [!IMPORTANT]
-> Organizational messages preview features will not be restricted based on the licenses held by participating tenants, authors, approvers, or message recipients. However, some organizational messages features might be restricted to particular Microsoft licenses in the future.
+> Organizational messages preview experiences will not be restricted based on the licenses held by participating tenants, authors, approvers, or message recipients. However, some organizational messages experiences may be restricted to particular Microsoft licenses in the future.
 
 ## Get started
 

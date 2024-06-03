@@ -52,7 +52,7 @@ When signing up for Microsoft 365 Business Standard, Microsoft 365 Business Basi
 
 The table below outlines each choice.
 
-|&nbsp;|**Option 1** – Sign in with Outlook, Hotmail, Yahoo, Gmail or other email account |**Option 2** – Add a business domain and create a new business email account |
+|&nbsp;| Option 1 – Sign in with Outlook, Hotmail, Yahoo, Gmail or other email account | Option 2 – Add a business domain and create a new business email account |
 |---|---|---|
 |Available apps and services|Use Word for the web, Excel for the web, PowerPoint for the web, Teams for the web and Access for the web. OneDrive and SharePoint desktop app are included. This set of apps is best for very small businesses who don't need branded email immediately, or who already use branded email from a different provider and do not intend to switch to use Microsoft Exchange. You'll use Outlook with your existing email account (be it outlook.com, Hotmail, Yahoo, Gmail or other).|Use Word for the web, Excel for the web, PowerPoint for the web, Teams for the web and Access for the web. OneDrive and SharePoint desktop app are included. Microsoft 365 Business Basic with Option 2 also lets you access a wide range of additional services: New, branded business email accounts with Outlook, shared calendars within your business, Bookings appointment scheduling and Meeting recordings. Shared document storage and SharePoint sites, Microsoft Planner and Microsoft Lists, Microsoft 365 Business Basic and Microsoft 365 Apps for business offer additional services with Option 2. Easier document sharing within your business, support for the compliance needs for your industry, Access and control over your employees' use of services and the widest range of integrations of non-Microsoft apps (e.g. Salesforce, Adobe) that work within Teams and Microsoft 365.|
 |Required knowledge|Let's you get started without technical know-how.|Requires you to buy a domain, or to own a domain. You may need technical knowledge to prove ownership of the domain.|
@@ -86,7 +86,7 @@ When you're ready to run the setup wizard and move your domain to Microsoft 365,
 
 ## What happens when you run the Microsoft 365 setup wizard
 
-The setup wizard walks you through installing the Microsoft 365 apps on your computer, adding and verifying your domain, adding users and assigning licenses to them, and connecting your domain.
+The setup wizard walks you through installing the apps in Microsoft 365 on your computer, adding and verifying your domain, adding users and assigning licenses to them, and connecting your domain.
 
 > [!NOTE]
 > If you need to [Assign admin roles in Microsoft 365 for business](../add-users/assign-admin-roles.md) to the users you add in the wizard, you can do that later on the **Users** page. 
@@ -111,9 +111,9 @@ There are a couple of scenarios that include either migrating data or users from
 
 - **Do you want to move to Microsoft 365 gradually?** If you want to move to Microsoft 365 in stages, then skip running the Microsoft 365 setup wizard and consider adopting Microsoft 365 features in the following order:
 
-    1. [Add your employees to Microsoft 365](../add-users/add-users.md) so they can download and install the Microsoft 365 apps.
+    1. [Add your employees to Microsoft 365](../add-users/add-users.md) so they can download and install the apps.
 
-    2. [Download and install the Microsoft 365 apps](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) to use Word, Excel, and PowerPoint on your computer and devices.
+    2. [Download and install the Microsoft 365 productivity apps](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) to use Word, Excel, and PowerPoint on your computer and devices.
 
     3. [Set up Microsoft Teams](#plan-for-teams) to use for your meetings.
 
@@ -123,7 +123,7 @@ There are a couple of scenarios that include either migrating data or users from
 
 ## Check that your devices meet system requirements
 
-Each person in your organization can install the Microsoft 365 apps (Word, Excel, PowerPoint, and so on) on up to five PCs and Macs. See the operating system and computer requirements for installing [Microsoft 365](https://go.microsoft.com/fwlink/?LinkId=534827) for business.
+Each person in your organization can install the Microsoft 365 productivity apps (Word, Excel, PowerPoint, and so on) on up to five PCs and Macs. See the operating system and computer requirements for installing [Microsoft 365](https://go.microsoft.com/fwlink/?LinkId=534827) for business.
   
 Mobile apps can be installed on iOS, Android, and Windows devices. You can find information on mobile device and browser support in [System requirements for Microsoft 365](https://go.microsoft.com/fwlink/?LinkId=534827).
   
@@ -145,7 +145,7 @@ If you're going to use Microsoft 365 for your email:
   
 If you're going to use Microsoft 365 for your email account, you can bring your existing email, contacts, and calendar with you. The **Setup** page helps you move your existing email and contacts for most scenarios. We also have step-by-step guides to move one or many mailboxes.
   
-|**How many mailboxes?**|**Recommendation**|
+| How many mailboxes? | Recommendation |
 |:-----|:-----|
 |Just a few  <br/> |If you don't want to use the **Setup** page to migrate the mailboxes, you can let mailbox owners migrate their own email and contacts. See [Migrate email and contacts to Microsoft 365 for business](migrate-email-and-contacts-admin.md).  <br/> |
 |Several  <br/> |If you're migrating from Gmail, see [Migrate G Suite mailboxes to Microsoft 365](/Exchange/mailbox-migration/migrating-imap-mailboxes/migrate-g-suite-mailboxes).  <br/> If you're migrating from another email provider, including Exchange, see [Ways to migrate multiple email accounts to Microsoft 365](/Exchange/mailbox-migration/mailbox-migration).  <br/> |
