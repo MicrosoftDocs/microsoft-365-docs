@@ -33,7 +33,7 @@ Where Loop content is stored impacts the admin management, governance, data life
 
 Where the Loop content was originally created determines its storage location:
 
-|Loop content originally Created|️️️Loop content stored in SharePoint Embedded|Loop content stored in SharePoint Site|Loop content stored in User's OneDrive|
+|Loop content originally created in|️️️Loop content stored in SharePoint Embedded|Loop content stored in SharePoint Site|Loop content stored in User's OneDrive|
 |-----|-----|-----|-----|
 |Loop app|✔️in Loop workspace|||
 |Teams channel meeting||✔️in Channel folder||
