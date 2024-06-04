@@ -33,17 +33,16 @@ Where Loop content is stored impacts the admin management, governance, data life
 
 Where the Loop content was originally created determines its storage location:
 
-|End-user Creates while using|️️️||➡️️Loop component or page saved in|
+|Loop content originally Created|️️️Loop content stored in SharePoint Embedded|Loop content stored in SharePoint Site|Loop content stored in User's OneDrive|
 |-----|-----|-----|-----|
-||➡️️SharePoint Embedded|➡️️SharePoint Site|➡️️User's OneDrive|
-|Loop app|Loop workspace|||
-|Teams, channel meeting note||Channel folder||
-|Teams, component in channel post||Channel folder||
-|Teams, component in private chat|||Microsoft Teams Chat files folder|
-|Teams, privately scheduled meeting note|||Meetings folder|
-|Outlook, component in email message|||Attachments folder|
-|Word for the web, component in document|||Word Loop files folder|
-|OneNote for Windows or for the web, component on page|||OneNote Loop files folder|
+|Loop app|✔️in Loop workspace|||
+|Teams, channel meeting note||✔️in Channel folder||
+|Teams, component in channel post||✔️in Channel folder||
+|Teams, component in private chat|||✔️in Microsoft Teams Chat files folder|
+|Teams, privately scheduled meeting note|||✔️in Meetings folder|
+|Outlook, component in email message|||✔️in Attachments folder|
+|Word for the web, component in document|||✔️in Word Loop files folder|
+|OneNote for Windows or for the web, component on page|||✔️in OneNote Loop files folder|
 
 
 ## Summary table of admin management, governance, lifecycle, and compliance capabilities based on where Loop content is stored
