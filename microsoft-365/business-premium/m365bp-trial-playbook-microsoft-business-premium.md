@@ -9,9 +9,9 @@ audience: Admin
 ms.topic: conceptual
 ms.collection:
 - m365-security
-- tier1
-ms.service: microsoft-365-business
-ms.date: 07/19/2023
+- tier2
+ms.service: microsoft-365-business-security
+ms.date: 05/31/2024
 ms.reviewer: nehabha
 ms.localizationpriority: medium
 search.appverid:
