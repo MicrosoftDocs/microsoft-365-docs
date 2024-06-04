@@ -43,6 +43,7 @@ Where the Loop content was originally created determines its storage location:
 |Outlook email message|||✔️in Attachments folder|
 |Word for the web|||✔️in Word Loop files folder|
 |OneNote for Windows or for the web|||✔️in OneNote Loop files folder|
+|Whiteboard|||✔️in Whiteboard\Components folder|
 
 
 ## Summary table of admin management, governance, lifecycle, and compliance capabilities based on where Loop content is stored
