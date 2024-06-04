@@ -53,17 +53,17 @@ Desktop client apps aren't included in F3 and F1 plans. Your frontline workers c
 |---------|---------|---------|---------|---------|---------|
 |Desktop client apps (Word, Excel, OneNote, PowerPoint, Access, Publisher)|Yes|No|No|No|No|
 |Microsoft 365 for the web |Yes|Yes|Yes|Read-only|Read-only|
-|Microsoft 365 for mobile |Yes|Yes&sup1;|Yes&sup1;|Read-only|Read-only|
+|Microsoft 365 for mobile |Yes|Yes<sup>1</sup>|Yes<sup>1</sup>|Read-only|Read-only|
 |Visio for the web|Yes|Yes|Yes|Read-only|Read-only|
 
 <!--|Service or feature|Microsoft 365 E3/E5  |Microsoft 365 F3|Microsoft 365 F1|
 |---------|---------|---------|---------|
 |Desktop client apps (Word, Excel, OneNote, PowerPoint, Access, Publisher)|Yes|No|No|
 |Microsoft 365 for the web |Yes|Yes|Read-only|
-|Microsoft 365 for mobile |Yes|Yes&sup1;|Read-only|
+|Microsoft 365 for mobile |Yes|Yes<sup>1</sup>|Read-only|
 |Visio for the web|Yes|Yes|Read-only|-->
 
-&sup1;Limited to devices with integrated screens less than 10.9 inches.
+<sup>1</sup>Limited to devices with integrated screens less than 10.9 inches.
 
 #### Microsoft 365 for the web
 
@@ -97,19 +97,19 @@ F1 users don't have mailbox rights. Although a mailbox is provisioned for users 
 
 |Service or feature|Microsoft 365 E3/E5 (no Teams)|Microsoft 365 F3 (with Teams)|Microsoft 365 F3 (no Teams)|Microsoft 365 F1 (with Teams)|Microsoft 365 F1 (no Teams)|
 |---------|---------|---------|---------|---------|---------|
-|Exchange Online mailbox|Yes (100 GB mailbox)|Yes (2 GB mailbox)|Yes (2 GB mailbox)|No&sup1;|No&sup1;|
+|Exchange Online mailbox|Yes (100 GB mailbox)|Yes (2 GB mailbox)|Yes (2 GB mailbox)|No<sup>1</sup>|No<sup>1</sup>|
 |Outlook desktop app|Yes|No|No|No|No|
 |Archive mailbox|Yes|No|No|No|No|
 |Delegate access|Yes|No|No|No|No|
 
 <!--|Service or feature|Microsoft 365 E3/E5|Microsoft 365 F3|Microsoft 365 F1|
 |---------|---------|---------|---------|
-|Exchange Online mailbox|Yes (100 GB mailbox)|Yes (2 GB mailbox)|No&sup1;|
+|Exchange Online mailbox|Yes (100 GB mailbox)|Yes (2 GB mailbox)|No<sup>1</sup>|
 |Outlook desktop app|Yes|No|No|
 |Archive mailbox|Yes|No|No|
 |Delegate access|Yes|No|No|-->
 
-&sup1;F1 includes the Exchange Kiosk plan to enable Teams calendar only and doesn't include mailbox rights.
+<sup>1</sup>F1 includes the Exchange Kiosk plan to enable Teams calendar only and doesn't include mailbox rights.
 
 To learn more, see [Exchange Online service description](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description).
 
@@ -146,26 +146,26 @@ F3 and F1 users have 2 GB of OneDrive storage to store and share files. To learn
 
 |Service or feature|Microsoft 365 E3/E5 (no Teams)|Microsoft 365 F3 (with Teams)|Microsoft 365 F3 (no Teams)|Microsoft 365 F1 (with Teams)|Microsoft 365 F1 (no Teams)|
 |---------|---------|---------|---------|---------|---------|
-|OneDrive|1+ TB storage&sup1;|2 GB storage|2 GB storage|2 GB storage|2 GB storage|
+|OneDrive|1+ TB storage<sup>1</sup>|2 GB storage|2 GB storage|2 GB storage|2 GB storage|
 
 <!--|Service or feature|Microsoft 365 E3/E5|Microsoft 365 F3|Microsoft 365 F1|
 |---------|---------|---------|---------|
-|OneDrive|1+ TB storage&sup1;|2 GB storage|2 GB storage|-->
+|OneDrive|1+ TB storage<sup>1</sup>|2 GB storage|2 GB storage|-->
 
-&sup1;Up to 5 TB of initial OneDrive storage per user based on the [default quota](/sharepoint/set-default-storage-space) for the tenant. More storage can be requested. Subscriptions for less than five users receive 1 TB of OneDrive storage that can't be expanded.
+<sup>1</sup>Up to 5 TB of initial OneDrive storage per user based on the [default quota](/sharepoint/set-default-storage-space) for the tenant. More storage can be requested. Subscriptions for less than five users receive 1 TB of OneDrive storage that can't be expanded.
 
 #### Content services
 
 |Service or feature|Microsoft 365 E3/E5 (no Teams)|Microsoft 365 F3 (with Teams)|Microsoft 365 F3 (no Teams)|Microsoft 365 F1 (with Teams)|Microsoft 365 F1 (no Teams)|
 |---------|---------|---------|---------|---------|---------|
-|Microsoft Forms|Yes&sup1;|Yes&sup1;|Yes&sup1;|No|No|
+|Microsoft Forms|Yes<sup>1</sup>|Yes<sup>1</sup>|Yes<sup>1</sup>|No|No|
 
 <!--|Service or feature|Microsoft 365 E3/E5|Microsoft 365 F3|Microsoft 365 F1|
 |---------|---------|---------|---------|
-|Microsoft Forms|Yes&sup1;|Yes&sup1;|No|
+|Microsoft Forms|Yes<sup>1</sup>|Yes<sup>1</sup>|No|
 |Delve|Yes|No|No|-->
 
-&sup1;Licensed users can create, share, and manage forms. A license isn't needed to complete or respond to a form.
+<sup>1</sup>Licensed users can create, share, and manage forms. A license isn't needed to complete or respond to a form.
 
 #### Project and task management
 
@@ -185,10 +185,10 @@ F3 and F1 users have 2 GB of OneDrive storage to store and share files. To learn
 |---------|---------|---------|---------|---------|---------|
 |Viva Connections – dashboard, feed, resources, and Teams app|Available by adding Teams Enterprise or Teams EEA|Yes|No|Yes|No|
 |Viva Engage – communities, conversations, and storyline|Yes|Yes|Yes|Yes|Yes|
-|Viva Insights app in Teams|Available by adding Teams Enterprise or Teams EEA|Yes&sup1;|No|Yes&sup1;|No|
+|Viva Insights app in Teams|Available by adding Teams Enterprise or Teams EEA|Yes<sup>1</sup>|No|Yes<sup>1</sup>|No|
 |Viva Learning in Teams|Available by adding Teams Enterprise or Teams EEA|Yes|No|Yes|No|
 
-&sup1;Limited to Reflect, Headspace, Send Praise, Virtual Commute, Microsoft To Do (F3 only).
+<sup>1</sup>Limited to Reflect, Headspace, Send Praise, Virtual Commute, Microsoft To Do (F3 only).
 
 #### Automation, app building, and chatbots
 
@@ -210,9 +210,9 @@ F3 and F1 users have 2 GB of OneDrive storage to store and share files. To learn
 
 |Service or feature|Microsoft 365 E3/E5 (no Teams)|Microsoft 365 F3 (with Teams)|Microsoft 365 F3 (no Teams)|Microsoft 365 F1 (with Teams)|Microsoft 365 F1 (no Teams)|
 |---------|---------|---------|---------|---------|---------|
-|Windows 11 Enterprise|Yes|Yes&sup1;|Yes&sup1;|No|No|
+|Windows 11 Enterprise|Yes|Yes<sup>1</sup>|Yes<sup>1</sup>|No|No|
 
-&sup1;Virtualized Desktop Infrastructure (VDI) only for licensed users of a shared device with a Qualifying Operating System (except for Azure Virtual Desktop).
+<sup>1</sup>Virtualized Desktop Infrastructure (VDI) only for licensed users of a shared device with a Qualifying Operating System (except for Azure Virtual Desktop).
 
 <!--|Service or feature|Microsoft 365 E3/E5|Microsoft 365 F3|Microsoft 365 F1|
 |---------|---------|---------|---------|
