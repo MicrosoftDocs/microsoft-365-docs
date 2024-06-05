@@ -72,7 +72,7 @@ Run the commands that assign your on-premises web service URLs as Microsoft Entr
     Get-ClientAccessService | fl Name, AutodiscoverServiceInternalUri
     Get-OABVirtualDirectory -ADPropertiesOnly | fl server,*url*
     Get-AutodiscoverVirtualDirectory -ADPropertiesOnly | fl server,*url*
-    Get-OutlookAnywhere -ADPropertiesOnly | fl server,*hostname*
+    Get-ActiveSyncVirtualDirectory -ADPropertiesOnly | fl server,*url*
     ```
 
     Ensure the URLs clients might connect to are listed as HTTPS service principal names in Microsoft Entra ID. In case Exchange on-premises is in hybrid with **multiple tenants**, these HTTPS SPNs should be added in the Microsoft Entra ID of all the tenants in hybrid with Exchange on-premises.
@@ -97,7 +97,7 @@ Run the commands that assign your on-premises web service URLs as Microsoft Entr
 
    Take a note of (and screenshot for later comparison) the output of this command, which should include an `https://*autodiscover.yourdomain.com*` and `https://*mail.yourdomain.com*` URL, but mostly consist of SPNs that begin with `00000002-0000-0ff1-ce00-000000000000/`. If there are `https://` URLs from your on-premises that are missing, those specific records should be added to this list.
 
-5. If you don't see your internal and external `MAPI/HTTP`, `EWS`, `ActiveSync`, `OAB`, and `Autodiscover` records in this list, you must add them. Use the following command to add all URLs that are missing:
+5. If you don't see your internal and external `MAPI/HTTP`, `EWS`, `ActiveSync`, `OAB`, and `AutoDiscover` records in this list, you must add them. Use the following command to add all URLs that are missing:
 
    > [!IMPORTANT]
    >  In our example, the URLs that will be added are `mail.corp.contoso.com` and `owa.contoso.com`. Make sure that they are replaced by the URLs that are configured in your environment.
@@ -110,17 +110,18 @@ Run the commands that assign your on-premises web service URLs as Microsoft Entr
    Update-MgServicePrincipal -ServicePrincipalId $x.Id -ServicePrincipalNames $ServicePrincipalUpdate
    ```
 
-5. Verify your new records were added by running the `Get-MsolServicePrincipal` command from step 2 again, and looking through the output. Compare the list / screenshot from before to the new list of SPNs. You might also take a screenshot of the new list for your records. If you are successful, you'll see the two new URLs in the list. Going by our example, the list of SPNs now includes the specific URLs `https://mail.corp.contoso.com` and `https://owa.contoso.com`.
+6. Verify your new records were added by running the `Get-MsolServicePrincipal` command from step 2 again, and looking through the output. Compare the list / screenshot from before to the new list of SPNs. You might also take a screenshot of the new list for your records. If you are successful, you'll see the two new URLs in the list. Going by our example, the list of SPNs now includes the specific URLs `https://mail.corp.contoso.com` and `https://owa.contoso.com`.
 
 ## Verify Virtual Directories are Properly Configured
 
 Now verify OAuth is properly enabled in Exchange on all of the Virtual Directories Outlook might use by running the following commands:
 
 ```powershell
-Get-MapiVirtualDirectory | FL server,*url*,*auth*
-Get-WebServicesVirtualDirectory | FL server,*url*,*oauth*
-Get-OABVirtualDirectory | FL server,*url*,*oauth*
-Get-AutoDiscoverVirtualDirectory | FL server,*oauth*
+Get-MapiVirtualDirectory | fl server,*url*,*auth*
+Get-WebServicesVirtualDirectory | fl server,*url*,*oauth*
+Get-OABVirtualDirectory | fl server,*url*,*oauth*
+Get-AutoDiscoverVirtualDirectory | fl server,*oauth*
+Get-ActiveSyncVirtualDirectory | fl server,*url*,*auth*
 ```
 
 Check the output to make sure **OAuth** is enabled on each of these VDirs, it looks something like this (and the key thing to look at is 'OAuth'):
