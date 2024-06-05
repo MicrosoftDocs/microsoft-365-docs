@@ -33,13 +33,15 @@ Here are the steps to add a new service.
 > [!NOTE]
 > Changes to business-related settings, like enabling or disabling one-time passwords (OTP) or sending meeting invites, may take up to 10 minutes to apply.
 
-1. In your browser, navigate to [https://outlook.office.com/bookings/services](https://outlook.office.com/bookings/services).
+1. In Microsoft 365, select the App launcher, and then select **Bookings**.
 
-2. Select **Add new service**.
+1. Under **Shared booking pages**, either select the page for which you want to create a new service, or create a new booking page and then select it from the available pages.
+
+1. On the shared booking page, select **Services**, and then select **Add new service**.
 
     The number of services should be limited to 50.
 
-3. On the **Basic details** page, add your selections.
+1. On the **Basic details** page, add your selections.
 
    **Service name**: enter the name of your service. This is the name that will appear in the drop-down menu on the Calendar page. This name will also appear when anyone manually adds an appointment on the Calendar page, and it will appear as a tile on the Self-service page.
 
@@ -97,9 +99,9 @@ Here are the steps to add a new service.
 
    **Language**: Select the default language for the booking from the drop-down list.
 
-4. On the **Availability options** page, you can see the options you've selected from your **Booking page** for your scheduling policy and availability for your staff. For more information, see [Set your scheduling policies](set-scheduling-policies.md).
+1. On the **Availability options** page, you can see the options you've selected from your **Booking page** for your scheduling policy and availability for your staff. For more information, see [Set your scheduling policies](set-scheduling-policies.md).
 
-5. On the revamped **Assign staff** page, you can smoothly assign and remove assigned staff members from a service. There are two more controls added on this page:
+1. On the revamped **Assign staff** page, you can smoothly assign and remove assigned staff members from a service. There are two more controls added on this page:
 
     - **Assign any of your selected staff for an appointment**: When this option is selected, the booking will be scheduled with a single staff member.
     - **Multiple staff**: This feature allows you to create a service with multiple staff members. The booking will be scheduled with all of the assigned staff members of the service. You can refer to this service as N:1 booking service.
@@ -110,11 +112,11 @@ Here are the steps to add a new service.
     - **Allow customers to choose a particular staff for booking**: This setting enables customers to view and choose from among specific staff members for the booking.
     - **Select staff**: You can choose specific staff members for bookings created using this service.
 
-6. **Custom fields** can be useful when collecting information that is needed every time the specific appointment is booked. Examples include insurance provider prior to a clinic visit, loan type for loan consultations, major of study for academic advising, or applicant ID for candidate interviews. These fields will appear on the Booking page when your customers book appointments with you and your staff.
+1. **Custom fields** can be useful when collecting information that is needed every time the specific appointment is booked. Examples include insurance provider prior to a clinic visit, loan type for loan consultations, major of study for academic advising, or applicant ID for candidate interviews. These fields will appear on the Booking page when your customers book appointments with you and your staff.
 
     Customer email, phone number, address, and notes are nonremovable fields, but you can make them optional by deselecting **Required** beside each field.
 
-7. On the **Notifications** page, you can send SMS messages, set up reminders, and send notifications.
+1. On the **Notifications** page, you can send SMS messages, set up reminders, and send notifications.
 
     > [!NOTE]
     > Text message notifications in Bookings requires a Teams Premium license.
@@ -137,8 +139,8 @@ Here are the steps to add a new service.
 
     :::image type="content" source="media/bookings-text-notifications.jpg" alt-text="A text notification from Bookings":::
 
-8. There are two more controls available to ease your Service creation journey:
+1. There are two more controls available to ease your Service creation journey:
     - **Default scheduling policy** is on by default. Turn the toggle off if you want to customize how customers book a particular staff member.
     - **Publishing options** Choose whether to have this service appear as bookable on the Self-Service page, or to make the service bookable only on the Calendar tab within the Bookings Web app.
 
-9. Select **Save changes** to create the new service.
+1. Select **Save changes** to create the new service.
