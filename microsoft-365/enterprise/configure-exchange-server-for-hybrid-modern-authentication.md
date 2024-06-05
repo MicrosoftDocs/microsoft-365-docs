@@ -33,7 +33,7 @@ Hybrid Modern Authentication (HMA) is a method of identity management that offer
 
 ## Supported protocols
 
-We're continuesly working to add Hybrid Modern Auth support to all Exchange Server protocols. The following table outlines the protocols that can be accessed by utilizing HMA.
+The following table outlines the protocols that can be accessed by utilizing HMA tokens:
 
 |Protocol|Hybrid Modern Auth Supported|
 |--------|---------|
