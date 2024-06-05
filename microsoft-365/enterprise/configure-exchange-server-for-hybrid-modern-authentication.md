@@ -31,6 +31,23 @@ ms.custom:
 
 Hybrid Modern Authentication (HMA) is a method of identity management that offers more secure user authentication and authorization, and is available for Exchange server on-premises hybrid deployments.
 
+## Supported protocols
+
+We're continuesly working to add Hybrid Modern Auth support to all Exchange Server protocols. The following table outlines the protocols that can be accessed by utilizing HMA.
+
+|Protocol|Hybrid Modern Auth Supported|
+|--------|---------|
+|MAPI over HTTP (MAPI/HTTP)|Yes|
+|Outlook Anyhwere (RPC/HTTP)|Yes|
+|Exchange Active Sync (EAS)|Yes|
+|Exchange Web Services (EWS)|Yes|
+|Outlook on the Web (OWA)|Yes|
+|Exchange Admin Center (ECP)|Yes|
+|AutoDiscover|Yes|
+|Offline Address Book (OAB)|Yes|
+|IMAP|No|
+|POP|No|
+
 ## Enabling Hybrid Modern Authentication
 
 Turning on HMA requires that your environment meets the following:
