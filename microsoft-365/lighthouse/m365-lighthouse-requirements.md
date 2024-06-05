@@ -7,7 +7,7 @@ manager: scotv
 ms.reviewer: crimora
 ms.date: 1/17/2024
 audience: Admin
-ms.topic: concept-article
+ms.topic: checklist
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
