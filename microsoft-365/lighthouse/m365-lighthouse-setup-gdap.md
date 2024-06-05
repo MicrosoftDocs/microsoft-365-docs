@@ -7,7 +7,7 @@ manager: scotv
 ms.reviewer: taylorau
 ms.date: 1/18/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:

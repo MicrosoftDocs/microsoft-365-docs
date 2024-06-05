@@ -200,7 +200,7 @@ When you open a message center post, we'll tell you the number of users who've b
 The number of monthly users applies to all users who've used that Microsoft 365 app or service on any device.
 
 > [!NOTE]
-> This feature isn't available for all Microsoft 365 apps and services yet. We'll let you know when the feature isn't available.
+> This feature isn't available for all Microsoft 365 productivity apps and services yet. We'll let you know when the feature isn't available.
 
 ## Choose columns
 

@@ -8,8 +8,8 @@ manager: deniseb
 ms.reviewer: nehabha
 ms.audience: Admin
 ms.topic: overview
-ms.service: microsoft-365-business
-ms.date: 11/02/2023
+ms.service: microsoft-365-business-security
+ms.date: 05/31/2024
 ms.localizationpriority: medium
 ms.collection:
 - M365-Campaigns
@@ -17,7 +17,7 @@ ms.collection:
 - m365solution-smb
 - highpri
 - m365-security
-- tier1
+- tier2
 - essentials-overview
 - essentials-get-started
 ms.custom:

@@ -7,7 +7,7 @@ author: camillepack
 manager: scotv
 ms.date: 11/27/2023
 audience: Admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 monikerRange: 'o365-worldwide'
@@ -45,7 +45,7 @@ After people have been active in Copilot at least once in the last 28 days, you'
 
 ## Scoring framework
 
-The AI assistance score for your organization measures at an organizational level whether users are consistently using Copilot capabilities across Microsoft 365 apps within the last 28 days.
+The AI assistance score for your organization measures at an organizational level whether users are consistently using Copilot capabilities across apps in Microsoft 365 within the last 28 days.
 
 Scores aren't provided at the individual user level.
 
@@ -63,7 +63,7 @@ There are two sections of insights: Summarize and Create.
 
 The Summarize section captures all the information and data summarization across meetings and messages, sparing users the labor of sorting it out from notes and complex chat or email threads.
 
-The Create section captures the user actions to get past the roadblock of staring at a blank page by jump-starting their creative process and helping to streamline the tasks of researching, writing, and editing across Microsoft 365 apps with the help of Copilot capabilities.
+The Create section captures the user actions to get past the roadblock of staring at a blank page by jump-starting their creative process and helping to streamline the tasks of researching, writing, and editing across apps in Microsoft 365 with the help of Copilot capabilities.
 
 Each insight captures the number of Copilot-enabled users in your organization performing these actions at least once out of the total number who are enabled to perform in the last 28 days. You can find more details on insights within the following sections.
 

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: efrene
 author: efrene
 manager: scotv
-ms.date: 05/28/2020
+ms.date: 05/31/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -19,6 +19,7 @@ ms.collection:
 - Adm_TOC
 - Adm_O365_Setup
 - TRN_SMB
+- must-keep
 ms.custom:
 - VSBFY23
 - TRN_M365B
@@ -61,14 +62,14 @@ When you purchase Microsoft 365 Business Basic, you have the option of using a d
 
 ::: moniker-end
 
-2. Choose **Go to setup** to start the wizard.
+1. Choose **Go to guided setup** to start the wizard.
 
-3. In the **Add domain** step, enter the domain name you want to use (like contoso.com).
+1. In the **Add domain** step, enter the domain name you want to use (like contoso.com).
 
     > [!IMPORTANT]
     > If you purchased a domain during the sign-up, you will not see **Add a domain** step here. Go to [Add users](#add-users-and-assign-licenses) instead.
 
-4. Follow the steps in the wizard to [Add DNS records to connect your domain](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md) that verifies you own the domain. If you know your domain host, see also [Add a domain to Microsoft 365](/microsoft-365/admin/setup/add-domain).
+1. Follow the steps in the wizard to [Add DNS records to connect your domain](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md) that verifies you own the domain. If you know your domain host, see also [Add a domain to Microsoft 365](/microsoft-365/admin/setup/add-domain).
 
     If your hosting provider is GoDaddy or another host enabled with [domain connect](/office365/admin/get-help-with-domains/domain-connect), the process is easy and you'll be automatically asked to sign in and let Microsoft authenticate on your behalf.
 
@@ -91,7 +92,7 @@ Any users you add in the wizard get automatically assigned a Microsoft 365 Busin
   
 To set up services, you have to update some records at your DNS host or domain registrar.
   
-1. The setup wizard typically detects your registrar and gives you a link to step-by-step instructions for updating your NS records at the registrar website. If it doesn't, [Change nameservers to set up Microsoft 365 with any domain registrar](../get-help-with-domains/change-nameservers-at-any-domain-registrar.md). 
+1. The setup wizard typically detects your registrar and gives you a link to step-by-step instructions for updating your NS records at the registrar website. If it doesn't, [Change nameservers to set up Microsoft 365 with any domain registrar](../get-help-with-domains/change-nameservers-at-any-domain-registrar.md).
 
     - If you have existing DNS records, for example an existing web site, but your DNS host is enabled for [domain connect](/office365/admin/get-help-with-domains/domain-connect), choose **Add records for me**. On the **Choose your online services** page, accept all the defaults, and choose **Next**, and choose **Authorize** on your DNS host's page.
     - If you have existing DNS records with other DNS hosts (not enabled for domain connect), you'll want to manage your own DNS records to make sure the existing services stay connected. See [domain basics](/office365/admin/get-help-with-domains/dns-basics) for more info.
@@ -110,7 +111,7 @@ To set up services, you have to update some records at your DNS host or domain r
 
 1. From the **How you'll sign in** page on the Microsoft 365 Business Standard sign up, choose **Create a new business email account (advanced)**.
 
-2. Follow the steps to buy a new domain and enter the domain name you want to use (like contoso.com). After you've completed buying your domain, you can [add users and licenses](../add-users/add-users.md) and install your Microsoft 365 apps in the admin center.
+2. Follow the steps to buy a new domain and enter the domain name you want to use (like contoso.com). After you've completed buying your domain, you can [add users and licenses](../add-users/add-users.md) and install your Microsoft 365 productivity apps in the admin center.
 
 ## Finish setting up
 
@@ -158,9 +159,9 @@ More at [Import email with Outlook](https://support.microsoft.com/office/6a3771d
 
 You can also use <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a> to import everyone's email. For more information, see [migrate multiple email accounts](/Exchange/mailbox-migration/mailbox-migration).
 
-## Set up Microsoft Teams and OneDrive for business
+## Set up Microsoft Teams and OneDrive
 
-Select the OneDrive cloud icon from your taskbar and follow the steps to move your files to your new OneDrive for Business folder. Select **Next** to set up Microsoft Teams.
+Select the OneDrive cloud icon from your taskbar and follow the steps to move your files to your new OneDrive folder. Select **Next** to set up Microsoft Teams.
 
 1. Open Microsoft Teams, select your profile icon, and then **Add work or school account**. Follow the steps to add your new account to Teams.
 
