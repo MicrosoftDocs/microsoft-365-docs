@@ -63,19 +63,21 @@ Hybrid Modern Authentication works for the following Exchange Server protocols:
 
 To enable Hybrid Modern Authentication (HMA), ensure that your organization meets all necessary prerequisites. Additionally, confirm that your Office client is compatible with Modern Authentication. For more details, refer to the documentation on [How modern authentication works for Office 2013 and Office 2016 client apps](modern-auth-for-office-2013-and-2016.md).
 
-1. Make sure you meet the prerequisites before you begin. Since many prerequisites are common for both Skype for Business and Exchange, review them in [Hybrid Modern Authentication overview and prerequisites for using it with on-premises Skype for Business and Exchange servers](hybrid-modern-auth-overview.md). Do this before you begin any of the steps in this article.
+1. Make sure you meet the prerequisites before you begin. Since many prerequisites are common for both Skype for Business and Exchange, review them in [Hybrid Modern Authentication overview and prerequisites for using it with on-premises Skype for Business and Exchange servers](hybrid-modern-auth-overview.md). Do this before you continue with the next steps.
 
-2. Add on-premises web service URLs as `Service Principal Names (SPNs)` in Microsoft Entra ID. In case Exchange on-premises is in hybrid with **multiple tenants**, these on-premises web service URLs must be added as SPNs in the Microsoft Entra ID of all the tenants, which are in hybrid with Exchange on-premises.
+2. [Add on-premises web service URLs to Microsoft Entra ID](#add-on-premises-web-service-urls-as-spns-in-microsoft-entra-id). The URLs must be added as `Service Principal Names (SPNs)`. In case that your Exchange Server setup is in hybrid with **multiple tenants**, these on-premises web service URLs must be added as SPNs in the Microsoft Entra ID of all the tenants, which are in hybrid with Exchange Server on-premises.
 
-3. Ensure all virtual directories are enabled for HMA.
+3. [Ensure that all virtual directories are enabled for HMA](#verify-virtual-directories-are-properly-configured). If you want to configure [Hybrid Modern Authentication for Outlook on the Web (OWA) and Exchange Control Panel (ECP)](#enable-hybrid-modern-authentication-for-owa-and-ecp), it's important to also verify the respective directories.
 
-4. Check for the EvoSTS Auth Server object.
+4. [Check for the EvoSTS Auth Server object](#confirm-the-evosts-auth-server-object-is-present).
 
 5. Ensure that the [Exchange Server OAuth certificate](/exchange/plan-and-deploy/integration-with-sharepoint-and-skype/maintain-oauth-certificate) is valid.
 
 6. Ensure that all user identities are synchronized with Microsoft Entra ID.
 
-7. Enable HMA in Exchange on-premises.
+7. (Optional) If you want to use the Outlook for iOS and Android client, make sure to [allow the AutoDetect service to connect to your Exchange Server](#using-hybrid-modern-authentication-with-outlook-for-ios-and-android).
+
+8. [Enable HMA in Exchange on-premises](#enable-hma).
 
 <a name='add-on-premises-web-service-urls-as-spns-in-azure-ad'></a>
 
