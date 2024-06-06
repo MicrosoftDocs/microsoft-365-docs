@@ -37,7 +37,7 @@ In the Copilot for Microsoft 365 readiness report, which is in continuous enhanc
 1. Select the **Copilot for Microsoft 365** page.
 1. You can view Readiness on the first tab. Switch to the Usage tab to view adoption and usage metrics.
 
-## Interpret the Readiness section in Copilot for Microsoft 365 report
+## Interpret the Readiness section in the Copilot for Microsoft 365 report
 
 You can use this report to see how ready your organization is to adopt Copilot for Microsoft 365. The Readiness section is set up to show your data over the past 28 days. Currently this portion does not include any other time period options, but we'll be rolling out updates soon to enable 7-day, 30-day, 90-day, and 180-day periods.
 
