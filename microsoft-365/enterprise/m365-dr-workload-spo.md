@@ -192,6 +192,7 @@ You can schedule OneDrive site moves in advance (described later in this article
 - You can schedule up to 4,000 moves at a time.
 - As the moves begin, you can schedule more, with a maximum of 4,000 pending moves in the queue and any given time.
 - The maximum size of a OneDrive that can be moved is 5 terabytes (5 TB).
+- The count of list items for the site is < 1 million.
 
 #### **Moving a OneDrive site**
 
@@ -377,6 +378,7 @@ You can schedule SharePoint site moves in advance (described later in this artic
 - You can schedule up to 4,000 moves at a time.
 - As the moves begin, you can schedule more, with a maximum of 4,000 pending moves in the queue and any given time.
 - The maximum size of a SharePoint site that can be moved is 5 terabytes (5 TB).
+- The count of list items for the site is < 1 million.
 
 To schedule a SharePoint site _Geography_ move for a later time, include one of the following parameters when you start the move:
 
