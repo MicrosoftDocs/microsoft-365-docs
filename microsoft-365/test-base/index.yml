@@ -15,3 +15,9 @@ metadata:
   ms.date: 03/29/2021 #Required; mm/dd/yyyy format.
 
 landingContent:
+  - title: Get references
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Frequently Asked Questions
+            url: faq.md 
