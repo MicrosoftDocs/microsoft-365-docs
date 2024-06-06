@@ -41,9 +41,9 @@ Where the Loop content was originally created determines its storage location:
 |Teams private chat|||✔️in Microsoft Teams Chat files folder|
 |Teams private meeting|||✔️in Meetings folder|
 |Outlook email message|||✔️in Attachments folder|
-|Word for the web|||✔️in Word Loop files folder|
 |OneNote for Windows or for the web|||✔️in OneNote Loop files folder|
 |Whiteboard|||✔️in Whiteboard\Components folder|
+|Word for the web (Preview only)|||✔️in Word Loop files folder|
 
 
 ## Summary table of admin management, governance, lifecycle, and compliance capabilities based on where Loop content is stored
