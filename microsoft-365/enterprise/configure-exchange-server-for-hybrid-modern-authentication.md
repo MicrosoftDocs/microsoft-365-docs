@@ -25,7 +25,9 @@ ms.custom:
   - azure-ad-ref-level-one-done
 ---
 
-# Overview
+# How to configure Exchange Server on-premises to use Hybrid Modern Authentication
+
+## Overview
 
 Hybrid Modern Authentication (HMA) in Microsoft Exchange Server is a feature that allows users to access mailboxes, which are hosted on-premises, by using authorization tokens obtained from the cloud.
 
@@ -37,11 +39,11 @@ In comparison to legacy authentication methods such as NTLM, HMA offers several 
 
 HMA is a powerful feature that enhances the flexibility and security of accessing on-premises applications, leveraging the power of cloud-based authentication. It represents a significant improvement over legacy authentication methods, offering enhanced security, flexibility, and user convenience.
 
-# How to configure Exchange Server on-premises to use Hybrid Modern Authentication
+## Prerequisites to enable Hybrid Modern Auth
 
 In this section we provide information and steps that needs to be done to successfully configure and enable Hybrid Modern Auth in Microsoft Exchange Server.
 
-## Protocols that work with Hybrid Modern Auth
+### Protocols that work with Hybrid Modern Auth
 
 Hybrid Modern Authentication works for the following Exchange Server protocols:
 
@@ -57,7 +59,7 @@ Hybrid Modern Authentication works for the following Exchange Server protocols:
 |IMAP|No|
 |POP|No|
 
-## Steps to follow to configure and enable Hybrid Modern Auth
+### Steps to follow to configure and enable Hybrid Modern Auth
 
 To enable Hybrid Modern Authentication (HMA), ensure that your organization meets all necessary prerequisites. Additionally, confirm that your Office client is compatible with Modern Authentication. For more details, refer to the documentation on [How modern authentication works for Office 2013 and Office 2016 client apps](modern-auth-for-office-2013-and-2016.md).
 
