@@ -1,5 +1,5 @@
 ---
-title: "How to configure Exchange Server on-premises to use Hybrid Modern Authentication"
+title: "Configure Exchange Server to use Hybrid Modern Auth"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
@@ -25,55 +25,55 @@ ms.custom:
   - azure-ad-ref-level-one-done
 ---
 
+# Overview
+
+Hybrid Modern Authentication (HMA) in Microsoft Exchange Server is a feature that allows users to access mailboxes, which are hosted on-premises, by using authorization tokens obtained from the cloud.
+
+HMA enables Outlook to obtain Access and Refresh OAuth tokens from Microsoft Entra ID, either directly for password hash sync or Pass-Through Auth identities, or from their own STS for federated identities. Exchange on-premises will accept these tokens and provide mailbox access. The method of obtaining these tokens and the credentials required are determined by the capabilities of the identity provider (iDP), which could range from simple username and password to more complex methods such as certificates, phone auth, or biometric methods.
+
+For HMA to work, the user's identity must be present in Microsoft Entra ID, and some configuration is required, which is handled by the Exchange Hybrid Configuration Wizard (HCW).
+
+In comparison to legacy authentication methods such as NTLM, HMA offers several advantages. It provides a more secure and flexible authentication method, leveraging the power of cloud-based authentication. Unlike NTLM, which relies on a challenge-response mechanism and does not support modern authentication protocols, HMA uses OAuth tokens, which are more secure and offer better interoperability.
+
+HMA is a powerful feature that enhances the flexibility and security of accessing on-premises applications, leveraging the power of cloud-based authentication. It represents a significant improvement over legacy authentication methods, offering enhanced security, flexibility, and user convenience.
+
 # How to configure Exchange Server on-premises to use Hybrid Modern Authentication
 
-*This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
+In this section we provide information and steps that needs to be done to successfully configure and enable Hybrid Modern Auth in Microsoft Exchange Server.
 
-Hybrid Modern Authentication (HMA) is a method of identity management that offers more secure user authentication and authorization, and is available for Exchange server on-premises hybrid deployments.
+## Protocols that work with Hybrid Modern Auth
 
-## Supported protocols
-
-The following table outlines the protocols that can be accessed by utilizing HMA tokens:
+Hybrid Modern Authentication works for the following Exchange Server protocols:
 
 |Protocol|Hybrid Modern Auth Supported|
 |--------|---------|
 |MAPI over HTTP (MAPI/HTTP)|Yes|
-|Outlook Anyhwere (RPC/HTTP)|Yes|
+|Outlook Anyhwere (RPC/HTTP)|No|
 |Exchange Active Sync (EAS)|Yes|
 |Exchange Web Services (EWS)|Yes|
 |Outlook on the Web (OWA)|Yes|
 |Exchange Admin Center (ECP)|Yes|
-|AutoDiscover|Yes|
 |Offline Address Book (OAB)|Yes|
 |IMAP|No|
 |POP|No|
 
-## Enabling Hybrid Modern Authentication
+## Steps to follow to configure and enable Hybrid Modern Auth
 
-Turning on HMA requires that your environment meets the following:
+To enable Hybrid Modern Authentication (HMA), ensure that your organization meets all necessary prerequisites. Additionally, confirm that your Office client is compatible with Modern Authentication. For more details, refer to the documentation on [How modern authentication works for Office 2013 and Office 2016 client apps](modern-auth-for-office-2013-and-2016.md).
 
-1. Make sure you meet the prerequisites before you begin.
+1. Make sure you meet the prerequisites before you begin. Since many prerequisites are common for both Skype for Business and Exchange, review them in [Hybrid Modern Authentication overview and prerequisites for using it with on-premises Skype for Business and Exchange servers](hybrid-modern-auth-overview.md). Do this before you begin any of the steps in this article.
 
-2. Since many prerequisites are common for both Skype for Business and Exchange, review them in [Hybrid Modern Authentication overview and prerequisites for using it with on-premises Skype for Business and Exchange servers](hybrid-modern-auth-overview.md). Do this before you begin any of the steps in this article.
-Requirements about linked mailboxes to be inserted.
+2. Add on-premises web service URLs as `Service Principal Names (SPNs)` in Microsoft Entra ID. In case Exchange on-premises is in hybrid with **multiple tenants**, these on-premises web service URLs must be added as SPNs in the Microsoft Entra ID of all the tenants, which are in hybrid with Exchange on-premises.
 
-3. Add on-premises web service URLs as **Service Principal Names (SPNs)** in Microsoft Entra ID. In case Exchange on-premises is in hybrid with **multiple tenants**, these on-premises web service URLs must be added as SPNs in the Microsoft Entra ID of all the tenants, which are in hybrid with Exchange on-premises.
+3. Ensure all virtual directories are enabled for HMA.
 
-4. Ensure all Virtual Directories are enabled for HMA
+4. Check for the EvoSTS Auth Server object.
 
-5. Check for the EvoSTS Auth Server object
+5. Ensure that the [Exchange Server OAuth certificate](/exchange/plan-and-deploy/integration-with-sharepoint-and-skype/maintain-oauth-certificate) is valid.
 
-6. Ensure that the [Exchange Server OAuth certificate](/exchange/plan-and-deploy/integration-with-sharepoint-and-skype/maintain-oauth-certificate) is valid
+6. Ensure that all user identities are synchronized with Microsoft Entra ID.
 
-7. Ensure that all user identities are synchronized with Microsoft Entra ID
-
-8. Enable HMA in Exchange on-premises.
-
-> [!NOTE]
-> Does your version of Office support MA? See [How modern authentication works for Office 2013 and Office 2016 client apps](modern-auth-for-office-2013-and-2016.md).
-
-> [!WARNING]
-> Publishing Outlook Web App and Exchange Control Panel through Microsoft Entra application proxy is unsupported.
+7. Enable HMA in Exchange on-premises.
 
 <a name='add-on-premises-web-service-urls-as-spns-in-azure-ad'></a>
 
@@ -129,9 +129,9 @@ Run the commands that assign your on-premises web service URLs as Microsoft Entr
 
 6. Verify your new records were added by running the `Get-MsolServicePrincipal` command from step 2 again, and looking through the output. Compare the list / screenshot from before to the new list of SPNs. You might also take a screenshot of the new list for your records. If you are successful, you'll see the two new URLs in the list. Going by our example, the list of SPNs now includes the specific URLs `https://mail.corp.contoso.com` and `https://owa.contoso.com`.
 
-## Verify Virtual Directories are Properly Configured
+## Verify virtual directories are properly configured
 
-Now verify OAuth is properly enabled in Exchange on all of the Virtual Directories Outlook might use by running the following commands:
+Now verify OAuth is properly enabled in Exchange on all of the virtual directories Outlook might use by running the following commands:
 
 ```powershell
 Get-MapiVirtualDirectory | fl server,*url*,*auth*
@@ -230,6 +230,9 @@ It is recommended to document the `OwaVirtualDirectory` and `EcpVirtualDirectory
 
 ### Steps to enable Hybrid Modern Authentication for OWA and ECP
 
+> [!WARNING]
+> Publishing Outlook Web App (OWA) and Exchange Control Panel (ECP) through Microsoft Entra application proxy is unsupported.
+
 1. Query the `OWA` and `ECP` URLs that are configured on your Exchange Server on-premises . This is important because they must be added as reply url to Microsoft Entra ID:
 
    ```powershell
@@ -306,7 +309,7 @@ It is recommended to document the `OwaVirtualDirectory` and `EcpVirtualDirectory
       > [!IMPORTANT]
       > It's important to execute these commands in the given order. Otherwise, you'll see an error message when running the commands. After running these commands, login to `OWA` and `ECP` will stop work until the OAuth authentication for those virtual directories has been activated.
       >
-      > Also, make sure that all accounts are synchronized, especially the accounts used for administration to Microsoft Entra ID. Otherwise, the login will stop working until they are synchronized. Note that accounts, such as the built-in Administrator, won’t be synchronized with Microsoft Entra ID and, therefore, can’t be used for administration once HMA for OWA and ECP has been enabled. This is due to the `isCriticalSystemObject` attribute, which is set to `TRUE` for some accounts.
+      > Also, make sure that all accounts are synchronized, especially the accounts used for administration to Microsoft Entra ID. Otherwise, the login will stop working until they are synchronized. Note that accounts, such as the built-in Administrator, won't be synchronized with Microsoft Entra ID and, therefore, can't be used for administration once HMA for OWA and ECP has been enabled. This is due to the `isCriticalSystemObject` attribute, which is set to `TRUE` for some accounts.
 
       ```powershell
       Get-OwaVirtualDirectory -Server <computername> | Set-OwaVirtualDirectory -AdfsAuthentication $false –BasicAuthentication $false –FormsAuthentication $false –DigestAuthentication $false
