@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 admin center Copilot for Microsoft 365 readiness report"
+title: "Microsoft 365 admin center Copilot for Microsoft 365 readiness"
 ms.author: camillepack
 author: camillepack
 manager: scotv
