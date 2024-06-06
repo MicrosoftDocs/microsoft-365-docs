@@ -6,12 +6,12 @@ author: siosulli
 manager: deniseb
 audience: Admin
 ms.topic: conceptual
-ms.service: microsoft-365-business
-ms.date: 10/26/2023
+ms.service: microsoft-365-business-security
+ms.date: 05/31/2024
 ms.localizationpriority: medium
 ms.collection:
 - m365-security
-- tier1
+- tier2
 search.appverid: MET150
 description: "Learn how to review and manage threats detected by Microsoft Defender Antivirus on your Windows devices."
 ---

@@ -7,7 +7,7 @@ manager: scotv
 ms.reviewer: iswillia
 ms.date: 4/19/2024
 audience: Admin
-ms.topic: article
+ms.topic: concept-article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:

@@ -7,14 +7,14 @@ author: chrisda
 manager: deniseb
 audience: Admin
 ms.topic: overview
-ms.service: microsoft-365-business
-ms.date: 3/19/2024
+ms.service: microsoft-365-business-security
+ms.date: 05/31/2024
 ms.localizationpriority: medium
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
 - m365-security
-- tier1
+- tier2
 - essentials-security
 ms.custom:
 - MiniMaven
