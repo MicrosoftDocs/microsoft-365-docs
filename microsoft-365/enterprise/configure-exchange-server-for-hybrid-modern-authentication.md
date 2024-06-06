@@ -61,9 +61,9 @@ Hybrid Modern Authentication works for the following Exchange Server protocols:
 
 ### Steps to follow to configure and enable Hybrid Modern Auth
 
-To enable Hybrid Modern Authentication (HMA), ensure that your organization meets all necessary prerequisites. Additionally, confirm that your Office client is compatible with Modern Authentication. For more details, refer to the documentation on [How modern authentication works for Office 2013 and Office 2016 client apps](modern-auth-for-office-2013-and-2016.md).
+To enable Hybrid Modern Authentication (HMA), you must ensure that your organization meets all necessary prerequisites. Additionally, you should confirm that your Office client is compatible with Modern Authentication. For more details, refer to the documentation on [How modern authentication works for Office 2013 and Office 2016 client apps](modern-auth-for-office-2013-and-2016.md).
 
-1. Make sure you meet the prerequisites before you begin. Since many prerequisites are common for both Skype for Business and Exchange, review them in [Hybrid Modern Authentication overview and prerequisites for using it with on-premises Skype for Business and Exchange servers](hybrid-modern-auth-overview.md). Do this before you continue with the next steps.
+1. Make sure you meet the prerequisites before you begin. Since many prerequisites are common for both Skype for Business and Exchange Server, review them in [Hybrid Modern Authentication overview and prerequisites for using it with on-premises Skype for Business and Exchange servers](hybrid-modern-auth-overview.md). Do this before you continue with the next steps.
 
 2. [Add on-premises web service URLs to Microsoft Entra ID](#add-on-premises-web-service-urls-as-spns-in-microsoft-entra-id). The URLs must be added as `Service Principal Names (SPNs)`. In case that your Exchange Server setup is in hybrid with **multiple tenants**, these on-premises web service URLs must be added as SPNs in the Microsoft Entra ID of all the tenants, which are in hybrid with Exchange Server on-premises.
 
@@ -104,7 +104,7 @@ Run the commands that assign your on-premises web service URLs as Microsoft Entr
    Install-Module Microsoft.Graph -Scope AllUsers
    ```
 
-3. Next, connect to Microsoft Entra ID with [these instructions](connect-to-microsoft-365-powershell.md). To consent to the required permissions, run the following command:
+3. Next, connect to Microsoft Entra ID by following [these instructions](connect-to-microsoft-365-powershell.md). To consent to the required permissions, run the following command:
 
    ```powershell
    Connect-MgGraph -Scopes Application.Read.All, Application.ReadWrite.All
@@ -116,12 +116,9 @@ Run the commands that assign your on-premises web service URLs as Microsoft Entr
    Get-MgServicePrincipal -Filter "AppId eq '00000002-0000-0ff1-ce00-000000000000'" | select -ExpandProperty ServicePrincipalNames
    ```
 
-   Take a note of (and screenshot for later comparison) the output of this command, which should include an `https://*autodiscover.yourdomain.com*` and `https://*mail.yourdomain.com*` URL, but mostly consist of SPNs that begin with `00000002-0000-0ff1-ce00-000000000000/`. If there are `https://` URLs from your on-premises that are missing, those specific records should be added to this list.
+   Note down the output of this command, which should include an `https://*autodiscover.yourdomain.com*` and `https://*mail.yourdomain.com*` URL, but mostly consist of SPNs that begin with `00000002-0000-0ff1-ce00-000000000000/`. If there are `https://` URLs from your on-premises that are missing, those specific records should be added to this list.
 
-5. If you don't see your internal and external `MAPI/HTTP`, `EWS`, `ActiveSync`, `OAB`, and `AutoDiscover` records in this list, you must add them. Use the following command to add all URLs that are missing:
-
-   > [!IMPORTANT]
-   >  In our example, the URLs that will be added are `mail.corp.contoso.com` and `owa.contoso.com`. Make sure that they are replaced by the URLs that are configured in your environment.
+5. If you don't see your internal and external `MAPI/HTTP`, `EWS`, `ActiveSync`, `OAB`, and `AutoDiscover` records in this list, you must add them. Use the following command to add all URLs that are missing. In our example, the URLs that will be added are `mail.corp.contoso.com` and `owa.contoso.com`. Make sure that they are replaced by the URLs that are configured in your environment.
 
    ```powershell
    $x = Get-MgServicePrincipal -Filter "AppId eq '00000002-0000-0ff1-ce00-000000000000'"
@@ -131,7 +128,7 @@ Run the commands that assign your on-premises web service URLs as Microsoft Entr
    Update-MgServicePrincipal -ServicePrincipalId $x.Id -ServicePrincipalNames $ServicePrincipalUpdate
    ```
 
-6. Verify your new records were added by running the `Get-MsolServicePrincipal` command from step 2 again, and looking through the output. Compare the list / screenshot from before to the new list of SPNs. You might also take a screenshot of the new list for your records. If you are successful, you'll see the two new URLs in the list. Going by our example, the list of SPNs now includes the specific URLs `https://mail.corp.contoso.com` and `https://owa.contoso.com`.
+6. Verify that your new records were added by running the `Get-MsolServicePrincipal` command from step 2 again, and validate the output. Compare the list from before to the new list of SPNs. You might also note down the new list for your records. If you are successful, you should see the two new URLs in the list. Going by our example, the list of SPNs now includes the specific URLs `https://mail.corp.contoso.com` and `https://owa.contoso.com`.
 
 ## Verify virtual directories are properly configured
 
@@ -145,7 +142,7 @@ Get-AutoDiscoverVirtualDirectory | fl server,*oauth*
 Get-ActiveSyncVirtualDirectory | fl server,*url*,*auth*
 ```
 
-Check the output to make sure **OAuth** is enabled on each of these VDirs, it looks something like this (and the key thing to look at is 'OAuth'):
+Check the output to make sure `OAuth` is enabled for each of these virtual directories, it looks something like this (and the key thing to look at is `OAuth` as mentioned before):
 
 ```powershell
 Get-MapiVirtualDirectory | fl server,*url*,*auth*
@@ -162,57 +159,39 @@ If OAuth is missing from any server and any of the four virtual directories, you
 
 ## Confirm the EvoSTS Auth Server Object is Present
 
-Return to the on-premises Exchange Management Shell for this last command. Now you can validate that your on-premises has an entry for the evoSTS authentication provider:
+Now on the Exchange Server on-premises Management Shell (EMS) run this last command. You can validate that your Exchange Server on-premises returns an entry for the evoSTS authentication provider:
 
 ```powershell
 Get-AuthServer | where {$_.Name -like "EvoSts*"} | ft name,enabled
 ```
 
-Your output should show an AuthServer of the Name EvoSts with a GUID and the 'Enabled' state should be **True**. If not, you should download and run the most recent version of the Hybrid Configuration Wizard.
+Your output should show an AuthServer of the Name `EvoSts - <GUID>` and the `Enabled` state should be `True`. If that's not the case, you should download and run the most recent version of the [Hybrid Configuration Wizard](https://aka.ms/HybridWizard).
 
-> [!NOTE]
-> In case Exchange on-premises is in hybrid with **multiple tenants**, your output should show one AuthServer of the Name `EvoSts - {GUID}` for each tenant in hybrid with Exchange on-premises and the *Enabled* state should be **True** for all of these AuthServer objects.
-
-> [!IMPORTANT]
-> If you're running Exchange 2010 in your environment, the EvoSTS authentication provider won't be created.
+In case that Exchange Server on-premises runs a hybrid configuration with **multiple tenants**, your output shows one AuthServer with the Name `EvoSts - <GUID>` for each tenant in hybrid with Exchange Server on-premises and the `Enabled` state should be `True` for all of these AuthServer objects.
 
 ## Enable HMA
 
-Run the following command in the Exchange Management Shell, on-premises, replacing \<GUID\> in the command line with the GUID from the output of the last command you ran:
+Run the following commands in the Exchange Server on-premises Management Shell (EMS) and replace the `<GUID>` in the command line with the GUID from the output of the last command you ran. Note that in older versions of the Hybrid Configuration Wizard the EvoSts AuthServer was simply named `EvoSTS` without a GUID attached. There is no action you need to take, just modify the preceding command line to reflect this by removing the GUID portion of the command.
 
 ```powershell
 Set-AuthServer -Identity "EvoSTS - <GUID>" -IsDefaultAuthorizationEndpoint $true
 Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 ```
 
-> [!NOTE]
-> In older versions of the Hybrid Configuration Wizard the EvoSts AuthServer was simply named EvoSTS without a GUID attached. There is no action you need to take, just modify the preceding command line to reflect this by removing the GUID portion of the command:
->
-> ```powershell
-> Set-AuthServer -Identity EvoSTS -IsDefaultAuthorizationEndpoint $true
-> ```
-
-If the Exchange on-premises version is Exchange 2016 (CU18 or higher) or Exchange 2019 (CU7 or higher) and hybrid was configured with HCW downloaded after September 2020, run the following command in the Exchange Management Shell, on-premises:
+If the Exchange Server on-premises version is Exchange Server 2016 (CU18 or higher) or Exchange Server 2019 (CU7 or higher) and hybrid was configured by the help of the HCW downloaded **after September 2020**, run the following command in the Exchange Server on-premises Management Shell (EMS). For the `DomainName` parameter, use the tenant domain value, which is usually in the form `contoso.onmicrosoft.com`:
 
 ```powershell
 Set-AuthServer -Identity "EvoSTS - {GUID}" -DomainName "Tenant Domain" -IsDefaultAuthorizationEndpoint $true
 Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 ```
 
-> [!NOTE]
-> In case Exchange on-premises is in hybrid with **multiple tenants**, there are multiple AuthServer objects present in Exchange on-premises with domains corresponding to each tenant.  The **IsDefaultAuthorizationEndpoint** flag should be set to true (using the **IsDefaultAuthorizationEndpoint** cmdlet) for any one of these AuthServer objects. This flag can't be set to true for all the Authserver objects and HMA would be enabled even if one of these AuthServer object's **IsDefaultAuthorizationEndpoint** flag is set to true.
-
-> [!NOTE]
-> For the **DomainName** parameter, use the tenant domain value, which is usually in the form `contoso.onmicrosoft.com`.
+In case Exchange Server on-premises is in hybrid with **multiple tenants**, there are multiple AuthServer objects present in the Exchange Server on-premises organizations with domains corresponding to each tenant. The `IsDefaultAuthorizationEndpoint` flag should be set to `True` for any one of these AuthServer objects. The flag can't be set to true for all the AuthServer objects and HMA would be enabled even if one of these AuthServer object `IsDefaultAuthorizationEndpoint` flag is set to true.
 
 ## Verify
 
 Once you enable HMA, a client's next sign in will use the new auth flow. Just turning on HMA won't trigger a reauthentication for any client, and it might take a while for Exchange to pick up the new settings.
 
-You should also hold down the CTRL key at the same time you right-click the icon for the Outlook client (also in the Windows Notifications tray) and select **Connection Status**. Look for the client's SMTP address against an **AuthN** type of `Bearer\*`, which represents the bearer token used in OAuth.
-
-> [!NOTE]
-> Need to configure Skype for Business with HMA? You'll need two articles: One that lists [supported topologies](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported), and one that shows you [how to do the configuration](configure-skype-for-business-for-hybrid-modern-authentication.md).
+You should also hold down the `CTRL` key at the same time you right-click the icon for the Outlook client (also in the Windows Notifications tray) and select `Connection Status`. Look for the client's SMTP address against an `AuthN` type of `Bearer\*`, which represents the bearer token used in OAuth.
 
 ## Enable Hybrid Modern Authentication for OWA and ECP
 
@@ -280,7 +259,7 @@ It is recommended to document the `OwaVirtualDirectory` and `EcpVirtualDirectory
 
 7. To enable Exchange Server on-premises ability to perform Hybrid Modern Authentication, follow the steps outlined in the [Enable HMA](#enable-hma) section.
 
-8. **(Optional)** Only required if [Download Domains](/exchange/plan-and-deploy/post-installation-tasks/security-best-practices/exchange-download-domains) are used:
+8. (Optional) Only required if [Download Domains](/exchange/plan-and-deploy/post-installation-tasks/security-best-practices/exchange-download-domains) are used:
 
 
    Create a new global setting override by running the following commands from an elevated Exchange Management Shell (EMS). Run these commands on one Exchange Server:
@@ -291,7 +270,7 @@ It is recommended to document the `OwaVirtualDirectory` and `EcpVirtualDirectory
    Restart-Service -Name W3SVC, WAS -Force
    ```
 
-9. **(Optional)** Only required in [Exchange resource forest topology](/exchange/deploy-exchange-2013-in-an-exchange-resource-forest-topology-exchange-2013-help) scenarios:
+9. (Optional) Only required in [Exchange resource forest topology](/exchange/deploy-exchange-2013-in-an-exchange-resource-forest-topology-exchange-2013-help) scenarios:
 
    Add the following keys to the `<appSettings>` node of the `<ExchangeInstallPath>\ClientAccess\Owa\web.config` file. Do this on each Exchange Server:
 
@@ -332,14 +311,14 @@ It is recommended to document the `OwaVirtualDirectory` and `EcpVirtualDirectory
 
 ## Using Hybrid Modern Authentication with Outlook for iOS and Android
 
-If you're an on-premises customer using Exchange Server on TCP 443, allow network traffic from the following IP ranges:
+If you want to use the Outlook for iOS and Android client together with Hybrid Modern Authentication, make sure to allow the AutoDetect service to connect to your Exchange Server on `TCP 443` (HTTPS):
 
 ```console
 52.125.128.0/20
 52.127.96.0/23
 ```
 
-These IP address ranges are also documented in [Additional endpoints not included in the Office 365 IP Address and URL Web service](/microsoft-365/enterprise/additional-office365-ip-addresses-and-urls).
+The IP address ranges can also be found in the [Additional endpoints not included in the Office 365 IP Address and URL Web service](/microsoft-365/enterprise/additional-office365-ip-addresses-and-urls) documentation.
 
 ## Related articles
 
