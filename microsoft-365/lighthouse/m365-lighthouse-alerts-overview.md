@@ -7,7 +7,7 @@ manager: scotv
 ms.reviewer: shcallaw
 ms.date: 06/30/2023
 audience: Admin
-ms.topic: concept-article
+ms.topic: conceptual
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
