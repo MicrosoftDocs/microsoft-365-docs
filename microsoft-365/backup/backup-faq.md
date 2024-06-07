@@ -73,11 +73,10 @@ Example events that aren't versioned or recoverable via backup:
 
 The recovery point objective (RPO) is the maximum amount of time between the most recent backup and a data destruction event. Stated another way, it’s the amount data lost due to a data destruction event not recoverable via the backups. In the case of Microsoft 365 Backup, the RPOs are:
 
-For OneDrive and SharePoint, the RPO for the first two weeks is 15 mins, then one week beyond that. This means for the first two weeks, the most amount of data that can be lost due to a data destruction event is roughly 10 minute’s worth of the most recent data. Likewise, after two weeks, the most amount of data that can be lost is a week’s worth of data.
+For OneDrive and SharePoint, the RPO for the first two weeks is 15 minutes, then one week beyond that. This means for the first two weeks, the most amount of data that can be lost due to a data destruction event is roughly 10 minute’s worth of the most recent data. Likewise, after two weeks, the most amount of data that can be lost is a week’s worth of data.
 
 For Exchange Online, the RPO is 10 minutes, meaning the most amount of data that can be lost due to a data destruction event is roughly 10 minutes’s worth of data.
 
 Let's start with what it doesn't mean: We are *not* taking snapshots every 10 seconds.
 
 Backup frequency of 10 seconds (if the item is modified) means that changes to the item will be saved as a version once every 10 seconds, no matter how many changes are made in that 10-second interval. For example, if a ransomware attack encrypts the email item every second, will we take six copies in a minute.
-
