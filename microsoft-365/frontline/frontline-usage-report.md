@@ -37,7 +37,10 @@ In the Teams admin center, choose **Frontline deployment** > **Manage frontline 
 - Directly, by going to the **Usage** tab.
 
     :::image type="content" source="media/flw-usage-report-usage-tab.png" alt-text="Screenshot of the Usage tab on the Manage frontline teams page." lightbox="media/flw-usage-report-usage-tab.png":::
-- Through the **App usage - Microsoft Teams** card. This card shows the overall percentage of users across all your frontline teams that have been active on Teams in the last 30 days. Choose **View details** to go to the dashboard.
+- Through the **App usage - Microsoft Teams** card. This card shows the overall percentage of users across all your frontline teams that have been active on Teams in the last 30 days. Choose **View details** to go to the dashboard and view your report.
+
+    > [!NOTE]
+    > You won't see data in the card until your report on the **Usage** tab finishes loading.
 
     :::image type="content" source="media/flw-usage-report-app-usage-card.png" alt-text="Screenshot of the App usage - Microsoft Teams card on the Manage frontline teams page." lightbox="media/flw-usage-report-app-usage-card.png":::
 
