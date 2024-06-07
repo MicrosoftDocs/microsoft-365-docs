@@ -25,7 +25,36 @@ You can set a page range to specify which pages in a document you want to extrac
 > [!NOTE]
 > This setting is not yet available for unstructured document processing models or sensitive information prebuilt models.
 
-## Set a page range
+## Set a page range when you train a model
+
+When you select extractors for a model, you can specify the pages you want to extract the information from. to include in the Page range section**  a page range on the Extractors panel. The **Extractors** panel shows the list of extractors that have been identified in the document.
+
+1. On the Extractors panel, in the model home page, select **Model settings**.
+
+2. On the **Extractors** panel, in the **Page range** section, enter the page range of the pages you want to process. See the following options for setting a page range.
+
+    |Page range  |Example range  |Result  |
+    |---------|---------|---------|
+    |Single pages    | 1, 5, 9        | Pages 1, 5, and 9 will be processed.  |
+    |Finite ranges     | 2-5       | Pages 2 to 5 will be processed.  |
+    |Open-ended ranges    | 5-      | All pages from page 5 to the end of file will be processed.        |
+
+    These range options are cumulative and can be mixed or with overlapping ranges. For example, for the range “-5, 1, 3, 5-10," pages 1 to 10 will be processed.
+
+    Pages within the specified range will be processed and charged. For example, for a five-page document with a page setting of "5-100," only page 5 will be processed.
+
+    Pages outside the set range won't be processed or charged. For example, for a five-page document with a page setting of "45, 48-50" won't have any pages processed.
+
+3. Select **Save**.
+
+    > [!NOTE]
+    > By default, the page range setting is empty. If no page range is provided, the entire document will be processed.
+
+
+
+## Set or update a page range on an existing model
+
+When you select extractors for a model, you can specify the pages you want to extract information from. to include in the Page range section**  a page range on the Extractors panel. The **Extractors** panel shows the list of extractors that have been identified in the document.
 
 1. On the model home page, select **Model settings**.
 
