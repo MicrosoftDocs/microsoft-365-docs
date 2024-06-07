@@ -55,7 +55,7 @@ You can create custom roles in Intune that include any permissions required for 
 
 To create a custom role:
 
-1. In the Microsoft Intune admin center, choose **Tenant administration > Roles > All roles > Create**.
+1. In the [Intune admin center](https://intune.microsoft.com), choose **Tenant administration** > **Roles** > **All roles** > **Create**.
 
 1. On the **Basics** page, enter a name and description for the new role, then choose **Next**.
 
@@ -67,7 +67,7 @@ To create a custom role:
 
 To copy a role:
 
-1. In the Microsoft Intune admin center, choose **Tenant administration > Roles > All roles >** select the checkbox for a role in the list > **Duplicate**.
+1. In the [Intune admin center](https://intune.microsoft.com), choose **Tenant administration** > **Roles** > **All roles >** select the checkbox for a role in the list, and then choose **Duplicate**.
 
 1. On the **Basics** page, enter a name. Make sure to use a unique name.
 
@@ -80,9 +80,9 @@ To copy a role:
 
 ## How to assign a role
 
-1. In the Microsoft Intune admin center, choose **Tenant administration > Roles > All roles**.
+1. In the [Intune admin center](https://intune.microsoft.com), choose **Tenant administration** > **Roles** > **All roles**.
 
-2. Choose the built-in role you want to assign > Assignments > + Assign.
+2. Choose the built-in role you want to assign, select **Assignments**, and then choose **+ Assign**.
 
 3. On the **Basics** page, enter an Assignment name and optional Assignment description, and then choose **Next**.
 
