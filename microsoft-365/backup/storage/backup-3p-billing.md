@@ -16,7 +16,7 @@ ms.localizationpriority:  medium
 description: Set up third party billing for Microsoft 365 Backup Storage.
 ---
 
-# Set up third party billing for Microsoft 365 Backup Storage
+# Set up third party billing for Microsoft 365 Backup Storage (Preview)
 
 Developers can create an application to manage Microsoft 365 Backup Storage in their customers tenants. However, a Billing Policy must be created that associates your Microsoft 365 Backup Storage application to pay-as-you-go billing that has been configured in your tenant.
 

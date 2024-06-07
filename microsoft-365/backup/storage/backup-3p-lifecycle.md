@@ -16,9 +16,9 @@ ms.localizationpriority:  medium
 description: Application lifecycle for Microsoft 365 Backup Storage.
 ---
 
-# Microsoft 365 Backup Storage application lifecycle
+# Application lifecyle for Microsoft 365 Backup Storage (Preview)
 
-## Onboarding a third party Microsoft 365 Backup Storage application
+## Onboard a third-party Microsoft 365 Backup Storage application
 
 Once your Microsoft 365 Backup Storage application has been consented to execute in the Consuming Tenant, to enable it to be the Microsoft 365 Backup Storage Controller in a Consuming Tenant, you will need to perform the following programmatic tasks (via your application):
 

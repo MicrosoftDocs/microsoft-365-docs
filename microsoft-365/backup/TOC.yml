@@ -19,6 +19,14 @@
       href: backup-limitations.md
     - name: FAQs
       href: backup-faq.md
+    - name: Backup Storage
+      items:
+            - name: Overview
+              href: backup-3p-overview.md 
+            - name: Billing
+              href: backup-3p-billing.md
+            - name: Application lifecyle
+              href: backup-3p-lifecycle.md
 
 
 
