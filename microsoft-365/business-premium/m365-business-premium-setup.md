@@ -8,7 +8,7 @@ manager: deniseb
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business-security
-ms.date: 05/31/2024
+ms.date: 06/07/2024
 ms.localizationpriority: medium
 ms.reviewer: nehabha
 f1.keywords: NOCSH
@@ -76,7 +76,7 @@ Microsoft 365 Business Premium includes a guided setup process, as shown in the 
 
 ### The guided setup process, step by step
 
-1. As a global administrator, go to the [Microsoft 365 admin center](https://admin.microsoft.com/) and sign in.
+1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/) and sign in.
 
 2. A Business Advisor screen opens where you can select your top goals for Microsoft 365. Select and save your goals, or select **Skip for new**.
 
