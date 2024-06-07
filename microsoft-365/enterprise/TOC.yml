@@ -370,8 +370,6 @@
                     href: high-availability-federated-authentication-phase-4-configure-web-application-pro.md
                   - name: Phase 5 - Configure federated authentication
                     href: high-availability-federated-authentication-phase-5-configure-federated-authentic.md
-              - name: SharePoint Server 2013 Disaster Recovery in Microsoft Azure
-                href: sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md
     - name: Manage
       items: 
         - name: User accounts
