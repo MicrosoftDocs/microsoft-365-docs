@@ -47,23 +47,30 @@ You can see the following summary charts in this report:
 
 **Total Prerequisite Licenses** The number is the sum of all users who have at least one license assigned to them or who could be assigned a license. The following license types are eligible for Copilot:
 
+**For Business and Enterprise**:
+
 - Microsoft 365 E5
 - Microsoft 365 E3
 - Microsoft 365 F1
 - Microsoft 365 F3
-- Office 365 E1
-- Office 365 E3
 - Office 365 E5
+- Office 365 E3
+- Office 365 E1
 - Office 365 F3
 - Microsoft 365 Business Basic
 - Microsoft 365 Business Premium
 - Microsoft 365 Business Standard
-- Microsoft 365 A5 for faculty*
-- Microsoft 365 A3 for faculty*
-- Office 365 A5 for faculty*
-- Office 365 A3 for faculty*
 
-*Available via Enrollment for Education Solutions (EES) or Cloud Solution Provider only.
+**For Education Faculty and Higher Education Students Aged 18+**:
+
+- Microsoft 365 A1*
+- Microsoft 365 A3*
+- Microsoft 365 A5*
+- Office 365 A1*
+- Office 365 A3*
+- Office 365 A5*
+
+*Available via Enrollment for Education Solutions (EES) or Cloud Solution Provider (CSP) only.
 
 **Users on an eligible update channel** This number is the sum of all users who are enrolled in Current Channel or Monthly Enterprise Channel for app updates in your organization and could be assigned with a Copilot license.
 
