@@ -77,6 +77,11 @@ For OneDrive and SharePoint, the RPO for the first two weeks is 15 minutes, then
 
 For Exchange Online, the RPO is 10 minutes, meaning the most amount of data that can be lost due to a data destruction event is roughly 10 minutes’s worth of data.
 
+Let's start with what it doesn't mean: We are *not* taking snapshots every 10 minutes.
+
+Backup frequency of 10 minutes (if the item is modified) means that changes to the item will be saved as a version once every 10 minutes, no matter how many changes are made in that 10-minute interval. For example, if a ransomware attack encrypts the email item every minute, will we take six copies in an hour.
+<!---
 Let's start with what it doesn't mean: We are *not* taking snapshots every 10 seconds.
 
 Backup frequency of 10 seconds (if the item is modified) means that changes to the item will be saved as a version once every 10 seconds, no matter how many changes are made in that 10-second interval. For example, if a ransomware attack encrypts the email item every second, will we take six copies in a minute.
+--->
