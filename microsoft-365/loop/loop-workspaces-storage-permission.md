@@ -47,9 +47,9 @@ When you share only a Loop page, you're giving users access to that specific pag
 
 ## Guest/External sharing
 
-You can share Loop workspaces, pages, and components with users external to your company so they can collaborate with you. There are a few requirements that must be met for guest sharing to be possible:
+You can share Loop workspaces, pages, and components with users external to your company (guests) so they can collaborate with you. There are a few requirements that must be met for guest sharing to be possible:
 
-- Your organization must allow sharing files with guest user. Learn how to [manage this policy](/sharepoint/turn-external-sharing-on-or-off#change-the-organization-level-external-sharing-setting).
+- Your organization must allow sharing files with guest users. Learn how to [manage this policy](/sharepoint/turn-external-sharing-on-or-off#change-the-organization-level-external-sharing-setting).
 - The user you're sharing with must have a guest account in your tenant or [Business-to-Business Invitation Manager is enabled](/entra/external-id/what-is-b2b).
 - Your organization doesn't have sensitivity labels configured. Loop external sharing won't work for companies with sensitivity labels configured. Once sensitivity labels for Loop workspaces, pages, and components are generally available, then external sharing for companies with sensitivity labels configured will function.
 
