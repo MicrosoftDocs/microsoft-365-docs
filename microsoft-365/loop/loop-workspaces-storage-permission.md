@@ -93,7 +93,7 @@ Loop components created outside of the Loop are stored in the OneDrive of the pe
 
 ## Management of Loop app's storage
 
-See [Admin Management of Loop workspaces](/microsoft-365/loop/loop-compliance-summary#admin-management-of-loop-workspaces) section of the [Summary of governance, lifecycle, and compliance capabilities](/microsoft-365/loop/loop-compliance-summary) for more information.
+See [available admin capabilities](/microsoft-365/loop/loop-compliance-summary#available-admin-capabilities) section of the [Summary of governance, lifecycle, and compliance capabilities](/microsoft-365/loop/loop-compliance-summary) for more information.
 
 ## Pricing and licensing model for Loop app
 
