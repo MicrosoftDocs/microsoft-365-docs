@@ -8,7 +8,7 @@ manager: deniseb
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business-security
-ms.date: 05/31/2024
+ms.date: 06/07/2024
 ms.localizationpriority: medium
 ms.collection:
 - M365-Campaigns
@@ -83,7 +83,7 @@ Make sure that you meet the following requirements before you begin your setup p
 |Requirement|Description|
 |---|---|
 |Subscription|Microsoft 365 Business Premium or Microsoft 365 for Campaigns <br/><br/> To start a trial or purchase your subscription, see the following resources: <ul><li>[Get Microsoft 365 Business Premium](m365-business-premium-setup.md#sign-up-for-microsoft-365-business-premium)</li><li>[Get Microsoft 365 for Campaigns](#get-microsoft-365-for-campaigns)</li></ul>|
-|Permissions|To complete the initial setup process, you must be a Global Admin. [Learn more about admin roles](../admin/add-users/about-admin-roles.md).|
+|Permissions|To complete the initial setup process, you must have an appropriate role assigned. [Learn more about admin roles](../admin/add-users/about-admin-roles.md).|
 |Browser requirements|Microsoft Edge, Safari, Chrome or Firefox. [Learn more about browser requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#coreui-heading-uyetipy).|
 |Operating systems (client)|**Windows**:  Windows 10 or 11 Pro <br/> **macOS**: One of the three most recent versions of macOS|
 |Operating systems (servers)|Windows Server or Linux Server <br/> (Requires an additional license, such as [Microsoft Defender for Business servers](../security/defender-business/get-defender-business.md#how-to-get-microsoft-defender-for-business-servers).)|
@@ -92,10 +92,6 @@ Make sure that you meet the following requirements before you begin your setup p
 > For more detailed information about Microsoft 365, Office, and system requirements, see [Microsoft 365 and Office Resources](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources).
 
 ## Sign in to Microsoft 365 for Campaigns
-
-If you signed up for Microsoft 365 for Campaigns, you're designated as the Microsoft 365 admin (also referred to as the Global Administrator). This allows you to sign in and initiate the system.
-
-Here's how to sign in:
 
 1. Find the username and password we sent to the email address you used when you [signed up for Microsoft 365 for Campaigns](m365-campaigns-sign-up.md).
 
@@ -124,7 +120,7 @@ You can customize your sign-in page with your branding. You can also add text to
 
 ## Customize the text on your sign-in page
 
-To update the customizable elements on the sign-in page, you have to be a global admin. For specific instructions, see [add company branding](/azure/active-directory/fundamentals/customize-branding) article.
+To update the customizable elements on the sign-in page, you must have an appropriate role assigned. For specific instructions, see [add company branding](/azure/active-directory/fundamentals/customize-branding) article.
 
 The elements you can update are:
 
