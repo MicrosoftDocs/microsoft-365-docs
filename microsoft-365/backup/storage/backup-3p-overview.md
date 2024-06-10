@@ -24,15 +24,14 @@ Creating an application means that your third-party application becomes the Micr
 
 To create and deploy an application, the third-party developers perform the following tasks:
 
-1. Develop your third-party Microsoft 365 Backup Storage application with the required oAuth permissions scopes and [Backup storage Graph APIs](https://learn.microsoft.com/microsoft-365/backup/backup-overview).
+1. Develop your third-party Microsoft 365 Backup Storage application with the required oAuth permissions scopes and [Backup storage Graph APIs](../backup-overview.md).
 
-2. Create a Billing Policy for your Microsoft 365 Backup Storage application as per [Set up third-party billing for Microsoft 365 Backup Storage](/backup-3p-billing.md).
+2. Create a Billing Policy for your Microsoft 365 Backup Storage application as per [Set up third-party billing for Microsoft 365 Backup Storage](backup-3p-billing.md).
 
 3. Request the Consuming Tenant Backup Admin to consent your Microsoft 365 Backup Storage application to be able to execute in the Consuming Tenant.
 
 > [!NOTE]
 > This is the standard app registration workflow that is typically invoked by the Consuming Tenant Admin clicking on the following URL:
-
 > ```
 > https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id={applicationId}&response_type=code&scope=https://graph.microsoft.com/.default
 > ```
