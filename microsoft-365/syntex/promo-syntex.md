@@ -22,7 +22,7 @@ description: Learn how to try Microsoft Syntex services during a limited offerin
 
 Microsoft Syntex (evolving to be SharePoint Premium) is a powerful tool that lets you do more with your documents. You can process, analyze, create, sign, manage, and enhance them with ease.
 
-Through June 2024, your organization can use included monthly capacity for some of these services when you set up [pay-as-you-go billing](syntex-azure-billing.md). It's a great way to try out Syntex capabilities, such as document processing, document tagging, and content assembly, to see how you can use them to streamline processes in your organization.
+Through September 20, 2024, your organization can use included monthly capacity for some of these services when you set up [pay-as-you-go billing](syntex-azure-billing.md). It's a great way to try out Syntex capabilities, such as document processing, document tagging, and content assembly, to see how you can use them to streamline processes in your organization.
 
 ## Get started
 
