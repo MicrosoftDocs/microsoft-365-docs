@@ -15,7 +15,6 @@ ms.collection:
 - essentials-get-started
 - essentials-manage
 - must-keep
-ROBOTS: NOINDEX, NOFOLLOW
 description: "Steps to turn your Personal Bookings page on or off"
 ---
 
