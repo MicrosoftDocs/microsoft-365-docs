@@ -26,7 +26,7 @@ Microsoft Syntex makes it easier to find and manage images in SharePoint documen
 
 ![Screenshot of the library view showing the Image Tags column.](../media/content-understanding/image-tagger-image-tags-column-overview.png)  
 
-The image tagging feature makes it even easier to tag images without any training, thereby reducing the need for manual tagging or custom AI model building. This result means you can quickly find images in your libraries and set up processes based on the tags for the images.
+The image tagging feature makes it even easier to tag images without any training, which means reducing the need for manual tagging or custom AI model building. This result means you can quickly find images in your libraries and set up processes based on the tags for the images.
 
 ## Requirements and limitations
 
