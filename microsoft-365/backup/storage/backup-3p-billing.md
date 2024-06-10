@@ -27,12 +27,12 @@ To create a Billing Policy, you need to perform the following steps:
 2. [Submit a request to Microsoft to create a Billing Policy for your application](#step-2-submit-a-request-to-microsoft-to-create-a-billing-policy-for-your-application).
 
 > [!NOTE]
-> An application and tenant can only be associated to one and only one Billing Policy. I.e. a tenant can NOT have more than one Billing Policy and an application can NOT be associated to more than one Billing Policy.
+> An application and tenant can only be associated to one and only one Billing Policy. That is, a tenant can't have more than one Billing Policy and an application can't be associated with more than one Billing Policy.
 
 ### Step 1: Set up pay-as-you-go billing
 
 > [!WARNING]
-> This step needs to be performed in the same tenant that your Microsoft 365 Backup Storage application was created/registered in. That is, this should be performed in your tenant (and not your customer's tenants). Failure to do so will mean that your request to create a Billing Policy will be rejected.
+> This step needs to be performed in the same tenant that your Microsoft 365 Backup Storage application was created and registered in. That is, this should be performed in your tenant (and not your customer's tenants). Failure to do so will mean that your request to create a Billing Policy will be rejected.
 
 Microsoft 365 Backup is a pay-as-you-go offering that charges based on consumption, unlike traditional seat-based licenses. To set up pay-as-you-go for Microsoft 365 Backup, you'll need to have this information:
 
@@ -89,9 +89,9 @@ You have successfully set up pay-as-you-go billing.
 
 To create a Billing Policy for your application and the pay-as-you-go billing configured in the previous step, you'll need to perform the following steps:
 
-1. Review the [Microsoft 365 Backup Storage - Third-Party public preview terms of service and conditions](https://aka.ms/M365Backup3PToS).
+1. Review the [Microsoft 365 Backup Storage - Third-Party public preview terms of service and conditions](../backup-preview-terms-third-party.md).
 
-2. Email M365Backup3PBilling@microsoft.com with the following information: We'll reply back to this email once the request is complete.
+2. Email *M365Backup3PBilling@microsoft.com* with the following information: We'll reply back to this email once the request is complete.
     - Subject line containing your **Microsoft Entra tenant ID**.
     - Message body containing your **Microsoft Entra tenant ID** and **Application Id** of your Microsoft 365 Backup Storage application.
     - Screenshot of your **application registration details** in [Microsoft Azure > App registrations](https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/RegisteredApps) for example: [https://portal.azure.com/#view/Microsoft_AAD_RegisteredApps/ApplicationMenuBlade/~/Overview/appId/{ApplicationId}](https://portal.azure.com/#view/Microsoft_AAD_RegisteredApps/ApplicationMenuBlade/~/Overview/appId/{ApplicationId}).
@@ -99,7 +99,7 @@ To create a Billing Policy for your application and the pay-as-you-go billing co
 For details on how to find your Microsoft Entra tenant ID, refer to [How to find your Microsoft Entra tenant ID](/entra/fundamentals/how-to-find-tenant).
 
 > [!IMPORTANT]
-> Submitting a request to Microsoft indicates that you have accepted the [Microsoft 365 Backup Storage - Third Party public preview terms of service and conditions](backup-preview-terms-third-party.md).
+> Submitting a request to Microsoft indicates that you have accepted the [Microsoft 365 Backup Storage - Third Party public preview terms of service and conditions](../backup-preview-terms-third-party.md).
 
 > [!WARNING]
 > The domain of the email address from which you email Microsoft must be registered in the same tenant where you configured the pay-as-you-go billing in the previous step. That is, your email domain must be listed in [Microsoft 365 admin center > Domains](https://admin.microsoft.com/Adminportal/?#/Domains). Failure to do so will mean that your request to create a Billing Policy will be rejected.
