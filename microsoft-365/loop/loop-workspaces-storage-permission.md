@@ -45,23 +45,23 @@ When you invite a user to a workspace, that user has access to all the pages in 
 
 When you share only a Loop page, you're giving users access to that specific page exclusively (not the whole workspace). The user can choose to use a company share link or people-specific share link; unless their tenant admin disabled some of the share link types. When sharing a page, you can choose to grant the user "*edit*", or "*read only*" access.
 
-## Guest / External sharing
+## Guest/External sharing
 
 You can share Loop workspaces, pages, and components with users external to your company so they can collaborate with you. There are a few requirements that must be met for guest sharing to be possible:
 
-- Your organization must allow sharing files with guest user. Learn how to [manage this policy](/sharepoint/turn-external-sharing-on-or-off#change-the-organization-level-external-sharing-setting)
-- The user you're sharing with must have a guest account in your tenant or [Business-to-Business Invitation Manager is enabled](/entra/external-id/what-is-b2b)
+- Your organization must allow sharing files with guest user. Learn how to [manage this policy](/sharepoint/turn-external-sharing-on-or-off#change-the-organization-level-external-sharing-setting).
+- The user you're sharing with must have a guest account in your tenant or [Business-to-Business Invitation Manager is enabled](/entra/external-id/what-is-b2b).
 - Your organization doesn't have sensitivity labels configured. Loop external sharing won't work for companies with sensitivity labels configured. Once sensitivity labels for Loop workspaces, pages, and components are generally available, then external sharing for companies with sensitivity labels configured will function.
 
 Workspaces can only be shared with users that have an existing guest account in your tenant. If Business-to-business Invitation Manager is enabled, users can share a page or component with a guest user which will enable the flow to create a guest account for the user.
 
 If the above conditions are met, then you can share with guest users by:
 
-1. Navigate to the Loop workspace or page you want to share (or, navigate to the Loop file within OneDrive)
-1. Open the share menu in the top right of the screen within Loop (or, open the share menu next to the file while viewing it within OneDrive)
-1. Choose if you want to share the workspace or page (only applies within Loop)
-1. Enter the user's email address you wish to share with
-1. Click "Send" or "Invite"
+1. Navigate to the Loop workspace or page you want to share (or, navigate to the Loop file within OneDrive).
+1. Open the share menu in the top right of the screen within Loop (or, open the share menu next to the file while viewing it within OneDrive).
+1. Choose if you want to share the workspace or page (only applies within Loop).
+1. Enter the user's email address you wish to share with.
+1. Click "Send" or "Invite."
 
 Sharing with external participants is done through "Share with specific people" links. Company-wide share links won't work with external participants. You must designate the guest user explicitly in the share dialog.
 
