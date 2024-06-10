@@ -17,7 +17,7 @@ ms.collection:
 description: Use the frontline usage report on the Manage frontline teams page of the Teams admin center to get an overview of active users in Teams for each of your frontline locations. 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 05/03/2024
+ms.date: 06/10/2024
 ---
 # Microsoft Teams frontline usage report
 
