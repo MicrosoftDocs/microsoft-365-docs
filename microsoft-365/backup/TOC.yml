@@ -24,7 +24,7 @@
             - name: Overview
               href: /backup/storage/backup-3p-overview.md 
             - name: Billing
-              href: ../storage/backup-3p-billing.md
+              href: ./storage/backup-3p-billing.md
             - name: Application lifecyle
               href: /storage/backup-3p-lifecycle.md
 
