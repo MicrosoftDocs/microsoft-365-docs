@@ -23,15 +23,11 @@ description: Learn how to specify a page range for extracting information from d
 You can set a page range to specify which pages in a document you want to extract information from when using a document processing model. This setting can be used to process a range of pages for files rather than the entire file. Processing fewer pages can lead to cost savings, because model services are billed based on the number of pages processed. It can also be more efficient by reducing processing time.
 
 > [!NOTE]
-> This setting is not yet available for unstructured document processing models or sensitive information prebuilt models.
+> This setting is not available for unstructured document processing models or sensitive information prebuilt models.
 
-## Set a page range when you train a model
+## Tips for setting a page range
 
-When you select extractors for a model, you can specify the pages you want to extract the information from. to include in the Page range section**  a page range on the Extractors panel. The **Extractors** panel shows the list of extractors that have been identified in the document.
-
-1. On the Extractors panel, in the model home page, select **Model settings**.
-
-2. On the **Extractors** panel, in the **Page range** section, enter the page range of the pages you want to process. See the following options for setting a page range.
+The following table shows format options for setting a page range.
 
     |Page range  |Example range  |Result  |
     |---------|---------|---------|
@@ -45,20 +41,38 @@ When you select extractors for a model, you can specify the pages you want to ex
 
     Pages outside the set range won't be processed or charged. For example, for a five-page document with a page setting of "45, 48-50" won't have any pages processed.
 
-3. Select **Save**.
+> [!NOTE]
+> By default, the page range setting is empty. If no page range is provided, the entire document will be processed.
 
-    > [!NOTE]
-    > By default, the page range setting is empty. If no page range is provided, the entire document will be processed.
+## Set a page range when you train a model
 
+When you select extractors for a model, you can specify the pages from which you want to extract the information.
 
+1. On the **Extractors** panel, in the **Page range** section, enter the page or range of pages you want to process. For help in understanding format options, see [Tips for setting a page range](#tips-for-setting-a-page-range).
+
+    ![Screenshot of the Extractors panel showing the Page range option.](../media/content-understanding/page-range-extractors-panel.png)
+
+2. The **Page** column on the **Extractors** panel shows the page that the extractor is on. To try another page range, enter the page range in the box, and then select **Refresh** (![Screenshot of the Refresh icon.](../media/content-understanding/refresh-icon.png)).
+
+3. Continue selecting distractors and apply the model as usual.
 
 ## Set or update a page range on an existing model
 
-When you select extractors for a model, you can specify the pages you want to extract information from. to include in the Page range section**  a page range on the Extractors panel. The **Extractors** panel shows the list of extractors that have been identified in the document.
+You can specify a range or modify of an existing of a model that has already been trained.
 
 1. On the model home page, select **Model settings**.
 
-2. On the **Model settings** panel, in the **Page range** section, enter the page range of the pages you want to process. See the following options for setting a page range.
+2. On the **Model settings** panel, in the **Page range** section, enter the page range of the pages you want to process. For help in understanding format options, see [Tips for setting a page range](#tips-for-setting-a-page-range).
+
+    ![Screenshot of the Model settings panel showing the Page range option.](../media/content-understanding/page-range-model-settings.png)
+
+3. Select **Save**.
+
+
+<!---
+
+    > [!NOTE]
+    > By default, the page range setting is empty. If no page range is provided, the entire document will be processed.
 
     |Page range  |Example range  |Result  |
     |---------|---------|---------|
@@ -71,8 +85,4 @@ When you select extractors for a model, you can specify the pages you want to ex
     Pages within the specified range will be processed and charged. For example, for a five-page document with a page setting of "5-100," only page 5 will be processed.
 
     Pages outside the set range won't be processed or charged. For example, for a five-page document with a page setting of "45, 48-50" won't have any pages processed.
-
-3. Select **Save**.
-
-    > [!NOTE]
-    > By default, the page range setting is empty. If no page range is provided, the entire document will be processed.
+--->
