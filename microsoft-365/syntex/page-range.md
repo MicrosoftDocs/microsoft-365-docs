@@ -29,11 +29,11 @@ You can set a page range to specify which pages in a document you want to extrac
 
 The following table shows format options for setting a page range.
 
-    |Page range  |Example range  |Result  |
-    |---------|---------|---------|
-    |Single pages    | 1, 5, 9        | Pages 1, 5, and 9 will be processed.  |
-    |Finite ranges     | 2-5       | Pages 2 to 5 will be processed.  |
-    |Open-ended ranges    | 5-      | All pages from page 5 to the end of file will be processed.        |
+|Page range  |Example range  |Result  |
+|---------|---------|---------|
+|Single pages    | 1, 5, 9        | Pages 1, 5, and 9 will be processed.  |
+|Finite ranges     | 2-5       | Pages 2 to 5 will be processed.  |
+|Open-ended ranges    | 5-      | All pages from page 5 to the end of file will be processed.        |
 
     These range options are cumulative and can be mixed or with overlapping ranges. For example, for the range “-5, 1, 3, 5-10," pages 1 to 10 will be processed.
 
