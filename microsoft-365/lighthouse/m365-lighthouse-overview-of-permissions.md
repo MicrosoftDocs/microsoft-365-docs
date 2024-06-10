@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: taylorau
-ms.date: 06/05/2024
+ms.date: 06/10/2024
 audience: Admin
 ms.topic: concept-article
 ms.service: microsoft-365-lighthouse
@@ -37,7 +37,6 @@ To use Lighthouse, you need a combination of roles assigned via RBAC and GDAP.
 Partner tenant users assigned the Global Administrator role in Microsoft Entra ID can do the following:
 
 - Sign up for Lighthouse in the Microsoft 365 admin center. 
-- Accept partner contract amendments in the Guided tour. 
 - Activate and inactive a tenant. 
 - Create, update, and delete tags.
 - Assign tags to and remove tags from a customer tenant. 
