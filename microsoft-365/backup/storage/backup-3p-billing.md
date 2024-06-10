@@ -22,21 +22,21 @@ Developers can create an application to manage Microsoft 365 Backup Storage in t
 
 To create a Billing Policy, you need to perform the following steps:
 
-1. [Set up pay-as-you-go billing](#Step-1-Set-up-pay-as-you-go-billing).
+1. [Set up pay-as-you-go billing](#step-1-set-up-pay-as-you-go-billing).
 
-2. [Submit a request to Microsoft to create a Billing Policy for your application](#Step-2-Submit-a-request-to-Microsoft-to-create-a-Billing-Policy-for-your-application).
+2. [Submit a request to Microsoft to create a Billing Policy for your application](#step-2-submit-a-request-to-microsoft-to-create-a-billing-policy-for-your-application).
 
 > [!NOTE]
 > An application and tenant can only be associated to one and only one Billing Policy. I.e. a tenant can NOT have more than one Billing Policy and an application can NOT be associated to more than one Billing Policy.
 
-## Step 1: Set up pay-as-you-go billing
+### Step 1: Set up pay-as-you-go billing
 
 > [!WARNING]
 > This step needs to be performed in the same tenant that your Microsoft 365 Backup Storage application was created/registered in. That is, this should be performed in your tenant (and not your customer's tenants). Failure to do so will mean that your request to create a Billing Policy will be rejected.
 
 Microsoft 365 Backup is a pay-as-you-go offering that charges based on consumption, unlike traditional seat-based licenses. To set up pay-as-you-go for Microsoft 365 Backup, you'll need to have this information:
 
-- **Valid Azure subscription.** An Azure subscription provides a logical container for your resources. Each Azure resource is associated with only one subscription. Creating a subscription is the first step in adopting Azure. To learn more about Azure, see [Azure fundamental concepts](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/considerations/fundamental-concepts).
+- **Valid Azure subscription.** An Azure subscription provides a logical container for your resources. Each Azure resource is associated with only one subscription. Creating a subscription is the first step in adopting Azure. To learn more about Azure, see [Azure fundamental concepts](/azure/cloud-adoption-framework/ready/considerations/fundamental-concepts).
 
 - **Resource group.** A resource group provides a logical grouping of resources within an Azure subscription.
 
@@ -66,7 +66,7 @@ Once you have the information on this list, you're ready to perform the followin
 
     To create a new Azure resource group:
     1. On the **Set up pay-as-you-go billing** panel, select **Learn more about Azure resource groups**.
-    2. Or, you can follow steps in [Manage Azure resource groups by using the Azure portal](https://learn.microsoft.com/azure/azure-resource-manager/management/manage-resource-groups-portal) to create a resource group.
+    2. Or, you can follow steps in [Manage Azure resource groups by using the Azure portal](/azure/azure-resource-manager/management/manage-resource-groups-portal) to create a resource group.
 
 > [!NOTE]
 > The resource group should be mapped to the Azure subscription you provided when you set up pay-as-you-go.
@@ -80,12 +80,12 @@ Once you have the information on this list, you're ready to perform the followin
 > [!NOTE]
 > The subscription dropdown list will not populate if you are not an owner or contributor on the subscription.
 
-**You have successfully set up pay-as-you-go billing.**
+You have successfully set up pay-as-you-go billing.
 
 > [!IMPORTANT]
 > Any subsequent changes made to the billing for Microsoft 365 Backup Storage in the Microsoft 365 admin center or the Azure portal can take up to 24 hours to become effective.
 
-## Step 2: Submit a request to Microsoft to create a Billing Policy for your application
+### Step 2: Submit a request to Microsoft to create a Billing Policy for your application
 
 To create a Billing Policy for your application and the pay-as-you-go billing configured in the previous step, you'll need to perform the following steps:
 
@@ -96,16 +96,16 @@ To create a Billing Policy for your application and the pay-as-you-go billing co
     - Message body containing your **Microsoft Entra tenant ID** and **Application Id** of your Microsoft 365 Backup Storage application.
     - Screenshot of your **application registration details** in [Microsoft Azure > App registrations](https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/RegisteredApps) for example: [https://portal.azure.com/#view/Microsoft_AAD_RegisteredApps/ApplicationMenuBlade/~/Overview/appId/{ApplicationId}](https://portal.azure.com/#view/Microsoft_AAD_RegisteredApps/ApplicationMenuBlade/~/Overview/appId/{ApplicationId}).
 
-For details on how to find your Microsoft Entra tenant ID, refer to [How to find your Microsoft Entra tenant ID](https://learn.microsoft.com/entra/fundamentals/how-to-find-tenant).
+For details on how to find your Microsoft Entra tenant ID, refer to [How to find your Microsoft Entra tenant ID](/entra/fundamentals/how-to-find-tenant).
 
 > [!IMPORTANT]
-> Submitting a request to Microsoft indicates that you have accepted the [Microsoft 365 Backup Storage - Third Party public preview terms of service and conditions]-(backup-preview-terms-third-party.md).
+> Submitting a request to Microsoft indicates that you have accepted the [Microsoft 365 Backup Storage - Third Party public preview terms of service and conditions](backup-preview-terms-third-party.md).
 
 > [!WARNING]
-> The domain of the email address from which you email us must be registered in the same tenant where you configured the pay-as-you-go billing in the previous step. That is, your email domain must be listed in [Microsoft 365 admin center > Domains](https://admin.microsoft.com/Adminportal/?#/Domains). Failure to do so will mean that your request to create a Billing Policy will be rejected.
+> The domain of the email address from which you email Microsoft must be registered in the same tenant where you configured the pay-as-you-go billing in the previous step. That is, your email domain must be listed in [Microsoft 365 admin center > Domains](https://admin.microsoft.com/Adminportal/?#/Domains). Failure to do so will mean that your request to create a Billing Policy will be rejected.
 
 > [!NOTE]
 > - All requests are processed on a "first come, first served" basis and can take 3 to 5 business days to be processed.
 > - If any invalid information is provided, then your request might be rejected without any further correspondence.
 
-Once your request is processed and you receive a confirmation email, your application is able to be enable Microsoft 365 Backup Storage in your customer's tenants using your Billing Policy.
+Once your request is processed and you receive a confirmation email, your application is able to enable Microsoft 365 Backup Storage in your customer's tenants using your Billing Policy.
