@@ -65,7 +65,7 @@ landingContent:
             url: backup-limitations.md
 
 # Card 5
-  - title: Backup storage
+  - title: Backup Storage (Preview)
     linkLists:
       - linkListType: overview
         links:
