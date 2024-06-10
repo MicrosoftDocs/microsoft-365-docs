@@ -33,13 +33,13 @@ When you select extractors for a model, you can specify the pages from which you
 
     ![Screenshot of the Extractors panel showing the Page range option.](../media/content-understanding/page-range-extractors-panel.png)
 
-2. The **Page** column on the **Extractors** panel shows the page that the extractor is on. To try another page range, enter the page range in the box, and then select **Refresh** (![Screenshot of the Refresh icon.](../media/content-understanding/refresh-icon.png)).
+2. The **Page** column on the **Extractors** panel shows the page that an extractor is on. To try other page ranges, enter a page range in the box, and then select **Refresh** (![Screenshot of the Refresh icon.](../media/content-understanding/refresh-icon.png)).
 
-3. Continue selecting distractors and apply the model as usual.
+3. Continue selecting distractors and then apply the model as usual.
 
 ## Set or update a page range on an existing model
 
-You can specify a range or modify of an existing of a model that has already been trained.
+You can specify a page range or modify a page range of an existing of a model that has already been trained.
 
 1. On the model home page, select **Model settings**.
 
