@@ -61,7 +61,7 @@ If the above conditions are met, then you can share with guest users by:
 1. Open the share menu in the top right of the screen within Loop (or, open the share menu next to the file while viewing it within OneDrive).
 1. Choose if you want to share the workspace or page (only applies within Loop).
 1. Enter the user's email address you wish to share with.
-1. Click "Send" or "Invite."
+1. Select **Send** or **Invite**.
 
 Sharing with external participants is done through "Share with specific people" links. Company-wide share links won't work with external participants. You must designate the guest user explicitly in the share dialog.
 
