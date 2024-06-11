@@ -3,7 +3,7 @@ title: Use a prebuilt model to detect sensitive information from documents in Mi
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
-ms.reviewer: ssquires
+ms.reviewer: karlha
 ms.date: 05/01/2024
 audience: admin
 ms.topic: conceptual
