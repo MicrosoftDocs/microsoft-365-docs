@@ -30,7 +30,7 @@ To create and configure a sensitive information model, follow these steps:
 1. Follow the instructions in [Create a model in Syntex](https://review.learn.microsoft.com/en-us/microsoft-365/syntex/create-syntex-model?branch=pii-prebuilt-working&tabs=layout-method%2Csensitive-information-processing#tabpanel_2_sensitive-information-processing) to create a prebuilt sensitive information model. Then continue with the following steps to complete your model.
 
     > [!NOTE]
-    > When you create a sensitive information model, you will notice that, unlike other models, you don't have the options to select a content type or to apply sensitivity or retention labels. If you need to associate a content type, you'll need to create a different model type. The ability to apply security labels will be provided in future releases.
+    > When you create a sensitive information model, you will notice that, unlike other models, you don't have the options to select a content type or to apply sensitivity or retention labels. If you need to associate a content type, you'll need to create a different model type. The ability to apply security labels will be provided in a future release.
 
 2. On the **Models** page, in the **Add entities to detect** section, select **Add entities**.
 
