@@ -17,7 +17,7 @@ ms.collection:
 description: Use the frontline usage report on the Manage frontline teams page of the Teams admin center to get an overview of active users in Teams for each of your frontline locations. 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 05/03/2024
+ms.date: 06/10/2024
 ---
 # Microsoft Teams frontline usage report
 
@@ -37,7 +37,7 @@ In the Teams admin center, choose **Frontline deployment** > **Manage frontline 
 - Directly, by going to the **Usage** tab.
 
     :::image type="content" source="media/flw-usage-report-usage-tab.png" alt-text="Screenshot of the Usage tab on the Manage frontline teams page." lightbox="media/flw-usage-report-usage-tab.png":::
-- Through the **App usage - Microsoft Teams** card. (Coming soon). This card shows the overall percentage of users across all your frontline teams that have been active on Teams in the last 30 days. Choose **View details** to go to the dashboard.
+- Through the **App usage - Microsoft Teams** card. If you leave the **Usage** tab before your report is generated, you can come back to the Manage frontline teams page to view your report later. When your report finishes loading, the card shows the overall percentage of users across all your frontline teams that have been active on Teams in the last 30 days. Choose **View details** to go to the dashboard and view your report.
 
     :::image type="content" source="media/flw-usage-report-app-usage-card.png" alt-text="Screenshot of the App usage - Microsoft Teams card on the Manage frontline teams page." lightbox="media/flw-usage-report-app-usage-card.png":::
 
