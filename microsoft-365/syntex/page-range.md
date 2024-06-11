@@ -39,7 +39,7 @@ When you select extractors for a prebuilt contracts, invoices, or receipts model
 
 ## Set or update a page range on an existing model
 
-For structured and freeform models, and prebuilt contracts, invoices, and receipts models, you can specify a page range or modify a page range of an existing of a model that has already been trained.
+For structured and freeform models, and for prebuilt contracts, invoices, and receipts models, you can specify a page range or modify a page range of an existing of a model that has already been trained.
 
 1. On the model home page, select **Model settings**.
 
