@@ -25,7 +25,7 @@ You can set a page range to specify which pages in a document you want to extrac
 > [!NOTE]
 > This setting is not available for unstructured document processing models or sensitive information prebuilt models.
 
-## Set a page range when you train a model
+## Set a page range when you train a prebuilt model
 
 When you select extractors for a prebuilt contracts, invoices, or receipts model, you can specify the pages from which you want to extract the information.
 
