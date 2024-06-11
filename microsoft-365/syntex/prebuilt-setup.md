@@ -30,7 +30,9 @@ Before you can use prebuilt document processing in Syntex, you must first link a
 
 ### Permissions
 
-You must have Global admin or SharePoint admin permissions to be able to access the Microsoft 365 admin center and set up prebuilt document processing in Syntex.  
+You must be a Global Administrator or SharePoint Administrator to be able to access the Microsoft 365 admin center and set up prebuilt document processing in Syntex.  
+
+[!INCLUDE [global-administrator-note](../includes/global-administrator-note.md)]
 
 ## Set up prebuilt document processing
 
