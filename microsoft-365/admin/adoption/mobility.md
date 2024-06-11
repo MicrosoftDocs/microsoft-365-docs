@@ -123,7 +123,7 @@ We also provide you with information that helps you gain visibility into how peo
         - Numerator: The number of people who have used Microsoft Teams only on a mobile platform in the last 28 days
         - Denominator: The number of people who have used Teams at least once in the last 28 days
 
-### Use of Microsoft 365 Apps across platforms
+### Use of Microsoft 365 productivity apps across platforms
 
 :::image type="content" source="../../media/microsoft365apps-platforms.png" alt-text="Chart that shows number of people who use Microsoft 365 productivity apps on multiple or single platforms.":::
 
