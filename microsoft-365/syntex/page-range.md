@@ -27,7 +27,7 @@ You can set a page range to specify which pages in a document you want to extrac
 
 ## Set a page range when you train a model
 
-When you select extractors for a model, you can specify the pages from which you want to extract the information.
+When you select extractors for a prebuilt contracts, invoices, or receipts model, you can specify the pages from which you want to extract the information.
 
 1. On the **Extractors** panel, in the **Page range** section, enter the page or range of pages you want to process. For help in understanding format options, see [Tips for setting a page range](#tips-for-setting-a-page-range).
 
@@ -39,7 +39,7 @@ When you select extractors for a model, you can specify the pages from which you
 
 ## Set or update a page range on an existing model
 
-You can specify a page range or modify a page range of an existing of a model that has already been trained.
+For structured and freeform models, and prebuilt contracts, invoices, and receipts models, you can specify a page range or modify a page range of an existing of a model that has already been trained.
 
 1. On the model home page, select **Model settings**.
 
