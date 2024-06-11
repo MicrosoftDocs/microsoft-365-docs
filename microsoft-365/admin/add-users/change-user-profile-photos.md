@@ -232,4 +232,4 @@ Photo update settings in your organization include controlling the environment w
 
 ### Select where user profile photos can be edited using Microsoft Graph
 
-Currently, you can configure the photo update settings using Microsoft Graph only. For more information, see Manage user profile photo settings in Microsoft 365 using Microsoft Graph.
+Currently, you can configure the photo update settings using Microsoft Graph only. For more information, see [Manage user profile photo settings in Microsoft 365 using Microsoft Graph.](https://https://learn.microsoft.com/en-us/graph/profilephoto-configure-settings)
