@@ -72,7 +72,7 @@ You can learn more about [Loop storage](/microsoft-365/loop/loop-compliance-summ
 
 If you're looking for a simple way to turn on or off the creation of content in Loop workspaces in your tenant, do the following:
 
-1. Sign in to the Microsoft 365 admin center as a Global Administrator.
+1. Sign in to the Microsoft 365 admin center as Office Apps Administrator, Security Administrator, or Global Administrator.
 1. Navigate to [Home > Org settings > Services > Loop](https://admin.microsoft.com/Adminportal/Home#/Settings/Services/:/Settings/L1/Loop).
 1. Choose your desired state for Loop workspaces via the checkbox.
     > [!NOTE]
