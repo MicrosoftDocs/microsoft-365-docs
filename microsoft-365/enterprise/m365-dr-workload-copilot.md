@@ -6,7 +6,7 @@ author: kelleyvice-msft
 manager: scotv
 ms.service: microsoft-365-enterprise
 ms.subservice: advanced-data-residency
-ms.topic: conceptual
+ms.topic: concept-article
 f1.keywords:
 - NOCSH
 ms.date: 02/29/2024

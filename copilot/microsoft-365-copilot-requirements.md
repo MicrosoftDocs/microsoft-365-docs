@@ -7,7 +7,7 @@ author: camillepack
 manager: scotv
 ms.date: 10/05/2023
 audience: Admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: microsoft-365-copilot
 ms.localizationpriority: medium
 ms.collection: 
@@ -27,7 +27,7 @@ The integration of Microsoft Copilot for Microsoft 365 and Microsoft 365 Apps en
 
 ## Prerequisites
 
-The following are the prerequisites for using Microsoft Copilot for Microsoft 365. Copilot for Microsoft 365 requires the user to have a prerequisite base license assigned. You can find the list of eligible base licenses in the [Microsoft Copilot for Microsoft 365 service description guide](/office365/servicedescriptions/office-365-platform-service-description/microsoft-365-copilot).
+The following are the prerequisites for using Microsoft Copilot for Microsoft 365. Copilot for Microsoft 365 requires the user to have a prerequisite base license assigned. You can find the list of eligible base licenses in the [license requirements](#license-requirements) section or in the [Microsoft Copilot for Microsoft 365 service description guide](/office365/servicedescriptions/office-365-platform-service-description/microsoft-365-copilot).
 
 ### Microsoft 365 Apps
 
@@ -84,23 +84,30 @@ For more information about the Office Feature Updates task, see [Office Feature 
 
 Copilot for Microsoft 365 is available as an add-on plan with one of the following licensing prerequisites:
 
+**For Business and Enterprise**:
+
 - Microsoft 365 E5
 - Microsoft 365 E3
 - Microsoft 365 F1
 - Microsoft 365 F3
-- Office 365 E1
-- Office 365 E3
 - Office 365 E5
+- Office 365 E3
+- Office 365 E1
 - Office 365 F3
 - Microsoft 365 Business Basic
 - Microsoft 365 Business Premium
 - Microsoft 365 Business Standard
-- Microsoft 365 A5 for faculty*
-- Microsoft 365 A3 for faculty*
-- Office 365 A5 for faculty*
-- Office 365 A3 for faculty*
 
-*Available via Enrollment for Education Solutions (EES) or Cloud Solution Provider only.
+**For Education Faculty and Higher Education Students Aged 18+**:
+
+- Microsoft 365 A1*
+- Microsoft 365 A3*
+- Microsoft 365 A5*
+- Office 365 A1*
+- Office 365 A3*
+- Office 365 A5*
+
+*Available via Enrollment for Education Solutions (EES) or Cloud Solution Provider (CSP) only.
 
 You can use the [Microsoft Copilot for Microsoft 365 setup guide](https://admin.microsoft.com/Adminportal/Home?Q=learndocs#/modernonboarding/microsoft365copilotsetupguide) in the Microsoft 365 admin center to assign the required licenses to users. For more information, see [Assign licenses to users in the Microsoft 365 admin center](/microsoft-365/admin/manage/assign-licenses-to-users).
 
