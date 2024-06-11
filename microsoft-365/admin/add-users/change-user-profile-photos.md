@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: deniseb
-ms.date: 5/10/2024
+ms.date: 06/11/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -232,4 +232,4 @@ Photo update settings in your organization include controlling the environment w
 
 ### Select where user profile photos can be edited using Microsoft Graph
 
-Currently, you can configure the photo update settings using Microsoft Graph only. For more information, see Manage user profile photo settings in Microsoft 365 using Microsoft Graph.
+Currently, you can configure the photo update settings using Microsoft Graph only. For more information, see [Manage user profile photo settings in Microsoft 365 using Microsoft Graph](/graph/profilephoto-configure-settings).
