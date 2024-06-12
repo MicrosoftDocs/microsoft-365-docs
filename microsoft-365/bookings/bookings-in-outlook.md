@@ -15,7 +15,6 @@ ms.collection:
 - essentials-get-started
 - essentials-manage
 - must-keep
-ROBOTS: NOINDEX, NOFOLLOW
 description: "Steps to turn your Personal Bookings page on or off"
 ---
 
@@ -25,7 +24,7 @@ description: "Steps to turn your Personal Bookings page on or off"
 
 Personal Bookings has two different views:
 
-- **Organizer view**: An organizer is someone who creates meeting types and shares the booking page with others so that they can easily schedule meetings with them. A personal booking page is where you can create meeting types that others can book with you. Custom meeting types give you the ability to customize when you want to meet and how that meeting type is shared with others. You control whether each meeting type is public to your scheduling page or is private and can only be accessed by a select group of people. You can access your Bookings with me page through Outlook, web and Teams. After you set up your page and publish it, you can share it with others. For example, you can add it to your Outlook signature. [Learn more about setup and sharing in Bookings with me](https://support.microsoft.com/office/bookings-with-me-setup-and-sharing-ad2e28c4-4abd-45c7-9439-27a789d254a2).
+- **Organizer view**: An organizer is someone who creates meeting types and shares the booking page with others so that they can easily schedule meetings with them. A personal booking page is where you can create meeting types that others can book with you. Custom meeting types give you the ability to customize when you want to meet and how that meeting type is shared with others. You control whether each meeting type is public to your scheduling page or is private and can only be accessed by a select group of people. You can access your Bookings with me page through Outlook, web and Teams. After you set up your page and publish it, you can share it with others. For example, you can add it to your Outlook signature.
 
 - **Attendee view**: An attendee is someone who uses the booking page to create or attend a meeting scheduled by an organizer. After the organizer shares their personal booking page with others, those visitors will see the attendee view.
 
@@ -42,11 +41,6 @@ Bookings with me is an ideal solution for enterprise, small business, and users 
 - Lunch and coffee breaks
 
 ### End users
-
-For more information on how your users can work with Bookings with me, see the following articles:
-
-- [Set up Bookings with me](https://support.microsoft.com/office/bookings-with-me-setup-and-sharing-ad2e28c4-4abd-45c7-9439-27a789d254a2)
-- [Bookings with me articles](https://support.microsoft.com/office/bookings-with-me-articles-c69c4703-e812-435c-9fc2-d194e10fd205)
 
 ## Before you begin
 
@@ -213,13 +207,13 @@ Also, Bookings with me won't create a new mailbox for each Bookings with me page
 
 ### Who can access my public Bookings page?
 
-Public meeting types can be accessed by anyone that has your Bookings with me page address. You decide who you share your Bookings with me page address with. For more information, see [Select a meeting time in Bookings with me](https://support.microsoft.com/office/select-a-meeting-time-in-bookings-with-me-8f3bbe5b-4bc6-4073-bf61-57383c00b43a).
+Public meeting types can be accessed by anyone that has your Bookings with me page address. You decide who you share your Bookings with me page address with.
 
 ### What is the difference between public and private meeting types?
 
 Meeting types can be public or private. Public meeting types are available to anyone that you share your Bookings page link with. Private meeting types are only available to people that you share the individual private meeting type with.  
 
-Private meeting types can also generate single use links. Single use links expire after their first booking. For more information, see [setup Bookings with me meeting types](https://support.microsoft.com/office/bookings-with-me-setup-and-sharing-ad2e28c4-4abd-45c7-9439-27a789d254a2).
+Private meeting types can also generate single use links. Single use links expire after their first booking.
 
 ### Do people need to have a Microsoft account or Bookings license to schedule time with me?
 
