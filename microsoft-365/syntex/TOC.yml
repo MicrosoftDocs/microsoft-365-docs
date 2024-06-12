@@ -307,23 +307,24 @@
                - name: Step 3. Use Power Automate
                  href: solution-manage-contracts-step3.md
 
-    - name: Syntex PowerShell
-      items: 
-        - name: Overview
-          href: powershell-syntex-intro.md
-        - name: Export and import models
-          href: powershell-syntex-import-export.md
-        - name: Publish models
-          href: powershell-syntex-publishing.md
-        - name: Request model processing
-          href: powershell-syntex-processing.md
-        - name: Work with explanations
-          href: powershell-syntex-explanations.md
-
     - name: Extensibility
       items: 
-        - name: Microsoft Syntex REST API 
+        - name: Content model Graph API 
+          href: /graph/api/resources/contentmodel?view=graph-rest-beta
+        - name: Unstructured model REST API 
           href: /sharepoint/dev/apis/syntex/syntex-model-rest-api
+        - name: Syntex PowerShell
+          items: 
+            - name: Overview
+              href: powershell-syntex-intro.md
+            - name: Export and import models
+              href: powershell-syntex-import-export.md
+            - name: Publish models
+              href: powershell-syntex-publishing.md
+            - name: Request model processing
+              href: powershell-syntex-processing.md
+            - name: Work with explanations
+              href: powershell-syntex-explanations.md
 
     - name: SharePoint Advanced Management
       href: /sharepoint/advanced-management
