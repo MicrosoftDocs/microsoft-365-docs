@@ -40,7 +40,7 @@ landingContent:
         links:
           - text: Autofill columns
             url: autofill-overview.md
-          - text: Syntex Model Graph API
+          - text: Content model Graph API
             url: /graph/api/resources/contentmodel?view=graph-rest-beta
 
 # Card 2
@@ -98,9 +98,9 @@ landingContent:
     linkLists:
       - linkListType: reference
         links:
-          - text: Syntex Model Graph API
+          - text: Content model Graph API
             url: /graph/api/resources/contentmodel?view=graph-rest-beta
-          - text: Syntex Model REST API
+          - text: Unstructured model REST API
             url: /sharepoint/dev/apis/syntex/syntex-model-rest-api
           - text: PowerShell for Syntex
             url: powershell-syntex-intro.md
