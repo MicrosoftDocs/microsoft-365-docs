@@ -307,9 +307,9 @@
 
     - name: Extensibility
       items: 
-        - name: Microsoft Syntex Graph API 
+        - name: Content model Graph API 
           href: /graph/api/resources/contentmodel?view=graph-rest-beta
-        - name: Microsoft Syntex REST API 
+        - name: Unstructured model REST API 
           href: /sharepoint/dev/apis/syntex/syntex-model-rest-api
         - name: Syntex PowerShell
           items: 
