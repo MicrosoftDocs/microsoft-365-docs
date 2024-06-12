@@ -322,6 +322,8 @@
       items: 
         - name: Microsoft Syntex REST API 
           href: /sharepoint/dev/apis/syntex/syntex-model-rest-api
+        - name: Microsoft Syntex Graph API 
+          href: /graph/api/resources/contentmodel?view=graph-rest-beta
 
     - name: SharePoint Advanced Management
       href: /sharepoint/advanced-management
