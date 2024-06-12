@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: kkameth
-ms.date: 10/16/2023
+ms.date: 06/12/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -30,7 +30,9 @@ Before you can use the OCR service in Syntex, you must first link an Azure subsc
 
 ### Permissions
 
-You must have Global admin or SharePoint admin permissions to be able to access the Microsoft 365 admin center and set up the OCR service in Syntex.
+You must be a [SharePoint Administrator](/entra/identity/role-based-access-control/permissions-reference#sharepoint-administrator) or [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) to be able to access the Microsoft 365 admin center and set up the OCR service.
+
+[!INCLUDE [global-administrator-note](../includes/global-administrator-note.md)]
 
 ## Set up optical character recognition
 
