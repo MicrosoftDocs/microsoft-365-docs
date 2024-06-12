@@ -41,7 +41,7 @@ To create and configure a sensitive information model, follow these steps:
     - Select the language you want to use for this model. Only one language can be selected for each model.
 
         > [!NOTE]
-        > This model supports [multiple languages](/azure/ai-services/language-service/personally-identifiable-information/language-support?tabs=documents) and provides OCR language support for both [handwritten text](/azure/ai-services/computer-vision/language-support#handwritten-text) and [printed text](/azure/ai-services/language-service/personally-identifiable-information/language-support?tabs=documents).
+        > This model supports [multiple languages](/azure/ai-services/language-service/personally-identifiable-information/language-support?tabs=documents) and provides OCR language support for both [handwritten text](/azure/ai-services/computer-vision/language-support#handwritten-text) and [printed text](/azure/ai-services/language-service/personally-identifiable-information/language-support?tabs=documents)(https:///azure/ai-services/language-service/personally-identifiable-information/language-support?tabs=documents#pii-language-support).
 
     - From the list of supported entities, select the sensitive information entity or entities you want to detect, and then select **Next**.
 
