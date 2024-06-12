@@ -49,6 +49,6 @@ By default, autofill columns is turned on for libraries in all SharePoint sites.
 
     a. Choose which site or sites this service should be enabled for.
 
-    b. To restrict user access to this service, under **Sites where autofill columns can be used when it's turned on**, select **Edit**. On the **Where can autofill columns be used?** panel, select **No sites** or **Selected sites (up to 100)** and follow the instructions to either select the sites or upload a CSV listing a maximum of 100 sites. You can then manage site access permissions for the sites you selected.
+    b. To restrict user access to this service, under **Sites where autofill columns can be used when it's turned on**, select **Edit**. On the **Where can autofill columns be used?** panel, change the setting from **All sites** to **Selected sites (up to 100)** or **No sites**. For selected sites, follow the instructions to select the sites or upload a CSV listing of the sites. You can then manage site access permissions for the sites you selected.
 
     c. Select **Save**.
