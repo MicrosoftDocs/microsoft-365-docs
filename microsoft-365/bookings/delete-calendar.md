@@ -3,7 +3,7 @@ title: "Delete a Shared Booking page"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 05/23/2024
+ms.date: 06/05/2024
 audience: Admin
 ms.topic: how-to
 ms.service: bookings
@@ -12,6 +12,7 @@ ms.collection:
 - Tier1
 - scotvorg
 - essentials-manage
+- must-keep
 description: "Use the Microsoft 365 admin center or Windows PowerShell to delete Bookings calendars."
 ---
 
@@ -23,7 +24,7 @@ This article explains how you can delete an unwanted shared booking page. You ca
 > All shared booking pages that you created in 2017 or before must be deleted using the PowerShell instructions on this topic. All shared booking pages created in 2018 or after can be deleted in the Microsoft 365 admin center.
 
 > [!IMPORTANT]
-> Only M365 Admins can delete shared booking pages created by end users. We do not support the capability of deleting shared booking pages at a user level. If a user wishes to do so, the request will have to be routed to the respective M365 admin.
+> Only Microsoft 365 Admins can delete shared booking pages created by end users. We do not support the capability of deleting shared booking pages at a user level. If a user wishes to do so, the request will have to be routed to the respective Microsoft 365 admin.
 
 The shared booking page is where all relevant information is stored, including:
 

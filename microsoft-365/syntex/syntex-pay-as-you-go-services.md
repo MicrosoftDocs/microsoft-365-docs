@@ -20,9 +20,13 @@ description: Learn about pay-as-you-go services and pricing for Microsoft Syntex
 # Pay-as-you-go services and pricing for Microsoft Syntex
 
 > [!NOTE]
-> Through June 2024, if you have [pay-as-you-go billing](syntex-azure-billing.md) set up, your organization will receive a limited amount of included capacity each month for selected services, letting you try these services at no cost. This offering does not include capacity for Microsoft 365 Archive or Microsoft 365 Backup. For more information, see [Try out Microsoft Syntex and explore its services](promo-syntex.md).
+> Through June 2025, if you have [pay-as-you-go billing](syntex-azure-billing.md) set up, your organization will receive a limited amount of included capacity each month for selected services, letting you try these services at no cost. This offering does not include capacity for Microsoft 365 Archive or Microsoft 365 Backup. For more information, see [Try out Microsoft Syntex and explore its services](promo-syntex.md).
 
-When you use Microsoft Syntex [pay-as-you-go](syntex-azure-billing.md), services are billed using Syntex meters in the Azure subscription that you specified when you set up Microsoft Syntex. The following table describes each meter, its pricing, and how it measures usage. When you connect your Azure subscription to Microsoft Syntex, users in your organization are able to take advantage of Syntex services right away. Your tenant is billed according to the details shown in this article.
+When you use Microsoft Syntex [pay-as-you-go](syntex-azure-billing.md), services are billed using Syntex meters in the Azure subscription that you specified when you set up Microsoft Syntex.
+
+The following table describes each meter, its pricing, and how it measures usage. When you connect your Azure subscription to Microsoft Syntex, users in your organization are able to take advantage of Syntex services right away. Your tenant is billed according to the details shown in this article.
+
+To help your organization in planning for pay-as-you-go services, you can use the [SharePoint cost calculator](https://aka.ms/SharePoint/PAYG-Calculator). This tool gives you a better understanding of your organization’s usage patterns and estimated costs so you can make more informed decisions.
 
 |Service|What's counted?|What's billed? (USD)|
 |:----|:--------------|:-------------|
