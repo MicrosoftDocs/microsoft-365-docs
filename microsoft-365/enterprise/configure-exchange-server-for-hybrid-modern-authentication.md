@@ -41,7 +41,7 @@ HMA is a powerful feature that enhances the flexibility and security of accessin
 
 ## Prerequisites to enable Hybrid Modern Auth
 
-In this section, we provide information and steps that needs to be done to successfully configure and enable Hybrid Modern Auth in Microsoft Exchange Server.
+In this section, we provide information and steps that need to be done to successfully configure and enable Hybrid Modern Auth in Microsoft Exchange Server.
 
 ### Protocols that work with Hybrid Modern Auth
 
