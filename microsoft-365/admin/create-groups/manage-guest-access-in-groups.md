@@ -1,7 +1,7 @@
 ---
 title: "Manage guest access in Microsoft 365 groups"
 ms.reviewer: rahulnayak
-ms.date: 02/18/2020
+ms.date: 06/11/2024
 f1.keywords: NOCSH
 ms.author: jtremper
 author: jacktremper
@@ -17,10 +17,10 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
-  - AdminSurgePortfolio
-  - AdminTemplateSet
-  - admindeeplinkMAC
-  - has-azure-ad-ps-ref
+- AdminSurgePortfolio
+- AdminTemplateSet
+- admindeeplinkMAC
+- has-azure-ad-ps-ref
 search.appverid:
 - MET150
 - MOE150
