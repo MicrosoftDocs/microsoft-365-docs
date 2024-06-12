@@ -36,6 +36,38 @@ With this feature, you can:
 - Empower your frontline workers by giving them the flexibility to request open shifts at locations convenient to them.
 - Enhance customer satisfaction with the ability to schedule anyone within an area to help ensure your locations are fully staffed.
 
+## Prerequisites
+
+To enable this feature, you must complete the following Prerequisites
+
+- Define a [frontline operational hierarchy](deploy-frontline-operational-hierarchy.md) in the Teams admin center to map your organization's structure of frontline teams and locations to a hierarchy.
+- Assign a code to at least one schedule group in a team that matches the code of the schedule group in other teams. Schedule groups in Shifts are used to group employees based on common characteristics within a team. For example, schedule groups can be departments or job types.
+
+You control the availability of this feature for your frontline teams by assigning codes to schedule groups. The code for a particular schedule group in a team must match the code of the corresponding schedule group on other teams within the same level of your hierarchy for open shifts to be available on those other teams.
+
+In this way, open shifts shared by a frontline manager in one location are available to all workers that belong to the same schedule group in other locations within the same area.
+
+### Create and assign schedule group codes
+
+## Example
+
+Here’s an example to help you understand how to assign schedule group codes to enable open shifts across locations.
+
+### Scenario
+
+Contoso has hundreds of stores. Each store is grouped into an area and is managed by a different manager. To simplify this scenario, we focus on three stores in the West area.
+
+In this example:
+
+- Contoso set up an operational hierarchy in the Teams admin center to map their frontline team structure.
+- Bellevue, Redmond, and Seattle are "sister" locations that are on the same level of the hierarchy. They share the parent node, West.  
+- The schedule groups in Shifts at these locations are based on job types: Pickers, Runners, Stockers, Inventory specialists.
+
+Contoso wants to enable open shifts across locations for Pickers in the Bellevue and Redmond stores but not in the Seattle store. To do this, the Contoso admin completes the following steps:
+
+## User experience
+
+
 <!--## Prerequisites
 
 To enable this feature, you must complete the following prerequisites:
