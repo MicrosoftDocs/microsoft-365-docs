@@ -1,7 +1,7 @@
 ---
 title: "Create a group in the admin center"
 ms.reviewer: rahulnayak
-ms.date: 02/18/2020
+ms.date: 06/11/2024
 f1.keywords: CSH
 ms.author: jtremper
 author: jacktremper
