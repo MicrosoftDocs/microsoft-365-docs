@@ -291,9 +291,7 @@ Only select this option if your organization uses Skype for Business for online 
     |CNAME|sip|sipdir.online.lync.com <br/>|1 Hour|
     |CNAME|lyncdiscover|webdir.online.lync.com <br/>|1 Hour|
 
-1. Select the **Save**.
-
-   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-cname-save.png" alt-text="Screenshot of where you select Save to add CNAME records for Skype for Business.":::
+1. Select **Save**.
 
 1. Add the other CNAME record by copying the values from the second row of the table.
 
@@ -328,8 +326,6 @@ This service helps you secure and remotely manage mobile devices that connect to
     |CNAME|enterpriseenrollment|enterpriseenrollment-s.manage.microsoft.com <br/>|1 Hour|
 
 1. Select **Save**.
-
-   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-cname-save.png" alt-text="Screenshot of where you select Save to add an CNAME record for Mobile Device Management.":::
 
 1. Add the other CNAME record by copying the values from the second row of the table.
 
