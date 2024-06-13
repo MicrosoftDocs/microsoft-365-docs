@@ -71,9 +71,9 @@ To enable Hybrid Modern Authentication (HMA), you must ensure that your organiza
 
 4. [Check for the EvoSTS Auth Server object](#confirm-the-evosts-auth-server-object-is-present).
 
-5. Ensure that the [Exchange Server OAuth certificate](/exchange/plan-and-deploy/integration-with-sharepoint-and-skype/maintain-oauth-certificate) is valid.
+5. Ensure that the [Exchange Server OAuth certificate](/exchange/plan-and-deploy/integration-with-sharepoint-and-skype/maintain-oauth-certificate) is valid. The [MonitorExchangeAuthCertificate script](https://aka.ms/MonitorExchangeAuthCertificate) script can be utilized to verify the validity of the OAuth certificate. In the event of its expiration, the script assists in the renewal process.
 
-6. Ensure that all user identities are synchronized with Microsoft Entra ID.
+6. Ensure that all user identities are synchronized with Microsoft Entra ID, especially all accounts, which are used for administration. Otherwise, the login stops working until they're synchronized. Accounts, such as the built-in Administrator, will never be synchronized with Microsoft Entra ID and, therefore, can't be used on any OAuth login once HMA has been enabled. This behavior is due to the `isCriticalSystemObject` attribute, which is set to `True` for some accounts including the default administrator.
 
 7. (Optional) If you want to use the Outlook for iOS and Android client, make sure to [allow the AutoDetect service to connect to your Exchange Server](#using-hybrid-modern-authentication-with-outlook-for-ios-and-android).
 
@@ -128,7 +128,7 @@ Run the commands that assign your on-premises web service URLs as Microsoft Entr
    Update-MgServicePrincipal -ServicePrincipalId $x.Id -ServicePrincipalNames $ServicePrincipalUpdate
    ```
 
-6. Verify that your new records were added by running the `Get-MsolServicePrincipal` command from step 2 again, and validate the output. Compare the list from before to the new list of SPNs. You might also note down the new list for your records. If you're successful, you should see the two new URLs in the list. Going by our example, the list of SPNs now includes the specific URLs `https://mail.corp.contoso.com` and `https://owa.contoso.com`.
+6. Verify that your new records were added by running the `Get-MgServicePrincipal` command from step 4 again, and validate the output. Compare the list from before to the new list of SPNs. You might also note down the new list for your records. If you're successful, you should see the two new URLs in the list. Going by our example, the list of SPNs now includes the specific URLs `https://mail.corp.contoso.com` and `https://owa.contoso.com`.
 
 ## Verify virtual directories are properly configured
 
@@ -155,7 +155,7 @@ InternalAuthenticationMethods : {Ntlm, OAuth, Negotiate}
 ExternalAuthenticationMethods : {Ntlm, OAuth, Negotiate}
 ```
 
-If OAuth is missing from any server and any of the four virtual directories, you need to add it by using the relevant commands before proceeding ([Set-MapiVirtualDirectory](/powershell/module/exchange/set-mapivirtualdirectory), [Set-WebServicesVirtualDirectory](/powershell/module/exchange/set-webservicesvirtualdirectory), [Set-OABVirtualDirectory](/powershell/module/exchange/set-oabvirtualdirectory), and [Set-AutodiscoverVirtualDirectory](/powershell/module/exchange/set-autodiscovervirtualdirectory)).
+If OAuth is missing from any server and any of the five virtual directories, you need to add it by using the relevant commands before proceeding ([Set-MapiVirtualDirectory](/powershell/module/exchange/set-mapivirtualdirectory), [Set-WebServicesVirtualDirectory](/powershell/module/exchange/set-webservicesvirtualdirectory), [Set-OABVirtualDirectory](/powershell/module/exchange/set-oabvirtualdirectory), [Set-AutodiscoverVirtualDirectory](/powershell/module/exchange/set-autodiscovervirtualdirectory)), and [Set-ActiveSyncVirtualDirectory](/powershell/module/exchange/set-activesyncvirtualdirectory).
 
 ## Confirm the EvoSTS Auth Server Object is Present
 
@@ -167,7 +167,7 @@ Get-AuthServer | where {$_.Name -like "EvoSts*"} | ft name,enabled
 
 Your output should show an AuthServer of the Name `EvoSts - <GUID>` and the `Enabled` state should be `True`. If that's not the case, you should download and run the most recent version of the [Hybrid Configuration Wizard](https://aka.ms/HybridWizard).
 
-In case that Exchange Server on-premises runs a hybrid configuration with **multiple tenants**, your output shows one AuthServer with the Name `EvoSts - <GUID>` for each tenant in hybrid with Exchange Server on-premises and the `Enabled` state should be `True` for all of these AuthServer objects.
+In case that Exchange Server on-premises runs a hybrid configuration with **multiple tenants**, your output shows one AuthServer with the Name `EvoSts - <GUID>` for each tenant in hybrid with Exchange Server on-premises and the `Enabled` state should be `True` for all of these AuthServer objects. Please make a note of the identifier `EvoSts - <GUID>`, as it will be required in the subsequent step.
 
 ## Enable HMA
 
@@ -181,15 +181,18 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 If the Exchange Server on-premises version is Exchange Server 2016 (CU18 or higher) or Exchange Server 2019 (CU7 or higher) and hybrid was configured by the help of the HCW downloaded **after September 2020**, run the following command in the Exchange Server on-premises Management Shell (EMS). For the `DomainName` parameter, use the tenant domain value, which is usually in the form `contoso.onmicrosoft.com`:
 
 ```powershell
-Set-AuthServer -Identity "EvoSTS - {GUID}" -DomainName "Tenant Domain" -IsDefaultAuthorizationEndpoint $true
+Set-AuthServer -Identity "EvoSTS - <GUID>" -DomainName "Tenant Domain" -IsDefaultAuthorizationEndpoint $true
 Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 ```
 
 In case Exchange Server on-premises is in hybrid with **multiple tenants**, there are multiple AuthServer objects present in the Exchange Server on-premises organizations with domains corresponding to each tenant. The `IsDefaultAuthorizationEndpoint` flag should be set to `True` for any one of these AuthServer objects. The flag can't be set to true for all the AuthServer objects and HMA would be enabled even if one of these AuthServer object `IsDefaultAuthorizationEndpoint` flag is set to true.
 
+> [!IMPORTANT]
+> When working with **multiple tenants** they must all be in the same cloud environment such as all in `Global` or all in `GCC`. They cannot exist in mix environments such as one tenant in `Global` and another one in `GCC`.
+
 ## Verify
 
-Once you enable HMA, a client's next sign in will use the new auth flow. Just turning on HMA won't trigger a reauthentication for any client, and it might take a while for Exchange to pick up the new settings.
+Once you enable HMA, a client's next sign in will use the new auth flow. Just turning on HMA won't trigger a reauthentication for any client, and it might take a while for Exchange Server to pick up the new settings. This process does not necessitate the creation of a new profile.
 
 You should also hold down the `CTRL` key at the same time you right-click the icon for the Outlook client (also in the Windows Notifications tray) and select `Connection Status`. Look for the client's SMTP address against an `AuthN` type of `Bearer\*`, which represents the bearer token used in OAuth.
 
@@ -287,12 +290,16 @@ It's recommended to document the `OwaVirtualDirectory` and `EcpVirtualDirectory`
    Restart-Service -Name W3SVC, WAS -Force
    ```
 
-10. To enable Hybrid Modern Authentication for `OWA` and `ECP`, you must first disable any other authentication method on these virtual directories. It's important to perform the configuration in the given order. Failing to do so may result in an error message during the command execution.<br><br>After running these commands, login to `OWA` and `ECP` will stop work until the OAuth authentication for those virtual directories has been activated. Ensure that all accounts are synchronized to Microsoft Entra ID, especially all accounts, which are used for administration. Otherwise, the login stops working until they're synchronized.<br>Accounts, such as the built-in Administrator, won't be synchronized with Microsoft Entra ID and, therefore, can't be used for administration once HMA for OWA and ECP has been enabled. This behavior is due to the `isCriticalSystemObject` attribute, which is set to `True` for some accounts.<br><br>Run these commands for each `OWA` and `ECP` virtual directory on each Exchange Server:
+10. To enable Hybrid Modern Authentication for `OWA` and `ECP`, you must first disable any other authentication method on these virtual directories. It's important to perform the configuration in the given order. Failing to do so may result in an error message during the command execution.<br><br>Run these commands for each `OWA` and `ECP` virtual directory on each Exchange Server to disable all other authentication methods:
 
       ```powershell
       Get-OwaVirtualDirectory -Server <computername> | Set-OwaVirtualDirectory -AdfsAuthentication $false –BasicAuthentication $false –FormsAuthentication $false –DigestAuthentication $false
       Get-EcpVirtualDirectory -Server <computername> | Set-EcpVirtualDirectory -AdfsAuthentication $false –BasicAuthentication $false –FormsAuthentication $false –DigestAuthentication $false
       ```
+
+      > [!IMPORTANT]
+      > Ensure that all accounts are synchronized to Microsoft Entra ID, especially all accounts, which are used for administration. Otherwise, the login stops working until they're synchronized.
+      > Accounts, such as the built-in Administrator, won't be synchronized with Microsoft Entra ID and, therefore, can't be used for administration once HMA for OWA and ECP has been enabled. This behavior is due to the `isCriticalSystemObject` attribute, which is set to `True` for some accounts.
 
 11. Enable OAuth for the `OWA` and `ECP` virtual directory. It's important to perform the configuration in the given order. Failing to do so may result in an error message during the command execution. For each `OWA` and `ECP` virtual directory on every Exchange Server, these commands must be run:
 
@@ -306,6 +313,8 @@ It's recommended to document the `OwaVirtualDirectory` and `EcpVirtualDirectory`
 If you want to use the Outlook for iOS and Android client together with Hybrid Modern Authentication, make sure to allow the AutoDetect service to connect to your Exchange Server on `TCP 443` (HTTPS):
 
 ```console
+<email_domain>.outlookmobile.com
+<email_domain>.outlookmobile.us
 52.125.128.0/20
 52.127.96.0/23
 ```
