@@ -227,7 +227,7 @@ To verify the record in Microsoft 365:
 
 1. Select **Save**.
 
-   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-TXT-save.png" alt-text="Screenshot of where you select Save to add an SPF TXT record.":::
+   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-TXT-spf-protection.png" alt-text="Screenshot of where you select Save to add an SPF TXT record.":::
 
 ## Advanced option: Skype for Business
 
