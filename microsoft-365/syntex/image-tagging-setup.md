@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: shrganguly
-ms.date: 07/27/2023
+ms.date: 06/12/2024
 ms.topic: conceptual
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence
@@ -30,7 +30,9 @@ Before you can use image tagging in Syntex, you must first link an Azure subscri
 
 ### Permissions
 
-You must have Global admin or SharePoint admin permissions to be able to access the Microsoft 365 admin center and set up image tagging in Syntex.  
+You must be a [SharePoint Administrator](/entra/identity/role-based-access-control/permissions-reference#sharepoint-administrator) or [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) to be able to access the Microsoft 365 admin center and set up image tagging.
+
+[!INCLUDE [global-administrator-note](../includes/global-administrator-note.md)]
 
 ## Set up image tagging
 
