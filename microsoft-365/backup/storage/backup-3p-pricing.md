@@ -4,7 +4,7 @@ ms.author: diksha
 author: diksha
 manager: mohitthakur
 audience: admin
-ms.reviewer: chuckedmonson
+ms.reviewer: brgussin
 ms.date: 06/13/2024
 ms.topic: conceptual
 ms.service: microsoft-365-backup
@@ -27,7 +27,7 @@ Usage of Microsoft 365 Backup Storage is billed to the application that has "con
 
 ### What’s counted towards protected backup storage?
 
-Microsoft 365 Backup Storage will charge applicaiton owners based on the content size of the following for the duration of Backup retention as calculated in the following manner:
+Microsoft 365 Backup Storage will charge application owners based on the content size of the following for the duration of Backup retention as calculated in the following manner:
 
 - Cumulative size of the mailboxes, SharePoint sites, and OneDrive accounts being protected. Size of OneDrive accounts and SharePoint sites are the size of the live OneDrive accounts and SharePoint sites as displayed in the live sites’ usage reports, plus the size of their recycle bins. Mailboxes are the size of the user's mailbox plus their online archives plus deleted items held for Backup.
 
