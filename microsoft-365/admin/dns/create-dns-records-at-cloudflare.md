@@ -51,8 +51,6 @@ Follow these steps to automatically verify and set up your Cloudflare domain wit
 
 1. Select the three dots (more actions) \> choose **Manage DNS**.
 
-    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Select Start setup.":::
-
 1. On the How do you want to connect your domain? page, select **Continue**.
 
 1. On the Add DNS records page, select **Add DNS records**.
@@ -136,8 +134,6 @@ To verify the record in Microsoft 365:
 1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
 
 1. On the Domains page, select the domain that you're verifying, and select **Manage DNS**.
-
-    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Select Start setup.":::
 
 1. Select **Continue**.
 
