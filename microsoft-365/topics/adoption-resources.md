@@ -1,5 +1,5 @@
 ---
-ms.date: 06/12/2023
+ms.date: 01/01/2024
 title: Adoption resources for Topics
 ms.author: jobadach
 author: daisyfell

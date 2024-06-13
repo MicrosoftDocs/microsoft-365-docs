@@ -1,5 +1,5 @@
 ---
-ms.date: 11/15/2021
+ms.date: 01/01/2024
 title: Restrict access to topics in Topics
 ms.author: cjtan
 author: daisyfell

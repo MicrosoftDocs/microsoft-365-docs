@@ -1,5 +1,5 @@
 ---
-ms.date: 08/23/2023
+ms.date: 01/01/2024
 title: Merge topics in Topics
 ms.author: ninay
 author: daisyfell

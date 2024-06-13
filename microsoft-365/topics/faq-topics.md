@@ -1,5 +1,5 @@
 ---
-ms.date: 07/17/2023
+ms.date: 01/01/2024
 title: Frequently asked questions about Topics
 ms.author: cjtan
 author: daisyfell

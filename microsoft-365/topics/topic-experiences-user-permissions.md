@@ -1,5 +1,5 @@
 ---
-ms.date: 04/20/2023
+ms.date: 01/01/2024
 title: Manage topic permissions in Topics
 ms.author: mithunas
 author: daisyfell

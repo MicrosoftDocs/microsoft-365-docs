@@ -1,5 +1,5 @@
 ---
-ms.date: 12/07/2023
+ms.date: 01/01/2024
 title: Use Topics cards in the Viva Connections dashboard
 ms.author: akashravi
 author: daisyfell

@@ -1,5 +1,5 @@
 ---
-ms.date: 09/11/2023
+ms.date: 01/01/2024
 title: Topics lightweight management in Viva Engage
 ms.author: ergradel
 author: daisyfell

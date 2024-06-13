@@ -1,5 +1,5 @@
 ---
-ms.date: 08/14/2023
+ms.date: 01/01/2024
 title: Supported languages in Topics
 ms.author: ninay
 author: daisyfell

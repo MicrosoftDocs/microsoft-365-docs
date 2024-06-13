@@ -1,5 +1,5 @@
 ---
-ms.date: 11/29/2021
+ms.date: 01/01/2024
 title: Save a topic as a draft in Topics
 ms.author: cjtan
 author: daisyfell

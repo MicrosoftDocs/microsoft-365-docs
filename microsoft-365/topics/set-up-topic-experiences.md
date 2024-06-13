@@ -1,5 +1,5 @@
 ---
-ms.date: 10/6/2023
+ms.date: 01/01/2024
 title: Set up and manage Topics
 ms.author: mithunas
 author: daisyfell

@@ -1,5 +1,5 @@
 ---
-ms.date: 09/27/2023
+ms.date: 01/01/2024
 title: Create a new topic in Topics
 ms.author: ergradel
 author: daisyfell

@@ -1,5 +1,5 @@
 ---
-ms.date: 11/13/2023
+ms.date: 01/01/2024
 title: Get your environment ready for Topics
 ms.author: cjtan
 author: daisyfell

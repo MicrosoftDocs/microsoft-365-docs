@@ -1,5 +1,5 @@
 ---
-ms.date: 03/14/2023
+ms.date: 01/01/2024
 title: Change the name of the topic center in Topics
 ms.author: mithunas
 author: daisyfell

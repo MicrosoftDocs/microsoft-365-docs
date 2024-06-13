@@ -1,5 +1,5 @@
 ---
-ms.date: 10/17/2023
+ms.date: 01/01/2024
 title: Manage topics at scale in Topics
 ms.author: starscott
 author: daisyfell
