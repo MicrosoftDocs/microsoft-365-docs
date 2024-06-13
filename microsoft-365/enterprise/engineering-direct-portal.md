@@ -24,6 +24,12 @@ ai-usage:
 
 The Engineering Direct Portal is a new feature within the Microsoft 365 admin center designed to provide Office Engineering Direct (OED) customers with an enhanced engineering experience. This article provides an overview of the portal's features, how to access it, and its functionality.
 
+The Engineering Direct Portal offers:
+
+- Delivery metrics to help highlight what OED provides and how you use the service
+- Direct access to request OED deliverables that today require manual engagements
+- Additional service health diagnostics and reports
+
 ## Accessing the Engineering Direct Portal
 
 The Engineering Direct Portal is located under **Support** within the Microsoft 365 admin center. To access the portal, follow these steps:
