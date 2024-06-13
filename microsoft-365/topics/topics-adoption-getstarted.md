@@ -1,6 +1,6 @@
 ---
 title: Get started driving adoption of Topics
-ms.author: jobadach
+ms.author: daisyfeller
 author: daisyfell
 manager: elizapo
 ms.reviewer: daisyfeller

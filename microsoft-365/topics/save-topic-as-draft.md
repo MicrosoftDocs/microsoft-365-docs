@@ -1,7 +1,7 @@
 ---
 ms.date: 01/01/2024
 title: Save a topic as a draft in Topics
-ms.author: cjtan
+ms.author: daisyfeller
 author: daisyfell
 manager: elizapo
 ms.reviewer: daisyfeller

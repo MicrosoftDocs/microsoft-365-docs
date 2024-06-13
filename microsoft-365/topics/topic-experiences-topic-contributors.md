@@ -1,7 +1,7 @@
 ---
 ms.date: 01/01/2024
 title: Topic Contributors—Share knowledge and expertise in Topics
-ms.author: cjtan
+ms.author: daisyfeller
 author: daisyfell
 manager: elizapo
 audience: admin

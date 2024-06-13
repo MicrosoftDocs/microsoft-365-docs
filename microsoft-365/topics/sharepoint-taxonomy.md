@@ -1,6 +1,6 @@
 ---
 title: Use SharePoint taxonomy terms to create topics in Topics
-ms.author: cjtan
+ms.author: daisyfeller
 author: daisyfell
 manager: elizapo
 ms.reviewer: daisyfeller

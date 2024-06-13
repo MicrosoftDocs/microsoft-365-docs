@@ -1,7 +1,7 @@
 ---
 ms.date: 01/01/2024
 title: Restrict access to topics in Topics
-ms.author: cjtan
+ms.author: daisyfeller
 author: daisyfell
 manager: elizapo
 ms.reviewer: daisyfeller

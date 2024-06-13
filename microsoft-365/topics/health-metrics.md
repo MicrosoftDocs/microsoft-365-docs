@@ -1,6 +1,6 @@
 ---
 title: Adoption health metrics in Topics
-ms.author: mgrewal
+ms.author: daisyfeller
 author: daisyfell
 manager: elizapo
 ms.reviewer: daisyfeller

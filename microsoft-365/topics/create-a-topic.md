@@ -1,7 +1,7 @@
 ---
 ms.date: 01/01/2024
 title: Create a new topic in Topics
-ms.author: ergradel
+ms.author: daisyfeller
 author: daisyfell
 manager: elizapo
 ms.reviewer: daisyfeller

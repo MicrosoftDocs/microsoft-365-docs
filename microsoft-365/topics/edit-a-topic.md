@@ -1,7 +1,7 @@
 ---
 ms.date: 01/01/2024
 title: Edit an existing topic in Topics
-ms.author: sunar
+ms.author: daisyfeller
 author: daisyfell
 manager: elizapo
 audience: admin

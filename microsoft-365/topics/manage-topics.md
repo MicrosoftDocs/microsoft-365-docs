@@ -1,7 +1,7 @@
 ---
 ms.date: 01/01/2024
 title: Manage topics in the topic center in Topics
-ms.author: starscott
+ms.author: daisyfeller
 author: daisyfell
 manager: elizapo
 ms.reviewer: daisyfeller

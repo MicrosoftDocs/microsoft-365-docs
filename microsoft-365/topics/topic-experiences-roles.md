@@ -1,7 +1,7 @@
 ---
 ms.date: 01/01/2024
 title: Roles in Topics
-ms.author: cjtan
+ms.author: daisyfeller
 author: daisyfell
 manager: elizapo
 ms.reviewer: daisyfeller

@@ -1,7 +1,7 @@
 ---
 ms.date: 01/01/2024
 title: Topic center overview in Topics
-ms.author: sunar
+ms.author: daisyfeller
 author: daisyfell
 manager: elizapo
 ms.reviewer: daisyfeller

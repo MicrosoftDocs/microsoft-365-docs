@@ -1,7 +1,7 @@
 ---
 ms.date: 01/01/2024
 title: Frequently asked questions about Topics
-ms.author: cjtan
+ms.author: daisyfeller
 author: daisyfell
 manager: elizapo
 audience: admin
