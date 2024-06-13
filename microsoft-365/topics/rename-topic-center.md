@@ -19,7 +19,7 @@ description: Learn how to change the name of the topic center in Topics.
 
 # Change the name of the topic center in Topics
 
-You can change the name of your topic center in the [Microsoft 365 admin center](https://admin.microsoft.com). You must be a global administrator or SharePoint administrator to perform these tasks.
+You can change the name of your topic center in the [Microsoft 365 admin center](https://admin.microsoft.com). You must be a SharePoint administrator to perform these tasks.
 
 ## Access topics management settings
 

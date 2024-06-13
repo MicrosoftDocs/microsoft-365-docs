@@ -36,7 +36,7 @@ Trials are publicly available from one of the following sources. These trials of
     5. Select **Get free trial**.
     6. Follow the remaining wizard steps to confirm the trial.
 
-You must be a Microsoft 365 global administrator or billing administrator to activate a trial.
+You must be a Microsoft 365 billing administrator to activate a trial.
 
 > [!NOTE]
 >
@@ -47,8 +47,8 @@ You must be a Microsoft 365 global administrator or billing administrator to act
 
 |Role|Activity|
 |---|---|
-|Microsoft 365 global admin or billing admin|Activate the trial and assign licenses|
-|Microsoft 365 global admin or SharePoint admin|Configure  Topics and create topic centers|
+|Microsoft 365 billing admin|Activate the trial and assign licenses|
+|Microsoft 365 SharePoint admin|Configure  Topics and create topic centers|
 |Business user|Perform knowledge manager, topic contributor, and topic consumer roles|
 
 ### Before you activate a trial
