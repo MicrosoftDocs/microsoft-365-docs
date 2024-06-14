@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 06/29/2023
+ms.date: 06/14/2024
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
@@ -32,7 +32,7 @@ description: "Get a periodic report of how people in your organization are using
 
 Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
-You can easily see how people in your business are using Microsoft 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who may not need a Microsoft 365 license at all. Perpetual license model won't be included in the reports. 
+You can easily see how people in your business are using Microsoft 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who may not need a Microsoft 365 license at all. Perpetual license model won't be included in the reports.
   
 Reports are available for the last 7 days, 30 days, 90 days, and 180 days. Data won't exist for all reporting periods right away. The reports typically become available within 48 hours, but might sometimes take several days
 to become available.
@@ -93,14 +93,16 @@ Depending on your subscription, here are the available reports in all environmen
 
 |Report|Public|GCC|GCC-High|DoD|Microsoft 365 operated by 21Vianet|
 |:-----|:-----|:-----|:-----|:-----|:-----|
+|[Active Users](active-users-ww.md)|Yes|Yes|Yes|Yes|Yes|
 |[Microsoft browser usage](browser-usage-report.md)|Yes|N/A<sup>1</sup>|N/A<sup>1</sup>|N/A<sup>1</sup>|N/A<sup>1</sup>|
+|[Copilot for Microsoft 365 readiness report](microsoft-365-copilot-readiness.md)|Yes|N/A<sup>2</sup>|N/A<sup>2</sup>|N/A<sup>2</sup>|N/A<sup>2</sup>|
+|[Copilot for Microsoft 365 usage report](microsoft-365-copilot-usage.md)|Yes|N/A<sup>2</sup>|N/A<sup>2</sup>|N/A<sup>2</sup>|N/A<sup>2</sup>|
 |[Email activity](email-activity-ww.md)|Yes|Yes|Yes|Yes|Yes|
 |[Email apps usage](email-apps-usage-ww.md)|Yes|Yes|Yes|Yes|Yes|
 |[Mailbox usage](mailbox-usage.md)|Yes|Yes|Yes|Yes|Yes|
-|[Office activations](microsoft-office-activations-ww.md)|Yes|Yes|Yes|Yes|Yes|
-|[Active Users](active-users-ww.md)|Yes|Yes|Yes|Yes|Yes|
 |[Microsoft 365 groups](office-365-groups-ww.md)|Yes|Yes|Yes|Yes|Yes|
 |[Microsoft 365 Apps usage](microsoft365-apps-usage-ww.md)|Yes|Yes|N/A<sup>1</sup>|N/A<sup>1</sup>|Yes
+|[Office activations](microsoft-office-activations-ww.md)|Yes|Yes|Yes|Yes|Yes|
 |[OneDrive for Business user activity](onedrive-for-business-activity-ww.md)|Yes|Yes|Yes|Yes|Yes|
 |[OneDrive for Business usage](onedrive-for-business-usage-ww.md)|Yes|Yes|Yes|Yes|Yes|
 |[SharePoint site usage](sharepoint-site-usage-ww.md)|Yes|Yes|Yes|Yes|Yes|
@@ -122,7 +124,6 @@ Depending on your subscription, here are the available reports in all environmen
 |[Project activity](project-activity.md)|Yes|Yes|N/A<sup>1</sup>|N/A<sup>1</sup>|N/A<sup>2</sup>|
 |[Visio activity](visio-activity.md)|Yes|Yes|N/A<sup>1</sup>|N/A<sup>1</sup>|N/A<sup>2</sup>|
 |[Viva Goals activity](viva-goals-activity.md)|Yes|N/A<sup>2</sup>|N/A<sup>2</sup>|N/A<sup>2</sup>|N/A<sup>2</sup>|
-|[Microsoft 365 Copilot usage report](microsoft-365-copilot-usage.md)|Yes|N/A<sup>2</sup>|N/A<sup>2</sup>|N/A<sup>2</sup>|N/A<sup>2</sup>|
 
 N/A<sup>1</sup>: The report is planned to be released in the future. The <a href="https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=" target="_blank">Microsoft 365 Roadmap</a> will be updated before the release.
 
@@ -191,10 +192,10 @@ Global administrators can revert this change for their tenant and show identifia
 
 3. Uncheck the statement **Display concealed user, group, and site names in all reports**, and then save your changes.
 
-Beginning on June 23, 2022, an API will gradually become available to all environments for global admins to change this setting without needing to visit the Microsoft 365 admin center. 
+Beginning on June 23, 2022, an API will gradually become available to all environments for global admins to change this setting without needing to visit the Microsoft 365 admin center.
 The API details are below:  
 
-The URL is https://graph.microsoft.com/beta/admin/reportSettings 
+The URL is <https://graph.microsoft.com/beta/admin/reportSettings>
 
 Two methods have been approved for this API:
 
