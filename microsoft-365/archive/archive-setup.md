@@ -47,7 +47,9 @@ To set up pay-as-you-go billing, see [Configure Microsoft Syntex for pay-as-you-
 
 ### Permissions
 
-You must have Global admin or SharePoint admin permissions to be able to access the Microsoft 365 admin center and set up Microsoft 365 Archive.
+You must be a [SharePoint Administrator](/entra/identity/role-based-access-control/permissions-reference#sharepoint-administrator) or [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) to be able to access the Microsoft 365 admin center and set up Microsoft 365 Archive.
+
+[!INCLUDE [global-administrator-note](../includes/global-administrator-note.md)]
 
 ## Set up Microsoft 365 Archive
 
