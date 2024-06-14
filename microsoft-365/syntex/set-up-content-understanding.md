@@ -52,7 +52,9 @@ Prior to setup, make sure to plan for the best way to set up and configure conte
 ## Requirements
 
 > [!NOTE]
-> You must have Global admin or SharePoint admin permissions to be able to access the Microsoft 365 admin center and set up Syntex.
+> You must be a [SharePoint Administrator](/entra/identity/role-based-access-control/permissions-reference#sharepoint-administrator) or [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) to be able to access the Microsoft 365 admin center and set up Syntex.
+
+[!INCLUDE [global-administrator-note](../includes/global-administrator-note.md)]
 
 As an admin, you can also make changes to your selected settings anytime after setup, and throughout the content understanding management settings in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
