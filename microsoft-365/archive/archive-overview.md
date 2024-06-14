@@ -47,6 +47,11 @@ Archiving a site archives everything within it, including:
 - Lists and list data
 
 Administrators should notify the site owners and end users before a site is archived so they're aware that the site won't be accessible.
+
+## Limitations
+
+Document Center templates are not available to archive with Microsoft 365 Archive.
+
 <!---
 ## Preview limitations
 
