@@ -1,7 +1,7 @@
 ---
-ms.date: 08/03/2023
+ms.date: 01/01/2024
 title: Topic discovery and curation in Topics
-ms.author: cjtan
+ms.author: daisyfeller
 author: daisyfell
 manager: elizapo
 ms.reviewer: daisyfeller

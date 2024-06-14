@@ -60,12 +60,19 @@ Once you have the information on this list, you're ready to perform the followin
 5. If you *don't* have an Azure subscription or resource group, follow these steps. If you have an Azure subscription and resource group, go directly to step 6.
 
     To create a new Azure subscription with the same organization and Microsoft Entra tenant as your Microsoft 365 subscription:
-    1. Sign in to the [Azure portal](https://portal.azure.com/) with your Microsoft 365 admin, Microsoft Entra DC admin, or Global admin account.
+
+    1. Sign in to the [Azure portal](https://portal.azure.com/) with your Microsoft 365 admin, Microsoft Entra DC admin, or [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) account.
+
+        [!INCLUDE [global-administrator-note](../../includes/global-administrator-note.md)]
+
     2. In the left navigation, select **Subscriptions**, and then select **Add**.
+
     3. On the **Add subscription** page, select an offer and complete the payment information and agreement.
 
     To create a new Azure resource group:
+
     1. On the **Set up pay-as-you-go billing** panel, select **Learn more about Azure resource groups**.
+
     2. Or, you can follow steps in [Manage Azure resource groups by using the Azure portal](/azure/azure-resource-manager/management/manage-resource-groups-portal) to create a resource group.
 
 > [!NOTE]
