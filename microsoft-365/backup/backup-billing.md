@@ -41,7 +41,9 @@ Use these steps to set up pay-as-you-go billing for Microsoft 365 Backup.
 
     To create a new Azure subscription with the same organization and Microsoft Entra tenant as your Microsoft 365 subscription:
 
-    1. Sign in to the [Azure portal](https://portal.azure.com) with your Microsoft 365 admin, Microsoft Entra DC admin, or Global admin account.
+    1. Sign in to the [Azure portal](https://portal.azure.com) with your Microsoft 365 admin, Microsoft Entra DC admin, or [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) account.
+
+        [!INCLUDE [global-administrator-note](../includes/global-administrator-note.md)]
 
     1. In the left navigation, select **Subscriptions**, and then select **Add**.
 
