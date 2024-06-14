@@ -36,7 +36,7 @@ The content center site can be provisioned from the [SharePoint look book servic
 ![Screenshot of the content center site template provisioning page.](../media/content-understanding/content-center-site-provisioning-page.png)
 
 > [!NOTE]
-> You must be a [SharePoint Administrator](/entra/identity/role-based-access-control/permissions-reference#sharepoint-administrator) or [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) to be able to access the Microsoft 365 admin center and set up prebuilt document processing.
+> You must be a [SharePoint Administrator](/entra/identity/role-based-access-control/permissions-reference#sharepoint-administrator) or [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) to provision the site.
 
 [!INCLUDE [global-administrator-note](../includes/global-administrator-note.md)]
 
