@@ -67,9 +67,6 @@ Data columns shown are:
 
 [!INCLUDE [Microsoft 365 worldwide endpoints](../includes/office-365-worldwide-endpoints.md)]
 
-> [!NOTE]
-> For recommendations on Viva Engage IP addresses and URLs, see [Using hard-coded IP addresses for Viva Engage is not recommended](https://techcommunity.microsoft.com/t5/yammer-Blog/Using-hard-coded-IP-addresses-for-yammer-is-not-recommended/ba-p/276592) on the Viva Engage blog.
-
 ## Related Topics
 
 [Additional endpoints not included in the Microsoft 365 IP Address and URL Web service](additional-office365-ip-addresses-and-urls.md)

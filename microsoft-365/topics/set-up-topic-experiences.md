@@ -1,7 +1,7 @@
 ---
-ms.date: 10/6/2023
+ms.date: 01/01/2024
 title: Set up and manage Topics
-ms.author: mithunas
+ms.author: daisyfeller
 author: daisyfell
 manager: elizapo
 ms.reviewer: daisyfeller
@@ -25,7 +25,7 @@ You can use the Microsoft 365 admin center to set up and configure [Topics](topi
 
 It's important to plan the best way to set up and configure topics in your environment. Be sure to read [Plan for Topics](plan-topic-experiences.md) before you begin the procedures in this article.
 
-You must be [subscribed to a license that includes Topics](https://www.microsoft.com/microsoft-viva/topics) and be a global administrator, or both SharePoint administrator and groups administrator to access the Microsoft 365 admin center and set up Topics.
+You must be [subscribed to a license that includes Topics](https://www.microsoft.com/microsoft-viva/topics) and be both SharePoint administrator and groups administrator to access the Microsoft 365 admin center and set up Topics.
 
 > [!IMPORTANT]
 > If you have configured SharePoint to [require managed devices](/sharepoint/control-access-from-unmanaged-devices), you must set up Topics from a managed device.
