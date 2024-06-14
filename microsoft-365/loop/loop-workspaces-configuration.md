@@ -1,5 +1,5 @@
 ---
-ms.date: 08/21/2023
+ms.date: 06/14/2024
 title: "Manage Loop workspaces in SharePoint Embedded"
 ms.reviewer: dancost, tonchan
 ms.author: v-smandalika
