@@ -165,12 +165,14 @@ Before proceeding with a passwordless authentication method, determine whether i
 
 See the following table to assess passwordless authentication methods for your frontline scenario.
 
-|Method|OS support|Requires personal device|Supports multifactor authentication |
-|------|----------|------------------------|-------------------------------------|
+|Method|OS support|Requires personal device|Supports MFA|
+|------|----------|----------|----------|
+|Microsoft Authenticator |All |Yes |Yes |
 |SMS sign in |Android and iOS |Yes |No |
 |Windows Hello |Windows |No |Yes |
-|Microsoft Authenticator |All |Yes |Yes |
-|FIDO2 Key |Windows |No |Yes |
+|FIDO2 key |Windows |No |Yes |
+
+To learn more, see [Passwordless authentication options for Microsoft Entra ID](/entra/identity/authentication/concept-authentication-passwordless) and [Configure and enable users for SMS-based authentication using Microsoft Entra ID](/entra/identity/authentication/howto-authentication-sms-signin).
 
 ## Authorization
 
@@ -188,7 +190,7 @@ With conditional access, you can create rules that limit access based on the fol
 - App
 - Real-time and calculated risk detection
 
-Conditional Access policies can be used to block access when a user is on a non-compliant device or while they’re on an untrusted network. For example, you might want to use conditional access to prevent users from accessing an inventory app when they aren’t on the work network or are using an unmanaged device, depending on your organization’s analysis of applicable laws.
+Conditional Access policies can be used to block access when a user is on a noncompliant device or while they’re on an untrusted network. For example, you might want to use conditional access to prevent users from accessing an inventory app when they aren’t on the work network or are using an unmanaged device, depending on your organization’s analysis of applicable laws.
 
 For BYOD scenarios where it makes sense to access data outside of work, such as HR-related information, shift management, chat about swapping shifts, or non-business-related apps, you might choose to implement more permissive conditional access policies alongside strong authentication methods like MFA.
 
@@ -196,7 +198,7 @@ To learn more, see the [Microsoft Entra Conditional Access documentation](/azure
 
 ### App protection policies
 
-With mobile application management (MAM) from Intune, you can use app protection policies with apps that have integrated with the Intune [App SDK](/mem/intune/developer/app-sdk-get-started). This allows you to further protect your organization’s data within an app.
+With mobile application management (MAM) from Intune, you can use app protection policies with apps that are integrated with the Intune [App SDK](/mem/intune/developer/app-sdk-get-started). This allows you to further protect your organization’s data within an app.
 
 With app protection policies you can add access control safeguards, such as:
 
