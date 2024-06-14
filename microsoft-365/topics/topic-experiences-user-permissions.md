@@ -1,7 +1,7 @@
 ---
-ms.date: 04/20/2023
+ms.date: 01/01/2024
 title: Manage topic permissions in Topics
-ms.author: mithunas
+ms.author: daisyfeller
 author: daisyfell
 manager: elizapo
 ms.reviewer: daisyfeller
@@ -20,7 +20,7 @@ description: Learn how to administer topic permissions in Topics.
 
 # Manage topic permissions in Topics
 
-You can manage topic permissions settings in the [Microsoft 365 admin center](https://admin.microsoft.com). You must be a global administrator or SharePoint administrator to perform these tasks.
+You can manage topic permissions settings in the [Microsoft 365 admin center](https://admin.microsoft.com). You must be a SharePoint administrator to perform these tasks.
 
 With topic permissions settings you can choose:
 
