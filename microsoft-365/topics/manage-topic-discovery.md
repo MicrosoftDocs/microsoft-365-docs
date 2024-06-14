@@ -20,7 +20,7 @@ description: Learn how to administer topic discovery in Topics.
 
 # Manage topic discovery in Topics
 
-You can manage topic discovery settings in the [Microsoft 365 admin center](https://admin.microsoft.com). You must be a global administrator or SharePoint administrator to perform these tasks.
+You can manage topic discovery settings in the [Microsoft 365 admin center](https://admin.microsoft.com). You must be a SharePoint administrator to perform these tasks.
 
 ## To access topics management settings
 

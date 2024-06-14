@@ -71,7 +71,7 @@ Knowledge managers need to be able to coordinate with all Topics stakeholders in
 
 ## Topics admin
 
-Topics admins are admins who set up and configure Topics in your Microsoft 365 environment. They also manage the Topics settings after set up has completed. To administer Topics, you must be a Microsoft 365 global administrator, or a SharePoint administrator and Groups administrator, since setup and management are done in the Microsoft 365 admin center.
+Topics admins are admins who set up and configure Topics in your Microsoft 365 environment. They also manage the Topics settings after set up has completed. To administer Topics, you must be a SharePoint administrator and Groups administrator, since setup and management are done in the Microsoft 365 admin center.
 
 During setup, Topics admins can configure Topics to:
 
