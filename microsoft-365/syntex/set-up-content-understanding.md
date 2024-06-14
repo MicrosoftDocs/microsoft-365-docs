@@ -29,17 +29,17 @@ For an overview of licensing options for Microsoft Syntex, see [Licensing for Mi
 
 ## Plan for per-user licenses
 
-To use Microsoft Syntex per-user licensing, your organization must have a subscription to Syntex, and each user must have a license assigned. Licenses include the following apps, which must all be assigned:
+To use Microsoft Syntex per-user licensing, your organization must have a subscription to Microsoft Syntex, and each user must have a license assigned. Licenses include the following apps, which must all be assigned:
 
-- Syntex
-- Syntex - SPO type
-- Common Data Service for Syntex
+- Microsoft Syntex
+- Microsoft Syntex - SPO type
+- Common Data Service for Microsoft Syntex
 
-To use structured document processing or freeform document processing models, you also need AI Builder credits. For each licensed user of Syntex, an allocation of AI Builder credits is provided each month.
+To use structured document processing or freeform document processing models, you also need AI Builder credits. For each licensed user of Microsoft Syntex, an allocation of AI Builder credits is provided each month.
 
 Consider the following before you start:
 
-- In which SharePoint sites will you enable document processing? All of them, some, or select sites?
+- In which SharePoint sites will you enable structured document processing? All of them, some, or select sites?
 - What will you name your default content center?
 
 You can change your settings after initial setup in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
@@ -52,7 +52,9 @@ Prior to setup, make sure to plan for the best way to set up and configure conte
 ## Requirements
 
 > [!NOTE]
-> You must have Global admin or SharePoint admin permissions to be able to access the Microsoft 365 admin center and set up Syntex.
+> You must be a [SharePoint Administrator](/entra/identity/role-based-access-control/permissions-reference#sharepoint-administrator) or [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) to be able to access the Microsoft 365 admin center and set up Syntex.
+
+[!INCLUDE [global-administrator-note](../includes/global-administrator-note.md)]
 
 As an admin, you can also make changes to your selected settings anytime after setup, and throughout the content understanding management settings in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
