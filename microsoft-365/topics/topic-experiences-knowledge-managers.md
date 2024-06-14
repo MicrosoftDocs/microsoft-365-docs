@@ -1,7 +1,7 @@
 ---
-ms.date: 07/11/2023
+ms.date: 01/01/2024
 title: Knowledge managers—Build and manage a knowledge base in Topics
-ms.author: ergradel
+ms.author: daisyfeller
 author: daisyfell
 manager: elizapo
 audience: admin
