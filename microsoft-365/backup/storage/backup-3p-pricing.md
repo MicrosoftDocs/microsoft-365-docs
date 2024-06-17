@@ -5,7 +5,7 @@ author: diksha
 manager: mohitthakur
 audience: admin
 ms.reviewer: brgussin
-ms.date: 06/13/2024
+ms.date: 06/17/2024
 ms.topic: conceptual
 ms.service: microsoft-365-backup
 ms.custom: backup
