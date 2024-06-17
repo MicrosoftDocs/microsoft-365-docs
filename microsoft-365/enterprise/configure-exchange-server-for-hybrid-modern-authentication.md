@@ -45,9 +45,9 @@ In this section, we provide information and steps that need to be done to succes
 
 ### Exchange Server specific prerequisites
 
-Your Exchange servers must fulfill the following requirements before Hybrid Modern Authentication can be configured and enabled. It's recommended to always run the [latest Exchange Server Cumulative Update (CU)](/exchange/new-features/build-numbers-and-release-dates).
+Your Exchange servers must fulfill the following requirements before Hybrid Modern Authentication can be configured and enabled. In case you have a hybrid configuration, you must run the latest Cumulative Update (CU) to be in a supported state. You can find the supported Exchange Server versions and build in the [Exchange Server supportability matrix](/exchange/plan-and-deploy/supportability-matrix#supported-versions-and-builds).
 
-More details can be found in the [Hybrid Modern Authentication overview and prerequisites for using it with on-premises Skype for Business and Exchange servers](hybrid-modern-auth-overview.md) documentation.
+More information can also be found in the [Hybrid Modern Authentication overview and prerequisites for using it with on-premises Skype for Business and Exchange servers](hybrid-modern-auth-overview.md) documentation.
 
 - Make sure that there are no end-of-life Exchange servers in the organization.
 - Exchange Server 2016 must be running CU8 or later.
