@@ -124,3 +124,8 @@ sections:
           How many add-ins can I deploy?
         answer: |
           A total of 200 Excel, Outlook, PowerPoint, and Word add-ins can be deployed by admins within their tenant.
+
+      - question: |
+          Why do add-in deployment times for Word, Excel, and PowerPoint differ compared to Outlook add-ins?
+        answer: |
+          There are architectural differences between add-in deployments for Word, Excel, and PowerPoint vs Outlook.
