@@ -47,13 +47,14 @@ In this section, we provide information and steps that need to be done to succes
 
 Your Exchange servers must fulfill the following requirements before Hybrid Modern Authentication can be configured and enabled. In case you have a hybrid configuration, you must run the latest Cumulative Update (CU) to be in a supported state. You can find the supported Exchange Server versions and build in the [Exchange Server supportability matrix](/exchange/plan-and-deploy/supportability-matrix#supported-versions-and-builds).
 
-More information can also be found in the [Hybrid Modern Authentication overview and prerequisites for using it with on-premises Skype for Business and Exchange servers](hybrid-modern-auth-overview.md) documentation.
-
 - Make sure that there are no end-of-life Exchange servers in the organization.
 - Exchange Server 2016 must be running CU8 or later.
 - Exchange Server 2019 must be running CU1 or later.
 - Make sure that all servers can connect to the internet. If a proxy is required, [configure Exchange Server to use it](/powershell/module/exchange/set-exchangeserver#-internetwebproxy).
+- If you already have a hybrid configuration, make sure it's a classic hybrid deployment as modern hybrid doesn't support HMA.
 - Make sure that SSL Offloading is not used (it's unsupported). SSL Bridging, however, can be used and is supported.
+
+More information can also be found in the [Hybrid Modern Authentication overview and prerequisites for using it with on-premises Skype for Business and Exchange servers](hybrid-modern-auth-overview.md) documentation.
 
 ### Protocols that work with Hybrid Modern Auth
 
