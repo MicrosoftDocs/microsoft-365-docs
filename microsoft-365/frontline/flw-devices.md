@@ -24,7 +24,7 @@ ms.date:
 
 ## Overview
 
-Across every industry, frontline workers make up a large segment of the workforce. Frontline worker roles include retail associates, factory workers, field and service technicians, healthcare personnel, and many more. 
+Across every industry, frontline workers make up a large segment of the workforce. Frontline worker roles include retail associates, factory workers, field and service technicians, healthcare personnel, and many more.
 
 Because the workforce is largely mobile and often shift-based, managing the devices that frontline workers use is a key fundamental. Some questions to consider:
 
@@ -34,9 +34,11 @@ Because the workforce is largely mobile and often shift-based, managing the devi
 
 It’s important to set a secure, compliant baseline to manage devices for your workforce, whether they’re shared devices or workers’ own devices. This article gives you an overview of common frontline worker device scenarios and management capabilities to help empower your workforce while safeguarding company data.
 
+Use the information and considerations to help plan your frontline mobile device deployment and management strategy.
+
 ## Device deployment
 
-During planning, determine how you’ll deploy mobile devices to your frontline and the operating systems to support. Make these decisions up front so that you can evaluate the feasibility of your implementation plan and IT infrastructure with these factors in mind.
+A key step in planning is to determine how you’ll deploy mobile devices to your frontline and the operating systems to support. Make these decisions up front so that you can evaluate the feasibility of your implementation plan and IT infrastructure with these factors in mind.
 
 ### Deployment models
 
@@ -52,7 +54,7 @@ Shared devices and bring-your-own-device (BYOD) are the most commonly adopted de
 <sup>1</sup>Dedicated devices are uncommon in frontline deployments primarily due to high cost and effort to manage in the context of high staff turnover.
 <sup>2</sup>Kiosk device deployments aren’t recommended because they don’t allow user auditing and user-based security capabilities like multifactor authentication. [Learn more about kiosk devices](/windows/configuration/kiosk-methods).
 
-In this article, we focus on shared devices and BYOD as these are the deployment models that fit the practical needs of most frontline deployments. Read on for an overview of planning considerations and management capabilities, and then see the following resources for a deeper dive:
+We focus on shared devices and BYOD as these are the deployment models that fit the practical needs of most frontline deployments. Read on for an overview of planning considerations and management capabilities, and then see the following resources for a deeper dive:
 
 - [Manage shared devices for your frontline](flw-shared-devices.md)
 - [Manage personal devices (BYOD) for your frontline](flw-byod-devices.md)
@@ -121,7 +123,7 @@ To learn more, see:
 - [What is HR-driven provisioning with Microsoft Entra ID?](/entra/identity/app-provisioning/what-is-hr-driven-provisioning)
 - [Plan an automatic user provisioning deployment for Microsoft Entra ID](/entra/identity/app-provisioning/plan-auto-user-provisioning)
 
-### Delegate user management with My Staff
+#### Delegate user management with My Staff
 
 With the [My Staff](/azure/active-directory/roles/my-staff-configure) feature in Microsoft Entra ID, you can delegate common user management tasks to frontline managers through the My Staff portal. Frontline managers can perform password resets or manage phone numbers for frontline workers directly from the store or factory floor, without having to route the requests to helpdesk, operations, or IT.
 
@@ -139,7 +141,7 @@ You can integrate this capability into your line-of-business (LOB) apps using th
 
 Authentication features control who or what uses an account to gain access to applications, data, and resources.
 
-As previously mentioned, Microsoft 365 for frontline workers uses Microsoft Entra ID as the underlying identity service for securing Microsoft 365 apps and resources. To learn more, see [What is Microsoft Entra authentication?](/entra/identity/authentication/overview-authentication) and [What authentication and verification methods are available in Microsoft Entra ID?](/entra/identity/authentication/concept-authentication-methods).
+As previously mentioned, Microsoft 365 for frontline workers uses Microsoft Entra ID as the underlying identity service for securing Microsoft 365 apps and resources. To learn more about authentication in Microsoft Entra ID, see [What is Microsoft Entra authentication?](/entra/identity/authentication/overview-authentication) and [What authentication and verification methods are available in Microsoft Entra ID?](/entra/identity/authentication/concept-authentication-methods).
 
 ### Multifactor authentication
 
@@ -216,4 +218,6 @@ App protection policies are helpful in BYOD scenarios because they allow you to 
 
 ## Related articles
 
+- [Manage shared devices for your frontline](flw-shared-devices.md)
+- [Manage personal (BYOD) for your frontline](flw-byod-devices.md)
 - [Frontline worker management](/azure/active-directory/fundamentals/frontline-worker-management)
