@@ -70,7 +70,7 @@ You can find this information from the "?" option in the Stream UI, if you have 
 
 ## Viva Glint
 
-The data region for Viva Glint is determined by the default geography of the tenant, not individual users, and is stored in US or EU data centers based on central tenant location.
+The data region for Viva Glint is determined by the default geography of the tenant, not individual users, and is stored in US or EU data centers based on central tenant location. If the central tenant location is *outside* the US or EU, the data for Viva Glint is stored in the US data center.
 
 ## Viva Goals
 
