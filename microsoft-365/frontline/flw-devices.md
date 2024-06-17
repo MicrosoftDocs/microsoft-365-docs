@@ -32,9 +32,7 @@ Because the workforce is largely mobile and often shift-based, managing the devi
 - Are company-owned devices shared between workers or assigned to an individual?
 - Do workers take devices home or leave them at the workplace?
 
-It’s important to set a secure, compliant baseline to manage devices for your workforce, whether they’re shared devices or workers’ own devices. This article gives you an overview of common frontline worker device scenarios and management capabilities to help empower your workforce while safeguarding company data.
-
-Use the information and considerations to help plan your frontline mobile device deployment and management strategy.
+It’s important to set a secure, compliant baseline to manage devices for your workforce, whether they’re shared devices or workers’ own devices. This article gives you an overview of common frontline worker device scenarios and management capabilities to help empower your workforce while safeguarding company data. Use the information and considerations to help plan your frontline device deployment.
 
 ## Device deployment
 
