@@ -129,7 +129,7 @@ With the [My Staff](/azure/active-directory/roles/my-staff-configure) feature in
 
 My Staff also enables frontline managers to register their team members' phone numbers for SMS sign-in. If [SMS-based authentication](/azure/active-directory/authentication/howto-authentication-sms-signin) is enabled in your organization, frontline workers can sign in to Teams and other apps using only their phone numbers and a one-time passcode sent via SMS. This makes signing in for frontline workers simple and fast.
 
-## Shared device mode
+### Shared device mode
 
 With the [shared device mode](/azure/active-directory/develop/msal-shared-devices) feature of Microsoft Entra ID, you can configure devices to be shared by employees. This feature enables single sign-on (SSO) and device-wide sign out for Teams and all other apps that support shared device mode.
 
@@ -137,13 +137,13 @@ Here's how shared device mode works, using Teams as an example. When an employee
 
 You can integrate this capability into your line-of-business (LOB) apps using the [Microsoft Authentication Library (MSAL)](/entra/identity-platform/msal-overview).
 
-## Authentication
+### Authentication
 
 Authentication features control who or what uses an account to gain access to applications, data, and resources.
 
 As previously mentioned, Microsoft 365 for frontline workers uses Microsoft Entra ID as the underlying identity service for securing Microsoft 365 apps and resources. To learn more about authentication in Microsoft Entra ID, see [What is Microsoft Entra authentication?](/entra/identity/authentication/overview-authentication) and [What authentication and verification methods are available in Microsoft Entra ID?](/entra/identity/authentication/concept-authentication-methods).
 
-### Multifactor authentication
+#### Multifactor authentication
 
 Microsoft Entra multifactor authentication (MFA) works by requiring two or more of the following authentication methods at sign in:
 
@@ -159,7 +159,7 @@ MFA provides a high level of security for apps and data but adds ongoing frictio
 
 If MFA isn't feasible for your organization or deployment model, you should plan to use robust conditional access policies to reduce security risk.
 
-### Passwordless authentication
+#### Passwordless authentication
 
 To further simplify access for your frontline workforce, you can use passwordless authentication methods so that workers don’t need to remember or enter their passwords. Passwordless authentication methods are also typically more secure, and many can satisfy MFA requirements if necessary.
 
@@ -176,13 +176,13 @@ See the following table to assess passwordless authentication methods for your f
 
 To learn more, see [Passwordless authentication options for Microsoft Entra ID](/entra/identity/authentication/concept-authentication-passwordless) and [Configure and enable users for SMS-based authentication using Microsoft Entra ID](/entra/identity/authentication/howto-authentication-sms-signin).
 
-## Authorization
+### Authorization
 
 Authorization features control what an authenticated user can do or access. In Microsoft 365, this is achieved through a combination of Microsoft Entra Conditional Access policies and app protection policies.
 
 Implementing robust authorization controls is a critical component of securing a frontline shared devices deployment, particularly if it isn’t possible to implement strong authentication methods like MFA for cost or practicality reasons.
 
-### Microsoft Entra Conditional Access
+#### Microsoft Entra Conditional Access
 
 With conditional access, you can create rules that limit access based on the following signals:
 
@@ -198,7 +198,7 @@ For BYOD scenarios where it makes sense to access data outside of work, such as 
 
 To learn more, see the [Microsoft Entra Conditional Access documentation](/azure/active-directory/conditional-access/).
 
-### App protection policies
+#### App protection policies
 
 With mobile application management (MAM) from Intune, you can use app protection policies with apps that are integrated with the Intune [App SDK](/mem/intune/developer/app-sdk-get-started). This allows you to further protect your organization’s data within an app.
 
