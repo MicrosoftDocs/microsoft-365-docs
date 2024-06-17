@@ -9,7 +9,7 @@ audience: admin
 ms.service: microsoft-365-frontline
 ms.localizationpriority: high
 search.appverid: MET150
-description: Get an overview of managing mobile shared and BYOD devices for frontline workers in your organization. 
+description: Get an overview of managing mobile shared and BYOD devices for frontline workers in your organization. Use the information and considerations in this article to help plan your frontline device deployment. 
 ms.collection: 
   - m365-frontline
   - highpri
@@ -22,9 +22,9 @@ ms.date:
 
 # Frontline device management overview
 
-Across every industry, frontline workers make up a large segment of the workforce. Frontline worker roles include retail associates, factory workers, field and service technicians, healthcare personnel, and many more.
-
 ## Overview
+
+Across every industry, frontline workers make up a large segment of the workforce. Frontline worker roles include retail associates, factory workers, field and service technicians, healthcare personnel, and many more. 
 
 Because the workforce is largely mobile and often shift-based, managing the devices that frontline workers use is a key fundamental. Some questions to consider:
 
@@ -86,16 +86,16 @@ If you’re using a third-party MDM solution, you can integrate with [Intune par
 
 An app launcher is an app that lets you provide a focused experience for your frontline with a customized launch screen, such as apps, wallpaper, and icon positions. You can show only the relevant apps that your frontline workers need to use and widgets that highlight key information.
 
-Most MDM solutions provide their own app launcher. For example, Microsoft Intune provides Managed Home Screen (MHS). You can also build your own custom launcher.
+Most MDM solutions provide their own app launcher. For example, Microsoft Intune provides Managed Home Screen. You can also build your own custom launcher.
 
 The following table lists some of the most common app launchers available today for Android devices by Microsoft and third-party developers.
 
 |App launcher |Capabilities|
 |-------------|------------|
-|Managed Home Screen |Use Managed Home Screen when you want your users to have access to a specific set of apps on your Intune-enrolled dedicated devices. Because Managed Home Screen can be automatically launched as the default home screen on the device and appears to the user as the only home screen, it’s useful in shared devices scenarios when a locked-down experience is required. |
-|VMware Workspace ONE Launcher |If you’re using VMware, the Workspace ONE Launcher is the best tool to curate a set of apps that your frontline needs access to. VMware Workspace ONE Launcher doesn’t currently support shared device mode for global sign and global sign out from the launcher. Therefore, the FLW Users will need to sign in and sign out of Teams upon each use.|
+|Managed Home Screen |Use Managed Home Screen when you want your users to have access to a specific set of apps on your Intune-enrolled dedicated devices. Because Managed Home Screen can be automatically launched as the default home screen on the device and appears to the user as the only home screen, it’s useful in shared devices scenarios when a locked-down experience is required. [Learn more](/mem/intune/apps/app-configuration-managed-home-screen-app).|
+|VMware Workspace ONE Launcher |If you’re using VMware, the Workspace ONE Launcher is the best tool to curate a set of apps that your frontline needs access to. VMware Workspace ONE Launcher doesn’t currently support shared device mode for global sign and global sign out from the launcher. Therefore, the FLW Users will need to sign in and sign out of Teams upon each use. [Learn more](https://docs.vmware.com/en/VMware-Workspace-ONE-UEM/2306/Launcher_Publication/GUID-AWLAUNCHERINTRO.html).|
 |SOTI|If you’re using SOTI, the SOTI app launcher is the best tool to curate a set of apps that your frontline needs to access. The SOTI app launcher supports shared device mode today.|
-|BlueFletch|BlueFletch Launcher can be used on devices, regardless of your MDM solution. BlueFletch supports shared device mode today. |
+|BlueFletch|[BlueFletch Launcher](https://docs.bluefletch.com/bluefletch-enterprise/product-guides/bluefletch-launcher) can be used on devices, regardless of your MDM solution. BlueFletch supports shared device mode today. [Learn more](https://soti.net/mc/help/v2024.0/en/console/system/microsoft_365_integration/change_device_reg_to_shared_mode_in_azure.html). |
 |Custom app launcher |If you want a fully customized experience, you can build out your own custom app launcher. You can integrate your launcher with shared device mode so that your users only need to sign in and out once. |
 
 ### Identity management
