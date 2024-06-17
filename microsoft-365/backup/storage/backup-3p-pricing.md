@@ -23,18 +23,18 @@ description: Learn about the charge model and pricing calculator for Microsoft 3
 
 ## Microsoft 365 Backup Storage charge model
 
-Usage of Microsoft 365 Backup Storage is billed to the application that has "controllership" of an end customer tenant's Microsoft 365 Backup operations. In other words, the application integrated with Microsoft 365 Backup Storage that is the master operator of a tenant's backups will be charged for the user-facing backup storage consumption. This is a [pay-as-you-go consumption-based service](/microsoft-365/syntex/syntex-pay-as-you-go-services). The preview list price is $0.07/GB/month of protected content.
+Use of Microsoft 365 Backup Storage is billed to the application that has "controllership" of an end customer tenant's Microsoft 365 Backup operations. In other words, the application integrated with Microsoft 365 Backup Storage that is the master operator of a tenant's backups will be charged for the user-facing backup storage consumption. This is a [pay-as-you-go consumption-based service](/microsoft-365/syntex/syntex-pay-as-you-go-services). The preview list price is $0.07/GB/month of protected content.
 
 ### What’s counted towards protected backup storage?
 
-Microsoft 365 Backup Storage charges application owners based on the content size of the following during backup retention as calculated in the following manner:
+Microsoft 365 Backup Storage charges application owners based on the content size during backup retention as calculated in the following manner:
 
 - Cumulative size of the mailboxes, SharePoint sites, and OneDrive accounts being protected. Size of OneDrive accounts and SharePoint sites are the size of the live OneDrive accounts and SharePoint sites as displayed in the live sites’ usage reports, plus the size of their recycle bins. Mailboxes are the size of the user's mailbox plus their online archives plus deleted items held for backup.
 
-- Deleted content being held for restorability purposes via the Microsoft 365 Backup Storage platform will no longer count towards Backup Storage usage once it expires based on the retention period defined by the Microsoft 365 Backup tool (currently 365 days).
+- Deleted content being held for restorability purposes via the Microsoft 365 Backup Storage platform will no longer count towards Backup Storage usage once it expires based on the retention period defined by Microsoft 365 Backup (currently 365 days).
 
 > [!NOTE]
-> Restore points or size of restores will not be charged. There are no additional Azure API or storage costs beyond the Microsoft 365 Backup usage charges mentioned above.
+> Restore points or size of restores will not be charged. There are no additional Azure API or storage costs beyond the Microsoft 365 Backup usage charges mentioned previously.
 As an example, if you have a site under protection that is currently 1 GB for the first month, you'll be charged 1 GB of backup usage. If you delete content in that site such that it's now only 0.5 GB, your next monthly bill will still be for 1 GB since the backup tool is retaining that deleted content for a year. After a year when the backup of that deleted content expires, the 0.5 GB being retained for backup purposes will no longer be charged for backup.
 
 > [!NOTE]
