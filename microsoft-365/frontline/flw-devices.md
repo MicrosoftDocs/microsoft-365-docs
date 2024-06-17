@@ -32,7 +32,9 @@ Because the workforce is largely mobile and often shift-based, managing the devi
 - Are company-owned devices shared between workers or assigned to an individual?
 - Do workers take devices home or leave them at the workplace?
 
-It’s important to set a secure, compliant baseline to manage devices for your workforce, whether they’re shared devices or workers’ own devices. This article gives you an overview of common frontline worker device scenarios and management capabilities to help empower your workforce while safeguarding company data. Use the information and considerations to help plan your frontline device deployment.
+It’s important to set a secure, compliant baseline to manage devices for your workforce, whether they’re shared devices or workers’ own devices.
+
+This article gives you an overview of common frontline worker device scenarios and management capabilities to help empower your workforce while safeguarding company data. Use the information and considerations to help plan your frontline device deployment.
 
 ## Device deployment
 
@@ -44,12 +46,12 @@ Shared devices and bring-your-own-device (BYOD) are the most commonly adopted de
 
 |Device type|Description|Why to use|Deployment considerations|
 |-----------|-----------|----------|--------------------------|
-|Shared devices |Devices owned and managed by your organization.<br><br>Employees access devices while at work. |Worker productivity and customer experience are a top priority. <br><br> Workers can't access organization resources when not at work. <br><br>Local laws might prevent personal devices from being used for business purposes.|Define how your frontline sign in and out of the device.<br><br>Consider using conditional access policies to secure shared devices when multifactor authentication (MFA) isn't an option.|
+|Shared devices |Devices owned and managed by your organization.<br><br>Employees access devices while at work. |Worker productivity and customer experience are a top priority. <br><br> Workers can't access organizational resources when not at work. <br><br>Local laws might prevent personal devices from being used for business purposes.|Define how your frontline sign in and out of the device.<br><br>Consider using conditional access policies to secure shared devices when multifactor authentication (MFA) isn't an option.|
 |Bring-your-own device (BYOD) |Personal devices owned by the user and managed by your organization. |You want to give employees a convenient way to check shift schedules, chat with colleagues about shift swaps, or access HR resources like their paystub. <br><br>Shared devices or dedicated devices might be impractical from a cost or business-readiness perspective. |Personal devices vary in operating system, storage, and connectivity.<br><br>Personal device use might be against union rules or government regulations.<br><br>Some workers might not have reliable access to a personal mobile device. |
 |Dedicated devices<sup>1</sup>|Devices owned and managed by your organization and issued to a single user.|Worker requires a dedicated phone number to receive calls and texts.<br><br>Organization requires full control over the device and how employees use it.|Cost of dedicated hardware.<br><br>Added effort for rollout and support complexity might not be feasible in field locations. |
 |Kiosk devices<sup>2</sup> |Devices are owned and managed by your organization. Users don't need to sign in or out. |Device has a dedicated purpose. <br><br> Use case doesn't require user authentication.|Collaboration, communication, task, and workflow apps need a user identity to function. <br><br>Not possible to audit user activity. <br><br>Unable to use some security capabilities including MFA. |
 
-<sup>1</sup>Dedicated devices are uncommon in frontline deployments primarily due to high cost and effort to manage in the context of high staff turnover.
+<sup>1</sup>Dedicated devices are uncommon in frontline deployments primarily due to high cost and effort to manage in the context of high staff turnover.<br>
 <sup>2</sup>Kiosk device deployments aren’t recommended because they don’t allow user auditing and user-based security capabilities like multifactor authentication. [Learn more about kiosk devices](/windows/configuration/kiosk-methods).
 
 We focus on shared devices and BYOD as these are the deployment models that fit the practical needs of most frontline deployments. Read on for an overview of planning considerations and management capabilities, and then see the following resources for a deeper dive:
@@ -66,7 +68,7 @@ The deployment model you choose partly determines the device operating systems y
 
 |Device OS|Considerations|
 |---------|--------------|
-|Android |[Limited native capabilities](https://source.android.com/docs/devices/admin/multi-user) for storing multiple user profiles on devices. <br> Android devices can be enrolled in shared device mode to automate single sign-on and sign out. <br>Robust management of controls and APIs. <br>Existing ecosystem of devices built for frontline use. |
+|Android |[Limited native capabilities](https://source.android.com/docs/devices/admin/multi-user) for storing multiple user profiles on devices. <br> Android devices can be enrolled in shared device mode to automate single sign-on and sign out, and targeting conditional access policies. <br>Robust management of controls and APIs. <br>Existing ecosystem of devices built for frontline use. |
 |iOS and iPadOS |iOS devices can be enrolled in shared device mode to automate single sign-on and sign out. <br> Storing multiple user profiles on iPadOS devices is possible with Shared iPad for Business.|
 |Windows |Native support for storing multiple user profiles on the device. <br>Supports Windows Hello for passwordless authentication.<br> Simplified deployment and management capabilities when used with Microsoft Intune. |
 
@@ -78,7 +80,7 @@ When you're planning your device deployment, there are considerations across mul
 
 Mobile device management (MDM) solutions, such as Microsoft Intune, simplify deployment, management, and monitoring of devices.
 
-A device can only be enrolled in one MDM solution, but you can use multiple MDM solutions to manage separate pools of devices. For example, you could use VMware Workspace ONE or SOTI MobiControl for shared devices and Intune for BYOD. If you use multiple MDM solutions, keep in mind that some users might not be able to access shared devices because of a mismatch in conditional access or MAM policies.
+A device can only be enrolled in one MDM solution, but you can use multiple MDM solutions to manage separate pools of devices. For example, you could use VMware Workspace ONE or SOTI MobiControl for shared devices and Intune for BYOD. If you use multiple MDM solutions, keep in mind that some users might not be able to access shared devices because of a mismatch in conditional access or mobile app management (MAM) policies.
 
 If you’re using a third-party MDM solution, you can integrate with [Intune partner compliance](/mem/intune/protect/device-compliance-partners) to take advantage of conditional access for devices managed by third-party MDM solutions.
 
@@ -93,7 +95,7 @@ The following table lists some of the most common app launchers available today 
 |App launcher |Capabilities|
 |-------------|------------|
 |Managed Home Screen |Use Managed Home Screen when you want your users to have access to a specific set of apps on your Intune-enrolled dedicated devices. Because Managed Home Screen can be automatically launched as the default home screen on the device and appears to the user as the only home screen, it’s useful in shared devices scenarios when a locked-down experience is required. [Learn more](/mem/intune/apps/app-configuration-managed-home-screen-app).|
-|VMware Workspace ONE Launcher |If you’re using VMware, the Workspace ONE Launcher is the best tool to curate a set of apps that your frontline needs access to. VMware Workspace ONE Launcher doesn’t currently support shared device mode for global sign and global sign out from the launcher. Therefore, the FLW Users will need to sign in and sign out of Teams upon each use. [Learn more](https://docs.vmware.com/en/VMware-Workspace-ONE-UEM/2306/Launcher_Publication/GUID-AWLAUNCHERINTRO.html).|
+|VMware Workspace ONE Launcher |If you’re using VMware, the Workspace ONE Launcher is the best tool to curate a set of apps that your frontline needs to access. VMware Workspace ONE Launcher doesn’t currently support shared device mode for global sign and global sign out from the launcher. Therefore, frontline workers will need to sign in and sign out of Teams upon each use. [Learn more](https://docs.vmware.com/en/VMware-Workspace-ONE-UEM/2306/Launcher_Publication/GUID-AWLAUNCHERINTRO.html).|
 |SOTI|If you’re using SOTI, the SOTI app launcher is the best tool to curate a set of apps that your frontline needs to access. The SOTI app launcher supports shared device mode today.|
 |BlueFletch|[BlueFletch Launcher](https://docs.bluefletch.com/bluefletch-enterprise/product-guides/bluefletch-launcher) can be used on devices, regardless of your MDM solution. BlueFletch supports shared device mode today. [Learn more](https://soti.net/mc/help/v2024.0/en/console/system/microsoft_365_integration/change_device_reg_to_shared_mode_in_azure.html). |
 |Custom app launcher |If you want a fully customized experience, you can build out your own custom app launcher. You can integrate your launcher with shared device mode so that your users only need to sign in and out once. |
@@ -129,7 +131,7 @@ My Staff also enables frontline managers to register their team members' phone n
 
 ## Shared device mode
 
-With the [shared device mode](/azure/active-directory/develop/msal-shared-devices) feature of Microsoft Entra ID, you can configure devices to be shared by employees. This feature enables single sign-in (SSO) and device-wide sign out for Teams and all other apps that support shared device mode.
+With the [shared device mode](/azure/active-directory/develop/msal-shared-devices) feature of Microsoft Entra ID, you can configure devices to be shared by employees. This feature enables single sign-on (SSO) and device-wide sign out for Teams and all other apps that support shared device mode.
 
 Here's how shared device mode works, using Teams as an example. When an employee signs in to Teams at the start of their shift, they’re automatically signed in to all other apps that support shared device mode on the device. When they sign out of Teams at the end of their shift, they're signed out from all other apps that support shared device mode. After sign out, the employee's data and company data in Teams and in all other apps that support shared device mode can no longer be accessed. The device is ready for the next employee to use.
 
@@ -159,7 +161,7 @@ If MFA isn't feasible for your organization or deployment model, you should plan
 
 ### Passwordless authentication
 
-To further simplify access for your frontline workforce, you can use passwordless authentication methods so that workers don’t need to remember or type in their passwords. Passwordless authentication methods are also typically more secure, and many can satisfy MFA requirements if necessary.
+To further simplify access for your frontline workforce, you can use passwordless authentication methods so that workers don’t need to remember or enter their passwords. Passwordless authentication methods are also typically more secure, and many can satisfy MFA requirements if necessary.
 
 Before proceeding with a passwordless authentication method, determine whether it can work in your existing environment. Considerations like cost, OS support, personal device requirement, and MFA support, can affect whether an authentication method would work for your needs. For example, FIDO2 security keys are currently considered too expensive, and SMS and Authenticator sign in might not be possible if frontline workers aren’t permitted to bring their personal devices to work.
 
@@ -200,9 +202,9 @@ To learn more, see the [Microsoft Entra Conditional Access documentation](/azure
 
 With mobile application management (MAM) from Intune, you can use app protection policies with apps that are integrated with the Intune [App SDK](/mem/intune/developer/app-sdk-get-started). This allows you to further protect your organization’s data within an app.
 
-With app protection policies you can add access control safeguards, such as:
+With app protection policies, you can add access control safeguards, such as:
 
-- Control the sharing of data between applications.
+- Control the sharing of data between apps.
 - Prevent the saving of company app data to a personal storage location.
 - Ensure the device’s operating system is up to date.
 
@@ -214,8 +216,13 @@ You can also use app protection policies to ensure that  data doesn’t leak to 
 
 App protection policies are helpful in BYOD scenarios because they allow you to protect your data at the app level without having to manage the entire device. This is important in scenarios where employees might have a device managed by another tenant (for example, a university or another employer) and can’t be managed by another company.
 
-## Related articles
+## Next steps
+
+For more detailed guidance, see the following resources:
 
 - [Manage shared devices for your frontline](flw-shared-devices.md)
 - [Manage personal (BYOD) for your frontline](flw-byod-devices.md)
+
+## Related articles
+
 - [Frontline worker management](/azure/active-directory/fundamentals/frontline-worker-management)
