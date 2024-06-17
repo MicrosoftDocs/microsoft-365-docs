@@ -62,7 +62,7 @@ To turn off Directory synchronization:
     }
     
     # Perform the update
-    Update-MgBetaOrganization -OrganizationId $organizationId -BodyParameter $params 
+    Update-MgOrganization -OrganizationId $organizationId -BodyParameter $params 
     
     # Check that the command worked
     Get-MgOrganization | Select OnPremisesSyncEnabled
