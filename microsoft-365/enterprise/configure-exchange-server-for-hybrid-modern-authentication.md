@@ -43,6 +43,18 @@ HMA is a powerful feature that enhances the flexibility and security of accessin
 
 In this section, we provide information and steps that need to be done to successfully configure and enable Hybrid Modern Auth in Microsoft Exchange Server.
 
+### Exchange Server specific prerequisites
+
+Your Exchange servers must fulfill the following requirements before Hybrid Modern Authentication can be configured and enabled. It's recommended to always run the [latest Exchange Server Cumulative Update (CU)](/exchange/new-features/build-numbers-and-release-dates).
+
+More details can be found in the [Hybrid Modern Authentication overview and prerequisites for using it with on-premises Skype for Business and Exchange servers](hybrid-modern-auth-overview.md) documentation.
+
+- Make sure that there are no end-of-life Exchange servers in the organization.
+- Exchange Server 2016 must be running CU8 or later.
+- Exchange Server 2019 must be running CU1 or later.
+- Make sure that all servers can connect to the internet. If a proxy is required, [configure Exchange Server to use it](/powershell/module/exchange/set-exchangeserver#-internetwebproxy).
+- Make sure that SSL Offloading is not used (it's unsupported). SSL Bridging, however, can be used and is supported.
+
 ### Protocols that work with Hybrid Modern Auth
 
 Hybrid Modern Authentication works for the following Exchange Server protocols:
@@ -63,7 +75,7 @@ Hybrid Modern Authentication works for the following Exchange Server protocols:
 
 To enable Hybrid Modern Authentication (HMA), you must ensure that your organization meets all necessary prerequisites. Additionally, you should confirm that your Office client is compatible with Modern Authentication. For more details, refer to the documentation on [How modern authentication works for Office 2013 and Office 2016 client apps](modern-auth-for-office-2013-and-2016.md).
 
-1. Make sure you meet the prerequisites before you begin. Since many prerequisites are common for both Skype for Business and Exchange Server, review them in [Hybrid Modern Authentication overview and prerequisites for using it with on-premises Skype for Business and Exchange servers](hybrid-modern-auth-overview.md).
+1. Make sure you [meet the prerequisites](#exchange-server-specific-prerequisites) before you begin.
 
 2. [Add on-premises web service URLs to Microsoft Entra ID](#add-on-premises-web-service-urls-as-spns-in-microsoft-entra-id). The URLs must be added as `Service Principal Names (SPNs)`. In case that your Exchange Server setup is in hybrid with **multiple tenants**, these on-premises web service URLs must be added as SPNs in the Microsoft Entra ID of all the tenants, which are in hybrid with Exchange Server on-premises.
 
