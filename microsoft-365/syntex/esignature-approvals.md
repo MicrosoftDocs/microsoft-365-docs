@@ -3,7 +3,7 @@ title: Track and manage SharePoint eSignature requests using Approvals in Micros
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
-ms.reviewer: amcdonnell
+ms.reviewer: oadeyemo
 ms.date: 06/17/2024
 audience: enabler
 ms.topic: conceptual
@@ -30,15 +30,15 @@ To view a list of your eSignature requests, follow these steps:
 
 3. Select a request to view more information about the request.
 
-![Screenshot showing the esignature request list in the Approvals app.](../media/content-understanding/esignature-approvals-request-list.png)
+![Screenshot showing the esignature details page and the Review button to start the signing process.](../media/content-understanding/esignature-approvals-request-list.png)
 
 4. To sign the document, select **Review**.  
 
+![Screenshot showing the esignature request list in the Approvals app.](../media/content-understanding/esignature-approvals-request-list.png)
 
+5. To access the document location, select **Open file location**.
 
-5. To access the document location, select the **Open file location** button.
-
-
+![Screenshot showing the esignature details and the Open file location button to select a file.](../media/content-understanding/esignature-approvals-request-list.png)
 
 > [!NOTE]
 > As a recipient, only signature requests that originate from your tenant or within your organization will be visible in the Approvals app in Microsoft Teams. Requests from external senders can still be tracked via email notifications.  
