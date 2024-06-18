@@ -41,9 +41,9 @@ Microsoft Intune natively supports features important for deploying shared devic
 
 If you’re using a third-party MDM solution for your shared devices deployment, such as VMware Workspace ONE or SOTI MobiControl, it’s important to understand the associated capabilities, limitations, and available workarounds.
 
-- Some third-party MDMs can clear app data when a global sign out occurs on an Android device. However, app data clearing can miss data stored in a shared location, delete app settings, or cause first-run experiences to reappear. Android devices enrolled in shared device mode can selectively clear the necessary app data during device check-in or when a new user signs in to the device. [Learn more about authentication in shared device mode](#authentication).
+- Some third-party MDMs can clear app data when a global sign out occurs on an Android device. However, app data clearing can miss data stored in a shared location, delete app settings, or cause first-run experiences to reappear. Android devices enrolled in shared device mode can selectively clear the necessary app data during device check-in or when a new user signs in to the device.
 
-- You can manually configure shared device mode in third-party MDM solutions for Android devices. However, manual configuration steps don’t mark the device compliant in Microsoft Entra ID, which means Conditional Access isn’t supported in this scenario. If you choose to manually configure devices in shared device mode, you need to take additional steps to re-enroll Android devices in shared device mode with zero-touch provisioning to get Conditional Access support when third-party MDM support is available by uninstalling and reinstalling Authenticator from the device.
+- You can manually configure shared device mode in third-party MDM solutions for Android devices. However, manual configuration steps don’t mark the device compliant in Microsoft Entra ID, which means Conditional Access isn’t supported in this scenario. If you choose to manually configure devices in shared device mode, you need to take additional steps to re-enroll Android devices in shared device mode with zero-touch provisioning to get Conditional Access support when third-party MDM support is available by uninstalling and reinstalling the Microsoft Authenticator app from the device.
 
 A device can only be enrolled in one MDM solution, but you can use multiple MDM solutions to manage separate pools of devices. For example, you could use VMware Workspace ONE or SOTI MobiControl for shared devices and Intune for BYOD. If you use multiple MDM solutions, keep in mind that some users might not be able to access shared devices because of a mismatch in Conditional Access policies or mobile application management (MAM) policies.
 
@@ -62,17 +62,104 @@ Windows devices enrolled in Intune support single sign out, zero touch provision
 
 ### Why shared device mode?
 
-Because mobile devices running iOS, iPadOS, or Android were designed for single users, most apps optimize their experience for use by a single user. Part of this optimized experience means enabling single sign-on (SSO) across apps and keeping users signed in on their devices. When a user removes their account from an app, the app typically doesn't consider it a security-related event. Many apps even keep a user's credentials around for quick sign in. You might even have experienced this yourself when you deleted an app from your mobile device and then reinstalled it, only to discover you're still signed in.
+Because mobile devices running Android, iOS, or iPadOS, were designed for single users, most apps optimize their experience for use by a single user. Part of this optimized experience means enabling single sign-on (SSO) across apps and keeping users signed in on their devices. When a user removes their account from an app, the app typically doesn't consider it a security-related event. Many apps even keep a user's credentials around for quick sign in. You might have even experienced this yourself when you deleted an app from your mobile device and then reinstalled it, only to discover you're still signed in.
 
 To allow an organization's employees to use its apps across a pool of devices shared by those employees, developers need to enable the opposite experience. Employees should be able to pick a device from the pool and perform a single gesture (sign-in) to "make it theirs" during their shift. At the end of their shift, they should be able to perform another gesture to sign out globally on the device, with all their personal and company information removed so they can return it to the device pool and prevent other users from seeing their information.
 
 To enable these scenarios, Microsoft Entra ID introduced the shared device mode feature.
 
-### Key benefits of shared device mode
+### Key benefits of enabling shared device mode on devices
 
 - Single sign-on: Allow users to sign in to one app that supports shared device mode once and gain seamless authentication into all other apps that support shared device mode without having to reenter credentials. Exempt users from first-run experience screens on shared devices.
 - Single sign-out: Allow users an easy way to sign out from a device without needing to sign out individually from each app that supports shared device mode. Provide users’ assurances that their data isn't inappropriately shown to subsequent users, provided that the apps ensure cleaning up of any cached user data and app protection policies are applied.
 - Enforce security requirements through Conditional Access policies support: Provides admins with the ability to target specific Conditional Access policies on shared devices, ensuring that employees only have access to company data when their shared device meets internal compliance standards.
+
+> [!NOTE]
+> Shared device mode isn’t a full data loss prevention solution. Shared device mode should be used in conjunction with MAM policies to ensure that data doesn’t leak to areas of the device that aren’t leveraging shared device mode (for example, local file storage).
+
+#### Supported scenarios
+
+- User signs in to an app that supports shared device mode (line of business app, third-party app launcher, or Microsoft app) on an Android or iOS/iPadOS device using their Microsoft Entra ID credentials and is automatically signed in to all apps that support shared device mode on the device.
+- User signs out from an app that supports shared device mode (line of business app, third-party app launcher, or Microsoft app) on an Android or iOS/iPadOS device and is signed out from all apps that support shared device mode on the device.
+- If an admin set up a Conditional Access policy with the grant control that requires devices to be enrolled in an MDM solution and compliant, the user can sign in to a shared device mode-enabled app only if the device is compliant.
+
+#### Unsupported scenarios
+
+- User signs in to an app on the device that doesn’t support shared device mode. In this scenario, they don’t get single sign-on and single sign-out benefits.
+
+### Prerequisites
+
+To use shared device mode, the following prerequisites must be met.
+
+- The device must have Microsoft Authenticator installed.
+- The device must be enrolled in shared device mode in your MDM solution.
+- All apps that need these benefits must integrate with the shared device mode APIs in the [Microsoft Authentication Library (MSAL)](/entra/identity-platform/msal-overview).
+
+Things to consider:
+
+- MAM policies are required to prevent data from moving from shared device mode-enabled apps to non-shared device mode-enabled apps.
+- Some Microsoft apps don’t currently support shared device mode. See the list of [Microsoft apps that support shared device mode on Android](entra/identity-platform/msal-android-shared-devices#microsoft-applications-that-support-shared-device-mode) and [Microsoft apps that support shared device mode on iOS](entra/msal/objc/shared-devices-ios#microsoft-applications-that-support-shared-device-mode).
+If the app you need lacks shared device mode integration, it’s recommended that you run a web-based version of your app in either Teams or Microsoft Edge to get the benefits of shared device mode.
+
+### For developers creating apps for shared device mode
+
+If you're a developer, see the following resources for more information about how to integrate your app with shared device mode:
+
+- [Shared device mode for Android devices](/azure/active-directory/develop/msal-android-shared-devices)
+- [Shared device mode for iOS devices](/azure/active-directory/develop/msal-ios-shared-devices)
+
+## Shared device mode with Intune
+
+### Enroll iOS devices into shared device mode
+
+To learn more about enrolling iOS devices into shared device mode using Intune, see [Set up enrollment for devices in shared device mode](/mem/intune/enrollment/automated-device-enrollment-shared-device-mode).
+
+### Enroll Android devices into shared device mode
+
+To manage and enroll Android devices into shared device mode using Intune, devices must be running Android OS version 8.0 or later, and have Google Mobile Services (GMS) connectivity. To learn more, see:
+
+- [Set up Intune enrollment for Android Enterprise dedicated devices](/mem/intune/enrollment/android-kiosk-enroll)
+- [Enroll Android Enterprise dedicated devices into Microsoft Entra shared device mode](https://techcommunity.microsoft.com/t5/intune-customer-success/enroll-android-enterprise-dedicated-devices-into-azure-ad-shared/ba-p/1820093)
+
+You can also choose to deploy the Microsoft Managed Home Screen app to tailor the experience for users on their Intune-enrolled Android dedicated devices. Managed Home Screen acts as a launcher for other approved apps to run on top of it, and lets you customize devices and restrict what employees can access. For example, you can define how apps appear on the home screen, add your company logo, set custom wallpaper, and allow employees to set a session PIN. You can even configure sign out to happen automatically after a specified period of inactivity. To learn more, see:
+
+- [Configure the Microsoft Managed Home Screen app for Android Enterprise](/mem/intune/apps/app-configuration-managed-home-screen-app)
+- [How to set up Microsoft Managed Home Screen on dedicated devices in multi-app kiosk mode](https://techcommunity.microsoft.com/t5/intune-customer-success/how-to-setup-microsoft-managed-home-screen-on-dedicated-devices/ba-p/1388060)
+
+For an overview of frontline device management in Intune, see [Get started with frontline worker device management](/mem/solutions/frontline-worker/frontline-worker-overview).
+
+## Shared device mode with third-party MDM solutions and/ or app launchers
+
+Shared device mode is available on some common third-party MDM and launcher solutions. The following tables summarize support for shared device mode today.
+
+**MDM solutions**
+
+|MDM solution  |Can set device in shared device mode for Conditional Access on Android |Can set device in shared device mode for Conditional Access on iOS |
+|---------|---------|---------|
+|Microsoft Intune | Yes | Yes |
+|VMware Workspace ONE | Yes | No |
+|SOTI MobiControl     | Yes | No|
+|JAMF    |  N/A |  [In preview](https://www.jamf.com/blog/jamf-microsoft-identity-management-shared-device-mode/)|
+
+**App launchers**
+
+|App launcher |Supports global sign in and sign out of shared device mode-enabled apps on Android |
+|---------|---------|
+|Microsoft Managed Home Screen |  Yes |
+|VMware Workspace ONE Launcher |  No  |
+|SOTI | Yes  |
+|BlueFetch | Yes |
+
+## What options do I have if my MDM solution or app launcher doesn't support shared device mode?
+
+**Sign in**: If your app launcher doesn’t support global sign-in to shared device mode-enabled apps, the user must first sign in to the launcher and then sign in to Teams. Options are available to reduce the friction of the second sign in for Teams. With [domain-less sign-in](/microsoftteams/sign-in-teams?bc=%2Fmicrosoft-365%2Ffrontline%2Fbreadcrumb%2Ftoc.json&toc=%2Fmicrosoft-365%2Ffrontline%2Ftoc.json#simplify-the-sign-in-experience-with-domain-less-sign-in), users only need to enter the first part of their user principal name (UPN) to sign in, and their password.
+
+**Sign out**: If your app launcher doesn’t support global sign-out for shared device mode-enabled apps, consider the following options, depending on your scenario:
+
+- No broker app exists on the shard device. If the Authenticator app or Company Portal app isn't present on the device, you can use your MDM app data cleanup policies to clean app data between users. Most MDMs offer this feature to clean app data upon a launcher sign-out trigger.
+- A broker app exists on the shared device.
+
+## What if I'm not using an app launcher?
 
 
 <!--### Enroll Android and iOS personal devices
