@@ -52,7 +52,7 @@ Shared devices and bring-your-own-device (BYOD) are the most commonly adopted de
 |Kiosk devices<sup>2</sup> |Devices are owned and managed by your organization. Users don't need to sign in or out. |Device has a dedicated purpose. <br><br> Use case doesn't require user authentication.|Collaboration, communication, task, and workflow apps need a user identity to function. <br><br>Not possible to audit user activity. <br><br>Unable to use some security capabilities including MFA. |
 
 <sup>1</sup>Dedicated devices are uncommon in frontline deployments primarily due to high cost and effort to manage in the context of high staff turnover.<br>
-<sup>2</sup>Kiosk device deployments aren’t recommended because they don’t allow user auditing and user-based security capabilities like multifactor authentication. [Learn more about kiosk devices](/windows/configuration/kiosk-methods).
+<sup>2</sup>Kiosk device deployments aren’t recommended because they don’t allow user auditing and user-based security capabilities like multifactor authentication. [Learn more about kiosk devices](/windows/configuration/assigned-access).
 
 We focus on shared devices and BYOD as these are the deployment models that fit the practical needs of most frontline deployments. Read on for an overview of planning considerations and management capabilities, and then see the following resources for a deeper dive:
 
@@ -80,7 +80,7 @@ When you're planning your device deployment, there are considerations across mul
 
 Mobile device management (MDM) solutions, such as Microsoft Intune, simplify deployment, management, and monitoring of devices.
 
-A device can only be enrolled in one MDM solution, but you can use multiple MDM solutions to manage separate pools of devices. For example, you could use VMware Workspace ONE or SOTI MobiControl for shared devices and Intune for BYOD. If you use multiple MDM solutions, keep in mind that some users might not be able to access shared devices because of a mismatch in conditional access or mobile app management (MAM) policies.
+A device can only be enrolled in one MDM solution, but you can use multiple MDM solutions to manage separate pools of devices. For example, you could use VMware Workspace ONE or SOTI MobiControl for shared devices and Intune for BYOD. If you use multiple MDM solutions, keep in mind that some users might not be able to access shared devices because of a mismatch in conditional access or mobile application management (MAM) policies.
 
 If you’re using a third-party MDM solution, you can integrate with [Intune partner compliance](/mem/intune/protect/device-compliance-partners) to take advantage of conditional access for devices managed by third-party MDM solutions.
 
@@ -125,13 +125,13 @@ To learn more, see:
 
 #### Delegate user management with My Staff
 
-With the [My Staff](/azure/active-directory/roles/my-staff-configure) feature in Microsoft Entra ID, you can delegate common user management tasks to frontline managers through the My Staff portal. Frontline managers can perform password resets or manage phone numbers for frontline workers directly from the store or factory floor, without having to route the requests to helpdesk, operations, or IT.
+With the [My Staff](/entra/identity/role-based-access-control/my-staff-configure) feature in Microsoft Entra ID, you can delegate common user management tasks to frontline managers through the My Staff portal. Frontline managers can perform password resets or manage phone numbers for frontline workers directly from the store or factory floor, without having to route the requests to helpdesk, operations, or IT.
 
-My Staff also enables frontline managers to register their team members' phone numbers for SMS sign-in. If [SMS-based authentication](/azure/active-directory/authentication/howto-authentication-sms-signin) is enabled in your organization, frontline workers can sign in to Teams and other apps using only their phone numbers and a one-time passcode sent via SMS. This makes signing in for frontline workers simple and fast.
+My Staff also enables frontline managers to register their team members' phone numbers for SMS sign-in. If [SMS-based authentication](/entra/identity/authentication/howto-authentication-sms-signin) is enabled in your organization, frontline workers can sign in to Teams and other apps using only their phone numbers and a one-time passcode sent via SMS. This makes signing in for frontline workers simple and fast.
 
 ### Shared device mode
 
-With the [shared device mode](/azure/active-directory/develop/msal-shared-devices) feature of Microsoft Entra ID, you can configure devices to be shared by employees. This feature enables single sign-on (SSO) and device-wide sign out for Teams and all other apps that support shared device mode.
+With the [shared device mode](/entra/identity-platform/msal-shared-devices) feature of Microsoft Entra ID, you can configure devices to be shared by employees. This feature enables single sign-on (SSO) and device-wide sign out for Teams and all other apps that support shared device mode.
 
 Here's how shared device mode works, using Teams as an example. When an employee signs in to Teams at the start of their shift, they’re automatically signed in to all other apps that support shared device mode on the device. When they sign out of Teams at the end of their shift, they're signed out from all other apps that support shared device mode. After sign out, the employee's data and company data in Teams and in all other apps that support shared device mode can no longer be accessed. The device is ready for the next employee to use.
 
@@ -196,7 +196,7 @@ Conditional Access policies can be used to block access when a user is on a nonc
 
 For BYOD scenarios where it makes sense to access data outside of work, such as HR-related information, shift management, chat about swapping shifts, or non-business-related apps, you might choose to implement more permissive conditional access policies alongside strong authentication methods like MFA.
 
-To learn more, see the [Microsoft Entra Conditional Access documentation](/azure/active-directory/conditional-access/).
+To learn more, see the [Microsoft Entra Conditional Access documentation](/entra/identity/conditional-access).
 
 #### App protection policies
 

@@ -22,108 +22,43 @@ ms.date:
 
 # Manage shared devices for frontline workers
 
-Across every industry, frontline workers make up a large segment of the workforce. Frontline worker roles include retail associates, factory workers, field and service technicians, healthcare personnel, and many more.
-
 ## Overview
-
-Because the workforce is largely mobile and often shift-based, managing the devices that frontline workers use is a key fundamental. Some questions to consider:
-
-- Do workers use company-owned devices or their own personal devices?
-- Are company-owned devices shared between workers or assigned to an individual?
-- Do workers take devices home or leave them at the workplace?
-
-It’s important to set a secure, compliant baseline to manage devices for your workforce, whether they’re shared devices or workers’ own devices. This article gives you an overview of common frontline worker device scenarios and management capabilities to help empower your workforce while safeguarding company data.
-
-## Device types
-
-Shared, bring-your-own, and kiosk devices are the most common device types used by frontline workers.
-
-|Device type|Description|Why to use|Deployment considerations|
-|-----------|-----------|----------|--------------------------|
-|Shared devices |Devices are owned and managed by your organization. Employees access devices while at work. |Worker productivity and customer experience are a top priority. <br><br> Workers can't access organization resources while not at work. <br><br> Local laws may prevent personal devices from being used for business purposes. |Sign in/out can add friction to worker experience. <br><br> Potential for inadvertent sharing of sensitive data. |
-|Bring-your-own devices (BYOD) |Personal devices are owned by the user and managed by your organization. |Your existing mobile device management (MDM) solution prevents your organization from adopting a shared devices model. <br><br>Shared devices or dedicated devices may be impractical from a cost or business-readiness perspective. |Support complexity may not be feasible in field locations. <br><br> Personal devices vary in OS, storage, and connectivity. <br><br> Some workers may not have reliable access to a personal mobile device. <br><br> You could incur potential liability for wages if workers access resources while not clocked in. <br><br> Personal device use may be against union rules or government regulations. |
-|Kiosk devices |Devices are owned and managed by your organization. Users don't need to sign in or out. |Device has a dedicated purpose. <br><br> Use case doesn't require user authentication.|Collaboration, communication, task, and workflow applications need a user identity to function. <br><br> Not possible to audit user activity. <br><br> Unable to use some security capabilities including multifactor authentication. |
-
-Shared devices and BYOD are commonly adopted in frontline deployments. You can use capabilities discussed in subsequent sections of this article may resolve or mitigate your organization’s concerns over user experience, unauthorized worker access to data, and resources and ability to deploy and manage devices at scale.
-
-> [!NOTE]
-> Kiosk device deployments aren’t recommended because they don’t allow user auditing and user-based security capabilities like multifactor authentication. [Learn more about kiosk devices](/windows/configuration/kiosk-methods).
-
-### Shared devices
 
 Many frontline workers use shared mobile devices to do work. Shared devices are company-owned devices that are shared between employees across tasks, shifts, or locations.
 
 Here’s an example of a typical scenario. An organization has a pool of devices in charging cradles to be shared across all employees. At the start of a shift, an employee picks up a device from the pool, and signs in to Teams and other business apps essential to their role. At the end of their shift, they sign out and return the device to the pool. Even within the same shift, a worker might return a device when they finish a task or clock out for lunch, and then pick up a different one when they clock back in.
 
-Shared devices present unique security challenges. For example, employees may have access to company or customer data that shouldn’t be available to others on the same device.
-
-### Personal devices (BYOD)
-
-Some organizations use a bring-your-own-device (BYOD) model where frontline workers use their own mobile devices to access Teams and other business apps. Here's an overview of some ways to manage access and compliance on personal devices.
-
-### Device operating system
-
-The deployment model you select will partly determine the device operating systems you support. For example, if you implement a BYOD model, you’ll need to support both Android and iOS devices. If you implement a shared devices model, the device OS you choose will determine the capabilities available. For example, Windows devices natively support the ability to store multiple user profiles for automated sign-on and easy authentication with Windows Hello. With Android and iOS, more steps and pre-requisites apply.
-
-|Device OS|Considerations|
-|---------|--------------|
-|Windows |Native support for storing multiple user profiles on the device. <br> Supports Windows Hello for passwordless authentication. <br> Simplified deployment and management capabilities when used with Microsoft Intune. |
-|Android |[Limited native capabilities](https://source.android.com/docs/devices/admin/multi-user) for storing multiple user profiles on devices. <br> Android devices can be enrolled in shared device mode to automate single sign-on and sign out. <br> Robust management of controls and APIs. <br> Existing ecosystem of devices built for frontline use. |
-|iOS and iPadOS |iOS devices can be enrolled in shared device mode to automate single sign-on and sign out. <br> Storing multiple user profiles on iPadOS devices is possible with Shared iPad for Business. Conditional access isn't available with Shared iPad for Business because of the way Apple partitions user profiles. |
-
-In a shared devices deployment, the ability to store multiple user profiles on a device to simplify user sign on and the ability to clear app data from the previous user (single sign out) are practical requirements for frontline deployments. These capabilities are native on Windows devices and iPads using Shared iPad for Business.
-
-## User identity
-
-Microsoft 365 for frontline workers uses Microsoft Entra ID as the underlying identity service for delivering and securing all applications and resources. Users must have an identity that exists in Microsoft Entra ID to access Microsoft 365 cloud applications.
-
-If you choose to manage frontline user identities with Active Directory Domain Services (AD DS) or a third-party identity provider, you’ll need to federate these identities to Microsoft Entra ID. [Learn how to integrate your third-party service with Microsoft Entra ID](flw-setup-microsoft-365.md#provision-users).
-
-The possible implementation patterns for managing frontline identities include:
-
-- **Microsoft Entra standalone:** Your organization creates and manages user, device, and application identities in Microsoft Entra ID as a standalone identity solution for your frontline workloads. This implementation pattern is recommended as it simplifies your frontline deployment architecture and maximizes performance during user sign-on.
-- **Active Directory Domain Services (AD DS) integration with Microsoft Entra ID:** Microsoft provides Microsoft Entra Connect to join these two environments. Microsoft Entra Connect replicates AD user accounts to Microsoft Entra ID, allowing a user to have a single identity capable of accessing both local and cloud-based resources. Although both AD DS and Microsoft Entra ID can exist as independent directory environments, you can choose to create hybrid directories.
-- **Third-party identity solution sync with Microsoft Entra ID:** Microsoft Entra ID supports integration with third-party identity providers such as Okta and Ping Identity through federation. [Learn more about using third-party identity providers](flw-setup-microsoft-365.md#provision-users).
-
-### HR-driven user provisioning
-
-Automating user provisioning is a practical need for organizations that want frontline employees to be able to access applications and resources on day one. From a security perspective, it’s also important to automate deprovisioning during employee offboarding to ensure that previous employees don’t retain access to company resources.
-
-Microsoft Entra user provisioning service integrates with cloud-based and on-premises HR applications, such as Workday and SAP SuccessFactors. You can configure the service to automate user provisioning and deprovisioning when an employee is created or disabled in the HR system.
-
-### My Staff
-
-With the [My Staff](/azure/active-directory/roles/my-staff-configure) feature in Microsoft Entra ID, you can delegate common user management tasks to frontline managers through the My Staff portal. Frontline managers can perform password resets or manage phone numbers for frontline workers directly from the store or factory floor, without having to route the requests to helpdesk, operations, or IT.
-
-My Staff also enables frontline managers to register their team members' phone numbers for SMS sign-in. If [SMS-based authentication](/azure/active-directory/authentication/howto-authentication-sms-signin) is enabled in your organization, frontline workers can sign in to Teams and other apps using only their phone numbers and a one-time passcode sent via SMS. This makes signing in for frontline workers simple, secure, and fast.
+Shared devices present unique security challenges. For example, employees might have access to company or customer data that shouldn’t be available to others on the same device.
 
 ## Mobile device management
 
-Mobile device management (MDM) solutions can simplify deployment, management and monitoring of devices. Microsoft Intune natively supports features important for deploying shared devices to frontline workers. These capabilities include:
+Mobile device management (MDM) solutions can simplify deployment, management, and monitoring of devices. Microsoft Intune natively supports features important for deploying shared devices to frontline workers. These capabilities include:
 
-- **Zero-touch provisioning:** IT admins can enroll and pre-configure mobile devices without physical custody of the devices (for manual configuration). This capability is useful when deploying shared devices at scale to field locations because devices can be shipped directly to the intended frontline location where automated configuration and provisioning steps can be completed remotely.
-- **Single sign-out:** Stops background processes and automates user sign out across all applications and resources assigned to the previous user when a new user signs in. Android and iOS devices must be enrolled in shared device mode to use single sign out.
-- **Microsoft Entra Conditional Access:** IT admins can implement automated access control decisions for cloud-based applications and resources through identity-driven signals. For example, it’s possible to prevent access by a shared or BYOD device that doesn’t have the latest security updates installed. [Learn more about how to secure your deployment](flw-setup-microsoft-365.md#step-6-configure-security).
+- **Zero-touch provisioning:** IT admins can enroll and preconfigure mobile devices without physical custody of the devices (for manual configuration). This capability is useful when deploying shared devices at scale to field locations because devices can be shipped directly to the intended frontline location where automated configuration and provisioning steps can be completed remotely.
+- **Microsoft Entra Conditional Access:** IT admins can implement automated access control decisions for cloud-based apps and resources through identity-driven signals. For example, it’s possible to prevent access by a shared or bring-your-own-device (BYOD) device that doesn’t have the latest security updates installed. [Learn more about how to secure your deployment](flw-setup-microsoft-365.md#step-6-configure-security).
 
-If you’re using a third-party MDM solution for your shared devices deployment, such as VMware’s Workspace ONE or SOTI MobiControl, it’s important to understand the associated capabilities, limitations and available workarounds.
+If you’re using a third-party MDM solution for your shared devices deployment, such as VMware Workspace ONE or SOTI MobiControl, it’s important to understand the associated capabilities, limitations, and available workarounds.
 
-Some third-party MDMs can clear app data when a global sign out occurs on an Android device. However, app data clearing can miss data that is stored in a shared location, delete app settings, or cause first-run experiences to reappear. Android devices enrolled in shared device mode can selectively clear the necessary application data during device check-in or when the new user logs in to the device. [Learn more about authentication in shared device mode](#authentication).
+- Some third-party MDMs can clear app data when a global sign out occurs on an Android device. However, app data clearing can miss data stored in a shared location, delete app settings, or cause first-run experiences to reappear. Android devices enrolled in shared device mode can selectively clear the necessary app data during device check-in or when the new user signs in to the device. [Learn more about authentication in shared device mode](#authentication).
 
-You can manually configure shared device mode in third-party MDM solutions for iOS and Android devices, however, manual configuration steps don’t mark the device compliant in Microsoft Entra ID, which means conditional access isn’t supported in this scenario. If you choose to manually configure devices in shared device mode, you’ll need to take additional steps to re-enroll Android devices in shared device mode with zero-touch provisioning to get conditional access support when third-party MDM support is available by uninstalling and reinstalling Authenticator from the device.
+- You can manually configure shared device mode in third-party MDM solutions for Android devices. However, manual configuration steps don’t mark the device compliant in Microsoft Entra ID, which means conditional access isn’t supported in this scenario. If you choose to manually configure devices in shared device mode, you’ll need to take additional steps to re-enroll Android devices in shared device mode with zero-touch provisioning to get conditional access support when third-party MDM support is available by uninstalling and reinstalling Authenticator from the device.
 
-A device can only be enrolled in one MDM solution, but you can use multiple MDM solutions to manage separate pools of devices. For example, you could use Workspace ONE for shared devices and Intune for BYOD. If you use multiple MDM solutions, keep in mind that some users may not be able to access shared devices because of a mismatch in conditional access policies.
+A device can only be enrolled in one MDM solution, but you can use multiple MDM solutions to manage separate pools of devices. For example, you could use Workspace ONE for shared devices and Intune for BYOD. If you use multiple MDM solutions, keep in mind that some users might not be able to access shared devices because of a mismatch in conditional access policies or mobile applicatin management (MAM) policies.
 
-|MDM solution |Single sign out|Zero touch provisioning|Microsoft Entra Conditional Access|
+|MDM solution ||Zero touch provisioning|Microsoft Entra Conditional Access|
 |-------------|---------------|-----------------------|---------------------------|
-|Intune (Microsoft) |Supported for Android and iOS devices enrolled in shared device mode |Supported for Android and iOS devices enrolled in shared device mode |Supported for Android and iOS devices enrolled in shared device mode |
-|Workspace ONE (VMware) |Supported with [Clear Android app data](https://docs.vmware.com/en/VMware-Workspace-ONE-UEM/services/iOS_Platform/GUID-SharedDevicesOverview.html) capabilities. Unavailable for iOS |Currently unavailable for Android and iOS. |Currently unavailable for Android and iOS. |
-|MobiControl (SOTI) |Supported with [Wipe program data](https://www.soti.net/mc/help/v14.4/en/console/applications/wipe_app_data.html) capabilities. Unavailable for iOS. |Currently unavailable for Android and iOS. |Currently unavailable for Android and iOS. |
+|Microsoft Intune |Supported for Android and iOS devices enrolled in shared device mode. |Supported for Android and iOS devices enrolled in shared device mode.|
+|VMware Workspace ONE |Supported for Android. Currently unavailable for iOS. |Supported for Android and iOS devices enrolled in shared device mode. Currently unavailable for iOS.|
+|SOTI MobiControl|Supported for Android. Currently unavailable for iOS.|Supported for Android and iOS devices enrolled in shared device mode. Currently unavailable for iOS.|
+|JAMF (iOS only)|Currently not supported. |Currently unavailable for iOS. |
 
 Windows devices enrolled in Intune support single sign out, zero touch provisioning, and Microsoft Entra Conditional Access. You don’t need to configure shared device mode on Windows devices.
 
-Intune is recommended for BYOD scenarios because it provides the best support and functionality out-of-the-box across device types.
+## Shared device mode
 
-### Enroll Android and iOS personal devices
+[Shared device mode](/entra/identity-platform/msal-shared-devices) is a Microsoft Entra ID feature that allows organizations to configure an iOS, iPadOS, or Android device so that it can be easily shared by multiple employees which is common in the frontline worker space. Employees can sign in once and get access to their data across all supported apps without having access to other employees’ data. When they're finished with their shift or task, they sign out once and get signed out of the device and all supported apps, making the device ready for the next employee to use. 
+
+<!--### Enroll Android and iOS personal devices
 
 In addition to your company-owned devices, you can [enroll](/mem/intune/enrollment/device-enrollment) users' personally owned devices into management in Intune. For BYOD enrollment, you add device users in the Microsoft Intune admin center, configure their enrollment experience, and set up Intune policies. Users complete enrollment themselves in the Intune Company Portal app that's installed on their device.
 
@@ -313,4 +248,4 @@ Most MDM solutions provide their own app launcher that can be used. For example,
 
 ## Related articles
 
-- [Frontline worker management](/azure/active-directory/fundamentals/frontline-worker-management)
+- [Frontline worker management](/azure/active-directory/fundamentals/frontline-worker-management)-->
