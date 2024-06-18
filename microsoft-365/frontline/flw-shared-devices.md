@@ -98,7 +98,7 @@ To use shared device mode, the following prerequisites must be met.
 Things to consider:
 
 - MAM policies are required to prevent data from moving from shared device mode-enabled apps to non-shared device mode-enabled apps.
-- Some Microsoft apps don’t currently support shared device mode. See the list of [Microsoft apps that support shared device mode on Android](entra/identity-platform/msal-android-shared-devices#microsoft-applications-that-support-shared-device-mode) and [Microsoft apps that support shared device mode on iOS](entra/msal/objc/shared-devices-ios#microsoft-applications-that-support-shared-device-mode).
+- Some Microsoft apps don’t currently support shared device mode. See the list of [Microsoft apps that support shared device mode on Android](/entra/identity-platform/msal-android-shared-devices#microsoft-applications-that-support-shared-device-mode) and [Microsoft apps that support shared device mode on iOS](/entra/msal/objc/shared-devices-ios#microsoft-applications-that-support-shared-device-mode).
 If the app you need lacks shared device mode integration, it’s recommended that you run a web-based version of your app in either Teams or Microsoft Edge to get the benefits of shared device mode.
 
 ### For developers creating apps for shared device mode
