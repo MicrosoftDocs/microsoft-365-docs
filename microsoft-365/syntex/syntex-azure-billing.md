@@ -3,7 +3,7 @@ title: Configure Microsoft Syntex for pay-as-you-go billing
 ms.author: chucked
 author: chuckedmonson
 ms.reviewer: kkamath
-ms.date: 03/12/2024
+ms.date: 06/12/2024
 manager: jtremper
 audience: admin
 ms.topic: conceptual
@@ -42,7 +42,10 @@ When you set up Microsoft Syntex billing in Azure, events will be sent to the Az
 
 The following permissions are required to set up Microsoft Syntex billing:
 
-- You must have Global Administrator or SharePoint Administrator permissions to be able to access the Microsoft 365 admin center and set up Syntex.
+- You must be a [SharePoint Administrator](/entra/identity/role-based-access-control/permissions-reference#sharepoint-administrator) or [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) to be able to access the Microsoft 365 admin center and set up Syntex.
+
+   [!INCLUDE [global-administrator-note](../includes/global-administrator-note.md)]
+
 - You must have owner or contributor rights to the Azure subscription that you want to use for Microsoft Syntex billing.
 
 To configure Microsoft Syntex billing, follow these steps:
@@ -74,6 +77,7 @@ The following Microsoft Syntex products are currently available:
 - Prebuilt document processing
 - Structured and freeform document processing
 - Unstructured document processing
+- Autofill columns
 - Content assembly
 - Image tagging
 - Taxonomy tagging

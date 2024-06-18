@@ -1,7 +1,7 @@
 ---
 ms.date: 1/9/2024
 title: Usage and engagement metrics in Topics
-ms.author: mithunas
+ms.author: daisyfeller
 author: daisyfell
 manager: elizapo
 ms.reviewer: daisyfeller
