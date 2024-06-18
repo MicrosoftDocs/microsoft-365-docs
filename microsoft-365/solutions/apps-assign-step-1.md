@@ -19,12 +19,12 @@ keywords:
 
 Before you assign apps to users, groups, or devices at your organization, you should review and confirm the list of users and devices at your organization, as well as the groups of users and devices that you have already set up in your Intune tenant.
 
-The way you assign an app depends on whether you are [managing only the enrolled devices](/microsoft-365/solutions/apps-assign-management#app-management-using-managed-devices) (MDM), [managing only apps](microsoft-365/solutions/apps-assign-management#app-management-using-unmanaged-devices) (MAM) where the devices are unmanaged, or managing both the devices and apps (MAM+MDM). For more infomraiton about these configurations, see [Mobile Application Management configurations](/microsoft-365/solutions/apps-guide-overview#mobile-application-management-configurations).
+The way you assign an app depends on whether you are [managing only the enrolled devices](/microsoft-365/solutions/apps-assign-management#app-management-using-managed-devices) (MDM), [managing only apps](apps-assign-management.md#app-management-using-unmanaged-devices) (MAM) where the devices are unmanaged, or managing both the devices and apps (MAM+MDM). For more infomraiton about these configurations, see [Mobile Application Management configurations](apps-guide-overview.md#mobile-application-management-configurations).
 
 You can view a list of end users that have been added to Microsoft Intune by selecting the **User** workload on the left of the Intune portal. These users are members of your organization that have devices and/or apps associated with your Intune tenant. 
 
 > [!NOTE]
-> A workload is simply a sub-area of a service.
+> A workload is a main area of a service. When you sign in to Intune, you see these workloads in the left navigation paine. For example, **Devices**, **Apps**, **Users**, and **Groups** are all workloads.
 
 You can also give users [additional permissions](/mem/intune/fundamentals/users-add#grant-admin-permissions) to access Intune.
 
@@ -41,28 +41,46 @@ The devices you have enrolled in Intune are displayed and managed in the **Devic
 > [!IMPORTANT]
 > Users are stored in Microsoft Entra ID. Microsoft Entra ID controls access to resources and authenticates users. If you haven't already added users to your Intune tenant, you can add them using several different methods.
 
-## Add multiple users to Intune
+As part of setting up Intune, you may have added users, created groups, and enrolled devices into your Intune tenant. If not, do this now:
+- [Add users to Intune](#add-users-to-intune)
+- [Enroll devices with Intune]() 
 
-As part of setting up Intune, you may have added users, created groups, and enrolled devices into your Intune tenant. If you have not, the easiest way to add users is in bulk in the Intune admin center. Adding users to your Intune tenant involves creating and uploading a *.csv* file containing the full list of members for your organization. For more information about downloading the *.csv* file, understanding the fields within the *.csv* file, and uploading the *.csv* file, see [Add multiple Intune users in the Microsoft Intune admin center](/intune/fundamentals/users-add#add-multiple-intune-users-in-the-microsoft-intune-admin-center).
+## Add users to Intune
+
+As part of setting up Intune, you may have already added users to your Intune tenant. If not, add users now:
+- [Add multiple users to Intune](#add-multiple-users-to-intune)
+- [Add a single users to Intune](#add-single-users-to-intune)
+
+### Add multiple users to Intune
+
+The most efficient way to add users is in bulk in the Intune admin center. Adding users to your Intune tenant involves creating and uploading a *.csv* file containing the full list of members for your organization. For more information about downloading the *.csv* file, understanding the fields within the *.csv* file, and uploading the *.csv* file, see [Add multiple Intune users in the Microsoft Intune admin center](/intune/fundamentals/users-add#add-multiple-intune-users-in-the-microsoft-intune-admin-center).
 
 Other ways to add users to your tenant include the following methods:
 - [Add multiple users from your on-premises Active Directory](/mem/intune/fundamentals/users-add#sync-active-directory-and-add-users-to-intune).
 - [Invite multiple Microsoft Entra B2B users](/entra/external-id/tutorial-bulk-invite).
 
-## Add single users to Intune
+### Add single users to Intune
 
 If you need to add individual users to your Intune tenant, you can create a new user. For more information, see [Add individual Intune users in the Microsoft Intune admin center](/mem/intune/fundamentals/users-add#add-individual-intune-users-in-the-microsoft-intune-admin-center). 
 
-## Enroll multiple devices to Intune
+## Enroll devices with Intune
 
 Much like reviewing the list of users you have in Intune, you can review the list of enrolled devices you have in Intune. The devices are listed in the **Devices** workload. For more information about device enrollment, see [Enrollment guide: Microsoft Intune enrollment](/mem/intune/fundamentals/deployment-guide-enrollment).
 
 > [!NOTE]
 > [Assign Intune licenses to multiple users](/mem/intune/fundamentals/quickstart-create-user#assign-intune-licenses-to-multiple-users)
 
-## Enroll single devices to Intune
+## Create groups for Intune
 
-## Add groups of users to Intune
+As part of setting up Intune, you may have created groups for your Intune tenant. If not, create groups now:
+- [Create groups of users for Intune](#create-groups-of-users-for-intune)
+- [Create groups of devices for Intune](#create-groups-of-devices-for-intune)
+
+### Create groups of users for Intune
+
+
+### Create groups of devices for Intune
+
 
 
 ## Next step
