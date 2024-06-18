@@ -46,7 +46,7 @@ Shared devices and bring-your-own-device (BYOD) are the most commonly adopted de
 
 |Device type|Description|Why to use|Deployment considerations|
 |-----------|-----------|----------|--------------------------|
-|Shared devices |Devices owned and managed by your organization.<br><br>Employees access devices while at work. |Worker productivity and customer experience are a top priority. <br><br> Workers can't access organizational resources when not at work. <br><br>Local laws might prevent personal devices from being used for business purposes.|Define how your frontline sign in and out of the device.<br><br>Consider using conditional access policies to secure shared devices when multifactor authentication (MFA) isn't an option.|
+|Shared devices |Devices owned and managed by your organization.<br><br>Employees access devices while at work. |Worker productivity and customer experience are a top priority. <br><br> Workers can't access organizational resources when not at work. <br><br>Local laws might prevent personal devices from being used for business purposes.|Define how your frontline sign in and out of the device.<br><br>Consider using Microsoft Entra Conditional Access policies to secure shared devices when multifactor authentication (MFA) isn't an option.|
 |Bring-your-own device (BYOD) |Personal devices owned by the user and managed by your organization. |You want to give employees a convenient way to check shift schedules, chat with colleagues about shift swaps, or access HR resources like their paystub. <br><br>Shared devices or dedicated devices might be impractical from a cost or business-readiness perspective. |Personal devices vary in operating system, storage, and connectivity.<br><br>Personal device use might be against union rules or government regulations.<br><br>Some workers might not have reliable access to a personal mobile device. |
 |Dedicated devices<sup>1</sup>|Devices owned and managed by your organization and issued to a single user.|Worker requires a dedicated phone number to receive calls and texts.<br><br>Organization requires full control over the device and how employees use it.|Cost of dedicated hardware.<br><br>Added effort for rollout and support complexity might not be feasible in field locations. |
 |Kiosk devices<sup>2</sup> |Devices are owned and managed by your organization. Users don't need to sign in or out. |Device has a dedicated purpose. <br><br> Use case doesn't require user authentication.|Collaboration, communication, task, and workflow apps need a user identity to function. <br><br>Not possible to audit user activity. <br><br>Unable to use some security capabilities including MFA. |
@@ -68,7 +68,7 @@ The deployment model you choose partly determines the device operating systems y
 
 |Device OS|Considerations|
 |---------|--------------|
-|Android |[Limited native capabilities](https://source.android.com/docs/devices/admin/multi-user) for storing multiple user profiles on devices. <br> Android devices can be enrolled in shared device mode to automate single sign-on and sign out, and targeting conditional access policies. <br>Robust management of controls and APIs. <br>Existing ecosystem of devices built for frontline use. |
+|Android |[Limited native capabilities](https://source.android.com/docs/devices/admin/multi-user) for storing multiple user profiles on devices. <br> Android devices can be enrolled in shared device mode to automate single sign-on and sign out, and targeting Conditional Access policies. <br>Robust management of controls and APIs. <br>Existing ecosystem of devices built for frontline use. |
 |iOS and iPadOS |iOS devices can be enrolled in shared device mode to automate single sign-on and sign out. <br> Storing multiple user profiles on iPadOS devices is possible with Shared iPad for Business.|
 |Windows |Native support for storing multiple user profiles on the device. <br>Supports Windows Hello for passwordless authentication.<br> Simplified deployment and management capabilities when used with Microsoft Intune. |
 
@@ -80,9 +80,10 @@ When you're planning your device deployment, there are considerations across mul
 
 Mobile device management (MDM) solutions, such as Microsoft Intune, simplify deployment, management, and monitoring of devices.
 
-A device can only be enrolled in one MDM solution, but you can use multiple MDM solutions to manage separate pools of devices. For example, you could use VMware Workspace ONE or SOTI MobiControl for shared devices and Intune for BYOD. If you use multiple MDM solutions, keep in mind that some users might not be able to access shared devices because of a mismatch in conditional access or mobile application management (MAM) policies.
+A device can only be enrolled in one MDM solution, but you can use multiple MDM solutions to manage separate pools of devices. For example, you could use VMware Workspace ONE or SOTI MobiControl for shared devices and Intune for BYOD. If you use multiple MDM solutions, keep in mind that some users might not be able to access shared devices because of a mismatch in 
+Conditional Access policies or mobile application management (MAM) policies.
 
-If you’re using a third-party MDM solution, you can integrate with [Intune partner compliance](/mem/intune/protect/device-compliance-partners) to take advantage of conditional access for devices managed by third-party MDM solutions.
+If you’re using a third-party MDM solution, you can integrate with [Intune partner compliance](/mem/intune/protect/device-compliance-partners) to take advantage of Conditional Access for devices managed by third-party MDM solutions.
 
 ### App launchers for Android devices
 
@@ -157,7 +158,7 @@ Due to higher cost and legal restrictions, the most secure authentication method
 
 MFA provides a high level of security for apps and data but adds ongoing friction to user sign in. For organizations that choose BYOD deployments, MFA might or might not be a practical option. It's highly recommended that business and technical teams validate the user experience with MFA before a broad rollout so that the user impact can be properly considered in change management and readiness efforts.
 
-If MFA isn't feasible for your organization or deployment model, you should plan to use robust conditional access policies to reduce security risk.
+If MFA isn't feasible for your organization or deployment model, you should plan to use robust Conditional Access policies to reduce security risk.
 
 #### Passwordless authentication
 
@@ -184,7 +185,7 @@ Implementing robust authorization controls is a critical component of securing a
 
 #### Microsoft Entra Conditional Access
 
-With conditional access, you can create rules that limit access based on the following signals:
+With Conditional Access, you can create rules that limit access based on the following signals:
 
 - User or group membership
 - IP location information
@@ -192,9 +193,9 @@ With conditional access, you can create rules that limit access based on the fol
 - App
 - Real-time and calculated risk detection
 
-Conditional Access policies can be used to block access when a user is on a noncompliant device or while they’re on an untrusted network. For example, you might want to use conditional access to prevent users from accessing an inventory app when they aren’t on the work network or are using an unmanaged device, depending on your organization’s analysis of applicable laws.
+Conditional Access policies can be used to block access when a user is on a noncompliant device or while they’re on an untrusted network. For example, you might want to use Conditional Access to prevent users from accessing an inventory app when they aren’t on the work network or are using an unmanaged device, depending on your organization’s analysis of applicable laws.
 
-For BYOD scenarios where it makes sense to access data outside of work, such as HR-related information, shift management, chat about swapping shifts, or non-business-related apps, you might choose to implement more permissive conditional access policies alongside strong authentication methods like MFA.
+For BYOD scenarios where it makes sense to access data outside of work, such as HR-related information, shift management, chat about swapping shifts, or non-business-related apps, you might choose to implement more permissive Conditional Access policies alongside strong authentication methods like MFA.
 
 To learn more, see the [Microsoft Entra Conditional Access documentation](/entra/identity/conditional-access).
 

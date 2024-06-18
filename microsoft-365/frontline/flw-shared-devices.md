@@ -26,27 +26,29 @@ ms.date:
 
 Many frontline workers use shared mobile devices to do work. Shared devices are company-owned devices that are shared between employees across tasks, shifts, or locations.
 
-Here’s an example of a typical scenario. An organization has a pool of devices in charging cradles to be shared across all employees. At the start of a shift, an employee picks up a device from the pool, and signs in to Teams and other business apps essential to their role. At the end of their shift, they sign out and return the device to the pool. Even within the same shift, a worker might return a device when they finish a task or clock out for lunch, and then pick up a different one when they clock back in.
+Here’s an example of a typical scenario. An organization has a pool of devices in charging cradles to be shared across all employees. At the start of a shift, an employee picks up a device from the pool, and signs in to Microsoft Teams and other business apps essential to their role. At the end of their shift, they sign out and return the device to the pool. Even within the same shift, a worker might return a device when they finish a task or clock out for lunch, and then pick up a different one when they clock back in.
 
 Shared devices present unique security challenges. For example, employees might have access to company or customer data that shouldn’t be available to others on the same device.
 
 ## Mobile device management
 
-Mobile device management (MDM) solutions can simplify deployment, management, and monitoring of devices. Microsoft Intune natively supports features important for deploying shared devices to frontline workers. These capabilities include:
+Mobile device management (MDM) solutions can simplify deployment, management, and monitoring of devices.
 
-- **Zero-touch provisioning:** IT admins can enroll and preconfigure mobile devices without physical custody of the devices (for manual configuration). This capability is useful when deploying shared devices at scale to field locations because devices can be shipped directly to the intended frontline location where automated configuration and provisioning steps can be completed remotely.
-- **Microsoft Entra Conditional Access:** IT admins can implement automated access control decisions for cloud-based apps and resources through identity-driven signals. For example, it’s possible to prevent access by a shared or bring-your-own-device (BYOD) device that doesn’t have the latest security updates installed. [Learn more about how to secure your deployment](flw-setup-microsoft-365.md#step-6-configure-security).
+Microsoft Intune natively supports features important for deploying shared devices to frontline workers. These capabilities include:
+
+- **Zero-touch provisioning:** Admins can enroll and preconfigure mobile devices without physical custody of the devices (for manual configuration). This capability is useful when deploying shared devices at scale to field locations because devices can be shipped directly to the intended frontline location where automated configuration and provisioning steps can be completed remotely.
+- **Microsoft Entra Conditional Access:** Admins can implement automated access control decisions for cloud-based apps and resources through identity-driven signals. For example, it’s possible to prevent access by a shared or bring-your-own-device (BYOD) device that doesn’t have the latest security updates installed. [Learn more about how to secure your deployment](flw-setup-microsoft-365.md#step-6-configure-security).
 
 If you’re using a third-party MDM solution for your shared devices deployment, such as VMware Workspace ONE or SOTI MobiControl, it’s important to understand the associated capabilities, limitations, and available workarounds.
 
-- Some third-party MDMs can clear app data when a global sign out occurs on an Android device. However, app data clearing can miss data stored in a shared location, delete app settings, or cause first-run experiences to reappear. Android devices enrolled in shared device mode can selectively clear the necessary app data during device check-in or when the new user signs in to the device. [Learn more about authentication in shared device mode](#authentication).
+- Some third-party MDMs can clear app data when a global sign out occurs on an Android device. However, app data clearing can miss data stored in a shared location, delete app settings, or cause first-run experiences to reappear. Android devices enrolled in shared device mode can selectively clear the necessary app data during device check-in or when a new user signs in to the device. [Learn more about authentication in shared device mode](#authentication).
 
-- You can manually configure shared device mode in third-party MDM solutions for Android devices. However, manual configuration steps don’t mark the device compliant in Microsoft Entra ID, which means conditional access isn’t supported in this scenario. If you choose to manually configure devices in shared device mode, you’ll need to take additional steps to re-enroll Android devices in shared device mode with zero-touch provisioning to get conditional access support when third-party MDM support is available by uninstalling and reinstalling Authenticator from the device.
+- You can manually configure shared device mode in third-party MDM solutions for Android devices. However, manual configuration steps don’t mark the device compliant in Microsoft Entra ID, which means Conditional Access isn’t supported in this scenario. If you choose to manually configure devices in shared device mode, you need to take additional steps to re-enroll Android devices in shared device mode with zero-touch provisioning to get Conditional Access support when third-party MDM support is available by uninstalling and reinstalling Authenticator from the device.
 
-A device can only be enrolled in one MDM solution, but you can use multiple MDM solutions to manage separate pools of devices. For example, you could use Workspace ONE for shared devices and Intune for BYOD. If you use multiple MDM solutions, keep in mind that some users might not be able to access shared devices because of a mismatch in conditional access policies or mobile applicatin management (MAM) policies.
+A device can only be enrolled in one MDM solution, but you can use multiple MDM solutions to manage separate pools of devices. For example, you could use VMware Workspace ONE or SOTI MobiControl for shared devices and Intune for BYOD. If you use multiple MDM solutions, keep in mind that some users might not be able to access shared devices because of a mismatch in Conditional Access policies or mobile application management (MAM) policies.
 
-|MDM solution ||Zero touch provisioning|Microsoft Entra Conditional Access|
-|-------------|---------------|-----------------------|---------------------------|
+|MDM solution |Zero touch provisioning|Microsoft Entra Conditional Access|
+|-------------|---------------|-----------------------|
 |Microsoft Intune |Supported for Android and iOS devices enrolled in shared device mode. |Supported for Android and iOS devices enrolled in shared device mode.|
 |VMware Workspace ONE |Supported for Android. Currently unavailable for iOS. |Supported for Android and iOS devices enrolled in shared device mode. Currently unavailable for iOS.|
 |SOTI MobiControl|Supported for Android. Currently unavailable for iOS.|Supported for Android and iOS devices enrolled in shared device mode. Currently unavailable for iOS.|
@@ -56,7 +58,22 @@ Windows devices enrolled in Intune support single sign out, zero touch provision
 
 ## Shared device mode
 
-[Shared device mode](/entra/identity-platform/msal-shared-devices) is a Microsoft Entra ID feature that allows organizations to configure an iOS, iPadOS, or Android device so that it can be easily shared by multiple employees which is common in the frontline worker space. Employees can sign in once and get access to their data across all supported apps without having access to other employees’ data. When they're finished with their shift or task, they sign out once and get signed out of the device and all supported apps, making the device ready for the next employee to use. 
+[Shared device mode](/entra/identity-platform/msal-shared-devices) is a Microsoft Entra ID feature that allows organizations to configure an iOS, iPadOS, or Android device so that it can be easily shared by multiple employees, which is common in the frontline worker space. Employees can sign in once and get access to their data across all supported apps without having access to other employees’ data. When they're finished with their shift or task, they sign out once and get signed out of the device and all supported apps, making the device ready for the next employee to use.
+
+### Why shared device mode?
+
+Because mobile devices running iOS, iPadOS, or Android were designed for single users, most apps optimize their experience for use by a single user. Part of this optimized experience means enabling single sign-on (SSO) across apps and keeping users signed in on their devices. When a user removes their account from an app, the app typically doesn't consider it a security-related event. Many apps even keep a user's credentials around for quick sign in. You might even have experienced this yourself when you deleted an app from your mobile device and then reinstalled it, only to discover you're still signed in.
+
+To allow an organization's employees to use its apps across a pool of devices shared by those employees, developers need to enable the opposite experience. Employees should be able to pick a device from the pool and perform a single gesture (sign-in) to "make it theirs" during their shift. At the end of their shift, they should be able to perform another gesture to sign out globally on the device, with all their personal and company information removed so they can return it to the device pool and prevent other users from seeing their information.
+
+To enable these scenarios, Microsoft Entra ID introduced the shared device mode feature.
+
+### Key benefits of shared device mode
+
+- Single sign-on: Allow users to sign in to one app that supports shared device mode once and gain seamless authentication into all other apps that support shared device mode without having to reenter credentials. Exempt users from first-run experience screens on shared devices.
+- Single sign-out: Allow users an easy way to sign out from a device without needing to sign out individually from each app that supports shared device mode. Provide users’ assurances that their data isn't inappropriately shown to subsequent users, provided that the apps ensure cleaning up of any cached user data and app protection policies are applied.
+- Enforce security requirements through Conditional Access policies support: Provides admins with the ability to target specific Conditional Access policies on shared devices, ensuring that employees only have access to company data when their shared device meets internal compliance standards.
+
 
 <!--### Enroll Android and iOS personal devices
 
