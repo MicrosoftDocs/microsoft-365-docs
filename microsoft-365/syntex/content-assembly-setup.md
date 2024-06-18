@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: anrasto, shrganguly
-ms.date: 08/01/2023
+ms.date: 06/12/2024
 ms.topic: conceptual
 ms.service: microsoft-syntex
 ms.subservice: syntex-content-intelligence
@@ -29,7 +29,9 @@ Before you can use content assembly in Syntex, you must first link an Azure subs
 
 ### Permissions
 
-You must have Global admin or SharePoint admin permissions to be able to access the Microsoft 365 admin center and set up content assembly in Syntex.  
+You must be a [SharePoint Administrator](/entra/identity/role-based-access-control/permissions-reference#sharepoint-administrator) or [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) to be able to access the Microsoft 365 admin center and set up content assembly.
+
+[!INCLUDE [global-administrator-note](../includes/global-administrator-note.md)]
 
 ## Set up content assembly
 

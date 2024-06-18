@@ -68,7 +68,9 @@ All admin setting updates may take up to 24 hours to reflect any changes.
 
 ## End user action required
 
-There's a separate toggle for end users to enable and disable web access for Microsoft Copilot, and it can be found in the Plugins menu for Copilot. This toggle is initially off by default, and users will have to enable it to receive this experience.
+There's a separate toggle for end users to enable and disable web access for Microsoft Copilot, and it can be found in the Plugins menu for Copilot. This toggle is initially off by default, and users will have to enable it to receive this experience. 
+
+When a user submits their prompt with the web toggle turned on, they may receive two separate responses. If resources are found within Microsoft 365, the user will see **From your company's resources, emails, Teams messages, etc**. If resources are found outside of Microsoft 365, the user will see **From the web:**. The user can see results from both. Additionally, if the results are from the web only, the user will see the same **From the web:** heading. 
 
 If you turn off web access from the admin center, this control is disabled. However, if you enable web access, your users must enable the toggle in their settings as well to allow web access.
 

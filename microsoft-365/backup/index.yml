@@ -65,6 +65,20 @@ landingContent:
             url: backup-limitations.md
 
 # Card 5
+  - title: Microsoft 365 Backup Storage (Preview)
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview
+            url: storage/backup-3p-overview.md
+          - text: Billing
+            url: storage/backup-3p-billing.md
+          - text: Pricing model
+            url: storage/backup-3p-pricing.md
+          - text: Application lifecycle
+            url: storage/backup-3p-lifecycle.md
+
+# Card 6
   - title: More solutions
     linkLists:
       - linkListType: overview

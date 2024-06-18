@@ -7,11 +7,11 @@ author: chrisda
 manager: deniseb
 audience: Admin
 ms.topic: overview
-ms.service: microsoft-365-business
-ms.date: 01/12/2024
+ms.service: microsoft-365-business-security
+ms.date: 06/07/2024
 ms.localizationpriority: medium
 ms.collection:
-- tier1
+- tier2
 description: "The Microsoft 365 admin center lets you manage some Microsoft Intune roles, which map to business functions and give permissions to do specific tasks."
 ---
 
@@ -28,12 +28,9 @@ Before adding specific Intune roles, roles must be assigned in Microsoft Entra I
 
 Roles-based access control (RBAC) helps you manage who has access to your organization's resources and what they can do with those resources. By assigning roles to your Intune users, you can limit what they can see and change. There are both built-in and custom roles, and each role has a set of permissions that determine what users with that role can access, or change within your organization. The following information will cover both types of roles in Intune.
 
-To create, edit, or assign roles, your account must have one of the following permissions in Microsoft Entra ID:
+To create, edit, or assign roles, your account must have the **Intune Service Administrator** (also known as **Intune Administrator** but not to be confused with the built-in **Intune Role Administrator** role.)
 
-- **Global Administrator**
-- **Intune Service Administrator** (also known as **Intune Administrator** but not to be confused with the built-in **Intune Role Administrator** role.)
-
-Find more information on [Microsoft Entra roles and RBAC](/azure/active-directory/roles/permissions-reference).
+For more information, see [Microsoft Entra roles and RBAC](/azure/active-directory/roles/permissions-reference).
 
 ## Microsoft Intune built-in roles
 
@@ -56,14 +53,9 @@ Here are the built-in roles that you can assign:
 
 You can create custom roles in Intune that include any permissions required for a specific job function. For example, if an IT department group manages applications, policies, and configuration profiles, you can add all those permissions together in one custom role. After creating a custom role, you can assign it to any users that need those permissions.
 
-As with built-in roles, in order to create, edit, or assign roles, your account must have one of the following permissions in Microsoft Entra ID:
-
-- **Global Administrator**
-- **Intune Service Administrator** (also known as **Intune Administrator** but not to be confused with the built-in **Intune Role Administrator** role.)
-
 To create a custom role:
 
-1. In the Microsoft Intune admin center, choose **Tenant administration > Roles > All roles > Create**.
+1. In the [Intune admin center](https://intune.microsoft.com), choose **Tenant administration** > **Roles** > **All roles** > **Create**.
 
 1. On the **Basics** page, enter a name and description for the new role, then choose **Next**.
 
@@ -75,7 +67,7 @@ To create a custom role:
 
 To copy a role:
 
-1. In the Microsoft Intune admin center, choose **Tenant administration > Roles > All roles >** select the checkbox for a role in the list > **Duplicate**.
+1. In the [Intune admin center](https://intune.microsoft.com), choose **Tenant administration** > **Roles** > **All roles >** select the checkbox for a role in the list, and then choose **Duplicate**.
 
 1. On the **Basics** page, enter a name. Make sure to use a unique name.
 
@@ -88,14 +80,9 @@ To copy a role:
 
 ## How to assign a role
 
-You can assign a built-in or custom role to an Intune user. To create, edit, or assign roles, your account must have one of the following permissions in Microsoft Entra ID:
+1. In the [Intune admin center](https://intune.microsoft.com), choose **Tenant administration** > **Roles** > **All roles**.
 
-- **Global Administrator**
-- **Intune Service Administrator** (also known as **Intune Administrator** but not to be confused with the built-in **Intune Role Administrator** role.)
-
-1. In the Microsoft Intune admin center, choose **Tenant administration > Roles > All roles**.
-
-2. Choose the built-in role you want to assign > Assignments > + Assign.
+2. Choose the built-in role you want to assign, select **Assignments**, and then choose **+ Assign**.
 
 3. On the **Basics** page, enter an Assignment name and optional Assignment description, and then choose **Next**.
 
@@ -116,12 +103,6 @@ You can assign a built-in or custom role to an Intune user. To create, edit, or 
 ## Delegated administration for Microsoft Partners
 
 If you're working with a Microsoft partner, you can assign them admin roles. They, in turn, can assign users in your company - or their company - admin roles. You might want them to do this, for example, if they're setting up and managing your online organization for you.
-
-A partner can assign these roles:
-
-- Full administration, which has privileges equivalent to a global admin, except for managing multi-factor authentication through the Partner Center.
-
-- Limited administration, which has privileges equivalent to a helpdesk admin.
 
 Before the partner can assign these roles to users, you must add the partner as a delegated admin to your account. This process is initiated by an authorized partner. The partner sends you an email to ask you if you want to give them permission to act as a delegated admin. For instructions, see [Authorize or remove partner relationships](../admin/misc/add-partner.md).
 

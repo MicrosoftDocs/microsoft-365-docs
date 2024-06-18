@@ -7,8 +7,8 @@ author: chrisda
 manager: deniseb
 audience: Admin
 ms.topic: how-to
-ms.service: microsoft-365-business
-ms.date: 10/27/2023
+ms.service: microsoft-365-business-security
+ms.date: 06/07/2024
 ms.localizationpriority: medium
 ms.collection:
 - m365-security
@@ -28,12 +28,7 @@ Use this article to get started with your information protection capabilities.
 
 ## Before you begin
 
-Make sure you have one of the following roles assigned in Microsoft Entra ID:
-
-- Global Administrator
-- Compliance Administrator
-
-To learn more, see [Get started with the roles page](../admin/add-users/admin-roles-page.md).
+Make sure you have one an appropriate role, such as Compliance Administrator assigned in Microsoft Entra ID. For more information, see [Get started with the roles page](../admin/add-users/admin-roles-page.md).
 
 ## Use Compliance Manager to get started
 

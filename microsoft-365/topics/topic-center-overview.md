@@ -1,7 +1,7 @@
 ---
-ms.date: 11/15/2021
+ms.date: 01/01/2024
 title: Topic center overview in Topics
-ms.author: sunar
+ms.author: daisyfeller
 author: daisyfell
 manager: elizapo
 ms.reviewer: daisyfeller
@@ -49,11 +49,11 @@ The topic center is created during Topics setup. After setup completes, an admin
 
 On the topic center home page, you can see the topics in your organization to which you have a connection.
 
-- Suggested connections - You will see topics listed under **We've listed you on these topics. Did we get it right?** These are topics in which your connection to the topic has been suggested through AI. For example, you might be an author of a related file or site. You are asked to confirm that you should stay listed as a related person for the topic.
+- Suggested connections - You will see topics listed under **We've listed you on these topics. Did we get it right?** These are topics in which your connection to the topic has been suggested through AI. For example, you might be an author of a related file or site. You're asked to confirm that you should stay listed as a related person for the topic.
 
    ![Screenshot of suggested topics in the topic center.](../media/knowledge-management/my-topics.png)
 
-- Confirmed connections - These are topics in which you are pinned on the topic page or you've confirmed a suggested connection to the topic. Topics will move from the suggested to confirmed section when you confirm a suggested connection.
+- Confirmed connections - These are topics in which you're pinned on the topic page or you've confirmed a suggested connection to the topic. Topics will move from the suggested to confirmed section when you confirm a suggested connection.
 
    ![Screenshot of confirmed connections in the topic center.](../media/knowledge-management/my-topics-confirmed.png)
 
