@@ -52,6 +52,14 @@ When you buy Microsoft business products or services, you can use an existing pa
 > [!NOTE]
 > If you're the person who signed up for the subscription, you're automatically a billing account owner or global admin.
 
+## Watch: Update your payment method
+
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/p/?linkid=2198207).
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AVxy]
+
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
+
 ## Add a payment method
 
 > [!IMPORTANT]
