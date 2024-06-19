@@ -1,9 +1,5 @@
 ---  
-<<<<<<< Updated upstream
-title: "Overview of the Engineering Direct Portal in the Microsoft 365 Admin Center"  
-=======
 title: "Engineering Direct Portal in the Microsoft 365 Admin Center"  
->>>>>>> Stashed changes
 description:  
 author: kwekuako
 ms.author: kwekua  
@@ -24,11 +20,7 @@ ai-usage:
 - ai-assisted  
 ---  
 
-<<<<<<< Updated upstream
-# Overview of the Engineering Direct Portal in the Microsoft 365 Admin Center
-=======
 # Engineering Direct Portal in the Microsoft 365 Admin Center
->>>>>>> Stashed changes
 
 The Engineering Direct Portal is a new feature within the Microsoft 365 admin center designed to provide Office Engineering Direct (OED) customers with an enhanced engineering experience. This article provides an overview of the portal's features, how to access it, and its functionality.
 
@@ -83,11 +75,7 @@ Visual Mail Flow enables you to examine issues related to mail flow, including:
 
 ### Input Requirements
 
-<<<<<<< Updated upstream
-To use Visual Mail Flow, you need the email's Message ID or Network Message ID. Ensure the submitted messages are within the age range of 1 to 90 days.
-=======
 To use Visual Mail Flow, you need either the email's Message ID *or* the Network Message ID. Ensure the submitted messages are within the age range of 1 to 90 days.
->>>>>>> Stashed changes
 
 - **Message ID**: Found in the email header with the "Message-ID:" token. Users can provide this information to help investigate specific messages. Be sure to include the full message ID. This may include angle brackets (<>). Although the form varies depending on the email system, here's an example of what a message ID would look like: `<08f1e0f806a47b4ac109109ae6ef@server.domain>`.
 - **Network Message ID**: Found in the email header with the "X-MS-Exchange-Organization-Network-Message-Id:" token. An example of a network message ID is `4d4c1224-7398-4e8e-949f-ce1932c4ab9d`.
