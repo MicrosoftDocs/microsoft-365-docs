@@ -63,7 +63,7 @@ International credit cards aren't accepted. You can pay for your subscription by
 - Invoice
 - Online payment using Alipay or China UnionPay
 
-Proof of payment is provided in the form of Fapiaos. You can submit your Fapiao request to our [Fapiao system](https://go.microsoft.com/fwlink/p/?LinkId=395314) about three (3) days after you have paid.
+Proof of payment is provided in the form of Fapiaos. You can submit your Fapiao request to our [Fapiao system](https://go.microsoft.com/fwlink/p/?LinkId=395314) about three (3) days after you pay.
 
 ::: moniker-end
 
