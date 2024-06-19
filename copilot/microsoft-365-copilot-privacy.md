@@ -61,7 +61,7 @@ When you enter prompts using Microsoft Copilot for Microsoft 365, the informatio
 > When using Microsoft Copilot for Microsoft 365, your organization’s data might leave the Microsoft 365 service boundary under the following circumstances:
 >
 > - When you’re using plugins to help Microsoft Copilot for Microsoft 365 to provide more relevant information. Check the privacy statement and terms of use of the plugin to determine how it will handle your organization’s data. For information, see [Extensibility of Microsoft Copilot for Microsoft 365](#extensibility-of-microsoft-copilot-for-microsoft-365).
-> - When you’re using the web content plugin to enhance chat answers, Copilot for Microsoft 365 will generate a search query that is sent to Bing for the latest information from the web. For more information, [Manage access to web content in Microsoft Copilot for Microsoft 365 responses](/microsoft-365-copilot/manage-public-web-access).
+> - When you’re using the web content plugin to enhance chat answers, Copilot for Microsoft 365 will generate a search query that is sent to Bing for the latest information from the web. For more information, [Data, privacy, and security for web queries in Copilot for Microsoft 365](/microsoft-365-copilot/manage-public-web-access).
 
 Abuse monitoring for Microsoft Copilot for Microsoft 365 occurs in real-time, without providing Microsoft any standing access to customer data, either for human or for automated review. While abuse moderation, which includes human review of content, is available in Azure OpenAI, Microsoft Copilot for Microsoft 365 services have opted out of it. Microsoft 365 data isn’t collected or stored by Azure OpenAI.
 
