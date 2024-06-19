@@ -259,7 +259,7 @@ For the purposes of this assessment, apps are categorized in three groups:
 - **Third-party apps** are built and sold commercially by a third-party provider. Some apps don’t support Microsoft Entra ID, the Intune App SDK, or shared device mode. Work with the app provider and your Microsoft account team to confirm what the user experience will be.
 - **Custom line-of-business apps** are developed by your organization to address internal business needs. If you build apps using Power Apps, your app is automatically  enabled with Microsoft Entra ID, Intune, and shared device mode.
 
-The app that frontline users access meet these requirements (as applicable) for global single-in and single sign out to be enabled.
+The apps that frontline workers access must meet these requirements (as applicable) for global single-in and single sign out to be enabled.
 
 - **Integrate custom and third-party apps with [MSAL](/entra/identity-platform/msal-overview):** Users can authenticate to your apps using Microsoft Entra ID, enable SSO, and Conditional Access policies can be applied.
 - **Integrate apps with shared device mode (applies only to Android or iOS shared devices):** Apps can use the necessary shared device mode APIs in MSAL to perform automatic single sign-on and single sign out. Appropriately using these APIs allows you to integrate with shared device mode. This isn’t necessary if you’re running your app in Teams, Microsoft Edge, or Power Apps.
@@ -267,10 +267,11 @@ The app that frontline users access meet these requirements (as applicable) for 
 
 After you validate your apps, deploy them to managed devices using your MDM solution. This allows you to preinstall all the necessary apps during device enrollment so your frontline workers have everything they need on day one.
 
-### Automatically grant consent on shared devices
+### Automatically grant consent to apps to access device features
 
-On a shared device, it’s important to remove unnecessary screens that could pop up when a user accesses an app the first time. This can include consents such as prompts for the microphone, location, and camera. On shared devices it’s recommended that admins use app configuration policies to automatically grant consents.
+On a shared device, it’s important to remove unnecessary screens that could pop up when a user accesses an app the first time. This can include prompts to grant the app permission to use device features, such as the microphone or camera, or access to location. You can use [app configuration policies in Intune](/mem/intune/apps/app-configuration-policies-use-android#preconfigure-the-permissions-grant-state-for-apps) on shared devices to preconfigure app permissions to access device features.
 
+If you're using a third-party MDM solution, check the documentation for options available to automatically grant consent to apps to access device features.
 
 
 <!--### Enroll Android and iOS personal devices
