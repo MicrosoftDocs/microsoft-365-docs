@@ -33,6 +33,9 @@ To view audit logs, you must have one of the following permissions:
 - Microsoft Entra role - Global Administrator of partner tenant
 
 - Microsoft Partner Center role - Admin Agent
+ 
+> [!CAUTION]
+> To help keep your organization secure, Microsoft recommends that you use roles with the minimum level of permissions needed to perform a job. Global Administrator is a highly privileged role that should be limited to scenarios where you can't use a less-privileged role.
 
 ## Review audit logs
 

@@ -48,7 +48,9 @@ Once you have the information on this list, you are ready to [set up pay-as-you-
 
 ### Permissions
 
-You must have Global admin or SharePoint admin permissions to access the Microsoft 365 admin center and set up Microsoft 365 Backup.
+You must be a [SharePoint Administrator](/entra/identity/role-based-access-control/permissions-reference#sharepoint-administrator) or [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) to be able to access the Microsoft 365 admin center and set up Microsoft 365 Backup.
+
+[!INCLUDE [global-administrator-note](../includes/global-administrator-note.md)]
 
 ## Step 2: Turn on Microsoft 365 Backup
 
