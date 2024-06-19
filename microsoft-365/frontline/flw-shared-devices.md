@@ -70,9 +70,9 @@ To enable these scenarios, Microsoft Entra ID introduced the shared device mode 
 
 ### Key benefits of enabling shared device mode on devices
 
-- Single sign-on: Allow users to sign in to one app that supports shared device mode once and gain seamless authentication into all other apps that support shared device mode without having to reenter credentials. Exempt users from first-run experience screens on shared devices.
-- Single sign-out: Allow users an easy way to sign out from a device without needing to sign out individually from each app that supports shared device mode. Provide users’ assurances that their data isn't inappropriately shown to subsequent users, provided that the apps ensure cleaning up of any cached user data and app protection policies are applied.
-- Enforce security requirements through Conditional Access policies support: Provides admins with the ability to target specific Conditional Access policies on shared devices, ensuring that employees only have access to company data when their shared device meets internal compliance standards.
+- **Single sign-on**: Allow users to sign in to one app that supports shared device mode once and gain seamless authentication into all other apps that support shared device mode without having to reenter credentials. Exempt users from first-run experience screens on shared devices.
+- **Single sign-out**: Allow users an easy way to sign out from a device without needing to sign out individually from each app that supports shared device mode. Provide users’ assurances that their data isn't inappropriately shown to subsequent users, provided that the apps ensure cleaning up of any cached user data and app protection policies are applied.
+- **Support for enforcing security requirements using Conditional Access policies**: Provides admins with the ability to target specific Conditional Access policies on shared devices, ensuring that employees only have access to company data when their shared device meets internal compliance standards.
 
 > [!NOTE]
 > Shared device mode isn’t a full data loss prevention solution. Shared device mode should be used in conjunction with MAM policies to ensure that data doesn’t leak to areas of the device that aren’t leveraging shared device mode (for example, local file storage).
@@ -112,7 +112,7 @@ If you're a developer, see the following resources for more information about ho
 
 ### Enroll iOS devices into shared device mode
 
-To learn more about enrolling iOS devices into shared device mode using Intune, see [Set up enrollment for devices in shared device mode](/mem/intune/enrollment/automated-device-enrollment-shared-device-mode).
+To learn more about enrolling iOS devices into shared device mode in Intune, see [Set up enrollment for devices in shared device mode](/mem/intune/enrollment/automated-device-enrollment-shared-device-mode).
 
 ### Enroll Android devices into shared device mode
 
@@ -128,13 +128,13 @@ You can also choose to deploy the Microsoft Managed Home Screen app to tailor th
 
 For an overview of frontline device management in Intune, see [Get started with frontline worker device management](/mem/solutions/frontline-worker/frontline-worker-overview).
 
-## Shared device mode with third-party MDM solutions and/ or app launchers
+## Shared device mode with third-party MDM solutions and/or app launchers
 
-Shared device mode is available on some common third-party MDM and launcher solutions. The following tables summarize support for shared device mode today.
+Shared device mode is supported on some common third-party MDM and app launcher solutions. The following tables summarize support for shared device mode today.
 
 **MDM solutions**
 
-|MDM solution  |Can set device in shared device mode for Conditional Access on Android |Can set device in shared device mode for Conditional Access on iOS |
+|MDM solution  |Supports shared device mode on Android |Supports shared device mode on iOS |
 |---------|---------|---------|
 |Microsoft Intune | Yes | Yes |
 |VMware Workspace ONE | Yes | No |
@@ -152,14 +152,50 @@ Shared device mode is available on some common third-party MDM and launcher solu
 
 ## What options do I have if my MDM solution or app launcher doesn't support shared device mode?
 
-**Sign in**: If your app launcher doesn’t support global sign-in to shared device mode-enabled apps, the user must first sign in to the launcher and then sign in to Teams. Options are available to reduce the friction of the second sign in for Teams. With [domain-less sign-in](/microsoftteams/sign-in-teams?bc=%2Fmicrosoft-365%2Ffrontline%2Fbreadcrumb%2Ftoc.json&toc=%2Fmicrosoft-365%2Ffrontline%2Ftoc.json#simplify-the-sign-in-experience-with-domain-less-sign-in), users only need to enter the first part of their user principal name (UPN) to sign in, and their password.
+**Sign in**: If your app launcher doesn’t support global sign-in to shared device mode-enabled apps, the user must first sign in to the launcher and then sign in to Teams. To reduce the friction of the second sign in for Teams, consider using [domain-less sign-in](/microsoftteams/sign-in-teams?bc=%2Fmicrosoft-365%2Ffrontline%2Fbreadcrumb%2Ftoc.json&toc=%2Fmicrosoft-365%2Ffrontline%2Ftoc.json#simplify-the-sign-in-experience-with-domain-less-sign-in). With domain-less sign in, users only need to enter the first part of their user principal name (UPN) to sign in, along with their password.
 
-**Sign out**: If your app launcher doesn’t support global sign-out for shared device mode-enabled apps, consider the following options, depending on your scenario:
+**Sign out**: If your app launcher doesn’t support global sign-out for shared device mode-enabled apps, consider one of the following options, depending on your scenario:
 
 - No broker app exists on the shard device. If the Authenticator app or Company Portal app isn't present on the device, you can use your MDM app data cleanup policies to clean app data between users. Most MDMs offer this feature to clean app data upon a launcher sign-out trigger.
 - A broker app exists on the shared device.
 
 ## What if I'm not using an app launcher?
+
+## Multifactor authentication
+
+Microsoft Entra multifactor authentication (MFA) supports several forms of verification methods, including the Microsoft Authenticator app, FIDO2 keys, SMS, and voice calls. To learn more, see [How it works: Microsoft Entra multifactor authentication](/entra/identity/authentication/concept-mfa-howitworks).
+
+Due to higher cost and legal restrictions, the most secure authentication methods might not be practical for many organizations. For example, FIDO2 security keys are typically considered too expensive, biometric tools like Windows Hello might run against existing regulations or union rules, and SMS sign in might not be possible if frontline workers aren’t permitted to bring their personal devices to work.
+
+MFA provides a high level of security for apps and data but adds ongoing friction to user sign in. It's highly recommended that business and technical teams validate the user experience with MFA before a broad rollout so that the user impact can be properly considered in change management and readiness efforts.
+
+If MFA isn't feasible for your organization or deployment model, you should plan to use robust Conditional Access policies to reduce security risk. Some common Conditional Access policies to apply in scenarios when MFA isn't used on shared devices include the following policies:
+
+- Device compliance
+-	Trusted network locations
+- Device is managed
+
+## Passwordless authentication
+
+To further simplify access for your frontline workforce, you can use passwordless authentication methods so that workers don’t need to remember or enter their passwords. Passwordless authentication methods are also typically more secure, and many can satisfy MFA requirements if necessary.
+
+Before proceeding with a passwordless authentication method, determine whether it can work in your existing environment. Considerations like cost, OS support, personal device requirement, and MFA support, can affect whether an authentication method would work for your needs. For example, FIDO2 security keys are currently considered too expensive, and SMS and Authenticator sign in might not be possible if frontline workers aren’t permitted to bring their personal devices to work.
+
+See the following table to assess passwordless authentication methods for your frontline scenario.
+
+|Method|OS support|Requires personal device|Supports MFA|
+|------|----------|----------|----------|
+|Microsoft Authenticator |All |Yes |Yes |
+|SMS sign in |Android and iOS |Yes |No |
+|Windows Hello |Windows |No |Yes |
+|FIDO2 key |Windows |No |Yes |
+
+To learn more, see [Passwordless authentication options for Microsoft Entra ID](/entra/identity/authentication/concept-authentication-passwordless) and [Configure and enable users for SMS-based authentication using Microsoft Entra ID](/entra/identity/authentication/howto-authentication-sms-signin).
+
+If you’re deploying shared devices and the previous passwordless options aren’t feasible, you can opt to disable strong password requirements so that users can provide simpler passwords to sign in to managed devices. If you choose to disable strong password requirements,  consider adding these strategies to your implementation plan.
+
+- Only disable strong password requirements for users of shared devices.
+- Create a Conditional Access policy that prevents these users from signing in to nonshared devices on nontrusted networks.
 
 
 <!--### Enroll Android and iOS personal devices
