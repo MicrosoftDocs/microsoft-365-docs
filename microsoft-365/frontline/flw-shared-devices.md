@@ -211,7 +211,9 @@ You can also enable domain-less sign in for your custom LOB apps.
 
 Learn more about [domain-less sign-in](/microsoftteams/sign-in-teams?bc=%2Fmicrosoft-365%2Ffrontline%2Fbreadcrumb%2Ftoc.json&toc=%2Fmicrosoft-365%2Ffrontline%2Ftoc.json&view=o365-worldwide#enable-domain-less-sign-in-for-your-custom-apps).
 
-## Conditional Access
+## Authorization on shared devices
+
+### Conditional Access
 
 With [Conditional Access](/entra/identity/conditional-access/), you can create rules that limit access based on signals that include:
 
@@ -233,7 +235,7 @@ Conditional Access isn't supported for:
 - Devices manually configured with shared device mode, including Android and iOS devices managed with third-party MDM solutions.
 - iPad devices that use Shared iPad for Business.
 
-## App protection policies
+### App protection policies
 
 With mobile application management (MAM) from Intune, you can use app protection policies with apps that are integrated with the Intune [App SDK](/mem/intune/developer/app-sdk-get-started). This allows you to further protect your organization’s data within an app.
 
