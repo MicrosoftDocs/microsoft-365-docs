@@ -54,7 +54,7 @@ A device can only be enrolled in one MDM solution, but you can use multiple MDM 
 |SOTI MobiControl|Supported for Android. Currently unavailable for iOS.|Supported for Android and iOS devices enrolled in shared device mode. Currently unavailable for iOS.|
 |JAMF (iOS only)|Currently not supported. |Currently unavailable for iOS. |
 
-Windows devices enrolled in Intune support single sign out, zero touch provisioning, and Microsoft Entra Conditional Access. You don’t need to configure shared device mode on Windows devices.
+Windows devices enrolled in Intune support single sign out, zero touch provisioning, and Conditional Access. You don’t need to configure shared device mode on Windows devices.
 
 ## Shared device mode
 
@@ -71,7 +71,7 @@ To enable these scenarios, Microsoft Entra ID introduced the shared device mode 
 ### Key benefits of enabling shared device mode on devices
 
 - **Single sign-on**: Allow users to sign in to one app that supports shared device mode once and gain seamless authentication into all other apps that support shared device mode without having to reenter credentials. Exempt users from first-run experience screens on shared devices.
-- **Single sign-out**: Allow users an easy way to sign out from a device without needing to sign out individually from each app that supports shared device mode. Provide users’ assurances that their data isn't inappropriately shown to subsequent users, provided that the apps ensure cleaning up of any cached user data and app protection policies are applied.
+- **Single sign-out**: Allow users an easy way to sign out from a device without needing to sign out individually from each app that supports shared device mode. Provide users’ assurances that their data isn't inappropriately shown to subsequent users, given that the apps ensure cleaning up of any cached user data and app protection policies are applied.
 - **Support for enforcing security requirements using Conditional Access policies**: Provides admins with the ability to target specific Conditional Access policies on shared devices, ensuring that employees only have access to company data when their shared device meets internal compliance standards.
 
 > [!NOTE]
@@ -99,7 +99,7 @@ Things to consider:
 
 - MAM policies are required to prevent data from moving from shared device mode-enabled apps to non-shared device mode-enabled apps.
 - Some Microsoft apps don’t currently support shared device mode. See the list of [Microsoft apps that support shared device mode on Android](/entra/identity-platform/msal-android-shared-devices#microsoft-applications-that-support-shared-device-mode) and [Microsoft apps that support shared device mode on iOS](/entra/msal/objc/shared-devices-ios#microsoft-applications-that-support-shared-device-mode).
-If the app you need lacks shared device mode integration, it’s recommended that you run a web-based version of your app in either Teams or Microsoft Edge to get the benefits of shared device mode.
+If the app you need lacks shared device mode integration, consider running a web-based version of your app in either Teams or Microsoft Edge to get the benefits of shared device mode.
 
 ### For developers creating apps for shared device mode
 
@@ -161,7 +161,11 @@ Shared device mode is supported on some common third-party MDM and app launcher 
 
 ## What if I'm not using an app launcher?
 
-## Multifactor authentication
+## Authentication on shared devices
+
+### Multifactor authentication
+
+Multifactor authentication is a process in which a user is prompted for an additional form of identification during sign in. For example, the prompt could be to enter a code or provide a fingerprint scan.
 
 Microsoft Entra multifactor authentication (MFA) supports several forms of verification methods, including the Microsoft Authenticator app, FIDO2 keys, SMS, and voice calls. To learn more, see [How it works: Microsoft Entra multifactor authentication](/entra/identity/authentication/concept-mfa-howitworks).
 
@@ -169,13 +173,13 @@ Due to higher cost and legal restrictions, the most secure authentication method
 
 MFA provides a high level of security for apps and data but adds ongoing friction to user sign in. It's highly recommended that business and technical teams validate the user experience with MFA before a broad rollout so that the user impact can be properly considered in change management and readiness efforts.
 
-If MFA isn't feasible for your organization or deployment model, you should plan to use robust Conditional Access policies to reduce security risk. Some common Conditional Access policies to apply in scenarios when MFA isn't used on shared devices include the following policies:
+If MFA isn't feasible for your organization, plan to use robust Conditional Access policies to reduce security risk. Some common Conditional Access policies to apply in scenarios when MFA isn't used on shared devices include:
 
 - Device compliance
 -	Trusted network locations
 - Device is managed
 
-## Passwordless authentication
+### Passwordless authentication
 
 To further simplify access for your frontline workforce, you can use passwordless authentication methods so that workers don’t need to remember or enter their passwords. Passwordless authentication methods are also typically more secure, and many can satisfy MFA requirements if necessary.
 
@@ -196,6 +200,77 @@ If you’re deploying shared devices and the previous passwordless options aren�
 
 - Only disable strong password requirements for users of shared devices.
 - Create a Conditional Access policy that prevents these users from signing in to nonshared devices on nontrusted networks.
+
+### Domain-less sign in
+
+You can simplify the sign-in experience on Teams for iOS and Android by prefilling the domain name on the sign-in screen for users on shared and managed devices. 
+
+Users sign in by entering only the first part of their user principal name (UPN). For example, if the username is 123456@contoso.com or adelev@contoso.com, users can sign in by using only "123456" or "adelev", respectively, and their password. Signing in to Teams is faster and easier, especially for frontline workers on shared devices, who sign in and out regularly
+
+You can also enable domain-less sign in for your custom LOB apps.
+
+Learn more about [domain-less sign-in](/microsoftteams/sign-in-teams?bc=%2Fmicrosoft-365%2Ffrontline%2Fbreadcrumb%2Ftoc.json&toc=%2Fmicrosoft-365%2Ffrontline%2Ftoc.json&view=o365-worldwide#enable-domain-less-sign-in-for-your-custom-apps).
+
+## Conditional Access
+
+With [Conditional Access](/entra/identity/conditional-access/), you can create rules that limit access based on signals that include:
+
+- User or group membership
+- IP location information
+- Device (only available if the device is enrolled in Microsoft Entra ID)
+- App
+- Real-time and calculated risk detection
+
+Conditional Access policies can be used to block access when a user is on a noncompliant device or while they’re on an untrusted network. For example, you might want to use Conditional Access to prevent users from accessing an inventory app when they aren’t on the work network or are using an unmanaged device, depending on your organization’s analysis of applicable laws.
+
+Conditional Access is supported for:
+
+- Shared Windows devices managed in Intune.
+- Shared Android and iOS devices enrolled in shared device mode with zero-touch provisioning.
+
+Conditional Access isn't supported for:
+
+- Devices manually configured with shared device mode, including Android and iOS devices managed with third-party MDM solutions.
+- iPad devices that use Shared iPad for Business.
+
+## App protection policies
+
+With mobile application management (MAM) from Intune, you can use app protection policies with apps that are integrated with the Intune [App SDK](/mem/intune/developer/app-sdk-get-started). This allows you to further protect your organization’s data within an app.
+
+With app protection policies, you can add access control safeguards, such as:
+
+- Control the sharing of data between apps.
+- Prevent the saving of company app data to a personal storage location.
+- Ensure the device’s operating system is up to date.
+
+You can also use app protection policies to ensure that data doesn’t leak to apps that don’t support shared device mode. To prevent data loss, the following app protection policies must be enabled on shared devices:
+
+- Disable copy/paste to non-shared device mode enabled apps.
+- Disable local file saving.
+- Disable data transfer capabilities to non-shared device mode enabled apps.
+
+## App management
+
+Your deployment plan should include an inventory and assessment of the apps that frontline workers need to do their jobs. This section covers considerations and necessary steps to ensure users have access to required apps and that the experience is optimized in your frontline implementation.
+
+For the purposes of this assessment, apps are categorized in three groups:
+
+- **Microsoft apps** are built and supported by Microsoft. Microsoft apps support Microsoft Entra ID and integrate with the Intune App SDK. However, not all Microsoft apps support shared device mode.
+- **Third-party apps** are built and sold commercially by a third-party provider. Some apps don’t support Microsoft Entra ID, the Intune App SDK, or shared device mode. Work with the app provider and your Microsoft account team to confirm what the user experience will be.
+- **Custom line-of-business apps** are developed by your organization to address internal business needs. If you build apps using Power Apps, your app is automatically  enabled with Microsoft Entra ID, Intune, and shared device mode.
+
+The app that frontline users access meet these requirements (as applicable) for global single-in and single sign out to be enabled.
+
+- **Integrate custom and third-party apps with [MSAL](/entra/identity-platform/msal-overview):** Users can authenticate to your apps using Microsoft Entra ID, enable SSO, and Conditional Access policies can be applied.
+- **Integrate apps with shared device mode (applies only to Android or iOS shared devices):** Apps can use the necessary shared device mode APIs in MSAL to perform automatic single sign-on and single sign out. Appropriately using these APIs allows you to integrate with shared device mode. This isn’t necessary if you’re running your app in Teams, Microsoft Edge, or Power Apps.
+- **Integrate with the Intune App SDK (applies only to Android or iOS shared devices):** Apps can be managed in Intune to prevent unintended or unauthorized data exposure. This isn’t necessary if your MDM solution performs app data clears that wipe any sensitive data during device check-in flows (single sign out).
+
+After you validate your apps, deploy them to managed devices using your MDM solution. This allows you to preinstall all the necessary apps during device enrollment so your frontline workers have everything they need on day one.
+
+### Automatically grant consent on shared devices
+
+On a shared device, it’s important to remove unnecessary screens that could pop up when a user accesses an app the first time. This can include consents such as prompts for the microphone, location, and camera. On shared devices it’s recommended that admins use app configuration policies to automatically grant consents.
+
 
 
 <!--### Enroll Android and iOS personal devices
