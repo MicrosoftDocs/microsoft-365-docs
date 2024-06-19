@@ -35,17 +35,17 @@ When the web content plugin is enabled, Copilot for Microsoft 365 parses the use
 
 This generated search query is different from the user’s original prompt—it consists of a few words informed by the user’s prompt. The generated query will not include the entirety of a Microsoft 365 documents associated with the prompt. However, it may also be informed by data within a Microsoft 365 document under the following conditions:
 
-- When a user enters a prompt into Copilot inside an Office application (e.g. Writing a prompt into Copilot in Microsoft Word while a relevant document is open).
+- When a user enters a prompt into Copilot inside an Office application (for example, Writing a prompt into Copilot in Microsoft Word while a relevant document is open).
 
-- When the user explicitly references a specific document in their prompt (e.g. Asking Copilot about a specific document from copilot.microsoft.com).
+- When the user explicitly references a specific document in their prompt (for example, Asking Copilot about a specific document from copilot.microsoft.com).
 
 The following information is not included in the generated query sent to the Bing Search service:
 
-- The user’s entire prompt, unless the prompt is very short (e.g., “local weather”)
+- The user’s entire prompt, unless the prompt is very short (for example, “local weather”)
 
-- Entire Microsoft 365 files (e.g. emails or documents)
+- Entire Microsoft 365 files (for example, emails or documents)
 
-- Any identifying information based on the user’s Entra ID (e.g. username, domain, or tenant ID)
+- Any identifying information based on the user’s Microsoft Entra ID (for example, username, domain, or tenant ID)
 
 The user's prompts and Copilot's responses are stored within Microsoft 365 and never leave the service boundary.
 
@@ -59,7 +59,7 @@ The table below provides multiple examples of a user's prompt and the generated 
 |-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Who is my manager and what public information is available about them?                        | [Manager name]                                                                         | Copilot will find the name of the user’s manager from Microsoft 365 data. It will then generate a Bing search query based on their name to see what information about them is available on the web.                                                                                                                                            |
 | I’m looking for a document authored last week by [coworker].                                  | None                                                                                   | Copilot will return documents by [coworker] found in Microsoft 365 data. No web queries are generated.                                                                                                                                                                                                                                        |
-| We're considering a possible acquisition of Fabrikam. Summarize financial information about the company, including their business strategy. | Fabrikam strategy<br>Fabrikam financials                                               | Copilot will return a response with two sections. One is headlined “From your company’s data” that references information the user has access to in Microsoft 365. The other is headlined “From the web” which includes any publicly available information.                                                                                    |
+| We're considering a possible acquisition of Fabrikam. Summarize financial information about the company, including their business strategy. | Fabrikam strategy<br>Fabrikam financials                                               | Copilot will return a response with two sections. One is headlined “From your company’s data” that references information the user has access to in Microsoft 365. The other is headlined “From the web”, which includes any publicly available information.                                                                                    |
 | What decision did [coworker] make about shipping our Contoso product?                        | [Coworker name] decision about shipping Contoso product                                | Copilot will return a response based on information the user has access to in Microsoft 365.<br>Because there is no relevant information available on the web, Copilot does not include information from the web in the response.                                                                                                              |
 | Summarize [internal strategy document about clean energy] and tell me if Fabrikam has publicly announced a similar approach. | Fabrikam clean energy policy announcements                                              | The user explicitly includes a reference to a specific document in Microsoft 365. Copilot reasons over this document and identifies “clean energy policy” as a major theme. “Clean energy policy” is added to the generated search query sent to the Bing search service (the document itself is not included).<br>Copilot then takes web results returned from Bing and identifies any similarities between this public information and the strategy described in the internal document. |
 
@@ -83,7 +83,7 @@ By default, this setting is enabled. When enabled, all users within the tenant c
 
 When disabled by an IT admin, the web content plugin is disabled for all users within the tenant, regardless of the individual user’s setting. Users cannot override this setting.
 
-IT admins can disable the web content plugin following these steps (Note that it may take up to 24 hours to reflect changes):
+IT admins can disable the web content plugin following these steps (Note that it may take up to 24 hours to reflect changes:
 
 For Search admins and Global admins:
 
@@ -129,6 +129,6 @@ Users can turn off this feature by following these steps:
 
 :::image type="content" source="media/copilot-prompt-box.png" alt-text="Image showing a cursor pointing to the plugin menu in the chat input box in Copilot for Microsoft 365.":::
 
-1. Disable the web content plugin.
+2. Disable the web content plugin.
 
 :::image type="content" source="media/copilot-web-toggle.png" alt-text="Image showing a cursor pointing to the web content plugin toggle enabled.":::
