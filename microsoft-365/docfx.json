@@ -73,7 +73,7 @@
       "breadcrumb_path": "/microsoft-365/breadcrumb/toc.json",
       "recommendations": true,
       "uhfHeaderId": "MSDocsHeader-M365-IT",
-      "searchScope": ["Microsoft Bookings", "Microsoft 365 Lighthouse", "Microsoft 365 for frontline workers", "Microsoft Syntex", "Microsoft 365"],
+      "searchScope": ["Microsoft Bookings", "Microsoft 365 Lighthouse", "Microsoft 365 for frontline workers", "Microsoft Syntex", "Microsoft 365 Archive", "Microsoft 365"],
       "contributors_to_exclude": [ 
         "rjagiewich", 
         "claydetels19", 
@@ -108,8 +108,8 @@
         "frontline/**/*.md": "Microsoft 365 for frontline workers",
         "whiteboard/**/*.md": "Microsoft Whiteboard",
         "topics/**/*.md": "Microsoft Topics",
-        "syntex/archive/**/*.md": "Microsoft 365 Archive",
-        "syntex/archive/**/*.yml": "Microsoft 365 Archive"
+        "archive/**/*.md": "Microsoft 365 Archive",
+        "archive/**/*.yml": "Microsoft 365 Archive"
       },
       "feedback_product_url": {
         "compliance/**/*.md":"https://feedbackportal.microsoft.com/feedback/",
@@ -156,8 +156,8 @@
         "syntex/**/*.yml": ["Microsoft Syntex"],
         "topics/**/*.md": ["Microsoft Topics"],
         "topics/**/*.yml": ["Microsoft Topics"],
-        "syntex/archive/**/*.md": ["Microsoft 365 Archive"],
-        "syntex/archive/**/*.yml": ["Microsoft 365 Archive"]
+        "archive/**/*.md": ["Microsoft 365 Archive"],
+        "archive/**/*.yml": ["Microsoft 365 Archive"]
       }
     },
     "template": [],
