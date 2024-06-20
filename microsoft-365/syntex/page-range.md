@@ -64,6 +64,12 @@ The following table shows format options for setting a page range.
 |Finite ranges     | 2-5       | Pages 2 to 5 will be processed.  |
 |Open-ended ranges    | 5-      | All pages from page 5 to the end of file will be processed.        |
 
+**Cumulative ranges**: Range options are cumulative and can be combined, even with overlapping segments. For example, specifying “-5, 1, 3, 5-10” results in processing pages 1 through 10.
+
+**Specified range processing**: Pages falling within the specified range are processed and incur charges. For example, a five-page document with a range of “5-100” will only have page 5 processed.
+
+**Excluded range non-processing**: Pages outside the designated range are neither processed nor charged. For example, a five-page document with a range of “45, 48-50” will result in no pages being processed.
+
 These range options are cumulative and can be mixed or with overlapping ranges. For example, for the range “-5, 1, 3, 5-10," pages 1 to 10 will be processed.
 
 Pages within the specified range will be processed and charged. For example, for a five-page document with a page setting of "5-100," only page 5 will be processed.
