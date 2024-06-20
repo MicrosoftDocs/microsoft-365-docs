@@ -25,6 +25,8 @@
               href: storage/backup-3p-overview.md 
             - name: Billing
               href: storage/backup-3p-billing.md
+            - name: Pricing model
+              href: storage/backup-3p-pricing.md
             - name: Application lifecyle
               href: storage/backup-3p-lifecycle.md
 
