@@ -61,7 +61,7 @@ The following table shows format options for setting a page range.
 |Page range  |Example range  |Result  |
 |---------|---------|---------|
 |Single pages    | 1, 5, 9        | Pages 1, 5, and 9 will be processed.  |
-|Specified ranges     | 2-5       | Pages 2 to 5 will be processed.  |
+|Finite ranges     | 2-5       | Pages 2 to 5 will be processed.  |
 |Open-ended ranges    | 5-      | All pages from page 5 to the end of file will be processed.        |
 
 - **Cumulative ranges**: Range options are cumulative and can be combined, even with overlapping segments. For example, specifying “-5, 1, 3, 5-10” results in processing pages 1 through 10.
