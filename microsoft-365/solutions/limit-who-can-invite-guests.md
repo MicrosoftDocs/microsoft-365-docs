@@ -32,7 +32,8 @@ If your business processes require that you limit who can invite guests, or if y
 The first step is to create a security group for the users who will be allowed to invite guests. Be sure to configure this group to allow a Microsoft Entra role, and then assign it the Guest inviter role.
 
 To create a security group for guest inviters
-1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) using a Global Administrator or Security Administrator account.
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) using a Security Administrator account.
+
 1. Expand **Groups** and then select **All groups**.
 1. Select **New group**.
 1. Choose **Security** for the **Group type**.
