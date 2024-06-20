@@ -1,5 +1,5 @@
 ---
-ms.date: 08/21/2023
+ms.date: 06/14/2024
 title: "Summary of governance, lifecycle, and compliance capabilities for Loop experiences"
 ms.reviewer: dancost, tonchan
 ms.author: jtremper
@@ -29,15 +29,21 @@ As a Compliance Manager or IT administrator, it's crucial to stay up-to-date on 
 
 ## Loop Storage
 
-Where Loop content is stored impacts the admin management, governance, data lifecycle, and compliance capabilities available. Microsoft Loop is built on top of SharePoint, OneDrive, and [SharePoint Embedded](https://techcommunity.microsoft.com/t5/sharepoint-premium-blog/announcing-sharepoint-embedded-public-preview-at-espc23/ba-p/3993428), which means that most of these capabilities work just like existing files in your ecosystem. Because Loop pages and components are files, they can be managed in a familiar way, within your existing workflows. To help you understand how Loop content is stored in the Microsoft ecosystem, here's a high-level diagram:
+Where Loop content is stored impacts the admin management, governance, data lifecycle, and compliance capabilities available. Microsoft Loop is built on top of SharePoint, OneDrive, and [SharePoint Embedded](https://techcommunity.microsoft.com/t5/sharepoint-premium-blog/announcing-sharepoint-embedded-public-preview-at-espc23/ba-p/3993428), which means that most of these capabilities work just like existing files in your ecosystem. Because Loop pages and components are files, they can be managed in a familiar way, within your existing workflows. The table should help clarify how Loop content is stored in the Microsoft ecosystem.
 
-:::image type="content" source="media/loop-files-sharepoint.png" alt-text="Diagram showing that the place a Loop file is stored depends on where it was originally created.":::
+Where the Loop content was originally created determines its storage location:
 
-Where the loop content was originally created determines its storage location:
-- Created in the Loop app ➡️️ SharePoint Embedded
-- Created outside the Loop app in places with dedicated shared storage (for example, Teams channels) ➡️️ SharePoint
-- Created outside the Loop app in all other places without tightly associated collaborative storage (for example, Teams chat, Outlook email, Word for the web, Whiteboard) ➡️️ OneDrive
-
+|Loop content originally created in|️️️Loop content stored in SharePoint Embedded|Loop content stored in SharePoint Site|Loop content stored in User's OneDrive|
+|-----|-----|-----|-----|
+|Loop app|✔️in Loop workspace|||
+|Teams channel meeting||✔️in Channel folder||
+|Teams channel||✔️in Channel folder||
+|Teams private chat|||✔️in Microsoft Teams Chat files folder|
+|Teams private meeting|||✔️in Meetings folder|
+|Outlook email message|||✔️in Attachments folder|
+|OneNote for Windows or for the web|||✔️in OneNote Loop files folder|
+|Whiteboard|||✔️in Whiteboard\Components folder|
+|Word for the web (Preview only)|||✔️in Word Loop files folder|
 
 
 ## Summary table of admin management, governance, lifecycle, and compliance capabilities based on where Loop content is stored
@@ -46,7 +52,7 @@ Where the loop content was originally created determines its storage location:
 |  |This column applies to Loop content:  <ul><li>Created in all other places that don't have tightly associated collaborative storage (e.g. Teams chat, Outlook email, Word for the web, Whiteboard) ➡️️ in the creator's OneDrive  <li>Created in places that have dedicated shared storage (e.g. Teams channels) ➡️️ SharePoint  </ul>|This column applies to Loop content:  <ul><li>Created inside the Loop app: Workspaces, Ideas ➡️ in SharePoint Embedded, one container per Loop workspace  </ul>|
 |***Foundations***|---|---|
 |Admin toggles  |**[Admin Toggles](/microsoft-365/loop/loop-components-configuration#available-policy-settings)** exist to turn on or off creation of and live rendering of Loop components in the Microsoft 365 ecosystem. If you enable Loop components in the Microsoft 365 ecosystem via the primary toggle, there are additional separate toggles to turn on or off Loop components in Outlook or Teams chats and channels. There is also an additional toggle to turn on or off Loop components for collaborative meeting notes.  <br><br>Organizations with eCommunication regulations can choose to leave Loop components on across the Microsoft 365 ecosystem while using the independent toggles for communication tools during evaluation of Loop's data lifecycle, governance, and compliance capabilities.|**[Admin Toggle](/microsoft-365/loop/loop-workspaces-configuration)** exists to turn on or off creation of content stored in SharePoint Embedded. This includes controlling creation of Loop Ideas and creation of new workspaces.|
-|GDPR  |**GDPR** data subject requests can be serviced as part of the [Security and Compliance admin center](/compliance/regulatory/gdpr-data-subject-requests#data-subject-request-admin-tools) and [Purview eDiscovery workflows](/purview/ediscovery)|**GDPR** data subject requests can be serviced as part of the [Security and Compliance admin center](/compliance/regulatory/gdpr-data-subject-requests#data-subject-request-admin-tools) and [Purview eDiscovery workflows](/purview/ediscovery)|
+|GDPR  |**GDPR** data subject requests can be serviced as part of the [Microsoft Purview portal](/compliance/regulatory/gdpr-data-subject-requests#data-subject-request-admin-tools) and [Purview eDiscovery workflows](/purview/ediscovery)|**GDPR** data subject requests can be serviced as part of the [Microsoft Purview portal](/compliance/regulatory/gdpr-data-subject-requests#data-subject-request-admin-tools) and [Purview eDiscovery workflows](/purview/ediscovery)|
 |EUDB  |**EUDB** compliant - [What is the EU Data Boundary?](/privacy/eudb/eu-data-boundary-learn)|**EUDB** compliant - [What is the EU Data Boundary?](/privacy/eudb/eu-data-boundary-learn)|
 |***Data Security, Devices***|---|---|
 |Intune  |Basic **Intune** [Device Management Support](/mem/intune/remote-actions/device-management) exists for Loop app on iOS and Android.|Basic **Intune** [Device Management Support](/mem/intune/remote-actions/device-management) exists for Loop app on iOS and Android.|
@@ -70,7 +76,7 @@ Where the loop content was originally created determines its storage location:
 |Retention policies  |**[Retention policies](/microsoft-365/compliance/retention-policies-sharepoint)** are enforced.|**[Retention policies](/microsoft-365/compliance/retention-policies-sharepoint)** configured for *all SharePoint sites* are enforced on all Loop workspaces.  <br><br>**Not Yet Available**:  <br>Retention policies that can be overridden or set individually at the Loop workspace level aren't yet available.|
 |Retention labels  |**[Retention label](/purview/retention#retention-labels)** support is available through OneDrive or SharePoint.|**Not Yet Available**:  <br>**[Retention label](/purview/retention#retention-labels)** is supported, but an end-user configurable experience to view or update the retention label for on each page or component isn't yet available.|
 |***Data Classification***|---|---|
-|Information Protection  |**[Sensitivity Labeling](/microsoft-365/compliance/information-protection)** (MIP) is available for all Loop pages and components.|**[Sensitivity Labeling](/microsoft-365/compliance/information-protection)** (MIP) is available for all Loop pages and components, and admin configurable for each Loop workspace via PowerShell.  <br><br>**Not Yet Available**:  <br>**[Sensitivity Labeling](/microsoft-365/compliance/information-protection)** (MIP) is configurable per Loop workspace by administrators, but not yet configurable in the Loop app by end users on each Loop workspace.|
+|Information Protection  |**[Sensitivity Labeling](/microsoft-365/compliance/information-protection)** is available for all Loop pages and components.|**[Sensitivity Labeling](/microsoft-365/compliance/information-protection)** is available for all Loop pages and components, and admin configurable for each Loop workspace via PowerShell.  <br><br>**Not Yet Available**:  <br>**[Sensitivity Labeling](/microsoft-365/compliance/information-protection)** is configurable per Loop workspace by administrators, but not yet configurable in the Loop app by end users on each Loop workspace.|
 |Data Loss Prevention  |**[Data Loss Prevention](/microsoft-365/compliance/dlp-learn-about-dlp)** (DLP) rules are enforced on content with end-user policy tip support.|**[Data Loss Prevention](/microsoft-365/compliance/dlp-learn-about-dlp)** (DLP) rules are enforced on content with end-user policy tip support.|
 
 
@@ -102,7 +108,7 @@ The following sections detail capabilities that are **not yet available** for Mi
 - Retention labels aren't yet available for Loop workspace content.
 
 ### Data Classification not yet available
-- **Sensitivity Labeling (MIP/CLP)** can't be configured at the Loop workspace level within the Loop app. It can be set using PowerShell per Loop workspace and viewed in the SharePoint Embedded admin center.
+- **Sensitivity Labeling** can't be configured at the Loop workspace level within the Loop app. It can be set using PowerShell per Loop workspace and viewed in the SharePoint Embedded admin center.
 
 
 ## Manually initializing Microsoft Loop app for Conditional Access management in Microsoft Entra

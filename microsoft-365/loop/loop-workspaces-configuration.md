@@ -1,5 +1,5 @@
 ---
-ms.date: 08/21/2023
+ms.date: 06/14/2024
 title: "Manage Loop workspaces in SharePoint Embedded"
 ms.reviewer: dancost, tonchan
 ms.author: v-smandalika
@@ -72,7 +72,9 @@ You can learn more about [Loop storage](/microsoft-365/loop/loop-compliance-summ
 
 If you're looking for a simple way to turn on or off the creation of content in Loop workspaces in your tenant, do the following:
 
-1. Sign in to the Microsoft 365 admin center as a Global Administrator.
+1. Sign in to the Microsoft 365 admin center as Office Apps Administrator, Security Administrator, or Global Administrator.
+    > [!IMPORTANT]
+    > Microsoft recommends that you use roles with the fewest permissions. This helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
 1. Navigate to [Home > Org settings > Services > Loop](https://admin.microsoft.com/Adminportal/Home#/Settings/Services/:/Settings/L1/Loop).
 1. Choose your desired state for Loop workspaces via the checkbox.
     > [!NOTE]

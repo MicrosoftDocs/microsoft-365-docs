@@ -70,7 +70,7 @@ You can find this information from the "?" option in the Stream UI, if you have 
 
 ## Viva Glint
 
-The data region for Viva Glint is determined by the default geography of the tenant, not individual users, and is stored in US or EU data centers based on central tenant location.
+The data region for Viva Glint is determined by the default geography of the tenant, not individual users, and is stored in US or EU data centers based on central tenant location. If the central tenant location is *outside* the US or EU, the data for Viva Glint is stored in the US data center.
 
 ## Viva Goals
 
@@ -97,7 +97,7 @@ Customers based in EU and UK who signed up for Viva Goals prior to December 5, 2
 
 See the [Static data location information for select workloads](#static-data-location-information-for-select-workloads) section. The data region for Manager/Leader and Advanced is determined by the _Default Geography_ of the _tenant_, not individual users.
 
-Starting June 2024, Viva Insights (Advanced, Manager, Leader) customer data for new tenants in Australia will be stored in data centers located in Australia.
+Starting June 2024, Viva Insights (Advanced, Manager, Leader) customer data for new tenants in Australia will be provisioned in data centers located in Australia.
 
 ## Viva Insights – Personal
 
