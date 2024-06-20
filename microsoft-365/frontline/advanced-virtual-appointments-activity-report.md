@@ -29,7 +29,10 @@ ms.date: 08/23/2023
 
 The Advanced Virtual Appointments activity report in the Microsoft Teams admin center provides user activity information for advanced Virtual Appointments capabilities that are available with [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams).
 
-To view the report, you must be a Global admin, Teams admin, Global reader, or Report reader, and your organization must be using advanced Virtual Appointments capabilities.
+To view the report, you must be a Teams admin, Global reader, Report reader, or Global admin, and your organization must be using advanced Virtual Appointments capabilities.
+
+> [!IMPORTANT]
+> [!INCLUDE [global-admin-note](includes/global-admin-note.md)]
 
 The report shows usage information for the following features.
 
