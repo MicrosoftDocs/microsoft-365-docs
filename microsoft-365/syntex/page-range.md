@@ -68,7 +68,7 @@ These range options are cumulative and can be mixed or with overlapping ranges. 
 
 Pages within the specified range will be processed and charged. For example, for a five-page document with a page setting of "5-100," only page 5 will be processed.
 
-Pages outside the set range won't be processed or charged. For example, for a five-page document with a page setting of "45, 48-50" won't have any pages processed.
+Pages outside the set range won't be processed or charged. For example, a five-page document with a page setting of "45, 48-50" won't have any pages processed.
 
 <!---
 ## See whether a model has a page range set
