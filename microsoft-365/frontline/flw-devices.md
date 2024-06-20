@@ -146,13 +146,13 @@ As previously mentioned, Microsoft 365 for frontline workers uses Microsoft Entr
 
 #### Multifactor authentication
 
-Microsoft Entra multifactor authentication (MFA) works by requiring two or more of the following authentication methods at sign in:
+[Microsoft Entra multifactor authentication (MFA)](/entra/identity/authentication/concept-mfa-howitworks) works by requiring two or more of the following authentication methods at sign in:
 
 - Something the user knows, typically a password.
 - Something the user has, such as a trusted device that's not easily duplicated, like a phone or hardware key.
 - Something the user is - biometrics like a fingerprint or face scan
 
-MFA supports several forms of verification methods, including the Microsoft Authenticator app, FIDO2 keys, SMS, and voice calls. To learn more, see [How it works: Microsoft Entra multifactor authentication](/entra/identity/authentication/concept-mfa-howitworks).
+MFA supports several forms of verification methods, including the Microsoft Authenticator app, FIDO2 keys, SMS, and voice calls.
 
 Due to higher cost and legal restrictions, the most secure authentication methods might not be practical for many organizations. For example, FIDO2 security keys are typically considered too expensive, biometric tools like Windows Hello might run against existing regulations or union rules, and SMS sign in might not be possible if frontline workers aren’t permitted to bring their personal devices to work.
 
@@ -201,7 +201,7 @@ To learn more, see the [Microsoft Entra Conditional Access documentation](/entra
 
 #### App protection policies
 
-With mobile application management (MAM) from Intune, you can use app protection policies with apps that are integrated with the Intune [App SDK](/mem/intune/developer/app-sdk-get-started). This allows you to further protect your organization’s data within an app.
+With mobile application management (MAM) from Intune, you can use [app protection policies](/mem/intune/apps/app-protection-policy) with apps that are integrated with the Intune [App SDK](/mem/intune/developer/app-sdk-get-started). This allows you to further protect your organization’s data within an app.
 
 With app protection policies, you can add access control safeguards, such as:
 
@@ -209,7 +209,7 @@ With app protection policies, you can add access control safeguards, such as:
 - Prevent the saving of company app data to a personal storage location.
 - Ensure the device’s operating system is up to date.
 
-You can also use app protection policies to ensure that  data doesn’t leak to apps that don’t support shared device mode. To prevent data loss, the following app protection policies must be enabled on shared devices:
+You can also use app protection policies to ensure that data doesn’t leak to apps that don’t support shared device mode. To help prevent data loss, enable the following app protection policies on shared devices:
 
 - Disable copy/paste to non-shared device mode enabled apps.
 - Disable local file saving.
