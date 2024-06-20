@@ -28,7 +28,7 @@ description: "Use the Centralized Deployment PowerShell cmdlets to help you depl
 
 # Use the Centralized Deployment PowerShell cmdlets to manage add-ins
 
-As a Microsoft 365 global admin, you can deploy Office Add-ins to users via the Centralized Deployment feature (see [Deploy Office Add-ins in the admin center](../admin/manage/manage-deployment-of-add-ins.md)). In addition to deploying Office Add-ins via the Microsoft 365 admin center, you can also use Microsoft PowerShell. Install the [O365 Centralized Add-In Deployment Module for Windows PowerShell](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment).
+As a Microsoft 365 user admin, you can deploy Office Add-ins to users via the Centralized Deployment feature (see [Deploy Office Add-ins in the admin center](../admin/manage/manage-deployment-of-add-ins.md)). In addition to deploying Office Add-ins via the Microsoft 365 admin center, you can also use Microsoft PowerShell. Install the [O365 Centralized Add-In Deployment Module for Windows PowerShell](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment).
 
 After you download the module, open a regular Windows PowerShell window and run the following cmdlet:
 
@@ -42,13 +42,13 @@ Before you can use the Centralized Deployment cmdlets, you need to sign in.
 
 1. Start PowerShell.
 
-2. Connect to PowerShell by using your company admin credentials. Run the following cmdlet.
+2. Connect to PowerShell by using your **User Admin** credentials. Run the following cmdlet.
 
   ```powershell
   Connect-OrganizationAddInService
   ```
 
-3. In the sign in prompt that opens, select or enter your Microsoft 365 **User Admin** or **Global admin** credentials.
+3. In the sign in prompt that opens, select or enter your Microsoft 365 **User Admin** credentials.
 
 > [!NOTE]
 > For more information about using PowerShell, see [Connect to Microsoft 365 with PowerShell](./connect-to-microsoft-365-powershell.md).
