@@ -23,7 +23,12 @@ description: Learn how to specify a page range for extracting information from d
 You can set a page range to specify which pages in a document you want to extract information from when using a document processing model. This setting can be used to process a range of pages for files rather than the entire file. Processing fewer pages can lead to cost savings, because model services are billed based on the number of pages processed. It can also be more efficient by reducing processing time.
 
 > [!NOTE]
+> By default, the page range setting is empty. If no page range is provided, the entire document will be processed.
+
+<!---
+> [!NOTE]
 > This setting is not available for unstructured document processing models or sensitive information prebuilt models.
+--->
 
 ## Set a page range when you train a prebuilt model
 
@@ -64,9 +69,6 @@ These range options are cumulative and can be mixed or with overlapping ranges. 
 Pages within the specified range will be processed and charged. For example, for a five-page document with a page setting of "5-100," only page 5 will be processed.
 
 Pages outside the set range won't be processed or charged. For example, for a five-page document with a page setting of "45, 48-50" won't have any pages processed.
-
-> [!NOTE]
-> By default, the page range setting is empty. If no page range is provided, the entire document will be processed.
 
 <!---
 ## See whether a model has a page range set
