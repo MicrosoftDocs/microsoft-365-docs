@@ -3,7 +3,7 @@ title: "Limit who can invite guests"
 ms.author: jtremper
 author: jacktremper
 manager: pamgreen
-ms.date: 12/11/2023
+ms.date: 06/19/2024
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
