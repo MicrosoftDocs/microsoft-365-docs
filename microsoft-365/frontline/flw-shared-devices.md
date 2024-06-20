@@ -28,7 +28,7 @@ Many frontline workers use shared mobile devices to do work. Shared devices are 
 
 Here’s an example of a typical scenario. An organization has a pool of devices in charging cradles to be shared across all employees. At the start of a shift, an employee picks up a device from the pool, and signs in to Microsoft Teams and other business apps essential to their role. At the end of their shift, they sign out and return the device to the pool. Even within the same shift, a worker might return a device when they finish a task or clock out for lunch, and then pick up a different one when they clock back in.
 
-Shared devices present unique security challenges. For example, employees might have access to company or customer data that shouldn’t be available to others on the same device. Organizations deploying shared devices need controls to prevent unauthorized or unintended access to apps and data when devices are handed off between employees.
+Shared devices present unique security challenges. For example, employees might have access to company or customer data that shouldn’t be available to others on the same device. Organizations deploying shared devices must implement security measures to prevent unauthorized or unintended access to apps and data when devices are handed off between employees.
 
 Use the guidance and considerations in this article to help you plan and manage your frontline shared devices deployment.
 
@@ -225,7 +225,7 @@ With [Conditional Access](/entra/identity/conditional-access/overview), you can 
 - App
 - Real-time and calculated risk detection
 
-Conditional Access policies can be used to block access when a user is on a noncompliant device or while they’re on an untrusted network. For example, you might want to use Conditional Access to prevent users from accessing an inventory app when they aren’t on the work network or are using an unmanaged device, depending on your organization’s analysis of applicable laws.
+Conditional Access policies can be used to block access when a user is on a noncompliant device or while they’re on an untrusted network. For example, you might want to use Conditional Access to prevent users from accessing an inventory app when they aren’t on the corporate network or are using an unmanaged device.
 
 Conditional Access is supported for:
 
