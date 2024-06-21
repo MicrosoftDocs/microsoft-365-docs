@@ -44,7 +44,20 @@ Registration in Microsoft Entra ID is a required step for Intune management. Bef
 - **Microsoft Entra registration** - This option is the device identity option available for personal and corporate-owned mobile devices. Users on these devices authenticate by signing in to work resources, like apps and web browsers, using their Microsoft Entra ID work account. 
 - **Microsoft Entra joined** - This option is the device identity option available for corporate-owned Windows 10/11 devices utilizing co-management options. Users on these devices authenticate by signing in to the device using their Microsoft Entra ID work account.  
 
-## Next step
+## Steps to assign apps to your organization
+
+This solution steps you through the process of creating app protection policies in Microsoft Intune for specific apps and assigning those policies to members of your organization. Once you've completed the above [prerequisites](apps-protect-overview.md#prerequisites), you're ready to create app protection policies for your organization in Intune. Using configuration and protection policies as part of your app management efforts allows members of your organization to safely use apps. By managing apps at your organization, you help to protect and secure your organization’s data.
+
+Step 1. Confirm users, devices, or groups
+Step 2. Assign apps to users, devices, or groups
+Step 3. Verify and monitor app assignments
+Step 4. Troubleshoot app deployment issues
+
+Follow these steps to assign apps to members of your organizastion using Intune:
+1. [Confirm users, devices, or groups](apps-assign-step-1.md)
+2. [Assign apps to users, devices, or groups](apps-assign-step-2.md)
+3. [Verify and monitor app assignments](apps-assign-step-3.md)
+4. [Troubleshoot app deployment issues](apps-assign-step-4.md)
 
 [:::image type="content" source="../media/assign-managed-apps/assign-managed-apps-01.png" alt-text="Step 1. Confirm users and devices." border="false" :::](apps-assign-step-1.md)
 
