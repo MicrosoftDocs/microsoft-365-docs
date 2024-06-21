@@ -28,9 +28,9 @@ Many frontline workers use shared mobile devices to do work. Shared devices are 
 
 Here’s an example of a typical scenario. An organization has a pool of devices in charging cradles to be shared across all employees. At the start of a shift, an employee picks up a device from the pool, and signs in to Microsoft Teams and other business apps essential to their role. At the end of their shift, they sign out and return the device to the pool. Even within the same shift, a worker might return a device when they finish a task or clock out for lunch, and then pick up a different one when they clock back in.
 
-Shared devices present unique security challenges. For example, employees might have access to company or customer data that shouldn’t be available to others on the same device. Organizations deploying shared devices must implement security measures to prevent unauthorized or unintended access to apps and data when devices are handed off between employees.
+Shared devices present unique security challenges. For example, employees might have access to company or customer data that shouldn’t be available to others on the same device. Organizations deploying shared devices must define the sign-out and sign-in experience and implement controls to prevent unauthorized or unintended access to apps and data when devices are handed off between employees.
 
-Use the guidance and considerations in this article to help you plan and manage your frontline shared devices deployment.
+This article covers capabilities and considerations for deploying and managing shared devices to help empower your frontline workforce with the devices they need to get work done. Use this guidance to help plan and manage your frontline deployment.
 
 ## Mobile device management
 
@@ -54,7 +54,7 @@ A device can only be enrolled in one MDM solution, but you can use multiple MDM 
 |SOTI MobiControl|Supported for Android. Currently unavailable for iOS.|Supported for Android and iOS devices enrolled in shared device mode. Currently unavailable for iOS.|
 |JAMF (iOS only)|Currently not supported. |Currently unavailable for iOS. |
 
-Windows devices enrolled in Intune support single sign out, zero touch provisioning, and Conditional Access. You don’t need to configure shared device mode on Windows devices.
+Windows devices enrolled in Intune support single sign-out, zero touch provisioning, and Conditional Access. You don’t need to configure shared device mode on Windows devices.
 
 ## Shared device mode
 
@@ -263,15 +263,15 @@ For the purposes of this assessment, apps are categorized in three groups:
 - **Third-party apps** are built and sold commercially by a third-party provider. Some apps don’t support Microsoft Entra ID, the Intune App SDK, or shared device mode. Work with the app provider and your Microsoft account team to confirm what the user experience will be.
 - **Custom line-of-business apps** are developed by your organization to address internal business needs. If you build apps using Power Apps, your app is automatically  enabled with Microsoft Entra ID, Intune, and shared device mode.
 
-The apps that frontline workers access must meet these requirements (as applicable) for global single-in and single sign out to be enabled.
+The apps that frontline workers access must meet these requirements (as applicable) for global single-in and single sign-out to be enabled.
 
 - **Integrate custom and third-party apps with [MSAL](/entra/identity-platform/msal-overview):** Users can authenticate to your apps using Microsoft Entra ID, enable SSO, and Conditional Access policies can be applied.
-- **Integrate apps with shared device mode (applies only to Android or iOS shared devices):** Apps can use the necessary shared device mode APIs in MSAL to perform automatic single sign-on and single sign out. Appropriately using these APIs allows you to integrate with shared device mode. This isn’t necessary if you’re running your app in Teams, Microsoft Edge, or Power Apps.
-- **Integrate with the Intune App SDK (applies only to Android or iOS shared devices):** Apps can be managed in Intune to prevent unintended or unauthorized data exposure. This isn’t necessary if your MDM solution performs app data clears that wipe any sensitive data during device check-in flows (single sign out).
+- **Integrate apps with shared device mode (applies only to Android or iOS shared devices):** Apps can use the necessary shared device mode APIs in MSAL to perform automatic single sign-on and single sign-out. Appropriately using these APIs allows you to integrate with shared device mode. This step isn’t necessary if you’re running your app in Teams, Microsoft Edge, or Power Apps.
+- **Integrate with the Intune App SDK (applies only to Android or iOS shared devices):** Apps can be managed in Intune to prevent unintended or unauthorized data exposure. This step isn’t necessary if your MDM solution performs app data clears that wipe any sensitive data during device check-in flows (single sign-out).
 
 After you validate your apps, deploy them to managed devices using your MDM solution. This allows you to preinstall all the necessary apps during device enrollment so your frontline workers have everything they need on day one.
 
-### Automatically grant consent to apps to access device features
+### Automatically grant consent to apps for device features
 
 On a shared device, it’s important to remove unnecessary screens that could pop up when a user accesses an app the first time. This can include prompts to grant the app permission to use device features, such as the microphone or camera, or access to location. You can use [app configuration policies in Intune](/mem/intune/apps/app-configuration-policies-use-android#preconfigure-the-permissions-grant-state-for-apps) on shared devices to preconfigure app permissions to access device features.
 
