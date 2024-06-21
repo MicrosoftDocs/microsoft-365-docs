@@ -102,7 +102,7 @@ Options available in educational tenants:
 
    ![Let user access office store settings for EDU](../../media/user-owned-apps-and-services-edu.png)
 
-The user’s license information is used to define whether a user is a faculty/staff or a student along with the Age Group property to check whether the student is an adult or not. A user who does not have an educational license is included in the <b>Faculty, staff and other non-student users</b> user group  
+The user’s license information is used to define whether a user is a faculty/staff or a student along with the Age Group property to check whether the student is an adult or not. A user who does not have an educational license is included in the <b>Faculty, staff and other non-student users</b> user group.  
 
 > [!NOTE]
 > For more information see:  
