@@ -3,7 +3,7 @@ title: "Enter your Bookings business information"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 06/18/2020
+ms.date: 06/21/2024
 audience: Admin
 ms.topic: how-to
 ms.service: bookings
