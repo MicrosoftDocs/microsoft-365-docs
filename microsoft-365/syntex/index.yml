@@ -12,7 +12,7 @@ metadata:
   ms.custom: intro-hub-or-landing
   author: chuckedmonson #Required; your GitHub user alias, with correct capitalization.
   ms.author: chucked #Required; microsoft alias of author; optional team alias.
-  ms.date: 09/01/2023 #Required; mm/dd/yyyy format
+  ms.date: 05/07/2024 #Required; mm/dd/yyyy format
   ms.localizationpriority: medium
   titleSuffix: Microsoft Syntex
 
@@ -90,7 +90,7 @@ landingContent:
         links:
           - text: Microsoft 365 Archive
             url: /microsoft-365/archive
-          - text: Microsoft Backup (Preview)
+          - text: Microsoft 365 Backup (Preview)
             url: /microsoft-365/backup
 
 # Card 4

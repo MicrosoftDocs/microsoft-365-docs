@@ -36,7 +36,9 @@ The content center site can be provisioned from the [SharePoint look book servic
 ![Screenshot of the content center site template provisioning page.](../media/content-understanding/content-center-site-provisioning-page.png)
 
 > [!NOTE]
-> You must be a global administrator or SharePoint administrator in Microsoft 365 to provision the site.
+> You must be a [SharePoint Administrator](/entra/identity/role-based-access-control/permissions-reference#sharepoint-administrator) or [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) to provision the site.
+
+[!INCLUDE [global-administrator-note](../includes/global-administrator-note.md)]
 
 1. From the main page of the [SharePoint look book](https://lookbook.microsoft.com/), on the **View the designs** menu, select **Syntex** > **Syntex content center**.
 
