@@ -5,7 +5,7 @@ author: erikre
 manager: dougeby
 audience: ITPro
 ms.topic: article
-ms.date: 04/10/2024
+ms.date: 06/21/2024
 description: Assign managed apps to your organization using Microsoft Intune.
 ms.service: o365-solutions
 ms.localizationpriority: high
