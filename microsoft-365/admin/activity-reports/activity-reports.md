@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 06/14/2024
+ms.date: 06/21/2024
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
@@ -193,9 +193,8 @@ Global administrators can revert this change for their tenant and show identifia
 3. Uncheck the statement **Display concealed user, group, and site names in all reports**, and then save your changes.
 
 Beginning on June 23, 2022, an API will gradually become available to all environments for global admins to change this setting without needing to visit the Microsoft 365 admin center.
-The API details are below:  
 
-The URL is <https://graph.microsoft.com/beta/admin/reportSettings>
+For more details, see [adminReportSettings API](/graph/api/resources/adminreportsettings?view=graph-rest-beta&preserve-view=true).
 
 Two methods have been approved for this API:
 
