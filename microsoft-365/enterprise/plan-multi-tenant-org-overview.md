@@ -19,8 +19,7 @@ description: Learn how to plan for multitenant organizations in Microsoft 365.
 # Plan for multitenant organizations in Microsoft 365
 
 > [!NOTE]
-> Multitenant organizations is not available in Microsoft 365 GCC, GCC High, DoD, or Microsoft 365 China (operated by 21Vianet).
-
+> Multitenant organizations is not available in Microsoft 365 China (operated by 21Vianet).
 If your organization manages multiple Microsoft 365 tenants, you can set up a multitenant organization in Microsoft 365 to facilitate collaboration and resource access between tenants. Creating a multitenant organization and synchronizing users between tenants provides a more seamless collaboration experience between the users in different tenants when [searching for each other](/microsoft-365/enterprise/multi-tenant-people-search), using Microsoft Teams and meetings, and collaborating on files.
 
 The tenant that creates the multitenant organization is known as the *owner* while other tenants that join the multitenant organization are known as *members*. Once the global administrator in the owner tenant creates the multitenant organization, they can invite member tenants. A global administrator in each member tenant can then join the multitenant organization.
