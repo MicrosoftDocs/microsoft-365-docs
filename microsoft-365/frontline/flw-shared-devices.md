@@ -58,7 +58,7 @@ Windows devices enrolled in Intune support single sign-out, zero touch provision
 
 ## Shared device mode
 
-[Shared device mode](/entra/identity-platform/msal-shared-devices) is a Microsoft Entra ID feature that allows organizations to configure an iOS, iPadOS, or Android device so that it can be easily shared by multiple employees, which is common in the frontline worker space. Employees can sign in once and get access to their data across all supported apps without having access to other employees’ data. When they're finished with their shift or task, they sign out once and get signed out of the device and all supported apps, making the device ready for the next employee to use.
+[Shared device mode](/entra/identity-platform/msal-shared-devices) is a Microsoft Entra ID feature that allows organizations to configure an Andriod, iOS, or iPadOS device so that it can be easily shared by multiple employees, which is common in the frontline worker space. Employees can sign in once and get access to their data across all supported apps without having access to other employees’ data. When they're finished with their shift or task, they sign out once and get signed out of the device and all supported apps, making the device ready for the next employee to use.
 
 ### Why shared device mode?
 
@@ -126,8 +126,6 @@ You can also choose to deploy the Microsoft Managed Home Screen app to tailor th
 - [Configure the Microsoft Managed Home Screen app for Android Enterprise](/mem/intune/apps/app-configuration-managed-home-screen-app)
 - [How to set up Microsoft Managed Home Screen on dedicated devices in multi-app kiosk mode](https://techcommunity.microsoft.com/t5/intune-customer-success/how-to-setup-microsoft-managed-home-screen-on-dedicated-devices/ba-p/1388060)
 
-<!--For an overview of frontline device management in Intune, see [Get started with frontline worker device management](/mem/solutions/frontline-worker/frontline-worker-overview).-->
-
 ## Shared device mode with third-party MDM solutions and/or app launchers
 
 Shared device mode is supported on some common third-party MDM and app launcher solutions. The following tables summarize support for shared device mode today.
@@ -166,8 +164,6 @@ Shared device mode is supported on some common third-party MDM and app launcher 
 ## Authentication on shared devices
 
 ### Multifactor authentication
-
-<!--Multifactor authentication is a process in which a user is prompted for an additional form of identification during sign in. For example, the prompt could be to enter a code or provide a fingerprint scan.-->
 
 Microsoft Entra multifactor authentication (MFA) supports several forms of verification methods, including the Microsoft Authenticator app, FIDO2 keys, SMS, and voice calls. To learn more, see [How it works: Microsoft Entra multifactor authentication](/entra/identity/authentication/concept-mfa-howitworks).
 
@@ -239,15 +235,7 @@ Conditional Access isn't supported for:
 
 ### App protection policies
 
-With mobile application management (MAM) from Intune, you can use app protection policies with apps that are integrated with the Intune [App SDK](/mem/intune/developer/app-sdk-get-started). This allows you to further protect your organization’s data within an app.
-
-With app protection policies, you can add access control safeguards, such as:
-
-- Control the sharing of data between apps.
-- Prevent the saving of company app data to a personal storage location.
-- Ensure the device’s operating system is up to date.
-
-You can also use app protection policies to ensure that data doesn’t leak to apps that don’t support shared device mode. To prevent data loss, the following app protection policies must be enabled on shared devices:
+With mobile application management (MAM) from Intune, you can use app protection policies to ensure that data doesn’t leak to apps that don’t support shared device mode. To help prevent data loss, enable the following app protection policies on shared devices:
 
 - Disable copy/paste to non-shared device mode enabled apps.
 - Disable local file saving.

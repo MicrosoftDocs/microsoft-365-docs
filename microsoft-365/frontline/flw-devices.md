@@ -150,7 +150,7 @@ As previously mentioned, Microsoft 365 for frontline workers uses Microsoft Entr
 
 - Something the user knows, typically a password.
 - Something the user has, such as a trusted device that's not easily duplicated, like a phone or hardware key.
-- Something the user is - biometrics like a fingerprint or face scan
+- Something the user is - biometrics like a fingerprint or face scan.
 
 MFA supports several forms of verification methods, including the Microsoft Authenticator app, FIDO2 keys, SMS, and voice calls.
 
@@ -162,7 +162,12 @@ If MFA isn't feasible for your organization or deployment model, you should plan
 
 #### Passwordless authentication
 
-To further simplify access for your frontline workforce, you can use passwordless authentication methods so that workers don’t need to remember or enter their passwords. Passwordless authentication methods are also typically more secure, and many can satisfy MFA requirements if necessary.
+To further simplify access for your frontline workforce, you can use passwordless authentication methods so that workers don’t need to remember or enter their passwords. Passwordless authentication methods remove the use of a password at sign-in and replaces it with:
+
+- Something the user has, like a phone or security key.
+- Something the user is or knows, like biometrics or a PIN.
+
+Passwordless authentication methods are also typically more secure, and many can satisfy MFA requirements if necessary.
 
 Before proceeding with a passwordless authentication method, determine whether it can work in your existing environment. Considerations like cost, OS support, personal device requirement, and MFA support, can affect whether an authentication method would work for your needs. For example, FIDO2 security keys are currently considered too expensive, and SMS and Authenticator sign in might not be possible if frontline workers aren’t permitted to bring their personal devices to work.
 
@@ -209,13 +214,15 @@ With app protection policies, you can add access control safeguards, such as:
 - Prevent the saving of company app data to a personal storage location.
 - Ensure the device’s operating system is up to date.
 
-You can also use app protection policies to ensure that data doesn’t leak to apps that don’t support shared device mode. To help prevent data loss, enable the following app protection policies on shared devices:
+In a shared devices deployment, you can use app protection policies to ensure that data doesn't leak to apps that don't support shared device mode. App protection policies are helpful in BYOD scenarios because they allow you to protect your data at the app level without having to manage the entire device.
+
+<!--You can also use app protection policies to ensure that data doesn’t leak to apps that don’t support shared device mode. To help prevent data loss, enable the following app protection policies on shared devices:
 
 - Disable copy/paste to non-shared device mode enabled apps.
 - Disable local file saving.
 - Disable data transfer capabilities to non-shared device mode enabled apps.
 
-App protection policies are helpful in BYOD scenarios because they allow you to protect your data at the app level without having to manage the entire device. This is important in scenarios where employees might have a device managed by another tenant (for example, a university or another employer) and can’t be managed by another company.
+App protection policies are helpful in BYOD scenarios because they allow you to protect your data at the app level without having to manage the entire device. This is important in scenarios where employees might have a device managed by another tenant (for example, a university or another employer) and can’t be managed by another company.-->
 
 ## Next steps
 
