@@ -132,7 +132,7 @@ More at [Set up Outlook for email](https://support.microsoft.com/office/f5bf0cd1
   
 ### Import email
 
-If you are using Outlook with another email account, you can import your previous email, calendar, and contacts into your new Microsoft account.
+If you're using Outlook with another email account, you can import your previous email, calendar, and contacts into your new Microsoft account.
   
 1. **Export your old email**
 
