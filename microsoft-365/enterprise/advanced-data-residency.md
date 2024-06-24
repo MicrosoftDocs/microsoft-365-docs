@@ -107,13 +107,13 @@ The following screenshot is an example of the Microsoft 365 admin center Data lo
 
 #### Before Migration Opt-in
 
-:::image type="content" source="media\data-residency\2-adr-microsoft-365-data-location-card-before-move_UPDATED2.png" alt-text="Screenshot of Data Location View Before Migration.":::
+:::image type="content" source="media\data-residency\2-adr-microsoft-365-data-location-card-before-move_UPDATED1.png" alt-text="Screenshot of Data Location View Before Migration.":::
 
 Once a customer administrator chooses the option to initiate migration, they are provided with confirmation of their opt-in date and migration initiation as shown in the screenshot below.
 
 #### After Migration Opt-in
 
-:::image type="content" source="media\data-residency\3-adr-microsoft-365-data-location-card-move-initiated_UPDATED.png" alt-text="Screenshot of Data Location View Migration Requested.":::
+:::image type="content" source="media\data-residency\3-adr-microsoft-365-data-location-card-move-initiated_UPDATED1.png" alt-text="Screenshot of Data Location View Migration Requested.":::
 
 The "Data location" section in the Microsoft 365 admin center (referenced in the screenshots above) displays the most up-to-date location of each workload throughout the data migration process. Customer administrators can also view any Message center notifications related to their migration within the Microsoft 365 admin center by navigating to **Health > Message center**.
 
@@ -133,11 +133,11 @@ The following screenshots are examples of the Microsoft 365 admin center Data lo
 
 #### During Migration
 
-:::image type="content" source="media\data-residency\4-adr-microsoft-365-data-location-card-move-in-progress_UPDATED.png" alt-text="Screenshot of Data Location View Migration in Progress.":::
+:::image type="content" source="media\data-residency\4-adr-microsoft-365-data-location-card-move-in-progress_UPDATED1.png" alt-text="Screenshot of Data Location View Migration in Progress.":::
 
 #### After Migration
 
-:::image type="content" source="media\data-residency\5-adr-microsoft-365-data-location-card-move-completed_UPDATED.png" alt-text="Screenshot of Data Location View Migration Completed.":::
+:::image type="content" source="media\data-residency\5-adr-microsoft-365-data-location-card-move-completed_UPDATED1.png" alt-text="Screenshot of Data Location View Migration Completed.":::
 
 ### Effect on End Users and Workloads
 
