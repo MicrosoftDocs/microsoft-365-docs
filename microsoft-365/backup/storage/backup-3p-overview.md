@@ -33,6 +33,8 @@ To create and deploy an application, the third-party developers perform the foll
 
 3. Request the Consuming Tenant Backup Admin to consent your Microsoft 365 Backup Storage application to be able to execute in the Consuming Tenant.
 
+4. Enable your application to be the Microsoft 365 Backup Storage Controller in a Consuming Tenant as per [Onboard a third-party Microsoft 365 Backup Storage application](backup-3p-lifecycle.md#onboard-a-third-party-microsoft-365-backup-storage-application)
+
 > [!NOTE]
 > This is the standard app registration workflow that is typically invoked by the Consuming Tenant Admin clicking on the following URL:
 > ```
