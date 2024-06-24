@@ -28,8 +28,6 @@ E plans are meant for information workers (employees who typically work at a des
 
 You'll get an overview of what to expect when users are switched to an F plan, how to prepare for the change, and what to do after switching plans to transition the frontline workers in your organization.
 
-[!INCLUDE [teams-licensing-notice](includes/teams-licensing-notice.md)]
-
 ## Understand the key differences between E and F plans
 
 Start by getting familiar with the service and feature differences between the plans.
@@ -55,13 +53,6 @@ Desktop client apps aren't included in F3 and F1 plans. Your frontline workers c
 |Microsoft 365 for the web |Yes|Yes|Yes|Read-only|Read-only|
 |Microsoft 365 for mobile |Yes|Yes<sup>1</sup>|Yes<sup>1</sup>|Read-only|Read-only|
 |Visio for the web|Yes|Yes|Yes|Read-only|Read-only|
-
-<!--|Service or feature|Microsoft 365 E3/E5  |Microsoft 365 F3|Microsoft 365 F1|
-|---------|---------|---------|---------|
-|Desktop client apps (Word, Excel, OneNote, PowerPoint, Access, Publisher)|Yes|No|No|
-|Microsoft 365 for the web |Yes|Yes|Read-only|
-|Microsoft 365 for mobile |Yes|Yes<sup>1</sup>|Read-only|
-|Visio for the web|Yes|Yes|Read-only|-->
 
 <sup>1</sup>Limited to devices with integrated screens less than 10.9 inches.
 
@@ -102,13 +93,6 @@ F1 users don't have mailbox rights. Although a mailbox is provisioned for users 
 |Archive mailbox|Yes|No|No|No|No|
 |Delegate access|Yes|No|No|No|No|
 
-<!--|Service or feature|Microsoft 365 E3/E5|Microsoft 365 F3|Microsoft 365 F1|
-|---------|---------|---------|---------|
-|Exchange Online mailbox|Yes (100 GB mailbox)|Yes (2 GB mailbox)|No<sup>1</sup>|
-|Outlook desktop app|Yes|No|No|
-|Archive mailbox|Yes|No|No|
-|Delegate access|Yes|No|No|-->
-
 <sup>1</sup>F1 includes the Exchange Kiosk plan to enable Teams calendar only and doesn't include mailbox rights.
 
 To learn more, see [Exchange Online service description](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description).
@@ -133,11 +117,6 @@ F3 and F1 users can collaborate on documents and access organization-wide resour
 |Site mailbox|Yes|No|No|No|No|
 |Personal site|Yes|No|No|No|No|
 
-<!--|Service or feature|Microsoft 365 E3/E5|Microsoft 365 F3|Microsoft 365 F1|
-|---------|---------|---------|---------|
-|Site mailbox|Yes|No|No|
-|Personal site|Yes|No|No|-->
-
 To learn more about SharePoint limits by plan, see [SharePoint limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits).
 
 #### OneDrive
@@ -148,10 +127,6 @@ F3 and F1 users have 2 GB of OneDrive storage to store and share files. To learn
 |---------|---------|---------|---------|---------|---------|
 |OneDrive|1+ TB storage<sup>1</sup>|2 GB storage|2 GB storage|2 GB storage|2 GB storage|
 
-<!--|Service or feature|Microsoft 365 E3/E5|Microsoft 365 F3|Microsoft 365 F1|
-|---------|---------|---------|---------|
-|OneDrive|1+ TB storage<sup>1</sup>|2 GB storage|2 GB storage|-->
-
 <sup>1</sup>Up to 5 TB of initial OneDrive storage per user based on the [default quota](/sharepoint/set-default-storage-space) for the tenant. More storage can be requested. Subscriptions for less than five users receive 1 TB of OneDrive storage that can't be expanded.
 
 #### Content services
@@ -159,11 +134,6 @@ F3 and F1 users have 2 GB of OneDrive storage to store and share files. To learn
 |Service or feature|Microsoft 365 E3/E5 (no Teams)|Microsoft 365 F3 (with Teams)|Microsoft 365 F3 (no Teams)|Microsoft 365 F1 (with Teams)|Microsoft 365 F1 (no Teams)|
 |---------|---------|---------|---------|---------|---------|
 |Microsoft Forms|Yes<sup>1</sup>|Yes<sup>1</sup>|Yes<sup>1</sup>|No|No|
-
-<!--|Service or feature|Microsoft 365 E3/E5|Microsoft 365 F3|Microsoft 365 F1|
-|---------|---------|---------|---------|
-|Microsoft Forms|Yes<sup>1</sup>|Yes<sup>1</sup>|No|
-|Delve|Yes|No|No|-->
 
 <sup>1</sup>Licensed users can create, share, and manage forms. A license isn't needed to complete or respond to a form.
 
@@ -173,11 +143,6 @@ F3 and F1 users have 2 GB of OneDrive storage to store and share files. To learn
 |---------|---------|---------|---------|---------|---------|
 |Microsoft Planner|Yes|Yes|Yes|Yes|Yes|
 |Microsoft To Do|Yes|Yes|Yes|No|No|
-
-<!--|Service or feature|Microsoft 365 E3/E5|Microsoft 365 F3|Microsoft 365 F1|
-|---------|---------|---------|---------|
-|Microsoft Planner|Yes|Yes|Yes|
-|Microsoft To Do|Yes|Yes|No|-->
 
 #### Microsoft Viva
 
@@ -199,13 +164,6 @@ F3 and F1 users have 2 GB of OneDrive storage to store and share files. To learn
 |Copilot Studio for Teams|Available by adding Teams Enterprise or Teams EEA|Yes|No|Yes|No|
 |Dataverse for Teams|Available by adding Teams Enterprise or Teams EEA|Yes|No|Yes|No|
 
-<!--|Service or feature|Microsoft 365 E3/E5|Microsoft 365 F3|Microsoft 365 F1|
-|---------|---------|---------|---------|
-|Power Apps for Microsoft 365|Yes|Yes|No|
-|Power Automate for Microsoft 365|Yes|Yes|No|
-|Copilot Studio for Teams|Yes|Yes|No|
-|Dataverse for Teams|Yes|Yes|No|-->
-
 #### Windows
 
 |Service or feature|Microsoft 365 E3/E5 (no Teams)|Microsoft 365 F3 (with Teams)|Microsoft 365 F3 (no Teams)|Microsoft 365 F1 (with Teams)|Microsoft 365 F1 (no Teams)|
@@ -213,10 +171,6 @@ F3 and F1 users have 2 GB of OneDrive storage to store and share files. To learn
 |Windows 11 Enterprise|Yes|Yes<sup>1</sup>|Yes<sup>1</sup>|No|No|
 
 <sup>1</sup>Virtualized Desktop Infrastructure (VDI) only for licensed users of a shared device with a Qualifying Operating System (except for Azure Virtual Desktop).
-
-<!--|Service or feature|Microsoft 365 E3/E5|Microsoft 365 F3|Microsoft 365 F1|
-|---------|---------|---------|---------|
-|Windows 11 Enterprise|Yes|Yes|No|-->
 
 ## What to expect
 
@@ -293,4 +247,4 @@ Here are some links to set up, help, and learning resources that you can share w
 |Microsoft 365 for the web|<ul><li>[Microsoft 365 for the web training](https://support.microsoft.com/office/office-for-the-web-training-e315b031-2bd5-40a1-99ca-264ebf2c8f96)</li><li>[Microsoft 365 for the web Quick Starts](https://support.microsoft.com/office/microsoft-365-quick-starts-25f909da-3e76-443d-94f4-6cdf7dedc51e?#ID0EBBH=Web)</li></ul>|
 |Outlook on the web|<ul><li>[Get to know Outlook on the web](https://support.microsoft.com/office/get-to-know-outlook-on-the-web-3f1a229b-0d60-438f-b515-dd7a28026bc1)</li><li>[Get help with Outlook on the web](https://support.microsoft.com/office/get-help-with-outlook-on-the-web-cf659288-35cc-4c6c-8c75-e8e4317fda11)</li><li>[Outlook on the web videos](https://support.microsoft.com/office/learn-more-about-outlook-on-the-web-adbacbab-fe59-4259-a550-6cb7f85f19ec)</li></ul>|
 |Microsoft 365 for mobile|Setup:</br><ul><li>[Set up Microsoft 365 apps and email on Android](https://support.microsoft.com/office/set-up-office-apps-and-email-on-android-6ef2ebf2-fc2d-474a-be4a-5a801365c87f)</li><li>[Set up Microsoft 365 apps and email on iOS devices](https://support.microsoft.com/office/set-up-the-office-app-and-outlook-on-ios-devices-0402b37e-49c4-4419-a030-f34c2013041f)</li></ul>Microsoft 365 mobile app help:<ul><li>[Microsoft 365 mobile app for Android](https://support.microsoft.com/office/microsoft-office-app-for-android-0383d031-a1c6-46c9-b734-53cd1d22765b)</li><li>[Microsoft 365 mobile app for iOS](https://support.microsoft.com/office/microsoft-office-app-for-ios-c8880c05-883a-46b6-ad32-9bffa31228d0)</li></ul>Individual mobile app help:<ul><li>[Word for Android Phones](https://support.microsoft.com/office/word-for-android-phones-help-764afb31-ad50-4645-8f51-820ecf731d8f), [Word for Android tablets](https://support.microsoft.com/office/word-for-android-tablets-help-8a0dcd56-fb32-4e0d-95d8-997c066125c8),[Word for iPhone](https://support.microsoft.com/office/word-for-iphone-help-d41a5299-f6fa-4cca-b529-46a8069c5796), [Word for iPad](https://support.microsoft.com/office/word-for-ipad-help-6567cf2a-c949-4213-912d-f7a14f6264c5)</li><li>[Excel for Android Phones](https://support.microsoft.com/office/excel-for-android-phones-help-f818cb37-bfac-485d-8480-363b3da40596), [Excel for Android Tablets](https://support.microsoft.com/office/excel-for-android-tablets-help-5f089a58-dfa5-4cdb-b93b-55deb638a469), [Excel for iPhone](https://support.microsoft.com/office/excel-for-iphone-help-b367819b-05b4-4a56-ab1c-678da62e1fd3), [Excel for iPad](https://support.microsoft.com/office/excel-for-ipad-help-6b5dc2e1-a8e4-48e6-bb69-cb9a3964bc91)</li><li>[PowerPoint for Android Phones](https://support.microsoft.com/office/powerpoint-for-android-phones-help-f6714e00-0ee2-48d1-bd3d-e1997565861f), [PowerPoint for Android Tablets](https://support.microsoft.com/office/powerpoint-for-android-tablets-help-2ada1d22-3784-4943-bc47-9d1ede42875c), [PowerPoint for iPhone](https://support.microsoft.com/office/powerpoint-for-iphone-help-754fcb37-783b-4e8a-afca-edb900221b8b), [PowerPoint for iPad](https://support.microsoft.com/office/powerpoint-for-ipad-help-b75ce3bb-03e3-46df-a792-647573fef84a)</li><li>[OneNote for Android](https://support.microsoft.com/office/microsoft-onenote-for-android-46b4b49d-2bef-4746-9c30-6abb5e20b688), [OneNote for iPhone](https://support.microsoft.com/office/microsoft-onenote-for-iphone-b93a0ea8-1285-4d31-a7c5-86a849731902), [OneNote for iPad](https://support.microsoft.com/office/microsoft-onenote-help-ipad-f44e5bcd-5203-4553-9de4-0c56e6500825)</li></ul>
-|Teams|<ul><li>[Teams video training](https://support.microsoft.com/office/microsoft-teams-video-training-4f108e54-240b-4351-8084-b1089f0d21d7)</li><li>[Teams help & learning](https://support.microsoft.com/teams)</li></ul>|
+|Teams|<ul><li>[Teams video training](https://support.microsoft.com/office/microsoft-teams-video-training-4f108e54-240b-4351-8084-b1089f0d21d7)</li><li>[Teams Help & Learning](https://support.microsoft.com/teams)</li></ul>|
