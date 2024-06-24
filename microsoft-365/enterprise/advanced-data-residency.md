@@ -107,7 +107,7 @@ The following screenshot is an example of the Microsoft 365 admin center Data lo
 
 #### Before Migration Opt-in
 
-:::image type="content" source="media\data-residency\2-adr-microsoft-365-data-location-card-before-move_UPDATED.png" alt-text="Screenshot of Data Location View Before Migration.":::
+:::image type="content" source="media\data-residency\2-adr-microsoft-365-data-location-card-before-move_UPDATED2.png" alt-text="Screenshot of Data Location View Before Migration.":::
 
 Once a customer administrator chooses the option to initiate migration, they are provided with confirmation of their opt-in date and migration initiation as shown in the screenshot below.
 
