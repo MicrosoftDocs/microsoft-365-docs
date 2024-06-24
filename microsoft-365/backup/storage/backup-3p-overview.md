@@ -27,7 +27,7 @@ Creating an application means that your third-party application becomes the Micr
 
 To create and deploy an application, the third-party developers perform the following tasks:
 
-1. Develop your third-party Microsoft 365 Backup Storage application with the required oAuth permissions scopes and [Backup storage Graph APIs](/graph/api/resources/backuprestoreroot?view=graph-rest-beta).
+1. Develop your third-party Microsoft 365 Backup Storage application with the required oAuth permissions scopes and [Backup storage Graph APIs](https://learn.microsoft.com/en-us/graph/api/resources/backuprestoreroot).
 
 2. Create a Billing Policy for your Microsoft 365 Backup Storage application as per [Set up third-party billing for Microsoft 365 Backup Storage](backup-3p-billing.md).
 
