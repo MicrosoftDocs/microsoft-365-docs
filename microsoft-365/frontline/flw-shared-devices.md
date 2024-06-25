@@ -44,7 +44,7 @@ Shared device mode is a Microsoft Entra ID feature that allows organizations to 
 - **Single sign-out**: Allow users an easy way to sign out from a device without needing to sign out individually from each app that supports shared device mode. Provide users’ assurances that their data isn't inappropriately shown to subsequent users, given that the apps ensure cleaning up of any cached user data and app protection policies are applied.
 - **Support for enforcing security requirements using Conditional Access policies**: Provides admins with the ability to target specific Conditional Access policies on shared devices, ensuring that employees only have access to company data when their shared device meets internal compliance standards.
 
-### Get started
+### Get started with shared device mode
 
 You can set up devices for shared device mode manually or through your mobile device management (MDM) solution using zero-touch provisioning. To learn more, see [Overview of shared device mode](/entra/identity-platform/msal-shared-devices).
 
