@@ -29,7 +29,7 @@ As an admin, you can now connect with your organization through customized messa
 To get started, go to [organizational messages in the Microsoft 365 admin center](https://aka.ms/organizationalmessagesportal).
 
 >[!NOTE]
-> The experience will start rolling out in preview on May 2, 2024.
+> The preview experiences will start rolling out in preview on May 2, 2024.
 
 ## What can I do with organizational messages?
 
@@ -153,6 +153,9 @@ If you have the Organizational Messages Writer Entra role as described above, yo
 > - Messages that are not reviewed (such as, approved or rejected) by approvers before the set 'End date' of the message will automatically be rejected by the system to ensure minimum duration of delivery of messages are as expected by authors.
 
 ## Create a message
+
+> [!IMPORTANT]
+> Organizational messages delivers messages to end users within the time windows configured by admins via Microsoft 365 admin center experiences.  However, occasionally, messages may not be delivered as expected due to system or user device conditions, such as urgent messages not being delivered to devices that are disconnected from the internet.  In such instances, our system will continue trying to deliver messages as possible and appropriate.
 
 Users with the Organizational Messages Writer Entra role described previously will have access to the **Create a message** button and capability in the centralized experience. Selecting this button will invoke the wizard, which includes these primary creation steps:
 

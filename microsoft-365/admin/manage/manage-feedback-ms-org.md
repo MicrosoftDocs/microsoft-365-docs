@@ -52,10 +52,12 @@ The table below represents which apps and services are currently connected to th
 |**To Do**|Yes|Yes|Yes|Yes|
 |**Word**|Yes|Yes|Yes|Yes|
 |**Visio**|Yes|Yes|Yes|Yes|
+|**Viva Engage**|Yes|Yes|Yes|Yes|
+|**Viva Glint**|Yes|Yes|Yes|Yes|
 |**Viva Goals**|Yes|Yes|Yes|Yes|
 |**Viva Insights**|Yes|Yes|Yes|Yes|
 |**Whiteboard**|Yes|Yes|Yes|Yes|
-|**Viva Engage**|Yes|Yes|Yes|Yes|
+
 
 [See here for some examples of in-product surveys and feedback.](/microsoft-365/admin/misc/feedback-user-control#in-product-surveys)
 
@@ -76,11 +78,11 @@ Your devices must be on a minimum build number to use these policies. See the ta
 
 |**Policy name**|**Default state**|**Control summary**|
 |:-----|:-----|:-----|
-|Allow users to access feedback portal|On|Manage user access to the feedback portal where users can follow-up on their feedback and participate in community feedback.|
+|Allow users to access feedback portal|On|Manage user access to the feedback portal where users can follow up on their feedback and participate in community feedback.|
 |Allow users to submit feedback to Microsoft|On|Controls feedback entry points across applications.|
 |Allow users to receive and respond to in-product surveys from Microsoft|On|Controls survey prompts within product.|
 |Allow users to include screenshots and attachments when they submit feedback to Microsoft|On|Allows users to choose relevant files, screen recordings and screenshots to help Microsoft better understand and troubleshoot their feedback.|
-|Allow Microsoft to follow up on feedback submitted by users|On|Determines if user can share contact info with feedback/survey for followup by Microsoft. Also allows users to get notified of feedback status changes. Users can manage communications settings in the feedback portal.|
+|Allow Microsoft to follow up on feedback submitted by users|On|Determines if user can share contact info with feedback/survey for follow-up by Microsoft. Also allows users to get notified of feedback status changes. Users can manage communications settings in the feedback portal.|
 |Allow users to include log files and content samples when feedback is submitted to Microsoft|On|Allows users to include Microsoft generated files such as additional log files and content samples when relevant to feedback they are submitting. Examples may include [Microsoft 365 Copilot](https://blogs.microsoft.com/blog/2023/03/16/introducing-microsoft-365-copilot-your-copilot-for-work/) prompt and response interactions.|
 
 > [!NOTE]
