@@ -52,6 +52,7 @@ The table below represents which apps and services are currently connected to th
 |**To Do**|Yes|Yes|Yes|Yes|
 |**Word**|Yes|Yes|Yes|Yes|
 |**Visio**|Yes|Yes|Yes|Yes|
+|**Viva Connections**|Yes|No|Yes|Yes|
 |**Viva Engage**|Yes|Yes|Yes|Yes|
 |**Viva Glint**|Yes|Yes|Yes|Yes|
 |**Viva Goals**|Yes|Yes|Yes|Yes|
