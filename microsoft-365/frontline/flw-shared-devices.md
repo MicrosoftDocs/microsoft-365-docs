@@ -44,14 +44,15 @@ Shared device mode is a Microsoft Entra ID feature that allows organizations to 
 - **Single sign-out**: Allow users an easy way to sign out from a device without needing to sign out individually from each app that supports shared device mode. Provide users’ assurances that their data isn't inappropriately shown to subsequent users, given that the apps ensure cleaning up of any cached user data and app protection policies are applied.
 - **Support for enforcing security requirements using Conditional Access policies**: Provides admins with the ability to target specific Conditional Access policies on shared devices, ensuring that employees only have access to company data when their shared device meets internal compliance standards.
 
-You can set up devices manually for shared device mode or through zero-touch provisioning with your mobile device management (MDM) solution. To learn more, see [Overview of shared device mode](/entra/identity-platform/msal-shared-devices).
+### Get started
 
-### For developers creating apps for shared device mode
+You can set up devices for shared device mode manually or through your mobile device management (MDM) solution using zero-touch provisioning. To learn more, see [Overview of shared device mode](/entra/identity-platform/msal-shared-devices).
 
-Developers can add support for shared device mode to apps using the Microsoft Authentication Library (MSAL). See the following resources for more information about how to integrate your app with shared device mode:
+Developers can add support for shared device mode to your apps using the Microsoft Authentication Library (MSAL). For more information about how to integrate your apps with shared device mode, see:
 
-- [Shared device mode for Android devices](/azure/active-directory/develop/msal-android-shared-devices)
-- [Shared device mode for iOS devices](/azure/active-directory/develop/msal-ios-shared-devices)
+- [Shared device mode for Android devices](/entra/identity-platform/msal-android-shared-devices)
+- [Tutorial: Use shared device mode in your Android application](/entra/identity-platform/tutorial-v2-shared-device-mode)
+- [Shared device mode for iOS devices](/entra/msal/objc/shared-devices-ios)
 
 ## Multifactor authentication
 
@@ -62,7 +63,7 @@ It’s important to validate the user experience before your rollout so you can 
 If MFA isn’t feasible for your organization, you should plan to implement robust Conditional Access policies to reduce security risk. Some common Conditional Access policies to apply when MFA isn’t used on shared devices include:
 
 - Device compliance
--	Trusted network locations
+- Trusted network locations
 - Device is managed
 
 ## Domain-less sign in
