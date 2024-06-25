@@ -32,8 +32,8 @@ With SharePoint eSignature, you can quickly and securely send documents for sign
 
 SharePoint eSignature is currently available in the US market. Beginning in September 2024, SharePoint eSignature will be rolling out to the UK, Canada and the following European countries:
 
-:::row::3:
-   :::column span="":::
+:::row:::
+   :::column span="2":::
       Austria<br> Belgium<br> Bulgaria<br> Croatia<br> Cyprus<br> Czechia<br> Denmark<br> Estonia<br> Finland<br> Greece<br> Hungary
    :::column-end:::
    :::column span="":::
