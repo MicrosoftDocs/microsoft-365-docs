@@ -66,7 +66,7 @@ If MFA isn’t feasible for your organization, you should plan to implement robu
 - Trusted network locations
 - Device is managed
 
-Be sure to evaluate Conditional Access policies and app protection policies to ensure they meet the needs of your organization.
+Be sure to evaluate Conditional Access policies and app protection policies you want to apply to ensure they meet the needs of your organization.
 
 ## Domain-less sign in
 
