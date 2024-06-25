@@ -34,7 +34,7 @@ This article covers capabilities and considerations for deploying and managing s
 
 ## Shared device mode
 
-We recommend using [shared device mode](/entra/identity-platform/msal-shared-devices) on your frontline worker shared devices, whenever possible.
+We recommend using [shared device mode](/entra/identity-platform/msal-shared-devices) for your frontline worker shared devices, whenever possible.
 
 Shared device mode is a Microsoft Entra ID feature that allows organizations to configure an Android, iOS, or iPadOS device so that it can be easily shared by multiple employees. Employees can sign in once and get access to their data across all supported apps without having access to other employees’ data. When they finish their shift or task, they sign out once and get signed out of the device and all supported apps, making the device ready for the next employee to use.
 
@@ -66,11 +66,13 @@ If MFA isn’t feasible for your organization, you should plan to implement robu
 - Trusted network locations
 - Device is managed
 
+Be sure to evaluate Conditional Access policies and app protection policies to ensure they meet the needs of your organization.
+
 ## Domain-less sign in
 
 You can simplify the sign-in experience on Teams for iOS and Android by prefilling the domain name on the sign-in screen for users on shared and managed devices.
 
-Users sign in by entering only the first part of their user principal name (UPN). For example, if the username is 123456@contoso.com or adelev@contoso.com, users can sign in by using only "123456" or "adelev", respectively, and their password. Signing in to Teams is faster and easier, especially for frontline workers on shared devices, who sign in and out regularly.
+Users sign in by entering only the first part of their user principal name (UPN). For example, if the username is 123456@contoso.com or alexw@contoso.com, users can sign in by using only "123456" or "alexw", respectively, and their password. Signing in to Teams is faster and easier, especially for frontline workers on shared devices, who sign in and out regularly.
 
 You can also enable domain-less sign in for your custom line-of business (LOB) apps.
 
