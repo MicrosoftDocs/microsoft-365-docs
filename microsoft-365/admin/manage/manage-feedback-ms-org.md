@@ -57,6 +57,7 @@ The table below represents which apps and services are currently connected to th
 |**Viva Glint**|Yes|Yes|Yes|Yes|
 |**Viva Goals**|Yes|Yes|Yes|Yes|
 |**Viva Insights**|Yes|Yes|Yes|Yes|
+|**Viva Pulse**|Yes|Yes|Yes|Yes|
 |**Whiteboard**|Yes|Yes|Yes|Yes|
 
 
