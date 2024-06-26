@@ -18,6 +18,9 @@ description: Overview for third-party developers for Microsoft 365 Backup Storag
 
 # Overview for third-party developers of Microsoft 365 Backup Storage (Preview)
 
+> [!NOTE]
+> This feature is currently in preview and subject to change.
+
 Third-party developers can create their own applications to manage Microsoft 365 Backup Storage instead of using the out-of-the-box experience provided by Microsoft.
 
 Creating an application means that your third-party application becomes the Microsoft 365 Backup Storage **Controller** in the tenant where your application is deployed.
