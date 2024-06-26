@@ -75,7 +75,7 @@ When evaluating the right solution for your organization, we recommend you do th
 
     :::image type="content" source="media/dtas-frontline-worker-attribute.png" alt-text="Screenshot showing where to enter your Microsoft Entra attribute and values to identify your frontline workforce." lightbox="media/dtas-frontline-worker-attribute.png":::
 
-1. On the Location page, select the Microsoft Entra attribute that defines the location your frontline employees work in. You can only choose one location attribute.
+1. On the Identify location page, select a Microsoft Entra attribute or a [custom user attribute](/entra/external-id/user-flow-add-custom-attributes) that defines the location your frontline employees work in. You can only choose one location attribute.
 
     :::image type="content" source="media/dtas-location-attribute.png" alt-text="Screenshot showing where to enter your Microsoft Entra attribute that identifies the location where your frontline employees work." lightbox="media/dtas-location-attribute.png":::
 
