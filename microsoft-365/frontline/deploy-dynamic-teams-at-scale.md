@@ -171,9 +171,7 @@ You can manage your teams when changes happen in your organization.
     |Define your frontline locations. | Existing teams will continue to persist. If a team is no longer tied to a location, there will be no users in that team, and users are put in their respective location teams. |You can create new frontline teams based on the locations defined by your new Microsoft Entra attribute. |
     |Set your team name prefix. |All existing team names will be updated to reflect the prefix and location name if that was changed. |All new teams will have the updated naming convention. |
     |Select your team template. |No updates to the team structure will occur. |All new teams will use the updated team template. |
-    |Select your team owner. |The team owner will be updated for all existing teams.<sup>1</sup>|All new teams will have the updated team owner.<sup>1</sup> |
-
-    <sup>1</sup> Team owners that were added through [PowerShell](deploy-teams-at-scale.md) or any other manual methods won't be removed.
+    |Select your team owner. |The team owner will be updated for all existing teams. Team owners that were added through [PowerShell](deploy-teams-at-scale.md) or any other manual methods won't be removed.|All new teams will have the updated team owner.|
 
 ## Get analytics on frontline teams usage
 
