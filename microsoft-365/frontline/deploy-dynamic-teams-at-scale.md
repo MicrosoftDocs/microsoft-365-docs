@@ -94,6 +94,9 @@ When evaluating the right solution for your organization, we recommend you do th
     1. Select **Users**, and then choose your user.
     1. Copy the user's object ID.
 
+    > [!NOTE]
+    > After your teams are deployed, you can also add more team owners through the [PowerShell solution](deploy-teams-at-scale.md) or by using any other manual methods.
+
 1. (Preview) On the Map frontline attributes page, select the Microsoft Entra attributes that most accurately reflect the departments and job titles in your organization. You can set the **Department attribute**, **Job title attribute**, or both.
 
     > [!NOTE]
@@ -167,6 +170,9 @@ You can manage your teams when changes happen in your organization.
     |Set your team name prefix. |All existing team names will be updated to reflect the prefix and location name if that was changed. |All new teams will have the updated naming convention. |
     |Select your team template. |No updates to the team structure will occur. |All new teams will use the updated team template. |
     |Select your team owner. |The team owner will be updated for all existing teams. |All new teams will have the updated team owner. |
+
+    > [!NOTE]
+    > Team owners that were added through [PowerShell](deploy-teams-at-scale.md) or any other manual methods won't be removed.
 
 ## Get analytics on frontline teams usage
 
