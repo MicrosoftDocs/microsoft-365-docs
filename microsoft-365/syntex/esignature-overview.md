@@ -34,7 +34,7 @@ SharePoint eSignature is currently available in the US market.
 
 Beginning September 2024, SharePoint eSignature will be rolling out to the UK, Canada, and the following European countries: Austria, Belgium, Bulgaria, Croatia, Cyprus, Czechia, Denmark, Estonia, Finland, Greece, Hungary, Ireland, Latvia, Lithuania, Luxembourg, Malta, Poland, Portugal, Romania, Slovakia, Slovenia, and Sweden.
 
-The remaining European countries (France, Germany, Italy, the Netherlands, and Spain), along with Australia and Asia-Pacific, will be released by the end of 2024.
+SharePoint eSignature will be available in the remaining European countries (France, Germany, Italy, the Netherlands, and Spain), as well as Australia and Asia-Pacific, by the end of 2024.
 
 SharePoint eSignature will be available worldwide by the end of 2025.
 
