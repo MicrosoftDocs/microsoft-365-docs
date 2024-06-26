@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: amcdonnell
-ms.date: 06/17/2024
+ms.date: 06/26/2024
 audience: enabler
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -27,6 +27,33 @@ SharePoint eSignature simplifies the process of signing and sharing documents, w
 With SharePoint eSignature, you can quickly and securely send documents for signature to people both inside and outside of your organization. You also have a digital audit trail, which can be used to verify the authenticity of documents and transactions.
 
 ![Diagram showing the eSignature process.](../media/content-understanding/esignature-overview-flow.png)
+
+## Regional availability
+
+SharePoint eSignature is currently available in the US market.
+
+Beginning September 2024, SharePoint eSignature will be rolling out to the UK, Canada, and the following European countries/regions: Austria, Belgium, Bulgaria, Croatia, Cyprus, Czechia, Denmark, Estonia, Finland, Greece, Hungary, Ireland, Latvia, Lithuania, Luxembourg, Malta, Poland, Portugal, Romania, Slovakia, Slovenia, and Sweden.
+
+SharePoint eSignature will be available in the remaining European countries (France, Germany, Italy, the Netherlands, and Spain), as well as Australia and Asia-Pacific, by the end of 2024.
+
+SharePoint eSignature will be available worldwide by the end of 2025.
+
+<!---
+:::row:::
+   :::column span="4":::
+      Austria<br> Belgium<br> Bulgaria<br> Croatia<br> Cyprus<br> Czechia<br> 
+   :::column-end:::
+   :::column span="":::
+      Denmark<br> Estonia<br> Finland<br> Greece<br> Hungary<br> Ireland
+   :::column-end:::
+   :::column span="":::
+      Latvia<br> Lithuania<br> Luxembourg<br> Malta<br> Poland
+   :::column-end:::
+   :::column span="":::
+      Portugal<br> Romania<br> Slovakia<br> Slovenia<br> Sweden
+   :::column-end:::
+:::row-end:::
+--->
 
 ## Before you begin
 
