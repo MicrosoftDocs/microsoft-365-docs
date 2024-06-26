@@ -69,6 +69,9 @@ Create two CSV files for each batch of teams that you deploy:
     |**ActionType**|Whether you're adding or removing the user from the team. Options are `AddMember` and `RemoveMember`.|
     |**Owner or Member**|Whether the user is a team owner or team member. Options are `Owner` and `Member`.|
 
+    > [!NOTE]
+    > In this CSV file, you can also assign multiple users as team owners for any team, including dynamic frontline teams that you created in the Teams admin center through the [deploy frontline dynamic teams experience](deploy-dynamic-teams-at-scale.md).
+
 #### Examples
 
 Use the following examples to help you create your CSV files. Here, we named the files, Teams.csv and Users.csv.
