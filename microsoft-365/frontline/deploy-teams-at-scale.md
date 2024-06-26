@@ -106,10 +106,6 @@ Use the following examples to help you create your CSV files. Here, we named the
 |Sydney Mattos|sydneym@contoso.com|Contoso Store 9|`AddMember`|`Member`|
 |Violet Martinez|violetm@contoso.com|Contoso Store 10|`AddMember`|`Member`|
 
-### Adding team owners
-
-In the CSV file that maps the users you’re adding to teams, you can also assign multiple users as team owners for any team, including dynamic frontline teams that you created in the Teams admin center through the [deploy frontline dynamic teams experience](deploy-dynamic-teams-at-scale.md).
-
 ### Step 2: Set up your environment
 
 Follow these steps to install and connect to the latest version of the Teams PowerShell module.
