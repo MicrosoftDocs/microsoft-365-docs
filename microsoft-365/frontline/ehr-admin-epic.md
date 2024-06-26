@@ -58,7 +58,7 @@ Review the following information to get an understanding of the overall integrat
 
 | &nbsp; |Request app access|App enablement|Connector configuration|Epic configuration|Testing|
 |--------|---------|---------|---------|---------|---------|
-| **Duration** | Approximately 7 business days| Approximately 7 business days | Approximately 7 business days | Approximately 7 business days days | &nbsp; |
+| **Duration** | Approximately 7 business days| Approximately 7 business days | Approximately 7 business days | Approximately 7 business days | &nbsp; |
 | **Action**| You [request access to the Teams app](#request-access-to-the-teams-app).  | We create a public and private key certificate and upload them to Epic. | You complete configuration steps in the EHR connector configuration portal.  | You work with your Epic technical specialist to configure FDI records in Epic.| You complete testing in your test environment. |
 | **Outcome**| We authorize your organization for testing. | Epic syncs the public key certificate. | You receive FDI records for Epic configuration. | Configuration completed. Ready to test. | Full validation of flows and decision to move to production. |
 

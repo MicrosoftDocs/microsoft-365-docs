@@ -134,7 +134,7 @@ You'll need to [register your generated phone number in this form](https://forms
 
 ### Review and finish the configuration
 
-You're presented with integration records for patient and provider launch. These records are necessary to complete the virtual appointments configuration in Oracle Health. For more information, see the Oracle Health-Microsoft Teams Telehealth Integration guide.
+You'll be presented with integration records for patient and provider launch. These records are necessary to complete the virtual appointments configuration in Oracle Health. For more information, see the Oracle Health-Microsoft Teams Telehealth Integration guide.
 
 > [!NOTE]
 > At any time, your Microsoft 365 admin can sign in to the configuration portal to view integration records and change configuration settings, if needed.
