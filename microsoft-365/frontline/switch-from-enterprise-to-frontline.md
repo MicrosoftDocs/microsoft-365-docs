@@ -17,12 +17,12 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 11/30/2022
+ms.date: 06/27/2024
 ---
 
 # Changing from a Microsoft 365 E plan to a Microsoft 365 F plan
 
-If you're considering switching some of your users from a Microsoft 365 E plan to a Microsoft 365 [F3](https://www.microsoft.com/microsoft-365/enterprise/f3) or [F1](https://www.microsoft.com/microsoft-365/enterprise/f1) plan, this article provides guidance to help you prepare your organization for the change. Changing from an E plan to an F plan affects the services and features users have access to.
+If you're considering switching some of your users from a Microsoft 365 E plan to a Microsoft 365 [F3](https://www.microsoft.com/microsoft-365/enterprise/frontline-plans-and-pricing) or [F1](https://www.microsoft.com/microsoft-365/enterprise/frontline-plans-and-pricing) plan, this article provides guidance to help you prepare your organization for the change. Changing from an E plan to an F plan affects the services and features users have access to.
 
 E plans are meant for information workers (employees who typically work at a desk) and F plans are meant for frontline workers (employees who are on the go, often on mobile devices, and work directly with customers or the general public). Each plan may continue to evolve over time to become more tailored for information workers and frontline workers respectively. To learn more, see [Understand frontline worker user types and licensing](flw-licensing-options.md).
 
@@ -34,22 +34,22 @@ Start by getting familiar with the service and feature differences between the p
 
 Some key differences include:
 
-- F plans don't include Office desktop apps or the Outlook desktop app.
+- F plans don't include Microsoft 365 desktop apps.
 - F plans are limited to devices with integrated screens smaller than 10.9 inches on Microsoft 365 for mobile apps.
 - F plans with Teams [pin frontline worker apps](pin-teams-apps-based-on-license.md) like Viva Connections as a home experience, Walkie Talkie, Shifts, Planner, and Approvals by default in Teams.
 
-In this section, we provide more information about these key differences and highlight some additional differences to pay attention to. Keep in mind that this isn't a comprehensive list. To learn more:
+In this section, we provide more information about these key differences and highlight some other differences to pay attention to. Keep in mind that this isn't a comprehensive list. To learn more:
 
 - See [Modern work plan comparison](https://go.microsoft.com/fwlink/p/?linkid=2139145) for a detailed comparison of what's included in E and F plans.
 - See [service availability](/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options#service-availability-within-each-microsoft-365-and-office-365-plan) and [feature availability across plans](/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description#feature-availability-across-some-plans) for a list of service and feature availability across E and F plans.
 
 ### Microsoft 365 apps
 
-Desktop client apps aren't included in F3 and F1 plans. Your frontline workers can use Microsoft 365 for the web and Microsoft 365 mobile apps to get things done. Keep in mind that F3 users have full access to documents in Microsoft 365 for the web and F1 users have read-only access.
+Desktop client apps aren't included in F3 and F1 plans. Your frontline workers can use Microsoft 365 for the web and Microsoft 365 mobile apps to get things done. Keep in mind that F3 users have full access to documents in Microsoft 365 for the web and mobile apps and F1 users have read-only access.
 
 |Service or feature|Microsoft 365 E3/E5 (no Teams)|Microsoft 365 F3 (with Teams)|Microsoft 365 F3 (no Teams)|Microsoft 365 F1 (with Teams)|Microsoft 365 F1 (no Teams)|
 |---------|---------|---------|---------|---------|---------|
-|Desktop client apps (Word, Excel, OneNote, PowerPoint, Access, Publisher)|Yes|No|No|No|No|
+|Desktop client apps (Word, Excel, PowerPoint, OneNote, Outlook, Access, Publisher)|Yes|No|No|No|No|
 |Microsoft 365 for the web |Yes|Yes|Yes|Read-only|Read-only|
 |Microsoft 365 for mobile |Yes|Yes<sup>1</sup>|Yes<sup>1</sup>|Read-only|Read-only|
 |Visio for the web|Yes|Yes|Yes|Read-only|Read-only|
@@ -127,7 +127,7 @@ F3 and F1 users have 2 GB of OneDrive storage to store and share files. To learn
 |---------|---------|---------|---------|---------|---------|
 |OneDrive|1+ TB storage<sup>1</sup>|2 GB storage|2 GB storage|2 GB storage|2 GB storage|
 
-<sup>1</sup>Up to 5 TB of initial OneDrive storage per user based on the [default quota](/sharepoint/set-default-storage-space) for the tenant. More storage can be requested. Subscriptions for less than five users receive 1 TB of OneDrive storage that can't be expanded.
+<sup>1</sup>Up to 5 TB of initial OneDrive storage per user based on the [default quota](/sharepoint/set-default-storage-space) for the tenant. More storage can be requested. Subscriptions for fewer than five users receive 1 TB of OneDrive storage that can't be expanded.
 
 #### Content services
 
@@ -150,8 +150,8 @@ F3 and F1 users have 2 GB of OneDrive storage to store and share files. To learn
 |---------|---------|---------|---------|---------|---------|
 |Viva Connections – dashboard, feed, resources, and Teams app|Available by adding Teams Enterprise or Teams EEA|Yes|No|Yes|No|
 |Viva Engage – communities, conversations, and storyline|Yes|Yes|Yes|Yes|Yes|
-|Viva Insights app in Teams|Available by adding Teams Enterprise or Teams EEA|Yes<sup>1</sup>|No|Yes<sup>1</sup>|No|
 |Viva Learning in Teams|Available by adding Teams Enterprise or Teams EEA|Yes|No|Yes|No|
+|Viva Insights app in Teams|Available by adding Teams Enterprise or Teams EEA|Yes<sup>1</sup>|No|Yes<sup>1</sup>|No|
 
 <sup>1</sup>Limited to Reflect, Headspace, Send Praise, Virtual Commute, Microsoft To Do (F3 only).
 
@@ -161,8 +161,8 @@ F3 and F1 users have 2 GB of OneDrive storage to store and share files. To learn
 |---------|---------|---------|---------|---------|---------|
 |Power Apps for Microsoft 365|Yes|Yes|Yes|No|No|
 |Power Automate for Microsoft 365|Yes|Yes|Yes|No|No|
-|Copilot Studio for Teams|Available by adding Teams Enterprise or Teams EEA|Yes|No|Yes|No|
-|Dataverse for Teams|Available by adding Teams Enterprise or Teams EEA|Yes|No|Yes|No|
+|Copilot Studio for Teams|Available by adding Teams Enterprise or Teams EEA|Yes|No|No|No|
+|Dataverse for Teams|Available by adding Teams Enterprise or Teams EEA|Yes|No|No|No|
 
 #### Windows
 
