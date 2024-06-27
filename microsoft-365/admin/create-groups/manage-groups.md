@@ -1,7 +1,7 @@
 ---
 title: "Manage a group in the admin center"
 ms.reviewer: rahulnayak
-ms.date: 02/18/2020
+ms.date: 06/17/2024
 f1.keywords: NOCSH
 ms.author: jtremper
 author: jacktremper
@@ -35,7 +35,7 @@ Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink
 
 ## Edit the group name or description
 
-1. In the admin center, expand **Groups**, and then click <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Groups**</a>.
+1. In the admin center, expand **Teams & groups**, and then click <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Active teams & groups**</a>.
 
 2. Select the group that you want to edit, and then click **Edit name and description**.
 
@@ -43,11 +43,11 @@ Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink
 
 ## Manage group owners and members
 
-1. In the admin center, expand **Groups**, and then click <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Groups**</a>.
+1. In the admin center, expand **Teams & groups**, and then click <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Active teams & groups**</a>.
 
 2. Click the name of the group you want to manage to open the settings pane.
 
-3. On the **Members** tab, choose if you want to manage owners or members.
+3. On the **Membership** tab, choose if you want to manage **Owners** or **Members**.
 
 4. Choose **Add** to add someone or click **X** to remove someone.
 
@@ -61,7 +61,7 @@ When you turn this setting on, group members will get a copy of group emails and
 
 Group members can opt out of receiving these emails by choosing to stop following the group in Outlook.
 
-1. In the admin center, expand **Groups**, and then click <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Groups**</a>.
+1. In the admin center, expand **Teams & groups**, and then click <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Active teams & groups**</a>.
 
 2. Click the name of the group you want to manage to open the settings pane.
 
@@ -73,11 +73,11 @@ Group members can opt out of receiving these emails by choosing to stop followin
 
 This option is great if you want to have a company email address such as info@contoso.com.
  
-1. In the admin center, expand **Groups**, and then click <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Groups**</a>.
+1. In the admin center, expand **Teams & groups**, and then click <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Active teams & groups**</a>.
 
 2. Click the name of the group you want to manage to open the settings pane.
 
-3. In the admin center groups list, select the name of the group you want to change, and then on the **Settings** tab, select **Allow external senders to email this group**.
+3. In the admin center groups list, select the name of the group you want to change, and then on the **Settings** tab, select **Let people outside the organization to email this group**.
     
 4. Select **Save**.
 
