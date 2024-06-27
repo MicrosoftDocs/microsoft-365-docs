@@ -31,9 +31,7 @@ ms.date: 02/22/2024
 
 # Buy or remove licenses for a Microsoft business subscription
 
-Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
-
-As an admin, you can add or remove licenses for your business subscriptions in the Microsoft 365 admin center.
+As an admin, you can buy or remove licenses for your business subscriptions in the Microsoft 365 admin center.
 
 ## Before you begin
 
@@ -53,6 +51,14 @@ As an admin, you can add or remove licenses for your business subscriptions in t
 
 If you have an MCA billing account type, you can buy more licenses for your subscription at any time. However, you can only remove licenses from your subscription if it’s within seven days of buying or renewing your subscription. For more information, see [Remove licenses from your subscription](#remove-licenses-from-your-subscription).
 
+### Watch: Buy new licenses
+
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/p/?linkid=2198206).
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4KWvE]
+
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
+
 ### Buy more licenses for your subscription
 
 If you buy licenses in the middle of your billing period, you have seven days from when you buy them to reduce the number of licenses you bought.
@@ -67,6 +73,14 @@ If you buy licenses in the middle of your billing period, you have seven days fr
    - If recurring billing is turned off, you can only make the change now.
 5. To change the number of licenses, under **New quantity** in the **Total licenses** box, enter the total number of licenses that you want for this subscription. For example, if you have 100 licenses and you want to add five more, enter 105.
 6. Select **Save**.
+
+### Watch: Remove existing licenses
+
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/p/?linkid=2276120).
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4L53r]
+
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
 ### Remove licenses from your subscription
 
