@@ -16,7 +16,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 02/28/2024
+ms.date: 06/27/2024
 
 ---
 
@@ -75,7 +75,9 @@ When evaluating the right solution for your organization, we recommend you do th
 
     :::image type="content" source="media/dtas-frontline-worker-attribute.png" alt-text="Screenshot showing where to enter your Microsoft Entra attribute and values to identify your frontline workforce." lightbox="media/dtas-frontline-worker-attribute.png":::
 
-1. On the Location page, select the Microsoft Entra attribute that defines the location your frontline employees work in. You can only choose one location attribute.
+1. On the Location page, select a Microsoft Entra attribute or a [custom user attribute](/entra/external-id/user-flow-add-custom-attributes) that defines the location your frontline employees work in. You can only choose one location attribute.
+
+    All custom attributes are case sensitive and must start with an "extension_" prefix. Only custom attributes of the String data type are supported.
 
     :::image type="content" source="media/dtas-location-attribute.png" alt-text="Screenshot showing where to enter your Microsoft Entra attribute that identifies the location where your frontline employees work." lightbox="media/dtas-location-attribute.png":::
 
@@ -94,6 +96,9 @@ When evaluating the right solution for your organization, we recommend you do th
     1. Select **Users**, and then choose your user.
     1. Copy the user's object ID.
 
+    > [!NOTE]
+    > After your teams are deployed, you can also add more team owners through the [PowerShell solution](deploy-teams-at-scale.md) or by using any other manual methods.
+
 1. (Preview) On the Map frontline attributes page, select the Microsoft Entra attributes that most accurately reflect the departments and job titles in your organization. You can set the **Department attribute**, **Job title attribute**, or both.
 
     > [!NOTE]
@@ -105,10 +110,10 @@ When evaluating the right solution for your organization, we recommend you do th
 
 1. Review your settings, and then choose **Finish setup.**
 
+    :::image type="content" source="media/dtas-setup-submitted.png" alt-text="Screenshot of the Manage frontline teams page with a banner showing that setup is in progress." lightbox="media/dtas-setup-submitted.png":::
+
     > [!NOTE]
     > Setup can take several hours to run. Refresh the Manage frontline teams page to get the latest status.
-
-    :::image type="content" source="media/dtas-setup-submitted.png" alt-text="Screenshot of the Manage frontline teams page with a banner showing that setup is in progress." lightbox="media/dtas-setup-submitted.png":::
 
 ## Deploy your frontline dynamic teams
 
@@ -166,7 +171,7 @@ You can manage your teams when changes happen in your organization.
     |Define your frontline locations. | Existing teams will continue to persist. If a team is no longer tied to a location, there will be no users in that team, and users are put in their respective location teams. |You can create new frontline teams based on the locations defined by your new Microsoft Entra attribute. |
     |Set your team name prefix. |All existing team names will be updated to reflect the prefix and location name if that was changed. |All new teams will have the updated naming convention. |
     |Select your team template. |No updates to the team structure will occur. |All new teams will use the updated team template. |
-    |Select your team owner. |The team owner will be updated for all existing teams. |All new teams will have the updated team owner. |
+    |Select your team owner. |The team owner will be updated for all existing teams. Team owners that were added through [PowerShell](deploy-teams-at-scale.md) or any other manual methods won't be removed.|All new teams will have the updated team owner.|
 
 ## Get analytics on frontline teams usage
 
