@@ -19,7 +19,7 @@ keywords:
 
 Before you assign apps to users, groups, or devices at your organization, you should review and confirm the list of users and devices at your organization, as well as the groups of users and devices that you have already set up in your Intune tenant.
 
-The way you assign an app depends on whether you are [managing only the enrolled devices](/microsoft-365/solutions/apps-assign-management#app-management-using-managed-devices) (MDM), [managing only apps](apps-assign-management.md#app-management-using-unmanaged-devices) (MAM) where the devices are unmanaged, or managing both the devices and apps (MAM+MDM). For more infomraiton about these configurations, see [Mobile Application Management configurations](apps-guide-overview.md#mobile-application-management-configurations).
+The way you assign an app depends on whether you are [managing only the enrolled devices](apps-assign-management.md#app-management-using-managed-devices) (MDM), [managing only apps](apps-assign-management.md#app-management-using-unmanaged-devices) (MAM) where the devices are unmanaged, or managing both the devices and apps (MAM+MDM). For more infomraiton about these configurations, see [Mobile Application Management configurations](apps-guide-overview.md#mobile-application-management-configurations).
 
 You can view a list of end users that have been added to Microsoft Intune by selecting the **User** workload on the left of the Intune portal. These users are members of your organization that have devices and/or apps associated with your Intune tenant. 
 
