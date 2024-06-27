@@ -117,7 +117,7 @@ For details on how to find your Microsoft Entra tenant ID, refer to [How to find
 > Submitting a request to Microsoft indicates that you have accepted the [Microsoft 365 Backup Storage - Third Party public preview terms of service and conditions](../backup-preview-terms-third-party.md).
 
 > [!WARNING]
-> The domain of the email address from which you email Microsoft must be registered in the same tenant where you configured the pay-as-you-go billing in the previous step. That is, your email domain must be listed in [Microsoft 365 admin center > Domains](https://admin.microsoft.com/Adminportal/?#/Domains). Failure to do so will mean that your request to create a Billing Policy will be rejected.
+> The domain of the email address from which you send email to Microsoft must be registered in the same tenant where you configured the pay-as-you-go billing in the previous step. That is, your email domain must be listed in [Microsoft 365 admin center > Domains](https://admin.microsoft.com/Adminportal/?#/Domains). Failure to do so will mean that your request to create a Billing Policy will be rejected.
 
 > [!NOTE]
 > - All requests are processed on a "first come, first served" basis and can take 3 to 5 business days to be processed.
