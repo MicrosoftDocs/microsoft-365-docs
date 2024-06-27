@@ -21,12 +21,8 @@ description: "An overview of the Microsoft Bookings app, which includes a web-ba
 
 # Microsoft Bookings
 
-Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
-
-Microsoft Bookings makes scheduling and managing appointments a breeze. It helps you schedule and manage appointments with your customers, clients, or colleagues. Whether you need to book time to meet people or set aside time for different meetings, Bookings makes it easy and convenient for both you and your attendees. Bookings includes a web-based booking page, which integrates with Outlook to optimize your calendar and give your customers the flexibility to book a time that works best for them. Email and SMS text notifications reduce no-shows and enhance customer satisfaction. Your organization saves time with a reduction in repetitive scheduling tasks. With built-in flexibility and ability to customize, Bookings can be designed to fit the situation and needs of many different parts of an organization. 
-
-> [!NOTE]
-> The Bookings calendar is a mailbox in Exchange Online.
+Microsoft Bookings makes scheduling and managing appointments a breeze. It helps you schedule and manage appointments with your customers, clients, or colleagues. Whether you need to book time to meet people or set aside time for different meetings, Bookings makes it easy and convenient for both you and your attendees. Bookings includes a web-based booking page, which is integrated with Outlook to optimize your calendar and give your customers the flexibility to book a time that works best for them. Email and SMS text notifications reduce no-shows and enhance customer satisfaction. Your organization saves time with a reduction in repetitive scheduling tasks. With built-in flexibility and ability to customize, Bookings can be designed to fit the situation and needs of many different parts of an organization. 
+Bookings is also available as an app in Teams and Outlook, which allows you to create Booking pages, declare your availability, add team members, and both schedule new and manage existing appointments. 
 
 ## Watch: Introducing Microsoft Bookings
 

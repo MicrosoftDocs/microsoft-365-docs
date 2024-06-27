@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 04/11/2024
+ms.date: 06/21/2024
 ms.topic: conceptual
 ms.service: microsoft-365-backup
 ms.custom: backup
@@ -28,6 +28,8 @@ As part of restoring data from backup, admin needs to choose a *restore point* m
 - **Restore point**. A prior point in time from which you can restore a healthy version of your content or metadata. If the data from a prior point in time is identical to the present state of your data, then there will be no items restored, including **Restore to a new folder** for Exchange Online.
 
 - **Express restore point**. A set of recommended restore points that offers faster restore of data from the backup than a regular restore point.
+
+    **We recommend you choose express restore point for faster restore performance.**
 
 Currently, you can restore OneDrive accounts, SharePoint sites, and Exchange mailbox content from specific prior points in time from the backups. Site restores to a prior point in time, if restored to the same URL, will overwrite the state and the content of the site to match the exact state at the prior point in time. This is commonly referred to as a rollback versus a roll-forward.
 

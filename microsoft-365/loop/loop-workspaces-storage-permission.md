@@ -1,26 +1,26 @@
 ---
 title: Overview of Loop workspaces storage and permissions
-ms.author: jtremper
-author: jacktremper
-manager: pamgreen
+ms.author: jenz
+author: jenzamora
+manager: jtremper
 audience: Admin
 ms.topic: conceptual
 ms.service: loop
 ms.reviewer: michalbr
-ms.date: 08/21/2023
+ms.date: 06/26/2024
 ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection: 
-  - M365-collaboration
-  - essentials-compliance
+- M365-collaboration
+- essentials-compliance
 description: Learn about Loop workspaces storage and permissions in the Microsoft 365 ecosystem.
 f1.keywords:
 - CSH
 ms.custom: 
-  - NewAdminCenter_Update
-  - chat-teams-channels-revamp
+- NewAdminCenter_Update
+- chat-teams-channels-revamp
 appliesto: 
-  - Microsoft Teams
+- Microsoft Teams
 ---
 
 # Overview of Loop workspaces storage and permissions

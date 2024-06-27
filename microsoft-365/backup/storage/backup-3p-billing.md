@@ -18,6 +18,9 @@ description: Set up third-party billing for Microsoft 365 Backup Storage.
 
 # Set up third-party billing for Microsoft 365 Backup Storage (Preview)
 
+> [!NOTE]
+> This feature is currently in preview and subject to change.
+
 Developers can create an application to manage Microsoft 365 Backup Storage in their customer's tenants. However, a Billing Policy must be created that associates your Microsoft 365 Backup Storage application to pay-as-you-go billing that has been configured in your tenant.
 
 To create a Billing Policy, you need to perform the following steps:
@@ -28,6 +31,9 @@ To create a Billing Policy, you need to perform the following steps:
 
 > [!NOTE]
 > An application and tenant can only be associated to one and only one Billing Policy. That is, a tenant can't have more than one Billing Policy and an application can't be associated with more than one Billing Policy.
+
+> [!NOTE]
+> Creating a Billing Policy requires that your tenant has at least one user license that entitles you to SharePoint or OneDrive.
 
 ### Step 1: Set up pay-as-you-go billing
 
