@@ -3,7 +3,7 @@ title: Enable shared channels with all external organizations
 ms.author: jtremper
 author: jacktremper
 manager: pamgreen
-ms.date: 12/08/2023
+ms.date: 06/26/2024
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
