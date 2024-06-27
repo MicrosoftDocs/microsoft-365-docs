@@ -60,8 +60,8 @@ Once you have the information on this list, you're ready to perform the followin
 
 4. On the **Use content AI with Microsoft Syntex** page, select **Set up billing**.
    
-> [!NOTE]
-> To set up pay-as-you-go billing for Microsoft 365 Backup, you must be an owner or contribution role on the Azure subscription to be used.
+   > [!NOTE]
+   > To set up pay-as-you-go billing for Microsoft 365 Backup, you must be an owner or contribution role on the Azure subscription to be used.
 
 5. If you *don't* have an Azure subscription or resource group, follow these steps. If you have an Azure subscription and resource group, go directly to step 6.
 
@@ -81,17 +81,18 @@ Once you have the information on this list, you're ready to perform the followin
 
     2. Or, you can follow steps in [Manage Azure resource groups by using the Azure portal](/azure/azure-resource-manager/management/manage-resource-groups-portal) to create a resource group.
 
-> [!NOTE]
-> The resource group should be mapped to the Azure subscription you provided when you set up pay-as-you-go.
+    > [!NOTE]
+    > The resource group should be mapped to the Azure subscription you provided when you set up pay-as-you-go.
 
 6. If you ***have*** an Azure subscription, follow these steps:
+
    1. On the **Set up pay-as-you-go billing** panel, under **Azure subscription**, select the subscription from the dropdown list.
    2. Under **Resource group**, select the resource group from the dropdown list.
    3. Under **Region**, select the region from the dropdown list.
    4. Review and accept the terms of service, and then select **Save**.
 
-> [!NOTE]
-> The subscription dropdown list will not populate if you are not an owner or contributor on the subscription.
+   > [!NOTE]
+   > The subscription dropdown list will not populate if you are not an owner or contributor on the subscription.
 
 You have successfully set up pay-as-you-go billing.
 
@@ -105,6 +106,7 @@ To create a Billing Policy for your application and the pay-as-you-go billing co
 1. Review the [Microsoft 365 Backup Storage - Third-Party public preview terms of service and conditions](../backup-preview-terms-third-party.md).
 
 2. Email *M365Backup3PBilling@microsoft.com* with the following information: We'll reply back to this email once the request is complete.
+
     - Subject line containing your **Microsoft Entra tenant ID**.
     - Message body containing your **Microsoft Entra tenant ID** and **Application Id** of your Microsoft 365 Backup Storage application.
     - Screenshot of your **application registration details** in [Microsoft Azure > App registrations](https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/RegisteredApps) for example: [https://portal.azure.com/#view/Microsoft_AAD_RegisteredApps/ApplicationMenuBlade/~/Overview/appId/{ApplicationId}](https://portal.azure.com/#view/Microsoft_AAD_RegisteredApps/ApplicationMenuBlade/~/Overview/appId/{ApplicationId}).
