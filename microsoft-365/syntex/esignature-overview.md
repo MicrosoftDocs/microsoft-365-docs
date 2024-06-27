@@ -71,13 +71,12 @@ SharePoint eSignature enables binding agreements between parties by allowing gue
 
 ## Release notes
 
-- Currently, SharePoint eSignature is rolling out to the US market. The feature rolls out to other regions later in 2024.
-
 - SharePoint eSignature is available for only PDF documents at this time.
 
-- Support for other electronic signature providers, such as Adobe Acrobat Sign and DocuSign, will be provided in 2024.
+- Support for additional electronic signature providers, including Adobe Acrobat Sign and DocuSign, will be available later in 2024.
 
-- You'll be able to track your SharePoint eSignature requests using the Approvals app in Microsoft Teams in 2024.
+- Tracking of SharePoint eSignature requests through the Approvals app in Microsoft Teams will be available later in 2024.
+
 
 <br>
 
