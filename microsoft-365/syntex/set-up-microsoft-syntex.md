@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 ms.reviewer: ssquires, kkameth
 manager: jtremper
-ms.date: 08/01/2023
+ms.date: 05/07/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -57,6 +57,7 @@ The following table provides links to the specific setup instructions for each s
 |Prebuilt document processing     | [Set up prebuilt document processing](prebuilt-setup.md) |
 |Structured and freeform document processing | [Set up structured and freeform document processing](structured-freeform-setup.md) |
 |Unstructured document processing | [Set up unstructured document processing](unstructured-setup.md) |
+|Autofill columns                 | [Set up autofill columns](autofill-setup.md)  |
 |Content assembly                 | [Set up content assembly](content-assembly-setup.md)  |
 |Image tagging                    | [Set up image tagging](image-tagging-setup.md)  |
 |Taxonomy tagging                 | [Set up taxonomy tagging](taxonomy-tagging-setup.md)  |
