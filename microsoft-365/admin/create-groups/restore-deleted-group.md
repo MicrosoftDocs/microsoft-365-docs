@@ -60,7 +60,7 @@ If the deleted group doesn't appear here, contact an administrator.
 
 # [Admin center](#tab/admin-center)
 
-If you're a global administrator or a groups administrator, you can restore a deleted group in the Microsoft 365 admin center:
+If you're a groups administrator, you can restore a deleted group in the Microsoft 365 admin center:
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 2. Expand **Groups**, and then select **Deleted groups**.
