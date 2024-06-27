@@ -17,7 +17,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 10/10/2023
+ms.date: 06/27/2024
 ---
 
 # Deploy frontline static teams at scale with PowerShell for frontline workers
