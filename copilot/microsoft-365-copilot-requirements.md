@@ -36,7 +36,7 @@ The following are the prerequisites for using Microsoft Copilot for Microsoft 36
 > [!NOTE]
 > - For Copilot to work in Word Online, Excel Online, and PowerPoint Online, you need to have third-party cookies enabled.
 > - Review your privacy settings for Microsoft 365 Apps because those settings might have an effect on the availability of Microsoft Copilot for Microsoft 365 features. For more information, see [Microsoft Copilot for Microsoft 365 and policy settings for connected experiences](microsoft-365-copilot-privacy.md#microsoft-copilot-for-microsoft-365-and-policy-settings-for-connected-experiences).
-> - Copilot is not available on Device-Based Licensing for Office 365 Apps.
+> - Copilot is not available on Device-Based Licensing and Shared Computer Activation for Office 365 Apps.
 
 ### Microsoft Entra ID
 
@@ -84,21 +84,57 @@ For more information about the Office Feature Updates task, see [Office Feature 
 
 Copilot for Microsoft 365 is available as an add-on plan with one of the following licensing prerequisites:
 
-**For Business and Enterprise**:
+**For Business and Enterprise:**
 
-- Microsoft 365 E5
-- Microsoft 365 E3
-- Microsoft 365 F1
-- Microsoft 365 F3
-- Office 365 E5
-- Office 365 E3
-- Office 365 E1
-- Office 365 F3
-- Microsoft 365 Business Basic
-- Microsoft 365 Business Premium
-- Microsoft 365 Business Standard
+- **Microsoft 365 plans:**
+  - Microsoft 365 E5
+  - Microsoft 365 E3
+  - Microsoft 365 F1
+  - Microsoft 365 F3
+  - Microsoft 365 Business Basic
+  - Microsoft 365 Business Premium
+  - Microsoft 365 Business Standard
+  - Microsoft 365 Apps for business
+  - Microsoft 365 Apps for enterprise
 
-**For Education Faculty and Higher Education Students Aged 18+**:
+- **Office 365 plans:**
+  - Office 365 E5
+  - Office 365 E3
+  - Office 365 E1
+  - Office 365 F3
+
+- **Microsoft Teams plans:**
+  - Microsoft Teams Essentials
+  - Microsoft Teams Enterprise
+  - Microsoft Teams EEA (European Economic Area)
+
+- **Exchange plans:**
+  - Exchange Kiosk
+  - Exchange Plan 1
+  - Exchange Plan 2
+
+- **SharePoint plans:**
+  - SharePoint Plan 1
+  - SharePoint Plan 2
+
+- **OneDrive for Business plans:**
+  - OneDrive for Business Plan 1
+  - OneDrive for Business Plan 2
+
+- **Planner and Project plans:**
+  - Microsoft Planner Plan 1 (formerly Project Plan 1)
+  - Microsoft Project Plan 3
+  - Microsoft Project Plan 5
+  - Project Online Essentials
+
+- **Visio plans:**
+  - Visio Plan 1
+  - Visio Plan 2
+
+- **Other plans:**
+  - Microsoft ClipChamp
+
+**For Education Faculty and Higher Education Students Aged 18+:**
 
 - Microsoft 365 A1*
 - Microsoft 365 A3*

@@ -3,7 +3,7 @@ title: Set up Microsoft Syntex per-user licensing
 ms.author: chucked
 author: chuckedmonson
 ms.reviewer: ssquires, kkameth
-ms.date: 08/08/2023
+ms.date: 06/20/2024
 manager: jtremper
 audience: admin
 ms.topic: conceptual
