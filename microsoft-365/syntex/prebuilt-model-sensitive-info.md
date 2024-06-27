@@ -20,7 +20,7 @@ description: Learn how to use a prebuilt sensitive information model in Microsof
 
 # Use a prebuilt model to detect sensitive information from documents in Microsoft Syntex
 
-The prebuilt *sensitive information model* analyzes and detects key information from documents, and then optionally extracts the information. The model recognizes documents in various formats and [detects sensitive information](/azure/ai-services/language-service/personally-identifiable-information/concepts/entity-categories), such as personal identification numbers, physical and email addresses, phone numbers, and financial information.
+The prebuilt *sensitive information model* analyzes and detects key information from documents, and then optionally extracts the information. The model recognizes documents in various formats and [detects sensitive information](prebuilt-model-sensitive-info-entities.md) <!---[detects sensitive information](/azure/ai-services/language-service/personally-identifiable-information/concepts/entity-categories)--->, such as personal identification numbers, physical and email addresses, phone numbers, and financial information.
 
 ## Set up a sensitive information model
 
