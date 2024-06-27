@@ -42,6 +42,8 @@ landingContent:
             url: autofill-overview.md
           - text: Content model Graph API
             url: /graph/api/resources/contentmodel?view=graph-rest-beta
+          - text: Document processing Graph API
+            url: /graph/api/resources/documentprocessingjob?view=graph-rest-beta
 
 # Card 2
   - title: Get started
@@ -100,6 +102,8 @@ landingContent:
         links:
           - text: Content model Graph API
             url: /graph/api/resources/contentmodel?view=graph-rest-beta
+          - text: Document processing Graph API
+            url: /graph/api/resources/documentprocessingjob?view=graph-rest-beta
           - text: Unstructured model REST API
             url: /sharepoint/dev/apis/syntex/syntex-model-rest-api
           - text: PowerShell for Syntex
