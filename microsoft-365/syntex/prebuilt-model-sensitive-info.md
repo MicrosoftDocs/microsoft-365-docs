@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: karlha
-ms.date: 05/01/2024
+ms.date: 06/27/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -14,7 +14,6 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-ROBOTS: NOINDEX, NOFOLLOW
 description: Learn how to use a prebuilt sensitive information model in Microsoft Syntex.
 
 ---
