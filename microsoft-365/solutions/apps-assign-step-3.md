@@ -17,14 +17,48 @@ keywords:
 
 # Step 3. Verify and monitor app assignments
 
-## Monitor user install status
+## App reports
 
-## Monitor device install status
+### App licenses report
+/microsoft-365/solutions/apps-license-manage
 
-## Monitor discovered apps
+### Discovered apps report
+/mem/intune/apps/app-discovered-apps?source=recommendations#monitor-discovered-apps-with-intune
 
+### App install status report
+/mem/intune/fundamentals/reports#app-install-status-report-operational
 
+### App protection status report
 
+### App configuration status report
+
+### Devices with restricted apps report
+/mem/intune/fundamentals/reports#devices-with-restricted-apps-report-operational
+
+## Monitor individual apps
+
+### App status overview
+Device status (5 states)
+User status (5 states)
+
+### Device install status report
+Individual app:
+/mem/intune/apps/apps-monitor#device-install-status
+/mem/intune/fundamentals/reports#device-install-status-report-for-apps-operational
+
+### User install status report
+Individual app:
+/mem/intune/apps/apps-monitor#user-install-status
+/mem/intune/fundamentals/reports#user-install-status-for-apps-report-operational
+
+## Monitor individual devices
+
+### Managed apps report 
+Individual device
+/mem/intune/fundamentals/reports#managed-apps-report-operational
+
+## Co-managed apps
+/mem/intune/fundamentals/reports#co-managed-workloads-report-organizational
 
 ## Next step
 
