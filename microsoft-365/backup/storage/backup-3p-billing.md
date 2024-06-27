@@ -32,6 +32,9 @@ To create a Billing Policy, you need to perform the following steps:
 > [!NOTE]
 > An application and tenant can only be associated to one and only one Billing Policy. That is, a tenant can't have more than one Billing Policy and an application can't be associated with more than one Billing Policy.
 
+> [!NOTE]
+> Creating a Billing Policy requires that your tenant has at least one user license that entitles you to SharePoint or OneDrive.
+
 ### Step 1: Set up pay-as-you-go billing
 
 > [!WARNING]
