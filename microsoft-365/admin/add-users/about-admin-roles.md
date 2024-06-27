@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 11/28/2023
+ms.date: 06/24/2024
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
@@ -62,7 +62,7 @@ Because admins have access to sensitive data and files, we recommend that you fo
 
 | Recommendation                  | Why is this important?                 |
 | :------------------- | :------------------- |
-| Have 2 to 4 Global Admins  | Global Admins have almost unlimited access to your organization's settings and most of its data. We recommend you limit the number of Global Admins as much as possible. A Global Admin may inadvertently lock their account and require a password reset. Either another Global Admin or a Privileged Authentication Admin can reset a Global Admin's password. Therefore, we recommend you have at least either one more Global Admin or a Privileged Authentication Admin in the event a Global Admin locks their account. |
+| Have as few global administrators as possible  | Global Admins have almost unlimited access to your organization's settings and most of its data. We recommend you limit the number of Global Admins as much as possible. A Global Admin may inadvertently lock their account and require a password reset. Either another Global Admin or a Privileged Authentication Admin can reset a Global Admin's password. Therefore, we recommend you have at least a Privileged Authentication administrator in the event a Global administrator is locked out of their account. |
 | Assign the *least permissive* role    | Assigning the *least permissive* role means giving admins only the access they need to get the job done. For example, if you want someone to reset employee passwords you shouldn't assign the unlimited global admin role, you should assign a limited admin role, like Password admin or Helpdesk admin.                 |
 | Require multi-factor authentication for admins                  |    It's actually a good idea to require MFA for all of your users, but admins should definitely be required to use MFA to sign in. MFA makes users use a second method of identification to verify their identity. Admins can have access to much of customer and employee data. If you require MFA, even if the admin's password gets compromised, the password is useless without the second method of identification.  <br><br>When you turn on MFA, the next time the user signs in, they'll need to provide an alternate email address and phone number for account recovery.  <br> [Set up multi-factor authentication](../security-and-compliance/set-up-multi-factor-authentication.md)          |
 
@@ -79,7 +79,7 @@ You'll probably only need to assign the following roles in your organization. By
 |Billing admin     |   Assign the Billing admin role to users who make purchases, manage subscriptions and service requests, and monitor service health. <br><br> Billing admins also can:<br> - Manage all aspects of billing <br> - Create and manage support tickets in the Azure portal <br>  |
 |Exchange admin     |   Assign the Exchange admin role to users who need to view and manage your user's email mailboxes, Microsoft 365 groups, and Exchange Online. <br><br> Exchange admins can also:<br> - Recover deleted items in a user's mailbox <br> - Set up "Send As" and "Send on behalf" delegates <br>  |
 |Fabric admin |   Assign the Fabric admin role to users who need to do the following: <br> - Manage all admin features for Microsoft Fabric and Power BI <br> - Report on usage and performance <br> - Review and manage auditing  |
-|Global admin     |   Assign the Global admin role to users who need global access to most management features and data across Microsoft online services. <br><br> Giving too many users global access is a security risk and we recommend that you have between two and four Global admins. <br><br> Only global admins can:<br> - Reset passwords for all users <br> - Add and manage domains <br> - Unblock another global admin <br> <br> **Note:**   The person who signed up for Microsoft online services automatically becomes a Global admin. |
+|Global admin     |   Giving too many users global access is a security risk and we recommend that you have as few global admins as possible. <br><br> Only global admins can:<br> - Reset passwords for all users <br> - Add and manage domains <br> - Unblock another global admin <br> <br> **Note:**   The person who signed up for Microsoft online services automatically becomes a Global admin. |
 |Global reader    |   Assign the global reader role to users who need to view admin features and settings in admin centers that the global admin can view. The global reader admin can't edit any settings.   |
 |Groups admin     |   Assign the groups admin role to users who need to manage all groups settings across admin centers, including the Microsoft 365 admin center and Microsoft Entra admin center. <br><br> Groups admins can:<br> - Create, edit, delete, and restore Microsoft 365 groups <br> - Create and update group creation, expiration, and naming policies <br> - Create, edit, delete, and restore Microsoft Entra security groups|
 |Helpdesk admin     |   Assign the Helpdesk admin role to users who need to do the following:<br> - Reset passwords <br> - Force users to sign out <br> - Manage service requests <br> - Monitor service health <br> <br> **Note**: The Helpdesk admin can only help non-admin users and users assigned these roles: Directory reader, Guest inviter, Helpdesk admin, Message center reader, and Reports reader.      |
@@ -139,7 +139,7 @@ Permissions to volume licensing information in Microsoft 365 admin center are co
 
 - Volume licensing users must first register on the Volume Licensing Service Center (VLSC), where all roles and permissions for volume licensing functions is managed.
 
-- For more information about volume licensing in Microsoft 365 admin center, go to [Frequently Asked Questions for the Volume Licensing Service Center](/licensing/vlsc-faqs-home-page) or [contact the Volume Licensing Service team](/licensing/contact-us).
+- For more information about volume licensing in Microsoft 365 admin center, see [Frequently Asked Questions for the Volume Licensing Service Center](/licensing/vlsc-faqs-home-page) or [contact the Volume Licensing Service team](/licensing/contact-us).
   
 ## Related content
 
