@@ -122,4 +122,3 @@ Microsoft 365 groups work with Microsoft Entra ID. The groups features you get d
 [Learn about Microsoft 365 Groups](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2) (article)\
 [Manage Microsoft 365 Groups with PowerShell](../../enterprise/manage-microsoft-365-groups-with-powershell.md) (article)\
 [SharePoint Online Limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits) (article)\
-[Organize groups and channels in Microsoft Stream](/stream/groups-channels-organization) (article)
