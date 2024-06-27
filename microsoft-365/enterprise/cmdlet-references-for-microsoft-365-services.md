@@ -21,7 +21,7 @@ ms.custom:
   - has-azure-ad-ps-ref
   - azure-ad-ref-level-one-done
 ms.assetid: 3a1ea1a6-edbd-4922-9ad3-0b075f7f9009
-description: Find Microsoft 365 PowerShell cmdlet references for Microsoft Entra ID, Exchange Online, SharePoint Online, Skype for Business Online, and Security & Compliance.
+description: Find Microsoft 365 PowerShell cmdlet references for Microsoft Graph, Exchange Online, SharePoint Online, Skype for Business Online, and Security & Compliance.
 ---
 
 # Cmdlet references for Microsoft 365 services
