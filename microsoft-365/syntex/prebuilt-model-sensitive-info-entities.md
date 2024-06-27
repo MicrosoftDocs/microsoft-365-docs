@@ -23,7 +23,7 @@ description: Learn about the entity categories used in the prebuilt sensitive in
 
 The following list shows the entity categories that can be returned by the prebuilt sensitive information model.
 
-## A
+### A
 
 |Entity   |Supported document languages  |
 |---------|------------------------------|
@@ -50,7 +50,7 @@ The following list shows the entity categories that can be returned by the prebu
 |Austria tax identification number  |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg  |
 |Austria value added tax   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg    |
 
-## B
+### B
 
 |Entity   |Supported document languages  |
 |----------|-----------------------------|
@@ -60,7 +60,7 @@ The following list shows the entity categories that can be returned by the prebu
 |Brazil legal entity number (CNPJ)   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg      |
 |Brazil national identification card (RG)   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg      |
 
-## C
+### C
 
 |Entity   |Supported document languages  |
 |----------|-----------------------------|
@@ -74,7 +74,7 @@ The following list shows the entity categories that can be returned by the prebu
 |China resident identity card (PRC) number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg     |
 |Credit card     |af, ca, da, de, en, es, el, fr, ga, gl, it, ku, nl, no, ss, pt-pt, pt-br, ro, sq, sv, ur, ar, bg, bs, cy, fa, hi, hr, id, mg, mk, ms, ps, ru, sl, so, sr, sw, am, as, cs, et, eu, fi, he, hu, ja, km, lo, lt, lv, mr, my, ne, or, pa, pl, sk, th, uk, zh-hans, zh-hant, az, bn, gu, hy, ka, kk, kn, ko, ky, ml, mn, ta, te, ug, uz, vi, tr   |
 
-## D
+### D
 
 |Entity   |Supported document languages  |
 |----------|-----------------------------|
@@ -82,7 +82,7 @@ The following list shows the entity categories that can be returned by the prebu
 |DateTimes   |af, ca, da, de, en, es, el, fr, ga, gl, it, ku, nl, no, ss, pt-pt, pt-br, ro, sq, sv, ur, ar, bg, bs, cy, fa, hi, hr, id, mg, mk, ms, ps, ru, sl, so, sr, sw, am, as, cs, et, eu, fi, he, hu, ja, km, lo, lt, lv, mr, my, ne, or, pa, pl, sk, th, uk, zh-hans, zh-hant, az, bn, gu, hy, ka, kk, kn, ko, ky, ml, mn, ta, te, ug, uz, vi, tr    |
 |Drug Enforcement Agency (DEA) number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg    |
 
-## E
+### E
 
 |Entity   |Supported document languages  |
 |----------|-----------------------------|
@@ -95,7 +95,7 @@ The following list shows the entity categories that can be returned by the prebu
 |EU social security number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg     |
 |EU Tax identification number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg     |
 
-## F
+### F
 
 |Entity   |Supported document languages  |
 |----------|-----------------------------|
@@ -107,7 +107,7 @@ The following list shows the entity categories that can be returned by the prebu
 |France tax identification number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg    |
 |France value added tax number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg     |
 
-## G
+### G
 
 |Entity   |Supported document languages  |
 |----------|-----------------------------|
@@ -117,7 +117,7 @@ The following list shows the entity categories that can be returned by the prebu
 |Germany tax identification number  |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg    |
 |Germany value added tax number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg    |
 
-## H
+### H
 
 |Entity   |Supported document languages  |
 |----------|-----------------------------|
@@ -126,7 +126,7 @@ The following list shows the entity categories that can be returned by the prebu
 |Hungary tax identification number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg     |
 |Hungary value added tax number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg        |
 
-## I
+### I
 
 |Entity   |Supported document languages  |
 |----------|-----------------------------|
@@ -134,7 +134,7 @@ The following list shows the entity categories that can be returned by the prebu
 |India unique identification (Aadhaar) number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg     |
 |Indonesia identity card (KTP) number  |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg     |
 |International Banking Account Number   |af, ca, da, de, en, es, el, fr, ga, gl, it, ku, nl, no, ss, pt-pt, pt-br, ro, sq, sv, ur, ar, bg, bs, cy, fa, hi, hr, id, mg, mk, ms, ps, ru, sl, so, sr, sw, am, as, cs, et, eu, fi, he, hu, ja, km, lo, lt, lv, mr, my, ne, or, pa, pl, sk, th, uk, zh-hans, zh-hant, az, bn, gu, hy, ka, kk, kn, ko, ky, ml, mn, ta, te, ug, uz, vi, tr    |
-|IP address     |en, es, fr, de, it, pt-pt, pt-br, zh, ja, ko, nl, sv, tr, hi       |
+|IP Address     |en, es, fr, de, it, pt-pt, pt-br, zh, ja, ko, nl, sv, tr, hi       |
 |Ireland personal public service (PPS) number  |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg      |
 |Israel bank account number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg     |
 |Israel national identification number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg     |
@@ -142,7 +142,7 @@ The following list shows the entity categories that can be returned by the prebu
 |Italy fiscal code   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg     |
 |Italy value added tax number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg    |
 
-## J
+### J
 
 |Entity   |Supported document languages  |
 |----------|-----------------------------|
@@ -154,21 +154,21 @@ The following list shows the entity categories that can be returned by the prebu
 |Japan residence card number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg      |
 |Japan social insurance number (SIN)    |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg     |
 
-## L
+### L
 
 |Entity   |Supported document languages  |
 |----------|-----------------------------|
 |Luxembourg national identification number (natural persons) |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg  |
 |Luxembourg national identification number (non-natural persons)  |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg   |
 
-## M
+### M
 
 |Entity   |Supported document languages  |
 |----------|-----------------------------|
 |Malta identity card number  |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg     |
 |Malta tax identification number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg    |
 
-## N
+### N
 
 |Entity   |Supported document languages  |
 |----------|-----------------------------|
@@ -178,13 +178,13 @@ The following list shows the entity categories that can be returned by the prebu
 |New Zealand ministry of health number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg     |
 |New Zealand social welfare number  |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg    |
 
-## O
+### O
 
 |Entity   |Supported document languages  |
 |----------|-----------------------------|
 |Organization   |af, ca, da, de, en, es, el, fr, ga, gl, it, ku, nl, no, ss, pt-pt, pt-br, ro, sq, sv, ur, ar, bg, bs, cy, fa, hi, hr, id, mg, mk, ms, ps, ru, sl, so, sr, sw, am, as, cs, et, eu, fi, he, hu, ja, km, lo, lt, lv, mr, my, ne, or, pa, pl, sk, th, uk, zh-hans, zh-hant, az, bn, gu, hy, ka, kk, kn, ko, ky, ml, mn, ta, te, ug, uz, vi, tr     |
 
-## P
+### P
 
 |Entity   |Supported document languages  |
 |----------|-----------------------------|
@@ -196,7 +196,7 @@ The following list shows the entity categories that can be returned by the prebu
 |Portugal citizen card number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg     |
 |Portugal tax identification number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg    |
 
-## S
+### S
 
 |Entity   |Supported document languages  |
 |----------|-----------------------------|
@@ -209,7 +209,7 @@ The following list shows the entity categories that can be returned by the prebu
 |SWIFT code    |af, ca, da, de, en, es, el, fr, ga, gl, it, ku, nl, no, ss, pt-pt, pt-br, ro, sq, sv, ur, ar, bg, bs, cy, fa, hi, hr, id, mg, mk, ms, ps, ru, sl, so, sr, sw, am, as, cs, et, eu, fi, he, hu, ja, km, lo, lt, lv, mr, my, ne, or, pa, pl, sk, th, uk, zh-hans, zh-hant, az, bn, gu, hy, ka, kk, kn, ko, ky, ml, mn, ta, te, ug, uz, vi, tr   |
 |Switzerland SSN AHV number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg     |
 
-## T
+### T
 
 |Entity   |Supported document languages  |
 |----------|-----------------------------|
@@ -217,7 +217,7 @@ The following list shows the entity categories that can be returned by the prebu
 |Taiwan passport number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg     |
 |Taiwan-resident certificate (ARC/TARC) number |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg   |
 
-## U
+### U
 
 |Entity   |Supported document languages  |
 |----------|-----------------------------|
