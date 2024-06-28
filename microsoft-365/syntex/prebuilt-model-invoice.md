@@ -19,7 +19,7 @@ description: Learn how to use a prebuilt invoices model in Microsoft Syntex.
 
 # Use a prebuilt model to extract information from invoices in Microsoft Syntex
 
-The prebuilt *invoices model* analyzes and extracts key information from sales invoices. The API recognizes invoices in various formats and [extracts key invoice information](/azure/applied-ai-services/form-recognizer/concept-invoice#field-extraction), such as customer name, billing address, due date, and amount due.
+The *invoices prebuilt model* analyzes and extracts key information from sales invoices. The API recognizes invoices in various formats and [extracts key invoice information](/azure/applied-ai-services/form-recognizer/concept-invoice#field-extraction), such as customer name, billing address, due date, and amount due.
 
 To use an invoices model, follow these steps:
 
@@ -30,7 +30,7 @@ To use an invoices model, follow these steps:
 
 ## Step 1: Create an invoices model
 
-Follow the instructions in [Create a model in Syntex](create-syntex-model.md#set-up-a-prebuilt-model) to create a prebuilt invoices model. Then continue with the following steps to complete your model.
+Follow the instructions in [Create a model in Syntex](create-syntex-model.md#set-up-a-prebuilt-model) to create an invoices prebuilt model. Then continue with the following steps to complete your model.
 
 ## Step 2: Upload an example file to analyze
 
