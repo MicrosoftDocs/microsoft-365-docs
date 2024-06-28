@@ -46,9 +46,9 @@ To enable this feature, you must complete the following tasks:
 - Define a [frontline operational hierarchy](deploy-frontline-operational-hierarchy.md) in the Teams admin center to map your organization's structure of frontline teams and locations to a hierarchy.
 - Assign a code to at least one schedule group in a team that matches the code of the schedule group in other teams. Schedule groups in Shifts are used to group employees based on common characteristics within a team. For example, schedule groups can be departments or job types.
 
-The code for a particular schedule group in a team must match the code of the corresponding schedule group on other teams within the same level of your hierarchy for open shifts to be available on those other teams.
+    The code for a particular schedule group in a team must match the code of the corresponding schedule group on other teams within the same level of your hierarchy for open shifts to be available on those other teams.
 
-In this way, open shifts shared by a frontline manager in one location are available to all workers that belong to the same schedule group in other locations within the same area.
+    In this way, open shifts shared by a frontline manager in one location are available to all workers that belong to the same schedule group in other locations within the same area.
 
 ### Create and assign schedule group codes
 
@@ -59,7 +59,7 @@ Keep the following things in mind:
 - Assign codes to schedule groups in teams that are within the same level of your hierarchy. This means that the teams must share the same parent node in your hierarchy.
 - The code for a particular schedule group must be the same across all the teams for which you want open shifts to be available.
 - A code can be up to 100 alphanumeric characters long.
-- By default, the schedule group code is the same as the to schedule group name unless you change it.
+- By default, the schedule group code is the same as the schedule group name unless you change it.
 
 ## Example
 
