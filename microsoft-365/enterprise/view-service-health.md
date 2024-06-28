@@ -3,7 +3,7 @@ title: How to check Microsoft 365 service health
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 07/19/2023
+ms.date: 06/27/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -22,6 +22,7 @@ ms.collection:
 - scotvorg
 - Ent_O365
 - M365-subscription-management
+- must-keep
 search.appverid:
 - MET150
 - MOE150
