@@ -1,10 +1,10 @@
 ---
-title: Supported entity categories for the prebuilt sensitive information model in Microsoft Syntex
+title: Supported entity categories for the sensitive information prebuilt model in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: karlha
-ms.date: 06/12/2024
+ms.date: 06/28/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -19,16 +19,16 @@ description: Learn about the entity categories used in the prebuilt sensitive in
 
 ---
 
-# Supported entity categories for the prebuilt sensitive information model in Microsoft Syntex
+# Supported entity categories for the sensitive information prebuilt model in Microsoft Syntex
 
 The following list shows the entity categories that can be returned by the prebuilt sensitive information model.
-
+``
 ### A
 
 |Entity   |Supported document languages  |
 |---------|------------------------------|
-|Azure Cosmos DB account access key  |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg   |
-|Azure IAAS database and Azure SQL connection strings  |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg  |
+|Azure Cosmos DB account access key  |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`   |
+|Azure IAAS database and Azure SQL connection strings  |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`  |
 |Azure IoT connection string  |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg  |
 |Azure publish setting password   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg   |
 |Azure Redis cache connection string   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg  |
