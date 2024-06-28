@@ -64,48 +64,48 @@ The following list shows the entity categories that can be returned by the prebu
 
 |Entity   |Supported document languages  |
 |----------|-----------------------------|
-|Canada bank account number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg    |
-|Canada driver's license number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg      |
-|Canada health service number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg     |
-|Canada passport number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg     |
-|Canada personal health identification number (PHIN)   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg    |
-|Canada social insurance number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg   |
-|Chile identity card number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg     |
-|China resident identity card (PRC) number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg     |
-|Credit card     |af, ca, da, de, en, es, el, fr, ga, gl, it, ku, nl, no, ss, pt-pt, pt-br, ro, sq, sv, ur, ar, bg, bs, cy, fa, hi, hr, id, mg, mk, ms, ps, ru, sl, so, sr, sw, am, as, cs, et, eu, fi, he, hu, ja, km, lo, lt, lv, mr, my, ne, or, pa, pl, sk, th, uk, zh-hans, zh-hant, az, bn, gu, hy, ka, kk, kn, ko, ky, ml, mn, ta, te, ug, uz, vi, tr   |
+|Canada bank account number   |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`    |
+|Canada driver's license number   |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`      |
+|Canada health service number   |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`     |
+|Canada passport number   |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`     |
+|Canada personal health identification number (PHIN)   |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`    |
+|Canada social insurance number   |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`   |
+|Chile identity card number   |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`     |
+|China resident identity card (PRC) number   |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`     |
+|Credit card     |`af, ca, da, de, en, es, el, fr, ga, gl, it, ku, nl, no, ss, pt-pt, pt-br, ro, sq, sv, ur, ar, bg, bs, cy, fa, hi, hr, id, mg, mk, ms, ps, ru, sl, so, sr, sw, am, as, cs, et, eu, fi, he, hu, ja, km, lo, lt, lv, mr, my, ne, or, pa, pl, sk, th, uk, zh-hans, zh-hant, az, bn, gu, hy, ka, kk, kn, ko, ky, ml, mn, ta, te, ug, uz, vi, tr`   |
 
 ### D
 
 |Entity   |Supported document languages  |
 |----------|-----------------------------|
-|Dates     |af, ca, da, de, en, es, el, fr, ga, gl, it, ku, nl, no, ss, pt-pt, pt-br, ro, sq, sv, ur, ar, bg, bs, cy, fa, hi, hr, id, mg, mk, ms, ps, ru, sl, so, sr, sw, am, as, cs, et, eu, fi, he, hu, ja, km, lo, lt, lv, mr, my, ne, or, pa, pl, sk, th, uk, zh-hans, zh-hant, az, bn, gu, hy, ka, kk, kn, ko, ky, ml, mn, ta, te, ug, uz, vi, tr    |
-|DateTimes   |af, ca, da, de, en, es, el, fr, ga, gl, it, ku, nl, no, ss, pt-pt, pt-br, ro, sq, sv, ur, ar, bg, bs, cy, fa, hi, hr, id, mg, mk, ms, ps, ru, sl, so, sr, sw, am, as, cs, et, eu, fi, he, hu, ja, km, lo, lt, lv, mr, my, ne, or, pa, pl, sk, th, uk, zh-hans, zh-hant, az, bn, gu, hy, ka, kk, kn, ko, ky, ml, mn, ta, te, ug, uz, vi, tr    |
-|Drug Enforcement Agency (DEA) number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg    |
+|Dates     |`af, ca, da, de, en, es, el, fr, ga, gl, it, ku, nl, no, ss, pt-pt, pt-br, ro, sq, sv, ur, ar, bg, bs, cy, fa, hi, hr, id, mg, mk, ms, ps, ru, sl, so, sr, sw, am, as, cs, et, eu, fi, he, hu, ja, km, lo, lt, lv, mr, my, ne, or, pa, pl, sk, th, uk, zh-hans, zh-hant, az, bn, gu, hy, ka, kk, kn, ko, ky, ml, mn, ta, te, ug, uz, vi, tr`    |
+|DateTimes   |`af, ca, da, de, en, es, el, fr, ga, gl, it, ku, nl, no, ss, pt-pt, pt-br, ro, sq, sv, ur, ar, bg, bs, cy, fa, hi, hr, id, mg, mk, ms, ps, ru, sl, so, sr, sw, am, as, cs, et, eu, fi, he, hu, ja, km, lo, lt, lv, mr, my, ne, or, pa, pl, sk, th, uk, zh-hans, zh-hant, az, bn, gu, hy, ka, kk, kn, ko, ky, ml, mn, ta, te, ug, uz, vi, tr`    |
+|Drug Enforcement Agency (DEA) number   |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`    |
 
 ### E
 
 |Entity   |Supported document languages  |
 |----------|-----------------------------|
-|Email     |en, es, fr, de, it, pt-pt, pt-br, zh, ja, ko, nl, sv, tr, hi     |
-|EU debit card number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg   |
-|EU driver's license number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg     |
-|EU GPS coordinates    |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg     |
-|EU national identification number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg   |
-|EU passport number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg     |
-|EU social security number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg     |
-|EU Tax identification number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg     |
+|Email     |`en, es, fr, de, it, pt-pt, pt-br, zh, ja, ko, nl, sv, tr, hi`     |
+|EU debit card number   |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`   |
+|EU driver's license number   |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`     |
+|EU GPS coordinates    |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`     |
+|EU national identification number   |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`   |
+|EU passport number   |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`     |
+|EU social security number   |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`     |
+|EU Tax identification number   |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`     |
 
 ### F
 
 |Entity   |Supported document languages  |
 |----------|-----------------------------|
-|France driver's license number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg    |
-|France health insurance number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg    |
-|France national ID card (CNI)    |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg    |
-|France passport number    |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg        |
-|France social security number (INSEE)  |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg    |
-|France tax identification number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg    |
-|France value added tax number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg     |
+|France driver's license number   |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`    |
+|France health insurance number   |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`    |
+|France national ID card (CNI)    |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`    |
+|France passport number    |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`        |
+|France social security number (INSEE)  |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`    |
+|France tax identification number   |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`    |
+|France value added tax number   |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`     |
 
 ### G
 
