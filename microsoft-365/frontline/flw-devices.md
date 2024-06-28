@@ -214,23 +214,10 @@ With app protection policies, you can add access control safeguards, such as:
 - Prevent the saving of company app data to a personal storage location.
 - Ensure the device’s operating system is up to date.
 
-In a shared devices deployment, you can use app protection policies to ensure that data doesn't leak to apps that don't support shared device mode. App protection policies are helpful in BYOD scenarios because they allow you to protect your data at the app level without having to manage the entire device.
-
-<!--You can also use app protection policies to ensure that data doesn’t leak to apps that don’t support shared device mode. To help prevent data loss, enable the following app protection policies on shared devices:
-
-- Disable copy/paste to non-shared device mode enabled apps.
-- Disable local file saving.
-- Disable data transfer capabilities to non-shared device mode enabled apps.
-
-App protection policies are helpful in BYOD scenarios because they allow you to protect your data at the app level without having to manage the entire device. This is important in scenarios where employees might have a device managed by another tenant (for example, a university or another employer) and can’t be managed by another company.-->
-
-## Next steps
-
-For more detailed guidance, see the following resources:
-
-- [Manage shared devices for your frontline](flw-shared-devices.md)
-- [Manage personal (BYOD) for your frontline](flw-byod-devices.md)
+In a shared devices deployment, you can use app protection policies to ensure that data doesn't leak to apps that don't support shared device mode. In BYOD scenarios, app protection policies are helpful because they allow you to protect your data at the app level without having to manage the entire device.
 
 ## Related articles
 
+- [Manage shared devices for your frontline](flw-shared-devices.md)
+- [Manage personal (BYOD) for your frontline](flw-byod-devices.md)
 - [Frontline worker management](/azure/active-directory/fundamentals/frontline-worker-management)
