@@ -86,7 +86,9 @@ In the normal deleted item workflow, a mailbox item is moved to the Deletions su
 
 When a mailbox is placed on Litigation hold, items in the Purges subfolder are preserved for the hold duration specified by the Litigation hold. The hold duration is calculated from the original date an item was received or created, and defines how long items in the Purges subfolder are held. When the hold duration expires for an item in the Purges subfolder, the item is marked for permanent deletion and will be purged from Exchange the next time the mailbox is processed by the MFA. If an indefinite hold is placed on a mailbox, items will never be purged from the Purges subfolder.
 
-<!-- add art here -->
+The following illustration shows the subfolders in the Recoverable Items folders and the hold workflow process.
+
+:::image type="content" source="../../media/how-litigitaion-hold-works.png" alt-text="Screenshot: how the litigation hold workflow process works":::
 
 > [!NOTE]
 > If a hold associated with an eDiscovery case is placed on a mailbox, purged items are moved from the Deletions subfolder to the DiscoveryHolds subfolder and are preserved until the mailbox is released from the eDiscovery hold.
