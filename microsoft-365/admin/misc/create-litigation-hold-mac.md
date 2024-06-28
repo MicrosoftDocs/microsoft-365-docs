@@ -1,5 +1,5 @@
 ---
-title: "Create a Litigation hold"
+title: "Place a mailbox on Litigation Hold"
 description: "Learn how to place a mailbox on Litigation hold, retaining all the mailbox content during an investigation."
 f1.keywords:
 - NOCSH
@@ -19,7 +19,7 @@ ms.collection:
 - ediscovery
 ---
 
-# Create a Litigation hold
+# Place a mailbox on Litigation Hold
 
 You can place a mailbox on Litigation hold to retain all mailbox content, including deleted items and the original versions of modified items. When you place a user mailbox on Litigation hold, content in the user's archive mailbox (if it's enabled) is also retained. When you create a hold, you can specify a hold duration (also called a *time-based hold*) so that deleted and modified items are retained for a specified period and then permanently deleted from the mailbox. Or you can just retain content indefinitely (called an *infinite hold*) or until the Litigation hold is removed. If you do specify a hold duration period, it's calculated from the date a message is received or a mailbox item is created.
   
