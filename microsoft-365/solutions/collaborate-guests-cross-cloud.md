@@ -72,7 +72,7 @@ If you're setting up guest sharing with a tenant that's in a different Microsoft
 
 Enable the Microsoft Azure cloud environment you want to collaborate with in Microsoft Entra cross tenant access settings.
 
-1. Sign in to [Microsoft Entra ID](https://aad.portal.azure.com) using a Global administrator or Security administrator account.
+1. Sign in to [Microsoft Entra ID](https://aad.portal.azure.com) using a Security administrator account.
 1. Select **External Identities**, and then select **Cross-tenant access settings**.
 1. Select **Microsoft cloud settings**.
 1. Select the checkboxes next to the external Microsoft Azure cloud environments you want to enable.
@@ -85,7 +85,7 @@ Once you've enabled the cloud environments you want to collaborate with, you nee
 
 To add an organization
 
-1. Sign in to [Microsoft Entra ID](https://aad.portal.azure.com) using a Global administrator or Security administrator account.
+1. Sign in to [Microsoft Entra ID](https://aad.portal.azure.com) using a Security administrator account.
 1. Select **External Identities**, and then select **Cross-tenant access settings**.
 1. Select **Organizational settings**.
 1. Select **Add organization**.
