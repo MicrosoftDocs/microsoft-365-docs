@@ -48,7 +48,9 @@ Currently, there are four prebuilt models available: [contracts](prebuilt-model-
 
 - **Receipts.** The prebuilt *receipts model* analyzes and extracts key information from sales receipts. The API analyzes printed and handwritten receipts and [extracts key receipt information](/azure/applied-ai-services/form-recognizer/concept-receipt#field-extraction) such as merchant name, merchant phone number, transaction date, tax, and transaction total.
 
-- **Sensitive information.** The prebuilt *sensitive information model* analyzes, detects, and extracts key information from documents. The API analyzes documents in various formats and [detects and extracts key sensitive information](/azure/ai-services/language-service/personally-identifiable-information/concepts/entity-categories#entity-categories), such as personal identification numbers, physical and email addresses, phone numbers, and financial information.
+- **Sensitive information.** The prebuilt *sensitive information model* analyzes, detects, and extracts key information from documents. The API analyzes documents in various formats and [detects and extracts key sensitive information](prebuilt-model-sensitive-info-entities.md), such as personal and financial identification numbers, physical and email addresses, and phone numbers.
+
+<!---[detects sensitive information](/azure/ai-services/language-service/personally-identifiable-information/concepts/entity-categories)--->
 
 Additional prebuilt models will be available in future releases.
 
