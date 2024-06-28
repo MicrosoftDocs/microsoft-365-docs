@@ -53,7 +53,7 @@ You can share Loop workspaces, pages, and components with users external to your
 - The user you're sharing with must have a guest account in your tenant or [Business-to-Business Invitation Manager is enabled](/entra/external-id/what-is-b2b).
 - Your organization doesn't have sensitivity labels configured. Loop external sharing won't work for companies with sensitivity labels configured. Once sensitivity labels for Loop workspaces, pages, and components are generally available, then external sharing for companies with sensitivity labels configured will function.
 
-Workspaces can only be shared with users that have an existing guest account in your tenant. If Business-to-business Invitation Manager is enabled, users can share a page or component with a guest user which will enable the flow to create a guest account for the user.
+Workspaces can only be shared with users that have an existing guest account in your tenant. If Business-to-business Invitation Manager is enabled, users can share a page or component with a guest user, which will enable the flow to create a guest account for the user.
 
 If the above conditions are met, then you can share with guest users by:
 
@@ -65,7 +65,7 @@ If the above conditions are met, then you can share with guest users by:
 
 Sharing with external participants is done through "Share with specific people" links. Company-wide share links won't work with external participants. You must designate the guest user explicitly in the share dialog.
 
-When a guest user accesses the Loop workspace, page, or component from the link from your organization, they sign in and access the shared content using their guest account. They'll need to utilize the share link again to access the Loop workspace, page, or component in the future, as the content from your organization will not be accessible via their standard account.
+When a guest user accesses the Loop workspace, page, or component from the link from your organization, they sign in and access the shared content using their guest account. They'll need to utilize the share link again to access the Loop workspace, page, or component in the future, as the content from your organization won't be accessible via their standard account.
 
 ## Loop workspace membership and Microsoft 365 groups
 
