@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 06/27/2024
+ms.date: 06/28/2024
 audience: admin
 ms.topic: conceptual
 ms.custom: intro-overview
@@ -44,11 +44,11 @@ Currently, there are four prebuilt models available: [contracts](prebuilt-model-
 
 - **Contracts.** The prebuilt *contracts model* analyzes and extracts key information from contract documents. The API analyzes contracts in various formats and extracts key contract information, such as client name and address, contract duration, and renewal date.
 
-- **Invoices.** The prebuilt *invoices model* analyzes and extracts key information from sales invoices. The API analyzes invoices in various formats and [extracts key invoice information](/azure/applied-ai-services/form-recognizer/concept-invoice#field-extraction) such as customer name, billing address, due date, and amount due.
+- **Invoices.** The *invoices prebuilt model* analyzes and extracts key information from sales invoices. The API analyzes invoices in various formats and [extracts key invoice information](/azure/applied-ai-services/form-recognizer/concept-invoice#field-extraction) such as customer name, billing address, due date, and amount due.
 
-- **Receipts.** The prebuilt *receipts model* analyzes and extracts key information from sales receipts. The API analyzes printed and handwritten receipts and [extracts key receipt information](/azure/applied-ai-services/form-recognizer/concept-receipt#field-extraction) such as merchant name, merchant phone number, transaction date, tax, and transaction total.
+- **Receipts.** The *receipts prebuilt model* analyzes and extracts key information from sales receipts. The API analyzes printed and handwritten receipts and [extracts key receipt information](/azure/applied-ai-services/form-recognizer/concept-receipt#field-extraction) such as merchant name, merchant phone number, transaction date, tax, and transaction total.
 
-- **Sensitive information.** The prebuilt *sensitive information model* analyzes, detects, and extracts key information from documents. The API analyzes documents in various formats and [detects and extracts key sensitive information](prebuilt-model-sensitive-info-entities.md), such as personal and financial identification numbers, physical and email addresses, and phone numbers.
+- **Sensitive information.** The *sensitive information prebuilt model* analyzes, detects, and extracts key information from documents. The API analyzes documents in various formats and [detects and extracts key sensitive information](prebuilt-model-sensitive-info-entities.md), such as personal and financial identification numbers, physical and email addresses, and phone numbers.
 
 <!---[detects sensitive information](/azure/ai-services/language-service/personally-identifiable-information/concepts/entity-categories)--->
 

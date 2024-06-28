@@ -22,7 +22,7 @@ description: Learn about the entity categories used in the prebuilt sensitive in
 # Supported entity categories for the sensitive information prebuilt model in Microsoft Syntex
 
 The following list shows the entity categories that can be returned by the prebuilt sensitive information model.
-``
+
 ### A
 
 |Entity   |Supported document languages  |

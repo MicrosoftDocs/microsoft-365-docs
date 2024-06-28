@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: karlha
-ms.date: 06/27/2024
+ms.date: 06/28/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -20,7 +20,7 @@ description: Learn how to use a prebuilt sensitive information model in Microsof
 
 # Use a prebuilt model to detect sensitive information from documents in Microsoft Syntex
 
-The prebuilt *sensitive information model* analyzes and detects key information from documents, and then optionally extracts the information. The model recognizes documents in various formats and [detects sensitive information](prebuilt-model-sensitive-info-entities.md), such as personal and financial identification numbers, physical and email addresses, and phone numbers.
+The *sensitive information prebuilt model* analyzes and detects key information from documents, and then optionally extracts the information. The model recognizes documents in various formats and [detects sensitive information](prebuilt-model-sensitive-info-entities.md), such as personal and financial identification numbers, physical and email addresses, and phone numbers.
 
 <!---[detects sensitive information](/azure/ai-services/language-service/personally-identifiable-information/concepts/entity-categories)--->
 
@@ -28,7 +28,7 @@ The prebuilt *sensitive information model* analyzes and detects key information 
 
 To create and configure a sensitive information model, follow these steps:
 
-1. Follow the instructions in [Create a model in Syntex](https://review.learn.microsoft.com/en-us/microsoft-365/syntex/create-syntex-model?branch=pii-prebuilt-working&tabs=layout-method%2Csensitive-information-processing#tabpanel_2_sensitive-information-processing) to create a prebuilt sensitive information model. Then continue with the following steps to complete your model.
+1. Follow the instructions in [Create a model in Syntex](https://review.learn.microsoft.com/en-us/microsoft-365/syntex/create-syntex-model?branch=pii-prebuilt-working&tabs=layout-method%2Csensitive-information-processing#tabpanel_2_sensitive-information-processing) to create a sensitive information model. Then continue with the following steps to complete your model.
 
     > [!NOTE]
     > When you create a sensitive information model, you will notice that, unlike other models, you don't have the options to select a content type or to apply sensitivity or retention labels. If you need to associate a content type, you'll need to create a different model type. The ability to apply security labels will be provided in a future release.
