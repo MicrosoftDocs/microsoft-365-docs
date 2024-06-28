@@ -36,18 +36,30 @@ With this feature, you can:
 - Empower your frontline workers by giving them the flexibility to request open shifts at locations convenient to them.
 - Enhance customer satisfaction with the ability to schedule anyone within an area to help ensure your locations are fully staffed.
 
+> [!NOTE]
+> Currently, this feature is available if your organization uses Shifts as a standalone app. This feature isn’t yet supported if you integrated Shifts with your workforce management (WFM) system through a [Shifts connector](shifts-connectors.md).
+
 ## Prerequisites
 
-To enable this feature, you must complete the following Prerequisites
+To enable this feature, you must complete the following tasks:
 
 - Define a [frontline operational hierarchy](deploy-frontline-operational-hierarchy.md) in the Teams admin center to map your organization's structure of frontline teams and locations to a hierarchy.
 - Assign a code to at least one schedule group in a team that matches the code of the schedule group in other teams. Schedule groups in Shifts are used to group employees based on common characteristics within a team. For example, schedule groups can be departments or job types.
 
-You control the availability of this feature for your frontline teams by assigning codes to schedule groups. The code for a particular schedule group in a team must match the code of the corresponding schedule group on other teams within the same level of your hierarchy for open shifts to be available on those other teams.
+The code for a particular schedule group in a team must match the code of the corresponding schedule group on other teams within the same level of your hierarchy for open shifts to be available on those other teams.
 
 In this way, open shifts shared by a frontline manager in one location are available to all workers that belong to the same schedule group in other locations within the same area.
 
 ### Create and assign schedule group codes
+
+Use the [schedulingGroup](/graph/api/resources/schedulinggroup?view=graph-rest-beta) Graph API to create and assign schedule group codes. You can create a new schedule group with a code or replace an existing schedule group code.
+
+Keep the following things in mind:
+
+- Assign codes to schedule groups in teams that are within the same level of your hierarchy. This means that the teams must share the same parent node in your hierarchy.
+- The code for a particular schedule group must be the same across all the teams for which you want open shifts to be available.
+- A code can be up to 100 alphanumeric characters long.
+- By default, the schedule group code is the same as the to schedule group name unless you change it.
 
 ## Example
 
@@ -65,65 +77,40 @@ In this example:
 
 Contoso wants to enable open shifts across locations for Pickers in the Bellevue and Redmond stores but not in the Seattle store. To do this, the Contoso admin completes the following steps:
 
+1. Use the [List schedulingGroup](/graph/api/schedule-list-schedulinggroups?view=graph-rest-beta) Graph API to get a list of schedule groups in the Bellevue team and the Redmond team.
+1. Use the [Replace schedulingGroup](/graph/api/schedulinggroup-put?view=graph-rest-beta) Graph API to create and assign the same code to the Pickers schedule group in the Bellevue and Redmond teams.
+
+In this scenario, the Pickers schedule group in the Seattle team doesn’t need a matching code because Contoso decided that open shifts at the Seattle location shouldn’t be available to workers at other locations.
+
 ## User experience
 
+Here’s an overview of the user experience. To learn more, see [Use open shifts across locations in Shifts]().
 
-<!--## Prerequisites
+Frontline managers can select **Check eligibility** in Shifts settings to check whether this feature is set up for their team. This check verifies requirements are met, including whether schedule groups in their area have matching schedule group codes.  
 
-To enable this feature, you must complete the following prerequisites:
+To enable open shifts they create in the schedule groups on their team to be available to other locations and to allow workers on their team to request open shifts at other locations, frontline managers on *each* team must do the following:
 
-- Your frontline teams must be created through the [deploy frontline dynamic teams](deploy-dynamic-teams-at-scale.md) experience in the Teams admin center.
+1. Turn on the **Allow managers to create shifts that aren’t assigned to anyone. Employees will be able to see and request them.** toggle, if it’s not already on.
+1. Turn on the **Open shifts across locations** toggle. (By default, the toggle is off.)
 
-    > [!NOTE]
-    > Mapping frontline attributes is part of the setup process when you deploy frontline dynamic teams. It's an optional step. If you want to allow your frontline to easily reach each other by department or job title, map your attributes to enable targeted communications.
-    >
-    > If you've already deployed your frontline dynamic teams and you want to enable targeted communications for those teams, go to the [Dynamic teams settings page](deploy-dynamic-teams-at-scale.md#edit-your-frontline-team-settings), and map your attributes.
-- To use [automatic tags](#automatic-tags), tags must be turned on for your organization. In the Teams admin center, go to **Teams** > **Teams settings**. Under **Tagging**, check that the **Who can manage tags** setting is set to an option other than **Not enabled**. [Learn more about how to turn on tags for your organization](/microsoftteams/manage-tags).
+After a frontline manager turns on the capability in Shifts settings, they can enable it for each open shift they create in the schedule group by using the **Open shifts across locations** toggle.
 
-## Set up targeted communications
+Frontline workers who are part of the same schedule group in other locations can see and request the open shifts. The manager at the location where the open shift is available must approve (or decline) the request. 
 
-### Map your frontline attributes
+### Scenario
 
-Map your attributes on the Map frontline attributes page of the [deploy frontline dynamic teams](deploy-dynamic-teams-at-scale.md) experience. Select the Microsoft Entra attribute for **Department** and **Job title** that best represents the departments and job titles in your organization. You can map one or both attributes.
+Using our earlier example, at Contoso:
 
-:::image type="content" source="media/targeted-comms-map-attributes.png" alt-text="Screenshot of the Map frontline attributes page of the deploy frontline dynamic teams experience in the Teams admin center." lightbox="media/targeted-comms-map-attributes.png":::
+- Babbak is the manager of the Bellevue location.
+- Kayo is the manager of the Redmond location.
+- Isaac is a worker at the Redmond location.
 
-### View your mapped attribute values
+Babbak and Kayo turn on the feature in Shifts settings. Babbak creates an open shift in the Pickers schedule group and turns on the **Open shifts across location** toggle. Babbak shares the open shift, and workers that belong to the Pickers schedule group at both the Bellevue and Redmond locations can see and request it.
 
-After you mapped your attributes, you can view your list of mapped values. These values are used for targeted communications and represent the unique departments and job titles in your organization.
-
-1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com), choose **Frontline deployment** > **Manage frontline apps**.
-1. In the table, next to **Targeted communications**, choose **Review**.
-1. Your mapped values are listed under **Values status**.
-
-    :::image type="content" source="media/targeted-comms-view-values.png" alt-text="Screenshot of the Targeted communications page in the Teams admin center, showing list of mapped attribute values." lightbox="media/targeted-comms-view-values.png":::
-
-    If your organization has new departments or job titles that aren’t in the list, choose **Refresh values** to update the list. Keep in mind that this process can take several hours to complete.
-
-    > [!NOTE]
-    > If you want to change or remove the **Department** or **Job title** attribute, go to the [Dynamic teams settings page](deploy-dynamic-teams-at-scale.md#edit-your-frontline-team-settings), edit your attributes, and then come back here to view the updated values.
-
-## Automatic tags
-
-With automatic tags, your frontline workers can reach each other by department or job title in Teams channel conversations. Anyone on the team can use the tags in @mentions to notify those people who are associated with that tag.
-
-Your frontline can quickly and easily reach the right groups of people. And because the tags are automatically created based on your mapped attribute values, team owners don’t have to manually create and assign tags or manage them locally.
-
-For example, a regional store manager who oversees all Northwind Trader stores in their region needs to notify all store associates and supervisors about a potentially harmful product that must be immediately removed from all stores. The manager @mentions the **Store Associate** and **Store Supervisor** tag in their channel post to notify all store associates and supervisors.
-
-:::image type="content" source="media/targeted-comms-automatic-tags.png" alt-text="Screenshot of automatic tags used in a  Teams channel conversation." lightbox="media/targeted-comms-automatic-tags.png":::
-
-Automatic tags are created and available after you map your attributes.
-
-### Team owners
-
-To allow frontline teams to use automatic tags in Teams, team owners must select the **Show members the option to @mention groups based on job title or department. This will notify everyone in that group.** check box in team settings for each of their respective teams.
-
-:::image type="content" source="media/targeted-comms-automatic-tags-setting.png" alt-text="Screenshot of the option in team settings to @mention groups based on job title or department" lightbox="media/targeted-comms-automatic-tags-setting.png":::
-
-[Learn more about using tags in Teams](https://support.microsoft.com/office/using-tags-in-microsoft-teams-667bd56f-32b8-4118-9a0b-56807c96d91e).
+Isaac, who wants to earn extra hours, requests the open shift that’s available at the Bellevue location. Babbak is notified and approves the request.
 
 ## Related articles
 
-- [Deploy frontline dynamic teams at scale](deploy-dynamic-teams-at-scale.md)
-- [Manage tags in Teams](/microsoftteams/manage-tags)-->
+- [Shifts for your frontline organization](shifts-for-teams-landing-page.md)
+- [Deploy your frontline operational hierarchy](deploy-frontline-operational-hierarchy.md)
+- [Create schedulingGroup](/graph/api/schedule-post-schedulinggroups?view=graph-rest-beta)
