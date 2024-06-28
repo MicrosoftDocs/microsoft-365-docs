@@ -54,8 +54,8 @@ For structured and freeform models, and for prebuilt contracts, invoices, and re
 
 3. Select **Save**.
 
-> [!IMPORTANT]
-> When you save a new page range from the **Model settings** panel, the files in libraries where the model is applied are reprocessed.
+    > [!IMPORTANT]
+    > When you save a new page range from the **Model settings** panel, the files in libraries where the model is applied are reprocessed.
 
 ## Tips for setting a page range
 
