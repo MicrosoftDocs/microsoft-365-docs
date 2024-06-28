@@ -111,62 +111,62 @@ The following list shows the entity categories that can be returned by the prebu
 
 |Entity   |Supported document languages  |
 |----------|-----------------------------|
-|Germany driver's license number  |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg    |
-|Germany identity card number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg      |
-|Germany passport number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg    |
-|Germany tax identification number  |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg    |
-|Germany value added tax number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg    |
+|Germany driver's license number  |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`    |
+|Germany identity card number   |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`      |
+|Germany passport number   |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`    |
+|Germany tax identification number  |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`    |
+|Germany value added tax number   |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`    |
 
 ### H
 
 |Entity   |Supported document languages  |
 |----------|-----------------------------|
-|Hong Kong identity card (HKID) number  |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg   |
-|Hungary personal identification number  |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg   |
-|Hungary tax identification number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg     |
-|Hungary value added tax number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg        |
+|Hong Kong identity card (HKID) number  |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`   |
+|Hungary personal identification number  |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`   |
+|Hungary tax identification number   |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`     |
+|Hungary value added tax number   |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`        |
 
 ### I
 
 |Entity   |Supported document languages  |
 |----------|-----------------------------|
-|India permanent account number (PAN)  |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg   |
-|India unique identification (Aadhaar) number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg     |
-|Indonesia identity card (KTP) number  |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg     |
-|International Banking Account Number   |af, ca, da, de, en, es, el, fr, ga, gl, it, ku, nl, no, ss, pt-pt, pt-br, ro, sq, sv, ur, ar, bg, bs, cy, fa, hi, hr, id, mg, mk, ms, ps, ru, sl, so, sr, sw, am, as, cs, et, eu, fi, he, hu, ja, km, lo, lt, lv, mr, my, ne, or, pa, pl, sk, th, uk, zh-hans, zh-hant, az, bn, gu, hy, ka, kk, kn, ko, ky, ml, mn, ta, te, ug, uz, vi, tr    |
-|IP Address     |en, es, fr, de, it, pt-pt, pt-br, zh, ja, ko, nl, sv, tr, hi       |
-|Ireland personal public service (PPS) number  |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg      |
-|Israel bank account number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg     |
-|Israel national identification number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg     |
-|Italy driver's license number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg     |
-|Italy fiscal code   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg     |
-|Italy value added tax number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg    |
+|India permanent account number (PAN)  |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`   |
+|India unique identification (Aadhaar) number   |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`     |
+|Indonesia identity card (KTP) number  |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`     |
+|International Banking Account Number   |`af, ca, da, de, en, es, el, fr, ga, gl, it, ku, nl, no, ss, pt-pt, pt-br, ro, sq, sv, ur, ar, bg, bs, cy, fa, hi, hr, id, mg, mk, ms, ps, ru, sl, so, sr, sw, am, as, cs, et, eu, fi, he, hu, ja, km, lo, lt, lv, mr, my, ne, or, pa, pl, sk, th, uk, zh-hans, zh-hant, az, bn, gu, hy, ka, kk, kn, ko, ky, ml, mn, ta, te, ug, uz, vi, tr`    |
+|IP Address     |`en, es, fr, de, it, pt-pt, pt-br, zh, ja, ko, nl, sv, tr, hi`       |
+|Ireland personal public service (PPS) number  |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`      |
+|Israel bank account number   |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`     |
+|Israel national identification number   |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`     |
+|Italy driver's license number   |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`     |
+|Italy fiscal code   |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`     |
+|Italy value added tax number   |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`    |
 
 ### J
 
 |Entity   |Supported document languages  |
 |----------|-----------------------------|
-|Japan bank account number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg    |
-|Japan driver's license number  |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg     |
-|Japan My Number - Corporate   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg     |
-|Japan My Number - Personal    |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg     |
-|Japan Passport Number    |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg      |
-|Japan residence card number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg      |
-|Japan social insurance number (SIN)    |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg     |
+|Japan bank account number   |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`    |
+|Japan driver's license number  |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`     |
+|Japan My Number - Corporate   |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`     |
+|Japan My Number - Personal    |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`     |
+|Japan Passport Number    |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`      |
+|Japan residence card number   |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`      |
+|Japan social insurance number (SIN)    |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`     |
 
 ### L
 
 |Entity   |Supported document languages  |
 |----------|-----------------------------|
-|Luxembourg national identification number (natural persons) |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg  |
-|Luxembourg national identification number (non-natural persons)  |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg   |
+|Luxembourg national identification number (natural persons) |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`  |
+|Luxembourg national identification number (non-natural persons)  |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`   |
 
 ### M
 
 |Entity   |Supported document languages  |
 |----------|-----------------------------|
-|Malta identity card number  |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg     |
-|Malta tax identification number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg    |
+|Malta identity card number  |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`     |
+|Malta tax identification number   |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`    |
 
 ### N
 
