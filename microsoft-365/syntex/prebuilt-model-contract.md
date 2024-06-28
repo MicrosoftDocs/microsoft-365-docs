@@ -20,7 +20,7 @@ description: Learn how to use a prebuilt contracts model in Microsoft Syntex.
 
 # Use a prebuilt model to extract information from contracts in Microsoft Syntex
 
-The prebuilt *contracts model* analyzes and extracts key information from contract documents. The model recognizes contracts in various formats and extracts key contract information, such as client name and address, contract duration, and renewal date.
+The *contracts prbuilt model* analyzes and extracts key information from contract documents. The model recognizes contracts in various formats and extracts key contract information, such as client name and address, contract duration, and renewal date.
 
 > [!NOTE]
 > Currently, this model is available only for .pdf and image file types. More file types will be added in future releases.
@@ -34,7 +34,7 @@ To use a contracts model, follow these steps:
 
 ## Step 1: Create a contracts model
 
-Follow the instructions in [Create a model in Syntex](create-syntex-model.md#set-up-a-prebuilt-model) to create a prebuilt contracts model. Then continue with the following steps to complete your model.
+Follow the instructions in [Create a model in Syntex](create-syntex-model.md#set-up-a-prebuilt-model) to create a contracts prebuilt model. Then continue with the following steps to complete your model.
 
 ## Step 2: Upload an example file to analyze
 
