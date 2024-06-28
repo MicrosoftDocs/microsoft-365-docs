@@ -3,7 +3,7 @@ title: "SharePoint modern portal site limits"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 10/9/2019
+ms.date: 06/27/2024
 audience: Admin
 ms.topic: interactive-tutorial
 ms.service: microsoft-365-enterprise
@@ -13,6 +13,7 @@ ms.collection:
 - scotvorg
 - Strat_O365_Enterprise
 - SPO_Content
+- must-keep
 f1.keywords:
 - CSH
 ms.custom:
