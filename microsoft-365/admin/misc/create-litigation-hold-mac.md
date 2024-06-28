@@ -52,7 +52,7 @@ Here are the steps to place a mailbox on Litigation hold using the Microsoft 365
 
     3. **Web page with more information for the user**: Use this box to direct the user to a website for more information about Litigation hold. This URL appears on the Account Information page in the user's mailbox if they're using Outlook 2010 or later. To access this page, users can select **File** in Outlook.
 
-. Select **Save changes** on the **Litigation hold** flyout page to create the hold.
+5. Select **Save changes** on the **Litigation hold** flyout page to create the hold.
 
    The system displays a banner saying it might take up to 240 minutes for the change to take effect.
 
