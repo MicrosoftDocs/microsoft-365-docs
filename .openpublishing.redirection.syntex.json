@@ -129,7 +129,12 @@
      "source_path":"microsoft-365/syntex/backup/backup-preview-terms.md",
      "redirect_url":"/microsoft-365/backup/backup-preview-terms",
      "redirect_document_id":true
+   },
+   {
+    "source_path":"microsoft-365/backup/storage/backup-3p-pricing.md",
+    "redirect_url":"/microsoft-365/backup/storage/backup-3p-billing",
+    "redirect_document_id":true
    }
-        
+   
     ]
  }

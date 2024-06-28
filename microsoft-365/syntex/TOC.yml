@@ -294,7 +294,7 @@
               href: scenario-document-compliance.md
         - name: Assess your environment
           href: adoption-assessment-tool.md 
-        - name: Solution aite templates
+        - name: Solution site templates
           href: site-templates.md 
         - name: Solutions
           items:
@@ -313,6 +313,8 @@
       items: 
         - name: Content model Graph API 
           href: /graph/api/resources/contentmodel?view=graph-rest-beta
+        - name: Document processing Graph API 
+          href: /graph/api/resources/documentprocessingjob?view=graph-rest-beta
         - name: Unstructured model REST API 
           href: /sharepoint/dev/apis/syntex/syntex-model-rest-api
         - name: Syntex PowerShell
