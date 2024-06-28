@@ -76,7 +76,7 @@ You can also run the following command to verify if the mailbox is placed on Lit
 Get-Mailbox <username> | FL LitigationHoldEnabled
 ```
 
-A value of *True* indicates that the mailbox is on litigation hold/
+A value of *True* indicates that the mailbox is on litigation hold.
 
 For more information, see [Set-Mailbox](/powershell/module/exchange/set-mailbox).
 
