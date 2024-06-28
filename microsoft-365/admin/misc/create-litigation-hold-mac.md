@@ -21,8 +21,6 @@ ms.collection:
 
 # Create a Litigation hold
 
-[!INCLUDE [ediscovery-preview](includes/ediscovery-preview.md)]
-
 You can place a mailbox on Litigation hold to retain all mailbox content, including deleted items and the original versions of modified items. When you place a user mailbox on Litigation hold, content in the user's archive mailbox (if it's enabled) is also retained. When you create a hold, you can specify a hold duration (also called a *time-based hold*) so that deleted and modified items are retained for a specified period and then permanently deleted from the mailbox. Or you can just retain content indefinitely (called an *infinite hold*) or until the Litigation hold is removed. If you do specify a hold duration period, it's calculated from the date a message is received or a mailbox item is created.
   
 Here's what happens when you create a Litigation hold.
@@ -31,8 +29,6 @@ Here's what happens when you create a Litigation hold.
 - Items that are purged from the Recoverable Items folder by the user are retained for the duration of the hold.
 - The storage quota for the Recoverable Items folder is increased from 30 GB to 110 GB.
 - Items in the user's primary and the archive mailboxes are retained
-
-[!INCLUDE [purview-preview](includes/purview-preview.md)]
 
 ## Assign an Exchange Online Plan 2 license
 
@@ -47,8 +43,6 @@ Here are the steps to place a mailbox on Litigation hold using the Microsoft 365
 2. Select the user that you want to place on Litigation hold.
 
 3. On the properties flyout page, select the **Mail** tab, and then under **More actions**, select **Manage litigation hold**.
-
-   ![Select Manage litigation hold on the Mail tab of user properties flyout page.](media/M365AdminCenterLitHold1.png)
 
 4. On the **Manage litigation hold** flyout page, select the **Turn on litigation hold** checkbox and then enter the following optional information:
 
@@ -91,10 +85,6 @@ For more information, see [Set-Mailbox](/powershell/module/exchange/set-mailbox)
 In the normal deleted item workflow, a mailbox item is moved to the Deletions subfolder in the Recoverable Items folder when a user permanently deletes it (Shift + Delete) or deletes it from the Deleted Items folder. A deletion policy (which is a retention tag configured with a Delete retention action) also moves items to the Deletions subfolder when the retention period expires. When a user purges an item in the Recoverable Items folder or when the deleted item retention period expires for an item, it's moved to the Purges subfolder in the Recoverable Items folder and marked for permanent deletion. It will be purged from Exchange the next time the mailbox is processed by the Managed Folder Assistant (MFA).
 
 When a mailbox is placed on Litigation hold, items in the Purges subfolder are preserved for the hold duration specified by the Litigation hold. The hold duration is calculated from the original date an item was received or created, and defines how long items in the Purges subfolder are held. When the hold duration expires for an item in the Purges subfolder, the item is marked for permanent deletion and will be purged from Exchange the next time the mailbox is processed by the MFA. If an indefinite hold is placed on a mailbox, items will never be purged from the Purges subfolder.
-
-The following illustration shows the subfolders in the Recoverable Items folders and the hold workflow process.
-
-![Litigation hold life cycle.](media/LitigationHoldLifeCycle.png)
 
 > [!NOTE]
 > If a hold associated with an eDiscovery case is placed on a mailbox, purged items are moved from the Deletions subfolder to the DiscoveryHolds subfolder and are preserved until the mailbox is released from the eDiscovery hold.
