@@ -172,62 +172,62 @@ The following list shows the entity categories that can be returned by the prebu
 
 |Entity   |Supported document languages  |
 |----------|-----------------------------|
-|New Zealand bank account number  |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg   |
-|New Zealand driver's license number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg    |
-|New Zealand inland revenue number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg    |
-|New Zealand ministry of health number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg     |
-|New Zealand social welfare number  |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg    |
+|New Zealand bank account number  |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`   |
+|New Zealand driver's license number   |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`    |
+|New Zealand inland revenue number   |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`    |
+|New Zealand ministry of health number   |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`     |
+|New Zealand social welfare number  |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`    |
 
 ### O
 
 |Entity   |Supported document languages  |
 |----------|-----------------------------|
-|Organization   |af, ca, da, de, en, es, el, fr, ga, gl, it, ku, nl, no, ss, pt-pt, pt-br, ro, sq, sv, ur, ar, bg, bs, cy, fa, hi, hr, id, mg, mk, ms, ps, ru, sl, so, sr, sw, am, as, cs, et, eu, fi, he, hu, ja, km, lo, lt, lv, mr, my, ne, or, pa, pl, sk, th, uk, zh-hans, zh-hant, az, bn, gu, hy, ka, kk, kn, ko, ky, ml, mn, ta, te, ug, uz, vi, tr     |
+|Organization   |`af, ca, da, de, en, es, el, fr, ga, gl, it, ku, nl, no, ss, pt-pt, pt-br, ro, sq, sv, ur, ar, bg, bs, cy, fa, hi, hr, id, mg, mk, ms, ps, ru, sl, so, sr, sw, am, as, cs, et, eu, fi, he, hu, ja, km, lo, lt, lv, mr, my, ne, or, pa, pl, sk, th, uk, zh-hans, zh-hant, az, bn, gu, hy, ka, kk, kn, ko, ky, ml, mn, ta, te, ug, uz, vi, tr`     |
 
 ### P
 
 |Entity   |Supported document languages  |
 |----------|-----------------------------|
-|Person name   |af, ca, da, de, en, es, el, fr, ga, gl, it, ku, nl, no, ss, pt-pt, pt-br, ro, sq, sv, ur, ar, bg, bs, cy, fa, hi, hr, id, mg, mk, ms, ps, ru, sl, so, sr, sw, am, as, cs, et, eu, fi, he, hu, ja, km, lo, lt, lv, mr, my, ne, or, pa, pl, sk, th, uk, zh-hans, zh-hant, az, bn, gu, hy, ka, kk, kn, ko, ky, ml, mn, ta, te, ug, uz, vi, tr     |
-|Person Type    |af, ca, da, de, en, es, el, fr, ga, gl, it, ku, nl, no, ss, pt-pt, pt-br, ro, sq, sv, ur, ar, bg, bs, cy, fa, hi, hr, id, mg, mk, ms, ps, ru, sl, so, sr, sw, am, as, cs, et, eu, fi, he, hu, ja, km, lo, lt, lv, mr, my, ne, or, pa, pl, sk, th, uk, zh-hans, zh-hant, az, bn, gu, hy, ka, kk, kn, ko, ky, ml, mn, ta, te, ug, uz, vi, tr     |
-|Philippines unified multi-purpose identification number  |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg  |
-|Phone Number    |en, es, fr, de, it, pt-pt, pt-br, zh, ja, ko, nl, sv, tr, hi      |
-|Physical address    |af, ca, da, de, en, es, el, fr, ga, gl, it, ku, nl, no, ss, pt-pt, pt-br, ro, sq, sv, ur, ar, bg, bs, cy, fa, hi, hr, id, mg, mk, ms, ps, ru, sl, so, sr, sw, am, as, cs, et, eu, fi, he, hu, ja, km, lo, lt, lv, mr, my, ne, or, pa, pl, sk, th, uk, zh-hans, zh-hant, az, bn, gu, hy, ka, kk, kn, ko, ky, ml, mn, ta, te, ug, uz, vi, tr   |
-|Portugal citizen card number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg     |
-|Portugal tax identification number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg    |
+|Person name   |`af, ca, da, de, en, es, el, fr, ga, gl, it, ku, nl, no, ss, pt-pt, pt-br, ro, sq, sv, ur, ar, bg, bs, cy, fa, hi, hr, id, mg, mk, ms, ps, ru, sl, so, sr, sw, am, as, cs, et, eu, fi, he, hu, ja, km, lo, lt, lv, mr, my, ne, or, pa, pl, sk, th, uk, zh-hans, zh-hant, az, bn, gu, hy, ka, kk, kn, ko, ky, ml, mn, ta, te, ug, uz, vi, tr`     |
+|Person Type    |`af, ca, da, de, en, es, el, fr, ga, gl, it, ku, nl, no, ss, pt-pt, pt-br, ro, sq, sv, ur, ar, bg, bs, cy, fa, hi, hr, id, mg, mk, ms, ps, ru, sl, so, sr, sw, am, as, cs, et, eu, fi, he, hu, ja, km, lo, lt, lv, mr, my, ne, or, pa, pl, sk, th, uk, zh-hans, zh-hant, az, bn, gu, hy, ka, kk, kn, ko, ky, ml, mn, ta, te, ug, uz, vi, tr`     |
+|Philippines unified multi-purpose identification number  |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`  |
+|Phone Number    |`en, es, fr, de, it, pt-pt, pt-br, zh, ja, ko, nl, sv, tr, hi`      |
+|Physical address    |`af, ca, da, de, en, es, el, fr, ga, gl, it, ku, nl, no, ss, pt-pt, pt-br, ro, sq, sv, ur, ar, bg, bs, cy, fa, hi, hr, id, mg, mk, ms, ps, ru, sl, so, sr, sw, am, as, cs, et, eu, fi, he, hu, ja, km, lo, lt, lv, mr, my, ne, or, pa, pl, sk, th, uk, zh-hans, zh-hant, az, bn, gu, hy, ka, kk, kn, ko, ky, ml, mn, ta, te, ug, uz, vi, tr`   |
+|Portugal citizen card number   |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`     |
+|Portugal tax identification number   |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`    |
 
 ### S
 
 |Entity   |Supported document languages  |
 |----------|-----------------------------|
-|South Africa identification number  |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg   |
-|South Korea resident registration number |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg   |
-|Spain DNI    |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg    |
-|Spain social security number (SSN)  |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg    |
-|Spain tax identification number  |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg   |
-|SQL Server connection string   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg      |
-|SWIFT code    |af, ca, da, de, en, es, el, fr, ga, gl, it, ku, nl, no, ss, pt-pt, pt-br, ro, sq, sv, ur, ar, bg, bs, cy, fa, hi, hr, id, mg, mk, ms, ps, ru, sl, so, sr, sw, am, as, cs, et, eu, fi, he, hu, ja, km, lo, lt, lv, mr, my, ne, or, pa, pl, sk, th, uk, zh-hans, zh-hant, az, bn, gu, hy, ka, kk, kn, ko, ky, ml, mn, ta, te, ug, uz, vi, tr   |
-|Switzerland SSN AHV number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg     |
+|South Africa identification number  |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`   |
+|South Korea resident registration number |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`   |
+|Spain DNI    |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`    |
+|Spain social security number (SSN)  |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`    |
+|Spain tax identification number  |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`   |
+|SQL Server connection string   |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`      |
+|SWIFT code    |`af, ca, da, de, en, es, el, fr, ga, gl, it, ku, nl, no, ss, pt-pt, pt-br, ro, sq, sv, ur, ar, bg, bs, cy, fa, hi, hr, id, mg, mk, ms, ps, ru, sl, so, sr, sw, am, as, cs, et, eu, fi, he, hu, ja, km, lo, lt, lv, mr, my, ne, or, pa, pl, sk, th, uk, zh-hans, zh-hant, az, bn, gu, hy, ka, kk, kn, ko, ky, ml, mn, ta, te, ug, uz, vi, tr`   |
+|Switzerland SSN AHV number   |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`     |
 
 ### T
 
 |Entity   |Supported document languages  |
 |----------|-----------------------------|
-|Taiwan national identification number  |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg   |
-|Taiwan passport number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg     |
-|Taiwan-resident certificate (ARC/TARC) number |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg   |
+|Taiwan national identification number  |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`   |
+|Taiwan passport number   |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`     |
+|Taiwan-resident certificate (ARC/TARC) number |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`   |
 
 ### U
 
 |Entity   |Supported document languages  |
 |----------|-----------------------------|
-|U.K. driver's license number  |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg   |
-|U.K. national health service number  |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg     |
-|U.K. national insurance number (NINO)  |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg    |
-|U.K. unique taxpayer reference number  |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg    |
-|U.S. bank account number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg     |
-|U.S. driver's license number  |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg    |
-|U.S. individual taxpayer identification number (ITIN) |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg   |
-|U.S. social security number (SSN)   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg      |
-|U.S./U.K. passport number   |en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg     |
-|URLs    |en, es, fr, de, it, pt-pt, pt-br, zh, ja, ko, nl, sv, tr, hi       |
+|U.K. driver's license number  |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`   |
+|U.K. national health service number  |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`     |
+|U.K. national insurance number (NINO)  |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`    |
+|U.K. unique taxpayer reference number  |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`    |
+|U.S. bank account number   |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`     |
+|U.S. driver's license number  |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`    |
+|U.S. individual taxpayer identification number (ITIN) |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`   |
+|U.S. social security number (SSN)   |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`      |
+|U.S./U.K. passport number   |`en, es, fr, de, it, zh-hans, zh-hant, ja, ko, pt-pt, pt-br, nl, ar, cs, da, fi, hi, hu, he, no, pl, ru, sv, tr, uk, th, sl, sk, ro, ms, lt, lv, et, el, hr, bg`     |
+|URLs    |`en, es, fr, de, it, pt-pt, pt-br, zh, ja, ko, nl, sv, tr, hi`       |
