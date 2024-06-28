@@ -42,7 +42,6 @@ To help your organization in planning for pay-as-you-go services, you can use th
 |Optical character recognition  |The number of pages processed for images (JPEG, JPG, PNG, or BMP); the number of pages processed for PDF, TIF, or TIFF; or the number of embedded images in Teams chats and email messages. Each of these counts as one transaction. Processing occurs every time the file is edited. |$0.001/transaction|
 |Microsoft 365 Archive  |The number of gigabytes (GB) of data archived. (This meter is only charged when archived storage plus active storage in SharePoint exceeds a tenant’s included or licensed allocated SharePoint storage quota limit.) <br>Reactivation of archived data after seven days. |$0.05/GB/month (shows on invoice as $0.00167/GB/day)<br><br><br>$0.60/GB|
 |Microsoft 365 Backup (Preview)  |The number of gigabytes (GB) of data backed up. |$0.15/GB/month (shows on invoice as $0.005/GB/day)|
-|Microsoft 365 Backup Storage (Preview)  |The number of gigabytes (GB) of protected data. |$0.07/GB/month|
 
 
 ## Related articles
