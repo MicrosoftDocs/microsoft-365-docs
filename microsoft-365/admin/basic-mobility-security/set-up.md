@@ -40,10 +40,12 @@ Have questions? For a FAQ to help address common questions, see [Basic Mobility 
 
 1. Sign in to Microsoft 365 with your global admin account.
 
-2. Go to <a href="https://admin.cloud.microsoft/EAdmin/Device/IntuneInventory.aspx" target="_blank">Activate Basic Mobility and Security</a>.
+1. Go to [Activate Basic Mobility and Security](https://compliance.microsoft.com/basicmobilityandsecurity). 
 
-   It can take some time to activate Basic Mobility and Security. When it finishes, select **Manage devices** on the page. You'll also receive an email that explains the next steps to take if you don't see the Manage devices page.
+1. Click **Enable feature.**
 
+   It can take some time to activate Basic Mobility and Security. If the feature is already activated, the **Enable feature** option will not appear. 
+   
 ## Set up Mobile Device Management
 
 When the service is ready, complete the following steps to finish setup.
@@ -65,34 +67,29 @@ After you add the two CNAME records, go back to the Security & Compliance Center
 
 To manage iOS devices like iPad and iPhones, you need to create an APNs certificate.
 
-1. Sign in to Microsoft 365 with your global admin account.
+1. Sign in to Microsoft Azure with your global admin account.
 
-2. Go to the <a href="https://admin.cloud.microsoft/?#/MifoDevices" target="_blank">Microsoft 365 admin center</a>, and choose **APNs Certificate for iOS**.
+1. Go to [Configure MDM Push Certificate](https://portal.azure.com/#view/Microsoft_Intune_Enrollment/APNSCertificateUploadBlade).
 
-3. On the Apple Push Notification Certificate Settings page, choose **Next**.
+1. Check the box **I agree** to authorize Microsoft communication with Apple.
 
-4. Select **Download your CSR file** and save the Certificate signing request to somewhere on your computer that you'll remember. Select **Next**.
+1. Select **Download your CSR** and save the Certificate signing request to somewhere on your computer that you'll remember. 
 
-5. On the Create an APNs certificate page:
-
-   - Select Apple APNS Portal to open the Apple Push Certificates Portal.
+1. Select **Create your MDM push certificate** to open the Apple Push Certificates Portal.
    - Sign in with an Apple ID.
-
+   
      > [!IMPORTANT]
      > Use a company Apple ID associated with an email account that will remain with your organization even if the user who manages the account leaves. Save this ID because you'll need to use the same ID when it's time to renew the certificate.
-
    - Select Create a Certificate and accept the Terms of Use.
-   - Browse to the Certificate signing request you downloaded to your computer from Microsoft 365 and selectUpload.
+   - Browse to the Certificate signing request you downloaded to your computer from Microsoft 365 and select Upload.
+      
    - Download the APN certificate created by the Apple Push Certificate Portal to your computer.
-
+   
      > [!TIP]
      > If you're having trouble downloading the certificate, refresh your browser.
+1. Go back to Microsoft Azure and browse to the APN certificate you downloaded from the Apple Push Certificates Portal.
 
-6. Go back to Microsoft 365 and select **Next**.
-
-7. Browse to the APN certificate you downloaded from the Apple Push Certificates Portal.
-
-8. Select **Finish**.
+1. Click **Upload**.
 
 ## Make sure users enroll their devices
 
