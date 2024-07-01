@@ -26,7 +26,7 @@ If you no longer need a _Satellite Geography_ location, you can delete it from y
 > [!WARNING]
 > All user data in the _Satellite Geography_ location will be permanently deleted. This includes all OneDrive content, SharePoint sites and Exchange mailboxes including Microsoft 365 Group mailboxes. You must migrate any data to another _Satellite Geography_ location or the _Primary Provisioned Geography_ location before you delete the _Satellite Geography_ location. This action cannot be undone.
 
-Only Global Administrators and SharePoint Administrators can delete _Satellite Geography_ locations.
+Only SharePoint Administrators can delete _Satellite Geography_ locations.
 
 ![Screenshot of multi-geo admin center showing delete geo location UI.](../media/multi-geo-delete-satellite-location.png)
 

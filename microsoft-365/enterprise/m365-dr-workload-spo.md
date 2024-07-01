@@ -165,7 +165,7 @@ Set-SPOGeoStorageQuota -GeoLocation <geolocationcode> -StorageQuotaMB 0
 
 #### Move a OneDrive site to a different _Geography_ location
 
-With OneDrive _Geography_ move, you can move a user's OneDrive to a different _Geography_ location. OneDrive _Geography_ move is performed by the SharePoint administrator or the Microsoft 365 global administrator. Before you start a OneDrive _Geography_ move, be sure to notify the user whose OneDrive is being moved and recommend they close all files for the duration of the move. (If the user has a document open using the Office client during the move, then upon move completion the document will need to be saved to the new location.) The move can be scheduled for a future time, if desired.
+With OneDrive _Geography_ move, you can move a user's OneDrive to a different _Geography_ location. OneDrive _Geography_ move is performed by the SharePoint administrator. Before you start a OneDrive _Geography_ move, be sure to notify the user whose OneDrive is being moved and recommend they close all files for the duration of the move. (If the user has a document open using the Office client during the move, then upon move completion the document will need to be saved to the new location.) The move can be scheduled for a future time, if desired.
 
 The OneDrive service uses Azure Blob Storage to store content. The Storage blob associated with the user's OneDrive is moved from the source to destination _Geography_ location within 40 days of destination OneDrive being available to the user. The access to the user's OneDrive is restored as soon as the destination OneDrive is available.
 
@@ -192,6 +192,7 @@ You can schedule OneDrive site moves in advance (described later in this article
 - You can schedule up to 4,000 moves at a time.
 - As the moves begin, you can schedule more, with a maximum of 4,000 pending moves in the queue and any given time.
 - The maximum size of a OneDrive that can be moved is 5 terabytes (5 TB).
+- The count of list items for the site is < 1 million.
 
 #### **Moving a OneDrive site**
 
@@ -347,7 +348,7 @@ The following types of site can be moved between _Geography_ locations:
 - Communication sites
 
 > [!NOTE]
-> You must be a Global Administrator or SharePoint Administrator to move a site between _Geography_ locations.
+> You must be a SharePoint Administrator to move a site between _Geography_ locations.
 
 There's a read-only window during the SharePoint site _Geography_ move of approximately 4-6 hours, depending on site contents.
 
@@ -377,6 +378,7 @@ You can schedule SharePoint site moves in advance (described later in this artic
 - You can schedule up to 4,000 moves at a time.
 - As the moves begin, you can schedule more, with a maximum of 4,000 pending moves in the queue and any given time.
 - The maximum size of a SharePoint site that can be moved is 5 terabytes (5 TB).
+- The count of list items for the site is < 1 million.
 
 To schedule a SharePoint site _Geography_ move for a later time, include one of the following parameters when you start the move:
 
@@ -442,7 +444,7 @@ You cannot use the `-DestinationDataLocation` and `-DestinationUrl` parameters i
 
 #### **Start a SharePoint site _Geography_ move for a Microsoft 365 group-connected site**
 
- To move a Microsoft 365 group-connected site, the Global Administrator or SharePoint Administrator must first change the Preferred Data Location (PDL) attribute for the Microsoft 365 group.
+ To move a Microsoft 365 group-connected site, the SharePoint Administrator must first change the Preferred Data Location (PDL) attribute for the Microsoft 365 group.
 
 To set the PDL for a Microsoft 365 group:
 

@@ -49,11 +49,24 @@ You can dive deeper into your content to truly understand it, and you can turn t
 
 ## Syntex services
 
+### Autofill columns
+
+:::row:::
+   :::column span="":::
+      ![Image of generic autofill icon.](../media/content-understanding/autofill-image.png) 
+   :::column-end:::
+   :::column span="3":::
+      Autofill columns automatically extract, summarize, or generate content from files uploaded to a SharePoint document library. Using large language models (LLMs), designated columns can save metadata automatically, streamlining the process of managing files and their associated information.
+   :::column-end:::
+:::row-end:::
+
+[Learn more about autofill columns in Microsoft Syntex.](autofill-overview.md)
+
 ### Content assembly
 
 :::row:::
    :::column span="3":::
-      With Syntex, you can use content assembly to automatically generate standard repetitive business documents, such as contracts, statements of work, service agreements, letters of consent, and correspondence. You can do all these tasks quicker, more consistently, and with fewer errors in Syntex.
+      Use content assembly to automatically generate standard repetitive business documents, such as contracts, statements of work, service agreements, letters of consent, and correspondence. You can do all these tasks quicker, more consistently, and with fewer errors in Syntex.
    :::column-end:::
    :::column span="":::
       ![Image of generic document icon.](../media/content-understanding/document-assembly-image.png)
@@ -73,7 +86,7 @@ You create *modern templates* based on the business documents you use most. You 
       ![Icon for Receipts model.](../media/content-understanding/trained-receipts-model.png) 
    :::column-end:::
    :::column span="3":::
-      Use a [prebuilt model](prebuilt-overview.md) to save time processing and extracting information from [contracts](prebuilt-model-contract.md), [invoices](prebuilt-model-invoice.md), or [receipts](prebuilt-model-receipt.md). Prebuilt models are pretrained to recognize common business documents and the structured information in the documents.
+      Use a [prebuilt model](prebuilt-overview.md) to save time processing and extracting information from [contracts](prebuilt-model-contract.md), [invoices](prebuilt-model-invoice.md), and [receipts](prebuilt-model-receipt.md), and detecting and extracting [sensitive information](prebuilt-model-sensitive-info.md) from documents. Prebuilt models are pretrained to recognize common business documents and the structured information in the documents.
    :::column-end:::
 :::row-end:::
 

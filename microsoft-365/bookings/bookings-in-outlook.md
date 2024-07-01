@@ -1,11 +1,11 @@
 ---
-title: "Turn off your Personal Bookings page"
+title: "Turn your Personal Bookings page on or off"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 03/25/2023
+ms.date: 06/05/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: bookings
 ms.localizationpriority: medium
 ms.collection:
@@ -14,17 +14,17 @@ ms.collection:
 - essentials-overview
 - essentials-get-started
 - essentials-manage
-ROBOTS: NOINDEX, NOFOLLOW
-description: "Steps to turn off your Personal Bookings page"
+- must-keep
+description: "Steps to turn your Personal Bookings page on or off"
 ---
 
-# Turn off your  Bookings page
+# Turn your Personal Bookings page on or off
 
- Bookings is a  time management solution that provides a simple and powerful scheduling page with seamless integration with outlook. It lets people schedule a meeting or appointment with you through a  booking page that integrates with the free/busy information from your Outlook calendar. You can create custom meeting types to share with others so they can easily schedule time with you based on your availability and preferences. You both get an email confirmation and attendees can update or cancel scheduled meetings with you from your Personal Bookings page.
+ Bookings is a time management solution that provides a simple and powerful scheduling page with seamless integration with outlook. It lets people schedule a meeting or appointment with you through a booking page that integrates with the free/busy information from your Outlook calendar. You can create custom meeting types to share with others so they can easily schedule time with you based on your availability and preferences. You both get an email confirmation and attendees can update or cancel scheduled meetings with you from your Personal Bookings page.
 
 Personal Bookings has two different views:
 
-- **Organizer view**: An organizer is someone who creates meeting types and shares the booking page with others so that they can easily schedule meetings with them. A personal booking page is where you can create meeting types that others can book with you. Custom meeting types give you the ability to customize when you want to meet and how that meeting type is shared with others. You control whether each meeting type is public to your scheduling page or is private and can only be accessed by a select group of people. You can access your Bookings with me page through Outlook, web and Teams. After you set up your page and publish it, you can share it with others. For example, you can add it to your Outlook signature. [Learn more about setup and sharing in Bookings with me](https://support.microsoft.com/office/bookings-with-me-setup-and-sharing-ad2e28c4-4abd-45c7-9439-27a789d254a2).
+- **Organizer view**: An organizer is someone who creates meeting types and shares the booking page with others so that they can easily schedule meetings with them. A personal booking page is where you can create meeting types that others can book with you. Custom meeting types give you the ability to customize when you want to meet and how that meeting type is shared with others. You control whether each meeting type is public to your scheduling page or is private and can only be accessed by a select group of people. You can access your Bookings with me page through Outlook, web and Teams. After you set up your page and publish it, you can share it with others. For example, you can add it to your Outlook signature.
 
 - **Attendee view**: An attendee is someone who uses the booking page to create or attend a meeting scheduled by an organizer. After the organizer shares their personal booking page with others, those visitors will see the attendee view.
 
@@ -42,11 +42,6 @@ Bookings with me is an ideal solution for enterprise, small business, and users 
 
 ### End users
 
-For more information on how your users can work with Bookings with me, see the following topics:
-
-- [Set up Bookings with me](https://support.microsoft.com/office/bookings-with-me-setup-and-sharing-ad2e28c4-4abd-45c7-9439-27a789d254a2)
-- [Bookings with me articles](https://support.microsoft.com/office/bookings-with-me-articles-c69c4703-e812-435c-9fc2-d194e10fd205)
-
 ## Before you begin
 
 Personal Bookings can be turned on or off for your entire organization or for specific users. When you turn on Bookings for users, they can create a Bookings page, share their page with others, and allow other people to book time with them. This article is for owners and administrators who manage Personal Bookings for their organizations.
@@ -58,7 +53,7 @@ Personal Bookings is available in the following subscriptions:
 - Personal Bookings is available for G1, G3, G5
 Personal Bookings is on by default for users with these subscriptions.
 
-Personal Bookings needs the **Microsoft Bookings App (service plan)** assigned to users for them to be able to access Bookings. This service plan can be enabled/disabled by tenant admins. So, if **Microsoft Bookings** is not assigned to them, Bookings access will be denied to users even if they are in one of the previously listed SKUs.
+Personal Bookings needs the **Microsoft Bookings App (service plan)** assigned to users for them to be able to access Bookings. This service plan can be enabled/disabled by tenant admins. So, if **Microsoft Bookings** isn't assigned to them, Bookings access will be denied to users even if they are in one of the previously listed SKUs.
 
 For more information, see the [Bookings with me Microsoft 365 Roadmap item](https://go.microsoft.com/fwlink/?linkid=328648).
 
@@ -92,12 +87,12 @@ Use the **Get-OrganizationConfig** and **Set-OrganizationConfig** commands to fi
     If the command returns "EwsEnabled:" (empty is default), no further changes are needed, proceed to Step 2.
 
     If the command returns "EwsEnabled: **$false**" then run the following command and proceed to Step 2.
-   
+  
    ```PowerShell
    Set-OrganizationConfig -EwsEnabled: $true
    ```
 
-3. Check your EwsApplicationAccessPolicy by running the following command:
+1. Check your EwsApplicationAccessPolicy by running the following command:
 
    ```PowerShell
    Get-OrganizationConfig | Format-List EwsApplicationAccessPolicy,Ews*List
@@ -133,18 +128,18 @@ Use the **Get-OrganizationConfig** and **Set-OrganizationConfig** commands to fi
 
     **C**. If the value of **EwsApplicationAccessPolicy** is empty, all applications are allowed to access EWS and REST.
 
-    - To turn off Personal Bookings for your organization set the **EnforceBlockList** policy and add **MicrosoftOWSPersonalBookings** to the block list by running the following command:
+    - To turn off Personal Bookings for your organization set the **EnforceBlockList** policy and add **MicrosoftOWSPersonalBookings** to the blocklist by running the following command:
 
       ```PowerShell
       Set-OrganizationConfig -EwsApplicationAccessPolicy EnforceBlockList -EwsBlockList @{Add="MicrosoftOWSPersonalBookings"}
       ```
-   
+  
     - If you want to revert the value of **EwsApplicationAccessPolicy** to empty to allow all applications to access EWS and REST, run the following command:
 
       ```PowerShell
       Set-OrganizationConfig -EwsApplicationAccessPolicy $null
       ```
-      
+  
   > [!NOTE]
   > The EwsApplicationAccessPolicy parameter defines which applications other than Entourage, Outlook, and Outlook for Mac can access EWS.
 
@@ -160,7 +155,7 @@ Use the **Get-CASMailbox** and **Set-CASMailbox** commands to check user status 
 
     **A**. If the command returns "**EwsEnabled: $true**", then proceed to Step 2.
 
-2. Check the individual's **EwsApplicationAccessPolicy** by running the following command:
+1. Check the individual's **EwsApplicationAccessPolicy** by running the following command:
 
    ```PowerShell
    Get-CASMailbox -Identity adam@contoso.com | Format-List EwsApplicationAccessPolicy,Ews*List
@@ -202,25 +197,23 @@ Use the **Get-CASMailbox** and **Set-CASMailbox** commands to check user status 
       Set-CASMailbox -Identity adam@contoso.com -EwsApplicationAccessPolicy EnforceBlockList -EWSBlockList @{Add="MicrosoftOWSPersonalBookings"}
       ```
 
-
 ## Frequently asked questions
 
 ### What is the difference between Bookings and Bookings with me?
 
 Bookings with me integrates with your Outlook calendar and can only be used for 1:1 meetings. Bookings with me is intended for scheduling meeting times with individual users. Bookings is intended for managing scheduling for a group of people.
 
-Also, Bookings with me won't create a new mailbox for each Bookings with me page.
-Note that Bookings with me and Personal Bookings are terms used interchangeably. 
+Also, Bookings with me won't create a new mailbox for each Bookings with me page. Note that Bookings with me and Personal Bookings are terms used interchangeably.
 
 ### Who can access my public Bookings page?
 
-Public meeting types can be accessed by anyone that has your Bookings with me page address. You decide who you share your Bookings with me page address with. For more information, see [Select a meeting time in Bookings with me](https://support.microsoft.com/office/select-a-meeting-time-in-bookings-with-me-8f3bbe5b-4bc6-4073-bf61-57383c00b43a).
+Public meeting types can be accessed by anyone that has your Bookings with me page address. You decide who you share your Bookings with me page address with.
 
 ### What is the difference between public and private meeting types?
 
 Meeting types can be public or private. Public meeting types are available to anyone that you share your Bookings page link with. Private meeting types are only available to people that you share the individual private meeting type with.  
 
-Private meeting types can also generate single use links. Single use links expire after their first booking. For more information, see [setup Bookings with me meeting types](https://support.microsoft.com/office/bookings-with-me-setup-and-sharing-ad2e28c4-4abd-45c7-9439-27a789d254a2).
+Private meeting types can also generate single use links. Single use links expire after their first booking.
 
 ### Do people need to have a Microsoft account or Bookings license to schedule time with me?
 
@@ -230,4 +223,4 @@ No. Anyone or any attendee can schedule time with you using your Bookings with m
 
 ### Where is Bookings with me data stored?
 
-Bookings with me is a feature of Outlook powered by Bookings. All data is stored within the Microsoft 365 platform and in Exchange. Bookings with me follows data storage policies set by Microsoft, which are the same policies that all Microsoft 365 apps follow. All customer data (including information provided by attendees when booking) is captured in Bookings and is stored within Exchange. For more information, check out [Privacy: It's all about you](https://www.microsoft.com/en-us/trust-center/privacy).
+Bookings with me is a feature of Outlook powered by Bookings. All data is stored within the Microsoft 365 platform and in Exchange. Bookings with me follows data storage policies set by Microsoft, which are the same policies that all apps in Microsoft 365 follow. All customer data (including information provided by attendees when booking) is captured in Bookings and is stored within Exchange. For more information, check out [Privacy: It's all about you](https://www.microsoft.com/trust-center/privacy).

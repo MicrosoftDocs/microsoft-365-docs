@@ -54,13 +54,14 @@ The following workloads are included in ADR. For more information, see:
 The Advanced Data Residency ("ADR") add-on is intended for Microsoft 365 enterprise customers who have comprehensive data residency requirements. To be eligible to purchase ADR, customers must meet the following prerequisites:
 
 - The _Tenant_ _Default Geography_ must be one of the countries or regions included in the _Local Region Geography_: Australia, Brazil, Canada, France, Germany, India, Israel, Italy, Japan, Mexico, Poland, Qatar, South Korea, Norway, South Africa, Spain, Sweden, Switzerland, United Arab Emirates, and United Kingdom.
-- Customers must have licenses one or more of the following products:
-  - Microsoft 365 F1, F3, E3, or E5
-  - Office 365 F3, E1, E3, or E5
+- Customers must have licenses for one or more of the following products:
+  - Microsoft 365 F1, F3, E3, or E5 (including SKUs without Microsoft Teams)
+  - Office 365 F3, E1, E3, or E5 (including SKUs without Microsoft Teams)
   - Exchange Online Plan 1 or Plan 2
   - OneDrive Plan 1 or Plan 2
   - SharePoint Plan 1 or Plan 2
-  - Microsoft 365 Business Basic, Standard or Premium
+  - Microsoft 365 Business Basic, Standard or Premium (including SKUs without Microsoft Teams)
+  - Microsoft Teams Enterprise, EEA, or Essentials
 
 Geographic availability is updated as available.
 
@@ -97,7 +98,7 @@ After receiving the Advanced Data Residency licenses and applying them to the cu
 
 #### Microsoft 365 Admin Center Data Location
 
-:::image type="content" alt-text="Screenshot of Microsoft 365 Admin Center Data location View." source="media\data-residency\1-adr-microsoft-365-data-location-card.png" lightbox="media\data-residency\1-adr-microsoft-365-data-location-card.png":::
+:::image type="content" alt-text="Screenshot of Microsoft 365 Admin Center Data location View." source="media\data-residency\1-adr-microsoft-365-data-location-card_0624.png" lightbox="media\data-residency\1-adr-microsoft-365-data-location-card_0624.png":::
 
 > [!NOTE]
 > The data migration process described in the sections below will not initiate until the customer administrator completes this task.
@@ -106,13 +107,13 @@ The following screenshot is an example of the Microsoft 365 admin center Data lo
 
 #### Before Migration Opt-in
 
-:::image type="content" source="media\data-residency\2-adr-microsoft-365-data-location-card-before-move.png" alt-text="Screenshot of Data Location View Before Migration.":::
+:::image type="content" source="media\data-residency\2-adr-microsoft-365-data-location-card-before-move_0624.png" alt-text="Screenshot of Data Location View Before Migration.":::
 
 Once a customer administrator chooses the option to initiate migration, they are provided with confirmation of their opt-in date and migration initiation as shown in the screenshot below.
 
 #### After Migration Opt-in
 
-:::image type="content" source="media\data-residency\3-adr-microsoft-365-data-location-card-move-initiated.png" alt-text="Screenshot of Data Location View Migration Requested.":::
+:::image type="content" source="media\data-residency\3-adr-microsoft-365-data-location-card-move-initiated_0624.png" alt-text="Screenshot of Data Location View Migration Requested.":::
 
 The "Data location" section in the Microsoft 365 admin center (referenced in the screenshots above) displays the most up-to-date location of each workload throughout the data migration process. Customer administrators can also view any Message center notifications related to their migration within the Microsoft 365 admin center by navigating to **Health > Message center**.
 
@@ -132,11 +133,11 @@ The following screenshots are examples of the Microsoft 365 admin center Data lo
 
 #### During Migration
 
-:::image type="content" source="media\data-residency\4-adr-microsoft-365-data-location-card-move-in-progress.png" alt-text="Screenshot of Data Location View Migration in Progress.":::
+:::image type="content" source="media\data-residency\4-adr-microsoft-365-data-location-card-move-in-progress_0624.png" alt-text="Screenshot of Data Location View Migration in Progress.":::
 
 #### After Migration
 
-:::image type="content" source="media\data-residency\5-adr-microsoft-365-data-location-card-move-completed.png" alt-text="Screenshot of Data Location View Migration Completed.":::
+:::image type="content" source="media\data-residency\5-adr-microsoft-365-data-location-card-move-completed_0624.png" alt-text="Screenshot of Data Location View Migration Completed.":::
 
 ### Effect on End Users and Workloads
 
