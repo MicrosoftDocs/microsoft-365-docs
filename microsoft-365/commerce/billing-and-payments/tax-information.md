@@ -68,21 +68,21 @@ You might qualify for VAT zero-rating if you meet one of the following criteria:
 A Limited Risk Distributor (LRD) is a subsidiary that Microsoft established as buy-sell distributor who sells directly or indirectly. The model affects customers buying directly from Microsoft through the MCA. It also demonstrates the Microsoft commitment to our business in the following countries/regions:
 
 - Australia
-- New Zealand
-- Canada
-- France
-- United Kingdom
-- Germany
 - Austria
 - Belgium
+- Canada
 - Denmark
 - Finland
+- France
+- Germany
 - Italy
 - Netherlands
+- New Zealand
 - Norway
+- Spain
 - Sweden
 - Switzerland
-- Spain
+- United Kingdom
 
 Under the LRD model:
 
