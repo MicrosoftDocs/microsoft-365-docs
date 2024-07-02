@@ -3,7 +3,7 @@ title: "Microsoft 365 Teams monitoring"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 03/25/2023
+ms.date: 05/17/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -15,6 +15,7 @@ ms.collection:
 - scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
+- must-keep
 ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH

@@ -47,6 +47,9 @@ After you have [created a shared mailbox](create-a-shared-mailbox.md), you'll wa
 
 ## Forward emails that are sent to a shared mailbox
 
+> [!IMPORTANT]
+> Email forwarding to recipients outside the organization doesn't prevent messages identified as spam, phishing, or malware from being forwarded. The recipient needs their own email security filter to identify and block these messages.
+
 You do not need to assign a license to the shared mailbox in order to forward email that's sent to it. You can forward the messages to any valid email address or distribution list.
 
 1. In the admin center, go to **Teams & groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Shared mailboxes</a>.
@@ -89,7 +92,7 @@ If you want to allow everyone to see the Sent email, in the admin center, edit t
 
 To learn more about litigation hold, see [Create a Litigation Hold](../../compliance/ediscovery-create-a-litigation-hold.md).
 
-1. Go to the <a href="https://admin.exchange.microsoft.com/#/homepage" target="_blank"> Exchange admin center</a>.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>.
 
 2. Select **Recipients** > **Mailboxes** and select the shared mailbox you want to manage.
 

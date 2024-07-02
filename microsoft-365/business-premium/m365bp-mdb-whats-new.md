@@ -9,9 +9,8 @@ author: siosulli
 manager: deniseb
 audience: Admin
 ms.topic: overview
-ms.date: 01/02/2024
-ms.service: microsoft-365-security
-ms.subservice: mdb
+ms.date: 05/31/2024
+ms.service: microsoft-365-business-security
 ms.localizationpriority: medium
 ms.collection:
 - tier2
@@ -23,10 +22,15 @@ f1.keywords: NOCSH
 # What's new in Microsoft 365 Business Premium and Microsoft Defender for Business
 
 **Applies to:**
+
 - [Microsoft 365 Business Premium](m365bp-overview.md)
 - [Microsoft Defender for Business](../security/defender-business/mdb-overview.md)
 
 This article lists new features in the latest release of [Microsoft 365 Business Premium](m365bp-overview.md) and [Microsoft Defender for Business](../security/defender-business/mdb-overview.md). Features that are currently in preview are denoted with **(preview)**.
+
+## March 2024
+
+- (Preview) **Turn preview options on in the main Microsoft 365 Defender settings** together with other Microsoft 365 Defender preview features. Customers who are not using preview features yet continue to see the legacy settings under **Settings** > **Endpoints** > **Advanced features** > Preview features**. For more information, see [Microsoft 365 Defender preview features](/defender-xdr/preview).
 
 ## January 2024
 

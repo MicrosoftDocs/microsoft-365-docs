@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 06/21/2023
+ms.date: 05/30/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -15,6 +15,7 @@ ms.collection:
 - scotvorg
 - M365-subscription-management 
 - Adm_O365
+- must-keep
 ms.custom: AdminSurgePortfolio
 description: "Learn about feedback your users can send to Microsoft about Microsoft products."
 ---
@@ -22,7 +23,7 @@ description: "Learn about feedback your users can send to Microsoft about Micros
 # Learn about Microsoft feedback for your organization
 
 User feedback is a critical signal for Microsoft to understand user experiences with Microsoft products. Microsoft values our users’ opinions. User feedback goes directly to our engineers and helps us shape the future of Microsoft products and services for all our users.  
-In this topic, you'll find information on what types of feedback exist, how we collect it, what we collect and how we handle the data.
+In this article, you'll find information on what types of feedback exist, how we collect it, what we collect and how we handle the data.
 
 As an admin, you can manage the feedback signal for your organization. We’re introducing a new set of policy settings to help you manage user feedback collection within the Microsoft 365 applications for your organization. These policy settings will help you target Microsoft Entra groups and configure the feedback collection experience for your organization. User feedback goes directly to our engineers and helps us shape the future of Microsoft products and services for all our users. You can learn more about these policy settings, which applications they apply to, and best practices at [Manage Microsoft feedback for your organization](../manage/manage-feedback-ms-org.md).
 
@@ -82,18 +83,19 @@ When a user submits feedback, app information is usually collected along with ap
 - **App Language**   Language of Microsoft product that was captured on submission.
 - **Attachments**   Were any attachments (i.e. screenshots, files) collected as part of the feedback? (Yes/No).
 - **TenantId**   If feedback is submitted from a Microsoft Entra account, which TenantId was associated.
-- **App module** Information about app modules that may have caused a recent crash, where applicable.
+- **App module** Information about app modules that might have caused a recent crash, where applicable.
 - **Optional Diagnostic data** If you're opted in, this data will be included with the feedback. [Learn more](/deployoffice/privacy/optional-diagnostic-data).
 
-If you've enabled the corresponding policies, we may allow users to submit screenshots, attachments, content samples, and logs to help us debug and resolve problems the user may be running into. Microsoft uses this data to debug and resolve problems that may be challenging or impossible to resolve without this additional information. Users choose whether or not this content and data is submitted to Microsoft.
+If you've enabled the corresponding policies, we might allow users to submit screenshots, attachments, content samples, and logs to help us debug and resolve problems the user might be running into. Microsoft uses this data to debug and resolve problems that might be challenging or impossible to resolve without this additional information. Users choose whether or not this content and data is submitted to Microsoft.
 
 - Screenshots: Captures of the user’s screen at the time they submitted feedback. Example: the screen including the dialog box from which the user is submitting feedback.
 - Attachments: Files the user can choose to attach to their feedback. Example: the file they were working on when they encountered a problem.
 - Content samples: Portions of content from the customer’s document or interactions with Microsoft services. Example: the prompt the user sent to an AI service and the response the user received back from that AI service.
-- Log files: Additional log files that aren't included in Overview of diagnostic log files for Office - Microsoft Support and that may include the user’s name or contents of the user’s files. Examples: logs that include the element of the customer’s file that is preventing the file from saving.
+- Log files: Additional log files that aren't included in [diagnostic log files for Office](https://support.microsoft.com/office/fba86aac-70dc-4858-ae1f-ec2034346cdf) and that might include the user’s name or contents of the user’s files. Examples: logs that include the element of the customer’s file that is preventing the file from saving.
 
 > [!NOTE]
-> For information about what feedback data is collected about Microsoft Copilot with Microsoft 365 apps, see [Providing feedback about Microsoft Copilot with Microsoft 365 apps](https://support.microsoft.com/topic/c481c26a-e01a-4be3-bdd0-aee0b0b2a423).
+> - For information about what feedback data is collected about Microsoft Copilot with Microsoft 365 apps, see [Providing feedback about Microsoft Copilot with Microsoft 365 apps](https://support.microsoft.com/topic/c481c26a-e01a-4be3-bdd0-aee0b0b2a423).
+> - For information about log files for Microsoft Teams, see [Configure log files for monitoring and troubleshooting in Teams](/microsoftteams/log-files).
 
 ## How can I see my user's feedback?
 

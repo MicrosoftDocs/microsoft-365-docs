@@ -23,8 +23,8 @@
         href: deploy-dynamic-teams-at-scale.md
       - name: Deploy frontline static teams at scale with PowerShell
         href: deploy-teams-at-scale.md
-#     - name: Frontline usage reporting
-#       href: frontline-usage-report.md 
+      - name: Frontline usage reporting
+        href: frontline-usage-report.md 
       - name: Deploy your frontline operational hierarchy
         href: deploy-frontline-operational-hierarchy.md
     - name: Set up and configure experiences for your frontline
@@ -71,7 +71,7 @@
       href: flw-onboarding-training.md
   - name: Schedule management
     items: 
-    - name: Get started with Shifts for Teams
+    - name: Get started with Shifts
       href: shifts-for-teams-landing-page.md
     - name: Frontline manager and worker roles in Shifts
       href: shifts-frontline-manager-worker-roles.md

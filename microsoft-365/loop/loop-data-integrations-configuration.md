@@ -2,16 +2,16 @@
 ms.date: 02/22/2024
 title: "Configuring external data integrations for Loop experiences"
 ms.reviewer: dancost, dimple
-ms.author: jtremper
-author: jacktremper
-manager: pamgreen
+ms.author: jenz
+author: jenzamora
+manager: jtremper
 recommendations: true
 audience: Admin
 f1.keywords:
 - NOCSH
 ms.service: loop
 ms.localizationpriority: medium
-ms.topic: article
+ms.topic: how-to
 ms.collection:
 - Strat_SP_admin
 - Microsoft 365-collaboration
@@ -37,7 +37,7 @@ Microsoft enabled Jira, Trello, and GitHub integration experiences within [Micro
 
 When data integrations are Enabled, data from external sources synchronize into the Loop data file. Integration options appear in the Discover '/' menu. Integrations synchronize data when the user views or edits the Loop component in apps that support Loop such as Teams, Outlook, Loop app, etc.
 
-When data integrations are Disabled, data from these disabled external sources don't synchronize. No connections to these external sources can be established. All existing data stops synchronizing, and becomes read-only everywhere. The integration options still appear in the Discover '/' menu but users cannot activate or create new external data integrations.
+When data integrations are Disabled, data from these disabled external sources don't synchronize. No connections to these external sources can be established. All existing data stops synchronizing, and becomes read-only everywhere. The integration options still appear in the Discover '/' menu but users can't activate nor create new external data integrations.
 
 ## Example policy configurations and user experience result
 
