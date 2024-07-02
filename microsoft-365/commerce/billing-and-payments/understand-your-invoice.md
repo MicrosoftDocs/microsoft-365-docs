@@ -48,7 +48,7 @@ The invoice for your Microsoft business subscription provides a summary of the c
 
 Depending on the billing frequency that you chose when you bought your subscription, you receive an invoice monthly, every three months, every six months, or annually. 
 
-Each new subscription purchase will receive the first invoice the next day and will be billed on this same day of the month with the frequency selected at purchase. Changes you make to an existing subscription will appear on the monthly invoice around the beginning of the following month.
+Each new subscription purchase receives the first invoice the next day and is billed on this same day of the month with the frequency selected at purchase. Changes you make to an existing subscription will appear on the monthly invoice around the beginning of the following month.
 
 > [!NOTE]
 > You can only change the billing frequency for a subscription when you buy, upgrade, or renew a subscription.
@@ -82,7 +82,7 @@ The top of the first page of your invoice identifies who's accountable for payme
 | Billing Profile |The name of the billing profile used to define invoice properties like **Bill to**, **PO number**, and payment terms. This information is managed on the billing profile details page. To learn more about billing profiles, see [Manage your Microsoft business billing profiles](manage-billing-profiles.md). |
 | Invoice number |A unique, Microsoft-generated invoice number used for tracking purposes. |
 | Invoice date |Date that the invoice is generated. The billing period start and end dates for each invoice are listed in the invoice PDF above **Billing Summary**.|
-|Billing period|The time frame during which charges that appear on the invoice are accrued.  For new subscription purchases and renewals, each invoice represents a single day of purchases, so the billing period will be a single day.  For changes to existing subscription the billing period will be the prior month.|
+|Billing period|The time frame during which charges that appear on the invoice are accrued. For new subscription purchases and renewals, each invoice represents a single day of purchases, so the billing period is a single day. For changes to an existing subscription, the billing period is the prior month.|
 | Payment terms |How you pay for your Microsoft bill. *Net 30 days* means that you pay by following instructions on your invoice, within 30 days of the invoice date. |
 
 ### Billing Summary
@@ -104,7 +104,7 @@ The charges for your invoice start on page two and show the cost broken down by 
 
 | Term |Description |
 | --- | --- |
-|Purchases charge dates|These are the service dates you are paying for.|
+| Purchases Charge dates| These are the service dates you're paying for.|
 | Unit price | The effective unit price of the service (in pricing currency) that is used to calculate the charge. This price is unique for a product, service family, meter, and offer. |
 | Qty | Quantity purchased or consumed during the billing period |
 | Charges/Credits | Net amount of charges after credits/refunds are applied |
@@ -159,11 +159,11 @@ Payment instructions depend on your payment method and are provided at the botto
 - **Total amount:** The total amount for the purchase that you made.
 - **Amount due:** The remaining balance for what you owe.
 
-### What is the difference between "'Purchase charge dates" and "Billing period?"
+### What is the difference between "Purchases Charge dates" and "Billing period?"
 
-- **Purchase charge dates:** The service period during which you're charged to use the service. These are the dates of service the charge applies
+- **Purchases Charge dates:** The service period during which you're charged to use the service. These are the dates of service the charge applies to.
 
-- **Billing period:** The time period that charges accrue.  If a single day, only purchases made on that day will reflect on the invoice.  These is also a monthly invoice with a billing period for the previous month.  This invoice is for changes made to an existing subscription such as adding seats or cancelling.
+- **Billing period:** The time period during which charges accrue. If the period is a single day, only purchases made on that day are shownb on the invoice. There's also a monthly invoice with a billing period for the previous month. This invoice is for changes made to an existing subscription, such as adding seats or cancelling.
 
 ### Why don't I see Azure prepayment as a payment method?
 
