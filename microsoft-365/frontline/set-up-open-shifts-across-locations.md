@@ -28,7 +28,7 @@ ms.date:
 
 ## Overview
 
-With the open shifts across locations feature in Shifts, your frontline managers can offer open shifts across multiple locations (teams) within an area for frontline workers to request. Workers can see and request open shifts that are available at other locations.
+With the cross-location shifts feature in Shifts, your frontline managers can offer open shifts across multiple locations (teams) within an area for frontline workers to request. Workers can see and request open shifts that are available at other locations.
 
 With this feature, you can:
 
@@ -61,6 +61,20 @@ Keep the following things in mind:
 - A code can be up to 100 alphanumeric characters long.
 - By default, the schedule group code is the same as the schedule group name unless you change it.
 
+Here's a sample request for a specific team:
+
+```
+{
+  "displayName": "Pickers",
+  "isActive": true,
+  "code": "Pickers",
+  "userIds": [
+    "c5d0c76b-80c4-481c-be50-923cd8d680a1",
+    "2a4296b3-a28a-44ba-bc66-0274b9b95851"
+  ]
+}
+```
+
 ## Example
 
 Here’s an example to help you understand how to assign schedule group codes to enable open shifts across locations.
@@ -75,7 +89,7 @@ In this example:
 - Bellevue, Redmond, and Seattle are "sister" locations that are on the same level of the hierarchy. They share the parent node, West.  
 - The schedule groups in Shifts at these locations are based on job types: Pickers, Runners, Stockers, Inventory specialists.
 
-Contoso wants to enable open shifts across locations for Pickers in the Bellevue and Redmond stores but not in the Seattle store. To do this, the Contoso admin completes the following steps:
+Contoso wants to enable open shifts across locations for Pickers in the Bellevue and Redmond stores but not in the Seattle store. The Contoso admin completes the following steps:
 
 1. Use the [List schedulingGroup](/graph/api/schedule-list-schedulinggroups?view=graph-rest-beta) Graph API to get a list of schedule groups in the Bellevue team and the Redmond team.
 1. Use the [Replace schedulingGroup](/graph/api/schedulinggroup-put?view=graph-rest-beta) Graph API to create and assign the same code to the Pickers schedule group in the Bellevue and Redmond teams.
@@ -88,7 +102,7 @@ Here’s an overview of the user experience. To learn more, see [Use open shifts
 
 Frontline managers can select **Check eligibility** in Shifts settings to check whether this feature is set up for their team. This check verifies requirements are met, including whether schedule groups in their area have matching schedule group codes.  
 
-To enable open shifts they create in the schedule groups on their team to be available to other locations and to allow workers on their team to request open shifts at other locations, frontline managers on *each* team must do the following:
+To enable open shifts that they create in the schedule groups on their team to be available to other locations and to allow workers on their team to request open shifts at other locations, frontline managers on *each* team must do the following in Shifts settings:
 
 1. Turn on the **Allow managers to create shifts that aren’t assigned to anyone. Employees will be able to see and request them.** toggle, if it’s not already on.
 1. Turn on the **Open shifts across locations** toggle. (By default, the toggle is off.)
