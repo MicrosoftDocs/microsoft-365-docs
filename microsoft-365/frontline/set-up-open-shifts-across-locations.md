@@ -63,7 +63,7 @@ Keep the following things in mind:
 
 Here's a sample request for a specific team:
 
-```
+```http
 {
   "displayName": "Pickers",
   "isActive": true,
@@ -89,6 +89,8 @@ In this example:
 - Bellevue, Redmond, and Seattle are "sister" locations that are on the same level of the hierarchy. They share the parent node, West.  
 - The schedule groups in Shifts at these locations are based on job types: Pickers, Runners, Stockers, Inventory specialists.
 
+:::image type="content" source="media/shifts-cross-location-chart.png" alt-text="A chart showing the structure for the Contoso example scenario." lightbox="media/shifts-cross-location-chart.png":::
+
 Contoso wants to enable open shifts across locations for Pickers in the Bellevue and Redmond stores but not in the Seattle store. The Contoso admin completes the following steps:
 
 1. Use the [List schedulingGroup](/graph/api/schedule-list-schedulinggroups?view=graph-rest-beta) Graph API to get a list of schedule groups in the Bellevue team and the Redmond team.
@@ -102,7 +104,9 @@ Here’s an overview of the user experience. To learn more, see [Use open shifts
 
 Frontline managers can select **Check eligibility** in Shifts settings to check whether this feature is set up for their team. This check verifies requirements are met, including whether schedule groups in their area have matching schedule group codes.  
 
-To enable open shifts that they create in the schedule groups on their team to be available to other locations and to allow workers on their team to request open shifts at other locations, frontline managers on *each* team must do the following in Shifts settings:
+:::image type="content" source="media/shifts-cross-location-setting.png" alt-text="Screenshot of the Open shifts section in Shifts settings, showing the Check eligibility button and the toggles." lightbox=source="media/shifts-cross-location-setting.png":::
+
+To enable open shifts they create in the schedule groups on their team to be available to other locations and to allow workers on their team to request open shifts at other locations, frontline managers on *each* team must do the following in Shifts settings:
 
 1. Turn on the **Allow managers to create shifts that aren’t assigned to anyone. Employees will be able to see and request them.** toggle, if it’s not already on.
 1. Turn on the **Open shifts across locations** toggle. (By default, the toggle is off.)
