@@ -104,7 +104,7 @@ Here’s an overview of the user experience. To learn more, see [Use open shifts
 
 Frontline managers can select **Check eligibility** in Shifts settings to check whether this feature is set up for their team. This check verifies requirements are met, including whether schedule groups in their area have matching schedule group codes.  
 
-:::image type="content" source="media/shifts-cross-location-setting.png" alt-text="Screenshot of the Open shifts section in Shifts settings, showing the Check eligibility button and the toggles." lightbox=source="media/shifts-cross-location-setting.png":::
+:::image type="content" source="media/shifts-cross-location-setting.png" alt-text="Screenshot of the Open shifts section in Shifts settings, showing the Check eligibility button and the toggles." lightbox="media/shifts-cross-location-setting.png":::
 
 To enable open shifts they create in the schedule groups on their team to be available to other locations and to allow workers on their team to request open shifts at other locations, frontline managers on *each* team must do the following in Shifts settings:
 
