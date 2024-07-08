@@ -46,7 +46,7 @@ After you've got Basic Mobility and Security set up, here are some ways you can 
 
 |To do this|Do this|
 |---|---|
-|Wipe a device|From the Active Device list, check the box beside the **Device Name**, then **Factory reset** to delete all information or **Remove company data** to delete only organizational information on the device. For more info, see [Wipe a mobile device in Basic Mobility and Security](wipe-mobile-device.md).|
+|Wipe a device|From the Active Device list, check the box next to **Device Name**, then **Factory reset** to delete all information or **Remove company data** to delete only organizational information on the device. For more info, see [Wipe a mobile device in Basic Mobility and Security](wipe-mobile-device.md).|
 |Block unsupported devices from accessing Exchange email using Exchange ActiveSync|In the Device Management panel, select **Block**.|
 |Set up device policies like password requirements and security settings|In the Device Management panel, select **Device security policies** > **Add +**. For more info, see [Create device security policies in Basic Mobility and Security](create-device-security-policies.md).|
 |View list of blocked devices|In the Device Management panel, under **Select a view** select **Blocked**.|
