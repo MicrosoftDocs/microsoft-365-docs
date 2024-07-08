@@ -58,7 +58,7 @@ By default, structured and default document processing is turned on for librarie
     b. To restrict the sites where users can create models, select **No SharePoint libraries** or **Libraries in selected SharePoint sites** and follow the instructions to either select the sites or upload a CSV listing a maximum of 100 sites. Be sure to add your content center site if you want it to be included. You can then manage site access permissions for the sites you selected.
 
     > [!NOTE]
-    > You must be a member of the site to include it in the CSV file.
+    > You must be a member of any site you want to include in the CSV file.
 
     c. Select **Save**.
 
