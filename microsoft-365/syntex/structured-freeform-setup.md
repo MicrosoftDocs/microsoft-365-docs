@@ -50,7 +50,7 @@ By default, structured and default document processing is turned on for librarie
 
 4. On the Syntex page, under **Document & image services**, select **Structured and freeform document processing**.
 
-4. On the **Structured and freeform document processing** panel:
+5. On the **Structured and freeform document processing** panel:
 
     a. Choose which site or sites this service should be enabled for.
 
