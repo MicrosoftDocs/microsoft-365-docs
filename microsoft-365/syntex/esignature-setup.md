@@ -42,15 +42,17 @@ You must be a [SharePoint Administrator](/entra/identity/role-based-access-contr
 
 ## Set up SharePoint eSignature
 
-1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>, and then select **Use content AI with Microsoft Syntex**.
+1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>.
 
-2. On the **Use content AI with Microsoft Syntex** page, select **Manage Microsoft Syntex**.
+2. Under **Files and content**, select **Automate content processes with Syntex**.
 
-3. On the **Manage Microsoft Syntex** page, select **eSignature**.
+3. On the **Automate content processes with Syntex** page, select **Go to Syntex settings**.
 
-4. For existing customers, read the [terms of service](/legal/microsoft-365/esignature-terms-of-service), and then select **Turn on** to enable the service.
+4. On the Syntex page, under **Document & image services**, select **eSignature**.
 
-5. For new Syntex customers, the SharePoint eSignature service is turned on once you enter your billing information and accept the [terms of service](/legal/microsoft-365/esignature-terms-of-service). On the **eSignature** page:
+5. For existing customers, read the [terms of service](/legal/microsoft-365/esignature-terms-of-service), and then select **Turn on** to enable the service.
+
+6. For new Syntex customers, the SharePoint eSignature service is turned on once you enter your billing information and accept the [terms of service](/legal/microsoft-365/esignature-terms-of-service). On the **eSignature** page:
 
    - To turn off the service, select **Turn off**.
    - To manage which sites the service is available, see [Manage sites](#manage-sites).
