@@ -1,7 +1,7 @@
 ---
-ms.date: 07/17/2023
+ms.date: 01/01/2024
 title: Frequently asked questions about Topics
-ms.author: cjtan
+ms.author: daisyfeller
 author: daisyfell
 manager: elizapo
 audience: admin
@@ -14,8 +14,7 @@ ms.collection:
   - essentials-security
   - essentials-privacy
   - essentials-compliance
-ms.service: viva 
-ms.subservice: viva-topics 
+ms.service: viva-topics 
 search.appverid:
 - MET150  
 localization_priority: Normal
@@ -44,7 +43,7 @@ The topics and metadata are updated incrementally as the changes are received in
 
 ### How does Topics work when discovering new topics?
 
-Topics builds an index similar to search, and relies on the SharePoint Online search crawler to keep the index up to date. The search crawler detects changes in SharePoint Online, performs basic parsing of various document formats; examples of this include files with the extensions: aspx, doc, docx, htm, html, mht, msg, one, pdf, ppt, pptx, pub, txt, xls, xlsx, visio. This list is subject to change as we learn more about what files are important to customers to include. Topics currently doesn't index image, video or audio file types. The file name, title, subject, author, last saved person, create date and its recent activities all play a role in contributing to the information used to discover topics. To inform suggestions for the topic description, people and resources, information from people and collaboration insights in the Microsoft Cloud that are available through [Microsoft Graph](/graph/overview) are used. Topics observes existing content security features in Microsoft 365.
+Topics builds an index similar to search, and relies on the SharePoint search crawler to keep the index up to date. The search crawler detects changes in SharePoint, performs basic parsing of various document formats; examples of this include files with the extensions: aspx, doc, docx, htm, html, mht, msg, one, pdf, ppt, pptx, pub, txt, xls, xlsx, visio. This list is subject to change as we learn more about what files are important to customers to include. Topics currently doesn't index image, video or audio file types. The file name, title, subject, author, last saved person, create date and its recent activities all play a role in contributing to the information used to discover topics. To inform suggestions for the topic description, people and resources, information from people and collaboration insights in the Microsoft Cloud that are available through [Microsoft Graph](/graph/overview) are used. Topics observes existing content security features in Microsoft 365.
 
 Topics listens for changes in these documents, processing them for changes to the topics it has discovered. The main difference between Topics and search is that Topics builds a knowledge graph, not a full-text search index, making it possible to execute queries such as:
 
@@ -71,7 +70,7 @@ Topics index metadata and state are kept as long as the underlying content is pr
 
 ### Will data be decrypted or still be in encrypted form?
 
-All the data is kept within the Microsoft 365 compliance boundary, which is encrypted at rest and in transit. The content is decrypted when being processed. When the data is written to storage, it will be encrypted according to the tenant configuration.
+All the data is kept within the Microsoft Purview boundary, which is encrypted at rest and in transit. The content is decrypted when being processed. When the data is written to storage, it will be encrypted according to the tenant configuration.
 
 ### How does Topics protect security and compliance of content?
 

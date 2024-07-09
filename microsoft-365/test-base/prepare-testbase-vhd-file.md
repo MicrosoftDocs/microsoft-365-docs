@@ -17,6 +17,8 @@ f1.keywords: NOCSH
 ---
 # How to prepare a Windows VHD for Test Base
 
+[!INCLUDE [test-base-deprecation](./includes/test-base-deprecation.md)]
+
 Before you upload a Windows virtual machine (VM) from on-premises to Test Base, you need to prepare the virtual hard disk (VHD) first.
 Test Base only supports generation 2 VMs that use the VHD file format and have a fixed-size disk.
 The maximum size for the OS VHD on a generation 2 VM is 128 GiB on Test Base.

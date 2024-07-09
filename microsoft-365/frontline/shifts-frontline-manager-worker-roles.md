@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: high
 ms.collection: 
-  - M365-collaboration
-  - m365-frontline
-  - teams-1p-app-admin
-  - highpri
-  - microsoftcloud-healthcare
-  - microsoftcloud-retail
+- M365-collaboration
+- m365-frontline
+- teams-1p-app-admin
+- highpri
+- microsoftcloud-healthcare
+- microsoftcloud-retail
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers

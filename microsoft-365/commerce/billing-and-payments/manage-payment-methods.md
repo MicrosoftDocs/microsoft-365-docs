@@ -9,6 +9,7 @@ ms.reviewer: lishepar, ramagane
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-management
 ms.localizationpriority: high
 ms.collection: 
 - Tier1
@@ -23,6 +24,7 @@ ms.custom:
 - AdminTemplateSet
 - adminvideo
 - business_assist
+- admindeeplinkMAC
 search.appverid: MET150
 description: "Learn how to manage your payment methods for Microsoft business products or services in the Microsoft 365 admin center."
 ms.date: 02/16/2024
@@ -65,6 +67,14 @@ If you have an MOSA billing account type, you can replace the payment method for
 3. On the **Add a payment method** page, enter the information for the new payment method, then select **Save**.
 4. To use the new payment method to pay for all subscriptions currently paid for with another payment method, select **Replace an existing payment method**.
 5. Select the payment method you want to replace, then select **Replace**.
+
+## Watch: Update your payment method
+
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/p/?linkid=2198207).
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AVxy]
+
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
 ## Update payment method details
 

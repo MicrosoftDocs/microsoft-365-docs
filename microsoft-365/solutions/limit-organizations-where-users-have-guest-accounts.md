@@ -1,7 +1,7 @@
 ---
 title: "Limit organizations where users can have guest accounts"
-ms.author: mikeplum
-author: MikePlumleyMSFT
+ms.author: jtremper
+author: jacktremper
 manager: pamgreen
 ms.date: 12/11/2023
 audience: ITPro
@@ -35,7 +35,7 @@ If you only want your users to participate as guests with specific organizations
 Because participating as guests is enabled by default, limiting guest participation to certain organizations requires blocking outbound B2B collaboration by default.
 
 To block outbound B2B collaboration by default
-1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) using a Global Administrator or Security Administrator account.
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) using a Security Administrator account.
 1. Expand **External Identities**, and then select **Cross-tenant access settings**.
 1. Select the **Default settings** tab.
 1. Under **Outbound access settings**, select **Edit outbound defaults**.

@@ -1,10 +1,10 @@
 ---
 title: "Microsoft 365 group expiration policy"
 ms.reviewer: rahulnayak
-ms.date: 08/12/2020
+ms.date: 06/25/2024
 f1.keywords: NOCSH
-ms.author: mikeplum
-author: MikePlumleyMSFT
+ms.author: jtremper
+author: jacktremper
 manager: pamgreen
 audience: Admin
 ms.topic: article
@@ -52,7 +52,11 @@ It's important to know that expiration is turned off by default. Administrators 
 |Role|What they can do|
 |---------|---------|
 |Office 365 global admin (in Azure, the Company administrator), User administrator|Create, read, update, or delete the Microsoft 365 groups expiration policy settings.|
+|Groups Administrator|Members of this role can create/manage groups, create/manage groups settings like naming and expiration policies, and view groups activity and audit reports.|
 |User|Renew or [restore](/azure/active-directory/users-groups-roles/groups-restore-deleted) a Microsoft 365 group that they own|
+
+> [!IMPORTANT]
+> Microsoft recommends that you use roles with the fewest permissions. This helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
 
 ## How to set the expiration policy
 

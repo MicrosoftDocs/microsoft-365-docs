@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 08/30/2023
+ms.date: 06/21/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -92,10 +92,23 @@ As an organization you may wish to manage the download of Office add-ins from th
 
 2. Select **User owned apps and services**.
     
-3. Check or clear the option to allow or prevent users access the Office store.
+3. Check or clear the option to allow or prevent users to access the Office store.
+
+Options available in non-educational tenants:
     
-    ![Let user access office store settings](../../media/user-owned-apps-and-services.png)
+   ![Let user access office store settings](../../media/user-owned-apps-and-services.png)
    
+Options available in educational tenants:
+
+   ![Let user access office store settings for EDU](../../media/user-owned-apps-and-services-edu.png)
+
+The user’s license information is used to define whether a user is a faculty/staff or a student along with the Age Group property to check whether the student is an adult or not. A user who does not have an educational license is included in the <b>Faculty, staff and other non-student users</b> user group.  
+
+> [!NOTE]
+> For more information see:  
+>- [Learn how to review the user's license type and assign or unassign licenses as required](assign-licenses-to-users.md)
+>- [Understand how to configure the Age Group property in the Microsoft Encarta admin center](/entra/fundamentals/how-to-manage-user-profile-info)
+
 This will control all users' ability to acquire the following add-ins from the store.
 
 - Add-ins for Word, Excel, and PowerPoint 2016:
@@ -119,10 +132,6 @@ Support for turning on/off the Office Store is available in the following versio
     
 - The web - Currently available.
     
-
-> [!NOTE] 
-> Add-ins such as Visio Data Visualizer, Bing Maps, and People Graph will still show up in the ribbon, even if an admin has disabled the Store. To remove these links, administrators must disable the Store through Group Policy Object (GPO).
-  
 To prevent a user from signing in with a Microsoft account, you can restrict logon to use only the organizational account. For more information, see [Identity, authentication, and authorization in Office 2016](/DeployOffice/security/identity-authentication-and-authorization-in-office).  
 
 > [!NOTE] 

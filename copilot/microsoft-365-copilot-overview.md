@@ -7,7 +7,7 @@ author: camillepack
 manager: scotv
 ms.date: 09/20/2023
 audience: Admin
-ms.topic: article
+ms.topic: overview
 ms.service: microsoft-365-copilot
 ms.localizationpriority: medium
 ms.collection: 
@@ -17,13 +17,14 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - m365copilot
+- magic-ai-copilot
 - essentials-overview
 description: "Learn about how Microsoft Copilot for Microsoft 365 works."
 ---
 
 # Microsoft Copilot for Microsoft 365 overview
 
-[Microsoft Copilot for Microsoft 365](/office365/servicedescriptions/office-365-platform-service-description/microsoft-365-copilot) is an AI-powered productivity tool that coordinates large language models (LLMs), content in Microsoft Graph, and the Microsoft 365 apps that you use every day, such as Word, Excel, PowerPoint, Outlook, Teams, and others. This integration provides real-time intelligent assistance, enabling users to enhance their creativity, productivity, and skills.
+[Microsoft Copilot for Microsoft 365](/office365/servicedescriptions/office-365-platform-service-description/microsoft-365-copilot) is an AI-powered productivity tool that coordinates large language models (LLMs), content in Microsoft Graph, and the Microsoft 365 productivity apps that you use every day, such as Word, Excel, PowerPoint, Outlook, Teams, and others. This integration provides real-time intelligent assistance, enabling users to enhance their creativity, productivity, and skills.
 
 Copilot for Microsoft 365 uses a combination of LLMs, a type of artificial intelligence (AI) algorithm that uses deep learning techniques and vast data sets to understand, summarize, predict, and generate content. These LLMs include pre-trained models, such as Generative Pre-Trained Transformers (GPT) like GPT-4, designed to excel in these tasks.
 
@@ -35,9 +36,9 @@ Copilot for Microsoft 365 uses a combination of LLMs, a type of artificial intel
 
 - Content in Microsoft Graph, such as emails, chats, and documents that you have permission to access.
 
-- The Microsoft 365 apps that you use every day, such as Word and PowerPoint.
+- The Microsoft 365 productivity apps that you use every day, such as Word and PowerPoint.
 
-Microsoft 365 apps (such as Word, Excel, PowerPoint, Outlook, Teams, loop, and more) operate with Copilot to support users in the context of their work. Some of these features are detailed in the following table:
+Microsoft 365 productivity apps (such as Word, Excel, PowerPoint, Outlook, Teams, loop, and more) operate with Copilot to support users in the context of their work. Some of these features are detailed in the following table:
 
 | Microsoft 365 App | Feature | Description |
 |-----------------------|--------------------------------|---------------------------------------------------------|
@@ -46,6 +47,7 @@ Microsoft 365 apps (such as Word, Excel, PowerPoint, Outlook, Teams, loop, and m
 | PowerPoint            | Draft with Copilot             | Create a new presentation from a prompt or Word file, leveraging enterprise templates. PowerPoint files can also be used for grounding data |
 |                       | Chat                           | Summary and Q&A |
 |                       | Light commanding               | Add slides, pictures, or make deck-wide formatting changes. |
+| Excel                 | Draft with Copilot             | Get suggestions for formulas, chart types, and insights about data in your spreadsheet. |
 | Loop                  | Collaborative content creation | Create content that can be collaboratively improved through direct editing or refinement by Copilot. |
 | Outlook               | Coaching tips                  | Get coaching tips and suggestions on clarity, sentiment, and tone, along with an overall message assessment and suggestions for improvement. |
 |                       | Summarize                      | Summarize an email thread to help the user quickly understand the discussion. |
@@ -56,6 +58,7 @@ Microsoft 365 apps (such as Word, Excel, PowerPoint, Outlook, Teams, loop, and m
 |                       | Calls                  | Copilot in Teams Phone uses the power of AI to empower you to work more flexibly and intelligently, automating important administrative tasks of a call, such as capturing key points, task owners, and next steps, so you can stay focused on the discussion. Copilot in Teams Phone supports both voice over Internet Protocol (VoIP) and public switched telephone network (PSTN) calls.  |
 |                       | Whiteboard                     | Makes meetings and brainstorm sessions more creative and effective. Use natural language to ask Copilot to generate ideas, organize ideas into themes, create designs that bring ideas to life and summarize whiteboard content. |
 | OneNote               | Draft with Copilot             | Use prompts to draft plans, generate ideas, create lists, and organize information to help you easily find what you need.  |
+| Forms               | Draft with Copilot             | Use prompts to draft questions and suggestions that help you create surveys, polls, and other forms with ease. |
 
 To learn more about what's possible with Microsoft 365 Apps and Copilot, check out [Microsoft 365 AI help and learning](https://support.microsoft.com/copilot).
 
@@ -85,6 +88,8 @@ Here's an explanation of how Microsoft Copilot for Microsoft 365 works:
 
 - Copilot returns the response to the app, where the user can review and assess the response.
 
+We refer to the user’s prompt and Copilot’s response to that prompt as the “content of interactions” and the record of those interactions is the user’s Copilot interaction history.
+
 Microsoft Copilot for Microsoft 365 iteratively processes and orchestrates these sophisticated services to help produce results that are relevant to your organization because they're contextually based on your organizational data.
 
 ## Semantic Index
@@ -97,16 +102,66 @@ To learn more, see [Semantic Index for Copilot](/MicrosoftSearch/semantic-index-
 
 Copilot for Microsoft 365 is available as an add-on plan with one of the following licensing prerequisites:
 
-- Microsoft 365 E5
-- Microsoft 365 E3
-- Office 365 E3  
-- Office 365 E5
-- Microsoft 365 A5 for faculty
-- Microsoft 365 A3 for faculty
-- Office 365 A5 for faculty
-- Office 365 A3 for faculty
-- Microsoft 365 Business Standard
-- Microsoft 365 Business Premium
+**For Business and Enterprise:**
+
+- **Microsoft 365 plans:**
+  - Microsoft 365 E5
+  - Microsoft 365 E3
+  - Microsoft 365 F1
+  - Microsoft 365 F3
+  - Microsoft 365 Business Basic
+  - Microsoft 365 Business Premium
+  - Microsoft 365 Business Standard
+  - Microsoft 365 Apps for business
+  - Microsoft 365 Apps for enterprise
+
+- **Office 365 plans:**
+  - Office 365 E5
+  - Office 365 E3
+  - Office 365 E1
+  - Office 365 F3
+
+- **Microsoft Teams plans:**
+  - Microsoft Teams Essentials
+  - Microsoft Teams Enterprise
+  - Microsoft Teams EEA (European Economic Area)
+
+- **Exchange plans:**
+  - Exchange Kiosk
+  - Exchange Plan 1
+  - Exchange Plan 2
+
+- **SharePoint plans:**
+  - SharePoint Plan 1
+  - SharePoint Plan 2
+
+- **OneDrive for Business plans:**
+  - OneDrive for Business Plan 1
+  - OneDrive for Business Plan 2
+
+- **Planner and Project plans:**
+  - Microsoft Planner Plan 1 (formerly Project Plan 1)
+  - Microsoft Project Plan 3
+  - Microsoft Project Plan 5
+  - Project Online Essentials
+
+- **Visio plans:**
+  - Visio Plan 1
+  - Visio Plan 2
+
+- **Other plans:**
+  - Microsoft ClipChamp
+
+**For Education Faculty and Higher Education Students Aged 18+:**
+
+- Microsoft 365 A1*
+- Microsoft 365 A3*
+- Microsoft 365 A5*
+- Office 365 A1*
+- Office 365 A3*
+- Office 365 A5*
+
+*Available via Enrollment for Education Solutions (EES) or Cloud Solution Provider (CSP) only.
 
 You can use the [Microsoft Copilot for Microsoft 365 setup guide](https://admin.microsoft.com/Adminportal/Home?Q=learndocs#/modernonboarding/microsoft365copilotsetupguide) in the Microsoft 365 admin center to assign the required licenses to users. For more information, see [Assign licenses to users in the Microsoft 365 admin center](/microsoft-365/admin/manage/assign-licenses-to-users) and [Microsoft Copilot for Microsoft 365 requirements](microsoft-365-copilot-requirements.md).
 

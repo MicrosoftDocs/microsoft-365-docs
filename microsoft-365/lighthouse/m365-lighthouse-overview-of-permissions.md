@@ -5,9 +5,9 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: taylorau
-ms.date: 06/23/2023
+ms.date: 06/10/2024
 audience: Admin
-ms.topic: article
+ms.topic: concept-article
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
@@ -31,6 +31,17 @@ Microsoft 365 Lighthouse permissions are primarily managed by the following:
 - Granular Delegated Admin Privileges (GDAP) in the customer tenant
 
 To use Lighthouse, you need a combination of roles assigned via RBAC and GDAP.
+
+## Global Administrator permissions in the partner tenant
+
+Partner tenant users assigned the Global Administrator role in Microsoft Entra ID can do the following:
+
+- Sign up for Lighthouse in the Microsoft 365 admin center. 
+- Activate and inactive a tenant. 
+- Create, update, and delete tags.
+- Assign tags to and remove tags from a customer tenant. 
+- Review audit logs. 
+- Create, edit, and view alert rules.
 
 ## Managing Lighthouse RBAC permissions in the partner tenant
 
@@ -79,6 +90,14 @@ For more information about setting up a GDAP relationship with a customer tenant
 For more information about least-privileged roles by task, see [Least-privileged roles - Partner Center](/partner-center/gdap-least-privileged-roles-by-task) and [Least privileged roles by task in Microsoft Entra ID](/azure/active-directory/roles/delegate-by-task).  
 
 For more information about GDAP or Delegated Admin Privileges (DAP) deprecation, see [GDAP frequently asked questions - Partner Center](/partner-center/gdap-faq), [Delegated administration privileges (DAP) FAQ - Partner Center](/partner-center/dap-faq), or search the [Partner Center announcements](/partner-center/announcements/) for dates and timelines.
+
+The following tasks in Lighthouse have specific Microsoft Entra role requirements:
+
+- To create and manage service requests, Lighthouse users must have at least one Microsoft Entra role assigned to them with the following property set: **microsoft.office365.supportTickets/allEntities/allTasks**. 
+
+- To monitor service health, Lighthouse users must have at least one Microsoft Entra role assigned to them with the following property set: **microsoft.office365.serviceHealth/allEntities/allTasks**. 
+
+For a complete list of Microsoft Entra roles, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference). For information on how to assign roles, see [Assign Microsoft Entra roles to users](/azure/active-directory/roles/manage-roles-portal).
 
 ## Related content
 

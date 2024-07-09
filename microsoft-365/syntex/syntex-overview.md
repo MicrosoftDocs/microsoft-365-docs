@@ -1,10 +1,10 @@
 ---
 title: Overview of Microsoft Syntex
 ms.author: chucked
-author: chuckedmonson
+author: lkueter
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 09/13/2023
+ms.date: 03/25/2024
 audience: admin
 ms.topic: overview
 ms.custom: intro-overview
@@ -20,11 +20,11 @@ description: Learn about the capabilities, services, and features in Microsoft S
 
 # Overview of Microsoft Syntex
 
-</br>
+<!---</br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RW15yuU] 
 
-</br>
+</br>--->
 
 Microsoft Syntex is a content understanding, processing, and compliance service that uses intelligent document processing, content artificial intelligence (AI), and advanced machine learning to automatically and thoughtfully find, organize, and classify documents in your SharePoint libraries, Microsoft Teams, OneDrive for Business, and Exchange.
 
@@ -49,11 +49,24 @@ You can dive deeper into your content to truly understand it, and you can turn t
 
 ## Syntex services
 
+### Autofill columns
+
+:::row:::
+   :::column span="":::
+      ![Image of generic autofill icon.](../media/content-understanding/autofill-image.png) 
+   :::column-end:::
+   :::column span="3":::
+      Autofill columns automatically extract, summarize, or generate content from files uploaded to a SharePoint document library. Using large language models (LLMs), designated columns can save metadata automatically, streamlining the process of managing files and their associated information.
+   :::column-end:::
+:::row-end:::
+
+[Learn more about autofill columns in Microsoft Syntex.](autofill-overview.md)
+
 ### Content assembly
 
 :::row:::
    :::column span="3":::
-      With Syntex, you can use content assembly to automatically generate standard repetitive business documents, such as contracts, statements of work, service agreements, letters of consent, and correspondence. You can do all these tasks quicker, more consistently, and with fewer errors in Syntex.
+      Use content assembly to automatically generate standard repetitive business documents, such as contracts, statements of work, service agreements, letters of consent, and correspondence. You can do all these tasks quicker, more consistently, and with fewer errors in Syntex.
    :::column-end:::
    :::column span="":::
       ![Image of generic document icon.](../media/content-understanding/document-assembly-image.png)
@@ -73,7 +86,7 @@ You create *modern templates* based on the business documents you use most. You 
       ![Icon for Receipts model.](../media/content-understanding/trained-receipts-model.png) 
    :::column-end:::
    :::column span="3":::
-      Use a [prebuilt model](prebuilt-overview.md) to save time processing and extracting information from [contracts](prebuilt-model-contract.md), [invoices](prebuilt-model-invoice.md), or [receipts](prebuilt-model-receipt.md). Prebuilt models are pretrained to recognize common business documents and the structured information in the documents.
+      Use a [prebuilt model](prebuilt-overview.md) to save time processing and extracting information from [contracts](prebuilt-model-contract.md), [invoices](prebuilt-model-invoice.md), and [receipts](prebuilt-model-receipt.md), and detecting and extracting [sensitive information](prebuilt-model-sensitive-info.md) from documents. Prebuilt models are pretrained to recognize common business documents and the structured information in the documents.
    :::column-end:::
 :::row-end:::
 
@@ -88,7 +101,7 @@ Instead of having to create a new document processing model from scratch, you ca
       ![Icon for structured document processing model.](../media/content-understanding/custom-extract-by-layout.png)
    :::column-end:::
    :::column span="3":::
-      Use a [structured model](form-processing-overview.md) to automatically identify field and table values. It works best for structured or semi-structured documents, such as forms and invoices. Use a [freeform model](freeform-document-processing-overview.md) to automatically extract information from unstructured and freeform documents, such as letters and contracts where the information can appear anywhere in the document.
+      Use a [structured model](form-processing-overview.md) to automatically identify field and table values. It works best for structured or semi-structured documents, such as forms and invoices. Use a [freeform model](form-processing-overview.md) to automatically extract information from unstructured and freeform documents, such as letters and contracts where the information can appear anywhere in the document.
    :::column-end:::
 :::row-end:::
 
@@ -175,7 +188,7 @@ Both structured and freeform models use Microsoft Power Apps AI Builder to creat
 
 [Learn more about using the OCR service in Microsoft Syntex.](ocr-overview.md)
 
-### Microsoft 365 Archive (Preview)
+### Microsoft 365 Archive
 
 :::row:::
    :::column span="":::

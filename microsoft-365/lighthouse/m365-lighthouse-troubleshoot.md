@@ -48,7 +48,7 @@ This article describes error messages and problems that you might encounter whil
 
 ## Customer tenant onboarding  
 
-### Customer tenants show a status other than "Active" in the tenant list  
+### Customer tenants show a status other than "Managed" in the tenant list  
 
 **Cause:** Your customer tenants don't meet the following criteria:
 
@@ -63,11 +63,12 @@ Either granular delegated admin privileges (GDAP) plus an indirect reseller rela
 
 | Status | Description | Resolution |
 |--|--|--|
-| Inactive | Your organization has excluded this customer tenant from Lighthouse management. | You need to reactivate the tenant. On the **Tenants** page, select the three dots (more actions) next to the tenant that you want to reactivate, and then select **Activate tenant**. It can take 24–48 hours for initial customer data to appear in Lighthouse. |
 | Limited | This customer tenant has access to only a limited set of experiences in Lighthouse, including GDAP setup and management, user search, user details, tenant tagging, and service health. | Select the tenant name to see a detailed status of Lighthouse management requirements. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md). |
-| In process | An error occurred during the onboarding process for this customer tenant and we're working on a fix. | If this error persists for more than 48 hours, please contact Support. |
+| Removed by partner | Your organization has excluded this customer tenant from Lighthouse management. | You need to reactivate the tenant for management by Lighthouse. On the **Tenants** page, select the three dots (more actions) next to the tenant that you want to manage, and then select **Manage tenant**. It can take 24–48 hours for initial customer data to appear in Lighthouse. |
+| Removed by customer | The customer chose to disallow the use of Microsoft 365 Lighthouse to manage their tenant. | An admin in the customer tenant needs to go to **Org settings** in the Microsoft 365 admin center, select **Microsoft 365 Lighthouse** on the **Services** tab, and then select the option to allow the use of Microsoft 365 Lighthouse customer management experiences in their tenant. |
+| Error | An error occurred during the onboarding process for this customer tenant and we're working on a fix. | If this error persists for more than 48 hours, please contact Support. |
 
-If you confirmed that your customer tenant meets the onboarding criteria and they're still not showing as **Active** in Lighthouse, contact Support. For more information, see [Get help and support for Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
+If you confirmed that your customer tenant meets the onboarding criteria and they're still not showing as **Managed** in Lighthouse, contact Support. For more information, see [Get help and support for Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
 
 ## Access and permissions
 
@@ -177,7 +178,7 @@ If data is still not appearing on the Device compliance and Threat management pa
 
 **Cause 2:** Your organization has multiple partner tenants and you attempted to access Lighthouse using credentials for a partner tenant that hasn't yet deployed Lighthouse.
 
-**Resolution:** Use the same Microsoft Entra credentials that you used to sign in to Partner Center to access Lighthouse. If you're unsure, reach out to a Global Administrator in your partner tenant to confirm which partner tenants have deployed Lighthouse. If needed, have them deploy Lighthouse to the partner tenant that you're trying to use. For more information, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md). 
+**Resolution:** Use the same Microsoft Entra credentials that you used to sign in to Partner Center to access Lighthouse. If you're unsure, reach out to someone in your partner tenant who has the appropriate permissions to confirm which partner tenants have deployed Lighthouse. If needed, have them deploy Lighthouse to the partner tenant that you're trying to use. For more information, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md). 
 
 **Cause 3:** You attempted to access Lighthouse from a partner tenant that isn't qualified to use Lighthouse. At this time, Lighthouse supports only indirect resellers and direct-bill partners.
 

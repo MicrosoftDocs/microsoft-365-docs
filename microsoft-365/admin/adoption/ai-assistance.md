@@ -7,7 +7,7 @@ author: camillepack
 manager: scotv
 ms.date: 11/27/2023
 audience: Admin
-ms.topic: article
+ms.topic: concept-article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 monikerRange: 'o365-worldwide'
@@ -17,7 +17,8 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
-- M365copilot
+- m365copilot
+- magic-ai-copilot
 search.appverid:
 - MET150
 - MOE150
@@ -44,7 +45,7 @@ After people have been active in Copilot at least once in the last 28 days, you'
 
 ## Scoring framework
 
-The AI assistance score for your organization measures at an organizational level whether users are consistently using Copilot capabilities across Microsoft 365 apps within the last 28 days.
+The AI assistance score for your organization measures at an organizational level whether users are consistently using Copilot capabilities across apps in Microsoft 365 within the last 28 days.
 
 Scores aren't provided at the individual user level.
 
@@ -62,7 +63,7 @@ There are two sections of insights: Summarize and Create.
 
 The Summarize section captures all the information and data summarization across meetings and messages, sparing users the labor of sorting it out from notes and complex chat or email threads.
 
-The Create section captures the user actions to get past the roadblock of staring at a blank page by jump-starting their creative process and helping to streamline the tasks of researching, writing, and editing across Microsoft 365 apps with the help of Copilot capabilities.
+The Create section captures the user actions to get past the roadblock of staring at a blank page by jump-starting their creative process and helping to streamline the tasks of researching, writing, and editing across apps in Microsoft 365 with the help of Copilot capabilities.
 
 Each insight captures the number of Copilot-enabled users in your organization performing these actions at least once out of the total number who are enabled to perform in the last 28 days. You can find more details on insights within the following sections.
 
@@ -92,7 +93,15 @@ In this section, you can upload Copilot survey results to have them displayed in
 
 Use this feature to provide your organizational leaders with a centralized location for insights on how users feel about the AI assistance they receive from Copilot.
 
+This feature is only available for Global administrators. Users without this role cannot see it in the Microsoft 365 admin center.
+
 ### Upload survey data
+
+To access the Sentiment survey upload feature in the Microsoft 365 admin center, follow these steps:
+
+1. In the Microsoft 365 admin center, go to **Reports** > **Adoption Score**.
+2. Navigate to AI assistance and select **View details**.
+3. On the AI assistance page, navigate to **Assess Copilot sentiment for your org** and select **Record survey results**.
 
 :::image type="content" source="../../media/as-upload-survey.png" alt-text="Screenshot showing the dashboard to upload survey data for Copilot sentiment" lightbox="../../media/as-upload-survey.png":::
 

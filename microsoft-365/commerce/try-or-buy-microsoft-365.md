@@ -9,6 +9,7 @@ ms.reviewer: drjones, jobailey
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-marketplace
 ms.localizationpriority: medium
 ms.collection: 
 - Tier1
@@ -62,7 +63,7 @@ International credit cards aren't accepted. You can pay for your subscription by
 - Invoice
 - Online payment using Alipay or China UnionPay
 
-Proof of payment is provided in the form of Fapiaos. You can submit your Fapiao request to our [Fapiao system](https://go.microsoft.com/fwlink/p/?LinkId=395314) about three (3) days after you have paid.
+Proof of payment is provided in the form of Fapiaos. You can submit your Fapiao request to our [Fapiao system](https://go.microsoft.com/fwlink/p/?LinkId=395314) about three (3) days after you pay.
 
 ::: moniker-end
 
@@ -93,7 +94,7 @@ Do you need more time to try out the features of Microsoft 365 for business befo
 3. In the **Extend your trial's end date** pane, review the extension information, and, if necessary, select a payment method.
 4. Select **Extend trial**.
 
-**If you have a MOSA billing account type:**
+**If you have an MOSA billing account type:**
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
     - If you're using the **Simplified view**, select **Billing**, then select your trial subscription.
@@ -118,7 +119,7 @@ If you want to buy your subscription before your trial is over, use the followin
 2. On the subscription details page, select **Start a paid subscription now**.
 3. In the **Start a paid subscription now** pane, enter the number of licenses that you want, select a subscription length and billing frequency, then select **Change plan**.
 
-**If you have a MOSA billing account type:**
+**If you have an MOSA billing account type:**
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.
     - If you're using the **Simplified view**, select **Billing**, then select your trial subscription.
@@ -155,7 +156,7 @@ When you add a subscription through the <a href="https://go.microsoft.com/fwlink
 8. If necessary, change the number of licenses that you want to buy when the trial ends.
 9. When you're ready, select **Place order**.
 
-**If you have a MOSA billing account type:**
+**If you have an MOSA billing account type:**
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.
    - If you're using the **Simplified view**, select **Billing**, then select **Add more products**.
@@ -184,6 +185,12 @@ If you want to move all of your users to a different subscription, see [Upgrade 
 
 **If you have an MCA billing account type:**
 
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198013).
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SBE2?autoplay=false]
+
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
+
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.
    - If you're using the **Simplified view**, select **Billing**, then select **Add more products**.
    - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
@@ -193,11 +200,7 @@ If you want to move all of your users to a different subscription, see [Upgrade 
 5. The **Product name** section lists the cost, subscription term, number of licenses, and renewal date for the subscription. To match the renewal date with another subscription paid by the billing profile, select **Select a different renewal date**.
 6. Select **Place order**.
 
-**If you have a MOSA billing account type:**
-
-Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198013).
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SBE2?autoplay=false]
+**If you have an MOSA billing account type:**
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.
    - If you're using the **Simplified view**, select **Billing**, then select **Add more products**.

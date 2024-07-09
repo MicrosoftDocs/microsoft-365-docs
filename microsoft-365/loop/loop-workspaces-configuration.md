@@ -1,17 +1,17 @@
 ---
-ms.date: 08/21/2023
+ms.date: 06/14/2024
 title: "Manage Loop workspaces in SharePoint Embedded"
 ms.reviewer: dancost, tonchan
-ms.author: v-smandalika
-author: v-smandalika
-manager: dansimp
+ms.author: jenz
+author: jenzamora
+manager: jtremper
 recommendations: true
 audience: Admin
 f1.keywords:
 - NOCSH
-ms.service: sharepoint-online
+ms.service: loop
 ms.localizationpriority: medium
-ms.topic: article
+ms.topic: how-to
 ms.collection:
 - Strat_SP_admin
 - Microsoft 365-collaboration
@@ -35,7 +35,7 @@ Just like other Microsoft 365 experiences, Loop also uses core services across S
 
 ### License requirements
 
-Licensing through the new Loop with workspaces service plan covers the creation of new workspaces. If these requirements are not met, users will experience failures in the Loop app; won't receive notifications or signals when they collaborate and update; and encounter failures in other experiences also.
+Licensing through the new Loop with workspaces service plan covers the creation of new workspaces and management of workspace members. The full set of experiences enabled and the specific licenses that include the Loop with workspaces service plan are covered in [Loop access via Microsoft 365 subscriptions](https://support.microsoft.com/office/loop-access-via-microsoft-365-subscriptions-92915461-4b14-49a4-9cd4-d1c259292afa).
 
 ### WebSocket connections
 
@@ -60,7 +60,7 @@ As described in this topic, you can control the ability for users in your enviro
 
 If configured to Disabled, the settings in this article will prevent creation of new Loop files. However, when Disabled, there are still a few places that Loop experiences can appear.
 
-Because Loop app creates files in SharePoint Embedded, files and workspaces that were created before IT admins disable new creation can still appear in places such as Microsoft365.com, the Loop component viewer and editor (loop.microsoft.com), and links to Loop components shared in messages or documents. The files themselves are not removed and access to these files is determined by the permissions set on them. Therefore, someone with edit access to a Loop file can still open it and edit it after you have disabled creation of new Loop files. This would be similar to a txt file or any other file in OneDrive or SharePoint.
+Because Loop app creates files in SharePoint Embedded, files and workspaces that were created before IT admins disable new creation can still appear in places such as Microsoft365.com, the Loop component viewer and editor (loop.microsoft.com), and links to Loop components shared in messages or documents. The files themselves aren't removed and access to these files is determined by the permissions set on them. Therefore, someone with edit access to a Loop file can still open it and edit it after you have disabled creation of new Loop files. This would be similar to a txt file or any other file in OneDrive or SharePoint.
 
 In addition, because there are no separate licensing requirements for the Loop component viewer and editor, only the requirement that users have access to OneDrive, users will still be able to access the Loop component viewer and editor by visiting loop.microsoft.com and via Loop in the All apps view in Microsoft365.com. The presence of the Loop app in the All apps view is dependent on the user having a license to OneDrive; if you wish to prevent users from seeing the Loop app, you can disable their access to OneDrive, or configure a conditional access policy for loop.microsoft.com so that visits to the page fail to load.
 
@@ -72,7 +72,9 @@ You can learn more about [Loop storage](/microsoft-365/loop/loop-compliance-summ
 
 If you're looking for a simple way to turn on or off the creation of content in Loop workspaces in your tenant, do the following:
 
-1. Sign in to the Microsoft 365 admin center as a Global Administrator.
+1. Sign in to the Microsoft 365 admin center as Office Apps Administrator, Security Administrator, or Global Administrator.
+    > [!IMPORTANT]
+    > Microsoft recommends that you use roles with the fewest permissions. This helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
 1. Navigate to [Home > Org settings > Services > Loop](https://admin.microsoft.com/Adminportal/Home#/Settings/Services/:/Settings/L1/Loop).
 1. Choose your desired state for Loop workspaces via the checkbox.
     > [!NOTE]
@@ -89,7 +91,7 @@ The Loop app checks the following Cloud Policy setting to see if workspaces are 
 
 To configure this Cloud Policy setting, perform the following steps:
 
-1. Sign in to https://config.office.com/ with your Microsoft 365 admin credentials.
+1. Sign in to [https://config.office.com](https://config.office.com) with your Microsoft 365 admin credentials.
 1. Select **Customization** from the left pane.
 1. Select **Policy Management**.
 1. Create a new policy configuration or edit an existing one.
@@ -103,12 +105,12 @@ To configure this Cloud Policy setting, perform the following steps:
 1. Reassign priority for any security group, if necessary. (If two or more policy configurations are applicable to the same set of users, the one with the higher priority is applied.)
 
 In case you create a new policy configuration or change the configuration for an existing policy, there will be a delay in the change being reflected:
-- If there were existing policy configurations prior to the change, then it takes 90 mins for the change to be reflected.
-- If there were no policy configurations prior to the change, then it takes 24 hours for the change to be reflected.
+
+- If there were existing policy configurations before the change, then it takes 90 mins for the change to be reflected.
+- If there were no policy configurations before the change, then it takes 24 hours for the change to be reflected.
 
 > [!NOTE]
->  In order to target only a group of users in your organization to be able to create and view Loop content in workspaces, create a second group that targets All users, set this group to Disabled, and make it a lower priority than your target group that is set to Enabled. This will override the default Not Configured state to Disabled for all users but your target group.
-
+> In order to target only a group of users in your organization to be able to create and view Loop content in workspaces, create a second group that targets All users, set this group to Disabled, and make it a lower priority than your target group that is set to Enabled. This will override the default Not Configured state to Disabled for all users but your target group.
 
 ## Related topics
 

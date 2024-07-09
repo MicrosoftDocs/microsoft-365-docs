@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 05/03/2023
+ms.date: 06/05/2024
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
@@ -16,6 +16,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+- must-keep
 search.appverid:
 - MET150
 - MOE150
@@ -56,14 +57,14 @@ And if you'd like to know what's new with other Microsoft cloud services:
 
 You now have an option to sign up for email notifications about Windows known issues and informational updates. Notifications include changes in issue status, new workarounds, and issue resolutions. To subscribe to notifications:
 
-1. Go to the [Windows release health page](https://admin.microsoft.com/Adminportal/Home?#/windowsreleasehealth).
-1. Select **Preferences** > **Email**, then select **Send me email notifications about Windows release health**.
-1. Specify the following information:
+1. Go to the <a href="https://admin.cloud.microsoft/?#/windowsreleasehealth" target="_blank">Windows release health page</a>.
+2. Select **Preferences** > **Email**, then select **Send me email notifications about Windows release health**.
+3. Specify the following information:
     - Email address for the notifications
         - Each admin account can specify up to two email addresses under their email preferences
     - Windows versions to be notified about
        - When a single known issue affects multiple versions of Windows, you'll receive only one email notification, even if you've selected notifications for multiple versions. Duplicate emails won't be sent.
-1. Select **Save** when you're finished specifying email addresses and Windows versions. It may take up to 8 hours for these changes to take effect.
+4. Select **Save** when you're finished specifying email addresses and Windows versions. It might take up to 8 hours for these changes to take effect.
 
 For more information, see [How to check Windows release health](/windows/deployment/update/check-release-health).
 
@@ -83,7 +84,7 @@ Use this data to decide which help articles and training resources to share with
 
 There are a couple of ways to get the Experience insights dashboard page:
 
-- If you’re a member of the Global admin or Global reader roles, when you log in to the Microsoft 365 admin center, you’ll see a one-time prompt to go to the Experience insights (preview) dashboard. You can access it at any time by selecting Experience insights (preview) from the admin home page.
+- If you’re a member of the Global admin or Global reader roles, when you sign in to the Microsoft 365 admin center, you’ll see a one-time prompt to go to the Experience insights (preview) dashboard. You can access it at any time by selecting Experience insights (preview) from the admin home page.
 
 - If you’re a member of the Reports reader role or the User Experience success manager roles, once you sign into the admin center, you’ll automatically go to the Experience insights (preview) dashboard page. You can switch back to the admin center Dashboard view by selecting that option in the top right.
 
@@ -95,7 +96,7 @@ For more information, check out [Microsoft 365 Experience insights dashboard](mi
 
 ### Advanced deployment guides for Microsoft 365
 
-To help you easily find guides for the services you’re deploying, we’ve updated the search tools, recommendations, and layouts for the [Advanced deployment guides & assistance](https://admin.microsoft.com/Adminportal/Home?Q=TechCommunity#/SetupGuidance) page in the Microsoft 365 admin center and at [setup.microsoft.com](https://setup.microsoft.com/).
+To help you easily find guides for the services you’re deploying, we’ve updated the search tools, recommendations, and layouts for the <a href="https://admin.cloud.microsoft/?#/setupguidance" target="_blank">Advanced deployment guides & assistance</a> page in the Microsoft 365 admin center and at <a href="https://setup.microsoft.com/" target="_blank">setup.microsoft.com</a>.
 
 In this update, you can now:
 
@@ -105,9 +106,9 @@ In this update, you can now:
 
 :::image type="content" source="../media/advanced-deployment-guides.png" alt-text="Advanced deployment guides page in the Microsoft 365 admin center" lightbox="../media/advanced-deployment-guides.png":::
 
-To get to Advanced deployment guides, sign in the Microsoft 365 admin center and go to **Setup** > **Advanced deployment guides & assistance**.
+To get to Advanced deployment guides, sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> and go to **Setup** > **Advanced deployment guides & assistance**.
 
-You can now find all the same guides from the Microsoft 365 admin center on [setup.microsoft.com](https://setup.microsoft.com/). Key updates to this site include:  
+You can now find all the same guides from the Microsoft 365 admin center on <a href="https://setup.microsoft.com/" target="_blank">setup.microsoft.com</a>. Key updates to this site include:  
 
 - Expanded searchability to quickly find guides
 - Better page organization to help you navigate to the right view
@@ -123,9 +124,9 @@ To learn more, see [Simplify deployment of Microsoft 365 with new and updated de
 
 To empower IT Admins like you, the Net Promoter Score (NPS) survey insights dashboard released the new Sentiment per Topic feature under the sentiment section.
 
-With this new feature, you will be able to identify the sentiment that is associated with each topic available. The sentiment is calculated for each NPS feedback comment and tied to a specific topic. With this new addition, you can discover what trending topics your users are talking about and understand the feeling they're experiencing regarding that specific topic.
+With this new feature, you'll be able to identify the sentiment that is associated with each topic available. The sentiment is calculated for each NPS feedback comment and tied to a specific topic. With this new addition, you can discover what trending topics your users are talking about and understand the feeling they're experiencing regarding that specific topic.
 
-With the new sentiment per topic feature on the NPS survey insights dashboard, you will be able to:
+With the new sentiment per topic feature on the NPS survey insights dashboard, you'll be able to:
 
 - Identify the sentiment for each topic
 - Choose between three sentiments: Positive, Negative, Other
@@ -141,7 +142,7 @@ Here are the topics available:
 - User Education
 - Value
 
-To access the sentiment per topic insights, sign in to the M365 Admin Center and go to **Health** > **Product feedback** > **NPS survey insights tab**.
+To access the sentiment per topic insights, sign in to the Microsoft 365 Admin Center and go to **Health** > **Product feedback** > **NPS survey insights tab**.
 
 :::image type="content" source="../media/nps-sentimentpertopic.jpg" alt-text="Screenshot: Sentiment per topic feature in the NPS survey insights dashboard" lightbox="../media/nps-sentimentpertopic.jpg":::
 
@@ -151,9 +152,9 @@ For questions or feedback related to NPS survey insights, contact us at Prosight
 
 ### Date filter in the Net Promoter Score (NPS) survey insights dashboard
 
-Based on your feedback, we are introducing a new function in the NPS survey insights dashboard that allows Admins like you to filter the Net Promoter Score (NPS) data and insights per date, so that you can access details based on your date range preference.
+Based on your feedback, we're introducing a new function in the NPS survey insights dashboard that allows Admins like you to filter the Net Promoter Score (NPS) data and insights per date, so that you can access details based on your date range preference.
 
-With this change, you will be able to look at the NPS survey insights based on the following date ranges:
+With this change, you'll be able to look at the NPS survey insights based on the following date ranges:
 
 - Past 30 days
 - Past 90 days
@@ -166,7 +167,6 @@ To access, go to **Health** > **Product feedback** > **NPS survey insights tab**
 Learn more about [NPS survey insights](/microsoft-365/admin/manage/manage-feedback-product-insights).
 
 For questions or feedback related to NPS survey insights, contact us at Prosight@microsoft.com.
-
 
 ## July 2022
 

@@ -1,7 +1,7 @@
 ---
 title: Limit who can be invited by an organization
-ms.author: mikeplum
-author: MikePlumleyMSFT
+ms.author: jtremper
+author: jacktremper
 manager: pamgreen
 ms.date: 12/11/2023
 audience: ITPro
@@ -33,7 +33,7 @@ If you collaborate with another organization and want to limit who can be invite
 The easiest way to specify who can be invited to another organization is to use a security group. You can use a security group with a defined membership or a dynamic security group. You can use an existing security group or create a new one for this purpose.
 
 To create a security group
-1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) using a Global Administrator or Security Administrator account.
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) using a Security Administrator account.
 1. Expand **Groups** and then select **All groups**.
 1. Select **New group**.
 1. Choose **Security** for the **Group type**.

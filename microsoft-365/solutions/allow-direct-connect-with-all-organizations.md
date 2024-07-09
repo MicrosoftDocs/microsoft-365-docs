@@ -1,9 +1,9 @@
 ---
 title: Enable shared channels with all external organizations
-ms.author: mikeplum
-author: MikePlumleyMSFT
+ms.author: jtremper
+author: jacktremper
 manager: pamgreen
-ms.date: 12/08/2023
+ms.date: 06/26/2024
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -40,7 +40,8 @@ If your organization doesn't have a requirement to restrict collaboration with o
 You can allow your users to invite people from other organizations to use shared resources - such as shared channels in Teams - by default.
 
 To allow users to invite B2B direct connect participants by default
-1. Sign in to [Microsoft Entra ID](https://entra.microsoft.com) using a Global Administrator or Security Administrator account.
+1. Sign in to [Microsoft Entra ID](https://entra.microsoft.com) using a Security Administrator account.
+
 1. Expand **External Identities**, and then select **Cross-tenant access settings**.
 1. On the **Default settings** tab, under **Inbound access settings**, select **Edit inbound defaults**.
 1. Select the **B2B direct connect** tab.

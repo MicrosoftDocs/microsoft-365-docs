@@ -17,6 +17,9 @@ f1.keywords: NOCSH
 ---
 
 # Validate apps against a custom image
+
+[!INCLUDE [test-base-deprecation](./includes/test-base-deprecation.md)]
+
 > [!NOTE]
 > This guide will show you how to onboard your own Windows image to Test Base as a baseline for security update or in-place upgrade validation.
 

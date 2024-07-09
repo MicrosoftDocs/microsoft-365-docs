@@ -21,7 +21,7 @@ description: Learn how to use SharePoint eSignature to create and send electroni
 
 ## Create a signature request
 
-Use the following steps to start the SharePoint eSignature process.
+Use the following steps to start the SharePoint eSignature process. You must be signed in to SharePoint by using your work email address.
 
 1. From a SharePoint document library, open the document for which you want to start the eSignature process.
 

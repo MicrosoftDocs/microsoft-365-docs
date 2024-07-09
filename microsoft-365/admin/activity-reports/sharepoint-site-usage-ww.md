@@ -87,8 +87,10 @@ The **SharePoint site usage** report can be viewed for trends over the last 7 da
 |Company link count  |The number of times documents or folders are shared using "People in org with the link" on the site.  |
 |Secure link for guest count  |The number of times documents or folders are shared using "specific people" on the site.  |
 |Secure link for member count  |The number of times documents or folders are shared using "specific people" on the site.  |
-|Root Web Template  |The template used for creating the site.  <br/> NOTE: If you want to filter the data by different site types, then export the data and use the Root Web Template column. |
+|Root Web Template  |The template used for creating the site.  **NOTE**: If you want to filter the data by different site types, then export the data and use the Root Web Template column. |
 | Site ID | The site ID of the site. |
 
-Note that you may see differences between the sites listed above and those listed on the [Active sites page](https://go.microsoft.com/fwlink/?linkid=2185220) in the [SharePoint admin center](https://go.microsoft.com/fwlink/?linkid=2185219), from Sites > Active sites because the certain site templates and URLs are not included as Active Sites. See [Manage sites in the SharePoint admin center](/sharepoint/manage-sites-in-new-admin-center) for more information. 
- 
+>[!NOTE]
+> The SharePoint site URL may not be displayed in related usage reports. To display the site URL, you can use PowerShell. To follow the steps, see [Use PowerShell to resolve site URLs](resolve-site-urls.md).
+
+Note that you may see differences between the sites listed above and those listed on the [Active sites page](https://go.microsoft.com/fwlink/?linkid=2185220) in the [SharePoint admin center](https://go.microsoft.com/fwlink/?linkid=2185219), from Sites > Active sites because the certain site templates and URLs are not included as Active Sites. See [Manage sites in the SharePoint admin center](/sharepoint/manage-sites-in-new-admin-center) for more information.

@@ -7,7 +7,7 @@ manager: scotv
 ms.reviewer: crimora
 ms.date: 01/17/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:

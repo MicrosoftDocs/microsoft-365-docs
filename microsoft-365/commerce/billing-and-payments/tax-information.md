@@ -9,6 +9,7 @@ ms.reviewer: jkinma, ramagane
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-management
 ms.localizationpriority: medium
 ms.collection: 
 - Tier1
@@ -21,8 +22,9 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - AdminTemplateSet
+- admindeeplinkMAC
 description: "Learn about tax information for Microsoft 365 billing and payments, including how to update your address and tax status."
-ms.date: 08/10/2023
+ms.date: 07/02/2024
 ---
 
 # Tax information for Microsoft 365 for business products and services
@@ -51,6 +53,8 @@ When you buy Microsoft 365 products or services in the EMEA region, the purchase
 
 - For EU customers, before we can validate your VAT ID, it must be available for verification in the VAT Information Exchange System (VIES). If your VAT ID can't be verified, contact your local tax authority.
 
+- If you bought through a Limited Risk Distributor (LRD), you might be charged your local VAT rate even if located outside of Ireland.
+
 You might qualify for VAT zero-rating if you meet one of the following criteria:
   
 - **You're in a European Union Member State outside Ireland:** You can provide your valid local VAT ID. Providing the VAT ID lets Microsoft Ireland Operations Ltd. VAT zero-rate the transaction. However, you might have a local VAT accounting obligation. If you have any concerns, check with your tax advisors. For instructions about adding the CAR ID for your organization, see [Add your VAT ID](#add-your-vat-id).
@@ -59,6 +63,37 @@ You might qualify for VAT zero-rating if you meet one of the following criteria:
 
 - **You're in Armenia, Belarus, Norway, Türkiye, or United Arab Emirates:** You can provide your local VAT ID. Providing the VAT ID entitles Microsoft Ireland Operations Ltd. to VAT zero-rate the transaction. However, you might have a local VAT accounting obligation, so check with your tax advisors if you have any concerns. For instructions about adding the VAT ID for your organization, see [Add your VAT ID](#add-your-vat-id).
 
+## What is the Limited Risk Distributor model?
+
+A Limited Risk Distributor (LRD) is a subsidiary that Microsoft established as buy-sell distributor who sells directly or indirectly. The model affects customers buying directly from Microsoft through the MCA. It also demonstrates the Microsoft commitment to our business in the following countries/regions:
+
+- Australia
+- Austria
+- Belgium
+- Canada
+- Denmark
+- Finland
+- France
+- Germany
+- Italy
+- Netherlands
+- New Zealand
+- Norway
+- Spain
+- Sweden
+- Switzerland
+- United Kingdom
+
+Under the LRD model:
+
+- The selling entity is the local LRD subsidiary (sales and distribution rights have been extended to the LRDs).
+- The payment methods won't change for customers.
+- The LRD can only sell to customers located in the LRD country/region and agreed territories as defined by Tax.
+- For LRD sales, the Licensor is either MS Corp or MIOL.
+
+  - For the Americas, the Licensor is MS Corp (1010).
+  - For EMEA and APAC, the Licensor is MIOL (1062).
+  
 ## Asia Pacific countries/regions (APAC)
 
 If you're billed by the Microsoft Regional Sales office, "Microsoft Regional Sales Pte. Ltd." appears on your invoice, and you might be charged for any applicable value-added, sales, or similar taxes.

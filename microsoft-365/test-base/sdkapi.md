@@ -18,6 +18,8 @@ f1.keywords: NOCSH
 
 # Manage your resource with SDK & APIs
 
+[!INCLUDE [test-base-deprecation](./includes/test-base-deprecation.md)]
+
 Automation is a key aspect of DevOps and agile development. Are you looking to manage Test Base for Microsoft 365 resources, get test results programmatically, and integrate them with our CI tools? Test Base APIs/SDK can help you achieve all these and more!
 
 These APIs/SDK enable IT professionals and app developers to:

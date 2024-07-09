@@ -3,15 +3,17 @@ title: Configure Microsoft 365 Enterprise services and applications
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 08/10/2020
+ms.date: 06/28/2024
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 ms.collection: 
 - scotvorg
 - Ent_O365
 - M365-subscription-management
+- must-keep
 search.appverid:
 - MET150
 - MOE150

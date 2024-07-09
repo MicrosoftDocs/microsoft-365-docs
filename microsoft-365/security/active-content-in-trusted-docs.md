@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: chrisda
 author: chrisda
-manager: dansimp
+manager: deniseb
 audience: Admin
 ms.topic: tutorial
 ms.localizationpriority: medium

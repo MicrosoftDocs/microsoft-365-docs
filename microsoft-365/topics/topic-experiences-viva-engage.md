@@ -1,7 +1,7 @@
 ---
 ms.date: 01/16/2024
 title: Topics in Viva Engage
-ms.author: ergradel
+ms.author: daisyfeller
 author: daisyfell
 manager: elizapo
 audience: admin
@@ -11,8 +11,7 @@ ms.collection:
   - m365initiative-viva-topics
   - highpri
   - Tier1
-ms.service: viva 
-ms.subservice: viva-topics 
+ms.service: viva-topics 
 search.appverid:
 - MET150   
 ms.localizationpriority:  medium

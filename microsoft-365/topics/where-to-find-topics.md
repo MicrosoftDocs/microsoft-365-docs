@@ -1,7 +1,7 @@
 ---
-ms.date: 05/04/2023
+ms.date: 01/01/2024
 title: Where to find topics
-ms.author: cjtan
+ms.author: daisyfeller
 author: daisyfell
 manager: elizapo
 ms.reviewer: daisyfeller
@@ -12,8 +12,7 @@ search.appverid:
 ms.custom: 
 - intro-overview
 - intro-get-started
-ms.service: viva
-ms.subservice: viva-topics
+ms.service: viva-topics
 ms.collection:
   - enabler-strategic
   - m365initiative-viva-topics

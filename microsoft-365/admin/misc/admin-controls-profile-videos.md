@@ -18,13 +18,13 @@ description: "Turn the profile video feature on or off for all users in your Mic
 
 # Turn the profile video feature on or off for all users in your Microsoft 365 organization
 
-As the Microsoft 365 administrator, you can turn the profile video feature on or off for users in your organization. Profile videos are 30-second videos that appear on profile cards in Microsoft 365 apps such as Outlook.
+As the Microsoft 365 administrator, you can turn the profile video feature on or off for users in your organization. Profile videos are 30-second videos that appear on profile cards in Microsoft 365 productivity apps such as Outlook.
 
 ## Use the Microsoft 365 Admin Center to turn profile videos on or off
 
 By default, profile video creation is turned on in Microsoft 365 organizations.
 
-1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
+1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.cloud.microsoft</a>.
 
 2. In the left nav, go to **Settings** -> **Org Settings**.
 

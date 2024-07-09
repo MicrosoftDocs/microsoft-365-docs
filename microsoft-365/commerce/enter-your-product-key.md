@@ -10,6 +10,7 @@ ms.reviewer: drjones, jobailey
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-marketplace
 ms.localizationpriority: medium
 ms.collection:
 - Tier1
@@ -25,6 +26,7 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - AdminTemplateSet
+- admindeeplinkMAC
 description: "Learn how to redeem a product key to activate or extend your Microsoft business subscription." 
 ms.date: 09/07/2023
 ---

@@ -3,14 +3,16 @@ title: "Best practices for using Office 365 on a slow network"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 12/29/2016
+ms.date: 04/09/2024
 audience: End User
 ms.topic: overview
 ms.service: microsoft-365-enterprise
+ms.subservice: network
 ms.localizationpriority: medium
 ms.collection: 
 - scotvorg
 - Ent_O365
+- must-keep
 search.appverid:
 - MET150
 - MET150
@@ -29,7 +31,7 @@ description: "This article guides you through the best practices that you can ad
 Wouldn't it be nice if your Internet connection was always fast and never down? Perhaps that day will come. But in the meantime, there are practical things you can do to work around a balky network and still get your day-to-day work done. Although Office 365 is a cloud-based service, it also provides many ways to work with your content offline and to smoothly keep your changes synchronized. Besides, it's sometimes more efficient to work with content offline just because applications run faster and the user interface is more responsive. The point is this: Office 365 gives you the best of both worlds. Here's how to take advantage of that.
 
 > [!TIP]
-> Want to see how slow (or fast) your network connection is? Try the [OOKLA Speed test](https://www.speedtest.net/) or the [Network Speed Test App](https://www.windowsphone.com/store/app/network-speed-test/9b9ae06b-2961-41ef-987d-b09567cffe70).
+> Want to see how slow (or fast) your network connection is? Try the [OOKLA Speed test](https://www.speedtest.net/).
 
 ## Why is my network so slow?
 
@@ -47,13 +49,13 @@ Although you don't have control over network performance itself, it helps to und
 
  **Common issues**: Besides bandwidth and latency, other issues have an impact on network performance and are often unpredictable. Network performance can fluctuate based on the time of the day or your physical location. The network can become clogged when certain events occur that spike the use of the Internet, such as a natural disaster or a major public event. The size and complexity of the page being loaded and the number and size of files being transferred have a direct bearing on performance. A WiFi connection can temporarily degrade: for example, you poll a large conference meeting of thousands by requesting everyone to tweet at the same time.
 
- **Considerations for a satellite network**: A satellite network is useful when a terrestrial network is not feasible, such as the back country/region, a cruise ship, or a remote scientific area. These networks rely on satellites positioned in a geosynchronous orbit 22,000 miles above the equator. However, a transmission actually travels about 90,000 miles, and so a satellite network has a slower latency (500 ms or more) than a terrestrial network (20 to 50ms). Under the best of conditions, you may not notice this latency, but for downloading large files, streaming videos, and playing games, you probably will. Another issue is "rain fade" in which heavy weather, such as thunderstorms and blizzards, can temporarily interrupt satellite transmission.
+ **Considerations for a satellite network**: A satellite network is useful when a terrestrial network isn't feasible, such as the back country/region, a cruise ship, or a remote scientific area. These networks rely on satellites positioned in a geosynchronous orbit 22,000 miles above the equator. However, a transmission actually travels about 90,000 miles, and so a satellite network has a slower latency (500 ms or more) than a terrestrial network (20ms to 50ms). Under the best of conditions, you may not notice this latency, but for downloading large files, streaming videos, and playing games, you probably will. Another issue is "rain fade" in which heavy weather, such as thunderstorms and blizzards, can temporarily interrupt satellite transmission.
 
 ## Are you sure it's the network?
 
-Whenever you experience performance problems, first make sure that your device is not the root cause of the problem. There are two things you can do that might make a big improvement:
+Whenever you experience performance problems, first make sure that your device isn't the root cause of the problem. There are two things you can do that might make a significant improvement:
 
-- Make sure your device is running well and there is no malware on your computer.
+- Make sure your device is running well and there's no malware on your computer.
 
 - If possible, buy more memory. Adding memory is the simplest and often most effective way to improve performance on your device. It's especially helpful when working with large files and videos.
 
@@ -85,14 +87,14 @@ Here are some suggestions for browsers in general:
 
 Here are some suggestions for your specific browser:
 
-- **Internet Explorer**: Upgrade to Internet Explorer Version 11 or later for substantial performance improvements over previous versions. For more information, see [Troubleshooting guide for Internet Explorer](https://support.microsoft.com/help/2437121/troubleshooting-guide-for-internet-explorer-when-you-access-office-365).
+- **Microsoft Edge**: For more information, see [Learn about performance features in Microsoft Edge](https://support.microsoft.com/en-us/topic/learn-about-performance-features-in-microsoft-edge-7b36f363-2119-448a-8de6-375cfd88ab25).
 - **FireFox**: For more information, see [Firefox is slow or stops working](https://support.mozilla.org/products/firefox/fix-problems/slowness-or-hanging).
 - **Safari**: For more information, see [Apple - Safari](https://www.apple.com/safari/).
 - **Chrome**: For more information, see [Chrome Help](https://support.google.com/chrome/?hl=en).
 
 ## Best practices for using Outlook and Outlook Web App
 
-Reading, writing, and organizing email is a big part of everyone's day. Both Outlook and Outlook Web App (OWA) offer offline support. Using an email app on your smart phone is another useful alternative. Use the following options that best fit your needs:
+Reading, writing, and organizing email is a significant part of everyone's day. Both Outlook and Outlook Web App (OWA) offer offline support. Using an email app on your smart phone is another useful alternative. Use the following options that best fit your needs:
 
 - Upgrade to the latest version of Outlook for substantial performance improvements over previous versions.
 
@@ -107,16 +109,16 @@ Reading, writing, and organizing email is a big part of everyone's day. Both Out
 > [!NOTE]
 > Here is some guidance on when to use Outlook or OWA. If disk space is not an issue on your device, Outlook has a full set of features and might work best for you. If disk space is an issue on your device, consider using OWA which has a subset of features, but also works best in an online situation. Of course, you can use either because they work well together.
 
-## Best practices for using OneDrive for Business
+## Best practices for using OneDrive
 
-OneDrive for Business is designed from the ground up to work with your files online and offline. Once you set it up, synchronization of changes occurs automatically and reliably wherever and whenever you make them. If the network is slow, you can work with the offline version of the files.
+OneDrive is designed from the ground up to work with your files online and offline. Once you set it up, synchronization of changes occurs automatically and reliably wherever and whenever you make them. If the network is slow, you can work with the offline version of the files.
 
-The OneDrive for Business sync app comes with a SharePoint Online and Office 365 business subscription, or you can [download](https://support.microsoft.com/kb/2903984) the OneDrive for Business sync app for free. This app is also faster than using the **Open in Explorer** or **Upload** commands. For more information, see [Set up your computer to sync your OneDrive for Business files in Office 365](https://support.office.com/article/23e1f12b-d896-4cb1-a238-f91d19827a16).
+The OneDrive sync app comes with a SharePoint and Office 365 business subscription, or you can [download](https://support.microsoft.com/kb/2903984) the OneDrive sync app for free. This app is also faster than using the **Open in Explorer** or **Upload** commands. For more information, see [Set up your computer to sync your OneDrive files in Office 365](https://support.office.com/article/23e1f12b-d896-4cb1-a238-f91d19827a16).
 
-Here's some additional guidance for using the OneDrive for Business sync app:
+Here's some additional guidance for using the OneDrive sync app:
 
 - If you're syncing a large library for the first time, start the sync during off hours, for example, overnight.
-- You can use the [Stop syncing a library with the OneDrive for Business app](https://support.office.com/article/a7e41f1f-3a98-4ca7-9443-f10250688330) feature to temporarily stop syncing updates. However, use this feature for brief periods, such as a few hours at a time, to avoid queuing large numbers of updates, and to minimize the risk of merge conflicts if several people work on the same document.
+- You can use the [Stop syncing a library with the OneDrive app](https://support.office.com/article/a7e41f1f-3a98-4ca7-9443-f10250688330) feature to temporarily stop syncing updates. However, use this feature for brief periods, such as a few hours at a time, to avoid queuing large numbers of updates, and to minimize the risk of merge conflicts if several people work on the same document.
 
 ## Best practices for using OneNote
 
@@ -152,17 +154,17 @@ For more information, see the section "More about managing large lists" in [Mana
 
 When you customize a web page, you may inadvertently cause poor performance with the page. A number of factors can have an impact, such as the complexity and size of the page, how many web parts are added, how many list or library items are initially displayed, and the way you code the page.
 
-For more information, see [Tune SharePoint Online performance](tune-sharepoint-online-performance.md).
+For more information, see [Tune SharePoint performance](tune-sharepoint-online-performance.md).
 
 ## Best practices for using Project Online
 
 The following guidelines can help improve network performance.
 
-- Project Online and SharePoint Online require synchronization, which can be time consuming. If your project teams have low turnover, disable Project Site Sync to improve the Project Publish and Project Detail Pages performance. Limit Active Directory sync to groups of resources that actually need to use the system, and monitor any potential permission issues after the synchronization of large groups.
+- Project Online and SharePoint require synchronization, which can be time consuming. If your project teams have low turnover, disable Project Site Sync to improve the Project Publish and Project Detail Pages performance. Limit Active Directory sync to groups of resources that actually need to use the system, and monitor any potential permission issues after the synchronization of large groups.
 
 - If your organization uses project sites, create them on demand rather than automatically. This speeds up the first publishing experience and avoids creating unnecessary sites and content.
 
-- Project Detail Pages (PDP) can trigger a recalculation of the entire project and kick off workflow actions, both of which can be performance-intensive operations. To avoid triggering two update processes at the same time on the same PDP, avoid updating the calendar fields (Start date, Finish date, Status date, and Current date) and the non-scheduled fields (project name, description, and owner).
+- Project Detail Pages (PDP) can trigger a recalculation of the entire project and kick off workflow actions, both of which can be performance-intensive operations. To avoid triggering two update processes at the same time on the same PDP, avoid updating the calendar fields (Start date, Finish date, Status date, and Current date) and the nonscheduled fields (project name, description, and owner).
 
 - Reduce the number of Web Parts and custom fields displayed on each PDP. Create a dedicated PDP with the only fields that require updating to improve load and save time.
 

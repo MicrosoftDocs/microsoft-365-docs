@@ -7,13 +7,13 @@ author: chrisda
 manager: deniseb
 ms.audience: Admin
 ms.topic: conceptual
-ms.service: microsoft-365-business
-ms.date: 11/01/2023
+ms.service: microsoft-365-business-security
+ms.date: 06/07/2024
 ms.localizationpriority: medium
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
-- tier1
+- tier2
 ms.custom:
 - MiniMaven
 search.appverid:
@@ -50,13 +50,7 @@ Admins can create mail flow rules to automatically protect email messages that a
 
 You create mail flow rules to encrypt email messages with Microsoft Purview Message Encryption. Define mail flow rules for triggering message encryption by using the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center (EAC)</a>.
 
-1. In a web browser, using a work or school account that has been granted global administrator permissions, sign in.
-
-2. Choose the Admin tile.
-
-3. In the Admin center, choose **Admin centers** \> **Exchange**.
-
-For more information, see [Define mail flow rules to encrypt email messages](../compliance/define-mail-flow-rules-to-encrypt-email.md).
+See [Define mail flow rules to encrypt email messages](../compliance/define-mail-flow-rules-to-encrypt-email.md).
 
 ### Brand your encryption messages
 

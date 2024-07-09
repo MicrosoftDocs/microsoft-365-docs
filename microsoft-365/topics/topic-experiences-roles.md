@@ -1,7 +1,7 @@
 ---
-ms.date: 07/13/2023
+ms.date: 01/01/2024
 title: Roles in Topics
-ms.author: cjtan
+ms.author: daisyfeller
 author: daisyfell
 manager: elizapo
 ms.reviewer: daisyfeller
@@ -10,8 +10,7 @@ ms.topic: article
 ms.collection:
   - m365initiative-viva-topics
   - Tier1
-ms.service: viva 
-ms.subservice: viva-topics 
+ms.service: viva-topics 
 search.appverid:
     - MET150  
 ms.localizationpriority:  medium
@@ -72,7 +71,7 @@ Knowledge managers need to be able to coordinate with all Topics stakeholders in
 
 ## Topics admin
 
-Topics admins are admins who set up and configure Topics in your Microsoft 365 environment. They also manage the Topics settings after set up has completed. To administer Topics, you must be a Microsoft 365 global administrator, or a SharePoint administrator and Groups administrator, since setup and management are done in the Microsoft 365 admin center.
+Topics admins are admins who set up and configure Topics in your Microsoft 365 environment. They also manage the Topics settings after set up has completed. To administer Topics, you must be a SharePoint administrator and Groups administrator, since setup and management are done in the Microsoft 365 admin center.
 
 During setup, Topics admins can configure Topics to:
 

@@ -9,11 +9,15 @@ ms.reviewer: paprud, marketing
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
 ms.collection: 
-- Tier2
+- Tier1
 - scotvorg
 - Adm_o365
+ms.custom: 
+- commerce_licensing
+- empty
 search.appverid: MET150
 description: "Learn about Microsoft 365 E3 and E5 Extra Features and how to assign licenses for it to your users."
 ms.date: 01/25/2024
@@ -54,6 +58,7 @@ Microsoft 365 E3 or E5 Extra Features provides additional features for your user
 |Microsoft Endpoint DLP     | No        | Yes        |
 |Microsoft Insider Risk Management     | No        | Yes        |
 |Safe Documents     | No        | Yes        |
+|Universal Print|Yes|Yes|
 
 ## Assign the Microsoft 365 E3 or E5 Extra Features license to users
 

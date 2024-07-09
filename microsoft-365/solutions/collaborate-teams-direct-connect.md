@@ -1,9 +1,9 @@
 ---
 title: Collaborate with external participants in a shared channel (IT Admins)
-ms.author: mikeplum
-author: MikePlumleyMSFT
+ms.author: jtremper
+author: jacktremper
 manager: pamgreen
-ms.date: 07/18/2023
+ms.date: 05/30/2024
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -86,9 +86,9 @@ To specify an internal help link for shared channel users
 
 <a name='configure-cross-tenant-access-settings-in-azure-ad'></a>
 
-## Configure cross-tenant access settings in Microsoft Entra ID
+## Configure cross-tenant access settings in Microsoft Entra External ID
 
-Microsoft Entra B2B direct connect is disabled by default. To enable collaboration in shared channels with people from other organizations, you must:
+Microsoft Entra External ID B2B direct connect is disabled by default. To enable collaboration in shared channels with people from other organizations, you must:
 
 1. [Add an organization](#add-an-organization).
 1. [Configure inbound settings](#configure-inbound-settings) for the organization to allow users from the organization to be invited to your shared channels.
@@ -104,7 +104,7 @@ As part of this configuration, we enable the **Office 365** application, which i
 Add each organization with which you want to participate in shared channels.
 
 To add an organization
-1. Sign in to [Microsoft Entra ID](https://entra.microsoft.com/) using a Global administrator or Security administrator account.
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) using a Security administrator account.
 1. Select **External Identities**, and then select **Cross-tenant access settings**.
 1. Select **Organizational settings**.
 1. Select **Add organization**.
@@ -117,7 +117,7 @@ To add an organization
 Follow this procedure for each organization where you want to invite external participants.
 
 To configure inbound settings for an organization
-1. In [Microsoft Entra ID](https://entra.microsoft.com/), select **External Identities**, and then select **Cross-tenant access settings**.
+1. In the [Microsoft Entra admin center](https://entra.microsoft.com/), select **External Identities**, and then select **Cross-tenant access settings**.
 1. Select the inbound access link for the organization that you want to modify.
 1. On the **B2B direct connect** tab, choose **Customize settings**.
 1. On the **External users and groups** tab, choose **Allow access** and **All external users and groups**. (You can choose **Select external users and groups** if you want to limit access to specific users and groups, such as those who have signed a non-disclosure agreement.)
@@ -131,7 +131,7 @@ To configure inbound settings for an organization
 Follow this procedure for each organization where you want your users to be able to participate in external shared channels.
 
 To configure outbound settings for an organization
-1. In [Microsoft Entra ID](https://entra.microsoft.com/), select **External Identities**, and then select **Cross-tenant access settings**.
+1. In the [Microsoft Entra admin center](https://entra.microsoft.com/), select **External Identities**, and then select **Cross-tenant access settings**.
 1. Select the outbound access link for the organization that you want to modify.
 1. On the **B2B direct connect** tab, choose **Customize settings**.
 1. On the **External users and groups** tab, choose **Allow access** and set an **Applies to** of all users.
@@ -142,9 +142,9 @@ To configure outbound settings for an organization
 
 ## Related topics
 
-[B2B direct connect overview](/azure/active-directory/external-identities/b2b-direct-connect-overview)
+[B2B direct connect overview](/entra/external-id/b2b-direct-connect-overview)
 
-[Configure cross-tenant access settings for B2B direct connect](/azure/active-directory/external-identities/cross-tenant-access-settings-b2b-direct-connect)
+[Configure cross-tenant access settings for B2B direct connect](/entra/external-id/cross-tenant-access-settings-b2b-direct-connect)
 
 [Limit who can be invited by an organization](limit-invitations-from-specific-organization.md)
 

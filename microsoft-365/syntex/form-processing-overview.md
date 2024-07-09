@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 07/13/2023
+ms.date: 06/11/2024
 audience: admin
 ms.topic: conceptual
 ms.custom: intro-overview
@@ -21,13 +21,13 @@ description: Learn how to use AI Builder to create structured or freeform docume
 # Overview of structured and freeform document processing in Microsoft Syntex
 
 > [!NOTE]
-> Through June 2024, you can try out structured and freeform document processing and other selected Syntex services at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For information and limitations, see [Try out Microsoft Syntex and explore its services](promo-syntex.md).
+> Through June 2025, you can try out structured and freeform document processing and other selected Syntex services at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For information and limitations, see [Try out Microsoft Syntex and explore its services](promo-syntex.md).
 
-</br>
+<!---</br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RW15YNo]
 
-</br>
+</br>--->
 
 Use the structured document processing model ([layout method](create-syntex-model.md#train-a-custom-model)) to automatically identify field and table values. It works best for structured or semi-structured documents, such as forms and invoices.
 

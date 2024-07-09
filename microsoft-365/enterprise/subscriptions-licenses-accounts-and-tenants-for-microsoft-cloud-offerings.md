@@ -7,6 +7,7 @@ ms.date: 08/23/2023
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: high
 search.appverid:
 - MET150
@@ -137,7 +138,7 @@ The following table describes how you can combine multiple Microsoft cloud offer
    
 An easy way to add subscriptions to your organization for Microsoft SaaS-based services is through the admin center:
   
-1. Sign in to the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) with your **User Admin**, or **Global admin** account.
+1. Sign in to the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) with your **User Admin** account.
     
 2. From the left navigation of the **Admin center** home page, click **Billing**, and then **Purchase services**.
     
@@ -147,7 +148,7 @@ The admin center assigns the organization and Microsoft Entra tenant of your Mic
   
 To add an Azure subscription with the same organization and Microsoft Entra tenant as your Microsoft 365 subscription:
   
-1. Sign in to the Azure portal ([https://portal.azure.com](https://portal.azure.com)) with your Microsoft 365 **Microsoft Entra DC admin**, or **Global admin** account.
+1. Sign in to the Azure portal ([https://portal.azure.com](https://portal.azure.com)) with your Microsoft 365 **Microsoft Entra DC admin** account.
     
 2. In the left navigation, click **Subscriptions**, and then click **Add**.
     

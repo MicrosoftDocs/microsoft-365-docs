@@ -3,10 +3,11 @@ title: "Use the Centralized Deployment PowerShell cmdlets to manage add-ins"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 1/24/2020
+ms.date: 04/04/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -19,13 +20,15 @@ f1.keywords:
 ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 ms.custom:
 - seo-marvel-apr2020
-ms.collection: scotvorg
+ms.collection: 
+- scotvorg
+- must-keep
 description: "Use the Centralized Deployment PowerShell cmdlets to help you deploy and manage Office Add-ins for your Microsoft 365 organization."
 ---
 
 # Use the Centralized Deployment PowerShell cmdlets to manage add-ins
 
-As a Microsoft 365 global admin, you can deploy Office Add-ins to users via the Centralized Deployment feature (see [Deploy Office Add-ins in the admin center](../admin/manage/manage-deployment-of-add-ins.md). In addition to deploying Office Add-ins via the Microsoft 365 admin center, you can also use Microsoft PowerShell. Install the [O365 Centralized Add-In Deployment Module for Windows PowerShell](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment).
+As a Microsoft 365 user admin, you can deploy Office Add-ins to users via the Centralized Deployment feature (see [Deploy Office Add-ins in the admin center](../admin/manage/manage-deployment-of-add-ins.md)). In addition to deploying Office Add-ins via the Microsoft 365 admin center, you can also use Microsoft PowerShell. Install the [O365 Centralized Add-In Deployment Module for Windows PowerShell](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment).
 
 After you download the module, open a regular Windows PowerShell window and run the following cmdlet:
 
@@ -39,13 +42,13 @@ Before you can use the Centralized Deployment cmdlets, you need to sign in.
 
 1. Start PowerShell.
 
-2. Connect to PowerShell by using your company admin credentials. Run the following cmdlet.
+2. Connect to PowerShell by using your **User Admin** credentials. Run the following cmdlet.
 
   ```powershell
   Connect-OrganizationAddInService
   ```
 
-3. In the sign in prompt that opens, select or enter your Microsoft 365 **User Admin** or **Global admin** credentials.
+3. In the sign in prompt that opens, select or enter your Microsoft 365 **User Admin** credentials.
 
 > [!NOTE]
 > For more information about using PowerShell, see [Connect to Microsoft 365 with PowerShell](./connect-to-microsoft-365-powershell.md).
@@ -76,7 +79,7 @@ New-OrganizationAddIn -AssetId 'WA104099688' -Locale 'en-US' -ContentMarket 'en-
 
 To determine the value for the  _AssetId_ parameter, you can copy it from the URL of the Office Store webpage for the add-in. AssetIds always begin with "WA" followed by a number. For example, in the previous example, the source for the AssetId value of WA104099688 is the Office Store webpage URL for the add-in: [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688).
 
-The values for the  _Locale_ parameter and the  _ContentMarket_ parameter are identical and indicate the country/region you're trying to install the add-in from. The format is en-US, fr-FR. and so forth.
+The values for the  _Locale_ parameter and the  _ContentMarket_ parameter are identical and indicate the country/region you're trying to install the add-in from. The format is en-US, fr-FR and so forth.
 
 > [!NOTE]
 > Add-ins uploaded from the Office Store will update automatically within a few days of the latest update being available on the Office Store.

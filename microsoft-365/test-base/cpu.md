@@ -17,6 +17,8 @@ f1.keywords: NOCSH
 ---
 # Intelligent CPU regression analysis
 
+[!INCLUDE [test-base-deprecation](./includes/test-base-deprecation.md)]
+
 CPU utilization can indicate whether an application is affected by an operating system update. 
 
 Test Base for Microsoft 365 provides software developers with an insight into CPU performance regressions which occur when their application is running on different versions of an upcoming Windows Operating System (OS) update. 

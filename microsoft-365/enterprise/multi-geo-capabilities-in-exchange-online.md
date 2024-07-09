@@ -4,10 +4,11 @@ ms.reviewer: adwood
 ms.date: 6/20/2023
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: deniseb
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
+ms.subservice: multi-tenant
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020

@@ -7,6 +7,7 @@ ms.date: 09/14/2023
 audience: Admin
 ms.topic: troubleshooting
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: high
 f1.keywords:
 - CSH
@@ -81,10 +82,6 @@ To update from Azure AD Sync to Microsoft Entra Connect, see [the upgrade instru
 - [How to prepare a nonroutable domain (such as .local domain) for directory synchronization](prepare-a-non-routable-domain-for-directory-synchronization.md)
     
 - [Script to count total synchronized objects](/samples/browse/?redirectedfrom=TechNet-Gallery)
-    
-- [Troubleshoot AD FS 2.0](https://go.microsoft.com/fwlink/p/?LinkId=396727)
-    
-- [Use PowerShell to fix empty DisplayName attributes for mail-enabled groups](https://go.microsoft.com/fwlink/p/?LinkId=396728)
     
 - [Use PowerShell to fix duplicate UPN](https://go.microsoft.com/fwlink/p/?LinkId=396730)
     

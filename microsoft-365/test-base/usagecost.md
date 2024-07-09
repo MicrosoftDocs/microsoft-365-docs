@@ -18,6 +18,9 @@ f1.keywords: NOCSH
 
 # Understand your usage cost
 
+[!INCLUDE [test-base-deprecation](./includes/test-base-deprecation.md)]
+
+
 > [!NOTE]
 > Test Base now offers the billing hub feature to help users understand their test usage and cost.
 

@@ -2,12 +2,13 @@
 title: "User experience in a multi-geo environment"
 ms.reviewer:
 ms.date: 12/11/2023
-ms.author: mikeplum
-author: MikePlumleyMSFT
-manager: serdars
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
+ms.subservice: multi-tenant
 ms.collection:
 - SPO_Content
 - Strat_SP_gtc

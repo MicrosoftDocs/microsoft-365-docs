@@ -1,10 +1,10 @@
 ---
 title: Create an enterprise model in Microsoft Syntex
 ms.author: chucked
-author: chuckedmonson
+author: lkueter
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 04/26/2023
+ms.date: 06/28/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -42,7 +42,7 @@ On the **Options for model creation** page, there are two sections:
     
 - [**Set up a prebuilt model**](#set-up-a-prebuilt-model)
 
-![Screenshot of the Options for model creation page showing the custom models and prebuilt models.](../media/content-understanding/options-for-model-creation-2.png) 
+![Screenshot of the Options for model creation page showing the custom models and prebuilt models.](../media/content-understanding/options-for-model-creation-3.png) 
 
 > [!NOTE]
 > All model options might not be available. These options are configured by your Microsoft 365 admin.
@@ -55,7 +55,7 @@ The **Train a custom model** section shows the training method for the type of c
 
 - **Teaching method** – Creates an [unstructured document processing model](document-understanding-overview.md).
 
-- **Freeform selection method** – Creates a [freeform document processing model](freeform-document-processing-overview.md).
+- **Freeform selection method** – Creates a [freeform document processing model](form-processing-overview.md).
 
 - **Layout method** – Creates a [structured document processing model](form-processing-overview.md).
 
@@ -89,7 +89,7 @@ Use the **Teaching method** to create an [unstructured document processing model
 
 # [Freeform selection method](#tab/freeform-selection-method)
 
-Use the **Freeform selection method** to create a [freeform document processing model](freeform-document-processing-overview.md).
+Use the **Freeform selection method** to create a [freeform document processing model](form-processing-overview.md).
 
 1. Select **Freeform selection method**.
 
@@ -157,12 +157,13 @@ Use the **Layout method** to create a [structured document processing model](for
 
 The **Set up a prebuilt model** section shows the types of prebuilt models you can use. 
 
-![Screenshot of the Use a prebuilt model section on the Set up a prebuilt model page.](../media/content-understanding/use-a-trained-model-section-2.png) 
+![Screenshot of the Use a prebuilt model section on the Set up a prebuilt model page.](../media/content-understanding/use-a-trained-model-section-2.png)
 
-- **Contract processing**
-- **Invoice processing**
-- **Receipt processing**
- 
+- Contract processing
+- Invoice processing
+- Receipt processing
+- Sensitive information processing
+
 Select one of the following tabs to continue with the prebuilt model you want to use.
 
 # [Contract processing](#tab/contract-processing)
@@ -178,7 +179,7 @@ Select one of the following tabs to continue with the prebuilt model you want to
     - **Description** – Enter information about how this model will be used.
 
         ![Screenshot of the right panel of the Create a contract processing model page.](../media/content-understanding/create-a-model-panel.png) 
-    
+
 4. Under **Advanced settings**:
 
     - In the **Content type** section, choose whether to create a new content type or to use an existing one.
@@ -205,7 +206,7 @@ Select one of the following tabs to continue with the prebuilt model you want to
     - **Description** – Enter information about how this model will be used.
 
         ![Screenshot of the right panel of the Create an invoice processing model page.](../media/content-understanding/create-a-model-panel.png) 
-    
+
 4. Under **Advanced settings**:
 
     - In the **Content type** section, choose whether to create a new content type or to use an existing one.
@@ -232,19 +233,39 @@ Select one of the following tabs to continue with the prebuilt model you want to
     - **Description** – Enter information about how this model will be used.
 
         ![Screenshot of the right panel of the Create a model to process receipts page.](../media/content-understanding/create-a-model-panel.png) 
-    
+
 4. Under **Advanced settings**:
 
     - In the **Content type** section, choose whether to create a new content type or to use an existing one.
 
-    - In the **Compliance** section, under **Retention labels**, select the retention label you want to add. If a retention label has been already applied to the library where the file is stored, it will be selected. 
-
-    > [!NOTE]
-    > Sensitivity labels are not available for prebuilt models at this time.
+    - In the **Compliance** section, under **Retention labels**, select the retention label you want to add. If a retention label has been already applied to the library where the file is stored, it will be selected.
 
 5. When you're ready to create the model, select **Create**.
 
 6. You're now ready to [complete setting up the model](prebuilt-model-receipt.md).
+
+# [Sensitive information processing](#tab/sensitive-information-processing)
+
+1. Select **Sensitive information processing**.
+
+2. On the **Sensitive information processing: Details** page, you find information about the model and can see examples of a document library looks with entities detected and entities extracted. If you want to proceed with using the model, select **Next**.
+
+    ![Screenshot of the Sensitive information processing: Details page.](../media/content-understanding/create-a-model-sensitive-info-details.png)
+
+3. On the **Create a sensitive information processing model** page, enter the following information.
+
+    - **Model name** – Enter the name of the model, for example *Contact numbers*.
+
+    - **Description** – Enter information about how this model will be used.
+
+    ![Screenshot of the right panel of the Create a sensitive information processing model page.](../media/content-understanding/create-a-model-panel-sensitive-info.png)
+
+    > [!NOTE]
+    > Unlike other prebuilt models, there isn't an **Advanced settings** section because the options to select a content type or to apply sensitivity or retention labels aren't available for this model. If you need a model where you must specify a content type, you'll need to use a [different model type](model-types-overview.md). The option to apply security labels will be available in a future release of this model.
+
+4. When you're ready to create the model, select **Create**.
+
+5. You're now ready to [complete setting up the model](prebuilt-model-sensitive-info.md#set-up-a-sensitive-information-model).
 
 ---
 

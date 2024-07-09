@@ -7,7 +7,7 @@ author: camillepack
 manager: scotv
 ms.date: 09/20/2023
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-copilot
 ms.localizationpriority: medium
 ms.collection: 
@@ -17,6 +17,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - m365copilot
+- magic-ai-copilot
 description: "Learn about the steps to deploy Microsoft Copilot for Microsoft 365 to your users."
 ---
 
@@ -46,7 +47,6 @@ To assign and manage Copilot licenses, you can use the Microsoft 365 admin cente
 You can also manage licenses from the Copilot page in the Microsoft 365 admin center. To learn more, see [Copilot page in the Microsoft 365 admin center](microsoft-365-copilot-page.md).
 
 Once you've assigned licenses, the Copilot experience will automatically appear for users in Microsoft 365 Apps. In some experiences, like Word, a Copilot dialog will appear when creating a new document. In other experiences, Copilot is quickly accessible on the Ribbon.
-
 
 >[!NOTE]
 >For Education customers, the Copilot license is listed under **Microsoft 365 A3 Extra Features for faculty** or **Microsoft 365 A5 Extra Features for faculty**.

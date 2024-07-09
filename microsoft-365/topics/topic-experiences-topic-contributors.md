@@ -1,7 +1,7 @@
 ---
-ms.date: 05/10/2022
+ms.date: 01/01/2024
 title: Topic Contributors—Share knowledge and expertise in Topics
-ms.author: cjtan
+ms.author: daisyfeller
 author: daisyfell
 manager: elizapo
 audience: admin
@@ -10,8 +10,7 @@ ms.topic: article
 ms.collection:
   - m365initiative-viva-topics
   - Tier1
-ms.service: viva 
-ms.subservice: viva-topics 
+ms.service: viva-topics 
 search.appverid:
     - MET150  
 localization_priority: Normal

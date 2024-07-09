@@ -5,6 +5,7 @@ author: erikre
 manager: dougeby
 audience: ITPro
 ms.topic: article
+ms.date: 03/29/2024
 description: Step 6. Configure other apps in Intune.
 ms.service: o365-solutions
 ms.localizationpriority: high

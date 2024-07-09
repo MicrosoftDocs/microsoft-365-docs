@@ -7,13 +7,12 @@ metadata:
   description: This page contains links to some important topics related to Microsoft Syntex features. Start here to learn about compliance for Syntex. # Required; article description that is displayed in search results. < 160 chars.
   services: 
   ms.service: microsoft-syntex #Required; service per approved list. service slug assigned to your service by ACOM.
-  ms.subservice: subservice
   ms.topic: landing-page # Required
-  ms.collection: m365initiative-syntex, essentials-hub-or-landing, essentials-navigation
+  ms.collection: m365initiative-syntex, essentials-navigation, essentials-navigation
   ms.custom: intro-hub-or-landing
   author: chuckedmonson #Required; your GitHub user alias, with correct capitalization.
   ms.author: chucked #Required; microsoft alias of author; optional team alias.
-  ms.date: 09/01/2023 #Required; mm/dd/yyyy format
+  ms.date: 05/07/2024 #Required; mm/dd/yyyy format
   ms.localizationpriority: medium
   titleSuffix: Microsoft Syntex
 
@@ -39,10 +38,15 @@ landingContent:
             url: https://www.linkedin.com/learning/search?keywords=syntex&upsellOrderOrigin=default_guest_learning&trk=homepage-learning_learning-search-bar_search-submit
       - linkListType: whats-new
         links:
-          - text: Syntex services promotion
-            url: promo-syntex.md
-          - text: Document translation
-            url: translation-overview.md
+          - text: Autofill columns
+            url: autofill-overview.md
+          - text: Content model Graph API
+            url: /graph/api/resources/contentmodel?view=graph-rest-beta
+          - text: Document processing Graph API
+            url: /graph/api/resources/documentprocessingjob?view=graph-rest-beta
+          - text: Sensitive information prebuilt model
+            url: prebuilt-model-sensitive-info.md
+
 
 # Card 2
   - title: Get started
@@ -83,24 +87,30 @@ landingContent:
             url: esignature-overview.md
           - text: Document translation
             url: translation-overview.md
+          - text: Autofill columns
+            url: autofill-overview.md
           - text: Optical character recognition
             url: ocr-overview.md
       - linkListType: architecture
         links:
-          - text: Microsoft 365 Archive (Preview)
-            url: archive/archive-overview.md
-          - text: Microsoft Backup (Preview)
-            url: backup/backup-overview.md
+          - text: Microsoft 365 Archive
+            url: /microsoft-365/archive
+          - text: Microsoft 365 Backup (Preview)
+            url: /microsoft-365/backup
 
 # Card 4
   - title: Extensibility
     linkLists:
       - linkListType: reference
         links:
+          - text: Content model Graph API
+            url: /graph/api/resources/contentmodel?view=graph-rest-beta
+          - text: Document processing Graph API
+            url: /graph/api/resources/documentprocessingjob?view=graph-rest-beta
+          - text: Unstructured model REST API
+            url: /sharepoint/dev/apis/syntex/syntex-model-rest-api
           - text: PowerShell for Syntex
             url: powershell-syntex-intro.md
-          - text: Syntex Model REST API
-            url: /sharepoint/dev/apis/syntex/syntex-model-rest-api
           - text: SharePoint Advanced Management
             url: /sharepoint/advanced-management
           - text: SharePoint Embedded

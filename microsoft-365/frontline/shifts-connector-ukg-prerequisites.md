@@ -70,6 +70,9 @@ Make sure you gather the following information and complete the following config
 
     If you don't have all this information, contact UKG Pro WFM support.
 
+    > [!IMPORTANT]
+    > The UKG Pro WFM account you use must have an access profile which allows full access to all API-based integrations in UKG.
+
 <a name='enable-sso-by-setting-up-integration-between-azure-ad-and-ukg-pro-workforce-management'></a>
 
 ### Enable SSO by setting up integration between Microsoft Entra ID and UKG Pro Workforce Management
@@ -148,11 +151,7 @@ Use PowerShell to remove schedule entities from teams.
 
 To learn more, see [Remove-CsTeamsShiftsScheduleRecord](/powershell/module/teams/remove-csteamsshiftsschedulerecord).
 
-<!--## Roles and permissions in Teams and their impact on Shifts-->
-
 ## Understand how your UKG Pro Workforce Management organizational structure influences Teams and Shifts setup
-
-<!--The way you organize your teams in Teams depends on your UKG Pro WFM structure.-->
 
 As mentioned earlier, Shifts supports grouping users by location in UKG Pro WFM. In UKG Pro WFM, the nodes in each location represent the hierarchy in your organizational chart. A location path reaches its endpoint when a job type is configured.
 
@@ -184,12 +183,12 @@ Here's how frontline managers (FLM) and frontline workers (FLW) are set up in th
 
 |UKG Pro WFM location|Users|Primary job|Reports to|
 |---------|---------|---------|---------|
-|Contoso/Retail/Central London/Soho|FLW1&sup1;, FLW2<br>FLW3, FLW4<br>FLW5&sup2;, FLW6, FLW7<br>FLW8, FLW9, FLW10|Beauty advisor<br>Leather goods sales associate<br>Sales associate<br>Personal shopper|FLM1|
+|Contoso/Retail/Central London/Soho|FLW1<sup>1</sup>, FLW2<br>FLW3, FLW4<br>FLW5<sup>2</sup>, FLW6, FLW7<br>FLW8, FLW9, FLW10|Beauty advisor<br>Leather goods sales associate<br>Sales associate<br>Personal shopper|FLM1|
 |Contoso/Retail/Central London/Covent Garden|FLW11, FLW12<br>FLW13, FLW14|Leather goods sales associate<br>Sales associate|FLM2|
 |Contoso/Retail/Central London/Chelsea|FLW15<br>FLW16<br>FLW17|Sales associate<br>Personal shopper<br>Beauty advisor|FLM3|
 
-&sup1;FLW1 can also work as a beauty advisor in Central London/Chelsea.<br>
-&sup2;FLW5 can also work as a sales associate in Central London/Covent Garden and Central London/Chelsea.
+<sup>1</sup>FLW1 can also work as a beauty advisor in Central London/Chelsea.<br>
+<sup>2</sup>FLW5 can also work as a sales associate in Central London/Covent Garden and Central London/Chelsea.
 
 #### What does this mean when I set up teams in Teams?
 

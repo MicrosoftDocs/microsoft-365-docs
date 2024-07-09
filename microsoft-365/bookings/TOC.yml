@@ -33,14 +33,14 @@
       href: set-language-time-zones.md
   - name: Manage the Bookings app in Microsoft Teams
     href: /microsoftteams/bookings-app-admin?bc=%2fmicrosoft-365%2fbookings%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fbookings%2ftoc.json
-  - name: Virtual visits with Microsoft Teams
-    href: /microsoftteams/expand-teams-across-your-org/bookings-virtual-visits
   - name: Comparison chart - web app versus Teams app
     href: comparison-chart.md
   - name: Delete a booking calendar
     href: delete-calendar.md
   - name: Turn Microsoft Bookings on or off
     href: turn-bookings-on-or-off.md
+  - name: Granular controls for Shared Bookings
+    href: granular-controls-shared-bookings.md    
   - name: Custom domain support in Bookings
     href: custom-domain-support.md
   - name: Reporting information for Microsoft Bookings

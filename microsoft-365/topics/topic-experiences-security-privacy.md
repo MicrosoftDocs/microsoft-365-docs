@@ -1,18 +1,17 @@
 ---
-ms.date: 11/15/2021
+ms.date: 01/01/2024
 title: Security and privacy in Topics
-ms.author: cjtan
+ms.author: daisyfeller
 author: daisyfell
 manager: elizapo
 ms.reviewer: daisyfeller
 audience: admin
-ms.topic: article
+ms.topic: concept-article
 ms.collection:
   - m365initiative-viva-topics
   - Tier1
   - essentials-privacy
-ms.service: viva 
-ms.subservice: viva-topics 
+ms.service: viva-topics 
 search.appverid:
     - MET150  
 ms.localizationpriority:  medium

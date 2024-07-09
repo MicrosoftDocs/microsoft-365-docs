@@ -5,6 +5,7 @@ author: erikre
 manager: dougeby
 audience: ITPro
 ms.topic: article
+ms.date: 03/29/2024
 description: Step 2. Create and edit categories for apps.
 ms.service: o365-solutions
 ms.localizationpriority: high

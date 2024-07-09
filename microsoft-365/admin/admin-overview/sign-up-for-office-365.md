@@ -9,6 +9,7 @@ ms.reviewer: zainzaigham, socheng
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
 ms.collection:
 - Tier1 
@@ -38,7 +39,7 @@ ms.date: 01/11/2024
 
 # How to sign up for a Microsoft 365 for business plan - Admin Help
 
-When you sign up for a Microsoft 365 for business plan, your team can begin using the latest versions of Word, Excel, PowerPoint, and other Microsoft 365 apps. You can sign up and get started with a Microsoft 365 for business plan in three easy steps.
+When you sign up for a Microsoft 365 for business plan, your team can begin using the latest versions of Word, Excel, PowerPoint, and other apps in Microsoft 365. You can sign up and get started with a Microsoft 365 for business plan in three easy steps.
 
 Check out our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/p/?linkid=2224585).
 

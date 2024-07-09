@@ -1,7 +1,7 @@
 ---
-ms.date: 11/13/2023
+ms.date: 01/01/2024
 title: Get your environment ready for Topics
-ms.author: cjtan
+ms.author: daisyfeller
 author: daisyfell
 manager: elizapo
 ms.reviewer: daisyfeller
@@ -11,8 +11,7 @@ ms.custom: intro-get-started
 ms.collection:
   - m365initiative-viva-topics
   - Tier1
-ms.service: viva 
-ms.subservice: viva-topics 
+ms.service: viva-topics 
 search.appverid:
     - MET150  
 ms.localizationpriority:  medium

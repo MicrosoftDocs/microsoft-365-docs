@@ -1,14 +1,13 @@
 ---
-ms.date: 08/14/2023
+ms.date: 01/01/2024
 title: Supported languages in Topics
-ms.author: ninay
+ms.author: daisyfeller
 author: daisyfell
 manager: elizapo
 audience: admin
 ms.reviewer: daisyfeller
 ms.topic: article
-ms.service: viva 
-ms.subservice: viva-topics
+ms.service: viva-topics
 search.appverid: 
 ms.collection:
   - enabler-strategic

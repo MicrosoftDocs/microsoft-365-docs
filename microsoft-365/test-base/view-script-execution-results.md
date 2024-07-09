@@ -18,6 +18,8 @@ f1.keywords: NOCSH
 
 # Viewing Script Execution Results
 
+[!INCLUDE [test-base-deprecation](./includes/test-base-deprecation.md)]
+
 To display the Test Results for script execution, perform the steps that follow.
 
 1. Select the **Security update results** under the **Insights** menu category.
