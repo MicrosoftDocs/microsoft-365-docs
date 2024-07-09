@@ -60,13 +60,15 @@ The following table lists the terms shown on the billing account details page.
 
 |Field name                       |Description                                     |
 |---------------------------------|------------------------------------------------|
-|ID                               |The unique identifier for your billing account. |
+|Billing account ID                               |The unique identifier for your billing account. |
 |Name                             |The name of your billing account. To change the name, select **Update name**. |
-|Account status                   |A read-only field that specifies the status of your commercial account with Microsoft. |
-|Sold-to                          |The details of the legal entity responsible for payment and identified on the invoice. This section contains the name and address of the individual or organization responsible for the account, together with a contact email address and phone number. The address provided here is used to determine your tax rate unless you opt to provide an alternative shipping address during your purchase. For more information, see [Tax information](billing-and-payments/tax-information.md). |
+|Status                   |A read-only field that specifies the status of your commercial account with Microsoft. |
+|My current role|The role you have on this billing account.  See section on billing account roles below.|
+|Sold-to address                          |The details of the legal entity responsible for payment and identified on the invoice. This section contains the name and address of the individual or organization responsible for the account, together with a contact email address and phone number. The address provided here is used to determine your tax rate unless you opt to provide an alternative shipping address during your purchase. For more information, see [Tax information](billing-and-payments/tax-information.md). |
 |Tax ID                           |This field only applies if you’re in a country or region that requires you to provide a VAT or local equivalent. For more information, see [Tax information](billing-and-payments/tax-information.md). |
-|Billing profiles                 |The link goes to the list of billing profiles associated with the current billing account. A billing profile defines the properties of your invoice, like who receives the bill, how the bill is delivered, payment terms, and an optional purchase order (PO) number. For more information about billing profiles, see [Manage your Microsoft business billing profiles](billing-and-payments/manage-billing-profiles.md). |
 |Registration number (Optional)   |A legal registration number that you provide to us so we can review the details of your account. For more information, see [About registration numbers and under-review notifications](about-registration-numbers.md). To add a registration number, select **Edit**. |
+|Type|The type of billing account.|
+|Agreements|Links to the agreements signed by your organization with Microsoft|
 
 > [!NOTE]
 > If you need to change the **Sold-to** name, you must [contact support](../admin/get-help-support.md) to change it. Requests to change the **Sold-to** name require a credit check. Complete [this form](https://www.microsoft.com/download/details.aspx?id=102732), and be ready to share one of following documents with Microsoft when you contact support:
