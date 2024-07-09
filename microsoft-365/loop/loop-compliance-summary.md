@@ -114,7 +114,7 @@ The following sections detail capabilities that are **not yet available** for Mi
 
 ## Manually initializing Microsoft Loop app for Conditional Access management in Microsoft Entra
 
-In order to select Microsoft Loop app from the cloud app target UX in the Microsoft Entra admin center: Protection | Conditional Access | Select what this policy applies to | select apps | Microsoft Loop, manual provisioning is required.
+In order to select Microsoft Loop app from the cloud app target UX in the Microsoft Entra admin center: Protection | Conditional Access | Select what this policy applies to | select apps | Microsoft Loop, manual provisioning may be required.
 
 1. [Connect to Microsoft 365 with PowerShell - Microsoft 365 Enterprise | Microsoft Learn](/microsoft-365/enterprise/connect-to-microsoft-365-powershell)
 1. Copy the command, Paste into your PowerShell window's command line, and hit Enter to execute:
