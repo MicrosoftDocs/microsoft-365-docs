@@ -26,7 +26,7 @@ The prebuilt document processing service for Microsoft Syntex is set up in the M
 
 ### Licensing
 
-Before you can use prebuilt document processing in Syntex, you must first link an Azure subscription in [Syntex pay-as-you-go](syntex-azure-billing.md). Prebuilt document processing in Syntex is billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md).
+Before you can use prebuilt document processing in Microsoft Syntex, you must first link an Azure subscription in [Microsoft Syntex pay-as-you-go](syntex-azure-billing.md). Prebuilt document processing in Microsoft Syntex is billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md).
 
 ### Permissions
 
