@@ -9,7 +9,7 @@ author: siosulli
 manager: deniseb
 audience: Admin
 ms.topic: overview
-ms.date: 05/31/2024
+ms.date: 07/09/2024
 ms.service: microsoft-365-business-security
 ms.localizationpriority: medium
 ms.collection:
@@ -27,6 +27,10 @@ f1.keywords: NOCSH
 - [Microsoft Defender for Business](../security/defender-business/mdb-overview.md)
 
 This article lists new features in the latest release of [Microsoft 365 Business Premium](m365bp-overview.md) and [Microsoft Defender for Business](../security/defender-business/mdb-overview.md). Features that are currently in preview are denoted with **(preview)**.
+
+## July 2024
+
+- (GA) Learning hub resources, including Microsoft Defender XDR Ninja training, learning paths, and training modules have moved from the Microsoft Defender portal to [learn.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2273118). Browse the [list of learning paths](/training/browse/?products=m365-ems-cloud-app-security%2Cdefender-for-cloud-apps%2Cdefender-identity%2Cm365-information-protection%2Cm365-threat-protection%2Cmdatp%2Cdefender-office365&expanded=m365%2Coffice-365), and filter by product, role, level, and subject. 
 
 ## March 2024
 
