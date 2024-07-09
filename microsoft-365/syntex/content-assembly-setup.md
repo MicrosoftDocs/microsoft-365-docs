@@ -25,7 +25,7 @@ The content assembly service for Microsoft Syntex is set up in the Microsoft 365
 
 ### Licensing
 
-Before you can use content assembly in Syntex, you must first link an Azure subscription in [Syntex pay-as-you-go](syntex-azure-billing.md). Content assembly in Syntex is billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md).
+Before you can use content assembly in Microsoft Syntex, you must first link an Azure subscription in [Syntex pay-as-you-go](syntex-azure-billing.md). Content assembly in Syntex is billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md).
 
 ### Permissions
 
