@@ -137,6 +137,6 @@ You can download a CSV file that lists the errors, along with details that inclu
 
 To delete your hierarchy, [upload](#upload-your-hierarchy) a blank CSV file.
 
-# Related articles
+## Related articles
 
 [Set up open shifts across locations in Shifts for your frontline](set-up-open-shifts-across-locations.md)
