@@ -62,6 +62,21 @@ By default, structured and default document processing is turned on for librarie
 
     c. Select **Save**.
 
+## Turn off structured and freeform document processing
+
+When the structured and freeform document processing service is turned off, structured and freeform models will not run, and users will not be able to create or apply structured or freeform models.
+
+Follow these steps to turn off structured and freeform document processing.
+
+1. On the **Manage Microsoft Syntex** page, select **Structured and freeform document processing**.
+
+2. On the **Structured and freeform document processing** page, under **Status**, turn the toggle to **Off**.
+
+    ![Screenshot of a Structured and freeform document processing panel showing the Status toggle.](../media/content-understanding/turn-off-service.png)
+
+    > [!NOTE]
+    > For multi-geo environments, when the service is turned off, the service is off for all geos.
+
 ## Using a custom Power Platform environment
 
 Your tenant comes with a default Power Platform environment. If you plan to use a custom Power Platform environment, you must install the *AI Builder for Project Cortex* app in this environment. See [Manage Dynamics 365 apps](/power-platform/admin/manage-apps#install-an-app-in-the-environment-view) for details and look for the *AI Builder for Project Cortex* app in the list of Dynamics 365 apps. The environment must not be of the Sandbox type.
