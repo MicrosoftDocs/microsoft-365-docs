@@ -58,11 +58,11 @@ You must be a [SharePoint Administrator](/entra/identity/role-based-access-contr
 
 Once pay-as-you-go billing has been enabled for Microsoft Syntex on Microsoft 365 admin center, Microsoft 365 Archive can be enabled.
 
-1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>, and then select **Use content AI with Microsoft Syntex**.
+1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>, and then select **Automate content processes with Syntex**.
 
-2. On the **Use content AI with Microsoft Syntex** page, select **Manage Microsoft Syntex**.
+2. On the **Automate content processes with Syntex** page, select **Go to Syntex settings**.
 
-3. On the **Manage Microsoft Syntex** page, select **Archive**.
+3. On the Syntex page, in the left navigation, select **Storage**. From the list of products, select **Archive**.
 
 4. On the **Archive** page, select **Turn on**, and on the confirmation pane, select **Confirm**.
 
