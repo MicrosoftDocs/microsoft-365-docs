@@ -64,7 +64,7 @@ To turn on Microsoft 365 Backup, you'll need to go to the Microsoft 365 admin ce
 
 4. On the Syntex page, in the left navigation, select **Storage**. From the list of products, select **Backup Preview**.
 
-5. By default, the feature is turned off. Select **Turn on** to enable Microsoft 365 Backup for your organization.
+5. By default, the feature is turned off. On the **Backup** panel, select **Turn on** to enable Microsoft 365 Backup for your organization.
 
 6. Review the applicable [terms of service for Microsoft 365 Backup](backup-preview-terms.md) and select **Confirm**.
 
