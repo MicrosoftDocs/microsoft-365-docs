@@ -78,7 +78,7 @@ The following table lists the terms shown on the billing account details page.
 
 ## What are billing account roles?
 
-If you have an MCA billing account type, the bottom of the billing account details page includes a **Billing account roles** tab. This section lists the names of the users and admin center roles assigned to specific billing account roles. Billing account roles are specific to billing accounts and provide different levels of access to the billing account for your organization.
+If you have an MCA billing account type, the top of the billing account details page includes a **Billing account roles** tab. This section lists the names of the users and admin center roles assigned to specific billing account roles. Billing account roles are specific to billing accounts and provide different levels of access to the billing account for your organization.
 
 > [!IMPORTANT]
 > Billing account roles only apply to billing accounts, and don't apply to other Microsoft 365 admin center scenarios.
