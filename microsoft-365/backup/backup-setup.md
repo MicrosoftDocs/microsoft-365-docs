@@ -60,11 +60,11 @@ To turn on Microsoft 365 Backup, you'll need to go to the Microsoft 365 admin ce
 
 2. Select **Setup**.
 
-3. On the **Setup** page, in the **Files and content** section, select **Use content AI with Microsoft Syntex**.
+3. On the **Setup** page, in the **Files and content** section, select **Automate content processes with Syntex**.
 
-4. On the **Use content AI with Microsoft Syntex** page, select **Manage Microsoft Syntex**.
+4. On the **Automate content processes with Syntex** page, select **Go to Syntex settings**.
 
-5. From the list of products, select **Backup Preview**.
+5. On the Syntex page, in the left navigation, select **Storage**. From the list of products, select **Backup Preview**.
 
 6. By default, the feature is turned off. Select **Turn on** to enable Microsoft 365 Backup for your organization.
 
@@ -231,9 +231,9 @@ Only tenant-level admins can create and manage backups using Microsoft 365 Backu
 
 |Admin role  |OneDrive  |SharePoint  |Exchange  |
 |---------|---------|---------|---------|
-|Global admin     | ✓        | ✓        | ✓       |
-|SharePoint admin     | ✓        | ✓        |         |
-|Exchange admin    |         |         | ✓        |
+|Global Administrator     | ✓        | ✓        | ✓       |
+|SharePoint Administrator     | ✓        | ✓        |         |
+|Exchange Administrator    |         |         | ✓        |
 
 ## Glossary
 
