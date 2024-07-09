@@ -99,6 +99,8 @@ Here’s an overview of what frontline managers and workers can do in Shifts.
 |View their own and their team's schedule. | Yes | Yes |
 |View open shifts available in their schedule groups. | Yes | Yes |
 |Create open shift requests for manager's approval. Currently only available from within the teams the worker is a member of.| Yes | Yes<sup>1</sup>|
+|Create requests for open shifts at their own location for manager's approval. | Yes | Yes<sup>1</sup>|
+|Create requests for open shifts at other locations for manager's approval at that location. | Yes | No|
 |Create time-off requests for manager's approval. Currently, after the request is approved, the time off applies only to the team in which the worker requested it.| Yes | Yes<sup>1</sup>|
 |Create a request to swap a shift with a coworker on the same team. | Yes | Yes<sup>1</sup>|
 |Create a request to offer a shift to a coworker on the same team.| Yes | Yes<sup>1</sup>|
