@@ -56,19 +56,17 @@ You must be a [SharePoint Administrator](/entra/identity/role-based-access-contr
 
 To turn on Microsoft 365 Backup, you'll need to go to the Microsoft 365 admin center.
 
-1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home).
+1. In the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home), select **Setup**.
 
-2. Select **Setup**.
+2. Under **Files and content**, select **Automate content processes with Syntex**.
 
-3. On the **Setup** page, in the **Files and content** section, select **Automate content processes with Syntex**.
+3. On the **Automate content processes with Syntex** page, select **Go to Syntex settings**.
 
-4. On the **Automate content processes with Syntex** page, select **Go to Syntex settings**.
+4. On the Syntex page, in the left navigation, select **Storage**. From the list of products, select **Backup Preview**.
 
-5. On the Syntex page, in the left navigation, select **Storage**. From the list of products, select **Backup Preview**.
+5. By default, the feature is turned off. Select **Turn on** to enable Microsoft 365 Backup for your organization.
 
-6. By default, the feature is turned off. Select **Turn on** to enable Microsoft 365 Backup for your organization.
-
-7. Review the applicable [terms of service for Microsoft 365 Backup](backup-preview-terms.md) and select **Confirm**.
+6. Review the applicable [terms of service for Microsoft 365 Backup](backup-preview-terms.md) and select **Confirm**.
 
     ![Screenshot of the Turn on Backup panel and the Confirm button.](../media/m365-backup/backup-setup-turn-on.png)
 <!---
