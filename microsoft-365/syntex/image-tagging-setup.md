@@ -52,7 +52,7 @@ By default, image tagging is available for libraries on all SharePoint sites. Fo
 
 4. On the Syntex page, under **Document & image services**, select **Image tagging**.
 
-4. On the **Image tagging** panel:
+5. On the **Image tagging** panel:
 
     a. Choose which site or sites this service should be enabled for.
 
