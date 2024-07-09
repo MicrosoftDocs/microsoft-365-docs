@@ -1,10 +1,10 @@
 ---
-ms.date: 08/21/2023
+ms.date: 06/14/2024
 title: "Summary of governance, lifecycle, and compliance capabilities for Loop experiences"
 ms.reviewer: dancost, tonchan
-ms.author: jtremper
-author: jacktremper
-manager: pamgreen
+ms.author: jenz
+author: jenzamora
+manager: jtremper
 recommendations: true
 audience: Admin
 f1.keywords:
@@ -20,7 +20,7 @@ ms.collection:
 search.appverid:
 - SPO160
 - MET150
-description: "Learn about the governance, data lifecycle management and compliance capabilities for Loop experiences."
+description: "Learn about the governance, data lifecycle management, and compliance capabilities for Loop experiences."
 ---
 
 # Summary of governance, lifecycle, and compliance capabilities for Loop
@@ -51,7 +51,7 @@ Where the Loop content was originally created determines its storage location:
 |-----|-----|-----|
 |  |This column applies to Loop content:  <ul><li>Created in all other places that don't have tightly associated collaborative storage (e.g. Teams chat, Outlook email, Word for the web, Whiteboard) ➡️️ in the creator's OneDrive  <li>Created in places that have dedicated shared storage (e.g. Teams channels) ➡️️ SharePoint  </ul>|This column applies to Loop content:  <ul><li>Created inside the Loop app: Workspaces, Ideas ➡️ in SharePoint Embedded, one container per Loop workspace  </ul>|
 |***Foundations***|---|---|
-|Admin toggles  |**[Admin Toggles](/microsoft-365/loop/loop-components-configuration#available-policy-settings)** exist to turn on or off creation of and live rendering of Loop components in the Microsoft 365 ecosystem. If you enable Loop components in the Microsoft 365 ecosystem via the primary toggle, there are additional separate toggles to turn on or off Loop components in Outlook or Teams chats and channels. There is also an additional toggle to turn on or off Loop components for collaborative meeting notes.  <br><br>Organizations with eCommunication regulations can choose to leave Loop components on across the Microsoft 365 ecosystem while using the independent toggles for communication tools during evaluation of Loop's data lifecycle, governance, and compliance capabilities.|**[Admin Toggle](/microsoft-365/loop/loop-workspaces-configuration)** exists to turn on or off creation of content stored in SharePoint Embedded. This includes controlling creation of Loop Ideas and creation of new workspaces.|
+|Admin toggles  |**[Admin Toggles](/microsoft-365/loop/loop-components-configuration#available-policy-settings)** exist to turn on or off creation of and live rendering of Loop components in the Microsoft 365 ecosystem. If you enable Loop components in the Microsoft 365 ecosystem via the primary toggle, there are additional separate toggles to turn on or off Loop components in Outlook or Teams chats and channels. There's also an additional toggle to turn on or off Loop components for collaborative meeting notes.  <br><br>Organizations with eCommunication regulations can choose to leave Loop components on across the Microsoft 365 ecosystem while using the independent toggles for communication tools during evaluation of Loop's data lifecycle, governance, and compliance capabilities.|**[Admin Toggle](/microsoft-365/loop/loop-workspaces-configuration)** exists to turn on or off creation of content stored in SharePoint Embedded. This includes controlling creation of Loop Ideas and creation of new workspaces.|
 |GDPR  |**GDPR** data subject requests can be serviced as part of the [Microsoft Purview portal](/compliance/regulatory/gdpr-data-subject-requests#data-subject-request-admin-tools) and [Purview eDiscovery workflows](/purview/ediscovery)|**GDPR** data subject requests can be serviced as part of the [Microsoft Purview portal](/compliance/regulatory/gdpr-data-subject-requests#data-subject-request-admin-tools) and [Purview eDiscovery workflows](/purview/ediscovery)|
 |EUDB  |**EUDB** compliant - [What is the EU Data Boundary?](/privacy/eudb/eu-data-boundary-learn)|**EUDB** compliant - [What is the EU Data Boundary?](/privacy/eudb/eu-data-boundary-learn)|
 |***Data Security, Devices***|---|---|
@@ -101,7 +101,7 @@ The following sections detail capabilities that are **not yet available** for Mi
 - When users delete an entire Loop workspace, that Loop workspace isn't available in an **end-user visible Recycle bin**. Furthermore, restoring the Loop workspace using admin tooling doesn't update in the Loop app user experience. The user would need to visit a saved page link for a workspace that's restored in order to see it again.
 - When an **admin deletes** a Loop workspace, it **will not be removed from the user's view** of Loop workspaces. When users click on the deleted Loop workspace, it displays an error.
 - **Individual controls for guest or external sharing** of a specific Loop workspace isn't available.
-- Get and set **conditional access policy** and **block download policy** tenant defaults are available. Individual controls per Loop workspace for these capabilities are not available.
+- Get and set **conditional access policy** and **block download policy** tenant defaults are available. Individual controls per Loop workspace for these capabilities aren't available.
 
 ### Records Management not yet available
 - While Retention policies are enforced if configured at the *all SharePoint site* level, **setting or overriding the *all SharePoint sites* Retention policy on an individual Loop workspace** isn't yet available.
