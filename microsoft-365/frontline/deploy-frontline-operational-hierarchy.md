@@ -28,7 +28,9 @@ ms.date: 12/04/2023
 
 Setting up your frontline operational hierarchy enables you to map your organization’s structure of frontline teams and locations to a hierarchy in the Teams admin center. You can organize your organization’s teams by country, region, area, city, district, and so on. Using a CSV file, you can connect each of your frontline teams and locations to parent teams to build this hierarchy. Admins can also define metadata in the CSV file that ranges from department information to brand information metadata for each team and location.
 
-The operational hierarchy coupled with this metadata will enable numerous frontline apps and experiences in the future, like task publishing and additional frontline capabilities that are coming soon. Start setting up your operational hierarchy today to get the full value of these upcoming features as they're released.
+<!--The operational hierarchy coupled with this metadata will enable numerous frontline apps and experiences in the future, like task publishing and additional frontline capabilities that are coming soon. Start setting up your operational hierarchy today to get the full value of these upcoming features as they're released.-->
+
+The operational hierarchy coupled with this metadata enables frontline experiences like [open shifts across locations in Shifts](set-up-open-shifts-across-locations.md) and numerous frontline apps and capabilities, like task publishing, in the future. Start setting up your operational hierarchy today to get the full value of these upcoming features as they're released.
 
 > [!IMPORTANT]
 > If your organization already set up and uploaded a hierarchy through PowerShell to support task publishing, you should continue to [use PowerShell to make updates to your hierarchy for task publishing](/microsoftteams/set-up-your-team-hierarchy). Using the Teams admin center isn't supported yet. Soon, you'll be able to define, manage, and update your hierarchy for task publishing in the Teams admin center, along with PowerShell.
@@ -134,3 +136,7 @@ You can download a CSV file that lists the errors, along with details that inclu
 ## Delete your hierarchy
 
 To delete your hierarchy, [upload](#upload-your-hierarchy) a blank CSV file.
+
+# Related articles
+
+[Set up open shifts across locations in Shifts for your frontline](set-up-open-shifts-across-locations.md)
