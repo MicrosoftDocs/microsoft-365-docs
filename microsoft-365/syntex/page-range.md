@@ -39,7 +39,9 @@ When you select extractors for a prebuilt contracts, invoices, or receipts model
 
     ![Screenshot of the Extractors panel showing the Page range option.](../media/content-understanding/page-range-extractors-panel.png)
 
-2. The **Page** column on the **Extractors** panel shows the page that an extractor is on. To try other page ranges, enter a page range in the box, and then select **Refresh** (![Screenshot of the Refresh icon.](../media/content-understanding/refresh-icon.png)).
+2. The **Page** column on the **Extractors** panel shows the page that an extractor is on. To try other page ranges, enter a page range in the box, and then select **Update page range** to refresh the **Page** column.
+
+<!---(![Screenshot of the Refresh icon.](../media/content-understanding/refresh-icon.png)).--->
 
 3. Continue selecting distractors and then apply the model as usual.
 
