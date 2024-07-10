@@ -3,7 +3,7 @@ title: "Set up your shared booking page"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 06/18/2020
+ms.date: 06/21/2024
 audience: Admin
 ms.topic: how-to
 ms.service: bookings
@@ -72,9 +72,9 @@ The information you provide here's displayed on the page customers and clients u
 
 1. On the **Business logo** section, if you haven't already uploaded your business logo to the Bookings app, add your business logo.
 
-1. On the **Set your business hours** section, set business hours to your operational hours. These are the hours to which all bookings are restricted. Additional time restrictions of when appointments can be booked can be set for each service and for each staff member in the **Services** and **Staff** pages.
+1. On the **Set your business hours** section, set business hours to your operational hours. These are the hours to which all bookings are restricted. Other time restrictions of when appointments can be booked can be set for each service and for each staff member in the **Services** and **Staff** pages.
 
-    On the Business information page, under Business hours, use the dropdowns to select start and end times for each day. Click **+** to add start- and end-time selectors.
+    On the Business information page, under Business hours, use the dropdowns to select start and end times for each day. Select **+** to add start- and end-time selectors.
 
     By default, the business hours in the Bookings app are set to 8 a.m. to 5 p.m., Monday through Friday. Times are provided in 15-minute increments. The Bookings app uses the 12-hour clock.
 
@@ -84,9 +84,9 @@ The information you provide here's displayed on the page customers and clients u
 
 You might need to block out a portion of each day or week to have staff meetings, update inventory, or take care of other rhythm-of-business details. The Bookings app allows you to limit customer appointments to your specified time slots.
 
-For example, you have staff meetings every Thursday from 1 o'clock to 2:30 and want to block out that time so all of your staff members can attend. To do this:
+For example, you have staff meetings every Thursday from 1 o'clock to 2:30 and want to block out that time so all of your staff members can attend. To do block out time:
 
-1. On the Business information page, under Business hours, select a start and end time for Thursdays. In this example, we'll set 8:00 a.m. to 1:00 p.m.
+1. On the Business information page, under Business hours, select a start and end time for Thursdays. In this example, we set 8:00 a.m. to 1:00 p.m.
 
 1. Select **+** to create a new row for Thursday.
 
@@ -98,11 +98,11 @@ For example, you have staff meetings every Thursday from 1 o'clock to 2:30 and w
 
 1. Select Save.
 
-    When a customer goes to your booking page, he or she will see that your business is closed from 1 to 2:30 on Thursdays.
+    When a customer goes to your booking page, they see that your business is closed from 1 to 2:30 on Thursdays.
 
 ## Upload your logo
 
-If you haven't already uploaded your business logo to the Bookings app, you can do it from the Business information page.
+If you haven't uploaded your business logo to the Bookings app, you can do it from the Business information page.
 
 1. On the Business information page, under Upload logo, select **Change**.
 

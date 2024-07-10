@@ -48,6 +48,7 @@ Since 2023, *.cloud.microsoft and other domains related to the domain unificatio
 |Microsoft Admin Center| [admin.cloud.microsoft](https://admin.cloud.microsoft)|
 |Microsoft Loop | [loop.cloud.microsoft](https://loop.cloud.microsoft)|
 |Microsoft Mesh | [mesh.cloud.microsoft](https://mesh.cloud.microsoft)|
+|Microsoft Planner | [planner.cloud.microsoft](https://planner.cloud.microsoft)|
 |Microsoft Setup | [setup.cloud.microsoft](https://setup.cloud.microsoft)|
 |Microsoft Sway | [sway.cloud.microsoft](https://sway.cloud.microsoft)|
 |Microsoft Viva Engage | [engage.cloud.microsoft](https://engage.cloud.microsoft)|
