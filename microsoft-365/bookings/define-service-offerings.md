@@ -1,5 +1,5 @@
 ---
-title: "Define your Bookings service offerings"
+title: "Define your services in shared bookings"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -16,7 +16,7 @@ ms.collection:
 description: "Instructions for entering service offerings information, including service name, description, location, duration, and pricing. You can also tag the employees who are qualified to provide the service."
 ---
 
-# Define your service offerings in Bookings
+# Define your services in shared bookings
 
 When you define your service offerings in Microsoft Bookings, you set a service name, description, location (choose whether you want to meet in person or have an online meeting), duration, default reminders to customers and staff, internal notes about the service, and pricing. You can also tag the employees who are qualified to provide the service. Then, when customers come to your business web site to book an appointment, they can see exactly what types of appointments are available, choose the person they want to provide the service, and how much their service will cost.
 
@@ -33,17 +33,15 @@ Here are the steps to add a new service.
 > [!NOTE]
 > Changes to business-related settings, like enabling or disabling one-time passwords (OTP) or sending meeting invites, may take up to 10 minutes to apply.
 
-1. In Microsoft 365, select the App launcher, and then select **Bookings**.
+A. Under **Shared booking pages** from the Bookings homepage, either select the page for which you want to create a new service, or create a new booking page and then select it from the available pages.
 
-1. Under **Shared booking pages**, either select the page for which you want to create a new service, or create a new booking page and then select it from the available pages.
+B. On the shared booking page, select **Services**, and then select **Add new service**.
 
-1. On the shared booking page, select **Services**, and then select **Add new service**.
-
-    The number of services should be limited to 50.
+The number of services should be limited to 50.
 
 1. On the **Basic details** page, add your selections.
 
-   **Service name**: enter the name of your service. This is the name that will appear in the drop-down menu on the Calendar page. This name will also appear when anyone manually adds an appointment on the Calendar page, and it will appear as a tile on the Self-service page.
+   **Service name**: enter the name of your service. This is the name that will appear in the drop-down menu on the booking page. This name will also appear when anyone manually adds an appointment on the booking page, and it will appear as a tile on the Self-service page.
 
    **Description**: The description you enter is what will appear when a user selects the information icon on the Self-service page.
 
@@ -76,26 +74,6 @@ Here are the steps to add a new service.
    **Maximum attendees per event**: This setting allows you to create services that require the ability for multiple people to book the same appointment time and the same staff (such as a fitness class). The appointment time slot for the selected service, staff, and time will be available to book until the maximum number of attendees, specified by you, has been reached. Current appointment capacity and attendees can be viewed in the Calendar tab in the Bookings Web app. We refer to this as 1:N booking service.
 
    :::image type="content" source="media/bookings-maximum-attendees.jpg" alt-text="Example of setting maximum attendees in Bookings":::
-
-   **Let customers manage their appointment when it was booked by you or your staff on their behalf**: This setting determines whether or not the customer can modify or cancel their booking, provided it was booked through the Calendar tab on the Bookings Web app.
-
-   - Enabled:
-
-     The **Manage Booking** button appears on the customer confirmation email. When this button is selected by the customer, three options appear:
-
-     - **Reschedule** Selecting this option brings the user to a service-specific Self-Service page, where they can select a new time and/or date for the same service and same staff member from the original booking. Note that even though the original staff member is attached to the rescheduled booking by default, the user does have the option of changing the staff member as well.
-     - **Cancel booking** This cancels the booking and removes it from the staff's calendar.
-     - **New booking** This option brings the user to the Self-Service page with all services and staff listed, for scheduling a new booking.
-
-       :::image type="content" source="media/bookings-manage-booking-button.jpg" alt-text="The Manage Bookings button in Bookings.":::
-
-       We only recommend leaving this setting enabled if you're comfortable with customers accessing the Self-Service page.
-
-   - Disabled:
-
-     The user will have no ability to reschedule or cancel their booking when they book through the Calendar tab on the Bookings Web app. When booking through the Self-Service page, however, customers will still have the **Manage Booking** button and all of its options, even when this setting is disabled.
-
-     We recommend disabling this setting if you want to limit access to the Self-Service page. Additionally, we suggest adding text to your confirmation and reminder emails that tells your customers how to make changes to their booking through other means, such as by calling the office or emailing the help desk.
 
    **Language**: Select the default language for the booking from the drop-down list.
 
