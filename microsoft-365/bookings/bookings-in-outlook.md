@@ -20,9 +20,10 @@ description: "Steps to turn your Personal Bookings page on or off"
 
 # Turn your Personal Bookings page on or off
 
-Bookings is a time management solution that provides a simple and powerful scheduling page with seamless integration with outlook. It lets people schedule a meeting or appointment with you through a booking page that integrates with the free/busy information from your Outlook calendar. You can create custom meeting types to share with others so they can easily schedule time with you based on your availability and preferences. You both get an email confirmation and attendees can update or cancel scheduled meetings with you from your Personal Bookings page.
+Microsoft Bookings is a time management solution that provides a simple and powerful scheduling page with seamless integration with Outlook. It lets people schedule a meeting or appointment with you through a booking page that integrates with the free/busy information from your Outlook calendar. You can create custom meeting types to share with others so they can easily schedule time with you based on your availability and preferences. You both get an email confirmation and attendees can update or cancel scheduled meetings with you from your Personal Bookings page.
 
-Note that Bookings with me and Personal Bookings are terms used interchangeably.
+>[!NOTE]
+> Bookings with me and Personal Bookings are terms used interchangeably.
 
 Personal Bookings has two different views:
 
@@ -53,7 +54,7 @@ Personal Bookings is available in the following subscriptions:
 - Personal Bookings is available for G1, G3, G5
 Personal Bookings is on by default for users with these subscriptions.
 
-Personal Bookings needs the **Microsoft Bookings App (service plan)** assigned to users for them to be able to access Bookings. This service plan can be enabled/disabled by tenant admins. So, if **Microsoft Bookings** isn't assigned to them, Bookings access will be denied to users even if they are in one of the previously listed SKUs.
+Personal Bookings needs the **Microsoft Bookings App (service plan)** assigned to users for them to be able to access Bookings. This service plan can be enabled or disabled by tenant admins. So, if **Microsoft Bookings** isn't assigned to them, Bookings access will be denied to users even if they are in one of the previously listed SKUs.
 
 For more information, see the [Bookings with me Microsoft 365 Roadmap item](https://go.microsoft.com/fwlink/?linkid=328648).
 

@@ -17,7 +17,7 @@ description: "Use this page to create your staff list and to manage staff member
 
 # Add team members to Bookings
 
-TThe Staff page in Bookings is where you create your staff list and manage staff member details such as name, phone number, and email address. You can also set working hours for each staff member from here. Please note, a staff member is a team member.
+The Staff page in Bookings is where you create your staff list and manage staff member details such as name, phone number, and email address. You can also set working hours for each staff member from here. Note, a staff member is a team member.
 
 This article covers the key steps required to add staff members to a shared booking page.
 
@@ -31,7 +31,7 @@ Although Bookings is a feature of Microsoft 365, not all of your staff members a
 
 ## Steps
 
-1. From the Bookings home page, navigate to the Shared Bookings section and select the booking page you wish to add team members to.
+1. From the Bookings homepage, navigate to the Shared Bookings section, and select the booking page you wish to add team members to.
 
 2. Go to staff option in left pane and select **Staff**, and then **Add new staff**.
 
@@ -46,14 +46,14 @@ Although Bookings is a feature of Microsoft 365, not all of your staff members a
 
     :::image type="content" source="media/bookings-notify-all-email.jpg" alt-text="A notification email from Bookings.":::
 
-6. Select **Events on Microsoft 365 calendar affect availability** if you want the free/busy information from staff members’ calendars to impact availability for bookings services through Bookings.
+6. Select **Events on Microsoft 365 calendar affect availability** if you want the free/busy information from staff members’ calendars to impact availability for booking services through Bookings.
 
     For example, if a staff member has a team meeting or a personal appointment scheduled for 3pm on a Wednesday, Bookings will show that staff member as unavailable to be booked in that time slot. That time will appear as busy or tentative in the Bookings Page view, as shown in the below example.
 
     :::image type="content" source="media/bookings-busy-tentative-view-2.png" alt-text="A view of a Bookings Page.":::
 
     > [!IMPORTANT]
-    > We highly recommend leaving this setting on (it is turned on by default) to avoid double-bookings and to optimize the availability of your staff members.
+    > This setting is turned on by default. We highly recommend leaving this setting on to avoid double-bookings and to optimize the availability of your staff members.
 
 7. Select **Use business hours** to set all bookable times for your staff members to be only within the business hours that you set in the **Business hours** section on the Business Information page.
 
