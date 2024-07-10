@@ -23,7 +23,7 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: MET150
 description: "Learn about Microsoft business billing accounts and how they're used to manage account settings, invoices, payment methods, and purchases."
-ms.date: 07/11/2023
+ms.date: 07/09/2024
 ---
 
 # Understand your Microsoft business billing account
@@ -43,7 +43,7 @@ You might have access to multiple billing accounts. For example, you can have on
 The <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Billing accounts</a> page in the Microsoft 365 admin center provides a view of your business accounts with Microsoft. The following types of billing accounts are supported:
 
 - **Microsoft Online Subscription Agreement (MOSA)**: This billing account was created when you signed up for a Microsoft 365 subscription directly. You might have a MOSA billing account if your account hasn’t yet moved to the Microsoft Customer Agreement. For MOSA billing accounts, you receive an invoice for each order, on the account anniversary.
-- **Microsoft Customer Agreement (MCA)**: This billing account is created when your organization works with a Microsoft representative, an authorized partner, or buys products and services independently. For MCA billing accounts, you have a corresponding billing profile that contains your subscriptions. You receive one invoice per billing profile, between the 5th and 9th day of the month.
+- **Microsoft Customer Agreement (MCA)**: This billing account is created when your organization works with a Microsoft representative, an authorized partner, or buys products and services independently. For MCA billing accounts, you have a corresponding billing profile that contains your subscriptions.
 
 ## View my billing accounts
 
@@ -60,13 +60,15 @@ The following table lists the terms shown on the billing account details page.
 
 |Field name                       |Description                                     |
 |---------------------------------|------------------------------------------------|
-|ID                               |The unique identifier for your billing account. |
+|Billing account ID                               |The unique identifier for your billing account. |
 |Name                             |The name of your billing account. To change the name, select **Update name**. |
-|Account status                   |A read-only field that specifies the status of your commercial account with Microsoft. |
-|Sold-to                          |The details of the legal entity responsible for payment and identified on the invoice. This section contains the name and address of the individual or organization responsible for the account, together with a contact email address and phone number. The address provided here is used to determine your tax rate unless you opt to provide an alternative shipping address during your purchase. For more information, see [Tax information](billing-and-payments/tax-information.md). |
+|Status                   |A read-only field that specifies the status of your commercial account with Microsoft. |
+|My current role|The role you have on this billing account.  See section on billing account roles below.|
+|Sold-to address                          |The details of the legal entity responsible for payment and identified on the invoice. This section contains the name and address of the individual or organization responsible for the account, together with a contact email address and phone number. The address provided here is used to determine your tax rate unless you opt to provide an alternative shipping address during your purchase. For more information, see [Tax information](billing-and-payments/tax-information.md). |
 |Tax ID                           |This field only applies if you’re in a country or region that requires you to provide a VAT or local equivalent. For more information, see [Tax information](billing-and-payments/tax-information.md). |
-|Billing profiles                 |The link goes to the list of billing profiles associated with the current billing account. A billing profile defines the properties of your invoice, like who receives the bill, how the bill is delivered, payment terms, and an optional purchase order (PO) number. For more information about billing profiles, see [Manage your Microsoft business billing profiles](billing-and-payments/manage-billing-profiles.md). |
 |Registration number (Optional)   |A legal registration number that you provide to us so we can review the details of your account. For more information, see [About registration numbers and under-review notifications](about-registration-numbers.md). To add a registration number, select **Edit**. |
+|Type|The type of billing account.|
+|Agreements|Links to the agreements signed by your organization with Microsoft|
 
 > [!NOTE]
 > If you need to change the **Sold-to** name, you must [contact support](../admin/get-help-support.md) to change it. Requests to change the **Sold-to** name require a credit check. Complete [this form](https://www.microsoft.com/download/details.aspx?id=102732), and be ready to share one of following documents with Microsoft when you contact support:
@@ -78,7 +80,7 @@ The following table lists the terms shown on the billing account details page.
 
 ## What are billing account roles?
 
-If you have an MCA billing account type, the bottom of the billing account details page includes a **Billing account roles** tab. This section lists the names of the users and admin center roles assigned to specific billing account roles. Billing account roles are specific to billing accounts and provide different levels of access to the billing account for your organization.
+If you have an MCA billing account type, the top of the billing account details page includes a **Billing account roles** tab. This section lists the names of the users and admin center roles assigned to specific billing account roles. Billing account roles are specific to billing accounts and provide different levels of access to the billing account for your organization.
 
 > [!IMPORTANT]
 > Billing account roles only apply to billing accounts, and don't apply to other Microsoft 365 admin center scenarios.

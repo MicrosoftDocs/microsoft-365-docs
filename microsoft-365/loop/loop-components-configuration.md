@@ -2,14 +2,14 @@
 ms.date: 08/21/2023
 title: "Manage Loop components in OneDrive and SharePoint"
 ms.reviewer: dancost, tonchan
-ms.author: jtremper
-author: jacktremper
-manager: dansimp
+ms.author: jenz
+author: jenzamora
+manager: jtremper
 recommendations: true
 audience: Admin
 f1.keywords:
 - NOCSH
-ms.service: sharepoint-online
+ms.service: loop
 ms.localizationpriority: medium
 ms.topic: how-to
 ms.collection:
@@ -76,7 +76,7 @@ As described in this topic, you can control the ability for users in your enviro
 
 If configured to Disabled, the settings in this article will prevent creation of new Loop files. However, when Disabled, there are still a few places that Loop experiences can appear.
 
-Because Loop experiences create files in SharePoint and OneDrive, files that were created before IT admins disable new creation can still appear in places such as Microsoft365.com, the Loop component viewer and editor (loop.microsoft.com), and links to Loop components shared in messages or documents. The files themselves are not removed and access to these files is determined by the permissions set on them. Therefore, someone with edit access to a Loop file can still open it and edit it after you have disabled creation of new Loop files. This would be similar to a txt file or any other file in OneDrive or SharePoint.
+Because Loop experiences create files in SharePoint and OneDrive, files that were created before IT admins disable new creation can still appear in places such as Microsoft365.com, the Loop component viewer and editor (loop.microsoft.com), and links to Loop components shared in messages or documents. The files themselves aren't removed and access to these files is determined by the permissions set on them. Therefore, someone with edit access to a Loop file can still open it and edit it after you have disabled creation of new Loop files. This would be similar to a txt file or any other file in OneDrive or SharePoint.
 
 In addition, because there are no separate licensing requirements for the Loop component viewer and editor, only the requirement that users have access to OneDrive, users will still be able to access the Loop component viewer and editor by visiting loop.microsoft.com and via Loop in the All apps view in Microsoft365.com. The presence of the Loop app in the All apps view is dependent on the user having a license to OneDrive; if you wish to prevent users from seeing the Loop app, you can disable their access to OneDrive, or configure a conditional access policy for loop.microsoft.com so that visits to the page fail to load.
 
