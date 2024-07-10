@@ -297,7 +297,7 @@ You can double select on the executable to start the testing and a command promp
 
 ### Launching from the Command Prompt
 
-In a CMD.EXE command prompt window, you can type the path and name of the executable to run it. The filename is Microsoft.Connectivity.Test.exe.
+In a CMD.EXE command prompt window, you can type the path and name of the executable to run it. The filename is MicrosoftConnectivityTest.exe.
 
 ### Launching from Windows Task Scheduler
 

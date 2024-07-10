@@ -3,7 +3,7 @@ title: "Microsoft 365 service health status"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 04/19/2020
+ms.date: 06/28/2024
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
@@ -15,6 +15,7 @@ ms.collection:
 - scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
+- must-keep
 ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH
