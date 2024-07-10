@@ -1,0 +1,584 @@
+name: Auto label and assign pull requests
+
+permissions:
+  pull-requests: write
+  contents: read
+      
+on: [pull_request]
+
+jobs:
+    build:
+      name: Run Script
+      runs-on: windows-latest
+      steps:
+        - name: Script
+          shell: pwsh
+          env: 
+            PayloadJson: ${{ toJSON(github) }}
+            AccessToken: ${{ secrets.GITHUB_TOKEN }}
+            AutoAssignUsers: 1
+            AutoLabel: 1
+            ExcludedUserList: '["user1", "user2"]'
+            ExcludedBranchList: '["branch1", "branch2"]'
+          run: |
+            # Get runspace info
+            $GitHubData = $env:PayloadJson | ConvertFrom-Json -Depth 50
+            $AccessToken = $env:AccessToken
+
+            $GitRequestEvent = $GitHubData.event_name
+            $DefaultBranch = $GitHubData.event.repository.default_branch
+            $TargetBranch = $GitHubData.event.pull_request.base.ref
+            $GitHubState = $GitHubData.event.pull_request.state
+            $GitHubAction = $GithubData.event.action
+            $GitHubSender = $GitHubData.event.sender.login
+            $GitHubRepoName = $GitHubData.event.repository.name
+            $RepoLabelUrl = $GitHubData.event.repository.labels_url
+            $PrFileListUrl = "$($GitHubData.event.pull_request.url)/files"
+            $IssueUrl = $GitHubData.event.pull_request.issue_url
+
+            $AutoAssignUsers = [bool][int]$env:AutoAssignUsers  # If it works, it works!
+            $AutoLabel = [bool][int]$env:AutoLabel              # Ditto
+            $ExcludedUserList = $env:ExcludedUserList | ConvertFrom-Json
+            $ExcludedBranchList = $env:ExcludedBranchList | ConvertFrom-Json
+
+
+            # Set GitHub REST API headers
+            $GitHubHeaders = @{}
+            $GitHubHeaders.Add("Authorization","token $AccessToken")
+            $GitHubHeaders.Add("User-Agent", "dstrome")
+
+            # Regex for string matches
+            $AuthorRegex = "(?m)^(author:\s{0,3})([\w|\-]{1,39})"
+            $ServiceRegex = "(ms\.service:\s{0,3})([\w|\-|\.]{1,60})"
+            $SubServiceRegex = "(ms\.subservice:\s{0,3})([\w|\-|\.]{1,60})"
+            $TechnologyRegex = "(ms\.technology:\s{0,3})([\w|\-|\.]{1,60})"
+            $ProdRegex = "(ms\.prod:\s{0,3})([\w|\-|\.]{1,60})"
+            $TierRegex = "(\s*-\s*)(tier\d|Selfserve)"
+
+            $LabelColor = "BFDADC"
+            $LabelDescription = ""
+
+            # Set repo variables
+            $RepoUrl = $GitHubData.event.repository.url
+
+            Write-Host "Repository URL: $RepoUrl"
+
+            #$data = Invoke-RestMethod -Uri $RepoUrl -Headers $GitHubHeaders
+
+
+
+            #####################
+            #####################
+            # Get-FileMetadata
+
+            Function Get-FileMetadata {
+
+              [cmdletbinding()]
+              Param (
+                  $PrFileList
+                    ) 
+
+              # Initialize output $FileArray.
+              $FileArray = @()
+
+              # Iterate through each file in the PR.
+              ForEach ($File in $PrFileList) {
+
+                  # Initialize variables.
+                  $FileData = @{}
+                  $MetadataFound = $False
+                  # Check to see whether current file is markdown or YAML. Those are the only files we care about. Ignore the rest.
+                  $IsContentFile = ($File.filename.EndsWith(".md") -or $File.filename.EndsWith(".yml")) -and !$File.filename.ToLower().Contains("/toc.")
+
+                  # Only process content files.
+                  If ($IsContentFile) {
+
+                    Write-Host "Processing file $($File.filename)."
+
+                    # Retrieve file contents from GitHub. File contents is returned in Base 64 so after contents is retrieved, convert from Base 64 to plain text.
+                    $FileContentsBase64 =  Invoke-RestMethod -Method GET -Uri $File.contents_url -Headers $GitHubHeaders 
+                    $FileContents = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($FileContentsBase64.content))
+
+                    # Check to see if the file contents contains a string that matches the $AuthorRegex regex pattern. If yes, add value to $Author, if not assign $Null.
+                    If ($FileContents -match $AuthorRegex) {    
+                        $Author = $Matches[2]
+                        $MetadataFound = $True 
+                        Write-Host "Found author $Author. Request ID: $RequestId."
+                    } Else { 
+                        $Author = $Null 
+                    }
+
+                    # Check to see if file contents contains a string that matches the $ServiceRegex regex pattern. If yes, add value to $Service. Then check SubService regex pattern. 
+                    # If value isn't matched, assign $Null and don't check SubService.
+                    If ($FileContents -match $ServiceRegex)    { 
+                          $Service = $Matches[2] 
+                          $MetadataFound = $True
+                          Write-Host "Found service $Service. Request ID: $RequestId."
+                          If ($FileContents -match $SubServiceRegex) 
+                              { 
+                                $SubService = $Matches[2] 
+                                $MetadataFound = $True
+                                Write-Host "Found sub service $SubService. Request ID: $RequestId."
+                              } Else { 
+                                $SubService = $Null 
+                              }     
+                    } Else { 
+                        $Service = $Null 
+                    }
+                    # Check to see if file contents contains a string that matches the $ProdRegex regex pattern. If yes, add value to $Product. Then check TechnologyRegex regex pattern. 
+                    # If value isn't matched, assign $Null and don't check Technology.
+                    If ($FileContents -match $ProdRegex) { 
+                        $Product = $Matches[2]
+                        $MetadataFound = $True
+                        Write-Host "Found product $Product. Request ID: $RequestId."
+                        If ($FileContents -match $TechnologyRegex) {
+                              $Technology = $Matches[2]
+                              $MetadataFound = $True
+                              Write-Host "Found technology $Technology. Request ID: $RequestId."
+                          } Else {
+                              $Technology = $Null
+                          }
+                        } Else {
+                        $Product = $Null
+                    }
+                    # Check to see if the file contents contains a string that matches the $TierRegex regex pattern. If yes, add value to $Tier, if not assign $Null.
+                    If ($FileContents -match $TierRegex) {    
+                        $Tier = $Matches[2]
+                        $MetadataFound = $True 
+                        Write-Host "Found tier $Tier. Request ID: $RequestId."
+                    } Else { 
+                        $Tier = $Null 
+                    }         
+
+                    # Add results of above tests to an utput object. Each property contains the results of the associated tests from above.
+                    $FileData = @{
+                        Service     = $Service
+                        SubService  = $SubService
+                        Product     = $Product
+                        Technology  = $Technology
+                        Tier        = $Tier
+                        Author      = $Author
+                    }
+
+                    # If any metadata or author data was found, add it to the $FileArray output array.
+                    If ($MetadataFound) {
+                        Write-Host "Metadata or author data found on $($File.filename). Adding to output array. Request ID: $RequestId."
+                        $FileArray += $FileData
+                    }
+                  }
+              }
+
+              # Return $FileArray output array to calling statement.
+              Return $FileArray
+
+            }
+
+            Function Format-FileMetadata {
+
+              [cmdletbinding()]
+              Param (
+                  $FileMetadata
+                    ) 
+
+              # Initialize arrays
+              $MetadataArray = @()
+              $AuthorArray = @()
+
+              # Iterate through each file in the $FileMetaData array. Each element is an individual file found in the PR with six properties containing metadata field values.
+              Foreach ($File in $FileMetadata) {
+
+                  # Check whether each property contains data and, if so, add it to the $MetaDataArray and AuthorArray arrays with the format <field value/field type> or <author>.
+                  If ($File.Service -ne $Null)     {$MetadataArray += "$($File.Service)/svc"}
+                  If ($File.SubService -ne $Null)  {$MetadataArray += "$($File.SubService)/subsvc"}
+                  If ($File.Product -ne $Null)     {$MetadataArray += "$($File.Product)/prod"}
+                  If ($File.Technology -ne $Null)  {$MetadataArray += "$($File.Technology)/tech"}
+                  If ($File.Tier -ne $Null)        {$MetadataArray += $File.Tier.SubString(0,1).ToUpper() + $File.Tier.SubString(1).ToLower()}
+                  If ($File.Author -ne $Null)      {$AuthorArray += $File.Author}
+
+              }
+
+              # Because there might be multiple files in the $MetaDataArray and $AuthorArrays with the same metadata and author data, duplicate values might have been added to the output arrays.
+              # We only need one instance of each metadata field or author value so the following removes any duplicate values.
+              $MetadataArray = $MetadataArray | Select-Object -Unique
+              $AuthorArray = $AuthorArray | Select-Object -Unique
+
+              # Added the output arrays to an output hash table.
+              $OutputHashTable = @{
+
+                  FileMetadata = $MetadataArray
+                  AuthorMetadata = $AuthorArray
+
+              }
+
+              # Output the output hash table to the calling statement.
+              Return $OutputHashTable
+
+            }
+
+            #####################
+            #####################
+            # Test-RepoLabel
+
+            Function Test-RepoLabel {
+
+              [CmdletBinding()]
+              param(
+
+                  $Name,
+                  $RepoUri      
+              )
+
+              # Replace placeholder text in the URL retrieved from the GitHub API with the name of the label we're looking for
+              $LabelUri = $RepoUri.Replace("{/name}","/$Name")
+
+              # Check to see if the label we want exists in the repo
+              Try {
+
+                  Write-Host "Checking to see if label $Name exists in repo URL $LabelUri."
+
+                  $LabelResults = Invoke-WebRequest -UseBasicParsing -Uri $LabelUri -Headers $GitHubHeaders  -ErrorAction Stop
+                  $LabelFound = $True
+                  
+              } Catch {
+
+                  # OK if label doesn't exist. Just means we need to create it.
+                  $LabelFound = $False
+
+              }
+
+              # Return boolean to calling statement
+              $LabelFound
+
+            }
+
+            #####################
+            #####################
+            # New-RepoLabel
+
+            Function New-RepoLabel {
+
+            [CmdletBinding()]
+              param(
+
+                  $Name,
+                  $Color,
+                  $Description,
+                  $RepoUri
+              )
+
+              # Remove placeholder text from repo URL
+              $RepoUri = $RepoUri.Replace("{/name}","")
+              $Result = $Null
+
+              # Construct the JSON statement that will be sent to GitHub as the body of the web request. Include the name of the label, its color, and description. 
+              # Convert hash table to JSON
+              $Body = @{}
+              $Body.Add("name", $Name)
+              $Body.Add("color", $Color)
+              $Body.Add("description", $description)
+              $Body = $Body | ConvertTo-Json
+
+              # Try to submit the request to GitHub API to create the label
+              Try {
+
+                  Write-Host "Creating label $Name with color $Color on repo $RepoUri. Request ID: $RequestId."
+                  
+                  $Result = Invoke-RestMethod -Uri $RepoUri -Headers $GitHubHeaders  -Body $Body -Method POST
+
+              } Catch {
+
+                  Write-Error "ERROR: Failed to create new label $Name on repo $RepoUri. Error: $($Error[0].Exception.Message). Request ID: $RequestId."
+
+              }
+
+            }
+
+            #####################
+            #####################
+            # Test-PrLabel
+            Function Test-Prlabel {
+
+              [CmdletBinding()]
+              param(
+
+                  $LabelArray,
+                  $IssueUrl      
+              )
+
+              # Replace placeholder text in the URL retrieved from the GitHub API with the name of the label we're looking for
+              $IssueLabelUrl = "$IssueUrl/labels"
+              $LabelHashTable = @{}
+              $LabelResults = $Null
+
+              # Get list of labels on issue/PR
+              Try {
+
+                  Write-Host "Getting labels on issue $IssueLabelUrl."
+
+                  $LabelResults = Invoke-RestMethod -Uri $IssueLabelUrl -Headers $GitHubHeaders  -ErrorAction Stop
+
+              } Catch {
+
+                  Write-Error "ERROR: Failed to get list of labels on $IssueLabelUrl. Error: $($Error[0].Exception.Message). Request ID: $RequestId."
+
+
+              }
+
+              ForEach ($Label in $LabelArray) {
+
+                  If ($LabelResults -ne $Null) {
+
+                    If ($LabelResults.name.Contains($Label)) {
+
+                        $LabelHashTable.Add($Label, $True)
+
+                    } Else {
+
+                        $LabelHashTable.Add($Label, $False)
+
+                    }
+
+                  } Else {
+
+                    $LabelHashTable.Add($Label, $False)
+
+                  }
+
+              }
+
+
+              # Return array of labels on Issue/PR
+              Return $LabelHashTable
+
+
+            }
+
+            #####################
+            #####################
+            # Set-PrLabel
+
+            Function Set-PrLabel {
+
+              param(
+
+                  $IssueUrl,
+                  $LabelName
+                
+              )
+
+              # Construct label URL based on issue or pull request URL
+              $IssueLabelUrl = "$IssueUrl/labels"
+
+              # Construct JSON statement that will be sent to GitHub as the body of the web request. Includes only the label name. GitHub expects an array even thought it's a single value
+              # Convert array to JSON
+              $Body = @()
+              $Body += $LabelName
+              $Body = ConvertTo-Json -InputObject $Body
+
+              # Try to submit the request to GitHub API to apply they label to the issue or pull request
+              Try {
+
+                  Write-Host "Setting label $LabelName on URL $IssueLabelUrl. Request ID: $RequestId."
+
+                  $Result = Invoke-RestMethod -Uri $IssueLabelUrl -Body $Body -Headers $GitHubHeaders  -Method POST
+
+
+              } Catch {
+
+                  Write-Error "ERROR: Failed to set label on URL $IssueLabelUrl. Error: $($Error[0].Exception.Message). Request ID: $RequestId."
+
+              }
+
+            }
+
+            #####################
+            #####################
+            # Set-PrAssignee
+
+            Function Set-PrAssignee {
+
+              param(
+
+                  $IssueUrl,
+                  $GitHubAssignees
+                
+              )
+
+                $UsersToAssign = @()
+
+                # $ExcludedUserList is a list of users from $DataTableData that shouldn't be assigned to PRs for some reason. If it's $Null, no users need to be excluded.
+                If ($ExcludedUserList -ne $Null) {
+
+                    # Loop through each of the eligible assignees found in the PR.
+                    ForEach ($User in $GitHubAssignees) {
+
+                        # Check if an assignee is found in the exclusion list. If yes, exclude the user by not adding to users to assign list. If no, add the user to the users to assign list.
+                        If ($ExcludedUserList.Contains($User)) {
+
+                            Write-Host "Excluding $User from assignment list. Request ID: $RequestId."
+
+                        } Else {
+
+                            $UsersToAssign += $User
+
+                        }
+
+                    }
+
+                } Else {
+
+                    $UsersToAssign = $GitHubAssignees
+
+                }
+
+              # Construct JSON statement that will be sent to GitHub as the body of the web request. GitHub expects an array regardless of whether it's a single value or multiple.
+              # Convert array to JSON
+              $Body = @{}
+              $Body.Add("assignees", $UsersToAssign)
+              $Body = $Body | ConvertTo-Json
+
+              $AssigneeUrl = "$IssueUrl/assignees"
+
+              # Try to submit the request to GitHub API to apply they label to the issue or pull request
+              Try {
+                  
+                  Write-Host "Setting accounts $UsersToAssign on URL $AssigneeUrl. Request ID: $RequestId."
+
+                  $Result = Invoke-RestMethod -Uri $AssigneeUrl -Body $Body -Headers $GitHubHeaders  -Method POST
+
+              } Catch {
+
+                  Write-Error "ERROR: Failed assign GitHub accounts on URL $AssigneeUrl. Error: $($Error[0].Exception.Message). Request ID: $RequestId."
+
+              }
+
+            }
+
+            #####################
+            #####################
+            # Main
+
+            Write-Host "Repo: $GitHubRepoName"
+            Write-Host "Sender: $GitHubSender"
+            Write-Host "Request event: $GitRequestEvent"
+            Write-Host "GitHub action: $GitHubAction"
+            Write-Host "GitHub state: $GitHubState"
+            Write-Host "Request Id: $RequestId"
+            Write-Host "Default branch: $DefaultBranch"
+            Write-Host "Target branch: $TargetBranch"
+            Write-Host "PR files URL: $PrFileListUrl"
+
+            Write-Host "Auto assign users on $GitHubRepoName`: $AutoAssignUsers"
+            Write-Host "Auto label on $GitHubRepoName`: $AutoLabel"
+            Write-Host "Excluded branch list: $ExcludedBranchList"
+
+            If (($GitRequestEvent -eq "pull_request") -and (($GitHubAction -eq "opened") -or ($GitHubAction -eq "reopened") -or ($GitHubAction -eq "synchronize"))) {
+
+                Try {
+
+                    Write-Host "Getting file list for PR $PrFileListUrl. Request ID: $RequestId."
+
+                    # Intentionally only getting the first 30 files. More than that is just overkill. Keep in mind that this can include non-yml/md files so the resulting
+                    # number of processed files may be less than 30.
+                    $FileList = Invoke-RestMethod -Method GET -Uri $PrFileListUrl -Headers $GitHubHeaders  
+
+                } Catch {
+
+                    Write-Error "ERROR: Failed to retrieve file list on PR $PrFileListUrl. Error: $($Error[0].Exception.Message). Request ID: $RequestId."
+
+                }
+
+                If ($FileList.Count -ge 1) {
+
+                    # Get file metadata (metadata = service, subservice, tech, prod, etc and author metadata)
+                    $FileMetadataArray = Get-FileMetadata -PrFileList $FileList
+
+                    If ($FileMetadataArray -ne $Null) {
+
+                        # Split metadata into .FileMetadata and .AuthorMetadata. .FileMetadata is a one-dimentional array that includes service, subservice, tech, prod, entries.
+                        $FormattedMetadata = Format-FileMetadata -FileMetadata $FileMetadataArray
+
+                        Write-Host "File metadata list: $($FormattedMetadata.FileMetadata)."
+                        Write-Host "Author metadata list: $($FormattedMetadata.AuthorMetadata)."
+
+                        # Auto labelling can be disabled on repos using the $DataTableName table.
+                        If ($AutoLabel -eq $True) {
+
+                            # Loop through each element in the .FileMetadata array to check if value exists as a label on the repo. If not, create the label on the repo.
+                            # Don't confuse with the next ForEach which is PR-level check.
+                            ForEach ($Item in $FormattedMetadata.FileMetadata) {
+
+                                # Check if label exists on the repo.
+                                $LabelExists = Test-RepoLabel -RepoUri $RepoLabelUrl -Name $Item
+
+                                If (!$LabelExists) {
+
+                                # Create label on the repo if it doesn't exist.
+                                New-RepoLabel -RepoUri $RepoLabelUrl -Name $Item -Color $LabelColor -Description $LabelDescription
+
+                                }
+
+                            }
+
+                            # Get a list of all labels that exist on the PR in a hash table. Hash table includes the name of the item in the .FileMetadata array and a boolean
+                            # that indicates whether the item exists as a label on the PR.
+                            # The reason this isn't part of the above repo-level check is because the all the PR-level labels can be retrieved with a single call to GitHub.
+                            # If we included the PR-level checks in the same block as the repo-level checks, we'd be requesting the PR-level repos <number of labels to add> times.
+                            # Don't confuse with the previous ForEach which is a repo-level check.
+                            $LabelResultsArray = Test-Prlabel -LabelArray $FormattedMetadata.FileMetadata -IssueUrl $IssueUrl
+                            
+                            Write-Host "Number of items in LabelResultsArray: $($LabelResultsArray.Count). Request ID: $RequestId."
+
+                            # Loop through all the keys on the label results array. The keys are the items/label names 
+                            ForEach ($Label in $LabelResultsArray.Keys) {
+
+                                If (!$LabelResultsArray.$Label) {
+
+                                Write-Host "Label $Label doesn't exist on $IssueUrl. Adding label. Request ID: $RequestId."
+
+                                Set-PrLabel -IssueUrl $IssueUrl -LabelName $Label
+
+                                }
+
+                            }
+
+                        } Else {
+
+                            Write-Host "Auto labelling for the repo $GitHubRepoName is disabled. Skipping labelling. Request ID: $RequestId."
+
+                        }
+
+                        # Auto user assignment can be disabled on repos using the $DataTableName table.
+                        If ($AutoAssignUsers -eq $True) {
+
+                            # Don't add assignments to PRs in excluded branches listed in $ExcludedBranchList
+                            If (!$ExcludedBranchList.Contains($TargetBranch)) {
+
+                                Set-PrAssignee -IssueUrl $IssueUrl -GitHubAssignees $FormattedMetadata.AuthorMetadata
+
+                            } Else {
+
+                                Write-Host "Target branch $TargetBranch is an excluded branch. Not adding author assignments. Request ID: $RequestId."
+                                
+                            }
+
+                        } Else {
+
+                            Write-Host "Auto assignment of users for the label $GitHubRepoName is disabled. Skipping auto assignment. Request ID: $RequestId."
+
+                        }
+
+                    } Else {
+
+                        Write-Host "No file metadata found in PR $PrFileListUrl. Request ID: $RequestId."
+
+                    } # Metadata found on files check
+
+                } Else {
+
+                    Write-Host "No files found in PR $PrFileListUrl. Request ID: $RequestId."
+
+                } # Number of files in PR check
+                
+            } # PR event and action check
+
