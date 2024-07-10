@@ -100,6 +100,7 @@ The following sections detail capabilities that are **not yet available** for Mi
 - **Multi-Geo** rehome of Loop workspaces and all contained .loop files isn't available. All Loop workspaces are created in the tenant default geo.
 - When users delete an entire Loop workspace, that Loop workspace isn't available in an **end-user visible Recycle bin**. Furthermore, restoring the Loop workspace using admin tooling doesn't update in the Loop app user experience. The user would need to visit a saved page link for a workspace that's restored in order to see it again.
 - When an **admin deletes** a Loop workspace, it **will not be removed from the user's view** of Loop workspaces. When users click on the deleted Loop workspace, it displays an error.
+- When an **admin modifies the list of owners or members** of a Loop workspace through the SharePoint Admin Center or via PowerShell, the **changes won't be visible to the users within that Loop workspace**. Changes to the workspace membership are only updated in the user's view of the Loop app if they're made directly within the Loop app itself.
 - **Individual controls for guest or external sharing** of a specific Loop workspace isn't available.
 - Get and set **conditional access policy** and **block download policy** tenant defaults are available. Individual controls per Loop workspace for these capabilities aren't available.
 
@@ -113,7 +114,7 @@ The following sections detail capabilities that are **not yet available** for Mi
 
 ## Manually initializing Microsoft Loop app for Conditional Access management in Microsoft Entra
 
-In order to select Microsoft Loop app from the cloud app target UX in the Microsoft Entra admin center: Protection | Conditional Access | Select what this policy applies to | select apps | Microsoft Loop, manual provisioning is required.
+In order to select Microsoft Loop app from the cloud app target UX in the Microsoft Entra admin center: Protection | Conditional Access | Select what this policy applies to | select apps | Microsoft Loop, manual provisioning may be required.
 
 1. [Connect to Microsoft 365 with PowerShell - Microsoft 365 Enterprise | Microsoft Learn](/microsoft-365/enterprise/connect-to-microsoft-365-powershell)
 1. Copy the command, Paste into your PowerShell window's command line, and hit Enter to execute:
