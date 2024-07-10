@@ -5,7 +5,7 @@ author: erikre
 manager: dougeby
 audience: ITPro
 ms.topic: article
-ms.date: 03/29/2024
+ms.date: 07/10/2024
 description: Understand app data protection using Microsoft Intune.
 ms.service: o365-solutions
 ms.localizationpriority: high
@@ -61,7 +61,7 @@ Encryption is available for iOS/iPadOS and Android as part of an app protection 
 
 ### Encryption for iOS/iPadOS app protection policy
 
- Intune enforces iOS/iPadOS device encryption to protect app data while the device is locked. Applications may optionally encrypt app data using Intune APP SDK encryption. Intune APP SDK uses iOS/iPadOS cryptography methods to apply 128-bit AES encryption to app data.
+ Intune enforces iOS/iPadOS device encryption to protect app data while the device is locked. Applications may optionally encrypt app data using Intune APP SDK encryption. Intune APP SDK uses iOS/iPadOS cryptography methods to apply 256-bit AES encryption to app data.
 
 When you enable this setting, the user may be required to set up and use a PIN to access their device. If there's no device PIN and encryption is required, the user is prompted to set a PIN with the message "Your organization has required you to first enable a device PIN to access this app."
 
