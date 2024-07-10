@@ -151,9 +151,7 @@ As previously mentioned, Microsoft 365 for frontline workers uses Microsoft Entr
 
 MFA supports several forms of verification methods, including the Microsoft Authenticator app, FIDO2 keys, SMS, and voice calls.
 
-Due to higher cost and legal restrictions, the most secure authentication methods might not be practical for many organizations. For example, FIDO2 security keys are typically considered too expensive, biometric tools like Windows Hello might run against existing regulations or union rules, and SMS sign in might not be possible if frontline workers aren’t permitted to bring their personal devices to work.
-
-MFA provides a high level of security for apps and data but adds ongoing friction to user sign in. For organizations that choose BYOD deployments, MFA might or might not be a practical option. It's highly recommended that business and technical teams validate the user experience with MFA before a broad rollout so that the user impact can be properly considered in change management and readiness efforts.
+MFA provides a high level of security for apps and data but adds friction to user sign in. For organizations that choose BYOD deployments, MFA might or might not be a practical option. It's highly recommended that business and technical teams validate the user experience with MFA before a broad rollout so that the user impact can be properly considered in change management and readiness efforts.
 
 If MFA isn't feasible for your organization or deployment model, you should plan to use robust Conditional Access policies to reduce security risk.
 
@@ -166,7 +164,7 @@ To further simplify access for your frontline workforce, you can use passwordles
 
 Passwordless authentication methods are also typically more secure, and many can satisfy MFA requirements if necessary.
 
-Before proceeding with a passwordless authentication method, determine whether it can work in your existing environment. Considerations like cost, OS support, personal device requirement, and MFA support, can affect whether an authentication method would work for your needs. For example, FIDO2 security keys are currently considered too expensive, and SMS and Authenticator sign in might not be possible if frontline workers aren’t permitted to bring their personal devices to work.
+Before proceeding with a passwordless authentication method, determine whether it can work in your existing environment. Considerations like cost, OS support, personal device requirement, and MFA support, can affect whether an authentication method would work for your needs.
 
 See the following table to assess passwordless authentication methods for your frontline scenario.
 
