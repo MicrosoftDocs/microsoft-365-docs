@@ -9,6 +9,11 @@
             "source_path": "microsoft-365/viva/setup-microsoft-viva.md",
             "redirect_url": "/viva/setup-microsoft-viva",
             "redirect_document_id": false
+          },
+          {
+            "source_path": "microsoft-365/topics/viva-language-support.md",
+            "redirect_url": "/viva/viva-language-support",
+            "redirect_document_id": false
           }
     ]
 }

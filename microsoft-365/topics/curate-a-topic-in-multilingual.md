@@ -1,7 +1,7 @@
 ---
-ms.date: 09/12/2023
+ms.date: 01/01/2024
 title: Curate Multilingual topics in Topics
-ms.author: ninay
+ms.author: daisyfeller
 author: daisyfell
 manager: elizapo
 audience: admin

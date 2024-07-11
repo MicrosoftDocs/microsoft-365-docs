@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: nkagole
 author: nataliekagole
 manager: scotv
-ms.date: 02/18/2020
+ms.date: 06/13/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -17,6 +17,7 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+- must-keep
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
@@ -48,9 +49,7 @@ Follow these steps to automatically verify and set up your Cloudflare domain wit
 
 1. In the Microsoft 365 admin center, select **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>, and select the domain you want to set up.
 
-1. Select the three dots (more actions) \> choose **Start setup**.
-
-    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Select Start setup.":::
+1. Select the three dots (more actions) \> choose **Manage DNS**.
 
 1. On the How do you want to connect your domain? page, select **Continue**.
 
@@ -108,7 +107,7 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
 
     :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-1.png" alt-text="Select the domain you want to update.":::
 
-1. On the Overview page for your domain, select **DNS**.
+1. On the Overview page for your domain, select **DNS** from the navigation bar.
 
     :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-2.png" alt-text="Select DNS.":::
 
@@ -134,9 +133,7 @@ To verify the record in Microsoft 365:
 
 1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
 
-1. On the Domains page, select the domain that you're verifying, and select **Start setup**.
-
-    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Select Start setup.":::
+1. On the Domains page, select the domain that you're verifying, and select **Manage DNS**.
 
 1. Select **Continue**.
 
@@ -153,7 +150,7 @@ To verify the record in Microsoft 365:
 
    :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-1.png" alt-text="Select the domain you want to update.":::
 
-1. On the Overview page for your domain, select **DNS**.
+1. On the Overview page for your domain, select **DNS** from the navigation bar.
 
    :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-2.png" alt-text="Select DNS.":::
 
@@ -185,7 +182,7 @@ To verify the record in Microsoft 365:
 
    :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-1.png" alt-text="Select the domain you want to update.":::
 
-1. On the Overview page for your domain, select **DNS**.
+1. On the Overview page for your domain, select **DNS** from the navigation bar.
 
    :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-2.png" alt-text="Select DNS.":::
 
@@ -214,7 +211,7 @@ To verify the record in Microsoft 365:
 
     :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-1.png" alt-text="Select the domain you want to update.":::
 
-1. On the Overview page for your domain, select **DNS**.
+1. On the Overview page for your domain, select **DNS** from the navigation bar.
 
     :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-2.png" alt-text="Select DNS.":::
 
@@ -230,7 +227,7 @@ To verify the record in Microsoft 365:
 
 1. Select **Save**.
 
-   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-TXT-save.png" alt-text="Screenshot of where you select Save to add an SPF TXT record.":::
+   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-TXT-spf-protection.png" alt-text="Screenshot of where you select Save to add an SPF TXT record.":::
 
 ## Advanced option: Skype for Business
 
@@ -247,7 +244,7 @@ Only select this option if your organization uses Skype for Business for online 
 
     :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-1.png" alt-text="Select the domain you want to update.":::
 
-1. On the Overview page for your domain, select **DNS**.
+1. On the Overview page for your domain, select **DNS** from the navigation bar.
 
     :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-2.png" alt-text="Select DNS.":::
 
@@ -279,7 +276,7 @@ Only select this option if your organization uses Skype for Business for online 
 
     :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-1.png" alt-text="Select the domain you want to update.":::
 
-1. On the Overview page for your domain, select **DNS**.
+1. On the Overview page for your domain, select **DNS** from the navigation bar.
 
     :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-2.png" alt-text="Select DNS.":::
 
@@ -294,9 +291,7 @@ Only select this option if your organization uses Skype for Business for online 
     |CNAME|sip|sipdir.online.lync.com <br/>|1 Hour|
     |CNAME|lyncdiscover|webdir.online.lync.com <br/>|1 Hour|
 
-1. Select the **Save**.
-
-   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-cname-save.png" alt-text="Screenshot of where you select Save to add CNAME records for Skype for Business.":::
+1. Select **Save**.
 
 1. Add the other CNAME record by copying the values from the second row of the table.
 
@@ -315,7 +310,7 @@ This service helps you secure and remotely manage mobile devices that connect to
 
     :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-1.png" alt-text="Select the domain you want to update.":::
 
-1. On the Overview page for your domain, select **DNS**.
+1. On the Overview page for your domain, select **DNS** from the navigation bar.
 
     :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-2.png" alt-text="Select DNS.":::
 
@@ -331,8 +326,6 @@ This service helps you secure and remotely manage mobile devices that connect to
     |CNAME|enterpriseenrollment|enterpriseenrollment-s.manage.microsoft.com <br/>|1 Hour|
 
 1. Select **Save**.
-
-   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-cname-save.png" alt-text="Screenshot of where you select Save to add an CNAME record for Mobile Device Management.":::
 
 1. Add the other CNAME record by copying the values from the second row of the table.
 

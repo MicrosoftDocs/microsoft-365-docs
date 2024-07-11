@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: deniseb
-ms.date: 5/10/2024
+ms.date: 06/11/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -24,7 +24,7 @@ ms.custom:
   - AdminTemplateSet
   - has-azure-ad-ps-ref
 search.appverid:
-description: "Learn how a Microsoft 365 global admin can add, update, and remove the pictures in user account profiles and Microsoft 365 Group profiles."
+description: "Learn how a Microsoft 365 admin can add, update, and remove the pictures in user account profiles and Microsoft 365 Group profiles."
 ---
 
 # Change user profile photos and settings
@@ -38,7 +38,10 @@ This article explains how to manage profile photos and photo update settings on 
 
 ## Before you begin
 
-You must be a [global admin](about-admin-roles.md) to complete these steps.
+You must be a [Global Administrator](about-admin-roles.md) to complete these steps.
+
+> [!IMPORTANT]
+> Microsoft recommends that you use roles with the fewest permissions. Using lower permissioned accounts helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
 
 You can't remove existing user photos using the Microsoft 365 admin center. You can only use Microsoft Graph PowerShell.
 
@@ -232,4 +235,4 @@ Photo update settings in your organization include controlling the environment w
 
 ### Select where user profile photos can be edited using Microsoft Graph
 
-Currently, you can configure the photo update settings using Microsoft Graph only. For more information, see Manage user profile photo settings in Microsoft 365 using Microsoft Graph.
+Currently, you can configure the photo update settings using Microsoft Graph only. For more information, see [Manage user profile photo settings in Microsoft 365 using Microsoft Graph](/graph/profilephoto-configure-settings).

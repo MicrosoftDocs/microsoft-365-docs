@@ -7,7 +7,7 @@ author: camillepack
 manager: scotv
 ms.date: 11/27/2023
 audience: Admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 monikerRange: 'o365-worldwide'
@@ -93,7 +93,15 @@ In this section, you can upload Copilot survey results to have them displayed in
 
 Use this feature to provide your organizational leaders with a centralized location for insights on how users feel about the AI assistance they receive from Copilot.
 
+This feature is only available for Global administrators. Users without this role cannot see it in the Microsoft 365 admin center.
+
 ### Upload survey data
+
+To access the Sentiment survey upload feature in the Microsoft 365 admin center, follow these steps:
+
+1. In the Microsoft 365 admin center, go to **Reports** > **Adoption Score**.
+2. Navigate to AI assistance and select **View details**.
+3. On the AI assistance page, navigate to **Assess Copilot sentiment for your org** and select **Record survey results**.
 
 :::image type="content" source="../../media/as-upload-survey.png" alt-text="Screenshot showing the dashboard to upload survey data for Copilot sentiment" lightbox="../../media/as-upload-survey.png":::
 
