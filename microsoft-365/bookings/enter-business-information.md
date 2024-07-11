@@ -43,7 +43,7 @@ On the home page of Bookings, navigate to the Shared Bookings section and select
 
 :::image type="content" source="../media/booking-page-done.png" alt-text="Screenshot showing the loading screen for creating a shared booking page in Microsoft Bookings":::
 
-6. Once you shared booking page is set up, you can share it or configure it further. Select **Get Started** to tailor your shared booking page to meet your business requirements.
+6. Once your shared booking page is set up, you can share it or configure it further. Select **Get Started** to tailor your shared booking page to meet your business requirements.
 
 :::image type="content" source="../media/booking-page-share.png" alt-text="Screenshot showing the option to share your shared booking page in Microsoft Bookings":::
 
