@@ -9,7 +9,7 @@ on: [pull_request]
 jobs:
 
   auto-label-assign:
-    uses: MicrosoftDocs/OfficeDocs-NotInBuild-pr/.github/workflows/AutoLabelAssign.yml@main
+    uses: MicrosoftDocs/OfficeDocs-NotInBuild-pr/.github/workflows/AutoLabelAssign.yml@workflow-prod
     with:
       PayloadJson: ${{ toJSON(github) }}
       AutoAssignUsers: 1
