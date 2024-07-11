@@ -164,7 +164,7 @@ Severity B/C: 9:00 ~24:00 (Beijing Time) a day, 365 days.
 
 ### Open an online request
 
-Save time by starting your service request online. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, choose **Support** \> **New service request**.
+Save time by starting your service request online. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Microsoft 365 admin center</a>, choose **Support** \> **New service request**.
 
 ### Call support
 
