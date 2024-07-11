@@ -26,34 +26,6 @@ description: "Learn how to move users between subscriptions."
 ms.date: 07/10/2024
 ---
 
----
-title: "Move users to a different subscription"
-f1.keywords:
-- NOCSH
-author: cmcatee-MSFT
-ms.author: cmcatee
-manager: scotv
-ms.reviewer: shegu, nicholak
-audience: Admin
-ms.topic: how-to
-ms.service: microsoft-365-business
-ms.subservice: m365-commerce-acquisition
-ms.localizationpriority: medium
-ms.collection: 
-- Tier1
-- scotvorg
-- M365-subscription-management
-- Adm_O365
-ms.custom:
-- commerce_subscriptions
-- AdminSurgePortfolio
-- manage_licenses
-- admindeeplinkMAC
-search.appverid: MET150 
-description: "Learn how to move users between subscriptions."
-ms.date: 06/09/2023
----
-
 # Move users to a different subscription
 
 If you have more than one product, have users with a license for one product, but want to move them to another product, you can replace their existing license with a different one.
