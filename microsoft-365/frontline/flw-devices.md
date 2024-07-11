@@ -17,7 +17,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 
+ms.date: 07/12/2024
 ---
 
 # Frontline device management overview
@@ -44,12 +44,12 @@ A key step in planning is to determine how you’ll deploy mobile devices to you
 
 Shared devices and bring-your-own-device (BYOD) are the most commonly adopted device types used in frontline organizations. The following table lists these deployment models, along with others, and related considerations.
 
-|Device type|Description|Why to use|Deployment considerations|
+|Device type|Description|Why use|Deployment considerations|
 |-----------|-----------|----------|--------------------------|
 |Shared devices |Devices owned and managed by your organization.<br><br>Employees access devices while at work. |Worker productivity and customer experience are a top priority. <br><br> Workers can't access organizational resources when not at work. <br><br>Local laws might prevent personal devices from being used for business purposes.|Define how your frontline sign in and out of the device.<br><br>Consider using Microsoft Entra Conditional Access policies to secure shared devices when multifactor authentication (MFA) isn't an option.|
 |Bring-your-own device (BYOD) |Personal devices owned by the user and managed by your organization. |You want to give employees a convenient way to check shift schedules, chat with colleagues about shift swaps, or access HR resources like their paystub. <br><br>Shared devices or dedicated devices might be impractical from a cost or business-readiness perspective. |Personal devices vary in operating system, storage, and connectivity.<br><br>Personal device use might be against union rules or government regulations.<br><br>Some workers might not have reliable access to a personal mobile device. |
 |Dedicated devices<sup>1</sup>|Devices owned and managed by your organization and issued to a single user.|Worker requires a dedicated phone number to receive calls and texts.<br><br>Organization requires full control over the device and how employees use it.|Cost of dedicated hardware.<br><br>Added effort for rollout and support complexity might not be feasible in field locations. |
-|Kiosk devices<sup>2</sup> |Devices are owned and managed by your organization. Users don't need to sign in or out. |Device has a dedicated purpose. <br><br> Use case doesn't require user authentication.|Collaboration, communication, task, and workflow apps need a user identity to function. <br><br>Not possible to audit user activity. <br><br>Unable to use some security capabilities including MFA. |
+|Kiosk devices<sup>2</sup> |Devices owned and managed by your organization. Users don't need to sign in or out. |Device has a dedicated purpose. <br><br> Use case doesn't require user authentication.|Collaboration, communication, task, and workflow apps need a user identity to function. <br><br>Not possible to audit user activity. <br><br>Unable to use some security capabilities including MFA. |
 
 <sup>1</sup>Dedicated devices are uncommon in frontline deployments primarily due to high cost and effort to manage in the context of high staff turnover.<br>
 <sup>2</sup>Kiosk device deployments aren’t recommended because they don’t allow user auditing and user-based security capabilities like multifactor authentication. [Learn more about kiosk devices](/windows/configuration/assigned-access).
@@ -71,7 +71,7 @@ The deployment model you choose partly determines the device operating systems y
 
 ## Device landscape
 
-When you're planning your device deployment, there are considerations across multiple surface areas. This section describes the landscape and terms to be familiar with when planning your frontline deployment.
+When you're planning your device deployment, there are considerations across multiple surface areas. This section describes the landscape and terms to be familiar with.
 
 ### Mobile device management
 
