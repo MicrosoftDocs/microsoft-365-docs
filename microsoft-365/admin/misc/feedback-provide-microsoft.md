@@ -3,7 +3,7 @@ title: "Learn about how to provide feedback to Microsoft"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekuako
+author: dstrome
 manager: scotv
 ms.date: 11/21/2023
 audience: Admin
