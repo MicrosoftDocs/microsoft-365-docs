@@ -70,7 +70,7 @@
       href: m365-lighthouse-manage-tenant-list.md
     - name: View tenant service health
       href: m365-lighthouse-view-service-health.md
-    - name: Deploy a PowerShell script from Lighthouse
+    - name: Deploy a PowerShell script
       href: m365-lighthouse-deploy-powershell-script.md      
 - name: Manage users within tenants
   items:
@@ -146,7 +146,7 @@
       href: m365-lighthouse-faq.yml
 - name: Privacy and compliance
   items:
-    - name: Data privacy and compliance in Lighthouse
+    - name: Data privacy and compliance
       href: m365-lighthouse-data-privacy-and-compliance.md
-    - name: Data collection for Lighthouse
+    - name: Data collection
       href: m365-lighthouse-data-collection.md
