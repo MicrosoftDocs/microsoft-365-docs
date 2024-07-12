@@ -54,7 +54,7 @@ For a detailed list of requirements and to learn more about using PowerShell scr
 
 8. Select **Deploy**.
  
-# Next steps
+## Next steps
 
 On the **Scripts** page in Lighthouse, select the script from the list to open the script details, where you can see a list of devices targeted to run the script and the status of the script. Keep in mind that it might take some time for the script to run. For help troubleshooting script issues, see [Common issues and resolutions when using PowerShell scripts on Windows 10/11 devices in Intune](/mem/intune/apps/intune-management-extension).
 
