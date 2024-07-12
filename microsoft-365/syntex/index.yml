@@ -46,7 +46,7 @@ landingContent:
             url: /graph/api/resources/documentprocessingjob?view=graph-rest-beta
           - text: Sensitive information prebuilt model
             url: prebuilt-model-sensitive-info.md
-          - text: Track eSignature requests using Approvals in Teams
+          - text: Track and manage eSignature requests using Approvals in Teams
             url: esignature-approvals.md
 
 
