@@ -3,7 +3,7 @@ title: "Planning your portal launch roll-out plan in SharePoint in Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 08/10/2020
+ms.date: 06/27/2024
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
@@ -13,6 +13,7 @@ ms.collection:
 - scotvorg
 - Ent_O365
 - SPO_Content
+- must-keep
 f1.keywords:
 - CSH
 ms.custom: Adm_O365
@@ -28,7 +29,7 @@ A portal is a SharePoint site on your intranet with many site viewers who consum
 
 This article describes how to plan your deployment and roll-out plan to SharePoint in Microsoft 365. It also provides approaches to follow as traditional load testing isn't permitted on SharePoint in Microsoft 365. SharePoint in Microsoft 365 is a cloud service and the load capabilities, health, and overall balance of load in the service are managed by Microsoft.
 
-To help in creating a successful portal, follow the basic principles, practices, and recommendations detailed in the [Creating, launching, and maintaining a healthy portal](/sharepoint/portal-health)
+To help in creating a successful portal, follow the basic principles, practices, and recommendations detailed in [Creating, launching, and maintaining a healthy portal](/sharepoint/portal-health).
 
 ## Portal Launch Scheduler
 
@@ -44,7 +45,7 @@ A key part of a successful launch is the "wave" or "phased roll-out" approach.
 
 ## Can I load test SharePoint in Microsoft 365?
 
-SharePoint in Microsoft 365 is a shared multi-tenanted environment that is balanced across farms and scale is adjusted in an on-going basis. Load testing an environment, like SharePoint in Microsoft 365, whose scale changes continuously won't only  give you unexpected results but it isn't permitted.
+SharePoint in Microsoft 365 is a shared multi-tenanted environment that is balanced across farms and scale is adjusted in an ongoing basis. Load testing an environment, like SharePoint in Microsoft 365, whose scale changes continuously won't only give you unexpected results but it isn't permitted.
 
 Learn more:  [Capacity planning and load testing SharePoint in Microsoft 365](capacity-planning-and-load-testing-sharepoint-online.md)
 
@@ -62,7 +63,7 @@ A few basic factors should be considered:
 - For all site pages in SharePoint, use the [Page Diagnostics tool](./page-diagnostics-for-spo.md), which is a Chromium extension that assists with analyzing and providing guidance. This tool can be used by site owners, editors, administrators, and developers as it is designed to be a starting point for analysis and optimization.
 - Developers should also use development tools like F12 browser developer tool and CTRL-F12 in the browser on modern pages. [Fiddler](https://www.telerik.com/download/fiddler) can also be used to review the size weight (how large the page is in megabytes) of the page and the number of calls and elements impacting the overall page load.
 
-This section was a brief summary for optimizing pages.  To learn more, see:  [Creating, launching, and maintaining a healthy portal](/sharepoint/portal-health).
+This section was a brief summary for optimizing pages. To learn more, see:  [Creating, launching, and maintaining a healthy portal](/sharepoint/portal-health).
 
 ## Follow a Wave / Phased roll-out approach
 
@@ -79,5 +80,5 @@ During each of the waves, gather user feedback around the features and the perfo
 **What to do**:
 
 - Decide on the timing of each phase and ensure that you have a contingency / pause opportunity, should you need to make adjustments before continuing
-- Plan your first group of users that you want to enable, to ensure you receive the feedback you need to move forward.  Where possible, select an active group of users that will provide feedback in a timely fashion
+- Plan your first group of users that you want to enable, to ensure you receive the feedback you need to move forward. Where possible, select an active group of users that will provide feedback in a timely fashion
 - As you plan each wave, try to start with a small user base (less than 5,000 users). Increase the group sizes as you proceed with each wave. By creating a staggered approach, it allows for easier pause opportunities as needed.

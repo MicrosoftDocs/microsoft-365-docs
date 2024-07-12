@@ -1,8 +1,8 @@
 ---
 title: Overview of Loop components in the Microsoft 365 ecosystem
-ms.author: jtremper
-author: jacktremper
-manager: pamgreen
+ms.author: jenz
+author: jenzamora
+manager: jtremper
 audience: Admin
 ms.topic: conceptual
 ms.service: loop
@@ -80,7 +80,7 @@ The .loop files can only be opened as links in your browser, such as in Loop, an
 If you disable these experiences as outlined in the [Settings management](loop-components-configuration.md#settings-management-in-cloud-policy) section, the following experience-changes apply:
 - The create/insert entry point within Teams messaging and Outlook email is hidden. The users won't be able to create new .loop files.
 - Existing messages will no longer render as an interactive Loop component, instead they render as a hyperlink. No interactive content will be displayed within the app that Loop components are disabled.
-- When you click on the hyperlink or browse to a .loop file in OneDrive and click it to open, it opens in a separate browser tab in the Loop component viewer and editor. You will still be able to edit the file.
+- When you click on the hyperlink or browse to a .loop file in OneDrive and click it to open, it opens in a separate browser tab in the Loop component viewer and editor. You'll still be able to edit the file.
 
 ## Known issues
 

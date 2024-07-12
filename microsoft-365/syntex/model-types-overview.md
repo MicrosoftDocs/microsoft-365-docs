@@ -33,7 +33,7 @@ When applied to a SharePoint document library, the model is associated with a co
 
 Syntex uses [custom models](#custom-models) and [prebuilt models](#prebuilt-models). 
 
-![Diagram showing the types of Syntex custom and prebuilt models.](../media/content-understanding/syntex-model-types-diagram-3.png)
+![Diagram showing the types of Syntex custom and prebuilt models.](../media/content-understanding/syntex-model-types-diagram-4.png)
 
 Models can be either *enterprise models*, which are created in a [content center](create-a-content-center.md), or *local models*, which are created on your [local SharePoint site](create-local-model.md).
 
@@ -108,26 +108,32 @@ Prebuilt models include:
 - [Contract processing](#contract-processing)
 - [Invoice processing](#invoice-processing)
 - [Receipt processing](#receipt-processing)
+- [Sensitive information processing](#sensitive-information-processing)
 
-![Screenshot of the Options for model creation page showing the prebuilt model options.](../media/content-understanding/model-options-prebuilt.png)
+![Screenshot of the Options for model creation page showing the prebuilt model options.](../media/content-understanding/use-a-trained-model-section-2.png)
 
 Prebuilt models are pretrained to recognize documents and the structured information in the documents. Instead of having to create a new custom model from scratch, you can iterate on an existing pretrained model to add specific fields that fit the needs of your organization.
 
 ### Contract processing
 
-The contract processing model analyzes and extracts key information from contract documents. The API analyzes contracts in various formats and extracts key contract information such as client or party name, billing address, jurisdiction, and expiration date.
+The prebuilt contract processing model analyzes and extracts key information from contract documents. The API analyzes contracts in various formats and extracts key contract information such as client or party name, billing address, jurisdiction, and expiration date.
 
-For more information about prebuilt contract processing models, see [Use a prebuilt model to extract information from contracts](prebuilt-model-contract.md).
+For more information about contract processing models, see [Use a prebuilt model to extract information from contracts](prebuilt-model-contract.md).
 
 ### Invoice processing
 
-The invoice processing model analyzes and extracts key information from sales invoices. The API analyzes invoices in various formats and extracts key invoice information such as customer name, billing address, due date, and amount due.
+The prebuilt invoice processing model analyzes and extracts key information from sales invoices. The API analyzes invoices in various formats and extracts key invoice information such as customer name, billing address, due date, and amount due.
 
-For more information about prebuilt invoice processing models, see [Use a prebuilt model to extract information from invoices](prebuilt-model-invoice.md).
+For more information about invoice processing models, see [Use a prebuilt model to extract information from invoices](prebuilt-model-invoice.md).
 
 ### Receipt processing
 
 The prebuilt receipt processing model analyzes and extracts key information from sales receipts. The API analyzes printed and handwritten receipts and extracts key receipt information such as merchant name, merchant phone number, transaction date, tax, and transaction total.
 
-For more information about prebuilt receipt processing models, see [Use a prebuilt model to extract information from receipts](prebuilt-model-receipt.md).
+For more information about receipt processing models, see [Use a prebuilt model to extract information from receipts](prebuilt-model-receipt.md).
 
+### Sensitive information processing
+
+The prebuilt sensitive information processing model analyzes, detects, and extracts key information from documents. The API analyzes contracts in various formats and extracts key sensitive information such as social security numbers, financial account numbers, driver license identification numbers, and other personal information.
+
+For more information about sensitive information processing models, see [Use a prebuilt model to detect sensitive information from documents](prebuilt-model-sensitive-info.md).

@@ -1,5 +1,5 @@
 ---
-title: "Enter your Bookings business information"
+title: "Set up your shared booking page"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -15,9 +15,41 @@ ms.collection:
 description: "Follow these instructions to create your About Us page with business name, address, phone number, website URL, logo, and business hours in Microsoft Bookings."
 ---
 
-# Enter your business information in Microsoft Bookings
+# Set up your shared booking page in Microsoft Bookings
 
-In Microsoft Bookings, the Business Information page within the web app contains all the details that you'd typically find on a business' "About us" page. These details include a relevant name, address, phone number, web site URL, privacy policy URL, logo, and business hours.
+Microsoft Bookings is a powerful scheduling tool that allows businesses to manage appointments with ease. One of the key features of Microsoft Bookings is the ability to set up shared bookings. This functionality enables multiple staff members to handle appointments, ensuring greater flexibility and efficiency in managing customer interactions. In this article, we will walk you through the four essential steps required to set up shared bookings in Microsoft Bookings.
+
+## Steps to quickly create a shared booking page
+
+On the home page of Bookings, navigate to the Shared Bookings section and select **Create booking page**. You can either create a booking page from scratch or clone an existing booking page. Select **Create from scratch** to create a new shared booking page.
+
+1. Enter your business name, upload your business logo, and update your business hours. Note, business name is the only required field here. All the other details can be configured later from the Business Information page. This section is covered in detail in [Enter your business information in Microsoft Bookings](#enter-your-business-information-in-microsoft-bookings).
+
+:::image type="content" source="../media/create-shared-booking-page.png" alt-text="Screenshot showing step one out of four for creating a shared booking page in Microsoft Bookings":::
+
+2. Invite staff - Add your team members in this section. These people will be able to view and manage bookings for the team based on the team roles assigned. You can choose to configure this later as well.
+
+:::image type="content" source="../media/booking-page-invite-staff.png" alt-text="Screenshot showing step two out of four for creating a shared booking page in Microsoft Bookings":::
+
+3. Add a service - You can add the list of services you wish to offer or customize the default service shown. You can choose to configure this later and proceed with the default service.
+
+:::image type="content" source="../media/booking-page-set-service.png" alt-text="Screenshot showing step three out of four for creating a shared booking page in Microsoft Bookings":::
+
+4. Choose who can book appointments - Decide the level of control you want to give to your customers for booking appointments from your booking page.
+
+:::image type="content" source="../media/booking-page-permissions.png" alt-text="Screenshot showing step four out of four for creating a shared booking page in Microsoft Bookings":::
+
+5. Select **Create** to finish setting up your booking page. If you quit at this stage, your progress will not be saved.
+
+:::image type="content" source="../media/booking-page-done.png" alt-text="Screenshot showing the loading screen for creating a shared booking page in Microsoft Bookings":::
+
+6. Once your shared booking page is set up, you can share it or configure it further. Select **Get Started** to tailor your shared booking page to meet your business requirements.
+
+:::image type="content" source="../media/booking-page-share.png" alt-text="Screenshot showing the option to share your shared booking page in Microsoft Bookings":::
+
+## Enter your business information in Microsoft Bookings
+
+In Microsoft Bookings, the Business Information page contains all the details that you'd typically find on a business' "About us" page. These details include a relevant name, address, phone number, web site URL, privacy policy URL, logo, and business hours.
 
 The information you provide here's displayed on the page customers and clients use to book appointments (known as the booking page) and in messages and reminders sent to them by Bookings.
 
@@ -26,9 +58,7 @@ The information you provide here's displayed on the page customers and clients u
 
 ## Provide business name and contact information
 
-1. In Microsoft 365, select the App launcher, and then select **Bookings**.
-
-1. In the navigation pane, select **Your calendar** > **Business information** in the left pane.
+1. Once you have created a shared booking page, select **Business information** in the left pane.
 
 1. On the **Basic details** section, enter your business name, address, and phone number you would like to use for your booking page.
 
