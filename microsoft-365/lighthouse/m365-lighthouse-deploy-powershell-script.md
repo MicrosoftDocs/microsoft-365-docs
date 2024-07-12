@@ -47,10 +47,7 @@ For a detailed list of requirements and to learn more about using PowerShell scr
 
 6. (Optional) Enter a description of the script. 
 
-7. In the **PowerShell script** box, enter the script or upload the script file. 
-
-    > [!NOTE]
-    > The maximum file size is 4 MB. 
+7. In the **PowerShell script** box, enter the script or upload the script file. The maximum file size is 4 MB.
 
 8. Select **Deploy**.
  
