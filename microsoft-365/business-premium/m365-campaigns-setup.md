@@ -27,7 +27,7 @@ description: "Setup overview for Microsoft 365 for Campaigns or other businesses
 
 This article describes how to get Microsoft 365 for Campaigns (a special offering for campaigns and political parties in the USA), how to complete the basic setup process, and identify next steps.
 
-:::image type="content" source="media/mission1.png" alt-text="Diagram showing the Sign in and set up phase highlighted.":::
+:::image type="content" source="media/mission1.png" alt-text="Diagram showing the Sign in and set up phase highlighted." lightbox="media/mission1.png":::
 
 ## Get Microsoft 365 for Campaigns
 
@@ -135,7 +135,7 @@ For examples of privacy and consent notices, see Appendix A in [Searching and Se
 
 To help your staff learn about steps to protect your campaign from cyber threats, use this downloadable guide:
 
-[![Image for secure your help protect your campaign info graphic.](../media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pdf)
+[:::image type="content" source="media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png" alt-text="Image for secure your help protect your campaign info graphic.":::](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pdf)
 
 [PDF](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pdf) | [PowerPoint](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pptx)
 

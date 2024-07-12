@@ -32,7 +32,7 @@ Make sure you have one an appropriate role, such as Compliance Administrator ass
 
 ## Use Compliance Manager to get started
 
-:::image type="content" source="./media/m365bp-compliancemanager.png" alt-text="Screenshot of Compliance Manager in Microsoft 365 Business Premium.":::
+:::image type="content" source="media/m365bp-compliancemanager.png" alt-text="Screenshot of Compliance Manager in Microsoft 365 Business Premium." lightbox="media/m365bp-compliancemanager.png":::
 
 Microsoft 365 Business Premium includes Compliance Manager, which can help you get started setting up your compliance features. Such features include data loss prevention, data lifecycle management, and insider risk management, to name a few. Compliance Manager can save you time by highlighting recommendations, a compliance score, and ways to improve your score.
 
@@ -44,15 +44,15 @@ Here's how to get started:
 
 3. On the **Overview** tab, review the information. Select an item or link to view more information, or to take actions, such as configuring a data loss prevention (DLP) policy. For example, in the **Solutions that affect your score** section, you might select the link in the **Remaining actions** column.
 
-   :::image type="content" source="./media/m365bp-compliancesolutions.png" alt-text="Screenshot of Solutions That Affect Your Score pane.":::
+   :::image type="content" source="media/m365bp-compliancesolutions.png" alt-text="Screenshot of Solutions That Affect Your Score pane." lightbox="media/m365bp-compliancesolutions.png":::
 
    That action takes you to the **Improvement actions** tab, which is filtered for the item you selected. In this example we're looking at DLP policies to configure.
 
-   :::image type="content" source="./media/m365bp-dlppoliciestoconfigure.png" alt-text="Screenshot of DLP policies to configure.":::
+   :::image type="content" source="media/m365bp-dlppoliciestoconfigure.png" alt-text="Screenshot of DLP policies to configure." lightbox="media/m365bp-dlppoliciestoconfigure.png":::
 
 4. On the **Improvement actions** tab, select an item. In our example, we've selected **Create customized DLP policies or personally identifiable information**. A page loads that provides more information about the policy to configure.
 
-   :::image type="content" source="./media/m365bp-dlppolicyinfo.png" alt-text="Screenshot of information about DLP policy for customer content.":::
+   :::image type="content" source="media/m365bp-dlppolicyinfo.png" alt-text="Screenshot of information about DLP policy for customer content." lightbox="media/m365bp-dlppolicyinfo.png":::
 
    Follow the information on the screen to set up your DLP policy.
 
