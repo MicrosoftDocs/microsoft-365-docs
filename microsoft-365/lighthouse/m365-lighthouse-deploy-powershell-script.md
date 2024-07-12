@@ -43,7 +43,7 @@ For a detailed list of requirements and to learn more about using PowerShell scr
 
 4. From the **Target group** dropdown list, select the Microsoft Entra group to use to specify the devices that will run the script. The default is **All Devices**.
 
-5. In the **Title** box, enter a name for the script. Script names appear on the **Scripts** tab in Lighthouse and in the Microsoft Intune admin center. 
+5. In the **Title** box, enter a name for the script. Script names appear on the **Scripts** tab in Lighthouse and in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2109431" target="_blank">Microsoft Intune admin center</a>. 
 
 6. (Optional) Enter a description of the script. 
 
