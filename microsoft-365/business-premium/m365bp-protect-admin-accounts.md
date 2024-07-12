@@ -48,7 +48,7 @@ To create more admin accounts:
 
  1. In the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=837890), choose **Users** \> **Active users** in the left nav.
 
-    ![Choose Users and then Active users in the left nav.](../media/Activeusers.png)
+    :::image type="content" source="media/Activeusers.png" alt-text="Choose Users and then Active users in the left nav." lightbox="media/Activeusers.png":::
 
  2. On the **Active users** page, select **Add a user** at the top of the page.
 
@@ -58,7 +58,7 @@ To create more admin accounts:
 
  5. In **Optional settings**, define the role of the user, including adding Admin center access if appropriate.
 
-    :::image type="content" source="media/m365bp-global-admin.png" lightbox="media/m365bp-global-admin.png" alt-text="Define new user roles.":::
+    :::image type="content" source="media/m365bp-global-admin.png" alt-text="Define new user roles." lightbox="media/m365bp-global-admin.png":::
 
  6. Finish and review your settings and select **Finish adding** to confirm the details.
 
