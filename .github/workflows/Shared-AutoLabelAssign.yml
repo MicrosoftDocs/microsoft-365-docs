@@ -493,7 +493,7 @@ jobs:
             Write-Host "Auto label on $GitHubRepoName`: $AutoLabel"
             Write-Host "Excluded branch list: $ExcludedBranchList"
 
-            If (($GitRequestEvent -eq "pull_request") -and (($GitHubAction -eq "opened") -or ($GitHubAction -eq "reopened") -or ($GitHubAction -eq "synchronize"))) {
+            If ((($GitRequestEvent -eq "pull_request") -or ($GitRequestEvent -eq "pull_request_target")) -and (($GitHubAction -eq "opened") -or ($GitHubAction -eq "reopened") -or ($GitHubAction -eq "synchronize"))) {
 
                 Try {
 
