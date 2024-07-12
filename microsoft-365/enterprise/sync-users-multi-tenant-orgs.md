@@ -3,7 +3,7 @@ title: Synchronize users in multitenant organizations in Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 06/16/2024
+ms.date: 06/24/2024
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -17,7 +17,6 @@ description: Learn how to manage user sync in multitenant organizations in Micro
 ---
 
 # Synchronize users in multitenant organizations in Microsoft 365
-
 
 For users in your tenant to be able to collaborate with those in other tenants, you must synchronize your users to the other tenants.
 
@@ -86,7 +85,10 @@ If some people from the other tenant already have guest accounts in your directo
 
 ## Set up initial user synchronization for a multitenant organization
 
-To synchronize identities to other tenants in a multitenant organization
+> [!IMPORTANT]
+> Microsoft recommends that you use roles with the fewest permissions. Using lower permissioned accounts helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
+
+To synchronize identities to other tenants in a multitenant organization:
 
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) as a global administrator.
 1. Expand **Settings** and select **Org settings**.
@@ -102,7 +104,10 @@ This creates a cross-tenant synchronization configuration in Microsoft Entra ID 
 
 If you add additional tenants to your multitenant organization, you need to set up user synchronization with those tenants.
 
-To set up user synchronization with newly added tenants
+> [!IMPORTANT]
+> Microsoft recommends that you use roles with the fewest permissions. Using lower permissioned accounts helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
+
+To set up user synchronization with newly added tenants:
 
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) as a global administrator.
 1. Expand **Settings** and select **Org settings**.
@@ -115,7 +120,10 @@ To set up user synchronization with newly added tenants
 
 You can change which users are synchronized to other tenants in your multitenant organization.
 
-To change which users are synchronized to other tenants
+> [!IMPORTANT]
+> Microsoft recommends that you use roles with the fewest permissions. Using lower permissioned accounts helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
+
+To change which users are synchronized to other tenants:
 
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) as a global administrator.
 1. Expand **Settings** and select **Org settings**.
@@ -129,9 +137,12 @@ This procedure updates the *MTO_Sync_\<TenantID\>* synchronization configuration
 
 ## Set up calendar sharing for tenants in your MTO
 
-Calendar sharing allows users in each multitenant organization (MTO) tenant to view free/busy (time only) calendar availability information. 
+Calendar sharing allows users in each multitenant organization (MTO) tenant to view free/busy (time only) calendar availability information.
 
-To manage free/busy calendar sharing for tenants in your MTO
+> [!IMPORTANT]
+> Microsoft recommends that you use roles with the fewest permissions. Using lower permissioned accounts helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
+
+To manage free/busy calendar sharing for tenants in your MTO:
 
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) as a global administrator.
 1. Expand **Settings** and select **Org settings**.
@@ -143,12 +154,9 @@ To manage free/busy calendar sharing for tenants in your MTO
 
 The calendar sharing feature for MTO utilizes [Organization relationships in Exchange Online](/exchange/sharing/organization-relationships/organization-relationships). The organization relationship will share all users calendar availability and must also be set up by the other tenants in your MTO for free/busy information to be shared.
 
-## Set up MTO user labels in Teams for tenants in your MTO (Preview)
+## Set up MTO user labels in Teams for tenants in your MTO
 
-> [!NOTE]
-> This feature is available in [targeted release](/microsoft-365/admin/manage/release-options-in-office-365).
-
-MTO group admins can now configure an optional label for each tenant that will be displayed alongside MTO synced user's display name in Teams. This allows MTO synced users to be distinguishable within the MTO in Teams interactions. 
+MTO group admins can now configure an optional label for each tenant that will be displayed alongside MTO synced user's display name in Teams. This allows MTO synced users to be distinguishable within the MTO in Teams interactions.
 
 ![Teams people card shows MTO user label "US".](media/sync-users-multi-tenant-orgs/teams-mto-label-people-card.png)
 > _Fig 1: Teams people card shows MTO user label "US"_
@@ -156,22 +164,26 @@ MTO group admins can now configure an optional label for each tenant that will b
 ![Teams search experience shows MTO user label "US".](media/sync-users-multi-tenant-orgs/teams-mto-search.png)
 > _Fig 2: Teams search experience shows MTO user label “US”_
 
-
 Only MTO owners can manage the MTO user labels. Label changes may take some time to process and will only apply to active tenants.
-To manage MTO user labels for tenants in your MTO
+
+> [!IMPORTANT]
+> Microsoft recommends that you use roles with the fewest permissions. Using lower permissioned accounts helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
+
+To manage MTO user labels for tenants in your MTO:
 
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) as a global administrator.
 1. Expand **Settings** and select **Org settings**.
 1. On the **Organization profile** tab, select **Multitenant collaboration**.
 1. Select **Manage settings**.
 1. Select **Edit** under **Tenant label**.
-1. Select either: 
+1. Select either:
 
    1. No label.
-      
+
    1. Use the multitenant organization name for all tenants.
-      
+
    1. Custom (assign a label for each tenant, which cannot be blank).
+
 1. Select **Save changes**.
 
 ## Related topics

@@ -12,7 +12,7 @@ metadata:
   ms.custom: intro-hub-or-landing
   author: chuckedmonson #Required; your GitHub user alias, with correct capitalization.
   ms.author: chucked #Required; microsoft alias of author; optional team alias.
-  ms.date: 09/01/2023 #Required; mm/dd/yyyy format
+  ms.date: 05/07/2024 #Required; mm/dd/yyyy format
   ms.localizationpriority: medium
   titleSuffix: Microsoft Syntex
 
@@ -42,6 +42,11 @@ landingContent:
             url: autofill-overview.md
           - text: Content model Graph API
             url: /graph/api/resources/contentmodel?view=graph-rest-beta
+          - text: Document processing Graph API
+            url: /graph/api/resources/documentprocessingjob?view=graph-rest-beta
+          - text: Sensitive information prebuilt model
+            url: prebuilt-model-sensitive-info.md
+
 
 # Card 2
   - title: Get started
@@ -100,6 +105,8 @@ landingContent:
         links:
           - text: Content model Graph API
             url: /graph/api/resources/contentmodel?view=graph-rest-beta
+          - text: Document processing Graph API
+            url: /graph/api/resources/documentprocessingjob?view=graph-rest-beta
           - text: Unstructured model REST API
             url: /sharepoint/dev/apis/syntex/syntex-model-rest-api
           - text: PowerShell for Syntex
