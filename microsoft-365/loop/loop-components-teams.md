@@ -40,10 +40,12 @@ For information on admin settings for Loop components in Teams, see [Settings ma
 
 ## Clients and platforms
 
+- Available on Loop apps on Windows, iOS, Android, and web.
 - Available on Teams apps on Windows, Mac, iOS, Android, and web.
 - Available on Outlook apps on Windows and web.
 - Available on OneNote apps on Windows and web.
 - Available on Whiteboard apps on Windows, Surface, iOS, Android, and web. iOS and Android are "view and edit" but users can't paste new ones.
+- Available on Office apps on iOS and Android.
 
 ## Loop components and .loop files
 
@@ -71,7 +73,7 @@ Version History allows you to review, restore, or copy from previous versions of
 
 ## What apps can open and edit .loop files?
 
-The .loop files can only be opened as links in your browser, such as in Loop, and as Loop components in Teams chat, Outlook email, Whiteboard, and Word for the web. If downloaded, they can't be opened again without first uploading them back to OneDrive or SharePoint.
+The .loop files can only be opened as links in your browser, such as in Loop, and as Loop components in Teams chat, Outlook email, and all of the apps listed in the "Clients and Platforms" section above. If downloaded, they can't be opened again without first uploading them back to OneDrive or SharePoint.
 
 ## If Loop is disabled from the admin switch, what will the user experience be?
 
@@ -85,8 +87,7 @@ If you disable these experiences as outlined in the [Settings management](loop-c
 - With your tenant's default file permissions set to *Specific people* (only the people the user specifies), copying the link to the Loop component and pasting it in another Teams chat requires the sender to use the permissions dialog and add the recipients in the Specific people option to grant access properly.
 - With your tenant's default file permissions set to *Specific people* (only the people the user specifies), creating a Loop component in a group chat with more than 20 members requires the sender to manually select the permission options for the component.
 - Searching for Loop components in Teams search or Outlook email search returns a link to the Loop component, not the message itself that contained the Loop component link.
-- Loop components are disabled in federated chats.
-- Guests aren't able to view or collaborate on a Loop component.
+- Loop components are disabled in most federated environments.
 - External recipients of emails aren't able to view or collaborate on a Loop component.
 - Loop components don't load if the file was moved to a different library. If the file is moved to a different folder within the same library, then the Loop components continue to load in the message containing the link to the Loop component.
 
