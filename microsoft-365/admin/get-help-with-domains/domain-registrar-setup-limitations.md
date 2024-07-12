@@ -3,7 +3,7 @@ title: "Domain registrars with setup limitations"
 f1.keywords:
 - CSH
 ms.author: pebaum
-author: pebaum
+author: dstrome
 manager: scotv
 ms.date: 08/10/2021
 audience: Admin
