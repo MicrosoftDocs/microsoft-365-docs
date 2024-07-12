@@ -70,6 +70,8 @@
       href: m365-lighthouse-manage-tenant-list.md
     - name: View tenant service health
       href: m365-lighthouse-view-service-health.md
+    - name: Deploy a PowerShell script from Microsoft 365 Lighthouse
+      href: m365-lighthouse-deploy-powershell-script.md      
 - name: Manage users within tenants
   items:
     - name: Overview of the Users page
