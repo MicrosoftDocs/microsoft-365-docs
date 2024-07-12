@@ -17,7 +17,7 @@ description: "Follow these instructions to create your About Us page with busine
 
 # Set up your shared booking page in Microsoft Bookings
 
-Microsoft Bookings is a powerful scheduling tool that allows businesses to manage appointments with ease. One of the key features of Microsoft Bookings is the ability to set up shared bookings. This functionality enables multiple staff members to handle appointments, ensuring greater flexibility and efficiency in managing customer interactions. In this article, we will walk you through the four essential steps required to set up shared bookings in Microsoft Bookings.
+Microsoft Bookings is a powerful scheduling tool that allows businesses to manage appointments with ease. One of the key features of Microsoft Bookings is the ability to set up shared bookings. This functionality enables multiple staff members to handle appointments, ensuring greater flexibility and efficiency in managing customer interactions. In this article, you'll learn about the four essential steps required to set up shared bookings in Microsoft Bookings.
 
 ## Steps to quickly create a shared booking page
 
