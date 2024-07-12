@@ -77,7 +77,7 @@
     - name: Custom domain support in Shared Bookings
       href: custom-domain-support.md
     - name: Use the Shared Bookings Graph APIs
-      href: https://learn.microsoft.com/graph/api/resources/booking-api-overview?view=graph-rest-1.0
+      href: /graph/api/resources/booking-api-overview
     - name: Reporting info for Shared Bookings
       href: reporting-info.md
     - name: Delete a shared booking page
