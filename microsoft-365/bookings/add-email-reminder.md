@@ -15,9 +15,9 @@ ai-usage: ai-assisted
 description: "Learn how to set up and automate email reminders and follow-ups for appointments in Microsoft 365 Business Basic."
 ---
 
-# Automate email reminders and follow-ups in Microsoft 365 Business Basic
+# Add email reminders and follow-up
 
-Follow-up emails and reminders are essential for maintaining effective communication with customers. Timely reminders for appointments, feedback requests, or expressing gratitude can significantly impact your relationship and results. This article guides you through the process of automating email reminders and follow-ups for appointments in Microsoft 365 Business Basic.
+Follow-up emails and reminders are essential for maintaining effective communication with customers. Timely reminders for appointments, feedback requests, or expressing gratitude can significantly impact your relationship and results.
 
 ## Setting up email reminders
 

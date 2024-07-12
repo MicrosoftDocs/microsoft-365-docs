@@ -10,8 +10,11 @@
     - name: Add email reminders and follow-up in Microsoft Bookings
       href: add-email-reminder.md
     - name: Set your banner image
-      href: microsoft-365/bookings/set-banner-image.md
-    - name: Manage your business information in Shared Bookings
+      href: set-banner-image.md
+  - name: Learn about Shared Bookings
+    displayname: Learn about Shared Bookings
+    items:
+    - name: Manage your Shared Bookings customer information
       items:
       - name: Enter your Bookings business information
         href: enter-business-information.md
@@ -20,21 +23,21 @@
       - name: Add staff to Bookings
         href: add-staff.md
       - name: Share your shared booking page
-        href: define-service-offerings.md
-    - name: Manage your team availability for shared bookings
+        href: share-shared-bookings-page.md
+    - name: Manage your team availability for Shared Bookings
       items:
-        - name: Understanding staff roles
-          href: add-staff.md
-        - name: Configure staff availability
-          href: enter-business-information.md
-        - name: Notify staff when a bookings is created or updated
-          href: define-service-offerings.md
-        - name: Configure staff membership when added to a Shared Booking page
-          href: add-staff.md  
+      - name: Understanding staff roles
+        href: staff-roles.md
+      - name: Configure staff availability
+        href: staff-availability.md
+      - name: Notify staff when a bookings is created or updated
+        href: notify-staff-member-assigned-booking.md
+      - name: Configure staff membership when added to a Shared Booking page
+        href: accept-membership-shared-booking-page.md
     - name: Manage your service availability for shared bookings
       items:
         - name: Create a single attendee or multiple attendee booking service
-          href: enter-business-information.md
+          href: service-types.md
         - name: Configure SMS text notifications and reminders
           href: bookings-sms.md
         - name: Configure service availability
@@ -42,11 +45,11 @@
         - name: Use Buffer Time to add prep time
           href: set-buffer-time.md
         - name: Hide services from your booking page
-          href: add-staff.md
+          href: hide-service-on-booking-page.md
     - name: Manage your customers for shared bookings
       items:
         - name: Let customers manage their bookings
-          href: define-service-offerings.md
+          href: customers-manage-booking.md
         - name: Create an appointment on behalf of a customer
           href: create-a-manual-booking.md  
         - name: Add custom questions for customers

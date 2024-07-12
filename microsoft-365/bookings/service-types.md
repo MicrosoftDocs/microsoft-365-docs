@@ -3,7 +3,7 @@ title: "How to create personalized and group services in Microsoft Bookings"
 ms.author: camillepack
 author: pritikar
 manager: scotv
-ms.date: 05/29/2024  
+ms.date: 07/11/2024  
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium

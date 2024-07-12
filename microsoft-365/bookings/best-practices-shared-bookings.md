@@ -3,7 +3,7 @@ title: "Best practices for using Shared Bookings"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 05/28/2024
+ms.date: 07/11/2024
 audience: Admin
 ms.topic: article
 ms.service: bookings
@@ -12,14 +12,14 @@ ms.collection:
 - Tier1
 - scotvorg
 - essentials-manage
-description: "Understand and implement best practices for using Shared Bookings feature."
+description: "Understand and implement best practices for using Shared Bookings features."
 ---
 
-# Best Practices for Using Microsoft 365 Business Basic's Bookings Feature
+# Best practices for using Shared Bookings
 
 Microsoft Bookings allows you to create and manage online appointments with your customers. By setting up multiple booking pages, offering different services, and assigning staff members, you can optimize your scheduling process. In this article, we'll cover best practices for using Bookings to help you get the most out of Shared Bookings.
 
-## Use a Custom Domain for Booking Pages
+## Use a custom domain for booking pages
 
 By default, shared booking pages have a domain name in this format: "@.onmicrosoft.com". Domain admins can change the domain name to match their organization's name, creating a more professional and consistent brand for customers. For example, you can use "@bookings.contoso.com" instead.
 
@@ -28,13 +28,13 @@ By default, shared booking pages have a domain name in this format: "@.onmicroso
 
 For more information about custom domain support in Bookings, see [Custom domain support in Shared Bookings](custom-domain-support.md).
 
-## Enable Granular Admin Controls via MAC for Shared Bookings
+## Enable granular admin controls for Shared Bookings
 
-Admins can configure granular controls to ensure additional control over shared booking pages in the organization. This allows you to define how shared Bookings will be used in your organization.
+Admins can configure granular controls to ensure additional control over shared booking pages in the organization. This allows you to define how Shared Bookings will be used in your organization.
 
-See [Turn on or off Shared Bookings for organization](turn-bookings-on-or-off.md) for more details.
+See [Manage granular controls for Shared Bookings](granular-controls-shared-bookings.md) for more details.
 
-## Use Power Automate Connectors to Build Bookings Workflows
+## Use Power Automate connectors to build Bookings workflows
 
 With Power Automate, Bookings admins can create workflows that automate tasks and processes in Bookings. For example, posting messages in a Teams channel when an appointment is created or syncing data with other apps. Power Automate provides a set of connectors for Bookings that let you access and control data from your booking pages, services, staff members, and customers.
 
@@ -42,10 +42,10 @@ To get started with Power Automate and Bookings, use the templates available in 
 
 For more information about Power Automate and Bookings, see [Use Power Automate connectors to build Bookings workflows](power-automate-integration.md).
 
-## Use Bookings Graph APIs for Bulk Scenarios and Reporting
+## Use Bookings Graph APIs for bulk scenarios and reporting
 
 You can use the Bookings Graph API (shared bookings) to create, read, update, and delete various entities like services, staff members, customers, and appointments. You can also use the Bookings API to integrate shared bookings with other apps and systems, such as a CRM, ERP, or business intelligence tools.
 
 You can use the Graph APIs for bulk creation of shared booking pages in the organization based on specific needs. Additionally, you can cater to reporting and governance purposes, such as an overview of all shared booking pages in the organization or managing staff and services for booking pages.
 
-To learn more about the Bookings API in Microsoft Graph, see [Use the Bookings API](/graph/api/resources/booking-api-overview?view=graph-rest-1.0).
+To learn more about the Bookings API in Microsoft Graph, see [Use the Bookings API](/graph/api/resources/booking-api-overview?view=graph-rest-1.0&preserve-view=true).

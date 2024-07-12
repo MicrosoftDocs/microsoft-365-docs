@@ -1,24 +1,26 @@
----  
-title: "Accept membership to a Shared Booking page"  
+---
+title: "Accept membership to a Shared Booking page"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 05/29/2024  
-ms.topic: article
-ms.service: bookings 
+ms.date: 07/11/2024
+audience: Admin
+ms.topic: how-to
+ms.service: bookings
 ms.localizationpriority: medium
+ms.custom: QuickDraft
+ms.collection:
 - scotvorg
 - essentials-manage
-ms.custom: QuickDraft
 ai-usage: ai-assisted
-description: "Learn how staff can accept membership when they are added to a Shared Booking page." 
+description: "Learn how staff can accept membership when they are added to a Shared Booking page."
 ---
 
 # Accept membership to a shared booking page
 
 As an admin, you want to know how staff can accept membership when they're added to a Shared Booking page.
 
-## Email Invitation
+## Email invitation
 
 When a staff member is added to a Shared Booking page by the owner or another staff member, they receive an email invitation from Microsoft Bookings. The email includes a link to join the shared booking page. Once the staff member accepts the invite to join the shared booking page, they can select the link to open the Bookings app in Microsoft 365 and see the details of the Shared Booking page.
 

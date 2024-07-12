@@ -3,7 +3,7 @@ title: "Configure service availability"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 05/28/2024
+ms.date: 07/11/2024
 audience: Admin
 ms.topic: article
 ms.service: bookings
@@ -26,9 +26,9 @@ In Microsoft Bookings, managing service availability is essential for efficient 
 
 There are three categories of service availability.
 
-1.  **Bookable when staff are free:** This means that your service will only be available when your staff members who offer this service are also available. This option helps you avoid double-booking or conflicts in your staff's schedule.
-2.  **Not bookable:** This means that your service cannot be booked by your customers at all. You can use this option if you want to temporarily suspend a service or make it unavailable for online booking. You can still manually book this service from your calendar if you need to.
-3.  **Custom hours:** This means that you can set a specific weekly schedule for your service availability. This option gives you more flexibility and control over your service schedule.
+1. **Bookable when staff are free:** This means that your service will only be available when your staff members who offer this service are also available. This option helps you avoid double-booking or conflicts in your staff's schedule.
+2. **Not bookable:** This means that your service cannot be booked by your customers at all. You can use this option if you want to temporarily suspend a service or make it unavailable for online booking. You can still manually book this service from your calendar if you need to.
+3. **Custom hours:** This means that you can set a specific weekly schedule for your service availability. This option gives you more flexibility and control over your service schedule.
 
 These options apply to the general availability of your service. If you want to set different availability for a specific date range, you can select "Add a different date range" and enter the start and end dates for that period. Then choose one of the three options for that date range. You can add multiple date ranges with different availability settings, which will override the general availability of your service. This way, you can customize your service availability for holidays, special events, or any other occasions.
 
@@ -38,10 +38,10 @@ There may be times when you don't want to accept bookings, such as holidays, vac
 
 To configure your services as "Not bookable" for the specified dates, follow these steps:
 
-1.  Open service settings of the service you want to change your availability for.
-2.  Select Availability Options.
-3.  Select 'Set availability for a different date range'.
-4.  Enter the period for which you will not accept any bookings for this service.
-5.  Select 'Not Bookable'.
+1. Open service settings of the service you want to change your availability for.
+2. Select Availability Options.
+3. Select **Set availability for a different date range**.
+4. Enter the period for which you will not accept any bookings for this service.
+5. Select **Not Bookable**.
 
 Configuring service availability in Microsoft Bookings offers a tailored approach to appointment scheduling, aligning staff availability with customer bookings seamlessly. Whether it's recurring sessions or custom date ranges, Bookings empowers businesses to optimize their resources and enhance customer experience.

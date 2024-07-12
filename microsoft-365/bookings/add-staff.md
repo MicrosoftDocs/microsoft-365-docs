@@ -3,7 +3,7 @@ title: "Add team members to Bookings"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 09/14/2023
+ms.date: 07/11/2024
 audience: Admin
 ms.topic: how-to
 ms.service: bookings

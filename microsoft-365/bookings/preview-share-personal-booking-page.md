@@ -3,7 +3,7 @@ title: "Preview and share your personal booking page"
 ms.author: pritikar
 author: kwekuako
 manager: scotv
-ms.date: 05/02/2024  
+ms.date: 07/11/2024  
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
@@ -16,14 +16,14 @@ ms.collection:
 ms.custom: QuickDraft
 AI_Usage:  
 - AI-Assisted
-description: Preview and share your personal booking page with clients and customers
+description: Preview and share your personal booking page with clients and customers with Microsoft Bookings.
 ---
 
 # Preview and share your personal booking page
 
 To preview the experience your customers will have when booking an appointment with you, select the 'Personal booking page' heading and then the copy button. This will automatically copy the link to your personal booking page, which you can share or open in a new tab to preview.
 
-:::image type="content" source="media/preview_booking-page.png" alt-text="Screenshot showing home page for Microsoft Bookings." lightbox="media/preview_booking-page.png":::
+:::image type="content" source="../media/preview-booking-page.png" alt-text="Screenshot showing home page for Microsoft Bookings." lightbox="../media/preview-booking-page.png":::
 
 When you open the link in a new tab, you'll see the page that your customers will use to book time with you. For example, let's say you offer two services: "Insurance Planning" and "Investment Management". On your personal booking page, customers can choose between these services, select their preferred dates and times, provide their contact information, and then proceed to book the service.
 

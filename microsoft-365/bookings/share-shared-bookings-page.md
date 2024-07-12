@@ -1,5 +1,5 @@
 ---
-title: "Sharing Your Shared Booking Page"
+title: "Sharing your shared booking page"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -15,7 +15,7 @@ ms.collection:
 description: "Learn how to share the Microsoft Bookings shared booking page with clients or customers."
 ---
 
-# Sharing Your Shared Booking Page in Microsoft Bookings
+# Sharing your shared booking page in Microsoft Bookings
 
 After configuring your shared booking page in Microsoft Bookings, it's time to share it with your clients or customers. Follow the steps in this article to learn about how to share the link to your booking page. This will help you reach more potential clients and make it easier for them to book appointments with you.
 
@@ -26,7 +26,7 @@ After configuring your shared booking page in Microsoft Bookings, it's time to s
 
 You can share the link to your booking page using the methods below.
 
-- **Copy Link**: Copy the link to your booking page and share it by email, SMS text messages, Microsft Teams, in your email signature, or any social media you prefer.
+- **Copy Link**: Copy the link to your booking page and share it by email, SMS text messages, Microsoft Teams, in your email signature, or any social media you prefer.
 - **Share on Social Media**: Increase visibility by sharing the booking page link on your social media platforms, such as Facebook, Twitter, or LinkedIn. This will allow potential clients to discover your services and book appointments easily.
 - **Share via Email**: Microsoft Bookings provides an option to share the link directly via email. Click the **Email** button, and an automated email function will open, allowing you to send the booking page link to your contacts.
 - **Embed in Your Website**: If your organization has a website, embed the booking page link directly so visitors can access your services and schedule appointments without leaving your web environment. Microsoft Bookings allows you to copy the link and the iframe in just one click.

@@ -15,23 +15,23 @@ ms.collection:
 ms.custom: QuickDraft
 AI_Usage:  
 - AI-Assisted
-description: "Configure settings to control who can use Shared Bookings."
+description: "Learn how to configure settings to control who can use Shared Bookings."
 ---
 
 # Manage granular controls for Shared Bookings
 
 Shared Bookings offers granular controls, which allows administrators to manage various aspects of bookings. This article guides you on how to configure settings to control who can use Shared Bookings and decide what information is shared. You can also set staff approval requirements, and enforce naming policies.
 
-## Accessing Shared Bookings Settings
+## Accessing Shared Bookings settings
 
-Access the granular controls for Shared Bookings.
+Here are the steps to access the granular controls for Shared Bookings:
 
-1. Go to the Microsoft 365 admin center and go to **Settings** \> **Org settings** \> **Bookings**.
+1. Go to the Microsoft 365 admin center and go to **Settings** > **Org settings** > **Bookings**.
 
 > [!NOTE]
 > Changes to tenant settings may take up to four hours to apply.
 
-## Configuring Shared Bookings Settings
+## Configuring Shared Bookings settings
 
 Here are the different settings you can configure:
 
