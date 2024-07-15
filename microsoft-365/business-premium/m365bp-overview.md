@@ -35,7 +35,7 @@ Microsoft 365 Business Premium—with its world class [productivity and cybersec
 
 You are your organization's first and best defense against hackers and cyberattackers, including random individuals, organized crime, or highly sophisticated nation states. The task before you is this: let Microsoft 365 Business Premium help secure your organization's future! Approach this task by taking on the following six goals:
 
-:::image type="content" source="media/sixmissions.png" alt-text="Diagram listing your six goals.":::
+:::image type="content" source="media/sixmissions.png" alt-text="Diagram listing your six goals." lightbox="media/sixmissions.png":::
 
 |What to do|How to do it|
 |---|---|
