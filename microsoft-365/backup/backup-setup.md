@@ -1,11 +1,11 @@
 ---
-title: Set up Microsoft 365 Backup (Preview)
+title: Set up Microsoft 365 Backup
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 04/11/2024
+ms.date: 07/31/2024
 ms.topic: conceptual
 ms.service: microsoft-365-backup
 ms.custom: backup
@@ -16,7 +16,7 @@ ms.localizationpriority:  medium
 description: Learn how to set up and configure Microsoft 365 Backup and backup policies.
 ---
 
-# Set up Microsoft 365 Backup (Preview)
+# Set up Microsoft 365 Backup
 
 > [!NOTE]
 > Microsoft 365 Backup (Preview) is now available worldwide in all commercial cloud environments. General availability is expected to be mid-2024. This preview feature is subject to change and [limitations as defined](backup-limitations.md). Before you begin, read the [Microsoft 365 Backup preview terms and conditions](backup-preview-terms.md).
@@ -25,10 +25,7 @@ Get started with Microsoft 365 Backup by following these simple three steps in t
 
 ![Diagram showing the three-step setup process for Microsoft 365 Backup.](../media/m365-backup/backup-setup-diagram.png)
 
-<!---<insert how-to Affirma video   – https://aka.ms/M365Backup-how-to-video> --->
-
 ## Step 1: Set up pay-as-you-go billing
-
 
 Microsoft 365 Backup is a pay-as-you-go offering that charges based on consumption, unlike traditional seat-based licenses. To set up pay-as-you-go for Microsoft 365 Backup, you will need to have this information:
 
@@ -62,18 +59,13 @@ To turn on Microsoft 365 Backup, you'll need to go to the Microsoft 365 admin ce
 
 3. On the **Automate content processes with Syntex** page, select **Go to Syntex settings**.
 
-4. On the Syntex page, in the left navigation, select **Storage**. From the list of products, select **Backup Preview**.
+4. On the Syntex page, in the left navigation, select **Storage**. From the list of products, select **Backup**.
 
 5. By default, the feature is turned off. On the **Backup** panel, select **Turn on** to enable Microsoft 365 Backup for your organization.
 
 6. Review the applicable [terms of service for Microsoft 365 Backup](backup-preview-terms.md) and select **Confirm**.
 
     ![Screenshot of the Turn on Backup panel and the Confirm button.](../media/m365-backup/backup-setup-turn-on.png)
-<!---
-8. Select **Go to Microsoft 365 Backup** to start setting up Microsoft 365 Backup on OneDrive, SharePoint, or Exchange.
-
-    ![Screenshot of the Microsoft 365 Backup page showing SharePoint, Exchange, and OneDrive.](../../media/content-understanding/backup-setup-backup-page.png)
---->
 
 ## Step 3: Create backup policies to protect your data
 

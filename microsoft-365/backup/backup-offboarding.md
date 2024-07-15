@@ -1,11 +1,11 @@
 ---
-title: Offboarding in Microsoft 365 Backup (Preview)
+title: Offboarding in Microsoft 365 Backup
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 04/11/2024
+ms.date: 07/31/2024
 ms.topic: conceptual
 ms.service: microsoft-365-backup
 ms.custom: backup
@@ -16,10 +16,8 @@ ms.localizationpriority:  medium
 description: Learn about how to offboard usage in Microsoft 365 Backup.
 ---
 
-# Offboarding in Microsoft 365 Backup (Preview)
+# Offboarding in Microsoft 365 Backup
 
-> [!NOTE]
-> This feature is currently in preview and subject to change.
 
 To no longer use the Microsoft 365 Backup tool, you must offboard usage. This action includes pausing and deleting all active policies and deleting all of the backed-up data. During the preview, there are three ways that offboarding is initiated:
 

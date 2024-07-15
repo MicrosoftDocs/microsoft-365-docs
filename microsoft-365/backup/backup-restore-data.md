@@ -1,11 +1,11 @@
 ---
-title: Restore data in Microsoft 365 Backup (Preview)
+title: Restore data in Microsoft 365 Backup
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 06/21/2024
+ms.date: 07/31/2024
 ms.topic: conceptual
 ms.service: microsoft-365-backup
 ms.custom: backup
@@ -16,10 +16,7 @@ ms.localizationpriority:  medium
 description: Learn how to restore data using restore points and express restore points in Microsoft 365 Backup.
 ---
 
-# Restore data in Microsoft 365 Backup (Preview)
-
-> [!NOTE]
-> This feature is currently in preview and subject to change.
+# Restore data in Microsoft 365 Backup
 
 Once you back up your data, you might need to restore the data if there was an accidental deletion, ransomware attack, or other event. The Restore feature in Microsoft 365 Backup is created to help you restore backed up data.
 

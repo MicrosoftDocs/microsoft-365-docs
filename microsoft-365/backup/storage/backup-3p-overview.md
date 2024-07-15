@@ -1,11 +1,11 @@
 ---
-title: Overview for third-party developers of Microsoft 365 Backup Storage (Preview)
+title: Overview for third-party developers of Microsoft 365 Backup Storage
 ms.author: waynewin
 author: WayneEwington
 manager: brgussin
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 06/03/2024
+ms.date: 07/31/2024
 ms.topic: conceptual
 ms.service: microsoft-365-backup
 ms.custom: backup
@@ -16,10 +16,7 @@ ms.localizationpriority:  medium
 description: Overview for third-party developers for Microsoft 365 Backup Storage.
 ---
 
-# Overview for third-party developers of Microsoft 365 Backup Storage (Preview)
-
-> [!NOTE]
-> This feature is currently in preview and subject to change.
+# Overview for third-party developers of Microsoft 365 Backup Storage
 
 Third-party developers can create their own applications to manage Microsoft 365 Backup Storage instead of using the out-of-the-box experience provided by Microsoft.
 

@@ -1,11 +1,11 @@
 ---
-title: Application lifecycle for Microsoft 365 Backup Storage (Preview)
+title: Application lifecycle for Microsoft 365 Backup Storage
 ms.author: waynewin
 author: WayneEwington
 manager: brgussin
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 06/03/2024
+ms.date: 07/31/2024
 ms.topic: conceptual
 ms.service: microsoft-365-backup
 ms.custom: backup
@@ -16,10 +16,7 @@ ms.localizationpriority:  medium
 description: Application lifecycle for Microsoft 365 Backup Storage.
 ---
 
-# Application lifecycle for Microsoft 365 Backup Storage (Preview)
-
-> [!NOTE]
-> This feature is currently in preview and subject to change.
+# Application lifecycle for Microsoft 365 Backup Storage
 
 ## Onboard a third-party Microsoft 365 Backup Storage application
 

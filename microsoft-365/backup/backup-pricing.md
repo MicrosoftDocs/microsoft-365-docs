@@ -1,11 +1,11 @@
 ---
-title: Pricing model for Microsoft 365 Backup (Preview)
+title: Pricing model for Microsoft 365 Backup
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 04/11/2024
+ms.date: 07/31/2024
 ms.topic: conceptual
 ms.service: microsoft-365-backup
 ms.custom: backup
@@ -16,10 +16,7 @@ ms.localizationpriority:  medium
 description: Learn about the charge model and pricing calculator for Microsoft 365 Backup.
 ---
 
-# Pricing model for Microsoft 365 Backup (Preview)
-
-> [!NOTE]
-> This feature is currently in preview and subject to change.
+# Pricing model for Microsoft 365 Backup
 
 ## Microsoft 365 Backup charge model
 

@@ -1,11 +1,11 @@
 ---
-title: Frequently asked questions about Microsoft 365 Backup (Preview)
+title: Frequently asked questions about Microsoft 365 Backup
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 04/11/2024
+ms.date: 07/31/2024
 ms.topic: conceptual
 ms.service: microsoft-365-backup
 ms.custom: backup
@@ -17,10 +17,8 @@ ms.localizationpriority:  medium
 description: Read frequently asked questions about Microsoft 365 Backup.
 ---
 
-# Frequently asked questions about Microsoft 365 Backup (Preview)
+# Frequently asked questions about Microsoft 365 Backup
 
-> [!NOTE]
-> This feature is currently in preview and subject to change.
 
 #### Has Microsoft's stance on shared responsibility of data protection changed?
 
@@ -73,15 +71,10 @@ Example events that aren't versioned or recoverable via backup:
 
 The recovery point objective (RPO) is the maximum amount of time between the most recent backup and a data destruction event. Stated another way, it’s the amount data lost due to a data destruction event not recoverable via the backups. In the case of Microsoft 365 Backup, the RPOs are:
 
-For OneDrive and SharePoint, the RPO for the first two weeks is 15 minutes, then one week beyond that. This means for the first two weeks, the most amount of data that can be lost due to a data destruction event is roughly 10 minute’s worth of the most recent data. Likewise, after two weeks, the most amount of data that can be lost is a week’s worth of data.
+- For OneDrive and SharePoint, the RPO for the first two weeks is 15 minutes, then one week beyond that. This means for the first two weeks, the most amount of data that can be lost due to a data destruction event is roughly 10 minute’s worth of the most recent data. Likewise, after two weeks, the most amount of data that can be lost is a week’s worth of data.
 
-For Exchange Online, the RPO is 10 minutes, meaning the most amount of data that can be lost due to a data destruction event is roughly 10 minutes’s worth of data.
+- For Exchange Online, the RPO is 10 minutes, meaning the most amount of data that can be lost due to a data destruction event is roughly 10 minutes’s worth of data.
 
 Let's start with what it doesn't mean: We are *not* taking snapshots every 10 minutes.
 
 Backup frequency of 10 minutes (if the item is modified) means that changes to the item will be saved as a version once every 10 minutes, no matter how many changes are made in that 10-minute interval. For example, if a ransomware attack encrypts the email item every minute, will we take six copies in an hour.
-<!---
-Let's start with what it doesn't mean: We are *not* taking snapshots every 10 seconds.
-
-Backup frequency of 10 seconds (if the item is modified) means that changes to the item will be saved as a version once every 10 seconds, no matter how many changes are made in that 10-second interval. For example, if a ransomware attack encrypts the email item every second, will we take six copies in a minute.
---->

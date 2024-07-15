@@ -1,11 +1,11 @@
 ---
-title: View and edit backup policies in Microsoft 365 Backup (Preview)
+title: View and edit backup policies in Microsoft 365 Backup
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 04/11/2024
+ms.date: 07/31/2024
 ms.topic: conceptual
 ms.service: microsoft-365-backup
 ms.custom: backup
@@ -16,10 +16,7 @@ ms.localizationpriority:  medium
 description: Learn how to view and edit backup policies in Microsoft 365 Backup.
 ---
 
-# View and edit backup policies in Microsoft 365 Backup (Preview)
-
-> [!NOTE]
-> This feature is currently in preview and subject to change.
+# View and edit backup policies in Microsoft 365 Backup
 
 You can edit the scope of OneDrive accounts, SharePoint sites, and Exchange mailboxes  associated with a backup policy. As part of edit, you can either add new accounts, sites, or mailboxes to or remove them from backup. Removing accounts, sites, and mailboxes from Microsoft 365 Backup doesn't mean existing backups will be deleted, rather it means additional backups will not be taken.
 

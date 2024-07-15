@@ -1,11 +1,11 @@
 ---
-title: Set up pay-as-you-go billing for Microsoft 365 Backup (Preview)
+title: Set up pay-as-you-go billing for Microsoft 365 Backup
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 04/11/2024
+ms.date: 07/31/2024
 ms.topic: conceptual
 ms.service: microsoft-365-backup
 ms.custom: backup
@@ -16,7 +16,7 @@ ms.localizationpriority:  medium
 description: Learn how to set up pay-as-you-go billing for Microsoft 365 Backup.
 ---
 
-# Set up pay-as-you-go billing for Microsoft 365 Backup (Preview)
+# Set up pay-as-you-go billing for Microsoft 365 Backup
 
 As a first step to start using Microsoft 365 Backup, you should link an Azure subscription in Syntex pay-as-you-go, if you haven't already done so. Although Microsoft 365 Backup isn't part of the Microsoft Syntex product suite, this offering is still using the Syntex billing setup for consistency with other Microsoft 365 pay-as-you-go offerings.
 
@@ -79,7 +79,6 @@ You have successfully set up billing. You can proceed to [Step 2: Turn on Micros
 
 > [!NOTE]
 > Any subsequent changes made to the billing for Microsoft 365 Backup in the Microsoft 365 admin center or the Azure portal can take up to 24 hours to become effective.
-
 
 ## Manage consumption and invoices in the Azure portal
 
