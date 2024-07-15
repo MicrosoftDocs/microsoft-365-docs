@@ -70,16 +70,13 @@ To assign apps to devices managed by Intune, the device must be enrolled with In
 
 ## Create groups for Intune
 
-As part of setting up Intune, you may have created groups for your Intune tenant. By using groups within Intune, you can quickly assign apps to the right members of your organization. Additionally, you can exclude specific members of your organization from recieving an app assignment. If you haven't created any Intune groups, create them now.
-- [Create groups of users for Intune](#create-groups-of-users-for-intune)
-- [Create groups of devices for Intune](#create-groups-of-devices-for-intune)
+As part of setting up Intune, you may have created groups for your Intune tenant. By using groups within Intune, you can quickly assign apps to the right members of your organization. Additionally, you can exclude specific members of your organization from recieving an app assignment. 
 
-### Create groups of users for Intune
-https://learn.microsoft.com/en-us/mem/intune/fundamentals/groups-add
+When you create a new group in Intune, you can choose to create a **Security** group or a **Microsoft 365** group. For members of your organization, it is recommended that you create **Security** groups to provide group members access to applications, resources, and assign licenses. Group members can be users, devices, service principals, and other groups. The other option is **Microsoft 365** groups. **Microsoft 365** groups provide collaboration opportunities when writing documents, creating spreadsheets, working on project plans, scheduling meetings, or sending email. This type of group can include people outside your organization.
 
-### Create groups of devices for Intune
+You can set the **Mebership type** for your group of users to be either as **Assigned**, **Dynamic User**, or **Dynamic Device**. **Assigned** users and devices must be manually added and removed from a static group. Groups where the **Membership type** is **Dynamic User** or **Dynamic Device** automatically add users or devices to user groups or device groups based on an expression you create.
 
-
+If you haven't created any Intune groups, create them now. For more information, see [Add groups to organize users and devices](/mem/intune/fundamentals/groups-add).
 
 ## Next step
 
