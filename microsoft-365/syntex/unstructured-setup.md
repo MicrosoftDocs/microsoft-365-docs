@@ -60,6 +60,9 @@ By default, unstructured document processing is turned on for libraries in all S
     b. To restrict user access to this service, under **Sites where models can be created**, select **Edit**. On the **Where can prebuilt models be used?** panel, select **No sites** or **Selected sites (up to 100)** and follow the instructions to either select the sites or upload a CSV file listing a maximum of 100 sites. You can then manage site access permissions for the sites you selected.
 
     > [!NOTE]
+    > You must be a member of any site that you want to include in the CSV file.
+
+    > [!NOTE]
     > For multi-geo environments, the **No sites** and **Selected sites** settings apply only to the primary geo of multi-geo tenants. If you want to restrict or add sites in non-primary geos, contact Microsoft support.
 
     c. Select **Save**.
