@@ -154,10 +154,7 @@ To manage free/busy calendar sharing for tenants in your MTO:
 
 The calendar sharing feature for MTO utilizes [Organization relationships in Exchange Online](/exchange/sharing/organization-relationships/organization-relationships). The organization relationship will share all users calendar availability and must also be set up by the other tenants in your MTO for free/busy information to be shared.
 
-## Set up MTO user labels in Teams for tenants in your MTO (Preview)
-
-> [!NOTE]
-> This feature is available in [targeted release](/microsoft-365/admin/manage/release-options-in-office-365).
+## Set up MTO user labels in Teams for tenants in your MTO
 
 MTO group admins can now configure an optional label for each tenant that will be displayed alongside MTO synced user's display name in Teams. This allows MTO synced users to be distinguishable within the MTO in Teams interactions.
 
