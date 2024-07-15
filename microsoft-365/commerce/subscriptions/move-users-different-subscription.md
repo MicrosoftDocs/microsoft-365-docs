@@ -23,7 +23,7 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: MET150 
 description: "Learn how to move users between subscriptions."
-ms.date: 06/09/2023
+ms.date: 07/10/2024
 ---
 
 # Move users to a different subscription

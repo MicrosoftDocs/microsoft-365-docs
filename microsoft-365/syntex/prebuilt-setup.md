@@ -44,13 +44,15 @@ By default, prebuilt document processing is turned on for libraries in all Share
 
 Follow these steps to limit which sites users can use create prebuilt models to process files.
 
-1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>, and then select **Use content AI with Microsoft Syntex**.
+1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>.
 
-2. On the **Use content AI with Microsoft Syntex** page, select **Manage Microsoft Syntex**. 
+2. Under **Files and content**, select **Automate content processes with Syntex**.
 
-3. On the **Manage Microsoft Syntex** page, select **Prebuilt document processing**.
+3. On the **Automate content processes with Syntex** page, select **Go to Syntex settings**.
 
-4. On the **Prebuilt document processing** page:
+4. On the Syntex page, under **Document & image services**, select **Prebuilt document processing**.
+
+5. On the **Prebuilt document processing** panel:
 
     a. Choose which site or sites this service should be enabled for.
 

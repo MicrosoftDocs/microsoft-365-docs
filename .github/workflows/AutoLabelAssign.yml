@@ -1,0 +1,23 @@
+name: Auto label and assign pull requests
+
+permissions:
+  pull-requests: write
+  contents: read
+      
+on: [pull_request_target]
+
+jobs:
+
+  auto-label-assign:
+    uses: MicrosoftDocs/microsoft-365-docs/.github/workflows/Shared-AutoLabelAssign.yml@workflows-prod
+    with:
+      PayloadJson: ${{ toJSON(github) }}
+      AutoAssignUsers: 1
+      AutoLabel: 1
+      ExcludedUserList: '["user1", "user2"]'
+      ExcludedBranchList: '["branch1", "branch2"]'
+    secrets:
+      AccessToken: ${{ secrets.GITHUB_TOKEN }}
+
+
+  
