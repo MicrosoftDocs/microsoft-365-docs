@@ -1,0 +1,278 @@
+name: Protected files
+
+permissions:
+  pull-requests: write
+  statuses: write
+  contents: read
+      
+on: 
+    workflow_call:
+        inputs:
+            PayloadJson:
+                required: true
+                type: string
+        secrets:
+            AccessToken:
+                required: true
+
+jobs:
+    build:
+      name: Run Script
+      runs-on: windows-latest
+      steps:
+        - name: Script
+          shell: pwsh
+          env: 
+            
+            ProtectedFileList: '[".gitignore", ".openpublishing.publish.config.json", "docfx.json", "README.md", "LICENSE-CODE", "ThirdPartyNotices", ".acrolinx-config.edn", ".gitattributes", "ProtectedFiles.yml", "Shared-ProtectedFiles.yml", "AutoLabelAssign.yml", "Shared-AutoLabelAssign.yml"]'
+            ApproverList: '["dstrome"]'
+            HelpUrl: 'https://review.learn.microsoft.com/en-us/office-authoring-guide/pull-request-status-checks?branch=main'
+            
+            PayloadJson: ${{ inputs.PayloadJson }}
+            AccessToken: ${{ secrets.AccessToken }}
+          run: |
+
+            # Get GitHub data
+            $GitHubData = $env:PayloadJson | ConvertFrom-Json -Depth 50
+            $AccessToken = $env:AccessToken
+            $GitRequestEvent = $GitHubData.event_name
+
+            # Get data from environment variables and convert lists from JSON
+            $ProtectedFileList = $env:ProtectedFileList | ConvertFrom-Json
+            $ApproverList = $env:ApproverList | ConvertFrom-Json
+            $HelpUrl = $env:HelpUrl
+
+            # Create github HTTP authentication header
+            $UserAgent = "officedocs"
+            $GitHubHeaders = @{}
+            $GitHubHeaders.Add("Authorization","token $($AccessToken)")
+            $GitHubHeaders.Add("User-Agent", $UserAgent)
+
+            # Start building hash table that contains status check fields to be sent to GitHub. Context and Target_Url always stay the same.
+            # State and Description change depending on result of checks below.
+            $Status = @{}
+            $Status.Add("context", "max/protected-file-check")
+            $Status.Add("target_url", $HelpUrl)
+
+            $RepoName = $GitHubData.event.repository.name
+
+            $FatalError = $False
+
+            Write-Host "Repo: $RepoName"
+            Write-Host "Sender: $($GitHubData.event.sender.login)"
+            Write-Host "Request type: $GitRequestEvent"
+            Write-Host "GitHub action: $($GitHubData.event.action)"
+            Write-Host "PR URL: $($GitHubData.event.pull_request.url)/files"
+            Write-Host "Request ID: $RequestId"
+
+            # Only process event types of 'pull_request_target' that are either 'opened' (PR created) or 'synchronized' (PR commits updated)
+            If (($GitRequestEvent -eq "pull_request_target") -and (($GitHubData.event.action -eq "opened") -or ($GitHubData.event.action -eq "synchronize") -or ($GitHubData.event.action -eq "reopened"))) {
+
+                # Collect info from payload that we'll need to process the PR
+                $FileListUrl = "$($GitHubData.event.pull_request.url)/files"
+                $PrSubmitter = $GitHubData.event.pull_request.user.login
+                $PrSubmitterPermissionsUrl = $GitHubData.event.repository.collaborators_url.Replace("{/collaborator}", "/$PrSubmitter/permission")
+                $StatusUrl = $GitHubData.event.pull_request.statuses_url
+                $TargetBranch = $GitHubData.event.pull_request.base.ref
+                $DefaultBranch = $GitHubData.event.repository.default_branch
+                $PublishBranch = "live"
+
+                Write-Host "Processing PR. Default branch: $DefaultBranch. Publish branch: $PublishBranch."
+
+                # Set status check state fields to show the PR is being processed. The entire process usually only takes a couple seconds but
+                # can take longer. GitHub will show PR status check is processing. 
+                # Convert hash table to JSON.
+                $Status.Add("state","pending")
+                $Status.Add("description", "Checking for protected files.")
+                $StatusJson = $Status | ConvertTo-Json
+
+                # Catch exceptions if they happen. All web and REST requests are set to halt on error and throw an exception.
+                Try {
+
+                    Write-Host "Sending `"pending`" status to GitHub."
+                    
+                    # Sent POST request to GitHub to set the status check. Subsequent POST and GET requests use similar parameters - 
+                    #   GitHubHeaders - GitHub authentication token
+                    #   StatusUrl     - REST API endpoint to GET or POST data from/to
+                    #   StatusJson    - Payload to send to GitHub for POST requests
+                    Invoke-WebRequest -Headers $GitHubHeaders -Uri $StatusUrl -UseBasicParsing -Method POST -Body $StatusJson -ErrorAction Stop  
+
+                    # Short delay so check doesn't finish before others start, which can cause GitHub UI to display confusing behavior.
+                    Start-Sleep 3
+
+                    # Only process PRs being submitted to $PublishBranch or $DefaultBranch branches. Also skip if a fatal error is encountered.
+                    If ((($TargetBranch -eq $DefaultBranch) -or ($TargetBranch -eq $PublishBranch)) -and (!$FatalError)) {
+
+                        Write-Host "$DefaultBranch or $PublishBranch branch"
+
+                        # Get the list of files modified in the PR.
+                        # Get the permissions of the PR submitter. 
+                        $FileList = Invoke-RestMethod -Method GET -ContentType "application/json" -Headers $GitHubHeaders -Uri $FileListUrl -ErrorAction Stop
+                        $PrSubmitterPerms = Invoke-RestMethod -Method GET -ContentType "application/json" -Headers $GitHubHeaders -Uri $PrSubmitterPermissionsUrl -ErrorAction Stop 
+
+                        $ProtectedFileFound = $False
+
+                        # Only process PRs that actually have changed files.
+                        If ($($FileList.Count -gt 0)) {
+
+                            Write-Host "PR has files`n`rFile list: $($FileList.filename)"
+
+                            # Process PRs that are submitted by non-admins
+                            If ($PrSubmitterPerms.permission -ne "admin") {
+
+                                Write-Host "Submitter is not an admin"
+
+                                # Check to see if submitter is an protected file approver
+
+                                $ValidApprover = $False
+
+                                If ($ApproverList.Contains($PrSubmitter)) {
+
+                                    $ValidApprover = $True
+
+                                }
+
+                                # Only check if there's a protected file in the PR if the PR submitter isn't a protected file approver.
+                                If ($ValidApprover -eq $False) {
+
+                                    Write-Host "Not an admin or protected file approver. Checking files."
+
+                                    # Loop through the protected file list and check to see if any of them are present in the changed file list. If we do, set the flag
+                                    # and the break out of the loop.
+                                    ForEach ($File in $ProtectedFileList) {
+
+                                        $File = $File.ToLower()
+
+                                        ForEach ($PrFile in $FileList) {
+
+                                            $PrFile = $PrFile.filename.ToLower()
+
+                                            If ($PrFile.Contains($File)) {
+
+                                                $ProtectedFileFound = $True
+
+                                                Write-Host "PROTECTED FILE: $PrFile"
+
+                                                Break
+
+                                            }
+
+                                        }
+
+                                    }
+
+                                    # If a protected file is found, set state to 'failure'. If protected not found, set to 'success'. Set description accordingly.
+                                    If ($ProtectedFileFound) {
+
+                                        Write-Host "Protected file found"
+                                        $Status.state = "failure"
+                                        $Status.description = "A protected file was found. Click Details for info."
+
+                                    } Else {
+
+                                        Write-Host "No protected files found"
+                                        $Status.state = "success"
+                                        $Status.description = "No protected files included in PR."
+
+                                    }
+
+                                } Else {
+                                
+                                    Write-Host "PR submitter $PrSubmitter is an approved protected file submitter."
+
+                                    $Status.state = "success"
+                                    $Status.description = "PR submitter is an approved protected file submitter."
+
+                                }
+
+                            # Set status to 'success' since the submitter is an admin.
+                            } Else {
+
+                                    Write-Host "PR submitter $PrSubmitter is an admin."
+
+                                    $Status.state = "success"
+                                    $Status.description = "PR submitter is an admin."
+
+                            }
+                        
+                        } Else {
+
+                            # Set status to 'success' since the PR doesn't contain any files.
+                            $Status.state = "success"
+                            $Status.description = "PR doesn't contain any files."
+
+                        }
+
+                    } Else {
+
+                        # Set status to 'success' since the PR isn't being submitted to $DefaultBranch or $PublishBranch.
+                        $Status.state = "success"
+                        $Status.description = "PR base branch isn't $DefaultBranch or $PublishBranch."   
+                    
+                    }     
+
+                } Catch {
+
+                    $FatalError = $True
+
+                }
+
+                # If an exception was encountered, allow the status check to pass since we don't want to block PRs just because the 
+                # check is broken for some reason.
+                If ($FatalError) {
+
+                    $Status.state = "success"
+                    $Status.description = "Error encountered. Please notify marveldocs-admins."
+
+                }
+
+                # Get ready to push status check results that'll either allow or block the PR from progressing.
+                $StatusJson = $Status | ConvertTo-Json
+                $SuccessfulPost = $False
+                $RetryCount = 0
+
+                Do {
+
+                    Try {
+
+                        # Send POST request to GitHub 
+                        Invoke-WebRequest -Headers $GitHubHeaders -Uri $StatusUrl -UseBasicParsing -Method POST -Body $StatusJson -ErrorAction Stop 
+                        $SuccessfulPost = $True
+
+                    } Catch {
+
+                        # If the request fails for any reason, retry it after a delay, up to six times.
+                        $RetryCount++
+                        Start-Sleep 1
+
+                    }
+
+                } Until (($SuccessfulPost) -or ($RetryCount -gt 5)) 
+
+                # If an exception was encountered, or if the attempt to post the status check failed, send email notification with error and PR info.
+                If (($FatalError) -or (!$SuccessfulPost)) {
+                
+                    $Body = "<p>An error occurred while processing the protected file check for a pull request.</p>"
+                    $Body = $Body + "<h2>Error encountered</h2>"
+                    $Body = $Body + "Fatal error: $FatalError<br>"
+                    $Body = $Body + "Successful post: $SuccessfulPost<br>"
+
+                    ForEach ($Err in $Error) {
+                        
+                        $Body = $Body + "<p>$($Err.Exception.ToString())</p>"
+                        $Body = $Body + "<p>$($Err.InvocationInfo.PositionMessage)</p>"
+                
+                    }
+
+                    $Body = $Body + "<h2>Pull request info</h2>"
+                    $Body = $Body + "<p>URL: $($GitHubData.event.pull_request.url)"
+                    $Body = $Body + "<p>PR Submitter: $PrSubmitter</p>"
+                    $Body = $Body + "<p>PR submitter permissions: $($PrSubmitterPerms.permission)</p>"
+                    $Body = $Body + "<p>Protected file found: $ProtectedFileFound</p>"
+                    $Body = $Body + "<p>File change list: $($FileList.filename)</p>"
+                
+                    Write-Host "Error posting status check. $Body"                
+                }
+            }
+
+            
