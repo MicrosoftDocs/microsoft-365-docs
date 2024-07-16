@@ -5,7 +5,7 @@ author: erikre
 manager: dougeby
 audience: ITPro
 ms.topic: article
-ms.date: 03/29/2024
+ms.date: 07/15/2024
 description: Manage app licenses used in Intune.
 ms.service: o365-solutions
 ms.localizationpriority: high
@@ -42,7 +42,6 @@ Your Intune tenant maintains a connection with each of the apps stores to ensure
 
 ## Monitor app licenses used in Intune
 
-Intune provides a list of all the app licenses your tenant currently has in use. You can see the license name, the total number of licenses, the available licenses left to use, and the current licenses in use. When you view this list, you can also sync your volume purchased (VPP) licenses to be certain the list is up-to-date. For related information, see [Monitor app information and assignments with Microsoft Intune](/mem/
-intune/apps/apps-monitor).
+Intune provides a list of all the app licenses your tenant currently has in use. You can see the license name, the total number of licenses, the available licenses left to use, and the current licenses in use. When you view this list, you can also sync your volume purchased (VPP) licenses to be certain the list is up-to-date. For related information, see [Monitor app information and assignments with Microsoft Intune](/mem/intune/apps/apps-monitor).
 
 :::image type="content" source="../media/purchase-add-managed-apps/purchase-add-managed-apps-17.png" alt-text="App licenses in Intune" border="false" :::
