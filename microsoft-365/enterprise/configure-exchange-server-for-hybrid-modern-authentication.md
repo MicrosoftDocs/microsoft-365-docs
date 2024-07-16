@@ -39,6 +39,28 @@ In comparison to legacy authentication methods such as NTLM, HMA offers several 
 
 HMA is a powerful feature that enhances the flexibility and security of accessing on-premises applications, leveraging the power of cloud-based authentication. It represents a significant improvement over legacy authentication methods, offering enhanced security, flexibility, and user convenience.
 
+## Steps to follow to configure and enable Hybrid Modern Auth
+
+To enable Hybrid Modern Authentication (HMA), you must ensure that your organization meets all necessary prerequisites. Additionally, you should confirm that your Office client is compatible with Modern Authentication. For more details, refer to the documentation on [How modern authentication works for Office 2013 and Office 2016 client apps](modern-auth-for-office-2013-and-2016.md).
+
+1. Make sure you [meet the prerequisites](#exchange-server-specific-prerequisites) before you begin.
+
+2. [Add on-premises web service URLs to Microsoft Entra ID](#add-on-premises-web-service-urls-as-spns-in-microsoft-entra-id). The URLs must be added as `Service Principal Names (SPNs)`. In case that your Exchange Server setup is in hybrid with **multiple tenants**, these on-premises web service URLs must be added as SPNs in the Microsoft Entra ID of all the tenants, which are in hybrid with Exchange Server on-premises.
+
+3. [Ensure that all virtual directories are enabled for HMA](#verify-virtual-directories-are-properly-configured). If you want to configure [Hybrid Modern Authentication for Outlook on the Web (OWA) and Exchange Control Panel (ECP)](#enable-hybrid-modern-authentication-for-owa-and-ecp), it's important to also verify the respective directories.
+
+4. [Check for the EvoSTS Auth Server object](#confirm-the-evosts-auth-server-object-is-present).
+
+5. Ensure that the [Exchange Server OAuth certificate](/exchange/plan-and-deploy/integration-with-sharepoint-and-skype/maintain-oauth-certificate) is valid. The [MonitorExchangeAuthCertificate script](https://aka.ms/MonitorExchangeAuthCertificate) script can be utilized to verify the validity of the OAuth certificate. In the event of its expiration, the script assists in the renewal process.
+
+6. Ensure that all user identities are synchronized with Microsoft Entra ID, especially all accounts, which are used for administration. Otherwise, the login stops working until they're synchronized. Accounts, such as the built-in Administrator, will never be synchronized with Microsoft Entra ID and, therefore, can't be used on any OAuth login once HMA has been enabled. This behavior is due to the `isCriticalSystemObject` attribute, which is set to `True` for some accounts including the default administrator.
+
+7. (Optional) If you want to use the Outlook for iOS and Android client, make sure to [allow the AutoDetect service to connect to your Exchange Server](#using-hybrid-modern-authentication-with-outlook-for-ios-and-android).
+
+8. [Enable HMA in Exchange on-premises](#enable-hma).
+
+<a name='add-on-premises-web-service-urls-as-spns-in-azure-ad'></a>
+
 ## Prerequisites to enable Hybrid Modern Auth
 
 In this section, we provide information and steps that need to be done to successfully configure and enable Hybrid Modern Auth in Microsoft Exchange Server.
@@ -71,28 +93,6 @@ Hybrid Modern Authentication works for the following Exchange Server protocols:
 |Offline Address Book (OAB)|Yes|
 |IMAP|No|
 |POP|No|
-
-### Steps to follow to configure and enable Hybrid Modern Auth
-
-To enable Hybrid Modern Authentication (HMA), you must ensure that your organization meets all necessary prerequisites. Additionally, you should confirm that your Office client is compatible with Modern Authentication. For more details, refer to the documentation on [How modern authentication works for Office 2013 and Office 2016 client apps](modern-auth-for-office-2013-and-2016.md).
-
-1. Make sure you [meet the prerequisites](#exchange-server-specific-prerequisites) before you begin.
-
-2. [Add on-premises web service URLs to Microsoft Entra ID](#add-on-premises-web-service-urls-as-spns-in-microsoft-entra-id). The URLs must be added as `Service Principal Names (SPNs)`. In case that your Exchange Server setup is in hybrid with **multiple tenants**, these on-premises web service URLs must be added as SPNs in the Microsoft Entra ID of all the tenants, which are in hybrid with Exchange Server on-premises.
-
-3. [Ensure that all virtual directories are enabled for HMA](#verify-virtual-directories-are-properly-configured). If you want to configure [Hybrid Modern Authentication for Outlook on the Web (OWA) and Exchange Control Panel (ECP)](#enable-hybrid-modern-authentication-for-owa-and-ecp), it's important to also verify the respective directories.
-
-4. [Check for the EvoSTS Auth Server object](#confirm-the-evosts-auth-server-object-is-present).
-
-5. Ensure that the [Exchange Server OAuth certificate](/exchange/plan-and-deploy/integration-with-sharepoint-and-skype/maintain-oauth-certificate) is valid. The [MonitorExchangeAuthCertificate script](https://aka.ms/MonitorExchangeAuthCertificate) script can be utilized to verify the validity of the OAuth certificate. In the event of its expiration, the script assists in the renewal process.
-
-6. Ensure that all user identities are synchronized with Microsoft Entra ID, especially all accounts, which are used for administration. Otherwise, the login stops working until they're synchronized. Accounts, such as the built-in Administrator, will never be synchronized with Microsoft Entra ID and, therefore, can't be used on any OAuth login once HMA has been enabled. This behavior is due to the `isCriticalSystemObject` attribute, which is set to `True` for some accounts including the default administrator.
-
-7. (Optional) If you want to use the Outlook for iOS and Android client, make sure to [allow the AutoDetect service to connect to your Exchange Server](#using-hybrid-modern-authentication-with-outlook-for-ios-and-android).
-
-8. [Enable HMA in Exchange on-premises](#enable-hma).
-
-<a name='add-on-premises-web-service-urls-as-spns-in-azure-ad'></a>
 
 ## Add on-premises web service URLs as SPNs in Microsoft Entra ID
 
@@ -135,10 +135,9 @@ Run the commands that assign your on-premises web service URLs as Microsoft Entr
 
    ```powershell
    $x = Get-MgServicePrincipal -Filter "AppId eq '00000002-0000-0ff1-ce00-000000000000'"
-   $ServicePrincipalUpdate = @(
-   "https://mail.corp.contoso.com/","https://owa.contoso.com/"
-   )
-   Update-MgServicePrincipal -ServicePrincipalId $x.Id -ServicePrincipalNames $ServicePrincipalUpdate
+   $x.ServicePrincipalNames += "https://mail.corp.contoso.com/"
+   $x.ServicePrincipalNames += "https://owa.contoso.com/"
+   Update-MgServicePrincipal -ServicePrincipalId $x.Id -ServicePrincipalNames $x.ServicePrincipalNames
    ```
 
 6. Verify that your new records were added by running the `Get-MgServicePrincipal` command from step 4 again, and validate the output. Compare the list from before to the new list of SPNs. You might also note down the new list for your records. If you're successful, you should see the two new URLs in the list. Going by our example, the list of SPNs now includes the specific URLs `https://mail.corp.contoso.com` and `https://owa.contoso.com`.
@@ -251,32 +250,24 @@ It's recommended to document the `OwaVirtualDirectory` and `EcpVirtualDirectory`
    Connect-Graph -Scopes User.Read, Application.ReadWrite.All
    ```
 
-4. Specify your `OWA` and `ECP` URLs:
-
-   ```powershell
-   $replyUrlsToBeAdded = @(
-   "https://YourDomain.contoso.com/owa","https://YourDomain.contoso.com/ecp"
-   )
-   ```
-
-5. Update your application with the reply URLs:
+4. Specify your `OWA` and `ECP` URLs and update your application with the reply URLs:
 
    ```powershell
    $servicePrincipal = Get-MgServicePrincipal -Filter "AppId eq '00000002-0000-0ff1-ce00-000000000000'"
-   $servicePrincipal.ReplyUrls += $replyUrlsToBeAdded
+   $servicePrincipal.ReplyUrls += "https://YourDomain.contoso.com/owa"
+   $servicePrincipal.ReplyUrls += "https://YourDomain.contoso.com/ecp"
    Update-MgServicePrincipal -ServicePrincipalId $servicePrincipal.Id -AppId "00000002-0000-0ff1-ce00-000000000000" -ReplyUrls $servicePrincipal.ReplyUrls
    ```
 
-6. Verify that the reply URLs have been added successfully:
+5. Verify that the reply URLs have been added successfully:
 
    ```powershell
    (Get-MgServicePrincipal -Filter "AppId eq '00000002-0000-0ff1-ce00-000000000000'").ReplyUrls
    ```
 
-7. To enable Exchange Server on-premises ability to perform Hybrid Modern Authentication, follow the steps outlined in the [Enable HMA](#enable-hma) section.
+6. To enable Exchange Server on-premises ability to perform Hybrid Modern Authentication, follow the steps outlined in the [Enable HMA](#enable-hma) section.
 
-8. (Optional) Only required if [Download Domains](/exchange/plan-and-deploy/post-installation-tasks/security-best-practices/exchange-download-domains) are used:
-
+7. (Optional) Only required if [Download Domains](/exchange/plan-and-deploy/post-installation-tasks/security-best-practices/exchange-download-domains) are used:
 
    Create a new global setting override by running the following commands from an elevated Exchange Management Shell (EMS). Run these commands on one Exchange Server:
 
