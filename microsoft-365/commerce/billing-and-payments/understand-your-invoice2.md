@@ -30,6 +30,38 @@ description: "Learn how to interpret the charges on your invoice for your Micros
 ms.date: 02/21/2024
 ---
 
+---
+title: "Understand your invoice for your Microsoft MOSA billing account"
+f1.keywords:
+- 'UnderstandBillInvoiceM365'
+author: cmcatee-MSFT
+ms.author: cmcatee
+manager: scotv
+ms.reviewer: jkinma, ramagane
+audience: Admin
+ms.topic: conceptual
+ms.service: microsoft-365-business
+ms.subservice: m365-commerce-management
+ms.localizationpriority: medium
+ms.collection: 
+- Tier1
+- scotvorg
+- highpri 
+- M365-subscription-management
+- Adm_O365
+ms.custom:
+- commerce_billing
+- VSBFY23
+- TopSMBIssues
+- okr_smb
+- AdminSurgePortfolio
+- AdminTemplateSet
+- admindeeplinkMAC
+search.appverid: MET150
+description: "Learn how to interpret the charges on your invoice for your Microsoft business subscription with an MOSA billing account."
+ms.date: 02/21/2024
+---
+
 # Understand your invoice for your Microsoft MOSA billing account
 
 Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
@@ -136,7 +168,7 @@ If you pay by credit card, you see "Please DO NOT PAY. You will be charged the a
 
 ### Wire transfer
 
-If you chose "invoice" as your subscription payment method, page one contains the **Electronic Funds Transfer** section that shows the Microsoft bank account information for electronic payments (wire transfer, ACH, SEPA, and so on). Usually, your bank has a reference field that you complete when you send a payment. Make sure that you reference the invoice number in that field.
+If you chose "invoice" as your subscription payment method, page one contains the **Electronic Funds Transfer** section that shows the Microsoft bank account information for electronic payments (wire transfer, SEPA, and so on). Usually, your bank has a reference field that you complete when you send a payment. Make sure that you reference the invoice number in that field.
 
 ### Support
 
