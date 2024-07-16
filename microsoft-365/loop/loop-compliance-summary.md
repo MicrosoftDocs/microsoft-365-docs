@@ -56,7 +56,7 @@ Where the Loop content was originally created determines its storage location:
 |EUDB  |**EUDB** compliant - [What is the EU Data Boundary?](/privacy/eudb/eu-data-boundary-learn)|**EUDB** compliant - [What is the EU Data Boundary?](/privacy/eudb/eu-data-boundary-learn)|
 |***Data Security, Devices***|---|---|
 |Intune  |Basic **Intune** [Device Management Support](/mem/intune/remote-actions/device-management) exists for Loop app on iOS and Android.|Basic **Intune** [Device Management Support](/mem/intune/remote-actions/device-management) exists for Loop app on iOS and Android.|
-|Conditional Access  |**[Conditional Access](/sharepoint/control-access-from-unmanaged-devices)** is supported. See [manual initialization](#manually-initializing-microsoft-loop-app-for-conditional-access-management-in-microsoft-entra) for Microsoft Entra support.|**[Conditional Access](/sharepoint/control-access-from-unmanaged-devices)** supported. See [manual initialization](#manually-initializing-microsoft-loop-app-for-conditional-access-management-in-microsoft-entra) for Microsoft Entra support.|
+|Conditional Access  |**[Conditional Access](/sharepoint/control-access-from-unmanaged-devices)** is supported.|**[Conditional Access](/sharepoint/control-access-from-unmanaged-devices)** supported.|
 |Information Barriers  |**[Information Barriers](/purview/information-barriers-sharepoint)** are enforced.|**[Information Barriers](/purview/information-barriers-sharepoint)** are enforced.|
 |Customer Key  |**[Customer Lockbox](/purview/customer-lockbox-requests)** is supported.|**[Customer Lockbox](/purview/customer-lockbox-requests)** is supported.|
 |Programmatic APIs for Loop content  |Yes, they're files in OneDrive or SharePoint and all current functionality applies.| **Not Yet Available**:  <br>API access to Loop workspace containers isn't yet available. This impacts third party export and eDiscovery tools, migration tools, tools used to communicate in bulk to end-users about their content such as compliance requirements, and developer APIs.|
@@ -110,18 +110,6 @@ The following sections detail capabilities that are **not yet available** for Mi
 
 ### Data Classification not yet available
 - **Sensitivity Labeling** can't be configured at the Loop workspace level within the Loop app. It can be set using PowerShell per Loop workspace and viewed in the SharePoint Embedded admin center.
-
-
-## Manually initializing Microsoft Loop app for Conditional Access management in Microsoft Entra
-
-In order to select Microsoft Loop app from the cloud app target UX in the Microsoft Entra admin center: Protection | Conditional Access | Select what this policy applies to | select apps | Microsoft Loop, manual provisioning may be required.
-
-1. [Connect to Microsoft 365 with PowerShell - Microsoft 365 Enterprise | Microsoft Learn](/microsoft-365/enterprise/connect-to-microsoft-365-powershell)
-1. Copy the command, Paste into your PowerShell window's command line, and hit Enter to execute:
-
-   ```PowerShell
-   New-AzureADServicePrincipal -AccountEnabled $true -AppId a187e399-0c36-4b98-8f04-1edc167a0996 -AppRoleAssignmentRequired $false -DisplayName "Microsoft Loop app" -Tags {WindowsAzureActiveDirectoryIntegratedApp}
-   ```
 
 
 ## Managing Loop in your organization
