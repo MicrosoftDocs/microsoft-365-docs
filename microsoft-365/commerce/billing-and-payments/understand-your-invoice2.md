@@ -30,38 +30,6 @@ description: "Learn how to interpret the charges on your invoice for your Micros
 ms.date: 02/21/2024
 ---
 
----
-title: "Understand your invoice for your Microsoft MOSA billing account"
-f1.keywords:
-- 'UnderstandBillInvoiceM365'
-author: cmcatee-MSFT
-ms.author: cmcatee
-manager: scotv
-ms.reviewer: jkinma, ramagane
-audience: Admin
-ms.topic: conceptual
-ms.service: microsoft-365-business
-ms.subservice: m365-commerce-management
-ms.localizationpriority: medium
-ms.collection: 
-- Tier1
-- scotvorg
-- highpri 
-- M365-subscription-management
-- Adm_O365
-ms.custom:
-- commerce_billing
-- VSBFY23
-- TopSMBIssues
-- okr_smb
-- AdminSurgePortfolio
-- AdminTemplateSet
-- admindeeplinkMAC
-search.appverid: MET150
-description: "Learn how to interpret the charges on your invoice for your Microsoft business subscription with an MOSA billing account."
-ms.date: 02/21/2024
----
-
 # Understand your invoice for your Microsoft MOSA billing account
 
 Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
