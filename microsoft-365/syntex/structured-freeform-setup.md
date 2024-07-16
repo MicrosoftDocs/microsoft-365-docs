@@ -59,6 +59,9 @@ By default, structured and default document processing is turned on for librarie
 
     b. To restrict user access to this service, under **Sites where models can be created**, select **Edit**. On the **Where can prebuilt models be used?** panel, select **No sites** or **Selected sites (up to 100)** and follow the instructions to either select the sites or upload a CSV file listing a maximum of 100 sites. You can then manage site access permissions for the sites you selected.
 
+    > [!NOTE]
+    > You must be a member of any site that you want to include in the CSV file.
+
     c. Select **Save**.
 
 ## Turn off structured and freeform document processing
