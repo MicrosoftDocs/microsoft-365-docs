@@ -49,7 +49,7 @@ For example, a business, legal firm, or healthcare practice might create the fol
 
 1. **An external communications team or teams:** Coordinate with your vendors, partners, or clients without allowing them into anything sensitive. Set up different channels for specific groups.
 
-![Diagram of a Microsoft Teams window with three separate teams to allow for secure communication and collaboration within a business.](../media/m365-democracy-teams-business-collab.png)
+:::image type="content" source="media/m365-democracy-teams-business-collab.png" alt-text="Diagram of a Microsoft Teams window with three separate teams to allow for secure communication and collaboration within a business" lightbox="media/m365-democracy-teams-business-collab.png":::
 
 And campaigns could create the following teams to communicate and collaborate securely:
 
@@ -59,7 +59,7 @@ And campaigns could create the following teams to communicate and collaborate se
 
 3. **A partners team:** Coordinate with your vendors, partners, or volunteers without allowing them into anything sensitive.
 
-![Diagram of a Microsoft Teams window with three separate teams to allow for secure communication and collaboration within a campaign.](../media/m365-democracy-teams-collab.png)
+:::image type="content" source="media/m365-democracy-teams-collab.png" alt-text="Diagram of a Microsoft Teams window with three separate teams to allow for secure communication and collaboration within a campaign." lightbox="media/m365-democracy-teams-collab.png":::
 
 When you create a team, here's what else gets created:
 

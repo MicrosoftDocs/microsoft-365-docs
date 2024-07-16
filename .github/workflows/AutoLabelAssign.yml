@@ -4,12 +4,12 @@ permissions:
   pull-requests: write
   contents: read
       
-on: [pull_request]
+on: [pull_request_target]
 
 jobs:
 
   auto-label-assign:
-    uses: MicrosoftDocs/OfficeDocs-NotInBuild-pr/.github/workflows/AutoLabelAssign.yml@main
+    uses: MicrosoftDocs/microsoft-365-docs/.github/workflows/Shared-AutoLabelAssign.yml@workflows-prod
     with:
       PayloadJson: ${{ toJSON(github) }}
       AutoAssignUsers: 1

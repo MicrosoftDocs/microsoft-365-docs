@@ -212,6 +212,8 @@
           href: esignature-send-requests.md
         - name: Review and sign a request 
           href: esignature-review-sign-requests.md
+        - name: Track and manage using Approvals 
+          href: esignature-approvals.md
         - name: Troubleshoot a request 
           href: esignature-troubleshoot.md
 
