@@ -35,15 +35,15 @@ You might have access to multiple billing accounts. For example, you can have on
 ## Before you begin
 
 - [Determine what type of billing account you have](#view-my-billing-accounts).
-- If you have a Microsoft Online Subscription Agreement (MOSA) billing account type, you must be a Global or Billing admin to do the tasks in this article. For more information, see [About admin roles](../admin/add-users/about-admin-roles.md).
 - If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a billing account reader to do the tasks in this article. For more information, see [What are billing account roles?](#what-are-billing-account-roles)
+- If you have a Microsoft Online Subscription Agreement (MOSA) billing account type, you must be a Global or Billing admin to do the tasks in this article. For more information, see [About admin roles](../admin/add-users/about-admin-roles.md).
 
 ## What are the types of billing accounts?
 
 The <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Billing accounts</a> page in the Microsoft 365 admin center provides a view of your business accounts with Microsoft. The following types of billing accounts are supported:
 
-- **Microsoft Online Subscription Agreement (MOSA)**: This billing account was created when you signed up for a Microsoft 365 subscription directly. You might have a MOSA billing account if your account hasn’t yet moved to the Microsoft Customer Agreement. For MOSA billing accounts, you receive an invoice for each order, on the account anniversary.
 - **Microsoft Customer Agreement (MCA)**: This billing account is created when your organization works with a Microsoft representative, an authorized partner, or buys products and services independently. For MCA billing accounts, you have a corresponding billing profile that contains your subscriptions.
+- **Microsoft Online Subscription Agreement (MOSA)**: This billing account was created when you signed up for a Microsoft 365 subscription directly. You might have a MOSA billing account if your account hasn’t yet moved to the Microsoft Customer Agreement. For MOSA billing accounts, you receive an invoice for each order, on the account anniversary.
 
 ## View my billing accounts
 
