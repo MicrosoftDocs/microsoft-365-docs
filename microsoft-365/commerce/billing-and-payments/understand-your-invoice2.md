@@ -136,7 +136,7 @@ If you pay by credit card, you see "Please DO NOT PAY. You will be charged the a
 
 ### Wire transfer
 
-If you chose "invoice" as your subscription payment method, page one contains the **Electronic Funds Transfer** section that shows the Microsoft bank account information for electronic payments (wire transfer, ACH, SEPA, and so on). Usually, your bank has a reference field that you complete when you send a payment. Make sure that you reference the invoice number in that field.
+If you chose "invoice" as your subscription payment method, page one contains the **Electronic Funds Transfer** section that shows the Microsoft bank account information for electronic payments (wire transfer, SEPA, and so on). Usually, your bank has a reference field that you complete when you send a payment. Make sure that you reference the invoice number in that field.
 
 ### Support
 
