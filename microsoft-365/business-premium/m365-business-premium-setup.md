@@ -22,7 +22,7 @@ ms.custom: intro-get-started
 
 This article describes how to get Microsoft 365 Business Premium, complete the basic setup process, and identify your next steps.
 
-:::image type="content" source="media/mission1.png" alt-text="Diagram showing the Sign in and set up phase highlighted.":::
+:::image type="content" source="media/mission1.png" alt-text="Diagram showing the Sign in and set up phase highlighted." lightbox="media/mission1.png":::
 
 > [!TIP]
 > If you're looking for Microsoft 365 for Campaigns, see [Set up Microsoft 365 for Campaigns](m365-campaigns-setup.md).

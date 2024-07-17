@@ -25,7 +25,7 @@ description: "Learn how to secure managed devices from security threats and cybe
 
 # Secure managed devices with Microsoft 365 Business Premium
 
-:::image type="content" source="media/mission6.png" alt-text="Diagram with Set Up and Secure Managed Devices highlighted.":::
+:::image type="content" source="media/mission6.png" alt-text="Diagram with Set Up and Secure Managed Devices highlighted." lightbox="media/mission6.png":::
 
 Microsoft 365 Business Premium includes [Microsoft Defender for Business](../security/defender-business/mdb-overview.md) to help protect your organization's devices from ransomware, malware, phishing, and other threats.
 

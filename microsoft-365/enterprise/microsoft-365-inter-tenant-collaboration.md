@@ -3,7 +3,7 @@ title: "Microsoft 365 inter-tenant collaboration"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 09/25/2023
+ms.date: 07/11/2024
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-enterprise
@@ -14,6 +14,7 @@ ms.collection:
 - M365-collaboration
 - M365-subscription-management
 - SPO_Content
+- must-keep
 search.appverid:
 - MET150
 - MOE150
