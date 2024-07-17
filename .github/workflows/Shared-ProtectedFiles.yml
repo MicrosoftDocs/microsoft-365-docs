@@ -69,7 +69,7 @@ jobs:
             If (($GitRequestEvent -eq "pull_request_target") -and (($GitHubData.event.action -eq "opened") -or ($GitHubData.event.action -eq "synchronize") -or ($GitHubData.event.action -eq "reopened"))) {
 
                 # Collect info from payload that we'll need to process the PR
-                $FileListUrl = "$($GitHubData.event.pull_request.url)/files"
+                $FileListUrl = "$($GitHubData.event.pull_request.url)/files?per_page=100"
                 $PrSubmitter = $GitHubData.event.pull_request.user.login
                 $PrSubmitterPermissionsUrl = $GitHubData.event.repository.collaborators_url.Replace("{/collaborator}", "/$PrSubmitter/permission")
                 $StatusUrl = $GitHubData.event.pull_request.statuses_url
@@ -107,8 +107,13 @@ jobs:
 
                         # Get the list of files modified in the PR.
                         # Get the permissions of the PR submitter. 
-                        $FileList = Invoke-RestMethod -Method GET -ContentType "application/json" -Headers $GitHubHeaders -Uri $FileListUrl -ErrorAction Stop
+                        $FileListData = Invoke-RestMethod -Method GET -ContentType "application/json" -Headers $GitHubHeaders -Uri $FileListUrl -FollowRelLink -MaximumFollowRelLink 50 -ErrorAction Stop
                         $PrSubmitterPerms = Invoke-RestMethod -Method GET -ContentType "application/json" -Headers $GitHubHeaders -Uri $PrSubmitterPermissionsUrl -ErrorAction Stop 
+
+                        $FileList = @()
+
+                        # Collapse pages into a single list if there are any and store in $FileList
+                        ForEach ($Page in $FileListData) { $FileList += $Page }
 
                         $ProtectedFileFound = $False
 
