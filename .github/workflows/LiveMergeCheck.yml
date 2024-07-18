@@ -1,4 +1,4 @@
-name: Check max/pr-file-count below
+name: Check max/live-compare-merge below
 
 permissions:
   pull-requests: write
@@ -7,12 +7,12 @@ permissions:
       
 on: 
   pull_request_target:
-    types: [opened, reopened, synchronize, labeled, unlabeled]
+    types: [opened, reopened, synchronize, edited]
 
 jobs:
 
-  file-count:
-    uses: MicrosoftDocs/microsoft-365-docs/.github/workflows/Shared-PrFileCount.yml@workflows-prod
+  live-merge:
+    uses: MicrosoftDocs/microsoft-365-docs/.github/workflows/Shared-LiveMergeCheck.yml@workflows-prod
     with:
       PayloadJson: ${{ toJSON(github) }}
     secrets:
