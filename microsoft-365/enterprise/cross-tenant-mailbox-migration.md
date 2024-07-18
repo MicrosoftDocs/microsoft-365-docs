@@ -71,7 +71,7 @@ If you are migrating more than 10,000 users, we recommend creating multiple grou
 
 You also need to communicate with your trusted partner company (with whom you'll be moving mailboxes) to obtain their Microsoft 365 tenant ID. This tenant ID is used in the **Organization Relationship DomainName** field.
 
-To obtain the tenant ID of a subscription, sign in to the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339) and go to [https://aad.portal.azure.com/\#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties). Select the **copy** icon for the **Tenant ID** property to copy it to the clipboard.
+To obtain the tenant ID of a subscription, sign in to the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339) and go to https://entra.microsoft.com/#view/Microsoft_AAD_IAM/TenantOverview.ReactView. Select the **copy** icon for the **Tenant ID** property to copy it to the clipboard.
 
 All users in both the source and target organizations must be licensed with the appropriate Exchange Online subscriptions. Also, ensure that you apply Cross Tenant User Data Migration licenses to all users who will be migrated to the target side.
 
@@ -182,7 +182,7 @@ Now that you've successfully created the migration application and secret, the n
 3. Create a new organization relationship object or edit your existing organization relationship object to your source tenant.
 
    ```PowerShell
-   $sourceTenantId="[tenant id of your trusted partner, where the source mailboxes are]"
+   $sourceTenantId="[tenant ID of your trusted partner, where the source mailboxes are]"
    $orgrels=Get-OrganizationRelationship
    $existingOrgRel = $orgrels | ?{$_.DomainNames -like $sourceTenantId}
    If ($null -ne $existingOrgRel)
@@ -214,10 +214,11 @@ Now that you've successfully created the migration application and secret, the n
    # Enable customization if tenant is dehydrated
    $dehydrated=Get-OrganizationConfig | select isdehydrated
    if ($dehydrated.isdehydrated -eq $true) {Enable-OrganizationCustomization}
-   $targetTenantId="[tenant id of your trusted partner, where the mailboxes are being moved to]"
-   $appId="[application id of the mailbox migration app you consented to]"
+   $targetTenantId="[tenant ID of your trusted partner, where the mailboxes are being moved to]"
+   $appId="[application ID of the mailbox migration app you consented to]"
    $scope="[name of the mail enabled security group that contains the list of users who are allowed to migrate]"
-   New-DistributionGroup -Type Security -Name $scope
+   $orgrelname="[name of your new organization relationship]"
+   if (!(New-DistributionGroup -Type Security -Name $scope)) { Write-Host "Group already exists." }
    $orgrels=Get-OrganizationRelationship
    $existingOrgRel = $orgrels | ?{$_.DomainNames -like $targetTenantId}
    If ($null -ne $existingOrgRel)
@@ -226,8 +227,7 @@ Now that you've successfully created the migration application and secret, the n
    }
    If ($null -eq $existingOrgRel)
    {
-       New-OrganizationRelationship "[name of your organization relationship]" -Enabled:$true -MailboxMoveEnabled:$true -MailboxMoveCapability RemoteOutbound -DomainNames $targetTenantId 
-   -OAuthApplicationId $appId -MailboxMovePublishedScopes $scope
+       New-OrganizationRelationship $orgrelname -Enabled:$true -MailboxMoveEnabled:$true -MailboxMoveCapability RemoteOutbound -DomainNames $targetTenantId -OAuthApplicationId $appId -MailboxMovePublishedScopes $scope
    }
    ```
 
@@ -985,3 +985,4 @@ Company   PendingActivation   882e1d05-acd1-4ccb-8708-6ee03664b117 INTUNE_O365
 
 - [Manage Microsoft 365 with PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
 - [Get started with the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/get-started)
+- [https://techcommunity.microsoft.com/t5/exchange-team-blog/troubleshooting-cross-tenant-mailbox-migrations/ba-p/4178404]
