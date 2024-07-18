@@ -1,4 +1,4 @@
-name: PR File Count
+name: Check max/pr-file-count below
 
 permissions:
   pull-requests: write
@@ -11,7 +11,7 @@ on:
 
 jobs:
 
-  check-files:
+  file-count:
     uses: MicrosoftDocs/microsoft-365-docs/.github/workflows/Shared-PrFileCount.yml@workflows-prod
     with:
       PayloadJson: ${{ toJSON(github) }}
