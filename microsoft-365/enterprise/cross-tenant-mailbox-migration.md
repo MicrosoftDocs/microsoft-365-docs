@@ -170,20 +170,23 @@ Now that you've successfully created the migration application and secret, the n
    > You'll need the application ID of the mailbox migration app you just created and the password (secret) you configured in [Prepare the target (destination) tenant by creating the migration application and secret](#prepare-the-target-destination-tenant-by-creating-the-migration-application-and-secret). Depending on the Microsoft 365 cloud instance you use, your endpoint may be different. See the [Microsoft 365 endpoints](microsoft-365-endpoints.md) page; select the correct instance for your tenant; then review the Exchange Online _Optimize/Required_ address, and replace as appropriate.
 
    ```PowerShell
-   # Enable customization if tenant is dehydrated
-   $dehydrated=Get-OrganizationConfig | select isdehydrated
-   if ($dehydrated.isdehydrated -eq $true) {Enable-OrganizationCustomization}
    $AppId = "[Guid copied from the migrations app]"
-   $Credential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $AppId, (ConvertTo-SecureString -String "[this is your secret password you saved in the 
-   previous steps]" -AsPlainText -Force)
-   New-MigrationEndpoint -RemoteServer outlook.office.com -RemoteTenant "contoso.onmicrosoft.com" -Credentials $Credential -ExchangeRemoteMove:$true -Name "[the name of your migration endpoint]" -ApplicationId $AppId
+   $name = "[the name of your new migration endpoint]"
+   $remote = "<contoso>.onmicrosoft.com"
+   $secret = "[this is your secret password you saved in the previous steps]"
+   # Enable customization if tenant is dehydrated
+   $dehydrated = Get-OrganizationConfig | select isdehydrated
+   if ($dehydrated.isdehydrated -eq $true) {Enable-OrganizationCustomization}
+   $Credential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $AppId, (ConvertTo-SecureString -String $secret -AsPlainText -Force)
+   New-MigrationEndpoint -RemoteServer outlook.office.com -RemoteTenant $remote -Credentials $Credential -ExchangeRemoteMove:$true -Name $name -ApplicationId $AppId
    ```
 
 3. Create a new organization relationship object or edit your existing organization relationship object to your source tenant.
 
    ```PowerShell
-   $sourceTenantId="[tenant ID of your trusted partner, where the source mailboxes are]"
-   $orgrels=Get-OrganizationRelationship
+   $sourceTenantId = "[tenant ID of your trusted partner, where the source mailboxes are]"
+   $orgrelname = "[name of your new organization relationship]"
+   $orgrels = Get-OrganizationRelationship
    $existingOrgRel = $orgrels | ?{$_.DomainNames -like $sourceTenantId}
    If ($null -ne $existingOrgRel)
    {
@@ -191,7 +194,7 @@ Now that you've successfully created the migration application and secret, the n
    }
    If ($null -eq $existingOrgRel)
    {
-       New-OrganizationRelationship "[name of the new organization relationship]" -Enabled:$true -MailboxMoveEnabled:$true -MailboxMoveCapability Inbound -DomainNames $sourceTenantId
+       New-OrganizationRelationship $orgrelname -Enabled:$true -MailboxMoveEnabled:$true -MailboxMoveCapability Inbound -DomainNames $sourceTenantId
    }
    ```
 
@@ -211,13 +214,13 @@ Now that you've successfully created the migration application and secret, the n
 4. Create a new organization relationship object or edit your existing organization relationship object to your target (destination) tenant in Exchange Online PowerShell:
 
    ```PowerShell
+   $targetTenantId = "[tenant ID of your trusted partner, where the mailboxes are being moved to]"
+   $appId = "[application ID of the mailbox migration app you consented to]"
+   $scope = "[name of the mail enabled security group that contains the list of users who are allowed to migrate]"
+   $orgrelname = "[name of your new organization relationship]"
    # Enable customization if tenant is dehydrated
-   $dehydrated=Get-OrganizationConfig | select isdehydrated
+   $dehydrated = Get-OrganizationConfig | select isdehydrated
    if ($dehydrated.isdehydrated -eq $true) {Enable-OrganizationCustomization}
-   $targetTenantId="[tenant ID of your trusted partner, where the mailboxes are being moved to]"
-   $appId="[application ID of the mailbox migration app you consented to]"
-   $scope="[name of the mail enabled security group that contains the list of users who are allowed to migrate]"
-   $orgrelname="[name of your new organization relationship]"
    if (!(New-DistributionGroup -Type Security -Name $scope)) { Write-Host "Group already exists." }
    $orgrels=Get-OrganizationRelationship
    $existingOrgRel = $orgrels | ?{$_.DomainNames -like $targetTenantId}
