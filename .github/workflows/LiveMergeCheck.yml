@@ -1,0 +1,22 @@
+name: Check max/live-compare-merge below
+
+permissions:
+  pull-requests: write
+  statuses: write
+  contents: read
+      
+on: 
+  pull_request_target:
+    types: [opened, reopened, synchronize, edited]
+
+jobs:
+
+  live-merge:
+    uses: MicrosoftDocs/MAX-CPUB-Test/.github/workflows/Shared-LiveMergeCheck.yml@main
+    with:
+      PayloadJson: ${{ toJSON(github) }}
+    secrets:
+      AccessToken: ${{ secrets.GITHUB_TOKEN }}
+
+
+  
