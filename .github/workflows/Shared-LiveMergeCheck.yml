@@ -1,0 +1,239 @@
+name: Live Merge Check
+
+permissions:
+  pull-requests: write
+  statuses: write
+  contents: read
+      
+on: 
+    workflow_call:
+        inputs:
+            PayloadJson:
+                required: true
+                type: string
+        secrets:
+            AccessToken:
+                required: true
+
+jobs:
+    build:
+      name: Run Script
+      runs-on: windows-latest
+      steps:
+        - name: Script
+          shell: pwsh
+          env: 
+            PayloadJson: ${{ inputs.PayloadJson }}
+            AccessToken: ${{ secrets.AccessToken }}
+            StatusCheckUrl: "https://review.docs.microsoft.com/en-us/office-authoring-guide/pull-request-status-checks?branch=main"
+
+            
+          run: |
+
+            # Get payload data and event from GitHub
+            $GitHubData = $env:PayloadJson | ConvertFrom-Json -Depth 50
+            $GitRequestEvent = $GitHubData.event_name
+            $StatusCheckHelpUrl = $env:StatusCheckUrl
+
+            $PublishBranch = "live"
+            $StatusCheckName = "max/live-compare-merge"
+
+            # Retrieve GitHub token, create github HTTP authentication header 
+            $AccessToken = $env:AccessToken
+            $GitHubHeaders = @{}
+            $GitHubHeaders.Add("Authorization","token $($AccessToken)")
+            $GitHubHeaders.Add("User-Agent", "officedocs")
+
+            $WorkflowsResourcePath = "https://api.github.com/repos/MicrosoftDocs/microsoft-365-docs/contents/.github/workflows/resources"
+            $WorkflowsRef = "workflows-prod"
+
+            $StatusUrl      = $GitHubData.event.pull_request.statuses_url
+            $RequiredRepo   = $GitHubData.event.repository.full_name
+            $TargetBranch   = $GitHubData.event.pull_request.base.ref
+            $OriginBranch   = $GitHubData.event.pull_request.head.ref
+            $OriginRepo     = $GitHubData.event.pull_request.head.repo.full_name
+            $DefaultBranch  = $GitHubData.event.repository.default_branch
+
+            $StatusCheckPendingText = "Checking base and compare branches."
+            $StatusCheckUnmonitoredBranchText = "OK to merge into $TargetBranch."
+            $AllowedBranchMergeText = "Compare branch $OriginBranch can merge into $PublishBranch."
+            $DisallowedBranchMergeText = "Only $RequiredRepo/$DefaultBranch can merge into $PublishBranch."
+
+            ##################
+            Function Get-PrMessage {
+
+                [cmdletbinding()]
+                Param(
+                    [Parameter(Mandatory=$True)]
+                    $PrMessageName
+                )
+
+                $PrMessageFile = "$WorkflowsResourcePath/$PrMessageName.md?ref=$WorkflowsRef"
+
+                Try {
+
+                    Write-Host "Getting PR message from $PrMessageFile"
+
+                    $PrMessageData = Invoke-RestMethod -Uri $PrMessageFile -Headers $GitHubHeaders
+                    $PrMessage = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($PrMessageData.content));
+
+                } Catch {
+
+                    Write-Host "Failed to get PR message $PrMessageName"
+
+                    $PrMessage = $Null
+
+                }
+
+                Return $PrMessage
+
+            }
+
+            #############
+            # Set-Status takes in the status check result and message values and creates the JSON body to send to GitHub.
+            Function Set-Status {
+
+                [cmdletbinding()]
+                Param (
+                    $StatusResult,
+                    $StatusMessage
+                    ) 
+                    
+                # Build hash table that contains status check fields to be sent to GitHub. Context and Target_Url always stay the same.
+                # State and Description change depending on result of checks below.
+                $Status = @{}
+                $Status.Add("context", $StatusCheckName)
+                $Status.Add("target_url", $StatusCheckHelpUrl)
+                $Status.state = $StatusResult
+                $Status.description = $StatusMessage
+                $StatusJson = $Status | ConvertTo-Json 
+                
+                Return $StatusJson
+
+            }
+
+            #############
+            # Send-Status takes the JSON body created by Set-Status and submits it to GitHub.
+            Function Send-Status {
+
+                [cmdletbinding()]
+                Param (
+                    $Url,
+                    $Body
+                    ) 
+
+                Try {
+
+                # Send status to GitHub
+                $Result = Invoke-WebRequest -Headers $GitHubHeaders -Uri $Url -UseBasicParsing -Method POST -Body $Body -ErrorAction Stop
+                
+                } Catch {
+
+                    Write-Host "ERROR: Failed to submit status to GitHub. Error: $($error[0].Exception.Message). Request ID: $RequestId."
+                
+                }
+            }
+
+            ###################
+
+            Function Set-PrConversationMessage {
+
+                [cmdletbinding()]
+                Param(
+                    [Parameter(Mandatory=$True)]
+                    $Message
+                )
+
+                $CommentsUrl = $GitHubData.event.pull_request.comments_url
+
+                $BodyHash = @{}
+                $BodyHash.body = $Message
+                $BodyJson = $BodyHash | ConvertTo-Json
+
+                Try {
+
+                    $Result = Invoke-WebRequest -UseBasicParsing -Uri $CommentsUrl -Body $BodyJson -Headers $GitHubHeaders -Method POST -ErrorAction Stop
+                
+                    $PostCommentSuccess = $True
+
+                } Catch {
+
+                    $PostCommentSuccess = $False
+
+                    Write-Host "ERROR: Failed to submit message to PR conversation. Error: $($error[0].Exception.Message). Request ID: $RequestId."
+
+                    
+
+                }
+
+                Return $PostCommentSuccess
+
+            }
+
+            ###################
+            ###################
+            # Main
+
+            $RuntimeInfo = "Repo: $($GitHubData.event.repository.name)"
+            $RuntimeInfo = $RuntimeInfo + " PR origin repo: $OriginRepo"
+            $RuntimeInfo = $RuntimeInfo + " Sender: $($GitHubData.event.sender.login)"
+            $RuntimeInfo = $RuntimeInfo + " Request type: $GitRequestEvent"
+            $RuntimeInfo = $RuntimeInfo + " GitHub action: $($GitHubData.event.action)"
+            $RuntimeInfo = $RuntimeInfo + " Request Id: $RequestId"
+
+            Write-Host $RuntimeInfo
+
+            # Only process event types of 'pull_request'
+            If ($GitRequestEvent -eq "pull_request_target") {
+
+                Write-Host "Request type is pull_request. Processing request. Request ID: $RequestId."
+
+                If (($GitHubData.event.action -eq "opened") -or ($GitHubData.event.action -eq "synchronize") -or ($GitHubData.event.action -eq "reopened") -or ($GitHubData.event.action -eq "edited")) {
+
+                    Write-Host "Setting pending status. Request ID: $RequestId."
+
+                    # Show the status of the check as "pending" in the PR on GitHub
+                    # This is being set only if $TargetBranch equals $PublishBranch because we only want to run this check for PRs that originally targetted
+                    # $PublishBranch. Trying to avoid cluttering the status check on PRs submitted to anything other than $PublishBranch.
+                    $StatusOutput = Set-Status -StatusResult "pending" -StatusMessage $StatusCheckPendingText
+                    Send-Status -Url $StatusUrl -Body $StatusOutput 
+
+                    If ($TargetBranch -eq $PublishBranch) {
+
+                        Write-Host "Target branch $TargetBranch matches publish branch $PublishBranch. Request ID: $RequestId."
+
+                        If (($OriginBranch -eq $DefaultBranch) -and ($OriginRepo -eq $RequiredRepo)) {
+
+                            Write-Host "Origin branch $OriginBranch is allowed to merge to $PublishBranch. Request ID: $RequestId."
+
+                            $StatusOutput = Set-Status -StatusResult "success" -StatusMessage $AllowedBranchMergeText
+
+
+                        } Else {
+
+                            Write-Host "Origin branch $OriginRepo/$OriginBranch isn't allowed to merge into $PublishBranch. Request ID: $RequestId."
+
+                            $StatusOutput = Set-Status -StatusResult "error" -StatusMessage $DisallowedBranchMergeText
+
+                            $LiveMergeMessage = Get-PrMessage -PrMessageName "LiveMergeCheck-LiveMergeMessage"
+
+                            Set-PrConversationMessage -Message $($LiveMergeMessage -F $TargetBranch, $DefaultBranch)
+
+                        } # OriginBranch
+
+                    } Else {
+
+                        Write-Host "Target branch is not $PublishBranch. Setting status check to 'success'."
+
+                        $StatusOutput = Set-Status -StatusResult "success" -StatusMessage $StatusCheckUnmonitoredBranchText
+                                    
+
+                    } # Target banch
+
+                    Send-Status -Url $StatusUrl -Body $StatusOutput 
+
+                } # PR state
+
+            } # Is PR check
+
+
