@@ -8,7 +8,7 @@ ms.topic: conceptual
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
-description: Learn how to set up open shifts across locations in Shifts for your frontline. With this feature, frontline managers can offer open shifts across multiple locations for frontline workers to request.  
+description: Learn how to set up open shifts across locations in Shifts for your frontline. With this feature, frontline managers can offer open shifts across multiple locations for frontline workers to request, and workers can see and request open shifts at other locations.
 ms.localizationpriority: medium
 ms.collection: 
   - M365-collaboration
@@ -131,4 +131,5 @@ Isaac, who wants to earn extra hours, requests the open shift that’s available
 
 - [Shifts for your frontline organization](shifts-for-teams-landing-page.md)
 - [Deploy your frontline operational hierarchy](deploy-frontline-operational-hierarchy.md)
+- [schedulingGroup](/graph/api/resources/schedulinggroup?view=graph-rest-beta)
 - [Create schedulingGroup](/graph/api/schedule-post-schedulinggroups?view=graph-rest-beta)
