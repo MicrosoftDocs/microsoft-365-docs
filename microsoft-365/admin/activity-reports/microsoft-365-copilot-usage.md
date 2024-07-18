@@ -162,10 +162,6 @@ To make the data in the Copilot for Microsoft 365 report anonymous, you must be 
 
 A user is considered active in a given app if they performed an intentional action for an AI-powered capability. For example, if a user selects the Copilot icon in the Word ribbon to open the Copilot chat pane, this does not count towards active usage. However, if the user interacts with the chat pane by submitting a prompt, this action would count towards active usage.
 
-### Does Teams Copilot usage include Copilot chat usage in Teams?
-
-Teams Copilot usage excludes Copilot chat usage within Teams, as Copilot chat is a Teams app. In the future, we will add the Copilot chat usage breakdown in Teams, Bing, and more.
-
 ### What's the difference between the user activity table and audit log?
 
 The information captured in audit log records differs from that in [Microsoft 365 usage reports](#user-last-activity-table). It's important to note that audit logs are not designed for assessing user engagement in Microsoft 365, and they should not be used to replace or augment information in Microsoft 365 usage reports. To learn more about audit logs, see [Export, configure, and view audit log records](/purview/audit-log-export-records#step-1-export-audit-log-search-results).
