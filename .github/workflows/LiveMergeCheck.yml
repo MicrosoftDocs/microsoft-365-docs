@@ -12,7 +12,7 @@ on:
 jobs:
 
   live-merge:
-    uses: MicrosoftDocs/MAX-CPUB-Test/.github/workflows/Shared-LiveMergeCheck.yml@main
+    uses: MicrosoftDocs/microsoft-365-docs/.github/workflows/Shared-LiveMergeCheck.yml@workflows-prod
     with:
       PayloadJson: ${{ toJSON(github) }}
     secrets:
