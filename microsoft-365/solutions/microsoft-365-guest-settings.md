@@ -29,6 +29,9 @@ description: "Learn about the guest sharing settings available in Microsoft 365 
 
 This article provides a reference for the various settings that can affect sharing with people outside your organization for the Microsoft 365 workloads: Teams, Microsoft 365 Groups, SharePoint, and OneDrive. These settings are located in the Microsoft Entra ID, Microsoft 365, Teams, and SharePoint admin centers.
 
+> [!IMPORTANT]
+> Microsoft recommends that you use roles with the fewest permissions. Using lower permissioned accounts helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
+
 <a name='azure-active-directory'></a>
 
 ## Microsoft Entra ID
