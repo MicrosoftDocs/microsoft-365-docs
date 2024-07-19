@@ -164,7 +164,9 @@ A user is considered active in a given app if they performed an intentional acti
 
 ### What's the difference between the user activity table and audit log?
 
-The information captured in audit log records differs from that in [Microsoft 365 usage reports](#user-last-activity-table). It's important to note that audit logs are not designed for assessing user engagement in Microsoft 365, and they should not be used to replace or augment information in Microsoft 365 usage reports. To learn more about audit logs, see [Export, configure, and view audit log records](/purview/audit-log-export-records#step-1-export-audit-log-search-results).
+The audit log data that powers Microsoft Purview solutions, such as AI hub, are built for data security and compliance purposes, and provide comprehensive visibility into Copilot interactions for these use cases (for example, to discover data oversharing risks or to collect interactions for regulatory compliance or legal purposes). They are not, however, intended to be used as the basis for Copilot usage reporting. Any aggregated metrics that customers build on top of this data, such as "prompt count" or "active user count," may not be consistent with the corresponding data points in the official Copilot usage reports provided by Microsoft. Microsoft cannot provide guidance on how to use audit log data as the basis for usage reporting, nor can Microsoft guarantee that aggregated usage metrics built on top of audit log data will match similar usage metrics reported in other tools.
+
+To access accurate information on Copilot for Microsoft 365 usage, use one of the following reports: the [Copilot for Microsoft 365 usage report](microsoft-365-copilot-usage.md) in the Microsoft 365 Admin Center or the [Copilot Dashboard](/viva/insights/org-team-insights/copilot-dashboard) in Viva Insights.
 
 ### Is Intelligent Recap usage in Teams captured in [Usage reports](activity-reports.md)?
 
