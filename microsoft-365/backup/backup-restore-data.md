@@ -99,8 +99,9 @@ Follow these steps to restore data backed up for OneDrive.
         - The entire OneDrive is replaced by the backed-up version chosen based on the restore point.
         - File and folder permissions are also reverted to the selected date and time.
 
-    b. **Create new SharePoint site and restore to there** option
+    b. **Create new SharePoint site and restore to a new URL** option
         - The entire OneDrive will restore to a new SharePoint site where you can then copy or move data into the original OneDrive to create a roll-forward type of restore and avoid overwriting currently healthy data.
+        - When you restore using this option, the new site URL will have an "R" followed by a number concatenated to the end. For example, if the original URL was 'https://contoso-my.sharepoint.com/personal/user1_contoso_com' the restored site could be 'https://contoso-my.sharepoint.com/personal/user1_contoso_comR0'. Note that the number at the end will increment to avoid URL name conflicts up to 1,000 total restores. After that you should delete some of those new URLs to clear namespace for future new-URL restores.
 
 9. On the **Review and Finish** page, you're asked to review and finish all your choices. If everything looks as you want it, select **Restore OneDrive accounts**.
 
