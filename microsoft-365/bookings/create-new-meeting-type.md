@@ -40,7 +40,7 @@ In Microsoft Bookings, meeting types can be categorized using public and private
 
 ## Create new meeting type
 
-:::image type="content" source="media/create_new_meeting_type_page.png" alt-text="Screenshot showing the home page of Microsoft Bookings where you can select to create a new meeting type.":::
+:::image type="content" source="../media/preview-booking-page.png" alt-text="Screenshot showing the homepage for Microsoft Bookings." lightbox="../media/preview-booking-page.png":::
 
 1. On the home page, select **Create meeting type** in the Personal booking page section.
 

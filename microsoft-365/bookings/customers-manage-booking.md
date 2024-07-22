@@ -13,12 +13,12 @@ ms.custom: QuickDraft
 ms.reviewer: kwekua  
 search.appverid: MET150  
 ai-usage: ai-assisted 
-description: "Learn how to let customers manage their Microsoft 365 Business Basic bookings." 
+description: "Learn how to let customers manage their bookings in Shared Bookings." 
 ---
 
-# Allowing customers to manage their bookings in Microsoft 365 Business Basic
+# Allowing customers to manage their bookings in Shared Bookings
 
-As an administrator, you might want to give your customers the flexibility to manage their bookings, such as rescheduling or canceling appointments. This guide will help you enable the necessary settings in Microsoft 365 Business Basic's Bookings app.
+As an administrator, you might want to give your customers the flexibility to manage their bookings, such as rescheduling or canceling appointments. This guide will help you enable the necessary settings in the Microsoft Bookings app.
 
 ## Enabling customer management of Bookings
 

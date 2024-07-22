@@ -14,13 +14,13 @@
   - name: Learn about Shared Bookings
     displayname: Learn about Shared Bookings
     items:
-    - name: Manage your Shared Bookings customer information
+    - name: Get started with Shared Bookings
       items:
-      - name: Enter your Bookings business information
+      - name: Set up your shared booking page
         href: enter-business-information.md
       - name: Define your Bookings service offerings
         href: define-service-offerings.md
-      - name: Add staff to Bookings
+      - name: Add team members to Bookings
         href: add-staff.md
       - name: Share your shared booking page
         href: share-shared-bookings-page.md
@@ -30,13 +30,13 @@
         href: staff-roles.md
       - name: Configure staff availability
         href: staff-availability.md
-      - name: Notify staff when a bookings is created or updated
+      - name: Set up appointment notifications for staff
         href: notify-staff-member-assigned-booking.md
       - name: Configure staff membership when added to a Shared Booking page
         href: accept-membership-shared-booking-page.md
     - name: Manage your service availability for shared bookings
       items:
-        - name: Create a single attendee or multiple attendee booking service
+        - name: Creating personalized and group services
           href: service-types.md
         - name: Configure SMS text notifications and reminders
           href: bookings-sms.md

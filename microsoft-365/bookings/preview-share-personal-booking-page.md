@@ -52,7 +52,7 @@ You can share the link to your booking page using the methods below:
 
 - **Email signature settings** The third option is to add your booking page link to your email signature. This means that every time you draft or send an email using Outlook, your booking page will automatically be embedded in your email signature. This seamless integration enables recipients to easily access your booking page with a single click, simplifying the appointment booking process for both parties.
 
-:::image type="content" source="media/preview-booking-page-signature.png" alt-text="Screenshot showing the page in Microsoft Bookings to add your booking page to your email signature.":::
+:::image type="content" source="media/preview-booking-page-signature.png" alt-text="Screenshot showing the page in Microsoft Bookings to add your booking page to your email signature." lightbox="media/preview-booking-page-signature.png":::
 
 ### Benefits of sharing the booking page link
 
