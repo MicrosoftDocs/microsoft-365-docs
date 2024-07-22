@@ -22,23 +22,23 @@ description: Read frequently asked questions about Microsoft 365 Backup.
 
 #### Has Microsoft's stance on shared responsibility of data protection changed?
 
-No, we still have the same point of view, but are now offering additional tools to help organizations achieve those goals and responsibilities.
+No, we still have the same point of view, but are now offering more tools to help organizations achieve those goals and responsibilities.
 
 #### Why don’t Disaster Recovery copies suffice for my backup?
 
-Disaster Recovery (DR) is the ability to recover from a situation in which the primary data center is unable to continue to operate. A DR copy with Microsoft 365 maintains the current state of content, not any historical versions from prior points in time. Microsoft 365 Backup provides additional benefit by giving you a way to restore data back to a healthy state in the past with fast RTO to with short RPO intervals.
+Disaster Recovery (DR) is the ability to recover from a situation in which the primary data center is unable to continue to operate. A DR copy with Microsoft 365 maintains the current state of content, not any historical versions from prior points in time. Microsoft 365 Backup offers the added advantage of allowing you to restore data to a previous healthy state quickly, with fast RTO (recovery time objectives) and short RPO (recovery point objectives).
 
 #### Why don’t versions already solve this point in time restore problem?
 
-Versions give individual users a way to restore files or sites to prior points in time, but that kind of recovery method doesn't scale well for mass ransomware attacks where an admin needs to orchestrate the recovery. Versions might also be exhausted depending on the version limit set by the admin.
+Versions give individual users a way to restore files or sites to prior points in time, However, that kind of recovery method doesn't scale well for large-scale ransomware attacks where an admin needs to orchestrate the recovery. Versions might also be exhausted depending on the version limit set by the admin.
 
 #### Why don’t legal holds solve the problem of keeping all versions of items for recovery?
 
 Legal holds retain data, but that feature is optimized for export (for example, via eDiscovery), not for mass restore. Microsoft 365 Backup gives the right enhanced restore tooling for ransomware and accidental/malicious deletions at scale, plus optimized performance for those scenarios.
 
-#### What mailbox changes are “backed up”?
+#### What mailbox changes are "backed up"?
 
-Mailbox backup enables the recovery of copies of mailbox item “versions.” Versions are created by two types of actions:
+Mailbox backup enables the recovery of copies of mailbox item “versions.” Two types of actions create versions:
 
 - Modifications
 - Deletions
@@ -46,7 +46,7 @@ Mailbox backup enables the recovery of copies of mailbox item “versions.” Ve
 Example events that are versions and recoverable via backup:
 
 **User action**
-- Edit a received email using ‘edit message’ via OL
+- Edit a received email using ‘edit message’ via Outlook
 - Edit a Note (not draft)
 - Remove an attachment from an email
 - Edit an attachment to an email
@@ -69,7 +69,7 @@ Example events that aren't versioned or recoverable via backup:
 
 #### What is the service recovery point objective?
 
-The recovery point objective (RPO) is the maximum amount of time between the most recent backup and a data destruction event. Stated another way, it’s the amount data lost due to a data destruction event not recoverable via the backups. In the case of Microsoft 365 Backup, the RPOs are:
+The recovery point objective (RPO) is the maximum amount of time between the most recent backup and a data destruction event. Stated another way, it’s the amount data lost due to a data destruction event not recoverable via the backups. For Microsoft 365 Backup, the RPOs are:
 
 - For OneDrive and SharePoint, the RPO for the first two weeks is 15 minutes, then one week beyond that. This means for the first two weeks, the most amount of data that can be lost due to a data destruction event is roughly 10 minute’s worth of the most recent data. Likewise, after two weeks, the most amount of data that can be lost is a week’s worth of data.
 
@@ -77,4 +77,25 @@ The recovery point objective (RPO) is the maximum amount of time between the mos
 
 Let's start with what it doesn't mean: We are *not* taking snapshots every 10 minutes.
 
-Backup frequency of 10 minutes (if the item is modified) means that changes to the item will be saved as a version once every 10 minutes, no matter how many changes are made in that 10-minute interval. For example, if a ransomware attack encrypts the email item every minute, will we take six copies in an hour.
+A backup frequency of 10 minutes (if the item is modified) means that any changes made to the item will be saved as a new version every 10 minutes, regardless of how many changes occur within that 10-minute period. For example, if a ransomware attack encrypts the email item every minute, we'll take six copies in an hour.
+
+#### What happens when a user content is backed up but then is deleted or removed from Microsoft Entra ID (previously Azure Active Directory)?
+
+When a user is removed from the backup policy, the backup of the OneDrive account or Exchange mailbox is retained for one year from the date the backup was created.
+
+When a user is deleted from Microsoft Entra ID, the backup of the OneDrive account or Exchange mailbox is retained for one year from the date the backup was created.
+
+#### How can I restore the OneDrive account and Exchange mailbox for a user who is deleted from Microsoft Entra ID (previously Azure Active Directory)?
+
+> [!NOTE]
+> Within 30 days of deletion, deleted users will appear as "–" in the user interface.
+
+- For OneDrive, if within 30 days of being deleted, you can restore the OneDrive to the original URL or a new URL. At that time, the OneDrive is in an "orphaned" state. To connect the OneDrive to a user, see [Fix site user ID mismatch in SharePoint or OneDrive](/sharepoint/troubleshoot/sharing-and-permissions/fix-site-user-id-mismatch).
+
+- For Exchange, a user account will be in a soft-deleted state for 30 days after it's deleted. To restore the user, see [Restore a user in the Microsoft 365 admin center](/microsoft-365/admin/add-users/restore-user). Once you restore the user, you can use the restore feature in Microsoft 365 Backup to restore as usual.
+
+- For Exchange, if the user account is permanently deleted, Microsoft 365 Backup retains the inactive mailbox for the duration of the backup policy. To recover and restore the inactive mailbox, see the following guidance:
+
+    - [Recover an inactive mailbox](/purview/recover-an-inactive-mailbox)
+
+    - [Restore an inactive mailbox](/purview/restore-an-inactive-mailbox)
