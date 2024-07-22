@@ -18,17 +18,6 @@ description: Learn about the backup and recovery capabilities for SharePoint, Ex
 
 # Overview of Microsoft 365 Backup
 
-> [!NOTE]
-> Microsoft 365 Backup (Preview) is now available worldwide in all commercial cloud environments. General availability is expected to be mid-2024. This preview feature is subject to change and [limitations as defined](backup-limitations.md). Before you begin, read the [Microsoft 365 Backup preview terms and conditions](backup-preview-terms.md).
-
-## About the preview
-
-Microsoft 365 Backup is currently in preview and begins rolling out to organizations in mid-2024. You can set up billing for the product as described in [Set up Microsoft 365 Backup](backup-setup.md). Once Microsoft 365 Backup has been deployed and is available for use in your tenant, you'll see it in the Microsoft 365 admin center page under **Settings**.
-
-During the preview period, performance and speed of web interfaces, initial configuration, and restores might be slower than expected as we scale up our infrastructure to remove undesirable latency from our system.
-
-## Microsoft and partner offerings
-
 This documentation outlines the Microsoft 365 Backup offering available in the Microsoft 365 admin center. We're partnering with many independent software vendors (ISVs) to provide differentiated versions of their applications integrated with the Microsoft 365 Backup Storage platform—all providing the same underlying performance value proposition for your Microsoft 365 data.
 
 In the case of a partner application, operation of the Microsoft 365 Backup tool will be managed and paid for entirely through the partner's application. Those applications will have the ability to provide a single pane of glass for all of your data estates that require backups, and they might provide additional enhanced experiences or workflows.
@@ -54,6 +43,24 @@ To summarize, applications built on top of the Microsoft 365 Backup Storage plat
 - Consolidated security and compliance domain management
 
 <!---M365-Backup_VID_WEB_Final.mp4   <need a link that embeds properly into the learn docs> --->
+
+## Feature summary
+
+
+|Feature  |OneDrive  |SharePoint  |Exchange  |
+|---------|---------|---------|---------|
+|Retention period     | 1 year        | 1 year        | 1 year        |
+|Recovery points     |• 10 minutes for two weeks prior<br>• Weekly snapshots 2-52 weeks prior |• 10 minutes for two weeks prior<br>• Weekly snapshots 2-52 weeks prior | 10 minutes for prior 52 weeks   |
+|Backup granularity     | OneDrive account |SharePoint site  |Exchange user account  |
+|Restore granularity     |         |         |         |
+|Restore options     |         |         |         |
+|Restore speeds (aka RTO)     |         |         |         |
+|Auditability & admin isolation |Actions fully auditable |Actions fully auditable |Actions fully auditable |
+|Geographic residency    |         |         |         |
+|Billing model    |         |         |         |
+
+
+
 
 ## Architectural overview and performance expectations
 
