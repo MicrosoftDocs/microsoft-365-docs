@@ -335,17 +335,18 @@ Followed sites and groups show up in the user's OneDrive regardless of their _Ge
 
 Users are sent to the Delve _Geography_ corresponding to their PDL only after their OneDrive has been moved to the new _Geography_.
 
-### **Move a SharePoint site**
+### **Move a SharePoint site or SharePoint Embedded container site**
 
-#### **Move a SharePoint site to a different _Geography_ location**
+#### **Move a SharePoint site or SharePoint Embedded container site to a different _Geography_ location**
 
-With SharePoint site _Geography_ move, you can move SharePoint sites to other _Geography_ locations within your Multi-Geo environment.
+With SharePoint site _Geography_ move, you can move SharePoint sites and SharePoint Embedded container sites to other _Geography_ locations within your Multi-Geo environment.
 The following types of site can be moved between _Geography_ locations:
 
 - Microsoft 365 group-connected sites, including those sites associated with Microsoft Teams
 - Modern sites without a Microsoft 365 group association
 - Classic SharePoint sites
 - Communication sites
+- SharePoint Embedded container sites (excluding those where the owner is a group)
 
 > [!NOTE]
 > You must be a SharePoint Administrator to move a site between _Geography_ locations.
@@ -420,7 +421,7 @@ Start-SPOSiteContentMove -SourceSiteUrl <SourceSiteUrl> -ValidationOnly -Destina
 
 This returns _Success_ if the site is ready to be moved or _Fail_ if any of blocked conditions are present.
 
-#### **Start a SharePoint site _Geography_ move for a site with no associated Microsoft 365 group**
+#### **Start a SharePoint site _Geography_ move for a site with no associated Microsoft 365 group or a SharePoint Embedded container site**
  
 By default, initial URL for the site will change to the URL of the destination _Geography_ location. For example:
 
@@ -430,12 +431,18 @@ For sites with no Microsoft 365 group association, you can also rename the site 
 
 `https://Contoso.sharepoint.com/sites/projectx` to `https://ContosoEUR.sharepoint.com/sites/projecty`
 
+This capability to rename the site as part of the move is not applicable for SharePoint Embedded container sites.
+
 To start the site move without renaming the site, run:
 
 ```powershell
 Start-SPOSiteContentMove -SourceSiteUrl <siteURL> -DestinationDataLocation <DestinationDataLocation>
 ```
-And to start the site move while also renaming the site, run:
+To get the SourceSiteUrl for a SharePoint Embedded container site, you must use the SharePoint Embedded admin cmdlets. You can use the `Get-SPOContainer` PowerShell cmdlet and pass the container ID as the `-Identity` parameter to determine the site URL of a specific container.
+
+If the SharePoint Embedded container site is owned by an individual user, the container site can only be moved to the geography matching the Preferred Data Location (PDL) of the user. 
+
+And to start the site move while also renaming the site (excluding SharePoint Embedded container sites), run:
 
 ```powershell
 Start-SPOSiteContentMove -SourceSiteUrl <siteURL> -DestinationUrl <DestinationSiteURL>
@@ -467,7 +474,7 @@ You can stop a SharePoint site _Geography_ move, provided the move isn't in prog
 
 You can determine the status of a site move in our out of the _Geography_ that you're connected to by using the following cmdlets:
 
-- [Get-SPOSiteContentMoveState](/powershell/module/sharepoint-online/get-spositecontentmovestate) (non-Group-connected sites)
+- [Get-SPOSiteContentMoveState](/powershell/module/sharepoint-online/get-spositecontentmovestate) (non-Group-connected sites and SharePoint Embedded container sites)
 - [Get-SPOUnifiedGroupMoveState](/powershell/module/sharepoint-online/get-spounifiedgroupmovestate) (Group-connected sites)
 
 Use the `-SourceSiteUrl` parameter to specify the site for which you want to see move status.
@@ -483,7 +490,6 @@ The move statuses are described in the following table.
 |InProgress (n/4)|The move is in progress in one of the following states: Validation (1/4), Back up (2/4), Restore (3/4), Cleanup (4/4).|
 |Success|The move completed successfully.|
 |Failed|The move failed.|
-|
 
 You can also apply the `-Verbose` option to see additional information about the move.
 
