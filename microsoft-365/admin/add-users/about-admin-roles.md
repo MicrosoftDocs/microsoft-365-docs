@@ -50,7 +50,7 @@ Check out this video and others on our [YouTube channel](https://go.microsoft.co
 
 The <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> lets you manage Microsoft Entra roles and Microsoft Intune roles. However, these roles are a subset of the roles available in the Microsoft Entra admin center and the Intune admin center.
 
-For the full list of detailed Microsoft Entra role descriptions you can manage in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, check out Administrator role permissions in the [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference) topic.
+For the full list of detailed Microsoft Entra role descriptions you can manage in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, check out Administrator role permissions in [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference).
 
 For the full list of detailed Intune role descriptions you can manage in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, check out [Role-based access control (RBAC) with Microsoft Intune](/mem/intune/fundamentals/role-based-access-control).
 
