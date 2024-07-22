@@ -90,7 +90,7 @@ Since the guided experience walks through the steps to delete a user, here's how
 
 ### Stop paying for the license
 
-Reducing the number of licenses is a separate step that can only be performed by the global admin or billing admin.
+Reducing the number of licenses is a separate step that can be performed by the billing admin.
   
 ::: moniker range="o365-worldwide"
 
@@ -122,7 +122,7 @@ Here are the most common issues people encounter when deleting a user:
   
 - **You get an error message along the lines of "User cannot be deleted. Please try again later."** Double-check whether the account has email forwarding set up on it, or it's been converted to a shared mailbox. Both of these will cause that error. Don't delete the account if it has email forwarding or it's been converted to a shared mailbox.
 
-- **You don't have the appropriate permissions to delete a user**. Only people who are [Microsoft 365 global admins or user management admins](about-admin-roles.md) can delete users. Usually this is the technical support in your school or business.
+- **You don't have the appropriate permissions to delete a user**. People who are [user management admins](about-admin-roles.md) can delete users. Usually this is the technical support in your school or business.
 
 - **You delete the user but their name continues appear in your global address book**. This happens when a business is using Active Directory. You must delete the users account from Active Directory. For instructions, see [Delete a User Account.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11))
 
