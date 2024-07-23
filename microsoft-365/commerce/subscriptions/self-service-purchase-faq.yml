@@ -29,7 +29,7 @@ title: Self-service purchase FAQ
 summary: |
   Self-service purchase gives users a chance to try out new technologies and develop solutions that ultimately benefit their larger organizations. Central procurement and IT teams have visibility to all users who buy and deploy self-service purchase solutions through the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. Admins can turn off self-service purchasing on a per product basis via PowerShell. To learn more, see [Use AllowSelfServicePurchase for the MSCommerce PowerShell module](allowselfservicepurchase-powershell.md).
   
-  Self-service purchase is available for Power Platform (Power BI, Power Apps, and Power Automate), Project, and Visio.
+  Self-service purchase is available for Power Platform (Power Apps, and Power Automate), Power BI, Project, and Visio.
   
   > [!NOTE]
   > Self-service purchase isn't available in India or for government or education customers. Project and Visio aren't available for self-service purchase in Brazil and the Democratic Republic of Congo.
