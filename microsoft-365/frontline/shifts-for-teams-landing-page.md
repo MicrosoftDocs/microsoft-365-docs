@@ -81,7 +81,8 @@ Here’s an overview of what frontline managers and workers can do in Shifts.
 |Frontline manager capabilities |Standalone |Microsoft managed Shifts connector|
 |---------|---------|---------|
 |Create a schedule for their team. <br/>Supported methods:<ul><li>Manually create shifts and time off one by one.</li><li>Bulk creation of shifts and time off through Excel import and copy/paste.</li></ul> | Yes | Not available in Shifts.<sup>1</sup> |
-|Create open shifts for team members to request. <br/>Supported methods:<ul><li>Manually create shifts and time off one by one.</li><li>Bulk creation of shifts and time off through Excel import and copy/paste.</li></ul> | Yes | Not available in Shifts.<sup>1</sup> |
+|Create open shifts for workers on their team to request. <br/>Supported methods:<ul><li>Manually create shifts and time off one by one.</li><li>Bulk creation of shifts and time off through Excel import and copy/paste.</li></ul> | Yes | Not available in Shifts.<sup>1</sup> |
+|Create open shifts for workers on other teams (locations) to request. <br/>Supported methods:<ul><li>Manually create shifts and time off one by one.</li><li>Bulk creation of shifts and time off through Excel import and copy/paste.</li></ul> | Yes | No |
 |Update and delete shifts, time off, and open shifts.<br/>Only manual one by one changes are supported.| Yes | Not available in Shifts.<sup>1</sup> |
 |Manage Shifts settings for the team. | Yes<sup>2</sup>| No<sup>3</sup>|
 |Create schedule groups to organize workers based on common characteristics within a team. For example, department or job type. | Yes | No<sup>4</sup>|
