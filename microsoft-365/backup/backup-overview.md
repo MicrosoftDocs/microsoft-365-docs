@@ -18,7 +18,21 @@ description: Learn about the backup and recovery capabilities for SharePoint, Ex
 
 # Overview of Microsoft 365 Backup
 
-This documentation outlines the Microsoft 365 Backup offering available in the Microsoft 365 admin center. We're partnering with many independent software vendors (ISVs) to provide differentiated versions of their applications integrated with the Microsoft 365 Backup Storage platform—all providing the same underlying performance value proposition for your Microsoft 365 data.
+Microsoft 365 Backup is designed to ensure your organization’s data is always protected and easily recoverable. With the ability to back up all or select SharePoint sites, OneDrive accounts, and Exchange mailboxes, Microsoft 365 Backup provides comprehensive coverage for your critical data.
+
+Key features include:
+
+- **Granular and massive scale restorations**: Restore files, sites, and mailbox items to a prior point in time, whether you need to recover a single document or an entire site.
+
+- **Seamless integration**: Managed directly from the Microsoft 365 admin center, making it easy to set up and manage your backup policies.
+
+- **Business continuity**: Ensures quick recovery from ransomware attacks, accidental deletions, or other data loss events, minimizing downtime and maintaining business operations.
+
+- **Partner ecosystem**: Leverage additional features and workflows through integrated partner applications, providing a single pane of glass for all your backup needs.
+
+## Integrated partner solutions
+
+We partner with many independent software vendors (ISVs) to provide differentiated versions of their applications integrated with the Microsoft 365 Backup Storage platform—all providing the same underlying performance value proposition for your Microsoft 365 data.
 
 In the case of a partner application, operation of the Microsoft 365 Backup tool will be managed and paid for entirely through the partner's application. Those applications will have the ability to provide a single pane of glass for all of your data estates that require backups, and they might provide additional enhanced experiences or workflows.
 
