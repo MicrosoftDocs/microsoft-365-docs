@@ -117,6 +117,13 @@ Follow these steps to set up a backup policy for OneDrive accounts using Microso
 
     ![Screenshot of the Add via Distribution lists and Security groups on the Protection scope page for OneDrive.](../media/m365-backup/backup-protection-add-dl-sg-onedrive.png)
 
+    The rule-based feature for bulk addition of sites via site names or URL in the backup policy creation workflow can accommodate a maximum of 10 keywords at a time. Each keyword can have a minimum of three characters and maximum of 255 characters.
+
+    The rule-based feature for bulk addition of user accounts via security groups or distribution lists can accommodate a maximum of three groups at a time. These rules are static and applied one time only. That is, the security groups or distribution lists are flattened at the time of adding to the backup configuration policy. For example. groups or list won't be dynamically updated in the system if users are added or removed from the original security group.
+
+    > [!NOTE]
+    > The site last modified feature is in preview.
+
     c. Under **Import from file**, select **Upload CSV** to import user account details via CSV upload.
 
     ![Screenshot of the Import from file section on the Protection scope page for OneDrive.](../media/m365-backup/backup-protection-import-file-onedrive.png)
@@ -158,6 +165,13 @@ Follow these steps to set up a backup policy for SharePoint sites using Microsof
     ![Screenshot of the Search and select sites panel on the Protection scope page for SharePoint.](../media/m365-backup/backup-protection-add-search-sharepoint.png)
 
     b. Under **Add via**, select **Distribution lists** or **Security groups**, or both. The distribution list and security group are flattened when added, meaning the policy won't update dynamically if the groups or distribution list are updated later.
+
+    The rule-based feature for bulk addition of sites via site names or URL in the backup policy creation workflow can accommodate a maximum of 10 keywords at a time. Each keyword can have a minimum of three characters and maximum of 255 characters.
+
+    The rule-based feature for bulk addition of user accounts via security groups or distribution lists can accommodate a maximum of three groups at a time. These rules are static and applied one time only. That is, the security groups or distribution lists are flattened at the time of adding to the backup configuration policy. For example. groups or list won't be dynamically updated in the system if users are added or removed from the original security group.
+
+    > [!NOTE]
+    > The site last modified feature is in preview.
 
     c. Under **Import from file**, select **Upload CSV** to import user account details via CSV upload.
 
@@ -207,6 +221,13 @@ Follow these steps to set up a backup policy for Exchange mailboxes sites using 
 
     ![Screenshot of the Add via Distribution lists and Security groups on the Protection scope page for Exchange.](../media/m365-backup/backup-protection-add-dl-sg-exchange.png)
 
+    The rule-based feature for bulk addition of sites via site names or URL in the backup policy creation workflow can accommodate a maximum of 10 keywords at a time. Each keyword can have a minimum of three characters and maximum of 255 characters.
+
+    The rule-based feature for bulk addition of user accounts via security groups or distribution lists can accommodate a maximum of three groups at a time. These rules are static and applied one time only. That is, the security groups or distribution lists are flattened at the time of adding to the backup configuration policy. For example. groups or list won't be dynamically updated in the system if users are added or removed from the original security group.
+
+    > [!NOTE]
+    > The site last modified feature is in preview.
+
     c. Under **Import from file**, select **Upload CSV** to import user account details via CSV upload.
 
     ![Screenshot of the Import from file section on the Protection scope page for Exchange.](../media/m365-backup/backup-protection-import-file-exchange.png)
@@ -225,6 +246,10 @@ Follow these steps to set up a backup policy for Exchange mailboxes sites using 
 
 Once the mailboxes are added to a backup policy, it might take up to 15 minutes per 1,000 sites or mailboxes for restore points to become available for restore.
 ---
+
+## Multi-geo environments
+
+Microsoft 365 Backup supports the backup of sites and user accounts from both the central as well as satellite locations if the multi-geo feature is enabled on your tenant. This means that you can add the sites or user accounts from all geos while creating the backup configuration policy via the CSV file upload method. Note that adding sites via search and rules will not support multi geo and you can add sites only from the central location. You can remove sites and user accounts from all the geos while modifying the backup configuration policy.
 
 ## Admin roles and backup management privileges
 
