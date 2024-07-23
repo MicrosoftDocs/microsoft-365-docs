@@ -79,13 +79,13 @@ Let's start with what it doesn't mean: We are *not* taking snapshots every 10 mi
 
 A backup frequency of 10 minutes (if the item is modified) means that any changes made to the item will be saved as a new version every 10 minutes, regardless of how many changes occur within that 10-minute period. For example, if a ransomware attack encrypts the email item every minute, we'll take six copies in an hour.
 
-#### What happens when user content is backed up but then is removed or deleted from Microsoft Entra ID (previously Azure Active Directory)?
+#### What happens when user content is backed up but then is removed or deleted from Microsoft Entra ID (formerly Azure Active Directory)?
 
 When a user is removed from the backup policy, the backup of the OneDrive account or Exchange mailbox is retained for one year from the date the backup was created.
 
 When a user is deleted from Microsoft Entra ID, the backup of the OneDrive account or Exchange mailbox is retained for one year from the date the backup was created.
 
-#### How can I restore the OneDrive account and Exchange mailbox for a user who is deleted from Microsoft Entra ID (previously Azure Active Directory)?
+#### How can I restore the OneDrive account and Exchange mailbox for a user who is deleted from Microsoft Entra ID (formerly Azure Active Directory)?
 
 > [!NOTE]
 > Within 30 days of deletion, deleted users will appear as "–" in the user interface.

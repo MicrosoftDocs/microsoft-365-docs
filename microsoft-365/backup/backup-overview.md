@@ -28,13 +28,7 @@ Key features include:
 
 - **Business continuity**: Ensures quick recovery from ransomware attacks, accidental deletions, or other data loss events, minimizing downtime and maintaining business operations.
 
-- **Partner ecosystem**: Leverage additional features and workflows through integrated partner applications, providing a single pane of glass for all your backup needs.
-
-## Integrated partner solutions
-
-We partner with many independent software vendors (ISVs) to provide differentiated versions of their applications integrated with the Microsoft 365 Backup Storage platform—all providing the same underlying performance value proposition for your Microsoft 365 data.
-
-In the case of a partner application, operation of the Microsoft 365 Backup tool will be managed and paid for entirely through the partner's application. Those applications will have the ability to provide a single pane of glass for all of your data estates that require backups, and they might provide additional enhanced experiences or workflows.
+- **Partner ecosystem**: Leverage additional features and workflows through integrated partner applications to manage all your backups in one place.
 
 ## Scenarios and value proposition
 
@@ -117,6 +111,12 @@ The following table summarizes expected performance for a normally distributed t
 | 1,000 accounts, sites, or mailboxes<br>(10-GB average size)  |Less than 12 hours  |
 
 <sup>*A *protection unit* is a OneDrive account, SharePoint site, or Exchange mailbox.</sup>
+
+## Integrated partner solutions
+
+We partner with many independent software vendors (ISVs) to provide differentiated versions of their applications integrated with the Microsoft 365 Backup Storage platform—all providing the same underlying performance value proposition for your Microsoft 365 data.
+
+In the case of a partner application, operation of the Microsoft 365 Backup tool will be managed and paid for entirely through the partner's application. Those applications will have the ability to provide a single pane of glass for all of your data estates that require backups, and they might provide additional enhanced experiences or workflows.
 
 ## General Data Protection Regulations (GDPR)
 
