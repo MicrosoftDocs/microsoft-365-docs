@@ -221,3 +221,13 @@ Follow these steps to restore data backed up for Exchange.
 |Processing | A change to backup policy or a restore is in progress.  |
 
 ---
+
+## Multi-geo environments
+
+Microsoft 365 Backup supports restoring sites and user accounts from both central and satellite locations if the multi-geo feature is enabled on your tenant. This lets you:
+
+- View sites or accounts from all the geos while selecting sites or accounts during the restore operation.
+
+- Add or remove sites or accounts from all the geos during the restore operation.
+
+Microsoft 365 Backup supports the backup and restoration of any site and user account even if that site or user account has moved from one geo to another geo. If the site or user account has moved to a new geo, and you’re restoring data from a prior point back in time when the site or user account was in older geo, then the restored site or user account will be available in the new geo.
