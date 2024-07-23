@@ -79,7 +79,7 @@ Let's start with what it doesn't mean: We are *not* taking snapshots every 10 mi
 
 A backup frequency of 10 minutes (if the item is modified) means that any changes made to the item will be saved as a new version every 10 minutes, regardless of how many changes occur within that 10-minute period. For example, if a ransomware attack encrypts the email item every minute, we'll take six copies in an hour.
 
-#### What happens when a user content is backed up but then is deleted or removed from Microsoft Entra ID (previously Azure Active Directory)?
+#### What happens when user content is backed up but then is removed or deleted from Microsoft Entra ID (previously Azure Active Directory)?
 
 When a user is removed from the backup policy, the backup of the OneDrive account or Exchange mailbox is retained for one year from the date the backup was created.
 
@@ -90,12 +90,11 @@ When a user is deleted from Microsoft Entra ID, the backup of the OneDrive accou
 > [!NOTE]
 > Within 30 days of deletion, deleted users will appear as "–" in the user interface.
 
-- For OneDrive, if within 30 days of being deleted, you can restore the OneDrive to the original URL or a new URL. At that time, the OneDrive is in an "orphaned" state. To connect the OneDrive to a user, see [Fix site user ID mismatch in SharePoint or OneDrive](/sharepoint/troubleshoot/sharing-and-permissions/fix-site-user-id-mismatch).
+For OneDrive, if within 30 days of being deleted, you can restore the OneDrive to the original URL or a new URL. At that time, the OneDrive is in an "orphaned" state. To connect the OneDrive to a user, see [Fix site user ID mismatch in SharePoint or OneDrive](/sharepoint/troubleshoot/sharing-and-permissions/fix-site-user-id-mismatch).
 
-- For Exchange, a user account will be in a soft-deleted state for 30 days after it's deleted. To restore the user, see [Restore a user in the Microsoft 365 admin center](/microsoft-365/admin/add-users/restore-user). Once you restore the user, you can use the restore feature in Microsoft 365 Backup to restore as usual.
+For Exchange, a user account will be in a soft-deleted state for 30 days after it's deleted. To restore the user, see [Restore a user in the Microsoft 365 admin center](/microsoft-365/admin/add-users/restore-user). Once you restore the user, you can use the restore feature in Microsoft 365 Backup to restore as usual.
 
-- For Exchange, if the user account is permanently deleted, Microsoft 365 Backup retains the inactive mailbox for the duration of the backup policy. To recover and restore the inactive mailbox, see the following guidance:
+For Exchange, if the user account is permanently deleted, Microsoft 365 Backup retains the inactive mailbox for the duration of the backup policy. To recover and restore the inactive mailbox, see the following guidance:
 
-    - [Recover an inactive mailbox](/purview/recover-an-inactive-mailbox)
-
-    - [Restore an inactive mailbox](/purview/restore-an-inactive-mailbox)
+- [Recover an inactive mailbox](/purview/recover-an-inactive-mailbox)
+- [Restore an inactive mailbox](/purview/restore-an-inactive-mailbox)
