@@ -49,18 +49,15 @@ To summarize, applications built on top of the Microsoft 365 Backup Storage plat
 
 |Feature  |OneDrive  |SharePoint  |Exchange  |
 |---------|---------|---------|---------|
-|Retention period     | 1 year        | 1 year        | 1 year        |
-|Recovery points     |• 10 minutes for two weeks prior<br>• Weekly snapshots 2-52 weeks prior |• 10 minutes for two weeks prior<br>• Weekly snapshots 2-52 weeks prior | 10 minutes for prior 52 weeks   |
-|Backup granularity     | OneDrive account |SharePoint site  |Exchange user account  |
-|Restore granularity     |         |         |         |
-|Restore options     |         |         |         |
-|Restore speeds (aka RTO)     |         |         |         |
-|Auditability & admin isolation |Actions fully auditable |Actions fully auditable |Actions fully auditable |
-|Geographic residency    |         |         |         |
-|Billing model    |         |         |         |
-
-
-
+|**Retention period**     | 1 year        | 1 year        | 1 year        |
+|**Recovery points**     |• 10 minutes for two weeks prior<br>• Weekly snapshots 2-52 weeks prior |• 10 minutes for two weeks prior<br>• Weekly snapshots 2-52 weeks prior | 10 minutes for prior 52 weeks   |
+|**Backup granularity**     | OneDrive account |SharePoint site  |Exchange user account  |
+|**Restore granularity**     |• OneDrive accounts<br>• Files restorable via versions (coming soon)  |• SharePoint sites<br>• Files restorable via versions (coming soon)         |Mail/Contacts/Calendar/Task items  |
+|**Restore options**     |• **Location**: Same or new URL<br>• **OneDrive** restore rolls back to the state of the site at the prior point in time, overwriting all content and metadata since that prior point in time<br>• **File version** restore rolls forward the file to the state at the prior point in time, but retains prior versions.    |• **Location**: Same or new URL<br>• **Full site** restore rolls back to the state of the site at the prior point in time, overwriting all content and metadata since that prior point in time<br>• **File version** restore rolls forward the file to the state at the prior point in time, but retains prior versions.  |• **Location**: Same or new folder within user’s mailbox<br>• **Full and item level mailbox roll forward** restores only modified/delete items from prior point in time  |
+|**Restore speeds (RTO)**     |Up to 1,000 average-sized OneDrive accounts at a rate of approximately 1-3 TB per hour    |Up to 1,000 average-sized sites, at a rate of approximately 1-3 TB per hour    |Up to 1,000 average-sized mailboxes at a rate of approximately 1-3 TB per hour    |
+|**Auditability & admin isolation** |Actions fully auditable |Actions fully auditable |Actions fully auditable |
+|**Geographic residency**    |• Physically redundant & geographically replicated<br>• Honors tenant’s geographic residency requirements    |Physically redundant & geographically replicated<br>• Honors tenant’s geographic residency requirements    |Physically redundant & geographically replicated<br>• Honors tenant’s geographic residency requirements    |
+|**Billing model**    |• $0.15 per GB per month for all data protected by Backup<br>• Restores are free<br>(Different price for third-party)  |• $0.15 per GB per month for all data protected by Backup<br>• Restores are free<br>(Different price for third-party)   |• $0.15 per GB per month for all data protected by Backup<br>• Restores are free<br>(Different price for third-party)  |
 
 ## Architectural overview and performance expectations
 
@@ -82,10 +79,7 @@ Key architectural takeaways:
 
     ![Diagram showing the Microsoft 365 data trust boundaries.](../media/m365-backup/backup-boundaries-diagram.png)
 
-### General availability performance targets
-
-> [!IMPORTANT]
-> During the preview period, performance and speed of web interfaces, initial configuration, and restores might be slower than expected as we scale up our infrastructure to remove undesirable latency from our system. The following performance targets are not guarantees during the preview and might change at general availability.
+### Performance expectations
 
 #### Backup policy performance
 
