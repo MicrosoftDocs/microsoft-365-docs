@@ -15,8 +15,6 @@
       href: backup-restore-data.md
     - name: Offboarding
       href: backup-offboarding.md
-    - name: Preview limitations
-      href: backup-limitations.md
     - name: FAQs
       href: backup-faq.md
     - name: Microsoft 365 Backup Storage
