@@ -86,7 +86,7 @@ Follow these steps to restore data backed up for OneDrive.
 
     ![Screenshot showing the Select another backup panel for OneDrive.](../media/m365-backup/backup-onedrive-select-another-backup.png)
 
-8. On the **Set destination** page, selected OneDrive accounts can be restored by choosing  either the **Restore to the original OneDrive accounts** or **Create new SharePoint site and restore to there** option.
+8. On the **Set destination** page, selected OneDrive accounts can be restored by choosing  either the **Restore to the original OneDrive accounts** or **Create new SharePoint sites and restore to a new URL** option.
 
     ![Screenshot showing the Select destination page and options for OneDrive.](../media/m365-backup/backup-onedrive-set-destination.png)
 
@@ -136,12 +136,12 @@ Follow these steps to restore data backed up for SharePoint.
 
     ![Screenshot showing the Select another backup panel for SharePoint.](../media/m365-backup/backup-sharepoint-select-another-backup.png)
 
-8. On the **Set destination** page, selected SharePoint sites can be restored by choosing  either the **Restore to the original sites** or **Create new SharePoint site and restore to a new URL** option.
+8. On the **Set destination** page, selected SharePoint sites can be restored by choosing  either the **Restore to original sites** or **Create new sites and restore to a new URL** option.
 
     ![Screenshot showing the Select destination page and options for SharePoint.](../media/m365-backup/backup-sharepoint-set-destination.png)
 
-    a. **Restore to original sites** option
-        - The entire original site is replaced by the backed-up version chosen based on the restore point.
+    a. **Restore to original sites** option<br>
+        - The entire original site is replaced by the backed-up version chosen based on the restore point.<br>
         - File and folder permissions and all metadata state are also reverted to the selected date and time.
 
     b. **Create new sites and restore to a new URL** option
