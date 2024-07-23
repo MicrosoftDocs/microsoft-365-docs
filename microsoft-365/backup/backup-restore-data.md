@@ -232,7 +232,7 @@ Microsoft 365 Backup supports restoring sites and user accounts from both centra
 
 Microsoft 365 Backup supports the backup and restoration of any site and user account even if that site or user account has moved from one geo to another geo. If the site or user account has moved to a new geo, and you’re restoring data from a prior point back in time when the site or user account was in older geo, then the restored site or user account will be available in the new geo.
 
-## Considerations about restoring data
+## Considerations about using restore
 
 - Site search is case-sensitive and is a prefix-type search.
 
@@ -244,7 +244,7 @@ Microsoft 365 Backup supports the backup and restoration of any site and user ac
 
 - A site or OneDrive account that is under the strict SEC 17a-4(f) hold policy will fail any in-place restores so as to honor that immutability promise. For sites under that type of hold, you'll have to restore to a new URL or remove the hold. Any other type of preservation hold that does not have a strict admin lockout will allow an in-place restore. Restoring these types of sites as the preservation hold library will be reverted to the prior point in time. A new URL restore is recommended for that type of site as the cleanest option.
 	
-- The restore point frequency dictates the points in time from which you can recover a prior state of your data. Restore points will start being generated when you enable the Backup policy for a given OneDrive account, SharePoint site, or Exchange Online mailbox. Based on the defined and currently invariable backup frequency setting previously described, the following example highlights what is possible.
+- The restore point frequency dictates the points in time from which you can recover a prior state of your data. Restore points will start being generated when you enable the Backup policy for a given OneDrive account, SharePoint site, or Exchange Online mailbox. Based on the defined and currently invariable backup frequency setting, the following example highlights what is possible.
 	
     Megan, the Backup admin, enables a policy for the SharePoint site “HR Hub” on February 1, 2025, at 8:00 AM PST. At 10:00 AM PST, she has the option of rolling back the state of the site to any 10-minute period between 8:00 AM and 10:00 AM PST.
 
@@ -254,11 +254,9 @@ Microsoft 365 Backup supports the backup and restoration of any site and user ac
 
 - Mailbox draft items aren't backed up or restorable.
 
-- Calendar item backup and restore is limited to modified items only and doesn't cover deleted items. This action includes the following specific limitations:
-
 - For calendar item item restore, restoring organizer copy doesn't automatically make attendee copies catch up, it only allows future updates by organizer to work for all users added on the calendar item.
 
-- To restore OneDrive account and Exchange mailbox for a user who is deleted from Microsoft Entra ID, here is how to do it:  
+- To restore a OneDrive account and Exchange mailbox for a user who is deleted from Microsoft Entra ID, use this instruction:  
 
     > [!NOTE]
     > Within 30 days of deletion, deleted users will appear as "–" in the user interface.
