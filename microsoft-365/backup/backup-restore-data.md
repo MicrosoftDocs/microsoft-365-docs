@@ -142,9 +142,7 @@ Follow these steps to restore data backed up for SharePoint.
 
     a. **Restore to original sites**. The entire original site is replaced by the backed-up version chosen based on the restore point. File and folder permissions and all metadata states are also reverted to the selected date and time.
 
-    b. **Create new sites and restore to a new URL**. The entire site will restore to a new SharePoint site where you can then copy or move data into the original site or a different site to create a roll-forward type of restore and avoid overwriting currently healthy data.
-
-        1. When you restore using this option, the new site URL will have an "R" followed by a number concatenated to the end. For example, if the original URL was *https://contoso.sharepoint.com/sites/originalSite* the restored site could be *https://contoso.sharepoint.com/sites/originalSiteR0*. The number at the end increments to avoid URL name conflicts up to 1,000 total restores. After that you should delete some of those new URLs to clear namespace for future new-URL restores.
+    b. **Create new sites and restore to a new URL**. The entire site will restore to a new SharePoint site where you can then copy or move data into the original site or a different site to create a roll-forward type of restore and avoid overwriting currently healthy data.<br><br>When you restore using this option, the new site URL will have an "R" followed by a number concatenated to the end. For example, if the original URL was *https://contoso.sharepoint.com/sites/originalSite* the restored site could be *https://contoso.sharepoint.com/sites/originalSiteR0*. The number at the end increments to avoid URL name conflicts up to 1,000 total restores. After that you should delete some of those new URLs to clear namespace for future new-URL restores.
 
 9. On the **Review and Finish** page, review and finish your choices. If everything looks as you want it, select **Restore sites**.
 
