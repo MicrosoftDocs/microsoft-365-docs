@@ -40,9 +40,6 @@ After configuring your personal booking page in Microsoft Bookings, it's time to
 
 ## Share the booking page link
 
-1. Navigate to the left pane in Microsoft Bookings.
-2. From the list of options, choose the **booking page** you want to share.
-
 You can share the link to your booking page using the methods below:
 
 - **Copy link and share** Copy your booking page link and paste it into various communication channels such as Teams chat or your social media profiles. This allows you to reach a broader audience and make booking appointments more accessible.
