@@ -57,7 +57,7 @@ landingContent:
             url: backup-offboarding.md
 
 # Card 4
-  - title: Microsoft 365 Backup Storage (Preview)
+  - title: Microsoft 365 Backup Storage
     linkLists:
       - linkListType: overview
         links:
