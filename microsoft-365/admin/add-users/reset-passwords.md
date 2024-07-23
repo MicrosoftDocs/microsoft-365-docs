@@ -41,7 +41,7 @@ Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?l
 This article explains how to reset passwords for yourself and for your users when you have a **Microsoft 365 for business subscription**. If you don't have a Microsoft 365 for business subscription try this article: [I forgot the username or password for the account I use with Microsoft 365.](https://support.microsoft.com/office/eba0b4a2-c0ae-472c-99f6-bc63ee2425a8?wt.mc_id=SCL_reset-passwords_AdmHlp). You can also set up self-service password reset for your users so they can reset their own passwords. To learn more, see [Let users reset their own passwords](let-users-reset-passwords.md).
 
 > [!IMPORTANT]
-> To support increased security, as of July 21, 2024, Microsoft removed the ability to send user account details and passwords in email from within the Microsoft 365 admin center. We recommend that you print the account information to a PDF file, then share it with your users in a secure manner.
+> To support increased security, as of August 30, 2024, Microsoft will remove the ability to send user account details and passwords in email from within the Microsoft 365 admin center. We recommend that you print the account information to a PDF file, then share it with your users in a secure manner.
 
 > [!TIP]
 > If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
