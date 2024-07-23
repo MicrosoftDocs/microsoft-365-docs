@@ -121,11 +121,15 @@ Follow these steps to set up a backup policy for OneDrive accounts using Microso
 
     ![Screenshot of the Import from file section on the Protection scope page for OneDrive.](../media/m365-backup/backup-protection-import-file-onedrive.png)
 
+    The CSV upload feature for bulk addition of sites or user accounts in the backup policy creation workflow can accommodate a maximum of 50,000 entries per CSV file.
+
 8. On the **Review OneDrive backup policy** page, review the information to make sure it's how you want it, and then select **Create policy** (or **Update policy** if it's an update).
 
 9. The backup policy for OneDrive is created.
 
     ![Screenshot of the OneDrive backup policy created page.](../media/m365-backup/backup-policy-created-onedrive.png)
+
+Once the sites or mailboxes are added to a backup policy, it might take up to 15 minutes per 1,000 sites or mailboxes for restore points to become available for restore.
 
 # [SharePoint](#tab/sharepoint)
 
@@ -159,6 +163,8 @@ Follow these steps to set up a backup policy for SharePoint sites using Microsof
 
     ![Screenshot of the Import from file section on the Protection scope page for SharePoint.](../media/m365-backup/backup-protection-import-file-sharepoint.png)
 
+    The CSV upload feature for bulk addition of sites or user accounts in the backup policy creation workflow can accommodate a maximum of 50,000 entries per CSV file.
+
 7. Once you've made the right selections, select **Next** to create the backup policy for SharePoint.
 
 8. On the **Review SharePoint backup policy** page, review the information to make sure it's how you want it, and then select **Create policy** (or **Update policy** if it's an update).
@@ -168,6 +174,8 @@ Follow these steps to set up a backup policy for SharePoint sites using Microsof
 9. The backup policy for SharePoint is created.
 
     ![Screenshot of the SharePoint backup policy created page.](../media/m365-backup/backup-policy-created-sharepoint.png)
+
+Once the sites or mailboxes are added to a backup policy, it might take up to 15 minutes per 1,000 sites or mailboxes for restore points to become available for restore.
 
 # [Exchange](#tab/exchange)
 
@@ -202,6 +210,8 @@ Follow these steps to set up a backup policy for Exchange mailboxes sites using 
     c. Under **Import from file**, select **Upload CSV** to import user account details via CSV upload.
 
     ![Screenshot of the Import from file section on the Protection scope page for Exchange.](../media/m365-backup/backup-protection-import-file-exchange.png)
+
+    The CSV upload feature for bulk addition of sites or user accounts in the backup policy creation workflow can accommodate a maximum of 50,000 entries per CSV file.
 
 7. Once you've made the right selections, select **Next** to create the backup policy for Exchange.
 
