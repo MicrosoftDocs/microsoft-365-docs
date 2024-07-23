@@ -47,10 +47,10 @@ To summarize, applications built on top of the Microsoft 365 Backup Storage plat
 ## Feature summary
 
 
-|Feature  |OneDrive  |SharePoint  |Exchange  |
+|Feature  |OneDrive  |SharePoint  |Exchange Online |
 |---------|---------|---------|---------|
 |**Retention period**     | 1 year        | 1 year        | 1 year        |
-|**Recovery points**     |• 10 minutes for two weeks prior<br>• Weekly snapshots 2-52 weeks prior |• 10 minutes for two weeks prior<br>• Weekly snapshots 2-52 weeks prior | 10 minutes for prior 52 weeks   |
+|**Recovery points**     |10 minutes for two weeks prior<br><br>Weekly snapshots 2-52 weeks prior |• 10 minutes for two weeks prior<br><br>Weekly snapshots 2-52 weeks prior | 10 minutes for prior 52 weeks   |
 |**Backup granularity**     | OneDrive account |SharePoint site  |Exchange user account  |
 |**Restore granularity**     |• OneDrive accounts<br>• Files restorable via versions (coming soon)  |• SharePoint sites<br>• Files restorable via versions (coming soon)         |Mail/Contacts/Calendar/Task items  |
 |**Restore options**     |• **Location**: Same or new URL<br>• **OneDrive** restore rolls back to the state of the site at the prior point in time, overwriting all content and metadata since that prior point in time<br>• **File version** restore rolls forward the file to the state at the prior point in time, but retains prior versions.    |• **Location**: Same or new URL<br>• **Full site** restore rolls back to the state of the site at the prior point in time, overwriting all content and metadata since that prior point in time<br>• **File version** restore rolls forward the file to the state at the prior point in time, but retains prior versions.  |• **Location**: Same or new folder within user’s mailbox<br>• **Full and item level mailbox roll forward** restores only modified/delete items from prior point in time  |
