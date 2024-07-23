@@ -129,7 +129,7 @@ Follow these steps to set up a backup policy for OneDrive accounts using Microso
 
     ![Screenshot of the OneDrive backup policy created page.](../media/m365-backup/backup-policy-created-onedrive.png)
 
-Once the sites or mailboxes are added to a backup policy, it might take up to 15 minutes per 1,000 sites or mailboxes for restore points to become available for restore.
+Once the accounts are added to a backup policy, it might take up to 15 minutes per 1,000 sites or mailboxes for restore points to become available for restore.
 
 # [SharePoint](#tab/sharepoint)
 
@@ -175,7 +175,7 @@ Follow these steps to set up a backup policy for SharePoint sites using Microsof
 
     ![Screenshot of the SharePoint backup policy created page.](../media/m365-backup/backup-policy-created-sharepoint.png)
 
-Once the sites or mailboxes are added to a backup policy, it might take up to 15 minutes per 1,000 sites or mailboxes for restore points to become available for restore.
+Once the sites are added to a backup policy, it might take up to 15 minutes per 1,000 sites or mailboxes for restore points to become available for restore.
 
 # [Exchange](#tab/exchange)
 
@@ -223,6 +223,7 @@ Follow these steps to set up a backup policy for Exchange mailboxes sites using 
 
     ![Screenshot of the Exchange backup policy created page.](../media/m365-backup/backup-policy-created-exchange.png)
 
+Once the mailboxes are added to a backup policy, it might take up to 15 minutes per 1,000 sites or mailboxes for restore points to become available for restore.
 ---
 
 ## Admin roles and backup management privileges
