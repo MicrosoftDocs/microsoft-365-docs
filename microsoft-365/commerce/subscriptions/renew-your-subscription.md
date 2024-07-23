@@ -26,7 +26,7 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: MET150 
 description: "Learn how to manage your subscription renewal for a Microsoft business subscription by turning recurring billing off or on."
-ms.date: 08/18/2023
+ms.date: 07/22/2024
 ---
 
 # Manage recurring billing in the Microsoft 365 admin center
