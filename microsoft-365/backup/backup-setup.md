@@ -241,12 +241,12 @@ Follow these steps to set up a backup policy for Exchange mailboxes sites using 
 
     ![Screenshot of the Exchange backup policy created page.](../media/m365-backup/backup-policy-created-exchange.png)
 
-    Once the mailboxes are added to a backup policy, it might take up to 15 minutes per 1,000 sites or mailboxes for restore points to become available for restore.
+    Once the mailboxes are added to a backup policy, it might take up to 15 minutes per 1,000 mailboxes for restore points to become available for restore.
 ---
 
 ## Multi-geo environments
 
-Microsoft 365 Backup supports the backup of sites and user accounts from both the central as well as satellite locations if the multi-geo feature is enabled on your tenant. This means that you can add the sites or user accounts from all geos while creating the backup configuration policy via the CSV file upload method. Note that adding sites via search and rules will not support multi geo and you can add sites only from the central location. You can remove sites and user accounts from all the geos while modifying the backup configuration policy.
+Microsoft 365 Backup supports the backup of sites and user accounts from both the central as well as satellite locations if the multi-geo feature is enabled on your tenant. This means that you can add the sites or user accounts from all geos while creating the backup configuration policy via the CSV file upload method. Adding sites via search and rules will not support multi-geo and you can add sites only from the central location. You can remove sites and user accounts from all the geos while modifying the backup configuration policy.
 
 ## Admin roles and backup management privileges
 
