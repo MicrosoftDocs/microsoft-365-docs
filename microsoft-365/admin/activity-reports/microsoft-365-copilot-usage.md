@@ -29,7 +29,7 @@ description: "Learn how to get the Copilot for Microsoft 365 usage report and ga
 
 The Microsoft 365 Usage dashboard shows you the activity overview across the Microsoft 365 productivity apps in your organization. It enables you to drill into individual product-level reports to give you more granular insight about the activities within each app. To view all reports, check out the [Reports overview article](activity-reports.md).
 
-In the Copilot for Microsoft 365 usage report, which is in continuous enhancement, you can view a summary of how users’ adoption, retention, and engagement are with Copilot for Microsoft 365, and the activity of every Copilot user in your organization. The report becomes available within 72 hours, and once available, the usage data shown on the report can have up to a maximum of 72 hours latency.
+In the Copilot for Microsoft 365 usage report, which is in continuous enhancement, you can view a summary of how users’ adoption, retention, and engagement are with Copilot for Microsoft 365, and the activity of every Copilot user in your organization. For Copilot activity on a given day, the report becomes available within 72 hours of the end of that day (in UTC).
 
 ## How do I get to the Copilot for Microsoft 365 usage report?
 
