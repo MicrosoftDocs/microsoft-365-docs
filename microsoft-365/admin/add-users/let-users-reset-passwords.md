@@ -38,7 +38,7 @@ Check out [Microsoft 365 small business video help](https://go.microsoft.com/fwl
 
 This article is for people who set password expiration policy for a business, school, or nonprofit. You can let people use the [self-service password reset tool](https://go.microsoft.com/fwlink/p/?LinkId=522677) so you don't have to reset passwords for them. Less work for you!
 
-To complete these steps, you must be a [global admin or password administrator](about-admin-roles.md).
+To complete these steps, you must be a [password administrator](about-admin-roles.md).
 
 > [!TIP]
 > If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
