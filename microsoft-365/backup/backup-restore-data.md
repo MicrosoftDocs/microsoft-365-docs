@@ -278,6 +278,6 @@ Microsoft 365 Backup supports the backup and restoration of any site and user ac
 
 - If there are no differences between the current state of a mailbox and the prior point in time from which you're attempting a restore, a restore isn't performed and no new folders are created when a "restore to a new location" request is made. We don't plan to modify this behavior in the future.
 
-- SharePoint sites and OneDrive accounts being restored to a new URL have a read-only lock on that new URL until the restore completes. The [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) can still download documents or remove the read-only lock manually. This isn't behavior we plan on changing.
+- SharePoint sites and OneDrive accounts being restored to a new URL have a read-only lock on that new URL until the restore completes. The [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) can still download documents or remove the read-only lock manually.
 
     [!INCLUDE [global-administrator-note](../includes/global-administrator-note.md)]
