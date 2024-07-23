@@ -35,7 +35,7 @@ Here are a couple of tips:
 
 ## Restore one or more user accounts
 
-You must be a Microsoft 365 global admin or user management admin to do these steps. 
+You must be a ([user management admin](about-admin-roles.md)) to do these steps.
 
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">Deleted users</a> page.
 

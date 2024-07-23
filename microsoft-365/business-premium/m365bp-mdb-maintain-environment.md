@@ -8,7 +8,7 @@ manager: deniseb
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business-security
-ms.date: 05/31/2024
+ms.date: 07/23/2024
 ms.localizationpriority: medium
 ms.collection:
 - M365-Campaigns
@@ -92,16 +92,12 @@ Security tasks are typically performed by security administrators and security o
 |Task|Description|
 |---|---|
 |**Run reports**|Several reports are available in the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).<br/><br/>1. In the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, select **Reports**.<br/><br/>2. Choose a report to review. Each report displays many pertinent categories for that report.<br/><br/>3. Select **View details** to see deeper information for each category.<br/><br/>4. Select the title of a particular threat to see details specific to it.|
-|**Run a simulation tutorial**|It's always a good idea to increase the security preparedness for you and your team through training. You can access simulation tutorials in the Microsoft Defender portal. The tutorials cover several types of cyber threats. To get started, follow these steps:<br/><br/>1. In the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, choose **Tutorials**.<<br/><br/>2. Read the walk-through for a tutorial you're interested in running, and then download the file, or copy the script needed to run the simulation according to the instructions.|
-|**Explore the Learning hub**|Use the Learning hub to increase your knowledge of cybersecurity threats and how to address them. We recommend exploring the resources that are offered, especially in the Microsoft Defender XDR and Endpoints sections.<br/><br/>1. In the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, choose **Learning hub**.<br/><br/>2. Select an area, such as **Microsoft Defender XDR** or **Endpoints**.<br/><br/>3. Select an item to learn more about each concept. <br/><br/>Some resources in the Learning hub might cover functionality that isn't included in Microsoft 365 Business Premium. For example, advanced hunting capabilities are included in enterprise subscriptions, such as Defender for Endpoint Plan 2 or Microsoft Defender XDR, but not in Microsoft 365 Business Premium. See [How does Defender for Business compare to Microsoft 365 Business Premium?](../security/defender-business/mdb-overview.md#how-does-defender-for-business-compare-to-microsoft-365-business-premium)|
 
 ### [**Defender for Business**](#tab/MDB)
 
 |Task|Description|
 |---|---|
 |**Run security reports**|Several reports are available in the Microsoft Defender portal.<br/><br/>1. In the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, select **Reports**.<br/><br/>2. Choose a report to review. Each report displays many pertinent categories for that report.<br/><br/>3. Select **View details** to see deeper information for each category.<br/><br/>4. Select the title of a particular threat to see details specific to it.|
-|**Run a simulation tutorial**|It's always a good idea to increase the security preparedness for you and your team through training. You can access simulation tutorials in the Microsoft Defender portal. The tutorials cover several types of cyber threats. To get started, follow these steps:<br/><br/>1. In the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, choose **Tutorials**.<<br/><br/>2. Read the walk-through for a tutorial you're interested in running, and then download the file, or copy the script needed to run the simulation according to the instructions.|
-|**Explore the Learning hub**|Use the Learning hub to increase your knowledge of cybersecurity threats and how to address them. We recommend exploring the resources that are offered, especially in the Microsoft Defender XDR and Endpoints sections.<br/><br/>1. In the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, choose **Learning hub**.<br/><br/>2. Select an area, such as **Microsoft Defender XDR** or **Endpoints**.<br/><br/>3. Select an item to learn more about each concept. <br/><br/>Some resources in the Learning hub might cover functionality that isn't included in Defender for Business. For example, advanced hunting capabilities are included in enterprise subscriptions, such as Defender for Endpoint Plan 2 or Microsoft Defender XDR, but not in Defender for Business. See [How does Defender for Business compare to Microsoft 365 Business Premium?](../security/defender-business/mdb-overview.md#how-does-defender-for-business-compare-to-microsoft-365-business-premium)|
 
 ---
 
