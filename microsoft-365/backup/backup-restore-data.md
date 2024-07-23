@@ -86,13 +86,13 @@ Follow these steps to restore data backed up for OneDrive.
 
     ![Screenshot showing the Select another backup panel for OneDrive.](../media/m365-backup/backup-onedrive-select-another-backup.png)
 
-8. On the **Set destination** page, selected OneDrive accounts can be restored by choosing  either the **Restore to the original OneDrive accounts** or **Create new SharePoint sites and restore to a new URL** option.
+8. On the **Choose destination** page, selected OneDrive accounts can be restored by choosing  either the **Replace accounts with backups** or **Create new SharePoint sites and restore to them** option.
 
     ![Screenshot showing the Select destination page and options for OneDrive.](../media/m365-backup/backup-onedrive-set-destination.png)
 
-    a. **Restore to the original OneDrive accounts**. The entire OneDrive is replaced by the backed-up version chosen based on the restore point. File and folder permissions are also reverted to the selected date and time.
+    a. **Replace accounts with backups**. The entire OneDrive is replaced by the backed-up version chosen based on the restore point. File and folder permissions are also reverted to the selected date and time.
 
-    b. **Create new SharePoint sites and restore to a new URL**. The entire OneDrive will restore to a new SharePoint site where you can then copy or move data into the original OneDrive to create a roll-forward type of restore and avoid overwriting currently healthy data.<br><br>When you restore using this option, the new site URL will have an "R" followed by a number concatenated to the end. For example, if the original URL was `https://contoso-my.sharepoint.com/personal/user1_contoso_com` the restored site could be `https://contoso-my.sharepoint.com/personal/user1_contoso_comR0`. The number at the end increments to avoid URL name conflicts up to 1,000 total restores. After that you should delete some of those new URLs to clear namespace for future new-URL restores.
+    b. **Create new SharePoint sites and restore to them**. The entire OneDrive will restore to a new SharePoint site where you can then copy or move data into the original OneDrive to create a roll-forward type of restore and avoid overwriting currently healthy data.<br><br>When you restore using this option, the new site URL will have an "R" followed by a number concatenated to the end. For example, if the original URL was `https://contoso-my.sharepoint.com/personal/user1_contoso_com` the restored site could be `https://contoso-my.sharepoint.com/personal/user1_contoso_comR0`. The number at the end increments to avoid URL name conflicts up to 1,000 total restores. After that you should delete some of those new URLs to clear namespace for future new-URL restores.
 
 9. On the **Review and Finish** page, review and finish all your choices. If everything looks as you want it, select **Restore OneDrive accounts**.
 
@@ -132,13 +132,13 @@ Follow these steps to restore data backed up for SharePoint.
 
     ![Screenshot showing the Select another backup panel for SharePoint.](../media/m365-backup/backup-sharepoint-select-another-backup.png)
 
-8. On the **Set destination** page, selected SharePoint sites can be restored by choosing  either the **Restore to original sites** or **Create new sites and restore to a new URL** option.
+8. On the **Choose destination** page, selected SharePoint sites can be restored by choosing  either the **Replace sites with backups** or **Create new sites from backups** option.
 
     ![Screenshot showing the Select destination page and options for SharePoint.](../media/m365-backup/backup-sharepoint-set-destination.png)
 
-    a. **Restore to original sites**. The entire original site is replaced by the backed-up version chosen based on the restore point. File and folder permissions and all metadata states are also reverted to the selected date and time.
+    a. **Replace sites with backups**. The entire original site is replaced by the backed-up version chosen based on the restore point. File and folder permissions and all metadata states are also reverted to the selected date and time.
 
-    b. **Create new sites and restore to a new URL**. The entire site will restore to a new SharePoint site where you can then copy or move data into the original site or a different site to create a roll-forward type of restore and avoid overwriting currently healthy data.<br><br>When you restore using this option, the new site URL will have an "R" followed by a number concatenated to the end. For example, if the original URL was `https://contoso.sharepoint.com/sites/originalSite` the restored site could be `https://contoso.sharepoint.com/sites/originalSiteR0`. The number at the end increments to avoid URL name conflicts up to 1,000 total restores. After that you should delete some of those new URLs to clear namespace for future new-URL restores.
+    b. **Create new sites from backups**. The entire site will restore to a new SharePoint site where you can then copy or move data into the original site or a different site to create a roll-forward type of restore and avoid overwriting currently healthy data.<br><br>When you restore using this option, the new site URL will have an "R" followed by a number concatenated to the end. For example, if the original URL was `https://contoso.sharepoint.com/sites/originalSite` the restored site could be `https://contoso.sharepoint.com/sites/originalSiteR0`. The number at the end increments to avoid URL name conflicts up to 1,000 total restores. After that you should delete some of those new URLs to clear namespace for future new-URL restores.
 
 9. On the **Review and Finish** page, review and finish your choices. If everything looks as you want it, select **Restore sites**.
 
