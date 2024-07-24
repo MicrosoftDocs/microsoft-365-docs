@@ -46,7 +46,7 @@ Follow these [10 tips on how to help reduce spam](https://support.microsoft.com/
 
 Report any phishing or other scam emails you receive. Select the message, and choose **Report message** on the ribbon.
 
-For more information, see [reporting junk and phishing emails](https://support.office.com/article/Use-the-Report-Message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
+For more information, see [Use the Report Message add-in](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
 
 ### Avoid phishing
 
@@ -56,11 +56,11 @@ For more information, see [reporting junk and phishing emails](https://support.o
 - If the email appears to come from a company, contact the company's customer service via phone or web browser to see if the email is legitimate.
 - Search the web for the email subject line followed by the word hoax to see if anyone else has reported this scam.
 
-Read about five common types of scams in [Deal with abuse, phishing, or spoofing](https://support.office.com/article/Deal-with-abuse-phishing-or-spoofing-in-Outlook-com-0d882ea5-eedc-4bed-aebc-079ffa1105a3).
+Read about five common types of scams in [Phishing and suspicious behavior in Outlook](https://support.microsoft.com/office/0d882ea5-eedc-4bed-aebc-079ffa1105a3).
 
 ### Make sure your emails look legitimate to others
 
-Help your customers trust your communications by adding a digital signature to prove that it's coming from you. See [Secure messages by using a digital signature](https://support.office.com/article/secure-messages-by-using-a-digital-signature-549ca2f1-a68f-4366-85fa-b3f4b5856fc6).
+Help your customers trust your communications by adding a digital signature to prove that it's coming from you. See [Secure messages by using a digital signature](https://support.microsoft.com/office/549ca2f1-a68f-4366-85fa-b3f4b5856fc6).
 
 ## Share this infographic with your users
 
@@ -72,9 +72,7 @@ Download this infographic with tips for you and the members of your campaign tea
 
 Learn more about how to:
 
-- [Keep your files and communications safe with Office](https://support.microsoft.com/en-us/office/keep-your-files-and-communications-safe-with-office-c4ddc381-7395-42da-887c-8836a3bb975f).
-
-- [Stay secure and private at work](https://support.office.com/article/stay-secure-and-private-at-work-104c7d91-b25a-453d-beee-ba64b6c6fc2d).
+- [Stay secure and private at work](https://support.microsoft.com/office/104c7d91-b25a-453d-beee-ba64b6c6fc2d?ui=en-us&rs=en-us&ad=us).
 
 ## Next step
 
