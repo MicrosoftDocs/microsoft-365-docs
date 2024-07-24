@@ -12,7 +12,7 @@ ms.date: 07/11/2024
 ms.localizationpriority: medium
 ms.reviewer:
 f1.keywords: NOCSH
-ms.collection: 
+ms.collection:
  - essentials-security
  - essentials-privacy
  - essentials-compliance
