@@ -112,7 +112,7 @@ conceptualContent:
             - url: /microsoft-365-apps/deploy/plan-microsoft-365-apps
               itemType: get-started
               text: Microsoft 365 Apps
-            - url: /microsoft-365-apps/mac
+            - url: /microsoft-365-apps/mac/deployment-guide-for-office-for-mac
               itemType: how-to-guide
               text: Office for Mac
             - url: /office/ltsc/2021/overview
