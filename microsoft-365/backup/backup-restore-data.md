@@ -232,7 +232,7 @@ Microsoft 365 Backup supports restoring sites and user accounts from both centra
 
 Microsoft 365 Backup supports the backup and restoration of any site and user account even if that site or user account has moved from one geo to another geo. If the site or user account has moved to a new geo, and you’re restoring data from a prior point back in time when the site or user account was in older geo, then the restored site or user account will be available in the new geo.
 
-## Considerations about using restore
+## Considerations when using restore
 
 - Site search is case-sensitive and is a prefix-type search.
 
