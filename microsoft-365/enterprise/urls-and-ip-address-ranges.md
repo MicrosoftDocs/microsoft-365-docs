@@ -3,7 +3,7 @@ title: "Microsoft 365 URLs and IP address ranges"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 05/30/2024
+ms.date: 07/23/2024
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
@@ -76,8 +76,6 @@ Data columns shown are:
 [General Microsoft Stream endpoints](/stream/network-overview#general-microsoft-stream-endpoints)
   
 [Monitor Microsoft 365 connectivity](./monitor-connectivity.md)
-
-[Root CA and the Intermediate CA bundle on the third-party application system](../compliance/encryption-office-365-certificate-chains.md)
   
 [Client connectivity](https://support.office.com/article/client-connectivity-4232abcf-4ae5-43aa-bfa1-9a078a99c78b)
   
