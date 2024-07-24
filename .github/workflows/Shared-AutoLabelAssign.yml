@@ -484,7 +484,6 @@ jobs:
             Write-Host "Request event: $GitRequestEvent"
             Write-Host "GitHub action: $GitHubAction"
             Write-Host "GitHub state: $GitHubState"
-            Write-Host "Request Id: $RequestId"
             Write-Host "Default branch: $DefaultBranch"
             Write-Host "Target branch: $TargetBranch"
             Write-Host "PR files URL: $PrFileListUrl"
@@ -602,4 +601,3 @@ jobs:
                 } # Number of files in PR check
                 
             } # PR event and action check
-
