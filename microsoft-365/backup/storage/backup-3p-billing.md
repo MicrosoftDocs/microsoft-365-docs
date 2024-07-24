@@ -100,7 +100,7 @@ You have successfully set up pay-as-you-go billing.
 
 To create a Billing Policy for your application and the pay-as-you-go billing configured in the previous step, you'll need to perform the following steps:
 
-1. Review the [Microsoft 365 Backup Storage - Third-Party public preview terms of service and conditions](../backup-preview-terms-third-party.md).
+1. Review the [Microsoft 365 terms of service](../backup-preview-terms-third-party.md).
 
 2. Email *M365Backup3PBilling@microsoft.com* with the following information: We'll reply back to this email once the request is complete.
 
@@ -111,7 +111,7 @@ To create a Billing Policy for your application and the pay-as-you-go billing co
 For details on how to find your Microsoft Entra tenant ID, refer to [How to find your Microsoft Entra tenant ID](/entra/fundamentals/how-to-find-tenant).
 
 > [!IMPORTANT]
-> Submitting a request to Microsoft indicates that you have accepted the [Microsoft 365 Backup Storage - Third Party public preview terms of service and conditions](../backup-preview-terms-third-party.md).
+> Submitting a request to Microsoft indicates that you have accepted the [Microsoft 365 terms of service](../backup-preview-terms-third-party.md).
 
 > [!WARNING]
 > The domain of the email address from which you send email to Microsoft must be registered in the same tenant where you configured the pay-as-you-go billing in the previous step. That is, your email domain must be listed in [Microsoft 365 admin center > Domains](https://admin.microsoft.com/Adminportal/?#/Domains). Failure to do so will mean that your request to create a Billing Policy will be rejected.
