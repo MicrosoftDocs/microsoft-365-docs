@@ -87,7 +87,7 @@ Use the following articles to get started with DLP:
 
 1. [Learn about data loss prevention](/purview/dlp-learn-about-dlp).
 
-2. [Get started with the default DLP policy](/purview/dlp-get-started-with-the-default-policyd).
+2. [Get started with the default DLP policy](/purview/dlp-get-started-with-the-default-policy).
 
 ## Next steps
 
