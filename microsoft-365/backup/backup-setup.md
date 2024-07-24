@@ -60,7 +60,7 @@ To turn on Microsoft 365 Backup, you'll need to go to the Microsoft 365 admin ce
 
 5. By default, the feature is turned off. On the **Backup** panel, select **Turn on** to enable Microsoft 365 Backup for your organization.
 
-6. Review the applicable [terms of service for Microsoft 365 Backup](backup-preview-terms.md) and select **Confirm**.
+6. Review the applicable [terms of service for Microsoft 365](backup-preview-terms.md) and select **Confirm**.
 
     ![Screenshot of the Turn on Backup panel and the Confirm button.](../media/m365-backup/backup-setup-turn-on.png)
 
