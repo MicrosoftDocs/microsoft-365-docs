@@ -58,17 +58,17 @@ The following links for PowerPoint and PDF can be downloaded and printed in tabl
 
 ## Set it up
 
-1. Sign in to [https://Office.com](https://Office.com).
+1. Sign in to <https://office.com>.
 
 2. In the top-left corner of the page, select the app launcher icon and then select the **SharePoint** tile. If you don't see the **SharePoint** tile, select the **Sites** tile or **All** if SharePoint isn't visible.
 
 3. At the top of the SharePoint home page, select **+ Create site** and choose the **Communication site** option.
 
-Learn all [about Communications sites](https://support.office.com/article/What-is-a-SharePoint-communication-site-94A33429-E580-45C3-A090-5512A8070732) and how to [create a communication site in SharePoint Online](https://support.microsoft.com/office/create-a-communication-site-in-sharepoint-online-7fb44b20-a72f-4d2c-9173-fc8f59ba50eb).
+Learn all [about Communications sites](https://support.microsoft.comoffice/94a33429-e580-45c3-a090-5512a8070732) and how to [create a communication site in SharePoint Online](https://support.microsoft.com/7fb44b20-a72f-4d2c-9173-fc8f59ba50eb).
 
 ## Admin settings
 
-If you don't see the **+ Create** site link, self-service site creation might not be available in Microsoft 365. To create a team site, contact the person administering Microsoft 365 in your organization. If you're a Microsoft 365 admin, see [Manage site creation in SharePoint Online](/sharepoint/manage-site-creation) to enable self-service site creation for your organization or [Manage sites in the new SharePoint admin center](/sharepoint/manage-sites-in-new-admin-center) to create a site from the <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint admin center</a>.
+If you don't see the **+ Create** site link, self-service site creation might not be available in Microsoft 365. To create a team site, contact the person administering Microsoft 365 in your organization. If you're a Microsoft 365 admin, see [Manage site creation in SharePoint Online](/sharepoint/manage-site-creation) to enable self-service site creation for your organization or [Manage sites in the new SharePoint admin center](/sharepoint/manage-sites-in-new-admin-center) to create a site from the SharePoint admin center at <https://admin.microsoft.com/sharepoint?page=home&modern=true>.
 
 ## Next step
 
