@@ -11,7 +11,6 @@ ms.collection:
 - scotvorg
 ms.custom: QuickDraft
 search.appverid: MET150
-ai-usage: ai-assisted
 description: "Learn how to set up and automate email reminders and follow-ups for appointments in Microsoft 365 Business Basic."
 ---
 

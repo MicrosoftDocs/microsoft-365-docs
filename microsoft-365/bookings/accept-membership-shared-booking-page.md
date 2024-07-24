@@ -3,7 +3,7 @@ title: "Accept membership to a Shared Booking page"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 07/11/2024
+ms.date: 07/24/2024
 audience: Admin
 ms.topic: how-to
 ms.service: bookings
@@ -38,6 +38,8 @@ A shared booking page can have three states:
 - **Accepting bookings** - the staff member has joined the shared booking page.
 - **Approve to receive bookings** - the staff member hasn't approve membership.
 - **Not accepting bookings** - the staff member has declined to accept bookings.
+
+:::image type="content" source="media/bookings-decline.png" alt-text="Screenshot showing how a staff member is not accepting bookings for a service." lightbox="media/bookings-decline.png":::
 
 For more information on adding staff, see [Add staff to Bookings](add-staff.md).
 

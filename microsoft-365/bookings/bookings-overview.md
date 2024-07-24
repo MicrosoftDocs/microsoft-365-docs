@@ -27,7 +27,7 @@ Bookings is also available as an app in Teams and Outlook, which allows you to c
 
 ## Watch: Introducing Microsoft Bookings
 
-> [!VIDEO https://www.youtube.com/embed/G2HOsM767Sw]
+> [!VIDEO https://www.youtube.com/embed/-tBAeWXutoM?si=a_T0UEE8EuIZov4k]
 
 ## Microsoft Bookings lets you conduct virtual meetings
 

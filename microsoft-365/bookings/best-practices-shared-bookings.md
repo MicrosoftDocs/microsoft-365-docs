@@ -1,9 +1,9 @@
 ---
-title: "Best practices for using Shared Bookings"
+title: "## Use a custom domain for booking pages"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 07/11/2024
+ms.date: 07/24/2024
 audience: Admin
 ms.topic: article
 ms.service: bookings
@@ -15,11 +15,9 @@ ms.collection:
 description: "Understand and implement best practices for using Shared Bookings features."
 ---
 
-# Best practices for using Shared Bookings
+# Use a custom domain for booking pages
 
 Microsoft Bookings allows you to create and manage online appointments with your customers. By setting up multiple booking pages, offering different services, and assigning staff members, you can optimize your scheduling process. In this article, we'll cover best practices for using Bookings to help you get the most out of Shared Bookings.
-
-## Use a custom domain for booking pages
 
 By default, shared booking pages have a domain name in this format: "@.onmicrosoft.com". Domain admins can change the domain name to match their organization's name, creating a more professional and consistent brand for customers. For example, you can use "@bookings.contoso.com" instead.
 
@@ -42,7 +40,7 @@ To get started with Power Automate and Bookings, use the templates available in 
 
 For more information about Power Automate and Bookings, see [Use Power Automate connectors to build Bookings workflows](power-automate-integration.md).
 
-## Use Bookings Graph APIs for bulk scenarios and reporting
+## Bulk creation of shared booking pages and reporting
 
 You can use the Bookings Graph API (shared bookings) to create, read, update, and delete various entities like services, staff members, customers, and appointments. You can also use the Bookings API to integrate shared bookings with other apps and systems, such as a CRM, ERP, or business intelligence tools.
 
