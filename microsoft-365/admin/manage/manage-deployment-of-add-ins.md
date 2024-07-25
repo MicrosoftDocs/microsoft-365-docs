@@ -60,26 +60,11 @@ Depending on the size of the target audience, you can add or remove roll-out ste
 
 Before you begin, see [Determine if Centralized Deployment of add-ins works for your organization](centralized-deployment-of-add-ins.md).
   
-1. In the admin center,  go to the **Settings** \> **Integrated apps** \> **Add-ins** page.
+1. In the admin center,  go to the **Settings** \> **Integrated apps** page.
 
-> [!NOTE]
-> You can also deploy add-ins in the admin center through [Integrated Apps](test-and-deploy-microsoft-365-apps.md). Integrated Apps is the recommended place for admins to deploy add-ins, and is available to Global Administrator, Azure Application Administrator and Exchange Administrator. 
->
-> If you still want to continue using Centralized Deployment for admin deployment of add-ins, navigate to **Settings**, then select **Integrated Apps**. On top of the Integrated Apps page, choose the **Add-ins** link. If Integrated Apps is not available for you, you should be able to navigate to Centralized Deployment from **Settings**, and then select **Add-ins**.
+2. Select **Get Apps**, and then select **Next**.
 
-
-   :::image type="content" source="../../media/Deployaddin.png" alt-text="Deploy New Add-in" lightbox="../../media/Deployaddin.png":::
-
-   > [!NOTE]
-   > You can also deploy add-ins in the admin center through [Integrated Apps](test-and-deploy-microsoft-365-apps.md). Integrated Apps is visible to Global and Exchange administrators. If you don't see the above steps, go to the Centralized Deployment section by going to **Settings** > **Integrated apps**. On the top of the **Integrated apps** page, choose **Add-ins**.
-
-2. Select **Deploy Add-in** at the top of the page, and then select **Next**.
-
-3. Select an option and follow the instructions.
-
-   :::image type="content" source="../../media/chooseofficestore.png" alt-text="Deploy Add-in location" lightbox="../../media/chooseofficestore.png":::
-  
-4. If you selected the option to add an add-in from the Office Store, make your add-in selection. </br>
+3. If you selected the option to add an add-in from the Office Store, make your add-in selection. </br>
 
    You can view available add-ins by categories: **Suggested for you**, **Rating**, or **Name**. Only free add-ins are available from the Office Store. Paid add-ins aren't supported currently. After you select an add-in, accept the terms and conditions to proceed. <br/>
 
