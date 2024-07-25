@@ -51,5 +51,5 @@ You can track key data on SMS notifications usage in your organization in the Te
 
 ## Related content
 
-[Microsoft Bookings](bookings-overview.md)\
-[Turn Microsoft Bookings on or off](turn-bookings-on-or-off.md)\
+[Microsoft Bookings](bookings-overview.md)
+[Turn Microsoft Bookings on or off](turn-bookings-on-or-off.md)
