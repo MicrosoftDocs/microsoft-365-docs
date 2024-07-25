@@ -25,7 +25,7 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: MET150 
 description: "Learn how to reactivate a subscription in the Microsoft 365 admin center."
-ms.date: 08/18/2023
+ms.date: 07/22/2024
 ---
 
 # Reactivate your subscription in the Microsoft 365 admin center
