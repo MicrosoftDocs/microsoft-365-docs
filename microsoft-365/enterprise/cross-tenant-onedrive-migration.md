@@ -59,7 +59,7 @@ Up to 4,000 OneDrive accounts can be scheduled for migration in advance at a giv
 - Assign the appropriate licenses to each user on the target tenant.
 
 > [!IMPORTANT]
-> OneDrive sites should **NOT** be created before **OR** during a migration.
+> OneDrive sites should **NOT** be created ([pre-provisioned](/sharepoint/pre-provision-accounts)) before **OR** during a migration.
 >
 > OneDrive site creation should be restricted in the target tenant to prevent users from creating OneDrive sites. If a OneDrive site already exists for the user on the target tenant, the migration will fail. You can't overwrite an existing site.
 >
