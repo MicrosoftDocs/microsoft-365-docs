@@ -72,7 +72,7 @@ You can create up to four additional group themes.
 
 1. On the **General** page, enter a name for your new theme.
 
-2. Under **Groups**, you can select up to 5 Microsoft 365 Groups that can see your group theme, instead of using the default theme. You can also prevent users from overriding their theme and show the user's display name.
+2. Under **Groups**, you can select up to 5 Microsoft 365 Groups or Azure Security Groups that can see your group theme, instead of using the default theme. You can also prevent users from overriding their theme and show the user's display name.
 
 3. Select **Save**.
 
@@ -119,9 +119,9 @@ Only global admins can customize company themes. Global readers have read-only a
 
 Up to five themes can be created. A default theme and four group themes.  
 
-### Can I use security groups or distribution groups instead of Microsoft 365 Groups?
+### Can I use distribution groups instead of Microsoft 365 Groups or Security Groups?
 
-No, new group themes must be mapped to one or more Microsoft 365 groups and not security groups or distribution groups.
+No, new group themes must be mapped to one or more Microsoft 365 groups/Security Groups and not distribution groups.
 
 ### Can I manually assign a theme independent of Microsoft 365 Groups?  
 
