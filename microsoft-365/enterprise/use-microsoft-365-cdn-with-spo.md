@@ -485,7 +485,7 @@ Complete these steps to set up and configure the CDN to host your assets in Shar
 Before you make changes to the tenant CDN settings, you should retrieve the current status of the private CDN configuration in your Office 365 tenant. Connect to your tenant using PnP PowerShell:
 
 ```powershell
-Connect-PnPOnline -Url https://contoso-admin.sharepoint.com -UseWebLogin
+Connect-PnPOnline -Url https://contoso-admin.sharepoint.com -Interactive
 ```
 
 Now use the **Get-PnPTenantCdnEnabled** cmdlet to retrieve the CDN status settings from the tenant:
