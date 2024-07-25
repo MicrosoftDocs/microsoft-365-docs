@@ -40,7 +40,7 @@ To see and manage license requests, use the **Requests** tab on the **Licensing*
 
 ## Before you begin
 
-You must be a global admin to perform the tasks in this article. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
+You must be a global admin, user admin or license admin to perform the tasks in this article. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 
 > [!NOTE]
 > If you're the person who signed up for the subscription, you're automatically a global admin.
