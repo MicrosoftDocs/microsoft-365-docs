@@ -86,7 +86,7 @@ Once this option is enabled, group owners can provide group members with the abi
 
 ## Block “Move” message capability
 
-Admins can block the **Move** message option for all Microsoft 365 groups within a tenant using the cmdlet `Set-OrganizationConfig -BlockMoveMessagesForGroupFold`.
+Admins can block the **Move** message option for all Microsoft 365 groups within a tenant using the cmdlet `Set-OrganizationConfig -BlockMoveMessagesForGroupFolders`.
 
  - `[-BlockMoveMessagesForGroupFolders<Boolean>]` – optional
 
