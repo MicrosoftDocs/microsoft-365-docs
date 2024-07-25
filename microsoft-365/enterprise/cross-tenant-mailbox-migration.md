@@ -141,7 +141,7 @@ Now that you've successfully created the migration application and secret, the n
 
 ### Grant consent to the application
 
-1. In the Microsoft Entra ID landing page, select **Enterprise applications** in the navigation pane; then find your migration app you created, select it, and then select **API Permissions**.
+1. In the Microsoft Entra ID landing page, select **Enterprise applications** in the navigation pane; then find your migration app you created, select it, and then select **Permissions**.
 
 2. Select **Grant admin consent for [your tenant]**. A new browser window opens.
 
