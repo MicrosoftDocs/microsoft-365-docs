@@ -50,6 +50,7 @@ There are also [Groups in Exchange Online and SharePoint Online](#groups-in-exch
 4. On the **Edit settings** page, select whether you want Microsoft Entra roles can be assigned to this group and select **Next**.
 
 5. Review your selections and choose **Create group** and **Close**.
+![image](https://github.com/MicrosoftDocs/microsoft-365-docs/assets/10901109/2210f380-a7be-4d1b-b3c1-d00f3231f995)
 
 ### Add owners or members to a security group
 
