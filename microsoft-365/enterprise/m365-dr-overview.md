@@ -253,7 +253,7 @@ Microsoft 365 uses service-side technologies that encrypt customer data at rest 
 
 <details><summary>Select to expand</summary>
 
-Review the [Products available by region](https://go.microsoft.com/fwlink/p/?linkid=2093451) page to find data residency information for Microsoft Azure.
+Review the [Products available by region](https://azure.microsoft.com/explore/global-infrastructure/data-residency/#overview) page to find data residency information for Microsoft Azure.
 
 </details>
 
