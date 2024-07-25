@@ -88,7 +88,7 @@ Write-Host "Found $licensedUserCount licensed users."
 To view the list of all user accounts in your organization that have an E5 license assigned, run the following command:
 
 ```powershell
-$e5Sku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'SPE_E5'
+$e5Sku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'DEVELOPERPACK_E5'
 
 Get-MgUser -Filter "assignedLicenses/any(x:x/skuId eq $($e5sku.SkuId) )" -ConsistencyLevel eventual -CountVariable e5licensedUserCount -All
 
