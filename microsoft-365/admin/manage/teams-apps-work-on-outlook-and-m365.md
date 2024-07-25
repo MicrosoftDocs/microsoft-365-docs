@@ -121,7 +121,7 @@ You can unblock an app so that it can start showing up in the Microsoft 365 app 
 6. Read the availability and deployment status that the app will revert to after unblocking. These statuses are the last saved ones of the app before it was blocked.
 7. Select **Unblock**. You can now see this app in the **Available Apps** list and/or the **Deployed Apps** list.
 
-When you choose to unblock an app, the app reverts to the last saved state of availability and deployment. If the app doesn' have any availability status set, the app reverts to the default tenant setting. Learn more about these controls in the following section.
+When you choose to unblock an app, the app reverts to the last saved state of availability and deployment. If the app doesn't have any availability status set, the app reverts to the default tenant setting. Learn more about these controls in the following section.
 
 ### How to manage the availability of an app in your organization
 

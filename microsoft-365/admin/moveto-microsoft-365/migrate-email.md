@@ -104,7 +104,7 @@ These tasks include:
 
 1. In the Exchange admin center, select **Contacts**, then **Add a mail user**.
 1. On the **Set up basic information** page, enter the information about the user you want to migrate, such as Name, display name, etc..  
-    1. For **External email address** use the domain domain you created for mail routing to Google Workspace (for example, *gsuite.contoso.com*).
+    1. For **External email address** use the domain you created for mail routing to Google Workspace (for example, *gsuite.contoso.com*).
     1. For **Domain**, select the primary domain you are using.
 1. Select **Next**, and repeat this process for each user you are migrating.
 

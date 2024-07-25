@@ -44,7 +44,7 @@ For more information about the app launcher and Microsoft365.com, see [meet the 
 ### Pin a custom app
 
 > [!NOTE]
-> The user interface will indicate if you need need to purchase additional Microsoft Entra ID licenses to use this feature. For more information see [Microsoft Entra pricing](https://azure.microsoft.com/pricing/details/active-directory/).
+> The user interface will indicate if you need to purchase additional Microsoft Entra ID licenses to use this feature. For more information see [Microsoft Entra pricing](https://azure.microsoft.com/pricing/details/active-directory/).
 
 1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.cloud.microsoft</a>.
 2. In the left nav, choose **Show all**, and under **Admin centers**, choose **Microsoft Entra**.

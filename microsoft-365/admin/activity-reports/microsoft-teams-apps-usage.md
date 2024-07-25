@@ -108,7 +108,7 @@ This table shows you per-app view with the following metrics for each app. A sub
 |---|---|---|
 |App ID|The external App identifiers present in the app manifest.|Yes|
 |Last used date|The date when that app was last used by anyone in your organization.|Yes|
-|Teams using this app|The number of distinct Teams teams that have at least one user using this app.|Yes|
+|Teams using this app|The number of distinct teams that have at least one user using this app.|Yes|
 |Users using this app|The number of distinct users in your organization that are using this app.|Yes|
 |Used on Windows| This value indicates whether that app was on Windows by at least one user in your organization.|Yes|
 |Used on Mobile|This value indicates whether that app was on Mobile by at least one user in your organization.|Yes|
