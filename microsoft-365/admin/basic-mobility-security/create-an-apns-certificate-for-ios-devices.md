@@ -26,7 +26,7 @@ description: "To manage iOS devices such as iPads and iPhones in Basic Mobility 
 
 To manage iOS devices like iPad and iPhones, you need to create an Apple Push Notification service (APNs) certificate.
 
-1. Sign in to Microsoft Azure with your global admin account.
+1. Sign in to Microsoft Azure with your Intune administrator account.
 
 1. Go to [Configure MDM Push Certificate](https://portal.azure.com/#view/Microsoft_Intune_Enrollment/APNSCertificateUploadBlade).
 
@@ -37,16 +37,16 @@ To manage iOS devices like iPad and iPhones, you need to create an Apple Push No
 1. Select **Create your MDM push certificate** to open the Apple Push Certificates Portal.
 
    a. Sign in with an Apple ID.
-   
+
      > [!IMPORTANT]
      > Use a company Apple ID associated with an email account that will remain with your organization even if the user who manages the account leaves. Save this ID because you'll need to use the same ID when it's time to renew the certificate.
 
    b. Select **Create a Certificate** and accept the **Terms of Use**.
-   
+
    c. Browse to the certificate signing request that you downloaded to your computer from Microsoft 365 and then select **Upload**.
-      
+
    d. Download the APNs certificate created by the Apple Push Certificate Portal to your computer.
-   
+
      > [!TIP]
      > If you're having trouble downloading the certificate, refresh your browser.
 
