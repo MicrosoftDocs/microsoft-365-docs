@@ -80,9 +80,11 @@ Two people are working together on a Microsoft Word document. User A authored th
 **Teams Meeting Experience**
 Microsoft Teams meeting recording video location is determined by the user PDL that starts the recording, or when meetings have an automatic recording policy, the location is determined from the first person joining the meeting. When users in other regions interact with Microsoft Copilot for Microsoft 365 in Teams, those user prompts and corresponding responses are stored in the location of the user that asks the Microsoft Copilot for Microsoft 365 questions.
 
-### Migration
+### Migration and User Experience
 
-Microsoft Copilot for Microsoft 365 is part of the Microsoft 365 Advanced Data Residency migration. You can learn more at [ADR Migration](advanced-data-residency.md#data-migration-management)
+When a user interacts with Microsoft Copilot for Microsoft 365 (using apps such as Word, PowerPoint, Excel, OneNote, Loop, or Whiteboard), we store data about these interactions. The stored data includes the user's prompt and Copilot's response, including citations to any information used to ground Copilot's response. We refer to the user’s prompt and Copilot’s response to that prompt as the “content of interactions” and the record of those interactions is the user’s Copilot interaction history. For example, this stored data provides users with Copilot interaction history in [Microsoft Copilot with Graph-grounded chat](https://support.microsoft.com/topic/get-started-with-copilot-for-microsoft-365-5b00a52d-7296-48ee-b938-b95b7209f737) and [meetings in Microsoft Teams](https://support.microsoft.com/office/get-started-with-copilot-in-microsoft-teams-meetings-0bf9dd3c-96f7-44e2-8bb8-790bedf066b1). This data is processed and stored in alignment with contractual commitments with your organization’s other content in Microsoft 365, such as [Advanced data residency in Microsoft 365](advanced-data-residency.md).
+
+When a customer elects [Advanced data residency in Microsoft 365](advanced-data-residency.md), they are subject to [ADR Migration](advanced-data-residency.md#data-migration-management). For detailed information regarding customer impact during the migration, please refer to [Data Residency for Microsoft Teams](m365-dr-workload-teams.md#user-experience).
 
 ### How can I determine customer data location?
 
