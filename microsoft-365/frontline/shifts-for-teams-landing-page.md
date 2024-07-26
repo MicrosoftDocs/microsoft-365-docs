@@ -81,7 +81,7 @@ Here’s an overview of what frontline managers and workers can do in Shifts.
 |Frontline manager capabilities |Standalone |Microsoft managed Shifts connector|
 |---------|---------|---------|
 |Create a schedule for their team. <br/>Supported methods:<ul><li>Manually create shifts and time off one by one.</li><li>Bulk creation of shifts and time off through Excel import and copy/paste.</li></ul> | Yes | Not available in Shifts.<sup>1</sup> |
-|Create open shifts for workers on their team to request. <br/>Supported methods:<ul><li>Manually create shifts and time off one by one.</li><li>Bulk creation of shifts and time off through Excel import and copy/paste.</li></ul> | Yes | Not available in Shifts.<sup>1</sup> |
+|Create open shifts for workers on their own team to request. <br/>Supported methods:<ul><li>Manually create shifts and time off one by one.</li><li>Bulk creation of shifts and time off through Excel import and copy/paste.</li></ul> | Yes | Not available in Shifts.<sup>1</sup> |
 |Create open shifts for workers on other teams (locations) to request. <br/>Supported methods:<ul><li>Manually create shifts and time off one by one.</li><li>Bulk creation of shifts and time off through Excel import and copy/paste.</li></ul> | Yes | No |
 |Update and delete shifts, time off, and open shifts.<br/>Only manual one by one changes are supported.| Yes | Not available in Shifts.<sup>1</sup> |
 |Manage Shifts settings for the team. | Yes<sup>2</sup>| No<sup>3</sup>|
@@ -99,7 +99,6 @@ Here’s an overview of what frontline managers and workers can do in Shifts.
 |---------|---------|---------|
 |View their own and their team's schedule. | Yes | Yes |
 |View open shifts available in their schedule groups. | Yes | Yes |
-|Create open shift requests for manager's approval. Currently only available from within the teams the worker is a member of.| Yes | Yes<sup>1</sup>|
 |Create requests for open shifts at their own location for manager's approval. | Yes | Yes<sup>1</sup>|
 |Create requests for open shifts at other locations for manager's approval at that location. | Yes | No|
 |Create time-off requests for manager's approval. Currently, after the request is approved, the time off applies only to the team in which the worker requested it.| Yes | Yes<sup>1</sup>|
