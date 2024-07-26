@@ -35,7 +35,8 @@ By installing and using the Assignments LTI, educators and students can transmit
 
 ### Option 1:  Org-wide deployment (all courses) with option for left nav placement visible or hidden by default in course menus
 
-1. This method requires a one-time setup by the administrator.
+This method requires a one-time setup by the administrator.
+
 1. Sign into your Canvas instance as an administrator.
 1. Select the **Admin** link in the global navigation, and then select your account.
 1. In the Admin navigation, select the **Developer Keys** link, and then choose the **Inherited** tab.
