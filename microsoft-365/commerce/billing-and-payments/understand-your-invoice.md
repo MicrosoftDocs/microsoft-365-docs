@@ -147,7 +147,7 @@ Some invoices are generated within 24 hours of the purchase. Other invoices are 
 
 ### How do I pay the amount due on my invoice?
 
-Payment instructions depend on your payment method and are provided at the bottom of the invoice PDF. If your payment method is a credit or debit card, we automatically charge the card within 10 days of the invoice date. If your payment method is by wire transfer, see the information under **Payment Instructions** in the PDF.
+Payment instructions depend on your payment method and are provided at the bottom of the invoice PDF. If your payment method is a credit or debit card, we automatically charge the card within 10 days of the invoice date. If your payment method is by electronic payment (wire transfer, SEPA, and so on), see the information under **Payment Instructions** in the PDF.
 
 ### What's the difference between "Sold to" and "Bill to" addresses?
 

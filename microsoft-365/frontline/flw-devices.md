@@ -54,7 +54,7 @@ Shared devices and bring-your-own-device (BYOD) are the most commonly adopted de
 <sup>1</sup>Dedicated devices are uncommon in frontline deployments primarily due to high cost and effort to manage in the context of high staff turnover.<br>
 <sup>2</sup>Kiosk device deployments aren’t recommended because they don’t allow user auditing and user-based security capabilities like multifactor authentication. [Learn more about kiosk devices](/windows/configuration/assigned-access).
 
-We focus on shared devices and BYOD as these are the deployment models that fit the practical needs of most frontline deployments. Read on for an overview of planning considerations and management capabilities.
+In this article, we focus on shared devices and BYOD, as these are the deployment models that fit the practical needs of most frontline deployments. Read on for an overview of planning considerations and management capabilities.
 
 ### Device operating system
 
@@ -93,7 +93,7 @@ The following table lists some of the most common app launchers available today 
 |App launcher |Capabilities|
 |-------------|------------|
 |Managed Home Screen |Use Managed Home Screen when you want your users to have access to a specific set of apps on your Intune-enrolled dedicated devices. Because Managed Home Screen can be automatically launched as the default home screen on the device and appears to the user as the only home screen, it’s useful in shared devices scenarios when a locked-down experience is required. [Learn more](/mem/intune/apps/app-configuration-managed-home-screen-app).|
-|VMware Workspace ONE Launcher |If you’re using VMware, the Workspace ONE Launcher is the best tool to curate a set of apps that your frontline needs to access. VMware Workspace ONE Launcher doesn’t currently support shared device mode for global sign and global sign out from the launcher. Therefore, frontline workers need to sign in and sign out of Teams upon each use. [Learn more](https://docs.vmware.com/en/VMware-Workspace-ONE-UEM/2306/Launcher_Publication/GUID-AWLAUNCHERINTRO.html).|
+|VMware Workspace ONE Launcher |If you’re using VMware, the Workspace ONE Launcher is a tool to curate a set of apps that your frontline needs to access. VMware Workspace ONE Launcher doesn’t currently support shared device mode. [Learn more](https://docs.vmware.com/en/VMware-Workspace-ONE-UEM/2306/Launcher_Publication/GUID-AWLAUNCHERINTRO.html).|
 |SOTI|If you’re using SOTI, the SOTI app launcher is the best tool to curate a set of apps that your frontline needs to access. The SOTI app launcher supports shared device mode today.|
 |BlueFletch|[BlueFletch Launcher](https://docs.bluefletch.com/bluefletch-enterprise/product-guides/bluefletch-launcher) can be used on devices, regardless of your MDM solution. BlueFletch supports shared device mode today. [Learn more](https://soti.net/mc/help/v2024.0/en/console/system/microsoft_365_integration/change_device_reg_to_shared_mode_in_azure.html). |
 |Custom app launcher |If you want a fully customized experience, you can build out your own custom app launcher. You can integrate your launcher with shared device mode so that your users only need to sign in and out once. |
@@ -201,7 +201,7 @@ To learn more, see the [Microsoft Entra Conditional Access documentation](/entra
 
 #### App protection policies
 
-With mobile application management (MAM) from Intune, you can use [app protection policies](/mem/intune/apps/app-protection-policy) with apps that are integrated with the Intune [App SDK](/mem/intune/developer/app-sdk-get-started). This allows you to further protect your organization’s data within an app.
+With mobile application management (MAM) from Intune, you can use [app protection policies](/mem/intune/apps/app-protection-policy) with apps that are integrated with the [Intune App SDK](/mem/intune/developer/app-sdk-get-started). This allows you to further protect your organization’s data within an app.
 
 With app protection policies, you can add access control safeguards, such as:
 
@@ -214,4 +214,4 @@ In a shared devices deployment, you can use app protection policies to ensure th
 ## Related articles
 
 - [Manage shared devices for your frontline](flw-shared-devices.md)
-- [Frontline worker management](/azure/active-directory/fundamentals/frontline-worker-management)
+- [Frontline worker management](/entra/fundamentals/frontline-worker-management)

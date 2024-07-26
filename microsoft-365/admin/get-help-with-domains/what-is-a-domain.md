@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: nkagole
 author: nataliekagole
 manager: scotv
-ms.date: 02/18/2020
+ms.date: 07/11/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -17,6 +17,7 @@ ms.collection:
 - highpri
 - M365-subscription-management
 - Adm_O365
+- must-keep
 search.appverid:
 - BCS160
 - MET150
