@@ -39,9 +39,7 @@ By installing and using the Assignments LTI, educators and students can transmit
 1. Sign into your Canvas instance as an administrator.
 1. Select the **Admin** link in the global navigation, and then select your account.
 1. In the Admin navigation, select the **Developer Keys** link, and then choose the **Inherited** tab.
-1. In the apps list, search for **Microsoft** **Teams Assignments**, and then toggle the **State** switch to **On**.
-> [!NOTE]
-> _NOTE:  There are two inherited Developer Key apps listed for Microsoft Teams Assignments_ _which are identical_ _- the_ _app with_ _"(Course Navigation Disabled by Default)" following it will install the app without the Course Navigation placement enabled in courses (educators must add to their course menus themselves)._ _You will need to know the Client ID for the developer key you chose to enable as it is used in step 9 below._
+1. In the apps list, search for **Microsoft** **Teams Assignments**, and then toggle the **State** switch to **On**. Note the two distinct inherited Developer Key apps listed for Microsoft Teams Assignments. The app with "(Course Navigation Disabled by Default)" following it installs the app without the Course Navigation placement enabled in courses (educators must add to their course menus themselves). You will need to know the Client ID for the developer key you chose to enable as it is used in step 9 below.
 1. Select the **OK** button to confirm your choice.
 1. In the **Admin** navigation, select the **Settings** link, and then choose the **Apps** tab.
 1. Select the **View App Configurations** button, and then select the **+ App** button.
