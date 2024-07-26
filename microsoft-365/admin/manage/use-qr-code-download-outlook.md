@@ -29,16 +29,6 @@ As the Microsoft 365 administrator, you can allow your users to sign in to the O
 
 In Outlook on the web or Outlook desktop app, users now have a button labeled Outlook mobile. Once a user selects the button, a QR code will appear. Users then can scan QR code with their Outlook mobile app to sign in. Outlook will use their identity from Azure Active Directory to securely log them into the app on their mobile device. The QR code is a temporary token that can only be used once per session.
 
-The notification is only generated if the following conditions are met:
-
-1. The QR code experience is enabled for the tenant (this experience is enabled by default).
-
-2. The user isn't already using Outlook for iOS and Android.
-
-3. The user has an empty state at reading pane (doesn't select the option of auto opening the first email).
-
-4. The user didn't dismiss the notification.
-
 > [!NOTE]
 > In some cases, your users must re-authenticate on their computer to generate the QR code.
 
