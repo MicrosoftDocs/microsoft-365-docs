@@ -3938,7 +3938,7 @@ English: 24 hours a day, 7 days a week
 :::row:::
    :::column:::
 **Phone number:**\
-000 800 440 2038\
+000 8000 404 454\
 Local toll-free
 
 **Billing support hours:**\
@@ -4247,7 +4247,7 @@ English: 24 hours a day, 7 days a week
 :::row:::
    :::column:::
 **Phone number:**\
-011 2423254\
++94 72 600 0010\
 Local call charges apply.
 
 **Billing support hours:**\
