@@ -110,7 +110,7 @@ To view tags:
 
         - **servicetype** is OneDrive, SharePoint, or Exchange.
 
-        - **applications** is coming soon.
+        - **applications** shows a list of app IDs.
 
     - Azure cost analysis - filter by tag.
 
