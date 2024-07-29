@@ -19,12 +19,12 @@ description: Learn about how to offboard usage in Microsoft 365 Backup.
 # Offboarding in Microsoft 365 Backup
 
 
-To no longer use the Microsoft 365 Backup tool, you must offboard usage. This action includes pausing and deleting all active policies and deleting all of the backed-up data. During the preview, there are three ways that offboarding is initiated:
+To no longer use the Microsoft 365 Backup tool, you must offboard usage. This action includes pausing and deleting all active policies and deleting all of the backed-up data. There are two ways that offboarding is initiated:
 
 - Disable the tool in the pay-as-you-go billing setup panel where you first enabled the tool.
-
+<!---
 - Call into support to ask Microsoft to offboard you from the tool. If you’d like offboarding to happen faster than default (with a minimum of 30 days), you can do this via the support call.
-
+--->
 - If your billing account goes into an unhealthy state.
 
 ## Offboarding recovery undo period
@@ -63,9 +63,10 @@ Retention and deletion policies don't “flow through” to the backups. This me
 ### Sensitivity labels
 
 Restoration of any data (such as sites or mailbox items) reverts the sensitivity labels of the data to the state of that protected item at the prior point in time from which it's being restored (that is, the state of labeling at the point in time from which the content is being restored; in other words, the state reverts to the prior point in time).
-
+<!---
 ## Backup data deletion and undo grace periods
 
-If you need to delete data from the backups during the preview period, you must offboard from the offering entirely and delete all backups. In the future, we'll enable more granular restore point deletion capabilities.
+If you need to delete data from the backups, you must offboard from the offering entirely and delete all backups. In the future, we'll enable more granular restore point deletion capabilities.
 
 Any offboarding or backup deletion activities trigger a 29-day grace period where we'll hold the backup data. If you re-enable the tool, the backups are present in the tool again.  
+--->
