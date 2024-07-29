@@ -108,6 +108,8 @@ Follow these steps to set up a backup policy for OneDrive accounts using Microso
 
     a. Under **Upload a list of accounts in a CSV file**, you can upload a list of accounts to backup via a CSV file.
 
+    The CSV upload feature for bulk addition of sites or user accounts in the backup policy creation workflow can accommodate a maximum of 50,000 entries per CSV file.
+
     b. Under **Back up accounts that match specific filters**, you can select **Distribution lists** or **Security groups**, or both. The distribution list and security group are flattened when added, meaning the policy won't update dynamically if the groups or distribution list are updated later.
 
     The rule-based feature for bulk addition of sites via site names or URL in the backup policy creation workflow can accommodate a maximum of 10 keywords at a time. Each keyword can have a minimum of three characters and maximum of 255 characters.
@@ -116,8 +118,6 @@ Follow these steps to set up a backup policy for OneDrive accounts using Microso
 
     > [!NOTE]
     > The site last modified feature is in preview.
-
-    The CSV upload feature for bulk addition of sites or user accounts in the backup policy creation workflow can accommodate a maximum of 50,000 entries per CSV file.
 
     c. Under **Select accounts individually**, you can search and select accounts you want to add to a backup policy.
 
