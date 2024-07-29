@@ -102,6 +102,28 @@ Follow these steps to set up a backup policy for OneDrive accounts using Microso
 
     ![Screenshot of the Overview page for OneDrive.](../media/m365-backup/backup-overview-page-onedrive.png)
 
+6. On the **Choose selection method** page, you can set up OneDrive user accounts using any or all three ways. A protection scope is the scope of user accounts within OneDrive that you want to protect with Microsoft 365 Backup.
+
+    ![Screenshot of the Protection scope page for OneDrive with the options highlighted.](../media/m365-backup/backup-protection-scope-onedrive.png)
+<!---
+    ![Screenshot of the Choose selection method page for OneDrive.](../media/m365-backup/backup-choose-selection-method-onedrive.png)
+--->
+    a. Under **Upload a list of accounts in a CSV file**, you can upload a list of accounts to backup via a CSV file.
+
+    b. Under **Back up accounts that match specific filters**, you can select **Distribution lists** or **Security groups**, or both. The distribution list and security group are flattened when added, meaning the policy won't update dynamically if the groups or distribution list are updated later.
+
+        The rule-based feature for bulk addition of sites via site names or URL in the backup policy creation workflow can accommodate a maximum of 10 keywords at a time. Each keyword can have a minimum of three characters and maximum of 255 characters.
+
+        The rule-based feature for bulk addition of user accounts via security groups or distribution lists can accommodate a maximum of three groups at a time. These rules are static and applied one time only. That is, the security groups or distribution lists are flattened at the time of adding to the backup configuration policy. For example. groups or list won't be dynamically updated in the system if users are added or removed from the original security group.
+
+        > [!NOTE]
+        > The site last modified feature is in preview.
+
+        The CSV upload feature for bulk addition of sites or user accounts in the backup policy creation workflow can accommodate a maximum of 50,000 entries per CSV file.
+
+    c. Under **Select accounts individually**, you can search and select accounts you want to add to a backup policy.
+
+<!---
 6. On the **Protection scope** page, you can set up OneDrive user accounts using any or all three ways. A protection scope is the scope of user accounts within OneDrive that you want to protect with Microsoft 365 Backup.
 
     ![Screenshot of the Protection scope page for OneDrive with the options highlighted.](../media/m365-backup/backup-protection-scope-onedrive.png)
@@ -126,7 +148,7 @@ Follow these steps to set up a backup policy for OneDrive accounts using Microso
     ![Screenshot of the Import from file section on the Protection scope page for OneDrive.](../media/m365-backup/backup-protection-import-file-onedrive.png)
 
     The CSV upload feature for bulk addition of sites or user accounts in the backup policy creation workflow can accommodate a maximum of 50,000 entries per CSV file.
-
+--->
 8. On the **Review OneDrive backup policy** page, review the information to make sure it's how you want it, and then select **Create policy** (or **Update policy** if it's an update).
 
 9. The backup policy for OneDrive is created.
@@ -246,7 +268,7 @@ Follow these steps to set up a backup policy for Exchange mailboxes sites using 
 
 ## Multi-geo environments
 
-Microsoft 365 Backup supports the backup of sites and user accounts from both the central as well as satellite locations if the multi-geo feature is enabled on your tenant. This means that you can add the sites or user accounts from all geos while creating the backup configuration policy via the CSV file upload method. Adding sites via search and rules will not support multi-geo and you can add sites only from the central location. You can remove sites and user accounts from all the geos while modifying the backup configuration policy.
+Microsoft 365 Backup supports the backup of sites and user accounts from both the central as well as satellite locations if the multi-geo feature is enabled on your tenant. This means that you can add the sites or user accounts from all geos while creating the backup configuration policy via the CSV file upload method. Adding sites via the site picker, search, or filter rules doesn't currently support multi-geo. Those UI experiences today only support addition of sites in the tenant's central location.
 
 ## Admin roles and backup management privileges
 
