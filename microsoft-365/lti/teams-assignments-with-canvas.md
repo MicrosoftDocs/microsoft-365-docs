@@ -16,7 +16,7 @@ This guide provides the IT admin steps for deploying the Microsoft Teams Assignm
 
 For an overview of all of the Microsoft integrations for learning management systems (LMS), see [Integrating Microsoft products with your Learning Management System](/microsoft-365/lti/).
 
-The Microsoft Teams Assignments LTI® app brings the Learning Accelerators, Flip camera, Microsoft Forms, Whiteboard, OneNote pages, and all of the new generative AI features of Teams Assignments to your LTI® v1.3 Advantage compliant learning management system (LMS).
+The Microsoft Teams Assignments LTI® app brings the Learning Accelerators, Flip camera, Microsoft Forms, Whiteboard, OneNote pages, and all of the new generative AI features of Teams Assignments to your LTI® v1.3 Advantage compliant LMS.
 
 The integration allows you to connect class teams and add Teams Assignments right into your LMS assignments list where students can launch and complete them, and then sync grades automatically back to the LMS.
 
