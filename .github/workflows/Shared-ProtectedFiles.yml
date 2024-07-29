@@ -24,7 +24,26 @@ jobs:
           shell: pwsh
           env: 
             
-            ProtectedFileList: '[".gitignore", ".openpublishing.publish.config.json", "docfx.json", "README.md", "LICENSE-CODE", "ThirdPartyNotices", ".acrolinx-config.edn", ".gitattributes", "ProtectedFiles.yml", "Shared-ProtectedFiles.yml", "AutoLabelAssign.yml", "Shared-AutoLabelAssign.yml"]'
+            ProtectedFileList: '[
+                    ".gitignore", 
+                    ".openpublishing.publish.config.json", 
+                    "docfx.json", 
+                    "README.md", 
+                    "LICENSE-CODE", 
+                    "ThirdPartyNotices", 
+                    ".acrolinx-config.edn", 
+                    ".gitattributes", 
+                    "ProtectedFiles.yml", 
+                    "AutoLabelAssign.yml", 
+                    "LiveMergeCheck.yml",                 
+                    "PrFileCount.yml", 
+                    "BackgroundTasks.yml",
+                    "Shared-ProtectedFiles.yml", 
+                    "Shared-AutoLabelAssign.yml", 
+                    "Shared-LiveMergeCheck.yml", 
+                    "Shared-PrFileCount.yml", 
+                    "Shared-ExtractPayload.yml" 
+                ]'
             ApproverList: '["dstrome"]'
             HelpUrl: 'https://review.learn.microsoft.com/en-us/office-authoring-guide/pull-request-status-checks?branch=main'
             
