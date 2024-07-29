@@ -52,7 +52,7 @@ Microsoft Copilot for Microsoft 365 works with the new Outlook (for [Windows](ht
 
 To have Copilot appear in the new Outlook, you need to sync your Microsoft 365 settings. To do this, go to [View and manage your Microsoft 365 settings](https://myaccount.microsoft.com/settingsandprivacy/language).
 
-Microsoft Copilot for Microsoft 365 will be supported on classic Outlook for Windows (Win32 desktop app) in the future. You can [review the roadmap item here](https://www.microsoft.com/microsoft-365/roadmap?rtc=1&filters=Outlook&searchterms=copilot).
+Microsoft Copilot for Microsoft 365 is supported on classic Outlook for Windows (Win32 desktop app). You can [review the roadmap item here](https://www.microsoft.com/microsoft-365/roadmap?rtc=1&filters=Outlook&searchterms=copilot).
 
 ### Microsoft Teams
 
