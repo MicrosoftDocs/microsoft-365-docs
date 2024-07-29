@@ -12,7 +12,7 @@ ms.service: microsoft-365-business
 
 # Use Microsoft Teams Assignments LTI app with Canvas
 
-This guide provides the IT admin steps for deploying the Microsoft Teams Assignments learning tool interoperability (LTI) app in PowerSchool Schoology Learning.
+This guide provides the IT admin steps for deploying the Microsoft Teams Assignments learning tool interoperability (LTI) app in Canvas.
 
 For an overview of all of the Microsoft integrations for learning management systems (LMS), see [Integrating Microsoft products with your Learning Management System](/microsoft-365/lti/).
 
