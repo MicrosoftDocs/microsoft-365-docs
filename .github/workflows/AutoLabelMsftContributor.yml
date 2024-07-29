@@ -15,7 +15,7 @@ jobs:
     download-payload:
         if: github.repository_visibility == 'public'
         name: Download and extract payload artifact
-        uses: MicrosoftDocs/max-cpub-test/.github/workflows/Shared-ExtractPayload.yml@main
+        uses: MicrosoftDocs/microsoft-365-docs/.github/workflows/Shared-ExtractPayload.yml@workflows-prod
         with:
             WorkflowId: ${{ github.event.workflow_run.id }}
             OrgRepo: ${{ github.repository }}
@@ -26,7 +26,7 @@ jobs:
         name: Label Microsoft contributors
         if: github.repository_visibility == 'public'
         needs: [download-payload]
-        uses: MicrosoftDocs/microsoft-365-docs/.github/workflows/Shared-AutoLabelMsftContributor.yml@workflows-test
+        uses: MicrosoftDocs/microsoft-365-docs/.github/workflows/Shared-AutoLabelMsftContributor.yml@workflows-prod
         with:
           PayloadJson: ${{ needs.download-payload.outputs.WorkflowPayload }}
         secrets:

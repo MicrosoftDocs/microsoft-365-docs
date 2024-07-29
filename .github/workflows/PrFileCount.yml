@@ -12,7 +12,7 @@ on:
 jobs:
 
   file-count:
-    uses: MicrosoftDocs/microsoft-365-docs/.github/workflows/Shared-PrFileCount.yml@workflows-test
+    uses: MicrosoftDocs/microsoft-365-docs/.github/workflows/Shared-PrFileCount.yml@workflows-prod
     with:
       PayloadJson: ${{ toJSON(github) }}
     secrets:

@@ -10,7 +10,7 @@ on: [pull_request_target]
 jobs:
 
   protected-files:
-    uses: MicrosoftDocs/microsoft-365-docs/.github/workflows/Shared-ProtectedFiles.yml@workflows-test
+    uses: MicrosoftDocs/microsoft-365-docs/.github/workflows/Shared-ProtectedFiles.yml@workflows-prod
     with:
       PayloadJson: ${{ toJSON(github) }}
     secrets:
