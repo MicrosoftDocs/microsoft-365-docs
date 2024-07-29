@@ -42,18 +42,15 @@ To summarize, applications built on top of the Microsoft 365 Backup Storage plat
 
 - Fast restore within hours (see [performance targets](#general-availability-performance-targets) later in this article)
 
-- Full SharePoint site and OneDrive account restore fidelity, meaning the site and OneDrive are restored to their exact state at specific prior points in time via a rollback operation
-
+- Full SharePoint site and OneDrive account restore fidelity, meaning the site and OneDrive are restored to their exact state (excluding, for example, taxonomy mastered outside the site scope) at specific prior points in time via a rollback operation.
+<!---
 - In the future, roll forward granular file-level restores in OneDrive and SharePoint
-
-- Full Exchange mailbox item restores or granular item restores using search
+--->
+- Full Exchange mailbox item restores or granular item restores using search, for modified or deleted items.
 
 - Consolidated security and compliance domain management
 
-<!---M365-Backup_VID_WEB_Final.mp4   <need a link that embeds properly into the learn docs> --->
-
 ## Feature summary
-
 
 |Feature  |OneDrive  |SharePoint  |Exchange Online |
 |---------|---------|---------|---------|
@@ -61,11 +58,11 @@ To summarize, applications built on top of the Microsoft 365 Backup Storage plat
 |**Recovery points**     |10 minutes for two weeks prior<br><br>Weekly snapshots 2-52 weeks prior |10 minutes for two weeks prior<br><br>Weekly snapshots 2-52 weeks prior | 10 minutes for prior 52 weeks   |
 |**Backup granularity**     | OneDrive account |SharePoint site  |Exchange user account  |
 |**Restore granularity**     |OneDrive accounts<br><br>Files restorable via versions (coming soon)  |SharePoint sites<br><br>Files restorable via versions (coming soon)    |Mail/Contacts/Calendar/Task items  |
-|**Restore options**     |**Location**: Same or new URL<br><br>**OneDrive** restore rolls back to the state of the site at the prior point in time, overwriting all content and metadata since that prior point in time<br><br>**File version** restore rolls forward the file to the state at the prior point in time, but retains prior versions    |**Location**: Same or new URL<br><br>**Full site** restore rolls back to the state of the site at the prior point in time, overwriting all content and metadata since that prior point in time<br><br>**File version** restore rolls forward the file to the state at the prior point in time, but retains prior versions  |**Location**: Same or new folder within user’s mailbox<br><br>**Full and item level mailbox roll forward** restores only modified/delete items from prior point in time  |
-|**Restore speeds (RTO)**     |Up to 1,000 average-sized OneDrive accounts at a rate of approximately 1-3 TB per hour    |Up to 1,000 average-sized sites, at a rate of approximately 1-3 TB per hour    |Up to 1,000 average-sized mailboxes at a rate of approximately 1-3 TB per hour    |
-|**Auditability & admin isolation** |Actions fully auditable |Actions fully auditable |Actions fully auditable |
+|**Restore options**     |**Location**: Same or new URL<br><br>**OneDrive** restore rolls back to the state of the site at the prior point in time, overwriting all content and metadata since that prior point in time<br><br>**File version** restore rolls forward the file to the state at the prior point in time, but retains prior versions    |**Location**: Same or new URL<br><br>**Full site** restore rolls back to the state of the site at the prior point in time, overwriting all content and metadata since that prior point in time<br><br>**File version** restore rolls forward the file to the state at the prior point in time, but retains prior versions  |**Location**: Same or new folder within user’s mailbox<br><br>**Full and item level mailbox** restores only modified/deleted items from prior point in time  |
+|**Restore speeds (RTO)**     |Up to 1,000 average-sized OneDrive accounts at a rate of up to 1-3 TB per hour    |Up to 1,000 average-sized sites, at a rate of up to 1-3 TB per hour    |Up to 1,000 average-sized mailboxes at a rate of up to 1-3 TB per hour    |
+|**Auditability** |Actions fully auditable |Actions fully auditable |Actions fully auditable |
 |**Geographic residency**    |Physically redundant & geographically replicated<br><br>Honors tenant’s geographic residency requirements    |Physically redundant & geographically replicated<br><br>Honors tenant’s geographic residency requirements    |Physically redundant & geographically replicated<br><br>Honors tenant’s geographic residency requirements    |
-|**Billing model**    |$0.15 per GB per month for all data protected by Backup<br><br>Restores are free<br><br>(Different price for third-party providers)  |$0.15 per GB per month for all data protected by Backup<br><br>Restores are free<br><br>(Different price for third-party providers)   |$0.15 per GB per month for all data protected by Backup<br><br>Restores are free<br><br>(Different price for third-party providers)  |
+|**Billing model**    |$0.15 per GB per month for all data protected by Backup<br><br>Restores are free  |$0.15 per GB per month for all data protected by Backup<br><br>Restores are free   |$0.15 per GB per month for all data protected by Backup<br><br>Restores are free  |
 
 ## Architectural overview and performance expectations
 
@@ -73,9 +70,9 @@ To summarize, applications built on top of the Microsoft 365 Backup Storage plat
 
 Microsoft 365 Backup provides ultra-fast backup and restore capabilities by creating backups within the protected services’ data boundaries.
 
-Microsoft 365 Backup not only provides uniquely fast recovery from common business continuity and disaster recovery (BCDR) scenarios like ransomware or accidental/malicious employee content overwrite/deletion. Additional BCDR scenario protections are also built directly into the service. For example, OneDrive, SharePoint, and Exchange Online provide replicated copies of your data across geographically disparate datacenters to automatically protect against physical disasters and automatically failover to live active copies seamlessly without the need for end customer intervention.
+Microsoft 365 Backup not only provides uniquely fast recovery from common business continuity and disaster recovery (BCDR) scenarios like ransomware or accidental/malicious employee content overwrite/deletion. Additional BCDR scenario protections are also built directly into the service. For example, OneDrive, SharePoint, and Exchange Online has a proprietary architecture design for resiliency with replicated copies of customer data to failover to live active copies seamlessly without the need for end customer intervention.
 
-Our backups are protected from malicious overwrites because OneDrive, SharePoint, and Exchange use Append-Only storage. This means that SharePoint can only add new content blobs and can never change old ones until they're permanently deleted. The Exchange items are backed up in an immutable manner and can't be accessed by a client process (such as Outlook, OWA, or MFCMAPI). This process ensures that items can't be changed or corrupted after an initial save, protecting against attackers that try to corrupt old versions. For More information about the built-in service and data resiliency, see [SharePoint and OneDrive data resiliency in Microsoft 365](/compliance/assurance/assurance-sharepoint-onedrive-data-resiliency) and [Exchange Online data resiliency in Microsoft 365](/compliance/assurance/assurance-exchange-data-resiliency).
+Our backups are protected from malicious overwrites because OneDrive, SharePoint, and Exchange use Append-Only backup storage. This means that SharePoint can only add new content blobs and can never change old ones until they're permanently deleted. The Exchange items are backed up in an immutable manner and can't be accessed by a client process (such as Outlook, OWA, or MFCMAPI). This process ensures that items can't be changed after an initial save, protecting against attackers that try to corrupt old versions. For more information about the built-in service and data resiliency, see [SharePoint and OneDrive data resiliency in Microsoft 365](/compliance/assurance/assurance-sharepoint-onedrive-data-resiliency) and [Exchange Online data resiliency in Microsoft 365](/compliance/assurance/assurance-exchange-data-resiliency).
 
 Key architectural takeaways:
 
@@ -83,7 +80,7 @@ Key architectural takeaways:
 
 - The backups are immutable unless expressly deleted by the Backup tool admin via product offboarding.
 
-- OneDrive, SharePoint, and Exchange have multiple physically redundant copies of your data to protect against physical disasters.
+- OneDrive, SharePoint, and Exchange have multiple physically redundant copies of your data to mitigate the impact of physical disasters.
 
     ![Diagram showing the Microsoft 365 data trust boundaries.](../media/m365-backup/backup-boundaries-diagram.png)
 
@@ -97,21 +94,31 @@ Restore points are physically created in the service as soon as the policy is co
 
 #### Restoration performance
 
-Restoration performance dictates your recovery time objection, or the time it will take for you to restore a healthy state of your data and thus recover from a data destruction event.
-For full OneDrive account and SharePoint site restores, the fastest recovery will happen when choosing in-place restore rather a new URL restore. Additionally, choosing one of the recommended “faster” restore points presented in the restore workflow UI will yield the quickest recovery results.
+Restoration performance correlates with your recovery time objective, or the time it will take for you to restore a healthy state of your data and thus recover from a data destruction event.
+For full OneDrive account and SharePoint site restores, the fastest recovery will happen when choosing in-place restore rather a new URL restore. Additionally, choosing one of the recommended express restore points presented in the restore workflow UI will yield the quickest recovery results.
 
-All restore points and restores to new URLs will be relatively fast, but same URL restores using a recommended “faster” restore point will typically yield better results. The Exchange Online restore workflow doesn't have or require the “faster” restore points.
+All restore points and restores to new URLs will be relatively fast, but same URL restores using a recommended express restore point will typically yield better results. The Exchange Online restore workflow doesn't have or require the “faster” restore points.
 
-It will take on average less than one hour for the first full site or account protection unit to be restored when a new restore session is initiated. After the first site or account is restored in a session, the remaining protection units will complete in relatively fast succession.
+The following table summarizes expected performance for a normally distributed tenant, including tenants of large size and scale.
 
-The following table summarizes expected performance for a normally distributed tenant, including tenants of large size and scale. During the preview period, actual performance might deviate from these general availability targets.
 
+|Protection units  |OneDrive and SharePoint  |Exchange Online  |
+|---------|---------|---------|
+|1     |30 minutes         |2 hours         |
+|50     |3 hours         |2.5 hours         |
+|250     |4 hours         | 3 hours        |
+|1,000     |10 hours         |4 hours         |
+|More than 1,000    |250/hour<br>Up to 3 TB/hour         |250+/hour<br>Up to 2.7 TB/hour         |
+
+<sup>*Single protection unit OneDrive and SharePoint restores using express restore points can take on average between 10 minutes and 120 minutes.</sup>
+
+<!---
 |Scenario |Restore of all protection units* complete |
 |:-------|:--------|
 | 1,000 accounts, sites, or mailboxes<br>(10-GB average size)  |Less than 12 hours  |
 
 <sup>*A *protection unit* is a OneDrive account, SharePoint site, or Exchange mailbox.</sup>
-
+--->
 ## Integrated partner solutions
 
 We partner with many independent software vendors (ISVs) to provide differentiated versions of their applications integrated with the Microsoft 365 Backup Storage platform—all providing the same underlying performance value proposition for your Microsoft 365 data.
