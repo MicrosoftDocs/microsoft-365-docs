@@ -22,6 +22,9 @@ Third-party developers can create their own applications to manage Microsoft 365
 
 Creating an application means that your third-party application becomes the Microsoft 365 Backup Storage **Controller** in the tenant where your application is deployed.
 
+> [!NOTE]
+> If you encounter any unanswered product questions in these documents, please refer to the [Microsoft 365 Backup 1P documentation](../backup-overview.md) for additional insights on features and FAQs, as that experience utilizes the same underlying APIs.
+
 To create and deploy an application, the third-party developers perform the following tasks:
 
 1. Develop your third-party Microsoft 365 Backup Storage application with the required oAuth permissions scopes and [M365 Backup Storage Graph APIs](/graph/api/resources/backuprestoreroot).

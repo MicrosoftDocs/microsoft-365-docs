@@ -59,9 +59,6 @@ All other states indicate that there's no active Microsoft 365 Backup Storage Co
 
 To activate your application as the Microsoft 365 Backup Storage Controller depends on whether or not there's already an existing Microsoft 365 Backup Storage Controller (either first-party or third-party).
 
-> [!NOTE]
-> Activating your application as the Microsoft 365 Backup Storage Controller will notify all of the Consuming Tenant Backup Admins via an email.
-
 #### No existing Microsoft 365 Backup Storage Controller
 
 If there's no existing Microsoft 365 Backup Storage Controller, then you can immediately activate your application as the Controller. To do this, you execute the [serviceApp: activate](/graph/api/serviceapp-activate?view=graph-rest-beta) API:
@@ -104,13 +101,6 @@ GET /solutions/backupRestore/serviceApps/{serviceAppId}
 
 **On completion of the Grace Period:**
 -	Your application has a state of **active**.
-
-> [!NOTE]
-> Any state changes made to the Microsoft 365 Backup Storage Controller will notify all of the Consuming Tenant Backup Admins via an email. This includes the following events:
-> - Activating a Service App as the Microsoft 365 Backup Storage Controller
-> -	Canceling the pending change to the Microsoft 365 Backup Storage Controller
-> -	Deactivating a Service App as the Microsoft 365 Backup Storage Controller
-> -	Completion of the Grace Period
 
 ###	Step 4: Enable your Billing Policy in the Consuming Tenant
 
@@ -163,9 +153,6 @@ After successfully invoking the API:
 -	Your application has a state of **inactive**.
 -	The application that is currently the Microsoft 365 Backup Storage Controller has a state of **active**.
   
-> [!NOTE]
-> Deactivating your application as the Microsoft 365 Backup Storage Controller will notify all of the Consuming Tenant Backup Admins via an email.
-
 #### Deactivating with current state of pendingInactive
 
 Deactivating your  application that has a state of **pendingInactive** won't do anything to the pending change of the Microsoft 365 Backup Storage Controller. That is, the pending change continues until the Grace Period is complete.
@@ -184,9 +171,6 @@ DELETE /solutions/backupRestore/serviceApps/{serviceAppId}
 ```
 
 The outcome of unregistering your application depends on the current state of your application.
-
-> [!NOTE]
-> Unregistering your application as the Microsoft 365 Backup Storage Controller will notify all of the Consuming Tenant Backup Admins via an email.
 
 #### Unregistering with current state of inactive
 
