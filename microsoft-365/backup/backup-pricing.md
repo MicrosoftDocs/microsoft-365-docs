@@ -20,7 +20,7 @@ description: Learn about the charge model and pricing calculator for Microsoft 3
 
 ## Microsoft 365 Backup charge model
 
-The Microsoft 365 Backup service, offered through the Microsoft 365 admin center, is a [pay-as-you-go consumption-based service](/microsoft-365/syntex/syntex-pay-as-you-go-services). The preview list price is $0.15/GB/month of protected content.
+The Microsoft 365 Backup service, offered through the Microsoft 365 admin center, is a [pay-as-you-go consumption-based service](/microsoft-365/syntex/syntex-pay-as-you-go-services). The list price is $0.15/GB/month of protected content.
 
 ### What’s counted towards protected backup storage?
 
@@ -36,7 +36,7 @@ Microsoft 365 Backup will charge you for content size of the following for 365 d
 As an example, if you have a site under protection that is currently 1 GB for the first month, you'll be charged 1 GB of Backup usage. If you delete content in that site such that it's now only 0.5 GB, your next monthly bill will still be for 1 GB since the backup tool is retaining that deleted content for a year. After a year when the backup of that deleted content expires, the 0.5 GB being retained for backup purposes will no longer be charged for backup.
 
 > [!NOTE]
-> These prices are subject to change when the product becomes generally available. A partner application integrated with Microsoft 365 Backup storage might charge a different rate for their service.
+> A partner application integrated with Microsoft 365 Backup storage might charge a different rate for their service.
 
 <!---<Include charge model video >--->
 
@@ -63,7 +63,7 @@ To use the Microsoft 365 Backup pricing calculator, you'll need to perform the f
 
 1. Download the latest version of the [Microsoft 365 Backup pricing calculator tool](https://aka.ms/M365BackupCalculator).
 
-2. Review your [Microsoft 365 usage reports](https://admin.microsoft.com/Adminportal/Home#/reportsUsage) to get historical information about your current usage. Heuristics from the usage reports will be used to populate the inputs (orange boxes) in the pricing calculator tool.
+2. Review your [Microsoft 365 usage reports](https://admin.microsoft.com/Adminportal/Home#/reportsUsage) to get historical information about your current usage. Heuristics from the usage reports will be used to populate the inputs (orange boxes) in the pricing calculator tool. Content in the OneDrive and SharePoint recycle bins and data in a mailbox's online archives will not be reflected in these reports, but do impact the backup costs as described above.
 
 3. Open the Excel spreadsheet and select the **High-Level Estimates** worksheet. This sheet produces the simplest default model based on linear data growth assumptions.
 
@@ -71,7 +71,13 @@ To use the Microsoft 365 Backup pricing calculator, you'll need to perform the f
 
 5. If you know your tenant will have non-organic or non-linear usage changes, then for each of the service types, optionally override the estimated number of protection units or storage for a month in any or all of the service-specific tabs in the pricing calculator tool.
 
-6. An estimate of the Microsoft 365 Backup costs for the next 24 months will then be generated.
+6. An estimate of the Microsoft 365 Backup costs for the next 24 months, not including data currently in your OneDrive and SharePoint recycle bins or mailbox online archive folders, will then be generated.
+
+    The size of your recycle bins can be roughly estimated as the amount of data you delete every three months in OneDrive and SharePoint. Your Mailbox online archives can be estimated by running the following Exchange Online PowerShell command:
+    
+    ```powershell
+    Get-MailboxStatistics -Identity "user@example.com" -Archive | Select DisplayName, TotalItemSize, ItemCount
+    ``` 
 
 ### Leverage the Microsoft 365 usage reports as source data for the pricing calculator
 
