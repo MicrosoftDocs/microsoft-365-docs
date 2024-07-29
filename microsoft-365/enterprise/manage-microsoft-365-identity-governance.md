@@ -3,7 +3,7 @@ title: "Manage Microsoft 365 identity governance"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 09/25/2020
+ms.date: 07/26/2024
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-enterprise
@@ -18,6 +18,7 @@ ms.collection:
 - scotvorg
 - Ent_O365
 - M365-subscription-management
+- must-keep
 search.appverid:
 - MET150
 - MOE150
