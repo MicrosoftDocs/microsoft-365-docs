@@ -30,6 +30,9 @@ jobs:
             
           run: |
 
+            # This script outputs nothing if all checks pass. If a check fails, an exception is thrown which results in an
+            # exit code of 1 being returned to GitHub. An exit code of 1 fails the status check.
+
             # Get payload data and event from GitHub
             $GitHubData = $env:PayloadJson | ConvertFrom-Json -Depth 50
             $GitRequestEvent = $GitHubData.event_name
@@ -89,51 +92,6 @@ jobs:
 
             }
 
-            #############
-            # Set-Status takes in the status check result and message values and creates the JSON body to send to GitHub.
-            Function Set-Status {
-
-                [cmdletbinding()]
-                Param (
-                    $StatusResult,
-                    $StatusMessage
-                    ) 
-                    
-                # Build hash table that contains status check fields to be sent to GitHub. Context and Target_Url always stay the same.
-                # State and Description change depending on result of checks below.
-                $Status = @{}
-                $Status.Add("context", $StatusCheckName)
-                $Status.Add("target_url", $StatusCheckHelpUrl)
-                $Status.state = $StatusResult
-                $Status.description = $StatusMessage
-                $StatusJson = $Status | ConvertTo-Json 
-                
-                Return $StatusJson
-
-            }
-
-            #############
-            # Send-Status takes the JSON body created by Set-Status and submits it to GitHub.
-            Function Send-Status {
-
-                [cmdletbinding()]
-                Param (
-                    $Url,
-                    $Body
-                    ) 
-
-                Try {
-
-                # Send status to GitHub
-                $Result = Invoke-WebRequest -Headers $GitHubHeaders -Uri $Url -UseBasicParsing -Method POST -Body $Body -ErrorAction Stop
-                
-                } Catch {
-
-                    Write-Host "ERROR: Failed to submit status to GitHub. Error: $($error[0].Exception.Message). Request ID: $RequestId."
-                
-                }
-            }
-
             ###################
 
             Function Set-PrConversationMessage {
@@ -160,7 +118,7 @@ jobs:
 
                     $PostCommentSuccess = $False
 
-                    Write-Host "ERROR: Failed to submit message to PR conversation. Error: $($error[0].Exception.Message). Request ID: $RequestId."
+                    Write-Host "ERROR: Failed to submit message to PR conversation. Error: $($error[0].Exception.Message)."
 
                     
 
@@ -179,61 +137,44 @@ jobs:
             $RuntimeInfo = $RuntimeInfo + " Sender: $($GitHubData.event.sender.login)"
             $RuntimeInfo = $RuntimeInfo + " Request type: $GitRequestEvent"
             $RuntimeInfo = $RuntimeInfo + " GitHub action: $($GitHubData.event.action)"
-            $RuntimeInfo = $RuntimeInfo + " Request Id: $RequestId"
 
             Write-Host $RuntimeInfo
 
             # Only process event types of 'pull_request'
             If ($GitRequestEvent -eq "pull_request_target") {
 
-                Write-Host "Request type is pull_request. Processing request. Request ID: $RequestId."
+                Write-Host "Request type is pull_request. Processing request."
 
                 If (($GitHubData.event.action -eq "opened") -or ($GitHubData.event.action -eq "synchronize") -or ($GitHubData.event.action -eq "reopened") -or ($GitHubData.event.action -eq "edited")) {
 
-                    Write-Host "Setting pending status. Request ID: $RequestId."
-
-                    # Show the status of the check as "pending" in the PR on GitHub
-                    # This is being set only if $TargetBranch equals $PublishBranch because we only want to run this check for PRs that originally targetted
-                    # $PublishBranch. Trying to avoid cluttering the status check on PRs submitted to anything other than $PublishBranch.
-                    $StatusOutput = Set-Status -StatusResult "pending" -StatusMessage $StatusCheckPendingText
-                    Send-Status -Url $StatusUrl -Body $StatusOutput 
-
+                    # Only run checks if the base branch matches the branch defined in $PublishBranch. 
                     If ($TargetBranch -eq $PublishBranch) {
 
-                        Write-Host "Target branch $TargetBranch matches publish branch $PublishBranch. Request ID: $RequestId."
+                        Write-Host "Target branch $TargetBranch matches publish branch $PublishBranch."
 
                         If (($OriginBranch -eq $DefaultBranch) -and ($OriginRepo -eq $RequiredRepo)) {
 
-                            Write-Host "Origin branch $OriginBranch is allowed to merge to $PublishBranch. Request ID: $RequestId."
-
-                            $StatusOutput = Set-Status -StatusResult "success" -StatusMessage $AllowedBranchMergeText
-
+                            Write-Host "Origin branch $OriginBranch is allowed to merge to $PublishBranch."
 
                         } Else {
-
-                            Write-Host "Origin branch $OriginRepo/$OriginBranch isn't allowed to merge into $PublishBranch. Request ID: $RequestId."
-
-                            $StatusOutput = Set-Status -StatusResult "error" -StatusMessage $DisallowedBranchMergeText
 
                             $LiveMergeMessage = Get-PrMessage -PrMessageName "LiveMergeCheck-LiveMergeMessage"
 
                             Set-PrConversationMessage -Message $($LiveMergeMessage -F $TargetBranch, $DefaultBranch)
 
+                            Throw "Origin branch $OriginRepo/$OriginBranch isn't allowed to merge into $PublishBranch."
+
                         } # OriginBranch
 
                     } Else {
 
-                        Write-Host "Target branch is not $PublishBranch. Setting status check to 'success'."
-
-                        $StatusOutput = Set-Status -StatusResult "success" -StatusMessage $StatusCheckUnmonitoredBranchText
-                                    
+                        Write-Host "Target branch is not $PublishBranch."                                 
 
                     } # Target banch
-
-                    Send-Status -Url $StatusUrl -Body $StatusOutput 
 
                 } # PR state
 
             } # Is PR check
+
 
 

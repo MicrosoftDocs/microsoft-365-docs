@@ -1,0 +1,85 @@
+name: Download and extract payload artifact
+
+permissions:
+    pull-requests: write
+    contents: read
+    actions: read
+      
+on: 
+    workflow_call:
+        inputs:
+            WorkflowId:
+                required: true
+                type: string   
+            OrgRepo:
+                required: true
+                type: string  
+        secrets:
+            AccessToken:
+                required: true
+        outputs:
+            WorkflowPayload: 
+                value: ${{ jobs.build.outputs.JobPayload }}
+
+jobs:
+    build:
+      name: Run Script
+      runs-on: windows-latest
+      outputs:
+        JobPayload: ${{ steps.get-payload.outputs.WorkflowPayload }}
+      steps:
+        - name: Script
+          id: get-payload
+          shell: pwsh
+          env: 
+            WorkflowId: ${{ inputs.WorkflowId }}
+            AccessToken: ${{ secrets.AccessToken }}
+            OrgRepo: ${{ inputs.OrgRepo }}
+
+          run: |
+          
+            $AccessToken = $env:AccessToken
+            $WorkflowId = $env:WorkflowId
+            $OrgRepo = $env:OrgRepo
+            $WorkspacePath = "$env:GITHUB_WORKSPACE"
+
+            $ArtifactName = "PayloadJson"
+            $ArtifactFilePath = Join-Path $WorkspacePath -ChildPath "$ArtifactName.zip"
+            $GitHubDataPath = Join-Path $WorkspacePath -ChildPath "$ArtifactName.json"
+            $ArtifactUrl = "https://api.github.com/repos/$OrgRepo/actions/runs/$WorkflowId/artifacts"
+
+            # Set GitHub REST API headers
+            $GitHubHeaders = @{}
+            $GitHubHeaders.Add("Authorization","token $AccessToken")
+            $GitHubHeaders.Add("User-Agent", "officedocs")
+
+            Write-Host "Repo: $OrgRepo"
+            Write-Host "Parent workflow ID: $WorkflowId"
+            Write-Host "Workspace path: $WorkspacePath"
+            Write-Host "Artifact URL: $ArtifactUrl"
+
+            Write-Host "Retrieve parent workflow artifacts"
+            $ArtifactData = Invoke-RestMethod -Uri $ArtifactUrl -Headers $GitHubHeaders
+
+            $ArtifactDownloadUrl = $ArtifactData.artifacts.archive_download_url
+
+            Write-Host "Retrieve payload artifact from $ArtifactDownloadUrl and save to $ArtifactFilePath"
+            Invoke-RestMethod -Uri $ArtifactDownloadUrl -Headers $GitHubHeaders -OutFile $ArtifactFilePath
+
+            Write-Host "Expand artifact payload zip $ArtifactFilePath to $WorkspacePath"
+            Expand-Archive $ArtifactFilePath -DestinationPath $WorkspacePath
+
+            Write-Host "Get payload data from $GitHubDataPath"
+            $GitHubDataJson = Get-Content $GitHubDataPath -Raw 
+            $GitHubData = $GitHubDataJson | ConvertFrom-Json -Depth 50
+            $GitRequestEvent = $GitHubData.event_name
+            $GitHubAction = $GitHubData.event.action
+            $OriginRepo = $GitHubData.event.repository.full_name
+            $PrNumber = $GitHubData.event.number
+
+            Write-Host "GitHub event: $GitRequestEvent"
+            Write-Host "GitHub action: $GitHubAction"
+            Write-Host "Origin repo: $OriginRepo"
+            Write-Host "PR Number: $PrNumber"
+
+            echo "WorkflowPayload=$GitHubDataJson" >> $env:GITHUB_OUTPUT

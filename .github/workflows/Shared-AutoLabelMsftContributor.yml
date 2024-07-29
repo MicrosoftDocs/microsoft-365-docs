@@ -1,0 +1,289 @@
+name: Label Microsoft contrib
+
+permissions:
+  pull-requests: write
+  contents: read
+      
+on: 
+    workflow_call:
+        inputs:
+            PayloadJson:
+                required: true
+                type: string
+        secrets:
+            AccessToken:
+                required: true
+            TeamReadAccessToken:
+                required: true
+jobs:
+    build:
+      name: Run Script
+      runs-on: windows-latest
+      steps:
+        - name: Script
+          shell: pwsh
+          env: 
+            PayloadJson: ${{ inputs.PayloadJson }}
+            AccessToken: ${{ secrets.AccessToken }}
+            TeamReadAccessToken: ${{ secrets.TeamReadAccessToken }}
+            
+          run: |
+
+            $CurrentDateTime = Get-Date
+
+            # Get payload data from GitHub. 
+            $GitHubData = $env:PayloadJson | ConvertFrom-Json -Depth 50
+            $AccessToken = $env:AccessToken
+            $TeamReadAccessToken = $env:TeamReadAccessToken
+            $GitRequestEvent = $GitHubData.event_name
+
+            $RepoName = $GitHubData.event.repository.name
+            $RepoUrl = $GitHubData.event.repository.url
+            $RepoTopicUrl = "$RepoUrl/topics"
+
+            # URL of the org team to check. We're using the "everyone" team in MicrosoftDocs. 
+            $OrgTeamUrl = "https://api.github.com/orgs/microsoftdocs/teams/everyone/memberships/"
+
+            #####################
+            #####################
+            # Test-Label
+
+            Function Test-Label {
+
+                [CmdletBinding()]
+                param(
+
+                    $Name,
+                    $RepoUri,
+                    $Headers       
+                )
+
+                # Replace placeholder text in the URL retrieved from the GitHub API with the name of the label we're looking for
+                $LabelUri = $RepoUri.Replace("{/name}","/$Name")
+
+                # Check to see if the label we want exists in the repo
+                Try {
+
+                    $LabelResults = Invoke-WebRequest -UseBasicParsing -Uri $LabelUri -Headers $Headers -ErrorAction Stop
+                    $LabelFound = $True
+                    
+                } Catch {
+
+                    $LabelFound = $False
+
+                }
+
+                # Return boolean to calling statement
+                $LabelFound
+
+            }
+
+            #####################
+            #####################
+            # New-Label
+
+            Function New-Label {
+
+            [CmdletBinding()]
+                param(
+
+                    $Name,
+                    $Color,
+                    $Description,
+                    $RepoUri,
+                    $Headers       
+                )
+
+                # Remove placeholder text from repo URL
+                $RepoUri = $RepoUri.Replace("{/name}","")
+                $Result = $Null
+
+                # Construct the JSON statement that will be sent to GitHub as the body of the web request. Include the name of the label, its color, and description. 
+                # Convert hash table to JSON
+                $Body = @{}
+                $Body.Add("name", $Name)
+                $Body.Add("color", $Color)
+                $Body.Add("description", $description)
+                $Body = $Body | ConvertTo-Json
+
+                # Try to submit the request to GitHub API to create the label
+                Try {
+                    
+                    $Result = Invoke-WebRequest -UseBasicParsing -Uri $RepoUri -Headers $Headers -Body $Body -Method POST
+
+                } Catch {
+
+                    $Result = $Error[0].Exception.Message
+
+                }
+
+                # Return boolean to calling statement
+                $Result
+            }
+
+            #####################
+            #####################
+            # Set-Label
+
+            Function Set-Label {
+
+                param(
+
+                    $IssueUrl,
+                    $LabelName,
+                    $Headers
+                
+                )
+
+                # Construct label URL based on pull request URL
+                $IssueLabelUrl = "$IssueUrl/labels"
+
+                # Construct JSON statement that will be sent to GitHub as the body of the web request. Includes only the label name. GitHub expects an array even thought it's a single value
+                # Convert array to JSON
+                $Body = @()
+                $Body += $LabelName
+                $Body = ConvertTo-Json -InputObject $Body
+
+                # Try to submit the request to GitHub API to apply they label to the pull request
+                Try {
+
+                    $Result = Invoke-WebRequest -UseBasicParsing -Uri $IssueLabelUrl -Body $Body -Headers $Headers -Method POST
+
+
+                } Catch {
+
+                }
+
+                # Send results back to calling statement as an array
+                $functionresult = @()
+                $Functionresult += $IssueLabelUrl
+                $functionresult += $error
+                $functionresult += $Result
+                $functionresult
+
+            }
+
+            #####################
+            #####################
+            # Main
+
+
+
+            Write-Host "Repo: $($GitHubData.event.repository.name)"
+            Write-Host "Sender: $($GitHubData.event.sender.login)"
+            Write-Host "Request type: $GitRequestEvent"
+            Write-Host "GitHub action: $($GitHubData.event.action)"
+
+            # Create general GitHub HTTP authentication header 
+            $GitHubHeaders = @{}
+            $GitHubHeaders.Add("Authorization","token $($AccessToken)")
+            $GitHubHeaders.Add("User-Agent", "OfficeDocs")
+            $GitHubHeaders.Add("Accept","application/vnd.github.mercy-preview+json")
+
+            # Create team read GitHub HTTP authentication header. Need a token that has access to org scope. GITHUB_TOKEN that 
+            # is used to populate $AccessToken doesn't have access to org scope so using a custom fine-grained token with limited member read scope.
+            $TeamReadGitHubHeaders = @{}
+            $TeamReadGitHubHeaders.Add("Authorization","token $($TeamReadAccessToken)")
+            $TeamReadGitHubHeaders.Add("User-Agent", "OfficeDocs")
+            $TeamReadGitHubHeaders.Add("Accept","application/vnd.github.mercy-preview+json")
+
+            # -and ($GitHubData.event.action -eq "opened")
+            # Only process event types of 'pull_request_target' that are 'opened' (PR created)
+            If (($GitRequestEvent -eq "pull_request_target") ) {
+
+                $Contributor = $GitHubData.event.sender.login
+                $LabelName = "Microsoft submitter"
+                $LabelColor = "0269ef"
+                $LabelDescription = ""
+                $LabelExists = $False
+
+                # Create the member URL to check
+                $ContributorTeamUrl = $OrgTeamUrl + $Contributor
+
+                Write-Host "Checking to see if $Contributor is a member of the MicrosoftDocs `"everyone`" team."
+
+                # Check to see if the contributor is a member of the MicrosoftDocs "everyone" team
+                $TeamResult = Invoke-RestMethod -Uri $ContributorTeamUrl -Headers $TeamReadGitHubHeaders
+
+                If ($TeamResult.state -eq "active") {
+
+                    Write-Host "Submitter is an active member of the MicrosoftDocs `"everyone`" team."
+
+                    # Check to see if the label exists in the repo
+                    If (Test-Label -Name $LabelName -RepoUri $GitHubData.event.repository.labels_url -Headers $GitHubHeaders) {
+
+                        Write-Host "$LabelName label exists."
+
+                        $LabelExists = $True
+
+                    } Else {
+                            
+                        Write-Host "$LabelName doesn't exist. Creating."
+
+                        Try {
+                            
+                            # Create the label because it doesn't exist in the repo
+                            $LabelResult = New-Label -Name $LabelName -Color $LabelColor -Description $LabelDescription -RepoUri $GitHubData.event.repository.labels_url -Headers $GitHubHeaders -ErrorAction Stop
+
+                        } Catch {
+
+                            $LabelExists = $False
+
+                        }
+
+                        # Check the result of the New-Label command to verify it was created successfully
+                        If ($($LabelResult.statusdescription) -eq "Created") {
+
+                            Write-Host "$LabelName created."
+                            $LabelExists = $True
+
+                        } Else {
+
+                            Write-Host "WARNING: $LabelName creation failed. Error: $($Error[0].Exception.Message)."
+
+                            $LabelExists = $False
+
+                        }
+
+                    }
+
+                    # Only attempt to apply the label if it exists in the repo
+                    If ($LabelExists) {
+
+                        Write-Host "Setting label on PR."
+
+                        
+                        $LabelUrl = $GitHubData.event.pull_request.issue_url
+
+                        Write-Host "Using pull request URL $LabelUrl."
+
+
+                        # Apply the label to the pull request
+                        Try {
+
+                            Set-Label -IssueUrl $LabelUrl -LabelName $LabelName -Headers $GitHubHeaders
+                        
+
+                        } Catch {
+
+                            Write-Host "ERROR: Error setting label. $($Error[0].ErrorDetails.Message)."
+                        }
+
+                            
+
+                    }
+
+
+                } Else {
+
+                    Write-Host "Submitter isn't an active member of the MicrosoftDocs `"everyone`" team."
+
+                }
+
+            } Else {
+
+                Write-Host "Not an opened pull request."
+
+            }
+
+        
