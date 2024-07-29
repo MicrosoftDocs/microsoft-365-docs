@@ -22,7 +22,7 @@ Once you back up your data, you might need to restore the data if there was an a
 
 As part of restoring data from backup, admin needs to choose a *restore point* manually or from a recommended *express restore point* by the tool.
 
-- **Restore point**. A prior point in time from which you can restore a healthy version of your content or metadata. If the data from a prior point in time is identical to the present state of your data, then there will be no items restored, including **Restore to a new folder** for Exchange Online.
+- **Restore point**. A prior point in time from which you can restore a healthy version of your content or metadata. For Exchange Online, if the data from a prior point in time is identical to the present state of your data, then there will be no items restored, including **Restore to a new folder**.
 
 - **Express restore point**. A set of recommended restore points that offers faster restore of data from the backup than a regular restore point.
 
