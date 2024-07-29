@@ -1,4 +1,4 @@
-name: Assign and label PR
+name: Auto label Microsoft contributors
 
 permissions:
   pull-requests: write
@@ -13,6 +13,7 @@ on:
 
 jobs:
     download-payload:
+        if: github.repository_visibility == 'public'
         name: Download and extract payload artifact
         uses: MicrosoftDocs/microsoft-365-docs/.github/workflows/Shared-ExtractPayload.yml@workflows-prod
         with:
@@ -21,18 +22,16 @@ jobs:
         secrets:
             AccessToken: ${{ secrets.GITHUB_TOKEN }}
 
-    label-assign:
-        name: Run assign and label
+    label-msft:
+        name: Label Microsoft contributors
+        if: github.repository_visibility == 'public'
         needs: [download-payload]
-        uses: MicrosoftDocs/microsoft-365-docs/.github/workflows/Shared-AutoLabelAssign.yml@workflows-prod
+        uses: MicrosoftDocs/microsoft-365-docs/.github/workflows/Shared-AutoLabelMsftContributor.yml@workflows-prod
         with:
-            PayloadJson: ${{ needs.download-payload.outputs.WorkflowPayload }}
-            AutoAssignUsers: 1
-            AutoLabel: 1
-            ExcludedUserList: '["user1", "user2"]'
-            ExcludedBranchList: '["branch1", "branch2"]'
+          PayloadJson: ${{ needs.download-payload.outputs.WorkflowPayload }}
         secrets:
-            AccessToken: ${{ secrets.GITHUB_TOKEN }}
+          AccessToken: ${{ secrets.GITHUB_TOKEN }}
+          TeamReadAccessToken: ${{ secrets.ORG_READTEAMS_TOKEN }}
             
             
         
