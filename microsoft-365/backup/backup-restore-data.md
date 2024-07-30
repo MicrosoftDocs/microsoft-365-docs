@@ -174,10 +174,6 @@ Follow these steps to restore data backed up for Exchange.
 
 1. Use this option to perform a full mailbox restore of all modified and deleted items. On the **Content scope** page, the **All emails, notes, contacts, calendars, and tasks** option will restore all modified or deleted emails, notes, contacts, and tasks, and calendar items for that user account to the specified time and date. Select **Next**.
 
-<!---
-1. Use this option to perform a full mailbox restore, On the **Content scope** page, the **All emails, notes, contacts, calendars, and tasks** option lets you restore all emails, notes, contacts, and tasks, and modified calendar items for that user account. Select the last known good (LKG) date and time from which you want to restore the content. Make sure that the time zone in the dropdown menu reflects your intention, and select **Next**.
---->
-
     ![Screenshot showing the Content scope page with the All emails, notes, contacts, calendars, and tasks option selected.](../media/m365-backup/backup-exchange-content-scope-all.png)
 
     For example, the last time the end user remembers seeing their mailbox in a "good state" was October 2, 2023 8:00 AM. However, on October 2, 2023 9:00 AM they saw all of their emails were encrypted (possible ransomware attack), choose the last known good time as October 2, 2023 8:00 AM.

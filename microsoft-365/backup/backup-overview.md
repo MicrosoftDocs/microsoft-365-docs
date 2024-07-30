@@ -38,17 +38,15 @@ In cases of a ransomware attack that encrypts large swaths of your data, or inst
 
 To summarize, applications built on top of the Microsoft 365 Backup Storage platform deliver the following benefits regardless of the size or scale of the protected tenant:
 
-- Fast backup within hours
+- Fast backup within hours.
 
-- Fast restore within hours (see [performance targets](#general-availability-performance-targets) later in this article)
+- Fast restore within hours (see [performance expectations](#performance-expectations) later in this article).
 
 - Full SharePoint site and OneDrive account restore fidelity, meaning the site and OneDrive are restored to their exact state (excluding, for example, taxonomy mastered outside the site scope) at specific prior points in time via a rollback operation.
-<!---
-- In the future, roll forward granular file-level restores in OneDrive and SharePoint
---->
+
 - Full Exchange mailbox item restores or granular item restores using search, for modified or deleted items.
 
-- Consolidated security and compliance domain management
+- Consolidated security and compliance domain management.
 
 ## Feature summary
 
