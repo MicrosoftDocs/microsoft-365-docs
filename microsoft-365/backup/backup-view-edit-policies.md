@@ -61,32 +61,6 @@ Follow these steps to set up a backup policy for OneDrive accounts using Microso
 
     c. Under **Select accounts individually**, you can search and select accounts you want to add to a backup policy.
 
-<!---
-6. On the **Protection scope** page, you can set up OneDrive user accounts using any or all three ways. A protection scope is the scope of user accounts within OneDrive that you want to protect with Microsoft 365 Backup.
-
-    ![Screenshot of the Protection scope page for OneDrive with the options highlighted.](../media/m365-backup/backup-protection-scope-onedrive.png)
-
-    a. Under **Add via search**, select **Choose accounts** to see user accounts that can be added via search. On the **Search and select accounts** panel, select the accounts you want to add to the policy.
-
-    ![Screenshot of the Search and select accounts panel on the Protection scope page for OneDrive.](../media/m365-backup/backup-protection-add-search-onedrive.png)
-
-    b. Under **Add via**, select **Distribution lists** or **Security groups**, or both. The distribution list and security group are flattened when added, meaning the policy won't update dynamically if the groups or distribution list are updated later.
-
-    ![Screenshot of the Add via Distribution lists and Security groups on the Protection scope page for OneDrive.](../media/m365-backup/backup-protection-add-dl-sg-onedrive.png)
-
-    The rule-based feature for bulk addition of sites via site names or URL in the backup policy creation workflow can accommodate a maximum of 10 keywords at a time. Each keyword can have a minimum of three characters and maximum of 255 characters.
-
-    The rule-based feature for bulk addition of user accounts via security groups or distribution lists can accommodate a maximum of three groups at a time. These rules are static and applied one time only. That is, the security groups or distribution lists are flattened at the time of adding to the backup configuration policy. For example. groups or list won't be dynamically updated in the system if users are added or removed from the original security group.
-
-    > [!NOTE]
-    > The site last modified feature is in preview.
-
-    c. Under **Import from file**, select **Upload CSV** to import user account details via CSV upload.
-
-    ![Screenshot of the Import from file section on the Protection scope page for OneDrive.](../media/m365-backup/backup-protection-import-file-onedrive.png)
-
-    The CSV upload feature for bulk addition of sites or user accounts in the backup policy creation workflow can accommodate a maximum of 50,000 entries per CSV file.
---->
 7. Once you've made the right selections, select **Next** to create the backup policy for OneDrive.
 
 8. On the **Review OneDrive backup policy** page, review the information to make sure it's how you want it, and then select **Create policy** (or **Update policy** if it's an update).
@@ -132,30 +106,6 @@ Follow these steps to set up a backup policy for SharePoint sites using Microsof
 
     c. Under **Select sites individually**, you can search and select sites you want to add to a backup policy.
 
-<!---
-6. On the **Protection scope** page, you can set up SharePoint sites by choosing to back up individual sites or collection of sites. A protection scope is the scope of sites within SharePoint that you want to protect with Microsoft 365 Backup.
-
-    ![Screenshot of the Protection scope page for SharePoint with the options highlighted.](../media/m365-backup/backup-protection-scope-sharepoint.png)
-
-    a. Under **Add via search**, select **Choose sites** to see the individual sites or site collections that can be added via search. On the **Search and select sites** panel, select the sites you want to add to the policy.
-
-    ![Screenshot of the Search and select sites panel on the Protection scope page for SharePoint.](../media/m365-backup/backup-protection-add-search-sharepoint.png)
-
-    b. Under **Add via**, select **Distribution lists** or **Security groups**, or both. The distribution list and security group are flattened when added, meaning the policy won't update dynamically if the groups or distribution list are updated later.
-
-    The rule-based feature for bulk addition of sites via site names or URL in the backup policy creation workflow can accommodate a maximum of 10 keywords at a time. Each keyword can have a minimum of three characters and maximum of 255 characters.
-
-    The rule-based feature for bulk addition of user accounts via security groups or distribution lists can accommodate a maximum of three groups at a time. These rules are static and applied one time only. That is, the security groups or distribution lists are flattened at the time of adding to the backup configuration policy. For example. groups or list won't be dynamically updated in the system if users are added or removed from the original security group.
-
-    > [!NOTE]
-    > The site last modified feature is in preview.
-
-    c. Under **Import from file**, select **Upload CSV** to import user account details via CSV upload.
-
-    ![Screenshot of the Import from file section on the Protection scope page for SharePoint.](../media/m365-backup/backup-protection-import-file-sharepoint.png)
-
-    The CSV upload feature for bulk addition of sites or user accounts in the backup policy creation workflow can accommodate a maximum of 50,000 entries per CSV file.
---->
 7. Once you've made the right selections, select **Next** to create the backup policy for SharePoint.
 
 8. On the **Review SharePoint backup policy** page, review the information to make sure it's how you want it, and then select **Create policy** (or **Update policy** if it's an update).
@@ -170,7 +120,7 @@ Follow these steps to set up a backup policy for SharePoint sites using Microsof
 
 # [Exchange](#tab/exchange)
 
-Follow these steps to set up a backup policy for Exchange mailboxes sites using Microsoft 365 Backup. Ensure that Microsoft 365 Backup is [enabled for your tenant](#step-2-turn-on-microsoft-365-backup).
+Follow these steps to set up a backup policy for Exchange mailboxes sites using Microsoft 365 Backup.
 
 1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home).
 
@@ -203,32 +153,6 @@ Follow these steps to set up a backup policy for Exchange mailboxes sites using 
 
     c. Under **Select mailboxes individually**, you can search and select mailboxes you want to add to a backup policy.
 
-<!---
-6. On the **Protection scope** page, choose the scope of protection for the mailbox policy. Microsoft 365 Backup for Exchange allows the addition of mailboxes in three ways.
-
-    ![Screenshot of the Protection scope page for Exchange.](../media/m365-backup/backup-protection-scope-exchange.png)
-
-    a. Under **Add via search**, select **Choose user mailboxes** to see the mailboxes that can be added via search. On the **Search and select mailboxes** panel, select the mailboxes you want to add to the policy.
-
-    ![Screenshot of the Search and select mailboxes panel on the Protection scope page for Exchange.](../media/m365-backup/backup-protection-add-search-exchange.png)
-
-    b. Under **Add via**, select **Distribution lists** or **Security groups**, or both. The distribution list and security group are flattened when added, meaning the policy won't update dynamically if the groups or distribution list are updated later.
-
-    ![Screenshot of the Add via Distribution lists and Security groups on the Protection scope page for Exchange.](../media/m365-backup/backup-protection-add-dl-sg-exchange.png)
-
-    The rule-based feature for bulk addition of sites via site names or URL in the backup policy creation workflow can accommodate a maximum of 10 keywords at a time. Each keyword can have a minimum of three characters and maximum of 255 characters.
-
-    The rule-based feature for bulk addition of user accounts via security groups or distribution lists can accommodate a maximum of three groups at a time. These rules are static and applied one time only. That is, the security groups or distribution lists are flattened at the time of adding to the backup configuration policy. For example. groups or list won't be dynamically updated in the system if users are added or removed from the original security group.
-
-    > [!NOTE]
-    > The site last modified feature is in preview.
-
-    c. Under **Import from file**, select **Upload CSV** to import user account details via CSV upload.
-
-    ![Screenshot of the Import from file section on the Protection scope page for Exchange.](../media/m365-backup/backup-protection-import-file-exchange.png)
-
-    The CSV upload feature for bulk addition of sites or user accounts in the backup policy creation workflow can accommodate a maximum of 50,000 entries per CSV file.
---->
 7. Once you've made the right selections, select **Next** to create the backup policy for Exchange.
 
 8. On the **Review Exchange backup policy** page, review the information to make sure it's how you want it, and then select **Create policy** (or **Update policy** if it's an update).
