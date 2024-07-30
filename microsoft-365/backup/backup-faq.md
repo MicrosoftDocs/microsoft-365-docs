@@ -38,7 +38,7 @@ Legal holds retain data, but that feature is optimized for export (for example, 
 
 #### What mailbox changes are "backed up"?
 
-Mailbox backup enables the recovery of copies of mailbox item “versions.” Two types of actions create versions:
+Mailbox backup enables the recovery of copies of mailbox item "versions." Two types of actions create versions:
 
 - Modifications
 - Deletions
