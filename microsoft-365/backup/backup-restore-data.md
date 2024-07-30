@@ -266,7 +266,7 @@ Microsoft 365 Backup supports the backup and restoration of any site and user ac
 
     - Megan then adds a user’s mailbox to the policy on February 1, 2025, at 11:00 AM PST. She will have the option of restoring modified or deleted items from that user's mailbox to any 10-minute period during the entire retention period.
 
-- Users whose Microsoft Entra ID has been delete will be displayed as blank lines in the restore picker experience for OneDrive and Exchange Online since those users no longer exist in the environment. Rest assured, their historical backups still exist in the Backup tool, but some [special handling is needed to restore them](backup-faq.md#what-is-the-service-recovery-point-objective).
+- Users whose Microsoft Entra ID has been deleted will be displayed as blank lines in the restore picker experience for OneDrive and Exchange Online since those users no longer exist in the environment. Rest assured, their historical backups still exist in the Backup tool, but some [special handling is needed to restore them](backup-faq.md#what-is-the-service-recovery-point-objective).
 
 - Mailbox draft items aren't backed up or restorable.
 
