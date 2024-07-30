@@ -57,22 +57,12 @@ landingContent:
             url: backup-offboarding.md
 
 # Card 4
-  - title: Microsoft 365 Backup Storage
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Overview
-            url: storage/backup-3p-overview.md
-          - text: Billing
-            url: storage/backup-3p-billing.md
-          - text: Application lifecycle
-            url: storage/backup-3p-lifecycle.md
-
-# Card 5
   - title: More solutions
     linkLists:
       - linkListType: overview
         links:
+          - text: Microsoft 365 Storage Backup for developers
+            url: storage/backup-3p-overview.md
           - text: Microsoft 365 Archive
             url: /microsoft-365/archive
           - text: SharePoint Advanced Management
