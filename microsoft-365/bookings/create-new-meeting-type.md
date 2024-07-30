@@ -23,6 +23,10 @@ description: Learn how to create a new meeting type in Microsoft Bookings.
 
 In this article, you'll learn about meeting types, public and private meetings, and how to create and edit meeting types.
 
+## Personal Bookings
+
+Personal bookings is how you manage your own appointment timeslots, it allows you to easily configure and share your availability with your customers, clients, or colleagues. You can be in charge of your own time and avoid the back and forth of scheduling. You can also set aside time for specific activities by creating meeting types. Once you create a personal booking page, you can share a link with anyone who can then see your availability and easily schedule a time when you're free and is convenient for them.
+
 ## Understanding meeting types
 
 There are several kinds of appointments that can be booked with you in Microsoft Bookings. For example, a 30-minute consultation, a 15 minute check-in, or a 60-minute coaching session. You can customize each meeting type with a name, description, duration, location, and availability. Once a meeting type is created and shared, people can book time with you in your preferred time slots.

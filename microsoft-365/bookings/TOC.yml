@@ -66,6 +66,10 @@
           href: set-language-time-zones.md
         - name: Customize and publish your booking page
           href: customize-booking-page.md
+        - name: Use the Shared Bookings Graph APIs
+          href: /graph/api/resources/booking-api-overview
+        - name: Reporting info for Shared Bookings
+          href: reporting-info.md  
   - name: Bookings for Microsoft 365 admins
     items:
     - name: Turn off your Personal Booking page
@@ -76,10 +80,6 @@
       href: granular-controls-shared-bookings.md     
     - name: Custom domain support in Shared Bookings
       href: custom-domain-support.md
-    - name: Use the Shared Bookings Graph APIs
-      href: /graph/api/resources/booking-api-overview
-    - name: Reporting info for Shared Bookings
-      href: reporting-info.md
     - name: Delete a shared booking page
       href: delete-calendar.md
     - name: Best practices for Shared Bookings

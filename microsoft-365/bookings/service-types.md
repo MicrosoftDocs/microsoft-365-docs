@@ -12,7 +12,6 @@ ms.collection:
 ms.custom: QuickDraft  
 ms.reviewer: kwekua  
 search.appverid: MET150  
-ai-usage: ai-assisted 
 description: "Learn how to create 1:N and N:N services in Microsoft 365 Business Basic using Microsoft Bookings." 
 ---
 
@@ -36,12 +35,22 @@ Microsoft Bookings is a powerful scheduling tool in Microsoft 365 Business Basic
 3. In the **Maximum number of attendees** field, set the desired number of customers who can join the appointment. The default value is 1, which creates a 1:1 service.
 4. Go to the **Assign staff** tab and select the radio button **Assign any of your selected staff for an appointment**. This ensures that only one staff member is assigned per booking, even if multiple staff members are available for the service.
 
+:::image type="content" source="media/booking-assign-one-staff.png" alt-text="Screenshot showing one staff member assigned for a service.":::
+
 ## Creating a N:N Service
+
+You can select the maximum number of attendees for a service. This decides the number of customers who can join the appointment. Once this step is complete, the service type (multi customer or single) cannot be edited further. The default value of **Maximum number of attendees** is set as 1. This means, by default, Microsoft Bookings creates 1:1 service.
+
+:::image type="content" source="media/booking-basic-details.png" alt-text="Screenshot showing the maximum number of attendees selected for a service.":::
+
+To create a N:N service, follow these steps:
 
 1. On the Bookings page, select **Services** from the left-hand menu.
 2. Select **Add a service**.
-3. In the **Maximum number of attendees** field, set the desired number of customers who can join the appointment. The default value is 1, which creates a 1:1 service.
+3. In the **Maximum number of attendees** field, set the desired number of customers who can join the appointment.
 4. Go to the **Assign staff** tab and select the radio button **Assign all of your selected staff for an appointment**. This ensures that all selected staff members are assigned to the appointment.
+
+:::image type="content" source="media/booking-assign-staff-group.png" alt-text="Screenshot showing multiple staff members selected for a service.":::
 
 Complete the rest of the service details, such as name, description, location, duration, price, and availability, then select **Save**.
 

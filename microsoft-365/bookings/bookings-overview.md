@@ -52,7 +52,26 @@ All Bookings data is stored within the Microsoft 365 platform and in Exchange On
 Microsoft Bookings is available in the following subscriptions:  
 
 Office 365: A3, A5, E1, E3, E5, F1, F3, G1, G3, and G5  
-Microsoft 365: A3, A5, E1, E3, E5, F1, F3, Business Basic, Business Standard, Business Premium, Teams Essentials, Teams Premium  
+Microsoft 365: A3, A5, E1, E3, E5, F1, F3, Business Basic, Business Standard, Business Premium, Teams Essentials, Teams Premium
+
+## Accessing Microsoft Bookings
+
+Here are the different ways you can access Bookings:
+
+Via web
+- Web Access: Users can easily access Microsoft Bookings through the web by clicking on the following link: [book.ms](https://book.ms).
+
+Via Outlook and Teams
+- Outlook and Teams Integration: Microsoft Bookings can also be accessed directly within Outlook and Microsoft Teams. Users can add the Bookings app to the left rail for convenient access:
+
+  1. Open Outlook or Microsoft Teams.
+  2. Navigate to the left rail.
+  3. Select the Apps icon.
+  4. Search for Microsoft Bookings.
+  5. Select **Add** to integrate it into your Outlook or Teams interface.
+  6. Pin the app to the left rail for easy and quick access.
+
+By providing multiple access points and integrating seamlessly with other Microsoft tools, Microsoft Bookings ensures a versatile and user-friendly scheduling solution for businesses of all sizes.  
 
 ## Next steps
 

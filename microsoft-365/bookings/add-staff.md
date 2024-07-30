@@ -39,7 +39,7 @@ Although Bookings is a feature of Microsoft 365, not all of your staff members a
     > [!NOTE]
     > To add staff from outside of your organization, manually fill in their email and other information. Staff from outside your tenant will not be able to share free/busy information with Bookings.
 
-4. For each staff member, select a role: Team member, Scheduler, Viewer, or Guest.
+4. For each staff member, select a role: Team member, Scheduler, Viewer, or Guest. To learn more about staff roles, see [Understanding staff roles](staff-roles.md).
 
 5. Select **Notify all staff via email when a booking assigned to them is created or changed** to enable staff emails. The following is an example email:
 

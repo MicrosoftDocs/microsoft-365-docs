@@ -12,12 +12,14 @@ ms.collection:
 - Tier1
 - scotvorg
 - essentials-manage
-description: "Understand and implement best practices for using Shared Bookings features."
+description: "Understand and implement best practices for using Shared Booking features."
 ---
 
-# Use a custom domain for booking pages
+# Best practices for using Shared Booking
 
 Microsoft Bookings allows you to create and manage online appointments with your customers. By setting up multiple booking pages, offering different services, and assigning staff members, you can optimize your scheduling process. In this article, we'll cover best practices for using Bookings to help you get the most out of Shared Bookings.
+
+## Use a custom domain for booking pages
 
 By default, shared booking pages have a domain name in this format: "@.onmicrosoft.com". Domain admins can change the domain name to match their organization's name, creating a more professional and consistent brand for customers. For example, you can use "@bookings.contoso.com" instead.
 

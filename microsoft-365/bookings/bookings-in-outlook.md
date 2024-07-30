@@ -3,7 +3,7 @@ title: "Turn your Personal Bookings page on or off"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 06/05/2024
+ms.date: 07/22/2024
 audience: Admin
 ms.topic: how-to
 ms.service: bookings
@@ -15,7 +15,7 @@ ms.collection:
 - essentials-get-started
 - essentials-manage
 - must-keep
-description: "Steps to turn your Personal Bookings page on or off"
+description: "Steps to turn your Personal Bookings page on or off."
 ---
 
 # Turn your Personal Bookings page on or off

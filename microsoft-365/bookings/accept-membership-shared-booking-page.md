@@ -8,30 +8,19 @@ audience: Admin
 ms.topic: how-to
 ms.service: bookings
 ms.localizationpriority: medium
-ms.custom: QuickDraft
 ms.collection:
 - scotvorg
 - essentials-manage
-ai-usage: ai-assisted
 description: "Learn how staff can accept membership when they're added to a Shared Booking page."
 ---
 
 # Accept membership to a shared booking page
 
-As an admin, you want to know how staff can accept membership when they're added to a Shared Booking page.
+When a staff member is added to a shared booking page by the owner or another staff member, they will receive an email invitation from Microsoft Bookings. The email will include a link to join the shared booking page and accept the membership. The staff member can select the link to open the Bookings and see the details of the shared booking page.
 
-## Email invitation
+Alternatively, the staff member can access the shared booking page from the Bookings homepage, where they can see the shared booking pages they have been invited to and accept or decline the invitations. If they have not already accepted or declined the membership request, they will see a pop-up requesting membership details of the shared booking pages they have been invited to.
 
-When a staff member is added to a Shared Booking page by the owner or another staff member, they receive an email invitation from Microsoft Bookings. The email includes a link to join the shared booking page. Once the staff member accepts the invite to join the shared booking page, they can select the link to open the Bookings app in Microsoft 365 and see the details of the Shared Booking page.
-
-## Accepting membership through Microsoft 365
-
-Alternatively, the staff member can access the Shared Booking page from the Bookings app in Microsoft 365.
-
-1. Sign in to Microsoft 365 with their work or school account.
-2. Go to the **Bookings** app.
-3. Locate the shared booking pages staff has been invited to.
-4. Select the Shared Booking page and choose **Accept** to accept the membership.
+They can then select the shared booking page they want to join and select the Accept button to accept the membership.
 
 A shared booking page can have three states:
 
@@ -41,8 +30,7 @@ A shared booking page can have three states:
 
 :::image type="content" source="media/bookings-decline.png" alt-text="Screenshot showing how a staff member isn't accepting bookings for a service." lightbox="media/bookings-decline.png":::
 
-For more information on adding staff, see [Add staff to Bookings](add-staff.md).
+>[!NOTE]
+> A staff member is synonymous with a team member.
 
-## Requirements for accepting membership
-
-To accept the membership, the staff member needs to have a Microsoft 365 account with a license that includes Bookings. If the staff member doesn't have a Microsoft 365 account or a license for Bookings, they won't be able to join the Shared Booking page. They need to contact the owner or another staff member of the Shared Booking page to request a Microsoft 365 account or a license that includes Bookings.
+Upon setting up a shared booking page for your enterprise and including your team members, an automated email will be sent to them to confirm their membership. You can share the above steps with your team so that they can get quickly started with the business. 

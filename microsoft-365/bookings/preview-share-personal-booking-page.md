@@ -13,9 +13,6 @@ ms.collection:
 - essentials-overview
 - essentials-get-started
 - essentials-manage
-ms.custom: QuickDraft
-AI_Usage:  
-- AI-Assisted
 description: Preview and share your personal booking page with clients and customers with Microsoft Bookings.
 ---
 
