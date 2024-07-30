@@ -61,7 +61,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Microsoft 365 Storage Backup for developers
+          - text: Microsoft 365 Backup Storage for developers
             url: storage/backup-3p-overview.md
           - text: Microsoft 365 Archive
             url: /microsoft-365/archive
