@@ -1,15 +1,15 @@
 ---
-ms.date: 08/21/2023
+ms.date: 06/14/2024
 title: "Manage Loop workspaces in SharePoint Embedded"
 ms.reviewer: dancost, tonchan
-ms.author: v-smandalika
-author: v-smandalika
-manager: dansimp
+ms.author: jenz
+author: jenzamora
+manager: jtremper
 recommendations: true
 audience: Admin
 f1.keywords:
 - NOCSH
-ms.service: sharepoint-online
+ms.service: loop
 ms.localizationpriority: medium
 ms.topic: how-to
 ms.collection:
@@ -60,7 +60,7 @@ As described in this topic, you can control the ability for users in your enviro
 
 If configured to Disabled, the settings in this article will prevent creation of new Loop files. However, when Disabled, there are still a few places that Loop experiences can appear.
 
-Because Loop app creates files in SharePoint Embedded, files and workspaces that were created before IT admins disable new creation can still appear in places such as Microsoft365.com, the Loop component viewer and editor (loop.microsoft.com), and links to Loop components shared in messages or documents. The files themselves are not removed and access to these files is determined by the permissions set on them. Therefore, someone with edit access to a Loop file can still open it and edit it after you have disabled creation of new Loop files. This would be similar to a txt file or any other file in OneDrive or SharePoint.
+Because Loop app creates files in SharePoint Embedded, files and workspaces that were created before IT admins disable new creation can still appear in places such as Microsoft365.com, the Loop component viewer and editor (loop.microsoft.com), and links to Loop components shared in messages or documents. The files themselves aren't removed and access to these files is determined by the permissions set on them. Therefore, someone with edit access to a Loop file can still open it and edit it after you have disabled creation of new Loop files. This would be similar to a txt file or any other file in OneDrive or SharePoint.
 
 In addition, because there are no separate licensing requirements for the Loop component viewer and editor, only the requirement that users have access to OneDrive, users will still be able to access the Loop component viewer and editor by visiting loop.microsoft.com and via Loop in the All apps view in Microsoft365.com. The presence of the Loop app in the All apps view is dependent on the user having a license to OneDrive; if you wish to prevent users from seeing the Loop app, you can disable their access to OneDrive, or configure a conditional access policy for loop.microsoft.com so that visits to the page fail to load.
 
@@ -72,7 +72,9 @@ You can learn more about [Loop storage](/microsoft-365/loop/loop-compliance-summ
 
 If you're looking for a simple way to turn on or off the creation of content in Loop workspaces in your tenant, do the following:
 
-1. Sign in to the Microsoft 365 admin center as a Global Administrator.
+1. Sign in to the Microsoft 365 admin center as Office Apps Administrator, Security Administrator, or Global Administrator.
+    > [!IMPORTANT]
+    > Microsoft recommends that you use roles with the fewest permissions. This helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
 1. Navigate to [Home > Org settings > Services > Loop](https://admin.microsoft.com/Adminportal/Home#/Settings/Services/:/Settings/L1/Loop).
 1. Choose your desired state for Loop workspaces via the checkbox.
     > [!NOTE]

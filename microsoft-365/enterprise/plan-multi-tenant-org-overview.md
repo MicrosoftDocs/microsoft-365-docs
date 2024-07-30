@@ -3,7 +3,7 @@ title: Plan for multitenant organizations in Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 08/17/2023
+ms.date: 06/24/2024
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -19,11 +19,13 @@ description: Learn how to plan for multitenant organizations in Microsoft 365.
 # Plan for multitenant organizations in Microsoft 365
 
 > [!NOTE]
-> Multitenant organizations is not available in Microsoft 365 GCC, GCC High, DoD, or Microsoft 365 China (operated by 21Vianet).
-
+> Multitenant organizations is not available in Microsoft 365 China (operated by 21Vianet).
 If your organization manages multiple Microsoft 365 tenants, you can set up a multitenant organization in Microsoft 365 to facilitate collaboration and resource access between tenants. Creating a multitenant organization and synchronizing users between tenants provides a more seamless collaboration experience between the users in different tenants when [searching for each other](/microsoft-365/enterprise/multi-tenant-people-search), using Microsoft Teams and meetings, and collaborating on files.
 
 The tenant that creates the multitenant organization is known as the *owner* while other tenants that join the multitenant organization are known as *members*. Once the global administrator in the owner tenant creates the multitenant organization, they can invite member tenants. A global administrator in each member tenant can then join the multitenant organization.
+
+> [!IMPORTANT]
+> Microsoft recommends that you use roles with the fewest permissions. Using lower permissioned accounts helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
 
 While you configure Microsoft 365 multitenant organizations in the Microsoft 365 admin center, much of the supporting infrastructure is in Microsoft Entra ID. For details about how multitenant organizations work in Microsoft Entra ID, see [What is a multitenant organization in Microsoft Entra ID?](/azure/active-directory/multi-tenant-organizations/multi-tenant-organization-overview) and [Topologies for cross-tenant synchronization](/azure/active-directory/multi-tenant-organizations/cross-tenant-synchronization-topology).
 
@@ -80,7 +82,7 @@ External access is required for chats and calls between tenants. External access
 Using [shared channels in Teams](/microsoftteams/shared-channels) with other tenants in a multitenant organization works the same as using shared channels with any other external organization. While the organizational relationship in Microsoft Entra ID is configured as part of multitenant organization configuration, you must still enable shared channels in Teams and configure the B2B direct connect settings in Microsoft Entra ID. For details, see [Collaborate with external participants in a shared channel](/microsoft-365/solutions/collaborate-teams-direct-connect).
 
 ## License requirements
-Use of the multitenant organization feature requires Microsoft 365 E3 or E5 subscriptions and Microsoft Entra ID P1 licenses or above in all multitenant organization tenants. For additional details, see [Entra multitenant organization licensing requirements](/entra/identity/multi-tenant-organizations/multi-tenant-organization-overview#license-requirements). If you plan on utilizing [Entra cross-tenant sync](/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-overview) via the Microsoft 365 admin center or Microsoft Entra ID, also see [Entra cross-tenant sync licensing requirements](/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-overview#license-requirements).
+Use of the multitenant organization feature requires Microsoft Entra ID P1 licenses or above in all multitenant organization tenants. For additional details, see [Entra multitenant organization licensing requirements](/entra/identity/multi-tenant-organizations/multi-tenant-organization-overview#license-requirements). If you plan on utilizing [Entra cross-tenant sync](/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-overview) via the Microsoft 365 admin center or Microsoft Entra ID, also see [Entra cross-tenant sync licensing requirements](/entra/identity/multi-tenant-organizations/cross-tenant-synchronization-overview#license-requirements).
 
 ## Limitations for multitenant organizations in Microsoft 365
 
