@@ -24,7 +24,7 @@ The Microsoft 365 Backup service, offered through the Microsoft 365 admin center
 
 ### What’s counted towards protected backup storage?
 
-Microsoft 365 Backup will charge you based on the size of the following content for 365 days from the time is added to backup protection:
+Microsoft 365 Backup will charge you based on the size of the following content for 365 days from the time it is added to backup protection:
 
 - Cumulative back up size of the mailboxes, SharePoint sites, and OneDrive accounts being protected. Size of OneDrive accounts and SharePoint sites are the size of the live OneDrive accounts and SharePoint sites as displayed in the live sites’ usage reports. Mailboxes are the size of the user's mailbox plus their online archives plus deleted items held for backup.
 
