@@ -54,7 +54,7 @@ Select the **OneDrive**, **SharePoint**, or **Exchange** tab for steps to restor
 # [OneDrive](#tab/onedrive)
 
 > [!NOTE]
-> We recommend choosing an express restore point for full account or site, restores as it will provide the fastest restore experience. Express restore is currently only relevant for SharePoint and OneDrive.
+> We recommend choosing an express restore point for full account or site restores, as it will provide the fastest restore experience. Express restore is currently only relevant for SharePoint and OneDrive.
 
 Follow these steps to restore data backed up for OneDrive.
 
@@ -105,7 +105,7 @@ Follow these steps to restore data backed up for OneDrive.
 # [SharePoint](#tab/sharepoint)
 
 > [!NOTE]
-> We recommend choosing an express restore point for full account or site, restores as it will provide the fastest restore experience. Express restore is currently only relevant for SharePoint and OneDrive.
+> We recommend choosing an express restore point for full account or site restores, as it will provide the fastest restore experience. Express restore is currently only relevant for SharePoint and OneDrive.
 
 Follow these steps to restore data backed up for SharePoint.
 
@@ -278,13 +278,13 @@ Microsoft 365 Backup supports the backup and restoration of any site and user ac
 - To restore a OneDrive account and Exchange mailbox for a user who is deleted from Microsoft Entra ID, use this instruction:  
 
     > [!NOTE]
-    > Within 30 days of deletion, deleted users will appear as "–" in the user interface because the user does not exist in the tenancy. However, the backups and associated restore points will be retained for the full 365-day retention period from when a given restore point was originally created.
+    > Deleted users will appear as "–" in the user interface because the user does not exist in the tenancy. However, the backups and associated restore points will be retained for the full 365-day retention period from when a given restore point was originally created.
 
-    For OneDrive, if within 30 days of being deleted, you can restore the OneDrive to the original URL or a new URL. At that time, the OneDrive is in an "orphaned" state. To connect the OneDrive to a user, see [Fix site user ID mismatch in SharePoint or OneDrive](/sharepoint/troubleshoot/sharing-and-permissions/fix-site-user-id-mismatch).
+    If the user has been deleted within the past 30 days, the best option is to restore the user based on instructions found at [Restore a user in the Microsoft 365 admin center](/microsoft-365/admin/add-users/restore-user). Once the user is reconstituted, the name will reappear in the Backup tool restore experience, and the rest of the experience will work as normal.
 
-    For Exchange, a user account will be in a soft-deleted state for 30 days after it's deleted. To restore the user, see [Restore a user in the Microsoft 365 admin center](/microsoft-365/admin/add-users/restore-user). Once you restore the user, you can use the restore feature in Microsoft 365 Backup to restore as usual.
+    For OneDrive, you can restore the OneDrive to the original URL or a new URL. At that time, the OneDrive is in an "orphaned" state. To connect the OneDrive to a user, see [Fix site user ID mismatch in SharePoint or OneDrive](/sharepoint/troubleshoot/sharing-and-permissions/fix-site-user-id-mismatch).
 
-    For Exchange, if the user account is permanently deleted, Microsoft 365 Backup retains the inactive mailbox for the duration of the backup policy. To recover and restore the inactive mailbox, see the following guidance:
+    For Exchange, if the user account is currently or permanently deleted, Microsoft 365 Backup retains the inactive mailbox for the duration of the backup policy. To recover and restore the inactive mailbox, see the following guidance:
 
     - [Recover an inactive mailbox](/purview/recover-an-inactive-mailbox)
     - [Restore an inactive mailbox](/purview/restore-an-inactive-mailbox)
