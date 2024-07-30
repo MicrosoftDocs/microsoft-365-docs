@@ -1,25 +1,25 @@
 ---
-title: Overview of Microsoft 365 Archive (Preview)
+title: Overview of Microsoft 365 Archive
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 04/11/2024
+ms.date: 04/30/2024
 ms.topic: conceptual
 ms.service: microsoft-365-archive
 ms.custom: archive
 search.appverid:
 ms.collection:
-    - m365initiative-syntex
+    - essentials-overview
 ms.localizationpriority:  medium
 description: Learn about how Microsoft 365 Archive can provide your with organization cost-effective storage solutions.
 ---
 
-# Overview of Microsoft 365 Archive (Preview)
+# Overview of Microsoft 365 Archive
 
 > [!NOTE]
-> This feature is currently in preview and subject to change. The feature is currently rolling out and might not yet be fully available to all organizations. Before you begin, read the [Microsoft 365 Archive preview terms and conditions](archive-preview-terms.md).
+> This feature is now generally available. It is currently rolling out and might not yet be fully available to all organizations.
 
 Microsoft 365 Archive offers cost-effective storage for inactive SharePoint sites.
 
@@ -37,7 +37,9 @@ Some additional advantages of using Microsoft 365 Archive are:
 
 - **Decluttering** – Explicit separation between active and inactive content to help you manage your site's lifecycle.
 
-Microsoft 365 Archive, coupled with the Microsoft 365 search index and the [Microsoft Purview](/purview/purview) feature set, provides a powerful combination for your long-term data management needs at a price point that matches the lifecycle of your content. Microsoft 365 Archive is controlled in the SharePoint admin center by global or SharePoint admins.
+Microsoft 365 Archive, coupled with the Microsoft 365 search index and the [Microsoft Purview](/purview/purview) feature set, provides a powerful combination for your long-term data management needs at a price point that matches the lifecycle of your content. Microsoft 365 Archive is controlled in the SharePoint admin center by [SharePoint Administrators](/entra/identity/role-based-access-control/permissions-reference#sharepoint-administrator) or [Global Administrators](/entra/identity/role-based-access-control/permissions-reference#global-administrator).
+
+[!INCLUDE [global-administrator-note](../includes/global-administrator-note.md)]
 
 When a site is archived, it goes into an explicitly colder tier, no longer consumes a tenant’s active storage quota, and instead drives Microsoft 365 Archive storage consumption. Being in this colder tier means the site is no longer accessible by anyone in the organization outside of Microsoft Purview or admin search.
 
@@ -46,11 +48,13 @@ Archiving a site archives everything within it, including:
 - Document libraries and files
 - Lists and list data
 
-> [!NOTE]
-> Microsoft 365 Archive (Preview) is currently rolling out. More features will be rolled out as they become available.
-
 Administrators should notify the site owners and end users before a site is archived so they're aware that the site won't be accessible.
 
+## Limitations
+
+Document Center templates are not available to archive with Microsoft 365 Archive.
+
+<!---
 ## Preview limitations
 
 > [!NOTE]
@@ -71,3 +75,4 @@ Administrators should notify the site owners and end users before a site is arch
 - Archiving a site that is currently enrolled in Microsoft 365 Backup will be blocked.
 
 - If you archive a site that has a library syncing to a device, that device's sync client will display errors after the site is archived. We recommend that you remove syncing libraries before archiving a site.
+--->

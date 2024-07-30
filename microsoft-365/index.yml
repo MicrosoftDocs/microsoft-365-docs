@@ -26,10 +26,6 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
     # Card
-    - title: Join us at the Microsoft 365 Community Conference April 30 - May 2
-      itemType: whats-new
-      url: https://www.m365conf.com/#!/?wt.mc_id=m365conf_docs_webpage_mwmktg
-    # Card
     - title: Copilot for Microsoft 365
       itemType: get-started
       url: /copilot/microsoft-365/
@@ -70,7 +66,7 @@ conceptualContent:
               text: Microsoft 365 for frontline workers
             - url: archive/index.yml
               itemType: overview
-              text: Microsoft 365 Archive (Preview)
+              text: Microsoft 365 Archive
             - url: backup/index.yml
               itemType: overview
               text: Microsoft 365 Backup (Preview)
@@ -113,18 +109,18 @@ conceptualContent:
         # Card
         - title: Microsoft 365 Apps and Office
           links:
-            - url: /DeployOffice/plan-microsoft-365-apps
+            - url: /microsoft-365-apps/deploy/plan-microsoft-365-apps
               itemType: get-started
               text: Microsoft 365 Apps
-            - url: /DeployOffice/mac
+            - url: /microsoft-365-apps/mac/deployment-guide-for-office-for-mac
               itemType: how-to-guide
               text: Office for Mac
-            - url: /DeployOffice/ltsc2021/overview
+            - url: /office/ltsc/2021/overview
               itemType: overview
               text: Office LTSC 2021
           # footerLink (optional)
           footerLink:
-            url: /DeployOffice
+            url: /microsoft-365-apps
             text: See more
         # Card
         - title: Solutions for your business

@@ -6,12 +6,12 @@ author: siosulli
 manager: deniseb
 audience: Admin
 ms.topic: conceptual
-ms.service: microsoft-365-business
-ms.date: 10/26/2023
+ms.service: microsoft-365-business-security
+ms.date: 05/31/2024
 ms.localizationpriority: medium
 ms.collection:
 - m365-security
-- tier1
+- tier2
 search.appverid: MET150
 description: "Learn how to review and manage threats detected by Microsoft Defender Antivirus on your Windows devices."
 ---
@@ -61,7 +61,7 @@ When you view details about specific threats or devices, you see recommendations
 
 You can use Microsoft Intune to manage threat detections as well. First, all devices whether Windows, iOS or Android, must be [enrolled in Intune](/mem/intune/enrollment/windows-enrollment-methods).
 
-1. Go to the Microsoft Intune admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2150463" target="_blank">https://endpoint.microsoft.com</a> and sign in.
+1. Go to the Microsoft Intune admin center at <https://endpoint.microsoft.com> and sign in.
 
 2. In the navigation pane, select **Endpoint security**.
 
@@ -86,7 +86,7 @@ The following table describes the actions you might see in Microsoft Intune.<br>
 
 ## How to submit a file for malware analysis
 
-If you have a file that you think was missed or wrongly classified as malware, you can submit that file to Microsoft for malware analysis. Users and IT admins can submit a file for analysis. Visit [https://www.microsoft.com/wdsi/filesubmission](https://www.microsoft.com/wdsi/filesubmission).
+If you have a file that you think was missed or wrongly classified as malware, you can submit that file to Microsoft for malware analysis. Users and IT admins can submit a file for analysis. Visit <https://www.microsoft.com/wdsi/filesubmission>.
 
 ## See also
 

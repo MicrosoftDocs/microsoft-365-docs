@@ -8,6 +8,7 @@ ms.date: 10/10/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
+ms.subservice: network
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -25,7 +26,7 @@ description: "Special considerations for Stream and Teams events in VPN environm
 # Special considerations for Stream and Teams events in VPN environments
 
 > [!NOTE]
->This article is part of a set of articles that address Microsoft 365 optimization for remote users.
+>This article is part of a set of articles that address Microsoft 365 optimization for remote users. The following endpoints are specific to Worldwide Commercial and Government Community Cloud (GCC) environments; the endpoints listed here are not applicable to U.S. Government GCC High or U.S. Government DoD environments.
 >
 >- For an overview of using VPN split tunneling to optimize Microsoft 365 connectivity for remote users, see [Overview: VPN split tunneling for Microsoft 365](microsoft-365-vpn-split-tunnel.md).
 >- For detailed guidance on implementing VPN split tunneling, see [Implementing VPN split tunneling for Microsoft 365](microsoft-365-vpn-implement-split-tunnel.md).

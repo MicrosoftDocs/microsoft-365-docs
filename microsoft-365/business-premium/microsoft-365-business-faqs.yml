@@ -8,11 +8,11 @@ metadata:
   ms.author: chrisda
   manager: deniseb
   ms.topic: how-to
-  ms.service: microsoft-365-business
+  ms.service: microsoft-365-business-security
   ms.collection:
-  - tier1
+  - tier2
   - m365-security
-  ms.date: 10/26/2023
+  ms.date: 05/31/2024
   ms.localizationpriority: medium
   audience: microsoft-business
   keywords: Microsoft 365 Business Premium, Microsoft 365, SMB, FAQ, frequently asked questions, answers, business
@@ -153,11 +153,11 @@ sections:
     questions:
       - question: Where can I learn more about the opportunities and benefits in becoming a Microsoft Partner?
         answer: |
-          IT service providers that are not already Microsoft partners can learn more about the Microsoft Cloud Solution Provider program [https://partner.microsoft.com/membership/cloud-solution-provider](https://partner.microsoft.com/membership/cloud-solution-provider).
+          IT service providers that are not already Microsoft partners can learn more about the Microsoft Cloud Solution Provider program <https://partner.microsoft.com/membership/cloud-solution-provider>.
 
       - question: Where can I learn how to sell Microsoft 365 Business Premium?
         answer: |
-          Partners now selling Office 365 can use the same consultative selling methods to sell Microsoft 365 Business Premium. In addition, we are introducing more resources and training for your sales team to understand the customers' existing desktop environment, Active Directory reliance, mobility, and security needs to effectively communicate the full value of Microsoft 365 Business Premium in a way that is relevant to the customer. Find these resources at the Microsoft Partner portal ([https://www.microsoft.com/microsoft-365/partners](https://www.microsoft.com/microsoft-365/partners)).
+          Partners now selling Office 365 can use the same consultative selling methods to sell Microsoft 365 Business Premium. In addition, we are introducing more resources and training for your sales team to understand the customers' existing desktop environment, Active Directory reliance, mobility, and security needs to effectively communicate the full value of Microsoft 365 Business Premium in a way that is relevant to the customer. Find these resources at the Microsoft Partner portal (<https://www.microsoft.com/microsoft-365/partners>).
 
       - question: Some of my customers have devices that aren't genuine; will Microsoft 365 Business Premium make these devices genuine?
         answer: |

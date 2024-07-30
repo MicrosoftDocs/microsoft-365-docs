@@ -1,7 +1,7 @@
 ---
-ms.date: 11/15/2021
+ms.date: 01/01/2024
 title: Security trimming in Topics
-ms.author: cjtan
+ms.author: daisyfeller
 author: daisyfell
 manager: elizapo
 ms.reviewer: daisyfeller

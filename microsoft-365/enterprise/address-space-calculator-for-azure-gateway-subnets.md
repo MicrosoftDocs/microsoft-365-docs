@@ -3,14 +3,16 @@ title: "Address space calculator for Azure gateway subnets"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 01/07/2021
+ms.date: 06/27/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
+ms.subservice: network
 ms.localizationpriority: medium
 ms.collection: 
 - scotvorg
 - Ent_O365
+- must-keep
 f1.keywords:
 - CSH
 ms.custom: 
@@ -143,7 +145,6 @@ gwAddrPref= "Your gateway address prefix is: " + str(w2) + "." + str(x2) + "." +
 print(gwAddrPref) 
 ```
 
-
 ## PowerShell command block
 
 Fill in the values and run the resulting command block in a PowerShell window or in the PowerShell Integrated Script Environment (ISE).
@@ -173,7 +174,7 @@ $z2 = $D - $w2 * $wOctet - $x2 * $xOctet - $y2 * $yOctet
 $dx= [string]$w2 + "." + [string]$x2 + "." + [string]$y2 + "." + [string]$z2 + "/" + [string]$g 
 Write-Host "Your gateway address prefix is: " $dx
 ```
-    
+
 ## Related topics
 
 [Manage Microsoft 365 with PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)

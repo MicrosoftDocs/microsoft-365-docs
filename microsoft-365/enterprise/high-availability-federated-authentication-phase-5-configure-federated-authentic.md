@@ -7,6 +7,7 @@ ms.date: 04/10/2024
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 ms.collection: 
 - scotvorg
@@ -85,7 +86,7 @@ The Microsoft Entra Connect tool configures the AD FS servers, the web applicati
     
 7. On the **User sign-in** page, click **Federation with AD FS**, and then click **Next**.
     
-8. On the **Connect to Microsoft Entra ID** page, type the name and password of a **Microsoft Entra DC admin**, or **Global admin** account for your Microsoft 365 subscription, and then click **Next**.
+8. On the **Connect to Microsoft Entra ID** page, type the name and password of a **Microsoft Entra DC admin** account for your Microsoft 365 subscription, and then click **Next**.
     
 9. On the **Connect your directories** page, ensure that your on-premises Active Directory Domain Services (AD DS) forest is selected in **Forest**, type the name and password of a domain administrator account, click **Add Directory**, and then click **Next**.
     

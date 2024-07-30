@@ -33,7 +33,7 @@ If you're using Basic Mobility and Security, there might be devices that you can
 
 Use these steps:
 
-1. Sign in to Microsoft 365 with your global admin account.
+1. Sign in to Microsoft 365 with a [Compliance administrator](/entra/identity/role-based-access-control/permissions-reference) account.
 
 2. In your browser, type: <https://compliance.microsoft.com/basicmobilityandsecurity>.
 
@@ -106,7 +106,7 @@ To run the Get-GraphUserDeviceComplianceStatus.ps1 script, you need to enable th
    Set-ExecutionPolicy RemoteSigned
    ```
 
-3. When prompted, type Y and then press Enter.
+1. When prompted, type **Y** and then press Enter.
 
 #### Run the Get-MgDevice cmdlet to display details for all devices in your organization
 

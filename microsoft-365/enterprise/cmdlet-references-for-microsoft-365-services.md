@@ -3,14 +3,16 @@ title: "Cmdlet references for Microsoft 365 services"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 07/16/2020
+ms.date: 06/27/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 ms.collection: 
 - scotvorg
 - Ent_O365
+- must-keep
 f1.keywords:
 - CSH
 ms.custom:
@@ -19,7 +21,7 @@ ms.custom:
   - has-azure-ad-ps-ref
   - azure-ad-ref-level-one-done
 ms.assetid: 3a1ea1a6-edbd-4922-9ad3-0b075f7f9009
-description: Find Microsoft 365 PowerShell cmdlet references for Microsoft Entra ID, Exchange Online, SharePoint Online, Skype for Business Online, and Security & Compliance.
+description: Find Microsoft 365 PowerShell cmdlet references for Microsoft Graph, Exchange Online, SharePoint Online, Skype for Business Online, and Security & Compliance.
 ---
 
 # Cmdlet references for Microsoft 365 services

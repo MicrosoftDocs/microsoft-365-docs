@@ -7,14 +7,14 @@ author: siosulli
 manager: deniseb
 audience: Admin
 ms.topic: overview
-ms.service: microsoft-365-business
-ms.date: 11/02/2023
+ms.service: microsoft-365-business-security
+ms.date: 05/31/2024
 ms.localizationpriority: medium
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
 - m365-security
-- tier1
+- tier2
 ms.custom:
 - MiniMaven
 search.appverid:
@@ -25,7 +25,7 @@ description: "Learn how to secure managed devices from security threats and cybe
 
 # Secure managed devices with Microsoft 365 Business Premium
 
-:::image type="content" source="media/mission6.png" alt-text="Diagram with Set Up and Secure Managed Devices highlighted.":::
+:::image type="content" source="media/mission6.png" alt-text="Diagram with Set Up and Secure Managed Devices highlighted." lightbox="media/mission6.png":::
 
 Microsoft 365 Business Premium includes [Microsoft Defender for Business](../security/defender-business/mdb-overview.md) to help protect your organization's devices from ransomware, malware, phishing, and other threats.
 

@@ -23,8 +23,8 @@
         href: deploy-dynamic-teams-at-scale.md
       - name: Deploy frontline static teams at scale with PowerShell
         href: deploy-teams-at-scale.md
-#     - name: Frontline usage reporting
-#       href: frontline-usage-report.md 
+      - name: Frontline usage reporting
+        href: frontline-usage-report.md 
       - name: Deploy your frontline operational hierarchy
         href: deploy-frontline-operational-hierarchy.md
     - name: Set up and configure experiences for your frontline
@@ -35,8 +35,10 @@
         href: deploy-shifts-at-scale.md
     - name: Manage devices
       items:
-      - name: Manage shared and personal devices
+      - name: Frontline device management overview
         href: flw-devices.md
+      - name: Manage shared devices
+        href: flw-shared-devices.md
       - name: Sign in to Teams
         href: /microsoftteams/sign-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
       - name: Sign out of Teams
@@ -71,7 +73,7 @@
       href: flw-onboarding-training.md
   - name: Schedule management
     items: 
-    - name: Get started with Shifts for Teams
+    - name: Get started with Shifts
       href: shifts-for-teams-landing-page.md
     - name: Frontline manager and worker roles in Shifts
       href: shifts-frontline-manager-worker-roles.md
