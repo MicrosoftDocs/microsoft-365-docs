@@ -18,6 +18,8 @@ f1.keywords: NOCSH
 
 # Package Validation 
 
+[!INCLUDE [test-base-deprecation](./includes/test-base-deprecation.md)]
+
 ## Package Validation
 
 When a [new package](buildpackage.md) is created or onboarded to Test Base, a validation run is triggered. The purpose of the validation run is to check the package and make sure it's ready for testing. 

@@ -9,6 +9,7 @@ ms.reviewer: souchak, jobailey
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-marketplace
 ms.localizationpriority: medium
 ms.collection:
 - Tier1
@@ -16,7 +17,7 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 ms.custom: 
-- commerce_subscriptions
+- commerce_purchase
 - AdminSurgePortfolio
 - admindeeplinkMAC
 search.appverid: MET150

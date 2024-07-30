@@ -56,7 +56,7 @@ How do you determine which external access policy to assign Alex? The following 
 Get-CsExternalAccessPolicy -Include All| Where-Object {$_.EnableFederationAccess -eq $True -and $_.EnablePublicCloudAccess -eq $False}
 ```
 
-Unless you have created any custom instances of ExternalAccessPolicy, that command returns one policy that meets our criteria (FederationOnly). Here is an example:
+Unless you have created any custom instances of ExternalAccessPolicy, that command returns one policy that meets our criteria (FederationOnly). Here's an example:
   
 ```powershell
 Identity                          : Tag:FederationOnly
@@ -68,15 +68,15 @@ EnablePublicCloudAudioVideoAccess : False
 EnableOutsideAccess               : True
 ```
 
-Now that you know which policy to assign to Alex, we can assign that policy by using the [Grant-CsExternalAccessPolicy](/powershell/module/skype/Get-CsExternalAccessPolicy) cmdlet. Here is an example:
+Now that you know which policy to assign to Alex, we can assign that policy by using the [Grant-CsExternalAccessPolicy](/powershell/module/skype/Get-CsExternalAccessPolicy) cmdlet. Here's an example:
   
 ```powershell
 Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName "FederationOnly"
 ```
 
-Assigning a policy is pretty simple: you simply specify the Identity of the user and the name of the policy to be assigned. 
+Assigning a policy is simple: you can specify the Identity of the user and the name of the policy to be assigned. 
   
-And when it comes to policies and policy assignments, you're not limited to working with user accounts one a time. For example, suppose you need a list of all the users who are allowed to communicate with federated partners and with Windows Live users. We already know that those users have been assigned the external user access policy FederationAndPICDefault. Because we know that, you can display a list of all those users by running one simple command. Here is the command:
+And when it comes to policies and policy assignments, you're not limited to working with user accounts one a time. For example, suppose you need a list of all the users who are allowed to communicate with federated partners and with Windows Live users. We already know that those users have been assigned the external user access policy FederationAndPICDefault. Because we know that, you can display a list of all those users by running one simple command. Here's the command:
   
 ```powershell
 Get-CsOnlineUser -Filter {ExternalAccessPolicy -eq "FederationAndPICDefault"} | Select-Object DisplayName
@@ -92,7 +92,7 @@ Get-CsOnlineUser | Grant-CsExternalAccessPolicy "FederationAndPICDefault"
 
 This command uses Get-CsOnlineUser to return a collection of all the users who have been enabled for Lync, then sends all that information to Grant-CsExternalAccessPolicy, which assigns the FederationAndPICDefault policy to each and every user in the collection.
   
-As an additional example, suppose you've previously assigned Alex the FederationAndPICDefault policy and now you've changed your mind and would like him to be managed by the global external access policy. You can't explicitly assign the global policy to anyone. Instead, the global policy is used for a given user if no per-user policy is assigned to that user. Therefore, if we want Alex to be managed by the global policy, you need to  *unassign*  any per-user policy previously assigned to him. Here is an example command:
+As an additional example, suppose you've previously assigned Alex the FederationAndPICDefault policy, and now you've changed your mind and would like him to be managed by the global external access policy. You can't explicitly assign the global policy to anyone. Instead, the global policy is used for a given user if no per-user policy is assigned to that user. Therefore, if we want Alex to be managed by the global policy, you need to  *unassign*  any per-user policy previously assigned to him. Here's an example command:
   
 ```powershell
 Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName $Null
@@ -102,7 +102,7 @@ This command sets the name of the external access policy assigned to Alex to a n
 
 ## Managing large numbers of users
 
-To manage large numbers of users (1000 or more), you need to batch the commands via a script block using the [Invoke-Command](/powershell/module/microsoft.powershell.core/invoke-command) cmdlet.  In previous examples, each time a cmdlet is executed, it must set up the call and then wait for the result before sending it back.  When using a script block, this allows the cmdlets to be executed remotely, and once completed, send the data back.
+To manage large numbers of users (1000 or more), you need to batch the commands via a script block using the [Invoke-Command](/powershell/module/microsoft.powershell.core/invoke-command) cmdlet. In previous examples, each time a cmdlet is executed, it must set up the call and then wait for the result before sending it back. When using a script block, this allows the cmdlets to be executed remotely, and once completed, send the data back.
 
 ```powershell
 $s = Get-PSSession | Where-Object { ($.ComputerName -like '*.online.lync.com' -or $.Computername -eq 'api.interfaces.records.teams.microsoft.com') -and $.State -eq 'Opened' -and $.Availability -eq 'Available' }
@@ -131,7 +131,7 @@ $count = 0
 }
 ```
 
-This will find 500 users at a time who do not have a client policy. It will grant them the client policy "ClientPolicyNoIMURL" and the external access policy "FederationAndPicDefault". The results are batched into groups of 50 and each batch of 50 is then sent to the remote machine.
+This finds 500 users at a time who don't have a client policy. It grants them the client policy "ClientPolicyNoIMURL" and the external access policy "FederationAndPicDefault". The results are batched into groups of 50 and each batch of 50 is then sent to the remote machine.
   
 ## See also
 

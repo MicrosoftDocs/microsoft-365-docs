@@ -1,5 +1,5 @@
 ---
-title: "Create DNS records for Office 365 when you manage your DNS records"
+title: "Create DNS records for Microsoft 365 when you manage your DNS records"
 f1.keywords:
 - CSH
 ms.author: nkagole
@@ -22,13 +22,13 @@ search.appverid:
 - GEA150
 ms.assetid: 0669bf14-414d-4f51-8231-6b710ce7980b
 ROBOTS: NOINDEX
-description: "Learn to create DNS records for Office 365 operated by 21Vianet when your manage your DNS records. "
+description: "Learn to create DNS records for Microsoft 365 operated by 21Vianet when your manage your DNS records. "
 monikerRange: 'o365-21vianet'
 ---
 
-# Create DNS records for Office 365 when you manage your DNS records
+# Create DNS records for Microsoft 365 when you manage your DNS records
 
-For detailed instructions about how to create DNS records for Office 365 operated by 21Vianet, including the MX record required for mail routing, see [Create DNS records at any DNS hosting provider for Office 365](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md). 
+For detailed instructions about how to create DNS records for Microsoft 365 operated by 21Vianet, including the MX record required for mail routing, see [Create DNS records at any DNS hosting provider for Microsoft 365](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md). 
   
   
 More options and some things to be aware of:

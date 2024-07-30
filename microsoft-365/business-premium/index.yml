@@ -10,15 +10,15 @@ metadata:
   description: Documentation for setting up and working with Microsoft 365 Business Premium. # Required; article description that is displayed in search results. < 160 chars.
   ms.service: microsoft-365-business #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: hub-page # Required
-  ms.collection: 
+  ms.collection:
   - tier2
-  ms.custom: 
+  ms.custom:
   - AdminSurgePortfolio
   - intro-hub-or-landing
-  author: denisebmsft #Required; your GitHub user alias, with correct capitalization.
-  ms.author: deniseb #Required; microsoft alias of author; optional team alias.
+  author: chrisda #Required; your GitHub user alias, with correct capitalization.
+  ms.author: chrisda #Required; microsoft alias of author; optional team alias.
   ms.reviewer: nehabha
-  ms.date: 10/27/2023
+  ms.date: 01/19/2024
 
 # productDirectory section (optional)
 productDirectory:
@@ -45,7 +45,7 @@ productDirectory:
       # imageSrc should be square in ratio with no whitespace
       imageSrc: /office/media/icons/education-tutorial-blue.svg
       summary: Learn how to drive upsell and grow your business with Microsoft 365 Business Premium, Microsoft Defender for Business, and Microsoft 365 Lighthouse.
-      url: https://aka.ms/M365MDBseries 
+      url: https://aka.ms/M365MDBseries
 # conceptualContent section (optional)
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -116,12 +116,12 @@ conceptualContent:
         - url: https://aka.ms/M365BPPartnerPlaybook
           itemType: how-to-guide
           text: See the Microsoft 365 Business Premium Partner Playbook and Readiness Series
-        - url: https://aka.ms/M365MDBseries 
+        - url: https://aka.ms/M365MDBseries
           itemType: video
           text: Join the partner webinar series!
         - url: https://partner.microsoft.com
           itemType: overview
-          text: Microsoft Partner Network 
+          text: Microsoft Partner Network
         - url: /partner-center/overview
           itemType: overview
           text: Get started with Partner Center
@@ -150,7 +150,7 @@ conceptualContent:
         - url: ../business-premium/m365bp-device-states.md
           itemType: how-to-guide
           text: View device status
-    
+
   # Card
     - title: Protect email content and Microsoft 365 files
       links:
@@ -208,10 +208,10 @@ conceptualContent:
           text: Find a Microsoft partner to help my business
         - url: ../commerce/subscriptions/upgrade-to-different-plan.md
           itemType: how-to-guide
-          text: Change to another Microsoft 365 plan 
+          text: Change to another Microsoft 365 plan
         - url: ../admin/setup/migrate-email-and-contacts-admin.md
           itemType: how-to-guide
-          text: Migrate email and contacts to Microsoft 365 
+          text: Migrate email and contacts to Microsoft 365
         - url: ../admin/get-help-support.md
           itemType: how-to-guide
           text: Contact support for Microsoft 365

@@ -1,18 +1,17 @@
 ---
 ms.date: 04/20/2023
 title: Manage topic visibility in Topics
-ms.author: daisyfeller
+ms.author: mithunas
 author: daisyfell
-manager: pamgreen
-ms.reviewer: cjtan
+manager: elizapo
+ms.reviewer: daisyfeller
 audience: admin
 ms.topic: article
 ms.collection:
   - m365initiative-viva-topics
   - Tier1
   - essentials-manage
-ms.service: viva 
-ms.subservice: viva-topics 
+ms.service: viva-topics 
 search.appverid:
     - MET150  
 ms.localizationpriority:  medium

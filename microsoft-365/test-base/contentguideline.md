@@ -17,6 +17,8 @@ f1.keywords: NOCSH
 ---
 # Test package guidelines
 
+[!INCLUDE [test-base-deprecation](./includes/test-base-deprecation.md)]
+
 ## 1. Script referencing
 
 When you upload a .zip file to the portal, we unzip all the content of that file into a root folder. You do not need to write any code to do this initial unzip operation. You also can reference any file within the .zip by using the path relative to the zip file uploaded.

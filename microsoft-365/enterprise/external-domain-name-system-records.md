@@ -86,9 +86,6 @@ These DNS records apply only to tenants in Teams-only mode, for hybrid tenants, 
 |DNS record|Purpose|Value to use|
 |---|---|---|
 |**SRV** <br/> **(Federation)**|Allows your Office 365 domain to share instant messaging (IM) features with external clients by enabling SIP federation.|**Domain:** \<domain> <br/> **Service:** sipfederationtls <br/> **Protocol:** TCP <br/> **Priority:** 100 <br/> **Weight:** 1 <br/> **Port:** 5061 <br/> **Target:** sipfed.online.lync.com <br/> **Note:** If the firewall or proxy server blocks SRV lookups on an external DNS, you should add this record to the internal DNS record. |
-|**SRV** <br/> **(SIP)**|It may be needed by Teams-only tenants that use Skype for Business Online phones for Teams.|**Domain:** \<domain> <br/> **Service:** sip <br/> **Protocol:** TLS <br/> **Priority:** 100 <br/> **Weight:** 1 <br/> **Port:** 443 <br/> **Target:** sipdir.online.lync.com|
-|**CNAME** <br/> **(Lyncdiscover)**|Required by Teams-only tenants to support PowerShell cmdlets that still use Skype for Business Online infrastructure for management.|**Alias:** lyncdiscover.\<domain> <br/> **Target:** webdir.online.lync.com|
-
 
 ## External DNS records required for Office 365 Single Sign-On
 <a name="BKMK_ReqdCore"> </a>
@@ -123,7 +120,7 @@ An email system that receives an email from your domain looks at the SPF record.
 For scenarios where you're not just using Exchange Online email for Office 365 (for example, when you use email originating from SharePoint Online as well), use the following table to determine what to include in the value of the record.
 
 > [!NOTE]
-> If you have a complicated scenario that includes, for example, edge email servers for managing email traffic across your firewall, you'll have a more detailed SPF record to set up. Learn how: [Set up SPF records in Office 365 to help prevent spoofing](../security/office-365-security/email-authentication-spf-configure.md). You can also learn much more about how SPF works with Office 365 by reading [How Office 365 uses Sender Policy Framework (SPF) to help prevent spoofing](../security/office-365-security/email-authentication-anti-spoofing.md).
+> If you have a complicated scenario that includes, for example, edge email servers for managing email traffic across your firewall, you'll have a more detailed SPF record to set up. For more information, see [Set up SPF records in Office 365 to help prevent spoofing](../security/office-365-security/email-authentication-spf-configure.md).
 
 |Number|If you're using...|Purpose|Add these includes|
 |---|---|---|---|

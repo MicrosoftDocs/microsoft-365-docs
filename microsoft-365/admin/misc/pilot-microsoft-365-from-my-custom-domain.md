@@ -49,7 +49,7 @@ Follow these steps to set up a Microsoft 365 pilot:
 
 ### Step 1: Sign in to the Microsoft 365 admin center
 
-1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) with your work or school account.
+1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> with your work or school account.
 
 2. Select **Settings** > **Domains** in the left navigation pane.
 

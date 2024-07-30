@@ -1,10 +1,10 @@
 ---
 ms.date: 05/04/2023
 title: Topics overview
-ms.author: daisyfeller
+ms.author: cjtan
 author: daisyfell
-manager: pamgreen
-ms.reviewer: cjtan; lauris
+manager: elizapo
+ms.reviewer: daisyfeller
 audience: admin
 ms.topic: article
 search.appverid:
@@ -12,14 +12,14 @@ search.appverid:
 ms.custom: 
 - intro-overview
 - intro-get-started
-ms.service: viva
-ms.subservice: viva-topics
+ms.service: viva-topics
 ms.collection:
   - enabler-strategic
   - m365initiative-viva-topics
   - highpri
   - Tier1
   - essentials-overview
+  - essentials-navigation
 ms.localizationpriority:  medium
 description: Learn about how to use Topics in your organization.
 ---

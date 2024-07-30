@@ -92,10 +92,23 @@ As an organization you may wish to manage the download of Office add-ins from th
 
 2. Select **User owned apps and services**.
     
-3. Check or clear the option to allow or prevent users access the Office store.
+3. Check or clear the option to allow or prevent users to access the Office store.
+
+Options available in non-educational tenants:
     
-    ![Let user access office store settings](../../media/user-owned-apps-and-services.png)
+   ![Let user access office store settings](../../media/user-owned-apps-and-services.png)
    
+Options available in educational tenants:
+
+   ![Let user access office store settings for EDU](../../media/user-owned-apps-and-services-edu.png)
+
+The user’s license information is used to define whether a user is a faculty/staff or a student along with the Age Group property to check whether the student is an adult or not.  
+
+> [!NOTE]
+> For more information see:  
+>- [Learn how to review the user's license type and assign or unassign licenses as required](assign-licenses-to-users.md)
+>- [Understand how to configure the Age Group property in the Microsoft Encarta admin center](/entra/fundamentals/how-to-manage-user-profile-info)
+
 This will control all users' ability to acquire the following add-ins from the store.
 
 - Add-ins for Word, Excel, and PowerPoint 2016:

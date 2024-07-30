@@ -46,7 +46,7 @@ For more information, see [Learn about optical character recognition in Microsof
 
 ## Manage sites enabled for Syntex
 
-Manage which SharePoint sites have OCR enabled for Syntex in the Microsoft 365 admin center.
+Follow these steps to manage which SharePoint sites have OCR enabled for Syntex in the Microsoft 365 admin center.
 
 1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>, and then select **Use content AI with Microsoft Syntex**.
 

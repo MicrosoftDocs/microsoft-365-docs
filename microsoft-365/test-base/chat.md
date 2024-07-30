@@ -18,15 +18,16 @@ f1.keywords: NOCSH
 
 # Test Base Chat
 
-Test Base Chat, a new feature applying the power of AI, serves as your personal support guide throughout your use of Test Base. Tired of manually searching through documentation or the web to find answers to your application testing questions? Simply initiate a conversation with Test Base Chat anywhere within Test Base to pose your queries. You'll receive tailored step-by-step guidance, complete with links to relevant pages in our [Test Base for Microsoft 365 documentation](/microsoft-365/test-base/). This feature is designed to save you time and eliminate any inconvenience.
+[!INCLUDE [test-base-deprecation](./includes/test-base-deprecation.md)]
+
+Test Base Chat, a new feature applying the power of AI, serves as your personal support guide throughout your use of Test Base. Tired of manually searching through documentation or the web to find answers to your application testing questions? Simply initiate a conversation with Test Base Chat anywhere within Test Base to pose your queries. You'll receive tailored step-by-step guidance, complete with links to relevant pages in our [Test Base for Microsoft 365 documentation](./index.yml). This feature is designed to save you time and eliminate any inconvenience.
 
 You can open the **Test Base Chat** pane via the icon at the right-hand bottom.
 
 > [!div class="mx-imgBorder"]
 > [![Screenshot of the test base chat button.](Media/testbasechat1.png)](Media/testbasechat1.png#lightbox)
 
-> [!div class="mx-imgBorder"]
-> [![Screenshot of the test base chat page.](Media/testbasechat2.png)](Media/testbasechat2.png#lightbox)
+![Screenshot of the test base chat page.](Media/testbasechat2.png)
 
 ## Privacy
 
@@ -40,7 +41,7 @@ Test Base Chat is built on Microsoft's comprehensive approach to security, compl
 
 ## Keep in mind...
 
-The features described here use an AI system that creates responses based on a prompt. As it's a new system, it may create things you didn't expect. If you find its content to be unexpected or offensive, please send us feedback so we can make it better. Because content generated via AI draws from the [Test Base for Microsoft 365 documentation](/microsoft-365/test-base/), it may contain inaccuracies or sensitive material. Use your own judgment and double check the facts before making decisions or taking action based on the responses. 
+The features described here use an AI system that creates responses based on a prompt. As it's a new system, it may create things you didn't expect. If you find its content to be unexpected or offensive, please send us feedback so we can make it better. Because content generated via AI draws from the [Test Base for Microsoft 365 documentation](./index.yml), it may contain inaccuracies or sensitive material. Use your own judgment and double check the facts before making decisions or taking action based on the responses. 
 
 We're constantly working to improve our technology to proactively address issues in line with our [responsible AI principles](https://www.microsoft.com/ai/our-approach?activetab=pivot1:primaryr5). 
 

@@ -18,6 +18,8 @@ f1.keywords: NOCSH
 
 # Run your test on-demand
 
+[!INCLUDE [test-base-deprecation](./includes/test-base-deprecation.md)]
+
 > [!NOTE]
 > Test Base now provides the option to kickoff a test with an on-demand approach.
 

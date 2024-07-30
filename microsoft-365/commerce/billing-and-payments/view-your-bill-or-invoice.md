@@ -9,6 +9,7 @@ ms.reviewer: armanv, nicholak
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
 ms.collection:
 - Tier1
@@ -26,6 +27,7 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - adminvideo
+- admindeeplinkMAC
 search.appverid: MET150, GEA150
 description: "Learn how to find your invoice or billing statement for a Microsoft business subscription in the Microsoft 365 admin center."
 ms.date: 08/08/2023

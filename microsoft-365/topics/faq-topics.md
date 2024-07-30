@@ -1,19 +1,20 @@
 ---
 ms.date: 07/17/2023
 title: Frequently asked questions about Topics
-ms.author: daisyfeller
+ms.author: cjtan
 author: daisyfell
-manager: pamgreen
+manager: elizapo
 audience: admin
-ms.reviewer: cjtan
+ms.reviewer: daisyfeller
 ms.topic: article
 ms.collection:
   - m365initiative-viva-topics
   - highpri
   - Tier1
-  - essentials-accountability
-ms.service: viva 
-ms.subservice: viva-topics 
+  - essentials-security
+  - essentials-privacy
+  - essentials-compliance
+ms.service: viva-topics 
 search.appverid:
 - MET150  
 localization_priority: Normal

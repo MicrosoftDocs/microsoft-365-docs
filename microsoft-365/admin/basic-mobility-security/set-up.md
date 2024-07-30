@@ -21,6 +21,7 @@ ms.custom:
 - VSBFY23
 - AdminSurgePortfolio
 - AdminTemplateSet
+- basic-mobility-security
 search.appverid:
 - MET150
 description: "Set up Basic Mobility and Security to secure and manage your users' mobile devices by performing actions such as remotely wiping a device."
@@ -38,7 +39,7 @@ Have questions? For a FAQ to help address common questions, see [Basic Mobility 
 
 1. Sign in to Microsoft 365 with your global admin account.
 
-2. Go to [Activate Basic Mobility and Security](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx).
+2. Go to <a href="https://admin.cloud.microsoft/EAdmin/Device/IntuneInventory.aspx" target="_blank">Activate Basic Mobility and Security</a>.
 
    It can take some time to activate Basic Mobility and Security. When it finishes, select **Manage devices** on the page. You'll also receive an email that explains the next steps to take if you don't see the Manage devices page.
 
@@ -65,13 +66,13 @@ To manage iOS devices like iPad and iPhones, you need to create an APNs certific
 
 1. Sign in to Microsoft 365 with your global admin account.
 
-2. Go to the [Microsoft 365 admin center](https://portal.office.com/adminportal/home?#/MifoDevices), and choose **APNs Certificate for iOS**.
+2. Go to the <a href="https://admin.cloud.microsoft/?#/MifoDevices" target="_blank">Microsoft 365 admin center</a>, and choose **APNs Certificate for iOS**.
 
-4. On the Apple Push Notification Certificate Settings page, choose **Next**.
+3. On the Apple Push Notification Certificate Settings page, choose **Next**.
 
-5. Select **Download your CSR file** and save the Certificate signing request to somewhere on your computer that you'll remember. Select **Next**.
+4. Select **Download your CSR file** and save the Certificate signing request to somewhere on your computer that you'll remember. Select **Next**.
 
-6. On the Create an APNs certificate page:
+5. On the Create an APNs certificate page:
 
    - Select Apple APNS Portal to open the Apple Push Certificates Portal.
    - Sign in with an Apple ID.
@@ -86,11 +87,11 @@ To manage iOS devices like iPad and iPhones, you need to create an APNs certific
      > [!TIP]
      > If you're having trouble downloading the certificate, refresh your browser.
 
-7. Go back to Microsoft 365 and select **Next**.
+6. Go back to Microsoft 365 and select **Next**.
 
-8. Browse to the APN certificate you downloaded from the Apple Push Certificates Portal.
+7. Browse to the APN certificate you downloaded from the Apple Push Certificates Portal.
 
-9. Select **Finish**.
+8. Select **Finish**.
 
 ## Make sure users enroll their devices
 

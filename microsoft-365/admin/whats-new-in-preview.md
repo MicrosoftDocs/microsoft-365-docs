@@ -32,7 +32,7 @@ description: "The Microsoft 365 admin center - learn about the features that wer
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Some of the information in this article might not apply to Office 365 operated by 21Vianet.
+> Some of the information in this article might not apply to Microsoft 365 operated by 21Vianet.
 
 ::: moniker-end
 
@@ -56,14 +56,14 @@ And if you'd like to know what's new with other Microsoft cloud services:
 
 You now have an option to sign up for email notifications about Windows known issues and informational updates. Notifications include changes in issue status, new workarounds, and issue resolutions. To subscribe to notifications:
 
-1. Go to the [Windows release health page](https://admin.microsoft.com/Adminportal/Home?#/windowsreleasehealth).
-1. Select **Preferences** > **Email**, then select **Send me email notifications about Windows release health**.
-1. Specify the following information:
+1. Go to the <a href="https://admin.cloud.microsoft/?#/windowsreleasehealth" target="_blank">Windows release health page</a>.
+2. Select **Preferences** > **Email**, then select **Send me email notifications about Windows release health**.
+3. Specify the following information:
     - Email address for the notifications
         - Each admin account can specify up to two email addresses under their email preferences
     - Windows versions to be notified about
        - When a single known issue affects multiple versions of Windows, you'll receive only one email notification, even if you've selected notifications for multiple versions. Duplicate emails won't be sent.
-1. Select **Save** when you're finished specifying email addresses and Windows versions. It may take up to 8 hours for these changes to take effect.
+4. Select **Save** when you're finished specifying email addresses and Windows versions. It may take up to 8 hours for these changes to take effect.
 
 For more information, see [How to check Windows release health](/windows/deployment/update/check-release-health).
 
@@ -95,7 +95,7 @@ For more information, check out [Microsoft 365 Experience insights dashboard](mi
 
 ### Advanced deployment guides for Microsoft 365
 
-To help you easily find guides for the services you’re deploying, we’ve updated the search tools, recommendations, and layouts for the [Advanced deployment guides & assistance](https://admin.microsoft.com/Adminportal/Home?Q=TechCommunity#/SetupGuidance) page in the Microsoft 365 admin center and at [setup.microsoft.com](https://setup.microsoft.com/).
+To help you easily find guides for the services you’re deploying, we’ve updated the search tools, recommendations, and layouts for the <a href="https://admin.cloud.microsoft/?#/setupguidance" target="_blank">Advanced deployment guides & assistance</a> page in the Microsoft 365 admin center and at <a href="https://setup.microsoft.com/" target="_blank">setup.microsoft.com</a>.
 
 In this update, you can now:
 
@@ -105,9 +105,9 @@ In this update, you can now:
 
 :::image type="content" source="../media/advanced-deployment-guides.png" alt-text="Advanced deployment guides page in the Microsoft 365 admin center" lightbox="../media/advanced-deployment-guides.png":::
 
-To get to Advanced deployment guides, sign in the Microsoft 365 admin center and go to **Setup** > **Advanced deployment guides & assistance**.
+To get to Advanced deployment guides, sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> and go to **Setup** > **Advanced deployment guides & assistance**.
 
-You can now find all the same guides from the Microsoft 365 admin center on [setup.microsoft.com](https://setup.microsoft.com/). Key updates to this site include:  
+You can now find all the same guides from the Microsoft 365 admin center on <a href="https://setup.microsoft.com/" target="_blank">setup.microsoft.com</a>. Key updates to this site include:  
 
 - Expanded searchability to quickly find guides
 - Better page organization to help you navigate to the right view
@@ -166,7 +166,6 @@ To access, go to **Health** > **Product feedback** > **NPS survey insights tab**
 Learn more about [NPS survey insights](/microsoft-365/admin/manage/manage-feedback-product-insights).
 
 For questions or feedback related to NPS survey insights, contact us at Prosight@microsoft.com.
-
 
 ## July 2022
 

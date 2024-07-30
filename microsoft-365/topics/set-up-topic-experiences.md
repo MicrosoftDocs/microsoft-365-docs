@@ -1,10 +1,10 @@
 ---
 ms.date: 10/6/2023
 title: Set up and manage Topics
-ms.author: daisyfeller
+ms.author: mithunas
 author: daisyfell
-manager: pamgreen
-ms.reviewer: cjtan
+manager: elizapo
+ms.reviewer: daisyfeller
 audience: admin
 ms.topic: article
 ms.collection:
@@ -12,8 +12,7 @@ ms.collection:
   - highpri
   - Tier1
   - essentials-get-started
-ms.service: viva 
-ms.subservice: viva-topics 
+ms.service: viva-topics 
 search.appverid:
 - MET150  
 ms.localizationpriority:  medium

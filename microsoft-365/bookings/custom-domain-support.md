@@ -18,7 +18,7 @@ description: "Learn how to configure custom domain support in Microsoft Bookings
 
 # Custom domain support in Bookings
 
-Microsoft allows organizations to own more than one domain. The default domain is onmicrosoft.com. You can read more about domains and how to create them at [Add a domain to Microsoft 365](/admin/setup/add-domain.md).
+Microsoft allows organizations to own more than one domain. The default domain is onmicrosoft.com. You can read more about domains and how to create them at [Add a domain to Microsoft 365](/microsoft-365/admin/setup/add-domain).
 
 You can specify which domain will be used from the domain list for Bookings using [OWA mailbox policy](/powershell/module/exchange/set-owamailboxpolicy?view=exchange-ps&preserve-view=true). Once the default domain policy is configured and deployed, any new booking calendars created will have the configured domain in the SMTP address.
 

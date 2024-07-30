@@ -17,6 +17,9 @@ f1.keywords: NOCSH
 ---
 
 # Test your Intune application on Test Base 
+
+[!INCLUDE [test-base-deprecation](./includes/test-base-deprecation.md)]
+
   > [!Note] 
   > This guide will guide you to upload your intunewin format package to Test Base. For general Test
 Base package upload instruction, please refer to this [doc](https://microsoft.sharepoint.com/:w:/t/AzureSUVPCoreTeam/EeHQIT3qA0FKqBDWI5TzmzgBiH2Syz39o5VbY2kdugMn4A?e=Rk1KD9).

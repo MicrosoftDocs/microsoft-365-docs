@@ -55,7 +55,7 @@ Before you use your domain with Microsoft, we have to make sure you own it. Your
 
 3. Select **+ Add Record** in the **TXT (Text)** row of the DNS editor.
 
-   :::image type="content" source="../../media/dns-wix/wix-domains-TXT-add-record.png" alt-text="Select Add record.":::
+   :::image type="content" source="../../media/dns-wix/wix-domains-TXT-add-record.png" alt-text="Screenshot of where you select Add record to add a domain verification TXT record.":::
 
 4. In the boxes for the new record, type or copy and paste the values from the following table.
 
@@ -65,7 +65,7 @@ Before you use your domain with Microsoft, we have to make sure you own it. Your
 
 5. Select**Save**.
 
-   :::image type="content" source="../../media/dns-wix/wix-domains-txt-save.png" alt-text="Select Save.":::
+   :::image type="content" source="../../media/dns-wix/wix-domains-txt-save.png" alt-text="Screenshot of where you select Save to add domain verification TXT record.":::
 
    Wait a few minutes before you continue, so that the record you just created can update across the Internet.
 
@@ -125,7 +125,7 @@ To verify the record in Microsoft 365:
 
 3. Select **+ Add Record** in the **CNAME (Aliases)** row of the DNS editor for the CNAME record.
 
-   :::image type="content" source="../../media/dns-wix/wix-domains-cname-add-record.png" alt-text="Select + Add Record.":::
+   :::image type="content" source="../../media/dns-wix/wix-domains-cname-add-record.png" alt-text="Screenshot of where you select Add a record to add a CNAME record.":::
 
 4. In the boxes for the new record, type or copy and paste the values from the following table:
 
@@ -135,7 +135,7 @@ To verify the record in Microsoft 365:
 
 5. Select **Save**.
 
-   :::image type="content" source="../../media/dns-wix/wix-domains-cname-save.png" alt-text="Select Save.":::
+   :::image type="content" source="../../media/dns-wix/wix-domains-cname-save.png" alt-text="Screenshot of where you select Save to add a CNAME record.":::
 
    Wait a few minutes before you continue, so that the record you just created can update across the Internet.
 
@@ -152,7 +152,7 @@ To verify the record in Microsoft 365:
 
 3. Select **+ Add Record** in the **TXT (Text)** row of the DNS editor.
 
-   :::image type="content" source="../../media/dns-wix/wix-domains-TXT-add-record.png" alt-text="Select + Add record.":::
+   :::image type="content" source="../../media/dns-wix/wix-domains-TXT-add-record.png" alt-text="Screenshot of where you select Add a record to add an SPF TXT record.":::
 
    **Note**: Wix provides an SPF row in the DNS editor. Ignore that row and use the **TXT (Text)** row to enter the SPF values below.
 
@@ -164,7 +164,7 @@ To verify the record in Microsoft 365:
 
 5. Select **Save**.
 
-   :::image type="content" source="../../media/dns-wix/wix-domains-txt-save.png" alt-text="Select Save.":::
+   :::image type="content" source="../../media/dns-wix/wix-domains-txt-save.png" alt-text="Screenshot of where you select Save to add an SPF TXT record.":::
 
    Wait a few minutes before you continue, so that the record you just created can update across the Internet.
 
@@ -182,7 +182,7 @@ Only select this option if your organization uses Skype for Business for online 
 
 1. Select **+ Add Record** in the **SRV** row of the DNS editor.
 
-   :::image type="content" source="../../media/dns-wix/wix-domains-srv-add-record.png" alt-text="Select + Add Record.":::
+   :::image type="content" source="../../media/dns-wix/wix-domains-srv-add-record.png" alt-text="Screenshot of where you select Add a record to add an SRV record.":::
 
 1. In the boxes for the new record, type or copy and paste the values from the first row in the table:
 
@@ -193,7 +193,7 @@ Only select this option if your organization uses Skype for Business for online 
 
 1. Select **Save**.
 
-   :::image type="content" source="../../media/dns-wix/wix-domains-srv-save.png" alt-text="Select Save.":::
+   :::image type="content" source="../../media/dns-wix/wix-domains-srv-save.png" alt-text="Screenshot of where you select Save to add a SRV record.":::
 
 1. Add the other SRV record by copying the values from the second row of the table.
 
@@ -211,7 +211,7 @@ Only select this option if your organization uses Skype for Business for online 
 
 1. Select **Save**.
 
-   :::image type="content" source="../../media/dns-wix/wix-domains-cname-save.png" alt-text="Select Save.":::
+   :::image type="content" source="../../media/dns-wix/wix-domains-cname-save.png" alt-text="Screenshot of where you select Save to add CNAME records for Skype for Business.":::
 
 1. Add the other CNAME record by copying the values from the second row of the table.
 
@@ -232,7 +232,7 @@ This service helps you secure and remotely manage mobile devices that connect to
 
 1. Select **+ Add Record** in the **CNAME (Aliases)** row of the DNS editor for the CNAME record.
 
-   :::image type="content" source="../../media/dns-wix/wix-domains-cname-add-record.png" alt-text="Select + Add Record.":::
+   :::image type="content" source="../../media/dns-wix/wix-domains-cname-add-record.png" alt-text="Screenshot of where you select Add a record to add CNAME records for Mobile Device Management.":::
 
 1. Enter the values from the first row in the following table.
 
@@ -243,7 +243,7 @@ This service helps you secure and remotely manage mobile devices that connect to
 
 1. Select **Save**.
 
-   :::image type="content" source="../../media/dns-wix/wix-domains-cname-save.png" alt-text="Select Save.":::
+   :::image type="content" source="../../media/dns-wix/wix-domains-cname-save.png" alt-text="Screenshot of where you select Save to add CNAME records for Mobile Device Management.":::
 
 1. Add the other CNAME record by copying the values from the second row of the table.
 

@@ -8,13 +8,14 @@ metadata:
   audience: Admin
   ms.topic: faq
   ms.service: microsoft-365-business
-  ms.custom: 
-  - commerce_vl
-  - empty
-  search.appverid: MET150
+  ms.subservice: m365-commerce-volume-licensing
   ms.collection: 
   - Tier2
   - scotvorg
+  ms.custom: 
+  - commerce_vl
+  - admindeeplinkMAC
+  search.appverid: MET150
   ms.localizationpriority: medium
   description: "Online service activation for Open program Frequently Asked Questions"
   ms.date: 10/13/2023

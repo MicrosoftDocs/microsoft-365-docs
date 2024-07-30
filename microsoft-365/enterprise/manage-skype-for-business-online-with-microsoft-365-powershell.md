@@ -3,7 +3,7 @@ title: "Manage Skype for Business Online with PowerShell"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 07/17/2020
+ms.date: 03/15/2024
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -11,6 +11,7 @@ ms.localizationpriority: medium
 ms.collection:
 - scotvorg 
 - Ent_O365
+- must-keep
 f1.keywords:
 - NOCSH
 ms.custom:
@@ -46,7 +47,7 @@ Install the [Teams PowerShell module](/microsoftteams/teams-powershell-install).
 
 2. In the **Windows PowerShell Credential Request** dialog box, type your administrator account name and password, and then select **OK**.
 
-## Connect using an admin account with multi-factor authentication
+## Connect using an admin account with multifactor authentication
 
 1. Open a Windows PowerShell command prompt window, and run the following commands:
 
@@ -55,7 +56,7 @@ Install the [Teams PowerShell module](/microsoftteams/teams-powershell-install).
    Connect-MicrosoftTeams
    ```
 
-2. When prompted enter your Skype for Business Online administrator account name.
+2. When prompted enter your Skype for Business Online administrator account name?
 
 3. In the **Sign in to your account** dialog box, type your Skype for Business Online administrator password and select **Sign in**.
 

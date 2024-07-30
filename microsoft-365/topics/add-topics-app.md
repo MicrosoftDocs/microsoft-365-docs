@@ -1,17 +1,16 @@
 ---
 ms.date: 04/20/2023
 title: Add the Topics app in the Teams Admin Center
-ms.author: daisyfeller
+ms.author: mgrewal
 author: daisyfell
-manager: pamgreen
-ms.reviewer: mgrewal
+manager: elizapo
+ms.reviewer: daisyfeller
 audience: admin
 ms.topic: article
 ms.collection:
   - m365initiative-viva-topics
   - Tier1
-ms.service: viva 
-ms.subservice: viva-topics 
+ms.service: viva-topics 
 search.appverid:
     - MET150  
 ms.localizationpriority:  medium

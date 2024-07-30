@@ -2,17 +2,17 @@
 title: View or edit device protection policies
 description: View, edit, create, and delete device protection policies in Microsoft 365 Business Premium
 search.appverid: MET150
-author: denisebmsft
-ms.author: deniseb
-manager: dansimp 
+ms.author: siosulli
+author: siosulli
+manager: deniseb
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
 ms.date: 07/19/2023
 ms.localizationpriority: medium
 ms.reviewer: nehabha
-f1.keywords: NOCSH 
-ms.collection: 
+f1.keywords: NOCSH
+ms.collection:
 - SMB
 - m365-security
 - tier1
@@ -77,7 +77,7 @@ The following details apply to working with your policies in the Microsoft Defen
 
 4. On the **General information** tab, review the information. If necessary, you can edit the description. Then choose **Next**.
 
-5. On the **Device groups** tab, determine which device groups should receive this policy.  
+5. On the **Device groups** tab, determine which device groups should receive this policy.
 
    - To keep the selected device group as it is, choose **Next**.
    - To remove a device group from the policy, select **Remove**.
@@ -86,9 +86,9 @@ The following details apply to working with your policies in the Microsoft Defen
 
    After you have specified which device groups should receive the policy, choose **Next**.
 
-6. On the **Configuration settings** tab, review the settings. If necessary, you can edit the settings for your policy. To get help with this task, see the following articles: 
+6. On the **Configuration settings** tab, review the settings. If necessary, you can edit the settings for your policy. To get help with this task, see the following articles:
 
-   - [Understand next-generation configuration settings](../security/defender-business/mdb-next-generation-protection.md)   
+   - [Understand next-generation configuration settings](../security/defender-business/mdb-next-generation-protection.md)
    - [Firewall settings](../security/defender-business/mdb-firewall.md)
 
    After you have specified your next-generation protection settings, choose **Next**.
@@ -96,7 +96,7 @@ The following details apply to working with your policies in the Microsoft Defen
 7. On the **Review your policy** tab, review the general information, targeted devices, and configuration settings.
 
    - Make any needed changes by selecting **Edit**.
-   - When you’re ready to proceed, choose **Update policy**.
+   - When you're ready to proceed, choose **Update policy**.
 
 <a name='create-a-new-device-protection-policy-in-microsoft-365-defender'></a>
 
@@ -128,7 +128,7 @@ The following details apply to working with your policies in the Microsoft Defen
 7. On the **Review your policy** tab, review the general information, targeted devices, and configuration settings.
 
    - Make any needed changes by selecting **Edit**.
-   - When you’re ready to proceed, choose **Create policy**.
+   - When you're ready to proceed, choose **Create policy**.
 
 ## Working with device policies in the Microsoft Intune admin center
 
@@ -174,7 +174,7 @@ Use the following information to create and manage device policies in Intune, do
 
 1. In the Microsoft Intune admin center ([https://intune.microsoft.com](https://intune.microsoft.com)), select a policy, and then select **Properties**.
 
-2. Select **Settings** to expand a list of the configuration settings in the policy. You can’t modify the settings from this view, but you can review how they're configured.
+2. Select **Settings** to expand a list of the configuration settings in the policy. You can't modify the settings from this view, but you can review how they're configured.
 
 3. To modify the policy, select **Edit** for each category where you want to make a change:
 
@@ -183,7 +183,7 @@ Use the following information to create and manage device policies in Intune, do
     - Scope tags
     - Configuration settings
 
-4. After you’ve made changes, select **Save** to save your edits. Edits to one category must be saved before you can introduce edits to any additional categories.
+4. After you've made changes, select **Save** to save your edits. Edits to one category must be saved before you can introduce edits to any additional categories.
 
 ## Manage conflicts
 

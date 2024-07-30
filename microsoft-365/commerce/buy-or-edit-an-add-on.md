@@ -9,6 +9,7 @@ ms.reviewer: nalinkla, jobailey
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
+ms.subservice: m365-commerce-marketplace
 ms.localizationpriority: medium
 ms.collection: 
 - Tier1
@@ -21,6 +22,7 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - AdminTemplateSet
+- admindeeplinkMAC
 description: "Learn how to buy and manage add-ons for your Microsoft 365 for business subscription."
 ms.date: 08/28/2023
 ---

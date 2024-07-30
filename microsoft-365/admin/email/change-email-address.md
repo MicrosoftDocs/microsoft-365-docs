@@ -46,7 +46,7 @@ Your initial email address in Microsoft 365 includes .onmicrosoft.com, like tom@
 
 ::: moniker range="o365-21vianet"
 
-Your initial email address in Office 365 operated by 21Vianet includes partner.onmschina.cn, like tom@fourthcoffee.partner.onmschina.cn. You can change it to a friendlier address like tom@fourthcoffee.cn. You'll need your own domain name, like fourthcoffee.cn first. If you already have one, great! If not, you can learn how to [buy one from a domain registrar](../get-help-with-domains/buy-a-domain-name.md).
+Your initial email address in Microsoft 365 operated by 21Vianet includes partner.onmschina.cn, like tom@fourthcoffee.partner.onmschina.cn. You can change it to a friendlier address like tom@fourthcoffee.cn. You'll need your own domain name, like fourthcoffee.cn first. If you already have one, great! If not, you can learn how to [buy one from a domain registrar](../get-help-with-domains/buy-a-domain-name.md).
 
 ::: moniker-end
 
@@ -54,7 +54,7 @@ When you change your domain's email to come to Microsoft 365, by updating your d
   
 ## Set up business email with a new domain
 
-Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198215).
+Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/p/?linkid=2198215).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyVVA?autoplay=false]
 
@@ -80,7 +80,7 @@ You must be a global admin to perform these steps.
 
 ::: moniker range="o365-worldwide"
 
-1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
 ::: moniker-end
 

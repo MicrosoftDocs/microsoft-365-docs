@@ -2,17 +2,17 @@
 title: "Use Microsoft Teams for collaboration"
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
-manager: dansimp
+ms.author: chrisda
+author: chrisda
+manager: deniseb
 ms.audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.date: 10/10/2023
-ms.collection: 
+ms.collection:
 - Adm_O365
-- M365-subscription-management 
+- M365-subscription-management
 - M365-identity-device-management
 - M365-Campaigns
 - tier1

@@ -18,6 +18,8 @@ f1.keywords: NOCSH
 
 # Clone an existing package
 
+[!INCLUDE [test-base-deprecation](./includes/test-base-deprecation.md)]
+
 In this section, you'll learn how to create a new package by duplicating your previously published package as a starting point. There are multiple entrances on Test Base portal for you to start the clone package journey.
 
 > [!IMPORTANT]

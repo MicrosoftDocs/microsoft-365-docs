@@ -18,6 +18,8 @@ f1.keywords: NOCSH
 
 # Understanding Memory Regression Analysis
 
+[!INCLUDE [test-base-deprecation](./includes/test-base-deprecation.md)]
+
 As a performance metric, memory usage can be an indication of overall application health. With **Test Base**, you can readily observe increasing memory usage of the test virtual machines (VMs) that are hosting your application/s, as it occurred during a test run.
 
 For all test runs in the **Test Base** service, memory signals are captured in the **Memory utilization** tab.  The example that follows shows a recent test run against a February 2022 OS security update, with an onboarded application named “USL AppCrash” (a test application written to illustrate regressions).

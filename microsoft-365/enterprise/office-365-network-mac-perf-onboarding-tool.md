@@ -3,7 +3,7 @@ title: "Microsoft 365 network connectivity test tool"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 9/18/2023
+ms.date: 04/05/2024
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
@@ -14,6 +14,7 @@ ms.collection:
 - scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
+- must-keep
 description: "Microsoft 365 network connectivity test tool"
 ---
 
@@ -21,14 +22,29 @@ description: "Microsoft 365 network connectivity test tool"
 
 The Microsoft 365 network connectivity test tool is located at <https://connectivity.office.com>. It's an adjunct tool to the network assessment and network insights available in the Microsoft 365 admin center under the **Health | Connectivity** menu.
 
+> [!NOTE]
+> This document mentions the URL (<https://connectivity.office.com>) for the Global version of this tool. For other versions, please refer to the table below for the corresponding URLs.
+
+|Feature|Global service <https://connectivity.office.com>|US Government L4| US Government L5 (DOD) | China operated by 21Vianet <https://connectivity.sovcloud.cn>|
+|:--|:--|:--|:--|:--|
+|Anonymous test|✅|✖️|✖️|✅|
+|Print report | ✅|✖️|✖️|✅|
+|Login| ✅|✖️|✖️|✖️|
+|Save report |  ✅|✖️|✖️|✖️|
+|View report |  ✅|✖️|✖️|✖️|
+|Share report in tenant | ✅|✖️|✖️|✖️|
+|Share report to public |  ✅|✖️|✖️|✖️|
+|Network health status | ✅|✖️|✖️|✅|
+|Multi-languages support: English, Chinese Simplified, Chinese Traditional, Japanese| ✅|✖️|✖️|✅|
+|Testing from the command line|  ✅|✖️|✖️|✖️|
+|FAQ|  ✅|✖️|✖️|✅|
+|Community forum|  ✅|✖️|✖️|✅|
+
 > [!IMPORTANT]
 > It's important to sign in to your Microsoft 365 tenant as all test reports are shared with your administrator and uploaded to the tenant while you are signed in.
 
 > [!div class="mx-imgBorder"]
 > ![Connectivity test tool.](../media/m365-mac-perf/m365-mac-perf-test-tool-page.png)
-
->[!NOTE]
->The network connectivity test tool supports tenants in WW Commercial but not GCC Moderate, GCC High, DoD or China.
 
 Network insights in the Microsoft 365 Admin Center are based on regular in-product measurements for your Microsoft 365 tenant, aggregated each day. In comparison, network insights from the Microsoft 365 network connectivity test are run locally in the tool.
 
@@ -119,7 +135,7 @@ We identify the network egress IP address on the server side. Location databases
 
 #### Your distance from the network egress location
 
-We determine the distance from that location to the office location. This distance is shown as a network insight if the distance is greater than **500 miles** (800 kilometers) since that is likely to increase the TCP latency by more than 25 ms and may affect user experience.
+We determine the distance from that location to the office location. This distance is shown as a network insight if the distance is greater than **500 miles** (800 kilometers) since that is likely to increase the TCP latency by more than 25 ms and might affect user experience.
 
 The map shows the network egress location in relation to the user office location indicating the network backhaul inside of the enterprise WAN.
 
@@ -153,9 +169,9 @@ This is provided for information only and doesn't contribute to any network insi
 
 #### Your distance from and/or time to connect to a DNS recursive resolver
 
-The in-use DNS Recursive Resolver is identified by making a specific DNS request and then asking the DNS Name Server for the IP Address that it received the same request from. This IP Address is the DNS Recursive Resolver and it is looked up in IP Address location databases to find the location. The distance from the user office location to the DNS Recursive Resolver server location is then calculated. This is shown as a network insight if the distance is greater than **500 miles** (800 kilometers).
+The in-use DNS Recursive Resolver is identified by making a specific DNS request and then asking the DNS Name Server for the IP Address that it received the same request from. This IP Address is the DNS Recursive Resolver and it's looked up in IP Address location databases to find the location. The distance from the user office location to the DNS Recursive Resolver server location is then calculated. This is shown as a network insight if the distance is greater than **500 miles** (800 kilometers).
 
-The location looked up from the network egress IP Address may not be accurate and this inaccuracy would lead to a false result from this test. To validate if this error is occurring for a specific IP Address, you can use publicly accessible network IP Address location web sites.
+The location looked up from the network egress IP Address might not be accurate and this inaccuracy would lead to a false result from this test. To validate if this error is occurring for a specific IP Address, you can use publicly accessible network IP Address location web sites.
 
 This network insight affects the selection of the Exchange Online service front door. To address this insight local and direct network egress should be a prerequisite and then DNS Recursive Resolver should be located close to that network egress.
 
@@ -165,9 +181,9 @@ This section shows test results related to Exchange Online.
 
 #### Exchange service front door location
 
-The in-use Exchange service front door is identified in the same way that Outlook does this and we measure the network TCP latency from the user location to it. The TCP latency is shown and the in-use Exchange service front door is compared to the list of best service front doors for the current location. This is shown as a network insight if one of the best Exchange service front door(s) isn't in use.
+The in-use Exchange service front door is identified in the same way that Outlook does this and we measure the network TCP latency from the user location to it. The TCP latency is shown and the in-use Exchange service front door is compared to the list of best service front doors for the current location. This is shown as a network insight if one of the best Exchange service front doors isn't in use.
 
-Not using one of the best Exchange service front door(s) could be caused by network backhaul before the corporate network egress in which case we recommend local and direct network egress. It could also be caused by use of a remote DNS recursive resolver server in which case we recommend aligning the DNS recursive resolver server with the network egress.
+Not using one of the best Exchange service front doors could be caused by network backhaul before the corporate network egress in which case we recommend local and direct network egress. It could also be caused by use of a remote DNS recursive resolver server in which case we recommend aligning the DNS recursive resolver server with the network egress.
 
 We calculate a potential improvement in TCP latency (ms) to the Exchange service front door. This is done by looking at the tested user office location network latency and subtracting the network latency from the current location to the closets Exchange service front door. The difference represents the potential opportunity for improvement.
 
@@ -179,9 +195,9 @@ This lists the best Exchange service front door locations by city for your locat
 
 This shows the DNS name and IP Address of the Exchange service front door server that you were directed to. It's provided for information only and there's no associated network insight.
 
-### SharePoint Online
+### SharePoint
 
-This section shows test results related to SharePoint Online and OneDrive.
+This section shows test results related to SharePoint and OneDrive.
 
 #### The service front door location
 
@@ -193,7 +209,7 @@ We measure the download speed for a 15-Mb file from the SharePoint service front
 
 #### Buffer bloat
 
-During the 15 Mb download, we measure the TCP latency to the SharePoint service front door. This is the latency under load and it's compared to the latency when not under load. The increase in latency when under load is often attributable to consumer network device buffers being loaded (or bloated). A network insight is shown for any bloat of 100 ms or more.
+During the 15-Mb download, we measure the TCP latency to the SharePoint service front door. This is the latency under load and it's compared to the latency when not under load. The increase in latency when under load is often attributable to consumer network device buffers being loaded (or bloated). A network insight is shown for any bloat of 100 ms or more.
 
 #### Service front door recorded in the client DNS
 
@@ -205,7 +221,7 @@ This section shows test results related to Microsoft Teams.
 
 #### Media connectivity (audio, video, and application sharing)
 
-This tests for UDP connectivity to the Microsoft Teams service front door. If this is blocked, then Microsoft Teams may still work using TCP, but audio and video will be impaired. Read more about these UDP network measurements, which also apply to Microsoft Teams at [Media Quality and Network Connectivity Performance in Skype for Business Online](/skypeforbusiness/optimizing-your-network/media-quality-and-network-connectivity-performance).
+This tests for UDP connectivity to the Microsoft Teams service front door. If this is blocked, then Microsoft Teams might still work using TCP, but audio and video will be impaired. Read more about these UDP network measurements, which also apply to Microsoft Teams at [Media Quality and Network Connectivity Performance in Skype for Business Online](/skypeforbusiness/optimizing-your-network/media-quality-and-network-connectivity-performance).
 
 #### Packet loss
 
@@ -223,15 +239,18 @@ Shows the measured UDP jitter, which should be lower than **30ms**.
 
 We test for HTTP connectivity from the user office location to all of the required Microsoft 365 network endpoints. These are published at [https://aka.ms/o365ip](./urls-and-ip-address-ranges.md). A network insight is shown for any required network endpoints, which can't be connected to.
 
-Connectivity may be blocked by a proxy server, a firewall, or another network security device on the enterprise network perimeter. Connectivity to TCP port 80 is tested with an HTTP request and connectivity to TCP port 443 is tested with an HTTPS request. If there's no response the FQDN is marked as a failure. If there's an HTTP response code 407 the FQDN is marked as a failure. If there's an HTTP response code 403, then we check the Server attribute of the response and if it appears to be a proxy server we mark this as a failure. You can simulate the tests we perform with the Windows command-line tool curl.exe.
+Connectivity might be blocked by a proxy server, a firewall, or another network security device on the enterprise network perimeter. Connectivity to TCP port 80 is tested with an HTTP request and connectivity to TCP port 443 is tested with an HTTPS request. If there's no response the FQDN is marked as a failure. If there's an HTTP response code 407 the FQDN is marked as a failure. If there's an HTTP response code 403, then we check the Server attribute of the response and if it appears to be a proxy server we mark this as a failure. You can simulate the tests we perform with the Windows command-line tool curl.exe.
 
 We test the TLS/SSL certificate at each required Microsoft 365 network endpoint that is in the optimize or allow category as defined at [https://aka.ms/o365ip](./urls-and-ip-address-ranges.md). If any tests don't find a Microsoft TLS/SSL certificate, then the encrypted network connected must have been intercepted by an intermediary network device. A network insight is shown on any intercepted encrypted network endpoints.
 
-Where an TLS/SSL certificate is found that isn't provided by Microsoft, we show the FQDN for the test and the in-use TLS/SSL certificate owner. This TLS/SSL certificate owner may be a proxy server vendor, or it may be an enterprise self-signed certificate.
+Where an TLS/SSL certificate is found that isn't provided by Microsoft, we show the FQDN for the test and the in-use TLS/SSL certificate owner. This TLS/SSL certificate owner might be a proxy server vendor, or it might be an enterprise self-signed certificate.
 
 #### Network path
 
-This section shows the results of an ICMP traceroute to the Exchange Online service front door, the SharePoint Online service front door, and the Microsoft Teams service front door. It's provided for information only and there's no associated network insight. There are three traceroutes provided. A traceroute to _outlook.office365.com_, a traceroute to the customers SharePoint front end or to _microsoft.sharepoint.com_ if one wasn't provided, and a traceroute to _world.tr.teams.microsoft.com_.
+This section shows the results of an ICMP traceroute to the Exchange Online service front door, the SharePoint service front door, and the Microsoft Teams service front door. It's provided for information only and there's no associated network insight. There are three traceroutes provided. A traceroute to _outlook.office365.com_, a traceroute to the customers SharePoint front end or to _microsoft.sharepoint.com_ if one wasn't provided, and a traceroute to _world.tr.teams.microsoft.com_.
+
+> [!NOTE]
+> In reports generated in different versions, the addresses you see above may also vary slightly.
 
 ## Connectivity reports
 
@@ -258,28 +277,34 @@ You can run it by double clicking the executable in Windows File Explorer, or yo
 The first time you launch the executable you'll be prompted to accept the end user license agreement (EULA) before testing is performed. If you have already read and accepted the EULA, you can create an empty file called Microsoft-365-Network-Connectivity-Test-EULA-accepted.txt in the current working directory for the executable process when it's launched. To accept the EULA, you can type 'y' and press enter in the command line window when prompted.
 
 The executable accepts the following  command line parameters:
+
 - -h to show a link to this help documentation
 - -testlist &lt;test&gt; Specifies tests to run. By default only basic tests are run. Valid test names include: all, dnsConnectivityPerf, dnsResolverIdentification, bufferBloat, traceroute, proxy, vpn, skype, connectivity, networkInterface
 - -filepath &lt;filedir&gt; Directory path of test result files. Allowed value is absolute or relative path of an accessible directory
-- -city &lt;city&gt; For the city, state, and country/region fields the specified value will be used if provided. If not provided then Windows Location Services (WLS) will be queried. If WLS fails the location will be detected from the machines network egress 
+- -city &lt;city&gt; For the city, state, and country/region fields the specified value will be used if provided. If not provided then Windows Location Services (WLS) will be queried. If WLS fails the location will be detected from the machines network egress
 - -state &lt;state&gt;
-- -country &lt;country&gt; 
+- -country &lt;country&gt;
 - -proxy &lt;account&gt; &lt;password&gt; Proxy account name and password can be provided if you require a proxy to access the Internet
 
 ### Results
+
 Output of results is written to a JSON file in a folder called TestResults, which is created in the current working directory of the process unless it already exists. The filename format for the output is connectivity_test_result_YYYY-MM-DD-HH-MM-SS.json. The results are in JSON nodes that match the output shown on the web page for the Microsoft 365 network connectivity test tool web site. A new result file is created each time you run it and the standalone executable doesn't upload results to your Microsoft tenant for viewing in the Admin Center Network Connectivity pages. Front door codes, longitudes, and latitudes aren't included in the result file.
 
 ### Launching from Windows File Explorer
+
 You can double select on the executable to start the testing and a command prompt window will appear.
 
 ### Launching from the Command Prompt
-On a CMD.EXE command prompt window you can type the path and name of the executable to run it. The filename is Microsoft.Connectivity.Test.exe
+
+In a CMD.EXE command prompt window, you can type the path and name of the executable to run it. The filename is Microsoft.Connectivity.Test.exe.
 
 ### Launching from Windows Task Scheduler
-In Windows Task Scheduler you can add a task to launch the standalone test executable. You should specify the current working directory of the task to be where you have created the EULA accepted file since the executable blocks until the EULA is accepted. You can't interactively accept the EULA if the process is started in the background with no console.
+
+In Windows Task Scheduler, you can add a task to launch the standalone test executable. You should specify the current working directory of the task to be where you have created the EULA accepted file since the executable blocks until the EULA is accepted. You can't interactively accept the EULA if the process is started in the background with no console.
 
 ### More details on the standalone executable
-The commandline tool uses Windows Location Services to find the users City State Country/region information for determining some distances. If Windows Location Services is disabled in the control panel, then user location based assessments are blank. In Windows Settings "Location services" must be on and "Let desktop apps access your location" must also be on.
+
+The commandline tool uses Windows Location Services to find the users City State Country/region information for determining some distances. If Windows Location Services is disabled in the control panel, then user location based assessments are blank. In Windows Settings, "Location services" must be on and "Let desktop apps access your location" must also be on.
 
 The commandline tool attempts to install the .NET Framework if it isn't already installed. It also downloads the main testing executable from the Microsoft 365 network connectivity test tool and launch that.
 
@@ -287,7 +312,7 @@ The commandline tool attempts to install the .NET Framework if it isn't already 
 
 [Microsoft Support and Recovery Assistant](https://aka.ms/SaRA_home) (Assistant) automates all the steps required to execute the command-line version of the Microsoft 365 network connectivity test tool on a user’s machine and creates a report similar to the one created by the web version of the connectivity test tool. Note, the Assistant runs the command line version of Microsoft 365 network connectivity test tool to produce the same JSON result file, but the JSON file is converted into .CSV file format.  
 
-[Download and Run the Assistant Here](https://aka.ms/SaRA-NetworkConnectivity-Learn)
+You can [download and run the Assistant here](https://aka.ms/SaRA-NetworkConnectivity-Learn).
 
 ### Viewing Test Results
 
@@ -318,7 +343,7 @@ To view the information about the test results and telemetry, double-click and o
 
 ### Types of result files
 
-Microsoft Support and Recovery Assistant creates 2 files:
+Microsoft Support and Recovery Assistant creates two files:
 
 1. Network Connectivity Report (CSV)
 This report runs the raw JSON file against a rule engine to make sure defined thresholds are being met and if they aren't met a &#8220;warning&#8221; or &#8220;error&#8221; is displayed in the output column of the CSV file. You can view the NetworkConnectivityReport.csv file to be informed about any detected issues or defects. See [What happens at each test step](office-365-network-mac-perf-onboarding-tool.md#what-happens-at-each-test-step) for details on each test and the thresholds for warnings.
@@ -334,7 +359,7 @@ Here are answers to some of our frequently asked questions.
 
 The advanced test client requires .NET 6.0 Runtime. If you run the advanced test client without that installed you'll be directed to [the .NET 6.0 installer page](https://dotnet.microsoft.com/en-us/download/dotnet/6.0/runtime?utm_source=getdotnetcore). Be sure to install from the Run desktop apps column for Windows. Administrator permissions on the machine are required to install .NET 6.0 Runtime.
 
-The advanced test client uses SignalR to communicate to the web page. For this, you must ensure that TCP port 443 connectivity to **connectivity.service.signalr.net** is open. This URL isn't published in the <https://aka.ms/o365ip> because that connectivity isn't required for a Microsoft 365 client application user. If you are using an HTTP proxy for connection to FQDN connectivity.office.com and encounter the error **SignalR proxy configuration is different than origin.**, ensure connection to FQDN connectivity.service.signalr.net is allowed through the proxy. If a PAC file is being used to push proxy configuration settings, ensure the PAC file will return the same proxy settings for FQDN's connectivity.office.com and connectivity.service.signalr.net.
+The advanced test client uses SignalR to communicate to the web page. For this, you must ensure that TCP port 443 connectivity to **connectivity.service.signalr.net** is open. This URL isn't published in the <https://aka.ms/o365ip> because that connectivity isn't required for a Microsoft 365 client application user. If you're using an HTTP proxy for connection to FQDN connectivity.office.com and encounter the error **SignalR proxy configuration is different than origin.**, ensure connection to FQDN connectivity.service.signalr.net is allowed through the proxy. If a PAC file is being used to push proxy configuration settings, ensure the PAC file will return the same proxy settings for FQDN's connectivity.office.com and connectivity.service.signalr.net.
 
 ### What is Microsoft 365 service front door?
 
@@ -349,7 +374,7 @@ A best Microsoft 365 service front door (formerly known as an optimal service fr
 
 ### What is an internet egress location?
 
-The internet egress Location is the location where your network traffic exits your enterprise network and connects to the Internet. This is also identified as the location where you have a Network Address Translation (NAT) device and usually where you connect with an Internet Service Provider (ISP). If you see a long distance between your location and your internet egress location, then this may identify a significant WAN backhaul.
+The internet egress Location is the location where your network traffic exits your enterprise network and connects to the Internet. This is also identified as the location where you have a Network Address Translation (NAT) device and usually where you connect with an Internet Service Provider (ISP). If you see a long distance between your location and your internet egress location, then this might identify a significant WAN backhaul.
 
 ## Related articles
 

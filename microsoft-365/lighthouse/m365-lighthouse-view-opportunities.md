@@ -34,7 +34,7 @@ You must hold the Executive report viewer or Report viewer role in Partner Cente
 
 ## View opportunities
 
-1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Sales Advisor** > **Opportunities**.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Sales Advisor** > **Opportunities**.
 
 2. On the **All opportunities** tab, select the tenant you want to research.
 
@@ -48,14 +48,14 @@ You must hold the Executive report viewer or Report viewer role in Partner Cente
 
 ## View opportunities by opportunity type
 
-1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Sales Advisor** > **Opportunities**.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Sales Advisor** > **Opportunities**.
 2. Select the desired opportunity type you want to review.
 
 For a definition of each opportunity type, see the Opportunity Type section in [Understanding opportunities and data in Sales Advisor](m365-lighthouse-understanding-opportunities-and-data.md).
 
 ## Export opportunities out of Sales Advisor
 
-1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Sales Advisor** > **Opportunities**.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Sales Advisor** > **Opportunities**.
 2. Select the view you want to export (All opportunities, Customer acquisition, Customer retention, or Customer growth).
 3. Filter the list as needed using the filters (Probability, Opportunity type, and Date created).
 4. Select **Export**.

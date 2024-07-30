@@ -391,6 +391,34 @@
         href: apps-config-step-6.md
       - name: Step 7. Verify app configuration
         href: apps-config-step-7.md        
+    - name: Secure and protect apps using Microsoft Intune
+      items: 
+      - name: Overview
+        href: apps-protect-overview.md
+      - name: Understand app data protection
+        href: apps-protect-data-protection.md
+      - name: Understand app protection access requirements
+        href: apps-protect-access-requirements.md
+      - name: Understand app protection conditional launch
+        href: apps-protect-conditional-launch.md
+      - name: Understand app protection health checks
+        href: apps-protect-health-checks.md
+      - name: Use the app protection framework
+        items: 
+        - name: App protection framework overview      
+          href: apps-protect-framework.md     
+        - name: Step 1. Apply basic data protection
+          href: apps-protect-step-1.md
+        - name: Step 2. Apply enhanced data protection
+          href: apps-protect-step-2.md
+        - name: Step 3. Apply high data protection
+          href: apps-protect-step-3.md
+        - name: Step 4. Understand app protection delivery
+          href: apps-protect-step-4.md
+        - name: Step 5. Verify and monitor app protection
+          href: apps-protect-step-5.md  
+        - name: Step 6. Use app protection actions
+          href: apps-protect-step-6.md
 
 - name: Compliance
   items:

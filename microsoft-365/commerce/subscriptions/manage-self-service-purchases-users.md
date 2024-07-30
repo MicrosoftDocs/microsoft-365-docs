@@ -1,14 +1,15 @@
 ---
-title: Manage self-service purchases (Users)
+title: "Manage self-service purchases and trials (for users)"
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: prlachhw, socheng
+ms.reviewer: sijoshi, socheng
 audience: Admin
 ms.topic: end-user-help
-ms.service: microsoft-365-business 
+ms.service: microsoft-365-business
+ms.subservice: m365-commerce-acquisition
 ms.localizationpriority: medium
 ms.collection: 
 - Tier1
@@ -17,13 +18,14 @@ ms.collection:
 ms.custom: 
 - commerce_ssp
 - AdminSurgePortfolio
+- admindeeplinkMAC
 search.appverid:
 - MET150
-description: "Users can learn how to manage their self-service purchases."
-ms.date: 12/19/2023
+description: "Users can learn how to manage their self-service purchases in the Microsoft 365 admin center."
+ms.date: 03/27/2024
 ---
 
-# Manage self-service purchases (Users)
+# Manage self-service purchases and trials (for users)
 
 As a user, you can buy subscriptions to certain products and assign licenses for those subscriptions to people in your team. You're responsible for paying for any self-service purchases you make. You can manage your subscriptions in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
@@ -35,12 +37,12 @@ Your admin has a read-only view into any subscriptions that you buy. They can se
 
 You can view a list of all self-service purchased subscriptions that you bought.
 
-1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, then go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. On the **Products** tab, select the filter icon, then select **Self-service**.
 
-## How to buy more or reduce licenses
+## Buy more or reduce licenses
 
-1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. Select the subscription for which you want to buy more license or reduce the number of licenses.
 3. Select **Buy licenses** or **Remove licenses**.
 4. In the details pane, in the **Total licenses** box, enter the total number of licenses that you want for this subscription, then select **Save**. For example, if you have 100 licenses and you want to add 5 more, enter 105.
@@ -49,17 +51,17 @@ You can view a list of all self-service purchased subscriptions that you bought.
 
 ### To assign licenses
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.
-2. Select the subscription for which you want to assign licenses.
-3. Select **Assign licenses**.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.
+2. Select the product for which you want to assign licenses.
+3. On the product details page, select **Assign licenses**.
 4. In the **Assign licenses to users** pane, begin typing a name, and then select it from the results to add it to the list. You can add up to 20 users at a time.
     > [!NOTE]
     > You can only assign licenses to people in your organization.
-5. Select **Assign**, then select **Close**.
+5. Select **Assign**, then select close the details pane.
 
 ### To unassign licenses
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.
 2. Select the product for which you want to unassign licenses.
 3. Select the users from whom you want to unassign licenses.
 4. Select **Unassign licenses**.
@@ -67,19 +69,21 @@ You can view a list of all self-service purchased subscriptions that you bought.
 
 ## Cancel a subscription
 
-1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. On the **Products** tab, find the subscription that you want to cancel. Select the three dots (more actions), then select **Cancel subscription**.
 3. In the **Cancel subscription** pane, select a reason why you're canceling. Optionally, provide any feedback you have.
 4. Select **Save**.
 
 ## Manage your payment details
 
-1. In the admin center, go to the **Billing** > **Bills & payments** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">Billing profiles</a> page.
-2. Select a billing profile from the list.
-3. On the billing profile details page, under **Payment method**, choose one of the following options:
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Billing accounts</a> page.
+2. On the **Overview** tab, select a billing account.
+3. On the billing account details page, select the **Billing profile** tab. The tab lists all billing profiles associated with the selected billing account.
+4. Select a billing profile name to view the details page.
+5. In the **Invoice and billing notifications** section, under **Payment method**, choose one of the following options:
     - If you want to update an existing payment method, select **Edit**.
     - If you want to add a new payment method, select **Replace**.
-4. In the right pane, enter the card details, then select **Save**.
+6. In the details pane, enter the card details, then select **Save** or **Replace**.
 
 ### Update an existing payment method
 
@@ -91,8 +95,8 @@ You can view a list of all self-service purchased subscriptions that you bought.
 ### Add a new payment method
 
 1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page.
-2. On the **Payment methods** tab, select **Add a payment method**.
-3. In the **Add a payment method** pane, enter the information for the new payment method, then select **Add**.
+2. On the **Payment methods** page, select **Add a payment method**, then select **Add a payment method** from the drop-down list.
+3. In the **Add a payment method** pane, enter the information for the new payment method, then select **Save*.
 
 ## View your invoices
 

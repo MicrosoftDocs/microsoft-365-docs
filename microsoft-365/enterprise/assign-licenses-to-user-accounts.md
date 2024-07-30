@@ -3,7 +3,7 @@ title: "Assign Microsoft 365 licenses to user accounts"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 09/30/2020
+ms.date: 04/15/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -20,6 +20,7 @@ ms.collection:
 - scotvorg
 - Ent_O365
 - M365-identity-device-management
+- must-keep
 search.appverid:
 - MET150
 - MOP150
@@ -33,9 +34,9 @@ description: "Describes how to assign Microsoft 365 licenses to user accounts, e
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
-For the cloud-only identity model, you can assign Microsoft 365 licenses to user accounts as they are created, depending on how you create them.
+For the cloud-only identity model, you can assign Microsoft 365 licenses to user accounts as they're created, depending on how you create them.
 
-For the hybrid identity model, when Active Directory Domain Services (AD DS) user accounts are synchronized for the first time, they are not automatically assigned a location or a Microsoft 365 license. **You must configure each user account with a user location prior to or along with assigning a license.**
+For the hybrid identity model, when Active Directory Domain Services (AD DS) user accounts are synchronized for the first time, they aren't automatically assigned a location or a Microsoft 365 license. **You must configure each user account with a user location prior to or along with assigning a license.**
 
 In either case, you must assign a license to user accounts so your users can access Microsoft 365 services, such as email and Microsoft Teams.
 
@@ -61,7 +62,7 @@ For more information, see [group-based licensing in Microsoft Entra ID](/azure/a
 
 ## Next steps
 
-With the appropriate set of user accounts that have been assigned licenses, you are now ready to:
+With the appropriate set of user accounts that have been assigned licenses, you're now ready to:
 
 - [Implement security](/microsoft-365/security/office-365-security/defender-for-office-365)
 - [Deploy client software, such as Microsoft 365 Apps](/DeployOffice/deployment-guide-microsoft-365-apps)

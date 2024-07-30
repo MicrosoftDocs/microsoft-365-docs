@@ -5,6 +5,7 @@ author: erikre
 manager: dougeby
 audience: ITPro
 ms.topic: article
+ms.date: 03/29/2024
 description: Understand the app types that are available for managed environments.
 ms.service: o365-solutions
 ms.localizationpriority: high

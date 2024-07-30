@@ -10,7 +10,7 @@ ms.topic: article
 ms.custom: 
 ms.service: whiteboard
 search.appverid: MET150
-ms.collection: 
+ms.collection: essentials-manage
 ms.localizationpriority: medium
 description: Learn how to set up Microsoft Whiteboard for your organization in the Microsoft 365 admin center.
 ---
