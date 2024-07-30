@@ -24,7 +24,7 @@ Get started with Microsoft 365 Backup by following these simple three steps in t
 
 ## Step 1: Set up pay-as-you-go billing
 
-Microsoft 365 Backup is a pay-as-you-go offering that charges based on consumption, unlike traditional seat-based licenses. To set up pay-as-you-go for Microsoft 365 Backup, you will need to have this information:
+Microsoft 365 Backup is a pay-as-you-go offering that charges based on consumption, unlike traditional user-based licenses. To set up pay-as-you-go for Microsoft 365 Backup, you'll need to have this information:
 
 > [!div class="checklist"]
 > * **Valid Azure subscription**. An Azure subscription provides a logical container for your resources. Each Azure resource is associated with only one subscription. Creating a subscription is the first step in adopting Azure. To learn more about Azure, see [Azure fundamental concepts](/azure/cloud-adoption-framework/ready/considerations/fundamental-concepts).
@@ -32,7 +32,7 @@ Microsoft 365 Backup is a pay-as-you-go offering that charges based on consumpti
 > * **Region**. The region in which you want to register the service.
 > * **Owner or contributor**. Name of an owner or contributor role on the Azure subscription.
 
-Once you have the information on this list, you are ready to [set up pay-as-you-go billing for Microsoft 365 Backup](backup-billing.md).
+Once you have the information on this list, you're ready to [set up pay-as-you-go billing for Microsoft 365 Backup](backup-billing.md).
 
 </br>
 
@@ -48,7 +48,7 @@ You must be a [SharePoint Administrator](/entra/identity/role-based-access-contr
 
 ## Step 2: Turn on Microsoft 365 Backup
 
-To turn on Microsoft 365 Backup, you'll need to go to the Microsoft 365 admin center.
+To turn on Microsoft 365 Backup, you need to go to the Microsoft 365 admin center.
 
 1. In the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home), select **Setup**.
 
@@ -56,7 +56,7 @@ To turn on Microsoft 365 Backup, you'll need to go to the Microsoft 365 admin ce
 
 3. On the **Automate content processes with Syntex** page, select **Go to Syntex settings**.
 
-4. On the Syntex page, in the left navigation, select **Storage**. From the list of products, select **Backup**.
+4. On the Microsoft Syntex page, in the left navigation, select **Storage**. From the list of products, select **Backup**.
 
 5. By default, the feature is turned off. On the **Backup** panel, select **Turn on** to enable Microsoft 365 Backup for your organization.
 
@@ -308,7 +308,7 @@ Follow these steps to set up a backup policy for Exchange mailboxes sites using 
 
 ## Multi-geo environments
 
-Microsoft 365 Backup supports the backup of sites and user accounts from both the central as well as satellite locations if the multi-geo feature is enabled on your tenant. This means that you can add the sites or user accounts from all geos while creating the backup configuration policy via the CSV file upload method. Adding sites via the site picker, search, or filter rules doesn't currently support multi-geo. Those UI experiences today only support addition of sites in the tenant's central location.
+Microsoft 365 Backup supports the backup of sites and user accounts from both the central and satellite locations if the multi-geo feature is enabled on your tenant. This means that you can add the sites or user accounts from all geos while creating the backup configuration policy via the CSV file upload method. Adding sites via the site picker, search, or filter rules doesn't currently support multi-geo. Those user interface experiences today only support addition of sites in the tenant's central location.
 
 ## Admin roles and backup management privileges
 
@@ -324,7 +324,7 @@ Only tenant-level admins can create and manage backups using Microsoft 365 Backu
 
 - **Protection units** – SharePoint sites, OneDrive accounts, or Exchange Online mailboxes backed up by the Microsoft 365 Backup tool.
 
-- **Restore point** – A prior point in time from which you can restore a version of your content and metadata. If the protection unit from a prior point in time is identical to the present state of your data, then a restore from that point will have no impact on your current data.
+- **Restore point** – A prior point in time from which you can restore a version of your content and metadata. If the protection unit from a prior point in time is identical to the present state of your data, then a restore from that point has no affect on your current data.
 
 - **RPO** – Recovery point objective, or how close in time the most recent restore point is to an impacting event.
 
