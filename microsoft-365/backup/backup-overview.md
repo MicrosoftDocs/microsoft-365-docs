@@ -13,7 +13,7 @@ search.appverid:
 ms.collection:
     - essentials-overview
 ms.localizationpriority:  medium
-description: Learn about the backup and recovery capabilities for SharePoint, Exchange Online, and OneDrive for Business using Microsoft 365 Backup.
+description: Learn about the backup and recovery capabilities for OneDrive, SharePoint, and Exchange Online using Microsoft 365 Backup.
 ---
 
 # Overview of Microsoft 365 Backup
@@ -70,7 +70,7 @@ To summarize, applications built on top of the Microsoft 365 Backup Storage plat
 
 Microsoft 365 Backup provides ultra-fast backup and restore capabilities by creating backups within the protected services’ data boundaries.
 
-Microsoft 365 Backup not only provides uniquely fast recovery from common business continuity and disaster recovery (BCDR) scenarios like ransomware or accidental/malicious employee content overwrite/deletion. Additional BCDR scenario protections are also built directly into the service. For example, OneDrive, SharePoint, and Exchange Online has a proprietary architecture design for resiliency with replicated copies of customer data to failover to live active copies seamlessly without the need for end customer intervention.
+Microsoft 365 Backup not only provides uniquely fast recovery from common business continuity and disaster recovery (BCDR) scenarios like ransomware or accidental/malicious employee content overwrite/deletion. More BCDR scenario protections are also built directly into the service. For example, OneDrive, SharePoint, and Exchange Online have a proprietary architecture design for resiliency with replicated copies of customer data to failover to live active copies seamlessly without the need for end customer intervention.
 
 Our backups are protected from malicious overwrites because OneDrive, SharePoint, and Exchange use Append-Only backup storage. This means that SharePoint can only add new content blobs and can never change old ones until they're permanently deleted. The Exchange items are backed up in an immutable manner and can't be accessed by a client process (such as Outlook, OWA, or MFCMAPI). This process ensures that items can't be changed after an initial save, protecting against attackers that try to corrupt old versions. For more information about the built-in service and data resiliency, see [SharePoint and OneDrive data resiliency in Microsoft 365](/compliance/assurance/assurance-sharepoint-onedrive-data-resiliency) and [Exchange Online data resiliency in Microsoft 365](/compliance/assurance/assurance-exchange-data-resiliency).
 
@@ -90,14 +90,14 @@ Key architectural takeaways:
 
 Creating a new protection policy initiates the process of backing up selected SharePoint sites, OneDrive accounts, and Exchange mailboxes. Once you submit a request to activate a valid protection policy, it takes on average up to 60 minutes to process and another 60 minutes to create restore points. Initial backups take approximately 15 minutes per 1,000 protection units initially or incrementally added to a policy.
 
-Restore points are physically created in the service as soon as the policy is confirmed to be activated in the tool, even if those restore points take some additional time to become visible in the restore tool.
+Restore points are physically created in the service as soon as the policy is confirmed to be activated in the tool, even if those restore points take some more time to become visible in the restore tool.
 
 #### Restoration performance
 
-Restoration performance correlates with your recovery time objective, or the time it will take for you to restore a healthy state of your data and thus recover from a data destruction event.
-For full OneDrive account and SharePoint site restores, the fastest recovery will happen when choosing in-place restore rather a new URL restore. Additionally, choosing one of the recommended express restore points presented in the restore workflow UI will yield the quickest recovery results.
+Restoration performance correlates with your recovery time objective, or the time it takes for you to restore a healthy state of your data and recover from a data destruction event.
+For full OneDrive account and SharePoint site restores, the fastest recovery happens when choosing in-place restore rather a new URL restore. Additionally, choosing one of the recommended express restore points presented in the restore workflow user interface yields the quickest recovery results.
 
-All restore points and restores to new URLs will be relatively fast, but same URL restores using a recommended express restore point will typically yield better results. The Exchange Online restore workflow doesn't have or require the “faster” restore points.
+All restore points and restores to new URLs are relatively fast, but same URL restores using a recommended express restore point will typically yield better results. The Exchange Online restore workflow doesn't have or require the "faster" restore points.
 
 The following table summarizes expected performance for a normally distributed tenant, including tenants of large size and scale.
 
@@ -122,7 +122,7 @@ The following table summarizes expected performance for a normally distributed t
 
 We partner with many independent software vendors (ISVs) to provide differentiated versions of their applications integrated with the Microsoft 365 Backup Storage platform—all providing the same underlying performance value proposition for your Microsoft 365 data.
 
-In the case of a partner application, operation of the Microsoft 365 Backup tool will be managed and paid for entirely through the partner's application. Those applications will have the ability to provide a single pane of glass for all of your data estates that require backups, and they might provide additional enhanced experiences or workflows.
+For a partner application, operation of the Microsoft 365 Backup tool will be managed and paid for entirely through the partner's application. Those applications have the ability to provide a single pane of glass for all of your data estates that require backups, and they might provide more enhanced experiences or workflows.
 
 ## General Data Protection Regulations (GDPR)
 
