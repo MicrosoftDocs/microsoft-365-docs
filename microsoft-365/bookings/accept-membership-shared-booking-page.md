@@ -13,7 +13,7 @@ ms.collection:
 - scotvorg
 - essentials-manage
 ai-usage: ai-assisted
-description: "Learn how staff can accept membership when they are added to a Shared Booking page."
+description: "Learn how staff can accept membership when they're added to a Shared Booking page."
 ---
 
 # Accept membership to a shared booking page
@@ -36,10 +36,10 @@ Alternatively, the staff member can access the Shared Booking page from the Book
 A shared booking page can have three states:
 
 - **Accepting bookings** - the staff member has joined the shared booking page.
-- **Approve to receive bookings** - the staff member hasn't approve membership.
+- **Approve to receive bookings** - the staff member hasn't approved membership.
 - **Not accepting bookings** - the staff member has declined to accept bookings.
 
-:::image type="content" source="media/bookings-decline.png" alt-text="Screenshot showing how a staff member is not accepting bookings for a service." lightbox="media/bookings-decline.png":::
+:::image type="content" source="media/bookings-decline.png" alt-text="Screenshot showing how a staff member isn't accepting bookings for a service." lightbox="media/bookings-decline.png":::
 
 For more information on adding staff, see [Add staff to Bookings](add-staff.md).
 
