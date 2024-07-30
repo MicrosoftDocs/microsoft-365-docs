@@ -328,4 +328,4 @@ Only tenant-level admins can create and manage backups using Microsoft 365 Backu
 
 - **RPO** – Recovery point objective, or how close in time the most recent restore point is to an impacting event.
 
-- **RTO** – Recovery time objective, or how fast a restore to a prior point in time can complete.
+- **RTO** – Recovery time objective, or how fast a restore to a prior point in time might complete.
