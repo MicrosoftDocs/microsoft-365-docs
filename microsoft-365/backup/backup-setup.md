@@ -76,7 +76,7 @@ Now that you have enabled Microsoft 365 Backup for your organization, follow thr
 
     ![Screenshot of the Microsoft 365 admin center panel showing Settings and Microsoft 365 Backup.](../media/m365-backup/backup-setup-admin-center-panel.png)
 
-4. [Set up backup policies for OneDrive, SharePoint, and Exchange](backup-view-edit-policies.md).
+4. [Create backup policies for OneDrive, SharePoint, or Exchange](backup-view-edit-policies.md#create-backup-policies).
 <!---
 ### Set up backup policies for OneDrive, SharePoint, and Exchange
 
