@@ -224,6 +224,8 @@ Follow these steps to restore data backed up for Exchange.
 
 5. Track the progress of your newly created task on the **Restoration tasks** tab.
 
+---
+
 ### States of backup
 
 |States  |Definition  |
@@ -232,8 +234,6 @@ Follow these steps to restore data backed up for Exchange.
 |Paused     | No further backups will be taken but already taken backups will be preserved. |
 |Not set up | No backup policy is set up for this scope.  |
 |Processing | A change to backup policy or a restore is in progress.  |
-
----
 
 ## Multi-geo environments
 
@@ -257,7 +257,7 @@ Microsoft 365 Backup supports the backup and restoration of any site and user ac
 
 - A site or OneDrive account that is under the strict SEC 17a-4(f) hold policy will fail any in-place restores so as to honor that immutability promise. For sites under that type of hold, you'll have to restore to a new URL or remove the hold. Any other type of preservation hold that does not have a strict admin lockout will allow an in-place restore. Restoring these types of sites as the preservation hold library will be reverted to the prior point in time. A new URL restore is recommended for that type of site as the cleanest option.
 
-- The restore point frequency dictates the points in time from which you can recover a prior state of your data. Restore points will start being generated when you enable the backup policy for a given OneDrive account, SharePoint Site, or Exchange Online mailbox. For Exchange Online, restore points are available 10-minutely for the entire year. For OneDrive and SharePoint, the available restore points drop to weekly from 10 minutes for the first two weeks. Based on the defined and currently invariable backup frequency setting described above, the following example highlights what is possible.
+- The restore point frequency dictates the points in time from which you can recover a prior state of your data. Restore points will start being generated when you enable the backup policy for a given OneDrive account, SharePoint Site, or Exchange Online mailbox. For Exchange Online, restore points are available for 10-minutes for the entire year. For OneDrive and SharePoint, the available restore points drop to weekly from 10 minutes for the first two weeks. Based on the defined and currently invariable backup frequency setting described above, the following example highlights what is possible.
 
     - Megan, the Backup admin, enables a policy for the SharePoint site “HR Hub” on February 1, 2025, at 8:00 AM PST. At 10:00 AM PST, she has the option of rolling back the state of the site to any 10-minute period between 8:00 AM and 10:00 AM PST.
 
