@@ -191,7 +191,7 @@ jobs:
             # Only process event types of 'pull_request_target' that are 'opened' (PR created)
             If (($GitRequestEvent -eq "pull_request_target") ) {
 
-                $Contributor = $GitHubData.event.sender.login
+                $Contributor = $GitHubData.event.pull_request.user.login
                 $LabelName = "Microsoft submitter"
                 $LabelColor = "0269ef"
                 $LabelDescription = ""
@@ -202,80 +202,86 @@ jobs:
 
                 Write-Host "Checking to see if $Contributor is a member of the MicrosoftDocs `"everyone`" team."
 
-                # Check to see if the contributor is a member of the MicrosoftDocs "everyone" team
-                $TeamResult = Invoke-RestMethod -Uri $ContributorTeamUrl -Headers $TeamReadGitHubHeaders
+                Try {
 
-                If ($TeamResult.state -eq "active") {
+                    # Check to see if the contributor is a member of the MicrosoftDocs "everyone" team
+                    $TeamResult = Invoke-RestMethod -Uri $ContributorTeamUrl -Headers $TeamReadGitHubHeaders -ErrorAction Stop
 
-                    Write-Host "Submitter is an active member of the MicrosoftDocs `"everyone`" team."
+                    If ($TeamResult.state -eq "active") {
 
-                    # Check to see if the label exists in the repo
-                    If (Test-Label -Name $LabelName -RepoUri $GitHubData.event.repository.labels_url -Headers $GitHubHeaders) {
+                        Write-Host "Submitter is an active member of the MicrosoftDocs `"everyone`" team."
 
-                        Write-Host "$LabelName label exists."
+                        # Check to see if the label exists in the repo
+                        If (Test-Label -Name $LabelName -RepoUri $GitHubData.event.repository.labels_url -Headers $GitHubHeaders) {
 
-                        $LabelExists = $True
+                            Write-Host "$LabelName label exists."
 
-                    } Else {
-                            
-                        Write-Host "$LabelName doesn't exist. Creating."
-
-                        Try {
-                            
-                            # Create the label because it doesn't exist in the repo
-                            $LabelResult = New-Label -Name $LabelName -Color $LabelColor -Description $LabelDescription -RepoUri $GitHubData.event.repository.labels_url -Headers $GitHubHeaders -ErrorAction Stop
-
-                        } Catch {
-
-                            $LabelExists = $False
-
-                        }
-
-                        # Check the result of the New-Label command to verify it was created successfully
-                        If ($($LabelResult.statusdescription) -eq "Created") {
-
-                            Write-Host "$LabelName created."
                             $LabelExists = $True
 
                         } Else {
+                                
+                            Write-Host "$LabelName doesn't exist. Creating."
 
-                            Write-Host "WARNING: $LabelName creation failed. Error: $($Error[0].Exception.Message)."
+                            Try {
+                                
+                                # Create the label because it doesn't exist in the repo
+                                $LabelResult = New-Label -Name $LabelName -Color $LabelColor -Description $LabelDescription -RepoUri $GitHubData.event.repository.labels_url -Headers $GitHubHeaders -ErrorAction Stop
 
-                            $LabelExists = $False
+                            } Catch {
+
+                                $LabelExists = $False
+
+                            }
+
+                            # Check the result of the New-Label command to verify it was created successfully
+                            If ($($LabelResult.statusdescription) -eq "Created") {
+
+                                Write-Host "$LabelName created."
+                                $LabelExists = $True
+
+                            } Else {
+
+                                Write-Host "WARNING: $LabelName creation failed. Error: $($Error[0].Exception.Message)."
+
+                                $LabelExists = $False
+
+                            }
 
                         }
 
-                    }
+                        # Only attempt to apply the label if it exists in the repo
+                        If ($LabelExists) {
 
-                    # Only attempt to apply the label if it exists in the repo
-                    If ($LabelExists) {
-
-                        Write-Host "Setting label on PR."
-
-                        
-                        $LabelUrl = $GitHubData.event.pull_request.issue_url
-
-                        Write-Host "Using pull request URL $LabelUrl."
-
-
-                        # Apply the label to the pull request
-                        Try {
-
-                            Set-Label -IssueUrl $LabelUrl -LabelName $LabelName -Headers $GitHubHeaders
-                        
-
-                        } Catch {
-
-                            Write-Host "ERROR: Error setting label. $($Error[0].ErrorDetails.Message)."
-                        }
+                            Write-Host "Setting label on PR."
 
                             
+                            $LabelUrl = $GitHubData.event.pull_request.issue_url
+
+                            Write-Host "Using pull request URL $LabelUrl."
+
+
+                            # Apply the label to the pull request
+                            Try {
+
+                                Set-Label -IssueUrl $LabelUrl -LabelName $LabelName -Headers $GitHubHeaders
+                            
+
+                            } Catch {
+
+                                Write-Host "ERROR: Error setting label. $($Error[0].ErrorDetails.Message)."
+                            }                
+
+                        }
+
+
+                    } Else {
+
+                        Write-Host "Submitter isn't an active member of the MicrosoftDocs `"everyone`" team."
 
                     }
 
-
-                } Else {
-
+                } Catch {
+                
                     Write-Host "Submitter isn't an active member of the MicrosoftDocs `"everyone`" team."
 
                 }
