@@ -96,7 +96,7 @@ Follow these steps to restore data backed up for OneDrive.
 
     a. **Replace accounts with backups**. The entire OneDrive is replaced by the backed-up version chosen based on the restore point. File and folder permissions are also reverted to the selected date and time.
 
-    b. **Create new SharePoint sites and restore to them**. The entire OneDrive will restore to a new SharePoint site where you can then copy or move data into the original OneDrive to create a roll-forward type of restore and avoid overwriting currently healthy data.<br><br>When you restore using this option, the new site URL will have an "R" followed by a number concatenated to the end. For example, if the original URL was `https://contoso-my.sharepoint.com/personal/user1_contoso_com` the restored site could be `https://contoso-my.sharepoint.com/personal/user1_contoso_comR0`. The number at the end increments to avoid URL name conflicts up to 1,000 total restores. After that you should delete some of those new URLs to clear namespace for future new-URL restores.
+    b. **Create new SharePoint sites and restore to them**. The entire OneDrive is restored to a new SharePoint site. You can then copy or move data into the original OneDrive to create a roll-forward type of restore and avoid overwriting currently healthy data.<br><br>When you restore using this option, the new site URL will have an "R" followed by a number concatenated to the end. For example, if the original URL was `https://contoso-my.sharepoint.com/personal/user1_contoso_com` the restored site could be `https://contoso-my.sharepoint.com/personal/user1_contoso_comR0`. The number at the end increments to avoid URL name conflicts up to 1,000 total restores. After that you should delete some of those new URLs to clear namespace for future new-URL restores.
 
 9. On the **Review and Finish** page, review and finish all your choices. If everything looks as you want it, select **Restore OneDrive accounts**.
 
@@ -121,7 +121,7 @@ Follow these steps to restore data backed up for SharePoint.
 
     ![Screenshot showing the Select the date and time page for SharePoint.](../media/m365-backup/backup-sharepoint-select-date-time.png)
 
-    Choose a recommended restore point from **Select a faster restore point**, which provides a faster restore compared to standard restore points. We recommend choosing a fast restore point because it can restore much faster for single site restores, especially smaller ones (on the order of 10 to 120 minutes on average).
+    Choose a recommended restore point from **Select a faster restore point**, which provides a faster restore compared to standard restore points. We recommend choosing a fast restore point because it can restore faster for single site restores, especially smaller ones (on the order of 10 to 120 minutes on average).
 
     ![Screenshot showing the Select a faster restore point option for SharePoint.](../media/m365-backup/backup-sharepoint-select-faster-restore.png)
 
@@ -147,7 +147,7 @@ Follow these steps to restore data backed up for SharePoint.
 
     a. **Replace sites with backups**. The entire original site is replaced by the backed-up version chosen based on the restore point. File and folder permissions and all metadata states are also reverted to the selected date and time.
 
-    b. **Create new sites from backups**. The entire site will restore to a new SharePoint site where you can then copy or move data into the original site or a different site to create a roll-forward type of restore and avoid overwriting currently healthy data.<br><br>When you restore using this option, the new site URL will have an "R" followed by a number concatenated to the end. For example, if the original URL was `https://contoso.sharepoint.com/sites/originalSite` the restored site could be `https://contoso.sharepoint.com/sites/originalSiteR0`. The number at the end increments to avoid URL name conflicts up to 1,000 total restores. After that you should delete some of those new URLs to clear namespace for future new-URL restores.
+    b. **Create new sites from backups**. The entire site is restored to a new SharePoint site. You can then copy or move data into the original site or a different site to create a roll-forward type of restore and avoid overwriting currently healthy data.<br><br>When you restore using this option, the new site URL will have an "R" followed by a number concatenated to the end. For example, if the original URL was `https://contoso.sharepoint.com/sites/originalSite` the restored site could be `https://contoso.sharepoint.com/sites/originalSiteR0`. The number at the end increments to avoid URL name conflicts up to 1,000 total restores. After that you should delete some of those new URLs to clear namespace for future new-URL restores.
 
 9. On the **Review and Finish** page, review and finish your choices. If everything looks as you want it, select **Restore sites**.
 
@@ -155,7 +155,7 @@ Follow these steps to restore data backed up for SharePoint.
   
 # [Exchange](#tab/exchange)
 
-Microsoft 365 Backup restores deleted or modified mailbox items from the selected prior point in time. Items that remain unchanged in the primary mailbox are compared to that prior point in time, and new items since that prior point in time are not restored, reverted, or overwritten. This is true whether an in-place or new-folder restore is conducted and is done to prevent excessive operations that might overload your mailbox and its associated storage allocation.
+Microsoft 365 Backup restores deleted or modified mailbox items from the selected prior point in time. Items that remain unchanged in the primary mailbox are compared to that prior point in time, and new items since that prior point in time aren't restored, reverted, or overwritten. This is true whether an in-place or new-folder restore is conducted and is done to prevent excessive operations that might overload your mailbox and its associated storage allocation.
 
 Follow these steps to restore data backed up for Exchange.
 
@@ -182,7 +182,7 @@ Follow these steps to restore data backed up for Exchange.
 
     For example, the last time the end user remembers seeing their mailbox in a "good state" was October 2, 2023 8:00 AM. However, on October 2, 2023 9:00 AM they saw all of their emails were encrypted (possible ransomware attack), choose the last known good time as October 2, 2023 8:00 AM.
 
-2. Confirm the restore point in time to which the data will be restored from backup. The page informs you whether there are any backups to restore from the LKG time chosen. If you see no errors, you can proceed. If there are errors, you can choose another LKG time. Select **Next**.
+2. Confirm the restore point in time to which the data will be restored from backup. The page informs you whether there are any backups to restore from the Last known good (LKG) time chosen. If you see no errors, you can proceed. If there are errors, you can choose another LKG time. Select **Next**.
 
 3. The destination of restored items can be chosen from two options, then select **Next**.
 
@@ -259,15 +259,15 @@ Microsoft 365 Backup supports the backup and restoration of any site and user ac
 
 - For restores to a new URL, only the admin who executed the restore has ownership permissions for the restored SharePoint sites or OneDrive accounts in the new URLs. Restores to the same URL reverts permissions to their original state.
 
-- A site or OneDrive account that is under the strict SEC 17a-4(f) hold policy will fail any in-place restores so as to honor that immutability promise. For sites under that type of hold, you'll have to restore to a new URL or remove the hold. Any other type of preservation hold that does not have a strict admin lockout will allow an in-place restore. Restoring these types of sites as the preservation hold library will be reverted to the prior point in time. A new URL restore is recommended for that type of site as the cleanest option.
+- A site or OneDrive account that is under the strict SEC 17a-4(f) hold policy will fail any in-place restores so as to honor that immutability promise. For sites under that type of hold, you have to restore to a new URL or remove the hold. Any other type of preservation hold that doesn't have a strict admin lockout will allow an in-place restore. Restoring these types of sites as the preservation hold library will be reverted to the prior point in time. A new URL restore is recommended for that type of site as the cleanest option.
 
-- The restore point frequency dictates the points in time from which you can recover a prior state of your data. Restore points will start being generated when you enable the backup policy for a given OneDrive account, SharePoint Site, or Exchange Online mailbox. For Exchange Online, restore points are available for 10-minutes for the entire year. For OneDrive and SharePoint, the available restore points drop to weekly from 10 minutes for the first two weeks. Based on the defined and currently invariable backup frequency setting described above, the following example highlights what is possible.
+- The restore point frequency dictates the points in time from which you can recover a prior state of your data. Restore points start being generated when you enable the backup policy for a given OneDrive account, SharePoint Site, or Exchange Online mailbox. For Exchange Online, restore points are available for 10 minutes for the entire year. For OneDrive and SharePoint, the available restore points drop to weekly from 10 minutes for the first two weeks. Based on the defined and currently invariable backup frequency setting previously described, the following example highlights what is possible.
 
     - Megan, the Backup admin, enables a policy for the SharePoint site “HR Hub” on February 1, 2025, at 8:00 AM PST. At 10:00 AM PST, she has the option of rolling back the state of the site to any 10-minute period between 8:00 AM and 10:00 AM PST.
 
     - On April 1, 2025, she has the option to roll back the site to any 10-minute period in the prior 14 days (that is, any 10-minute period between March 18 and the current date-time). If she wants to choose an earlier prior point in time, she would need to choose March 15, 8, or 1, and so on, back through February 1, or up to 52 weeks if the policy was created at least 52 weeks in the past.
 
-    - Megan then adds a user’s mailbox to the policy on February 1, 2025, at 11:00 AM PST. She will have the option of restoring modified or deleted items from that user's mailbox to any 10-minute period during the entire retention period.
+    - Megan then adds a user’s mailbox to the policy on February 1, 2025, at 11:00 AM PST. She'll have the option of restoring modified or deleted items from that user's mailbox to any 10-minute period during the entire retention period.
 
 - Users whose Microsoft Entra ID has been deleted will be displayed as blank lines in the restore picker experience for OneDrive and Exchange Online since those users no longer exist in the environment. Rest assured, their historical backups still exist in the Backup tool, but some [special handling is needed to restore them](backup-faq.md#what-is-the-service-recovery-point-objective).
 
@@ -301,4 +301,4 @@ Microsoft 365 Backup supports the backup and restoration of any site and user ac
 
     [!INCLUDE [global-administrator-note](../includes/global-administrator-note.md)]
 
-- Abusive restore actions are not permitted. You should limit restores for testing purposes to no more than twice a month per protection unit. Restores for real recovery purposes are not limited.
+- Abusive restore actions aren't permitted. You should limit restores for testing purposes to no more than twice a month per protection unit. Restores for real recovery purposes aren't limited.
