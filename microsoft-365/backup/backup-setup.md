@@ -76,6 +76,8 @@ Now that you have enabled Microsoft 365 Backup for your organization, follow thr
 
     ![Screenshot of the Microsoft 365 admin center panel showing Settings and Microsoft 365 Backup.](../media/m365-backup/backup-setup-admin-center-panel.png)
 
+4. [Set up backup policies for OneDrive, SharePoint, and Exchange](backup-view-edit-policies.md).
+<!---
 ### Set up backup policies for OneDrive, SharePoint, and Exchange
 
 To use Microsoft 365 Backup for OneDrive, SharePoint, or Exchange, you need to create a backup policy for each product. A *policy* represents the backup plan defined by admins for protecting the Microsoft 365 data of an organization.
@@ -299,6 +301,7 @@ Follow these steps to set up a backup policy for Exchange mailboxes sites using 
 
     Once the mailboxes are added to a backup policy, it might take up to 15 minutes per 1,000 mailboxes for restore points to become available for restore.
 ---
+--->
 
 ## Multi-geo environments
 
