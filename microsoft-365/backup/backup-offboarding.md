@@ -62,7 +62,8 @@ Retention and deletion policies don't “flow through” to the backups. This me
 
 ### Sensitivity labels
 
-Restoration of any data (such as sites or mailbox items) reverts the sensitivity labels of the data to the state of that protected item at the prior point in time from which it's being restored (that is, the state of labeling at the point in time from which the content is being restored; in other words, the state reverts to the prior point in time).
+Restoration of any data (such as sites or mailbox items) reverts the data's sensitivity labels to the state of that protected item at the prior point from which it's being restored. That is, the state of labeling at the point in time from which the content is being restored; in other words, the state reverts to the prior point in time.
+
 <!---
 ## Backup data deletion and undo grace periods
 
