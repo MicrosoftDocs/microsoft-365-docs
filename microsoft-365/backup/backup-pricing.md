@@ -38,8 +38,6 @@ As an example, if you have a site under protection that is currently 1 GB for th
 > [!NOTE]
 > A partner application integrated with Microsoft 365 Backup storage might charge a different rate for their service.
 
-<!---<Include charge model video >--->
-
 ## Pricing calculator
 
 The Microsoft 365 Backup pricing calculator is a tool that helps you estimate the amount of backup storage and the costs that you'll incur to protect and back up your Microsoft 365 data.
