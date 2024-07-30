@@ -25,9 +25,9 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # Overview of the Tenants page in Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse lets you manage customer tenant accounts by selecting **Tenants** in the left navigation pane to open the Tenants page. The Tenants page contains a list of all your customer tenants. You can select a tenant to view detailed information including contact details and deployment status.
+Microsoft 365 Lighthouse lets you manage customer tenant accounts by selecting **Tenants** in the left navigation pane to open the **Tenants** page. The **Tenants** page contains a list of all your customer tenants. You can select a tenant to view detailed information including contact details and deployment status.
 
-The Tenants page also includes the following options:
+The **Tenants** page also includes the following options:
 
 - **Export:** Select to export tenant data to an Excel comma-separated values (.csv) file.
 - **Manage Tags:** Select to add, edit, or delete a tag.
