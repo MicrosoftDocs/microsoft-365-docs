@@ -20,7 +20,7 @@ description: Application lifecycle for Microsoft 365 Backup Storage.
 
 ## Onboard a third-party Microsoft 365 Backup Storage application
 
-Once your Microsoft 365 Backup Storage application is given consent to execute in the Consuming Tenant, to enable it to be the Microsoft 365 Backup Storage Controller in a Consuming Tenant, you'll need to perform the following programmatic tasks (via your application):
+Once your Microsoft 365 Backup Storage application is given consent to execute in the Consuming Tenant, to enable it to be the Microsoft 365 Backup Storage Controller in a Consuming Tenant, you need to perform the following programmatic tasks (via your application):
 
 1. [Register your application as a Microsoft 365 Backup Storage Controller](#step-1-register-your-application-as-a-microsoft-365-backup-storage-controller).
 
@@ -61,7 +61,7 @@ To activate your application as the Microsoft 365 Backup Storage Controller depe
 
 #### No existing Microsoft 365 Backup Storage Controller
 
-If there's no existing Microsoft 365 Backup Storage Controller, then you can immediately activate your application as the Controller. To do this, you execute the [serviceApp: activate](/graph/api/serviceapp-activate?view=graph-rest-beta) API:
+If there's no existing Microsoft 365 Backup Storage Controller, then you can immediately activate your application as the Controller. To do this step, you execute the [serviceApp: activate](/graph/api/serviceapp-activate?view=graph-rest-beta) API:
 ```http
 POST /solutions/backupRestore/serviceApps/{serviceAppId}/activate
 ```
@@ -84,7 +84,7 @@ If your application was successfully activated for a date/time in the future, it
 
 ###	Existing Microsoft 365 Backup Storage Controller Grace Period
 
-If there was an existing Microsoft 365 Backup Storage Controller when you activated your application, this enforces a Grace Period of between 7 to 30 days (as specified when you activated your application).
+If there was an existing Microsoft 365 Backup Storage Controller when you activated your application, this step enforces a Grace Period of between 7 to 30 days (as specified when you activated your application).
 
 **During the Grace Period:**
 - Your application has a state of **pendingActive**.
@@ -104,12 +104,12 @@ GET /solutions/backupRestore/serviceApps/{serviceAppId}
 
 ###	Step 4: Enable your Billing Policy in the Consuming Tenant
 
-Once your application has a status of active, you'll need to enable your Billing Policy in the Consuming Tenant. This step is performed by executing the [backupRestoreRoot: enable](/graph/api/backuprestoreroot-enable?view=graph-rest-beta) API:
+Once your application has a status of active, you need to enable your Billing Policy in the Consuming Tenant. This step is performed by executing the [backupRestoreRoot: enable](/graph/api/backuprestoreroot-enable?view=graph-rest-beta) API:
 ```http
 POST /solutions/backupRestore/enable
 ```
 
-After you have enabled the Billing Policy, your application will be the Microsoft 365 Backup Storage Controller in the Consuming Tenant and will now be able to maintain the Microsoft 365 Backup Service (as per your application’s oAuth permission scopes).
+After you enable the Billing Policy, your application will be the Microsoft 365 Backup Storage Controller in the Consuming Tenant and will now be able to maintain the Microsoft 365 Backup Service (as per your application’s oAuth permission scopes).
 
 > [!NOTE]
 > You can execute this API multiple times in that it is idempotent. It is recommended to enable the Billing Policy in the Consuming Tenant if, for whatever reason, your Billing Policy changes. For example, if you want to change the Azure Subscription Id or Resource Group.
@@ -155,7 +155,7 @@ After successfully invoking the API:
   
 #### Deactivating with current state of pendingInactive
 
-Deactivating your  application that has a state of **pendingInactive** won't do anything to the pending change of the Microsoft 365 Backup Storage Controller. That is, the pending change continues until the Grace Period is complete.
+Deactivating your application that has a state of **pendingInactive** won't do anything to the pending change of the Microsoft 365 Backup Storage Controller. That is, the pending change continues until the Grace Period is complete.
 
 #### Deactivating with current state of active
 
@@ -190,7 +190,7 @@ After successfully invoking the API:
 
 You can't unregister your application that has a state of **pendingInactive** and your request fails with an HTTP 403 error code.
 
-To unregister your application as the Microsoft 365 Backup Storage Controller, you'll need to wait for the Grace Period to be complete (or if the pending change is canceled and your application is reinstated as the Microsoft 365 Backup Storage Controller).
+To unregister your application as the Microsoft 365 Backup Storage Controller, you need to wait for the Grace Period to be complete (or if the pending change is canceled and your application is reinstated as the Microsoft 365 Backup Storage Controller).
 
 #### Unregistering with current state of active
 
@@ -203,7 +203,7 @@ Unregistering your application that has a state of **active** automatically init
 
 **On completion of the Grace Period:**
 - Your application is still no longer available to become the Microsoft 365 Backup Storage Controller (unless it's reregistered).
-- If another application is not activated to be the Microsoft 365 Backup Storage Controller, then the offboarding of the Microsoft 365 Backup Service in the Consuming Tenant is initiated.
+- If another application isn't activated to be the Microsoft 365 Backup Storage Controller, then the offboarding of the Microsoft 365 Backup Service in the Consuming Tenant is initiated.
 - Your application continues to be responsible for the Microsoft 365 Backup billing and hence the consumption in the Consuming Tenant until another application is activated to be the Microsoft 365 Backup Storage Controller or until the billing period expires (30-days) as per the offboarding of the Microsoft 365 Backup Service in the Consuming Tenant.
 
 > [!WARNING]

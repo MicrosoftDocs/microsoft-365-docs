@@ -37,7 +37,7 @@ To create a Billing Policy, you need to perform the following steps:
 > [!WARNING]
 > This step needs to be performed in the same tenant that your Microsoft 365 Backup Storage application was created and registered in. That is, this should be performed in your tenant (and not your customer's tenants). Failure to do so will mean that your request to create a Billing Policy will be rejected.
 
-Microsoft 365 Backup is a pay-as-you-go offering that charges based on consumption, unlike traditional seat-based licenses. To set up pay-as-you-go for Microsoft 365 Backup, you'll need to have this information:
+Microsoft 365 Backup is a pay-as-you-go offering that charges based on consumption, unlike traditional seat-based licenses. To set up pay-as-you-go for Microsoft 365 Backup, you need to have this information:
 
 - **Valid Azure subscription.** An Azure subscription provides a logical container for your resources. Each Azure resource is associated with only one subscription. Creating a subscription is the first step in adopting Azure. To learn more about Azure, see [Azure fundamental concepts](/azure/cloud-adoption-framework/ready/considerations/fundamental-concepts).
 
@@ -98,7 +98,7 @@ You have successfully set up pay-as-you-go billing.
 
 ### Step 2: Submit a request to Microsoft to create a Billing Policy for your application
 
-To create a Billing Policy for your application and the pay-as-you-go billing configured in the previous step, you'll need to perform the following steps:
+To create a Billing Policy for your application and the pay-as-you-go billing configured in the previous step, you need to perform the following steps:
 
 1. Review the [Microsoft 365 terms of service](../backup-preview-terms-third-party.md).
 
