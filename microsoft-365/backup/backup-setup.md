@@ -147,6 +147,7 @@ Follow these steps to set up a backup policy for OneDrive accounts using Microso
 
     The CSV upload feature for bulk addition of sites or user accounts in the backup policy creation workflow can accommodate a maximum of 50,000 entries per CSV file.
 --->
+<!---
 7. Once you've made the right selections, select **Next** to create the backup policy for OneDrive.
 
 8. On the **Review OneDrive backup policy** page, review the information to make sure it's how you want it, and then select **Create policy** (or **Update policy** if it's an update).
@@ -216,6 +217,7 @@ Follow these steps to set up a backup policy for SharePoint sites using Microsof
 
     The CSV upload feature for bulk addition of sites or user accounts in the backup policy creation workflow can accommodate a maximum of 50,000 entries per CSV file.
 --->
+<!---
 7. Once you've made the right selections, select **Next** to create the backup policy for SharePoint.
 
 8. On the **Review SharePoint backup policy** page, review the information to make sure it's how you want it, and then select **Create policy** (or **Update policy** if it's an update).
@@ -289,6 +291,7 @@ Follow these steps to set up a backup policy for Exchange mailboxes sites using 
 
     The CSV upload feature for bulk addition of sites or user accounts in the backup policy creation workflow can accommodate a maximum of 50,000 entries per CSV file.
 --->
+<!---
 7. Once you've made the right selections, select **Next** to create the backup policy for Exchange.
 
 8. On the **Review Exchange backup policy** page, review the information to make sure it's how you want it, and then select **Create policy** (or **Update policy** if it's an update).
