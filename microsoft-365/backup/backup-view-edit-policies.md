@@ -274,8 +274,8 @@ Follow these steps to view and edit backup policies for OneDrive.
 
     ![Screenshot of the updated OneDrive accounts backup policy panel in the Microsoft 365 admin center.](../media/m365-backup/backup-policy-updated-account.png)
 
-> [!NOTE]
-> Removing accounts from backup policy means no future backups will be taken for those removed accounts. Existing backups for those accounts will not be deleted.
+    > [!NOTE]
+    > Removing accounts from backup policy means no future backups will be taken for those removed accounts. Existing backups for those accounts will not be deleted.
 
 # [SharePoint](#tab/sharepoint)
 
@@ -303,8 +303,8 @@ Follow these steps to view and edit backup policies in SharePoint.
 
     ![Screenshot of the updated SharePoint sites backup policy panel in the Microsoft 365 admin center.](../media/m365-backup/backup-policy-updated-sites.png)
 
-> [!NOTE]
-> Removing sites from backup policy means no future backups will be taken for those removed sites. Existing backups for the removed sites will not be deleted.
+    > [!NOTE]
+    > Removing sites from backup policy means no future backups will be taken for those removed sites. Existing backups for the removed sites will not be deleted.
 
 # [Exchange](#tab/exchange)
 
