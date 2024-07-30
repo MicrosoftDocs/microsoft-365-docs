@@ -20,7 +20,7 @@ description: Learn how to restore data using restore points and express restore 
 
 Once you back up your data, you might need to restore the data if there was an accidental deletion, ransomware attack, or other event. The restore feature in Microsoft 365 Backup is created to help you restore backed up data.
 
-As part of restoring data from backup, admin needs to choose a *restore point* manually or from a recommended *express restore point* by the tool. A restore point is a prior point in time from which you can restore a healthy version of your content or metadata. For Exchange Online, if the data from a prior point in time is identical to the present state of your data, then there will be no items restored, including **Restore to a new folder**.
+As part of restoring data from backup, admin needs to choose a *restore point* manually or from a tool-recommended OneDrive or SharePoint *express restore point*. A restore point is a prior point in time from which you can restore a healthy version of your content or metadata. For Exchange Online, if the data from a prior point in time is identical to the present state of your data, then there will be no items restored, including Restore to a new folder.
 <!---
 - **Restore point**. A prior point in time from which you can restore a healthy version of your content or metadata. For Exchange Online, if the data from a prior point in time is identical to the present state of your data, then there will be no items restored, including **Restore to a new folder**.
 
@@ -44,19 +44,17 @@ The restore point frequency, also known as the [recovery point objective](backup
 
 |Type  |RPO for 0-14 days in the past  |RPO for 15-365 days in the past  |
 |---------|---------|---------|
-|Full OneDrive account and full SharePoint site restore    |15 minutes     |One week     |
+|Full OneDrive account and full SharePoint site restore    |10 minutes     |One week     |
 |Exchange Online   |10 minutes         |10 minutes         |
 
 ## Restore data from backup for OneDrive, SharePoint, and Exchange
 
-Once you back up your data, you might need to restore the data if there was an accidental deletion, ransomware attack, or other event. The restore feature in Microsoft 365 Backup is created to help you restore backed up data.
-
-> [!NOTE]
-> We recommend choosing an express restore point for full account, site, or mailbox restores as it will provide the fastest restore experience. Express restore is currently available only for SharePoint and OneDrive.
-
 Select the **OneDrive**, **SharePoint**, or **Exchange** tab for steps to restore data from backup for that product.
 
 # [OneDrive](#tab/onedrive)
+
+> [!NOTE]
+> We recommend choosing an express restore point for full account or site, restores as it will provide the fastest restore experience. Express restore is currently only relevant for SharePoint and OneDrive.
 
 Follow these steps to restore data backed up for OneDrive.
 
@@ -105,6 +103,9 @@ Follow these steps to restore data backed up for OneDrive.
     ![Screenshot showing the Review and finish page for OneDrive.](../media/m365-backup/backup-onedrive-review-finish.png)
 
 # [SharePoint](#tab/sharepoint)
+
+> [!NOTE]
+> We recommend choosing an express restore point for full account or site, restores as it will provide the fastest restore experience. Express restore is currently only relevant for SharePoint and OneDrive.
 
 Follow these steps to restore data backed up for SharePoint.
 
@@ -261,13 +262,11 @@ Microsoft 365 Backup supports the backup and restoration of any site and user ac
 
     - Megan, the Backup admin, enables a policy for the SharePoint site “HR Hub” on February 1, 2025, at 8:00 AM PST. At 10:00 AM PST, she has the option of rolling back the state of the site to any 10-minute period between 8:00 AM and 10:00 AM PST.
 
-    - On April 1, 2025, she has the option to roll back the site to any 10-minute period in the prior 14 days (that is, any 10-minute period between March 18 and the current date-time). If she wants to choose an earlier prior point in time, she would need to choose March 15, 8, or 1, and so on, back through February 1.
+    - On April 1, 2025, she has the option to roll back the site to any 10-minute period in the prior 14 days (that is, any 10-minute period between March 18 and the current date-time). If she wants to choose an earlier prior point in time, she would need to choose March 15, 8, or 1, and so on, back through February 1O.
 
-    - Megan then adds a user’s mailbox to the policy on February 1, 2025, at 11:00 AM PST. She will have the option of rolling back the state of mailbox to any 10-minute period during the entire retention period.
+    - Megan then adds a user’s mailbox to the policy on February 1, 2025, at 11:00 AM PST. She will have the option of rolling back the state of mailbox to any 10-minute period during the entire retention period, or up to 52 weeks if the policy was created at least 52 weeks in the past.
 
-- Users whose Microsoft Entra ID has been delete will be display as blank lines in the restore picker experience for OneDrive and Exchange Online since those users no longer exist in the environment. Rest assured, their historical backups still exist in the Backup tool, but some special handling is needed to restore them.
-
-- While OneDrive account and mailbox backups of deleted users are maintained and after the user’s Microsoft Entra ID is deleted are restorable, search in the people picker UI for that user won't work. The user is displayed as an empty user in results, requiring a guess-and-check methodology.
+- Users whose Microsoft Entra ID has been delete will be displayed as blank lines in the restore picker experience for OneDrive and Exchange Online since those users no longer exist in the environment. Rest assured, their historical backups still exist in the Backup tool, but some [special handling is needed to restore them](backup-faq.md#what-is-the-service-recovery-point-objective).
 
 - Mailbox draft items aren't backed up or restorable.
 
