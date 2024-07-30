@@ -48,13 +48,13 @@ Follow these steps to set up a backup policy for OneDrive accounts using Microso
 
     ![Screenshot of the Choose selection method page for OneDrive.](../media/m365-backup/backup-choose-selection-method-onedrive.png)
 
-    a. Under **Upload a list of accounts in a CSV file**, you can upload a list of accounts to backup via a CSV file.
+    a. Under **Upload a list of accounts in a CSV file**, you can upload a list of accounts to back up via a CSV file.
 
     The CSV upload feature for bulk addition of sites or user accounts in the backup policy creation workflow can accommodate a maximum of 50,000 entries per CSV file.
 
     b. Under **Back up accounts that match specific filters**, you can select **Distribution lists** or **Security groups**, or both. The distribution list and security group are flattened when added, meaning the policy won't update dynamically if the groups or distribution list are updated later.
 
-    The rule-based feature for bulk addition of user accounts via security groups or distribution lists can accommodate a maximum of three groups at a time. These rules are static and applied one time only. That is, the security groups or distribution lists are flattened at the time of adding to the backup configuration policy. For example. groups or list won't be dynamically updated in the system if users are added or removed from the original security group.
+    The rule-based feature for bulk addition of user accounts via security groups or distribution lists can accommodate a maximum of three groups at a time. These rules are static and applied one time only. That is, the security groups or distribution lists are flattened at the time of adding to the backup configuration policy. For example, groups or lists won't be dynamically updated in the system if users are added or removed from the original security group.
 
     > [!NOTE]
     > The site last modified feature is in preview.
@@ -93,7 +93,7 @@ Follow these steps to set up a backup policy for SharePoint sites using Microsof
 
     ![Screenshot of the Choose selection method page for SharePoint.](../media/m365-backup/backup-choose-selection-method-sharepoint.png)
 
-    a. Under **Upload a list of sites in a CSV file**, you can upload a list of accounts to backup via a CSV file.
+    a. Under **Upload a list of sites in a CSV file**, you can upload a list of accounts to back up via a CSV file.
 
     The CSV upload feature for bulk addition of sites or user accounts in the backup policy creation workflow can accommodate a maximum of 50,000 entries per CSV file.
 
@@ -140,7 +140,7 @@ Follow these steps to set up a backup policy for Exchange mailboxes sites using 
 
     ![Screenshot of the Choose selection method page for Exchange.](../media/m365-backup/backup-choose-selection-method-exchange.png)
 
-    a. Under **Upload a list of mailboxes in a CSV file**, you can upload a list of accounts to backup via a CSV file.
+    a. Under **Upload a list of mailboxes in a CSV file**, you can upload a list of accounts to back up via a CSV file.
 
     The CSV upload feature for bulk addition of mailboxes in the backup policy creation workflow can accommodate a maximum of 50,000 entries per CSV file.
 
@@ -168,7 +168,7 @@ Follow these steps to set up a backup policy for Exchange mailboxes sites using 
 
 ## View and edit backup policies
 
-You can edit the scope of OneDrive accounts, SharePoint sites, and Exchange mailboxes  associated with a backup policy. As part of edit, you can either add new accounts, sites, or mailboxes to or remove them from backup. Removing accounts, sites, and mailboxes from Microsoft 365 Backup doesn't mean existing backups will be deleted, rather it means additional backups will not be taken.
+You can edit the scope of OneDrive accounts, SharePoint sites, and Exchange mailboxes  associated with a backup policy. As part of edit, you can either add new accounts, sites, or mailboxes to or remove them from backup. Removing accounts, sites, and mailboxes from Microsoft 365 Backup doesn't mean existing backups will be deleted, rather it means additional backups won't be taken.
 
 Select the **OneDrive**, **SharePoint**, or **Exchange** tab for steps to view and edit backup policies for that product.
 
@@ -186,7 +186,7 @@ Follow these steps to view and edit backup policies for OneDrive.
 
     a. To add new accounts, on the **Backed up accounts** tab, select **+ Add accounts**.
 
-    b. Select the accounts from the list. Once you have added accounts to the list, follow the prompts to update the policy.
+    b. Select the accounts from the list. Once you add accounts to the list, follow the prompts to update the policy.
 
     ![Screenshot showing how to add user accounts to the existing OneDrive backup policy in the Microsoft 365 admin center.](../media/m365-backup/backup-policy-add-account.png)
 
@@ -219,7 +219,7 @@ Follow these steps to view and edit backup policies in SharePoint.
 
     ![Screenshot showing how to add sites to the existing SharePoint backup policy in the Microsoft 365 admin center.](../media/m365-backup/backup-sharepoint-add-site.png)
 
-    c. To remove sites from existing SharePoint backup policy, on the **Backed up sites** tab,select the relevant sites, and then select **Remove**. Once you have done your changes, follow the prompts to remove the sites.
+    c. To remove sites from existing SharePoint backup policy, on the **Backed up sites** tab, select the relevant sites, and then select **Remove**. Once you have done your changes, follow the prompts to remove the sites.
 
     ![Screenshot showing how to remove sites from SharePoint backup policy in the Microsoft 365 admin center.](../media/m365-backup/backup-policy-remove-site.png)
 
