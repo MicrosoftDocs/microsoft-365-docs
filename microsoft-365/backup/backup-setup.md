@@ -48,25 +48,25 @@ Once you have the information on this list, you are ready to [set up pay-as-you-
 
 ### Permissions
 
-You must have Global admin or SharePoint admin permissions to access the Microsoft 365 admin center and set up Microsoft 365 Backup.
+You must be a [SharePoint Administrator](/entra/identity/role-based-access-control/permissions-reference#sharepoint-administrator) or [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) to be able to access the Microsoft 365 admin center and set up Microsoft 365 Backup.
+
+[!INCLUDE [global-administrator-note](../includes/global-administrator-note.md)]
 
 ## Step 2: Turn on Microsoft 365 Backup
 
 To turn on Microsoft 365 Backup, you'll need to go to the Microsoft 365 admin center.
 
-1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home).
+1. In the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home), select **Setup**.
 
-2. Select **Setup**.
+2. Under **Files and content**, select **Automate content processes with Syntex**.
 
-3. On the **Setup** page, in the **Files and content** section, select **Use content AI with Microsoft Syntex**.
+3. On the **Automate content processes with Syntex** page, select **Go to Syntex settings**.
 
-4. On the **Use content AI with Microsoft Syntex** page, select **Manage Microsoft Syntex**.
+4. On the Syntex page, in the left navigation, select **Storage**. From the list of products, select **Backup Preview**.
 
-5. From the list of products, select **Backup Preview**.
+5. By default, the feature is turned off. On the **Backup** panel, select **Turn on** to enable Microsoft 365 Backup for your organization.
 
-6. By default, the feature is turned off. Select **Turn on** to enable Microsoft 365 Backup for your organization.
-
-7. Review the applicable [terms of service for Microsoft 365 Backup](backup-preview-terms.md) and select **Confirm**.
+6. Review the applicable [terms of service for Microsoft 365 Backup](backup-preview-terms.md) and select **Confirm**.
 
     ![Screenshot of the Turn on Backup panel and the Confirm button.](../media/m365-backup/backup-setup-turn-on.png)
 <!---
@@ -229,9 +229,9 @@ Only tenant-level admins can create and manage backups using Microsoft 365 Backu
 
 |Admin role  |OneDrive  |SharePoint  |Exchange  |
 |---------|---------|---------|---------|
-|Global admin     | ✓        | ✓        | ✓       |
-|SharePoint admin     | ✓        | ✓        |         |
-|Exchange admin    |         |         | ✓        |
+|Global Administrator     | ✓        | ✓        | ✓       |
+|SharePoint Administrator     | ✓        | ✓        |         |
+|Exchange Administrator    |         |         | ✓        |
 
 ## Glossary
 

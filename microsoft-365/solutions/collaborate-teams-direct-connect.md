@@ -104,7 +104,7 @@ As part of this configuration, we enable the **Office 365** application, which i
 Add each organization with which you want to participate in shared channels.
 
 To add an organization
-1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) using a Global administrator or Security administrator account.
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) using a Security administrator account.
 1. Select **External Identities**, and then select **Cross-tenant access settings**.
 1. Select **Organizational settings**.
 1. Select **Add organization**.

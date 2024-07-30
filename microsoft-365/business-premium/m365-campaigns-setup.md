@@ -27,7 +27,7 @@ description: "Setup overview for Microsoft 365 for Campaigns or other businesses
 
 This article describes how to get Microsoft 365 for Campaigns (a special offering for campaigns and political parties in the USA), how to complete the basic setup process, and identify next steps.
 
-:::image type="content" source="media/mission1.png" alt-text="Diagram showing the Sign in and set up phase highlighted.":::
+:::image type="content" source="media/mission1.png" alt-text="Diagram showing the Sign in and set up phase highlighted." lightbox="media/mission1.png":::
 
 ## Get Microsoft 365 for Campaigns
 
@@ -73,7 +73,6 @@ There's no minimum time commitment when you sign up for Microsoft 365 for Campai
 
 3. After we've verified that you represent a national-level political campaign or party, you'll receive an email invitation from Microsoft. Your invite includes a sign-up link specific to your organization.
 
-
 After you have subscribed to Microsoft 365 for Campaigns, your next step is to get everything set up.
 
 ## Before you begin your setup process
@@ -105,7 +104,7 @@ Make sure that you meet the following requirements before you begin your setup p
 
 Users who have been added to your Microsoft 365 for Campaigns (or Microsoft 365 Business Premium) subscription can sign in using the following steps:
 
-1. Go to [https://office.com](https://office.com).
+1. Go to <https://office.com>.
 
 2. Sign in using the username and password for the account. Users will have this information in the email they receive when they are added as users. If they can't find the email, see [user didn't receive invite email](../admin/simplified-signup/admin-invite-business-standard.md#i-shared-an-email-invite-but-the-user-didnt-receive-the-email).
 
@@ -135,7 +134,7 @@ For examples of privacy and consent notices, see Appendix A in [Searching and Se
 
 To help your staff learn about steps to protect your campaign from cyber threats, use this downloadable guide:
 
-[![Image for secure your help protect your campaign info graphic.](../media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pdf)
+[:::image type="content" source="media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png" alt-text="Image for secure your help protect your campaign info graphic.":::](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pdf)
 
 [PDF](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pdf) | [PowerPoint](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pptx)
 

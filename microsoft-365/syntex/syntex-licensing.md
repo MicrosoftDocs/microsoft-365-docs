@@ -54,7 +54,7 @@ More Syntex services will be added as they become available.
 
 ### Feature limited preview
 
-Pay-as-you-go licensing includes access to additional Syntex features for a limited time as a preview. You won't be charged on a pay-as-you-go basis during the preview. These features include:
+Pay-as-you-go licensing includes access to additional Syntex features for a limited time as a preview. The feature limited preview ends September 20, 2024. You won't be charged on a pay-as-you-go basis during the preview. These features include:
 
 - Content query
 - Universal annotations

@@ -34,7 +34,7 @@ The Health dashboard is designed to give you a snapshot of the overall health of
 
 :::image type="content" source="../../media/new-health-dashboard-location.jpg" alt-text="Screenshot: Choose Health from Microsoft 365 admin center View menu":::
 
-You need to be a member of the global admin role or global reader role to access the health dashboard.
+You need to be a member of the global reader role to access the health dashboard.
 
 :::image type="content" source="../../media/health-dashboard-view.png" alt-text="Health dashboard":::
 
