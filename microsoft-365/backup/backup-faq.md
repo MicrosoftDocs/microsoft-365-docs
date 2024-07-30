@@ -71,7 +71,7 @@ Example events that aren't versioned or recoverable via backup:
 
 The recovery point objective (RPO) is the maximum amount of time between the most recent backup and a data destruction event. Stated another way, it’s the amount data lost due to a data destruction event not recoverable via the backups. For Microsoft 365 Backup, the RPOs are:
 
-- For OneDrive and SharePoint, the RPO for the first two weeks is 15 minutes, then one week beyond that. This means for the first two weeks, the most amount of data that can be lost due to a data destruction event is roughly 10 minute’s worth of the most recent data. Likewise, after two weeks, the most amount of data that can be lost is a week’s worth of data.
+- For OneDrive and SharePoint, the RPO for the first two weeks is 10 minutes, then one week beyond that. This means for the first two weeks, the most amount of data that can be lost due to a data destruction event is roughly 10 minute’s worth of the most recent data. Likewise, after two weeks, the most amount of data that can be lost is a week’s worth of data.
 
 - For Exchange Online, the RPO is 10 minutes, meaning the most amount of data that can be lost due to a data destruction event is roughly 10 minutes’s worth of data.
 
@@ -85,16 +85,22 @@ When a user is removed from the backup policy, the backup of the OneDrive accoun
 
 When a user is deleted from Microsoft Entra ID, the backup of the OneDrive account or Exchange mailbox is retained for one year from the date the backup was created.
 
-#### How can I restore the OneDrive account and Exchange mailbox for a user who is deleted from Microsoft Entra ID (formerly Azure Active Directory)?
+When a site is removed from the backup policy, the backup of the SharePoint site will be held for 52 weeks from the time a given restore point was created for that site.
+
+#### How can I restore the OneDrive account or Exchange mailbox for a user who is deleted from Microsoft Entra ID (formerly Azure Active Directory)?
 
 > [!NOTE]
-> Within 30 days of deletion, deleted users will appear as "–" in the user interface.
+> Within 30 days of deletion, deleted users will appear as "–" in the user interface. If the Entra ID has been deleted within the last 30 days, the best option is to restore that user based on these instructions: [Recover from deletions](/entra/architecture/recover-from-deletions] or [Restore a user](/microsoft-365/admin/add-users/restore-user). Once that's done, the blank lines seen in the OneDrive or Exchange Backup people picker will reappear and no additional special handling is needed.
 
-For OneDrive, if within 30 days of being deleted, you can restore the OneDrive to the original URL or a new URL. At that time, the OneDrive is in an "orphaned" state. To connect the OneDrive to a user, see [Fix site user ID mismatch in SharePoint or OneDrive](/sharepoint/troubleshoot/sharing-and-permissions/fix-site-user-id-mismatch).
+If the Microsoft Entra ID identity is not restored or has been hard deleted, those user's backups can be restored according to the following steps:
 
-For Exchange, a user account will be in a soft-deleted state for 30 days after it's deleted. To restore the user, see [Restore a user in the Microsoft 365 admin center](/microsoft-365/admin/add-users/restore-user). Once you restore the user, you can use the restore feature in Microsoft 365 Backup to restore as usual.
+- For OneDrive, you can restore the OneDrive to the original URL or a new URL. At that time, the OneDrive is in an "orphaned" state. To connect the OneDrive to a user, see [Fix site user ID mismatch in SharePoint or OneDrive](/sharepoint/troubleshoot/sharing-and-permissions/fix-site-user-id-mismatch).
 
-For Exchange, if the user account is permanently deleted, Microsoft 365 Backup retains the inactive mailbox for the duration of the backup policy. To recover and restore the inactive mailbox, see the following guidance:
+- For Exchange, if the user account is permanently deleted, Microsoft 365 Backup retains the inactive mailbox for the duration of the backup policy. To recover and restore the inactive mailbox, see the following guidance:
 
-- [Recover an inactive mailbox](/purview/recover-an-inactive-mailbox)
-- [Restore an inactive mailbox](/purview/restore-an-inactive-mailbox)
+    - [Recover an inactive mailbox](/purview/recover-an-inactive-mailbox)
+    - [Restore an inactive mailbox](/purview/restore-an-inactive-mailbox)
+
+<!---
+- For Exchange, a user account will be in a soft-deleted state for 30 days after it's deleted. To restore the user, see [Restore a user in the Microsoft 365 admin center](/microsoft-365/admin/add-users/restore-user). Once you restore the user, you can use the restore feature in Microsoft 365 Backup to restore as usual.
+--->
