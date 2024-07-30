@@ -39,7 +39,7 @@ landingContent:
         links:
           - text: Set up Microsoft 365 Backup
             url: backup-setup.md
-          - text: Set up billing
+          - text: Manage billing and invoices
             url: backup-billing.md
           - text: Pricing model
             url: backup-pricing.md
@@ -49,7 +49,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: View and edit backup policies
+          - text: Create, view, and edit backup policies
             url: backup-view-edit-policies.md
           - text: Restore data
             url: backup-restore-data.md
