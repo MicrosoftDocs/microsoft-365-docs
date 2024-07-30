@@ -32,7 +32,7 @@ On the **Notifications** page, you can send SMS messages, set up reminders, and 
 
 **Reminders and notifications** are sent out to customers, staff members, or both, at a specified time before the appointment. Multiple messages can be created for each appointment, according to your preference.
 
-:::image type="content" source="media/notify-booking-confirmed.png" alt-text="Screenshot showing the Booking details for a confirmed booking."lightbox="notify-booking-confirmed.png":::
+:::image type="content" source="media/notify-booking-confirmed.png" alt-text="Screenshot showing the Booking details for a confirmed booking." lightbox="media/notify-booking-confirmed.png":::
 
 You can include any additional text you would like here, such as information about rescheduling or what customers should bring for the appointment. 
 

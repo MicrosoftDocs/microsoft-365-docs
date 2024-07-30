@@ -44,4 +44,6 @@ To configure your services as "Not bookable" for the specified dates, follow the
 4. Enter the period for which you will not accept any bookings for this service.
 5. Select **Not Bookable**.
 
+:::image type="content" source="media/bookable-staff-free.png" alt-text="Screenshot showing the availability of a staff member for a service in Bookings." lightbox="media/bookable-staff-free.png":::
+
 Configuring service availability in Microsoft Bookings offers a tailored approach to appointment scheduling, aligning staff availability with customer bookings seamlessly. Whether it's recurring sessions or custom date ranges, Bookings empowers businesses to optimize their resources and enhance customer experience.
