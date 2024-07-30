@@ -262,9 +262,9 @@ Microsoft 365 Backup supports the backup and restoration of any site and user ac
 
     - Megan, the Backup admin, enables a policy for the SharePoint site “HR Hub” on February 1, 2025, at 8:00 AM PST. At 10:00 AM PST, she has the option of rolling back the state of the site to any 10-minute period between 8:00 AM and 10:00 AM PST.
 
-    - On April 1, 2025, she has the option to roll back the site to any 10-minute period in the prior 14 days (that is, any 10-minute period between March 18 and the current date-time). If she wants to choose an earlier prior point in time, she would need to choose March 15, 8, or 1, and so on, back through February 1O.
+    - On April 1, 2025, she has the option to roll back the site to any 10-minute period in the prior 14 days (that is, any 10-minute period between March 18 and the current date-time). If she wants to choose an earlier prior point in time, she would need to choose March 15, 8, or 1, and so on, back through February 1, or up to 52 weeks if the policy was created at least 52 weeks in the past.
 
-    - Megan then adds a user’s mailbox to the policy on February 1, 2025, at 11:00 AM PST. She will have the option of rolling back the state of mailbox to any 10-minute period during the entire retention period, or up to 52 weeks if the policy was created at least 52 weeks in the past.
+    - Megan then adds a user’s mailbox to the policy on February 1, 2025, at 11:00 AM PST. She will have the option of rolling back the state of mailbox to any 10-minute period during the entire retention period.
 
 - Users whose Microsoft Entra ID has been delete will be displayed as blank lines in the restore picker experience for OneDrive and Exchange Online since those users no longer exist in the environment. Rest assured, their historical backups still exist in the Backup tool, but some [special handling is needed to restore them](backup-faq.md#what-is-the-service-recovery-point-objective).
 
