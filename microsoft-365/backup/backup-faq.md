@@ -90,7 +90,7 @@ When a site is removed from the backup policy, the backup of the SharePoint site
 #### How can I restore the OneDrive account or Exchange mailbox for a user who is deleted from Microsoft Entra ID (formerly Azure Active Directory)?
 
 > [!NOTE]
-> Within 30 days of deletion, deleted users will appear as "–" in the user interface. If the Entra ID has been deleted within the last 30 days, the best option is to restore that user based on these instructions: [Recover from deletions](/entra/architecture/recover-from-deletions] or [Restore a user](/microsoft-365/admin/add-users/restore-user). Once that's done, the blank lines seen in the OneDrive or Exchange Backup people picker will reappear and no additional special handling is needed.
+> Within 30 days of deletion, deleted users will appear as "–" in the user interface. If the Microsoft Entra ID has been deleted within the last 30 days, the best option is to restore that user based on these instructions: [Recover from deletions](/entra/architecture/recover-from-deletions) or [Restore a user](/microsoft-365/admin/add-users/restore-user). Once that's done, the blank lines seen in the OneDrive or Exchange Backup people picker will reappear and no additional special handling is needed.
 
 If the Microsoft Entra ID identity is not restored or has been hard deleted, those user's backups can be restored according to the following steps:
 
