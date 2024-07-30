@@ -20,7 +20,7 @@ description: Learn how to track your SharePoint eSignature requests using the Ap
 
 # Track and manage SharePoint eSignature requests using Approvals in Microsoft Teams
 
-You can now track your SharePoint eSignature requests in Microsoft Teams. Whenever you send or receive an eSignature request, in addition to an email notification, you'll also receive notifications from Microsoft Teams via the Approvals app. You can see the latest status of eSignature requests, initiate signing, and get access to the SharePoint location where the signed document was saved to.
+You can now track your SharePoint eSignature requests in Microsoft Teams. Whenever you send or receive an eSignature request, in addition to an email notification, you'll also receive notifications from Microsoft Teams via the Approvals app. You can see the latest status of eSignature requests, initiate signing, and get access to the SharePoint location where the signed document was saved to. You would need to download and install the Approvals app from the Teams apps store if you don't already have the Approvals app installed in Teams
 
 To view a list of your eSignature requests, follow these steps:
 
