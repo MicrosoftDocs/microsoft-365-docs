@@ -29,7 +29,7 @@ ms.date: 02/20/2024
 
 The Virtual Appointments usage report in the Microsoft Teams admin center gives you an overview of Teams Virtual Appointments activity in your organization. You can view detailed activity for virtual appointments scheduled through the [Bookings app](https://support.microsoft.com/office/what-is-bookings-42d4e852-8e99-4d8f-9b70-d7fc93973cb5) and the [Microsoft Teams Electronic Health Record (EHR) connector](teams-in-hc.md#provide-seamless-virtual-visits).
 
-To view the report, you must be a Global admin, Teams admin, Global reader, or Report reader.
+To view the report, you must be Teams admin, Global reader, or Report reader.
 
 The report contains the following tabs. The information you see in the report depends on the license you have.
 

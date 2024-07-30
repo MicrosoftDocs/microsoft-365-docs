@@ -3,10 +3,11 @@ title: Join or leave a multitenant organization in Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 08/17/2023
+ms.date: 06/24/2024
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
+ms.subservice: multi-tenant
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -36,7 +37,10 @@ When you leave a multitenant organization, the cross-tenant access settings and 
 
 ## Join an existing multitenant organization
 
-To join an existing multitenant organization in Microsoft 365
+> [!IMPORTANT]
+> Microsoft recommends that you use roles with the fewest permissions. Using lower permissioned accounts helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
+
+To join an existing multitenant organization in Microsoft 365:
 
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) as a global administrator.
 1. Expand **Settings** and select **Org settings**.
@@ -59,7 +63,10 @@ The next step after you join the multitenant organization is to synchronize your
 
 You can leave a multitenant organization as long as your tenant isn't the last owner tenant in the multitenant organization. You can also remove other member tenants.
 
-To remove a tenant from a multitenant organization in Microsoft 365
+> [!IMPORTANT]
+> Microsoft recommends that you use roles with the fewest permissions. Using lower permissioned accounts helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
+
+To remove a tenant from a multitenant organization in Microsoft 365:
 
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) as a global administrator.
 1. Expand **Settings** and select **Org settings**.
@@ -81,6 +88,9 @@ To remove the cross-synchronized users:
 - For the tenant that is leaving the multitenant organization, update the synchronization configurations for each remaining tenant in the multitenant organization where you're synchronizing users.
 
 - For each tenant that's remaining in the multitenant organization, update the synchronization configuration for the tenant that's leaving.
+
+> [!IMPORTANT]
+> Microsoft recommends that you use roles with the fewest permissions. Using lower permissioned accounts helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
 
 To remove your users from other tenants in a multitenant organization:
 
@@ -105,6 +115,9 @@ To prevent user sync and automatic invitation redemption:
 - For the tenant that is leaving the multitenant organization, update the cross-tenant access settings for each tenant that's remaining in the multitenant organization.
 
 - For each tenant that's remaining in the multitenant organization, update the cross-tenant access settings for the tenant that's leaving.
+
+> [!IMPORTANT]
+> Microsoft recommends that you use roles with the fewest permissions. Using lower permissioned accounts helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
 
 To prevent user sync and automatic invitation redemption:
 

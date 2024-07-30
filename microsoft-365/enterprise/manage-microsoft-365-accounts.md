@@ -7,6 +7,7 @@ ms.date: 12/27/2023
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-enterprise
+ms.subservice: administration
 ms.localizationpriority: medium
 f1.keywords:
 - CSH

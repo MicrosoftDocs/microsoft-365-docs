@@ -11,8 +11,7 @@ ms.service: microsoft-365-backup
 ms.custom: backup
 search.appverid:
 ms.collection:
-    - enabler-strategic
-    - m365initiative-syntex
+    - essentials-overview
 ms.localizationpriority:  medium
 description: Learn about the backup and recovery capabilities for SharePoint, Exchange Online, and OneDrive for Business using Microsoft 365 Backup.
 ---

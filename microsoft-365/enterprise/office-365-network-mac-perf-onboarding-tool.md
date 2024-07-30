@@ -7,6 +7,7 @@ ms.date: 04/05/2024
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
+ms.subservice: network
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -296,7 +297,7 @@ You can double select on the executable to start the testing and a command promp
 
 ### Launching from the Command Prompt
 
-In a CMD.EXE command prompt window, you can type the path and name of the executable to run it. The filename is Microsoft.Connectivity.Test.exe.
+In a CMD.EXE command prompt window, you can type the path and name of the executable to run it. The filename is MicrosoftConnectivityTest.exe.
 
 ### Launching from Windows Task Scheduler
 

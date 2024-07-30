@@ -8,6 +8,7 @@ manager: scotv
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
+ms.subservice: multi-tenant
 f1.keywords:
 - NOCSH
 ms.custom: admindeeplinkSPO

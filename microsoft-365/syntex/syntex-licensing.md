@@ -40,20 +40,21 @@ Pay-as-you-go currently supports the following Syntex services:
 - Prebuilt document processing
 - Structured and freeform document processing
 - Unstructured document processing
+- Autofill columns
 - Content assembly
 - Image tagging
 - Taxonomy tagging
 - Translation
 - Syntex eSignature
 - Optical character recognition
-- Microsoft 365 Archive (Preview)
+- Microsoft 365 Archive
 - Microsoft 365 Backup (Preview)
 
 More Syntex services will be added as they become available.
 
 ### Feature limited preview
 
-Pay-as-you-go licensing includes access to additional Syntex features for a limited time as a preview. You won't be charged on a pay-as-you-go basis during the preview. These features include:
+Pay-as-you-go licensing includes access to additional Syntex features for a limited time as a preview. The feature limited preview ends September 20, 2024. You won't be charged on a pay-as-you-go basis during the preview. These features include:
 
 - Content query
 - Universal annotations

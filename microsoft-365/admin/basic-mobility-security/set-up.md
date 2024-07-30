@@ -17,6 +17,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+- basic-mobility-security
 ms.custom:
 - VSBFY23
 - AdminSurgePortfolio
@@ -33,15 +34,17 @@ Check out all of our small business content on [Small business help & learning](
 
 The built-in Basic Mobility and Security for Microsoft 365 helps you secure and manage users' mobile devices such as iPhones, iPads, Androids, and Windows phones. You can create and manage device security policies, remotely wipe a device, and view detailed device reports.
 
-Have questions? For a FAQ to help address common questions, see [Basic Mobility and Security Frequently asked questions (FAQs)](frequently-asked-questions.yml). Be aware that you cannot use a delegated administrator account to manage Basic Mobility and Security. For more info, see [Partners: Offer delegated administration](https://support.microsoft.com/office/partners-offer-delegated-administration-26530dc0-ebba-415b-86b1-b55bc06b073e). 
+Have questions? For a FAQ to help address common questions, see [Basic Mobility and Security Frequently asked questions (FAQs)](frequently-asked-questions.yml). Be aware that you cannot use a delegated administrator account to manage Basic Mobility and Security. For more info, see [Partners: Offer delegated administration](https://support.microsoft.com/office/partners-offer-delegated-administration-26530dc0-ebba-415b-86b1-b55bc06b073e).
 
 ## Activate the Basic Mobility and Security service
 
-1. Sign in to Microsoft 365 with your global admin account.
+1. Sign in to Microsoft 365 with a [Directory writers](/entra/identity/role-based-access-control/permissions-reference) admin account.
 
-2. Go to <a href="https://admin.cloud.microsoft/EAdmin/Device/IntuneInventory.aspx" target="_blank">Activate Basic Mobility and Security</a>.
+1. Go to [Activate Basic Mobility and Security](https://compliance.microsoft.com/basicmobilityandsecurity).
 
-   It can take some time to activate Basic Mobility and Security. When it finishes, select **Manage devices** on the page. You'll also receive an email that explains the next steps to take if you don't see the Manage devices page.
+1. Select **Enable feature.**
+
+   It can take some time to activate Basic Mobility and Security. If the feature is already activated, the **Enable feature** option will not appear.
 
 ## Set up Mobile Device Management
 
@@ -62,36 +65,35 @@ After you add the two CNAME records, go back to the Security & Compliance Center
 
 ### Step 2: (Required) Configure an APNs Certificate for iOS devices
 
-To manage iOS devices like iPad and iPhones, you need to create an APNs certificate.
+To manage iOS devices like iPad and iPhones, you need to create an Apple Push Notification service (APNs) certificate.
 
-1. Sign in to Microsoft 365 with your global admin account.
+1. Sign in to Microsoft Azure with a [Directory writers](/entra/identity/role-based-access-control/permissions-reference) admin account.
 
-2. Go to the <a href="https://admin.cloud.microsoft/?#/MifoDevices" target="_blank">Microsoft 365 admin center</a>, and choose **APNs Certificate for iOS**.
+1. Go to [Configure MDM Push Certificate](https://portal.azure.com/#view/Microsoft_Intune_Enrollment/APNSCertificateUploadBlade).
 
-3. On the Apple Push Notification Certificate Settings page, choose **Next**.
+1. Select **I agree** to authorize Microsoft to communicate with Apple.
 
-4. Select **Download your CSR file** and save the Certificate signing request to somewhere on your computer that you'll remember. Select **Next**.
+1. Select **Download your CSR** and save the certificate signing request to a location on your computer that you'll remember. 
 
-5. On the Create an APNs certificate page:
+1. Select **Create your MDM push certificate** to open the Apple Push Certificates Portal.
 
-   - Select Apple APNS Portal to open the Apple Push Certificates Portal.
-   - Sign in with an Apple ID.
-
+   a. Sign in with an Apple ID.
+   
      > [!IMPORTANT]
      > Use a company Apple ID associated with an email account that will remain with your organization even if the user who manages the account leaves. Save this ID because you'll need to use the same ID when it's time to renew the certificate.
 
-   - Select Create a Certificate and accept the Terms of Use.
-   - Browse to the Certificate signing request you downloaded to your computer from Microsoft 365 and selectUpload.
-   - Download the APN certificate created by the Apple Push Certificate Portal to your computer.
-
+   b. Select **Create a Certificate** and accept the **Terms of Use**.
+   
+   c. Browse to the certificate signing request that you downloaded to your computer from Microsoft 365 and then select **Upload**.
+      
+   d. Download the APNs certificate created by the Apple Push Certificate Portal to your computer.
+   
      > [!TIP]
      > If you're having trouble downloading the certificate, refresh your browser.
 
-6. Go back to Microsoft 365 and select **Next**.
+1. Go back to Microsoft Azure and browse to the APNs certificate that you downloaded from the Apple Push Certificates Portal.
 
-7. Browse to the APN certificate you downloaded from the Apple Push Certificates Portal.
-
-8. Select **Finish**.
+1. Select **Upload**.
 
 ## Make sure users enroll their devices
 

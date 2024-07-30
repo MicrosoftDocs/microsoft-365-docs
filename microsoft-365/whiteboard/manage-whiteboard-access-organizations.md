@@ -6,7 +6,7 @@ manager: alexfaulkner
 ms.reviewer: 
 ms.date: 11/03/2021
 audience: admin
-ms.topic: article
+ms.topic: how-to
 ms.custom: 
 ms.service: whiteboard
 search.appverid: MET150

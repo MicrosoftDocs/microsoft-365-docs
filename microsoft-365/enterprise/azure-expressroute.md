@@ -7,6 +7,7 @@ ms.date: 03/15/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
+ms.subservice: network
 ms.localizationpriority: medium
 ms.collection:
 - scotvorg
@@ -67,6 +68,8 @@ The services that aren't included with ExpressRoute for Microsoft 365 are Micros
 
 > [!NOTE]
 > Microsoft Defender for Endpoint does not provide integration with Azure ExpressRoute. While this does not stop customers from defining ExpressRoute rules that enable connectivity from a private network to Microsoft Defender for Endpoint cloud services, it is up to the customer to maintain rules as the service or cloud infrastructure evolves.
+>
+> Outlook for Android, iOS, and Mac do not support integration with Azure ExpressRoute and have a required IP range to function properly. As such, any rules that impact AutoDiscover services need to be maintained by the customer.
 
 ## Implementing ExpressRoute for Microsoft 365
 

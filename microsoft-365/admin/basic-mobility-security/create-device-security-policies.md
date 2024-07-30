@@ -36,7 +36,7 @@ You can use Basic Mobility and Security to create device policies that help prot
 
 - Learn about the devices, mobile device apps, and security settings that Basic Mobility and Security supports. See [Capabilities of Basic Mobility and Security](capabilities.md).
 - Create security groups that include Microsoft 365 users that you want to deploy policies to and for users that you might want to exclude from being blocked access to Microsoft 365. We recommend that before you deploy a new policy to your organization, you test the policy by deploying it to a small number of users. You can create and use a security group that includes just yourself or a small number Microsoft 365 users that can test the policy for you. To learn more about security groups, see [Create, edit, or delete a security group](../email/create-edit-or-delete-a-security-group.md).
-- To create and deploy Basic Mobility and Security policies in Microsoft 365, you need to be a Microsoft 365 global admin. For more info, see [Roles and role groups in Microsoft Defender and Microsoft Purview compliance](../../security/office-365-security/scc-permissions.md).
+- To create and deploy Basic Mobility and Security policies in Microsoft 365, you need to be a Compliance administrator. For more info, see [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference).
 - Before you deploy policies, let your organization know the potential impacts of enrolling a device in Basic Mobility and Security. Depending on how you set up the policies, noncompliant devices can be blocked from accessing Microsoft 365 and data, including installed applications, photos, and personal information on an enrolled device, and data can be deleted.
 
 > [!NOTE]
@@ -90,7 +90,8 @@ To help secure your organization information, you should block app access to Mic
 **To block app access:**
 
 1. From your browser, type [https://compliance.microsoft.com/basicmobilityandsecurity](https://compliance.microsoft.com/basicmobilityandsecurity).
-2. Select **Manage organization-wide device access settings**.
+1. Select **Organization Setting** tab.
+
 3. To block unsupported devices, choose **Access** under **If a device isn't supported by Basic Mobility and Security for Microsoft 365**, and then select **Save**.
 
    :::image type="content" source="../../media/basic-mobility-security/basic-mobility-access.png" alt-text="Basic Mobility and Security block access option.":::
@@ -101,9 +102,9 @@ If you want to exclude some people from conditional access checks on their mobil
 
 1. From your browser, type [https://compliance.microsoft.com/basicmobilityandsecurity](https://compliance.microsoft.com/basicmobilityandsecurity).
 
-2. Select **Manage organization-wide device access settings**.
+1. Select  **Organization Setting** tab.
 
-   :::image type="content" source="../../media/basic-mobility-security/basic-mobility-microsoft-purview.png" alt-text="Basic Mobility and Security create a policy option.":::
+      :::image type="content" source="../../media/basic-mobility-security/basic-mobility-microsoft-purview.png" alt-text="Basic Mobility and Security create a policy option.":::
 
 3. Select **Add** to add the security group that has users you want to exclude from having blocked access to Microsoft 365. When a user has been added to this list, they can access Microsoft 365 email when they are using an unsupported device.
 
@@ -111,9 +112,9 @@ If you want to exclude some people from conditional access checks on their mobil
 
 5. Select the name, and then **Add** > **Save**.
 
-6. On the **Organization-wide device access settings** panel, choose **Save**.
+1. On the  **Organization Setting** panel, choose **Save**.
 
-   :::image type="content" source="../../media/basic-mobility-security/basic-mobility-groups.png" alt-text="Basic Mobility and Security allow access option.":::
+      :::image type="content" source="../../media/basic-mobility-security/basic-mobility-groups.png" alt-text="Basic Mobility and Security allow access option.":::
 
 ## What is the impact of security policies on different device types?
 

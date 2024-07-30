@@ -7,14 +7,14 @@ author: chrisda
 manager: deniseb
 audience: Admin
 ms.topic: how-to
-ms.service: microsoft-365-business
-ms.date: 10/26/2022
+ms.service: microsoft-365-business-security
+ms.date: 05/31/2024
 ms.localizationpriority: medium
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
 - highpri
-- tier1
+- tier2
 ms.custom:
 - MiniMaven
 search.appverid:
@@ -33,7 +33,7 @@ Because admin accounts come with elevated privileges, they're valuable targets f
 - [How to protect admin accounts](#protect-admin-accounts).
 - [Additional recommendations](#additional-recommendations) and your [Next step](#next-step).
 
-When you sign up for Microsoft 365 and enter your information, you automatically become the Global Administrator (also referred to as the Global admin). A Global admin has the ultimate control of user accounts and all the other settings in the Microsoft admin center ([https://admin.microsoft.com](https://admin.microsoft.com)), but there are many different kinds of admin accounts with varying degrees of access. See [about admin roles](/office365/admin/add-users/about-admin-roles) for information about the different access levels for each kind of admin role.
+When you sign up for Microsoft 365 and enter your information, you automatically become the Global Administrator (also referred to as the Global admin). A Global admin has the ultimate control of user accounts and all the other settings in the Microsoft admin center (<https://admin.microsoft.com>), but there are many different kinds of admin accounts with varying degrees of access. See [about admin roles](/office365/admin/add-users/about-admin-roles) for information about the different access levels for each kind of admin role.
 
 ## Create other admin accounts
 
@@ -48,7 +48,7 @@ To create more admin accounts:
 
  1. In the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=837890), choose **Users** \> **Active users** in the left nav.
 
-    ![Choose Users and then Active users in the left nav.](../media/Activeusers.png)
+    :::image type="content" source="media/Activeusers.png" alt-text="Choose Users and then Active users in the left nav." lightbox="media/Activeusers.png":::
 
  2. On the **Active users** page, select **Add a user** at the top of the page.
 
@@ -58,7 +58,7 @@ To create more admin accounts:
 
  5. In **Optional settings**, define the role of the user, including adding Admin center access if appropriate.
 
-    :::image type="content" source="media/m365bp-global-admin.png" lightbox="media/m365bp-global-admin.png" alt-text="Define new user roles.":::
+    :::image type="content" source="media/m365bp-global-admin.png" alt-text="Define new user roles." lightbox="media/m365bp-global-admin.png":::
 
  6. Finish and review your settings and select **Finish adding** to confirm the details.
 

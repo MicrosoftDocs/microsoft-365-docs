@@ -1,11 +1,11 @@
 ---
-title: End user experience in Microsoft 365 Archive (Preview)
+title: End user experience in Microsoft 365 Archive
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 04/11/2024
+ms.date: 04/30/2024
 ms.topic: conceptual
 ms.service: microsoft-365-archive
 ms.custom: archive
@@ -16,17 +16,29 @@ ms.localizationpriority:  medium
 description: Learn about end-user features for archived sites in Microsoft 365 Archive.
 ---
 
-# End user experience in Microsoft 365 Archive (Preview)
-
-> [!NOTE]
-> This feature is currently in preview and subject to change. The feature is currently rolling out and might not yet be fully available to all organizations.
+# End user experience in Microsoft 365 Archive
 
 End users aren't able to access or search for any content that has been archived. Whenever users try to access archived content, they see a message stating that the site has been archived.
 
 ![Screenshot of the Site is archived message end users receive when they try to access content that has been archived.](../media/m365-archive/site-is-archived-message.png)
 
-In Microsoft 365 Archive, admins have an option to set a custom URL where the users will be taken if they select **Request to reactivate** when they encounter archived content. As an admin, you can choose to send the end users to a form, ticketing system etc. This can take users to any place you choose, such as a form, a ticketing system, or other location. This custom URL can be set via a flag (``-ArchiveRedirectUrl``) in the Set-SPOTenant PowerShell cmdlet starting in version 16.0.23408.12000.
+In Microsoft 365 Archive, admins have an option to set a custom URL where the user requests for reactivation can be directed to. This can take users to any URL you choose, such as a form, a ticketing system, or other location accessible via a URL. Once configured, users will see a **Request to reactivate** button when they encounter archived content.
 
-For a multi-geo tenant, the URL needs to be set for each geo location.
+This custom URL can be set via a flag (``-ArchiveRedirectUrl``) in the Set-SPOTenant PowerShell cmdlet starting in version 16.0.23408.12000.
+
+```PowerShell
+Set-SPOTenant -ArchiveRedirectUrl <url>
+```
+
+**Example:** Set-SPOTenant -ArchiveRedirectUrl <https://contoso.sharepoint.com/sites/ReactivateSite>
+
+To remove the custom URL and the **Request to reactivate**  button:
+
+```PowerShell
+Set-SPOTenant -ArchiveRedirectUrl ""
+```
+
+> [!NOTE]
+>For a multi-geo tenant, the URL needs to be set for each geo location.
 
 The **Request to reactivate** button won't be visible if a redirect URL hasn't been set.

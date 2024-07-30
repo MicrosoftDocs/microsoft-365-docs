@@ -1,7 +1,7 @@
 ---
 title: "Manage guest access in Microsoft 365 groups"
 ms.reviewer: rahulnayak
-ms.date: 02/18/2020
+ms.date: 06/11/2024
 f1.keywords: NOCSH
 ms.author: jtremper
 author: jacktremper
@@ -17,10 +17,10 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
-  - AdminSurgePortfolio
-  - AdminTemplateSet
-  - admindeeplinkMAC
-  - has-azure-ad-ps-ref
+- AdminSurgePortfolio
+- AdminTemplateSet
+- admindeeplinkMAC
+- has-azure-ad-ps-ref
 search.appverid:
 - MET150
 - MOE150
@@ -57,10 +57,10 @@ If you want to enable or disable guest access in groups, you can do so in the <a
 
 If the guest already exists in your directory, you can add them to your groups from the <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Microsoft 365 admin center</a>. (Groups with dynamic membership must be [managed in Microsoft Entra ID](/azure/active-directory/enterprise-users/groups-create-rule).)
   
-1. In the admin center, go to the **Groups** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Groups**</a>.
-  
-2. Select the group you want to add the guest to, and select **View all and manage members** on the **Members** tab. 
-  
+1. In the admin center, go to **Teams & g****roups** > **[Active teams & groups](https://go.microsoft.com/fwlink/p/?linkid=2052855)**.
+
+1. Select the group you want to add the guest to, and select **Membership > Members**. 
+
 3. Select **Add members**, and choose the name of the guest you want to add.
 
 4. Select **Save**.

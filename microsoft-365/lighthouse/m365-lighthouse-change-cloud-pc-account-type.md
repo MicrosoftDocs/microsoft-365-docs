@@ -7,7 +7,7 @@ manager: scotv
 ms.reviewer: katmartin
 ms.date: 06/21/2023
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
@@ -36,6 +36,9 @@ Managed Service Provider (MSP) technicians may set the account type for a Busine
 ## Before you begin 
 
 You must be either a Windows 365 Administrator or a Global Administrator in the partner tenant.
+
+> [!CAUTION]
+> To help keep your organization secure, Microsoft recommends that you use roles with the minimum level of permissions needed to perform a job. Global Administrator is a highly privileged role that should be limited to scenarios where you can't use a less-privileged role.
 
 ## Set or change a Windows 365 Business Cloud PC account type
 
