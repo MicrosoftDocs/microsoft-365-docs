@@ -18,13 +18,10 @@ description: Learn about how to offboard usage in Microsoft 365 Backup.
 
 # Offboarding in Microsoft 365 Backup
 
-
 To no longer use the Microsoft 365 Backup tool, you must offboard usage. This action includes pausing and deleting all active policies and deleting all of the backed-up data. There are two ways that offboarding is initiated:
 
 - Disable the tool in the pay-as-you-go billing setup panel where you first enabled the tool.
-<!---
-- Call into support to ask Microsoft to offboard you from the tool. If you’d like offboarding to happen faster than default (with a minimum of 30 days), you can do this via the support call.
---->
+
 - If your billing account goes into an unhealthy state.
 
 ## Offboarding recovery undo period
