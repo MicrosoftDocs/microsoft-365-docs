@@ -54,7 +54,7 @@ Shared devices and bring-your-own-device (BYOD) are the most commonly adopted de
 <sup>1</sup>Dedicated devices are uncommon in frontline deployments primarily due to high cost and effort to manage in the context of high staff turnover.<br>
 <sup>2</sup>Kiosk device deployments aren’t recommended because they don’t allow user auditing and user-based security capabilities like multifactor authentication. [Learn more about kiosk devices](/windows/configuration/assigned-access).
 
-We focus on shared devices and BYOD as these are the deployment models that fit the practical needs of most frontline deployments. Read on for an overview of planning considerations and management capabilities.
+In this article, we focus on shared devices and BYOD, as these are the deployment models that fit the practical needs of most frontline deployments. Read on for an overview of planning considerations and management capabilities.
 
 ### Device operating system
 
@@ -201,7 +201,7 @@ To learn more, see the [Microsoft Entra Conditional Access documentation](/entra
 
 #### App protection policies
 
-With mobile application management (MAM) from Intune, you can use [app protection policies](/mem/intune/apps/app-protection-policy) with apps that are integrated with the Intune [App SDK](/mem/intune/developer/app-sdk-get-started). This allows you to further protect your organization’s data within an app.
+With mobile application management (MAM) from Intune, you can use [app protection policies](/mem/intune/apps/app-protection-policy) with apps that are integrated with the [Intune App SDK](/mem/intune/developer/app-sdk-get-started). This allows you to further protect your organization’s data within an app.
 
 With app protection policies, you can add access control safeguards, such as:
 
@@ -214,4 +214,4 @@ In a shared devices deployment, you can use app protection policies to ensure th
 ## Related articles
 
 - [Manage shared devices for your frontline](flw-shared-devices.md)
-- [Frontline worker management](/azure/active-directory/fundamentals/frontline-worker-management)
+- [Frontline worker management](/entra/fundamentals/frontline-worker-management)

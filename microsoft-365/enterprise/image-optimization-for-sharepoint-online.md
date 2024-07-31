@@ -3,7 +3,7 @@ title: "Image optimization for SharePoint classic publishing sites"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 9/18/2019
+ms.date: 07/29/2024
 audience: Admin
 ms.topic: troubleshooting
 ms.service: microsoft-365-enterprise
@@ -13,6 +13,7 @@ ms.collection:
 - scotvorg
 - Ent_O365
 - SPO_Content
+- must-keep
 f1.keywords:
 - CSH
 ms.custom: Adm_O365

@@ -73,7 +73,6 @@ There's no minimum time commitment when you sign up for Microsoft 365 for Campai
 
 3. After we've verified that you represent a national-level political campaign or party, you'll receive an email invitation from Microsoft. Your invite includes a sign-up link specific to your organization.
 
-
 After you have subscribed to Microsoft 365 for Campaigns, your next step is to get everything set up.
 
 ## Before you begin your setup process
@@ -105,7 +104,7 @@ Make sure that you meet the following requirements before you begin your setup p
 
 Users who have been added to your Microsoft 365 for Campaigns (or Microsoft 365 Business Premium) subscription can sign in using the following steps:
 
-1. Go to [https://office.com](https://office.com).
+1. Go to <https://office.com>.
 
 2. Sign in using the username and password for the account. Users will have this information in the email they receive when they are added as users. If they can't find the email, see [user didn't receive invite email](../admin/simplified-signup/admin-invite-business-standard.md#i-shared-an-email-invite-but-the-user-didnt-receive-the-email).
 
