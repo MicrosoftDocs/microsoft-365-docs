@@ -40,7 +40,7 @@ You'll need to run the following commands using Exchange Online PowerShell.
 
 1. Sign in to the Microsoft 365 admin center as a global admin.
 
-1. In the admin center, go to **Settings** > **Domains** to check current domains.
+1. In the admin center, go to **Settings** > **Domains** to check current domains. The custom domain you want to use must be configured in the Accepted Domains list for your tenant.
 
 1. Join into remote PowerShell command with the admin account and complete the steps, such as install module and import module. Learn more at [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps&preserve-view=true).
 
