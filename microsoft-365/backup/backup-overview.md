@@ -86,7 +86,7 @@ Key architectural takeaways:
 
 #### Backup policy performance
 
-Creating a new protection policy initiates the process of backing up selected SharePoint sites, OneDrive accounts, and Exchange mailboxes. Once you submit a request to activate a valid protection policy, it takes on average up to 60 minutes to process and another 60 minutes to create restore points. Initial backups take approximately 15 minutes per 1,000 protection units initially or incrementally added to a policy.
+Creating a new protection policy initiates the process of backing up selected OneDrive accounts, SharePoint sites, and Exchange mailboxes. Once you submit a request to activate a valid protection policy, it takes on average up to 60 minutes to process and another 60 minutes to create restore points. Initial backups take approximately 15 minutes per 1,000 protection units initially or incrementally added to a policy.
 
 Restore points are physically created in the service as soon as the policy is confirmed to be activated in the tool, even if those restore points take some more time to become visible in the restore tool.
 
