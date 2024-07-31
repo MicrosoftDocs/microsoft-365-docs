@@ -97,7 +97,7 @@ landingContent:
         links:
           - text: Microsoft 365 Archive
             url: /microsoft-365/archive
-          - text: Microsoft 365 Backup (Preview)
+          - text: Microsoft 365 Backup
             url: /microsoft-365/backup
 
 # Card 4
