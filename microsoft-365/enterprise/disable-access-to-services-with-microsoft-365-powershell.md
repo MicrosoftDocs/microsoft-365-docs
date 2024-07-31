@@ -146,15 +146,15 @@ The following example updates a user with **SPE_E5** (Microsoft 365 E5) and turn
 ```powershell
 ## Get the services that have already been disabled for the user.
 $userLicense = Get-MgUserLicenseDetail -UserId "belinda@fdoau.onmicrosoft.com"
-$userDisabledPlans = $userLicense.ServicePlans | `
+$userDisabledPlans = @($userLicense.ServicePlans | `
     Where ProvisioningStatus -eq "Disabled" | `
-    Select -ExpandProperty ServicePlanId
+    Select -ExpandProperty ServicePlanId)
 
 ## Get the new service plans that are going to be disabled
 $e5Sku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'SPE_E5'
-$newDisabledPlans = $e5Sku.ServicePlans | `
+$newDisabledPlans = @($e5Sku.ServicePlans | `
     Where ServicePlanName -in ("SWAY", "FORMS_PLAN_E5") | `
-    Select -ExpandProperty ServicePlanId
+    Select -ExpandProperty ServicePlanId)
 
 ## Merge the new plans that are to be disabled with the user's current state of disabled plans
 $disabledPlans = ($userDisabledPlans + $newDisabledPlans) | Select -Unique
