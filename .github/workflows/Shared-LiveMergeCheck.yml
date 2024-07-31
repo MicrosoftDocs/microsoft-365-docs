@@ -18,7 +18,7 @@ on:
 jobs:
     build:
       name: Run Script
-      runs-on: windows-latest
+      runs-on: ubuntu-latest
       steps:
         - name: Script
           shell: pwsh
@@ -144,6 +144,7 @@ jobs:
             If ($GitRequestEvent -eq "pull_request_target") {
 
                 Write-Host "Request type is pull_request. Processing request."
+                Write-Host "Target branch is $TargetBranch."
 
                 If (($GitHubData.event.action -eq "opened") -or ($GitHubData.event.action -eq "synchronize") -or ($GitHubData.event.action -eq "reopened") -or ($GitHubData.event.action -eq "edited")) {
 
