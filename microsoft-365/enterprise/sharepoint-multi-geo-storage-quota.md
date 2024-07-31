@@ -33,7 +33,7 @@ The SharePoint storage quota for any geo location is allocated by the SharePoint
 Use the [Microsoft SharePoint Module](https://www.microsoft.com/download/details.aspx?id=35588) and connect to the central location to allocate the storage quota for a geo location.
 
 > [!NOTE]
-> You can find a list of Microsoft 365 geo location codes [here](multi-geo-add-group-with-pdl#geo-location-codes).
+> You can find a list of Microsoft 365 geo location codes [here](multi-geo-add-group-with-pdl.md#geo-location-codes).
 
 To allocate Storage Quota for a location, run cmdlet:
 
