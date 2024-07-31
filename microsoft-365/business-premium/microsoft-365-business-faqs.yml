@@ -153,11 +153,11 @@ sections:
     questions:
       - question: Where can I learn more about the opportunities and benefits in becoming a Microsoft Partner?
         answer: |
-          IT service providers that are not already Microsoft partners can learn more about the Microsoft Cloud Solution Provider program [https://partner.microsoft.com/membership/cloud-solution-provider](https://partner.microsoft.com/membership/cloud-solution-provider).
+          IT service providers that are not already Microsoft partners can learn more about the Microsoft Cloud Solution Provider program <https://partner.microsoft.com/membership/cloud-solution-provider>.
 
       - question: Where can I learn how to sell Microsoft 365 Business Premium?
         answer: |
-          Partners now selling Office 365 can use the same consultative selling methods to sell Microsoft 365 Business Premium. In addition, we are introducing more resources and training for your sales team to understand the customers' existing desktop environment, Active Directory reliance, mobility, and security needs to effectively communicate the full value of Microsoft 365 Business Premium in a way that is relevant to the customer. Find these resources at the Microsoft Partner portal ([https://www.microsoft.com/microsoft-365/partners](https://www.microsoft.com/microsoft-365/partners)).
+          Partners now selling Office 365 can use the same consultative selling methods to sell Microsoft 365 Business Premium. In addition, we are introducing more resources and training for your sales team to understand the customers' existing desktop environment, Active Directory reliance, mobility, and security needs to effectively communicate the full value of Microsoft 365 Business Premium in a way that is relevant to the customer. Find these resources at the Microsoft Partner portal (<https://www.microsoft.com/microsoft-365/partners>).
 
       - question: Some of my customers have devices that aren't genuine; will Microsoft 365 Business Premium make these devices genuine?
         answer: |
