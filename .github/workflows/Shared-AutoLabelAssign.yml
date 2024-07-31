@@ -29,7 +29,7 @@ on:
 jobs:
     build:
       name: Run Script
-      runs-on: windows-latest
+      runs-on: ubuntu-latest
       steps:
         - name: Script
           shell: pwsh
