@@ -13,7 +13,7 @@ search.appverid:
 ms.collection:
     - essentials-get-started
 ms.localizationpriority:  medium
-description: Learn how to set up and configure Microsoft 365 Backup and backup policies.
+description: Learn how to turn on Microsoft 365 Backup, set up pay-as-you-go billing, and create backup policies for OneDrive, SharePoint, and Exchange.
 ---
 
 # Set up Microsoft 365 Backup
