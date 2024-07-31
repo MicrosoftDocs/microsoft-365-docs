@@ -5,7 +5,7 @@ author: erikre
 manager: dougeby
 audience: ITPro
 ms.topic: article
-ms.date: 05/07/2024
+ms.date: 07/30/2024
 description: Understand app management using Microsoft Intune.
 ms.service: o365-solutions
 ms.localizationpriority: high
@@ -28,7 +28,7 @@ Devices enrolled with Intune (or another Mobile Device Management service) are m
 
 ## App management using unmanaged devices
 
-Devices that aren't enrolled in a Mobile Device Management service such as Intune, have different app management capabilities. Using Intune, managed apps that are installed on an unmanaged device use the user's identity (Entra ID) to help manage the apps. You can assign an app to a user based on their identity, but you can't assign the app specifically to the user's device when the devices isn't managed. You can assign apps with the **Available** intent. However, you can't assign apps as **Required**. Additionally, apps that are managed by the user's identity using Intune can't be uninstalled using Intune, or receive app updates from Intune. Also, end users can't use the Company portal app on their devices to install apps. Instead, end users must install available apps from the web-based Company Portal.
+Devices that aren't enrolled in a Mobile Device Management service such as Intune, have different app management capabilities. Using Intune, managed apps that are installed on an unmanaged device use the user's identity (Microsoft Entra ID) to help manage the apps. You can assign an app to a user based on their identity, but you can't assign the app specifically to the user's device when the devices isn't managed. You can assign apps with the **Available** intent. However, you can't assign apps as **Required**. Additionally, apps that are managed using the user's identity can't be uninstalled using Intune, or receive app updates from Intune. Also, end users can't use the Company portal app on their devices to install apps. Instead, end users must install available apps from the web-based Company Portal.
 
 > [!NOTE]
 > Apps that are managed without device management using MAM, can be configured and protected using Intune. MAM enables you to manage and protect your organization's data within an application. MAM without MDM is popular for organizations that enable members of their organization to work remotely on their own devices (BYOD).

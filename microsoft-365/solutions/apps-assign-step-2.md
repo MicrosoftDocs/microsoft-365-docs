@@ -5,7 +5,7 @@ author: erikre
 manager: dougeby
 audience: ITPro
 ms.topic: article
-ms.date: 05/07/2024
+ms.date: 07/30/2024
 description: Step 2. Assign apps to groups.
 ms.service: o365-solutions
 ms.localizationpriority: high
@@ -18,24 +18,24 @@ keywords:
 # Step 2. Assign apps to users, groups, and devices
 
 Working with managed apps in Intune involves several steps. You should complete the following steps before assigning apps to members of your organization:
-- [Accquire the apps your organization needs](/microsoft-365/solutions/apps-purchase-overview) based on [platform](/microsoft-365/solutions/apps-purchase-store#add-store-apps-based-on-platform)
+- [Acquire the apps your organization needs](/microsoft-365/solutions/apps-purchase-overview) based on [platform](/microsoft-365/solutions/apps-purchase-store#add-store-apps-based-on-platform)
 - [Add the apps to Intune](/microsoft-365/solutions/apps-add-overview)
 - [Create and assigned an app configuration policy](/microsoft-365/solutions/apps-config-overview) for each app
 - [Create and assigned an app protection policy](/microsoft-365/solutions/apps-protect-overview) for each app
 
-You may find it easiest to group the apps you want to assign based on the platforms your organization supports. For instance, if you're organization support iOS devices, you should focus on assigning each of your iOS apps before assigning apps for another platform, such as Android.
+You may find it easiest to group the apps you want to assign based on the platforms your organization supports. For instance, if you're organization support iOS devices, you should focus on assigning each of your iOS apps before assigning apps for another platform, such as Android. Also, you may find it helpful to follow an app policy naming convention, so you can clearly track your app policies.
 
 > [!NOTE]
 > If you need to know [core and advanced app settings](/mem/intune/apps/apps-supported-intune-apps#core-app-settings) for Microsoft apps that have been designed to support Intune, see the [Microsoft apps](/mem/intune/apps/apps-supported-intune-apps) list. For a list of other apps that support Intune, see [Partner productivity apps](/mem/intune/apps/apps-supported-intune-apps#core-app-settings).
 
 ## Specific apps to assign
 
-If you've already purchased and added an app to Intune, you may still need to assign it to your members of your organization. When you add an app to Intune, you can immediately set the app assignment. However, you can add an app without assigning it to members of your organization, where you may want to create app configuration, protection, and conditional access policies related to the app. 
+If you've already purchased and added an app to Intune, you may still need to assign it to your members of your organization. When you add an app to Intune, you can immediately set the app assignment. However, you can add an app without assigning it to members of your organization, where you may want to create app configuration, protection, and conditional access policies related to the app.
 
 There are specific apps that you'll want to require on a user's device, such as the Company Portal, Microsoft Outlook, Microsoft Edge, Microsoft Teams, and Microsoft 365 apps.
 
 > [!NOTE]
-> If the user modifies a required app (such as deleting it), Intune will automatically reinstall the app. For additional details about required apps, see [Installing, updating, or removing required apps](/mem/intune/apps/apps-add#installing-updating-or-removing-required-apps).
+> If the user modifies a required app, such as deleting it, Intune will automatically reinstall the app. For more information about required apps, see [Installing, updating, or removing required apps](/mem/intune/apps/apps-add#installing-updating-or-removing-required-apps).
 
 ### Company Portal
 
@@ -58,7 +58,7 @@ Microsoft 365, formerly known as Microsoft Office, is a suite of productivity ap
 
 ### Microsoft Edge
 
-Microsoft Edge for iOS and Android is designed to enable users to browse the web and supports multi-identity. Users can add a work account, as well as a personal account, for browsing. There's complete separation between the two identities, which is like what is offered in other Microsoft mobile apps.
+Microsoft Edge for iOS and Android is designed to enable users to browse the web and supports multi-identity. Users can add a work account, as well as a personal account, for browsing. There's complete separation between the two identities, which is similar to what is offered in other Microsoft mobile apps.
 
 ### Microsoft Teams
 
@@ -72,9 +72,9 @@ For more information about the different types of apps you can manage with Intun
 
 ## Assign app process
 
-After you've added an app to Microsoft Intune, you can assign the app to users and devices. It's important to note that you can deploy an app to a device whether or not the device is managed by Intune. Instead of the device being managed by Intune, the app would be managed by Intune.
+After you've added an app to Microsoft Intune, you can assign the app to users and devices. It's important to note that you can deploy an app to a device whether or not the device is managed by Intune. Instead of the *device* being managed by Intune, the *app* would be managed by Intune.
 
-Apps are handled differently when assigning an app to a user versus assigning the app to a device. If your organization only manages apps using Intune, rather than enrolling and managing devices, you'll assign apps to users or groups. This is the Mobile Application Management (MAM) approach to securing and protecting your organization using Intune. If your organization manages both devices and users, you can following the MDM + MAM approach to management.
+Apps are handled differently when assigning an app to a user versus assigning the app to a device. If your organization only manages apps using Intune, rather than enrolling and managing devices, you assign apps to users or groups of users. This is the Mobile Application Management (MAM) approach to securing and protecting your organization using Intune. If your organization manages both devices and users, you can follow the MDM + MAM approach to management.
 
 > [!NOTE]
 > To compare the available options when assigning managed apps to enrolled devices versus devices not enrolled with Intune, see [Options when assigning managed apps](/mem/intune/apps/apps-deploy#options-when-assigning-managed-apps).

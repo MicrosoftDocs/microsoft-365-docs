@@ -5,7 +5,7 @@ author: erikre
 manager: dougeby
 audience: ITPro
 ms.topic: article
-ms.date: 05/07/2024
+ms.date: 07/30/2024
 description: Understand app deployment using Microsoft Intune.
 ms.service: o365-solutions
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ keywords:
 
 # Understand app deployment using Intune
 
-After you add an app to Intune, you can use Intune to assign the managed app to groups of users or devices. To deploy a managed app, you start with targeting a group. Microsoft Entra ID is used, and can help determine any type of conditional access. Then, the request is passed through authentication and authorization before reaching the location where the app will be installed from, such as the Apple App Store. Next, the app is installed on the end user's device based on any app configuration policies that have been created for the app and deployed to the user or device. 
+After you add an app to Intune, you can use Intune to assign the managed app to groups of users or devices. To deploy a managed app, you start by targeting a group. Microsoft Entra ID is used, and can help determine any type of conditional access. Then, the request is passed through authentication and authorization before reaching the location where the app will be installed from, such as the Apple App Store. Next, the app is installed on the end user's device based on any app configuration policies that have been created for the app and deployed to the user or device.
 
 > [!TIP]
 > To see where app protection and compliance policies fit into the overall Intune architecture, see [High-level architecture for Microsoft Intune](/mem/intune/fundamentals/high-level-architecture).
 
-This architecture diagram includes application management details available in Microsoft Intune..  
+This architecture diagram includes application management details available in Microsoft Intune.
 
 :::image type="content" source="/mem/intune/fundamentals/media/high-level-architecture/intunearchitecture_wh.png" alt-text="High-level architectural diagram for Microsoft Intune"  lightbox="/mem/intune/fundamentals/media/high-level-architecture/intunearchitecture_wh.png" :::
 
