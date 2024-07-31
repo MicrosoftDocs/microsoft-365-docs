@@ -1,5 +1,5 @@
 ---
-title: "## Use a custom domain for booking pages"
+title: "Best practices for using Shared Bookings"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -15,7 +15,7 @@ ms.collection:
 description: "Understand and implement best practices for using Shared Booking features."
 ---
 
-# Best practices for using Shared Booking
+# Best practices for using Shared Bookings
 
 Microsoft Bookings allows you to create and manage online appointments with your customers. By setting up multiple booking pages, offering different services, and assigning staff members, you can optimize your scheduling process. In this article, we'll cover best practices for using Bookings to help you get the most out of Shared Bookings.
 

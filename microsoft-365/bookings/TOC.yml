@@ -42,7 +42,7 @@
           href: bookings-sms.md
         - name: Configure service availability
           href: configure-service-availability.md          
-        - name: Use Buffer Time to add prep time
+        - name: Use buffer time to add prep time
           href: set-buffer-time.md
         - name: Hide services from your booking page
           href: hide-service-on-booking-page.md
@@ -68,9 +68,10 @@
           href: customize-booking-page.md
         - name: Use the Shared Bookings Graph APIs
           href: /graph/api/resources/booking-api-overview
+          target: _blank
         - name: Reporting info for Shared Bookings
           href: reporting-info.md  
-  - name: Bookings for Microsoft 365 admins
+  - name: Bookings Admin controls
     items:
     - name: Turn off your Personal Booking page
       href: bookings-in-outlook.md
@@ -84,3 +85,5 @@
       href: delete-calendar.md
     - name: Best practices for Shared Bookings
       href: best-practices-shared-bookings.md
+    - name: Use Power Automate connectors
+      href: power-automate-integration.md

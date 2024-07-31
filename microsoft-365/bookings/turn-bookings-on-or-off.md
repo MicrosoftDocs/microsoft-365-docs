@@ -3,7 +3,7 @@ title: "Turn on or off Shared Bookings for organization"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 05/23/2024
+ms.date: 07/30/2024
 audience: Admin
 ms.topic: how-to
 ms.service: bookings

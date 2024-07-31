@@ -33,10 +33,6 @@ To create a custom flow that uses Bookings appointments as triggers, you must pr
 
 Here are some of the common flows you can build with Microsoft Bookings Connectors:
 
-### Integration with Zoom
-
-The Zoom Meetings connector helps to automate Zoom meeting operations. For more information, see [Zoom Meetings (Independent Publisher) | Microsoft Power Automate](https://powerautomate.microsoft.com/connectors/details/shared_zoommeetingsip/zoom-meetings-independent-publisher/).
-
 ### Integration with Dynamic 365
 
 Dynamics 365 Sales Insights helps increase sales with the help of Artificial Intelligence (AI)-driven insights that promote personalized engagement and proactive decision making to help build relationships. For more information, see [Dynamics 365 Sales Insights | Microsoft Power Automate](https://powerautomate.microsoft.com/connectors/details/shared_assistantstudio/dynamics-365-sales-insights/).

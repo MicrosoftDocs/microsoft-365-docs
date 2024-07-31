@@ -34,7 +34,7 @@ On the **Notifications** page, you can send SMS messages, set up reminders, and 
 
 :::image type="content" source="media/notify-booking-confirmed.png" alt-text="Screenshot showing the Booking details for a confirmed booking." lightbox="media/notify-booking-confirmed.png":::
 
-You can include any additional text you would like here, such as information about rescheduling or what customers should bring for the appointment. 
+You can include any additional text you would like here, such as information about rescheduling or what customers should bring for the appointment.
 
 The following is an example of customized text added to the original confirmation email, seen in the **Additional information for Email Confirmation** field:
 

@@ -9,9 +9,8 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.collection:
 - scotvorg
-ms.custom: QuickDraft
 search.appverid: MET150
-description: "Learn how to set up and automate email reminders and follow-ups for appointments in Microsoft 365 Business Basic."
+description: "Learn how to set up and automate email reminders and follow-ups for appointments in Microsoft Bookings."
 ---
 
 # Add email reminders and follow-up

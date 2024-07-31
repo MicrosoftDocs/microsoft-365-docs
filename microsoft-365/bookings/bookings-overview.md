@@ -59,9 +59,11 @@ Microsoft 365: A3, A5, E1, E3, E5, F1, F3, Business Basic, Business Standard, Bu
 Here are the different ways you can access Bookings:
 
 Via web
-- Web Access: Users can easily access Microsoft Bookings through the web by clicking on the following link: [book.ms](https://book.ms).
+
+- Web Access: Users can easily access Microsoft Bookings through the web by visiting the following link: [book.ms](https://book.ms).
 
 Via Outlook and Teams
+
 - Outlook and Teams Integration: Microsoft Bookings can also be accessed directly within Outlook and Microsoft Teams. Users can add the Bookings app to the left rail for convenient access:
 
   1. Open Outlook or Microsoft Teams.
@@ -71,8 +73,4 @@ Via Outlook and Teams
   5. Select **Add** to integrate it into your Outlook or Teams interface.
   6. Pin the app to the left rail for easy and quick access.
 
-By providing multiple access points and integrating seamlessly with other Microsoft tools, Microsoft Bookings ensures a versatile and user-friendly scheduling solution for businesses of all sizes.  
-
-## Next steps
-
-To get started, see [Get access to Microsoft Bookings](get-access.md). To turn Bookings on or off, see [Turn Bookings on or off for your organization](turn-bookings-on-or-off.md).
+By providing multiple access points and integrating seamlessly with other Microsoft tools, Microsoft Bookings ensures a versatile and user-friendly scheduling solution for businesses of all sizes.

@@ -51,8 +51,6 @@ Schedule business closures or employee off.
 
 1. In Microsoft 365, select the app launcher, and then select **Bookings**.
 
-   :::image type="content" source="../media/bookings-applauncher.png" alt-text="App launcher.":::
-
 1. Choose your calendar.
 
 1. In the top navigation pane, select **Add time off**.
