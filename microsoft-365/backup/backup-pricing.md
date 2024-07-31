@@ -13,7 +13,7 @@ search.appverid:
 ms.collection:
     - essentials-get-started
 ms.localizationpriority:  medium
-description: Learn about the charge model and pricing calculator for Microsoft 365 Backup.
+description: Learn about the pricing model, estimating costs, and usage reports in Microsoft 365 Backup.
 ---
 
 # Pricing model for Microsoft 365 Backup
