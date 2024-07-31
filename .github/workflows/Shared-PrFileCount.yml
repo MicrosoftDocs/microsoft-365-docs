@@ -18,7 +18,7 @@ on:
 jobs:
     build:
       name: Run Script
-      runs-on: windows-latest
+      runs-on: ubuntu-latest
       steps:
         - name: Script
           shell: pwsh
@@ -400,9 +400,9 @@ jobs:
 
                         Write-Host "Pull request in monitored branch"
 
-                        If (($GitHubData.event.action -eq "opened") -or ($GitHubData.event.action -eq "synchronize") -or ($GitHubData.event.action -eq "reopened")) {
+                        If (($GitHubData.event.action -eq "opened") -or ($GitHubData.event.action -eq "synchronize") -or ($GitHubData.event.action -eq "reopened") -or ($GitHubData.event.action -eq "edited")) {
 
-                            Write-Host "Opened, reopened, or synchronized. Process PR."
+                            Write-Host "Opened, reopened, synchronized, or edited. Process PR."
 
                             ProcessPr
 
