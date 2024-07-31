@@ -14,7 +14,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Read frequently asked questions about Microsoft 365 Backup.
+description: Read frequently asked questions about protecting your organization's data using Microsoft 365 Backup.
 ---
 
 # Frequently asked questions about Microsoft 365 Backup

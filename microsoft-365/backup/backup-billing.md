@@ -13,7 +13,7 @@ search.appverid:
 ms.collection:
     - essentials-get-started
 ms.localizationpriority:  medium
-description: Learn how to set up and manage pay-as-you-go billing and invoices for Microsoft 365 Backup.
+description: Learn how to set up and manage pay-as-you-go billing and invoices in the Azure portal for Microsoft 365 Backup.
 ---
 
 # Manage billing and invoices for Microsoft 365 Backup

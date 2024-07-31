@@ -13,7 +13,7 @@ search.appverid:
 ms.collection:
     - essentials-manage
 ms.localizationpriority:  medium
-description: Learn how to create, view, and edit backup policies in Microsoft 365 Backup.
+description: Learn how to create, view, and edit backup policies for OneDrive, SharePoint, and Exchange in Microsoft 365 Backup.
 ---
 
 # Create, view, and edit backup policies in Microsoft 365 Backup
