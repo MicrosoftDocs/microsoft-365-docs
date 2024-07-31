@@ -13,7 +13,7 @@ search.appverid:
 ms.collection:
     - essentials-manage
 ms.localizationpriority:  medium
-description: Learn how to restore data using restore points and express restore points in Microsoft 365 Backup.
+description: Learn how to restore data for OneDrive, SharePoint, and Exchange using restore points or express restore points in Microsoft 365 Backup.
 ---
 
 # Restore data in Microsoft 365 Backup

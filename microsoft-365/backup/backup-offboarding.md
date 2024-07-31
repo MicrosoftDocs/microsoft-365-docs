@@ -13,7 +13,7 @@ search.appverid:
 ms.collection:
     - essentials-manage
 ms.localizationpriority:  medium
-description: Learn about how to offboard usage in Microsoft 365 Backup.
+description: Learn about how to delete active policies and backed-up data using Microsoft 365 Backup.
 ---
 
 # Offboarding in Microsoft 365 Backup
