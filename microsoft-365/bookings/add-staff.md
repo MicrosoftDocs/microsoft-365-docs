@@ -54,7 +54,7 @@ Although Bookings is a feature of Microsoft 365, not all of your staff members a
     > [!IMPORTANT]
     > This setting is turned on by default. We highly recommend leaving this setting on to avoid double-bookings and to optimize the availability of your staff members.
 
-7. Select **Use business hours** to set all bookable times for your staff members to be only within the business hours that you set in the **Business hours** section on the Business Information page.
+7. Select **Use business hours** to set all bookable times for your staff members to be only within the business hours that you set in the **Business hours** section on the Business Information page. To learn more about configuring staff availability, see [Configure staff availability in Microsoft Bookings](staff-availability.md).
 
     By deselecting this box, staff can be given custom hours that further limit when they can be booked. This is helpful for scenarios where a staff member may only be on site Tuesdays and Wednesdays, or they dedicate their mornings for one type of appointments, and their afternoons for other types.
 
