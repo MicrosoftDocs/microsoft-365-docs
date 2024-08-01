@@ -157,31 +157,3 @@ Use the **Get-CASMailbox** and **Set-CASMailbox** commands to check user status 
       ```PowerShell
       Set-CASMailbox -Identity adam@contoso.com -EwsApplicationAccessPolicy EnforceBlockList -EWSBlockList @{Add="MicrosoftOWSPersonalBookings"}
       ```
-
-## Frequently asked questions
-
-### What is the difference between Shared Bookings and Personal Bookings?
-
-Personal Bookings integrates with your Outlook calendar and can only be used for 1:1 meetings. It is intended for scheduling meeting times with individual users.
-
-Shared Bookings is intended for managing scheduling for a group of people. Also, Personal Bookings won't create a new mailbox for each booking page.
-
-### Who can access my public Bookings page?
-
-Public meeting types can be accessed by anyone that has your personal booking page link. You decide who you share your booking page with.
-
-### What is the difference between public and private meeting types?
-
-Meeting types can be public or private. Public meeting types are available to anyone that you share your Bookings page link with. Private meeting types are only available to people that you share the individual private meeting type with.
-
-Private meeting types can also generate single use links. Single use links expire after their first booking.
-
-### Do people need to have a Microsoft account or Bookings license to schedule time with me?
-
-No. Anyone or any attendee can schedule time with you using your personal booking page, even if they don't have a Microsoft account. You, as an organizer, need a Bookings license to create a personal booking page.
-
-## Privacy
-
-### Where is Personal Bookings data stored?
-
-All data is stored within the Microsoft 365 platform and in Exchange. Personal Bookings follows data storage policies set by Microsoft, which are the same policies that all apps in Microsoft 365 follow. All customer data (including information provided by attendees when booking) is captured in Bookings and is stored within Exchange. For more information, check out [Privacy: It's all about you](https://www.microsoft.com/trust-center/privacy).
