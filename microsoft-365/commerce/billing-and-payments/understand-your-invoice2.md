@@ -178,18 +178,6 @@ If you pay by invoice, you can add or change the purchase order (PO) number for 
 3. On the subscription details page, in the **Subscription and payment settings** section, under **Payment method**, select **Edit invoice**.
 4. At the bottom of the **Edit details for paying by invoice** pane, enter your PO number, then select **Save**.
 
-## Run the Unknown Charge Diagnostic
-
-If you're a Microsoft 365 global admin, you can use a diagnostic tool that runs within the Microsoft 365 admin center to research unexpected charges from Microsoft that appear on your credit or debit card statement.
-
-> [!NOTE]
-> The Unknown Charge Diagnostic is only available for customers who bought their products and services from Microsoft.com, including Microsoft 365 Enterprise, Education, and Non-profit.
-
-Select the following **Run Tests: Unknown Charge** link to open the diagnostic tool in the Microsoft 365 admin center.
-
->[!div class="nextstepaction"]
->[Run Tests: Unknown Charge](https://aka.ms/PillarUnknownCharge)
-
 ## Related content
 
 [View your invoice in the Microsoft 365 admin center](view-your-bill-or-invoice.md) (article)\
