@@ -3,7 +3,7 @@ title: "Tune Microsoft 365 performance"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 04/09/2019
+ms.date: 07/30/2024
 audience: Admin
 ms.topic: troubleshooting
 ms.service: microsoft-365-enterprise
@@ -12,6 +12,7 @@ ms.localizationpriority: medium
 ms.collection: 
 - scotvorg
 - Ent_O365
+- must-keep
 f1.keywords:
 - CSH
 ms.custom: Adm_O365
