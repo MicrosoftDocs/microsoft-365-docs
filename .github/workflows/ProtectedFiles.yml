@@ -1,4 +1,4 @@
-name: Check max/protected-file-check below
+name: PR has no protected files
 
 permissions:
   pull-requests: write
