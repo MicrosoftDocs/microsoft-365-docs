@@ -32,12 +32,12 @@ sections:
           You can access Personal Bookings through the following methods:
           - Web Access: Visit [book.ms](https://book.ms) and sign in with your Microsoft account.
           - Outlook and Teams Integration: Add the Bookings app to the left rail in Outlook or Microsoft Teams for easy access.
-          Once you are on the home page of Bookings, navigate to the section that says ‘Personal booking page’.
+          Once you are on the home page of Bookings, navigate to the section that says **Personal booking page**.
 
       - question: |
           How do I set up my Personal Booking page?
         answer: |
-          Your personal booking page is already auto published with two default meeting types namely ’15 mins meeting’ and ’30 mins meeting’. You can edit these meeting types or create more of your choice. All public meeting types will appear on your booking page for people to book time with you.
+          Your personal booking page is already auto published with two default meeting types: **15 mins meeting** and **30 mins meeting**. You can edit these meeting types or create more of your choice. All public meeting types appear on your booking page for people to book time with you.
 
       - question: |
           What is the difference between Bookings and Bookings with me?
@@ -62,17 +62,17 @@ sections:
       - question: |
           How do I share my Personal Booking link?
         answer: |
-          You can share your Personal Booking link via email, copy it or add it to your email signature. Simply copy the link and share it with your contacts. They can then use this link to book appointments with you.
+          You can share your Personal Booking link via email, copy it, or add it to your email signature. Copy the link and share it with your contacts. They can then use this link to book appointments with you.
 
       - question: |
           How does the scheduling process work?
         answer: |
           When someone wants to book an appointment with you, they will:
-          1. Click on your Personal Booking link.
+          1. Select on your Personal Booking link.
           2. Select the type of appointment they want to book.
           3. Choose an available time slot from your calendar.
           4. Enter their details and confirm the booking.
-          You will receive a notification of the booking, and it will automatically be added to your Outlook calendar.
+          You'll receive a notification of the booking, and it will automatically be added to your Outlook calendar.
 
       - question: |
           Can I set automated reminders for my appointments?
