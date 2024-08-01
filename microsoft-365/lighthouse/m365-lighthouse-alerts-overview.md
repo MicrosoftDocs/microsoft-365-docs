@@ -38,22 +38,32 @@ To help you get started, Lighthouse provides a default set of alerting rules bas
 
 The **Alerts** tab provides a consolidated view of potential security issues across all your customers. The tab contains two sections:
 
-- **Alert resolution rate** – a graph that displays historical information about alerts and their status over time.
+- **Active alerts by date created**: A graph that displays the number of active alerts over time.
 
-- **Alert report** – a table of current alerts that can be filtered by alert type, severity, status, and assigned to.
+- **Alerts table**: A list of current alerts that can be filtered by alert type, severity, status, or assigned to.
+ 
+The **Alerts** tab also includes the following options:
 
-From the table, you can select any alert to see more detailed information, including:
+- **Export:** Select to export alert data to an Excel comma-separated values (.csv) file.
+- **Refresh:** Select to retrieve the most current alert data.
+- **Search:** Enter keywords to locate a specific alert in the list.
 
+From the list of alerts, select any alert to open the alert details pane. The **Overview** tab in this pane includes the following information:
+
+- Affected tenants
 - Alert description
-- Affected tenant(s)
 - Rule that triggered the alert
 - Alert type
-- Time stamp (First detected, last updated)
+- Time stamp (first detected, last updated)
 - Impacted entity
 
-You can update the severity and status of the alert and assign the alert to a specific user to resolve. From the **Comments and history** tab, you have a complete history of the alert. You can also add additional comments to the alert as needed.
+From the **Overview** tab, you can update the severity and status of the alert and assign the alert to a specific user to resolve. 
 
-### Alert Types
+Select the **Comments and history** tab in the alert details pane to see a complete history of the alert. You can add additional comments to the alert as needed.
+
+:::image type="content" source="../media/m365-lighthouse-alerts-overview/m365-lighthouse-alerts-tab.png" alt-text="Screenshot of the Alerts tab in Lighthouse." lightbox="../media/m365-lighthouse-alerts-overview/m365-lighthouse-alerts-tab.png":::
+
+### Alert types
 
 Lighthouse defines six alert types.
 
@@ -63,14 +73,6 @@ Lighthouse defines six alert types.
 - Risky user
 - Security incident
 - Active threat on device
-
-The **Alerts** tab also includes the following options:
-
-- **Export:** Select to export alert data to an Excel comma-separated values (.csv) file.
-- **Refresh:** Select to retrieve the most current alert data.
-- **Search:** Enter keywords to locate a specific alert in the list.
-
-:::image type="content" source="../media/m365-lighthouse-alerts-overview/m365-lighthouse-alerts-tab.png" alt-text="Screenshot of the Alerts tab in Lighthouse." lightbox="../media/m365-lighthouse-alerts-overview/m365-lighthouse-alerts-tab.png":::
 
 ## Alert rules tab
 
