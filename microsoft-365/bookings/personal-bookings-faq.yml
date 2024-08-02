@@ -15,11 +15,11 @@ metadata:
   - essentials-compliance
   - essentials-privacy
   description: "Frequently asked questions for Personal Bookings in Microsoft Bookings."
-title: Microsoft Bookings Frequently Asked Questions
+title: Personal Bookings Frequently Asked Questions (FAQ)
 summary: |
 
 sections:
-  - name: Frequently Asked Questions (FAQ) for Personal Bookings
+  - name: General
     questions:
       - question: |
           What is Personal Bookings?

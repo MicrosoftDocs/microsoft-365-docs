@@ -70,7 +70,6 @@
           href: customize-booking-page.md
         - name: Use the Shared Bookings Graph APIs
           href: /graph/api/resources/booking-api-overview
-          target: _blank
         - name: Reporting info for Shared Bookings
           href: reporting-info.md
         - name: Use Power Automate connectors
@@ -79,7 +78,7 @@
           href: bookings-faq.yml  
   - name: Bookings Admin controls
     items:
-    - name: Turn off Personal Booking page
+    - name: Turn off Personal Bookings
       href: bookings-in-outlook.md
     - name: Turn on or off Shared Bookings for organization
       href: turn-bookings-on-or-off.md

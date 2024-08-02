@@ -13,6 +13,7 @@ ms.collection:
 - scotvorg
 - essentials-get-started
 - essentials-manage
+ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn how to get access to the Bookings feature in Microsoft 365."
 ---
 
