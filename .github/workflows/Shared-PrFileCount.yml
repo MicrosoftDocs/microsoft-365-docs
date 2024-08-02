@@ -28,7 +28,6 @@ jobs:
 
             PrWarnLimit: 30
             PrBlockLimit: 100
-            StatusCheckUrl: "https://review.docs.microsoft.com/en-us/office-authoring-guide/pull-request-status-checks?branch=main"
             
           run: |
 
@@ -41,7 +40,6 @@ jobs:
             $AccessToken = $env:AccessToken
             $PrWarnLimit = $env:PrWarnLimit
             $PrBlockLimit = $env:PrBlockLimit
-            $StatusCheckUrl = $env:StatusCheckUrl
 
             # Create github HTTP authentication header 
 
@@ -56,6 +54,7 @@ jobs:
             $CurrentLabelName = $GitHubData.event.label.name
             $CommentsUrl = $GitHubData.event.pull_request.comments_url
             $Labels = $GitHubData.event.pull_request.labels
+            $PrUrl = $GitHubData.event.pull_request.html_url
 
             $WorkflowsResourcePath = "https://api.github.com/repos/MicrosoftDocs/microsoft-365-docs/contents/.github/workflows/resources"
             $WorkflowsRef = "workflows-prod"
@@ -230,7 +229,10 @@ jobs:
                         
                         Remove-WarningLabel
 
-                        Throw "Number of changed files $NumChangedFiles is greater than BLOCK limit $PrBlockLimit. "
+                        echo "The PR $PrUrl changes **$NumChangedFiles** files which exceeds the **BLOCK** limit of **$PrBlockLimit**. The **$WarningLabelName** label has been removed and can't be re-added while the total number of files exceeds the block limit." >> $env:GITHUB_STEP_SUMMARY
+                        echo "Reduce the number of files in this PR to below $PrBlockLimit files or request an admin review to merge this PR." >> $env:GITHUB_STEP_SUMMARY
+
+                        Throw "Number of changed files $NumChangedFiles is greater than BLOCK limit $PrBlockLimit. Click Summary in the left pane for more information."
                     
                     } 
                 }
@@ -265,12 +267,18 @@ jobs:
 
                     If ($NumChangedFiles -gt $PrBlockLimit) {
 
-                        Throw "PR file count $NumChangedFiles is greater than PR change limit $PrBlockLimit."
+                        echo "The PR $PrUrl changes **$NumChangedFiles** files which exceeds the **BLOCK** limit of **$PrBlockLimit**." >> $env:GITHUB_STEP_SUMMARY
+                        echo "Reduce the number of files in this PR to below $PrBlockLimit files or request an admin review to merge this PR." >> $env:GITHUB_STEP_SUMMARY
+
+                        Throw "PR file count $NumChangedFiles is greater than PR change limit $PrBlockLimit. Click Summary in the left pane for more information."
 
 
                     } ElseIf ($NumChangedFiles -gt $PrWarnLimit) {
 
-                        Throw "PR file count $NumChangedFiles is greater than PR change limit $PrWarnLimit."
+                        echo "The PR $PrUrl changes **$NumChangedFiles** files which exceeds the **WARN** limit of **$PrWarnLimit**." >> $env:GITHUB_STEP_SUMMARY
+                        echo "Review the files changed in the PR and confirm the changes are expected. To attest the changes are expected and merge the PR, add the **$WarningLabelName** label to the PR." >> $env:GITHUB_STEP_SUMMARY
+
+                        Throw "PR file count $NumChangedFiles is greater than PR change limit $PrWarnLimit. Click Summary in the left pane for more information."
 
                     } Else {
 
@@ -347,7 +355,10 @@ jobs:
 
                         }
 
-                        Throw "Number of files in PR, $NumChangedFiles, exceeds the BLOCK file limit of $PrBlockLimit."
+                        echo "The PR $PrUrl changes **$NumChangedFiles** files which exceeds the **BLOCK** limit of **$PrBlockLimit**." >> $env:GITHUB_STEP_SUMMARY
+                        echo "Reduce the number of files in this PR to below $PrBlockLimit files or request an admin review to merge this PR." >> $env:GITHUB_STEP_SUMMARY
+
+                        Throw "Number of files in PR, $NumChangedFiles, exceeds the BLOCK file limit of $PrBlockLimit. Click Summary in the left pane for more information."
 
 
                     } ElseIf ($NumChangedFiles -gt $PrWarnLimit) {
@@ -372,7 +383,10 @@ jobs:
 
                         }
 
-                        Throw "Number of files in PR, $NumChangedFiles, exceeds the WARN file limit of $PrWarnLimit."
+                        echo "The PR $PrUrl changes **$NumChangedFiles** files which exceeds the **WARN** limit of **$PrWarnLimit**." >> $env:GITHUB_STEP_SUMMARY
+                        echo "Review the files changed in the PR and confirm the changes are expected. To merge the PR and attest the changes are expected, add the **$WarningLabelName** label to the PR." >> $env:GITHUB_STEP_SUMMARY
+
+                        Throw "Number of files in PR, $NumChangedFiles, exceeds the WARN file limit of $PrWarnLimit. Click Summary in the left pane for more information."
 
                     } 
 
@@ -395,6 +409,12 @@ jobs:
                 If ($GitRequestEvent -eq "pull_request_target") {
 
                     Write-Host "Pull request target branch: $TargetBranch. Default branch $DefaultBranch."
+
+                    
+                    # Setting job summary here just in case the number of files exceeds the warn or block limits. 
+                    # If the number files is below the limits, the job summary will be cleared and this won't be shown.
+                    echo "# Pull request validation error" >> $env:GITHUB_STEP_SUMMARY
+                    echo "" >> $env:GITHUB_STEP_SUMMARY
 
                     If ($TargetBranch -eq $DefaultBranch) {
 
@@ -425,5 +445,8 @@ jobs:
                         Write-Host "Pull request in unmonitored branch"
 
                     }
+
+                    # If we got here, the check passed. Clear the job summary.
+                    echo "" > $env:GITHUB_STEP_SUMMARY
 
                 } 

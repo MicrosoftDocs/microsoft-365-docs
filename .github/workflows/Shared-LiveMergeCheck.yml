@@ -25,8 +25,6 @@ jobs:
           env: 
             PayloadJson: ${{ inputs.PayloadJson }}
             AccessToken: ${{ secrets.AccessToken }}
-            StatusCheckUrl: "https://review.docs.microsoft.com/en-us/office-authoring-guide/pull-request-status-checks?branch=main"
-
             
           run: |
 
@@ -36,10 +34,8 @@ jobs:
             # Get payload data and event from GitHub
             $GitHubData = $env:PayloadJson | ConvertFrom-Json -Depth 50
             $GitRequestEvent = $GitHubData.event_name
-            $StatusCheckHelpUrl = $env:StatusCheckUrl
 
             $PublishBranch = "live"
-            $StatusCheckName = "max/live-compare-merge"
 
             # Retrieve GitHub token, create github HTTP authentication header 
             $AccessToken = $env:AccessToken
@@ -52,6 +48,7 @@ jobs:
 
             $StatusUrl      = $GitHubData.event.pull_request.statuses_url
             $RequiredRepo   = $GitHubData.event.repository.full_name
+            $PrUrl          = $GitHubData.event.pull_request.html_url
             $TargetBranch   = $GitHubData.event.pull_request.base.ref
             $OriginBranch   = $GitHubData.event.pull_request.head.ref
             $OriginRepo     = $GitHubData.event.pull_request.head.repo.full_name
@@ -146,6 +143,9 @@ jobs:
                 Write-Host "Request type is pull_request. Processing request."
                 Write-Host "Target branch is $TargetBranch."
 
+                # Make the job summary section show up so the job always looks consistent.
+                echo "" >> $env:GITHUB_STEP_SUMMARY
+
                 If (($GitHubData.event.action -eq "opened") -or ($GitHubData.event.action -eq "synchronize") -or ($GitHubData.event.action -eq "reopened") -or ($GitHubData.event.action -eq "edited")) {
 
                     # Only run checks if the base branch matches the branch defined in $PublishBranch. 
@@ -163,7 +163,13 @@ jobs:
 
                             Set-PrConversationMessage -Message $($LiveMergeMessage -F $TargetBranch, $DefaultBranch)
 
-                            Throw "Origin branch $OriginRepo/$OriginBranch isn't allowed to merge into $PublishBranch."
+                            # Populates the job summary if an invalid target branch is found.
+                            echo "# Pull request validation error" >> $env:GITHUB_STEP_SUMMARY
+                            echo "" >> $env:GITHUB_STEP_SUMMARY
+                            echo "The branch **$OriginRepo/$OriginBranch** isn't allowed to merge into **$PublishBranch** in PR: $PrUrl." >> $env:GITHUB_STEP_SUMMARY
+
+                            Write-Host "The branch $OriginRepo/$OriginBranch isn't allowed to merge into $PublishBranch. Click Summary in the left pane for more information."
+                            
 
                         } # OriginBranch
 
