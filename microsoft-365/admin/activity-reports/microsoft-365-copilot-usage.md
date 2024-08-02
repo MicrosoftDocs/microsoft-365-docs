@@ -172,6 +172,10 @@ To access accurate information on Copilot for Microsoft 365 usage, use one of th
 
 Yes. Intelligent Recap has been captured in Teams Copilot in Copilot for Microsoft 365 usage.
 
+### Is Copilot chat in Outlook usage counted towards active users of Outlook Copilot active users?
+
+No. Meanwhile, Copilot chat in Outlook usage is counted towards Copilot chat active users.
+
 ### What’s the scope of the user-level table?
 
 The user-level table in the report is configured to show all users who were licensed for Copilot for Microsoft 365 at any point over the past 180 days, even if the user has since had the license removed or never had any Copilot active usage.
