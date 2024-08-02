@@ -35,7 +35,7 @@ This article will help you understand how to determine the number and impact of 
 
 ## Use the Page Diagnostics for SharePoint tool to analyze page calls
 
-The Page Diagnostics for SharePoint tool is a browser extension for the new [Microsoft Edge](https://www.microsoft.com/edge) and Chrome browsers that analyzes both SharePoint in Microsoft 365 modern portal and classic publishing site pages. The tool provides a report for each analyzed page showing how the page performs against a defined set of performance criteria. To install and learn about the Page Diagnostics for SharePoint tool, visit [Use the Page Diagnostics tool for SharePoint](page-diagnostics-for-spo.md).
+The Page Diagnostics for SharePoint tool is a browser extension for Microsoft Edge and Chrome browsers that analyzes both SharePoint in Microsoft 365 modern portal and classic publishing site pages. The tool provides a report for each analyzed page showing how the page performs against a defined set of performance criteria. To install and learn about the Page Diagnostics for SharePoint tool, visit [Use the Page Diagnostics tool for SharePoint](page-diagnostics-for-spo.md).
 
 >[!NOTE]
 >The Page Diagnostics tool only works for SharePoint in Microsoft 365, and cannot be used on a SharePoint system page.
