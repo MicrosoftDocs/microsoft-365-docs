@@ -127,13 +127,7 @@ If Visual Mail Flow can’t help you resolve the issue, contact Microsoft Suppor
 
 ![Enginering direct portal visual mail flow item page](../media/eng-direct-portal/eng-direct-portal-visual-mail-flow-item.png)
 
-## Feedback
-
-We value open communication with your organizations. Your feedback helps us prioritize features, address pain points, and innovate. We encourage you to:
-
-- Use the portal and its features, review the data, and report any issues.
-- Share your feedback on the portal and suggest additional features.
-- Participate in scheduled calls to discuss experiences, gather feedback, and review the roadmap.
+## More information
 
 As we roll out new features, your experience might change. Check for updates via Teams.
 
