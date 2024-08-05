@@ -127,9 +127,9 @@ If Visual Mail Flow can’t help you resolve the issue, contact Microsoft Suppor
 
 ![Enginering direct portal visual mail flow item page](../media/eng-direct-portal/eng-direct-portal-visual-mail-flow-item.png)
 
-## Private Preview and Feedback
+## Feedback
 
-We value open communication with your organizations. Your feedback helps us prioritize features, address pain points, and innovate. During the private preview, we encourage you to:
+We value open communication with your organizations. Your feedback helps us prioritize features, address pain points, and innovate. We encourage you to:
 
 - Use the portal and its features, review the data, and report any issues.
 - Share your feedback on the portal and suggest additional features.
@@ -137,9 +137,7 @@ We value open communication with your organizations. Your feedback helps us prio
 
 As we roll out new features, your experience might change. Check for updates via Teams.
 
-If you would like to get help or have questions, reach out to edfeedback@microsoft.com or use the feedback mechanism within the engineering direct portal page.
-
-If you are encountering any technical issues, open a support ticket via your normal support channel.
+If you would like to get help or have questions, reach out to [edfeedback@microsoft.com](edfeedback@microsoft.com) or use the feedback mechanism within the engineering direct portal page. If you are encountering any technical issues, open a support ticket via your normal support channel.
 
 ## Eligibility and Permissions
 
