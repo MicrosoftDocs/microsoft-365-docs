@@ -1,26 +1,26 @@
 ---
 title: Overview of Loop workspaces storage and permissions
-ms.author: jtremper
-author: jacktremper
-manager: pamgreen
+ms.author: jenz
+author: jenzamora
+manager: jtremper
 audience: Admin
 ms.topic: conceptual
 ms.service: loop
 ms.reviewer: michalbr
-ms.date: 08/21/2023
+ms.date: 06/26/2024
 ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection: 
-  - M365-collaboration
-  - essentials-compliance
+- M365-collaboration
+- essentials-compliance
 description: Learn about Loop workspaces storage and permissions in the Microsoft 365 ecosystem.
 f1.keywords:
 - CSH
 ms.custom: 
-  - NewAdminCenter_Update
-  - chat-teams-channels-revamp
+- NewAdminCenter_Update
+- chat-teams-channels-revamp
 appliesto: 
-  - Microsoft Teams
+- Microsoft Teams
 ---
 
 # Overview of Loop workspaces storage and permissions
@@ -43,19 +43,19 @@ There's a distinction between sharing a specific Loop page with a user versus in
 
 When you invite a user to a workspace, that user has access to all the pages in that workspace. Loop only supports inviting users to a workspace via this Workspace roster management flow, which enables access and sends an email invite to the invited users.
 
-When you share only a Loop page, you're giving users access to that specific page exclusively (not the whole workspace). The user can choose to use a company share link or people-specific share link; unless their tenant admin disabled some of the share link types. When sharing a page, you can choose to grant the user "*edit*", or "*read only*" access.
+When you share only a Loop page, you're giving users access to that specific page exclusively (not the whole workspace). The user can choose to use a company share link or people-specific share link; unless their tenant admin disabled some of the share link types. When sharing a page, you can choose to grant the user *edit*, or *read only* access.
 
 ## Guest/External sharing
 
 You can share Loop workspaces, pages, and components with users external to your company (guests) so they can collaborate with you. There are a few requirements that must be met for guest sharing to be possible:
 
-- Your organization must allow sharing files with guest users. Learn how to [manage this policy](/sharepoint/turn-external-sharing-on-or-off#change-the-organization-level-external-sharing-setting).
+- Your organization must allow sharing files with guests. Learn how to [manage this policy](/sharepoint/turn-external-sharing-on-or-off#change-the-organization-level-external-sharing-setting).
 - The user you're sharing with must have a guest account in your tenant or [Business-to-Business Invitation Manager is enabled](/entra/external-id/what-is-b2b).
-- Your organization doesn't have sensitivity labels configured. Loop external sharing won't work for companies with sensitivity labels configured. Once sensitivity labels for Loop workspaces, pages, and components are generally available, then external sharing for companies with sensitivity labels configured will function.
+- Your organization doesn't have sensitivity labels configured. Loop external sharing doesn't work for companies with sensitivity labels configured. Once sensitivity labels for Loop workspaces, pages, and components are generally available, then external sharing for companies with sensitivity labels configured does not function.
 
-Workspaces can only be shared with users that have an existing guest account in your tenant. If Business-to-business Invitation Manager is enabled, users can share a page or component with a guest user which will enable the flow to create a guest account for the user.
+Workspaces can only be shared with users that have an existing guest account in your tenant. If Business-to-business Invitation Manager is enabled, users can share a page or component with a guest, which enables the flow to create a guest account for the user.
 
-If the above conditions are met, then you can share with guest users by:
+If the above conditions are met, then you can share with guest by:
 
 1. Navigate to the Loop workspace or page you want to share (or, navigate to the Loop file within OneDrive).
 1. Open the share menu in the top right of the screen within Loop (or, open the share menu next to the file while viewing it within OneDrive).
@@ -63,19 +63,21 @@ If the above conditions are met, then you can share with guest users by:
 1. Enter the user's email address you wish to share with.
 1. Select **Send** or **Invite**.
 
-Sharing with external participants is done through "Share with specific people" links. Company-wide share links won't work with external participants. You must designate the guest user explicitly in the share dialog.
+Sharing with external participants is done through "Share with specific people" links. Company-wide share links don't work with external participants. You must designate the guest explicitly in the share dialog.
 
-When a guest user accesses the Loop workspace, page, or component from the link from your organization, they sign in and access the shared content using their guest account. They'll need to utilize the share link again to access the Loop workspace, page, or component in the future, as the content from your organization will not be accessible via their standard account.
+When a guest accesses the Loop workspace, page, or component from the link from your organization, they sign in and access the shared content using their guest account. They'll need to utilize the share link again to access the Loop workspace, page, or component in the future, as the content from your organization isn't accessible via their standard account.
+
+If you would like to disable guest sharing of Loop workspaces independently of your organization-level OneDrive and SharePoint sharing setting, see [set sharing capabilities of applications](/sharepoint/dev/embedded/concepts/admin-exp/consuming-tenant-admin/ctapowershell#set-sharing-capability-of-applications) and use Owning App ID: `a187e399-0c36-4b98-8f04-1edc167a0996`.
 
 ## Loop workspace membership and Microsoft 365 groups
 
 Loop workspaces currently have one type, with membership visible and manageable within the Loop app by the workspace owner. However, there's no integration with Microsoft 365 groups or Security groups.
 
-Currently, owners can't assign new members as owners. If the owner leaves the company, the workspace becomes ownerless. Administrators can't assign new owners to ownerless workspaces.
+Currently, owners can't assign new members as owners. If the owner leaves the company, the workspace becomes ownerless, remain in the tenant, and isn't automatically deleted. Administrators can't assign new owners to ownerless workspaces.
 
 PowerShell support for number of owners on a SharePoint Embedded container isn't yet available. Once it is, to find ownerless workspaces, query Loop workspace containers in SharePoint Embedded. For more information, see [Consuming Tenant Admin](/sharepoint/dev/embedded/concepts/admin-exp/cta), and [Get-SPO Container](/powershell/module/sharepoint-online/get-spocontainer). The Loop Application ID is listed in [Summary of governance, lifecycle, and compliance capabilities](/microsoft-365/loop/loop-compliance-summary).
 
-There are other types of groups and membership lists in the Microsoft ecosystem, such as Microsoft 365 groups and Security groups. Currently, Loop workspace membership does not use these groups or lists.
+There are other types of groups and membership lists in the Microsoft ecosystem, such as Microsoft 365 groups and Security groups. Currently, Loop workspace membership doesn't use these groups or lists.
 
 ## Storage management after user departure
 
@@ -83,9 +85,9 @@ There are other types of groups and membership lists in the Microsoft ecosystem,
 
 The Loop app is designed for shared workspaces and personal workspaces.
 
-Shared workspaces are permissioned with a roster and continue to exist even if someone leaves the company. However, if the creator of the workspace is the person who left the company, then others can't delete the workspace.
+Shared workspaces are permissioned with a roster. If the owner leaves the company, the workspace becomes ownerless, remains in the tenant, and isn't automatically deleted. If the creator of the workspace is the person who left the company, then others can't delete the workspace.
 
-Personal workspaces are also permissioned with a roster, but there's only one person in them by design. When a user leaves a company, their personal workspaces become ownerless.
+Personal workspaces are also permissioned with a roster, but there's only one person in them by design. When a user leaves a company, their personal workspaces become ownerless, remain in the tenant, and aren't automatically deleted.
 
 ### In Loop components created in Microsoft 365 outside of the Loop app
 
@@ -93,7 +95,7 @@ Loop components created outside of the Loop are stored in the OneDrive of the pe
 
 ## Management of Loop app's storage
 
-See [available admin capabilities](/microsoft-365/loop/loop-compliance-summary#available-admin-capabilities) section of the [Summary of governance, lifecycle, and compliance capabilities](/microsoft-365/loop/loop-compliance-summary) for more information.
+For more information, see [available admin capabilities](/microsoft-365/loop/loop-compliance-summary#available-admin-capabilities) section of the [Summary of governance, lifecycle, and compliance capabilities](/microsoft-365/loop/loop-compliance-summary).
 
 ## Pricing and licensing model for Loop app
 

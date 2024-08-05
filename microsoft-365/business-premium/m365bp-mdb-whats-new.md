@@ -9,7 +9,7 @@ author: siosulli
 manager: deniseb
 audience: Admin
 ms.topic: overview
-ms.date: 05/31/2024
+ms.date: 07/09/2024
 ms.service: microsoft-365-business-security
 ms.localizationpriority: medium
 ms.collection:
@@ -28,9 +28,13 @@ f1.keywords: NOCSH
 
 This article lists new features in the latest release of [Microsoft 365 Business Premium](m365bp-overview.md) and [Microsoft Defender for Business](../security/defender-business/mdb-overview.md). Features that are currently in preview are denoted with **(preview)**.
 
+## July 2024
+
+- (GA) Learning hub resources have moved from the Microsoft Defender portal to [learn.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2273118). Access Microsoft Defender XDR Ninja training, learning paths, training modules and more. Browse the [list of learning paths](/training/browse/?products=m365-ems-cloud-app-security%2Cdefender-for-cloud-apps%2Cdefender-identity%2Cm365-information-protection%2Cm365-threat-protection%2Cmdatp%2Cdefender-office365&expanded=m365%2Coffice-365), and filter by product, role, level, and subject.
+
 ## March 2024
 
-- (Preview) **Turn preview options on in the main Microsoft 365 Defender settings** together with other Microsoft 365 Defender preview features. Customers who are not using preview features yet continue to see the legacy settings under **Settings** > **Endpoints** > **Advanced features** > Preview features**. For more information, see [Microsoft 365 Defender preview features](/defender-xdr/preview).
+- (Preview) **Turn preview options on in the main Microsoft 365 Defender settings** together with other Microsoft 365 Defender preview features. Customers who are not using preview features yet continue to see the legacy settings under **Settings** > **Endpoints** > **Advanced features** > **Preview features**. For more information, see [Microsoft 365 Defender preview features](/defender-xdr/preview).
 
 ## January 2024
 
@@ -77,7 +81,7 @@ This article lists new features in the latest release of [Microsoft 365 Business
 
 ## January 2023
 
-- **Attack surface reduction capabilities are rolling out**. [Attack surface reduction capabilities in Defender for Business](../security/defender-business/mdb-asr.md) include attack surface reduction rules and a new attack surface reduction rules report. Attack surface reduction rules target certain behaviors that are considered risky because they're commonly abused by attackers through malware. In the Microsoft Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)), you can now view a report showing detections and configuration information for attack surface reduction rules. In the navigation pane, choose **Reports**, and under **Endpoints**, choose **Attack surface reduction rules**.
+- **Attack surface reduction capabilities are rolling out**. [Attack surface reduction capabilities in Defender for Business](../security/defender-business/mdb-asr.md) include attack surface reduction rules and a new attack surface reduction rules report. Attack surface reduction rules target certain behaviors that are considered risky because they're commonly abused by attackers through malware. In the Microsoft Defender portal (<https://security.microsoft.com>), you can now view a report showing detections and configuration information for attack surface reduction rules. In the navigation pane, choose **Reports**, and under **Endpoints**, choose **Attack surface reduction rules**.
 
 - **Default experience for Defender for Business when an enterprise plan is added**. Defender for Business now retains its default experience ([simplified configuration and setup](../security/defender-business/mdb-simplified-configuration.md)) even if an enterprise plan, such as [Defender for Endpoint Plan 2](../security/defender-endpoint/microsoft-defender-endpoint.md) or [Microsoft Defender for Servers Plan 1 or 2](/azure/defender-for-cloud/plan-defender-for-servers) is added. To learn more, see [What happens if I have a mix of Microsoft endpoint security subscriptions](/microsoft-365/security/defender-business/mdb-faq?#what-happens-if-i-have-a-mix-of-microsoft-endpoint-security-subscriptions)?
 

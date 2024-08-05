@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires, kkameth
-ms.date: 08/01/2023
+ms.date: 06/17/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -20,7 +20,7 @@ description: Learn about pay-as-you-go services and pricing for Microsoft Syntex
 # Pay-as-you-go services and pricing for Microsoft Syntex
 
 > [!NOTE]
-> Through June 2024, if you have [pay-as-you-go billing](syntex-azure-billing.md) set up, your organization will receive a limited amount of included capacity each month for selected services, letting you try these services at no cost. This offering does not include capacity for Microsoft 365 Archive or Microsoft 365 Backup. For more information, see [Try out Microsoft Syntex and explore its services](promo-syntex.md).
+> Through June 2025, if you have [pay-as-you-go billing](syntex-azure-billing.md) set up, your organization will receive a limited amount of included capacity each month for selected services, letting you try these services at no cost. This offering does not include capacity for Microsoft 365 Archive or Microsoft 365 Backup. For more information, see [Try out Microsoft Syntex and explore its services](promo-syntex.md).
 
 When you use Microsoft Syntex [pay-as-you-go](syntex-azure-billing.md), services are billed using Syntex meters in the Azure subscription that you specified when you set up Microsoft Syntex.
 
@@ -42,7 +42,7 @@ To help your organization in planning for pay-as-you-go services, you can use th
 |Optical character recognition  |The number of pages processed for images (JPEG, JPG, PNG, or BMP); the number of pages processed for PDF, TIF, or TIFF; or the number of embedded images in Teams chats and email messages. Each of these counts as one transaction. Processing occurs every time the file is edited. |$0.001/transaction|
 |Microsoft 365 Archive  |The number of gigabytes (GB) of data archived. (This meter is only charged when archived storage plus active storage in SharePoint exceeds a tenant’s included or licensed allocated SharePoint storage quota limit.) <br>Reactivation of archived data after seven days. |$0.05/GB/month (shows on invoice as $0.00167/GB/day)<br><br><br>$0.60/GB|
 |Microsoft 365 Backup (Preview)  |The number of gigabytes (GB) of data backed up. |$0.15/GB/month (shows on invoice as $0.005/GB/day)|
-<!---|Translation |For document translation, the number of characters processed. Character count includes letters, Unicode code points, punctuation, and white spaces. <br>For video transcript translation, the number of characters from the source transcript. (This meter is only charged when the translation has successfully resulted in a new transcript.) |$15.00/1M characters |--->
+
 
 ## Related articles
 

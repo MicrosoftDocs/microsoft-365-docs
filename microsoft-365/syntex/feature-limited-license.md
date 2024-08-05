@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: karlha
-ms.date: 09/21/2023
+ms.date: 08/01/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -12,7 +12,7 @@ ms.custom:
 search.appverid: 
 ms.collection: 
 ms.localizationpriority: medium
-description: Read the Microsoft Syntex features limited time license to see the Syntex features available as a preview for all pay-as-you-go users on a limited time basis.
+description: Read the Microsoft Syntex features limited time license to see the Microsoft Syntex features available as a preview for all pay-as-you-go users on a limited time basis.
 ---
 
 # Microsoft Syntex features limited time license
@@ -21,7 +21,7 @@ These license terms are an agreement between you and Microsoft Corporation (or o
 
 **MICROSOFT OFFERING - MICROSOFT SYNTEX FEATURES**
 
-This License governs the limited time use of the following features, individually and collectively, and is referred to as “Features”:
+This License governs the limited time use of the following features, individually and collectively, and is referred to as "Features":
 
 &emsp;&emsp;i.&ensp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Content Query<br>
 &emsp;&emsp;ii.&ensp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Universal Annotation<br>
@@ -34,17 +34,17 @@ This License governs the limited time use of the following features, individuall
 **REQUIREMENTS TO ENABLE THE FEATURES**
 
 &emsp;&emsp;a)&emsp;Customer must have a healthy Azure subscription connected to Microsoft Syntex<br>
-&emsp;&emsp;b)&emsp;A Microsoft 365 tenancy with either Microsoft 365 admin access or SharePoint Online admin access
+&emsp;&emsp;b)&emsp;A Microsoft 365 tenancy with either Microsoft 365 admin access or SharePoint admin access
 
 **EVALUATION PERIOD**
 
-This Limited Time License is effective on your acceptance and terminates on the earlier of (i) 30 days following first general availability of a commercial release of the Features in a Microsoft product or a future Microsoft product or (ii) June 30, 2024.
+This Limited Time License is effective on your acceptance and terminates on the earlier of (i) 30 days following first general availability of a commercial release of the Features in a Microsoft product or a future Microsoft product or (ii) September 20, 2024.
 
-After the Evaluation Period, Microsoft reserves the right to require an additional SKU for these capabilities.   You will not be billed for use during the Evaluation Period.
+After the Evaluation Period, Microsoft reserves the right to require an additional SKU for these capabilities.   You won't be billed for use during the Evaluation Period.
 
 **LICENSE**
 
-The Features are licensed, not sold. Microsoft reserves all other rights. Unless applicable law gives you more rights despite this limitation, you will not (and have no right to):
+The Features are licensed, not sold. Microsoft reserves all other rights. Unless applicable law gives you more rights despite this limitation, you won't (and have no right to):
 
 **APPLICABLE LAW AND PLACE TO RESOLVE DISPUTES.**
 

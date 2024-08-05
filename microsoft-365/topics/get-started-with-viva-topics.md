@@ -1,7 +1,7 @@
 ---
 ms.date: 1/12/2024
 title: Learn about topics in Topics
-ms.author: cjtan
+ms.author: daisyfeller
 author: daisyfell
 manager: elizapo
 ms.reviewer: daisyfeller

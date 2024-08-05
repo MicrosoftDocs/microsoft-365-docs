@@ -38,10 +38,10 @@ Check out all of our small business content on [Small business help & learning](
 
 Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
-This article explains how to reset passwords for yourself and for your users when you have a **Microsoft 365 for business subscription**. If you don't have a Microsoft 365 for business subscription try this article: [I forgot the username or password for the account I use with Microsoft 365.](https://support.microsoft.com/office/eba0b4a2-c0ae-472c-99f6-bc63ee2425a8?wt.mc_id=SCL_reset-passwords_AdmHlp).
+This article explains how to reset passwords for yourself and for your users when you have a **Microsoft 365 for business subscription**. If you don't have a Microsoft 365 for business subscription try this article: [I forgot the username or password for the account I use with Microsoft 365.](https://support.microsoft.com/office/eba0b4a2-c0ae-472c-99f6-bc63ee2425a8?wt.mc_id=SCL_reset-passwords_AdmHlp). You can also set up self-service password reset for your users so they can reset their own passwords. To learn more, see [Let users reset their own passwords](let-users-reset-passwords.md).
 
-> [!NOTE]
-> You can also set up self-service password reset for your users so they can reset their own passwords. To learn more, see [Let users reset their own passwords](let-users-reset-passwords.md).
+> [!IMPORTANT]
+> To support increased security, as of August 30, 2024, Microsoft will remove the ability to send user account details and passwords in email from within the Microsoft 365 admin center. We recommend that you print the account information to a PDF file, then share it with your users in a secure manner.
 
 > [!TIP]
 > If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
@@ -50,7 +50,7 @@ This article explains how to reset passwords for yourself and for your users whe
 
 This article is for people who set password expiration policy for a business, school, or nonprofit. To complete these steps, you need to sign in with your Microsoft 365 admin account. [Overview in the Microsoft 365 admin center](../admin-overview/admin-center-overview.md).
 
-You must be a [global admin or password administrator](about-admin-roles.md) to perform these steps.
+You must be a [password administrator](about-admin-roles.md) to perform these steps.
 
 ## Watch: Reset a business password for a user
 
@@ -67,7 +67,7 @@ When a user requests a new password, you'll receive a password reset request in 
 
 3. Follow the instructions on the **Reset password** page to auto-generate a new password for the user or create one for them, and then select **Reset password**.  
 
-4. Enter your email address to get the new password, and then send to the user's alternate email address or give it to them in person.
+4. Print the account details to a PDF file, store it in a secure location, then share the information with your users in a secure manner.
 
 If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../../business-video/index.yml).
 
@@ -83,7 +83,7 @@ We strongly recommend that you set up self-service password reset. This way you 
 
 3. Follow the instructions on the **Reset password** page to auto-generate a new password for the user or create one for them, and then select **Reset password**.  
 
-4. Enter an email address the user can get to, so they receive the new password, and follow up with them to make sure they got it.
+4. Print the account details to a PDF file, store it in a secure location, then share the information with your users in a secure manner.
 
 ## Reset my admin password
 
@@ -101,7 +101,7 @@ Use these steps if you forgot your password but you're able to sign in to Micros
 
 If you forgot your password and can't sign in:
 
-- Ask another global admin in your business to reset your password for you.
+- Ask global admin in your business to reset your password for you.
 
 - Make sure you've provided alternate contact information, including a mobile phone number.
 
@@ -119,7 +119,7 @@ These steps work for a business with tens of users. If you have hundreds or thou
 
 4. Follow the instructions on the **Reset password** page, and select **Reset password**.  If you opted for auto-generating the passwords, the new temporary passwords will be displayed.
 
-5. Enter an email address where you can receive the temporary passwords. You'll need to notify your users what their temporary passwords are.
+5. Print the account details to a PDF file, store it in a secure location, then share the information with your users in a secure manner.
   
 ## Reset business passwords in bulk
 

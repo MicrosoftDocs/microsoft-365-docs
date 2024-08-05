@@ -1,7 +1,7 @@
 ---
 ms.date: 01/16/2024
 title: Topics in Viva Engage
-ms.author: ergradel
+ms.author: daisyfeller
 author: daisyfell
 manager: elizapo
 audience: admin
