@@ -29,9 +29,9 @@ Effective Date: November 15, 2023
 
 **MICROSOFT OFFERING**: Microsoft 365 Backup offers backup and recovery of OneDrive, SharePoint, and Exchange Online data for large volumes of data within the Microsoft 365 security boundary. Microsoft 365 Backup can restore your data in case of accidental deletion or ransomware. Customers will be able to sign up for Microsoft 365 Backup through Microsoft admin center. With Microsoft 365 Backup, customers can back up enterprise user accounts, sites, and mailboxes of users.
 
-**PREVIEW FEATURE**: To terminate your Feature Preview during the Preview Period, stop using the Preview Feature. Microsoft may change or discontinue the Preview Feature at any time with or without notice. Microsoft may also choose not to make the Preview Feature generally commercially available.
+**PREVIEW FEATURE**: To terminate your Feature Preview during the Preview Period, stop using the Preview Feature. Microsoft may change or discontinue the Preview Feature at any time with or without notice. Microsoft may also choose not to make the Preview Feature commercially available.
 
-During the Preview Period, Company will allow its tenant admins to back up SharePoint sites, OneDrive accounts, and Exchange mailboxes. Company must be aware that this is a preview service and all the limitations described in these Terms and Conditions.
+During the Preview Period, Company allows its tenant admins to back up SharePoint sites, OneDrive accounts, and Exchange mailboxes. Company must be aware that this is a preview service and all the limitations described in these Terms and Conditions.
 
 Prerequisite Requirements to enable Microsoft 365 Backup pay-as-you-go are:
 
@@ -59,7 +59,7 @@ The above License doesn't extend to any technologies that may also be necessary 
 
 **<ins>PAYMENT TERMS</ins>**
 
-Microsoft 365 Backup uses pay-as-you-go (PAYG) billing through an Azure subscription. Microsoft 365 Backup billing is determined by how much data in GB you backup using Microsoft 365 Backup  in GBs. Company will be able to view this usage as meter events through the Azure subscription it chooses.
+Microsoft 365 Backup uses pay-as-you-go billing through an Azure subscription. Microsoft 365 Backup billing is determined by how much data in GB you backup using Microsoft 365 Backup  in GBs. Company will be able to view this usage as meter events through the Azure subscription it chooses.
 
 Microsoft 365 Backup Feature Preview pricing is as follows:
 
@@ -71,12 +71,12 @@ Microsoft 365 Backup Feature Preview pricing is as follows:
 
 **Preview Period.** The Preview Period continues in effect until <ins>June 30, 2024, or 30 days after Commercial General Availability of the Preview Feature, whichever is first</ins>. Company may terminate their use of the Preview Feature at any time. Terminating use of the Preview Feature won't change any of the rights, licenses granted, or duties made while the Preview Period is in effect. Termination is defined as i) the Company’s termination of use of the Preview Feature and/or ii) the Preview Period ends.
 
-**Effects upon Termination.** Once terminated, Company will no longer have access to Microsoft 365 Backup and all the backed-up content if Microsoft doesn't continue with the then generally available Microsoft 365 Backup features. Should Microsoft choose to make the Microsoft 365 Backup service generally available a pay-as-you-go (PAYG) billing through an Azure subscription, Company may continue without interruption.
+**Effects upon Termination.** Once terminated, Company will no longer have access to Microsoft 365 Backup and all the backed-up content if Microsoft doesn't continue with the then generally available Microsoft 365 Backup features. Should Microsoft choose to make the Microsoft 365 Backup service generally available a pay-as-you-go billing through an Azure subscription, Company may continue without interruption.
 
 **<ins>TERMINATION FOR NON-PAYMENT</ins>**
 
 In case the Company’s Azure subscription goes into an unhealthy stage of deleted or canceled or suspended, we'll prevent any future backup and restores until the subscription is back to a healthy state. Company has 30 days to recover any backed-up data and restores by bringing back the subscription to an active state. If no action is taken from the Company to bring subscription back to active state in 30 days, we'll soft delete the backed-up data from systems after this 30 days. Upon reactivation, Company must also pay for Microsoft 365 Backup usage for the days the subscription was in unhealthy state.
-This Agreement can't be extended. Microsoft may also choose not to make the Preview Feature generally commercially available.
+This Agreement can't be extended. Microsoft may also choose not to make the Preview Feature commercially available.
 
 **<ins>REPRESENTATIONS AND LIMITATIONS</ins>**
 
