@@ -73,7 +73,7 @@ If you would like to disable guest sharing of Loop workspaces independently of y
 
 Loop workspaces currently have one type, with membership visible and manageable within the Loop app by the workspace owner. However, there's no integration with Microsoft 365 groups or Security groups.
 
-Currently, owners can't assign new members as owners. If the owner leaves the company, the workspace becomes ownerless. Administrators can't assign new owners to ownerless workspaces.
+Currently, owners can't assign new members as owners. If the owner leaves the company, the workspace becomes ownerless, remain in the tenant, and is not automatically deleted. Administrators can't assign new owners to ownerless workspaces.
 
 PowerShell support for number of owners on a SharePoint Embedded container isn't yet available. Once it is, to find ownerless workspaces, query Loop workspace containers in SharePoint Embedded. For more information, see [Consuming Tenant Admin](/sharepoint/dev/embedded/concepts/admin-exp/cta), and [Get-SPO Container](/powershell/module/sharepoint-online/get-spocontainer). The Loop Application ID is listed in [Summary of governance, lifecycle, and compliance capabilities](/microsoft-365/loop/loop-compliance-summary).
 
@@ -85,9 +85,9 @@ There are other types of groups and membership lists in the Microsoft ecosystem,
 
 The Loop app is designed for shared workspaces and personal workspaces.
 
-Shared workspaces are permissioned with a roster and continue to exist even if someone leaves the company. However, if the creator of the workspace is the person who left the company, then others can't delete the workspace.
+Shared workspaces are permissioned with a roster. If the owner leaves the company, the workspace becomes ownerless, remains in the tenant, and is not automatically deleted. If the creator of the workspace is the person who left the company, then others can't delete the workspace.
 
-Personal workspaces are also permissioned with a roster, but there's only one person in them by design. When a user leaves a company, their personal workspaces become ownerless.
+Personal workspaces are also permissioned with a roster, but there's only one person in them by design. When a user leaves a company, their personal workspaces become ownerless, remain in the tenant, and are not automatically deleted.
 
 ### In Loop components created in Microsoft 365 outside of the Loop app
 
