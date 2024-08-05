@@ -94,7 +94,7 @@ Visual Mail Flow enables you to examine issues related to mail flow, including:
 
 ### Input Requirements
 
-To use Visual Mail Flow, you need either the email's Message ID *or* the Network Message ID. You can locate either the message ID or the network message ID by opening the email in question, go to file  properties  internet headers. You can parse through the headers to find either the message ID or network ID. Alternatively, you can copy/paste the entire internet header box and use a tool like [Message Header Analyzer](https://mha.azurewebsites.net/) to parse this information for you.
+To use Visual Mail Flow, you need either the email's Message ID *or* the Network Message ID. You can locate either the message ID or the network message ID by opening the email in question, go to **File** -> **Properties** -> **Internet headers**. You can parse through the headers to find either the message ID or network ID. Alternatively, you can copy/paste the entire internet header box and use a tool like [Message Header Analyzer](https://mha.azurewebsites.net/) to parse this information for you.
 
 Ensure the submitted messages are within the age range of 1 to 90 days.
 
@@ -131,7 +131,7 @@ If Visual Mail Flow can’t help you resolve the issue, contact Microsoft Suppor
 
 As we roll out new features, your experience might change. Check for updates via Teams.
 
-If you would like to get help or have questions, reach out to [edfeedback@microsoft.com](edfeedback@microsoft.com) or use the feedback mechanism within the engineering direct portal page. If you are encountering any technical issues, open a support ticket via your normal support channel.
+If you would like to get help or have questions, reach out to [edfeedback@microsoft.com](mailto:edfeedback@microsoft.com) or use the feedback mechanism within the engineering direct portal page. If you are encountering any technical issues, open a support ticket via your normal support channel.
 
 ## Eligibility and Permissions
 
