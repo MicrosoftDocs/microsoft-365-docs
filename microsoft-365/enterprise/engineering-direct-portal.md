@@ -1,14 +1,13 @@
 ---  
-title: "Engineering Direct Portal in the Microsoft 365 Admin Center"  
-description:  
-author: kwekuako
-ms.author: kwekua  
+title: "Engineering Direct Portal in the Microsoft 365 Admin Center"
+author: kelleyvice-msft
+ms.author: kvice  
 manager: scotv
 ms.date: 06/07/2024  
 ms.topic: article
 ms.service: microsoft-365-business  
 ms.subservice: m365-admin-center  
-ms.localizationpriority:  
+ms.localizationpriority: medium
 ms.collection:  
 ms.custom: QuickDraft  
 ms.reviewer: kwekua; holliep  
@@ -16,8 +15,7 @@ search.appverid: MET150
 f1.keywords:  
 audience:  
 description: Understand the new Engineering Direct Portal in the Microsoft 365 admin center and learn how to access and use its features
-ai-usage:  
-- ai-assisted  
+ai-usage: ai-assisted  
 ---  
 
 # Engineering Direct Portal in the Microsoft 365 Admin Center
