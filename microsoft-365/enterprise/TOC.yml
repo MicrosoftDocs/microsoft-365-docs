@@ -160,8 +160,6 @@
       items: 
         - name: Microsoft 365 service health status
           href: microsoft-365-service-health.md
-        - name: Engineering Direct Portal
-          href: engineering-direct-portal.md
         - name: Microsoft 365 monitoring
           href: microsoft-365-monitoring.md
           items:
