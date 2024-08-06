@@ -29,6 +29,9 @@ The Engineering Direct Portal offers:
 - Additional service health diagnostics and reports
 - Features and diagnostics suggested by our OED customers
 
+> [!NOTE]
+> The portal is available to all Office Engineering Direct (OED) customers and their in-scope tenants at no additional charge. Permissions are currently granted to anyone within your tenant with a **support** role for RBAC (role-based access control).
+
 ## Accessing the Engineering Direct Portal
 
 The Engineering Direct Portal is located under **Support** within the Microsoft 365 admin center. To access the portal, follow these steps:
@@ -43,7 +46,7 @@ The Engineering Direct Portal is located under **Support** within the Microsoft 
 
 Once in the portal, you'll see the **Overview** page. This page contains several key elements:
 
-- **ACE Contact**: If you have an ACE assigned, you'll see an ACE tile with primary contact information. This lists your ACE email address with a clickable option to start an email. The tile won't be visible to customers without an ACE.
+- **ACE Contact**: If you have an Advanced Cloud Engineer (ACE) assigned, you'll see an ACE tile with primary contact information. This lists your ACE email address with a clickable option to start an email. The tile won't be visible to customers without an ACE.
 - **Insights: Key Metrics**: This tile lists your engineering escalations for the last six (6) months. An issue is considered an ‘engineering escalation’ once it has been raised to and assigned to a Microsoft Engineering team member (either through our support organization, or through your usage of ‘Escalate to Engineering’).
   - Total escalations include open or closed tickets
   - Active escalations include only those tickets that are open
@@ -57,12 +60,12 @@ Once in the portal, you'll see the **Overview** page. This page contains several
 
 The **Insights** page provides detailed metrics, visuals, and lists on all tickets escalated to engineering. This could be through support or through the ‘escalate to engineering’ option. The layout of this page might differ from the screenshot. This page contains:
 
-1. **Total escalation metrics** – cumulative total of tickets escalated to product groups in the last six months.
-2. **Escalate to Engineering** - cumulative total of tickets using the **escalate to engineering** feature in the last six months.
-3. **Escalations by product** – engineering escalations to the product group by service product
-4. **Escalation trend per week by status** – monthly view of open or closed tickets escalated to the product group
-5. **Support vs. Escalate to Engineering** – visual showcasing tickets escalated to engineering either via support or the ‘escalate to engineering’ option. The number in the center represents the current total escalations active.
-6. **Distribution of escalation severity** – visual of tickets escalated to the product groups by severity.
+1. **Total escalation metrics** – Cumulative total of tickets escalated to product groups in the last six months.
+2. **Escalate to Engineering** - Cumulative total of tickets using the Escalate to Engineering feature in the last six months.
+3. **Escalations by product** – Engineering escalations to the product group by service product.
+4. **Escalation trend per week by status** – Monthly view of open or closed tickets escalated to the product group.
+5. **Support vs. Escalate to Engineering** – Visual showcasing tickets escalated to engineering either via support or the Escalate to Engineering feature. The number in the center represents the current total escalations active.
+6. **Distribution of escalation severity** – Visual of tickets escalated to the product groups by severity.
 7. **Service Requests Escalated to engineering** – List view with filters of tickets that have been escalated to product groups:
 
     - **Title** – support ticket title
@@ -70,8 +73,8 @@ The **Insights** page provides detailed metrics, visuals, and lists on all ticke
     - **Ticket #** – support ticket number
     - **Severity** – ticket severity
     - **Escalation date** – date the issue was first escalated to the product teams
-    - **Status** – status of the ticket escalated to the product teams. Status lists open or closed to start
-    - **Escalate to Engineering – true or false** - (Represents whether the customer raised the issue directly to engineering)
+    - **Status** – status of the ticket escalated to the product group. Status lists open or closed to start.
+    - **Escalate to Engineering – true or false** - represents whether the customer raised the issue directly to engineering
     - **Product** – service product
 
 ![Enginering direct portal insights page](../media/eng-direct-portal/eng-direct-portal-insights.png)
@@ -96,7 +99,8 @@ Visual Mail Flow enables you to examine issues related to mail flow, including:
 
 To use Visual Mail Flow, you need either the email's Message ID *or* the Network Message ID. You can locate either the message ID or the network message ID by opening the email in question, go to **File** -> **Properties** -> **Internet headers**. You can parse through the headers to find either the message ID or network ID. Alternatively, you can copy/paste the entire internet header box and use a tool like [Message Header Analyzer](https://mha.azurewebsites.net/) to parse this information for you.
 
-Ensure the submitted messages are within the age range of 1 to 90 days.
+> [!NOTE]
+> Ensure the submitted messages are within the age range of 1 to 90 days.
 
 - **Message ID**: Found in the email header with the "Message-ID:" token. Users can provide this information to help investigate specific messages. Be sure to include the full message ID. This might include angle brackets (<>). Although the form varies depending on the email system, here's an example of what a message ID would look like: `<08f1e0f806a47b4ac109109ae6ef@server.domain>`.
 - **Network Message ID**: Found in the email header with the "X-MS-Exchange-Organization-Network-Message-Id:" token. An example of a network message ID is `4d4c1224-7398-4e8e-949f-ce1932c4ab9d`.
@@ -121,18 +125,15 @@ The **Visual Mail Flow Tree** is an interactive display showing the stages an em
 
 Select a tree node to view a flyout with other details, including recipients processed and node-specific properties for troubleshooting mail flow issues. The flyout contains other details for you to review and investigate. It contains a common “Recipients” property to show which recipients this node processed, and more node-specific properties that vary between nodes to help better troubleshoot mail flow issues.
 
-Emails sent to many recipients or large groups will take a longer time to query or could time out. Querying emails with fewer recipients would improve your experience.
-
-If Visual Mail Flow can’t help you resolve the issue, contact Microsoft Support for further help.
+> [!TIP]
+> Emails sent to many recipients or large groups will take a longer time to query or could time out. Querying emails with fewer recipients could improve your experience.
 
 ![Enginering direct portal visual mail flow item page](../media/eng-direct-portal/eng-direct-portal-visual-mail-flow-item.png)
 
+If Visual Mail Flow can’t help you resolve the issue, contact Microsoft Support for further help.
+
 ## More information
 
-As we roll out new features, your experience might change. Check for updates via Teams.
+As we roll out new features, your experience might change.
 
-If you would like to get help or have questions, reach out to [edfeedback@microsoft.com](mailto:edfeedback@microsoft.com) or use the feedback mechanism within the engineering direct portal page. If you are encountering any technical issues, open a support ticket via your normal support channel.
-
-## Eligibility and Permissions
-
-The portal is available to all Office Engineering Direct (OED) customers and their in-scope tenants at no additional charge. Permissions are currently granted to anyone within your tenant with a **support** role for RBAC (role-based access control).
+If you would like to get help or have questions, reach out to [edfeedback@microsoft.com](mailto:edfeedback@microsoft.com) or use the feedback mechanism within the Engineering Direct Portal page. If you are encountering any technical issues, open a support ticket via your normal support channel.
