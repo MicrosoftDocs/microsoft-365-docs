@@ -48,7 +48,7 @@ When you [start a trial or purchase Microsoft 365 Business Premium](get-microsof
 When you try or buy Microsoft 365 Business Premium, you can use your own domain, or purchase one during the sign-up process.
 
 > [!NOTE]
-> If you purchased a new domain when you signed up, your domain is all set up and you can move to Add users and assign licenses. Go to the admin center([https://admin.microsoft.com](https://admin.microsoft.com)).
+> If you purchased a new domain when you signed up, your domain is all set up and you can move to Add users and assign licenses. Go to the admin center(<https://admin.microsoft.com>).
 
 1. From the admin center menu, choose **Setup** to start the wizard.
 
@@ -67,7 +67,7 @@ When you try or buy Microsoft 365 Business Premium, you can use your own domain,
 
 Microsoft 365 Business Premium includes Defender for Business, a new security solution to protect devices. See [Onboard devices to Microsoft Defender for Business](../security/defender-business/mdb-onboard-devices.md).
 
-1. Go to the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+1. Go to the Microsoft Defender portal (<https://security.microsoft.com>) and sign in.
 
 2. Go to **Assets** > **Devices**. If Defender for Business isn't already set up, you're prompted to run the [setup wizard](../security/defender-business/mdb-use-wizard.md).
 
@@ -79,7 +79,7 @@ Microsoft 365 Business Premium includes Defender for Business, a new security so
 
 1. Start by [installing Microsoft 365 Apps](m365bp-users-install-m365-apps.md).
 
-2. Go to [https://office.com](https://office.com) and sign in. (See [Getting Started at Office.com](https://support.microsoft.com/office/get-started-at-office-com-91a4ec74-67fe-4a84-a268-f6bdf3da1804).)
+2. Go to <https://office.com> and sign in. (See [Getting Started at Office.com](https://support.microsoft.com/office/get-started-at-office-com-91a4ec74-67fe-4a84-a268-f6bdf3da1804).)
 
 3. Create an Office document, such as a [Word document](https://support.microsoft.com/office/basic-tasks-in-word-87b3243c-b0bf-4a29-82aa-09a681999fdc).
 
@@ -89,7 +89,7 @@ Microsoft 365 Business Premium includes Defender for Business, a new security so
 
 ## Start using the Microsoft Defender portal
 
-1. Access the Microsoft Defender portal at [https://security.microsoft.com](https://security.microsoft.com).
+1. Access the Microsoft Defender portal at <https://security.microsoft.com>.
 
 2. Take some time to [familiarize yourself with the portal](../security/defender-business/mdb-get-started.md).
 

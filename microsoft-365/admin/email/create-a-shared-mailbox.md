@@ -51,7 +51,7 @@ Before creating a shared mailbox, be sure to read [About shared mailboxes](about
 
 ## Create a shared mailbox and add members
   
-1. Sign in with a global admin account or Exchange admin account. If you get the message "**You don't have permission to access this page or perform this action**," then you aren't an admin.
+1. Sign in with a user with Exchange admin role. If you get the message "**You don't have permission to access this page or perform this action**," then you aren't an admin.
 
 ::: moniker range="o365-worldwide"
 

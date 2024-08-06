@@ -59,6 +59,11 @@ Check out this video and others on our [YouTube channel](https://go.microsoft.co
 
 Your company might need multiple domain names for different purposes. For example, you might want to add a different spelling of your company name because customers are already using it and their communications have failed to reach you.
 
+> Where possible, we recommend that your organization use a custom domain name, as it can enhance your email's  appearance and improve it's reputation.
+
+> [!TIP]
+> Where possible, we recommend that your organization use a custom domain name, as it can enhance your email's  appearance and improve it's reputation.
+
 1. In the Microsoft 365 admin center, choose <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>.
 1. Under **Get your custom domain set up**, select **View** > **Manage** > **Add domain**.
 1. Enter the new domain name that you want to add, and then select **Next**.

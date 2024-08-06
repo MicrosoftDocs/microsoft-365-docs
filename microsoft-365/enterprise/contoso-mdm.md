@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: kvice
 manager: scotv
-ms.date: 09/13/2018
+ms.date: 08/01/2024
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -15,6 +15,7 @@ ms.collection:
 - scotvorg
 - M365-identity-device-management
 - Strat_O365_Enterprise
+- must-keep
 ms.custom:
 
 description: Understand how Contoso uses Microsoft Intune in Microsoft 365 for enterprise to manage its devices and the apps that run on them.
