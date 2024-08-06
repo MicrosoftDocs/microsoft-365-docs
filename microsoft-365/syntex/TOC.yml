@@ -256,6 +256,8 @@
           href: content-processing-create-rules.md
         - name: Set a content type 
           href: content-processing-content-type.md
+        - name: Translate a document 
+          href: content-processing-translate.md
 
     - name: Premium taxonomy features
       items:
