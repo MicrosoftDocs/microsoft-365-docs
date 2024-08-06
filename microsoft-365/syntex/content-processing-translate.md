@@ -18,7 +18,7 @@ description: Learn how to create a rule to automatically translate a document wh
 
 # Create a rule to translate a document in Microsoft Syntex
 
-You can create a rule to automatically translate a document [when a new file is added](#translate-a-video-transcript) or [when data in a column changes](#when-data-in-a-column-changes) in a SharePoint document library with Microsoft Syntex.
+You can create a rule to automatically translate a document [when a new file is added](#translate-a-document-when-a-new-file-is-added) or [when data in a column changes](#translate-a-document-when-data-in-a-column-changes) in a SharePoint document library with Microsoft Syntex.
 
 ## Translate a document when a new file is added
 
