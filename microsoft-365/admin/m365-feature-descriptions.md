@@ -1,6 +1,6 @@
 ---
 title: "Microsoft 365 feature descriptions"
-ms.author: office365servicedesc
+ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
 ms.date: 06/18/2022
@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 ms.custom:
 - Adm_ServiceDesc
 - Adm_ServiceDesc_top
-ms.collection: scotvorg
+ms.collection: tier2, scotvorg, adm_o365, adm_toc
 ms.assetid: 721676a0-5108-488e-ae0c-7316617d0006
 description: "Learn about the information available for Microsoft 365 feature descriptions."
 ---
