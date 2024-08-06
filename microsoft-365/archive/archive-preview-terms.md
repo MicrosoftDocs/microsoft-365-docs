@@ -13,6 +13,7 @@ search.appverid:
 ms.collection:
     - m365initiative-syntex
 ms.localizationpriority:  medium
+ROBOTS: NOINDEX, NOFOLLOW
 description: Read the preview terms and conditions for Microsoft 365 Archive (Preview).
 ---
 
