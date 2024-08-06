@@ -62,7 +62,7 @@ While you can add additional onmicrosoft.com domains, only one onmicrosoft.com d
   
 ## Before you begin
 
-To add, modify, or remove domains, you **must** be a **Domain Name Administrator** or **Global Administrator** of a [business or enterprise plan](https://products.office.com/business/office). These changes affect the whole tenant; *Customized administrators* or *regular users* won't be able to make these changes.
+To add, modify, or remove domains, you **must** be a **Domain Name Administrator** of a [business or enterprise plan](https://products.office.com/business/office). These changes affect the whole tenant; *Customized administrators* or *regular users* won't be able to make these changes.
 
 
 ## Add a new onmicrosoft.com domain
