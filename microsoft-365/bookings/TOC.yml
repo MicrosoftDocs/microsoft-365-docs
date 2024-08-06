@@ -11,8 +11,6 @@
       href: add-email-reminder.md
     - name: Set your banner image
       href: set-banner-image.md
-    - name: Personal Bookings FAQ
-      href: personal-bookings-faq.yml
   - name: Learn about Shared Bookings
     displayname: Learn about Shared Bookings
     items:
@@ -74,8 +72,6 @@
           href: reporting-info.md
         - name: Use Power Automate connectors
           href: power-automate-integration.md
-        - name: Shared Bookings FAQ
-          href: bookings-faq.yml  
   - name: Bookings Admin controls
     items:
     - name: Turn off Personal Bookings
@@ -90,3 +86,9 @@
       href: delete-calendar.md
     - name: Best practices for Shared Bookings
       href: best-practices-shared-bookings.md
+  - name: Frequently asked questions
+    items:
+    - name: Personal Bookings FAQ
+      href: personal-bookings-faq.yml
+    - name: Shared Bookings FAQ
+      href: bookings-faq.yml  
