@@ -8,7 +8,7 @@ ms.topic: article
 ms.service: microsoft-365-business  
 ms.subservice: m365-admin-center  
 ms.localizationpriority: medium
-ms.collection:  
+ms.collection: 
 ms.custom: QuickDraft  
 ms.reviewer: kwekua; holliep  
 search.appverid: MET150  
@@ -47,12 +47,12 @@ The Engineering Direct Portal is located under **Support** within the Microsoft 
 Once in the portal, you'll see the **Overview** page. This page contains several key elements:
 
 - **ACE Contact**: If you have an Advanced Cloud Engineer (ACE) assigned, you'll see an ACE tile with primary contact information. This lists your ACE email address with a clickable option to start an email. The tile won't be visible to customers without an ACE.
-- **Insights: Key Metrics**: This tile lists your engineering escalations for the last six (6) months. An issue is considered an ‘engineering escalation’ once it has been raised to and assigned to a Microsoft Engineering team member (either through our support organization, or through your usage of ‘Escalate to Engineering’).
+- **Insights: Key Metrics**: This tile lists your engineering escalations for the last six months. An issue is considered an 'engineering escalation' once it has been raised to and assigned to a Microsoft Engineering team member (either through our support organization, or through your usage of 'Escalate to Engineering').
   - Total escalations include open or closed tickets
   - Active escalations include only those tickets that are open
 - **Customer Advisory Board (CAB)**: The CAB tile will list the last and next CAB events as well as the last and next community calls. This is informational only; registrations and calendar blockers will continue to be provided separately through existing process channels.
 - **Insights: Escalation Trend Per Week by Status**: A monthly view of escalations by open and closed for the last six months. This is a focused view of all reactive issues, filtered by all issues that have a Microsoft engineering element.
-- **Request A Feature**: Allows you to submit feedback or a request to the Engineering Direct portal team. Feedback can be both related to the portal itself and its functionality, and any broader engineering features you would like to see in Engineering Direct. Feature requests submitted via this method are visible to users in your private **MyFeedback** section of the feedback portal.
+- **Request A Feature**: Allows you to submit feedback or a request to the Engineering Direct Portal team. Feedback can be both related to the portal itself and its functionality, and any broader engineering features you would like to see in Engineering Direct. Feature requests submitted via this method are visible to users in your private **MyFeedback** section of the feedback portal.
 
 ![Enginering direct portal overview page](../media/eng-direct-portal/eng-direct-portal-overview.png)
 
