@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 05/29/2024
+ms.date: 08/06/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -13,44 +13,62 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to create a rule to set a content type when a file is added to a SharePoint document library in Microsoft Syntex.
+description: Learn how to create a rule to automatically translate a document when a new file is added or when data in a column changes in a SharePoint document library with Microsoft Syntex.
 ---
 
 # Create a rule to translate a document in Microsoft Syntex
 
-In Microsoft Syntex, you can create a rule to automatically set the content type for a file when it's added to a document library.
+You can create a rule to automatically translate a document [when a new file is added](#translate-a-video-transcript) or [when data in a column changes](#when-data-in-a-column-changes) in a SharePoint document library with Microsoft Syntex.
 
-## Set a content type
+## Translate a document when a new file is added
 
-To set a content type when a file is added to a document library, follow these steps.
+To create a rule to translate documents automatically when a document is created, follow these steps:
 
-1. In the document library, select **Automate** > **Rules** > **Create a rule**.
+1. From a SharePoint document library, select **Automate** > **Rules** > **Create a rule**.
 
    ![Screenshot of the document library showing the Automate > Rules > Create a rule option.](../media/content-understanding/content-processing-create-rule.png)
 
-2. On the **Create a rule** page, select a condition that triggers the rule and the action that the rule will take. In this case, select **A new file is added**.
+2. On the **Create a rule** page, select **A new file is added**.
 
    ![Screenshot of the Create a rule page showing the A new file is added option highlighted.](../media/content-understanding/content-processing-create-a-rule-page.png)
 
-    Your selection here creates a rule statement that you'll complete in the next step.
+3. Under **When a new file is added**, complete the rule statement:
 
-3. To complete the rule statement, under **When a new file is added**:
+    a. Select **Choose action**, and then select **create a translated copy in**.
 
-    1. Select **Choose action**, and then select **set content type to**.
+      ![Screenshot of the rule statement page showing the translation option highlighted.](../media/content-understanding/translation-rule-create-copy.png)
 
-       ![Screenshot of the rule statement page showing the choose action option highlighted.](../media/content-understanding/content-rule-set-content-site-to.png)
+    b. Select **enter a language**, and then enter a language or use the drop-down menu to choose a language into which you want to translate the file.
 
-    2. Select **Choose a content type**, and then select the appropriate [content type](/sharepoint/governance/content-type-and-workflow-planning#content-type-overview) for the file. The content types shown in this list are the ones available in the library.
-
-       ![Screenshot of the rule statement page showing the statement options.](../media/content-understanding/content-rule-statement-options.png)
-
-
-    3. Select **Choose file property**, and then select the appropriate property for the file.
-
-    4. Select **Choose a condition**, and then select the appropriate condition.
-
-    5. In the **Enter a value** field, enter the appropriate value. The value can be a specific keyword or text string you want to find in the file property.
-
-       ![Screenshot of the rule statement page showing the completed statement.](../media/content-understanding/content-rule-completed-statement.png)
+      ![Screenshot of the rule statement page showing the enter language option.](../media/content-understanding/translation-rule-enter-language.png)
 
 4. When your rule statement is complete, select **Create**. You can [see and manage the new rule](content-processing-overview.md#manage-a-rule) on the **Manage rules** page.
+
+## Translate a document when data in a column changes
+
+To create a rule to translate documents automatically when data in a column changes, follow these steps:
+
+1. From a SharePoint document library, select **Automate** > **Rules** > **Create a rule**.
+
+   ![Screenshot of the document library showing the Automate > Rules > Create a rule option.](../media/content-understanding/content-processing-create-rule.png)
+
+2. On the **Create a rule** page, select **Data in a column changes**.
+
+   ![Screenshot of the Create a rule page showing the A new file is added option highlighted.](../media/content-understanding/content-processing-create-a-rule-page.png)
+
+3. Under **When data in a column changes**, complete the rule statement:
+
+    a. Select **Choose a column**, and then select the appropriate column for which to translate the file.
+
+     ![Screenshot of the Create a rule page showing the beginning rule statement.](../media/content-understanding/translation-beginning-rule.png)
+
+    b. Select **Choose a condition**, and then select the appropriate condition under which to translate the file.
+
+    c. Select **Choose action**, and then select **create a translated copy in**.
+
+    d. Select **enter a language**, and then select the language into which you want to translate the file.
+
+     ![Screenshot of the Create a rule page showing the enter a language option.](../media/content-understanding/translation-column-enter-language.png)
+
+4. When your rule statement is complete, select **Create**. You can [see and manage the new rule](content-processing-overview.md#manage-a-rule) on the **Manage rules** page.
+
