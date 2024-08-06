@@ -254,14 +254,15 @@ The result from the changes web method is an array of records in which each reco
 - endpointSetId—The ID of the endpoint set record that is changed.
 - disposition—Describes what the change did to the endpoint set record. Values are _change_, _add_, or _remove_.
 - impact—Not all changes will be equally important to every environment. This element describes the expected impact to an enterprise network perimeter environment as a result of this change. This element is included only in change records of version **2018112800** and later. Options for the impact are:
-  — AddedIp – An IP address was added to Microsoft 365 and will be live on the service soon. This represents a change you need to take on a firewall or other layer 3 network perimeter device. If you don't add this before we start using it, you may experience an outage.
-  — AddedUrl – A URL was added to Microsoft 365 and will be live on the service soon. This represents a change you need to take on a proxy server or URL parsing network perimeter device. If you don't add this URL before we start using it, you may experience an outage.
-  — AddedIpAndUrl—Both an IP address and a URL were added. This represents a change you need to take on either a firewall layer 3 device or a proxy server or URL parsing device. If you don't add this IP/URL pair before we start using it, you may experience an outage.
-  — RemovedIpOrUrl – At least one IP address or URL was removed from Microsoft 365. Remove the network endpoints from your perimeter devices, but there's no deadline for you to do this.
-  — ChangedIsExpressRoute – The ExpressRoute support attribute was changed. If you use ExpressRoute, you might need to take action depending on your configuration.
-  — MovedIpOrUrl – We moved an IP address or Url between this endpoint set and another one. Generally no action is required.
-  — RemovedDuplicateIpOrUrl – We removed a duplicate IP address or Url but it's still published for Microsoft 365. Generally no action is required.
-  — OtherNonPriorityChanges – We changed something less critical than all of the other options, such as the contents of a note field.
+   — AddedIp – An IP address was added to Microsoft 365 and will be live on the service soon. This represents a change you need to take on a firewall or other layer 3 network perimeter device. If you don't add this before we start using it, you may experience an outage.
+   — AddedUrl – A URL was added to Microsoft 365 and will be live on the service soon. This represents a change you need to take on a proxy server or URL parsing network perimeter device. If you don't add this URL before we start using it, you may experience an outage.
+   — AddedIpAndUrl—Both an IP address and a URL were added. This represents a change you need to take on either a firewall layer 3 device or a proxy server or URL parsing device. If you don't add this IP/URL pair before we start using it, you may experience an outage.
+   — AddedSubstituteUrl – An FQDN previously unpublished due to a wildcard is now published because the wildcard URL was removed. This change is effective immediately.  
+   — RemovedIpOrUrl – At least one IP address or URL was removed from Microsoft 365. Remove the network endpoints from your perimeter devices, but there's no deadline for you to do this.
+   — ChangedIsExpressRoute – The ExpressRoute support attribute was changed. If you use ExpressRoute, you might need to take action depending on your configuration.
+   — MovedIpOrUrl – We moved an IP address or Url between this endpoint set and another one. Generally no action is required.
+   — RemovedDuplicateIpOrUrl – We removed a duplicate IP address or Url but it's still published for Microsoft 365. Generally no action is required.
+   — OtherNonPriorityChanges – We changed something less critical than all of the other options, such as the contents of a note field.
 - version—The version of the published endpoint set in which the change was introduced. Version numbers are of the format _YYYYMMDDNN_, where _NN_ is a natural number incremented if there are multiple versions required to be published on a single day.
 - previous—A substructure detailing previous values of changed elements on the endpoint set. This won't be included for newly added endpoint sets. Includes  _ExpressRoute_, _serviceArea_, _category_, _required_, _tcpPorts_, _udpPorts_, and _notes_.
 - current—A substructure detailing updated values of changes elements on the endpoint set. Includes _ExpressRoute_, _serviceArea_, _category_, _required_, _tcpPorts_, _udpPorts_, and _notes_.
@@ -272,7 +273,7 @@ The result from the changes web method is an array of records in which each reco
 - remove—A substructure detailing items to be removed from the endpoint set. Omitted if there are no removals.
   — ips—Items to be removed from the _ips_ array.
   — urls- Items to be removed from the _urls_ array.
-
+  
 ### Changes web method examples
 
 Example 1 request URI: <https://endpoints.office.com/changes/worldwide/0000000000?ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
