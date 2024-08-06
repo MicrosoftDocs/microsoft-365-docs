@@ -72,7 +72,7 @@ Here’s a quick overview for deploying Shifts in your organization.
     Alternatively, you can use the [Create or replace schedule](/graph/api/team-put-schedule?view=graph-rest-1.0&tabs=http) Graph API to define Shifts settings for your frontline teams and the [shiftsRoleDefinition](/graph/api/resources/shiftsroledefinition?view=graph-rest-beta) Graph API to [manage permissions to Shifts capabilities for your frontline managers](manage-shifts-permissions-frontline-managers.md).
 
 > [!NOTE]
-> Optionally, [set up a frontline operational hierarchy](deploy-frontline-operational-hierarchy.md) to map your organization’s structure of frontline teams and locations to a hierarchy in the Teams admin center. Creating a frontline operational hierarchy will enable location scenarios and other capabilities for your frontline.
+> Optionally, [set up a frontline operational hierarchy](deploy-frontline-operational-hierarchy.md) to map your organization’s structure of frontline teams and locations to a hierarchy in the Teams admin center. Creating a frontline operational hierarchy will enable [location scenarios](set-up-open-shifts-across-locations.md) and other capabilities for your frontline.
 
 ## Shifts capabilities
 
