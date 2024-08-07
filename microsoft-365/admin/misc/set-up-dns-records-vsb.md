@@ -61,6 +61,7 @@ On your hosting provider's website, add the following CNAME record. Make sure th
 - Points to address: Copy the value from the admin center and paste it here.
 - TTL: `3600` (or your provider default)
 
+Save the record.
 ## Add a TXT record to help prevent spam
 
 **Before you begin:** If you already have an SPF record for your domain, don't create a new one for Microsoft 365. Instead, add the required Microsoft 365 values to the current record on your hosting providers website so that you have a *single* SPF record that includes both sets of values.
