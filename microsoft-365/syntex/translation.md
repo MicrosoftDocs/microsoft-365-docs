@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 01/19/2024
+ms.date: 08/06/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -55,8 +55,8 @@ To create a translated version of a document, follow these steps:
 
 ## Translate a document automatically
 
-You can create a rule to automatically translate a document [when a new file is added](#translate-a-video-transcript) or [when data in a column changes](#when-data-in-a-column-changes).
-
+You can create a rule to automatically translate a document [when a new file is added](content-processing-translate.md#translate-a-document-when-a-new-file-is-added) or [when data in a column changes](content-processing-translate.md#translate-a-document-#when-data-in-a-column-changes). For step-by-step instruction, see [Create a rule to translate a document](content-processing-translate.md).
+<!---
 ### When a new file is added
 
 To create a rule to translate documents automatically when a document is created, follow these steps:
