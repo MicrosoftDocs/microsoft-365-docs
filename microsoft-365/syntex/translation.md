@@ -55,7 +55,7 @@ To create a translated version of a document, follow these steps:
 
 ## Translate a document automatically
 
-You can create a rule to automatically translate a document [when a new file is added](content-processing-translate.md#translate-a-document-when-a-new-file-is-added) or [when data in a column changes](content-processing-translate.md#translate-a-document-#when-data-in-a-column-changes). For step-by-step instruction, see [Create a rule to translate a document](content-processing-translate.md).
+You can create a rule to automatically translate a document [when a new file is added](content-processing-translate.md#translate-a-document-when-a-new-file-is-added) or [when data in a column changes](content-processing-translate.md#translate-a-document-when-data-in-a-column-changes). For step-by-step instruction, see [Create a rule to translate a document](content-processing-translate.md).
 <!---
 ### When a new file is added
 
