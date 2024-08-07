@@ -134,7 +134,21 @@
     "source_path":"microsoft-365/backup/storage/backup-3p-pricing.md",
     "redirect_url":"/microsoft-365/backup/storage/backup-3p-billing",
     "redirect_document_id":true
+   },
+   {
+    "source_path":"microsoft-365/backup/backup-preview-terms.md",
+    "redirect_url":"https://privacy.microsoft.com/privacystatement",
+    "redirect_document_id":false
+   },
+   {
+    "source_path":"microsoft-365/backup/backup-preview-terms-third-party.md",
+    "redirect_url":"https://privacy.microsoft.com/privacystatement",
+    "redirect_document_id":false
+   },
+   {
+    "source_path":"microsoft-365/archive/archive-preview-terms.md",
+    "redirect_url":"https://privacy.microsoft.com/privacystatement",
+    "redirect_document_id":false
    }
-   
     ]
  }
