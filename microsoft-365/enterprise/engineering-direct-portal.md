@@ -3,12 +3,14 @@ title: "Engineering Direct Portal in the Microsoft 365 Admin Center"
 author: kelleyvice-msft
 ms.author: kvice  
 manager: scotv
-ms.date: 06/07/2024  
+ms.date: 08/07/2024  
 ms.topic: article
 ms.service: microsoft-365-business  
 ms.subservice: m365-admin-center  
 ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
+- must-keep
 ms.custom: QuickDraft  
 ms.reviewer: kwekua; holliep  
 search.appverid: MET150  
@@ -47,7 +49,7 @@ The Engineering Direct Portal is located under **Support** within the Microsoft 
 Once in the portal, you'll see the **Overview** page. This page contains several key elements:
 
 - **ACE Contact**: If you have an Advanced Cloud Engineer (ACE) assigned, you'll see an ACE tile with primary contact information. This lists your ACE email address with a clickable option to start an email. The tile won't be visible to customers without an ACE.
-- **Insights: Key Metrics**: This tile lists your engineering escalations for the last six months. An issue is considered an 'engineering escalation' once it has been raised to and assigned to a Microsoft Engineering team member (either through our support organization, or through your usage of 'Escalate to Engineering').
+- **Insights: Key Metrics**: This tile lists both your engineering escalations and those that have been resolved for the last six months. An issue is considered an 'engineering escalation' once it has been raised to and assigned to a Microsoft Engineering team member (either through our support organization, or through your usage of 'Escalate to Engineering').
   - Total escalations include open or closed tickets
   - Active escalations include only those tickets that are open
 - **Customer Advisory Board (CAB)**: The CAB tile will list the last and next CAB events as well as the last and next community calls. This is informational only; registrations and calendar blockers will continue to be provided separately through existing process channels.
@@ -58,13 +60,13 @@ Once in the portal, you'll see the **Overview** page. This page contains several
 
 ## Insights Page
 
-The **Insights** page provides detailed metrics, visuals, and lists on all tickets escalated to engineering. This could be through support or through the ‘escalate to engineering’ option. The layout of this page might differ from the screenshot. This page contains:
+The **Insights** page provides detailed metrics, visuals, and lists on both your current engineering tickets and those that have been resolved within the last six months. This could be through support or through the "escalate to engineering" option. The layout of this page might differ from the screenshot. This page contains:
 
 1. **Total escalation metrics** – Cumulative total of tickets escalated to product groups in the last six months.
 2. **Escalate to Engineering** - Cumulative total of tickets using the Escalate to Engineering feature in the last six months.
-3. **Escalations by product** – Engineering escalations to the product group by service product.
+3. **Escalations by product** – Active engineering tickets to the product group by service product.
 4. **Escalation trend per week by status** – Monthly view of open or closed tickets escalated to the product group.
-5. **Support vs. Escalate to Engineering** – Visual showcasing tickets escalated to engineering either via support or the Escalate to Engineering feature. The number in the center represents the current total escalations active.
+5. **Support vs. Escalate to Engineering** – Visual showcasing active tickets escalated to engineering either via support or the Escalate to Engineering feature. The number in the center represents the current total active tickets.
 6. **Distribution of escalation severity** – Visual of tickets escalated to the product groups by severity.
 7. **Service Requests Escalated to engineering** – List view with filters of tickets that have been escalated to product groups:
 
@@ -87,13 +89,15 @@ The **Diagnostics** page hosts diagnostic tools for self-service issue resolutio
 
 ### Using Visual Mail Flow
 
-Visual Mail Flow enables you to examine issues related to mail flow, including:
+Visual Mail Flow enables you to examine issues related to mail flow, such as email submission, group expansion, processing by transport agents (such as AntiSpam, mail flow rules, Data Loss Prevention), and delivery.
 
-- Delivery status of recipients
-- Reasons for nonreceipt of emails by certain recipients
-- Variations in email delivery between recipients
-- Transport Rules applied to an email and their actions
-- Data Loss Prevention Rules applied to an email and their actions
+Some common situations where Visual Mail Flow can be useful:
+
+- Checking the delivery status of recipients
+- Determining reasons for nonreceipt of emails by certain recipients
+- Understanding variations in email delivery between recipients
+- Identifying mail flow rules applied to an email and their actions
+- Identifying Data Loss Prevention rules applied to an email and their actions
 
 ### Input Requirements
 
@@ -107,7 +111,7 @@ To use Visual Mail Flow, you need either the email's Message ID *or* the Network
 
 ### Running the Diagnostic
 
-Enter either the Message ID or Network Message ID, then select **Troubleshoot** to start the diagnosis. Results are generated in approximately 10 seconds.
+Enter either the Message ID or Network Message ID, then select **Troubleshoot** to start the diagnosis. Results are generated in approximately 30 seconds.
 
 ### Understanding the Results
 
