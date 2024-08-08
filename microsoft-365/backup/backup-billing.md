@@ -1,11 +1,11 @@
 ---
-title: Set up pay-as-you-go billing for Microsoft 365 Backup (Preview)
+title: Manage billing and invoices for Microsoft 365 Backup
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 04/11/2024
+ms.date: 07/31/2024
 ms.topic: conceptual
 ms.service: microsoft-365-backup
 ms.custom: backup
@@ -13,31 +13,29 @@ search.appverid:
 ms.collection:
     - essentials-get-started
 ms.localizationpriority:  medium
-description: Learn how to set up pay-as-you-go billing for Microsoft 365 Backup.
+description: Learn how to set up and manage pay-as-you-go billing and invoices in the Azure portal for Microsoft 365 Backup.
 ---
 
-# Set up pay-as-you-go billing for Microsoft 365 Backup (Preview)
+# Manage billing and invoices for Microsoft 365 Backup
 
-As a first step to start using Microsoft 365 Backup, you should link an Azure subscription in Syntex pay-as-you-go, if you haven't already done so. Although Microsoft 365 Backup isn't part of the Microsoft Syntex product suite, this offering is still using the Syntex billing setup for consistency with other Microsoft 365 pay-as-you-go offerings.
+As a first step to start using Microsoft 365 Backup, you should link an Azure subscription in Microsoft Syntex pay-as-you-go, if you haven't already done so. Although Microsoft 365 Backup isn't part of the Microsoft Syntex product suite, this offering is still using the Syntex billing setup for consistency with other Microsoft 365 pay-as-you-go offerings.
 
-## Set up billing
+## Set up pay-as-you-go billing
 
 Use these steps to set up pay-as-you-go billing for Microsoft 365 Backup.
 
-1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home).
+1. In the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home), select **Setup**.
 
-2. Select **Setup**.
+2. Under **Files and content**, select **Automate content processes with Syntex**.
 
-3. On the **Setup** page, in the **Files and content** section, select **Use content AI with Microsoft Syntex**.
-
-4. On the **Use content AI with Microsoft Syntex** page, select **Set up billing**.
+3. On the **Automate content processes with Syntex** page, select **Go to Syntex settings**.
 
     ![Screenshot of the Set up billing option in the Microsoft 365 admin center.](../media/m365-backup/backup-setup-billing.png)
 
     > [!NOTE]
     > To set up pay-as-you-go billing for Microsoft 365 Backup, you must provide an owner or contribution role on the Azure subscription to be used.
 
-5. If you ***don't*** have an Azure subscription or resource group, follow these steps. If you have an Azure subscription and resource group, go directly to step 6.
+4. If you ***don't*** have an Azure subscription or resource group, follow these steps. If you have an Azure subscription and resource group, go directly to step 5.
 
     To create a new Azure subscription with the same organization and Microsoft Entra tenant as your Microsoft 365 subscription:
 
@@ -60,7 +58,7 @@ Use these steps to set up pay-as-you-go billing for Microsoft 365 Backup.
     > [!NOTE]
     > The resource group should be mapped to the Azure subscription you provided when you set up pay-as-you-go.
 
-6. If you ***have*** an Azure subscription, follow these steps:
+5. If you ***have*** an Azure subscription, follow these steps:
 
     1. On the **Set up pay-as-you-go billing** panel, under **Azure subscription**, select the subscription from the dropdown list.
 
@@ -79,7 +77,6 @@ You have successfully set up billing. You can proceed to [Step 2: Turn on Micros
 
 > [!NOTE]
 > Any subsequent changes made to the billing for Microsoft 365 Backup in the Microsoft 365 admin center or the Azure portal can take up to 24 hours to become effective.
-
 
 ## Manage consumption and invoices in the Azure portal
 
@@ -113,7 +110,7 @@ To view tags:
 
         - **servicetype** is OneDrive, SharePoint, or Exchange.
 
-        - **applications** is coming soon.
+        - **applications** shows a list of app IDs.
 
     - Azure cost analysis - filter by tag.
 

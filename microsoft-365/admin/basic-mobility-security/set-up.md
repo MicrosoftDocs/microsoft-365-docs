@@ -32,18 +32,18 @@ Check out all of our small business content on [Small business help & learning](
 
 The built-in Basic Mobility and Security for Microsoft 365 helps you secure and manage users' mobile devices such as iPhones, iPads, Androids, and Windows phones. You can create and manage device security policies, remotely wipe a device, and view detailed device reports.
 
-Have questions? For a FAQ to help address common questions, see [Basic Mobility and Security Frequently asked questions (FAQs)](frequently-asked-questions.yml). Be aware that you cannot use a delegated administrator account to manage Basic Mobility and Security. For more info, see [Partners: Offer delegated administration](https://support.microsoft.com/office/partners-offer-delegated-administration-26530dc0-ebba-415b-86b1-b55bc06b073e). 
+Have questions? For a FAQ to help address common questions, see [Basic Mobility and Security Frequently asked questions (FAQs)](frequently-asked-questions.yml). Be aware that you cannot use a delegated administrator account to manage Basic Mobility and Security. For more info, see [Partners: Offer delegated administration](https://support.microsoft.com/office/partners-offer-delegated-administration-26530dc0-ebba-415b-86b1-b55bc06b073e).
 
 ## Activate the Basic Mobility and Security service
 
-1. Sign in to Microsoft 365 with your global admin account.
+1. Sign in to Microsoft 365 with a [Directory writers](/entra/identity/role-based-access-control/permissions-reference) admin account.
 
-1. Go to [Activate Basic Mobility and Security](https://compliance.microsoft.com/basicmobilityandsecurity). 
+1. Go to [Activate Basic Mobility and Security](https://compliance.microsoft.com/basicmobilityandsecurity).
 
 1. Select **Enable feature.**
 
-   It can take some time to activate Basic Mobility and Security. If the feature is already activated, the **Enable feature** option will not appear. 
-   
+   It can take some time to activate Basic Mobility and Security. If the feature is already activated, the **Enable feature** option will not appear.
+
 ## Set up Mobile Device Management
 
 When the service is ready, complete the following steps to finish setup.
@@ -65,7 +65,7 @@ After you add the two CNAME records, go back to the Security & Compliance Center
 
 To manage iOS devices like iPad and iPhones, you need to create an Apple Push Notification service (APNs) certificate.
 
-1. Sign in to Microsoft Azure with your global admin account.
+1. Sign in to Microsoft Azure with a [Directory writers](/entra/identity/role-based-access-control/permissions-reference) admin account.
 
 1. Go to [Configure MDM Push Certificate](https://portal.azure.com/#view/Microsoft_Intune_Enrollment/APNSCertificateUploadBlade).
 
