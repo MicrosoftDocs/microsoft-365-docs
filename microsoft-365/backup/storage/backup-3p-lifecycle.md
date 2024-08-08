@@ -216,4 +216,14 @@ Onboarding and offboarding a Microsoft 365 Backup application requires the appli
 - The consequence of another application invoking specific APIs; and/or
 - The system waiting for a period of time to pass.
 
- ![Diagram showing the application lifecycle states.](../media/m365-backup/backup-lifecycle-states.png)
+ ![Diagram showing the application lifecycle states.](../../media/m365-backup/backup-lifecycle-states.png)
+
+The above diagram outlines the states and the gestures that can cause a transition between them:
+1. [Register your application as a Microsoft 365 Backup Storage Controller](#step-1-register-your-application-as-a-microsoft-365-backup-storage-controller)
+2. [Activate your application to be the Microsoft 365 Backup Storage Controller with no existing Microsoft 365 Backup Storage Controller](#no-existing-microsoft-365-backup-storage-controller)
+3. [Activate your application to be the Microsoft 365 Backup Storage Controller with an Existing Microsoft 365 Backup Storage Controller](#existing-microsoft-365-backup-storage-controller) and [Another application is Activated as the Microsoft 365 Backup Storage Controller when your application is the Active Microsoft 365 Backup Storage Controller](#another-application-is-activated-as-the-microsoft-365-backup-storage-controller)
+4. [The Existing Microsoft 365 Backup Storage Controller Grace Period completes](#existing-microsoft-365-backup-storage-controller-grace-period)
+5. [Deactivate your application to be the Microsoft 365 Backup Storage Controller with current state of pendingActive](#deactivating-with-current-state-of-pendingactive)
+6. [Unregister your application to be the Microsoft 365 Backup Storage Controller with current state of inactive](#unregistering-with-current-state-of-inactive)
+7. [Unregister your application to be the Microsoft 365 Backup Storage Controller with current state of pendingActive](#unregistering-with-current-state-of-pendingactive)
+8. [Unregister your application to be the Microsoft 365 Backup Storage Controller with current state of active](#unregistering-with-current-state-of-active)
