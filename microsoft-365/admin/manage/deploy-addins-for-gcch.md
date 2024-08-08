@@ -24,11 +24,11 @@ description: "Deploy Office Add-ins in Microsoft 365 GCC High environments."
 
 Centralized deployment for Office Add-ins can be managed at an administrative level in Microsoft 365 for Business. Since Government Community Cloud High (GCC High) tenants do not have access to the Office store, you will need to deploy Office Add-ins through the following process.
 
-1. In your browser, go to appsource.microsoft.com.
+1. In your browser, go to <b>appsource.microsoft.com</b>.
 2. Click on the tile of the add-in you want to deploy (do not click the <b>Get it now</b> button). This will open the details page for the add-in.
-3. In the URL for the details page, find and copy the AssetID value. For example, if the URL is "https://appsource.microsoft.com/en-US/product/office/WA1234567989?tab=Overview", the AssetID value is <b>WA1234567989</b>.
-4. Paste the AssetID value to the following URL: "https://store.office.com/app/download?assetid=value&cmu=en-001". For example, using the example AssetID value from the previous step, the URL would need to be updated to "https://store.office.com/app/download?assetid=WA1234567989&cmu=en-001".
-5. In your browser, go to admin.microsoft.com to open the Microsoft 365 admin center.
+3. In the URL for the details page, find and copy the AssetID value. For example, if the URL is "<b>https://appsource.microsoft.com/en-US/product/office/WA1234567989?tab=Overview</b>", the AssetID value is <b>WA1234567989</b>.
+4. Paste the AssetID value to the following URL: "<b>https://store.office.com/app/download?assetid=value&cmu=en-001</b>". For example, using the example AssetID value from the previous step, the URL would need to be updated to "<b>https://store.office.com/app/download?assetid=WA1234567989&cmu=en-001</b>".
+5. In your browser, go to <b>admin.microsoft.com</b> to open the Microsoft 365 admin center.
 6. In the left pane, select <b>Show all</b> to expand the menu. Then select <b>Settings</b>, and then <b>Integrated apps</b>.
 7. On the <b>Integrated apps</b> page, under <b>For advanced management of these apps go to the respective admin center or page</b>, select <b>Add-ins</b>.
 8. On the <b>Add-ins</b> page, select <b>Deploy Add-in</b>.
