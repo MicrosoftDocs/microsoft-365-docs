@@ -29,6 +29,7 @@ jobs:
                     ".openpublishing.publish.config.json", 
                     "docfx.json", 
                     "README.md", 
+                    "LICENSE",
                     "LICENSE-CODE", 
                     "ThirdPartyNotices", 
                     ".acrolinx-config.edn", 
@@ -44,7 +45,7 @@ jobs:
                     "Shared-PrFileCount.yml", 
                     "Shared-ExtractPayload.yml" 
                 ]'
-            ApproverList: '["dstrome"]'
+            ApproverList: '["user1"]'
             
             PayloadJson: ${{ inputs.PayloadJson }}
             AccessToken: ${{ secrets.AccessToken }}
@@ -158,20 +159,21 @@ jobs:
                                 # and the break out of the loop.
                                 ForEach ($File in $ProtectedFileList) {
 
-                                    $File = $File.ToLower()
-
                                     ForEach ($PrFile in $FileList) {
 
-                                        $PrFile = $PrFile.filename.ToLower()
+                                        $PrFile = $PrFile.filename
+                                        $LastIndexOfBackslash = $PrFile.LastIndexOf("/")
 
-                                        If ($PrFile.Contains($File)) {
+                                        $PrFile = $PrFile.Remove(0, $LastIndexOfBackslash + 1)
+
+                                        If ($PrFile -ceq $File) {
 
                                             $ProtectedFileFound = $True
 
                                             echo "- $PrFile" >> $env:GITHUB_STEP_SUMMARY
-                                             
-                                            Write-Host "PROTECTED FILE: $PrFile"
 
+                                            Write-Host "PROTECTED FILE: $PrFile"
+                                            
                                         }
 
                                     }
