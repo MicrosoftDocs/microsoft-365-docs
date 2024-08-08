@@ -538,7 +538,7 @@
     - name: Microsoft 365 feature descriptions
       href: m365-feature-descriptions.md
     - name: Engineering Direct Portal
-      href: ../enterprise/engineering-direct-portal.md
+      href: ../enterprise/engineering-direct-portal.md?toc=/microsoft-365/admin/toc.json&bc=/microsoft-365/admin/breadcrumb/toc.json
     - name: Troubleshoot
       href: /office/troubleshoot/  
     - name: Contact support
