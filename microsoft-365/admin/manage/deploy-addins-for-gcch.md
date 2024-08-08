@@ -29,7 +29,7 @@ Centralized deployment for Office Add-ins can be managed at an administrative le
 3. In the URL for the details page, find and copy the AssetID value. For example, if the URL is "<b>https://appsource.microsoft.com/en-US/product/office/WA1234567989?tab=Overview</b>", the AssetID value is <b>WA1234567989</b>.
 4. Paste the AssetID value to the following URL: "<b>https://store.office.com/app/download?assetid=value&cmu=en-001</b>". For example, using the example AssetID value from the previous step, the URL would need to be updated to "<b>https://store.office.com/app/download?assetid=WA1234567989&cmu=en-001</b>".
 5. In your browser, go to <b>admin.microsoft.com</b> to open the Microsoft 365 admin center.
-6. In the left pane, select <b>Show all</b> to expand the menu. Then select <b>Settings</b>, and then <b>Add-ins</b>.
+6. In the left pane, select <b>Show all</b> to expand the menu. Then select <b>Settings</b>, then <b>Add-ins</b>.
 7. On the <b>Add-ins</b> page, select <b>Deploy Add-in</b>.
 8. On the <b>Deploy a new add-in</b> page, select <b>Next</b>.
 9. Under <b>Deploy a custom add-in</b>, select <b>Upload custom apps</b>.
