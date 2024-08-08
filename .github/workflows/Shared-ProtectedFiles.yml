@@ -129,7 +129,7 @@ jobs:
                         Write-Host "PR has files`n`rFile list: $($FileList.filename)"
 
                         # Process PRs that are submitted by non-admins
-                        If ($PrSubmitterPerms.permission -ne "aadmin") {
+                        If ($PrSubmitterPerms.permission -ne "admin") {
 
                             Write-Host "Submitter is not an admin"
 
@@ -169,6 +169,8 @@ jobs:
                                         If ($PrFile -ceq $File) {
 
                                             $ProtectedFileFound = $True
+
+                                            echo "- $PrFile" >> $env:GITHUB_STEP_SUMMARY
 
                                             Write-Host "PROTECTED FILE: $PrFile"
 
