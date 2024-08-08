@@ -29,7 +29,6 @@ jobs:
                     ".openpublishing.publish.config.json", 
                     "docfx.json", 
                     "README.md", 
-                    "LICENSE",
                     "LICENSE-CODE", 
                     "ThirdPartyNotices", 
                     ".acrolinx-config.edn", 
