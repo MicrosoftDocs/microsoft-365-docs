@@ -25,14 +25,9 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # Overview of the Alerts page in Microsoft 365 Lighthouse
 
-> [!NOTE]
-> Features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, you should see it soon.
->
-> To see which new features are currently available in your partner tenant, go to the **Home** page of Microsoft 365 Lighthouse, and then either select the **What's new** link in the upper-right corner of the page or select **What's new** on the **What's new & learning resources** card.
-
 As an MSP provider, you need to monitor and respond to the security issues of your customers efficiently and effectively. Microsoft 365 Lighthouse introduces alerts, a powerful tool that gives you a consolidated view of all the high-priority detections and alerts across your customers. You can see a prioritized list of the most urgent issues that require your attention and take immediate action to resolve them. You can also enable push alerts to your existing support systems and flows, so you never miss a critical alert that needs your intervention.
 
-To help you get started, Lighthouse provides a default set of alerting rules based on best practices and recommendations. You can use these rules as they are or modify them according to your preferences and needs. You can also create rules from scratch for more control and flexibility.
+To help you get started, Lighthouse provides a default set of alert rules based on best practices and recommendations. You can use these alert rules as they are or modify them according to your preferences and needs. You can also create custom alert rules for more control and flexibility.
 
 ## Alerts tab
 
@@ -65,22 +60,31 @@ Select the **Comments and history** tab in the alert details pane to see a compl
 
 ### Alert types
 
-Lighthouse defines six alert types.
+Lighthouse offers several configurable alert types from the following services: Microsoft Defender for Business (MDB), Microsoft Defender Antivirus, and Microsoft Entra ID. 
 
-- Non-compliant
-- Device without antivirus protection
-- Variance detection
-- Risky user
-- Security incident
-- Active threat on device
+Lighthouse does *not* currently support alerts from the following services: Microsoft Defender for Cloud Apps, Microsoft Defender for Office 365 (MDO), or additional Azure services. 
+ 
+The following table provides details about the different alert types that Lighthouse supports. 
+
+
+| Alert type | Available values during creation of alert rule |
+|--|--|
+| Non-compliant device | **Alert severity:** Low, Medium, High, Informational<br>**Compliance state:** Not compliance, In grace period, Not evaluated<br>**Device type:** Desktop, Windows RT, Win MO6, Nokia, Windows Phone, Mac, Windows CE, Embedded Windows, iPhone, iPad, iPod, Android, SoC Consumer, Unix, Mac MDM, Windows HoloLens, Windows Surface Hub, Android (for work), Android (Enterprise), Windows 10x, Android (Google Mobile Services), Palm, Unknown |
+| Devices without antivirus protection | **Alert severity:** Low, Medium, High, Informational<br>**Threat protection:** Enabled, Disabled<br>**Antivirus updates:** Needs updates |
+| Variance detection | **Alert severity:** Low, Medium, High, Informational<br>**Deployment status:** Incomplete, Ineligible, Failed |
+| Risky user | **Alert severity:** Low, Medium, High, Informational<br>**Risk state:** At risk, Confirmed compromised |
+| Windows logs | **Alert severity:** Low, Medium, High, Informational<br>**Entry type:** Error, Warning, Information, Success audit, Failure audit<br>**Log name:** All logs, Application, Security, Setup, System |
+| Security incident | **Alert severity:** Low, Medium, High, Informational<br>**Classification:** Not specified, False positive, True positive, Benign positive<br>**Determination:** Not specified, Apt, Malware, Security personnel, Security testing, Unwanted software, Other, Multi-staged attack, Compromised user, Phishing, Malicious user activity, Clean, Insufficient data, Confirmed user activity, Line of business application<br>**Service source:** Not specified, Microsoft Defender for Endpoint, Microsoft Defender for Identity, Microsoft Defender for Cloud Apps, Microsoft Defender for Office 365, Microsoft 365 Defender, Microsoft Entra Identity Protection, Microsoft App Governance, Data Loss Prevention, Microsoft Defender for Cloud<br>**Status:** All, Unknown, New, In progress, Resolved |
+| Lighthouse communications | **Alert severity:** Low, Medium, High, Informational<br>**Lighthouse system events:** All events, Initial data availability |
+| Active threat on device | **Alert severity:** Low, Medium, High, Informational<br>**Threat type:** All threats, Miscellaneous, Virus, Malware, Spyware<br>**Severity:** Unknown, Low, Moderate, High, Severe |
 
 ## Alert rules tab
 
-The **Alert rules** tab lets you create and edit alert rules. Lighthouse provides six default alert rules that are automatically applied to all customers. You can edit existing rules or create your own custom rules. Select **Create alert rule**, and Lighthouse will guide you step by step in creating your first alert rule.
+The **Alert rules** tab shows a summary of all the alert rules in your partner tenant. You can edit existing alert rules or create your own custom alert rules. Lighthouse provides six default alert rules that are automatically applied to all customers. 
 
-The Alert rules tab also includes the following options:
+The **Alert rules** tab also includes the following options:
 
-- **Create alert rule:** Select to create a new alert.
+- **Create alert rule:** Select to have Lighthouse guide you through the process of creating a custom alert rule.
 - **Edit alert rule:** Select to edit an existing alert rule.
 - **Delete:** Select to delete an alert rule from the list.
 - **Search:** Enter keywords to locate a specific alert rule in the list.
