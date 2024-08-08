@@ -35,6 +35,7 @@ description: "Learn how to manage extensions for Copilot in the Integrated apps 
 > - You must be licensed with Copilot for Microsoft 365 to use extensions for Copilot for Microsoft 365.
 > - The capability is enabled by default in all Microsoft 365 Copilot licensed tenants.
 > - Admins can disable this functionality on a user and group basis and control how individual extensions are approved for use, and which extensions are enabled.
+> - Pre-approved apps by admins are usable in Microsoft Copilot when the apps are updated to support Microsoft Copilot.
 
 Microsoft Copilot for Microsoft 365 is a new experience inside Microsoft 365 that combines the power of large language models with your data and apps in Microsoft 365 to capture natural language commands to produce content and analyze data. Extensions for Copilot are extensions that enable Copilot to access and use third-party apps, such as Jira, [Dynamics 365](/microsoft-365-copilot/extensibility/overview-business-applications), or Bing Web Search. Admins can manage extensions for Copilot in the same way as they manage any other app in the Integrated apps section of the Microsoft 365 admin center. This document explains how admins can enable, disable, assign, block, or remove extensions for Copilot for their organization, and about Copilot capabilities and data privacy.
 
