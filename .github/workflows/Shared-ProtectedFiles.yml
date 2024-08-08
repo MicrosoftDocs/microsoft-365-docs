@@ -173,9 +173,7 @@ jobs:
                                             echo "- $PrFile" >> $env:GITHUB_STEP_SUMMARY
 
                                             Write-Host "PROTECTED FILE: $PrFile"
-
-                                            Break
-
+                                            
                                         }
 
                                     }
