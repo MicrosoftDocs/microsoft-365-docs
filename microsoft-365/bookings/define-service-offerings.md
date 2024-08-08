@@ -1,9 +1,9 @@
 ---
-title: "Define your services in shared bookings"
+title: "Define your services in Shared Bookings"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 06/05/2024
+ms.date: 08/08/2024
 audience: Admin
 ms.topic: how-to
 ms.service: bookings
@@ -16,7 +16,7 @@ ms.collection:
 description: "Instructions for entering service offerings information, including service name, description, location, duration, and pricing. You can also tag the employees who are qualified to provide the service."
 ---
 
-# Define your services in shared bookings
+# Define your services in Shared Bookings
 
 When you define your service offerings in Microsoft Bookings, you set a service name, description, location (choose whether you want to meet in person or have an online meeting), duration, default reminders to customers and staff, internal notes about the service, and pricing. You can also tag the employees who are qualified to provide the service. Then, when customers come to your business website to book an appointment, they can see exactly what types of appointments are available, choose the person they want to provide the service, and see how much their service will cost.
 

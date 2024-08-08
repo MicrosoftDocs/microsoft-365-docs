@@ -34,7 +34,7 @@
         href: notify-staff-member-assigned-booking.md
       - name: Configure staff membership when added to a Shared Booking page
         href: accept-membership-shared-booking-page.md
-    - name: Manage your service availability for shared bookings
+    - name: Manage your service availability for Shared Bookings
       items:
         - name: Creating personalized and group services
           href: service-types.md
@@ -46,7 +46,7 @@
           href: set-buffer-time.md
         - name: Hide services from your booking page
           href: hide-service-on-booking-page.md
-    - name: Manage your customers for shared bookings
+    - name: Manage your customers for Shared Bookings
       items:
         - name: Let customers manage their bookings
           href: customers-manage-booking.md

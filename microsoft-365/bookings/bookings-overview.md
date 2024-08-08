@@ -37,11 +37,11 @@ Use Bookings to make your organization’s meetings virtual with online meetings
 
 ## Personal Bookings
 
-Personal bookings is how you manage your own appointment timeslots, it allows you to easily configure and share your availability with your customers, clients, or colleagues. You can be in charge of your own time and avoid the back and forth of scheduling. You can also set aside time for specific activities by creating meeting types. Once you publish your personal booking page, you can share the link with anyone who can then see your availability and easily schedule a time when you're free and is convenient for them.
+Personal Bookings is how you manage your own appointment timeslots, it allows you to easily configure and share your availability with your customers, clients, or colleagues. You can be in charge of your own time and avoid the back and forth of scheduling. You can also set aside time for specific activities by creating meeting types. Once you publish your personal booking page, you can share the link with anyone who can then see your availability and easily schedule a time when you're free and is convenient for them.
 
 ## Shared Bookings
 
-Shared bookings allows you to invite your team members and create booking pages and let your customers book time with you and your team. It contains various settings to define services, manage staff members, configure schedules and availability, business hours and customize how appointments are scheduled. These pages can be customized to fit the diverse needs of your organization. 
+Shared Bookings allows you to invite your team members and create booking pages and let your customers book time with you and your team. It contains various settings to define services, manage staff members, configure schedules and availability, business hours and customize how appointments are scheduled. These pages can be customized to fit the diverse needs of your organization.
 
 ## Bookings data and compliance
 
