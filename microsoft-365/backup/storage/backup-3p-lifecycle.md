@@ -208,3 +208,6 @@ Unregistering your application that has a state of **active** automatically init
 
 > [!WARNING]
 > If your application is the active Microsoft 365 Backup Storage Controller when you unregister it, you are potentially responsible for an additional 37 days (7 days plus 30 days) for the Microsoft 365 Backup pay-as-you-go billing in the Consuming Tenant.
+
+## Onboarding States
+
