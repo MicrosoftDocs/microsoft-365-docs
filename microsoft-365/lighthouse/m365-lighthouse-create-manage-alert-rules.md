@@ -26,7 +26,7 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 Alert rules allow you to configure high-priority alerts from the following services: Microsoft Defender for Business (MDB), Microsoft Defender Antivirus, and Microsoft Entra ID.
 
-Lighthouse provides a default set of alert rules based on best practices and recommendations. You can use these alert rules as they are or modify them according to your preferences and needs. You can also create custom alert rules for more control and flexibility. 
+Lighthouse provides a default set of alert rules based on best practices and recommendations. You can use these alert rules as is or modify them according to your preferences and needs. You can also create custom alert rules for more control and flexibility. 
 
 For example, you can create an alert rule in Lighthouse to alert you when an active threat is found on a device. Lighthouse checks the underlying Microsoft Defender for Business service for threats and, if an active threat is found, displays an alert on the **Alerts** page in Lighthouse. Lighthouse also sends an alert notification via email, if configured.
 
@@ -45,9 +45,9 @@ You must be a Global Administrator to create and manage alert rules.
 2. On the **Alerts** page, select the **Alert rules** tab.
 3. Select **Create alert rule**.
 4. On the **Set up the basics** page, provide the following information:
-    1. Name of the alert rule
-    2. Alert type
-    3. (Optional) Description of the alert rule
+    - Name of the alert rule
+    - Alert type
+    - (Optional) Description of the alert rule
 5. Select **Next**.
 6. On the **Settings** page, configure the alert settings. The settings vary based on the alert type you selected on the first page.
 7. Select **Next**.
