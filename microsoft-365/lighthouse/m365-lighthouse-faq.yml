@@ -23,7 +23,7 @@ metadata:
   description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, get answers to frequently asked questions (FAQs) about Microsoft 365 Lighthouse."
 title: Microsoft 365 Lighthouse frequently asked questions (FAQs)
 summary: |
-  Last updated March 15, 2024. This article contains answers to frequently asked questions (FAQs) about Microsoft 365 Lighthouse.
+  Last updated August 8, 2024. This article contains answers to frequently asked questions (FAQs) about Microsoft 365 Lighthouse.
   
   If you can't find an answer to your question, let us know by providing feedback and we'll add it to this article.
   
@@ -91,6 +91,32 @@ sections:
       - question: What permissions do I currently have for this tenant?
         answer: |
           If you can't access tenant information, you may not have the correct permissions for that tenant. Some features and data are only visible to specific roles. To view what roles you have, see [View your Microsoft Entra roles across tenants](m365-lighthouse-view-your-roles.md).
+
+  - name: Understanding alerts
+    questions:          
+      - question: Why are there comments that I didn't add on my alerts?
+        answer: |
+          Lighthouse adds comments whenever the system makes a change or updates an alert. Likewise, if a user takes an action on an alert, this is also noted in a comment. These comments provide a running history of all actions taken on the alert.
+          
+      - question: I resolved an alert in the associated service portal. Why am I still seeing the alert in Lighthouse?
+        answer: |
+          Lighthouse alerts are based on the underlying entity (for example, device or user) and do not correlate to alerts in the associated service portal. If you resolve an alert in the associated service portal but don't make a change to the underlying entity, then the Lighthouse alert remains unchanged. If you make a change to the underlying entity, then the Lighthouse alert status changes to **Resolved**.
+ 
+      - question: Why do alerts show up again after they're dismissed or resolved?
+        answer: |
+          If an alert is resolved but the underlying condition reappears, the alert triggers again and the status changes to **New**. For example, if a risky user alert is resolved, but then the same risky user triggers a new alert with new risky behavior, the alert status changes from **Resolved** to **New**. 
+          
+          When an alert is dismissed in Lighthouse, the triggering entity (for example, user or device) won't retrigger the same alert for 30 days. After 30 days, any new activity on that entity changes the alert status from **Dismissed** to **New**. 
+
+      - question: When are emails sent to notify partners of new alerts?
+        answer: |
+          Lighthouse monitors all corresponding service portals across MSPs and their customers. The exact time an alert appears and an email is sent varies and is based on the alert rule engine, but MSPs should generally see a new alert appear on the **Alerts** page in Lighthouse and receive an email notification within minutes of the triggering event. 
+          
+      - question: What do the timestamps indicate on Lighthouse alerts?
+        answer: |
+          The time stamp in the **First detected** column indicates the first time the condition was detected by Lighthouse. This time stamp may be slightly different than the time stamp for the alert in the associated service portal. 
+          
+          The time stamp in the **Last updated** column indicates the time that the condition was last detected by Lighthouse.  
 
   - name: Deploying baselines
     questions:          

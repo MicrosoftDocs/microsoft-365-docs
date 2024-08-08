@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: shcallaw
-ms.date: 06/30/2023
+ms.date: 08/08/2024
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-lighthouse
@@ -80,7 +80,7 @@ The following table provides details about the different alert types that Lighth
 
 ## Alert rules tab
 
-The **Alert rules** tab shows a summary of all the alert rules in your partner tenant. You can edit existing alert rules or create your own custom alert rules. Lighthouse provides six default alert rules that are automatically applied to all customers. 
+The **Alert rules** tab shows a summary of all the alert rules in your partner tenant. Lighthouse provides eight default alert rules that are automatically applied to all customers. You can edit existing alert rules or create your own custom alert rules.  
 
 The **Alert rules** tab also includes the following options:
 
@@ -89,7 +89,7 @@ The **Alert rules** tab also includes the following options:
 - **Delete:** Select to delete an alert rule from the list.
 - **Search:** Enter keywords to locate a specific alert rule in the list.
 
-:::image type="content" source="../media/m365-lighthouse-alerts-overview/m365-lighthouse-alerts-rules-tab.png" alt-text="Screenshot of alerts rules tab." lightbox="../media/m365-lighthouse-alerts-overview/m365-lighthouse-alerts-rules-tab.png":::
+:::image type="content" source="../media/m365-lighthouse-alerts-overview/m365-lighthouse-alerts-rules-tab.png" alt-text="Screenshot of Alert rules tab." lightbox="../media/m365-lighthouse-alerts-overview/m365-lighthouse-alerts-rules-tab.png":::
 
 ## Related content
 
