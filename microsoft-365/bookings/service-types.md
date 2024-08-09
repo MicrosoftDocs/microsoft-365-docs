@@ -17,7 +17,7 @@ description: "Learn how to create 1:N and N:N services in Microsoft 365 Business
 
 # Creating personalized and group services in Microsoft Bookings
 
-Microsoft Bookings is a powerful scheduling tool in Microsoft 365 Business Basic that allows you to create and manage online appointments for your customers. Depending on your business needs, you may want to offer services that involve multiple staff members and customers. In this article, we will guide you through the process of creating personalized (1:N) and group (N:N) services in Microsoft Bookings.
+Microsoft Bookings is a powerful scheduling tool in Microsoft 365 Business Basic that allows you to create and manage online appointments for your customers. Depending on your business needs, you might want to offer services that involve multiple staff members and customers. In this article, we'll guide you through the process of creating personalized (1:N) and group (N:N) services in Microsoft Bookings.
 
 ## Service types in Microsoft Bookings
 
@@ -26,7 +26,7 @@ Microsoft Bookings is a powerful scheduling tool in Microsoft 365 Business Basic
 - **N:N service** Multiple staff members meet with multiple customers at the same time.
 
 >[!NOTE]
-> To create a service, you must be added as an administrator (staff role). See [Understanding staff roles](staff-roles.md) for more information.
+> To create a service, you must be added as an administrator (staff role). For more information, see [Understanding staff roles](staff-roles.md).
 
 ## Creating a 1:N Service
 
@@ -37,7 +37,7 @@ Microsoft Bookings is a powerful scheduling tool in Microsoft 365 Business Basic
 
 ## Creating a N:N Service
 
-You can select the maximum number of attendees for a service. This decides the number of customers who can join the appointment. Once this step is complete, the service type (multi customer or single) cannot be edited further. The default value of **Maximum number of attendees** is set as 1. This means, by default, Microsoft Bookings creates 1:1 service.
+You can select the maximum number of attendees for a service. This decides the number of customers who can join the appointment. Once this step is complete, the service type (multi customer or single) can't be edited further. The default value of **Maximum number of attendees** is set as 1. This means, by default, Microsoft Bookings creates a 1:1 service.
 
 :::image type="content" source="media/booking-basic-details.png" alt-text="Screenshot showing the maximum number of attendees selected for a service." lightbox="media/booking-basic-details.png":::
 
