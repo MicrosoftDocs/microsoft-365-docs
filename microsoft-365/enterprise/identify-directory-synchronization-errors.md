@@ -3,7 +3,7 @@ title: "View directory synchronization errors in Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 12/29/2023
+ms.date: 07/17/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -38,9 +38,9 @@ You can view directory synchronization errors in the <a href="https://go.microso
 
 To view any errors in the Microsoft 365 admin center:
   
-1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) with a global administrator account.
+1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) with a Hybrid Identity Administrator account.
 
-2. On the **Home** page, you'll see the **User management** card. 
+2. On the **Home** page, you'll see the **User management** card.
 
     ![The User management card in the Microsoft 365 admin center.](../media/060006e9-de61-49d5-8979-e77cda198e71.png)
   

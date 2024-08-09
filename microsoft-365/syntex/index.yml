@@ -46,6 +46,8 @@ landingContent:
             url: /graph/api/resources/documentprocessingjob?view=graph-rest-beta
           - text: Sensitive information prebuilt model
             url: prebuilt-model-sensitive-info.md
+          - text: Track and manage eSignature requests using Approvals in Teams
+            url: esignature-approvals.md
 
 
 # Card 2
@@ -95,7 +97,7 @@ landingContent:
         links:
           - text: Microsoft 365 Archive
             url: /microsoft-365/archive
-          - text: Microsoft 365 Backup (Preview)
+          - text: Microsoft 365 Backup
             url: /microsoft-365/backup
 
 # Card 4

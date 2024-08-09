@@ -3,7 +3,7 @@ title: "Turn off directory synchronization for Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 12/28/2023
+ms.date: 07/16/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -47,7 +47,7 @@ To turn off Directory synchronization:
     Install-Module Microsoft.Graph -Force
     Install-Module Microsoft.Graph.Beta -AllowClobber -Force 
     
-    # Connect With Global Admin Account
+    # Connect With Hybrid Identity Administrator Account
     Connect-MgGraph -scopes "Organization.ReadWrite.All,Directory.ReadWrite.All" 
     
     # Verify the current status of the DirSync Type
