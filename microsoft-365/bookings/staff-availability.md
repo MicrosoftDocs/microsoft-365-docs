@@ -31,11 +31,11 @@ Although Bookings is a feature of Microsoft 365, not all of your staff members a
 3. When adding staff from within your organization, type their name in the search field and select them when they appear in the drop-down menu. The other fields will automatically populate.
 4. **Use business hours** If you wish to use the default business hours set for your business for your staff availability, you can proceed with the checked toggle.
 
-   :::image type="content" source="media/add-staff-hours.png" alt-text="Screenshot shows the option to use business hours when adding staff availability in Bookings." lightbox="media/add-staff-events.png":::
+   :::image type="content" source="media/add-staff-hours.png" alt-text="Screenshot shows the option to use business hours when adding staff availability in Bookings.":::
 
 5. **Custom availability for staff members** If you wish to modify default staff availability, uncheck the *Use business hours* toggle.
 
-   :::image type="content" source="media/add-staff-events.png" alt-text="Screenshot showing custom staff hours in Bookings." lightbox="media/add-staff-events.png":::
+   :::image type="content" source="media/add-staff-events.png" alt-text="Screenshot showing custom staff hours in Bookings.":::
 
 Here is a glimpse of customized staff availability. Notice that this team member works from 10AM to 2PM, takes a break for two hours, and then returns for a shift from 4PM to 5PM. Not having any specified availability for a given day of the week means that the staff is unavailable for that day of the week.  
 
