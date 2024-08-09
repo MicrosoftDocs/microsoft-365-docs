@@ -32,17 +32,15 @@ On the **Notifications** page, you can send SMS messages, set up reminders, and 
 
 **Reminders and notifications** are sent out to customers, staff members, or both, at a specified time before the appointment. Multiple messages can be created for each appointment, according to your preference.
 
-:::image type="content" source="media/notify-booking-confirmed.png" alt-text="Screenshot showing the Booking details for a confirmed booking." lightbox="media/notify-booking-confirmed.png":::
-
 You can include any additional text you would like here, such as information about rescheduling or what customers should bring for the appointment.
 
 The following is an example of customized text added to the original confirmation email, seen in the **Additional information for Email Confirmation** field:
 
-:::image type="content" source="media/bookings-opt-In-boc.jpg" alt-text="Screenshot showing the Add your details screen for a booking":::
+:::image type="content" source="media/bookings-opt-In-boc.jpg" alt-text="Screenshot showing the Add your details screen for a booking.":::
 
 Text message notifications will look like the following image:
 
-:::image type="content" source="media/bookings-text-notifications.jpg" alt-text="Screenshot showing text message reminder for Microsoft Bookings":::
+:::image type="content" source="media/bookings-text-notifications.jpg" alt-text="Screenshot showing text message reminder for Microsoft Bookings.":::
 
 >[!NOTE]
 > SMS notifications are currently only available in North America.

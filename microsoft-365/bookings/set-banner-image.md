@@ -26,8 +26,6 @@ The banner image is a visually engaging header displayed at the top of your pers
 
 ## How to edit your banner image
 
-:::image type="content" source="../media/bookings-edit-banner.png" alt-text="Screenshot showing the option to edit your banner image on personal booking page." lightbox="../media/bookings-edit-banner.png":::
-
 1. **Choose from available options** Microsoft Bookings offers a selection of predesigned banner image options for you to choose from. Browse through the available options and select the one that best aligns with your personal theme.
 2. **Preview and save** Once you've selected your desired banner image, preview how it will appear on your customer booking page. Once satisfied, save your changes to apply the new banner image to your booking page.
 

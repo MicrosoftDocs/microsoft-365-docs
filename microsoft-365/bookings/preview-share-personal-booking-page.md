@@ -28,8 +28,6 @@ When you open the link in a new tab, you'll see the page that your customers wil
 
 Once an appointment is booked, both you and your customer will receive a confirmation email.
 
-:::image type="content" source="media/preview-booking-page-meeting.png" alt-text="Screenshot showing the preview for a booking page in Microsoft Bookings" lightbox="media/preview-booking-page-meeting.png":::
-
 After configuring your personal booking page in Microsoft Bookings, it's time to share it with your clients or customers. Follow the steps in this article to learn about how to share the link to your booking page. This will help you reach more potential clients and make it easier for them to book appointments with you.
 
 >[!NOTE]

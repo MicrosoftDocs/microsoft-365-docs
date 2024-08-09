@@ -3,7 +3,7 @@ title: "Add email reminders and follow-up"
 ms.author: camillepack
 author: pritikar
 manager: scotv
-ms.date: 05/03/2024
+ms.date: 08/08/2024
 ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
@@ -29,10 +29,10 @@ In your meeting type form, follow these steps to set up email reminders:
 6. Select **Save Changes** to finalize your email reminder settings.
 Once these steps are completed, your customers will receive the configured email reminder for appointments scheduled with you.
 
-:::image type="content" source="../media/bookings-email-follow-up-reminder.png" alt-text="Screenshot showing the setup window to create email reminders for your booking page":::
+:::image type="content" source="../media/bookings-email-follow-up-reminder.png" alt-text="Screenshot showing the setup window to create email reminders for your booking page.":::
 
 ## Setting up email follow-ups
 
 To help streamline communication with your customers, you can set up automatic email follow-ups. Email follow-ups can be used to request feedback after an appointment or remind customers to book their next appointment.
 
-:::image type="content" source="../media/bookings-email-follow-up.png" alt-text="Screenshot showing the setup window to create automatic email follow-up for your Bookings page":::
+:::image type="content" source="../media/bookings-email-follow-up.png" alt-text="Screenshot showing the setup window to create automatic email follow-up for your Bookings page.":::

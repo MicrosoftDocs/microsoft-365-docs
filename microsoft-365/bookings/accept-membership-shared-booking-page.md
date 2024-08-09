@@ -28,8 +28,6 @@ A shared booking page can have three states:
 - **Approve to receive bookings** - the staff member hasn't approved membership.
 - **Not accepting bookings** - the staff member has declined to accept bookings.
 
-:::image type="content" source="media/bookings-decline.png" alt-text="Screenshot showing how a staff member isn't accepting bookings for a service." lightbox="media/bookings-decline.png":::
-
 >[!NOTE]
 > A staff member is synonymous with a team member.
 
