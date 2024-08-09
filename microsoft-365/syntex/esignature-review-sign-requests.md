@@ -29,11 +29,11 @@ When you receive the email notification, select **View request** in the email to
 
 ## Consent to use your electronic signature
 
-To continue the electronic signing process, you must consent to the terms and conditions and agree to use your electronic signature for signing. On the **eSignature Terms and Conditions** screen:
+To continue the electronic signing process, you must consent to the terms and conditions and agree to use your electronic signature for signing. On the **SharePoint eSignature Terms and Conditions** screen:
 
 - Select **Agree** to use your electronic signature and continue with the signing process.  
 - Or select **Decline** if you'd prefer [not to use your digital signature](#decline-to-sign-the-document), and contact the person who requested your signature to complete the signature by using a different method.
-- If you close the **eSignature Terms and Conditions** without selecting the **Agree** button, you can reopen the dialog by selecting the **View disclosure** button on the top-left area of the document.
+- If you close the **SharePoint eSignature Terms and Conditions** screen without selecting the **Agree** button, you can reopen the dialog by selecting the **View disclosure** button on the top-left area of the document.
 
     ![Screenshot of the terms and conditions screen.](../media/content-understanding/esignature-terms-dark.png)
 
@@ -95,9 +95,7 @@ If you review the document and don’t want to sign it, you can decline to sign.
 
     ![Screenshot of the document viewer showing the Decline to sign button.](../media/content-understanding/esignature-decline-to-sign-dark.png)
 
-2. On the **You are declining to sign this document** screen, enter a reason for not signing document, and then select **Decline**. Or if you change your mind, select **Go back**.
-
-    ![Screenshot of the You are declining to sign this document screen.](../media/content-understanding/esignature-decline-to-sign-screen.png)
+2. On the **You're declining to sign** screen, enter a reason for not signing the document, and then select **Decline**. Or if you change your mind, select **Cancel**.
 
 Once you decline, you won't be able to add your signature, but you'll be able to see the document in read-only mode.
  
