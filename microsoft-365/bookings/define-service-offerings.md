@@ -73,7 +73,7 @@ The number of services should be limited to 50.
 
    **Maximum attendees per event**: This setting allows you to create services that require the ability for multiple people to book the same appointment time and the same staff (such as a fitness class). The appointment time slot for the selected service, staff, and time will be available to book until the maximum number of attendees, specified by you, has been reached. Current appointment capacity and attendees can be viewed in the Calendar tab in the Bookings Web app. We refer to this as a 1:N booking service.
 
-   :::image type="content" source="media/bookings-maximum-attendees.jpg" alt-text="Example of setting maximum attendees in Bookings" lightbox="media/bookings-maximum-attendees.jpg":::
+   :::image type="content" source="media/bookings-maximum-attendees.jpg" alt-text="Example of setting maximum attendees in Bookings." lightbox="media/bookings-maximum-attendees.jpg":::
 
    **Language**: Select the default language for the booking from the drop-down list.
 
