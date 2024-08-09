@@ -87,7 +87,7 @@ You'll need to run the following commands using Exchange Online PowerShell. For 
    Set-OwaMailboxPolicy "OwaMailboxPolicy-Default" -BookingsMailboxCreationEnabled:$false
    ```
 
-For more information, see [Set-OwaMailboxPolicy](/powershell/module/exchange/set-owamailboxpolicy).
+   For more information, see [Set-OwaMailboxPolicy](/powershell/module/exchange/set-owamailboxpolicy).
 
 For more information on OWA mailbox policies, check out the following articles:
 
