@@ -34,73 +34,9 @@ description: "Learn how to prepare your organization for Microsoft Copilot for M
 
 Before you can access Copilot, you must meet these requirements:
 
-You must have one of the following subscription plans to purchase Microsoft Copilot for Microsoft 365. You can purchase Copilot for Microsoft 365 licenses through the Microsoft 365 admin center on the Purchase Services page, Microsoft partners, or Microsoft account team. You can purchase as many Copilot for Microsoft 365 licenses as you have prerequisite licenses.
+You must have an appropriate subscription plan to purchase Microsoft Copilot for Microsoft 365. You can purchase Copilot for Microsoft 365 licenses through the Microsoft 365 admin center on the Purchase Services page, Microsoft partners, or Microsoft account team. You can purchase as many Copilot for Microsoft 365 licenses as you have prerequisite licenses.
 
-Your users must have one of the following base licenses to be eligible for a Copilot for Microsoft 365 license. Prerequisite licenses include:
-
-**For Business and Enterprise:**
-
-- **Microsoft 365 plans:**
-  - Microsoft 365 E5
-  - Microsoft 365 E3
-  - Microsoft 365 F1
-  - Microsoft 365 F3
-  - Microsoft 365 Business Basic
-  - Microsoft 365 Business Premium
-  - Microsoft 365 Business Standard
-  - Microsoft 365 Apps for business
-  - Microsoft 365 Apps for enterprise
-
-- **Office 365 plans:**
-  - Office 365 E5
-  - Office 365 E3
-  - Office 365 E1
-  - Office 365 F3
-
-- **Microsoft Teams plans:**
-  - Microsoft Teams Essentials
-  - Microsoft Teams Enterprise
-  - Microsoft Teams EEA (European Economic Area)
-
-- **Exchange plans:**
-  - Exchange Kiosk
-  - Exchange Plan 1
-  - Exchange Plan 2
-
-- **SharePoint plans:**
-  - SharePoint Plan 1
-  - SharePoint Plan 2
-
-- **OneDrive for Business plans:**
-  - OneDrive for Business Plan 1
-  - OneDrive for Business Plan 2
-
-- **Planner and Project plans:**
-  - Microsoft Planner Plan 1 (formerly Project Plan 1)
-  - Microsoft Project Plan 3
-  - Microsoft Project Plan 5
-  - Project Online Essentials
-
-- **Visio plans:**
-  - Visio Plan 1
-  - Visio Plan 2
-
-- **Other plans:**
-  - Microsoft ClipChamp
-
-**For Education Faculty and Higher Education Students Aged 18+:**
-
-- Microsoft 365 A1*
-- Microsoft 365 A3*
-- Microsoft 365 A5*
-- Office 365 A1*
-- Office 365 A3*
-- Office 365 A5*
-
-*Available via Enrollment for Education Solutions (EES) or Cloud Solution Provider (CSP) only.
-
->[!NOTE]
-> Customers with Education or Business subscriptions that do not include Teams can still purchase Copilot for Microsoft 365 licenses.
+For a list of which plans Microsoft 365 Copilot is available with, see [Understand licensing for Microsoft 365 Copilot](microsoft-365-copilot-licensing.md).
 
 - **Microsoft 365 Apps** desktop applications such as Word, Excel, PowerPoint, Outlook, and Teams. Copilot will be available in web versions of the apps when a license is assigned. To get started with the implementation process, see [Deployment guide for Microsoft 365 Apps](/deployoffice/deployment-guide-microsoft-365-apps).
 
