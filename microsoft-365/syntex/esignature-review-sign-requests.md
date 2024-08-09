@@ -107,13 +107,13 @@ If there are more recipients, they'll also receive a notification saying that th
 
 Whether you're a requester or a recipient, you can select **View request** from any of your email notifications to view the document and find out more about the request.
 
-1. In the document viewer, select the **View history** tab to see the status of the request. On the **Request history** panel, you can see the recipients who haven't signed yet and the activities that have happened so far, such as when the request was created and who the recipients are.
+1. In the document viewer, select the **View history** tab to see the status of the request. On the **History** panel, you can see the recipients who haven't signed yet and the activities that have happened so far, such as when the request was created and who the recipients are.
 
-    ![Screenshot of the View history tab and the Request history panel.](../media/content-understanding/esignature-view-history-dark.png)
+    ![Screenshot of the View history tab and the History panel.](../media/content-understanding/esignature-view-history-dark.png)
 
-2. Select the **View details** tab to see the details of the request. On the **Request details** panel, you can see the title of the request, any instructions the requester added when sending the request, and who the request was sent to.
+2. Select the **View details** tab to see the details of the request. On the **Details** panel, you can see the title of the request, any instructions the requester added when sending the request, and who the request was sent to.
 
-    ![Screenshot of the View details tab and the Request details panel.](../media/content-understanding/esignature-view-details-dark.png)
+    ![Screenshot of the View details tab and the Details panel.](../media/content-understanding/esignature-view-details-dark.png)
 
 ## Monitor the status of a request
 
