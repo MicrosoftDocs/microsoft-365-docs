@@ -41,7 +41,7 @@ Shared Bookings can be turned on or off for your entire organization or for spec
 To turn Shared Bookings on or off for your organization using the PowerShell cmdlet [Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig), [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) and run the following command:
 
 ```PowerShell
-   Set-OrganizationConfig -BookingsEnabled $false
+Set-OrganizationConfig -BookingsEnabled $false
 ```
 
 ### Turn Shared Bookings on or off for individual users
