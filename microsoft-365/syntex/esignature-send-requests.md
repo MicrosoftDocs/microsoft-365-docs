@@ -43,7 +43,7 @@ Use the following steps to start the SharePoint eSignature process. You must be 
 
     ![Screenshot of the Review request panel.](../media/content-understanding/esignature-review-request-panel-dark.png)
 
-    Once sent, the status of the request is set to **In progress**. An email notification is sent to the creator and the recipients. If the **Recipients must sign in order** toggle is turned on, recipients will be able to add their signature in the order specified, otherwise they can add their signature in any order.
+    Once sent, the status of the request is set to **In progress**.  An email notification is sent to the creator and the recipients. If **Recipients must sign in order** is toggled on, recipients will be able to add their signature in the order specified, otherwise they can add their signature in any order.  
 
 ## Cancel a signature request
 
