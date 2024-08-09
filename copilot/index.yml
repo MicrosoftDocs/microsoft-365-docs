@@ -51,7 +51,7 @@ landingContent:
       - linkListType: architecture
         links:
           - text: Zero trust illustrations
-            url: /security/zero-trust/zero-trust-tech-illus#zero-trust-for-microsoft-365-copilot
+            url: /security/zero-trust/zero-trust-tech-illus#zero-trust-for-microsoft-365-copilot#zero-trust-for-microsoft-copilot-for-microsoft-365
 
   # Card
   - title: Extend and build
