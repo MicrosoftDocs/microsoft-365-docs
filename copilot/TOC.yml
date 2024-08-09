@@ -11,7 +11,7 @@
           href: microsoft-365-copilot-setup.md
     - name: Deploy and enable
       items: 
-        - name: Pilot key scenarios to create critical manage-public-web-access.md
+        - name: Pilot key scenarios to create critical scenarios
           href: tbd
         - name: Requirements for Microsoft 365 Copilot
           href: microsoft-365-copilot-requirements.md
