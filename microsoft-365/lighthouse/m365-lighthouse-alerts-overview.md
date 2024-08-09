@@ -27,7 +27,7 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 As a Managed Service Provider (MSP), you need to monitor and respond to the security issues of your customers efficiently and effectively. Microsoft 365 Lighthouse provides an alerts tool that gives you a consolidated view of all the high-priority detections and alerts across your customers. You can see a prioritized list of the most urgent issues that require your attention and take immediate action to resolve them. You can also enable push alerts to your existing support systems and flows, so you never miss a critical alert that needs your intervention.
 
-To help you get started, Lighthouse provides a default set of alert rules based on best practices and recommendations. You can use these alert rules as they are or modify them according to your preferences and needs. You can also create custom alert rules for more control and flexibility.
+To help you get started, Lighthouse provides a default set of alert rules based on best practices and recommendations. You can use these alert rules as is or modify them according to your preferences and needs. You can also create custom alert rules for more control and flexibility.
 
 ## Alerts tab
 
