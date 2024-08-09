@@ -27,21 +27,21 @@ Use the following steps to start the SharePoint eSignature process. You must be 
 
 2. In the document viewer, select **More options** (...), and then select **Get signatures**.
 
-    ![Screenshot of a document showing the Get signatures option.](../media/content-understanding/esignature-get-signatures-option.png)
+    ![Screenshot of a document showing the Get signatures option.](../media/content-understanding/esignature-get-signatures-option-dark.png)
 
-3. On the **SharePoint eSignature** panel, add up to 10 internal or external recipients you want to sign the document, and then select **Next**.
+3. On the **Create a signature request** panel, add up to 10 internal or external recipients you want to sign the document, and then select **Next**.
 
-    ![Screenshot of the Add recipients panel.](../media/content-understanding/esignature-add-recipients-panel.png)
+    ![Screenshot of the Add recipients panel.](../media/content-understanding/esignature-add-recipients-panel-dark.png)
 
 4. On the **Specify where to sign** panel, drag and drop the **Signature**, **Initials**, and **Date** fields to the appropriate locations in the document for each recipient. Each form field can be marked either as required or not required.
 
-    ![Screenshot of the Specify where to sign panel.](../media/content-understanding/esignature-add-form-fields-panel.png)
+    ![Screenshot of the Specify where to sign panel.](../media/content-understanding/esignature-add-form-fields-panel-dark.png)
 
 5. Select **Next** to progress to the next stage. At least one required signature field is needed for each recipient. Up to 50 fields (total) can be added to the document.
 
 6. On the **Review request** panel, enter a title for the request, add an optional message, and review the details on the panel to make sure it's correct. Then select **Send**.
 
-    ![Screenshot of the Review request panel.](../media/content-understanding/esignature-review-request-panel.png)
+    ![Screenshot of the Review request panel.](../media/content-understanding/esignature-review-request-panel-dark.png)
 
     Once sent, the status of the request is set to **In progress** and recipients are able to add their signatures. An email notification is sent to the creator and the recipients.
 
