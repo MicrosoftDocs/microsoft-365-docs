@@ -53,11 +53,11 @@ For all of the available Bookings connectors, see [Supported connectors | Micros
 
 HTTP Error Codes while creating flows:
 
-- '401': Check for authentication related issues in your connection.
-- '403': Only Bookings admins can create appointment flows. See the first issue in "Known issues and limitations" above.
-- '403': Notification URL domain isn't part of the allowed list.
-- '429': More than the expected number of appointment flows have been created for a business. See the limit of five flows per Bookings mailbox in  "Known issues and limitations" above.
-- '500': This is an internal server error. Report this error to your support engineer and include the error details in the flow creation response.
+- 401: Check for authentication related issues in your connection.
+- 403: Only Bookings admins can create appointment flows. See the first issue in "Known issues and limitations" above.
+- 403: Notification URL domain isn't part of the allowed list.
+- 429: More than the expected number of appointment flows have been created for a business. See the limit of five flows per Bookings mailbox in  "Known issues and limitations" above.
+- 500: This is an internal server error. Report this error to your support engineer and include the error details in the flow creation response.
 
 ## Frequently Asked Questions
 
