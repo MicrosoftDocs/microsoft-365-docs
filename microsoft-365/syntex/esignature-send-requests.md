@@ -29,7 +29,7 @@ Use the following steps to start the SharePoint eSignature process. You must be 
 
     ![Screenshot of a document showing the Get signatures option.](../media/content-understanding/esignature-get-signatures-option-dark.png)
 
-3. On the **Create a signature request** panel, add up to 10 internal or external recipients you want to sign the document. If the recipients need to sign in order, select **Recipients must sign in order**. You can change the order of the recipients by dragging and dropping them to the correct order. Then select **Next**.
+3. On the **Create a signature request** panel, add up to 10 internal or external recipients you want to sign the document. If the recipients need to sign in order, turn on the **Recipients must sign in order** toggle. You can change the order of the recipients by dragging and dropping them to the correct order. Then select **Next**.
 
     ![Screenshot of the Add recipients panel.](../media/content-understanding/esignature-add-recipients-panel-dark.png)
 
@@ -43,7 +43,7 @@ Use the following steps to start the SharePoint eSignature process. You must be 
 
     ![Screenshot of the Review request panel.](../media/content-understanding/esignature-review-request-panel-dark.png)
 
-    Once sent, the status of the request is set to **In progress**. An email notification is sent to the creator and the recipients. If **Recipients must sign in order** is selected, recipients will be able to add their signature in the order specified, otherwise they can add their signature in any order.
+    Once sent, the status of the request is set to **In progress**. An email notification is sent to the creator and the recipients. If **Recipients must sign in order** is turned on, recipients will be able to add their signature in the order specified, otherwise they can add their signature in any order.
 
 ## Cancel a signature request
 
