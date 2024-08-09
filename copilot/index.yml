@@ -60,6 +60,8 @@ landingContent:
         links:
           - text: How to extend Microsoft 365 Copilot
             url: /microsoft-365-copilot/extensibility/
+          - text: Extend Microsoft 365 Copilot learning path
+            url: /training/paths/copilot-m365-extensibility/
 
   # Card
   - title: Manage Copilot for Microsoft 365
@@ -80,8 +82,10 @@ landingContent:
     linkLists:
       - linkListType: training
         links:
-        - text: Technical training for Microsoft 365 Copilot
+        - text: Getting ready for Copilot for Microsoft 365 learning path
           url: /training/paths/prepare-your-organization-microsoft-365-copilot/
+        - text: "MS-4007: Discover how to drive enablement of Copilot for Microsoft 365 in your organization"
+          url: /training/paths/explore-how-drive-adoption-microsoft-copilot-m365/
         - text: End user resources
           url: https://copilot.cloud.microsoft/
       - linkListType: overview
