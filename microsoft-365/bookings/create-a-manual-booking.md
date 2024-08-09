@@ -38,7 +38,7 @@ Bookings can be scheduled and staffed in two different ways. The first way is by
 
 1. Select the staff member to provide the service. The list of staff members shown is based on what you set up on the services page.
 
-   :::image type="content" alt-text="Image of staff list UI." source="../media/bookings-staff-list.png" lightbox="../media/bookings-staff-list.png":::
+   :::image type="content" alt-text="Image of staff list UI." source="../media/bookings-staff-list.png":::
 
 1. Enter the service details, including date, time, location, and other relevant information. Once you enter a valid email address for the customer, you'll see a note telling you that a confirmation will be sent to the customer. The customer confirmation includes an attachment for them to add to their calendar. Selected staff members will also receive meeting invitations with the appointment information so they can add it to their personal calendars.
 
