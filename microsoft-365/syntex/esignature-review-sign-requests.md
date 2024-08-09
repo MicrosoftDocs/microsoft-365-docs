@@ -35,13 +35,13 @@ To continue the electronic signing process, you must consent to the terms and co
 - Or select **Decline** if you'd prefer [not to use your digital signature](#decline-to-sign-the-document), and contact the person who requested your signature to complete the signature by using a different method.
 - If you close the **eSignature Terms and Conditions** without selecting the **Agree** button, you can reopen the dialog by selecting the **View disclosure** button on the top-left area of the document.
 
-    ![Screenshot of the terms and conditions screen.](../media/content-understanding/esignature-terms.png)
+    ![Screenshot of the terms and conditions screen.](../media/content-understanding/esignature-terms-dark.png)
 
 ## Sign the document
 
 Once you accept the eSignature terms and conditions, the document viewer opens in a new browser tab. Here you can navigate and read the document, and review the content. When you’re ready to sign, select **Start**. This action brings you to the first location where your input is needed.  
 
-![Screenshot of the document to be signed showing the Start button.](../media/content-understanding/esignature-start-signing.png)
+![Screenshot of the document to be signed showing the Start button.](../media/content-understanding/esignature-start-signing-dark.png)
 
 There are three different types of input you can be asked for:
 
@@ -55,13 +55,13 @@ Electronic signatures let you digitally sign a document by enabling you to add a
 
 1. To add your signature, type your name. If you want to choose a different font style for your signature, select **Change font** and choose the font you want to use.
 
-    ![Screenshot of the type your name screen.](../media/content-understanding/esignature-type-name.png)
+    ![Screenshot of the type your name screen.](../media/content-understanding/esignature-type-name-dark.png)
 
 2. Select **Done** to add your signature to the document.
 
 3. Select **Next** to go to the next location in the document that requires your input.
 
-    ![Screenshot showing an electronic signature added to a document.](../media/content-understanding/esignature-signature-added.png)
+    ![Screenshot showing an electronic signature added to a document.](../media/content-understanding/esignature-signature-added-dark.png)
 
 ### Initials
 
@@ -69,7 +69,7 @@ In some locations within the document, you might be asked to add your initials t
 
 1. Select **Initial here**, and enter your initials. This action is prepopulated if you've already entered your signature.
 
-    ![Screenshot showing the Initial here field for adding your electronic initials to a document.](../media/content-understanding/esignature-initial-here.png)
+    ![Screenshot showing the Initial here field for adding your electronic initials to a document.](../media/content-understanding/esignature-initial-here-dark.png)
 
 2. Select **Next** to go to the next location in the document that requires your input.
 
@@ -81,7 +81,7 @@ The date is prepopulated with the current day’s date.
 
 When you have entered all of the required input, select **Submit** to complete the signing process.
 
-![Screenshot of the completed document showing the Submit button.](../media/content-understanding/esignature-submit.png)
+![Screenshot of the completed document showing the Submit button.](../media/content-understanding/esignature-submit-dark.png)
 
 The status of the request changes from **In progress** to **Completed**. The document becomes read-only. You'll receive an email notification saying that your signature has been received and the requester will be notified.
 
@@ -93,7 +93,7 @@ If you review the document and don’t want to sign it, you can decline to sign.
 
 1. In the document viewer, select **More options** (...), and then select **Decline to sign**.
 
-    ![Screenshot of the document viewer showing the Decline to sign button.](../media/content-understanding/esignature-decline-to-sign.png)
+    ![Screenshot of the document viewer showing the Decline to sign button.](../media/content-understanding/esignature-decline-to-sign-dark.png)
 
 2. On the **You are declining to sign this document** screen, enter a reason for not signing document, and then select **Decline**. Or if you change your mind, select **Go back**.
 
@@ -111,11 +111,11 @@ Whether you're a requester or a recipient, you can select **View request** from 
 
 1. In the document viewer, select the **View history** tab to see the status of the request. On the **Request history** panel, you can see the recipients who haven't signed yet and the activities that have happened so far, such as when the request was created and who the recipients are.
 
-    ![Screenshot of the View history tab and the Request history panel.](../media/content-understanding/esignature-view-history.png)
+    ![Screenshot of the View history tab and the Request history panel.](../media/content-understanding/esignature-view-history-dark.png)
 
 2. Select the **View details** tab to see the details of the request. On the **Request details** panel, you can see the title of the request, any instructions the requester added when sending the request, and who the request was sent to.
 
-    ![Screenshot of the View details tab and the Request details panel.](../media/content-understanding/esignature-view-details.png)
+    ![Screenshot of the View details tab and the Request details panel.](../media/content-understanding/esignature-view-details-dark.png)
 
 ## Monitor the status of a request
 
