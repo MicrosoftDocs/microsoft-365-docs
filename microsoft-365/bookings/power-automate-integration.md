@@ -27,7 +27,7 @@ Microsoft Bookings uses Microsoft Entra authentication. A valid Microsoft 365 ac
 
 To create a custom flow that uses Bookings appointments as triggers, you must provide the Bookings business SMTP address.
 
-![Image of an SMTP address.](media/bookings-teams-smtp.png)
+:::image type="content" alt-text="Image of an SMTP address." source="media/bookings-teams-smtp.png" lightbox="media/bookings-teams-smtp.png":::
 
 ## Get started with connectors
 

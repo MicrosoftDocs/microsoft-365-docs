@@ -33,7 +33,7 @@ Schedule business closures or employee off.
 
 1. In the top navigation pane, select **Add time off**.
 
-   :::image type="content" source="../media/bookings-calendar-timeoff-2.png" alt-text="Bookings calendar view and time off button.":::
+   :::image type="content" source="../media/bookings-calendar-timeoff-2.png" alt-text="Bookings calendar view and time off button." lightbox="../media/bookings-calendar-timeoff-2.png":::
 
 1. Fill in the details, including a title, start, and end date and times, location, and extra notes.
 
@@ -45,7 +45,7 @@ Schedule business closures or employee off.
 
     When a customer attempts to schedule service on a day the office is closed, they'll see a message on the booking page.
 
-    ![Image of example message that customer sees when trying to book during time off.](../media/bookings-timeoff-message.png)
+    :::image type="content" alt-text="Image of example message that customer sees when trying to book during time off." source="../media/bookings-timeoff-message.png" lightbox="../media/bookings-timeoff-message.png":::
 
 ## Schedule employee time off
 
@@ -55,7 +55,7 @@ Schedule business closures or employee off.
 
 1. In the top navigation pane, select **Add time off**.
 
-   :::image type="content" source="../media/bookings-calendar-timeoff-2.png" alt-text="Bookings calendar view and time off button.":::
+   :::image type="content" source="../media/bookings-calendar-timeoff-2.png" alt-text="Bookings calendar view and time off button." lightbox="../media/bookings-calendar-timeoff-2.png":::
 
 1. Fill in the details, including a title, start, and end date and times, location, and more notes. If the employee will be gone for a full day or for several days, select **All day event**.
 
