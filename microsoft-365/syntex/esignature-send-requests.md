@@ -33,7 +33,7 @@ Use the following steps to start the SharePoint eSignature process. You must be 
 
     ![Screenshot of the Add recipients panel.](../media/content-understanding/esignature-add-recipients-panel-dark.png)
 
-4. From the **Create a signature request** panel (step 2 of 3), drag and drop the **Signature**, **Initials**, and **Date** fields to the appropriate locations in the document for each recipient. Each form field can be marked either as required or not required.
+4. On the **Create a signature request** panel (step 2 of 3), drag and drop the **Signature**, **Initials**, and **Date** fields to the appropriate locations in the document for each recipient. Each form field can be marked either as required or not required.
 
     ![Screenshot of the Specify where to sign panel.](../media/content-understanding/esignature-add-form-fields-panel-dark.png)
 
