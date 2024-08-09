@@ -46,7 +46,9 @@
         - name: Microsoft 365 Copilot and Responsible AI
           href: tbd
     - name: Extend and build
-      href: /microsoft-365-copilot/extensibility/
+      items:
+        - name: Extend Microsoft 365 Copilot
+          href: /microsoft-365-copilot/extensibility/
     - name: Resources
       items:
         - name: Service description
