@@ -50,13 +50,13 @@ In Microsoft Bookings, meeting types can be categorized using public and private
 
 2. Customize your meeting type by:
 
-- Picking a name.
-- Adding a color category.
-- Adding a description for people to know what you are offering.
-- Choosing your mode of meeting (online or offline).
-- Selecting the meeting duration.
-- Choosing between a public or private meeting tag.
-- Declaring your availability using the schedule customization option.
+   - Picking a name.
+   - Adding a color category.
+   - Adding a description for people to know what you are offering.
+   - Choosing your mode of meeting (online or offline).
+   - Selecting the meeting duration.
+   - Choosing between a public or private meeting tag.
+   - Declaring your availability using the schedule customization option.
 
 3. Select **Save** when you're done.
 

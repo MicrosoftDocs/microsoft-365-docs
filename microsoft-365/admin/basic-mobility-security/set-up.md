@@ -77,8 +77,8 @@ To manage iOS devices like iPad and iPhones, you need to create an Apple Push No
 
    a. Sign in with an Apple ID.
    
-     > [!IMPORTANT]
-     > Use a company Apple ID associated with an email account that will remain with your organization even if the user who manages the account leaves. Save this ID because you'll need to use the same ID when it's time to renew the certificate.
+      > [!IMPORTANT]
+      > Use a company Apple ID associated with an email account that will remain with your organization even if the user who manages the account leaves. Save this ID because you'll need to use the same ID when it's time to renew the certificate.
 
    b. Select **Create a Certificate** and accept the **Terms of Use**.
    
@@ -86,8 +86,8 @@ To manage iOS devices like iPad and iPhones, you need to create an Apple Push No
       
    d. Download the APNs certificate created by the Apple Push Certificate Portal to your computer.
    
-     > [!TIP]
-     > If you're having trouble downloading the certificate, refresh your browser.
+      > [!TIP]
+      > If you're having trouble downloading the certificate, refresh your browser.
 
 1. Go back to Microsoft Azure and browse to the APNs certificate that you downloaded from the Apple Push Certificates Portal.
 
