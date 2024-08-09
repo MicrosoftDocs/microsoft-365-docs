@@ -93,9 +93,9 @@ If you review the document and don’t want to sign it, you can decline to sign.
 
 1. In the document viewer, select **More options** (...), and then select **Decline to sign**.
 
-    ![Screenshot of the document viewer showing the Decline to sign button.](../media/content-understanding/esignature-decline-to-sign-dark.png)
-
 2. On the **You're declining to sign** screen, enter a reason for not signing the document, and then select **Decline**. Or if you change your mind, select **Cancel**.
+
+    ![Screenshot of the document viewer showing the Decline to sign button.](../media/content-understanding/esignature-decline-to-sign-dark.png)
 
 Once you decline, you won't be able to add your signature, but you'll be able to see the document in read-only mode.
  
