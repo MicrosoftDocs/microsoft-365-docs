@@ -23,8 +23,6 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - basic-mobility-security
-search.appverid:
-- MET150
 description: "Set up Basic Mobility and Security to secure and manage your users' mobile devices by performing actions such as remotely wiping a device."
 ---
 
@@ -77,19 +75,19 @@ To manage iOS devices like iPad and iPhones, you need to create an Apple Push No
 
 1. Select **Create your MDM push certificate** to open the Apple Push Certificates Portal.
 
-   a. Sign in with an Apple ID.
+   1. Sign in with an Apple ID.
    
-     > [!IMPORTANT]
-     > Use a company Apple ID associated with an email account that will remain with your organization even if the user who manages the account leaves. Save this ID because you'll need to use the same ID when it's time to renew the certificate.
+      > [!IMPORTANT]
+      > Use a company Apple ID associated with an email account that will remain with your organization even if the user who manages the account leaves. Save this ID because you'll need to use the same ID when it's time to renew the certificate.
 
-   b. Select **Create a Certificate** and accept the **Terms of Use**.
+   1. Select **Create a Certificate** and accept the **Terms of Use**.
    
-   c. Browse to the certificate signing request that you downloaded to your computer from Microsoft 365 and then select **Upload**.
+   1. Browse to the certificate signing request that you downloaded to your computer from Microsoft 365 and then select **Upload**.
       
-   d. Download the APNs certificate created by the Apple Push Certificate Portal to your computer.
+   1. Download the APNs certificate created by the Apple Push Certificate Portal to your computer.
    
-     > [!TIP]
-     > If you're having trouble downloading the certificate, refresh your browser.
+      > [!TIP]
+      > If you're having trouble downloading the certificate, refresh your browser.
 
 1. Go back to Microsoft Azure and browse to the APNs certificate that you downloaded from the Apple Push Certificates Portal.
 
