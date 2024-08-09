@@ -126,7 +126,7 @@ This section contains information specifically for customers who bought online s
 > [!NOTE]
 > The Open Volume Licensing program was retired in December 2021.
 
-For all VL subscriptions, the **Expired** status starts immediately after the subscription reaches its end date, or the number of licenses is reduced. Services immediately become unavailable when the **Expired** status starts and lasts for 90 days. The exact end date depends on how you bought your subscription.
+For all VL subscriptions, the **Expired** status starts immediately after the subscription reaches its end date, and lasts for 90 days. Services immediately become unavailable when the **Expired** status ends. The exact end date depends on how you bought your subscription.
 
 - For subscriptions bought through the VL program, the end date depends on the date you placed the order.
 - For Open Value customers, the end date depends on the date you activated your product keys.
