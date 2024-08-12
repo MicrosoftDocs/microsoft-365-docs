@@ -76,7 +76,7 @@ additionalContent:
               url: microsoft-365-copilot-page.md
             - text: Connect to the Microsoft Copilot Dashboard
               url: /viva/insights/org-team-insights/copilot-dashboard
-            - text: Manage Plugins in Integrated Apps (Preview)
+            - text: Manage extensions in Integrated Apps
               url: /microsoft-365/admin/manage/manage-plugins-for-copilot-in-integrated-apps
             - text: Related Microsoft 365 admin controls
               url: /microsoft-365/solutions/tenant-management-overview
@@ -88,8 +88,10 @@ additionalContent:
           links:
             - text: Getting ready for Copilot for Microsoft 365 learning path
               url: /training/paths/prepare-your-organization-microsoft-365-copilot/
-            - text: 30-day challenge
-              url: /training/challenges?id=5675b9c6-4dbe-4b1b-abcf-a8fbccdb149f&wt.mc_id=cloudskillschallenge_5675b9c6-4dbe-4b1b-abcf-a8fbccdb149f_30dtli_web_wwl
+            - text: "MS-4007: Discover how to drive enablement of Copilot for Microsoft 365 in your organization"
+              url: /training/paths/explore-how-drive-adoption-microsoft-copilot-m365/
+            - text: Extend Microsoft Copilot for Microsoft 365 learning path
+              url: /training/paths/copilot-m365-extensibility/
 #            - text: Virtual training days
 #              url: index.yml
         # Card

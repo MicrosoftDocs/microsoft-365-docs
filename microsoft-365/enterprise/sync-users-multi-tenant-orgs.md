@@ -139,6 +139,8 @@ This procedure updates the *MTO_Sync_\<TenantID\>* synchronization configuration
 
 Calendar sharing allows users in each multitenant organization (MTO) tenant to view free/busy (time only) calendar availability information.
 
+> [!NOTE]
+> Calendar sharing via Multitenant collaboration portal is currently not available in Microsoft 365 GCC, GCC High, DoD, or Microsoft 365 China (operated by 21Vianet).
 > [!IMPORTANT]
 > Microsoft recommends that you use roles with the fewest permissions. Using lower permissioned accounts helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
 
