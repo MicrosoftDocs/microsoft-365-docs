@@ -42,7 +42,7 @@ landingContent:
   # Card 
   - title: "Trust: Data, privacy, and security"
     linkLists:
-      - linkListType: overview
+      - linkListType: concept
         links:
           - text: Data, privacy, and security for web queries in Microsoft 365 Copilot
             url: manage-public-web-access.md
@@ -64,6 +64,8 @@ landingContent:
         links:
           - text: How to extend Microsoft 365 Copilot
             url: /microsoft-365-copilot/extensibility/
+      - linkListType: training
+        links:
           - text: Extend Microsoft 365 Copilot learning path
             url: /training/paths/copilot-m365-extensibility/
 
