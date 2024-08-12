@@ -3,7 +3,7 @@ title: "Get access to Microsoft Bookings"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 09/13/2023
+ms.date: 05/25/2024
 audience: Admin
 ms.topic: how-to
 ms.service: bookings
@@ -13,6 +13,7 @@ ms.collection:
 - scotvorg
 - essentials-get-started
 - essentials-manage
+ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn how to get access to the Bookings feature in Microsoft 365."
 ---
 

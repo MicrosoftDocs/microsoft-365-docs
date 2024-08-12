@@ -3,7 +3,7 @@ title: "MRS service alerts"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 12/13/2021
+ms.date: 08/09/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -15,6 +15,7 @@ ms.collection:
 - scotvorg
 - Ent_O365
 - Strat_O365_Enterprise
+- must-keep
 f1.keywords:
 - NOCSH
 description: "Use mailbox migration service advisories to monitor delays in mailbox migration requests in your organization."
