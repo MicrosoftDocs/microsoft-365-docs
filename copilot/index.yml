@@ -33,7 +33,7 @@ landingContent:
           - text: Get your data and environment ready
             url: microsoft-365-copilot-get-ready.md
           - text: Get started with Microsoft 365 Copilot
-            url: microsoft-365-copilot-get-started.md
+            url: microsoft-365-copilot-setup.md
       - linkListType: video
         links:
           - text: Mechanics Microsoft 365 Copilot playlist
