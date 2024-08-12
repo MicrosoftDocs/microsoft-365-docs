@@ -31,14 +31,14 @@ Once your Microsoft 365 Backup Storage application is given consent to execute i
 
 4. [Enable your Billing Policy in the Consuming Tenant](#step-4-enable-your-billing-policy-in-the-consuming-tenant).
 
-After your application is registered, you can always check the state of your application as the Microsoft 365 Backup Storage Controller by executing the [Get serviceApp](/graph/api/serviceapp-get?view=graph-rest-beta) API:
+After your application is registered, you can always check the state of your application as the Microsoft 365 Backup Storage Controller by executing the [Get serviceApp](/graph/api/serviceapp-get) API:
 ```http
 GET /solutions/backupRestore/serviceApps/{serviceAppId}
 ```
 
 ### Step 1: Register your application as a Microsoft 365 Backup Storage Controller
 
-To register your application to be a Microsoft 365 Backup Storage Controller, you first need to register your application by executing the [Create service App](/graph/api/backuprestoreroot-post-serviceapps?view=graph-rest-beta) API: 
+To register your application to be a Microsoft 365 Backup Storage Controller, you first need to register your application by executing the [Create service App](/graph/api/backuprestoreroot-post-serviceapps) API: 
 ```http
 POST /solutions/backupRestore/serviceApps/
 ```
@@ -47,7 +47,7 @@ If your application was successfully registered, it has a state of **inactive**.
 
 ###	Step 2: Check if the Microsoft 365 Backup Service is enabled in the Consuming Tenant
 
-To check if the Microsoft 365 Backup Service is enabled in the Consuming Tenant, your application needs to execute the [Get backupRestoreRoot](/graph/api/backuprestoreroot-get?view=graph-rest-beta) API:
+To check if the Microsoft 365 Backup Service is enabled in the Consuming Tenant, your application needs to execute the [Get backupRestoreRoot](/graph/api/backuprestoreroot-get) API:
 ```http
 GET /solutions/backupRestore/
 ```
@@ -61,7 +61,7 @@ To activate your application as the Microsoft 365 Backup Storage Controller depe
 
 #### No existing Microsoft 365 Backup Storage Controller
 
-If there's no existing Microsoft 365 Backup Storage Controller, then you can immediately activate your application as the Controller. To do this step, you execute the [serviceApp: activate](/graph/api/serviceapp-activate?view=graph-rest-beta) API:
+If there's no existing Microsoft 365 Backup Storage Controller, then you can immediately activate your application as the Controller. To do this step, you execute the [serviceApp: activate](/graph/api/serviceapp-activate) API:
 ```http
 POST /solutions/backupRestore/serviceApps/{serviceAppId}/activate
 ```
@@ -72,7 +72,7 @@ If your application was immediately activated successfully, it has a state of **
 
 If there's an existing Microsoft 365 Backup Storage Controller, then when activating your application as the Controller you need to specify a date/time as to when the change is effective. The date/time needs to be at least 7-days in the future, but not greater than 30-days.
 
-To activate your application, you need to execute the [serviceApp: activate](/graph/api/serviceapp-activate?view=graph-rest-beta) API specifying the effective date/time in the Request JSON body:
+To activate your application, you need to execute the [serviceApp: activate](/graph/api/serviceapp-activate) API specifying the effective date/time in the Request JSON body:
 ```http
 POST /solutions/backupRestore/serviceApps/{serviceAppId}/activate
 ```
@@ -90,11 +90,11 @@ If there was an existing Microsoft 365 Backup Storage Controller when you activa
 - Your application has a state of **pendingActive**.
 - Your application has read-only access to any existing Protection Policies. Your application won't be able to change or create Protection Policies or perform any Restores.
 - The Consuming Tenant Backup Admin can cancel the pending change of the Microsoft 365 Backup Storage Controller and revert back to original state.
-- Your application can cancel the pending change of the Microsoft 365 Backup Storage Controller and revert back to original state by executing the [serviceApp: deactivate](/graph/api/serviceapp-deactivate?view=graph-rest-beta) API:
+- Your application can cancel the pending change of the Microsoft 365 Backup Storage Controller and revert back to original state by executing the [serviceApp: deactivate](/graph/api/serviceapp-deactivate) API:
 ```http
 POST /solutions/backupRestore/serviceApps/{serviceAppId}/deactivate
 ```
-- Your application can check the state of your application as the Microsoft 365 Backup Storage Controller by executing the [Get serviceApp](/graph/api/serviceapp-get?view=graph-rest-beta) API:
+- Your application can check the state of your application as the Microsoft 365 Backup Storage Controller by executing the [Get serviceApp](/graph/api/serviceapp-get) API:
 ```http
 GET /solutions/backupRestore/serviceApps/{serviceAppId}
 ```
@@ -104,7 +104,7 @@ GET /solutions/backupRestore/serviceApps/{serviceAppId}
 
 ###	Step 4: Enable your Billing Policy in the Consuming Tenant
 
-Once your application has a status of active, you need to enable your Billing Policy in the Consuming Tenant. This step is performed by executing the [backupRestoreRoot: enable](/graph/api/backuprestoreroot-enable?view=graph-rest-beta) API:
+Once your application has a status of active, you need to enable your Billing Policy in the Consuming Tenant. This step is performed by executing the [backupRestoreRoot: enable](/graph/api/backuprestoreroot-enable) API:
 ```http
 POST /solutions/backupRestore/enable
 ```
@@ -120,7 +120,7 @@ After you enable the Billing Policy, your application will be the Microsoft 365 
 
 If your application is the active Microsoft 365 Backup Storage Controller, it's possible that another application (first-party or third-party) can also be activated as per the onboarding process defined in [Existing-Microsoft 365 Backup Storage Controller](#existing-microsoft-365-backup-storage-controller) and [Existing Microsoft 365 Backup Storage Controller Grace Period](#existing-microsoft-365-backup-storage-controller-grace-period). If this event occurs, your application won't be explicitly notified. However, the state of your application becomes **pendingInactive**.
 T
-o get the state of your application being the Microsoft 365 Backup Storage Controller your application can execute the [Get serviceApp](/graph/api/serviceapp-get?view=graph-rest-beta) API:
+o get the state of your application being the Microsoft 365 Backup Storage Controller your application can execute the [Get serviceApp](/graph/api/serviceapp-get) API:
 ```http
 GET /solutions/backupRestore/serviceApps/{serviceAppId}
 ```
@@ -137,7 +137,7 @@ GET /solutions/backupRestore/serviceApps/{serviceAppId}
 
 ###	Deactivate your application as the Microsoft 365 Backup Storage Controller
 
-To deactivate your application from being the Microsoft 365 Backup Service in the Consuming Tenant, your application needs to execute the [serviceApp: deactivate](/graph/api/serviceapp-deactivate?view=graph-rest-beta) API:
+To deactivate your application from being the Microsoft 365 Backup Service in the Consuming Tenant, your application needs to execute the [serviceApp: deactivate](/graph/api/serviceapp-deactivate) API:
 ```http
 POST /solutions/backupRestore/serviceApps/{serviceAppId}/deactivate
 ```
@@ -165,7 +165,7 @@ To deactivate your application as the Microsoft 365 Backup Storage Controller, e
 
 ###	Unregister your application as the Microsoft 365 Backup Storage Controller
 
-To unregister your application from being the Microsoft 365 Backup Storage Controller in the Consuming Tenant, your application needs to execute the [Delete serviceApp](/graph/api/backuprestoreroot-delete-serviceapps?view=graph-rest-beta) API:
+To unregister your application from being the Microsoft 365 Backup Storage Controller in the Consuming Tenant, your application needs to execute the [Delete serviceApp](/graph/api/backuprestoreroot-delete-serviceapps) API:
 ```http
 DELETE /solutions/backupRestore/serviceApps/{serviceAppId}
 ```
