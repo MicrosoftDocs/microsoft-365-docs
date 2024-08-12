@@ -60,7 +60,7 @@ If you already own a domain like  *you@yourcompany.<span>com*  you can add it an
 You can use a Microsoft domain like  *yourcompany.onmicrosoft.<span>com*  to sign in for now and add a custom domain later. 
   
 > [!IMPORTANT]
-> If you select this option, the name you enter for your .onmicrosoft.com domain will be used in all your SharePoint and OneDrive URLs. You might not be able to change this name, so make sure it's spelled correctly is the name you want to use from a branding perspective. 
+> If you select this option, the name you enter for your .onmicrosoft.com domain will be used in all your SharePoint and OneDrive URLs. You might not be able to change this name, so make sure it's spelled correctly if it's the name you want to use from a branding perspective. 
   
 ## Feeling stuck?
 
