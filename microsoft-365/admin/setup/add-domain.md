@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: nkagole
 author: nataliekagole
 manager: scotv
-ms.date: 09/22/2023
+ms.date: 08/11/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -65,7 +65,7 @@ Your company might need multiple domain names for different purposes. For exampl
 > Where possible, we recommend that your organization use a custom domain name, as it can enhance your email's  appearance and improve it's reputation.
 
 1. In the Microsoft 365 admin center, choose <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>.
-1. Under **Get your custom domain set up**, select **View** > **Manage** > **Add domain**.
+1. Select **Get your custom domain set up**, then **Get Started** > **Add domain**.
 1. Enter the new domain name that you want to add, and then select **Next**.
 1. Sign in to your domain registrar, and then select **Next**.
 1. Choose the services for your new domain.
@@ -77,11 +77,7 @@ Follow these steps to add, set up, or continue setting up a domain.
 
 ::: moniker range="o365-worldwide"
 
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
-::: moniker-end
-
-::: moniker range="o365-21vianet"
 
 1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>.
 
@@ -96,8 +92,8 @@ Follow these steps to add, set up, or continue setting up a domain.
 5. Choose how you want to verify that you own the domain.
     
     1. If your domain registrar uses [Domain Connect](#domain-connect-registrars-integrating-with-microsoft-365), Microsoft [will set up your records automatically](../get-help-with-domains/domain-connect.md) by having you sign in to your registrar and confirm the connection to Microsoft 365. You are returned to the admin center and Microsoft automatically verifies your domain.
-    2. You can use a TXT record to verify your domain. Select this and select **Next** to see instructions for how to add this DNS record to your registrar's website. It can take up to 30 minutes to verify after you add the record.
-    3. You can add a text file to your domain's website. Select and download the .txt file from the setup wizard, then upload the file to your website's top level folder. The path to the file should look similar to: `http://mydomain.com/ms39978200.txt`. We confirm you own the domain by finding the file on your website.
+    2. You can use a TXT record to verify your domain. Select this and select **Next** to see instructions for how to add this DNS record to your registrar's website. It can take up to 10 minutes to verify after you add the record although some DNS hosting providers require up to 48 hours.
+    3. You can add a text file to your domain's website. **Select** and download the .txt file from the setup wizard, then **upload** the file to your website's top level folder. The path to the file should look similar to: `http://mydomain.com/ms39978200.txt`. We confirm you own the domain by finding the file on your website.
     
 6. Choose how you want to make the DNS changes required for Microsoft to use your domain.
     
@@ -110,7 +106,7 @@ Follow these steps to add, set up, or continue setting up a domain.
     
     If you don't know the DNS hosting provider or domain registrar for your domain, see [Find your domain registrar or DNS hosting provider](../get-help-with-domains/find-your-domain-registrar.md).
     
-    If you want to wait for later, either unselect all the services and select **Continue**, or in the previous domain connection step choose **More Options** and select **Skip this for now**.
+    If you want to wait for later, either unselect all the services and select **Continue**, or in the previous domain connection step, choose **More Options** and select **Skip this for now**.
     
 8. Select **Finish** - you're done!
 
@@ -134,20 +130,19 @@ Follow these steps to add a custom record for a website or third party service.
 
 [Domain Connect](https://www.domainconnect.org/) enabled registrars let you add your domain to Microsoft 365 in a three-step process that takes minutes. 
   
-In the wizard, we confirm that you own the domain, and then automatically set up your domain's records, so email comes to Microsoft 365 and other Microsoft 365 services, like Teams, work with your domain.
+In the wizard, we confirm that you own the domain, and then automatically set up your domain's records, so that email comes to Microsoft 365 and other Microsoft 365 services, like Teams, work with your domain.
   
 > [!NOTE]
 > Make sure you disable any popup blockers in your browser before you start the setup wizard.
   
 ### Domain Connect registrars integrating with Microsoft 365
-
+- [Aruba.it](https://www.aruba.it/home.aspx)
 - [IONOS](https://www.1and1.com/)
 - [EuroDNS](https://www.eurodns.com/)
 - [Cloudflare](https://www.cloudflare.com/)
-- [GoDaddy](https://www.godaddy.com/)
+- [GoDaddy (_Media Temple_)](https://www.godaddy.com/)
 - [WordPress.com](https://wordpress.com/)
 - [Plesk](https://www.plesk.com/)
-- [MediaTemple](https://mediatemple.net/)
 - SecureServer or WildWestDomains (GoDaddy resellers using SecureServer DNS hosting)
     - Examples:
         - [DomainsPricedRight](https://www.domainspricedright.com/products/domain-registration)
