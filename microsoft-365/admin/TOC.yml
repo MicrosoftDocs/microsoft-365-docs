@@ -395,6 +395,8 @@
               href: manage/manage-addins-in-the-admin-center.md      
             - name: Centralized Deployment FAQ
               href: manage/centralized-deployment-faq.yml
+            - name: Deploy add-ins in GCC High environments
+              href: manage/deploy-addins-for-gcch.md
          - name: Manage industry news
            href: manage/manage-industry-news.md
          - name: Manage Office Scripts settings 
