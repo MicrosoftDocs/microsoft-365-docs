@@ -103,7 +103,7 @@ landingContent:
   # Card 
   - title: Copilot end-user experiences
     linkLists:
-      - linkListType: overview
+      - linkListType: quickstart
         links:
         - text: Word
           url: https://copilot.cloud.microsoft/copilot-word
