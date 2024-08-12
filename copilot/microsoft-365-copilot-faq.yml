@@ -1,0 +1,42 @@
+### YamlMime:FAQ
+metadata:
+  title: Microsoft 365 Copilot FAQ
+  description: Find answers to frequently-asked questions about Microsoft 365 Copilot, including questions about privacy, security, and responsible AI.
+  author: camillepack
+  ms.author: camillepack
+  manager: scotv
+  ms.service: microsoft-365-copilot
+  audience: Admin
+  ms.topic: faq
+  ms.date: 08/12/2024
+  ms.localizationpriority: medium
+  ms.collection: 
+  - scotvorg
+  - m365copilot
+  - magic-ai-copilot
+  customer intent: As an admin, I want to find answers to my questions about Microsoft 365 Copilot.
+
+
+title: Microsoft 365 Copilot FAQ
+summary: Find answers to frequently-asked questions about Microsoft 365 Copilot, including questions about privacy, security, and responsible AI.
+
+sections:
+  - name: General questions 
+    questions:
+      - question: What is Microsoft 365 Copilot?
+        answer: tbd
+          
+      - question: What is the difference between Microsoft Copilot and Microsoft 365 Copilot?
+        answer: tbd
+
+      - question: How do I get Microsoft 365 Copilot?
+        answer: Microsoft 365 Copilot is available with many subscriptions. See a full list in [Understand licensing requirements for Microsoft 365 Copilot](microsoft-365-copilot-licensing.md)
+
+  - name: Privacy, security, and responsible AI questions 
+    questions:
+      - question: tbd
+        answer: tbd
+
+      - question: tbd
+        answer: tbd
+

@@ -30,7 +30,7 @@ landingContent:
             url: microsoft-365-copilot-overview.md
       - linkListType: get-started
         links:
-          - text: Get your data and environment ready
+          - text: Get your data and environment ready (new)
             url: microsoft-365-copilot-get-ready.md
           - text: Get started with Microsoft 365 Copilot
             url: microsoft-365-copilot-setup.md
@@ -48,6 +48,10 @@ landingContent:
             url: manage-public-web-access.md
           - text: Apply principles of Zero Trust to Microsoft 365 Copilot
             url: /security/zero-trust/zero-trust-microsoft-365-copilot?bc=%2fmicrosoft-365%2fcopilot%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fcopilot%2ftoc.json
+          - text: FAQ (new)
+            url: microsoft-365-copilot-faq.yml
+          - text: Responsible AI and Microsoft 365 Copilot (new)
+            url: microsoft-365-copilot-responsible-ai.md
       - linkListType: architecture
         links:
           - text: Zero trust illustrations
@@ -86,7 +90,7 @@ landingContent:
           url: /training/paths/prepare-your-organization-microsoft-365-copilot/
         - text: "MS-4007: Discover how to drive enablement of Copilot for Microsoft 365 in your organization"
           url: /training/paths/explore-how-drive-adoption-microsoft-copilot-m365/
-        - text: End user resources
+        - text: "Copilot lab: End user resources"
           url: https://copilot.cloud.microsoft/
       - linkListType: overview
         links:

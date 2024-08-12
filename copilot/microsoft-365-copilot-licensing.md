@@ -11,9 +11,7 @@ ms.topic: get-started
 ms.service: microsoft-365-copilot
 ms.localizationpriority: medium
 ms.collection: 
-- Tier2
 - scotvorg
-- Adm_O365
 - m365copilot
 - magic-ai-copilot
 description: "Understand which plans include Microsoft 365 Copilot, licensing requirements, and availability."

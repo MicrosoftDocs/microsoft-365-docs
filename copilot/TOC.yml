@@ -5,20 +5,20 @@
       items:
         - name: Overview of Copilot for Microsoft 365
           href: microsoft-365-copilot-overview.md
-        - name: Get your data and environment ready
+        - name: Get your data and environment ready (new)
           href: microsoft-365-copilot-get-ready.md
         - name: Get started with Microsoft 365 Copilot
           href: microsoft-365-copilot-setup.md
     - name: Deploy and enable
       items: 
-        - name: Pilot key scenarios to create critical scenarios
-          href: tbd
+        - name: Pilot key scenarios to create critical mass (new)
+          href: microsoft-365-copilot-pilot.md
         - name: Requirements for Microsoft 365 Copilot
           href: microsoft-365-copilot-requirements.md
-        - name: Understand licensing for Microsoft 365 Copilot
+        - name: Understand licensing for Microsoft 365 Copilot (new)
           href: microsoft-365-copilot-licensing.md
-        - name: Adoption resources
-          href: tbd
+        - name: Adoption resources (new)
+          href: microsoft-365-copilot-enablement-resources.md
         - name: Enable users for Microsoft 365 Copilot
           href: microsoft-365-copilot-enable-users.md
     - name: Manage
@@ -43,8 +43,10 @@
           href: manage-public-web-access.md
         - name: Apply principles of Zero Trust to Microsoft 365 Copilot
           href: /security/zero-trust/zero-trust-microsoft-365-copilot?bc=/copilot/microsoft-365/breadcrumb/toc.json&toc=/copilot/microsoft-365/toc.json
-        - name: Microsoft 365 Copilot and Responsible AI
-          href: tbd
+        - name: FAQ (new)
+          href: microsoft-365-copilot-faq.yml
+        - name: Microsoft 365 Copilot and Responsible AI (new)
+          href: microsoft-365-copilot-responsible-ai.md
     - name: Extend and build
       items:
         - name: Extend Microsoft 365 Copilot
@@ -55,7 +57,7 @@
           href: /office365/servicedescriptions/office-365-platform-service-description/microsoft-365-copilot
         - name: Technical training for Microsoft 365 Copilot
           href: /training/paths/prepare-your-organization-microsoft-365-copilot/
-        - name: End user resources
+        - name: "Copilot lab: End user resources"
           href: https://copilot.cloud.microsoft/
         - name: Provide Copilot feedback to Microsoft
           href: provide-feedback.md

@@ -11,11 +11,7 @@ ms.topic: how-to
 ms.service: microsoft-365-copilot
 ms.localizationpriority: medium
 ms.collection: 
-- Tier2
 - scotvorg
-- M365-subscription-management 
-- Adm_O365
-- Adm_TOC
 - m365copilot
 - magic-ai-copilot
 description: "Learn how to provide Copilot for Microsoft 365 feedback to Microsoft on behalf of their users who encounter issues"
