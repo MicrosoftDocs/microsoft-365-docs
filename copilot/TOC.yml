@@ -5,7 +5,7 @@
       items:
         - name: Overview of Copilot for Microsoft 365
           href: microsoft-365-copilot-overview.md
-        - name: Get your data and environment ready (new)
+        - name: "Get ready: Prepare your data and environment (new)"
           href: microsoft-365-copilot-get-ready.md
         - name: Get started with Microsoft 365 Copilot
           href: microsoft-365-copilot-setup.md

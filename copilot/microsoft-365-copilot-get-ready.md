@@ -1,5 +1,5 @@
 ---
-title: "Get your data and environment ready for Microsoft 365 Copilot"
+title: "Get ready: Prepare your data and environment for Microsoft 365 Copilot"
 f1.keywords:
 - NOCSH
 ms.author: camillepack
@@ -14,8 +14,8 @@ ms.collection:
 - scotvorg
 - m365copilot
 - magic-ai-copilot
-description: "Learn how to prepare your data and environment for Microsoft 365 Copilot."
+description: "Learn about the specific steps you need to take to prepare your data and environment for Microsoft 365 Copilot."
 ---
 
-# Get your data and environment ready for Microsoft 365 Copilot
+# Get ready: Prepare your data and environment for Microsoft 365 Copilot
 
