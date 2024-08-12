@@ -175,7 +175,7 @@ To add an onmicrosoft.com domain:
 
 3. On the **Overview** tab, select **Add onmicrosoft.com domain**.
 
-    ![Screenshot of domain properties.](../../media/add-onmicrosoft-domain-link.png)
+    ![Screenshot of domain properties.](../../media/add-onmicrosoft.comdomain.png)
 
 4. On the **Add onmicrosoft domain** page, in the **Domain name** box, enter the name for your new onmicrosoft.com domain. 
 
