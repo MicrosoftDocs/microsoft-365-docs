@@ -55,7 +55,7 @@ Create a new Azure subscription with the same organization and Microsoft Entra t
 
 1. Sign in to the [Azure portal](https://portal.azure.com/) with your Microsoft 365 admin, Microsoft Entra DC admin, or [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) account.
 
-        [!INCLUDE [global-administrator-note](../../includes/global-administrator-note.md)]
+   [!INCLUDE [global-administrator-note](../../includes/global-administrator-note.md)]
 
 2. In the left navigation, select **Subscriptions**, and then select **Add**.
 
@@ -82,7 +82,7 @@ To create a Billing Policy for your application, you need to perform the followi
 
    `Connect-SPOService -Url "https://contoso-admin.sharepoint.com"`
   
-2. Run the following command to create the Biling Policy for your application:
+2. Run the following command to create the Billing Policy for your application:
 
 > [!NOTE]
 > To create a Billing Policy for your application, you must be an owner or contribution role on the Azure subscription from Step 1.
