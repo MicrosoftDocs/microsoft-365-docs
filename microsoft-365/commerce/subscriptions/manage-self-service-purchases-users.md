@@ -1,5 +1,5 @@
 ---
-title: "Manage self-service purchases and trials (for users)"
+title: "Manage self-service purchases (for users)"
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
@@ -25,7 +25,7 @@ description: "Users can learn how to manage their self-service purchases in the 
 ms.date: 03/27/2024
 ---
 
-# Manage self-service purchases and trials (for users)
+# Manage self-service purchases (for users)
 
 As a user, you can buy subscriptions to certain products and assign licenses for those subscriptions to people in your team. You're responsible for paying for any self-service purchases you make. You can manage your subscriptions in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
