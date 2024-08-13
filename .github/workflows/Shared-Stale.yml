@@ -1,0 +1,99 @@
+name: Mark stale pull requests
+
+permissions:
+  issues: write
+  pull-requests: write
+
+on:
+  workflow_call:
+    inputs:
+      RunDebug:
+        type: boolean
+        required: true
+      RepoVisibility:
+        type: string
+        required: true
+    secrets:
+      AccessToken:
+        required: true
+
+jobs:
+  stale-private:
+    name: Stale check - private repos
+    runs-on: ubuntu-latest
+    if: inputs.RepoVisibility == 'private' 
+    steps:
+    - uses: actions/stale@v9
+      with:
+        repo-token: ${{ secrets.AccessToken }} 
+        debug-only: ${{ inputs.RunDebug }}
+        operations-per-run: 1000
+        days-before-issue-stale: -1
+        days-before-issue-close: -1
+        days-before-pr-stale: 90
+        days-before-pr-close: 14
+        stale-pr-label: Inactive
+        close-pr-label: Auto Closed
+        exempt-pr-labels: Keep open
+        stale-pr-message: >
+          <h2>Inactive PR marked for closure</h2>
+          <p/>
+          This pull request has been inactive for over 90 days, and an <b>Inactive</b> label has been added to it. If this PR remains inactive with no new comments, commits, or updates from main, it will be closed automatically in 14 days. 
+          <p/> 
+          <h3>Instructions for writer</h3>
+          <p/>
+          If you're ready to merge this PR, add the <b>Sign off</b> label to have the PR reviewed and merged by PubOps. 
+          <p/> 
+          If you're not ready to merge this PR yet and want to keep it open, click on <b>Update branch</b> at the bottom of this PR to bring it up to date with the main branch. 
+          <p/> 
+          To view a list of any open, inactive, PRs assigned to you, click <a href="https://github.com/search?q=is%3Apr+assignee%3A%40me+state%3Aopen+label%3A%22Inactive%22&type=pullrequests">Inactive PRs</a>. 
+          <p/> 
+          Thank you! 
+          <p/> 
+          PS: Mention <b>@marveldocs-pubops</b> in the comments if you need assistance.
+        close-pr-message: >
+          This pull request has been inactive for a further 14 days and is now being closed. If you decide to continue working on your changes, that's no problem. Simply select the <b>Reopen pull request</b> button at the bottom of the pull request.
+          <br/>
+          Thank you!
+          <br/>
+          PS: Mention <b>@marveldocs-pubops</b> in the comments if you need assistance.
+
+#   stale-public:
+#     name: Stale check - public repos
+#     runs-on: ubuntu-latest
+#     if: inputs.RepoVisibility == 'public'
+#     steps:
+#     - uses: actions/stale@v9
+#       with:
+#         repo-token: ${{ secrets.AccessToken }}
+#         debug-only: ${{ inputs.RunDebug }}
+#         operations-per-run: 1000
+#         days-before-issue-stale: -1
+#         days-before-issue-close: -1
+#         days-before-pr-stale: -1
+#         days-before-pr-close: -1
+#         stale-pr-label: Inactive
+#         close-pr-label: Auto closed
+#         exempt-pr-labels: Keep open
+#         stale-pr-message: >
+#           <h2>Inactive PR marked for closure</h2>
+#           <p/>
+#           This pull request has been inactive for over 90 days, and an <b>Inactive</b> label has been added to it. If this PR remains inactive with no new comments, commits, or updates from main, it will be closed automatically in 14 days. 
+#           <p/> 
+#           <h3>Instructions for writer</h3>
+#           <p/>
+#           If you're ready to merge this PR, add the <b>Sign off</b> label to have the PR reviewed and merged by PubOps. 
+#           <p/> 
+#           If you're not ready to merge this PR yet and want to keep it open, click on <b>Update branch</b> at the bottom of this PR to bring it up to date with the main branch. 
+#           <p/> 
+#           To view a list of any open, inactive, PRs assigned to you, click <a href="https://github.com/search?q=is%3Apr+assignee%3A%40me+state%3Aopen+label%3A%22Inactive%22&type=pullrequests">Inactive PRs</a>. 
+#           <p/> 
+#           Thank you! 
+#           <p/> 
+#           PS: Mention <b>@marveldocs-pubops</b> in the comments if you need assistance.
+#         close-pr-message: >
+#           This pull request has been inactive for a further 14 days and is now being closed. If you decide to continue working on your changes, that's no problem. Simply select the <b>Reopen pull request</b> button at the bottom of the pull request.
+#           <br/>
+#           Thank you!
+#           <br/>
+#           PS: Mention <b>@marveldocs-pubops</b> in the comments if you need assistance.
