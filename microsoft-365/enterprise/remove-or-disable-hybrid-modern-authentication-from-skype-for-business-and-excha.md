@@ -3,7 +3,7 @@ title: "Removing or disabling Hybrid Modern Authentication from Skype for Busine
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 11/3/2017
+ms.date: 08/13/2024
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -15,6 +15,7 @@ ms.assetid: 5a91b9e3-1508-475b-93e0-710fa5d5cd2d
 ms.collection:
 - scotvorg
 - M365-security-compliance
+- must-keep
 f1.keywords:
 - NOCSH
 ms.custom:
