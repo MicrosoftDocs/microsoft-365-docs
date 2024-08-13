@@ -51,3 +51,9 @@ For example, if you choose to pin Microsoft Copilot for all users, but an indivi
 ## When Copilot will be pinned in each app
 
 If you choose to pin Microsoft Copilot for all users, it will be pinned in the Microsoft 365 app (web, Windows, mobile) starting mid-September. Microsoft Copilot will be pinned in Microsoft Teams and Outlook soon after.
+
+## More resources
+
+- [Data, Privacy, and Security for Microsoft Copilot for Microsoft 365](microsoft-365-copilot-privacy.md)
+- [Copilot for Microsoft 365 technical documentation hub](index.yml)
+- [Copilot Lab](https://copilot.cloud.microsoft/)
