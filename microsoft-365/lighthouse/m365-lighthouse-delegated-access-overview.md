@@ -33,7 +33,7 @@ Microsoft 365 Lighthouse provides delegated relationship insights across all you
 
 ## GDAP templates tab
 
-From the GDAP templates tab, you can view, create, and assign GDAP templates to customer tenants. The GDAP templates tab provides the following information:
+From the GDAP templates tab, you can view, create, delete, and assign GDAP templates to customer tenants. The GDAP templates tab provides the following information:
 
 - **Name:** The name of the GDAP template. 
 - **Support roles:** The name of the Lighthouse support roles associated with each template.
@@ -59,13 +59,13 @@ From the Relationships tab, you can view all GDAP relationships that you set up 
 - **Template:** Name of the GDAP template assigned to the customer tenant.
 - **Security groups:** Number of security groups associated with the customer tenant.
 - **Start date:** Date of the oldest GDAP relationship with the customer.
-- **Expiration date:** Date of the next-expiring GDAP relationship request.
+- **Expiration date:** Date of the next-expiring GDAP relationship.
 - **Tags:** Tags associated with the customer tenant.
 
-In the list of customer tenants, expand each tenant to show the active and pending GDAP relationship requests. After a customer approves a GDAP relationship request, you can select the relationship request from the list to open the relationship details pane to view the following information:
+In the list of customer tenants, expand each tenant to show the active and pending GDAP relationship requests. After a customer approves a GDAP relationship request, you can select the relationship request from the list to open the relationship details pane and view the following information:
 
-- All security groups and GDAP Entra roles associated with the tenant. 
-- A summary of all GDAP Entra roles associated with the tenant.
+- All security groups and GDAP Microsoft Entra roles associated with the tenant. 
+- A summary of all GDAP Microsoft Entra roles associated with the tenant.
  
 The Relationships tab also includes the following options: 
 
