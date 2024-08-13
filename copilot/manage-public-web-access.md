@@ -88,11 +88,9 @@ The Bing search service operates separately from Microsoft 365 and has different
 >
 > - The privacy setting for optional connected experiences will replace the **Allow Copilot to improve responses with web content** checkbox
 >
-> - The privacy setting for optional connected experiences will also control whether users have access to the web content plugin.
+> - The privacy setting for optional connected experiences will also control whether users have access to the web content plugin with Copilot for Microsoft 365.
 >
-> - This applies to both Microsoft Copilot and Copilot for Microsoft 365.
->
-> - Turning off optional connected experiences restricts Microsoft Copilot and other Microsoft 365 experiences.
+> - Turning off optional connected experiences restricts Microsoft Copilot, Copilot for Microsoft 365, and multiple experiences across Microsoft 365.
 >
 > - For subscription plans that don’t include Microsoft 365 apps, the privacy setting for optional connected experiences doesn’t apply, and there is no option to manage the use of web content.
 
