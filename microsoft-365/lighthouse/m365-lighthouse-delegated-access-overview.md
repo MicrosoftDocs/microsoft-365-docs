@@ -27,7 +27,7 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 Microsoft 365 Lighthouse provides delegated relationship insights across all your customer tenants in a single view. You can create and manage Granular Delegated Administrative Privileges (GDAP) relationships from the Delegated access page. Data is available for any customer tenant in Lighthouse, regardless of the customers' licensing, user count, or geographic region. To access these insights, select **Permissions** > **Delegated access** in the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com).
 
 > [!NOTE]
-> You must hold the Lighthouse Administrator Microsoft Entra role to manage GDAP relationships from the Delegated access page. 
+> To manage GDAP relationships from the Delegated access page, you must hold the Lighthouse Administrator role in Lighthouse. 
 
 :::image type="content" source="../media/m365-lighthouse-delegated-access-overview/m365-lighthouse-delegated-access-page.png" alt-text="Screenshot of Delegated access page." lightbox="../media/m365-lighthouse-delegated-access-overview/m365-lighthouse-delegated-access-page.png":::
 
@@ -36,12 +36,12 @@ Microsoft 365 Lighthouse provides delegated relationship insights across all you
 From the GDAP templates tab, you can view, create, and assign GDAP templates to customer tenants. The GDAP templates tab provides the following information:
 
 - **Name:** The name of the GDAP template. 
-- **Support roles:** The name of the Lighthouse support roles associated with each template. To learn more about GDAP templates, see [Set up GDAP for your customers](m365-lighthouse-setup-gdap.md).
+- **Support roles:** The name of the Lighthouse support roles associated with each template.
 - **Assigned tenants:** The number of customer tenants that the GDAP template is assigned to.
 
 Select a GDAP template from the list to open the edit pane, where you can update the name, description, support roles, and security groups for the template.
 
-To assign tenants to a GDAP template or delete a GDAP template, select the **More actions** (ellipsis icon) next to the template name.
+To assign tenants to a GDAP template or delete a GDAP template, select the three dots (more actions) next to the template name.
 
 The GDAP templates tab also includes the following options:
 - **Export:** Select to export GDAP template data to an Excel comma-separated values (.csv) file.
@@ -49,6 +49,29 @@ The GDAP templates tab also includes the following options:
 - **Search:** Enter keywords to quickly locate a specific GDAP template in the list. 
 
 ## Relationships tab
+
+From the Relationships tab, you can view all GDAP relationships that you set up with your customers. The Relationships tab provides the following information:
+
+- **Tenant and relationship:** Customer tenant name and associated GDAP relationship.
+- **Status:**
+    - An **Active** status means you have at least one active GDAP relationship with the customer.
+    - A **Pending** status indicates a GDAP relationship was set up but the customer hasn't approved it yet.
+- **Template:** Name of the GDAP template assigned to the customer tenant.
+- **Security groups:** Number of security groups associated with the customer tenant.
+- **Start date:** Date of the oldest GDAP relationship with the customer.
+- **Expiration date:** Date of the next-expiring GDAP relationship request.
+- **Tags:** Tags associated with the customer tenant.
+
+In the list of customer tenants, expand each tenant to show the active and pending GDAP relationship requests. After a customer approves a GDAP relationship request, you can select the relationship request from the list to open the relationship details pane to view the following information:
+
+- All security groups and GDAP Entra roles associated with the tenant. 
+- A summary of all GDAP Entra roles associated with the tenant.
+ 
+The Relationships tab also includes the following options: 
+
+- **Export:** Select to export GDAP relationship data to an Excel comma-separated values (.csv) file.
+- **Refresh:** Select to retrieve the most current GDAP relationship data.
+- **Search:** Enter keywords to quickly locate a specific tenant or tenant tag in the list. 
 
 ## Related content
 
