@@ -264,7 +264,7 @@ To make policy changes on your tenant, your Intune admin must:
 ### Enable Experiences Policies
 
 >[!NOTE]
-> If you use the Windows 11 MDM security baseline, you will need to change the required policies to **Not configured**. These policies control organizational messages configured by your team as well as other messages coming directly from Microsoft. To continue blocking messages coming directly from Microsoft as defined in the Windows 11 MDM security baseline, [configure the Microsoft messaging policy](/mem/intune/remote-actions/organizational-messages-prerequisites#microsoft-messaging-policy).
+> If you use the Windows 11 MDM security baseline, you will need to change the required policies to **Not configured**. These policies control organizational messages configured by your team as well as other messages coming directly from Microsoft. To continue blocking messages coming directly from Microsoft as defined in the Windows 11 MDM security baseline, configure the Microsoft messages policy found in the Organizational messages settings experience within the admin center.
 
 If using Settings catalog, follow these steps:
 
@@ -276,9 +276,6 @@ If using Settings catalog, follow these steps:
 1. In Settings picker, select **Experience category**.
 1. In configuration settings, ensure the following are selected or set to ‘Allow’:
     - Add Allow Windows Spotlight (User)
-    - Allow Tailored Experiences with Diagnostic Data (User)
-    - Add Third Party Suggestions in Windows Spotlight (User)
-    - Add Windows Consumer Features
     - Add Allow Windows Spotlight on Action Center (User)
     - Add Allow Windows Tips
     - Add Configure Windows Spotlight on Lock Screen (User)
@@ -296,7 +293,6 @@ If using Device Restrictions, follow these steps:
 1. Ensure or Select ‘Not configured’ is set for the following:
     - Windows Spotlight
     - Windows Spotlight on lock screen
-    - Consumer features
     - Windows Tips
     - Windows Spotlight in action center
     - Windows Spotlight personalization
@@ -317,8 +313,6 @@ The Organizational messages centralized experience is the ‘one-stop-shop’ fo
 
 > [!NOTE]
 > - Adoption Score organizational messages on Office or Outlook channels are not visible in the centralized experience.
-> - Intune organizational messages can only be read in the centralized experience (such as, cannot be canceled or deleted).
-> - We expect this to change in future releases within the 2024 calendar year.
 
 ### How do admins get the required permissions?
 
@@ -368,17 +362,6 @@ You can find more information in the following documents:
 
 - [Experience/AllowSpotlightCollection](/windows/client-management/mdm/policy-csp-experience#experience-allowspotlightcollection)
 
-- [Experience/AllowWindowsConsumerFeatures](/windows/client-management/mdm/policy-csp-experience#experience-allowwindowsconsumerfeatures)
-
-- [Experience/AllowTailoredExperiencesWithDiagnosticData](/en-us/windows/client-management/mdm/policy-csp-experience#experience-allowtailoredexperienceswithdiagnosticdata)
-
-- [Experience/AllowThirdPartySuggestionsInWindowsSpotlight](/windows/client-management/mdm/policy-csp-experience#experience-allowthirdpartysuggestionsinwindowsspotlight)
-
-### Where can I find more information on Organizational Messages experiences?
-
-There are several other public Microsoft documents for our other preview product experiences: 
-
-- [Overview of organizational messages in Microsoft Intune](/mem/intune/remote-actions/organizational-messages-overview)
 
 ### What do the different message states mean?
 
