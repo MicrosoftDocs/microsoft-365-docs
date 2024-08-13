@@ -137,7 +137,7 @@ For Global admins only:
 :::image type="content" source="media/copilot-improved-responses.png" alt-text="Screenshot showing the improved responses toggle enabled for Copilot for Microsoft 365." lightbox="media/copilot-improved-responses.png":::
 
 >[!NOTE]
-> Until mid-September 2024, this method is the only way to turn off the ability of Copilot for Microsoft 365 chat experiences to access web content. Until then, the privacy controls for optional connected experiences available with Microsoft 365 Apps can’t be used.
+> Until mid-September 2024, this method is the only way to turn off the ability of Copilot for Microsoft 365 chat experiences to access web content. Until then, the privacy controls for optional connected experiences available with Microsoft 365 won't affect the ability to access web content.
 
 ### End user toggle
 
