@@ -40,7 +40,7 @@ If you want multiple people to manage email sent to a single email address like 
 
 ## Before you begin
 
-You must be a member of the Global admin role to add email aliases to a user. For more info, see [About admin roles in the Microsoft 365 admin center](../add-users/about-admin-roles.md).
+You must be a member of the Exchange Administrator role to add email aliases to a user. For more info, see [About admin roles in the Microsoft 365 admin center](../add-users/about-admin-roles.md).
 
 ## Add email aliases to a user
 
