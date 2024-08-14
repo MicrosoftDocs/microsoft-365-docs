@@ -13,7 +13,7 @@ ms.collection:
 - m365copilot
 - magic-ai-copilot
 hideEdit: true
-ms.date: 08/25/2024
+ms.date: 08/15/2024
 ---
 
 # Enterprise data protection in Copilot for Microsoft 365 and Microsoft Copilot
