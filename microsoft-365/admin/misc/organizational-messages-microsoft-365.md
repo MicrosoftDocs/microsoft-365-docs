@@ -29,7 +29,7 @@ As an admin, you can now connect with your organization through customized messa
 To get started, go to [organizational messages in the Microsoft 365 admin center](https://aka.ms/organizationalmessagesportal).
 
 >[!NOTE]
-> The experience will start rolling out in preview on May 2, 2024.
+> The preview experiences will start rolling out in preview on May 2, 2024.
 
 ## What can I do with organizational messages?
 
@@ -80,7 +80,7 @@ Before working with organizational messages, make sure your team satisfies the f
   - For example, any message configured to be delivered to a Windows channel, like Windows Spotlight, requires that recipients use **Windows 11 Enterprise**.
 
 > [!IMPORTANT]
-> Organizational messages preview features will not be restricted based on the licenses held by participating tenants, authors, approvers, or message recipients. However, some organizational messages features might be restricted to particular Microsoft licenses in the future.
+> Organizational messages preview experiences will not be restricted based on the licenses held by participating tenants, authors, approvers, or message recipients. However, some organizational messages experiences may be restricted to particular Microsoft licenses in the future.
 
 ## Get started
 
@@ -153,6 +153,9 @@ If you have the Organizational Messages Writer Entra role as described above, yo
 > - Messages that are not reviewed (such as, approved or rejected) by approvers before the set 'End date' of the message will automatically be rejected by the system to ensure minimum duration of delivery of messages are as expected by authors.
 
 ## Create a message
+
+> [!IMPORTANT]
+> Organizational messages delivers messages to end users within the time windows configured by admins via Microsoft 365 admin center experiences.  However, occasionally, messages may not be delivered as expected due to system or user device conditions, such as urgent messages not being delivered to devices that are disconnected from the internet.  In such instances, our system will continue trying to deliver messages as possible and appropriate.
 
 Users with the Organizational Messages Writer Entra role described previously will have access to the **Create a message** button and capability in the centralized experience. Selecting this button will invoke the wizard, which includes these primary creation steps:
 
@@ -238,6 +241,9 @@ For some time-sensitive communications, admins and other communicators might nee
 
 ## Setting tenant policies
 
+>[!NOTE]
+> If you recently onboarded your tenant to Microsoft Entra ID, it can take 36 to 64 hours before you're able to use the organizational messages features.
+
 There are certain policies in [Microsoft Intune](https://intune.microsoft.com) that will block the delivery of organizational messages to your end users if not configured properly. This section describes how to adjust all policy settings for your tenant so that delivery is always allowed and works as intended.
 
 ### General Instructions
@@ -286,7 +292,7 @@ If using Device Restrictions, follow these steps:
 (This can be in a new or existing Windows configuration profile.)
 
 1. Go to **Devices** > **Windows** > **Configuration profiles**.
-1. In a new or existing template profile select **Device restrictions** > **Windows Spotlight**.
+1. In a new or existing template profile, select **Device restrictions** > **Windows Spotlight**.
 1. Ensure or Select ‘Not configured’ is set for the following:
     - Windows Spotlight
     - Windows Spotlight on lock screen

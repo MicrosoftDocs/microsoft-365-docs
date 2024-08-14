@@ -1339,6 +1339,21 @@
       "source_path": "microsoft-365/enterprise/disable-access-to-services-while-assigning-user-licenses.md",
       "redirect_url": "/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell",
       "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/microsoft-azure-architectures-for-sharepoint-2013.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
    }
   ]
 }

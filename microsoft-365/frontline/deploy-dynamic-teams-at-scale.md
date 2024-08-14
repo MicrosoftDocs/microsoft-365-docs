@@ -16,7 +16,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 02/28/2024
+ms.date: 06/27/2024
 
 ---
 
@@ -39,7 +39,7 @@ You also determine team structure and team owners.
 
 Then, you can choose which locations you want to create dynamic frontline teams for.
 
-Team membership is automatically managed over time through the power of dynamic teams. As frontline workers are onboarded, offboarded, or change locations, their membership in these teams are updated accordingly.
+Team membership is automatically managed over time through the power of dynamic teams. As frontline workers are onboarded and offboarded, and as they change locations, their memberships in these teams are updated accordingly.
 
 Check out this [Microsoft Mechanics video](https://www.youtube.com/watch?v=gdkTnPdIRS4&t=461s) for an overview of how to set up and deploy your frontline dynamic teams.
 
@@ -51,7 +51,7 @@ Check out this [Microsoft Mechanics video](https://www.youtube.com/watch?v=gdkTn
 > [!IMPORTANT]
 > The admin running the deployment process must be a Global admin.
 
-- Users must have a Microsoft 365 F3, F1, E3, or E5 license. If a user doesn't have one of these licenses, they'll need a Microsoft Entra ID P1 add-on license to use dynamic teams. [Learn more about frontline licensing](flw-licensing-options.md).
+- Users must have a Microsoft 365 F3, F1, E3, or E5 license. If a user doesn't have one of these licenses, they need a Microsoft Entra ID P1 add-on license to use dynamic teams. [Learn more about frontline licensing](flw-licensing-options.md).
 - Ensure you can define your frontline workers and their work locations through data available in Microsoft Entra ID. If you don't have this data in Microsoft Entra ID, you can sync it through a [human capital management (HCM) connector](/azure/active-directory/app-provisioning/plan-cloud-hr-provision) or [use the PowerShell solution](deploy-teams-at-scale.md) to create static teams at scale.
 - If you want to enable [targeted communications](set-up-targeted-communications.md) (Preview), ensure you can map the attributes of your frontline workers through data available in Microsoft Entra ID. If user profile information doesn’t yet include job title or department, you can add it. [Learn more about how to add or update a user’s profile information in Microsoft Entra ID](/entra/fundamentals/how-to-manage-user-profile-info).  
 
@@ -75,7 +75,9 @@ When evaluating the right solution for your organization, we recommend you do th
 
     :::image type="content" source="media/dtas-frontline-worker-attribute.png" alt-text="Screenshot showing where to enter your Microsoft Entra attribute and values to identify your frontline workforce." lightbox="media/dtas-frontline-worker-attribute.png":::
 
-1. On the Location page, select the Microsoft Entra attribute that defines the location your frontline employees work in. You can only choose one location attribute.
+1. On the Location page, select a Microsoft Entra attribute or a [custom user attribute](/entra/external-id/user-flow-add-custom-attributes) that defines the location your frontline employees work in. You can only choose one location attribute.
+
+    All custom attributes are case sensitive and must start with an "extension_" prefix. Only custom attributes of the String data type are supported.
 
     :::image type="content" source="media/dtas-location-attribute.png" alt-text="Screenshot showing where to enter your Microsoft Entra attribute that identifies the location where your frontline employees work." lightbox="media/dtas-location-attribute.png":::
 
@@ -94,6 +96,9 @@ When evaluating the right solution for your organization, we recommend you do th
     1. Select **Users**, and then choose your user.
     1. Copy the user's object ID.
 
+    > [!NOTE]
+    > After your teams are deployed, you can also add more team owners through the [PowerShell solution](deploy-teams-at-scale.md) or by using any other manual methods.
+
 1. (Preview) On the Map frontline attributes page, select the Microsoft Entra attributes that most accurately reflect the departments and job titles in your organization. You can set the **Department attribute**, **Job title attribute**, or both.
 
     > [!NOTE]
@@ -105,10 +110,10 @@ When evaluating the right solution for your organization, we recommend you do th
 
 1. Review your settings, and then choose **Finish setup.**
 
+    :::image type="content" source="media/dtas-setup-submitted.png" alt-text="Screenshot of the Manage frontline teams page with a banner showing that setup is in progress." lightbox="media/dtas-setup-submitted.png":::
+
     > [!NOTE]
     > Setup can take several hours to run. Refresh the Manage frontline teams page to get the latest status.
-
-    :::image type="content" source="media/dtas-setup-submitted.png" alt-text="Screenshot of the Manage frontline teams page with a banner showing that setup is in progress." lightbox="media/dtas-setup-submitted.png":::
 
 ## Deploy your frontline dynamic teams
 
@@ -166,20 +171,11 @@ You can manage your teams when changes happen in your organization.
     |Define your frontline locations. | Existing teams will continue to persist. If a team is no longer tied to a location, there will be no users in that team, and users are put in their respective location teams. |You can create new frontline teams based on the locations defined by your new Microsoft Entra attribute. |
     |Set your team name prefix. |All existing team names will be updated to reflect the prefix and location name if that was changed. |All new teams will have the updated naming convention. |
     |Select your team template. |No updates to the team structure will occur. |All new teams will use the updated team template. |
-    |Select your team owner. |The team owner will be updated for all existing teams. |All new teams will have the updated team owner. |
+    |Select your team owner. |The team owner will be updated for all existing teams. Team owners that were added through [PowerShell](deploy-teams-at-scale.md) or any other manual methods won't be removed.|All new teams will have the updated team owner.|
 
 ## Get analytics on frontline teams usage
 
-The [Teams usage report](/microsoft-365/admin/activity-reports/microsoft-teams-usage-activity) in  Teams admin center gives you an overview of usage activity in Teams. You can use the report to view usage details for your frontline teams, including active users, active channels, total organized meetings, last activity date, and other information.
-
-1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com), **choose Analytics & reports** > **Usage reports**.
-1. On the **View reports** tab, under **Report**, select **Teams usage**.
-1. Under **Date range**, select a date range of 7 days, 30 days, 90 days, or 180 days. Then, choose **Run report**.
-1. In the upper-right corner, select **Export to Excel** > **Export table as CSV**.
-1. Filter the spreadsheet based on your frontline team IDs. 
-
-    > [!NOTE]
-    > To get a list of your frontline team IDs, in the Teams admin center, go to **Frontline deployment** > **Manage frontline teams**, and then in the **Frontline teams** section, select **Download CSV**.
+The [Teams frontline usage report](frontline-usage-report.md) on the usage dashboard of the Manage frontline teams page gives you an overview of usage activity in Teams for each of your frontline locations. You can view data, such as the number of active users and last activity date, to quickly see how many users at your frontline locations are using Teams to communicate and collaborate.
 
 ## Frequently asked questions
 

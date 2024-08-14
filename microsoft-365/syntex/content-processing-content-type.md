@@ -1,10 +1,10 @@
 ---
-title: Create a rule to set a content type when a file is added to a document library in Microsoft Syntex
+title: Create a rule to set a content type when a file is added to a document library
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: karlha
-ms.date: 08/29/2023
+ms.date: 05/29/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -16,7 +16,7 @@ ms.localizationpriority:  medium
 description: Learn how to create a rule to set a content type when a file is added to a SharePoint document library in Microsoft Syntex.
 ---
 
-# Create a rule to set a content type when a file is added to a document library in Microsoft Syntex
+# Create a rule to set a content type when a file is added to a document library
 
 In Microsoft Syntex, you can create a rule to automatically set the content type for a file when it's added to a document library.
 

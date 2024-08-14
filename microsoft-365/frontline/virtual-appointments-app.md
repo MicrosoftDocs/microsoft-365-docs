@@ -25,7 +25,7 @@ ms.collection:
 - m365-virtual-appointments
 - teams-1p-app-admin 
 ms.reviewer: revathim
-description: Get an overview of how to use the Virtual Appointments app in Teams to schedule, manage, conduct and view analytics on virtual appointments in your organization. 
+description: Get an overview of how to use the Virtual Appointments app in Teams to schedule, manage, and view analytics on virtual appointments in your organization. 
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
@@ -62,7 +62,7 @@ You get an experience that's tailored to your industry. Here are some examples o
 |---------|---------|---------|---------|---------|
 |<ul><li>Diagnosis or post-op follow-up sessions</li><li>Consultations with clinicians and insurance providers</li><li>Therapy sessions</li></ul>|<ul><li>Financial consultations</li><li>Insurance policy and claim support</li><li>Loan advisory/management</li></ul>|<ul><li>Showcase products</li><li>Virtual fittings or tour showrooms</li><li>Provide technical advice and resolve conflicts</li></ul>|<ul><li>High trust sales calls</li><li>Issue resolution</li><li>Customer service</li></ul>|<ul><li>Custom waiting rooms for applicants</li><li>Engage multiple interviewers</li><li>Post-interview action</li></ul>|
 
-With any Microsoft 365 license, you can use basic Virtual Appointments capabilities that make it easy to schedule and join business-to-customer meetings. For example, you can schedule appointments in the calendar and external attendees can [join through a browser](browser-join.md) without having to download Teams. [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams) unlocks advanced Virtual Appointments capabilities to manage and personalize the experience. These include a queue view of scheduled and on-demand appointments, SMS notifications, custom waiting rooms, and analytics.
+With a Teams license, you can use basic Virtual Appointments capabilities that make it easy to schedule and join business-to-customer meetings. For example, you can schedule appointments in the calendar and external attendees can [join through a browser](browser-join.md) without having to download Teams. [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams) unlocks advanced Virtual Appointments capabilities to manage and personalize the experience. These include a queue view of scheduled and on-demand appointments, SMS notifications, custom waiting rooms, and analytics.
 
 ## Set up an appointment calendar
 
@@ -132,7 +132,7 @@ To learn more, see [Use text messages to remind customers of their appointment](
 
 ##### Link forms
 
-You can link up to four forms for attendees to fill out each time a scheduled appointment type is booked. For example, you may require attendees to complete a registration form before they join an appointment.
+You can link up to four forms for attendees to fill out each time a scheduled appointment type is booked. For example, you might require attendees to complete a registration form before they join an appointment.
 
 1. To link a form, choose **Link a form**.
 1. Enter the URL of the form, and then choose **Link**.

@@ -17,12 +17,12 @@ ms.collection:
 ms.service: microsoft-365-business
 ms.custom: admindeeplinkMAC
 ms.localizationpriority: medium
-description: "As a global admin you can pin up to three apps to your users' app launcher."
+description: "Lean how to pin up to three apps to your users' app launcher."
 ---
 
 # Pin apps to your users' app launcher
 
-You can use controls in the Microsoft Entra admin center to pin up to three apps to Microsoft365.com and the app launcher for all the users in your organization. You can also organize groups of applications. Any app you add can later be unpinned by the user at any time. To pin an app for your users, you must be a Cloud application administrator, or Application administrator in Microsoft Entra ID, or a Global administrator in Microsoft 365. For more information about admin roles, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference) and [admin roles in Microsoft 365](../add-users/about-admin-roles.md). 
+You can use controls in the Microsoft Entra admin center to pin up to three apps to Microsoft365.com and the app launcher for all the users in your organization. You can also organize groups of applications. Any app you add can later be unpinned by the user at any time. To pin an app for your users, you must be a Cloud application administrator, or Application administrator in Microsoft Entra ID. For more information about admin roles, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference) and [admin roles in Microsoft 365](../add-users/about-admin-roles.md).
 
 For more information about the app launcher and Microsoft365.com, see [meet the app launcher](https://support.microsoft.com/office/79f12104-6fed-442f-96a0-eb089a3f476a) and [updates to office.com and the-Office 365 app launcher](https://techcommunity.microsoft.com/t5/office-365-blog/updates-to-office-com-and-the-office-365-app-launcher/ba-p/1150503) blog article.
 
@@ -31,7 +31,7 @@ For more information about the app launcher and Microsoft365.com, see [meet the 
 ## Use the Microsoft Entra admin center to pin apps
 
 > [!NOTE]
-> Microsoft 365 apps are excluded from this list since they’re already displayed in the App launcher.
+> Microsoft 365 productivity apps are excluded from this list since they’re already displayed in the App launcher.
 
 1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.cloud.microsoft</a>.
 2. In the left nav, choose **Show all**, and under **Admin centers**, choose **Microsoft Entra**.

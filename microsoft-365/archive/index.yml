@@ -67,7 +67,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Microsoft 365 Backup (Preview)
+          - text: Microsoft 365 Backup
             url: /microsoft-365/backup
           - text: SharePoint Advanced Management
             url: /sharepoint/advanced-management

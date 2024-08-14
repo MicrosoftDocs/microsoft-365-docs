@@ -46,9 +46,9 @@ The invoice for your Microsoft business subscription provides a summary of the c
 
 ## How often and when am I billed?
 
-Depending on the billing frequency that you chose when you bought your subscription, you receive an invoice monthly, every three months, every six months, or annually. The amount of time since the last invoice date is called the *Billing Period* and is shown on page one of the invoice, above the Billing Summary section. This time   period represents the date range during which charges accrue for the current invoice. If you made a change to your subscription outside of this date range, like adding or removing licenses, the associated charges appear on the invoice for the next billing period.
+Depending on the billing frequency that you chose when you bought your subscription, you receive an invoice monthly, every three months, every six months, or annually. 
 
-Each new subscription purchase is billed the next day. You receive an invoice on the same day of the month either monthly, every three months, every six months or, annually, depending on the billing frequency you chose. Changes you make to an existing subscription are also charged the next day, except when you add and remove licenses or cancel which appear on the monthly invoice around the beginning of the following month.
+Each new subscription purchase receives the first invoice the next day and is billed on this same day of the month with the frequency selected at purchase. Changes you make to an existing subscription will appear on the monthly invoice around the beginning of the following month.
 
 > [!NOTE]
 > You can only change the billing frequency for a subscription when you buy, upgrade, or renew a subscription.
@@ -81,7 +81,8 @@ The top of the first page of your invoice identifies who's accountable for payme
 | Bill to |Identifies who receives the invoice. This information is managed on the billing profile details page. The billing profile is also shown on the online invoice page, in the **Invoice summary** section. To learn more about billing profiles, see [Manage your Microsoft business billing profiles](manage-billing-profiles.md). |
 | Billing Profile |The name of the billing profile used to define invoice properties like **Bill to**, **PO number**, and payment terms. This information is managed on the billing profile details page. To learn more about billing profiles, see [Manage your Microsoft business billing profiles](manage-billing-profiles.md). |
 | Invoice number |A unique, Microsoft-generated invoice number used for tracking purposes. |
-| Invoice date |Date that the invoice is generated, typically five to 12 days after the end of the billing cycle. You can check your invoice date on the billing profile details page. Charges that occur between the end of the billing period and the invoice date are included in the invoice for the next month, since they are in the next billing period. The billing period start and end dates for each invoice are listed in the invoice PDF above **Billing Summary**.|
+| Invoice date |Date that the invoice is generated. The billing period start and end dates for each invoice are listed in the invoice PDF above **Billing Summary**.|
+|Billing period|The time frame during which charges that appear on the invoice are accrued. For new subscription purchases and renewals, each invoice represents a single day of purchases, so the billing period is a single day. For changes to an existing subscription, the billing period is the prior month.|
 | Payment terms |How you pay for your Microsoft bill. *Net 30 days* means that you pay by following instructions on your invoice, within 30 days of the invoice date. |
 
 ### Billing Summary
@@ -103,6 +104,7 @@ The charges for your invoice start on page two and show the cost broken down by 
 
 | Term |Description |
 | --- | --- |
+| Purchases Charge dates| These are the service dates you're paying for.|
 | Unit price | The effective unit price of the service (in pricing currency) that is used to calculate the charge. This price is unique for a product, service family, meter, and offer. |
 | Qty | Quantity purchased or consumed during the billing period |
 | Charges/Credits | Net amount of charges after credits/refunds are applied |
@@ -145,22 +147,23 @@ Some invoices are generated within 24 hours of the purchase. Other invoices are 
 
 ### How do I pay the amount due on my invoice?
 
-Payment instructions depend on your payment method and are provided at the bottom of the invoice PDF. If your payment method is a credit or debit card, we automatically charge the card within 10 days of the invoice date. If your payment method is by wire transfer, see the information under **Payment Instructions** in the PDF.
+Payment instructions depend on your payment method and are provided at the bottom of the invoice PDF. If your payment method is a credit or debit card, we automatically charge the card within 10 days of the invoice date. If your payment method is by electronic payment (wire transfer, SEPA, and so on), see the information under **Payment Instructions** in the PDF.
 
 ### What's the difference between "Sold to" and "Bill to" addresses?
 
 - **Sold to:** The legal entity responsible for payment and identified on the invoice. The address provided here is used to determine your tax rate unless you opt to provide an alternative shipping address during your purchase. For more information, see [Tax information](tax-information.md).
 - **Bill to:** The address where the physical invoice is sent, if applicable. There can be multiple **Bill to** addresses per legal entity, but only one **Bill to** address per billing profile.
 
-### What are "Billed amount" and "Amount due?"
+### What are "Total amount" and "Amount due?"
 
-- **Billed amount:** The total amount for the purchase that you made.
+- **Total amount:** The total amount for the purchase that you made.
 - **Amount due:** The remaining balance for what you owe.
 
-### What is the difference between "'Service period" and "Billing period?"
+### What is the difference between "Purchases Charge dates" and "Billing period?"
 
-- **Service period:** The time period during which you're charged to use the service.
-- **Billing period:** The time period since the last invoice date.
+- **Purchases Charge dates:** The service period during which you're charged to use the service. These are the dates of service the charge applies to.
+
+- **Billing period:** The time period during which charges accrue. If the period is a single day, only purchases made on that day are shownb on the invoice. There's also a monthly invoice with a billing period for the previous month. This invoice is for changes made to an existing subscription, such as adding seats or cancelling.
 
 ### Why don't I see Azure prepayment as a payment method?
 
@@ -168,9 +171,9 @@ Azure prepayment is available as a payment method only for eligible Azure produc
 
 ## Need help? Contact support
 
-If you have questions or need help with your Azure credits, <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">create a support request with Azure support</a>.
-
 If you have questions or need help with your invoice in Microsoft 365 admin center, [contact support for business products](../../admin/get-help-support.md).
+
+If you have questions or need help with your Azure credits, <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">create a support request with Azure support</a>.
 
 ## Related content
 

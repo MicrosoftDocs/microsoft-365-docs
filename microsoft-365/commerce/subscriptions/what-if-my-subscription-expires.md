@@ -61,9 +61,9 @@ The subscription only enters the **Expired** status after all the licenses are r
 |&nbsp;| Active | Expired* | Disabled* | Deleted |
 |--|--------|---------|----------|---------|
 | Customer data | Data is accessible to all | Data is accessible to all | Data is accessible to admins only | Data is deleted and Microsoft Entra ID is removed, if not in use by other services |
-| Users | Users have normal access to Microsoft 365, files, and Microsoft 365 apps  | Users have normal access to Microsoft 365, files, and Microsoft 365 apps  | Users can't access Microsoft 365 apps. Microsoft 365 apps eventually move into a read-only, reduced functionality mode and display [Unlicensed Product notifications](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380) | Users can't access Microsoft 365, files, or Microsoft 365 apps  |
-| Licenses bought via the Volume Licensing program and assigned across the organization| | Service is immediately unavailable on the subscription end date, or if there's a reduction in license quatity | N/A | N/A |
-| Admins | Admins have normal access to Microsoft 365, data, and Microsoft 365 apps | Admins can access the admin center  | Admins can access the admin center, but can't assign licenses to users  | Admins can access the admin center to manage other subscriptions, or to buy new subscriptions |
+| Users | Users have normal access to Microsoft 365, files, and apps  | Users have normal access to Microsoft 365, files, and apps  | Users can't access apps in Microsoft 365. Apps in Microsoft 365 eventually move into a read-only, reduced functionality mode and display [Unlicensed Product notifications](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380) | Users can't access Microsoft 365, files, or apps  |
+| Licenses bought via the Volume Licensing program| | Services available for 90 days from subscription end date<br><br>If seat quantity is reduced, no expired status is available|Service is immediately unavailable| N/A |
+| Admins | Admins have normal access to Microsoft 365, data, and apps | Admins can access the admin center  | Admins can access the admin center, but can't assign licenses to users  | Admins can access the admin center to manage other subscriptions, or to buy new subscriptions |
 | Reactivation | Subscription is already active | Global or billing admins can reactivate the subscription in the admin center | Global or billing admins can reactivate the subscription in the admin center | Subscription can't be reactivated |
 
 *For most offers, in most countries/regions.
@@ -95,13 +95,16 @@ If you bought your subscription through an Enterprise volume licensing agreement
 | Enterprise | Default status. Subscription end date aligns with the agreement end date | 90 days from subscription end date | 60 days | Terminal State |
 | Open / Open Value | Subscription start date based on activation of token (not necessarily purchase date) | 30 days | 90 days | Terminal state |
 
+> [!NOTE]
+> Not all VL subscriptions have a 90 day grace period. Some products and services, like PowerBI Premium P plans and some Copilot subscriptions bought through VL only have a 30 day grace period.
+
 ### Lifecycle status durations for Cloud Service Provider (CSP) customers
 
 If you bought your subscription through a CSP, see [Subscription lifecycle states - Partner Center](/partner-center/subscription-lifecycle) for descriptions of the lifecycle statuses that apply to those subscriptions.
 
 ## Understand your options if your subscription is about to expire
 
-While a subscription is active, you and your users have normal access to your data, services like email, OneDrive, and Microsoft 365 apps. As the admin, you receive a series of notifications via email and in the admin center as your subscription nears its expiration date.
+While a subscription is active, you and your users have normal access to your data, services like email, OneDrive, and apps in Microsoft 365. As the admin, you receive a series of notifications via email and in the admin center as your subscription nears its expiration date.
 
 If you’re a Volume Licensing customer, see [Options if your volume licensing subscription is about to expire](#options-if-your-volume-licensing-subscription-is-about-to-expire).
 
@@ -123,7 +126,7 @@ This section contains information specifically for customers who bought online s
 > [!NOTE]
 > The Open Volume Licensing program was retired in December 2021.
 
-For all VL subscriptions, the **Expired** status starts immediately after the subscription reaches its end date, or the number of licenses is reduced. Services immediately become unavailable when the **Expired** status starts and lasts for 90 days. The exact end date depends on how you bought your subscription.
+For all VL subscriptions, the **Expired** status starts immediately after the subscription reaches its end date, and lasts for 90 days. Services immediately become unavailable when the **Expired** status ends. The exact end date depends on how you bought your subscription.
 
 - For subscriptions bought through the VL program, the end date depends on the date you placed the order.
 - For Open Value customers, the end date depends on the date you activated your product keys.

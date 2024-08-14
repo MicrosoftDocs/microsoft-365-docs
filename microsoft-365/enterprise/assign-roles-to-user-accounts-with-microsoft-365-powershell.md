@@ -45,7 +45,7 @@ You can easily assign roles to user accounts by using PowerShell for Microsoft 3
 >[!NOTE]
 > The Azure Active Directory module is being replaced by the Microsoft Graph PowerShell SDK. You can use the Microsoft Graph PowerShell SDK to access all Microsoft Graph APIs. For more information, see [Get started with the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/get-started).
 
-First, use a **Microsoft Entra DC admin**, **Cloud Application Admin**, or **Global admin** account to [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md). The cmdlets in this article require the permission scope **RoleManagement.ReadWrite.Directory** or one of the other permissions listed in the ['List subscribedSkus' Graph API reference page](/graph/api/subscribedsku-list). Some commands in this article may require different permission scopes, in which case this will be noted in the relevant section.
+First, use a **Microsoft Entra DC admin** or **Cloud Application Admin** account to [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md). The cmdlets in this article require the permission scope **RoleManagement.ReadWrite.Directory** or one of the other permissions listed in the ['List subscribedSkus' Graph API reference page](/graph/api/subscribedsku-list). Some commands in this article may require different permission scopes, in which case this will be noted in the relevant section.
 
 ```powershell
 Connect-MgGraph -Scopes "RoleManagement.ReadWrite.Directory"

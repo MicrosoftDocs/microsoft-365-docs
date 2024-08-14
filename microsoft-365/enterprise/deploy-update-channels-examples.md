@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: kvice
 manager: scotv
-ms.date: 07/21/2020
+ms.date: 08/01/2024
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -15,6 +15,7 @@ ms.collection:
 - scotvorg
 - Strat_O365_Enterprise
 - M365-subscription-management
+- must-keep
 ms.custom:
 description: How example organizations deploy and update using channels.
 ---

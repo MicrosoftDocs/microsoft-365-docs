@@ -39,12 +39,14 @@
               href: prebuilt-overview.md
             - name: Admin setup
               href: prebuilt-setup.md
-            - name: Use a contracts model 
+            - name: Contracts
               href: prebuilt-model-contract.md
-            - name: Use an invoices model 
+            - name: Invoices
               href: prebuilt-model-invoice.md
-            - name: Use a receipts model 
+            - name: Receipts
               href: prebuilt-model-receipt.md
+            - name: Sensitive information 
+              href: prebuilt-model-sensitive-info.md
             - name: Manage your model
               items:
                 - name: Apply a model
@@ -210,8 +212,19 @@
           href: esignature-send-requests.md
         - name: Review and sign a request 
           href: esignature-review-sign-requests.md
+        - name: Track and manage using Approvals 
+          href: esignature-approvals.md
         - name: Troubleshoot a request 
           href: esignature-troubleshoot.md
+
+    - name: Autofill columns
+      items: 
+        - name: Overview 
+          href: autofill-overview.md
+        - name: Admin setup 
+          href: autofill-setup.md
+        - name: Create autofill columns
+          href: autofill.md
 
     - name: Optical character recognition 
       items: 
@@ -223,7 +236,7 @@
     - name: Microsoft 365 Archive
       href: /microsoft-365/archive
 
-    - name: Microsoft 365 Backup (Preview)
+    - name: Microsoft 365 Backup
       href: /microsoft-365/backup
 
     - name: Annotations
@@ -243,6 +256,8 @@
           href: content-processing-create-rules.md
         - name: Set a content type 
           href: content-processing-content-type.md
+        - name: Translate a file 
+          href: content-processing-translate.md
 
     - name: Premium taxonomy features
       items:
@@ -281,7 +296,7 @@
               href: scenario-document-compliance.md
         - name: Assess your environment
           href: adoption-assessment-tool.md 
-        - name: Solution accelerators
+        - name: Solution site templates
           href: site-templates.md 
         - name: Solutions
           items:
@@ -296,23 +311,26 @@
                - name: Step 3. Use Power Automate
                  href: solution-manage-contracts-step3.md
 
-    - name: Syntex PowerShell
-      items: 
-        - name: Overview
-          href: powershell-syntex-intro.md
-        - name: Export and import models
-          href: powershell-syntex-import-export.md
-        - name: Publish models
-          href: powershell-syntex-publishing.md
-        - name: Request model processing
-          href: powershell-syntex-processing.md
-        - name: Work with explanations
-          href: powershell-syntex-explanations.md
-
     - name: Extensibility
       items: 
-        - name: Microsoft Syntex REST API 
+        - name: Content model Graph API 
+          href: /graph/api/resources/contentmodel
+        - name: Document processing Graph API 
+          href: /graph/api/resources/documentprocessingjob
+        - name: Unstructured model REST API 
           href: /sharepoint/dev/apis/syntex/syntex-model-rest-api
+        - name: Syntex PowerShell
+          items: 
+            - name: Overview
+              href: powershell-syntex-intro.md
+            - name: Export and import models
+              href: powershell-syntex-import-export.md
+            - name: Publish models
+              href: powershell-syntex-publishing.md
+            - name: Request model processing
+              href: powershell-syntex-processing.md
+            - name: Work with explanations
+              href: powershell-syntex-explanations.md
 
     - name: SharePoint Advanced Management
       href: /sharepoint/advanced-management

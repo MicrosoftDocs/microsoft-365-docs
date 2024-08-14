@@ -1,10 +1,10 @@
 ---
 title: Get started driving adoption of Topics
-ms.author: jobadach
+ms.author: daisyfeller
 author: daisyfell
 manager: elizapo
 ms.reviewer: daisyfeller
-ms.date: 07/13/2023 
+ms.date: 01/01/2024
 audience: admin
 ms.topic: article
 ms.custom: Adopt
