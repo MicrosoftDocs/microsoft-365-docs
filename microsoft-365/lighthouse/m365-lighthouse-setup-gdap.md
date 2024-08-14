@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: taylorau
-ms.date: 1/18/2024
+ms.date: 08/16/2024
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-lighthouse
@@ -24,34 +24,30 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # Set up GDAP for your customers in Microsoft 365 Lighthouse
 
-You can now set up all your customers with granular delegated admin privileges (GDAP) through Microsoft 365 Lighthouse, regardless of their licenses or size. By setting up your organization with GDAP for the customer tenants you manage, users in your organization have the permissions necessary to do their work while keeping customer tenants secure. Lighthouse lets you quickly transition your organization to GDAP and begin the journey to least-privilege for your delegated access to customers.
+You can set up all your customers with granular delegated admin privileges (GDAP) through Microsoft 365 Lighthouse. By setting up your partner organization with GDAP for the customer tenants you manage, users in your organization have the permissions necessary to do their work while keeping customer tenants secure. Lighthouse lets you quickly set up GDAP and begin the journey to least-privilege for your delegated access to customers.
 
-Delegated access via delegated admin privileges (DAP) or GDAP is a prerequisite for customer tenants to be fully onboarded to Lighthouse. Therefore, creating GDAP relationships with your customers may be the first step in managing your customer tenants in Lighthouse.
+GDAP is a prerequisite for customer tenants to be fully onboarded to Lighthouse. Therefore, creating GDAP relationships with your customers may be the first step in managing your customer tenants in Lighthouse.
 
-During the GDAP setup process, you create GDAP templates by configuring what support roles and security groups are needed for your organization. Then, you assign customer tenants to GDAP templates. GDAP roles are scoped to [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference), and when you set up GDAP, you see recommendations for a set of roles needed for different job functions.
+During the GDAP setup process, you create GDAP templates by configuring what support roles and security groups are needed for your partner organization. Then, you assign customer tenants to GDAP templates. GDAP roles are scoped to [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference), and when you set up GDAP, you see recommendations for a set of roles needed for different job functions.
 
-## Watch: Set up GDAP
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5e61P]
-
-Check out the other [Microsoft 365 Lighthouse videos](https://www.youtube.com/playlist?list=PLnWjfDdQkUQSCbV-ftVD311_fZxghB22C) on our YouTube channel.
+To learn how to set up GDAP in your partner organization, complete the [Secure Microsoft 365 Lighthouse interactive guide](https://go.microsoft.com/fwlink/p/?linkid=2281856).
 
 ## Before you begin
 
 - You need to have specific permissions in the partner tenant:
 
-  - To establish GDAP security groups, add users, and create GDAP templates, you must be a Global Administrator in the partner tenant. This role can be assigned in Microsoft Entra ID.
+  - To establish GDAP security groups, add users, and create GDAP templates, you must be a Lighthouse Administrator in the partner tenant. This role can be assigned from the Lighthouse permissions page by someone in your partner tenant who has the appropriate permissions.
 
-  - To create and complete GDAP relationships, you must be a member of the Admin Agents group in Partner Center.
+  - To create and complete GDAP relationships, you must also be a member of the Admin Agents group in Partner Center.
 
-- The customers you manage in Lighthouse need to be set up in Partner Center with either a reseller relationship or an existing delegated relationship (DAP or GDAP).
+- The customers you manage in Lighthouse need to be set up in Partner Center with either a reseller relationship or an existing GDAP relationship.
 
 > [!NOTE]
 > Lighthouse GDAP templates use role-assignable security groups. A Microsoft Entra ID P1 license is required to add users to these groups. To enable Just-in-Time (JIT) roles, Microsoft Entra IDE Governance or a Microsoft Entra ID P2 license is required.
 
 ## Set up GDAP for the first time
 
-When you set up GDAP for the first time, you must complete the following sections in order. Once completed, you can come back and edit any section as needed.
+When you set up GDAP for the first time, you must complete the following sections.
 
 If you encounter any problems during GDAP setup, see [Troubleshoot error messages and problems in Microsoft 365 Lighthouse: GDAP setup and management](m365-lighthouse-troubleshoot.md#gdap-setup-and-management) for guidance.
 
