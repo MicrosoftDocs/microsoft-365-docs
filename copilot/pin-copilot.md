@@ -29,6 +29,8 @@ Admin pinning allows you to set Microsoft Copilot to appear on the navigation ba
 
 ## Before you begin
 
+:::image type="content" source="media/pin-copilot-settings.png" alt-text="Screenshot showing the Pin Copilot setting on the Copilot settings page in the Microsoft 365 admin center." lightbox="media/pin-copilot-settings.png":::
+
 Before you can pin Copilot, you must be authenticated with Microsoft Entra ID.  
 
 Global administrators can access this setting in the Microsoft 365 admin center by navigating to **Copilot** > **Settings**.
@@ -42,6 +44,8 @@ Global administrators can access this setting in the Microsoft 365 admin center 
 1. **Automatic pinning (recommended by Microsoft)**: Microsoft Copilot is automatically pinned for all users. Users will not be prompted.
 1. **No automatic prompts to pin**: Microsoft Copilot is not automatically pinned, and users will not receive automatic prompts to pin.
 
+:::image type="content" source="media/pin-copilot-toggle.png" alt-text="Screenshot showing the options to Pin Copilot to the navigation bar.":::
+
 ## End user experience
 
 Users can personalize their navigation bar by choosing to pin or unpin Microsoft Copilot. Users can adjust the pinning settings within their application preferences, and these choices are specific to each Microsoft 365 app, Microsoft 365 website ([microsoft365.com](https://www.office.com/) and [m365.cloud.microsoft](https://m365.cloud.microsoft/)), Microsoft 365 Windows app, and Microsoft 365 mobile.
@@ -51,6 +55,8 @@ For example, if you choose to pin Microsoft Copilot for all users, but an indivi
 ## When Copilot will be pinned in each app
 
 If you choose to pin Microsoft Copilot for all users, it will be pinned in the Microsoft 365 app (web, Windows, mobile) starting mid-September. Microsoft Copilot will be pinned in Microsoft Teams and Outlook soon after.
+
+To learn more, see [Frequently asked questions for Microsoft Copilot with enterprise data protection](https://aka.ms/MsftCopilot-BlogFAQ).
 
 ## More resources
 
