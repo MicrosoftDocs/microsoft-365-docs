@@ -61,7 +61,8 @@ jobs:
             Write-Host "Retrieve parent workflow artifacts"
             $ArtifactData = Invoke-RestMethod -Uri $ArtifactUrl -Headers $GitHubHeaders
 
-            $ArtifactDownloadUrl = $ArtifactData.artifacts.archive_download_url
+            # Using [-1] to get the last element in the array in the event there are mulitple artifacts returned.
+            $ArtifactDownloadUrl = $ArtifactData.artifacts[-1].archive_download_url
 
             Write-Host "Retrieve payload artifact from $ArtifactDownloadUrl and save to $ArtifactFilePath"
             Invoke-RestMethod -Uri $ArtifactDownloadUrl -Headers $GitHubHeaders -OutFile $ArtifactFilePath
