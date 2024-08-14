@@ -25,7 +25,7 @@ description: "Learn how to improve organization use of Microsoft Copilot by pinn
 
 As an admin, you can encourage your organization to use Microsoft Copilot by pinning Copilot to the navigation of Teams, Outlook, and the Microsoft 365 App, including [microsoft365.com](https://www.office.com/), Microsoft 365 desktop app, and the Microsoft 365 mobile app.  
 
-Admin pinning allows you to set Microsoft Copilot to appear on the navigation bar for users with Microsoft Copilot access. This setting is only applicable for users who are signed in with a Microsoft Entra ID. Users can personalize their navigation bar by choosing to pin or unpin Microsoft Copilot, overriding the admin's default settings.
+Admin pinning allows you to set Microsoft Copilot to appear on the navigation bar for users with Microsoft Copilot access. This setting is only applicable for users who are signed in with a Microsoft Entra ID.
 
 ## Before you begin
 
@@ -44,7 +44,7 @@ Global administrators and Copilot administrators can access this setting in the 
 
 ## End user experience
 
-Users can adjust the pinning settings within their application preferences, and these choices are specific to each Microsoft 365 app, Microsoft 365 website ([microsoft365.com](https://www.office.com/) and [m365.cloud.microsoft](https://m365.cloud.microsoft/)), Microsoft 365 Windows app, and Microsoft 365 mobile.
+Users can personalize their navigation bar by choosing to pin or unpin Microsoft Copilot. Users can adjust the pinning settings within their application preferences, and these choices are specific to each Microsoft 365 app, Microsoft 365 website ([microsoft365.com](https://www.office.com/) and [m365.cloud.microsoft](https://m365.cloud.microsoft/)), Microsoft 365 Windows app, and Microsoft 365 mobile.
 
 For example, if you choose to pin Microsoft Copilot for all users, but an individual user decides to unpin it from Teams or Outlook or microsoft365.com, Microsoft Copilot will no longer appear on the navigation bar for that user.
 
