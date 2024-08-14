@@ -70,4 +70,4 @@ When you’re using plugins to help Copilot for Microsoft 365 to provide more re
 
 <sup>[1]</sup> The specific controls will vary depending on the underlying subscription plans.
 
-<sup>[2]</sup> Microsoft Copilot for Microsoft 365 runs on the ISO 27018 certified Microsoft 365 platform. Microsoft Copilot will run on the same platform starting in mid-September.
+<sup>[2]</sup> Microsoft Copilot for Microsoft 365 runs on the ISO 27018 certified Microsoft 365 platform. Microsoft Copilot will start rolling out to the same platform in the second half of September 2024, for users signed in with a Microsoft Entra account.
