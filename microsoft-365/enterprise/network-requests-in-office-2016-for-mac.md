@@ -55,6 +55,7 @@ The following network endpoints are used to download the Office for Mac installa
 |```https://officecdn-microsoft-com.akamaized.net/```  <br/> |SS  <br/> |Location of installation packages on the Content Delivery Network.  <br/> |
 |```https://officecdn.microsoft.com/```  <br/> |SS  <br/> |Location of installation packages on the Content Delivery Network.  <br/> |
 |```https://officeci-mauservice.azurewebsites.net/```  <br/> |ST  <br/> |Management Control endpoint for Microsoft AutoUpdate  <br/> |
+|```https://officecdnmac.microsoft.com/```  <br/> |  <br/> |Enhanced content delivery network (CDN) for Microsoft AutoUpdate updates  <br/> |
 
  **First app launch**
   
