@@ -31,7 +31,7 @@ Admin pinning allows you to set Microsoft Copilot to appear on the navigation ba
 
 Before you can pin Copilot, you must be authenticated with Microsoft Entra ID.  
 
-Global administrators and Copilot administrators can access this setting in the Microsoft 365 admin center by navigating to **Copilot** > **Settings**.
+Global administrators can access this setting in the Microsoft 365 admin center by navigating to **Copilot** > **Settings**.
 
 > [!NOTE]
 > Admin pinning is only applicable to users who are authenticated with Microsoft Entra ID.
