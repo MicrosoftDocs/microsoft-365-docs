@@ -146,7 +146,7 @@ Zero-touch provisioning of shared device mode isn’t currently supported by thi
 
 If you choose to manually configure devices in shared device mode, you’ll need to take more steps to re-enroll Android devices in shared device mode when third-party MDM support is available by uninstalling and reinstalling Authenticator from the device.
 
-To set up shared and personal devices to work with Microsoft 365 and Microsoft Teams and to allow your frontline workers to communicate more securely within your organization, see [Manage mobile devices for frontline workers](flw-devices.md).
+To set up shared and personal devices to work with Microsoft 365 and Microsoft Teams and to allow your frontline workers to communicate more securely within your organization, see [Overview of device management for frontline workers](flw-devices.md).
 
 ## Step 5: Set up other services
 
