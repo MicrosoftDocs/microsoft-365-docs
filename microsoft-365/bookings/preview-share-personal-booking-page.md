@@ -38,13 +38,14 @@ After configuring your personal booking page in Microsoft Bookings, it's time to
 You can share the link to your booking page using the methods below:
 
 - **Copy link and share** Copy your booking page link and paste it into various communication channels such as Teams chat or your social media profiles. This allows you to reach a broader audience and make booking appointments more accessible.
+
 - **Share via email** This option opens a pop-up asking you to enter the email addresses you want to share your booking page with, along with the option of adding a customized message. This targeted approach ensures that your booking page is shared with those who are most likely to engage with your services.
 
-:::image type="content" source="media/preview-booking-page-email.png" alt-text="Screenshot showing the option to share booking page via email.":::
+  :::image type="content" source="media/preview-booking-page-email.png" alt-text="Screenshot showing the option to share booking page via email.":::
 
 - **Email signature settings** The third option is to add your booking page link to your email signature. This means that every time you draft or send an email using Outlook, your booking page will automatically be embedded in your email signature. This seamless integration enables recipients to easily access your booking page with a single click, simplifying the appointment booking process for both parties.
 
-:::image type="content" source="media/preview-booking-page-signature.png" alt-text="Screenshot showing the page in Microsoft Bookings to add your booking page to your email signature." lightbox="media/preview-booking-page-signature.png":::
+  :::image type="content" source="media/preview-booking-page-signature.png" alt-text="Screenshot showing the page in Microsoft Bookings to add your booking page to your email signature." lightbox="media/preview-booking-page-signature.png":::
 
 ### Benefits of sharing the booking page link
 

@@ -36,7 +36,7 @@ You can include any additional text you would like here, such as information abo
 
 The following is an example of customized text added to the original confirmation email, seen in the **Additional information for Email Confirmation** field:
 
-:::image type="content" source="media/bookings-opt-In-boc.jpg" alt-text="Screenshot showing the Add your details screen for a booking.":::
+:::image type="content" source="media/bookings-opt-In-boc.jpg" alt-text="Screenshot showing the Add your details screen for a booking." lightbox="media/bookings-opt-In-boc.jpg":::
 
 Text message notifications will look like the following image:
 
