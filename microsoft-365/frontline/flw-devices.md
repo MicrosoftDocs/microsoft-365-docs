@@ -1,5 +1,5 @@
 ---
-title: Frontline device management overview
+title: Overview of device management for frontline workers
 author: lana-chin
 ms.author: v-chinlana
 manager: jtremper
@@ -20,7 +20,7 @@ appliesto:
 ms.date: 07/12/2024
 ---
 
-# Frontline device management overview
+# Overview of device management for frontline workers
 
 ## Overview
 
