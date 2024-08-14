@@ -7,15 +7,15 @@ author: siosulli
 manager: deniseb
 audience: Admin
 ms.topic: how-to
-ms.service: microsoft-365-business
-ms.date: 07/19/2023
+ms.service: microsoft-365-business-security
+ms.date: 05/31/2024
 ms.localizationpriority: medium
 ms.reviewer: efratka
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-security
-- tier1
+- tier2
 ---
 
 # Onboard enrolled devices to Microsoft Defender for Business
@@ -94,7 +94,7 @@ After you've onboarded Windows devices to Defender for Business, you can run a d
    powershell.exe -NoExit -ExecutionPolicy Bypass -WindowStyle Hidden $ErrorActionPreference = 'silentlycontinue';(New-Object System.Net.WebClient).DownloadFile('http://127.0.0.1/1.exe', 'C:\\test-MDATP-test\\invoice.exe');Start-Process 'C:\\test-MDATP-test\\invoice.exe'
    ```
 
-After the command has run, the Command Prompt window closes automatically. If successful, the detection test is marked as completed, and a new alert appears in the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) for the newly onboarded device in about ten minutes.
+After the command has run, the Command Prompt window closes automatically. If successful, the detection test is marked as completed, and a new alert appears in the Microsoft Defender portal (<https://security.microsoft.com>) for the newly onboarded device in about ten minutes.
 
 ## Onboard devices gradually
 
@@ -102,7 +102,7 @@ If you prefer to onboard devices in phases, which we call *gradual device onboar
 
 1. Identify a set of devices to onboard.
 
-2. Go to the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.
+2. Go to the Microsoft Defender portal (<https://security.microsoft.com>), and sign in.
 
 3. In the navigation pane, choose **Settings** > **Endpoints**, and then under **Device management**, choose **Onboarding**.
 

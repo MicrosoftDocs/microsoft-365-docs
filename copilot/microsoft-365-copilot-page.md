@@ -7,7 +7,7 @@ author: camillepack
 manager: scotv
 ms.date: 10/31/2023
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-copilot
 ms.localizationpriority: medium
 ms.collection: 
@@ -53,7 +53,7 @@ Copilot with commercial data protection provides enhanced security for users acc
 
 Copilot in Bing, Edge, and Windows is the public version of Copilot and doesn’t require users to be signed in. You can reroute to the documentation available on the panel to turn off the public experience and still have access to the Copilot with commercial data protection experience.
 
-You should use a PowerShell script to control access to Copilot for Microsoft 365 in Bing, Edge, and Windows. Running this script controls access to Copilot for Microsoft 365 in Bing.com, Edge sidebar, Edge mobile app, Copilot in Windows, copilot.microsoft.com, and the Copilot app. It doesn’t change how users access Copilot in other Microsoft 365 apps.  
+You should use a PowerShell script to control access to Copilot for Microsoft 365 in Bing, Edge, and Windows. Running this script controls access to Copilot for Microsoft 365 in Bing.com, Edge sidebar, Edge mobile app, Copilot in Windows, copilot.microsoft.com, and the Copilot app. It doesn’t change how users access Copilot in other Microsoft 365 productivity apps.  
 
 To turn on or turn off Copilot for Microsoft 365 in Bing, Edge, and Windows, follow these steps:
 
@@ -72,7 +72,7 @@ To turn on or turn off Copilot for Microsoft 365 in Bing, Edge, and Windows, fol
 
 ### Manage plugins that work with Microsoft Copilot for Microsoft 365
 
-Microsoft Copilot for Microsoft 365 is powered by an advanced processing and orchestration engine that seamlessly integrates Microsoft 365 apps, Microsoft Graph, and large language models (LLMs) to turn your words into the most powerful productivity tool. While Copilot is already able to use the apps and data within the Microsoft 365 ecosystem, many users still depend on various external tools and services for work management and collaboration. You can extend Microsoft Copilot for Microsoft 365 by building a plugin or by connecting to an external data source.
+Microsoft Copilot for Microsoft 365 is powered by an advanced processing and orchestration engine that seamlessly integrates Microsoft 365 productivity apps, Microsoft Graph, and large language models (LLMs) to turn your words into the most powerful productivity tool. While Copilot is already able to use the apps and data within the Microsoft 365 ecosystem, many users still depend on various external tools and services for work management and collaboration. You can extend Microsoft Copilot for Microsoft 365 by building a plugin or by connecting to an external data source.
 
 This control allows you to control how non-Microsoft apps and first party apps can work with Microsoft Copilot for Microsoft 365.
 

@@ -1,9 +1,9 @@
 ---
-title: "Optimize images in SharePoint modern site pages"
+title: "Optimize images in SharePoint in Microsoft 365 modern site pages"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 03/11/2020
+ms.date: 05/17/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
@@ -14,6 +14,7 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - SPO_Content
+- must-keep
 f1.keywords:
 - CSH
 ms.custom: 
@@ -22,12 +23,12 @@ ms.custom:
 ms.reviewer: sstewart
 search.appverid:
 - MET150
-description: Learn how to use the tools included in SharePoint to optimize images in SharePoint modern site pages.
+description: Learn how to use tools for SharePoint in Microsoft 365 to optimize images in SharePoint modern site pages.
 ---
 
-# Optimize images in SharePoint modern site pages
+# Optimize images in SharePoint in Microsoft 365 modern site pages
 
-This article will help you understand how to optimize images in SharePoint modern site pages.
+This article will help you understand how to optimize images in SharePoint in Microsoft 365 modern site pages.
 
 For information about optimizing images in classic publishing sites, see [Image optimization for SharePoint](image-optimization-for-sharepoint-online.md).
 
@@ -36,10 +37,10 @@ For information about optimizing images in classic publishing sites, see [Image 
 
 ## Use the Page Diagnostics for SharePoint tool to analyze image optimization
 
-The Page Diagnostics for SharePoint tool is a browser extension for the new Microsoft Edge (https://www.microsoft.com/edge) and Chrome browsers that analyzes both SharePoint modern portal and classic publishing site pages. The tool provides a report for each analyzed page showing how the page performs against a defined set of performance criteria. To install and learn about the Page Diagnostics for SharePoint tool, visit [Use the Page Diagnostics tool for SharePoint](page-diagnostics-for-spo.md).
+The Page Diagnostics for SharePoint tool is a browser extension for the new Microsoft Edge (https://www.microsoft.com/edge) and Chrome browsers that analyzes both SharePoint modern portal and classic publishing site pages for SharePoint in Microsoft 365. The tool provides a report for each analyzed page showing how the page performs against a defined set of performance criteria. To install and learn about the Page Diagnostics for SharePoint tool, visit [Use the Page Diagnostics tool for SharePoint](page-diagnostics-for-spo.md).
 
 >[!NOTE]
->The Page Diagnostics tool only works for SharePoint, and cannot be used on a SharePoint system page.
+>The Page Diagnostics tool only works for SharePoint in Microsoft 365, and cannot be used on a SharePoint system page.
 
 When you analyze a SharePoint modern site with the Page Diagnostics for SharePoint tool, you can see information about large images in the _Diagnostic tests_ pane.
 

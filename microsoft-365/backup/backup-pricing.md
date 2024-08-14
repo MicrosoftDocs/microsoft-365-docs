@@ -1,11 +1,11 @@
 ---
-title: Pricing model for Microsoft 365 Backup (Preview)
+title: Pricing model for Microsoft 365 Backup
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 04/11/2024
+ms.date: 07/31/2024
 ms.topic: conceptual
 ms.service: microsoft-365-backup
 ms.custom: backup
@@ -13,39 +13,34 @@ search.appverid:
 ms.collection:
     - essentials-get-started
 ms.localizationpriority:  medium
-description: Learn about the charge model and pricing calculator for Microsoft 365 Backup.
+description: Learn about the pricing model, estimating costs, and usage reports in Microsoft 365 Backup.
 ---
 
-# Pricing model for Microsoft 365 Backup (Preview)
-
-> [!NOTE]
-> This feature is currently in preview and subject to change.
+# Pricing model for Microsoft 365 Backup
 
 ## Microsoft 365 Backup charge model
 
-The Microsoft 365 Backup service, offered through the Microsoft 365 admin center, is a [pay-as-you-go consumption-based service](/microsoft-365/syntex/syntex-pay-as-you-go-services). The preview list price is $0.15/GB/month of protected content.
+The Microsoft 365 Backup service, offered through the Microsoft 365 admin center, is a [pay-as-you-go consumption-based service](/microsoft-365/syntex/syntex-pay-as-you-go-services). The list price is $0.15/GB/month of protected content.
 
 ### What’s counted towards protected backup storage?
 
-Microsoft 365 Backup will charge you for content size of the following for 365 days from when it is added to backup protection:
+Microsoft 365 Backup charges you based on the size of the following content for 365 days from the time it's added to backup protection:
 
-- Cumulative back up size of the mailboxes, SharePoint sites, and OneDrive accounts being protected. Size of OneDrive accounts and SharePoint sites are the size of the live OneDrive accounts and SharePoint sites as displayed in the live sites’ usage reports. Mailboxes are the size of the user's mailbox plus their online archives plus deleted items held for Backup.
+- Cumulative back up size of the mailboxes, SharePoint sites, and OneDrive accounts being protected. Size of OneDrive accounts and SharePoint sites are the size of the live OneDrive accounts and SharePoint sites as displayed in the live sites’ usage reports. Mailboxes are the size of the user's mailbox plus their online archives plus deleted items held for backup.
 
 - Deleted content in user’s Recycle Bin and second-stage Recycle Bin (also known as Site Collection Recycle Bin).
 
 > [!NOTE]
-> Restore points or size of restores will not be charged. Although Azure is being used to process the payments, there are no additional Azure API or storage costs beyond the Microsoft 365 Backup usage charges mentioned above.
+> Restore points or size of restores will not be charged. Although Azure is being used to process the payments, there are no additional Azure API or storage costs beyond the Microsoft 365 Backup usage charges previously mentioned.
 
-As an example, if you have a site under protection that is currently 1 GB for the first month, you'll be charged 1 GB of Backup usage. If you delete content in that site such that it's now only 0.5 GB, your next monthly bill will still be for 1 GB since the backup tool is retaining that deleted content for a year. After a year when the backup of that deleted content expires, the 0.5 GB being retained for backup purposes will no longer be charged for Backup.
+As an example, if you have a site under protection that is currently 1 GB for the first month, you are charged 1 GB of Backup usage. If you delete content in that site such that it's now only 0.5 GB, your next monthly bill will still be for 1 GB since the backup tool is retaining that deleted content for a year. After a year when the backup of that deleted content expires, the 0.5 GB being retained for backup purposes will no longer be charged for backup.
 
 > [!NOTE]
-> These prices are subject to change when the product becomes generally available. A partner application integrated with Microsoft 365 Backup storage might charge a different rate for their service.
-
-<!---<Include charge model video >--->
+> A partner application integrated with Microsoft 365 Backup storage might charge a different rate for their service.
 
 ## Pricing calculator
 
-The Microsoft 365 Backup pricing calculator is a tool that helps you estimate the amount of backup storage and the costs that you'll incur to protect and back up your Microsoft 365 data.
+The Microsoft 365 Backup pricing calculator is a tool that helps you estimate the amount of backup storage and the costs that you incur to protect and back up your Microsoft 365 data.
 
 > [!NOTE]
 > The tool is not intended to provide an exact prediction of your backup consumption, but rather to give you an estimate based on your current usage reports that are forecasted for the next 24 months based on historical trends.
@@ -62,21 +57,27 @@ The Microsoft 365 Backup pricing calculator, when calculating the storage requir
 
 ### Using the pricing calculator
 
-To use the Microsoft 365 Backup pricing calculator, you'll need to perform the following steps. Information about how to collect data from each of these steps is detailed later in this article.
+To use the Microsoft 365 Backup pricing calculator, you need to perform the following steps. Information about how to collect data from each of these steps is detailed later in this article.
 
 1. Download the latest version of the [Microsoft 365 Backup pricing calculator tool](https://aka.ms/M365BackupCalculator).
 
-2. Review your [Microsoft 365 usage reports](https://admin.microsoft.com/Adminportal/Home#/reportsUsage) to get historical information about your current usage. Heuristics from the usage reports will be used to populate the inputs (orange boxes) in the pricing calculator tool.
+2. Review your [Microsoft 365 usage reports](https://admin.microsoft.com/Adminportal/Home#/reportsUsage) to get historical information about your current usage. Heuristics from the usage reports will be used to populate the inputs (orange boxes) in the pricing calculator tool. Content in the OneDrive and SharePoint recycle bins and data in a mailbox's online archives won't be reflected in these reports, but do affect the backup costs as previously described.
 
 3. Open the Excel spreadsheet and select the **High-Level Estimates** worksheet. This sheet produces the simplest default model based on linear data growth assumptions.
 
 4. Enter the information recorded from the usage reports into the **High-Level Estimates** worksheet.
 
-5. If you know your tenant will have non-organic or non-linear usage changes, then for each of the service types, optionally override the estimated number of protection units or storage for a month in any or all of the service-specific tabs in the pricing calculator tool.
+5. If you know your tenant has non-organic or non-linear usage changes, then for each of the service types, optionally override the estimated number of protection units or storage for a month in any or all of the service-specific tabs in the pricing calculator tool.
 
-6. An estimate of the Microsoft 365 Backup costs for the next 24 months will then be generated.
+6. An estimate of the Microsoft 365 Backup costs for the next 24 months, not including data currently in your OneDrive and SharePoint recycle bins or mailbox online archive folders, will then be generated.
 
-### Leverage the Microsoft 365 usage reports as source data for the pricing calculator
+    The size of your recycle bins can be roughly estimated as the amount of data you delete every three months in OneDrive and SharePoint. Your Mailbox online archives can be estimated by running the following Exchange Online PowerShell command:
+    
+    ```powershell
+    Get-MailboxStatistics -Identity "user@example.com" -Archive | Select DisplayName, TotalItemSize, ItemCount
+    ``` 
+
+### Use the Microsoft 365 usage reports as source data for the pricing calculator
 
 This section describes how to use your [Microsoft 365 admin center usage reports](https://admin.microsoft.com/Adminportal/Home#/reportsUsage) to populate the Microsoft 365 Backup pricing calculator.
 
@@ -140,7 +141,7 @@ Number of total and active user mailboxes at the start of the period and at the 
 
 ![Screenshot showing the number of total and active user mailboxes for Exchange.](../media/m365-backup/backup-exchange-mailbox-total.png)
 
-This example does not show archive mailboxes, but any archive mailbox size will count towards your backup storage.
+This example doesn't show archive mailboxes, but any archive mailbox size count towards your backup storage.
 
 ##### Storage
 
@@ -150,7 +151,7 @@ Amount of storage used at the start of the period and at the end of the period. 
 
 ### Pricing calculator notes
 
-When using the Microsoft 365 Backup pricing calculator, be aware of the following:
+When using the Microsoft 365 Backup pricing calculator, be aware of the following points:
 
 - In the Microsoft 365 Backup pricing calculator, any Excel spreadsheet cell that is colored orange can have data entered.
 
@@ -158,9 +159,9 @@ When using the Microsoft 365 Backup pricing calculator, be aware of the followin
 
 - The estimate is calculated projecting forward from the end of period data. That is, Month 1 is calculated using the end of period data.
 
-- The **Variables** worksheet displays the heuristics such as average growth and usage patterns of the service types which are used to calculate the estimate.
+- The **Variables** worksheet displays the heuristics such as average growth and usage patterns of the service types that are used to calculate the estimate.
 
-- The **Price per GB** field on the **Variables** worksheet can be modified if required. For the Microsoft 365 Backup solution, we recommend that you use the default value.
+- The **Price per GB** field on the **Variables** worksheet can be modified if necessary. For the Microsoft 365 Backup solution, we recommend that you use the default value.
 
 - The OneDrive accounts, SharePoint sites, and Exchange mailboxes worksheets provide more detail on the estimated costs including the ability to override the estimated number of protection units or storage for a month.
 

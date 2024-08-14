@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: amcdonnell
-ms.date: 11/15/2023
+ms.date: 07/18/2024
 audience: enabler
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -20,7 +20,7 @@ description: Learn about SharePoint eSignature and how to send electronic signat
 # Overview of SharePoint eSignature
 
 > [!NOTE]
-> Through June 2024, you can try out eSignature and other selected Syntex services at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For information and limitations, see [Try out Microsoft Syntex and explore its services](promo-syntex.md).
+> Through June 2025, you can try out eSignature by sending up to five requests at no cost if you have [pay-as-you-go billing](syntex-azure-billing.md) set up. For information and limitations, see [Try out Microsoft Syntex and explore its services](promo-syntex.md).
 
 SharePoint eSignature simplifies the process of signing and sharing documents, while providing the security and compliance of Microsoft 365.
 
@@ -28,17 +28,25 @@ With SharePoint eSignature, you can quickly and securely send documents for sign
 
 ![Diagram showing the eSignature process.](../media/content-understanding/esignature-overview-flow.png)
 
+## Regional availability
+
+SharePoint eSignature is currently available in the US. Beginning August 2024, it will be rolling out to the UK and Canada with EU availability by September 2024. It will be available in Australia and Asia-Pacific by the end of 2024, and globally in 2025.
+<!---
+Beginning September 2024, SharePoint eSignature will be rolling out to the UK, Canada, and the following European countries/regions: Austria, Belgium, Bulgaria, Croatia, Cyprus, Czechia, Denmark, Estonia, Finland, Greece, Hungary, Ireland, Latvia, Lithuania, Luxembourg, Malta, Poland, Portugal, Romania, Slovakia, Slovenia, and Sweden.
+
+SharePoint eSignature will be available in the remaining European countries (France, Germany, Italy, the Netherlands, and Spain), as well as Australia and Asia-Pacific, by the end of 2024.
+
+SharePoint eSignature will be available worldwide by the end of 2025.
+--->
 ## Before you begin
 
-## Legal considerations
+### Legal considerations
 
-SharePoint eSignature uses simple electronic signatures. Determine whether this is appropriate for your needs and then read the [SharePoint eSignature terms of service](/legal/microsoft-365/esignature-terms-of-service).
-
+SharePoint eSignature uses simple electronic signatures as defined under applicable law including, but not limited, to the Regulation (EU) No 910/2014 (the eIDAS Regulation). Determine whether this is appropriate for your needs and then read the [SharePoint eSignature terms of service](/legal/microsoft-365/esignature-terms-of-service).
 
 ### Licensing
 
 Before you can use SharePoint eSignature, you must first link your Azure subscription in [Syntex pay-as-you-go](syntex-azure-billing.md). SharePoint eSignature is billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md). Before you can enable SharePoint eSignature, an admin must [set up SharePoint eSignature](esignature-setup.md) in the Microsoft 365 admin center.
-
 
 ### External sharing
 
@@ -52,11 +60,9 @@ The providers facilitate the signing process and send out all relevant notificat
 
 ## Release notes
 
-- Currently, SharePoint eSignature is rolling out to the US market. The feature rolls out to other regions later in 2024.
-
 - SharePoint eSignature is available for only PDF documents at this time.
-
-- You'll be able to track your SharePoint eSignature requests using the Approvals app in Microsoft Teams later in 2024.
+- Tracking of SharePoint eSignature requests through the Approvals app in Microsoft Teams is now available.
+- Support for additional electronic signature providers will begin later in Summer 2024 with Adobe Acrobat Sign and Docusign. In the future, there will be potential integration with other providers.
 
 <br>
 

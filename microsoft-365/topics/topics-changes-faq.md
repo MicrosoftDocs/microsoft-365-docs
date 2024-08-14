@@ -1,7 +1,7 @@
 ---
 ms.date: 02/20/2024
 title: Frequently asked questions about changes coming to Topics
-ms.author: cjtan
+ms.author: daisyfeller
 author: daisyfell
 manager: elizapo
 ms.reviewer: daisyfeller

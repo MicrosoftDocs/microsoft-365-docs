@@ -5,9 +5,9 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: sharonchoi
-ms.date: 5/13/2024
+ms.date: 6/24/2024
 audience: Admin
-ms.topic: article
+ms.topic: whats-new
 ms.service: microsoft-365-lighthouse
 ms.localizationpriority: medium
 ms.collection:
@@ -32,6 +32,25 @@ We're continuously adding new features to [Microsoft 365 Lighthouse](m365-lighth
 >
 > To see which new features are currently available in your partner tenant, go to the **Home** page of Microsoft 365 Lighthouse, and then either select the **What's new** link in the upper-right corner of the page or select **What's new** on the **What's new & learning resources** card.
 
+## June 2024
+
+### Access key information from enhanced tenant details page
+
+We're thrilled to announce a major upgrade to the tenant details page that lets you access key information related to your customer tenants from a single location. You no longer need to view multiple pages to get basic information. Our revamped **Customer information** section provides a centralized place for tracking key customer data and notes to help you stay proactive and optimize resources.
+
+Wondering how much storage your customer tenant users are consuming? You can now monitor mailbox storage usage right from the tenant details page. Want to easily monitor the Microsoft subscriptions you've sold to customers? See subscription details, renewal dates, and any associated services&mdash;all in one place.
+
+Plus, in the coming months we'll roll out even more enhancements:
+
+- Quick navigation: Jump directly to the details page of any tenant from any page in Lighthouse.
+- Customer-facing report: Get ready for a long-awaited feature—a comprehensive report that you can share directly with your customers.
+- And more...stay tuned.
+ 
+To check out the recent enhancements, in the left navigation pane in Lighthouse, select **Tenants**, and then select any tenant in the list to open the tenant details page. 
+
+[Go to the Tenants page now](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/Tenants.ReactView)
+(Once there, select a tenant to view the enhanced tenant details page.)
+
 ## May 2024
 
 ### Improved tenant details page
@@ -40,7 +59,8 @@ We've improved the tenant details page to provide a more comprehensive view of c
 
 To check out these improvements, in the left navigation pane in Lighthouse, select **Tenants**, and then select any tenant in the list to open the tenant details page and view the **Overview** tab. From there you can also access the new **Action items** tab. 
 
-[Go to the Tenants page now](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/Tenants.ReactView) (once there, select a tenant)
+[Go to the Tenants page now](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/Tenants.ReactView)
+(Once there, select a tenant.)
 
 ## April 2024
 
@@ -566,7 +586,7 @@ You can now view usage data for Microsoft 365 services from within Microsoft 365
 
 These insights can help inform your customer engagements and deliver more value to your customers by empowering you to help them understand which services their users actively use and where there may be opportunities to enhance their security or productivity.
 
-For more information, see [Overview of the Tenants page in Microsoft 365 Lighthouse: Microsoft 365 services usage section](m365-lighthouse-tenants-page-overview.md#microsoft-365-services-usage-section).
+For more information, see [Overview of the Tenants page in Microsoft 365 Lighthouse: Apps and services usage](m365-lighthouse-tenants-page-overview.md#apps-and-services-usage).
 
 <a name='exchange-online-protection-and-microsoft-365-defender-for-office-365-default-baseline-step'></a>
 

@@ -242,7 +242,7 @@ If you've uploaded building data to your Call Quality Dashboard, you can add tho
 
 ### What role is needed to access Network Connectivity in Microsoft 365 Admin Center?
 
-You'll need the Network Administrator or Global Administrator role.
+You'll need the Network Administrator role.
 
 ### What is a Microsoft 365 service front door?
 

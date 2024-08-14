@@ -42,9 +42,9 @@ Refer to endpoint.microsoft.com, Tenant Administration | Tenant Status for exist
 
 - It's necessary for Microsoft to provide customer support, troubleshoot the service, or comply with legal requirements.
 - The customer configures an account to enable such storage of customer data, including by using the following:
-- Features that are designed to operate globally, such as Content Delivery Network (CDN), which provides a global caching service and stores customer data at edge locations around the world.
-
-- If you're using the Remote Help feature, the Helper and Sharer's information might be sent outside of the stated Geo for 48 hours.
+  - Features that are designed to operate globally, such as Content Delivery Network (CDN), which provides a global caching service and stores customer data at edge locations around the world.
+  - If you're using the Remote Help feature, the Helper and Sharer's information might be sent outside of the stated Geo for 48 hours.
+  - If you are using Intune's enrollment and compliance notification features to send emails to end-users, the emails will be processed within the respective country for sovereign cloud customers, in EMEA for customers located in EMEA, and in North America for all other customers.
 - For Microsoft Entra ID: Refer to [Microsoft Entra Data Locations](https://aka.ms/aaddatamap).
 - Preview, beta, or other prerelease services, which typically store customer data in the United States but might store it globally. Regardless, Microsoft doesn't control or limit the Geo from which customers or their end users might access customer data. Similarly, where customer data in other services is subsequently integrated into Intune, the originating customer data will continue to be stored subject to the other service's own Geo commitments (if any); only the copy of the customer data integrated into Intune will be stored in the stated Geo for Intune.
 
@@ -70,7 +70,7 @@ You can find this information from the "?" option in the Stream UI, if you have 
 
 ## Viva Glint
 
-The data region for Viva Glint is determined by the default geography of the tenant, not individual users, and is stored in US or EU data centers based on central tenant location.
+The data region for Viva Glint is determined by the default geography of the tenant, not individual users, and is stored in US or EU data centers based on central tenant location. If the central tenant location is *outside* the US or EU, the data for Viva Glint is stored in the US data center.
 
 ## Viva Goals
 
@@ -96,6 +96,8 @@ Customers based in EU and UK who signed up for Viva Goals prior to December 5, 2
 ## Viva Insights – Advanced, Mgr, Leader
 
 See the [Static data location information for select workloads](#static-data-location-information-for-select-workloads) section. The data region for Manager/Leader and Advanced is determined by the _Default Geography_ of the _tenant_, not individual users.
+
+Starting June 2024, Viva Insights (Advanced, Manager, Leader) customer data for new tenants in Australia will be provisioned in data centers located in Australia.
 
 ## Viva Insights – Personal
 
@@ -140,7 +142,7 @@ Refer to [Data Residency - Viva Engage | Microsoft Learn](/viva/engage/manage-se
 | AR | Argentina | AMER<sup>3</sup>| AMER<sup>3</sup>| AMER<sup>3</sup>|
 | AM | Armenia | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | AW | Aruba | AMER<sup>3</sup>| AMER<sup>3</sup>| AMER<sup>3</sup>|
-| AU | Australia | APC<sup>2</sup>| AUS<sup>4</sup>| AUS<sup>4</sup>|
+| AU | Australia | AUS<sup>4</sup>| AUS<sup>4</sup>| AUS<sup>4</sup>|
 | AT | Austria | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | AZ | Azerbaijan | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | BS | Bahamas | AMER<sup>3</sup>| AMER<sup>3</sup>| AMER<sup>3</sup>|

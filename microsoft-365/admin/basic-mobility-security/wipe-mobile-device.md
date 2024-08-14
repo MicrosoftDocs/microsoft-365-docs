@@ -46,7 +46,7 @@ Mobile devices can store sensitive organizational information and provide access
 
 ## Wipe a mobile device
 
-1. Sign in to the Microsoft 365 admin center, and go to the [Mobile Device Management page](https://portal.office.com/adminportal/home?#/MifoDevices).
+1. Sign in to the Microsoft 365 admin center, and go to the [Active devices](https://admin.microsoft.com/Adminportal/Home?#/IntuneDevices/?isMifo=true) page.
 
 1. Select **Manage devices**.
 
