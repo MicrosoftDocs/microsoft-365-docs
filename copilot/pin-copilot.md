@@ -40,7 +40,8 @@ Global administrators can access this setting in the Microsoft 365 admin center 
 
 ## Pinning options
 
-1. **Default setting**: By default, Microsoft Copilot is not pinned. Users receive a prompt asking if they want to pin Microsoft Copilot.
+By default, Microsoft Copilot is not pinned, and users receive a prompt asking if they want to pin Microsoft Copilot. As an admin, there are two options for pinning:
+
 1. **Pin Microsoft Copilot (recommended by Microsoft)**: Microsoft Copilot is automatically pinned for all users. Users will not be prompted.
 1. **Do not pin Microsoft Copilot**: Microsoft Copilot is not automatically pinned, and users will not receive automatic prompts to pin.
 
