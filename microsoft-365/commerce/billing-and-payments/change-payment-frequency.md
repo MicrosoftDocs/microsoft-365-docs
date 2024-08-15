@@ -37,7 +37,7 @@ When you buy a Microsoft 365 for business subscription, you select a billing fre
 - [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
 - You must have a Microsoft Online Services Agreement (MOSA) billing account type and be a Global Administrator to do the task in this article.
 
-[!INCLUDE [ga-roles-limitation](../../includes/ga-roles-limitation.md)]
+    [!INCLUDE [ga-roles-limitation](../../includes/ga-roles-limitation.md)]
 
 - If you have a Microsoft Customer Agreement (MCA) billing account type, you can only change the billing frequency when you buy, upgrade, or renew a subscription.
 
