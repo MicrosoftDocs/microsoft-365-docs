@@ -29,6 +29,8 @@
           href: microsoft-365-copilot-page.md
         - name: Data, privacy, and security for web queries in Copilot for Microsoft 365
           href: manage-public-web-access.md
+        - name: Pin Microsoft Copilot to the navigation bar
+          href: pin-copilot.md
         - name: Manage Copilot for Microsoft Teams meetings and events
           href: /MicrosoftTeams/copilot-teams-transcription
         - name: Connect to the Microsoft Copilot Dashboard
