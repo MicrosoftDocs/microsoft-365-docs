@@ -36,7 +36,7 @@ You can work with Microsoft-certified solution providers (partners) to buy and m
 
 ## Before you begin
 
-You must be either at least a Billing Administrator to do these steps. For more information, see [About admin roles](../admin/add-users/about-admin-roles.md).
+You must be at least a Billing Administrator to do these steps. For more information, see [About admin roles](../admin/add-users/about-admin-roles.md).
 
 ## What can a partner do for my organization or school?
 

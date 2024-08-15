@@ -36,7 +36,7 @@ You might have access to multiple billing accounts. For example, you can have on
 ## Before you begin
 
 - [Determine what type of billing account you have](#view-my-billing-accounts).
-- If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a billing account reader to do the tasks in this article. For more information, see [What are billing account roles?](#what-are-billing-account-roles)
+- If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a Billing account reader to do the tasks in this article. For more information, see [What are billing account roles?](#what-are-billing-account-roles)
 - If you have a Microsoft Online Subscription Agreement (MOSA) billing account type, you must be at least a Billing Administrator to do the tasks in this article. For more information, see [About admin roles](../admin/add-users/about-admin-roles.md).
 
 ## What are the types of billing accounts?

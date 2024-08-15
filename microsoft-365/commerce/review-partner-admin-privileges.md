@@ -29,7 +29,7 @@ ms.date: 11/16/2023
 
 If you have a Microsoft-certified cloud solution provider (reseller partner), we recommend that you conduct a quarterly review of the delegated administrative privileges (DAP) assigned to them. Make sure that your organization wants this partner to have access to your organization's data and make purchases on your behalf.
 
-> [!IMPORTANT]
+> [!CAUTION]
 > Giving DAP, which include Global Administrator permissions, to any partner presents a security risk. We recommend that you limit the number of Global Administrators as much as possible.
 
 After you accept a DAP agreement from a reseller partner, they can assign the Global Administrator role for your organization to their employees. The Global Administrator role gives the partner's employees access to your employees' personal data and other sensitive information. It also gives them permission to take the following tenant-wide actions:

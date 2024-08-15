@@ -38,14 +38,12 @@ ms.date: 10/20/2023
 
 Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
-You can assign or unassign licenses for users in the Microsoft 365 admin center on either the **Active users** page, or on the **Licenses** page. The method you use depends on whether you want to assign or unassign licenses for specific users, or assign or unassign users for a specific product.
+You can assign or unassign licenses for users in the Microsoft 365 admin center on either the **Active users** page, or on the **Licenses** page. The method you use depends on whether you want to assign or unassign licenses for specific users, or assign or unassign users for a specific product. You can also [add a user and assign a license at the same time](../add-users/add-users.md).
 
 > [!NOTE]
 >
 > - As an admin, you can't assign or unassign licenses for a self-service purchase subscription bought by a user in your organization. You can [take over a purchase or trial subscription](../../commerce/subscriptions/manage-self-service-purchases-admins.md#take-over-a-self-service-purchase-or-trial-subscription), and then assign or unassign licenses.
 > - For some subscriptions, you can only cancel during a limited window of time after you buy or renew your subscription. If the cancellation window has passed, turn off recurring billing to cancel the subscription at the end of its term.
-
-[Learn how to add a user and assign a license at the same time](../add-users/add-users.md).
 
 > [!TIP]
 > If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
