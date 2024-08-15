@@ -57,32 +57,6 @@ landingContent:
           - text: Zero trust illustrations
             url: /security/zero-trust/zero-trust-tech-illus#zero-trust-for-microsoft-365-copilot#zero-trust-for-microsoft-copilot-for-microsoft-365
 
-  # Card
-  - title: Extend and build
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: How to extend Microsoft 365 Copilot
-            url: /microsoft-365-copilot/extensibility/
-      - linkListType: training
-        links:
-          - text: Extend Microsoft 365 Copilot learning path
-            url: /training/paths/copilot-m365-extensibility/
-
-  # Card
-  - title: Manage Copilot for Microsoft 365
-    linkLists:
-    - linkListType: how-to-guide
-      links:
-        - text: Manage settings on the Copilot page in the Microsoft 365 admin center
-          url: microsoft-365-copilot-page.md
-        - text: Viva Insights Copilot Dashboard
-          url: /viva/insights/org-team-insights/copilot-dashboard?bc=%2fmicrosoft-365%2fcopilot%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fcopilot%2ftoc.json
-        - text: Microsoft 365 Copilot readiness report
-          url: /microsoft-365/admin/activity-reports/microsoft-365-copilot-readiness?bc=%2fmicrosoft-365%2fcopilot%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fcopilot%2ftoc.json
-        - text: Microsoft 365 Copilot usage report
-          url: /microsoft-365/admin/activity-reports/microsoft-365-copilot-usage?bc=%2fmicrosoft-365%2fcopilot%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fcopilot%2ftoc.json
-
   # Card 
   - title: Training and adoption
     linkLists:
@@ -99,7 +73,21 @@ landingContent:
         - text: Microsoft 365 Copilot adoption and enablement
           url: https://adoption.microsoft.com/en-us/copilot/
    
-            
+  # Card
+  - title: Manage Copilot for Microsoft 365
+    linkLists:
+    - linkListType: how-to-guide
+      links:
+        - text: Manage settings on the Copilot page in the Microsoft 365 admin center
+          url: microsoft-365-copilot-page.md
+        - text: Viva Insights Copilot Dashboard
+          url: /viva/insights/org-team-insights/copilot-dashboard?bc=%2fmicrosoft-365%2fcopilot%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fcopilot%2ftoc.json
+        - text: Microsoft 365 Copilot readiness report
+          url: /microsoft-365/admin/activity-reports/microsoft-365-copilot-readiness?bc=%2fmicrosoft-365%2fcopilot%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fcopilot%2ftoc.json
+        - text: Microsoft 365 Copilot usage report
+          url: /microsoft-365/admin/activity-reports/microsoft-365-copilot-usage?bc=%2fmicrosoft-365%2fcopilot%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fcopilot%2ftoc.json
+
+           
   # Card 
   - title: Copilot end-user experiences
     linkLists:
@@ -117,3 +105,16 @@ landingContent:
           url: https://copilot.cloud.microsoft/copilot-teams
         - text: Viva
           url: https://support.microsoft.com/topic/copilot-in-viva-help-learning-e7602d1c-133d-4d69-abc4-1f41039b5e6e?ocid=CopilotLab_SMC_Viva
+
+  # Card
+  - title: Extend and build
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: How to extend Microsoft 365 Copilot
+            url: /microsoft-365-copilot/extensibility/
+      - linkListType: training
+        links:
+          - text: Extend Microsoft 365 Copilot learning path
+            url: /training/paths/copilot-m365-extensibility/
+
