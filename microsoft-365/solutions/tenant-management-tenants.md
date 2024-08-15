@@ -7,7 +7,6 @@ ms.date: 08/15/2024
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-ms.subservice: multi-tenant
 ms.localizationpriority: medium
 ms.collection: 
 - highpri
