@@ -48,7 +48,7 @@ Some features in Copilot for Microsoft 365, such as file restore and OneDrive ma
 
 ### Microsoft Outlook
 
-Copilot for Microsoft 365 works with classic Outlook and new Outlook (for [Windows](https://support.microsoft.com/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627) and [Mac](https://support.microsoft.com/office/the-new-outlook-for-mac-6283be54-e74d-434e-babb-b70cefc77439)), which are currently in preview. Users can switch to the new Outlook by selecting **Try the new Outlook** in their existing Outlook client.
+Copilot for Microsoft 365 works with classic Outlook and new Outlook (for [Windows](https://support.microsoft.com/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627) and [Mac](https://support.microsoft.com/office/the-new-outlook-for-mac-6283be54-e74d-434e-babb-b70cefc77439)). Users can switch to the new Outlook by selecting **Try the new Outlook** in their existing Outlook client.
 
 > [!IMPORTANT]
 > Copilot for Microsoft 365 is only supported on primary mailboxes that are hosted on Exchange Online. It is not available on a user’s archive mailbox, group mailboxes, or shared and delegate mailboxes that they have access to.
