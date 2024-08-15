@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 08/13/2024
+ms.date: 08/15/2024
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-copilot
@@ -59,13 +59,13 @@ Users can personalize their navigation bar by choosing to pin or unpin Microsoft
 
 :::image type="content" source="media/pin-and-continue.png" alt-text="Screenshot showing the prompt for users to pin Copilot." lightbox="media/pin-and-continue.png":::
 
-Users can adjust the pinning settings within their application preferences, and these choices are specific to each Microsoft 365 app, Microsoft 365 website ([microsoft365.com](https://www.office.com/) and [m365.cloud.microsoft](https://m365.cloud.microsoft/)), Microsoft 365 Windows app, and Microsoft 365 mobile.
+Users can adjust the pinning settings within their application preferences, and these choices are specific to Teams, Outlook, the Microsoft 365 web app ([microsoft365.com](https://www.office.com/) and [m365.cloud.microsoft](https://m365.cloud.microsoft/)), Microsoft 365 desktop app, and Microsoft 365 mobile app.  
 
-For example, if admins choose to pin Microsoft Copilot for all users, but an individual user decides to unpin it from Teams or Outlook or microsoft365.com, Microsoft Copilot will no longer appear on the navigation bar for that user.
+For example, if admins choose to pin Microsoft Copilot for all users, but an individual user decides to unpin it from Teams or Outlook or the Microsoft 365 app, Microsoft Copilot will no longer appear on the navigation bar for that user.
 
 ## When Copilot will be pinned in each app
 
-If you choose to pin Microsoft Copilot for all users, it will be pinned in the Microsoft 365 app for Windows and Mobile starting mid-September. Microsoft Copilot will be pinned in Microsoft Teams, Microsoft Outlook, and the Microsoft 365 web app soon after.
+If you choose to pin Microsoft Copilot for all users, it will be pinned in the Microsoft 365 app for desktop, mobile, and web starting mid-September. Microsoft Copilot will be pinned in Microsoft Teams, Microsoft Outlook, and the Microsoft 365 web app soon after.
 
 To learn more about the Microsoft Copilot announcement, see [Frequently asked questions for Microsoft Copilot with enterprise data protection](https://aka.ms/MsftCopilot-BlogFAQ).
 
