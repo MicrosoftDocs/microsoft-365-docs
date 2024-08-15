@@ -25,7 +25,7 @@ description: "Learn how to improve organization use of Microsoft Copilot by pinn
 
 As an administrator, you can encourage your organization to use Microsoft Copilot by pinning Copilot to the navigation bar of Teams, Outlook, and the Microsoft 365 App, including [microsoft365.com](https://www.office.com/), Microsoft 365 desktop app, and the Microsoft 365 mobile app.  
 
-Admin pinning allows you to set Microsoft Copilot to appear on the navigation bar for the applications listed previously.This setting is only applicable for users who are signed in with a Microsoft Entra account for your tenant.
+Admin pinning allows you to set Microsoft Copilot to appear on the navigation bar for the applications listed previously. This setting is only applicable for users who are signed in with a Microsoft Entra account for your tenant.
 
 ## Before you begin
 
@@ -57,7 +57,7 @@ Administrators can change this behavior by selecting an option for pinning Micro
 
 Users can personalize their navigation bar by choosing to pin or unpin Microsoft Copilot. In the selected pinning scenarios described previously, users will see a prompt for pinning Microsoft Copilot to the navigation bar:
 
-:::image type="content" source="media/pin-and-continue.png" alt-text="Screenshot showing the prompt for users to pin Copilot.":::
+:::image type="content" source="media/pin-and-continue.png" alt-text="Screenshot showing the prompt for users to pin Copilot." lightbox="media/pin-and-continue.png":::
 
 Users can adjust the pinning settings within their application preferences, and these choices are specific to each Microsoft 365 app, Microsoft 365 website ([microsoft365.com](https://www.office.com/) and [m365.cloud.microsoft](https://m365.cloud.microsoft/)), Microsoft 365 Windows app, and Microsoft 365 mobile.
 
