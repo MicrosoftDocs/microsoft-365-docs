@@ -63,7 +63,7 @@ Users can adjust the pinning settings within their application preferences, and 
 
 For example, if admins choose to pin Microsoft Copilot for all users, but an individual user decides to unpin it from Teams or Outlook or the Microsoft 365 app, Microsoft Copilot will no longer appear on the navigation bar for that user.
 
-## When Copilot will be pinned in each app
+## When Microsoft Copilot will be pinned in each app
 
 If you choose to pin Microsoft Copilot for all users, it will be pinned in the Microsoft 365 app for desktop, mobile, and web starting mid-September. Microsoft Copilot will be pinned in Microsoft Teams, Microsoft Outlook, and the Microsoft 365 web app soon after.
 
