@@ -64,7 +64,7 @@ Now that you have Microsoft 365 set up, you can start to add users, organize the
 
 ### Provision users
 
-Now that you have Microsoft 365 set up, you can start to add users, organize them into groups, and assign licenses. Before you provision frontline users, you should create new administrator accounts or review and update your existing [administrator accounts in Microsoft Entra ID](/azure/active-directory/roles/permissions-reference). [Learn more about what Microsoft Entra admin roles you might need for Microsoft 365](/microsoft-365/admin/add-users/about-admin-roles).
+Before you provision frontline users, you should create new administrator accounts or review and update your existing [administrator accounts in Microsoft Entra ID](/azure/active-directory/roles/permissions-reference). [Learn more about what Microsoft Entra admin roles you might need for Microsoft 365](/microsoft-365/admin/add-users/about-admin-roles).
 
 In this step, you'll create user identities for your frontline workers in Microsoft Entra ID. You can import users in three ways:
 
