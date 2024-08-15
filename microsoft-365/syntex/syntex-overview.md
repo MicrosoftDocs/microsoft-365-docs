@@ -161,7 +161,6 @@ Both structured and freeform models use Microsoft Power Apps AI Builder to creat
 
 [Learn more about translation in Microsoft Syntex.](translation-overview.md)
 
-
 ### SharePoint eSignature
 
 :::row:::
@@ -187,6 +186,12 @@ Both structured and freeform models use Microsoft Power Apps AI Builder to creat
 :::row-end:::
 
 [Learn more about using the OCR service in Microsoft Syntex.](ocr-overview.md)
+
+### Autofill columns
+
+Autofill columns automatically extract, summarize, or generate content from files uploaded to a SharePoint document library. By using large language models through generative AI, autofill columns can save metadata automatically, streamlining the process of managing files and their associated information.
+
+[Learn more about using autofill columns in Microsoft Syntex.](autofill-overview.md)
 
 ### Microsoft 365 Archive
 
