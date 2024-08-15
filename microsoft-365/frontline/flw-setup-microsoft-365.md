@@ -24,7 +24,7 @@ ms.date: 04/04/2023
 
 To set up Microsoft 365 for frontline workers, follow this overall process:
 
-1. **[Identify your scenarios](#step-1-identify-your-scenarios)**: Which scenarios do you want to implement for your frontline workers? After you have determined which scenarios you want, use the table below to identify the required apps and services for each scenario that you want to implement.
+1. **[Identify your scenarios](#step-1-identify-your-scenarios)**: Which scenarios do you want to implement for your frontline workers? After you determine which scenarios you want, use the following table to identify the required apps and services for each scenario that you want to implement.
 1. **[Set up your environment and core Microsoft 365](#step-2-set-up-your-environment-and-core-microsoft-365)**: Follow the Setup Guides in the Microsoft 365 admin center to set up Microsoft 365. Keep reading to learn how to access these guides.
 1. **[Provision users, configure groups, and assign licenses](#step-3-provision-users-configure-groups-and-assign-licenses)**: Learn how to provision users and create groups in Microsoft Entra ID, then assign frontline licenses to your users.
 1. **[Configure device enrollment](#step-4-configure-device-enrollment)**: Set up shared and personal devices to work with Microsoft 365 and Microsoft Teams and to allow your frontline workers to communicate more securely within your organization.
@@ -44,12 +44,12 @@ The following table lists the scenarios for your frontline workers. You can read
 | [Corporate communications](flw-corp-comms.md) | [Microsoft Teams](#set-up-microsoft-teams) <br>[SharePoint](#set-up-sites-with-sharepoint-in-microsoft-365) <br>[Viva Connections](#set-up-viva-connections) <br>[Viva Engage](#set-up-your-organizations-social-network-with-viva-engage) |
 | [Virtual Appointments](virtual-appointments.md) | [Microsoft Teams](#set-up-microsoft-teams) |
 | [Engage your employees and focus on employee wellbeing](flw-wellbeing-engagement.md)| [Microsoft Teams](#set-up-microsoft-teams) <br>[SharePoint](#set-up-sites-with-sharepoint-in-microsoft-365) <br>[Viva Connections](#set-up-viva-connections) <br>[Viva Engage](#set-up-your-organizations-social-network-with-viva-engage) |
-| [Schedule your team with Shifts](shifts-for-teams-landing-page.md) | [Microsoft Teams](#set-up-microsoft-teams) |
+| [Manage your team schedules with Shifts](shifts-for-teams-landing-page.md) | [Microsoft Teams](#set-up-microsoft-teams) |
 | [Onboard new employees](/sharepoint/onboard-employees)| [Microsoft Teams](#set-up-microsoft-teams) <br>[SharePoint](#set-up-sites-with-sharepoint-in-microsoft-365) <br>[Viva Connections](#set-up-viva-connections) <br>[Viva Learning](#set-up-viva-learning)|
 | [Ongoing training](flw-onboarding-training.md) | [Microsoft Teams](#set-up-microsoft-teams) <br>[Viva Learning](#set-up-viva-learning) |
 | [Simplify business processes](simplify-business-processes.md) | [Microsoft Teams](#set-up-microsoft-teams) <br>[Power Apps, Power Automate, and Power BI](#set-up-power-apps-power-automate-and-power-bi) |
 
-Some services are only included with F3 licenses, such as email and the Power Platform. Check out [Understand frontline worker user types and licensing](flw-licensing-options.md) to determine the type of licenses you'll need for your users.
+Some services are only included with F3 licenses, such as email and the Power Platform. Check out [Understand frontline worker user types and licensing](flw-licensing-options.md) to determine the type of licenses you need for your users.
 
 ## Step 2: Set up your environment and core Microsoft 365
 
@@ -81,7 +81,7 @@ Use this table to validate your HR-driven user provisioning.
 |Test scenario |Expected results |
 |--------------|-----------------|
 |New employee is created in the cloud HR app |The user account is provisioned in Microsoft Entra ID and can access assigned cloud resources. <br> If Microsoft Entra Connect Sync is configured, the user account also gets created in Active Directory. <br> The user can sign into Active Directory domain apps and perform their desired actions.|
-|User is terminated in the cloud HR app |The user account is disabled in Microsoft Entra ID, and, if applicable, Active Directory. <br>The user can’t sign into cloud or on-premises applications and resources assigned to them. |
+|User is terminated in the cloud HR app |The user account is disabled in Microsoft Entra ID, and, if applicable, Active Directory. <br>The user can’t sign into cloud or on-premises apps and resources assigned to them. |
 |Supervisor is updated in the cloud HR app |User remains active with the new mapping. |
 |HR rehires an employee into a new role. |The results depend on how the cloud HR app is configured to generate employee IDs. <br>If the old employee ID is reused for a rehire, the connector enables the existing Active Directory account for the user. <br>If the rehire gets a new employee ID, the connector creates a new Active Directory account for the user. |
 |HR converts the employee to a contract worker or vice-versa |A new Active Directory account is created for the new persona and the old account is disabled on the effective date of the conversion. |
@@ -92,12 +92,12 @@ Use this table to validate your HR-driven user provisioning.
 
 ### Configure Microsoft Entra groups
 
-Configuring groups in Azure  AD allows you to create and manage policies and license assignments at scale.
+Configuring groups in Microsoft Entra allows you to create and manage policies and license assignments at scale.
 
-- **Assign a unique attribute to frontline workers:** The ability to identify all frontline workers is useful when applying groups to the frontline workforce or for validating that integrations between Microsoft Entra ID and HR systems are functioning properly. Organizations frequently use the Job ID attribute for this purpose. Depending on your organization's structure, you may also need [custom security attributes](/azure/active-directory/fundamentals/custom-security-attributes-overview) or [directory extension attributes](/azure/active-directory/develop/active-directory-schema-extensions).
+- **Assign a unique attribute to frontline workers:** The ability to identify all frontline workers is useful when applying groups to the frontline workforce or for validating that integrations between Microsoft Entra ID and HR systems are functioning properly. Organizations frequently use the Job ID attribute for this purpose. Depending on your organization's structure, you might also need [custom security attributes](/azure/active-directory/fundamentals/custom-security-attributes-overview) or [directory extension attributes](/azure/active-directory/develop/active-directory-schema-extensions).
 - **Create Microsoft Entra groups and assign frontline users:** With Microsoft Entra groups, you can grant access and permissions to a group of users instead of for each individual user. Groups are used to manage users that all need the same access and permissions to resources, such as potentially restricted apps and services. Instead of adding special permissions to individual users, you create a group that applies the special permissions to every member of that group.
 
-The table below includes recommendations for applying groups in frontline implementations. For more information on group types, membership types, and assignment, see the [Microsoft Entra documentation for groups and membership](/azure/active-directory/fundamentals/concept-learn-about-groups?context=%2Fazure%2Factive-directory%2Fenterprise-users%2Fcontext%2Fugr-context) and [managing groups](/azure/active-directory/fundamentals/how-to-manage-groups). For more information on security group limits and other Microsoft Entra service limits, see [Microsoft Entra service limits and restrictions](/azure/active-directory/enterprise-users/directory-service-limits-restrictions).
+The following table includes recommendations for applying groups in frontline implementations. For more information on group types, membership types, and assignment, see the [Microsoft Entra documentation for groups and membership](/azure/active-directory/fundamentals/concept-learn-about-groups?context=%2Fazure%2Factive-directory%2Fenterprise-users%2Fcontext%2Fugr-context) and [managing groups](/azure/active-directory/fundamentals/how-to-manage-groups). For more information on security group limits and other Microsoft Entra service limits, see [Microsoft Entra service limits and restrictions](/azure/active-directory/enterprise-users/directory-service-limits-restrictions).
 
 |Use case |Group type |
 |---------|-----------|
@@ -115,7 +115,7 @@ You can add licenses to individual users or to groups of users in Microsoft Entr
 
 [Learn more about group-based licensing](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) and [assigning licenses to groups](/azure/active-directory/enterprise-users/licensing-groups-assign).
 
-You may need to [unassign licenses](../admin/manage/assign-licenses-to-users.md) if you're changing some users from E to F licenses. [Learn more about how to switch specific users from E to F licenses](switch-from-enterprise-to-frontline.md#switch-users-to-a-microsoft-365-f-plan).
+You might need to [unassign licenses](../admin/manage/assign-licenses-to-users.md) if you're changing some users from E to F licenses. [Learn more about how to switch specific users from E to F licenses](switch-from-enterprise-to-frontline.md#switch-users-to-a-microsoft-365-f-plan).
 
 ## Step 4: Configure device enrollment
 
@@ -144,7 +144,7 @@ Zero-touch provisioning of shared device mode isn’t currently supported by thi
 
 [Learn more about configuration with VMware Workspace ONE](https://docs.vmware.com/en/VMware-Workspace-ONE-Access/21.08/ws1_access_connector_install/GUID-271C47F6-856C-40F0-97AB-A8AD95025F9C.html) and [SOTI](https://www.soti.net/mc/help/v15.0/en/console/configurations/advancedconfigurations/shareddevice/shareddevice.html).
 
-If you choose to manually configure devices in shared device mode, you’ll need to take more steps to re-enroll Android devices in shared device mode when third-party MDM support is available by uninstalling and reinstalling Authenticator from the device.
+If you choose to manually configure devices in shared device mode, you need to take more steps to re-enroll Android devices in shared device mode when third-party MDM support is available by uninstalling and reinstalling Authenticator from the device.
 
 To set up shared and personal devices to work with Microsoft 365 and Microsoft Teams and to allow your frontline workers to communicate more securely within your organization, see [Overview of device management for frontline workers](flw-devices.md).
 
@@ -200,13 +200,13 @@ You can use all of these apps within Microsoft Teams. For more information about
 
 ## Step 6: Configure security
 
-After provisioning users, enrolling your devices, and configuring your applications, you’re now ready to create policies to secure your organization’s infrastructure resources.
+After provisioning users, enrolling your devices, and configuring your apps, you’re now ready to create policies to secure your organization’s infrastructure resources.
 
 - **Conditional access:** Plan a [Microsoft Entra Conditional Access deployment](/azure/active-directory/conditional-access/plan-conditional-access).
 - **App protection policies:** [Learn about app management in Microsoft Intune](/mem/intune/apps/app-management).
-- **Multi-factor authentication:** Require [multi-factor authentication for Intune device enrollment](/mem/intune/enrollment/multi-factor-authentication).
+- **Multifactor authentication:** Require [multifactor authentication for Intune device enrollment](/mem/intune/enrollment/multi-factor-authentication).
 
-Once you’re done setting up security policies, it’s important for you to use a test user (non-admin) account to verify the policies work as expected, and to ensure that the end-user experience is right for your frontline workforce’s needs. Some capabilities like multi-factor authentication and app protection policies can add additional steps to device enrollment or sign-on flows, which may not be acceptable for some frontline scenarios.
+Once you’re done setting up security policies, it’s important for you to use a test user (non-admin) account to verify the policies work as expected, and to ensure that the end-user experience is right for your frontline workforce’s needs. Some capabilities like multifactor authentication and app protection policies can add additional steps to device enrollment or sign-in flows, which might not be acceptable for some frontline scenarios.
 
 ## Step 7: Configure apps for your scenario
 
@@ -218,7 +218,7 @@ Follow these best practices to set up Microsoft Teams for your frontline workfor
 
 Use **team templates** in the Teams admin center or by using PowerShell. You can use prebuilt templates or [create your own](/microsoftteams/get-started-with-teams-templates-in-the-admin-console#create-your-own-team-templates). You can also apply template policies to control which templates are available to your users in Teams. Learn more about [how to get started with team templates in the Teams admin center](/microsoftteams/get-started-with-teams-templates-in-the-admin-console) and [how to set up and deploy teams](/microsoft-365/frontline/deploy-teams-at-scale?#set-up-and-deploy-your-teams). A prebuilt frontline template is accessible from the Teams admin center with the template ID "com.microsoft.teams.template.Frontline".
 
-The table below shows Teams applications commonly utilized in frontline solutions. Shifts, Approvals, and Walkie Talkie are present in the Teams mobile client out of the box. You can control which applications are available to all users in the Teams admin center.
+The following table lists Teams apps commonly used in frontline solutions. Shifts, Approvals, and Walkie Talkie are present in the Teams mobile client out of the box. You can control which apps are available to all users in the Teams admin center.
 
 **Scenarios and apps**
 
@@ -226,12 +226,12 @@ The table below shows Teams applications commonly utilized in frontline solution
 | :---- | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 | [Team communication and collaboration](flw-team-collaboration.md) | &#x2705; | &nbsp; | &#x2705; | &#x2705; | &nbsp; | &#x2705; | &#x2705; |
 | [Corporate communications](flw-corp-comms.md) |  &nbsp; |  &nbsp; |  &nbsp; |  &nbsp; |  &nbsp; |  &nbsp; |  &nbsp; |
-| [Virtual Appointments with Microsoft Teams](virtual-appointments.md) |  &nbsp; | &#x2705; |  &nbsp; |  &nbsp; | &#x2705; |  &nbsp;|  &nbsp; |
+| [Virtual Appointments with Teams](virtual-appointments.md) |  &nbsp; | &#x2705; |  &nbsp; |  &nbsp; | &#x2705; |  &nbsp;|  &nbsp; |
 | Wellbeing & engagement |  &nbsp; |  &nbsp; |  &nbsp; | &#x2705; |  &nbsp; |  &nbsp; | &#x2705; |
-| [Schedule your team with Shifts](shifts-for-teams-landing-page.md) |  &nbsp; | &nbsp; | &#x2705; |  &nbsp; | &#x2705; | &#x2705; | &#x2705; |
+| [Manage your team schedules with Shifts](shifts-for-teams-landing-page.md) |  &nbsp; | &nbsp; | &nbsp; |  &nbsp; | &#x2705; | &nbsp; | &nbsp; |
 | [Training: Onboard new employees](/sharepoint/onboard-employees) |  &nbsp; |  &nbsp; | &#x2705; |  &nbsp; |  &nbsp; | &#x2705; | &#x2705; |
 | Ongoing training |  &nbsp; |  &nbsp; | &#x2705; |  &nbsp; |  &nbsp; | &#x2705; | &#x2705; |
 | [Simplify business processes](simplify-business-processes.md) | &#x2705; |  &nbsp; | &#x2705; |  &nbsp; |  &nbsp; | &#x2705; | &#x2705; |
 | Manage sites, stores, and projects | &#x2705; |  &nbsp; | &#x2705; |  &nbsp; | &nbsp; | &#x2705; | &#x2705; |
 
-[Learn more about Microsoft Teams apps](/microsoftteams/deploy-apps-microsoft-teams-landing-page#core-apps).
+[Learn more about Teams apps](/microsoftteams/deploy-apps-microsoft-teams-landing-page#core-apps).
