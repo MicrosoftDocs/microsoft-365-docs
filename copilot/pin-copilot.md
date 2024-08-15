@@ -25,24 +25,24 @@ description: "Learn how to improve organization use of Microsoft Copilot by pinn
 
 As an admin, you can encourage your organization to use Microsoft Copilot by pinning Copilot to the navigation of Teams, Outlook, and the Microsoft 365 App, including [microsoft365.com](https://www.office.com/), Microsoft 365 desktop app, and the Microsoft 365 mobile app.  
 
-Admin pinning allows you to set Microsoft Copilot to appear on the navigation bar for users with Microsoft Copilot access. This setting is only applicable for users who are signed in with a Microsoft Entra ID.
+Admin pinning allows you to set Microsoft Copilot to appear on the navigation bar for users that sign in with a Microsoft Entra account.
 
 ## Before you begin
 
 :::image type="content" source="media/pin-copilot-settings.png" alt-text="Screenshot showing the Pin Copilot setting on the Copilot settings page in the Microsoft 365 admin center." lightbox="media/pin-copilot-settings.png":::
 
-Before you can pin Copilot, you must be authenticated with Microsoft Entra ID.  
+Before you can pin Copilot, you must be authenticated with a Microsoft Entra account.  
 
 Global administrators can access this setting in the Microsoft 365 admin center by navigating to **Copilot** > **Settings**.
 
 > [!NOTE]
-> Admin pinning is only applicable to users who are authenticated with Microsoft Entra ID.
+> Admin pinning is only applicable to users who are authenticated with a Microsoft Entra account.
 
 ## Pinning options
 
 1. **Default setting**: By default, Microsoft Copilot is not pinned. Users receive a prompt asking if they want to pin Microsoft Copilot.
-1. **Automatic pinning (recommended by Microsoft)**: Microsoft Copilot is automatically pinned for all users. Users will not be prompted.
-1. **No automatic prompts to pin**: Microsoft Copilot is not automatically pinned, and users will not receive automatic prompts to pin.
+1. **Pin Microsoft Copilot (recommended by Microsoft)**: Microsoft Copilot is automatically pinned for all users. Users will not be prompted.
+1. **Do not pin Microsoft Copilot**: Microsoft Copilot is not automatically pinned, and users will not receive automatic prompts to pin.
 
 :::image type="content" source="media/pin-copilot-toggle.png" alt-text="Screenshot showing the options to Pin Copilot to the navigation bar.":::
 
