@@ -118,7 +118,7 @@ If you select a specific service incident or a message, the share option will be
   
 ### Can I use this app with multiple accounts or tenants?
 
-Yes, you can setup multiple accounts or organizations.
+Yes, you can set up multiple accounts or organizations.
 
 ### I’m unable to sign in or my app is acting funny. What can I do to troubleshoot or fix the issue?
 
