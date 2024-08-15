@@ -22,6 +22,7 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - admindeeplinkMAC
+- GAUpdates
 search.appverid: MET150
 description: "Learn how to change how often you're billed for your Microsoft 365 for business subscription."
 ms.date: 10/13/2023
@@ -34,11 +35,11 @@ When you buy a Microsoft 365 for business subscription, you select a billing fre
 ## Before you begin
 
 - [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
-- You must have a Microsoft Online Services Agreement (MOSA) billing account type and be a Global admin to do the task in this article.
-- If you have a Microsoft Customer Agreement (MCA) billing account type, you can only change the billing frequency when you buy, upgrade, or renew a subscription.
+- You must have a Microsoft Online Services Agreement (MOSA) billing account type and be a Global Administrator to do the task in this article.
 
-> [!NOTE]
-> If you're the person who signed up for the subscription, you're automatically a Global admin.
+[!INCLUDE [ga-roles-limitation](../../includes/ga-roles-limitation.md)]
+
+- If you have a Microsoft Customer Agreement (MCA) billing account type, you can only change the billing frequency when you buy, upgrade, or renew a subscription.
 
 ## Change your billing frequency
 

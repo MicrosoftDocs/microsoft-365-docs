@@ -21,6 +21,7 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
+- GAUpdates
 search.appverid: MET150
 description: "Learn about Microsoft business billing accounts and how they're used to manage account settings, invoices, payment methods, and purchases."
 ms.date: 07/16/2024
@@ -36,7 +37,7 @@ You might have access to multiple billing accounts. For example, you can have on
 
 - [Determine what type of billing account you have](#view-my-billing-accounts).
 - If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a billing account reader to do the tasks in this article. For more information, see [What are billing account roles?](#what-are-billing-account-roles)
-- If you have a Microsoft Online Subscription Agreement (MOSA) billing account type, you must be a Global or Billing admin to do the tasks in this article. For more information, see [About admin roles](../admin/add-users/about-admin-roles.md).
+- If you have a Microsoft Online Subscription Agreement (MOSA) billing account type, you must be at least a Billing Administrator to do the tasks in this article. For more information, see [About admin roles](../admin/add-users/about-admin-roles.md).
 
 ## What are the types of billing accounts?
 

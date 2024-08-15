@@ -28,6 +28,7 @@ ms.custom:
 - okr_SMB
 - manage_licenses
 - AdminTemplateSet
+- GAUpdates
 search.appverid: MET150
 description: "Learn how to assign or unassign licenses for your users in the Microsoft 365 admin center."
 ms.date: 10/20/2023
@@ -51,7 +52,10 @@ You can assign or unassign licenses for users in the Microsoft 365 admin center 
 
 ## Before you begin
 
-- You must be a Global, License, or User admin to assign licenses. For more information, see [About Microsoft 365 admin roles](../add-users/about-admin-roles.md).
+- You must be at least a License or User Administrator to assign licenses. For more information, see [About Microsoft 365 admin roles](../add-users/about-admin-roles.md).
+
+[!INCLUDE [ga-roles-limitation](../../includes/ga-roles-limitation.md)]
+
 - In addition to the steps described in this article, you can also use the Microsoft Graph PowerShell SDK to [assign Microsoft 365 licenses to user accounts with PowerShell](../../enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell.md) or [remove Microsoft 365 licenses from user accounts with PowerShell](../../enterprise/remove-licenses-from-user-accounts-with-microsoft-365-powershell.md).
 - To use group-based licensing, see [Assign licenses to users by group membership in Microsoft Entra ID](/azure/active-directory/enterprise-users/licensing-groups-assign)
 - Some services, like Sway, are automatically assigned to users, and don't need to be assigned individually.
