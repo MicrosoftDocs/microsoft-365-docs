@@ -64,6 +64,8 @@ landingContent:
         links:
           - text: Set up Microsoft 365 Copilot
             url: microsoft-365-copilot-setup.md
+          - text: Pilot key scenarios (new)
+            url: microsoft-365-copilot-pilot.md
           - text: Setup wizard for Microsoft 365 Copilot
             url: https://setup.cloud.microsoft/copilot-for-microsoft-365/setup-guide
 
