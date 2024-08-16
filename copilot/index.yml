@@ -28,12 +28,18 @@ landingContent:
         links:
           - text: What is Microsoft 365 Copilot?
             url: microsoft-365-copilot-overview.md
+          - text: How does Microsoft 365 Copilot work?
+            url: microsoft-365-copilot-overview.md#how-does-microsoft-copilot-for-microsoft-365-work
       - linkListType: get-started
         links:
+          - text: Assess your environment (English only)
+            url: https://www.microsoft.com/en-us/solutionassessments/safeedbackform
           - text: "Get ready: Prepare your data and environment (new)"
             url: microsoft-365-copilot-get-ready.md
-          - text: Get started with Microsoft 365 Copilot
+          - text: Set up Microsoft 365 Copilot
             url: microsoft-365-copilot-setup.md
+          - text: Setup wizard for Microsoft 365 Copilot
+            url: https://setup.cloud.microsoft/copilot-for-microsoft-365/setup-guide
       - linkListType: video
         links:
           - text: Mechanics Microsoft 365 Copilot playlist
