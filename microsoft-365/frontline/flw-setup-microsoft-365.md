@@ -64,17 +64,17 @@ Now that you have Microsoft 365 set up, you can start to add users, organize the
 
 ### Provision users
 
-Before you provision frontline users, you should create new administrator accounts or review and update your existing [administrator accounts in Microsoft Entra ID](/azure/active-directory/roles/permissions-reference). [Learn more about what Microsoft Entra admin roles you might need for Microsoft 365](/microsoft-365/admin/add-users/about-admin-roles).
+Before you provision frontline users, you should create new administrator accounts or review and update your existing [administrator accounts in Microsoft Entra ID](/entra/identity/role-based-access-control/permissions-reference). [Learn more about what Microsoft Entra admin roles you might need for Microsoft 365](/microsoft-365/admin/add-users/about-admin-roles).
 
 In this step, you'll create user identities for your frontline workers in Microsoft Entra ID. You can import users in three ways:
 
-- **Integrate Microsoft Entra ID with an existing Active Directory instance:** [Microsoft Entra Connect](/azure/active-directory/hybrid/how-to-connect-install-prerequisites) replicates Active Directory user accounts to Microsoft Entra ID, allowing a user to have a single identity capable of accessing both local and cloud-based resources.
+- **Integrate Microsoft Entra ID with an existing Active Directory instance:** [Microsoft Entra Connect](/entra/identity/hybrid/connect/how-to-connect-install-prerequisites) replicates Active Directory user accounts to Microsoft Entra ID, allowing a user to have a single identity capable of accessing both local and cloud-based resources.
 - **Integrate Microsoft Entra ID with a third-party identity solution:** Microsoft Entra ID supports integration with some third-party providers through federation.
     - [Learn how to use Okta for Hybrid Microsoft AAD Join](https://www.okta.com/resources/whitepaper/using-okta-for-hybrid-microsoft-aad-join/).
-    - [Learn how to configure PingFederate with Microsoft Entra Connect](/azure/active-directory/hybrid/how-to-connect-install-custom#configuring-federation-with-pingfederate).
-- **Import users from your organization's HR systems:** [Microsoft Entra user provisioning service](/azure/active-directory/app-provisioning/plan-auto-user-provisioning) automates the creation, maintenance, and removal of user identities based on rules set by your organization.
+    - [Learn how to configure PingFederate with Microsoft Entra Connect](/entra/identity/hybrid/connect/how-to-connect-install-custom#configuring-federation-with-pingfederate).
+- **Import users from your organization's HR systems:** [Microsoft Entra user provisioning service](/entra/identity/app-provisioning/plan-auto-user-provisioning) automates the creation, maintenance, and removal of user identities based on rules set by your organization.
     - **On-premises HR systems:** You can use [Microsoft Identity Manager](/microsoft-identity-manager/microsoft-identity-manager-2016) to provision users from your on-premises HR systems to Active Directory or directly to Microsoft Entra ID.
-    - **Cloud-based HR systems:** Learn how to connect [SAP SuccessFactors](/azure/active-directory/saas-apps/sap-successfactors-inbound-provisioning-tutorial) and [Workday](/azure/active-directory/saas-apps/workday-inbound-tutorial#planning-your-deployment) to Microsoft Entra ID.
+    - **Cloud-based HR systems:** Learn how to connect [SAP SuccessFactors](/entra/identity/saas-apps/sap-successfactors-inbound-provisioning-tutorial) and [Workday](/entra/identity/saas-apps/workday-inbound-tutorial#planning-your-deployment) to Microsoft Entra ID.
 
 Use this table to validate your HR-driven user provisioning.
 
@@ -94,10 +94,10 @@ Use this table to validate your HR-driven user provisioning.
 
 Configuring groups in Microsoft Entra allows you to create and manage policies and license assignments at scale.
 
-- **Assign a unique attribute to frontline workers:** The ability to identify all frontline workers is useful when applying groups to the frontline workforce or for validating that integrations between Microsoft Entra ID and HR systems are functioning properly. Organizations frequently use the Job ID attribute for this purpose. Depending on your organization's structure, you might also need [custom security attributes](/azure/active-directory/fundamentals/custom-security-attributes-overview) or [directory extension attributes](/azure/active-directory/develop/active-directory-schema-extensions).
+- **Assign a unique attribute to frontline workers:** The ability to identify all frontline workers is useful when applying groups to the frontline workforce or for validating that integrations between Microsoft Entra ID and HR systems are functioning properly. Organizations frequently use the Job ID attribute for this purpose. Depending on your organization's structure, you might also need [custom security attributes](/entra/fundamentals/custom-security-attributes-overview) or [directory extension attributes](/entra/identity-platform/schema-extensions).
 - **Create Microsoft Entra groups and assign frontline users:** With Microsoft Entra groups, you can grant access and permissions to a group of users instead of for each individual user. Groups are used to manage users that all need the same access and permissions to resources, such as potentially restricted apps and services. Instead of adding special permissions to individual users, you create a group that applies the special permissions to every member of that group.
 
-The following table includes recommendations for applying groups in frontline implementations. For more information on group types, membership types, and assignment, see the [Microsoft Entra documentation for groups and membership](/azure/active-directory/fundamentals/concept-learn-about-groups?context=%2Fazure%2Factive-directory%2Fenterprise-users%2Fcontext%2Fugr-context) and [managing groups](/azure/active-directory/fundamentals/how-to-manage-groups). For more information on security group limits and other Microsoft Entra service limits, see [Microsoft Entra service limits and restrictions](/azure/active-directory/enterprise-users/directory-service-limits-restrictions).
+The following table includes recommendations for applying groups in frontline implementations. For more information on group types, membership types, and assignment, see the [Microsoft Entra documentation for groups and membership](/entra/fundamentals/concept-learn-about-groups) and [managing groups](/entra/fundamentals/how-to-manage-groups). For more information on security group limits and other Microsoft Entra service limits, see [Microsoft Entra service limits and restrictions](/entra/identity/users/directory-service-limits-restrictions).
 
 |Use case |Group type |
 |---------|-----------|
@@ -105,7 +105,7 @@ The following table includes recommendations for applying groups in frontline im
 |Manage access for users without automatic assignment to groups. |Security groups or distribution list (no limit applies) |
 |Create an email alias to distribute groups messages to groups of users without automatic user management. |Distribution list or assigned Microsoft 365 group |
 |Create an email alias or team in Microsoft Teams and manage membership automatically. |Microsoft 365 groups, dynamic user |
-|Use [My Staff](/azure/active-directory/roles/my-staff-configure) to delegate permissions to frontline managers to view employee profiles, change phone numbers, and reset passwords. |[Administrative Unit](/azure/active-directory/roles/administrative-units) |
+|Use [My Staff](/entra/identity/role-based-access-control/my-staff-configure) to delegate permissions to frontline managers to view employee profiles, change phone numbers, and reset passwords. |[Administrative unit](/entra/identity/role-based-access-control/administrative-units) |
 
 [Learn more about the different types of groups you can create in the Microsoft 365 admin center](/microsoft-365/admin/create-groups/compare-groups).
 
@@ -113,13 +113,13 @@ The following table includes recommendations for applying groups in frontline im
 
 You can add licenses to individual users or to groups of users in Microsoft Entra ID. Group assignment is the most scalable way to assign licenses to your frontline workers. You can assign one or more product licenses to a group.
 
-[Learn more about group-based licensing](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) and [assigning licenses to groups](/azure/active-directory/enterprise-users/licensing-groups-assign).
+[Learn more about group-based licensing](/entra/fundamentals/concept-group-based-licensing) and [assigning licenses to groups](/entra/identity/users/licensing-groups-assign).
 
 You might need to [unassign licenses](../admin/manage/assign-licenses-to-users.md) if you're changing some users from E to F licenses. [Learn more about how to switch specific users from E to F licenses](switch-from-enterprise-to-frontline.md#switch-users-to-a-microsoft-365-f-plan).
 
 ## Step 4: Configure device enrollment
 
-Registering devices in Microsoft Entra ID creates a unique identity that can be used to secure and manage devices. [Learn more about Microsoft Entra device identity](/azure/active-directory/devices/).
+Registering devices in Microsoft Entra ID creates a unique identity that can be used to secure and manage devices. [Learn more about Microsoft Entra device identity](/entra/identity/devices/).
 
 ### Shared device enrollment with Intune
 
@@ -137,7 +137,7 @@ Use Microsoft Intune to keep your frontline workers' devices secure and protecte
 
 ### Configuring devices for shared device mode with third-party mobile device management
 
-Zero-touch provisioning of shared device mode isn’t currently supported by third-party mobile device management(MDM) solutions. However, you can [manually configure shared device mode](/azure/active-directory/develop/tutorial-v2-shared-device-mode#set-up-an-android-device-in-shared-mode) for Android and iOS devices managed in third-party MDM solutions.
+Zero-touch provisioning of shared device mode isn’t currently supported by third-party mobile device management(MDM) solutions. However, you can [manually configure shared device mode](/entra/identity-platform/tutorial-v2-shared-device-mode#set-up-an-android-device-in-shared-mode) for Android and iOS devices managed in third-party MDM solutions.
 
 > [!NOTE]
 > While these steps register the device in Microsoft Entra ID, they don't connect Microsoft Entra ID to the MDM solution. Conditional access won't be available for these devices.
@@ -202,7 +202,7 @@ You can use all of these apps within Microsoft Teams. For more information about
 
 After provisioning users, enrolling your devices, and configuring your apps, you’re now ready to create policies to secure your organization’s infrastructure resources.
 
-- **Conditional access:** Plan a [Microsoft Entra Conditional Access deployment](/azure/active-directory/conditional-access/plan-conditional-access).
+- **Conditional access:** Plan a [Microsoft Entra Conditional Access deployment](/entra/identity/conditional-access/plan-conditional-access).
 - **App protection policies:** [Learn about app management in Microsoft Intune](/mem/intune/apps/app-management).
 - **Multifactor authentication:** Require [multifactor authentication for Intune device enrollment](/mem/intune/enrollment/multi-factor-authentication).
 
