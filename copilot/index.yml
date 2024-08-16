@@ -80,8 +80,12 @@ landingContent:
     linkLists:
       - linkListType: reference
         links:
-          - text: FAQ (new)
+          - text: Microsoft 365 Copilot FAQ (new)
             url: microsoft-365-copilot-faq.yml
+          - text: "Frequently asked questions: AI, Microsoft Copilot, and Microsoft Designer"
+            url: https://support.microsoft.com/topic/frequently-asked-questions-ai-microsoft-copilot-and-microsoft-designer-987b275d-f6f2-4d5d-94c5-e927cffae705
+          - text: What is responsible AI?
+            url: https://support.microsoft.com/topic/what-is-responsible-ai-33fc14be-15ea-4c2c-903b-aa493f5b8d92
           - text: Responsible AI and Microsoft 365 Copilot (new)
             url: microsoft-365-copilot-responsible-ai.md
 
