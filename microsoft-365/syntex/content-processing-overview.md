@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
-ms.date: 05/29/2024
+ms.date: 08/06/2024
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -30,9 +30,11 @@ For example, you can create a rule to move files tagged with a specific customer
 
 ## Syntex processing rules
 
-[Create a rule to move or copy a file from one document library to another](content-processing-create-rules.md)
+- [Create a rule to move or copy a file from one document library to another](content-processing-create-rules.md)
 
-[Create a rule to set a content type when a file is added to a document library](content-processing-content-type.md)
+- [Create a rule to set a content type when a file is added to a document library](content-processing-content-type.md)
+
+- [Create a rule to automatically translate a file in a document library](content-processing-translate.md)
 
 ## Manage a rule
 
