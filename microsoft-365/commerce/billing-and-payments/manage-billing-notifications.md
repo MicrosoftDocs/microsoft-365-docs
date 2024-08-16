@@ -21,6 +21,7 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - admindeeplinkMAC
+- GAUpdates
 search.appverid:
 - MET150
 description: "Learn how to manage who receives billing notification emails and invoice attachments in the Microsoft 365 admin center."
@@ -37,8 +38,10 @@ You can manage who receives billing notification emails for your organization on
 - If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a Billing account owner or contributor to do the tasks in this article. For information about billing account roles, see [Understand your Microsoft business billing account](../manage-billing-accounts.md).
 - If you have a Microsoft Online Services Agreement (MOSA), you must be a Global admin to do the tasks in this article. Billing admins can also make some of these changes, as noted in this article. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 
+[!INCLUDE [ga-roles-limitation](../../includes/ga-roles-limitation.md)]
+
 > [!NOTE]
-> If you're the person who signed up for the subscription, you're automatically a Billing account owner or Global admin.
+> If you're the person who signed up for the subscription, you're automatically a Billing account owner.
 
 ## Change who receives billing notifications
 
@@ -63,7 +66,7 @@ If you have an MOSA billing account type, billing notifications are sent to the 
 #### Assign admin roles by using the Billing notifications page
 
 1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Billing notifications</a> page.
-2. In the **Admins receiving Billing notifications** section, select **Change Billing administrator** or **Change Global administrator**. You can also choose to add a new account and assign one of the roles to it.
+2. In the **Admins receiving Billing notifications** section, select **Change Billing admins** or **Change Global admins**. You can also choose to add a new account and assign one of the roles to it.
 3. In the details pane, on the **Assigned** tab, select **Add users**.
 4. In the **Add users** pane, type the user's display name or username, and then select the user from the list of suggestions.
 5. Add multiple users until you're done.
@@ -72,7 +75,7 @@ If you have an MOSA billing account type, billing notifications are sent to the 
 #### Remove admin roles by using the Billing notifications page
 
 1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Billing notifications</a> page.
-2. In the **Admins receiving billing notifications** section, select the **Change Billing administrator** or **Change Global administrator** link in the description text.
+2. In the **Admins receiving billing notifications** section, select the **Change Billing admins** or **Change Global admins** link in the description text.
 3. In the details pane, on the **Assigned** tab, select the users to remove from the role, and then select **Remove**.
 4. In the confirmation box, select **Remove**, then close the pane.
 
