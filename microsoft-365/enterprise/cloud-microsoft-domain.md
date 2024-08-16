@@ -46,9 +46,11 @@ Since 2023, *.cloud.microsoft and other domains related to the domain unificatio
 |:-----|:-----|
 |Microsoft 365 Service Health Status Page |[status.cloud.microsoft]( https://status.cloud.microsoft)|
 |Microsoft Admin Center| [admin.cloud.microsoft](https://admin.cloud.microsoft)|
+|Microsoft Excel | [excel.cloud.microsoft](https://excel.cloud.microsoft)|
 |Microsoft Loop | [loop.cloud.microsoft](https://loop.cloud.microsoft)|
 |Microsoft Mesh | [mesh.cloud.microsoft](https://mesh.cloud.microsoft)|
 |Microsoft Planner | [planner.cloud.microsoft](https://planner.cloud.microsoft)|
+|Microsoft PowerPoint | [powerpoint.cloud.microsoft](https://powerpoint.cloud.microsoft)|
 |Microsoft Setup | [setup.cloud.microsoft](https://setup.cloud.microsoft)|
 |Microsoft Sway | [sway.cloud.microsoft](https://sway.cloud.microsoft)|
 |Microsoft Viva Engage | [engage.cloud.microsoft](https://engage.cloud.microsoft)|
@@ -58,6 +60,7 @@ Since 2023, *.cloud.microsoft and other domains related to the domain unificatio
 |Microsoft Viva Learning | [learning.cloud.microsoft](https://learning.cloud.microsoft)|
 |Microsoft Viva Pulse | [pulse.cloud.microsoft](https://pulse.cloud.microsoft)|
 |Microsoft Viva Skills | [skills.cloud.microsoft](https://skills.cloud.microsoft)|
+|Microsoft Word | [word.cloud.microsoft](https://word.cloud.microsoft)|
 
 The above list provides examples of individual URLs for applications that users can use through the web browser. It does not represent the full set of endpoints required for functionality of these applications and should not be used to granularly control access through network allow-lists and other network settings. To configure network settings, customers should follow Microsoft official network guidance.
 
