@@ -69,9 +69,12 @@ conceptualContent:
         # Card
         - title: Enable users
           links:
-            - url: https://adoption.microsoft.com/en-us/copilot/
+            - url: https://adoption.microsoft.com/copilot/
               itemType: get-started
               text: Microsoft 365 Copilot adoption and enablement
+            - url: https://adoption.microsoft.com/copilot-scenario-library/
+              itemType: get-started
+              text: Microsoft Copilot Scenario Library
             - url: microsoft-365-copilot-enable-users.md
               itemType: deploy
               text: Enable users for Microsoft 365 Copilot
