@@ -23,6 +23,7 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
+- GAUpdates
 description: "Learn about tax information for Microsoft 365 billing and payments, including how to update your address and tax status."
 ms.date: 07/02/2024
 ---
@@ -37,11 +38,11 @@ When you buy Microsoft 365 for business products and services, the tax that you 
 ## Before you begin
 
 - [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
-- If you have a Microsoft Online Services Agreement (MOSA) billing account type, you must be a global or billing admin to do the tasks in this article. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
-- If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a billing account owner or billing account contributor to do the tasks in this article. For more information about billing account roles, see [Understand your Microsoft business billing account](../manage-billing-accounts.md).
+- If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a Billing account owner or Billing account contributor to do the tasks in this article. For more information about billing account roles, see [Understand your Microsoft business billing account](../manage-billing-accounts.md).
+- If you have a Microsoft Online Services Agreement (MOSA) billing account type, you must be at least a Billing Administrator to do the tasks in this article. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 
 > [!NOTE]
-> If you're the person who signed up for the subscription, you're automatically a billing account owner or global admin.
+> If you're the person who signed up for the subscription, you're automatically a Billing account owner.
 
 ## Europe, the Middle East, and Africa (EMEA)
 
