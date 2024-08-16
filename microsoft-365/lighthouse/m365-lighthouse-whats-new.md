@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: sharonchoi
-ms.date: 6/24/2024
+ms.date: 08/15/2024
 audience: Admin
 ms.topic: whats-new
 ms.service: microsoft-365-lighthouse
@@ -71,6 +71,14 @@ You no longer need to have a Microsoft Entra ID P1 license to manage the Lightho
 [Go to the Lighthouse permissions page now ](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/RBAC.ReactView)
 
 To learn more, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md).
+
+### View and set up new users
+
+We've added a **New users** page that shows you all new users across your managed tenants in Microsoft 365 Lighthouse. You can use this page to track and ensure that all recently onboarded users across your tenants have been properly set up with licenses, groups, and more.
+
+To access this new page, go to **Users** > **Account management** > **New users**. The **New users** page also lets you quickly add a new user to any of your tenants. 
+
+[Go to the New users page now](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/Users.ReactView)
 
 ### Apps & services usage on the Tenants page
 
