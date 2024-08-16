@@ -1,0 +1,129 @@
+### YamlMime:Landing
+
+title: Microsoft 365 Copilot documentation # < 60 chars
+summary: Learn about Microsoft 365 Copilot and how your organization can use this copilot for work. # < 160 chars
+
+metadata:
+  title: Microsoft Copilot for Microsoft 365 documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Learn about Microsoft Copilot for Microsoft 365 and how your organization can use this copilot for work. # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: microsoft-365-copilot 
+  ms.topic: landing-page # Required
+  ms.collection: 
+  - essentials-navigation
+  - m365copilot
+  - magic-ai-copilot
+  author: samanro #Required; your GitHub user alias, with correct capitalization.
+  ms.author: samanro #Required; microsoft alias of author; optional team alias.
+  ms.date: 08/09/2024 #Required; mm/dd/yyyy format.
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | tutorial | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card 
+  - title: How does Microsoft 365 Copilot work?
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview
+            url: microsoft-365-copilot-overview.md
+      - linkListType: video
+        links:
+          - text: Mechanics Microsoft 365 Copilot playlist
+            url: https://www.youtube.com/playlist?list=PLXtHYVsvn_b-NeN9BbLb5sLpIGfdP8j78
+
+  # Card 
+  - title: Manage Data, privacy, and security
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Data, privacy, and security for web queries in Microsoft 365 Copilot
+            url: manage-public-web-access.md
+          - text: Apply principles of Zero Trust to Microsoft 365 Copilot
+            url: /security/zero-trust/zero-trust-microsoft-365-copilot?bc=%2fmicrosoft-365%2fcopilot%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fcopilot%2ftoc.json
+      - linkListType: architecture
+        links:
+          - text: Zero trust illustrations
+            url: /security/zero-trust/zero-trust-tech-illus#zero-trust-for-microsoft-365-copilot#zero-trust-for-microsoft-copilot-for-microsoft-365
+
+  # Card 
+  - title: Assess technical readiness
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Assess your environment (English only)
+            url: https://www.microsoft.com/en-us/solutionassessments/safeedbackform
+          - text: "Get ready: Prepare your data and environment (new)"
+            url: microsoft-365-copilot-get-ready.md
+
+  # Card 
+  - title: Deploy and implement
+    linkLists:
+      - linkListType: deploy
+        links:
+          - text: Set up Microsoft 365 Copilot
+            url: microsoft-365-copilot-setup.md
+          - text: Pilot key scenarios (new)
+            url: microsoft-365-copilot-pilot.md
+          - text: Setup wizard for Microsoft 365 Copilot
+            url: https://setup.cloud.microsoft/copilot-for-microsoft-365/setup-guide
+
+  # Card 
+  - title: Enable users
+    linkLists:
+      - linkListType: overview
+        links:
+        - text: Microsoft 365 Copilot adoption and enablement
+          url: https://adoption.microsoft.com/en-us/copilot/
+
+  # Card 
+  - title: FAQ
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Microsoft 365 Copilot FAQ (new)
+            url: microsoft-365-copilot-faq.yml
+          - text: "Frequently asked questions: AI, Microsoft Copilot, and Microsoft Designer"
+            url: https://support.microsoft.com/topic/frequently-asked-questions-ai-microsoft-copilot-and-microsoft-designer-987b275d-f6f2-4d5d-94c5-e927cffae705
+          - text: What is responsible AI?
+            url: https://support.microsoft.com/topic/what-is-responsible-ai-33fc14be-15ea-4c2c-903b-aa493f5b8d92
+          - text: Responsible AI and Microsoft 365 Copilot (new)
+            url: microsoft-365-copilot-responsible-ai.md
+
+  # Card 
+  - title: Training
+    linkLists:
+      - linkListType: training
+        links:
+        - text: Getting ready for Copilot for Microsoft 365 learning path
+          url: /training/paths/prepare-your-organization-microsoft-365-copilot/
+        - text: "MS-4007: Discover how to drive enablement of Copilot for Microsoft 365 in your organization"
+          url: /training/paths/explore-how-drive-adoption-microsoft-copilot-m365/
+        - text: "Copilot lab: End user resources"
+          url: https://copilot.cloud.microsoft/
+   
+  # Card
+  - title: Enable Copilot in Viva
+    linkLists:
+    - linkListType: how-to-guide
+      links:
+        - text: Microsoft Copilot Dashboard in Viva Insights
+          url: /viva/insights/org-team-insights/copilot-dashboard?bc=%2fmicrosoft-365%2fcopilot%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fcopilot%2ftoc.json
+        - text: Set up Copilot in Viva Engage
+          url: /viva/engage/configure-copilot-for-engage?bc=%2fmicrosoft-365%2fcopilot%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fcopilot%2ftoc.json
+        - text: Enable Copilot in Viva Goals
+          url: /viva/goals/copilot-intro?bc=%2fmicrosoft-365%2fcopilot%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fcopilot%2ftoc.json
+
+  # Card
+  - title: Extend and build
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: How to extend Microsoft 365 Copilot
+            url: /microsoft-365-copilot/extensibility/
+      - linkListType: training
+        links:
+          - text: Extend Microsoft 365 Copilot learning path
+            url: /training/paths/copilot-m365-extensibility/
+

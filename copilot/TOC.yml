@@ -3,7 +3,7 @@
   items:
     - name: Get started
       items:
-        - name: Overview of Copilot for Microsoft 365
+        - name: Overview of Microsoft 365 Copilot 
           href: microsoft-365-copilot-overview.md
         - name: "Get ready: Prepare your data and environment (new)"
           href: microsoft-365-copilot-get-ready.md
