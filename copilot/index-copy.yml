@@ -22,19 +22,31 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card 
-  - title: How does Microsoft 365 Copilot work?
+  - title: Get started with Microsoft 365 Copilot
     linkLists:
       - linkListType: overview
         links:
-          - text: Overview
+          - text: What is Microsoft 365 Copilot?
             url: microsoft-365-copilot-overview.md
+          - text: How does Microsoft 365 Copilot work?
+            url: microsoft-365-copilot-overview.md#how-does-microsoft-copilot-for-microsoft-365-work
+      - linkListType: get-started
+        links:
+          - text: Assess your environment (English only)
+            url: https://www.microsoft.com/en-us/solutionassessments/safeedbackform
+          - text: "Get ready: Prepare your data and environment (new)"
+            url: microsoft-365-copilot-get-ready.md
+          - text: Set up Microsoft 365 Copilot
+            url: microsoft-365-copilot-setup.md
+          - text: Setup wizard for Microsoft 365 Copilot
+            url: https://setup.cloud.microsoft/copilot-for-microsoft-365/setup-guide
       - linkListType: video
         links:
           - text: Mechanics Microsoft 365 Copilot playlist
             url: https://www.youtube.com/playlist?list=PLXtHYVsvn_b-NeN9BbLb5sLpIGfdP8j78
 
   # Card 
-  - title: Manage Data, privacy, and security
+  - title: "Trust: Data, privacy, and security"
     linkLists:
       - linkListType: concept
         links:
@@ -42,51 +54,17 @@ landingContent:
             url: manage-public-web-access.md
           - text: Apply principles of Zero Trust to Microsoft 365 Copilot
             url: /security/zero-trust/zero-trust-microsoft-365-copilot?bc=%2fmicrosoft-365%2fcopilot%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fcopilot%2ftoc.json
+          - text: FAQ (new)
+            url: microsoft-365-copilot-faq.yml
+          - text: Responsible AI and Microsoft 365 Copilot (new)
+            url: microsoft-365-copilot-responsible-ai.md
       - linkListType: architecture
         links:
           - text: Zero trust illustrations
             url: /security/zero-trust/zero-trust-tech-illus#zero-trust-for-microsoft-365-copilot#zero-trust-for-microsoft-copilot-for-microsoft-365
 
   # Card 
-  - title: Assess technical readiness
-    linkLists:
-      - linkListType: get-started
-        links:
-          - text: Assess your environment (English only)
-            url: https://www.microsoft.com/en-us/solutionassessments/safeedbackform
-          - text: "Get ready: Prepare your data and environment (new)"
-            url: microsoft-365-copilot-get-ready.md
-
-  # Card 
-  - title: Deploy and implement
-    linkLists:
-      - linkListType: deploy
-        links:
-          - text: Set up Microsoft 365 Copilot
-            url: microsoft-365-copilot-setup.md
-          - text: Setup wizard for Microsoft 365 Copilot
-            url: https://setup.cloud.microsoft/copilot-for-microsoft-365/setup-guide
-
-  # Card 
-  - title: Enable users
-    linkLists:
-      - linkListType: overview
-        links:
-        - text: Microsoft 365 Copilot adoption and enablement
-          url: https://adoption.microsoft.com/en-us/copilot/
-
-  # Card 
-  - title: FAQ
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: FAQ (new)
-            url: microsoft-365-copilot-faq.yml
-          - text: Responsible AI and Microsoft 365 Copilot (new)
-            url: microsoft-365-copilot-responsible-ai.md
-
-  # Card 
-  - title: Training
+  - title: Training and adoption
     linkLists:
       - linkListType: training
         links:
@@ -96,18 +74,43 @@ landingContent:
           url: /training/paths/explore-how-drive-adoption-microsoft-copilot-m365/
         - text: "Copilot lab: End user resources"
           url: https://copilot.cloud.microsoft/
+      - linkListType: overview
+        links:
+        - text: Microsoft 365 Copilot adoption and enablement
+          url: https://adoption.microsoft.com/en-us/copilot/
    
   # Card
-  - title: Enable Copilot in Viva
+  - title: Manage Copilot for Microsoft 365
     linkLists:
     - linkListType: how-to-guide
       links:
-        - text: Microsoft Copilot Dashboard in Viva Insights
+        - text: Manage settings on the Copilot page in the Microsoft 365 admin center
+          url: microsoft-365-copilot-page.md
+        - text: Viva Insights Copilot Dashboard
           url: /viva/insights/org-team-insights/copilot-dashboard?bc=%2fmicrosoft-365%2fcopilot%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fcopilot%2ftoc.json
-        - text: Set up Copilot in Viva Engage
-          url: /viva/engage/configure-copilot-for-engage?bc=%2fmicrosoft-365%2fcopilot%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fcopilot%2ftoc.json
-        - text: Enable Copilot in Viva Goals
-          url: /viva/goals/copilot-intro?bc=%2fmicrosoft-365%2fcopilot%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fcopilot%2ftoc.json
+        - text: Microsoft 365 Copilot readiness report
+          url: /microsoft-365/admin/activity-reports/microsoft-365-copilot-readiness?bc=%2fmicrosoft-365%2fcopilot%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fcopilot%2ftoc.json
+        - text: Microsoft 365 Copilot usage report
+          url: /microsoft-365/admin/activity-reports/microsoft-365-copilot-usage?bc=%2fmicrosoft-365%2fcopilot%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fcopilot%2ftoc.json
+
+           
+  # Card 
+  - title: Copilot end-user experiences
+    linkLists:
+      - linkListType: quickstart
+        links:
+        - text: Word
+          url: https://copilot.cloud.microsoft/copilot-word
+        - text: Excel
+          url: https://copilot.cloud.microsoft/copilot-excel
+        - text: Outlook
+          url: https://copilot.cloud.microsoft/copilot-outlook
+        - text: PowerPoint
+          url: https://copilot.cloud.microsoft/copilot-powerpoint
+        - text: Teams
+          url: https://copilot.cloud.microsoft/copilot-teams
+        - text: Viva
+          url: https://support.microsoft.com/topic/copilot-in-viva-help-learning-e7602d1c-133d-4d69-abc4-1f41039b5e6e?ocid=CopilotLab_SMC_Viva
 
   # Card
   - title: Extend and build
