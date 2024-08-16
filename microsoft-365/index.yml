@@ -69,7 +69,7 @@ conceptualContent:
               text: Microsoft 365 Archive
             - url: backup/index.yml
               itemType: overview
-              text: Microsoft 365 Backup (Preview)
+              text: Microsoft 365 Backup
             - url: business-premium/index.yml
               itemType: get-started
               text: Microsoft 365 Business Premium
