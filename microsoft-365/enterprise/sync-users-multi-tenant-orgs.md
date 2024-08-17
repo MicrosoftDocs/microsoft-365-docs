@@ -139,6 +139,8 @@ This procedure updates the *MTO_Sync_\<TenantID\>* synchronization configuration
 
 Calendar sharing allows users in each multitenant organization (MTO) tenant to view free/busy (time only) calendar availability information.
 
+> [!NOTE]
+> Calendar sharing via Multitenant collaboration portal is currently not available in Microsoft 365 GCC, GCC High, DoD, or Microsoft 365 China (operated by 21Vianet).
 > [!IMPORTANT]
 > Microsoft recommends that you use roles with the fewest permissions. Using lower permissioned accounts helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
 
@@ -154,10 +156,7 @@ To manage free/busy calendar sharing for tenants in your MTO:
 
 The calendar sharing feature for MTO utilizes [Organization relationships in Exchange Online](/exchange/sharing/organization-relationships/organization-relationships). The organization relationship will share all users calendar availability and must also be set up by the other tenants in your MTO for free/busy information to be shared.
 
-## Set up MTO user labels in Teams for tenants in your MTO (Preview)
-
-> [!NOTE]
-> This feature is available in [targeted release](/microsoft-365/admin/manage/release-options-in-office-365).
+## Set up MTO user labels in Teams for tenants in your MTO
 
 MTO group admins can now configure an optional label for each tenant that will be displayed alongside MTO synced user's display name in Teams. This allows MTO synced users to be distinguishable within the MTO in Teams interactions.
 

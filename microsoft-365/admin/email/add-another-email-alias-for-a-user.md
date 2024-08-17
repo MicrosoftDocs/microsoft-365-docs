@@ -61,7 +61,7 @@ You must be a member of the Global admin role to add email aliases to a user. Fo
 
 ### Sending email from the proxy address easily
 
-Your users can now send from their aliases when using Outlook on the web. When the global admin has set the `Set-OrganizationConfig -SendFromAliasEnabled $true` cmdlet, users within the organization will get access to a list of checkboxes where each entry corresponds to an alias in their Outlook settings. Selecting an alias will make it appear in the **From** dropdown in the **Compose** form.
+Your users can now send from their aliases when using Outlook on the web. When the `Set-OrganizationConfig -SendFromAliasEnabled $true` cmdlet is set, users within the organization will get access to a list of checkboxes where each entry corresponds to an alias in their Outlook settings. Selecting an alias will make it appear in the **From** dropdown in the **Compose** form.
 
 ## Troubleshooting
 
