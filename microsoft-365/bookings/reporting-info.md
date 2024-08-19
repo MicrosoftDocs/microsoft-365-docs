@@ -3,7 +3,7 @@ title: "Reporting information for Shared Bookings"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 08/10/2020
+ms.date: 05/26/2024
 audience: Admin
 ms.topic: how-to
 ms.service: bookings
@@ -50,7 +50,7 @@ The report includes the following fields.
 - **Duration (minutes)**
 - **Event Type**
 
-The improved report now contains the following fields.
+The improved report now contains the following fields:
 
 - **Pricing Type**   Default pricing type set for a service when creating the service.
 - **Price**   Price corresponding to the pricing type chosen.
