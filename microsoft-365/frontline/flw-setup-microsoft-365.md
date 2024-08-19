@@ -27,7 +27,7 @@ To set up Microsoft 365 for frontline workers, follow this overall process:
 1. **[Identify your scenarios](#step-1-identify-your-scenarios)**: Which scenarios do you want to implement for your frontline workers? After you determine which scenarios you want, use the following table to identify the required apps and services for each scenario that you want to implement.
 1. **[Set up your environment and core Microsoft 365](#step-2-set-up-your-environment-and-core-microsoft-365)**: Follow the Setup Guides in the Microsoft 365 admin center to set up Microsoft 365. Keep reading to learn how to access these guides.
 1. **[Provision users, configure groups, and assign licenses](#step-3-provision-users-configure-groups-and-assign-licenses)**: Learn how to provision users and create groups in Microsoft Entra ID, then assign frontline licenses to your users.
-1. **[Configure device enrollment](#step-4-configure-device-enrollment)**: Set up shared and personal devices to work with Microsoft 365 and Microsoft Teams and to allow your frontline workers to communicate more securely within your organization.
+1. **[Set up devices](#step-4-set-up-devices)**: Set up shared and personal devices to work with Microsoft 365 and Microsoft Teams and to allow your frontline workers to communicate more securely within your organization.
 1. **[Set up any other services needed for your scenario](#step-5-set-up-other-services)**: Set up services including Exchange, Outlook, SharePoint, and Microsoft Viva.
 1. **[Configure security](#step-6-configure-security)**: Learn how to create security policies to keep your organization secure.
 1. **[Configure apps](#step-7-configure-apps-for-your-scenario)**: After everything is set up and configured in the admin center, you can follow the guidance for your scenarios to further configure the apps you need for each scenario.
@@ -176,7 +176,7 @@ You can use all of these apps within Microsoft Teams. For more information about
 
 ## Step 6: Configure security
 
-After provisioning users, enrolling your devices, and configuring your apps, you’re now ready to create policies to secure your organization’s infrastructure resources.
+After provisioning users, setting up devices, and configuring your apps, you’re now ready to create policies to secure your organization’s infrastructure resources.
 
 - **Conditional access:** Plan a [Microsoft Entra Conditional Access deployment](/entra/identity/conditional-access/plan-conditional-access).
 - **App protection policies:** [Learn about app management in Microsoft Intune](/mem/intune/apps/app-management).
