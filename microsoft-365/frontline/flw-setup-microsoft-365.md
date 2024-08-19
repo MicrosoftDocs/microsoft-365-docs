@@ -117,36 +117,12 @@ You can add licenses to individual users or to groups of users in Microsoft Entr
 
 You might need to [unassign licenses](../admin/manage/assign-licenses-to-users.md) if you're changing some users from E to F licenses. [Learn more about how to switch specific users from E to F licenses](switch-from-enterprise-to-frontline.md#switch-users-to-a-microsoft-365-f-plan).
 
-## Step 4: Configure device enrollment
+## Step 4: Set up devices
 
-Registering devices in Microsoft Entra ID creates a unique identity that can be used to secure and manage devices. [Learn more about Microsoft Entra device identity](/entra/identity/devices/).
+To set up and configure devices for your frontline, see the following guidance:
 
-### Shared device enrollment with Intune
-
-**Android:** Automatically enroll Android devices into shared device mode with [Microsoft Intune](/mem/intune/enrollment/android-kiosk-enroll). [Learn more about enrolling shared devices in Intune](https://techcommunity.microsoft.com/t5/intune-customer-success/enroll-android-enterprise-dedicated-devices-into-azure-ad-shared/ba-p/1820093).
-
-**iOS:** Not currently available.
-
-### BYOD device enrollment with Intune
-
-Use Microsoft Intune to keep your frontline workers' devices secure and protected. Learn more about how to enroll different types of BYOD devices in Intune:
-
-- [Windows](/mem/intune/enrollment/windows-enrollment-methods#user-self-enrollment-in-intune)
-- [Android](/mem/intune/enrollment/android-work-profile-enroll)
-- [iOS](/mem/intune/enrollment/ios-enroll#user-owned-iosipados-and-ipados-devices-byod)
-
-### Configuring devices for shared device mode with third-party mobile device management
-
-Zero-touch provisioning of shared device mode isn’t currently supported by third-party mobile device management(MDM) solutions. However, you can [manually configure shared device mode](/entra/identity-platform/tutorial-v2-shared-device-mode#set-up-an-android-device-in-shared-mode) for Android and iOS devices managed in third-party MDM solutions.
-
-> [!NOTE]
-> While these steps register the device in Microsoft Entra ID, they don't connect Microsoft Entra ID to the MDM solution. Conditional access won't be available for these devices.
-
-[Learn more about configuration with VMware Workspace ONE](https://docs.vmware.com/en/VMware-Workspace-ONE-Access/21.08/ws1_access_connector_install/GUID-271C47F6-856C-40F0-97AB-A8AD95025F9C.html) and [SOTI](https://www.soti.net/mc/help/v15.0/en/console/configurations/advancedconfigurations/shareddevice/shareddevice.html).
-
-If you choose to manually configure devices in shared device mode, you need to take more steps to re-enroll Android devices in shared device mode when third-party MDM support is available by uninstalling and reinstalling Authenticator from the device.
-
-To set up shared and personal devices to work with Microsoft 365 and Microsoft Teams and to allow your frontline workers to communicate more securely within your organization, see [Overview of device management for frontline workers](flw-devices.md).
+- [Overview of device management for frontline workers](flw-devices.md)
+- [Manage shared devices for frontline workers](flw-shared-devices.md)
 
 ## Step 5: Set up other services
 
