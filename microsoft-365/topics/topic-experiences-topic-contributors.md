@@ -13,7 +13,7 @@ ms.collection:
 ms.service: viva-topics 
 search.appverid:
     - MET150  
-ms.localizationpriority: Normal
+ms.localizationpriority: medium
 description: Learn how to contribute to topics in Topics
 ---
 

@@ -13,7 +13,7 @@ ms.collection:
   - enabler-strategic
   - m365initiative-viva-topics
   - Tier1
-ms.localizationpriority: Normal
+ms.localizationpriority: medium
 description: Find the languages available in Topics.
 ---
 
