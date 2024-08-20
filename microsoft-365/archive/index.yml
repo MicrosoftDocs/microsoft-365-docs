@@ -6,8 +6,7 @@ metadata:
   title: Microsoft 365 Archive documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: This page contains links to some important topics related to Microsoft 365 Archive features. Start here to learn about how to set up and use Microsoft 365 Archive in your organization. # Required; article description that is displayed in search results. < 160 chars.
   services: 
-  ms.service: microsoft-syntex #Required; service per approved list. service slug assigned to your service by ACOM.
-  ms.subservice: subservice
+  ms.service: microsoft-365-archive #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: landing-page # Required
   ms.collection: essentials-navigation
   ms.custom: intro-hub-or-landing
