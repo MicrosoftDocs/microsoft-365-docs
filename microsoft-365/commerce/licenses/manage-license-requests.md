@@ -21,6 +21,7 @@ ms.custom:
 - MACBillingLicensesRequests
 - AdminSurgePortfolio
 - admindeeplinkMAC
+- GAUpdates
 search.appverid: MET150
 description: "Learn how to review and approve or deny license requests for products and services from users in the Microsoft 365 admin center."
 ms.date: 05/13/2024
@@ -40,10 +41,9 @@ To see and manage license requests, use the **Requests** tab on the **Licensing*
 
 ## Before you begin
 
-You must be a global admin to perform the tasks in this article. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
+You must be a Global Administrator to perform the tasks in this article. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 
-> [!NOTE]
-> If you're the person who signed up for the subscription, you're automatically a global admin.
+[!INCLUDE [ga-roles-limitation](../../includes/ga-roles-limitation.md)]
 
 ## Use your own request process
 

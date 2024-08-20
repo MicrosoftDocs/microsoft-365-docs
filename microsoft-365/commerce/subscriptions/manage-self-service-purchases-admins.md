@@ -21,6 +21,7 @@ ms.custom:
   - AdminSurgePortfolio
   - okr_smb
   - admindeeplinkMAC
+  - GAUpdates
 search.appverid:
 - MET150
 description: "Learn how admins can use the Microsoft 365 admin center to manage self-service purchases and trials made by users in their organization."
@@ -46,10 +47,10 @@ You can also control whether users in your organization can make purchases or si
 
 - [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
 - If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a Billing account owner or contributor or a Billing profile owner or contributor to do the tasks in this article. For more information about billing account roles, see [Understand your Microsoft business billing account](../manage-billing-accounts.md) and [Manage your Microsoft business billing profiles](../billing-and-payments/manage-billing-profiles.md).
-- If you have a Microsoft Online Services Agreement (MOSA) billing account type, you must be a Global or Billing admin to do the tasks in this article. For more information, see [About admin roles in the Microsoft 365 admin center](../../admin/add-users/about-admin-roles.md).
+- If you have a Microsoft Online Services Agreement (MOSA) billing account type, you must be at least a Billing Administrator to do the tasks in this article. For more information, see [About admin roles in the Microsoft 365 admin center](../../admin/add-users/about-admin-roles.md).
 
 > [!NOTE]
-> If you're the person who signed up for the subscription, you're automatically a Billing account owner or Global admin.
+> If you're the person who signed up for the subscription, you're automatically a Billing account owner.
 
 ## Payment methods for self-service purchases and trials
 
