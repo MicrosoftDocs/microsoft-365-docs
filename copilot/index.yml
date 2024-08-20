@@ -42,7 +42,7 @@ conceptualContent:
             - url: /security/zero-trust/zero-trust-microsoft-365-copilot?context=/copilot/microsoft-365/context/m365-copilot-context
               itemType: concept
               text: Apply principles of Zero Trust to Microsoft 365 Copilot
-            - url: /security/zero-trust/zero-trust-tech-illus#zero-trust-for-microsoft-365-copilot#zero-trust-for-microsoft-copilot-for-microsoft-365?context=/copilot/microsoft-365/context/m365-copilot-context
+            - url: /security/zero-trust/zero-trust-tech-illus#zero-trust-for-microsoft-365-copilot?context=/copilot/microsoft-365/context/m365-copilot-context
               itemType: architecture
               text: Zero trust illustrations
         # Card
@@ -51,7 +51,7 @@ conceptualContent:
             - url: https://www.microsoft.com/en-us/solutionassessments/safeedbackform
               itemType: get-started
               text: Assess your environment (English only)
-            - url: /microsoft-365-copilot-get-ready.md
+            - url: microsoft-365-copilot-get-ready.md
               itemType: get-started
               text: "Get ready: Prepare your data and environment (new)"
         # Card

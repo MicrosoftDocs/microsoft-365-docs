@@ -61,7 +61,7 @@ landingContent:
       - linkListType: architecture
         links:
           - text: Zero trust illustrations
-            url: /security/zero-trust/zero-trust-tech-illus#zero-trust-for-microsoft-365-copilot#zero-trust-for-microsoft-copilot-for-microsoft-365?context=/copilot/microsoft-365/context/m365-copilot-context
+            url: /security/zero-trust/zero-trust-tech-illus#zero-trust-for-microsoft-365-copilot?context=/copilot/microsoft-365/context/m365-copilot-context
 
   # Card 
   - title: Training and adoption
