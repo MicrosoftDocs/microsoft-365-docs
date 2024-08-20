@@ -13,7 +13,7 @@ ms.collection:
 ms.service: viva-topics 
 search.appverid:
     - MET150  
-localization_priority: medium
+ms.localizationpriority: medium
 description: Learn about how to find topics in Topics by using SharePoint taxonomy.
 ---
 
