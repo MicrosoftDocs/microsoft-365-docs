@@ -36,8 +36,6 @@ Delegated Access Permission (DAP) partners are Syndication and Cloud Solution Pr
 > Some administrative tasks can only be done in PowerShell.
 
 The following articles show how Syndication and CSP partners use PowerShell to administer their customer tenancies:
-  
-- [Manage Microsoft 365 tenants with Windows PowerShell for Delegated Access Permissions (DAP) partners](manage-microsoft-365-tenants-with-windows-powershell-for-delegated-access-permissio.md)
 
 - [Add a domain to a client tenancy with Windows PowerShell for Delegated Access Permission (DAP) partners](add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-pe.md)
 
