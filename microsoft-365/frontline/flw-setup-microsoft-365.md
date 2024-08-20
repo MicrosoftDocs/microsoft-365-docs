@@ -27,7 +27,7 @@ To set up Microsoft 365 for frontline workers, follow this overall process:
 1. **[Identify your scenarios](#step-1-identify-your-scenarios)**: Which scenarios do you want to implement for your frontline workers? After you determine which scenarios you want, use the following table to identify the required apps and services for each scenario that you want to implement.
 1. **[Set up your environment and core Microsoft 365](#step-2-set-up-your-environment-and-core-microsoft-365)**: Follow the Setup Guides in the Microsoft 365 admin center to set up Microsoft 365. Keep reading to learn how to access these guides.
 1. **[Provision users, configure groups, and assign licenses](#step-3-provision-users-configure-groups-and-assign-licenses)**: Learn how to provision users and create groups in Microsoft Entra ID, then assign frontline licenses to your users.
-1. **[Set up devices](#step-4-set-up-devices)**: Set up shared and personal devices to work with Microsoft 365 and Microsoft Teams and to allow your frontline workers to communicate more securely within your organization.
+1. **[Set up and configure devices](#step-4-set-up-and-configure-devices)**: Set up shared and personal devices to work with Microsoft 365 and Microsoft Teams and to allow your frontline workers to communicate more securely within your organization.
 1. **[Set up any other services needed for your scenario](#step-5-set-up-other-services)**: Set up services including Exchange, Outlook, SharePoint, and Microsoft Viva.
 1. **[Configure security](#step-6-configure-security)**: Learn how to create security policies to keep your organization secure.
 1. **[Configure apps](#step-7-configure-apps-for-your-scenario)**: After everything is set up and configured in the admin center, you can follow the guidance for your scenarios to further configure the apps you need for each scenario.
@@ -117,9 +117,9 @@ You can add licenses to individual users or to groups of users in Microsoft Entr
 
 You might need to [unassign licenses](../admin/manage/assign-licenses-to-users.md) if you're changing some users from E to F licenses. [Learn more about how to switch specific users from E to F licenses](switch-from-enterprise-to-frontline.md#switch-users-to-a-microsoft-365-f-plan).
 
-## Step 4: Set up devices
+## Step 4: Set up and configure devices
 
-To set up and configure devices for your frontline, see the following guidance:
+See the following guidance:
 
 - [Overview of device management for frontline workers](flw-devices.md)
 - [Manage shared devices for frontline workers](flw-shared-devices.md)
@@ -144,7 +144,7 @@ Using dynamic group backed shared mailboxes based on attributes such as Location
 
 ### Set up Microsoft Teams
 
-Follow the guidance in [Deploy Teams at scale for frontline workers](deploy-teams-at-scale.md).
+Follow the guidance in [How to find the best frontline team solution for your organization](frontline-team-options.md).
 
 ### Set up employee experiences with Microsoft Viva
 
