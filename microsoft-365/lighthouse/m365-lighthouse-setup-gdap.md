@@ -28,15 +28,15 @@ Granular delegated admin privileges (GDAP) are a prerequisite for customer tenan
 
 To walk through how to set up GDAP in your partner organization, complete the [Secure Microsoft 365 Lighthouse interactive guide](https://go.microsoft.com/fwlink/p/?linkid=2281856).
 
-If you encounter any problems during GDAP setup, see [Troubleshoot error messages and problems in Microsoft 365 Lighthouse: GDAP setup and management](m365-lighthouse-troubleshoot.md#gdap-setup-and-management) for guidance.
+If you encounter any problems during GDAP setup and need guidance, see [Troubleshoot error messages and problems in Microsoft 365 Lighthouse: GDAP setup and management](m365-lighthouse-troubleshoot.md#gdap-setup-and-management).
 
 ## Before you begin
 
-- You need to have specific permissions in the partner tenant:
+- You need specific permissions in the partner tenant:
 
-  - To establish GDAP security groups, add users, and create GDAP templates, you must be a Lighthouse Administrator in the partner tenant. This role can be assigned from the Lighthouse permissions page by someone in your partner tenant who has the appropriate permissions.
+  - To establish GDAP security groups, add users, and create GDAP templates, you must be an Administrator in Lighthouse. This role can be assigned from the **Lighthouse permissions** page by someone in your partner tenant who has the appropriate permissions.
 
-  - To create and complete GDAP relationships, in addition to being a Lighthouse Administrator in the partner tenant, you must also be a member of the Admin Agents group in Partner Center.
+  - To create and complete GDAP relationships, in addition to being an Administrator in Lighthouse, you must also be an Admin agent in Partner Center.
 
 - The customers you manage in Lighthouse need to be set up in Partner Center with either a reseller relationship or an existing GDAP relationship.
 
@@ -98,7 +98,7 @@ If you encounter any problems during GDAP setup, see [Troubleshoot error message
 
 ## Obtain customer approval to administer their products
 
-As part of the GDAP setup process, a GDAP relationship request link is generated for each customer who doesn't have an existing GDAP relationship with your partner organization. You'll need to send the link to your customer's Global Administrator so they can approve the GDAP relationship before you can administer their products for them.
+As part of the GDAP setup process, a GDAP relationship request link is generated for each customer who doesn't have an existing GDAP relationship with your partner organization. You'll need to send the link to the appropriate customer contact so they can approve the GDAP relationship before you can administer their products for them.
 
 1. On the **Delegated access** page, select the **Relationships** tab.
 
