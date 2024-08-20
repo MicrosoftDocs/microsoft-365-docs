@@ -116,4 +116,8 @@ To view tags:
 
 4. In the left navigation, select **Billing** to see monthly invoices.
 
+    We recommend using this view to see the costs by resources for Microsoft 365 Backup.
+
+    ![Screenshot of the recommended view to see costs by resources in Microsoft Cost Management.](../media/m365-backup/backup-cost-by-resources-view.png)
+
 5. Set up budget alerts on cost by following the steps in the [Cost Management public APIs](/rest/api/cost-management/operation-groups).
