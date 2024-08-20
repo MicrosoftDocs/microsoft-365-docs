@@ -1,5 +1,5 @@
 ---
-title: "Set up GDAP for your customers in Microsoft 365 Lighthouse"
+title: "Set up GDAP in Microsoft 365 Lighthouse"
 f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
@@ -19,18 +19,16 @@ ms.custom:
 - AdminSurgePortfolib
 - M365-Lighthouse                         
 search.appverid: MET150
-description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn how to set up granular delegated admin privileges (GDAP) for your customers."
+description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn how to set up granular delegated admin privileges (GDAP) for the customer tenants that you manage."
 ---
 
-# Set up GDAP for your customers in Microsoft 365 Lighthouse
+# Set up GDAP in Microsoft 365 Lighthouse
 
-You can set up all your customers with granular delegated admin privileges (GDAP) through Microsoft 365 Lighthouse. By setting up your partner organization with GDAP for the customer tenants you manage, users in your organization have the permissions necessary to do their work while keeping customer tenants secure. Lighthouse lets you quickly set up GDAP and begin the journey to least-privilege for your delegated access to customers.
+Granular delegated admin privileges (GDAP) are a prerequisite for customer tenants to be fully onboarded to Lighthouse. You can set up all your customers with GDAP through Microsoft 365 Lighthouse. By setting up GDAP for the customer tenants that you manage, you help keep your customers secure while ensuring users in your partner organization have the permissions necessary to do their work.
 
-GDAP is a prerequisite for customer tenants to be fully onboarded to Lighthouse. Therefore, creating GDAP relationships with your customers may be the first step in managing your customer tenants in Lighthouse.
+To walk through how to set up GDAP in your partner organization, complete the [Secure Microsoft 365 Lighthouse interactive guide](https://go.microsoft.com/fwlink/p/?linkid=2281856).
 
-During the GDAP setup process, you create GDAP templates by configuring what support roles and security groups are needed for your partner organization. Then, you assign customer tenants to GDAP templates. GDAP roles are scoped to [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference), and when you set up GDAP, you see recommendations for a set of roles needed for different job functions.
-
-To learn how to set up GDAP in your partner organization, complete the [Secure Microsoft 365 Lighthouse interactive guide](https://go.microsoft.com/fwlink/p/?linkid=2281856).
+If you encounter any problems during GDAP setup, see [Troubleshoot error messages and problems in Microsoft 365 Lighthouse: GDAP setup and management](m365-lighthouse-troubleshoot.md#gdap-setup-and-management) for guidance.
 
 ## Before you begin
 
@@ -38,130 +36,89 @@ To learn how to set up GDAP in your partner organization, complete the [Secure M
 
   - To establish GDAP security groups, add users, and create GDAP templates, you must be a Lighthouse Administrator in the partner tenant. This role can be assigned from the Lighthouse permissions page by someone in your partner tenant who has the appropriate permissions.
 
-  - To create and complete GDAP relationships, you must also be a member of the Admin Agents group in Partner Center.
+  - To create and complete GDAP relationships, in addition to being a Lighthouse Administrator in the partner tenant, you must also be a member of the Admin Agents group in Partner Center.
 
 - The customers you manage in Lighthouse need to be set up in Partner Center with either a reseller relationship or an existing GDAP relationship.
 
 > [!NOTE]
 > Lighthouse GDAP templates use role-assignable security groups. A Microsoft Entra ID P1 license is required to add users to these groups. To enable Just-in-Time (JIT) roles, Microsoft Entra IDE Governance or a Microsoft Entra ID P2 license is required.
 
-## Set up GDAP for the first time
-
-When you set up GDAP for the first time, you must complete the following sections.
-
-If you encounter any problems during GDAP setup, see [Troubleshoot error messages and problems in Microsoft 365 Lighthouse: GDAP setup and management](m365-lighthouse-troubleshoot.md#gdap-setup-and-management) for guidance.
-
-To get started:
+## Set up GDAP
 
 1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Home**.
 
 2. On the **Set up GDAP** card, select **Set up GDAP**.
 
-3. Complete the following sections in order.
+3. On the **Delegated access** page, select the **GDAP templates** tab, and then select **Create a template**.
 
-    [Step 1: Roles and permissions](#step-1-roles-and-permissions)
+4. In the **Create a template** pane, enter a name for the template and an optional description.
 
-    [Step 2: GDAP templates](#step-2-gdap-templates)
+5. Under **Support roles**, Lighthouse includes five default support roles: Account manager, Service desk agent, Specialist, Escalation engineer, and Administrator. For each support role that you want to use, do the following:
+    1. Select **Edit** to open the **Edit support role** pane.
 
-    [Step 3: Security groups](#step-3-security-groups)
+    2. Update the support role name and description, as needed, to align with the support roles in your partner organization.
+    
+    3. Under **Entra roles**, select the Microsoft Entra roles that the support role requires based on the role's job function. The following options are available:
+        - Use the Microsoft Entra roles that Microsoft recommends. 
+        - Set the filter to **All** and select your preferred Microsoft Entra roles.
+      
+        To learn more, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference).
+        > [!NOTE]
+> Certain Microsoft Entra roles can't be added to multiple support roles—for example, the Microsoft Entra roles for the Administrator support role can't be added to any other support role.   
 
-    [Step 4: Tenant assignments](#step-4-tenant-assignments)
+    4. Select **Save**.
 
-    [Step 5: Review and finish](#step-5-review-and-finish)
+6. For each support role that you want to use, select the **Add or create a security group** icon next to the support role to open the **Select or create a security group** pane. If you don't want to use a particular support role, don't assign any security groups to it.
+ 
+    > [!NOTE]
+> Each GDAP template requires you to assign at least one role-assignable security group to a support role. 
 
-### Step 1: Roles and permissions
+7. Do one of the following:
+    - Select **Use an existing security group**, choose one or more security groups from the list, and then select **Save**.
+    - Select **Create a new security group**, enter a name and optional description for the new security group, add users to the security group, and then select **Save**.
 
-Choose the Microsoft Entra roles needed based on your employees' job functions.
+8. When you're done defining the support roles and security groups, select **Save** in the **Create a template** pane to save the GDAP template.
 
-1. On the **Roles and permissions** page, select the Microsoft Entra roles needed based on your employees' job functions. Do one of the following:
+   The new template now appears in the list of templates on the **GDAP templates** tab of the **Delegated access** page. 
 
-    - Adopt recommended roles
-    - Edit Microsoft Entra role selections
+9. Follow steps 3 through 8 to create additional GDAP templates, as needed.
 
-    By default, Lighthouse includes five support roles: Account manager, Service desk agent, Specialist, Escalation engineer, and JIT agent. You can rename support roles to match your organization's preferences by selecting **Edit support roles**. Certain Microsoft Entra roles can't be added to different support roles&mdash;for example, the Microsoft Entra roles in the JIT agent support role can't be added to any other support role.
+10. On the **GDAP templates** tab of the **Delegated access** page, select the three dots (more actions) next to a template in the list, and then select **Assign template**.
 
-    If not all support roles are needed for your GDAP setup, you can exclude one or more from your GDAP templates in the next step.  
+11. In the **Assign this template to tenants** pane, choose one or more customer tenants that you want to assign the template to, and then select **Next**.
 
-2. Select **Next**.
-3. Select **Save and close** to save your settings and exit GDAP Setup.
+    > [!NOTE]
+> Each customer tenant can be associated with only one GDAP template at a time. If you want to assign a new template to a customer, the existing GDAP relationships are saved and only new relationships based on the new template are created.
 
-### Step 2: GDAP templates
+12. Review the assignment details, and then select **Assign**.
+ 
+    It might take a minute or two for the GDAP template assignments to apply. To refresh the data on the **GDAP templates** tab, select **Refresh**.
 
-A GDAP template is a collection of:
+13. Follow steps 10 through 12 to assign additional templates to tenants, as needed.
 
-- Support roles
-- Security groups
-- Users in each security group
+## Obtain customer approval to administer their products
 
-To create a GDAP template:
+As part of the GDAP setup process, a GDAP relationship request link is generated for each customer who doesn't have an existing GDAP relationship with your partner organization. You'll need to send the link to your customer's Global Administrator so they can approve the GDAP relationship before you can administer their products for them.
 
-1. On the **GDAP templates** page, select **Create template**.
+1. On the **Delegated access** page, select the **Relationships** tab.
 
-2. In the template pane, enter the template name and description into the appropriate fields.
+2. Expand the customer tenant whose approval you require.
 
-3. Select one or more support roles from the list.
+3. Select the GDAP relationship that shows a **Pending** status to open the relationship details pane.
 
-4. Select **Save**.
+4. Select either **Open in email** or **Copy email to clipboard**, edit the text if needed (but don't edit the link URL that they need to select to give you administration permission), and then send the GDAP relationship request to your customer.
 
-5. Select **Next**.
+Once the GDAP relationship request is approved, the GDAP template settings are applied. It might take up to an hour after relationship approval for changes to appear in Lighthouse.
+ 
+GDAP relationships are visible in Partner Center and the security groups are visible in Microsoft Entra ID.
 
-6. Select **Save and close** to save your settings and exit GDAP Setup.
+## Edit GDAP settings
 
-### Step 3: Security groups
+Once you complete GDAP setup, you can update or change roles, security groups, or templates at any time.
 
-You need at least one security group per support role for each template. For the first template, you'll create a new security group, but for subsequent templates, you may reuse groups if desired.
+1. In the left navigation pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">Lighthouse</a>, select **Permissions** > **Delegated access**.
 
-1. On the **Security groups** page, select **Create security group**.
-
-2. In the security group pane, enter a name and description.
-
-3. Select **Add users**.
-
-4. From the Add users list, select the users you want to include in this security group.
-
-5. Select **Save**.
-
-6. Select **Save** again.
-
-7. Select **Next**.
-
-8. Select **Save and close** to save your settings and exit GDAP Setup.
-
-JIT agent security group users are eligible to request access to highly privileged GDAP roles; they're not given access to them automatically. As part of GDAP Setup, select a JIT approver security group from your tenant to approve access requests from JIT agents.
-
-The JIT approver security group must be role-assignable. If you're not seeing a security group appear in GDAP Setup, confirm that the security group is role-assignable. For more information on how to manage role assignments, see [Use Microsoft Entra groups to manage role assignments](/entra/identity/role-based-access-control/groups-concept).
-
-After completing GDAP setup, a JIT access policy is created for JIT agents to request access. You can review the policy created in the [Microsoft Entra ID Governance portal](https://portal.azure.com/#view/Microsoft_AAD_ERM/DashboardBlade/~/elmEntitlement), and JIT agents can request access to their roles from the [My Access portal](https://myaccess.microsoft.com/#/access-packages). For more information on how JIT agents can request access, see [Manage access to resources](/azure/active-directory/governance/entitlement-management-access-package-first). For more information on how approvers can approve requests, see [Approve or deny request](/azure/active-directory/governance/entitlement-management-access-package-first).
-
-### Step 4: Tenant assignments
-
-Assign groups of customers to each template. Each customer can only be assigned to one template. Once selected, that customer tenant won't be displayed as an option on subsequent templates. If you rerun GDAP Setup, your tenant assignments per GDAP template will be saved.
-
-- To add new tenants to a GDAP template, rerun GDAP Setup. Keep saved tenant assignments and select new tenants to assign to the GDAP template. New GDAP relationships will only be created for the newly assigned tenants.
-
-- To remove tenants from a GDAP template, rerun GDAP Setup. Remove the tenant assignment. Removing the tenant assignment won't remove the GDAP relationship created from a previous assignment, but it allows you to reassign the customer tenant to a different GDAP template if needed.
-
-Make sure that all tenants you want assigned to a GDAP template are selected before selecting Next. You can filter the list of tenants using the search box in the upper right corner.
-
-1. On the **Tenant assignments** page, select the tenants you want to assign to GDAP templated you created.
-
-2. Select **Next** to go to the next section or select **Save and close** to save your settings and exit GDAP Setup.
-
-### Step 5: Review and finish
-
-1. On the **Review settings** page, review the settings you created to confirm they're correct.
-
-2. Select **Finish**.
-
-It may take a minute or two for the settings you've configured to apply. If you need to refresh the data, follow the prompts. Setup will be incomplete if you exit GDAP Setup without selecting **Finish**. 
-
-> [!NOTE]
-> For customers with an existing DAP relationship, these settings are automatically applied. Customers with an Active status on the last page of GDAP Setup are assigned to roles and security groups as defined in the GDAP template.  
-
-> [!NOTE]
-> For customers without an existing DAP relationship, an admin relationship request link is generated for each customer on the last page of GDAP Setup. From there, you can send the link to your customer's Global Administrator so they can approve the admin relationship. Once the relationship is approved, the GDAP template settings will be applied. It may take up to an hour after relationship approval for changes to appear in Lighthouse.
-
-Once you've completed GDAP Setup, you can navigate to different steps to update or change roles, security groups, or templates. GDAP relationships are now visible in Partner Center and the security groups are now visible in Microsoft Entra ID.
+2. On the **GDAP templates** tab, make any necessary changes to the GDAP templates or their associated configurations, and then save your changes.
 
 ## Related content
 

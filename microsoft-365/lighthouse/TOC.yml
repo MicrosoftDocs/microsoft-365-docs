@@ -22,7 +22,7 @@
       href: m365-lighthouse-review-audit-logs.md
     - name: Set up and manage GDAP
       items: 
-      - name: Set up GDAP for your customers
+      - name: Set up GDAP
         href: m365-lighthouse-setup-gdap.md
       - name: Overview of Delegated Access
         href: m365-lighthouse-delegated-access-overview.md
