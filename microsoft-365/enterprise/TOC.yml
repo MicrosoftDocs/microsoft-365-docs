@@ -584,9 +584,7 @@
           href: use-powershell-to-perform-a-staged-migration-to-microsoft-365.md
     - name: Manage Microsoft 365 with Windows PowerShell for Delegated Access partners
       href: manage-microsoft-365-with-windows-powershell-for-delegated-access-permissions-dap-p.md
-      items: 
-        - name: Manage Microsoft 365 tenants with Windows PowerShell for Delegated Access partners
-          href: manage-microsoft-365-tenants-with-windows-powershell-for-delegated-access-permissio.md
+      items:
         - name: Add a domain to a client tenancy with Windows PowerShell for Delegated Access partners
           href: add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-pe.md
         - name: Connect to Exchange Online via remote Windows PowerShell for Delegated Access partners
