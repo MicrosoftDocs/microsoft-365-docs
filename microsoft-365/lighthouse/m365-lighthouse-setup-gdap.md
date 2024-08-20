@@ -64,14 +64,14 @@ If you encounter any problems during GDAP setup, see [Troubleshoot error message
       
         To learn more, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference).
         > [!NOTE]
-> Certain Microsoft Entra roles can't be added to multiple support roles—for example, the Microsoft Entra roles for the Administrator support role can't be added to any other support role.   
+        > Certain Microsoft Entra roles can't be added to multiple support roles—for example, the Microsoft Entra roles for the Administrator support role can't be added to any other support role.   
 
     4. Select **Save**.
 
 6. For each support role that you want to use, select the **Add or create a security group** icon next to the support role to open the **Select or create a security group** pane. If you don't want to use a particular support role, don't assign any security groups to it.
  
     > [!NOTE]
-> Each GDAP template requires you to assign at least one role-assignable security group to a support role. 
+    > Each GDAP template requires you to assign at least one role-assignable security group to a support role. 
 
 7. Do one of the following:
     - Select **Use an existing security group**, choose one or more security groups from the list, and then select **Save**.
@@ -88,7 +88,7 @@ If you encounter any problems during GDAP setup, see [Troubleshoot error message
 11. In the **Assign this template to tenants** pane, choose one or more customer tenants that you want to assign the template to, and then select **Next**.
 
     > [!NOTE]
-> Each customer tenant can be associated with only one GDAP template at a time. If you want to assign a new template to a customer, the existing GDAP relationships are saved and only new relationships based on the new template are created.
+    > Each customer tenant can be associated with only one GDAP template at a time. If you want to assign a new template to a customer, the existing GDAP relationships are saved and only new relationships based on the new template are created.
 
 12. Review the assignment details, and then select **Assign**.
  
