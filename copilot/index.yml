@@ -36,6 +36,9 @@ conceptualContent:
         # Card
         - title: Manage data, privacy, and security
           links:
+            - url: microsoft-365-copilot-privacy.md
+              itemType: concept
+              text: Data, privacy, and security for Microsoft 365 Copilot
             - url: manage-public-web-access.md
               itemType: concept
               text: Data, privacy, and security for web queries in Microsoft 365 Copilot
