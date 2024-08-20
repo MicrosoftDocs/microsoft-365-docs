@@ -65,6 +65,10 @@ The prebuilt contracts model lets you have multiple values for a given field. Fo
 > [!TIP]
 > You can use the scroll wheel on your mouse or the controls at the bottom of the document area to zoom in or out as needed to read the entity fields.
 
+### Set a page range for processing
+
+For this model, you can specify to process a range of pages for a file rather than the entire file. If no page range is provided, the entire document will be processed. For more information, see [Set a page range to extract information from specific pages](page-range.md).
+
 ### Select an extractor entity
 
 You can select an extractor either from the document area or from the **Extractors** panel, depending on your preference.
