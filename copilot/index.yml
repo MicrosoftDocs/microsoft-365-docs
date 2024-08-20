@@ -39,10 +39,10 @@ conceptualContent:
             - url: manage-public-web-access.md
               itemType: concept
               text: Data, privacy, and security for web queries in Microsoft 365 Copilot
-            - url: /security/zero-trust/zero-trust-microsoft-365-copilot?bc=%2fmicrosoft-365%2fcopilot%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fcopilot%2ftoc.json
+            - url: /security/zero-trust/zero-trust-microsoft-365-copilot?context=/copilot/microsoft-365/context/m365-copilot-context
               itemType: concept
               text: Apply principles of Zero Trust to Microsoft 365 Copilot
-            - url: /security/zero-trust/zero-trust-tech-illus#zero-trust-for-microsoft-365-copilot#zero-trust-for-microsoft-copilot-for-microsoft-365
+            - url: /security/zero-trust/zero-trust-tech-illus#zero-trust-for-microsoft-365-copilot#zero-trust-for-microsoft-copilot-for-microsoft-365?context=/copilot/microsoft-365/context/m365-copilot-context
               itemType: architecture
               text: Zero trust illustrations
         # Card
@@ -108,13 +108,13 @@ conceptualContent:
         # Card
         - title: Enable Copilot in Viva
           links:
-            - url: /viva/insights/org-team-insights/copilot-dashboard?bc=%2fmicrosoft-365%2fcopilot%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fcopilot%2ftoc.json
+            - url: /viva/insights/org-team-insights/copilot-dashboard?context=/copilot/microsoft-365/context/m365-copilot-context
               itemType: how-to-guide
               text: Microsoft Copilot Dashboard in Viva Insights
-            - url: /viva/engage/configure-copilot-for-engage?bc=%2fmicrosoft-365%2fcopilot%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fcopilot%2ftoc.json
+            - url: /viva/engage/configure-copilot-for-engage?context=/copilot/microsoft-365/context/m365-copilot-context
               itemType: how-to-guide
               text: Set up Copilot in Viva Engage
-            - url: /viva/goals/copilot-intro?bc=%2fmicrosoft-365%2fcopilot%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fcopilot%2ftoc.json
+            - url: /viva/goals/copilot-intro?context=/copilot/microsoft-365/context/m365-copilot-context
               itemType: how-to-guide
               text: Enable Copilot in Viva Goals
         # Card
