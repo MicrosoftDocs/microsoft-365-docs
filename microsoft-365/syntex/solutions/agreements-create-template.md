@@ -173,7 +173,7 @@ To set up a mandatory signature workflow, follow these steps:
 
 ## Request approval before publishing a template
 
-Once you have made the relevant changes to a template and configured for your business need, you can optionally choose to send a draft template for approval before publishing the template. The SharePoint Agreements AI solution uses the Approvals app in Teams to send approval requests. For more information, see [Approvals in Microsoft Teams - Power Automate](/power-automate/teams/native-approvals-in-teams).
+Once you have made the relevant changes to a template and configured for your business need, you can optionally choose to send a draft template for approval before publishing the template. The SharePoint Agreements AI solution uses the Approvals app in Teams to send approval requests. For more information, see [Approvals in Microsoft Teams](/power-automate/teams/native-approvals-in-teams).
 
 Once the template state is **Published**, it becomes available for document authors to use it for document generation.
 
