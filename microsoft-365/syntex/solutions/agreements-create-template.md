@@ -23,7 +23,7 @@ description: Learn how to create a template with the SharePoint Agreements AI so
 > [!NOTE]
 > This feature is currently in limited preview and subject to change.
 
-Templates serve as a standard format for consistently generating agreements. You can convert an existing agreement to a template or start with a blank document
+Templates serve as a standard format for consistently generating agreements. You can convert an existing agreement to a template or start with a blank document.
 
 ## Create a new template or use an existing agreement
 
@@ -70,7 +70,7 @@ Once the template's draft is shown in Word on the **Manage templates** panel, yo
 
 For example, the name of a contractor can occur multiple times in a consulting agreement document. You can create a field named "Contractor Name" and associate it with all occurrences of the name throughout the document when you generate a template.
 
-### Create and reuse fields**
+### Create and reuse fields
 
 1. On the **Manage templates** panel, select **Set up fields**.
 
