@@ -71,7 +71,7 @@ Workspaces are grouped areas where templates, snippets, and agreements live. Eac
 
 Before setting up a workspace for SharePoint Agreements AI, you'll need:  
 
-- User accounts with [Microsoft 365 E3](https://www.microsoft.com/en-us/microsoft-365/enterprise/e3?activetab=pivot:overviewtab) or [Microsoft 365 E5](https://www.microsoft.com/en-us/microsoft-365/enterprise/e5) license and the [SharePoint Content Solution - Agreements (Preview) license](#get-and-assign-licenses.md).
+- User accounts with [Microsoft 365 E3](https://www.microsoft.com/en-us/microsoft-365/enterprise/e3?activetab=pivot:overviewtab) or [Microsoft 365 E5](https://www.microsoft.com/en-us/microsoft-365/enterprise/e5) license and the [SharePoint Content Solution - Agreements (Preview) license](#get-and-assign-licenses).
 
 - The user implementing the steps in the document needs to be either a SharePoint Administrator or a Global Administrator.
 
