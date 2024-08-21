@@ -27,21 +27,21 @@ Templates serve as a standard format for consistently generating agreements. You
 
 ## Create a new template or use an existing agreement
 
-Follow these steps to create a new template.
+To create a new template, follow these steps:
 
-1. Navigate to Agreements app in Teams, select **Create a template**.
+1. Go to the Agreements app in Microsoft Teams, and then select **Create a template**.
 
 2. Optionally, you can select **Pick a file** to create a template from an existing document.
 
 3. Provide a name for the template.
 
-4. Select the workspace where the template will be stored and the category which the template belongs to.
+4. Select the workspace where the template will be stored and the category that the template belongs to.
 
-5. Set values for country and language for the template.
+5. Set the values for country/region and language for the template.
 
 6. You can also optionally provide a description and tags.
 
-7. Select **Open in Word** to setup fields, insert sections, configure workflows and request for approvals, and publish it once it's ready.
+7. Select **Open in Word** to set up fields, insert sections, configure workflows, request approvals, and publish it once it's ready.
 
     > [!NOTE]
     > You can't change the name of the template or the workspace where the template is stored after a draft template is created.
@@ -50,7 +50,7 @@ Follow these steps to create a new template.
 
 You can also create a template in Microsoft Word.
 
-1. Navigate to the **Agreements** tab in Word, select **Manage templates**.
+1. Go to the **Agreements** tab in Word, and then select **Manage templates**.
 
 2. To create a new blank template, select **Create new template**.
 
@@ -58,9 +58,9 @@ You can also create a template in Microsoft Word.
 
 4. Provide a user-friendly name and a description for the template.
 
-5. Select the workspace where the template will be stored and the category which the template belongs to.
+5. Select the workspace where the template will be stored and the category that the template belongs to.
 
-6. Set values for the country and language for the template.
+6. Set values for the country/region and language for the template.
 
 7. Select **Save** to create the draft template.
 
@@ -70,7 +70,7 @@ TBD
 
 ## Associate a field to a list or library
 
-To associate a field to the SharePoint list or library:
+To associate a field to a SharePoint list or library, follow these steps:
 
 1. Select the dropdown menu under **Type** and select **SharePoint list**. Then, use the **Select** button to choose a SharePoint column.
 
@@ -90,15 +90,15 @@ To associate a field to the SharePoint list or library:
 
 ![](media/image4.png)
 
-If you want users to be able to add inputs manually, in addition to choosing from a list, select **Document authors can type in values manually for this field**. In this case, the default for the manual input data type is single line of text. Also, the values input by the authors will only be used to generate the document. They will not be added to the SharePoint list.
+If you want users to be able to add inputs manually, in addition to choosing from a list, select **Document authors can type in values manually for this field**. In this case, the default for the manual input data type is single line of text. Also, the values input by the authors will only be used to generate the document. They won't be added to the SharePoint list.
 
 ### Insert the field into the template
 
-To insert the added field into the content of a template:
+To insert the added field into the content of a template, follow these steps:
 
 1. Select the content of the template (any text in the document) that you want to replace with a field or place the cursor at a specific location in the template where you want to insert the field.
 
-2. To insert the field only at the specified selection, select **Insert**. To insert the field at all similar places in the document, select the down arrow icon next to the **Insert** button and select **Insert at all similar places**. This will insert the field at all locations with text that exactly matches the selected text.
+2. To insert the field only at the specified selection, select **Insert**. To insert the field at all similar places in the document, select the down arrow icon next to the **Insert** button and select **Insert at all similar places**. This inserts the field at all locations with text that exactly matches the selected text.
 
 ![](media/image5.png)
 
@@ -112,15 +112,15 @@ To insert the added field into the content of a template:
 
 Sections are reusable blocks of content that can be inserted in a template. They can form one of the core building blocks of your templates. You can create sections once and use them across multiple templates. Once you create a new template or edit an existing template, you can choose to insert new or remove already inserted published sections.
 
-To insert a section into the content of a template:
+To insert a section into the content of a template, follow these steps:
 
 1. From the **Manage templates** panel, select **Insert sections**.
 
-2. Choose **+Select a section from library.** This will take you to the list of published sections.
+2. Choose **+Select a section from library.** This takes you to the list of published sections.
 
 3. Pick the relevant section for your template from the list, and then choose **Select**.
 
-4. Optionally, you can edit section content after it is placed in the template as needed, if the section is marked as **Editable**.
+4. Optionally, you can edit section content after it's placed in the template as needed, if the section is marked as **Editable**.
 
 5. You can insert as many sections as possible. The list of sections inserted will be displayed under the **Insert sections** section. You can select the relevant section, and the Word document will auto-scroll to the canvas section where the section is inserted.
 
@@ -128,19 +128,19 @@ To insert a section into the content of a template:
 
 ## Configure workflows
 
-Create customizable workflows that will apply to all documents when created with the template.
+Create customizable workflows that apply to all documents when created with the template.
 
 ### Configure an approval workflow for documents generated from the template
 
 Once you create a new template or edit an existing template, you can configure an approval flow so that all documents generated from the template are approved by the set of approvers before it can proceed to the next step.
 
-To set up a mandatory approval workflow:
+To set up a mandatory approval workflow, follow these steps:
 
 1. In the **Configure workflow** section, select **Configure required approval**.
 
 ![](media/image1.png)
 
-2. Set the name of the approval request. The name can be modified by document authors when they will be prompted to send the approval request after document authoring is completed.
+2. Set the name of the approval request. The name can be modified by document authors when they'll be prompted to send the approval request after document authoring is completed.
 
 3. Select **Approvers** (who needs to approve it) and decide the approval order. Once the changes are done, select **Setup approval flow**. Multiple approvers can be added to a level, and only one of them needs to approve for the request to move to next level.
 
@@ -152,9 +152,9 @@ To set up a mandatory approval workflow:
 
 ## Configure a SharePoint eSignature workflow
 
-Once you create a new template or edit an existing one, you can configure a SharePoint eSignature flow so that all documents generated from the template must be sent for signatures as designated in the assigned flow. Agreements Solution leverages SharePoint eSignature solution to set up and send signature requests to recipients. For more information, see [Overview of SharePoint eSignature](/microsoft-365/syntex/esignature-overview).
+Once you create a new template or edit an existing one, you can configure a SharePoint eSignature flow so that all documents generated from the template must be sent for signatures as designated in the assigned flow. The SharePoint Agreements AI solution uses SharePoint eSignature to set up and send signature requests to recipients. For more information, see [Overview of SharePoint eSignature](/microsoft-365/syntex/esignature-overview).
 
-To set up a mandatory signature workflow, do the following steps.
+To set up a mandatory signature workflow, follow these steps:
 
 1. In the **Configure workflow** section, select **Configure required signatures**.
 
@@ -170,3 +170,32 @@ To set up a mandatory signature workflow, do the following steps.
 5. You can create multiple signature fields for your template and add its instances in the Word document.
 
 6. Once set up, you can also choose to later modify the signature request. Once your modifications are complete, select **Save changes** to save the updated flow. You can delete the already saved signature flow by selecting **Delete signature flow**.
+
+## Request approval before publishing a template
+
+Once you have made the relevant changes to a template and configured for your business need, you can optionally choose to send a draft template for approval before publishing the template. The SharePoint Agreements AI solution uses the Approvals app in Teams to send approval requests. For more information, see [Approvals in Microsoft Teams - Power Automate](/power-automate/teams/native-approvals-in-teams).
+
+Once the template state is **Published**, it becomes available for document authors to use it for document generation.
+
+To request approval before publishing the section, follow these steps:
+
+1. From the **Agreements** tab in Word, select **Manage template**.
+
+2. Select the template to send for approval or [create a new template](#create-a-template-in-microsoft-word).
+
+3. Select the **Request approval before publishing** option to set up an approval flow before publishing the template.
+
+4. Create the approval request.
+
+![](media/image1.png)
+
+5. Fill in the name of the request and the approvers (who needs to approve it). Decide approval order, add any additional information, and then select **Notify via email** if you want to send email notifications along with Teams notification.
+
+6. After configuring the approval request, select **Send**. The template document is marked as read-only once approval request starts and those approvers who don't have access to the template will be granted view permissions.
+
+![](media/image2.png)
+
+7. Once the approval request is sent, you can track the request status (**Approval in progress** or **Approval completed**) through the Word pane by reloading the template management pane or selecting **Refresh**. You'll be able also view the request later by selecting the **Sent** tab in the Approvals app in Teams.
+
+8. You can cancel the sent approval request by selecting **Cancel request** or select **Edit section**, which will cancel all running flows and unlock the template for further edits, and the document will return to **Draft** state.
+
