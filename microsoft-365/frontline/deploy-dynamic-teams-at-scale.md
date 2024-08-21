@@ -54,7 +54,7 @@ To complete the steps in this article, you must be a Global admin or a Teams adm
 
 To give Teams admins the ability to complete setup and deploy frontline dynamic teams, Global admins can create the custom role and assign it to Teams admins using the following steps.
 
-#### Create a custom role
+#### Create the custom role
 
 1. In the Microsoft Entra admin center, go to the [Roles and administrators](https://entra.microsoft.com/#view/Microsoft_AAD_IAM/RolesManagementMenuBlade/~/AllRoles) page, and then select **New custom role**.
 1. On the **Basics** tab, provide a name for the role. You can also optionally provide a description.
@@ -64,15 +64,17 @@ To give Teams admins the ability to complete setup and deploy frontline dynamic 
     - **microsoft.directory/servicePrincipals/create**
 1. On the **Review + create** tab, review the role definition, and then choose **Create**.
 
-    :::image type="content" source="media/dtas-custom-role.png" alt-text="Screenshot of the Review + create tab for reviewing the role definition of the new custom role.":::
+    :::image type="content" source="media/dtas-custom-role.png" alt-text="Screenshot of the Review + create tab for reviewing the role definition of the new custom role." lightbox="media/dtas-custom-role.png":::
 
 #### Assign the custom role
 
 1. In the Microsoft Entra admin center, go to the [Roles and administrators](https://entra.microsoft.com/#view/Microsoft_AAD_IAM/RolesManagementMenuBlade/~/AllRoles) page, and then select the name of the new custom role you created.
 1. Choose **Add assignments**.
-1. Select **No member selected**, and then select the Teams admins to which you want to assign the custom role. 
+1. Select **No member selected**, and then select the Teams admins to which you want to assign the custom role.
 1. Choose **Next**.
 1. On the **Setting** tab, set **Assignment type** as **Active**.
+
+    :::image type="content" source="media/dtas-custom-role-assignment-type.png" alt-text="Screenshot of the Setting tab, showing assignment type justification." lightbox="media/dtas-custom-role-assignment-type.png":::
 1. Provide a justification, and then choose **Assign**.
 
 ### Prerequisites
