@@ -48,9 +48,13 @@ Check out this [Microsoft Mechanics video](https://www.youtube.com/watch?v=gdkTn
 
 ## Before you begin
 
-To run the deployment process, you must be a Global admin or you can create a custom role in Microsoft Entra ID and assign it to a Teams admin to complete the steps in this article.
+### Admin role to run the deployment
 
-### Create a custom role
+To complete the steps in this article, you must be a Global admin or a Teams admin who is assigned a custom role in Microsoft Entra ID with specific permissions.
+
+Global admins can create the custom role and assign it to Teams admins using the following steps:
+
+#### Create a custom role
 
 1. In the Microsoft Entra admin center, go to the [Roles and administrators](https://entra.microsoft.com/#view/Microsoft_AAD_IAM/RolesManagementMenuBlade/~/AllRoles) page, and then select **New custom role**.
 1. On the **Basics** tab, provide a name for the role. You can also optionally provide a description.
@@ -60,7 +64,7 @@ To run the deployment process, you must be a Global admin or you can create a cu
     - **microsoft.directory/servicePrincipals/create**
 1. On the **Review + create** tab, review the role definition, and then choose **Create**.
 
-### Assign the custom role
+#### Assign the custom role
 
 1. In the Microsoft Entra admin center, go to the [Roles and administrators](https://entra.microsoft.com/#view/Microsoft_AAD_IAM/RolesManagementMenuBlade/~/AllRoles) page, and then select the name of the new custom role you created.
 1. Choose **Add assignments**.
@@ -69,7 +73,7 @@ To run the deployment process, you must be a Global admin or you can create a cu
 1. On the **Setting** tab, set **Assignment type** as **Active**.
 1. Provide a justification, and then choose **Assign**.
 
-## Prerequisites
+### Prerequisites
 
 - Users must have a Microsoft 365 F3, F1, E3, or E5 license. If a user doesn't have one of these licenses, they need a Microsoft Entra ID P1 add-on license to use dynamic teams. [Learn more about frontline licensing](flw-licensing-options.md).
 - Ensure you can define your frontline workers and their work locations through data available in Microsoft Entra ID. If you don't have this data in Microsoft Entra ID, you can sync it through a [human capital management (HCM) connector](/azure/active-directory/app-provisioning/plan-cloud-hr-provision) or [use the PowerShell solution](deploy-teams-at-scale.md) to create static teams at scale.
