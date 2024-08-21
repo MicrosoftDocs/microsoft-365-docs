@@ -74,21 +74,21 @@ To associate a field to a SharePoint list or library, follow these steps:
 
 1. Select the dropdown menu under **Type** and select **SharePoint list**. Then, use the **Select** button to choose a SharePoint column.
 
-![](media/image1.png)
+   ![A screenshot of <describe the screenshot>.](../../media/content-understanding/agreements-placeholder.png)
 
 2. On the **Select a list** page, select the list location and the list you want to use, and then select **Next**.
 
-![](media/image2.png)
+   ![A screenshot of <describe the screenshot>.](../../media/content-understanding/agreements-placeholder.png)
 
 3. On the **Select a source column from the existing list** page, select the column name you want to associate with the field, and then select **Save**.
 
-![](media/image3.png)
+   ![A screenshot of <describe the screenshot>.](../../media/content-understanding/agreements-placeholder.png)
 
 4. If you want to see the original page of lists again, select the **Go to the list in SharePoint** link at the bottom of the list.
 
 5. When you're done, you'll see that the list field has been associated with the field.
 
-![](media/image4.png)
+   ![A screenshot of <describe the screenshot>.](../../media/content-understanding/agreements-placeholder.png)
 
 If you want users to be able to add inputs manually, in addition to choosing from a list, select **Document authors can type in values manually for this field**. In this case, the default for the manual input data type is single line of text. Also, the values input by the authors will only be used to generate the document. They won't be added to the SharePoint list.
 
@@ -100,11 +100,11 @@ To insert the added field into the content of a template, follow these steps:
 
 2. To insert the field only at the specified selection, select **Insert**. To insert the field at all similar places in the document, select the down arrow icon next to the **Insert** button and select **Insert at all similar places**. This inserts the field at all locations with text that exactly matches the selected text.
 
-![](media/image5.png)
+   ![A screenshot of <describe the screenshot>.](../../media/content-understanding/agreements-placeholder.png)
 
 3. To identify or review the multiple field insertions in the template, use the left and right arrows at the bottom of the field card.
 
-![](media/image6.png)
+   ![A screenshot of <describe the screenshot>.](../../media/content-understanding/agreements-placeholder.png)
 
 4. To delete the field or view more details and perform additional actions, select **More options** (**...**) on the field card.
 
@@ -138,17 +138,17 @@ To set up a mandatory approval workflow, follow these steps:
 
 1. In the **Configure workflow** section, select **Configure required approval**.
 
-![](media/image1.png)
+   ![A screenshot of <describe the screenshot>.](../../media/content-understanding/agreements-placeholder.png)
 
 2. Set the name of the approval request. The name can be modified by document authors when they'll be prompted to send the approval request after document authoring is completed.
 
 3. Select **Approvers** (who needs to approve it) and decide the approval order. Once the changes are done, select **Setup approval flow**. Multiple approvers can be added to a level, and only one of them needs to approve for the request to move to next level.
 
-![](media/image2.png)
+   ![A screenshot of <describe the screenshot>.](../../media/content-understanding/agreements-placeholder.png)
 
 4. Once set up, you can also choose to later modify the approval request. Once your modifications are complete, select **Save changes** to save the updated flow. You can delete the already saved approval flow by selecting **Delete approval flow**.
 
-![](media/image3.png)
+   ![A screenshot of <describe the screenshot>.](../../media/content-understanding/agreements-placeholder.png)
 
 ## Configure a SharePoint eSignature workflow
 
@@ -187,15 +187,14 @@ To request approval before publishing the section, follow these steps:
 
 4. Create the approval request.
 
-![](media/image1.png)
+   ![A screenshot of <describe the screenshot>.](../../media/content-understanding/agreements-placeholder.png)
 
 5. Fill in the name of the request and the approvers (who needs to approve it). Decide approval order, add any additional information, and then select **Notify via email** if you want to send email notifications along with Teams notification.
 
 6. After configuring the approval request, select **Send**. The template document is marked as read-only once approval request starts and those approvers who don't have access to the template will be granted view permissions.
 
-![](media/image2.png)
+   ![A screenshot of <describe the screenshot>.](../../media/content-understanding/agreements-placeholder.png)
 
 7. Once the approval request is sent, you can track the request status (**Approval in progress** or **Approval completed**) through the Word pane by reloading the template management pane or selecting **Refresh**. You'll be able also view the request later by selecting the **Sent** tab in the Approvals app in Teams.
 
 8. You can cancel the sent approval request by selecting **Cancel request** or select **Edit section**, which will cancel all running flows and unlock the template for further edits, and the document will return to **Draft** state.
-
