@@ -15,7 +15,7 @@ ms.collection:
     - m365initiative-syntex
 ms.localizationpriority:  medium
 ROBOTS: NOINDEX, NOFOLLOW
-description: Learn how to get sarted with the SharePoint Agreements AI solution.
+description: Learn how to get started with the SharePoint Agreements AI solution.
 ---
 
 # Get started with the SharePoint Agreements AI solution (Preview)
@@ -25,27 +25,25 @@ description: Learn how to get sarted with the SharePoint Agreements AI solution.
 
 ## Get and assign licenses
 
-To activate the SharePoint Agreements AI solution, an account with Global Administrator privilege is needed to purchase licenses and assign the licenses to users.
+You must be a SharePoint Administrator or Global Administrator to activate the SharePoint Agreements AI solution, purchase licenses, and assign the licenses to users.
 
 > [!NOTE]
 > While in preview, these licenses are 100% discounted for up to 25 users for 6 months.
 
-Your Microsoft representative will provide a promo code link. Select the link and sign in as an account with Global Administrator privilege when prompted.
-
 ### Get the license
 
-1. Navigate to the promo code link and sign in with a Microsoft 365 global administrator account.
+1. Your Microsoft representative will provide you with a promo code link. Select the link and sign in as a Global Administrator.
 
 ![](media/image1.png)
 
-2. Provide your contact and billing information. This step requires a credit card, and the card will not be charged during preview.
+2. Provide your contact and billing information. This step requires a credit card, and the card won't be charged during preview.
 
 ![](media/image2.png)
 
-3. Choose the number of licenses you would like. The promotional link will give you 100% discount on up to 25 licenses for 6 months.
+3. Choose the number of licenses you would like. The promotional link will give you 100% discount on up to 25 licenses for six months.
 
-> [!IMPORTANT]
-> By default, the number of licenses is set to 1. Change this to 25 licenses to get the most out of the promo code.
+    > [!IMPORTANT]
+    > By default, the number of licenses is set to 1. Change this to 25 licenses to get the most out of the promo code.
 
 ![](media/image3.png)
 
@@ -55,9 +53,9 @@ Your Microsoft representative will provide a promo code link. Select the link an
 
 ## Assign licenses
 
-Assigning licenses to users is performed the same way as assigning other licenses, such as Microsoft 365 E3 or Micrsoft 365 E5.
+Assigning licenses to users is performed the same way as assigning other licenses, such as Microsoft 365 E3 or Microsoft 365 E5.
 
-1. Log into the [Microsoft 365 admin portal](https://admin.microsoft.com/) as a user with Global Administrator privilege.
+1. Log into the [Microsoft 365 admin portal](https://admin.microsoft.com/) as a Global Administrator.
 
 2. Navigate to **Users** > **Active users**.
 
@@ -71,35 +69,38 @@ Workspaces are grouped areas where templates, snippets, and agreements live. Eac
 
 ### Prerequisites
 
-Before setting up a workspace for SharePoint Agreements AI, you will need:  
+Before setting up a workspace for SharePoint Agreements AI, you'll need:  
 
-- User accounts with [Microsoft 365 E3](https://www.microsoft.com/en-us/microsoft-365/enterprise/e3?activetab=pivot:overviewtab) or [Microsoft 365 E5](https://www.microsoft.com/en-us/microsoft-365/enterprise/e5) license as well as the [SharePoint Content Solution - Agreements (Preview) license](#get-and-assign-licenses.md).
+- User accounts with [Microsoft 365 E3](https://www.microsoft.com/en-us/microsoft-365/enterprise/e3?activetab=pivot:overviewtab) or [Microsoft 365 E5](https://www.microsoft.com/en-us/microsoft-365/enterprise/e5) license and the [SharePoint Content Solution - Agreements (Preview) license](#get-and-assign-licenses.md).
 
 - The user implementing the steps in the document needs to be either a SharePoint Administrator or a Global Administrator.
 
-- Enable Azure pay-as-you-go in your tenant.  For more information, see [Configure Microsoft Syntex for pay-as-you-go billing.](/microsoft-365/syntex/syntex-azure-billing).
+- Enable Azure pay-as-you-go in your tenant. For more information, see [Configure Microsoft Syntex for pay-as-you-go billing.](/microsoft-365/syntex/syntex-azure-billing).
 
-### Permissions
+- Download and install latest [SharePoint Online Management Shell](https://www.microsoft.com/en-in/download/details.aspx?id=35588).
 
-[Download & Install latest SharePoint Online Management Shell](https://www.microsoft.com/en-in/download/details.aspx?id=35588).
-
-You must be a SharePoint Administrator or Global Administrator to create sites through the SharePoint Online Management Shell.
+> [!NOTE]
+> You must be a SharePoint Administrator or Global Administrator to create sites through the SharePoint Online Management Shell.
 
 ### Create a workspace
 
-1. Launch the SharePoint Online Management Shell, and log in as a user with Global Administrator or SharePoint administrator privileges.
+1. Launch the SharePoint Online Management Shell, and sign in as a Global Administrator or SharePoint Administrator.
 
-2. Connect to your tenant by running the following command: <br>Connect-SPOService -Url "https://\<tenantName>-admin.sharepoint.com"  <br>after replacing \<tenantName> with the name of your SharePoint tenant.
+2. Connect to your tenant by running the following command:
 
-3. Run the following command to create a new SharePoint site and set it as an Agreements Workspace.
+    `Connect-SPOService -Url "https://\<tenantName>-admin.sharepoint.com"`
+    
+    Replace \<tenantName> with the name of your SharePoint tenant.
 
-    New-SPOSite -Url "\<URL>" -Owner "\<user>" -StorageQuota 1000 -Title "<Workspace Name>" -EnableAgreementsSolution -Template "STS#3" 
+3. Run the following command to create a new SharePoint site and set it as an Agreements workspace.
+
+    `New-SPOSite -Url "\<URL>" -Owner "\<user>" -StorageQuota 1000 -Title "<Workspace Name>" -EnableAgreementsSolution -Template "STS#3"`
 
     Where \<URL> is the target URL of the new site.  
 
-    \<User> is the email address of the owner of the new workspace. 
+    \<User> is the email address of the owner of the new workspace.
 
-    <Workspace Name> is the name you would like for the new workspace. 
+    <Workspace Name> is the name you would like for the new workspace.
 
 ## Add the Agreements app in Microsoft Teams
 
@@ -113,11 +114,11 @@ You must be a SharePoint Administrator or Global Administrator to create sites t
 
    ![](media/image2.png)
 
-4. You will see the Agreements app on the left navigation menu.
+4. You'll see the Agreements app on the left navigation menu.
 
 5. For ease of access, you can right-click **Agreements** and pin the app to the left navigation menu.
 
-## Set up the workspace setup
+## Set up the workspace
 
 After the workspace is created, the owner of the workspace can assign users to specific roles within the Agreements workspace.  
 
@@ -125,11 +126,11 @@ After the workspace is created, the owner of the workspace can assign users to s
 
 The following roles can be assigned:
 
-- **Workspace owner**, this role can assign additional users to roles, can create and manage categories and manages templates.
+- **Workspace owner**. This role can assign additional users to roles, create and manage categories, and manage templates.
 
-- **Workspace member**, this role can manage templates and has access to all agreements.
+- **Workspace member**. This role can manage templates and has access to all agreements.
 
-- **Template manager**, this role can manage templates and will not have access to all agreements by default.
+- **Template manager**. This role can manage templates and will not have access to all agreements by default.
 
 ### Manage roles
 
