@@ -128,7 +128,7 @@ When you use the **Active users** page to assign or unassign licenses, you assig
 You can invite guest users to collaborate with your organization in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2067268" target="_blank">Microsoft Entra admin center</a>. To learn about guest users, see [B2B collaboration overview](/azure/active-directory/external-identities/what-is-b2b). If you don't have any guest users, see [Quickstart: Add a guest user and send an invitation](/azure/active-directory/external-identities/b2b-quickstart-add-guest-users-portal).
 
 > [!IMPORTANT]
-> You must be a Global admin to do these steps.
+> You must be a Global Administrator to do these steps.
 
   [!INCLUDE [ga-roles-limitation](../../includes/ga-roles-limitation.md)]
 
