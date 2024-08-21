@@ -1,5 +1,5 @@
 ---
-title: Create a template with SharePoint Agreements AI solution (Preview)
+title: Create a template with the SharePoint Agreements AI solution (Preview)
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
@@ -15,7 +15,7 @@ ms.collection:
     - m365initiative-syntex
 ms.localizationpriority:  medium
 ROBOTS: NOINDEX, NOFOLLOW
-description: Learn how to get sarted with the SharePoint Agreements AI solution.
+description: Learn how to create a template with the SharePoint Agreements AI solution.
 ---
 
 # Create a template with the SharePoint Agreements AI solution (Preview)

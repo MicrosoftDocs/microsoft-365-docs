@@ -30,7 +30,7 @@ You must be a SharePoint Administrator or Global Administrator to activate the S
 > [!NOTE]
 > While in preview, these licenses are 100% discounted for up to 25 users for 6 months.
 
-### Get the license
+### Get the licenses
 
 1. Your Microsoft representative will provide you with a promo code link. Select the link and sign in as a Global Administrator.
 
@@ -51,7 +51,7 @@ You must be a SharePoint Administrator or Global Administrator to activate the S
 
 ![](media/image4.png)
 
-### Assign licenses
+### Assign the licenses
 
 Assigning licenses to users is performed the same way as assigning other licenses, such as Microsoft 365 E3 or Microsoft 365 E5.
 
