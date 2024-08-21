@@ -130,7 +130,7 @@ You can invite guest users to collaborate with your organization in the <a href=
 > [!IMPORTANT]
 > You must be a Global Administrator to do these steps.
 
-  [!INCLUDE [ga-roles-limitation](../../includes/ga-roles-limitation.md)]
+[!INCLUDE [ga-roles-limitation](../../includes/ga-roles-limitation.md)]
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2067268" target="_blank">Microsoft Entra admin center</a>.
 2. In the navigation pane, select **Users** > **All Users**.
