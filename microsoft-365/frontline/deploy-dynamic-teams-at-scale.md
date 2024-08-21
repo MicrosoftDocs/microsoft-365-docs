@@ -54,7 +54,7 @@ To complete the steps in this article, you must be a Global admin or a Teams adm
 
 To give Teams admins the ability to complete setup and deploy frontline dynamic teams, Global admins can create the custom role and assign it to Teams admins using the following steps.
 
-**Create the custom role**
+#### Create the custom role
 
 1. In the Microsoft Entra admin center, go to the [Roles and administrators](https://entra.microsoft.com/#view/Microsoft_AAD_IAM/RolesManagementMenuBlade/~/AllRoles) page, and then select **New custom role**.
 1. On the **Basics** tab, provide a name for the role. You can also optionally provide a description.
@@ -66,7 +66,7 @@ To give Teams admins the ability to complete setup and deploy frontline dynamic 
 
     :::image type="content" source="media/dtas-custom-role.png" alt-text="Screenshot of the Review + create tab for reviewing the role definition of the new custom role." lightbox="media/dtas-custom-role.png":::
 
-**Assign the custom role**
+#### Assign the custom role
 
 1. In the Microsoft Entra admin center, go to the [Roles and administrators](https://entra.microsoft.com/#view/Microsoft_AAD_IAM/RolesManagementMenuBlade/~/AllRoles) page, and then select the name of the new custom role you created.
 1. Choose **Add assignments**.
