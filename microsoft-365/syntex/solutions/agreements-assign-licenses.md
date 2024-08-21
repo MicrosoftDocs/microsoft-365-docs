@@ -1,0 +1,163 @@
+---
+title: Get started with the SharePoint Agreements AI solution
+ms.author: chucked
+author: chuckedmonson
+manager: jtremper
+ms.reviewer: ssathyamoort
+ms.date: 09/01/2024
+audience: admin
+ms.topic: conceptual
+ms.service: microsoft-syntex
+ms.subservice: syntex-content-intelligence
+search.appverid: 
+ms.collection: 
+    - enabler-strategic
+    - m365initiative-syntex
+ms.localizationpriority:  medium
+ROBOTS: NOINDEX, NOFOLLOW
+description: Learn how to get sarted with the SharePoint Agreements AI solution.
+---
+
+# Get started with the SharePoint Agreements AI solution
+
+## Get and assign licenses
+
+To activate the SharePoint Agreements AI solution, an account with Global Administrator privilege is needed to purchase licenses and assign the licenses to users.
+
+> [!NOTE]
+> While in preview, these licenses are 100% discounted for up to 25 users for 6 months.
+
+Your Microsoft representative will provide a promo code link. Click the link and sign in as an account with Global Administrator privilege when prompted.
+
+### Get the license
+
+1. Navigate to this link and sign in with a Microsoft 365 global administrator account.
+
+![](media/image1.png)
+
+2. Provide your contact and billing information. This step requires a credit card, and the card will not be charged during preview.
+
+![](media/image2.png)
+
+3. Choose the number of licenses you would like. The promotional link will give you 100% discount on up to 25 licenses for 6 months.
+
+> [!IMPORTANT]
+> By default, the number of licenses is set to 1. Change this to 25 licenses to get the most out of the promo code.
+
+![](media/image3.png)
+
+4. Place the order.
+
+![](media/image4.png)
+
+## Assign licenses
+
+Assigning licenses to users is performed the same way as assigning other licenses, such as E3 or E5.
+
+1. Log into the [Microsoft 365 admin portal](https://admin.microsoft.com/) as a user with global administrator privilege.
+
+2. Navigate to Users -> Active users.
+
+3. Select the users who you would like to assign the license to. In the user information panel, go to **Licenses and apps** and assign the new **SharePoint Content Solution - Agreements (Preview)** license.
+
+![](media/image5.png)
+
+
+## Set up workspaces
+
+Workspaces are grouped areas where templates, snippets, and agreements live. Each workspace maps to a SharePoint site. Permissions are also defined at a workspace level. We recommend creating one workspace for every business line. For example, you could have one workspace each for your Legal, Procurement, and Human Resources departments.
+
+### Prerequisites
+
+Before setting up a workspace for SharePoint Agreements AI, you will need:  
+
+- User accounts with [Microsoft 365 E3](https://www.microsoft.com/en-us/microsoft-365/enterprise/e3?activetab=pivot:overviewtab) or [Microsoft 365 E5](https://www.microsoft.com/en-us/microsoft-365/enterprise/e5) license as well as the [SharePoint Content Solution - Agreements (Preview) license](#get-and-assign-licenses.md).
+
+- The user implementing the steps in the document needs to be either a SharePoint Administrator or a Global Administrator.
+
+- Enable Azure pay-as-you-go in your tenant.  For more information, see [Configure Microsoft Syntex for pay-as-you-go billing.](/microsoft-365/syntex/syntex-azure-billing).
+
+### Permissions
+
+[Download & Install latest SharePoint Online Management Shell](https://www.microsoft.com/en-in/download/details.aspx?id=35588).
+
+You must be a SharePoint Administrator or Global Administrator to create sites through the SharePoint Online Management Shell.
+
+### Create a workspace
+
+1. Launch the SharePoint Online Management Shell, and log in as a user with Global Administrator or SharePoint administrator privileges.
+
+2. Connect to your tenant by running the following command: <br>Connect-SPOService -Url "https://\<tenantName>-admin.sharepoint.com"  <br>after replacing \<tenantName> with the name of your SharePoint tenant.
+
+3. Run the following command to create a new SharePoint site and set it as an Agreements Workspace.
+
+    New-SPOSite -Url "\<URL>" -Owner "\<user>" -StorageQuota 1000 -Title "<Workspace Name>" -EnableAgreementsSolution -Template "STS#3" 
+
+    Where \<URL> is the target URL of the new site.  
+
+    \<User> is the email address of the owner of the new workspace. 
+
+    <Workspace Name> is the name you would like for the new workspace. 
+
+## Add the Agreements app in Microsoft Teams
+
+1. Launch Microsoft Teams.
+
+2. On the left navigation menu, select **+Apps**.
+
+   ![](media/image1.png)
+
+3. Search for **Agreements**, and then select **Add**.
+
+   ![](media/image2.png)
+
+4. You will see the Agreements app on the left navigation menu.
+
+5. For ease of access, you can right-click on **Agreements** and pin the app to the left navigation menu.
+
+---
+author: Sathana Valli Sathya Moorthi
+ms.date: 08/20/2024
+---
+**Workspace setup** 
+
+After the Workspace is created, the owner of the workspace can assign users to specific roles within the Agreements workspace.  
+
+The following roles can be assigned: 
+
+**Workspace owner**, this role can assign additional users to roles, can create and manage categories and manages templates. 
+
+**Workspace member**, this role can manage templates and has access to all agreements. 
+
+**Template manager**, this role can manage templates and will not have access to all agreements by default. 
+
+ 
+
+**Managing roles** 
+
+To manage roles in a workspace: 
+
+As a workspace owner, launch the Agreements App in Teams. 
+
+Navigate to the Setup & access tab. 
+
+Select the Roles option from the left navigation menu. 
+
+Select the role you would like to manage. 
+
+Here, you can add or remove users. 
+
+![A screenshot of a computer  Description automatically generated](media/image1.png)
+
+**Managing categories** 
+
+To manage categories in the Agreements app: 
+
+As a workspace owner, launch the Agreements App in Teams as the tab. 
+
+Navigate to the Setup & access tab. 
+
+Select the Categories option from the left navigation menu. 
+
+Here, you can see all the existing categories available in your workspace. You can rename an existing category or create new categories as needed. 
+
