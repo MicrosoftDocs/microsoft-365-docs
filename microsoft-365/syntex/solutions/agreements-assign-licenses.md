@@ -113,51 +113,47 @@ You must be a SharePoint Administrator or Global Administrator to create sites t
 
 4. You will see the Agreements app on the left navigation menu.
 
-5. For ease of access, you can right-click on **Agreements** and pin the app to the left navigation menu.
+5. For ease of access, you can right-click **Agreements** and pin the app to the left navigation menu.
 
----
-author: Sathana Valli Sathya Moorthi
-ms.date: 08/20/2024
----
-**Workspace setup** 
+## Set up the workspace setup
 
-After the Workspace is created, the owner of the workspace can assign users to specific roles within the Agreements workspace.  
+After the workspace is created, the owner of the workspace can assign users to specific roles within the Agreements workspace.  
 
-The following roles can be assigned: 
+### Assign roles
 
-**Workspace owner**, this role can assign additional users to roles, can create and manage categories and manages templates. 
+The following roles can be assigned:
 
-**Workspace member**, this role can manage templates and has access to all agreements. 
+- **Workspace owner**, this role can assign additional users to roles, can create and manage categories and manages templates.
 
-**Template manager**, this role can manage templates and will not have access to all agreements by default. 
+- **Workspace member**, this role can manage templates and has access to all agreements.
 
- 
+- **Template manager**, this role can manage templates and will not have access to all agreements by default.
 
-**Managing roles** 
+### Manage roles
 
-To manage roles in a workspace: 
+To manage roles in a workspace:
 
-As a workspace owner, launch the Agreements App in Teams. 
+1. As a workspace owner, launch the Agreements app in Teams.
 
-Navigate to the Setup & access tab. 
+2. Navigate to the **Setup & access** tab.
 
-Select the Roles option from the left navigation menu. 
+3. From the left navigation menu, select the **Roles** option.
 
-Select the role you would like to manage. 
+4. Select the role you would like to manage.
 
-Here, you can add or remove users. 
+    Here, you can add or remove users.
 
-![A screenshot of a computer  Description automatically generated](media/image1.png)
+![A screenshot of a computer description automatically generated](media/image1.png)
 
-**Managing categories** 
+### Manage categories
 
-To manage categories in the Agreements app: 
+To manage categories in the Agreements app:
 
-As a workspace owner, launch the Agreements App in Teams as the tab. 
+1. As a workspace owner, launch the Agreements App in Teams as the tab.
 
-Navigate to the Setup & access tab. 
+2. Navigate to the **Setup & access** tab.
 
-Select the Categories option from the left navigation menu. 
+3. From the left navigation menu, select the **Categories** option.
 
-Here, you can see all the existing categories available in your workspace. You can rename an existing category or create new categories as needed. 
+   Here, you can see all the existing categories available in your workspace. You can rename an existing category or create new categories as needed.
 
