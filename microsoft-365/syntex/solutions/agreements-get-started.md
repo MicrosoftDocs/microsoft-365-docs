@@ -28,13 +28,13 @@ description: Learn how to get started with the SharePoint Agreements AI solution
 You must be a SharePoint Administrator or Global Administrator to activate the SharePoint Agreements AI solution, purchase licenses, and assign the licenses to users.
 
 > [!NOTE]
-> While in preview, these licenses are 100% discounted for up to 25 users for 6 months.
+> While in preview, these licenses are 100% discounted for up to 25 users for six months.
 
 ### Get the licenses
 
 1. Your Microsoft representative will provide you with a promo code link. Select the link and sign in as a Global Administrator.
 
-   ![A screenshot of <describe the screenshot>.](../media/content-understanding/agreements-placeholder.png)
+   ![A screenshot of <describe the screenshot>.](../../media/content-understanding/agreements-placeholder.png)
 
 2. Provide your contact and billing information. This step requires a credit card, and the card won't be charged during preview.
 
