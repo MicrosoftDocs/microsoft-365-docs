@@ -66,7 +66,42 @@ You can also create a template in Microsoft Word.
 
 ## Set up fields
 
-TBD
+Once the template's draft is shown in Word on the **Manage templates** panel, you can set up new fields or use existing fields.
+
+For example, the name of a contractor can occur multiple times in a consulting agreement document. You can create a field named "Contractor Name" and associate it with all occurrences of the name throughout the document when you generate a template.
+
+### Create and reuse fields**
+
+1. On the **Manage templates** panel, select **Set up fields**.
+
+   ![A screenshot of <describe the screenshot>.](../../media/content-understanding/agreements-placeholder.png)
+
+2. Enter the name of the field in the search box. If the field name is already available, it populates the field name in the search result.
+
+3. Now select the field name. It is displayed as a card on the **Manage templates** panel with an option to insert a field to replace content in the template.
+
+   ![A screenshot of <describe the screenshot>.](../../media/content-understanding/agreements-placeholder.png)
+
+   ![A screenshot of <describe the screenshot>.](../../media/content-understanding/agreements-placeholder.png)
+
+4. If you don't find the field in the search results, you can create a new field and associate it with different data types.
+
+5. To create a new field, select **Create a new field at** the bottom of search results.
+
+6. On the **Manage templates** panel, select **Create a new field**.
+
+7. You can mark the field as a required field, add a description, and select the type of field. Fields include the following types:
+
+    - Single line of text
+    - Multiple lines of text
+    - Number
+    - Date and time
+    - Hyperlink
+    - Email
+    - Table
+    - SharePoint list
+
+   ![A screenshot of <describe the screenshot>.](../../media/content-understanding/agreements-placeholder.png)
 
 ## Associate a field to a list or library
 
@@ -86,7 +121,7 @@ To associate a field to a SharePoint list or library, follow these steps:
 
 4. If you want to see the original page of lists again, select the **Go to the list in SharePoint** link at the bottom of the list.
 
-5. When you're done, you'll see that the list field has been associated with the field.
+5. When you're done, you see that the list field has been associated with the field.
 
    ![A screenshot of <describe the screenshot>.](../../media/content-understanding/agreements-placeholder.png)
 
