@@ -52,7 +52,7 @@ Check out this [Microsoft Mechanics video](https://www.youtube.com/watch?v=gdkTn
 
 To complete the steps in this article, you must be a Global admin or a Teams admin who is assigned a custom role in Microsoft Entra ID with specific permissions.
 
-Global admins can create the custom role and assign it to Teams admins using the following steps:
+To give Teams admins the ability to complete setup and deploy frontline dynamic teams, Global admins can create the custom role and assign it to Teams admins using the following steps.
 
 #### Create a custom role
 
@@ -63,6 +63,8 @@ Global admins can create the custom role and assign it to Teams admins using the
     - **microsoft.directory/groups/dynamicMembershipRule/update**
     - **microsoft.directory/servicePrincipals/create**
 1. On the **Review + create** tab, review the role definition, and then choose **Create**.
+
+    :::image type="content" source="media/dtas-custom-role.png" alt-text="Screenshot of the Review + create tab for reviewing the role definition of the new custom role.":::
 
 #### Assign the custom role
 
