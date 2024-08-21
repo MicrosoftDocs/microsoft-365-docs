@@ -52,22 +52,22 @@ To run the deployment process, you must be a Global admin or you can create a cu
 
 ### Create a custom role
 
-1. In the Microsoft Entra admin center, go to the [Roles and administrators](https://entra.microsoft.com/#view/Microsoft_AAD_IAM/RolesManagementMenuBlade/~/AllRoles) page, and then select **New custom role**. 
-1. On the **Basics** tab, provide a name for the role. You can also optionally provide a description. 
+1. In the Microsoft Entra admin center, go to the [Roles and administrators](https://entra.microsoft.com/#view/Microsoft_AAD_IAM/RolesManagementMenuBlade/~/AllRoles) page, and then select **New custom role**.
+1. On the **Basics** tab, provide a name for the role. You can also optionally provide a description.
 1. On the **Permissions** tab, select the following permissions:
     - **microsoft.directory/groups/create**
     - **microsoft.directory/groups/dynamicMembershipRule/update**
     - **microsoft.directory/servicePrincipals/create**
-1. On the **Review + create** tab, review the permissions, and then select **Create**.
+1. On the **Review + create** tab, review the role definition, and then choose **Create**.
 
 ### Assign the custom role
 
 1. In the Microsoft Entra admin center, go to the [Roles and administrators](https://entra.microsoft.com/#view/Microsoft_AAD_IAM/RolesManagementMenuBlade/~/AllRoles) page, and then select the name of the new custom role you created.
-1. Select **Add assignments**.
-1. Select the Teams admins to which you want to assign the custom role.  
+1. Choose **Add assignments**.
+1. Select **No member selected**, and then select the Teams admins to which you want to assign the custom role. 
+1. Choose **Next**.
 1. On the **Setting** tab, set **Assignment type** as **Active**.
-1. Provide a justification, and then select **Assign**.
-
+1. Provide a justification, and then choose **Assign**.
 
 ## Prerequisites
 
