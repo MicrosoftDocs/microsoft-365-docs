@@ -34,7 +34,7 @@ You must be a SharePoint Administrator or Global Administrator to activate the S
 
 1. Your Microsoft representative will provide you with a promo code link. Select the link and sign in as a Global Administrator.
 
-![](media/image1.png)
+   ![A screenshot of <describe the screenshot>.](../media/content-understanding/agreements-placeholder.png)
 
 2. Provide your contact and billing information. This step requires a credit card, and the card won't be charged during preview.
 
@@ -97,7 +97,7 @@ Before setting up a workspace for SharePoint Agreements AI, you'll need:
     `New-SPOSite -Url "\<URL>" -Owner "\<user>" -StorageQuota 1000 -Title "<Workspace Name>" -EnableAgreementsSolution -Template "STS#3"`
 
     Where:
-    
+
     - \<URL> is the target URL of the new site.  
     - \<User> is the email address of the owner of the new workspace.
     - \<Workspace Name> is the name you would like for the new workspace.
