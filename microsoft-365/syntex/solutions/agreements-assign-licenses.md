@@ -1,5 +1,5 @@
 ---
-title: Get started with the SharePoint Agreements AI solution
+title: Get started with the SharePoint Agreements AI solution (Preview)
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
@@ -18,7 +18,10 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: Learn how to get sarted with the SharePoint Agreements AI solution.
 ---
 
-# Get started with the SharePoint Agreements AI solution
+# Get started with the SharePoint Agreements AI solution (Preview)
+
+> [!NOTE]
+> This feature is currently in limited preview and subject to change.
 
 ## Get and assign licenses
 
@@ -27,11 +30,11 @@ To activate the SharePoint Agreements AI solution, an account with Global Admini
 > [!NOTE]
 > While in preview, these licenses are 100% discounted for up to 25 users for 6 months.
 
-Your Microsoft representative will provide a promo code link. Click the link and sign in as an account with Global Administrator privilege when prompted.
+Your Microsoft representative will provide a promo code link. Select the link and sign in as an account with Global Administrator privilege when prompted.
 
 ### Get the license
 
-1. Navigate to this link and sign in with a Microsoft 365 global administrator account.
+1. Navigate to the promo code link and sign in with a Microsoft 365 global administrator account.
 
 ![](media/image1.png)
 
@@ -52,16 +55,15 @@ Your Microsoft representative will provide a promo code link. Click the link and
 
 ## Assign licenses
 
-Assigning licenses to users is performed the same way as assigning other licenses, such as E3 or E5.
+Assigning licenses to users is performed the same way as assigning other licenses, such as Microsoft 365 E3 or Micrsoft 365 E5.
 
-1. Log into the [Microsoft 365 admin portal](https://admin.microsoft.com/) as a user with global administrator privilege.
+1. Log into the [Microsoft 365 admin portal](https://admin.microsoft.com/) as a user with Global Administrator privilege.
 
-2. Navigate to Users -> Active users.
+2. Navigate to **Users** > **Active users**.
 
 3. Select the users who you would like to assign the license to. In the user information panel, go to **Licenses and apps** and assign the new **SharePoint Content Solution - Agreements (Preview)** license.
 
 ![](media/image5.png)
-
 
 ## Set up workspaces
 
