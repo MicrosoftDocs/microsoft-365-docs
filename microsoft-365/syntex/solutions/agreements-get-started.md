@@ -55,7 +55,7 @@ You must be a SharePoint Administrator or Global Administrator to activate the S
 
 Assigning licenses to users is performed the same way as assigning other licenses, such as Microsoft 365 E3 or Microsoft 365 E5.
 
-1. Log into the [Microsoft 365 admin portal](https://admin.microsoft.com/) as a Global Administrator.
+1. Sign in to the [Microsoft 365 admin portal](https://admin.microsoft.com/) as a Global Administrator.
 
 2. Navigate to **Users** > **Active users**.
 
@@ -89,7 +89,7 @@ Before setting up a workspace for SharePoint Agreements AI, you'll need:
 2. Connect to your tenant by running the following command:
 
     `Connect-SPOService -Url "https://\<tenantName>-admin.sharepoint.com"`
-    
+
     Replace \<tenantName> with the name of your SharePoint tenant.
 
 3. Run the following command to create a new SharePoint site and set it as an Agreements workspace.
