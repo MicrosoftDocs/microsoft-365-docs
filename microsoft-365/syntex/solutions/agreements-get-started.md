@@ -38,18 +38,18 @@ You must be a SharePoint Administrator or Global Administrator to activate the S
 
 2. Provide your contact and billing information. This step requires a credit card, and the card won't be charged during preview.
 
-![](media/image2.png)
+   ![A screenshot of <describe the screenshot>.](../../media/content-understanding/agreements-placeholder.png)
 
 3. Choose the number of licenses you would like. The promotional link will give you 100% discount on up to 25 licenses for six months.
 
     > [!IMPORTANT]
     > By default, the number of licenses is set to 1. Change this to 25 licenses to get the most out of the promo code.
 
-![](media/image3.png)
+   ![A screenshot of <describe the screenshot>.](../../media/content-understanding/agreements-placeholder.png)
 
 4. Place the order.
 
-![](media/image4.png)
+   ![A screenshot of <describe the screenshot>.](../../media/content-understanding/agreements-placeholder.png)
 
 ### Assign the licenses
 
@@ -61,7 +61,7 @@ Assigning licenses to users is performed the same way as assigning other license
 
 3. Select the users who you would like to assign the license to. In the user information panel, go to **Licenses and apps** and assign the new **SharePoint Content Solution - Agreements (Preview)** license.
 
-![](media/image5.png)
+   ![A screenshot of <describe the screenshot>.](../../media/content-understanding/agreements-placeholder.png)
 
 ## Set up workspaces
 
@@ -108,11 +108,11 @@ Before setting up a workspace for SharePoint Agreements AI, you'll need:
 
 2. On the left navigation menu, select **+Apps**.
 
-   ![](media/image1.png)
+   ![A screenshot of <describe the screenshot>.](../../media/content-understanding/agreements-placeholder.png)
 
 3. Search for **Agreements**, and then select **Add**.
 
-   ![](media/image2.png)
+   ![A screenshot of <describe the screenshot>.](../../media/content-understanding/agreements-placeholder.png)
 
 4. You'll see the Agreements app on the left navigation menu.
 
@@ -146,7 +146,7 @@ To manage roles in a workspace:
 
     Here, you can add or remove users.
 
-![A screenshot of a computer description automatically generated](media/image1.png)
+   ![A screenshot of <describe the screenshot>.](../../media/content-understanding/agreements-placeholder.png)
 
 ### Manage categories
 
@@ -159,4 +159,3 @@ To manage categories in the Agreements app:
 3. From the left navigation menu, select the **Categories** option.
 
    Here, you can see all the existing categories available in your workspace. You can rename an existing category or create new categories as needed.
-
