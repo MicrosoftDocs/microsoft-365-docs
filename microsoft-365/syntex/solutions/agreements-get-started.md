@@ -51,7 +51,7 @@ You must be a SharePoint Administrator or Global Administrator to activate the S
 
 ![](media/image4.png)
 
-## Assign licenses
+### Assign licenses
 
 Assigning licenses to users is performed the same way as assigning other licenses, such as Microsoft 365 E3 or Microsoft 365 E5.
 
@@ -79,8 +79,8 @@ Before setting up a workspace for SharePoint Agreements AI, you'll need:
 
 - Download and install latest [SharePoint Online Management Shell](https://www.microsoft.com/en-in/download/details.aspx?id=35588).
 
-> [!NOTE]
-> You must be a SharePoint Administrator or Global Administrator to create sites through the SharePoint Online Management Shell.
+    > [!NOTE]
+    > You must be a SharePoint Administrator or Global Administrator to create sites through the SharePoint Online Management Shell.
 
 ### Create a workspace
 
@@ -96,11 +96,11 @@ Before setting up a workspace for SharePoint Agreements AI, you'll need:
 
     `New-SPOSite -Url "\<URL>" -Owner "\<user>" -StorageQuota 1000 -Title "<Workspace Name>" -EnableAgreementsSolution -Template "STS#3"`
 
-    Where \<URL> is the target URL of the new site.  
-
-    \<User> is the email address of the owner of the new workspace.
-
-    <Workspace Name> is the name you would like for the new workspace.
+    Where:
+    
+    - \<URL> is the target URL of the new site.  
+    - \<User> is the email address of the owner of the new workspace.
+    - \<Workspace Name> is the name you would like for the new workspace.
 
 ## Add the Agreements app in Microsoft Teams
 
