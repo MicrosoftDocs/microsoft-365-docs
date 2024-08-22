@@ -80,7 +80,7 @@ Review the [Epic-Microsoft Teams Telehealth Integration Guide](https://galaxy.ep
 - Epic version November 2018 or later.
 - Users have an appropriate Microsoft 365 or Office 365 license that includes Teams meetings.
 - Teams is adopted and used in your healthcare organization.
-- Identified a person in your organization who is a Microsoft 365 global admin with access to the [Teams admin center](https://admin.teams.microsoft.com).
+- Identified a person in your organization who is a Microsoft 365 Global Administrator with access to the [Teams admin center](https://admin.teams.microsoft.com).
 - Your systems meet all [software and browser requirements](/microsoftteams/hardware-requirements-for-the-teams-app) for Teams.
 
 > [!IMPORTANT]
@@ -88,7 +88,7 @@ Review the [Epic-Microsoft Teams Telehealth Integration Guide](https://galaxy.ep
 
 The integration steps are performed by the following people in your organization:
 
-- **Microsoft 365 global admin**: The main person who is responsible for the integration. The admin configures the connector, enables SMS (if needed), and adds the Epic customer analyst who will be approving the configuration.
+- **Microsoft 365 Global Administrator**: The main person who is responsible for the integration. The admin configures the connector, enables SMS (if needed), and adds the Epic customer analyst who will be approving the configuration.
 - **Epic customer analyst**: A person in your organization who has login credentials to Epic. They approve the configuration settings entered by the admin and provide the configuration records to Epic.
 
 The Microsoft 365 admin and Epic customer analyst can be the same person.
