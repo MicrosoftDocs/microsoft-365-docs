@@ -25,11 +25,11 @@ description: Learn how to update a template with the SharePoint Agreements AI so
 
 ## Find existing templates
 
-This content is currently in development.
+To be provided.
 
 ## Edit and publish updates to a template
 
-This content is currently in development.
+To be provided.
 
 <br>
 
