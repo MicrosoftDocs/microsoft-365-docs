@@ -1,5 +1,5 @@
 ---
-title: Introdution to the SharePoint Agreements AI solution (Preview)
+title: Introduction to the SharePoint Agreements AI solution (Preview)
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
