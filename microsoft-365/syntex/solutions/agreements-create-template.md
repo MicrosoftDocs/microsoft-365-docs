@@ -233,3 +233,8 @@ To request approval before publishing the section, follow these steps:
 7. Once the approval request is sent, you can track the request status (**Approval in progress** or **Approval completed**) through the Word pane by reloading the template management pane or selecting **Refresh**. You'll be able also view the request later by selecting the **Sent** tab in the Approvals app in Teams.
 
 8. You can cancel the sent approval request by selecting **Cancel request** or select **Edit section**, which will cancel all running flows and unlock the template for further edits, and the document will return to **Draft** state.
+
+<br>
+
+> [!div class="nextstepaction"]
+> [See the complete list of preview documentation.](agreements-overview.md#preview-documentation)
