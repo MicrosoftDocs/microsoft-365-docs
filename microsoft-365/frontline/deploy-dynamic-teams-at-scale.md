@@ -48,16 +48,28 @@ Check out this [Microsoft Mechanics video](https://www.youtube.com/watch?v=gdkTn
 
 ## Before you begin
 
+### Prerequisites
+
+- Users must have a Microsoft 365 F3, F1, E3, or E5 license. If a user doesn't have one of these licenses, they need a Microsoft Entra ID P1 add-on license to use dynamic teams. [Learn more about frontline licensing](flw-licensing-options.md).
+- Ensure you can define your frontline workers and their work locations through data available in Microsoft Entra ID. If you don't have this data in Microsoft Entra ID, you can sync it through a [human capital management (HCM) connector](/azure/active-directory/app-provisioning/plan-cloud-hr-provision) or [use the PowerShell solution](deploy-teams-at-scale.md) to create static teams at scale.
+- If you want to enable [targeted communications](set-up-targeted-communications.md) (Preview), ensure you can map the attributes of your frontline workers through data available in Microsoft Entra ID. If user profile information doesn’t yet include job title or department, you can add it. [Learn more about how to add or update a user’s profile information in Microsoft Entra ID](/entra/fundamentals/how-to-manage-user-profile-info).  
+
 ### Admin role to run the deployment
 
-To complete the steps in this article, you must be a Global Administrator or a Teams administrator who is assigned a custom role in Microsoft Entra ID with specific permissions.
+To complete the steps in this article, you must be a Global Administrator or a Teams Administrator who is assigned a custom role (as described in this section) in Microsoft Entra ID with specific permissions.
 
-To give Teams administrators the ability to complete setup and deploy frontline dynamic teams, Global Administrators can create the custom role and assign it to Teams administrators using the following steps.
+> [!IMPORTANT]
+> Microsoft recommends that you use roles with the fewest permissions. This helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use a less-privileged role.
+
+To give Teams Administrators the ability to complete setup and deploy frontline dynamic teams, follow these steps to create the custom role and assign it to Teams Administrators.
 
 #### Create the custom role
 
-1. In the Microsoft Entra admin center, go to the [Roles and administrators](https://entra.microsoft.com/#view/Microsoft_AAD_IAM/RolesManagementMenuBlade/~/AllRoles) page, and then select **New custom role**.
-1. On the **Basics** tab, provide a name for the role. You can also optionally provide a description.
+1. Sign in to the Microsoft Entra admin center as at least a [Privileged Role Administrator](/entra/identity/role-based-access-control/permissions-reference#privileged-role-administrator).
+1. Go to the [Roles and administrators](https://entra.microsoft.com/#view/Microsoft_AAD_IAM/RolesManagementMenuBlade/~/AllRoles) page, and then select **New custom role**.
+1. On the **Basics** tab:
+    1. Provide a name for the role. You can also optionally enter a description.
+    1. Make sure **Baseline permissions** is set to **Start from scratch** (the default setting).
 1. On the **Permissions** tab, select the following permissions:
     - **microsoft.directory/groups/create**
     - **microsoft.directory/groups/dynamicMembershipRule/update**
@@ -68,19 +80,17 @@ To give Teams administrators the ability to complete setup and deploy frontline 
 
 #### Assign the custom role
 
-1. In the Microsoft Entra admin center, go to the [Roles and administrators](https://entra.microsoft.com/#view/Microsoft_AAD_IAM/RolesManagementMenuBlade/~/AllRoles) page, and then select the name of the new custom role you created.
+1. Sign in to the Microsoft Entra admin center as at least a [Privileged Role Administrator](/entra/identity/role-based-access-control/permissions-reference#privileged-role-administrator).
+1. Go to the [Roles and administrators](https://entra.microsoft.com/#view/Microsoft_AAD_IAM/RolesManagementMenuBlade/~/AllRoles) page, and then select the name of the new custom role you created.
 1. Choose **Add assignments**.
-1. Select **No member selected**, and then select the Teams admins to which you want to assign the custom role. Choose **Next**.
+1. Under **Select member(s)**, choose **No member selected**.
+
+    :::image type="content" source="media/dtas-custom-role-members.png" alt-text="Screenshot of the No member selected option.":::
+1. Select the Teams Administrators to which you want to assign the custom role. Choose **Next**.
 1. On the **Setting** tab, set **Assignment type** as **Active**.
 
-    :::image type="content" source="media/dtas-custom-role-assignment-type.png" alt-text="Screenshot of the Setting tab, showing assignment type justification." lightbox="media/dtas-custom-role-assignment-type.png":::
+    :::image type="content" source="media/dtas-custom-role-assignment-type.png" alt-text="Screenshot of the Setting tab, showing assignment type and justification." lightbox="media/dtas-custom-role-assignment-type.png":::
 1. Provide a justification, and then choose **Assign**.
-
-### Prerequisites
-
-- Users must have a Microsoft 365 F3, F1, E3, or E5 license. If a user doesn't have one of these licenses, they need a Microsoft Entra ID P1 add-on license to use dynamic teams. [Learn more about frontline licensing](flw-licensing-options.md).
-- Ensure you can define your frontline workers and their work locations through data available in Microsoft Entra ID. If you don't have this data in Microsoft Entra ID, you can sync it through a [human capital management (HCM) connector](/azure/active-directory/app-provisioning/plan-cloud-hr-provision) or [use the PowerShell solution](deploy-teams-at-scale.md) to create static teams at scale.
-- If you want to enable [targeted communications](set-up-targeted-communications.md) (Preview), ensure you can map the attributes of your frontline workers through data available in Microsoft Entra ID. If user profile information doesn’t yet include job title or department, you can add it. [Learn more about how to add or update a user’s profile information in Microsoft Entra ID](/entra/fundamentals/how-to-manage-user-profile-info).  
 
 When evaluating the right solution for your organization, we recommend you do the following:
 
