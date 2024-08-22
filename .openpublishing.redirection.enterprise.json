@@ -1364,6 +1364,11 @@
       "source_path": "microsoft-365/enterprise/maintain-group-membership-with-microsoft-365-powershell.md",
       "redirect_url": "/microsoft-365/enterprise/index",
       "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/configure-skype-for-business-for-hybrid-modern-authentication.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
    }
   ]
 }
