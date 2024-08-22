@@ -54,6 +54,13 @@ Check out this [Microsoft Mechanics video](https://www.youtube.com/watch?v=gdkTn
 - Ensure you can define your frontline workers and their work locations through data available in Microsoft Entra ID. If you don't have this data in Microsoft Entra ID, you can sync it through a [human capital management (HCM) connector](/azure/active-directory/app-provisioning/plan-cloud-hr-provision) or [use the PowerShell solution](deploy-teams-at-scale.md) to create static teams at scale.
 - If you want to enable [targeted communications](set-up-targeted-communications.md) (Preview), ensure you can map the attributes of your frontline workers through data available in Microsoft Entra ID. If user profile information doesn’t yet include job title or department, you can add it. [Learn more about how to add or update a user’s profile information in Microsoft Entra ID](/entra/fundamentals/how-to-manage-user-profile-info).  
 
+When evaluating the right solution for your organization, we recommend you do the following:
+
+  1. Plan your frontline deployment.
+  1. Test the deploy tools&mdash;dynamic team creation (the process described in this article) or static team creation (using the [PowerShell solution](deploy-teams-at-scale.md)). Keep in mind that static teams aren't managed automatically.
+  1. Deploy to a pilot location.
+  1. Deploy to a broader set of locations using a phased approach.
+
 ### Admin role to run the deployment
 
 To complete the steps in this article, you must be a Global Administrator or a Teams Administrator who is assigned a custom role (as described in this section) in Microsoft Entra ID with specific permissions.
@@ -91,13 +98,6 @@ To give Teams Administrators the ability to complete setup and deploy frontline 
 
     :::image type="content" source="media/dtas-custom-role-assignment-type.png" alt-text="Screenshot of the Setting tab, showing assignment type and justification." lightbox="media/dtas-custom-role-assignment-type.png":::
 1. Provide a justification, and then choose **Assign**.
-
-When evaluating the right solution for your organization, we recommend you do the following:
-
-  1. Plan your frontline deployment.
-  1. Test the deploy tools&mdash;dynamic team creation (the process described in this article) or static team creation (using the [PowerShell solution](deploy-teams-at-scale.md)). Keep in mind that static teams aren't managed automatically.
-  1. Deploy to a pilot location.
-  1. Deploy to a broader set of locations using a phased approach.
 
 ## Set up your frontline dynamic teams
 
