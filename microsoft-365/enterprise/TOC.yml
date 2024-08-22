@@ -556,8 +556,6 @@
           items: 
             - name: Manage security groups
               href: manage-security-groups-with-microsoft-365-powershell.md
-            - name: Maintain security group membership
-              href: maintain-group-membership-with-microsoft-365-powershell.md
             - name: Manage Microsoft 365 groups
               href: manage-microsoft-365-groups-with-powershell.md
             - name: Manage Folders and Rules feature in Microsoft 365 Groups
