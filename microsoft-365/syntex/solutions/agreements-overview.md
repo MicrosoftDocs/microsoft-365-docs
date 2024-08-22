@@ -52,6 +52,6 @@ With SharePoint Agreements AI, you can:
 |[Update a template with the SharePoint Agreements AI solution](agreements-update-template.md)    |Learn how to find and edit existing templates, and publish updates to a template.         |
 |[Manage sections in the SharePoint Agreements AI solution](agreements-overview.md)    |To be provided.         |
 |[Create an agreement with the SharePoint Agreements AI solution](agreements-create-agreement.md)    |Learn how to create an agreement from a template in Microsoft Teams and in Microsoft Word.         |
-|[Use reports in the SharePoint Agreements AI solution](agreements-overview.md)    |To be provided.         |
+|[Reports in the SharePoint Agreements AI solution](agreements-overview.md)    |Learn about the reports that are available to monitor all agreements, their statuses, and other essential metrics.         |
 |[Manage approvals in the SharePoint Agreements AI solution](agreements-overview.md)    |To be provided.         |
 |[Import an agreement with the SharePoint Agreements AI solution](agreements-overview.md)    |To be provided.         |
