@@ -1359,6 +1359,11 @@
       "source_path": "microsoft-365/enterprise/manage-microsoft-365-tenants-with-windows-powershell-for-delegated-access-permissio.md",
       "redirect_url": "/microsoft-365/enterprise/manage-microsoft-365-with-windows-powershell-for-delegated-access-permissions-dap-p",
       "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/maintain-group-membership-with-microsoft-365-powershell.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
    }
   ]
 }
