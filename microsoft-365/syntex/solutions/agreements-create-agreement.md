@@ -59,7 +59,7 @@ To create an agreement from Microsoft Word, follow these steps:
 
 ### Fill in field values while generating an agreement
 
-1. In Microsoft Word, on the **Generate Documents** panel, select **Fill fields**  to display list of fields set up in the template.
+1. In Microsoft Word, on the **Generate documents** panel, select **Fill fields**  to display list of fields set up in the template.
 
    ![A screenshot of <describe the screenshot>.](../../media/content-understanding/agreements-placeholder.png)
 
@@ -77,6 +77,43 @@ To create an agreement from Microsoft Word, follow these steps:
 6. If there are sections in the template marked as editable, you can modify the section content.
 
 7. Once you're done making all changes, select **Next** to set the document to read-only mode to prevent any further edits.
+
+## Set up the workflow for an agreement**
+
+Template creators have the option to configure two workflows: approval and eSignature. Any document generated from an agreement needs to go through the workflow stages configured at the template level.
+
+> [!NOTE]
+> If the workflow is not configured with the template, you can still request approvals for documents generated from templates.
+
+## Request approvals
+
+For documents where mandatory approvals are configured, follow these steps:
+
+1. After you fill in the fields, the next step is to send the document for approval.
+
+2. With the agreement open in Microsoft Word, on the **Generate documents** panel, select **Request approvals**.
+
+3. You can change the name of the request, add additional approvers as needed, and provide more details about the agreement.
+
+4. Select **Send** to send the document for approval.
+
+The document is set to read-only, and the document will be shared with the approver.
+
+For documents where mandatory approvals aren't configured, follow these steps:
+
+1. While you don't require approval for these documents, you can still choose to add approvers as needed.
+
+2. With the agreement open in Microsoft Word, on the **Generate documents** panel, select **Request approvals**.
+
+3. You can provide the name of the request, add approvers as needed, and provide more details about the agreement.
+
+4. Select **Send** to send the document for approval.
+
+The document is set as read-only, and the document will be shared with the approver.
+
+## Request eSignature
+
+To be provided.
 
 <br>
 
