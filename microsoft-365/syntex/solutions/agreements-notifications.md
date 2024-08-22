@@ -41,7 +41,7 @@ The process to configure and send approvals is provided in [Create a template wi
 
 ## Receive a notification by email
 
-1. When you receive a notification by email, the email has the title “Action requested: <username> sent you an approval request."
+1. When you receive a notification by email, the email has the title “Action requested: \<username> sent you an approval request."
 
 2. The message contains a link to view the document and take appropriate action. It also indicates which user the workflow is pending action on.
 
