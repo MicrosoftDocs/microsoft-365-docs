@@ -159,3 +159,9 @@ To manage categories in the Agreements app:
 3. From the left navigation menu, select the **Categories** option.
 
    Here, you can see all the existing categories available in your workspace. You can rename an existing category or create new categories as needed.
+
+
+<br>
+
+> [!div class="nextstepaction"]
+> [See the complete list of preview documentation.](agreements-overview.md#preview-documentation)
