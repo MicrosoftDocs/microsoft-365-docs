@@ -135,8 +135,6 @@
               href: hybrid-modern-auth-overview.md
             - name: Configure Exchange Server
               href: configure-exchange-server-for-hybrid-modern-authentication.md
-            - name: Configure Skype for Business
-              href: configure-skype-for-business-for-hybrid-modern-authentication.md
             - name: Remove or disable for Skype for Business and Exchange
               href: remove-or-disable-hybrid-modern-authentication-from-skype-for-business-and-excha.md
             - name: Office 2013, Office 2016, and Office 2019 client apps
