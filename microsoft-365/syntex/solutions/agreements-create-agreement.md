@@ -57,6 +57,27 @@ To create an agreement from Microsoft Word, follow these steps:
 
 6. The template opens in a new window where you can provide values for fields and send the document for workflow.
 
+### Fill in field values while generating an agreement
+
+1. In Microsoft Word, on the **Generate Documents** panel, select **Fill fields**  to display list of fields set up in the template.
+
+   ![A screenshot of <describe the screenshot>.](../../media/content-understanding/agreements-placeholder.png)
+
+2. Enter the values for all fields marked as mandatory. You can also provide values for fields not marked as mandatory.
+
+    > [!NOTE]
+    > Some fields might be present in the document content, while some might not be present. These are configured in the template.
+
+3. Select **"Next"** to review and confirm that the correct information has been entered for all the fields.
+
+4. If there are no errors, a summary of all required fields with their values is displayed.
+
+5. To go back to the **Fill fields** section, where you can edit the populated field values, select **Edit fields**. Once done, select **Next** again and repeat the process as needed.  
+
+6. If there are sections in the template marked as editable, you can modify the section content.
+
+7. Once you're done making all changes, select **Next** to set the document to read-only mode to prevent any further edits.
+
 <br>
 
 > [!div class="nextstepaction"]
