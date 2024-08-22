@@ -57,7 +57,7 @@ Assigning licenses to users is performed the same way as assigning other license
 
 1. Sign in to the [Microsoft 365 admin portal](https://admin.microsoft.com/) as a Global Administrator.
 
-2. Navigate to **Users** > **Active users**.
+2. Go to **Users** > **Active users**.
 
 3. Select the users who you would like to assign the license to. In the user information panel, go to **Licenses and apps** and assign the new **SharePoint Content Solution - Agreements (Preview)** license.
 
@@ -138,7 +138,7 @@ To manage roles in a workspace:
 
 1. As a workspace owner, launch the Agreements app in Teams.
 
-2. Navigate to the **Setup & access** tab.
+2. Go to the **Setup & access** tab.
 
 3. From the left navigation menu, select the **Roles** option.
 
@@ -154,7 +154,7 @@ To manage categories in the Agreements app:
 
 1. As a workspace owner, launch the Agreements App in Teams as the tab.
 
-2. Navigate to the **Setup & access** tab.
+2. Go to the **Setup & access** tab.
 
 3. From the left navigation menu, select the **Categories** option.
 
