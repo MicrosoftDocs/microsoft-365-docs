@@ -78,7 +78,7 @@ To create an agreement from Microsoft Word, follow these steps:
 
 7. Once you're done making all changes, select **Next** to set the document to read-only mode to prevent any further edits.
 
-## Set up the workflow for an agreement**
+## Set up the workflow for an agreement
 
 Template creators have the option to configure two workflows: approval and eSignature. Any document generated from an agreement needs to go through the workflow stages configured at the template level.
 
