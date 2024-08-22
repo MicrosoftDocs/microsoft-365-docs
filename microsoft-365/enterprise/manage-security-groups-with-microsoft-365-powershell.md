@@ -40,8 +40,6 @@ When a command block in this article requires that you specify variable values, 
 2. Fill in the variable values and remove the "<" and ">" characters.
 3. Run the commands in the PowerShell window or the PowerShell ISE.
 
-See [Maintain security group membership](maintain-group-membership-with-microsoft-365-powershell.md) to manage group membership with PowerShell.
-
 ## Manage security groups using Microsoft Graph PowerShell
 
 >[!NOTE]
