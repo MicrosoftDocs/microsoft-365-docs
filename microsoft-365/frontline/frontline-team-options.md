@@ -60,3 +60,12 @@ You should use static teams if:
 - Your users don't have the [required license](#licensing) for dynamic teams.
 
 [Learn more about deploying static frontline teams with PowerShell](deploy-teams-at-scale.md).
+
+## Frontline team deployment best practices
+
+When evaluating the right solution for your organization, we recommend you do the following:
+
+  1. Plan your frontline deployment.
+  1. Test the deploy tools&mdash;[dynamic team creation in the Teams admin center](deploy-dynamic-teams-at-scale.md) or [static team creation using the PowerShell solution](deploy-teams-at-scale.md). Keep in mind that static teams aren't managed automatically.
+  1. Deploy to a pilot location.
+  1. Deploy to a broader set of locations using a phased approach.
