@@ -16,6 +16,6 @@ jobs:
     with:
       PayloadJson: ${{ toJSON(github) }}
       EnableWriteSignOff: 1
-      EnableReadOnlySignoff: 1
+      EnableReadOnlySignoff: 0
     secrets:
       AccessToken: ${{ secrets.GITHUB_TOKEN }}
