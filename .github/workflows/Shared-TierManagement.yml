@@ -1,0 +1,446 @@
+name: Tier management
+
+permissions:
+  pull-requests: write
+  contents: read
+      
+on: 
+    workflow_call:
+        inputs:
+            PayloadJson:
+                required: true
+                type: string
+            EnableWriteSignOff:
+                required: True
+                type: string
+            EnableReadOnlySignoff:
+                required: True
+                type: string
+        secrets:
+            AccessToken:
+                required: true
+
+jobs:
+    build:
+      name: Run Script
+      runs-on: ubuntu-latest
+      steps:
+        - name: Script
+          shell: pwsh
+          env: 
+            PayloadJson: ${{ inputs.PayloadJson }}
+            AccessToken: ${{ secrets.AccessToken }}
+            EnableWriteSignOff: ${{ inputs.EnableWriteSignOff }}
+            EnableReadOnlySignoff: ${{ inputs.EnableReadOnlySignoff }}
+
+          run: |
+
+            # Get GitHub data and event
+            $GitHubData = $env:PayloadJson | ConvertFrom-Json -Depth 50
+            $GitRequestEvent = $GitHubData.event_name
+            
+            $AccessToken = $env:AccessToken
+            $EnableWriteSignOff = [bool][int]$env:EnableWriteSignOff
+            $EnableReadOnlySignoff = [bool][int]$env:EnableReadOnlySignoff
+
+            $DefaultBranch = $GitHubData.event.repository.default_branch
+            $GitHubState = $GitHubData.event.issue.state
+            $GitHubAction = $GitHubData.event.action
+            $GitHubSender = $GitHubData.event.sender.login
+            $GitHubRepoName = $GitHubData.event.repository.name
+            $RepoLabelUrl = $GitHubData.event.repository.labels_url
+            $IssueUrl = $GitHubData.event.issue.url
+            $CommentsUrl = $GitHubData.event.issue.comments_url
+            $PrIssueNumber = $GitHubData.event.issue.number
+            $PrUrl = $GitHubData.event.issue.pull_request.url
+            $CommentUser = $GitHubData.event.comment.user.login
+            $UserPermissionUrl = $GitHubData.event.repository.collaborators_url.Replace("{/collaborator}", "/$CommentUser/permission" )
+
+            $GitHubHeaders = @{}
+            $GitHubHeaders.Add("Authorization","token $($AccessToken)")
+            $GitHubHeaders.Add("User-Agent", "OfficeDocs")
+
+            $ReadyLabelColor = "13FC1F"
+            $ReadyLabelDescription = "PR is ready for managed service review"
+            $ReadyLabel = "Ready for Managed Service"
+            $ReviewResponseHours = 24
+            $SignOffString = "#sign-off"
+            $SignOffLabelColor = "46ce1c"
+            $SignOffLabelDescription = "The pull request is ready to be reviewed and merged by PubOps."
+            $SignOffLabel = "Sign off"
+            $InvalidTargetBranchString = "Hi @{1}<br><br>The target (base) branch of this PR, **{2}**, doesn't support the **{0}** command. The **{0}** command can only be used to merge pull requests into the default branch **{3}** or into branches beginning with **release-**.<br><br>Please retarget your PR to either the default branch **{3}** or to a release branch.<br><br>If you have questions, please post a message to https://aka.ms/askanadmin." # Variable substitution happens in script.
+            $Tier3LabelMissingString = "hi @{1},<br><br>The **{0}** command can't be used on this PR because the none of the files included in it are classified as Tier3/Selfserve. At least one file needs to be classified as Tier3/Selfserve. Please work with the owner of the article(s) (found in the **ms.author** metadata field in the article) to review and merge this PR.<br><br>If you're the owner of the article(s) and your alias is specified in **ms.author**, work with the Magic content team that owns the content set to classify the article(s) as Tier3/Selfserve.<br><br>If you have questions, please post a message to https://aka.ms/askanadmin." -f $SignOffString, $CommentUser
+            $PrSubmittedToReviewString = "Hi @{0},<br><br>This PR has been sent to our publishing team for review to ensure content quality and completeness. A member of our publishing team will contact you within {1} business hours.<br><br>If you have questions, please post a message to https://aka.ms/askanadmin." -f $CommentUser, $ReviewResponseHours
+
+            $SignOffRegex = "(?m)^\s*$SignOffString\s*$"
+
+            #####################
+            #####################
+            # Test-RepoLabel
+
+            Function Test-RepoLabel {
+
+              [CmdletBinding()]
+              param(
+
+                  $Name,
+                  $RepoUri      
+              )
+
+              # Replace placeholder text in the URL retrieved from the GitHub API with the name of the label we're looking for
+              $LabelUri = $RepoUri.Replace("{/name}","/$Name")
+
+              # Check to see if the label we want exists in the repo
+              Try {
+
+                  Write-Host "Checking to see if label $Name exists in repo URL $LabelUri."
+
+                  $LabelResults = Invoke-WebRequest -UseBasicParsing -Uri $LabelUri -Headers $GitHubHeaders  -ErrorAction Stop
+                  $LabelFound = $True
+                  
+              } Catch {
+
+                  # OK if label doesn't exist. Just means we need to create it.
+                  $LabelFound = $False
+
+              }
+
+              # Return boolean to calling statement
+              $LabelFound
+
+            }
+
+            #####################
+            #####################
+            # New-RepoLabel
+
+            Function New-RepoLabel {
+
+            [CmdletBinding()]
+              param(
+
+                  $Name,
+                  $Color,
+                  $Description,
+                  $RepoUri
+              )
+
+              # Remove placeholder text from repo URL
+              $RepoUri = $RepoUri.Replace("{/name}","")
+              $Result = $Null
+
+              # Construct the JSON statement that will be sent to GitHub as the body of the web request. Include the name of the label, its color, and description. 
+              # Convert hash table to JSON
+              $Body = @{}
+              $Body.Add("name", $Name)
+              $Body.Add("color", $Color)
+              $Body.Add("description", $description)
+              $Body = $Body | ConvertTo-Json
+
+              # Try to submit the request to GitHub API to create the label
+              Try {
+
+                  Write-Host "Creating label $Name with color $Color on repo $RepoUri."
+                  
+                  $Result = Invoke-RestMethod -Uri $RepoUri -Headers $GitHubHeaders  -Body $Body -Method POST
+
+              } Catch {
+
+                  Write-Error "ERROR: Failed to create new label $Name on repo $RepoUri. Error: $($Error[0].Exception.Message)."
+
+              }
+
+            }
+
+            #####################
+            #####################
+            # Test-PrLabel
+            Function Test-Prlabel {
+
+              [CmdletBinding()]
+              param(
+
+                  $LabelArray,
+                  $IssueUrl      
+              )
+
+              # Replace placeholder text in the URL retrieved from the GitHub API with the name of the label we're looking for
+              $IssueLabelUrl = "$IssueUrl/labels"
+              $LabelHashTable = @{}
+              $LabelResults = $Null
+
+              # Get list of labels on issue/PR
+              Try {
+
+                  Write-Host "Getting labels on issue $IssueLabelUrl."
+
+                  $LabelResults = Invoke-RestMethod -Uri $IssueLabelUrl -Headers $GitHubHeaders  -ErrorAction Stop
+
+              } Catch {
+
+                  Write-Error "ERROR: Failed to get list of labels on $IssueLabelUrl. Error: $($Error[0].Exception.Message)."
+
+
+              }
+
+              ForEach ($Label in $LabelArray) {
+
+                  If ($LabelResults -ne $Null) {
+
+                    If ($LabelResults.name.Contains($Label)) {
+
+                        $LabelHashTable.Add($Label, $True)
+
+                    } Else {
+
+                        $LabelHashTable.Add($Label, $False)
+
+                    }
+
+                  } Else {
+
+                    $LabelHashTable.Add($Label, $False)
+
+                  }
+
+              }
+
+
+              # Return array of labels on Issue/PR
+              Return $LabelHashTable
+
+
+            }
+
+            #####################
+            #####################
+            # Set-PrLabel
+
+            Function Set-PrLabel {
+
+              param(
+
+                  $IssueUrl,
+                  $LabelName
+                
+              )
+
+              # Construct label URL based on issue or pull request URL
+              $IssueLabelUrl = "$IssueUrl/labels"
+
+              # Construct JSON statement that will be sent to GitHub as the body of the web request. Includes only the label name. GitHub expects an array even thought it's a single value
+              # Convert array to JSON
+              $Body = @()
+              $Body += $LabelName
+              $Body = ConvertTo-Json -InputObject $Body
+
+              # Try to submit the request to GitHub API to apply they label to the issue or pull request
+              Try {
+
+                  Write-Host "Setting label $LabelName on URL $IssueLabelUrl."
+
+                  $Result = Invoke-RestMethod -Uri $IssueLabelUrl -Body $Body -Headers $GitHubHeaders  -Method POST
+
+
+              } Catch {
+
+                  Write-Error "ERROR: Failed to set label on URL $IssueLabelUrl. Error: $($Error[0].Exception.Message)."
+
+              }
+
+            }
+
+            #####################
+            #####################
+            # Set-PrMessage
+
+            Function Set-PrMessage {
+
+              [cmdletbinding()]
+              Param(
+                  [Parameter(Mandatory=$True)]
+                  $Message
+              )
+
+              $BodyHash = @{}
+              $BodyHash.body = $Message
+              $BodyJson = $BodyHash | ConvertTo-Json
+              $BodyJson
+
+              Try {
+
+                  $Result = Invoke-WebRequest -UseBasicParsing -Uri $CommentsUrl -Body $BodyJson -Headers $GitHubHeaders -Method POST -ErrorAction Stop
+              
+                  $PostCommentSuccess = $True
+
+              } Catch {
+
+                  $PostCommentSuccess = $False
+
+              }
+
+              Return $PostCommentSuccess
+
+            }
+
+
+            #####################
+            #####################
+            # Main
+
+
+            Write-Host "Repo: $GitHubRepoName"
+            Write-Host "Sender: $GitHubSender"
+            Write-Host "Request event: $GitRequestEvent"
+            Write-Host "GitHub action: $GitHubAction"
+            Write-Host "GitHub state: $GitHubState"
+            Write-Host "Default branch: $DefaultBranch"
+            Write-Host "PR/Issue number: $PrIssueNumber"
+            Write-Host "Write sign-off enabled: $EnableWriteSignOff"
+            Write-Host "Read sign-off enabled: $EnableReadOnlySignoff"
+
+            If (($GitRequestEvent -eq "issue_comment") -and (($GitHubAction -eq "created") -or ($GitHubAction -eq "edited"))) {
+
+                Write-Host "Comment added or edited on PR."
+
+                # Get the contents of the comment that was added to the PR
+                $CommentBody = $GitHubData.event.comment.body
+
+                # Check to see if comment includes $SignOffString by checking if it matches $SignOffRegex
+                $SignOffFound = $CommentBody -match $SignOffRegex
+
+                Write-Host "Regex result: $SignOffFound."
+
+                If ($SignOffFound) {
+
+                    Write-Host "Sign off string `"$SignOffString`" found on PR/Issue #$PrIssueNumber."
+                    
+                    # Get permission level of user who created the comment. Need to use .role_name instead of .permission because .permission provides only legacy values. 
+                    # .role_name provides legacy plus triage, maintain, and custom roles like write-elevated.
+                    $UserPermission = $(Invoke-RestMethod -Method GET -Headers $GitHubHeaders -Uri $UserPermissionUrl).role_name
+
+                    Write-Host "User $CommentUser permission level: $UserPermission."
+
+                    # If user has triage or above, add $SignOffLabel. If not, check whether $ReadyLabel should be added.
+                    If (($UserPermission -like "write*") -or ($UserPermission -eq "maintain") -or ($UserPermission -eq "triage") -or ($UserPermission -eq "admin")) {
+
+                        # Check to see if sign off for triage and above is enabled for the current repo.
+                        If ($EnableWriteSignOff) {
+
+                            Write-Host "User $CommentUser has the permission level: $UserPermission. Setting $SignOffLabel label."
+
+                            # Get PR data so we can get the base branch of the PR. Doing this here so we don't need to do unnecessary calls if other criteria fail.
+                            $PrData = Invoke-RestMethod -Method GET -Headers $GitHubHeaders -Uri $PrUrl
+                            $TargetBranch = $PrData.base.ref
+
+                            # Check if label exists on the repo.
+                            $LabelExists = Test-RepoLabel -RepoUri $RepoLabelUrl -Name $SignOffLabel
+
+                            If (!$LabelExists) {
+
+                              # Create label on the repo if it doesn't exist.
+                              New-RepoLabel -RepoUri $RepoLabelUrl -Name $SignOffLabel -Color $SignOffLabelColor -Description $SignOffLabelDescription
+
+                            }
+
+                            $LabelResultsArray = Test-Prlabel -LabelArray $SignOffLabel -IssueUrl $IssueUrl
+
+                            # Only add the label if it doesn't already exist on the PR
+                            If (!$LabelResultsArray.$SignOffLabel) {
+
+                              Write-Host "Label $SignOffLabel doesn't exist on $IssueUrl. Adding label."
+
+                              # Add the label to the PR
+                              Set-PrLabel -IssueUrl $IssueUrl -LabelName $SignOffLabel
+
+                            }
+
+                        } Else {
+
+                            Write-Host "Sign off for users with triage permission or higher is disabled on $GitHubRepoName."
+
+                        }
+
+                    } Else {
+
+                        # Check to see if sign off for read only is enabled for the current repo.
+                        If ($EnableReadOnlySignoff) {
+
+                            # Get PR data so we can get the base branch of the PR. Doing this here so we don't need to do unnecessary calls if other criteria fail.
+                            $PrData = Invoke-RestMethod -Method GET -Headers $GitHubHeaders -Uri $PrUrl
+                            $TargetBranch = $PrData.base.ref
+
+                            # Make sure the PR targets branches we care about.
+                            If (($TargetBranch -eq $DefaultBranch) -or ($TargetBranch -like "release-*")) {
+
+                                Write-Host "Pull request target branch $TargetBranch matches the default branch $DefaultBranch."
+
+                                # Check if label exists on the repo.
+                                $LabelExists = Test-RepoLabel -RepoUri $RepoLabelUrl -Name $ReadyLabel
+
+                                If (!$LabelExists) {
+
+                                  # Create label on the repo if it doesn't exist.
+                                  New-RepoLabel -RepoUri $RepoLabelUrl -Name $ReadyLabel -Color $ReadyLabelColor -Description $ReadyLabelDescription
+
+                                }
+
+                                # Check to see whether $ReadyLabel or Tier3/Selfserve labels exist on the PR. Hashtable that's returned includes the label name and a boolean
+                                # that indicates whether the labels exist on the PR.
+                                # The reason this isn't part of the above repo-level check is because the all the PR-level labels can be retrieved with a single call to GitHub.
+                                # If we included the PR-level checks in the same block as the repo-level checks, we'd be requesting the PR-level repos <number of labels to add> times.
+                                # Don't confuse with the previous ForEach which is a repo-level check.
+                                $LabelResultsArray = Test-Prlabel -LabelArray $ReadyLabel, "Tier3", "Selfserve" -IssueUrl $IssueUrl
+                                
+                                Write-Host "Number of items in LabelResultsArray: $($LabelResultsArray.Count)."
+
+                                # Only add $ReadyLabel if the labels "Tier3" or "Selfserve" exist on the PR
+                                If (($LabelResultsArray.Tier3) -or ($LabelResultsArray.Selfserve)) {
+
+                                  Write-Host "Tier3/Selfserve label exists on $IssueUrl. OK to add $ReadyLabel label."
+
+                                  # Only add the label if it doesn't already exist on the PR
+                                  If (!$LabelResultsArray.$ReadyLabel) {
+
+                                      Write-Host "Label $ReadyLabel doesn't exist on $IssueUrl. Adding label."
+
+                                      # Add the label to the PR and post a message to the commenter
+                                      Set-PrLabel -IssueUrl $IssueUrl -LabelName $ReadyLabel
+                                      Set-PrMessage -Message $PrSubmittedToReviewString
+
+                                  }
+
+                                } Else {
+
+                                  Write-Host "Tier3/Selfserve label doesn't exist on $IssueUrl. Not adding $ReadyLabel label."
+
+                                  # Post a message to the commenter telling them they don't have the right permissions to use the command.
+                                  Set-PrMessage -Message $Tier3LabelMissingString
+
+                                }
+                          
+                            } Else {
+
+                                Write-Host "Pull request target branch $TargetBranch doesn't match the default branch $DefaultBranch."
+
+                                # Need to do the string variable replacement here because $TargetBranch doesn't exist until the PR data call a few lines above.
+                                $InvalidTargetBranchString = $InvalidTargetBranchString -f $SignOffString, $CommentUser, $TargetBranch, $DefaultBranch
+
+                                # Post a message to the commenter telling them they're targeting a branch other than $DefaultBranch or "release-*".
+                                Set-PrMessage -Message $InvalidTargetBranchString
+
+                            } # Target branch check
+
+                        } Else {
+
+                            Write-Host "Sign off for users with read-only permission is disabled on $GitHubRepoName."
+
+                        }
+
+                    } # Permission check (triage/write/maintain/admin vs readonly)
+
+                } # Sign off string check
+
+            } # PR event and action check
+
+          
