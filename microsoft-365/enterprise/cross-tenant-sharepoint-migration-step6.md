@@ -38,13 +38,13 @@ Now you're ready to start your SharePoint migration. Before starting any cross-t
 1. Make sure you've verified the compatibility status. If you see a status of either **Compatible** or **Warning**  on your source tenant, you may continue. Run:
 
    ```powershell
-   Get-SPOCrossTenantCompatibilityStatus –PartnerCrossTenantHostURL [Target tenant hostname]
+   Get-SPOCrossTenantCompatibilityStatus -PartnerCrossTenantHostURL [Target tenant hostname]
    ```
 
 2. To start the migration, a SharePoint Admin or Microsoft 365 Global Admin of the source tenant must run the following command:
 
    ```PowerShell
-   Start-SPOCrossTenantSiteContentMove-SourceSiteUrl <…> -TargetSiteUrl <…> -TargetCrossTenantHostUrl <…>
+   Start-SPOCrossTenantSiteContentMove -SourceSiteUrl <…> -TargetSiteUrl <…> -TargetCrossTenantHostUrl <…>
    ```
 
    |Parameters|Description|
