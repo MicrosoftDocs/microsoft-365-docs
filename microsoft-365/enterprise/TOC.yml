@@ -585,8 +585,6 @@
           href: add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-pe.md
         - name: Connect to Exchange Online via remote Windows PowerShell for Delegated Access partners
           href: /powershell/exchange/connect-to-exchange-online-powershell
-        - name: Retrieve customer reporting data via Windows PowerShell for Delegated Access partners
-          href: retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac.md
     - name: Manage Microsoft Teams
       href: /microsoftteams/teams-powershell-install
     - name: Manage add-ins with Centralized Deployment PowerShell
