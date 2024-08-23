@@ -3,7 +3,7 @@ title: Deploy frontline dynamic teams at scale
 author: lana-chin
 ms.author: v-chinlana
 manager: jtremper
-ms.reviewer: aaglick
+ms.reviewer: arnavgupta, aaglick
 ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
@@ -68,7 +68,7 @@ To give Teams Administrators the ability to complete setup and deploy frontline 
 1. Sign in to the Microsoft Entra admin center as at least a [Privileged Role Administrator](/entra/identity/role-based-access-control/permissions-reference#privileged-role-administrator).
 1. Go to the [Roles and administrators](https://entra.microsoft.com/#view/Microsoft_AAD_IAM/RolesManagementMenuBlade/~/AllRoles) page, and then select **New custom role**.
 1. On the **Basics** tab:
-    1. Provide a name for the role. You can also optionally enter a description.
+    1. Provide a name for the role. Optionally, enter a description.
     1. Make sure **Baseline permissions** is set to **Start from scratch** (the default setting).
 1. On the **Permissions** tab, select the following permissions:
     - **microsoft.directory/groups/create**
@@ -89,7 +89,7 @@ To give Teams Administrators the ability to complete setup and deploy frontline 
 1. Select the Teams Administrators to which you want to assign the custom role. Choose **Next**.
 1. On the **Setting** tab, set **Assignment type** as **Active**.
 
-    :::image type="content" source="media/dtas-custom-role-assignment-type.png" alt-text="Screenshot of the Setting tab, showing assignment type and justification." lightbox="media/dtas-custom-role-assignment-type.png":::
+    :::image type="content" source="media/dtas-custom-role-assignment-type.png" alt-text="Screenshot of the Setting tab, showing assignment type and justification.":::
 1. Provide a justification, and then choose **Assign**.
 
 ## Set up your frontline dynamic teams
