@@ -173,7 +173,7 @@ To look at the mapping entries in the identity mapping file for a particular use
 **Example:**
 
 ```powershell
-get-spoTenantIdentityMappingUser -Field SourceUserKey -Value usera@Contoso.onmicrosoft.com
+Get-SPOTenantIdentityMappingUser -Field SourceUserKey -Value usera@Contoso.onmicrosoft.com
 ```
 
 ## Verify cross-tenant compatibility status
