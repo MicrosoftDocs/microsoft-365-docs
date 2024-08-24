@@ -39,6 +39,4 @@ The following articles show how Syndication and CSP partners use PowerShell to a
 
 - [Add a domain to a client tenancy with Windows PowerShell for Delegated Access Permission (DAP) partners](add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-pe.md)
 
-- [Retrieve customer tenant reporting data with Windows PowerShell for Delegated Access Permissions (DAP) partners](retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac.md)
-
 - [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
