@@ -246,7 +246,7 @@
         - name: Create a template
           href: ./solutions/agreements-create-template.md
         - name: Update a template
-          href: /solutions/agreements-update-template.md
+          href: solutions/agreements-update-template.md
         - name: Manage sections
           href: /solutions/agreements-manage-sections.md
         - name: Create an agreement
