@@ -237,6 +237,13 @@
         - name: Admin setup 
           href: ocr.md
 
+    - name: Agreements AI solution 
+      items: 
+        - name: Overview 
+          href: agreements-overview.md
+        - name: Admin setup 
+          href: agreements-setup.md
+
     - name: Microsoft 365 Archive
       href: /microsoft-365/archive
 
