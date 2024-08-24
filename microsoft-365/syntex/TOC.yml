@@ -239,13 +239,15 @@
 
     - name: Agreements AI solution 
       items: 
-        - name: Overview 
+        - name: Overview
           href: agreements-overview.md
-        - name: Admin setup 
+        - name: Admin setup
           href: agreements-setup.md
-        - name: Create a template 
+        - name: Create a template
           href: agreements-create-template.md
-        - name: Manage sections 
+        - name: Update a template
+          href: agreements-update-template.md
+        - name: Manage sections
           href: agreements-manage-sections.md
         - name: Create an agreement
           href: agreements-create-agreement.md
