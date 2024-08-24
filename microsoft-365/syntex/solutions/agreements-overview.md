@@ -47,7 +47,7 @@ With SharePoint Agreements AI, you can:
 
 |Article  |Description  |
 |---------|---------|
-|[Get started with the SharePoint Agreements AI solution](agreements-get-started.md)    |Learn how to get and set up licenses, set up and manage workspaces, add the agreements app in Microsoft Teams, and more.         |
+|[Set up the SharePoint Agreements AI solution](agreements-setup.md)    |Learn how to get and set up licenses, set up and manage workspaces, add the Agreements app in Microsoft Teams, and more.         |
 |[Create a template with the SharePoint Agreements AI solution](agreements-create-template.md)    |Learn how to create and publish templates, set up fields and sections, configure workflows, and more.         |
 |[Update a template with the SharePoint Agreements AI solution](agreements-update-template.md)    |Learn how to find and edit existing templates, and publish updates to a template.         |
 |[Manage sections in the SharePoint Agreements AI solution](agreements-manage-sections.md)    |Learn how to publish a new section, insert a section into a template, edit a section, and configure section settings.         |
