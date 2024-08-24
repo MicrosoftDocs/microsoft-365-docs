@@ -240,23 +240,23 @@
     - name: Agreements AI solution 
       items: 
         - name: Overview
-          href: /solutions/agreements-overview.md
+          href: solutions/agreements-overview.md
         - name: Admin setup
-          href: ../solutions/agreements-setup.md
+          href: solutions/agreements-setup.md
         - name: Create a template
-          href: ./solutions/agreements-create-template.md
+          href: solutions/agreements-create-template.md
         - name: Update a template
           href: solutions/agreements-update-template.md
         - name: Manage sections
-          href: /solutions/agreements-manage-sections.md
+          href: solutions/agreements-manage-sections.md
         - name: Create an agreement
-          href: /solutions/agreements-create-agreement.md
+          href: solutions/agreements-create-agreement.md
         - name: View reports 
-          href: /solutions/agreements-reports.md
+          href: solutions/agreements-reports.md
         - name: Receive notifications 
-          href: /solutions/agreements-notifications.md
+          href: solutions/agreements-notifications.md
         - name: Import an agreement 
-          href: /solutions/agreements-import-agreement.md
+          href: solutions/agreements-import-agreement.md
 
     - name: Microsoft 365 Archive
       href: /microsoft-365/archive
