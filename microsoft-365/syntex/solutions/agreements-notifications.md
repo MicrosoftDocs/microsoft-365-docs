@@ -1,5 +1,5 @@
 ---
-title: Approval notifications in the SharePoint Agreements AI solution (Preview)
+title: Approval notifications for the SharePoint Agreements AI solution (Preview)
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
@@ -18,7 +18,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: Learn about the approval notifications in the SharePoint Agreements AI solution.
 ---
 
-# Approval notifications in the SharePoint Agreements AI solution (Preview)
+# Approval notifications for the SharePoint Agreements AI solution (Preview)
 
 > [!NOTE]
 > This feature is currently in limited preview and subject to change. For the complete list of articles to help you set up and use this feature, see [Preview documentation](agreements-overview.md#preview-documentation).
