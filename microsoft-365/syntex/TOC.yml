@@ -243,6 +243,18 @@
           href: agreements-overview.md
         - name: Admin setup 
           href: agreements-setup.md
+        - name: Create a template 
+          href: agreements-create-template.md
+        - name: Manage sections 
+          href: agreements-manage-sections.md
+        - name: Create an agreement
+          href: agreements-create-agreement.md
+        - name: View reports 
+          href: agreements-reports.md
+        - name: Approval notifications 
+          href: agreements-notifications.md
+        - name: Import an agreement 
+          href: agreements-import-agreement.md
 
     - name: Microsoft 365 Archive
       href: /microsoft-365/archive
