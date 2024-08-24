@@ -1,5 +1,5 @@
 ---
-title: Get started with the SharePoint Agreements AI solution (Preview)
+title: Set up the SharePoint Agreements AI solution (Preview)
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
@@ -15,10 +15,10 @@ ms.collection:
     - m365initiative-syntex
 ms.localizationpriority:  medium
 ROBOTS: NOINDEX, NOFOLLOW
-description: Learn how to get started with the SharePoint Agreements AI solution.
+description: Learn how to set up licensing tools for the SharePoint Agreements AI solution.
 ---
 
-# Get started with the SharePoint Agreements AI solution (Preview)
+# Set up the SharePoint Agreements AI solution (Preview)
 
 > [!NOTE]
 > This feature is currently in limited preview and subject to change. For the complete list of articles to help you set up and use this feature, see [Preview documentation](agreements-overview.md#preview-documentation).
