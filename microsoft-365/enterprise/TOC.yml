@@ -490,11 +490,7 @@
   href: /deployedge/deploy-edge-plan-deployment
 
 - name: Deployment and update channel example configurations
-  items:
-    - name: Overview
-      href: deploy-update-channels-examples.md
-    - name: Broad deployment of the latest releases
-      href: deploy-update-channels-examples-rapid-deploy.md
+  href: deploy-update-channels-examples.md
 
 - name: Manage Microsoft 365 with PowerShell
   href: manage-microsoft-365-with-microsoft-365-powershell.md
