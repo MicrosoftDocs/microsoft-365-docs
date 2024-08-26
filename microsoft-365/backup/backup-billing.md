@@ -123,4 +123,4 @@ To view tags:
 5. Set up budget alerts on cost by following the steps in the [Cost Management public APIs](/rest/api/cost-management/operation-groups).
 
 > [!WARNING]  
->**MailboxDbGuid** tag in the Azure consumption report is intended for Microsoft internal use only, and we recommend not to rely on it, as its value may change. Please note that this is different from the MailboxId.
+>The **MailboxDbGuid** tag in the Azure consumption report is intended for Microsoft internal use only. We recommend that you do not rely on it, as its value might change. Note that this is different from the MailboxId.
