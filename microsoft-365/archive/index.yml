@@ -54,10 +54,12 @@ landingContent:
             url: archive-end-user.md
 
 # Card 4
-  - title: Security & compliance
+  - title: Data protection
     linkLists:
       - linkListType: overview
         links:
+          - text: Privacy, security, & compliance
+            url: archive-privacy-security.md
           - text: Compliance features
             url: archive-compliance.md
 
