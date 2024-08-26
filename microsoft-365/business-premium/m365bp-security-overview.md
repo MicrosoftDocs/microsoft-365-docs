@@ -30,7 +30,7 @@ description: "Security overview for Microsoft 365 Business Premium, which provid
 
 After you have completed the basic setup process for [Microsoft 365 Business Premium](m365-business-premium-setup.md) (or [Microsoft 365 for Campaigns](m365-campaigns-setup.md)), your next step is to set up and configure your security protection. 
 
-## Video: Get started with your security capabilities
+## Video: Get started with your security settings
 
 Watch the following video for a brief overview of initial security settings to configure.
 <br/>
