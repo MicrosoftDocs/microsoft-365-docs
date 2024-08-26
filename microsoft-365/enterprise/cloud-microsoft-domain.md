@@ -59,7 +59,6 @@ Since 2023, *.cloud.microsoft and other domains related to the domain unificatio
 |Microsoft Viva Insights | [insights.cloud.microsoft](https://insights.cloud.microsoft)|
 |Microsoft Viva Learning | [learning.cloud.microsoft](https://learning.cloud.microsoft)|
 |Microsoft Viva Pulse | [pulse.cloud.microsoft](https://pulse.cloud.microsoft)|
-|Microsoft Viva Skills | [skills.cloud.microsoft](https://skills.cloud.microsoft)|
 |Microsoft Word | [word.cloud.microsoft](https://word.cloud.microsoft)|
 
 The above list provides examples of individual URLs for applications that users can use through the web browser. It does not represent the full set of endpoints required for functionality of these applications and should not be used to granularly control access through network allow-lists and other network settings. To configure network settings, customers should follow Microsoft official network guidance.
