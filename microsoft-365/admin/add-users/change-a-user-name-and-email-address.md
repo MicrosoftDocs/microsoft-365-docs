@@ -31,7 +31,7 @@ description: "Learn how a Microsoft 365 global admin can change a user's email a
 
 Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
-You might need to change someone's email address and display name if, for example, they get married and their last name changes.
+You might need to change someone's email address and display name if, for example, they get married and their family name changes.
 
 > [!TIP]
 > If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
@@ -132,13 +132,13 @@ For more information on adding an email alias, see [Add another email alias for 
    >
    > Also, you'll only see this option if you're a global admin. If you don't see the option, you don't have permissions to change a user's name and primary email address.
 
-1. You'll see a warning that you're about to change the person's sign-in information. Select **Save changes**, then **Close**.
+1. You see a warning that you're about to change the person's sign-in information. Select **Save changes**, then **Close**.
 
 1. Give the person the following information:
 
    - This change could take a while.
 
-   - Their new username. They'll need it to sign in to Microsoft 365.
+   - Their new username. They need it to sign in to Microsoft 365.
 
    - If they're using Skype for Business Online, they must reschedule any Skype for Business Online meetings that they organized, and tell their external contacts to update their contact information.
 
@@ -146,7 +146,7 @@ For more information on adding an email alias, see [Add another email alias for 
 
    - If their password changed too, they're prompted to enter the new password on their mobile device, or it won't sync.
 
-A person's previous primary email address is retained as an additional email address. **We strongly recommend that you don't remove the old email address.**
+A person's previous primary email address is retained as an extra email address. **We strongly recommend that you don't remove the old email address.**
 
 Some people might continue to send email to the person's old email address and deleting it might result in NDR failures. Microsoft automatically routes it to the new one. Also, don't reuse old SMTP email addresses and apply them to new accounts. This can also cause NDR failures or delivery to an unintended mailbox.
 
@@ -164,7 +164,7 @@ If you get the error message " **We're sorry, the user couldn't be edited. Revie
 
 If they're using Exchange Online or if their account is linked with your organization's on-premises Exchange environment, you might see this error when you try to change a username and email address: "This user is synchronized with your local Active Directory. Some details can be edited only through your local Active Directory."
 
-This is due to the Microsoft Online Email Routing Address (MOERA). The MOERA is constructed from the person's  _userPrincipalName_ attribute in Active Directory and is automatically assigned to the cloud account during the initial sync and once created, it can't be modified or removed in Microsoft 365. You can subsequently change the username in the Active Directory, but it doesn't change the MOERA and you might run into issues displaying the newly changed name in the Global Address List.
+This is due to the Microsoft Online Email Routing Address (MOERA). The MOERA is constructed from the person's  _userPrincipalName_ attribute in Active Directory and is automatically assigned to the cloud account during the initial sync and once created, it can't be modified or removed in Microsoft 365. Later, you can change the username in the Active Directory, but it doesn't change the MOERA and you might run into issues displaying the newly changed name in the Global Address List.
 
 To fix this, sign in to the [Microsoft Graph PowerShell](/powershell/microsoftgraph/overview) with your Microsoft 365 administrator credentials and use the following syntax:
 
