@@ -56,7 +56,7 @@ landingContent:
             url: backup-offboarding.md
 
 # Card 4
-  - title: Data protection
+  - title: Data privacy & protection
     linkLists:
       - linkListType: overview
         links:
