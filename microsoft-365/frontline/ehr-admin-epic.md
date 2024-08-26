@@ -152,7 +152,7 @@ To enable SMS notifications, your Microsoft 365 admin completes the following st
 
 3. Some telephone carriers now [require unverified toll numbers to be verified](/azure/communication-services/concepts/sms/sms-faq#sms-to-us-phone-numbers). This requirement became effective October 1, 2022. Some carriers are following this more strictly than others.
 
-You'll need to [register your generated phone number in this form](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR0NW3g8C-tRNlyVpwWkCiS1UOEFCVTRHSFMwRk9BVTg3MVdZQlVCNEI4SS4u). This ensures none of your SMS messages will be blocked when sent to US phone numbers.
+    You'll need to [register your generated phone number in this form](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR0NW3g8C-tRNlyVpwWkCiS1UOEFCVTRHSFMwRk9BVTg3MVdZQlVCNEI4SS4u). This ensures none of your SMS messages will be blocked when sent to US phone numbers.
 
 4. To link the phone number to a FHIR base URL, under **Phone number** in the **SMS configuration** section, select the number. Do this for each FHIR base URL for which you want to enable SMS notifications.
 
