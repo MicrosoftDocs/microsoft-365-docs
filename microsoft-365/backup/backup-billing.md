@@ -121,3 +121,6 @@ To view tags:
     ![Screenshot of the recommended view to see costs by resources in Microsoft Cost Management.](../media/m365-backup/backup-cost-by-resources-view.png)
 
 5. Set up budget alerts on cost by following the steps in the [Cost Management public APIs](/rest/api/cost-management/operation-groups).
+
+> [!WARNING]  
+>**MailboxDbGuid** tag in the Azure consumption report is intended for Microsoft internal use only, and we recommend not to rely on it, as its value may change. Please note that this is different from the MailboxId.
