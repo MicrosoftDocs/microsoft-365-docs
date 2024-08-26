@@ -33,6 +33,7 @@ After you have completed the basic setup process for [Microsoft 365 Business Pre
 ## Video: Get started with your security capabilities
 
 Watch the following video for a brief overview of initial security settings to configure.
+<br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RW1nZxu]
 
