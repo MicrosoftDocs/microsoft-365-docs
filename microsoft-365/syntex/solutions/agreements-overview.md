@@ -47,11 +47,11 @@ With SharePoint Agreements AI, you can:
 
 |Article  |Description  |
 |---------|---------|
-|[Set up the SharePoint Agreements AI solution](agreements-setup.md)    |Learn how to get and set up licenses, set up and manage workspaces, add the Agreements app in Microsoft Teams, and more.         |
-|[Create a template with the SharePoint Agreements AI solution](agreements-create-template.md)    |Learn how to create and publish templates, set up fields and sections, configure workflows, and more.         |
-|[Update a template with the SharePoint Agreements AI solution](agreements-update-template.md)    |Learn how to find and edit existing templates, and publish updates to a template.         |
-|[Manage sections in the SharePoint Agreements AI solution](agreements-manage-sections.md)    |Learn how to publish a new section, insert a section into a template, edit a section, and configure section settings.         |
-|[Create an agreement with the SharePoint Agreements AI solution](agreements-create-agreement.md)    |Learn how to create an agreement from a template in Microsoft Teams and in Microsoft Word.         |
-|[View reports in the SharePoint Agreements AI solution](agreements-reports.md)    |Learn about the reports that are available to monitor all agreements, their statuses, and other essential metrics.         |
-|[Approval notifications for the SharePoint Agreements AI solution](agreements-notifications.md)    |Learn about receiving approval notifications in the Approvals app and in email.         |
-|[Import an agreement in the SharePoint Agreements AI solution](agreements-import-agreement.md)    |Learn how to add existing agreements by uploading signed documents.        |
+|[Set up the solution](agreements-setup.md)    |Learn how to get and set up licenses, set up and manage workspaces, add the Agreements app in Microsoft Teams, and more.         |
+|[Create a template](agreements-create-template.md)    |Learn how to create and publish templates, set up fields and sections, configure workflows, and more.         |
+|[Update a template](agreements-update-template.md)    |Learn how to find and edit existing templates, and publish updates to a template.         |
+|[Manage sections in a template](agreements-manage-sections.md)    |Learn how to publish a new section, insert a section into a template, edit a section, and configure section settings.         |
+|[Create an agreement](agreements-create-agreement.md)    |Learn how to create an agreement from a template in Microsoft Teams and in Microsoft Word.         |
+|[View reports](agreements-reports.md)    |Learn about the reports that are available to monitor all agreements, their statuses, and other essential metrics.         |
+|[Approval notifications](agreements-notifications.md)    |Learn about receiving approval notifications in the Approvals app and in email.         |
+|[Import an agreement](agreements-import-agreement.md)    |Learn how to add existing agreements by uploading signed documents.        |
