@@ -1379,6 +1379,16 @@
       "source_path": "microsoft-365/enterprise/deploy-update-channels-examples-rapid-deploy.md",
       "redirect_url": "/microsoft-365/enterprise/deploy-update-channels-examples",
       "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/assign-per-user-skype-for-business-online-policies-with-microsoft-365-powershell.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/enabling-sp-multigeo-satellite-geolocation.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
    }
   ]
 }

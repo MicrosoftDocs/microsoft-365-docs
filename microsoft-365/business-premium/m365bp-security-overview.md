@@ -8,7 +8,7 @@ manager: deniseb
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business-security
-ms.date: 05/31/2024
+ms.date: 08/26/2024
 ms.localizationpriority: medium
 ms.collection:
 - M365-Campaigns
@@ -28,7 +28,18 @@ description: "Security overview for Microsoft 365 Business Premium, which provid
 
 :::image type="content" source="media/mission2.png" alt-text="Diagram with Boost Your Security Protection highlighted." lightbox="media/mission2.png":::
 
-After you have completed the basic setup process for [Microsoft 365 Business Premium](m365-business-premium-setup.md) (or [Microsoft 365 for Campaigns](m365-campaigns-setup.md)), your next step is to set up and configure your security protection. Microsoft 365 Business Premium includes security, compliance, identity, and management capabilities to help protect user accounts, email, files, and devices. Use this guidance to complete the following tasks:
+After you have completed the basic setup process for [Microsoft 365 Business Premium](m365-business-premium-setup.md) (or [Microsoft 365 for Campaigns](m365-campaigns-setup.md)), your next step is to set up and configure your security protection. 
+
+## Video: Get started with your security settings
+
+Watch the following video for a brief overview of initial security settings to configure.
+<br/>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW1nZxu]
+
+## Configure your security protection in Microsoft 365 Business Premium
+
+Microsoft 365 Business Premium includes security, compliance, identity, and management capabilities to help protect user accounts, email, files, and devices. Use this guidance to complete the following tasks:
 
 1. [Turn on multifactor authentication for your organization](m365bp-turn-on-mfa.md).
 2. [Protect your admin accounts](m365bp-protect-admin-accounts.md).
