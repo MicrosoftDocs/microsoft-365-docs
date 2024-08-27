@@ -34,7 +34,7 @@ You must be a SharePoint Administrator or Global Administrator to activate the S
 
 1. Your Microsoft representative will provide you with a promo code link. Select the link and sign in as a Global Administrator.
 
-   ![A screenshot of <describe the screenshot>.](../../media/content-understanding/agreements-placeholder.png)
+   ![A screenshot of <describe the screenshot>.](../../media/content-understanding/agreements-sign-in.png)
 
 2. Provide your contact and billing information. This step requires a credit card, and the card won't be charged during preview.
 
