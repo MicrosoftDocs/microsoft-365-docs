@@ -92,6 +92,10 @@ sections:
         answer: |
           If you can't access tenant information, you may not have the correct permissions for that tenant. Some features and data are only visible to specific roles. To view what roles you have, see [View your Microsoft Entra roles across tenants](m365-lighthouse-view-your-roles.md).
 
+      - question: Can I use Microsoft 365 Lighthouse to manage my partner tenant?
+        answer: |
+          No, you can only use Lighthouse to manage customer tenants that you have a reseller or GDAP relationship with.
+
   - name: Understanding alerts
     questions:          
       - question: Why are there comments that I didn't add on my alerts?
