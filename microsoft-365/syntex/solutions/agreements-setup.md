@@ -146,7 +146,7 @@ To manage roles in a workspace:
 
     Here, you can add or remove users.
 
-   ![A screenshot of <describe the screenshot>.](../../media/content-understanding/agreements-placeholder.png)
+   ![A screenshot showing adding users to a role>.](../../media/content-understanding/agreements-add-users-to-roles.png)
 
 ### Manage categories
 
