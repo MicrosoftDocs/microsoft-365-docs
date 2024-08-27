@@ -47,9 +47,9 @@ You must be a SharePoint Administrator or Global Administrator to activate the S
 
    ![A screenshot of Checkout page showing the Items in this order section.](../../media/content-understanding/agreements-items-in-order.png)
 
-4. Place the order.
+4. In the **Summary** section, select **Place order**.
 
-   ![A screenshot of <describe the screenshot>.](../../media/content-understanding/agreements-placeholder.png)
+   ![A screenshot of Summary section showing the Place order button.](../../media/content-understanding/agreements-place-order.png)
 
 ### Assign the licenses
 
