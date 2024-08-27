@@ -29,7 +29,7 @@ ms.custom:
 - admindeeplinkMAC
 - GAUpdates
 description: "Learn how to redeem a product key to activate or extend your Microsoft business subscription." 
-ms.date: 09/07/2023
+ms.date: 08/26/2024
 ---
 
 # Enter your product key for a Microsoft business product or service
