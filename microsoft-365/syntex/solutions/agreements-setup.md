@@ -38,7 +38,7 @@ You must be a SharePoint Administrator or Global Administrator to activate the S
 
 2. Provide your contact and billing information. This step requires a credit card, and the card won't be charged during preview.
 
-   ![A screenshot of <describe the screenshot>.](../../media/content-understanding/agreements-placeholder.png)
+   ![A screenshot of Checkout page showing the contact and billing information.](../../media/content-understanding/agreements-checkout.png)
 
 3. Choose the number of licenses you would like. The promotional link will give you 100% discount on up to 25 licenses for six months.
 
