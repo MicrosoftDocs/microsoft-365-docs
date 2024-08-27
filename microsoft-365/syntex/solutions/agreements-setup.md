@@ -112,7 +112,7 @@ Before setting up a workspace for SharePoint Agreements AI, you'll need:
 
 3. Search for **Agreements**, and then select **Add**.
 
-   ![A screenshot of <describe the screenshot>.](../../media/content-understanding/agreements-placeholder.png)
+   ![A screenshot of adding the Agreements app in Teams.](../../media/content-understanding/agreements-add-agreements-app.png)
 
 4. You'll see the Agreements app on the left navigation menu.
 
