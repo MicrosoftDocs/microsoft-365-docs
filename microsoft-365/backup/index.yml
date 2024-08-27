@@ -56,6 +56,14 @@ landingContent:
             url: backup-offboarding.md
 
 # Card 4
+  - title: Data privacy & protection
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Privacy, security, & compliance
+            url: backup-privacy-security.md
+
+# Card 5
   - title: More solutions
     linkLists:
       - linkListType: overview
