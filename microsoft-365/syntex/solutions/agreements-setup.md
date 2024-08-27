@@ -49,7 +49,7 @@ You must be a SharePoint Administrator or Global Administrator to activate the S
 
 4. In the **Summary** section, select **Place order**.
 
-   ![A screenshot of Summary section showing the Place order button.](../../media/content-understanding/agreements-place-order.png)
+   ![A screenshot of Checkout page showing the Place order button.](../../media/content-understanding/agreements-place-order.png)
 
 ### Assign the licenses
 
@@ -61,7 +61,7 @@ Assigning licenses to users is performed the same way as assigning other license
 
 3. Select the users who you would like to assign the license to. In the user information panel, go to **Licenses and apps** and assign the new **SharePoint Content Solution - Agreements (Preview)** license.
 
-   ![A screenshot of <describe the screenshot>.](../../media/content-understanding/agreements-placeholder.png)
+   ![A screenshot of the user information panel showing license options.](../../media/content-understanding/agreements-assign-licenses.png)
 
 ## Set up workspaces
 
