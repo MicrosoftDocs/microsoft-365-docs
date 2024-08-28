@@ -85,8 +85,6 @@ It is recommended to enable group-level caching of search requests on Events or 
 
 [Tune SharePoint Online performance](tune-sharepoint-online-performance.md)
 
-[Tune Office 365 performance](tune-microsoft-365-performance.md)
-
 [Performance in the modern SharePoint experience](/sharepoint/modern-experience-performance)
 
 [Content delivery networks](content-delivery-networks.md)
