@@ -23,7 +23,7 @@ description: "Learn about the Cross-tenant SharePoint migration solution to migr
 
 SharePoint sites can now be moved from one tenant to another using the Cross-tenant SharePoint migration feature.
 
-Using *SharePoint Online PowerShell*, SharePoint Admins can to transition sites into their new tenants.
+Using *SharePoint Online PowerShell*, SharePoint Admins can transition sites into their new tenants.
 
 Up to 4,000 SharePoint accounts can be scheduled for migration in advance at a given time. Once scheduled, migrations occur without content ever leaving the Microsoft 365 cloud and with minimal disruption. When migrations are complete, a redirect is placed in the location of the user's original SharePoint site, so any links to files and folders can continue working in the new location.
 
@@ -47,7 +47,7 @@ For more information on licensing:
 
 ## Prerequisites and settings
 
-- **Microsoft SharePoint Online Powershell**. Confirm you have the most recent version installed. [Download SharePoint Online Management Shell from Official Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=35588)
+- **Microsoft SharePoint Online PowerShell**. Confirm you have the most recent version installed. [Download SharePoint Online Management Shell from Official Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=35588)
 
 - **Confirm that the source SharePoint tenant does not have Service encryption with Microsoft Purview Customer Key enabled.** If enabled on Source tenant, the migration will fail.  [Learn more on Service encryption with Microsoft Purview Customer Key](/microsoft-365/compliance/customer-key-overview)
 
@@ -63,7 +63,7 @@ For more information on licensing:
 >
 >Before starting any migrations, make certain that your source SharePoint sites are set to Read/write mode.  If they are set to read-only the migration will fail.
 >
->- Each individual SharePoint site being migrated must have no more than 5 TB of storage, or 1 million items. If during a migration of multiple sites a site with more than 5 TB is encountered, that site will eventually timeout and fail. Sites less 5 TB will continue until completion.
+>- Each individual SharePoint site being migrated must have no more than 5 TB of storage, or 1 million items. If during a migration of multiple sites a site with more than 5 TB is encountered, that site will eventually timeout and fail. Sites with less than 5 TB will continue until completion.
 >
 >- The 1 million item limit can be any "item", including files (including versions), folders, and list line entries if it's a list or library.
 >
@@ -74,13 +74,13 @@ For more information on licensing:
 
 Microsoft character path limit cannot exceed 400 characters. We recommend shortening your Target User and Site URL names to stay within the character limit.
 
-Consider the length of User and Site ULR names in your Target tenant when planning your migrations. Longer user and site URL names may result in migrations failing. Remember that the source's file or folder path name is combined with the new user or site name on the Target. Make sure that total doesn't exceed the 400-character path limit.
+Consider the length of User and Site URL names in your Target tenant when planning your migrations. Longer user and site URL names may result in migrations failing. Remember that the source's file or folder path name is combined with the new user or site name on the Target. Make sure that the total doesn't exceed the 400-character path limit.
 
 If your migration fails, rename the User or Site URL or work with the user to rename or move the affected files or folders higher up the directory structure to ensure it remains under the character threshold limit. Once resolved, you should be able to complete the migration.
 
 ## Support SharePoint features
 
-The following types of site can be migrated between geographic locations:
+The following types of sites can be migrated between geographic locations:
 
 - Microsoft 365 group-connected sites, including those sites associated with Microsoft Teams
 - Modern sites without a Microsoft 365 group association
@@ -116,7 +116,7 @@ Web parts that reference content in other SharePoint Sites and/or other Microsof
 
 ### Sensitivity labels
 
-Labels associated with migrated files may not display correctly in M365 user experiences. In addition, any protection or policy associated with the original label won't be present after migration. To apply protection or policy, the recommendation is to remove labels from files before migration, and reapply new labels as appropriate after migration.
+Labels associated with migrated files may not display correctly in M365 user experiences. In addition, any protection or policy associated with the original label won't be present after migration. To apply protection or policy, the recommendation is to remove labels from files before migration and reapply new labels as appropriate after migration.
 
 #### Sensitivity Labels with User-Defined Permissions
 
