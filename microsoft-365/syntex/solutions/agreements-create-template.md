@@ -33,7 +33,9 @@ To create a new template, follow these steps:
 
 2. Optionally, you can select **Pick a file** to create a template from an existing document.
 
-3. Provide a name for the template.
+3. On the **Create a template** page, provide a name for the template.
+
+   ![A screenshot of the Create a template page.](../../media/content-understanding/agreements-create-template.png)
 
 4. Select the workspace where the template will be stored and the category that the template belongs to.
 
@@ -42,8 +44,6 @@ To create a new template, follow these steps:
 6. You can also optionally provide a description and tags.
 
 7. Select **Open in Word** to set up fields, insert sections, configure workflows, request approvals, and publish it once it's ready.
-
-   ![A screenshot of the Create a template page.](../../media/content-understanding/agreements-create-template.png)
 
     > [!NOTE]
     > You can't change the name of the template or the workspace where the template is stored after a draft template is created.
