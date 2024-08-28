@@ -135,8 +135,6 @@
               href: hybrid-modern-auth-overview.md
             - name: Configure Exchange Server
               href: configure-exchange-server-for-hybrid-modern-authentication.md
-            - name: Configure Skype for Business
-              href: configure-skype-for-business-for-hybrid-modern-authentication.md
             - name: Remove or disable for Skype for Business and Exchange
               href: remove-or-disable-hybrid-modern-authentication-from-skype-for-business-and-excha.md
             - name: Office 2013, Office 2016, and Office 2019 client apps
@@ -357,19 +355,6 @@
                 href: connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md
               - name: Deploy a directory synchronization server in Azure IaaS
                 href: deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md
-              - name: Deploy high availability federated authentication in Azure
-                href: deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md
-                items: 
-                  - name: Phase 1 - Configure Azure
-                    href: high-availability-federated-authentication-phase-1-configure-azure.md
-                  - name: Phase 2 - Configure domain controllers
-                    href: high-availability-federated-authentication-phase-2-configure-domain-controllers.md
-                  - name: Phase 3 - Configure AD FS servers
-                    href: high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md
-                  - name: Phase 4 - Configure web application proxies
-                    href: high-availability-federated-authentication-phase-4-configure-web-application-pro.md
-                  - name: Phase 5 - Configure federated authentication
-                    href: high-availability-federated-authentication-phase-5-configure-federated-authentic.md
     - name: Manage
       items: 
         - name: User accounts
@@ -492,11 +477,7 @@
   href: /deployedge/deploy-edge-plan-deployment
 
 - name: Deployment and update channel example configurations
-  items:
-    - name: Overview
-      href: deploy-update-channels-examples.md
-    - name: Broad deployment of the latest releases
-      href: deploy-update-channels-examples-rapid-deploy.md
+  href: deploy-update-channels-examples.md
 
 - name: Manage Microsoft 365 with PowerShell
   href: manage-microsoft-365-with-microsoft-365-powershell.md
@@ -556,8 +537,6 @@
           items: 
             - name: Manage security groups
               href: manage-security-groups-with-microsoft-365-powershell.md
-            - name: Maintain security group membership
-              href: maintain-group-membership-with-microsoft-365-powershell.md
             - name: Manage Microsoft 365 groups
               href: manage-microsoft-365-groups-with-powershell.md
             - name: Manage Folders and Rules feature in Microsoft 365 Groups
@@ -584,15 +563,11 @@
           href: use-powershell-to-perform-a-staged-migration-to-microsoft-365.md
     - name: Manage Microsoft 365 with Windows PowerShell for Delegated Access partners
       href: manage-microsoft-365-with-windows-powershell-for-delegated-access-permissions-dap-p.md
-      items: 
-        - name: Manage Microsoft 365 tenants with Windows PowerShell for Delegated Access partners
-          href: manage-microsoft-365-tenants-with-windows-powershell-for-delegated-access-permissio.md
+      items:
         - name: Add a domain to a client tenancy with Windows PowerShell for Delegated Access partners
           href: add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-pe.md
         - name: Connect to Exchange Online via remote Windows PowerShell for Delegated Access partners
           href: /powershell/exchange/connect-to-exchange-online-powershell
-        - name: Retrieve customer reporting data via Windows PowerShell for Delegated Access partners
-          href: retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac.md
     - name: Manage Microsoft Teams
       href: /microsoftteams/teams-powershell-install
     - name: Manage add-ins with Centralized Deployment PowerShell

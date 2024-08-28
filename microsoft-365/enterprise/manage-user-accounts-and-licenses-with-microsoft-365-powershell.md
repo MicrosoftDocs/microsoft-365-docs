@@ -53,5 +53,4 @@ For more information, see the following articles.
 
 ## Groups
 - [Manage security groups](manage-security-groups-with-microsoft-365-powershell.md)
-- [Maintain security group membership](maintain-group-membership-with-microsoft-365-powershell.md)
 - [Manage Microsoft 365 groups](manage-microsoft-365-groups-with-powershell.md)
