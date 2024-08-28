@@ -45,7 +45,7 @@ Microsoft 365 Lighthouse is deployed in the partner tenant only&mdash;not in the
 
     1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> and sign in using your partner tenant credentials. 
 
-    2. Go to **Billing** > **Purchase services** > **Microsoft 365**.
+    2. In the left navigation pane, select **Billing** > **Purchase services** > **Microsoft 365**.
  
         > [!NOTE]
         > Instead of **Billing**, some partners may need to go to **Marketplace** > **All products**, and then search for **Microsoft 365 Lighthouse**. 
@@ -60,6 +60,16 @@ Microsoft 365 Lighthouse is deployed in the partner tenant only&mdash;not in the
         To verify that Lighthouse was successfully added to your tenant, look for Microsoft 365 Lighthouse under **Billing** > **Your products** in the Microsoft 365 admin center.
 
     5. If you aren't redirected to the Lighthouse portal, go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">https://lighthouse.microsoft.com</a>.
+
+3. If you see the message, "Microsoft 365 Lighthouse was removed for your organization," then you need to modify your partner tenant settings to allow the use of Lighthouse:
+
+    1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> and sign in using your partner tenant credentials.
+    
+    2. In the left navigation pane, select **Settings** > **Org settings**.
+
+    3. On the **Services** tab, select **Microsoft 365 Lighthouse** from the list of services, and then select the option to allow the use of Microsoft 365 Lighthouse customer management experiences in your tenant.
+
+    4. Select **Save**.
 
 > [!NOTE]
 > After you complete sign-up, it can take up to 48 hours for customer data to appear in Lighthouse. 
