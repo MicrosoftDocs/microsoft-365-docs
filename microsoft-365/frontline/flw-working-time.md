@@ -39,15 +39,14 @@ When a frontline worker clocks in to their shift and opens Teams, the app checks
 - If the worker is off shift when Teams is open, the worker sees a block or warning screen.
   - If you configured a block screen, the worker can’t access Teams until they clock in to their shift.
   - If you configured a warning screen, the worker can dismiss it and choose whether to continue into the app at their discretion.
-
-If a worker is using Teams while clocking out, the worker sees a block screen or warning screen for the app after they clock out.
+- If a worker is using Teams while clocking out, the worker sees a block or warning screen for the app after they clock out.
 
 ## Set up working time
 
 To set up working time:
 
-1. [Configure app protection policies for Android and iOS](#configure-app-protection-policies).
-1. [Connect your workforce management (WFM) system to the working time API](#connect-your-WFM-system-to-the-working-time-api).
+1. [Configure app protection policies for Android and iOS](#configure-app-protection-policies-for-android-and-ios).
+1. [Connect your workforce management (WFM) system to the working time API](#connect-your-wfm-system-to-the-working-time-api).
 
 We recommend that you also [create quiet time policies](#set-up-quiet-time-policies) to automatically mute Teams notifications when workers are off shift.
 
