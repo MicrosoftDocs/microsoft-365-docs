@@ -43,12 +43,7 @@ When a frontline worker clocks in to their shift and opens Teams, the app checks
 
 ## Set up working time
 
-To set up working time:
-
-1. [Configure app protection policies for Android and iOS](#configure-app-protection-policies-for-android-and-ios).
-1. [Connect your workforce management (WFM) system to the working time API](#connect-your-wfm-system-to-the-working-time-api).
-
-We recommend that you also [create quiet time policies](#set-up-quiet-time-policies) to automatically mute Teams notifications when workers are off shift.
+Follow these steps to enable working time for your frontline.
 
 ### Configure app protection policies for Android and iOS
 
@@ -63,6 +58,6 @@ Use Microsoft Intune [app protection policies](/mem/intune/apps/app-protection-p
 
 This step is optional but recommended.
 
-Configure quiet time policies in Intune to mute Teams notifications for your frontline workers during nonworking hours. Learn more about how to [create quiet time policies](/mem/intune/apps/apps-quiet-time-policies).
+Configure quiet time policies in Intune to automatically mute Teams notifications for your frontline workers when they're off shift. Learn more about how to [create quiet time policies](/mem/intune/apps/apps-quiet-time-policies).
 
 ## Related articles
