@@ -56,7 +56,7 @@ conceptualContent:
               text: Assess your environment (English only)
             - url: microsoft-365-copilot-get-ready.md
               itemType: get-started
-              text: "Get ready: Prepare your data and environment (new)"
+              text: "Get ready: Prepare your data and environment (new)" 
         # Card
         - title: Deploy and implement
           links:
