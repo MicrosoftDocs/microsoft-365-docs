@@ -21,23 +21,9 @@ description: Learn how to restore data for OneDrive, SharePoint, and Exchange us
 Once you back up your data, you might need to restore the data if there was an accidental deletion, ransomware attack, or other event. The restore feature in Microsoft 365 Backup is created to help you restore backed up data.
 
 As part of restoring data from backup, admin needs to choose a *restore point* manually or from a tool-recommended OneDrive or SharePoint *express restore point*. A restore point is a prior point in time from which you can restore a healthy version of your content or metadata. For Exchange Online, if the data from a prior point in time is identical to the present state of your data, then there will be no items restored, including Restore to a new folder.
-<!---
-- **Restore point**. A prior point in time from which you can restore a healthy version of your content or metadata. For Exchange Online, if the data from a prior point in time is identical to the present state of your data, then there will be no items restored, including **Restore to a new folder**.
-
-- **Express restore point**. A set of recommended restore points that offers faster restore of data from the backup than a regular restore point.
-
-    **We recommend you choose express restore point for faster restore performance.**
---->
 
 Currently, you can restore OneDrive accounts, SharePoint sites, and Exchange mailbox content from specific prior points in time from the backups.
 
-<!---
-Site restores to a prior point in time, if restored to the same URL, overwrite the state and the content of the site to match the exact state at the prior point in time. This is commonly referred to as a rollback versus a roll-forward.
-
-Mailbox restores only change items that have been modified since the desired restore point, leaving unchanged items unmodified and not overwritten. Mailbox restores follow a roll-forward process. You can restore sites, OneDrive accounts, and mailboxes in place. For SharePoint sites, you can also restore to a new URL, and for mailbox items, you can restore to a new folder. Restoring to a new location prevents any unwanted overwriting of existing data.
-
-Restores started serially for each of three services execute in parallel. There's no need to wait for one service’s restore to finish before starting another.
---->
 ## Restore point frequency
 
 The restore point frequency, also known as the [recovery point objective](backup-faq.md#what-is-the-service-recovery-point-objective) (RPO), defines the maximum amount of time during which data is lost after an attack. Stated differently, it’s the time between the most recent backup of the healthy state of data and the time of the attack. The RPOs for each of the protected services are summarized in the following table.
@@ -286,14 +272,12 @@ Microsoft 365 Backup supports the backup and restoration of any site and user ac
     - [Restore an inactive mailbox](/purview/restore-an-inactive-mailbox)
 
     Once an inactive mailbox is recovered and restored to a new mailbox, the new mailbox must be added to the backup policy if desired.
-<!---
-- While restoring Exchange mailboxes at a granular level, the search feature provides several search parameters. These parameters allow you to enter up to a maximum of five keywords each. For example, the parameters "from" and "to" allow you to enter up to a maximum of five email addresses each.
---->
+
 - OneDrive accounts and SharePoint sites that undergo the following types of changes won't be undoable via restore: tenant rename, tenant move, and site URL change.  
 
 - If there are no differences between the current state of a mailbox and the prior point in time from which you're attempting a restore, a restore isn't performed and no new folders are created when a "restore to a new location" request is made.
 
-- SharePoint sites and OneDrive accounts being restored to a new URL have a read-only lock on that new URL until the restore completes. The [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) can still download documents or remove the read-only lock manually.
+- SharePoint sites and OneDrive accounts being restored to a new URL have a read-only lock on that new URL. The [Global Administrator](/entra/identity/role-based-access-control/permissions-reference#global-administrator) can download documents or remove the read-only lock manually.
 
     [!INCLUDE [global-administrator-note](../includes/global-administrator-note.md)]
 
