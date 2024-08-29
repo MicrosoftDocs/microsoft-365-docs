@@ -41,6 +41,8 @@ When a frontline worker clocks in to their shift and opens Teams, the app checks
   - If you configured a warning screen, the worker can dismiss it and choose whether to use Teams at their discretion.
 - If a worker is using Teams while clocking out, the worker sees a block or warning screen for the app after they clock out.
 
+:::image type="content" source="media/working-time.png" alt-text="Screenshot of the block access screen and the warning screen.":::
+
 Along with working time, we recommend that you also set up quiet time to automatically mute Teams notifications when workers are off shift.
 
 ## Set up working time
@@ -56,7 +58,7 @@ Use Microsoft Intune [app protection policies](/mem/intune/apps/app-protection-p
 
 ### Connect your workforce management system to the working time API
 
-## Set up quiet time policies
+## Set up quiet time
 
 This step is optional but recommended.
 
