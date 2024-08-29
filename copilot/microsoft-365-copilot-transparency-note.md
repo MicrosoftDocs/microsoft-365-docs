@@ -28,7 +28,7 @@ Microsoft's Transparency Notes are part of a broader effort at Microsoft to put 
 
 ### Introduction
 
-Copilot for Microsoft 365 is an AI-powered productivity tool that uses large language models (LLMs) and integrates data with the Microsoft Graph and Microsoft 365 apps and services. It works alongside popular Microsoft 365 apps such as Word, Excel, PowerPoint, Outlook, Teams, and more.
+[Copilot for Microsoft 365](microsoft-365-copilot-overview.md)is an AI-powered productivity tool that uses large language models (LLMs) and integrates data with [Microsoft Graph](/graph/) and Microsoft 365 apps and services. It works alongside popular Microsoft 365 apps such as Word, Excel, PowerPoint, Outlook, Teams, and more.
 
 Copilot for Microsoft 365 uses a combination of models provided by Azure OpenAI Service. This allows us to match the specific needs of each feature – for example, speed, creativity – to the right model, so that Copilot for Microsoft 365 can provide real-time intelligent assistance that enables users to enhance their creativity, productivity, and skills.
 
@@ -69,11 +69,10 @@ For additional, detailed information about the LLMs provided to Microsoft by Ope
 |Copilot in Whiteboard|Copilot in Whiteboard helps kickstart the ideation process to generate, categorize, and summarize ideas. <br/><br/> For more information, see [Frequently Asked Questions about Copilot in Whiteboard](https://support.microsoft.com/topic/cbe05878-d68d-4d9d-83c1-5b47d6b76792).  |
 |Copilot in OneNote|Copilot in OneNote enables users to draft plans, generate ideas, create lists, and organize information to help them find what they need in the OneNote app.<br/><br/> For more information, see [Frequently asked questions about Copilot in OneNote](https://support.microsoft.com/office/2d9136e0-132a-4d4c-ab0e-39cf3ed914cc).  |
 |Microsoft Copilot with Graph-grounded chat|Microsoft Copilot with Graph-grounded chat combines the power of Large Language Models with the Internet, work content and context, and other apps, to help users draft content, catch up on what’s missed, and get answers to questions via prompts.  |
-|Intelligent Search|Intelligent Search enables search in Dataverse applications such as Dynamics 365 Sales, Service & FnO using natural language.|
+|Intelligent Search|Intelligent Search enables search in Dataverse applications such as Dynamics 365 Sales, Service, and Finance & Operations using natural language.|
 |Power Platform Connectors|Power Platform Connectors allow customers to access real time data from a collection of business and personal productivity applications in the Copilot for Microsoft 365 experience.|
 |Microsoft Graph Connectors|Microsoft Graph Connectors enable connections to external data sources, including up to 500 items per Copilot for Microsoft 365 license. |
 |Microsoft Purview|Microsoft Purview is a solution that helps organizations manage and protect their data. It provides a unified platform for data governance, information protection, risk management, and compliance. Customers can extend Microsoft Purview capabilities provided by customers’ Microsoft subscriptions (for example, Microsoft 365 E3 or E5 subscriptions) to Copilot for Microsoft 365 data and interactions.|
-
 
 ### System Behavior
 
@@ -99,7 +98,7 @@ The capabilities that users see in Microsoft 365 applications appear as addition
 
 - Copilot for Microsoft 365 returns the response to the app, where the user can review and assess the response.
 
-The data is encrypted while it's stored and isn't used to train Azure OpenAI Service foundation LLMs, including those used by Copilot for Microsoft 365. For more information about this, see [Data, Privacy, and Security for Microsoft Copilot for Microsoft 365](microsoft-365-copilot-privacy.md).
+The data is encrypted while it's stored and isn't used to train Azure OpenAI Service [foundation LLMs](https://blogs.microsoft.com/on-the-issues/2024/03/28/data-protection-responsible-ai-azure-copilot/), including those used by Copilot for Microsoft 365. For more information about this, see [Data, Privacy, and Security for Microsoft Copilot for Microsoft 365](microsoft-365-copilot-privacy.md).
 
 ### Extensibility & customization
 
@@ -147,7 +146,7 @@ Specific Limitations of Copilot for Microsoft 365
 
 6. **Legal and compliance considerations**: Organizations need to consider their particular legal and compliance obligations when using Copilot for Microsoft 365, especially in regulated industries. Microsoft is examining regulatory requirements that apply to Microsoft as a provider of the technology and addressing them within the product through a process of continuous improvement.
 
-7. **Bias, stereotyping, and ungrounded content**: Despite intensive training by OpenAI and the implementation of responsible AI controls by Microsoft on both user prompts and LLM outputs, AI services are fallible and probabilistic. This makes it challenging to comprehensively block all inappropriate content, leading to potential biases, stereotypes, or ungroundedness in AI-generated content. For more on the known limitations of AI-generated content, see the [Transparency Note for Azure OpenAI Service](/legal/cognitive-services/openai/transparency-note?context=%2Fazure%2Fcognitive-services%2Fopenai%2Fcontext%2Fcontext&tabs=text#use-cases), which includes references to the LLMs behind Copilot for Microsoft 365.
+7. **Bias, stereotyping, and ungrounded content**: Despite intensive training by OpenAI and the implementation of responsible AI controls by Microsoft on both user prompts and LLM outputs, AI services are fallible and probabilistic. This makes it challenging to comprehensively block all inappropriate content, leading to potential biases, stereotypes, or ungroundedness in AI-generated content. For more on the known limitations of AI-generated content, see the [Transparency Note for Azure OpenAI Service](/legal/cognitive-services/openai/transparency-note), which includes references to the LLMs behind Copilot for Microsoft 365.
 
 ## Copilot for Microsoft 365 performance
 
