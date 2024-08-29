@@ -26,7 +26,7 @@ ms.date:
 
 Working time is a feature that allows admins to limit access to Microsoft Teams for shift workers on Android and iOS mobile devices. These controls are designed for bring-your-own-device (BYOD) or company-owned dedicated device scenarios for frontline workers. [Learn more about frontline device scenarios](flw-devices.md#deployment-models).
 
-With this feature, you can block access to or show a warning message when frontline workers who are off shift open Teams. Consider enabling working time for your frontline workforce if:
+With this feature, you can block access or show a warning message when frontline workers who are off shift open Teams. Consider enabling working time for your frontline workforce if:
 
 - You’re concerned about frontline workers asking for pay outside of working hours if they access work apps.
 - Local laws and regulations require you to restrict access to work apps when employees are off shift.
@@ -62,7 +62,7 @@ Use Microsoft Intune [app protection policies](/mem/intune/apps/app-protection-p
 
 This step is optional but recommended.
 
-Configure quiet time policies in Intune to automatically mute Teams notifications that frontline workers received when they're off shift. Learn more about how to [create quiet time policies](/mem/intune/apps/apps-quiet-time-policies).
+Configure quiet time policies in Intune to automatically mute Teams notifications for frontline workers during nonworking hours. Learn more about how to [create quiet time policies](/mem/intune/apps/apps-quiet-time-policies).
 
 ## Frequently asked questions
 
