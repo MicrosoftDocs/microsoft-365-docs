@@ -395,6 +395,8 @@
               href: manage/manage-addins-in-the-admin-center.md      
             - name: Centralized Deployment FAQ
               href: manage/centralized-deployment-faq.yml
+            - name: Deploy add-ins in GCC High environments
+              href: manage/deploy-addins-for-gcch.md
          - name: Manage industry news
            href: manage/manage-industry-news.md
          - name: Manage Office Scripts settings 
@@ -537,6 +539,8 @@
           href: https://support.microsoft.com/office/c6efc38f-4e03-4e79-b28f-e65a4c039508
     - name: Microsoft 365 feature descriptions
       href: m365-feature-descriptions.md
+    - name: Engineering Direct Portal
+      href: ../enterprise/engineering-direct-portal.md?toc=/microsoft-365/admin/toc.json&bc=/microsoft-365/admin/breadcrumb/toc.json
     - name: Troubleshoot
       href: /office/troubleshoot/  
     - name: Contact support

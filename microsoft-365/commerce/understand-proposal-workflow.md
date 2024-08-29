@@ -20,6 +20,7 @@ ms.custom:
 - commerce_subscriptions
 - AdminSurgePortfolio
 - admindeeplinkMAC
+- GAUpdates
 search.appverid: MET150 
 description: "Learn about the proposal workflow used when you buy Microsoft business products and services. Discover how to review and approve proposals."
 ROBOTS: NOINDEX
@@ -42,7 +43,9 @@ Before you can buy items for a proposal, you must have a billing account and an 
 
 You use a billing account to manage your account settings, invoices, billing profiles, and products and services. If you don't already have a billing account, your Microsoft representative creates one for you. Otherwise, they use an existing billing account for your organization, so long as you have permission to use that billing account.
 
-Billing account permissions are managed by the billing account owner. Global admins can assign themselves to the billing account owner role, and then make other people billing account owners.
+Billing account permissions are managed by the Billing account owner. Global Administrators can assign themselves to the Billing account owner role, and then make other people Billing account owners.
+
+[!INCLUDE [ga-roles-limitation](../includes/ga-roles-limitation.md)]
 
 For more information about billing accounts, see [Understand your Microsoft business billing account](manage-billing-accounts.md).
 
@@ -52,9 +55,9 @@ The Microsoft Customer Agreement (MCA) lets an organization buy Microsoft produc
 
 ## Permissions needed to sign an agreement or pay for items
 
-You must be a billing account owner or billing account contributor to successfully sign an agreement or buy products and services. If you're a Global admin but don't have one of those roles, you can assign the roles to yourself. If you're not a Global admin, ask your Global admin, or billing account owner to assign one of the roles to you.
+You must be a billing account owner or billing account contributor to successfully sign an agreement or buy products and services. If you're a Global Administrator but don't have one of those roles, you can assign the roles to yourself. If you're not a Global Administrator, ask your Global Administrator or Billing account owner to assign one of the roles to you.
 
-The billing account owner and billing account contributor roles are assigned by using either of the following methods.
+The Billing account owner and Billing account contributor roles are assigned by using either of the following methods.
 
 ### Assign roles in the Microsoft 365 admin center
 

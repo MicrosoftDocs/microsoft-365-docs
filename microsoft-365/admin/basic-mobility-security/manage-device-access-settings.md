@@ -8,7 +8,7 @@ manager: scotv
 ms.date: 10/25/2023
 audience: Admin
 ms.topic: article
-ms.service: microsoft-365-business
+ms.service: microsoft-365-basic-mobility-security
 ms.localizationpriority: medium
 ms.collection:
 - Tier3
@@ -33,7 +33,7 @@ If you're using Basic Mobility and Security, there might be devices that you can
 
 Use these steps:
 
-1. Sign in to Microsoft 365 with your global admin account.
+1. Sign in to Microsoft 365 with a [Compliance administrator](/entra/identity/role-based-access-control/permissions-reference) account.
 
 2. In your browser, type: <https://compliance.microsoft.com/basicmobilityandsecurity>.
 

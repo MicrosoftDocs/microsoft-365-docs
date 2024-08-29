@@ -3,7 +3,7 @@ title: "Fixing problems with directory synchronization for Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 09/14/2023
+ms.date: 07/22/2024
 audience: Admin
 ms.topic: troubleshooting
 ms.service: microsoft-365-enterprise
@@ -18,6 +18,7 @@ ms.collection:
 - scotvorg
 - Ent_O365
 - M365-identity-device-management
+- must-keep
 search.appverid:
 - MET150
 - MOE150
@@ -55,24 +56,30 @@ To update from Azure AD Sync to Microsoft Entra Connect, see [the upgrade instru
 - [Identity synchronization and duplicate attribute resiliency](/azure/active-directory/hybrid/how-to-connect-syncservice-duplicate-attribute-resiliency)
 
 ### I have an alert in the admin center, or am receiving automated emails that there hasn't been a recent synchronization event
+
 - [Troubleshoot connectivity issues with Microsoft Entra Connect](/azure/active-directory/hybrid/tshoot-connect-connectivity)
 - [Microsoft Entra Connect Accounts and permissions](/azure/active-directory/hybrid/reference-connect-accounts-permissions)
 - [Microsoft Entra Connect Sync: How to manage the Microsoft Entra service account](/azure/active-directory/hybrid/how-to-connect-azureadaccount)
 - [Directory synchronization to Microsoft Entra ID stops or you're warned that sync hasn't registered in more than a day](https://support.microsoft.com/help/2882421/directory-synchronization-to-azure-active-directory-stops-or-you-re-warned-that-sync-hasn-t-registered-in-more-than-a-day)
 
 ### Password hashes aren't synchronizing, or I'm seeing an alert in the admin center that there hasn't been a recent password hash synchronization
+
 - [Implementing password hash synchronization with Microsoft Entra Connect Sync](/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)
 
 ### I'm seeing an alert that Object quota exceeded
+
 - We have a built-in object quota to help protect the service. If you have too many objects in your directory that need to sync to Microsoft 365, you have to [Contact support for business products](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) to increase your quota.
 
 ### I need to know which attributes are synchronized
+
 - You can find a list of all the attributes that are synced between on-premises and the cloud [right here](https://go.microsoft.com/fwlink/p/?LinkId=396719).
 
 ### I can't manage or remove objects that were synchronized to the cloud
+
 - Are you ready to manage objects in the cloud only? Or is there an object that was deleted on-premises, but is stuck in the cloud? Take a look at this [Troubleshooting Errors during synchronization](/azure/active-directory/hybrid/tshoot-connect-sync-errors) and [support article](/troubleshoot/azure/active-directory/cannot-manage-objects) for guidance on how to resolve these issues.
 
 ### I got an error message that my company has exceeded the number of objects that can be synchronized
+
 - You can read more about this issue [here](/troubleshoot/azure/active-directory/exceed-number-objects-synced).
    
 ## Other resources

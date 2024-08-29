@@ -69,7 +69,7 @@ conceptualContent:
               text: Microsoft 365 Archive
             - url: backup/index.yml
               itemType: overview
-              text: Microsoft 365 Backup (Preview)
+              text: Microsoft 365 Backup
             - url: business-premium/index.yml
               itemType: get-started
               text: Microsoft 365 Business Premium
@@ -109,18 +109,18 @@ conceptualContent:
         # Card
         - title: Microsoft 365 Apps and Office
           links:
-            - url: /DeployOffice/plan-microsoft-365-apps
+            - url: /microsoft-365-apps/deploy/plan-microsoft-365-apps
               itemType: get-started
               text: Microsoft 365 Apps
-            - url: /DeployOffice/mac
+            - url: /microsoft-365-apps/mac/deployment-guide-for-office-for-mac
               itemType: how-to-guide
               text: Office for Mac
-            - url: /DeployOffice/ltsc2021/overview
+            - url: /office/ltsc/2021/overview
               itemType: overview
               text: Office LTSC 2021
           # footerLink (optional)
           footerLink:
-            url: /DeployOffice
+            url: /microsoft-365-apps
             text: See more
         # Card
         - title: Solutions for your business

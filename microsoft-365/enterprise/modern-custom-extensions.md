@@ -3,7 +3,7 @@ title: "Optimize custom extensions in SharePoint modern site pages"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 09/19/2022
+ms.date: 08/02/2024
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
@@ -14,6 +14,7 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - SPO_Content
+- must-keep
 f1.keywords:
 - CSH
 ms.custom: Adm_O365
@@ -29,16 +30,16 @@ This article will help you understand how to determine how custom extensions aff
 
 ## Use the Page Diagnostics for SharePoint tool to analyze custom extensions
 
-The Page Diagnostics for SharePoint tool is a browser extension for the new Microsoft Edge (https://www.microsoft.com/edge) and Chrome browsers that analyzes both SharePoint modern portal and classic publishing site pages. The tool provides a report for each analyzed page showing how the page performs against a defined set of performance criteria. To install and learn about the Page Diagnostics for SharePoint tool, visit [Use the Page Diagnostics tool for SharePoint](page-diagnostics-for-spo.md).
+The Page Diagnostics for SharePoint tool is a browser extension for Microsoft Edge and Chrome browsers that analyzes both SharePoint in Microsoft 365 modern portal and classic publishing site pages. The tool provides a report for each analyzed page showing how the page performs against a defined set of performance criteria. To install and learn about the Page Diagnostics for SharePoint tool, visit [Use the Page Diagnostics tool for SharePoint](page-diagnostics-for-spo.md).
 
 >[!NOTE]
->The Page Diagnostics tool only works for SharePoint, and cannot be used on a SharePoint system page.
+>The Page Diagnostics tool only works for SharePoint in Microsoft 365, and cannot be used on a SharePoint system page.
 
 When you analyze a SharePoint site page with the Page Diagnostics for SharePoint tool, you can see information about custom extensions that exceed the baseline metric in the **Extensions are impacting load time** and/or the **Too many extensions used** result in the _Diagnostic tests_ pane.
 
 Possible results include:
 
-- **Attention required** (red): Any _custom_ extension that takes longer than **one** second to load. Total load time as displayed in test results is broken down by module load and init. 
+- **Attention required** (red): Any _custom_ extension that takes longer than **one** second to load. Total load time as displayed in test results is broken down by module load and init.
 Additionally, if there are too many extensions on a page they can impact the page load time and this will be highlighted if **seven** or more extensions are used on the page.
 - **Improvement Opportunities** (yellow) If **five** or more extensions are used they'll be highlighted in this section as a warning until seven or more are used which will be highlighted as Attention Required.
 - **No action required** (green): No extension is taking longer than one second to load.
@@ -111,8 +112,6 @@ Before you make page revisions to remediate performance issues, make a note of t
 ## Related articles
 
 [Tune SharePoint performance](tune-sharepoint-online-performance.md)
-
-[Tune Office 365 performance](tune-microsoft-365-performance.md)
 
 [Performance in the modern SharePoint experience](/sharepoint/modern-experience-performance)
 

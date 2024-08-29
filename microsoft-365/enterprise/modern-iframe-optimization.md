@@ -3,7 +3,7 @@ title: "Optimize iFrames in SharePoint modern and classic publishing site pages"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 03/11/2020
+ms.date: 07/31/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
@@ -14,6 +14,7 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - SPO_Content
+- must-keep
 f1.keywords:
 - CSH
 ms.custom: Adm_O365
@@ -32,10 +33,10 @@ iFrames can be useful for previewing rich content such as videos or other media.
 
 ## Use the Page Diagnostics for SharePoint tool to analyze web parts using iFrames
 
-The Page Diagnostics for SharePoint tool is a browser extension for the new Microsoft Edge (https://www.microsoft.com/edge) and Chrome browsers that analyzes both SharePoint modern portal and classic publishing site pages. The tool provides a report for each analyzed page showing how the page performs against a defined set of performance criteria. To install and learn about the Page Diagnostics for SharePoint tool, visit [Use the Page Diagnostics tool for SharePoint](page-diagnostics-for-spo.md).
+The Page Diagnostics for SharePoint tool is a browser extension for the new [Microsoft Edge](https://www.microsoft.com/edge) and Chrome browsers that analyzes both SharePoint in Microsoft 365 modern portal and classic publishing site pages. The tool provides a report for each analyzed page showing how the page performs against a defined set of performance criteria. To install and learn about the Page Diagnostics for SharePoint tool, visit [Use the Page Diagnostics tool for SharePoint](page-diagnostics-for-spo.md).
 
 >[!NOTE]
->The Page Diagnostics tool only works for SharePoint, and cannot be used on a SharePoint system page.
+>The Page Diagnostics tool only works for SharePoint in Microsoft 365, and cannot be used on a SharePoint system page.
 
 When you analyze a SharePoint site page with the Page Diagnostics for SharePoint tool, you can see information about web parts containing iFrames in the _Diagnostic tests_ pane. The baseline metric is the same for modern and classic pages.
 
@@ -74,7 +75,5 @@ Before you make page revisions to remediate performance issues, make a note of t
 ## Related topics
 
 [Tune SharePoint performance](tune-sharepoint-online-performance.md)
-
-[Tune Office 365 performance](tune-microsoft-365-performance.md)
 
 [Performance in the modern SharePoint experience](/sharepoint/modern-experience-performance)

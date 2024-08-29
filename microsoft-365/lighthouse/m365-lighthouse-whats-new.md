@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: sharonchoi
-ms.date: 6/24/2024
+ms.date: 08/15/2024
 audience: Admin
 ms.topic: whats-new
 ms.service: microsoft-365-lighthouse
@@ -71,6 +71,14 @@ You no longer need to have a Microsoft Entra ID P1 license to manage the Lightho
 [Go to the Lighthouse permissions page now ](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/RBAC.ReactView)
 
 To learn more, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md).
+
+### View and set up new users
+
+We've added a **New users** page that shows you all new users across your managed tenants in Microsoft 365 Lighthouse. You can use this page to track and ensure that all recently onboarded users across your tenants have been properly set up with licenses, groups, and more.
+
+To access this new page, go to **Users** > **Account management** > **New users**. The **New users** page also lets you quickly add a new user to any of your tenants. 
+
+[Go to the New users page now](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/Users.ReactView)
 
 ### Apps & services usage on the Tenants page
 
@@ -586,7 +594,7 @@ You can now view usage data for Microsoft 365 services from within Microsoft 365
 
 These insights can help inform your customer engagements and deliver more value to your customers by empowering you to help them understand which services their users actively use and where there may be opportunities to enhance their security or productivity.
 
-For more information, see [Overview of the Tenants page in Microsoft 365 Lighthouse: Microsoft 365 services usage section](m365-lighthouse-tenants-page-overview.md#microsoft-365-services-usage-section).
+For more information, see [Overview of the Tenants page in Microsoft 365 Lighthouse: Apps and services usage](m365-lighthouse-tenants-page-overview.md#apps-and-services-usage).
 
 <a name='exchange-online-protection-and-microsoft-365-defender-for-office-365-default-baseline-step'></a>
 
