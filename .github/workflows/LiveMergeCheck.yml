@@ -1,4 +1,4 @@
-name: Check max/live-compare-merge below
+name: PR can merge into branch
 
 permissions:
   pull-requests: write
@@ -17,6 +17,3 @@ jobs:
       PayloadJson: ${{ toJSON(github) }}
     secrets:
       AccessToken: ${{ secrets.GITHUB_TOKEN }}
-
-
-  

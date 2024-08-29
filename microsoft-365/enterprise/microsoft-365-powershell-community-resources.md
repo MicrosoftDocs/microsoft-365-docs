@@ -3,7 +3,7 @@ title: "Microsoft 365 community resources for PowerShell"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 07/17/2020
+ms.date: 07/31/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
@@ -12,6 +12,7 @@ ms.localizationpriority: medium
 ms.collection: 
 - scotvorg
 - Ent_O365
+- must-keep
 f1.keywords:
 - CSH
 ms.custom: 

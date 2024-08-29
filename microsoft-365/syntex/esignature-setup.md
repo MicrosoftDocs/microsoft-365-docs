@@ -83,7 +83,7 @@ By default, SharePoint eSignature is turned on for libraries in all SharePoint s
 
 ### Microsoft Entra B2B
 
-Microsoft Entra B2B provides authentication and management of guests. External signers or recipients are considered as guests within your tenant. To be able to send requests to signers outside your organization, you need to enable [Microsoft Entra B2B integration for SharePoint and OneDrive](/sharepoint/sharepoint-azureb2b-integration).
+Microsoft Entra B2B provides authentication and management of guests. External signers or recipients are considered as guests within your tenant. To be able to send requests to signers outside your organization, you need to enable [Microsoft Entra B2B integration for SharePoint and OneDrive](/sharepoint/sharepoint-azureb2b-integration). You would need to resend the eSignature request if a guest user is deleted from the tenant while a signature request is still ongoing. The guest user would no longer be able to access the request document or the final signed document. If you need to delete a guest user, make sure they are not a party to any ongoing request.
 
 ### Authentication
 

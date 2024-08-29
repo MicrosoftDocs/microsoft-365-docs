@@ -1,4 +1,4 @@
-name: Check max/pr-file-count below
+name: PR file count less than limit
 
 permissions:
   pull-requests: write
@@ -7,7 +7,7 @@ permissions:
       
 on: 
   pull_request_target:
-    types: [opened, reopened, synchronize, labeled, unlabeled]
+    types: [opened, reopened, synchronize, labeled, unlabeled, edited]
 
 jobs:
 
@@ -17,6 +17,3 @@ jobs:
       PayloadJson: ${{ toJSON(github) }}
     secrets:
       AccessToken: ${{ secrets.GITHUB_TOKEN }}
-
-
-  

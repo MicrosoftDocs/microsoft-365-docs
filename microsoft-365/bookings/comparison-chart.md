@@ -3,7 +3,7 @@ title: "Comparison: Bookings web app vs. Bookings Teams app"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 06/24/2020
+ms.date: 05/28/2024
 audience: Admin
 ms.topic: product-comparison
 ms.service: bookings
@@ -13,6 +13,7 @@ ms.collection:
 - scotvorg
 - essentials-get-started
 ms.assetid: d586eb28-b752-4c46-bf92-00a0c5ad781d
+ROBOTS: NOINDEX, NOFOLLOW
 description: "A comparison chart that shows the feature differences between the Bookings web app and the Bookings Teams app."
 ---
 

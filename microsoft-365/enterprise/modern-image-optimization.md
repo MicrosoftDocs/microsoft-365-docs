@@ -68,8 +68,6 @@ Before you make page revisions to remediate performance issues, make a note of t
 
 [Tune SharePoint performance](tune-sharepoint-online-performance.md)
 
-[Tune Office 365 performance](tune-microsoft-365-performance.md)
-
 [Performance in the modern SharePoint experience](/sharepoint/modern-experience-performance)
 
 [Content delivery networks](content-delivery-networks.md)

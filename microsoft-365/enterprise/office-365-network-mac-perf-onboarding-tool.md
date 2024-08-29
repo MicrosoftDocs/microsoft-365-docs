@@ -26,20 +26,20 @@ The Microsoft 365 network connectivity test tool is located at <https://connecti
 > [!NOTE]
 > This document mentions the URL (<https://connectivity.office.com>) for the Global version of this tool. For other versions, please refer to the table below for the corresponding URLs.
 
-|Feature|Global service <https://connectivity.office.com>|US Government L4| US Government L5 (DOD) | China operated by 21Vianet <https://connectivity.sovcloud.cn>|
-|:--|:--|:--|:--|:--|
-|Anonymous test|✅|✖️|✖️|✅|
-|Print report | ✅|✖️|✖️|✅|
-|Login| ✅|✖️|✖️|✖️|
-|Save report |  ✅|✖️|✖️|✖️|
-|View report |  ✅|✖️|✖️|✖️|
-|Share report in tenant | ✅|✖️|✖️|✖️|
-|Share report to public |  ✅|✖️|✖️|✖️|
-|Network health status | ✅|✖️|✖️|✅|
-|Multi-languages support: English, Chinese Simplified, Chinese Traditional, Japanese| ✅|✖️|✖️|✅|
-|Testing from the command line|  ✅|✖️|✖️|✖️|
-|FAQ|  ✅|✖️|✖️|✅|
-|Community forum|  ✅|✖️|✖️|✅|
+|Feature|Global service <https://connectivity.office.com>|US Government (GCC)  <https://connectivity.office.com>| China operated by 21Vianet <https://connectivity.sovcloud.cn>|
+|:--|:--|:--|:--|
+|Anonymous test|✅|✅|✅|
+|Print report | ✅|✅|✅|
+|Login| ✅|✖️|✅|
+|Save report |  ✅|✖️|✅|
+|View report |  ✅|✖️|✅|
+|Share report in tenant | ✅|✖️|✅|
+|Share report to public |  ✅|✖️|✅|
+|Network health status | ✅|✅|✅|
+|Multi-languages support: English, Chinese Simplified, Chinese Traditional, Japanese| ✅|✅|✅|
+|Testing from the command line|  ✅|✖️|✅|
+|FAQ|  ✅|✅|✅|
+|Community forum|  ✅|✅|✅|
 
 > [!IMPORTANT]
 > It's important to sign in to your Microsoft 365 tenant as all test reports are shared with your administrator and uploaded to the tenant while you are signed in.
