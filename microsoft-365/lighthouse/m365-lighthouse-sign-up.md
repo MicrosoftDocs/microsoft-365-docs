@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: crimora
-ms.date: 01/17/2024
+ms.date: 08/29/2024
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-lighthouse
@@ -41,7 +41,7 @@ Microsoft 365 Lighthouse is deployed in the partner tenant only&mdash;not in the
     > [!NOTE]
     > If you see the message, "You must be an indirect reseller or direct-bill partner to use this service," see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) for eligibility details.
 
-2. If you see the message, "You need to sign up for Microsoft 365 Lighthouse in the Microsoft 365 admin center," then follow these steps:     
+2. If you see the message, "You need to sign up for Microsoft 365 Lighthouse in the Microsoft 365 admin center," reach out to an admin in your partner tenant and ask them to follow these steps:     
 
     1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> and sign in using your partner tenant credentials. 
 
@@ -61,7 +61,7 @@ Microsoft 365 Lighthouse is deployed in the partner tenant only&mdash;not in the
 
     5. If you aren't redirected to the Lighthouse portal, go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">https://lighthouse.microsoft.com</a>.
 
-3. If you see the message, "Microsoft 365 Lighthouse was removed for your organization," then you need to modify your partner tenant settings to allow the use of Lighthouse:
+3. If you see the message, "Microsoft 365 Lighthouse was removed for your organization," it means your partner tenant settings need to be modified to allow the use of Lighthouse. Reach out to an admin in your partner tenant and ask them to follow these steps:
 
     1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> and sign in using your partner tenant credentials.
     
