@@ -28,7 +28,7 @@ Microsoft's Transparency Notes are part of a broader effort at Microsoft to put 
 
 ### Introduction
 
-[Copilot for Microsoft 365](microsoft-365-copilot-overview.md)is an AI-powered productivity tool that uses large language models (LLMs) and integrates data with [Microsoft Graph](/graph/) and Microsoft 365 apps and services. It works alongside popular Microsoft 365 apps such as Word, Excel, PowerPoint, Outlook, Teams, and more.
+[Copilot for Microsoft 365](microsoft-365-copilot-overview.md) is an AI-powered productivity tool that uses large language models (LLMs) and integrates data with [Microsoft Graph](/graph/) and Microsoft 365 apps and services. It works alongside popular Microsoft 365 apps such as Word, Excel, PowerPoint, Outlook, Teams, and more.
 
 Copilot for Microsoft 365 uses a combination of models provided by Azure OpenAI Service. This allows us to match the specific needs of each feature – for example, speed, creativity – to the right model, so that Copilot for Microsoft 365 can provide real-time intelligent assistance that enables users to enhance their creativity, productivity, and skills.
 
