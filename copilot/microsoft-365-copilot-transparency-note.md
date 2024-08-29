@@ -13,7 +13,7 @@ ms.collection:
 - m365copilot
 - magic-ai-copilot
 hideEdit: true
-ms.date: 08/28/2024
+ms.date: 09/03/2024
 ---
 
 # Transparency Note for Copilot for Microsoft 365
