@@ -176,8 +176,6 @@ No change is visible except that you'll be notified that you have enabled it and
 
 [Tune SharePoint performance](tune-sharepoint-online-performance.md)
 
-[Tune Office 365 performance](tune-microsoft-365-performance.md)
-
 [Performance in the modern SharePoint experience](/sharepoint/modern-experience-performance)
 
 [Content delivery networks](content-delivery-networks.md)

@@ -43,7 +43,7 @@ In the Teams admin center, choose **Frontline deployment** > **Manage frontline 
 
 To view usage reports in the dashboard, make sure the **Display concealed user, group, and site names in all reports** setting is turned on in the Microsoft 365 admin center. Otherwise, you'll see a "User details have been hidden by your Microsoft 365 Reports privacy setting" message.
 
-You must be a Global admin to turn on this setting.
+You must be a Global Administrator to turn on this setting.
 
 1. In the Microsoft 365 admin center, go to **Settings** > **Org Settings**, and then on the **Services** tab, choose **Reports**.
 1. Select the **Display concealed user, group, and site names in all reports** check box, and then choose **Save**.

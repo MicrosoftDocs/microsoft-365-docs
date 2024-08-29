@@ -59,7 +59,7 @@ Make sure you gather the following information and complete the following config
 
 ### Accounts
 
-- You're a Microsoft 365 global admin.
+- You're a Microsoft 365 Global Administrator.
 - You know your UKG Pro WFM account username and password, along with the following service URLs:
 
     - API URL
