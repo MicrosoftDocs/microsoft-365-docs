@@ -102,10 +102,12 @@ additionalContent:
 #            - text: Copilot for Microsoft 365 - Security & Privacy
 #              url: index.yml
         # Card
-        - title: End user Copilot resources
+        - title: Resources for your end users
           links:
             - text: Copilot Lab
               url: https://copilot.cloud.microsoft
+            - text: Microsoft Copilot Academy
+              url: /viva/learning/academy-copilot/
 #            - text: Use additional data sources with Microsoft 365 Chat
 #              url: https://go.microsoft.com/fwlink/?linkid=2250210
         # Card
