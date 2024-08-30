@@ -89,6 +89,43 @@ If you have [AI Builder credits available](/power-platform/admin/capacity-add-on
 
 When using a custom environment, model creators must be assigned the Environment Maker security role. Model users must have permission to use (not edit) the model file in SharePoint libraries. For more information, see [Assign a security role to a user](/power-platform/admin/assign-security-roles). Custom security roles can be created to specifically grant access to the AI Builder tables as the Environment Maker role so those users can create models. You don't need to assign users this role if you're using the default Power Platform environment.
 
+### Set up the default Power Platform environment
+
+To make the default Power Platform ready for to use with Microsoft Syntex, follow these steps:
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) as a Global Administrator, a Power Platform Administrator, or a Dynamics 365 Administrator.
+
+2. Select the default environment.
+
+3. Ensure there is a Dataverse environment.
+
+    - If there is no Dataverse for the environment, from the command bar, select **Add Dataverse** and then confirm the action.
+    
+    - If Dataverse is already been added, the **Add Dataverse** button will not appear in the command bar, and this step can be skipped.
+
+4. Refresh the page until the **State** of the default environment is **Ready.**
+
+5. Select the checkmark next to the default environment.
+
+6. From the command bar, select **Membership**, and then on the **System Administrators** panel, select **Add me**. When done, select **Close**.
+
+7. Select the checkmark next to the default environment.
+
+8. From the command bar, select **Resources** > **Dynamics 365 apps**.  The Dynamics 365 apps page for the default environment will open.
+
+9. Ensure the **AI Builder for Project Cortex** app is installed.
+
+    - If **AI Builder for Project Cortex** is not on the installed apps list, from the command bar, select **Install app**.
+
+    - If **AI Builder for Project Cortex** is already on the installed apps list and the **Status** shows **Installed**, the remaining steps can be skipped.
+
+10. If **AI Builder for Project Cortex** is on the installed apps list, but the **Status** is **Installation failed**, then select the status text to view the error details. On the **Error details** panel, select **Retry installation**.
+
+11. On the **Install Dynamic 365 app** panel, select **AI Builder for Project Cortex**, and then select **Next**.
+
+11. On the **Install AI Builder for Project Cortex** panel, agree to the terms of service, and then select **Install**.
+
+12. Wait for the app to install, and refresh the page until the **Status** of the app is **Installed**.
 
 <!---
 Users creating models in a [content center site](create-a-content-center.md) must be site members. Users creating models locally outside the content center must be site owners of those sites.--->
