@@ -81,7 +81,7 @@ Follow these steps to turn off structured and freeform document processing.
 
 ## Using a custom Power Platform environment
 
-Your tenant comes with a default Power Platform environment. If you plan to use a custom Power Platform environment, you must install the *AI Builder for Project Cortex* app in this environment. See [Manage Dynamics 365 apps](/power-platform/admin/manage-apps#install-an-app-in-the-environment-view) for details and look for the *AI Builder for Project Cortex* app in the list of Dynamics 365 apps. The environment must not be of the Sandbox type.
+Your tenant comes with a [default Power Platform environment](#set-up-the-default-power-platform-environment). If you plan to use a custom Power Platform environment, you must install the *AI Builder for Project Cortex* app in this environment. See [Manage Dynamics 365 apps](/power-platform/admin/manage-apps#install-an-app-in-the-environment-view) for details and look for the *AI Builder for Project Cortex* app in the list of Dynamics 365 apps. The environment must not be of the Sandbox type.
 
 If you have [AI Builder credits available](/power-platform/admin/capacity-add-on) to the environment, these credits will be used first. For both custom and default Power Platform environments, once the credits are exhausted, the processing transactions are charged to the meter.
 
@@ -105,23 +105,23 @@ To make the default Power Platform environment ready for to use with Microsoft S
 
     - If the value is **Yes**, go to the next step.
 
-4. From the command bar, select **Membership**. On the **System Administrators** panel, select **Add me**, and then select **Close**.
+4. On the command bar, select **Membership**. On the **System Administrators** panel, select **Add me**, and then select **Close**.
 
-5. From the command bar, select **Resources** > **Dynamics 365 apps**.  The Dynamics 365 apps page for the default environment will open.
+5. On the command bar, select **Resources** > **Dynamics 365 apps**.  The Dynamics 365 apps page for the default environment will open.
 
 6. Verify that the **AI Builder for Project Cortex** app is installed.
 
-    - If **AI Builder for Project Cortex** is not on the installed apps list, from the command bar, select **Install app**.
+    - If **AI Builder for Project Cortex** is not on the installed apps list, on the command bar, select **Install app**.
 
-    - If **AI Builder for Project Cortex** is already on the installed apps list and the **Status** shows **Installed**, the remaining steps can be skipped.
+    - If **AI Builder for Project Cortex** is already on the installed apps list and the **Status** column shows **Installed**, the remaining steps can be skipped.
 
-    - If **AI Builder for Project Cortex** is on the installed apps list, but the **Status** is **Installation failed**, then select the status text to view the error details. On the **Error details** panel, select **Retry installation**.
+    - If **AI Builder for Project Cortex** is on the installed apps list, but the **Status** column shows **Installation failed**, then select the status text to view the error details. On the **Error details** panel, select **Retry installation**.
 
 7. On the **Install Dynamic 365 app** panel, select **AI Builder for Project Cortex**, and then select **Next**.
 
 8. On the **Install AI Builder for Project Cortex** panel, agree to the terms of service, and then select **Install**.
 
-9. Wait for the app to install, and then refresh the page until the **Status** column is **Installed**.
+9. Wait for the app to install, and then refresh the page until the **Status** column shows **Installed**.
 
 <!---
 Users creating models in a [content center site](create-a-content-center.md) must be site members. Users creating models locally outside the content center must be site owners of those sites.--->
