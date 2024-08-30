@@ -211,6 +211,10 @@ With app protection policies, you can add access control safeguards, such as:
 
 In a shared devices deployment, you can use app protection policies to ensure that data doesn't leak to apps that don't support shared device mode. In BYOD scenarios, app protection policies are helpful because they allow you to protect your data at the app level without having to manage the entire device.
 
+## Limit access to Teams when frontline workers are off shift
+
+With the working time feature, you can limit access to Teams for shift workers. This feature lets you can block access or show a warning message when frontline workers who are off shift open Teams. To learn more, see [Limit access to Teams when frontline workers are off shift](flw-working-time.md).
+
 ## Related articles
 
 - [Manage shared devices for your frontline](flw-shared-devices.md)
