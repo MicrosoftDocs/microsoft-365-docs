@@ -81,7 +81,7 @@ Follow these steps to turn off structured and freeform document processing.
 
 ## Using a Power Platform environment
 
-### Set up the default Power Platform environment
+### Set up a default Power Platform environment
 
 Your tenant comes with a default Power Platform environment. To make the default environment ready for to use with Microsoft Syntex, follow these steps:
 
