@@ -66,7 +66,7 @@ By default, structured and default document processing is turned on for librarie
 
 ## Turn off structured and freeform document processing
 
-When the structured and freeform document processing service is turned off, structured and freeform models will not run, and users will not be able to create or apply structured or freeform models.
+When the structured and freeform document processing service is turned off, structured and freeform models won't run, and users won't be able to create or apply structured or freeform models.
 
 Follow these steps to turn off structured and freeform document processing.
 
@@ -79,8 +79,7 @@ Follow these steps to turn off structured and freeform document processing.
     > [!NOTE]
     > For multi-geo environments, when the service is turned off, the service is off for all geos.
 
-## Using a custom Power Platform environment
-
+## Using a Power Platform environment
 
 ### Set up the default Power Platform environment
 
@@ -102,11 +101,11 @@ To make the default Power Platform environment ready for to use with Microsoft S
 
 4. On the command bar, select **Membership**. On the **System Administrators** panel, select **Add me**, and then select **Close**.
 
-5. On the command bar, select **Resources** > **Dynamics 365 apps**.  The Dynamics 365 apps page for the default environment will open.
+5. On the command bar, select **Resources** > **Dynamics 365 apps**. The Dynamics 365 apps page for the default environment opens.
 
 6. Verify that the **AI Builder for Project Cortex** app is installed.
 
-    - If **AI Builder for Project Cortex** is not on the installed apps list, on the command bar, select **Install app**.
+    - If **AI Builder for Project Cortex** isn't on the installed apps list, on the command bar, select **Install app**.
 
     - If **AI Builder for Project Cortex** is already on the installed apps list and the **Status** column shows **Installed**, the remaining steps can be skipped.
 
