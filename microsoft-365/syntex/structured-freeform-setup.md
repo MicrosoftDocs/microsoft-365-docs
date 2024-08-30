@@ -83,7 +83,7 @@ Follow these steps to turn off structured and freeform document processing.
 
 ### Set up the default Power Platform environment
 
-To make the default Power Platform environment ready for to use with Microsoft Syntex, follow these steps:
+Your tenant comes with a [default Power Platform environment](#set-up-the-default-power-platform-environment). To make the default environment ready for to use with Microsoft Syntex, follow these steps:
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) as a Global Administrator, a Power Platform Administrator, or a Dynamics 365 Administrator.
 
@@ -119,7 +119,7 @@ To make the default Power Platform environment ready for to use with Microsoft S
 
 ### Set up a custom Power Platform environment
 
-Your tenant comes with a [default Power Platform environment](#set-up-the-default-power-platform-environment). If you plan to use a custom Power Platform environment, you must install the *AI Builder for Project Cortex* app in this environment. See [Manage Dynamics 365 apps](/power-platform/admin/manage-apps#install-an-app-in-the-environment-view) for details and look for the *AI Builder for Project Cortex* app in the list of Dynamics 365 apps. The environment must not be of the Sandbox type.
+If you plan to use a custom Power Platform environment, you must install the *AI Builder for Project Cortex* app in this environment. See [Manage Dynamics 365 apps](/power-platform/admin/manage-apps#install-an-app-in-the-environment-view) for details and look for the *AI Builder for Project Cortex* app in the list of Dynamics 365 apps. The environment must not be of the Sandbox type.
 
 If you have [AI Builder credits available](/power-platform/admin/capacity-add-on) to the environment, these credits will be used first. For both custom and default Power Platform environments, once the credits are exhausted, the processing transactions are charged to the meter.
 
