@@ -77,6 +77,9 @@ Admins can deploy or remove extensions for Copilot across the whole organization
 
 Admins can assign or unassign extensions for Copilot to specific users or groups by using the same gestures and controls that work for any other app in the Microsoft 365 admin center. Admins can select an app that has a plugin for Copilot from the Available apps or Deployed apps list and click on the **Assign** or **Unassign** button. Admins can also choose to assign or unassign the app to everyone or specific users or groups. Assigning or unassigning an app affects its availability and functionality in Copilot as well as other host products, such as Outlook, Teams, or Microsoft 365.
 
+> [!IMPORTANT]
+> Developers can [update the existing apps](/microsoft-365-copilot/extensibility/) to be used with Microsoft Copilot. If such an updated extension is pre-approved and pre-installed by an admin, then it'll update for the users and start working with Copilot. If a developer updates a previously blocked extension to use Copilot and then the admins make the extension available to the users, then such an extension also works with Copilot.
+
 ## Block or unblock extensions for Copilot
 
 Admins can block or unblock extensions for Copilot for the whole organization or specific users or groups by using the same gestures and controls that work for any other app in the Microsoft 365 admin center. Admins can select an app that has a plugin for Copilot from the Available apps or Deployed apps list and click on the block or unblock button. Admins can also choose to block or unblock the app for everyone or specific users or groups. Blocking or unblocking an app affects its availability and functionality in Copilot as well as other host products, such as Outlook, Teams, or Microsoft 365.
