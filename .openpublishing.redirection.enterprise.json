@@ -1419,6 +1419,11 @@
       "source_path": "microsoft-365/enterprise/high-availability-federated-authentication-phase-5-configure-federated-authentic.md",
       "redirect_url": "/microsoft-365/enterprise/hybrid-solutions",
       "redirect_document_id": false
+   },
+   {
+      "source_path": "microsoft-365/enterprise/tune-microsoft-365-performance.md",
+      "redirect_url": "/microsoft-365/enterprise/index",
+      "redirect_document_id": false
    }
   ]
 }

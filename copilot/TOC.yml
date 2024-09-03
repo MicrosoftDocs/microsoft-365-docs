@@ -53,6 +53,8 @@
           href: microsoft-365-copilot-faq.yml
         - name: Microsoft 365 Copilot and Responsible AI (new)
           href: microsoft-365-copilot-responsible-ai.md
+        - name: Transparency Note
+          href: microsoft-365-copilot-transparency-note.md    
     - name: Extend and build
       items:
         - name: Extend Microsoft 365 Copilot
