@@ -90,9 +90,9 @@
           href: network-planning-and-performance.md
         - name: Monitor connectivity
           href: monitor-connectivity.md
-        - name: Network Connectivity in Microsoft 365 Admin center
+        - name: Network Connectivity in Microsoft 365 admin center
           items:
-            - name: Network Connectivity in Microsoft 365 Admin center
+            - name: Network Connectivity in Microsoft 365 admin center
               href: office-365-network-mac-perf-overview.md
             - name: Microsoft 365 Network Assessment
               href: office-365-network-mac-perf-score.md
