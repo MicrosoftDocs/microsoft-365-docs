@@ -3,7 +3,7 @@ title: "Turn off directory synchronization for Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 07/16/2024
+ms.date: 09/03/2024
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -69,7 +69,7 @@ To turn off Directory synchronization:
   ```
 
 > [!Note]
-> If you use this command, you must wait 72 hours before you can turn directory synchronization back on. Visit [Update-MgBetaOrganization](/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaorganization) for more detailed information on cmdlet usage and switches. 
+> If you use this command, you must wait 72 hours before you can turn directory synchronization back on.
 > This process will clear the following on-premises properties:
 >   - DnsDomainName
 >   - NetBiosName
