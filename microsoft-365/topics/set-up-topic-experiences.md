@@ -1,5 +1,5 @@
 ---
-ms.date: 01/01/2024
+ms.date: 09/03/2024
 title: Set up and manage Topics
 ms.author: daisyfeller
 author: daisyfell
@@ -36,9 +36,9 @@ You must assign licenses for the users who will be using Topics. Only users with
 
 To assign licenses:
 
-1. In the Microsoft 365 admin center, under **Users**, select **Active users**.
+1. In the Microsoft 365 admin center, search for **Users**, and select **Active users**.
 
-2. Select the users that you want to license, and select **Licenses and apps**.
+2. Select the users that you want to license, and select **Manage product licenses**.
 
 3. Under **Licenses**, select **Viva Topics**.
 
