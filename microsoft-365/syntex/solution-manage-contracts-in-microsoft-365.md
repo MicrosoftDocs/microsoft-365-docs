@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 ms.reviewer: ssquires
 audience: admin
-ms.topic: conceptual
+ms.topic: solution-overview
 ms.date: 02/14/2024
 ms.service: microsoft-syntex
 ms.collection:
