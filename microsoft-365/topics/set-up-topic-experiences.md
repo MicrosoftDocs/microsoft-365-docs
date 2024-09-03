@@ -55,6 +55,9 @@ Note that users must also have an Exchange Online license to use Topics.
 
 ## Set up Topics
 
+> [!NOTE]
+> The first time topic discovery is enabled, it may take up to two weeks for all suggested topics to appear in the Manage Topics view. Topic discovery continues as new content or updates to content are made. It is normal to have fluctuations in the number of suggested topics in your organization as Viva Topics evaluates new information.
+
 1. In the [Microsoft 365 admin center](https://admin.microsoft.com), select **Setup**.
 
 2. Under **Files and content**, select **Connect people to knowledge with Viva Topics**.
