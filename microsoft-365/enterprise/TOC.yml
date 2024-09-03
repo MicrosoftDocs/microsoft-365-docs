@@ -90,9 +90,9 @@
           href: network-planning-and-performance.md
         - name: Monitor connectivity
           href: monitor-connectivity.md
-        - name: Network Connectivity in Microsoft 365 Admin center
+        - name: Network Connectivity in Microsoft 365 admin center
           items:
-            - name: Network Connectivity in Microsoft 365 Admin center
+            - name: Network Connectivity in Microsoft 365 admin center
               href: office-365-network-mac-perf-overview.md
             - name: Microsoft 365 Network Assessment
               href: office-365-network-mac-perf-score.md
@@ -435,8 +435,6 @@
           href: https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe
         - name: Performance and tuning
           items: 
-            - name: Tune Microsoft 365 performance
-              href: tune-microsoft-365-performance.md
             - name: Performance tuning using baselines and performance history
               href: performance-tuning-using-baselines-and-history.md
             - name: Tune Exchange Online performance

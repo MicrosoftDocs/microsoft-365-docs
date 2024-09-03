@@ -17,6 +17,7 @@ metadata:
   author: samanro #Required; your GitHub user alias, with correct capitalization.
   ms.author: samanro #Required; microsoft alias of author; optional team alias.
   ms.date: 08/09/2024 #Required; mm/dd/yyyy format.
+  ms.custom: [copilot-learning-hub]
 
 # conceptualContent section (Optional; Remove if not applicable.)
 conceptualContent:
@@ -48,6 +49,15 @@ conceptualContent:
             - url: /security/zero-trust/zero-trust-tech-illus#zero-trust-for-microsoft-365-copilot?bc=/microsoft-365/copilot/breadcrumb/toc.json&toc=/microsoft-365/copilot/toc.json
               itemType: architecture
               text: Zero trust illustrations
+            - url: /purview/ai-microsoft-purview
+              itemType: concept
+              text: Microsoft Purview data security and compliance protections for generative AI apps
+            - url: /compliance/assurance/assurance-microsoft-365-isolation-controls
+              itemType: overview
+              text: Isolation controls
+            - url: microsoft-365-copilot-transparency-note.md  
+              itemType: overview
+              text: Transparency Note
         # Card
         - title: Assess technical readiness
           links:
@@ -97,7 +107,7 @@ conceptualContent:
               itemType: reference
               text: Responsible AI and Microsoft 365 Copilot (new)
         # Card
-        - title: Training
+        - title: Training and end user resources
           links:
             - url: /training/paths/prepare-your-organization-microsoft-365-copilot/
               itemType: training
@@ -108,6 +118,10 @@ conceptualContent:
             - url: https://copilot.cloud.microsoft/
               itemType: training
               text: "Copilot lab: End user resources"
+            - url: /viva/learning/academy-copilot/
+              itemType: training
+              text: Microsoft Copilot Academy
+              
         # Card
         - title: Enable Copilot in Viva
           links:

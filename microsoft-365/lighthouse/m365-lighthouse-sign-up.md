@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: crimora
-ms.date: 01/17/2024
+ms.date: 08/29/2024
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-lighthouse
@@ -41,11 +41,11 @@ Microsoft 365 Lighthouse is deployed in the partner tenant only&mdash;not in the
     > [!NOTE]
     > If you see the message, "You must be an indirect reseller or direct-bill partner to use this service," see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) for eligibility details.
 
-2. If you see the message, "You need to sign up for Microsoft 365 Lighthouse in the Microsoft 365 admin center," then follow these steps:     
+2. If you see the message, "You need to sign up for Microsoft 365 Lighthouse in the Microsoft 365 admin center," reach out to an admin in your partner tenant and ask them to follow these steps:     
 
     1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> and sign in using your partner tenant credentials. 
 
-    2. Go to **Billing** > **Purchase services** > **Microsoft 365**.
+    2. In the left navigation pane, select **Billing** > **Purchase services** > **Microsoft 365**.
  
         > [!NOTE]
         > Instead of **Billing**, some partners may need to go to **Marketplace** > **All products**, and then search for **Microsoft 365 Lighthouse**. 
@@ -60,6 +60,16 @@ Microsoft 365 Lighthouse is deployed in the partner tenant only&mdash;not in the
         To verify that Lighthouse was successfully added to your tenant, look for Microsoft 365 Lighthouse under **Billing** > **Your products** in the Microsoft 365 admin center.
 
     5. If you aren't redirected to the Lighthouse portal, go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">https://lighthouse.microsoft.com</a>.
+
+3. If you see the message, "Microsoft 365 Lighthouse was removed for your organization," it means your partner tenant settings need to be modified to allow the use of Lighthouse. Reach out to an admin in your partner tenant and ask them to follow these steps:
+
+    1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> and sign in using your partner tenant credentials.
+    
+    2. In the left navigation pane, select **Settings** > **Org settings**.
+
+    3. On the **Services** tab, select **Microsoft 365 Lighthouse** from the list of services, and then select the option to allow the use of Microsoft 365 Lighthouse customer management experiences in your tenant.
+
+    4. Select **Save**.
 
 > [!NOTE]
 > After you complete sign-up, it can take up to 48 hours for customer data to appear in Lighthouse. 
