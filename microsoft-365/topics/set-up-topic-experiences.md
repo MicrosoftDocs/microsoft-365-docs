@@ -1,5 +1,5 @@
 ---
-ms.date: 01/01/2024
+ms.date: 09/03/2024
 title: Set up and manage Topics
 ms.author: daisyfeller
 author: daisyfell
@@ -36,9 +36,9 @@ You must assign licenses for the users who will be using Topics. Only users with
 
 To assign licenses:
 
-1. In the Microsoft 365 admin center, under **Users**, select **Active users**.
+1. In the Microsoft 365 admin center, search for **Users**, and select **Active users**.
 
-2. Select the users that you want to license, and select **Licenses and apps**.
+2. Select the users that you want to license, and select **Manage product licenses**.
 
 3. Under **Licenses**, select **Viva Topics**.
 
@@ -57,22 +57,6 @@ Note that users must also have an Exchange Online license to use Topics.
 
 > [!NOTE]
 > The first time topic discovery is enabled, it may take up to two weeks for all suggested topics to appear in the Manage Topics view. Topic discovery continues as new content or updates to content are made. It is normal to have fluctuations in the number of suggested topics in your organization as Viva Topics evaluates new information.
-
-To set up Topics:
-
-1. In the [Microsoft 365 admin center](https://admin.microsoft.com), select **Setup**, and then choose **Microsoft Viva**.
-
-   ![Screenshot of the Microsoft Viva setup card.](../media/topics/viva-setup.png)
-
-2. Select **Viva Topics**.
-
-   [![Screenshot of the Viva admin page.](../media/topics/viva-new-admin.png)](../media/topics/viva-new-admin.png#lightbox)
-
-3. This will take you to the Topics admin page. Choose **Deploy Topics in 2 steps** to enable Topics for your organization. This will bring up the setup pane.
-
-### Alternative setup path
-
-You can take either path through your Microsoft 365 admin center to set up Topics.
 
 1. In the [Microsoft 365 admin center](https://admin.microsoft.com), select **Setup**.
 

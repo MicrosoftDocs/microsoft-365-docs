@@ -42,7 +42,7 @@ Current research strongly indicates that mandated password changes do more harm 
 
 ## Before you begin
 
-You must be a [global admin](../add-users/about-admin-roles.md) to perform these steps.
+You must be a [user administrator](../add-users/about-admin-roles.md) to perform these steps.
 
 > [!TIP]
 > If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
