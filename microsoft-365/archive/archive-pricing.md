@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 04/30/2024
+ms.date: 09/04/2024
 ms.topic: conceptual
 ms.service: microsoft-365-archive
 ms.custom: archive
@@ -77,17 +77,17 @@ The following table helps visualize the savings you'll realize by archiving cont
 
 ## Billing scenarios
 
-Your charges for Microsoft 365 Archive depend on your tenant’s Standard storage quota. The following five scenarios and diagram can help you compare charges based on excess storage.
+Your charges for Microsoft 365 Archive depend on your tenant’s Standard storage quota. The following scenarios and diagram can help you compare charges based on excess storage.
 
 |Scenario  |Description  |Additional costs  |
 |---------|---------|---------|
 |**A**     |Tenant has not archived any data and exceeds the Standard storage quota by 200 GB.         |Purchase 200 GB of additional Standard storage packs.         |
 |**B**     |Tenant has archived the 200GB of data that exceeded their Standard storage quota.         |200 GB of Archive storage charged at $0.05/GB/month.         |
 |**C**     |Tenant has archived more storage than exceeded their Standard storage quota.         |Only charged for the 200 GB of Archived data that exceeds their Standard storage quota.         |
-|**D**     |Tenant has archived some, but not all, of the data that exceeds their Standard storage quota.         |Purchase additional Standard storage packs and pay $0.05/GB/month for ~100GB of Archived data.         |
+|**D**     |Tenant has archived some, but not all, of the data that exceeds their Standard storage quota.         |Purchase additional Standard storage packs and pay $0.05/GB/month for ~100 GB of Archived data.         |
 |**E**     |Tenant’s total data (Standard + Archive) is less than their Standard storage quota.         |No additional costs.         |
 
-![Diagram showing comparisons for five archive scenarios.](../media/m365-archive/archive-billing-scenarios.png)
+![Diagram showing comparisons for five archive scenarios.](../media/m365-archive/archive-billing-scenarios-diagram.png)
 
 
 
