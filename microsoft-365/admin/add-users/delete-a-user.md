@@ -28,7 +28,7 @@ description: "Learn how to delete a Microsoft 365 user account, what to do with 
 
 ## Before you begin
 
-- You need to be a [user administrator](https://learn.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide#commonly-used-microsoft-365-admin-center-roles) for the business or school to delete user accounts.
+- You need to be a [user administrator](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide#commonly-used-microsoft-365-admin-center-roles&preserve-view=true) for the business or school to delete user accounts.
 - You have 30 days to [restore](restore-user.md) the account before the user's data is permanently deleted.
 - If you want to keep the user's OneDrive data, move it to a different location. You can even move the data up to 30 days after deleting the account. See [Get access to and back up a former user's data](get-access-to-and-back-up-a-former-user-s-data.md). You don't need to move their SharePoint files; you'll still have access to them.
 - If you want to keep the user's email, **BEFORE** you delete the account, move the email to a different location. If you've already deleted the account: if it's been less than 30 days you can restore it, then move the email data, then delete the account. See [Get access to and back up a former user's data](remove-former-employee-step-5.md).
