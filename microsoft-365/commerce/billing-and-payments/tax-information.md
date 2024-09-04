@@ -117,22 +117,25 @@ If your billing is done by Microsoft Corporation (see your invoice), and you sig
 
 You can add your VAT ID in the Microsoft 365 admin center. However, the steps to add a VAT ID depend on the type of billing account that you have. [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
 
-### Add your VAT ID for your MCA billing account
+### Add your tax id for your MCA billing account
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
-2. Select the **Navigation menu**, then select **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Billing accounts</a>.
-3. On the **Billing accounts** page, select the billing account.
-4. On the billing account details page, select **Add tax ID**.
-5. Enter your VAT ID, then select **Save**.
+1. Select the **Navigation menu**, then select **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Billing accounts</a>.
+1. On the **Billing accounts** page, select the billing account.
+1. On the billing account details page, select **Add tax ID**.
+1. Enter your Tax id, then select **Save**.
 
-### Add your VAT ID for your MOSA billing account
+Note: not all regions support self-serve tax id management.  For these countries, **Add tax id** will not be available in the billing account details page.
+
+### Add your VAT ID, GSTIN, or PAN for your MOSA billing account
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
    - If you're using the **Simplified view**, select **Billing**.
    - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. Select the subscription that you want to update.
 3. On the subscription details page, in the **Service usage address** section, select **Edit service usage address**.
-4. In the **Edit service usage address** pane, in the **VAT number** box, enter your VAT ID, including the prefix, and without any spaces.
+1. In the **Edit service usage address** pane, in the **VAT, GST, or PAN number** box, enter your ID.
+
 5. Select **Save**.
 
 ## How taxes are calculated
