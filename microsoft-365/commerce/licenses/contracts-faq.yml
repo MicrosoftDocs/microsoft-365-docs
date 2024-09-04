@@ -18,7 +18,7 @@ metadata:
   search.appverid: MET150
   ms.localizationpriority: medium
   description: "Frequently asked questions about Microsoft 365 licensing agreements."
-  ms.date: 01/18/2024
+  ms.date: 09/04/2024
 
 title: Contracts Frequently Asked Questions
 summary: |
@@ -78,6 +78,11 @@ sections:
           |End date|The End date of the License|
           |Status|The status of the License|
           |Roles|Your permissions on the Contracts|
+
+      - question: |
+          Why am I seeing "Organization not approved" message?
+        answer: |
+          If you see an "Organization not approved" message, it means your organization is not yet ready to use Microsoft products and services because the review is incomplete. Until this review is complete, the License ID isn't displayed in **Volume Licensing** > **Contracts**, and you can't access software downloads or volume licensing keys or manage user access to the contract. Please use the Help & Support option to contact our support team.
 
       - question: |
           What is the License Summary?
