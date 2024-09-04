@@ -82,20 +82,10 @@ Your charges for Microsoft 365 Archive depend on your tenant’s Standard storag
 |Scenario  |Description  |Additional costs  |
 |---------|---------|---------|
 |**A**     |Tenant has not archived any data and exceeds the Standard storage quota by 200 GB.         |Purchase 200 GB of additional Standard storage packs.         |
-|**B**     |Tenant has archived the 200GB of data that exceeded their Standard storage quota.         |200 GB of Archive storage charged at $0.05/GB/month.         |
+|**B**     |Tenant has archived the 200 GB of data that exceeded their Standard storage quota.         |200 GB of Archive storage charged at $0.05/GB/month.         |
 |**C**     |Tenant has archived more storage than exceeded their Standard storage quota.         |Only charged for the 200 GB of Archived data that exceeds their Standard storage quota.         |
 |**D**     |Tenant has archived some, but not all, of the data that exceeds their Standard storage quota.         |Purchase additional Standard storage packs and pay $0.05/GB/month for ~100 GB of Archived data.         |
 |**E**     |Tenant’s total data (Standard + Archive) is less than their Standard storage quota.         |No additional costs.         |
 
 ![Diagram showing comparisons for five archive scenarios.](../media/m365-archive/archive-billing-scenarios-diagram.png)
 
-
-
-
-|Scenario  |Description  |
-|---------|---------|
-|**A**     |This tenant has not archived any data and exceeds their Standard storage quota by 200 GB. They need to purchase 200 GB of additional Standard storage packs.         |
-|**B**     |This tenant has archived the 200 GB of data that exceeded their Standard storage quota. They are now within their Standard storage quota and do not need to purchase additional Standard storage packs. The 200 GB of archived data will be charged at $0.05/GB/month.         |
-|**C**     |This tenant has archived more data than the amount by which they exceeded their Standard storage quota. Therefore, any archived data within their Standard storage quota will not incur monthly archive storage fees. They will only be charged for the 200 GB of archived data that exceeds their Standard storage quota.         |
-|**D**     |This tenant has archived some, but not all, of the data that exceeds their Standard storage quota. They need to purchase additional Standard storage packs to cover the remaining excess Standard storage usage and will be charged $0.05/GB/month for approximately 100 GB of archived data.         |
-|**E**     |This tenant will not incur any monthly storage costs. Their total data, including both Standard and Archive storage, is within their Standard storage quota. They do not need to purchase additional Standard storage packs or pay monthly Archive storage fees.         |
