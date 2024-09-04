@@ -80,7 +80,7 @@ The following table helps visualize the savings you realize by archiving content
 Your charges for Microsoft 365 Archive depend on your tenant’s Standard storage quota. The following scenarios and diagram can help you compare charges based on excess storage.
 
 |Scenario  |Description  |Additional costs  |
-|---------|---------|---------|
+|:---------:|---------|---------|
 |**A**     |Tenant hasn't archived any data and exceeds the Standard storage quota by 200 GB.         |Purchase 200 GB of additional Standard storage packs.         |
 |**B**     |Tenant has archived the 200 GB of data that exceeded their Standard storage quota.         |Pay at $0.05/GB/month for 200 GB of Archive storage.         |
 |**C**     |Tenant has archived more storage than exceeded their Standard storage quota.         |Pay only for the 200 GB of Archived data that exceeds the Standard storage quota.         |
