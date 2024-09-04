@@ -87,7 +87,17 @@ After you turn on permission at the organization level, group owners can enable 
 - Rename folders.
 - Move and delete messages.
 
-Group owners can enable these permissions in Outlook at **Settings** \> **Edit Group** \> and then selecting **All members will be able to create, edit, move, copy, and delete mail folders and rules within the group**.
+Group owners can enable these permissions in their Microsoft 365 Groups using the following steps in Outlook on the web:
+
+1. While signed in as the group owner, go to <https://outlook.office.com/groups/home>.
+1. On the groups page that opens, select the Microsoft 365 Group.
+1. On the group details page that opens, select :::image type="icon" source="../media/content-understanding/settings-icon.png" border="false"::: **Settings**.
+1. In the **Group settings** flyout that opens, select **Edit group**.
+1. In the **Edit group** page that opens, select **All members will be able to create, edit, move, copy and delete mail folders and rules within the group** in the **Permissions** section.
+
+   :::image type="content" source="../media/folders-and-rules-group-members-enabled.png" alt-text="The All members will be able to create, edit, move, copy and delete mail folders and rules within the group setting selected in the properties of the Microsoft 365 Group in Outlook on the web." lightbox="../media/folders-and-rules-group-members-enabled.png":::
+
+   When you're finished on the **Edit group** page, select **Save**.
 
 ## Block "Move message" capability
 
