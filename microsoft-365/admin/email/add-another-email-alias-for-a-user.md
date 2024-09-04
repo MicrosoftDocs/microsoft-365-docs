@@ -40,15 +40,15 @@ If you want multiple people to manage email sent to a single email address like 
 
 ## Before you begin
 
-You must be a member of the Global admin role to add email aliases to a user. For more info, see [About admin roles in the Microsoft 365 admin center](../add-users/about-admin-roles.md).
+You must be a member of the user administrator role to add email aliases to a user. For more info, see [About admin roles in the Microsoft 365 admin center](../add-users/about-admin-roles.md).
 
 ## Add email aliases to a user
 
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
 
-2. On the **Active Users** page, select the user > **Manage username and email**. You won't see this option if the person doesn't have a license assigned to them.
+2. On the **Active Users** page, select the user > **Manage email aliases**. You won't see this option if the person doesn't have a license assigned to them.
 
-3. Add the new name in the **Username** field, select a domain and choose **Add**.
+3. Under **Aliases**, add the new name in the **Username** field, select a domain and choose **Add**.
 
     > [!TIP]
     > The email alias must end with a domain from the drop-down list. To add another domain name to the list, see [Add a domain to Microsoft 365](../setup/add-domain.md).

@@ -16,7 +16,9 @@
         - name: Extend Copilot for Microsoft 365
           href: /microsoftteams/platform/copilot/how-to-extend-copilot
         - name: Enterprise data protection
-          href: enterprise-data-protection.md  
+          href: enterprise-data-protection.md
+        - name: Transparency Note
+          href: microsoft-365-copilot-transparency-note.md    
     - name: Deploy
       items: 
         - name: Enable users for Copilot for Microsoft 365
