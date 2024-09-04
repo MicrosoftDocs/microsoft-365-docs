@@ -38,7 +38,7 @@ You might need to change someone's email address and display name if, for exampl
 
 ## Before you begin
 
-You must be a [user administrator](https://learn.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide#commonly-used-microsoft-365-admin-center-roles).
+You must be a [user administrator](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide#commonly-used-microsoft-365-admin-center-roles&preserve-view=true).
 
 ## Watch: Change a user's email address, display name or email alias
 
@@ -56,7 +56,7 @@ If you found this video helpful, check out the [complete training series for sma
 
 ## Change a user's email address
 
-You must be a [user administrator](https://learn.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide#commonly-used-microsoft-365-admin-center-roles).
+You must be a [user administrator](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide#commonly-used-microsoft-365-admin-center-roles&preserve-view=true).
 
 ::: moniker range="o365-worldwide"
 
@@ -81,7 +81,7 @@ You must be a [user administrator](https://learn.microsoft.com/microsoft-365/adm
 
 ## Change a user's display name
 
-You must be a [user administrator](https://learn.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide#commonly-used-microsoft-365-admin-center-roles).
+You must be a [user administrator](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide#commonly-used-microsoft-365-admin-center-roles&preserve-view=true).
 
 ::: moniker range="o365-worldwide"
 
