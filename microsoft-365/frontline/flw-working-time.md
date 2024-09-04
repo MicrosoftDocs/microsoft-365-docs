@@ -56,7 +56,23 @@ Use Microsoft Intune [app protection policies](/mem/intune/apps/app-protection-p
 - [Android app protection policy settings - Conditional launch](/mem/intune/apps/app-protection-policy-settings-android#conditional-launch)
 - [iOS app protection policy settings - Conditional launch](/mem/intune/apps/app-protection-policy-settings-ios#conditional-launch)
 
-### Connect your workforce management system to the working time API
+### Connect your workforce management (WFM) system to the workingTimeSchedule API
+
+#### Create an application
+
+1. Create an application in Microsoft Entra ID for the [workingTime](/graph/api/resources/workingtimeschedule?view=graph-rest-beta) Graph API.
+
+    Add it as a single tenant so that it can only be used in the tenant of your organization. To learn more about how to register an application, see [Register an application with the Microsoft identity platform](/entra/identity-platform/quickstart-register-app).
+1. Add the hidden application permission for calling the Graph API using the required scope,`Schedule-WorkingTime.ReadWrite.All`. To do this:
+    1. Sign in to your application in the Azure portal.
+    1. Go to the **Manifest** tab. You'll see a JSON that contains the complete definition of your application.
+    1. At the end of the manifest, add a key named *requiredResourceAccess*.
+
+      This key contains all the permissions of your application. In other words, it contains all the APIs that your application can call. If this key is already in the JSON file, it means that your API already has some permissions already granted.
+
+#### Preconsent the application
+
+#### Call Graph from the application
 
 ## Set up quiet time
 
