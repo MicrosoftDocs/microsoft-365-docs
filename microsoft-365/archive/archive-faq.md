@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 04/30/2024
+ms.date: 09/04/2024
 ms.topic: conceptual
 ms.service: microsoft-365-archive
 ms.custom: archive
@@ -53,3 +53,12 @@ Currently, only full-site archiving and reactivating is possible in this offerin
 #### What’s the availability timing of Microsoft 365 Archive for Microsoft Government Community Cloud (GCC) customers?
 
 Standard GCC rollout times apply.
+
+#### If I purchase additional standard storage packs, will I get reimbursed for the cost difference?
+
+No, if you purchase additional storage packs you will not get reimbursed for any unused additional standard storage.
+
+#### If I am under my tenant storage quota for Archive and Standard storage combined, will I be charged?
+
+You will not be charged for monthly storage costs, but you will still pay applicable reactivation fees.
+
