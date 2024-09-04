@@ -63,12 +63,19 @@ Use Microsoft Intune [app protection policies](/mem/intune/apps/app-protection-p
 1. Create an application in Microsoft Entra ID for the [workingTime](/graph/api/resources/workingtimeschedule?view=graph-rest-beta) Graph API.
 
     Add it as a single tenant so that it can only be used in the tenant of your organization. To learn more about how to register an application, see [Register an application with the Microsoft identity platform](/entra/identity-platform/quickstart-register-app).
-1. Add the hidden application permission for calling the Graph API using the required scope,`Schedule-WorkingTime.ReadWrite.All`. To do this:
+1. Add the hidden application permission for calling the Graph API using the required scope, `Schedule-WorkingTime.ReadWrite.All`.
     1. Sign in to your application in the Azure portal.
     1. Go to the **Manifest** tab. You'll see a JSON that contains the complete definition of your application.
-    1. At the end of the manifest, add a key named *requiredResourceAccess*.
+    1. At the end of the manifest, add the `requiredResourceAccess` property.
 
-      This key contains all the permissions of your application. In other words, it contains all the APIs that your application can call. If this key is already in the JSON file, it means that your API already has some permissions already granted.
+        This property specifies the set of permission scopes and app roles that your application requires access to. In other words, it contains all the APIs that your application can call. If this property is already present in the manifest, your API has some permissions already granted to it.
+
+        Inside the array, add an object to specify permisssions of the Graph application, whose ID is 00000003-0000-0000-0000-c000-0000000000000000.
+
+        > [!NOTE]
+        > If you already have an object with this same ID inside your `requiredResourceAccess` array, you only have to add the following inside the `resourceAccess` array:
+        > - An object with the ID of the new hidden permission, 0b21c159-dbf4-4dbb-a6f6-490e412c716e.
+        > - The type of permission. In this case, `Role`.
 
 #### Preconsent the application
 
