@@ -11,7 +11,6 @@ ms.localizationpriority: medium
 ms.collection:
 - Tier1
 - scotvorg
-- essentials-manage
 description: "Manage your group attendees in Microsoft. Add or remove customers from a booking."
 ---
 
