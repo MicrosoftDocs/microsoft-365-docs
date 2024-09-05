@@ -60,9 +60,9 @@ Use Microsoft Intune [app protection policies](/mem/intune/apps/app-protection-p
 
 #### Create an application
 
-1. Create an application in Microsoft Entra ID for the [workingTime](/graph/api/resources/workingtimeschedule?view=graph-rest-beta) Graph API.
+1. Create an application in Microsoft Entra for the [workingTime](/graph/api/resources/workingtimeschedule?view=graph-rest-beta) Graph API.
 
-    Add it as a single tenant so that it can only be used in the tenant of your organization. To learn more about how to register an application, see [Register an application with the Microsoft identity platform](/entra/identity-platform/quickstart-register-app).
+    When you register your application, make sure you choose the **Accounts in this organizational directory only (Single tenant)** option so that so that only users in your tenant can use the application. To learn more, see [Register an application with the Microsoft identity platform](/entra/identity-platform/quickstart-register-app).
 1. Add the hidden application permission for calling the Graph API using the required scope, `Schedule-WorkingTime.ReadWrite.All`.
     1. Sign in to your application in the Azure portal.
     1. Go to the **Manifest** tab. You'll see a JSON that contains the complete definition of your application.
@@ -70,7 +70,7 @@ Use Microsoft Intune [app protection policies](/mem/intune/apps/app-protection-p
 
         This property specifies the set of permissions that your application requires access to. In other words, it contains all the APIs that your application can call. If this property is already present in the manifest, your API has some permissions already granted to it.
 
-    1. Inside the `requiredResourceAccess` array, add an object with an ID of 00000003-0000-0000-0000-c000-0000000000000000 to specify permisssions of the Graph application.
+    1. Inside the `requiredResourceAccess` array, add an object with an ID of 00000003-0000-0000-0000-c000-0000000000000000 to specify permissions of the Graph application.
 
         > [!NOTE]
         > If you already have an object with this same ID inside your `requiredResourceAccess` array, you only need to add the following inside the `resourceAccess` array:
@@ -79,44 +79,63 @@ Use Microsoft Intune [app protection policies](/mem/intune/apps/app-protection-p
 
         Here's an example of what the end of the manifest could look like:
 
-        ```{
-         ...
-         "preAuthorizedApplications": [],
-         "publisherDomain": "microsoft.onmicrosoft.com",
-         "replyUrlsWithType": [
-         {
-         "url": "https://localhost:44321/signin-oidc",
-         "type": "Web"
-         },
-         {
-         "url": "https://localhost:44321/",
-         "type": "Web"
-         }
-         ],
-         "requiredResourceAccess": [
-         {
-         "resourceAppId": "00000003-0000-0000-c000-000000000000",
-         "resourceAccess": [
-         {
-         "id": "0b21c159-dbf4-4dbb-a6f6-490e412c716e",
-         "type": "Role"
-         }
-         ]
-         }
-         ],
-         "samlMetadataUrl": null,
-         "signInUrl": null,
-         "signInAudience": "AzureADMyOrg",
-         "tags": [],
-         "tokenEncryptionKeyId": null
+        ```json
+        {
+          ...
+          "preAuthorizedApplications": [],
+          "publisherDomain": "microsoft.onmicrosoft.com",
+          "replyUrlsWithType": [
+            {
+              "url": "https://localhost:44321/signin-oidc",
+              "type": "Web"
+            },
+            {
+              "url": "https://localhost:44321/",
+              "type": "Web"
+            }
+          ],
+          "requiredResourceAccess": [
+            {
+              "resourceAppId": "00000003-0000-0000-c000-000000000000",
+              "resourceAccess": [
+                {
+                  "id": "0b21c159-dbf4-4dbb-a6f6-490e412c716e",
+                  "type": "Role"
+                }
+              ]
+            }
+          ],
+          "samlMetadataUrl": null,
+          "signInUrl": null,
+          "signInAudience": "AzureADMyOrg",
+          "tags": [],
+          "tokenEncryptionKeyId": null
         }
         ```
 
     1. Save the changes.
 
-#### Preconsent the application
+#### Grant tenant-wide admin consent to the application's hidden permission
 
-#### Call Graph from the application
+You must be a tenant administrator to perform this step.
+
+1. In your browser, go to [https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id={ClientAppId}&
+response_type=code&scope=https://graph.microsoft.com/.default](https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id={ClientAppId}&response_type=code&scope=https://graph.microsoft.com/.default).
+1. In the URL, replace `ClientAppID` with your app ID.
+1. In the consent dialog, choose **Accept** to grant tenant-wide admin consent to the new hidden permission for the application.
+
+#### Call Graph endpoints from the application
+
+Here's how to call Graph endpoints from the application using example code in C#.
+
+1. Create a new console project using .NET 6 or .NET 7 SDK.
+1. Install the `Microsoft.Identity.Client` NuGet package.
+1. Open the program.cs file, and copy and paste the following code to it:
+1. In the code, change the following:
+    - `tenantId`: Replace with your tenant ID.
+    - `clientId`: Replace with the ID of your application.
+    - `clientSecret`: You must add a client secret in the *authentication* section of your application. You can also choose to use a security certificate and change the code accordingly.
+    - `userId`: Replace with the user to which you want to apply the inWorkingTime or outOfWorkingTime policy.
 
 ## Set up quiet time
 
