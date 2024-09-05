@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 admin center Copilot for Microsoft 365 readiness"
+title: "Microsoft 365 admin center Microsoft 365 Copilot readiness"
 ms.author: camillepack
 author: camillepack
 manager: scotv
@@ -22,28 +22,28 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: "Learn about the Copilot for Microsoft 365 readiness report and how it can help you assess your organization's readiness to adopt Copilot."
+description: "Learn about the Microsoft 365 Copilot readiness report and how it can help you assess your organization's readiness to adopt Copilot."
 ---
 
-# Microsoft 365 reports in the Admin Center – Copilot for Microsoft 365 readiness
+# Microsoft 365 reports in the Admin Center – Microsoft 365 Copilot readiness
 
 The Microsoft 365 Usage dashboard shows you the activity overview across the Microsoft 365 apps in your organization. It enables you to drill into individual product-level reports to give you more granular insight about the activities within each app. To view all reports, check out the [Reports overview article](activity-reports.md).
 
-In the Copilot for Microsoft 365 readiness report, which is in continuous enhancement, you can view which users are technically eligible for Copilot, assign licenses, and monitor usage of Microsoft 365 apps that Copilot integrates best with. The report becomes available within 72 hours, and once available, the usage data shown on the report can have up to a maximum of 72 hours latency.
+In the Microsoft 365 Copilot readiness report, which is in continuous enhancement, you can view which users are technically eligible for Copilot, assign licenses, and monitor usage of Microsoft 365 apps that Copilot integrates best with. The report becomes available within 72 hours, and once available, the usage data shown on the report can have up to a maximum of 72 hours latency.
 
-## How do I get to the Copilot for Microsoft 365 report?
+## How do I get to the Microsoft 365 Copilot report?
 
 1. In the admin center, go to **Reports** > **Usage**.
-1. Select the **Copilot for Microsoft 365** page.
+1. Select the **Microsoft 365 Copilot** page.
 1. You can view Readiness on the first tab. Switch to the Usage tab to view adoption and usage metrics.
 
-## Interpret the Readiness section in the Copilot for Microsoft 365 report
+## Interpret the Readiness section in the Microsoft 365 Copilot report
 
-You can use this report to see how ready your organization is to adopt Copilot for Microsoft 365. The Readiness section is set up to show your data over the past 28 days. Currently this portion does not include any other time period options, but we'll be rolling out updates soon to enable 7-day, 30-day, 90-day, and 180-day periods.
+You can use this report to see how ready your organization is to adopt Microsoft 365 Copilot. The Readiness section is set up to show your data over the past 28 days. Currently this portion does not include any other time period options, but we'll be rolling out updates soon to enable 7-day, 30-day, 90-day, and 180-day periods.
 
 You can see the following summary charts in this report:
 
-:::image type="content" alt-text="Screenshot showing how you can ensure users are eligible for Copilot for Microsoft 365." source="../../media/copilot-usage-ensure-readiness.png":::
+:::image type="content" alt-text="Screenshot showing how you can ensure users are eligible for Microsoft 365 Copilot." source="../../media/copilot-usage-ensure-readiness.png":::
 
 **Total Prerequisite Licenses** The number is the sum of all users who have at least one license assigned to them or who could be assigned a license. The following license types are eligible for Copilot:
 
@@ -116,7 +116,7 @@ You can see the following summary charts in this report:
 
 **Available Licenses** This number is the sum of all users who do not have a Copilot license assigned, and should be prioritized first.
 
-:::image type="content" alt-text="Screenshot showing recommendation cards for Copilot for Microsoft 365 usage report." source="../../media/copilot-usage-recommend-cards.png" lightbox="../../media/copilot-usage-recommend-cards.png":::
+:::image type="content" alt-text="Screenshot showing recommendation cards for Microsoft 365 Copilotusage report." source="../../media/copilot-usage-recommend-cards.png" lightbox="../../media/copilot-usage-recommend-cards.png":::
 
 Recommended action cards highlight important actions to take to prepare your organization for Copilot, such as moving users to a monthly app update channel and assigning available Copilot licenses.
 
@@ -130,7 +130,7 @@ This graph shows the sum of users that could benefit the most from having Copilo
 
 You can use the user table to get an at-a-glance view at which users are assigned a Copilot license, whether their devices are configured correctly, and if they’re using a Microsoft 365 app that has Copilot enabled.
 
-You can also export the report data into an Excel .csv file by selecting the Export link. This exports the Copilot for Microsoft 365 readiness data of all users with any engagement on Teams meetings, Teams chat, and Outlook email for Office docs in past 30 days, and enables you to do simple sorting, filtering, and searching for further analysis.
+You can also export the report data into an Excel .csv file by selecting the Export link. This exports the Microsoft 365 Copilot readiness data of all users with any engagement on Teams meetings, Teams chat, and Outlook email for Office docs in past 30 days, and enables you to do simple sorting, filtering, and searching for further analysis.
 
 To ensure data quality, we perform daily data validation checks for the past three days and will fill any gaps detected. You may notice differences in historical data during the process.
 
@@ -148,7 +148,7 @@ To ensure data quality, we perform daily data validation checks for the past thr
 
 ## Make the user-specific data anonymous
 
-To make the data in the Copilot for Microsoft 365 report anonymous, you must be a global administrator. This will hide identifiable information (using MD5 hashes) such as display name, email, and Microsoft Entra Object ID in report and their export.
+To make the data in the Microsoft 365 Copilot report anonymous, you must be a global administrator. This will hide identifiable information (using MD5 hashes) such as display name, email, and Microsoft Entra Object ID in report and their export.
 
 1. In Microsoft 365 admin center, go to the **Settings** \> **Org Settings**, and under **Services** tab, choose **Reports**.
 

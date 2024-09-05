@@ -29,7 +29,7 @@ description: "Learn about the AI assistance category in Adoption Score."
 
 With AI rapidly entering the day-to-day experience of people in your organization, you'll see a new People Experiences category called AI assistance, set to roll out in the coming weeks.
 
-First, it offers a score, on a 100-point scale, to quickly assess how well people in your organization are adopting Microsoft Copilot for Microsoft 365.
+First, it offers a score, on a 100-point scale, to quickly assess how well people in your organization are adopting Microsoft 365 Copilot.
 
 You can dive deeper into what makes up your AI assistance score by looking at the specific features and activities that drive impact, like how well your organization is using Copilot to summarize and create content in your organization, including Teams meetings, Chat, email in Outlook, documents in Word or PowerPoint, and more.
 
