@@ -138,6 +138,7 @@ Here's how to call Graph endpoints from the application using example code in C#
       var userId = "928bf23a-81e8-47c9-ad54-2c0206248afe";
       var path = Path.Combine(Path.GetTempPath(),
       "workingTimeTokenGenerator.txt");
+
       string? accessToken;
       if (!File.Exists(path) || (DateTime.UtcNow - new
       FileInfo(path).LastWriteTimeUtc).TotalMinutes > 59)
@@ -150,9 +151,11 @@ Here's how to call Graph endpoints from the application using example code in C#
         var app = ConfidentialClientApplicationBuilder.Create(clientId)
           .WithClientSecret(clientSecret)
           .Build();
+
         var result = await app.AcquireTokenForClient(scopes)
           .WithAuthority(AzureCloudInstance.AzurePublic, tenantId)
           .ExecuteAsync();
+
         accessToken = result.AccessToken;
         File.WriteAllText(path, accessToken);
       }
@@ -161,6 +164,7 @@ Here's how to call Graph endpoints from the application using example code in C#
         accessToken = File.ReadAllText(path);
       }
       int number;
+
       while (true)
       {
         Console.WriteLine("Press 1 for startWorkingTime, 2 for endWorkingTime.");
@@ -170,6 +174,7 @@ Here's how to call Graph endpoints from the application using example code in C#
           Console.WriteLine("Out-of-range election.");
           continue;
         }
+
         break;
       }
       Console.WriteLine("Performing request...");
@@ -194,6 +199,7 @@ Here's how to call Graph endpoints from the application using example code in C#
         catch
         {
         }
+
         Console.WriteLine($"Graph returned a non success status code: 
       {response.StatusCode}. Reason phrase: {response.ReasonPhrase}." +
           (content is null ? "Unable to get the response body." :
@@ -204,6 +210,7 @@ Here's how to call Graph endpoints from the application using example code in C#
         Console.WriteLine($"Graph returned a success status code: 
       {response.StatusCode}.");
       }
+      
       Console.WriteLine("Press any key to exit.");
       _ = Console.ReadKey();
     ```
