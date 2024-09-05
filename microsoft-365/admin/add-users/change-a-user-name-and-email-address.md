@@ -24,7 +24,7 @@ ms.custom:
 - AdminTemplateSet
 - adminvideo
 - business_assist
-description: "Learn how a Microsoft 365 global admin can change a user's email address and display name."
+description: "Learn how you can change a user's email address and display name."
 ---
 
 # Change a user name and email address
@@ -38,7 +38,7 @@ You might need to change someone's email address and display name if, for exampl
 
 ## Before you begin
 
-You must be a [global admin](about-admin-roles.md) to complete these steps.
+You must be a [user administrator](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide#commonly-used-microsoft-365-admin-center-roles&preserve-view=true).
 
 ## Watch: Change a user's email address, display name or email alias
 
@@ -56,7 +56,7 @@ If you found this video helpful, check out the [complete training series for sma
 
 ## Change a user's email address
 
-You must be a [global admin](about-admin-roles.md) to complete these steps.
+You must be a [user administrator](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide#commonly-used-microsoft-365-admin-center-roles&preserve-view=true).
 
 ::: moniker range="o365-worldwide"
 
@@ -81,7 +81,7 @@ You must be a [global admin](about-admin-roles.md) to complete these steps.
 
 ## Change a user's display name
 
-You must be a [global admin](about-admin-roles.md) to complete these steps.
+You must be a [user administrator](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide#commonly-used-microsoft-365-admin-center-roles&preserve-view=true).
 
 ::: moniker range="o365-worldwide"
 
@@ -109,6 +109,8 @@ For more information on adding an email alias, see [Add another email alias for 
 
 ## Set the primary email address
 
+You must be an [Exchange administrator](about-exchange-online-admin-role.md).
+
 ::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
@@ -121,18 +123,18 @@ For more information on adding an email alias, see [Add another email alias for 
 
 ::: moniker-end
 
-1. Select the user's name, and then on the **Account** tab select **Manage username and email**.
+1. Select the user's name, and then on the **Account** tab select **Manage email aliases**.
 
-1. If you're adding a new email address, under **Aliases**, in the blank box, type the first part of the new email address. If you added your own domain to Microsoft 365, choose the domain for the new email alias by using the drop-down list.
+1. If you're adding a new email address, under **Aliases**, in the blank box, type the first part of the new email address. If you added your own domain to Microsoft 365, choose the domain for the new email alias by using the drop-down list and select **Add**.
 
 1. Under **Aliases**, select the ellipses (...) next to the desired alias and then select **Change to primary email** for the email address that you want to set as the primary email address for that person.
 
    > [!IMPORTANT]
    > You won't see this option to **Change to primary email** if you purchased Microsoft 365 from GoDaddy or another Partner service that provides a management console. Instead, sign in to the GoDaddy / partner's management console to set the primary alias.
    >
-   > Also, you'll only see this option if you're a global admin. If you don't see the option, you don't have permissions to change a user's name and primary email address.
+   > If you don't see the option, you don't have permissions to change a user's name and primary email address.
 
-1. You see a warning that you're about to change the person's sign-in information. Select **Save changes**, then **Close**.
+1. Select **Save changes**, then **Close**.
 
 1. Give the person the following information:
 
@@ -158,7 +160,7 @@ If you get the error message " **A parameter cannot be found that matches parame
 
 ### "We're sorry, the user couldn't be edited. Review the user information and try again"
 
-If you get the error message " **We're sorry, the user couldn't be edited. Review the user information and try again**." it means you aren't a global admin and you don't have permissions to change the user name. Find the global admin in your business and ask them to make the change.
+If you get the error message " **We're sorry, the user couldn't be edited. Review the user information and try again**." it means you aren't a member of the correct admin role and you don't have permissions to change the user name.
 
 ### What if the person's offline address book won't sync with the Global Address List?
 
