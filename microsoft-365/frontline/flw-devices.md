@@ -215,3 +215,4 @@ In a shared devices deployment, you can use app protection policies to ensure th
 
 - [Manage shared devices for your frontline](flw-shared-devices.md)
 - [Frontline worker management](/entra/fundamentals/frontline-worker-management)
+- [Frontline worker device management overview in Microsoft Intune](/mem/solutions/frontline-worker/frontline-worker-overview)

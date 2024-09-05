@@ -34,10 +34,12 @@ To delete a _Satellite Geography_ location
 
 1. Open the SharePoint admin center, and go to the <a href="https://go.microsoft.com/fwlink/?linkid=2185076" target="_blank">**Geo locations** tab</a>.
 
-1. On the map, select the _Satellite Geography_ location that you want to delete.
+2. On the map, select the _Satellite Geography_ location that you want to delete.
 
-1. Select **Delete location**.
+3. Select **Delete location**.
 
-1. Confirm the deletion by selecting the confirmation check boxes.
+4. Confirm the deletion by selecting the confirmation check boxes.
 
-1. Select **Delete**.
+5. Select **Delete**.
+
+The deletion will take at least 7 days to complete.
