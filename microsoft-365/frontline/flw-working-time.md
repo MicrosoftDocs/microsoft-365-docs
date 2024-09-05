@@ -68,14 +68,51 @@ Use Microsoft Intune [app protection policies](/mem/intune/apps/app-protection-p
     1. Go to the **Manifest** tab. You'll see a JSON that contains the complete definition of your application.
     1. At the end of the manifest, add the `requiredResourceAccess` property.
 
-        This property specifies the set of permission scopes and app roles that your application requires access to. In other words, it contains all the APIs that your application can call. If this property is already present in the manifest, your API has some permissions already granted to it.
+        This property specifies the set of permissions that your application requires access to. In other words, it contains all the APIs that your application can call. If this property is already present in the manifest, your API has some permissions already granted to it.
 
-        Inside the array, add an object to specify permisssions of the Graph application, whose ID is 00000003-0000-0000-0000-c000-0000000000000000.
+    1. Inside the `requiredResourceAccess` array, add an object with an ID of 00000003-0000-0000-0000-c000-0000000000000000 to specify permisssions of the Graph application.
 
         > [!NOTE]
-        > If you already have an object with this same ID inside your `requiredResourceAccess` array, you only have to add the following inside the `resourceAccess` array:
+        > If you already have an object with this same ID inside your `requiredResourceAccess` array, you only need to add the following inside the `resourceAccess` array:
         > - An object with the ID of the new hidden permission, 0b21c159-dbf4-4dbb-a6f6-490e412c716e.
         > - The type of permission. In this case, `Role`.
+
+        Here's an example of what the end of the manifest could look like:
+
+        ```{
+         ...
+         "preAuthorizedApplications": [],
+         "publisherDomain": "microsoft.onmicrosoft.com",
+         "replyUrlsWithType": [
+         {
+         "url": "https://localhost:44321/signin-oidc",
+         "type": "Web"
+         },
+         {
+         "url": "https://localhost:44321/",
+         "type": "Web"
+         }
+         ],
+         "requiredResourceAccess": [
+         {
+         "resourceAppId": "00000003-0000-0000-c000-000000000000",
+         "resourceAccess": [
+         {
+         "id": "0b21c159-dbf4-4dbb-a6f6-490e412c716e",
+         "type": "Role"
+         }
+         ]
+         }
+         ],
+         "samlMetadataUrl": null,
+         "signInUrl": null,
+         "signInAudience": "AzureADMyOrg",
+         "tags": [],
+         "tokenEncryptionKeyId": null
+        }
+        ```
+
+    1. Save the changes.
 
 #### Preconsent the application
 
