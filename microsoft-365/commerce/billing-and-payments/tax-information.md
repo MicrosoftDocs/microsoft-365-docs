@@ -49,19 +49,14 @@ When you buy Microsoft 365 for business products and services, the tax that you 
 When you buy Microsoft 365 products or services in the EMEA region, the purchase could be subject to Value-Added Tax (VAT).
   
 - If you're located in a European Union Member State, Armenia, Belarus, Norway, Türkiye, or United Arab Emirates, and you don't provide your valid local VAT ID, Microsoft Ireland Operations Ltd. applies the current local VAT rate, based on the billing country/region your account is set to.
-
 - If you're located in Liechtenstein, Russia, Serbia, South Africa, or Switzerland, the VAT is applied, whether you provide your VAT ID or not.
-
 - For EU customers, before we can validate your VAT ID, it must be available for verification in the VAT Information Exchange System (VIES). If your VAT ID can't be verified, contact your local tax authority.
-
 - If you bought through a Limited Risk Distributor (LRD), you might be charged your local VAT rate even if located outside of Ireland.
 
 You might qualify for VAT zero-rating if you meet one of the following criteria:
   
 - **You're in a European Union Member State outside Ireland:** You can provide your valid local VAT ID. Providing the VAT ID lets Microsoft Ireland Operations Ltd. VAT zero-rate the transaction. However, you might have a local VAT accounting obligation. If you have any concerns, check with your tax advisors. For instructions about adding the CAR ID for your organization, see [Add your VAT ID](#add-your-vat-id).
-
 - **You're in Ireland and have the relevant valid VAT exemption certification:** Microsoft Ireland Operations Ltd. might be entitled to exempt the transaction from VAT. If you don't have a VAT exemption certification, Microsoft Ireland Operations Ltd. applies the current Irish VAT rate, whether you provide a VAT ID or not.
-
 - **You're in Armenia, Belarus, Norway, Türkiye, or United Arab Emirates:** You can provide your local VAT ID. Providing the VAT ID entitles Microsoft Ireland Operations Ltd. to VAT zero-rate the transaction. However, you might have a local VAT accounting obligation, so check with your tax advisors if you have any concerns. For instructions about adding the VAT ID for your organization, see [Add your VAT ID](#add-your-vat-id).
 
 ## What is the Limited Risk Distributor model?
@@ -125,7 +120,8 @@ You can add your VAT ID in the Microsoft 365 admin center. However, the steps to
 1. On the billing account details page, select **Add tax ID**.
 1. Enter your Tax id, then select **Save**.
 
-Note: not all regions support self-serve tax id management.  For these countries, **Add tax id** will not be available in the billing account details page.
+> [!NOTE]
+> Not all regions support self-serve tax id management. For these countries, **Add tax id** isn't available on the billing account details page.
 
 ### Add your VAT ID, GSTIN, or PAN for your MOSA billing account
 
@@ -134,8 +130,7 @@ Note: not all regions support self-serve tax id management.  For these countries
    - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. Select the subscription that you want to update.
 3. On the subscription details page, in the **Service usage address** section, select **Edit service usage address**.
-1. In the **Edit service usage address** pane, in the **VAT, GST, or PAN number** box, enter your ID.
-
+4. In the **Edit service usage address** pane, in the **VAT, GST, or PAN number** box, enter your ID.
 5. Select **Save**.
 
 ## How taxes are calculated
