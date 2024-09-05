@@ -25,6 +25,7 @@ ms.custom:
 - adminvideo
 - business_assist
 - admindeeplinkMAC
+- GAUpdates
 search.appverid: MET150
 description: "Learn how to manage your payment methods for Microsoft business products or services in the Microsoft 365 admin center."
 ms.date: 02/16/2024
@@ -45,12 +46,12 @@ When you buy Microsoft business products or services, you can use an existing pa
 ## Before you begin
 
 - [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
-- If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a billing account owner or contributor, or a billing profile owner or contributor to dp the tasks in this article. For more information about billing account and billing profile roles, see [Understand your Microsoft business billing account](../manage-billing-accounts.md) and [Manage your Microsoft business billing profiles](manage-billing-profiles.md).
-- If you have a Microsoft Online Subscription Agreement (MOSA), you must be a global or billing admin to do the tasks in this article. For more information, see [[About admin roles]](../../admin/add-users/about-admin-roles.md).
-- If you have an MCA billing account type and you’re a billing profile owner or contributor, you can use the billing profile that's backed by a credit or debit card or invoice payment to make purchases or pay bills. If you're a billing invoice manager, you can only use a billing profile to pay bills. To learn more about billing profiles and roles, see [Manage your Microsoft business billing profiles](manage-billing-profiles.md).
+- If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a Billing account owner or contributor, or a Billing profile owner or contributor to dp the tasks in this article. For more information about billing account and billing profile roles, see [Understand your Microsoft business billing account](../manage-billing-accounts.md) and [Manage your Microsoft business billing profiles](manage-billing-profiles.md).
+- If you have a Microsoft Online Subscription Agreement (MOSA), you must be at least a Billing Administrator to do the tasks in this article. For more information, see [[About admin roles]](../../admin/add-users/about-admin-roles.md).
+- If you have an MCA billing account type and you’re a Billing profile owner or contributor, you can use the billing profile that's backed by a credit or debit card or invoice payment to make purchases or pay bills. If you're a Billing invoice manager, you can only use a billing profile to pay bills. To learn more about billing profiles and roles, see [Manage your Microsoft business billing profiles](manage-billing-profiles.md).
 
 > [!NOTE]
-> If you're the person who signed up for the subscription, you're automatically a billing account owner or global admin.
+> If you're the person who signed up for the subscription, you're automatically a Billing account owner.
 
 ## Add a payment method
 
