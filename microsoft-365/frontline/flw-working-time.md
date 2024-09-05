@@ -70,11 +70,11 @@ Use Microsoft Intune [app protection policies](/mem/intune/apps/app-protection-p
 
         This property specifies the set of permissions that your application requires access to. In other words, it contains all the APIs that your application can call. If this property is already present in the manifest, your API has some permissions already granted to it.
 
-    1. Inside the `requiredResourceAccess` array, add an object with an ID of 00000003-0000-0000-0000-c000-0000000000000000 to specify permissions of the Graph application.
+    1. Inside the `requiredResourceAccess` array, add an object with an ID of `00000003-0000-0000-0000-c000-0000000000000000` to specify permissions of the Graph application.
 
         > [!NOTE]
         > If you already have an object with this same ID inside your `requiredResourceAccess` array, you only need to add the following inside the `resourceAccess` array:
-        > - An object with the ID of the new hidden permission, 0b21c159-dbf4-4dbb-a6f6-490e412c716e.
+        > - An object with the ID of the new hidden permission, `0b21c159-dbf4-4dbb-a6f6-490e412c716e`.
         > - The type of permission. In this case, `Role`.
 
         Here's an example of what the end of the manifest could look like:
@@ -121,7 +121,7 @@ You must be a tenant administrator to perform this step.
 
 1. In your browser, go to [https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id={ClientAppId}&
 response_type=code&scope=https://graph.microsoft.com/.default](https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id={ClientAppId}&response_type=code&scope=https://graph.microsoft.com/.default).
-1. In the URL, replace `ClientAppID` with your app ID.
+1. In the URL, replace `ClientAppId` with your app ID.
 1. In the consent dialog, choose **Accept** to grant tenant-wide admin consent to the new hidden permission for the application.
 
 #### Call Graph endpoints from the application
@@ -130,7 +130,84 @@ Here's how to call Graph endpoints from the application using example code in C#
 
 1. Create a new console project using .NET 6 or .NET 7 SDK.
 1. Install the `Microsoft.Identity.Client` NuGet package.
-1. Open the program.cs file, and copy and paste the following code to it:
+1. Open the program.cs file, and copy and paste the following example code to it:
+
+    ```cs
+        using System.Text;
+      using Microsoft.Identity.Client;
+      var userId = "928bf23a-81e8-47c9-ad54-2c0206248afe";
+      var path = Path.Combine(Path.GetTempPath(),
+      "workingTimeTokenGenerator.txt");
+      string? accessToken;
+      if (!File.Exists(path) || (DateTime.UtcNow - new
+      FileInfo(path).LastWriteTimeUtc).TotalMinutes > 59)
+      {
+        var clientId = "fd11c20e-59b6-445d-9449-ea9fc70cf639";
+        var clientSecret = "Aa1Bb~2Cc3.-Dd4Ee5Ff6Gg7Hh8Ii9_Jj0Kk1Ll2";
+        var tenantId = "cad3e174-69d3-4707-abd2-f527f45c367a";
+        var scopes = new string[] { "00000003-0000-0000-c000-000000000000/.default" };
+        
+        var app = ConfidentialClientApplicationBuilder.Create(clientId)
+          .WithClientSecret(clientSecret)
+          .Build();
+        var result = await app.AcquireTokenForClient(scopes)
+          .WithAuthority(AzureCloudInstance.AzurePublic, tenantId)
+          .ExecuteAsync();
+        accessToken = result.AccessToken;
+        File.WriteAllText(path, accessToken);
+      }
+      else
+      {
+        accessToken = File.ReadAllText(path);
+      }
+      int number;
+      while (true)
+      {
+        Console.WriteLine("Press 1 for startWorkingTime, 2 for endWorkingTime.");
+        var choice = Console.ReadLine();
+        if (!Int32.TryParse(choice, out number) || !new[] { 1, 2}.Contains(number))
+        {
+          Console.WriteLine("Out-of-range election.");
+          continue;
+        }
+        break;
+      }
+      Console.WriteLine("Performing request...");
+      var httpClient = new HttpClient();
+      var message = new HttpRequestMessage
+      {
+        Method = HttpMethod.Post,
+        RequestUri = new
+      Uri($"https://graph.microsoft.com/beta/users/{userId}/solutions/schedule/{(number == 1 ? "startWorkingTime" : "endWorkingTime")}")
+      };
+      message.Headers.Add("Authorization", $"Bearer {accessToken}");
+      message.Content = new StringContent("", Encoding.UTF8,
+      "application/json");
+      var response = await httpClient.SendAsync(message);
+      if (!response.IsSuccessStatusCode)
+      {
+        string? content = null;
+        try
+        {
+          content = await response.Content?.ReadAsStringAsync();
+        }
+        catch
+        {
+        }
+        Console.WriteLine($"Graph returned a non success status code: 
+      {response.StatusCode}. Reason phrase: {response.ReasonPhrase}." +
+          (content is null ? "Unable to get the response body." :
+      $"Content: {content}"));
+      }
+      else
+      {
+        Console.WriteLine($"Graph returned a success status code: 
+      {response.StatusCode}.");
+      }
+      Console.WriteLine("Press any key to exit.");
+      _ = Console.ReadKey();
+    ```
+
 1. In the code, change the following:
     - `tenantId`: Replace with your tenant ID.
     - `clientId`: Replace with the ID of your application.
