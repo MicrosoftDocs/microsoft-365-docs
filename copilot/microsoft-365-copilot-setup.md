@@ -1,5 +1,5 @@
 ---
-title: "Get started with Microsoft Copilot for Microsoft 365"
+title: "Get started with Microsoft 365 Copilot"
 f1.keywords:
 - NOCSH
 ms.author: camillepack
@@ -15,12 +15,12 @@ ms.collection:
 - m365copilot
 - magic-ai-copilot
 - essentials-get-started
-description: "Learn how to prepare your organization for Microsoft Copilot for Microsoft 365."
+description: "Learn how to prepare your organization for Microsoft 365 Copilot."
 ---
 
-# Get started with Microsoft Copilot for Microsoft 365
+# Get started with Microsoft 365 Copilot
 
-[Microsoft Copilot for Microsoft 365](https://www.microsoft.com/microsoft-365/blog/2023/03/16/introducing-microsoft-365-copilot-a-whole-new-way-to-work/) is an AI-powered productivity tool that uses large language models (LLMs) and integrates your data with the Microsoft Graph and Microsoft 365 Apps. It works alongside popular Microsoft 365 Apps such as Word, Excel, PowerPoint, Outlook, Teams, and more. Copilot provides real-time intelligent assistance, enabling users to enhance their creativity, productivity, and skills. This article covers how you can prepare your organization for Copilot. These steps can be thought of in three primary phases:
+[Microsoft 365 Copilot](https://www.microsoft.com/microsoft-365/blog/2023/03/16/introducing-microsoft-365-copilot-a-whole-new-way-to-work/) is an AI-powered productivity tool that uses large language models (LLMs) and integrates your data with the Microsoft Graph and Microsoft 365 Apps. It works alongside popular Microsoft 365 Apps such as Word, Excel, PowerPoint, Outlook, Teams, and more. Copilot provides real-time intelligent assistance, enabling users to enhance their creativity, productivity, and skills. This article covers how you can prepare your organization for Copilot. These steps can be thought of in three primary phases:
 
 1. Optimizing for Search
 1. Update channels and apps
@@ -30,27 +30,27 @@ description: "Learn how to prepare your organization for Microsoft Copilot for M
 
 Before you can access Copilot, you must meet these requirements:
 
-You must have an appropriate subscription plan to purchase Microsoft Copilot for Microsoft 365. You can purchase Copilot for Microsoft 365 licenses through the Microsoft 365 admin center on the Purchase Services page, Microsoft partners, or Microsoft account team. You can purchase as many Copilot for Microsoft 365 licenses as you have prerequisite licenses.
+You must have an appropriate subscription plan to purchase Microsoft 365 Copilot. You can purchase Microsoft 365 Copilot licenses through the Microsoft 365 admin center on the Purchase Services page, Microsoft partners, or Microsoft account team. You can purchase as many Microsoft 365 Copilot licenses as you have prerequisite licenses.
 
 For a list of which plans Microsoft 365 Copilot is available with, see [Understand licensing for Microsoft 365 Copilot](microsoft-365-copilot-licensing.md).
 
 - **Microsoft 365 Apps** desktop applications such as Word, Excel, PowerPoint, Outlook, and Teams. Copilot will be available in web versions of the apps when a license is assigned. To get started with the implementation process, see [Deployment guide for Microsoft 365 Apps](/deployoffice/deployment-guide-microsoft-365-apps).
 
-- **OneDrive Account** You need to have a OneDrive account for several features within Copilot for Microsoft 365, such as saving and sharing your files. For more information, see [Sign in or create an account for OneDrive](https://support.microsoft.com/office/video-sign-in-or-create-an-account-for-onedrive-3adf09fd-90e3-4420-8c4e-b55e2cde40d2?ui=en-us&rs=en-us&ad=us).
+- **OneDrive Account** You need to have a OneDrive account for several features within Microsoft 365 Copilot, such as saving and sharing your files. For more information, see [Sign in or create an account for OneDrive](https://support.microsoft.com/office/video-sign-in-or-create-an-account-for-onedrive-3adf09fd-90e3-4420-8c4e-b55e2cde40d2?ui=en-us&rs=en-us&ad=us).
 
-- **Outlook for Windows** For seamless integration of Copilot for Microsoft 365 with Outlook, new Outlook (Windows, Mac, Web, Mobile) is recommended. Copilot does support classic Outlook (Windows) as well. You can switch to Outlook Mobile to access the new Outlook experience. For more information, see [Getting started with the new Outlook for Windows](https://support.microsoft.com/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627).
+- **Outlook for Windows** For seamless integration of Microsoft 365 Copilot with Outlook, new Outlook (Windows, Mac, Web, Mobile) is recommended. Copilot does support classic Outlook (Windows) as well. You can switch to Outlook Mobile to access the new Outlook experience. For more information, see [Getting started with the new Outlook for Windows](https://support.microsoft.com/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627).
 
-- **Microsoft Teams** To use Copilot for Microsoft 365 with Microsoft Teams, you must use the Teams desktop client or web client. You can [download the desktop client here](https://www.microsoft.com/microsoft-teams/download-app) or sign into the web app at [https://teams.microsoft.com](https://teams.microsoft.com/). Both the current and the new version of Teams are supported. For more information, see [Microsoft Teams desktop client](/microsoftteams/get-clients?tabs=Windows).
+- **Microsoft Teams** To use Microsoft 365 Copilot with Microsoft Teams, you must use the Teams desktop client or web client. You can [download the desktop client here](https://www.microsoft.com/microsoft-teams/download-app) or sign into the web app at [https://teams.microsoft.com](https://teams.microsoft.com/). Both the current and the new version of Teams are supported. For more information, see [Microsoft Teams desktop client](/microsoftteams/get-clients?tabs=Windows).
 
     To enable Copilot in Teams to reference meeting content after the meeting has ended, transcription or meeting recording must be enabled. To learn more about configuring transcription and recording, see [Configure transcription and captions for Teams meetings](/microsoftteams/meeting-transcription-captions) and [Teams meeting recording](/microsoftteams/meeting-recording).
 
 - **Microsoft Loop** To use Copilot in Microsoft Loop, you must have Loop enabled for your tenant. For more information on enabling Loop, see [Get started with Microsoft Loop](https://support.microsoft.com/office/get-started-with-microsoft-loop-9f4d8d4f-dfc6-4518-9ef6-069408c21f0c).
 
-- **Microsoft Whiteboard** To use Copilot for Microsoft 365 with Microsoft Whiteboard, you must have Whiteboard enabled for your tenant. To learn more about Microsoft Whiteboard, see [Manage access to Microsoft Whiteboard for your organization](/microsoft-365/whiteboard/manage-whiteboard-access-organizations).
+- **Microsoft Whiteboard** To use Microsoft 365 Copilot with Microsoft Whiteboard, you must have Whiteboard enabled for your tenant. To learn more about Microsoft Whiteboard, see [Manage access to Microsoft Whiteboard for your organization](/microsoft-365/whiteboard/manage-whiteboard-access-organizations).
 
 ## Optimize for Search
 
-Microsoft Copilot for Microsoft 365 provides the ability for users to find and access their content through natural language prompting. Copilot ensures data security and privacy by adhering to existing obligations and integrating with your organization's policies. It utilizes your Microsoft Graph content with the same access controls as other Microsoft 365 services. To get the most out of Copilot, you should consider optimizing data and content for Search, to ensure optimal secure access. To learn more about privacy with Microsoft Copilot for Microsoft 365, see [Data, Privacy, and Security for Microsoft Copilot for Microsoft 365](microsoft-365-copilot-privacy.md).
+Microsoft 365 Copilot provides the ability for users to find and access their content through natural language prompting. Copilot ensures data security and privacy by adhering to existing obligations and integrating with your organization's policies. It utilizes your Microsoft Graph content with the same access controls as other Microsoft 365 services. To get the most out of Copilot, you should consider optimizing data and content for Search, to ensure optimal secure access. To learn more about privacy with Microsoft 365 Copilot, see [Data, Privacy, and Security for Microsoft 365 Copilot](microsoft-365-copilot-privacy.md).
 
 ## Applying principles of Just Enough Access
 
@@ -67,14 +67,14 @@ With an eligible license, you can set up auto-classifiers for content on a Share
 
 ### Copilot and multiple account access
 
-Copilot features for Excel, Word, PowerPoint, and OneNote will work seamlessly for users who have multiple Microsoft accounts (work/school account or personal account) signed into a single Windows session when one of those accounts has a Copilot Pro or Copilot for Microsoft 365 license assigned. For example, when a user on their work machine with a Copilot for Microsoft 365 license opens a document from their personal OneDrive, they'll be able to use Copilot in the document. Or when a Copilot Pro user signs in on their work device with their Microsoft account (MSA), they'll be able to use Copilot with Office files stored on their OneDrive or in SharePoint document libraries.
+Copilot features for Excel, Word, PowerPoint, and OneNote will work seamlessly for users who have multiple Microsoft accounts (work/school account or personal account) signed into a single Windows session when one of those accounts has a Copilot Pro or Microsoft 365 Copilot license assigned. For example, when a user on their work machine with a Microsoft 365 Copilot license opens a document from their personal OneDrive, they'll be able to use Copilot in the document. Or when a Copilot Pro user signs in on their work device with their Microsoft account (MSA), they'll be able to use Copilot with Office files stored on their OneDrive or in SharePoint document libraries.
 
 As an admin, you can turn off a user's ability to add a Microsoft account to their work device, which prevents these users with Copilot Pro from being able to see Copilot features with their Microsoft 365 productivity apps on their work device. For steps on how to do this, see [Set up tenant restrictions](/entra/external-id/tenant-restrictions-v2). You'll need to set up tenant restriction policies for each of the apps in Microsoft 365.
 
 If you'd like to prevent Entra IDs from your tenant being used on non-managed machines which may have access to Copilot, you can use Conditional Access to prevent access to tenant resources on non-compliant devices.
 
 >[!NOTE]
-> In sovereign tenants where Copilot for Microsoft 365 is not available, even if a device has multiple accounts signed in and one of those accounts has Copilot, users will still be blocked from using Copilot features.
+> In sovereign tenants where Microsoft 365 Copilot is not available, even if a device has multiple accounts signed in and one of those accounts has Copilot, users will still be blocked from using Copilot features.
 
 ### Configure advanced policies with Microsoft Purview
 
@@ -86,45 +86,45 @@ These labels can also be applied based on content found within documents using d
 
 ### Audit Copilot activity in Microsoft Purview
 
-All activity from Copilot for Microsoft 365 can be discoverable using content search in the Microsoft Purview portal for audit and review. From the Microsoft Purview portal, you can initiate an audit from the Audit tab on the left navigation. You can also apply retention policies to retain content in prompts and responses based on your organization requirements. eDiscovery and communication compliance policies are also supported for Copilot for Microsoft 365 activity through the Purview portal, allowing you to set up flags for any content matches policies configured. For example, you can set up a policy to flag for activity that includes specific words or code names.
+All activity from Microsoft 365 Copilot can be discoverable using content search in the Microsoft Purview portal for audit and review. From the Microsoft Purview portal, you can initiate an audit from the Audit tab on the left navigation. You can also apply retention policies to retain content in prompts and responses based on your organization requirements. eDiscovery and communication compliance policies are also supported for Microsoft 365 Copilot activity through the Purview portal, allowing you to set up flags for any content matches policies configured. For example, you can set up a policy to flag for activity that includes specific words or code names.
 
 For more information on data security and compliance configurations using Microsoft Purview, see [Microsoft Purview data security and compliance protections for generative AI apps](/purview/ai-microsoft-purview).
 
 ## Security and privacy
 
-Microsoft Copilot for Microsoft 365 ensures data security and privacy by adhering to existing obligations and integrating with your organization's policies. It utilizes your Microsoft Graph content with the same access controls as other Microsoft 365 services. To learn more about privacy with Microsoft Copilot for Microsoft 365, see [Data, Privacy, and Security for Microsoft Copilot for Microsoft 365](microsoft-365-copilot-privacy.md).
+Microsoft 365 Copilot ensures data security and privacy by adhering to existing obligations and integrating with your organization's policies. It utilizes your Microsoft Graph content with the same access controls as other Microsoft 365 services. To learn more about privacy with Microsoft 365 Copilot, see [Data, Privacy, and Security for Microsoft 365 Copilot](microsoft-365-copilot-privacy.md).
 
 ### Privacy settings for Microsoft 365 Apps
 
-Review your privacy settings for Microsoft 365 Apps because those settings might have an effect on the availability of Microsoft Copilot for Microsoft 365 features. For more information, see [Microsoft Copilot for Microsoft 365 and policy settings for connected experiences](microsoft-365-copilot-privacy.md#microsoft-copilot-for-microsoft-365-and-policy-settings-for-connected-experiences).
+Review your privacy settings for Microsoft 365 Apps because those settings might have an effect on the availability of Microsoft 365 Copilot features. For more information, see [Microsoft 365 Copilot and policy settings for connected experiences](microsoft-365-copilot-privacy.md#microsoft-copilot-for-microsoft-365-and-policy-settings-for-connected-experiences).
 
 ## Update channels
 
-Microsoft Copilot for Microsoft 365 will follow Microsoft 365 Apps' standard practice for deployment and updates, being available in all update channels, except for Semi-Annual Enterprise Channel. Preview channels include Current Channel (Preview) and Beta Channel. Production channels include Current Channel and then Monthly Enterprise Channel. Preview channels are a great option to validate the product before rolling out to the rest of organization. To learn more, see [Overview of update channels](/deployoffice/updates/overview-update-channels), and [Microsoft 365 Insider channels](/deployoffice/insider/compare-channels).
+Microsoft 365 Copilot will follow Microsoft 365 Apps' standard practice for deployment and updates, being available in all update channels, except for Semi-Annual Enterprise Channel. Preview channels include Current Channel (Preview) and Beta Channel. Production channels include Current Channel and then Monthly Enterprise Channel. Preview channels are a great option to validate the product before rolling out to the rest of organization. To learn more, see [Overview of update channels](/deployoffice/updates/overview-update-channels), and [Microsoft 365 Insider channels](/deployoffice/insider/compare-channels).
 
-We recommend Current Channel, because it provides your users with the newest Microsoft 365 app features as soon as they're ready and provides the best experience for a fast-moving product like Copilot for Microsoft 365. If you need more predictability of when these new Microsoft 365 app features are released each month, we recommend Monthly Enterprise Channel.  
+We recommend Current Channel, because it provides your users with the newest Microsoft 365 app features as soon as they're ready and provides the best experience for a fast-moving product like Microsoft 365 Copilot. If you need more predictability of when these new Microsoft 365 app features are released each month, we recommend Monthly Enterprise Channel.  
 
 There are multiple ways you can manage channels for user devices. To learn more, see [Change update channel of Microsoft 365 to enable Copilot](/deployoffice/updates/change-channel-for-copilot).
 
-## Provision Copilot for Microsoft 365 licenses
+## Provision Microsoft 365 Copilot licenses
 
-After you’ve prepared your organization for Copilot, you can manage Microsoft Copilot for Microsoft 365 licenses from the Microsoft 365 admin center. You can assign licenses to individual users or to groups of users, as well as reassign licenses to other users.
+After you’ve prepared your organization for Copilot, you can manage Microsoft 365 Copilot licenses from the Microsoft 365 admin center. You can assign licenses to individual users or to groups of users, as well as reassign licenses to other users.
 
 To access license management in the Microsoft 365 admin center, go to **Billing** > **Licenses**.
 
 You can also assign licenses in bulk to [groups of users through the Azure admin center](/azure/active-directory/enterprise-users/licensing-groups-assign) or [assign licenses to users with PowerShell](/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell). For more information, see [Assign Microsoft 365 licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users).
 
-To learn more about the steps to deploy Copilot for your organization, see [Enable users for Microsoft Copilot for Microsoft 365](microsoft-365-copilot-enable-users.md).
+To learn more about the steps to deploy Copilot for your organization, see [Enable users for Microsoft 365 Copilot](microsoft-365-copilot-enable-users.md).
 
 ## Configure settings for Copilot
 
 As an admin, you can manage Microsoft Copilot experiences for your organization by using the controls available in the Microsoft 365 admin center. You can view the status of Copilot license assignments, access the latest information on Copilot, manage data security and compliance controls, submit feedback on behalf of users, configure plugins and permissions, and enable the use of web data as grounding data in Copilot.
 
-You can manage these settings by using the Copilot page in the Microsoft 365 admin center. To learn more, see [Manage Microsoft Copilot for Microsoft 365 with the Copilot page](microsoft-365-copilot-page.md).
+You can manage these settings by using the Copilot page in the Microsoft 365 admin center. To learn more, see [Manage Microsoft 365 Copilot settings](microsoft-365-copilot-page.md).
 
 ## Plan for deployment and measure adoption, impact, and sentiment
 
-The myriad uses of Copilot for Microsoft 365 across the various Microsoft 365 productivity apps provides opportunities for users to find value in different ways.
+The myriad uses of Microsoft 365 Copilot across the various Microsoft 365 productivity apps provides opportunities for users to find value in different ways.
 
 ### Accelerating adoption to get to value
 
@@ -132,13 +132,13 @@ We recommend approaching adoption of Copilot by leveraging adoption. To do so:
 
 1. Identify users across various business groups in your organization, ideally with high usage of existing Microsoft 365 features. You can identify these users by reviewing usage metrics in the Microsoft 365 admin center.
 
-2. Assign these users Copilot for Microsoft 365 licenses and onboard them using the resources available on [Microsoft’s adoption hub](https://adoption.microsoft.com/), including the user onboarding kit.
+2. Assign these users Microsoft 365 Copilot licenses and onboard them using the resources available on [Microsoft’s adoption hub](https://adoption.microsoft.com/), including the user onboarding kit.
 
 3. As these users get more comfortable with using Copilot, they should be able to speak to how they use it best, and where it’s most valuable for them. This provides you with product champions that can help other users adoption Copilot across your organization.
 
 With your established community of early adopters or Champions, they can better speak to their peers within their organization and contextualize the value of Copilot to best suit their needs. This framework also provides IT departments with a scalable way to handle questions through Champions, developing a team of experts across your organization. To learn more about driving adoption, visit the [Microsoft Copilot adoption hub](https://adoption.microsoft.com/Copilot/).
 
-The [Microsoft Copilot Dashboard (Preview) from Viva Insights](/viva/insights/org-team-insights/copilot-dashboard) helps organizations maximize the value of Copilot for Microsoft 365 by providing organizational leaders and IT decision makers insights into readiness, adoption, impact, and user sentiment.
+The [Microsoft Copilot Dashboard (Preview) from Viva Insights](/viva/insights/org-team-insights/copilot-dashboard) helps organizations maximize the value of Microsoft 365 Copilot by providing organizational leaders and IT decision makers insights into readiness, adoption, impact, and user sentiment.
 
 [Access the Microsoft Copilot Dashboard (Preview) from Viva Insights here](https://aka.ms/copilotdashboard).
 
@@ -146,8 +146,8 @@ The [Microsoft Copilot Dashboard (Preview) from Viva Insights](/viva/insights/or
 
 ## More resources
 
-- [Microsoft Copilot for Microsoft 365 setup guide](https://admin.microsoft.com/Adminportal/Home?Q=learndocs#/modernonboarding/microsoft365copilotsetupguide)
+- [Microsoft 365 Copilot setup guide](https://admin.microsoft.com/Adminportal/Home?Q=learndocs#/modernonboarding/microsoft365copilotsetupguide)
 - [Microsoft 365 AI help and learning](https://support.microsoft.com/copilot)
-- [Copilot for Microsoft 365 – Microsoft Adoption](https://adoption.microsoft.com/Copilot/)
-- [Microsoft Copilot for Microsoft 365 - Microsoft Community Hub](https://techcommunity.microsoft.com/t5/microsoft-365-copilot/ct-p/Microsoft365Copilot)
-- [Copilot for Microsoft 365 technical documentation hub](index.yml)
+- [Microsoft 365 Copilot – Microsoft Adoption](https://adoption.microsoft.com/Copilot/)
+- [Microsoft 365 Copilot - Microsoft Community Hub](https://techcommunity.microsoft.com/t5/microsoft-365-copilot/ct-p/Microsoft365Copilot)
+- [Microsoft 365 Copilot technical documentation hub](index.yml)

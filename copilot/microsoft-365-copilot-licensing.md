@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 08/09/2024
+ms.date: 09/04/2024
 audience: Admin
 ms.topic: get-started
 ms.service: microsoft-365-copilot
@@ -19,7 +19,7 @@ description: "Understand which plans include Microsoft 365 Copilot, licensing re
 
 # Understand licensing requirements for Microsoft 365 Copilot
 
-Copilot for Microsoft 365 is available as an add-on plan with one of the following licensing prerequisites:
+Microsoft 365 Copilot is available as an add-on plan with one of the following licensing prerequisites:
 
 **For Business and Enterprise:**
 
@@ -83,6 +83,6 @@ Copilot for Microsoft 365 is available as an add-on plan with one of the followi
 *Available via Enrollment for Education Solutions (EES) or Cloud Solution Provider (CSP) only.
 
 >[!NOTE]
-> Customers with Education or Business subscriptions that do not include Teams can still purchase Copilot for Microsoft 365 licenses.
+> Customers with Education or Business subscriptions that do not include Teams can still purchase Microsoft 365 Copilot licenses.
 
-You can use the [Microsoft Copilot for Microsoft 365 setup guide](https://admin.microsoft.com/Adminportal/Home?Q=learndocs#/modernonboarding/microsoft365copilotsetupguide) in the Microsoft 365 admin center to assign the required licenses to users. For more information, see [Assign licenses to users in the Microsoft 365 admin center](/microsoft-365/admin/manage/assign-licenses-to-users) and [Microsoft Copilot for Microsoft 365 requirements](microsoft-365-copilot-requirements.md).
+You can use the [Microsoft 365 Copilot setup guide](https://admin.microsoft.com/Adminportal/Home?Q=learndocs#/modernonboarding/microsoft365copilotsetupguide) in the Microsoft 365 admin center to assign the required licenses to users. For more information, see [Assign licenses to users in the Microsoft 365 admin center](/microsoft-365/admin/manage/assign-licenses-to-users) and [Microsoft 365 Copilot requirements](microsoft-365-copilot-requirements.md).
