@@ -59,19 +59,19 @@ To change the billing profile roles assigned to users, see [Assign billing profi
 
 To learn more about billing profile roles and how to manage them, see [Understand Microsoft Customer Agreement administrative roles in Azure](/azure/cost-management-billing/manage/understand-mca-roles).
 
-#### Add more recipients
+#### Add additional recipients
 
 In case your primary email address isn't configured to receive emails, or if you want to recieve the notifications at different email addresses, you can add them by using the following steps.
 
-1. In the admin center, go to the **Billing accounts** page.
+1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Billing accounts</a> page.
 2. Select the Billing account that includes the Billing profile that you want to add email recipients to.
 3. Select the **Billing profiles** tab.
 4. Select the Billing profile that you want to update.
 5. In the **Invoice and billing notifications** - **Additional recipients** section, select **Edit recipients**.
 6. In the **Additional recipients (optional)** text box, enter an email address that you want to add.
 7. A box with the email address that you just entered appears. Select the box.
-9. Repeat steps 6 and 7 for all the email addresses that you want to add.
-10. Select **Save Changes**.
+8. Repeat steps 6 and 7 for all the email addresses that you want to add.
+9. Select **Save Changes**.
 
 ### If you have an MOSA billing account type
 
