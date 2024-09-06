@@ -61,7 +61,7 @@ To learn more about billing profile roles and how to manage them, see [Understan
 
 #### Add additional recipients
 
-In case your primary email address isn't configured to receive emails, or if you want to recieve the notifications at different email addresses, you can add them by using the following steps.
+In case your primary email address isn't configured to receive emails, or if you want to receive the notifications at different email addresses, you can add them by using the following steps.
 
 1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Billing accounts</a> page.
 2. Select the Billing account that includes the Billing profile that you want to add email recipients to.
