@@ -21,7 +21,7 @@ description: Learn how to get started with the SharePoint Agreements AI solution
 # Introduction to the SharePoint Agreements AI solution
 
 > [!NOTE]
-> For the complete list of articles to help you set up and use this feature, see [Documentation](#Documentation).
+> For the complete list of articles to help you set up and use this feature, see [Documentation](#documentation).
 
 The SharePoint Agreements AI solution is an end-to-end solution, powered by AI, to help streamline and simplify your agreements, such as nondisclosure agreements and statements of work. From drafting to execution, this solution is ready to integrate seamlessly into your flow of work. Centralize your agreements in the new Agreements app in Microsoft Teams, draft agreements with native Microsoft Word capabilities, and gain valuable AI-driven insights, making management of your agreements more efficient.
 
