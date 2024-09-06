@@ -146,7 +146,7 @@ To manage roles in a workspace:
 
     Here, you can add or remove users.
 
-   ![A screenshot showing adding users to a role>.](../../media/content-understanding/agreements-add-users-to-roles.png)
+   ![A screenshot showing adding users to a role.](../../media/content-understanding/agreements-add-users-to-roles.png)
 
 ### Manage categories
 
@@ -158,7 +158,7 @@ To manage categories in the Agreements app:
 
 3. From the left navigation menu, select the **Categories** option.
 
-   Here, you can see all the existing categories available in your workspace. You can rename an existing category or create new categories as needed.
+   All the existing categories available in your workspace are displayed. You can rename an existing category or create new categories as needed.
 
 
 <br>
