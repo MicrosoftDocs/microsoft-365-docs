@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: sharonchoi
-ms.date: 08/15/2024
+ms.date: 08/29/2024
 audience: Admin
 ms.topic: whats-new
 ms.service: microsoft-365-lighthouse
@@ -32,6 +32,26 @@ We're continuously adding new features to [Microsoft 365 Lighthouse](m365-lighth
 >
 > To see which new features are currently available in your partner tenant, go to the **Home** page of Microsoft 365 Lighthouse, and then either select the **What's new** link in the upper-right corner of the page or select **What's new** on the **What's new & learning resources** card.
 
+## August 2024
+
+### Access mailbox storage information from the tenant details page
+
+Our enhanced tenant details page now lets you track mailbox storage usage for users and shared mailboxes in your customer tenants. This feature provides insights into storage consumption, which helps with license resource optimization and planning.
+
+To access mailbox storage information, in the left navigation pane in Lighthouse, select **Tenants**, and then select any tenant in the list to open the tenant details page. From there, select either the **Overview** tab or the **Users** tab, and then select **Mailbox storage usage**.
+
+[Go to the Tenants page now](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/Tenants.ReactView) (once there, select a tenant)
+
+### Alert improvements
+
+Alert rules for Microsoft Defender for Endpoint alerts now include the option to filter by alert status. You can update existing alert rules to exclude **Resolved** endpoint alerts.
+
+To reduce the likelihood of reactivation, a Microsoft 365 Lighthouse alert in the **Dismissed** state will no longer move to the **Resolved** state. 
+
+[Go to the Alerts page now](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/ManagedTenantAlerts.ReactView)
+
+To learn more, see [Overview of the Alerts page in Microsoft 365 Lighthouse](m365-lighthouse-alerts-overview.md).
+
 ## June 2024
 
 ### Access key information from enhanced tenant details page
@@ -48,8 +68,7 @@ Plus, in the coming months we'll roll out even more enhancements:
  
 To check out the recent enhancements, in the left navigation pane in Lighthouse, select **Tenants**, and then select any tenant in the list to open the tenant details page. 
 
-[Go to the Tenants page now](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/Tenants.ReactView)
-(Once there, select a tenant to view the enhanced tenant details page.)
+[Go to the Tenants page now](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/Tenants.ReactView) (once there, select a tenant to view the enhanced tenant details page)
 
 ## May 2024
 
@@ -59,8 +78,7 @@ We've improved the tenant details page to provide a more comprehensive view of c
 
 To check out these improvements, in the left navigation pane in Lighthouse, select **Tenants**, and then select any tenant in the list to open the tenant details page and view the **Overview** tab. From there you can also access the new **Action items** tab. 
 
-[Go to the Tenants page now](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/Tenants.ReactView)
-(Once there, select a tenant.)
+[Go to the Tenants page now](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/Tenants.ReactView) (once there, select a tenant)
 
 ## April 2024
 

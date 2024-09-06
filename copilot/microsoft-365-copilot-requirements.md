@@ -19,6 +19,7 @@ ms.collection:
 - m365copilot
 - magic-ai-copilot
 description: "Learn about the requirements for Microsoft Copilot for Microsoft 365."
+ms.custom: [copilot-learning-hub]
 ---
 
 # Microsoft Copilot for Microsoft 365 requirements
