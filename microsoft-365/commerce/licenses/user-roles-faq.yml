@@ -15,6 +15,7 @@ metadata:
   ms.custom: 
   - commerce_vl
   - admindeeplinkMAC
+  - GAUpdates
   search.appverid: MET150
   ms.localizationpriority: medium
   description: "Frequently asked questions about volume licensing user roles in the Microsoft 365 admin center."
@@ -62,16 +63,16 @@ sections:
             If necessary, your organization's purchasing, finance or IT departments might be able to identity your Microsoft Reseller from your organization's purchasing records.
 
       - question: |
-          Do Global admins or Billing admins manage VL roles?
+          Do Global Administrators or Billing Administrators manage VL roles?
         answer: |
-            Global and Billing admins don't have permissions to view or manage VL user roles in the Microsoft 365 admin center unless a VL admin has assigned them a role.
+            Global and Billing Administrators don't have permissions to view or manage VL user roles in the Microsoft 365 admin center unless a VL admin has assigned them a role.
 
       - question: |
           Do VL admins manage Microsoft services?
         answer: |
           VL admin permissions don't include permissions to manage Microsoft services like Microsoft 365, or to add or remove users from the organization's tenant. 
 
-          If a Global or Billing admin assigns non-VL admin roles to the VL admin, the VL admin must use the same credentials that they use to sign in to the Volume Licensing Service Center (VLSC).
+          If a Global or Billing Administrator assigns non-VL admin roles to the VL admin, the VL admin must use the same credentials that they use to sign in to the Volume Licensing Service Center (VLSC).
 
           For information about non-VL admin roles in the Microsoft 365 admin center, see [About admin roles in the Microsoft 365 admin center](../../admin/add-users/about-admin-roles.md).
 
@@ -120,7 +121,7 @@ sections:
           |Download                   |Product download manager |Can view contracts and download licensed Microsoft software products. |
           |Product Keys               |Product keys reader      |Can view contracts and contract keys, manage activation and redemption of online services, and view keys on the **Products and services** page. |
           |Software Assurance Manager |Benefits reader          |Can view contracts and manage Home Use Program Software Assurance entitlements. |
-          |Online Services Manager    |Online services manager  |Can view contracts and orders, reserve services, manage activation and redemption of online services (also requires the Global admin role), and manage subscriptions on the **Billing** > **Licenses** page (also requires the Global admin role). |
+          |Online Services Manager    |Online services manager  |Can view contracts and orders, reserve services, manage activation and redemption of online services, and manage subscriptions on the **Billing** > **Licenses** page. |
           |N/A                        |Invoice Reader           |Can view contracts, the list of invoices, and can download invoices. Only users with the Bill to Contact role at the agreement level can see the Invoice Reader role. |
 
       - question: |
