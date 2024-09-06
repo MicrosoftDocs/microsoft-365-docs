@@ -44,7 +44,7 @@ A *product key* is a 25-character alphanumeric code that represents a prepaid li
   
 ## Before you begin
 
-If you’re an existing customer, you must be a Global or Billing Administrator to do the tasks in this article. For more information, see [About admin roles](../admin/add-users/about-admin-roles.md).
+If you’re an existing customer, you must be at least a Billing Administrator to do the tasks in this article. For more information, see [About admin roles](../admin/add-users/about-admin-roles.md).
 
 ## Activate a new subscription
 
