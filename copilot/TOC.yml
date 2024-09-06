@@ -5,19 +5,19 @@
       items:
         - name: Overview of Microsoft 365 Copilot 
           href: microsoft-365-copilot-overview.md
-        - name: "Get ready: Prepare your data and environment (new)"
+        - name: "Get ready: Prepare your data and environment"
           href: microsoft-365-copilot-get-ready.md
         - name: Set up Microsoft 365 Copilot
           href: microsoft-365-copilot-setup.md
     - name: Deploy and enable
       items: 
-        - name: Pilot key scenarios to create critical mass (new)
+        - name: Pilot key scenarios to create critical mass
           href: microsoft-365-copilot-pilot.md
         - name: Requirements for Microsoft 365 Copilot
           href: microsoft-365-copilot-requirements.md
-        - name: Understand licensing for Microsoft 365 Copilot (new)
+        - name: Understand licensing for Microsoft 365 Copilot
           href: microsoft-365-copilot-licensing.md
-        - name: Adoption resources (new)
+        - name: Adoption resources
           href: microsoft-365-copilot-enablement-resources.md
         - name: Enable users for Microsoft 365 Copilot 
           href: microsoft-365-copilot-enable-users.md
@@ -49,9 +49,9 @@
           href: /security/zero-trust/zero-trust-microsoft-365-copilot?bc=/microsoft-365/copilot/breadcrumb/toc.json&toc=/microsoft-365/copilot/toc.json
         - name: Enterprise data protection
           href: enterprise-data-protection.md
-        - name: FAQ (new)
+        - name: FAQ
           href: microsoft-365-copilot-faq.yml
-        - name: Microsoft 365 Copilot and Responsible AI (new)
+        - name: Microsoft 365 Copilot and Responsible AI
           href: microsoft-365-copilot-responsible-ai.md
         - name: Transparency Note
           href: microsoft-365-copilot-transparency-note.md    
