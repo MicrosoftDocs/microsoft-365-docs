@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 07/31/2024
+ms.date: 09/06/2024
 ms.topic: conceptual
 ms.service: microsoft-365-backup
 ms.custom: backup
@@ -136,7 +136,7 @@ Follow these steps to set up a backup policy for Exchange mailboxes sites using 
 
     ![Screenshot of the Overview page for Exchange.](../media/m365-backup/backup-overview-page-exchange.png)
 
-6. On the **Choose selection method** page, you can set up Exchange mailboxes using any or all three ways. A protection scope is the scope of mailboxes within Exchange that you want to protect with Microsoft 365 Backup.
+6. On the **Choose selection method** page, you can set up shared or user Exchange mailboxes using any or all three ways. A protection scope is the scope of mailboxes within Exchange that you want to protect with Microsoft 365 Backup.
 
     ![Screenshot of the Choose selection method page for Exchange.](../media/m365-backup/backup-choose-selection-method-exchange.png)
 
@@ -242,7 +242,7 @@ Follow these steps to view and edit backup policies for Exchange.
 
 3. You can either add new user mailboxes to or remove user mailboxes from the existing Exchange backup policy.
 
-    a. To add new user mailboxes, select **+ Add user mailboxes**.
+    a. To add new shared or user mailboxes, select **+ Add user mailboxes**.
 
     ![Screenshot showing how to add mailboxes to the existing Exchange backup policy in the Microsoft 365 admin center.](../media/m365-backup/backup-exchange-add-mailbox.png)
 
