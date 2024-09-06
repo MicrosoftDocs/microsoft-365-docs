@@ -29,7 +29,7 @@ ms.custom:
 - GAUpdates
 search.appverid: GEA150 
 description: "Learn how to sign up for a free 30-day trial or buy a subscription for Microsoft 365 for business products and services."
-ms.date: 08/07/2023
+ms.date: 09/05/2024
 ---
 
 # Try or buy a Microsoft 365 for business subscription
