@@ -2161,12 +2161,12 @@
       "redirect_document_id": false
       },
       {
-      "source_path": "/microsoft-365/enterprise/identity-sync.md",
+      "source_path": "microsoft-365/enterprise/identity-sync.md",
       "redirect_url": "/microsoft-365/enterprise/deploy-identity-solution-identity-model",
       "redirect_document_id": false
       },
       {
-      "source_path": "/microsoft-365/enterprise/google-groups-migration.md",
+      "source_path": "microsoft-365/enterprise/google-groups-migration.md",
       "redirect_url": "/microsoft-365/enterprise/deploy-identity-solution-identity-model",
       "redirect_document_id": false
       }      
