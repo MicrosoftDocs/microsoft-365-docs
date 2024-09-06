@@ -1,5 +1,5 @@
 ---
-title: Import an agreement in the SharePoint Agreements AI solution (Preview)
+title: Import an agreement in the SharePoint Agreements AI solution
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
@@ -18,10 +18,10 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: Learn how to import an agreement in the SharePoint Agreements AI solution.
 ---
 
-# Import an agreement in the SharePoint Agreements AI solution (Preview)
+# Import an agreement in the SharePoint Agreements AI solution
 
 > [!NOTE]
-> This feature is currently in limited preview and subject to change. For the complete list of articles to help you set up and use this feature, see [Preview documentation](agreements-overview.md#preview-documentation).
+> For the complete list of articles to help you set up and use this feature, see [Documentation](agreements-overview.md#documentation).
 
 You can add existing agreements by uploading signed documents. Select a file to be imported as a signed agreement. Details about the agreement will be automatically detected after you save.
 
@@ -48,4 +48,4 @@ To import an agreement, follow these steps:
 <br>
 
 > [!div class="nextstepaction"]
-> [See the complete list of preview documentation.](agreements-overview.md#preview-documentation)
+> [See the complete list of documentation.](agreements-overview.md#documentation)
