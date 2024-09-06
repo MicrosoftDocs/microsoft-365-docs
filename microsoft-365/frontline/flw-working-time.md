@@ -163,6 +163,7 @@ Here's how to call Graph endpoints from the application using example code in C#
       {
         accessToken = File.ReadAllText(path);
       }
+
       int number;
 
       while (true)
@@ -177,6 +178,7 @@ Here's how to call Graph endpoints from the application using example code in C#
 
         break;
       }
+
       Console.WriteLine("Performing request...");
       var httpClient = new HttpClient();
       var message = new HttpRequestMessage
@@ -210,7 +212,7 @@ Here's how to call Graph endpoints from the application using example code in C#
         Console.WriteLine($"Graph returned a success status code: 
       {response.StatusCode}.");
       }
-      
+
       Console.WriteLine("Press any key to exit.");
       _ = Console.ReadKey();
     ```
