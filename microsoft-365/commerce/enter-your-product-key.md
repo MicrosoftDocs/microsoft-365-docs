@@ -44,7 +44,7 @@ A *product key* is a 25-character alphanumeric code that represents a prepaid li
   
 ## Before you begin
 
-If you’re an existing customer, you must be at least a Billing Administrator to do the tasks in this article. For more information, see [About admin roles](../admin/add-users/about-admin-roles.md).
+If you’re an existing customer, you must be a Global or Billing Administrator to do the tasks in this article. For more information, see [About admin roles](../admin/add-users/about-admin-roles.md).
 
 ## Activate a new subscription
 
@@ -73,9 +73,9 @@ To extend the expiration date for your prepaid subscription, you must use a new,
 2. Select the subscription that you want to extend.
 3. On the subscription details page, in the **Subscription and payment settings** section, select **Extend end date**.
 4. On the **renew or add user licenses** page, select **Use a new and unused product key**, then select **Next**.
-5. Enter the product key, then select **Next**.
+1. Enter the product key, then select **Next**.
 
-    > [!NOTE]
+       > [!NOTE]
     > If you have more than one product key, you can select Add another product key to enter them.
 
 6. Review your order details, then select Redeem.
