@@ -32,15 +32,15 @@ description: "Learn how to manage extensions for Copilot in the Integrated apps 
 
 > [!IMPORTANT]
 >
-> - You must be licensed with Copilot for Microsoft 365 to use extensions for Copilot for Microsoft 365.
+> - You must be licensed with Microsoft 365 Copilot to use extensions for Microsoft 365 Copilot.
 > - The capability is enabled by default in all Microsoft 365 Copilot licensed tenants.
 > - Admins can disable this functionality on a user and group basis and control how individual extensions are approved for use, and which extensions are enabled.
 
-Microsoft Copilot for Microsoft 365 is a new experience inside Microsoft 365 that combines the power of large language models with your data and apps in Microsoft 365 to capture natural language commands to produce content and analyze data. Extensions for Copilot are extensions that enable Copilot to access and use third-party apps, such as Jira, [Dynamics 365](/microsoft-365-copilot/extensibility/overview-business-applications), or Bing Web Search. Admins can manage extensions for Copilot in the same way as they manage any other app in the Integrated apps section of the Microsoft 365 admin center. This document explains how admins can enable, disable, assign, block, or remove extensions for Copilot for their organization, and about Copilot capabilities and data privacy.
+Microsoft 365 Copilot is a new experience inside Microsoft 365 that combines the power of large language models with your data and apps in Microsoft 365 to capture natural language commands to produce content and analyze data. Extensions for Copilot are extensions that enable Copilot to access and use third-party apps, such as Jira, [Dynamics 365](/microsoft-365-copilot/extensibility/overview-business-applications), or Bing Web Search. Admins can manage extensions for Copilot in the same way as they manage any other app in the Integrated apps section of the Microsoft 365 admin center. This document explains how admins can enable, disable, assign, block, or remove extensions for Copilot for their organization, and about Copilot capabilities and data privacy.
 
 ## Overview
 
-Extensions enhance the functionality of Copilot by adding search capabilities, custom actions, connectors, and APIs. *Declarative copilots* are custom versions of Copilot for Microsoft 365 that combine instructions, knowledge, and skills to perform specific tasks or scenarios.
+Extensions enhance the functionality of Copilot by adding search capabilities, custom actions, connectors, and APIs. *Declarative copilots* are custom versions of Microsoft 365 Copilot that combine instructions, knowledge, and skills to perform specific tasks or scenarios.
 
 Microsoft Copilot Studio (MCS) is a low code development platform that offers a graphical environment to build declarative copilots and other extensions tailored to the internal needs of an organization. Copilot Studio enables developers and makers to create and test their applications in a user-friendly interface.
 
@@ -77,13 +77,16 @@ Admins can deploy or remove extensions for Copilot across the whole organization
 
 Admins can assign or unassign extensions for Copilot to specific users or groups by using the same gestures and controls that work for any other app in the Microsoft 365 admin center. Admins can select an app that has a plugin for Copilot from the Available apps or Deployed apps list and click on the **Assign** or **Unassign** button. Admins can also choose to assign or unassign the app to everyone or specific users or groups. Assigning or unassigning an app affects its availability and functionality in Copilot as well as other host products, such as Outlook, Teams, or Microsoft 365.
 
+> [!IMPORTANT]
+> Developers can [update the existing apps](/microsoft-365-copilot/extensibility/) to work with Microsoft Copilot. If the updated extension was pre-approved or pre-installed by an admin, then it'll update for the assigned users and starts working with Copilot. If a developer updates a previously blocked extension to work with Copilot and then the admins make the extension available to the users, then such an extension also works with Copilot.
+
 ## Block or unblock extensions for Copilot
 
 Admins can block or unblock extensions for Copilot for the whole organization or specific users or groups by using the same gestures and controls that work for any other app in the Microsoft 365 admin center. Admins can select an app that has a plugin for Copilot from the Available apps or Deployed apps list and click on the block or unblock button. Admins can also choose to block or unblock the app for everyone or specific users or groups. Blocking or unblocking an app affects its availability and functionality in Copilot as well as other host products, such as Outlook, Teams, or Microsoft 365.
 
 ## View and consent to permissions and data access
 
-For detailed information about how Copilot for Microsoft 365 uses, protects, and shares organizational information to power extensibility, see [Data, Privacy, and Security for Copilot for Microsoft 365](/microsoft-365-copilot/microsoft-365-copilot-privacy).
+For detailed information about how Microsoft 365 Copilot uses, protects, and shares organizational information to power extensibility, see [Data, Privacy, and Security for Microsoft 365 Copilot](/microsoft-365-copilot/microsoft-365-copilot-privacy).
 
 ## Publish extensions for Copilot
 
