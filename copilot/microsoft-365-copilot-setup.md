@@ -15,7 +15,7 @@ ms.collection:
 - m365copilot
 - magic-ai-copilot
 - essentials-get-started
-description: ""
+description: "Learn how to prepare your organization for Microsoft 365 Copilot. You should assign licenses, optimize SharePoint search, give just enough access, use sensitivity labels, create a pilot group, and more."
 ---
 
 # Get started with Microsoft 365 Copilot - DRAFT
