@@ -68,14 +68,21 @@ If you’re an existing customer, you must be at least a Billing Administrator t
 To extend the expiration date for your prepaid subscription, you must use a new, unused product key for the same Microsoft plan. Entering your original product key won't work because a key that has already been redeemed can't be used again.
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
+
     - If you’re using the **Simplified view**, select **Billing**.
     - If you’re using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
+
 2. Select the subscription that you want to extend.
+
 3. On the subscription details page, in the **Subscription and payment settings** section, select **Extend end date**.
+
 4. On the **renew or add user licenses** page, select **Use a new and unused product key**, then select **Next**.
+
 5. Enter the product key, then select **Next**.
+
     > [!NOTE]
     > If you have more than one product key, you can select **Add another product key** to enter them.
+
 6. Review your order details, then select **Redeem**.
 
 ## Next steps
