@@ -20,9 +20,6 @@ description: Learn about the reports available for the SharePoint Agreements AI 
 
 # View reports in the SharePoint Agreements AI solution (Preview)
 
-> [!NOTE]
-> This feature is currently in limited preview and subject to change. For the complete list of articles to help you set up and use this feature, see [Preview documentation](agreements-overview.md#preview-documentation).
-
 The **Report** tab in the Agreements app provides a comprehensive overview of all agreements, their statuses, and other essential metrics.
 
 There are six reports available in the Agreements app. They are:
@@ -44,4 +41,4 @@ There are six reports available in the Agreements app. They are:
 <br>
 
 > [!div class="nextstepaction"]
-> [See the complete list of preview documentation.](agreements-overview.md#preview-documentation)
+> [See the complete list of help documentation.](agreements-overview.md#help-documentation)
