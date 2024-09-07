@@ -1,5 +1,5 @@
 ---
-title: View reports in the SharePoint Agreements AI solution (Preview)
+title: View reports in the SharePoint Agreements AI solution
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
@@ -18,7 +18,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: Learn about the reports available for the SharePoint Agreements AI solution.
 ---
 
-# View reports in the SharePoint Agreements AI solution (Preview)
+# View reports in the SharePoint Agreements AI solution
 
 The **Report** tab in the Agreements app provides a comprehensive overview of all agreements, their statuses, and other essential metrics.
 

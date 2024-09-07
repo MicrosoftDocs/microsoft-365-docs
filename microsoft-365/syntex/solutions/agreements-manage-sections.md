@@ -1,5 +1,5 @@
 ---
-title: Manage sections in the SharePoint Agreements AI solution (Preview)
+title: Manage sections in the SharePoint Agreements AI solution
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
@@ -18,7 +18,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: Learn about the approval notifications in the SharePoint Agreements AI solution.
 ---
 
-# Manage sections in the SharePoint Agreements AI solution (Preview)
+# Manage sections in the SharePoint Agreements AI solution
 
 ## Publish a new section
 
