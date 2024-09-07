@@ -118,4 +118,4 @@ To be provided.
 <br>
 
 > [!div class="nextstepaction"]
-> [See the complete list of preview documentation.](agreements-overview.md#preview-documentation)
+> [See the complete list of help documentation.](agreements-overview.md#help-documentation)

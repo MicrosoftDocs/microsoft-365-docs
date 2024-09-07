@@ -48,4 +48,4 @@ To import an agreement, follow these steps:
 <br>
 
 > [!div class="nextstepaction"]
-> [See the complete list of documentation.](agreements-overview.md#documentation)
+> [See the complete list of help documentation.](agreements-overview.md#help-documentation)

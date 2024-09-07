@@ -239,4 +239,4 @@ To request approval before publishing the section, follow these steps:
 <br>
 
 > [!div class="nextstepaction"]
-> [See the complete list of preview documentation.](agreements-overview.md#preview-documentation)
+> [See the complete list of help documentation.](agreements-overview.md#help-documentation)
