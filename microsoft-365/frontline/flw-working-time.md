@@ -143,7 +143,7 @@ Here's how to call Graph endpoints from the application using example code in C#
       if (!File.Exists(path) || (DateTime.UtcNow - new
       FileInfo(path).LastWriteTimeUtc).TotalMinutes > 59)
       {
-        var clientId = "fd11c20e-59b6-445d-9449-ea9fc70cf639";
+        var clientId = "00001111-aaaa-2222-bbbb-3333cccc4444";
         var clientSecret = "Aa1Bb~2Cc3.-Dd4Ee5Ff6Gg7Hh8Ii9_Jj0Kk1Ll2";
         var tenantId = "cad3e174-69d3-4707-abd2-f527f45c367a";
         var scopes = new string[] { "00000003-0000-0000-c000-000000000000/.default" };
