@@ -95,8 +95,13 @@ The following table lists the available products and their **ProductId**. It als
 | Product | ProductId | Is trial without payment method enabled? |
 |-----------------------------|--------------|--------------|
 | Clipchamp Premium | CFQ7TTC0N8SS | No |
+| Dynamics 365 for Marketing | CFQ7TTC0LH3N |  |
+| Dynamics 365 for Marketing Attach | CFQ7TTC0LHWP |  |
+| Microsoft 365 F3 | CFQ7TTC0LH05 | No |
+| Microsoft Purview Discovery | CFQ7TTC0N8SL | Yes |
 | Power Apps per user* | CFQ7TTC0LH2H | No |
 | Power Automate per user* | CFQ7TTC0LH3L | No |
+| Power Automate Premium |  |
 | Power Automate RPA* | CFQ7TTC0LSGZ  | No |
 | Power BI Premium (standalone)* | CFQ7TTC0H6RP  | No |
 | Power BI Pro* | CFQ7TTC0H9MP | No |
@@ -108,8 +113,7 @@ The following table lists the available products and their **ProductId**. It als
 | Visio Plan 1* | CFQ7TTC0HD33 | Yes |
 | Visio Plan 2* | CFQ7TTC0HD32 | No |
 | Viva Goals (self-service trials only) | CFQ7TTC0PW0V | Yes |
-| Microsoft 365 F3 | CFQ7TTC0LH05 | No |
-| Microsoft Purview Discovery | CFQ7TTC0N8SL | Yes |
+| Windows 365 Enterprise | CFQ7TTC0HHS9 |  |
 
 *These IDs have changed. If you previously blocked products using the old IDs, they're automatically blocked using the new IDs. No other work is required.
 
