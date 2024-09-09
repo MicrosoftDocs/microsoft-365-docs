@@ -156,4 +156,4 @@ If the **Issue** column says **Other**, this refers to all other technical issue
 ## Related content
 
 [Assign or unassign licenses for users in the Microsoft 365 admin center](../../admin/manage/assign-licenses-to-users.md) (article)\
-[Buy or remove licenses for a Microsoft business subscription](buy-licenses.md) (article)
+[Buy or remove licenses for a Microsoft business subscription](../../commerce/licenses/buy-licenses.md)

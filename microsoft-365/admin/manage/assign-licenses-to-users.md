@@ -121,7 +121,7 @@ When you use the **Active users** page to assign or unassign licenses, you assig
    You might have to buy more licenses if you don't have enough licenses for everyone.
 
 > [!NOTE]
-> If you want to assign licenses for a large number of users, use [Assign or unassign licenses to a group in the Microsoft 365 admin center](../../commerce/licenses/manage-group-licenses.md).
+> If you want to assign licenses for a large number of users, use [Assign or unassign licenses to a group in the Microsoft 365 admin center](manage-group-licenses.md).
 
 ## Assign a license to a guest user
 
