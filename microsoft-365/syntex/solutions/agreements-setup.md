@@ -68,7 +68,7 @@ Workspaces are grouped areas where templates, snippets, and agreements live. Eac
 
 Before setting up a workspace for SharePoint Agreements AI, you'll need:  
 
-- User accounts with [Microsoft 365 E3](https://www.microsoft.com/en-us/microsoft-365/enterprise/e3?activetab=pivot:overviewtab) or [Microsoft 365 E5](https://www.microsoft.com/en-us/microsoft-365/enterprise/e5) license and the [SharePoint Content Solution - Agreements (Preview) license](#get-and-assign-licenses).
+- User accounts with [Microsoft 365 E3](https://www.microsoft.com/en-us/microsoft-365/enterprise/e3?activetab=pivot:overviewtab) or [Microsoft 365 E5](https://www.microsoft.com/en-us/microsoft-365/enterprise/e5) license and the [SharePoint Content Solution - Agreements (Preview) license](#assign-the-licenses).
 
 - The user implementing the steps in the document needs to be either a SharePoint Administrator or a Global Administrator.
 
@@ -88,6 +88,9 @@ Before setting up a workspace for SharePoint Agreements AI, you'll need:
     `Connect-SPOService -Url "https://\<tenantName>-admin.sharepoint.com"`
 
     Replace \<tenantName> with the name of your SharePoint tenant.
+
+> [NOTE]
+   > The Connect-SPOService might require the use of modern authentication to connect. For information about how to add modern authentication flow to your SPO-Connect cmdlet, see the [Connect-SPOService documentation](https://learn.microsoft.com/en-us/powershell/module/sharepoint-online/connect-sposervice?view=sharepoint-ps).
 
 3. Run the following command to create a new SharePoint site and set it as an Agreements workspace.
 
