@@ -65,7 +65,7 @@ After you assign licenses to a group, you should check to make sure that the lic
 
 ## Manage group-based licensing errors
 
-This section tells how to identify if users have licensing errors, describes the different types of errors that can happen during group license assignment, and includes steps for how to resolve the errors.
+This section tells how to identify if users have licensing errors. It describes the different types of errors that can happen during group license assignment, and includes steps for how to resolve the errors.
 
 ### Find users with license errors in the group
 
@@ -79,19 +79,19 @@ This section tells how to identify if users have licensing errors, describes the
 
 ### Not enough licenses
 
-There aren’t enough licenses for all members of the group. You can either buy more licenses or free up unused licenses from users and groups.
+**Issue:** There aren’t enough licenses for all members of the group. You can either buy more licenses or free up unused licenses from users and groups.
 
 > [!NOTE]
 > You must be at least a Billing Administrator to buy more licenses.
 
-To buy more licenses, use the following steps.
+**Resolution:** Buy more licenses.
 
 1. Select the check boxes for users without licenses. You can select up to 20 users at a time.
 2. Select **Purchase license**.
 3. In the dialog box, select **Yes** to confirm that you want to buy licenses for the selected users.
 4. In the **Manage product licenses** side panel, select **Buy**, then select **Done**. The new licenses are automatically assigned to the selected users. You can also select **Reprocess** to manually assign the licenses.
 
-To free up unused licenses, you can see which users and groups are using which licenses, and then unassign the licenses.
+**Resolution:** Free up unused licenses. On the **Licenses* page, you can see which users and groups are using which licenses, and then unassign the licenses.
 
 1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page, then select a product.
 2. To unassign licenses, select either the **Users** or **Groups** tab, then select the check boxes of the users or groups to unassign licenses from. The list on the **Users** tab includes users who have licenses assigned directly or through one or more groups.
@@ -103,9 +103,9 @@ To free up unused licenses, you can see which users and groups are using which l
 
 ### Conflicting service plans
 
-One of the products specified in the group contains a service plan that conflicts with another service plan already assigned to the user via a different product. Some service plans can't be assigned to the same user as another, related service plan.
+**Issue:** One of the products specified in the group contains a service plan that conflicts with another service plan already assigned to the user via a different product. Some service plans can't be assigned to the same user as another, related service plan.
 
-To resolve the service plan conflict, use the following steps.
+**Resolution:** Remove conflicting service plans.
 
 1. On the **Actions needed** tab, select the user’s check box, then select **Edit user**.
 2. In the user details panel, make changes to the assigned licenses and apps to remove conflicting plans.
@@ -114,9 +114,9 @@ To resolve the service plan conflict, use the following steps.
 
 ### Missing dependent service plans
 
-One of the products assigned to the group contains a service plan that must be enabled for another service plan in another product to function.
+**Issue:** One of the products assigned to the group contains a service plan that must be enabled for another service plan in another product to function.
 
-To solve this problem, you must make sure that the required plan is still assigned to users through some other method, or that the dependent services are disabled for those users.
+**Resolution:** Make sure that the required plan is still assigned to users through some other method, or that the dependent services are disabled for those users.
 
 1. On the **Actions needed** tab, select the user’s check box, then select **Edit user**.
 2. In the user details panel, select or deselect one or more licenses or apps to remove conflicting plans.  
@@ -125,17 +125,15 @@ To solve this problem, you must make sure that the required plan is still assign
 
 ### Duplicate proxy address
 
-If you use Exchange Online, some users in your organization might have the same proxy address value. When group-based licensing tries to assign a license to such a user, it fails and displays a **Proxy address violation** issue.
+**Issue:** If you use Exchange Online, some users in your organization might have the same proxy address value. When group-based licensing tries to assign a license to such a user, it fails and displays a **Proxy address violation** issue.
 
-To view more details about this message, select the user’s check box, then select **View error details**.
-
-For more information, see [Proxy address conflict when adding an email address in Exchange Online](/exchange/troubleshoot/email-alias/proxy-address-being-used).
+**Resolution:** To view more details about this message, select the user’s check box, then select **View error details**. For more information, see [Proxy address conflict when adding an email address in Exchange Online](/exchange/troubleshoot/email-alias/proxy-address-being-used).
 
 ### User usage location not specified
 
-Some Microsoft services aren't available in all locations because of local laws and regulations. Before you can assign licenses to a group, each user must have the Location property specified.
+**Issue:** Some Microsoft services aren't available in all locations because of local laws and regulations. Before you can assign licenses to a group, each user must have the Location property specified.
 
-To update the user location, use the following steps.
+**Resolution:** Update the user's location.
 
 1. On the **Actions needed** tab, select the user’s check box, then select **Edit user**.
 2. In the user details panel, select a location from the **Select location** drop-down list.
@@ -144,7 +142,9 @@ To update the user location, use the following steps.
 
 ### Other
 
-If the **Issue** column says **Other**, this refers to all other technical issues related to group based license assignment. To view more details about this message, select the user’s check box, then select **View error details**.
+**Issue:** Refers to all other technical issues related to group based license assignment.
+
+**Resolution:** To view more details about this message, select the user’s check box, then select **View error details**.
 
 ## Unassign licenses from a group
 
