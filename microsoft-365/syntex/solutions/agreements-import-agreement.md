@@ -26,13 +26,13 @@ To import an agreement, follow these steps:
 
 1. From the Agreements app in Microsoft Teams, you can start an import by two ways.
 
-    - On the **Home** tab, select the **Import** card.
+    - On the **Home** tab, select the **Import an agreement** card.
 
-   ![A screenshot of Home tab showing the Import card.](../../media/content-understanding/agreements-import-card.png)
+       ![A screenshot of Home tab showing the Import an agreement card.](../../media/content-understanding/agreements-import-card.png)
 
-    - On the **Agreements** tab, select the **Import** button.
+    - On the **Agreements** tab, select the **Import** option.
 
-   ![A screenshot of Agreements tab showing the Import option.](../../media/content-understanding/agreements-import-option.png)
+       ![A screenshot of Agreements tab showing the Import option.](../../media/content-understanding/agreements-import-option.png)
 
 2. On the **Import signed agreements** page, browse and pick the file that you want to import. The file must be a PDF.
 
