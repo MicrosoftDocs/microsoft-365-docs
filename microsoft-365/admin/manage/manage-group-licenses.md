@@ -57,7 +57,7 @@ If you have security groups, mail enabled groups, or Microsoft 365 groups, you c
 
 After you assign licenses to a group, you should check to make sure that the licenses were successfully assigned. The **Groups** tab on the **License** details page shows the status of the task for each group you assigned licenses to. You can use this page to find groups that have errors that must be resolved. For more information, see [Find users with license errors in the group](#find-users-with-license-errors-in-the-group).
 
-1. In the Microsoft 365 admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page, and select the product that you assigned the group to.
+1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page, and select the product that you assigned the group to.
 2. On the **Licenses** details page, select the **Groups** tab. The **Status** column shows the license assignment status for each group. The following list describes the group statuses:
     - **All licenses assigned:** The licenses were successfully assigned to every person in the group.
     - **In progress:** The licenses are still being assigned to some members of the group.
@@ -69,7 +69,7 @@ This section tells how to identify if users have licensing errors, describes the
 
 ### Find users with license errors in the group
 
-1. In the Microsoft 365 admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.
+1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.
 2. On the **Subscriptions** tab, select the product that you want to view licenses for.
 3. On the **Licenses** page, select the **Groups** tab.
 4. Select a group with the **Error** status. The side panel opens and contains two tabs:
@@ -148,7 +148,7 @@ If the **Issue** column says **Other**, this refers to all other technical issue
 
 ## Unassign licenses from a group
 
-1. In the Microsoft 365 admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.
+1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.
 2. On the **Subscriptions** tab, select the product that you want to unassign licenses for.
 3. On the **Licenses** page, select the **Groups** tab.
 4. Select the check box next to the group that you want to unassign, then select **Unassign licenses**.
