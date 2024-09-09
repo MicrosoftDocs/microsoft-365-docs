@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: kvice
 manager: scotv
-ms.date: 05/17/2024
+ms.date: 09/06/2024
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -131,7 +131,7 @@ The Contoso IT department determined the following mapping of business needs to 
 | Compliance |  |  |
 |  | Adhere to regional regulatory requirements | GDPR features in Microsoft 365 |
 | Management |  |  |
-|  | Lower IT overhead for installing client updates | Windows 10 Enterprise updates <br> Microsoft 365 Apps for enterprise updates |
+|  | Lower IT overhead for installing client updates | Windows 11 Enterprise updates <br> Microsoft 365 Apps for enterprise updates |
 ||||
 
 ## Next step
@@ -141,5 +141,3 @@ Learn about the Contoso Corporation [on-premises network](contoso-networking.md)
 ## See also
 
 [Microsoft 365 for enterprise overview](microsoft-365-overview.md)
-
-[Test lab guides](m365-enterprise-test-lab-guides.md)
