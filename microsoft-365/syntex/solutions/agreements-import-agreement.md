@@ -28,6 +28,8 @@ To import an agreement, follow these steps:
 
 2. Browse and pick the file that you want to import. The file must be a PDF.
 
+   ![A screenshot of Import signed agreements page.](../../media/content-understanding/agreements-import-signed.png)
+
 3. Choose the workspace where the agreement should be stored, and then pick the category to which the agreement belongs.
 
 4. Select **Next** to process the file and detect fields.
