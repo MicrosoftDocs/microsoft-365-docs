@@ -33,7 +33,7 @@ When you buy a Microsoft 365 for business subscription, you can use a promotiona
 
 Please note: to buy a new subscription you must be a Global or Billing administrator.  
 
-[Find out what type of billing account you have](/microsoft-365/commerce/manage-billing-accounts?view=o365-worldwide).
+[Find out what type of billing account you have](/microsoft-365/commerce/manage-billing-accounts.md).
 
 **If you have an MOSA billing account type:**
 
