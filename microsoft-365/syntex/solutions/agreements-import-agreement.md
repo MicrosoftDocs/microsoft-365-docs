@@ -34,7 +34,7 @@ To import an agreement, follow these steps:
 
        ![A screenshot of Agreements tab showing the Import option.](../../media/content-understanding/agreements-import-option.png)
 
-2. On the **Import signed agreements** page, browse and pick the file that you want to import. The file must be a PDF.
+2. On the **Import signed agreements** page, browse to and pick the file that you want to import. The file must be a PDF.
 
    ![A screenshot of Import signed agreements page.](../../media/content-understanding/agreements-import-signed.png)
 
@@ -47,7 +47,7 @@ To import an agreement, follow these steps:
    ![A screenshot of the agreement page showing the Confirm fields panel.](../../media/content-understanding/agreements-confirm-fields.png)
 
     > [!NOTE]
-    > The values the fields can't be changed later.
+    > The values in the fields can't be changed later.
 
 6. Select **Save** to confirm the import. The imported agreement will be visible in the list of agreements.
 
