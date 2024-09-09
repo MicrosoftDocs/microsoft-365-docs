@@ -38,18 +38,13 @@ Please note: to buy a new subscription you must be a Global or Billing administr
 **If you have an MOSA billing account type:**
 
 1. Log into the [Microsoft 365 Admin Center](https://go.microsoft.com/fwlink/p/?linkid=2024339).
-
-   - If you're using the **Simplified view**, select **Billing**, then select **Add more products**.
-   
+   - If you're using the **Simplified view**, select **Billing**, then select **Add more products**. 
    - If you're using the **Dashboard view**, go to the **Billing** > [Purchase services](https://go.microsoft.com/fwlink/p/?linkid=868433) page.
-   
-1. On the **Purchase services** page, find the plan that you want to Buy, and select **Details**.
-
-1. On the next page, enter the number of licenses that you want to buy and select **Buy now**.
-
-1. When you check out, scroll to the bottom and select **Have a promo or discount code?**, then enter your promo code in the box.
-3. Select **Apply promo code**. You should see a confirmation that the promo code was successfully applied. If you see a different message, see [Troubleshooting promo codes](#troubleshooting-promo-codes).
-4. Continue checking out. The order confirmation page displays your discount code included with the order amount.
+2. On the **Purchase services** page, find the plan that you want to Buy, and select **Details**.
+3. On the next page, enter the number of licenses that you want to buy and select **Buy now**.
+4. When you check out, scroll to the bottom and select **Have a promo or discount code?**, then enter your promo code in the box.
+5. Select **Apply promo code**. You should see a confirmation that the promo code was successfully applied. If you see a different message, see [Troubleshooting promo codes](#troubleshooting-promo-codes).
+6. Continue checking out. The order confirmation page displays your discount code included with the order amount.
 
 At any time after you complete your purchase, the discount created by your promo code appears on your invoice. To learn more, see [View your invoice in the Microsoft 365 admin center](billing-and-payments/view-your-bill-or-invoice.md).
 
