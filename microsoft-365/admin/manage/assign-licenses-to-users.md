@@ -116,12 +116,12 @@ When you use the **Active users** page to assign or unassign licenses, you assig
 
    By default, all services associated with those licenses are automatically assigned to the users. You can limit which services are available to the users. Deselect the boxes for the services that you don't want the users to have.
 
-1. At the bottom of the pane, select **Save changes**.  
+6. At the bottom of the pane, select **Save changes**.  
 
    You might have to buy more licenses if you don't have enough licenses for everyone.
 
 > [!NOTE]
-> If you want to assign licenses for a large number of users, use [Assign licenses to users by group membership in Microsoft Entra ID](/azure/active-directory/enterprise-users/licensing-groups-assign).
+> If you want to assign licenses for a large number of users, use [Assign or unassign licenses to a group in the Microsoft 365 admin center](../../commerce/licenses/manage-group-licenses.md).
 
 ## Assign a license to a guest user
 
