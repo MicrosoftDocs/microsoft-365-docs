@@ -44,10 +44,10 @@ To import an agreement, follow these steps:
 
 5. Once processing is complete, review the extracted values and confirm if they're correct. If a field isn't applicable, leave it blank.
 
+   ![A screenshot of the agreement page showing the Confirm fields panel.](../../media/content-understanding/agreements-confirm-fields.png)
+
     > [!NOTE]
     > These values can't be changed later.
-
-   ![A screenshot of the agreement page showing the Confirm fields panel.](../../media/content-understanding/agreements-confirm-fields.png)
 
 6. Select **Save** to confirm the import. The imported agreement will be visible in the list of agreements.
 
