@@ -124,7 +124,7 @@ response_type=code&scope=https://graph.microsoft.com/.default](https://login.mic
 1. In the URL, replace `ClientAppId` with your app ID.
 1. In the consent dialog, choose **Accept** to grant tenant-wide admin consent to the new hidden permission for the application.
 
-#### Call Graph endpoints from the application
+#### Call Graph from the application
 
 Here's how to call Graph endpoints from the application using example code in C#.
 
