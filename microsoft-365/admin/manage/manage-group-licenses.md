@@ -62,7 +62,12 @@ After you assign licenses to a group, you should check to make sure that the lic
     - **All licenses assigned:** The licenses were successfully assigned to every person in the group.
     - **In progress:** The licenses are still being assigned to some members of the group.
     - **Errors &amp; issues:** There was an error in assigning licenses to at least one member of the group.
-## Find users with license errors in the group
+
+## Manage group-based licensing errors
+
+This section tells how to identify if users have licensing errors, describes the different types of errors that can happen during group license assignment, and includes steps for how to resolve the errors.
+
+### Find users with license errors in the group
 
 1. In the Microsoft 365 admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.
 2. On the **Subscriptions** tab, select the product that you want to view licenses for.
@@ -70,11 +75,7 @@ After you assign licenses to a group, you should check to make sure that the lic
 4. Select a group with the **Error** status. The side panel opens and contains two tabs:
     - **Successfully assigned** lists all users to whom licenses were successfully assigned.
     - **Actions needed** lists all users for whom errors occurred during license assignment. The <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page. column indicates the problem encountered.
-5. To fix an error, see [Manage group-based licensing errors](#manage-group-based-licensing-errors) for steps based on the issue listed.
-
-## Manage group-based licensing errors
-
-This section describes the different types of errors that can happen during group license assignment and how to resolve them.  
+5. To fix an error, see the following sections for steps to resolve specific issues.
 
 ### Not enough licenses
 
