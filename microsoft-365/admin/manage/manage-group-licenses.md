@@ -91,7 +91,7 @@ This section tells how to identify if users have licensing errors. It describes 
 3. In the dialog box, select **Yes** to confirm that you want to buy licenses for the selected users.
 4. In the **Manage product licenses** side panel, select **Buy**, then select **Done**. The new licenses are automatically assigned to the selected users. You can also select **Reprocess** to manually assign the licenses.
 
-**Resolution:** Free up unused licenses. On the **Licenses** page, you can see which users and groups are using which licenses, and then unassign the licenses.
+**Resolution:** Free up unused licenses. You can use the **Licenses** page to see which users and groups are using which licenses, and then unassign the licenses.
 
 1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page, then select a product.
 2. To unassign licenses, select either the **Users** or **Groups** tab, then select the check boxes of the users or groups to unassign licenses from. The list on the **Users** tab includes users who have licenses assigned directly or through one or more groups.
