@@ -124,9 +124,9 @@ The last recommended action card promotes [Microsoft Copilot Dashboard](/viva/in
 
 :::image type="content" alt-text="Screenshot showing chart for Copilot active users in an organization." source="../../media/copilot-usage-enable-active-users.png" lightbox="../../media/copilot-usage-enable-active-users.png":::
 
-This graph shows the sum of users that could benefit the most from having Copilot deployed based on where Copilot provides the most value in day-to-day scenarios.
+This graph shows the sum of users who could benefit the most from Copilot based on where Copilot provides the most value in day-to-day scenarios. By default, it's sorted by descending order across all rows by column ‘Suggested candidate for Copilot’.
 
-:::image type="content" alt-text="Screenshot showing chart to determine where Copilot can impact users the most." source="../../media/copilot-usage-readiness-details.png" lightbox="../../media/copilot-usage-readiness-details.png":::
+:::image type="content" alt-text="Screenshot showing chart to determine where Copilot can impact users the most." source="../../media/copilot-readiness-details.png" lightbox="../../media/copilot-readiness-details.png":::
 
 You can use the user table to get an at-a-glance view at which users are assigned a Copilot license, whether their devices are configured correctly, and if they’re using a Microsoft 365 app that has Copilot enabled.
 
@@ -145,6 +145,7 @@ To ensure data quality, we perform daily data validation checks for the past thr
 | Uses Teams chat                   | Indicates whether the user has participated in at least one chat using Teams in the past 30 days.                              |
 | Uses Outlook Email                | Indicates whether the user has sent at least one email using Outlook in the past 30 days.                                    |
 | Uses Office docs                  | Indicates whether the user has collaborated on at least one document or file using OneDrive or sharepoint in the past 30 days. |
+| Suggested candidate for Copilot      | These users in your organization are the most likely to use Copilot features based on their Microsoft 365 app activity. |
 
 ## Make the user-specific data anonymous
 
