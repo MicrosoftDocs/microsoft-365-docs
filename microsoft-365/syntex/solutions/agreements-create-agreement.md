@@ -77,7 +77,7 @@ To create an agreement from Microsoft Word, follow these steps:
 
 ## Set up the workflow for an agreement
 
-Template creators have the option to configure two workflows: approval and eSignature. Any document generated from an agreement needs to go through the workflow stages configured at the template level.
+Template creators have the option to configure two workflows: approval and eSignature. Any agreement generated from such a template needs to go through the workflow stages configured at the template level.
 
 > [!NOTE]
 > If the workflow is not configured with the template, you can still request approvals for documents generated from templates.
