@@ -27,7 +27,7 @@ ms.date: 09/09/2024
 
 If you have security groups, mail enabled groups, or Microsoft 365 groups, you can assign or unassign licenses for those groups on the **Licenses** page in the Microsoft 365 admin center. We refer to this as *group-based licensing*.
 
-> [!NOIE]
+> [!NOTE]
 > Some Microsoft services aren’t available in all locations. Before a license can be assigned to a user, the administrator must specify the  user’s location setting. For group-based licensing, any users without a specific location inherit the location of the tenant. If you have users in multiple locations, we recommend that you always set the user location as part of your user creation flow. For more information, see [Add users and assign licenses in Microsoft 365](../../admin/manage/assign-licenses-to-users.md).
 
 ## Before you begin
@@ -62,15 +62,6 @@ After you assign licenses to a group, you should check to make sure that the lic
     - **All licenses assigned:** The licenses were successfully assigned to every person in the group.
     - **In progress:** The licenses are still being assigned to some members of the group.
     - **Errors &amp; issues:** There was an error in assigning licenses to at least one member of the group.
-
-## Unassign licenses from a group
-
-1. In the Microsoft 365 admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.
-2. On the **Subscriptions** tab, select the product that you want to unassign licenses for.
-3. On the **Licenses** page, select the **Groups** tab.
-4. Select the check box next to the group that you want to unassign, then select **Unassign licenses**.
-5. In the pop-up window, select **Unassign**.
-
 ## Find users with license errors in the group
 
 1. In the Microsoft 365 admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.
@@ -109,17 +100,6 @@ To free up unused licenses, you can see which users and groups are using which l
 6. In the details pane, select the **Actions needed** tab.
 7. Select the users who are missing licenses, then select **Reprocess**.
 
-### User usage location not specified
-
-Some Microsoft services aren't available in all locations because of local laws and regulations. Before you can assign licenses to a group, each user must have the Location property specified.
-
-To update the user location, use the following steps.
-
-1. On the **Actions needed** tab, select the user’s check box, then select **Edit user**.
-2. In the user details panel, select a location from the **Select location** drop-down list.
-3. Select **Save changes**, then close the details panel.
-4. Select **Reprocess** to reattempt license assignment.
-
 ### Conflicting service plans
 
 One of the products specified in the group contains a service plan that conflicts with another service plan already assigned to the user via a different product. Some service plans can't be assigned to the same user as another, related service plan.
@@ -150,9 +130,28 @@ To view more details about this message, select the user’s check box, then sel
 
 For more information, see [Proxy address conflict when adding an email address in Exchange Online](/exchange/troubleshoot/email-alias/proxy-address-being-used).
 
+### User usage location not specified
+
+Some Microsoft services aren't available in all locations because of local laws and regulations. Before you can assign licenses to a group, each user must have the Location property specified.
+
+To update the user location, use the following steps.
+
+1. On the **Actions needed** tab, select the user’s check box, then select **Edit user**.
+2. In the user details panel, select a location from the **Select location** drop-down list.
+3. Select **Save changes**, then close the details panel.
+4. Select **Reprocess** to reattempt license assignment.
+
 ### Other
 
 If the **Issue** column says **Other**, this refers to all other technical issues related to group based license assignment. To view more details about this message, select the user’s check box, then select **View error details**.
+
+## Unassign licenses from a group
+
+1. In the Microsoft 365 admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.
+2. On the **Subscriptions** tab, select the product that you want to unassign licenses for.
+3. On the **Licenses** page, select the **Groups** tab.
+4. Select the check box next to the group that you want to unassign, then select **Unassign licenses**.
+5. In the pop-up window, select **Unassign**.
 
 ## Related content
 

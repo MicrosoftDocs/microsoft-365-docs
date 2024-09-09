@@ -36,6 +36,8 @@
       href: licenses/buy-licenses.md
     - name: Assign or unassign licenses for users
       href: ../admin/manage/assign-licenses-to-users.md
+    - name: Assign or unassign licenses for groups
+      href: ../admin/manage/manage-group-licenses.md
     - name: Move users to a different subscription
       href: subscriptions/move-users-different-subscription.md
     - name: Manage ISV app licenses
