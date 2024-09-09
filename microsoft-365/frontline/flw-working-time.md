@@ -26,7 +26,7 @@ ms.date:
 
 Working time is a feature that allows admins to limit access to Microsoft Teams for shift workers on Android and iOS mobile devices. These controls are designed for bring-your-own-device (BYOD) or company-owned dedicated device scenarios for frontline workers. [Learn more about frontline device scenarios](flw-devices.md#deployment-models).
 
-With this feature, you can block access or show a warning message when frontline workers who are off shift open Teams. Consider enabling working time for your frontline workforce if:
+With this feature, you can block access to Teams or show a warning message when frontline workers who are off shift open Teams. Consider enabling working time for your frontline workforce if:
 
 - You’re concerned about frontline workers asking for pay outside of working hours if they access work apps.
 - Local laws and regulations require you to restrict access to work apps when employees are off shift.
@@ -56,13 +56,13 @@ Use Microsoft Intune [app protection policies](/mem/intune/apps/app-protection-p
 - [Android app protection policy settings - Conditional launch](/mem/intune/apps/app-protection-policy-settings-android#conditional-launch)
 - [iOS app protection policy settings - Conditional launch](/mem/intune/apps/app-protection-policy-settings-ios#conditional-launch)
 
-### Connect your workforce management (WFM) system to the workingTimeSchedule API
+### Connect to the workingTimeSchedule API
 
 #### Create an application
 
-1. Create an application in Microsoft Entra for the [workingTime](/graph/api/resources/workingtimeschedule?view=graph-rest-beta) Graph API.
+1. Create an application in Microsoft Entra for the [workingTimeSchedule](/graph/api/resources/workingtimeschedule?view=graph-rest-beta) Graph API.
 
-    When you register your application, make sure you choose the **Accounts in this organizational directory only (Single tenant)** option so that so that only users in your tenant can use the application. To learn more, see [Register an application with the Microsoft identity platform](/entra/identity-platform/quickstart-register-app).
+    When you register your application, make sure you choose the **Accounts in this organizational directory only (Single tenant)** option so that only users in your tenant can use the application. To learn more, see [Register an application with the Microsoft identity platform](/entra/identity-platform/quickstart-register-app).
 1. Add the hidden application permission for calling the Graph API using the required scope, `Schedule-WorkingTime.ReadWrite.All`.
     1. Sign in to your application in the Azure portal.
     1. Go to the **Manifest** tab. You'll see a JSON that contains the complete definition of your application.
@@ -233,10 +233,12 @@ Configure quiet time policies in Intune to automatically mute Teams notification
 
 **Do I need to use the Shifts app in Teams to take advantage of this feature?**
 
-No, this feature relies on the clock in/out signal from your WFM.
+No, this feature relies on the clock in/out signal from your workforce management system (WFM).
 
 **Can I use working time if I don't have a clock in/out system in place?**
 
 No, a clock in/out signal is required to use this feature.
 
 ## Related articles
+
+- [workingTimeSchedule](/graph/api/resources/workingtimeschedule?view=graph-rest-beta)
