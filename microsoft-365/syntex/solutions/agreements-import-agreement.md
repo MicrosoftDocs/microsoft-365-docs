@@ -30,7 +30,7 @@ To import an agreement, follow these steps:
 
        ![A screenshot of Home tab showing the Import an agreement card.](../../media/content-understanding/agreements-import-card.png)
 
-    - On the **Agreements** tab, select the **Import** option.
+    - On the **Agreements** tab, select the **Import** button.
 
        ![A screenshot of Agreements tab showing the Import option.](../../media/content-understanding/agreements-import-option.png)
 
@@ -47,7 +47,7 @@ To import an agreement, follow these steps:
    ![A screenshot of the agreement page showing the Confirm fields panel.](../../media/content-understanding/agreements-confirm-fields.png)
 
     > [!NOTE]
-    > These values can't be changed later.
+    > The values the fields can't be changed later.
 
 6. Select **Save** to confirm the import. The imported agreement will be visible in the list of agreements.
 
