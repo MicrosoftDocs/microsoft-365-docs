@@ -2159,6 +2159,16 @@
       "source_path": "microsoft-365/admin/misc/account-disabled-error.md",
       "redirect_url": "/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-outlook-web-app",
       "redirect_document_id": false
+      },
+      {
+      "source_path": "microsoft-365/enterprise/identity-sync.md",
+      "redirect_url": "/microsoft-365/enterprise/deploy-identity-solution-identity-model",
+      "redirect_document_id": false
+      },
+      {
+      "source_path": "microsoft-365/enterprise/google-groups-migration.md",
+      "redirect_url": "/microsoft-365/enterprise/deploy-identity-solution-identity-model",
+      "redirect_document_id": false
       }      
    ]
  }
