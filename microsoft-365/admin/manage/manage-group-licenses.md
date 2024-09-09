@@ -112,7 +112,7 @@ To resolve the service plan conflict, use the following steps.
 3. Select **Save changes**, then close the details panel.
 4. Select **Reprocess** to reattempt license assignment.
 
-## Missing dependent service plans
+### Missing dependent service plans
 
 One of the products assigned to the group contains a service plan that must be enabled for another service plan in another product to function.
 
