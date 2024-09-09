@@ -72,10 +72,9 @@ Use Microsoft Intune [app protection policies](/mem/intune/apps/app-protection-p
 
     1. Inside the `requiredResourceAccess` array, add an object with an ID of `00000003-0000-0000-0000-c000-0000000000000000` to specify permissions of the Graph application.
 
-        > [!NOTE]
-        > If you already have an object with this same ID inside your `requiredResourceAccess` array, you only need to add the following inside the `resourceAccess` array:
-        > - An object with the ID of the new hidden permission, `0b21c159-dbf4-4dbb-a6f6-490e412c716e`.
-        > - The type of permission. In this case, `Role`.
+        If you already have an object with this same ID inside your `requiredResourceAccess` array, you only need to add the following inside the `resourceAccess` array:
+          - An object with the ID of the new hidden permission, `0b21c159-dbf4-4dbb-a6f6-490e412c716e`.
+          - The type of permission. In this case, `Role`.
 
         Here's an example of what the end of the manifest could look like:
 
