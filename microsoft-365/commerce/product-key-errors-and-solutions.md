@@ -16,14 +16,15 @@ ms.collection:
 - scotvorg
 - M365-subscription-management 
 - Adm_O365
-search.appverid: MET150
-ROBOTS: NOINDEX
-description: "Learn how to resolve the issues that you face when you enter your product key for Microsoft 365 for business. "
 ms.custom: 
 - commerce_purchase
 - okr_smb
 - AdminSurgePortfolio
-ms.date: 01/05/2024
+- GAUpdates
+search.appverid: MET150
+ROBOTS: NOINDEX
+description: "Learn how to resolve the issues that you face when you enter your product key for Microsoft 365 for business."
+ms.date: 09/05/2024
 ---
 
 # Problems with your Microsoft 365 for business product key?
@@ -44,9 +45,9 @@ If there's an error message when you try to redeem a product key for **Microsoft
 | "The product key you entered has expired. Enter a different key." | You must use a new and unused product key to renew a current subscription or activate a new subscription.<br/><br/>Need to buy a new key? Visit a reseller, or—if you're working with a partner—contact your partner. |
 | "This product key has already been used. Enter a different product key." | Verify that the key hasn't already been used by you or a member of your organization. If the key hasn't already been used, contact your partner or the reseller where you bought the product key. |
 | "Sorry, we can't process your request right now. Wait a few minutes and try again." | If subsequent attempts result in the same error message for more than 15 minutes, [contact support](../admin/get-help-support.md). |
-| "The requested subscription isn't available. One of the following reasons could have caused this: The offer isn't available - The service isn't available in your country/region - It's impossible to use/select the same trial twice. If the issue persists, contact Microsoft support." | [Contact support](../admin/get-help-support.md)[contact support](../admin/get-help-support.md). If you're working with a partner, contact your partner for support. |
-| "You've added more user licenses than this offer allows. The maximum is \<x\> user licenses. Remove this product key and enter one that adds fewer user licenses." | Contact your reseller or partner. You bought more licenses than can be used with this Microsoft 365 subscription. |
-| "You must be a global or billing admin to redeem a product key." | Be sure your permissions are set as either billing or global admin. To verify this,  [Sign in to Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4) with your work or school account and go to the admin center. <br/><br/>In the admin center, select **Users** \> **Active users**. In **Filters**, choose **Global admins** or **Billing admins**. <br/><br/>Ensure that you're listed in the results. |
+| "The requested subscription isn't available. One of the following reasons could have caused this: The offer isn't available - The service isn't available in your country/region - It's impossible to use/select the same trial twice. If the issue persists, contact Microsoft support." | [Contact support](../admin/get-help-support.md). If you're working with a partner, contact your partner for support. |
+| "You've added more user licenses than this offer allows. The maximum is \<x> user licenses. Remove this product key and enter one that adds fewer user licenses." | Contact your reseller or partner. You bought more licenses than can be used with this Microsoft 365 subscription. |
+| "You must be a global or billing admin to redeem a product key." | Be sure your permissions are set as at least a Billing Administrator. To verify this,  [Sign in to Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4) with your work or school account and go to the admin center. <br/><br/>In the admin center, select **Users** > **Active users**. In **Filters**, select **Billing admins**. <br/><br/>Ensure that you're listed in the results. |
 
 > [!NOTE]
 > When you buy Microsoft 365 through a partner, Microsoft sends you an email containing instructions to get your product key and activate your subscription in the [Volume Licensing Service Center](https://go.microsoft.com/fwlink/p/?LinkID=282016). To learn more about Volume Licensing, see [help for existing Volume Licensing customers](https://go.microsoft.com/fwlink/p/?LinkId=534992).

@@ -3,9 +3,9 @@ title: Tenant management for Microsoft 365 for enterprise
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 12/18/2023
+ms.date: 08/15/2024
 audience: ITPro
-ms.topic: article
+ms.topic: solution-overview
 ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
@@ -121,7 +121,7 @@ The following sections and table list the key capabilities and licensing for the
 
 |Capability or feature|Description|Licensing|
 |---|---|---|
-|Migrate to Windows 10|Migrate your devices that run Windows 7 or Windows 8.1 to Windows 10 Enterprise.|Windows 10 Enterprise licenses included with Microsoft 365 E3 or E5|
+|Migrate to Windows 11|Migrate your devices that run Windows 7, Windows 8.1, or Windows 10 to Windows 11 Enterprise.|Windows 11 Enterprise licenses included with Microsoft 365 E3 or E5|
 |Migrate to Microsoft 365 Apps for enterprise|Migrate your Office client apps such as Word and PowerPoint to the versions installed from the cloud that are updated with new features.|Microsoft 365 E3 or E5|
 |Migrate on-premises servers and data to Microsoft 365|Migrate your Exchange mailboxes, SharePoint sites, and Skype for Business Online to Microsoft 365 cloud services.|Microsoft 365 E3 or E5|
 ||||
@@ -147,5 +147,3 @@ Use these steps to set up and manage your Microsoft 365 tenants.
 [![The steps to deploy and manage a Microsoft 365 tenant.](../media/tenant-management-overview/tenant-management-step-grid.png)](tenant-management-tenants.md)
 
 Each step describes deployment options, summarizes the results, and ongoing maintenance tasks.
-
-To understand how a fictional but representative multi-national organization deployed the elements of their Microsoft 365 tenant, see the [Contoso case study](../enterprise/contoso-case-study.md).

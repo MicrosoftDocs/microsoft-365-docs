@@ -21,6 +21,7 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
+- GAUpdates
 search.appverid: MET150
 description: "Learn about Microsoft business billing accounts and how they're used to manage account settings, invoices, payment methods, and purchases."
 ms.date: 07/16/2024
@@ -35,8 +36,8 @@ You might have access to multiple billing accounts. For example, you can have on
 ## Before you begin
 
 - [Determine what type of billing account you have](#view-my-billing-accounts).
-- If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a billing account reader to do the tasks in this article. For more information, see [What are billing account roles?](#what-are-billing-account-roles)
-- If you have a Microsoft Online Subscription Agreement (MOSA) billing account type, you must be a Global or Billing admin to do the tasks in this article. For more information, see [About admin roles](../admin/add-users/about-admin-roles.md).
+- If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a Billing account reader to do the tasks in this article. For more information, see [What are billing account roles?](#what-are-billing-account-roles)
+- If you have a Microsoft Online Subscription Agreement (MOSA) billing account type, you must be at least a Billing Administrator to do the tasks in this article. For more information, see [About admin roles](../admin/add-users/about-admin-roles.md).
 
 ## What are the types of billing accounts?
 
@@ -48,9 +49,18 @@ The <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">
 ## View my billing accounts
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
-2. Select the **Navigation menu**, then select **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Billing accounts</a>.
-3. The **Billing accounts** page lists the billing accounts associated with your organization.
-4. The **Billing account type** column indicates what type of agreement you signed with Microsoft for each billing account. Select a billing account name to view its details page.
+1. Select the **Navigation menu**, then select **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Billing accounts</a>.
+1. The **Billing accounts** page lists the billing accounts associated with your organization.
+1. The **Billing account type** column indicates what type of agreement you signed with Microsoft for each billing account. Select a billing account name to view its details page.
+
+## Select a default billing account
+
+If you have more than one billing account, you can use the billing account selector to set a default billing account. When you set a default billing account, we use that account as the first choice for all your billing activities. You can change your default billing account at any time.
+
+1. Go to the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339"").
+1. Select the **Navigation menu**, then select **Billing** > [Bills & payments](https://go.microsoft.com/fwlink/p/?linkid=2102895).
+1. On the **Invoices** tab, select **Change billing account**.
+1. Select a billing account from the list, then select **Set as default**.
 
 ## Understand the billing account details page
 
@@ -110,7 +120,7 @@ You can view the roles assigned to users for a billing account and related billi
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>
 2. Select the **Navigation menu**, then select **Billing** > **Billing accounts**.
 3. On the <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Billing accounts</a> page, select a billing account.
-4. Under **Billing account roles**, select **View related role assignments**.
+1. Under **Billing account roles**, select **View related role assignments**.
 
 To export the information shown in the **Related billing role assignments** pane, select **Export to CSV**.
 

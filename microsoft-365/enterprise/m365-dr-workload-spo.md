@@ -228,7 +228,9 @@ If a OneDrive contains a subsite, for example, it can't be moved. You can use th
 Start-SPOUserAndContentMove -UserPrincipalName <UPN> -DestinationDataLocation <DestinationDataLocation> -ValidationOnly
 ```
 
-This will return Success if the OneDrive is ready to be moved or Fail if there's a legal hold or subsite that would prevent the move. Once you have validated that the OneDrive is ready to move, you can start the move.
+This will return Success if the OneDrive is ready to be moved or Fail if there's any reason that would prevent the move. Once you have validated that the OneDrive is ready to move, you can start the move.
+
+If the OneDrive has a legal hold on it, the move would proceed but the Preservation Hold Library would contninue to exist in the site. Once the move completes, apply a hold on the new URL and later remove the existing hold on the earlier URL.
 
 #### **Start a OneDrive geo move**
 

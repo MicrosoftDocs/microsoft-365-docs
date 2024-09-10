@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: jtremper
 ms.reviewer: amcdonnell
-ms.date: 08/09/2024
+ms.date: 08/19/2024
 audience: enabler
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -57,11 +57,11 @@ If you create a signature request and want to cancel it, follow these steps.
 
 2. When the document is open in the document viewer, select **More options** (...), and then select **Cancel request**.
 
-    ![Screenshot of a document showing the Cancel signature request option.](../media/content-understanding/esignature-cancel-signature-request-option.png)
+    ![Screenshot of a document showing the Cancel signature request option.](../media/content-understanding/esignature-cancel-signature-request-option-dark.png)
 
 3. On the **Cancel signature request** confirmation screen, enter a message detailing why the request is canceled if needed, and then select **Yes, cancel**.
 
-    ![Screenshot of the Cancel signature request confirmation screen.](../media/content-understanding/esignature-cancel-signature-request-confirmation.png)
+    ![Screenshot of the Cancel signature request confirmation screen.](../media/content-understanding/esignature-cancel-signature-request-confirmation-dark.png)
 
     Once canceled, the status of the request is set to **Canceled** and recipients receive an email notification telling them that the request was canceled and that no further action is possible on this request.
 

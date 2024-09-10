@@ -9,7 +9,6 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.collection:
 - scotvorg
-- essentials-manage
 ms.custom: QuickDraft
 ai-usage: ai-assisted
 description: "Learn how to hide specific services on your booking page." 
