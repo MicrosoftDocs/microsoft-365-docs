@@ -221,13 +221,9 @@ To request approval before publishing the section, follow these steps:
 
 4. Create the approval request.
 
-   ![A screenshot of <describe the screenshot>.](../../media/content-understanding/agreements-placeholder.png)
-
 5. Fill in the name of the request and the approvers (who needs to approve it). Decide approval order, add any additional information, and then select **Notify via email** if you want to send email notifications along with Teams notification.
 
 6. After configuring the approval request, select **Send**. The template document is marked as read-only once approval request starts and those approvers who don't have access to the template will be granted view permissions.
-
-   ![A screenshot of <describe the screenshot>.](../../media/content-understanding/agreements-placeholder.png)
 
 7. Once the approval request is sent, you can track the request status (**Approval in progress** or **Approval completed**) through the Word pane by reloading the template management pane or selecting **Refresh**. You'll be able also view the request later by selecting the **Sent** tab in the Approvals app in Teams.
 
