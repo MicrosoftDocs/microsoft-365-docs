@@ -16,7 +16,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 02/28/2024
+ms.date: 09/10/2024
 
 ---
 
@@ -37,8 +37,6 @@ Streamline and simplify communications for your frontline. After you map your at
 
 ## Prerequisites
 
-<!--- Your frontline teams must be created through the [deploy frontline dynamic teams](deploy-dynamic-teams-at-scale.md) experience in the Teams admin center.-->
-
 To use [automatic tags](#automatic-tags), tags must be turned on for your organization. In the Teams admin center, go to **Teams** > **Teams settings**. Under **Tagging**, check that the **Who can manage tags** setting is set to an option other than **Not enabled**. [Learn more about how to turn on tags for your organization](/microsoftteams/manage-tags).
 
 > [!IMPORTANT]
@@ -47,11 +45,6 @@ To use [automatic tags](#automatic-tags), tags must be turned on for your organi
 > If you're deploying frontline dynamic teams, mapping your attributes is an optional step. To allow your frontline to easily reach each other by department or job title, map your attributes to enable targeted communications.
 >
 >If you've already deployed your frontline dynamic teams and you want to enable targeted communications for those teams, go to the [Dynamic teams settings page](deploy-dynamic-teams-at-scale.md#edit-your-frontline-team-settings), and map your attributes.
-
-<!--- > [!NOTE]
-> Mapping frontline attributes is part of the setup process when you deploy frontline dynamic teams. It's an optional step. If you want to allow your frontline to easily reach each other by department or job title, map your attributes to enable targeted communications.
->
-> If you've already deployed your frontline dynamic teams and you want to enable targeted communications for those teams, go to the [Dynamic teams settings page](deploy-dynamic-teams-at-scale.md#edit-your-frontline-team-settings), and map your attributes.--->
 
 ## Set up targeted communications
 
