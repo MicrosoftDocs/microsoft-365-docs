@@ -77,7 +77,7 @@ For example, the name of a contractor can occur multiple times in a consulting a
 
 2. Enter the name of the field in the search box. If the field name is already available, it populates the field name in the search result.
 
-3. Now select the field name. It is displayed as a card on the **Manage templates** panel with an option to insert a field to replace content in the template.
+3. Now select the field name. It's displayed as a card on the **Manage templates** panel with an option to insert a field to replace content in the template.
 
    ![A screenshot of the Set up fields section showing the Create a new field option on the Manage templates panel.](../../media/content-understanding/agreements-setup-fields.png)
 
@@ -106,7 +106,7 @@ For example, the name of a contractor can occur multiple times in a consulting a
 
 To associate a field to a SharePoint list or library, follow these steps:
 
-1. Select the dropdown menu under **Type** and select **SharePoint list**. Then, use the **Select** button to choose a SharePoint column.
+1. On the **Manage templates** panel, in the **Type** section, select **SharePoint List**. Then, use the **Select** button to choose a SharePoint column.
 
    ![A screenshot of Type section showing the SharePoint list option.](../../media/content-understanding/agreements-sharepoint-list.png)
 
@@ -118,13 +118,13 @@ To associate a field to a SharePoint list or library, follow these steps:
 
    ![A screenshot of the Select a column from the list page.](../../media/content-understanding/agreements-select-column.png)
 
-4. If you want to see the original page of lists again, select the **Go to the list in SharePoint** link at the bottom of the list.
+4. If you want to see the original page of lists again, select **Go to the list in SharePoint** at the bottom of the list.
 
-5. When you're done, you see that the list field has been associated with the field.
+5. When you're done, you see that the list field is associated with the column.
 
    ![A screenshot showing the list field associated with the field.](../../media/content-understanding/agreements-list-field.png)
 
-If you want users to be able to add inputs manually, in addition to choosing from a list, select **Document authors can type in values manually for this field**. In this case, the default for the manual input data type is single line of text. Also, the values input by the authors will only be used to generate the document. They won't be added to the SharePoint list.
+If you want users to be able to add inputs manually, in addition to choosing from a list, select **Document authors can type in values manually for this field**. In this case, the default for the manual input data type is single line of text. Also, the values input by the authors are only used to generate the document. They won't be added to the SharePoint list.
 
 ### Insert the field into the template
 
@@ -132,7 +132,7 @@ To insert the added field into the content of a template, follow these steps:
 
 1. Select the content of the template (any text in the document) that you want to replace with a field or place the cursor at a specific location in the template where you want to insert the field.
 
-2. To insert the field only at the specified selection, select **Insert**. To insert the field at all similar places in the document, select the down arrow icon next to the **Insert** button and select **Insert at all similar places**. This inserts the field at all locations with text that exactly matches the selected text.
+2. To insert the field only at the specified selection, select **Insert**. To insert the field at all similar places in the document, select the down arrow icon next to the **Insert** button and select **Insert at all similar places**. This action inserts the field at all locations with text that exactly matches the selected text.
 
    ![A screenshot of <describe the screenshot>.](../../media/content-understanding/agreements-placeholder.png)
 
@@ -150,13 +150,13 @@ To insert a section into the content of a template, follow these steps:
 
 1. From the **Manage templates** panel, select **Insert sections**.
 
-2. Choose **+Select a section from library.** This takes you to the list of published sections.
+2. Choose **Select a section from library.** This takes you to the list of published sections.
 
 3. Pick the relevant section for your template from the list, and then choose **Select**.
 
 4. Optionally, you can edit section content after it's placed in the template as needed, if the section is marked as **Editable**.
 
-5. You can insert as many sections as possible. The list of sections inserted will be displayed under the **Insert sections** section. You can select the relevant section, and the Word document will auto-scroll to the canvas section where the section is inserted.
+5. You can insert as many sections as possible. The list of sections inserted will be displayed under the **Insert sections** section. You can select the relevant section, and the Word document will autoscroll to the canvas section where the section is inserted.
 
 6. At any time, you can delete the section from the template by selecting the **Delete** option.
 
@@ -170,7 +170,7 @@ Once you create a new template or edit an existing template, you can configure a
 
 To set up a mandatory approval workflow, follow these steps:
 
-1. On the **Manage templates** panel, in the **Configure workflows** section, select **Configure required approval**.
+1. On the **Manage templates** panel, in the **Configure workflows** section, select **Configure required approvals**.
 
    ![A screenshot of the Configure workflows section on the Manage templates panel.](../../media/content-understanding/agreements-configure-workflows.png)
 
@@ -225,7 +225,7 @@ To request approval before publishing the section, follow these steps:
 
 6. After configuring the approval request, select **Send**. The template document is marked as read-only once approval request starts and those approvers who don't have access to the template will be granted view permissions.
 
-7. Once the approval request is sent, you can track the request status (**Approval in progress** or **Approval completed**) through the Word pane by reloading the template management pane or selecting **Refresh**. You'll be able also view the request later by selecting the **Sent** tab in the Approvals app in Teams.
+7. Once the approval request is sent, you can track the request status (**Approval in progress** or **Approval completed**) through the Word pane by reloading the template management pane or selecting **Refresh**. You can also view the request later by selecting the **Sent** tab in the Approvals app in Teams.
 
 8. You can cancel the sent approval request by selecting **Cancel request** or select **Edit section**, which will cancel all running flows and unlock the template for further edits, and the document will return to **Draft** state.
 
