@@ -56,7 +56,7 @@ Use Microsoft Intune [app protection policies](/mem/intune/apps/app-protection-p
 - [Android app protection policy settings - Conditional launch](/mem/intune/apps/app-protection-policy-settings-android#conditional-launch)
 - [iOS app protection policy settings - Conditional launch](/mem/intune/apps/app-protection-policy-settings-ios#conditional-launch)
 
-### Connect to the workingTimeSchedule API
+### Connect your workforce management system (WFM) to the workingTimeSchedule API
 
 #### Create an application
 
@@ -232,7 +232,7 @@ Configure quiet time policies in Intune to automatically mute Teams notification
 
 **Do I need to use the Shifts app in Teams to take advantage of this feature?**
 
-No, this feature relies on the clock in/out signal from your workforce management system (WFM).
+No, this feature relies on the clock in/out signal from your WFM.
 
 **Can I use working time if I don't have a clock in/out system in place?**
 
