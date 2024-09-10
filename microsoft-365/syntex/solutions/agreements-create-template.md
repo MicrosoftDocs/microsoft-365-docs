@@ -170,19 +170,19 @@ Once you create a new template or edit an existing template, you can configure a
 
 To set up a mandatory approval workflow, follow these steps:
 
-1. In the **Configure workflow** section, select **Configure required approval**.
+1. On the **Manage templates** panel, in the **Configure workflows** section, select **Configure required approval**.
 
-   ![A screenshot of <describe the screenshot>.](../../media/content-understanding/agreements-placeholder.png)
+   ![A screenshot of the Configure workflows section on the Manage templates panel.](../../media/content-understanding/agreements-configure-workflows.png)
 
 2. Set the name of the approval request. The name can be modified by document authors when they'll be prompted to send the approval request after document authoring is completed.
 
 3. Select **Approvers** (who needs to approve it) and decide the approval order. Once the changes are done, select **Setup approval flow**. Multiple approvers can be added to a level, and only one of them needs to approve for the request to move to next level.
 
-   ![A screenshot of <describe the screenshot>.](../../media/content-understanding/agreements-placeholder.png)
+   ![A screenshot of the Approvers section on the Manage templates panel.](../../media/content-understanding/agreements-approvers.png)
 
 4. Once set up, you can also choose to later modify the approval request. Once your modifications are complete, select **Save changes** to save the updated flow. You can delete the already saved approval flow by selecting **Delete approval flow**.
 
-   ![A screenshot of <describe the screenshot>.](../../media/content-understanding/agreements-placeholder.png)
+   ![A screenshot of the Delete approval flow button on the Manage templates panel.](../../media/content-understanding/agreements-delete-approval.png)
 
 ## Configure a SharePoint eSignature workflow
 
