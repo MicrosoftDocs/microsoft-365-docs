@@ -95,11 +95,7 @@ To learn more, see [Overview of Microsoft Graph](/graph/overview) and [Major 
 
 ✅ **Semantic index**
 
-The index uses multiple LLMs that sit on top of Microsoft Graph. It interprets user queries and produces meaningful and multilingual responses that help users be productive.
-
-It's always in the security context of the user, and only returns content that a user has access to.
-
-It allows you to search quickly through billions of vectors (mathematical representations of features or attributes) to help connect you with relevant and actionable information in your organization.
+Semantic index is generated from content in [Microsoft Graph](https://developer.microsoft.com/graph). It helps create contextually relevant responses to user prompts. It allows organizations to search through billions of vectors (mathematical representations of features or attributes) and return related results.
 
 To learn more, see [Semantic index for Copilot](/microsoftsearch/semantic-index-for-copilot).
 
