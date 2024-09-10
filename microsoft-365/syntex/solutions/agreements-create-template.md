@@ -108,21 +108,21 @@ To associate a field to a SharePoint list or library, follow these steps:
 
 1. Select the dropdown menu under **Type** and select **SharePoint list**. Then, use the **Select** button to choose a SharePoint column.
 
-   ![A screenshot of <describe the screenshot>.](../../media/content-understanding/agreements-placeholder.png)
+   ![A screenshot of Type section showing the SharePoint list option.](../../media/content-understanding/agreements-sharepoint-list.png)
 
 2. On the **Select a list** page, select the list location and the list you want to use, and then select **Next**.
 
-   ![A screenshot of <describe the screenshot>.](../../media/content-understanding/agreements-placeholder.png)
+   ![A screenshot of Select a list page.](../../media/content-understanding/agreements-select-list.png)
 
-3. On the **Select a source column from the existing list** page, select the column name you want to associate with the field, and then select **Save**.
+3. On the **Select a column from the list** page, select the column name you want to associate with the field, and then select **Save**.
 
-   ![A screenshot of <describe the screenshot>.](../../media/content-understanding/agreements-placeholder.png)
+   ![A screenshot of the Select a column from the list page.](../../media/content-understanding/agreements-select-column.png)
 
 4. If you want to see the original page of lists again, select the **Go to the list in SharePoint** link at the bottom of the list.
 
 5. When you're done, you see that the list field has been associated with the field.
 
-   ![A screenshot of <describe the screenshot>.](../../media/content-understanding/agreements-placeholder.png)
+   ![A screenshot showing the list field associated with the field.](../../media/content-understanding/agreements-list-field.png)
 
 If you want users to be able to add inputs manually, in addition to choosing from a list, select **Document authors can type in values manually for this field**. In this case, the default for the manual input data type is single line of text. Also, the values input by the authors will only be used to generate the document. They won't be added to the SharePoint list.
 
