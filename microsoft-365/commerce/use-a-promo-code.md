@@ -31,7 +31,7 @@ When you buy a Microsoft 365 for business subscription, you can use a promotiona
 
 ## Apply a promo code to a new subscription
 
-Please note: to buy a new subscription you must be a Global or Billing administrator.  
+Note that to buy a new subscription, you must be a Global or Billing administrator.  
 
 [Find out what type of billing account you have](./manage-billing-accounts.md).
 
