@@ -73,15 +73,15 @@ For example, the name of a contractor can occur multiple times in a consulting a
 
 1. On the **Manage templates** panel, select **Set up fields**.
 
-   ![A screenshot of <describe the screenshot>.](../../media/content-understanding/agreements-placeholder.png)
+   ![A screenshot of the Manage templates panel.](../../media/content-understanding/agreements-manage-templates.png)
 
 2. Enter the name of the field in the search box. If the field name is already available, it populates the field name in the search result.
 
 3. Now select the field name. It is displayed as a card on the **Manage templates** panel with an option to insert a field to replace content in the template.
 
-   ![A screenshot of <describe the screenshot>.](../../media/content-understanding/agreements-placeholder.png)
+   ![A screenshot of the Set up fields section showing the Create a new field option on the Manage templates panel.](../../media/content-understanding/agreements-setup-fields.png)
 
-   ![A screenshot of <describe the screenshot>.](../../media/content-understanding/agreements-placeholder.png)
+   ![A screenshot of the Set up fields section showing a created field on the Manage templates panel.](../../media/content-understanding/agreements-setup-fields-2.png)
 
 4. If you don't find the field in the search results, you can create a new field and associate it with different data types.
 
@@ -100,7 +100,7 @@ For example, the name of a contractor can occur multiple times in a consulting a
     - Table
     - SharePoint list
 
-   ![A screenshot of <describe the screenshot>.](../../media/content-understanding/agreements-placeholder.png)
+   ![A screenshot of Types section of the Manage templates panel.](../../media/content-understanding/agreements-field-types.png)
 
 ## Associate a field to a list or library
 
