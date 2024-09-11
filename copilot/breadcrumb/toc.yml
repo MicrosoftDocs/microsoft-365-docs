@@ -11,3 +11,6 @@
   - name: Microsoft 365 Copilot
     tocHref: /security/zero-trust/copilots/
     topicHref: /copilot/microsoft-365/index  
+  - name: Microsoft 365 Copilot
+    tocHref: /microsoftteams/platform/copilot/
+    topicHref: /copilot/microsoft-365/index   
