@@ -5,11 +5,11 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: mijeffer, nicholak
+ms.reviewer: brhamel, jobailey
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-business
-ms.subservice: m365-commerce-acquisition
+ms.subservice: m365-commerce-marketplace
 ms.localizationpriority: medium
 ms.collection: 
 - Tier1

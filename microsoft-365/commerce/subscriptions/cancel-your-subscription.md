@@ -26,7 +26,7 @@ ms.custom:
 - GAUpdates
 search.appverid: MET150
 description: "Learn how to cancel your trial or paid subscriptions in the Microsoft 365 admin center."
-ms.date: 10/13/2023
+ms.date: 09/10/2024
 ---
 
 # Cancel your subscription in the Microsoft 365 admin center
