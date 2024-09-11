@@ -87,8 +87,6 @@ If you have an MOSA billing account type, use the following steps to delete your
 
 ## Step 4: Disable multi-factor authentication
 
-You must be a Global Administrator to do the following steps. To verify what role you have, see [Check admin roles in your organization](../admin/add-users/assign-admin-roles.md#check-admin-roles-in-your-organization).
-
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 2. In the **Navigation menu**, go to the **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
 3. Select **Multi-factor authentication**.
