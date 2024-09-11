@@ -12,7 +12,7 @@
         - name: Data, Privacy, and Security for Copilot for Microsoft 365
           href: microsoft-365-copilot-privacy.md
         - name: Zero Trust principles for Microsoft Copilot for Microsoft 365
-          href: /security/zero-trust/zero-trust-microsoft-365-copilot?context=/copilot/microsoft-365/context/m365-copilot-context
+          href: /security/zero-trust/zero-trust-microsoft-365-copilot?toc=/copilot/microsoft-365/toc.json&bc=/copilot/microsoft-365/breadcrumb/toc.json
         - name: Extend Copilot for Microsoft 365
           href: /microsoftteams/platform/copilot/how-to-extend-copilot?context=/copilot/microsoft-365/context/m365-copilot-context
         - name: Enterprise data protection
