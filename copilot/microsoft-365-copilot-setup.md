@@ -111,7 +111,7 @@ To ensure data is secure, review SharePoint site access and permissions. Priorit
     At the site level:
 
     - Educate site admins on the site-level controls they can use to [restrict members from sharing](/sharepoint/change-external-sharing-site).
-    - Make sure that [Site Owners receive a request to access the site](/office/set-up-and-manage-access-requests-94b26e0b-2822-49d4-929a-8455698654b3).
+    - Make sure that [Site Owners receive a request to access the site](https://support.microsoft.com/office/set-up-and-manage-access-requests-94b26e0b-2822-49d4-929a-8455698654b3).
 
 ✅ ??What about OneDrive??
 
@@ -307,7 +307,7 @@ To measure the impact of Copilot on your organization, use the [Copilot Dashboar
 To learn more, see:
 
 - [Open the Microsoft Copilot Dashboard (Preview) from Viva Insights](https://aka.ms/copilotdashboard)
-- [Learn more about the Microsoft Copilot Dashboard (Preview) from Viva Insights](/viva/insights/org-team-insights/)
+- [Learn more about the Microsoft Copilot Dashboard (Preview) from Viva Insights](/viva/insights/org-team-insights/copilot-dashboard)
 
 ## More resources
 
