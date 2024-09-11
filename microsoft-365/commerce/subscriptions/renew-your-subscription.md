@@ -55,6 +55,8 @@ When you turn off recurring billing for a subscription, it isn’t canceled. The
 
 To learn how to cancel a subscription immediately, see [Cancel your Microsoft business subscription](cancel-your-subscription.md).
 
+**Note:** Turning off recurring billing will cancel any existing scheduled changes you have for a subscription. 
+
 ## Change the recurring billing setting
 
 You can only change the recurring billing setting for an active subscription. If your subscription has already expired, you must reactivate it before you can turn recurring billing on or off. For more information, see [Reactivate your subscription in the Microsoft 365 admin center](reactivate-your-subscription.md).
