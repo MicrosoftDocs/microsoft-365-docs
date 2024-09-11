@@ -62,7 +62,7 @@ The providers facilitate the signing process and send out all relevant notificat
 
 - SharePoint eSignature is available for only PDF documents at this time.
 - Tracking of SharePoint eSignature requests through the Approvals app in Microsoft Teams is now available.
-- Support for additional electronic signature providers will begin later in Summer 2024 with Adobe Acrobat Sign and Docusign. In the future, there will be potential integration with other providers.
+- Support for Adobe Acrobat Sign and Docusign is now available. In the future, there will be potential integration with other electronic signature providers.
 
 <br>
 
