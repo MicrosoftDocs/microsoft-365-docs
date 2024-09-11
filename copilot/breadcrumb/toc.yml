@@ -3,16 +3,5 @@
   topicHref: /microsoft-365/index
   items:
   - name: Microsoft 365 Copilot
-    tocHref: /microsoft-365-copilot/
-    topicHref: /microsoft-365-copilot/index
-- name: Microsoft 365
-  tocHref: /security/
-  topicHref: /Microsoft 365/index
-  items:
-  - name: Microsoft 365 Copilot                        # Original docset name
-    tocHref: /security/zero-trust/                   # Destination docset route
-    topicHref: /Microsoft 365/Microsoft 365 Copilot/index      # Original docset route
-    items:
-    - name: Zero Trust for Copilot               # Destination docset name
-      tocHref: /security/zero-trust/copilots/      # Destination docset route
-      topicHref: /Microsoft 365/Microsoft 365 Copilot/index    # Original docset route
+    tocHref: /copilot/microsoft-365/
+    topicHref: /copilot/microsoft-365/index
