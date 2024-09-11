@@ -28,9 +28,10 @@ ms.custom:
 - AdminTemplateSet
 - adminvideo
 - admindeeplinkMAC
+- GAUpdates
 search.appverid: MET150, GEA150
 description: "Learn how to find your invoice or billing statement for a Microsoft business subscription in the Microsoft 365 admin center."
-ms.date: 08/08/2023
+ms.date: 08/12/2024
 ---
 
 # View your invoice in the Microsoft 365 admin center
@@ -48,15 +49,16 @@ You can view your invoice for your Microsoft business subscription in the Micros
 
 ## Before you begin
 
-You must be a Global or Billing admin to do the steps described in this article. For more information, see [About admin roles in the Microsoft 365 admin center](../../admin/add-users/about-admin-roles.md).
+You must be at least a Billing Administrator to do the steps described in this article. For more information, see [About admin roles in the Microsoft 365 admin center](../../admin/add-users/about-admin-roles.md).
   
 ## View your bill or invoice
 
 1. Go to the Microsoft 365 admin center.
     - If you're using the **Simplified view**, select **Billing**, then select **View invoices**.
-    - If you're using the **Dashboard view**, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page.
-2. Select an invoice from the list to view the details online. If you don’t see any invoices, change the date range.
-3. To download the .PDF version of your invoice, select **Download PDF**.
+   - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page.
+2. If you have more than one billing account, select **Change billing account** to view invoices associated with each billing account.
+3. Select an invoice from the list to view the details online. If you don’t see any invoices, change the date range.
+4. To download the .PDF version of your invoice, select **Download PDF**.
 
 > [!NOTE]
 > The online version of your invoice looks different from the .PDF version that you download.
@@ -80,7 +82,9 @@ You can submit your Fapiao request to our [Fapiao management system](https://go.
 
 ## Run the Unknown Charge Diagnostic
 
-If you're a Microsoft 365 global admin and you have a Microsoft Online Services Agreement (MOSA) billing account type, you can use a diagnostic tool to research unexpected charges in your invoice. The tool runs within the Microsoft 365 admin center, and lets you investigate charges from Microsoft that appear on your credit or debit card statement. [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
+If you're a Microsoft 365 Global Administrator and you have a Microsoft Online Services Agreement (MOSA) billing account type, you can use a diagnostic tool to research unexpected charges in your invoice. The tool runs within the Microsoft 365 admin center, and lets you investigate charges from Microsoft that appear on your credit or debit card statement. [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
+
+[!INCLUDE [ga-roles-limitation](../../includes/ga-roles-limitation.md)]
 
 > [!NOTE]
 > The Unknown Charge Diagnostic is only available for customers who bought their products and services from Microsoft.com, including Microsoft 365 Enterprise, Education, and Non-profit.

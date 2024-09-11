@@ -3,14 +3,13 @@ title: "Add custom and required questions to the booking page"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 06/24/2020
+ms.date: 05/24/2024
 audience: Admin
 ms.topic: how-to
 ms.service: bookings
 ms.collection: 
 - Tier1
 - scotvorg
-- essentials-manage
 ms.localizationpriority: medium
 description: "If you need to ask customers questions when they book an appointment with you online, you can add custom questions and required questions to the booking page."
 ---

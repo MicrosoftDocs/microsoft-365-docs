@@ -1,5 +1,5 @@
 ---
-title: "Optimize search requests in SharePoint Online modern site pages"
+title: "Optimize search requests in SharePoint in Microsoft 365 modern site pages"
 ms.reviewer: andreye
 ms.author: evanatkin
 author: AtkinE
@@ -22,21 +22,21 @@ ms.collection:
 description: "Learn how to optimize search requests for SharePoint portal pages."
 ---
 
-# Optimize search requests in SharePoint Online modern site pages 
+# Optimize search requests in SharePoint in Microsoft 365 modern site pages 
 
-SharePoint Online modern site pages contain links that load data from (or make calls to) from Search backend. The more search requests made by a page, the longer the page takes to load, and the longer the end user has to wait to get search results back.  
+SharePoint in Microsoft 365 modern site pages contain links that load data from (or make calls to) from Search backend. The more search requests made by a page, the longer the page takes to load, and the longer the end user has to wait to get search results back.  
 
 This article will help you understand how to determine the number and impact of search requests from your modern site pages and how to limit their effect on end user perceived latency.
 
 >[!NOTE]
->For more information about performance in SharePoint Online modern portals, see [Performance in the modern SharePoint experience](/sharepoint/modern-experience-performance).
+>For more information about performance in SharePoint in Microsoft 365 modern portals, see [Performance in the modern SharePoint experience](/sharepoint/modern-experience-performance).
 
 ## Use the Page Diagnostics for SharePoint tool to analyze search requests made on a page
 
-The Page Diagnostics for SharePoint tool is a browser extension for the new Microsoft Edge (https://www.microsoft.com/edge) and Chrome browsers that analyzes both SharePoint Online modern portal and classic publishing site pages. The tool provides a report for each analyzed page showing how the page performs against a defined set of performance criteria. To install and learn about the Page Diagnostics for SharePoint tool, visit [Use the Page Diagnostics tool for SharePoint Online](./page-diagnostics-for-spo.md).
+The Page Diagnostics for SharePoint tool is a browser extension for the new Microsoft Edge (https://www.microsoft.com/edge) and Chrome browsers that analyzes both SharePoint in Microsoft 365 modern portal and classic publishing site pages. The tool provides a report for each analyzed page showing how the page performs against a defined set of performance criteria. To install and learn about the Page Diagnostics for SharePoint tool, visit [Use the Page Diagnostics tool for SharePoint in Microsoft 365](./page-diagnostics-for-spo.md).
 
 >[!NOTE]
-> The Page Diagnostics tool only works for SharePoint Online, and cannot be used on a SharePoint system page.
+> The Page Diagnostics tool only works for SharePoint in Microsoft 365, and cannot be used on a SharePoint system page.
 
 When you analyze a SharePoint site page with the Page Diagnostics for SharePoint tool, you can see information about search requests in the **Number of search requests on a page** result in the Diagnostic tests pane. The line will appear in green if the site page contains fewer than the baseline number of search requests, and red if the page exceeds the baseline number.
 
@@ -83,12 +83,10 @@ It is recommended to enable group-level caching of search requests on Events or 
 
 ## Related topics
 
-[Tune SharePoint Online performance](tune-sharepoint-online-performance.md)
-
-[Tune Office 365 performance](tune-microsoft-365-performance.md)
+[Tune SharePoint in Microsoft 365 performance](tune-sharepoint-online-performance.md)
 
 [Performance in the modern SharePoint experience](/sharepoint/modern-experience-performance)
 
 [Content delivery networks](content-delivery-networks.md)
 
-[Use the Office 365 Content Delivery Network (CDN) with SharePoint Online](use-microsoft-365-cdn-with-spo.md)
+[Use the Office 365 Content Delivery Network (CDN) with SharePoint in Microsoft 365](use-microsoft-365-cdn-with-spo.md)

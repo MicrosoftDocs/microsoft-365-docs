@@ -3,7 +3,7 @@ title: "Deploy Microsoft 365 Enterprise for your organization"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 06/28/2024
+ms.date: 09/05/2024
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
@@ -16,7 +16,7 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - M365-subscription-management
-- essentials-overview
+- essentials-get-started
 - must-keep
 f1.keywords:
 - CSH

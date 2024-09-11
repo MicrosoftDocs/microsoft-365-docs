@@ -53,7 +53,7 @@ With Blue Yonder WFM as your system of record, your frontline workers can effici
 
 Before you get started, make sure you meet all the following prerequisites.
 
-- You're a Microsoft 365 global admin.
+- You're a Microsoft 365 Global Administrator.
 
 [!INCLUDE [shifts-connector-blue-yonder-prerequisites](includes/shifts-connector-blue-yonder-prerequisites.md)]
 

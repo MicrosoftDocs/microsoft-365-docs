@@ -36,8 +36,6 @@ For Microsoft 365 identity infrastructure in Azure:
   
 - [Connect an on-premises network to a Microsoft Azure virtual network](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)
 
-- [Deploy high availability federated authentication for Microsoft 365 in Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
-
 For SharePoint Server 2013 workloads in Azure:
   
 - [Microsoft Azure Architectures for SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md)

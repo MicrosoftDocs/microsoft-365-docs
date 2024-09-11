@@ -16,6 +16,7 @@ metadata:
   author: samanro #Required; your GitHub user alias, with correct capitalization.
   ms.author: samanro #Required; microsoft alias of author; optional team alias.
   ms.date: 09/21/2023 #Required; mm/dd/yyyy format.
+  ms.custom: [copilot-learning-hub]
 
 
 # additionalContent section (Optional; Remove if not applicable.)
@@ -69,6 +70,8 @@ additionalContent:
               url: /purview/ai-microsoft-purview
             - text: Isolation controls
               url: /compliance/assurance/assurance-microsoft-365-isolation-controls
+            - text: Transparency Note
+              url: microsoft-365-copilot-transparency-note.md  
         # Card
         - title: Manage Copilot for Microsoft 365
           links:
@@ -76,7 +79,7 @@ additionalContent:
               url: microsoft-365-copilot-page.md
             - text: Connect to the Microsoft Copilot Dashboard
               url: /viva/insights/org-team-insights/copilot-dashboard
-            - text: Manage Plugins in Integrated Apps (Preview)
+            - text: Manage extensions in Integrated Apps
               url: /microsoft-365/admin/manage/manage-plugins-for-copilot-in-integrated-apps
             - text: Related Microsoft 365 admin controls
               url: /microsoft-365/solutions/tenant-management-overview
@@ -88,8 +91,10 @@ additionalContent:
           links:
             - text: Getting ready for Copilot for Microsoft 365 learning path
               url: /training/paths/prepare-your-organization-microsoft-365-copilot/
-            - text: 30-day challenge
-              url: /training/challenges?id=5675b9c6-4dbe-4b1b-abcf-a8fbccdb149f&wt.mc_id=cloudskillschallenge_5675b9c6-4dbe-4b1b-abcf-a8fbccdb149f_30dtli_web_wwl
+            - text: "MS-4007: Discover how to drive enablement of Copilot for Microsoft 365 in your organization"
+              url: /training/paths/explore-how-drive-adoption-microsoft-copilot-m365/
+            - text: Extend Microsoft Copilot for Microsoft 365 learning path
+              url: /training/paths/copilot-m365-extensibility/
 #            - text: Virtual training days
 #              url: index.yml
         # Card
@@ -100,10 +105,12 @@ additionalContent:
 #            - text: Copilot for Microsoft 365 - Security & Privacy
 #              url: index.yml
         # Card
-        - title: End user Copilot resources
+        - title: Resources for your end users
           links:
             - text: Copilot Lab
               url: https://copilot.cloud.microsoft
+            - text: Microsoft Copilot Academy
+              url: /viva/learning/academy-copilot/
 #            - text: Use additional data sources with Microsoft 365 Chat
 #              url: https://go.microsoft.com/fwlink/?linkid=2250210
         # Card

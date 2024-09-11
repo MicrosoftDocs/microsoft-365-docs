@@ -26,9 +26,10 @@ ms.custom:
 - AdminTemplateSet
 - admindeeplinkMAC
 - adminvideo
+- GAUpdates
 search.appverid: GEA150 
 description: "Learn how to sign up for a free 30-day trial or buy a subscription for Microsoft 365 for business products and services."
-ms.date: 08/07/2023
+ms.date: 09/05/2024
 ---
 
 # Try or buy a Microsoft 365 for business subscription
@@ -50,9 +51,9 @@ You don't need an existing Microsoft account to sign up for a free trial.
 
 For all other procedures in this article, the following items are required:
 
-- You must have a Microsoft account, and you must be a Global or Billing admin for your organization. For more information, see [About admin roles](../admin/add-users/about-admin-roles.md).
+- You must have a Microsoft account, and you must be at least a Billing Administrator for your organization. For more information, see [About admin roles](../admin/add-users/about-admin-roles.md).
 - [Find out what type of billing account you have](manage-billing-accounts.md#view-my-billing-accounts).
-- If you have a Microsoft Customer Agreement (MCA) billing account type, you must also be a billing account owner or contributor to do the tasks described in this article. For more information, see [Understand billing accounts](manage-billing-accounts.md) and [Manage your Microsoft business billing profiles](billing-and-payments/manage-billing-profiles.md).
+- If you have a Microsoft Customer Agreement (MCA) billing account type, you must also be a Billing account owner or contributor to do the tasks described in this article. For more information, see [Understand billing accounts](manage-billing-accounts.md) and [Manage your Microsoft business billing profiles](billing-and-payments/manage-billing-profiles.md).
 
 ::: moniker range="o365-21vianet"
 
@@ -179,8 +180,7 @@ When you buy another subscription through the Microsoft 365 admin center, the ne
 If you want to move all of your users to a different subscription, see [Upgrade or change to a different Microsoft 365 for business plan](subscriptions/upgrade-to-different-plan.md).
 
 > [!NOTE]
-> You must move users from your free trial subscription to the new subscription before your 90-day grace period ends after your trial subscription expires. By doing this, you keep your data, accounts, and configuration. Otherwise, that information is deleted at the end of 90 days.
-
+> You must move or reassign users from your free trial subscription to the new subscription before your 90-day grace period ends after your trial subscription expires. By doing this, you keep your data, accounts, and configuration. Otherwise, that information is deleted at the end of 90 days.
 [Find out what type of billing account you have](manage-billing-accounts.md).
 
 **If you have an MCA billing account type:**
