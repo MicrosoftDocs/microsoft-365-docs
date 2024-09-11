@@ -7,7 +7,7 @@ author: chrisda
 manager: deniseb
 audience: Admin
 ms.topic: overview
-ms.service: microsoft-365-business
+ms.service: microsoft-365-business-security
 ms.date: 07/11/2024
 ms.localizationpriority: medium
 ms.reviewer:

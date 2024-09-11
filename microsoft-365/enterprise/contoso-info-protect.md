@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: kvice
 manager: scotv
-ms.date: 10/02/2019
+ms.date: 09/06/2024
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -15,6 +15,7 @@ ms.collection:
 - scotvorg
 - M365-security-compliance
 - Strat_O365_Enterprise
+- must-keep
 ms.custom:
 
 description: Understand how Contoso uses the information protection features in Microsoft 365 for enterprise to secure their digital assets in the cloud.
@@ -98,7 +99,7 @@ These policies ensure that:
 
 The following table maps Contoso data levels to information protection features in Microsoft 365 for enterprise.
 
-| Level | Microsoft 365 cloud services | Windows 10 and Microsoft 365 Apps for enterprise | Security and compliance |
+| Level | Microsoft 365 cloud services | Windows 11 and Microsoft 365 Apps for enterprise | Security and compliance |
 |:-------|:-----|:-----|:-----|
 | Level 1: Baseline  | SharePoint and Exchange Online Conditional Access policies <BR> Permissions on SharePoint sites | Sensitivity labels <BR> BitLocker <BR> Windows Information Protection | Device Conditional Access policies and Mobile Application Management policies |
 | Level 2: Sensitive | Level 1 plus: <BR> <BR> Sensitivity labels <BR> Microsoft 365 retention labels on SharePoint sites <BR> Data Loss Prevention for SharePoint and Exchange Online <BR> Isolated SharePoint sites  | Level 1 plus: <BR> <BR> Sensitivity labels on digital assets  | Level 1 |
@@ -118,5 +119,3 @@ Learn how Contoso uses the [security features across Microsoft 365 for enterpris
 [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
 
 [Microsoft 365 for enterprise overview](microsoft-365-overview.md)
-
-[Test lab guides](m365-enterprise-test-lab-guides.md)

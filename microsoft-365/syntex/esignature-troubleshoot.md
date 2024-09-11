@@ -32,7 +32,7 @@ The PDF viewer is opened by selecting a PDF file from a SharePoint library. The 
 
 ### Collaboration settings
 
-SharePoint eSignature is an extension of SharePoint document storage and management service. Therefore, all existing access, sharing, and data loss prevention policies that are already applied at the tenant level, SharePoint site and library level, or folder and file level might affect whether a request can be started from a document in SharePoint and who it can be sent to. Some of the scenarios that might affect the signature request process are:
+SharePoint eSignature is an extension of SharePoint document storage and management service. Existing access, sharing, and data loss prevention policies that are already applied at the tenant level, SharePoint site and library level, or folder and file level might affect whether a request can be started from a document in SharePoint and who it can be sent to. Some of the scenarios that might affect the signature request process are:
 
 - If encryption is applied (for example, sensitivity labeling applied to the file), the ability to view the document wouldn't be available from SharePoint and therefore can't start a Signature request from there. Read more about [sensitivity labels](/purview/sensitivity-labels).
 
@@ -53,6 +53,10 @@ Get-SPOSite -Limit All | Select-Object Url, SharingCapability
 Certain [conditional access](/entra/identity/conditional-access/overview) policies might determine whether an external recipient (signers outside of your organization or Microsoft 365 tenant) is able sign a document. When this happens, the external signers might not be able to access the document for signing. In some other cases, they might be able to access the document for signing but the signing operation is unsuccessful. One common way to resolve this is to contact your IT admin who will be able to add the SharePoint eSignature app to the list of approved apps via the  Microsoft Entra admin center.
 
 In some cases, the admin might need to add the SharePoint eSignature app (formally called Microsoft eSign service) to the **Excluded Apps** list in the **Conditional Access policy** > **Target resources** section so that the policy doesn't apply to the SharePoint eSignature app. The admin can verify the changes using the WhatIf tool with the policy.
+
+## Unable to create a request from another signature provider
+
+When you initiate a signature request from a document for another provider, such as Adobe Acrobat Sign and DocuSign, the document might have security and access policies applied that prevent the document from opening in the provider service. The most common policies include download and encryption policies applied. You must ensure that the document isn't encrypted before initiating the signature request and that the creator of the request has permission to download the file.  
 
 ## Unable to find the request emails
 
