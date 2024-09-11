@@ -14,7 +14,7 @@
         - name: Zero Trust principles for Microsoft Copilot for Microsoft 365
           href: /security/zero-trust/zero-trust-microsoft-365-copilot?toc=/copilot/microsoft-365/toc.json&bc=/copilot/microsoft-365/breadcrumb/toc.json
         - name: Extend Copilot for Microsoft 365
-          href: /microsoftteams/platform/copilot/how-to-extend-copilot?context=/copilot/microsoft-365/context/m365-copilot-context
+          href: /microsoftteams/platform/copilot/how-to-extend-copilot?toc=/copilot/microsoft-365/toc.json&bc=/copilot/microsoft-365/breadcrumb/toc.json
         - name: Enterprise data protection
           href: enterprise-data-protection.md
         - name: Transparency Note
@@ -36,7 +36,7 @@
         - name: Pin Microsoft Copilot to the navigation bar
           href: pin-copilot.md
         - name: Manage Copilot for Microsoft Teams meetings and events
-          href: /MicrosoftTeams/copilot-teams-transcription?context=/copilot/microsoft-365/context/m365-copilot-context
+          href: /MicrosoftTeams/copilot-teams-transcription?toc=/copilot/microsoft-365/toc.json&bc=/copilot/microsoft-365/breadcrumb/toc.json
         - name: Connect to the Microsoft Copilot Dashboard
           href: /viva/insights/org-team-insights/copilot-dashboard?toc=/copilot/microsoft-365/toc.json&bc=/copilot/microsoft-365/breadcrumb/toc.json
         - name: Provide Copilot feedback to Microsoft
