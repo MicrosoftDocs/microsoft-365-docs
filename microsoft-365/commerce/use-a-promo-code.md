@@ -31,7 +31,7 @@ When you buy a Microsoft 365 for business subscription, you can use a promotiona
 
 ## Before you begin
 
-You must be at least a Billing Administrator to do the task described in this article. For more information, see [About admin roles](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide).
+You must be at least a Billing Administrator to do the task described in this article. For more information, see [About admin roles](/microsoft-365/admin/add-users/about-admin-roles).
 
 ## Apply a promo code to a new subscription
 
