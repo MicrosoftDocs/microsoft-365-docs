@@ -29,9 +29,11 @@ ms.date: 09/05/2024
 
 When you buy a Microsoft 365 for business subscription, you can use a promotional code (promo code) to reduce the price. This article explains how to apply a promo code to a new subscription, describes the [Promo code terms](#promo-code-terms), and provides [troubleshooting help for promo codes](#troubleshooting-promo-codes).
 
-## Apply a promo code to a new subscription
+## Before you begin
 
-Note that to buy a new subscription, you must be a Global or Billing administrator.  
+You must be at least a Billing Administrator to do the task described in this article. For more information, see [About admin roles](/microsoft-365/admin/add-users/about-admin-roles).
+
+## Apply a promo code to a new subscription
 
 [Find out what type of billing account you have](./manage-billing-accounts.md).
 
