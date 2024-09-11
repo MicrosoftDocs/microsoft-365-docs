@@ -87,7 +87,7 @@ Use the following steps to start an electronic signature in SharePoint using ano
    
 9. Once completed, you can close all document tabs.
     
-11. To cancel or track a request from other providers, you would need to do this via the provider website
+11. To cancel or track a request from other providers, you can do this in the Approvals app in Teams or via the provider's website
 
 <br>
 
