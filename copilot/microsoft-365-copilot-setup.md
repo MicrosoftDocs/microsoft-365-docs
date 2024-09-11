@@ -148,28 +148,28 @@ As an admin, you can:
 > [!NOTE]
 > In sovereign tenants where Microsoft 365 Copilot is not available, users are blocked from using Copilot features. They're blocked even if a device has multiple accounts signed in and one of those accounts has Copilot.
 
-### Sensitivity labels in Microsoft Purview
+### Sensitivity labels from Microsoft Purview
 
-✅ Use sensitivity labels to tag your SharePoint and OneDrive data
+✅ Use sensitivity labels to protect your data
 
-In the [Microsoft Purview compliance portal](https://compliance.microsoft.com), you can create [sensitivity labels](/purview/create-sensitivity-label) (**Information protection** > **Labels** tab). These labels state how sensitive certain data is in your organization, and can affect Copilot results.
+In the [Microsoft Purview portal](https://purview.microsoft.com/)), you can create [sensitivity labels](/purview/create-sensitivity-label) (**Information protection** > **Sensitivity labels**). Use these labels to identify how sensitive the data is in your organization. When they are applied to items such as documents and emails, they add an extra layer of protection and can affect Copilot results.
 
 :::image type="content" source="media/purview-labels-sensitivity.png" alt-text="Screenshot showing the Microsoft Purview screen for sensitivity labels." lightbox="media/purview-labels-sensitivity.png":::
 
-These labels provide an extra layer of protection. For example:
+The additional protection includes:
 
-- Microsoft Copilot Graph-grounded chat conversations can reference data from different types of items. The sensitivity label with the highest priority is visible to users.
+- Copilot Business Chat can reference data from different types of items. The sensitivity label with the highest priority is visible to users.
 
-- If the label applies encryption, then Copilot checks the usage rights for the user. If the user is granted permissions to copy from an item, then Copilot returns data from that item.
+- If the label applies encryption, Copilot checks the usage rights for the user. For Copilot to return data from that item, the user must be granted permissions to copy from it.
 
 With sensitivity labels, you can:
 
-1. **Create labels or use default labels**: You can use the [default built-in labels](/purview/mip-easy-trials), including Public and Highly Confidential, and/or create your own labels.
+1. **Create labels or activate default labels**: If you don't already have sensitivity labels, you might be eligible to have some [default labels](/purview/mip-easy-trials#default-sensitivity-labels) automatically created for you, such as Public, General, and Confidential. The default labels are suitable for items such as files, emails, and meetings. You can modify these and always create your own labels.
 
     To learn more, see:
 
     - [Create and configure sensitivity labels and their policies](/purview/create-sensitivity-labels)
-    - [Enable sensitivity labels for files in SharePoint and OneDrive](/purview/sensitivity-labels-sharepoint-onedrive-files)
+    - [Default labels and policies to protect your data](/purview/mip-easy-trials)
 
 2. **Define the data sensitivity requirements** and review your SharePoint sites & files in OneDrive. Focus on the most critical repositories and determine the sensitivity of the data on these sites.
 
@@ -177,53 +177,43 @@ With sensitivity labels, you can:
 
     For a more detailed strategy to deploy and drive adoption, see [Step 7 - Deploy to some users and measure adoption](#step-7---deploy-to-some-users-and-measure-adoption) (in this article).
 
-3. **Apply labels**: You can configure [autolabeling](/purview/apply-sensitivity-label-automatically) or users can manually apply labels.
+3. **Apply your sensitivity labels**: First, [enable sensitivity labels for files in SharePoint and OneDrive](/purview/sensitivity-labels-sharepoint-onedrive-files). Then, with a publishing label policy, you can configure a default label and users can manually apply your labels. To label at scale, use [autolabeling](/purview/apply-sensitivity-label-automatically) to automatically apply labels based on sensitivite information detected.
 
-    We recommend you configure [autolabeling](/purview/apply-sensitivity-label-automatically) so you don't rely on users classifying all content correctly.
+    For more information about the different ways that you can apply sensitivity labels, see [Common scenarios for sensivity labels](/purview/get-started-with-sensitivity-labels#common-scenarios-for-sensitivity-labels).
 
-    You can apply labels based on content found in documents using [data loss prevention (DLP) policies](/purview/dlp-learn-about-dlp). DLP policies can automatically apply labels when specific types of content are identified in a document, like personal data including addresses, tax information or passport numbers.
+    One of the available labeling methods is to apply sensitiivty labels based on content found in documents when you use [data loss prevention (DLP) policies](/purview/dlp-learn-about-dlp). DLP policies can automatically apply sensitivity labels when specific types of infomration is identified in a document, such as personal data that includes addresses, tax information, or passport numbers.
 
     With DLP policies, you can also:
 
     - Use the [trainable classifier tool](/purview/trainable-classifiers-get-started-with) to identify categories of content, like source code, financial documents, and HR.
     - Set up [endpoint DLP policies](/purview/endpoint-dlp-learn-about) that restrict users from specific actions, like copying content to clipboard or removable USB devices, or printing.
 
-Once applied, the labels enforce your protection settings.
+Once applied, the sensitivity labels enforce your protection settings.
 
 To learn more about sensitivity labels, see:
 
 - [Learn about sensitivity labels](/purview/sensitivity-labels)
-- [Labeling in the Microsoft Purview Data Map](/purview/create-sensitivity-label)
-- [How to automatically apply sensitivity labels to your data in the Microsoft Purview Data Map](/purview/how-to-automatically-label-your-content)
 
-### Copilot activity in Microsoft Purview
+### Copilot activity and Microsoft Purview
 
-✅ Audit Copilot activity, create retention policies, and use eDiscovery
+✅ Audit Copilot activity, create retention policies, and use eDiscovery and communication compliance
 
-In the [Microsoft Purview portal](https://compliance.microsoft.com), you can use the following features to search for specific content, like Copilot prompts and responses. You can also review the results.
+In the [Microsoft Purview portal](https://purview.microsoft.com/)), you can use the following features to search for specific content and activities that include Copilot prompts and responses.
 
 - **Audit**
 
-  You can search for specific activities, activities performed by specific users, and activities that occurred with a date range.
+  You can search for specific activities, activities performed by specific users, and activities that occurred with a date range. To learn more, see [Learn about auditing solutions in Microsoft Purview](/purview/audit-solutions-overview).
 
-  **Audit retention policies** lets you keep content in Copilot prompts and responses, based on your organization requirements.
+  **Retention policies** lets you keep the Copilot prompts and responses if this is needed for compliance reasons, even if users delete their chat history. To learn more, see [Learn about retention for Copilot](/purview/retention-policies-copilot).
 
-  To learn more, see [Learn about auditing solutions in Microsoft Purview](/purview/audit-solutions-overview).
+- **eDiscovery and commmunication compliance**
 
-- **Content search**
+  Use eDiscovery and communication compliance policies to analyze user prompts and Copilot responses to detect inappropriate or risky interactions, or sharing of confidential information.
 
-  All Microsoft 365 Copilot activity data (user prompts and Copilot responses) generated in supported Microsoft 365 apps and services is stored in custodian mailboxes. You can use **Content search** to audit and review this activity from Microsoft 365 Copilot.
-
-  To learn more, see [Get started with Content search](/purview/ediscovery-content-search-overview).
-
-- **eDiscovery**
-
-  Use **eDiscovery** and communication compliance policies for Microsoft 365 Copilot activity. You can set up flags for any content matches policies configured. For example, you can set up a policy to flag for activity that includes specific words or code names.
-
-  To learn more, see [Microsoft Purview eDiscovery solutions](/purview/ediscovery).
+  To learn more, see [Microsoft Purview eDiscovery solutions](/purview/ediscovery) and [Configure a communication compliance policy to detect for Copilot interactions](/purview/communication-compliance-copilot?tabs=purview-portal).
 
 > [!TIP]
-> To learn about Microsoft Purview data security and compliance protections for generative AI apps, see [Microsoft Purview AI Hub](/purview/ai-microsoft-purview).
+> To learn more about these Microsoft Purview security and compliance protections for Copilot, and how the Microsoft Purview AI Hub can help you more quickly deploy them, see [Microsoft Purview data security and compliance protections for generative AI apps](/purview/ai-microsoft-purview).
 
 ## Step 3 - Review app privacy
 
