@@ -5,7 +5,7 @@ author: erikre
 manager: dougeby
 audience: ITPro
 ms.topic: article
-ms.date: 07/30/2024
+ms.date: 09/12/2024
 description: Step 1. Confirm users, devices, and groups.
 ms.service: o365-solutions
 ms.localizationpriority: high

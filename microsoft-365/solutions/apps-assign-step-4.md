@@ -5,7 +5,7 @@ author: erikre
 manager: dougeby
 audience: ITPro
 ms.topic: article
-ms.date: 07/31/2024
+ms.date: 09/12/2024
 description: Step 4. Troubleshoot app deployment issues.
 ms.service: o365-solutions
 ms.localizationpriority: high

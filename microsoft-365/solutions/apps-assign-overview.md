@@ -5,7 +5,7 @@ author: erikre
 manager: dougeby
 audience: ITPro
 ms.topic: article
-ms.date: 07/30/2024
+ms.date: 09/12/2024
 description: Assign and deploy apps using Microsoft Intune.
 ms.service: o365-solutions
 ms.localizationpriority: high
@@ -41,9 +41,9 @@ Intune offers several advantages when assigning and deploying apps to your organ
 
 ### App-level data protection
 
-By assigning and deploying apps from Intune, you can protect your organization's data at the app-level. Intune applies this protection using app protection policies. By implementing app-level policies, you can restrict access to company resources and keep data within the purview or scope of your IT department. You can use Intune app protection policies independently of any mobile-device management (MDM) solution. This independence helps you protect your company's data with or without enrolling devices in a device management solution.
+By assigning and deploying apps from Intune, you can protect your organization's data at the app-level. Intune applies this protection using app protection policies. By implementing app-level policies, you can restrict access to company resources and keep data within the purview or scope of your IT department. You can use Intune app protection policies independently of any mobile-device management (MDM) solution. This independence helps you protect your company's data with or without enrolling devices in a device management solution. In addition, organizations can protect their data using Intune app management with and without Mobile Device Management (MDM) at the same time. For example, consider an end-user (employee or organization member) that uses both a phone issued by the company, and their own personal tablet. The organization issued phone is enrolled in MDM and protected by app protection policies, while the personal device is protected by app protection policies only.
 
-In addition, you can protect data at the app-level using selective wipe. When a device is lost or stolen, or if the employee leaves your organization, you want to make sure company app data is removed from the device. However, you might not want to remove personal data on the device, especially if the device is an employee-owned device. To selectively remove company app data, you can create a wipe request for a selected user.
+You can also protect data at the app-level using selective wipe. When a device is lost or stolen, or if the employee leaves your organization, you want to make sure company app data is removed from the device. However, you might not want to remove personal data on the device, especially if the device is an employee-owned device. To selectively remove company app data, you can create a wipe request for a selected user.
 
 > [!NOTE]
 > Managed apps are enhanced by being integrated to support the [Intune App SDK](/mem/intune/developer/app-sdk) or wrapped using the [Intune App Wrapping Tool](/mem/intune/developer/apps-prepare-mobile-application-management). This integration allows managed apps to support Microsoft Intune's app protection policies and app configuration policies. For a list of apps that support both app configuration and app protection policies, see [Microsoft Intune protected apps](/mem/intune/apps/apps-supported-intune-apps).
@@ -73,8 +73,6 @@ Intune supports a variety app types and app functionality. For example, Intune s
 
 > [!IMPORTANT]
 > You can use Intune to help enforce a [Zero Trust](/security/zero-trust/zero-trust-overview) security strategy for your organization. Zero Trust is an approach to use when designing and implementing a set of security principles. For more information, see [Zero Trust with Microsoft Intune](/mem/intune/fundamentals/zero-trust-with-microsoft-intune) and [Zero Trust identity and device access configurations](/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-overview).
-
-Organizations can protect their data using Intune app management with and without Mobile Device Management (MDM) at the same time. For example, consider an end-user (employee or organization member) that uses both a phone issued by the company, and their own personal tablet. The organization issued phone is enrolled in MDM and protected by app protection policies, while the personal device is protected by app protection policies only.
 
 ## Prerequisites
 
