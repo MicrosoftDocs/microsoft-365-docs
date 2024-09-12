@@ -54,6 +54,8 @@
         href: teams-classes-and-meetings-with-schoology.md
       - name: Use Microsoft Reflect LTI with Schoology Learning
         href: reflect-lti-schoology.md
+      - name: Use Microsoft Teams Assignments with Schoology Learning
+        href: teams-assignments-with-schoology.md 
     - name: Other LMS integrations
       items:
       - name: Use Microsoft Teams Meetings LTI with any LTI 1.3 compliant LMS
