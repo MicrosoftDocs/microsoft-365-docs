@@ -39,7 +39,7 @@
       items:
         - name: Data, privacy, and security for Microsoft 365 Copilot
           href: microsoft-365-copilot-privacy.md
-        - name: Data, privacy, and security for web queries in Microsoft 365 Copilot
+        - name: Data, privacy, and security for web queries in Microsoft 365 Copilot and Microsoft Copilot
           href: manage-public-web-access.md
         - name: Apply principles of Zero Trust to Microsoft 365 Copilot
           href: /security/zero-trust/zero-trust-microsoft-365-copilot?bc=/microsoft-365/copilot/breadcrumb/toc.json&toc=/microsoft-365/copilot/toc.json

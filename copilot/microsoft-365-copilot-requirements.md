@@ -32,7 +32,7 @@ The following are the prerequisites for using Microsoft 365 Copilot. Microsoft 3
 
 > [!NOTE]
 > - For Copilot to work in Word Online, Excel Online, and PowerPoint Online, you need to have third-party cookies enabled.
-> - Review your privacy settings for Microsoft 365 Apps because those settings might have an effect on the availability of Microsoft 365 Copilot features. For more information, see [Microsoft 365 Copilot and policy settings for connected experiences](microsoft-365-copilot-privacy.md#microsoft-365-copilot-and-policy-settings-for-connected-experiences).
+> - Review your privacy settings for Microsoft 365 Apps because those settings might have an effect on the availability of Microsoft 365 Copilot features. For more information, see [Microsoft 365 Copilot and privacy controls for connected experiences](microsoft-365-copilot-privacy.md#microsoft-365-copilot-and-privacy-controls-for-connected-experiences).
 > - Copilot isn't available when using device-based licensing for Microsoft 365 Apps for enterprise.
 
 ### Microsoft Entra ID
