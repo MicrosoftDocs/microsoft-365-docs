@@ -52,6 +52,7 @@ With SharePoint Agreements AI, you can:
 |[Update a template](agreements-update-template.md)    |Learn how to find and edit existing templates, and publish updates to a template.         |
 |[Manage sections in a template](agreements-manage-sections.md)    |Learn how to publish a new section, insert a section into a template, edit a section, and configure section settings.         |
 |[Create an agreement](agreements-create-agreement.md)    |Learn how to create an agreement from a template in Microsoft Teams and in Microsoft Word.         |
+|[Analyze section revisions](agreements-analyze-sections.md)    |Learn how to use the **Analyze section revisions** feature to detect changes in embedded sections, summarize the changes, and offer suggestions.       |
 |[View reports](agreements-reports.md)    |Learn about the reports that are available to monitor all agreements, their statuses, and other essential metrics.         |
 |[Receive approval notifications](agreements-notifications.md)    |Learn about receiving approval notifications in the Approvals app and in email.         |
 |[Import an agreement](agreements-import-agreement.md)    |Learn how to add existing agreements by uploading signed documents.        |
