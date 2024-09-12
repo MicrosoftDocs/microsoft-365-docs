@@ -152,7 +152,7 @@ As an admin, you can:
 
 ✅ Use sensitivity labels to protect your data
 
-In the [Microsoft Purview portal](https://purview.microsoft.com/)), you can create [sensitivity labels](/purview/create-sensitivity-label) (**Information protection** > **Sensitivity labels**). Use these labels to identify how sensitive the data is in your organization. When they are applied to items such as documents and emails, they add an extra layer of protection and can affect Copilot results.
+In the [Microsoft Purview portal](https://purview.microsoft.com), you can create [sensitivity labels](/purview/create-sensitivity-label) (**Information protection** > **Sensitivity labels**). Use these labels to identify how sensitive the data is in your organization. When they are applied to items such as documents and emails, they add an extra layer of protection and can affect Copilot results.
 
 :::image type="content" source="media/purview-labels-sensitivity.png" alt-text="Screenshot showing the Microsoft Purview screen for sensitivity labels." lightbox="media/purview-labels-sensitivity.png":::
 
@@ -181,7 +181,7 @@ With sensitivity labels, you can:
 
     For more information about the different ways that you can apply sensitivity labels, see [Common scenarios for sensivity labels](/purview/get-started-with-sensitivity-labels#common-scenarios-for-sensitivity-labels).
 
-    One of the available labeling methods is to apply sensitiivty labels based on content found in documents when you use [data loss prevention (DLP) policies](/purview/dlp-learn-about-dlp). DLP policies can automatically apply sensitivity labels when specific types of infomration is identified in a document, such as personal data that includes addresses, tax information, or passport numbers.
+    One of the available labeling methods is to apply sensitiivty labels based on content found in documents when you use [data loss prevention (DLP) policies](/purview/dlp-learn-about-dlp). DLP policies can automatically apply sensitivity labels when specific types of information is identified in a document, such as personal data that includes addresses, tax information, or passport numbers.
 
     With DLP policies, you can also:
 
@@ -190,30 +190,30 @@ With sensitivity labels, you can:
 
 Once applied, the sensitivity labels enforce your protection settings.
 
-To learn more about sensitivity labels, see:
-
-- [Learn about sensitivity labels](/purview/sensitivity-labels)
+To learn more about sensitivity labels, see [Learn about sensitivity labels](/purview/sensitivity-labels).
 
 ### Copilot activity and Microsoft Purview
 
 ✅ Audit Copilot activity, create retention policies, and use eDiscovery and communication compliance
 
-In the [Microsoft Purview portal](https://purview.microsoft.com/)), you can use the following features to search for specific content and activities that include Copilot prompts and responses.
+In the [Microsoft Purview portal](https://purview.microsoft.com), you can use the following features to search for specific content and activities that include Copilot prompts and responses.
 
 - **Audit**
 
   You can search for specific activities, activities performed by specific users, and activities that occurred with a date range. To learn more, see [Learn about auditing solutions in Microsoft Purview](/purview/audit-solutions-overview).
 
-  **Retention policies** lets you keep the Copilot prompts and responses if this is needed for compliance reasons, even if users delete their chat history. To learn more, see [Learn about retention for Copilot](/purview/retention-policies-copilot).
+- **Retention policies**
+
+  Configure retention policies to retain the Copilot prompts and responses if this data is needed for compliance reasons, even if users delete their chat history. To learn more, see [Learn about retention for Copilot](/purview/retention-policies-copilot).
 
 - **eDiscovery and commmunication compliance**
 
-  Use eDiscovery and communication compliance policies to analyze user prompts and Copilot responses to detect inappropriate or risky interactions, or sharing of confidential information.
+  Use eDiscovery and communication compliance policies to analyze Copilot user prompts and responses to detect inappropriate or risky interactions, or sharing of confidential information.
 
   To learn more, see [Microsoft Purview eDiscovery solutions](/purview/ediscovery) and [Configure a communication compliance policy to detect for Copilot interactions](/purview/communication-compliance-copilot?tabs=purview-portal).
 
 > [!TIP]
-> To learn more about these Microsoft Purview security and compliance protections for Copilot, and how the Microsoft Purview AI Hub can help you more quickly deploy them, see [Microsoft Purview data security and compliance protections for generative AI apps](/purview/ai-microsoft-purview).
+> To learn more about these Microsoft Purview security and compliance protections for Copilot, and how Microsoft Purview AI Hub can help you more quickly deploy them, see [Microsoft Purview data security and compliance protections for generative AI apps](/purview/ai-microsoft-purview).
 
 ## Step 3 - Review app privacy
 
