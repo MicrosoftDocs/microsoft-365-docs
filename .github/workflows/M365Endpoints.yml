@@ -190,7 +190,6 @@ jobs:
                     Write-Host "Getting default branch for $Repo. URL: https://api.github.com/repos/$Org/$Repo"
                     $DefaultBranch = (Invoke-RestMethod -Headers $Headers -Uri https://api.github.com/repos/$Org/$Repo -ErrorAction Stop -ErrorVariable GitHubDefaultBranchError).default_branch
 
-                    $DefaultBranch = "dstrome-test"
                     Write-Host "Default for $Repo is `"$DefaultBranch`""
 
                     $script:SetDefaultBranchSuccess = $True
