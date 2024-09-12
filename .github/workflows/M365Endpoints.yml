@@ -27,7 +27,7 @@ jobs:
                 const response = await github.rest.actions.listWorkflowRuns({
                   owner: "MicrosoftDocs",
                   repo: "microsoft-365-docs-pr",
-                  workflow_id: 116801689,
+                  workflow_id: 117238499,
                   branch: "main",
                   status: "success",
                   per_page: 2,
