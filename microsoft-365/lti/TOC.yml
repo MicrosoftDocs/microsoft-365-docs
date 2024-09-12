@@ -14,6 +14,8 @@
         href: teams-meetings-with-canvas.md
       - name: Use Microsoft Reflect LTI with Canvas
         href: reflect-lti-canvas.md
+      - name: Use Microsoft Teams Assignments with Canvas
+        href: teams-assignments-with-canvas.md 
     - name: Blackboard integrations
       items:
       - name: Use Microsoft OneDrive LTI with Blackboard
